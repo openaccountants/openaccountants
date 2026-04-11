@@ -24,20 +24,21 @@ version: 0.1
 
 When uncertain about any tax or compliance position, choose the treatment that costs the taxpayer or business more tax, never less. This principle is constant across every jurisdiction and every obligation type. The reviewer can correct an over-conservative position after the fact. The reviewer cannot easily recover from an aggressive position surfacing in audit.
 
-Every position falls into one of three confidence tiers. There is no fourth tier.
+Every item falls into one of three data states. These are about **what the documents tell us**, not about how complex the rules are. The rules are in statutes — they are what they are. What varies is whether we have enough information to apply them.
 
-**Tier 1 -- Deterministic (T1).** The data carries every fact needed, the content skill's rules apply unambiguously, and a careful reviewer reading the same sources would reach the same conclusion. State the position with its primary source citation. Do not narrate the rule. Do not flag for reviewer attention unless dollar/euro magnitude alone warrants it (the content skill defines the threshold).
+**Classified.** The source documents (bank statements, invoices, prior returns, uploaded files) carry every fact needed to apply the rule. We applied it. The result is in the working paper with the citation. No flag, no question, no reviewer attention needed unless the amount alone is material.
 
-**Tier 2 -- Reviewer judgment required (T2).** Either (a) the law is clear but the data does not carry a fact needed (business-use percentage, basis of an asset, counterparty status, contemporaneous documentation), or (b) the public sources themselves are interpretive on this case. You MUST do all four of the following, in order, with no exceptions:
+**Assumed.** The source documents do not carry a fact needed to apply the rule (business-use percentage, counterparty status, whether an asset is for personal or business use, whether an election was made). We applied the **conservative default** — the treatment that costs the taxpayer more tax, never less. You MUST do all three:
 
-1. **State the ambiguity** in one sentence in the reviewer brief.
-2. **Apply the conservative default** from the content skill -- the option that costs the taxpayer more tax, never less.
-3. **Cite the primary source** for the rule that creates the ambiguity (so the reviewer can see what they are being asked to verify).
-4. **Add the question** to the structured question form so the user can resolve it, OR disclose in the brief only (if the cash impact is below the content skill's question threshold or the user cannot answer).
+1. **Apply the conservative default** and include the result in the working paper.
+2. **Disclose the assumption** in the reviewer brief — what was assumed, what the alternative is, and the cash impact if the assumption is wrong.
+3. **Ask the user** via the structured question form if they can resolve it, OR flag for the reviewer if the user cannot answer (e.g., "did you make this election?" is for the user; "is this expense substantiated?" is for the reviewer).
 
-You may not silently apply a default. You may not ask without applying a default. You may not state a position without showing the rule it rests on.
+You may not silently assume. Every assumption must be disclosed.
 
-**Tier 3 -- Escalate / refuse (T3).** The situation triggers a refusal under the prohibition framework (Section 6) or under the content skill's topical refusal catalogue. Stop, output the refusal verbatim, recommend the user consult a credentialed professional. Do not partially handle a refused situation.
+**Needs input.** The situation cannot proceed without information that neither the documents nor conservative defaults can resolve. Either (a) the user must provide a document or fact, or (b) the situation triggers a refusal under the prohibition framework. If it's a missing document/fact — ask once, clearly. If it's a refusal — stop, output the refusal, recommend a credentialed professional.
+
+**Why not "T1/T2/T3"?** The old tier labels implied the rules themselves had different confidence levels. They don't. The Malta VAT rate is 18%. That's not "T1 deterministic" — it's just a fact. What varies is whether the bank statement tells us enough to classify a transaction at 18% (classified), or whether we have to assume it's standard-rated because we can't tell (assumed), or whether we need to ask the user what this payment was for (needs input).
 
 **The ordering principle.** Conservatism means: more income or output tax recognized, fewer deductions or input credits taken, fewer reliefs claimed, longer recovery periods, higher rates assumed. When in doubt about which way is conservative, ask: which choice produces a higher tax liability? That is the conservative choice.
 

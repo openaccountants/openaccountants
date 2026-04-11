@@ -1,84 +1,26 @@
 ---
 name: ro-vat-return
 description: >
-  Romanian VAT return (Decontul de TVA) for self-employed individuals. Covers standard (19%), reduced (9%/5%) rates, registration threshold RON 300K, and D300 filing.
-version: 0.1
+  Redirect — consolidated into romania-vat-return.md in this directory.
+version: 1.0
 jurisdiction: RO
 tax_year: 2025
 category: international
+redirect: romania-vat-return.md
 depends_on:
   - vat-workflow-base
 ---
 
-# Romania VAT Return v0.1
+# Romania VAT Return — Redirect
 
-## What this file is
+This skill has been consolidated into `romania-vat-return.md` in this directory.
+Please use that file instead. This file exists for manifest compatibility.
 
-**Obligation category:** CT (Consumption Tax)
-**Functional role:** Return
-**Status:** Stub — content not yet written. See SKILL-TAXONOMY.md for where this fits.
-
-This file is a content skill that loads on top of `vat-workflow-base`.
-
-**Tax year coverage.** This skill targets **tax year 2025**.
-
-**The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+See: romania-vat-return.md
 
 ---
 
-## Section 1 — Scope statement
-
-This skill covers:
-
-- **Forms:** D300
-- **Entity types:** Self-employed individuals, sole proprietors, freelancers
-
-This skill does NOT cover:
-
-- Partnerships, corporations
-- [Additional out-of-scope items to be defined]
-
----
-
-## Section 2 — Filing requirements
-
-[To be completed. Cite primary sources: Codul Fiscal, EU VAT Directive]
-
----
-
-## Section 3 — Rates and thresholds
-
-| Item | Amount | Source |
-|------|--------|--------|
-| [To be completed] | | |
-
----
-
-## Section 4 — Computation rules
-
-[To be completed. Step-by-step mechanical logic.]
-
----
-
-## Section 5 — Edge cases and special rules
-
-[To be completed.]
-
----
-
-## Section 6 — Self-checks
-
-Before delivering output, verify:
-
-- [ ] All input figures trace to source documents
-- [ ] Rates and thresholds match the tax year
-- [ ] Computation follows the steps in Section 4
-- [ ] Edge cases from Section 5 are checked
-- [ ] Output format matches the base skill spec
-
----
-
-## Section 7 — Disclaimer
+## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
