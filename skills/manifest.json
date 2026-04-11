@@ -1,0 +1,5190 @@
+{
+  "version": "1.0",
+  "generated": "2026-04-11",
+  "total_skills": 345,
+  "skills": [
+    {
+      "id": "andorra-igi",
+      "jurisdiction": "AD",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/andorra/andorra-igi.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "andorra igi"
+      ],
+      "size_kb": 20.4,
+      "lines": 521
+    },
+    {
+      "id": "ae-corporate-tax",
+      "jurisdiction": "AE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/uae/ae-corporate-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ae corporate tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ae-vat-return",
+      "jurisdiction": "AE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/uae/ae-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ae vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "uae-vat",
+      "jurisdiction": "AE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/uae/uae-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "uae vat"
+      ],
+      "size_kb": 63.8,
+      "lines": 1102
+    },
+    {
+      "id": "albania-vat",
+      "jurisdiction": "AL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/albania/albania-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "albania vat"
+      ],
+      "size_kb": 22.9,
+      "lines": 520
+    },
+    {
+      "id": "armenia-vat",
+      "jurisdiction": "AM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/armenia/armenia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "armenia vat"
+      ],
+      "size_kb": 17.7,
+      "lines": 511
+    },
+    {
+      "id": "ar-monotributo",
+      "jurisdiction": "AR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/argentina/ar-monotributo.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ar monotributo"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ar-vat-return",
+      "jurisdiction": "AR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/argentina/ar-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ar vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "argentina-iva",
+      "jurisdiction": "AR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/argentina/argentina-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "argentina iva"
+      ],
+      "size_kb": 34.8,
+      "lines": 710
+    },
+    {
+      "id": "ar-income-tax",
+      "jurisdiction": "AR",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/argentina/ar-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ar income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ar-social-contributions",
+      "jurisdiction": "AR",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/argentina/ar-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ar social contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "at-vat-return",
+      "jurisdiction": "AT",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/austria/at-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "at vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "austria-vat-return",
+      "jurisdiction": "AT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/austria/austria-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "austria vat return"
+      ],
+      "size_kb": 62.7,
+      "lines": 847
+    },
+    {
+      "id": "at-income-tax",
+      "jurisdiction": "AT",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/austria/at-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "at income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "at-svs-contributions",
+      "jurisdiction": "AT",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/austria/at-svs-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "at svs contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "au-return-assembly",
+      "jurisdiction": "AU",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/au-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 18.0,
+      "lines": 350
+    },
+    {
+      "id": "au-gst-bas",
+      "jurisdiction": "AU",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/australia/au-gst-bas.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "au gst bas"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "au-sole-trader-schedule",
+      "jurisdiction": "AU",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/australia/au-sole-trader-schedule.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "au sole trader schedule"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "australia-gst",
+      "jurisdiction": "AU",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/australia/australia-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "australia gst"
+      ],
+      "size_kb": 65.9,
+      "lines": 1232
+    },
+    {
+      "id": "au-payg-instalments",
+      "jurisdiction": "AU",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/australia/au-payg-instalments.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "au payg instalments"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "au-freelance-intake",
+      "jurisdiction": "AU",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/au-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "Australian tax",
+        "ATO",
+        "sole trader Australia",
+        "BAS"
+      ],
+      "size_kb": 20.0,
+      "lines": 400
+    },
+    {
+      "id": "au-individual-return",
+      "jurisdiction": "AU",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/australia/au-individual-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "au individual return"
+      ],
+      "size_kb": 34.4,
+      "lines": 682
+    },
+    {
+      "id": "au-medicare-levy",
+      "jurisdiction": "AU",
+      "obligation": "SC",
+      "quality": "Q3",
+      "path": "international/australia/au-medicare-levy.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "au medicare levy"
+      ],
+      "size_kb": 17.8,
+      "lines": 363
+    },
+    {
+      "id": "au-super-guarantee",
+      "jurisdiction": "AU",
+      "obligation": "SC",
+      "quality": "Q3",
+      "path": "international/australia/au-super-guarantee.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "au super guarantee"
+      ],
+      "size_kb": 20.2,
+      "lines": 457
+    },
+    {
+      "id": "azerbaijan-vat",
+      "jurisdiction": "AZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/azerbaijan/azerbaijan-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "azerbaijan vat"
+      ],
+      "size_kb": 17.5,
+      "lines": 526
+    },
+    {
+      "id": "bosnia-vat",
+      "jurisdiction": "BA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bosnia/bosnia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bosnia vat"
+      ],
+      "size_kb": 22.2,
+      "lines": 530
+    },
+    {
+      "id": "barbados-vat",
+      "jurisdiction": "BB",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/barbados/barbados-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "barbados vat"
+      ],
+      "size_kb": 21.4,
+      "lines": 531
+    },
+    {
+      "id": "bangladesh-vat",
+      "jurisdiction": "BD",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bangladesh/bangladesh-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bangladesh vat"
+      ],
+      "size_kb": 24.0,
+      "lines": 542
+    },
+    {
+      "id": "be-vat-return",
+      "jurisdiction": "BE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/belgium/be-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "be vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "belgium-vat-return",
+      "jurisdiction": "BE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/belgium/belgium-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "belgium vat return"
+      ],
+      "size_kb": 64.0,
+      "lines": 894
+    },
+    {
+      "id": "be-income-tax",
+      "jurisdiction": "BE",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/belgium/be-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "be income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "be-social-contributions",
+      "jurisdiction": "BE",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/belgium/be-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "be social contributions"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "bulgaria-vat-return",
+      "jurisdiction": "BG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bulgaria/bulgaria-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bulgaria vat return"
+      ],
+      "size_kb": 35.9,
+      "lines": 725
+    },
+    {
+      "id": "bahrain-vat",
+      "jurisdiction": "BH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bahrain/bahrain-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bahrain vat"
+      ],
+      "size_kb": 38.3,
+      "lines": 731
+    },
+    {
+      "id": "bermuda-tax",
+      "jurisdiction": "BM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bermuda/bermuda-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bermuda tax"
+      ],
+      "size_kb": 11.8,
+      "lines": 316
+    },
+    {
+      "id": "brunei-tax",
+      "jurisdiction": "BN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/brunei/brunei-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "brunei tax"
+      ],
+      "size_kb": 10.3,
+      "lines": 277
+    },
+    {
+      "id": "bolivia-iva",
+      "jurisdiction": "BO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bolivia/bolivia-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bolivia iva"
+      ],
+      "size_kb": 20.0,
+      "lines": 523
+    },
+    {
+      "id": "br-indirect-tax",
+      "jurisdiction": "BR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/brazil/br-indirect-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "br indirect tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "br-inss",
+      "jurisdiction": "BR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/brazil/br-inss.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "br inss"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "br-simples-nacional",
+      "jurisdiction": "BR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/brazil/br-simples-nacional.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "br simples nacional"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "brazil-vat",
+      "jurisdiction": "BR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/brazil/brazil-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "brazil vat"
+      ],
+      "size_kb": 61.3,
+      "lines": 1095
+    },
+    {
+      "id": "br-estimated-tax",
+      "jurisdiction": "BR",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/brazil/br-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "br estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "br-income-tax",
+      "jurisdiction": "BR",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/brazil/br-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "br income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "bahamas-vat",
+      "jurisdiction": "BS",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bahamas/bahamas-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bahamas vat"
+      ],
+      "size_kb": 18.9,
+      "lines": 495
+    },
+    {
+      "id": "belarus-vat",
+      "jurisdiction": "BY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/belarus/belarus-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "belarus vat"
+      ],
+      "size_kb": 25.5,
+      "lines": 520
+    },
+    {
+      "id": "ca-return-assembly",
+      "jurisdiction": "CA",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/ca-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 18.0,
+      "lines": 350
+    },
+    {
+      "id": "canada-gst-hst",
+      "jurisdiction": "CA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/canada/canada-gst-hst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "canada gst hst"
+      ],
+      "size_kb": 58.3,
+      "lines": 1058
+    },
+    {
+      "id": "ca-freelance-intake",
+      "jurisdiction": "CA",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/ca-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "Canadian tax",
+        "CRA",
+        "T1",
+        "sole proprietor Canada"
+      ],
+      "size_kb": 20.0,
+      "lines": 400
+    },
+    {
+      "id": "bc-individual-return",
+      "jurisdiction": "CA-BC",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/canada/british-columbia/bc-individual-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "bc individual return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "ca-fed-gst-hst",
+      "jurisdiction": "CA-FED",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/canada/ca-fed-gst-hst.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ca fed gst hst"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ca-fed-instalments",
+      "jurisdiction": "CA-FED",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/canada/ca-fed-instalments.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ca fed instalments"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ca-fed-t1-return",
+      "jurisdiction": "CA-FED",
+      "obligation": "IT",
+      "quality": "Q3",
+      "path": "international/canada/ca-fed-t1-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ca fed t1 return"
+      ],
+      "size_kb": 27.3,
+      "lines": 573
+    },
+    {
+      "id": "ca-fed-t2125",
+      "jurisdiction": "CA-FED",
+      "obligation": "IT",
+      "quality": "Q3",
+      "path": "international/canada/ca-fed-t2125.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ca fed t2125"
+      ],
+      "size_kb": 32.7,
+      "lines": 598
+    },
+    {
+      "id": "ca-fed-cpp-ei",
+      "jurisdiction": "CA-FED",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/canada/ca-fed-cpp-ei.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ca fed cpp ei"
+      ],
+      "size_kb": 20.9,
+      "lines": 469
+    },
+    {
+      "id": "on-individual-return",
+      "jurisdiction": "CA-ON",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/canada/ontario/on-individual-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "on individual return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "qc-qst-return",
+      "jurisdiction": "CA-QC",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/canada/quebec/qc-qst-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "qc qst return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "qc-individual-return",
+      "jurisdiction": "CA-QC",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/canada/quebec/qc-individual-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "qc individual return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ch-cantonal-tax",
+      "jurisdiction": "CH",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/switzerland/ch-cantonal-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ch cantonal tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ch-vat-return",
+      "jurisdiction": "CH",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/switzerland/ch-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ch vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "switzerland-vat",
+      "jurisdiction": "CH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/switzerland/switzerland-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "switzerland vat"
+      ],
+      "size_kb": 37.2,
+      "lines": 681
+    },
+    {
+      "id": "ch-federal-income-tax",
+      "jurisdiction": "CH",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/switzerland/ch-federal-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ch federal income tax"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "ch-ahv-iv",
+      "jurisdiction": "CH",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/switzerland/ch-ahv-iv.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ch ahv iv"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ivory-coast-vat",
+      "jurisdiction": "CI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/ivory-coast/ivory-coast-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ivory coast vat"
+      ],
+      "size_kb": 13.7,
+      "lines": 336
+    },
+    {
+      "id": "chile-iva",
+      "jurisdiction": "CL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/chile/chile-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "chile iva"
+      ],
+      "size_kb": 35.4,
+      "lines": 720
+    },
+    {
+      "id": "cl-vat-return",
+      "jurisdiction": "CL",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/chile/cl-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "cl vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "cl-income-tax",
+      "jurisdiction": "CL",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/chile/cl-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "cl income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "cl-social-contributions",
+      "jurisdiction": "CL",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/chile/cl-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "cl social contributions"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "cameroon-vat",
+      "jurisdiction": "CM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/cameroon/cameroon-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "cameroon vat"
+      ],
+      "size_kb": 14.0,
+      "lines": 345
+    },
+    {
+      "id": "china-vat",
+      "jurisdiction": "CN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/china/china-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "china vat"
+      ],
+      "size_kb": 38.3,
+      "lines": 718
+    },
+    {
+      "id": "co-vat-return",
+      "jurisdiction": "CO",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/colombia/co-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "co vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "colombia-iva",
+      "jurisdiction": "CO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/colombia/colombia-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "colombia iva"
+      ],
+      "size_kb": 35.5,
+      "lines": 720
+    },
+    {
+      "id": "co-income-tax",
+      "jurisdiction": "CO",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/colombia/co-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "co income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "co-social-contributions",
+      "jurisdiction": "CO",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/colombia/co-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "co social contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "costa-rica-iva",
+      "jurisdiction": "CR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/costa-rica/costa-rica-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "costa rica iva"
+      ],
+      "size_kb": 35.9,
+      "lines": 757
+    },
+    {
+      "id": "cyprus-vat-return",
+      "jurisdiction": "CY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/cyprus/cyprus-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "cyprus vat return"
+      ],
+      "size_kb": 61.4,
+      "lines": 929
+    },
+    {
+      "id": "cz-vat-return",
+      "jurisdiction": "CZ",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/czech-republic/cz-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "cz vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "czech-republic-vat-return",
+      "jurisdiction": "CZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/czech-republic/czech-republic-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "czech republic vat return"
+      ],
+      "size_kb": 38.2,
+      "lines": 714
+    },
+    {
+      "id": "cz-income-tax",
+      "jurisdiction": "CZ",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/czech-republic/cz-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "cz income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "cz-social-health",
+      "jurisdiction": "CZ",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/czech-republic/cz-social-health.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "cz social health"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "de-return-assembly",
+      "jurisdiction": "DE",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/de-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 18.0,
+      "lines": 350
+    },
+    {
+      "id": "germany-vat-return",
+      "jurisdiction": "DE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/germany/germany-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "germany vat return"
+      ],
+      "size_kb": 59.3,
+      "lines": 896
+    },
+    {
+      "id": "de-trade-tax",
+      "jurisdiction": "DE",
+      "obligation": "EF",
+      "quality": "Q4",
+      "path": "international/germany/de-trade-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "de trade tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "de-estimated-tax",
+      "jurisdiction": "DE",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/germany/de-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "de estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "de-freelance-intake",
+      "jurisdiction": "DE",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/de-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "German tax",
+        "Steuererkl\u00e4rung",
+        "Freiberufler",
+        "Gewerbetreibender"
+      ],
+      "size_kb": 20.0,
+      "lines": 400
+    },
+    {
+      "id": "de-income-tax",
+      "jurisdiction": "DE",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/germany/de-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "de income tax"
+      ],
+      "size_kb": 37.8,
+      "lines": 654
+    },
+    {
+      "id": "de-social-contributions",
+      "jurisdiction": "DE",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/germany/de-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "de social contributions"
+      ],
+      "size_kb": 28.7,
+      "lines": 520
+    },
+    {
+      "id": "denmark-vat-return",
+      "jurisdiction": "DK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/denmark/denmark-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "denmark vat return"
+      ],
+      "size_kb": 57.6,
+      "lines": 970
+    },
+    {
+      "id": "dk-vat-return",
+      "jurisdiction": "DK",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/denmark/dk-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "dk vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "dk-income-tax",
+      "jurisdiction": "DK",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/denmark/dk-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "dk income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "dominican-republic-itbis",
+      "jurisdiction": "DO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/dominican-republic/dominican-republic-itbis.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "dominican republic itbis"
+      ],
+      "size_kb": 21.9,
+      "lines": 529
+    },
+    {
+      "id": "algeria-vat",
+      "jurisdiction": "DZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/algeria/algeria-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "algeria vat"
+      ],
+      "size_kb": 13.2,
+      "lines": 325
+    },
+    {
+      "id": "ecuador-iva",
+      "jurisdiction": "EC",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/ecuador/ecuador-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ecuador iva"
+      ],
+      "size_kb": 21.2,
+      "lines": 551
+    },
+    {
+      "id": "estonia-vat-return",
+      "jurisdiction": "EE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/estonia/estonia-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "estonia vat return"
+      ],
+      "size_kb": 39.5,
+      "lines": 715
+    },
+    {
+      "id": "egypt-vat",
+      "jurisdiction": "EG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/egypt/egypt-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "egypt vat"
+      ],
+      "size_kb": 38.7,
+      "lines": 752
+    },
+    {
+      "id": "es-return-assembly",
+      "jurisdiction": "ES",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/es-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 18.0,
+      "lines": 350
+    },
+    {
+      "id": "es-vat-return",
+      "jurisdiction": "ES",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/spain/es-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "es vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "spain-vat-return",
+      "jurisdiction": "ES",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/spain/spain-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "spain vat return"
+      ],
+      "size_kb": 68.0,
+      "lines": 1024
+    },
+    {
+      "id": "es-estimated-tax",
+      "jurisdiction": "ES",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/spain/es-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "es estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "es-freelance-intake",
+      "jurisdiction": "ES",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/es-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "Spanish tax",
+        "aut\u00f3nomo",
+        "IRPF",
+        "declaraci\u00f3n renta"
+      ],
+      "size_kb": 20.0,
+      "lines": 400
+    },
+    {
+      "id": "es-income-tax",
+      "jurisdiction": "ES",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/spain/es-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "es income tax"
+      ],
+      "size_kb": 40.0,
+      "lines": 729
+    },
+    {
+      "id": "es-social-contributions",
+      "jurisdiction": "ES",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/spain/es-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "es social contributions"
+      ],
+      "size_kb": 22.8,
+      "lines": 421
+    },
+    {
+      "id": "ethiopia-vat",
+      "jurisdiction": "ET",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/ethiopia/ethiopia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ethiopia vat"
+      ],
+      "size_kb": 20.5,
+      "lines": 403
+    },
+    {
+      "id": "eu-vat-base",
+      "jurisdiction": "EU",
+      "obligation": "CT",
+      "quality": "Q3",
+      "path": "international/eu/eu-vat-base.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "eu vat base"
+      ],
+      "size_kb": 20.4,
+      "lines": 415
+    },
+    {
+      "id": "finland-vat-return",
+      "jurisdiction": "FI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/finland/finland-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "finland vat return"
+      ],
+      "size_kb": 55.1,
+      "lines": 904
+    },
+    {
+      "id": "fiji-vat",
+      "jurisdiction": "FJ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/fiji/fiji-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "fiji vat"
+      ],
+      "size_kb": 19.2,
+      "lines": 523
+    },
+    {
+      "id": "france-vat-return",
+      "jurisdiction": "FR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/france/france-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base",
+        "eu-vat-base"
+      ],
+      "triggers": [
+        "france vat return"
+      ],
+      "size_kb": 61.5,
+      "lines": 619
+    },
+    {
+      "id": "fr-cfe",
+      "jurisdiction": "FR",
+      "obligation": "EF",
+      "quality": "Q4",
+      "path": "international/france/fr-cfe.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "fr cfe"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "fr-income-tax",
+      "jurisdiction": "FR",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/france/fr-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "fr income tax"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "fr-social-contributions",
+      "jurisdiction": "FR",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/france/fr-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "fr social contributions"
+      ],
+      "size_kb": 21.4,
+      "lines": 424
+    },
+    {
+      "id": "uk-return-assembly",
+      "jurisdiction": "GB",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/uk-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 18.0,
+      "lines": 350
+    },
+    {
+      "id": "uk-vat-return",
+      "jurisdiction": "GB",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/uk/uk-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "uk vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "uk-payments-on-account",
+      "jurisdiction": "GB",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/uk/uk-payments-on-account.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "uk payments on account"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "uk-freelance-intake",
+      "jurisdiction": "GB",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/uk-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "UK tax",
+        "Self Assessment",
+        "sole trader UK",
+        "HMRC"
+      ],
+      "size_kb": 20.0,
+      "lines": 400
+    },
+    {
+      "id": "uk-income-tax-sa100",
+      "jurisdiction": "GB",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/uk/uk-income-tax-sa100.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "uk income tax sa100"
+      ],
+      "size_kb": 27.6,
+      "lines": 555
+    },
+    {
+      "id": "uk-self-employment-sa103",
+      "jurisdiction": "GB",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/uk/uk-self-employment-sa103.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "uk self employment sa103"
+      ],
+      "size_kb": 29.0,
+      "lines": 604
+    },
+    {
+      "id": "uk-national-insurance",
+      "jurisdiction": "GB",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/uk/uk-national-insurance.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "uk national insurance"
+      ],
+      "size_kb": 18.7,
+      "lines": 387
+    },
+    {
+      "id": "uk-student-loan-repayment",
+      "jurisdiction": "GB",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/uk/uk-student-loan-repayment.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "uk student loan repayment"
+      ],
+      "size_kb": 17.2,
+      "lines": 338
+    },
+    {
+      "id": "georgia-vat",
+      "jurisdiction": "GE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/georgia/georgia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "georgia vat"
+      ],
+      "size_kb": 17.9,
+      "lines": 516
+    },
+    {
+      "id": "ghana-vat",
+      "jurisdiction": "GH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/ghana/ghana-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ghana vat"
+      ],
+      "size_kb": 22.9,
+      "lines": 406
+    },
+    {
+      "id": "global-router",
+      "jurisdiction": "GLOBAL",
+      "obligation": "ROUTER",
+      "quality": "Q2",
+      "path": "orchestrator/global-router.md",
+      "depends_on": [],
+      "triggers": [
+        "tax return",
+        "help with taxes",
+        "file taxes",
+        "self-employed",
+        "freelancer"
+      ],
+      "size_kb": 10.2,
+      "lines": 207
+    },
+    {
+      "id": "gr-vat-return",
+      "jurisdiction": "GR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/greece/gr-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "gr vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "greece-vat-return",
+      "jurisdiction": "GR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/greece/greece-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "greece vat return"
+      ],
+      "size_kb": 60.5,
+      "lines": 980
+    },
+    {
+      "id": "gr-income-tax",
+      "jurisdiction": "GR",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/greece/gr-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "gr income tax"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "gr-efka",
+      "jurisdiction": "GR",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/greece/gr-efka.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "gr efka"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "guatemala-iva",
+      "jurisdiction": "GT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/guatemala/guatemala-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "guatemala iva"
+      ],
+      "size_kb": 19.5,
+      "lines": 524
+    },
+    {
+      "id": "hong-kong-tax",
+      "jurisdiction": "HK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/hong-kong/hong-kong-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "hong kong tax"
+      ],
+      "size_kb": 20.8,
+      "lines": 426
+    },
+    {
+      "id": "honduras-isv",
+      "jurisdiction": "HN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/honduras/honduras-isv.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "honduras isv"
+      ],
+      "size_kb": 18.4,
+      "lines": 536
+    },
+    {
+      "id": "croatia-vat-return",
+      "jurisdiction": "HR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/croatia/croatia-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "croatia vat return"
+      ],
+      "size_kb": 36.1,
+      "lines": 710
+    },
+    {
+      "id": "hu-vat-return",
+      "jurisdiction": "HU",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/hungary/hu-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "hu vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "hungary-vat-return",
+      "jurisdiction": "HU",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/hungary/hungary-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "hungary vat return"
+      ],
+      "size_kb": 39.4,
+      "lines": 713
+    },
+    {
+      "id": "hu-income-tax",
+      "jurisdiction": "HU",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/hungary/hu-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "hu income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "hu-social-contributions",
+      "jurisdiction": "HU",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/hungary/hu-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "hu social contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "indonesia-vat",
+      "jurisdiction": "ID",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/indonesia/indonesia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "indonesia vat"
+      ],
+      "size_kb": 33.2,
+      "lines": 613
+    },
+    {
+      "id": "ie-preliminary-tax",
+      "jurisdiction": "IE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/ireland/ie-preliminary-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ie preliminary tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ie-prsi-class-s",
+      "jurisdiction": "IE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/ireland/ie-prsi-class-s.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ie prsi class s"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ie-usc",
+      "jurisdiction": "IE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/ireland/ie-usc.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ie usc"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ie-vat-return",
+      "jurisdiction": "IE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/ireland/ie-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ie vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ireland-vat-return",
+      "jurisdiction": "IE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/ireland/ireland-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ireland vat return"
+      ],
+      "size_kb": 41.6,
+      "lines": 709
+    },
+    {
+      "id": "ie-income-tax-form11",
+      "jurisdiction": "IE",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/ireland/ie-income-tax-form11.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ie income tax form11"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "israel-vat",
+      "jurisdiction": "IL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/israel/israel-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "israel vat"
+      ],
+      "size_kb": 33.3,
+      "lines": 736
+    },
+    {
+      "id": "isle-of-man-vat",
+      "jurisdiction": "IM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/isle-of-man/isle-of-man-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "isle of man vat"
+      ],
+      "size_kb": 16.1,
+      "lines": 383
+    },
+    {
+      "id": "in-return-assembly",
+      "jurisdiction": "IN",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/in-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 18.0,
+      "lines": 350
+    },
+    {
+      "id": "in-gst-return",
+      "jurisdiction": "IN",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/india/in-gst-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "in gst return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "in-tds-freelance",
+      "jurisdiction": "IN",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/india/in-tds-freelance.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "in tds freelance"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "india-gst",
+      "jurisdiction": "IN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/india/india-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "india gst"
+      ],
+      "size_kb": 50.3,
+      "lines": 886
+    },
+    {
+      "id": "in-advance-tax",
+      "jurisdiction": "IN",
+      "obligation": "ET",
+      "quality": "Q2",
+      "path": "international/india/in-advance-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "in advance tax"
+      ],
+      "size_kb": 22.6,
+      "lines": 481
+    },
+    {
+      "id": "in-freelance-intake",
+      "jurisdiction": "IN",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/in-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "India tax",
+        "ITR",
+        "44ADA",
+        "self-employed India"
+      ],
+      "size_kb": 20.0,
+      "lines": 400
+    },
+    {
+      "id": "in-income-tax",
+      "jurisdiction": "IN",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/india/in-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "in income tax"
+      ],
+      "size_kb": 33.8,
+      "lines": 720
+    },
+    {
+      "id": "iraq-tax",
+      "jurisdiction": "IQ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/iraq/iraq-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "iraq tax"
+      ],
+      "size_kb": 14.0,
+      "lines": 374
+    },
+    {
+      "id": "iran-vat",
+      "jurisdiction": "IR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/iran/iran-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "iran vat"
+      ],
+      "size_kb": 17.6,
+      "lines": 459
+    },
+    {
+      "id": "iceland-vat",
+      "jurisdiction": "IS",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/iceland/iceland-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "iceland vat"
+      ],
+      "size_kb": 32.8,
+      "lines": 727
+    },
+    {
+      "id": "italy-vat-return",
+      "jurisdiction": "IT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/italy/italy-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base",
+        "eu-vat-base"
+      ],
+      "triggers": [
+        "italy vat return"
+      ],
+      "size_kb": 49.8,
+      "lines": 538
+    },
+    {
+      "id": "it-irap",
+      "jurisdiction": "IT",
+      "obligation": "EF",
+      "quality": "Q4",
+      "path": "international/italy/it-irap.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "it irap"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "it-estimated-tax",
+      "jurisdiction": "IT",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/italy/it-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "it estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "it-income-tax",
+      "jurisdiction": "IT",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/italy/it-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "it income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "it-inps-contributions",
+      "jurisdiction": "IT",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/italy/it-inps-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "it inps contributions"
+      ],
+      "size_kb": 20.2,
+      "lines": 444
+    },
+    {
+      "id": "jamaica-gct",
+      "jurisdiction": "JM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/jamaica/jamaica-gct.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "jamaica gct"
+      ],
+      "size_kb": 26.2,
+      "lines": 561
+    },
+    {
+      "id": "jordan-gst",
+      "jurisdiction": "JO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/jordan/jordan-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "jordan gst"
+      ],
+      "size_kb": 18.7,
+      "lines": 460
+    },
+    {
+      "id": "japan-consumption-tax",
+      "jurisdiction": "JP",
+      "obligation": "CT",
+      "quality": "Q3",
+      "path": "international/japan/japan-consumption-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "japan consumption tax"
+      ],
+      "size_kb": 48.8,
+      "lines": 837
+    },
+    {
+      "id": "jp-consumption-tax",
+      "jurisdiction": "JP",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/japan/jp-consumption-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "jp consumption tax"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "jp-estimated-tax",
+      "jurisdiction": "JP",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/japan/jp-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "jp estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "jp-income-tax",
+      "jurisdiction": "JP",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/japan/jp-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "jp income tax"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "jp-social-insurance",
+      "jurisdiction": "JP",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/japan/jp-social-insurance.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "jp social insurance"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "ke-vat-return",
+      "jurisdiction": "KE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/kenya/ke-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ke vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "kenya-vat",
+      "jurisdiction": "KE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/kenya/kenya-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kenya vat"
+      ],
+      "size_kb": 37.9,
+      "lines": 807
+    },
+    {
+      "id": "ke-income-tax",
+      "jurisdiction": "KE",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/kenya/ke-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ke income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ke-nhif-nssf",
+      "jurisdiction": "KE",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/kenya/ke-nhif-nssf.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ke nhif nssf"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "cambodia-vat",
+      "jurisdiction": "KH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/cambodia/cambodia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "cambodia vat"
+      ],
+      "size_kb": 21.0,
+      "lines": 521
+    },
+    {
+      "id": "kr-vat-return",
+      "jurisdiction": "KR",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/south-korea/kr-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kr vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "south-korea-vat",
+      "jurisdiction": "KR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/south-korea/south-korea-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "south korea vat"
+      ],
+      "size_kb": 33.2,
+      "lines": 609
+    },
+    {
+      "id": "kr-income-tax",
+      "jurisdiction": "KR",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/south-korea/kr-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "kr income tax"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "kr-social-insurance",
+      "jurisdiction": "KR",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/south-korea/kr-social-insurance.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "kr social insurance"
+      ],
+      "size_kb": 20.2,
+      "lines": 407
+    },
+    {
+      "id": "kuwait-tax",
+      "jurisdiction": "KW",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/kuwait/kuwait-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kuwait tax"
+      ],
+      "size_kb": 15.2,
+      "lines": 339
+    },
+    {
+      "id": "cayman-tax",
+      "jurisdiction": "KY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/cayman-islands/cayman-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "cayman tax"
+      ],
+      "size_kb": 12.9,
+      "lines": 333
+    },
+    {
+      "id": "kazakhstan-vat",
+      "jurisdiction": "KZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/kazakhstan/kazakhstan-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kazakhstan vat"
+      ],
+      "size_kb": 19.6,
+      "lines": 527
+    },
+    {
+      "id": "laos-vat",
+      "jurisdiction": "LA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/laos/laos-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "laos vat"
+      ],
+      "size_kb": 19.5,
+      "lines": 512
+    },
+    {
+      "id": "lebanon-vat",
+      "jurisdiction": "LB",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/lebanon/lebanon-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "lebanon vat"
+      ],
+      "size_kb": 19.1,
+      "lines": 458
+    },
+    {
+      "id": "liechtenstein-vat",
+      "jurisdiction": "LI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/liechtenstein/liechtenstein-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "liechtenstein vat"
+      ],
+      "size_kb": 14.0,
+      "lines": 291
+    },
+    {
+      "id": "sri-lanka-vat",
+      "jurisdiction": "LK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/sri-lanka/sri-lanka-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "sri lanka vat"
+      ],
+      "size_kb": 22.5,
+      "lines": 520
+    },
+    {
+      "id": "lithuania-vat-return",
+      "jurisdiction": "LT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/lithuania/lithuania-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "lithuania vat return"
+      ],
+      "size_kb": 42.1,
+      "lines": 730
+    },
+    {
+      "id": "luxembourg-vat-return",
+      "jurisdiction": "LU",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/luxembourg/luxembourg-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "luxembourg vat return"
+      ],
+      "size_kb": 36.6,
+      "lines": 711
+    },
+    {
+      "id": "latvia-vat-return",
+      "jurisdiction": "LV",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/latvia/latvia-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "latvia vat return"
+      ],
+      "size_kb": 41.7,
+      "lines": 711
+    },
+    {
+      "id": "morocco-vat",
+      "jurisdiction": "MA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/morocco/morocco-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "morocco vat"
+      ],
+      "size_kb": 16.4,
+      "lines": 350
+    },
+    {
+      "id": "monaco-vat",
+      "jurisdiction": "MC",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/monaco/monaco-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "monaco vat"
+      ],
+      "size_kb": 18.0,
+      "lines": 383
+    },
+    {
+      "id": "moldova-vat",
+      "jurisdiction": "MD",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/moldova/moldova-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "moldova vat"
+      ],
+      "size_kb": 23.3,
+      "lines": 528
+    },
+    {
+      "id": "montenegro-vat",
+      "jurisdiction": "ME",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/montenegro/montenegro-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "montenegro vat"
+      ],
+      "size_kb": 21.8,
+      "lines": 544
+    },
+    {
+      "id": "north-macedonia-vat",
+      "jurisdiction": "MK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/north-macedonia/north-macedonia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "north macedonia vat"
+      ],
+      "size_kb": 22.7,
+      "lines": 546
+    },
+    {
+      "id": "myanmar-ct",
+      "jurisdiction": "MM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/myanmar/myanmar-ct.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "myanmar ct"
+      ],
+      "size_kb": 20.2,
+      "lines": 521
+    },
+    {
+      "id": "mongolia-vat",
+      "jurisdiction": "MN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/mongolia/mongolia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "mongolia vat"
+      ],
+      "size_kb": 19.0,
+      "lines": 525
+    },
+    {
+      "id": "mt-return-assembly",
+      "jurisdiction": "MT",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/mt-return-assembly.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 20.1,
+      "lines": 363
+    },
+    {
+      "id": "malta-vat-return",
+      "jurisdiction": "MT",
+      "obligation": "CT",
+      "quality": "Q1",
+      "path": "international/malta/malta-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "malta vat return"
+      ],
+      "size_kb": 20.4,
+      "lines": 416
+    },
+    {
+      "id": "mt-estimated-tax",
+      "jurisdiction": "MT",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/malta/mt-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "mt estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "mt-freelance-intake",
+      "jurisdiction": "MT",
+      "obligation": "INTAKE",
+      "quality": "Q2",
+      "path": "orchestrator/mt-freelance-intake.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "Malta tax",
+        "TA24",
+        "Malta self-employed"
+      ],
+      "size_kb": 23.3,
+      "lines": 540
+    },
+    {
+      "id": "malta-income-tax",
+      "jurisdiction": "MT",
+      "obligation": "IT",
+      "quality": "Q1",
+      "path": "international/malta/malta-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "malta income tax"
+      ],
+      "size_kb": 24.7,
+      "lines": 491
+    },
+    {
+      "id": "malta-ssc",
+      "jurisdiction": "MT",
+      "obligation": "SC",
+      "quality": "Q1",
+      "path": "international/malta/malta-ssc.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "malta ssc"
+      ],
+      "size_kb": 16.6,
+      "lines": 353
+    },
+    {
+      "id": "mauritius-vat",
+      "jurisdiction": "MU",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/mauritius/mauritius-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "mauritius vat"
+      ],
+      "size_kb": 12.8,
+      "lines": 318
+    },
+    {
+      "id": "maldives-gst",
+      "jurisdiction": "MV",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/maldives/maldives-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "maldives gst"
+      ],
+      "size_kb": 20.1,
+      "lines": 514
+    },
+    {
+      "id": "mexico-iva",
+      "jurisdiction": "MX",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/mexico/mexico-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "mexico iva"
+      ],
+      "size_kb": 47.2,
+      "lines": 814
+    },
+    {
+      "id": "mx-cfdi",
+      "jurisdiction": "MX",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/mexico/mx-cfdi.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "mx cfdi"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "mx-imss",
+      "jurisdiction": "MX",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/mexico/mx-imss.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "mx imss"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "mx-vat-return",
+      "jurisdiction": "MX",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/mexico/mx-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "mx vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "mx-estimated-tax",
+      "jurisdiction": "MX",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/mexico/mx-estimated-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "mx estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "mx-income-tax",
+      "jurisdiction": "MX",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/mexico/mx-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "mx income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "malaysia-sst",
+      "jurisdiction": "MY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/malaysia/malaysia-sst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "malaysia sst"
+      ],
+      "size_kb": 33.5,
+      "lines": 602
+    },
+    {
+      "id": "mozambique-vat",
+      "jurisdiction": "MZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/mozambique/mozambique-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "mozambique vat"
+      ],
+      "size_kb": 12.6,
+      "lines": 325
+    },
+    {
+      "id": "ng-vat-return",
+      "jurisdiction": "NG",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/nigeria/ng-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ng vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "nigeria-vat",
+      "jurisdiction": "NG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/nigeria/nigeria-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "nigeria vat"
+      ],
+      "size_kb": 37.2,
+      "lines": 725
+    },
+    {
+      "id": "ng-income-tax",
+      "jurisdiction": "NG",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/nigeria/ng-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ng income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "nicaragua-iva",
+      "jurisdiction": "NI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/nicaragua/nicaragua-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "nicaragua iva"
+      ],
+      "size_kb": 18.0,
+      "lines": 529
+    },
+    {
+      "id": "netherlands-vat-return",
+      "jurisdiction": "NL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/netherlands/netherlands-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "netherlands vat return"
+      ],
+      "size_kb": 65.5,
+      "lines": 903
+    },
+    {
+      "id": "nl-vat-return",
+      "jurisdiction": "NL",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/netherlands/nl-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "nl vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "nl-income-tax",
+      "jurisdiction": "NL",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/netherlands/nl-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "nl income tax"
+      ],
+      "size_kb": 29.7,
+      "lines": 561
+    },
+    {
+      "id": "nl-zzp-deductions",
+      "jurisdiction": "NL",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/netherlands/nl-zzp-deductions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "nl zzp deductions"
+      ],
+      "size_kb": 25.0,
+      "lines": 498
+    },
+    {
+      "id": "no-vat-return",
+      "jurisdiction": "NO",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/norway/no-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "no vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "norway-mva",
+      "jurisdiction": "NO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/norway/norway-mva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "norway mva"
+      ],
+      "size_kb": 48.8,
+      "lines": 855
+    },
+    {
+      "id": "no-income-tax",
+      "jurisdiction": "NO",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/norway/no-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "no income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "no-social-contributions",
+      "jurisdiction": "NO",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/norway/no-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "no social contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "nepal-vat",
+      "jurisdiction": "NP",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/nepal/nepal-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "nepal vat"
+      ],
+      "size_kb": 20.9,
+      "lines": 515
+    },
+    {
+      "id": "new-zealand-gst",
+      "jurisdiction": "NZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/new-zealand/new-zealand-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "new zealand gst"
+      ],
+      "size_kb": 44.1,
+      "lines": 785
+    },
+    {
+      "id": "nz-acc-levies",
+      "jurisdiction": "NZ",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/new-zealand/nz-acc-levies.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "nz acc levies"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "nz-gst-return",
+      "jurisdiction": "NZ",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/new-zealand/nz-gst-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "nz gst return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "nz-provisional-tax",
+      "jurisdiction": "NZ",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/new-zealand/nz-provisional-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "nz provisional tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "nz-income-tax-ir3",
+      "jurisdiction": "NZ",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/new-zealand/nz-income-tax-ir3.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "nz income tax ir3"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "oman-vat",
+      "jurisdiction": "OM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/oman/oman-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "oman vat"
+      ],
+      "size_kb": 35.4,
+      "lines": 735
+    },
+    {
+      "id": "panama-itbms",
+      "jurisdiction": "PA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/panama/panama-itbms.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "panama itbms"
+      ],
+      "size_kb": 21.5,
+      "lines": 530
+    },
+    {
+      "id": "peru-igv",
+      "jurisdiction": "PE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/peru/peru-igv.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "peru igv"
+      ],
+      "size_kb": 35.7,
+      "lines": 748
+    },
+    {
+      "id": "png-gst",
+      "jurisdiction": "PG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/papua-new-guinea/png-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "png gst"
+      ],
+      "size_kb": 17.1,
+      "lines": 512
+    },
+    {
+      "id": "philippines-vat",
+      "jurisdiction": "PH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/philippines/philippines-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "philippines vat"
+      ],
+      "size_kb": 35.7,
+      "lines": 639
+    },
+    {
+      "id": "pakistan-sales-tax",
+      "jurisdiction": "PK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/pakistan/pakistan-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "pakistan sales tax"
+      ],
+      "size_kb": 35.9,
+      "lines": 737
+    },
+    {
+      "id": "pl-vat-return",
+      "jurisdiction": "PL",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/poland/pl-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "pl vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "poland-vat-return",
+      "jurisdiction": "PL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/poland/poland-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "poland vat return"
+      ],
+      "size_kb": 65.8,
+      "lines": 1010
+    },
+    {
+      "id": "pl-income-tax",
+      "jurisdiction": "PL",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/poland/pl-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "pl income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "pl-zus-contributions",
+      "jurisdiction": "PL",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/poland/pl-zus-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "pl zus contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "portugal-vat-return",
+      "jurisdiction": "PT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/portugal/portugal-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "portugal vat return"
+      ],
+      "size_kb": 56.4,
+      "lines": 823
+    },
+    {
+      "id": "pt-vat-return",
+      "jurisdiction": "PT",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/portugal/pt-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "pt vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "pt-income-tax",
+      "jurisdiction": "PT",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/portugal/pt-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "pt income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "pt-social-contributions",
+      "jurisdiction": "PT",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/portugal/pt-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "pt social contributions"
+      ],
+      "size_kb": 2.6,
+      "lines": 85
+    },
+    {
+      "id": "paraguay-iva",
+      "jurisdiction": "PY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/paraguay/paraguay-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "paraguay iva"
+      ],
+      "size_kb": 18.0,
+      "lines": 546
+    },
+    {
+      "id": "qatar-tax",
+      "jurisdiction": "QA",
+      "obligation": "CT",
+      "quality": "Q3",
+      "path": "international/qatar/qatar-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "qatar tax"
+      ],
+      "size_kb": 18.4,
+      "lines": 369
+    },
+    {
+      "id": "ro-cas-cass",
+      "jurisdiction": "RO",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/romania/ro-cas-cass.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ro cas cass"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ro-vat-return",
+      "jurisdiction": "RO",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/romania/ro-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ro vat return"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "romania-vat-return",
+      "jurisdiction": "RO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/romania/romania-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "romania vat return"
+      ],
+      "size_kb": 37.8,
+      "lines": 715
+    },
+    {
+      "id": "ro-income-tax",
+      "jurisdiction": "RO",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/romania/ro-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "ro income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "serbia-vat",
+      "jurisdiction": "RS",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/serbia/serbia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "serbia vat"
+      ],
+      "size_kb": 35.0,
+      "lines": 737
+    },
+    {
+      "id": "russia-vat",
+      "jurisdiction": "RU",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/russia/russia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "russia vat"
+      ],
+      "size_kb": 32.6,
+      "lines": 642
+    },
+    {
+      "id": "rwanda-vat",
+      "jurisdiction": "RW",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/rwanda/rwanda-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "rwanda vat"
+      ],
+      "size_kb": 15.7,
+      "lines": 354
+    },
+    {
+      "id": "saudi-arabia-vat",
+      "jurisdiction": "SA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/saudi-arabia/saudi-arabia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "saudi arabia vat"
+      ],
+      "size_kb": 44.2,
+      "lines": 823
+    },
+    {
+      "id": "se-vat-return",
+      "jurisdiction": "SE",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/sweden/se-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "se vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "sweden-vat-return",
+      "jurisdiction": "SE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/sweden/sweden-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "sweden vat return"
+      ],
+      "size_kb": 57.3,
+      "lines": 872
+    },
+    {
+      "id": "se-income-tax",
+      "jurisdiction": "SE",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/sweden/se-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "se income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "se-social-contributions",
+      "jurisdiction": "SE",
+      "obligation": "SC",
+      "quality": "Q4",
+      "path": "international/sweden/se-social-contributions.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "se social contributions"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "sg-gst-return",
+      "jurisdiction": "SG",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/singapore/sg-gst-return.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "sg gst return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "singapore-gst",
+      "jurisdiction": "SG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/singapore/singapore-gst.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "singapore gst"
+      ],
+      "size_kb": 68.6,
+      "lines": 1312
+    },
+    {
+      "id": "sg-income-tax",
+      "jurisdiction": "SG",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "international/singapore/sg-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "sg income tax"
+      ],
+      "size_kb": 29.6,
+      "lines": 524
+    },
+    {
+      "id": "sg-cpf-medisave",
+      "jurisdiction": "SG",
+      "obligation": "SC",
+      "quality": "Q2",
+      "path": "international/singapore/sg-cpf-medisave.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "sg cpf medisave"
+      ],
+      "size_kb": 18.4,
+      "lines": 360
+    },
+    {
+      "id": "slovenia-vat-return",
+      "jurisdiction": "SI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/slovenia/slovenia-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "slovenia vat return"
+      ],
+      "size_kb": 35.8,
+      "lines": 713
+    },
+    {
+      "id": "slovakia-vat-return",
+      "jurisdiction": "SK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/slovakia/slovakia-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "slovakia vat return"
+      ],
+      "size_kb": 35.5,
+      "lines": 709
+    },
+    {
+      "id": "senegal-vat",
+      "jurisdiction": "SN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/senegal/senegal-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "senegal vat"
+      ],
+      "size_kb": 13.9,
+      "lines": 327
+    },
+    {
+      "id": "el-salvador-iva",
+      "jurisdiction": "SV",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/el-salvador/el-salvador-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "el salvador iva"
+      ],
+      "size_kb": 19.4,
+      "lines": 536
+    },
+    {
+      "id": "thailand-vat",
+      "jurisdiction": "TH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/thailand/thailand-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "thailand vat"
+      ],
+      "size_kb": 32.0,
+      "lines": 571
+    },
+    {
+      "id": "tunisia-vat",
+      "jurisdiction": "TN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/tunisia/tunisia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "tunisia vat"
+      ],
+      "size_kb": 14.3,
+      "lines": 340
+    },
+    {
+      "id": "turkey-vat",
+      "jurisdiction": "TR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/turkey/turkey-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "turkey vat"
+      ],
+      "size_kb": 34.1,
+      "lines": 722
+    },
+    {
+      "id": "trinidad-vat",
+      "jurisdiction": "TT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/trinidad-and-tobago/trinidad-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "trinidad vat"
+      ],
+      "size_kb": 22.8,
+      "lines": 526
+    },
+    {
+      "id": "taiwan-vat",
+      "jurisdiction": "TW",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/taiwan/taiwan-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "taiwan vat"
+      ],
+      "size_kb": 36.3,
+      "lines": 723
+    },
+    {
+      "id": "tanzania-vat",
+      "jurisdiction": "TZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/tanzania/tanzania-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "tanzania vat"
+      ],
+      "size_kb": 20.1,
+      "lines": 406
+    },
+    {
+      "id": "ukraine-vat",
+      "jurisdiction": "UA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/ukraine/ukraine-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ukraine vat"
+      ],
+      "size_kb": 38.4,
+      "lines": 785
+    },
+    {
+      "id": "uganda-vat",
+      "jurisdiction": "UG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/uganda/uganda-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "uganda vat"
+      ],
+      "size_kb": 18.1,
+      "lines": 403
+    },
+    {
+      "id": "us-federal-return-assembly",
+      "jurisdiction": "US",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/us-federal-return-assembly.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 24.0,
+      "lines": 471
+    },
+    {
+      "id": "no-sales-tax-states",
+      "jurisdiction": "US",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "federal/no-sales-tax-states.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "no sales tax states"
+      ],
+      "size_kb": 21.4,
+      "lines": 448
+    },
+    {
+      "id": "us-sales-tax",
+      "jurisdiction": "US",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "federal/us-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "us sales tax"
+      ],
+      "size_kb": 77.0,
+      "lines": 1249
+    },
+    {
+      "id": "us-schedule-c-and-se-computation",
+      "jurisdiction": "US",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "federal/us-schedule-c-and-se-computation.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "us schedule c and se computation"
+      ],
+      "size_kb": 74.8,
+      "lines": 1124
+    },
+    {
+      "id": "us-sole-prop-bookkeeping",
+      "jurisdiction": "US",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "federal/us-sole-prop-bookkeeping.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "us sole prop bookkeeping"
+      ],
+      "size_kb": 114.1,
+      "lines": 1501
+    },
+    {
+      "id": "alabama-sales-tax",
+      "jurisdiction": "US-AL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/alabama/alabama-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "alabama sales tax"
+      ],
+      "size_kb": 22.5,
+      "lines": 408
+    },
+    {
+      "id": "arizona-sales-tax",
+      "jurisdiction": "US-AR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/arizona/arizona-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "arizona sales tax"
+      ],
+      "size_kb": 21.1,
+      "lines": 431
+    },
+    {
+      "id": "arkansas-sales-tax",
+      "jurisdiction": "US-AR",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/arkansas/arkansas-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "arkansas sales tax"
+      ],
+      "size_kb": 19.0,
+      "lines": 379
+    },
+    {
+      "id": "us-ca-return-assembly",
+      "jurisdiction": "US-CA",
+      "obligation": "ASSEMBLY",
+      "quality": "Q2",
+      "path": "orchestrator/us-ca-return-assembly.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [],
+      "size_kb": 16.0,
+      "lines": 313
+    },
+    {
+      "id": "california-sales-tax",
+      "jurisdiction": "US-CA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "california/california-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "california sales tax"
+      ],
+      "size_kb": 33.4,
+      "lines": 625
+    },
+    {
+      "id": "us-ca-freelance-intake",
+      "jurisdiction": "US-CA",
+      "obligation": "INTAKE",
+      "quality": "Q1",
+      "path": "orchestrator/us-ca-freelance-intake.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "California tax",
+        "CA freelancer",
+        "California self-employed"
+      ],
+      "size_kb": 26.0,
+      "lines": 498
+    },
+    {
+      "id": "colorado-sales-tax",
+      "jurisdiction": "US-CO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/colorado/colorado-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "colorado sales tax"
+      ],
+      "size_kb": 23.5,
+      "lines": 472
+    },
+    {
+      "id": "connecticut-sales-tax",
+      "jurisdiction": "US-CO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/connecticut/connecticut-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "connecticut sales tax"
+      ],
+      "size_kb": 19.7,
+      "lines": 420
+    },
+    {
+      "id": "dc-sales-tax",
+      "jurisdiction": "US-DC",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/dc/dc-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "dc sales tax"
+      ],
+      "size_kb": 18.6,
+      "lines": 379
+    },
+    {
+      "id": "fl-sales-use-tax",
+      "jurisdiction": "US-FL",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "florida/fl-sales-use-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "fl sales use tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "florida-sales-tax",
+      "jurisdiction": "US-FL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "florida/florida-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "florida sales tax"
+      ],
+      "size_kb": 27.9,
+      "lines": 577
+    },
+    {
+      "id": "fl-annual-report",
+      "jurisdiction": "US-FL",
+      "obligation": "EF",
+      "quality": "Q4",
+      "path": "florida/fl-annual-report.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "fl annual report"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "georgia-sales-tax",
+      "jurisdiction": "US-GE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/georgia/georgia-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "georgia sales tax"
+      ],
+      "size_kb": 25.9,
+      "lines": 492
+    },
+    {
+      "id": "hawaii-sales-tax",
+      "jurisdiction": "US-HA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/hawaii/hawaii-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "hawaii sales tax"
+      ],
+      "size_kb": 20.9,
+      "lines": 399
+    },
+    {
+      "id": "idaho-sales-tax",
+      "jurisdiction": "US-ID",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/idaho/idaho-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "idaho sales tax"
+      ],
+      "size_kb": 17.1,
+      "lines": 354
+    },
+    {
+      "id": "il-sales-tax",
+      "jurisdiction": "US-IL",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "illinois/il-sales-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "il sales tax"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "illinois-sales-tax",
+      "jurisdiction": "US-IL",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "illinois/illinois-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "illinois sales tax"
+      ],
+      "size_kb": 30.8,
+      "lines": 620
+    },
+    {
+      "id": "il-estimated-tax",
+      "jurisdiction": "US-IL",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "illinois/il-estimated-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "il estimated tax"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "il-individual-return",
+      "jurisdiction": "US-IL",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "illinois/il-individual-return.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "il individual return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "indiana-sales-tax",
+      "jurisdiction": "US-IN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/indiana/indiana-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "indiana sales tax"
+      ],
+      "size_kb": 19.6,
+      "lines": 433
+    },
+    {
+      "id": "iowa-sales-tax",
+      "jurisdiction": "US-IO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/iowa/iowa-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "iowa sales tax"
+      ],
+      "size_kb": 16.5,
+      "lines": 362
+    },
+    {
+      "id": "kansas-sales-tax",
+      "jurisdiction": "US-KA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/kansas/kansas-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kansas sales tax"
+      ],
+      "size_kb": 17.0,
+      "lines": 365
+    },
+    {
+      "id": "kentucky-sales-tax",
+      "jurisdiction": "US-KE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/kentucky/kentucky-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kentucky sales tax"
+      ],
+      "size_kb": 16.6,
+      "lines": 373
+    },
+    {
+      "id": "louisiana-sales-tax",
+      "jurisdiction": "US-LO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/louisiana/louisiana-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "louisiana sales tax"
+      ],
+      "size_kb": 23.2,
+      "lines": 466
+    },
+    {
+      "id": "maine-sales-tax",
+      "jurisdiction": "US-MA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/maine/maine-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "maine sales tax"
+      ],
+      "size_kb": 16.5,
+      "lines": 368
+    },
+    {
+      "id": "maryland-sales-tax",
+      "jurisdiction": "US-MA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/maryland/maryland-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "maryland sales tax"
+      ],
+      "size_kb": 20.7,
+      "lines": 433
+    },
+    {
+      "id": "massachusetts-sales-tax",
+      "jurisdiction": "US-MA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/massachusetts/massachusetts-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "massachusetts sales tax"
+      ],
+      "size_kb": 18.1,
+      "lines": 390
+    },
+    {
+      "id": "michigan-sales-tax",
+      "jurisdiction": "US-MI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/michigan/michigan-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "michigan sales tax"
+      ],
+      "size_kb": 23.2,
+      "lines": 471
+    },
+    {
+      "id": "minnesota-sales-tax",
+      "jurisdiction": "US-MI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/minnesota/minnesota-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "minnesota sales tax"
+      ],
+      "size_kb": 20.5,
+      "lines": 438
+    },
+    {
+      "id": "mississippi-sales-tax",
+      "jurisdiction": "US-MI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/mississippi/mississippi-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "mississippi sales tax"
+      ],
+      "size_kb": 17.7,
+      "lines": 382
+    },
+    {
+      "id": "missouri-sales-tax",
+      "jurisdiction": "US-MI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/missouri/missouri-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "missouri sales tax"
+      ],
+      "size_kb": 19.2,
+      "lines": 435
+    },
+    {
+      "id": "nebraska-sales-tax",
+      "jurisdiction": "US-NE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/nebraska/nebraska-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "nebraska sales tax"
+      ],
+      "size_kb": 15.7,
+      "lines": 355
+    },
+    {
+      "id": "nevada-sales-tax",
+      "jurisdiction": "US-NE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/nevada/nevada-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "nevada sales tax"
+      ],
+      "size_kb": 17.5,
+      "lines": 385
+    },
+    {
+      "id": "new-jersey-sales-tax",
+      "jurisdiction": "US-NE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/new-jersey/new-jersey-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "new jersey sales tax"
+      ],
+      "size_kb": 18.4,
+      "lines": 391
+    },
+    {
+      "id": "new-mexico-sales-tax",
+      "jurisdiction": "US-NE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/new-mexico/new-mexico-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "new mexico sales tax"
+      ],
+      "size_kb": 18.4,
+      "lines": 373
+    },
+    {
+      "id": "north-carolina-sales-tax",
+      "jurisdiction": "US-NO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/north-carolina/north-carolina-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "north carolina sales tax"
+      ],
+      "size_kb": 21.5,
+      "lines": 453
+    },
+    {
+      "id": "north-dakota-sales-tax",
+      "jurisdiction": "US-NO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/north-dakota/north-dakota-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "north dakota sales tax"
+      ],
+      "size_kb": 15.4,
+      "lines": 358
+    },
+    {
+      "id": "new-york-sales-tax",
+      "jurisdiction": "US-NY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "newyork/new-york-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "new york sales tax"
+      ],
+      "size_kb": 29.7,
+      "lines": 605
+    },
+    {
+      "id": "ny-llc-filing-fee-it-204-ll",
+      "jurisdiction": "US-NY",
+      "obligation": "EF",
+      "quality": "Q2",
+      "path": "newyork/ny-llc-filing-fee-it-204-ll.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "ny llc filing fee it 204 ll"
+      ],
+      "size_kb": 54.3,
+      "lines": 653
+    },
+    {
+      "id": "ny-estimated-tax",
+      "jurisdiction": "US-NY",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "newyork/ny-estimated-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "ny estimated tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ny-it-201-resident-return",
+      "jurisdiction": "US-NY",
+      "obligation": "IT",
+      "quality": "Q2",
+      "path": "newyork/ny-it-201-resident-return.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "ny it 201 resident return"
+      ],
+      "size_kb": 180.4,
+      "lines": 2359
+    },
+    {
+      "id": "nyc-unincorporated-business-tax",
+      "jurisdiction": "US-NY-NYC",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "newyork/nyc-unincorporated-business-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "nyc unincorporated business tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "ohio-sales-tax",
+      "jurisdiction": "US-OH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/ohio/ohio-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "ohio sales tax"
+      ],
+      "size_kb": 18.2,
+      "lines": 393
+    },
+    {
+      "id": "oklahoma-sales-tax",
+      "jurisdiction": "US-OK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/oklahoma/oklahoma-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "oklahoma sales tax"
+      ],
+      "size_kb": 16.1,
+      "lines": 373
+    },
+    {
+      "id": "pennsylvania-sales-tax",
+      "jurisdiction": "US-PE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/pennsylvania/pennsylvania-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "pennsylvania sales tax"
+      ],
+      "size_kb": 17.7,
+      "lines": 366
+    },
+    {
+      "id": "rhode-island-sales-tax",
+      "jurisdiction": "US-RH",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/rhode-island/rhode-island-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "rhode island sales tax"
+      ],
+      "size_kb": 15.9,
+      "lines": 362
+    },
+    {
+      "id": "south-carolina-sales-tax",
+      "jurisdiction": "US-SO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/south-carolina/south-carolina-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "south carolina sales tax"
+      ],
+      "size_kb": 20.3,
+      "lines": 451
+    },
+    {
+      "id": "south-dakota-sales-tax",
+      "jurisdiction": "US-SO",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/south-dakota/south-dakota-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "south dakota sales tax"
+      ],
+      "size_kb": 17.8,
+      "lines": 386
+    },
+    {
+      "id": "tennessee-sales-tax",
+      "jurisdiction": "US-TE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/tennessee/tennessee-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "tennessee sales tax"
+      ],
+      "size_kb": 20.8,
+      "lines": 438
+    },
+    {
+      "id": "texas-sales-tax",
+      "jurisdiction": "US-TX",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "texas/texas-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "texas sales tax"
+      ],
+      "size_kb": 27.8,
+      "lines": 583
+    },
+    {
+      "id": "tx-sales-use-tax",
+      "jurisdiction": "US-TX",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "texas/tx-sales-use-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "tx sales use tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "tx-franchise-tax",
+      "jurisdiction": "US-TX",
+      "obligation": "EF",
+      "quality": "Q4",
+      "path": "texas/tx-franchise-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "tx franchise tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "utah-sales-tax",
+      "jurisdiction": "US-UT",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/utah/utah-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "utah sales tax"
+      ],
+      "size_kb": 16.3,
+      "lines": 365
+    },
+    {
+      "id": "vermont-sales-tax",
+      "jurisdiction": "US-VE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/vermont/vermont-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "vermont sales tax"
+      ],
+      "size_kb": 16.3,
+      "lines": 372
+    },
+    {
+      "id": "virginia-sales-tax",
+      "jurisdiction": "US-VI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/virginia/virginia-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "virginia sales tax"
+      ],
+      "size_kb": 24.7,
+      "lines": 487
+    },
+    {
+      "id": "wa-business-occupation-tax",
+      "jurisdiction": "US-WA",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "washington/wa-business-occupation-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "wa business occupation tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "wa-sales-tax",
+      "jurisdiction": "US-WA",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "washington/wa-sales-tax.md",
+      "depends_on": [
+        "us-tax-workflow-base"
+      ],
+      "triggers": [
+        "wa sales tax"
+      ],
+      "size_kb": 2.4,
+      "lines": 85
+    },
+    {
+      "id": "washington-sales-tax",
+      "jurisdiction": "US-WA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "washington/washington-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "washington sales tax"
+      ],
+      "size_kb": 27.9,
+      "lines": 607
+    },
+    {
+      "id": "west-virginia-sales-tax",
+      "jurisdiction": "US-WE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/west-virginia/west-virginia-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "west virginia sales tax"
+      ],
+      "size_kb": 16.5,
+      "lines": 375
+    },
+    {
+      "id": "wisconsin-sales-tax",
+      "jurisdiction": "US-WI",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/wisconsin/wisconsin-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "wisconsin sales tax"
+      ],
+      "size_kb": 19.3,
+      "lines": 424
+    },
+    {
+      "id": "wyoming-sales-tax",
+      "jurisdiction": "US-WY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "us-states/wyoming/wyoming-sales-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "wyoming sales tax"
+      ],
+      "size_kb": 16.0,
+      "lines": 371
+    },
+    {
+      "id": "uruguay-iva",
+      "jurisdiction": "UY",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/uruguay/uruguay-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "uruguay iva"
+      ],
+      "size_kb": 18.6,
+      "lines": 531
+    },
+    {
+      "id": "uzbekistan-vat",
+      "jurisdiction": "UZ",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/uzbekistan/uzbekistan-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "uzbekistan vat"
+      ],
+      "size_kb": 18.4,
+      "lines": 519
+    },
+    {
+      "id": "venezuela-iva",
+      "jurisdiction": "VE",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/venezuela/venezuela-iva.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "venezuela iva"
+      ],
+      "size_kb": 21.8,
+      "lines": 548
+    },
+    {
+      "id": "bvi-tax",
+      "jurisdiction": "VG",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/bvi/bvi-tax.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "bvi tax"
+      ],
+      "size_kb": 13.3,
+      "lines": 371
+    },
+    {
+      "id": "vietnam-vat",
+      "jurisdiction": "VN",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/vietnam/vietnam-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "vietnam vat"
+      ],
+      "size_kb": 38.9,
+      "lines": 678
+    },
+    {
+      "id": "kosovo-vat",
+      "jurisdiction": "XK",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/kosovo/kosovo-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "kosovo vat"
+      ],
+      "size_kb": 19.2,
+      "lines": 524
+    },
+    {
+      "id": "south-africa-vat",
+      "jurisdiction": "ZA",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/south-africa/south-africa-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "south africa vat"
+      ],
+      "size_kb": 51.1,
+      "lines": 776
+    },
+    {
+      "id": "za-vat-return",
+      "jurisdiction": "ZA",
+      "obligation": "CT",
+      "quality": "Q4",
+      "path": "international/south-africa/za-vat-return.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "za vat return"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "za-provisional-tax",
+      "jurisdiction": "ZA",
+      "obligation": "ET",
+      "quality": "Q4",
+      "path": "international/south-africa/za-provisional-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "za provisional tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "za-income-tax",
+      "jurisdiction": "ZA",
+      "obligation": "IT",
+      "quality": "Q4",
+      "path": "international/south-africa/za-income-tax.md",
+      "depends_on": [
+        "workflow-base"
+      ],
+      "triggers": [
+        "za income tax"
+      ],
+      "size_kb": 2.5,
+      "lines": 85
+    },
+    {
+      "id": "zambia-vat",
+      "jurisdiction": "ZM",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/zambia/zambia-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "zambia vat"
+      ],
+      "size_kb": 13.3,
+      "lines": 335
+    },
+    {
+      "id": "zimbabwe-vat",
+      "jurisdiction": "ZW",
+      "obligation": "CT",
+      "quality": "Q2",
+      "path": "international/zimbabwe/zimbabwe-vat.md",
+      "depends_on": [
+        "vat-workflow-base"
+      ],
+      "triggers": [
+        "zimbabwe vat"
+      ],
+      "size_kb": 15.1,
+      "lines": 362
+    }
+  ]
+}
