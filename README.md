@@ -211,6 +211,12 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 Contributors agree to the [Contributor License Agreement](CLA.md) when submitting a PR.
 
+## Contact
+
+For questions, partnerships, commercial licensing, or verification enquiries:
+
+**info@openaccountants.com**
+
 ## Built by
 
 [Glimpse Ltd](https://accora.ai) (trading as [Accora](https://accora.ai)) — open-source accounting tools for AI.
