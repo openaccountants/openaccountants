@@ -199,8 +199,18 @@ If you would like a licensed accountant to review your return, visit [openaccoun
 
 ## License
 
-MIT
+**Dual-licensed:**
+
+- **AGPL-3.0** — Free for individuals, educators, open-source projects, and anyone willing to open-source their work. See [LICENSE](LICENSE).
+- **Commercial License** — For businesses building proprietary products that incorporate these skills. See [COMMERCIAL_LICENSE.md](COMMERCIAL_LICENSE.md).
+
+**In plain English:**
+- Using the skills to do your own taxes? Free.
+- Accountant using them to help clients? Free.
+- Building a SaaS product with them? Either open-source your product under AGPL-3.0, or get a commercial license.
+
+Contributors agree to the [Contributor License Agreement](CLA.md) when submitting a PR.
 
 ## Built by
 
-[Accora](https://accora.ai) — open-source accounting tools for AI.
+[Glimpse Ltd](https://accora.ai) (trading as [Accora](https://accora.ai)) — open-source accounting tools for AI.

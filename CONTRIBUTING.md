@@ -46,6 +46,12 @@ Every skill follows the same structure:
 
 After you submit, licensed accountants review each section of your skill on [openaccountants.com](https://openaccountants.com). When every section is approved, the skill gets a green "verified" badge. Your name stays on it as the author.
 
+## Contributor License Agreement (CLA)
+
+By submitting a pull request, you agree to the [Contributor License Agreement](CLA.md). This grants Glimpse Ltd a license to distribute your contribution under both the AGPL-3.0 open-source license and the commercial license. You retain full copyright to your work.
+
+This is necessary because Open Accountants is dual-licensed. Without the CLA, we couldn't offer commercial licenses for the project as a whole.
+
 ## What you get
 
 - Your name on the skill, linked to your contributor profile

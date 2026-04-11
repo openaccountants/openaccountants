@@ -170,8 +170,9 @@ By the time you reach Step 7, you have a complete classification/computation for
 1. **The Excel working paper** (per Section 3, Output 1). Write the file, run the recalc script, verify zero formula errors. Loop until clean.
 2. **The reviewer brief** (per Section 3, Output 2). The brief cites bottom-line figures from the recalculated workbook, not from the model's own arithmetic.
 3. **The action list** (per Section 3, Output 3). Items requiring reviewer or client action before filing.
+4. **The review checklist** (per Section 3, Output 4). Structured sign-off document for the reviewing practitioner. Pre-populated from the working paper: every flag, every conservative default, every T2 position, every cross-check result becomes a checklist item the reviewer must explicitly accept or reject.
 
-Step 7 is not complete until all three are built and the recalc has reported success.
+Step 7 is not complete until all four are built and the recalc has reported success.
 
 ### Step 7.5 -- Review pass (where the content skill requires it)
 
@@ -196,7 +197,7 @@ Do NOT re-ask questions that were already answered in Step 6.5. The closing mess
 
 ## Section 3 -- Output specification
 
-Three outputs per engagement. All three are mandatory. Never produce one without the others.
+Four outputs per engagement. All four are mandatory. Never produce one without the others.
 
 ### Output 1 -- Excel working paper
 
@@ -324,6 +325,101 @@ A short, structured list of items requiring action before the filing can proceed
 Each item has: the item description, the deadline (if any), the cash impact if the item changes the position, and a reference to the relevant section of the reviewer brief.
 
 The action list is presented in the chat response and also saved as a section of the reviewer brief. It is the "what happens next" document.
+
+### Output 4 -- Review checklist
+
+The review checklist is the **structured sign-off document** that the reviewing practitioner uses to verify the output. It is auto-generated from the working paper and reviewer brief — every flag, default, T2 position, and cross-check becomes a line item the reviewer must explicitly accept or reject.
+
+**The checklist is not optional.** It is what makes a 20-minute structured review possible instead of a 3-hour unstructured read. It is the basis for the review service on openaccountants.com.
+
+**Structure (in this exact order):**
+
+```
+REVIEW CHECKLIST — [Obligation] [Period]
+Client: [name]  |  Prepared by: Claude + [skill name] [version]
+Reviewer: ____________  |  Credential: ____________  |  Date: ____________
+
+═══════════════════════════════════════════════════════════════
+SECTION A: HIGH FLAGS (review these first)
+═══════════════════════════════════════════════════════════════
+
+For each high flag from the reviewer brief:
+
+□ FLAG-[N]: [One-line description]
+  Position taken: [what Claude did]
+  Amount: [currency + figure]
+  Citation: [statute/regulation]
+  Reviewer action: [Agree] [Disagree — reason: ___________]
+
+═══════════════════════════════════════════════════════════════
+SECTION B: CONSERVATIVE DEFAULTS APPLIED
+═══════════════════════════════════════════════════════════════
+
+For each conservative default from the working paper (column H = Y):
+
+□ DEFAULT-[N]: [Item description] — [amount]
+  Default applied: [what was assumed]
+  Alternative: [what the reviewer could change]
+  Cash impact if changed: [amount]
+  Reviewer action: [Accept default] [Override — new treatment: ___________]
+
+═══════════════════════════════════════════════════════════════
+SECTION C: T2 POSITIONS (reviewer judgment required)
+═══════════════════════════════════════════════════════════════
+
+For each T2 item from the reviewer brief:
+
+□ T2-[N]: [Item description]
+  Ambiguity: [what is uncertain]
+  Position taken: [conservative treatment applied]
+  Alternative position: [what else could apply]
+  Cash impact: [difference between positions]
+  Reviewer decision: [Confirm position] [Change to: ___________]
+
+═══════════════════════════════════════════════════════════════
+SECTION D: STANDARD VERIFICATION
+═══════════════════════════════════════════════════════════════
+
+□ Bottom-line figure: [amount] — arithmetic verified?
+□ Filing period correct?
+□ Entity/taxpayer details correct?
+□ All source documents accounted for?
+□ No blocked/non-deductible categories incorrectly claimed?
+□ Cross-checks all pass? (list any that failed)
+
+Content skills add obligation-specific items here. Examples:
+- VAT: "Output VAT ties to sales listing? Input VAT ties to purchase listing?"
+- Income tax: "Gross income matches bank deposits? Deductions substantiated?"
+- Social contributions: "Contribution base matches net income from IT return?"
+
+═══════════════════════════════════════════════════════════════
+SECTION E: SIGN-OFF
+═══════════════════════════════════════════════════════════════
+
+I have reviewed this working paper and reviewer brief against the
+source documents provided. I have checked every item in Sections A-D
+above.
+
+Overall assessment:
+  □ Approved — positions are reasonable, ready to file
+  □ Approved with amendments — amendments noted above, re-run required
+  □ Rejected — material issues found, requires rework
+
+Reviewer: _________________
+Credential: _________________
+Jurisdiction: _________________
+Date: _________________
+```
+
+**Population rules:**
+
+1. **Section A** pulls from the reviewer brief's "High flags" section. One checklist item per flag.
+2. **Section B** pulls from the working paper — every row where column H = "Y". Group related defaults (e.g., "5 entertainment expenses blocked, total €340" instead of 5 separate items).
+3. **Section C** pulls from the reviewer brief's T2 disclosures. One item per T2 position.
+4. **Section D** uses the standard checks above PLUS any obligation-specific checks defined in the content skill's `## Review Checklist Items` section.
+5. **Section E** is always present, always last.
+
+**If a content skill defines a `## Review Checklist Items` section**, those items are added to Section D. This is how each skill adds obligation-specific checks (e.g., a VAT skill adds "reverse charge correctly applied?" while an income tax skill adds "capital allowances within statutory limits?").
 
 ---
 
@@ -575,7 +671,7 @@ The workflow runbook, conservative defaults principle, three-output specificatio
 
 1. Workflow at top of file after principles: yes (Section 2).
 2. Imperatives not descriptions: yes throughout.
-3. Output specification mandates Excel + brief + action list: yes (Section 3).
+3. Output specification mandates Excel + brief + action list + review checklist: yes (Section 3).
 4. Structured question form rules present: yes (Section 4).
 5. Self-check framework present: yes (Section 5, eighteen checks).
 6. No tax content, no rates, no thresholds, no form references, no jurisdiction-specific figures: verified.
