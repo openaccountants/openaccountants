@@ -517,4 +517,4 @@ This skill and its outputs are provided for informational and computational purp
 
 German social insurance law is complex and fact-specific. Rates, thresholds, and rules change annually via the Sozialversicherungsrechengroessenverordnung. Always verify figures against the current year's BMAS publication.
 
-If you would like a licensed accountant to review your return, visit [openaccountants.com](https://openaccountants.com) and log in to request a professional review.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

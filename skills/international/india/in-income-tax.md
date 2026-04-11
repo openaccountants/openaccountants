@@ -717,4 +717,4 @@ This skill and its outputs are provided for informational and computational purp
 
 Tax laws in India are subject to frequent amendment by Finance Acts and CBDT notifications. Users must verify all rates, thresholds, and rules against the latest applicable Finance Act and official CBDT circulars for the relevant assessment year.
 
-If you would like a licensed accountant to review your return, visit [openaccountants.com](https://openaccountants.com) and log in to request a professional review.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

@@ -726,4 +726,4 @@ This skill and its outputs are provided for informational and computational purp
 
 This skill does NOT cover the regimen foral (Pais Vasco, Navarra), estimacion objetiva (modulos), non-resident taxation, or the Beckham Law (regimen especial para trabajadores desplazados).
 
-If you would like a licensed accountant to review your return, visit [openaccountants.com](https://openaccountants.com) and log in to request a professional review.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
