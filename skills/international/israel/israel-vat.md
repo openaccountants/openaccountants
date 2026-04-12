@@ -1,736 +1,434 @@
 ---
 name: israel-vat
-description: Use this skill whenever asked to prepare, review, or advise on an Israel VAT (Ma'am / Mas Erech Musaf) return or any Ma'am-related classification. Trigger on phrases like "prepare VAT return", "Israel VAT", "Ma'am", "Mas Erech Musaf", "Osek Murshe", "Osek Patur", or any request involving Israeli VAT obligations. This skill contains the complete Israeli Ma'am classification rules, rate tables, registration categories, filing deadlines, and deductibility rules required to produce a correct return. ALWAYS read this skill before touching any Israel VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for an Israel VAT (Ma'am — מע"מ) return or advise on Israeli VAT registration, filing, and reporting. Trigger on phrases like "prepare Ma'am return", "Israeli VAT", "מע"מ", "doch maam", or any Israel VAT request. ALWAYS read this skill before touching any Israel Ma'am-related work.
+version: 2.0
+jurisdiction: IL
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# Israel VAT (Ma'am / Mas Erech Musaf) Return Preparation Skill
+# Israel VAT (Ma'am — מע"מ) Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | State of Israel (Medinat Yisrael) |
-| Jurisdiction Code | IL |
-| Primary Legislation | Chok Mas Erech Musaf, 5736-1975 (VAT Law of 1975) |
-| Supporting Legislation | Takanot Mas Erech Musaf (VAT Regulations); Income Tax Ordinance (for Osek Patur thresholds); Customs Ordinance (import VAT) |
-| Tax Authority | Rashut HaMisim (Israel Tax Authority -- ITA) |
-| Filing Portal | https://www.gov.il/he/departments/israel_tax_authority (Shaam portal) |
-| Skill Version | 1.0 |
-| Validated By | Deep research verification, April 2026 |
-| Confidence Coverage | Tier 1: rate classification, return field assignment, registration categories, deductibility rules. Tier 2: partial exemption, non-profit institutions, Palestinian Authority transactions. Tier 3: complex group structures, Eilat free trade zone, multinational transfer pricing. |
+|---|---|
+| Country | Israel (מדינת ישראל) |
+| Tax | Ma'am (מס ערך מוסף — Value Added Tax) |
+| Currency | ILS (Israeli New Shekel — ₪) |
+| Standard rate | 17% (effective January 2025; was 17% restored after temporary 18% in 2024) |
+| Reduced rate | 0% (exports, specific agricultural produce, tourism services to non-residents) |
+| Exempt | Financial services, insurance, residential rent (if not commercial), medical services |
+| Registration threshold | ILS 120,000 annual turnover (2025 threshold); below this — "Osek Patur" (exempt dealer) |
+| Small business | Osek Murshe (עוסק מורשה) — registered dealer filing periodic returns |
+| Tax authority | Israel Tax Authority (ITA — רשות המיסים בישראל) |
+| Filing portal | Shaam Online — https://www.misim.gov.il |
+| Return form | Doch Ma'am (דוח מע"מ — Form PCN83 / PCN874) |
+| Filing frequency | Bimonthly (most businesses); Monthly (turnover > ILS 1.5M) |
+| Deadline | 15th of the month following the reporting period |
+| Tax invoices | Heshbonit Mase (חשבונית מס) required for all B2B transactions above ILS 305 |
+| Contributor | Open Accountants Community |
+| Validated by | Pending — requires sign-off by Israel-licensed CPA (רואה חשבון) |
+| Skill version | 2.0 |
+
+### Key return form fields
+
+| Field | Meaning |
+|---|---|
+| Iska (עסקה) | Output tax base — taxable supplies at 17% |
+| Yetsia (יציאה) | Exports / zero-rated supplies |
+| Pator (פטור) | Exempt supplies |
+| Totchaot (תשומות) | Input tax on purchases |
+| Maam Letashlum (מע"מ לתשלום) | Net Ma'am payable (Output − Input) |
+| Yiteret Totchaot (יתרת תשומות) | Excess input tax carried forward |
+| Mechira LeZar (מכירה לזר) | Sale to foreign resident (zero-rated tourism) |
+
+### Conservative defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 17% standard |
+| Unknown whether export documentation complete | Treat as domestic 17% |
+| Unknown business-use % (vehicle, phone, home) | 0% input credit |
+| Unknown whether Heshbonit Mase issued | No input credit until confirmed |
+| Financial service vs professional service | Treat as professional — 17% |
+| Residential rent vs commercial | Treat as exempt until lease reviewed |
+| Foreign digital service (B2B) | Buyer self-assesses under reverse charge |
+
+### Red flag thresholds
+
+| Threshold | Value |
+|---|---|
+| HIGH single transaction | ILS 100,000 |
+| HIGH tax delta on single conservative default | ILS 17,000 |
+| MEDIUM counterparty concentration | >40% of output or input |
+| MEDIUM conservative default count | >4 per return |
+| LOW absolute net Ma'am position | ILS 250,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax adviser must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax adviser and document the gap.
+Before starting any Israel Ma'am work, obtain:
 
----
+1. Osek number (מספר עוסק — 9-digit taxpayer ID) and registration certificate
+2. Bimonthly bank statements in ILS (all business accounts)
+3. Heshbonit Mase (tax invoices) from all suppliers — must include supplier's Osek number
+4. Sales invoices issued (Heshbonit Mase or Heshbonit Kala for amounts below ILS 305)
+5. Prior period Doch Ma'am (for carried-forward excess input credit)
+6. Import documents from Customs (ASYCUDA / import declarations) for imported goods
+7. Details of zero-rated tourism transactions (passports, foreign payment evidence)
 
-## Step 0: Client Onboarding Questions
+### Refusal catalogue
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and business number (Osek number)** [T1] -- 9-digit business registration number
-2. **Registration category** [T1] -- Osek Murshe (licensed/standard dealer), Osek Patur (exempt dealer), Mil'ra (non-profit institution), or Mosad Kespi Finansi (financial institution)
-3. **Filing frequency** [T1] -- Monthly (turnover > ILS threshold) or bi-monthly (turnover <= ILS threshold)
-4. **Industry/sector** [T2] -- Impacts specific deductibility rules and potential zero-rating
-5. **Does the business make exempt supplies?** [T2] -- If yes, partial attribution required
-6. **Is the client located in Eilat?** [T3] -- Eilat Free Trade Zone has special VAT-free rules
-7. **Does the client transact with Palestinian Authority entities?** [T2] -- Special clearance rules apply
-8. **Credit carried forward from prior period** [T1]
-9. **Does the client export goods or services?** [T1] -- Zero-rated; refund eligibility
-10. **Is the client a Mil'ra (non-profit)?** [T2] -- Different Ma'am treatment and rates apply
-
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until confirmed.**
+Refuse and escalate to a licensed CPA (רואה חשבון) for:
+- Partial exemption (Alut Yechusit — עלות יחסית) — businesses with mixed exempt/taxable
+- Real estate Ma'am transactions (Mas Rechisha — complex exemptions on property)
+- Ma'am group registration (Kvutzat Osek — עוסק קבוצה)
+- Designated area supplies (Eilat free zone — zero-rated)
+- Diamond and precious metal special scheme
+- Ma'am on long-term contracts and construction
+- Retroactive registration for Osek Patur transitioning to Osek Murshe
 
 ---
 
-## Step 1: Transaction Classification Rules
+## Section 3 — Supplier pattern library
 
-### 1a. Determine Transaction Type [T1]
+### 3.1 Banking and financial services
 
-- Sale (output Ma'am -- mas etzot) or Purchase (input Ma'am -- mas tsumotkha)
-- Salaries (maskoret), social contributions (bituach leumi), tax payments, loan repayments, dividends = OUT OF SCOPE (never on Ma'am return)
-- **Legislation:** VAT Law 5736-1975, Section 2 (taxable transactions)
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Bank Hapoalim (בנק הפועלים) | Bank fees, wire charges | Exempt | No |
+| Bank Leumi (בנק לאומי) | Account maintenance, loans | Exempt | No |
+| Mizrahi Tefahot (מזרחי טפחות) | Mortgage, business banking | Exempt | No |
+| Discount Bank (בנק דיסקונט) | Commercial banking fees | Exempt | No |
+| Bank Otsar HaHayal (אוצר החייל) | Military banking | Exempt | No |
+| Bit (ביט — Hapoalim app) | P2P payment transfer | Exempt | No |
+| PayBox (פייבוקס — Leumi) | P2P digital wallet | Exempt | No |
+| Pelecard / Creditguard | Payment processing | 17% | Yes |
+| Tranzila | E-commerce payment gateway | 17% | Yes |
 
-### 1b. Determine Counterparty Location [T1]
+### 3.2 Electricity and utilities
 
-- **Domestic (Israel):** Supplier/customer is in Israel (including West Bank settlements for tax purposes) [T2]
-- **Palestinian Authority:** Special clearance rules under Paris Protocol [T2]
-- **Foreign:** All other countries
-- **Eilat:** VAT-free zone; special rules apply [T3]
-- **Note:** Israel is NOT an EU/EEA member state. No intra-community supply rules apply.
-- **Legislation:** VAT Law 5736-1975, Section 15 (place of supply)
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Israel Electric Corporation (חברת החשמל — IEC) | Electricity | 17% | Yes (business) |
+| Mekorot (מקורות) | Water supply wholesale | 17% | Yes |
+| Local municipality water (ועדה מקומית) | Water — municipal | 17% | Yes |
+| Paz Gas / Supergas | Gas — cooking/heating | 17% | Yes |
+| Cellcom Energy | Green electricity supply | 17% | Yes |
 
-### 1c. Determine Ma'am Rate [T1]
+### 3.3 Telecommunications
 
-| Rate | Category | Legal Basis |
-|------|----------|-------------|
-| 18% | Standard rate | VAT Law Section 2; Finance Minister's Order |
-| 0% | Zero-rated (exports, tourism services, fruits/vegetables) | VAT Law Section 30 |
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Cellcom (סלקום) | Mobile, broadband | 17% | Yes (business use) |
+| Partner Communications (פרטנר) | Mobile, fiber, TV | 17% | Yes (business use) |
+| Bezeq (בזק) | Fixed line, DSL internet | 17% | Yes (business use) |
+| HOT (הוט) | Cable TV, internet, phone | 17% | Yes (business use) |
+| 012 Mobile / 013 Netvision | MVNO, internet | 17% | Yes |
+| Golan Telecom (גולן טלקום) | Discount mobile | 17% | Yes |
 
-**Rate history:**
+### 3.4 Transport and travel
 
-| Period | Rate |
-|--------|------|
-| Until 30 September 2015 | 18% |
-| 1 October 2015 -- 31 December 2024 | 17% |
-| 1 January 2025 onwards | 18% |
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| El Al (אל על) | Domestic flights (Eilat) | 17% | Yes |
+| El Al | International flights | 0% | No input credit applicable |
+| Arkia | Domestic flights | 17% | Yes |
+| Israir | Domestic flights | 17% | Yes |
+| Israel Railways (רכבת ישראל) | Train tickets | 17% | Yes |
+| Egged (אגד) | Bus — intercity | 17% | Yes |
+| Dan (דן) | Bus — Tel Aviv metro | 17% | Yes |
+| Gett (גט) | Taxi app | 17% | Yes (business use) |
+| Yango | Ride-hailing | 17% | Yes (business use) |
 
-**Note:** The rate was reduced from 18% to 17% on 1 October 2015 and restored to 18% on 1 January 2025.
+### 3.5 Logistics and postal
 
-**Legislation:** VAT Law Section 2; Finance Minister's Orders on rate changes
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Israel Post (דואר ישראל) | Domestic mail, parcels | 17% | Yes |
+| DHL Israel | International courier | 0% (export) / 17% (domestic) | Yes |
+| UPS Israel | International courier | 0% / 17% | Yes |
+| FedEx Israel | International courier | 0% / 17% | Yes |
+| Ashot Logistics | Domestic delivery | 17% | Yes |
 
-### 1d. Standard Rate (18%) Applies To [T1]
+### 3.6 Retail and office supplies
 
-- All goods and services not specifically zero-rated or exempt
-- Professional services (legal, accounting, consulting, IT, medical -- private)
-- Telecommunications and electronic services
-- Construction services
-- Motor vehicles
-- Electronics, furniture, clothing
-- Restaurant and catering services
-- Real property transactions (excluding residential rent)
-- **Legislation:** VAT Law Section 2
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Shufersal (שופרסל) | Supermarket — food/non-food | 17% (food not zero-rated in IL) | Yes (business) |
+| Rami Levy (רמי לוי) | Discount supermarket | 17% | Yes |
+| Office Depot Israel | Office supplies | 17% | Yes |
+| KSP (כ.ס.פ) | Electronics | 17% | Yes |
+| SuperPharm | Pharmacy — medicines | 17% (medicines not zero-rated in IL) | Yes |
+| Factory 54 / Castro | Clothing | 17% | Yes |
 
-### 1e. Zero-Rated Supplies (Section 30) [T1]
+### 3.7 Software and digital services
 
-| Category | Legal Basis | Notes |
-|----------|-------------|-------|
-| Export of goods | Sec 30(a)(1) | Goods must leave Israel, confirmed by customs |
-| Tourism services to incoming tourists | Sec 30(a)(2) | Hotels, tours for foreign tourists (specific conditions) [T2] |
-| Fruits and vegetables (fresh) | Sec 30(a)(12) | Unprocessed; list maintained by Finance Ministry |
-| International transport | Sec 30(a)(3) | Of passengers and goods |
-| Services to non-resident (benefit accrues abroad) | Sec 30(a)(5) | B2B services where benefit is outside Israel |
-| Supplies to Eilat zone | Sec 30(a)(6) | Goods delivered to Eilat [T3] |
-| Diamonds (rough and polished -- inter-dealer) | Sec 30(a)(8) | Diamond industry specific rules |
-| Gold (inter-dealer) | Sec 30(a)(9) | Precious metals industry |
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Priority Software (פריוריטי) | Israeli ERP | 17% | Yes |
+| Greeninvoice (חשבונית ירוקה) | Cloud invoicing platform | 17% | Yes |
+| Hashavshevet (חשבשבת) | Accounting software | 17% | Yes |
+| iCount | Cloud accounting | 17% | Yes |
+| Microsoft Israel (Azure, M365) | Cloud services — B2B | 17% (buyer reverse-charge) | Yes |
+| Google Workspace IL | Cloud — B2B | 17% (buyer reverse-charge) | Yes |
+| Salesforce Israel | CRM — B2B | 17% (buyer reverse-charge) | Yes |
+| AWS Israel | Cloud infrastructure — B2B | 17% (buyer reverse-charge) | Yes |
 
-**Note:** Zero-rated suppliers can claim full input Ma'am refund
-**Legislation:** VAT Law Section 30
+### 3.8 Professional services
 
-### 1f. Exempt Transactions (No Input Recovery) [T1]
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Roeh Heshbon (רואה חשבון — CPA) | Accounting, audit | 17% | Yes |
+| Orech Din (עורך דין — lawyer) | Legal services | 17% | Yes |
+| Munahel Ishur (מנהל אישור — notary equivalent) | Document certification | 17% | Yes |
+| Reklam / marketing agency | Advertising, PR | 17% | Yes |
+| Building contractor (קבלן) | Construction services | 17% | Yes |
 
-| Category | Legal Basis | Notes |
-|----------|-------------|-------|
-| Residential property rental (dira) | Sec 31(1) | Rental of dwelling for residential use |
-| Financial services (partial exemption) | Sec 31(3) | Banks and financial institutions pay profit-based tax (mas revach) instead of standard Ma'am [T2] |
-| Sale of going concern | Sec 31(4) | Transfer of business as whole |
-| Small transactions by Osek Patur | Sec 31(7) | Below threshold -- exempt without credit |
-| Certain insurance transactions | Sec 31(3a) | Life insurance premiums [T2] |
+### 3.9 Insurance
 
-**Note:** Financial institutions (banks, insurance companies) are subject to a special payroll + profit tax (mas revach + mas sachir) in lieu of standard Ma'am on their financial activities. This is unique to Israel.
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Harel Insurance (הראל) | Business insurance | Exempt | No |
+| Menora Mivtachim (מנורה מבטחים) | Property, liability | Exempt | No |
+| Clal Insurance (כלל ביטוח) | Vehicle, business | Exempt | No |
+| AIG Israel | Professional indemnity | Exempt | No |
 
-**Legislation:** VAT Law Section 31
+### 3.10 Healthcare
 
----
-
-## Step 2: Registration Categories
-
-### 2a. Osek Murshe (Licensed Dealer / Standard Registration) [T1]
-
-| Feature | Details |
-|---------|---------|
-| Who | All businesses above the Osek Patur threshold |
-| Threshold | Automatic if turnover exceeds ILS 120,000 per year (2025 threshold) [T2] -- updated annually |
-| Obligations | Charge Ma'am on sales, file returns, issue tax invoices (cheshbonit mas) |
-| Input recovery | Full input Ma'am recovery on business expenses (subject to deductibility rules) |
-| Invoice type | Must issue Tax Invoice (Cheshbonit Mas) showing Ma'am separately |
-
-**Legislation:** VAT Law Section 20, 21, 47
-
-### 2b. Osek Patur (Exempt Dealer) [T1]
-
-| Feature | Details |
-|---------|---------|
-| Who | Self-employed individuals or sole proprietors below turnover threshold |
-| Threshold | Annual turnover <= ILS 120,000 (2025; adjusted annually by Finance Minister) |
-| Obligations | Does NOT charge Ma'am on sales; files annual income report only |
-| Input recovery | NONE -- cannot claim any input Ma'am |
-| Invoice type | Issues receipt (kabala) only, NOT a tax invoice |
-| Transition | Must register as Osek Murshe if turnover exceeds threshold |
-
-**Legislation:** VAT Law Section 31(7), Regulations
-
-### 2c. Mil'ra (Non-Profit Institution) [T2]
-
-| Feature | Details |
-|---------|---------|
-| Who | Recognized non-profit organizations (amutot, public institutions) |
-| Obligations | Subject to Ma'am on payroll (salary-based tax) instead of transaction-based Ma'am |
-| Rate | Ma'am at reduced employer rate on salaries paid [T2] |
-| Input recovery | Limited -- only on goods purchased for resale or certain qualifying activities |
-| Complexity | High -- treatment varies by type of activity; mixed treatment common |
-
-**Flag for reviewer:** Mil'ra Ma'am calculations are highly specialized. Always confirm with tax adviser.
-
-**Legislation:** VAT Law Section 1 (definitions), Section 58-63 (Mil'ra provisions)
-
-### 2d. Mosad Kespi Finansi (Financial Institution) [T2]
-
-| Feature | Details |
-|---------|---------|
-| Who | Banks, insurance companies, provident funds |
-| Obligations | Pay Ma'am as profit tax (mas revach) + payroll tax (mas sachir) instead of standard Ma'am |
-| Input recovery | Special rules; not standard input deduction |
-| Complexity | Very high |
-
-**Flag for reviewer:** Financial institution Ma'am is entirely different from standard Ma'am. Always escalate [T3].
-
-**Legislation:** VAT Law Sections 4, 58-63
+| Supplier | Typical description | Ma'am rate | Input credit |
+|---|---|---|---|
+| Clalit (כללית) | Health fund / Kupat Holim | Exempt | No |
+| Maccabi (מכבי) | Health fund | Exempt | No |
+| Meuhedet (מאוחדת) | Health fund | Exempt | No |
+| Private clinic / specialist | Private medical | Exempt | No |
 
 ---
 
-## Step 3: Ma'am Return Structure
+## Section 4 — Worked examples
 
-The Ma'am return is filed electronically via the Shaam portal.
+### Example 1 — Standard Ma'am on consulting fee
 
-### Section A: Output Ma'am [T1]
+**Scenario:** Tel Aviv software consulting firm issues Heshbonit Mase to Israeli corporate client.
 
-| Field | Description | Notes |
-|-------|-------------|-------|
-| A1 | Total taxable sales (standard rate) | Net value of all 18%-rated supplies |
-| A2 | Output Ma'am (18%) | = A1 x 18% |
-| A3 | Zero-rated sales | Exports, fruits/vegetables, tourism |
-| A4 | Exempt sales | Residential rent, financial (for reporting only) |
-| A5 | Self-assessed Ma'am on imports of services | Reverse charge on foreign services |
-| A6 | Total output Ma'am | = A2 + A5 |
-
-### Section B: Input Ma'am [T1]
-
-| Field | Description | Notes |
-|-------|-------------|-------|
-| B1 | Input Ma'am on domestic purchases | From tax invoices (cheshbonit mas) |
-| B2 | Import Ma'am from customs | From customs assessments (reshimat yevu) |
-| B3 | Self-assessed input Ma'am (reverse charge offset) | = A5 (offsetting entry) |
-| B4 | Fixed asset purchases -- input Ma'am | Capital goods input Ma'am |
-| B5 | Prior period credit carried forward | Yitrat zchut |
-| B6 | Adjustments (increase/decrease) | Corrections |
-| B7 | Total input Ma'am | = B1 + B2 + B3 + B4 + B5 +/- B6 |
-
-### Section C: Ma'am Payable or Refundable [T1]
-
+**Bank statement line (Bank Hapoalim format):**
 ```
-IF A6 > B7 THEN
-    C1 (Ma'am payable / mas le-tashlum) = A6 - B7
-    C2 = 0
-ELSE
-    C1 = 0
-    C2 (Ma'am refundable / yitrat zchut) = B7 - A6
-END
+תאריך    : 15/04/2025
+סוג פעולה: זיכוי - העברה בנקאית
+תיאור    : TECH SOLUTIONS LTD - חשבונית 041/2025 - שכ"ט ייעוץ
+סכום     : +234,000 ₪
 ```
 
-**Legislation:** VAT Law Section 67-72; VAT Regulations
+**Working:**
+- Heshbonit Mase: net ILS 200,000 + Ma'am 17% ILS 34,000 = ILS 234,000
+- Return entry: Output Iska — ILS 200,000 | Output Ma'am: ILS 34,000
 
 ---
 
-## Step 4: Reverse Charge Mechanics [T1]
+### Example 2 — Import of goods (reverse-charge customs)
 
-### 4a. Import of Goods [T1]
+**Scenario:** Company imports electronics from Germany — customs clears at Ben Gurion.
 
-- Ma'am on imported physical goods is assessed and collected by Customs (Meckes)
-- Importer pays Ma'am at the border via customs declaration (reshimat yevu)
-- This import Ma'am is deductible as input Ma'am (Field B2)
-- **Do NOT self-assess on the Ma'am return** -- Customs handles assessment
-- **Legislation:** VAT Law Section 2(2) (import as taxable transaction), Section 43 (import assessment)
-
-### 4b. Import of Services (Self-Assessment) [T1]
-
-- When an Israeli Osek Murshe receives services from a non-resident with no permanent establishment in Israel:
-  1. Self-assess Ma'am at 18% on the service value
-  2. Report output Ma'am in Field A5
-  3. Deduct same amount as input Ma'am in Field B3
-  4. Net effect: zero for fully taxable businesses
-- **Legislation:** VAT Law Section 15(b) (reverse charge on imported services)
-
-### 4c. Non-Resident Digital Services [T2]
-
-- Since 2016, non-resident providers of digital services to Israeli consumers must register for Ma'am
-- Major platforms (Netflix, Google, etc.) are required to register and collect Ma'am
-- When the Israeli business recipient self-assesses, the standard reverse charge applies
-- **Flag for reviewer:** Determine if the foreign provider is already registered and charging Ma'am
-- **Legislation:** VAT Law Section 15(b); Amendment 54
-
----
-
-## Step 5: Deductibility Rules
-
-### 5a. General Deduction Right [T1]
-
-- All input Ma'am on goods and services used for taxable business activities by an Osek Murshe is deductible
-- Input Ma'am must be documented by a Tax Invoice (Cheshbonit Mas) or customs declaration
-- Tax Invoice must contain: supplier name, Osek number, date, description, net amount, Ma'am amount
-- Deduction must be claimed within 6 months of the invoice date (extendable to 5 years with Tax Authority approval) [T2]
-- **Legislation:** VAT Law Section 38; VAT Regulations on Tax Invoices
-
-### 5b. Non-Deductible Input Ma'am (Blocked Categories) [T1]
-
-The following input Ma'am is BLOCKED and cannot be recovered:
-
-| Category | Legal Basis | Notes |
-|----------|-------------|-------|
-| Passenger vehicles (rechev prati) | Reg. 14 | Exception: taxi, rental car, driving instruction, vehicles for disabled |
-| Entertainment (iruach) | Reg. 15a | Meals, events, hospitality for clients/suppliers |
-| Mobile phones | Reg. 18 | 2/3 of input Ma'am blocked (1/3 deductible) [T2] |
-| Goods/services for non-business use | Sec 41 | Personal consumption |
-| Purchases without proper Tax Invoice | Sec 38 | No cheshbonit mas = no deduction |
-
-### 5c. Vehicle Deductibility Rules [T1]
-
-| Vehicle Type | Input Ma'am Deductible | Notes |
-|-------------|----------------------|-------|
-| Private passenger car (sedan, SUV) | NO | Blocked -- Regulation 14 |
-| Taxi | YES | Business use vehicle |
-| Rental car (by rental company) | YES | Business stock |
-| Delivery van (marked commercial) | YES | Must be classified as commercial vehicle |
-| Truck | YES | Commercial vehicle |
-| Motorcycle (for business) | YES | If used for deliveries/business |
-| Fuel for blocked vehicle | NO | Follows vehicle classification |
-| Fuel for deductible vehicle | YES | Follows vehicle classification |
-| Repairs on blocked vehicle | 1/4 deductible | Partial deduction per Reg. 14(b) [T2] |
-
-### 5d. Mobile Phone Rules [T1]
-
-- Input Ma'am on mobile phone purchase: 2/3 blocked, 1/3 deductible
-- Input Ma'am on mobile phone bills: 2/3 blocked, 1/3 deductible
-- Exception: if the phone is used 100% for business AND the employee has a separate personal phone -- full deduction allowed [T2]
-- **Flag for reviewer:** Full deduction claim on mobile requires evidence of separate personal phone
-- **Legislation:** VAT Regulations, Regulation 18
-
-### 5e. Partial Exemption (Pro-Rata) [T2]
-
-- If a business makes both taxable and exempt supplies, input Ma'am on overhead must be apportioned
-- Pro-rata formula: `Deductible % = (Taxable Supplies / Total Supplies) x 100`
-- Must be agreed with the Tax Authority assessor (pakid shuma)
-- **Flag for reviewer:** Pro-rata rate must be confirmed with Tax Authority before application
-- **Legislation:** VAT Law Section 41; VAT Regulations
-
-### 5f. Real Property Input Ma'am [T2]
-
-- Input Ma'am on construction/purchase of property intended for taxable use: deductible
-- Input Ma'am on property intended for residential rental (exempt): NOT deductible
-- If property use changes from taxable to exempt (or vice versa) within 10 years: adjustment required
-- **Flag for reviewer:** Real property input Ma'am requires careful analysis of intended use
-- **Legislation:** VAT Law Section 43; VAT Regulations on real property
-
----
-
-## Step 6: Invoice and Documentation Requirements
-
-### 6a. Tax Invoice (Cheshbonit Mas) [T1]
-
-| Requirement | Details |
-|-------------|---------|
-| Who must issue | All Osek Murshe (licensed dealers) |
-| Mandatory fields | Supplier name, Osek number, buyer name and Osek number (if B2B), date, sequential number, description of goods/services, quantity, unit price, total before Ma'am, Ma'am amount, total including Ma'am |
-| Format | Paper or electronic (both accepted) |
-| Storage | 7 years |
-| Duplicate | Must be marked "Hetek" (copy) |
-| Threshold for buyer details | Must include buyer name and Osek number for invoices > ILS 5,000 |
-
-**Legislation:** VAT Law Section 47; VAT Regulations on invoices
-
-### 6b. Receipt (Kabala) [T1]
-
-| Requirement | Details |
-|-------------|---------|
-| Who must issue | All dealers (both Osek Murshe and Osek Patur) upon receiving payment |
-| When | Within 7 days of receiving payment |
-| Content | Date, amount received, payment method |
-
-### 6c. Tax Invoice/Receipt Combined (Cheshbonit Mas / Kabala) [T1]
-
-- Most common document: combines the tax invoice and receipt in one document
-- Issued when payment is received at the time of the transaction (e.g., retail)
-- **Legislation:** VAT Regulations
-
-### 6d. Debit Note and Credit Note [T1]
-
-- Credit notes (cheshbonit zikui): issued to reduce a previous invoice
-- Debit notes: issued to increase a previous invoice
-- Must reference the original invoice number
-- Reduce/increase the relevant Ma'am fields accordingly
-- **Legislation:** VAT Law Section 23a
-
----
-
-## Step 7: Key Thresholds
-
-| Threshold | Value | Notes |
-|-----------|-------|-------|
-| Standard Ma'am rate | 18% | Since 1 January 2025 |
-| Osek Patur threshold | ILS 120,000 annual turnover | 2025; adjusted annually |
-| Tax Invoice buyer detail threshold | ILS 5,000 | Must include buyer details above this |
-| Input Ma'am claim deadline | 6 months (standard); 5 years (with approval) | From invoice date |
-| Mobile phone deductibility | 1/3 of input Ma'am | 2/3 blocked |
-| Vehicle repair (blocked car) | 1/4 of input Ma'am | 3/4 blocked |
-| Real property adjustment period | 10 years | Change of use |
-| Document retention | 7 years | Tax invoices and records |
-
----
-
-## Step 8: Filing Deadlines
-
-### Monthly Filers [T1]
-
-| Requirement | Details |
-|-------------|---------|
-| Who | Turnover above ILS threshold (set by Finance Minister; generally > ILS 1.5M annually) |
-| Filing deadline | 15th of the following month |
-| Payment deadline | 15th of the following month |
-| Method | Electronic via Shaam portal or authorized software |
-
-### Bi-Monthly Filers [T1]
-
-| Requirement | Details |
-|-------------|---------|
-| Who | Turnover below the monthly threshold |
-| Periods | Jan-Feb, Mar-Apr, May-Jun, Jul-Aug, Sep-Oct, Nov-Dec |
-| Filing deadline | 15th of the month following the bi-monthly period |
-| Payment deadline | 15th of the month following the bi-monthly period |
-
-### Osek Patur [T1]
-
-| Requirement | Details |
-|-------------|---------|
-| Filing | Annual report (doch shnati) only |
-| Deadline | By 31 January of the following year |
-| No Ma'am return | Osek Patur does not file periodic Ma'am returns |
-
-**Legislation:** VAT Law Section 67-72
-
-### Late Filing and Payment Penalties [T1]
-
-| Violation | Penalty |
-|-----------|---------|
-| Late filing | Fine: up to ILS 5,000 per occurrence |
-| Late payment | Interest: linked to CPI index + 4% annual interest (hatzamada + ribit) |
-| Failure to issue Tax Invoice | Criminal offense; fine + potential imprisonment |
-| Failure to report transaction | Fine + potential assessment with penalties |
-| Fraud / evasion | Criminal prosecution; up to 7 years imprisonment |
-
-**Legislation:** VAT Law Sections 94-121 (penalties and offenses)
-
----
-
-## Step 9: Fruits and Vegetables Zero-Rating [T1]
-
-Israel uniquely zero-rates fresh fruits and vegetables. Key rules:
-
-| Item | Rate | Notes |
-|------|------|-------|
-| Fresh fruits (unprocessed) | 0% | On the approved list |
-| Fresh vegetables (unprocessed) | 0% | On the approved list |
-| Fresh herbs | 0% | Included in vegetable list |
-| Eggs | 0% | Fresh eggs |
-| Frozen fruits/vegetables | 18% | Processing removes zero-rating |
-| Canned fruits/vegetables | 18% | Processing removes zero-rating |
-| Dried fruits | 18% | Processing removes zero-rating |
-| Cut salads (pre-packaged) | 0% | Still considered unprocessed |
-| Fresh juices (freshly squeezed) | 18% | Considered processed |
-| Nuts | 18% | Not on the zero-rated list |
-
-**Note:** The exact list is maintained by the Finance Ministry and updated periodically. When in doubt, check the current approved list. [T2]
-
-**Legislation:** VAT Law Section 30(a)(12); Finance Minister's Order on zero-rated goods
-
----
-
-## Step 10: Eilat Free Trade Zone [T3]
-
-- Eilat (Elat) is designated as a VAT-free zone
-- Goods sold and consumed in Eilat are exempt from Ma'am
-- Services provided and consumed in Eilat are exempt from Ma'am
-- Goods transported from Eilat to rest of Israel are subject to Ma'am (treated as import)
-- **This is a complex area -- ALWAYS escalate to qualified tax adviser**
-- **Legislation:** VAT Law Section 5a-5d (Eilat provisions)
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Software subscription from US provider (e.g., AWS, Zoom) [T1]
-
-**Situation:** Israeli Osek Murshe pays for cloud services from a US company, no Ma'am on invoice.
-**Resolution:** Self-assess at 18% in Field A5. Deduct in Field B3. Net = zero.
-**Legislation:** VAT Law Section 15(b)
-
-### EC2 -- Export of goods [T1]
-
-**Situation:** Israeli manufacturer exports electronics to Germany. Customs documentation obtained.
-**Resolution:** Zero-rated under Section 30(a)(1). Report in Field A3. No output Ma'am. Full input recovery.
-**Legislation:** VAT Law Section 30(a)(1)
-
-### EC3 -- Sale of fresh fruits and vegetables [T1]
-
-**Situation:** Greengrocer sells fresh tomatoes and cucumbers to customers.
-**Resolution:** Zero-rated under Section 30(a)(12). Report in Field A3. No output Ma'am. Input Ma'am on related costs (packaging, transport) is deductible.
-**Legislation:** VAT Law Section 30(a)(12)
-
-### EC4 -- Purchase of passenger car [T1]
-
-**Situation:** Osek Murshe purchases a sedan for business use, ILS 200,000 + Ma'am ILS 36,000.
-**Resolution:** Input Ma'am of ILS 36,000 is BLOCKED under Regulation 14. Vehicle capitalized at ILS 236,000.
-**Legislation:** VAT Regulations, Regulation 14
-
-### EC5 -- Mobile phone purchase [T1]
-
-**Situation:** Business buys a mobile phone for ILS 5,000 + Ma'am ILS 900.
-**Resolution:** 1/3 of Ma'am deductible (ILS 300). 2/3 blocked (ILS 600). Field B1 includes ILS 300 only.
-**Legislation:** VAT Regulations, Regulation 18
-
-### EC6 -- Residential property rental income [T1]
-
-**Situation:** Osek Murshe rents out an apartment to a tenant for residential use.
-**Resolution:** Exempt under Section 31(1). No output Ma'am. Input Ma'am on related expenses (repairs, maintenance) is NOT deductible.
-**Legislation:** VAT Law Section 31(1)
-
-### EC7 -- Tourism services to incoming tourists [T2]
-
-**Situation:** Tour operator provides guided tours to foreign tourists visiting Israel.
-**Resolution:** Potentially zero-rated under Section 30(a)(2). Specific conditions must be met: tourists must be foreign nationals, service must be tourism-related. Flag for reviewer: confirm qualifying conditions.
-**Legislation:** VAT Law Section 30(a)(2)
-
-### EC8 -- Credit notes [T1]
-
-**Situation:** Supplier issues credit note (cheshbonit zikui) for returned goods.
-**Resolution:** Reduce output Ma'am fields by the credit note amounts. Credit note must reference original invoice. Buyer reduces input Ma'am accordingly.
-**Legislation:** VAT Law Section 23a
-
-### EC9 -- Entertainment expenses [T1]
-
-**Situation:** Company hosts client dinner, Ma'am ILS 1,800 on the invoice.
-**Resolution:** Entertainment Ma'am is BLOCKED under Regulation 15a. No input Ma'am recovery. Expense is deductible for income tax (at 80%) but not for Ma'am.
-**Legislation:** VAT Regulations, Regulation 15a
-
-### EC10 -- Import of goods [T1]
-
-**Situation:** Israeli retailer imports clothing from China. Customs assessment shows Ma'am ILS 50,000.
-**Resolution:** Import Ma'am deductible in Field B2 = ILS 50,000. Do NOT self-assess -- Customs handles.
-**Legislation:** VAT Law Section 2(2), 43
-
-### EC11 -- Osek Patur exceeding threshold [T1]
-
-**Situation:** Self-employed person's turnover exceeds ILS 120,000 during the year.
-**Resolution:** Must immediately register as Osek Murshe. Start charging Ma'am from the date of transition. Cannot recover input Ma'am from the Osek Patur period.
-**Legislation:** VAT Law Section 31(7); Regulations
-
-### EC12 -- Sale of business as going concern [T1]
-
-**Situation:** Osek Murshe sells entire business to a buyer.
-**Resolution:** Exempt under Section 31(4). No Ma'am charged on the sale of the business as a whole. Buyer continues with the existing Ma'am obligations.
-**Legislation:** VAT Law Section 31(4)
-
-### EC13 -- Vehicle repairs on blocked car [T2]
-
-**Situation:** Company has car repairs done on a private vehicle (blocked under Reg 14), Ma'am ILS 2,000.
-**Resolution:** 1/4 of Ma'am deductible (ILS 500). 3/4 blocked (ILS 1,500). Flag for reviewer if vehicle classification is uncertain.
-**Legislation:** VAT Regulations, Regulation 14(b)
-
-### EC14 -- Palestinian Authority transactions [T2]
-
-**Situation:** Israeli business sells goods to a buyer in PA-administered territories.
-**Resolution:** Complex clearance rules under the Paris Protocol (1994). Ma'am may be charged at Israeli rate and cleared through revenue-sharing mechanism. Flag for reviewer: specific PA transaction rules must be applied.
-**Legislation:** Paris Protocol; VAT Law implementation regulations
-
----
-
-## Step 12: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
+**Bank statement line (Bank Leumi format):**
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax adviser must confirm before filing.
+תאריך    : 10/04/2025
+פעולה    : שוברי רכש - פרעון / מכס ומע"מ
+תיאור    : תשלום מכס ומע"מ יבוא — ASYCUDA REF 2025-04-1234
+סכום     : -87,040 ₪
 ```
 
-When a [T3] situation is identified, output:
+**Working:**
+- Import customs document: CIF value ILS 400,000 + customs duty ILS 112,000 = ILS 512,000 × 17% = ILS 87,040 Ma'am
+- Pay at port of entry — then claim as input tax in Doch Ma'am filing
+- Return entry: Input Totchaot — ILS 512,000; Input Ma'am: ILS 87,040
 
+---
+
+### Example 3 — Zero-rated tourism service
+
+**Scenario:** Hotel provides accommodation to foreign tourist paying in USD.
+
+**Bank statement line (Mizrahi Tefahot format):**
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified tax adviser. Document gap.
+תאריך    : 18/04/2025
+סוג      : זיכוי מטבע חוץ
+תיאור    : HOTEL BOOKING - FOREIGN GUEST - BOOKING REF TL-2025-0418
+סכום     : +7,650 ₪ (USD 2,100)
+```
+
+**Working:**
+- Foreign tourist — payment in foreign currency — qualifies as zero-rated tourist service
+- Requires: passport copy, foreign payment evidence, ITA Form 1345
+- Return entry: Mechira LeZar — ILS 7,650 | Ma'am: ILS 0
+
+---
+
+### Example 4 — Reverse-charge on foreign digital service
+
+**Scenario:** Company pays for Google Workspace (billed from Google Ireland).
+
+**Bank statement line (Discount Bank format):**
+```
+תאריך    : 05/04/2025
+פעולה    : חיוב — שירות בנקאי חו"ל
+תיאור    : GOOGLE IRELAND LTD — WORKSPACE SUBSCRIPTION APR 2025
+סכום     : -5,865 ₪ (USD 1,600)
+```
+
+**Working:**
+- Foreign digital service to Israeli business — treated as supplied in Israel
+- Buyer self-assesses: ILS 5,865 × 17/117 = ILS 852 Ma'am (or ILS 5,013 net + ILS 852 Ma'am)
+- Declare as output AND claim as input — net zero for fully taxable business
+- Return entry: Reverse-charge output ILS 5,013 | and Input Totchaot ILS 5,013
+
+---
+
+### Example 5 — Business vehicle purchase (blocked credit)
+
+**Scenario:** Company purchases a passenger car (רכב פרטי) for a salesperson.
+
+**Bank statement line (Hapoalim format):**
+```
+תאריך    : 03/04/2025
+סוג פעולה: חיוב - העברה בנקאית
+תיאור    : CHAMPION MOTORS LTD - רכישת רכב — חשב׳ 2025-V-041
+סכום     : -175,500 ₪
+```
+
+**Working:**
+- Passenger car (רכב פרטי): input Ma'am blocked under Section 41 of Ma'am Law
+- Heshbonit Mase shows: net ILS 150,000 + Ma'am ILS 25,500 = ILS 175,500
+- Input credit: ILS 0 — full block on private passenger vehicles
+- Record as Tier 2 — confirm whether vehicle classified as commercial (רכב מסחרי) or private
+
+---
+
+### Example 6 — Bimonthly return summary
+
+**Scenario:** Tech startup — March–April 2025 bimonthly period.
+
+| Item | Net (ILS) | Ma'am (ILS) |
+|---|---|---|
+| Software sales (domestic) | 800,000 | 136,000 |
+| Export (zero-rated) | 300,000 | 0 |
+| Total Output | 1,100,000 | 136,000 |
+| Purchases — hardware | 200,000 | 34,000 |
+| Office rent | 50,000 | 8,500 |
+| Cloud subscriptions (reverse-charge) | 30,000 | 5,100 |
+| Total Input | 280,000 | 47,600 |
+| **Net Ma'am payable** | | **88,400** |
+
+---
+
+## Section 5 — Tier 1 rules (compressed)
+
+**Rate assignment:**
+- 17% standard: almost all goods and services (food, clothing, electronics, professional services — all at standard rate unlike EU VAT)
+- 0%: exports of goods with customs declaration, services exported to foreign residents used outside Israel, tourism services to non-residents with foreign currency payment
+- Exempt: financial services, insurance, residential rent (non-commercial), medical services by licensed practitioners, educational services
+
+**Input credit:**
+- Credit allowed on all 17% purchases for taxable business activities
+- Blocked: passenger vehicles (רכב פרטי) — Section 41 Ma'am Law
+- Blocked: personal expenses — entertainment with non-business purpose
+- Partially blocked: vehicles used partly for business — 2/3 credit allowed if mixed use claimed; needs documentation
+- Reverse-charge (foreign services): output and input net to zero for fully taxable Osek Murshe
+
+**Filing mechanics:**
+- File bimonthly via Shaam Online by 15th of following month
+- Monthly if turnover > ILS 1.5M (file by 15th of following month)
+- All B2B invoices above ILS 305 must be Heshbonit Mase with supplier's Osek number
+- Excess input credit carried forward — refund available for exporters after 3 months
+- New businesses: first 6 months allowed monthly filing to facilitate refunds
+
+---
+
+## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
+
+| Item | Why unknowable | What to ask |
+|---|---|---|
+| Vehicle purchase | Private (blocked credit) vs commercial (allowed) depends on registration | "Provide vehicle licence — is it רכב פרטי or רכב מסחרי?" |
+| Home office | Business % of home use unknown | "What % of your home is used exclusively for business?" |
+| Mobile phone | Business vs personal split | "Is this a dedicated business phone? Estimate business use %." |
+| Entertainment | Must prove business purpose | "List attendees and business purpose of each entertainment expense." |
+| Mixed residential/commercial property | Residential rent exempt, commercial 17% | "Is the lease for residential or commercial use? Provide lease agreement." |
+| Export documentation incomplete | Zero-rate only with valid export evidence | "Provide customs export declaration or foreign payment evidence." |
+| Osek Patur supplier | Unregistered supplier — no Heshbonit Mase available, no input credit | "Confirm supplier registration status — Osek Murshe or Osek Patur?" |
+
+---
+
+## Section 7 — Excel working paper
+
+**Columns:** Date | Supplier / Customer | Osek No. | Invoice No. | Net (ILS) | Ma'am Rate % | Ma'am (ILS) | In/Out | Zero-rated? | Exempt? | Tier 2 flag | Notes
+
+**Tab structure:**
+1. `Output_Sales` — all sales (domestic 17%, zero-rated exports, exempt)
+2. `Input_Purchases` — all purchases with Ma'am credit
+3. `ReverseCharge_Foreign` — foreign services self-assessed
+4. `MaamSummary` — bimonthly return totals
+5. `Tier2_Items` — awaiting client response
+
+**Key formula:**
+```
+Net_Maam_Payable = Total_Output_Maam - Total_Input_Maam - Excess_BF
 ```
 
 ---
 
-## Step 13: Test Suite
+## Section 8 — Bank statement reading guide
 
-### Test 1 -- Standard domestic sale at 18%
+### Bank Hapoalim format
+```
+תאריך    : 15/04/2025
+סוג פעולה: זיכוי - העברה בנקאית
+תיאור    : TECH SOLUTIONS - חשבונית 041/2025
+סכום     : +234,000 ₪
+יתרה     : 1,234,000 ₪
+```
+Fields: תאריך (date) | סוג פעולה (transaction type) | תיאור (description) | סכום (amount, ILS)
 
-**Input:** Israeli company sells consulting services, net ILS 100,000, Ma'am ILS 18,000.
-**Expected output:** Field A1 = ILS 100,000. Field A2 = ILS 18,000. Output Ma'am reported.
+### Bank Leumi format
+```
+15.04.2025  |  זיכוי  |  TECH SOLUTIONS  |  +234,000.00  |  יתרה: 1,234,000.00
+```
 
-### Test 2 -- Sale of fresh vegetables (zero-rated)
-
-**Input:** Greengrocer sells fresh tomatoes, net ILS 10,000.
-**Expected output:** Field A3 = ILS 10,000. No output Ma'am.
-
-### Test 3 -- Export of goods
-
-**Input:** Israeli manufacturer exports goods to the US, net ILS 500,000. Customs documentation obtained.
-**Expected output:** Field A3 = ILS 500,000. No output Ma'am. Input Ma'am refundable.
-
-### Test 4 -- Import of services, reverse charge
-
-**Input:** Israeli company receives marketing services from UK agency, GBP 10,000 (approx. ILS 47,000). No Ma'am.
-**Expected output:** Field A5 = ILS 8,460 (18% of ILS 47,000). Field B3 = ILS 8,460. Net = zero.
-
-### Test 5 -- Passenger car purchase, blocked
-
-**Input:** Company purchases sedan, ILS 250,000 + Ma'am ILS 45,000.
-**Expected output:** Input Ma'am ILS 45,000 BLOCKED. Vehicle capitalized at ILS 295,000.
-
-### Test 6 -- Mobile phone bill
-
-**Input:** Monthly phone bill ILS 300 + Ma'am ILS 54.
-**Expected output:** Deductible input Ma'am = ILS 18 (1/3). Blocked = ILS 36 (2/3).
-
-### Test 7 -- Entertainment expense, blocked
-
-**Input:** Client dinner, net ILS 2,000, Ma'am ILS 360.
-**Expected output:** Input Ma'am ILS 360 BLOCKED. No Ma'am recovery.
-
-### Test 8 -- Osek Patur transaction
-
-**Input:** Osek Patur freelancer earns ILS 5,000 from a client.
-**Expected output:** No Ma'am charged. No return filed for this period. Income reported annually.
+### Key patterns:
+- **ILS number format:** Comma = thousands separator; period = decimal (ILS 234,000.00)
+- **זיכוי (credit):** Money in — match to issued Heshbonit Mase
+- **חיוב (debit):** Money out — match to received Heshbonit Mase for input credit
+- **מטבע חוץ (foreign currency):** Foreign payment — check for zero-rated export or reverse-charge
+- **מכס ומע"מ:** Customs and Ma'am — import duty + import Ma'am payment
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 9 — Onboarding fallback
 
-- NEVER allow input Ma'am deduction on passenger vehicles (unless taxi/rental/disabled)
-- NEVER allow any input Ma'am recovery for Osek Patur -- they are exempt without credit
-- NEVER charge Ma'am on fresh fruits and vegetables on the approved zero-rated list
-- NEVER skip self-assessment on imported services -- reverse charge is mandatory
-- NEVER allow full input Ma'am on mobile phones -- 2/3 is blocked
-- NEVER allow input Ma'am on entertainment -- fully blocked
-- NEVER confuse zero-rated (Section 30, with input recovery) with exempt (Section 31, without recovery)
-- NEVER process Eilat transactions without qualified tax adviser -- escalate [T3]
-- NEVER confuse the 17% rate (pre-2025) with the current 18% rate
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
-- NEVER process financial institution (Mosad Kespi Finansi) Ma'am -- entirely different system [T3]
+When client cannot provide Heshbonit Mase for all transactions:
+
+1. Use bank statement amounts as Ma'am-inclusive totals and back-calculate:
+   - Net = Total ÷ 1.17 | Ma'am = Total − Net
+2. Apply conservative defaults: 17% output on all unverified sales; 0% input credit without valid Heshbonit Mase
+3. Flag all items without Heshbonit Mase in Tier2_Items tab
+4. Issue data request listing missing invoice references
+5. Warn client: ITA can disallow input credit claims without valid Heshbonit Mase from Osek Murshe supplier — risk of penalty
 
 ---
 
-## Step 14: Advance Payments and Tax Point Rules
+## Section 10 — Reference material
 
-### 14a. Tax Point (Meudad Ha'erech) [T1]
-
-| Event | Tax Point | Legal Basis |
-|-------|-----------|-------------|
-| Supply of goods | Date of delivery or date of invoice, whichever is earlier | Sec 22 |
-| Supply of services | Date of completion or date of invoice, whichever is earlier | Sec 23 |
-| Advance payment received | Date of receipt | Sec 22(b) |
-| Continuous supply | End of each billing period | Sec 24 |
-| Import of goods | Date of customs clearance | Sec 26 |
-| Rental income | Date rent is due | Sec 24a |
-
-### 14b. Advance Payments [T1]
-
-- When an advance payment is received, Ma'am is triggered immediately
-- Tax Invoice/Receipt must be issued within 14 days of receipt
-- **Legislation:** VAT Law Section 22(b), 46
-
----
-
-## Step 15: Special Sector Rules
-
-### 15a. Real Property Transactions [T2]
-
-| Transaction | Ma'am Treatment | Notes |
-|-------------|----------------|-------|
-| Sale of new residential apartment (by developer) | 18% | Standard rate on sale price |
-| Sale of used residential apartment (by individual) | Exempt | Not a business transaction |
-| Commercial property sale | 18% | Standard rate |
-| Commercial property rental | 18% | Standard rate |
-| Residential property rental | Exempt | Section 31(1) |
-| Construction services | 18% | Standard rate |
-| Real estate agent commission | 18% | Standard rate |
-
-**Flag for reviewer:** Real property transactions may involve additional taxes (betterment tax / hetel hashbacha, purchase tax / mas rechisha). These are outside the scope of Ma'am but relevant to the overall transaction.
-
-### 15b. Digital Economy [T2]
-
-| Scenario | Treatment | Notes |
-|----------|-----------|-------|
-| Non-resident digital service provider to consumers (B2C) | Must register and charge 18% | Amendment 54 |
-| Non-resident B2B digital services | Reverse charge by Israeli recipient | Standard self-assessment |
-| Israeli SaaS company selling to foreign B2B | Zero-rated (benefit accrues abroad) | Section 30(a)(5) |
-| Israeli app developer selling to foreign consumers | Zero-rated (if benefit abroad) [T2] | Must demonstrate foreign benefit |
-| Marketplace facilitator | Platform may be deemed supplier [T2] | Complex rules |
-
-### 15c. Diamond Industry [T3]
-
-- Special rules for the diamond exchange (Bursa Heyahlomim)
-- Inter-dealer transactions in rough and polished diamonds may be zero-rated
-- Complex documentation requirements
-- **ALWAYS escalate to diamond industry tax specialist**
-- **Legislation:** VAT Law Section 30(a)(8)-(9)
-
----
-
-## Step 16: Penalties and Interest Detailed Reference
-
-| Violation | Amount / Rate | Legal Basis |
-|-----------|--------------|-------------|
-| Late filing | Fine: up to ILS 5,000 per return | Sec 94 |
-| Late payment | Linkage differentials (hatzamada) + interest at 4% p.a. | Sec 95 |
-| Failure to issue Tax Invoice | Criminal offense: fine + up to 1 year imprisonment | Sec 117 |
-| Issuing fictitious Tax Invoice | Criminal offense: fine + up to 5 years imprisonment | Sec 117(b)(5) |
-| Failure to report transaction | Fine + estimated assessment with penalties | Sec 94-95 |
-| Tax fraud / evasion | Criminal offense: up to 7 years imprisonment | Sec 117(b) |
-| Failure to register as Osek Murshe | Fine + retroactive registration + estimated assessments | Sec 94 |
-| Claiming input Ma'am without Tax Invoice | Assessment reversal + fine | Sec 95 |
-| Osek Patur exceeding threshold without registering | Fine + retroactive Ma'am obligation | Sec 94 |
-| CPI-linked interest on unpaid Ma'am | Consumer Price Index linkage + 4% real interest | Sec 95 |
-
----
-
-## Step 17: Record-Keeping Requirements
-
-### 17a. Books and Records [T1]
-
-| Requirement | Details |
-|-------------|---------|
-| Accounting records | Must maintain per Income Tax Ordinance and Ma'am Regulations |
-| Purchase register | Chronological record of all purchases with Ma'am details |
-| Sales register | Chronological record of all sales with Ma'am details |
-| Fixed asset register | For capital goods with Ma'am implications |
-| Retention period | 7 years from end of the tax year |
-| Format | Paper or electronic (both accepted; electronic preferred) |
-| Inspection | ITA may inspect at any time during business hours |
-
-**Legislation:** VAT Law Section 69-74; VAT Regulations on record-keeping
-
----
-
-## Contribution Notes
-
-This skill covers Israeli Ma'am as of April 2026. Israeli tax law is subject to amendment by the Knesset and ministerial orders. All rates and thresholds (especially the Osek Patur threshold and zero-rated goods list) should be verified against the most recent ITA publications before filing. A qualified Israeli tax adviser (yo'etz mas) or CPA (ro'e cheshbon) must validate all T1 rules before this skill is used in production.
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
-
-
----
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+| Resource | Reference |
+|---|---|
+| ITA filing portal (Shaam Online) | https://www.misim.gov.il |
+| Ma'am Law (מס ערך מוסף, 1975) | ITA website — tax law library |
+| ITA official guidance (חוזרים) | taxes.gov.il/maam |
+| Registration threshold updates | ITA annual circular |
+| Heshbonit Mase requirements | Section 9 Ma'am Law |
+| Tourist refund scheme | ITA Form 1345 guidance |
