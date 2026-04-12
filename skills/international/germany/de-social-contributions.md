@@ -1,8 +1,8 @@
 ---
 name: de-social-contributions
 description: >
-  Use this skill whenever asked about German social insurance contributions (Sozialversicherungsbeitraege) for self-employed individuals, freelancers (Freiberufler), or sole proprietors (Einzelunternehmer). Trigger on phrases like "German health insurance", "Krankenversicherung", "GKV", "PKV", "Pflegeversicherung", "Rentenversicherung", "KSK", "Kuenstlersozialkasse", "Berufsgenossenschaft", "Unfallversicherung", "social contributions Germany", "how much health insurance do I pay in Germany", "German pension self-employed", or any question about German social insurance obligations for a self-employed client. Also trigger when preparing a German income tax return (Einkommensteuererklaerung) where Vorsorgeaufwendungen deductibility is relevant. This skill covers GKV vs PKV health insurance, long-term care insurance, pension insurance (voluntary and mandatory), KSK for artists/writers, accident insurance, contribution ceilings, payment schedules, and tax deductibility. ALWAYS read this skill before touching any German social contribution work.
-version: 1.0
+  Use this skill whenever asked about German social insurance contributions (Sozialversicherungsbeitraege) for self-employed individuals, freelancers (Freiberufler), or sole proprietors (Einzelunternehmer). Trigger on phrases like "German health insurance", "Krankenversicherung", "GKV", "PKV", "Pflegeversicherung", "Rentenversicherung", "KSK", "Kuenstlersozialkasse", "Berufsgenossenschaft", "Unfallversicherung", "social contributions Germany", "Krankenkasse debit", or any question about German social insurance obligations. Also trigger when classifying bank statement transactions showing Krankenkasse debits, KSK direct debits, Berufsgenossenschaft invoices, or Deutsche Rentenversicherung payments. ALWAYS read this skill before touching any German social contribution work.
+version: 2.0
 jurisdiction: DE
 tax_year: 2025
 category: international
@@ -10,511 +10,464 @@ depends_on:
   - social-contributions-workflow-base
 ---
 
-# Germany Social Contributions (Sozialversicherung) -- Self-Employed Skill
+# Germany Social Contributions (Sozialversicherung) -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before computing or classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Germany (Bundesrepublik Deutschland) |
-| Jurisdiction Code | DE |
-| Primary Legislation | SGB IV (general), SGB V (health), SGB VI (pension), SGB XI (long-term care), SGB VII (accident), KSVG (artists' social insurance) |
-| Supporting Legislation | EStG Section 10 (Vorsorgeaufwendungen / tax deductibility of contributions) |
+|---|---|
+| Country | Germany (Bundesrepublik Deutschland) |
+| Primary Legislation | SGB IV (general), SGB V (health), SGB VI (pension), SGB XI (care), SGB VII (accident), KSVG (artists) |
+| Supporting Legislation | EStG Section 10 (Vorsorgeaufwendungen / tax deductibility) |
 | Regulatory Bodies | GKV-Spitzenverband (health), Deutsche Rentenversicherung Bund (pension), Kuenstlersozialkasse (KSK), Berufsgenossenschaften (accident) |
-| Rate Publisher | BMAS (Bundesministerium fuer Arbeit und Soziales) publishes annual Sozialversicherungsrechengroessen |
+| Rate Publisher | BMAS (annual Sozialversicherungsrechengroessen) |
+| Currency | EUR only |
+| GKV base rate (without sick pay) | 14.0% + avg. 2.5% Zusatzbeitrag = ~16.5% |
+| GKV base rate (with sick pay) | 14.6% + avg. 2.5% Zusatzbeitrag = ~17.1% |
+| GKV minimum base (monthly) | EUR 1,248.33 |
+| GKV/PV contribution ceiling (monthly) | EUR 5,512.50 |
+| Pension contribution ceiling (monthly) | EUR 8,050.00 |
+| Pension rate | 18.6% |
+| Pflegeversicherung base rate | 3.6% (childless 23+: 4.2%) |
+| KSK levy rate (Verwerter) | 5.0% |
+| GKV payment due | 15th of each month |
 | Contributor | Open Accountants |
-| Validated By | Pending -- requires sign-off by a licensed Steuerberater |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: GKV rate calculation, contribution ceilings, payment schedule, KSK subsidy mechanics. Tier 2: GKV vs PKV switching, KSK eligibility edge cases, Handwerker mandatory pension. Tier 3: disability exemptions, cross-border social security (A1), Versorgungswerk pension schemes. |
+| Validated by | Pending -- requires sign-off by a licensed Steuerberater |
+| Validation date | Pending |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown GKV or PKV | STOP -- do not compute without this |
+| Unknown Zusatzbeitrag | Use average 2.5% |
+| Unknown number of children | Apply childless surcharge (4.2% PV) |
+| Unknown profession (pension obligation) | Assume voluntary; flag for reviewer |
+| Unknown Hauptberuflich vs Nebenberuflich | Flag for reviewer |
+| Unknown income for GKV | Apply minimum base (EUR 1,248.33/month) |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Licensed Steuerberater must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- health insurance type (GKV or PKV), current or expected monthly income, and number of children.
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- GKV fund name (for Zusatzbeitrag), profession (for pension obligation check), age, Einkommensteuerbescheid for prior year.
 
-Before computing any social contribution figure, you MUST know:
+**Ideal** -- complete Einkommensteuererklaerung, GKV contribution notice, KSK membership confirmation (if applicable), Berufsgenossenschaft invoice.
 
-1. **Employment status** [T1] -- fully self-employed (Freiberufler or Gewerbetreibender), side business alongside employment (Nebenberuf), or dual status
-2. **Health insurance type** [T1] -- GKV (gesetzliche Krankenversicherung / statutory) or PKV (private Krankenversicherung / private)
-3. **GKV fund name** [T1] -- needed to determine the specific Zusatzbeitrag (supplementary contribution rate)
-4. **Number of children** [T1] -- affects Pflegeversicherung rate (childless surcharge)
-5. **Age** [T1] -- childless surcharge applies from age 23
-6. **Current or expected annual income** [T1] -- contributions are income-based for GKV
-7. **Profession** [T2] -- determines whether pension insurance is mandatory (Handwerker, Kuenstler, Lehrer, Hebammen, etc.)
-8. **KSK membership** [T1] -- if artist, writer, or journalist, are they KSK-insured?
-9. **Has an Einkommensteuerbescheid (income tax assessment) been issued for the prior year?** [T1] -- GKV uses the most recent assessment for final contribution calculation
+### Refusal catalogue
 
-**If health insurance type (GKV or PKV) is unknown, STOP. Do not compute contributions. This distinction fundamentally changes the calculation.**
+**R-DE-SC-1 -- GKV vs PKV unknown.** *Trigger:* client has not confirmed insurance type. *Message:* "The distinction between GKV and PKV fundamentally changes the calculation. Cannot proceed without this information."
+
+**R-DE-SC-2 -- PKV premium computation.** *Trigger:* client asks for PKV premium calculation. *Message:* "PKV premiums are individual and risk-based. This skill does not compute PKV premiums. Advise client to obtain PKV quotes."
+
+**R-DE-SC-3 -- Cross-border social security (A1).** *Trigger:* client works across EU borders. *Message:* "EU social security coordination (Regulation EC 883/2004) and A1 certificates require specialist advice. Escalate to Steuerberater."
+
+**R-DE-SC-4 -- Versorgungswerk pension schemes.** *Trigger:* client is in a professional pension fund (Versorgungswerk). *Message:* "Versorgungswerk schemes have their own rate schedules. Out of scope -- escalate to Steuerberater."
+
+**R-DE-SC-5 -- Scheinselbstaendigkeit determination.** *Trigger:* possible false self-employment. *Message:* "Statusfeststellungsverfahren and Scheinselbstaendigkeit determinations involve severe financial exposure. Escalate immediately."
 
 ---
 
-## Step 1: Overview of German Social Insurance Branches [T1]
+## Section 3 -- Payment pattern library
 
-**Legislation:** SGB IV (Sozialgesetzbuch IV)
+This is the deterministic pre-classifier for bank statement transactions related to German social contributions.
 
-Germany has five branches of social insurance. Self-employed individuals have varying obligations across each:
+### 3.1 Krankenkasse (GKV health insurance) debits
 
-| Branch | German Name | Self-Employed Obligation | Legislation |
-|--------|-------------|------------------------|-------------|
-| Health Insurance | Krankenversicherung | Mandatory (GKV or PKV) | SGB V |
-| Long-Term Care Insurance | Pflegeversicherung | Mandatory (follows health insurance choice) | SGB XI |
-| Pension Insurance | Rentenversicherung | Voluntary for most; mandatory for certain professions | SGB VI |
-| Accident Insurance | Unfallversicherung | Voluntary for most; mandatory for certain sectors | SGB VII |
-| Unemployment Insurance | Arbeitslosenversicherung | Voluntary opt-in available within first 3 months | SGB III |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TK, TECHNIKER KRANKENKASSE | EXCLUDE -- GKV contribution | Health + care combined debit |
+| AOK, AOK PLUS, AOK BAYERN, AOK NORDWEST | EXCLUDE -- GKV contribution | Regional AOK variants |
+| BARMER, BARMER GEK | EXCLUDE -- GKV contribution | |
+| DAK, DAK-GESUNDHEIT | EXCLUDE -- GKV contribution | |
+| IKK, IKK CLASSIC, IKK SUEDWEST | EXCLUDE -- GKV contribution | |
+| HEK, HANSEATISCHE KRANKENKASSE | EXCLUDE -- GKV contribution | |
+| KKH, KAUFMAENNISCHE KRANKENKASSE | EXCLUDE -- GKV contribution | |
+| KNAPPSCHAFT | EXCLUDE -- GKV contribution | |
+| BKK (various: BKK MOBIL OIL, BKK FIRMUS, VIACTIV) | EXCLUDE -- GKV contribution | Betriebskrankenkassen |
+| KRANKENKASSE, KRANKENVERSICHERUNG | EXCLUDE -- GKV contribution | Generic pattern |
+| GKV, GESETZLICHE KV | EXCLUDE -- GKV contribution | Generic abbreviation |
 
-**Key principle: Every person residing in Germany must have health insurance (Versicherungspflicht). There is no opt-out.**
+### 3.2 Private Krankenversicherung (PKV) debits
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ALLIANZ PKV, ALLIANZ PRIVATE | EXCLUDE -- PKV premium | Private health insurance |
+| DEBEKA, DEBEKA KRANKENVERSICHERUNG | EXCLUDE -- PKV premium | |
+| DKV, DEUTSCHE KRANKENVERSICHERUNG | EXCLUDE -- PKV premium | |
+| SIGNAL IDUNA PKV | EXCLUDE -- PKV premium | |
+| HALLESCHE | EXCLUDE -- PKV premium | |
+| BARMENIA | EXCLUDE -- PKV premium | Could be supplementary |
+| PRIVATE KRANKENVERSICHERUNG, PKV | EXCLUDE -- PKV premium | Generic |
+
+### 3.3 KSK (Kuenstlersozialkasse) debits
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| KSK, KUENSTLERSOZIALKASSE | EXCLUDE -- KSK contribution | Combined health + pension contribution |
+| KUENSTLERSOZIALVERSICHERUNG | EXCLUDE -- KSK contribution | |
+
+### 3.4 Deutsche Rentenversicherung (pension)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| DRV, DEUTSCHE RENTENVERSICHERUNG | EXCLUDE -- pension contribution | Voluntary or mandatory pension |
+| RENTENVERSICHERUNG, RV BEITRAG | EXCLUDE -- pension contribution | |
+
+### 3.5 Berufsgenossenschaft (accident insurance)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BG, BERUFSGENOSSENSCHAFT | EXCLUDE -- accident insurance | Annual or quarterly BG invoice |
+| BG BAU, BG ETEM, BGW, BGHM, BG VERKEHR | EXCLUDE -- BG contribution | Named BGs by sector |
+| VBG, VERWALTUNGS-BG | EXCLUDE -- BG contribution | Office-based industries |
+| UNFALLVERSICHERUNG | EXCLUDE -- accident insurance | Generic |
+
+### 3.6 Arbeitslosenversicherung (unemployment -- voluntary)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AGENTUR FUER ARBEIT, BUNDESAGENTUR | EXCLUDE -- voluntary unemployment | If self-employed opted in |
+| ARBEITSLOSENVERSICHERUNG | EXCLUDE -- voluntary unemployment | Rare for self-employed |
+
+### 3.7 Tax authority (NOT social contributions)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| FINANZAMT, FA (+ city name) | EXCLUDE -- income tax | Not a social contribution |
+| UMSATZSTEUER, UST | EXCLUDE -- VAT | Not a social contribution |
+| EINKOMMENSTEUER, EST | EXCLUDE -- income tax | Not a social contribution |
+| GEWERBESTEUER | EXCLUDE -- trade tax | Not a social contribution |
 
 ---
 
-## Step 2: Krankenversicherung -- Health Insurance [T1]
+## Section 4 -- Worked examples
 
-**Legislation:** SGB V; GKV-Spitzenverband rate announcements
+Six bank statement classifications for a hypothetical self-employed German IT consultant (Freiberufler, GKV-insured, no children, age 35).
 
-### GKV vs PKV Decision
+### Example 1 -- Monthly Krankenkasse debit (Techniker)
 
-| Factor | GKV (Statutory) | PKV (Private) |
-|--------|-----------------|---------------|
-| Who can join | Anyone (self-employed have free choice) | Anyone (self-employed have free choice regardless of income) |
-| Contribution basis | Income-based (percentage of income) | Risk-based (age, health, coverage level) |
-| Family coverage | Free Familienversicherung for spouse/children without own income | Each family member needs own policy |
-| Switching back | Difficult after age 55 or if income stays above JAEG | N/A |
+**Input line:**
+`15.04.2025 ; TECHNIKER KRANKENKASSE ; LASTSCHRIFT ; BEITRAG APRIL 2025 ; -577.50 ; EUR`
 
-**Self-employed persons can freely choose between GKV and PKV regardless of income level. The income threshold (Jahresarbeitsentgeltgrenze / JAEG) only applies to employees.**
+**Reasoning:**
+Matches "TECHNIKER KRANKENKASSE" (pattern 3.1). Amount EUR 577.50 = EUR 3,500 monthly income x 16.5% (14.0% + 2.5% Zusatzbeitrag). This is the April 2025 GKV contribution. Due on the 15th. Excludes Pflegeversicherung (billed separately or combined -- check).
 
-### GKV Rates for Self-Employed (2025) [T1]
+**Classification:** EXCLUDE -- GKV health insurance contribution. Tax-deductible as Basiskrankenversicherung (fully deductible, no cap).
 
-| Component | Rate | Notes |
-|-----------|------|-------|
-| General contribution rate (allgemeiner Beitragssatz) | 14.6% | For self-employed WITH Krankengeldanspruch (sick pay entitlement) |
-| Reduced rate (ermaessigter Beitragssatz) | 14.0% | For self-employed WITHOUT sick pay entitlement (default) |
-| Zusatzbeitrag (supplementary contribution) | avg. 2.5% (2025) | Varies by fund; check specific Krankenkasse |
-| **Typical total (without sick pay)** | **~16.5%** | 14.0% + ~2.5% Zusatzbeitrag |
-| **Typical total (with sick pay)** | **~17.1%** | 14.6% + ~2.5% Zusatzbeitrag |
+### Example 2 -- Pflegeversicherung (combined with GKV or separate)
 
-**Self-employed in GKV pay the FULL contribution themselves (no employer share). Employees split 50/50 with employer.**
+**Input line:**
+`15.04.2025 ; TECHNIKER KRANKENKASSE ; LASTSCHRIFT ; PV BEITRAG ; -147.00 ; EUR`
 
-### GKV Income Thresholds (2025) [T1]
+**Reasoning:**
+Matches TK pattern. Amount EUR 147.00 = EUR 3,500 x 4.2% (childless surcharge, age 23+). This is the Pflegeversicherung contribution. Some Krankenkassen combine KV + PV in one debit; others split them. Either way, EXCLUDE.
 
-| Threshold | Monthly | Annual | Purpose |
-|-----------|---------|--------|---------|
-| Mindestbemessungsgrundlage (minimum assessment base) | EUR 1,248.33 | EUR 14,979.96 | Floor for contribution calculation |
-| Beitragsbemessungsgrenze (contribution ceiling) | EUR 5,512.50 | EUR 66,150.00 | Cap -- income above this is not assessed |
+**Classification:** EXCLUDE -- Pflegeversicherung. Fully deductible (no cap).
 
-### GKV Contribution Calculation [T1]
+### Example 3 -- KSK debit (artist member)
+
+**Input line:**
+`15.03.2025 ; KUENSTLERSOZIALKASSE ; LASTSCHRIFT ; BEITRAG MAERZ ; -551.25 ; EUR`
+
+**Reasoning:**
+Matches "KUENSTLERSOZIALKASSE" (pattern 3.3). KSK collects combined health + pension contribution from the member. The member pays approximately 50% of health and pension, plus full Pflegeversicherung. Amount varies by declared income and Krankenkasse Zusatzbeitrag.
+
+**Classification:** EXCLUDE -- KSK contribution. Tax treatment: health portion fully deductible as Basiskrankenversicherung; pension portion deductible as Altersvorsorgeaufwendungen.
+
+### Example 4 -- Berufsgenossenschaft annual invoice
+
+**Input line:**
+`30.04.2025 ; VBG VERWALTUNGS-BG ; UEBERWEISUNG ; BEITRAG 2024 ; -85.00 ; EUR`
+
+**Reasoning:**
+Matches "VBG" (pattern 3.5). Annual BG contribution for 2024, paid in arrears. Office-based freelancer = low risk class. EUR 85 is typical for office-based Freiberufler.
+
+**Classification:** EXCLUDE -- accident insurance. Deductible within EUR 2,800 sonstige Vorsorgeaufwendungen cap (but this cap is usually consumed by KV/PV).
+
+### Example 5 -- Voluntary pension payment (Deutsche Rentenversicherung)
+
+**Input line:**
+`28.02.2025 ; DEUTSCHE RENTENVERSICHERUNG BUND ; UEBERWEISUNG ; FREIWILLIGER BEITRAG FEB ; -500.00 ; EUR`
+
+**Reasoning:**
+Matches "DEUTSCHE RENTENVERSICHERUNG" (pattern 3.4). Voluntary pension contribution of EUR 500/month (between minimum EUR 100.07 and maximum EUR 1,497.30). Self-employed person has chosen to contribute voluntarily.
+
+**Classification:** EXCLUDE -- voluntary pension contribution. 100% deductible as Altersvorsorgeaufwendungen (within EUR 29,344 single / EUR 58,688 married cap).
+
+### Example 6 -- Finanzamt (income tax, NOT social contribution)
+
+**Input line:**
+`10.03.2025 ; FINANZAMT MUENCHEN ; LASTSCHRIFT ; EST VORAUSZAHLUNG Q1 ; -3,200.00 ; EUR`
+
+**Reasoning:**
+Matches "FINANZAMT" (pattern 3.7). This is an income tax prepayment, NOT a social contribution. Do not classify as social insurance.
+
+**Classification:** EXCLUDE -- income tax. NOT a social contribution.
+
+---
+
+## Section 5 -- Tier 1 rules
+
+### Rule 1 -- GKV contribution formula
 
 ```
-Monthly_GKV = clamp(monthly_income, 1248.33, 5512.50) x (base_rate + Zusatzbeitrag)
+Monthly_GKV = clamp(monthly_income, EUR 1,248.33, EUR 5,512.50) x (base_rate + Zusatzbeitrag)
 ```
 
-| Income Level | Rate Used | Monthly Contribution (approx.) | Annual (approx.) |
-|-------------|-----------|-------------------------------|-------------------|
-| Below EUR 1,248.33/mo | Min base applies | ~EUR 206 | ~EUR 2,472 |
-| EUR 3,000/mo | Actual income | ~EUR 495 | ~EUR 5,940 |
-| EUR 5,512.50/mo (ceiling) | Capped | ~EUR 909 | ~EUR 10,910 |
-| EUR 8,000/mo | Capped at BBG | ~EUR 909 | ~EUR 10,910 |
+Self-employed pay the FULL rate (no employer share).
 
-*Calculations assume 14.0% + 2.5% Zusatzbeitrag = 16.5% total*
+### Rule 2 -- GKV rates (2025)
 
-### GKV Provisional and Final Assessment [T1]
+| Component | Rate |
+|---|---|
+| Without sick pay (default for self-employed) | 14.0% + Zusatzbeitrag |
+| With sick pay | 14.6% + Zusatzbeitrag |
+| Average Zusatzbeitrag (2025) | 2.5% |
 
-1. Self-employed initially pay **provisional contributions** based on estimated income.
-2. After the Einkommensteuerbescheid (income tax assessment) is issued, the Krankenkasse recalculates contributions retroactively.
-3. Overpayments are refunded; underpayments must be paid.
-4. The Einkommensteuerbescheid must be submitted to the Krankenkasse within **three years**.
+### Rule 3 -- Pflegeversicherung rates (2025)
 
-### PKV for Self-Employed [T2]
-
-PKV contributions are NOT income-based. They depend on:
-- Age at entry
-- Health status at entry
-- Chosen coverage level (deductible, room type, etc.)
-- Actuarial reserves (Alterungsrueckstellungen)
-
-**This skill does NOT compute PKV premiums.** PKV is individual and requires a specific insurance quote. Flag [T2] and advise client to obtain PKV quotes for comparison.
-
----
-
-## Step 3: Pflegeversicherung -- Long-Term Care Insurance [T1]
-
-**Legislation:** SGB XI; Pflegeversicherungs-Beitragssatzanpassungsgesetz
-
-### Rates (2025) [T1]
-
-| Category | Rate | Notes |
-|----------|------|-------|
-| Base rate | 3.6% | Of income up to BBG (EUR 5,512.50/mo) |
-| Childless surcharge (Kinderlosenzuschlag) | +0.6% | Applies to persons aged 23+ with no children |
-| **Total for childless (23+)** | **4.2%** | |
-| **Total with children** | **3.6%** | |
-| Reduction for 2+ children (kinderreiche Entlastung) | -0.25% per child from 2nd to 5th child (ages under 25) | Minimum rate 2.6% |
-
-### Kinderreiche Entlastung Detail [T1]
-
-Since 1 July 2023, parents with multiple children receive a reduction:
-
-| Number of Children (under 25) | Rate |
-|-------------------------------|------|
+| Children (under 25) | Rate |
+|---|---|
 | 0 (childless, age 23+) | 4.2% |
-| 1 child | 3.6% |
-| 2 children | 3.35% |
-| 3 children | 3.1% |
-| 4 children | 2.85% |
-| 5+ children | 2.6% |
+| 1 | 3.6% |
+| 2 | 3.35% |
+| 3 | 3.1% |
+| 4 | 2.85% |
+| 5+ | 2.6% |
 
-**The reduction for multiple children applies only while the children are under 25. Once a child turns 25, the reduction for that child lapses, and the rate adjusts upward.**
+Same assessment base as GKV (EUR 1,248.33 to EUR 5,512.50 monthly). Full rate for self-employed (no employer share).
 
-**Self-employed in GKV pay the FULL Pflegeversicherung rate themselves (no employer share).**
+### Rule 4 -- Pension (Rentenversicherung)
 
-### Pflegeversicherung Assessment Base [T1]
+Rate: 18.6%. Ceiling: EUR 8,050/month. Voluntary minimum: EUR 100.07/month. Mandatory for: Handwerker (first 18 years), KSK members, teachers (selbstaendige Lehrer), midwives, arbeitnehmeraehnliche Selbstaendige. Voluntary for most Freiberufler and Gewerbetreibende.
 
-Same as Krankenversicherung:
-- Minimum: EUR 1,248.33/month
-- Maximum: EUR 5,512.50/month (BBG)
+### Rule 5 -- KSK members pay approximately half
 
----
+KSK covers ~50% of health and pension. Member pays ~7.3% + 50% Zusatzbeitrag for health, 9.3% for pension, and FULL Pflegeversicherung (no 50% split on care).
 
-## Step 4: Rentenversicherung -- Pension Insurance [T1/T2]
+### Rule 6 -- Kuenstlersozialabgabe (client/Verwerter)
 
-**Legislation:** SGB VI; Handwerkerversicherungsgesetz
+Businesses commissioning artistic/literary/journalistic work pay 5.0% levy on fees paid. Bagatellgrenze: EUR 700/year. Reporting deadline: 31 March following year.
 
-### Rate (2025) [T1]
+### Rule 7 -- GKV provisional and final assessment
 
-| Item | Value |
-|------|-------|
-| Contribution rate | 18.6% |
-| Beitragsbemessungsgrenze (contribution ceiling) | EUR 8,050/month = EUR 96,600/year |
-| Minimum voluntary contribution | EUR 100.07/month (2025) |
-| Maximum contribution | EUR 1,497.30/month (18.6% x EUR 8,050) |
+Provisional contributions based on estimated income. Recalculated retroactively after Einkommensteuerbescheid. Overpayments refunded; underpayments demanded. Bescheid must be submitted to Krankenkasse within 3 years.
 
-**Since 2025, the BBG is uniform across all of Germany (no more Ost/West distinction).**
+### Rule 8 -- Every person must have health insurance
 
-### Obligation by Self-Employment Type [T2]
+There is no opt-out. Self-employed can freely choose GKV or PKV (the JAEG threshold applies only to employees).
 
-| Category | Pension Obligation | Details |
-|----------|-------------------|---------|
-| Most Freiberufler (freelancers) | **Voluntary** | Can opt in via Antrag auf Pflichtversicherung (within 5 years of starting) |
-| Gewerbetreibende (traders) | **Voluntary** | Same as above |
-| Handwerker (skilled craftspeople in Handwerksrolle) | **Mandatory** for first 18 years | 18.6% of income; can apply for half-rate after 18 years |
-| Artists/writers/journalists via KSK | **Mandatory** via KSK | 50% subsidized (see Step 5) |
-| Teachers (selbstaendige Lehrer) | **Mandatory** | If regularly teaching |
-| Midwives (Hebammen) | **Mandatory** | Full 18.6% |
-| Home workers (Heimarbeiter) | **Mandatory** | |
-| Seelotsen (maritime pilots) | **Mandatory** | |
-| Self-employed with one client (arbeitnehmeraehnliche Selbstaendige) | **Mandatory** | If >5/6 of income from one client and no employees |
+### Rule 9 -- Tax deductibility (Vorsorgeaufwendungen)
 
-**If the client's profession falls into a mandatory category, flag [T2] and confirm with Steuerberater before advising that pension is voluntary.**
+| Contribution | Deductibility |
+|---|---|
+| Basiskrankenversicherung (GKV or PKV base) | Fully deductible, no cap |
+| Pflegeversicherung | Fully deductible, no cap |
+| Rentenversicherung (statutory or Ruerup) | 100% deductible (since 2023), within EUR 29,344 cap |
+| Other insurance (accident, supplementary) | Within EUR 2,800 cap (self-employed) |
 
-### Voluntary Pension Contributions [T1]
+### Rule 10 -- Payment schedule
 
-Self-employed persons who are NOT in a mandatory category can:
-- Choose any monthly amount between EUR 100.07 and EUR 1,497.30 (2025)
-- Pay monthly or make lump-sum payments
-- Application: "Antrag auf freiwillige Versicherung" at Deutsche Rentenversicherung
-
-**Once a voluntary Pflichtversicherung (voluntary mandatory insurance) is elected, it is IRREVOCABLE. Advise clients to consider carefully.**
+| Branch | Due | Method |
+|---|---|---|
+| GKV + PV | 15th of each month (for current month) | Lastschrift or bank transfer |
+| Pension (voluntary) | End of each month | Bank transfer |
+| KSK | Mid-month | KSK direct debit |
+| BG | Annual (some quarterly) | BG invoice |
 
 ---
 
-## Step 5: Kuenstlersozialkasse (KSK) [T1/T2]
+## Section 6 -- Tier 2 catalogue
 
-**Legislation:** KSVG (Kuenstlersozialversicherungsgesetz)
+### T2-1 -- Hauptberuflich vs Nebenberuflich (side business alongside employment)
 
-### What KSK Does [T1]
+**Trigger:** Client is employed full-time with a side freelance business.
+**Issue:** If employment is hauptberuflich, GKV comes from employment; side income not separately assessed for GKV. If side business becomes main activity, full self-employed GKV contributions apply.
+**Action:** Flag for reviewer. Case-specific assessment required.
 
-The KSK provides self-employed artists, writers, and journalists with social insurance coverage equivalent to an employee -- the KSK acts as the "employer" and pays approximately 50% of health, pension, and long-term care contributions.
+### T2-2 -- PKV to GKV switching
 
-### KSK Member Contributions (2025) [T1]
+**Trigger:** PKV client wants to switch to GKV.
+**Issue:** Very restricted. Generally impossible after age 55. Must demonstrate becoming employed with income below JAEG.
+**Action:** Escalate to Steuerberater. Do not advise switching is possible.
 
-KSK members pay approximately **half** of the standard contribution rates:
+### T2-3 -- KSK eligibility determination
 
-| Branch | Full Rate | KSK Member Pays | KSK/Federal Subsidy Covers |
-|--------|-----------|-----------------|---------------------------|
-| Krankenversicherung | ~14.6% + Zusatzbeitrag | ~7.3% + 50% Zusatzbeitrag | ~7.3% + 50% Zusatzbeitrag |
-| Pflegeversicherung | 3.6% (or 4.2% childless) | Full rate (no 50% split) | Nothing -- member pays 100% |
-| Rentenversicherung | 18.6% | 9.3% | 9.3% |
+**Trigger:** Client's profession may or may not qualify for KSK.
+**Issue:** KSK membership requires creative/artistic/literary/journalistic self-employment, EUR 3,900+ annual income (after 3-year Berufsanfaenger period), and no more than one employee.
+**Action:** Flag for reviewer. Do not assume eligibility.
 
-**Important: For Pflegeversicherung, the KSK member pays the FULL rate. The 50% subsidy does NOT apply to long-term care insurance.**
+### T2-4 -- Scheinselbstaendigkeit (false self-employment)
 
-### KSK Assessment Base [T1]
+**Trigger:** Client earns >5/6 of income from one client and has no employees.
+**Issue:** Triggers arbeitnehmeraehnliche Selbstaendigkeit under SGB VI Section 2 (mandatory pension) and potential reclassification.
+**Action:** Escalate immediately. Severe financial exposure.
 
-- KSK contributions are based on **estimated annual income** (Schaetzung des voraussichtlichen Jahreseinkommens), declared by the member each year.
-- KSK verifies against tax returns.
-- Minimum income for KSK eligibility: EUR 3,900/year (Geringfuegigkeitsgrenze).
+### T2-5 -- Handwerker pension after 18 years
 
-### Kuenstlersozialabgabe -- Client/Verwerter Rate (2025) [T1]
+**Trigger:** Skilled craftsperson with 216+ months of mandatory pension.
+**Issue:** May apply for exemption (Befreiungsantrag).
+**Action:** Flag for reviewer to confirm eligibility.
 
-| Item | Value |
-|------|-------|
-| Abgabesatz (levy rate) | **5.0%** |
-| Bagatellgrenze (de minimis threshold) | EUR 700/calendar year |
-| Who pays | Businesses (Verwerter) that commission artistic/literary/journalistic work |
-| Reporting deadline | 31 March of following year |
+### T2-6 -- GKV retroactive adjustment
 
-**Businesses commissioning work from artists/writers/journalists must pay the 5.0% Kuenstlersozialabgabe on top of fees paid. This is the client's obligation, not the artist's.**
-
-### KSK Eligibility [T2]
-
-To qualify for KSK membership, the individual must:
-1. Be self-employed (not employed)
-2. Work in the fields of visual arts, performing arts, music, writing/journalism, or related creative professions
-3. Earn at least EUR 3,900/year from artistic/journalistic/literary activity (exception for first 3 years: Berufsanfaenger)
-4. Not regularly employ more than one employee (one geringfuegig Beschaeftigter / mini-jobber is allowed)
-
-**KSK eligibility is a [T2] question. If uncertain whether the client's profession qualifies, do not assume eligibility. Flag for Steuerberater review.**
+**Trigger:** Einkommensteuerbescheid shows significant income deviation from provisional estimate.
+**Issue:** Krankenkasse recalculates retroactively. Underpayments demanded.
+**Action:** Advise client to submit Bescheid promptly and reserve funds.
 
 ---
 
-## Step 6: Unfallversicherung -- Accident Insurance [T1/T2]
-
-**Legislation:** SGB VII
-
-### Berufsgenossenschaft Membership [T1]
-
-| Status | Obligation |
-|--------|-----------|
-| Employees | Mandatory -- employer must register and pay |
-| Most self-employed | **Voluntary** -- can opt into Berufsgenossenschaft |
-| Self-employed in agriculture/forestry | **Mandatory** |
-| Self-employed in construction (certain trades) | **Mandatory** |
-| Self-employed in healthcare (certain professions) | **Mandatory** |
-
-### Cost [T1]
-
-- Contributions vary by industry (Gefahrklasse / risk class) and declared income/turnover.
-- Typical range for office-based freelancers: EUR 5 -- EUR 15/month.
-- Higher-risk trades (construction, manufacturing): significantly more.
-- Each Berufsgenossenschaft publishes its own rate table.
-
-**This skill does NOT compute Unfallversicherung contributions. They are too variable by industry. Advise client to contact the relevant Berufsgenossenschaft for a quote.**
-
----
-
-## Step 7: Arbeitslosenversicherung -- Unemployment Insurance [T1]
-
-**Legislation:** SGB III Section 28a
-
-| Item | Value |
-|------|-------|
-| Rate | 2.6% (2025) |
-| Obligation for self-employed | **Voluntary** (Freiwillige Weiterversicherung) |
-| Eligibility to opt in | Within 3 months of starting self-employment; must have had at least 12 months of mandatory insurance in the prior 30 months |
-| Assessment base (if voluntary) | Fixed notional amount set annually |
-
-**Most self-employed do not opt in. This is informational only. If the client asks about voluntary unemployment insurance, flag [T2] for case-specific advice.**
-
----
-
-## Step 8: Contribution Ceilings and Minimums Summary (2025) [T1]
-
-| Parameter | Health + Care (KV/PV) | Pension (RV) |
-|-----------|-----------------------|-------------|
-| Beitragsbemessungsgrenze (monthly) | EUR 5,512.50 | EUR 8,050.00 |
-| Beitragsbemessungsgrenze (annual) | EUR 66,150.00 | EUR 96,600.00 |
-| Mindestbemessungsgrundlage (monthly, GKV self-employed) | EUR 1,248.33 | EUR 100.07 (voluntary minimum) |
-| Versicherungspflichtgrenze / JAEG (employees only) | EUR 73,800.00 | N/A |
-
----
-
-## Step 9: Payment Schedule [T1]
-
-| Branch | Frequency | Due Date | Method |
-|--------|-----------|----------|--------|
-| GKV (Krankenversicherung) | Monthly | 15th of each month (for current month) | Direct debit (Lastschrift) or bank transfer |
-| Pflegeversicherung | Monthly | Collected together with GKV | Same as GKV |
-| Rentenversicherung (voluntary) | Monthly | By end of each month | Bank transfer to Deutsche Rentenversicherung |
-| KSK contributions | Monthly | KSK collects via direct debit, typically mid-month | Direct debit managed by KSK |
-| Berufsgenossenschaft | Annually (some quarterly) | Varies by BG; typically due in arrears | Invoice from BG |
-
-**GKV contributions are due on the 15th of the month for which they apply (not in arrears).**
-
----
-
-## Step 10: Tax Deductibility of Contributions (Vorsorgeaufwendungen) [T1]
-
-**Legislation:** EStG Section 10
-
-### Deductibility Rules (2025) [T1]
-
-| Contribution Type | Tax Treatment | Limit |
-|-------------------|--------------|-------|
-| Rentenversicherung (statutory or Ruerup/Basisrente) | 100% deductible as Sonderausgaben (since 2023) | EUR 29,344/year (single); EUR 58,688 (married, joint filing) |
-| Krankenversicherung (Basiskrankenversicherung) | Fully deductible | No cap on Basisabsicherung |
-| Pflegeversicherung | Fully deductible | No cap |
-| KV supplementary coverage (Wahlleistungen, Zusatzversicherung) | Deductible within cap | Subject to EUR 2,800 cap (self-employed) |
-| Unfallversicherung | Deductible within cap | Subject to EUR 2,800 cap (self-employed) |
-| Arbeitslosenversicherung | Deductible within cap | Subject to EUR 2,800 cap (self-employed) |
-
-### Key Points [T1]
-
-1. **Basiskrankenversicherung contributions are FULLY deductible with no cap.** This is the core health insurance coverage (not supplementary add-ons).
-2. **The EUR 2,800 cap applies to self-employed persons** for "sonstige Vorsorgeaufwendungen" (other insurance contributions). Employees have a lower cap of EUR 1,900 because their employer pays half.
-3. **Pension contributions (Altersvorsorgeaufwendungen) have a separate, higher cap** and are NOT subject to the EUR 2,800 limit.
-4. **Interaction with income tax skill:** When preparing the Einkommensteuererklaerung, enter contributions in Anlage Vorsorgeaufwand. The Basiskrankenversicherung and Pflegeversicherung amounts often consume the entire EUR 2,800 cap, meaning additional insurance (liability, accident) may yield no further deduction.
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Hauptberuflich vs Nebenberuflich self-employment alongside employment [T2]
-**Situation:** Client is employed full-time and has a side freelance business.
-**Resolution:** If the employment is the main occupation (hauptberuflich), GKV coverage comes from the employment. The side income is not separately assessed for GKV IF the side activity is clearly secondary (fewer hours, lower income than employment). If the side business becomes the main activity, the client must pay full self-employed GKV contributions. [T2] -- the determination of hauptberuflich vs nebenberuflich requires case-specific assessment.
-
-### EC2 -- Switching from PKV to GKV [T2]
-**Situation:** Self-employed client in PKV wants to switch to GKV.
-**Resolution:** Switching is very restricted. Generally impossible after age 55. Must demonstrate either (a) becoming employed with income below JAEG, or (b) other narrow exceptions. [T2] escalate to Steuerberater. Do not advise that switching is possible without confirmation.
-
-### EC3 -- KSK member with income below Geringfuegigkeitsgrenze [T1]
-**Situation:** KSK member earns less than EUR 3,900 in a year.
-**Resolution:** After the initial 3-year Berufsanfaenger period, the member will lose KSK coverage if income stays below EUR 3,900. They must then arrange own health/pension insurance. Flag if approaching this threshold.
-
-### EC4 -- Self-employed with one client (Scheinselbstaendigkeit risk) [T2]
-**Situation:** Freelancer earns >5/6 of income from a single client and has no employees.
-**Resolution:** This triggers arbeitnehmeraehnliche Selbstaendigkeit under SGB VI Section 2. Pension insurance becomes MANDATORY at 18.6%. Additionally, the Statusfeststellungsverfahren (employment status determination) may reclassify the relationship as de facto employment (Scheinselbstaendigkeit), triggering full social insurance obligations. [T2] -- escalate immediately. Significant financial exposure.
-
-### EC5 -- Handwerker after 18 years of mandatory pension [T1]
-**Situation:** Skilled craftsperson (in Handwerksrolle) has paid 216 months (18 years) of mandatory pension contributions.
-**Resolution:** Can apply for exemption from mandatory pension insurance (Befreiungsantrag). After exemption, pension becomes voluntary. The 18-year clock counts from first registration in the Handwerksrolle.
-
-### EC6 -- GKV retroactive adjustment after Einkommensteuerbescheid [T1]
-**Situation:** Self-employed person's actual income differs significantly from estimated income used for provisional GKV contributions.
-**Resolution:** The Krankenkasse recalculates retroactively upon receipt of the Einkommensteuerbescheid. Underpayments must be paid; overpayments are refunded. The assessment can go back up to 3 years. Advise clients to submit their Bescheid promptly and reserve funds for potential underpayments.
-
-### EC7 -- Kuenstler eligible for both KSK and Versorgungswerk [T2]
-**Situation:** A self-employed architect who also does artistic work could qualify for KSK and for the architects' Versorgungswerk (professional pension fund).
-**Resolution:** KSK membership and Versorgungswerk membership are not necessarily mutually exclusive, but the pension component may overlap. [T2] -- requires Steuerberater analysis of which scheme applies to which income.
-
-### EC8 -- Voluntary pension: Pflichtversicherung auf Antrag is irrevocable [T1]
-**Situation:** Self-employed person elected voluntary mandatory pension insurance (Pflichtversicherung auf Antrag).
-**Resolution:** This election is IRREVOCABLE. The person must continue paying 18.6% on income up to the BBG for as long as they remain self-employed. Do NOT advise electing this without explicit client understanding and Steuerberater confirmation.
-
----
-
-## Step 12: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel working paper template
 
 ```
-REVIEWER FLAG
-Tier: T2
+GERMANY SOCIAL CONTRIBUTIONS -- WORKING PAPER
 Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Licensed Steuerberater must confirm before advising client.
-```
+Tax Year: [year]
+Prepared: [date]
 
-When Claude identifies a [T3] situation:
+INPUT DATA
+  Insurance type:                [GKV / PKV]
+  Krankenkasse name:             [____]
+  Zusatzbeitrag:                 [____]%
+  Monthly income:                EUR [____]
+  Number of children (under 25): [____]
+  Age:                           [____]
+  Profession:                    [____]
+  KSK member:                    [YES/NO]
+  Pension: voluntary/mandatory:  [____]
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to licensed Steuerberater. Document gap.
+GKV COMPUTATION
+  Assessment base (clamped):     EUR [____]
+  KV rate:                       [____]%
+  Monthly KV:                    EUR [____]
+  PV rate:                       [____]%
+  Monthly PV:                    EUR [____]
+  Total KV + PV monthly:         EUR [____]
+  Total KV + PV annual:          EUR [____]
+
+PENSION COMPUTATION
+  Type: [Voluntary / Mandatory / KSK]
+  Monthly contribution:          EUR [____]
+  Annual contribution:           EUR [____]
+
+OTHER
+  BG contribution:               EUR [____]
+  Arbeitslosenversicherung:      EUR [____]
+
+TOTAL ANNUAL CONTRIBUTIONS:      EUR [____]
+
+TAX DEDUCTIBILITY (ANLAGE VORSORGEAUFWAND)
+  Basiskrankenversicherung:      EUR [____] (fully deductible)
+  Pflegeversicherung:            EUR [____] (fully deductible)
+  Rentenversicherung:            EUR [____] (deductible within cap)
+  Other (BG, supplementary):     EUR [____] (within EUR 2,800 cap)
+
+REVIEWER FLAGS
+  [List any Tier 2 flags]
 ```
 
 ---
 
-## Step 13: Test Suite
+## Section 8 -- Bank statement reading guide
 
-### Test 1 -- Standard GKV self-employed, mid-range income, childless
-**Input:** Self-employed freelancer, GKV (no sick pay), Zusatzbeitrag 2.5%, income EUR 3,500/month, age 35, no children.
-**Expected output:**
-- KV: EUR 3,500 x 16.5% = EUR 577.50/month
-- PV: EUR 3,500 x 4.2% = EUR 147.00/month (childless surcharge applies)
-- Total KV + PV: EUR 724.50/month = EUR 8,694.00/year
+### How German social contribution debits appear
 
-### Test 2 -- GKV self-employed at minimum income
-**Input:** Self-employed, GKV (no sick pay), Zusatzbeitrag 2.5%, income EUR 800/month, age 30, 1 child.
-**Expected output:**
-- Minimum base applies: EUR 1,248.33
-- KV: EUR 1,248.33 x 16.5% = EUR 205.97/month
-- PV: EUR 1,248.33 x 3.6% = EUR 44.94/month
-- Total KV + PV: EUR 250.91/month = EUR 3,010.92/year
+**GKV Krankenkasse debits:**
+- Description: Krankenkasse name + "BEITRAG" or "LASTSCHRIFT" or "KV BEITRAG"
+- Timing: 15th of each month (for the current month)
+- Amount: Consistent monthly amount (changes only when income reassessed)
+- Some Kassen combine KV + PV in one debit; others show two debits
 
-### Test 3 -- GKV self-employed above contribution ceiling
-**Input:** Self-employed consultant, GKV (with sick pay), Zusatzbeitrag 2.5%, income EUR 9,000/month, age 45, 2 children (both under 25).
-**Expected output:**
-- Capped at BBG: EUR 5,512.50
-- KV: EUR 5,512.50 x 17.1% (14.6% + 2.5%) = EUR 942.64/month
-- PV: EUR 5,512.50 x 3.35% (2 children) = EUR 184.67/month
-- Total KV + PV: EUR 1,127.31/month = EUR 13,527.72/year
+**KSK debits:**
+- Description: "KUENSTLERSOZIALKASSE" or "KSK"
+- Timing: Mid-month
+- Amount: Varies by declared income and chosen Krankenkasse
 
-### Test 4 -- KSK member artist
-**Input:** Freelance graphic designer, KSK member, estimated annual income EUR 30,000, age 28, no children.
-**Expected output:**
-- KSK handles enrollment; member pays ~50% of KV and RV, full PV
-- Monthly income for KSK purposes: EUR 2,500
-- KV (member share): ~EUR 2,500 x ~8.55% (half of ~17.1%) = ~EUR 213.75/month
-- RV (member share): EUR 2,500 x 9.3% = EUR 232.50/month
-- PV (full, childless): EUR 2,500 x 4.2% = EUR 105.00/month
-- Approximate total: ~EUR 551.25/month = ~EUR 6,615/year
-- Note: Exact KV depends on chosen Krankenkasse Zusatzbeitrag
+**Deutsche Rentenversicherung:**
+- Description: "DEUTSCHE RENTENVERSICHERUNG" or "DRV BUND"
+- Timing: Monthly (end of month for voluntary)
+- Amount: Fixed chosen amount between EUR 100.07 and EUR 1,497.30
 
-### Test 5 -- Mandatory pension for Handwerker
-**Input:** Self-employed master electrician registered in Handwerksrolle, 5 years in, income EUR 4,500/month.
-**Expected output:**
-- Pension is MANDATORY (fewer than 18 years)
-- RV: EUR 4,500 x 18.6% = EUR 837.00/month = EUR 10,044.00/year
-- Pension contributions fully deductible as Altersvorsorgeaufwendungen (within EUR 29,344 cap)
+**Berufsgenossenschaft:**
+- Description: BG name + "BEITRAG" + year
+- Timing: Annual (typically Q1/Q2 for prior year)
+- Amount: Varies by risk class and income
 
-### Test 6 -- Employed full-time with side freelance income
-**Input:** Full-time employee (EUR 55,000/year salary, employer pays KV/PV/RV) with EUR 8,000/year freelance income on the side.
-**Expected output:**
-- If side business is clearly nebenberuflich: no separate GKV/PV contributions on freelance income (covered by employment)
-- No mandatory pension on side income (assuming not in a mandatory self-employed category)
-- [T2] flag: confirm nebenberuflich status (fewer hours and lower income than employment)
-
-### Test 7 -- Vorsorgeaufwendungen tax deduction
-**Input:** Self-employed, paid EUR 10,500 GKV (Basiskrankenversicherung), EUR 2,400 PV, EUR 5,580 voluntary RV in 2025. Single filer.
-**Expected output:**
-- Basiskrankenversicherung (EUR 10,500): fully deductible, no cap
-- Pflegeversicherung (EUR 2,400): fully deductible, no cap
-- Rentenversicherung (EUR 5,580): 100% deductible as Altersvorsorgeaufwendungen (within EUR 29,344 cap)
-- Total deduction: EUR 18,480 on Anlage Vorsorgeaufwand
-- Note: The EUR 2,800 cap for sonstige Vorsorgeaufwendungen is already exceeded by KV+PV, so any additional insurance (liability, accident) yields no further deduction in that category
-
-### Test 8 -- Kuenstlersozialabgabe for client/Verwerter
-**Input:** Marketing agency paid EUR 15,000 in fees to freelance designers and copywriters in 2025.
-**Expected output:**
-- Kuenstlersozialabgabe due: EUR 15,000 x 5.0% = EUR 750.00
-- Must be reported to KSK by 31 March 2026
-- Threshold: exceeds EUR 700 Bagatellgrenze, so obligation applies
+**Key identification tips:**
+1. GKV debits are the most frequent -- monthly on the 15th
+2. KSK debits combine health + pension (member share only)
+3. BG debits are annual or quarterly and often reference the prior year
+4. Finanzamt debits are TAX, not social contributions -- do not confuse
+5. Provisional GKV amounts may be retroactively adjusted
 
 ---
 
-## PROHIBITIONS
+## Section 9 -- Onboarding fallback
 
-- NEVER compute contributions without knowing whether the client is in GKV or PKV -- the calculation is fundamentally different
-- NEVER apply the 50% KSK subsidy to Pflegeversicherung -- KSK members pay the FULL Pflegeversicherung rate
-- NEVER assume pension insurance is voluntary without checking the client's profession against the mandatory categories (Handwerker, Kuenstler/KSK, Lehrer, Hebammen, arbeitnehmeraehnliche Selbstaendige)
-- NEVER tell a self-employed GKV member they can contribute below the Mindestbemessungsgrundlage -- the minimum always applies even at zero income
-- NEVER advise a PKV member that switching to GKV is straightforward -- it is heavily restricted, especially after age 55
-- NEVER compute PKV premiums -- they are individual and risk-based, not formula-driven
-- NEVER advise electing Pflichtversicherung auf Antrag (voluntary mandatory pension) without emphasizing it is IRREVOCABLE
-- NEVER ignore the Zusatzbeitrag when computing GKV contributions -- it varies by fund and significantly affects the total
-- NEVER present GKV provisional contributions as final -- they are subject to retroactive adjustment based on the Einkommensteuerbescheid
-- NEVER conflate the KV/PV Beitragsbemessungsgrenze (EUR 5,512.50/mo) with the RV Beitragsbemessungsgrenze (EUR 8,050/mo) -- they are different
-- NEVER advise on Scheinselbstaendigkeit (false self-employment) determinations without escalating to a Steuerberater -- the financial exposure is severe
+If the client provides only a bank statement:
+
+1. **Scan for Krankenkasse debits** -- identify the health insurer and monthly amount
+2. **Determine GKV or PKV** -- Krankenkasse names (TK, AOK, Barmer, etc.) = GKV; Allianz PKV, Debeka, DKV = PKV
+3. **Identify KSK if present** -- KSK debits indicate artist/writer/journalist status
+4. **Sum annual contributions** -- total GKV + PV + pension + BG
+5. **Flag:** "Social contribution classification derived from bank statement patterns. Actual Zusatzbeitrag, income assessment base, and pension obligation type have not been independently verified. Reviewer must confirm before Anlage Vorsorgeaufwand is completed."
+
+---
+
+## Section 10 -- Reference material
+
+### Contribution ceilings and minimums (2025)
+
+| Parameter | KV/PV | Pension |
+|---|---|---|
+| BBG monthly | EUR 5,512.50 | EUR 8,050.00 |
+| BBG annual | EUR 66,150.00 | EUR 96,600.00 |
+| Minimum (monthly, GKV self-employed) | EUR 1,248.33 | EUR 100.07 (voluntary) |
+| JAEG (employees only) | EUR 73,800.00 | N/A |
+
+### Test suite
+
+**Test 1:** GKV, no sick pay, 2.5% Zusatzbeitrag, income EUR 3,500/month, childless age 35. -> KV: EUR 577.50. PV: EUR 147.00. Total: EUR 724.50/month = EUR 8,694/year.
+
+**Test 2:** GKV, minimum income, 2.5% Zusatzbeitrag, 1 child, age 30. -> KV: EUR 205.97. PV: EUR 44.94. Total: EUR 250.91/month.
+
+**Test 3:** GKV, with sick pay, 2.5%, income EUR 9,000/month, 2 children. -> Capped at EUR 5,512.50. KV: EUR 942.64. PV: EUR 184.67. Total: EUR 1,127.31/month.
+
+**Test 4:** KSK member, income EUR 30,000/year, childless age 28. -> KV share: ~EUR 213.75. RV share: EUR 232.50. PV full: EUR 105.00. Total: ~EUR 551.25/month.
+
+**Test 5:** Handwerker, 5 years in, income EUR 4,500/month. -> Mandatory pension: EUR 837.00/month.
+
+**Test 6:** Employed full-time + side freelance EUR 8,000/year. -> If nebenberuflich: no separate GKV on freelance income. Flag T2.
+
+**Test 7:** Vorsorgeaufwendungen: paid EUR 10,500 KV + EUR 2,400 PV + EUR 5,580 RV. -> KV + PV fully deductible. RV within cap. Total deduction: EUR 18,480.
+
+**Test 8:** Kuenstlersozialabgabe: agency paid EUR 15,000 to freelancers. -> 5.0% = EUR 750 due by 31 March.
+
+### Prohibitions
+
+- NEVER compute without knowing GKV or PKV
+- NEVER apply 50% KSK subsidy to Pflegeversicherung -- KSK members pay full PV
+- NEVER assume pension is voluntary without checking profession
+- NEVER tell GKV self-employed they can contribute below minimum base
+- NEVER advise PKV-to-GKV switching is straightforward
+- NEVER compute PKV premiums -- they are individual and risk-based
+- NEVER advise electing Pflichtversicherung auf Antrag without emphasizing it is IRREVOCABLE
+- NEVER ignore the Zusatzbeitrag
+- NEVER present GKV provisional contributions as final
+- NEVER conflate KV/PV BBG (EUR 5,512.50) with RV BBG (EUR 8,050)
+- NEVER advise on Scheinselbstaendigkeit without escalating
 
 ---
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater, Wirtschaftspruefer, or equivalent licensed practitioner in Germany) before filing or acting upon.
-
-German social insurance law is complex and fact-specific. Rates, thresholds, and rules change annually via the Sozialversicherungsrechengroessenverordnung. Always verify figures against the current year's BMAS publication.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

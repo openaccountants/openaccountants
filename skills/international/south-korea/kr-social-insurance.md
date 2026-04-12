@@ -1,329 +1,268 @@
 ---
 name: kr-social-insurance
-description: Use this skill whenever asked about South Korean social insurance contributions for self-employed persons. Trigger on phrases like "National Pension Korea", "NPS self-employed", "Korean health insurance", "NHIS self-employed", "long-term care insurance Korea", "Korean social insurance", "4 major insurances Korea", or any question about social insurance obligations for a self-employed client in South Korea. This skill covers National Pension (NPS), National Health Insurance (NHIS), Long-Term Care Insurance, Employment Insurance, and Industrial Accident Insurance as they apply to self-employed individuals. ALWAYS read this skill before touching any Korean social insurance-related work.
+description: >
+  Use this skill whenever asked about South Korean social insurance contributions for self-employed persons. Trigger on phrases like "National Pension Korea", "NPS self-employed", "Korean health insurance", "NHIS self-employed", "long-term care insurance Korea", "Korean social insurance", "4 major insurances Korea", or any question about social insurance obligations for a self-employed client in South Korea. This skill covers National Pension (NPS), National Health Insurance (NHIS), Long-Term Care Insurance, Employment Insurance, and Industrial Accident Insurance as they apply to self-employed individuals. ALWAYS read this skill before touching any Korean social insurance-related work.
+version: 2.0
+jurisdiction: KR
+tax_year: 2025
+category: international
 ---
 
-# South Korea Social Insurance Contributions -- Self-Employed Skill
+# South Korea Social Insurance Contributions -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+Read this whole section before computing anything.
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | South Korea |
+|---|---|
+| Country | South Korea |
 | Jurisdiction Code | KR |
-| Primary Legislation | National Pension Act (국민연금법); National Health Insurance Act (국민건강보험법); Long-Term Care Insurance Act (노인장기요양보험법); Employment Insurance Act (고용보험법); Industrial Accident Compensation Insurance Act (산업재해보상보험법) |
-| Supporting Legislation | Income Tax Act (소득세법) -- deductibility of NPS and NHIS contributions |
-| Tax Authority | National Pension Service (NPS / 국민연금공단); National Health Insurance Service (NHIS / 국민건강보험공단); Ministry of Employment and Labor |
-| Rate Publisher | NPS and NHIS (publish annual rate tables and ceiling adjustments) |
+| Primary Legislation | National Pension Act; National Health Insurance Act; Long-Term Care Insurance Act; Employment Insurance Act; Industrial Accident Compensation Insurance Act |
+| Supporting Legislation | Income Tax Act -- deductibility of NPS and NHIS contributions |
+| Tax Authority | National Pension Service (NPS); National Health Insurance Service (NHIS); Ministry of Employment and Labor |
+| Tax Year | 2025 |
+| Currency | KRW only |
 | Contributor | Open Accountants |
-| Validated By | Pending -- licensed Korean practitioner (세무사/공인회계사) sign-off required |
+| Validated By | Pending -- licensed Korean practitioner sign-off required |
 | Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: NPS rate/ceiling, NHIS rate, LTCI rate, payment schedule, tax deductibility. Tier 2: NHIS property-based assessment for self-employed, income reclassification, voluntary employment insurance. Tier 3: disability exemptions, international social security agreements, arrears disputes. |
+| Skill Version | 2.0 |
+| Confidence Coverage | Tier 1: NPS rate/ceiling, NHIS rate, LTCI rate, payment schedule, tax deductibility. Tier 2: NHIS property-based assessment, income reclassification, voluntary employment insurance. Tier 3: disability exemptions, international social security agreements, arrears disputes. |
+
+**NPS key figures (2025):**
+
+| Item | Value |
+|---|---|
+| Total contribution rate | 9.0% of monthly income |
+| Self-employed share | 9.0% (full amount, no employer) |
+| Monthly income floor (Jan-Jun 2025) | KRW 390,000 |
+| Monthly income ceiling (Jan-Jun 2025) | KRW 6,170,000 |
+| Monthly income floor (Jul 2025-Jun 2026) | KRW 400,000 |
+| Monthly income ceiling (Jul 2025-Jun 2026) | KRW 6,370,000 |
+| From 2026 | Rate increases to 9.5%, rising 0.5%/year to 13.0% by 2033 |
+
+**Four major social insurances overview:**
+
+| Insurance | Applies to Self-Employed? | Self-Employed Pays |
+|---|---|---|
+| National Pension (NPS) | YES -- mandatory ages 18-59 | Full 9% |
+| National Health Insurance (NHIS) | YES -- mandatory for all residents | Full contribution (income + property based) |
+| Long-Term Care Insurance (LTCI) | YES -- add-on to NHIS | 12.95% of NHIS premium |
+| Employment Insurance | NO (voluntary opt-in available) | N/A unless enrolled |
+| Industrial Accident Insurance | NO for most self-employed | N/A (some high-risk occupations may opt in) |
+
+**NHIS key figures (2025):**
+
+| Item | Value |
+|---|---|
+| NHIS premium rate (nominal) | 7.09% |
+| Point value per score (community insured) | KRW 211.5 |
+| Monthly minimum premium | ~KRW 19,780 |
+| LTCI rate (as % of NHIS premium) | 12.95% |
+| LTCI rate from 2026 | 13.14% |
+
+**Tax treatment:**
+
+| Contribution | Tax Benefit |
+|---|---|
+| NPS | Income deduction -- reduces taxable income directly |
+| NHIS + LTCI | Tax credit -- 12% of premiums paid credited against tax |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown monthly income | Use NPS floor (KRW 400,000 from Jul 2025) |
+| Unknown NHIS property/vehicle data | Flag for reviewer -- cannot compute without data |
+| Unknown employment status | Treat as self-employed (community insured) |
+| Unknown age for NPS | Assume mandatory (age 18-59) |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Licensed practitioner must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
-
----
-
-## Step 0: Client Onboarding Questions
+### Required inputs
 
 Before computing any social insurance figure, you MUST know:
 
-1. **Age** [T1] -- NPS is mandatory for persons aged 18 to 59
-2. **Employment status** [T1] -- self-employed (개인사업자), freelancer (프리랜서), or dual (employed + side self-employment)
-3. **Monthly reported income** [T1] -- basis for NPS contributions
-4. **Property and vehicle ownership** [T2] -- affects NHIS calculation for self-employed (지역가입자)
-5. **Number of household members on NHIS** [T2] -- NHIS for self-employed is household-based
-6. **Is there any employment (근로소득)?** [T1] -- if fully employed, employer handles all 4 insurances; self-employment income may trigger additional NHIS
+1. Age -- NPS is mandatory for persons aged 18 to 59
+2. Employment status -- self-employed, freelancer, or dual (employed + side self-employment)
+3. Monthly reported income -- basis for NPS contributions
+4. Property and vehicle ownership -- affects NHIS calculation for community insured
+5. Number of household members on NHIS -- NHIS for self-employed is household-based
+6. Is there any employment income? -- if fully employed, employer handles all 4 insurances
 
-**If monthly income is unknown, STOP. Do not compute NPS. Income is mandatory for NPS calculation.**
+If monthly income is unknown, STOP. Do not compute NPS. Income is mandatory for NPS calculation.
 
----
+### Refusal catalogue
 
-## Step 1: Overview of the Four Major Social Insurances [T1]
+**R-KR-SI-1 -- Disability exemption.** Trigger: client asks about NPS exemption due to disability. Message: "NPS disability exemptions require verification of disability status with NPS. This is outside this skill's scope. Please escalate to a licensed Korean practitioner."
 
-**South Korea operates a "4 major social insurance" (4대 보험) system:**
+**R-KR-SI-2 -- International social security agreement.** Trigger: client is a foreign national asking about NPS obligations under a bilateral agreement. Message: "NPS obligations for foreign nationals depend on the specific bilateral social security agreement between South Korea and the client's home country. Please escalate to a licensed Korean practitioner."
 
-| Insurance | Applies to Self-Employed? | Self-Employed Pays |
-|-----------|--------------------------|-------------------|
-| National Pension (NPS / 국민연금) | YES -- mandatory for ages 18-59 | Full 9% (no employer share) |
-| National Health Insurance (NHIS / 국민건강보험) | YES -- mandatory for all residents | Full contribution (income + property based) |
-| Long-Term Care Insurance (장기요양보험) | YES -- mandatory (add-on to NHIS) | Percentage of NHIS premium |
-| Employment Insurance (고용보험) | NO -- not applicable (voluntary opt-in available) | N/A unless voluntarily enrolled |
-| Industrial Accident Insurance (산재보험) | NO -- not applicable for most self-employed | N/A (some high-risk occupations may opt in) |
+**R-KR-SI-3 -- Arrears disputes.** Trigger: client disputes accumulated NPS or NHIS arrears. Message: "Arrears disputes require direct engagement with NPS or NHIS. This skill cannot advise on dispute resolution. Please escalate to a licensed Korean practitioner."
 
 ---
 
-## Step 2: National Pension (NPS) [T1]
+## Section 3 -- Payment pattern library
 
-**Legislation:** National Pension Act (국민연금법)
+This is the deterministic pre-classifier for bank statement entries related to social insurance. Match by case-insensitive substring on the counterparty name or transaction description.
 
-### Rate
+### 3.1 National Pension (NPS) debits
 
-| Item | 2025 Rate |
-|------|-----------|
-| Total contribution rate | 9.0% of monthly income |
-| Employee share (if employed) | 4.5% |
-| Employer share (if employed) | 4.5% |
-| **Self-employed share** | **9.0% (full amount, no employer)** |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| NPS, NATIONAL PENSION, 국민연금 | NPS CONTRIBUTION | Monthly contribution -- due by 10th of following month |
+| 국민연금공단, PENSION SERVICE | NPS CONTRIBUTION | Same |
+| NPS REFUND, 연금환급 | NPS REFUND | Overpayment refund or exemption-related |
 
-**From 2026:** The NPS contribution rate will increase to 9.5%, rising by 0.5% per year until reaching 13.0% in 2033 under the pension reform enacted in 2025.
+### 3.2 National Health Insurance (NHIS) debits
 
-### Income Ceiling and Floor
+| Pattern | Treatment | Notes |
+|---|---|---|
+| NHIS, 국민건강보험, 건강보험공단 | NHIS + LTCI PREMIUM | Monthly premium -- due by 25th of month (community insured) |
+| HEALTH INSURANCE, 건강보험료 | NHIS PREMIUM | Same |
+| 장기요양, LONG-TERM CARE | LTCI COMPONENT | Automatically included in NHIS billing |
 
-The NPS contribution base has upper and lower limits, adjusted annually every July:
+### 3.3 Employment Insurance (voluntary -- rare for self-employed)
 
-| Period | Monthly Income Floor | Monthly Income Ceiling |
-|--------|---------------------|----------------------|
-| Jan 2025 -- Jun 2025 | KRW 390,000 | KRW 6,170,000 |
-| Jul 2025 -- Jun 2026 | KRW 400,000 | KRW 6,370,000 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 고용보험, EMPLOYMENT INSURANCE | VOLUNTARY EI PREMIUM | Only if self-employed person has voluntarily enrolled |
+| 근로복지공단 | EI or INDUSTRIAL ACCIDENT | Verify which insurance -- could be either |
 
-### Contribution Calculation
+### 3.4 Tax authority (income reporting triggers)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| NTS, 국세청, NATIONAL TAX SERVICE | TAX PAYMENT | Income tax payment; NPS/NHIS adjust based on NTS data |
+| HOMETAX, 홈택스 | TAX FILING | Filing portal -- triggers income data cross-reference |
+
+---
+
+## Section 4 -- NPS computation rules
+
+### 4.1 NPS eligibility (Tier 1)
+
+Legislation: National Pension Act
+
+Self-employed pay the full 9%. There is no employer to share the burden. Income is self-reported to NPS. NPS may adjust based on tax return data.
+
+Ages 18 to 59 are mandatory. Persons aged 60-64 may voluntarily continue. Exemptions (for no income, students, military) must be applied for -- they are not automatic.
+
+### 4.2 NPS computation (Tier 1)
 
 ```
 Monthly NPS = clamp(reported_monthly_income, floor, ceiling) x 9%
 ```
 
 | Example Monthly Income | Period | NPS Base | Monthly NPS |
-|-----------------------|--------|----------|-------------|
-| KRW 3,000,000 | Jul 2025 | KRW 3,000,000 | KRW 270,000 |
-| KRW 8,000,000 | Jul 2025 | KRW 6,370,000 (capped) | KRW 573,300 |
-| KRW 300,000 | Jul 2025 | KRW 400,000 (floor) | KRW 36,000 |
+|---|---|---|---|
+| KRW 3,000,000 | Jul 2025+ | KRW 3,000,000 | KRW 270,000 |
+| KRW 8,000,000 | Jul 2025+ | KRW 6,370,000 (capped) | KRW 573,300 |
+| KRW 300,000 | Jul 2025+ | KRW 400,000 (floor) | KRW 36,000 |
 
-### Key Rules
+### 4.3 NHIS computation -- community insured (Tier 2)
 
-1. **Self-employed pay the full 9%.** There is no employer to share the burden.
-2. **Income is self-reported** to NPS. NPS may adjust based on tax return data.
-3. **Ages 18 to 59 are mandatory.** Persons aged 60-64 may voluntarily continue (임의계속가입).
-4. **Exemptions:** Persons with no income, students, and military service members may apply for contribution exemption (납부예외). The exemption must be applied for -- it is not automatic.
+Legislation: National Health Insurance Act
 
----
-
-## Step 3: National Health Insurance (NHIS) [T1/T2]
-
-**Legislation:** National Health Insurance Act (국민건강보험법)
-
-### Classification
-
-| Category | Korean Term | Who |
-|----------|------------|-----|
-| Workplace insured | 직장가입자 | Employees and their dependants |
-| Community insured | 지역가입자 | Self-employed, freelancers, and others not covered by workplace insurance |
-
-**Self-employed persons are classified as community insured (지역가입자).** Their NHIS premium is calculated differently from employees.
-
-### NHIS Rate for 2025
-
-| Item | 2025 Rate |
-|------|-----------|
-| NHIS premium rate (nominal) | 7.09% |
-| Employee share (if employed) | 3.545% |
-| Employer share (if employed) | 3.545% |
-
-### Self-Employed (Community Insured) Calculation [T2]
-
-For self-employed persons, NHIS contributions are NOT a simple percentage of income. The calculation is based on:
-
-1. **Income score** -- derived from reported income (근로소득, 사업소득, 이자/배당소득, etc.)
-2. **Property score** -- derived from property ownership (real estate, vehicles)
-3. **Vehicle score** -- derived from vehicle value and age
+For self-employed (community insured), NHIS is NOT a simple percentage of income:
 
 ```
 Monthly NHIS Premium = (Income Score + Property Score + Vehicle Score) x Point Value per Score
 ```
 
-| Item | 2025 Value |
-|------|-----------|
-| Point value per score (부과점수당 금액) | KRW 211.5 |
+Point value per score (2025): KRW 211.5
 
-**Since September 2022**, the self-employed calculation has been reformed to weight income more heavily (income-based portion increased, property-based portion reduced). However, property and vehicles still factor into the calculation.
+Since September 2022, income is weighted more heavily (property-based portion reduced). However, property and vehicles still factor in. The exact NHIS premium cannot be computed without knowing income, property, and vehicle details. Flag for reviewer or direct client to the NHIS premium calculator.
 
-**[T2] The exact NHIS premium for a self-employed person cannot be computed without knowing income, property, and vehicle details. Flag for reviewer or direct the client to the NHIS premium calculator.**
-
-### NHIS Floor and Cap
-
-| Item | Amount |
-|------|--------|
-| Monthly minimum premium | Approximately KRW 19,780 (2025) |
-| Monthly maximum premium | Adjusted annually; approximately KRW 4,240,710 (2025, verify with NHIS) |
-
----
-
-## Step 4: Long-Term Care Insurance [T1]
-
-**Legislation:** Long-Term Care Insurance Act (노인장기요양보험법)
-
-Long-Term Care Insurance (LTCI) is not a separate enrolment -- it is automatically calculated as a percentage of the NHIS premium.
-
-| Item | 2025 Rate |
-|------|-----------|
-| LTCI rate (as % of NHIS premium) | 12.95% |
-
-### Calculation
+### 4.4 LTCI computation (Tier 1)
 
 ```
 Monthly LTCI = NHIS Premium x 12.95%
 ```
 
-### Example
-
-| NHIS Premium | LTCI (12.95%) | Total Health + LTCI |
-|-------------|---------------|---------------------|
-| KRW 200,000 | KRW 25,900 | KRW 225,900 |
-| KRW 500,000 | KRW 64,750 | KRW 564,750 |
-
-**From 2026:** The LTCI rate increases to 13.14% of NHIS premium.
+LTCI is automatically calculated as a percentage of the NHIS premium. Not a separate enrolment.
 
 ---
 
-## Step 5: Employment Insurance [T1]
+## Section 5 -- Payment schedule and income reporting
 
-**Legislation:** Employment Insurance Act (고용보험법)
+### 5.1 Payment schedule (Tier 1)
 
-| Item | Detail |
-|------|--------|
-| Mandatory for self-employed? | NO |
-| Voluntary enrolment available? | YES -- self-employed persons may opt in (자영업자 고용보험) |
-| Eligibility for voluntary enrolment | Self-employed persons with at least 1 employee, or certain solo self-employed categories |
-| Voluntary rate | Varies by selected insured income grade (7 grades available) |
-| Benefits if enrolled | Unemployment benefits (실업급여) if business closes |
+NPS: Monthly, due by 10th of following month. Bank transfer, auto-debit, or at designated banks/post offices.
 
-**Default position: self-employed persons are NOT covered by employment insurance unless they voluntarily enrol.**
+NHIS + LTCI: Monthly, due by 25th of each month (community insured). Bank transfer, auto-debit, credit card, or at designated locations.
 
----
+If the due date falls on a weekend or public holiday, payment is due by the next business day.
 
-## Step 6: Industrial Accident Insurance [T1]
+### 5.2 Income reporting and adjustment (Tier 1)
 
-**Legislation:** Industrial Accident Compensation Insurance Act (산업재해보상보험법)
+NPS: Self-employed report monthly income when first registering. NPS adjusts every July based on prior year tax return. Voluntary adjustment requests accepted at any time.
 
-| Item | Detail |
-|------|--------|
-| Mandatory for self-employed? | NO (mandatory only for employers with employees) |
-| Voluntary enrolment available? | YES -- for certain high-risk self-employed occupations (특수형태근로종사자 or solo operators in designated industries) |
-| Common voluntary categories | Construction, transportation, delivery, insurance sales agents |
-
-**Default position: most self-employed persons are NOT covered by industrial accident insurance.**
+NHIS: Adjusted annually based on income and property data from NTS and local government. Effective date typically November. Appeals within 90 days.
 
 ---
 
-## Step 7: Payment Schedule [T1]
+## Section 6 -- Tax deductibility and employment/accident insurance
 
-**Legislation:** National Pension Act; National Health Insurance Act
+### 6.1 Tax deductibility (Tier 1)
 
-### NPS Payment
+Legislation: Income Tax Act
 
-| Item | Detail |
-|------|--------|
-| Frequency | Monthly |
-| Due date | **10th of the following month** (e.g., January contribution due by 10 February) |
-| Payment method | Bank transfer, auto-debit, or at designated banks/post offices |
-| Grace period | None -- contributions are delinquent after the 10th |
+NPS: income deduction -- the full amount paid is deducted from gross income before tax calculation. More valuable for higher-income earners.
 
-### NHIS + LTCI Payment
+NHIS + LTCI: itemized deduction (tax credit) -- 12% of premiums paid is credited against tax liability. Benefits all income levels equally.
 
-| Item | Detail |
-|------|--------|
-| Frequency | Monthly |
-| Due date | **25th of each month** (for community insured / self-employed) |
-| Payment method | Bank transfer, auto-debit, credit card, or at designated locations |
+### 6.2 Employment Insurance (Tier 1)
 
-**If the due date falls on a weekend or public holiday, payment is due by the next business day.**
+Not mandatory for self-employed. Voluntary enrolment available for self-employed with at least 1 employee or certain solo categories. Benefits include unemployment payments if business closes. Rate varies by selected insured income grade (7 grades).
+
+### 6.3 Industrial Accident Insurance (Tier 1)
+
+Not mandatory for most self-employed. Voluntary enrolment for certain high-risk occupations (construction, transportation, delivery, insurance sales).
 
 ---
 
-## Step 8: Income Reporting and Adjustment [T1]
+## Section 7 -- Edge case registry
 
-### NPS Income Reporting
+### EC1 -- Dual status: employed and self-employed (Tier 2)
+Situation: Client is employed full-time and also has self-employment income.
+Resolution: NPS: No additional NPS on self-employment income if already paying as workplace insured. NHIS: Additional NHIS premium may be assessed on self-employment income exceeding KRW 20 million/year. Flag for reviewer.
 
-| Item | Detail |
-|------|--------|
-| Initial report | Self-employed report their monthly income when first registering with NPS |
-| Annual adjustment | NPS adjusts contribution base every July based on reported income from the prior year's tax return |
-| Voluntary adjustment | Self-employed may request an income change at any time if circumstances change (income increase or decrease) |
-| Verification | NPS cross-references with National Tax Service (NTS / 국세청) data from tax returns |
+### EC2 -- Self-employed with zero or very low income (Tier 1)
+Situation: Client registered as self-employed but has no income or income below the NPS floor.
+Resolution: NPS: May apply for contribution exemption due to no income. Not automatic -- must be applied for. NHIS: Minimum premium of approximately KRW 19,780/month still applies.
 
-### NHIS Income Reporting
+### EC3 -- Turning 60 during the year (Tier 1)
+Situation: Client turns 60.
+Resolution: NPS contributions cease from the month after turning 60. Client may opt for voluntary continued enrolment until age 65. NHIS and LTCI continue -- no age limit.
 
-| Item | Detail |
-|------|--------|
-| Annual adjustment | NHIS adjusts premiums annually based on income and property data from NTS and local government records |
-| Notification | NHIS sends a premium adjustment notice; effective date is typically November of each year |
-| Appeal | Self-employed may appeal premium adjustments within 90 days |
+### EC4 -- Newly registered self-employed (Tier 1)
+Situation: Client just registered with no prior tax return.
+Resolution: NPS: Client self-reports expected monthly income. NPS may accept declared amount until first tax return. NHIS: Initial premium assessed on available data; adjusted after first tax filing.
 
----
+### EC5 -- Foreign national self-employed in Korea (Tier 2)
+Situation: Client is a foreign national operating as self-employed.
+Resolution: NPS: Mandatory for nationals from countries with reciprocal agreements. Others may be exempt or contribute without benefits. NHIS: Mandatory for all foreign residents staying 6+ months. Flag for reviewer -- check bilateral agreement.
 
-## Step 9: Tax Deductibility [T1]
+### EC6 -- Self-employed with employees (Tier 1)
+Situation: Client employs staff.
+Resolution: The client's own contributions follow self-employed rules (this skill). For employees, the client must register as a workplace and pay employer shares -- separate obligation outside this skill.
 
-**Legislation:** Income Tax Act (소득세법)
+### EC7 -- NPS ceiling adjustment mid-year (July) (Tier 1)
+Situation: Client's income exceeds NPS ceiling, and ceiling changes in July.
+Resolution: January-June uses pre-July ceiling. From July, new ceiling applies. NPS adjusts automatically.
 
-| Contribution | Tax Treatment |
-|-------------|---------------|
-| National Pension (NPS) | **Income deduction (소득공제)** -- deducted from gross income before tax calculation. The full amount of NPS contributions paid is deductible. |
-| National Health Insurance (NHIS) | **Itemized deduction (특별세액공제 / 보험료 세액공제)** -- 12% of NHIS + LTCI premiums paid is credited against tax liability (not deducted from income). |
-| Long-Term Care Insurance | Combined with NHIS for the 12% tax credit calculation. |
-| Employment Insurance (if voluntarily enrolled) | Treated same as NHIS -- 12% tax credit. |
-
-### Key Distinction
-
-- **NPS = income deduction (reduces taxable income directly).** This is more valuable for higher-income earners.
-- **NHIS/LTCI = tax credit (reduces tax payable by 12% of premiums paid).** This benefits all income levels equally.
-
-### Example
-
-| Item | Amount | Tax Benefit |
-|------|--------|-------------|
-| NPS paid | KRW 3,240,000/year | Reduces taxable income by KRW 3,240,000 |
-| NHIS + LTCI paid | KRW 2,400,000/year | Tax credit = KRW 2,400,000 x 12% = KRW 288,000 |
+### EC8 -- NHIS premium dispute (Tier 2)
+Situation: Client believes NHIS premium is too high.
+Resolution: May request adjustment by submitting updated income documentation to NHIS. Appeals within 90 days of premium notice. Flag for reviewer.
 
 ---
 
-## Step 10: Edge Case Registry
+## Section 8 -- Reviewer escalation protocol
 
-### EC1 -- Dual status: employed and self-employed [T2]
-**Situation:** Client is employed full-time (workplace insured) and also has self-employment income.
-**Resolution:** NPS: No additional NPS on self-employment income if already paying NPS as an employee (workplace insured takes precedence). NHIS: Additional NHIS premium may be assessed on self-employment income exceeding KRW 20 million/year. [T2] flag for reviewer to verify NHIS supplementary premium rules.
-
-### EC2 -- Self-employed with zero or very low income [T1]
-**Situation:** Client registered as self-employed but has no income or income below the NPS floor.
-**Resolution:** NPS: May apply for contribution exemption (납부예외) due to no income. The exemption is not automatic -- must be applied for. NHIS: Minimum premium of approximately KRW 19,780/month still applies.
-
-### EC3 -- Turning 60 during the year [T1]
-**Situation:** Client turns 60, which is the NPS mandatory upper age limit.
-**Resolution:** NPS contributions cease from the month after turning 60. Client may opt for voluntary continued enrolment (임의계속가입) until age 65. NHIS and LTCI continue -- there is no age limit for health insurance.
-
-### EC4 -- Newly registered self-employed [T1]
-**Situation:** Client just registered as a self-employed person and has no prior tax return.
-**Resolution:** NPS: Client self-reports expected monthly income. NPS may accept the declared amount until the first tax return is available for verification. NHIS: Initial premium is assessed based on available data; may be adjusted after first tax filing.
-
-### EC5 -- Foreign national self-employed in Korea [T2]
-**Situation:** Client is a foreign national operating as self-employed in South Korea.
-**Resolution:** NPS: Mandatory for foreign nationals from countries with reciprocal social security agreements. Nationals from countries without agreements may be exempt or may contribute without pension benefits. NHIS: Mandatory for all foreign residents staying 6+ months. [T2] flag for reviewer -- check the specific bilateral agreement.
-
-### EC6 -- Self-employed with employees [T1]
-**Situation:** Client is a self-employed person who also employs staff.
-**Resolution:** The client's own contributions follow self-employed rules (this skill). For employees, the client must register as a workplace and pay employer shares of all 4 insurances for the employees. This is a separate obligation outside the scope of this skill.
-
-### EC7 -- NPS ceiling adjustment mid-year (July) [T1]
-**Situation:** Client's income exceeds the NPS ceiling, and the ceiling changes in July.
-**Resolution:** NPS contributions for January-June use the pre-July ceiling. From July onward, the new ceiling applies. The transition is automatic -- NPS adjusts the contribution notice.
-
-### EC8 -- NHIS premium dispute [T2]
-**Situation:** Client believes their NHIS premium is too high relative to actual income.
-**Resolution:** Self-employed may request a premium adjustment by submitting updated income documentation to NHIS. Appeals must be filed within 90 days of the premium notice. [T2] flag for reviewer.
-
----
-
-## Step 11: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+When a Tier 2 situation is identified:
 
 ```
 REVIEWER FLAG
@@ -333,10 +272,10 @@ Situation: [description]
 Issue: [what is ambiguous]
 Options: [possible treatments]
 Recommended: [most likely correct treatment and why]
-Action Required: Licensed Korean practitioner (세무사/공인회계사) must confirm before advising client.
+Action Required: Licensed Korean practitioner must confirm before advising client.
 ```
 
-When Claude identifies a [T3] situation:
+When a Tier 3 situation is identified:
 
 ```
 ESCALATION REQUIRED
@@ -349,58 +288,58 @@ Action Required: Do not advise. Refer to licensed Korean practitioner. Document 
 
 ---
 
-## Step 12: Test Suite
+## Section 9 -- Test suite
 
 ### Test 1 -- Standard self-employed, income KRW 3,000,000/month
-**Input:** Age 35, monthly income KRW 3,000,000, period Jul 2025+.
-**Expected output:** NPS = KRW 3,000,000 x 9% = KRW 270,000/month. NHIS = computed via point system (requires property/vehicle data -- flag [T2]). LTCI = NHIS premium x 12.95%.
+Input: Age 35, monthly income KRW 3,000,000, period Jul 2025+.
+Expected output: NPS = KRW 3,000,000 x 9% = KRW 270,000/month. NHIS = requires property/vehicle data (flag Tier 2). LTCI = NHIS premium x 12.95%.
 
 ### Test 2 -- Income above NPS ceiling
-**Input:** Age 40, monthly income KRW 8,000,000, period Jul 2025+.
-**Expected output:** NPS base capped at KRW 6,370,000. NPS = KRW 6,370,000 x 9% = KRW 573,300/month.
+Input: Age 40, monthly income KRW 8,000,000, period Jul 2025+.
+Expected output: NPS base capped at KRW 6,370,000. NPS = KRW 573,300/month.
 
 ### Test 3 -- Income below NPS floor
-**Input:** Age 25, monthly income KRW 300,000, period Jul 2025+.
-**Expected output:** NPS base raised to floor KRW 400,000. NPS = KRW 400,000 x 9% = KRW 36,000/month. Alternatively, client may apply for contribution exemption if no assessable income.
+Input: Age 25, monthly income KRW 300,000, period Jul 2025+.
+Expected output: NPS base raised to floor KRW 400,000. NPS = KRW 36,000/month. Client may apply for exemption.
 
 ### Test 4 -- Age 60, NPS cessation
-**Input:** Age 60 (turned 60 in March 2025), monthly income KRW 4,000,000.
-**Expected output:** NPS contributions cease from April 2025 (month after turning 60). Client may opt for voluntary continued enrolment. NHIS and LTCI continue unchanged.
+Input: Age 60 (turned 60 in March 2025), monthly income KRW 4,000,000.
+Expected output: NPS contributions cease from April 2025. Voluntary continued enrolment available. NHIS and LTCI continue.
 
 ### Test 5 -- Tax deductibility calculation
-**Input:** Annual NPS paid = KRW 3,240,000. Annual NHIS + LTCI paid = KRW 2,400,000.
-**Expected output:** NPS: income deduction of KRW 3,240,000 (reduces taxable income). NHIS + LTCI: tax credit of KRW 288,000 (= KRW 2,400,000 x 12%).
+Input: Annual NPS paid = KRW 3,240,000. Annual NHIS + LTCI paid = KRW 2,400,000.
+Expected output: NPS: income deduction of KRW 3,240,000. NHIS + LTCI: tax credit of KRW 288,000 (= KRW 2,400,000 x 12%).
 
 ### Test 6 -- Employment insurance voluntary enrolment
-**Input:** Self-employed person with 3 employees wants to know about unemployment coverage.
-**Expected output:** Eligible for voluntary employment insurance. Not mandatory. If enrolled, benefits include unemployment payments if business closes. Contributions based on selected income grade.
+Input: Self-employed with 3 employees wants unemployment coverage.
+Expected output: Eligible for voluntary employment insurance. Not mandatory. Benefits include unemployment payments if business closes.
 
 ### Test 7 -- NPS ceiling transition (Jan-Jun vs Jul-Dec)
-**Input:** Age 45, monthly income KRW 6,300,000, full year 2025.
-**Expected output:** Jan-Jun: NPS base = KRW 6,170,000 (capped at pre-July ceiling). NPS = KRW 555,300/month. Jul-Dec: NPS base = KRW 6,300,000 (below new ceiling of KRW 6,370,000). NPS = KRW 567,000/month.
+Input: Age 45, monthly income KRW 6,300,000, full year 2025.
+Expected output: Jan-Jun: NPS base = KRW 6,170,000 (capped). NPS = KRW 555,300/month. Jul-Dec: NPS base = KRW 6,300,000 (below new ceiling). NPS = KRW 567,000/month.
 
 ### Test 8 -- LTCI computation
-**Input:** NHIS monthly premium = KRW 350,000.
-**Expected output:** LTCI = KRW 350,000 x 12.95% = KRW 45,325/month. Total health insurance burden = KRW 395,325/month.
+Input: NHIS monthly premium = KRW 350,000.
+Expected output: LTCI = KRW 350,000 x 12.95% = KRW 45,325/month. Total health insurance = KRW 395,325/month.
 
 ---
 
-## PROHIBITIONS
+## Section 10 -- Prohibitions and disclaimer
+
+### Prohibitions
 
 - NEVER compute NPS without knowing the client's monthly reported income
 - NEVER apply the employee NPS rate (4.5%) to a self-employed person -- self-employed pay the full 9%
 - NEVER compute NHIS for a self-employed person using only the 7.09% rate -- the community insured calculation requires income, property, and vehicle data
 - NEVER tell a client that employment insurance or industrial accident insurance is mandatory for self-employed -- it is voluntary (with limited exceptions)
 - NEVER ignore the NPS ceiling change that occurs every July
-- NEVER conflate NPS income deduction with NHIS/LTCI tax credit -- they are different tax mechanisms
+- NEVER conflate NPS income deduction with NHIS/LTCI tax credit -- they are different mechanisms
 - NEVER assume NPS contribution exemption is automatic -- it must be applied for
-- NEVER advise on bilateral social security agreements without [T2] reviewer confirmation
-- NEVER present social insurance figures as definitive -- always label as estimated and direct client to their NPS/NHIS notices for confirmation
+- NEVER advise on bilateral social security agreements without reviewer confirmation
+- NEVER present social insurance figures as definitive -- always label as estimated and direct client to NPS/NHIS notices
 - NEVER compute arrears or penalties without escalating to a licensed practitioner
 
----
-
-## Disclaimer
+### Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 

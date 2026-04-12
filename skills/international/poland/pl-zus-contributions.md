@@ -1,164 +1,121 @@
 ---
 name: pl-zus-contributions
 description: Use this skill whenever asked about Polish ZUS (Zakład Ubezpieczeń Społecznych) social contributions for self-employed individuals. Trigger on phrases like "ZUS contributions", "składki ZUS", "Polish social insurance", "Mały ZUS Plus", "self-employed Poland contributions", "działalność gospodarcza ZUS", or any question about social/health insurance obligations for a self-employed client in Poland. Covers retirement 19.52%, disability 8%, sickness 2.45%, health 9%, and Mały ZUS Plus. ALWAYS read this skill before touching any Poland social contributions work.
+version: 2.0
 ---
 
-# Poland ZUS Contributions -- Self-Employed Skill
+# Poland ZUS Contributions -- Self-Employed Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 -- Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Poland |
-| Jurisdiction Code | PL |
-| Primary Legislation | Ustawa o systemie ubezpieczeń społecznych (Social Insurance System Act, 13 Oct 1998) |
-| Supporting Legislation | Ustawa o świadczeniach opieki zdrowotnej (Health Insurance Act); Ustawa Prawo przedsiębiorców |
-| Tax Authority | ZUS (Zakład Ubezpieczeń Społecznych) |
+|---|---|
+| Country | Poland (Republic of Poland) |
+| Authority | ZUS (Zakład Ubezpieczeń Społecznych) |
+| Primary legislation | Ustawa o systemie ubezpieczeń społecznych (13 Oct 1998) |
+| Supporting legislation | Health Insurance Act; Prawo przedsiębiorców |
+| Standard social base (2025) | 60% avg forecasted wage = PLN 4,694.40/month |
+| Total social rate (with sickness) | 31.64% |
+| Fundusz Pracy | 2.45% (when base >= min wage) |
+| Health rate (PIT-36) | 9% of actual income |
+| Health rate (PIT-36L) | 4.9% of actual income |
+| Health rate (PIT-28 ryczałt) | 9% on fixed bracket base |
+| DRA filing deadline | 20th of following month |
+| Currency | PLN only |
 | Contributor | Open Accountants |
-| Validated By | Pending -- requires validation by Polish doradca podatkowy |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
+| Validated by | Pending -- requires validation by Polish doradca podatkowy |
+| Validation date | Pending |
+
+**Four contribution tiers:**
+
+| Tier | Who | Social base |
+|---|---|---|
+| Ulga na start | First 6 months | No social (health only) |
+| Preferencyjne | Months 7-30 | 30% of min wage (PLN 1,399.80) |
+| Mały ZUS Plus | Revenue < PLN 120,000 prior year | Income-based (clamped) |
+| Standard (Duży ZUS) | All others | 60% avg wage (PLN 4,694.40) |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+### Required inputs
 
----
+Before computing, you MUST obtain:
 
-## Step 0: Client Onboarding Questions
-
-Before computing, you MUST know:
-
-1. **Business registration** [T1] -- registered działalność gospodarcza (sole proprietorship)?
-2. **Months in business** [T1] -- first 6 months? (Ulga na start) First 24 months after Ulga? (Preferencyjne ZUS)
-3. **Prior-year revenue** [T1] -- determines eligibility for Mały ZUS Plus
-4. **Health insurance basis** [T1] -- which tax form? (PIT-36, PIT-36L, PIT-28?)
-5. **Voluntary sickness insurance?** [T1] -- chorobowe is optional for self-employed
-6. **Any concurrent employment?** [T1] -- may exempt from certain ZUS obligations
+1. **Business registration** -- registered działalność gospodarcza?
+2. **Months in business** -- first 6 months (Ulga na start)? First 24 months after Ulga (Preferencyjne)?
+3. **Prior-year revenue** -- determines Mały ZUS Plus eligibility
+4. **Health insurance basis** -- which tax form (PIT-36, PIT-36L, PIT-28)?
+5. **Voluntary sickness insurance?** -- chorobowe is optional
+6. **Any concurrent employment?** -- may exempt from certain ZUS obligations
 
 **If months in business is unknown, STOP. Different regimes apply based on tenure.**
 
+### Refusal catalogue
+
+**R-PL-ZUS-1 -- Cross-border EU worker.** Trigger: client works in Poland and another EU state. Message: "EU Regulation 883/2004 applies. A1 certificate required. Escalate to reviewer."
+
+### Prohibitions
+
+- NEVER compute health insurance without knowing the tax form -- rates differ between PIT-36, PIT-36L, and PIT-28
+- NEVER apply Ulga na start or Preferencyjne to clients providing services to their former employer
+- NEVER forget that sickness insurance (chorobowe) is VOLUNTARY for self-employed
+- NEVER ignore the 36/60 month limit on Mały ZUS Plus usage
+- NEVER state health contributions are fully tax-deductible -- deductibility depends on tax form
+- NEVER apply Fundusz Pracy when the contribution base is below the minimum wage
+- NEVER double social contributions for clients with multiple businesses
+- NEVER present Ulga na start as risk-free -- the client has NO social coverage during this period
+
 ---
 
-## Step 1: ZUS Contribution Tiers [T1]
-
-**Legislation:** Art. 18a, 18c Ustawy o sus
-
-Poland has FOUR contribution tiers for self-employed:
-
-| Tier | Who | Social Contribution Base |
-|------|-----|------------------------|
-| 1. Ulga na start | First 6 months of activity | NO social contributions (only health) |
-| 2. Preferencyjne ZUS | Months 7-30 (24 months after Ulga) | 30% of minimum wage |
-| 3. Mały ZUS Plus | Revenue < PLN 120,000 in prior year + conditions | Based on prior-year income |
-| 4. Standard (Duży ZUS) | All others | 60% of average forecasted wage |
-
----
-
-## Step 2: Standard ZUS Rates (Duży ZUS, 2025) [T1]
+## Section 3 -- Social insurance rates (2025)
 
 **Legislation:** Art. 22 Ustawy o sus
 
-### Social Insurance Contributions
+### Standard (Duży ZUS) rates
 
-| Component | Rate | Base: 60% avg wage = PLN 4,694.40/month (2025) | Monthly Amount |
-|-----------|------|------------------------------------------------|----------------|
-| Retirement (emerytalne) | 19.52% | PLN 4,694.40 | PLN 916.35 |
-| Disability (rentowe) | 8.00% | PLN 4,694.40 | PLN 375.55 |
-| Sickness (chorobowe) -- voluntary | 2.45% | PLN 4,694.40 | PLN 115.01 |
-| Accident (wypadkowe) | 1.67% | PLN 4,694.40 | PLN 78.40 |
-| **Total social (with sickness)** | **31.64%** | | **PLN 1,485.31** |
-| **Total social (without sickness)** | **29.19%** | | **PLN 1,370.30** |
-
-### Labour Fund (Fundusz Pracy)
-
-| Component | Rate | Monthly |
-|-----------|------|---------|
+| Component | Rate | Monthly (base PLN 4,694.40) |
+|---|---|---|
+| Retirement (emerytalne) | 19.52% | PLN 916.35 |
+| Disability (rentowe) | 8.00% | PLN 375.55 |
+| Sickness (chorobowe) -- voluntary | 2.45% | PLN 115.01 |
+| Accident (wypadkowe) | 1.67% | PLN 78.40 |
+| **Total social (with sickness)** | **31.64%** | **PLN 1,485.31** |
+| **Total social (without sickness)** | **29.19%** | **PLN 1,370.30** |
 | Fundusz Pracy | 2.45% | PLN 115.01 |
 
-Labour Fund is due when the contribution base exceeds the minimum wage.
-
-### Health Insurance (Składka zdrowotna)
-
-Health insurance rate and base depend on the tax form:
-
-| Tax Form | Health Rate | Base |
-|----------|------------|------|
-| PIT-36 (tax scale, 12%/32%) | 9% | Actual monthly income (min = 75% of min wage) |
-| PIT-36L (flat tax 19%) | 4.9% | Actual monthly income (min = 75% of min wage) |
-| PIT-28 (ryczałt, lump-sum) | 9% | Fixed base by revenue bracket |
-
-### Health Insurance -- Ryczałt Brackets (2025)
-
-| Annual Revenue | Monthly Health Base | Monthly Health (9%) |
-|----------------|--------------------|--------------------|
-| Up to PLN 60,000 | 60% of avg wage | PLN 461.66 |
-| PLN 60,001 -- 300,000 | 100% of avg wage | PLN 769.43 |
-| Above PLN 300,000 | 180% of avg wage | PLN 1,384.97 |
-
----
-
-## Step 3: Preferential ZUS (Months 7-30) [T1]
-
-**Legislation:** Art. 18a Ustawy o sus
+### Preferencyjne ZUS (months 7-30)
 
 | Parameter | Value (2025) |
-|-----------|-------------|
+|---|---|
 | Base | 30% of minimum wage = PLN 1,399.80/month |
-| Retirement (19.52%) | PLN 273.24 |
-| Disability (8.00%) | PLN 111.98 |
-| Sickness (2.45%) | PLN 34.30 |
-| Accident (1.67%) | PLN 23.38 |
-| **Total social** | **PLN 442.90** |
-| Fundusz Pracy | NOT required (base below minimum wage) |
-| Health insurance | Separately at standard health rates |
+| Total social (with sickness) | PLN 442.90 |
+| Fundusz Pracy | NOT required (base below min wage) |
 
 ---
 
-## Step 4: Mały ZUS Plus [T1]
+## Section 4 -- Health insurance rates (2025)
 
-**Legislation:** Art. 18c Ustawy o sus
+| Tax form | Health rate | Base |
+|---|---|---|
+| PIT-36 (tax scale) | 9% | Actual monthly income (min 75% of min wage) |
+| PIT-36L (flat 19%) | 4.9% | Actual monthly income (min 75% of min wage) |
+| PIT-28 (ryczałt) | 9% | Fixed base by revenue bracket |
 
-### Eligibility
+### Ryczałt health brackets
 
-- Revenue in prior year < PLN 120,000
-- Activity for at least 60 days in prior year
-- Not providing services to former employer
-- Not used Mały ZUS Plus for 36 of last 60 months
-
-### Base Calculation
-
-```
-annual_income = prior_year_income (profit, not revenue)
-daily_base = annual_income × 30 / number_of_days_of_activity
-monthly_base = daily_base × 30
-monthly_base = clamp(30% of min_wage, monthly_base, 60% of avg_wage)
-```
-
-The base cannot be below Preferencyjne level (30% of min wage) or above Standard level (60% of avg wage).
+| Annual revenue | Monthly health (9%) |
+|---|---|
+| Up to PLN 60,000 | PLN 461.66 |
+| PLN 60,001 -- 300,000 | PLN 769.43 |
+| Above PLN 300,000 | PLN 1,384.97 |
 
 ---
 
-## Step 5: Ulga na Start (First 6 Months) [T1]
+## Section 5 -- Computation steps
 
-**Legislation:** Art. 18 Prawo przedsiębiorców
-
-- NO social insurance contributions for first 6 full calendar months
-- Health insurance is still mandatory
-- Client has no pension/disability/sickness coverage during this period
-- Optional: client can voluntarily pay social contributions
-
----
-
-## Step 6: Computation Steps [T1]
-
-### Step 6.1 -- Determine tier
+### Step 5.1 -- Determine tier
 
 ```
 IF months_in_business <= 6 AND ulga_na_start_used:
@@ -171,142 +128,160 @@ ELSE:
     tier = "standard"
 ```
 
-### Step 6.2 -- Calculate social contributions
+### Step 5.2 -- Calculate social contributions
 
 ```
 social_base = base_for_tier
-retirement = social_base × 19.52%
-disability = social_base × 8.00%
-sickness = social_base × 2.45%  # if opted in
-accident = social_base × 1.67%
-fundusz_pracy = social_base × 2.45%  # only if base >= minimum wage
+retirement = social_base x 19.52%
+disability = social_base x 8.00%
+sickness = social_base x 2.45%  (if opted in)
+accident = social_base x 1.67%
+fundusz_pracy = social_base x 2.45%  (only if base >= minimum wage)
 total_social = retirement + disability + sickness + accident + fundusz_pracy
 ```
 
-### Step 6.3 -- Calculate health insurance
+### Step 5.3 -- Calculate health insurance
 
 ```
 IF tax_form == "PIT-36":
     health_base = max(actual_monthly_income, 75% of min_wage)
-    health = health_base × 9%
+    health = health_base x 9%
 ELIF tax_form == "PIT-36L":
     health_base = max(actual_monthly_income, 75% of min_wage)
-    health = health_base × 4.9%
+    health = health_base x 4.9%
 ELIF tax_form == "PIT-28":
-    health = ryczałt_bracket_amount  # from bracket table
+    health = ryczałt_bracket_amount
 ```
 
-### Step 6.4 -- Total monthly ZUS
+### Step 5.4 -- Mały ZUS Plus base
 
 ```
-total_monthly = total_social + health
+annual_income = prior_year_income (profit, not revenue)
+daily_base = annual_income x 30 / number_of_days_of_activity
+monthly_base = daily_base x 30
+monthly_base = clamp(30% of min_wage, monthly_base, 60% of avg_wage)
 ```
 
 ---
 
-## Step 7: Payment Schedule [T1]
+## Section 6 -- Payment schedule and tax deductibility
 
-| Obligation | Due Date |
-|------------|----------|
+### Payment schedule
+
+| Obligation | Due date |
+|---|---|
 | Monthly ZUS declaration (DRA) | 20th of the following month |
 | Payment of contributions | 20th of the following month |
 
-- Payments via transfer to individual NRS (Numer Rachunku Składkowego) account
-- Late payment: interest at 200% of Lombard rate / 365 x days late
-- DRA filing via PUE ZUS (electronic platform)
+Payments via transfer to individual NRS account. Late payment: interest at 200% of Lombard rate / 365 x days late.
 
----
+### Tax deductibility
 
-## Step 8: Tax Deductibility [T1]
-
-| Contribution | Deductible from Income Tax? | How? |
-|-------------|---------------------------|------|
-| Retirement (emerytalne) | YES | Deducted from income (business expense) or from tax |
-| Disability (rentowe) | YES | Same |
-| Sickness (chorobowe) | YES | Same |
-| Accident (wypadkowe) | YES | Same |
+| Contribution | Deductible? | How? |
+|---|---|---|
+| Retirement, disability, sickness, accident | YES | From income or from tax |
 | Fundusz Pracy | YES | Business expense |
-| Health (zdrowotna) -- PIT-36 | Partially: 7.75% of base deductible from tax | NOT from income, from TAX directly |
-| Health (zdrowotna) -- PIT-36L | Capped deduction from income (max PLN 12,900/year approx) | From income, not tax |
-| Health (zdrowotna) -- PIT-28 | 50% deductible from revenue | From revenue |
+| Health (PIT-36) | Partially: 7.75% of base from tax | NOT from income |
+| Health (PIT-36L) | Capped deduction from income (~PLN 12,900/year) | From income |
+| Health (PIT-28) | 50% deductible from revenue | From revenue |
 
 ---
 
-## Step 9: Edge Case Registry
+## Section 7 -- Ulga na start and special situations
 
-### EC1 -- Ulga na start, no social coverage [T1]
-**Situation:** Client in month 4 of activity using Ulga na start.
-**Resolution:** No social insurance. Only health insurance due. Flag: client has NO pension, disability, or sickness coverage. If client falls ill, no ZUS sickness benefit available.
+### Ulga na start (first 6 months)
 
-### EC2 -- Switching from Preferencyjne to Mały ZUS Plus [T1]
+- NO social insurance contributions for first 6 full calendar months
+- Health insurance is still mandatory
+- Client has no pension/disability/sickness coverage during this period
+
+### Concurrent full-time employment
+
+If employment salary >= minimum wage: social contributions from business are voluntary. Health insurance still mandatory from the business.
+
+### Services to former employer
+
+In first 24 months: Preferencyjne ZUS NOT available. Ulga na start NOT available. Standard ZUS from day one. Mały ZUS Plus also excluded.
+
+### Multiple businesses
+
+ZUS contributions paid only once, on the higher base. Not doubled.
+
+---
+
+## Section 8 -- Edge case registry
+
+### EC1 -- Ulga na start, no social coverage
+**Situation:** Client in month 4 of activity.
+**Resolution:** No social insurance. Only health due. Flag: NO pension, disability, or sickness coverage.
+
+### EC2 -- Switching from Preferencyjne to Mały ZUS Plus
 **Situation:** Client finishing 24 months of Preferencyjne, prior-year revenue under PLN 120,000.
-**Resolution:** Client can transition to Mały ZUS Plus if all eligibility conditions are met. Must register by 31 January of the year. Otherwise defaults to Standard ZUS.
+**Resolution:** Can transition to Mały ZUS Plus if all conditions met. Must register by 31 January of the year.
 
-### EC3 -- Concurrent full-time employment [T1]
-**Situation:** Client is employed full-time (at least minimum wage) and runs a side business.
-**Resolution:** If employment salary >= minimum wage: social contributions from business are voluntary (not mandatory). Health insurance is still mandatory from the business. Retirement/disability paid through employment.
+### EC3 -- Income below health minimum
+**Situation:** PIT-36 client, monthly income PLN 500.
+**Resolution:** Health base = 75% of minimum wage (floor). Minimum applies regardless of actual income.
 
-### EC4 -- Services to former employer [T1]
-**Situation:** Client left employment and provides same services as self-employed to former employer.
-**Resolution:** In the first 24 months: Preferencyjne ZUS is NOT available. Ulga na start is NOT available. Client must pay Standard ZUS from day one. Mały ZUS Plus also excluded if services are to former employer.
-
-### EC5 -- Multiple businesses [T1]
-**Situation:** Client operates two separate działalności.
-**Resolution:** ZUS contributions are paid only once, on the higher base. Not doubled for multiple businesses.
-
-### EC6 -- Sickness during Ulga na start [T1]
-**Situation:** Client gets sick during Ulga na start period.
-**Resolution:** No ZUS sickness benefit (zasiłek chorobowy) is available. Client bears full financial risk. This is the trade-off of Ulga na start.
-
-### EC7 -- Income below health minimum [T1]
-**Situation:** Client on PIT-36 has monthly income of PLN 500.
-**Resolution:** Health base = 75% of minimum wage (floor). Health contribution = PLN 3,499.50 x 9% = PLN 314.96/month. The minimum applies regardless of actual income.
-
-### EC8 -- Cross-border EU worker [T2]
-**Situation:** Client lives in Poland, performs some work in Germany.
-**Resolution:** Under EU Regulation 883/2004, social insurance in one country. [T2] -- A1 certificate required.
+### EC4 -- Paušální daň equivalent (lump-sum ryczałt)
+**Situation:** Client on ryczałt with annual revenue PLN 400,000.
+**Resolution:** Health = PLN 1,384.97/month (180% bracket). Social at standard rates.
 
 ---
 
-## Step 10: Test Suite
+## Section 9 -- Reviewer escalation protocol
+
+When a situation requires reviewer judgement:
+
+```
+REVIEWER FLAG
+Tier: T2
+Client: [name]
+Situation: [description]
+Issue: [what is ambiguous]
+Options: [possible treatments]
+Recommended: [most likely correct treatment and why]
+Action Required: Qualified doradca podatkowy must confirm before advising client.
+```
+
+When a situation is outside skill scope:
+
+```
+ESCALATION REQUIRED
+Tier: T3
+Client: [name]
+Situation: [description]
+Issue: [outside skill scope]
+Action Required: Do not advise. Refer to qualified doradca podatkowy. Document gap.
+```
+
+---
+
+## Section 10 -- Test suite
 
 ### Test 1 -- Standard ZUS (Duży ZUS)
-**Input:** Established business (>30 months), PIT-36 tax form, monthly income PLN 10,000, with voluntary sickness.
-**Expected output:** Social: PLN 1,485.31. Fundusz Pracy: PLN 115.01. Health: PLN 10,000 x 9% = PLN 900.00. Total monthly: PLN 2,500.32.
+**Input:** Established business, PIT-36, monthly income PLN 10,000, with sickness.
+**Expected output:** Social: PLN 1,485.31. FP: PLN 115.01. Health: PLN 900.00. Total: PLN 2,500.32.
 
 ### Test 2 -- Ulga na start (month 3)
 **Input:** Month 3, PIT-36, income PLN 8,000.
-**Expected output:** Social: PLN 0. Health: PLN 8,000 x 9% = PLN 720.00. Total: PLN 720.00.
+**Expected output:** Social: PLN 0. Health: PLN 720.00. Total: PLN 720.00.
 
 ### Test 3 -- Preferencyjne ZUS (month 10)
-**Input:** Month 10, PIT-36L flat tax, income PLN 12,000, with sickness.
-**Expected output:** Social: PLN 442.90. Fundusz Pracy: PLN 0 (base < min wage). Health: PLN 12,000 x 4.9% = PLN 588.00. Total: PLN 1,030.90.
+**Input:** Month 10, PIT-36L, income PLN 12,000, with sickness.
+**Expected output:** Social: PLN 442.90. FP: PLN 0. Health: PLN 588.00. Total: PLN 1,030.90.
 
 ### Test 4 -- Mały ZUS Plus
-**Input:** Prior-year revenue PLN 80,000, prior-year income PLN 40,000, 365 days active, PIT-36.
-**Expected output:** Daily base = PLN 40,000 x 30 / 365 = PLN 3,287.67. Monthly base = PLN 3,287.67 (within bounds). Social at 31.64% = PLN 1,039.80. Health on actual income.
+**Input:** Prior-year revenue PLN 80,000, income PLN 40,000, 365 days active, PIT-36.
+**Expected output:** Daily base = PLN 3,287.67. Social at 31.64%. Health on actual income.
 
 ### Test 5 -- Ryczałt, high revenue bracket
-**Input:** Annual revenue PLN 400,000, ryczałt (PIT-28), standard ZUS.
-**Expected output:** Social: PLN 1,485.31. Health: PLN 1,384.97/month (180% bracket). Total: PLN 2,870.28/month.
+**Input:** Revenue PLN 400,000, PIT-28, standard ZUS.
+**Expected output:** Social: PLN 1,485.31. Health: PLN 1,384.97. Total: PLN 2,870.28.
 
 ### Test 6 -- Concurrent employment
-**Input:** Employed at PLN 5,000/month (above min wage), side business income PLN 3,000, PIT-36.
-**Expected output:** Social: PLN 0 (voluntary, employment covers minimum). Health: PLN 3,000 x 9% = PLN 270.00. Total mandatory: PLN 270.00.
-
----
-
-## PROHIBITIONS
-
-- NEVER compute health insurance without knowing the tax form (PIT-36 vs PIT-36L vs PIT-28) -- rates differ
-- NEVER apply Ulga na start or Preferencyjne to clients providing services to their former employer
-- NEVER forget that sickness insurance (chorobowe) is VOLUNTARY for self-employed
-- NEVER ignore the 36/60 month limit on Mały ZUS Plus usage
-- NEVER state health contributions are fully tax-deductible -- deductibility depends on tax form and has limits
-- NEVER apply Fundusz Pracy when the contribution base is below the minimum wage
-- NEVER double social contributions for clients with multiple businesses
-- NEVER present Ulga na start as risk-free -- the client has NO social coverage during this period
-- NEVER advise on cross-border situations without flagging for reviewer
+**Input:** Employed PLN 5,000/month, side business PLN 3,000, PIT-36.
+**Expected output:** Social: PLN 0 (voluntary). Health: PLN 270.00. Total mandatory: PLN 270.00.
 
 ---
 

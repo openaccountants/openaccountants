@@ -1,8 +1,8 @@
 ---
 name: jp-estimated-tax
 description: >
-  Use this skill whenever asked about Japanese estimated tax prepayments (yotei nozei / 予定納税) for self-employed individuals, freelancers, or sole proprietors. Trigger on phrases like "予定納税", "yotei nozei", "estimated tax Japan", "Japanese advance tax", "予定納税基準額", "reduction application", "予定納税額の減額申請", or any question about advance income tax obligations under the Income Tax Act (所得税法). This skill covers the two-instalment schedule (July and November), the JPY 150,000 threshold, reduction applications, penalties for non-payment, and payment procedures. ALWAYS read this skill before touching any estimated tax work for Japan.
-version: 1.0
+  Use this skill whenever asked about Japanese estimated tax prepayments (yotei nozei / 予定納税) for self-employed individuals, freelancers, or sole proprietors. Trigger on phrases like "予定納税", "yotei nozei", "estimated tax Japan", "Japanese advance tax", "予定納税基準額", "reduction application", "予定納税額の減額申請", or any question about advance income tax obligations under the Income Tax Act (所得税法). Covers the two-instalment schedule (July and November), the JPY 150,000 threshold, reduction applications, penalties for non-payment, and payment procedures. ALWAYS read this skill before touching any estimated tax work for Japan.
+version: 2.0
 jurisdiction: JP
 tax_year: 2025
 category: international
@@ -10,249 +10,294 @@ depends_on:
   - income-tax-workflow-base
 ---
 
-# Japan Estimated Tax (予定納税 / Yotei Nozei) -- Self-Employed Skill
+# Japan Estimated Tax (予定納税 / Yotei Nozei) -- Self-Employed Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 -- Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Japan |
-| Jurisdiction Code | JP |
-| Primary Legislation | Income Tax Act (所得税法), Arts. 104-108 (予定納税 obligation and computation); Art. 120 (final return); Art. 2-1-8 (definitions) |
-| Supporting Legislation | National Tax General Act (国税通則法), Arts. 60-63 (delinquent tax/penalties); Income Tax Act Art. 111 (reduction application / 減額申請) |
-| Tax Authority | National Tax Agency (国税庁 / NTA) |
-| Rate Publisher | NTA |
-| Contributor | Open Accountants community |
-| Validated By | Pending -- requires sign-off by Japanese zeirishi (税理士) |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: instalment schedule, JPY 150,000 threshold, payment procedure, basic penalty calculation. Tier 2: reduction application, disaster relief provisions, blue return interaction. Tier 3: cross-border income, treaty credits, non-resident estimated tax. |
+|---|---|
+| Country | Japan |
+| Tax | Estimated income tax prepayments (予定納税 / yotei nozei) |
+| Primary legislation | Income Tax Act (所得税法), Arts. 104-108, 111 |
+| Supporting legislation | National Tax General Act (国税通則法), Arts. 60-63 |
+| Authority | National Tax Agency (国税庁 / NTA) |
+| Portal | e-Tax (etax.nta.go.jp) |
+| Currency | JPY only |
+| Payment schedule | Two instalments: 1/3 by July 31, 1/3 by November 30; final 1/3 with return (Feb-Mar) |
+| Computation basis | 予定納税基準額 (baseline amount) from prior year final return |
+| Minimum threshold | JPY 150,000 baseline amount |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires sign-off by Japanese zeirishi (税理士) |
+| Validation date | Pending |
+
+**Instalment schedule summary:**
+
+| Instalment | Due date | Amount |
+|---|---|---|
+| 1st (第1期) | 1-31 July | 1/3 of baseline |
+| 2nd (第2期) | 1-30 November | 1/3 of baseline |
+| Final (確定申告) | 16 Feb - 15 Mar (next year) | Actual tax minus yotei nozei paid |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Baseline amount unknown | Request prior year final return -- do not estimate |
+| Capital gains in prior year | Verify exclusion from baseline (should be excluded) |
+| Income dropping | File reduction application (減額申請) before reducing payments |
+| Blue return status | Does not affect yotei nozei schedule |
+| Disaster circumstances | Flag for zeirishi -- special provisions may apply |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Zeirishi must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- the 予定納税基準額 (baseline amount) from the prior year final return (確定申告).
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- nature of income, withholding tax (源泉徴収) credits, blue return (青色申告) status, current year income trend.
 
-Before computing any yotei nozei figure, you MUST know:
+**Ideal** -- complete prior year 確定申告, NTA notification of yotei nozei amounts, bank statements showing prior payments.
 
-1. **Prior year income tax from final return (確定申告)** [T1] -- specifically the 予定納税基準額 (yotei nozei kijun-gaku / baseline amount)
-2. **Nature of income** [T1] -- business income (事業所得), professional income, real estate income, etc.
-3. **Withholding tax (源泉徴収) already deducted** [T1] -- reduces final tax but does not directly reduce yotei nozei
-4. **Current year income trend** [T2] -- needed if applying for reduction
-5. **Blue return (青色申告) status** [T1] -- affects deductions but not yotei nozei schedule
-6. **Any disaster or special circumstances?** [T2] -- may qualify for reduction or deferral
+**Refusal policy if minimum is missing -- HARD STOP.** Without the baseline amount, yotei nozei cannot be computed.
 
-**If the 予定納税基準額 is less than JPY 150,000, no yotei nozei is required.**
+### Refusal catalogue
 
----
+**R-JP-ET-1 -- Cross-border income.** Trigger: client has foreign-source income with treaty credits. Message: "Cross-border income and treaty credit timing for yotei nozei are outside this skill."
 
-## Step 1: Determine Yotei Nozei Obligation [T1]
+**R-JP-ET-2 -- Non-resident estimated tax.** Trigger: non-resident client. Message: "Non-resident estimated tax is outside this skill."
 
-**Legislation:** Income Tax Act, Art. 104
-
-### The Baseline Amount (予定納税基準額)
-
-The baseline is calculated from the prior year's final return. It is the income tax on income from recurring sources (excluding capital gains from asset sales, retirement income, timber income, and one-off income), minus withholding tax credits on those recurring sources.
-
-```
-baseline_amount = prior_year_tax_on_recurring_income - withholding_on_recurring_income
-if baseline_amount >= 150,000:
-    yotei_nozei_required = YES
-else:
-    yotei_nozei_required = NO
-```
-
-### Who Must Pay
-
-| Category | Yotei Nozei Required? |
-|----------|----------------------|
-| Self-employed with baseline >= JPY 150,000 | YES |
-| Freelancer with baseline >= JPY 150,000 | YES |
-| Real estate income earner with baseline >= JPY 150,000 | YES |
-| Salary earner with no other income (withholding covers all) | NO |
-| Any person with baseline < JPY 150,000 | NO |
-| First year of activity, no prior return | NO |
+**R-JP-ET-3 -- Corporate estimated tax.** Trigger: client asks about corporate prepayments. Message: "Corporate estimated tax has different rules. This skill covers individuals only."
 
 ---
 
-## Step 2: Instalment Schedule [T1]
+## Section 3 -- Payment pattern library
 
-**Legislation:** Income Tax Act, Arts. 104, 107
+This is the deterministic pre-classifier for bank statement transactions. When a debit matches a pattern below, classify it as a yotei nozei payment.
 
-### Payment Schedule
+### 3.1 NTA income tax debits
 
-| Instalment | Due Date | Amount |
-|------------|----------|--------|
-| 1st (第1期) | 1-31 July | 1/3 of baseline amount |
-| 2nd (第2期) | 1-30 November | 1/3 of baseline amount |
-| Final (確定申告) | 16 Feb - 15 Mar (next year) | Remaining balance (actual tax - yotei nozei paid) |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 税務署 (zeimusho / tax office) | Yotei nozei payment | Match with July/November timing |
+| 予定納税, 予定 | Yotei nozei payment | Explicit description |
+| 所得税 (shotokuzei / income tax) | Yotei nozei payment | Match with timing -- could also be final payment |
+| 申告所得税 | Yotei nozei payment | "Declared income tax" |
+| 振替納税 (furikae nozei) | Yotei nozei payment | Direct debit for tax (debit typically ~1 month after due date) |
 
-**Each instalment is exactly one-third of the 予定納税基準額.**
+### 3.2 Timing-based identification
 
-### Example: Baseline Amount = JPY 600,000
+| Debit date range | Likely payment | Confidence |
+|---|---|---|
+| 1 July -- 10 August | 1st instalment (第1期) | High if payee is tax office |
+| Late July -- early August | 1st instalment via 振替納税 (direct debit) | Debit date is later than due date |
+| 1 November -- 10 December | 2nd instalment (第2期) | High |
+| Late December | 2nd instalment via 振替納税 | Debit date is later |
+| 16 February -- 15 March | Final return payment (not yotei nozei) | Flag separately |
+
+### 3.3 Related but NOT yotei nozei
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 消費税 (shouhizei) | EXCLUDE | Consumption tax payment |
+| 住民税 (juuminzei) | EXCLUDE | Resident tax (municipal) |
+| 国民健康保険 (kokumin kenko hoken) | EXCLUDE | National health insurance |
+| 国民年金 (kokumin nenkin) | EXCLUDE | National pension |
+| 加算税 (kasanzei) | EXCLUDE | Penalty surcharge |
+| 延滞税 (entaizei) | EXCLUDE | Delinquent tax interest |
+| 還付金 (kanpukin) | Flag for reviewer | Tax refund |
+
+### 3.4 Payment method references
+
+| Reference pattern | Treatment | Notes |
+|---|---|---|
+| e-Tax + 所得税 + 予定 | Yotei nozei via e-Tax | Electronic payment |
+| 納付書 (nofusho) | Yotei nozei via payment slip | Bank counter payment |
+| クレジットカード + 国税 | Yotei nozei via credit card | Via NTA credit card site |
+| Pay-easy + 国税 | Yotei nozei via Pay-easy | Electronic banking |
+
+---
+
+## Section 4 -- Worked examples
+
+### Example 1 -- Standard two-instalment computation
+
+**Input:** Baseline amount (予定納税基準額) = JPY 600,000.
 
 | Instalment | Period | Amount |
-|------------|--------|--------|
-| 1st instalment | July 2025 | JPY 200,000 |
-| 2nd instalment | November 2025 | JPY 200,000 |
-| Final return | Feb-Mar 2026 | Actual tax - JPY 400,000 (may be refund or balance due) |
+|---|---|---|
+| 1st (第1期) | July 2025 | JPY 200,000 |
+| 2nd (第2期) | November 2025 | JPY 200,000 |
+| Final return | Feb-Mar 2026 | Actual tax - JPY 400,000 |
+
+### Example 2 -- Below threshold
+
+**Input:** Baseline amount = JPY 120,000.
+
+**Output:** Below JPY 150,000 threshold. No yotei nozei required.
+
+### Example 3 -- Delinquent tax computation
+
+**Input:** 1st instalment JPY 200,000 due 31 July. Paid 15 October (76 days late).
+
+**Computation:**
+- First 60 days: JPY 200,000 x 2.4% x 60/365 = JPY 789
+- Remaining 16 days: JPY 200,000 x 8.7% x 16/365 = JPY 762
+- Total delinquent tax = JPY 1,551
+
+### Example 4 -- Bank statement classification
+
+**Input line:** `2025/07/31 ; 振替納税 所得税予定1期 ; 出金 ; -200,000 ; JPY`
+
+**Classification:** Yotei nozei, 1st instalment for 2025. Tax payment -- not a deductible business expense.
 
 ---
 
-## Step 3: Reduction Application (減額申請) [T2]
+## Section 5 -- Computation rules
 
-**Legislation:** Income Tax Act, Art. 111
+### 5.1 Baseline amount (予定納税基準額)
 
-### When to Apply for Reduction
+The baseline is computed from the prior year's final return: income tax on recurring income sources minus withholding credits on those sources.
 
-| Trigger | Action |
-|---------|--------|
-| Current year income significantly lower than prior year | File 予定納税額の減額申請書 |
-| Business closed or suspended during the year | File reduction application |
-| Disaster, illness, or other extraordinary circumstances | File reduction application |
-| Significant increase in deductions (e.g., new dependents) | File reduction application |
+```
+baseline = prior_year_tax_on_recurring_income - withholding_on_recurring_income
+if baseline >= 150,000: yotei_nozei required
+else: no yotei_nozei
+```
 
-### Application Deadlines
+Excluded from baseline: capital gains from asset sales, retirement income, timber income, one-off income.
 
-| Instalment | Application Deadline |
-|------------|---------------------|
-| 1st instalment (July) reduction | By 15 July |
-| 2nd instalment (November) reduction | By 15 November |
+### 5.2 Instalment amounts
 
-### Application Process
+```
+each_instalment = baseline / 3
+```
 
-1. Complete the 予定納税額の減額申請書 (Application for Reduction of Estimated Tax)
-2. Attach a statement showing estimated income and tax for the current year through 30 June (for 1st instalment) or 31 October (for 2nd instalment)
-3. Submit to the jurisdictional tax office (所轄税務署)
-4. The tax office reviews and issues approval or denial
+Each instalment is exactly 1/3 of the baseline (not 1/2).
 
-**WARNING:** The application must include a reasonable estimate. If the NTA determines the estimate was unreasonably low, penalties may apply.
+### 5.3 Final return reconciliation
+
+```
+actual_tax = income_tax + special_reconstruction_tax (復興特別所得税)
+total_yotei_paid = 1st + 2nd instalments
+if actual_tax > total_yotei_paid: balance due with final return
+if actual_tax < total_yotei_paid: refund via final return
+```
 
 ---
 
-## Step 4: Penalties for Non-Payment [T1]
+## Section 6 -- Penalties and interest
 
-**Legislation:** National Tax General Act (国税通則法), Arts. 60, 63
-
-### Delinquent Tax (延滞税 / Entaizei)
+### 6.1 Delinquent tax (延滞税 / entaizei)
 
 | Period | Rate (2025) |
-|--------|-------------|
-| First 2 months from due date | 2.4% per annum (tokureizei rate, reviewed annually) |
-| After 2 months | 8.7% per annum (standard entaizei rate) |
+|---|---|
+| First 2 months from due date | 2.4% per annum (特例基準割合, reviewed annually) |
+| After 2 months | 8.7% per annum (standard rate) |
 
-### Computation
+### 6.2 No penalty surcharge (加算税)
 
-```
-if payment_date > due_date:
-    days_late = payment_date - due_date
-    if days_late <= 60:
-        penalty = unpaid_amount x 2.4% x days_late / 365
-    else:
-        penalty_first_60 = unpaid_amount x 2.4% x 60 / 365
-        penalty_remaining = unpaid_amount x 8.7% x (days_late - 60) / 365
-        penalty = penalty_first_60 + penalty_remaining
-```
-
-### No Penalty Surcharge (加算税)
-
-**Yotei nozei is not subject to additional penalty surcharges (加算税) because it is a prepayment, not a return-based assessment.** Delinquent tax (延滞税) is the only consequence of late payment.
+Yotei nozei is not subject to penalty surcharges (加算税) because it is a prepayment, not a return-based assessment. Only delinquent tax (延滞税) applies.
 
 ---
 
-## Step 5: Payment Procedure [T1]
+## Section 7 -- Reduction application (減額申請)
 
-### Payment Methods
+### 7.1 When to apply
 
-| Method | Details |
-|--------|---------|
-| e-Tax (電子納税) | Online payment via e-Tax system |
-| Direct debit (振替納税) | Pre-registered bank account -- automatic deduction (typically about 1 month after due date) |
-| Bank counter (金融機関窓口) | Pay at any bank or post office with 納付書 (payment slip) |
-| Convenience store | For amounts up to JPY 300,000 with barcode payment slip |
-| Credit card | Via the 国税クレジットカードお支払サイト (with processing fee) |
-| QR code / smartphone | Pay via Pay-easy or smartphone payment apps |
+| Trigger | Action |
+|---|---|
+| Current year income significantly lower | File 予定納税額の減額申請書 |
+| Business closed or suspended | File reduction application |
+| Disaster or extraordinary circumstances | File reduction application |
+| New dependents or increased deductions | File reduction application |
 
-### Payment Slip Details
+### 7.2 Application deadlines
 
-| Field | Value |
-|-------|-------|
-| Tax type | 申告所得税及復興特別所得税 (Income Tax and Special Reconstruction Tax) |
-| Tax year | 2025 (令和7年分) |
-| Type | 予定 (estimated) |
-| Amount | Per instalment |
+| Instalment | Deadline |
+|---|---|
+| 1st instalment reduction | By 15 July |
+| 2nd instalment reduction | By 15 November |
 
-**If using 振替納税 (direct debit), the actual deduction date is typically around late July for the 1st instalment and late December for the 2nd instalment. No penalty applies for the delay between the official due date and the debit date.**
+### 7.3 Process
 
----
+1. Complete 予定納税額の減額申請書
+2. Attach estimated income statement through 30 June (for 1st) or 31 October (for 2nd)
+3. Submit to jurisdictional tax office (所轄税務署)
+4. Tax office reviews and approves or denies
 
-## Step 6: Interaction with Final Return [T1]
-
-**Legislation:** Income Tax Act, Art. 120
-
-```
-actual_tax = income_tax_on_2025_final_return + special_reconstruction_tax
-total_yotei_nozei_paid = 1st_instalment + 2nd_instalment
-if actual_tax > total_yotei_nozei_paid:
-    balance_due = actual_tax - total_yotei_nozei_paid  # pay with final return
-else:
-    refund = total_yotei_nozei_paid - actual_tax  # claimed on final return
-```
-
-**Overpayment of yotei nozei results in a refund processed through the final return.**
+If the NTA determines the estimate was unreasonably low, penalties may apply.
 
 ---
 
-## Step 7: Edge Cases
+## Section 8 -- Edge cases
 
-### EC1 -- First year of business [T1]
-**Situation:** Client started freelance business in 2025, no prior year return.
-**Resolution:** No yotei nozei obligation. Tax is settled entirely through the final return in Feb-Mar 2026.
+**EC1 -- First year of business.** No prior year return. No yotei nozei obligation. Tax settled entirely through final return.
 
-### EC2 -- Prior year included large one-off capital gain [T1]
-**Situation:** Baseline amount is inflated by one-off capital gain.
-**Resolution:** Capital gains from asset sales are excluded from the baseline calculation. The 予定納税基準額 should already exclude them. If incorrectly included, contact the tax office for correction.
+**EC2 -- Capital gain in prior year inflated baseline.** Capital gains from asset sales are excluded from baseline by definition. If incorrectly included, contact tax office for correction.
 
-### EC3 -- Income dropped significantly mid-year [T2]
-**Situation:** Client's business income dropped 50% compared to prior year.
-**Resolution:** File 減額申請 by 15 July (for 1st instalment) or 15 November (for 2nd instalment). [T2] flag -- zeirishi should prepare the estimate.
+**EC3 -- Income dropped significantly.** File 減額申請 by 15 July (1st) or 15 November (2nd). Flag for zeirishi.
 
-### EC4 -- Disaster relief [T2]
-**Situation:** Client affected by natural disaster.
-**Resolution:** Special deferral or reduction provisions may apply under the Disaster Tax Relief Act (災害減免法). [T2] flag -- consult zeirishi.
+**EC4 -- Disaster relief.** Special deferral or reduction provisions under the Disaster Tax Relief Act (災害減免法). Flag for zeirishi.
+
+**EC5 -- 振替納税 (direct debit) timing.** Actual debit date is typically about 1 month after official due date. No delinquent tax for the gap between the official due date and the debit date.
 
 ---
 
-## Self-Checks
+## Section 9 -- Self-checks
 
 Before delivering output, verify:
 
 - [ ] 予定納税基準額 confirmed from prior year return
 - [ ] JPY 150,000 threshold checked
-- [ ] Instalments correctly calculated as 1/3 each
+- [ ] Instalments correctly calculated as 1/3 each (not 1/2)
+- [ ] Capital gains, retirement, one-off income excluded from baseline
 - [ ] Reduction application deadlines identified if applicable
 - [ ] Delinquent tax rates current for the applicable year
-- [ ] Payment method appropriate for the amount
+- [ ] Payment method appropriate for the amount (convenience store cap JPY 300,000)
+- [ ] 振替納税 timing noted if applicable
+- [ ] Special reconstruction tax included in final reconciliation
+- [ ] Output labelled as estimated until zeirishi confirms
 
 ---
 
-## PROHIBITIONS
+## Section 10 -- Test suite
+
+### Test 1 -- Standard computation
+**Input:** Baseline = JPY 600,000.
+**Expected:** 1st = JPY 200,000 (Jul). 2nd = JPY 200,000 (Nov). Final = actual - JPY 400,000.
+
+### Test 2 -- Below threshold
+**Input:** Baseline = JPY 120,000.
+**Expected:** No yotei nozei required.
+
+### Test 3 -- Delinquent tax (76 days late)
+**Input:** JPY 200,000 paid 76 days late.
+**Expected:** First 60 days at 2.4%, remaining 16 days at 8.7%. Total approx. JPY 1,551.
+
+### Test 4 -- First year
+**Input:** New freelancer, no prior return.
+**Expected:** No yotei nozei. Tax paid with final return.
+
+### Test 5 -- Reduction application
+**Input:** Baseline JPY 600,000. Client expects 50% income drop.
+**Expected:** Flag for zeirishi. File 減額申請 by 15 July or 15 November.
+
+### Test 6 -- Refund on final return
+**Input:** Yotei nozei paid JPY 400,000. Actual tax JPY 300,000.
+**Expected:** Refund JPY 100,000 claimed on final return.
+
+---
+
+## Prohibitions
 
 - NEVER compute yotei nozei without confirming the 予定納税基準額
-- NEVER include capital gains, retirement, or one-off income in the baseline calculation
+- NEVER include capital gains, retirement, or one-off income in the baseline
 - NEVER forget that each instalment is 1/3 (not 1/2) of the baseline
-- NEVER advise filing a reduction application without [T2] flag for zeirishi review
+- NEVER advise filing a reduction application without flagging for zeirishi review
 - NEVER apply penalty surcharge (加算税) to yotei nozei -- only delinquent tax (延滞税) applies
-- NEVER present yotei nozei amounts as definitive -- advise client to confirm with their zeirishi
+- NEVER present amounts as definitive -- advise confirmation with zeirishi
 
 ---
 

@@ -1,268 +1,325 @@
 ---
 name: nz-provisional-tax
-description: Use this skill whenever asked about New Zealand provisional tax for self-employed individuals. Trigger on phrases like "provisional tax", "RIT", "residual income tax", "standard uplift", "estimation method", "AIM", "use of money interest", "UOMI", "provisional tax instalment", or any question about provisional tax obligations for sole traders in New Zealand. Covers the $5,000 RIT threshold, standard uplift (105%), estimation method, AIM method, instalment dates, and UOMI. ALWAYS read this skill before touching any NZ provisional tax work.
+description: >
+  Use this skill whenever asked about New Zealand provisional tax for self-employed individuals. Trigger on phrases like "provisional tax", "RIT", "residual income tax", "standard uplift", "estimation method", "AIM", "use of money interest", "UOMI", "provisional tax instalment", or any question about provisional tax obligations for sole traders in New Zealand. Covers the $5,000 RIT threshold, standard uplift (105%), estimation method, AIM method, instalment dates, and UOMI. ALWAYS read this skill before touching any NZ provisional tax work.
+version: 2.0
+jurisdiction: NZ
+tax_year: 2025
+category: international
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# NZ Provisional Tax -- Self-Employed Skill
+# NZ Provisional Tax -- Self-Employed Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 -- Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | New Zealand |
-| Jurisdiction Code | NZ |
-| Primary Legislation | Income Tax Act 2007 (ITA 2007), Part RC |
-| Supporting Legislation | Tax Administration Act 1994 (TAA 1994) |
-| Tax Authority | Inland Revenue (IR / Te Tari Taake) |
-| Filing Portal | myIR (myir.ird.govt.nz) |
+|---|---|
+| Country | New Zealand |
+| Tax | Provisional income tax |
+| Primary legislation | Income Tax Act 2007 (ITA 2007), Part RC |
+| Supporting legislation | Tax Administration Act 1994 (TAA 1994), ss 120A-120Q (UOMI) |
+| Authority | Inland Revenue (IR / Te Tari Taake) |
+| Portal | myIR (myir.ird.govt.nz) |
+| Currency | NZD only |
+| Threshold | RIT (residual income tax) must exceed $5,000 to trigger obligation |
+| Default method | Standard uplift: prior year RIT x 105%, divided by 3 instalments |
+| Alternative methods | Estimation method, AIM (Accounting Income Method) |
+| Standard balance date | 31 March |
 | Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a New Zealand chartered accountant (CA) |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Tax Year | 2025 (1 April 2025 -- 31 March 2026) |
-| Confidence Coverage | Tier 1: RIT threshold, standard uplift calculation, instalment dates. Tier 2: estimation method risk, AIM setup. Tier 3: pooling arrangements, complex multi-entity structures. |
+| Validated by | Pending -- requires sign-off by NZ Chartered Accountant (CA) |
+| Validation date | Pending |
+
+**Standard instalment schedule (31 March balance date):**
+
+| Instalment | Due date | Amount |
+|---|---|---|
+| 1st | 28 August | 1/3 of (RIT x 105%) |
+| 2nd | 15 January | 1/3 of (RIT x 105%) |
+| 3rd | 7 May | 1/3 of (RIT x 105%) |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Method unclear | Use standard uplift (no UOMI risk if paid on time) |
+| RIT threshold borderline | If exactly $5,000, no provisional tax (must EXCEED $5,000) |
+| Balance date non-standard | Verify instalment dates in IR's provisional tax calendar |
+| Tax agent EOT | May change to 2 instalments -- confirm |
+| First year of SE income | No provisional tax obligation |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified professional must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- prior year residual income tax (RIT) figure and chosen method (standard uplift, estimation, or AIM).
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- balance date, tax agent status (EOT), GST registration status, current year income trend.
 
-Before computing any provisional tax figure, you MUST know:
+**Ideal** -- complete prior year tax return, IR assessment, myIR statement, current year P&L if estimating.
 
-1. **Residual income tax (RIT) from the prior year** [T1] -- determines whether provisional tax is required
-2. **Whether this is the first year of self-employment** [T1] -- first-year taxpayers may be exempt
-3. **Chosen method** [T1] -- standard uplift, estimation, or AIM
-4. **Balance date** [T1] -- most sole traders use 31 March; non-standard balance dates change instalment dates
-5. **Whether using a tax agent with an extension of time (EOT)** [T1] -- affects instalment count and dates
-6. **GST registration status** [T1] -- affects payment frequency options and AIM eligibility
+**Refusal policy if minimum is missing -- HARD STOP.** Without the prior year RIT, the standard uplift cannot be computed. If estimating, current year projections are needed.
 
-**If prior-year RIT is $5,000 or less, STOP. No provisional tax is required.**
+### Refusal catalogue
 
----
+**R-NZ-PT-1 -- Pooling arrangements.** Trigger: client uses provisional tax pooling. Message: "Tax pooling arrangements have specific rules outside this skill."
 
-## Step 1: RIT Threshold [T1]
+**R-NZ-PT-2 -- Multi-entity structures.** Trigger: complex multi-entity group. Message: "Multi-entity provisional tax allocation is outside this skill."
 
-**Legislation:** ITA 2007, s RC 3
-
-| Rule | Detail |
-|------|--------|
-| Provisional tax required | When RIT for the prior year exceeds **$5,000** |
-| RIT definition | Total income tax minus PAYE and other withholding credits |
-| First-year exemption | No provisional tax in the first year of earning income that gives rise to RIT |
-
-### RIT Calculation [T1]
-
-RIT = Income tax assessed - Tax credits (PAYE, RWT, etc.)
-
-If RIT <= $5,000: no provisional tax obligation. Client pays terminal tax only.
+**R-NZ-PT-3 -- Non-resident provisional tax.** Trigger: non-resident client. Message: "Non-resident provisional tax is outside this skill."
 
 ---
 
-## Step 2: Standard Uplift Method [T1]
+## Section 3 -- Payment pattern library
 
-**Legislation:** ITA 2007, s RC 5(2)-(3)
+This is the deterministic pre-classifier for bank statement transactions. When a debit matches a pattern below, classify it as a provisional tax payment.
 
-### Calculation [T1]
+### 3.1 Inland Revenue provisional tax debits
 
-| Step | Action |
-|------|--------|
-| 2.1 | Take prior year's RIT |
-| 2.2 | Multiply by 105% (the standard uplift) |
-| 2.3 | Divide by the number of instalments |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| IRD, INLAND REVENUE, IR PAYMENT | Provisional tax payment | Match with Aug/Jan/May timing |
+| PROVISIONAL TAX, PROV TAX | Provisional tax payment | Explicit description |
+| MYIR PAYMENT | Provisional tax payment | Online payment via myIR |
+| TERMINAL TAX | NOT provisional tax | Year-end balance -- flag separately |
 
-### Instalment Schedule -- Standard Balance Date (31 March) [T1]
+### 3.2 Timing-based identification
 
-| Instalment | Due Date | Amount |
-|-----------|----------|--------|
-| 1st | 28 August | 1/3 of (prior year RIT x 105%) |
-| 2nd | 15 January | 1/3 of (prior year RIT x 105%) |
-| 3rd | 7 May | 1/3 of (prior year RIT x 105%) |
+| Debit date range | Likely instalment | Confidence |
+|---|---|---|
+| 20 August -- 5 September | 1st instalment (28 Aug) | High if IR payee |
+| 8 January -- 20 January | 2nd instalment (15 Jan) | High |
+| 1 May -- 14 May | 3rd instalment (7 May) | High |
+| January -- February (following year) | Terminal tax | Flag separately |
 
-**Note:** The 3rd instalment (7 May) falls AFTER the end of the tax year. This is by design.
+### 3.3 Related but NOT provisional tax
 
-### With Tax Agent EOT [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GST, GOODS AND SERVICES TAX | EXCLUDE | GST payment |
+| ACC LEVY | EXCLUDE | Accident Compensation levy |
+| STUDENT LOAN | EXCLUDE | Student loan repayment |
+| KIWISAVER | EXCLUDE | Retirement savings |
+| CHILD SUPPORT, IR CHILD | EXCLUDE | Child support via IR |
+| PENALTIES AND INTEREST IR | EXCLUDE | Penalty/interest charge |
+| TERMINAL TAX | Flag separately | Year-end balance, not provisional |
 
-If the client uses a tax agent with extension of time, the instalment dates and number may vary. Common pattern:
+### 3.4 Tax agent EOT identification
 
-| Instalment | Due Date |
-|-----------|----------|
-| 1st | 28 October |
-| 2nd | 7 May |
-
-(Two instalments of 50% each of prior year RIT x 105%.)
-
----
-
-## Step 3: Estimation Method [T2]
-
-**Legislation:** ITA 2007, s RC 6
-
-| Rule | Detail |
-|------|--------|
-| Who can use | Any provisional taxpayer |
-| How it works | Client estimates current year's RIT and pays in instalments |
-| Risk | If estimate is too low, UOMI applies from original due dates on the shortfall |
-| Advantage | Useful when income is expected to drop significantly |
-
-### Rules [T2]
-
-- No penalty for underestimation, but UOMI is charged on the difference between estimated and actual RIT
-- Client can re-estimate at any instalment date
-- [T2] Flag for reviewer: estimation method carries interest risk. Only recommend if income is clearly declining.
+If the client uses a tax agent with extension of time, instalment dates shift. Common pattern: 28 October + 7 May (two instalments of 50% each).
 
 ---
 
-## Step 4: AIM Method (Accounting Income Method) [T2]
+## Section 4 -- Worked examples
 
-**Legislation:** ITA 2007, s RC 7B
+### Example 1 -- Standard uplift, three instalments
 
-| Rule | Detail |
-|------|--------|
-| Eligibility | Gross income < $5,000,000; must use AIM-capable accounting software |
-| How it works | Tax calculated each period based on actual accounting income |
-| Frequency | Aligned with GST return periods (monthly, 2-monthly, or 6-monthly) |
-| Advantage | No UOMI exposure; pay as you earn |
-| Software | Xero, MYOB, and other approved software |
+**Input:** Prior year RIT = $15,000. Standard uplift. 31 March balance date.
 
-[T2] Flag for reviewer: AIM requires compatible software and correct configuration. Confirm software is AIM-enabled.
+| Instalment | Due date | Amount |
+|---|---|---|
+| 1st | 28 August | $5,250 |
+| 2nd | 15 January | $5,250 |
+| 3rd | 7 May | $5,250 |
+| **Total** | | **$15,750** |
 
----
+(Calculation: $15,000 x 105% = $15,750. Each instalment = $15,750 / 3 = $5,250.)
 
-## Step 5: Use of Money Interest (UOMI) [T1]
+### Example 2 -- Below threshold
 
-**Legislation:** TAA 1994, s 120A-120Q
+**Input:** Prior year RIT = $4,800.
 
-| Rate Type | Rate (verify annually) |
-|-----------|----------------------|
-| Underpayment rate | ~10.91% (2025 -- verify with IR) |
-| Overpayment rate | ~3.41% (2025 -- verify with IR) |
+**Output:** RIT does not exceed $5,000. No provisional tax required. Client pays terminal tax only.
 
-### When UOMI Applies [T1]
+### Example 3 -- Estimation method
 
-| Method | UOMI Exposure |
-|--------|---------------|
-| Standard uplift | No UOMI if each instalment paid on time and in full (even if actual RIT is higher) |
-| Estimation | UOMI from each instalment date if estimate < actual RIT |
-| AIM | No UOMI if each AIM payment is correct and on time |
+**Input:** Prior year RIT = $25,000. Estimated current year RIT = $12,000.
 
-### Safe Harbour -- Standard Uplift [T1]
+**Output:** Standard uplift would require $26,250. Estimation method: pay $12,000 / 3 = $4,000 per instalment. Warning: if actual RIT > $12,000, UOMI applies from instalment dates.
 
-If the taxpayer uses the standard uplift method and pays each instalment on time, NO UOMI is charged even if the actual tax liability turns out to be much higher. This is a key advantage of the standard method.
+### Example 4 -- Tax agent EOT (two instalments)
 
----
+**Input:** Prior year RIT = $50,000. Tax agent with EOT.
 
-## Step 6: Terminal Tax [T1]
+| Instalment | Due date | Amount |
+|---|---|---|
+| 1st | 28 October | $26,250 |
+| 2nd | 7 May | $26,250 |
 
-**Legislation:** ITA 2007, s RC 14
+(Calculation: $50,000 x 105% = $52,500. Two instalments of $26,250.)
 
-| Item | Detail |
-|------|--------|
-| Terminal tax | The balance of income tax after provisional tax payments are credited |
-| Due date | 7 February of the following year (for 31 March balance date, without EOT) |
-| With EOT | 7 April of the following year |
+### Example 5 -- Bank statement classification
 
-Terminal tax = Actual RIT - Provisional tax paid
+**Input line:** `28.08.2025 ; IRD PROVISIONAL TAX ; DEBIT ; -5,250.00 ; NZD`
 
-If provisional tax exceeds actual RIT, the overpayment is refunded or credited.
+**Classification:** Provisional tax, 1st instalment 2025/26. Tax payment -- not a deductible expense.
 
 ---
 
-## Step 7: Penalties [T1]
+## Section 5 -- Computation rules
 
-**Legislation:** TAA 1994, Part 9
+### 5.1 RIT threshold
+
+```
+RIT = income_tax_assessed - PAYE_credits - RWT_credits - other_withholding
+if RIT > 5,000: provisional tax required
+if RIT <= 5,000: no provisional tax (terminal tax only)
+```
+
+First-year exemption: no provisional tax in the first year of earning income giving rise to RIT.
+
+### 5.2 Standard uplift method
+
+```
+provisional_tax = prior_year_RIT x 105%
+each_instalment = provisional_tax / number_of_instalments (3 standard, 2 with EOT)
+```
+
+Safe harbour: if each instalment is paid on time and in full, NO UOMI is charged even if actual RIT is much higher.
+
+### 5.3 Estimation method
+
+```
+provisional_tax = estimated_current_year_RIT
+each_instalment = provisional_tax / number_of_instalments
+```
+
+Risk: UOMI charged from each instalment date if estimate < actual RIT. Client can re-estimate at any instalment date.
+
+### 5.4 AIM method
+
+Tax calculated each period based on actual accounting income via AIM-capable software (Xero, MYOB). Aligned with GST return periods. No UOMI exposure if correct and on time. Requires gross income < $5,000,000.
+
+### 5.5 Terminal tax
+
+```
+terminal_tax = actual_RIT - provisional_tax_paid
+```
+
+Due 7 February (without EOT) or 7 April (with EOT).
+
+---
+
+## Section 6 -- Penalties and interest
+
+### 6.1 Use of Money Interest (UOMI)
+
+| Rate type | Rate (verify annually) |
+|---|---|
+| Underpayment rate | ~10.91% (2025) |
+| Overpayment rate | ~3.41% (2025) |
+
+### 6.2 UOMI exposure by method
+
+| Method | UOMI exposure |
+|---|---|
+| Standard uplift (paid on time) | None -- safe harbour |
+| Estimation | UOMI from each instalment date if estimate < actual |
+| AIM (correct and on time) | None |
+
+### 6.3 Late payment penalties
 
 | Offence | Penalty |
-|---------|---------|
-| Late payment of provisional tax | Initial late payment penalty: 1% + 4% if still unpaid after 7 days |
-| UOMI on underpayment | Underpayment interest rate (compounding daily) |
-| Late filing of IR3 | $250 late filing penalty (may increase) |
-| Shortfall penalties | If estimation method used with intent to understate: shortfall penalties (20-150%) |
+|---|---|
+| Late payment | 1% initial + 4% if still unpaid after 7 days |
+| Late IR3 filing | $250 (may increase) |
+| Shortfall from deliberate understatement | 20-150% |
 
 ---
 
-## Step 8: Edge Case Registry
+## Section 7 -- Method selection guidance
 
-### EC1 -- First year of self-employment [T1]
-**Situation:** Client starts freelancing in July 2025. No prior-year RIT.
-**Resolution:** No provisional tax obligation in the first year. Client pays terminal tax in full by 7 February 2027 (or EOT date). May voluntarily pay provisional tax to avoid a large terminal tax bill.
+| Situation | Recommended method | Rationale |
+|---|---|---|
+| Income stable or growing | Standard uplift | Safe harbour, no UOMI risk |
+| Income dropping significantly | Estimation | Lower cash outflow, but UOMI risk |
+| Irregular/seasonal income | AIM | Pay as you earn, no UOMI |
+| First year of business | No provisional tax | Exempt; voluntary payments accepted |
 
-### EC2 -- Income drops significantly [T2]
-**Situation:** Prior-year RIT was $30,000 but client expects only $10,000 this year.
-**Resolution:** Standard uplift would require $31,500 (105% x $30,000) in payments. Client may use estimation method to pay based on $10,000 expected RIT. [T2] Flag: if actual RIT exceeds estimate, UOMI applies. Recommend estimation only if decline is certain.
-
-### EC3 -- Mixed PAYE and self-employment income [T1]
-**Situation:** Client earns $60,000 PAYE salary and $20,000 freelance income. RIT = $6,000.
-**Resolution:** RIT exceeds $5,000 threshold. Provisional tax required on the $6,000 RIT (not on total income). Standard uplift: $6,000 x 105% = $6,300 / 3 = $2,100 per instalment.
-
-### EC4 -- Non-standard balance date [T1]
-**Situation:** Client has a 30 September balance date.
-**Resolution:** Instalment dates shift. For 30 September balance date: instalments fall on 28 February, 15 July, and 7 November. Verify exact dates in IR's provisional tax calendar.
-
-### EC5 -- Prior year RIT exactly $5,000 [T1]
-**Situation:** Client's prior-year RIT is exactly $5,000.
-**Resolution:** Provisional tax is required when RIT EXCEEDS $5,000 (i.e., > $5,000). Exactly $5,000 means NO provisional tax obligation.
-
-### EC6 -- Voluntary provisional tax payments [T1]
-**Situation:** First-year freelancer wants to make voluntary payments to avoid a large terminal tax bill.
-**Resolution:** Permitted. Voluntary payments reduce terminal tax. UOMI overpayment interest may apply to early voluntary payments. No penalties for not paying voluntary provisional tax.
+Flag estimation method for reviewer whenever recommended.
 
 ---
 
-## Step 9: Test Suite
+## Section 8 -- Edge cases
 
-### Test 1 -- Standard uplift, mid-range income
-**Input:** Prior-year RIT = $15,000. Standard uplift method. 31 March balance date.
-**Expected output:**
-- Provisional tax = $15,000 x 105% = $15,750
-- Instalment 1 (28 Aug): $5,250
-- Instalment 2 (15 Jan): $5,250
-- Instalment 3 (7 May): $5,250
+**EC1 -- First year of self-employment.** No provisional tax obligation. Terminal tax due 7 February following year-end. May voluntarily pay to avoid large lump sum.
+
+**EC2 -- Income drops significantly.** Standard uplift = $31,500 but expected RIT = $10,000. Use estimation method ($10,000/3 per instalment). UOMI risk if actual exceeds estimate.
+
+**EC3 -- Mixed PAYE and self-employment.** RIT = total tax minus PAYE credits. If RIT > $5,000, provisional tax on RIT amount.
+
+**EC4 -- Non-standard balance date.** Instalment dates shift. 30 September balance date: instalments 28 February, 15 July, 7 November.
+
+**EC5 -- RIT exactly $5,000.** No provisional tax. Must EXCEED $5,000.
+
+**EC6 -- Voluntary payments.** First-year freelancer may make voluntary payments. UOMI overpayment interest may apply.
+
+**EC7 -- 3rd instalment after year-end.** The 7 May instalment falls AFTER the 31 March year-end. This is correct by design.
+
+---
+
+## Section 9 -- Self-checks
+
+Before delivering output, verify:
+
+- [ ] RIT threshold ($5,000) confirmed -- must exceed, not equal
+- [ ] Method selected (standard uplift, estimation, AIM)
+- [ ] Uplift factor is 105%
+- [ ] Correct number of instalments (3 standard, 2 with EOT)
+- [ ] All instalment dates correct for the balance date
+- [ ] UOMI exposure noted for estimation method
+- [ ] Safe harbour benefit noted for standard uplift
+- [ ] First-year exemption checked
+- [ ] Terminal tax due date included
+- [ ] Output labelled as estimated until NZ CA confirms
+
+---
+
+## Section 10 -- Test suite
+
+### Test 1 -- Standard uplift
+**Input:** Prior year RIT = $15,000. 31 March balance date.
+**Expected:** $15,750 total. 3 x $5,250. Dates: 28 Aug, 15 Jan, 7 May.
 
 ### Test 2 -- Below threshold
-**Input:** Prior-year RIT = $4,800.
-**Expected output:** No provisional tax required. RIT does not exceed $5,000.
+**Input:** Prior year RIT = $4,800.
+**Expected:** No provisional tax.
 
 ### Test 3 -- Estimation method
-**Input:** Prior-year RIT = $25,000. Estimated current-year RIT = $12,000.
-**Expected output:**
-- Provisional tax = $12,000 (estimated)
-- Instalment 1: $4,000
-- Instalment 2: $4,000
-- Instalment 3: $4,000
-- Warning: if actual RIT > $12,000, UOMI applies from instalment dates.
+**Input:** Prior year RIT = $25,000. Estimated current = $12,000.
+**Expected:** $4,000 per instalment. UOMI warning.
 
-### Test 4 -- High earner, tax agent EOT
-**Input:** Prior-year RIT = $50,000. Tax agent with EOT. Two instalments.
-**Expected output:**
-- Provisional tax = $50,000 x 105% = $52,500
-- Instalment 1 (28 Oct): $26,250
-- Instalment 2 (7 May): $26,250
+### Test 4 -- Tax agent EOT
+**Input:** Prior year RIT = $50,000.
+**Expected:** $52,500 total. 2 x $26,250. Dates: 28 Oct, 7 May.
 
-### Test 5 -- First year, no prior RIT
-**Input:** New freelancer, no prior-year income tax.
-**Expected output:** No provisional tax required in first year. Terminal tax payable by 7 February following year-end.
+### Test 5 -- First year
+**Input:** New freelancer, no prior RIT.
+**Expected:** No provisional tax. Terminal tax by 7 Feb.
+
+### Test 6 -- RIT exactly $5,000
+**Input:** Prior year RIT = $5,000.
+**Expected:** No provisional tax (must exceed $5,000).
+
+### Test 7 -- Mixed PAYE and SE
+**Input:** PAYE salary $60,000. SE $20,000. RIT = $6,000.
+**Expected:** Provisional tax on $6,000 RIT. Uplift: $6,300 / 3 = $2,100.
 
 ---
 
-## PROHIBITIONS
+## Prohibitions
 
-- NEVER require provisional tax when prior-year RIT is $5,000 or less
+- NEVER require provisional tax when prior year RIT is $5,000 or less
 - NEVER apply UOMI to standard uplift payments made on time and in full
 - NEVER recommend estimation method without flagging UOMI risk
-- NEVER use an uplift factor other than 105% for the standard method
+- NEVER use an uplift factor other than 105%
 - NEVER confuse RIT with total income tax -- RIT is after deducting PAYE and other credits
-- NEVER apply provisional tax in the first year of earning self-employment income (unless voluntary)
-- NEVER ignore the 3rd instalment date falling after year-end -- this is correct by design
-- NEVER present calculations as definitive -- always label as estimated and direct client to IR or a qualified NZ chartered accountant
+- NEVER apply provisional tax in the first year of earning SE income (unless voluntary)
+- NEVER ignore the 3rd instalment date falling after year-end
+- NEVER present calculations as definitive -- direct to IR or NZ CA
 
 ---
 

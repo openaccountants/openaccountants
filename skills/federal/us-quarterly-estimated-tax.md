@@ -1,522 +1,360 @@
 ---
 name: us-quarterly-estimated-tax
-description: Tier 2 content skill for computing quarterly estimated federal income tax payments for US sole proprietors and single-member LLCs disregarded for federal tax. Covers tax year 2025 Form 1040-ES requirements including the 100%/110% prior-year safe harbor under IRC §6654(d)(1)(B)/(C), the 90% current-year alternative under §6654(d)(1)(A), the annualized income installment method under §6654(d)(2) and Form 2210 Schedule AI, the underpayment penalty computation under §6654 and Form 2210, the quarterly due dates under §6654(c), the interaction between withholding and estimated payments under §6654(b), and the waiver provisions under §6654(e). Consumes net profit from us-schedule-c-and-se-computation and tax positions from us-form-1040-self-employed-positions. Defers state estimated tax to state-specific skills. MUST be loaded alongside us-tax-workflow-base v0.1+. Federal only.
-version: 0.2
+description: >
+  Use this skill whenever asked about US federal quarterly estimated income tax payments for sole proprietors and single-member LLCs. Trigger on phrases like "1040-ES", "estimated tax", "quarterly tax", "safe harbor", "underpayment penalty", "Form 2210", "annualized income", or any question about federal estimated tax requirements. Covers the $1,000 threshold, 100%/110% prior-year safe harbor, 90% current-year method, quarterly due dates, annualized income instalment method, Form 2210 penalty computation, and withholding strategies. MUST be loaded alongside us-tax-workflow-base v0.1+. Federal only.
+version: 2.0
+jurisdiction: US-FED
+tax_year: 2025
+category: federal
+depends_on:
+  - us-tax-workflow-base
 ---
 
-# US Quarterly Estimated Tax Skill v0.2
+# US Quarterly Estimated Tax (Form 1040-ES) -- Self-Employed Skill v2.0
 
-## What this file is, and what it is not
+## Section 1 -- Quick reference
 
-**This file is a content skill that loads on top of `us-tax-workflow-base` v0.1.** It provides the rules for computing quarterly estimated federal income tax payments using Form 1040-ES for tax year 2025. It does not provide workflow architecture — that comes from the base. It does not classify transactions, compute Schedule C net profit, or compute QBI — those are upstream content skills.
+| Field | Value |
+|---|---|
+| Country | United States (federal) |
+| Tax | Quarterly estimated income tax payments |
+| Forms | 1040-ES (vouchers), 2210 (underpayment penalty), 2210 Schedule AI (annualized) |
+| Primary legislation | IRC Section 6654 |
+| Supporting legislation | IRC Sections 6621, 6622, 1401, 1402, 3402 |
+| Authority | Internal Revenue Service (IRS) |
+| Portal | IRS Direct Pay (irs.gov/payments) / EFTPS |
+| Currency | USD only |
+| Threshold | Net tax due >= $1,000 after withholding and credits |
+| Safe harbours | 90% current year OR 100%/110% prior year |
+| Payment schedule | Apr 15, Jun 16*, Sep 15, Jan 15 (*Jun 15 is Sunday in 2025) |
+| Entity types | Sole proprietors, single-member LLCs (disregarded) |
+| Companion skill | us-tax-workflow-base v0.1+ |
+| Contributor | Open Accountants Community |
+| Validated by | April 2026 |
+| Validation date | April 2026 |
 
-**Where this skill fits in the pipeline:**
+**Quarterly due dates (TY2025):**
 
-```
-us-sole-prop-bookkeeping (classifies transactions)
-        |
-us-schedule-c-and-se-computation (net profit, SE tax)
-        |
-us-form-1040-self-employed-positions (QBI, retirement, SE health insurance)
-        |
-us-quarterly-estimated-tax (THIS SKILL — estimated payments for current/following year)
-```
-
-This skill is the final step in the federal pipeline. It takes the total federal tax liability (income tax + SE tax - credits - above-the-line deductions) and determines what quarterly estimated payments are required, whether the safe harbor is met, and whether an underpayment penalty applies.
-
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date (April 2026). It reflects the One Big Beautiful Bill Act (Public Law 119-21, signed July 4, 2025) and post-OBBBA guidance available as of the currency date.
-
-**The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer (Enrolled Agent, CPA, or attorney under Circular 230) reviews and signs the return. The skill produces working papers and a brief, not a return.
-
----
-
-## Section 1 — Scope statement
-
-This skill covers federal estimated tax payments for tax year 2025 for taxpayers who are:
-
-- US sole proprietors filing Schedule C, OR
-- Single-member LLCs treated as disregarded entities for federal income tax purposes
-
-For the following kinds of work:
-
-- Determining whether estimated tax payments are required under IRC §6654
-- Computing the required annual payment using the prior-year safe harbor or current-year method
-- Allocating the required annual payment across the four quarterly installments
-- Applying the annualized income installment method (Form 2210 Schedule AI) for taxpayers with uneven income
-- Computing the underpayment penalty on Form 2210 when payments fall short
-- Determining whether withholding from other sources (W-2, 1099-R, etc.) eliminates or reduces the estimated tax obligation
-- Producing quarterly payment vouchers (Form 1040-ES) with correct amounts and due dates
-- Evaluating whether a penalty waiver applies under §6654(e)
-
-This skill does NOT cover:
-
-- Computation of the underlying tax liability — handled by upstream skills
-- State estimated tax payments — handled by state-specific skills (e.g., `ca-estimated-tax-540es`)
-- Corporate estimated tax (Form 1120-W) — out of scope
-- Trust/estate estimated tax (Form 1041-ES) — out of scope
-- Estimated tax for nonresident aliens (Form 1040-ES NR) — out of scope
-
----
-
-## Section 2 — Year coverage and currency
-
-**Tax year covered:** 2025 (returns due April 15, 2026, or October 15, 2026 with extension; estimated tax payments for TY2025 due April 15, June 16, September 15, 2025, and January 15, 2026).
-
-**Currency date:** April 2026.
-
-**Legislation reflected:**
-- Internal Revenue Code as in force for tax year 2025
-- One Big Beautiful Bill Act (OBBBA), Public Law 119-21, signed July 4, 2025
-- Tax Cuts and Jobs Act of 2017 provisions still in force in 2025
-- IRS Form 1040-ES Instructions for tax year 2025
-- IRS Form 2210 and Instructions for tax year 2025
-- Rev. Proc. 2024-40 (2025 inflation adjustments, where not superseded by OBBBA)
-
-**Currency limitations:**
-- The IRS underpayment interest rate is set quarterly by the IRS based on the federal short-term rate plus 3 percentage points (IRC §6621(a)(2)). The rates used in this skill reflect published rates through Q1 2026. Rates for subsequent quarters should be verified against IRS announcements.
-
----
-
-## Section 3 — Year-specific figures table for tax year 2025
-
-All dollar thresholds, rates, percentages, and indexed figures the skill relies on, in one place.
-
-### Estimated tax thresholds and safe harbors
-
-| Figure | Value for TY2025 | Primary source |
+| Instalment | Due date | Period |
 |---|---|---|
-| Minimum tax liability to trigger estimated tax requirement | $1,000 | IRC §6654(e)(1) |
-| Prior-year safe harbor (AGI ≤ $150K; ≤ $75K MFS) | 100% of prior year tax | IRC §6654(d)(1)(B) |
-| Prior-year safe harbor (AGI > $150K; > $75K MFS) | 110% of prior year tax | IRC §6654(d)(1)(C) |
-| Current-year safe harbor | 90% of current year tax | IRC §6654(d)(1)(A) |
-| Required annual payment | Lesser of current-year 90% or applicable prior-year percentage | IRC §6654(d)(1) |
+| 1st | April 15, 2025 | Jan 1 -- Mar 31 |
+| 2nd | June 16, 2025 | Apr 1 -- May 31 |
+| 3rd | September 15, 2025 | Jun 1 -- Aug 31 |
+| 4th | January 15, 2026 | Sep 1 -- Dec 31 |
 
-### Quarterly due dates for TY2025 estimated payments
+**Safe harbour thresholds:**
 
-| Installment | Due date | Income period covered |
-|---|---|---|
-| 1st installment | April 15, 2025 | Jan 1 - Mar 31, 2025 |
-| 2nd installment | June 16, 2025 * | Apr 1 - May 31, 2025 |
-| 3rd installment | September 15, 2025 | Jun 1 - Aug 31, 2025 |
-| 4th installment | January 15, 2026 | Sep 1 - Dec 31, 2025 |
+| Prior year AGI | Safe harbour percentage |
+|---|---|
+| AGI <= $150,000 ($75,000 MFS) | 100% of prior year tax |
+| AGI > $150,000 ($75,000 MFS) | 110% of prior year tax |
 
-\* June 15 falls on a Sunday in 2025; the due date shifts to the next business day, June 16.
+**Conservative defaults:**
 
-**Note:** If the return is filed and all tax is paid by January 31, 2026, the 4th installment is not required. IRC §6654(h)(2).
-
-### Underpayment penalty rates (IRS interest rates for individual underpayments)
-
-| Quarter | Rate | Primary source |
-|---|---|---|
-| Q1 2025 (Jan-Mar) | 7% | Rev. Rul. 2024-23 |
-| Q2 2025 (Apr-Jun) | 7% | Rev. Rul. 2025-2 |
-| Q3 2025 (Jul-Sep) | 7% | Rev. Rul. 2025-10 |
-| Q4 2025 (Oct-Dec) | 7% | Rev. Rul. 2025-18 |
-| Q1 2026 (Jan-Mar) | 7% | Rev. Rul. 2025-25 |
-
-**Note:** The underpayment penalty rate under §6654 equals the federal short-term rate (AFR) plus 3 percentage points, compounded daily. The rates above are illustrative based on published rates through early 2026. The reviewer must verify the applicable rate for each quarter from the IRS's published Revenue Rulings, as the rate changes quarterly.
-
-### Related figures from upstream skills (for context)
-
-| Figure | Value for TY2025 | Primary source |
-|---|---|---|
-| Social Security wage base | $176,100 | SSA annual announcement |
-| SE tax rate (OASDI + Medicare) | 15.3% (12.4% + 2.9%) | IRC §1401(a), (b) |
-| Additional Medicare Tax threshold (single) | $200,000 | IRC §3101(b)(2)(C) |
-| Additional Medicare Tax rate | 0.9% | IRC §3101(b)(2) / §1401(b)(2) |
-| Net Investment Income Tax rate | 3.8% | IRC §1411(a)(1) |
-| NIIT threshold (single) | $200,000 | IRC §1411(b) |
-| NIIT threshold (MFJ) | $250,000 | IRC §1411(b) |
+| Ambiguity | Default |
+|---|---|
+| Prior year AGI unknown | Assume > $150K; use 110% |
+| Underpayment rate uncertain | Use most recently published rate |
+| W-2 withholding + SE income | Compute explicitly; do not assume W-2 covers SE |
+| Annualized method considered | Default to equal instalments; flag for reviewer |
+| Mid-year income uncertain | Annualize YTD + 10% buffer |
+| Prior year return not filed | Use last filed return; flag |
 
 ---
 
-## Section 4 — Primary source library
+## Section 2 -- Required inputs and refusal catalogue
 
-### Statute (Internal Revenue Code, Title 26 USC)
+### Required inputs
 
-- **IRC §6654** — Failure by individual to pay estimated income tax (the master section)
-- **IRC §6654(a)** — Addition to the tax (the penalty is technically an "addition to tax," not a penalty)
-- **IRC §6654(b)** — Amount of underpayment; role of withholding
-- **IRC §6654(c)** — Required installment amounts (25% of required annual payment each quarter)
-- **IRC §6654(d)(1)** — Required annual payment: lesser of 90% current year or 100%/110% prior year
-- **IRC §6654(d)(1)(C)** — 110% prior-year threshold for high-income taxpayers (AGI > $150K)
-- **IRC §6654(d)(2)** — Annualized income installment method
-- **IRC §6654(e)(1)** — Exception: no penalty if tax liability < $1,000 after credits and withholding
-- **IRC §6654(e)(2)** — Exception: no penalty if withholding covers 100% of prior-year tax
-- **IRC §6654(e)(3)** — Waiver for casualty, disaster, or other unusual circumstances; waiver for newly retired or disabled taxpayers
-- **IRC §6654(h)** — Special rule: filing by January 31 eliminates 4th installment requirement
-- **IRC §6654(l)** — Application to self-employment tax
-- **IRC §6621(a)(2)** — Underpayment rate (federal short-term rate + 3 percentage points)
-- **IRC §6622** — Interest compounded daily
-- **IRC §1401** — Self-employment tax rates
-- **IRC §1402** — Net earnings from self-employment
-- **IRC §3402** — Income tax collected at source (withholding)
+**Minimum viable** -- expected total federal tax (income tax + SE tax + NIIT + Additional Medicare Tax), prior year total tax and AGI, expected withholding from all sources.
 
-### IRS Forms and Instructions
+**Recommended** -- prior year 1040 or transcript, current year Schedule C net profit estimate, W-2 withholding from spouse if MFJ.
 
-- **Form 1040-ES (2025)** — Estimated Tax for Individuals, including the Estimated Tax Worksheet
-- **Form 2210 (2025)** — Underpayment of Estimated Tax by Individuals, Estates, and Trusts
-- **Form 2210, Schedule AI (2025)** — Annualized Income Installment Method
-- **Form 1040-ES Instructions (2025)** — Step-by-step estimated tax worksheet
-- **Form 2210 Instructions (2025)** — Penalty computation, waiver rules
+**Ideal** -- complete prior year return, current year quarterly P&L, upstream skill outputs (Schedule C, SE tax, QBI).
 
-### IRS Publications
+**Refusal policy if minimum is missing -- SOFT WARN.** Without prior year data, safe harbour cannot be computed.
 
-- **Pub 505 (2025)** — Tax Withholding and Estimated Tax
+### Refusal catalogue
 
-### Revenue Rulings (underpayment interest rates)
+**R-US-ET-1 -- Corporate estimated tax (1120-W).** Trigger: corporation. Message: "Corporate estimated tax is outside this skill."
 
-- **Rev. Rul. 2024-23** — Q1 2025 interest rate
-- Subsequent quarterly Revenue Rulings setting §6621 rates through the filing period
+**R-US-ET-2 -- Trust/estate estimated tax (1041-ES).** Trigger: trust or estate. Message: "Trust/estate estimated tax is outside this skill."
+
+**R-US-ET-3 -- State estimated tax.** Trigger: client asks about state payments. Message: "State estimated tax rules differ materially. Use the state-specific skill."
+
+**R-US-ET-4 -- Nonresident alien (1040-ES NR).** Trigger: nonresident alien. Message: "Nonresident alien estimated tax is outside this skill."
 
 ---
 
-## Section 5 — Determining whether estimated tax is required
+## Section 3 -- Payment pattern library
 
-### The $1,000 threshold test
+This is the deterministic pre-classifier for bank statement transactions. When a debit matches a pattern below, classify it as a federal estimated tax payment.
 
-Under IRC §6654(e)(1), no estimated tax penalty applies if the taxpayer expects to owe less than **$1,000** in tax after subtracting withholding and refundable credits. This is the first gate.
+### 3.1 IRS estimated tax debits
 
-**Computation:**
-
-```
-Expected total tax (income tax + SE tax + Additional Medicare Tax + NIIT)
-  MINUS  Tax withholding (W-2, 1099, voluntary withholding on SS benefits, etc.)
-  MINUS  Refundable credits (Earned Income Credit, Child Tax Credit refundable portion, etc.)
-  = Net tax due
-
-IF net tax due < $1,000 → No estimated payments required.
-```
-
-### The withholding safe harbor
-
-Under IRC §6654(e)(2), no estimated tax penalty applies if withholding from all sources (not just wages) equals or exceeds 100% of the prior year's total tax liability (110% if AGI > $150K, or > $75K if MFS).
-
-**Key point for sole proprietors:** Most sole proprietors have minimal or no withholding, making this safe harbor inapplicable. However, taxpayers with a spouse who has W-2 income can increase withholding on the spouse's W-2 (via Form W-4) to cover the self-employment tax liability. This is a legitimate and common strategy.
-
-### When estimated payments ARE required
-
-Estimated tax payments are required when ALL of the following are true:
-
-1. The taxpayer expects to owe $1,000 or more after withholding and credits
-2. The taxpayer's withholding does not meet the prior-year safe harbor (100% or 110%)
-3. The taxpayer is not otherwise exempt (e.g., prior year was a full 12-month year with zero tax liability — IRC §6654(e)(2) second sentence)
-
----
-
-## Section 6 — Computing the required annual payment
-
-### Two methods — taxpayer uses the LESSER amount
-
-Under IRC §6654(d)(1), the required annual payment is the **lesser of:**
-
-**Method A — Current-year method:**
-90% of the tax shown on the current year return (TY2025)
-
-**Method B — Prior-year method:**
-100% of the tax shown on the prior year return (TY2024) — OR 110% if the prior year AGI exceeded $150,000 ($75,000 if MFS)
-
-### Prior-year safe harbor rules in detail
-
-| Prior year AGI | Safe harbor percentage | IRC cite |
+| Pattern | Treatment | Notes |
 |---|---|---|
-| AGI ≤ $150,000 (≤ $75,000 MFS) | 100% of prior year tax | §6654(d)(1)(B) |
-| AGI > $150,000 (> $75,000 MFS) | 110% of prior year tax | §6654(d)(1)(C) |
+| IRS, INTERNAL REVENUE SERVICE | Federal estimated payment | Match with Apr/Jun/Sep/Jan timing |
+| EFTPS, ELECTRONIC FED TAX | Federal estimated payment | EFTPS payment |
+| IRS DIRECT PAY | Federal estimated payment | IRS online payment |
+| 1040-ES, 1040ES | Federal estimated payment | Explicit form reference |
+| ESTIMATED TAX PAYMENT, EST TAX | Federal estimated payment | Explicit description |
+| US TREASURY, TREASURY 310 | Federal estimated payment | Government payee |
 
-**Requirements for using the prior-year safe harbor:**
-- The prior year must have been a 12-month tax year
-- The taxpayer must have filed a return for the prior year (or a return was filed for them)
-- The prior year return must show a tax liability (if prior year tax was zero, the required annual payment under Method B is zero — meaning no estimated payments are required under this method)
+### 3.2 Timing-based identification
 
-### The prior-year-tax-was-zero rule
+| Debit date range | Likely instalment | Confidence |
+|---|---|---|
+| 10 April -- 20 April | 1st instalment (Apr 15) | High if IRS payee |
+| 10 June -- 20 June | 2nd instalment (Jun 15/16) | High |
+| 10 September -- 20 September | 3rd instalment (Sep 15) | High |
+| 10 January -- 20 January | 4th instalment (Jan 15) | High |
 
-If the taxpayer filed a prior-year return showing zero tax liability and the prior year was a full 12-month year, no estimated tax penalty can apply for the current year under the prior-year safe harbor, regardless of how much tax is owed in the current year. IRC §6654(e)(2). This is a powerful planning tool for a taxpayer's first profitable year.
+### 3.3 Related but NOT federal estimated tax
 
-### Required annual payment worksheet
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STATE TAX, NYS, CA FTB, IL DOR | EXCLUDE | State estimated tax |
+| FICA, SOCIAL SECURITY | EXCLUDE | Employment tax (if separate) |
+| IRS PENALTY, IRS INTEREST | EXCLUDE | Penalty/interest |
+| IRS REFUND, TAX REFUND | Flag for reviewer | Refund |
+| 1040 BALANCE, TAX DUE | Flag for reviewer | Annual return balance payment |
 
-```
-Line 1.  Current year expected tax (income tax + SE tax + AMT + NIIT + Additional Medicare Tax)
-Line 2.  Current year credits (nonrefundable)
-Line 3.  Line 1 minus Line 2
-Line 4.  Current year other taxes (if any)
-Line 5.  Line 3 plus Line 4 = Total current year expected tax
-Line 6.  Current year withholding (all sources)
-Line 7.  Line 5 minus Line 6 = Net expected tax due
-         IF Line 7 < $1,000 → STOP. No estimated payments required.
-Line 8.  90% of Line 5 (current year method)
-Line 9.  Prior year tax from TY2024 return
-Line 10. Prior year AGI from TY2024 return
-         IF Line 10 > $150,000 ($75,000 MFS): Line 11 = Line 9 x 110%
-         ELSE: Line 11 = Line 9 x 100%
-Line 12. Required annual payment = LESSER of Line 8 or Line 11
-Line 13. Line 12 minus Line 6 (withholding) = Net estimated payments required
-Line 14. Each quarterly payment = Line 13 / 4
-```
+### 3.4 Withholding vs estimated payments
+
+W-2 withholding appears as employer deductions on pay stubs, not as separate bank debits. Do not confuse employer withholding with estimated tax payments.
 
 ---
 
-## Section 7 — Quarterly installment allocation
+## Section 4 -- Worked examples
 
-### Standard method: equal installments
+### Example 1 -- Basic prior-year safe harbour
 
-Under §6654(c), the required installment for each quarter is **25%** of the required annual payment. The four payments are due on the dates listed in Section 3.
+**Input:** Single. TY2024 AGI = $95,000. TY2024 tax = $18,000. Expected TY2025 tax = $22,000. No withholding.
 
-### Annualized income installment method (Form 2210 Schedule AI)
+| Method | Amount |
+|---|---|
+| Prior year (100%) | $18,000 |
+| Current year (90%) | $19,800 |
+| Required (lesser) | $18,000 |
+| Quarterly | $4,500 |
 
-For taxpayers whose income is not earned evenly throughout the year (common for freelancers with seasonal work, large one-time payments, or ramp-up periods), the annualized income installment method under IRC §6654(d)(2) may reduce or eliminate underpayment penalties for earlier quarters.
+### Example 2 -- High-income 110% rule
 
-**How it works:**
+**Input:** MFJ. TY2024 AGI = $210,000. TY2024 tax = $42,000. Expected TY2025 tax = $55,000.
 
-The method annualizes the taxpayer's income for each cumulative period:
+| Method | Amount |
+|---|---|
+| Prior year (110%) | $46,200 |
+| Current year (90%) | $49,500 |
+| Required (lesser) | $46,200 |
+| Quarterly | $11,550 |
+
+### Example 3 -- Withholding eliminates requirement
+
+**Input:** MFJ. Spouse W-2 withholding = $25,000. TY2024 tax = $20,000. AGI = $120,000.
+
+**Output:** Withholding ($25,000) > 100% prior year ($20,000). No estimated payments required.
+
+### Example 4 -- Under $1,000 threshold
+
+**Input:** Expected TY2025 tax = $5,200. Part-time W-2 withholding = $4,500. Net = $700.
+
+**Output:** Net tax due $700 < $1,000. No estimated payments required.
+
+### Example 5 -- Bank statement classification
+
+**Input line:** `04/15/2025 ; IRS DIRECT PAY EST TAX ; DEBIT ; -4,500.00 ; USD`
+
+**Classification:** Federal estimated tax payment, 1st instalment TY2025. Tax payment -- not deductible on Schedule C.
+
+---
+
+## Section 5 -- Computation rules
+
+### 5.1 The $1,000 threshold test
+
+```
+expected_tax = income_tax + SE_tax + Additional_Medicare + NIIT
+net_tax_due = expected_tax - withholding - refundable_credits
+if net_tax_due < 1,000: no estimated payments required
+```
+
+### 5.2 Required annual payment
+
+Required = lesser of:
+- **Method A (current year):** 90% of TY2025 tax
+- **Method B (prior year):** 100% of TY2024 tax (110% if AGI > $150K / $75K MFS)
+
+### 5.3 Prior year safe harbour requirements
+
+- Prior year must be 12-month tax year
+- Prior year return must be filed
+- If prior year tax was zero: required annual payment under Method B = $0
+
+### 5.4 Quarterly instalments
+
+Each instalment = required annual payment / 4 (25% each).
+
+### 5.5 Annualized income instalment method (Form 2210 Schedule AI)
 
 | Period | Months | Annualization factor |
 |---|---|---|
-| Period 1 | Jan 1 - Mar 31 | 4 |
-| Period 2 | Jan 1 - May 31 | 2.4 |
-| Period 3 | Jan 1 - Aug 31 | 1.5 |
-| Period 4 | Jan 1 - Dec 31 | 1 |
+| Period 1 | Jan-Mar | 4 |
+| Period 2 | Jan-May | 2.4 |
+| Period 3 | Jan-Aug | 1.5 |
+| Period 4 | Jan-Dec | 1 |
 
-**For each period:**
-1. Compute actual income (Schedule C net profit + other income) for the cumulative months
-2. Multiply by the annualization factor to get annualized income
-3. Compute annualized tax on that income
-4. The required installment is 25% of annualized tax (cumulative), minus payments already made
+Required instalment = 25% of annualized tax, minus prior payments. Must be elected for all four quarters.
 
-**When to use it:**
-- Freelancer earns most income in Q3/Q4 and would face penalties under the standard method for Q1/Q2 underpayment
-- Taxpayer received a large one-time payment that skews annual income
-- New business started mid-year
+### 5.6 Withholding strategy (MFJ)
 
-**Important:** The annualized method is elected on Form 2210 and requires completing Schedule AI. The taxpayer must use the method for all four quarters — they cannot use it selectively for only the quarters where it helps.
+Increase W-2 spouse's withholding via Form W-4 Step 4(c). Withholding is treated as paid ratably throughout the year even if changed mid-year.
+
+### 5.7 January 31 filing exception
+
+If return filed and all tax paid by January 31, 2026: 4th instalment not required.
 
 ---
 
-## Section 8 — Underpayment penalty computation (Form 2210)
+## Section 6 -- Penalties and interest
 
-### What the "penalty" actually is
+### 6.1 Underpayment penalty (Form 2210)
 
-The estimated tax penalty under §6654 is technically an "addition to tax," not a penalty. It is computed as interest on the underpayment amount for the period of underpayment. The rate is the federal short-term rate plus 3 percentage points (§6621(a)(2)), compounded daily (§6622).
+The "penalty" is interest on the underpayment. Rate = federal short-term rate + 3 percentage points, compounded daily.
 
-### Computation steps
+### 6.2 Published rates (TY2025)
 
-For each installment period:
+| Quarter | Rate |
+|---|---|
+| Q1 2025 | 7% |
+| Q2 2025 | 7% |
+| Q3 2025 | 7% |
+| Q4 2025 | 7% |
+| Q1 2026 | 7% |
+
+(Verify against IRS Revenue Rulings.)
+
+### 6.3 Per-quarter computation
 
 ```
-Step 1. Required installment amount (25% of required annual payment, or annualized amount)
-Step 2. Amount paid by the due date (estimated payments + allocable withholding)
-Step 3. Underpayment = Step 1 minus Step 2 (if positive)
-Step 4. Period of underpayment:
-        - Starts: installment due date
-        - Ends: EARLIER of (a) actual payment date, or (b) April 15 of following year
-Step 5. Penalty = Underpayment x daily rate x number of days in the period
+for each quarter:
+    required = 25% of required annual payment
+    paid = estimated payments + allocable withholding
+    underpayment = max(0, required - paid)
+    period = instalment_due_date to earlier(payment_date, Apr 15 next year)
+    penalty = underpayment x daily_rate x days_in_period
 ```
 
-### Withholding allocation
+### 6.4 Waiver provisions
 
-Under §6654(b)(2), withholding is treated as paid ratably throughout the year unless the taxpayer elects to use actual withholding dates by filing Form 2210 with box A checked. For most sole proprietors (whose withholding, if any, comes from a spouse's W-2 throughout the year), the ratable allocation is favorable.
-
-### Penalty waiver provisions
-
-The IRS may waive the penalty under IRC §6654(e)(3) in two cases:
-
-1. **Casualty, disaster, or other unusual circumstances** where imposition of the penalty would be against equity and good conscience
-2. **Retirement or disability** — the taxpayer retired (after reaching age 62) or became disabled in the current or prior tax year, and the underpayment was due to reasonable cause and not willful neglect
-
-Waiver is requested on Form 2210 by checking box B (Part II) and attaching an explanation.
-
-### When the IRS computes the penalty for you
-
-If the taxpayer does not file Form 2210, the IRS will compute the penalty and send a bill. In many cases, taxpayers choose to let the IRS compute the penalty because:
-- It is often small
-- The IRS computation may be more favorable if withholding timing is beneficial
-- It avoids the complexity of Form 2210
-
-However, filing Form 2210 is **required** if the taxpayer uses the annualized income installment method, requests a waiver, or wants to use actual withholding dates.
+IRS may waive under IRC 6654(e)(3) for: casualty/disaster/unusual circumstances, retirement after age 62, or disability.
 
 ---
 
-## Section 9 — Special situations
+## Section 7 -- Special situations
 
-### Withholding strategy for married couples
+### 7.1 Withholding strategy for married couples
 
-When one spouse is self-employed and the other has W-2 income, a common and fully legitimate strategy is to increase the W-2 spouse's withholding to cover both spouses' tax liability. This eliminates the need for estimated payments entirely if withholding meets the safe harbor.
+Self-employed spouse + W-2 spouse: increase W-4 extra withholding to cover both. Withholding treated as ratable even if changed mid-year -- advantage over quarterly estimates.
 
-**How to implement:** File a new Form W-4 with the W-2 employer, increasing the "Extra withholding" amount on Step 4(c) by the quarterly estimated tax amount times the number of remaining pay periods.
+### 7.2 First year of self-employment
 
-**Advantage:** Withholding is treated as paid ratably throughout the year (§6654(b)(2)), even if the W-4 change happens mid-year. This is a planning advantage over estimated payments, which must be timely per quarter.
+If prior year tax was zero: required annual payment under prior-year method = $0. No estimated payments required under that method.
 
-### First year of self-employment
+### 7.3 Mid-year income changes
 
-If the taxpayer had zero tax liability in the prior year (e.g., the prior year was the taxpayer's first year, or they had significant losses), the prior-year safe harbor requires zero estimated payments. The current-year method (90%) still applies as an alternative ceiling, but the taxpayer need only pay the lesser of the two methods — which is zero.
+Annualized method (Section 5.5) adjusts for uneven income. Alternatively, adjust future estimates up or down.
 
-### Mid-year income changes
+### 7.4 Farmer/fisherman exception
 
-If the taxpayer's income changes significantly mid-year (e.g., loss of a major client, new contract), the annualized income installment method (Section 7) is the primary tool for adjusting installments without penalty. The taxpayer may also simply adjust future estimated payments up or down, but the safe harbor is computed on the full-year required annual payment, not quarter-by-quarter.
-
-### Fiscal year taxpayers
-
-This skill covers calendar year taxpayers only (virtually all sole proprietors). Fiscal year filers have different installment due dates under §6654(c)(2) and should consult IRS Publication 505 or a tax professional.
+2/3 of income from farming/fishing: single instalment by January 15, or file by March 1 and pay in full.
 
 ---
 
-## Section 10 — Conservative defaults table
+## Section 8 -- Edge cases
 
-| Situation | Conservative default | Rationale |
-|---|---|---|
-| Prior-year AGI unknown | Assume > $150K; use 110% safe harbor | Avoids underpayment if AGI turns out to be high |
-| Underpayment rate uncertain for future quarter | Use most recently published rate | Rates rarely drop dramatically; small variance |
-| Taxpayer has both W-2 withholding and SE income | Do not assume W-2 covers SE; compute explicitly | Avoids surprise underpayment |
-| Taxpayer is unsure whether to use annualized method | Default to equal installments; flag annualized option for reviewer | Annualized method requires Schedule AI and increases complexity |
-| Mid-year estimate of SE income uncertain | Use year-to-date income, annualize, and add 10% buffer | Conservative cushion against Q4 surge |
-| Prior year return not yet filed | Use last filed return; flag for reviewer | Cannot compute safe harbor without prior year data |
+**EC1 -- Prior year short tax year.** Prior year < 12 months: prior-year safe harbour unavailable. Only 90% current year.
 
----
+**EC2 -- Prior year zero tax but high AGI.** Zero tax = $0 required annual payment under Method B. The zero-tax rule dominates.
 
-## Section 11 — PROHIBITIONS
+**EC3 -- Taxpayer dies mid-year.** Estimated payments required only through quarter of death.
 
-The skill MUST NOT:
+**EC4 -- Large Q4 income.** Prior-year safe harbour typically best. Annualized method shows low Q1-Q3 and large Q4.
 
-1. **File estimated payments or generate payment instructions** — the skill computes amounts; payment execution is the taxpayer's responsibility
-2. **Recommend underpaying estimated tax as a "strategy"** — underpayment triggers statutory penalties; the skill never advises intentional underpayment
-3. **Compute state estimated tax** — state rules differ materially (different safe harbors, different installment schedules); defer to state-specific skills
-4. **Override the reviewer's judgment on method selection** — the choice between equal installments and annualized method, or between prior-year and current-year safe harbor, is the reviewer's call
-5. **Guarantee that a particular safe harbor eliminates all penalties** — the skill surfaces the rules but cannot predict final tax liability mid-year
-6. **Advise on estimated tax for entities other than sole proprietors / disregarded SMLLCs** — partnerships, S-corps, C-corps, and trusts have different estimated tax regimes
-7. **Compute the Additional Medicare Tax or NIIT in isolation** — these are computed by upstream skills; this skill uses their outputs
-8. **Apply penalty waiver without reviewer approval** — waiver under §6654(e)(3) is discretionary with the IRS and fact-intensive
+**EC5 -- W-2 to self-employment mid-year.** W-2 withholding treated as ratable. Annualized method reduces Q1/Q2 required amounts.
+
+**EC6 -- Overpayment.** Applied to next year or refunded (Form 1040 line 36).
+
+**EC7 -- Unequal payments.** Penalties computed per-quarter. Q1 shortfall not cured by Q2 overpayment.
+
+**EC8 -- Disaster area relief.** IRS may postpone due dates. Verify announcements.
+
+**EC9 -- Farmer/fisherman.** Single January 15 payment or file by March 1.
+
+**EC10 -- NIIT creates unexpected requirement.** Investment income above NIIT threshold ($200K single / $250K MFJ) adds 3.8% to total tax.
 
 ---
 
-## Section 12 — Edge cases
+## Section 9 -- Self-checks
 
-**Edge Case 1 — Prior year was a short tax year.**
-If the taxpayer's prior year return covered fewer than 12 months (e.g., first-year return for a taxpayer who changed tax years), the prior-year safe harbor does not apply. Only the current-year 90% method is available. IRC §6654(d)(1)(B)(ii). Flag for reviewer.
+Before delivering output, verify:
 
-**Edge Case 2 — Prior year tax was zero but AGI was high.**
-If the prior year return showed zero tax liability (due to credits, NOLs, or other items) but high AGI, the required annual payment under the prior-year method is $0, even though the 110% threshold would technically apply. The zero-tax rule dominates. §6654(e)(2).
-
-**Edge Case 3 — Taxpayer dies mid-year.**
-Estimated tax payments are required only through the quarter in which the taxpayer dies. The estate takes over for subsequent periods. The decedent's final return Form 2210 should reflect only the installments through the date of death. Treas. Reg. §1.6654-2(d).
-
-**Edge Case 4 — Large Q4 income for freelancer.**
-A freelancer earns $20K in Q1-Q3 combined but lands a $180K project payment in Q4. Under equal installments, Q1-Q3 payments based on prior-year safe harbor would be adequate. Under the current-year method, the annualized method on Schedule AI would show low required installments for Q1-Q3 and a large Q4 installment. The prior-year safe harbor is typically the better choice here if available.
-
-**Edge Case 5 — Taxpayer switches from W-2 to self-employment mid-year.**
-The taxpayer had W-2 withholding through June, then became self-employed. Withholding from the W-2 period is treated as paid ratably across all four quarters (unless Form 2210 box A is checked). This ratable treatment may cover early installments. The annualized method can reduce required installments for Q1/Q2 when self-employment income only existed in Q3/Q4.
-
-**Edge Case 6 — Estimated payments exceed actual tax liability.**
-Overpayments are applied to the following year's estimated tax or refunded, at the taxpayer's election (Form 1040, line 36). The skill should note the overpayment and flag the election choice for the reviewer.
-
-**Edge Case 7 — Taxpayer makes unequal estimated payments.**
-The safe harbor analysis compares total payments to total required, but underpayment penalties are computed per-quarter. A taxpayer who pays $0 in Q1 and makes up the shortfall in Q2 still owes a penalty for Q1's underpayment period (Q1 due date through Q2 payment date). The skill must compute penalties quarter-by-quarter, not just on the annual shortfall.
-
-**Edge Case 8 — Disaster area relief extends the due date.**
-IRS disaster relief announcements (e.g., for hurricanes, wildfires) often postpone estimated tax due dates for affected taxpayers. The skill should check whether any IRS disaster relief notice applies to the taxpayer's area and adjust due dates accordingly. Flag for reviewer verification.
-
-**Edge Case 9 — Farmer or fisherman exception.**
-Taxpayers who earn at least 2/3 of their gross income from farming or fishing may file only one estimated payment (by January 15) or file their return by March 1 and pay in full to avoid penalties entirely. IRC §6654(i). This skill flags the exception but does not adjudicate farming/fishing income classification.
-
-**Edge Case 10 — Net Investment Income Tax creates an unexpected estimated tax requirement.**
-A sole proprietor who also has significant investment income (rental, capital gains, passive income) above the NIIT threshold ($200K single, $250K MFJ) must include the 3.8% NIIT in estimated tax calculations. The NIIT is not part of SE tax but is part of total tax liability.
+- [ ] $1,000 threshold test applied
+- [ ] Both safe harbour methods computed (prior year and current year)
+- [ ] Correct prior-year percentage used (100% vs 110% based on AGI)
+- [ ] All four quarterly due dates correct
+- [ ] Withholding from all sources included
+- [ ] SE tax + income tax + NIIT + Additional Medicare included in total tax
+- [ ] Annualized method flagged if income is uneven
+- [ ] First-year zero-prior-tax rule checked
+- [ ] State estimated tax deferred to state skill
+- [ ] Output labelled as estimated until reviewer confirms
 
 ---
 
-## Section 13 — Test suite
+## Section 10 -- Test suite
 
-### Test 1 — Basic prior-year safe harbor (standard)
+### Test 1 -- Basic prior-year safe harbour
+**Input:** Single. TY2024 AGI $95K, tax $18K. TY2025 expected $22K. No withholding.
+**Expected:** Required = $18,000 (100% prior). Quarterly = $4,500.
 
-**Input:** Sole proprietor, single filer, TY2024 AGI = $95,000, TY2024 total tax = $18,000. Expected TY2025 total tax = $22,000. No withholding.
-**Expected output:**
-- Prior-year safe harbor: 100% of $18,000 = $18,000
-- Current-year method: 90% of $22,000 = $19,800
-- Required annual payment: lesser = $18,000
-- Quarterly payment: $18,000 / 4 = $4,500 per quarter
-- Due dates: Apr 15, Jun 16, Sep 15, 2025; Jan 15, 2026
+### Test 2 -- High-income 110%
+**Input:** MFJ. TY2024 AGI $210K, tax $42K. TY2025 expected $55K.
+**Expected:** Required = $46,200 (110% prior). Quarterly = $11,550.
 
-### Test 2 — High-income prior-year safe harbor (110%)
+### Test 3 -- Withholding covers safe harbour
+**Input:** MFJ. Spouse withholding $25K. TY2024 tax $20K. AGI $120K.
+**Expected:** No estimated payments required.
 
-**Input:** Sole proprietor, MFJ, TY2024 AGI = $210,000, TY2024 total tax = $42,000. Expected TY2025 total tax = $55,000. No withholding.
-**Expected output:**
-- Prior-year safe harbor: 110% of $42,000 = $46,200 (AGI > $150K)
-- Current-year method: 90% of $55,000 = $49,500
-- Required annual payment: lesser = $46,200
-- Quarterly payment: $46,200 / 4 = $11,550 per quarter
+### Test 4 -- Below $1,000
+**Input:** Expected tax $5,200. W-2 withholding $4,500.
+**Expected:** Net $700 < $1,000. No payments required.
 
-### Test 3 — Withholding eliminates estimated tax requirement
+### Test 5 -- Underpayment penalty
+**Input:** Required $5,000/quarter. Q1 paid $3,000. Q2-Q4 paid $5,000. Rate 7%.
+**Expected:** Q1 underpayment $2,000. Penalty approx. $140 (full year).
 
-**Input:** Sole proprietor, MFJ. Spouse has W-2 withholding of $25,000/year. TY2024 total tax = $20,000. TY2024 AGI = $120,000. Expected TY2025 total tax = $28,000.
-**Expected output:**
-- Prior-year safe harbor: 100% of $20,000 = $20,000
-- Spouse's withholding ($25,000) exceeds prior-year safe harbor ($20,000)
-- No estimated payments required
-- Result: withholding covers the safe harbor entirely
+### Test 6 -- First year, zero prior tax
+**Input:** First year. No prior return.
+**Expected:** Prior year method = $0. No payments required under that method.
 
-### Test 4 — Annualized income installment method
-
-**Input:** Sole proprietor, single filer. No prior year return (first year of business). Income: Q1 = $5,000, Q2 = $8,000, Q3 = $12,000, Q4 = $75,000. Total SE income = $100,000. Expected total tax = $25,000. No withholding.
-**Expected output:**
-- Prior-year safe harbor: $0 (no prior year return / zero prior year tax)
-- Required annual payment: lesser of 90% x $25,000 = $22,500 or $0 = **$0**
-- No estimated payments required under prior-year method
-- However, if prior-year method unavailable (no return filed): current-year 90% applies
-- Flag for reviewer: first-year taxpayer, confirm prior year filing status
-- If annualized method elected: Q1 installment = 25% x (tax on $5,000 x 4) = modest amount; Q4 installment absorbs remainder
-
-### Test 5 — Underpayment penalty computation
-
-**Input:** Sole proprietor, single filer. Required annual payment = $20,000 ($5,000/quarter). Actual payments: Q1 = $3,000, Q2 = $5,000, Q3 = $5,000, Q4 = $5,000. Total paid = $18,000. Underpayment rate = 7%.
-**Expected output:**
-- Q1 underpayment: $5,000 - $3,000 = $2,000
-- Q1 penalty period: Apr 15, 2025 through Apr 15, 2026 (or actual payment date if earlier)
-- Assuming the $2,000 shortfall is not made up until filing: penalty = $2,000 x 7% x (365/365) = approximately $140
-- Q2-Q4: no underpayment (payments met required installments)
-- Total Form 2210 penalty: approximately $140
-- Note: excess Q2-Q4 payments do not retroactively cure Q1 underpayment for penalty purposes
-
-### Test 6 — Under $1,000 threshold eliminates requirement
-
-**Input:** Sole proprietor, single filer. Expected TY2025 total tax = $5,200. W-2 withholding from part-time job = $4,500. Net expected tax due = $700.
-**Expected output:**
-- Net tax due ($700) < $1,000 threshold
-- No estimated payments required under §6654(e)(1)
-- No penalty regardless of whether estimated payments are made
+### Test 7 -- Farmer exception
+**Input:** 2/3+ farming income. Expected tax $25,000.
+**Expected:** Single payment Jan 15 or file by Mar 1.
 
 ---
 
-## Section 14 — Cross-skill references
+## Prohibitions
 
-**Inputs from upstream skills:**
-
-- **From `us-schedule-c-and-se-computation`:** Schedule C net profit (Line 31), SE tax (Schedule SE), deductible half of SE tax
-- **From `us-form-1040-self-employed-positions`:** QBI deduction amount, SE health insurance deduction, retirement contribution deduction, total 1040 tax liability after all above-the-line deductions and credits
-
-**Outputs to downstream skills:**
-
-- This skill is the terminal skill in the federal pipeline. Its output is the quarterly payment schedule and any Form 2210 penalty computation for the reviewer's brief.
-
-**State interaction:**
-
-- State estimated tax skills (e.g., `ca-estimated-tax-540es`) operate independently but may reference the federal estimated tax computation as a starting point. This skill includes a pointer to state skills but does not compute state amounts.
-
----
-
-## Section 15 — Reference material
-
-### Validation status
-
-This file is v0.2 of `us-quarterly-estimated-tax`, drafted in April 2026. Year-specific figures are verified against IRC §6654, IRS Form 1040-ES (2025) Instructions, IRS Form 2210 (2025) Instructions, and IRS Publication 505 (2025).
-
-### Known gaps
-
-1. The underpayment interest rates are set quarterly and may change. The rates in Section 3 reflect published rates through early 2026. The reviewer must verify rates from the applicable IRS Revenue Rulings.
-2. The skill does not handle AMT estimated tax for taxpayers subject to the alternative minimum tax. AMT increases total tax liability and therefore increases the estimated tax requirement, but AMT computation is out of scope.
-3. Disaster area relief due date extensions are flagged but not tracked automatically. The reviewer must check IRS disaster relief announcements for the taxpayer's geographic area.
-4. The interaction between estimated tax and the premium tax credit (Form 8962) is not addressed. Taxpayers receiving advance premium tax credits may have an unexpected tax liability at filing if income exceeds estimates.
-
-### Change log
-
-- **v0.1 (April 2026):** Stub.
-- **v0.2 (April 2026):** Full skill. Tax year 2025. Built on `us-tax-workflow-base` v0.1.
+- NEVER file estimated payments or generate payment instructions -- compute amounts only
+- NEVER recommend intentional underpayment as a strategy
+- NEVER compute state estimated tax -- defer to state skills
+- NEVER override reviewer's method selection
+- NEVER guarantee a safe harbour eliminates all penalties mid-year
+- NEVER advise on entities other than sole proprietors / disregarded SMLLCs
+- NEVER apply penalty waiver without reviewer approval
+- NEVER present amounts as definitive -- label as estimated
 
 ---
 

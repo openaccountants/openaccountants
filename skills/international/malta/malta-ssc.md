@@ -1,319 +1,447 @@
 ---
 name: malta-ssc
-description: Use this skill whenever asked about Malta Social Security Contributions (SSC) for self-employed or self-occupied individuals. Trigger on phrases like "how much SSC do I pay", "Class 2 contributions", "social security self-employed", "SSC calculation", "SSC arrears", "do I need to pay SSC", "SSC and income tax", or any question about Malta SSC obligations for a self-employed client. Also trigger when preparing a TA24 income tax return where SSC deductibility (Box 20) is relevant. This skill covers Class 2 rates, min/max caps, payment schedule, registration, penalties, interaction with income tax, TA22 part-time regime, and edge cases. ALWAYS read this skill before touching any SSC-related work.
+description: >
+  Use this skill whenever asked about Malta Social Security Contributions (SSC) for self-employed or self-occupied individuals. Trigger on phrases like "how much SSC do I pay", "Class 2 contributions", "social security self-employed", "SSC calculation", "SSC arrears", "do I need to pay SSC", "SSC and income tax", "DSS payment", "Class 2 quarterly debit", or any question about Malta SSC obligations for a self-employed client. Also trigger when classifying bank statement transactions that relate to DSS debits, SSC direct debits, or government social security payments from BOV, HSBC, or other Maltese banks. Also trigger when preparing a TA24 income tax return where SSC deductibility (Box 20) is relevant. This skill covers Class 2 rates, min/max caps, payment schedule, registration, penalties, interaction with income tax, TA22 part-time regime, bank statement classification patterns, and edge cases. ALWAYS read this skill before touching any SSC-related work.
+version: 2.0
+jurisdiction: MT
+tax_year: 2026
+category: international
+depends_on:
+  - social-contributions-workflow-base
 ---
 
-# Malta Social Security Contributions (SSC) -- Self-Employed Skill
+# Malta Social Security Contributions (SSC) -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before computing or classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Malta |
-| Jurisdiction Code | MT |
+|---|---|
+| Country | Malta (Republic of Malta) |
 | Primary Legislation | Social Security Act, Chapter 318 |
 | Supporting Legislation | Income Tax Act Article 14 (SSC deductibility); Income Tax Act Article 4C (TA22 regime) |
 | Tax Authority | Department of Social Security (DSS), Malta |
 | Rate Publisher | MTCA (publishes annual rate tables) |
+| Self-employed rate | 15% of prior year net income (clamped to min/max) |
+| SA minimum (2026) | EUR 1,881.36/year (EUR 36.18/week) |
+| SC maximum, pre-1962 | EUR 3,825.12/year (EUR 73.56/week) |
+| SC maximum, post-1962 | EUR 4,362.28/year (EUR 83.89/week) |
+| Payment frequency | Quarterly |
+| Payment method | Direct debit or bank transfer to DSS |
+| Deadlines | Q1: 30 Apr, Q2: 31 Jul, Q3: 31 Oct, Q4: 31 Jan following year |
+| Currency | EUR only |
 | Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-| Validated By | Michael Cutajar |
-| Validation Date | March 2026 |
-| Skill Version | 1.0 |
-| Accora Integration | `ssc_rates` table, `calculate_ssc_class2()` RPC, `ssc-service.ts`, `tax-return-service.ts` Box 20 |
-| Confidence Coverage | Tier 1: rate calculation, min/max caps, payment schedule, TA22 rule. Tier 2: dual status edge cases, mid-year switches, pro-rata exemptions. Tier 3: disability exemptions, group pension arrangements. |
+| Validated by | Michael Cutajar |
+| Validation date | March 2026 |
 
----
-
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Warranted accountant must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before computing any SSC figure, you MUST know:
-
-1. **Birth year** [T1] -- determines SC maximum cap (pre/post 1 January 1962)
-2. **Employment status** [T1] -- self-occupied, self-employed, or dual (employed + side income)
-3. **Is this the first year of self-employment?** [T1] -- SA minimum applies legislatively
-4. **Prior year net self-employment income** [T1] -- SSC is always based on prior year, not current
-5. **Has a TA24 been filed for the prior year?** [T1] -- if not, SA minimum applies until assessment
-6. **Any full-time employment with Class 1 contributions?** [T1] -- if yes, no Class 2 due
-
-**If birth year is unknown, STOP. Do not compute SSC. Birth year is mandatory.**
-
----
-
-## Step 1: Determine Class [T1]
-
-**Legislation:** Social Security Act, Chapter 318
+**Class overview:**
 
 | Class | Who | Rate |
-|-------|-----|------|
+|---|---|---|
 | Class 1 | Employees | 10% employee + 10% employer |
 | Class 1A | Employers (maternity fund) | 0.3% of gross salary |
 | Class 2 | Self-employed / Self-occupied | 15% of net income (clamped to min/max) |
 
-**Self-occupied vs Self-employed (same rates, different benefits):**
-- Self-occupied: trades, businesses, professions (accountant, plumber, shop owner). Entitled to pension + short-term benefits (sickness, injury, maternity).
-- Self-employed: income from rents, investments, capital gains. Entitled to pension only.
+**Conservative defaults:**
 
-**If client is both fully employed (Class 1) and has side income:** Class 1 covers everything. NO Class 2 due. See Step 5.
+| Ambiguity | Default |
+|---|---|
+| Unknown birth year | STOP -- do not compute SSC without birth year |
+| Unknown employment status | Assume Class 2 applies (self-employed) |
+| Unknown prior year net income | Apply SA minimum (EUR 1,881.36) |
+| First year or no TA24 filed | SA minimum applies |
+| Unknown whether full-time employed | Ask -- do not assume Class 1 exemption |
+| Unknown whether DSS debit is SSC or penalty | Classify as SSC; flag for reviewer |
 
 ---
 
-## Step 2: Class 2 Rate Calculation [T1]
+## Section 2 -- Required inputs and refusal catalogue
 
-**Legislation:** Social Security Act, Chapter 318; MTCA Class 2 Rate Table 2026
+### Required inputs
 
-### Formula
+**Minimum viable** -- birth year and employment status. Without birth year, STOP. Do not compute SSC.
+
+**Recommended** -- prior year net self-employment income (from filed TA24), number of years of self-employment, and whether a TA24 has been filed for the prior year.
+
+**Ideal** -- DSS annual statement, bank statements showing quarterly SSC debits, prior year TA24 with Box 20 SSC deduction.
+
+### Refusal catalogue
+
+**R-MT-SSC-1 -- Birth year unknown.** *Trigger:* birth year not provided. *Message:* "Birth year is mandatory for SSC computation. The maximum contribution cap (SC) differs for persons born before vs on/after 1 January 1962. Cannot proceed without this information."
+
+**R-MT-SSC-2 -- SSC arrears computation.** *Trigger:* client has unpaid SSC from prior years. *Message:* "SSC arrears are computed at current rates (not historical rates) for post-1962 clients, with 1% per month penalties compounding indefinitely. Do not attempt to quantify arrears without a DSS statement. Escalate to a warranted accountant immediately."
+
+**R-MT-SSC-3 -- Disability or special exemptions.** *Trigger:* client claims disability exemption, student credited contributions, or pensioner pro-rata reduction. *Message:* "Exemptions and reduced rates for disability, students, and pensioners require case-specific confirmation from DSS. Escalate to a warranted accountant."
+
+**R-MT-SSC-4 -- Group pension arrangements.** *Trigger:* client asks about group pension or occupational scheme interaction with SSC. *Message:* "Group pension arrangements and their interaction with statutory SSC are outside the scope of this skill. Escalate to a warranted accountant."
+
+---
+
+## Section 3 -- Payment pattern library
+
+This is the deterministic pre-classifier for bank statement transactions related to social security. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
+
+**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. SSC payments always EXCLUDE from any VAT return or revenue/expense classification -- they are statutory personal obligations, not business supplies.
+
+### 3.1 DSS quarterly debits (Class 2 self-employed)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| DSS, DEPARTMENT OF SOCIAL SECURITY | EXCLUDE -- SSC payment | Quarterly Class 2 direct debit or bank transfer |
+| SOCIAL SECURITY, SOC SEC | EXCLUDE -- SSC payment | Same |
+| SSC, S.S.C. | EXCLUDE -- SSC payment | Abbreviated reference |
+| CLASS 2, CLASS TWO | EXCLUDE -- SSC payment | Explicit class reference |
+| KONTRIBUZZJONI SOCJALI | EXCLUDE -- SSC payment | Maltese-language reference |
+
+### 3.2 DSS debits appearing on specific Maltese banks
+
+| Bank | Typical debit description | Treatment |
+|---|---|---|
+| BOV (Bank of Valletta) | "DSS DIRECT DEBIT" or "DEPT OF SOCIAL SECURITY" | EXCLUDE -- SSC |
+| HSBC Malta | "DEPARTMENT OF SOCIAL SECURITY" or "DSS D/D" | EXCLUDE -- SSC |
+| APS Bank | "DSS" or "SOC SECURITY CONTRIB" | EXCLUDE -- SSC |
+| Lombard Bank | "SOCIAL SECURITY" | EXCLUDE -- SSC |
+| Revolut / Wise | Rare -- DSS debits typically come from local Maltese accounts | If present, EXCLUDE |
+
+### 3.3 Income tax payments (NOT SSC -- do not confuse)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CFR, COMMISSIONER FOR REVENUE | EXCLUDE -- income tax, not SSC | Tax payment, not social security |
+| INLAND REVENUE, IRD | EXCLUDE -- income tax | Same |
+| FSS, FINAL SETTLEMENT SYSTEM | EXCLUDE -- employer PAYE/FSS | Not Class 2 SSC |
+| PAYE, PAYER TAX | EXCLUDE -- employer withholding | Not Class 2 SSC |
+
+### 3.4 Salary and payroll (exclude from SSC classification)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, PAGA, WAGES (outgoing) | EXCLUDE -- payroll expense | Not an SSC payment |
+| SALARY, PAGA (incoming) | EXCLUDE -- employment income received | Not an SSC payment |
+
+### 3.5 Pension payments (received -- not SSC contributions)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| DSS PENSION, PENSJONI | EXCLUDE -- pension income received | Not a contribution payment |
+| OLD AGE PENSION | EXCLUDE -- pension income | Not a contribution |
+
+---
+
+## Section 4 -- Worked examples
+
+Six bank statement classifications showing SSC-related transactions from a hypothetical self-employed Maltese IT consultant.
+
+### Example 1 -- Standard quarterly SSC debit (BOV)
+
+**Input line:**
+`30.04.2026 ; DEPT OF SOCIAL SECURITY ; DEBIT ; Q1 2026 CLASS 2 ; -470.34 ; EUR`
+
+**Reasoning:**
+Matches "DEPT OF SOCIAL SECURITY" (pattern 3.1). Amount EUR 470.34 = SA minimum quarterly (EUR 1,881.36 / 4). This is the Q1 2026 Class 2 contribution. Exclude from VAT classification. Record as SSC expense deductible in Box 20 of TA24.
+
+**Classification:** EXCLUDE -- SSC payment. Deductible in TA24 Box 20.
+
+### Example 2 -- Mid-range SSC quarterly debit (HSBC)
+
+**Input line:**
+`31.07.2026 ; DSS D/D ; DEBIT ; SOCIAL SECURITY CONTRIBUTION ; -750.00 ; EUR`
+
+**Reasoning:**
+Matches "DSS D/D" (pattern 3.2, HSBC). Amount EUR 750.00 = quarterly payment for SB category (EUR 3,000 annual / 4 = EUR 750). Implies prior year net income of EUR 20,000 (15% x EUR 20,000 = EUR 3,000). Exclude from VAT.
+
+**Classification:** EXCLUDE -- SSC payment. Deductible in TA24 Box 20.
+
+### Example 3 -- CFR tax payment (NOT SSC)
+
+**Input line:**
+`30.06.2026 ; COMMISSIONER FOR REVENUE ; DEBIT ; PT 2026 ; -1,200.00 ; EUR`
+
+**Reasoning:**
+Matches "COMMISSIONER FOR REVENUE" (pattern 3.3). This is a provisional tax payment, NOT an SSC payment. Do not classify as social security. Exclude from VAT. Not deductible as SSC in Box 20 -- this is income tax.
+
+**Classification:** EXCLUDE -- income tax payment. NOT SSC.
+
+### Example 4 -- Salary outgoing (employer payroll, not SSC)
+
+**Input line:**
+`28.04.2026 ; JOHN DOE SALARY APR ; DEBIT ; PAGA ; -1,800.00 ; EUR`
+
+**Reasoning:**
+Matches "PAGA" / salary pattern (3.4). This is a wage payment to an employee, not an SSC contribution. Class 1 employer contributions may also appear separately but are payroll costs, not the client's Class 2 SSC.
+
+**Classification:** EXCLUDE -- payroll expense. NOT the client's Class 2 SSC.
+
+### Example 5 -- Pension income received (not a contribution)
+
+**Input line:**
+`05.05.2026 ; DSS PENSION ; CREDIT ; OLD AGE PENSION MAY ; +680.00 ; EUR`
+
+**Reasoning:**
+Matches "DSS PENSION" (pattern 3.5). This is a pension benefit RECEIVED, not a contribution paid. Do not confuse inbound DSS credits with outbound SSC debits. Exclude from VAT. This is taxable income on the TA24, not a Box 20 deduction.
+
+**Classification:** EXCLUDE from VAT. Taxable income (not an SSC deduction).
+
+### Example 6 -- Ambiguous DSS debit (penalty or arrears)
+
+**Input line:**
+`15.09.2026 ; DEPARTMENT OF SOCIAL SECURITY ; DEBIT ; ARREARS PAYMENT ; -2,400.00 ; EUR`
+
+**Reasoning:**
+Matches "DEPARTMENT OF SOCIAL SECURITY" (pattern 3.1) but the amount is irregular and reference says "ARREARS PAYMENT." This could include penalties (1% per month) compounded on top of unpaid contributions. Cannot separate principal from penalty without a DSS statement. Flag for reviewer.
+
+**Classification:** EXCLUDE from VAT. Flag for reviewer -- request DSS breakdown to split contribution principal (deductible in TA24 Box 20) from penalty (not deductible).
+
+---
+
+## Section 5 -- Tier 1 rules
+
+These rules apply when bank statement data is clear and all required inputs are available. Apply exactly as written.
+
+### Rule 1 -- SSC formula
+
 ```
-SSC = clamp(prior_year_net_income × 15%, minimum, maximum)
+SSC = clamp(prior_year_net_income x 15%, SA_minimum, SC_maximum)
 ```
 
-Where minimum and maximum are:
+Where:
+- SA minimum = EUR 1,881.36/year
+- SC maximum (pre-1962) = EUR 3,825.12/year
+- SC maximum (post-1962) = EUR 4,362.28/year
 
-| Category | Condition | Weekly | Annual |
-|----------|-----------|--------|--------|
-| SA (minimum) | Net income <= EUR 12,543.72 OR first year | EUR 36.18 | EUR 1,881.36 |
-| SB (15% rate) | EUR 12,543.73 to cap threshold | 15% of net | 15% of net |
-| SC (maximum, pre-1962) | Born before 1 Jan 1962, income above EUR 25,499.99 | EUR 73.56 | EUR 3,825.12 |
-| SC (maximum, post-1962) | Born on/after 1 Jan 1962, income above EUR 29,083.35 | EUR 83.89 | EUR 4,362.28 |
+### Rule 2 -- Birth year determines ONLY the SC maximum
 
-**Birth year affects ONLY the SC maximum. It does NOT affect SA minimum or the 15% SB rate.**
+Born before 1 January 1962: SC maximum = EUR 3,825.12. Born on or after 1 January 1962: SC maximum = EUR 4,362.28. Birth year does NOT affect SA minimum or the 15% SB rate.
 
-**Born exactly on 1 January 1962 = post-1962 (on or after).**
+### Rule 3 -- SSC is based on PRIOR year net income
 
-### Calculation Examples (2026)
+2026 SSC = based on 2025 net income from filed TA24. Not current year estimates.
 
-| Prior Year Net Income | Birth Year | Category | Annual SSC |
-|----------------------|-----------|----------|-----------|
-| EUR 8,000 | 1990 | SA | EUR 1,881.36 |
-| EUR 0 | 1990 | SA | EUR 1,881.36 |
-| EUR 20,000 | 1990 | SB | EUR 3,000.00 |
-| EUR 20,000 | 1955 | SB | EUR 3,000.00 |
-| EUR 50,000 | 1990 | SC (post-1962) | EUR 4,362.28 |
-| EUR 50,000 | 1955 | SC (pre-1962) | EUR 3,825.12 |
+### Rule 4 -- First year or no TA24 filed = SA minimum
 
----
+First year of self-employment: SA minimum applies as a legislative provision, not just a default. No prior year TA24 filed: SA minimum applies until DSS assessment is made.
 
-## Step 3: Key Rules [T1]
+### Rule 5 -- Minimum always applies
 
-**Legislation:** Social Security Act, Chapter 318
+Even at zero income, the SA minimum (EUR 1,881.36) is due once registered. There is no zero-SSC outcome.
 
-1. **SSC is based on PRIOR year net income.** 2026 SSC = based on 2025 net income from filed TA24. Not current year estimates.
-2. **First year of self-employment = SA minimum.** This is a legislative provision, not just a default.
-3. **No prior year TA24 filed = SA minimum** until DSS assessment is made.
-4. **Minimum always applies.** Even at zero income, the SA minimum is due once registered.
-5. **Net income = gross income minus allowable deductions** -- same deductions as income tax.
+### Rule 6 -- Full-time employed (Class 1) exempts from Class 2
 
----
+If the client is a full-time employee paying Class 1 NIC, no Class 2 is due on side income. Class 1 covers everything.
 
-## Step 4: Payment Schedule [T1]
+### Rule 7 -- SSC is deductible in TA24 Box 20
 
-**Legislation:** Social Security Act, Chapter 318; DSS Malta annual schedule
+SSC paid in Year X is deducted from income in Year X's TA24 (Box 20). This reduces taxable income before tax rate application.
+
+### Rule 8 -- Payment schedule
 
 | Quarter | Period | Due Date |
-|---------|--------|----------|
+|---|---|---|
 | Q1 | Jan -- Mar | 30 April |
 | Q2 | Apr -- Jun | 31 July |
 | Q3 | Jul -- Sep | 31 October |
 | Q4 | Oct -- Dec | 31 January (following year) |
 
-- Payment method: Direct Debit or bank transfer to DSS
-- Exact dates are set annually by DSS; dates above are standard
+### Rule 9 -- Registration threshold
+
+Self-employment income above EUR 910/year triggers SSC registration obligation. Below EUR 910 may be exempt but should still register.
+
+### Rule 10 -- Maternity fund (Class 1A) does NOT apply to self-employed
+
+Class 1A (0.3% of gross salary) is employer-only. Do not include in Class 2 calculations.
 
 ---
 
-## Step 5: TA22 Part-Time Self-Employment Rule [T1]
+## Section 6 -- Tier 2 catalogue
 
-**Legislation:** Income Tax Act, Article 4C; Social Security Act, Chapter 318
+When bank statement data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation.
 
-| Scenario | SSC Treatment |
-|----------|--------------|
-| Full-time employed + part-time self-employed | Class 1 covers everything. NO Class 2. |
-| Part-time self-employed only (TA22 regime) | Class 2 applies. SA minimum in first year. |
+### T2-1 -- Dual status ambiguity (employed but also director)
 
-**"Fully employed" is defined by the employment contract and hours, not by income level.**
+**Trigger:** Client is a full-time employee but also a director of their own company drawing a director's fee.
 
-If there is any doubt about whether the client's employment qualifies as full-time, [T2] flag for reviewer.
+**Issue:** Director fees from a company where the client is NOT a full-time employee may trigger Class 2. If the client is a full-time employee of the same or another company with Class 1 already paid, Class 2 is not due.
+
+**Action:** Flag for reviewer. Confirm employment contract status and hours before advising.
+
+### T2-2 -- TA22 client with multiple part-time income sources
+
+**Trigger:** Client has two part-time self-employment activities, neither with full-time employment.
+
+**Issue:** TA22 requires no full-time employment. If both activities are part-time and no full-time employment exists, Class 2 applies. Unclear whether one activity tips into full-time equivalence.
+
+**Action:** Flag for reviewer.
+
+### T2-3 -- Returning self-employed (previously stopped, now restarting)
+
+**Trigger:** Client was self-employed before, stopped for several years, now restarting.
+
+**Issue:** SA minimum does NOT automatically apply to returners. SA applies only to genuine first-timers. If no prior year TA24 for self-employment exists, SA applies until assessment.
+
+**Action:** Flag for reviewer to confirm with DSS.
+
+### T2-4 -- SSC arrears from prior years
+
+**Trigger:** Client has unpaid SSC from previous years.
+
+**Issue:** DSS can recover up to 5 years. Arrears are calculated at current rates (not historical rates) for post-1962 clients. 1% per month penalty compounds indefinitely.
+
+**Action:** Do not attempt to quantify arrears without a DSS statement. Escalate to warranted accountant immediately.
+
+### T2-5 -- Mid-year switch from employment to self-employment
+
+**Trigger:** Client was employed until mid-year, then became self-employed.
+
+**Issue:** Class 1 stops when employment ends. Class 2 starts when self-employment begins. First-year SA minimum applies for the self-employment period. Quarterly SSC payments due from the relevant quarter onward.
+
+**Action:** Flag for reviewer to confirm start date and pro-rata application.
+
+### T2-6 -- Students, pensioners, and disability exemptions
+
+**Trigger:** Client may qualify for credited contributions, pro-rata reduced rate, or exemption.
+
+**Issue:** These categories require case-specific DSS confirmation.
+
+**Action:** Flag for reviewer. Do not apply exemptions without DSS confirmation.
 
 ---
 
-## Step 6: Maternity Fund (Class 1A) [T1]
+## Section 7 -- Excel working paper template
 
-**Legislation:** Social Security Act, Chapter 318
+When producing an SSC computation, structure the working paper as follows:
 
-- Rate: 0.3% of gross salary
-- Who pays: Employer only
-- Self-employed / self-occupied: NOT applicable. Do not include in Class 2 calculation.
-- Self-occupied persons are entitled to maternity benefits from Class 2 contributions but pay no separate maternity fund.
+```
+MALTA SSC COMPUTATION -- WORKING PAPER
+Client: [name]
+Tax Year: [year]
+Prepared: [date]
+
+INPUT DATA
+  Birth year:                    [____]
+  Born on/after 1 Jan 1962:     [YES/NO]
+  Employment status:             [Self-occupied / Self-employed / Dual]
+  First year of self-employment: [YES/NO]
+  Prior year net income (TA24):  EUR [____]
+  TA24 filed for prior year:     [YES/NO]
+
+COMPUTATION
+  Rate:                          15%
+  Gross SSC (15% x net income):  EUR [____]
+  SA minimum:                    EUR 1,881.36
+  SC maximum (pre/post-1962):    EUR [3,825.12 / 4,362.28]
+  Annual SSC (clamped):          EUR [____]
+  Quarterly SSC:                 EUR [____]
+  Category applied:              [SA / SB / SC]
+
+PAYMENT SCHEDULE
+  Q1 (due 30 Apr):              EUR [____]
+  Q2 (due 31 Jul):              EUR [____]
+  Q3 (due 31 Oct):              EUR [____]
+  Q4 (due 31 Jan):              EUR [____]
+
+TA24 INTERACTION
+  SSC paid in [year]:           EUR [____]
+  Entered in TA24 Box 20:       EUR [____]
+
+REVIEWER FLAGS
+  [List any Tier 2 flags here]
+
+CONSERVATIVE DEFAULTS APPLIED
+  [List any defaults applied and their tax impact]
+```
 
 ---
 
-## Step 7: Registration [T1]
+## Section 8 -- Bank statement reading guide
 
-| Requirement | Detail |
-|-------------|--------|
-| When | Within 2 weeks of starting self-employment |
-| With whom | Department of Social Security (DSS) |
-| Income threshold | EUR 910/year from self-employment triggers obligation |
-| Below EUR 910 | May be exempt but should still register |
-| Form | SSC registration form (from DSS) |
-| Required documents | ID card, VAT certificate (if registered), TA4 (if applicable) |
+### How SSC debits appear on Maltese bank statements
+
+**BOV (Bank of Valletta):**
+- Description: "DSS DIRECT DEBIT" or "DEPT OF SOCIAL SECURITY" or "DEPARTMENT OF SOCIAL SECURITY"
+- Timing: End of month following quarter (30 Apr, 31 Jul, 31 Oct, 31 Jan)
+- Amount: Quarterly figure (annual / 4)
+
+**HSBC Malta:**
+- Description: "DSS D/D" or "DEPARTMENT OF SOCIAL SECURITY" or "SOC SEC CONTRIB"
+- Timing: Same quarterly cycle
+- Amount: Quarterly figure
+
+**APS Bank:**
+- Description: "DSS" or "SOC SECURITY CONTRIB" or "SOCIAL SECURITY"
+- Timing: Same quarterly cycle
+
+**Key identification tips:**
+1. SSC debits are always outgoing (DEBIT), never credits
+2. They recur quarterly with consistent amounts (unless the client changed income bracket)
+3. The amount should be divisible by 4 from a round annual figure, OR exactly EUR 470.34 (SA minimum quarterly)
+4. Do not confuse with CFR/Inland Revenue debits (income tax) or FSS debits (employer PAYE)
+5. Arrears payments may appear as irregular lump sums with "ARREARS" in the reference
 
 ---
 
-## Step 8: Interaction with Income Tax [T1]
+## Section 9 -- Onboarding fallback
 
-**Legislation:** Income Tax Act, Article 14
+If the client provides only a bank statement and no other information:
 
-| Question | Answer |
-|----------|--------|
-| Is SSC deductible? | YES -- deducted in Box 20 of the TA24 |
-| Which year's SSC? | SSC paid in Year X is deducted in Year X's TA24 |
-| Does it reduce taxable income? | Yes -- SSC is subtracted before tax rates are applied |
-
-**Accora implementation:** `tax-return-service.ts` includes SSC in Box 20. `calculate_ssc_class2()` RPC is called during tax return preparation.
+1. **Scan for DSS debits** -- identify all outgoing payments matching Section 3 patterns
+2. **Sum annual SSC paid** -- total all DSS debits in the year
+3. **Reverse-engineer the category:**
+   - If total approximately EUR 1,881.36 -> SA minimum (income <= EUR 12,543.72 or first year)
+   - If total between EUR 1,881.36 and EUR 3,825.12 -> SB (15% rate band)
+   - If total approximately EUR 3,825.12 -> SC pre-1962 maximum
+   - If total approximately EUR 4,362.28 -> SC post-1962 maximum
+4. **Flag for reviewer:** "SSC classification derived from bank statement amounts only. Birth year and prior year income have not been independently verified. Reviewer must confirm before filing TA24 with Box 20 deduction."
 
 ---
 
-## Step 9: Penalties [T1]
+## Section 10 -- Reference material
 
-**Legislation:** Social Security Act, Article 116
+### Calculation examples (2026)
+
+| Prior Year Net Income | Birth Year | Category | Annual SSC | Quarterly |
+|---|---|---|---|---|
+| EUR 8,000 | 1990 | SA | EUR 1,881.36 | EUR 470.34 |
+| EUR 0 | 1990 | SA | EUR 1,881.36 | EUR 470.34 |
+| EUR 20,000 | 1990 | SB | EUR 3,000.00 | EUR 750.00 |
+| EUR 20,000 | 1955 | SB | EUR 3,000.00 | EUR 750.00 |
+| EUR 50,000 | 1990 | SC (post-1962) | EUR 4,362.28 | EUR 1,090.57 |
+| EUR 50,000 | 1955 | SC (pre-1962) | EUR 3,825.12 | EUR 956.28 |
+
+### Self-occupied vs Self-employed
+
+- Self-occupied: trades, businesses, professions (accountant, plumber, shop owner). Entitled to pension + short-term benefits (sickness, injury, maternity).
+- Self-employed: income from rents, investments, capital gains. Entitled to pension only.
+- Both pay the same 15% Class 2 rate with the same min/max caps.
+
+### Penalties
 
 | Penalty | Rate |
-|---------|------|
+|---|---|
 | Late payment | 1% per month on outstanding amount |
 | Non-registration | All unpaid contributions + penalties |
 | Arrears lookback | DSS can claim up to 5 years of unpaid SSC |
 | Arrears rate (post-1962) | Calculated at CURRENT rates, not rates when originally due |
 
-**WARNING:** Unlike VAT penalties (capped at EUR 250), SSC penalties are uncapped. 1% per month compounds indefinitely. Arrears situations must be escalated to warranted accountant immediately.
+### Test suite
 
----
+**Test 1:** Born 1985, prior year net income EUR 20,000, not first year. -> SB. Annual = EUR 3,000.00. Quarterly = EUR 750.00.
 
-## Step 10: Exemptions and Reduced Rates [T2]
+**Test 2:** Born 1958, prior year net income EUR 60,000, not first year. -> SC (pre-1962). Annual = EUR 3,825.12. Quarterly = EUR 956.28.
 
-The following categories may qualify for exemptions or reduced rates. These are all [T2] -- do not apply without reviewer confirmation.
+**Test 3:** Born 1975, prior year net income EUR 60,000, not first year. -> SC (post-1962). Annual = EUR 4,362.28. Quarterly = EUR 1,090.57.
 
-| Category | Treatment |
-|----------|-----------|
-| Students (18-24, in full-time education) | Credited contributions (government pays) |
-| Pensioners (receiving pension, still working) | Pro-rata reduced rate -- confirm with DSS |
-| Certain female categories | Pro-rata reduced rate provisions exist |
-| Disabled persons | May qualify for exemption -- confirm with DSS |
+**Test 4:** Born 1990, prior year net income EUR 5,000, not first year. -> SA. Annual = EUR 1,881.36. Quarterly = EUR 470.34.
 
-**Flag for reviewer whenever any of these categories applies.**
+**Test 5:** Born 1988, first year, no prior TA24. -> SA (first year). Annual = EUR 1,881.36. Quarterly = EUR 470.34.
 
----
+**Test 6:** Full-time employee paying Class 1, side income EUR 8,000. -> NO Class 2 due. Class 1 covers all.
 
-## Step 11: Edge Case Registry
+**Test 7:** Born 1992, registered self-employed, net income EUR 0. -> SA. Annual = EUR 1,881.36.
 
-### EC1 -- Mid-year switch from employment to self-employment [T1]
-**Situation:** Client was employed (Class 1) until June, then became self-employed from July.
-**Resolution:** Class 1 stops when employment ends. Class 2 starts when self-employment begins. First-year SA minimum applies for the self-employment period. Quarterly SSC payments due from Q3 onward in year of switch.
+**Test 8:** Client paid EUR 3,000 SSC in 2025, preparing 2025 TA24. -> EUR 3,000 in Box 20.
 
-### EC2 -- Born exactly 1 January 1962 [T1]
-**Situation:** Client's date of birth is 1 January 1962.
-**Resolution:** Classified as post-1962. SC maximum = EUR 4,362.28 annually.
-
-### EC3 -- Zero or negative net income [T1]
-**Situation:** Client had a loss year. Net income is negative.
-**Resolution:** SA minimum still applies (EUR 1,881.36 for 2026). There is no zero-SSC outcome once registered.
-
-### EC4 -- Dual status ambiguity (employed but also director) [T2]
-**Situation:** Client is a full-time employee but also a director of their own company drawing a director's fee.
-**Resolution:** Director fees from a company where the client is NOT a full-time employee may trigger Class 2. If the client is a full-time employee of the same or another company with Class 1 already paid, Class 2 is not due. [T2] flag for reviewer -- confirm employment contract status and hours before advising.
-
-### EC5 -- Returning self-employed (was self-employed before, stopped, now restarting) [T1]
-**Situation:** Client was self-employed 5 years ago, stopped, and is now restarting.
-**Resolution:** SA minimum does NOT automatically apply. SA applies only to genuine first-timers. Returning self-employed are assessed on prior year income. If no prior year TA24 for self-employment, SA applies until assessment. [T2] flag for reviewer to confirm with DSS.
-
-### EC6 -- SSC arrears from prior years [T2]
-**Situation:** Client has unpaid SSC from previous years.
-**Resolution:** DSS can recover up to 5 years. Arrears are calculated at current rates (not historical rates) for post-1962 clients. 1% per month penalty accrues from each missed payment. Do not attempt to quantify arrears without a DSS statement. [T2] escalate to warranted accountant immediately. Do not present an estimate as definitive.
-
-### EC7 -- TA22 client with multiple part-time income sources [T2]
-**Situation:** Client has two part-time self-employment activities, neither with full-time employment.
-**Resolution:** TA22 requires that the client has NO full-time employment. If both activities are part-time and no full-time employment exists, Class 2 applies. [T2] flag for reviewer -- confirm whether TA22 applies to all activities or whether one tips into full-time equivalence.
-
-### EC8 -- First year, no income yet [T1]
-**Situation:** Client registered as self-employed in 2026 but has not yet earned any income.
-**Resolution:** SA minimum applies from date of registration. EUR 1,881.36 for 2026, paid quarterly. Minimum is due regardless of income level.
-
----
-
-## Step 12: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
-
-```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Warranted accountant must confirm before advising client.
-```
-
-When Claude identifies a [T3] situation:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to warranted accountant. Document gap.
-```
-
----
-
-## Step 13: Test Suite
-
-### Test 1 -- Standard post-1962, mid-range income
-**Input:** Born 1985, prior year net income EUR 20,000, not first year.
-**Expected output:** Category SB. Annual SSC = EUR 3,000.00 (15% x EUR 20,000). Quarterly = EUR 750.00.
-
-### Test 2 -- Pre-1962, capped at SC maximum
-**Input:** Born 1958, prior year net income EUR 60,000, not first year.
-**Expected output:** Category SC (pre-1962). Annual SSC = EUR 3,825.12. Quarterly = EUR 956.28.
-
-### Test 3 -- Post-1962, capped at SC maximum
-**Input:** Born 1975, prior year net income EUR 60,000, not first year.
-**Expected output:** Category SC (post-1962). Annual SSC = EUR 4,362.28. Quarterly = EUR 1,090.57.
-
-### Test 4 -- Below minimum threshold
-**Input:** Born 1990, prior year net income EUR 5,000, not first year.
-**Expected output:** Category SA. Annual SSC = EUR 1,881.36 (minimum applies). Quarterly = EUR 470.34.
-
-### Test 5 -- First year, no prior income
-**Input:** Born 1988, first year of self-employment, no prior TA24.
-**Expected output:** Category SA (first year legislative provision). Annual SSC = EUR 1,881.36. Quarterly = EUR 470.34.
-
-### Test 6 -- Full-time employed + side income
-**Input:** Client is a full-time employee paying Class 1. Also earns EUR 8,000 from freelance work.
-**Expected output:** NO Class 2 due. Class 1 covers all SSC obligations. TA22 regime may apply for income tax on side income.
-
-### Test 7 -- Zero income, still registered
-**Input:** Born 1992, registered self-employed, net income EUR 0 in prior year.
-**Expected output:** Category SA. Annual SSC = EUR 1,881.36. Minimum always applies.
-
-### Test 8 -- SSC deductibility on TA24
-**Input:** Client paid EUR 3,000 SSC in 2025. Preparing 2025 TA24.
-**Expected output:** EUR 3,000 entered in Box 20 of TA24 as deduction from income before tax calculation.
-
----
-
-## PROHIBITIONS
+### Prohibitions
 
 - NEVER compute SSC without knowing the client's birth year
 - NEVER use current year income -- SSC is always based on PRIOR year net income
@@ -322,27 +450,8 @@ Action Required: Do not advise. Refer to warranted accountant. Document gap.
 - NEVER advise on SSC arrears without a DSS statement -- do not estimate
 - NEVER conflate Class 1 and Class 2 -- they are entirely separate obligations
 - NEVER include maternity fund (Class 1A) in Class 2 calculations
-- NEVER present SSC figures as definitive -- always label as estimated and direct client to their DSS statement for confirmation
+- NEVER present SSC figures as definitive -- always label as estimated and direct client to their DSS statement
 - NEVER compute SSC penalties without escalating to a warranted accountant
-
----
-
-## Contribution Notes (For Non-Malta Jurisdictions)
-
-If adapting this skill for another country:
-
-1. Replace Chapter 318 references with the equivalent national social security legislation.
-2. Replace the Class 1 / Class 2 distinction with your jurisdiction's equivalent employee / self-employed contribution classes.
-3. Replace rate percentages (15%), minimum (EUR 1,881.36), and maximum caps with your jurisdiction's current year figures.
-4. Replace the birth year cutoff (1 January 1962) with any equivalent generational threshold in your jurisdiction, or remove if none exists.
-5. Replace payment schedule (quarterly) with your jurisdiction's equivalent.
-6. Replace the TA22 part-time regime with your jurisdiction's equivalent treatment for dual employment/self-employment status.
-7. Replace income tax deductibility rules (Box 20 of TA24) with your jurisdiction's equivalent.
-8. Have a licensed practitioner in your jurisdiction validate every T1 rule before publishing.
-9. Add jurisdiction-specific edge cases to the Edge Case Registry.
-
-**A skill may not be published without sign-off from a warranted practitioner in the relevant jurisdiction.**
-
 
 ---
 

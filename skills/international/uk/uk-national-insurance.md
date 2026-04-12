@@ -1,8 +1,8 @@
 ---
 name: uk-national-insurance
 description: >
-  Use this skill whenever asked about UK National Insurance Contributions (NIC) for self-employed individuals. Trigger on phrases like "how much NIC do I pay", "Class 2 contributions", "Class 4 NIC", "national insurance self-employed", "NIC calculation", "state pension qualifying years", "NIC deferment", "voluntary Class 2", or any question about UK NIC obligations for a self-employed client. Also trigger when preparing an SA100 Self Assessment return where NIC is relevant. This skill covers Class 2 voluntary contributions, Class 4 profit-based rates, thresholds, payment schedule, interaction with employment Class 1, deferment, state pension entitlement, and edge cases. ALWAYS read this skill before touching any UK NIC-related work.
-version: 1.0
+  Use this skill whenever asked about UK National Insurance Contributions (NIC) for self-employed individuals. Trigger on phrases like "how much NIC do I pay", "Class 2 contributions", "Class 4 NIC", "national insurance self-employed", "NIC calculation", "state pension qualifying years", "NIC deferment", "voluntary Class 2", "HMRC NIC payment", or any question about UK NIC obligations for a self-employed client. Also trigger when classifying bank statement transactions showing HMRC NIC debits, Self Assessment NIC payments, or Class 2 direct debits. This skill covers Class 2 voluntary contributions, Class 4 profit-based rates, thresholds, payment schedule, bank statement pattern classification, interaction with employment Class 1, deferment, state pension entitlement, and edge cases. ALWAYS read this skill before touching any UK NIC-related work.
+version: 2.0
 jurisdiction: GB
 tax_year: 2025-26
 category: international
@@ -10,373 +10,382 @@ depends_on:
   - social-contributions-workflow-base
 ---
 
-# UK National Insurance (Class 2 + Class 4) -- Self-Employed Skill
+# UK National Insurance (Class 2 + Class 4) -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before computing or classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | United Kingdom |
-| Jurisdiction Code | GB |
+|---|---|
+| Country | United Kingdom |
 | Primary Legislation | Social Security Contributions and Benefits Act 1992 (SSCBA 1992) |
 | Supporting Legislation | National Insurance Contributions Act 2015; Finance Act 2024 (Class 2 reform) |
 | Tax Authority | HM Revenue & Customs (HMRC) |
-| Rate Publisher | HMRC (publishes annual NIC rates confirmation order) |
-| Contributor | Open Accountants |
-| Validated By | Pending -- requires sign-off by a UK-qualified practitioner |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
 | Tax Year Coverage | 2024-25 and 2025-26 |
-| Confidence Coverage | Tier 1: rate calculation, thresholds, payment schedule, Class 2 voluntary rule. Tier 2: deferment applications, dual status edge cases, mid-year switches. Tier 3: mariners, share fishermen, volunteer development workers, disability exemptions. |
+| Currency | GBP only |
+| Class 2 weekly rate (2025-26) | £3.50 (voluntary from 6 April 2024) |
+| Class 2 annual cost (2025-26) | £182.00 |
+| Small Profits Threshold (2025-26) | £6,845 |
+| Class 4 main rate | 6% on profits between LPL and UPL |
+| Class 4 additional rate | 2% on profits above UPL |
+| Lower Profits Limit (LPL) | £12,570 |
+| Upper Profits Limit (UPL) | £50,270 |
+| Payment method | Via Self Assessment (31 Jan / 31 Jul / 31 Jan) |
+| Contributor | Open Accountants |
+| Validated by | Pending -- requires sign-off by a UK-qualified practitioner |
+| Validation date | Pending |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown tax year | Ask -- rates differ between 2024-25 and 2025-26 |
+| Unknown employment status | Ask -- dual status affects annual maximum cap |
+| Unknown profit level | Do not compute -- profits are required |
+| Unknown whether client wants voluntary Class 2 | Recommend if profits below SPT and client needs qualifying years |
+| Unknown state pension record | Flag for reviewer |
+| Unknown age (state pension age) | Ask -- over state pension age = no Class 4 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified practitioner must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- tax year, employment status (sole self-employed or dual), and net self-employment profits.
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- bank statements showing HMRC Self Assessment payments, prior year SA302 tax calculation, state pension record printout.
 
-Before computing any NIC figure, you MUST know:
+**Ideal** -- complete SA100/SA103 return data, P60 from employment (if dual status), NI record from gov.uk.
 
-1. **Tax year** [T1] -- 2024-25 or 2025-26? Rates differ for Class 2.
-2. **Employment status** [T1] -- solely self-employed, or also employed (dual status)?
-3. **Net self-employment profits** [T1] -- trading profits after allowable deductions, as reported on SA100/SA103.
-4. **Is the client also employed with Class 1 contributions?** [T1] -- affects deferment and maximum NIC cap.
-5. **Does the client want to pay voluntary Class 2?** [T1] -- relevant if profits are below the Small Profits Threshold.
-6. **State pension record** [T2] -- does the client have gaps in qualifying years?
+### Refusal catalogue
 
----
+**R-UK-NIC-1 -- Non-resident or overseas client.** *Trigger:* client is non-UK resident or has complex international arrangements. *Message:* "NIC for non-resident or overseas clients involves complex rules under EU/bilateral social security agreements. Escalate to a qualified UK practitioner."
 
-## Step 1: Determine Which Classes Apply [T1]
+**R-UK-NIC-2 -- Special categories.** *Trigger:* client is a mariner, share fisherman, volunteer development worker, or religious minister. *Message:* "Special NIC provisions apply to this category. Escalate to a qualified practitioner."
 
-**Legislation:** SSCBA 1992, Part I
-
-| Class | Who | How |
-|-------|-----|-----|
-| Class 1 | Employees | Deducted from salary by employer |
-| Class 2 | Self-employed (voluntary from 6 April 2024) | Flat weekly rate, paid via Self Assessment or Direct Debit |
-| Class 3 | Voluntary (anyone) | To fill gaps in NI record for state pension |
-| Class 4 | Self-employed with profits above Lower Profits Limit | Percentage of profits, paid via Self Assessment |
-
-**Self-employed persons are liable for Class 4 NIC on profits above the Lower Profits Limit. Class 2 is voluntary from 6 April 2024 onward.**
+**R-UK-NIC-3 -- Deferment computation.** *Trigger:* client requests Class 1 deferment across multiple employments. *Message:* "Class 1 deferment requires HMRC application (form CA72A) and case-specific earnings analysis. Flag for reviewer."
 
 ---
 
-## Step 2: Class 2 NIC -- Voluntary Contributions [T1]
+## Section 3 -- Payment pattern library
 
-**Legislation:** SSCBA 1992 s.11; Finance Act 2024
+This is the deterministic pre-classifier for bank statement transactions related to NIC. When a transaction matches a pattern below, apply the treatment directly.
 
-### Key Change: From 6 April 2024, Class 2 NIC is no longer compulsory.
+**How to read this table.** Match by case-insensitive substring on the counterparty/reference. NIC payments always EXCLUDE from any VAT classification -- they are statutory personal obligations.
 
-| Item | 2024-25 | 2025-26 |
-|------|---------|---------|
-| Weekly rate | £3.45 | £3.50 |
-| Annual cost (52 weeks) | £179.40 | £182.00 |
-| Small Profits Threshold (SPT) | £6,725 | £6,845 |
+### 3.1 HMRC Self Assessment payments (include Class 4 + optional Class 2)
 
-### How Class 2 Now Works
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HMRC, HM REVENUE, HM REVENUE & CUSTOMS | EXCLUDE -- tax/NIC payment | Self Assessment payments include income tax + Class 4 NIC + voluntary Class 2 |
+| HMRC SELF ASSESSMENT | EXCLUDE -- SA payment | Combined tax and NIC |
+| HMRC NDDS, HMRC SHIPLEY | EXCLUDE -- SA payment | HMRC processing centres |
+| SELF ASSESSMENT, SA PAYMENT | EXCLUDE -- SA payment | Generic SA reference |
 
-| Profit Level | Class 2 Treatment |
-|-------------|-------------------|
-| Profits >= £6,845 (2025-26) | Treated as paid automatically (zero-rate). Client gets NI credit without paying. No action needed. |
-| Profits < £6,845 but > £0 | NOT treated as paid. Client must pay voluntarily (£3.50/week) to get a qualifying year for state pension. |
-| Zero or negative profits | NOT treated as paid. Client must pay voluntarily to get a qualifying year. |
+### 3.2 Class 2 direct debits (voluntary -- separate from SA)
 
-### Why Pay Voluntary Class 2?
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HMRC NIC, HMRC CLASS 2 | EXCLUDE -- voluntary Class 2 | Monthly or quarterly direct debit for Class 2 |
+| NATIONAL INSURANCE, NAT INS | EXCLUDE -- NIC payment | Generic NI reference |
+| NIC DIRECT DEBIT, NIC D/D | EXCLUDE -- Class 2 DD | Voluntary Class 2 via direct debit |
 
-- Class 2 is the cheapest way to build state pension entitlement (£182.00/year vs Class 3 at £17.75/week = £923.00/year in 2025-26).
-- Each qualifying year adds approximately 1/35th of the full state pension (£230.25/week in 2025-26).
-- A single year of Class 2 contributions (£182.00) buys approximately £342/year in state pension -- an exceptional return.
+### 3.3 HMRC payments via bank transfer
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HMRC CUMBERNAULD | EXCLUDE -- SA/NIC payment | HMRC Accounts Office reference |
+| 1025 (followed by UTR) | EXCLUDE -- SA payment | HMRC Self Assessment payment reference format (1025 + 10-digit UTR) |
+
+### 3.4 Student loan and other SA components (NOT NIC)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STUDENT LOAN, SLC | EXCLUDE -- student loan repayment | Not NIC -- see uk-student-loan-repayment skill |
+| HMRC (large combined payment) | EXCLUDE -- combined SA | May include income tax + Class 4 + Class 2 + student loan; cannot split from bank statement alone |
+
+### 3.5 Employer Class 1 (payroll -- not self-employed NIC)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES (incoming credit) | Not NIC | Employment income -- Class 1 deducted at source by employer |
+| EMPLOYER NIC | Not self-employed NIC | Employer's Class 1 obligation, not the client's self-employed NIC |
 
 ---
 
-## Step 3: Class 4 NIC -- Profit-Based Contributions [T1]
+## Section 4 -- Worked examples
 
-**Legislation:** SSCBA 1992 s.15
+Six bank statement classifications showing NIC-related transactions for a hypothetical UK self-employed software consultant.
 
-### Rates
+### Example 1 -- Self Assessment balancing payment (combined tax + NIC)
 
-| Band | 2024-25 | 2025-26 |
-|------|---------|---------|
-| Profits below Lower Profits Limit (LPL) | 0% | 0% |
-| Profits between LPL and Upper Profits Limit (UPL) | 6% | 6% |
-| Profits above UPL | 2% | 2% |
+**Input line:**
+`31.01.2027 ; HMRC SELF ASSESSMENT ; DEBIT ; SA BALANCING PAYMENT ; -4,200.00 ; GBP`
 
-### Thresholds
+**Reasoning:**
+Matches "HMRC SELF ASSESSMENT" (pattern 3.1). This is the 31 January balancing payment for tax year 2025-26. Includes income tax, Class 4 NIC, and possibly Class 2 voluntary. Cannot split NIC from income tax on the bank statement alone. Exclude from VAT. The SA302 tax calculation will show the NIC breakdown.
 
-| Threshold | 2024-25 | 2025-26 |
-|-----------|---------|---------|
-| Lower Profits Limit (LPL) | £12,570 | £12,570 |
-| Upper Profits Limit (UPL) | £50,270 | £50,270 |
+**Classification:** EXCLUDE -- SA payment (combined tax and NIC). Request SA302 to determine NIC component.
 
-### Formula
+### Example 2 -- Payment on account (31 July)
+
+**Input line:**
+`31.07.2026 ; HMRC NDDS ; DEBIT ; PAYMENT ON ACCOUNT ; -2,100.00 ; GBP`
+
+**Reasoning:**
+Matches "HMRC NDDS" (pattern 3.1). This is the second payment on account for 2025-26, due 31 July 2026. Includes 50% of prior year Class 4 liability and income tax. Exclude from VAT.
+
+**Classification:** EXCLUDE -- SA payment on account.
+
+### Example 3 -- Voluntary Class 2 direct debit
+
+**Input line:**
+`15.03.2026 ; HMRC NIC ; DEBIT ; CLASS 2 NIC MAR ; -15.17 ; GBP`
+
+**Reasoning:**
+Matches "HMRC NIC" (pattern 3.2). Amount approximately £3.50/week x 4.33 weeks = £15.17 monthly. This is a voluntary Class 2 payment via direct debit. Client has profits below SPT and is paying voluntarily for state pension qualifying years.
+
+**Classification:** EXCLUDE -- voluntary Class 2 NIC. Not deductible from profits (Class 2 is not a trading expense).
+
+### Example 4 -- Employment salary credit (not NIC)
+
+**Input line:**
+`28.02.2026 ; ACME LTD SALARY ; CREDIT ; FEB SALARY ; +3,200.00 ; GBP`
+
+**Reasoning:**
+This is employment income received. Class 1 NIC has already been deducted by the employer at source. This is NOT a self-employment NIC payment. Do not classify as NIC.
+
+**Classification:** NOT NIC -- employment income. Class 1 deducted at source.
+
+### Example 5 -- Large SA payment (combined with student loan)
+
+**Input line:**
+`31.01.2027 ; HM REVENUE & CUSTOMS ; DEBIT ; SELF ASSESSMENT ; -8,500.00 ; GBP`
+
+**Reasoning:**
+Matches "HM REVENUE & CUSTOMS" (pattern 3.1). Large SA payment that likely combines income tax + Class 4 NIC + possibly Class 2 + student loan repayment. Cannot split components from bank statement. Need SA302 for breakdown.
+
+**Classification:** EXCLUDE -- combined SA payment. Request SA302 for NIC/tax/student loan split.
+
+### Example 6 -- HMRC refund (overpayment)
+
+**Input line:**
+`15.04.2027 ; HMRC ; CREDIT ; SA REPAYMENT ; +650.00 ; GBP`
+
+**Reasoning:**
+This is a CREDIT from HMRC -- a repayment of overpaid SA (may include overpaid NIC). Exclude from VAT. The SA302 will show the breakdown.
+
+**Classification:** EXCLUDE -- SA refund. Not taxable income. Request SA302 for breakdown.
+
+---
+
+## Section 5 -- Tier 1 rules
+
+### Rule 1 -- Class 4 formula (2025-26)
 
 ```
-Class 4 NIC = (min(profits, UPL) - LPL) x 6%  +  max(profits - UPL, 0) x 2%
+Class 4 NIC = (min(profits, £50,270) - £12,570) x 6% + max(profits - £50,270, 0) x 2%
 ```
 
-Where profits = net trading profits from self-employment after allowable deductions.
+If profits <= £12,570, Class 4 = £0.
 
-### Calculation Examples (2025-26)
+### Rule 2 -- Class 2 is voluntary from 6 April 2024
 
-| Net Profits | Class 4 NIC | Breakdown |
-|-------------|-------------|-----------|
-| £10,000 | £0.00 | Below LPL -- no Class 4 due |
-| £12,570 | £0.00 | At LPL -- no Class 4 due |
-| £20,000 | £445.80 | (£20,000 - £12,570) x 6% |
-| £35,000 | £1,345.80 | (£35,000 - £12,570) x 6% |
-| £50,270 | £2,262.00 | (£50,270 - £12,570) x 6% |
-| £60,000 | £2,456.60 | (£50,270 - £12,570) x 6% + (£60,000 - £50,270) x 2% |
-| £100,000 | £3,256.60 | (£50,270 - £12,570) x 6% + (£100,000 - £50,270) x 2% |
+Self-employed with profits >= SPT (£6,845 in 2025-26) are treated as paid automatically (zero-rate credit). No action needed. Profits < SPT: must pay voluntarily (£3.50/week) to get a qualifying year.
 
----
+### Rule 3 -- Class 4 is based on CURRENT year profits
 
-## Step 4: Payment Schedule [T1]
+Unlike Malta SSC, UK Class 4 NIC is calculated on the same year's profits as reported on the SA return.
 
-**Legislation:** Taxes Management Act 1970; HMRC Self Assessment rules
-
-Class 4 NIC is collected through Self Assessment alongside income tax.
+### Rule 4 -- Payment schedule (via Self Assessment)
 
 | Payment | Due Date | What |
-|---------|----------|------|
+|---|---|---|
 | First payment on account | 31 January during tax year | 50% of prior year Class 4 liability |
 | Second payment on account | 31 July after tax year end | 50% of prior year Class 4 liability |
-| Balancing payment | 31 January following tax year end | Any remaining Class 4 (and Class 2 if paying voluntarily) |
+| Balancing payment | 31 January following tax year end | Remaining Class 4 (and Class 2 if voluntary) |
 
-**Class 2 voluntary contributions** can be paid:
-- Through Self Assessment (added to balancing payment)
-- By Direct Debit (monthly or quarterly to HMRC)
-- By bank transfer
+### Rule 5 -- Employed AND self-employed
 
-**Example timeline for 2025-26 tax year (6 April 2025 to 5 April 2026):**
-- 31 January 2026: First payment on account
-- 31 July 2026: Second payment on account
-- 31 January 2027: Balancing payment (final settlement)
+Class 1 continues on employment income. Class 4 due on self-employment profits above LPL. Both apply simultaneously. Annual maximum cap checked by HMRC automatically.
 
----
+### Rule 6 -- Over state pension age
 
-## Step 5: Interaction with Employment Class 1 (Dual Status) [T1]
+No Class 4 liability. No Class 2 needed. Must still file SA return for income tax.
 
-**Legislation:** SSCBA 1992; Social Security (Contributions) Regulations 2001
+### Rule 7 -- Multiple self-employments
 
-| Scenario | Class 1 | Class 2 | Class 4 |
-|----------|---------|---------|---------|
-| Employed only | Yes (via payroll) | No | No |
-| Self-employed only | No | Voluntary | Yes (if profits > LPL) |
-| Employed AND self-employed | Yes (via payroll) | Voluntary (if desired) | Yes (if profits > LPL) |
+Profits from all self-employments are aggregated for Class 4.
 
-**Unlike Malta, being employed does NOT exempt the client from Class 4. Both Class 1 and Class 4 are due on their respective income streams.**
+### Rule 8 -- Losses
 
-### Maximum NIC Cap (Annual Maximum)
+Zero or negative profits: no Class 4. Voluntary Class 2 may still be paid for state pension.
 
-There is an annual maximum on total NIC. If combined Class 1 and Class 4 contributions would exceed the maximum, the excess Class 4 is reduced. HMRC calculates this automatically through Self Assessment.
+### Rule 9 -- State pension qualifying years
 
-The maximum is: 53 x weekly Class 1 main primary threshold rate + Class 4 main rate on (UPL - LPL).
+35 qualifying years for full new state pension (£230.25/week in 2025-26). 10 years minimum. Class 2 is the cheapest way to build years (£182/year vs Class 3 at £923/year).
+
+### Rule 10 -- NIC is NOT tax-deductible
+
+Class 2 and Class 4 NIC are NOT deductible business expenses. They are personal statutory obligations.
 
 ---
 
-## Step 6: Deferment Applications [T2]
+## Section 6 -- Tier 2 catalogue
 
-**Legislation:** Social Security (Contributions) Regulations 2001, Reg 90-100
+### T2-1 -- Deferment (multiple employments)
 
-| Situation | Can Defer? | How |
-|-----------|-----------|-----|
-| Two or more employments (Class 1 + Class 1) | Yes -- defer Class 1 in secondary employment | Apply on form CA72A to HMRC |
-| Employed + self-employed (Class 1 + Class 4) | No deferment needed | HMRC calculates annual maximum automatically via SA |
-| Class 4 alone | Cannot be deferred | N/A |
+**Trigger:** Client has two employments and expects combined Class 1 to exceed annual maximum.
+**Action:** Flag for reviewer. Client may apply on form CA72A to defer Class 1 in secondary employment.
 
-**Deferment of Class 1 only:** If the client has two employments and expects combined Class 1 to exceed the annual maximum, they can apply to defer Class 1 in one employment. In the deferred employment, they pay only 2% (not the main rate).
+### T2-2 -- First year with overlap relief / basis period
 
-**[T2] flag for reviewer whenever a client has multiple employments and requests deferment. Confirm earnings estimates before applying.**
+**Trigger:** Client started trading mid-year; basis period allocation unclear under 2024-25 reform.
+**Action:** Flag for reviewer to confirm basis period allocation for Class 4.
 
----
+### T2-3 -- Backfilling NI gaps for state pension
 
-## Step 7: State Pension Qualifying Years [T1]
+**Trigger:** Client wants to pay voluntary contributions for prior years.
+**Action:** Can go back up to 6 years. Class 2 if eligible as self-employed in those years; otherwise Class 3. Flag for reviewer to check NI record.
 
-**Legislation:** Pensions Act 2014
+### T2-4 -- Examiners, moderators, foster carers
 
-| Requirement | Detail |
-|-------------|--------|
-| Full new state pension | 35 qualifying years |
-| Minimum state pension | 10 qualifying years |
-| Full amount (2025-26) | £230.25 per week (£11,973 per year) |
-| Proportional | Years between 10 and 35 give proportional amount |
+**Trigger:** Employment status is ambiguous.
+**Action:** Flag for reviewer. Check contract terms for employment vs self-employment.
 
-### How Self-Employed Build Qualifying Years
+### T2-5 -- Non-resident with UK self-employment
 
-| Profit Level | Qualifying Year? |
-|-------------|-----------------|
-| Profits >= SPT (£6,845 in 2025-26) | Yes -- automatic credit (Class 2 treated as paid) |
-| Profits < SPT, voluntary Class 2 paid | Yes -- voluntary payment secures the year |
-| Profits < SPT, no voluntary Class 2 paid | No -- gap in NI record |
-
-### Filling Gaps
-
-- Voluntary Class 2 (if eligible as self-employed): £3.50/week (2025-26)
-- Voluntary Class 3 (anyone): £17.75/week (2025-26)
-- Can usually go back up to 6 years to fill gaps
-- Check NI record at gov.uk/check-national-insurance-record
+**Trigger:** Client is non-UK resident but has UK self-employment profits.
+**Action:** Escalate -- complex NIC rules for non-residents.
 
 ---
 
-## Step 8: Key Rules [T1]
-
-1. **Class 4 is based on CURRENT year profits.** Unlike Malta SSC, UK Class 4 NIC is calculated on the same year's profits as reported on the Self Assessment return.
-2. **Class 2 is voluntary from 6 April 2024.** Self-employed with profits above the SPT are automatically credited.
-3. **Net profits = turnover minus allowable business expenses** as computed on form SA103 (self-employment supplementary pages).
-4. **Losses:** If net profits are zero or negative, no Class 4 is due. Voluntary Class 2 may still be paid for state pension purposes.
-5. **Multiple self-employments:** Profits from all self-employments are aggregated for Class 4 purposes.
-
----
-
-## Step 9: Penalties [T1]
-
-**Legislation:** Taxes Management Act 1970; Finance Act 2009
-
-| Penalty | Detail |
-|---------|--------|
-| Late filing (SA return) | £100 initial, escalating to daily penalties after 3 months |
-| Late payment | Interest charged from due date at HMRC's prevailing rate |
-| Failure to notify chargeability | Up to 100% of tax/NIC due (behaviour-dependent) |
-| Deliberate underpayment | Up to 100% of NIC due (may be reduced for disclosure) |
-
-**Class 4 NIC penalties are the same as income tax penalties -- they are collected through the same Self Assessment regime.**
-
----
-
-## Step 10: Exemptions and Special Cases [T2]
-
-| Category | Treatment |
-|----------|-----------|
-| Under 16 | No Class 2 or Class 4 liability |
-| Over state pension age | No Class 4 liability. No Class 2 needed for pension. |
-| Examiners / moderators | May be treated as employed -- check contract terms |
-| Foster carers | Qualifying care relief may reduce profits below thresholds |
-| Religious ministers | Special Class 2 provisions may apply |
-| Persons abroad | Complex rules -- see HMRC guidance on NIC for non-residents |
-
-**[T2] flag for reviewer whenever any of these categories applies.**
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Mid-year switch from employment to self-employment [T1]
-**Situation:** Client was employed until September 2025, then became self-employed from October 2025.
-**Resolution:** Class 1 stops when employment ends. Class 4 applies on self-employment profits from October onward (first accounting period). Voluntary Class 2 can be paid for the self-employment period. The annual maximum NIC cap applies if Class 1 contributions were also paid in the year.
-
-### EC2 -- Profits exactly at the Lower Profits Limit [T1]
-**Situation:** Client's net trading profits are exactly £12,570.
-**Resolution:** No Class 4 NIC due. The LPL is the point at which the 6% rate begins -- profits AT the LPL produce zero liability. Class 2 treated as paid (profits > SPT).
-
-### EC3 -- Zero or negative profits (loss year) [T1]
-**Situation:** Client had a trading loss. Net profits are negative.
-**Resolution:** No Class 4 due. Client may still pay voluntary Class 2 (£182.00 for 2025-26) to secure a state pension qualifying year.
-
-### EC4 -- Employed and self-employed simultaneously [T1]
-**Situation:** Client earns £40,000 employment income (Class 1 via payroll) and £25,000 self-employment profits.
-**Resolution:** Class 1 continues on employment income. Class 4 due on self-employment profits above £12,570. Annual maximum applies -- HMRC adjusts automatically. Voluntary Class 2 is not needed if employment income provides qualifying year via Class 1.
-
-### EC5 -- Multiple self-employments [T1]
-**Situation:** Client has two sole trader businesses, one earning £8,000 and another earning £15,000.
-**Resolution:** Aggregate profits (£23,000) for Class 4 purposes. Class 4 = (£23,000 - £12,570) x 6% = £625.80. File on single SA return.
-
-### EC6 -- Client over state pension age [T1]
-**Situation:** Client is 68 and still self-employed with profits of £30,000.
-**Resolution:** No Class 4 liability (exempt once past state pension age). No Class 2 needed. Must still file SA return for income tax purposes.
-
-### EC7 -- First year of self-employment with overlap relief [T2]
-**Situation:** Client started trading on 1 July 2025. First accounting period does not align with tax year.
-**Resolution:** Basis period reform (from 2024-25) means profits are taxed on a tax-year basis. Class 4 applies to the profits allocated to the tax year under the new rules. [T2] flag for reviewer to confirm basis period allocation.
-
-### EC8 -- Client wants to backfill NI gaps for state pension [T2]
-**Situation:** Client has 5 years of NI gaps and wants to pay voluntary contributions.
-**Resolution:** Can pay Class 2 (if eligible as self-employed in those years) or Class 3 going back up to 6 years. Class 2 is significantly cheaper. [T2] flag -- reviewer should check client's NI record and confirm which years can still be filled and which class applies.
-
----
-
-## Step 12: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel working paper template
 
 ```
-REVIEWER FLAG
-Tier: T2
+UK NATIONAL INSURANCE COMPUTATION -- WORKING PAPER
 Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified practitioner must confirm before advising client.
-```
+Tax Year: [2024-25 / 2025-26]
+Prepared: [date]
 
-When Claude identifies a [T3] situation:
+INPUT DATA
+  Employment status:              [Self-employed only / Employed + self-employed]
+  Net trading profits (SA103):    GBP [____]
+  Over state pension age:         [YES/NO]
+  Voluntary Class 2 elected:      [YES/NO]
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified practitioner. Document gap.
+CLASS 4 COMPUTATION
+  Profits:                        GBP [____]
+  Less LPL:                       GBP 12,570
+  Main rate band (LPL to UPL):   GBP [____] x 6% = GBP [____]
+  Additional rate (above UPL):    GBP [____] x 2% = GBP [____]
+  Total Class 4:                  GBP [____]
+
+CLASS 2 (VOLUNTARY)
+  Profits vs SPT (GBP 6,845):    [Above / Below]
+  Treated as paid automatically:  [YES/NO]
+  Voluntary payment:              GBP [0.00 / 182.00]
+
+TOTAL NIC
+  Class 4:                        GBP [____]
+  Class 2 voluntary:              GBP [____]
+  Total:                          GBP [____]
+
+PAYMENT SCHEDULE
+  1st POA (31 Jan during year):   GBP [____]
+  2nd POA (31 Jul after year):    GBP [____]
+  Balancing (31 Jan after year):  GBP [____]
+
+REVIEWER FLAGS
+  [List any Tier 2 flags here]
 ```
 
 ---
 
-## Step 13: Test Suite
+## Section 8 -- Bank statement reading guide
 
-### Test 1 -- Standard self-employed, mid-range profits
-**Input:** Tax year 2025-26. Self-employed only. Net profits £30,000.
-**Expected output:** Class 4 = (£30,000 - £12,570) x 6% = £1,045.80. Class 2 treated as paid (profits > SPT). No voluntary Class 2 payment needed. Total NIC = £1,045.80.
+### How NIC payments appear on UK bank statements
 
-### Test 2 -- High-income self-employed
-**Input:** Tax year 2025-26. Self-employed only. Net profits £80,000.
-**Expected output:** Class 4 = (£50,270 - £12,570) x 6% + (£80,000 - £50,270) x 2% = £2,262.00 + £594.60 = £2,856.60. Total NIC = £2,856.60.
+**Self Assessment payments (combined tax + NIC):**
+- Description: "HMRC SELF ASSESSMENT", "HM REVENUE & CUSTOMS", "HMRC NDDS", "HMRC SHIPLEY"
+- Timing: 31 January (1st POA + balancing), 31 July (2nd POA)
+- Amount: Combined income tax + Class 4 + optional Class 2 + student loan
+- Cannot split NIC from tax on bank statement -- need SA302
 
-### Test 3 -- Below Lower Profits Limit
-**Input:** Tax year 2025-26. Self-employed only. Net profits £10,000.
-**Expected output:** Class 4 = £0 (below LPL). Profits above SPT so Class 2 treated as paid. Total NIC = £0 (unless voluntary Class 2 chosen, but not needed as profits > SPT).
+**Voluntary Class 2 direct debit:**
+- Description: "HMRC NIC", "HMRC CLASS 2", "NIC D/D"
+- Timing: Monthly (around 15th) or quarterly
+- Amount: Approximately £15/month or £45/quarter (£3.50/week)
 
-### Test 4 -- Below Small Profits Threshold, pays voluntary Class 2
-**Input:** Tax year 2025-26. Self-employed only. Net profits £5,000. Client elects voluntary Class 2.
-**Expected output:** Class 4 = £0 (below LPL). Voluntary Class 2 = £182.00 (52 x £3.50). Total NIC = £182.00.
+**HMRC refunds:**
+- Description: "HMRC", "SA REPAYMENT"
+- Direction: CREDIT (incoming)
+- May include NIC overpayment component
 
-### Test 5 -- Loss year, voluntary Class 2 for state pension
-**Input:** Tax year 2025-26. Self-employed only. Net profits -£3,000. Client wants to maintain NI record.
-**Expected output:** Class 4 = £0. Voluntary Class 2 = £182.00. Total NIC = £182.00.
-
-### Test 6 -- Employed and self-employed
-**Input:** Tax year 2025-26. Employed (Class 1 paid via payroll on £45,000 salary). Also self-employed with net profits £20,000.
-**Expected output:** Class 4 = (£20,000 - £12,570) x 6% = £445.80. Class 1 paid separately via payroll. Annual maximum cap checked by HMRC. Voluntary Class 2 not needed (Class 1 from employment provides qualifying year).
-
-### Test 7 -- Over state pension age
-**Input:** Tax year 2025-26. Client age 69. Net profits £40,000.
-**Expected output:** Class 4 = £0 (exempt -- over state pension age). Class 2 not needed. Total NIC = £0.
-
-### Test 8 -- 2024-25 tax year comparison
-**Input:** Tax year 2024-25. Self-employed only. Net profits £30,000.
-**Expected output:** Class 4 = (£30,000 - £12,570) x 6% = £1,045.80. Class 2 treated as paid (profits > SPT of £6,725). Voluntary Class 2 rate would be £3.45/week if elected. Total NIC = £1,045.80.
+**Key identification tips:**
+1. Most self-employed NIC is embedded within SA payments -- you cannot isolate it from the bank statement
+2. Only voluntary Class 2 via direct debit appears as a separate NIC-labelled transaction
+3. The SA302 tax calculation is the authoritative source for the NIC breakdown
+4. Payments on account are based on prior year -- actual NIC may differ
 
 ---
 
-## PROHIBITIONS
+## Section 9 -- Onboarding fallback
 
-- NEVER compute Class 4 NIC without confirming the tax year -- thresholds and rates vary by year
-- NEVER tell a client they must pay Class 2 -- it has been voluntary since 6 April 2024
-- NEVER tell a client with profits below the SPT that they automatically get a qualifying year -- they must pay voluntary Class 2 to secure it
-- NEVER apply Class 4 rates to employment income -- Class 4 applies only to self-employment profits
-- NEVER ignore the annual maximum NIC cap for clients who are both employed and self-employed
-- NEVER advise on deferment without confirming all employment income sources and expected NIC totals
-- NEVER present NIC figures as definitive for dual-status clients -- the annual maximum requires HMRC's Self Assessment calculation
-- NEVER assume Class 2 is treated as paid for clients with profits below the SPT
-- NEVER advise on NIC for non-resident or overseas clients without escalating to [T3] -- complex rules apply
+If the client provides only a bank statement:
+
+1. **Scan for HMRC debits** -- identify all outgoing payments matching Section 3 patterns
+2. **Identify SA payment dates** -- 31 Jan and 31 Jul payments are SA payments on account
+3. **Flag combined nature:** "HMRC Self Assessment payments include income tax, Class 4 NIC, optional Class 2, and student loan repayments combined. The bank statement alone cannot isolate the NIC component. Please provide the SA302 tax calculation or the SA100 return for breakdown."
+4. **Identify separate Class 2 DD** -- small monthly debits (~£15) labelled "HMRC NIC" are voluntary Class 2
+
+---
+
+## Section 10 -- Reference material
+
+### Rates comparison (2024-25 vs 2025-26)
+
+| Item | 2024-25 | 2025-26 |
+|---|---|---|
+| Class 2 weekly rate | £3.45 | £3.50 |
+| Class 2 annual | £179.40 | £182.00 |
+| SPT | £6,725 | £6,845 |
+| Class 4 main rate | 6% | 6% |
+| Class 4 additional rate | 2% | 2% |
+| LPL | £12,570 | £12,570 |
+| UPL | £50,270 | £50,270 |
+
+### Test suite
+
+**Test 1:** 2025-26, self-employed only, profits £30,000. -> Class 4 = £1,045.80. Class 2 treated as paid. Total = £1,045.80.
+
+**Test 2:** 2025-26, self-employed only, profits £80,000. -> Class 4 = £2,856.60. Total = £2,856.60.
+
+**Test 3:** 2025-26, profits £10,000. -> Class 4 = £0. Profits > SPT, Class 2 treated as paid. Total = £0.
+
+**Test 4:** 2025-26, profits £5,000, voluntary Class 2. -> Class 4 = £0. Class 2 = £182.00. Total = £182.00.
+
+**Test 5:** 2025-26, profits -£3,000, voluntary Class 2. -> Class 4 = £0. Class 2 = £182.00. Total = £182.00.
+
+**Test 6:** 2025-26, employed (£45,000 salary, Class 1 via payroll) + self-employed profits £20,000. -> Class 4 = £445.80. Annual max checked by HMRC.
+
+**Test 7:** 2025-26, age 69, profits £40,000. -> Class 4 = £0 (over state pension age). Total = £0.
+
+**Test 8:** 2024-25, profits £30,000. -> Class 4 = £1,045.80. Class 2 treated as paid (profits > SPT £6,725).
+
+### Prohibitions
+
+- NEVER compute Class 4 without confirming the tax year
+- NEVER tell a client they must pay Class 2 -- it is voluntary since 6 April 2024
+- NEVER tell a client with profits below SPT that they automatically get a qualifying year
+- NEVER apply Class 4 rates to employment income
+- NEVER ignore the annual maximum NIC cap for dual-status clients
+- NEVER advise on deferment without confirming all employment income sources
+- NEVER present NIC figures as definitive for dual-status clients
+- NEVER assume Class 2 is treated as paid for clients with profits below SPT
+- NEVER advise on NIC for non-resident clients without escalating
 
 ---
 

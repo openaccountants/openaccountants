@@ -1,60 +1,34 @@
 ---
 name: gr-efka
 description: Use this skill whenever asked about Greek EFKA (e-EFKA / Ενιαίος Φορέας Κοινωνικής Ασφάλισης) social insurance contributions for self-employed individuals. Trigger on phrases like "EFKA contributions", "Greek social insurance", "ελεύθερος επαγγελματίας ασφάλιση", "EFKA categories", "self-employed Greece insurance", or any question about social insurance obligations for a self-employed client in Greece. Covers the 6-category system for main pension, healthcare, and supplementary pension. ALWAYS read this skill before touching any Greece social contributions work.
+version: 2.0
 ---
 
-# Greece EFKA Contributions -- Self-Employed Skill
+# Greece EFKA Contributions -- Self-Employed Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 -- Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Greece |
-| Jurisdiction Code | GR |
-| Primary Legislation | N.4670/2020 (EFKA reform); N.4387/2016 (Ασφαλιστικό) |
-| Supporting Legislation | N.4756/2020; Ministerial decisions on contribution categories |
-| Tax Authority | AADE (for tax); e-EFKA (for social insurance) |
+|---|---|
+| Country | Greece (Hellenic Republic) |
+| Authority | e-EFKA (Ενιαίος Φορέας Κοινωνικής Ασφάλισης) |
+| Primary legislation | N.4670/2020 (EFKA reform); N.4387/2016 |
+| Supporting legislation | N.4756/2020; ministerial decisions on categories |
+| System | 6-category fixed monthly amounts (NOT income-based) |
+| Category 1 monthly total | EUR 307 |
+| Category 6 monthly total | EUR 830 |
+| OAED (unemployment) | EUR 10/month additional |
+| Payment frequency | Monthly |
+| Payment deadline | Last business day of each month |
+| Currency | EUR only |
 | Contributor | Open Accountants |
-| Validated By | Pending -- requires validation by Greek λογιστής or ορκωτός ελεγκτής |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
+| Validated by | Pending -- requires validation by Greek λογιστής |
+| Validation date | Pending |
 
----
+**Monthly amounts per category (2025):**
 
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before computing, you MUST know:
-
-1. **Professional category** [T1] -- freelancer (ελεύθερος επαγγελματίας), sole proprietor (ατομική επιχείρηση), or liberal profession (ελεύθερο επάγγελμα)?
-2. **Years of activity** [T1] -- determines which contribution category (1-6) applies by default
-3. **Chosen category** [T1] -- new entrants start at category 1; established professionals may choose to move up
-4. **Is the client also employed?** [T1] -- parallel insurance rules apply
-5. **Registered with which professional body?** [T2] -- engineers (TEE), lawyers (bar), doctors, etc. have specific rules
-
-**If professional category is unknown, STOP.**
-
----
-
-## Step 1: The 6-Category System [T1]
-
-**Legislation:** N.4670/2020, art. 35-39
-
-Since June 2020, Greece replaced income-based contributions with a **6-category system** of fixed monthly amounts. Self-employed choose their category (with minimums based on years of activity).
-
-### Monthly Contribution Amounts per Category (2025)
-
-| Category | Main Pension (Κύρια σύνταξη) | Health (Υγειονομική) | Supplementary Pension (Επικουρική) | Total Monthly |
-|----------|------------------------------|----------------------|-----------------------------------|---------------|
+| Cat | Main pension | Health | Supplementary | Total |
+|---|---|---|---|---|
 | 1 | EUR 210 | EUR 55 | EUR 42 | EUR 307 |
 | 2 | EUR 252 | EUR 66 | EUR 51 | EUR 369 |
 | 3 | EUR 315 | EUR 83 | EUR 63 | EUR 461 |
@@ -62,38 +36,79 @@ Since June 2020, Greece replaced income-based contributions with a **6-category 
 | 5 | EUR 473 | EUR 125 | EUR 95 | EUR 693 |
 | 6 | EUR 567 | EUR 150 | EUR 113 | EUR 830 |
 
-### Mandatory Minimum Category by Years of Activity
+---
 
-| Years Since Registration | Minimum Category |
-|-------------------------|-----------------|
+## Section 2 -- Required inputs and refusal catalogue
+
+### Required inputs
+
+Before computing, you MUST obtain:
+
+1. **Professional category** -- freelancer, sole proprietor, or liberal profession?
+2. **Years of activity** -- determines minimum category
+3. **Chosen category** -- new entrants start at 1; may choose higher
+4. **Is the client also employed?** -- parallel insurance rules
+5. **Registered with which professional body?** -- engineers, lawyers, doctors may have additional rules
+
+**If professional category is unknown, STOP.**
+
+### Refusal catalogue
+
+**R-GR-EFKA-1 -- Farmer transition.** Trigger: client transitioning from OGA (agricultural) to freelance. Message: "OGA-to-EFKA transitional rules require specialist review. Escalate."
+
+**R-GR-EFKA-2 -- Professional body contributions.** Trigger: question about bar/TEE/medical chamber rates. Message: "Professional body contributions are separate from EFKA and set independently. Confirm with the relevant chamber."
+
+### Prohibitions
+
+- NEVER compute EFKA based on income -- the category system uses FIXED monthly amounts
+- NEVER allow a client to choose a category below their minimum based on years
+- NEVER ignore OAED (EUR 10/month) -- applies to all self-employed
+- NEVER confuse EFKA contributions with professional-body contributions
+- NEVER state parallel insurance allows an offset -- contributions are additive
+- NEVER advise on category optimization without flagging for reviewer
+- NEVER present contributions as income-dependent -- they are fixed per category
+- NEVER forget late payment surcharges -- 3% per month
+
+---
+
+## Section 3 -- The 6-category system
+
+**Legislation:** N.4670/2020, art. 35-39
+
+### Mandatory minimum category by years of activity
+
+| Years since registration | Minimum category |
+|---|---|
 | 0-5 years | Category 1 |
-| 6-10 years (from year 6) | Category 2 |
-| 11-15 years (from year 11) | Category 3 |
-| 16-20 years (from year 16) | Category 4 |
-| 21-25 years (from year 21) | Category 5 |
-| 26+ years (from year 26) | Category 6 |
+| 6-10 years | Category 2 |
+| 11-15 years | Category 3 |
+| 16-20 years | Category 4 |
+| 21-25 years | Category 5 |
+| 26+ years | Category 6 |
 
-**A professional can always choose a HIGHER category than their minimum, but never a lower one.**
-
----
-
-## Step 2: Additional Contributions [T1]
-
-### OAED (Unemployment) Contribution
-
-| Who | Monthly Amount |
-|-----|---------------|
-| Self-employed (non-employer) | EUR 10/month |
-
-### ETEAEP (Lump-sum benefit fund) -- for specific professions
-
-Some professions (lawyers, engineers, doctors) have additional professional-body contributions. These are separate from EFKA.
+A professional can always choose a HIGHER category than their minimum, but never a lower one. Choice is made annually by February and is irreversible for the year.
 
 ---
 
-## Step 3: Computation Steps [T1]
+## Section 4 -- Additional contributions and category selection
 
-### Step 3.1 -- Determine minimum category
+### OAED (unemployment)
+
+All self-employed: EUR 10/month in addition to category amounts.
+
+### ETEAEP (lump-sum benefit fund)
+
+Some professions (lawyers, engineers, doctors) have additional professional-body contributions separate from EFKA.
+
+### Category selection strategy
+
+Higher category = higher pension entitlement in retirement but higher current cost. Advising on optimal choice requires retirement benefit modelling. Flag for reviewer.
+
+---
+
+## Section 5 -- Computation steps
+
+### Step 5.1 -- Determine minimum category
 
 ```
 years_active = current_year - year_of_registration
@@ -106,101 +121,89 @@ ELIF years_active <= 25: min_category = 5
 ELSE: min_category = 6
 ```
 
-### Step 3.2 -- Determine chosen category
+### Step 5.2 -- Determine chosen category
 
 ```
 chosen_category = max(client_choice, min_category)
 ```
 
-### Step 3.3 -- Calculate monthly and annual contributions
+### Step 5.3 -- Calculate contributions
 
 ```
-monthly_total = pension[chosen_category] + health[chosen_category] + supplementary[chosen_category] + OAED
-annual_total = monthly_total × 12
+monthly_total = pension[chosen] + health[chosen] + supplementary[chosen] + OAED (10)
+annual_total = monthly_total x 12
 ```
-
-### Step 3.4 -- New entrants discount (first 5 years)
-
-New professionals in their first 5 years who remain in Category 1 benefit from the lowest rates. There is no additional discount beyond the category 1 rates.
 
 ---
 
-## Step 4: Payment Schedule [T1]
+## Section 6 -- Payment schedule and tax deductibility
 
-**Legislation:** N.4670/2020
+### Payment schedule
 
-| Obligation | Due Date |
-|------------|----------|
-| Monthly EFKA contribution | Last business day of each month (for that month) |
-| Payment method | Electronic via e-EFKA portal or direct debit |
+| Obligation | Due date |
+|---|---|
+| Monthly EFKA | Last business day of each month |
+| Payment method | e-EFKA portal or direct debit |
 
-- Late payment: 3% surcharge per month (capped at 100% of principal)
-- Non-payment: e-EFKA can certify debt and pursue collection via KEAO (Centre for Debt Collection of Social Security)
+Late payment: 3% surcharge per month (capped at 100% of principal). Non-payment: KEAO debt collection.
 
----
-
-## Step 5: Tax Deductibility [T1]
+### Tax deductibility
 
 | Question | Answer |
-|----------|--------|
-| Are EFKA contributions deductible? | YES -- deductible from gross income for income tax purposes |
-| Classification | Personal deduction (not business expense) |
+|---|---|
+| Are EFKA contributions deductible? | YES -- from gross income for income tax |
+| Classification | Personal deduction |
 | Which components? | All: pension, health, supplementary, OAED |
 
 ---
 
-## Step 6: Category Selection Strategy [T2]
+## Section 7 -- Parallel insurance and suspension
 
-**Legislation:** N.4670/2020, art. 39
+### Concurrent employment and self-employment
 
-- Category choice is made annually (by February for the current year)
-- Higher category = higher pension entitlement in retirement
-- Higher category = higher current cost
-- The choice is irreversible for the year once made
+Parallel insurance applies. Client pays EFKA on BOTH activities. No offset.
 
-**[T2] -- Advising on optimal category choice requires modelling retirement benefits vs current cash flow. Flag for reviewer.**
+### Suspension of activity
+
+Must formally notify e-EFKA. No contributions during suspension. Health coverage continues up to 12 months after last contribution, then lapses.
+
+### Very low income
+
+Income level does NOT affect the contribution amount. Category minimums apply regardless.
 
 ---
 
-## Step 7: Edge Case Registry
+## Section 8 -- Edge case registry
 
-### EC1 -- New professional, first year [T1]
-**Situation:** Client registered as freelancer in October 2025.
-**Resolution:** Category 1 applies (minimum for years 0-5). Monthly: EUR 307 + EUR 10 OAED = EUR 317. Pro-rated from registration month.
+### EC1 -- New professional, first year
+**Situation:** Registered in October 2025.
+**Resolution:** Category 1. Monthly EUR 317 (EUR 307 + EUR 10 OAED). Pro-rated from registration.
 
-### EC2 -- Professional with 12 years of activity [T1]
-**Situation:** Client has been registered since 2013 (12 years).
-**Resolution:** Minimum category = 3. Monthly: EUR 461 + EUR 10 = EUR 471. Client may choose categories 4, 5, or 6 for higher pension accrual.
+### EC2 -- Professional with 12 years
+**Situation:** Registered since 2013.
+**Resolution:** Minimum category 3. Monthly EUR 471. May choose 4, 5, or 6.
 
-### EC3 -- Concurrent employment and self-employment [T1]
-**Situation:** Client is employed (EFKA paid by employer) and also has a freelance practice.
-**Resolution:** Parallel insurance applies. Client pays EFKA contributions on BOTH activities. Employment contributions deducted from salary. Self-employment contributions paid at chosen category. No offset.
+### EC3 -- Senior professional, 22 years
+**Situation:** Registered 22 years ago.
+**Resolution:** Minimum category 5. Monthly EUR 703. Annual EUR 8,436.
 
-### EC4 -- Suspension of activity [T1]
-**Situation:** Client temporarily suspends freelance activity.
-**Resolution:** Client must formally notify e-EFKA. During suspension, no contributions are due. Health coverage continues for up to 12 months after last contribution. Beyond that, coverage lapses.
+### EC4 -- Choosing higher category
+**Situation:** 3 years registered, chooses Category 4.
+**Resolution:** Category 4 (above minimum). Monthly EUR 564. Annual EUR 6,768.
 
-### EC5 -- Engineer/lawyer with professional body contributions [T2]
-**Situation:** Client is a lawyer paying both EFKA and bar association contributions.
-**Resolution:** Bar/TEE/medical association contributions are separate from EFKA. Client pays both. [T2] -- confirm professional body rates as they vary by chamber and are set independently.
+### EC5 -- 30-year veteran
+**Situation:** 30 years registered.
+**Resolution:** Category 6 mandatory. Monthly EUR 840. Annual EUR 10,080.
 
-### EC6 -- Farmer transitioning to freelance [T2]
-**Situation:** Client was insured under OGA (agricultural) and starts freelance work.
-**Resolution:** Must switch to EFKA self-employed regime. Previous OGA contributions count toward pension entitlement. [T2] -- confirm transitional rules with e-EFKA.
-
-### EC7 -- Non-resident EU freelancer working in Greece [T2]
+### EC6 -- Non-resident EU freelancer
 **Situation:** EU citizen providing services in Greece.
-**Resolution:** Under EU Regulation 883/2004, social insurance is payable in one country. [T2] -- A1 certificate determination required.
-
-### EC8 -- Very low income professional [T1]
-**Situation:** Client earns only EUR 3,000/year from freelance work.
-**Resolution:** Income level does NOT affect the contribution amount. Category 1 minimum applies regardless. Monthly EUR 317 is due. The flat-category system is NOT income-related.
+**Resolution:** EU Regulation 883/2004. A1 certificate required. Escalate.
 
 ---
 
-## Step 8: Reviewer Escalation Protocol
+## Section 9 -- Reviewer escalation protocol
 
-When Claude identifies a [T2] situation:
+When a situation requires reviewer judgement:
 
 ```
 REVIEWER FLAG
@@ -213,46 +216,44 @@ Recommended: [most likely correct treatment and why]
 Action Required: Qualified λογιστής must confirm before advising client.
 ```
 
+When a situation is outside skill scope:
+
+```
+ESCALATION REQUIRED
+Tier: T3
+Client: [name]
+Situation: [description]
+Issue: [outside skill scope]
+Action Required: Do not advise. Refer to qualified λογιστής. Document gap.
+```
+
 ---
 
-## Step 9: Test Suite
+## Section 10 -- Test suite
 
 ### Test 1 -- New freelancer, Category 1
-**Input:** First year of activity, no prior registration, age 28.
-**Expected output:** Category 1. Monthly: EUR 307 + EUR 10 OAED = EUR 317. Annual: EUR 3,804.
+**Input:** First year, age 28.
+**Expected output:** Category 1. Monthly EUR 317. Annual EUR 3,804.
 
-### Test 2 -- Established professional, 8 years, stays at minimum
-**Input:** Registered 8 years ago, chooses minimum category.
-**Expected output:** Minimum category = 2. Monthly: EUR 369 + EUR 10 = EUR 379. Annual: EUR 4,548.
+### Test 2 -- 8 years, minimum category
+**Input:** 8 years registered.
+**Expected output:** Category 2. Monthly EUR 379. Annual EUR 4,548.
 
-### Test 3 -- Senior professional, 22 years, minimum category
-**Input:** Registered 22 years ago, stays at minimum.
-**Expected output:** Minimum category = 5. Monthly: EUR 693 + EUR 10 = EUR 703. Annual: EUR 8,436.
+### Test 3 -- 22 years, minimum
+**Input:** 22 years registered.
+**Expected output:** Category 5. Monthly EUR 703. Annual EUR 8,436.
 
-### Test 4 -- Professional choosing higher category
-**Input:** Registered 3 years ago (min cat 1), chooses Category 4.
-**Expected output:** Category 4 (above minimum). Monthly: EUR 554 + EUR 10 = EUR 564. Annual: EUR 6,768.
+### Test 4 -- Choosing higher
+**Input:** 3 years, chooses Category 4.
+**Expected output:** Monthly EUR 564. Annual EUR 6,768.
 
-### Test 5 -- 30-year veteran, Category 6
-**Input:** Registered 30 years ago, minimum applies.
-**Expected output:** Category 6 mandatory. Monthly: EUR 830 + EUR 10 = EUR 840. Annual: EUR 10,080.
+### Test 5 -- 30-year veteran
+**Input:** 30 years.
+**Expected output:** Category 6. Monthly EUR 840. Annual EUR 10,080.
 
-### Test 6 -- Concurrent employment + self-employment
-**Input:** Employed (EFKA from salary), also freelancing, 5 years self-employed.
-**Expected output:** Self-employed EFKA: Category 1 minimum. EUR 317/month in addition to employment EFKA. Employment EFKA handled separately.
-
----
-
-## PROHIBITIONS
-
-- NEVER compute EFKA based on income -- the category system uses FIXED monthly amounts regardless of income
-- NEVER allow a client to choose a category below their minimum based on years of activity
-- NEVER ignore the OAED (EUR 10/month) -- it applies to all self-employed
-- NEVER confuse EFKA contributions with professional-body contributions (bar, TEE, etc.)
-- NEVER state that parallel insurance (employment + self-employment) allows an offset -- contributions are additive
-- NEVER advise on category optimization without flagging for reviewer -- retirement benefit modelling required
-- NEVER present contributions as income-dependent -- they are fixed per category
-- NEVER forget late payment surcharges -- 3% per month is severe
+### Test 6 -- Concurrent employment
+**Input:** Employed + freelancing, 5 years.
+**Expected output:** Self-employed EFKA Category 1 EUR 317/month in addition to employment EFKA.
 
 ---
 

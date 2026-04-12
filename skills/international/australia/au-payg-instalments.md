@@ -1,8 +1,8 @@
 ---
 name: au-payg-instalments
 description: >
-  Australian PAYG Instalments computation for sole traders. Covers entry/exit thresholds, instalment rate method (T1/T2), instalment amount method (T7), GDP uplift factor, voluntary variation, GIC exposure on under-estimation, and quarterly/annual election.
-version: 1.0
+  Use this skill whenever asked about Australian PAYG Instalments for sole traders. Trigger on phrases like "PAYG instalments", "BAS T1 T2 T7 T9", "instalment rate", "instalment amount", "ATO instalment", "GDP uplift", "GIC", "variation of instalments", or any question about income tax prepayments through the Business Activity Statement. Covers entry/exit thresholds, instalment rate method (T1/T2), instalment amount method (T7), GDP uplift factor, voluntary variation, GIC exposure on under-estimation, and quarterly/annual election. ALWAYS read this skill before touching any PAYG instalment work for Australia.
+version: 2.0
 jurisdiction: AU
 tax_year: 2025
 category: international
@@ -12,239 +12,286 @@ related:
   - au-gst-bas.md
 ---
 
-# Australia PAYG Instalments v1.0
+# Australia PAYG Instalments -- Sole Trader Skill v2.0
 
-## What this file is
+## Section 1 -- Quick reference
 
-**Obligation category:** ET (Estimated Tax)
-**Functional role:** Computation
-**Status:** Complete
+| Field | Value |
+|---|---|
+| Country | Australia |
+| Tax | PAYG income tax instalments (via BAS) |
+| Primary legislation | TAA 1953 Sch 1 Div 45 |
+| Authority | Australian Taxation Office (ATO) |
+| Portal | ATO Business Portal / myGov |
+| Currency | AUD only |
+| Entry thresholds | Instalment income >= $4,000 AND notional tax >= $1,000 |
+| Exit threshold | Notional tax < $500 |
+| Methods | Instalment rate (T1/T2/T9) or instalment amount (T7) |
+| GDP uplift factor | 6% (2024-25, subject to annual determination) |
+| Variation safe harbour | 85% of correct instalment amount |
+| GIC rate | Base rate + 7% (updated quarterly) |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires sign-off by Australian CPA/CA |
+| Validation date | Pending |
 
-This file provides the detailed computation logic for PAYG income tax instalments payable by sole traders via the Business Activity Statement (BAS). The BAS labels for PAYG instalments (T1-T9) are also summarised in `au-gst-bas.md`, but this skill provides the full computation detail and worked examples.
+**BAS label summary:**
 
-**Tax year coverage.** This skill targets the **2024-25 income year** (1 July 2024 to 30 June 2025).
+| Label | Description |
+|---|---|
+| T1 | Instalment income for the quarter |
+| T2 | ATO-notified instalment rate |
+| T3 | Reason code for variation |
+| T7 | ATO-notified instalment amount |
+| T9 | Calculated instalment (T1 x T2) |
 
-**The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
+**Conservative defaults:**
 
----
-
-## Section 1 — Scope statement
-
-This skill covers:
-
-- **Forms:** BAS labels T1 through T9
-- **Entity types:** Sole proprietors who are in the PAYG instalment system
-- Entry into and exit from the PAYG instalment system
-- Instalment rate method vs instalment amount method
-- Variation of instalments
-- GIC consequences of under-estimation
-- Annual instalment election
-
-This skill does NOT cover:
-
-- PAYG withholding (W labels) — see `au-gst-bas.md`
-- Companies, trusts, or partnerships as instalment payers
-- GST computation — see `australia-gst.md`
-
----
-
-## Section 2 — Filing requirements
-
-### 2.1 Statutory basis
-
-The PAYG instalment system is governed by TAA 1953 Sch 1 Div 45. It requires taxpayers with business and investment income above a threshold to make quarterly pre-payments of income tax through their BAS.
-
-### 2.2 Who enters the system
-
-A taxpayer is automatically entered into the PAYG instalment system if their most recent income tax assessment shows:
-
-| Condition | Threshold | Source |
-|-----------|-----------|--------|
-| Instalment income | >= $4,000 | TAA 1953 Sch 1 s 45-5(1)(a) |
-| AND notional tax | >= $1,000 | TAA 1953 Sch 1 s 45-5(1)(b) |
-
-**Instalment income** = gross business income + gross investment income. It excludes salary/wages (already subject to PAYG withholding), net capital gains, and exempt income.
-
-**Notional tax** = estimated tax on instalment income calculated by the ATO from the prior year assessment.
-
-### 2.3 Voluntary entry
-
-A taxpayer who does not meet the automatic entry thresholds may voluntarily enter the system. This is useful to spread expected tax liability across the year. Source: TAA 1953 Sch 1 s 45-15.
-
-### 2.4 How to exit
-
-A taxpayer can apply to exit the system if:
-- Their notional tax drops below $500, OR
-- They have ceased deriving instalment income.
-
-Notify the ATO through the Business Portal or by phone. Source: TAA 1953 Sch 1 s 45-10.
-
-### 2.5 Quarterly due dates
-
-Same as BAS due dates — see `au-gst-bas.md` Section 2.3.
+| Ambiguity | Default |
+|---|---|
+| Method unclear | Check ATO notification -- they determine the method |
+| Instalment income components uncertain | Include all business + investment income; exclude salary, CGT, exempt |
+| Variation considered | Check 85% safe harbour before varying |
+| First year of business | No instalments until first assessment |
+| Annual election eligibility | Instalment income < $2M and GST turnover < $2M |
 
 ---
 
-## Section 3 — Rates and thresholds
+## Section 2 -- Required inputs and refusal catalogue
 
-| Item | 2024-25 Value | Source |
-|------|---------------|--------|
-| Instalment income threshold | $4,000 | TAA 1953 Sch 1 s 45-5 |
-| Notional tax threshold | $1,000 | TAA 1953 Sch 1 s 45-5 |
-| Exit threshold | Notional tax < $500 | TAA 1953 Sch 1 s 45-10 |
-| GDP uplift factor | 6% (subject to ATO annual determination) | TAA 1953 Sch 1 s 45-405 |
-| GIC rate | Base rate (90-day bank bill rate) + 7%, updated quarterly | TAA 1953 Sch 1 s 45-230, TAA s 8AAD |
-| Variation safe harbour | 85% of correct instalment amount | TAA 1953 Sch 1 s 45-230 |
-| Annual instalment election turnover threshold | Instalment income < $2M and GST turnover < $2M | TAA 1953 Sch 1 s 45-140 |
+### Required inputs
+
+**Minimum viable** -- ATO notification of instalment rate (T2) or instalment amount (T7), quarterly instalment income figure.
+
+**Recommended** -- prior year income tax assessment, BAS due dates, current year income projections if varying.
+
+**Ideal** -- complete ATO notification, prior year assessment, quarterly P&L, BAS history.
+
+**Refusal policy if minimum is missing -- SOFT WARN.** Without the ATO notification, the instalment rate or amount cannot be confirmed.
+
+### Refusal catalogue
+
+**R-AU-PI-1 -- Companies/trusts/partnerships.** Trigger: client is not a sole trader. Message: "This skill covers sole trader PAYG instalments only."
+
+**R-AU-PI-2 -- PAYG withholding.** Trigger: client asks about PAYG withholding (W labels). Message: "PAYG withholding is a separate obligation. See au-gst-bas."
+
+**R-AU-PI-3 -- GST computation.** Trigger: client asks about GST. Message: "GST computation is handled by the GST skill. This skill covers PAYG instalments only."
 
 ---
 
-## Section 4 — Computation rules
+## Section 3 -- Payment pattern library
 
-### 4.1 Method selection
+This is the deterministic pre-classifier for bank statement transactions. When a debit matches a pattern below, classify it as a PAYG instalment payment.
 
-The ATO determines the method for each taxpayer. Two methods:
+### 3.1 ATO PAYG instalment debits
 
-| Method | Labels used | How it works |
-|--------|------------|--------------|
-| Instalment amount | T7 | ATO notifies a fixed dollar amount per quarter |
-| Instalment rate | T1, T2, T9 | Taxpayer reports actual instalment income, multiplied by ATO-notified rate |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ATO, AUSTRALIAN TAXATION OFFICE | PAYG instalment | Match with BAS quarterly timing |
+| BAS PAYMENT, BAS DEBIT | PAYG instalment (combined with GST) | BAS payment includes both GST and PAYG |
+| PAYG INSTALMENT, PAYG INST | PAYG instalment | Explicit description |
+| ATO DIRECT DEBIT | PAYG instalment | Automatic payment |
 
-Taxpayers using the instalment amount method may switch to the instalment rate method by notifying the ATO. The reverse switch is not available — the ATO assigns instalment amount when appropriate.
+### 3.2 Timing-based identification (quarterly BAS, standard)
 
-### 4.2 Instalment rate method — step by step
+| Debit date range | BAS quarter | Confidence |
+|---|---|---|
+| 20 October -- 5 November | Q1 (Jul-Sep) due 28 Oct | High |
+| 20 February -- 10 March | Q2 (Oct-Dec) due 28 Feb | High |
+| 20 April -- 10 May | Q3 (Jan-Mar) due 28 Apr | High |
+| 20 July -- 10 August | Q4 (Apr-Jun) due 28 Jul | High |
 
-**Step 1.** Calculate instalment income for the quarter (label T1).
+Note: BAS payments typically combine GST and PAYG amounts. The PAYG component is the T9 or T7 figure within the BAS.
 
-Instalment income includes:
-- Gross business income (sales, fees, commissions)
-- Interest income
-- Dividend income (unfranked amount + franking credits)
-- Rental income (gross rent)
-- Royalties
-- Trust distributions (assessable amount)
+### 3.3 Related but NOT PAYG instalments
 
-Instalment income excludes:
-- Salary and wages
-- Net capital gains
-- Exempt income
-- GST collected
-- Non-assessable non-exempt income
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ATO PAYG WITHHOLDING, W1-W5 | EXCLUDE | Employer withholding (separate) |
+| ATO GST ONLY | EXCLUDE | GST-only payment |
+| ATO SUPER, SUPER GUARANTEE | EXCLUDE | Superannuation guarantee |
+| ATO PENALTY, ATO GIC | EXCLUDE | Penalty/interest |
+| ATO REFUND | Flag for reviewer | Tax refund |
+| ATO ACTIVITY STATEMENT | Combined payment | Includes GST + PAYG -- split for classification |
 
-**Step 2.** Obtain the ATO-notified instalment rate (label T2).
+### 3.4 BAS combined payment identification
 
-The ATO calculates this as: (notional tax / instalment income from prior year) x GDP uplift factor. The rate is expressed as a percentage (e.g., 12.50%).
+A single BAS payment typically includes GST payable/refundable + PAYG instalment + PAYG withholding. To isolate the PAYG instalment component, the BAS form values (T7 or T9) are needed.
 
-**Step 3.** Calculate the instalment amount:
+---
+
+## Section 4 -- Worked examples
+
+### Example 1 -- Instalment rate method
+
+**Input:** Q1 business income = $42,000. Interest income = $800. ATO rate (T2) = 8.50%.
+
+| BAS label | Value |
+|---|---|
+| T1 (instalment income) | $42,800 |
+| T2 (instalment rate) | 8.50% |
+| T9 (instalment payable) | $3,638 |
+
+### Example 2 -- Instalment amount method
+
+**Input:** ATO-notified instalment amount (T7) = $3,180 per quarter.
+
+**Output:** Report T7 = $3,180 on BAS. Pay by BAS due date.
+
+### Example 3 -- Variation of instalment rate
+
+**Input:** ATO rate = 12%. Taxpayer estimates current year rate should be 8% (income dropped). Varied rate = 8%.
+
+**Computation:** T9 = T1 x 8%. Check: total varied instalments must be >= 85% of correct instalment (based on actual year-end assessment). If not, GIC applies.
+
+### Example 4 -- Below entry threshold
+
+**Input:** Instalment income = $3,500. Notional tax = $800.
+
+**Output:** Instalment income < $4,000. Not entered into PAYG instalment system.
+
+### Example 5 -- Bank statement classification
+
+**Input line:** `28.10.2024 ; ATO ACTIVITY STATEMENT ; DEBIT ; BAS JUL-SEP 2024 ; -5,800.00 ; AUD`
+
+**Classification:** Combined BAS payment (GST + PAYG). PAYG instalment component = T7 or T9 from the BAS. Flag for reviewer to split.
+
+---
+
+## Section 5 -- Computation rules
+
+### 5.1 Entry into PAYG instalment system
+
+Automatic entry if most recent assessment shows:
+- Instalment income >= $4,000, AND
+- Notional tax >= $1,000
+
+Voluntary entry available below thresholds.
+
+### 5.2 Instalment rate method (T1/T2/T9)
 
 ```
-T9 = T1 x T2
+T1 = quarterly instalment income (business + investment, excl. salary/CGT/GST)
+T2 = ATO-notified rate (prior year notional tax / instalment income x GDP uplift)
+T9 = T1 x T2 (rounded to whole dollars)
 ```
 
-Round to whole dollars.
+### 5.3 Instalment amount method (T7)
 
-**Step 4.** Report T1, T2, and T9 on the BAS. Pay T9 by the BAS due date.
+```
+T7 = (prior year notional tax / 4) x GDP uplift factor
+```
 
-#### Worked example — instalment rate method
+No income calculation needed. ATO pre-fills the amount.
 
-| Item | Amount |
-|------|--------|
-| Quarter 1 business income | $42,000 |
-| Quarter 1 interest income | $800 |
-| Quarter 1 instalment income (T1) | $42,800 |
-| ATO-notified instalment rate (T2) | 8.50% |
-| Instalment payable (T9) = $42,800 x 8.50% | $3,638 |
+### 5.4 GDP uplift factor
 
-### 4.3 Instalment amount method — step by step
+2024-25: 6%. Applied by ATO when calculating T2 and T7. Updated annually.
 
-**Step 1.** The ATO notifies the instalment amount on the pre-filled BAS (label T7).
+### 5.5 Variation
 
-The amount is calculated as: (prior year notional tax / 4) x GDP uplift factor.
+Taxpayer may vary T2 (rate) or T7 (amount) downward. If total varied instalments < 85% of the benchmark (correct instalment based on actual assessment), GIC applies from each instalment due date.
 
-**Step 2.** The taxpayer reports T7 on the BAS and pays by the due date.
+### 5.6 Year-end credit
 
-**Step 3.** No calculation of instalment income is required.
-
-#### Worked example — instalment amount method
-
-| Item | Amount |
-|------|--------|
-| Prior year notional tax | $12,000 |
-| GDP uplift factor | 1.06 |
-| Annual instalment amount | $12,720 |
-| Quarterly instalment (T7) = $12,720 / 4 | $3,180 |
-
-### 4.4 Variation of instalments
-
-A taxpayer can vary either the instalment rate (T2) or the instalment amount (T7) downward if they believe the ATO-notified figure will result in over-payment.
-
-**Step 1.** Estimate the current year's tax liability.
-
-**Step 2.** Calculate the appropriate instalment rate or amount for the remaining quarters.
-
-**Step 3.** Report the varied rate or amount on the BAS. Provide a reason code at T3.
-
-**Step 4.** GIC exposure check — if the total of varied instalments for the year is less than 85% of the "benchmark instalment" (i.e., the instalment that would have been correct based on the actual assessment), a general interest charge applies on the shortfall from each instalment due date to the date the annual assessment is due. Source: TAA 1953 Sch 1 s 45-230.
-
-### 4.5 Credit on annual assessment
-
-**Step 1.** At year-end, the total PAYG instalments paid during the year are credited against the taxpayer's annual income tax assessment.
-
-**Step 2.** If instalments exceed the actual tax liability, the taxpayer receives a refund (or offset against other debts).
-
-**Step 3.** If instalments are less than the actual tax liability, the shortfall is payable with the annual assessment.
+Total PAYG instalments credited against annual income tax assessment. Overpayment: refund or offset. Underpayment: balance due with assessment.
 
 ---
 
-## Section 5 — Edge cases and special rules
+## Section 6 -- Penalties and interest
 
-### 5.1 First year of business
+### 6.1 General Interest Charge (GIC)
 
-New sole traders are not entered into the PAYG instalment system until after their first income tax assessment. No instalments are payable during the first year of business. This can create a tax shock in Year 2 when the taxpayer must pay both the Year 1 balance and begin Year 2 instalments.
+Rate: base rate (90-day bank bill rate) + 7%. Updated quarterly. Applies from instalment due date if variation results in < 85% of correct amount.
 
-**Recommendation:** Flag this to the reviewer. The client should set aside estimated tax during Year 1.
+### 6.2 Late BAS lodgement penalty
 
-### 5.2 Seasonal or irregular income
+Failure to lodge BAS: $313 per 28-day period, up to 5 periods ($1,565 max for small entities).
 
-Taxpayers with seasonal income may benefit from the instalment rate method, as the instalment amount automatically adjusts with income each quarter. If using the instalment amount method, consider varying the amount in low-income quarters.
+### 6.3 Safe harbour
 
-### 5.3 Multiple business activities
-
-If a sole trader operates multiple businesses, instalment income is the total across all activities. The instalment rate applies to the aggregate.
-
-### 5.4 Investment income included
-
-Instalment income includes investment income (interest, dividends, rent). Taxpayers who are employees with significant investment income may enter the PAYG instalment system even without a business.
-
-### 5.5 Interaction with Medicare levy and Medicare levy surcharge
-
-The ATO-notified instalment rate already factors in the Medicare levy (2%) and any Medicare levy surcharge. No separate adjustment is needed by the taxpayer.
-
-### 5.6 Death of a taxpayer
-
-If a sole trader dies during the income year, the legal personal representative must lodge any outstanding BAS and pay any outstanding instalments. Source: TAA 1953 Sch 1 s 45-25.
+If varied instalments total >= 85% of the benchmark instalment, no GIC.
 
 ---
 
-## Section 6 — Self-checks
+## Section 7 -- Annual instalment election
+
+Taxpayers with instalment income < $2M and GST turnover < $2M may elect to lodge and pay annually instead of quarterly. This aligns the PAYG instalment with the annual income tax assessment.
+
+---
+
+## Section 8 -- Edge cases
+
+**EC1 -- First year of business.** Not entered into PAYG system until after first assessment. No instalments in Year 1. Tax shock in Year 2. Flag for reviewer.
+
+**EC2 -- Seasonal/irregular income.** Instalment rate method auto-adjusts. If using amount method, consider variation in low-income quarters.
+
+**EC3 -- Multiple businesses.** Instalment income = total across all activities. Single rate applies to aggregate.
+
+**EC4 -- Investment income included.** Interest, dividends, rent are instalment income. Employees with significant investment income may enter PAYG system.
+
+**EC5 -- Medicare levy.** ATO-notified rate already includes Medicare levy (2%) and any surcharge. No separate adjustment needed.
+
+**EC6 -- Exit from system.** Apply if notional tax drops below $500 or instalment income ceases.
+
+---
+
+## Section 9 -- Self-checks
 
 Before delivering output, verify:
 
-- [ ] Taxpayer meets the entry threshold ($4,000 instalment income AND $1,000 notional tax)
-- [ ] Correct method identified (instalment rate vs instalment amount)
-- [ ] Instalment income (T1) includes only the correct components (no salary, no CGT, no GST)
-- [ ] Instalment rate (T2) matches the ATO notification or is validly varied
-- [ ] If varied, the 85% safe harbour is checked against estimated actual tax
-- [ ] GDP uplift factor is current year's factor
-- [ ] Quarterly due dates are correctly identified
-- [ ] Year-end credit against annual assessment is noted
-- [ ] First-year-of-business exception is checked
-- [ ] Rates and thresholds match the 2024-25 income year
-- [ ] Output format matches the base skill spec
+- [ ] Entry thresholds checked ($4,000 instalment income + $1,000 notional tax)
+- [ ] Correct method identified (rate vs amount)
+- [ ] T1 includes only correct components (no salary, no CGT, no GST)
+- [ ] T2 matches ATO notification or is validly varied
+- [ ] 85% safe harbour checked if variation applied
+- [ ] GDP uplift factor current
+- [ ] BAS due dates correct
+- [ ] Year-end credit against annual assessment noted
+- [ ] First-year exception flagged if applicable
+- [ ] Output labelled as estimated until Australian CPA/CA confirms
 
 ---
 
-## Section 7 — Disclaimer
+## Section 10 -- Test suite
+
+### Test 1 -- Instalment rate method
+**Input:** T1 = $42,800. T2 = 8.50%.
+**Expected:** T9 = $3,638.
+
+### Test 2 -- Instalment amount method
+**Input:** Prior year notional tax = $12,000. GDP uplift = 6%.
+**Expected:** Annual = $12,720. T7 = $3,180/quarter.
+
+### Test 3 -- Below entry threshold
+**Input:** Instalment income = $3,500.
+**Expected:** Not entered into system.
+
+### Test 4 -- Variation with safe harbour check
+**Input:** ATO rate 12%. Varied to 8%. Actual correct rate = 10%.
+**Expected:** Varied total = 80% of correct. Below 85%. GIC applies.
+
+### Test 5 -- First year
+**Input:** New sole trader, no prior assessment.
+**Expected:** No instalments. Flag Year 2 tax shock risk.
+
+### Test 6 -- Year-end credit (overpayment)
+**Input:** Total instalments paid = $15,000. Actual tax = $12,000.
+**Expected:** $3,000 overpayment refunded or offset.
+
+---
+
+## Prohibitions
+
+- NEVER include salary, net capital gains, or GST in instalment income (T1)
+- NEVER vary the instalment rate or amount without checking the 85% safe harbour
+- NEVER assume the first year of business requires PAYG instalments
+- NEVER ignore the GDP uplift factor when computing T7 or verifying T2
+- NEVER conflate PAYG instalments (T labels) with PAYG withholding (W labels)
+- NEVER present instalment figures as definitive -- the ATO notification is authoritative
+
+---
+
+## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 

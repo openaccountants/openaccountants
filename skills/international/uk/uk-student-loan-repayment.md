@@ -1,8 +1,8 @@
 ---
 name: uk-student-loan-repayment
 description: >
-  Use this skill whenever asked about UK Student Loan repayment for self-employed individuals. Trigger on phrases like "student loan repayment", "Plan 1", "Plan 2", "Plan 4", "Plan 5", "postgraduate loan", "student loan self-employed", "student loan Self Assessment", "SLC repayment", or any question about student loan obligations for a self-employed client. Also trigger when preparing an SA100 Self Assessment return where student loan repayment is relevant. This skill covers Plan 1, Plan 2, Plan 4, Plan 5, and Postgraduate Loan thresholds and rates, self-employed calculation via Self Assessment, multiple plan interaction, overseas earnings rules, write-off periods, and edge cases. ALWAYS read this skill before touching any UK student loan repayment work.
-version: 1.0
+  Use this skill whenever asked about UK Student Loan repayment for self-employed individuals. Trigger on phrases like "student loan repayment", "Plan 1", "Plan 2", "Plan 4", "Plan 5", "postgraduate loan", "student loan self-employed", "student loan Self Assessment", "SLC repayment", "student loan deduction", or any question about student loan obligations for a self-employed client. Also trigger when classifying bank statement transactions showing SLC repayments via SA, PAYE student loan deductions, or direct SLC payments. This skill covers Plan 1-5 and Postgraduate Loan thresholds, self-employed SA calculation, multiple plan interaction, bank statement classification patterns, overseas earnings, write-off periods, and edge cases. ALWAYS read this skill before touching any UK student loan repayment work.
+version: 2.0
 jurisdiction: GB
 tax_year: 2025-26
 category: international
@@ -10,324 +10,381 @@ depends_on:
   - income-tax-workflow-base
 ---
 
-# UK Student Loan Repayment -- Self-Employed Skill
+# UK Student Loan Repayment -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before computing or classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | United Kingdom |
-| Jurisdiction Code | GB |
+|---|---|
+| Country | United Kingdom |
 | Primary Legislation | Education (Student Loans) Act 1998; Education (Repayment of Student Loans) Regulations 2009 |
-| Supporting Legislation | Teaching and Higher Education Act 1998; Higher Education (Fee Limits and Student Support) (England) Regulations |
 | Administering Body | Student Loans Company (SLC); collected by HMRC via Self Assessment |
-| Rate Publisher | SLC / HMRC (publishes annual thresholds) |
+| Tax Year | 2025-26 |
+| Currency | GBP only |
+| Plan 1 threshold | £26,065 / 9% |
+| Plan 2 threshold | £28,470 / 9% |
+| Plan 4 threshold | £32,745 / 9% |
+| Plan 5 threshold | £25,000 / 9% |
+| Postgraduate Loan threshold | £21,000 / 6% |
+| Payment method | Via Self Assessment (31 Jan / 31 Jul / 31 Jan) |
+| Not tax-deductible | Student loan repayments are NOT business expenses |
 | Contributor | Open Accountants |
-| Validated By | Pending -- requires sign-off by a UK-qualified practitioner |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Tax Year Coverage | 2025-26 |
-| Confidence Coverage | Tier 1: threshold lookup, rate calculation, Self Assessment computation. Tier 2: multiple plan interaction, overseas income assessment, early repayment decisions. Tier 3: loan cancellation disputes, SLC administrative errors, disability-related queries. |
+| Validated by | Pending -- requires sign-off by a UK-qualified practitioner |
+| Validation date | Pending |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown plan type | STOP -- do not guess; direct client to SLC |
+| Unknown total income | Ask -- threshold comparison requires total relevant income |
+| Unknown PAYE deductions | Ask -- PAYE offset affects SA balance |
+| Unknown unearned income | Ask if total unearned > £2,000 (below £2,000 = excluded) |
+| Unknown overseas status | Flag for reviewer -- SLC applies country-specific thresholds |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified practitioner must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- plan type(s), tax year, and total taxable income (all sources).
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- P60 or payslips showing PAYE student loan deductions, bank statements showing SA payments, SLC online account balance.
 
-Before computing any student loan repayment figure, you MUST know:
+**Ideal** -- complete SA100 return data, SLC repayment schedule, confirmation of plan type from SLC.
 
-1. **Which plan type(s)?** [T1] -- Plan 1, Plan 2, Plan 4, Plan 5, Postgraduate Loan, or a combination?
-2. **Tax year** [T1] -- thresholds change annually.
-3. **Total taxable income** [T1] -- not just self-employment profits; includes employment income, unearned income above £2,000, and other taxable sources.
-4. **Has PAYE already deducted student loan repayments?** [T1] -- employment income may have had repayments deducted at source.
-5. **Is the client living outside the UK?** [T2] -- overseas income assessment applies.
-6. **When did the client take out their loan?** [T2] -- determines plan type if client is unsure.
+### Refusal catalogue
 
-**If plan type is unknown, advise client to check with SLC or log in at repaymentplan.studentloanrepayment.co.uk. Do not guess the plan type.**
+**R-UK-SL-1 -- Plan type unknown.** *Trigger:* client does not know plan type. *Message:* "Do not guess the plan type. Direct the client to check at repaymentplan.studentloanrepayment.co.uk or call SLC directly."
+
+**R-UK-SL-2 -- Overseas borrower.** *Trigger:* client lives outside the UK for 3+ months. *Message:* "SLC conducts an overseas income assessment with country-specific thresholds. Do not use UK thresholds. Escalate to SLC directly."
+
+**R-UK-SL-3 -- Loan cancellation or SLC error.** *Trigger:* client disputes loan balance or believes SLC has made an error. *Message:* "Loan balance disputes and administrative errors must be resolved directly with SLC. Out of scope."
 
 ---
 
-## Step 1: Determine Plan Type [T1]
+## Section 3 -- Payment pattern library
 
-**Legislation:** Education (Repayment of Student Loans) Regulations 2009
+This is the deterministic pre-classifier for bank statement transactions related to student loan repayments.
 
-| Plan | Who | When Loan Taken |
-|------|-----|-----------------|
-| Plan 1 | English/Welsh students (pre-2012), NI students (all years) | Before 1 September 2012 (England/Wales) or any time (Northern Ireland) |
-| Plan 2 | English/Welsh students (post-2012) | On or after 1 September 2012 |
-| Plan 4 | Scottish students | All Scottish student loans (replaced Plan 1 for Scotland from April 2021) |
-| Plan 5 | English students (post-2023) | On or after 1 August 2023 (undergraduate and Advanced Learner Loans) |
-| Postgraduate Loan | Postgraduate Master's or Doctoral students (England/Wales) | From 2016-17 onward |
+### 3.1 Student loan repayments via Self Assessment
 
-**A client can be on multiple plans simultaneously** (e.g., Plan 2 undergraduate + Postgraduate Loan).
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HMRC SELF ASSESSMENT | EXCLUDE -- combined SA payment | Student loan repayment is embedded in the SA payment alongside income tax and NIC; cannot isolate from bank statement |
+| HMRC, HM REVENUE & CUSTOMS | EXCLUDE -- SA payment | Same -- student loan component included |
+| SA PAYMENT, SA BALANCING | EXCLUDE -- SA payment | Same |
 
----
+### 3.2 Direct SLC payments (voluntary overpayments or overseas)
 
-## Step 2: Thresholds and Rates (2025-26) [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SLC, STUDENT LOANS COMPANY | EXCLUDE -- student loan repayment | Direct payment to SLC (voluntary overpayment or overseas repayment) |
+| STUDENT LOAN, STUDENT LOANS | EXCLUDE -- student loan | Generic reference |
+| ERUDIO STUDENT LOANS | EXCLUDE -- legacy loan | Pre-1998 mortgage-style loans (now managed by Erudio) |
 
-**Source:** HMRC Student and Postgraduate Loan deduction tables 2025-26; SLC annual threshold confirmation
+### 3.3 PAYE deductions (visible on payslips, not bank statement)
 
-| Plan | Annual Threshold | Monthly Equivalent | Weekly Equivalent | Rate |
-|------|-----------------|-------------------|-------------------|------|
-| Plan 1 | £26,065 | £2,172 | £501 | 9% |
-| Plan 2 | £28,470 | £2,372 | £547 | 9% |
-| Plan 4 | £32,745 | £2,728 | £629 | 9% |
-| Plan 5 | £25,000 | £2,083 | £480 | 9% |
-| Postgraduate Loan | £21,000 | £1,750 | £403 | 6% |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES (incoming credit) | Not a student loan payment | Student loan deduction already made at source by employer -- net salary shown on bank statement is post-deduction |
 
-### Key Notes on Thresholds
+### 3.4 SLC refunds
 
-- **Plan 5 threshold** is fixed at £25,000 until April 2027, then rises annually with RPI.
-- **Plan 2 threshold** increases to £29,385 from April 2026, then frozen until April 2030.
-- **Postgraduate Loan threshold** has remained at £21,000 since inception.
-- Plan 5 repayments begin from April 2026 at the earliest (even if the student left their course early).
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SLC REFUND, STUDENT LOANS REFUND | EXCLUDE -- refund of overpayment | SLC refunds overpaid amounts directly |
 
 ---
 
-## Step 3: Self-Employed Calculation via Self Assessment [T1]
+## Section 4 -- Worked examples
 
-**Legislation:** Education (Repayment of Student Loans) Regulations 2009, Reg 49-51
+Six bank statement classifications for a hypothetical UK self-employed graphic designer with a Plan 2 loan and Postgraduate Loan.
 
-### What Income Counts?
+### Example 1 -- SA balancing payment (includes student loan)
 
-For Self Assessment purposes, "income" for student loan repayment includes:
+**Input line:**
+`31.01.2027 ; HMRC SELF ASSESSMENT ; DEBIT ; BALANCING PAYMENT ; -5,800.00 ; GBP`
 
-| Income Type | Included? |
-|-------------|-----------|
-| Self-employment profits (SA103) | Yes |
-| Employment income (SA100) | Yes (but PAYE deductions may already apply) |
-| Savings income | Yes, if total unearned income exceeds £2,000 |
-| Dividend income | Yes, if total unearned income exceeds £2,000 |
-| Rental income | Yes, if total unearned income exceeds £2,000 |
-| Pension income | Yes |
-| Capital gains | No |
+**Reasoning:**
+Matches "HMRC SELF ASSESSMENT" (pattern 3.1). This is the 31 January balancing payment. Includes income tax + Class 4 NIC + student loan repayment combined. Cannot isolate student loan component from bank statement. Need SA302 for breakdown.
 
-### Formula (Single Plan)
+**Classification:** EXCLUDE -- combined SA payment. Request SA302 for student loan component.
+
+### Example 2 -- Voluntary overpayment direct to SLC
+
+**Input line:**
+`15.05.2026 ; STUDENT LOANS COMPANY ; DEBIT ; VOLUNTARY OVERPAYMENT ; -500.00 ; GBP`
+
+**Reasoning:**
+Matches "STUDENT LOANS COMPANY" (pattern 3.2). This is a voluntary overpayment made directly to SLC. Not deductible. Not part of SA. Reduce outstanding loan balance.
+
+**Classification:** EXCLUDE -- voluntary student loan overpayment. Not tax-deductible.
+
+### Example 3 -- Employment salary (PAYE deduction already made)
+
+**Input line:**
+`28.02.2026 ; DESIGN AGENCY LTD ; CREDIT ; FEB SALARY ; +2,400.00 ; GBP`
+
+**Reasoning:**
+Employment income. If the client is on Plan 2, the employer has already deducted student loan repayments from gross salary before paying the net amount. The £2,400 is post-deduction. This is NOT a student loan payment visible on the bank statement.
+
+**Classification:** NOT a student loan payment. PAYE deduction already made at source.
+
+### Example 4 -- SLC refund
+
+**Input line:**
+`20.06.2026 ; SLC REFUND ; CREDIT ; OVERPAYMENT REFUND ; +320.00 ; GBP`
+
+**Reasoning:**
+Matches "SLC REFUND" (pattern 3.4). Client overpaid and SLC is refunding. Not taxable income. Not a student loan payment.
+
+**Classification:** EXCLUDE -- refund from SLC. Not taxable.
+
+### Example 5 -- Payment on account (includes student loan)
+
+**Input line:**
+`31.07.2026 ; HMRC ; DEBIT ; 2ND PAYMENT ON ACCOUNT ; -2,900.00 ; GBP`
+
+**Reasoning:**
+Matches "HMRC" (pattern 3.1). Second payment on account. Includes income tax + Class 4 NIC + student loan POA. Cannot split from bank statement.
+
+**Classification:** EXCLUDE -- SA payment on account. Request SA302 for student loan component.
+
+### Example 6 -- Erudio legacy loan payment
+
+**Input line:**
+`01.04.2026 ; ERUDIO STUDENT LOANS ; DEBIT ; MONTHLY REPAYMENT ; -180.00 ; GBP`
+
+**Reasoning:**
+Matches "ERUDIO STUDENT LOANS" (pattern 3.2). This is a pre-1998 mortgage-style student loan managed by Erudio. Separate from the income-contingent plans. Monthly fixed repayments.
+
+**Classification:** EXCLUDE -- legacy student loan repayment. Not tax-deductible.
+
+---
+
+## Section 5 -- Tier 1 rules
+
+### Rule 1 -- Single plan formula
 
 ```
 Repayment = (total_relevant_income - threshold) x rate
 ```
 
-If the result is negative, repayment = £0.
+If result is negative, repayment = £0.
 
-### PAYE Offset
+### Rule 2 -- What income counts
 
-If the client is also employed and student loan repayments have been deducted via PAYE, the Self Assessment calculation works as follows:
+| Income Type | Included? |
+|---|---|
+| Self-employment profits (SA103) | Yes |
+| Employment income (SA100) | Yes (but PAYE deductions offset) |
+| Savings income | Yes, if total unearned > £2,000 |
+| Dividend income | Yes, if total unearned > £2,000 |
+| Rental income | Yes, if total unearned > £2,000 |
+| Pension income | Yes |
+| Capital gains | No |
+
+### Rule 3 -- PAYE offset
 
 ```
 Total repayment due = (total_relevant_income - threshold) x rate
-Less: PAYE deductions already made
-= Balance due via Self Assessment
+Less: PAYE deductions already made = Balance due via Self Assessment
 ```
 
-**If PAYE deductions exceed the total amount due, the client may be entitled to a refund from SLC (not HMRC).**
+If PAYE exceeds total due, client claims refund from SLC (not HMRC).
+
+### Rule 4 -- Multiple plans
+
+Each plan calculated separately with its own threshold. Both apply simultaneously.
+
+| Combination | Calculation |
+|---|---|
+| Plan 2 + Postgraduate Loan | 9% above £28,470 AND 6% above £21,000 |
+| Plan 1 + Postgraduate Loan | 9% above £26,065 AND 6% above £21,000 |
+| Sequential (Plan 1 then Plan 2) | Plan 1 repaid first, then Plan 2 begins |
+
+Maximum combined rate: 15% where both thresholds exceeded.
+
+### Rule 5 -- NOT tax-deductible
+
+Student loan repayments are NOT business expenses. Cannot be deducted from trading profits.
+
+### Rule 6 -- Payment schedule (via Self Assessment)
+
+Same as income tax: 31 Jan (1st POA), 31 Jul (2nd POA), 31 Jan (balancing). POAs = 50% of prior year student loan SA liability.
+
+### Rule 7 -- Write-off periods
+
+| Plan | Write-Off |
+|---|---|
+| Plan 1 (pre-Sep 2006) | Age 65 |
+| Plan 1 (post-Sep 2006) | 25 years after first repayment |
+| Plan 2 | 30 years |
+| Plan 4 | 30 years (or age 65 for older borrowers) |
+| Plan 5 | 40 years |
+| Postgraduate Loan | 30 years |
+
+### Rule 8 -- Plan 5 timing
+
+Plan 5 repayments cannot begin before April 2026. For 2025-26 SA, no Plan 5 repayment is due.
+
+### Rule 9 -- Unearned income rule
+
+Total unearned income (savings + dividends + rent) only counts if it exceeds £2,000/year.
 
 ---
 
-## Step 4: Multiple Plan Interaction [T2]
+## Section 6 -- Tier 2 catalogue
 
-**A client on more than one plan repays on EACH plan separately, using each plan's own threshold.**
+### T2-1 -- Multiple plan interaction
 
-### Rules for Multiple Plans
+**Trigger:** Client has more than one plan type simultaneously.
+**Action:** Confirm plan types with SLC before computing. Each plan uses its own threshold.
 
-| Combination | How It Works |
-|------------|-------------|
-| Plan 1 + Postgraduate Loan | 9% above £26,065 (Plan 1) AND 6% above £21,000 (PGL). Both apply simultaneously. |
-| Plan 2 + Postgraduate Loan | 9% above £28,470 (Plan 2) AND 6% above £21,000 (PGL). Both apply simultaneously. |
-| Plan 4 + Postgraduate Loan | 9% above £32,745 (Plan 4) AND 6% above £21,000 (PGL). Both apply simultaneously. |
-| Plan 1 then Plan 2 (sequential) | Plan 1 is repaid first. Once Plan 1 is cleared, Plan 2 repayments begin. HMRC/SLC coordinate this. |
+### T2-2 -- Overseas earnings
 
-**Maximum combined rate: 9% + 6% = 15% of income above the lower threshold (where both thresholds are exceeded).**
+**Trigger:** Client lives outside UK for 3+ months.
+**Action:** SLC applies country-specific thresholds. Do not use UK thresholds. Escalate.
 
-**[T2] flag for reviewer when client has multiple plans. Confirm plan types with SLC before computing.**
+### T2-3 -- Approaching write-off date
 
----
+**Trigger:** Client is within 2 years of write-off.
+**Action:** Advise against voluntary overpayments. Flag for reviewer to confirm exact write-off date with SLC.
 
-## Step 5: Overseas Earnings [T2]
+### T2-4 -- Mid-year overseas move
 
-**Legislation:** Education (Repayment of Student Loans) Regulations 2009
+**Trigger:** Client was UK-resident part of the year, then moved abroad.
+**Action:** UK SA covers UK-resident period; SLC overseas assessment covers the rest. Flag for reviewer.
 
-| Requirement | Detail |
-|-------------|--------|
-| Notification | Must inform SLC if leaving the UK for 3+ months |
-| Assessment | SLC conducts overseas income assessment based on country of residence |
-| Thresholds | SLC applies country-specific thresholds (may be higher or lower than UK thresholds) |
-| Currency | Income converted to GBP by SLC |
-| Repayment method | Direct to SLC (not via HMRC Self Assessment) |
-| Non-compliance | SLC can apply a fixed monthly repayment if income evidence is not provided |
+### T2-5 -- Early repayment decision
 
-**[T2] flag for reviewer whenever client has overseas earnings. Country-specific thresholds are set by SLC and vary significantly. Do not use UK thresholds for overseas borrowers.**
+**Trigger:** Client asks whether to make voluntary overpayments.
+**Action:** Flag for reviewer. Consider interest rates, write-off proximity, and opportunity cost.
 
 ---
 
-## Step 6: Write-Off Periods [T1]
-
-**Legislation:** Education (Repayment of Student Loans) Regulations 2009
-
-| Plan | Write-Off Rule |
-|------|---------------|
-| Plan 1 (loan before 1 Sep 2006) | Written off at age 65 |
-| Plan 1 (loan on/after 1 Sep 2006) | Written off 25 years after first due repayment date |
-| Plan 2 | Written off 30 years after first due repayment date |
-| Plan 4 | Written off 30 years after first due repayment date (or age 65 for older borrowers) |
-| Plan 5 | Written off 40 years after first due repayment date |
-| Postgraduate Loan | Written off 30 years after first due repayment date |
-
-**Write-off also occurs on death or permanent disability (confirmed by SLC).**
-
----
-
-## Step 7: Payment Schedule for Self-Employed [T1]
-
-Student loan repayments via Self Assessment follow the same payment schedule as income tax:
-
-| Payment | Due Date |
-|---------|----------|
-| First payment on account | 31 January during tax year |
-| Second payment on account | 31 July after tax year end |
-| Balancing payment | 31 January following tax year end |
-
-**Payments on account for student loans are calculated at 50% of the prior year's student loan repayment via Self Assessment.**
-
-**Example for 2025-26 tax year:**
-- 31 January 2026: First payment on account
-- 31 July 2026: Second payment on account
-- 31 January 2027: Balancing payment
-
----
-
-## Step 8: Key Rules [T1]
-
-1. **Student loan repayment is not a tax.** It is a separate obligation collected alongside tax through Self Assessment.
-2. **Student loan repayments are NOT tax-deductible.** They cannot be deducted from trading profits or claimed as a business expense.
-3. **Interest accrues on the outstanding loan balance** at rates set by SLC (linked to RPI and/or prevailing market rates depending on plan type). Interest is not the concern of the Self Assessment computation -- it is managed by SLC.
-4. **Voluntary overpayments** can be made directly to SLC at any time to reduce the balance faster.
-5. **If the client believes they have overpaid**, they must claim a refund from SLC, not from HMRC.
-6. **The £2,000 unearned income rule**: unearned income (savings, dividends, rent) only counts toward the repayment calculation if total unearned income exceeds £2,000 per year.
-
----
-
-## Step 9: Edge Case Registry
-
-### EC1 -- Client unsure of plan type [T1]
-**Situation:** Client does not know whether they are on Plan 1, 2, 4, or 5.
-**Resolution:** Direct client to check with SLC online or call SLC directly. Do NOT guess based on graduation year alone -- Plan 4 was introduced retrospectively for Scottish borrowers. If preparing SA return, the plan type box must be completed accurately.
-
-### EC2 -- Client on Plan 2 and Postgraduate Loan simultaneously [T1]
-**Situation:** Client has both an undergraduate Plan 2 loan and a Postgraduate Loan. Total income £40,000.
-**Resolution:** Plan 2 repayment = (£40,000 - £28,470) x 9% = £1,037.70. PGL repayment = (£40,000 - £21,000) x 6% = £1,140.00. Total student loan repayment via SA = £2,177.70 (less any PAYE deductions already made).
-
-### EC3 -- Income below all thresholds [T1]
-**Situation:** Client's total relevant income is £20,000. On Plan 2.
-**Resolution:** £20,000 < £28,470 threshold. No repayment due. Enter zero on SA return for student loan section.
-
-### EC4 -- Self-employed with employment income where PAYE already deducted [T1]
-**Situation:** Client earns £30,000 from employment (Plan 1 PAYE deductions made) and £15,000 from self-employment. Total income £45,000.
-**Resolution:** Total repayment = (£45,000 - £26,065) x 9% = £1,704.15. PAYE already deducted = (£30,000 - £26,065) x 9% = £354.15. Balance via SA = £1,704.15 - £354.15 = £1,350.00.
-
-### EC5 -- Client moved overseas mid-year [T2]
-**Situation:** Client was UK-resident for 6 months, then moved abroad.
-**Resolution:** UK Self Assessment covers the UK-resident period. SLC overseas income assessment covers the overseas period. [T2] flag -- reviewer must confirm split-year treatment and ensure SLC has been notified.
-
-### EC6 -- Client approaching write-off date [T2]
-**Situation:** Client is on Plan 1 (post-2006) and is 2 years from the 25-year write-off.
-**Resolution:** Advise client NOT to make voluntary overpayments if the remaining balance will be written off. [T2] flag -- reviewer should confirm exact write-off date with SLC and advise accordingly.
-
-### EC7 -- Client has fully repaid but HMRC still showing liability [T1]
-**Situation:** Client's loan was fully repaid during the year but Self Assessment is calculating a repayment.
-**Resolution:** Client must obtain confirmation of full repayment from SLC and inform HMRC. SA return should reflect the correct position -- if the loan was repaid partway through the year, only income up to the repayment date counts. Contact SLC for a settlement figure.
-
-### EC8 -- Plan 5 first year of repayment (2025-26) [T1]
-**Situation:** Client started a Plan 5 course in September 2023 and left in June 2025. First repayment due April 2026.
-**Resolution:** Plan 5 repayments cannot begin before April 2026 regardless of when the student left their course. For tax year 2025-26 (ending 5 April 2026), no Plan 5 repayment is due through Self Assessment. First SA repayment will appear in 2026-27.
-
----
-
-## Step 10: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel working paper template
 
 ```
-REVIEWER FLAG
-Tier: T2
+UK STUDENT LOAN REPAYMENT -- WORKING PAPER
 Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified practitioner must confirm before advising client.
-```
+Tax Year: [2025-26]
+Prepared: [date]
 
-When Claude identifies a [T3] situation:
+INPUT DATA
+  Plan type(s):                    [Plan 1/2/4/5/PGL]
+  Total relevant income:           GBP [____]
+  Employment income:               GBP [____]
+  Self-employment profits:         GBP [____]
+  Unearned income (if > £2,000):   GBP [____]
+  PAYE student loan deductions:    GBP [____]
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified practitioner or SLC directly. Document gap.
+PLAN [X] CALCULATION
+  Threshold:                       GBP [____]
+  Income above threshold:          GBP [____]
+  Rate:                            [9% / 6%]
+  Gross repayment:                 GBP [____]
+  Less PAYE deductions:            GBP [____]
+  Net repayment via SA:            GBP [____]
+
+[REPEAT FOR ADDITIONAL PLANS]
+
+TOTAL STUDENT LOAN VIA SA:         GBP [____]
+
+PAYMENT SCHEDULE
+  1st POA (31 Jan):                GBP [____]
+  2nd POA (31 Jul):                GBP [____]
+  Balancing (31 Jan):              GBP [____]
+
+REVIEWER FLAGS
+  [List any Tier 2 flags]
 ```
 
 ---
 
-## Step 11: Test Suite
+## Section 8 -- Bank statement reading guide
 
-### Test 1 -- Plan 2, self-employed only, standard income
-**Input:** Tax year 2025-26. Plan 2. Self-employed only. Total relevant income £35,000.
-**Expected output:** Repayment = (£35,000 - £28,470) x 9% = £587.70.
+### How student loan payments appear on UK bank statements
 
-### Test 2 -- Plan 1, self-employed only, high income
-**Input:** Tax year 2025-26. Plan 1. Self-employed only. Total relevant income £60,000.
-**Expected output:** Repayment = (£60,000 - £26,065) x 9% = £3,054.15.
+**Via Self Assessment (most common for self-employed):**
+- Combined with income tax and NIC in a single HMRC debit
+- Cannot identify student loan component from bank statement alone
+- Need SA302 tax calculation for breakdown
+- Timing: 31 Jan and 31 Jul
 
-### Test 3 -- Plan 4 (Scotland), self-employed only
-**Input:** Tax year 2025-26. Plan 4. Self-employed only. Total relevant income £40,000.
-**Expected output:** Repayment = (£40,000 - £32,745) x 9% = £652.95.
+**Direct to SLC (voluntary overpayments):**
+- Description: "STUDENT LOANS COMPANY", "SLC"
+- Any timing (client-initiated)
+- Clearly identifiable as student loan specific
 
-### Test 4 -- Plan 5, income above threshold
-**Input:** Tax year 2025-26. Plan 5. Self-employed only. Total relevant income £30,000.
-**Expected output:** Repayment = (£30,000 - £25,000) x 9% = £450.00. NOTE: Plan 5 repayments do not begin until April 2026. For 2025-26 SA, this repayment would only apply if HMRC confirms Plan 5 collections began in-year.
+**PAYE deductions (employed clients with additional self-employment):**
+- Not visible on bank statement -- deducted from gross salary before net payment
+- Visible on payslips and P60 only
 
-### Test 5 -- Postgraduate Loan only
-**Input:** Tax year 2025-26. Postgraduate Loan only. Self-employed. Total relevant income £28,000.
-**Expected output:** Repayment = (£28,000 - £21,000) x 6% = £420.00.
-
-### Test 6 -- Plan 2 + Postgraduate Loan (dual plan)
-**Input:** Tax year 2025-26. Plan 2 + Postgraduate Loan. Self-employed. Total relevant income £45,000.
-**Expected output:** Plan 2 = (£45,000 - £28,470) x 9% = £1,487.70. PGL = (£45,000 - £21,000) x 6% = £1,440.00. Total = £2,927.70.
-
-### Test 7 -- Income below threshold
-**Input:** Tax year 2025-26. Plan 2. Self-employed. Total relevant income £25,000.
-**Expected output:** £25,000 < £28,470 threshold. Repayment = £0.
-
-### Test 8 -- Mixed employment and self-employment with PAYE offset
-**Input:** Tax year 2025-26. Plan 1. Employment income £28,000 (PAYE student loan deductions made). Self-employment profits £12,000. Total relevant income £40,000.
-**Expected output:** Total repayment = (£40,000 - £26,065) x 9% = £1,254.15. PAYE already deducted = (£28,000 - £26,065) x 9% = £174.15. Balance via SA = £1,254.15 - £174.15 = £1,080.00.
+**Key identification tips:**
+1. For self-employed, student loan is almost always embedded in SA payments
+2. The SA302 is the only reliable source for the student loan component
+3. Direct SLC payments are voluntary overpayments
+4. SLC refunds appear as credits from SLC
 
 ---
 
-## PROHIBITIONS
+## Section 9 -- Onboarding fallback
 
-- NEVER guess the client's plan type -- always confirm with the client or direct them to SLC
-- NEVER include capital gains in the student loan repayment income calculation
-- NEVER treat student loan repayments as a tax-deductible expense
-- NEVER apply UK thresholds to overseas borrowers -- SLC sets country-specific thresholds
-- NEVER advise a client to make voluntary overpayments without checking proximity to write-off date
-- NEVER combine Plan 1/2/4/5 thresholds -- each plan has its own separate threshold and calculation
-- NEVER assume PAYE deductions have been made -- always verify with the client's payslips or P60
-- NEVER present student loan figures without noting that SLC (not HMRC) manages the loan balance and interest
-- NEVER compute Plan 5 repayments for tax years before 2026-27 without confirming SLC's collection start date
-- NEVER include unearned income in the calculation if total unearned income is £2,000 or less
+If the client provides only a bank statement:
+
+1. **Identify HMRC SA payments** -- these contain the student loan component (if any)
+2. **Look for direct SLC payments** -- these are voluntary overpayments
+3. **Flag:** "Student loan repayments for self-employed are collected through Self Assessment and combined with income tax and NIC in a single HMRC payment. The bank statement cannot isolate the student loan component. Please provide the SA302 tax calculation and confirm the plan type with SLC."
+
+---
+
+## Section 10 -- Reference material
+
+### Thresholds and rates (2025-26)
+
+| Plan | Annual Threshold | Rate |
+|---|---|---|
+| Plan 1 | £26,065 | 9% |
+| Plan 2 | £28,470 | 9% |
+| Plan 4 | £32,745 | 9% |
+| Plan 5 | £25,000 | 9% |
+| Postgraduate Loan | £21,000 | 6% |
+
+### Test suite
+
+**Test 1:** Plan 2, self-employed, income £35,000. -> (£35,000 - £28,470) x 9% = £587.70.
+
+**Test 2:** Plan 1, self-employed, income £60,000. -> (£60,000 - £26,065) x 9% = £3,054.15.
+
+**Test 3:** Plan 4, self-employed, income £40,000. -> (£40,000 - £32,745) x 9% = £652.95.
+
+**Test 4:** Plan 5, income £30,000. -> (£30,000 - £25,000) x 9% = £450.00 (but Plan 5 collections may not start until April 2026).
+
+**Test 5:** PGL only, income £28,000. -> (£28,000 - £21,000) x 6% = £420.00.
+
+**Test 6:** Plan 2 + PGL, income £45,000. -> Plan 2 = £1,487.70, PGL = £1,440.00. Total = £2,927.70.
+
+**Test 7:** Plan 2, income £25,000. -> Below threshold. Repayment = £0.
+
+**Test 8:** Plan 1, employed £28,000 (PAYE deductions made) + self-employed £12,000. Total £40,000. -> Total = £1,254.15. Less PAYE £174.15. Balance via SA = £1,080.00.
+
+### Prohibitions
+
+- NEVER guess the client's plan type
+- NEVER include capital gains in the repayment income calculation
+- NEVER treat student loan repayments as tax-deductible
+- NEVER apply UK thresholds to overseas borrowers
+- NEVER advise voluntary overpayments without checking write-off proximity
+- NEVER combine plan thresholds -- each plan has its own separate calculation
+- NEVER assume PAYE deductions have been made -- verify with payslips or P60
+- NEVER present figures without noting that SLC manages the loan balance and interest
+- NEVER compute Plan 5 repayments for tax years before 2026-27 without confirming start date
+- NEVER include unearned income if total unearned is £2,000 or less
 
 ---
 

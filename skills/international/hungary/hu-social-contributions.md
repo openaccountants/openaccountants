@@ -1,249 +1,216 @@
 ---
 name: hu-social-contributions
 description: Use this skill whenever asked about Hungarian self-employed social contributions (társadalombiztosítás / TB and szociális hozzájárulási adó / SZOCHO). Trigger on phrases like "SZOCHO", "TB járulék", "Hungarian social contributions", "társadalombiztosítás", "egyéni vállalkozó járulékok", or any question about social contribution obligations for a self-employed client in Hungary. Covers SZOCHO 13%, TB 18.5%, minimum contribution bases. ALWAYS read this skill before touching any Hungary social contributions work.
+version: 2.0
 ---
 
-# Hungary Social Contributions (TB / SZOCHO) -- Self-Employed Skill
+# Hungary Social Contributions (TB / SZOCHO) -- Self-Employed Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 -- Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Hungary |
-| Jurisdiction Code | HU |
-| Primary Legislation | 2019. évi CXXII. törvény (Tbj. -- Social Insurance Act) |
-| Supporting Legislation | 2018. évi LII. törvény (Szocho tv. -- Social Contribution Tax Act) |
-| Tax Authority | NAV (Nemzeti Adó- és Vámhivatal) |
+|---|---|
+| Country | Hungary |
+| Authority | NAV (Nemzeti Adó- és Vámhivatal) |
+| Primary legislation | 2019. évi CXXII. törvény (Tbj. -- Social Insurance Act) |
+| Supporting legislation | 2018. évi LII. törvény (Szocho tv.); 2022. évi XIII. törvény (KATA) |
+| TB járulék rate | 18.50% (employee-side equivalent) |
+| SZOCHO rate | 13.00% (employer-side equivalent) |
+| Combined rate | 31.50% |
+| Minimum wage (2025) | HUF 266,800/month |
+| Guaranteed minimum (skilled) | HUF 326,000/month |
+| KATA monthly tax | HUF 50,000 (B2C only) |
+| TB payment deadline | 12th of following month |
+| Currency | HUF only |
 | Contributor | Open Accountants |
-| Validated By | Pending -- requires validation by Hungarian adótanácsadó or könyvvizsgáló |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
+| Validated by | Pending -- requires validation by Hungarian adótanácsadó or könyvvizsgáló |
+| Validation date | Pending |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+### Required inputs
 
----
+Before computing, you MUST obtain:
 
-## Step 0: Client Onboarding Questions
-
-Before computing, you MUST know:
-
-1. **Self-employment type** [T1] -- egyéni vállalkozó (sole proprietor) vs KATA/KIVA taxpayer vs freelancer (megbízási szerződés)?
-2. **Monthly income / chosen contribution base** [T1]
-3. **Is the client a full-time sole proprietor or part-time (mellékállású)?** [T1] -- minimum base rules differ
-4. **Does the client opt for itemized or flat-rate taxation?** [T1]
-5. **Any concurrent employment?** [T1] -- affects minimum base and SZOCHO
+1. **Self-employment type** -- egyéni vállalkozó (sole proprietor) vs KATA taxpayer vs freelancer?
+2. **Monthly income / chosen contribution base**
+3. **Is the client full-time (főállású) or part-time (mellékállású)?** -- minimum base rules differ
+4. **Does the client opt for itemized or flat-rate taxation?**
+5. **Any concurrent employment?** -- affects minimum base
 
 **If self-employment type is unknown, STOP.**
 
+### Refusal catalogue
+
+**R-HU-SOC-1 -- Cross-border worker.** Trigger: client works in Hungary and another EU state. Message: "EU Regulation 883/2004 requires A1 certificate determination. Escalate."
+
+### Prohibitions
+
+- NEVER compute without knowing főállású vs mellékállású -- minimum base rules differ completely
+- NEVER apply a cap on TB or SZOCHO -- there is no upper ceiling
+- NEVER confuse SZOCHO (13%, tax) with TB járulék (18.5%, insurance contribution)
+- NEVER advise a KATA taxpayer to invoice companies -- only natural persons since September 2022
+- NEVER forget the minimum base is minimum wage (HUF 266,800) or guaranteed minimum (HUF 326,000)
+- NEVER state that mellékállású has a minimum base -- it does not
+- NEVER present KATA as available for B2B freelancers
+- NEVER ignore pro-rating for partial months
+
 ---
 
-## Step 1: Two-Layer System [T1]
+## Section 3 -- Two-layer contribution system
 
 **Legislation:** Tbj. 2019. évi CXXII.; Szocho tv. 2018. évi LII.
 
-Hungary has TWO separate social contribution obligations for self-employed:
+| Layer | Name | Rate | Nature |
+|---|---|---|---|
+| 1 | TB járulék | 18.50% | Insurance contribution |
+| 2 | SZOCHO | 13.00% | Tax |
 
-| Layer | Name | Rate | Who Pays | Nature |
-|-------|------|------|----------|--------|
-| 1 | TB járulék (social insurance contribution) | 18.50% | Individual (employee-side equivalent) | Insurance contribution |
-| 2 | SZOCHO (szociális hozzájárulási adó) | 13.00% | Individual (employer-side equivalent for self-employed) | Tax |
+### TB járulék components
 
-**Combined rate: 31.50% of contribution base.**
+| Component | Rate |
+|---|---|
+| Pension (nyugdíjjárulék) | 10.00% |
+| Health in-kind | 3.00% |
+| Health cash benefit | 2.00% |
+| Labour market | 1.50% |
+| Sickness | 2.00% |
+| **Total TB** | **18.50%** |
 
 ---
 
-## Step 2: Contribution Base [T1]
+## Section 4 -- Contribution base and minimum rules (2025)
 
-**Legislation:** Tbj. §36-40
+**Legislation:** Tbj. Sections 36-40
 
-### Egyéni Vállalkozó (Sole Proprietor) -- Itemized Taxation
-
-| Base Rule | Amount |
-|-----------|--------|
-| TB base = at least the minimum wage | HUF 266,800/month (2025) |
-| SZOCHO base = at least the minimum wage | HUF 266,800/month (2025) |
-| If the client has a guaranteed minimum wage activity (skilled trade) | HUF 326,000/month (2025) |
-
-The actual contribution base is the **higher of**: (a) the actual declared income, or (b) the minimum wage.
-
-### Minimum vs Actual
+### Főállású (full-time) sole proprietor
 
 ```
 contribution_base = max(actual_monthly_income, minimum_wage)
 ```
 
-For guaranteed minimum wage activities (requiring qualification/diploma):
+For skilled trade / qualification required:
 
 ```
 contribution_base = max(actual_monthly_income, guaranteed_minimum_wage)
 ```
 
-### Part-time (Mellékállású) Sole Proprietor
+| Minimum base | Monthly |
+|---|---|
+| Minimum wage | HUF 266,800 |
+| Guaranteed minimum (skilled) | HUF 326,000 |
 
-If the client has concurrent full-time employment:
+### Mellékállású (part-time, concurrent employment)
 
-- No minimum contribution base for TB
-- TB paid on actual self-employment income only
-- SZOCHO: same rule -- actual income, no minimum
-
----
-
-## Step 3: Rates Breakdown (2025) [T1]
-
-### TB Járulék (18.5%)
-
-| Component | Rate |
-|-----------|------|
-| Pension contribution (nyugdíjjárulék) | 10.00% |
-| Health insurance in-kind (egészségbiztosítási járulék természetben) | 3.00% |
-| Health insurance cash benefit (egészségbiztosítási járulék pénzbeli) | 2.00% |
-| Labour market contribution (munkaerőpiaci járulék) | 1.50% |
-| Sickness contribution (betegségbiztosítási járulék) | 2.00% |
-| **Total TB** | **18.50%** |
-
-### SZOCHO (13%)
-
-| Component | Rate |
-|-----------|------|
-| Szociális hozzájárulási adó | 13.00% |
-
-### Combined
-
-| Total | Rate | Monthly at Minimum Wage |
-|-------|------|------------------------|
-| TB + SZOCHO on minimum wage (HUF 266,800) | 31.50% | HUF 84,042 |
-| TB + SZOCHO on guaranteed minimum (HUF 326,000) | 31.50% | HUF 102,690 |
+- No minimum contribution base
+- TB and SZOCHO on actual self-employment income only
+- If income is zero, contributions are zero
 
 ---
 
-## Step 4: Computation Steps [T1]
+## Section 5 -- Computation steps
 
-### Step 4.1 -- Determine contribution base
+### Step 5.1 -- Determine contribution base
 
 ```
-IF mellékállású (part-time, has full-time employment):
-    base = actual_self_employment_income  # no minimum
-ELIF skilled_trade_or_qualification_required:
-    base = max(actual_income, 326,000)  # guaranteed minimum wage
+IF mellékállású:
+    base = actual_self_employment_income
+ELIF skilled_trade:
+    base = max(actual_income, 326,000)
 ELSE:
-    base = max(actual_income, 266,800)  # minimum wage
+    base = max(actual_income, 266,800)
 ```
 
-### Step 4.2 -- Monthly contributions
+### Step 5.2 -- Monthly contributions
 
 ```
-TB_monthly = base × 18.50%
-SZOCHO_monthly = base × 13.00%
+TB_monthly = base x 18.50%
+SZOCHO_monthly = base x 13.00%
 total_monthly = TB_monthly + SZOCHO_monthly
 ```
 
-### Step 4.3 -- Annual total
+### Step 5.3 -- Annual and quarterly
 
 ```
-annual_total = total_monthly × 12
-```
-
-### Step 4.4 -- Quarterly advance payment
-
-Sole proprietors pay quarterly to NAV:
-
-```
-quarterly_payment = total_monthly × 3
+annual_total = total_monthly x 12
+quarterly_payment = total_monthly x 3
 ```
 
 ---
 
-## Step 5: Payment Schedule [T1]
+## Section 6 -- Payment schedule and tax deductibility
 
-**Legislation:** Art. 50/A; Szja tv.
+### Payment schedule
 
-| Obligation | Frequency | Due Date |
-|------------|-----------|----------|
+| Obligation | Frequency | Due date |
+|---|---|---|
 | TB járulék | Monthly | 12th of following month |
 | SZOCHO | Monthly | 12th of following month |
-| Annual reconciliation | Annually | With income tax return (May 20) |
+| Annual reconciliation | Annually | With SZJA return (May 20) |
 
-- Self-employed sole proprietors file monthly declarations (08-as bevallás) to NAV
-- Annual reconciliation happens via the personal income tax return (SZJA bevallás)
+Monthly declarations (08-as bevallás) filed to NAV.
 
----
-
-## Step 6: KATA Regime (Simplified) [T1]
-
-**Legislation:** 2022. évi XIII. törvény (new KATA from 2022)
-
-### Current KATA (from September 2022)
-
-| Parameter | Value |
-|-----------|-------|
-| Fixed monthly tax | HUF 50,000 |
-| Covers | Income tax + social contributions |
-| Eligibility | Individual service provider to natural persons only (not to companies) |
-| Revenue limit | HUF 18,000,000/year |
-
-**KATA replaces TB + SZOCHO + personal income tax with a single flat payment.**
-
-Limitation: since September 2022, KATA taxpayers can ONLY invoice natural persons (individuals), not legal entities. This severely limits its applicability for B2B freelancers.
-
----
-
-## Step 7: Tax Deductibility [T1]
+### Tax deductibility
 
 | Question | Answer |
-|----------|--------|
-| Is TB deductible from income tax base? | Partially -- pension contribution (10%) is deductible |
-| Is SZOCHO deductible? | YES -- deductible as a business expense for sole proprietors |
-| How does this affect the calculation? | SZOCHO reduces the income tax base; TB járulék does not (except pension component) |
+|---|---|
+| Is TB deductible? | Partially -- pension component (10%) is deductible |
+| Is SZOCHO deductible? | YES -- business expense for sole proprietors |
 
 ---
 
-## Step 8: Edge Case Registry
+## Section 7 -- KATA regime and flat-rate taxation
 
-### EC1 -- Mellékállású (part-time) sole proprietor [T1]
-**Situation:** Client is employed full-time and has a side sole proprietorship.
-**Resolution:** No minimum contribution base applies. TB and SZOCHO are calculated on actual self-employment income only. If income is zero, contributions are zero.
+### KATA (from September 2022)
 
-### EC2 -- First month of activity [T1]
-**Situation:** Client registers as sole proprietor on the 15th of the month.
-**Resolution:** Contributions are pro-rated for the partial month. Minimum base is also pro-rated (daily: minimum wage / 30 x days active).
+| Parameter | Value |
+|---|---|
+| Fixed monthly tax | HUF 50,000 |
+| Covers | Income tax + social contributions |
+| Eligibility | Individual service provider to natural persons only |
+| Revenue limit | HUF 18,000,000/year |
 
-### EC3 -- Sole proprietor with very high income [T1]
-**Situation:** Monthly self-employment income is HUF 2,000,000.
-**Resolution:** There is no upper cap on the SZOCHO base. TB also has no cap. Both apply at full rates on the entire income. TB: HUF 370,000. SZOCHO: HUF 260,000. Total: HUF 630,000/month.
+KATA replaces TB + SZOCHO + income tax. Invoicing legal entities NOT permitted since September 2022.
 
-### EC4 -- KATA taxpayer invoicing a company [T1]
-**Situation:** KATA taxpayer receives a contract from a Kft. (company).
-**Resolution:** Under the 2022 KATA rules, invoicing legal entities is NOT permitted. The client must either leave KATA or refuse the contract. Invoicing a company results in automatic exit from KATA.
+### Flat-rate taxation (átalányadó)
 
-### EC5 -- Suspension of activity (szüneteltetés) [T1]
+Income tax base determined by fixed percentage of revenue. TB and SZOCHO still calculated on at least minimum wage base. Flag for reviewer to confirm base interaction.
+
+---
+
+## Section 8 -- Edge case registry
+
+### EC1 -- Mellékállású, zero income
+**Situation:** Employed full-time, side self-employment income HUF 0.
+**Resolution:** Base = HUF 0. Contributions = HUF 0.
+
+### EC2 -- First month, partial activity
+**Situation:** Registered on the 15th of the month.
+**Resolution:** Pro-rated. Minimum base = minimum wage / 30 x days active.
+
+### EC3 -- Very high income, no cap
+**Situation:** Monthly income HUF 2,000,000.
+**Resolution:** TB: HUF 370,000. SZOCHO: HUF 260,000. Total: HUF 630,000. No cap.
+
+### EC4 -- KATA taxpayer invoicing a company
+**Situation:** KATA taxpayer receives contract from a Kft.
+**Resolution:** NOT permitted. Client must leave KATA or refuse the contract.
+
+### EC5 -- Suspension of activity (szüneteltetés)
 **Situation:** Sole proprietor suspends activity for 3 months.
-**Resolution:** During suspension (registered with NAV), no contribution obligation arises. No minimum base applies for suspended months. Health insurance coverage may lapse -- client should verify.
+**Resolution:** No contributions during suspension. Health coverage may lapse.
 
-### EC6 -- Flat-rate taxation (átalányadó) [T2]
-**Situation:** Client opts for flat-rate taxation.
-**Resolution:** Under átalányadó, the income tax base is determined by a fixed percentage of revenue (40%/80%/90% depending on activity). However, TB and SZOCHO are still calculated on at least the minimum wage base. [T2] -- confirm whether the átalányadó base or minimum wage applies for contributions.
-
-### EC7 -- Cross-border worker [T2]
-**Situation:** Client lives in Hungary but provides services in Austria.
-**Resolution:** Under EU Regulation 883/2004, social insurance is generally paid in one country. [T2] -- A1 certificate determination required.
-
-### EC8 -- Multiple self-employed activities [T1]
-**Situation:** Client has two sole proprietorships.
-**Resolution:** Only one set of minimum contributions applies. TB and SZOCHO are calculated on the combined income from all self-employed activities, with the minimum base applied once.
+### EC6 -- Multiple self-employed activities
+**Situation:** Two sole proprietorships.
+**Resolution:** One set of minimum contributions. Combined income, minimum applied once.
 
 ---
 
-## Step 9: Reviewer Escalation Protocol
+## Section 9 -- Reviewer escalation protocol
 
-When Claude identifies a [T2] situation:
+When a situation requires reviewer judgement:
 
 ```
 REVIEWER FLAG
@@ -256,51 +223,48 @@ Recommended: [most likely correct treatment and why]
 Action Required: Qualified adótanácsadó must confirm before advising client.
 ```
 
+When a situation is outside skill scope:
+
+```
+ESCALATION REQUIRED
+Tier: T3
+Client: [name]
+Situation: [description]
+Issue: [outside skill scope]
+Action Required: Do not advise. Refer to qualified adótanácsadó. Document gap.
+```
+
 ---
 
-## Step 10: Test Suite
+## Section 10 -- Test suite
 
-### Test 1 -- Standard sole proprietor at minimum wage base
-**Input:** Full-time egyéni vállalkozó, actual income HUF 200,000/month (below minimum wage), no qualification required, age 35.
-**Expected output:** Base = HUF 266,800 (minimum wage floor). TB: HUF 49,358. SZOCHO: HUF 34,684. Monthly total: HUF 84,042. Annual: HUF 1,008,504.
+### Test 1 -- Standard at minimum wage
+**Input:** Főállású, income HUF 200,000 (below min wage), no qualification, age 35.
+**Expected output:** Base HUF 266,800. TB HUF 49,358. SZOCHO HUF 34,684. Total HUF 84,042. Annual HUF 1,008,504.
 
-### Test 2 -- Sole proprietor above minimum wage
-**Input:** Full-time egyéni vállalkozó, actual income HUF 500,000/month, age 40.
-**Expected output:** Base = HUF 500,000. TB: HUF 92,500. SZOCHO: HUF 65,000. Monthly total: HUF 157,500. Annual: HUF 1,890,000.
+### Test 2 -- Above minimum wage
+**Input:** Főállású, income HUF 500,000, age 40.
+**Expected output:** Base HUF 500,000. TB HUF 92,500. SZOCHO HUF 65,000. Total HUF 157,500.
 
-### Test 3 -- Guaranteed minimum wage activity
-**Input:** Full-time, skilled trade requiring qualification, actual income HUF 300,000/month, age 38.
-**Expected output:** Base = HUF 326,000 (guaranteed minimum). TB: HUF 60,310. SZOCHO: HUF 42,380. Monthly total: HUF 102,690. Annual: HUF 1,232,280.
+### Test 3 -- Guaranteed minimum wage
+**Input:** Skilled trade, income HUF 300,000, age 38.
+**Expected output:** Base HUF 326,000. TB HUF 60,310. SZOCHO HUF 42,380. Total HUF 102,690.
 
-### Test 4 -- Mellékállású (part-time)
-**Input:** Employed full-time, side self-employment income HUF 100,000/month, age 30.
-**Expected output:** Base = HUF 100,000 (actual, no minimum). TB: HUF 18,500. SZOCHO: HUF 13,000. Monthly total: HUF 31,500. Annual: HUF 378,000.
+### Test 4 -- Mellékállású
+**Input:** Employed full-time, side income HUF 100,000, age 30.
+**Expected output:** Base HUF 100,000. Total HUF 31,500.
 
 ### Test 5 -- Mellékállású zero income
-**Input:** Employed full-time, side self-employment income HUF 0/month, age 28.
-**Expected output:** Base = HUF 0. TB: HUF 0. SZOCHO: HUF 0. No contribution obligation.
+**Input:** Employed, side income HUF 0, age 28.
+**Expected output:** Total HUF 0.
 
 ### Test 6 -- KATA taxpayer
-**Input:** Individual services to natural persons only, turnover HUF 10,000,000/year.
-**Expected output:** Monthly KATA payment: HUF 50,000. Annual: HUF 600,000. No separate TB or SZOCHO.
+**Input:** B2C services, turnover HUF 10,000,000.
+**Expected output:** Monthly HUF 50,000. Annual HUF 600,000.
 
-### Test 7 -- High income, no cap
-**Input:** Full-time egyéni vállalkozó, income HUF 3,000,000/month, age 50.
-**Expected output:** TB: HUF 555,000. SZOCHO: HUF 390,000. Monthly total: HUF 945,000. Annual: HUF 11,340,000.
-
----
-
-## PROHIBITIONS
-
-- NEVER compute without knowing főállású vs mellékállású status -- minimum base rules differ completely
-- NEVER apply a cap on TB or SZOCHO -- there is no upper ceiling on contribution bases
-- NEVER confuse SZOCHO (13%, tax) with TB járulék (18.5%, insurance contribution) -- they are separate obligations
-- NEVER advise a KATA taxpayer to invoice companies -- only natural persons are permitted under post-2022 KATA
-- NEVER forget that the minimum base is the minimum wage (HUF 266,800) or guaranteed minimum (HUF 326,000)
-- NEVER state that mellékállású has a minimum base -- it does not
-- NEVER present KATA as available for B2B freelancers -- it is restricted to B2C since September 2022
-- NEVER ignore pro-rating for partial months of activity
-- NEVER advise on cross-border situations without flagging for reviewer
+### Test 7 -- High income
+**Input:** Főállású, income HUF 3,000,000, age 50.
+**Expected output:** TB HUF 555,000. SZOCHO HUF 390,000. Total HUF 945,000.
 
 ---
 
