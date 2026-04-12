@@ -1,467 +1,633 @@
 ---
 name: fr-income-tax
 description: >
-  Use this skill whenever asked about French income tax for self-employed individuals (professions liberales, BNC). Trigger on phrases like "declaration de revenus", "2042", "2042-C-PRO", "BNC", "benefices non commerciaux", "quotient familial", "prelevement a la source", "impot sur le revenu France", "micro-BNC", "regime reel", "charges deductibles", "CSG deductible", "decote", "CEHR", or any question about filing or computing income tax for a French freelancer or profession liberale. Also trigger when preparing or reviewing a 2042/2042-C-PRO return, computing deductible charges, or advising on the micro-BNC vs regime reel decision. This skill covers progressive brackets, quotient familial, BNC micro vs reel, prelevement a la source, charges deductibles, reductions/credits d'impot, CEHR, decote, and penalties. ALWAYS read this skill before touching any French income tax work.
-version: 1.0
-jurisdiction: FR
-tax_year: 2025
-category: international
-depends_on:
-  - income-tax-workflow-base
+  Use this skill whenever asked about French income tax for self-employed individuals (professions libérales, BNC). Trigger on phrases like "déclaration de revenus", "2042", "2042-C-PRO", "BNC", "bénéfices non commerciaux", "quotient familial", "prélèvement à la source", "impôt sur le revenu France", "micro-BNC", "régime réel", "charges déductibles", "CSG déductible", "décote", "CEHR", or any question about filing or computing income tax for a French freelancer or profession libérale. Covers progressive brackets (0–45%), quotient familial, BNC micro vs réel, prélèvement à la source, charges déductibles, réductions/crédits d'impôt, CEHR surtax, décote, and penalties.
+version: 2.0
 ---
 
-# France Income Tax -- Self-Employed Skill
+# France Income Tax — Self-Employed Profession Libérale (BNC / Impôt sur le Revenu)
 
----
+## Section 1 — Quick Reference
 
-## Skill Metadata
+### Income Tax Brackets (2025 barème, applied to income per part)
+| Income per part (EUR) | Rate |
+|---|---|
+| 0 – 11,294 | 0% |
+| 11,295 – 28,797 | 11% |
+| 28,798 – 82,341 | 30% |
+| 82,342 – 177,106 | 41% |
+| Over 177,106 | 45% |
 
-| Field | Value |
-|-------|-------|
-| Jurisdiction | France |
-| Jurisdiction Code | FR |
-| Primary Legislation | Code General des Impots (CGI), Articles 1 A, 12, 13, 34, 92, 93, 197, 200, 199 quater B, 1417 |
-| Supporting Legislation | CGI Art. 102 ter (micro-BNC); CGI Art. 197 (bareme); CGI Art. 223 sexies (CEHR); CGI Art. 204 A-N (prelevement a la source); CSS Art. L136-6 (CSG) |
-| Tax Authority | Direction Generale des Finances Publiques (DGFiP) |
-| Filing Portal | impots.gouv.fr |
-| Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a qualified French expert-comptable or commissaire aux comptes |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate table application, bracket calculation, quotient familial parts, micro-BNC abattement, filing deadlines. Tier 2: mixed-use expense apportionment, BNC vs micro-BNC optimisation, CSG deductibility allocation, decote calculation. Tier 3: international income, PEA/assurance-vie interactions, complex family situations, CDHR. |
+**Quotient familial system:**
+- Single (célibataire/veuf sans charge): 1 part
+- Married/PACS (couple): 2 parts
+- Each dependent child: +0.5 part (first 2); +1 part from 3rd child
+- Single parent with child: 1 + 0.5 = 1.5 parts
+- Disability: +0.5 part
 
----
+**Formula:** Total household income ÷ number of parts = income per part → apply brackets → × parts = base tax → apply décote, réductions, crédits → tax due
 
-## Confidence Tier Definitions
+### CEHR — Contribution Exceptionnelle sur les Hauts Revenus
+| Household income (EUR) | Rate (single) | Rate (couple) |
+|---|---|---|
+| Up to 250,000 / 500,000 | 0% | 0% |
+| 250,001 – 500,000 (single) / 500,001 – 1,000,000 (couple) | 3% | 3% |
+| Above 500,000 (single) / above 1,000,000 (couple) | 4% | 4% |
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified expert-comptable must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### BNC Regimes: Micro vs Réel
+| Feature | Micro-BNC | Régime réel (déclaration contrôlée) |
+|---|---|---|
+| Revenue threshold (2025) | ≤ €77,700 | Any revenue (mandatory above €77,700) |
+| Tax base | Revenue × 66% (34% abattement forfaitaire) | Actual revenue − actual charges |
+| Accounting required | Simple revenue register | Full double-entry bookkeeping |
+| Declaration | 2042-C-PRO (case 5HQ) | 2035 + 2042-C-PRO |
+| Social charges | URSSAF on gross revenue (micro-social or régime réel) | URSSAF on BNC |
+| CSG deductible | No (micro) | Yes (6.8% of social contributions deductible) |
+| Best choice | Low expenses (<34% of revenue) | High expenses (>34% of revenue) |
 
----
+### Key Charges Déductibles (Régime Réel — Form 2035)
+| Charge | Deductible? |
+|---|---|
+| Professional rent (cabinet office) | 100% |
+| Home office (bureau à domicile) | Proportional — floor area |
+| Phone — professional line | 100% |
+| Phone — mixed use | Professional % only |
+| Internet | Professional % |
+| Software / SaaS (professional) | 100% |
+| Professional insurance (RCP) | 100% |
+| Accountant / CGA fees | 100% |
+| Training (DPC — continuous professional development) | 100% |
+| Professional books, subscriptions | 100% |
+| Professional travel | 100% — business purpose required |
+| Vehicle (BNC use) | Barème kilométrique OR actual costs × business % |
+| Business meals (repas d'affaires) | With client: actual; working alone: forfait repas up to €19.40/day (2025) |
+| Equipment (<€500 HT) | Expense immediately |
+| Equipment (>€500 HT) | Amortise (durée d'usage) |
+| Social charges URSSAF | Deductible on 2035 |
+| CSG (6.8% of social charges) | Deductible on 2042 (not 2035) |
+| Income tax | NOT deductible |
+| Personal life insurance | NOT deductible (may qualify as credit) |
 
-## Step 0: Client Onboarding Questions
+### Conservative Defaults
+| Item | Default |
+|---|---|
+| Home office % | Do not assume — ask for floor area ratio |
+| Vehicle business % | Do not assume — ask for km records |
+| Phone/internet | 50% if mixed; 100% if dedicated professional line |
+| Régime | Use micro-BNC if revenue ≤ €77,700 and no expense documentation |
+| CSG deductible | 6.8% of URSSAF social charges paid previous year |
 
-Before computing any income tax figure, you MUST know:
-
-1. **Situation familiale** [T1] -- celibataire, marie/pacse, veuf/veuve, divorce. Determines number of parts fiscales.
-2. **Nombre d'enfants a charge** [T1] -- each child adds 0.5 parts (first two) then 1 part (third and subsequent).
-3. **Activity type** [T1] -- profession liberale (BNC), commercial (BIC), or mixed.
-4. **Regime fiscal** [T1] -- micro-BNC (art. 102 ter) or regime de la declaration controlee (regime reel).
-5. **Chiffre d'affaires / recettes brutes** [T1] -- total receipts for the year.
-6. **Charges professionnelles** [T1/T2] -- nature and amount of each deductible expense (T2 for mixed-use items).
-7. **Cotisations sociales payees** [T1] -- URSSAF, CIPAV, CARMF, etc. -- amounts paid during the year.
-8. **Other income** [T1] -- salaires, pensions, revenus fonciers, revenus de capitaux mobiliers.
-9. **Prelevement a la source already paid** [T1] -- acomptes mensuels or trimestriels already withheld during the year.
-10. **Eligibility for reductions/credits** [T2] -- dons, emploi a domicile, frais de garde, investissements.
-
-**If situation familiale is unknown, STOP. Do not apply quotient familial. Situation familiale is mandatory.**
-
----
-
-## Step 1: Determine Quotient Familial (Parts Fiscales) [T1]
-
-**Legislation:** CGI Art. 194, 195, 196, 196 bis
-
-### Number of Parts
-
-| Situation | Parts |
-|-----------|-------|
-| Celibataire, divorce, veuf (sans enfant) | 1 |
-| Marie ou pacse (imposition commune) | 2 |
-| Celibataire ou divorce avec 1 enfant | 1.5 (or 2 if parent isole) |
-| Marie ou pacse avec 1 enfant | 2.5 |
-| Marie ou pacse avec 2 enfants | 3 |
-| Marie ou pacse avec 3 enfants | 4 |
-| Each additional child beyond 3rd | +1 part |
-
-### Plafonnement du Quotient Familial (2025 revenus)
-
-| Situation | Plafond par demi-part |
-|-----------|-----------------------|
-| Droit commun | EUR 1,791 |
-| Parent isole (premier enfant) | EUR 4,262 |
-| Demi-part supplementaire (personne seule ayant eleve enfant 5+ ans) | EUR 1,079 |
-| Garde alternee (demi-part par enfant) | EUR 2,131 |
-
-**How the quotient works:** Divide revenu net imposable by number of parts. Apply the bareme to this quotient. Multiply the resulting tax by number of parts. This is the impot brut before decote and reductions.
-
----
-
-## Step 2: Apply the Bareme Progressif [T1]
-
-**Legislation:** CGI Art. 197 I.1 -- Bareme applicable aux revenus 2025
-
-| Tranche de revenu net imposable (par part) | Taux |
-|--------------------------------------------|------|
-| Jusqu'a EUR 11,600 | 0% |
-| De EUR 11,601 a EUR 29,579 | 11% |
-| De EUR 29,580 a EUR 84,577 | 30% |
-| De EUR 84,578 a EUR 181,917 | 41% |
-| Au-dela de EUR 181,917 | 45% |
-
-**Note (2025):** Brackets revalorised by +1.8% for inflation compared to 2024.
-
-### Cumulative Tax per Part at Top of Each Band
-
-| Top of Band | Cumulative Tax per Part |
-|-------------|------------------------|
-| EUR 11,600 | EUR 0 |
-| EUR 29,579 | EUR 1,978 |
-| EUR 84,577 | EUR 18,477 |
-| EUR 181,917 | EUR 58,337 |
-
-**NEVER compute final tax figures directly in Claude -- pass revenu net imposable and parts to the deterministic engine to apply the bareme and quotient familial.**
+### Red Flag Thresholds
+| Situation | Flag |
+|---|---|
+| Revenue > €77,700 | Micro-BNC no longer available — must use régime réel |
+| Revenue > €250,000 (single) | CEHR applies |
+| Charges > 70% of revenue | High — verify documentation |
+| Home office > 30% | Aggressive — document |
+| No RCP insurance | Flag — profession libérale normally required |
 
 ---
 
-## Step 3: Micro-BNC vs Regime Reel (Declaration Controlee) [T1/T2]
+## Section 2 — Required Inputs & Refusal Catalogue
 
-**Legislation:** CGI Art. 102 ter (micro-BNC); CGI Art. 93 (regime reel)
+### Minimum Required Inputs
+1. Total gross receipts (recettes professionnelles) for the year
+2. Chosen regime (micro-BNC or régime réel)
+3. If réel: itemised professional charges with receipts
+4. Household composition (marital status, number of children/dependants)
+5. URSSAF social charges paid in the year (for régime réel)
+6. Previous year tax (for prélèvement à la source comparison)
+7. Other household income (spouse earnings, rental, etc.)
 
-### Micro-BNC (Art. 102 ter) [T1]
+### Refusal Catalogue
+**R-FR-1 — No expense documentation (régime réel)**
+Refuse undocumented charges. State: "Without receipts and records, we cannot claim actual charges under the régime réel. Consider micro-BNC (34% abattement) if this is your first year or if documentation is incomplete."
 
-| Parameter | Value |
-|-----------|-------|
-| Plafond de recettes | EUR 77,700 HT |
-| Abattement forfaitaire | 34% (minimum EUR 305) |
-| Benefice imposable | 66% of recettes |
-| Obligations comptables | Livre de recettes uniquement |
-| Declaration | 2042-C-PRO, cases 5HQ/5IQ |
+**R-FR-2 — Micro-BNC threshold exceeded**
+If revenue > €77,700: cannot use micro-BNC. State: "Your revenue exceeds the micro-BNC threshold of €77,700. You must use the régime de la déclaration contrôlée (Form 2035) and maintain proper accounts."
 
-### Regime de la Declaration Controlee (Regime Reel) [T1]
+**R-FR-3 — Personal expenses as professional charges**
+Refuse personal costs (personal vacations, personal food, personal clothing) as professional charges. State: "These are personal expenses and cannot be deducted as charges professionnelles under French tax law."
 
-| Parameter | Value |
-|-----------|-------|
-| Plafond de recettes | Aucun plafond |
-| Deduction | Charges reelles justifiees |
-| Benefice imposable | Recettes minus charges reelles |
-| Obligations comptables | Comptabilite complete (recettes-depenses), bilan simplifie |
-| Declaration | 2035 + 2042-C-PRO, cases 5QC/5RC |
+**R-FR-4 — TVA amounts included in recettes**
+If client is TVA-registered: gross receipts must exclude TVA collected. State: "TVA collected from clients is not your income. Recettes on Form 2035 are always HT (hors taxes)."
 
-### Decision Logic [T2]
-
-- If total charges reelles exceed 34% of recettes: regime reel is more favourable
-- If total charges reelles are below 34% of recettes: micro-BNC is more favourable
-- [T2] Flag for reviewer: confirm that the client's actual expense ratio warrants the chosen regime
-- Once opted for regime reel, minimum 2-year commitment
+**R-FR-5 — Non-resident claiming personal reliefs**
+Non-residents (non-domicilié fiscal) have different rules — no quotient familial, flat rates apply. State: "As a non-resident, different rules apply. I cannot apply the standard quotient familial calculation."
 
 ---
 
-## Step 4: Determine Revenu Net Imposable (Regime Reel) [T1/T2]
+## Section 3 — Transaction Pattern Library
 
-**Legislation:** CGI Art. 93, 13, 83
+### 3.1 Income Patterns
+| Bank Description Pattern | Income Type | Tax Treatment | Notes |
+|---|---|---|---|
+| Virement client + name | Professional receipts (recettes) | Include gross (HT if TVA registered) | |
+| Virement SEPA from EU client | Professional receipts | Include (HT) | |
+| Virement international / SWIFT | Foreign client receipts | Include — convert to EUR at date of receipt | |
+| Stripe / Stripe paiement | Platform receipts | Include net + add Stripe fees as charges | |
+| PayPal virement | Platform receipts | EUR equivalent | |
+| Malt / Comet / Crème de la Crème | Freelance platform payout | Gross earnings (platform fee = charge) | |
+| Intérêts créditeurs | Bank interest | Revenus de capitaux mobiliers — not BNC | Separate category |
+| Loyer reçu | Rental income | Revenus fonciers — separate schedule | Not BNC |
+| Remboursement frais | Expense reimbursement | EXCLUDE if pass-through (refacturation) — check | Gross up if debours |
 
-### Computation Structure
+### 3.2 Expense Patterns (Charges — Form 2035 Régime Réel)
+| Bank Description Pattern | Charge Category | Deductible? | Notes |
+|---|---|---|---|
+| Orange Pro / SFR Pro / Bouygues | Téléphone professionnel | 100% if pro line | Partial if mixed |
+| Free / Orange / SFR internet | Internet | Professional % | T2 |
+| EDF / Engie / électricité | Electricity | Home office % | T2 |
+| Loyer bureau / local professionnel | Loyer professionnel | 100% | Must be professional premises |
+| Adobe / Figma / Notion | Logiciels/SaaS | 100% | |
+| SNCF / Eurostar / train | Déplacements | 100% — professional purpose | Document destination + purpose |
+| Air France / easyJet | Voyages professionnels | 100% — professional purpose | Document |
+| Hôtel / Airbnb (déplacement pro) | Hébergement | 100% — professional purpose | |
+| Restaurant (repas affaires — with client) | Repas d'affaires | Yes — with client name on receipt | Forfait solo max €19.40/day |
+| URSSAF cotisations | Charges sociales | 100% deductible on 2035 | |
+| Mutuelle santé Madelin | Assurance Madelin | 100% (within Madelin ceiling) | |
+| Retraite Madelin / PER pro | Épargne retraite Madelin | 100% (within ceiling) | |
+| RCP / assurance professionnelle | Assurance RCP | 100% | |
+| Expert-comptable / CGA | Honoraires comptable | 100% | CGA membership = additional réduction |
+| Formation professionnelle | Formation | 100% — professional DPC | |
+| Livres / abonnements pro | Documentation | 100% — professional | |
+| Matériel bureau (<€500 HT) | Petit matériel | 100% immediate | |
+| MacBook / PC / tablette | Matériel amortissable | Amortissement (3 years typical) | T1: applies if ≥€500 |
+| Impôt sur le revenu | Impôts | EXCLUDE — not deductible | |
+| TVA payée | TVA | EXCLUDE — not income tax deductible | |
+| Cotisation foncière des entreprises (CFE) | Taxes | Yes — deductible on 2035 | |
+| Virement épargne / livret | Épargne | EXCLUDE — personal savings | |
 
-| Line | Description | How to Populate |
-|------|-------------|-----------------|
-| A | Recettes encaissees | Total honoraires/fees received in the year |
-| B | Debours et retrocessions | Amounts paid on behalf of clients, retroceded to confreres |
-| C | Recettes nettes | A minus B |
-| D | Charges professionnelles deductibles | See deductible charges below |
-| E | Amortissements | Depreciation on professional assets |
-| F | Benefice net (ou deficit) | C minus D minus E |
-| G | Plus/moins-values professionnelles | Gains or losses on disposal of professional assets [T2] |
-| H | Resultat fiscal | F +/- G, reported on 2042-C-PRO |
+### 3.3 CSG Déductible (Special Treatment)
+- 6.8% of social charges paid to URSSAF (previous year) is deductible from overall income on Form 2042 (not Form 2035)
+- Not a professional charge — a personal deduction applied after BNC is computed
+- Must use actual URSSAF annual statement to determine amount
+- **Pattern:** URSSAF payment on bank → record on 2035 as charge professionnelle. Then compute 6.8% of that for 2042 CSG deduction.
 
-### Charges Professionnelles Deductibles [T1/T2]
+### 3.4 Foreign Currency & Platform Receipts
+| Source | Currency | Treatment |
+|---|---|---|
+| USD client payment | USD | Convert to EUR at ECB/Banque de France rate on receipt date |
+| GBP client | GBP | Convert at receipt date rate |
+| Stripe USD | USD | Use Stripe statement EUR equivalent |
+| PayPal multi-currency | Various | Use PayPal statement EUR equivalent |
+| Malt.com payout | EUR | Net of Malt commission; add commission back as charge |
+| Google AdSense | USD/EUR | Monthly — convert if USD |
 
-| Charge | Tier | Treatment |
-|--------|------|-----------|
-| Loyer du cabinet/bureau (dedie) | T1 | Fully deductible |
-| Fournitures de bureau | T1 | Fully deductible |
-| Assurance professionnelle (RCP) | T1 | Fully deductible |
-| Honoraires de l'expert-comptable | T1 | Fully deductible |
-| Cotisations professionnelles (Ordre, syndicat) | T1 | Fully deductible |
-| Formation professionnelle / CPD | T1 | Fully deductible |
-| Frais de deplacement professionnel | T1 | Fully deductible if wholly professional |
-| Logiciels / abonnements professionnels | T1 | Fully deductible |
-| Telephone / internet | T2 | Business-use portion only -- client to confirm % |
-| Frais de vehicule | T2 | Business portion only -- bareme kilometrique or frais reels |
-| Usage professionnel du domicile | T2 | Proportional -- surface dediee / surface totale |
-| Cotisations URSSAF, CIPAV, CARMF, CNBF | T1 | Deductible as charges sociales obligatoires |
-| Cotisations Madelin / PER | T1/T2 | Deductible within specific ceilings (CGI Art. 154 bis) |
-| CSG deductible (6.8%) | T1 | Deductible portion of CSG on professional income |
-
-### NOT Deductible [T1]
-
-| Charge | Reason |
-|--------|--------|
-| Impot sur le revenu | Tax on income cannot deduct itself |
-| Amendes et penalites | Public policy |
-| CSG non deductible (2.4%) + CRDS (0.5%) | Expressly non-deductible (CGI Art. 154 quinquies) |
-| Depenses personnelles / train de vie | Not professional |
-| Frais de reception/representation excessifs | Not wholly professional -- blocked |
-
----
-
-## Step 5: CSG Deductible [T1]
-
-**Legislation:** CGI Art. 154 quinquies; CSS Art. L136-6
-
-| Prelevements Sociaux | Taux | Deductible IR? |
-|----------------------|------|----------------|
-| CSG | 9.2% | 6.8% deductible, 2.4% non deductible |
-| CRDS | 0.5% | Non deductible |
-| Total CSG/CRDS | 9.7% | 6.8% deductible |
-
-**Rule:** The 6.8% deductible CSG paid on professional income in year N is deducted from taxable income in year N. This is separate from the charges sociales obligatoires (URSSAF etc.) which are deducted as professional charges.
-
----
-
-## Step 6: Decote [T1]
-
-**Legislation:** CGI Art. 197 I.4 -- applicable aux revenus 2025
-
-The decote reduces tax for modest taxpayers.
-
-### Eligibility Threshold
-
-| Situation | Impot brut maximum pour beneficier |
-|-----------|------------------------------------|
-| Celibataire / imposition individuelle | EUR 1,982 |
-| Couple / imposition commune | EUR 3,277 |
-
-### Calculation Formula
-
-| Situation | Formule |
-|-----------|---------|
-| Imposition individuelle | Decote = EUR 897 - (impot brut x 45.25%) |
-| Imposition commune | Decote = EUR 1,483 - (impot brut x 45.25%) |
-
-If the result is negative, the decote is zero (no additional tax). If the decote exceeds the impot brut, the tax is reduced to zero.
+### 3.5 Internal Transfers
+| Pattern | Treatment |
+|---|---|
+| Virement vers compte épargne | EXCLUDE — personal savings movement |
+| Remboursement carte bancaire | EXCLUDE — expense captured per transaction |
+| Virement entre comptes propres | EXCLUDE |
+| Prélèvement prêt immobilier | EXCLUDE — personal mortgage (not professional charge unless mixed-use property) |
 
 ---
 
-## Step 7: Contribution Exceptionnelle sur les Hauts Revenus (CEHR) [T1]
+## Section 4 — Worked Examples
 
-**Legislation:** CGI Art. 223 sexies
+### Example 1 — Société Générale: Consultant, Régime Réel, Single
+**Scenario:** IT consultant, €95,000 recettes HT, €28,000 charges, URSSAF €22,000, single (1 part)
 
-| Situation | RFR Threshold | Taux |
-|-----------|---------------|------|
-| Celibataire | EUR 250,001 -- EUR 500,000 | 3% |
-| Celibataire | Au-dela de EUR 500,000 | 4% |
-| Couple (imposition commune) | EUR 500,001 -- EUR 1,000,000 | 3% |
-| Couple (imposition commune) | Au-dela de EUR 1,000,000 | 4% |
-
-**Note (2025):** The CEHR coexists with a new Contribution Differentielle sur les Hauts Revenus (CDHR) for revenus 2025, which ensures a minimum 20% effective tax rate for high earners. The CDHR is [T3] -- escalate to expert-comptable.
-
----
-
-## Step 8: Reductions et Credits d'Impot [T1/T2]
-
-**Legislation:** CGI Art. 199 quater B, 200, 200 quater, 199 sexdecies, 199 sexvicies
-
-| Type | Categorie | Taux / Plafond | Tier |
-|------|-----------|----------------|------|
-| Dons aux oeuvres d'interet general | Reduction | 66% dans la limite de 20% du revenu imposable | T1 |
-| Dons aux organismes d'aide aux personnes en difficulte | Reduction | 75% dans la limite de EUR 1,000 (2025), puis 66% | T1 |
-| Emploi d'un salarie a domicile | Credit | 50% dans la limite de EUR 12,000 (+EUR 1,500/enfant, max EUR 15,000) | T1 |
-| Frais de garde d'enfants (moins de 6 ans) | Credit | 50% dans la limite de EUR 3,500/enfant | T1 |
-| Investissement locatif (Pinel, Denormandie) | Reduction | Variable selon dispositif | T2 |
-| Cotisations syndicales | Credit | 66% dans la limite de 1% du revenu | T1 |
-| Adhesion CGA/AGA (regime reel) | Reduction | Plafond EUR 915 (2/3 des frais) | T1 |
-
-**Distinction critique:** A reduction d'impot reduces the tax payable (non-refundable -- cannot create a refund). A credit d'impot is refundable -- if it exceeds the tax due, the excess is refunded.
-
----
-
-## Step 9: Prelevement a la Source (PAS) [T1]
-
-**Legislation:** CGI Art. 204 A a 204 N
-
-### How It Works for Self-Employed (BNC)
-
-| Element | Detail |
-|---------|--------|
-| Mechanism | Monthly or quarterly acomptes paid directly by the taxpayer |
-| Rate | Taux personnalise calculated by DGFiP based on prior year return |
-| Default rate | Applied if no prior year data available (taux neutre from the grille) |
-| Adjustment | Taux updated in September each year based on the most recent return |
-| Modulation | Taxpayer can request modulation if income varies significantly (>10% change required) |
-
-### BNC Self-Employed Acomptes
-
-- Acomptes are debited on the 15th of each month (or quarterly on 15 Feb, 15 May, 15 Aug, 15 Nov)
-- Based on prior year's BNC result and the personalised rate
-- Year-end reconciliation via the declaration de revenus filed in May/June
-
----
-
-## Step 10: Filing Deadlines [T1]
-
-**Legislation:** CGI Art. 170, 175; BOI-IR-DECLA
-
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| Declaration 2035 (regime reel BNC) | 2nd business day after 1 May (typically early May) |
-| Declaration 2042 + 2042-C-PRO (online) | Late May / early June (varies by departement -- zones 1, 2, 3) |
-| PAS acomptes | 15th of each month (or quarterly) -- ongoing |
-| Solde d'impot (if balance due) | Debited in September (or spread Sep-Dec if > EUR 300) |
-| Regularisation si trop-percu | Refunded in July/August |
-
-**Zone deadlines (indicative for 2026 filing on 2025 revenus):**
-- Zone 1 (departements 01-19 + non-residents): late May
-- Zone 2 (departements 20-54): early June
-- Zone 3 (departements 55-976): mid-June
-
----
-
-## Step 11: Penalties [T1]
-
-**Legislation:** CGI Art. 1728, 1729, 1731 bis; LPF Art. L66, L67
-
-| Offence | Penalty |
-|---------|---------|
-| Late filing (first occurrence, within 30 days of mise en demeure) | 10% surcharge on tax due |
-| Late filing (beyond 30 days after mise en demeure) | 40% surcharge |
-| Non-filing after mise en demeure (taxation d'office) | 80% surcharge |
-| Manquement delibere (intentional understatement) | 40% surcharge |
-| Manoeuvres frauduleuses | 80% surcharge |
-| Interet de retard | 0.20% per month (2.4% per year) on tax due |
-| Late payment of acomptes PAS | 10% surcharge |
-
-**WARNING:** The 40% and 80% surcharges for fraud are severe and may be accompanied by criminal prosecution. Any suspected fraud situation must be escalated immediately to a qualified expert-comptable or avocat fiscaliste.
-
----
-
-## Step 12: Record Keeping [T1]
-
-**Legislation:** LPF Art. L102 B
-
-| Requirement | Detail |
-|-------------|--------|
-| Minimum retention period | 6 years from the end of the year to which the documents relate |
-| What to keep | All invoices, receipts, bank statements, contracts, 2035 and supporting schedules, asset register |
-| Format | Paper or digital (administration accepts digital copies since 2017) |
-| Livre-journal des recettes et depenses | Mandatory for regime reel / declaration controlee |
-| Registre des immobilisations et amortissements | Mandatory for regime reel |
-
----
-
-## Step 13: Edge Case Registry
-
-### EC1 -- Micro-BNC client with expenses above 34% [T2]
-**Situation:** Client is under micro-BNC with EUR 60,000 recettes and EUR 25,000 in real charges (41.7%).
-**Resolution:** Real charges exceed the 34% abattement. Regime reel would give a lower benefice imposable (EUR 35,000 vs EUR 39,600 under micro). [T2] Flag for reviewer: recommend switching to regime reel but confirm minimum 2-year commitment.
-
-### EC2 -- Quotient familial plafonnement triggered [T1/T2]
-**Situation:** Married couple with 3 children (4 parts), revenu net imposable EUR 120,000. The quotient familial advantage for the 2 extra parts (beyond the 2 for the couple) exceeds the plafond.
-**Resolution:** Calculate tax both with and without the additional parts. If the difference exceeds EUR 1,791 per additional demi-part, cap the advantage at the plafond. [T2] Flag for reviewer: confirm the plafonnement calculation.
-
-### EC3 -- CSG deductible vs non deductible confusion [T1]
-**Situation:** Client deducts the full 9.2% CSG from taxable income.
-**Resolution:** Only 6.8% is deductible. The remaining 2.4% CSG + 0.5% CRDS are NOT deductible. Correct the deduction to 6.8% only.
-
-### EC4 -- Prelevement a la source acomptes not matching actual income [T2]
-**Situation:** Client's BNC income has dropped 40% compared to prior year, but PAS acomptes are still based on last year's higher income.
-**Resolution:** Client can request a modulation of the taux on impots.gouv.fr if the estimated year-end tax will differ by more than 10%. [T2] Flag for reviewer: confirm the modulation request is justified and correctly calculated.
-
-### EC5 -- Mixed personal/professional use of vehicle [T2]
-**Situation:** Client uses personal car 70% for professional visits, 30% personal. Claims full fuel and insurance.
-**Resolution:** Only 70% of vehicle expenses deductible. Client must maintain a log of professional kilometres. Alternative: use the bareme kilometrique forfaitaire (based on fiscal horsepower and km). [T2] Flag for reviewer: confirm business percentage and chosen method.
-
-### EC6 -- Credit d'impot vs reduction confusion [T1]
-**Situation:** Client has EUR 800 reduction d'impot but only EUR 500 impot net after decote. Client expects a EUR 300 refund.
-**Resolution:** A reduction d'impot can only reduce tax to zero -- no refund of the excess EUR 300. Only a credit d'impot would generate a refund. Explain the difference to the client.
-
-### EC7 -- BNC client receives retrocession from confrere [T1]
-**Situation:** An avocat retrocedes EUR 10,000 of fees to a collaborateur who helped on the case.
-**Resolution:** The payer deducts the retrocession from their recettes (line B on the 2035). The receiver declares it as recettes. Both entries must net to zero across the two practitioners.
-
-### EC8 -- First year of activity, no prior PAS rate [T1]
-**Situation:** New freelancer starting in 2025. No prior year return exists.
-**Resolution:** DGFiP applies the taux neutre (grille de taux par defaut) based on estimated income declared at registration. Client should declare estimated income on impots.gouv.fr to avoid under- or over-payment of acomptes.
-
-### EC9 -- Cotisations Madelin/PER ceiling exceeded [T2]
-**Situation:** Client contributes EUR 30,000 to a PER (Plan d'Epargne Retraite) in addition to mandatory cotisations.
-**Resolution:** PER deduction is capped at the higher of: (a) 10% of benefice imposable (capped at 8 PASS) or (b) 10% of PASS. Excess contributions are not deductible. [T2] Flag for reviewer: confirm the applicable ceiling and available envelope.
-
-### EC10 -- Couple with disparate incomes opting for taux individualise [T2]
-**Situation:** Married couple: one spouse earns EUR 80,000 BNC, the other earns EUR 15,000 salary. Default taux PAS applied equally is disproportionate for the lower earner.
-**Resolution:** Couple can opt for taux individualise on impots.gouv.fr, which allocates the PAS rate proportionally to each spouse's income. [T2] Flag for reviewer: confirm opt-in and that total yearly tax remains unchanged.
-
----
-
-## Step 14: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
-
+**Bank statement extract (Société Générale Pro):**
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified expert-comptable must confirm before filing.
+Date         | Libellé                                   | Débit (€)    | Crédit (€)   | Solde (€)
+15/04/2025   | VIR SEPA TECHCORP FRANCE SAS             |              | 12,000.00    | 48,500.00
+20/04/2025   | VIR SEPA STARTUP PARIS                   |              |  8,500.00    | 57,000.00
+25/04/2025   | PRLV URSSAF COTISATIONS                  | 1,833.33     |              | 55,166.67
+28/04/2025   | CB ADOBE SYSTEMS INC                     |    79.00     |              | 55,087.67
+30/04/2025   | AGIOS / FRAIS BANCAIRES                  |    15.00     |              | 55,072.67
 ```
 
-When Claude identifies a [T3] situation:
+**BNC Computation (Form 2035):**
+| Line | Amount |
+|---|---|
+| Recettes professionnelles | €95,000 |
+| Charges professionnelles | (€28,000) |
+| URSSAF cotisations | (€22,000) |
+| **Bénéfice BNC (Form 2035)** | **€45,000** |
 
+**Income tax (Form 2042):**
+| Line | Amount |
+|---|---|
+| BNC (revenu professionnel) | €45,000 |
+| CSG déductible (6.8% × €22,000 prior year URSSAF) | (€1,496) |
+| Revenu brut global | €43,504 |
+| Quotient: 1 part → tax base | €43,504 |
+| Tax: 11% on (28,797−11,294) = €1,925 + 30% on (43,504−28,797) = €4,412 | €6,337 |
+| Décote check: tax < €1,929 → not applicable (above threshold) | — |
+| **Impôt sur le revenu** | **€6,337** |
+
+### Example 2 — BNP Paribas: Designer, Micro-BNC, Married 2 Children
+**Scenario:** Graphic designer, €55,000 recettes, micro-BNC, married (2 parts + 1 part = 3 parts for 2 children)
+
+**Bank statement extract (BNP Paribas Pro):**
 ```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to expert-comptable or avocat fiscaliste. Document gap.
+Date         | Référence                                 | Montant débit | Montant crédit | Solde
+10/03/2025   | VIR SARL DESIGN STUDIO                   |               | 8,500.00       | 34,200.00
+15/03/2025   | VIR MALT PLATFORM                        |               | 3,900.00       | 38,100.00
+20/03/2025   | PRELEVEMENT ORANGE PRO                   | 45.99         |                | 38,054.01
+22/03/2025   | CB SNCF BILLET PARIS LYON                | 89.00         |                | 37,965.01
+28/03/2025   | FRAIS VIREMENT                           | 2.50          |                | 37,962.51
 ```
 
+**BNC — Micro-BNC:**
+- Recettes: €55,000
+- Abattement forfaitaire: 34% = €18,700
+- BNC imposable: €55,000 − €18,700 = **€36,300**
+
+**Income tax (3 parts):**
+| Line | Amount |
+|---|---|
+| BNC imposable | €36,300 |
+| Revenu foyer (assuming spouse €0) | €36,300 |
+| Per part: €36,300 ÷ 3 = | €12,100 |
+| Tax per part: 11% × (12,100 − 11,294) = | €89 |
+| × 3 parts | €267 |
+| Décote check (seuil €1,929): tax €267 < threshold → décote applies | — |
+| Décote: €833 − (€267 × 45.25%) = €833 − €121 = | €712 |
+| But tax is only €267 — décote cannot exceed tax | — |
+| **Impôt dû** | **€0** (décote > tax) |
+
+### Example 3 — Crédit Agricole: Lawyer, Régime Réel, Home Office
+**Scenario:** Avocate inscrite au barreau, €120,000 recettes, €35,000 charges (incl. home office), URSSAF €30,000
+
+**Bank statement extract (Crédit Agricole Pro):**
+```
+Date opération | Libellé opération                       | Débit         | Crédit        | Solde
+08/05/2025     | VIREMENT DE CABINET XYZ                |               | 15,000.00     | 78,000.00
+12/05/2025     | VIREMENT CLIENT PARTICULIER             |               |  4,500.00     | 82,500.00
+15/05/2025     | PRELEVEMENT URSSAF AVOCATS             | 2,500.00      |               | 80,000.00
+20/05/2025     | CB DEBEAUSSE FOURNITURES BUREAU        |   145.00      |               | 79,855.00
+25/05/2025     | CB RESTAURANT D'AFFAIRES (CLIENT)      |   120.00      |               | 79,735.00
+```
+
+**Home office calculation:**
+- Apartment 75 sqm total; office room 15 sqm dedicated
+- Home office %: 15/75 = 20%
+- Annual rent €18,000 × 20% = €3,600
+- Annual utilities €2,400 × 20% = €480
+
+**BNC Computation:**
+| Line | Amount |
+|---|---|
+| Recettes | €120,000 |
+| Charges (direct) | (€30,920) |
+| Home office: rent (€3,600) + utilities (€480) | (€4,080) |
+| URSSAF | (€30,000) |
+| **BNC** | **€55,000** |
+
+**Income tax (single, 1 part):**
+- Tax: 11% × (28,797−11,294) + 30% × (55,000−28,797) = €1,925 + €7,861 = **€9,786**
+
+### Example 4 — LCL: Freelance Writer, Micro-BNC Comparison vs Réel
+**Scenario:** Écrivain/journaliste, €40,000 recettes, actual charges only €5,000 (low expense business)
+
+**Bank statement extract (LCL — Le Crédit Lyonnais):**
+```
+Date valeur | Libellé                                    | Débit (€)    | Crédit (€)   | Solde (€)
+05/06/2025  | VIR EDITIONS GALLIMARD                    |              | 6,000.00     | 22,400.00
+10/06/2025  | VIR MAGAZINE LE MONDE                     |              | 2,500.00     | 24,900.00
+15/06/2025  | CB FNAC LIVRES PROFESSIONNELS             | 85.00        |              | 24,815.00
+20/06/2025  | PRELEVEMENT SFR MOBILE                   | 29.99        |              | 24,785.01
+25/06/2025  | CB TRAIN SNCF PARIS-BORDEAUX              | 72.00        |              | 24,713.01
+```
+
+**Comparison:**
+| | Micro-BNC | Régime Réel |
+|---|---|---|
+| Recettes | €40,000 | €40,000 |
+| Abattement / charges | −34% = €13,600 | −€5,000 actual |
+| BNC imposable | **€26,400** | **€35,000** |
+| Tax (single, 1 part approx.) | ~€2,800 | ~€5,000 |
+| **Winner** | **Micro-BNC** | — |
+
+**Rule:** If actual charges < 34% of revenue → micro-BNC wins.
+
+### Example 5 — CIC: Developer with Madelin Retirement Plan
+**Scenario:** Développeur, €80,000 recettes, €18,000 charges, URSSAF €20,000, Madelin PER €8,000
+
+**Bank statement extract (CIC):**
+```
+Date         | Libellé                                   | Débit (€)    | Crédit (€)   | Solde (€)
+12/07/2025   | VIREMENT STARTUP TECH                    |              | 18,000.00    | 65,000.00
+18/07/2025   | VIR SEPA FINTECH PARIS                   |              |  9,500.00    | 74,500.00
+22/07/2025   | PRLV URSSAF DSI                          | 1,666.67     |              | 72,833.33
+26/07/2025   | PRLV MADELIN RETRAITE AXA                | 666.67       |              | 72,166.66
+30/07/2025   | CB GITHUB ENTERPRISE                     | 320.00       |              | 71,846.66
+```
+
+**Madelin deduction ceiling:** 10% × BNC, plus 15% × (BNC − €43,992). Calculate after BNC is known.
+
+**BNC Computation:**
+| Line | Amount |
+|---|---|
+| Recettes | €80,000 |
+| Charges | (€18,000) |
+| URSSAF | (€20,000) |
+| **BNC** | **€42,000** |
+
+**Madelin ceiling:** 10% × €42,000 = €4,200 (if BNC < PASS). Actual Madelin paid: €8,000 → cap applies: deductible = **€4,200**
+
+**Income tax (1 part):**
+- Revenu: €42,000 − €4,200 (Madelin) − €1,360 (CSG) = €36,440
+- Tax: 11% × (28,797−11,294) + 30% × (36,440−28,797) = €1,925 + €2,293 = **€4,218**
+
+### Example 6 — Banque Populaire: Architect with TVA
+**Scenario:** Architecte (TVA registered), €150,000 recettes TTC (incl. 20% TVA), charges €40,000 HT, URSSAF €35,000
+
+**Bank statement extract (Banque Populaire Pro):**
+```
+Date         | Libellé                                    | Débit (€)     | Crédit (€)    | Solde (€)
+03/08/2025   | VIR CABINET XYZ ARCHITECTES               |               | 24,000.00     | 110,000.00
+10/08/2025   | VIR CLIENT PROMOTION IMMO                 |               | 18,000.00     | 128,000.00
+15/08/2025   | PRLV TVA DGFiP                           | 4,500.00      |               | 123,500.00
+20/08/2025   | CB MATÉRIAUX BUREAU                       |   890.00      |               | 122,610.00
+25/08/2025   | PRLV URSSAF ARCHITECT                    | 2,916.67      |               | 119,693.33
+```
+
+**TVA separation:** Total TTC receipts €150,000 → HT recettes = €150,000 ÷ 1.20 = **€125,000 HT** (use this on Form 2035)
+
+**BNC Computation:**
+| Line | Amount |
+|---|---|
+| Recettes HT | €125,000 |
+| Charges HT | (€40,000) |
+| URSSAF | (€35,000) |
+| **BNC** | **€50,000** |
+
 ---
 
-## Step 15: Test Suite
+## Section 5 — Tier 1 Rules (Compressed Reference)
 
-### Test 1 -- Single BNC freelancer, regime reel, mid-range income
-**Input:** Celibataire (1 part), recettes EUR 60,000, charges reelles EUR 18,000, CSG deductible EUR 2,856, no other income, PAS acomptes paid EUR 4,000.
-**Expected output:** Benefice net = EUR 42,000. Revenu net imposable = EUR 42,000 - EUR 2,856 = EUR 39,144. Quotient (1 part) = EUR 39,144. Tax per part: EUR 0 + EUR 1,978 + EUR 2,870 = EUR 4,848. Impot brut = EUR 4,848. No decote (exceeds EUR 1,982). PAS paid = EUR 4,000. Solde = EUR 848 due.
+### Domicile Fiscal (Tax Residency)
+- **France resident:** Has principal home in France OR principal professional activity in France OR centre of economic interests in France → worldwide income taxable in France
+- **Non-resident:** Taxable only on France-source income; flat rates apply (no quotient familial)
 
-### Test 2 -- Married couple, micro-BNC, with children
-**Input:** Marie (2 parts base), 2 enfants (+1 part = 3 parts total). Recettes micro-BNC EUR 70,000. Abattement 34% = EUR 23,800. Benefice imposable = EUR 46,200. No other income.
-**Expected output:** Quotient = EUR 46,200 / 3 = EUR 15,400. Tax per part: EUR 0 + EUR 418 = EUR 418. Impot brut = EUR 418 x 3 = EUR 1,254. Check plafonnement: compare with tax at 2 parts. EUR 46,200 / 2 = EUR 23,100. Tax per part at 2 parts: EUR 0 + EUR 1,265 = EUR 1,265. Total at 2 parts: EUR 2,530. Advantage of 3rd part: EUR 2,530 - EUR 1,254 = EUR 1,276. Plafond = EUR 1,791. EUR 1,276 < EUR 1,791, so no cap. Final tax = EUR 1,254.
+### BNC vs BA vs BIC
+| Category | When |
+|---|---|
+| BNC (bénéfices non commerciaux) | Professions libérales: doctors, lawyers, architects, consultants, writers, artists |
+| BIC (bénéfices industriels et commerciaux) | Commercial/artisanal activities: retail, manufacturing, some tech |
+| BA (bénéfices agricoles) | Agricultural activities |
 
-### Test 3 -- Decote applicable
-**Input:** Celibataire, revenu net imposable EUR 16,000. Tax per bareme: EUR 0 + EUR 484 = EUR 484. Impot brut EUR 484.
-**Expected output:** Decote = EUR 897 - (EUR 484 x 45.25%) = EUR 897 - EUR 219 = EUR 678. Decote exceeds impot brut (EUR 678 > EUR 484), so tax reduced to EUR 0.
+**Note:** Auto-entrepreneurs (micro-entrepreneurs) declare on 2042-C-PRO but use simplified micro calculation.
 
-### Test 4 -- CEHR applies
-**Input:** Celibataire, RFR EUR 350,000. CEHR tranche: EUR 350,000 - EUR 250,000 = EUR 100,000 x 3% = EUR 3,000.
-**Expected output:** CEHR = EUR 3,000, added on top of progressive tax and any decote.
+### Prélèvement à la Source (Withholding at Source)
+- Since 2019: income tax paid monthly via PAS rate applied to income
+- Self-employed: monthly/quarterly acomptes (advance payments) to DGFiP
+- May optionally adjust acompte rate online via impots.gouv.fr (Mon Espace)
+- Final settlement in September following year after 2042 declaration
 
-### Test 5 -- Micro-BNC vs regime reel breakeven
-**Input:** Recettes EUR 50,000. Charges reelles EUR 17,000 (34% of recettes exactly).
-**Expected output:** Micro-BNC benefice = EUR 50,000 x 66% = EUR 33,000. Regime reel benefice = EUR 50,000 - EUR 17,000 = EUR 33,000. Both identical. Recommend micro-BNC for simplicity (no 2035 to file, no comptabilite requirement).
+### Assurance Madelin / PER
+- Contributions to Madelin contracts (complementary health, retirement, disability, loss of employment) deductible from BNC
+- Retirement ceiling: 10% × BNC + 15% × (BNC − PASS), or 10% × 8 × PASS if higher
+- PASS 2025: €46,368
 
-### Test 6 -- Credit d'impot emploi a domicile generates refund
-**Input:** Celibataire, impot net EUR 1,000. Emploi a domicile expenses EUR 8,000. Credit = 50% x EUR 8,000 = EUR 4,000.
-**Expected output:** Credit d'impot EUR 4,000 exceeds tax EUR 1,000. Refund of EUR 3,000 (credit is refundable).
+### Décote
+- Applied when tax < €1,929 (single) or €3,191 (couple, 2025)
+- Décote = €833 − (tax × 45.25%) for single; €1,330 − (tax × 45.25%) for couple
+- Reduces tax by this amount (cannot reduce below €0)
 
-### Test 7 -- CSG deductible correctly separated
-**Input:** Total CSG/CRDS paid EUR 4,850 (of which CSG 9.2% = EUR 4,600, CRDS 0.5% = EUR 250). Deductible CSG = 6.8% portion.
-**Expected output:** Deductible CSG = EUR 4,600 x (6.8/9.2) = EUR 3,400. Non-deductible = EUR 4,600 - EUR 3,400 + EUR 250 = EUR 1,450. Only EUR 3,400 reduces revenu imposable.
+### Filing Deadlines
+| Event | Deadline |
+|---|---|
+| Declaration 2042 (online, zone 1: IDF + major cities) | Mid-May (exact date varies) |
+| Declaration 2042 (online, zones 2/3) | Late May / early June |
+| Paper declaration | End April |
+| Form 2035 (BNC réel) | Same deadline as 2042 |
+| Acomptes PAS | 15th of each month (monthly) or 15 Feb/May/Aug/Nov (quarterly) |
+
+### Penalties
+| Situation | Penalty |
+|---|---|
+| Late declaration | 10% of tax due |
+| Late payment | 10% surcharge + 0.2%/month interest |
+| Fraudulent under-reporting | 40–80% surcharge |
+| Missing declaration after formal notice | 100% surcharge |
 
 ---
 
-## PROHIBITIONS
+## Section 6 — Tier 2 Catalogue
 
-- NEVER apply the bareme without knowing situation familiale and number of parts
-- NEVER compute final tax figures directly -- pass revenu net imposable and parts to the deterministic engine
-- NEVER deduct the full 9.2% CSG -- only 6.8% is deductible
-- NEVER deduct CRDS (0.5%) -- it is expressly non-deductible
-- NEVER deduct impot sur le revenu from professional charges
-- NEVER deduct amendes or penalites
-- NEVER treat a reduction d'impot as refundable -- only credits d'impot are refundable
-- NEVER ignore the plafonnement du quotient familial for families with children
-- NEVER advise on the CDHR (Contribution Differentielle sur les Hauts Revenus) -- escalate to T3
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their expert-comptable for confirmation
-- NEVER ignore the minimum 2-year commitment when recommending a switch from micro-BNC to regime reel
+### T2-FR-1: Home Office (Bureau à Domicile)
+**Why T2:** Floor area split and nature of use are facts only the client knows.
+
+**Method:**
+1. Dedicated professional room: area ÷ total area × rent/utilities/internet
+2. Mixed-use room: not recommended — hard to justify to DGFiP without specific business use documentation
+3. Tenant vs owner-occupier: both can claim proportional rent/charges
+
+**Required from client:** Total floor area (m²), office room area (m²), whether room exclusively professional.
+
+### T2-FR-2: Vehicle (Barème Kilométrique vs Frais Réels)
+**Why T2:** Actual km and business use are facts only the client knows.
+
+**Barème kilométrique (2025 — Puissance fiscale):**
+| CV fiscal | Up to 5,000 km | 5,001–20,000 km | >20,000 km |
+|---|---|---|---|
+| 3 CV | €0.502/km | €0.300 + €1,007 | €0.350/km |
+| 4 CV | €0.575/km | €0.343 + €1,165 | €0.401/km |
+| 5 CV | €0.603/km | €0.361 + €1,212 | €0.422/km |
+| 6 CV | €0.631/km | €0.378 + €1,263 | €0.444/km |
+| 7 CV+ | €0.661/km | €0.397 + €1,320 | €0.463/km |
+
+**Required from client:** Fiscal power (CV) of vehicle, total km driven, business km (from logbook).
+
+### T2-FR-3: Phone & Internet
+**Why T2:** Professional/personal split is client-specific.
+
+**Guidance:** If professional only: 100%. If dual-use: document business proportion (e.g., 70% if primary business tool).
+**Required from client:** Whether dedicated pro line or mixed-use; estimated business call %.
+
+### T2-FR-4: Meals — Solo vs Business Client
+**Why T2:** Business purpose and attendee details required.
+
+- **Repas d'affaires (with client):** Actual cost, deductible — must note client name, purpose
+- **Repas solo (working away from home):** Forfait: excess of meal cost over €5.20 (min value of meal at home), capped at €19.40/day total (2025 amounts)
+
+**Required from client:** For each restaurant expense — was it with a client (names) or solo working meal?
+
+### T2-FR-5: Madelin/PER Ceiling Calculation
+**Why T2:** Ceiling depends on final BNC, which must be computed before relief is applied.
+
+**Process:** Compute BNC first → calculate Madelin ceiling → apply deduction (up to ceiling or actual paid, whichever is lower).
+**Required from client:** All Madelin/PER contribution receipts for the year.
 
 ---
+
+## Section 7 — Excel Working Paper
+
+### Sheet 1: Recettes (Revenue)
+| Column | Content |
+|---|---|
+| A | Date |
+| B | Client |
+| C | Invoice reference |
+| D | Montant HT (EUR) |
+| E | TVA (if applicable) |
+| F | Montant TTC |
+| G | Received in bank (date) |
+| H | Category (Recettes BNC / Other) |
+
+**Total recettes HT:** `=SUMIF(H:H,"Recettes BNC",D:D)`
+
+### Sheet 2: Charges (Expenses — Form 2035)
+| Column | Content |
+|---|---|
+| A | Date |
+| B | Fournisseur |
+| C | Montant HT (EUR) |
+| D | Catégorie (loyer/téléphone/déplacements etc.) |
+| E | % professionnel |
+| F | Montant déductible (=C×E) |
+| G | Référence justificatif |
+
+**Lignes Form 2035 mapping:**
+- Line AB: Achats — materials
+- Line BK: Frais de personnel (employees)
+- Line BT: Impôts et taxes (CFE, etc.)
+- Line BU: Loyers et charges locatives
+- Line BV: Locations de matériel
+- Line BW: Entretien et réparations
+- Line BX: Personnel extérieur
+- Line BY: Autres frais divers de gestion
+
+### Sheet 3: BNC Computation
+| Line | Form 2035 Ref | Amount |
+|---|---|---|
+| Recettes professionnelles | Line AA | |
+| Total charges déductibles | | |
+| URSSAF cotisations | | |
+| **Bénéfice BNC** | Line CP | |
+| CSG déductible (6.8% × prior year URSSAF) | Form 2042 | |
+
+### Sheet 4: Impôt sur le Revenu
+| Line | Amount |
+|---|---|
+| BNC (from Sheet 3) | |
+| Other household income | |
+| Revenu brut global | |
+| Charges déductibles du RBG (CSG, pensions alimentaires) | |
+| Revenu net global | |
+| Abattements (10% for employment if applicable) | |
+| Revenu imposable | |
+| Nombre de parts (quotient familial) | |
+| Income per part | |
+| Tax per part (bracket table) | |
+| × parts | |
+| Réductions d'impôt | |
+| Crédits d'impôt | |
+| PAS acomptes déjà payés | |
+| **Solde** | |
+
+---
+
+## Section 8 — Bank Statement Reading Guide
+
+### Société Générale (Pro)
+- Format: `Date | Libellé | Débit (€) | Crédit (€) | Solde (€)`
+- Date: DD/MM/YYYY
+- Income = Crédit column
+- Key: VIR SEPA = SEPA credit transfer; PRLV = direct debit (prélèvement)
+
+### BNP Paribas (Pro)
+- Format: `Date | Référence | Montant débit | Montant crédit | Solde`
+- Date: DD/MM/YYYY
+- Income = Montant crédit
+
+### Crédit Agricole (Pro)
+- Format: `Date opération | Libellé opération | Débit | Crédit | Solde`
+- Date: DD/MM/YYYY
+- VIR = virement (transfer received); PRLV = prélèvement (debit)
+
+### LCL — Le Crédit Lyonnais
+- Format: `Date valeur | Libellé | Débit (€) | Crédit (€) | Solde (€)`
+- Date: DD/MM/YYYY
+- Uses "Date valeur" (value date) — note this may differ from operation date
+
+### CIC
+- Format: `Date | Libellé | Débit (€) | Crédit (€) | Solde (€)`
+- Date: DD/MM/YYYY
+- PRLV = direct debit; VIR = incoming wire
+
+### Banque Populaire / BPCE
+- Format: `Date | Libellé | Débit (€) | Crédit (€) | Solde (€)`
+- Date: DD/MM/YYYY
+- CB = carte bancaire (card payment)
+
+### Exclusion Patterns (all French banks)
+| Pattern | Action |
+|---|---|
+| VIR vers compte personnel / épargne | EXCLUDE — personal transfer |
+| Prélèvement carte bancaire | EXCLUDE — individual expenses captured per CB transaction |
+| TVA DGFiP prélèvement | EXCLUDE — TVA obligation, not income tax deductible |
+| PRLV IR DGFiP / acompte PAS | EXCLUDE from expenses — advance income tax payment (credit on 2042) |
+| Remboursement prêt | EXCLUDE — personal loan |
+| AGIOS | Yes — bank charges, deductible |
+
+---
+
+## Section 9 — Onboarding Fallback
+
+**Priority 1 (blocking):**
+1. "What was your total gross revenue (recettes professionnelles HT) for the year?"
+2. "Are you using micro-BNC or régime réel (déclaration contrôlée)?"
+3. "What is your household situation — married/PACS, children?"
+
+**Priority 2 (regime réel — needed for accurate computation):**
+4. "Please provide your URSSAF annual summary (cotisations sociales paid)."
+5. "Do you have receipts for all professional charges claimed?"
+6. "Do you work from home? If yes: total floor area and office room area?"
+7. "Do you use a personal vehicle for professional travel? If yes, fiscal horsepower and professional km driven."
+
+**Priority 3 (reliefs and credits):**
+8. "Did you contribute to a Madelin or PER retirement contract? Total amount?"
+9. "Did you donate to charities? Which ones and amounts?"
+10. "Did you employ domestic help (emploi à domicile) — possible crédit d'impôt?"
+11. "Do you have young children in daycare — crédit garde d'enfants?"
+
+**Conservative defaults if data gaps:**
+- Use micro-BNC (34% abattement) if below threshold and expenses unconfirmed
+- Exclude home office if floor area cannot be confirmed
+- Use barème kilométrique over actual costs if vehicle logbook unavailable
+
+---
+
+## Section 10 — Reference Material
+
+### Key Forms
+| Form | Purpose |
+|---|---|
+| 2042 | Main income tax declaration |
+| 2042-C-PRO | Revenus professionnels (BNC, BIC, BA) |
+| 2035 | Déclaration BNC régime réel (attached to 2042) |
+| 2035-A / 2035-B | Supporting schedules to 2035 |
+| 2042-RICI | Réductions et crédits d'impôt |
+
+### Filing Platform
+- **impots.gouv.fr** — Mon Espace Particulier (login with FranceConnect or identifiants DGFiP)
+- Pre-filled data: income known to DGFiP (bank interest, dividends) auto-populated; BNC must be entered manually
+
+### Key References
+- DGFiP (Direction Générale des Finances Publiques): impots.gouv.fr
+- URSSAF (social charges): urssaf.fr
+- Barème kilométrique: published annually in Bulletin Officiel des Finances Publiques (BOFIP)
+- Madelin ceilings: bofip.impots.gouv.fr
+
+### Social Charges (Résumé)
+- URSSAF charges for BNC are ~21.1% of net BNC (2025, above PASS) or ~~22.9% for small incomes
+- Note: social charges are separate from income tax — URSSAF calculates and bills independently
+- CSG-CRDS: 9.7% of gross BNC income; 6.8% is income-deductible
+
+---
+
+## Prohibitions
+- Do not advise on TVA (taxe sur la valeur ajoutée) obligations, rates, or filing — separate France VAT skill required
+- Do not advise on Impôt sur les Sociétés (IS) — this skill covers individual BNC taxpayers only
+- Do not advise on property tax (taxe foncière) or taxe d'habitation
+- Do not advise on succession or donation taxation (droits de succession/donation)
+- Do not advise on social charges (URSSAF cotisations) calculation — URSSAF jurisdiction; this skill only notes their deductibility
 
 ## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an expert-comptable, commissaire aux comptes, or avocat fiscaliste licensed in France) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+This skill provides general guidance for informational and planning purposes. It does not constitute tax advice. French tax law is administered by the Direction Générale des Finances Publiques (DGFiP). Clients should consult an expert-comptable or conseil fiscal for advice specific to their circumstances. Tax brackets, rates, and thresholds change annually — verify current rules at impots.gouv.fr and bofip.impots.gouv.fr.
