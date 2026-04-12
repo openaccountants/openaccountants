@@ -1,536 +1,423 @@
 ---
 name: honduras-isv
-description: Use this skill whenever asked to prepare, review, or create a Honduras ISV (Impuesto Sobre Ventas) return for any client. Trigger on phrases like "prepare ISV return", "do the ISV", "Honduras sales tax", "Honduras VAT", or any request involving Honduras consumption tax filing. ALWAYS read this skill before touching any Honduras ISV-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Honduras ISV (Impuesto sobre Ventas) return or advise on Honduran VAT registration, filing, and SAR compliance. Trigger on phrases like "prepare ISV return Honduras", "Honduras sales tax", "ISV Honduras", "SAR Honduras", "RTN", or any Honduras ISV request. ALWAYS read this skill before touching any Honduras ISV work.
+version: 2.0
+jurisdiction: HN
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# Honduras ISV Return Preparation Skill
+# Honduras ISV (Impuesto sobre Ventas) Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Honduras |
-| Jurisdiction Code | HN |
-| Primary Legislation | Ley del Impuesto Sobre Ventas (ISV), Decreto 24-63 (as amended by Decreto 17-2010, Decreto 278-2013) |
-| Supporting Legislation | Reglamento de la Ley del ISV; Codigo Tributario |
-| Tax Authority | Servicio de Administracion de Rentas (SAR) |
-| Filing Portal | https://www.sar.gob.hn (Portal SAR) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return form assignment, input tax recovery. Tier 2: partial exemption, free zone, maquila, tourism. Tier 3: complex structures, rulings. |
+|---|---|
+| Country | Honduras (República de Honduras) |
+| Tax | ISV — Impuesto sobre Ventas (Sales Tax — functionally a VAT) |
+| Currency | HNL (Honduran Lempira — L) |
+| Standard rate | 15% |
+| Increased rate | 18% (alcoholic beverages, tobacco products, tourist accommodation, food/beverages in hotels and resorts, air tickets to tourism destinations) |
+| Zero rate | 0% (exports of goods and services) |
+| Exempt | Basic food basket (canasta básica), medicines, medical services, education, financial services, insurance, agricultural inputs, natural gas, water supply (residential), public transport |
+| Registration threshold | Annual income ≥ HNL 10,000,000 for mandatory registration; voluntary below |
+| Tax authority | SAR (Servicio de Administración de Rentas — formerly DEI) |
+| Filing portal | VirtualSAR — https://virtual.sar.gob.hn |
+| Return form | Declaración del ISV (Form D-01) |
+| Filing frequency | Monthly |
+| Deadline | Last business day of the following month |
+| e-Invoice | Factura Electrónica (SAR-registered providers — expanding mandate) |
+| RTN | Registro Tributario Nacional — Honduran taxpayer ID (14 digits) |
+| Contributor | Open Accountants Community |
+| Validated by | Pending — requires sign-off by Honduras-licensed CPA or perito mercantil |
+| Skill version | 2.0 |
 
----
+### Key D-01 fields
 
-## Confidence Tier Definitions
+| Field | Meaning |
+|---|---|
+| Casilla A | Total taxable sales 15% (net) |
+| Casilla B | Total taxable sales 18% (net) |
+| Casilla C | Export sales (0%) |
+| Casilla D | Exempt sales |
+| Casilla E | ISV débito fiscal (output) |
+| Casilla F | ISV crédito fiscal (input on purchases) |
+| Casilla G | Net ISV payable (E − F) |
+| Casilla H | Crédito excedente (excess credit c/f) |
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+### Conservative defaults
 
----
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 15% standard |
+| Unknown whether 18% tourism rate applies | Confirm — hotel accommodation and tourist food typically 18% |
+| Unknown whether canasta básica exempt | 15% until item confirmed on exempt list |
+| Unknown whether export documentation complete | Treat as domestic 15% |
+| Unknown business-use % (vehicle, phone, home) | 0% input credit |
+| Unknown whether Factura issued | No input credit until confirmed |
+| Foreign digital service (B2B) | 15% — buyer self-assesses if foreign provider not registered |
 
-## Step 0: Client Onboarding Questions
-
-1. **Entity name and RTN (Registro Tributario Nacional)** [T1] -- 14-digit RTN
-2. **ISV registration status** [T1]
-3. **Filing period** [T1] -- monthly (standard)
-4. **Industry/sector** [T2] -- impacts classification (maquila, free zone, tourism, agriculture)
-5. **Does the business make exempt supplies?** [T2]
-6. **Does the business import goods?** [T1]
-7. **Is the business in a free trade zone (ZOLI/ZIP)?** [T2]
-8. **Credit balance brought forward** [T1]
-
-**If items 1-3 are unknown, STOP.**
-
----
-
-## Step 1: ISV Rate Structure [T1]
-
-**Legislation:** Ley del ISV, Article 5 (as amended).
-
-### Standard Rate
-
-| Rate | Application |
-|------|-------------|
-| 15% | Standard rate on all taxable sales of goods and services [T1] |
-
-### Higher Rate
-
-| Rate | Application |
-|------|-------------|
-| 18% | Alcoholic beverages, tobacco products, and luxury goods (specified in regulations) [T1] |
-
-**Luxury goods subject to 18%** include [T1]:
-- Alcoholic beverages of all kinds
-- Tobacco and tobacco products
-- Perfumes and cosmetics (imported, above threshold)
-- Jewelry and precious stones
-- Firearms and ammunition (non-military)
-- Fireworks
-- Jet skis, yachts, and pleasure boats
-
-### Exempt Goods and Services [T1]
-
-**Legislation:** Ley del ISV, Article 6.
-
-**Exempt goods:**
-- Unprocessed agricultural products (grains, fresh fruits, vegetables, fresh meats, eggs, milk)
-- Basic food basket (canasta basica) -- 30+ items specified by regulation
-- Medicines and pharmaceutical products (prescription)
-- Agricultural inputs (fertilizers, insecticides, seeds, agricultural tools)
-- Books, newspapers, educational materials
-- Fuel and petroleum derivatives (subject to specific tax)
-- Machinery for agricultural or industrial production
-
-**Exempt services:**
-- Health/medical services
-- Educational services (authorized institutions)
-- Financial services (interest, insurance premiums on life/health)
-- Residential rental
-- Public transportation
-- Water and electricity (domestic, first tier)
-- Legal services rendered in judicial proceedings [T2]
-
-### Exports (0% -- Full Input Credit) [T1]
-- Export of goods: zero-rated with full input credit recovery
-- Export of services: may qualify if consumed outside Honduras [T2]
-
----
-
-## Step 2: Transaction Classification Rules
-
-### 2a. Determine Transaction Type [T1]
-- Sale (ISV cobrado -- output) or Purchase (ISV pagado -- input)
-- Salaries, IHSS (social security), RAP (pension), ISR (income tax), loans = OUT OF SCOPE
-
-### 2b. Determine Counterparty Location [T1]
-- Domestic (Honduras)
-- Central American (Guatemala, El Salvador, Nicaragua, Costa Rica)
-- International
-
-### 2c. Determine ISV Rate [T1]
-- 0% (export), 15% (standard), 18% (alcohol/tobacco/luxury), or exempt
-
----
-
-## Step 3: ISV Return Form Structure (DEI-345 / SAR Form) [T1]
-
-**Filed monthly via Portal SAR.**
-
-### ISV Cobrado (Output)
-
-| Line | Description |
-|------|-------------|
-| 1 | Ventas gravadas al 15% (Standard-rate taxable sales) |
-| 2 | ISV cobrado al 15% |
-| 3 | Ventas gravadas al 18% (Higher-rate sales) |
-| 4 | ISV cobrado al 18% |
-| 5 | Exportaciones (Exports at 0%) |
-| 6 | Ventas exentas (Exempt sales) |
-| 7 | Total ventas |
-| 8 | Total ISV cobrado (Line 2 + Line 4) |
-
-### ISV Pagado / Credito Fiscal (Input)
-
-| Line | Description |
-|------|-------------|
-| 9 | ISV pagado en compras locales (ISV on local purchases) |
-| 10 | ISV pagado en importaciones (ISV on imports) |
-| 11 | Total ISV pagado |
-| 12 | Ajustes (blocked/apportioned) |
-| 13 | ISV pagado deducible (Net input) |
-
-### Liquidacion
-
-| Line | Description |
-|------|-------------|
-| 14 | ISV a pagar (Line 8 - Line 13) |
-| 15 | Credito fiscal anterior |
-| 16 | Retenciones |
-| 17 | Total a pagar / saldo a favor |
-
----
-
-## Step 4: ISV Retention [T1]
-
-**Legislation:** Ley del ISV; SAR resolutions.
-
-### Retention Agents [T1]
-
-| Agent Type | Retention Rate |
-|------------|---------------|
-| Large taxpayers designated by SAR | 1% of purchase value [T1] |
-| Government entities | 1% of purchase value [T1] |
-
-### Treatment [T1]
-- Supplier reports full output ISV
-- Retained amount credited on Line 16
-- Retention certificates required
-
----
-
-## Step 5: Reverse Charge on Imported Services [T1]
-
-**Legislation:** Ley del ISV, Article 3.
-
-When a Honduras registered person receives taxable services from a non-resident:
-
-1. Self-assess ISV at 15% (or 18% for applicable services) [T1]
-2. Report as output ISV [T1]
-3. Claim as input ISV if for taxable operations [T1]
-4. Net effect: zero for fully taxable businesses [T1]
-
----
-
-## Step 6: Deductibility Check
-
-### Blocked Input ISV (No Recovery) [T1]
-
-**Legislation:** Ley del ISV, Article 10.
-
-- **Entertainment** -- meals, recreation (unless hospitality trade) [T1]
-- **Motor vehicles** -- passenger vehicles (exception: rental, taxi, transport) [T1]
-- **Personal use** [T1]
-- **Exempt operations** [T1]
-- **Purchases without valid factura fiscal** [T1]
-
-### Invoice Requirement [T1]
-- Factura fiscal authorized by SAR is required for input ISV credit
-- CAI (Codigo de Autorizacion de Impresion) must be valid and not expired
-- Electronic invoicing system being implemented [T2]
-
-### Partial Exemption [T2]
-- Direct attribution + proportional for common costs
-- Flag for reviewer
-
----
-
-## Step 7: Key Thresholds [T1]
+### Red flag thresholds
 
 | Threshold | Value |
-|-----------|-------|
-| Mandatory ISV registration | All persons/entities making taxable sales must register [T1] |
-| Large taxpayer designation | Designated by SAR resolution [T2] |
+|---|---|
+| HIGH single transaction | HNL 2,000,000 |
+| HIGH tax delta on single conservative default | HNL 300,000 |
+| MEDIUM counterparty concentration | >40% of output or input |
+| MEDIUM conservative default count | >4 per return |
+| LOW absolute net ISV position | HNL 5,000,000 |
 
 ---
 
-## Step 8: Filing Deadlines and Penalties [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-**Legislation:** Codigo Tributario; Ley del ISV, Article 12.
+### Required inputs
 
-### Filing Deadlines
+Before starting any Honduras ISV work, obtain:
 
-| Period | Deadline |
-|--------|----------|
-| Monthly ISV return | 10th of the month following the period [T1] |
+1. RTN (Registro Tributario Nacional — 14 digits) and SAR registration
+2. Monthly bank statements in HNL and USD (many Honduran businesses operate in both)
+3. Facturas issued (paper or electronic with CAI — Código de Autorización de Impresión)
+4. Purchase invoices from registered suppliers (with their RTN and CAI)
+5. Prior month D-01 return (for crédito excedente carried forward)
+6. Import customs declarations for imported goods
+7. Export documentation (for zero-rated exports)
 
-### Penalties
+### Refusal catalogue
 
-| Violation | Penalty |
-|-----------|---------|
-| Late filing | HNL 200 per day (maximum varies) [T1] |
-| Late payment | 3% per month on unpaid tax (max 36%) [T1] |
-| Failure to register | Fines + back-assessment [T1] |
-| Failure to issue factura fiscal | Closure of business (temporary) + fines [T1] |
-| Fraud | Criminal penalties + imprisonment [T1] |
-
----
-
-## Step 9: Classification Matrix [T1]
-
-### Domestic Purchases
-
-| Category | ISV Rate | Input Credit | Notes |
-|----------|---------|--------------|-------|
-| Office supplies | 15% | Yes | |
-| Commercial rent | 15% | Yes | |
-| Residential rent | Exempt | No | |
-| Electricity (commercial) | 15% | Yes | |
-| Telephone/internet | 15% | Yes | |
-| Motor car | 15% | BLOCKED | |
-| Entertainment | 15% | BLOCKED | |
-| Alcoholic beverages (purchase) | 18% | BLOCKED (entertainment) | |
-| Professional services | 15% | Yes | |
-| Insurance (general) | 15% | Yes | |
-| Basic food items | Exempt | No | |
-| Medicines | Exempt | No | |
-| Agricultural machinery | Exempt | No | |
-
-### Sales
-
-| Category | ISV | Return Line |
-|----------|-----|-------------|
-| Domestic sale (standard) | 15% | Line 1, Line 2 |
-| Alcohol/tobacco sales | 18% | Line 3, Line 4 |
-| Export | 0% | Line 5 |
-| Exempt supply | Exempt | Line 6 |
+Refuse and escalate to a CPA / perito mercantil for:
+- Proporcionalidad (partial exemption for mixed taxable/exempt businesses)
+- ISV on real estate (complex)
+- Free trade zone (Zona Libre / ZIP — Choloma) — exempt from ISV
+- ISV on tourism — 18% rate rules are detailed
+- Maquiladora (export manufacturing) — special ISV treatment
+- ISV retenciones as agent
+- Non-resident digital service providers
 
 ---
 
-## Step 10: Free Trade Zone and Maquila Rules [T2]
+## Section 3 — Supplier pattern library
 
-**Legislation:** Ley de Zonas Libres (ZOLI); Ley de Zonas Industriales de Procesamiento (ZIP).
+### 3.1 Banking and financial services
 
-- ZOLI/ZIP companies: exempt from ISV on imports for export manufacturing
-- Sales to domestic market from ZOLI/ZIP: subject to ISV as imports
-- Maquila operations: special regime, inputs for export production exempt
-- Flag for reviewer: free zone benefits require valid authorization
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Banco Atlántida | Bank fees, wire transfers | Exempt | No |
+| BAC Honduras | Commercial banking | Exempt | No |
+| Ficohsa | Business banking | Exempt | No |
+| Banpaís | Regional banking | Exempt | No |
+| BANHPROVI | Development banking | Exempt | No |
+| Tigo Money (payments) | Mobile money | Exempt | No |
+| Tengo (Ficohsa) | Digital wallet | Exempt | No |
+| VisaNet Honduras | Card processing | 15% | Yes |
+| PayTrust HN | Payment gateway | 15% | Yes |
 
----
+### 3.2 Electricity and utilities
 
-## Step 10a: Tax Invoice Requirements [T1]
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| ENEE (Empresa Nacional de Energía Eléctrica) | Electricity — national | 15% (commercial) | Yes (business) |
+| SERVICIO DE AGUA — SANAA | Water — Tegucigalpa | Exempt (residential) | No |
+| Aguas de San Pedro (DIMA) | Water — San Pedro Sula | Exempt (residential) | No |
+| Hondugas | Propane/gas | 15% | Yes |
+| AMDC (municipalidad) | Waste / municipal services | 15% | Yes |
 
-**Legislation:** Ley del ISV; SAR regulations on facturacion.
+### 3.3 Telecommunications
 
-### Required Invoice Contents [T1]
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Tigo Honduras (Millicom) | Mobile, broadband | 15% | Yes (business use) |
+| Claro Honduras (América Móvil) | Mobile, internet, TV | 15% | Yes (business use) |
+| Hondutel | Fixed line, internet | 15% | Yes (business use) |
+| Liberty Honduras (formerly Columbus) | Cable TV, fiber | 15% | Yes |
 
-1. Name or razon social of the issuer
-2. RTN of the issuer
-3. CAI (Codigo de Autorizacion de Impresion) -- unique authorization code
-4. Sequential number (pre-printed or electronic)
-5. Date of issuance
-6. Name and RTN of buyer (B2B transactions)
-7. Description of goods or services
-8. Quantity and unit price
-9. Subtotal (base gravable)
-10. ISV amount (15% or 18%)
-11. Total amount
-12. Fecha limite de emision (expiry date of CAI)
+### 3.4 Transport and travel
 
-### CAI Validation Rules [T1]
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| CM Airlines / Avianca Honduras | Domestic/regional flights | 18% (tourism air) | Yes |
+| Copa Airlines Honduras | International flights | 0% (export) | No |
+| American Airlines Honduras | International flights | 0% | No |
+| Uber Honduras | Ride-hailing | 15% | Yes (business use) |
+| Intercity bus (HEDMAN ALAS) | Long-distance bus | Exempt | No |
+| City buses | Urban public transport | Exempt | No |
 
-- Every fiscal document must have a valid CAI
-- CAI has an expiry date (fecha limite de emision) -- typically 12 months
-- Expired CAI = INVALID invoice = NO input ISV credit [T1]
-- CAI must be verified on SAR portal
-- Businesses must request new CAI before expiry
+### 3.5 Fuel
 
-### Electronic Invoicing [T2]
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Petrotela | Fuel stations | 15% | Yes (business) |
+| TEXACO Honduras | Fuel | 15% | Yes |
+| Uno Honduras (DIPPSA) | Fuel | 15% | Yes |
+| Shell Honduras | Fuel, lubricants | 15% | Yes |
 
-Honduras is implementing electronic invoicing:
-- Designated taxpayers are migrating to Documento Tributario Electronico (DTE)
-- DTE replaces paper facturas with CAI
-- Electronic authorization by SAR system
-- DTE rollout continues through 2025-2026 with phased mandatory adoption
-- Flag for reviewer: confirm client's electronic invoicing obligations and DTE migration status
+### 3.6 Logistics and courier
 
-### Tax Amnesty -- Decreto No. 7-2026 [T2]
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Servientrega Honduras | Domestic courier | 15% | Yes |
+| DHL Honduras | International courier | 0% (export) / 15% (domestic) | Yes |
+| FedEx Honduras | International courier | 0% / 15% | Yes |
+| Aerocasillas Honduras | Miami-Tegucigalpa parcels | 15% | Yes |
+| Honducor (Correos Honduras) | State postal | 15% | Yes |
 
-In early 2026, Honduras enacted Decreto No. 7-2026 establishing a four-month general tax amnesty for the regularization of material or formal tax obligations not complied with as of December 31, 2025. Taxes covered include ISV, ISR, Net Asset Tax, and withholding obligations. Financial penalties are waived under the amnesty. Flag for reviewer: confirm if client has outstanding ISV obligations that may benefit from this amnesty.
+### 3.7 Retail and office supplies
 
----
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Walmart Honduras (La Colonia) | Supermarket | Mixed (exempt food / 15% non-food) | Partial |
+| Supermercados Colonial | Grocery | Mixed | Partial |
+| Precio Uno | Discount supermarket | Mixed | Partial |
+| Office Depot Honduras | Office supplies | 15% | Yes |
+| Librería Navarro | Stationery | 15% | Yes |
+| Centro Comercial Malls | General retail | 15% | Yes |
 
-## Step 10b: Sector-Specific Rules [T2]
+### 3.8 Software and digital services
 
-### Agriculture and Livestock
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Defontana Honduras | ERP for SMEs | 15% | Yes |
+| Softland Honduras | Accounting software | 15% | Yes |
+| Alegra Honduras | Cloud invoicing | 15% | Yes |
+| Microsoft Honduras (Azure, M365) | Cloud — B2B | 15% (reverse-charge if not registered) | Yes |
+| Google Honduras (Workspace, Ads) | Digital — B2B | 15% | Yes |
+| Zoom | Video — B2B | 15% | Yes |
+| AWS | Cloud — B2B | 15% | Yes |
 
-- Unprocessed agricultural products (canasta basica): exempt [T1]
-- Processed food products: taxable at 15% [T1]
-- Agricultural machinery: exempt [T1]
-- Veterinary services: exempt [T1]
-- Agrochemicals and fertilizers: exempt [T1]
-- Coffee (green/unprocessed): exempt [T1]
-- Coffee (roasted/processed): taxable at 15% [T1]
+### 3.9 Professional services
 
-### Tourism
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| CPA / Auditor | Accounting, audit, tax | 15% | Yes |
+| Firma de abogados | Legal | 15% | Yes |
+| Agencia de publicidad | Advertising | 15% | Yes |
+| Consultora | Consulting | 15% | Yes |
+| Notaría | Notarial services | 15% | Yes |
 
-- Hotel accommodation: taxable at 15% [T1]
-- Hotels under tourism incentive decree: may have ISV exemptions [T2]
-- Restaurant services: taxable at 15% [T1]
-- Tour operator services: taxable at 15% [T1]
-- Flag for reviewer: confirm tourism incentive applicability with IHTT
+### 3.10 Tourism and hospitality (18% rate)
 
-### Construction and Real Estate
-
-- Construction services: taxable at 15% [T1]
-- Construction materials: taxable at 15% [T1]
-- Sale of new real estate: taxable at 15% [T1]
-- Sale of used real estate: exempt [T2]
-- Residential rental: exempt [T1]
-- Commercial rental: taxable at 15% [T1]
-
-### Financial Services
-
-- Interest on loans: exempt [T1]
-- Banking commissions: taxable at 15% [T1]
-- Insurance premiums (life/health): exempt [T1]
-- Insurance premiums (property): taxable at 15% [T1]
-
-### Telecommunications
-
-- Mobile and fixed-line services: taxable at 15% [T1]
-- Internet services: taxable at 15% [T1]
-- Cable/satellite TV: taxable at 15% [T1]
-- Prepaid phone cards: ISV included in sale price [T1]
-
----
-
-## Step 10c: Libro de Compras y Ventas [T1]
-
-All ISV taxpayers must maintain:
-
-- **Libro de Compras**: all purchases with factura details, RTN of supplier, date, base, ISV, total
-- **Libro de Ventas**: all sales with factura details, RTN of customer (B2B), date, base, ISV (by rate: 15% and 18%), total
-- Chronological order required
-- Available for SAR inspection
-- Retention: minimum 5 years from end of fiscal year
-- Summary totals must reconcile to the ISV return
-
----
-
-## PROHIBITIONS [T1]
-
-- NEVER let AI guess ISV classification
-- NEVER allow input credit on blocked categories
-- NEVER allow input credit without valid factura fiscal with valid CAI
-- NEVER confuse 15% rate with 18% rate -- check product category
-- NEVER apply reverse charge to out-of-scope categories
-- NEVER confuse zero-rated exports with exempt supplies
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine
+| Supplier | Typical description | ISV rate | Input credit |
+|---|---|---|---|
+| Hotel Princess (Tegucigalpa) | Hotel accommodation | 18% | Yes (business travel) |
+| Intercontinental Honduras | Hotel | 18% | Yes |
+| Restaurant in hotel | Food/beverage in hotel | 18% | Yes (business meals, documented) |
+| Roatán resort | Tourism accommodation | 18% | Yes |
+| Tourist air ticket (domestic) | Air to Roatán, La Ceiba | 18% | Yes |
 
 ---
 
-## Step 11: Edge Case Registry
+## Section 4 — Worked examples
 
-### EC1 -- Alcohol purchase for resale (liquor store) [T1]
-**Situation:** Liquor store purchases alcoholic beverages for resale.
-**Resolution:** ISV at 18% applies. Input ISV IS recoverable because the purchase is for taxable resale (not entertainment/personal consumption). Entertainment block does not apply to inventory for resale.
+### Example 1 — Standard ISV on consulting
 
-### EC2 -- Imported software from US [T1]
-**Situation:** Honduras company subscribes to US cloud software. No ISV.
-**Resolution:** Self-assess ISV at 15%. Output and input. Net = zero if for taxable operations.
+**Scenario:** Tegucigalpa consulting firm issues factura to Honduran corporate.
 
-### EC3 -- Mixed-rate invoice (restaurant selling food and alcohol) [T1]
-**Situation:** Restaurant invoice includes food (15%) and alcohol (18%).
-**Resolution:** Split by line item. Food at 15%. Alcohol at 18%. If not split, apply 18% to alcohol portion and 15% to food.
-
-### EC4 -- Credit notes [T1]
-**Situation:** Client issues credit note.
-**Resolution:** Reduce output ISV. Report net figures. Proper credit note with CAI required.
-
-### EC5 -- Tourism sector hotel [T2]
-**Situation:** Hotel registered under Tourism Incentives Law.
-**Resolution:** Hotels may have ISV exemptions under tourism incentive legislation. Flag for reviewer: confirm specific incentive decree and applicable benefits.
-
-### EC6 -- Agricultural first sale [T2]
-**Situation:** Farmer sells corn directly.
-**Resolution:** Unprocessed agricultural products are exempt at first sale. Confirm product is on exempt list. Flag for reviewer.
-
-### EC7 -- Import of luxury goods [T1]
-**Situation:** Company imports perfumes from France.
-**Resolution:** ISV at 18% applies (luxury goods category). Paid at customs. Input credit available if for taxable resale.
-
-### EC8 -- Government contract [T1]
-**Situation:** Company provides services to government entity.
-**Resolution:** Government retains 1% of invoice value. Full ISV charged. Retention credit claimed on Line 16.
-
----
-
-## Step 12: Test Suite
-
-### Test 1 -- Standard local purchase, 15%
-**Input:** HN supplier, office supplies, gross HNL 11,500, ISV HNL 1,500, net HNL 10,000. Valid factura.
-**Expected output:** Line 9 = HNL 1,500 input ISV. Full recovery.
-
-### Test 2 -- Export, zero-rated
-**Input:** Exporter ships coffee to US, net HNL 500,000.
-**Expected output:** Line 5 = HNL 500,000. No output ISV. Input ISV fully recoverable.
-
-### Test 3 -- Motor vehicle, blocked
-**Input:** Purchase sedan HNL 400,000, ISV HNL 60,000.
-**Expected output:** ISV HNL 60,000 BLOCKED. No input credit.
-
-### Test 4 -- Alcohol sale at 18%
-**Input:** Liquor store sells rum HNL 5,900 (HNL 5,000 + HNL 900 ISV at 18%).
-**Expected output:** Line 3 = HNL 5,000. Line 4 = HNL 900.
-
-### Test 5 -- Imported services, reverse charge
-**Input:** US consulting firm, USD 2,000 (~ HNL 49,400). No ISV.
-**Expected output:** Self-assess output ISV = HNL 7,410 (15%). Input = HNL 7,410. Net = zero.
-
-### Test 6 -- Exempt supply (medical)
-**Input:** Clinic earns HNL 100,000 from patient fees.
-**Expected output:** Line 6 = HNL 100,000. No output ISV. Input ISV NOT recoverable.
-
-### Test 7 -- Mixed food/alcohol restaurant sale
-**Input:** Restaurant bill: food HNL 1,000 (15% ISV = HNL 150) + alcohol HNL 500 (18% ISV = HNL 90).
-**Expected output:** Line 2 = HNL 150. Line 4 = HNL 90. Total ISV = HNL 240.
-
-### Test 8 -- Purchase without valid CAI
-**Input:** Supplier provides invoice with expired CAI. ISV HNL 750.
-**Expected output:** ISV HNL 750 NOT deductible. Invalid fiscal document.
-
----
-
-## Step 13: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
+**Bank statement line (Banco Atlántida format):**
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed CPA must confirm before filing.
+Fecha       : 15/04/2025
+Tipo        : Crédito — Transferencia Electrónica
+Descripción : TECH SA DE CV — FACTURA 001-001-000001234 HONORARIOS
+Monto       : +L. 1.150.000,00
+Saldo       : L. 5.150.000,00
 ```
 
-When a [T3] situation is identified, output:
+**Working:**
+- Factura: net L 1,000,000 + ISV 15% L 150,000 = L 1,150,000
+- Return entry: Casilla A — L 1,000,000 | Casilla E: L 150,000
 
+*Note: HNL amounts use period for thousands; comma for decimal: L. 1.150.000,00 = HNL 1,150,000.00*
+
+---
+
+### Example 2 — Hotel accommodation (18%)
+
+**Scenario:** Employee stays at Hotel Princess for business meeting.
+
+**Bank statement line (BAC Honduras format):**
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed CPA. Document gap.
+Fecha       : 10/04/2025
+Tipo        : Débito — Cargo Tarjeta
+Descripción : HOTEL PRINCESS TEGUCIGALPA — 3 NIGHTS
+Monto       : -L. 10.620,00
 ```
 
----
-
-## Step 14: Additional Rules [T1]
-
-### Place of Supply [T2]
-
-- Services generally taxable where the supplier is located [T1]
-- Services related to real estate: taxable where property is located [T1]
-- Services consumed outside Honduras by non-residents: may be zero-rated [T2]
-- Flag for reviewer: cross-border service classification
-
-### Self-Supply (Autoconsumo) [T1]
-
-- Withdrawal of goods for personal use or free provision of services: taxable event [T1]
-- ISV at applicable rate (15% or 18%) on fair market value [T1]
-- Report as output ISV [T1]
-
-### Barter Transactions [T1]
-
-- Barter treated as two sales -- each party reports ISV on fair market value [T1]
-
-### Installment Sales [T1]
-
-- ISV due at time of delivery, not at each payment installment [T1]
-
-### Credit Card / Digital Payment Processing [T1]
-
-- All sales made via credit/debit card must be reported with the card processor details
-- Card processors may be designated as ISV withholding agents [T2]
+**Working:**
+- Hotel Factura: net L 9,000 + ISV 18% L 1,620 = L 10,620
+- Input credit: L 1,620 (business travel — room only, documented)
+- Return entry: Crédito fiscal 18%: L 1,620
 
 ---
 
-## Contribution Notes
+### Example 3 — ENEE electricity (business)
 
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
+**Scenario:** Office electricity bill — Tegucigalpa.
 
+**Bank statement line (Ficohsa format):**
+```
+Fecha       : 25/04/2025
+Tipo        : Débito — Pago Servicio
+Descripción : ENEE — FACTURA ENERGIA ELECTRICA ABR 2025 — CLIENTE 1234567
+Monto       : -L. 115.000,00
+```
+
+**Working:**
+- ENEE Factura: net L 100,000 + ISV 15% L 15,000 = L 115,000
+- 100% business use — full input credit
+- Return entry: Casilla F: L 15,000
 
 ---
 
-## Disclaimer
+### Example 4 — Export of services (0%)
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+**Scenario:** Honduran IT firm exports software to US client — USD wire.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+**Bank statement line (Banco Atlántida format):**
+```
+Fecha       : 20/04/2025
+Tipo        : Crédito ME — Transferencia Internacional
+Descripción : TECH CORP USA — SOFTWARE LICENSE Q1 2025
+Monto       : +L. 2.500.000,00 (USD 100.000)
+```
+
+**Working:**
+- Export of service consumed outside Honduras — 0% ISV
+- Factura de Exportación with SAR endorsement
+- Return entry: Casilla C — L 2,500,000 | ISV: L 0
+
+---
+
+### Example 5 — Canasta básica (exempt)
+
+**Scenario:** Office purchases basic groceries at La Colonia for cafetería.
+
+**Bank statement line (Banpaís format):**
+```
+Fecha       : 08/04/2025
+Tipo        : Débito — POS
+Descripción : SUPERMERCADOS LA COLONIA TEGUCIGALPA
+Monto       : -L. 45.000,00
+```
+
+**Working:**
+- La Colonia receipt: rice, beans, tortillas, eggs (exempt) L 30,000; cleaning supplies 15% L 15,000 × 15% = L 1,957 ISV
+- Input credit: L 1,957 on non-exempt items only
+- Exempt canasta básica: no ISV; not in return
+
+---
+
+### Example 6 — Monthly return summary
+
+**Scenario:** Services company — April 2025.
+
+| Item | Net (HNL) | ISV (HNL) |
+|---|---|---|
+| Domestic sales 15% | 8,000,000 | 1,200,000 |
+| Tourism services 18% | 500,000 | 90,000 |
+| Export sales (0%) | 2,000,000 | 0 |
+| Exempt sales | 1,000,000 | 0 |
+| Total Output | 11,500,000 | 1,290,000 |
+| Input ISV on purchases | 4,000,000 | 600,000 |
+| **Net ISV payable** | | **690,000** |
+
+---
+
+## Section 5 — Tier 1 rules (compressed)
+
+**Rate assignment:**
+- 15% standard: most goods and services not exempt or 18%
+- 18%: alcoholic beverages, tobacco, hotel/resort accommodation, food/beverages in hotels and resorts, air tickets to tourism destinations (domestic)
+- 0%: exports of goods and services
+- Exempt: canasta básica (basic food basket — SAR list), medicines, medical and dental services, education (public and private), financial services, insurance, water (residential), public transport (bus/city), agricultural inputs
+
+**Input credit:**
+- Credit allowed on 15% and 18% purchases for taxable activities
+- Must have valid Factura with RTN and CAI number
+- No credit on exempt purchases or purchases for non-business use
+- Tourism 18%: input credit allowed for businesses operating in taxable activities
+
+**Filing mechanics:**
+- File D-01 monthly via VirtualSAR by last business day of following month
+- Facturas must have CAI (Código de Autorización de Impresión) issued by SAR
+- e-Invoice mandate expanding — confirm with SAR which companies required
+- Crédito excedente carries forward; export refund available but slow
+
+---
+
+## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
+
+| Item | Why unknowable | What to ask |
+|---|---|---|
+| Tourism rate (18%) | Applies to hotel accommodation, food in hotels, tourist air — must confirm venue/service type | "Is this hotel accommodation, food served in a hotel, or tourist air ticket?" |
+| Canasta básica exemption | Only SAR-listed items exempt — product description needed | "What is the exact product? Check against SAR canasta básica list." |
+| Export qualification | Service must be consumed outside Honduras | "Where is the client? Evidence of offshore consumption?" |
+| Fuel — business vs personal | Input credit only for business vehicles | "Is vehicle registered in company's name? % business use?" |
+| Foreign digital service | Whether provider SAR-registered (charges ISV) or buyer must self-assess | "Does the foreign provider issue a Honduran Factura with RTN?" |
+| Maquiladora supplier | Maquiladoras may be in free zone — no ISV | "Is this supplier a Zona Libre / ZIP operation?" |
+
+---
+
+## Section 7 — Excel working paper
+
+**Columns:** Date | Supplier/Customer | RTN | Factura No. | CAI | Net (HNL) | ISV Rate % | ISV (HNL) | In/Out | Export? | Exempt? | Tier 2 flag | Notes
+
+**Tab structure:**
+1. `Output_Sales` — Facturas issued
+2. `Input_Purchases` — Facturas received
+3. `D01_Summary` — monthly return totals
+4. `Tier2_Items` — awaiting client response
+
+---
+
+## Section 8 — Bank statement reading guide
+
+### Banco Atlántida format
+```
+Fecha       : 15/04/2025
+Tipo        : Crédito — Transferencia Electrónica
+Descripción : COMPANY NAME — FACTURA 001-001-000001234
+Monto       : +L. 1.150.000,00
+Saldo       : L. 5.150.000,00
+```
+
+### BAC Honduras format
+```
+15/04/2025  |  Crédito  |  COMPANY NAME  |  +1,150,000.00 HNL  |  Saldo: 5,150,000.00
+```
+
+### Key patterns:
+- **HNL number format:** Period = thousands; comma = decimal: L. 1.150.000,00 = HNL 1,150,000.00
+- **Crédito — Transferencia:** Money in — match to issued Factura for output ISV
+- **Débito — Pago Servicio:** Utility/service payment — request Factura for input credit
+- **Crédito ME:** Foreign currency — export zero-rate or reverse-charge
+- **CAI on Factura:** Required for valid ISV document — always verify present
+
+---
+
+## Section 9 — Onboarding fallback
+
+When client cannot provide Facturas for all transactions:
+
+1. Use bank statement amounts as ISV-inclusive and back-calculate:
+   - Net = Total ÷ 1.15 | ISV = Total − Net (15%)
+   - Net = Total ÷ 1.18 (18% tourism)
+2. Conservative defaults: 15% output; 0% input credit without valid Factura/CAI
+3. Flag all items without CAI in Tier2_Items
+4. Issue data request for missing Factura references
+5. Warn client: SAR can disallow input credit without valid Factura with CAI from RTN-registered supplier
+
+---
+
+## Section 10 — Reference material
+
+| Resource | Reference |
+|---|---|
+| SAR (Servicio de Administración de Rentas) | https://www.sar.gob.hn |
+| VirtualSAR (filing portal) | https://virtual.sar.gob.hn |
+| Ley del ISV (Decreto 24-98 and amendments) | SAR — legislación |
+| Canasta básica exempt list | SAR — bienes exentos |
+| Tourism 18% rate — Decreto 51-2003 | Congreso Nacional Honduras |
+| CAI authorization guide | SAR — facturas y talonarios |
