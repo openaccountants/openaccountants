@@ -1,443 +1,523 @@
 ---
 name: pt-income-tax
 description: >
-  Use this skill whenever asked about Portuguese individual income tax (IRS) for self-employed individuals (trabalhadores independentes). Trigger on phrases like "how much tax do I pay in Portugal", "IRS", "Modelo 3", "Anexo B", "Categoria B", "regime simplificado", "contabilidade organizada", "retenção na fonte", "trabalhador independente", "recibos verdes", "income tax return Portugal", "NIF", or any question about filing or computing income tax for a self-employed or freelance client in Portugal. This skill covers the Modelo 3 + Anexo B annual return, Categoria B income, regime simplificado vs contabilidade organizada, progressive IRS brackets, adicional de solidariedade, allowable deductions, withholding tax, IRS Jovem, and filing deadlines. ALWAYS read this skill before touching any Portuguese income tax work.
-version: 1.0
-jurisdiction: PT
-tax_year: 2025
-category: international
-depends_on:
-  - income-tax-workflow-base
+  Use this skill whenever asked about Portuguese individual income tax (IRS) for self-employed individuals (trabalhadores independentes). Trigger on phrases like "how much tax do I pay in Portugal", "IRS Portugal", "Modelo 3", "Anexo B", "Categoria B", "regime simplificado", "contabilidade organizada", "retenção na fonte", "trabalhador independente", "recibos verdes", "income tax return Portugal", "NIF", "coeficientes regime simplificado", "IRS Jovem", "adicional de solidariedade", or any question about filing or computing income tax for a self-employed or freelance client in Portugal. This skill covers the Modelo 3 + Anexo B annual return, Categoria B income, regime simplificado vs contabilidade organizada, progressive IRS brackets, adicional de solidariedade, allowable deductions, withholding (retenção na fonte), IRS Jovem, and filing deadlines. ALWAYS read this skill before touching any Portuguese income tax work.
+version: 2.0
 ---
 
-# Portugal Income Tax (IRS) -- Self-Employed Skill
+# Portuguese Income Tax — Trabalhador Independente (IRS Categoria B) v2.0
 
----
+## Section 1 — Quick Reference
 
-## Skill Metadata
+### IRS Brackets 2025 (Categoria B — Regime Simplificado)
 
-| Field | Value |
-|-------|-------|
-| Jurisdiction | Portugal |
-| Jurisdiction Code | PT |
-| Primary Legislation | Código do Imposto sobre o Rendimento das Pessoas Singulares (CIRS), approved by Decreto-Lei 442-A/88 |
-| Supporting Legislation | CIRS Art. 31 (regime simplificado); Art. 68 (progressive brackets); Art. 101 (retenção na fonte); Art. 151 (professions table); Lei 55-A/2025 (OE2025 amendments); Decreto Regulamentar 25/2009 (depreciation); CIRS Art. 12-B (IRS Jovem) |
-| Tax Authority | Autoridade Tributária e Aduaneira (AT) |
-| Filing Portal | Portal das Finanças (portaldasfinancas.gov.pt) |
-| Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a Portuguese Contabilista Certificado (CC) |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate table application, regime simplificado coefficients, withholding rates, filing deadline, adicional de solidariedade. Tier 2: contabilidade organizada expense classification, mixed-use apportionment, home office, regime choice optimisation. Tier 3: NHR (Non-Habitual Resident) regime, foreign income, double taxation treaties, crypto assets, exit tax. |
+| Taxable Income (EUR) | Rate | Cumulative Tax |
+|---|---|---|
+| 0 – 7,703 | 13.25% | 1,020.65 |
+| 7,703 – 11,623 | 18% | 1,726.25 |
+| 11,623 – 16,472 | 23% | 2,841.72 |
+| 16,472 – 21,321 | 26% | 4,102.46 |
+| 21,321 – 27,146 | 32.75% | 6,010.17 |
+| 27,146 – 39,791 | 37% | 10,698.82 |
+| 39,791 – 51,997 | 43.5% | 16,011.53 |
+| 51,997 – 81,199 | 45% | 29,141.53 |
+| Over 81,199 | 48% | — |
 
----
+**Formula:** Tax = cumulative tax for lower bracket + (income − lower bracket threshold) × marginal rate
 
-## Confidence Tier Definitions
+### Adicional de Solidariedade (Solidarity Surcharge)
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Licensed Contabilista Certificado must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+| Taxable Income (EUR) | Rate |
+|---|---|
+| 80,000 – 250,000 | 2.5% on excess above EUR 80,000 |
+| Over 250,000 | 2.5% on EUR 170,000 + 5% on excess above EUR 250,000 |
 
----
+### Regime Simplificado — Coeficientes 2025
 
-## Step 0: Client Onboarding Questions
+Under regime simplificado, taxable income = gross receipts × applicable coefficient (not actual expenses):
 
-Before computing any income tax figure, you MUST know:
+| Type of Income | Coefficient | Effective Tax Base |
+|---|---|---|
+| Sales of goods (vendas) | 0.15 | 15% of gross |
+| Provision of services — general (prestação de serviços) | 0.35 | 35% of gross |
+| Professional services (art. 151 CIRS — listed professions: lawyers, doctors, engineers, architects, consultants) | 0.35 | 35% of gross |
+| Hotel/accommodation/tourism | 0.15 | 15% of gross |
+| Other income Categoria B | 0.95 | 95% of gross |
+| Intellectual property (if author is original creator) | 0.50 | 50% of gross |
 
-1. **NIF (Número de Identificação Fiscal)** [T1] -- mandatory for all filings. If missing, STOP.
-2. **Filing status** [T1] -- single (solteiro/a), married filing jointly (casado, tributação conjunta), or married filing separately (tributação separada). Determines whether income is split (quociente conjugal).
-3. **Tax regime** [T1] -- regime simplificado or contabilidade organizada. Determines how net income is computed.
-4. **Activity type** [T1] -- services (prestação de serviços) or sale of goods (venda de mercadorias). Determines simplificado coefficient.
-5. **CIRS Art. 151 activity** [T1] -- whether the activity is listed in the Art. 151 professions table. Affects withholding rate.
-6. **Gross income (Categoria B)** [T1] -- total invoiced in the calendar year via recibos verdes / e-fatura
-7. **Business expenses** [T1/T2] -- relevant only under contabilidade organizada
-8. **Social security contributions (Segurança Social) paid** [T1] -- amount paid during the year
-9. **Other income** [T1] -- employment (Cat. A), rental (Cat. F), capital (Cat. E), pensions (Cat. H)
-10. **Dependants** [T1] -- number and ages of dependants
-11. **IRS Jovem eligibility** [T1] -- age, first year of employment/self-employment, degree completion date
+**Note:** Regime simplificado is available only when gross receipts in the prior year (or estimated current year for new entrants) ≤ EUR 200,000.
 
-**If NIF is unknown or filing status is unknown, STOP. Both are mandatory.**
+### Regime de Contabilidade Organizada (Actual Expenses)
 
----
+When gross receipts > EUR 200,000 (mandatory) or by election: taxable income = gross receipts − actual deductible expenses (requires certified accountant / TOC).
 
-## Step 1: Determine Tax Regime for Categoria B [T1]
+### Retenção na Fonte (Withholding by Clients)
 
-**Legislation:** CIRS Arts. 28, 31
+| Recipient Type | Rate |
+|---|---|
+| General trabalhador independente — Categoria B | 25% |
+| Profissões de elevado valor acrescentado (NHR/IFICI list) | Special rates |
+| Non-resident (Categoria B) | 25% |
 
-### Regime Simplificado [T1]
+Clients paying a trabalhador independente with NIF must withhold 25% and remit to AT. The withheld amount is credited against final IRS liability.
 
-Applies automatically when:
-- Annual gross Categoria B income does not exceed EUR 200,000
-- Taxpayer has not opted for contabilidade organizada
+**Isenção de retenção na fonte:** Taxpayers whose prior-year gross Categoria B income ≤ EUR 12,500 may submit declaration to clients to waive withholding.
 
-Under the simplified regime, taxable income is determined by applying coefficients to gross income:
+### Segurança Social (Social Security Contributions)
 
-| Type of Income | Coefficient (taxable %) | Deemed Expense % |
-|---------------|------------------------|-------------------|
-| Services (prestação de serviços) -- Art. 151 activities | 75% | 25% automatic deduction |
-| Sale of goods (venda de mercadorias) | 15% | 85% automatic deduction |
-| Income from intellectual property | 95% | 5% automatic deduction |
-| Accommodation/food services (alojamento local) | 35% | 65% automatic deduction |
-| Subsidies for acquisition of assets | 30% | 70% automatic deduction |
-| Other Categoria B income | 95% | 5% automatic deduction |
+| Scheme | Rate | Base |
+|---|---|---|
+| Trabalhador independente SS | 21.4% | 70% of quarterly gross receipts / 3 (monthly base) |
+| Minimum monthly base | EUR 501.87 | If income very low |
 
-**The 25% deemed expense for services is NOT free.** To benefit from the full 25% automatic deduction, the taxpayer must prove expenses and charges equal to at least 15% of gross income. If actual documented expenses (in e-fatura) are less than 15%, the taxable income increases accordingly. The remaining 10% is unconditionally deemed as expense.
+SS contributions are deductible from IRS taxable income (reduce gross before applying coefficient, or deducted as expense in contabilidade organizada).
 
-### Contabilidade Organizada [T2]
+### IRS Jovem (Youth IRS Exemption)
 
-- Taxpayer opts for (or is required to use) organised accounting
-- Net income = actual revenue minus actual documented expenses
-- Requires a Contabilista Certificado (CC) to maintain the accounts
-- More beneficial when actual expenses exceed the deemed expense percentage under simplificado
+For taxpayers ≤ 35 years old (first 10 years of earning income in Portugal after completing education):
 
-### Regime Choice [T2]
+| Year | Exemption from Tax |
+|---|---|
+| Years 1–3 | 100% exempt (capped at EUR 28,737/year) |
+| Years 4–6 | 75% exempt |
+| Years 7–9 | 50% exempt |
+| Year 10 | 25% exempt |
 
-- The choice between simplificado and contabilidade organizada is made at the start of the activity or by 31 March of the fiscal year (via Portal das Finanças)
-- Once chosen, it applies for at least 3 years
-- [T2] Flag for reviewer: always compare both regimes before recommending
+Confirm eligibility before applying. IRS Jovem applies on IRS brackets; SS contributions still apply.
 
----
+### Conservative Defaults
 
-## Step 2: Progressive IRS Brackets (Art. 68 CIRS) [T1]
+| Situation | Default Assumption |
+|---|---|
+| Service type unclear (goods vs services) | Apply coefficient 0.35 (services) — higher tax base; flag for client |
+| Regime simplificado vs. contabilidade organizada | Regime simplificado (default for < EUR 200,000 receipts) |
+| IRS Jovem eligibility unclear | Do NOT apply — flag for client to confirm eligibility years |
+| NHR/IFICI status unclear | Do NOT apply special rates — apply standard brackets |
+| SS contributions not provided | Estimate at 21.4% × 70% of gross; flag as estimated |
+| Retenção na fonte amounts not confirmed | Do NOT assume — require withholding certificates from clients |
+| Expense claimed under contabilidade organizada without receipt | Reject — cannot deduct without evidence |
 
-**Legislation:** CIRS Art. 68, as amended by Lei 55-A/2025 (OE2025)
+### Red Flag Thresholds
 
-### Tax Year 2025 Brackets
-
-| Bracket | Taxable Income (EUR) | Normal Rate | Average Rate |
-|---------|---------------------|-------------|--------------|
-| 1st | Up to 8,059 | 13.00% | 13.000% |
-| 2nd | 8,059 to 12,160 | 16.50% | 14.180% |
-| 3rd | 12,160 to 17,233 | 22.00% | 16.482% |
-| 4th | 17,233 to 22,306 | 25.00% | 18.419% |
-| 5th | 22,306 to 28,400 | 32.00% | 21.334% |
-| 6th | 28,400 to 41,629 | 35.50% | 25.835% |
-| 7th | 41,629 to 44,987 | 43.50% | 27.154% |
-| 8th | 44,987 to 83,696 | 45.00% | 35.408% |
-| 9th | Above 83,696 | 48.00% | -- |
-
-**Note:** The 2025 brackets were updated by 4.6% compared to 2024. Tax rates remained unchanged. Brackets are updated annually in line with the State Budget (Orçamento do Estado).
-
-### How Portuguese IRS Brackets Work [T1]
-
-Portuguese IRS uses a **split-rate system**, not a simple marginal system:
-
-1. Determine the highest bracket that the taxable income fully covers
-2. That portion is taxed at the **average rate** of that bracket
-3. The excess above that bracket is taxed at the **normal rate** of the next bracket
-
-**Example:** Taxable income of EUR 15,000.
-- First EUR 12,160 taxed at the average rate of the 2nd bracket (14.180%) = EUR 1,724.29
-- Remaining EUR 2,840 taxed at the normal rate of the 3rd bracket (22.00%) = EUR 624.80
-- Total IRS = EUR 2,349.09
-
-### Quociente Conjugal (Married Filing Jointly) [T1]
-
-When married taxpayers file jointly (tributação conjunta):
-1. Sum both spouses' total income
-2. Divide by 2 (quociente familiar = 2)
-3. Apply the bracket table to the halved amount
-4. Multiply the resulting tax by 2
-
-This is always more favourable when spouses have significantly different incomes.
+| Flag | Threshold |
+|---|---|
+| Gross receipts > EUR 200,000 | Mandatory contabilidade organizada — stop if still on simplificado |
+| Single client providing > 80% of receipts | Requalification risk as employment (falso recibo verde) |
+| No retenções na fonte received but clients are companies | Verify — companies must withhold 25% |
+| SS contributions appear absent or very low | Verify SS base calculation |
+| IRS Jovem claimed beyond year 10 | Ineligible — flag immediately |
 
 ---
 
-## Step 3: Adicional de Solidariedade (Solidarity Surcharge) [T1]
+## Section 2 — Required Inputs + Refusal Catalogue
 
-**Legislation:** CIRS Art. 68-A
+### Required Inputs
 
-| Taxable Income (EUR) | Surcharge Rate |
-|---------------------|----------------|
-| Up to 80,000 | 0% |
-| 80,001 to 250,000 | 2.5% on the portion above 80,000 |
-| Above 250,000 | 5.0% on the portion above 250,000 (plus 2.5% on 80,001-250,000) |
+Before computing Portuguese IRS, collect:
 
-The adicional de solidariedade is computed on the same taxable income as the main IRS and is added to the total tax liability.
+1. **Total gross receipts** (recibos verdes issued and received) — full Categoria B gross
+2. **Client breakdown** — to identify service type and applicable coefficient
+3. **Withholding certificates (declarações de retenção)** — from each client
+4. **SS contribution payments** — quarterly SS payment receipts
+5. **Regime status** — simplificado or contabilidade organizada (if elected)
+6. **IRS Jovem status** — age + year number in Portugal income earnings
+7. **Bank statements** — 12 months of the fiscal year
+8. **NHR or IFICI status** — if non-habitual resident rules apply
+9. **Other income categories** — Categoria A (employment), Categoria F (rental), Categoria G (capital gains)
+10. **Marital status + dependants** — for quociente conjugal and deductions for dependants
 
----
+### Refusal Catalogue
 
-## Step 4: Retenção na Fonte -- Withholding Tax [T1]
-
-**Legislation:** CIRS Art. 101
-
-### Withholding Rates for Categoria B Income (2025)
-
-| Activity Type | Withholding Rate |
-|--------------|-----------------|
-| Professional activities listed in Art. 151 CIRS | 23% |
-| Other Categoria B services (not in Art. 151) | 11.5% |
-| Isolated acts (actos isolados) | 11.5% |
-| Intellectual property | 16.5% |
-
-### When Withholding Applies [T1]
-
-Withholding is required when:
-- The payer is an entity with organised accounting (empresa ou entidade com contabilidade organizada)
-- The payee issues a recibo verde (green receipt) via the Portal das Finanças
-
-Withholding does NOT apply when:
-- The client is an individual (pessoa singular) without organised accounting
-- The taxpayer is exempt from withholding (annual income below EUR 14,500 in the prior year -- dispensed from retenção)
-
-### Exemption from Withholding [T1]
-
-Taxpayers who earned less than EUR 14,500 in Categoria B income in the previous year may request dispensation from retenção na fonte via the Portal das Finanças. This does not eliminate the tax obligation -- it only defers payment to the annual settlement.
+| Code | Situation | Action |
+|---|---|---|
+| R-PT-1 | Gross receipts > EUR 200,000 but client insists on regime simplificado | Stop — mandatory contabilidade organizada; TOC (certified accountant) required |
+| R-PT-2 | NHR/IFICI status claimed but no AT registration confirmation | Do not apply NHR rates — request IFICI/NHR registration number |
+| R-PT-3 | No retenção certificates but client paid by Portuguese companies | Flag — companies legally required to withhold 25%; gather certificates before finalising |
+| R-PT-4 | Falso recibo verde risk (single client > 80% of receipts, regular schedule) | Flag — AT may reclassify as employment (Categoria A); advise legal review |
+| R-PT-5 | Contabilidade organizada without a TOC certified accountant | Stop — contabilidade organizada legally requires a TOC signature; cannot proceed without one |
 
 ---
 
-## Step 5: Social Security Contributions (Segurança Social) [T1]
+## Section 3 — Transaction Pattern Library
 
-**Legislation:** Código dos Regimes Contributivos (CRC), Art. 163 et seq.
+### Income Patterns
 
-### Contribution Rates for Trabalhadores Independentes [T1]
+| # | Narration Pattern | Tax Line | Notes |
+|---|---|---|---|
+| I-01 | `TRANSF DE [client name]` / `TRF DE [client]` | Gross receipts — Categoria B | Standard SEPA transfer from client |
+| I-02 | `MB WAY [client]` / `MBWAY RECEBIDO` | Gross receipts — Categoria B | MBWay (Portuguese digital payment) from client |
+| I-03 | `STRIPE PAYMENTS EUROPE` / `STRIPE PAYOUT` | Gross receipts — gross-up | Stripe net payout; gross-up to pre-fee; fee deductible |
+| I-04 | `PAYPAL TRANSFER` / `PAYPAL RECEBIDO` | Gross receipts — gross-up | PayPal net payout; gross-up; fee deductible |
+| I-05 | `TRANSFERÊNCIA RECEBIDA [client]` | Gross receipts — Categoria B | Generic bank transfer credit |
+| I-06 | `IFTHENPAY PAYOUT` / `EUPAGO SETTLEMENT` | Gross receipts — gross-up | Portuguese payment gateway settlement |
+| I-07 | `RETENÇÃO NA FONTE` (separate line or annotation) | Withholding credit | Gross-up: receipt = net after 25% withholding → gross = receipt / 0.75 |
+| I-08 | `REEMBOLSO IRS AT` / `REEMBOLSO AT` | NOT income — tax refund | AT tax refund; not Categoria B income |
+| I-09 | `DEVOLUÇÃO` / `REEMBOLSO [client]` | Non-taxable if client reimbursement | Must be documented; otherwise taxable |
+| I-10 | `JUROS RECEBIDOS` / `JUROS CONTA` | Categoria E (capital income) | Not Categoria B — separate IRS treatment |
 
-| Contributor Type | Rate | Base |
-|-----------------|------|------|
-| Self-employed (standard) | 21.4% | On 70% of average quarterly income (rendimento relevante) |
-| Self-employed (first year) | Exempt | First 12 months of activity |
-| Self-employed (reduced, on request) | Various reduced rates | Available under specific conditions |
+### Expense Patterns
 
-### Deductibility [T1]
-
-Social security contributions paid during the year are deductible from Categoria B income under the regime simplificado (they count towards the 15% expense threshold) and are deductible as an expense under contabilidade organizada.
-
-In the annual IRS computation, SSC is deducted from taxable income (specific deduction under Art. 26 CIRS).
-
----
-
-## Step 6: Personal Deductions (Deduções à Coleta) [T1]
-
-**Legislation:** CIRS Arts. 78-78-E
-
-Portuguese personal deductions work as **tax credits** (deducted from the tax, not from income):
-
-| Deduction | Amount / Rate | Cap |
-|-----------|--------------|-----|
-| General family deduction (dedução pessoal) | EUR 600 per taxpayer + EUR 300 per dependant (under 3: EUR 450) | Fixed amounts |
-| Health expenses (saúde) | 15% of expenses | EUR 1,000 per household |
-| Education expenses (educação) | 30% of expenses | EUR 800 per household |
-| Housing expenses (habitação) | 15% of rent or mortgage interest | EUR 502 (rent) / EUR 296 (mortgage) |
-| Retirement home expenses (lares) | 25% of expenses | EUR 403.75 |
-| Alimony (pensão de alimentos) | 20% of amounts paid | No cap (court-ordered) |
-| VAT invoices (exigência de fatura) | 15% of IVA on qualifying sectors | EUR 250 per household |
-| General expenses (despesas gerais familiares) | 35% of general household expenses | EUR 250 per taxpayer |
-
-### Important Rule for Self-Employed [T1]
-
-Under the regime simplificado, the general expenses deduction (despesas gerais familiares) is reduced for Categoria B taxpayers. Only 25% of their general expenses qualify (vs 35% for employees), reflecting that some expenses are already deemed deducted through the simplified coefficient.
+| # | Narration Pattern | Tax Line | Notes |
+|---|---|---|---|
+| E-01 | `RENDA` / `ARRENDAMENTO ESCRITÓRIO` | Rent — deductible (contabilidade organizada only) | Regime simplificado: actual expenses not deductible (coefficient applies) |
+| E-02 | `EDP` / `GALP ENERGIA` / `ENDESA` / `IBERDROLA` | Utilities — deductible (contab. organizada only) | Not deductible under regime simplificado |
+| E-03 | `MEO` / `NOS` / `VODAFONE PT` / `NOWO` | Phone/internet — deductible (contab. organizada) | Regime simplificado: N/A |
+| E-04 | `ADOBE` / `MICROSOFT 365` / `GOOGLE WORKSPACE` | Software — deductible (contab. organizada) | Regime simplificado: N/A |
+| E-05 | `SEGURANÇA SOCIAL` / `TAXA SS` | SS contributions — deductible | Both regimes: SS contributions reduce IRS taxable income |
+| E-06 | `CONTABILISTA` / `TOC` / `ROC` | Accountant fees — deductible (contab. organizada) | Required for contabilidade organizada |
+| E-07 | `CP COMBOIO` / `COMBOIOS DE PORTUGAL` | Train travel — deductible (contab. organizada) | Business travel; require purpose note |
+| E-08 | `TAP AIR PORTUGAL` / `RYANAIR` / `EASYJET` | Air travel — deductible (contab. organizada) | Business travel; require itinerary |
+| E-09 | `SEGURO PROFISSIONAL` / `SEGURO RC` | Professional insurance — deductible | Both regimes (when specifically professional) |
+| E-10 | `AT PAGAMENTO IRS` / `LIQUIDAÇÃO IRS` | IRS payment — NOT deductible | Tax payments are not expenses |
+| E-11 | `AT IVA PAGAMENTO` / `IVA ENTREGUE` | VAT payment — NOT deductible | IVA is separate; not IRS expense |
+| E-12 | `BANCO [name] COMISSÕES` / `COMISSÃO BANCÁRIA` | Bank fees — deductible (contab. organizada) | Business account commissions |
+| E-13 | `FORMAÇÃO` / `CURSO` / `WORKSHOP` | Training — deductible (contab. organizada) | Professional development |
+| E-14 | `COMBUSTÍVEL` / `GALP` / `BP` / `REPSOL` | Fuel — deductible (contab. organizada, partial) | Vehicle expenses: document business use |
+| E-15 | `MBNET` / `TRANSFERÊNCIA MB` / `MULTIBANCO` | Generic payment — classify by purpose | Identify payee from bank detail; classify accordingly |
+| E-16 | `SEGURO SAÚDE` / `MÉDIS` / `MULTICARE` | Health insurance — IRS deduction (Anexo H) | Not a Categoria B expense — separate personal deduction in Anexo H |
+| E-17 | `DESCONTO RECIBO VERDE` / `RETENÇÃO CLIENTE` | Withholding by client (25%) | Not an expense — credit against IRS; verify with certificate |
 
 ---
 
-## Step 7: IRS Jovem -- Young Taxpayer Relief [T1]
+## Section 4 — Worked Examples
 
-**Legislation:** CIRS Art. 12-B (as amended by OE2025)
+### Example 1 — Millennium BCP (Lisbon, Consultant — Regime Simplificado)
 
-### Eligibility [T1]
-
-| Condition | Requirement |
-|-----------|-------------|
-| Age | Up to 35 years old (inclusive) |
-| Education | Completed at least ISCED Level 4 (secondary education or higher) |
-| Not claimed as dependant | Must not be a dependant on another taxpayer's return |
-| First years of activity | Applies to the first 10 years of earning income after completing studies |
-
-### Exemption Levels (OE2025 onwards) [T1]
-
-| Year of Activity | Exemption % of Categoria B Income |
-|-----------------|------------------------------------|
-| 1st year | 100% (up to 55 x IAS) |
-| 2nd year | 75% (up to 55 x IAS) |
-| 3rd and 4th years | 50% (up to 55 x IAS) |
-| 5th to 10th years | 25% (up to 55 x IAS) |
-
-**IAS (Indexante dos Apoios Sociais) 2025:** EUR 522.50/month = EUR 6,270/year. Cap = 55 x IAS = EUR 28,737.50/year of exempt income.
-
-**[T2] Flag for reviewer:** Confirm exact year of first income and degree completion date to determine which year of the exemption applies.
-
----
-
-## Step 8: Annual Return Computation [T1]
-
-**Legislation:** CIRS Arts. 22, 28, 31, 65, 68, 78
-
-### Computation Walkthrough (Regime Simplificado, Single Taxpayer)
+**Bank:** Millennium BCP statement (PDF/CSV)
+**Client:** Ana Ferreira, management consultant, Lisbon, NIF registered, regime simplificado
 
 ```
-1. Gross Categoria B income (services)                        = A
-2. Apply simplificado coefficient (75% for services)          = B = A x 0.75
-   (Verify 15% expense threshold is met -- see Step 1)
-3. Less: Social security contributions (specific deduction)   = C
-4. Add: Other category income (Cat. A, F, E, H if any)       = D
-5. Total taxable income (rendimento coletável)                = E = B - C + D
-6. Apply Art. 68 bracket table to E                           = F (coleta)
-7. Add: Adicional de solidariedade (if E > EUR 80,000)        = G
-8. Gross tax                                                   = H = F + G
-9. Less: Personal deductions (deduções à coleta, Step 6)      = I
-10. Less: IRS Jovem exemption (if eligible, Step 7)           = J
-11. Net tax liability                                          = K = H - I - J
-12. Less: Retenção na fonte (withholding paid during year)    = L
-13. Less: Pagamentos por conta (advance payments, if any)     = M
-14. IRS due or refund                                          = N = K - L - M
+Data;Descrição;Débito;Crédito;Saldo
+05/01/2025;TRANSF DE EMPRESA ALPHA LDA;;3.750,00;
+31/01/2025;COMISSÃO BANCÁRIA;4,50;;
+10/02/2025;TRANSF DE STARTUP BETA LDA;;2.500,00;
+28/02/2025;SEGURANÇA SOCIAL;350,00;;
+15/03/2025;TRANSF DE GAMMA CONSULTING LDA;;4.200,00;
+31/03/2025;SEGURANÇA SOCIAL;350,00;;
+05/04/2025;STRIPE PAYMENTS EUROPE;;1.920,00;
+30/04/2025;SEGURANÇA SOCIAL;350,00;;
+15/06/2025;TRANSF DE DELTA SA;;3.100,00;
+30/06/2025;SEGURANÇA SOCIAL;350,00;;
 ```
 
-**If N > 0:** tax balance due, payable with the return.
-**If N < 0:** refund (reembolso), paid by AT typically within months of filing.
+**Note:** Clients withheld 25% retenção. Gross amounts before retenção:
+- EMPRESA ALPHA: EUR 3,750 received = EUR 5,000 gross (÷ 0.75)
+- STARTUP BETA: EUR 2,500 = EUR 3,333.33 gross
+- GAMMA CONSULTING: EUR 4,200 = EUR 5,600 gross
+- DELTA SA: EUR 3,100 = EUR 4,133.33 gross
 
-### Pagamentos por Conta (Advance Payments) [T1]
+Stripe: EUR 1,920 net (no retenção — foreign payer). Gross-up to ~EUR 1,978 (after fees).
 
-Self-employed taxpayers with Categoria B income may be required to make three advance payments (pagamentos por conta) during the year:
-
-| Instalment | Deadline |
-|-----------|----------|
-| 1st | 20 July |
-| 2nd | 20 September |
-| 3rd | 20 December |
-
-Each payment = (prior year IRS attributable to Cat. B - withholdings) / 3 x 76.5% (for simplificado) or 80% (for contabilidade organizada). These are credited against the annual tax.
-
----
-
-## Step 9: Filing Deadlines [T1]
-
-**Legislation:** CIRS Art. 60
-
-| Event | Deadline |
-|-------|----------|
-| IRS Modelo 3 (tax year 2025) submission period | 1 April to 30 June 2026 |
-| IRS Automático (pre-filled return, if eligible) | Same period |
-| Pagamentos por conta (1st / 2nd / 3rd) | 20 July / 20 September / 20 December |
-| Retenção na fonte (monthly) | By the 20th of the following month |
-
-### Late Filing Penalties [T1]
-
-| Offence | Penalty |
-|---------|---------|
-| Late filing (up to 30 days) | EUR 25 to EUR 75 (if regularised voluntarily) |
-| Late filing (over 30 days) | EUR 150 to EUR 3,750 |
-| Omission of income | EUR 375 to EUR 22,500 |
-| Tax fraud | Criminal penalties under RGIT (Regime Geral das Infrações Tributárias) |
-| Late payment interest (juros de mora) | 4% per year (updated periodically) |
-
----
-
-## Step 10: Edge Case Registry
-
-### EC1 -- 15% expense threshold not met under simplificado [T1]
-**Situation:** Freelance consultant earns EUR 40,000. Documented expenses in e-fatura total only EUR 3,000 (7.5% of income, below the 15% threshold of EUR 6,000).
-**Resolution:** The shortfall is EUR 3,000 (EUR 6,000 required - EUR 3,000 actual). This EUR 3,000 is added back to the taxable income. Taxable = EUR 40,000 x 75% + EUR 3,000 = EUR 33,000 instead of the standard EUR 30,000. The taxpayer should increase documented expenses (e.g., SSC, professional insurance, training).
-
-### EC2 -- Mixed activity: services and goods [T1]
-**Situation:** Client provides IT consulting (services) and also sells computer hardware (goods). Services income EUR 50,000, goods income EUR 20,000.
-**Resolution:** Apply each coefficient separately. Services: EUR 50,000 x 75% = EUR 37,500. Goods: EUR 20,000 x 15% = EUR 3,000. Total taxable Categoria B = EUR 40,500. Do NOT apply a blended rate.
-
-### EC3 -- First-year SSC exemption [T1]
-**Situation:** Client opened activity as trabalhador independente in March 2025. No SSC paid in 2025.
-**Resolution:** Correct. First 12 months of activity are exempt from SSC. No SSC deduction for 2025. The exemption ends in March 2026, after which quarterly SSC obligations begin.
-
-### EC4 -- Dispensation from withholding misunderstood as tax exemption [T1]
-**Situation:** Client earns EUR 12,000 in Categoria B and was dispensed from retenção na fonte (prior year income < EUR 14,500). Client believes no tax is due.
-**Resolution:** Dispensation from withholding is NOT a tax exemption. The full income is taxable on the annual return. The client will owe the full IRS amount at filing time, with no withholding credits to offset. Advise the client to set aside funds for the annual tax payment.
-
-### EC5 -- Married couple, one self-employed, filing jointly vs separately [T2]
-**Situation:** Spouse A earns EUR 60,000 (Cat. A employment). Spouse B earns EUR 15,000 (Cat. B self-employment). Should they file jointly?
-**Resolution:** [T2] Compare both options. Joint: combined EUR 75,000 / 2 = EUR 37,500 per quotient, taxed at 6th bracket rates. Separate: A at EUR 60,000 (8th bracket), B at EUR 11,250 (75% of EUR 15,000, 2nd bracket). The optimal choice depends on the full deduction profile. Flag for reviewer to compute both scenarios.
-
-### EC6 -- Contabilidade organizada: personal expense mixed in [T1]
-**Situation:** Under contabilidade organizada, client includes personal car insurance (EUR 800) as a business expense.
-**Resolution:** NOT deductible unless apportioned for business use. Under contabilidade organizada, only expenses wholly and exclusively incurred for the business are deductible. Personal expenses must be excluded or apportioned. [T2] Flag if mixed-use apportionment is needed.
-
-### EC7 -- Adicional de solidariedade triggered [T1]
-**Situation:** Single freelancer with taxable income of EUR 120,000.
-**Resolution:** Standard IRS on EUR 120,000 per bracket table. Adicional de solidariedade: 2.5% x (EUR 120,000 - EUR 80,000) = 2.5% x EUR 40,000 = EUR 1,000. This EUR 1,000 is added to the IRS liability.
-
-### EC8 -- IRS Jovem eligibility edge case [T2]
-**Situation:** Client is 34 years old, completed a master's degree in 2020, started freelancing in 2021. Filing for 2025 (5th year of activity).
-**Resolution:** 5th year of activity qualifies for 25% exemption under IRS Jovem (OE2025 rules). Exempt income capped at 55 x IAS = EUR 28,737.50. Client is under 35, so age criterion is met. [T2] Flag for reviewer to confirm year count from first income after degree completion.
-
-### EC9 -- NHR (Non-Habitual Resident) [T3]
-**Situation:** Client moved to Portugal in 2023 and has NHR status. Asks about flat 20% rate on Categoria B income.
-**Resolution:** [T3] ESCALATE. The NHR regime was significantly changed by OE2024 and OE2025. Transitional rules apply for existing NHR holders. New applications under the original NHR were closed (replaced by tax incentive for scientific research and innovation). Refer to a Contabilista Certificado or tax lawyer with NHR expertise.
-
-### EC10 -- Crypto income [T3]
-**Situation:** Freelancer also earned EUR 5,000 from cryptocurrency trading.
-**Resolution:** [T3] ESCALATE. Crypto taxation in Portugal changed significantly from 2023 onwards (Lei 24-D/2022). Short-term crypto gains (held < 365 days) are taxable at 28% autonomous rate. Long-term may be exempt. Classification as Categoria B income (if trading is the habitual activity) vs Categoria G (capital gains) requires specialist analysis. Refer to a tax specialist.
-
----
-
-## Step 11: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+**Step 1 — Total Gross Receipts**
 
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Licensed Contabilista Certificado must confirm before filing.
+Grossed-up from retenção clients:  EUR 18,066.67
+Stripe gross (no retenção):        EUR  1,978.00
+Remaining months (extrapolated):   assume full year = EUR 52,000 gross (example)
+Total gross Categoria B:           EUR 52,000
 ```
 
-When Claude identifies a [T3] situation:
+**Step 2 — Apply Regime Simplificado Coefficient**
 
 ```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to licensed Contabilista Certificado. Document gap.
+Service type: management consulting → coefficient 0.35
+Taxable income: EUR 52,000 × 0.35 = EUR 18,200
+Less SS contributions paid (deductible): EUR 350 × 12 = EUR 4,200
+Taxable income for IRS: EUR 18,200 − EUR 4,200 = EUR 14,000
+```
+
+**Step 3 — IRS Computation**
+
+```
+EUR 7,703 × 13.25% = EUR 1,020.65
+(EUR 14,000 − EUR 7,703) × 18% = EUR 6,297 × 18% = EUR 1,133.46
+Total IRS gross: EUR 2,154.11
+Less retenções na fonte: receipts from PT clients × 25% of gross
+  = EUR 18,066.67 × 25% (as withheld) = EUR 4,516.67 already withheld
+IRS balance: EUR 2,154.11 − EUR 4,516.67 = **(EUR 2,362.56 refund)**
+```
+
+Refund scenario — confirm all retenção certificates match grossed-up amounts.
+
+---
+
+### Example 2 — Caixa Geral de Depósitos (Porto, Software Developer)
+
+**Bank:** CGD (Caixa) online statement
+**Client:** Pedro Costa, software developer, Porto, IRS Jovem year 2 (75% exempt)
+
+Gross receipts: EUR 45,000 (services coefficient 0.35)
+Taxable base: EUR 45,000 × 0.35 = EUR 15,750
+Less SS: EUR 45,000 × 70% × 21.4% / 12 × 12 = EUR 6,741
+Net taxable: EUR 15,750 − EUR 6,741 = EUR 9,009
+
+IRS Jovem — year 2 (75% exempt): EUR 9,009 × 25% subject = EUR 2,252.25
+
+IRS: EUR 2,252.25 × 13.25% = **EUR 298.42**
+
+Flag: IRS Jovem requires AT confirmation of year number (anos de IRS Jovem). Pedro must submit declaration via Portal das Finanças.
+
+---
+
+### Example 3 — BPI (Algarve, Architect — Contabilidade Organizada)
+
+**Bank:** BPI statement
+**Client:** Sofia Pinto, architect, Algarve, gross receipts EUR 220,000 (mandatory contab. organizada)
+
+Note: Mandatory contabilidade organizada — TOC signature required. This example shows structure only.
+
+Gross receipts: EUR 220,000
+Deductible expenses (actual):
+- Office rent: EUR 12,000
+- Utilities: EUR 2,400
+- Phone/internet: EUR 1,200
+- Software: EUR 2,400
+- TOC accountant: EUR 4,800
+- Professional insurance: EUR 1,500
+- Travel: EUR 3,000
+- SS contributions: EUR 32,817 (21.4% × 70% × EUR 220,000)
+Total expenses: EUR 60,117
+
+Net profit: EUR 220,000 − EUR 60,117 = EUR 159,883
+
+IRS on EUR 159,883:
+EUR 81,199 bracket: EUR 29,141.53 + (EUR 159,883 − EUR 81,199) × 48% = EUR 29,141.53 + EUR 42,569.52 = EUR 71,711.05
+
+Adicional solidariedade: (EUR 80,000 limit applies to taxable income) — EUR 159,883 > EUR 80,000:
+(EUR 159,883 − EUR 80,000) × 2.5% = EUR 79,883 × 2.5% = EUR 1,997.08
+
+Total IRS: EUR 71,711.05 + EUR 1,997.08 = **EUR 73,708.13**
+
+Flag: Gross > EUR 200,000 — mandatory TOC; adicional solidariedade applies.
+
+---
+
+### Example 4 — Santander Portugal (Lisbon, Designer, MB Way Heavy)
+
+**Bank:** Santander Totta statement
+**Client:** Margarida Santos, graphic designer, Lisbon, receives many MB Way payments
+
+MB Way narrations in bank: `MBWAY RECEBIDO CLIENTE X` × multiple entries
+
+Treatment: MB Way receipts are standard income. The key challenge is identifying the payer. Many micro-clients may not be registered companies and therefore may not withhold retenção.
+
+Key rule: If payer is a non-company (individual consumer), no retenção obligation. If payer is a company with NIF, 25% withholding is mandatory.
+
+For MB Way heavy designers: many small consumer payments = no retenção. Sum all MB Way credits as gross Categoria B receipts at face value (no gross-up needed).
+
+Gross MB Way income: EUR 18,000 (all individual consumers)
+Other TRANSF from company clients (with retenção): EUR 24,000 gross
+
+Total gross: EUR 42,000
+Coeficiente 0.35: EUR 42,000 × 0.35 = EUR 14,700
+Less SS: ~EUR 6,300
+Taxable: EUR 8,400
+
+IRS: EUR 7,703 × 13.25% + EUR 697 × 18% = EUR 1,020.65 + EUR 125.46 = **EUR 1,146.11**
+
+---
+
+### Example 5 — Novo Banco (Lisbon, NHR Regime)
+
+**Bank:** Novo Banco statement
+**Client:** John Smith, UK national, registered NHR in Portugal, IT consultant
+
+NHR (Non-Habitual Resident) — now IFICI (Incentivo Fiscal à Criatividade e Investigação):
+- Foreign-source Categoria B income: may be exempt under NHR if taxed in source country
+- Portuguese-source income from "high value-added activities": flat 20% rate
+
+Do NOT apply standard brackets to NHR clients without confirming:
+1. NHR/IFICI registration number and status
+2. Source of each income stream (Portuguese source vs. foreign source)
+3. Whether activity is on the list of qualifying professions
+
+**Action for this client:** STOP — apply R-PT-2 (NHR status must be confirmed via AT). Do not apply standard rates; do not apply 20% flat rate without verification.
+
+---
+
+### Example 6 — ActivoBank / Moey (Coimbra, Translator)
+
+**Bank:** ActivoBank/Moey statement (digital bank)
+**Client:** Rita Alves, translator, Coimbra, first year trabalhador independente
+
+First-year considerations:
+- Regime simplificado applies (new entrant, estimated income < EUR 200,000)
+- If estimated annual income ≤ EUR 12,500: may apply for isenção de retenção na fonte
+- IRS Jovem: if Rita ≤ 35 years old, confirm year 1 eligibility for 100% exemption (capped EUR 28,737)
+
+Gross receipts (full year): EUR 22,000
+Coeficiente (translation = Categoria B services): 0.35
+Taxable: EUR 22,000 × 0.35 = EUR 7,700
+Less SS (first-year relief: 12 months free for new entrants, then normal): assume EUR 0 SS year 1
+Taxable for IRS: EUR 7,700
+
+IRS Jovem year 1 (100% exempt up to EUR 28,737): EUR 7,700 fully exempt
+**IRS: EUR 0**
+
+Note: First-year SS relief — new trabalhadores independentes are exempt from SS contributions for the first 12 months. Confirm AT/SS registration date.
+
+---
+
+## Section 5 — Tier 1 Rules (Apply Directly)
+
+**T1-PT-1 — Regime simplificado: coefficient, not actual expenses**
+Under regime simplificado, taxable income = gross receipts × coefficient. Individual expenses are NOT deductible (they are implicitly covered by the coefficient). Only SS contributions paid are separately deductible from the gross taxable base. Apply this mechanically — do not add expenses under simplificado.
+
+**T1-PT-2 — Retenção na fonte is a prepayment, not income reduction**
+The 25% withheld by clients is a tax prepayment credited against final IRS liability. It does not reduce gross Categoria B receipts. Always gross-up payments received net of retenção (divide by 0.75) to obtain gross income.
+
+**T1-PT-3 — SS contributions always deductible**
+SS contributions paid are deductible from the IRS taxable base under both regimes. Under regime simplificado: deduct from the coefficient-reduced taxable base. Under contabilidade organizada: deduct as an expense. Apply without escalating.
+
+**T1-PT-4 — IRS Jovem: confirm year number before applying**
+Never assume IRS Jovem applies. The taxpayer must be ≤ 35 years old AND must be able to confirm the year number (year 1 = first year of Categoria A or B income after completing education). Always request confirmation before applying any exemption.
+
+**T1-PT-5 — Mandatory contabilidade organizada at EUR 200,000**
+Gross receipts exceeding EUR 200,000 in the prior year trigger mandatory contabilidade organizada from the following year. Apply regime simplificado only when confirmed gross ≤ EUR 200,000 in prior year (or current year for new entrants).
+
+**T1-PT-6 — IRS payments and IVA are not IRS expenses**
+Pagamentos AT for IRS (pagamento por conta, saldo IRS) and IVA entregue are tax payments, not Categoria B expenses. Exclude all AT payment narrations from income computation.
+
+---
+
+## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
+
+| Code | Situation | Escalation Reason | Suggested Treatment |
+|---|---|---|---|
+| T2-PT-1 | NHR / IFICI regime | Complex foreign income exemptions and 20% flat rate — varies by income source and activity | Flag — do not compute without AT registration confirmation |
+| T2-PT-2 | Multiple income categories (A + B, or B + F) | Joint filing rules (englobamento) vs. separate taxation choices | Flag — taxpayer may choose to englobar or not for certain categories |
+| T2-PT-3 | Married couple filing (tributação conjunta) | Joint vs. separate filing produces different results — quociente conjugal | Present both options; do not default to one |
+| T2-PT-4 | Falso recibo verde (single client > 80%) | AT may reclassify income as Categoria A (employment); different tax treatment | Flag for legal review; do not reclassify unilaterally |
+| T2-PT-5 | Deduction for health, education, home expenses (Anexo H) | Personal deductions outside Categoria B — subject to AT e-fatura matching | Confirm e-fatura invoices are attributed to NIF; flag unclaimed deductions |
+| T2-PT-6 | Partial-year residency or non-resident | Different tax rates and treaty rules for non-residents | Flag — do not apply resident rates to non-residents |
+
+---
+
+## Section 7 — Excel Working Paper Template
+
+```
+PORTUGUESE IRS WORKING PAPER (CATEGORIA B — REGIME SIMPLIFICADO)
+Taxpayer: _______________  NIF: _______________  FY: 2025
+
+SECTION A — GROSS RECEIPTS (Categoria B)
+                                        EUR
+Total invoiced (recibos verdes gross)  ___________
+Gross-up of withheld amounts           ___________
+Online platform payouts (grossed up)   ___________
+Other Categoria B receipts             ___________
+TOTAL GROSS RECEIPTS                   ___________
+
+SECTION B — REGIME SIMPLIFICADO COEFFICIENT
+Service type: _______________
+Coefficient applied: _______________
+Taxable base (gross × coefficient)     ___________
+Less: SS contributions paid            (___________)
+IRS TAXABLE INCOME                     ___________
+
+SECTION C — IRS COMPUTATION (STANDARD BRACKETS)
+Tax at bracket rates                   ___________
+IRS Jovem exemption (if applicable)    (___________)
+IRS before credits                     ___________
+Less: retenções na fonte               (___________)
+Less: pagamentos por conta IRS         (___________)
+IRS BALANCE DUE / (REFUND)             ___________
+
+SECTION D — ADICIONAL DE SOLIDARIEDADE
+(Only if taxable income > EUR 80,000)  ___________
+
+SECTION E — SEGURANÇA SOCIAL
+Quarterly SS base: 70% × quarterly gross ÷ 3 ___________
+Annual SS due: monthly base × 21.4% × 12    ___________
+Less: SS already paid                        (___________)
+SS balance due                               ___________
+
+SECTION F — REVIEWER FLAGS
+[ ] Regime simplificado confirmed (gross ≤ EUR 200,000 prior year)?
+[ ] Coefficient correct for service type?
+[ ] All retenção certificates collected?
+[ ] SS payments verified against receipts
+[ ] IRS Jovem — year number confirmed?
+[ ] NHR/IFICI status confirmed (if applicable)?
+[ ] Falso recibo verde risk assessed (single client > 80%)?
+[ ] e-fatura personal deductions checked (Anexo H)?
 ```
 
 ---
 
-## Step 12: Test Suite
+## Section 8 — Bank Statement Reading Guide
 
-### Test 1 -- Standard freelancer, regime simplificado, services
-**Input:** Single, Art. 151 activity, gross Categoria B income EUR 40,000, SSC paid EUR 4,500, documented expenses EUR 7,000 (above 15% threshold of EUR 6,000), retenção na fonte paid EUR 9,200 (23% of EUR 40,000). No other income, no dependants.
-**Expected output:** Taxable Cat. B = EUR 40,000 x 75% = EUR 30,000. Less SSC EUR 4,500. Rendimento coletável = EUR 25,500. IRS: first EUR 22,306 at average rate 21.334% = EUR 4,759.45, excess EUR 3,194 at 32.00% = EUR 1,022.08. Total coleta = EUR 5,781.53. Less personal deductions (general EUR 600, general expenses EUR 250, health/education as applicable). Net tax approx EUR 4,931. Less retenção EUR 9,200. Refund approx EUR 4,269.
+### Millennium BCP
+- Export: CSV via "Consultas" → "Movimentos" → "Exportar"
+- Columns: `Data;Descrição;Débito;Crédito;Saldo`
+- Amount format: thousands separator = `.`, decimal = `,` (e.g., `3.750,00`)
+- Date format: DD/MM/YYYY
+- Credit narrations: `TRANSF DE [sender]`, `TRANSFERÊNCIA RECEBIDA`
+- Debit narrations: `TRANSF PARA [recipient]`, `COMISSÃO`, `SEGURANÇA SOCIAL`
 
-### Test 2 -- 15% expense threshold shortfall
-**Input:** Freelancer, services income EUR 30,000, documented expenses only EUR 2,000 (6.67%, below 15% = EUR 4,500).
-**Expected output:** Shortfall = EUR 4,500 - EUR 2,000 = EUR 2,500. Taxable = EUR 30,000 x 75% + EUR 2,500 = EUR 25,000. NOT the standard EUR 22,500.
+### Caixa Geral de Depósitos (CGD)
+- Export: PDF or CSV from e.caixa.pt
+- Format similar to Millennium; columns: `Data;Descrição;Movimento;Saldo`
+- Positive movement = credit; negative = debit
 
-### Test 3 -- Mixed services and goods income
-**Input:** IT consultant earns EUR 45,000 in consulting fees and EUR 10,000 from hardware sales.
-**Expected output:** Services: EUR 45,000 x 75% = EUR 33,750. Goods: EUR 10,000 x 15% = EUR 1,500. Total Cat. B taxable = EUR 35,250.
+### BPI (Banco BPI)
+- Export: CSV from BPINet
+- Columns: `Data movimento;Descrição;Valor;Saldo`
+- Positive Valor = credit; negative = debit
 
-### Test 4 -- Adicional de solidariedade
-**Input:** Single, taxable income EUR 300,000.
-**Expected output:** Standard IRS on EUR 300,000 per brackets. Adicional: 2.5% x (EUR 250,000 - EUR 80,000) = EUR 4,250, plus 5% x (EUR 300,000 - EUR 250,000) = EUR 2,500. Total adicional = EUR 6,750.
+### Santander Portugal
+- Export: CSV from NetBanco Santander
+- Columns: `Fecha;Concepto;Importe;Saldo` (note: Spanish headers due to parent company)
+- Amount: positive = credit; negative = debit; comma decimal
 
-### Test 5 -- IRS Jovem, 2nd year
-**Input:** Age 28, master's degree completed 2023, first professional income 2024. Filing for 2025 (2nd year). Cat. B income EUR 35,000.
-**Expected output:** IRS Jovem 2nd year: 75% exemption. Exempt income = 75% x EUR 35,000 = EUR 26,250 (under cap of EUR 28,737.50). Taxable Cat. B = EUR 35,000 - EUR 26,250 = EUR 8,750 (before simplificado coefficient is applied -- note: the exemption applies to the rendimento bruto or líquido depending on AT guidance). [T2] Flag for reviewer to confirm how IRS Jovem interacts with the simplificado coefficient.
+### Novo Banco
+- Export: CSV or Excel from Novo Banco Online
+- Columns: `Data;Descrição;Débito;Crédito;Saldo`
+- Standard Portuguese bank format
 
-### Test 6 -- Withholding exemption misunderstood
-**Input:** Freelancer earned EUR 13,000 in 2024 (prior year < EUR 14,500). Dispensed from retenção in 2025. Earns EUR 20,000 in 2025.
-**Expected output:** No retenção was withheld during 2025. Taxable Cat. B = EUR 20,000 x 75% = EUR 15,000 (assuming expenses threshold met). Full IRS liability is due at filing. No withholding credits to offset. Client owes the full computed tax amount.
+### ActivoBank / Moey (digital)
+- Export: CSV/PDF from app
+- Simple format; credit amounts in dedicated column
 
----
-
-## PROHIBITIONS
-
-- NEVER apply a single blended coefficient when a client has both services and goods income -- each type gets its own coefficient
-- NEVER treat dispensation from retenção na fonte as a tax exemption
-- NEVER ignore the 15% expense threshold under regime simplificado
-- NEVER advise on NHR regime without escalating to a specialist
-- NEVER advise on crypto taxation without escalating to a specialist
-- NEVER allow personal expenses under contabilidade organizada without proper business apportionment
-- NEVER compute IRS without knowing the filing status (single/married/joint/separate)
-- NEVER ignore the adicional de solidariedade for incomes above EUR 80,000
-- NEVER apply IRS Jovem without verifying age, degree, and year of first income
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to a licensed Contabilista Certificado for confirmation
+### MB Way / Multibanco
+- Not a bank statement — payments appear as narrations in primary bank statement
+- Look for: `MBWAY RECEBIDO`, `MULTIBANCO RECEBIMENTO`, `TPA [merchant]`
 
 ---
 
-## Disclaimer
+## Section 9 — Onboarding Fallback
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Contabilista Certificado or equivalent licensed practitioner in Portugal) before filing or acting upon.
+**Missing retenção certificates:**
+> "To compute your IRS accurately, I need the withholding certificates (declarações de retenção na fonte) from each client who withheld 25% from your payments. You can request these from your clients by January/February — companies are legally required to issue them. Alternatively, check Portal das Finanças → 'Consultar' → 'Retenções na Fonte' where AT may have the data directly."
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+**Service type unclear:**
+> "To apply the correct regime simplificado coefficient, I need to know the nature of your services. Are you selling goods (coefficient 0.15), providing general services (0.35), or do you work in a listed profession under Artigo 151º CIRS (also 0.35)? Please confirm so I can apply the correct taxable base."
+
+**IRS Jovem:**
+> "Based on your age, you may qualify for IRS Jovem. This exempts 100% of tax in years 1–3, 75% in years 4–6, 50% in years 7–9, and 25% in year 10. To apply it, I need to confirm: (1) that you are 35 years old or younger, and (2) the year number of your Portuguese income-earning career. Can you confirm when you started receiving Categoria A or B income in Portugal after completing your studies?"
+
+**SS contributions unknown:**
+> "Segurança Social contributions are deductible from your IRS taxable base and can significantly reduce your tax liability. Do you have your quarterly SS payment receipts? If not, I can estimate based on your declared gross receipts: your SS base is 70% of your quarterly gross divided by 3, taxed at 21.4%."
+
+---
+
+## Section 10 — Reference Material
+
+### Key Legislation
+- **CIRS (Código do IRS)** — primary income tax code; Art. 28 (Categoria B), Art. 31 (coeficientes), Art. 101 (retenção na fonte)
+- **Lei n.º 24-D/2022** — introduced IRS Jovem reforms
+- **Portaria 1011/2001** — Artigo 151º CIRS list of high-value professions
+
+### Filing Deadlines 2025 (FY 2024 return)
+| Deadline | Event |
+|---|---|
+| April 2025 | Modelo 3 filing window opens |
+| 30 June 2025 | Deadline for submission of Modelo 3 (IRS 2024) |
+| August 2025 | AT issues assessments; payments due within notice |
+| 31 August 2025 | Pagamento por conta — 1st advance payment for 2025 |
+| 30 November 2025 | Pagamento por conta — 2nd advance payment for 2025 |
+
+### Useful References
+- AT Portal das Finanças: portaldasfinancas.gov.pt
+- Segurança Social Direta: app.seg-social.pt
+- CIRS: dre.pt (Diário da República)
+- IRS Jovem confirmation: Portal das Finanças → "IRS Jovem"

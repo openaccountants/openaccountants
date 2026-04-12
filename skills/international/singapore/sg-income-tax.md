@@ -1,524 +1,525 @@
 ---
 name: sg-income-tax
-description: Use this skill whenever asked about Singapore income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay in Singapore", "Form B", "Form B1", "IRAS income tax", "trade income", "capital allowances Singapore", "personal reliefs", "tax residence 183 days", "Section 10(1)(a)", "CPF self-employed", "self-employed tax Singapore", or any question about filing or computing income tax for a Singapore sole proprietor or freelancer. Also trigger when preparing or reviewing a Form B/B1, computing trade income, or advising on personal reliefs and capital allowances. This skill covers progressive rates (0--24%), trade income computation, capital allowances (Section 19/19A), approved deductions, personal reliefs, tax residence rules, filing deadlines, and penalties. ALWAYS read this skill before touching any Singapore income tax work.
+description: >
+  Use this skill whenever asked about Singapore income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay in Singapore", "Form B", "Form B1", "IRAS income tax", "trade income", "capital allowances Singapore", "personal reliefs", "tax residence 183 days", "Section 10(1)(a)", "CPF self-employed", "self-employed tax Singapore", "myTax Portal", "DBS Bank statement", "OCBC income", "PayNow transfer", "Stripe Singapore", or any question about filing or computing income tax for a Singapore sole proprietor or freelancer. This skill covers progressive rates (0--24%), trade income computation, capital allowances (Section 19/19A), approved deductions, personal reliefs, CPF MediSave, tax residence rules, filing deadlines, and penalties. ALWAYS read this skill before touching any Singapore income tax work.
+version: 2.0
+jurisdiction: SG
+tax_year: 2025
+category: international
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# Singapore Income Tax -- Self-Employed Skill
+# Singapore Income Tax -- Self-Employed Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Singapore |
-| Jurisdiction Code | SG |
-| Primary Legislation | Income Tax Act 1947 (ITA) |
-| Supporting Legislation | Economic Expansion Incentives (Relief from Income Tax) Act; Income Tax (Approved Donations) Regulations |
-| Tax Authority | Inland Revenue Authority of Singapore (IRAS) |
-| Filing Portal | myTax Portal (mytax.iras.gov.sg) via Singpass |
+|---|---|
+| Country | Singapore |
+| Tax | Income Tax (progressive 0--24%) |
+| Currency | SGD only |
+| Tax year basis | Preceding year: YA 2026 = income earned in calendar year 2025 |
+| Primary legislation | Income Tax Act 1947 (ITA) |
+| Tax authority | Inland Revenue Authority of Singapore (IRAS) |
+| Filing portal | myTax Portal (mytax.iras.gov.sg) via Singpass |
+| Filing deadline | 18 April of the YA (e.g., 18 April 2026 for YA 2026) |
 | Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a Singapore-licensed tax practitioner or Accredited Tax Adviser |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Tax Year Coverage | Year of Assessment (YA) 2025 (income earned in calendar year 2024) and YA 2026 (income earned in 2025) |
-| Confidence Coverage | Tier 1: rate table application, personal relief amounts, capital allowance rates, filing deadlines, penalty rates. Tier 2: mixed-use expense apportionment, home office deductions, capital vs revenue distinction, NOR scheme (expired). Tier 3: international income, transfer pricing, partnership allocations, corporate structures, GST interaction for GST-registered persons. |
+| Validated by | Pending -- requires sign-off by an Accredited Tax Adviser (Singapore) |
+| Skill version | 2.0 |
 
----
-
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Accredited Tax Adviser must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before computing any income tax figure, you MUST know:
-
-1. **Tax residence status** [T1] -- Singapore tax resident (citizen/PR residing in Singapore, or physically present/employed for 183+ days in the calendar year) or non-resident. Determines which rate table applies.
-2. **Year of Assessment (YA)** [T1] -- Singapore taxes on a preceding year basis. YA 2026 = income earned in calendar year 2025.
-3. **Nature of self-employment** [T1] -- sole proprietor, freelancer, partner in a partnership, or commission agent.
-4. **Gross trade income** [T1] -- total revenue from trade, business, profession, or vocation (Section 10(1)(a)).
-5. **Business expenses** [T1/T2] -- nature and amount of each expense (T2 for mixed-use items).
-6. **Capital assets acquired in the year** [T1] -- type, cost, date first used in business.
-7. **Other income** [T1] -- employment income, rental income, interest, dividends (note: Singapore dividends are generally exempt under one-tier system).
-8. **Personal circumstances** [T1] -- age, marital status, number of children, CPF contributions, dependants.
-9. **GST registration status** [T1] -- GST-registered (turnover exceeds SGD 1 million or voluntarily registered) or not.
-
-**If tax residence status is unknown, STOP. Do not apply a rate table. Tax residence status is mandatory.**
-
----
-
-## Step 1: Determine Tax Residence [T1]
-
-**Legislation:** ITA, Section 2; IRAS guidelines
-
-### Tax Resident Criteria
-
-| Criterion | Detail |
-|-----------|--------|
-| Singapore citizen or PR | Residing in Singapore (except for temporary absences) |
-| Foreigner | Physically present or employed in Singapore for 183 days or more in the calendar year |
-| Continuous period straddling two years | If present for a continuous period of at least 183 days straddling two calendar years, resident for both years |
-| Foreigner working in Singapore for 3 consecutive years | Tax resident for all 3 years even if less than 183 days in the first/last year |
-
-### Non-Resident Treatment
-
-| Duration | Treatment |
-|----------|-----------|
-| 0 -- 60 days | Income exempt from tax (unless director, public entertainer, or specific exceptions) |
-| 61 -- 182 days | Flat 15% on employment income or resident rates, whichever is higher |
-| 183+ days | Tax resident -- progressive rates apply |
-
-**This skill covers TAX RESIDENTS only. Non-resident computations are [T3] -- escalate.**
-
----
-
-## Step 2: Progressive Tax Rate Table -- Resident Individuals [T1]
-
-**Legislation:** ITA, Section 43(1) and Third Schedule
-
-### YA 2025 and YA 2026 Rates (Income Earned in 2024/2025)
+### Progressive Rate Table -- YA 2026 (Income Earned 2025) [T1]
 
 | Chargeable Income (SGD) | Rate | Gross Tax Payable (Cumulative) |
-|------------------------|------|-------------------------------|
+|---|---|---|
 | First 20,000 | 0% | 0 |
-| Next 10,000 (20,001 -- 30,000) | 2% | 200 |
-| Next 10,000 (30,001 -- 40,000) | 3.5% | 550 |
-| Next 40,000 (40,001 -- 80,000) | 7% | 3,350 |
-| Next 40,000 (80,001 -- 120,000) | 11.5% | 7,950 |
-| Next 40,000 (120,001 -- 160,000) | 15% | 13,950 |
-| Next 40,000 (160,001 -- 200,000) | 18% | 21,150 |
-| Next 40,000 (200,001 -- 240,000) | 19% | 28,750 |
-| Next 40,000 (240,001 -- 280,000) | 19.5% | 36,550 |
-| Next 40,000 (280,001 -- 320,000) | 20% | 44,550 |
-| In excess of 320,000 | 22% | -- |
+| Next 10,000 (20,001--30,000) | 2% | 200 |
+| Next 10,000 (30,001--40,000) | 3.5% | 550 |
+| Next 40,000 (40,001--80,000) | 7% | 3,350 |
+| Next 40,000 (80,001--120,000) | 11.5% | 7,950 |
+| Next 40,000 (120,001--160,000) | 15% | 13,950 |
+| Next 40,000 (160,001--200,000) | 18% | 21,150 |
+| Next 40,000 (200,001--240,000) | 19% | 28,750 |
+| Next 40,000 (240,001--280,000) | 19.5% | 36,550 |
+| Next 40,000 (280,001--320,000) | 20% | 44,550 |
+| Next 180,000 (320,001--500,000) | 22% | 84,150 |
+| Next 500,000 (500,001--1,000,000) | 23% | 199,150 |
+| Above 1,000,000 | 24% | -- |
 
-### YA 2025 Personal Income Tax Rebate [T1]
+### Key Thresholds [T1]
 
-| Item | Detail |
-|------|--------|
-| Rebate | 60% of tax payable |
-| Cap | SGD 200 |
-| Applies to | YA 2025 only (income earned in 2024) |
+| Item | Amount (SGD) |
+|---|---|
+| Personal relief cap | 80,000 per YA |
+| GST registration threshold | 1,000,000 taxable turnover |
+| Section 19A(10A) low-value asset cap | 30,000 per YA (individual assets < 5,000 each) |
+| Must-file threshold | Taxable income > 22,000 or self-employed with net trade income |
+| CPF MediSave (self-employed) | Mandatory based on net trade income and age |
 
-**From YA 2024 onwards, a new top marginal rate of 24% applies to chargeable income above SGD 1,000,000:**
+### Conservative Defaults [T1]
 
-| Chargeable Income (SGD) | Rate |
-|------------------------|------|
-| 500,001 -- 1,000,000 | 23% |
-| Above 1,000,000 | 24% |
-
-**NEVER compute tax figures directly -- pass chargeable income to the deterministic engine to apply the rate table.**
-
----
-
-## Step 3: Trade Income Computation -- Section 10(1)(a) [T1]
-
-**Legislation:** ITA, Section 10(1)(a), Sections 14--15
-
-### Computation Structure
-
-| Step | Description | How to Populate |
-|------|-------------|-----------------|
-| A | Gross revenue / turnover | Total invoiced/received from trade, business, profession, or vocation |
-| B | Less: Allowable business expenses | Expenses wholly and exclusively incurred in the production of income (Section 14) |
-| C | Add: Balancing charges | Proceeds on disposal of assets exceeding tax written-down value |
-| D | Less: Capital allowances | Section 19/19A depreciation (Step 4) |
-| E | Adjusted trade income | A minus B plus C minus D |
-| F | Less: Approved donations | Donations to approved IPCs (250% deduction for cash donations) |
-| G | Less: Current year losses | Losses from other trade sources (if any) |
-| H | Assessable income | E minus F minus G |
-| I | Less: Personal reliefs | Reliefs from Step 5 |
-| J | Chargeable income | H minus I |
-| K | Gross tax | Apply rate table from Step 2 to J |
-| L | Less: Tax rebates | YA 2025: 60% rebate capped at SGD 200 |
-| M | Net tax payable | K minus L |
+| Ambiguity | Default |
+|---|---|
+| Tax residence unknown | STOP -- do not compute |
+| GST status unknown | Non-GST registered (report gross including any GST component) |
+| Vehicle type unknown | Private car (S-plate) -- NO capital allowances |
+| Business vs capital expenditure unclear | Capital (no deduction until confirmed as revenue) |
+| Home office apportionment unknown | 0% deduction until confirmed |
+| Personal relief amounts unknown | Apply only confirmed reliefs |
 
 ---
 
-## Step 4: Capital Allowances [T1]
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-**Legislation:** ITA, Sections 19, 19A, 19B
+### Required Inputs
 
-### 4a. Section 19 -- Standard Write-Off [T1]
+**Minimum viable:** Bank statement for the full calendar year (January--December) in CSV, PDF, or pasted text, plus confirmation of tax residence status and whether GST-registered.
 
-| Item | Detail |
-|------|--------|
-| Basis | Cost of plant and machinery used for the purpose of trade |
-| Write-off period | Over the prescribed working life of the asset (6, 12, or 16 years) |
-| Initial allowance | 20% of cost in the year of acquisition (one-time) |
-| Annual allowance | Remaining 80% spread equally over the prescribed working life |
+**Recommended:** All client invoices, CPF contribution statements (for MediSave), SRS contribution statements, life insurance and course fee receipts (for reliefs).
 
-### Prescribed Working Life
+**Ideal:** Capital asset register, prior year NOA (Notice of Assessment), Form IR8A (if also employed), GST returns (if GST-registered).
 
-| Asset Category | Working Life | Annual Allowance (after IA) |
-|---------------|-------------|---------------------------|
-| Computers | 6 years | 13.33% of cost per year |
-| Motor vehicles | 6 years | 13.33% of cost per year |
-| Office equipment | 6 years | 13.33% of cost per year |
-| Office furniture | 6 years | 13.33% of cost per year |
-| Renovation/refurbishment | 3 years (Section 14Q) | 33.33% per year (capped at SGD 300,000 per 3-year period) |
+### Refusal Catalogue
 
-### 4b. Section 19A -- Accelerated Write-Off [T1]
+**R-SG-1 -- Non-residents.** "Non-resident self-employment income from Singapore is taxable but at different rates. Non-resident computation is outside this skill scope. Escalate."
 
-| Option | Write-Off |
-|--------|-----------|
-| One-year write-off | 100% in the YA relating to the basis period in which the asset was acquired |
-| Three-year write-off | 75% in Year 1, 25% in Year 2 (for YA 2024 expenditure); or 33.33% per year over 3 years |
+**R-SG-2 -- Companies (Pte Ltd, Ltd).** "Corporate income tax (CIT at 17%) and corporate filing are out of scope. This skill covers individual self-employed persons only."
 
-- Election under Section 19A is irrevocable once made for a particular YA
-- Applies to all qualifying assets acquired in that basis period -- cannot cherry-pick
+**R-SG-3 -- Partnerships.** "Partnership income allocation determination is outside this skill scope. Escalate."
 
-### 4c. Low-Value Assets -- Section 19A(10A) [T1]
+**R-SG-4 -- Capital gains / property disposals.** "Gains from property that are revenue in nature require specialist review. Escalate."
 
-| Rule | Detail |
-|------|--------|
-| Qualifying cost | Below SGD 5,000 per asset |
-| Write-off | 100% in the year of acquisition |
-| Annual cap | SGD 30,000 total per YA for all low-value assets |
-| Excess | Assets exceeding the SGD 30,000 cap are written off under Section 19 or 19A |
-
-### 4d. Balancing Adjustments [T1/T2]
-
-| Scenario | Treatment |
-|----------|-----------|
-| Sale proceeds > tax written-down value | Balancing charge (taxable -- added back to income) |
-| Sale proceeds < tax written-down value | Balancing allowance (deductible) |
-| [T2] | Flag for reviewer if disposal is to a related party -- market value rules may apply |
+**R-SG-5 -- GST computation.** "GST registration, return filing, and input tax claims are outside this skill scope."
 
 ---
 
-## Step 5: Personal Reliefs [T1]
+## Section 3 -- Transaction Pattern Library
 
-**Legislation:** ITA, Sections 36--40
+This is the deterministic pre-classifier. When a bank statement line matches a pattern, apply the treatment directly. If no pattern matches, fall through to Tier 1 rules in Section 5.
 
-### Relief Cap [T1]
+### 3.1 Income Patterns (Credits)
 
-**Total personal reliefs are capped at SGD 80,000 per YA.**
+| Pattern | Tax Line | Treatment | Notes |
+|---|---|---|---|
+| FAST [client name] / FAST CREDIT | Trade income (Section 10(1)(a)) | Gross revenue | Local fast payment from business client |
+| PayNow [sender name] / PAYNOW CREDIT | Trade income | Revenue | PayNow (linked to NRIC/UEN) -- electronic payment |
+| GIRO CREDIT [client] | Trade income | Revenue | GIRO standing instruction payment from client |
+| TT FROM [client] / TELEGRAPHIC TRANSFER | Trade income | Revenue | Overseas client wire transfer |
+| STRIPE PAYOUT SG / STRIPE TRANSFER | Trade income | Revenue | Stripe Singapore payout -- net of Stripe fees |
+| WISE TRANSFER IN / WISE CREDIT | Trade income | Revenue | Wise (formerly TransferWise) international payout |
+| PAYPAL SG TRANSFER / PAYPAL CREDIT | Trade income | Revenue | PayPal business payout |
+| SHOPEE PAY SETTLEMENT / SHOPEE PAYOUT | Trade income | Revenue | Shopee e-commerce seller settlement |
+| CAROUSELL PAYOUT / CAROUSELL SETTLEMENT | Trade income | Revenue | Carousell business seller payout |
+| GRAB FOR BUSINESS / GRABPAY SETTLEMENT | Trade income | Revenue | GrabPay business payout |
+| CHEQUE DEPOSIT / CHQ DEP [ref] | Trade income | Revenue | Client cheque |
+| SALARY CREDIT [employer] | Employment income | NOT trade income | Separate head; Form IR8A / Form B1 |
+| INTEREST CREDIT / INT EARNED [bank] | Interest income | NOT trade income | Bank interest -- may be exempt for individuals |
+| DIVIDEND FROM [company] | Dividend income | NOT trade income | Singapore one-tier dividends are generally exempt |
+| INCOME TAX REFUND / IRAS REFUND | EXCLUDE | Not income | Tax refund |
+| LOAN DRAWDOWN / LOAN DISBURSEMENT | EXCLUDE | Not income | Loan proceeds |
 
-### Relief Table (YA 2025/2026)
+### 3.2 Expense Patterns (Debits)
 
-| Relief | Amount (SGD) | Conditions |
-|--------|-------------|------------|
-| Earned income relief (below age 55) | Lower of actual earned income or 1,000 | Automatically applied |
-| Earned income relief (age 55--59) | Lower of actual earned income or 6,000 | Automatically applied |
-| Earned income relief (age 60+) | Lower of actual earned income or 8,000 | Automatically applied |
-| Spouse/handicapped spouse relief | 2,000 / 5,500 | Spouse income not exceeding SGD 4,000 in the year; married/maintained/lived with taxpayer |
-| Qualifying child relief (QCR) | 4,000 per child | Child under 16, or in full-time education; child's income not exceeding SGD 8,000 |
-| Handicapped child relief | 7,500 per child | Instead of QCR |
-| Working mother's child relief (WMCR) | 15% of earned income for 1st child, 20% for 2nd, 25% for 3rd and subsequent | Only for working mothers; married, divorced, or widowed |
-| QCR + WMCR combined cap | 50,000 per child | Cannot exceed SGD 50,000 per child |
-| Parent/handicapped parent relief | 9,000 / 14,000 | Parent resident in Singapore, maintained by taxpayer, parent income not exceeding SGD 4,000 |
-| Grandparent caregiver relief | 3,000 | For working mothers; grandparent/grandparent-in-law cares for child |
-| CPF relief (employee/self-employed) | Mandatory CPF contributions | Up to the CPF contribution cap (SGD 6,300/month or SGD 37,740/year for employees in 2025) |
-| CPF cash top-up relief | Up to 8,000 (own) + 8,000 (family) | Cash top-ups to CPF Special/Retirement/MediSave accounts |
-| SRS relief (Supplementary Retirement Scheme) | Up to 15,300 (citizens/PRs) or 35,700 (foreigners) | Contributions to SRS account |
-| Life insurance relief | Lower of premiums paid or SGD 5,000 | Only if CPF contributions are less than SGD 5,000; rare for self-employed |
-| Course fees relief | Up to 5,500 | Fees for approved courses for self, to gain skills relevant to employment/business |
-| NSman relief (self) | 3,000 / 1,500 (key appointment / non-key) | For NSmen who performed NS activities |
-| Donations to approved IPCs | 250% of donation amount | Approved institutions of public character; deducted from assessable income, not as a personal relief |
+| Pattern | Expense Category | Treatment | Notes |
+|---|---|---|---|
+| OFFICE RENT [landlord] / COMMERCIAL LEASE | Rent | Fully deductible | Dedicated business premises |
+| SERVICED OFFICE [WeWork/JustCo/The Work Project] | Rent | Fully deductible | Hot desks / co-working fully deductible |
+| SP SERVICES / SP GROUP UTILITIES | Utilities | Business portion deductible | Home office: apportion |
+| SINGTEL BROADBAND / STARHUB HOME / M1 FIBRE | Communications | Business portion deductible | Mixed use: apportion |
+| SINGTEL MOBILE / STARHUB MOBILE / M1 MOBILE | Communications | Business portion deductible | Mixed use: apportion |
+| GRAB [ride for business] / COMFORT TAXI | Travel | Deductible if business purpose | Keep receipts and log |
+| SINGAPORE AIRLINES / SCOOT / JETSTAR | Travel | Deductible if business travel | Keep itinerary and business purpose |
+| MRT / SBS TRANSIT / EZ-LINK | Travel | Deductible if business | Commuting to/from home is NOT deductible |
+| GOOGLE ADS / META / LINKEDIN | Advertising | Fully deductible | |
+| AMAZON.SG [supplies] / CHALLENGER [office] | Office supplies | Fully deductible | Business purchases |
+| ADOBE / MICROSOFT 365 / NOTION / SLACK | Software | Fully deductible (subscription) | Subscriptions expense in year; owned software may be capital |
+| CPFB [CPF BOARD] MEDISAVE | CPF (personal relief) | NOT business expense | MediSave is a personal relief (CPF relief) |
+| AIA / PRUDENTIAL / GREAT EASTERN / NTUC INCOME | NOT business expense | Personal insurance | Life insurance = personal relief (limited) |
+| IRAS INCOME TAX / IRAS NOA | EXCLUDE | Tax payment | Not deductible |
+| IRAS GST PAYMENT | EXCLUDE | Indirect tax payment | Not income tax |
+| BANK CHARGES / ADMIN FEE [DBS/OCBC/UOB] | Bank charges | Fully deductible | Business account only |
+| STRIPE FEE / PAYPAL FEE / WISE FEE | Transaction fees | Fully deductible | Payment processing costs |
+| HIRE PURCHASE / VEHICLE LOAN [bank] | Capital repayment | NOT deductible | Principal repayment; interest portion may be deductible |
+| PERSONAL WITHDRAWAL / OWN TRANSFER | EXCLUDE | Drawings | Not business expense |
 
-### CPF for Self-Employed Persons [T1]
+### 3.3 Capital Allowance Qualifying Assets
 
-| Item | Detail |
-|------|--------|
-| Mandatory contribution | MediSave contributions only (based on net trade income) |
-| Voluntary contribution | Can make voluntary CPF contributions to Ordinary/Special accounts |
-| MediSave contribution rates | Tiered based on age and net trade income -- consult IRAS/CPF tables |
-| Tax deduction | Mandatory MediSave contributions are deductible as a personal relief |
-| [T2] | Flag if client's MediSave contributions are unclear -- verify with CPF statement |
-
----
-
-## Step 6: Approved Deductions -- Business Expenses [T1/T2]
-
-**Legislation:** ITA, Sections 14--15
-
-### The Test [T1]
-
-An expense is deductible under Section 14 only if it is wholly and exclusively incurred in the production of income. If an expense is incurred partly for business and partly for private purposes, only the business portion is deductible.
-
-### Deductible Expenses
-
-| Expense | Tier | Treatment |
-|---------|------|-----------|
-| Rent for business premises | T1 | Fully deductible |
-| Professional indemnity insurance | T1 | Fully deductible |
-| Accounting / tax agent fees | T1 | Fully deductible |
-| Office supplies / stationery | T1 | Fully deductible |
-| Software subscriptions | T1 | Fully deductible (if not capitalised) |
-| Marketing / advertising | T1 | Fully deductible |
-| Bank charges (business account) | T1 | Fully deductible |
-| Staff costs (salaries, CPF contributions) | T1 | Fully deductible |
-| Transport / travel (business purpose) | T1 | Fully deductible |
-| Telephone / internet (business portion) | T2 | Apportion if mixed use |
-| Business entertainment | T1 | Deductible if incurred for income production; keep records of purpose, persons, amounts |
-| Bad debts (trade debts written off) | T2 | Deductible if previously included in income and genuinely irrecoverable |
-| Motor vehicle expenses | T2 | See motor vehicle rules below |
-| Home office expenses | T2 | See home office rules below |
-
-### NOT Deductible (Section 15) [T1]
-
-| Expense | Reason |
-|---------|--------|
-| Domestic or private expenses | Section 15(1)(a) |
-| Capital expenditure (unless through capital allowances) | Section 15(1)(c) |
-| Income tax itself | Section 15(1)(d) |
-| Any sum recoverable under insurance or indemnity | Section 15(1)(e) |
-| Fines and penalties for law violations | Not incurred in production of income |
-| Provisions and reserves (unrealised losses) | Not actually incurred |
-| Drawings / personal withdrawals | Not an expense |
-| Private motor vehicle depreciation (S-plated cars for individuals) | Private cars are not deductible |
-
-### Home Office Rules [T2]
-
-- IRAS does not have a blanket home office deduction scheme for self-employed
-- Expenses such as additional electricity, internet (business portion) may be claimed if the home is used as a place of business
-- Must apportion reasonably between business and private use
-- [T2] Flag for reviewer: confirm apportionment basis and documentation
-
-### Motor Vehicle Rules [T2]
-
-| Vehicle Type | Treatment |
-|-------------|-----------|
-| Commercial vehicle (goods vehicle, van) | Running costs deductible; capital allowances claimable |
-| Private car (S-plated) | Running costs for business use may be claimed (petrol, parking, ERP); capital allowances NOT claimable for private cars |
-| Motor vehicle lease/rental | Deductible if used for business |
-| [T2] | Flag for reviewer: confirm business vs private use percentage and vehicle classification |
+| Asset Purchased | Section 19A Option | Notes |
+|---|---|---|
+| Computer / laptop [Apple/Lenovo/Dell/HP] | One-year write-off (100%) | Below SGD 5,000: Section 19A(10A) |
+| Office phone / tablet | One-year write-off | Below SGD 5,000: Section 19A(10A) |
+| Office furniture / desk [IKEA/Harvey Norman/Gain City] | 3-year write-off or standard | 6-year standard useful life |
+| Camera / video equipment (business) | One-year or 3-year | If revenue-earning asset |
+| Private car (S-plate) | NO capital allowances | Running costs for business use may be claimed |
+| Commercial van / lorry | Standard Section 19 | Capital allowances claimable |
 
 ---
 
-## Step 7: Not Ordinarily Resident (NOR) Scheme [T1]
+## Section 4 -- Worked Examples
 
-**Legislation:** ITA; IRAS administrative concession
+### Example 1 -- PayNow Business Receipt
 
-**The NOR scheme has been abolished.** The scheme was phased out after YA 2020 for new applicants. Existing NOR taxpayers were allowed to retain the status until YA 2024. From YA 2025 onwards, the NOR scheme is no longer available.
+**Input line (DBS Bank statement):**
+`15 Mar 2025 | PayNow Credit ALPHA DESIGN PTE LTD | +8,500.00 | Balance 24,310.50`
 
-| Rule | Detail |
-|------|--------|
-| New applications | NOT accepted from YA 2021 onwards |
-| Existing NOR status | Expired after YA 2024 |
-| Employer overseas pension contributions | Fully taxable from YA 2025 (no more partial exemption) |
-| Impact | Former NOR taxpayers are now taxed as regular tax residents |
+**Reasoning:**
+PayNow receipt from a business client for design services. This is trade income under Section 10(1)(a). If the taxpayer is GST-registered (above SGD 1M threshold), the SGD 8,500 may include 9% GST. If GST-registered: gross revenue = SGD 8,500/1.09 = SGD 7,798.17 (trade income) + SGD 701.83 (GST liability). If not GST-registered: full SGD 8,500 is trade income.
 
-**Do not apply NOR concessions for YA 2025 or later. If a client asks about NOR, confirm it is expired.**
+**Classification:** Trade income SGD 8,500 (or SGD 7,798.17 net if GST-registered).
+
+### Example 2 -- Stripe Payout (Net of Stripe Fees)
+
+**Input line (OCBC Bank statement):**
+`22 Apr 2025 | STRIPE PAYOUT SG | +4,850.00 | Available Balance 31,200.00`
+
+**Reasoning:**
+Stripe processes payments and pays out net of its fees. If Stripe collected SGD 5,000 from clients and deducted SGD 150 in fees, the payout is SGD 4,850. The gross trade income is SGD 5,000; the Stripe fee of SGD 150 is a deductible business expense. Match to Stripe dashboard for exact gross and fee amounts.
+
+**Classification:** Gross trade income SGD 5,000; Stripe fees SGD 150 deductible.
+
+### Example 3 -- CPF MediSave Payment
+
+**Input line (UOB Bank statement):**
+`01 May 2025 | CPFB MEDISAVE CONTRIBUTION | -3,600.00 | Balance 15,400.00`
+
+**Reasoning:**
+Self-employed person's mandatory MediSave contribution to CPF Board. This is NOT a business expense. It is deductible as a CPF relief (personal relief) under the personal reliefs section. The exact amount depends on net trade income and age (rates range 4%--10.5%). Claim as CPF contribution relief, subject to the overall SGD 80,000 personal relief cap.
+
+**Classification:** EXCLUDE from trade expenses. Record as CPF contribution relief (personal relief).
+
+### Example 4 -- WeWork Office Subscription
+
+**Input line (DBS Bank statement):**
+`01 Jun 2025 | WEWORK SINGAPORE PTE LTD | -1,200.00 | Balance 28,750.00`
+
+**Reasoning:**
+WeWork hot desk / dedicated desk monthly fee. This is office rent -- a deductible business expense under Section 14(1) ITA (wholly and exclusively incurred in the production of income). No apportionment needed for a dedicated business workspace.
+
+**Classification:** Rent / office costs SGD 1,200. Fully deductible.
+
+### Example 5 -- Laptop Purchase
+
+**Input line (OCBC Bank statement):**
+`15 Jul 2025 | APPLE SINGAPORE PTE LTD | -2,899.00 | Balance 19,200.00`
+
+**Reasoning:**
+Apple MacBook purchase SGD 2,899. Capital asset under Section 19A(10A): assets costing below SGD 5,000 individually can be written off 100% in the year of acquisition. Total low-value assets in the year must not exceed SGD 30,000. Since SGD 2,899 < SGD 5,000 and within the cap, 100% capital allowance applies.
+
+**Classification:** Capital allowance SGD 2,899 (100% write-off under Section 19A(10A)).
+
+### Example 6 -- Private Car Expense
+
+**Input line (UOB Bank statement):**
+`10 Aug 2025 | SHELL SELECT QUEENSTOWN | -120.00 | Balance 22,100.00`
+
+**Reasoning:**
+Petrol purchased at Shell station SGD 120. The taxpayer drives a private car (S-plate). Capital allowances on private cars are NOT claimable. Running costs (petrol, parking, ERP) attributable to documented business trips may be deducted. Requires mileage log or trip records. Without documentation, default is 0% deduction.
+
+**Classification:** Motor vehicle expense -- PENDING. Default: 0%. Flag for reviewer to confirm business trip documentation.
 
 ---
 
-## Step 8: Filing Deadlines [T1]
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
-**Legislation:** ITA; IRAS administrative guidelines
+### 5.1 Trade Income Computation
 
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| Form B / Form B1 (individual income tax return) | 18 April of the YA (e.g., 18 April 2025 for YA 2025) |
-| Paper filing | 15 April of the YA |
-| Filing opens | 1 March of the YA |
-| Payment of tax | Within 1 month of Notice of Assessment (NOA) |
-| GIRO instalment plan | 12 monthly interest-free instalments if on GIRO; apply by specified date |
+**Legislation:** ITA Section 10(1)(a)
 
-### Who Must File [T1]
+```
+Gross revenue from trade/business/profession/vocation
+Less: Allowable business expenses (Section 14)
+Add: Balancing charges (if assets disposed)
+Less: Capital allowances (Section 19/19A)
+= Adjusted trade income
+Less: Approved donations (250% deduction)
+= Assessable income
+Less: Personal reliefs (Section 36-40, capped at SGD 80,000)
+= Chargeable income
+Apply rate table
+Less: Tax rebates
+= Net tax payable
+```
 
-| Scenario | Must File? |
-|----------|-----------|
-| Self-employed with net trade income | YES -- File Form B |
-| Annual income exceeds SGD 22,000 | YES |
-| Annual income SGD 22,000 or below and no other income | May not need to file, but IRAS may still issue a filing requirement |
-| Received a letter/SMS/notification from IRAS to file | YES -- must file regardless of income level |
-| Non-resident with Singapore-source income | YES -- File Form M |
+### 5.2 Capital Allowances
 
-### Form B vs Form B1 [T1]
+**Legislation:** ITA Sections 19, 19A, 19A(10A)
 
-| Form | Who Files |
-|------|-----------|
-| Form B | Self-employed individuals (sole proprietors, partners, commission agents) |
-| Form B1 | Employed individuals with no self-employment income |
+| Method | Details |
+|---|---|
+| Section 19 (standard) | Initial allowance 20% + annual allowance over prescribed working life (6, 12, or 16 years) |
+| Section 19A (one-year) | 100% in year of acquisition (irrevocable; applies to ALL assets acquired in that YA) |
+| Section 19A (three-year) | 33.33% per year over 3 years |
+| Section 19A(10A) (low-value) | 100% for assets < SGD 5,000 each; cap SGD 30,000/year aggregate |
 
----
+**Private cars (S-plate):** NO capital allowances.
 
-## Step 9: Penalties [T1]
+### 5.3 Allowable Business Expenses
 
-**Legislation:** ITA, Sections 93, 94, 95, 96
+**Legislation:** ITA Section 14 -- "wholly and exclusively incurred in the production of income"
+
+Fully deductible if the test is met: rent for business premises, professional indemnity insurance, accounting/tax fees, office supplies, software subscriptions, marketing, bank charges, travel for business, business entertainment (with documentation).
+
+NOT deductible (Section 15): domestic/private expenses, capital expenditure (unless through CA), income tax itself, fines/penalties, drawings.
+
+### 5.4 Personal Reliefs
+
+**Legislation:** ITA Sections 36--40; cap SGD 80,000 per YA
+
+| Relief | Amount (SGD) |
+|---|---|
+| Earned income relief (below 55) | Lower of actual earned income or 1,000 |
+| Earned income relief (55--59) | Lower of actual earned income or 6,000 |
+| Earned income relief (60+) | Lower of actual earned income or 8,000 |
+| CPF relief (self-employed) | Mandatory MediSave contributions |
+| CPF cash top-up | Up to 8,000 (own) + 8,000 (family) |
+| SRS relief | Up to 15,300 (citizens/PRs) or 35,700 (foreigners) |
+| Spouse relief | 2,000 (spouse income ≤ SGD 4,000) |
+| Qualifying child relief | 4,000 per child |
+| Handicapped child relief | 7,500 per child |
+| Parent relief | 9,000 / 14,000 (handicapped) |
+| Life insurance | Up to 5,000 (only if CPF contributions < 5,000) |
+| Course fees | Up to 5,500 |
+| Approved donations | 250% of donation (deducted from assessable income, NOT subject to SGD 80,000 cap) |
+
+### 5.5 Filing Deadlines
+
+| Item | Deadline |
+|---|---|
+| Form B (self-employed) -- e-filing | 18 April of the YA |
+| Form B -- paper filing | 15 April of the YA |
+| Tax payment | Within 1 month of NOA |
+| GIRO instalment | 12 monthly instalments (apply by specified date) |
+
+### 5.6 Penalties
 
 | Offence | Penalty |
-|---------|---------|
-| Late filing | Fine of SGD 200 -- SGD 1,000 per offence |
-| Non-filing (estimated assessment issued) | IRAS issues estimated NOA based on available info; 5% penalty on tax owed |
-| Failure to file after court summons | Fine up to SGD 1,000; in default, imprisonment up to 6 months |
-| Incorrect return (without reasonable excuse) | Penalty up to 200% of tax undercharged |
-| Wilful tax evasion (Section 96) | Fine up to SGD 50,000 and/or imprisonment up to 3 years; penalty up to 400% of tax undercharged |
-| Late payment of tax | 5% penalty imposed on tax remaining unpaid after 30 days from NOA due date; additional 1% per month thereafter (capped at 12%) |
-
-**WARNING:** IRAS issues estimated assessments (estimated NOAs) for non-filers. These estimates are often higher than actual tax liability. The taxpayer must still file a return to revise the estimate or face paying the estimated amount.
+|---|---|
+| Late filing | SGD 200--1,000 per offence |
+| Non-filing (estimated assessment) | Estimated NOA issued; 5% penalty on tax owed |
+| Incorrect return | Up to 200% of tax undercharged |
+| Wilful tax evasion | Up to SGD 50,000 and/or 3 years imprisonment; 400% penalty |
+| Late payment | 5% on unpaid tax after 30 days; +1%/month thereafter (max 12%) |
 
 ---
 
-## Step 10: Record Keeping [T1]
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-**Legislation:** ITA, Section 67
+### 6.1 Home Office Deduction
 
-| Requirement | Detail |
-|-------------|--------|
-| Minimum retention period | 5 years from the relevant YA |
-| What to keep | All sales invoices, purchase invoices, bank statements, receipts, contracts, capital asset register, CPF statements |
-| Format | Paper or digital (IRAS accepts digital records) |
-| Business records | Revenue records, expense receipts, bank statements, loan agreements, asset purchase records |
-| Failure to keep records | Fine up to SGD 1,000 and/or imprisonment up to 6 months |
+IRAS does not have a blanket home office scheme. However, expenses attributable to the business use of a home (additional electricity, dedicated internet line, pro-rata rent if a room is exclusively for business) may be claimed if the home is an actual place of business. Apportionment basis must be reasonable (floor area ratio or time-based).
 
----
+**Flag for reviewer:** Confirm apportionment basis, documentation, and whether IRAS has been notified that business is conducted from home.
 
-## Step 11: Edge Case Registry
+### 6.2 Private Car Business Use
 
-### EC1 -- GST included in revenue [T1]
-**Situation:** GST-registered sole proprietor invoices SGD 10,700 (SGD 10,000 + SGD 700 GST at 9%). Client reports SGD 10,700 as gross trade income.
-**Resolution:** Gross trade income must be SGD 10,000 only. GST collected is a liability to IRAS, not income. For non-GST-registered persons, the full amount received IS revenue (no GST to exclude).
+Running costs (petrol, parking, ERP, road tax) for documented business trips are potentially deductible. Capital allowances are NOT available for private (S-plate) cars. A mileage log or contemporaneous trip record is required.
 
-### EC2 -- Private car expenses [T1]
-**Situation:** Self-employed person uses a private S-plated car for business. Claims depreciation and all running costs.
-**Resolution:** Capital allowances on private cars are NOT deductible. Running costs (petrol, parking, ERP) for documented business trips are deductible. Insurance and road tax are private expenses unless the car is a commercial vehicle. [T2] Flag for reviewer to confirm usage split.
+**Flag for reviewer:** Confirm vehicle type, business-use percentage, and documentation method.
 
-### EC3 -- Capital vs revenue expenditure [T2]
-**Situation:** Self-employed person spends SGD 8,000 renovating office premises. Claims as a revenue expense.
-**Resolution:** Renovation costs are capital in nature. However, Section 14Q allows deduction of qualifying renovation/refurbishment costs over 3 years, capped at SGD 300,000 per 3-year period. [T2] Flag for reviewer to confirm the expenditure qualifies under Section 14Q.
+### 6.3 Capital vs Revenue Expenditure
 
-### EC4 -- Low-value asset cap exceeded [T1]
-**Situation:** Self-employed person buys 10 laptops at SGD 4,000 each = SGD 40,000 total. Claims 100% write-off under Section 19A(10A).
-**Resolution:** Each laptop is below SGD 5,000, so each qualifies individually. However, the annual cap is SGD 30,000. First SGD 30,000 (7.5 laptops) is written off immediately. Remaining SGD 10,000 must be written off under Section 19 or 19A over the prescribed working life.
+IRAS distinguishes between revenue expenses (deductible in year incurred) and capital expenditure (deductible only through capital allowances). Renovation/refurbishment costs are generally capital but Section 14Q allows a 3-year deduction (capped at SGD 300,000 per 3-year period).
 
-### EC5 -- Non-trade income [T1]
-**Situation:** Self-employed person earns SGD 5,000 interest from a bank fixed deposit. Includes it as trade income.
-**Resolution:** Interest from bank deposits is NOT trade income. It is taxable under Section 10(1)(d) (interest income) but reported separately. Note: interest from approved banks in Singapore may be exempt from tax for individuals.
+### 6.4 CPF MediSave Contributions
 
-### EC6 -- Spouse relief income threshold [T1]
-**Situation:** Taxpayer claims spouse relief. Spouse earns SGD 5,000 per year.
-**Resolution:** Spouse relief requires spouse's income to be SGD 4,000 or below. Since spouse earns SGD 5,000, no spouse relief is available. The threshold is on the spouse's total income, not just employment income.
+Mandatory MediSave contribution rates for self-employed persons vary by age and net trade income. The contribution is between 4% and 10.5% of net trade income, subject to a cap.
 
-### EC7 -- Personal relief cap breached [T1]
-**Situation:** Taxpayer claims total personal reliefs of SGD 95,000 (earned income, CPF, spouse, children, donations, course fees).
-**Resolution:** Total reliefs capped at SGD 80,000. Note: approved donations (250% deduction) are NOT subject to the SGD 80,000 personal relief cap -- they are deducted from assessable income separately.
+**Flag for reviewer:** Calculate exact contribution using IRAS/CPF tables for client's age group.
 
-### EC8 -- Non-resident, short-term self-employment [T3]
-**Situation:** Foreigner performs self-employed work in Singapore for 120 days.
-**Resolution:** [T3] Escalate. Non-resident self-employment income is taxed differently from employment income. The 60-day exemption applies to employment income, not self-employment income. Trade income derived from Singapore is generally taxable regardless of duration. Refer to Accredited Tax Adviser.
+### 6.5 Working Mother's Child Relief (WMCR)
 
-### EC9 -- Section 19A irrevocable election [T1]
-**Situation:** Self-employed person elects Section 19A one-year write-off for YA 2026, then realises they would have preferred 3-year write-off.
-**Resolution:** The election is irrevocable once made. It applies to ALL qualifying plant and machinery acquired in that basis period. Cannot reverse or selectively apply. File correctly the first time.
-
-### EC10 -- Donations to approved IPCs [T1]
-**Situation:** Self-employed person donates SGD 5,000 cash to an approved IPC and wants to claim the deduction.
-**Resolution:** Deduction = SGD 5,000 x 250% = SGD 12,500. This is deducted from assessable income, NOT as a personal relief. It is therefore NOT subject to the SGD 80,000 personal relief cap. Donation must be to an approved Institution of a Public Character and must be supported by receipts.
-
-### EC11 -- CPF MediSave for self-employed [T2]
-**Situation:** Self-employed person with net trade income of SGD 60,000 asks how much MediSave to contribute.
-**Resolution:** Self-employed persons are required to contribute to MediSave based on their net trade income and age. The contribution rate ranges from 4% to 10.5% depending on age group. For net trade income of SGD 60,000, the contribution is based on tiered rates. [T2] Flag for reviewer to calculate exact contribution using IRAS/CPF MediSave contribution tables for the specific age group.
+WMCR is available only to working mothers (citizens or PRs). The relief is 15%/20%/25% of earned income for 1st/2nd/3rd+ children. Combined QCR + WMCR capped at SGD 50,000 per child.
 
 ---
 
-## Step 12: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel Working Paper Template
 
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Accredited Tax Adviser or licensed practitioner must confirm before filing.
-```
+SINGAPORE INCOME TAX WORKING PAPER
+Taxpayer: _______________  NRIC/FIN: ___________
+Year of Assessment: YA 2026 (income earned in 2025)
+GST registered: Yes / No [circle one]
 
-When Claude identifies a [T3] situation:
+A. GROSS TRADE REVENUE
+  A1. Total receipts from clients             ___________
+  A2. Less: GST collected (if GST-registered) ___________
+  A3. Net trade revenue                       ___________
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to Accredited Tax Adviser. Document gap.
+B. ALLOWABLE BUSINESS EXPENSES
+  B1. Rent / co-working space                 ___________
+  B2. Utilities (business %)                  ___________
+  B3. Communications (business %)             ___________
+  B4. Travel (business)                       ___________
+  B5. Advertising / marketing                 ___________
+  B6. Professional fees (accounting, legal)   ___________
+  B7. Software / subscriptions                ___________
+  B8. Office supplies                         ___________
+  B9. Business entertainment                  ___________
+  B10. Bank / transaction fees                ___________
+  B11. Other allowable expenses               ___________
+  B12. Total business expenses                ___________
+
+C. CAPITAL ALLOWANCES
+  C1. Section 19A(10A) low-value assets       ___________
+  C2. Section 19A one-year / three-year       ___________
+  C3. Section 19 standard annual allowance    ___________
+  C4. Total capital allowances                ___________
+
+D. ADJUSTED TRADE INCOME (A3 - B12 - C4)      ___________
+
+E. APPROVED DONATIONS (x 250%)               ___________
+
+F. ASSESSABLE INCOME (D - E)                  ___________
+
+G. PERSONAL RELIEFS
+  G1. Earned income relief                    ___________
+  G2. CPF MediSave contribution               ___________
+  G3. SRS contribution                        ___________
+  G4. Spouse relief                           ___________
+  G5. Child reliefs (QCR / WMCR)             ___________
+  G6. Parent relief                           ___________
+  G7. Course fees relief                      ___________
+  G8. Other reliefs                           ___________
+  G9. Total reliefs (cap: SGD 80,000)         ___________
+
+H. CHARGEABLE INCOME (F - G9)                 ___________
+
+I. GROSS TAX (apply rate table)               ___________
+
+J. LESS: TAX REBATES                          ___________
+
+K. NET TAX PAYABLE (I - J)                    ___________
+
+REVIEWER FLAGS:
+  [ ] Tax residence confirmed (183 days / citizen / PR)?
+  [ ] GST status confirmed?
+  [ ] Capital vs revenue expenditure reviewed?
+  [ ] Private car: no capital allowances?
+  [ ] Personal relief cap SGD 80,000 checked?
+  [ ] Donations deducted from assessable income (not personal reliefs)?
 ```
 
 ---
 
-## Step 13: Test Suite
+## Section 8 -- Bank Statement Reading Guide
 
-### Test 1 -- Standard self-employed, mid-range income
-**Input:** Singapore citizen, age 35, single, net trade income SGD 80,000, no other income, earned income relief SGD 1,000, CPF MediSave contribution SGD 3,600, no other reliefs, YA 2026.
-**Expected output:** Assessable income = SGD 80,000. Personal reliefs = SGD 1,000 + SGD 3,600 = SGD 4,600. Chargeable income = SGD 75,400. Tax: SGD 0 (first 20,000) + SGD 200 (next 10,000 at 2%) + SGD 350 (next 10,000 at 3.5%) + SGD 2,478 (next 35,400 at 7%) = SGD 3,028. No YA 2026 rebate assumed. Net tax payable = SGD 3,028.
+### Singapore Bank Statement Formats
 
-### Test 2 -- Higher income self-employed
-**Input:** Singapore PR, age 45, married, net trade income SGD 200,000, spouse income SGD 3,000, 2 qualifying children, earned income relief SGD 1,000, CPF MediSave SGD 5,000, spouse relief SGD 2,000, QCR SGD 8,000 (2 x SGD 4,000), YA 2026.
-**Expected output:** Assessable income = SGD 200,000. Personal reliefs = SGD 1,000 + SGD 5,000 + SGD 2,000 + SGD 8,000 = SGD 16,000. Chargeable income = SGD 184,000. Tax: SGD 0 + SGD 200 + SGD 350 + SGD 2,800 + SGD 4,600 + SGD 6,000 + SGD 4,320 (SGD 24,000 at 18%) = SGD 18,270. Net tax payable = SGD 18,270.
+| Bank | Format | Key Fields |
+|---|---|---|
+| DBS / POSB | CSV / PDF | Date, Reference, Debit, Credit, Balance |
+| OCBC | CSV | Transaction Date, Description, Withdrawals (SGD), Deposits (SGD), Balance (SGD) |
+| UOB | CSV / PDF | Trans. Date, Description, Debit, Credit, Available Balance |
+| Standard Chartered SG | CSV | Date, Description, Debit, Credit, Running Balance |
+| Citibank SG | CSV | Date, Description, Debit Amount, Credit Amount |
+| Wise SG | CSV | Date, Description, Amount, Currency, Running Balance |
 
-### Test 3 -- Low income, below taxable threshold
-**Input:** Singapore citizen, age 28, single, net trade income SGD 18,000, earned income relief SGD 1,000, CPF MediSave SGD 1,000, no other reliefs, YA 2026.
-**Expected output:** Assessable income = SGD 18,000. Personal reliefs = SGD 2,000. Chargeable income = SGD 16,000. Tax: SGD 0 (below SGD 20,000 threshold). Net tax payable = SGD 0.
+### Key Singapore Banking Narrations
 
-### Test 4 -- Capital allowances, Section 19A one-year write-off
-**Input:** Self-employed person buys computer equipment for SGD 12,000. Elects Section 19A one-year write-off.
-**Expected output:** Capital allowance in Year 1 = SGD 12,000 (100% write-off). No further allowances in subsequent years. Deducted from trade income.
+| Narration | Meaning | Classification Hint |
+|---|---|---|
+| FAST / FAST CREDIT [name] | Funds transfer via FAST | Potential income from client |
+| PayNow Credit [name/UEN] | PayNow receipt | Business income |
+| GIRO Credit / GIRO Debit | Standing instruction | Regular income or recurring expense |
+| IBG / INTERBANK GIRO | Interbank GIRO | Income or expense transfer |
+| TT FROM [bank/name] | Telegraphic transfer in | Overseas client income |
+| PAYNOW QR | PayNow QR code payment | Business income |
+| ATM WITHDRAWAL | Cash withdrawal | Personal -- investigate |
+| INTEREST CREDIT | Bank interest | Other income (may be exempt) |
+| IRAS GIRO | IRAS tax payment | Tax payment -- exclude |
+| CPFB | CPF Board payment | MediSave -- personal relief |
 
-### Test 5 -- Low-value asset within cap
-**Input:** Self-employed person buys 5 items at SGD 4,500 each = SGD 22,500 total. All below SGD 5,000 individually. No other qualifying assets.
-**Expected output:** Total SGD 22,500 is below the SGD 30,000 annual cap. All 5 items fully written off under Section 19A(10A) in the year of acquisition.
+---
 
-### Test 6 -- Personal relief cap
-**Input:** Taxpayer claims: earned income SGD 8,000, CPF SGD 37,740, SRS SGD 15,300, course fees SGD 5,500, parent relief SGD 18,000, spouse SGD 2,000 = total SGD 86,540.
-**Expected output:** Total reliefs capped at SGD 80,000. Excess SGD 6,540 is disallowed. Chargeable income = assessable income minus SGD 80,000.
+## Section 9 -- Onboarding Fallback
 
-### Test 7 -- GST excluded from revenue
-**Input:** GST-registered sole proprietor. Total receipts from clients SGD 107,000 (inclusive of 9% GST on all sales).
-**Expected output:** Gross trade income = SGD 107,000 / 1.09 = SGD 98,165 (rounded). GST collected (SGD 8,835) is excluded -- it is a GST liability, not income.
+If the client provides a bank statement but cannot answer onboarding questions immediately:
 
-### Test 8 -- Approved donation deduction
-**Input:** Self-employed person with assessable income SGD 60,000. Donates SGD 2,000 cash to approved IPC.
-**Expected output:** Donation deduction = SGD 2,000 x 250% = SGD 5,000. Deducted from assessable income (not from personal reliefs). Adjusted assessable income = SGD 55,000. Then apply personal reliefs to get chargeable income.
+1. Classify all FAST/PayNow/GIRO credits from non-personal sources as potential trade income
+2. Classify all CPFB debits as MediSave (personal relief -- not business expense)
+3. Apply conservative defaults: non-GST registered, no capital allowances for vehicles, 0% home office
+4. Flag all large purchases > SGD 5,000 as potential capital expenditure requiring review
+5. Generate working paper with PENDING flags
+
+Present these questions:
+
+```
+ONBOARDING QUESTIONS -- SINGAPORE INCOME TAX
+1. Are you a Singapore citizen, PR, or foreigner (and if foreigner, how many days in Singapore)?
+2. Are you GST-registered?
+3. Are you filing as a sole proprietor (Form B) or employee (Form B1)?
+4. What is your main business / profession?
+5. Do you have an office outside your home, or do you work from home?
+6. Do you use a vehicle for work? If so, is it a private car (S-plate) or commercial vehicle?
+7. CPF: what MediSave contributions did you make this year?
+8. SRS: did you make Supplementary Retirement Scheme contributions?
+9. Do you have qualifying children or dependent parents?
+10. Any approved donations to IPCs this year?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Section |
+|---|---|
+| Trade income | ITA Section 10(1)(a) |
+| Allowable expenses | ITA Section 14 |
+| Prohibited deductions | ITA Section 15 |
+| Capital allowances (standard) | ITA Section 19 |
+| Capital allowances (accelerated) | ITA Section 19A |
+| Low-value asset write-off | ITA Section 19A(10A) |
+| Renovation/refurbishment | ITA Section 14Q |
+| Personal reliefs | ITA Sections 36--40 |
+| Record keeping | ITA Section 67 |
+
+### Known Gaps / Out of Scope
+
+- Non-resident income tax
+- GST computation and returns
+- Corporate income tax (Pte Ltd, etc.)
+- Partnership income allocation
+- Property gains / capital gains
+- NOR scheme (abolished after YA 2024)
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; Singapore bank formats; local platform patterns (PayNow, Stripe SG, Shopee); worked examples |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] Preceding year basis confirmed? (YA 2026 = 2025 income)
+- [ ] GST excluded from trade income for GST-registered taxpayers?
+- [ ] Personal relief cap SGD 80,000 applied?
+- [ ] Approved donations deducted from assessable income (not personal reliefs)?
+- [ ] Capital allowances for private cars NOT claimed?
+- [ ] Section 19A election irrevocability noted?
 
 ---
 
 ## PROHIBITIONS
 
-- NEVER apply resident tax rates without confirming tax residence status (183-day rule or citizen/PR status)
-- NEVER compute tax figures directly -- pass chargeable income to the deterministic engine to apply the rate table
-- NEVER allow private car capital allowances for S-plated vehicles
-- NEVER allow income tax itself as a deduction
-- NEVER allow fines or penalties for law violations as a deduction
+- NEVER apply resident tax rates without confirming tax residence (183-day rule, citizen, or PR status)
+- NEVER include GST collected on sales as trade income for GST-registered taxpayers
+- NEVER allow capital allowances on private S-plate cars
+- NEVER allow income tax itself as a deductible expense
 - NEVER allow personal or domestic expenses as business deductions
-- NEVER include GST collected on sales in gross trade income for GST-registered persons
-- NEVER allow personal reliefs to exceed the SGD 80,000 cap
-- NEVER apply NOR scheme concessions for YA 2025 or later -- the scheme is expired
-- NEVER confuse Year of Assessment with the basis period (YA 2026 = income earned in 2025)
+- NEVER allow personal reliefs to exceed SGD 80,000 (note: approved donations are NOT subject to this cap)
+- NEVER apply NOR scheme concessions -- scheme is expired after YA 2024
+- NEVER confuse Year of Assessment with basis period (YA 2026 ≠ 2026 income)
 - NEVER present tax calculations as definitive -- always label as estimated and direct client to their Accredited Tax Adviser for confirmation
-- NEVER advise on non-resident tax computations -- escalate to T3
-
----
-
-## Contribution Notes (For Other Jurisdictions)
-
-If adapting this skill for another country:
-
-1. Replace ITA references with the equivalent national income tax legislation.
-2. Replace the progressive rate table with your jurisdiction's equivalent brackets and rates.
-3. Replace Section 10(1)(a) trade income rules with your jurisdiction's equivalent.
-4. Replace Section 19/19A capital allowance rules with your jurisdiction's depreciation schedule.
-5. Replace personal reliefs with your jurisdiction's equivalent relief/credit system.
-6. Replace filing deadlines and penalty rates with your jurisdiction's current figures.
-7. Replace CPF references with your jurisdiction's equivalent social security/pension system.
-8. Have a licensed practitioner in your jurisdiction validate every T1 rule before publishing.
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an Accredited Tax Adviser, Chartered Accountant, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an Accredited Tax Adviser, Chartered Accountant, or equivalent licensed practitioner in Singapore) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

@@ -1,561 +1,535 @@
 ---
 name: nl-income-tax
-description: Use this skill whenever asked about Netherlands income tax for self-employed individuals (zzp'ers). Trigger on phrases like "how much tax do I pay in the Netherlands", "aangifte inkomstenbelasting", "income tax return Netherlands", "zelfstandigenaftrek", "startersaftrek", "MKB-winstvrijstelling", "urencriterium", "Box 1 income", "Box 3 wealth tax", "heffingskortingen", "arbeidskorting", "KIA investment deduction", "self-employed tax Netherlands", or any question about filing or computing income tax for a Dutch zzp'er or eenmanszaak. Also trigger when preparing or reviewing an aangifte IB, computing deductible expenses, or advising on estimated tax payments. This skill covers Box 1 progressive rates, entrepreneur deductions, capital allowances, tax credits, Box 3 savings/investment income, filing deadlines, and penalties. ALWAYS read this skill before touching any Dutch income tax work.
+description: >
+  Use this skill whenever asked about Netherlands income tax for self-employed individuals (zzp'ers, eenmanszaak). Trigger on phrases like "aangifte inkomstenbelasting", "income tax return Netherlands", "zelfstandigenaftrek", "startersaftrek", "MKB-winstvrijstelling", "urencriterium", "Box 1 income", "Box 3 wealth tax", "heffingskortingen", "arbeidskorting", "KIA investment deduction", "self-employed tax Netherlands", "winst uit onderneming", or any question about filing or computing income tax for a Dutch zzp'er or eenmanszaak. Also trigger when preparing or reviewing an aangifte IB, computing deductible expenses, or advising on voorlopige aanslagen. This skill covers Box 1 progressive rates, entrepreneur deductions, capital allowances, tax credits, Box 3 savings/investment income, filing deadlines, and penalties. ALWAYS read this skill before touching any Dutch income tax work.
+version: 2.0
 ---
 
-# Netherlands Income Tax -- Self-Employed (ZZP) Skill
+# Netherlands Income Tax — Zzp'er / Eenmanszaak (IB) v2.0
 
----
+## Section 1 — Quick Reference
 
-## Skill Metadata
-
-| Field | Value |
-|-------|-------|
-| Jurisdiction | Netherlands |
-| Jurisdiction Code | NL |
-| Primary Legislation | Wet inkomstenbelasting 2001 (Wet IB 2001) |
-| Supporting Legislation | Algemene wet inzake rijksbelastingen (AWR); Wet op de loonbelasting 1964; Invorderingswet 1990 |
-| Tax Authority | Belastingdienst (Netherlands Tax Administration) |
-| Filing Portal | Mijn Belastingdienst (mijn.belastingdienst.nl) |
-| Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a Dutch-licensed belastingadviseur or AA/RA accountant |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate table application, entrepreneur deduction amounts, MKB-winstvrijstelling percentage, capital allowance rates, filing deadlines, penalty rates. Tier 2: mixed-use expense apportionment, home office deductions, urencriterium documentation, KIA qualifying asset determination. Tier 3: international income, 30% ruling interaction, emigration/immigration year, Box 2 substantial interest, complex Box 3 situations. |
-
----
-
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Licensed practitioner must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before computing any income tax figure, you MUST know:
-
-1. **Business structure** [T1] -- eenmanszaak (sole proprietorship), VOF partner, or maatschap partner. This skill covers eenmanszaak only.
-2. **Fiscal partner status** [T1] -- single or with fiscal partner (fiscaal partner). Determines allocation of Box 3 assets and certain deductions.
-3. **Age / AOW status** [T1] -- whether the taxpayer has reached AOW (state pension) age. Affects the first-bracket rate.
-4. **Gross business revenue (omzet)** [T1] -- total invoiced/received in the year.
-5. **Business expenses (zakelijke kosten)** [T1/T2] -- nature and amount of each expense (T2 for mixed-use items).
-6. **Hours worked in the business** [T1] -- for urencriterium (1,225-hour threshold).
-7. **Years in business** [T1] -- for startersaftrek eligibility (first 3 of the past 5 years).
-8. **Business investments in the year** [T1] -- type, cost, date of each capital asset acquired.
-9. **Other income** [T1] -- employment income (loon), Box 2 income, Box 3 assets.
-10. **BTW registration type** [T1] -- regular BTW or kleineondernemersregeling (KOR, small business VAT exemption).
-
-**If AOW status is unknown, assume pre-AOW age (higher first-bracket rate). Flag for confirmation.**
-
----
-
-## Step 1: Determine Applicable Rate Table -- Box 1 [T1]
-
-**Legislation:** Wet IB 2001, Article 2.10
-
-### Box 1 Rates 2025 (Pre-AOW Age)
-
-| Taxable Income (EUR) | Rate | Composition |
-|---------------------|------|-------------|
-| 0 -- 38,441 | 35.82% | ~8.17% income tax + 27.65% national insurance premiums (AOW/Anw/Wlz) |
-| 38,442 -- 76,817 | 37.48% | Income tax only |
-| 76,818+ | 49.50% | Income tax only |
-
-### Box 1 Rates 2025 (AOW Age Reached)
+### Box 1 Rates 2025 (Inkomen uit werk en woning)
 
 | Taxable Income (EUR) | Rate | Notes |
-|---------------------|------|-------|
-| 0 -- 38,441 | 17.92% | No AOW premium component |
-| 38,442 -- 76,817 | 37.48% | Same as pre-AOW |
-| 76,818+ | 49.50% | Same as pre-AOW |
+|---|---|---|
+| 0 – 38,441 | 35.82% | Includes national insurance (volksverzekeringen) for those below AOW age |
+| 38,442 – 76,817 | 37.48% | Above AOW threshold component |
+| Over 76,817 | 49.50% | Top rate |
 
-**The Netherlands does not have a 0% band. Tax applies from the first euro of taxable income. Relief comes through heffingskortingen (tax credits) in Step 7.**
+**AOW-gerechtigden (state pension age, born before 1 January 1958):** First bracket rate is lower (~19.17%) because they do not pay AOW premium. Confirm DOB before applying rates.
 
-**The national insurance premiums (27.65%) in the first bracket consist of: AOW 17.90%, Anw 0.10%, Wlz 9.65%.**
+**Formula:** Tax = cumulative tax for lower bracket + (income − lower bracket threshold) × marginal rate
 
----
+### Entrepreneur Deductions (Ondernemersaftrek)
 
-## Step 2: Computation Structure -- Aangifte Inkomstenbelasting [T1]
+| Deduction | Amount 2025 | Condition |
+|---|---|---|
+| Zelfstandigenaftrek | EUR 2,470 | Must meet urencriterium (≥ 1,225 hours/year in business) |
+| Startersaftrek | EUR 2,123 (additional) | First 3 years of business; combined max EUR 4,593 for year 1–3 |
+| MKB-winstvrijstelling | 13.31% of profit after other deductions | No urencriterium required — applies to ALL entrepreneurs |
 
-**Legislation:** Wet IB 2001
+**Order of computation:**
+1. Winst (profit = revenue − deductible business expenses)
+2. Less: Zelfstandigenaftrek (if urencriterium met)
+3. Less: Startersaftrek (if eligible)
+4. Less: MKB-winstvrijstelling (13.31% of result after above deductions)
+5. = Belastbaar inkomen Box 1 (from business)
 
-| Step | Description | How to Populate |
-|------|-------------|-----------------|
-| A | Gross business revenue (omzet) | Total invoiced/received in the year |
-| B | Less: Allowable business expenses | Expenses passing the zakelijkheidstoets (business purpose test) |
-| C | Gross profit (brutowinst) | A minus B |
-| D | Less: Zelfstandigenaftrek | EUR 2,470 (2025) if urencriterium met |
-| E | Less: Startersaftrek | EUR 2,123 if eligible (first 3 of past 5 years) |
-| F | Profit after entrepreneur deductions | C minus D minus E |
-| G | Less: MKB-winstvrijstelling | 12.7% of Step F |
-| H | Net business profit (winst uit onderneming) | F minus G |
-| I | Plus: Other Box 1 income | Employment income, eigen woning forfait, etc. |
-| J | Less: Persoonsgebonden aftrek | Personal deductions (alimentatie, specific healthcare costs, etc.) |
-| K | Taxable income Box 1 (belastbaar inkomen) | H plus I minus J |
-| L | Gross tax (Box 1) | Apply rate table from Step 1 to K |
-| M | Less: Heffingskortingen | Tax credits (algemene heffingskorting, arbeidskorting, etc.) |
-| N | Net tax payable Box 1 | L minus M (minimum EUR 0) |
+### Heffingskortingen (Tax Credits — Reduce Tax Payable)
 
-**NEVER compute Step L tax figures directly -- pass taxable income to the deterministic engine to apply the rate table.**
+| Credit | Amount 2025 | Notes |
+|---|---|---|
+| Algemene heffingskorting | Up to EUR 3,068 (phases out above EUR 24,813) | General tax credit; reduces to EUR 0 at ~EUR 76,817 |
+| Arbeidskorting | Up to EUR 5,174 (phases out above EUR 43,071) | Employment/work credit; phases out at higher incomes |
+| Inkomensafhankelijke combinatiekorting | Up to EUR 2,950 | For working parents with child < 12; urencriterium must be met |
 
----
+Credits reduce the tax computed on Box 1 income. They cannot create a refund below EUR 0 (except toeslagen via Belastingdienst system).
 
-## Step 3: Entrepreneur Deductions (Ondernemersaftrek) [T1]
+### Zelfstandigenaftrek Phase-Out
 
-**Legislation:** Wet IB 2001, Articles 3.74 -- 3.79
+The zelfstandigenaftrek is being phased down annually: EUR 2,470 in 2025, converging toward EUR 900 by 2027. Always use the current-year amount.
 
-### 3a. Urencriterium (Hours Criterion) [T1/T2]
+### Conservative Defaults
 
-| Requirement | Detail |
-|-------------|--------|
-| Minimum hours | 1,225 hours per calendar year |
-| What counts | Time spent on business activities: client work, administration, acquisition, travel for business |
-| What does NOT count | General training not specific to the business, personal activities |
-| Documentation | Must be able to demonstrate hours if audited -- time registration recommended |
-| [T2] | Flag for reviewer: confirm hours documentation exists and is credible |
+| Situation | Default Assumption |
+|---|---|
+| Urencriterium status unclear | Do NOT apply zelfstandigenaftrek — flag for client to confirm hour log |
+| Startersaftrek eligibility unclear | Do NOT apply — flag; client must confirm first year of business |
+| Home office deduction claimed | Do NOT deduct home costs — Dutch rules restrict home office for zzp'ers in own home |
+| Mixed personal/business expense | Non-deductible — flag for reviewer |
+| Payment received: unclear if business income | Taxable — flag for reviewer |
+| Box 3 assets unknown | Exclude — cannot estimate; flag for client |
+| Foreign income present | Flag — possible bilateral treaty implications |
 
-**The urencriterium is a gateway requirement. Without it, no zelfstandigenaftrek, no startersaftrek.**
+### Red Flag Thresholds
 
-### 3b. Zelfstandigenaftrek (Self-Employed Deduction) [T1]
-
-| Year | Amount |
-|------|--------|
-| 2024 | EUR 3,750 |
-| **2025** | **EUR 2,470** |
-| 2026 | EUR 1,200 |
-| 2027 | EUR 900 |
-
-- Deducted from gross profit before MKB-winstvrijstelling
-- Can create or increase a loss (verrekenbaar verlies)
-- Requires urencriterium to be met
-
-### 3c. Startersaftrek (Starter Deduction) [T1]
-
-| Item | Detail |
-|------|--------|
-| Amount | EUR 2,123 (2025) |
-| Eligibility | In at least 1 of the 5 preceding calendar years you were NOT an entrepreneur for income tax purposes |
-| Maximum claims | 3 times in total within a 5-year period |
-| Requires | Urencriterium met |
-
-- Applied on top of the zelfstandigenaftrek
-- Combined deduction for a qualifying starter in 2025: EUR 2,470 + EUR 2,123 = EUR 4,593
-
-### 3d. MKB-Winstvrijstelling (SME Profit Exemption) [T1]
-
-| Year | Percentage |
-|------|-----------|
-| 2024 | 13.31% |
-| **2025** | **12.7%** |
-| 2026 | 12.7% |
-
-- Applied to profit AFTER subtracting zelfstandigenaftrek and startersaftrek
-- Available to ALL entrepreneurs (ondernemers) -- no urencriterium required
-- Also applies to losses (reduces the deductible loss by 12.7%)
+| Flag | Threshold |
+|---|---|
+| Hours log not maintained | Urencriterium unprovable — zelfstandigenaftrek at risk |
+| Revenue > EUR 20,000 | Check VAT (BTW) registration and KOR (kleineondernemersregeling) |
+| Single client > 70% of revenue | Belastingdienst "hidden employment" risk — flag |
+| Large asset purchase > EUR 450 | KIA (kleinschaligheidsinvesteringsaftrek) may apply |
+| Cash payments received | Document carefully; above EUR 3,000 unusual for zzp |
 
 ---
 
-## Step 4: Fiscale Oudedagsreserve (FOR) [T1]
+## Section 2 — Required Inputs + Refusal Catalogue
 
-**Legislation:** Wet IB 2001, Article 3.67 (repealed)
+### Required Inputs
 
-**The FOR was abolished as of 1 January 2023.** No new additions to the FOR can be made from 2023 onwards.
+Before computing Dutch income tax, collect:
 
-| Rule | Detail |
-|------|--------|
-| New additions | NOT permitted from 2023 onward |
-| Existing FOR balance | Remains on the balance sheet until settled |
-| Settlement | Taxed as Box 1 income when converted to an annuity or upon cessation of business |
-| [T2] | If client has an existing FOR balance, flag for reviewer to advise on settlement strategy |
+1. **Total revenue** (omzet) — all amounts invoiced and received, ex-BTW
+2. **Itemised business expenses** — with bank or receipt evidence
+3. **Hour log** (urenstaat) — to verify urencriterium (≥ 1,225 hours)
+4. **Business start date** — to determine startersaftrek eligibility
+5. **Date of birth** — to apply correct first-bracket rate (AOW threshold)
+6. **Bank statements** — 12 months for the fiscal year
+7. **Voorlopige aanslag payments made** — advance tax payments
+8. **Box 3 assets** (savings, investments, second property) as at 1 January of the tax year
+9. **Partner income** — for heffingskortingen calculation (partner's credits affect allocation)
+10. **KIA-eligible investments** — assets purchased (> EUR 450, not cars, land, goodwill)
 
----
+### Refusal Catalogue
 
-## Step 5: Kleinschaligheidsinvesteringsaftrek (KIA) [T1]
-
-**Legislation:** Wet IB 2001, Article 3.41
-
-### KIA Table 2025
-
-| Total Investment (EUR) | Deduction |
-|----------------------|-----------|
-| 0 -- 2,900 | No KIA |
-| 2,901 -- 70,602 | 28% of total investment amount |
-| 70,603 -- 130,744 | EUR 19,769 (fixed) |
-| 130,745 -- 392,230 | EUR 19,769 minus 7.56% of amount above EUR 130,744 |
-| 392,231+ | No KIA |
-
-### KIA Rules [T1]
-
-- Only business assets (bedrijfsmiddelen) with an individual purchase price of at least EUR 450 (excl. BTW) qualify
-- Land, residential property, passenger cars, and certain other assets are excluded
-- The KIA is a separate deduction from capital allowances (afschrijving) -- you claim both
-- Total investment amount = sum of all qualifying investments in the calendar year
-- [T2] Flag for reviewer if asset classification is unclear (e.g., is it a business asset or personal?)
+| Code | Situation | Action |
+|---|---|---|
+| R-NL-1 | No hour log available | Stop — cannot confirm urencriterium; flag zelfstandigenaftrek as at risk |
+| R-NL-2 | Client is BV director (DGA), not zzp | Stop — this skill covers eenmanszaak/zzp only; BV/DGA tax is different |
+| R-NL-3 | Box 3 assets > EUR 57,000 per person | Box 3 return required; do not estimate Box 3 tax without asset breakdown |
+| R-NL-4 | Foreign income or foreign employer | Flag — double-tax treaty analysis required; stop income tax computation |
+| R-NL-5 | Revenue reported ex-BTW vs. incl-BTW unclear | Clarify — income tax is computed on amounts ex-BTW; do not mix |
 
 ---
 
-## Step 6: Capital Allowances (Afschrijving) [T1]
+## Section 3 — Transaction Pattern Library
 
-**Legislation:** Wet IB 2001, Article 3.30
+### Income Patterns
 
-### Standard Depreciation
+| # | Narration Pattern | Tax Line | Notes |
+|---|---|---|---|
+| I-01 | `BIJSCHRIJVING [client name]` / `OVERBOEKING VAN [client]` | Business revenue (omzet) — Box 1 | Standard SEPA credit from client |
+| I-02 | `CREDITERING [client]` / `INCASSO CREDIT` | Business revenue — Box 1 | iDEAL/Incasso credit from client |
+| I-03 | `STRIPE PAYMENTS EUROPE` / `STRIPE PAYOUT` | Business revenue — gross-up | Stripe net payout; gross-up to pre-fee amount; fee deductible |
+| I-04 | `PAYPAL TRANSFER` / `PAYPAL PAYOUT NL` | Business revenue — gross-up | PayPal net; fee deductible |
+| I-05 | `MOLLIE PAYOUT` | Business revenue — gross-up | Mollie (Dutch payment provider) settlement; fee deductible |
+| I-06 | `ADYEN SETTLEMENT` | Business revenue — gross-up | Adyen merchant payout; fee deductible |
+| I-07 | `SUMUP PAYOUT` / `ZETTLE PAYOUT` | Business revenue — card income | Card terminal settlement; gross-up |
+| I-08 | `RENTE` / `RENTE VERGOEDING` | Interest income — Box 1 (if business account) or Box 3 | Business account interest → Box 1; personal → Box 3 |
+| I-09 | `TERUGGAAF BELASTINGDIENST` / `BELASTINGTERUGGAAF` | NOT income — tax refund | Tax refund is not taxable income |
+| I-10 | `BORG TERUG` / `BORGSOM TERUGBETAALD` | Non-taxable deposit return | If documented as security deposit return |
+| I-11 | `FACTUURBETALING [client ref]` | Business revenue — Box 1 | Payment referencing invoice number |
+| I-12 | `TIKKIE ONTVANGEN` / `TIKKIE BETALING` | Revenue (if business) / personal (if private) | Flag if large amount — confirm business vs. personal |
 
-| Asset Type | Minimum Useful Life | Maximum Annual Rate |
-|-----------|---------------------|---------------------|
-| Computer hardware | Typically 3 years | 33.3% |
-| Computer software | Typically 3 years | 33.3% |
-| Office equipment | Typically 5 years | 20% |
-| Furniture and fittings | Typically 5 years | 20% |
-| Motor vehicles | Typically 5 years | 20% |
-| Machinery | Typically 5--10 years | 10--20% |
+### Expense Patterns
 
-### Residual Value Rule [T1]
-
-- Movable assets: depreciate to a residual value of at least EUR 1 (in practice, often to the expected resale value)
-- Buildings: depreciate to no lower than 50% of WOZ value (for own-use business buildings)
-
-### Willekeurige Afschrijving (Accelerated Depreciation) [T2]
-
-- Available for starters meeting the urencriterium and startersaftrek conditions
-- Allows depreciation at any chosen rate (including 100% in year 1)
-- [T2] Flag for reviewer: confirm starter status and whether accelerated depreciation is beneficial given the client's income profile
-
----
-
-## Step 7: Heffingskortingen (Tax Credits) [T1]
-
-**Legislation:** Wet IB 2001, Articles 8.10 -- 8.17
-
-### 7a. Algemene Heffingskorting (General Tax Credit) 2025
-
-| Taxable Income (EUR) | Credit |
-|---------------------|--------|
-| 0 -- 28,406 | EUR 3,068 (maximum) |
-| 28,407 -- 76,817 | EUR 3,068 minus 6.337% of income above EUR 28,406 |
-| 76,818+ | EUR 0 |
-
-### 7b. Arbeidskorting (Labour Tax Credit) 2025
-
-| Taxable Income (EUR) | Credit |
-|---------------------|--------|
-| 0 -- 11,491 | 8.231% of income |
-| 11,492 -- 26,288 | EUR 946 + 29.861% of income above EUR 11,491 |
-| 26,289 -- 43,071 | EUR 5,599 (maximum) |
-| 43,072 -- 124,935 | EUR 5,599 minus 6.51% of income above EUR 43,071 |
-| 124,936+ | EUR 0 |
-
-- The arbeidskorting is available to zzp'ers -- business profit counts as arbeidsinkomen
-- Both credits are applied against the gross Box 1 tax calculated in Step 2, Line L
-- Credits cannot reduce tax below EUR 0
-
-### 7c. Other Heffingskortingen [T2]
-
-| Credit | Amount (2025) | Notes |
-|--------|---------------|-------|
-| Inkomensafhankelijke combinatiekorting (IACK) | Max EUR 2,950 | For working parents with children under 12. Being phased out. |
-| Jonggehandicaptenkorting | EUR 898 | For recipients of Wajong benefit |
-| Ouderenkorting | Max EUR 2,010 | For those who reached AOW age; income-dependent |
-| Alleenstaande ouderenkorting | EUR 524 | Single persons with AOW |
+| # | Narration Pattern | Tax Line | Notes |
+|---|---|---|---|
+| E-01 | `HUUR` / `HUUR KANTOOR` / `HUURPENNING` | Office rent — 100% deductible | Home office in own home: generally NOT deductible for zzp |
+| E-02 | `VATTENFALL` / `VATTENFALL ENERGIE` / `ENECO` / `NUON` / `ESSENT` | Utilities — deductible if separate business premises | NOT deductible for home office in own home |
+| E-03 | `KPN` / `T-MOBILE` / `VODAFONE NL` / `ODIDO` | Phone/internet — deductible (business portion) | Mixed use: document business percentage |
+| E-04 | `ADOBE` / `MICROSOFT 365` / `GOOGLE WORKSPACE` / `SLACK` | Software subscriptions — 100% deductible | Professional software |
+| E-05 | `ACCOUNTANT` / `BOEKHOUDER` / `ADMINISTRATIEKANTOOR` | Accounting fees — 100% deductible | Tax advisor / bookkeeper fees |
+| E-06 | `NS TREIN` / `NS.NL` | Train travel — deductible (business trips) | Require purpose note; commute home-work for zzp is debatable |
+| E-07 | `RYANAIR` / `KLM` / `EASYJET` / `TRANSAVIA` | Air travel — deductible (business purpose) | Require itinerary + business purpose |
+| E-08 | `HOTEL` / `BOOKING.COM` / `AIRBNB` | Accommodation — deductible (business travel) | Personal travel = 0%; require proof of business purpose |
+| E-09 | `POSTNL` / `DHL` / `DPD` | Shipping/postage — 100% deductible | Business deliveries and mailings |
+| E-10 | `LINKEDIN PREMIUM` / `EXACT ONLINE` / `TWINFIELD` | Business platform subscriptions — 100% deductible | Professional tools |
+| E-11 | `KWARTAALBETALING BELASTINGDIENST` / `VOORLOPIGE AANSLAG IB` | Advance tax (voorlopige aanslag) — NOT deductible | Tax payments are not business expenses |
+| E-12 | `BTW AFDRACHT` / `OB BETALING` | VAT payment — NOT deductible from IB | BTW is a separate tax; not an IB expense |
+| E-13 | `VERZEKERING` / `AOV` / `ARBEIDSONGESCHIKTHEIDSVERZEKERING` | Insurance — deductible if business or AOV | AOV (disability) insurance: deductible; private health/life: via Zorgverzekeringswet |
+| E-14 | `ZAKELIJK TANKSTATION` / `SHELL` / `BP` / `TOTAL` | Fuel — deductible (business vehicle portion) | Private car: document business km; lease car: see BPM/auto rules |
+| E-15 | `LEASE AUTO` / `LEASEPLAN` / `ARVAL` | Vehicle lease — deductible (business %) with bijtelling | Complex auto fiscaliteit — flag for reviewer |
+| E-16 | `ZAKELIJKE BANKKOSTEN` / `REKENING KOSTEN` / `RABO ZAKELIJK` | Bank charges — 100% deductible | Business account fees |
+| E-17 | `CURSUS` / `OPLEIDING` / `TRAINING` | Training/education — deductible | Professional development; personal courses = 0% |
+| E-18 | `KANTOORBENODIGDHEDEN` / `STAPLES` / `OFFICECENTER` | Office supplies — 100% deductible | Consumables and stationery |
+| E-19 | `INVESTERING` / `AANKOOP [asset]` > EUR 450 | Capital asset — KIA eligible + depreciate | Do not fully expense in year 1; KIA deduction applies on top of depreciation |
+| E-20 | `KLEINSCHALIGHEIDSINVESTERINGSAFTREK` | Not a payment — KIA deduction entry | Computed at year end (28% for EUR 2,801–69,765; scales for higher amounts) |
+| E-21 | `MOLLIE KOSTEN` / `STRIPE FEES` / `ADYEN FEES` | Payment processor fees — 100% deductible | Deduct the gross-up difference |
+| E-22 | `EIGEN BIJDRAGE ZORGVERZEKERING` | Health insurance own contribution — NOT IB deductible | Specific health deduction via zorgtoeslag, not IB expense |
 
 ---
 
-## Step 8: Allowable Deductions -- Business Purpose Test [T1/T2]
+## Section 4 — Worked Examples
 
-**Legislation:** Wet IB 2001, Article 3.8 and further
+### Example 1 — ING Business (Amsterdam, Web Developer)
 
-### The Test [T1]
-
-An expense is deductible if it is incurred for the purpose of acquiring, collecting, or maintaining business profit. Mixed-use expenses must be apportioned on a reasonable basis.
-
-### Deductible Expenses
-
-| Expense | Tier | Treatment |
-|---------|------|-----------|
-| Office rent (dedicated workspace) | T1 | Fully deductible |
-| Professional liability insurance | T1 | Fully deductible |
-| Accountancy / belastingadviseur fees | T1 | Fully deductible |
-| Office supplies / stationery | T1 | Fully deductible |
-| Software subscriptions | T1 | Fully deductible (if not capitalised) |
-| Marketing / advertising | T1 | Fully deductible |
-| Bank charges (business account) | T1 | Fully deductible |
-| Training / courses related to business | T1 | Fully deductible |
-| Professional association memberships | T1 | Fully deductible |
-| Travel expenses (business purpose) | T1 | Fully deductible |
-| Phone / internet | T2 | Business-use portion only |
-| Home office (werkruimte) | T2 | See home office rules below |
-| Motor vehicle expenses | T2 | See motor vehicle rules below |
-| Business meals with clients | T1 | 80% deductible (20% non-deductible under aftrekbeperking) |
-| Business gifts | T1 | Deductible up to EUR 27.23 per gift (excl. BTW) if given in a business context |
-
-### NOT Deductible [T1]
-
-| Expense | Reason |
-|---------|--------|
-| Personal living expenses | Not business-related |
-| Fines and penalties (boeten) | Public policy -- Article 3.14 |
-| Income tax itself | Tax on income cannot be deducted |
-| 20% of business entertainment/meals | Aftrekbeperking -- Article 3.15 |
-| Private portion of mixed-use expenses | Must be apportioned out |
-| Clothing (unless protective/uniform) | Considered personal |
-
-### Home Office Rules (Werkruimte) [T2]
-
-**Legislation:** Wet IB 2001, Article 3.16
-
-| Scenario | Treatment |
-|----------|-----------|
-| Independent workspace (own entrance, own toilet) and you work >70% of your time there AND have no other workspace | Costs deductible on proportional basis |
-| Independent workspace but you work <70% there or you have another workspace | Generally NOT deductible |
-| Non-independent workspace (room within your home) | NOT deductible |
-
-- [T2] Flag for reviewer: confirm workspace arrangement meets the strict Dutch requirements
-
-### Motor Vehicle Rules [T2]
-
-| Scenario | Treatment |
-|----------|-----------|
-| Business car on the balance sheet | All costs deductible; private use is added back as bijtelling (typically 22% of catalogue value) |
-| Private car used for business | EUR 0.23/km for business kilometres (2025) |
-| [T2] | Flag for reviewer: confirm km administration is maintained |
-
----
-
-## Step 9: Box 3 -- Savings and Investments [T1/T2]
-
-**Legislation:** Wet IB 2001, Articles 5.1 -- 5.3
-
-### Box 3 Overview 2025
-
-| Item | Detail |
-|------|--------|
-| Tax-free allowance (heffingsvrij vermogen) | EUR 57,684 per person (EUR 115,368 for fiscal partners) |
-| Tax rate | 36% on deemed return |
-| Reference date | 1 January 2025 |
-
-### Deemed Return Rates 2025
-
-| Asset Category | Deemed Return |
-|---------------|--------------|
-| Bank savings (banktegoeden) | 1.37% |
-| Other investments and assets (overige bezittingen) | 5.88% |
-| Debts (schulden) | 2.70% (subtracted) |
-
-### How It Works [T1]
-
-1. Calculate total Box 3 assets minus debts minus heffingsvrij vermogen = grondslag sparen en beleggen
-2. Apply weighted deemed return based on asset composition
-3. Multiply deemed return by 36% = Box 3 tax
-
-### Transitional System [T2]
-
-For 2025, the Belastingdienst calculates tax using both the fictional return method and (where applicable) the actual return method. The most favourable outcome applies. A new system based on actual returns is planned for 2028.
-
-- [T2] Flag for reviewer if client has significant Box 3 assets -- verify which method is more favourable
-
----
-
-## Step 10: Filing Deadlines [T1]
-
-**Legislation:** AWR; Wet IB 2001
-
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| Aangifte inkomstenbelasting (income tax return) | 1 May of the following year (for 2025: 1 May 2026) |
-| Filing opens | 1 March of the following year |
-| Extension (uitstel) -- standard | Until 1 September (request via belastingadviseur or Mijn Belastingdienst) |
-| Extension via belastingadviseur (beconregeling) | Until 1 May of the year after (i.e., 1 May 2027 for 2025 return) |
-| Voorlopige aanslag (estimated assessment) | Issued by Belastingdienst; payment due per terms on the assessment |
-| BTW returns | Quarterly (or monthly if applicable) |
-
-### Estimated Tax Payments [T1]
-
-- The Belastingdienst issues a voorlopige aanslag (provisional/estimated assessment) based on prior year or your request
-- You can request a voorlopige aanslag to spread payments monthly
-- Underpayment results in interest (belastingrente) at the current statutory rate
-
----
-
-## Step 11: Penalties [T1]
-
-**Legislation:** AWR Articles 67a -- 67f; Besluit Bestuurlijke Boeten Belastingdienst
-
-| Offence | Penalty |
-|---------|---------|
-| Late filing (verzuimboete) | EUR 394 (2025); increases for repeated offences up to EUR 6,709 |
-| Failure to file after reminder | Up to EUR 5,514 |
-| Incorrect return (vergrijpboete -- negligence) | 25% -- 50% of underpaid tax |
-| Incorrect return (vergrijpboete -- intent/fraud) | 50% -- 100% of underpaid tax |
-| Late payment interest (belastingrente) | Statutory rate (currently ~7.5% per annum for income tax) |
-| Repeated non-filing (3+ years) | Up to EUR 6,709 per offence |
-
-**WARNING:** Belastingrente accrues from 1 July of the year following the tax year. File and pay on time to avoid compounding interest charges.
-
----
-
-## Step 12: Record Keeping [T1]
-
-**Legislation:** AWR, Article 52
-
-| Requirement | Detail |
-|-------------|--------|
-| Minimum retention period | 7 years (10 years for immovable property) |
-| What to keep | All sales invoices, purchase invoices, bank statements, contracts, hour registrations, asset register, BTW returns |
-| Format | Paper or digital (Belastingdienst accepts digital) |
-| Hour registration | Required to substantiate urencriterium -- date, hours, activity description |
-| Asset register | Date acquired, cost, depreciation claimed each year, book value |
-
----
-
-## Step 13: Edge Case Registry
-
-### EC1 -- BTW included in revenue [T1]
-**Situation:** ZZP'er invoices EUR 12,100 (EUR 10,000 net + EUR 2,100 BTW at 21%). Client reports EUR 12,100 as gross revenue.
-**Resolution:** Gross revenue must be EUR 10,000 only. BTW collected is a liability to Belastingdienst, not income. For KOR (small business exemption) clients who do not charge BTW, the full amount received IS revenue.
-
-### EC2 -- Urencriterium not met [T1]
-**Situation:** ZZP'er worked 1,100 hours in the business. Claims zelfstandigenaftrek.
-**Resolution:** NOT eligible. Urencriterium requires minimum 1,225 hours. No zelfstandigenaftrek (EUR 2,470), no startersaftrek (EUR 2,123). MKB-winstvrijstelling (12.7%) still applies -- it does not require urencriterium.
-
-### EC3 -- Starter in year 4 [T1]
-**Situation:** ZZP'er started in 2022. Claims startersaftrek for 2025 (4th year).
-**Resolution:** Check: was the client an entrepreneur in ALL of the 5 preceding years (2020--2024)? Startersaftrek requires that in at least 1 of the 5 preceding years, the client was NOT an entrepreneur. If the client was an entrepreneur continuously from 2022, they have used 3 years (2022, 2023, 2024) -- no startersaftrek in 2025 (maximum 3 claims).
-
-### EC4 -- Business meal deduction [T1]
-**Situation:** ZZP'er takes a client to dinner for EUR 150 and claims full deduction.
-**Resolution:** Only 80% deductible. EUR 150 x 80% = EUR 120 deductible. EUR 30 is non-deductible (aftrekbeperking under Article 3.15). This is different from Malta where entertainment is fully blocked.
-
-### EC5 -- KIA and capital allowance combined [T1]
-**Situation:** ZZP'er buys a laptop for EUR 1,500 and office furniture for EUR 2,000. Total investment = EUR 3,500. Client only claims depreciation.
-**Resolution:** Client should claim BOTH: (1) KIA: EUR 3,500 x 28% = EUR 980 deduction, AND (2) annual depreciation on each asset. These are separate deductions. The KIA is a one-time investment deduction; depreciation spreads the cost over the useful life.
-
-### EC6 -- FOR balance on old balance sheet [T2]
-**Situation:** Client has EUR 15,000 FOR balance from pre-2023. Asks what to do.
-**Resolution:** FOR was abolished from 2023. No new additions allowed. Existing balance remains until settled. Settlement options: convert to qualifying annuity (lijfrente) or add to taxable income upon cessation. [T2] Flag for reviewer to advise on timing and tax impact of settlement.
-
-### EC7 -- Car on balance sheet, private use [T2]
-**Situation:** ZZP'er has a car on the business balance sheet. Uses it 30% privately.
-**Resolution:** All car costs are deductible. Add back bijtelling: 22% of catalogue value (list price when new) as taxable income. If the client can prove private use is less than 500 km/year, no bijtelling applies -- but a complete km administration is mandatory. [T2] Flag for reviewer to confirm km log and bijtelling percentage.
-
-### EC8 -- Home office does not qualify [T2]
-**Situation:** ZZP'er works from a spare bedroom (no separate entrance, no own toilet).
-**Resolution:** NOT a qualifying independent workspace under Dutch rules. No home office deduction for rent/mortgage interest, utilities, or maintenance. The workspace rules in the Netherlands are much stricter than in many other jurisdictions. [T2] Flag for reviewer.
-
-### EC9 -- KOR client revenue treatment [T1]
-**Situation:** ZZP'er is on the KOR (kleineondernemersregeling, small business BTW exemption, turnover under EUR 20,000). Client invoices EUR 18,000. No BTW is charged.
-**Resolution:** Full EUR 18,000 is gross revenue. No BTW to exclude because none was charged. All input BTW paid on purchases is a cost (cannot be reclaimed under KOR). Gross purchase prices are the deductible expense amounts.
-
-### EC10 -- Fiscal partner allocation [T2]
-**Situation:** Married ZZP'er and spouse. Spouse has no income. How to allocate Box 3 assets?
-**Resolution:** Fiscal partners can allocate Box 3 assets and liabilities between them in any proportion they choose (as long as the total equals 100%). Optimize by allocating to the partner with lower Box 1 income to maximize algemene heffingskorting. [T2] Flag for reviewer to run both allocation scenarios.
-
-### EC11 -- Loss from business in first years [T1]
-**Situation:** ZZP'er starter has a loss of EUR 5,000 in their first year after all deductions.
-**Resolution:** The loss can be carried back 3 years or carried forward 9 years against Box 1 income (for losses arising from 2022 onwards, forward carry is limited to EUR 1 million + 50% of income above EUR 1 million, but this is rarely relevant for zzp'ers). Note: MKB-winstvrijstelling reduces the loss by 12.7% (loss becomes EUR 5,000 x 87.3% = EUR 4,365 deductible loss).
-
----
-
-## Step 14: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+**Bank:** ING Zakelijk CSV export
+**Client:** Pieter van den Berg, web developer, Amsterdam
 
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Licensed belastingadviseur or AA/RA accountant must confirm before filing.
+Datum;Naam/Omschrijving;Rekening;Tegenrekening;Bedrag
+03-01-2025;BIJSCHRIJVING CLIENTCO BV;NL12INGB...; ;3500,00
+15-01-2025;KOSTEN ZAKELIJKE REKENING;NL12INGB...; ;-6,00
+10-02-2025;BIJSCHRIJVING STARTUP NL BV;NL12INGB...; ;4200,00
+28-02-2025;KPN ZAKELIJK FACTUUR;NL12INGB...; ;-65,00
+15-03-2025;STRIPE PAYMENTS EUROPE;NL12INGB...; ;1940,00
+01-04-2025;ADOBE CREATIVE CLOUD;NL12INGB...; ;-59,99
+20-04-2025;BIJSCHRIJVING AGENCY PLUS BV;NL12INGB...; ;5500,00
+15-06-2025;VOORLOPIGE AANSLAG IB;NL12INGB...; ;-2800,00
+10-07-2025;ACCOUNTANT DE VRIES;NL12INGB...; ;-750,00
+10-10-2025;NS TREIN AMSTERDAM-ROTTERDAM;NL12INGB...; ;-45,00
 ```
 
-When Claude identifies a [T3] situation:
+**Step 1 — Revenue (ex-BTW)**
+
+| Narration | Pattern | Amount (ex-BTW) |
+|---|---|---|
+| BIJSCHRIJVING CLIENTCO BV | I-01 | EUR 3,500 (confirm ex-BTW) |
+| BIJSCHRIJVING STARTUP NL BV | I-01 | EUR 4,200 |
+| STRIPE PAYMENTS EUROPE | I-03 | EUR 1,940 net → gross ~EUR 1,998 |
+| BIJSCHRIJVING AGENCY PLUS BV | I-01 | EUR 5,500 |
+| **Total revenue** | | **EUR 15,198** |
+
+**Step 2 — Deductible Expenses**
+
+| Narration | Pattern | Amount | Deductible |
+|---|---|---|---|
+| KOSTEN ZAKELIJKE REKENING | E-16 | EUR 72/yr | EUR 72 |
+| KPN ZAKELIJK | E-03 | EUR 780/yr | EUR 780 (100% business) |
+| ADOBE CREATIVE CLOUD | E-04 | EUR 720/yr | EUR 720 |
+| ACCOUNTANT | E-05 | EUR 750 | EUR 750 |
+| NS TREIN | E-06 | EUR 45 | EUR 45 |
+| STRIPE FEES | E-21 | ~EUR 58 | EUR 58 |
+| VOORLOPIGE AANSLAG IB | E-11 | EUR 2,800 | EUR 0 |
+| **Total deductible** | | | **EUR 2,425** |
+
+**Step 3 — Profit (Winst)**
 
 ```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to licensed practitioner. Document gap.
+Revenue:            EUR 15,198
+Less expenses:      EUR  2,425
+Winst:              EUR 12,773
+```
+
+**Step 4 — Entrepreneur Deductions**
+
+```
+Zelfstandigenaftrek (urencriterium assumed met): EUR 2,470
+MKB-winstvrijstelling: 13.31% × (12,773 − 2,470) = 13.31% × 10,303 = EUR 1,371.33
+Belastbaar inkomen Box 1: 12,773 − 2,470 − 1,371 = EUR 8,932
+```
+
+**Step 5 — IRPEF Box 1 Tax**
+
+```
+EUR 8,932 × 35.82% = EUR 3,200.87
+Less: Algemene heffingskorting (income EUR 8,932 — below phase-out): ~EUR 3,068
+Less: Arbeidskorting (income EUR 8,932): ~EUR 1,850 (scales with income)
+Note: Credits cannot reduce tax below EUR 0; excess via toeslagen system
+Box 1 net tax: EUR 3,200.87 − EUR 3,068 = EUR 132.87 (arbeidskorting already covered)
+```
+
+Practical: at this income level heffingskortingen likely reduce tax to near zero. Flag for detailed credit calculation.
+
+---
+
+### Example 2 — Rabobank (Utrecht, Graphic Designer)
+
+**Bank:** Rabobank MT940/CSV export
+**Client:** Lisa de Boer, graphic designer, Utrecht, 4th year of business (no startersaftrek)
+
+Key transactions:
+- OVERBOEKING VAN clients: EUR 42,000 total revenue
+- MOLLIE PAYOUT: EUR 8,000 (net); gross ~EUR 8,250
+- Total revenue: EUR 50,250
+
+Expenses: accountant EUR 900, software EUR 1,200, training EUR 500, phone/internet EUR 960, bank charges EUR 84, travel EUR 300
+
+Total expenses: EUR 3,944
+
+Winst: EUR 50,250 − EUR 3,944 = EUR 46,306
+Zelfstandigenaftrek: EUR 2,470
+MKB: 13.31% × (46,306 − 2,470) = 13.31% × 43,836 = EUR 5,834.17
+Belastbaar Box 1: EUR 46,306 − EUR 2,470 − EUR 5,834 = **EUR 38,002**
+
+Box 1 tax: EUR 38,002 × 35.82% (all in first bracket) = EUR 13,614.72
+Less heffingskortingen (phase-out at EUR 24,813 — income > EUR 24,813 so AHK phases out)
+AHK at EUR 38,002: EUR 3,068 − [(38,002 − 24,813) × 6.095%] = EUR 3,068 − EUR 804.06 = EUR 2,263.94
+Arbeidskorting at EUR 38,002: ~EUR 4,606 (check table; phases down above EUR 43,071)
+Net tax: EUR 13,614.72 − EUR 2,263.94 − EUR 4,606 = **EUR 6,744.78**
+
+---
+
+### Example 3 — ABN AMRO (Rotterdam, Marketing Consultant)
+
+**Bank:** ABN AMRO CSV
+**Client:** Jan Smit, marketing consultant, Rotterdam, year 2 of business (startersaftrek eligible)
+
+Revenue: EUR 65,000 (multiple BIJSCHRIJVING narrations)
+
+Entrepreneur deductions:
+- Zelfstandigenaftrek: EUR 2,470
+- Startersaftrek: EUR 2,123
+- MKB: 13.31% × (65,000 − 2,470 − 2,123) = 13.31% × 60,407 = EUR 8,040.17
+
+Belastbaar: EUR 65,000 − EUR 2,470 − EUR 2,123 − EUR 8,040 = **EUR 52,367**
+
+Box 1 tax:
+EUR 38,441 × 35.82% = EUR 13,771.37
+(EUR 52,367 − EUR 38,441) × 37.48% = EUR 13,926 × 37.48% = EUR 5,219.47
+Total: EUR 18,990.84
+
+AHK at EUR 52,367: phases out further; estimated ~EUR 1,200
+Arbeidskorting at EUR 52,367: ~EUR 4,052 (starts phasing at EUR 43,071)
+Net tax: EUR 18,990.84 − EUR 1,200 − EUR 4,052 = **EUR 13,738.84**
+
+Flag: Confirm startersaftrek — must be within first 3 years, and urencriterium met in current year AND at least 1 of prior 5 years did NOT meet urencriterium.
+
+---
+
+### Example 4 — Bunq Business (Eindhoven, IT Freelancer)
+
+**Bank:** Bunq CSV ("Export" in app)
+**Client:** Sophie Willems, IT freelancer, Eindhoven, single client (>70% revenue)
+
+Note: Single client > 70% revenue — flag potential "hidden employment" (schijnzelfstandigheid) risk. Belastingdienst enforcement on this increased from 2025.
+
+Revenue: EUR 90,000 (single BIJSCHRIJVING from one BV)
+KIA eligible: laptop EUR 2,200 + server EUR 1,800 = EUR 4,000
+
+KIA deduction: 28% × EUR 4,000 = EUR 1,120 (investments EUR 2,801–EUR 69,765 range)
+
+Expenses (total): EUR 12,000
+Winst: EUR 90,000 − EUR 12,000 − EUR 1,120 (KIA) = EUR 76,880
+Zelfstandigenaftrek: EUR 2,470
+MKB: 13.31% × (76,880 − 2,470) = EUR 9,910.31
+Belastbaar: EUR 76,880 − EUR 2,470 − EUR 9,910 = **EUR 64,500**
+
+Box 1 tax:
+EUR 38,441 × 35.82% + (EUR 64,500 − EUR 38,441) × 37.48%
+= EUR 13,771 + EUR 9,762.91 = EUR 23,533.91
+
+AHK: ~EUR 0 (income > EUR 76,817 phase-out threshold — actually ~EUR 0 at EUR 64,500 it's still partly there)
+Net tax: approximately **EUR 18,000–19,000** (detailed credit calculation required)
+
+Flag: Schijnzelfstandigheid risk — single client structure.
+
+---
+
+### Example 5 — Knab Business (Den Haag, Consultant)
+
+**Bank:** Knab business account export (Excel format)
+**Client:** Thomas Bakker, management consultant, Den Haag
+
+Box 3 reminder: If Thomas has savings > EUR 57,000 (heffingvrij vermogen) on 1 January 2025, Box 3 wealth tax applies separately. Box 3 fictitious return rates vary by asset class (2025 rates: savings ~1.44%, investments ~5.88%, other ~5.88%). Box 3 tax rate: 36%.
+
+This example: Box 3 flagged — Thomas has bank savings EUR 120,000. Flag for Box 3 calculation:
+Excess above heffingvrij: EUR 120,000 − EUR 57,000 = EUR 63,000
+Fictitious return (savings rate 1.44%): EUR 63,000 × 1.44% = EUR 907.20
+Box 3 tax: EUR 907.20 × 36% = **EUR 326.59**
+
+Note: Box 3 is additional to Box 1 IB; total tax = Box 1 + Box 3.
+
+---
+
+### Example 6 — SNS Bank (Groningen, Photographer)
+
+**Bank:** SNS Bank CSV
+**Client:** Emma Jansen, photographer, Groningen, first year of business
+
+Eligibility check: First year → startersaftrek applies if urencriterium met.
+Revenue: EUR 18,000 (below EUR 20,000 — check BTW KOR eligibility)
+
+Winst: EUR 18,000 − EUR 2,800 (expenses) = EUR 15,200
+Zelfstandigenaftrek: EUR 2,470
+Startersaftrek: EUR 2,123
+MKB: 13.31% × (15,200 − 2,470 − 2,123) = 13.31% × 10,607 = EUR 1,411.79
+Belastbaar: EUR 15,200 − EUR 2,470 − EUR 2,123 − EUR 1,412 = **EUR 9,195**
+
+Box 1 tax: EUR 9,195 × 35.82% = EUR 3,294.47
+Heffingskortingen likely cover most/all at this income — net tax approximately **EUR 0–500**
+
+BTW flag: Revenue EUR 18,000 > EUR 0 — KOR (kleineondernemersregeling) available if ≤ EUR 20,000 annually. If KOR applied, no BTW filing required. Confirm KOR registration.
+
+---
+
+## Section 5 — Tier 1 Rules (Apply Directly)
+
+**T1-NL-1 — Revenue is always ex-BTW**
+All income tax computations use revenue and expenses exclusive of BTW (VAT). Amounts including BTW must be stripped before processing. BTW is a separate tax; it is neither income nor an expense for IB purposes.
+
+**T1-NL-2 — MKB-winstvrijstelling is mandatory**
+The 13.31% MKB-winstvrijstelling applies to ALL entrepreneurs (eenmanszaak, VOF, maatschap) regardless of whether urencriterium is met. Always apply it after other entrepreneur deductions. Never omit it.
+
+**T1-NL-3 — Voorlopige aanslag is not deductible**
+Advance income tax payments (voorlopige aanslag IB) paid to Belastingdienst are tax prepayments, not business expenses. Never include F-prefix or IB payment narrations as deductible expenses.
+
+**T1-NL-4 — BTW afdracht is not deductible**
+Quarterly BTW payments (OB/BTW afdracht) are not a business expense for IB purposes. Exclude all BTW payment narrations from the expense calculation.
+
+**T1-NL-5 — KIA deduction requires ≥ EUR 2,801 in new business assets**
+Kleinschaligheidsinvesteringsaftrek applies only when total qualifying asset purchases exceed EUR 2,801 in the year. Assets < EUR 450 per item do not qualify. KIA applies in addition to normal depreciation.
+
+**T1-NL-6 — Home office deduction: strict rules**
+A zzp'er working from home cannot generally deduct a portion of home expenses (mortgage interest, rent, utilities) unless they have a separate, self-contained workspace that could be let independently. The default is: home office in own home = NOT deductible. Flag any home office claim for reviewer.
+
+**T1-NL-7 — Urencriterium: 1,225 hours minimum**
+Zelfstandigenaftrek requires the entrepreneur to have worked ≥ 1,225 hours in the business during the year. Without a contemporaneous hour log, the claim cannot be substantiated. Never assume urencriterium is met — always require the log.
+
+---
+
+## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
+
+| Code | Situation | Escalation Reason | Suggested Treatment |
+|---|---|---|---|
+| T2-NL-1 | Single client > 70% of revenue | Schijnzelfstandigheid risk — Belastingdienst may reclassify as employment | Flag; advise client to diversify or obtain a modelovereenkomst |
+| T2-NL-2 | AOW-leeftijd question (state pension age) | First bracket rate differs significantly (~19.17% vs 35.82%) | Confirm DOB; apply lower rate only if born before 1 January 1958 |
+| T2-NL-3 | Box 3 wealth above heffingvrij EUR 57,000 | Box 3 rate/return contested in courts (Hoge Raad Kerst-arrest) | Compute at current statutory rates; note litigation uncertainty |
+| T2-NL-4 | Company car (auto van de zaak) | Bijtelling (benefit in kind) required; complex auto fiscaliteit | Flag — bijtelling % depends on CO2 emissions and first registration date |
+| T2-NL-5 | International assignment or partial-year residency | 30% ruling may apply; non-resident rules | Flag — bilateral treaty and 30%-ruling analysis required |
+| T2-NL-6 | Partner's income affects krediet allocation | Heffingskortingen can be transferred between fiscal partners in some cases | Flag for fiscal partner analysis |
+| T2-NL-7 | OR-eligible investment (R&D / WBSO) | WBSO subsidy reduces payable wage tax; separate S&O administration required | Flag — WBSO is claimed separately, not via IB return |
+
+---
+
+## Section 7 — Excel Working Paper Template
+
+```
+NETHERLANDS INCOME TAX WORKING PAPER (ZZP / EENMANSZAAK)
+Taxpayer: _______________  BSN: _______________  FY: 2025
+
+SECTION A — REVENUE (ex-BTW)
+                                        EUR
+Gross revenue (all clients, ex-BTW)    ___________
+Less: credit notes / returns           (___________)
+Net revenue                            ___________
+
+SECTION B — DEDUCTIBLE BUSINESS EXPENSES
+Rent / workspace (business only)       ___________
+Utilities (business premises only)     ___________
+Phone / internet (business %)          ___________
+Software subscriptions                 ___________
+Accountant / bookkeeper                ___________
+Legal fees                             ___________
+Training / CPD                         ___________
+Travel (business trips)                ___________
+Accommodation (business travel)        ___________
+Business insurance (AOV, liability)    ___________
+Business bank charges                  ___________
+Depreciation (afschrijving)            ___________
+Other business expenses                ___________
+Payment processor fees                 ___________
+TOTAL DEDUCTIBLE EXPENSES              ___________
+
+SECTION C — PROFIT (WINST)
+Net revenue − Total expenses           ___________
+
+SECTION D — ENTREPRENEUR DEDUCTIONS (ONDERNEMERSAFTREK)
+Zelfstandigenaftrek (if uren met)      ___________
+Startersaftrek (if eligible yr 1–3)    ___________
+KIA — kleinschaligheidsinvesteringsaftrek ________
+Subtotal after deductions              ___________
+MKB-winstvrijstelling (13.31%)         (___________)
+BELASTBAAR INKOMEN BOX 1               ___________
+
+SECTION E — BOX 1 TAX COMPUTATION
+Tax at bracket rates (see table)       ___________
+Less: Algemene heffingskorting         (___________)
+Less: Arbeidskorting                   (___________)
+Less: Other kortingen                  (___________)
+BOX 1 NET TAX                          ___________
+
+SECTION F — ADVANCE PAYMENTS
+Voorlopige aanslag paid                (___________)
+IB balance due / (refund)              ___________
+
+SECTION G — BOX 3 (if applicable)
+Assets on 1 January (incl. bank saldo) ___________
+Less: heffingvrij vermogen EUR 57,000  (___________)
+Grondslag Box 3                        ___________
+Fictitious return (see rates by class) ___________
+Box 3 tax @ 36%                        ___________
+
+SECTION H — REVIEWER FLAGS
+[ ] Urencriterium — hour log reviewed?
+[ ] Startersaftrek — year 1/2/3 confirmed?
+[ ] Single client > 70%? Schijnzelfstandigheid flag
+[ ] BTW stripped from all revenue/expense amounts
+[ ] KIA — qualifying assets > EUR 2,801?
+[ ] Box 3 assets declared on 1 January balance
+[ ] AOW age check (DOB before 1 January 1958?)
 ```
 
 ---
 
-## Step 15: Test Suite
+## Section 8 — Bank Statement Reading Guide
 
-### Test 1 -- Standard ZZP'er, mid-range income, urencriterium met
-**Input:** Single, pre-AOW, gross revenue EUR 60,000, allowable expenses EUR 15,000, urencriterium met (1,400 hours), not a starter, no other income, no Box 3 assets, no investments qualifying for KIA.
-**Expected output:** Gross profit = EUR 45,000. Less zelfstandigenaftrek EUR 2,470 = EUR 42,530. MKB-winstvrijstelling: EUR 42,530 x 12.7% = EUR 5,401. Net business profit = EUR 37,129. Taxable income Box 1 = EUR 37,129. Gross tax: EUR 37,129 x 35.82% = EUR 13,299. Less algemene heffingskorting: EUR 3,068 minus 6.337% x (EUR 37,129 - EUR 28,406) = EUR 3,068 - EUR 553 = EUR 2,515. Less arbeidskorting: EUR 5,599 (maximum, income in EUR 26,289 -- 43,071 band). Net tax payable = EUR 13,299 - EUR 2,515 - EUR 5,599 = EUR 5,185.
+### ING Zakelijk
+- Export: CSV via "Downloaden" in Mijn ING Zakelijk
+- Columns: `Datum;Naam/Omschrijving;Rekening;Tegenrekening;Code;Af Bij;Bedrag (EUR);Mutatiesoort;Mededelingen`
+- Amount format: comma decimal, no thousands separator (e.g., `3500,00`)
+- `Af Bij`: `Af` = debit, `Bij` = credit
+- Date format: DD-MM-YYYY
 
-### Test 2 -- Starter ZZP'er, lower income
-**Input:** Single, pre-AOW, first year of business, gross revenue EUR 30,000, allowable expenses EUR 8,000, urencriterium met (1,300 hours), qualifies as starter.
-**Expected output:** Gross profit = EUR 22,000. Less zelfstandigenaftrek EUR 2,470 + startersaftrek EUR 2,123 = EUR 4,593. Profit after deductions = EUR 17,407. MKB-winstvrijstelling: EUR 17,407 x 12.7% = EUR 2,211. Net business profit = EUR 15,196. Gross tax: EUR 15,196 x 35.82% = EUR 5,443. Less algemene heffingskorting: EUR 3,068 (maximum -- income under EUR 28,406). Less arbeidskorting: EUR 946 + 29.861% x (EUR 15,196 - EUR 11,491) = EUR 946 + EUR 1,107 = EUR 2,053. Net tax payable = EUR 5,443 - EUR 3,068 - EUR 2,053 = EUR 322.
+### Rabobank
+- Export: CSV from Rabo Internetbankieren ("Downloaden")
+- Columns: `IBAN/BBAN;Munt;BIC;Volgnr;Datum;Rentedatum;Bedrag;Saldo na trn;Tegenrekening IBAN/BBAN;Naam tegenpartij;Naam uiteindelijke partij;Naam initierende partij;BIC tegenpartij;Code;Batch ID;Transactiereferentie;Machtigingskenmerk;Incassant ID;Betalingskenmerk;Omschrijving;Reden retour;Oorspr bedrag;Oorspr munt;Koers`
+- Amount: negative = debit, positive = credit
 
-### Test 3 -- High income ZZP'er, top bracket
-**Input:** Single, pre-AOW, gross revenue EUR 140,000, allowable expenses EUR 30,000, urencriterium met, not a starter, no other income.
-**Expected output:** Gross profit = EUR 110,000. Less zelfstandigenaftrek EUR 2,470 = EUR 107,530. MKB-winstvrijstelling: EUR 107,530 x 12.7% = EUR 13,656. Net business profit = EUR 93,874. Gross tax: EUR 38,441 x 35.82% + (EUR 76,817 - EUR 38,441) x 37.48% + (EUR 93,874 - EUR 76,817) x 49.50% = EUR 13,770 + EUR 14,381 + EUR 8,443 = EUR 36,594. Less algemene heffingskorting: EUR 0 (income above EUR 76,818). Less arbeidskorting: EUR 0 (income above EUR 124,936). Net tax payable = EUR 36,594.
+### ABN AMRO
+- Export: CSV or MT940 from "Bankieren" portal
+- CSV columns: `Transactiedatum;Valutacode;CreditDebet;Bedrag;Tegenrekening IBAN;Naam tegenpartij;Omschrijving`
+- `CreditDebet`: `C` = credit, `D` = debit
 
-### Test 4 -- Urencriterium NOT met
-**Input:** Part-time ZZP'er, 900 hours, gross revenue EUR 25,000, expenses EUR 5,000.
-**Expected output:** Gross profit = EUR 20,000. No zelfstandigenaftrek (urencriterium not met). No startersaftrek. MKB-winstvrijstelling still applies: EUR 20,000 x 12.7% = EUR 2,540. Net business profit = EUR 17,460. Tax calculated on EUR 17,460 at 35.82% minus applicable heffingskortingen.
+### Bunq
+- Export: CSV from app ("Accounts" > "Export")
+- Columns: `date,amount,account,counterparty_name,counterparty_iban,description`
+- Amount: positive = credit, negative = debit; period decimal
 
-### Test 5 -- KIA investment deduction
-**Input:** ZZP'er invests EUR 5,000 in a new laptop (EUR 2,000) and office furniture (EUR 3,000). Both above EUR 450 threshold.
-**Expected output:** Total qualifying investment = EUR 5,000. KIA = EUR 5,000 x 28% = EUR 1,400 one-time deduction. PLUS annual depreciation on each asset separately. KIA and depreciation are both claimed.
+### Knab Business
+- Export: CSV or Excel from online portal
+- Standard Dutch bank format; comma decimal amounts
 
-### Test 6 -- Business meal, 80% rule
-**Input:** ZZP'er claims EUR 500 in business meals with clients.
-**Expected output:** Deductible: EUR 500 x 80% = EUR 400. Non-deductible portion: EUR 100 (aftrekbeperking).
-
-### Test 7 -- BTW excluded from revenue
-**Input:** Regular BTW-registered ZZP'er. Total receipts from clients EUR 72,600 (all inclusive of 21% BTW).
-**Expected output:** Gross revenue = EUR 72,600 / 1.21 = EUR 60,000. EUR 12,600 BTW is excluded from revenue -- it is a liability to Belastingdienst.
-
-### Test 8 -- Box 3 calculation
-**Input:** ZZP'er has EUR 100,000 in bank savings, EUR 50,000 in investments, no debts. Single (no fiscal partner).
-**Expected output:** Total assets = EUR 150,000. Heffingsvrij vermogen = EUR 57,684. Grondslag = EUR 92,316. Deemed return: bank portion (EUR 100,000/EUR 150,000 x EUR 92,316 = EUR 61,544) x 1.37% = EUR 843 + investment portion (EUR 50,000/EUR 150,000 x EUR 92,316 = EUR 30,772) x 5.88% = EUR 1,809. Total deemed return = EUR 2,652. Box 3 tax = EUR 2,652 x 36% = EUR 955.
+### SNS Bank
+- Export: CSV from "Mijn SNS"
+- Columns: `Boekdatum;Naam;Rekening;Tegenrekening;Code;Debet/Credit;Bedrag;Mededelingen;Saldo`
 
 ---
 
-## PROHIBITIONS
+## Section 9 — Onboarding Fallback
 
-- NEVER apply Box 1 rates without knowing whether the client has reached AOW age
-- NEVER compute gross tax figures directly -- pass taxable income to the deterministic engine
-- NEVER grant zelfstandigenaftrek or startersaftrek without confirming urencriterium is met
-- NEVER apply zelfstandigenaftrek without confirming the client qualifies as an entrepreneur (ondernemer) for income tax purposes
-- NEVER allow fines or penalties as a business deduction
-- NEVER allow income tax itself as a deduction
-- NEVER include BTW collected on sales in gross revenue for regular BTW-registered clients
-- NEVER allow home office deductions without confirming the workspace meets the strict independent workspace requirements
-- NEVER allow new FOR additions -- the FOR was abolished from 2023
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their belastingadviseur for confirmation
-- NEVER advise on Box 2 (aanmerkelijk belang), 30% ruling, or international income situations -- escalate to T3
+**Missing hour log:**
+> "To claim the zelfstandigenaftrek (EUR 2,470), Dutch tax law requires you to have worked at least 1,225 hours in your business during 2025 and to be able to demonstrate this. Do you maintain an urenstaat (hour log)? If not, we must flag the zelfstandigenaftrek as unsubstantiated. I recommend starting a log immediately for 2026."
 
----
+**Revenue includes BTW:**
+> "I notice some amounts may include BTW (VAT). For income tax (IB) purposes, only the ex-BTW amounts count as revenue. Please confirm which figures are ex-BTW. If you are BTW-plichtig, your BTW return is separate from your IB return."
 
-## Contribution Notes (For Other Jurisdictions)
+**Single client situation:**
+> "I see that more than 70% of your 2025 revenue came from a single client. The Belastingdienst is increasingly scrutinising this pattern as possible hidden employment (schijnzelfstandigheid). This may not affect your 2025 return, but I recommend consulting your accountant about diversifying clients or obtaining a valid modelovereenkomst to protect your zzp status."
 
-If adapting this skill for another country:
-
-1. Replace Wet IB 2001 references with the equivalent national income tax legislation.
-2. Replace the Box 1 rate tables with your jurisdiction's equivalent brackets and rates.
-3. Replace the entrepreneur deductions (zelfstandigenaftrek, startersaftrek, MKB-winstvrijstelling) with your jurisdiction's equivalent, if any.
-4. Replace the KIA table with your jurisdiction's investment deduction scheme.
-5. Replace heffingskortingen with your jurisdiction's tax credit system.
-6. Replace filing deadlines and penalty rates with your jurisdiction's current figures.
-7. Replace the home office and motor vehicle rules with your jurisdiction's rules.
-8. Have a licensed practitioner in your jurisdiction validate every T1 rule before publishing.
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
+**Box 3 assets:**
+> "To complete your income tax return, I also need your financial position on 1 January 2025: total savings, investments, and any second property. If these exceed EUR 57,000 (EUR 114,000 with fiscal partner), Box 3 wealth tax applies on top of your Box 1 income tax."
 
 ---
 
-## Disclaimer
+## Section 10 — Reference Material
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a belastingadviseur, AA/RA accountant, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+### Key Legislation
+- **Wet inkomstenbelasting 2001 (Wet IB 2001)** — primary income tax law; Box 1/2/3 framework
+- **Art. 3.76 Wet IB** — zelfstandigenaftrek
+- **Art. 3.78 Wet IB** — startersaftrek
+- **Art. 3.79a Wet IB** — MKB-winstvrijstelling
+- **Art. 3.41 Wet IB** — kleinschaligheidsinvesteringsaftrek (KIA)
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+### Filing Deadlines 2025 (FY 2024)
+| Deadline | Event |
+|---|---|
+| 1 May 2025 | Standard aangifte IB 2024 deadline |
+| 1 September 2025 | Extended deadline (with accountant / DigiD aanvraag) |
+| 1 July each year | Voorlopige aanslag voor 2025 can be requested/revised |
+
+### Useful Rates Summary 2025
+- Box 1 first bracket: 35.82% (up to EUR 38,441)
+- Box 1 second bracket: 37.48% (EUR 38,442 – EUR 76,817)
+- Box 1 top rate: 49.50%
+- Zelfstandigenaftrek: EUR 2,470
+- MKB-winstvrijstelling: 13.31%
+- Box 3 tax rate: 36%
+- Box 3 heffingvrij: EUR 57,000 (EUR 114,000 for fiscal partners)
+
+### Useful References
+- Belastingdienst: belastingdienst.nl
+- Ondernemersplein: ondernemersplein.kvk.nl
+- KIA table: belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/investeringen_aftrekken

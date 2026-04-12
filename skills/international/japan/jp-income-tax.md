@@ -1,8 +1,8 @@
 ---
 name: jp-income-tax
 description: >
-  Use this skill whenever asked about Japanese income tax for self-employed individuals filing a final tax return (確定申告 Kakutei Shinkoku). Trigger on phrases like "how much tax do I pay in Japan", "kakutei shinkoku", "確定申告", "blue return", "青色申告", "white return", "白色申告", "business income Japan", "事業所得", "necessary expenses", "必要経費", "basic deduction", "基礎控除", "reconstruction tax", "resident tax", "住民税", "self-employed tax Japan", "e-Tax", or any question about filing or computing income tax for a self-employed individual in Japan. This skill covers progressive brackets (5%-45%), blue vs white return, special deductions, reconstruction surtax, resident tax, necessary expenses, social insurance, and filing deadlines. ALWAYS read this skill before touching any Japan income tax work.
-version: 1.0
+  Use this skill whenever asked about Japanese income tax for self-employed individuals filing a final tax return (確定申告 Kakutei Shinkoku). Trigger on phrases like "how much tax do I pay in Japan", "kakutei shinkoku", "確定申告", "blue return", "青色申告", "white return", "白色申告", "business income Japan", "事業所得", "necessary expenses", "必要経費", "basic deduction", "基礎控除", "reconstruction tax", "resident tax", "住民税", "self-employed tax Japan", "e-Tax", "Rakuten Bank", "Japan Post Bank", "freee Japan", "Misoca", or any question about filing or computing income tax for a self-employed individual in Japan. This skill covers progressive brackets (5%-45%), blue vs white return, special deductions, reconstruction surtax, resident tax, necessary expenses, social insurance, and filing deadlines. ALWAYS read this skill before touching any Japan income tax work.
+version: 2.0
 jurisdiction: JP
 tax_year: 2025
 category: international
@@ -10,461 +10,523 @@ depends_on:
   - income-tax-workflow-base
 ---
 
-# Japan Income Tax (確定申告) -- Self-Employed Skill
+# Japan Income Tax (確定申告) -- Self-Employed Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Japan |
-| Jurisdiction Code | JP |
-| Primary Legislation | Income Tax Act (所得税法 Shotokuzei-ho) |
-| Supporting Legislation | Special Taxation Measures Act (租税特別措置法); Local Tax Act (地方税法); Act on Special Measures for Securing Financial Resources Necessary for Reconstruction (復興財源確保法) |
-| Tax Authority | National Tax Agency (国税庁 NTA / Kokuzei-cho) |
-| Filing Portal | e-Tax (国税電子申告・納税システム) |
-| Contributor | Open Accountants community |
-| Validated By | Pending -- requires sign-off by a Japanese Certified Public Tax Accountant (税理士 Zeirishi) |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate table application, blue return special deduction amounts, basic deduction, filing deadlines, reconstruction surtax calculation. Tier 2: home office apportionment, vehicle business %, medical expense deduction thresholds, spouse deduction eligibility, mixed-use expense allocation. Tier 3: foreign tax credits, capital gains on real estate, cryptocurrency taxation, non-resident taxation, corporate restructuring. |
+|---|---|
+| Country | Japan (日本) |
+| Tax | Shotokuzei (所得税) + Fukko Tokubetsu Shotokuzei (復興特別所得税 2.1%) + Juminzei (住民税 10%) |
+| Currency | JPY only |
+| Tax year | Calendar year (1 January -- 31 December) |
+| Primary legislation | Shotokuzeiho (所得税法 Income Tax Act) |
+| Tax authority | National Tax Agency (国税庁 NTA) |
+| Filing portal | e-Tax (国税電子申告・納税システム) |
+| Filing deadline | 15 March of the following year |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires sign-off by a Japanese 税理士 (Zeirishi) |
+| Skill version | 2.0 |
 
----
+### National Income Tax Rate Table (2025) [T1]
 
-## Confidence Tier Definitions
+| Taxable Income (JPY) | Rate | Deduction Amount (控除額) |
+|---|---|---|
+| 0 -- 1,950,000 | 5% | 0 |
+| 1,950,001 -- 3,300,000 | 10% | 97,500 |
+| 3,300,001 -- 6,950,000 | 20% | 427,500 |
+| 6,950,001 -- 9,000,000 | 23% | 636,000 |
+| 9,000,001 -- 18,000,000 | 33% | 1,536,000 |
+| 18,000,001 -- 40,000,000 | 40% | 2,796,000 |
+| 40,000,001+ | 45% | 4,796,000 |
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Licensed tax accountant (税理士) must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+**Shortcut formula:** Tax = (Taxable Income x Rate) - Deduction Amount.
 
----
+**Reconstruction Surtax:** All national income tax x 2.1% (2013--2037). Total national tax = income tax x 102.1%.
 
-## Step 0: Client Onboarding Questions
+**Resident Tax:** Flat 10% of taxable income (4% prefectural + 6% municipal) + per-capita levy ~5,000/year + forest environment tax 1,000 (from 2024). Assessed by municipality from the final return data.
 
-Before computing any income tax figure, you MUST know:
-
-1. **Tax residency status** [T1] -- resident (居住者), non-permanent resident (非永住者), or non-resident (非居住者). Non-residents have different rules. If non-resident, escalate [T3].
-2. **Return type** [T1] -- blue return (青色申告) or white return (白色申告). Determines available deductions.
-3. **Gross business income (事業収入)** [T1] -- total business revenue received in the calendar year (January 1 -- December 31).
-4. **Bookkeeping method** [T1] -- double-entry bookkeeping (複式簿記) or simplified bookkeeping (簡易簿記). Affects blue return deduction amount.
-5. **e-Tax filing or paper filing** [T1] -- e-Tax filing is required for the maximum blue return deduction.
-6. **Necessary expenses (必要経費)** [T1/T2] -- nature and amount of each business expense.
-7. **Social insurance premiums paid** [T1] -- national health insurance (国民健康保険), national pension (国民年金), and any other social insurance.
-8. **Marital status and dependents** [T2] -- for spouse deduction (配偶者控除) and dependent deduction (扶養控除).
-9. **Other income** [T1] -- employment income (給与所得), interest, dividends, rental, miscellaneous income.
-10. **Prior year carried-forward losses** [T1] -- blue return filers can carry forward losses for 3 years.
-
-**If tax residency is unknown, STOP. Do not compute. Tax residency status is mandatory.**
-
----
-
-## Step 1: Determine Applicable National Income Tax Rates [T1]
-
-**Legislation:** Income Tax Act (所得税法), Article 89
-
-### Progressive Tax Rates (2025 tax year)
-
-| Taxable Income (JPY) | Rate | Deduction Amount (控除額) | Cumulative Reference |
-|----------------------|------|--------------------------|---------------------|
-| 0 -- 1,950,000 | 5% | 0 | Max tax: 97,500 |
-| 1,950,001 -- 3,300,000 | 10% | 97,500 | Max tax: 232,500 |
-| 3,300,001 -- 6,950,000 | 20% | 427,500 | Max tax: 962,500 |
-| 6,950,001 -- 9,000,000 | 23% | 636,000 | Max tax: 1,434,000 |
-| 9,000,001 -- 18,000,000 | 33% | 1,536,000 | Max tax: 4,404,000 |
-| 18,000,001 -- 40,000,000 | 40% | 2,796,000 | Max tax: 13,204,000 |
-| 40,000,001+ | 45% | 4,796,000 | -- |
-
-**Shortcut formula:** Tax = (Taxable Income x Rate) - Deduction Amount. For example: taxable income of 5,000,000 => (5,000,000 x 20%) - 427,500 = 572,500.
-
-**These rates have been stable since 2015 and remain unchanged for tax year 2025.**
-
----
-
-## Step 2: Reconstruction Special Income Tax (復興特別所得税) [T1]
-
-**Legislation:** Act on Special Measures for Securing Financial Resources Necessary for Reconstruction
-
-- **Rate:** 2.1% of the calculated national income tax amount
-- **Period:** 2013 through 2037 (25 years)
-- **Calculation:** Reconstruction tax = National income tax x 2.1%
-- **Total effective rate:** National income tax x 102.1%
-
-Example: If national income tax is 500,000, reconstruction tax = 500,000 x 2.1% = 10,500. Total national tax = 510,500.
-
----
-
-## Step 3: Resident Tax (住民税) [T1]
-
-**Legislation:** Local Tax Act (地方税法)
-
-### Structure [T1]
-
-| Component | Rate | Notes |
-|-----------|------|-------|
-| Prefectural income tax (都道府県民税) | 4% | Of taxable income |
-| Municipal income tax (市区町村民税) | 6% | Of taxable income |
-| **Total income-based** | **10%** | Flat combined rate |
-| Per-capita levy (均等割) | Approx. 5,000 | Fixed annual amount (varies slightly by municipality) |
-| Forest environment tax (森林環境税) | 1,000 | From 2024 onward |
-
-### Key Rules [T1]
-
-- Resident tax is calculated and assessed **by the municipality** based on the prior year's national tax return.
-- Resident tax is **not filed separately** -- the municipality computes it from the final return (確定申告) data.
-- Payment: quarterly instalments (June, August, October, January) or monthly withholding for employees.
-- Resident tax uses a slightly different deduction structure than national tax (e.g., basic deduction for resident tax is 430,000, not 580,000).
-- Self-employed persons pay resident tax by quarterly payment slips (普通徴収).
-
----
-
-## Step 4: Blue Return vs White Return [T1]
-
-**Legislation:** Income Tax Act, Articles 143-148 (blue return provisions)
-
-### Comparison [T1]
-
-| Feature | Blue Return (青色申告) | White Return (白色申告) |
-|---------|----------------------|----------------------|
-| Application required | Yes -- must file Form 144 (青色申告承認申請書) in advance | No -- default method |
-| Application deadline | By 15 March of the year you want to start (or within 2 months of starting business) | N/A |
-| Bookkeeping requirement | Double-entry bookkeeping (for max deduction) or simplified bookkeeping | Basic record-keeping |
-| Special deduction | Up to 650,000 (double-entry + e-Tax) or 550,000 (double-entry, paper filing) or 100,000 (simplified bookkeeping) | None |
-| Loss carry-forward | 3 years | Not available |
-| Family employee salary deduction | Fully deductible if pre-registered (専従者給与) | Limited to 500,000 (spouse) or 860,000 (other family) |
-| Depreciation special provisions | Available (increased initial depreciation, etc.) | Not available |
-
-### Blue Return Special Deduction Amounts (2025) [T1]
+### Blue Return Special Deduction (2025) [T1]
 
 | Condition | Deduction (JPY) |
-|-----------|----------------|
-| Double-entry bookkeeping + e-Tax filing (or approved digital record-keeping) | 650,000 |
-| Double-entry bookkeeping + paper filing | 550,000 |
-| Simplified bookkeeping (either filing method) | 100,000 |
+|---|---|
+| Double-entry (複式簿記) + e-Tax filing | 650,000 |
+| Double-entry + paper filing | 550,000 |
+| Simplified bookkeeping (簡易簿記) | 100,000 |
+| White return | 0 |
 
-**Note:** Starting from tax year 2026 (to be filed in 2027), the blue return special deduction is expected to increase to 750,000 for those maintaining "excellent electronic books" (優良な電子帳簿). This does NOT apply to tax year 2025.
+### Conservative Defaults [T1]
 
----
+| Ambiguity | Default |
+|---|---|
+| Return type unknown | White return (0 special deduction) |
+| Bookkeeping method unknown | Simplified (100,000 deduction) |
+| Home office apportionment unknown | 0% deduction until confirmed |
+| Business vs personal expense unclear | Non-deductible |
+| Withholding tax credit not confirmed | Exclude until verified |
 
-## Step 5: Business Income Computation (事業所得) [T1/T2]
+### Red Flag Thresholds [T1]
 
-**Legislation:** Income Tax Act, Articles 27, 37
-
-### Computation Structure [T1]
-
-```
-  Gross business revenue (事業収入/売上)
-- Necessary expenses (必要経費)
-= Business income before blue return deduction (事業所得 -- 青色申告特別控除前)
-- Blue return special deduction (青色申告特別控除)
-= Business income (事業所得)
-```
-
-### Necessary Expenses (必要経費) -- Deductible [T1/T2]
-
-| Expense (Japanese term) | Tier | Treatment |
-|--------------------------|------|-----------|
-| Rent for business premises (地代家賃) | T1 | Fully deductible |
-| Utilities for business premises (水道光熱費) | T1/T2 | Fully deductible if dedicated; apportion if home office |
-| Communication costs (通信費) -- phone, internet | T2 | Business use portion only |
-| Travel and transportation (旅費交通費) | T1 | Fully deductible if business purpose |
-| Advertising and promotion (広告宣伝費) | T1 | Fully deductible |
-| Office supplies and consumables (消耗品費) | T1 | Fully deductible. Items under 100,000 can be expensed immediately. |
-| Depreciation (減価償却費) | T1 | Per NTA depreciation tables (see Step 6) |
-| Insurance premiums, business (損害保険料) | T1 | Fully deductible |
-| Repair and maintenance (修繕費) | T1 | Deductible if maintaining existing condition (not improvement) |
-| Outsourcing and subcontracting (外注工賃) | T1 | Fully deductible |
-| Books and reference materials (図書研究費/新聞図書費) | T1 | Fully deductible if business-related |
-| Entertainment and hospitality (接待交際費) | T2 | Deductible if business purpose; no statutory limit for sole proprietors (unlike corporations). Flag for reviewer if excessive. |
-| Tax accountant fees (税理士報酬) | T1 | Fully deductible |
-| Bad debts (貸倒金) | T2 | Flag for reviewer -- confirm irrecoverability |
-| Interest on business loans (利子割引料) | T1 | Fully deductible |
-
-### NOT Deductible [T1]
-
-| Expense | Reason |
-|---------|--------|
-| Income tax and resident tax (所得税・住民税) | Tax on income cannot be deducted |
-| Personal living expenses (家事費) | Private expense |
-| Fines and penalties (罰金・科料) | Public policy |
-| National pension and health insurance premiums | NOT a business expense -- deducted as social insurance deduction (所得控除), not as a necessary expense |
-| Personal portion of mixed-use expenses | Must be apportioned; personal portion is non-deductible |
-
-### Home Office Rules (家事按分) [T2]
-
-- Calculate the proportion of home used for business: floor area ratio or time-based ratio
-- Apply that percentage to: rent, electricity, internet, water
-- NTA generally accepts a reasonable apportionment (no requirement for a dedicated room, unlike Malta)
-- Common accepted ratios: 30-50% for freelancers working primarily from home
-- Must be documented and consistent
-- [T2] Flag for reviewer: confirm apportionment method is reasonable and documented
+| Flag | Threshold |
+|---|---|
+| Consumption tax registration required | Annual revenue > JPY 10,000,000 in prior 2 years |
+| Withholding applies to professional fees | Client is a corporation paying > JPY 1,000 per payment |
+| Blue return requires advance application | Form 144 (青色申告承認申請書) by 15 March of target year |
+| Loss carry-forward | Blue return only -- 3 years |
+| Blue return asset expensing limit | JPY 300,000/item (aggregate JPY 3,000,000/year) |
 
 ---
 
-## Step 6: Depreciation (減価償却) [T1]
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-**Legislation:** Income Tax Act, Article 49; NTA Depreciation Tables (耐用年数表)
+### Required Inputs
 
-### Common Depreciation Rates (Declining Balance / 定率法 is default for most assets)
+**Minimum viable:** Bank statement for the full calendar year (January--December) in CSV, PDF, or pasted text. Confirmation of return type (blue/white) and bookkeeping method.
 
-| Asset Type | Useful Life | Declining Balance Rate | Straight-Line Rate |
-|-----------|-------------|----------------------|-------------------|
-| Personal computers | 4 years | 0.500 | 0.250 |
-| Servers | 5 years | 0.400 | 0.200 |
-| Office furniture (metal) | 15 years | 0.133 | 0.067 |
-| Office furniture (wood) | 8 years | 0.250 | 0.125 |
-| Motor vehicles (ordinary) | 6 years | 0.333 | 0.167 |
-| Motor vehicles (light) | 4 years | 0.500 | 0.250 |
-| Buildings (residential, wood) | 22 years | N/A (SL only) | 0.046 |
-| Buildings (residential, RC) | 47 years | N/A (SL only) | 0.022 |
-| Software (purchased) | 3-5 years | varies | 0.200-0.333 |
+**Recommended:** All invoices issued (Misoca, freee, MF Cloud), withholding tax certificates (源泉徴収票) from clients, national pension payment receipts (国民年金), national health insurance receipts (国民健康保険).
 
-### Rules [T1]
+**Ideal:** Complete double-entry general ledger, asset register, prior year return (申告書 copy), e-Tax filing confirmation, iDeCo/small enterprise mutual aid (小規模企業共済) contribution statements.
 
-- **Default method:** Declining balance (定率法) for most assets. Buildings must use straight-line (定額法) since 2016.
-- **Election:** Taxpayer can elect straight-line for any asset by filing Form 16 (減価償却資産の償却方法の届出書).
-- **Items under 100,000:** Can be expensed immediately (少額減価償却資産).
-- **Items 100,001 to 199,999:** Can be depreciated over 3 years uniformly (一括償却資産) regardless of type.
-- **Blue return filers: items under 300,000:** Can be expensed immediately (少額減価償却資産の特例), subject to an annual aggregate limit of 3,000,000. This is a blue return privilege.
-- Pro-rata for months of use in the acquisition year.
+### Refusal Catalogue
+
+**R-JP-1 -- Non-residents (非居住者).** "Non-resident taxation has different sourcing rules and treaty interactions. Out of scope -- escalate."
+
+**R-JP-2 -- Corporate entities (法人).** "Corporations file Corporate Tax (法人税), not income tax. Out of scope."
+
+**R-JP-3 -- Real estate capital gains / inherited property.** "Separate computation with different rates. Escalate."
+
+**R-JP-4 -- Cryptocurrency (暗号資産).** "Crypto profits are 'miscellaneous income' (雑所得) taxed up to 55% including resident tax. Complex classification rules apply. Escalate."
+
+**R-JP-5 -- Non-permanent resident status (非永住者).** "Non-permanent residents have limited worldwide income taxation. Requires specialist review. Escalate."
 
 ---
 
-## Step 7: Income Deductions (所得控除) [T1/T2]
+## Section 3 -- Transaction Pattern Library
 
-**Legislation:** Income Tax Act, Articles 72-86
+This is the deterministic pre-classifier. When a bank statement line matches a pattern, apply the treatment directly. If no pattern matches, fall through to Tier 1 rules in Section 5.
 
-These deductions are subtracted from total income (after business income computation) to arrive at taxable income.
+### 3.1 Income Patterns (Credits -- 入金)
 
-### Key Deductions [T1]
+| Pattern | Tax Line | Treatment | Notes |
+|---|---|---|---|
+| 振込 [client name] / 入金 [client company] | 事業収入 (business revenue) | Gross revenue | Professional fee from client |
+| 銀行振込 [sender] / 普通振込 | 事業収入 | Revenue | Standard bank transfer from client |
+| STRIPE PAYOUT / STRIPE TRANSFER | 事業収入 | Revenue | Stripe Japan / international clients -- match to invoices |
+| PAYPAL TRANSFER / ペイパル | 事業収入 | Revenue | International client payments |
+| freee PAYMENT / フリー支払 | 事業収入 | Revenue | freee Payments platform settlement |
+| Amazon Pay 振込 / Amazonペイ | 事業収入 | Revenue | E-commerce platform payout |
+| BASE SETTLEMENT / BASE振込 | 事業収入 | Revenue | BASE (JP e-commerce) settlement |
+| メルカリ振込 / MERCARI | 事業収入 | Revenue | Mercari business seller payout |
+| 報酬振込 [client] | 事業収入 | Revenue | Honorarium / professional fee |
+| 源泉徴収後振込 [amount] | 事業収入 (gross-up required) | Revenue -- GROSS UP | Client withheld 10.21%; gross up to full invoice amount |
+| 給与振込 [employer] | 給与所得 (employment income) | NOT business income | Employment wage -- separate Anlage equivalent: 給与所得 |
+| 利子 / 利息 [bank] | 利子所得 (interest income) | NOT business income | Bank interest -- separate income category |
+| 配当金 [company] | 配当所得 (dividend income) | NOT business income | Dividend |
+| 還付金 国税局 / 税金還付 | EXCLUDE | Not income | Tax refund not taxable |
+| 贈与 / 振込 PERSONAL | EXCLUDE | Personal transfer | Personal gifts / personal transfers |
 
-| Deduction (Japanese) | Amount (2025) | Notes |
-|----------------------|---------------|-------|
-| Basic deduction (基礎控除) | 580,000 (income up to 23.5M); phases down above; 0 above 25M | Increased from 480,000 for 2025 tax year |
-| Social insurance deduction (社会保険料控除) | Actual amount paid | National pension, national health insurance, etc. Unlimited. |
-| Small enterprise mutual aid deduction (小規模企業共済等掛金控除) | Actual amount paid | iDeCo contributions included here |
-| Life insurance deduction (生命保険料控除) | Up to 120,000 total | Combined limit for general, medical, pension insurance |
-| Earthquake insurance deduction (地震保険料控除) | Up to 50,000 | Actual premiums paid |
-| Spouse deduction (配偶者控除) | Up to 380,000 | If spouse's income is 480,000 or less; phases out if taxpayer income > 9M |
-| Special spouse deduction (配偶者特別控除) | Up to 380,000 (sliding scale) | If spouse's income is between 480,001 and 1,330,000 |
-| Dependent deduction (扶養控除) | 380,000 -- 630,000 per dependent | Amount varies by age of dependent |
-| Medical expense deduction (医療費控除) | Amount exceeding 100,000 (or 5% of income if lower) | Cap of 2,000,000 |
-| Donation deduction (寄附金控除) | Amount minus 2,000 | For qualifying donations (furusato nozei, etc.) |
-| Disability deduction (障害者控除) | 270,000 -- 750,000 | Per qualifying person |
+### 3.2 Expense Patterns (Debits -- 出金)
 
-### Basic Deduction Detail (2025 Reform) [T1]
+| Pattern | Tax Line (必要経費) | Treatment | Notes |
+|---|---|---|---|
+| 事務所賃料 / オフィス家賃 [landlord] | 地代家賃 (rent) | Fully deductible | Dedicated business premises |
+| 電気料金 [TEPCO/関西電力/中部電力/九州電力] | 水道光熱費 (utilities) | Business portion deductible | Home office: apportion by floor area or time |
+| 水道料金 / 水道局 | 水道光熱費 | Business portion | Apportion if home office |
+| インターネット [NURO/フレッツ/au/ドコモ光] | 通信費 (communications) | Business portion only | Default: ask client for % |
+| 携帯電話 [ドコモ/au/SoftBank/楽天モバイル] | 通信費 | Business portion only | Mixed use: apportion |
+| 交通費 [JR/東京メトロ/新幹線/バス] | 旅費交通費 (travel) | Fully deductible if business | IC card statements are acceptable |
+| 航空券 [ANA/JAL/LCC] | 旅費交通費 | Fully deductible if business purpose | Keep booking confirmation |
+| 接待 [restaurant] / 飲食 | 接待交際費 (entertainment) | Deductible if business purpose | No statutory cap for sole proprietors; document names, purpose |
+| 書籍 [Amazon Japan/紀伊國屋/丸善] | 新聞図書費 (books/publications) | Fully deductible if professional | |
+| セミナー [event] / 研修費 | 研修費 (training) | Fully deductible | |
+| ソフトウェア [Adobe/Microsoft/Figma/Notion] | 消耗品費 or 減価償却費 | Under JPY 100,000: fully deductible; over: depreciate | Subscription vs perpetual licence distinction |
+| 広告費 [Google Ads/Meta Ads] | 広告宣伝費 (advertising) | Fully deductible | |
+| 税理士報酬 / 会計士報酬 | 税理士・弁護士費用 | Fully deductible | Professional adviser fees |
+| 損害保険 [business] | 損害保険料 (insurance) | Fully deductible | Business liability only |
+| 外注費 / フリーランス費用 | 外注工賃 (subcontracting) | Fully deductible | |
+| 銀行手数料 / 振込手数料 | 雑費 (miscellaneous) | Fully deductible | Business account only |
+| 国民年金 / 国民年金保険料 | 社会保険料控除 (NOT 必要経費) | EXCLUDE from business expenses | Deducted as income deduction (所得控除), not business expense |
+| 国民健康保険 / 国保料 | 社会保険料控除 (NOT 必要経費) | EXCLUDE from business expenses | Same -- income deduction, not business expense |
+| 所得税 振替 / 住民税 口座振替 | EXCLUDE | Tax payments | Not deductible |
+| 生命保険 [Nippon Life/Dai-ichi/明治安田] | 生命保険料控除 (NOT 必要経費) | EXCLUDE from business expenses | Personal insurance = income deduction |
+| プライベート引き出し / ATM出金 | EXCLUDE | Personal withdrawal | Drawings -- not business expense; ask what it was for |
+
+### 3.3 SaaS / Cloud Service Patterns
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| Adobe Systems / Adobe Creative Cloud | 消耗品費 (operating expense) | Subscription: fully deductible. Check if annual or monthly. |
+| Microsoft / Office 365 / M365 | 消耗品費 | Subscription: deductible |
+| Google Workspace / G Suite | 消耗品費 | Subscription: deductible |
+| freee / Money Forward Cloud / Yayoi | 消耗品費 | Accounting software: deductible |
+| Slack / Notion / Figma | 消耗品費 | Business SaaS: deductible |
+| AWS Japan / Amazon Web Services | 消耗品費 | Cloud hosting: deductible |
+
+---
+
+## Section 4 -- Worked Examples
+
+### Example 1 -- Client Wire Transfer (Bank Transfer Income)
+
+**Input line (三菱UFJ Bank / Mitsubishi UFJ Bank statement):**
+`2025/03/15 | 振込入金 デザインスタジオABC | +350,000 | 残高 1,240,500`
+
+**Reasoning:**
+Wire transfer from a business client for design services. This is 事業収入 (business revenue). If client is a corporation and fee ≥ JPY 1,000, they are required to withhold 10.21% (source tax). Check whether the JPY 350,000 is net of withholding. If invoice was JPY 390,000 and client withheld JPY 39,819 (10.21%), the bank statement would show JPY 350,181. Always gross up to invoice amount.
+
+**Classification:** 事業収入 JPY 350,000 (or gross up if TDS was deducted).
+
+### Example 2 -- Withholding (源泉徴収) on Professional Fee
+
+**Input line (楽天銀行 Rakuten Bank statement):**
+`2025/05/20 | 振込 株式会社マーケティングXYZ 源泉後 | +107,892 | Ref: 202505-0234`
+
+**Reasoning:**
+Received JPY 107,892. Likely gross invoice of JPY 120,000 with 10.21% withholding = JPY 12,252 withheld. Net paid = JPY 107,748 (minor rounding applies per Japanese rules). The gross income is JPY 120,000. The withheld amount JPY 12,252 is a tax credit (源泉徴収税額) claimed on the final return. Verify against client's withholding certificate (支払調書).
+
+**Classification:** 事業収入 JPY 120,000 (gross). Tax credit: JPY 12,252.
+
+### Example 3 -- National Pension Payment
+
+**Input line (ゆうちょ銀行 Japan Post Bank statement):**
+`2025/04/30 | 国民年金保険料 振替 | -16,590 | 残高 852,410`
+
+**Reasoning:**
+National pension premium (国民年金保険料) JPY 16,590. This is NOT a business expense (必要経費). It is an income deduction (社会保険料控除 -- social insurance deduction) under Section 79 of the Income Tax Act. Remove from the business expense schedule. Record in the 所得控除 (income deductions) section -- fully deductible as social insurance deduction.
+
+**Classification:** EXCLUDE from 必要経費. Record as 社会保険料控除.
+
+### Example 4 -- Home Internet Bill
+
+**Input line (住信SBIネット銀行 SBI Sumishin Net Bank statement):**
+`2025/07/10 | NURO光 利用料 | -5,500 | 残高 423,800`
+
+**Reasoning:**
+Monthly internet bill (NURO Hikari) JPY 5,500. This is a mixed-use expense -- used for both business and personal internet access. NTA accepts a reasonable business apportionment. If the taxpayer estimates 70% business use (working from home full-time), then JPY 3,850 is deductible. If no apportionment can be supported, default is 0%.
+
+**Classification:** 通信費 -- PENDING apportionment. Default: 0%. Flag for reviewer.
+
+### Example 5 -- Software Subscription
+
+**Input line (三井住友銀行 SMBC statement):**
+`2025/09/01 | ADOBE SYSTEMS | -72,600 | 残高 1,540,200`
+
+**Reasoning:**
+Adobe Creative Cloud annual subscription JPY 72,600. This is a subscription (月額/年額契約), not a perpetual licence. Subscription costs are 消耗品費 (consumables/operating expenses) deductible in full in the year paid, regardless of the JPY 100,000 capitalisation threshold (which applies to assets, not subscriptions).
+
+**Classification:** 消耗品費 JPY 72,600. Fully deductible.
+
+### Example 6 -- Business Entertainment Dinner
+
+**Input line (みずほ銀行 Mizuho Bank statement):**
+`2025/11/12 | デビットカード 銀座レストランXX | -48,000 | 残高 3,210,500`
+
+**Reasoning:**
+Restaurant meal JPY 48,000. If this was a client entertainment dinner (接待交際費), it is deductible as a business expense for sole proprietors -- Japan has NO statutory percentage limit for sole proprietors (unlike Germany's 70% rule). However, excessive entertainment will attract NTA scrutiny. Must document: date, restaurant name, names of attendees, business purpose.
+
+**Classification:** 接待交際費 JPY 48,000. Fully deductible if properly documented. Flag for reviewer if aggregate entertainment is high.
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 Business Revenue (事業収入)
+
+**Legislation:** Income Tax Act Article 27
+
+All business revenue (professional fees, contract income, product sales) is 事業収入. For consumption tax (消費税) registered taxpayers, report net of consumption tax. For non-registered (below JPY 10M threshold), report gross including CT.
+
+### 5.2 Necessary Expenses (必要経費)
+
+**Legislation:** Income Tax Act Article 37
+
+Expenses are deductible if directly incurred for earning business income (業務の遂行に直接必要). Japan allows apportionment of mixed-use expenses where business and personal portions can be separated objectively (按分 -- 按分計算).
+
+### 5.3 Blue Return Special Deduction (青色申告特別控除)
+
+**Legislation:** Measures Act Article 25-2
+
+| Method | Deduction | Conditions |
+|---|---|---|
+| Double-entry + e-Tax | JPY 650,000 | Must file via e-Tax AND maintain double-entry books |
+| Double-entry + paper | JPY 550,000 | Double-entry books, paper filing |
+| Simplified bookkeeping | JPY 100,000 | Simplified (簡易簿記) books, either filing method |
+| White return | JPY 0 | No special deduction |
+
+### 5.4 Depreciation (減価償却)
+
+**Legislation:** Income Tax Act Article 49; NTA depreciation tables
+
+| Asset | Useful Life | Declining Balance Rate |
+|---|---|---|
+| Personal computers | 4 years | 0.500 |
+| Servers | 5 years | 0.400 |
+| Office furniture (wood) | 8 years | 0.250 |
+| Motor vehicles (standard) | 6 years | 0.333 |
+| Software (purchased) | 3-5 years | varies |
+
+**Expensing rules:**
+- Under JPY 100,000: expense immediately (少額減価償却資産)
+- JPY 100,000 -- JPY 199,999: option to depreciate uniformly over 3 years (一括償却資産)
+- Blue return filers: under JPY 300,000 can be expensed immediately, subject to aggregate limit of JPY 3,000,000/year
+
+### 5.5 Income Deductions (所得控除)
+
+| Deduction | Amount (2025) |
+|---|---|
+| Basic deduction (基礎控除) | JPY 580,000 (standard); temporary enhancement for income ≤ JPY 6,550,000 -- see below |
+| Social insurance (社会保険料控除) | Full amount paid (national pension + health insurance) |
+| Small enterprise mutual aid (小規模企業共済) | Full amount paid |
+| iDeCo contributions | Full amount paid |
+| Life insurance (生命保険料控除) | Up to JPY 120,000 combined |
+| Spouse deduction (配偶者控除) | Up to JPY 380,000 (if spouse income ≤ JPY 480,000) |
+| Dependent deduction (扶養控除) | JPY 380,000--630,000 per dependent |
+
+**2025 Temporary Enhanced Basic Deduction:**
 
 | Total Income (合計所得金額) | Basic Deduction (2025) |
-|----------------------------|----------------------|
-| Up to 1,320,000 | 950,000 (temporary special enhancement for 2025-2026) |
-| 1,320,001 -- 2,695,000 | 880,000 (temporary special enhancement for 2025-2026) |
-| 2,695,001 -- 6,550,000 | 680,000 (temporary special enhancement for 2025-2026) |
-| 6,550,001 -- 23,500,000 | 580,000 |
-| 23,500,001 -- 24,000,000 | 480,000 |
-| 24,000,001 -- 24,500,000 | 320,000 |
-| 24,500,001 -- 25,000,000 | 160,000 |
-| Above 25,000,000 | 0 |
+|---|---|
+| Up to JPY 1,320,000 | JPY 950,000 |
+| JPY 1,320,001 -- 2,695,000 | JPY 880,000 |
+| JPY 2,695,001 -- 6,550,000 | JPY 680,000 |
+| JPY 6,550,001 -- 23,500,000 | JPY 580,000 |
+| Above JPY 25,000,000 | JPY 0 |
 
-**Note:** For 2025-2026 only, a temporary special enhancement (特定親族特別控除 / 特別基礎控除上乗せ) applies for incomes up to 6,550,000, providing an additional basic deduction above the standard 580,000. Confirm details with the NTA for the exact applicable amounts.
+### 5.6 Advance Tax / Estimated Tax (予定納税)
 
----
+Applies to taxpayers whose prior year national income tax exceeded JPY 150,000. NTA sends a notification. Two instalments: July 31 and November 30, each = 1/3 of prior year's tax.
 
-## Step 8: Tax Computation Walkthrough [T1]
+### 5.7 Filing Deadlines
 
-### Full Computation Flow
+| Item | Deadline |
+|---|---|
+| Final return (確定申告) | 15 March of following year |
+| Tax payment | 15 March |
+| Estimated tax (予定納税) 1st | 31 July |
+| Estimated tax 2nd | 30 November |
+| Resident tax payment (quarterly) | June, August, October, January |
 
-```
-1. Gross business revenue (事業収入)
-2. Minus: Necessary expenses (必要経費)
-3. = Business income before blue deduction
-4. Minus: Blue return special deduction (青色申告特別控除)
-5. = Business income (事業所得)
-6. Plus: Other income (給与所得, 雑所得, etc.)
-7. = Total income (合計所得金額)
-8. Minus: Income deductions (所得控除) -- basic, social insurance, spouse, dependents, etc.
-9. = Taxable income (課税所得金額) -- round down to nearest 1,000
-10. Apply progressive rate table (Step 1)
-11. = Calculated income tax (算出税額)
-12. Minus: Tax credits (税額控除) -- dividend credit, housing loan credit, etc.
-13. = National income tax before reconstruction tax
-14. Plus: Reconstruction special income tax (2.1% of line 13)
-15. = Total national tax payable (申告納税額) -- round down to nearest 100
-16. Minus: Withholding tax already paid (源泉徴収税額)
-17. = Tax due / refund (第3期分の税額 / 還付)
-```
-
-**Taxable income is rounded down to the nearest 1,000 yen before applying the rate table.**
-**Final tax payable is rounded down to the nearest 100 yen.**
-
----
-
-## Step 9: Filing Deadlines [T1]
-
-**Legislation:** Income Tax Act; Tax Administration Act
-
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| Final return (確定申告) | March 15 of the following year (e.g., 2025 income due by March 15, 2026) |
-| Payment of national income tax | March 15 (same as filing deadline) |
-| Deferred payment (延納) | Up to half the tax can be deferred until May 31 (with interest) |
-| Resident tax payment | Quarterly: June, August, October, January (municipality sends payment slips after processing the final return) |
-| Consumption tax return (if applicable) | March 31 of the following year |
-
-**Filing period:** February 16 to March 15. The NTA opens the filing window on February 16 each year.
-
-**Extension:** No general extension available for individuals. If the deadline falls on a weekend or holiday, it moves to the next business day.
-
----
-
-## Step 10: Penalties [T1]
-
-**Legislation:** National Tax Penalties Act (国税通則法)
+### 5.8 Penalties
 
 | Offence | Penalty |
-|---------|---------|
-| Late filing (期限後申告) -- within 1 month, voluntary | 5% of the additional tax due (無申告加算税) |
-| Late filing -- beyond 1 month or after notice | 15% on first 500,000 + 20% on excess (無申告加算税) |
-| Under-reporting (過少申告加算税) | 10% of additional tax due (15% on portion exceeding 500,000 or 10% of original tax, whichever is greater) |
-| Fraud or concealment (重加算税) | 35% (with return filed) or 40% (no return filed) |
-| Late payment interest (延滞税) | Approx. 2.4% for first 2 months, then approx. 8.7% (rates adjusted annually based on market rates) |
+|---|---|
+| Late filing (within 1 month, voluntary) | 5% of additional tax (無申告加算税) |
+| Late filing (after notice or > 1 month) | 15% on first JPY 500,000 + 20% on excess |
+| Under-reporting | 10% of additional tax |
+| Fraud / concealment | 35-40% (重加算税) |
+| Late payment interest (延滞税) | ~2.4% for first 2 months, ~8.7% thereafter |
 
 ---
 
-## Step 11: Record Keeping [T1]
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-**Legislation:** Income Tax Act; Blue Return provisions
+### 6.1 Home Office (家事按分)
 
-| Requirement | Blue Return | White Return |
-|-------------|------------|--------------|
-| Retention period | 7 years for accounting books; 5 years for receipts and other documents | 5 years for receipts; 7 years for accounting books (if income > 3M) |
-| What to keep | General journal, general ledger, all invoices, receipts, bank statements, contracts | Simple income/expense records, receipts |
-| Format | Paper or digital (electronic record-keeping rules apply under the Electronic Books Preservation Act / 電子帳簿保存法) | Paper or digital |
-| Invoice requirements | From Oct 2023: Qualified Invoice (適格請求書) for consumption tax input credits | Basic receipts |
+NTA accepts reasonable apportionment of home rent, electricity, internet by floor area ratio or time-based ratio. No requirement for a dedicated room. Acceptable range: 20-50% for full-time home workers. Must be documented and consistent year to year.
 
----
+**Flag for reviewer:** Confirm apportionment method, floor area, and documentation.
 
-## Step 12: Edge Case Registry
+### 6.2 Vehicle Business Use
 
-### EC1 -- Blue return filed without advance application [T1]
-**Situation:** Client started freelancing in April 2025 and wants to file a blue return for 2025, but never submitted Form 144.
-**Resolution:** Blue return application must be filed within 2 months of starting a business, or by March 15 of the first year the blue return is desired (for existing businesses). If the deadline was missed, the client must file a white return for 2025 and apply for blue return from 2026. No retroactive approval.
+Sole proprietors using a vehicle for business can deduct a proportion of running costs (fuel, insurance, road tax, depreciation). Requires either a mileage log or a reasonable percentage documented.
 
-### EC2 -- White return filer tries to carry forward losses [T1]
-**Situation:** White return filer had a business loss of 2,000,000 in 2024 and wants to offset it against 2025 income.
-**Resolution:** NOT allowed. Loss carry-forward is a blue return privilege only. The 2024 loss is forfeited for white return filers.
+**Flag for reviewer:** Confirm business-use percentage and documentation.
 
-### EC3 -- Home office expense without apportionment [T2]
-**Situation:** Client works from home and deducts 100% of rent (120,000/month = 1,440,000/year) as a business expense.
-**Resolution:** Must apportion between business and personal use. NTA expects a reasonable ratio (e.g., floor area or time). If client works from a dedicated room that is 30% of the apartment, deduct 30% = 432,000. [T2] Flag for reviewer to confirm apportionment.
+### 6.3 Entertainment Expenses (接待交際費)
 
-### EC4 -- National pension deducted as necessary expense [T1]
-**Situation:** Client includes national pension payments (199,080/year) in the necessary expenses section of the return.
-**Resolution:** INCORRECT. National pension is a social insurance deduction (所得控除), NOT a necessary expense (必要経費). Move to the social insurance deduction section. It reduces income after business income computation, not business income itself.
+Japan has no statutory cap on entertainment deductions for sole proprietors. However, unusually high entertainment expenses relative to revenue will attract NTA scrutiny. Each meal/event should be documented with attendee names, business purpose, date, venue.
 
-### EC5 -- Blue return: simplified bookkeeping claiming 650,000 deduction [T1]
-**Situation:** Blue return filer uses simplified bookkeeping (簡易簿記) but claims the 650,000 special deduction.
-**Resolution:** INCORRECT. Simplified bookkeeping only qualifies for the 100,000 deduction. The 650,000 deduction requires double-entry bookkeeping AND e-Tax filing (or approved electronic record-keeping). Reduce to 100,000.
+### 6.4 Spouse / Family Employee Salary (専従者給与)
 
-### EC6 -- Reconstruction tax omitted [T1]
-**Situation:** Client computes national income tax as 500,000 but does not add the reconstruction special income tax.
-**Resolution:** INCORRECT. Must add 2.1%: 500,000 x 2.1% = 10,500. Total national tax = 510,500. The reconstruction surtax applies to all individual income tax through 2037.
+Blue return filers may deduct salaries paid to family members working in the business (pre-registered as 専従者). White return filers are limited to a notional allowance (JPY 500,000 for spouse, JPY 860,000 for others). Flag if family salaries appear in bank data.
 
-### EC7 -- Entertainment expenses for sole proprietor [T2]
-**Situation:** Sole proprietor deducts 800,000 in entertainment/hospitality expenses (接待交際費).
-**Resolution:** Unlike corporations (which have statutory limits), sole proprietors have NO statutory cap on entertainment deductions. However, the expenses must be genuinely business-related and reasonable. An unusually high amount will attract NTA scrutiny. [T2] Flag for reviewer to assess reasonableness.
+### 6.5 iDeCo / Small Enterprise Mutual Aid
 
-### EC8 -- Asset under 100,000 yen capitalised [T1]
-**Situation:** Client buys a 80,000 yen desk and adds it to the depreciation schedule.
-**Resolution:** Assets costing under 100,000 yen are treated as consumables (少額減価償却資産) and can be expensed immediately. Remove from depreciation schedule and deduct fully in current year.
-
-### EC9 -- Spouse deduction claimed when spouse income is too high [T1]
-**Situation:** Client claims spouse deduction (配偶者控除) of 380,000, but spouse has part-time income of 1,500,000.
-**Resolution:** INCORRECT. Spouse deduction requires spouse's total income to be 480,000 or less (approximately 1,030,000 in gross salary after the employment income deduction). At 1,500,000 gross salary, the spouse's income exceeds the limit. Check if special spouse deduction (配偶者特別控除) applies at a reduced amount based on a sliding scale.
-
-### EC10 -- Withholding tax on freelance payments not claimed as credit [T1]
-**Situation:** Freelance designer received 1,000,000 in payments from clients, with 102,100 withheld at source (10.21%). Client reports net receipts of 897,900 as income.
-**Resolution:** INCORRECT. Gross income is 1,000,000 (pre-withholding). The 102,100 is a tax credit (源泉徴収税額), not a reduction of income. Report 1,000,000 as gross business revenue and claim 102,100 as a credit against the final tax liability.
+Contributions to iDeCo (個人型確定拠出年金) or small enterprise mutual aid (小規模企業共済) are fully deductible as income deductions. Large contributions can significantly reduce tax liability. Flag if client mentions these -- confirm amounts from contribution statements.
 
 ---
 
-## Step 13: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel Working Paper Template
 
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Licensed tax accountant (税理士) must confirm before filing.
-```
+確定申告 WORKING PAPER -- Tax Year 2025
+Taxpayer: _______________  My Number: ___________
+Return type: Blue (double-entry / simplified) / White [circle one]
+Filing method: e-Tax / Paper [circle one]
 
-When Claude identifies a [T3] situation:
+A. 事業収入 (GROSS BUSINESS REVENUE)
+  A1. Total invoiced / received               ___________
+  A2. Less: consumption tax collected (if CT-registered)  ___________
+  A3. Net business revenue                    ___________
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to licensed tax accountant (税理士). Document gap.
+B. 必要経費 (NECESSARY EXPENSES)
+  B1. 地代家賃 (rent / office costs)          ___________
+  B2. 水道光熱費 (utilities -- business %)    ___________
+  B3. 通信費 (phone/internet -- business %)  ___________
+  B4. 旅費交通費 (travel)                    ___________
+  B5. 接待交際費 (entertainment)             ___________
+  B6. 広告宣伝費 (advertising)              ___________
+  B7. 消耗品費 (consumables / SaaS)         ___________
+  B8. 減価償却費 (depreciation)             ___________
+  B9. 外注工賃 (subcontracting)             ___________
+  B10. 税理士費用 (adviser fees)            ___________
+  B11. 雑費 (bank charges, misc)            ___________
+  B12. Total 必要経費                        ___________
+
+C. 事業所得 BEFORE DEDUCTION (A3 - B12)      ___________
+
+D. 青色申告特別控除 (Blue return deduction)  ___________
+
+E. 事業所得 (C - D)                          ___________
+
+F. 所得控除 (INCOME DEDUCTIONS)
+  F1. 基礎控除 (basic deduction)            ___________
+  F2. 社会保険料控除 (NHI + pension)        ___________
+  F3. 小規模企業共済等 (iDeCo, etc.)       ___________
+  F4. 生命保険料控除                        ___________
+  F5. 配偶者控除 / 扶養控除               ___________
+  F6. Total 所得控除                        ___________
+
+G. 課税所得 (E - F6) -- round down to 1,000  ___________
+
+H. 所得税 (apply rate table)                 ___________
+
+I. 復興特別所得税 (H x 2.1%)               ___________
+
+J. TOTAL NATIONAL TAX (H + I)               ___________
+
+K. 源泉徴収税額 (withholding credits)       ___________
+
+L. 予定納税 (estimated tax credits)         ___________
+
+M. NET TAX DUE / REFUND (J - K - L)        ___________
+
+REVIEWER FLAGS:
+  [ ] Blue return application filed in advance?
+  [ ] Bookkeeping method confirmed (double-entry vs simplified)?
+  [ ] Home office apportionment documented?
+  [ ] Withholding credits verified against 支払調書?
+  [ ] National pension / NHI receipts confirmed?
 ```
 
 ---
 
-## Step 14: Test Suite
+## Section 8 -- Bank Statement Reading Guide
 
-### Test 1 -- Standard blue return filer, mid-range income
-**Input:** Resident, blue return (double-entry + e-Tax), gross business revenue 8,000,000, necessary expenses 2,500,000, national pension 199,080, national health insurance 450,000, basic deduction applies. No other deductions.
-**Expected output:** Business income before blue deduction = 5,500,000. Blue deduction = 650,000. Business income = 4,850,000. Total income = 4,850,000. Social insurance deduction = 199,080 + 450,000 = 649,080. Basic deduction = 680,000 (temporary enhanced for income up to 6.55M). Taxable income = 4,850,000 - 649,080 - 680,000 = 3,520,920, rounded down to 3,520,000. Tax = (3,520,000 x 20%) - 427,500 = 276,500. Reconstruction tax = 276,500 x 2.1% = 5,806 (rounded down to 5,806). Total national tax = 282,306, rounded down to 282,300.
+### Japanese Bank Statement Formats
 
-### Test 2 -- White return filer, low income
-**Input:** Resident, white return, gross business revenue 3,000,000, necessary expenses 1,200,000, national pension 199,080, national health insurance 200,000. No dependents.
-**Expected output:** Business income = 1,800,000 (no blue deduction). Social insurance = 399,080. Basic deduction = 880,000 (temporary enhanced for income up to 2.695M). Taxable income = 1,800,000 - 399,080 - 880,000 = 520,920, rounded down to 520,000. Tax = 520,000 x 5% = 26,000. Reconstruction tax = 26,000 x 2.1% = 546. Total = 26,546, rounded down to 26,500.
+| Bank | Format | Key Fields |
+|---|---|---|
+| 三菱UFJ (MUFG) | CSV / PDF | 日付, 摘要, お引出し, お預入れ, 残高 |
+| みずほ銀行 (Mizuho) | CSV | 取引年月日, 摘要, お支払金額, お預り金額, 差引残高 |
+| 三井住友銀行 (SMBC) | CSV / PDF | 年月日, 摘要, 支払金額, 預入金額, 残高 |
+| 楽天銀行 (Rakuten Bank) | CSV | 取引日, 入出金(円), 残高(円), 取引名称, 利用先 |
+| ゆうちょ銀行 (Japan Post Bank) | CSV | 年月日, 摘要, 支払金額, 預入金額, 差引残高 |
+| 住信SBIネット銀行 (SBI Sumishin) | CSV | 取引日, 内容, 出金金額, 入金金額, 残高 |
 
-### Test 3 -- Blue return with simplified bookkeeping
-**Input:** Resident, blue return with simplified bookkeeping (簡易簿記), paper filing. Gross revenue 5,000,000, expenses 1,500,000.
-**Expected output:** Blue deduction = 100,000 (not 650,000 -- simplified bookkeeping). Business income = 5,000,000 - 1,500,000 - 100,000 = 3,400,000.
+### Key Japanese Banking Terms
 
-### Test 4 -- Withholding tax credit
-**Input:** Freelance writer, blue return (e-Tax, double-entry). Gross revenue 6,000,000 (before withholding). Withholding tax deducted by clients: 612,600 (10.21%). Expenses: 1,000,000.
-**Expected output:** Business income = 6,000,000 - 1,000,000 - 650,000 = 4,350,000. After income deductions (assume 1,200,000 total), taxable income = 3,150,000. Tax = (3,150,000 x 10%) - 97,500 = 217,500. Reconstruction = 217,500 x 2.1% = 4,567. Total = 222,067, rounded to 222,000. Less withholding 612,600. Refund of approximately 390,600.
+| Japanese Term | English | Classification Hint |
+|---|---|---|
+| 振込入金 | Wire transfer in | Potential income |
+| 振込出金 / 振込手数料 | Wire transfer out / fee | Potential expense or bank fee |
+| 自動振替 | Auto debit | Regular expense (utilities, insurance) |
+| カード利用 | Card payment | Identify payee |
+| ATM出金 | ATM withdrawal | Personal -- ask purpose |
+| 利息 / 利子 | Interest | Other income |
+| 税金 口座振替 | Tax payment auto-debit | Exclude (tax payment) |
+| 国民年金 振替 | Pension auto-debit | Income deduction (not expense) |
+| 国保 振替 | Health insurance auto-debit | Income deduction (not expense) |
 
-### Test 5 -- Loss carry-forward (blue return only)
-**Input:** Blue return filer. 2024 loss of 1,500,000 carried forward. 2025 business income = 4,000,000.
-**Expected output:** 2025 business income after loss offset = 4,000,000 - 1,500,000 = 2,500,000. The loss carry-forward is applied before income deductions.
+---
 
-### Test 6 -- National pension incorrectly deducted as necessary expense
-**Input:** Client includes 199,080 national pension in necessary expenses (必要経費).
-**Expected output:** Remove from necessary expenses. Move to social insurance deduction (社会保険料控除). Business income increases by 199,080; but taxable income remains the same since it is deducted as an income deduction instead.
+## Section 9 -- Onboarding Fallback
 
-### Test 7 -- Reconstruction tax verification
-**Input:** National income tax calculated as 1,000,000.
-**Expected output:** Reconstruction tax = 1,000,000 x 2.1% = 21,000. Total national tax = 1,021,000.
+If the client provides a bank statement but cannot answer onboarding questions immediately:
+
+1. Classify all 振込入金 credits from non-bank entities as potential 事業収入
+2. Mark all 国民年金 and 国保 debits as 社会保険料控除 (income deductions)
+3. Apply conservative defaults: white return (0 special deduction), 0% home office
+4. Flag all restaurant / entertainment debits as PENDING
+5. Generate working paper with clear PENDING flags
+
+Present these questions:
+
+```
+ONBOARDING QUESTIONS -- JAPAN INCOME TAX (確定申告)
+1. Blue return or white return (青色申告 or 白色申告)?
+2. Bookkeeping: double-entry (複式簿記) or simplified (簡易簿記)?
+3. Filing method: e-Tax or paper?
+4. Are you registered for consumption tax (消費税)?
+5. Home office: what % of home floor area is used for business?
+6. Withholding (源泉徴収): do any clients deduct tax before paying?
+7. Do you have a 支払調書 (payment record) from each withholding client?
+8. iDeCo or 小規模企業共済 contributions this year?
+9. Spouse / dependents?
+10. Prior year estimated tax (予定納税) notices?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Article |
+|---|---|
+| Business income (事業所得) | Income Tax Act Art. 27 |
+| Necessary expenses (必要経費) | ITA Art. 37 |
+| Blue return (青色申告) | ITA Art. 143-148 |
+| Blue return special deduction | Special Taxation Measures Act Art. 25-2 |
+| Depreciation | ITA Art. 49 |
+| Income deductions (所得控除) | ITA Art. 72-86 |
+| Reconstruction surtax | Act on Special Measures for Securing Financial Resources Necessary for Reconstruction |
+| Estimated tax (予定納税) | ITA Art. 104-109 |
+
+### Known Gaps / Out of Scope
+
+- Non-resident taxation (非居住者)
+- Cryptocurrency / virtual digital assets (暗号資産)
+- Real estate capital gains (土地建物の譲渡所得)
+- Inheritance tax (相続税)
+- Consumption tax (消費税) return -- separate skill required
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; Japanese bank format guide; local platform patterns; worked examples |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] Reconstruction surtax (2.1%) added to national income tax?
+- [ ] Taxable income rounded DOWN to nearest JPY 1,000 before applying rates?
+- [ ] Final tax rounded DOWN to nearest JPY 100?
+- [ ] National pension and health insurance excluded from 必要経費?
+- [ ] Blue return deduction matched to correct bookkeeping method?
+- [ ] Withholding credits verified against 支払調書, not just bank statement?
+- [ ] Blue return advance application verified (Form 144)?
 
 ---
 
 ## PROHIBITIONS
 
-- NEVER compute income tax without confirming tax residency status
-- NEVER apply the 650,000 blue return deduction without verifying double-entry bookkeeping AND e-Tax filing (or approved digital record-keeping)
-- NEVER allow blue return privileges (loss carry-forward, full family salary deduction, 650,000 deduction) for white return filers
-- NEVER omit the reconstruction special income tax (2.1%)
-- NEVER deduct national pension or health insurance as a necessary expense -- they are income deductions
+- NEVER omit the reconstruction special income tax (2.1%) -- it applies to all income tax through 2037
+- NEVER apply the JPY 650,000 blue return deduction without confirming double-entry bookkeeping AND e-Tax filing
+- NEVER allow national pension or health insurance as 必要経費 -- they are 所得控除
 - NEVER allow income tax or resident tax as a deduction
-- NEVER allow fines or penalties as a deduction
-- NEVER skip rounding down taxable income to the nearest 1,000 yen before applying rates
-- NEVER skip rounding down final tax payable to the nearest 100 yen
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their tax accountant (税理士) for confirmation
-- NEVER advise on non-resident taxation, cryptocurrency gains, or real estate capital gains without escalating [T3]
+- NEVER allow white return filers to carry forward losses
+- NEVER skip rounding down taxable income to nearest JPY 1,000 before applying rates
+- NEVER skip rounding down final tax to nearest JPY 100
+- NEVER present tax calculations as definitive -- always label as estimated and direct client to their 税理士 for confirmation
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Certified Public Tax Accountant / 税理士 or equivalent licensed practitioner in Japan) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a 税理士 or equivalent licensed practitioner in Japan) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
