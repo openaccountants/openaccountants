@@ -1,521 +1,366 @@
 ---
 name: cambodia-vat
-description: Use this skill whenever asked to prepare, review, or create a Cambodia VAT return or any VAT filing for a Cambodian business. Trigger on phrases like "prepare VAT return", "Cambodia VAT", "GDT filing", "tax on value added", or any request involving Cambodia VAT. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Cambodia VAT classification rules, return form mappings, input credit rules, and filing deadlines. ALWAYS read this skill before touching any Cambodia VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Cambodia VAT return for any client. Trigger on phrases like "Cambodia VAT", "GDT filing", "tax on value added", or any request involving Cambodia VAT. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Cambodia VAT work.
+version: 2.0
 ---
 
-# Cambodia VAT Return Preparation Skill
+# Cambodia VAT Return Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Cambodia |
-| Jurisdiction Code | KH |
-| Primary Legislation | Law on Taxation (as amended, last major amendment 2023) |
-| Supporting Legislation | Prakas (ministerial orders) on VAT; Sub-Decrees on Tax Administration |
-| Tax Authority | General Department of Taxation (GDT), Ministry of Economy and Finance |
-| Filing Portal | https://www.tax.gov.kh (E-Filing System) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Pending local practitioner validation |
-| Validation Date | Pending |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: standard rate classification, input-output mapping, return structure. Tier 2: special regime (QIP), sector exemptions, non-resident tax. Tier 3: complex group structures, SEZ enterprises, treaty-based exemptions. |
+|---|---|
+| Country | Cambodia (Kingdom of Cambodia) |
+| Standard rate | 10% |
+| Zero rate | 0% (exports, international transport) |
+| Exempt | Financial services, public postal, medical, education, electricity/water (residential) |
+| Return form | Monthly VAT return (Form submitted via E-Filing) |
+| Filing portal | https://www.tax.gov.kh (GDT E-Filing) |
+| Authority | General Department of Taxation (GDT), Ministry of Economy and Finance |
+| Currency | KHR (Cambodian Riel); USD widely used |
+| Filing frequency | Monthly |
+| Deadline | 20th of the month following the tax period |
+| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
+| Validated by | Pending local practitioner validation |
 
----
+**Key return fields:**
 
-## Confidence Tier Definitions
+| Field | Meaning |
+|---|---|
+| Output tax | VAT on domestic sales at 10% |
+| Zero-rated output | Exports and qualifying supplies at 0% |
+| Exempt output | Exempt supplies (reported but no VAT) |
+| Input tax — domestic | VAT on local purchases with proper tax invoice |
+| Input tax — imports | VAT paid at customs |
+| Net VAT | Output tax minus total input tax |
 
-Every rule in this skill is tagged with a confidence tier:
+**Conservative defaults:**
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified accountant must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified accountant and document the gap.
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 10% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty location | Domestic Cambodia |
+| Unknown business-use proportion | 0% recovery |
+| Unknown blocked-input status | Blocked |
 
----
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and TIN (Tax Identification Number)** [T1] -- 9-digit TIN issued by GDT
-2. **VAT registration status** [T1] -- Real Regime (VAT registered) or Estimated Regime (simplified, no VAT)
-3. **VAT period** [T1] -- monthly (standard for Real Regime taxpayers)
-4. **Industry/sector** [T2] -- impacts potential exemptions
-5. **Does the business make exempt supplies?** [T2] -- If yes, input credit apportionment required
-6. **Does the business import goods?** [T1] -- impacts customs-stage VAT
-7. **Does the business export goods/services?** [T1] -- impacts zero-rating
-8. **Is the entity a Qualified Investment Project (QIP)?** [T3] -- special tax incentives
-9. **Is the entity in a Special Economic Zone (SEZ)?** [T3] -- special rules
-10. **Excess credit brought forward** [T1] -- from prior period
-
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until registration and period are confirmed.**
-
----
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, NSSF contributions, loan repayments, dividends = OUT OF SCOPE (never on VAT return)
-- **Legislation:** Law on Taxation, Chapter 4 (VAT)
-
-### 1b. Determine Supply Location [T1]
-- Domestic (within Cambodia)
-- Import (goods/services from outside Cambodia)
-- Export (goods/services to outside Cambodia)
-- **Legislation:** Law on Taxation, Article 56 (place of supply)
-
-### 1c. Determine VAT Rate [T1]
-- **Standard rate:** 10%
-- **Zero-rated:** Exports of goods and services
-- **Exempt:** Listed in Article 57 of Law on Taxation:
-  - Public postal services
-  - Medical and dental services, medical supplies
-  - Public transportation (not including tourist transport)
-  - Insurance services (life insurance)
-  - Primary financial services (interest income, currency exchange)
-  - Import of articles for personal use (under de minimis threshold)
-  - Non-profit activities
-  - Electricity and water supply (domestic, up to threshold)
-  - Unprocessed agricultural products
-- **Legislation:** Law on Taxation, Article 55 (rates), Article 57 (exemptions)
-
-### 1d. Determine Expense Category [T1]
-- Capital goods: fixed assets with useful life > 1 year
-- Trading stock: goods purchased for resale
-- Raw materials / inputs
-- Services/overheads: rent, utilities, professional fees
-- **Legislation:** Law on Taxation, Article 59 (input VAT credit)
-
----
-
-## Step 2: VAT Return Form Structure [T1]
-
-**Legislation:** Law on Taxation; GDT e-Filing system forms.
-
-### Monthly VAT Return Sections
-
-| Section | Description |
-|---------|-------------|
-| Part 1 | Taxpayer information (TIN, name, period) |
-| Part 2 | Sales / Output |
-| 2.1 | Taxable sales at 10% |
-| 2.2 | Zero-rated sales (exports) |
-| 2.3 | Exempt sales |
-| 2.4 | Total sales |
-| Part 3 | Output VAT |
-| 3.1 | VAT on taxable sales (10%) |
-| Part 4 | Purchases / Input |
-| 4.1 | Domestic taxable purchases |
-| 4.2 | Imports (VAT paid at customs) |
-| 4.3 | Non-creditable purchases |
-| 4.4 | Total purchases |
-| Part 5 | Input VAT credit |
-| 5.1 | VAT on domestic purchases |
-| 5.2 | VAT on imports |
-| 5.3 | Total input VAT credit |
-| Part 6 | Net VAT |
-| 6.1 | Net tax (output - input) |
-| 6.2 | Credit brought forward |
-| 6.3 | Total payable or credit carried forward |
-
----
-
-## Step 3: Input Tax Credit Mechanism [T1]
-
-**Legislation:** Law on Taxation, Article 59-63.
-
-### Eligibility for Input Tax Credit
-
-1. The business must be registered under the Real Regime [T1]
-2. The purchase must relate to making taxable supplies [T1]
-3. A valid VAT invoice must be held [T1]
-4. The supplier must be VAT registered [T1]
-5. The claim must be made in the correct return period [T1]
-
-### Input Tax Credit Rules
-
-- Input VAT credit is available for goods and services used in making taxable (including zero-rated) supplies
-- If used for both taxable and exempt supplies, apportionment required [T2]
-- Credit cannot exceed output VAT unless consistently in credit (export-oriented businesses)
-- Excess credit is carried forward (no automatic refund)
-
-### Input Tax Credit Apportionment [T2]
-
-```
-Creditable Input VAT = Total Input VAT x (Taxable Turnover / Total Turnover)
-```
-**Flag for reviewer: apportionment calculation must be confirmed.**
-
----
-
-## Step 4: Deductibility Check
-
-### Blocked Input Tax Credit [T1]
-
-**Legislation:** Law on Taxation, Article 60.
-
-These have ZERO input tax credit:
-
-- Entertainment expenses (meals, hospitality, recreation)
-- Motor vehicles for personal use (private cars, motorcycles)
-- Goods and services for personal consumption of owners/directors/employees
-- Purchases without valid VAT invoice
-- Purchases from Estimated Regime (non-VAT-registered) taxpayers
-- Alcohol and tobacco (unless in production/distribution business)
-- Gifts and donations
-- Goods used exclusively for exempt supplies
-
-Blocked categories OVERRIDE any other credit rule. Check blocked FIRST.
-
-### Registration-Based Recovery [T1]
-- Real Regime (VAT registered): input tax credit allowed
-- Estimated Regime: NO input tax credit (flat turnover tax instead)
-
----
-
-## Step 5: Withholding Tax Interaction [T1]
-
-**Legislation:** Law on Taxation, Articles 24-33.
-
-While withholding tax (WHT) is not VAT, it is commonly confused. Key distinctions:
-
-| Tax | Nature | Applies To |
-|-----|--------|-----------|
-| VAT (10%) | Indirect, on consumption | Goods and services |
-| WHT on services (15%) | Direct, on income | Payments to non-residents for services |
-| WHT on rent (10%) | Direct, on income | Rental payments |
-| WHT on interest (15%) | Direct, on income | Interest payments |
-
-**WHT and VAT are separate obligations. Both may apply to the same transaction. VAT goes on the VAT return; WHT goes on the WHT return.**
-
----
-
-## Step 6: VAT on Imports [T1]
-
-**Legislation:** Law on Taxation, Article 58; Customs Law.
-
-### Import VAT
-- VAT is payable at the point of importation
-- Calculated on: CIF value + Customs Duty + Excise Tax (if applicable)
-- Rate: 10%
-- Paid to General Department of Customs and Excise (GDCE) at time of clearing
-- Recoverable as input VAT credit if goods used for taxable supplies
-
-### Documentation Required
-- Customs Declaration (SAD)
-- Commercial invoice
-- Bill of Lading / Airway Bill
-- Customs payment receipt
-
----
-
-## Step 7: Key Thresholds [T1]
+**Red flag thresholds:**
 
 | Threshold | Value |
-|-----------|-------|
-| Real Regime mandatory (turnover) | Quarterly turnover > KHR 125 million (~USD 31,250) for goods; KHR 60 million (~USD 15,000) for services; or annual turnover > KHR 250 million (goods) / KHR 125 million (services). Importers, exporters, investment companies, and government contractors with total taxable turnover > KHR 30 million must also register. |
-| Estimated Regime | Below Real Regime thresholds (simplified turnover tax) |
-| Estimated Regime tax rate | 2% of turnover (goods) or 2% of turnover (services) |
+|---|---|
+| HIGH single-transaction size | USD 5,000 |
+| HIGH tax-delta on a single default | USD 500 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
 
 ---
 
-## Step 8: Filing Deadlines [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-| Category | Period | Deadline |
-|----------|--------|----------|
-| VAT return (Real Regime) | Monthly | By the 20th of the following month |
-| Payment | Monthly | Same deadline as return |
-| Annual return / Tax on Profit | Annual | Within 3 months after fiscal year end |
+### Required inputs
 
-### Late Filing Penalties [T1]
+**Minimum viable** — bank statement for the month. Acceptable from: ABA Bank, ACLEDA Bank, Canadia Bank, Prince Bank, Wing Bank, or any other.
 
-| Default | Penalty |
-|---------|---------|
-| Late filing | KHR 500,000 per month (minimum) or 2% of tax per month |
-| Late payment | 2% per month on unpaid amount |
-| Non-filing | Assessment by GDT + penalties |
-| Failure to register | Retrospective registration + penalties |
-| Tax evasion | Criminal prosecution, fines up to 400% of tax evaded |
+**Recommended** — sales invoices, purchase invoices with supplier TIN, client's TIN.
 
----
+**Ideal** — complete purchase/sales registers, prior period return, credit brought forward reconciliation.
 
-## Step 9: Derived Calculations [T1]
+### Cambodia-specific refusal catalogue
 
-```
-Total Output VAT       = VAT on all standard-rated supplies (10%)
-Total Input VAT        = VAT on domestic purchases + VAT on imports
-Net VAT Payable        = Total Output VAT - Total Input VAT - Credit B/F
-If Net < 0             = Credit carried forward
-Total Payable          = Net VAT Payable + Penalties/Interest (if any)
-```
+**R-KH-1 — Qualified Investment Project (QIP) entity.** Trigger: client holds a QIP certificate from Council for the Development of Cambodia. Message: "QIP entities have special VAT exemptions and incentive periods. Please escalate to a qualified Cambodian tax practitioner."
+
+**R-KH-2 — Special Economic Zone (SEZ) enterprise.** Trigger: client operates in an SEZ. Message: "SEZ enterprises have special import/export VAT treatment. Out of scope."
+
+**R-KH-3 — Non-resident tax obligations.** Trigger: non-resident entity with Cambodian obligations. Message: "Non-resident tax obligations require specialist analysis. Please escalate."
 
 ---
 
-## Step 10: Specific Tax on Certain Merchandise and Services (STCMS) [T1]
+## Section 3 — Supplier pattern library
 
-**Legislation:** Law on Taxation, Chapter 8.
+### 3.1 Cambodian banks (fees exempt — exclude)
 
-STCMS (similar to excise duty) applies to specific goods:
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ABA BANK, ABA | EXCLUDE for bank charges/fees | Financial service, exempt |
+| ACLEDA, ACLEDA BANK | EXCLUDE for bank charges/fees | Same |
+| CANADIA BANK, PRINCE BANK | EXCLUDE for bank charges/fees | Same |
+| WING, WING BANK | EXCLUDE for transfer fees | Mobile money, exempt |
+| ANZ ROYAL, J TRUST ROYAL | EXCLUDE for bank charges | Same |
+| INTEREST, INCOME INTEREST | EXCLUDE | Out of scope |
+| LOAN, REPAYMENT | EXCLUDE | Loan principal, out of scope |
 
-| Category | Rate |
-|----------|------|
-| Cigarettes | 20% - 25% |
-| Beer | 25% - 30% |
-| Wine and spirits | 25% - 35% |
-| Vehicles | 10% - 45% (depending on engine size) |
-| Petroleum products | Specific rates per liter |
-| Telecommunications | 3% |
-| Air tickets (domestic) | 10% |
+### 3.2 Government and statutory bodies (exclude)
 
-STCMS is calculated BEFORE VAT. VAT at 10% is applied on (value + STCMS).
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GDT, GENERAL DEPARTMENT OF TAXATION | EXCLUDE | Tax payment |
+| CUSTOMS, GDCE | EXCLUDE | Customs duty (import VAT separate) |
+| MOC, MINISTRY OF COMMERCE | EXCLUDE | Registration/licence fees |
+| NSSF, SOCIAL SECURITY | EXCLUDE | Social security contribution |
 
----
+### 3.3 Utilities
 
-## PROHIBITIONS [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| EDC, ELECTRICITE DU CAMBODGE | Domestic 10% | Electricity (commercial) |
+| PHNOM PENH WATER SUPPLY | Domestic 10% | Water (commercial use) |
+| SMART, CELLCARD, METFONE | Domestic 10% | Telecoms |
 
-- NEVER allow Estimated Regime taxpayers to claim input VAT credit
-- NEVER classify exempt supplies as zero-rated
-- NEVER accept input VAT credit without valid VAT invoice from Real Regime supplier
-- NEVER apply input credit on blocked categories
-- NEVER confuse WHT with VAT -- they are separate obligations
-- NEVER ignore STCMS when calculating VAT base for applicable goods
-- NEVER allow input credit older than the current return period without adjustment
-- NEVER file return without reconciling purchase/sales journals
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+### 3.4 Insurance (exempt — exclude)
 
----
+| Pattern | Treatment | Notes |
+|---|---|---|
+| FORTE INSURANCE, CAMBODIA RE | EXCLUDE | Insurance, exempt |
+| INFINITY GENERAL, ASIA INSURANCE | EXCLUDE | Same |
 
-## Step 11: Edge Case Registry
+### 3.5 Digital payments
 
-### EC1 -- Reverse charge on imported services [T2]
-**Situation:** Cambodian company pays for consulting services from a foreign firm with no Cambodia presence.
-**Resolution:** Client must self-assess VAT at 10% on the service value. Report as output VAT. May claim input credit if related to taxable supplies. Also assess WHT at 14% (separate obligation).
-**Legislation:** Law on Taxation, Article 56.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| WING TRANSFER FEE | EXCLUDE | Financial service fee, exempt |
+| PI PAY, TRUE MONEY, BAKONG | EXCLUDE for fees | Same |
 
-### EC2 -- QIP enterprise VAT treatment [T3]
-**Situation:** Client holds a QIP certificate from the Council for Development of Cambodia (CDC).
-**Resolution:** QIP enterprises may be exempt from VAT on certain imports or supplies under their investment certificate. Do not classify. Escalate to practitioner to review QIP certificate terms.
-**Legislation:** Law on Investment; CDC QIP certificate.
+### 3.6 SaaS and international services
 
-### EC3 -- Mixed supply: taxable and exempt [T2]
-**Situation:** Bank provides both lending (exempt) and advisory (taxable) services.
-**Resolution:** Input VAT credit must be apportioned. Only the portion relating to taxable supplies is creditable. Flag for reviewer: confirm apportionment ratio.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, META, FACEBOOK | Self-assess 10% (reverse charge) | Non-resident digital service |
+| AWS, AMAZON, ZOOM, SLACK | Self-assess 10% | Same |
+| CANVA, FIGMA, NOTION, OPENAI | Self-assess 10% | Same |
 
-### EC4 -- Credit notes for price adjustments [T1]
-**Situation:** Supplier issues credit note for defective goods returned.
-**Resolution:** Supplier reduces output VAT in the period of credit note. Buyer reduces input VAT credit. Both adjust records accordingly.
+### 3.7 Professional services
 
-### EC5 -- Prepaid Accommodation Tax interaction [T2]
-**Situation:** Hotel collects both VAT and Accommodation Tax from guests.
-**Resolution:** Accommodation Tax (2%) is a separate levy from VAT (10%). Both apply. VAT is on the room rate. Accommodation Tax is on the room rate excluding VAT. They are reported on separate returns. Do not net them.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| LAW FIRM, LEGAL, ADVOCATE | Domestic 10% | Deductible if business purpose |
+| AUDIT, ACCOUNTING, CONSULTANT | Domestic 10% | Professional overhead |
 
-### EC6 -- Supply of used goods [T1]
-**Situation:** Company sells used office equipment.
-**Resolution:** VAT at 10% on the selling price. Full output VAT applies regardless of whether input credit was claimed on original purchase. No reduced-rate or margin scheme in Cambodia.
+### 3.8 Property and rent
 
-### EC7 -- Non-resident digital services [T2]
-**Situation:** Cambodian business subscribes to international SaaS platform.
-**Resolution:** Reverse charge applies. Self-assess VAT at 10%. Also assess WHT at 14% if applicable. Flag for reviewer: confirm whether non-resident has registered for VAT in Cambodia (new rules may apply).
+| Pattern | Treatment | Notes |
+|---|---|---|
+| RENT, OFFICE RENT | Domestic 10% | Commercial lease with VAT invoice |
+| RESIDENTIAL RENT | EXCLUDE | Residential, exempt |
 
-### EC8 -- Goods in transit through Cambodia [T1]
-**Situation:** Goods pass through Cambodia in transit to a third country.
-**Resolution:** No VAT applies to goods in transit if they remain under customs control and are not released for domestic consumption. Documentation must show transit status.
+### 3.9 Payroll (exclude)
 
----
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES, BONUS | EXCLUDE | Outside VAT scope |
+| NSSF CONTRIBUTION | EXCLUDE | Social security |
 
-## Step 12: Reviewer Escalation Protocol
+### 3.10 Internal transfers
 
-When a [T2] situation is identified, output the following structured flag:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified accountant must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified accountant. Document gap.
-```
+| Pattern | Treatment | Notes |
+|---|---|---|
+| OWN TRANSFER, INTERNAL | EXCLUDE | Internal movement |
+| DIVIDEND | EXCLUDE | Out of scope |
+| CASH WITHDRAWAL, ATM | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 13: Test Suite
+## Section 4 — Worked examples
 
-### Test 1 -- Standard local sale at 10%
-**Input:** Domestic sale of electronics, net KHR 10,000,000, VAT KHR 1,000,000. Real Regime client.
-**Expected output:** Part 2.1: KHR 10,000,000. Part 3.1: Output VAT KHR 1,000,000.
+### Example 1 — Standard domestic sale at 10%
 
-### Test 2 -- Local purchase with input credit
-**Input:** Purchase of office supplies from Real Regime supplier, net KHR 2,000,000, VAT KHR 200,000. Valid invoice held.
-**Expected output:** Part 5.1: Input VAT KHR 200,000. Full credit.
+**Input line:**
+`05.04.2026 ; XYZ TRADING CO ; CREDIT ; Invoice KH-2026-041 ; USD 1,100`
 
-### Test 3 -- Import with customs VAT
-**Input:** Import of raw materials, CIF USD 10,000 (KHR 40,000,000). Customs duty KHR 2,000,000. VAT at 10% on KHR 42,000,000 = KHR 4,200,000.
-**Expected output:** Part 5.2: Input VAT KHR 4,200,000. Credit allowed.
+**Reasoning:** Domestic sale. Standard 10%. Net = USD 1,000, VAT = USD 100. Output tax.
 
-### Test 4 -- Export (zero-rated)
-**Input:** Export of garments, FOB USD 50,000. All documentation complete.
-**Expected output:** Part 2.2: KHR equivalent at 0%. No output VAT. Input credit recoverable.
+**Output:**
 
-### Test 5 -- Blocked input: entertainment
-**Input:** Company pays for client dinner, KHR 1,500,000, VAT KHR 150,000.
-**Expected output:** Input VAT KHR 0 (BLOCKED -- entertainment).
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 05.04.2026 | XYZ TRADING CO | +1,100 | +1,000 | 100 | 10% | Output tax | N | — |
 
-### Test 6 -- Estimated Regime, no input credit
-**Input:** Small shop (Estimated Regime), monthly sales KHR 8,000,000.
-**Expected output:** Turnover tax = 2% x KHR 8,000,000 = KHR 160,000. No VAT return filed. No input credit.
+### Example 2 — Local purchase with input credit
 
-### Test 7 -- Reverse charge on imported services
-**Input:** Cambodian company pays USD 5,000 to Singapore consulting firm. No local VAT invoice.
-**Expected output:** Self-assess output VAT: KHR 2,000,000 (10% of KHR 20,000,000). Input credit: KHR 2,000,000 (if taxable business). Net effect: zero. Also: WHT at 14% = KHR 2,800,000 (separate return).
+**Input line:**
+`10.04.2026 ; ACLEDA SUPPLIES ; DEBIT ; Office equipment ; USD -550`
 
-### Test 8 -- STCMS interaction with VAT
-**Input:** Import of beer, CIF KHR 5,000,000. Customs duty KHR 500,000. STCMS at 30% on KHR 5,500,000 = KHR 1,650,000. VAT at 10% on KHR 7,150,000 = KHR 715,000.
-**Expected output:** Import VAT: KHR 715,000. Input credit: KHR 715,000 (if in resale business). STCMS KHR 1,650,000 is NOT creditable as input VAT.
+**Reasoning:** Local purchase with valid tax invoice. Net = USD 500, VAT = USD 50.
 
----
+**Output:**
 
-## Step 14: Invoice Requirements [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | ACLEDA SUPPLIES | -550 | -500 | 50 | 10% | Input — domestic | N | — |
 
-**Legislation:** Law on Taxation; Prakas on Tax Invoices.
+### Example 3 — Export, zero-rated
 
-### Mandatory Contents of VAT Invoice
-1. Supplier's name, address, and TIN
-2. Buyer's name, address, and TIN (if Real Regime)
-3. Date of issue
-4. Sequential invoice number
-5. Description of goods/services
-6. Quantity and unit price
-7. VAT rate (10%) and VAT amount
-8. Total amount including VAT
-9. "Tax Invoice" must be printed on the document
+**Input line:**
+`15.04.2026 ; THAI IMPORTS CO ; CREDIT ; Exported garments ; USD 8,000`
 
-### Types of Invoices
-- **Tax Invoice:** For Real Regime taxpayers (enables input credit)
-- **Commercial Invoice:** For Estimated Regime taxpayers (does NOT enable input credit for buyer)
-- **Credit Note:** For price adjustments and returns
+**Reasoning:** Export. Zero-rated. Full input recovery on related purchases.
 
----
+**Output:**
 
-## Step 15: Record Keeping [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | THAI IMPORTS CO | +8,000 | +8,000 | 0 | 0% | Zero-rated output | N | — |
 
-**Legislation:** Law on Taxation, Article 73; Sub-Decree on Tax Administration.
+### Example 4 — Non-resident digital service
 
-### Mandatory Records (retain for 10 years)
-1. All purchase and sales invoices
-2. VAT account / control account
-3. Import documentation (SAD, commercial invoices)
-4. Export documentation (customs declarations)
-5. Bank statements and payment receipts
-6. General ledger, journals, and trial balance
-7. Payroll records (separate from VAT but required)
-8. Fixed asset register
-9. Stock/inventory records
-10. Credit and debit notes
+**Input line:**
+`18.04.2026 ; GOOGLE CLOUD ; DEBIT ; Cloud services April ; USD -200`
 
-### Language and Currency
-- Records must be in Khmer or bilingual (Khmer + English)
-- All amounts in KHR (Cambodian Riel)
-- USD transactions converted at NBC (National Bank of Cambodia) rate
+**Reasoning:** Non-resident service. Self-assess 10%. Output VAT = USD 20. Input credit = USD 20 if fully taxable. Net zero.
 
----
+**Output:**
 
-## Step 16: Specific Sector Rules
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | GOOGLE CLOUD | -200 | -200 | 20 | 10% | Output + Input | N | — |
 
-### Construction [T1]
-- Construction services: VAT at 10% on contract value
-- Progress billing: VAT on each stage payment
-- Input credit on materials and subcontractor invoices allowed
-- Government contracts: standard VAT applies
+### Example 5 — Bank charges, excluded
 
-### Garment Manufacturing (Export) [T1]
-- Export of garments: zero-rated
-- Input credit on raw materials (fabric, thread, accessories) fully recoverable
-- QIP garment factories may have additional incentives [T3]
+**Input line:**
+`30.04.2026 ; ABA BANK ; DEBIT ; Monthly service fee ; USD -15`
 
-### Real Estate [T2]
-- Sale of land: exempt from VAT (but subject to transfer tax)
-- Sale of buildings: VAT at 10% on new buildings
-- Residential rental: exempt
-- Commercial rental: VAT at 10%
-- **Flag for reviewer: mixed-use property requires careful classification**
+**Reasoning:** Bank fee. Exempt financial service. Exclude.
 
-### Telecommunications [T1]
-- Telecom services: VAT at 10%
-- STCMS at 3% on telecom (separate from VAT)
-- Input credit on infrastructure allowed
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 30.04.2026 | ABA BANK | -15 | — | — | — | — | N | "Exempt" |
+
+### Example 6 — Salary payment, excluded
+
+**Input line:**
+`25.04.2026 ; EMPLOYEE SOPHEAK ; DEBIT ; April salary ; USD -800`
+
+**Reasoning:** Wages. Outside VAT scope. Exclude.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 25.04.2026 | EMPLOYEE SOPHEAK | -800 | — | — | — | — | N | "Wages — out of scope" |
 
 ---
 
-## Step 17: Penalties Detailed Summary [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-| Offence | Penalty |
-|---------|---------|
-| Failure to register | KHR 1,000,000 + retrospective registration |
-| Late filing | 2% of tax per month (min KHR 500,000) |
-| Late payment | 2% per month on unpaid amount |
-| Non-issuance of invoice | KHR 500,000 per instance |
-| Fraudulent invoice | Up to 400% of evaded tax + criminal prosecution |
-| Failure to maintain records | KHR 1,000,000 |
-| Under-declaration | Additional tax + penalty of 40% |
-| Tax evasion | Criminal prosecution, imprisonment 1-5 years |
-| Failure to withhold WHT | Amount of WHT + 2% per month interest |
+### 5.1 Standard rate 10% (Law on Taxation)
+Default rate for all taxable supplies. Sales = output tax. Purchases with valid tax invoice = input tax.
 
----
+### 5.2 Zero rate
+Exports with customs documentation. International transport services. Input VAT on related purchases fully recoverable.
 
-## Step 18: Audit and Appeals [T2]
+### 5.3 Exempt supplies
+Financial services (banking, insurance), public postal services, medical/dental, educational, residential electricity/water, public transport. No output VAT, no input recovery on related costs.
 
-### Audit Process
-1. GDT may audit within **3 years** of filing (10 years for fraud)
-2. Types: desk audit, field audit, comprehensive audit
-3. Taxpayer must provide records within 15 days of notice
+### 5.4 Input tax credit — eligibility
+Purchase must relate to taxable supplies. Valid tax invoice with supplier TIN required. Input tax on purchases related to exempt supplies is not recoverable.
 
-### Appeals
-1. File objection with GDT within **30 days** of reassessment
-2. Appeal to Tax Dispute Resolution Commission within **30 days**
-3. Further appeal to courts
+### 5.5 Input tax credit — apportionment
+If mixed taxable and exempt supplies: apportion based on ratio. Annual adjustment required. Flag for reviewer.
 
-**Escalate any audit situation to qualified practitioner.**
+### 5.6 Blocked input VAT
+Personal consumption, entertainment, passenger vehicles (unless transport business). Check blocked FIRST.
 
----
+### 5.7 Imports
+VAT at 10% on CIF value plus customs duty. Paid at customs. Input credit claimable if for taxable supplies.
 
-## Step 19: Currency and Exchange Rate Rules [T1]
+### 5.8 Reverse charge on imported services
+Non-resident service provider: self-assess 10%. Input credit claimable if for taxable supplies.
 
-**Legislation:** Law on Taxation; NBC Regulations.
+### 5.9 Credit notes
+Reduce output/input VAT in the period issued. Must reference original invoice.
 
-- All tax returns must be filed in KHR (Cambodian Riel)
-- Cambodia widely uses USD in commerce; all USD amounts must be converted
-- Exchange rate: National Bank of Cambodia (NBC) official rate on date of supply
-- For imports, the customs exchange rate at date of declaration
-- Dual-currency invoices (USD and KHR) are common and acceptable
-- VAT amount must always be calculated and reported in KHR
+### 5.10 Time of supply
+VAT due at the earlier of: invoice, payment, or delivery.
+
+### 5.11 Withholding tax interaction
+Cambodia has withholding tax on certain payments (separate from VAT). Do not confuse WHT with VAT. WHT is excluded from VAT return.
 
 ---
 
-## Contribution Notes
+## Section 6 — Tier 2 catalogue (compressed)
 
-This skill must be validated by a qualified accountant or tax advisor practicing in Cambodia before use in production. All T1 rules must be verified against the latest Prakas and amendments to the Law on Taxation.
+### 6.1 Vehicle and fuel costs
+Default: 0% recovery. Question: "Is this a commercial vehicle used exclusively for business?"
 
-**A skill may not be published without sign-off from a qualified practitioner in Cambodia.**
+### 6.2 Entertainment
+Default: block. Question: "Was this a documented business entertainment expense?"
 
+### 6.3 SaaS billing entities
+Default: self-assess 10%. Question: "Check invoice for legal entity and country."
+
+### 6.4 Round-number incoming transfers
+Default: exclude as owner injection. Question: "Customer payment, capital injection, or loan?"
+
+### 6.5 USD vs KHR transactions
+Default: USD amounts as-is; KHR converted at NBC official rate. Question: "Confirm currency for dual-currency transactions."
+
+### 6.6 Cash withdrawals
+Default: exclude. Question: "What was the cash used for?"
+
+### 6.7 Rent payments
+Default: no input credit without VAT invoice. Question: "Does landlord charge VAT on rent?"
+
+---
+
+## Section 7 — Excel working paper template
+
+Per vat-workflow-base Section 3, with Cambodia-specific return fields: Output tax, Zero-rated output, Exempt output, Input tax domestic, Input tax imports, Net VAT.
+
+---
+
+## Section 8 — Bank statement reading guide
+
+**Currency.** Cambodia uses dual currency (KHR and USD). Most business transactions in USD. Convert KHR at National Bank of Cambodia (NBC) official rate.
+
+**ABA Bank exports** typically CSV with Date, Description, Debit, Credit, Balance in USD. ACLEDA exports similar format.
+
+**Internal transfers.** Own-account transfers between ABA, ACLEDA, Wing. Always exclude.
+
+**Mobile money.** Wing, Pi Pay, True Money transfers. Classify based on underlying transaction, not payment method.
+
+---
+
+## Section 9 — Onboarding fallback
+
+### 9.1 Entity type
+Inference: "Ltd", "Co., Ltd" = company. Fallback: "Sole proprietor, partnership, or company?"
+
+### 9.2 TIN
+Fallback: "What is your GDT Tax Identification Number?"
+
+### 9.3 Filing period
+Inference: transaction date range. Monthly. Fallback: "Which month?"
+
+### 9.4 Industry
+Inference: counterparty mix. Fallback: "What does the business do?"
+
+### 9.5 Exports
+Inference: foreign currency incoming. Fallback: "Do you export goods or services?"
+
+### 9.6 Credit brought forward
+Always ask: "Excess credit from prior period?"
+
+---
+
+## Section 10 — Reference material
+
+### Sources
+1. Law on Taxation (as amended, 2023)
+2. Prakas on VAT — GDT ministerial orders
+3. GDT E-Filing Portal — https://www.tax.gov.kh
+
+### Known gaps
+1. QIP and SEZ treatment refused. 2. Supplier library covers major banks/utilities only. 3. Withholding tax interaction not fully mapped.
+
+### Change log
+- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure.
+- v1.1: Previous monolithic version.
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).

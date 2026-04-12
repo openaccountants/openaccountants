@@ -1,521 +1,320 @@
 ---
 name: kazakhstan-vat
-description: Use this skill whenever asked to prepare, review, or create a Kazakhstan VAT return (Form 300.00) or any VAT filing for a Kazakh business. Trigger on phrases like "prepare VAT return", "Kazakhstan VAT", "SRC filing", "KGD filing", "Form 300", "НДС", or any request involving Kazakhstan VAT. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Kazakhstan VAT classification rules, return form mappings, input credit rules, and filing deadlines. ALWAYS read this skill before touching any Kazakhstan VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Kazakhstan VAT (NDS) return (Form 300.00) for any client. Trigger on phrases like "Kazakhstan VAT", "NDS return", "Form 300", "KGD filing", or any request involving Kazakh VAT. This skill covers standard NDS payers filing quarterly returns. Simplified declaration and special tax regimes are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Kazakhstan VAT work.
+version: 2.0
 ---
 
-# Kazakhstan VAT Return Preparation Skill
+# Kazakhstan VAT (NDS) Return Skill — Form 300.00 v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Republic of Kazakhstan |
-| Jurisdiction Code | KZ |
-| Primary Legislation | Tax Code of the Republic of Kazakhstan (Code No. 120-VI, 2017, as amended) |
-| Supporting Legislation | Rules on VAT Administration; EAEU VAT Agreement |
-| Tax Authority | State Revenue Committee (SRC) / KGD under Ministry of Finance |
-| Filing Portal | https://cabinet.salyk.kz (Taxpayer's Cabinet) |
+|---|---|
+| Country | Kazakhstan (Republic of Kazakhstan) |
+| Tax name | NDS (Nalog na Dobavlennuyu Stoimost / VAT) |
+| Standard rate | 12% |
+| Reduced rates | None (single standard rate for domestic) |
+| Zero rate | 0% (exports, international transport, certain agricultural) |
+| Return form | Form 300.00 (quarterly NDS declaration) |
+| Filing portal | https://cabinet.salyk.kz |
+| Authority | Committee of State Revenue (KGD) under Ministry of Finance |
+| Currency | KZT (Kazakhstani Tenge) only |
+| Filing frequency | Quarterly |
+| Deadline | 15th of the second month following the quarter end |
+| EAEU membership | Yes — special rules for intra-EAEU trade (Russia, Belarus, Armenia, Kyrgyzstan) |
+| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: standard rate, input-output mapping, Form 300.00 structure. Tier 2: EAEU supplies, special zones, agricultural exemptions. Tier 3: transfer pricing, subsoil use contracts, complex group structures. |
+| Validated by | Pending local practitioner validation |
+| Validation date | April 2026 |
 
----
+**Key Form 300.00 lines:**
 
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified accountant must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified accountant and document the gap.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and BIN/IIN** [T1] -- Business Identification Number (12-digit)
-2. **VAT registration status** [T1] -- Registered (mandatory or voluntary) or below threshold
-3. **Filing period** [T1] -- quarterly (standard)
-4. **Industry/sector** [T2] -- impacts exemptions (agriculture, education, healthcare)
-5. **Does the business make exempt supplies?** [T2] -- apportionment required
-6. **Does the business trade with EAEU member states?** [T1] -- Russia, Belarus, Armenia, Kyrgyzstan
-7. **Does the business export outside EAEU?** [T1] -- zero-rating
-8. **Is the entity in a Special Economic Zone (SEZ)?** [T3] -- special rules
-9. **Is the entity a subsoil user?** [T3] -- special regime
-10. **Excess credit brought forward** [T1] -- from prior period
-
-**If any of items 1-3 are unknown, STOP.**
-
----
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, social contributions, loan repayments, dividends = OUT OF SCOPE
-- **Legislation:** Tax Code, Articles 369-372
-
-### 1b. Determine Supply Location [T1]
-- Domestic (within Kazakhstan)
-- EAEU import/export (Russia, Belarus, Armenia, Kyrgyzstan)
-- Non-EAEU import/export (rest of world)
-- **Legislation:** Tax Code, Articles 378-382 (place of supply)
-
-### 1c. Determine VAT Rate [T1]
-- **Standard rate:** 12%
-- **Zero-rated:** Exports (outside EAEU), international transport, certain financial services
-- **Exempt (Article 394):**
-  - Financial services (banking, insurance)
-  - Educational services (licensed institutions)
-  - Medical services
-  - Public transportation
-  - Residential rental
-  - Sale of residential property
-  - Agricultural products (certain types)
-  - Government services
-  - Cultural and sports events (non-commercial)
-- **Legislation:** Tax Code, Article 422 (rate); Article 394 (exemptions)
-
-### 1d. Determine Expense Category [T1]
-- Capital goods: fixed assets > 1 year useful life
-- Trading stock: goods for resale
-- Services/overheads: rent, utilities, professional fees
-
----
-
-## Step 2: Form 300.00 Structure [T1]
-
-**Legislation:** Tax Code; SRC-prescribed Form 300.00.
-
-### VAT Return (Form 300.00) Sections
-
-| Line | Description |
-|------|-------------|
-| 300.00.001 | Taxable turnover (standard rate 12%) |
+| Line | Meaning |
+|---|---|
+| 300.00.001 | Taxable turnover at 12% |
 | 300.00.002 | Zero-rated turnover (exports) |
 | 300.00.003 | Exempt turnover |
-| 300.00.004 | Total turnover |
-| 300.00.005 | Output VAT (12% on line 001) |
-| 300.00.006 | VAT on imports from EAEU (self-assessed) |
-| 300.00.007 | Total output VAT (005 + 006) |
-| 300.00.008 | Input VAT on domestic purchases |
-| 300.00.009 | Input VAT on non-EAEU imports (paid at customs) |
-| 300.00.010 | Input VAT on EAEU imports (self-assessed, creditable) |
-| 300.00.011 | Total input VAT credit |
-| 300.00.012 | Net VAT (output minus input) |
-| 300.00.013 | Credit brought forward |
-| 300.00.014 | Net payable or credit |
+| 300.00.004 | Reverse charge on imported services |
+| 300.00.005 | EAEU goods imports |
+| 300.00.006 | Total output NDS |
+| 300.00.007 | Input NDS on domestic purchases |
+| 300.00.008 | Import NDS (customs) |
+| 300.00.009 | EAEU import NDS |
+| 300.00.010 | Input NDS on reverse charge |
+| 300.00.011 | Total input NDS |
+| 300.00.012 | Net NDS payable or excess |
+| 300.00.013 | Excess carried forward |
 
-### Appendices to Form 300.00
+**Conservative defaults:**
 
-| Appendix | Purpose |
-|----------|---------|
-| 300.01 | Domestic sales detail |
-| 300.02 | Domestic purchases detail |
-| 300.03 | Exports detail |
-| 300.04 | Imports from non-EAEU |
-| 300.05 | EAEU trade detail |
-| 300.06 | Adjustments |
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 12% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Kazakhstan |
+| Unknown EAEU vs non-EAEU origin | Non-EAEU (customs) |
+| Unknown business-use proportion | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge (300.00.004/010) |
+| Unknown blocked-input status | Blocked |
 
----
-
-## Step 3: EAEU Trade Rules [T1]
-
-**Legislation:** Treaty on the Eurasian Economic Union; Tax Code, Articles 441-456.
-
-### EAEU Member States
-- Russia
-- Belarus
-- Armenia
-- Kyrgyzstan
-
-### EAEU Imports (goods from EAEU countries)
-1. NO customs declaration required (no customs border within EAEU)
-2. Buyer self-assesses VAT at 12% on the import value
-3. Report in Form 300.00 line 006 (output) and line 010 (input credit)
-4. File supplementary Form 328.00 (statement on imported goods) by 20th of month following import
-5. Pay self-assessed VAT by 20th of month following import
-6. Net effect: zero for fully taxable businesses
-
-### EAEU Exports
-1. Zero-rated (0%) -- no output VAT
-2. Must file Form 328.00 with confirmation from importing country's tax authority
-3. Full input credit recovery on related purchases
-4. If confirmation not received within 180 days, standard 12% applies retrospectively [T2]
-
-### Non-EAEU Imports
-- VAT paid at customs (standard import procedure)
-- Calculated on: Customs Value + Customs Duty
-- Rate: 12%
-- Recoverable as input credit
-
-### Non-EAEU Exports
-- Zero-rated
-- Standard export documentation required
-
----
-
-## Step 4: Input Tax Credit Mechanism [T1]
-
-**Legislation:** Tax Code, Articles 400-411.
-
-### Eligibility
-
-1. Business must be VAT registered [T1]
-2. Purchase must relate to taxable supplies [T1]
-3. Valid tax invoice (ESF -- electronic счет-фактура) held [T1]
-4. Supplier must be VAT registered [T1]
-5. ESF must be issued within 15 calendar days of supply [T1]
-
-### Electronic Invoice (ESF) System [T1]
-
-Kazakhstan uses a mandatory electronic invoice system (ESF -- Электронный счет-фактура):
-- All VAT-registered taxpayers must issue ESF for each taxable supply
-- ESF is issued through the IS ESF portal (esf.gov.kz)
-- Input credit is only valid with a confirmed ESF
-- No ESF = No input credit
-
-### Input Tax Apportionment [T2]
-
-If making both taxable and exempt supplies:
-```
-Creditable Input VAT = Total Input VAT x (Taxable Turnover / Total Turnover)
-```
-**Flag for reviewer: confirm apportionment.**
-
----
-
-## Step 5: Deductibility Check
-
-### Blocked Input VAT Credit [T1]
-
-**Legislation:** Tax Code, Article 402.
-
-These have ZERO input VAT credit:
-
-- Motor vehicles for personal use (unless transport/rental business)
-- Entertainment expenses
-- Personal consumption of owners/directors/employees
-- Purchases without valid ESF
-- Purchases from non-registered suppliers
-- Goods/services for exempt supplies
-- Alcohol and tobacco (unless production/wholesale)
-- Gifts and donations
-- Fuel for non-commercial vehicles
-
-Blocked categories OVERRIDE any other rule. Check blocked FIRST.
-
----
-
-## Step 6: Key Thresholds [T1]
+**Red flag thresholds:**
 
 | Threshold | Value |
-|-----------|-------|
-| Mandatory VAT registration | Annual turnover > 20,000 MCI (Monthly Calculation Index) |
-| MCI value (2025) | KZT 3,932 (updated annually) |
-| Registration threshold (2025) | ~KZT 78,640,000 (~USD 175,000) |
-| Voluntary registration | Below threshold |
-| ESF mandatory | All VAT-registered taxpayers |
-| EAEU import reporting | Form 328.00 by 20th of following month |
+|---|---|
+| HIGH single-transaction size | KZT 5,000,000 |
+| HIGH tax-delta on a single default | KZT 300,000 |
+| MEDIUM counterparty concentration | >40% |
+| MEDIUM conservative-default count | >4 |
+| LOW absolute net NDS position | KZT 10,000,000 |
 
 ---
 
-## Step 7: Filing Deadlines [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-| Category | Period | Deadline |
-|----------|--------|----------|
-| VAT return (Form 300.00) | Quarterly | 15th of second month after quarter end |
-| VAT payment | Quarterly | 25th of second month after quarter end |
-| EAEU import form (328.00) | Monthly | 20th of month following import |
-| EAEU import VAT payment | Monthly | 20th of month following import |
-| ESF issuance | Per transaction | Within 15 calendar days of supply |
+### Required inputs
 
-### Quarterly Periods
+**Minimum viable** — bank statement for the quarter. Acceptable from: Halyk Bank, Kaspi Bank, Forte Bank, Jusan Bank, Bank CenterCredit, Otbasy Bank, or any other.
 
-| Quarter | Period | Return Due | Payment Due |
-|---------|--------|-----------|-------------|
-| Q1 | Jan - Mar | 15 May | 25 May |
-| Q2 | Apr - Jun | 15 August | 25 August |
-| Q3 | Jul - Sep | 15 November | 25 November |
-| Q4 | Oct - Dec | 15 February | 25 February |
+**Recommended** — electronic invoices (ESF from esf.gov.kz), client BIN/IIN.
 
-### Late Filing Penalties [T1]
+**Ideal** — complete ESF register, EAEU import documentation, Form 328.00 (EAEU import declaration), prior Form 300.00.
 
-| Default | Penalty |
-|---------|---------|
-| Late filing | Warning (first offence) + fine for repeat |
-| Late payment | 1.25x refinancing rate of National Bank per day |
-| Non-filing | Assessment + administrative fine |
-| Failure to issue ESF | Administrative fine per instance |
-| Tax evasion | Criminal prosecution |
+### Refusal catalogue
+
+**R-KZ-1 — Simplified declaration.** *Trigger:* client on simplified regime. *Message:* "Simplified declaration entities have different NDS rules. Out of scope."
+
+**R-KZ-2 — Special tax regime (patent, fixed).** *Trigger:* patent or fixed deduction regime. *Message:* "Special regimes may not require NDS returns. Out of scope."
+
+**R-KZ-3 — Partial exemption.** *Trigger:* mixed taxable and exempt. *Message:* "Input NDS apportionment required."
+
+**R-KZ-4 — EAEU complex transactions.** *Trigger:* EAEU triangulation/tolling. *Message:* "Complex EAEU transactions require specialist. Out of scope."
+
+**R-KZ-5 — Income tax.** *Trigger:* user asks about CIT/PIT. *Message:* "This skill handles NDS only."
 
 ---
 
-## Step 8: Derived Calculations [T1]
+## Section 3 — Supplier pattern library
 
-```
-Output VAT             = Domestic taxable turnover x 12%
-EAEU Import VAT        = Value of EAEU imports x 12%
-Total Output VAT       = Output VAT + EAEU Import VAT
-Input VAT              = Domestic input VAT + Non-EAEU import VAT + EAEU import VAT (creditable)
-Net VAT Payable        = Total Output VAT - Total Input VAT - Credit B/F
-If Net < 0             = Credit carried forward or refund
-```
+### 3.1 Kazakh banks (fees exempt — exclude)
 
----
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HALYK BANK, HALYK | EXCLUDE | Financial service, exempt |
+| KASPI BANK, KASPI | EXCLUDE | Same |
+| FORTE BANK, JUSAN BANK | EXCLUDE | Same |
+| BANK CENTERCREDIT, OTBASY BANK | EXCLUDE | Same |
+| PROTSENTY, INTEREST | EXCLUDE | Interest |
+| KREDIT, ZAIM | EXCLUDE | Loan principal |
 
-## Step 9: Reverse Charge on Services [T1]
+### 3.2 Government and statutory bodies (exclude)
 
-**Legislation:** Tax Code, Articles 373, 441.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| KGD, SALYK, TAX COMMITTEE | EXCLUDE | Tax payment |
+| TAMOZHNYA, CUSTOMS | EXCLUDE | Duty (import NDS separate) |
+| SOCIAL FUND, GFSS | EXCLUDE | Social contributions |
+| GOVERNMENT OF RK | EXCLUDE | Government fee |
 
-### When Reverse Charge Applies
-- Services received from non-resident providers
-- Non-resident has no permanent establishment in Kazakhstan
-- Place of supply is Kazakhstan
+### 3.3 Utilities
 
-### Treatment
-1. Self-assess output VAT at 12% on service value
-2. Report in Form 300.00
-3. Input credit allowed if service relates to taxable supplies
-4. Withhold and remit the reverse charge VAT
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| SAMRUK-ENERGO, KEGOC, AREK | Domestic 12% | 300.00.007 | Electricity |
+| ALMATY SU, ASTANA SU | Domestic 12% | 300.00.007 | Water |
+| KAZAKHTELECOM, KCELL, BEELINE KZ, TELE2 KZ | Domestic 12% | 300.00.007 | Telecoms |
 
----
+### 3.4 Insurance (exempt — exclude)
 
-## PROHIBITIONS [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| EURASIA INSURANCE, KAZKOM STRAKHOVANIE | EXCLUDE | Exempt |
+| STRAKHOVANIE, INSURANCE | EXCLUDE | Same |
 
-- NEVER allow unregistered entities to claim input VAT credit
-- NEVER classify exempt supplies as zero-rated
-- NEVER accept input credit without valid ESF
-- NEVER apply input credit on blocked categories
-- NEVER treat EAEU imports like non-EAEU imports -- different procedures
-- NEVER ignore the 180-day rule for EAEU export zero-rating confirmation
-- NEVER file Form 300.00 without reconciling ESF records
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+### 3.5 Food and entertainment (blocked)
 
----
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MAGNUM, SMALL, RAMSTORE | Default BLOCK | Personal provisioning |
+| RESTORAN, KAFE, BAR | Default BLOCK | Entertainment blocked |
 
-## Step 10: Edge Case Registry
+### 3.6 SaaS — non-resident (reverse charge)
 
-### EC1 -- EAEU import without Form 328.00 [T1]
-**Situation:** Goods received from Russia but Form 328.00 not filed by 20th of following month.
-**Resolution:** Late filing penalties apply. Self-assessed VAT still due. File Form 328.00 immediately with penalties.
+| Pattern | Box | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | 300.00.004/010 | Reverse charge at 12% |
+| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 300.00.004/010 | Same |
 
-### EC2 -- EAEU export, no confirmation within 180 days [T2]
-**Situation:** Goods exported to Belarus, but importing country's tax authority has not confirmed receipt.
-**Resolution:** Zero-rating revoked. Standard 12% VAT applies retrospectively. Must amend Form 300.00 for the original period. Flag for reviewer: consider requesting extension or contacting counterpart.
-**Legislation:** Tax Code, Article 449.
+### 3.7 EAEU suppliers
 
-### EC3 -- Reverse charge on digital services [T2]
-**Situation:** Kazakh company subscribes to cloud software from US provider.
-**Resolution:** Reverse charge at 12%. Self-assess output VAT. Claim input credit if for taxable supplies. Non-resident provider may also have separate registration obligation for B2C digital services.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| Russian, Belarusian, Armenian, Kyrgyz suppliers | EAEU import — 300.00.005/009 | Form 328.00 required |
 
-### EC4 -- SEZ entity supplies [T3]
-**Situation:** Entity operating in Special Economic Zone sells goods locally.
-**Resolution:** SEZ entities may have preferential VAT treatment. When goods leave SEZ for domestic consumption, VAT may apply. Escalate to review SEZ agreement.
+### 3.8 Professional services
 
-### EC5 -- Agricultural producer exemption [T2]
-**Situation:** Agricultural producer sells unprocessed products.
-**Resolution:** May qualify for VAT exemption under Article 394. However, voluntary registration is possible to recover input credit on farming inputs. Flag for reviewer: evaluate whether exemption or registration is more beneficial.
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| NOTER, NOTARY | Domestic 12% | 300.00.007 | If business purpose |
+| AUDITOR, BUKHGALTER | Domestic 12% | 300.00.007 | Deductible |
+| ADVOKAT, LAWYER | Domestic 12% | 300.00.007 | If business matter |
 
-### EC6 -- Multi-currency transactions [T1]
-**Situation:** Invoice in USD or RUB.
-**Resolution:** Convert to KZT at National Bank of Kazakhstan rate on date of supply. All VAT calculations in KZT.
+### 3.9 Payroll and exclusions
 
-### EC7 -- Credit notes / adjustments [T1]
-**Situation:** Price adjustment after original supply.
-**Resolution:** Issue corrective ESF. Adjust output/input VAT in the period of correction. Report in Appendix 300.06.
-
-### EC8 -- Subsoil user VAT [T3]
-**Situation:** Oil company operating under subsoil use contract.
-**Resolution:** Special VAT regime may apply under the contract. Stability provisions may override general tax code. Escalate.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ZARPLATA, SALARY | EXCLUDE | Wages |
+| DIVIDEND | EXCLUDE | Out of scope |
+| VNUTRENNIY, INTERNAL | EXCLUDE | Internal |
+| BANKOMAT, ATM | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 11: Reviewer Escalation Protocol
+## Section 4 — Worked examples
 
-When a [T2] situation is identified:
+### Example 1 — Non-resident SaaS reverse charge
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list possible treatments]
-Recommended: [most likely correct]
-Action Required: Qualified accountant must confirm before filing.
-```
+**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; KZT 7,520`
 
-When a [T3] situation is identified:
+**Reasoning:** US entity. Reverse charge at 12%. 300.00.004 (base/output), 300.00.010 (input credit). Net zero.
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Refer to qualified accountant. Document gap.
-```
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -7,520 | -7,520 | 902 | 12% | 010 | 004 | N |
 
----
+### Example 2 — Domestic utility
 
-## Step 12: Test Suite
+**Input line:** `10.04.2026 ; KAZAKHTELECOM ; DEBIT ; Internet Q2 ; -18,500 ; KZT`
 
-### Test 1 -- Standard local sale at 12%
-**Input:** Domestic sale of goods, net KZT 1,000,000, VAT KZT 120,000. Registered.
-**Expected output:** Line 001: KZT 1,000,000. Line 005: Output VAT KZT 120,000.
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 10.04.2026 | KAZAKHTELECOM | -18,500 | -16,518 | -1,982 | 12% | 007 | N |
 
-### Test 2 -- Local purchase with input credit
-**Input:** Purchase from registered supplier, net KZT 500,000, VAT KZT 60,000. Valid ESF held.
-**Expected output:** Line 008: Input VAT KZT 60,000. Full credit.
+### Example 3 — Entertainment blocked
 
-### Test 3 -- EAEU import (from Russia)
-**Input:** Import of goods from Russia, value KZT 2,000,000.
-**Expected output:** Self-assess: Line 006: KZT 240,000 (output). Line 010: KZT 240,000 (input credit). File Form 328.00. Net: zero.
+**Input line:** `15.04.2026 ; RESTORAN ZHETI KAZYNA ; DEBIT ; Dinner ; -35,000 ; KZT`
 
-### Test 4 -- Non-EAEU export (zero-rated)
-**Input:** Export to Turkey, FOB KZT 5,000,000. Documentation complete.
-**Expected output:** Line 002: KZT 5,000,000 at 0%. Full input credit recovery.
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORAN ZHETI KAZYNA | -35,000 | -35,000 | 0 | — | — | Y | "Entertainment: blocked" |
 
-### Test 5 -- Blocked input: entertainment
-**Input:** Business dinner, KZT 100,000, VAT KZT 12,000.
-**Expected output:** Input VAT KZT 0 (BLOCKED).
+### Example 4 — Export (zero-rated)
 
-### Test 6 -- Reverse charge on foreign services
-**Input:** Kazakh company pays USD 5,000 (KZT 2,400,000) to German consulting firm.
-**Expected output:** Self-assess output VAT: KZT 288,000 (12%). Input credit: KZT 288,000 (if taxable). Net: zero.
+**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +2,850,000 ; KZT`
 
-### Test 7 -- No ESF, no credit
-**Input:** Purchase KZT 300,000, VAT KZT 36,000. Supplier did not issue ESF.
-**Expected output:** Input VAT KZT 0. No credit without ESF.
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | TECHCORP GMBH | +2,850,000 | +2,850,000 | 0 | 0% | 002 | Y | "Verify export docs" |
 
-### Test 8 -- EAEU export, confirmation pending
-**Input:** Export to Kyrgyzstan KZT 3,000,000. 150 days elapsed, no confirmation yet.
-**Expected output:** Currently zero-rated. If no confirmation by day 180, must retrospectively apply 12% = KZT 360,000.
+### Example 5 — EAEU import (from Russia)
+
+**Input line:** `18.04.2026 ; OOO TECHNOPARK ; DEBIT ; Equipment ; -1,500,000 ; KZT`
+
+**Reasoning:** Russian supplier, EAEU protocol. Self-assess NDS. Form 328.00 required.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | OOO TECHNOPARK | -1,500,000 | -1,500,000 | 180,000 | 12% | 009 | 005 | N |
+
+### Example 6 — Motor vehicle blocked
+
+**Input line:** `28.04.2026 ; ASTANA MOTORS ; DEBIT ; Car lease ; -450,000 ; KZT`
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | ASTANA MOTORS | -450,000 | -450,000 | 0 | — | — | Y | "Vehicle: blocked" |
 
 ---
 
-## Step 13: Invoice Requirements [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-**Legislation:** Tax Code; ESF Regulations.
+### 5.1 Standard rate 12% (Tax Code Article 422)
+Lowest standard rate in the region. Single rate. Sales to 300.00.001. Purchases to 300.00.007.
 
-### ESF (Electronic Invoice) System Details
-1. Mandatory for all VAT-registered taxpayers via esf.gov.kz
-2. ESF must be issued within 15 calendar days of supply
-3. Buyer confirms receipt electronically
-4. Input credit only valid with confirmed ESF
-5. Corrective ESF for adjustments (not cancellation + reissue)
-6. ESF contains digital signature
+### 5.2 Zero rate
+Exports, international transport, certain agricultural produce. 300.00.002.
 
-### Mandatory Contents of ESF
-1. Supplier's name, address, BIN/IIN
-2. Buyer's name and BIN/IIN
-3. Date of issue
-4. ESF number (system-generated)
-5. Description of goods/services with TNVED code
-6. Quantity and unit price
-7. VAT rate (12%) and VAT amount
-8. Total amount including VAT
-9. Origin of goods (for EAEU tracking)
-10. Contract reference (if applicable)
+### 5.3 Exempt supplies
+Financial, insurance, medical, educational, residential rental, public transport.
 
----
+### 5.4 Reverse charge — non-resident services
+Self-assess at 12%. 300.00.004 (output), 300.00.010 (input). Net zero.
 
-## Step 14: Record Keeping [T1]
+### 5.5 EAEU imports
+From Russia, Belarus, Armenia, Kyrgyzstan. Self-assessed NDS, not at customs. 300.00.005/009. Form 328.00 by 20th of month following import.
 
-**Legislation:** Tax Code, Chapter 4.
+### 5.6 Non-EAEU imports
+At customs. 12%. 300.00.008. Recoverable.
 
-### Mandatory Records (retain for 5 years)
-1. All ESF records (digital, via esf.gov.kz)
-2. Purchase and sales journals
-3. EAEU trade documentation (Form 328.00, confirmations)
-4. Non-EAEU customs declarations
-5. Bank statements and payment records
-6. General ledger, journals, trial balance
-7. Stock/inventory records
-8. Fixed asset register
-9. Payroll records (separate)
-10. Transfer pricing documentation (if applicable)
+### 5.7 Blocked input NDS
+Passenger vehicles, entertainment, personal consumption, no valid ESF/invoice.
+
+### 5.8 Electronic invoicing (ESF)
+Mandatory electronic invoices via esf.gov.kz. Input NDS requires valid ESF.
 
 ---
 
-## Step 15: Specific Sector Rules
+## Section 6 — Tier 2 catalogue (compressed)
 
-### Oil and Gas / Mining [T3]
-- Subsoil users may operate under Stability Contracts
-- Special VAT regime per contract terms
-- Equipment imports during exploration: potential VAT relief
-- **Always escalate subsoil user questions**
-
-### Agriculture [T2]
-- Agricultural producers may qualify for VAT exemption
-- Unprocessed agricultural products: often exempt
-- Processed products: VAT at 12%
-- Agricultural cooperatives: special regime possible
-- **Flag for reviewer: verify exemption eligibility**
-
-### Construction [T1]
-- Construction services: VAT at 12%
-- Progress billing: VAT on each milestone
-- Input credit on materials per ESF
-- Government contracts: standard VAT applies
-
-### IT and Technology [T2]
-- IT companies in Astana Hub may have VAT incentives
-- Software exports: zero-rated
-- Domestic IT services: VAT at 12%
-- **Flag for reviewer: confirm Astana Hub status**
-
-### Financial Services [T1]
-- Banking services (interest): exempt
-- Insurance premiums: exempt
-- Advisory and consulting by financial firms: VAT at 12%
-- Banks: input credit apportionment required
+### 6.1 Fuel/vehicles — *Default:* 0%. *Question:* "Car or commercial?"
+### 6.2 Entertainment — *Default:* block.
+### 6.3 SaaS entities — *Default:* reverse charge at 12%.
+### 6.4 EAEU vs non-EAEU — *Default:* non-EAEU. *Question:* "EAEU country supplier?"
+### 6.5 Owner transfers — *Default:* exclude.
+### 6.6 Foreign incoming — *Default:* zero-rated. *Question:* "Export docs?"
+### 6.7 Large purchases — *Question:* "Fixed asset?"
+### 6.8 Cash withdrawals — *Default:* exclude.
+### 6.9 Rent — *Default:* no NDS. *Question:* "Commercial with NDS?"
 
 ---
 
-## Step 16: Penalties Detailed Summary [T1]
+## Section 7 — Excel working paper template
 
-| Offence | Penalty |
-|---------|---------|
-| Failure to register | Warning (first) + fine (repeat) |
-| Late filing | Warning + administrative fine per SRC |
-| Late payment | 1.25x refinancing rate per day |
-| Failure to issue ESF | Administrative fine per instance |
-| Fraudulent declaration | Up to 200% of understated tax |
-| Failure to file Form 328.00 | Administrative fine |
-| Tax evasion | Criminal prosecution |
-| Under-declaration | Additional tax + penalty |
-| Late EAEU VAT payment | Interest at refinancing rate |
+Per `vat-workflow-base` Section 3 with Kazakhstan Form 300.00 line codes.
 
 ---
 
-## Step 17: Audit and Appeals [T2]
+## Section 8 — Kazakh bank statement reading guide
 
-### Audit Process
-1. SRC may audit within **5 years** of filing
-2. Desk audits, field audits, thematic audits
-3. ESF data analytics for risk-based selection
-4. EAEU trade triggers cross-border verification with partner states
-5. Subsoil users: audited per contract terms
+**CSV conventions.** Halyk Bank and Kaspi Bank export with semicolons, DD.MM.YYYY. Kaspi app exports may be in JSON or XLS.
 
-### Appeals
-1. File objection with SRC within **30 working days**
-2. Appeal to court within **30 working days** of SRC decision
+**Russian/Kazakh terms.** Zarplata (salary), protsenty (interest), kredit (loan), nalichnye (cash), vnutrenniy (internal), tamozhnya (customs).
 
-**Escalate any audit situation to qualified practitioner.**
+**Kaspi specifics.** Kaspi Bank statements may show Kaspi Gold card transactions mixed with business. Separate personal from business carefully.
+
+**Internal transfers.** Between client's accounts. Always exclude.
+
+**Foreign currency.** Convert to KZT at National Bank of Kazakhstan rate.
+
+**EAEU indicators.** Payments to/from RU, BY, AM, KG IBANs or counterparties.
 
 ---
 
-## Contribution Notes
+## Section 9 — Onboarding fallback
 
-This skill must be validated by a qualified auditor or tax consultant practicing in Kazakhstan before use in production. All T1 rules must be verified against the current Tax Code and SRC instructions.
+### 9.1 Entity type — *Fallback:* "IE or company (TOO/AO)?"
+### 9.2 NDS registration — *Fallback:* "Standard NDS payer?"
+### 9.3 BIN/IIN — *Fallback:* "What is your BIN or IIN?"
+### 9.4 Period — *Inference:* statement dates (quarterly).
+### 9.5 Industry — *Fallback:* "What does the business do?"
+### 9.6 EAEU trade — *Fallback:* "Trade with EAEU countries?"
+### 9.7 Credit B/F — *Always ask.*
+### 9.8 Cross-border — *Fallback:* "Customers outside Kazakhstan?"
 
-**A skill may not be published without sign-off from a qualified practitioner in Kazakhstan.**
+---
+
+## Section 10 — Reference material
+
+### Sources
+1. Tax Code of Kazakhstan — Chapter 46-50 (NDS)
+2. EAEU Treaty, Annex on Indirect Taxes
+3. KGD — https://cabinet.salyk.kz
+4. ESF portal — https://esf.gov.kz
+5. National Bank of Kazakhstan — https://www.nationalbank.kz
+
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
+
+## End of Kazakhstan VAT (NDS) Skill v2.0
 
 
 ---

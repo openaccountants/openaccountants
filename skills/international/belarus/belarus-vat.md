@@ -1,514 +1,338 @@
 ---
 name: belarus-vat
-description: Use this skill whenever asked to prepare, review, or advise on a Belarus VAT return or any transaction classification for Belarusian VAT purposes. Trigger on phrases like "Belarus VAT", "Belarusian VAT", "MNS filing", "VAT in Belarus", or any request involving Belarusian VAT obligations. This skill contains the complete Belarus VAT classification rules, rate structure, return form mappings, deductibility rules, reverse charge treatment, EAEU-specific rules, and filing deadlines. ALWAYS read this skill before touching any Belarusian VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Belarus VAT (NDS) return for any client. Trigger on phrases like "Belarus VAT", "Belarusian NDS", "MNS filing", or any request involving Belarusian VAT. This skill covers standard NDS payers filing monthly/quarterly returns. Simplified taxation and individual entrepreneur special regimes are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Belarus VAT work.
+version: 2.0
 ---
 
-# Belarus VAT Return Preparation Skill
+# Belarus VAT (NDS) Return Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Republic of Belarus |
-| Jurisdiction Code | BY |
-| Tax Name | VAT (Nalog na Dobavlennuyu Stoimost / NDS) |
-| Primary Legislation | Tax Code of the Republic of Belarus, Special Part, Chapter 14 (Articles 112-136) |
-| Supporting Legislation | Decree of the President No. 361; EAEU Treaty Protocol on Indirect Taxes; Resolution of the MNS on VAT return forms |
-| Tax Authority | Ministry of Taxes and Duties (MNS -- Ministerstvo po Nalogam i Sboram) |
-| Filing Portal | https://portal.nalog.gov.by (Electronic declaration system) |
+|---|---|
+| Country | Belarus (Republic of Belarus) |
+| Tax name | NDS (Nalog na Dobavlennuyu Stoimost / VAT) |
+| Standard rate | 20% |
+| Reduced rates | 10% (certain food, children's goods, agricultural produce) |
+| Zero rate | 0% (exports, international transport) |
+| Return form | NDS declaration (electronic) |
+| Filing portal | https://www.portal.nalog.gov.by |
+| Authority | Ministry of Taxes and Duties (MNS) |
+| Currency | BYN (Belarusian Ruble) only |
+| Filing frequency | Monthly or quarterly (quarterly if revenue below threshold) |
+| Deadline | 20th of the month following the reporting period |
+| EAEU membership | Yes — special rules for intra-EAEU trade (Russia, Kazakhstan, Armenia, Kyrgyzstan) |
+| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate application, standard classification, basic input deductions. Tier 2: EAEU trade, partial deduction, free economic zones. Tier 3: transfer pricing, complex restructuring, criminal tax liability. |
+| Validated by | Pending local practitioner validation |
+| Validation date | April 2026 |
+
+**Key NDS return boxes:**
+
+| Box | Meaning |
+|---|---|
+| 1 | Taxable supplies at 20% — base |
+| 2 | Output NDS at 20% |
+| 3 | Taxable supplies at 10% — base |
+| 4 | Output NDS at 10% |
+| 5 | Zero-rated supplies (exports) |
+| 6 | Exempt supplies |
+| 7 | Reverse charge on imported services — base |
+| 8 | Output NDS on reverse charge |
+| 9 | EAEU goods imports — base |
+| 10 | NDS on EAEU imports |
+| 11 | Total output NDS |
+| 12 | Input NDS on domestic purchases |
+| 13 | Import NDS (customs or EAEU) |
+| 14 | Input NDS on reverse charge (creditable) |
+| 15 | Total input NDS |
+| 16 | Net NDS payable or credit |
+| 17 | Credit brought forward |
+| 18 | Net payable |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 20% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Belarus |
+| Unknown EAEU vs non-EAEU origin | Non-EAEU (customs import) |
+| Unknown business-use proportion | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge (Box 7/8/14) |
+| Unknown blocked-input status | Blocked |
+
+**Red flag thresholds:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | BYN 15,000 |
+| HIGH tax-delta on a single default | BYN 1,000 |
+| MEDIUM counterparty concentration | >40% |
+| MEDIUM conservative-default count | >4 |
+| LOW absolute net NDS position | BYN 30,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax practitioner must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified practitioner and document the gap.
+**Minimum viable** — bank statement for the period. Acceptable from: Belarusbank, Belinvestbank, Priorbank, BPS-Sberbank, Alfa-Bank Belarus, MTBank, or any other.
 
----
+**Recommended** — sales/purchase invoices, ESHF (electronic invoices) register, client UNP (TIN).
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete ESHF register, EAEU trade documentation, prior period declaration.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+### Refusal catalogue
 
-1. **Entity name and UNP (Taxpayer Identification Number)** [T1] -- 9 digits
-2. **VAT registration status** [T1] -- standard VAT payer, simplified regime (without VAT), or individual entrepreneur
-3. **VAT period** [T1] -- monthly or quarterly (depends on revenue threshold)
-4. **Filing frequency** [T1] -- monthly if prior-year revenue exceeded BYN 2,115,000; quarterly otherwise
-5. **Industry/sector** [T2] -- impacts specific exemptions
-6. **Does the business make exempt supplies?** [T2] -- If yes, proportional deduction rules apply
-7. **Does the business trade within the EAEU?** [T2] -- Impacts import/export treatment
-8. **Free Economic Zone (FEZ) resident?** [T2] -- Special VAT benefits may apply
-9. **Accumulated VAT credits** [T1] -- from prior periods
+**R-BY-1 — Simplified taxation.** *Trigger:* client on simplified regime. *Message:* "Simplified taxation payers have different NDS obligations. Out of scope."
 
-**If any of items 1-4 are unknown, STOP. Do not classify any transactions until registration status and period are confirmed.**
+**R-BY-2 — Individual entrepreneur special regime.** *Trigger:* IE on special regime without NDS obligations. *Message:* "IE special regimes may not require NDS returns. Out of scope."
+
+**R-BY-3 — Partial exemption.** *Trigger:* mixed taxable and exempt. *Message:* "Input NDS apportionment required. Use a qualified practitioner."
+
+**R-BY-4 — Free economic zone.** *Trigger:* FEZ entity. *Message:* "FEZ entities have special NDS rules. Out of scope."
+
+**R-BY-5 — EAEU complex transactions.** *Trigger:* complex intra-EAEU supply chains (triangulation, tolling). *Message:* "Complex EAEU transactions require specialist analysis. Out of scope."
+
+**R-BY-6 — Sanctions-related.** *Trigger:* transaction involves sanctioned entities or restricted goods. *Message:* "Sanctions compliance is outside this skill's scope. Seek legal advice."
 
 ---
 
-## Step 1: Transaction Classification Rules
+## Section 3 — Supplier pattern library
 
-### 1a. Determine Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, social fund contributions, dividends, loan repayments, fines = OUT OF SCOPE
-- **Legislation:** Tax Code Article 112 (taxable objects)
+### 3.1 Belarusian banks (fees exempt — exclude)
 
-### 1b. Determine Counterparty Location [T1]
-- Belarus (domestic): supplier/customer registered in Belarus
-- EAEU: Russia (RU), Kazakhstan (KZ), Armenia (AM), Kyrgyzstan (KG)
-- Non-EAEU foreign: all other countries
-- **Note:** EAEU members follow the Protocol on Indirect Taxes under the EAEU Treaty
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BELARUSBANK | EXCLUDE | Financial service, exempt |
+| BELINVESTBANK, BELINVEST | EXCLUDE | Same |
+| PRIORBANK, PRIOR | EXCLUDE | Same |
+| BPS-SBERBANK, ALFA-BANK BY | EXCLUDE | Same |
+| MTBANK, BELGAZPROMBANK | EXCLUDE | Same |
+| PROTSENTY, INTEREST | EXCLUDE | Interest, out of scope |
+| KREDIT, LOAN | EXCLUDE | Loan principal |
 
-### 1c. Determine VAT Rate [T1]
+### 3.2 Government and statutory bodies (exclude)
 
-| Rate | Application | Legislation |
-|------|-------------|-------------|
-| 20% | Standard rate -- most goods and services | Article 122(1) |
-| 10% | Reduced rate -- food products, children's goods, medicines and medical devices per Presidential list; agricultural produce by qualifying domestic producers | Article 122(1.2) |
-| 0% | Zero rate -- exports of goods, international transport services, certain re-exported goods | Article 122(1.1) |
-| Exempt | Medical services, educational services, financial services, residential rental, cultural services, and others listed in Article 118 | Article 118 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MNS, NALOG, TAX INSPECTORATE | EXCLUDE | Tax payment |
+| TAMOZHNYA, CUSTOMS | EXCLUDE | Duty (see import NDS separately) |
+| FSZN, SOCIAL PROTECTION | EXCLUDE | Social contributions |
+| BELGOSSTRAKH (mandatory insurance) | EXCLUDE | Statutory insurance |
 
-### 1d. Specific 10% Rate Categories [T1]
+### 3.3 Utilities
 
-The 10% rate applies to:
-- Food products included in the list established by Presidential decree
-- Children's goods included in the list established by Presidential decree
-- Medicines and medical devices (sales and imports)
-- Agricultural products produced and sold by domestic agricultural producers: crops (excluding flowers and ornamental plants), store cattle, fish, and hive products produced in Belarus
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| ENERGOSBYT, ENERGO, MINSK ENERGIA | Domestic 20% | 12 | Electricity |
+| MINSKVODOKANAL, VODOKANAL | Domestic 20% | 12 | Water |
+| MINGAZ, GAZSNABZHENIE | Domestic 20% | 12 | Gas |
+| A1, MTS BELARUS, LIFE:) | Domestic 20% | 12 | Telecoms |
+| BELTELECOM | Domestic 20% | 12 | Fixed telecoms/internet |
 
-**Note:** Belarus has a broad 10% rate covering food, children's goods, and medicines (similar to Russia's approach), in addition to domestically produced agricultural products.
+### 3.4 Insurance (exempt — exclude)
 
-### 1e. Exempt Supplies (Article 118) [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BELGOSSTRAKH, BROSCO, PROMTRANSINVEST | EXCLUDE | Exempt |
+| STRAKHOVANIE, INSURANCE | EXCLUDE | Same |
 
-The following are exempt from VAT (no output tax, no input tax recovery):
-- Medical and veterinary services (licensed)
-- Educational services (state-accredited institutions)
-- Banking and financial services (with exceptions)
-- Insurance and reinsurance services
-- Securities transactions
-- Residential property (first-time transfer)
-- Burial and memorial services
-- Religious goods produced by religious organizations
-- Postal services (universal, by state operator)
-- Public transportation (urban)
-- Cultural and sporting events (admission, subject to conditions)
+### 3.5 Food and entertainment (blocked)
 
-### 1f. Determine Expense Category [T1]
-- Fixed assets: acquisition cost recorded as capital asset with useful life > 12 months
-- Goods for resale: purchased to resell without transformation
-- Raw materials: consumed in production
-- Services/overheads: rent, utilities, consulting, etc.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| EUROOPT, GREEN, KORONA, SANTA | Default BLOCK | Personal provisioning |
+| RESTORAN, KAFE, BAR | Default BLOCK | Entertainment blocked |
 
----
+### 3.6 SaaS — non-resident (reverse charge)
 
-## Step 2: VAT Return Form Structure [T1]
+| Pattern | Box | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | 7/8/14 | Reverse charge at 20% |
+| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 7/8/14 | Same |
 
-**The VAT return is filed electronically via the MNS portal. The declaration form is prescribed by MNS resolution.**
+### 3.7 EAEU suppliers (special treatment)
 
-**Legislation:** Tax Code Article 136; MNS Resolution on VAT declaration forms
+| Pattern | Treatment | Notes |
+|---|---|---|
+| Russian, Kazakh, Armenian, Kyrgyz suppliers | EAEU import — Box 9/10 | NDS paid via EAEU protocol, not customs |
 
-### Part I -- Tax Base and Output VAT
+### 3.8 Professional services
 
-| Line | Description | Rate |
-|------|-------------|------|
-| 1 | Taxable turnover at 20% | 20% |
-| 1a | Output VAT at 20% | calculated |
-| 2 | Taxable turnover at 10% | 10% |
-| 2a | Output VAT at 10% | calculated |
-| 3 | Turnover at 0% (confirmed exports) | 0% |
-| 4 | Exempt turnover | - |
-| 5 | Turnover not recognized as object of taxation | - |
-| 6 | Tax base for import VAT (EAEU) | varies |
-| 7 | VAT on EAEU imports | calculated |
-| 8 | Total output VAT | sum |
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| NOTAR, NOTARIUS | Domestic 20% | 12 | If business purpose |
+| AUDITOR, BUKHGALTER | Domestic 20% | 12 | Deductible |
+| ADVOKAT, LAWYER | Domestic 20% | 12 | If business matter |
 
-### Part II -- Input VAT Deductions
+### 3.9 Payroll and exclusions
 
-| Line | Description |
-|------|-------------|
-| 9 | Input VAT on domestic purchases |
-| 10 | VAT paid on imports (customs) |
-| 11 | VAT paid on EAEU imports |
-| 12 | Input VAT on fixed assets |
-| 13 | Total input VAT deductions |
-
-### Part III -- VAT Payable / Refundable
-
-| Line | Description |
-|------|-------------|
-| 14 | VAT payable (if line 8 > line 13) |
-| 15 | VAT refundable / carried forward (if line 13 > line 8) |
-
-### Appendix (Pradashennie)
-
-Detailed breakdown of:
-- Export operations by country and contract
-- EAEU import details
-- Adjustments and corrections
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ZARPLATA, SALARY | EXCLUDE | Wages |
+| DIVIDEND | EXCLUDE | Out of scope |
+| VNUTRENNIY, INTERNAL | EXCLUDE | Internal transfer |
+| BANKOMAT, ATM | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 3: Reverse Charge and Import Mechanisms
+## Section 4 — Worked examples
 
-### 3a. Domestic Reverse Charge [T1]
+### Example 1 — Non-resident SaaS reverse charge
 
-Belarus does not have a broad domestic reverse charge like some EU countries. However:
-- Services from foreign entities with no Belarusian establishment: the Belarusian buyer must self-assess and pay VAT at 20%
-- Applies to services where the place of supply is Belarus under Article 117
+**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; BYN 52.80`
 
-### 3b. EAEU Imports (Russia, Kazakhstan, Armenia, Kyrgyzstan) [T2]
+**Reasoning:** US entity. Reverse charge at 20%. Box 7 (base), Box 8 (output NDS), Box 14 (input credit). Net zero.
 
-Goods imported from EAEU member states:
-- No customs border, no customs VAT
-- Buyer self-assesses VAT on the imported goods
-- Files a separate EAEU import VAT declaration by the 20th of the month following the month goods were accepted
-- Pays VAT by the same deadline
-- Claims input VAT deduction after payment and filing
-- Must submit an Application for Import of Goods and Payment of Indirect Taxes (with supporting documents)
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -52.80 | -52.80 | 10.56 | 20% | 14 | 7/8 | N |
 
-**Legislation:** EAEU Treaty Protocol on Indirect Taxes
+### Example 2 — EAEU import (from Russia)
 
-### 3c. Non-EAEU Imports [T1]
+**Input line:** `10.04.2026 ; OOO TECHNOPARK MOSCOW ; DEBIT ; Server equipment ; -8,500.00 ; BYN`
 
-Goods imported from non-EAEU countries:
-- VAT collected by Belarusian Customs at the border
-- Rate: 20% (or 10% for eligible agricultural goods)
-- Customs VAT is recoverable as input VAT
-- Requires customs declaration as documentary evidence
+**Reasoning:** Russian supplier (EAEU). EAEU import protocol — NDS self-assessed, not at customs. Box 9 (base), Box 10 (NDS). Input credit if for taxable supplies.
 
-### 3d. Exports [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | OOO TECHNOPARK | -8,500 | -8,500 | 1,700 | 20% | 13 | 9/10 | N |
 
-Exports of goods are zero-rated under Article 122(1.1):
-- Exporter must confirm 0% rate with documentary evidence within 180 days
-- Required documents: contract, transport documents, customs declarations
-- If 180-day deadline is missed: output VAT at 20% (or 10%) is charged on the export
+### Example 3 — Entertainment blocked
 
-**EAEU exports:** 0% rate confirmed with Application for Import from the EAEU buyer's country tax authority
+**Input line:** `15.04.2026 ; RESTORAN VASILKI ; DEBIT ; Business dinner ; -350.00 ; BYN`
 
----
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORAN VASILKI | -350.00 | -350.00 | 0 | — | — | Y | "Entertainment: blocked" |
 
-## Step 4: Input VAT Deduction Rules
+### Example 4 — Export (zero-rated)
 
-### 4a. General Conditions for Deduction (Article 131-133) [T1]
+**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +12,000.00 ; BYN`
 
-Input VAT is deductible if ALL conditions are met:
-1. Goods/services acquired for use in taxable operations
-2. Goods/services are recorded in accounting
-3. A valid primary accounting document (invoice/ESСHF) is available
-4. For imports: customs/EAEU declaration and payment confirmation available
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | TECHCORP GMBH | +12,000 | +12,000 | 0 | 0% | 5 | Y | "Verify export docs" |
 
-### 4b. Electronic Invoicing (ESCHF) [T1]
+### Example 5 — Motor vehicle blocked
 
-Belarus uses a mandatory electronic VAT invoice system called ESCHF (Elektronny Schyot-Faktura):
-- All VAT payers must issue ESCHF through the MNS portal
-- ESCHF must be created within specified deadlines after the supply
-- Input VAT deduction requires a valid ESCHF signed by the buyer
-- Both seller and buyer must sign the ESCHF electronically
+**Input line:** `28.04.2026 ; ATLANT-M ; DEBIT ; Car lease ; -1,800.00 ; BYN`
 
-**Without a properly executed ESCHF, input VAT deduction is denied.**
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | ATLANT-M | -1,800.00 | -1,800.00 | 0 | — | — | Y | "Vehicle: blocked" |
 
-### 4c. Blocked Input VAT (Non-Deductible) [T1]
+### Example 6 — Reduced rate purchase (10%)
 
-Input VAT is NOT deductible for:
+**Input line:** `20.04.2026 ; AGROKOMBINAT ; DEBIT ; Agricultural produce ; -2,200.00 ; BYN`
 
-| Category | Legislation |
-|----------|-------------|
-| Goods/services used for exempt operations | Article 133 |
-| Goods/services used for non-business purposes | Article 133 |
-| Entertainment and hospitality expenses (meals, events for clients) | Article 133 |
-| Motor vehicles for personal use | Article 133 |
-| Goods/services acquired with budget funds | Article 133 |
+**Reasoning:** Agricultural produce at 10% reduced rate. Input NDS deductible.
 
-### 4d. Proportional Deduction [T2]
-
-If a business makes both taxable and exempt supplies:
-- Separate accounting of input VAT is required
-- Input VAT on costs directly attributable to taxable operations: fully deductible
-- Input VAT on costs directly attributable to exempt operations: not deductible
-- Input VAT on mixed-use costs: proportional deduction based on revenue split
-
-**Proportion formula:**
-```
-Deductible % = (Taxable turnover / Total turnover) * 100
-```
-
-**Flag for reviewer: proportional split must be confirmed by practitioner.**
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 20.04.2026 | AGROKOMBINAT | -2,200 | -2,000 | -200 | 10% | 12 | N |
 
 ---
 
-## Step 5: Derived Calculations [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-```
-Total Output VAT (Part I, line 8) =
-    VAT at 20% (line 1a)
-  + VAT at 10% (line 2a)
-  + VAT on EAEU imports (line 7)
+### 5.1 Standard rate 20% (Tax Code Article 122)
+Default rate. Sales to Box 1/2. Purchases to Box 12.
 
-Total Input VAT (Part II, line 13) =
-    Input VAT on domestic purchases (line 9)
-  + VAT paid on customs imports (line 10)
-  + VAT paid on EAEU imports (line 11)
-  + Input VAT on fixed assets (line 12)
+### 5.2 Reduced rate 10%
+Certain food products, children's goods, agricultural produce (listed in Tax Code). Sales to Box 3/4.
 
-IF line 8 > line 13 THEN
-    Line 14 = line 8 - line 13  (VAT payable)
-    Line 15 = 0
-ELSE
-    Line 14 = 0
-    Line 15 = line 13 - line 8  (VAT refundable/carried forward)
-END
-```
+### 5.3 Zero rate
+Exports, international transport. Box 5. Requires customs/export documentation.
 
----
+### 5.4 Exempt supplies
+Financial services, insurance, medical, educational, residential rental, postal, cultural.
 
-## Step 6: Key Thresholds
+### 5.5 Reverse charge — non-resident services
+Self-assess at 20%. Box 7/8 (output), Box 14 (input credit). Net zero.
 
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Monthly filing threshold | Prior-year revenue > BYN 2,115,000 | Article 136 |
-| Quarterly filing | Prior-year revenue <= BYN 2,115,000 | Article 136 |
-| Simplified regime (no VAT) | Gross revenue <= BYN 500,000 per year | Decree 36 / Tax Code Chapter 32 |
-| Export 0% confirmation deadline | 180 calendar days | Article 122 |
-| Fixed asset classification | Useful life > 12 months | Accounting standards |
-| ESCHF creation deadline | Seller: by 10th of month following supply | MNS Resolution |
-| ESCHF buyer signature deadline | Buyer: within 30 days of receipt | MNS Resolution |
+### 5.6 EAEU imports
+Goods from Russia, Kazakhstan, Armenia, Kyrgyzstan: NDS self-assessed under EAEU protocol (not at customs). Box 9/10. Separate EAEU import declaration required by 20th of month following import.
+
+### 5.7 Non-EAEU imports
+At customs. Base = customs value + duties. Box 13. Recoverable.
+
+### 5.8 Blocked input NDS
+Passenger vehicles, entertainment, personal consumption, no valid invoice/ESHF.
+
+### 5.9 Electronic invoicing (ESHF)
+Mandatory electronic invoicing system. All VAT invoices must be issued via ESHF portal. Input NDS credit requires ESHF-registered invoice.
 
 ---
 
-## Step 7: Filing Deadlines [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-| Obligation | Period | Deadline | Legislation |
-|------------|--------|----------|-------------|
-| VAT return (monthly filers) | Monthly | 20th of the month following the reporting month | Article 136 |
-| VAT payment (monthly filers) | Monthly | 22nd of the month following the reporting month | Article 136 |
-| VAT return (quarterly filers) | Quarterly | 20th of the month following the quarter end | Article 136 |
-| VAT payment (quarterly filers) | Quarterly | 22nd of the month following the quarter end | Article 136 |
-| EAEU import declaration | Monthly | 20th of the month following the month of acceptance | EAEU Protocol |
-| EAEU import VAT payment | Monthly | 20th of the month following the month of acceptance | EAEU Protocol |
-| ESCHF issuance by seller | Per supply | 10th of the month following the supply | MNS Resolution |
-| Export 0% documentary package | Per shipment | 180 days from customs/transport date | Article 122 |
-
----
-
-## Step 8: Free Economic Zones (FEZ) [T2]
-
-Belarus has several Free Economic Zones offering preferential tax treatment:
-- FEZ "Brest", FEZ "Vitebsk", FEZ "Gomel-Raton", FEZ "Grodnoinvest", FEZ "Minsk", FEZ "Mogilev"
-- FEZ residents may benefit from VAT exemptions on certain operations
-- Sales of goods produced within the FEZ and sold to other FEZ residents or exported may be exempt or zero-rated
-- Domestic sales by FEZ residents to non-FEZ entities are generally subject to standard VAT
-
-**Flag for reviewer: FEZ-specific VAT treatment requires case-by-case analysis based on the specific FEZ regulations and the Presidential Decree governing the zone.**
+### 6.1 Fuel/vehicles — *Default:* 0%. *Question:* "Car or commercial?"
+### 6.2 Entertainment — *Default:* block.
+### 6.3 SaaS entities — *Default:* reverse charge. *Question:* "Check invoice."
+### 6.4 EAEU vs non-EAEU supplier — *Default:* non-EAEU. *Question:* "Is supplier from EAEU country?"
+### 6.5 Owner transfers — *Default:* exclude.
+### 6.6 Foreign incoming — *Default:* zero-rated. *Question:* "Export docs?"
+### 6.7 Large purchases — *Question:* "Fixed asset?"
+### 6.8 Mixed-use phone — *Default:* 0%.
+### 6.9 Cash withdrawals — *Default:* exclude.
+### 6.10 Rent — *Default:* no NDS. *Question:* "Commercial with NDS?"
 
 ---
 
-## Step 9: Edge Case Registry
+## Section 7 — Excel working paper template
 
-### EC1 -- EAEU import from Russia [T2]
-
-**Situation:** Belarusian company imports machinery from Russia. Value RUB 5,000,000 (converted to BYN at exchange rate).
-**Resolution:** Self-assess VAT at 20% on the BYN-equivalent value. File EAEU import application by the 20th of the following month. Pay VAT by the same deadline. Claim input deduction after payment and filing. Exchange rate: official National Bank of Belarus rate on the date goods are accepted in accounting. Flag for reviewer: confirm goods classification, exchange rate, and that Application for Import is properly completed.
-**Legislation:** EAEU Treaty Protocol, Tax Code Article 131
-
-### EC2 -- Services from foreign provider with no Belarusian establishment [T1]
-
-**Situation:** Belarusian company engages a German consulting firm for management consulting. No Belarusian office/registration.
-**Resolution:** Belarusian buyer self-assesses VAT at 20% on the payment amount. Place of supply is Belarus (buyer location for B2B services). VAT is paid to the budget. Input VAT is deductible if the services are used for taxable operations.
-**Legislation:** Article 117 (place of supply), Article 114
-
-### EC3 -- ESCHF not signed by buyer within 30 days [T1]
-
-**Situation:** Seller issues ESCHF, but buyer fails to sign within 30 days.
-**Resolution:** Input VAT deduction is denied until the ESCHF is properly signed. The buyer must contact the seller and resolve the ESCHF status. If the seller cancels the ESCHF, a new one must be issued. No deduction without a valid, buyer-signed ESCHF.
-**Legislation:** MNS Resolution on ESCHF procedures
-
-### EC4 -- Export to Russia with incorrect Application for Import [T2]
-
-**Situation:** Belarusian exporter to Russia applies 0% rate but the Russian buyer's Application for Import contains errors or is not confirmed by the Russian FNS.
-**Resolution:** Without a properly confirmed Application for Import from the Russian tax authority, the 0% rate cannot be verified. If not confirmed within 180 days, the Belarusian exporter must charge 20% VAT on the export. Flag for reviewer: follow up with Russian buyer for corrected documentation.
-**Legislation:** EAEU Treaty Protocol
-
-### EC5 -- Sale of software / IT services by HTP resident [T2]
-
-**Situation:** A Belarus High Technology Park (HTP) resident sells software development services.
-**Resolution:** HTP residents under Decree No. 8 (on Digital Economy Development) enjoy significant tax benefits, including potential VAT exemptions on certain IT services. However, the specifics depend on the type of service, the client location, and current HTP regulations. Flag for reviewer: HTP VAT treatment requires specialist analysis.
-**Legislation:** Decree of the President No. 8 (2017), HTP Regulations
-
-### EC6 -- Mixed taxable and exempt operations [T2]
-
-**Situation:** A company provides both taxable consulting and exempt educational services.
-**Resolution:** Separate accounting mandatory. Proportional deduction of mixed-use input VAT based on revenue split. Flag for reviewer: confirm the allocation methodology and verify that direct attribution has been applied first.
-**Legislation:** Article 133, Article 131
-
-### EC7 -- Credit note / adjustment of previously reported VAT [T1]
-
-**Situation:** Seller issues a corrective ESCHF reducing the previously invoiced amount.
-**Resolution:** The buyer must reduce their input VAT deduction in the period the corrective ESCHF is received (not the original period). The seller reduces output VAT in the period the corrective ESCHF is issued. Both parties adjust their declarations for the current period.
-**Legislation:** Tax Code Article 129, MNS Resolution on ESCHF
-
-### EC8 -- Simplified regime entity exceeding threshold [T1]
-
-**Situation:** An individual entrepreneur on the simplified regime (no VAT) exceeds the BYN 500,000 revenue threshold mid-year.
-**Resolution:** The entity must transition to standard VAT registration from the month following the month in which the threshold was exceeded. VAT must be charged on all supplies from that point forward. Input VAT on prior purchases (stock on hand) may be partially recoverable. Flag for reviewer: transitional rules are complex.
-**Legislation:** Tax Code Chapter 32, Article 326
+Per `vat-workflow-base` Section 3 with Belarus-specific box codes.
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 8 — Belarusian bank statement reading guide
 
-- NEVER let AI guess VAT treatment -- classification is deterministic from facts and legislation
-- NEVER apply input VAT deduction without a valid, buyer-signed ESCHF
-- NEVER allow simplified regime entities to claim input VAT deductions
-- NEVER apply 0% rate on exports without confirmed documentary evidence within 180 days
-- NEVER ignore self-assessment obligations on services from foreign providers
-- NEVER confuse EAEU imports (self-assessed, no customs) with non-EAEU imports (customs-collected)
-- NEVER apply the 10% rate to goods not on the Presidential list -- verify the item is on the approved food, children's goods, or medicines list
-- NEVER omit the EAEU Application for Import when claiming 0% on EAEU exports
-- NEVER accept an unsigned ESCHF as basis for input VAT deduction
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+**CSV conventions.** Belarusbank and Belinvestbank exports use semicolon delimiters, DD.MM.YYYY dates. Priorbank may use comma delimiters.
 
----
+**Russian/Belarusian terms.** Zarplata (salary), protsenty (interest), kredit (loan), nalichnye (cash), vnutrenniy (internal), tamozhnya (customs), strakhovanie (insurance), bukhgalter (accountant).
 
-## Step 10: Reviewer Escalation Protocol
+**Internal transfers.** Between client's accounts. Always exclude.
 
-When a [T2] situation is identified, output the following structured flag:
+**Foreign currency.** Convert to BYN at the National Bank of Belarus rate.
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax practitioner must confirm before filing.
-```
+**IBAN prefix.** BY = Belarus.
 
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified practitioner. Document gap.
-```
+**EAEU trade indicators.** Payments to/from Russian, Kazakh, Armenian, Kyrgyz counterparties or IBANs (RU, KZ, AM, KG) indicate potential EAEU protocol treatment.
 
 ---
 
-## Step 11: Test Suite
+## Section 9 — Onboarding fallback
 
-### Test 1 -- Standard domestic sale at 20%
-
-**Input:** Belarusian company sells consulting services to Belarusian client. Net BYN 10,000. VAT at 20%.
-**Expected output:** Part I line 1: tax base = BYN 10,000. Output VAT line 1a = BYN 2,000. ESCHF issued.
-
-### Test 2 -- Domestic purchase with input VAT deduction
-
-**Input:** Belarusian company purchases office equipment from Belarusian supplier. Gross BYN 2,400 including VAT BYN 400. Valid ESCHF signed by buyer.
-**Expected output:** Part II line 9: input VAT = BYN 400. Fully deductible.
-
-### Test 3 -- EAEU import from Russia
-
-**Input:** Belarusian company imports raw materials from Russia. Value BYN 50,000 (converted at NBB rate). Goods accepted on March 10.
-**Expected output:** Self-assessed VAT = BYN 50,000 * 20% = BYN 10,000. EAEU import declaration filed by April 20. VAT paid by April 20. Input VAT of BYN 10,000 claimed after payment and filing.
-
-### Test 4 -- Export to Kazakhstan at 0%
-
-**Input:** Belarusian company exports furniture to Kazakhstan. Invoice value BYN 30,000. Application for Import confirmed by Kazakhstan tax authority within 180 days.
-**Expected output:** Part I line 3: turnover at 0% = BYN 30,000. No output VAT. Related input VAT deductible.
-
-### Test 5 -- Services from EU provider (reverse charge)
-
-**Input:** Belarusian company engages a Polish law firm for legal advice. Fee EUR 5,000 (equivalent BYN 17,500). No Belarusian registration by the Polish firm.
-**Expected output:** Self-assessed VAT = BYN 17,500 * 20% = BYN 3,500. VAT paid to budget. Input VAT of BYN 3,500 deductible if used for taxable operations. Net effect zero for fully taxable business.
-
-### Test 6 -- Blocked entertainment expense
-
-**Input:** Belarusian company hosts a client dinner. Gross BYN 600 including VAT BYN 100.
-**Expected output:** Input VAT of BYN 100 is NOT deductible. Entertainment is a blocked category. Expense recorded at gross amount BYN 600.
-
-### Test 7 -- Agricultural producer sale at 10%
-
-**Input:** Agricultural enterprise (>50% revenue from agriculture) sells grain to a Belarusian food processor. Net BYN 80,000. VAT at 10%.
-**Expected output:** Part I line 2: tax base = BYN 80,000. Output VAT line 2a = BYN 8,000.
-
-### Test 8 -- Simplified regime entity issues invoice with VAT
-
-**Input:** Simplified regime individual entrepreneur (below BYN 500,000 threshold) issues an invoice showing VAT of BYN 500.
-**Expected output:** Simplified regime entities should NOT charge VAT. If VAT is shown on the invoice, the entity may be required to remit it to the budget. No input VAT deduction is available. Flag for reviewer: verify registration status and correct invoicing practice.
+### 9.1 Entity type — *Fallback:* "Sole trader (IE) or company (OOO/OAO)?"
+### 9.2 NDS registration — *Fallback:* "Standard NDS payer?"
+### 9.3 UNP — *Fallback:* "What is your UNP?"
+### 9.4 Period — *Inference:* statement dates. *Fallback:* "Monthly or quarterly? Which period?"
+### 9.5 Industry — *Fallback:* "What does the business do?"
+### 9.6 EAEU trade — *Inference:* RU/KZ/AM/KG counterparties. *Fallback:* "Do you trade with EAEU countries?"
+### 9.7 Exempt supplies — *If yes, R-BY-3 fires.*
+### 9.8 Credit B/F — *Always ask.*
 
 ---
 
-## Step 12: Penalties and Interest [T1]
+## Section 10 — Reference material
 
-Non-compliance with Belarusian VAT obligations results in the following penalties:
+### Sources
+1. Tax Code of Belarus — Chapter 14 (NDS)
+2. EAEU Treaty, Annex on Indirect Taxes
+3. MNS portal — https://www.portal.nalog.gov.by
+4. National Bank of Belarus rates — https://www.nbrb.by
 
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing of VAT return | Up to 1% of tax due per month of delay (max 10%) | Tax Code Article 14.2 |
-| Late payment of VAT | Interest at refinancing rate of the National Bank + penalty | Tax Code Article 52 |
-| Understatement of tax liability | 20% of the understated amount | Tax Code Article 14.4 |
-| Intentional understatement | 40% of the understated amount | Tax Code Article 14.4 |
-| Failure to issue ESCHF | Administrative fine per violation | MNS administrative procedures |
-| Failure to register for VAT when required | Back-assessment of VAT plus penalties | Tax Code Article 14.2 |
-| Incorrect ESCHF information | ESCHF may be invalidated; input VAT deduction denied | MNS Resolution |
+### Known gaps
+1. EAEU triangulation/tolling not covered. 2. Simplified regime not covered. 3. Sanctions impact on cross-border classification not analyzed.
 
-**Interest on late payments** is calculated at the refinancing rate of the National Bank of the Republic of Belarus, accruing daily from the due date until the date of payment.
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
 
----
-
-## Step 13: Currency and Exchange Rate Rules [T1]
-
-- Belarus uses the Belarusian Ruble (BYN) as its national currency
-- All VAT returns must be filed in BYN
-- Foreign currency transactions must be converted to BYN at the official National Bank of Belarus (NBB) exchange rate
-- For domestic transactions: BYN amounts as invoiced
-- For imports: NBB rate on the date of customs declaration or EAEU goods acceptance
-- For services from non-residents: NBB rate on the date of payment or accrual (whichever triggers the tax point)
-- For exports: NBB rate on the date of the supply (shipping date)
-
-**Exchange rate gains/losses from timing differences are NOT VAT events -- they are income tax/accounting items only.**
-
----
-
-## Step 14: Record Keeping Requirements [T1]
-
-VAT payers must maintain the following records for a minimum of 10 years:
-
-| Record | Requirement |
-|--------|-------------|
-| ESCHF (electronic invoices) | Stored electronically via MNS system; accessible for audit |
-| Purchase ledger | Detailed record of all input VAT claims with ESCHF references |
-| Sales ledger | Detailed record of all output VAT with ESCHF references |
-| Import documentation | Customs declarations, EAEU applications, payment confirmations |
-| Export documentation | Contracts, transport documents, Applications for Import (EAEU) |
-| VAT returns (filed copies) | All submitted declarations with confirmation receipts |
-| Bank statements | Supporting payment evidence for imports and tax payments |
-| Contracts | Underlying agreements for all significant transactions |
-
-**The MNS may request any of these records during a tax audit (kameral'naya or vyezdnaya proverka).**
-
----
-
-## Contribution Notes
-
-This skill requires validation by a licensed Belarusian tax practitioner. Key areas requiring local expertise:
-
-1. Current ESCHF technical requirements and deadlines
-2. FEZ and HTP specific VAT rules
-3. EAEU Protocol implementation specifics
-4. Simplified regime transitional rules
-5. Annual threshold updates and legislative amendments
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+## End of Belarus VAT (NDS) Skill v2.0
 
 
 ---

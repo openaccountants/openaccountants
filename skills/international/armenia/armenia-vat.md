@@ -1,505 +1,365 @@
 ---
 name: armenia-vat
-description: Use this skill whenever asked to prepare, review, or create an Armenia VAT return or any VAT filing for an Armenian business. Trigger on phrases like "prepare VAT return", "Armenia VAT", "SRC filing Armenia", "ԱԱՀ", or any request involving Armenia VAT. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Armenia VAT classification rules, return form mappings, input credit rules, and filing deadlines. ALWAYS read this skill before touching any Armenia VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for an Armenian VAT (AVH) return for any client. Trigger on phrases like "Armenia VAT", "Armenian VAT", "AVH return", "SRC filing", or any request involving Armenian VAT filing. This skill covers standard VAT payers filing monthly returns. Turnover tax, micro-enterprise, and IT sector special regimes are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Armenian VAT work.
+version: 2.0
 ---
 
-# Armenia VAT Return Preparation Skill
+# Armenia VAT Return Skill v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Republic of Armenia |
-| Jurisdiction Code | AM |
-| Primary Legislation | Tax Code of the Republic of Armenia (2016, as amended) |
-| Supporting Legislation | Government Decisions on Tax Administration; EAEU VAT Agreement |
-| Tax Authority | State Revenue Committee (SRC) of the Republic of Armenia |
-| Filing Portal | https://www.petekamutner.am (SRC E-Filing Portal) |
+|---|---|
+| Country | Armenia (Republic of Armenia) |
+| Tax name | AVH (Avelacvats Arzheki Hark) / VAT |
+| Standard rate | 20% |
+| Reduced rates | None (single standard rate) |
+| Zero rate | 0% (exports, international transport, diplomatic supplies) |
+| Return form | Monthly VAT declaration (electronic) |
+| Filing portal | https://www.petakner.am |
+| Authority | State Revenue Committee (SRC) |
+| Currency | AMD (Armenian Dram) only |
+| Filing frequency | Monthly |
+| Deadline | 20th of the month following the reporting month |
+| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: standard rate, input-output mapping, return structure. Tier 2: EAEU trade, reverse charge, turnover tax interaction. Tier 3: free economic zones, complex group structures. |
+| Validated by | Pending local practitioner validation |
+| Validation date | April 2026 |
 
----
+**Key VAT return sections:**
 
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and TIN** [T1] -- 8-digit Tax Identification Number
-2. **VAT registration status** [T1] -- VAT payer (mandatory/voluntary) or Turnover Tax payer
-3. **Tax regime** [T1] -- General (VAT) or Turnover Tax (simplified)
-4. **Filing period** [T1] -- monthly (standard for VAT payers)
-5. **Industry/sector** [T2] -- impacts exemptions
-6. **Does the business make exempt supplies?** [T2] -- apportionment required
-7. **Does the business trade with EAEU member states?** [T1] -- Russia, Belarus, Kazakhstan, Kyrgyzstan
-8. **Does the business export outside EAEU?** [T1] -- zero-rating
-9. **Is the entity in a Free Economic Zone?** [T3] -- special rules
-10. **Excess credit brought forward** [T1] -- from prior period
-
-**If any of items 1-4 are unknown, STOP.**
-
----
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, social contributions, loan repayments, dividends = OUT OF SCOPE
-- **Legislation:** Tax Code, Chapter 56-60
-
-### 1b. Determine Supply Location [T1]
-- Domestic (within Armenia)
-- EAEU import/export (Russia, Belarus, Kazakhstan, Kyrgyzstan)
-- Non-EAEU import/export
-- **Legislation:** Tax Code, Articles 37-42 (place of supply)
-
-### 1c. Determine VAT Rate [T1]
-- **Standard rate:** 20%
-- **Zero-rated:** Exports (outside EAEU and within EAEU with confirmation), international transport
-- **Exempt (Article 64):**
-  - Financial services (banking, insurance)
-  - Educational services (licensed institutions)
-  - Medical services and equipment
-  - Public transportation
-  - Residential rental
-  - Agricultural products (certain categories)
-  - Government services
-  - Religious organizations
-  - Postal services (universal)
-  - Supply of residential property (first sale)
-- **Legislation:** Tax Code, Article 63 (rate); Article 64 (exemptions)
-
-### 1d. Determine Expense Category [T1]
-- Capital goods: fixed assets > 1 year useful life
-- Trading stock: goods for resale
-- Services/overheads: rent, utilities, professional fees
-
----
-
-## Step 2: VAT Return Form Structure [T1]
-
-**Legislation:** Tax Code; SRC prescribed form.
-
-### Monthly VAT Return Sections
-
-| Section | Description |
-|---------|-------------|
-| Part 1 | Taxpayer information (TIN, name, period) |
-| Part 2 | Taxable supplies at 20% |
-| Part 3 | Zero-rated supplies |
+| Section | Meaning |
+|---|---|
+| Part 1 | Taxable supplies at 20% — base |
+| Part 2 | Output VAT at 20% |
+| Part 3 | Zero-rated supplies (exports) |
 | Part 4 | Exempt supplies |
-| Part 5 | Total supplies |
-| Part 6 | Output VAT (20% of taxable supplies) |
-| Part 7 | EAEU import VAT (self-assessed) |
-| Part 8 | Reverse charge VAT (non-EAEU services) |
-| Part 9 | Total output VAT |
-| Part 10 | Input VAT on domestic purchases |
-| Part 11 | Input VAT on non-EAEU imports |
-| Part 12 | Input VAT on EAEU imports (creditable) |
-| Part 13 | Input VAT on reverse charge (creditable) |
-| Part 14 | Total input VAT credit |
-| Part 15 | Net VAT payable |
-| Part 16 | Credit brought forward |
-| Part 17 | Net payable or credit |
+| Part 5 | Reverse charge — services from non-residents — base |
+| Part 6 | Output VAT on reverse charge |
+| Part 7 | Total output VAT |
+| Part 8 | Input VAT on domestic purchases |
+| Part 9 | Input VAT on imports (paid at customs) |
+| Part 10 | Input VAT on reverse charge (creditable) |
+| Part 11 | Total input VAT |
+| Part 12 | Net VAT payable or credit |
+| Part 13 | Credit brought forward |
+| Part 14 | Net payable after credit |
 
----
+**Conservative defaults:**
 
-## Step 3: EAEU Trade Rules [T1]
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 20% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Armenia |
+| Unknown business-use proportion | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge from non-resident (Part 5/6/10) |
+| Unknown blocked-input status | Blocked |
+| Unknown whether transaction is in scope | In scope |
 
-**Legislation:** Treaty on the EAEU; Tax Code, Chapter 61.
-
-### EAEU Member States
-- Russia, Belarus, Kazakhstan, Kyrgyzstan
-
-### EAEU Imports
-1. No customs border -- buyer self-assesses VAT at 20%
-2. Report output in Part 7 and input credit in Part 12
-3. File supplementary EAEU import declaration by 20th of month following import
-4. Pay self-assessed VAT by 20th of month following import
-5. Net effect: zero for fully taxable businesses
-
-### EAEU Exports
-1. Zero-rated
-2. Must obtain confirmation from importing country's tax authority
-3. If no confirmation within 180 days, standard 20% applies retrospectively [T2]
-
-### Non-EAEU Trade
-- Imports: VAT at customs, 20%
-- Exports: zero-rated with standard documentation
-
----
-
-## Step 4: Input Tax Credit Mechanism [T1]
-
-**Legislation:** Tax Code, Articles 68-74.
-
-### Eligibility
-
-1. Business must be VAT registered (general regime) [T1]
-2. Purchase must relate to taxable supplies [T1]
-3. Valid tax invoice held [T1]
-4. Supplier must be VAT registered [T1]
-5. Goods/services received [T1]
-
-### Electronic Invoicing [T1]
-Armenia uses electronic tax invoices via the SRC portal:
-- E-invoices are the standard method
-- Input credit validated against SRC database
-- Paper invoices accepted but electronic preferred
-
-### Input Tax Apportionment [T2]
-
-```
-Creditable Input VAT = Total Input VAT x (Taxable + Zero-rated / Total Supplies)
-```
-**Flag for reviewer: confirm apportionment.**
-
----
-
-## Step 5: Deductibility Check
-
-### Blocked Input VAT Credit [T1]
-
-**Legislation:** Tax Code, Article 70.
-
-These have ZERO input VAT credit:
-
-- Motor vehicles for personal use
-- Entertainment and representation expenses
-- Personal consumption
-- Purchases without valid tax invoice
-- Purchases from non-registered or turnover tax payers
-- Goods/services for exempt supplies
-- Alcohol and tobacco (unless production/wholesale)
-- Gifts and donations
-- Fuel for non-commercial vehicles
-
-Blocked categories OVERRIDE any other rule. Check blocked FIRST.
-
-### Regime-Based Recovery [T1]
-- General regime (VAT): input credit allowed
-- Turnover tax: NO VAT charged, NO input credit
-- Turnover tax rate: 10% on trade (increased from 5% effective 1 January 2025); rates vary by activity (IT/high-tech: 1%)
-
----
-
-## Step 6: Reverse Charge [T1]
-
-**Legislation:** Tax Code, Article 39.
-
-### When Reverse Charge Applies
-- Services from non-resident (non-EAEU) providers
-- Non-resident has no PE in Armenia
-- Place of supply is Armenia
-
-### Treatment
-1. Self-assess output VAT at 20%
-2. Report in Part 8
-3. Input credit in Part 13 if for taxable supplies
-4. Net effect: zero for fully taxable businesses
-
----
-
-## Step 7: Key Thresholds [T1]
+**Red flag thresholds:**
 
 | Threshold | Value |
-|-----------|-------|
-| Mandatory VAT registration | Annual turnover > AMD 115 million (~USD 290,000) |
-| Voluntary registration | Below threshold |
-| Turnover tax eligibility | Below VAT threshold |
-| EAEU import reporting | By 20th of following month |
-| EAEU export confirmation | Within 180 days |
+|---|---|
+| HIGH single-transaction size | AMD 5,000,000 |
+| HIGH tax-delta on a single conservative default | AMD 300,000 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | AMD 10,000,000 |
 
 ---
 
-## Step 8: Filing Deadlines [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-| Category | Period | Deadline |
-|----------|--------|----------|
-| VAT return | Monthly | 20th of the following month |
-| VAT payment | Monthly | 20th of the following month |
-| EAEU import declaration | Monthly | 20th of month following import |
-| EAEU import VAT payment | Monthly | 20th of month following import |
-| Annual reconciliation | Annual | With annual profit tax return |
+### Required inputs
 
-### Fiscal Year [T1]
-Armenia fiscal year: 1 January to 31 December (calendar year).
+**Minimum viable** — bank statement for the month in CSV, PDF, or pasted text. Acceptable from any Armenian bank: Ameriabank, ACBA Bank, Ardshinbank, Converse Bank, Evocabank, HSBC Armenia, or any other.
 
-### Late Filing Penalties [T1]
+**Recommended** — sales invoices, purchase invoices for input VAT claims above AMD 300,000, the client's TIN (HVHH).
 
-| Default | Penalty |
-|---------|---------|
-| Late filing | AMD 50,000 per return |
-| Late payment | 0.04% per day (capped at 365 days) |
-| Non-filing | Assessment by SRC + penalties |
-| Tax evasion | Criminal prosecution |
-| Failure to register | AMD 100,000 + retrospective registration |
+**Ideal** — complete e-invoice register from petakner.am, prior period declaration, reconciliation of credit brought forward.
+
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement, hard stop. If bank statement only, proceed but record: "This VAT return was produced from bank statement alone. Reviewer must verify input VAT claims are supported by valid tax invoices."
+
+### Armenia-specific refusal catalogue
+
+**R-AM-1 — Turnover tax regime.** *Trigger:* client on turnover tax (below AMD 115,000,000 and opted for turnover tax). *Message:* "Turnover tax payers do not file VAT returns and cannot claim input VAT. Out of scope."
+
+**R-AM-2 — Micro-enterprise.** *Trigger:* registered micro-enterprise. *Message:* "Micro-enterprises are exempt from VAT. Out of scope."
+
+**R-AM-3 — IT sector special regime.** *Trigger:* certified IT company with special tax incentives. *Message:* "IT sector special regime entities may have modified VAT obligations. Please use a qualified Armenian practitioner."
+
+**R-AM-4 — Partial exemption.** *Trigger:* mixed taxable and exempt supplies, non-de-minimis. *Message:* "Input VAT apportionment required. Use a qualified practitioner."
+
+**R-AM-5 — Free economic zone.** *Trigger:* FEZ entity. *Message:* "FEZ entities have special VAT rules. Out of scope."
+
+**R-AM-6 — Income tax.** *Trigger:* user asks about income tax. *Message:* "This skill handles VAT returns only."
 
 ---
 
-## Step 9: Derived Calculations [T1]
+## Section 3 — Supplier pattern library
+
+### 3.1 Armenian banks (fees exempt — exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AMERIABANK, AMERIA | EXCLUDE for bank charges/fees | Financial service, exempt |
+| ACBA, ACBA BANK, ACBA-CREDIT AGRICOLE | EXCLUDE for bank charges/fees | Same |
+| ARDSHINBANK, ARDSHIN | EXCLUDE for bank charges/fees | Same |
+| CONVERSE BANK, EVOCABANK, ARARAT BANK | EXCLUDE for bank charges/fees | Same |
+| HSBC ARMENIA, INECOBANK, ID BANK | EXCLUDE for bank charges/fees | Same |
+| TOKOS, INTEREST | EXCLUDE | Interest, out of scope |
+| VARK, LOAN | EXCLUDE | Loan principal, out of scope |
+
+### 3.2 Government and statutory bodies (exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SRC, HARKAYIN KOMITE, STATE REVENUE | EXCLUDE | Tax payment |
+| MAQSAYIN, CUSTOMS | EXCLUDE | Customs duty (see import VAT for Part 9) |
+| SOTSIALAYIN, SOCIAL PAYMENT | EXCLUDE | Social payment |
+| PETAKAN, STATE FEE | EXCLUDE | Government fee |
+
+### 3.3 Utilities
+
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| ENA, ELECTRIC NETWORKS ARMENIA | Domestic 20% | Part 8 | Electricity |
+| VEOLIA JRMUGK, YEREVAN JRMUGK | Domestic 20% | Part 8 | Water |
+| GAZPROM ARMENIA, HAYRUSGAZARD | Domestic 20% | Part 8 | Gas |
+| VEON ARMENIA, TEAM TELECOM, UCOM | Domestic 20% | Part 8 | Telecoms |
+
+### 3.4 Insurance (exempt — exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ROSGOSSTRAKH, INGO ARMENIA, NAIRI INSURANCE | EXCLUDE | Exempt |
+| APAHOV, INSURANCE | EXCLUDE | Same |
+
+### 3.5 Post and logistics
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HAYPOST | EXCLUDE for standard mail | Universal service, exempt |
+| DHL, FEDEX, TNT | Domestic 20% or reverse charge | Check billing entity |
+
+### 3.6 Food and entertainment (blocked)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SUPERMARKET, YEREVAN CITY, SAS | Default BLOCK | Personal provisioning |
+| RESTAURANT, RESTORAN, CAFE, BAR | Default BLOCK | Entertainment blocked |
+
+### 3.7 SaaS — non-resident suppliers (reverse charge)
+
+| Pattern | Billing entity | Box | Notes |
+|---|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | Various non-resident | Part 5/6/10 | Reverse charge at 20% |
+| SLACK, ZOOM, DROPBOX, NOTION | Various non-resident | Part 5/6/10 | Reverse charge |
+| AWS, ANTHROPIC, OPENAI, GITHUB, FIGMA, CANVA | US entities | Part 5/6/10 | Reverse charge |
+
+### 3.8 Payment processors
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE, PAYPAL (transaction fees) | EXCLUDE (exempt) | Financial service |
+
+### 3.9 Professional services
+
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| NOTAR, NOTARY | Domestic 20% | Part 8 | If business purpose |
+| HASHVAPAH, AUDITOR | Domestic 20% | Part 8 | Deductible |
+| PASHTPAN, LAWYER | Domestic 20% | Part 8 | If business matter |
+
+### 3.10 Payroll and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ASHKHATAVARDZ, SALARY | EXCLUDE | Wages, out of scope |
+| DIVIDEND | EXCLUDE | Out of scope |
+| INTERNAL, OWN TRANSFER | EXCLUDE | Internal movement |
+| ATM, KANKHIK, CASH | TIER 2 — ask | Default exclude |
+
+---
+
+## Section 4 — Worked examples
+
+### Example 1 — Non-resident SaaS reverse charge (Notion)
+
+**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; AMD 6,240`
+
+**Reasoning:** US entity, non-resident. Reverse charge at 20%. Part 5 (base), Part 6 (output VAT), Part 10 (input credit). Net zero.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (input) | Box (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -6,240 | -6,240 | 1,248 | 20% | Part 10 | Part 5/6 | N | — | — |
+
+### Example 2 — Domestic purchase with input VAT
+
+**Input line:** `10.04.2026 ; UCOM ; DEBIT ; Business internet April ; -15,000 ; AMD`
+
+**Reasoning:** Domestic Armenian telecoms. Standard 20%. Input VAT deductible.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | UCOM | -15,000 | -12,500 | -2,500 | 20% | Part 8 | N | — | — |
+
+### Example 3 — Entertainment blocked
+
+**Input line:** `15.04.2026 ; RESTORAN DOLMAMA ; DEBIT ; Business dinner ; -45,000 ; AMD`
+
+**Reasoning:** Entertainment blocked. No input VAT recovery.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORAN DOLMAMA | -45,000 | -45,000 | 0 | — | — | Y | Q1 | "Entertainment: blocked" |
+
+### Example 4 — Export of IT services (zero-rated)
+
+**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT consultancy ; +1,950,000 ; AMD`
+
+**Reasoning:** Export of services. Zero-rated. Part 3. Requires export documentation.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | TECHCORP GMBH | +1,950,000 | +1,950,000 | 0 | 0% | Part 3 | Y | Q2 (HIGH) | "Verify export docs" |
+
+### Example 5 — Motor vehicle blocked
+
+**Input line:** `28.04.2026 ; ZANGAK AUTO ; DEBIT ; Car lease ; -120,000 ; AMD`
+
+**Reasoning:** Passenger vehicle input VAT blocked. Default: full block.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | ZANGAK AUTO | -120,000 | -120,000 | 0 | — | — | Y | Q3 | "Motor vehicle: blocked" |
+
+### Example 6 — Import of goods
+
+**Input line:** `25.04.2026 ; CUSTOMS ; DEBIT ; Import VAT machinery ; -480,000 ; AMD`
+
+**Reasoning:** Import VAT at customs. Recoverable. Part 9.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 25.04.2026 | CUSTOMS | -480,000 | -400,000 | -80,000 | 20% | Part 9 | N | — | — |
+
+---
+
+## Section 5 — Tier 1 classification rules (compressed)
+
+### 5.1 Standard rate 20% (Tax Code Article 64)
+Single rate, no reduced rates. Sales to Part 1/2. Purchases to Part 8.
+
+### 5.2 Zero rate
+Exports (customs declaration required), international transport, diplomatic supplies. Part 3.
+
+### 5.3 Exempt supplies
+Financial services, insurance, medical, educational, residential rental, public transport, postal universal service, agricultural land.
+
+### 5.4 Input VAT on domestic purchases
+Deductible if: for taxable supplies, valid tax invoice, supplier is VAT registered. Part 8.
+
+### 5.5 Reverse charge — non-resident services (Tax Code Article 40)
+Self-assess at 20%. Part 5 (base), Part 6 (output), Part 10 (input credit). Net zero for fully taxable.
+
+### 5.6 Import VAT
+At customs. Base = customs value + duties. 20%. Part 9. Recoverable.
+
+### 5.7 Blocked input VAT
+- Passenger vehicles (unless taxi/rental/driving school)
+- Entertainment and representation
+- Personal consumption
+- Without valid tax invoice
+- For exempt supplies
+
+### 5.8 Credit notes
+Both parties adjust in current period.
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Fuel/vehicles — *Default:* 0%. *Question:* "Car or commercial vehicle?"
+### 6.2 Entertainment — *Default:* block.
+### 6.3 SaaS entities — *Default:* reverse charge. *Question:* "Check invoice for entity."
+### 6.4 Owner transfers — *Default:* exclude. *Question:* "Customer payment or own money?"
+### 6.5 Incoming from individuals — *Default:* domestic 20%. *Question:* "Was this a sale?"
+### 6.6 Foreign incoming — *Default:* zero-rated export. *Question:* "Export documentation?"
+### 6.7 Large purchases — *Question:* "Fixed asset (>12 months life)?"
+### 6.8 Mixed-use phone — *Default:* 0%. *Question:* "Business line?"
+### 6.9 Cash withdrawals — *Default:* exclude. *Question:* "What for?"
+### 6.10 Rent — *Default:* no VAT (residential). *Question:* "Commercial with VAT invoice?"
+
+---
+
+## Section 7 — Excel working paper template
+
+Per `vat-workflow-base` Section 3 with Armenia-specific box codes from Section 1.
 
 ```
-Output VAT             = Domestic taxable x 20%
-EAEU Import VAT        = EAEU imports x 20%
-Reverse Charge VAT     = Imported services x 20%
-Total Output VAT       = Output + EAEU + Reverse Charge
-Total Input VAT        = Domestic + Non-EAEU imports + EAEU (creditable) + Reverse Charge (creditable)
-Net VAT Payable        = Total Output - Total Input - Credit B/F
-If Net < 0             = Credit carried forward or refund
+| Part 1  | Taxable supplies 20% | =SUMIFS(...) |
+| Part 2  | Output VAT 20% | =Part1*0.20 |
+| Part 3  | Zero-rated | =SUMIFS(...) |
+| Part 5  | Reverse charge base | =SUMIFS(...) |
+| Part 6  | Output VAT reverse charge | =Part5*0.20 |
+| Part 7  | Total output VAT | =Part2+Part6 |
+| Part 8  | Input VAT domestic | =SUMIFS(...) |
+| Part 9  | Input VAT imports | =SUMIFS(...) |
+| Part 10 | Input VAT reverse charge | =Part5*0.20 |
+| Part 11 | Total input VAT | =Part8+Part9+Part10 |
+| Part 12 | Net payable/credit | =Part7-Part11 |
+| Part 13 | Credit B/F | [manual] |
+| Part 14 | Net after credit | =Part12-Part13 |
 ```
 
 ---
 
-## Step 10: Excise Tax Interaction [T1]
+## Section 8 — Armenian bank statement reading guide
 
-**Legislation:** Tax Code, Chapter 51 (Excise Tax).
+**CSV format conventions.** Ameriabank and ACBA exports typically use semicolon or comma delimiters with DD.MM.YYYY dates. Ardshinbank exports may use ISO dates.
 
-| Category | Typical Rate |
-|----------|-------------|
-| Tobacco | AMD per unit (specific) |
-| Alcohol / spirits | AMD per liter |
-| Beer | AMD per liter |
-| Fuel | AMD per liter |
-| Motor vehicles (imported, luxury) | Variable |
+**Armenian language variants.** ashkhatavardz (salary), tokos (interest), vark (loan), kankhik (cash), gnumner (purchases), vacharqner (sales), pashtpan (lawyer), hashvapah (accountant).
 
-Excise calculated BEFORE VAT. VAT at 20% on (value + excise).
+**Internal transfers.** Own-account transfers between client's Ameriabank, ACBA, Ardshinbank accounts. Always exclude.
+
+**Foreign currency.** Convert to AMD at the Central Bank of Armenia rate on the transaction date.
+
+**IBAN prefix.** AM = Armenia.
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 9 — Onboarding fallback
 
-- NEVER allow turnover tax payers to claim input VAT credit or charge VAT
-- NEVER classify exempt supplies as zero-rated
-- NEVER accept input credit without valid tax invoice
-- NEVER apply input credit on blocked categories
-- NEVER treat EAEU imports like non-EAEU imports
-- NEVER ignore the 180-day rule for EAEU export confirmation
-- NEVER file return without reconciling records
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- EAEU export, no confirmation within 180 days [T2]
-**Situation:** Goods exported to Russia, no confirmation from Russian tax authority.
-**Resolution:** Zero-rating revoked. Standard 20% VAT applies retrospectively. Amend return. Flag for reviewer.
-
-### EC2 -- Reverse charge on digital services [T2]
-**Situation:** Armenian company subscribes to international SaaS.
-**Resolution:** Reverse charge at 20%. Self-assess output VAT. Input credit if for taxable supplies. Flag for reviewer.
-
-### EC3 -- Turnover tax payer receiving VAT invoice [T1]
-**Situation:** Turnover tax entity receives purchase invoice with 20% VAT.
-**Resolution:** Cannot claim input credit. VAT becomes part of cost. No VAT return filed.
-
-### EC4 -- Credit notes [T1]
-**Situation:** Price adjustment, credit note issued.
-**Resolution:** Supplier reduces output VAT. Buyer reduces input credit. Both adjust in period of correction.
-
-### EC5 -- IT company exports [T2]
-**Situation:** Armenian IT company provides software development to US client.
-**Resolution:** Export of services: zero-rated. Full input credit recovery. Documentation: contract, payment evidence, no physical presence requirement. Flag for reviewer: confirm place of supply rules.
-
-### EC6 -- Construction services [T1]
-**Situation:** Construction company bills in stages.
-**Resolution:** VAT at 20% on each progress billing. Input credit on materials per invoice.
-
-### EC7 -- Mixed EAEU and non-EAEU trade [T1]
-**Situation:** Entity exports to both Russia (EAEU) and Turkey (non-EAEU).
-**Resolution:** Both are zero-rated but different documentation. EAEU: Form 328 equivalent + confirmation. Non-EAEU: customs declaration + transport docs. Separate reporting in return.
-
-### EC8 -- Donation of goods to charity [T2]
-**Situation:** Company donates goods.
-**Resolution:** May be treated as deemed supply with output VAT. Exception for approved charitable organizations. Flag for reviewer: confirm charitable status.
+### 9.1 Entity type — *Inference:* "LLC"/"SRL" endings. *Fallback:* "Sole trader or company?"
+### 9.2 VAT registration — *Inference:* asking for VAT return = registered. *Fallback:* "VAT payer or turnover tax?"
+### 9.3 TIN (HVHH) — *Fallback:* "What is your tax ID?"
+### 9.4 Filing period — *Inference:* statement dates. *Fallback:* "Which month?"
+### 9.5 Industry — *Inference:* counterparty mix. *Fallback:* "What does the business do?"
+### 9.6 Exempt supplies — *Fallback:* "Do you make exempt sales?" *If yes, R-AM-4 fires.*
+### 9.7 Credit B/F — *Always ask:* "VAT credit from previous month?"
+### 9.8 Cross-border — *Inference:* foreign IBANs. *Fallback:* "Customers outside Armenia?"
 
 ---
 
-## Step 12: Reviewer Escalation Protocol
+## Section 10 — Reference material
 
-When a [T2] situation is identified:
+### Sources
+1. Tax Code of Armenia (as amended) — Articles 40, 64, et seq.
+2. SRC e-filing — https://www.petakner.am
+3. Central Bank of Armenia rates — https://www.cba.am
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list possible treatments]
-Recommended: [most likely correct]
-Action Required: Qualified accountant must confirm before filing.
-```
+### Known gaps
+1. IT sector special regime not covered. 2. Turnover tax regime not covered. 3. FEZ rules not covered.
 
-When a [T3] situation is identified:
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
+- **v1.x:** Initial skill.
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Refer to qualified accountant. Document gap.
-```
-
----
-
-## Step 13: Test Suite
-
-### Test 1 -- Standard local sale at 20%
-**Input:** Domestic sale, net AMD 5,000,000, VAT AMD 1,000,000. VAT registered.
-**Expected output:** Part 2: AMD 5,000,000. Part 6: Output VAT AMD 1,000,000.
-
-### Test 2 -- Local purchase with input credit
-**Input:** Purchase from registered supplier, net AMD 2,000,000, VAT AMD 400,000. Valid invoice.
-**Expected output:** Part 10: Input VAT AMD 400,000. Full credit.
-
-### Test 3 -- EAEU import (from Russia)
-**Input:** Goods from Russia, value AMD 3,000,000.
-**Expected output:** Part 7: AMD 600,000 (output). Part 12: AMD 600,000 (input credit). Net: zero.
-
-### Test 4 -- Non-EAEU export (zero-rated)
-**Input:** Export IT services to US client, AMD 10,000,000.
-**Expected output:** Part 3: AMD 10,000,000 at 0%. Full input credit recovery.
-
-### Test 5 -- Blocked input: entertainment
-**Input:** Client entertainment, AMD 500,000, VAT AMD 100,000.
-**Expected output:** Input VAT AMD 0 (BLOCKED).
-
-### Test 6 -- Reverse charge on foreign services
-**Input:** Armenian company pays EUR 2,000 (AMD 840,000) to French consulting firm.
-**Expected output:** Part 8: AMD 168,000 (20% output). Part 13: AMD 168,000 (input credit). Net: zero.
-
-### Test 7 -- Turnover tax payer
-**Input:** Small shop on turnover tax, monthly sales AMD 8,000,000.
-**Expected output:** Turnover tax = 10% x AMD 8,000,000 = AMD 800,000. No VAT return. No input credit.
-
-### Test 8 -- EAEU export pending confirmation
-**Input:** Export to Kazakhstan AMD 5,000,000. 170 days elapsed, no confirmation.
-**Expected output:** Currently zero-rated. If no confirmation by day 180, 20% applies retrospectively = AMD 1,000,000.
-
----
-
-## Step 14: Invoice Requirements [T1]
-
-**Legislation:** Tax Code; SRC e-Invoice Regulations.
-
-### Electronic Invoicing
-1. Electronic tax invoices via SRC portal (petekamutner.am)
-2. Input credit validated against SRC database
-3. E-invoices increasingly mandatory for B2B transactions
-4. Paper invoices accepted for certain smaller transactions
-
-### Mandatory Contents
-1. Supplier's name, address, TIN
-2. Buyer's name and TIN
-3. Date of issue
-4. Invoice number
-5. Description of goods/services
-6. Quantity and unit price
-7. VAT rate (20%) and VAT amount
-8. Total amount including VAT
-
----
-
-## Step 15: Record Keeping [T1]
-
-**Legislation:** Tax Code, Chapter 15.
-
-### Mandatory Records (retain for 6 years)
-1. All tax invoices (electronic and paper)
-2. Purchase and sales journals
-3. EAEU import/export documentation
-4. Non-EAEU customs declarations
-5. Bank statements
-6. General ledger, journals, trial balance
-7. Stock records
-8. Fixed asset register
-
----
-
-## Step 16: Specific Sector Rules
-
-### IT and Technology [T2]
-- Software development exports: zero-rated
-- Domestic IT services: VAT at 20%
-- Armenia has growing IT sector with potential incentives
-- **Flag for reviewer: confirm any sector-specific incentives**
-
-### Mining [T3]
-- Mining companies: standard VAT rules apply unless under special agreement
-- Mineral exports: zero-rated
-- Equipment imports: VAT at customs (creditable)
-- **Escalate complex mining structures**
-
-### Agriculture [T2]
-- Unprocessed agricultural products: may be exempt
-- Processed food: VAT at 20%
-- Agricultural cooperatives may have simplified treatment
-- **Flag for reviewer: verify exemption eligibility**
-
-### Tourism and Hospitality [T1]
-- Hotel accommodation: VAT at 20%
-- Restaurant services: VAT at 20%
-- Tour services for non-residents: zero-rated (export)
-- Input credit on hotel supplies allowed
-
-### Construction [T1]
-- Construction services: VAT at 20%
-- Progress billing: VAT on each milestone
-- Input credit on materials allowed
-
----
-
-## Step 17: Penalties Detailed Summary [T1]
-
-| Offence | Penalty |
-|---------|---------|
-| Failure to register | AMD 100,000 |
-| Late filing | AMD 50,000 per return |
-| Late payment | 0.04% per day (max 365 days) |
-| Failure to issue invoice | AMD 50,000 per instance |
-| Fraudulent declaration | Up to 200% of understated tax |
-| Failure to maintain records | AMD 50,000 |
-| Tax evasion | Criminal prosecution |
-| Under-declaration | Additional tax + penalty |
-| Non-filing of EAEU declaration | AMD 50,000 + interest |
-
----
-
-## Step 18: Audit and Appeals [T2]
-
-### Audit Process
-1. SRC may audit within **3 years** of filing (6 years for fraud)
-2. Desk audits and field audits
-3. EAEU trade triggers cross-border verification
-4. Risk-based selection
-
-### Appeals
-1. File objection with SRC within **30 days**
-2. Appeal to Administrative Court within **30 days**
-
-**Escalate any audit situation to qualified practitioner.**
-
----
-
-## Contribution Notes
-
-This skill must be validated by a qualified auditor or tax consultant practicing in Armenia before use in production.
-
-**A skill may not be published without sign-off from a qualified practitioner in Armenia.**
+## End of Armenia VAT Skill v2.0
 
 
 ---

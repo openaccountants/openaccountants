@@ -1,514 +1,588 @@
 ---
 name: albania-vat
-description: Use this skill whenever asked to prepare, review, or advise on an Albanian VAT (TVSH) return or any transaction classification for Albanian VAT purposes. Trigger on phrases like "Albania VAT", "Albanian TVSH", "TVSH return", "DPT filing", "Albanian tax", or any request involving Albanian VAT obligations. This skill contains the complete Albanian TVSH classification rules, rate structure, return form mappings, deductibility rules, reverse charge treatment, and filing deadlines. ALWAYS read this skill before touching any Albanian VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for an Albanian VAT (TVSH) return for any client. Trigger on phrases like "Albania VAT", "Albanian TVSH", "TVSH return", "DPT filing", "Albanian tax", or any request involving Albanian VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Albania only — standard TVSH payers filing monthly returns. Small business exemptions, free economic zones, agricultural compensation schemes, and margin schemes are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any Albanian VAT work.
+version: 2.0
 ---
 
-# Albania VAT (TVSH) Return Preparation Skill
+# Albania VAT (TVSH) Return Skill v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Republic of Albania |
-| Jurisdiction Code | AL |
-| Tax Name | TVSH (Tatimi mbi Vleren e Shtuar / VAT) |
-| Primary Legislation | Law No. 92/2014 "On Value Added Tax in the Republic of Albania" (as amended) |
-| Supporting Legislation | Council of Ministers Decisions on implementation; Customs Code; Law on Tax Procedures |
-| Tax Authority | General Directorate of Taxation (DPT -- Drejtoria e Pergjithshme e Tatimeve) |
-| Filing Portal | https://e-filing.tatime.gov.al (e-Filing system) |
+|---|---|
+| Country | Albania (Republic of Albania) |
+| Tax name | TVSH (Tatimi mbi Vleren e Shtuar) |
+| Standard rate | 20% |
+| Reduced rates | 6% (accommodation/tourism by certified structures), 10% (agricultural inputs — fertilisers, pesticides, seeds) |
+| Zero rate | 0% (exports, international transport, diplomatic supplies) |
+| Return form | Monthly TVSH declaration (electronic) |
+| Filing portal | https://e-filing.tatime.gov.al |
+| Authority | General Directorate of Taxation (DPT — Drejtoria e Pergjithshme e Tatimeve) |
+| Currency | ALL (Albanian Lek) only |
+| Filing frequency | Monthly (all TVSH payers) |
+| Deadline | 14th of the month following the reporting month |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Pending -- requires validation by licensed Albanian tax practitioner |
-| Validation Date | April 2026 (web-verified; practitioner sign-off still pending) |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: rate application, standard classification, basic input deductions. Tier 2: tourism reduced rate, partial deduction, free zones. Tier 3: transfer pricing, complex group structures. |
+| Validated by | Pending — requires validation by licensed Albanian tax practitioner |
+| Validation date | April 2026 (web-verified; practitioner sign-off pending) |
 
----
+**Key TVSH return boxes:**
 
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax practitioner must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified practitioner and document the gap.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and NUIS/NIPT (Unique Identification Number)** [T1] -- tax identification number
-2. **TVSH registration status** [T1] -- registered TVSH payer, small business (exempt), or non-registered
-3. **TVSH period** [T1] -- monthly (standard for all TVSH payers)
-4. **Industry/sector** [T2] -- impacts reduced rate eligibility (especially tourism/accommodation)
-5. **Does the business make exempt supplies?** [T2] -- partial deduction rules apply
-6. **Does the business trade cross-border?** [T1] -- impacts import/export treatment
-7. **Accumulated TVSH credit** [T1] -- from prior periods
-8. **Is the business in a free economic zone?** [T2] -- special TVSH benefits may apply
-9. **Does the business provide tourism/accommodation services?** [T2] -- 6% reduced rate applies
-
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until registration status and period are confirmed.**
-
----
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-- Sale (output TVSH) or Purchase (input TVSH)
-- Salaries, social/health insurance, dividends, loan repayments, penalties = OUT OF SCOPE
-- **Legislation:** Law No. 92/2014, Article 3-6 (taxable supply definitions)
-
-### 1b. Determine Counterparty Location [T1]
-- Albania (domestic): supplier/customer registered in Albania
-- EU: all 27 EU member states (Albania is EU candidate; customs apply)
-- CEFTA: Serbia, North Macedonia, Bosnia, Montenegro, Kosovo, Moldova
-- Other foreign: all remaining countries
-
-### 1c. Determine TVSH Rate [T1]
-
-| Rate | Application | Legislation |
-|------|-------------|-------------|
-| 20% | Standard rate -- most goods and services | Article 56 |
-| 6% | Reduced rate -- accommodation/tourism services (hotels, agritourism, certified structures) | Article 56(1.1) |
-| 10% | Reduced rate -- agricultural inputs (fertilisers, pesticides, seeds, seedlings) | Article 56 |
-| 0% | Zero rate -- exports of goods, international transport, supplies to diplomatic missions | Article 51-55 |
-| Exempt | Financial, insurance, medical, educational, and others (Article 51) | Article 51 |
-
-### 1d. Reduced Rate (6%) Categories [T1]
-
-The 6% reduced rate applies specifically to:
-- Accommodation services provided by certified tourism structures (hotels, resorts, guesthouses, agritourism)
-- The reduced rate was introduced to promote Albania's tourism sector
-- Applies ONLY to the accommodation component; restaurant/bar services within hotels are at 20%
-- The service provider must hold a valid tourism license/certification
-
-**Legislation:** Article 56(1.1), as amended by Law No. 71/2017 and subsequent amendments
-
-### 1e. Additional Reduced Rate Categories [T2]
-
-Albania has introduced other reduced/special rates for specific sectors:
-- Advertising services by audio-visual media: 6% [T2]
-- Supply of agricultural inputs (chemical fertilisers, pesticides, seeds, seedlings): 10% [T1]
-- Medical equipment and medicines: some items zero-rated on import [T2]
-
-**Flag for reviewer: reduced rate categories are subject to frequent legislative changes. Verify current applicability.**
-
-### 1f. Exempt Supplies (Article 51) [T1]
-
-The following are exempt from TVSH:
-- Financial and banking services (interest, currency exchange)
-- Insurance and reinsurance
-- Medical and dental services (by licensed practitioners)
-- Educational services (state-accredited institutions)
-- Residential property rental (first transfer of new residential, if applicable, may be taxable)
-- Postal services (universal)
-- Cultural/artistic events (public interest, under conditions)
-- Gambling/lottery (separately taxed)
-- Burial services
-- Social welfare services
-- Agricultural land transactions
-- Gold supplied to Bank of Albania
-
-### 1g. Determine Expense Category [T1]
-- Fixed assets: per Albanian accounting standards, useful life > 12 months
-- Goods for resale: purchased for direct resale
-- Raw materials: consumed in production
-- Services/overheads: everything else
-
----
-
-## Step 2: TVSH Return Form Structure [T1]
-
-**The TVSH declaration is filed monthly via the DPT e-Filing portal. All TVSH payers must file electronically.**
-
-**Legislation:** Law No. 92/2014 Article 105-107; Instruction of the Minister of Finance
-
-### Part I -- Output TVSH (Sales)
-
-| Box | Description | Rate |
-|-----|-------------|------|
-| 1 | Taxable supplies at 20% -- tax base | 20% |
-| 2 | Output TVSH at 20% | calculated |
-| 3 | Taxable supplies at 6% -- tax base | 6% |
-| 4 | Output TVSH at 6% | calculated |
-| 5 | Zero-rated supplies (exports) | 0% |
-| 6 | Exempt supplies | - |
-| 7 | Self-assessed TVSH on services from abroad (reverse charge) -- base | varies |
-| 8 | Output TVSH on reverse charge | calculated |
-| 9 | Total output TVSH (2 + 4 + 8) | sum |
-
-### Part II -- Input TVSH (Purchases)
-
-| Box | Description |
-|-----|-------------|
-| 10 | Domestic purchases -- tax base |
+| Box | Meaning |
+|---|---|
+| 1 | Taxable supplies at 20% — tax base |
+| 2 | Output TVSH at 20% |
+| 3 | Taxable supplies at 6% — tax base |
+| 4 | Output TVSH at 6% |
+| 5 | Zero-rated supplies (exports) |
+| 6 | Exempt supplies |
+| 7 | Self-assessed TVSH on services from abroad (reverse charge) — base |
+| 8 | Output TVSH on reverse charge |
+| 9 | Total output TVSH (2 + 4 + 8) |
+| 10 | Domestic purchases — tax base |
 | 11 | Input TVSH on domestic purchases |
-| 12 | Imports -- customs value + duties |
+| 12 | Imports — customs value + duties |
 | 13 | TVSH paid on imports |
-| 14 | Fixed asset acquisitions -- tax base |
+| 14 | Fixed asset acquisitions — tax base |
 | 15 | Input TVSH on fixed assets |
 | 16 | Input TVSH on reverse charge (deductible) |
 | 17 | Adjustments to input TVSH |
 | 18 | Total input TVSH (11 + 13 + 15 + 16 + 17) |
-
-### Part III -- Settlement
-
-| Box | Description |
-|-----|-------------|
 | 19 | TVSH payable (if 9 > 18) |
 | 20 | TVSH credit (if 18 > 9) |
 | 21 | TVSH credit from prior period |
 | 22 | TVSH credit for refund |
 | 23 | Net TVSH payable |
 
----
+**Conservative defaults — Albania-specific values:**
 
-## Step 3: Reverse Charge and Import Mechanisms
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 20% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Albania |
+| Unknown business-use proportion (vehicle, phone) | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge from non-resident (Box 7/8/16) |
+| Unknown blocked-input status (entertainment, personal use) | Blocked |
+| Unknown whether transaction is in scope | In scope |
+| Unknown tourism certification status | 20% (not 6%) |
 
-### 3a. Services from Non-Residents [T1]
+**Red flag thresholds:**
 
-When an Albanian entity purchases services from a non-resident with no Albanian registration:
-- Place of supply: determined under Article 25-30 of the Law on TVSH
-- If place of supply is Albania, buyer self-assesses TVSH at 20% (or applicable rate)
-- Report in Box 7 (tax base) and Box 8 (output TVSH)
-- Claim input TVSH in Box 16 (if entitled to deduction)
-- Net effect: zero for fully taxable businesses
-
-**Legislation:** Article 25-30, Article 86
-
-### 3b. Imports of Goods [T1]
-
-Goods imported into Albania:
-- TVSH collected by Customs Administration at the border
-- Rate: 20% (or 6% if applicable, or 0% for specific medical/agricultural imports)
-- Tax base: customs value + import duties + excise (if applicable)
-- Customs TVSH is recoverable as input TVSH
-- Requires customs declaration as documentary evidence
-
-### 3c. Exports [T1]
-
-Exports of goods outside Albania:
-- Zero-rated under Article 54
-- Requires customs export declaration
-- Related input TVSH is fully deductible
-
-### 3d. Supplies to Free Zones [T2]
-
-Albania has designated free economic zones (e.g., Spitalla, Koplik, Vlora):
-- Goods entering free zones may be exempt from import TVSH
-- Sales from free zones to domestic market are subject to standard TVSH
-- Free zone operators may have specific TVSH obligations
-
-**Flag for reviewer: free zone treatment requires case-by-case analysis.**
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | ALL 500,000 |
+| HIGH tax-delta on a single conservative default | ALL 30,000 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net TVSH position | ALL 800,000 |
 
 ---
 
-## Step 4: Input TVSH Deduction Rules
+## Section 2 — Required inputs and refusal catalogue
 
-### 4a. General Conditions (Article 68-72) [T1]
+### Required inputs
 
-Input TVSH is deductible if ALL conditions are met:
-1. Goods/services acquired for use in taxable operations
-2. A valid tax invoice (fature tatimore) is available
-3. Goods/services recorded in accounting
-4. For imports: customs declaration and payment proof available
+**Minimum viable** — bank statement for the month in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Albanian bank: Banka Kombetare Tregtare (BKT), Raiffeisen Bank Albania, Credins Bank, Intesa Sanpaolo Albania, OTP Bank Albania, Tirana Bank, Alpha Bank Albania, or any other.
 
-### 4b. Tax Invoice (Fature Tatimore) Requirements [T1]
+**Recommended** — sales invoices (especially for exports and zero-rated supplies), purchase invoices for any input TVSH claim above ALL 30,000, the client's NUIS/NIPT in writing.
 
-A valid fature tatimore must contain:
-- Sequential number and date
-- Seller's name, address, NUIS/NIPT
-- Buyer's name, address, NUIS/NIPT
-- Description of goods/services
-- Quantity and unit price (excl. TVSH)
-- TVSH rate and amount
-- Total amount including TVSH
+**Ideal** — complete fiscalized invoice register (from DPT e-Filing), prior period TVSH declaration, purchase and sales books.
 
-**Albania has implemented mandatory electronic invoicing (fiskalizimi) since 2021. All invoices must be issued through the fiscalization platform and receive a unique invoice identification code (NUIS).**
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This TVSH return was produced from bank statement alone. The reviewer must verify that input TVSH claims are supported by fiscalized invoices (NIVF code present) and that all reverse-charge classifications match the supplier's invoice."
 
-### 4c. Fiscalization (Fiskalizimi) [T1]
+### Albania-specific refusal catalogue
 
-Since January 2021 (B2G and B2B) and September 2021 (B2C):
-- All invoices must be electronically registered through the fiscalization system
-- Each invoice receives a unique identification code (NIVF -- Numri Identifikues i Veprimit Fiskale)
-- Cash transactions require electronic fiscal devices
-- Non-fiscalized invoices may result in denial of input TVSH deduction
+**R-AL-1 — Small business / non-registered entity attempting to file TVSH.** *Trigger:* client turnover below ALL 10,000,000 and not voluntarily VAT-registered, or client on the small business tax regime. *Message:* "Non-registered entities and those on the small business tax regime cannot file TVSH returns or claim input TVSH. This skill covers registered TVSH payers only."
 
-**Legislation:** Law No. 87/2019 on E-Invoicing and Fiscalization
+**R-AL-2 — Free economic zone entity.** *Trigger:* client operates within a designated free economic zone (Spitalla, Koplik, Vlora). *Message:* "Free economic zone entities have special TVSH treatment that requires case-by-case analysis. Please escalate to a qualified Albanian tax practitioner."
 
-### 4d. Blocked Input TVSH (Non-Deductible) [T1]
+**R-AL-3 — Agricultural compensation scheme.** *Trigger:* client is a small agricultural producer on the flat-rate compensation scheme. *Message:* "The agricultural compensation scheme under Article 92 has specific rules for deemed input TVSH. Out of scope for this skill."
 
-Input TVSH is NOT deductible for:
+**R-AL-4 — Partial exemption / proportional deduction.** *Trigger:* client makes both taxable and exempt supplies and the exempt proportion is not de minimis. *Message:* "Your input TVSH must be apportioned under Article 73. This requires an annual pro-rata calculation. Please use a qualified practitioner to determine the deductible proportion."
 
-| Category | Legislation |
-|----------|-------------|
-| Goods/services used for exempt operations | Article 71 |
-| Passenger vehicles (acquisition, rental, fuel) unless for business fleet | Article 71(2) |
-| Entertainment, hospitality, and representation expenses | Article 71(3) |
-| Personal consumption of employees/directors | Article 71(4) |
-| Goods/services without valid fiscal invoice | Article 69 |
-| Goods lost/destroyed (except force majeure with documentation) | Article 71 |
-| Accommodation/catering for staff (unless remote work site) | Article 71 |
+**R-AL-5 — Margin scheme.** *Trigger:* client deals in second-hand goods, art, antiques under the margin scheme. *Message:* "Margin scheme transactions require transaction-level margin computation. Out of scope."
 
-### 4e. Proportional Deduction (Article 73) [T2]
+**R-AL-6 — Income tax instead of TVSH.** *Trigger:* user asks about Albanian income tax, not the TVSH return. *Message:* "This skill only handles the monthly TVSH return. For Albanian income tax, use the appropriate income tax skill."
 
-If a business makes both taxable and exempt supplies:
-- Separate accounting of input TVSH required
-- Direct attribution first
-- Mixed-use costs: proportional deduction
+---
 
-**Pro-rata formula:**
+## Section 3 — Supplier pattern library (the lookup table)
+
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. Match by case-insensitive substring on the counterparty name as it appears in the bank statement.
+
+### 3.1 Albanian banks (fees exempt — exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BKT, BANKA KOMBETARE TREGTARE | EXCLUDE for bank charges/fees | Financial service, exempt |
+| RAIFFEISEN, RAIFFEISEN BANK AL | EXCLUDE for bank charges/fees | Same |
+| CREDINS, CREDINS BANK | EXCLUDE for bank charges/fees | Same |
+| INTESA SANPAOLO AL, ISP ALBANIA | EXCLUDE for bank charges/fees | Same |
+| OTP BANK AL, TIRANA BANK, ALPHA BANK | EXCLUDE for bank charges/fees | Same |
+| INTERESA, INTEREST, KAMATA | EXCLUDE | Interest income/expense, out of scope |
+| KREDI, LOAN, HUADHENIE | EXCLUDE | Loan principal movement, out of scope |
+
+### 3.2 Albanian government, regulators, and statutory bodies (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| DPT, DREJTORIA E TATIMEVE | EXCLUDE | Tax payment, not a supply |
+| DOGANA, CUSTOMS | EXCLUDE | Customs duty (but see import TVSH for Box 12/13) |
+| ISSH, SIGURIMET SHOQERORE | EXCLUDE | Social insurance contribution |
+| QKR, QENDRA KOMBETARE E REGJISTRIMIT | EXCLUDE | Business registration fee |
+| BASHKIA, MUNICIPALITY | EXCLUDE | Local government fee |
+| TATIME, TAX OFFICE | EXCLUDE | Tax payment |
+
+### 3.3 Albanian utilities
+
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| OSHEE, OPERATORI SHPERNDARJES ENERGJISE | Domestic 20% | 10/11 | Electricity — overhead |
+| UKT, UJESJELLESI | Domestic 20% | 10/11 | Water utility |
+| ALBTELEKOM, ALBtelecom | Domestic 20% | 10/11 | Telecoms — overhead |
+| ONE ALBANIA, VODAFONE AL | Domestic 20% | 10/11 | Mobile telecoms |
+| ALBAGAS, ALBPETROL | Domestic 20% | 10/11 | Gas/fuel supply |
+
+### 3.4 Insurance (exempt — exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SIGAL, SIGMA, INSIG | EXCLUDE | Insurance, exempt |
+| INTERSIG, ALBSIG, EUROSIG | EXCLUDE | Same |
+| SIGURIM, INSURANCE, POLICA | EXCLUDE | All exempt |
+
+### 3.5 Post and logistics
+
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| POSTA SHQIPTARE | EXCLUDE for standard postage | | Universal postal service, exempt |
+| POSTA SHQIPTARE (courier/parcel) | Domestic 20% | 10/11 | Non-universal services taxable |
+| DHL ALBANIA, TNT, FedEx | Domestic 20% | 10/11 | Express courier, taxable |
+
+### 3.6 Transport
+
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| ALBTRANSPORT, URBAN BUS | EXCLUDE | | Public transport, exempt |
+| TAXI, TRANSFER | Domestic 20% | 10/11 | Local taxi |
+| WIZZ AIR, TURKISH AIRLINES (international) | EXCLUDE / 0% | | International flights zero rated |
+
+### 3.7 Food and entertainment (blocked)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SUPERMARKET, CONAD, SPAR AL, NEPTUN | Default BLOCK input TVSH | Personal provisioning |
+| RESTAURANT, RESTORANT, BAR, KAFE | Default BLOCK | Entertainment blocked under Article 71(3) |
+| HOTEL (non-tourism business) | Default BLOCK | Entertainment/hospitality blocked |
+
+### 3.8 SaaS — non-resident suppliers (reverse charge, Box 7/8/16)
+
+Albania is not an EU member state. All foreign SaaS providers are non-resident suppliers triggering reverse charge.
+
+| Pattern | Billing entity | Box | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | 7/8/16 | Reverse charge |
+| MICROSOFT (365, Azure) | Microsoft Ireland or Microsoft Corp (US) | 7/8/16 | Reverse charge |
+| ADOBE | Adobe Systems (IE or US) | 7/8/16 | Reverse charge |
+| META, FACEBOOK ADS | Meta Platforms Ireland or Meta (US) | 7/8/16 | Reverse charge |
+| SLACK, ZOOM, DROPBOX | Various non-resident entities | 7/8/16 | Reverse charge |
+| AWS, AMAZON WEB SERVICES | AWS EMEA SARL (LU) or AWS Inc (US) | 7/8/16 | Reverse charge |
+| NOTION, ANTHROPIC, OPENAI, GITHUB, FIGMA, CANVA | US entities | 7/8/16 | Reverse charge |
+
+### 3.9 Payment processors
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing, financial service |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+
+### 3.10 Professional services (Albania)
+
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| NOTER, NOTAR, NOTARY | Domestic 20% | 10/11 | Deductible if business purpose |
+| KONTABILIST, AUDITOR, EKSPERT KONTABEL | Domestic 20% | 10/11 | Always deductible |
+| AVOKAT, LAWYER, JURIST | Domestic 20% | 10/11 | Deductible if business legal matter |
+| QKR fees | EXCLUDE | | Government fee, not a supply |
+
+### 3.11 Payroll and social security (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ISSH, SOCIAL INSURANCE, SIGURIME | EXCLUDE | Social/health insurance payment |
+| PAGA, SALARY, RROGA | EXCLUDE | Wages — outside TVSH scope |
+| TAP, TATIM MBI TE ARDHURAT | EXCLUDE | Income tax withholding |
+
+### 3.12 Property and rent
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| QIRA (commercial, with TVSH invoice) | Domestic 20% | Commercial lease, taxable |
+| QIRA (residential, no TVSH) | EXCLUDE | Residential lease, exempt |
+
+### 3.13 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFERTE, INTERNAL, BRENDSHME | EXCLUDE | Internal movement |
+| DIVIDENT, DIVIDEND | EXCLUDE | Dividend, out of scope |
+| TERHEQJE, ATM, CASH WITHDRAWAL | TIER 2 — ask | Default exclude; ask what cash was spent on |
+
+---
+
+## Section 4 — Worked examples
+
+Six worked classifications from a hypothetical bank statement of an Albanian self-employed IT consultant based in Tirana.
+
+### Example 1 — Non-resident SaaS reverse charge (Notion)
+
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; ALL 1,760`
+
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.8). No Albanian registration. This is a service received from a non-resident. Reverse charge under Article 86: self-assess output TVSH at 20% in Box 7/8, claim input TVSH in Box 16. Net effect zero for a fully taxable business.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (input) | Box (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -1,760 | -1,760 | 352 | 20% | 16 | 7/8 | N | — | — |
+
+### Example 2 — Non-resident SaaS reverse charge (Google Ads)
+
+**Input line:**
+`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -93,500 ; ALL`
+
+**Reasoning:**
+Google Ireland Ltd is non-resident (Albania is not EU). Reverse charge at 20%. Box 7 for the base, Box 8 for output TVSH, Box 16 for input TVSH credit. Both sides must appear on the return.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (input) | Box (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | GOOGLE IRELAND LIMITED | -93,500 | -93,500 | 18,700 | 20% | 16 | 7/8 | N | — | — |
+
+### Example 3 — Entertainment, fully blocked
+
+**Input line:**
+`15.04.2026 ; RESTORANT MULLIRI I VJETER ; DEBIT ; Business dinner ; -24,000 ; ALL`
+
+**Reasoning:**
+Restaurant transaction. Entertainment and hospitality expenses are blocked under Article 71(3). Input TVSH is irrecoverable regardless of business purpose. Default: full block.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORANT MULLIRI I VJETER | -24,000 | -24,000 | 0 | — | — | Y | Q1 | "Entertainment: blocked" |
+
+### Example 4 — Fixed asset purchase
+
+**Input line:**
+`18.04.2026 ; NEPTUN SHPK ; DEBIT ; Laptop HP ProBook ; -175,000 ; ALL`
+
+**Reasoning:**
+The item is a laptop with useful life over 12 months — qualifies as a fixed asset under Albanian accounting standards. Goes to Box 14 (net base) and Box 15 (input TVSH). Must have a fiscalized invoice with NIVF code.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | NEPTUN SHPK | -175,000 | -145,833 | -29,167 | 20% | 14/15 | N | — | — |
+
+### Example 5 — Export of services (zero-rated)
+
+**Input line:**
+`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; IT consultancy March ; +385,000 ; ALL`
+
+**Reasoning:**
+Incoming payment from a German company for IT consulting services. Export of services — zero-rated under Article 54. Report net in Box 5. No output TVSH. Related input TVSH is fully deductible. Requires: customs/export documentation or service export evidence.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | STUDIO KREBS GMBH | +385,000 | +385,000 | 0 | 0% | 5 | Y | Q2 (HIGH) | "Verify export documentation" |
+
+### Example 6 — Motor vehicle, blocked
+
+**Input line:**
+`28.04.2026 ; AUTOSTAR SHPK ; DEBIT ; Car lease payment Hyundai ; -71,500 ; ALL`
+
+**Reasoning:**
+Car lease payment. Input TVSH on passenger vehicles is blocked under Article 71(2). Exceptions only for taxis, rental fleet, driving school, delivery vehicles. An IT consultant does not qualify. Default: full block.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | AUTOSTAR SHPK | -71,500 | -71,500 | 0 | — | — | Y | Q3 | "Motor vehicle: blocked" |
+
+---
+
+## Section 5 — Tier 1 classification rules (compressed)
+
+### 5.1 Standard rate 20% (Article 56)
+
+Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales at 20% go to Box 1/2. Purchases at 20% go to Box 10/11.
+
+### 5.2 Reduced rate 6% — accommodation/tourism (Article 56(1.1))
+
+Applies only to accommodation services by certified tourism structures (hotels, resorts, guesthouses, agritourism). The service provider must hold a valid tourism licence. Restaurant, bar, spa services within hotels are at 20%. Sales at 6% go to Box 3/4.
+
+### 5.3 Reduced rate 10% — agricultural inputs (Article 56)
+
+Applies to chemical fertilisers, pesticides, seeds, seedlings. Narrow category.
+
+### 5.4 Zero rate (Articles 51-55)
+
+Exports of goods outside Albania (requires customs export declaration). International transport services. Supplies to diplomatic missions. Report in Box 5.
+
+### 5.5 Exempt supplies (Article 51)
+
+Financial and banking services, insurance, medical/dental (licensed), educational (accredited), residential rental, postal universal service, cultural events (public interest), gambling (separately taxed), burial services, social welfare, agricultural land, gold to Bank of Albania. No output TVSH, no input TVSH deduction on related costs.
+
+### 5.6 Domestic purchases — input TVSH
+
+Input TVSH deductible if: (a) goods/services for taxable operations, (b) valid fiscalized invoice (NIVF present), (c) recorded in accounting, (d) supplier is TVSH registered. Box 10 (base) / Box 11 (input TVSH). Fixed assets go to Box 14/15.
+
+### 5.7 Reverse charge — services from non-residents (Article 86)
+
+When the client receives services from a non-resident with no Albanian registration and place of supply is Albania: self-assess at 20%. Box 7 (base), Box 8 (output TVSH), Box 16 (input TVSH credit if entitled). Net effect zero for fully taxable business.
+
+### 5.8 Import of goods
+
+Goods imported into Albania: TVSH collected by customs at the border. Base = customs value + duties + excise. Rate 20% (or reduced if applicable). Box 12 (base) / Box 13 (input TVSH). Recoverable with customs declaration as evidence.
+
+### 5.9 Blocked input TVSH (Article 71)
+
+Zero TVSH recovery with no exceptions unless specifically noted:
+- Passenger vehicles: purchase, lease, fuel (unless taxi/rental/driving school/delivery fleet) — Article 71(2)
+- Entertainment, hospitality, representation — Article 71(3)
+- Personal consumption of employees/directors — Article 71(4)
+- Without valid fiscalized invoice — Article 69
+- Goods/services for exempt operations — Article 71
+- Goods lost/destroyed (except force majeure) — Article 71
+- Accommodation/catering for staff (unless remote work site) — Article 71
+
+Blocked categories override all other rules. Check blocked status first.
+
+### 5.10 Fiscalization requirement (Law No. 87/2019)
+
+All invoices must be electronically registered through the fiscalization system (since 2021). Each invoice receives a NIVF code. Non-fiscalized invoices may result in denial of input TVSH deduction.
+
+### 5.11 Credit notes and returns (Article 82)
+
+Seller reduces output TVSH in current period. Buyer reduces input TVSH in current period. Credit note must be fiscalized.
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Fuel and vehicle costs
+
+*Pattern:* Kastrati, Kurum, Shell, fuel receipts. *Why insufficient:* vehicle type and use unknown. Cars are blocked regardless. *Default:* 0% recovery. *Question:* "Is this a car (blocked) or a commercial vehicle used exclusively for business?"
+
+### 6.2 Restaurants and entertainment
+
+*Pattern:* any restaurant, cafe, bar. *Why insufficient:* entertainment is hard blocked under Article 71(3). *Default:* block. *Question:* "Was this entertainment? (Note: blocked regardless — for income tax records only.)"
+
+### 6.3 Ambiguous SaaS billing entities
+
+*Pattern:* Google, Microsoft, Adobe, Meta, etc. *Why insufficient:* billing entity not visible on bank statement. *Default:* reverse charge Box 7/8/16 (all non-resident for Albania). *Question:* "Could you check the invoice for the legal entity name?"
+
+### 6.4 Round-number incoming transfers from owner-named counterparties
+
+*Pattern:* large round credit matching client's name. *Default:* exclude as owner injection. *Question:* "Is this a customer payment, your own money, or a loan?"
+
+### 6.5 Incoming transfers from individual names
+
+*Pattern:* incoming from private-looking counterparties. *Default:* domestic sale at 20%, Box 1/2. *Question:* "Was this a sale? Business or consumer?"
+
+### 6.6 Incoming transfers from foreign counterparties
+
+*Pattern:* foreign IBAN or currency. *Default:* zero-rated export Box 5. *Question:* "What was this — export sale, service, refund? Do you have export documentation?"
+
+### 6.7 Large one-off purchases (potential fixed assets)
+
+*Pattern:* single invoice for equipment, laptop, machinery. *Default:* if asset with useful life >12 months, Box 14/15; otherwise Box 10/11. *Question:* "Is this equipment with useful life over 12 months?"
+
+### 6.8 Mixed-use phone, internet
+
+*Pattern:* ONE Albania, Vodafone personal lines, home electricity. *Default:* 0% if mixed without declared proportion. *Question:* "Is this a dedicated business line or mixed-use?"
+
+### 6.9 Outgoing transfers to individuals
+
+*Pattern:* outgoing to private names. *Default:* exclude as drawings. *Question:* "Was this a contractor payment with invoice, wages, or personal transfer?"
+
+### 6.10 Cash withdrawals
+
+*Pattern:* ATM, terheqje, cash withdrawal. *Default:* exclude. *Question:* "What was the cash used for?"
+
+### 6.11 Rent payments
+
+*Pattern:* monthly qira, rent to landlord-sounding name. *Default:* no TVSH, no deduction (residential default). *Question:* "Is this commercial property? Does the landlord charge TVSH?"
+
+### 6.12 Foreign hotel and accommodation
+
+*Pattern:* hotel abroad. *Default:* exclude from input TVSH (non-Albanian VAT). *Question:* "Was this a business trip?"
+
+### 6.13 Tourism income at 6%
+
+*Pattern:* booking.com payouts, hotel/accommodation income. *Default:* flag for reviewer — verify tourism certification. *Question:* "Do you hold a valid tourism licence? Is this accommodation under 3 months?"
+
+---
+
+## Section 7 — Excel working paper template
+
+The base specification is in `vat-workflow-base` Section 3. This section provides the Albania-specific overlay.
+
+### Sheet "Transactions"
+
+Columns A-L per the base. Column H ("Box code") accepts only valid Albanian TVSH box codes from Section 1 of this skill. Use blank for excluded transactions.
+
+### Sheet "Box Summary"
+
 ```
-Deductible % = (Taxable supplies + Zero-rated supplies) /
-               (Taxable supplies + Zero-rated supplies + Exempt supplies) * 100
+Output:
+| 1  | Taxable supplies 20% base | =SUMIFS(Transactions!E:E, Transactions!H:H, "1") |
+| 2  | Output TVSH 20% | =Box_Summary!C[1_row]*0.20 |
+| 3  | Taxable supplies 6% base | =SUMIFS(Transactions!E:E, Transactions!H:H, "3") |
+| 4  | Output TVSH 6% | =Box_Summary!C[3_row]*0.06 |
+| 5  | Zero-rated supplies | =SUMIFS(Transactions!E:E, Transactions!H:H, "5") |
+| 6  | Exempt supplies | =SUMIFS(Transactions!E:E, Transactions!H:H, "6") |
+| 7  | Reverse charge base | =SUMIFS(Transactions!E:E, Transactions!H:H, "7") |
+| 8  | Output TVSH reverse charge | =Box_Summary!C[7_row]*0.20 |
+| 9  | Total output TVSH | =C[2_row]+C[4_row]+C[8_row] |
+
+Input:
+| 10 | Domestic purchases base | =SUMIFS(Transactions!E:E, Transactions!H:H, "10") |
+| 11 | Input TVSH domestic | =Box_Summary!C[10_row]*0.20 |
+| 12 | Imports base | =SUMIFS(Transactions!E:E, Transactions!H:H, "12") |
+| 13 | TVSH on imports | =SUMIFS(Transactions!F:F, Transactions!H:H, "12") |
+| 14 | Fixed assets base | =SUMIFS(Transactions!E:E, Transactions!H:H, "14") |
+| 15 | Input TVSH fixed assets | =Box_Summary!C[14_row]*0.20 |
+| 16 | Input TVSH reverse charge | =Box_Summary!C[7_row]*0.20 |
+| 17 | Adjustments | 0 |
+| 18 | Total input TVSH | =SUM(C[11_row]:C[17_row]) |
+
+Settlement:
+| 19 | TVSH payable | =IF(C[9_row]>C[18_row], C[9_row]-C[18_row], 0) |
+| 20 | TVSH credit | =IF(C[18_row]>C[9_row], C[18_row]-C[9_row], 0) |
+| 21 | Credit from prior period | [manual entry] |
+| 23 | Net payable | =MAX(C[19_row]-C[21_row], 0) |
 ```
 
-Round up to nearest whole percentage. Annual adjustment required.
+### Sheet "Return Form"
 
-**Flag for reviewer: confirm pro-rata calculation and allocation methodology.**
-
----
-
-## Step 5: Derived Calculations [T1]
-
-```
-Total Output TVSH (Box 9) = Box 2 + Box 4 + Box 8
-
-Total Input TVSH (Box 18) = Box 11 + Box 13 + Box 15 + Box 16 + Box 17
-
-IF Box 9 > Box 18 THEN
-    Box 19 = Box 9 - Box 18 (TVSH payable)
-    Box 20 = 0
-ELSE
-    Box 19 = 0
-    Box 20 = Box 18 - Box 9 (TVSH credit)
-END
-
-Box 23 = Box 19 - Box 21 (net payable after credit)
-IF Box 23 < 0 THEN Box 23 = 0; excess remains as credit
-```
+Final TVSH-ready figures. Bottom-line cell is Box 23 (net payable) or Box 20 (credit).
 
 ---
 
-## Step 6: Key Thresholds
+## Section 8 — Albanian bank statement reading guide
 
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Mandatory TVSH registration | Annual turnover > ALL 10,000,000 | Article 11 |
-| Voluntary registration | Below threshold, may register voluntarily | Article 11 |
-| Small business tax (alternative) | Turnover ALL 0-8,000,000: exempt; ALL 8-14,000,000: simplified | Small Business Tax Law |
-| TVSH refund eligibility | Credit accumulated for 3+ consecutive months | Article 76 |
-| Export refund (expedited) | Within 30 days for exporters with >70% exports | Article 76 |
-| Fixed asset threshold | Per accounting standards | Accounting standards |
+**CSV format conventions.** BKT and Raiffeisen Albania exports typically use semicolon delimiters with DD.MM.YYYY dates. Common columns: Date, Description, Debit, Credit, Balance. Always confirm which account currency applies.
 
----
+**Albanian language variants.** Some descriptions appear in Albanian: qira (rent), paga/rroga (salary), interesa/kamata (interest), terheqje (withdrawal), transferte (transfer), blerje (purchase), shitje (sale). Treat as the English equivalent.
 
-## Step 7: Filing Deadlines [T1]
+**Internal transfers and exclusions.** Own-account transfers between the client's BKT, Raiffeisen, Credins accounts. Labelled "transferte brendshme", "own transfer", "internal". Always exclude.
 
-| Obligation | Period | Deadline | Legislation |
-|------------|--------|----------|-------------|
-| TVSH declaration | Monthly | 14th of the month following the reporting month | Article 107 |
-| TVSH payment | Monthly | 14th of the month following the reporting month | Article 107 |
-| Import TVSH | Per import | At customs clearance | Customs Code |
-| Purchase/Sales books | Monthly | Submitted with declaration | Article 107 |
-| Annual pro-rata adjustment | Annual | With December declaration | Article 73 |
+**Refunds and reversals.** Identify by "rimbursim", "kthim", "reversal", "storno". Book as negative in the same box as the original transaction.
+
+**Foreign currency transactions.** Convert to ALL at the Bank of Albania middle rate on the transaction date.
+
+**IBAN prefix.** AL = Albania. Non-AL IBANs indicate foreign counterparty — check if reverse charge or export applies.
+
+**Fiscalization codes.** If the bank description includes a NIVF reference, the transaction has a fiscalized invoice. If absent, flag for verification.
 
 ---
 
-## Step 8: Fiscalization and Digital Compliance [T1]
+## Section 9 — Onboarding fallback (only when inference fails)
 
-Albania's fiscalization system is one of the most advanced in the region:
+### 9.1 Entity type and trading name
+*Inference rule:* sole trader names match account holder; company names end in "SHPK", "SHA". *Fallback:* "Are you a sole trader or a company (SHPK/SHA)?"
 
-### Key Requirements:
-1. **B2B invoices:** Must be issued electronically through the DPT platform
-2. **B2C invoices:** Must be issued through electronic fiscal devices
-3. **Real-time reporting:** All transactions reported to DPT in real time
-4. **QR codes:** Each invoice carries a QR code for verification
-5. **Self-billing:** Allowed under specific conditions with written agreement
+### 9.2 TVSH registration status
+*Inference rule:* if asking for a TVSH return, they are registered. *Fallback:* "Are you a registered TVSH payer?"
 
-### Penalties for Non-Compliance:
-- Issuing invoices without fiscalization: ALL 500,000 fine per invoice
-- Operating without fiscal device (B2C): ALL 500,000 per instance
-- Repeated violations: business closure for 30 days
+### 9.3 NUIS/NIPT
+*Inference rule:* may appear in payment descriptions. *Fallback:* "What is your NUIS/NIPT?"
 
----
+### 9.4 Filing period
+*Inference rule:* transaction date range on statement (monthly). *Fallback:* "Which month does this cover?"
 
-## Step 9: Edge Case Registry
+### 9.5 Industry and sector
+*Inference rule:* counterparty mix, invoice descriptions. *Fallback:* "What does the business do?"
 
-### EC1 -- Hotel accommodation at 6% [T1]
+### 9.6 Employees
+*Inference rule:* ISSH, salary outgoing transfers. *Fallback:* "Do you have employees?"
 
-**Situation:** A certified hotel charges for room accommodation.
-**Resolution:** The accommodation component is at 6%. Restaurant, bar, spa, and other services within the hotel are at 20%. The hotel must separate accommodation from other services on the invoice. If a package rate is offered without separation, the entire amount may be subject to 20%. Flag for reviewer if breakdown is unclear.
-**Legislation:** Article 56(1.1)
+### 9.7 Exempt supplies
+*Inference rule:* medical/financial/educational income patterns. *Fallback:* "Do you make any TVSH-exempt sales?" *If yes and non-de-minimis, R-AL-4 fires.*
 
-### EC2 -- Services from non-resident software provider [T1]
+### 9.8 Credit brought forward
+*Inference rule:* not inferable from single period. Always ask. *Question:* "Do you have TVSH credit from the previous month? (Box 21)"
 
-**Situation:** Albanian company subscribes to a US-based SaaS platform.
-**Resolution:** Reverse charge at 20%. Box 7 = net amount, Box 8 = TVSH at 20%, Box 16 = deductible TVSH. Net effect zero for fully taxable business. Invoice must be registered in purchase books.
-**Legislation:** Article 25-30, Article 86
+### 9.9 Cross-border customers
+*Inference rule:* foreign IBANs on incoming. *Fallback:* "Do you have customers outside Albania?"
 
-### EC3 -- Tourism operator with mixed services [T2]
-
-**Situation:** Tour operator provides a package including accommodation (6%), meals (20%), and transport (20% or exempt if urban).
-**Resolution:** Each component must be separated and taxed at the correct rate. The accommodation component at 6% requires the operator to be a certified tourism structure. Package tours may fall under the special margin scheme. Flag for reviewer: determine if the margin scheme applies and verify tourism certification.
-**Legislation:** Article 56(1.1), Article 90 (special schemes)
-
-### EC4 -- Construction of residential property [T2]
-
-**Situation:** Construction company builds and sells new residential apartments.
-**Resolution:** The first sale of new residential property may be subject to TVSH at 20% (or exempt under certain conditions for social housing). Subsequent resales of residential property are generally exempt. Flag for reviewer: determine if exemption applies and verify property classification.
-**Legislation:** Article 51, specific government decisions
-
-### EC5 -- Blocked passenger vehicle expense [T1]
-
-**Situation:** Company purchases a sedan for director's use.
-**Resolution:** Input TVSH on passenger vehicles is BLOCKED under Article 71(2). No deduction. Exception: vehicles used exclusively as taxis, rental fleet, driving school, or delivery vehicles. If claimed as business-only, flag for reviewer.
-**Legislation:** Article 71(2)
-
-### EC6 -- Credit note / return of goods [T1]
-
-**Situation:** Buyer returns goods; seller issues a credit note.
-**Resolution:** Seller reduces output TVSH in the current period. Buyer reduces input TVSH in the current period. Credit note must be fiscalized (registered through the fiscalization system). Both adjust current declarations.
-**Legislation:** Article 82
-
-### EC7 -- Agricultural producer with reduced regime [T2]
-
-**Situation:** A farmer sells produce directly. Registered as a small agricultural producer.
-**Resolution:** Agricultural producers below certain thresholds may benefit from a compensation scheme (flat-rate TVSH). Buyers from registered farmers may claim a deemed input TVSH. Flag for reviewer: verify if the compensation scheme applies and the current rate.
-**Legislation:** Article 92 (agricultural scheme)
-
-### EC8 -- Non-fiscalized invoice received [T1]
-
-**Situation:** Company receives an invoice from a supplier that was not fiscalized (no NIVF code).
-**Resolution:** Input TVSH deduction may be denied if the invoice lacks the fiscalization code. The buyer should request a properly fiscalized invoice. If the supplier refuses, report the non-compliance to DPT. Do not claim input TVSH on non-fiscalized invoices.
-**Legislation:** Law No. 87/2019, Article 69
+### 9.10 Tourism certification
+*Inference rule:* Airbnb/booking.com payouts, hotel income. *Fallback:* "Do you hold a tourism licence for 6% rate?"
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 10 — Reference material
 
-- NEVER let AI guess TVSH treatment -- classification is deterministic from facts and legislation
-- NEVER apply input TVSH deduction without a valid fiscalized invoice
-- NEVER allow non-registered entities to claim input TVSH deductions
-- NEVER apply 0% rate on exports without customs documentation
-- NEVER ignore reverse charge on services from non-residents
-- NEVER apply the 6% rate to non-accommodation services or uncertified tourism providers
-- NEVER allow input TVSH on passenger vehicles (unless specific fleet exception)
-- NEVER allow input TVSH on entertainment expenses
-- NEVER accept non-fiscalized invoices for input TVSH deduction
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+### Sources
 
----
+**Primary legislation:**
+1. Law No. 92/2014 "On Value Added Tax in the Republic of Albania" (as amended) — Articles 3-6, 11, 25-30, 51-56, 68-73, 76, 82, 86, 105-107
+2. Law No. 87/2019 on E-Invoicing and Fiscalization
 
-## Step 10: Reviewer Escalation Protocol
+**DPT guidance:**
+3. DPT TVSH declaration form and completion notes — https://e-filing.tatime.gov.al
+4. DPT guidance on reverse charge
+5. DPT fiscalization instructions
 
-When a [T2] situation is identified, output:
+**Other:**
+6. Bank of Albania exchange rates — https://www.bankofalbania.org
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax practitioner must confirm before filing.
-```
+### Known gaps
 
-When a [T3] situation is identified, output:
+1. Supplier pattern library covers common Albanian and international counterparties but not every local SME.
+2. Tourism reduced rate (6%) categories are subject to frequent legislative changes — verify current applicability.
+3. Agricultural inputs reduced rate (10%) scope requires ongoing verification.
+4. Free economic zone rules require case-by-case analysis.
+5. Red flag thresholds are conservative starting values, not empirically calibrated.
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified practitioner. Document gap.
-```
+### Change log
 
----
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure. Supplier pattern library added. Worked examples added. Tier 1 rules compressed. Tier 2 catalogue restructured. Excel template specification added. Bank statement reading guide added. Onboarding moved to fallback.
+- **v1.1 (April 2026):** Initial skill with step-based structure.
 
-## Step 11: Test Suite
+### Self-check (v2.0)
 
-### Test 1 -- Standard domestic sale at 20%
+1. Quick reference at top with box table and conservative defaults: yes.
+2. Supplier library as literal lookup tables: yes (13 sub-tables).
+3. Worked examples: yes (6 examples).
+4. Tier 1 rules compressed: yes (11 rules).
+5. Tier 2 catalogue compressed: yes (13 items).
+6. Excel template specification: yes.
+7. Onboarding as fallback: yes (10 items).
+8. All 6 Albania-specific refusals present: yes.
+9. Reference material at bottom: yes.
+10. Entertainment hard-block explicit: yes.
+11. Motor vehicle hard-block explicit: yes.
+12. Fiscalization requirement explicit: yes.
+13. Reverse charge (non-resident services) explicit: yes.
+14. No inline tags: yes.
 
-**Input:** Albanian company sells consulting services to local client. Net ALL 500,000. TVSH at 20%.
-**Expected output:** Box 1 = ALL 500,000. Box 2 = ALL 100,000. Fiscalized invoice issued.
+## End of Albania VAT (TVSH) Skill v2.0
 
-### Test 2 -- Domestic purchase with input TVSH
-
-**Input:** Albanian company purchases office supplies. Gross ALL 120,000 including TVSH ALL 20,000. Fiscalized invoice received.
-**Expected output:** Box 10 includes ALL 100,000. Box 11 = ALL 20,000. Fully deductible.
-
-### Test 3 -- Import of goods
-
-**Input:** Company imports machinery from Italy. Customs value ALL 2,000,000. Customs duty ALL 100,000. No excise.
-**Expected output:** TVSH base = ALL 2,100,000. Import TVSH = ALL 420,000 (20%). Box 12 = ALL 2,100,000. Box 13 = ALL 420,000. Deductible.
-
-### Test 4 -- Hotel accommodation at 6%
-
-**Input:** Certified hotel provides accommodation. Net ALL 300,000. TVSH at 6%.
-**Expected output:** Box 3 = ALL 300,000. Box 4 = ALL 18,000.
-
-### Test 5 -- Services from non-resident (reverse charge)
-
-**Input:** Albanian company engages a UK consulting firm. Fee EUR 3,000 (equivalent ALL 330,000). No AL registration.
-**Expected output:** Box 7 = ALL 330,000. Box 8 = ALL 66,000 (20%). Box 16 = ALL 66,000. Net zero.
-
-### Test 6 -- Export of goods
-
-**Input:** Albanian company exports textiles to Germany. Invoice ALL 800,000. Customs declaration confirmed.
-**Expected output:** Box 5 = ALL 800,000. TVSH = 0%. Related input TVSH fully deductible.
-
-### Test 7 -- Blocked entertainment expense
-
-**Input:** Company hosts a client dinner. Gross ALL 36,000 including TVSH ALL 6,000.
-**Expected output:** Input TVSH of ALL 6,000 is NOT deductible. Blocked. Expense at gross ALL 36,000.
-
-### Test 8 -- Non-fiscalized invoice
-
-**Input:** Supplier provides goods with an invoice lacking the NIVF fiscalization code. TVSH shown as ALL 15,000.
-**Expected output:** Input TVSH of ALL 15,000 is NOT deductible until a properly fiscalized invoice is obtained.
-
----
-
-## Step 12: Penalties and Interest [T1]
-
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing of TVSH declaration | ALL 10,000 per day of delay (max ALL 500,000) | Law on Tax Procedures |
-| Late payment of TVSH | 0.06% per day of outstanding amount | Law on Tax Procedures |
-| Understatement of TVSH | 100% of understated amount (plus interest) | Law on Tax Procedures |
-| Failure to register | Back-assessment + ALL 50,000-100,000 | Law on TVSH |
-| Non-fiscalized invoice | ALL 500,000 per invoice | Law No. 87/2019 |
-| Operating without fiscal device | ALL 500,000 per instance; repeated = 30-day closure | Law No. 87/2019 |
-| Issuing false invoices | Criminal liability | Criminal Code |
-
----
-
-## Step 13: Currency and Exchange Rate Rules [T1]
-
-- Albania uses the Albanian Lek (ALL) as national currency
-- All TVSH returns filed in ALL
-- Foreign currency transactions: official Bank of Albania middle rate on the transaction date
-- Imports: Bank of Albania rate on date of customs declaration
-- Services from non-residents: Bank of Albania rate on the date of payment or accrual
-- Exports: Bank of Albania rate on the date of supply
-
----
-
-## Contribution Notes
-
-This skill requires validation by a licensed Albanian tax practitioner. Key areas requiring local expertise:
-
-1. Current reduced rate categories (subject to frequent changes)
-2. Fiscalization system technical requirements
-3. Tourism certification requirements for 6% rate
-4. Agricultural compensation scheme details
-5. Free economic zone specific rules
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+This skill is incomplete without the companion file loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture).
 
 
 ---

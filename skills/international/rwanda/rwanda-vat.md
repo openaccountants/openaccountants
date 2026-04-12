@@ -1,354 +1,142 @@
 ---
 name: rwanda-vat
-description: Use this skill whenever asked to prepare, review, or create a Rwanda VAT return for any client. Trigger on phrases like "prepare VAT return", "do the Rwanda VAT", "RRA return", "fill in VAT return", or any request involving Rwanda VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Rwanda VAT classification rules, return form mappings, deductibility rules, reverse charge treatment, EBM requirements, registration thresholds, and filing deadlines. ALWAYS read this skill before touching any Rwanda VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Rwanda VAT return. Standard rate 18%. Mandatory EBM (Electronic Billing Machine). No EBM = no input recovery. EAC member. ALWAYS read before handling Rwanda VAT work.
+version: 2.0
 ---
 
-# Rwanda VAT Return Preparation Skill
+# Rwanda VAT Return Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 -- Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Rwanda (Republic of Rwanda) |
-| Jurisdiction Code | RW |
-| Primary Legislation | Law No. 049/2023 of 05/09/2023 establishing the Value Added Tax, as amended by Law No. 009/2025 of 27/05/2025 (repeals Law No. 37/2012) |
-| Supporting Legislation | Ministerial Orders; Law No. 026/2019 on Tax Procedures; EAC Customs Management Act 2004 |
-| Tax Authority | Rwanda Revenue Authority (RRA) |
-| Filing Portal | https://efiling.rra.gov.rw (e-Tax system) |
+|---|---|
+| Country | Rwanda |
+| Standard rate | 18% |
+| Zero rate | 0% (exports, diplomatic, SEZ) |
+| Filing portal | https://efiling.rra.gov.rw |
+| Authority | Rwanda Revenue Authority (RRA) |
+| Currency | RWF |
+| Filing frequency | Monthly (standard); Quarterly (< RWF 200M turnover) |
+| Deadline | 15th of following month |
+| Registration | RWF 20,000,000 annual turnover |
+| EBM | MANDATORY -- no EBM receipt = no input recovery |
+| Primary legislation | Law 049/2023 as amended by Law 009/2025 |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Pending -- requires validation by a licensed CPA (ICPAR member) in Rwanda |
-| Validation Date | Pending |
-| Skill Version | 2.0 |
-| Confidence Coverage | Tier 1: rate application, return mapping, registration, deadlines, EBM requirements, blocked categories. Tier 2: partial exemption, mixed supplies. Tier 3: mining, special economic zones, investment incentives. |
+| Validated by | Pending |
+| Last research update | April 2026 |
+
+**Key 2025 changes (Law 009/2025):** Mobile phones, ICT equipment, fuel, fee-based financial services, local road transport now taxable from July 2025.
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue. Licensed accountant must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate to licensed accountant.
+**Minimum viable** -- bank statement. Acceptable from BK (Bank of Kigali), I&M Bank Rwanda, Equity Bank RW, BPR, Access Bank RW, or any Rwandan bank.
 
 ---
 
-## Step 0: Client Onboarding Questions
+## Section 3 -- Supplier pattern library
 
-Before classifying ANY transaction, you MUST know:
-
-1. **Entity name and TIN** [T1] -- Rwanda TIN
-2. **VAT registration status** [T1] -- registered or unregistered
-3. **VAT period** [T1] -- monthly (standard) or quarterly (small taxpayers with turnover < RWF 200M)
-4. **Industry/sector** [T2] -- impacts classification
-5. **Does the business make exempt supplies?** [T2] -- if yes, apportionment required
-6. **Does the business import goods?** [T1] -- customs VAT at border
-7. **Excess credit brought forward** [T1] -- from prior period
-8. **Is the business using certified EBM (Electronic Billing Machine)?** [T1] -- mandatory for all VAT-registered
-
-**If items 1-2 are unknown, STOP.**
-
----
-
-## Step 1: VAT Rate Structure [T1]
-
-| Rate | Description | Legislation |
-|------|-------------|-------------|
-| 18% | Standard rate | Law 049/2023 (as amended by Law 009/2025), Art. 5 |
-| 0% | Zero rate (exports, specified supplies) | Law 049/2023 (as amended by Law 009/2025), Art. 6; Annex I |
-| Exempt | No VAT, no input recovery | Law 049/2023 (as amended by Law 009/2025), Art. 7; Annex II |
-
-### Zero-Rated Supplies [T1]
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Annex I.
-- Export of goods (with proof of export)
-- Export of services consumed outside Rwanda
-- International transport services
-- Supply of goods and services to diplomats (with RRA approval)
-- Supplies to registered investors in special economic zones (with certificate)
-
-### Exempt Supplies [T1]
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Annex II.
-- Unprocessed agricultural products
-- Financial services (interest, foreign exchange transactions, life insurance premiums). **Note:** Fee-based financial services became taxable from 1 July 2025 under Law 009/2025
-- Medical and healthcare services
-- Educational services (by registered institutions)
-- Residential rental
-- Transportation of persons (public transport). **Note:** Local transport of goods by road became taxable from 1 July 2025
-- Books, newspapers, and magazines (locally produced)
-- Water and electricity for domestic use
-- Funeral and burial services
-- **Note:** Mobile phones, ICT equipment, and fuel have become taxable from 1 July 2025 (previously exempt)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BK, BANK OF KIGALI | EXCLUDE | Exempt financial |
+| I&M RWANDA, I&M BANK RW | EXCLUDE | Same |
+| EQUITY BANK RW, BPR | EXCLUDE | Same |
+| RRA, RWANDA REVENUE | EXCLUDE | Tax payment |
+| CUSTOMS | Check for import VAT | |
+| RSSB | EXCLUDE | Social security |
+| REG, EUCL | Domestic 18% | Electricity |
+| WASAC | Domestic 18% | Water |
+| MTN RW, AIRTEL RW | Domestic 18% | Telecoms |
+| GOOGLE, MICROSOFT, AWS | Reverse charge 18% | Non-resident |
 
 ---
 
-## Step 2: Transaction Classification Rules
+## Section 4 -- Worked examples
 
-### 2a. Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, PAYE, RSSB contributions, dividends, loan repayments = OUT OF SCOPE
+### Example 1 -- Purchase without EBM
 
-### 2b. Counterparty Location [T1]
-- Domestic (Rwanda)
-- EAC: Kenya, Uganda, Tanzania, Burundi, South Sudan, DRC
-- Rest of World
-- **Note:** No common VAT area in EAC.
+VAT-registered supplier provides services but issues handwritten invoice without EBM. Input VAT NOT recoverable regardless of supplier's registration status.
 
-### 2c. Supply Type [T1]
-- Goods / Services / Import of goods (customs) / Import of services (reverse charge)
-- **Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 4 (place of supply)
+### Example 2 -- Export of tea
+
+Exporter ships tea to Mombasa. Zero-rated. Input VAT fully recoverable. Must have export documentation.
 
 ---
 
-## Step 3: Electronic Billing Machine (EBM) Requirements [T1]
+## Section 5 -- Classification rules
 
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 22; Ministerial Order 003/12/10/TC.
+18% standard. 0% exports, diplomatic, SEZ. Exempt: unprocessed agricultural, financial (margin-based; fee-based now taxable from July 2025), medical, education, residential rental, public transport (road transport of goods now taxable from July 2025), books/newspapers, water/electricity (domestic), funeral.
 
-- ALL VAT-registered taxpayers MUST use an RRA-certified Electronic Billing Machine (EBM)
-- Every sale must be recorded through EBM and a system-generated receipt issued
-- EBM receipts contain a unique identification number linked to the RRA system
-- Input VAT is ONLY recoverable if supported by a valid EBM receipt or customs documentation
-- Non-EBM invoices from VAT-registered suppliers: input VAT NOT recoverable
-- Penalty for failure to use EBM: 100% of the tax due on unreported transactions
-
-**This is unique to Rwanda and strictly enforced. No exceptions.**
+EBM: mandatory for all VAT-registered. No EBM = no input claim.
 
 ---
 
-## Step 4: VAT Return Form Structure [T1]
+## Section 6 -- VAT return form
 
-Filed monthly (or quarterly for small taxpayers) via RRA e-Tax.
+Output: A1-A7 (standard, zero-rated, exempt, total, output VAT, adjustments, total output).
 
-### Output Section
+Input: B1-B9 (local with EBM, imports, imported services, input local, input imports, input imported services, total input, adjustments, allowable input).
 
-| Box | Description | Mapping |
-|-----|-------------|---------|
-| A1 | Standard-rated supplies (18%) | Net value of taxable sales |
-| A2 | Zero-rated supplies | Net value of exports/zero-rated |
-| A3 | Exempt supplies | Net value of exempt supplies |
-| A4 | Total supplies | A1 + A2 + A3 |
-| A5 | Output VAT (18% on A1) | VAT on standard-rated supplies |
-| A6 | Output adjustments | Credit notes, corrections |
-| A7 | Total output tax | A5 + A6 |
-
-### Input Section
-
-| Box | Description | Mapping |
-|-----|-------------|---------|
-| B1 | Local taxable purchases (with EBM receipt) | Net value |
-| B2 | Imports (customs entries) | Net value from customs docs |
-| B3 | Imported services (reverse charge) | Net value |
-| B4 | Input VAT on local purchases | VAT on B1 |
-| B5 | Input VAT on imports | VAT on B2 |
-| B6 | Input VAT on imported services | 18% on B3 |
-| B7 | Total input VAT | B4 + B5 + B6 |
-| B8 | Input VAT adjustments | Blocked items, apportionment |
-| B9 | Allowable input VAT | B7 - B8 |
-
-### Net Calculation
-
-| Box | Description | Formula |
-|-----|-------------|---------|
-| C1 | Net VAT payable/(refundable) | A7 - B9 |
-| C2 | Credit brought forward | Prior period |
-| C3 | Net amount payable/(refundable) | C1 - C2 |
+Net: C1-C3 (net, credit b/f, net payable).
 
 ---
 
-## Step 5: Reverse Charge [T1]
+## Section 7 -- Reverse charge
 
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 13 (imported services).
+Non-resident services: self-assess 18%. Net zero. Law 049/2023 Art. 13.
 
-When a Rwanda VAT-registered person receives services from a non-resident:
-1. Self-assess output VAT at 18%
-2. Claim input VAT at 18% if for taxable supplies
-3. Net effect: zero for fully taxable businesses
-
-**Exceptions:** Out-of-scope payments; services consumed entirely outside Rwanda.
+EAC: no intra-community mechanism.
 
 ---
 
-## Step 6: Deductibility Check
+## Section 8 -- Deductibility and blocked input
 
-### Blocked Input Tax [T1]
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 17 (non-deductible input tax).
-- Entertainment and hospitality
-- Motor vehicles (< 10 seats) unless for taxi/hire business
-- Club subscriptions (recreational)
-- Personal/non-business use
-- Purchases without valid EBM receipt
+Blocked (Art. 17): entertainment, vehicles < 10 seats (unless taxi/hire), clubs, personal use, purchases without EBM receipt.
 
-### Partial Exemption [T2]
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 16(3).
-`Recovery % = (Taxable Supplies / Total Supplies) * 100`
-**Flag for reviewer: RRA must approve method.**
+Partial exemption: Art. 16(3). RRA approval.
 
 ---
 
-## Step 7: Key Thresholds [T1]
+## Section 9 -- Filing, deadlines, and penalties
 
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Mandatory VAT registration | RWF 20,000,000 annual turnover | Law 049/2023 (as amended by Law 009/2025), Art. 8 |
-| Voluntary registration | Below RWF 20,000,000 (with RRA approval) | Law 049/2023 (as amended by Law 009/2025), Art. 9 |
-| Quarterly filing eligibility | Turnover < RWF 200,000,000 | RRA guidelines |
-| EBM penalty | 100% of unreported tax | Law 049/2023 (as amended by Law 009/2025), Art. 34 |
+Monthly 15th (quarterly for small). Late filing: 20% + RWF 100K minimum. Late payment: 1.5%/month. Non-EBM: 100% of unreported tax.
 
 ---
 
-## Step 8: Filing Deadlines [T1]
+## Section 10 -- Edge cases, test suite, and escalation
 
-| Obligation | Period | Deadline | Legislation |
-|-----------|--------|----------|-------------|
-| VAT return (standard) | Monthly | 15th of following month | Law 049/2023 (as amended by Law 009/2025), Art. 20 |
-| VAT return (small taxpayer) | Quarterly | 15th of month following quarter | Law 049/2023 (as amended by Law 009/2025), Art. 20 |
-| VAT payment | Same as return | Same as return deadline | Law 049/2023 (as amended by Law 009/2025), Art. 20 |
+**EC1 -- SaaS.** Reverse charge 18%. Net zero.
+**EC2 -- Non-EBM invoice.** Input NOT recoverable.
+**EC3 -- Tea export.** Zero-rated.
+**EC4 -- EAC import (Kenya).** VAT at customs. Recoverable.
+**EC5 -- Motor vehicle blocked.**
+**EC6 -- SEZ supply.** May be zero-rated. Verify certificate.
+**EC7 -- Credit note.** Adjust A6.
+**EC8 -- Deemed supply cessation.** 18% on market value.
 
-### Penalties [T1]
-- Late filing: 20% of tax due + RWF 100,000 minimum
-- Late payment: 1.5% per month of outstanding amount
-- Failure to register: 100% of tax due
-- Failure to use EBM: 100% of unreported tax
+**Test 1** -- RWF 5M sale. Output 900K.
+**Test 2** -- EBM receipt RWF 1M + 180K VAT. Recoverable.
+**Test 3** -- Handwritten receipt RWF 500K + 90K VAT. Input = 0.
+**Test 4** -- Indian IT RWF 3M. Output 540K, input 540K.
+**Test 5** -- Mineral export RWF 50M. Zero-rated.
+**Test 6** -- Entertainment. Blocked.
+**Test 7** -- Hospital services RWF 10M. Exempt. Input not recoverable.
+**Test 8** -- Tanzania import RWF 8M. Customs VAT 1.44M. Recoverable.
 
----
+Out of scope: CIT 30%, PAYE 0%-30%, RSSB 5%+3% pension, 0.3% maternity.
 
-## PROHIBITIONS [T1]
+### Prohibitions
 
-- NEVER allow input VAT recovery without valid EBM receipt or customs documentation
-- NEVER let AI guess return box assignment
-- NEVER allow recovery on blocked categories
-- NEVER confuse zero-rated with exempt
-- NEVER apply reverse charge to out-of-scope categories
-- NEVER allow unregistered persons to claim input VAT
-- NEVER treat EAC transactions as intra-community supplies
-- NEVER compute any number -- engine handles arithmetic
-- NEVER file without checking credit brought forward
-- NEVER accept non-EBM invoices for input VAT purposes
-
----
-
-## Step 9: Edge Case Registry
-
-### EC1 -- Import of services (cloud software) [T1]
-**Situation:** Rwanda company subscribes to Google Workspace. Monthly USD 50. No VAT.
-**Resolution:** Reverse charge. Self-assess output and input VAT at 18%. Net zero if fully taxable.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 13.
-
-### EC2 -- Supplier issues non-EBM invoice [T1]
-**Situation:** VAT-registered supplier provides services but issues a handwritten invoice without EBM.
-**Resolution:** Input VAT NOT recoverable. Even though supplier is VAT-registered, absence of EBM receipt means no input VAT claim. The cost is borne in full including irrecoverable VAT.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 22.
-
-### EC3 -- Export of goods (zero-rated) [T1]
-**Situation:** Rwanda exporter ships tea to Mombasa for export.
-**Resolution:** Zero-rated. Report in A2. No output VAT. Input VAT fully recoverable. Must have export documentation.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Annex I.
-
-### EC4 -- Import from EAC state [T1]
-**Situation:** Rwanda company imports goods from Kenya. Customs at Gatuna border.
-**Resolution:** VAT at 18% charged at customs. Recoverable as input VAT (B5) if for taxable supplies. No intra-community mechanism.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 12; EAC CMA 2004.
-
-### EC5 -- Motor vehicle (blocked) [T1]
-**Situation:** Company purchases sedan for manager.
-**Resolution:** Input VAT BLOCKED. Passenger vehicle < 10 seats not for hire. Cost includes irrecoverable VAT.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 17.
-
-### EC6 -- Special Economic Zone (SEZ) supply [T2]
-**Situation:** Supplier provides goods to an entity operating in Kigali SEZ.
-**Resolution:** May be zero-rated if buyer has valid SEZ certificate. Flag for reviewer: confirm certificate validity and whether specific goods/services qualify.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025); Special Economic Zones Law No. 05/2011.
-
-### EC7 -- Credit note adjustment [T1]
-**Situation:** Supplier issues credit note for returned goods. Original sale was standard-rated.
-**Resolution:** Reduce output VAT by the VAT component of credit note. Report in A6. Buyer must also adjust input VAT.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 21.
-
-### EC8 -- Deemed supply on cessation [T1]
-**Situation:** Business deregisters while holding RWF 50,000,000 inventory.
-**Resolution:** Deemed supply. Output VAT at 18% on market value of inventory/assets at deregistration date.
-**Legislation:** Law 049/2023 (as amended by Law 009/2025), Art. 3(3).
-
----
-
-## Step 10: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list possible treatments]
-Recommended: [which and why]
-Action Required: Licensed accountant (ICPAR member) must confirm before filing.
-```
-
-When Claude identifies a [T3] situation:
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside scope]
-Action Required: Do not classify. Refer to licensed accountant. Document gap.
-```
-
----
-
-## Step 11: Test Suite
-
-### Test 1 -- Standard local sale [T1]
-**Input:** Rwanda company sells goods for RWF 5,000,000 net. Standard-rated.
-**Expected output:** A1 = RWF 5,000,000. A5 = RWF 900,000 (18%).
-
-### Test 2 -- Local purchase with EBM receipt [T1]
-**Input:** Company purchases office supplies. EBM receipt: RWF 1,000,000 + RWF 180,000 VAT = RWF 1,180,000.
-**Expected output:** B1 = RWF 1,000,000. B4 = RWF 180,000. Recoverable.
-
-### Test 3 -- Purchase without EBM receipt [T1]
-**Input:** Company purchases from VAT-registered supplier. Handwritten invoice (no EBM): RWF 500,000 + RWF 90,000 VAT.
-**Expected output:** Input VAT = RWF 0 (no EBM receipt). Cost = RWF 590,000.
-
-### Test 4 -- Reverse charge [T1]
-**Input:** Company receives IT services from Indian firm. RWF 3,000,000. No VAT.
-**Expected output:** Output VAT = RWF 540,000. Input VAT = RWF 540,000. Net = zero.
-
-### Test 5 -- Export (zero-rated) [T1]
-**Input:** Exporter ships minerals worth RWF 50,000,000.
-**Expected output:** A2 = RWF 50,000,000. Output VAT = RWF 0. Input VAT recoverable.
-
-### Test 6 -- Blocked (entertainment) [T1]
-**Input:** Company hosts client reception. EBM receipt: RWF 2,000,000 + RWF 360,000 VAT.
-**Expected output:** Input VAT = RWF 0 (BLOCKED). Cost = RWF 2,360,000.
-
-### Test 7 -- Exempt supply [T1]
-**Input:** Hospital provides medical services for RWF 10,000,000.
-**Expected output:** A3 = RWF 10,000,000. No output VAT. Related input VAT NOT recoverable.
-
-### Test 8 -- Import from EAC [T1]
-**Input:** Company imports goods from Tanzania. Customs value RWF 8,000,000. VAT 18%.
-**Expected output:** B2 = RWF 8,000,000. B5 = RWF 1,440,000. Recoverable if taxable.
-
----
-
-## Step 12: Out of Scope -- Direct Tax [T3]
-
-- **Corporate Income Tax:** 30% standard. Micro/small enterprises: concessional rates.
-- **PAYE:** Progressive rates 0% to 30%.
-- **RSSB:** 5% employer + 3% employee (pension); 0.3% employer (maternity).
-
----
-
-## Contribution Notes
-
-Rwanda-specific elements include the mandatory EBM requirement (unique enforcement tool), EAC customs treatment, and the strict penalty for non-EBM transactions. Updated April 2026 to reflect Law 049/2023 (replacing Law 37/2012) as amended by Law 009/2025: expanded VAT base (mobile phones, ICT equipment, fuel, fee-based financial services, local road transport now taxable from July 2025).
-
-**A skill may not be published without sign-off from a licensed practitioner (ICPAR member) in Rwanda.**
-
+- NEVER allow input recovery without EBM receipt
+- NEVER treat EAC as intra-community
+- NEVER accept non-EBM invoices
+- NEVER compute numbers -- engine handles arithmetic
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).

@@ -1,522 +1,300 @@
 ---
 name: moldova-vat
-description: Use this skill whenever asked to prepare, review, or advise on a Moldova VAT return or any transaction classification for Moldovan VAT purposes. Trigger on phrases like "Moldova VAT", "Moldovan VAT", "TVA Moldova", "SFS filing", "Fiscal Code Moldova", or any request involving Moldovan VAT obligations. This skill contains the complete Moldova VAT classification rules, rate structure, return form mappings, deductibility rules, reverse charge treatment, and filing deadlines. ALWAYS read this skill before touching any Moldovan VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Moldova VAT (TVA) return for any client. Trigger on phrases like "Moldova VAT", "TVA Moldova", "SFS filing", or any request involving Moldovan VAT. This skill covers standard TVA payers filing monthly returns. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Moldovan VAT work.
+version: 2.0
 ---
 
-# Moldova VAT Return Preparation Skill
+# Moldova VAT (TVA) Return Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Republic of Moldova |
-| Jurisdiction Code | MD |
-| Tax Name | TVA (Taxa pe Valoarea Adaugata / VAT) |
-| Primary Legislation | Fiscal Code of the Republic of Moldova, Title III (Articles 93-131) |
-| Supporting Legislation | Government Decision on VAT invoicing; Law on Customs Tariff; DCFTA provisions (EU Association Agreement) |
-| Tax Authority | State Tax Service (SFS -- Serviciul Fiscal de Stat) |
-| Filing Portal | https://servicii.fisc.md (SIA "Contul curent al contribuabilului") |
+|---|---|
+| Country | Moldova (Republic of Moldova) |
+| Tax name | TVA (Taxa pe Valoarea Adaugata) |
+| Standard rate | 20% |
+| Reduced rates | 8% (bread, dairy, agricultural produce, medicines, natural gas, LPG) |
+| Zero rate | 0% (exports, international transport) |
+| Return form | Monthly TVA declaration |
+| Filing portal | https://servicii.fisc.md (SFS portal) |
+| Authority | State Fiscal Service (SFS — Serviciul Fiscal de Stat) |
+| Currency | MDL (Moldovan Leu) only |
+| Filing frequency | Monthly |
+| Deadline | Last day of the month following the reporting month |
+| DCFTA with EU | Deep and Comprehensive Free Trade Area — impacts customs treatment |
+| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Pending -- requires validation by licensed Moldovan tax practitioner |
-| Validation Date | April 2026 (web-verified; practitioner sign-off still pending) |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: rate application, standard classification, basic input deductions. Tier 2: DCFTA impact, partial deduction, free economic zones, Transnistria trade. Tier 3: transfer pricing, complex group structures. |
+| Validated by | Pending local practitioner validation |
+| Validation date | April 2026 |
+
+**Key TVA return boxes:**
+
+| Box | Meaning |
+|---|---|
+| 1 | Taxable supplies at 20% — base |
+| 2 | Output TVA at 20% |
+| 3 | Taxable supplies at 8% — base |
+| 4 | Output TVA at 8% |
+| 5 | Zero-rated supplies |
+| 6 | Exempt supplies |
+| 7 | Reverse charge on imported services — base |
+| 8 | Output TVA on reverse charge |
+| 9 | Total output TVA |
+| 10 | Input TVA domestic purchases (20%) |
+| 11 | Input TVA domestic purchases (8%) |
+| 12 | Import TVA (customs) |
+| 13 | Input TVA reverse charge (creditable) |
+| 14 | Total input TVA |
+| 15 | Net payable or credit |
+| 16 | Credit B/F |
+| 17 | Net payable |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate | 20% |
+| Unknown purchase status | Not deductible |
+| Unknown counterparty country | Domestic Moldova |
+| Unknown SaaS billing entity | Reverse charge (Box 7/8/13) |
+| Unknown blocked-input status | Blocked |
+
+**Red flag thresholds:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | MDL 100,000 |
+| HIGH tax-delta | MDL 5,000 |
+| MEDIUM counterparty concentration | >40% |
+| LOW absolute net TVA | MDL 150,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax practitioner must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified practitioner and document the gap.
+**Minimum viable** — bank statement. Acceptable from: Moldova Agroindbank (MAIB), Victoriabank, Moldindconbank, Mobiasbanca, Eximbank, or any other.
 
----
+**Recommended** — invoices (factura fiscala), client IDNO.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete e-invoice register, prior TVA declaration.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+### Refusal catalogue
 
-1. **Entity name and IDNO (Identification Number)** [T1] -- state registration number
-2. **TVA registration number** [T1] -- issued upon VAT registration
-3. **VAT registration status** [T1] -- standard VAT payer, small enterprise (exempt), or non-registered
-4. **VAT period** [T1] -- monthly (standard for all VAT payers)
-5. **Industry/sector** [T2] -- impacts exemptions and reduced rate eligibility
-6. **Does the business make exempt supplies?** [T2] -- If yes, proportional deduction rules apply
-7. **Does the business operate in a Free Economic Zone?** [T2] -- Special VAT rules apply
-8. **Does the business trade with Transnistria?** [T2] -- Impacts VAT treatment
-9. **Accumulated VAT credit** [T1] -- from prior periods
-10. **EU DCFTA benefits applicable?** [T2] -- May affect customs/VAT on EU imports
+**R-MD-1 — Non-registered.** Below MDL 1,200,000 and not voluntarily registered. *Message:* "Not TVA registered. Out of scope."
 
-**If any of items 1-4 are unknown, STOP. Do not classify any transactions until registration status and period are confirmed.**
+**R-MD-2 — Partial exemption.** Mixed supplies. *Message:* "Apportionment required."
+
+**R-MD-3 — Transnistria.** *Trigger:* entity in Transnistria. *Message:* "Transnistrian entities have separate fiscal administration. Out of scope."
+
+**R-MD-4 — Income tax.** *Message:* "This skill handles TVA only."
 
 ---
 
-## Step 1: Transaction Classification Rules
+## Section 3 — Supplier pattern library
 
-### 1a. Determine Transaction Type [T1]
-- Sale (output TVA) or Purchase (input TVA)
-- Salaries, social contributions, dividends, loan repayments, fines = OUT OF SCOPE
-- **Legislation:** Fiscal Code Article 93 (taxable objects), Article 95 (taxable supply)
+### 3.1 Moldovan banks (exempt — exclude)
 
-### 1b. Determine Counterparty Location [T1]
-- Moldova (domestic): supplier/customer registered in Republic of Moldova
-- EU: all 27 EU member states (relevant for DCFTA provisions)
-- CIS/EAEU: Russia, Belarus, Kazakhstan, Ukraine, etc.
-- Other foreign: all remaining countries
-- **Note:** Transnistria (Pridnestrovian Moldavian Republic) has its own tax system; trade with Transnistria requires special treatment [T2]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MAIB, MOLDOVA AGROINDBANK | EXCLUDE | Financial service, exempt |
+| VICTORIABANK, VICTORIA | EXCLUDE | Same |
+| MOLDINDCONBANK, MICB | EXCLUDE | Same |
+| MOBIASBANCA, EXIMBANK | EXCLUDE | Same |
+| DOBANDA, INTEREST | EXCLUDE | Interest |
+| CREDIT, IMPRUMUT | EXCLUDE | Loan |
 
-### 1c. Determine VAT Rate [T1]
+### 3.2 Government (exclude)
 
-| Rate | Application | Legislation |
-|------|-------------|-------------|
-| 20% | Standard rate -- most goods and services | Article 96(a) |
-| 8% | Reduced rate -- specific categories (see below) | Article 96(b) |
-| 0% | Zero rate -- exports of goods, international transport, diplomatic supplies | Article 104 |
-| Exempt | Financial services, medical, educational, insurance, residential rental, and others (Article 103) | Article 103 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SFS, SERVICIUL FISCAL | EXCLUDE | Tax payment |
+| VAMA, CUSTOMS | EXCLUDE | Duty (import TVA separate) |
+| CNAS, SOCIAL INSURANCE | EXCLUDE | Social contributions |
+| ASP, GOVERNMENT | EXCLUDE | Government fee |
 
-### 1d. Reduced Rate (8%) Categories [T1]
+### 3.3 Utilities
 
-The 8% rate applies to:
-- Bread and bakery products
-- Milk and dairy products
-- Medicines and pharmaceutical products
-- Natural and liquefied gas (supplied to population)
-- Sugar (beet sugar)
-- Hotel/accommodation services
-- Food services (restaurants, cafes, canteens)
-- Agricultural production (certain categories)
-- Solid fuel (coal, firewood) for households
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| MOLDOVAGAZ, MOLDELECTRICA | Domestic (8% gas / 20% electricity) | 11 or 10 | Gas at reduced rate; electricity at standard |
+| APA-CANAL, REGIA APA | Domestic 20% | 10 | Water |
+| MOLDTELECOM, ORANGE MD, MOLDCELL | Domestic 20% | 10 | Telecoms |
 
-**Legislation:** Article 96(b), Government decisions on reduced rate categories
+### 3.4 Insurance (exempt — exclude)
 
-### 1e. Exempt Supplies (Article 103) [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MOLDASIG, GRAWE, DONARIS | EXCLUDE | Exempt |
+| ASIGURARE, INSURANCE | EXCLUDE | Same |
 
-The following are exempt from TVA:
-- Financial and banking services (interest, currency exchange, securities)
-- Insurance and reinsurance services
-- Medical services (licensed)
-- Educational services (state-accredited)
-- Residential property (sale and rental of residential dwellings)
-- Postal services (universal, by state operator)
-- Cultural, artistic, and sporting events (admission under conditions)
-- Gambling and lottery services (separately taxed)
-- Burial services
-- Legal aid services (state-funded)
-- Agricultural land transactions
+### 3.5 Food and entertainment (blocked)
 
-### 1f. Determine Expense Category [T1]
-- Fixed assets: acquisition cost above threshold with useful life > 12 months
-- Goods for resale: purchased for direct resale
-- Raw materials: consumed in production
-- Services/overheads: everything else
+| Pattern | Treatment | Notes |
+|---|---|---|
+| LINELLA, NR 1, METRO MD | Default BLOCK | Personal provisioning |
+| RESTAURANT, CAFENEA, BAR | Default BLOCK | Entertainment blocked |
 
----
+### 3.6 SaaS — non-resident (reverse charge)
 
-## Step 2: VAT Return Form Structure (Declaratia TVA) [T1]
+| Pattern | Box | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | 7/8/13 | Reverse charge at 20% |
+| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 7/8/13 | Same |
 
-**The TVA declaration (Form TVA) is filed monthly via the SFS electronic portal.**
+### 3.7 Professional services
 
-**Legislation:** Fiscal Code Article 115; SFS Order on VAT declaration form
+| Pattern | Treatment | Box |
+|---|---|---|
+| NOTAR, NOTARY | Domestic 20% | 10 |
+| AUDITOR, CONTABIL | Domestic 20% | 10 |
+| AVOCAT, LAWYER | Domestic 20% | 10 |
 
-### Section A -- Taxable Supplies (Output TVA)
+### 3.8 Payroll and exclusions
 
-| Box | Description | Rate |
-|-----|-------------|------|
-| A1 | Total taxable supplies at 20% -- tax base | 20% |
-| A1.1 | Output TVA at 20% | calculated |
-| A2 | Total taxable supplies at 8% -- tax base | 8% |
-| A2.1 | Output TVA at 8% | calculated |
-| A3 | Exports and zero-rated supplies | 0% |
-| A4 | Exempt supplies (Article 103) | - |
-| A5 | Total supplies | sum |
-| A6 | Total output TVA | sum |
-
-### Section B -- Acquisitions (Input TVA)
-
-| Box | Description |
-|-----|-------------|
-| B1 | Total domestic acquisitions (excl. fixed assets) |
-| B1.1 | Input TVA on domestic acquisitions |
-| B2 | Acquisitions of fixed assets |
-| B2.1 | Input TVA on fixed assets |
-| B3 | Imports (customs value + duties) |
-| B3.1 | TVA paid on imports (customs) |
-| B4 | Services from non-residents (reverse charge base) |
-| B4.1 | TVA self-assessed on services from non-residents |
-| B5 | Total acquisitions |
-| B6 | Total input TVA |
-
-### Section C -- Settlement
-
-| Box | Description |
-|-----|-------------|
-| C1 | TVA payable (if A6 > B6) |
-| C2 | TVA credit (if B6 > A6) |
-| C3 | TVA credit carried forward from prior period |
-| C4 | TVA credit requested for refund |
-| C5 | Net TVA payable |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARIU, SALARY | EXCLUDE | Wages |
+| DIVIDEND | EXCLUDE | Out of scope |
+| INTERN, TRANSFER INTERN | EXCLUDE | Internal |
+| ATM, NUMERAR | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 3: Reverse Charge and Import Mechanisms
+## Section 4 — Worked examples
 
-### 3a. Services from Non-Residents [T1]
+### Example 1 — Non-resident SaaS reverse charge
 
-When a Moldovan entity purchases services from a non-resident with no Moldovan registration:
-- Place of supply determined under Article 111
-- If place of supply is Moldova, buyer self-assesses TVA at 20% (or 8%)
-- Self-assessed TVA is both output (Box A) and input (Box B)
-- Net effect: zero for fully taxable businesses
+**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; MDL 288`
 
-**Legislation:** Fiscal Code Article 109, Article 111
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -288 | -288 | 58 | 20% | 13 | 7/8 | N |
 
-### 3b. Imports of Goods [T1]
+### Example 2 — Domestic utility at standard rate
 
-Goods imported into Moldova:
-- TVA collected by Customs Service at the border
-- Rate: 20% or 8% depending on classification
-- Tax base: customs value + import duties + excise (if applicable)
-- Customs TVA is recoverable as input TVA
-- Requires customs declaration as documentary evidence
+**Input line:** `10.04.2026 ; MOLDTELECOM ; DEBIT ; Internet April ; -450 ; MDL`
 
-### 3c. Exports [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 10.04.2026 | MOLDTELECOM | -450 | -375 | -75 | 20% | 10 | N |
 
-Exports of goods outside Moldova:
-- Zero-rated under Article 104
-- Exporter must have customs declaration confirming export
-- Related input TVA is fully deductible
+### Example 3 — Reduced rate purchase (gas at 8%)
 
-### 3d. Trade with Transnistria [T2]
+**Input line:** `12.04.2026 ; MOLDOVAGAZ ; DEBIT ; Natural gas ; -1,620 ; MDL`
 
-Supplies of goods to Transnistria:
-- Treated as domestic supply for TVA purposes (Moldova does not recognize Transnistria as a separate customs territory de jure)
-- However, de facto, goods crossing into Transnistria may face additional inspections
-- Goods from Transnistria entering Moldova-controlled territory may be subject to import-like treatment
-- **Flag for reviewer: Transnistria trade is politically and fiscally complex. Case-by-case analysis required.**
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 12.04.2026 | MOLDOVAGAZ | -1,620 | -1,500 | -120 | 8% | 11 | N |
 
----
+### Example 4 — Export (zero-rated)
 
-## Step 4: Input TVA Deduction Rules
+**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +18,000 ; MDL`
 
-### 4a. General Conditions (Article 102) [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | TECHCORP GMBH | +18,000 | +18,000 | 0 | 0% | 5 | Y | "Verify export docs" |
 
-Input TVA is deductible if ALL conditions are met:
-1. Goods/services acquired for use in taxable operations
-2. A valid tax invoice (factura fiscala) is available
-3. Goods/services are recorded in accounting
-4. For imports: customs declaration and payment confirmation available
+### Example 5 — Entertainment blocked
 
-### 4b. Tax Invoice (Factura Fiscala) Requirements [T1]
+**Input line:** `15.04.2026 ; RESTAURANT LA PLACINTE ; DEBIT ; Dinner ; -800 ; MDL`
 
-A valid factura fiscala must contain:
-- Sequential number and date
-- Seller's name, address, IDNO, TVA registration number
-- Buyer's name, address, IDNO, TVA registration number
-- Description of goods/services
-- Quantity and unit price
-- TVA rate and amount
-- Total amount including TVA
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTAURANT LA PLACINTE | -800 | -800 | 0 | — | — | Y | "Entertainment: blocked" |
 
-**Since 2021, Moldova has been transitioning to electronic invoicing (e-Factura) via the SFS system.**
+### Example 6 — Import of goods
 
-### 4c. Blocked Input TVA (Non-Deductible) [T1]
+**Input line:** `25.04.2026 ; VAMA ; DEBIT ; Import TVA ; -12,000 ; MDL`
 
-Input TVA is NOT deductible for:
-
-| Category | Legislation |
-|----------|-------------|
-| Goods/services used for exempt operations | Article 102(7) |
-| Entertainment and hospitality expenses | Article 102(7) |
-| Motor vehicles for personal use (passenger cars) | Article 102(7) |
-| Goods/services not used for business purposes | Article 102(7) |
-| Goods/services acquired without proper tax invoice | Article 102(1) |
-| Goods lost, stolen, or destroyed (except force majeure) | Article 102(7) |
-
-### 4d. Proportional Deduction [T2]
-
-If a business makes both taxable and exempt supplies:
-- Separate accounting required
-- Direct attribution first (costs clearly linked to taxable or exempt)
-- Mixed-use costs: proportional deduction
-
-**Proportion formula:**
-```
-Deductible % = (Taxable supplies / Total supplies) * 100
-```
-
-**Flag for reviewer: confirm allocation methodology.**
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 25.04.2026 | VAMA | -12,000 | -10,000 | -2,000 | 20% | 12 | N |
 
 ---
 
-## Step 5: Derived Calculations [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-```
-Total Output TVA (A6) = A1.1 + A2.1
+### 5.1 Standard rate 20% (Fiscal Code Article 96)
+Default rate. Sales to Box 1/2. Purchases to Box 10.
 
-Total Input TVA (B6) = B1.1 + B2.1 + B3.1 + B4.1
+### 5.2 Reduced rate 8%
+Bread, dairy, agricultural produce, medicines, natural gas, LPG. Sales to Box 3/4. Purchases to Box 11.
 
-IF A6 > B6 THEN
-    C1 = A6 - B6 (TVA payable)
-    C2 = 0
-ELSE
-    C1 = 0
-    C2 = B6 - A6 (TVA credit)
-END
+### 5.3 Zero rate
+Exports, international transport. Box 5.
 
-C5 = C1 - C3 (net payable after credit brought forward)
-IF C5 < 0 THEN C5 = 0; excess remains as credit
-```
+### 5.4 Exempt
+Financial, insurance, medical, educational, residential rental, postal.
 
----
+### 5.5 Reverse charge (Article 109)
+Non-resident services. Self-assess at 20%. Box 7/8 (output), Box 13 (input).
 
-## Step 6: Key Thresholds
+### 5.6 Import TVA
+At customs. Box 12.
 
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Mandatory VAT registration | Annual turnover > MDL 1,500,000 (increased from MDL 1,200,000 effective 1 January 2026) | Article 112(1) |
-| Voluntary registration | Below threshold, may register voluntarily | Article 112(2) |
-| TVA refund eligibility | Credit accumulated for 3+ consecutive months | Article 101(5) |
-| Export refund | Within 45 days of application (expedited) | Article 101(5) |
-| Fixed asset threshold | Per accounting standards (no specific TVA threshold) | Accounting standards |
+### 5.7 Blocked input
+Passenger vehicles, entertainment, personal consumption, no valid invoice.
 
 ---
 
-## Step 7: Filing Deadlines [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-| Obligation | Period | Deadline | Legislation |
-|------------|--------|----------|-------------|
-| TVA declaration | Monthly | 25th of the month following the reporting month | Article 115(1) |
-| TVA payment | Monthly | 25th of the month following the reporting month | Article 115(1) |
-| Import TVA | Per import | At customs clearance | Customs Code |
-| TVA refund application | When applicable | Submitted with declaration | Article 101 |
-
----
-
-## Step 8: DCFTA and EU Association Agreement Impact [T2]
-
-Moldova has a Deep and Comprehensive Free Trade Area (DCFTA) agreement with the EU:
-- Reduces or eliminates customs duties on many goods traded with the EU
-- Does NOT eliminate import TVA -- TVA is still charged on EU imports at the border
-- Moldova is progressively aligning its tax legislation with EU standards
-- Some VAT rules may change as alignment progresses
-
-**Flag for reviewer: monitor legislative changes related to EU approximation.**
+### 6.1 Fuel/vehicles — *Default:* 0%.
+### 6.2 Entertainment — *Default:* block.
+### 6.3 SaaS entities — *Default:* reverse charge at 20%.
+### 6.4 8% vs 20% — *Default:* 20%.
+### 6.5 Owner transfers — *Default:* exclude.
+### 6.6 Foreign incoming — *Default:* zero-rated.
+### 6.7 Cash withdrawals — *Default:* exclude.
+### 6.8 Rent — *Default:* no TVA.
 
 ---
 
-## Step 9: Edge Case Registry
+## Section 7 — Excel working paper template
 
-### EC1 -- Import from EU with DCFTA preferential tariff [T2]
-
-**Situation:** Moldovan company imports goods from Germany with zero customs duty under DCFTA.
-**Resolution:** Even with zero customs duty, import TVA at 20% (or 8%) is still charged on the customs value. TVA base = customs value + 0 duty + excise (if any). The DCFTA preference affects customs duty only, not TVA. Input TVA is deductible.
-**Legislation:** DCFTA Agreement, Fiscal Code Article 97
-
-### EC2 -- Services from non-resident IT company [T1]
-
-**Situation:** Moldovan company purchases cloud hosting from a US provider. No TVA on invoice.
-**Resolution:** Reverse charge applies. Place of supply is Moldova (buyer location for B2B services). Self-assess TVA at 20%. Report in Box B4 (tax base) and Box B4.1 (self-assessed TVA). Also report as output in Box A. Net effect zero for fully taxable businesses.
-**Legislation:** Fiscal Code Article 109, Article 111
-
-### EC3 -- Trade with Transnistria entity [T2]
-
-**Situation:** Moldovan company sells goods to a company in Tiraspol (Transnistria).
-**Resolution:** De jure, this is a domestic sale within Moldova's territory. TVA at standard rate should be applied. However, de facto enforcement and documentation requirements are complex. The Transnistrian buyer may operate under a separate tax system and may not accept Moldovan tax invoices. Flag for reviewer: case-by-case analysis required.
-**Legislation:** Fiscal Code (general provisions), Law on Transnistria trade
-
-### EC4 -- Hotel services at 8% [T1]
-
-**Situation:** Moldovan hotel charges for accommodation.
-**Resolution:** Hotel/accommodation services are subject to the 8% reduced rate. Output TVA at 8% reported in Box A2/A2.1. Related input TVA on hotel operating costs (utilities, supplies) at 20% is fully deductible.
-**Legislation:** Fiscal Code Article 96(b)
-
-### EC5 -- Exempt financial services with mixed operations [T2]
-
-**Situation:** A company provides both management consulting (taxable at 20%) and financial advisory services (exempt under Article 103).
-**Resolution:** Separate accounting required. Input TVA on costs directly attributable to consulting: fully deductible. Input TVA on costs for exempt financial services: not deductible. Mixed costs: proportional split based on turnover ratio. Flag for reviewer: confirm allocation.
-**Legislation:** Article 102(7), Article 103
-
-### EC6 -- Credit note / return of goods [T1]
-
-**Situation:** Buyer returns defective goods; seller issues a credit note.
-**Resolution:** Seller reduces output TVA in the period the credit note is issued. Buyer reduces input TVA in the period the credit note is received. Corrective factura fiscala must be issued. Both parties adjust the current period declaration.
-**Legislation:** Fiscal Code Article 98, Article 102
-
-### EC7 -- IT Park resident [T2]
-
-**Situation:** A company registered as a Moldova IT Park resident provides software development services.
-**Resolution:** Moldova IT Park residents benefit from a single tax (7% of sales revenue for IT companies) which replaces several taxes including TVA. Such entities are generally not TVA payers and do not charge TVA on their services. However, they cannot recover input TVA on purchases. Flag for reviewer: verify IT Park residency status and applicable regime.
-**Legislation:** Law No. 77/2016 on IT Parks
-
-### EC8 -- Construction services (reverse charge for certain operations) [T2]
-
-**Situation:** A Moldovan construction company provides building services.
-**Resolution:** Moldova has introduced reverse charge mechanisms for certain construction services to combat fraud. The buyer (if a VAT payer) may be required to self-assess TVA instead of the seller charging it. Flag for reviewer: check current status of construction reverse charge provisions -- this has been subject to legislative changes.
-**Legislation:** Fiscal Code amendments on construction reverse charge
+Per `vat-workflow-base` Section 3 with Moldova-specific box codes.
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 8 — Moldovan bank statement reading guide
 
-- NEVER let AI guess TVA treatment -- classification is deterministic from facts and legislation
-- NEVER apply input TVA deduction without a valid factura fiscala or e-Factura
-- NEVER allow non-registered entities to claim input TVA deductions
-- NEVER apply 0% rate on exports without confirmed customs documentation
-- NEVER ignore reverse charge obligations on services from non-residents
-- NEVER apply the 8% rate to categories not specifically listed in Article 96(b)
-- NEVER treat Transnistria trade as a simple domestic or export transaction without specialist review [T2]
-- NEVER assume DCFTA eliminates import TVA -- it affects customs duties only
-- NEVER apply IT Park single-tax treatment without verifying registration status
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+**CSV conventions.** MAIB and Victoriabank use semicolons, DD.MM.YYYY.
 
----
+**Romanian terms.** Salariu (salary), dobanda (interest), credit/imprumut (loan), numerar (cash), intern (internal), vama (customs), asigurare (insurance), contabil (accountant).
 
-## Step 10: Reviewer Escalation Protocol
+**Foreign currency.** Convert to MDL at National Bank of Moldova rate.
 
-When a [T2] situation is identified, output:
+**IBAN prefix.** MD = Moldova.
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax practitioner must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified practitioner. Document gap.
-```
+**Transnistria note.** Transactions with Transnistrian counterparties require special handling — R-MD-3 fires.
 
 ---
 
-## Step 11: Test Suite
+## Section 9 — Onboarding fallback
 
-### Test 1 -- Standard domestic sale at 20%
-
-**Input:** Moldovan company sells consulting services to a Moldovan client. Net MDL 50,000. TVA at 20%.
-**Expected output:** Box A1 = MDL 50,000. Box A1.1 = MDL 10,000. Factura fiscala issued.
-
-### Test 2 -- Domestic purchase with input TVA
-
-**Input:** Moldovan company purchases office supplies from Moldovan supplier. Gross MDL 12,000 including TVA MDL 2,000. Valid factura fiscala received.
-**Expected output:** Box B1 includes MDL 10,000 (net). Box B1.1 = MDL 2,000. Fully deductible.
-
-### Test 3 -- Import from EU
-
-**Input:** Moldovan company imports machinery from Italy. Customs value MDL 200,000. Customs duty MDL 0 (DCFTA). No excise.
-**Expected output:** Import TVA = MDL 200,000 * 20% = MDL 40,000. Paid at customs. Box B3 = MDL 200,000. Box B3.1 = MDL 40,000. Input TVA deductible.
-
-### Test 4 -- Accommodation service at 8%
-
-**Input:** Moldovan hotel provides accommodation. Net MDL 5,000. TVA at 8%.
-**Expected output:** Box A2 = MDL 5,000. Box A2.1 = MDL 400.
-
-### Test 5 -- Services from non-resident (reverse charge)
-
-**Input:** Moldovan company engages a UK consulting firm. Fee GBP 3,000 (equivalent MDL 67,500). No Moldovan registration.
-**Expected output:** Self-assessed TVA = MDL 67,500 * 20% = MDL 13,500. Box B4 = MDL 67,500. Box B4.1 = MDL 13,500. Also reported as output TVA. Net effect zero.
-
-### Test 6 -- Export of goods
-
-**Input:** Moldovan company exports wine to Romania. Invoice MDL 100,000. Customs declaration confirmed.
-**Expected output:** Box A3 = MDL 100,000. TVA rate = 0%. Related input TVA fully deductible.
-
-### Test 7 -- Blocked entertainment expense
-
-**Input:** Moldovan company hosts a client dinner. Gross MDL 3,600 including TVA MDL 600.
-**Expected output:** Input TVA of MDL 600 is NOT deductible. Entertainment is a blocked category. Expense at gross MDL 3,600.
-
-### Test 8 -- IT Park resident sale
-
-**Input:** IT Park resident sells software development services for MDL 200,000.
-**Expected output:** No TVA charged. IT Park single tax applies (7% of revenue = MDL 14,000). No TVA declaration filed. No input TVA recovery. [T2] -- verify IT Park status.
+### 9.1 Entity type — *Fallback:* "SRL, SA, or sole trader (II)?"
+### 9.2 TVA registration — *Fallback:* "TVA payer?"
+### 9.3 IDNO — *Fallback:* "What is your IDNO?"
+### 9.4 Period — *Inference:* statement dates.
+### 9.5 Industry — *Fallback:* "What does the business do?"
+### 9.6 Credit B/F — *Always ask.*
+### 9.7 Transnistria — *Fallback:* "Any transactions with Transnistria?"
 
 ---
 
-## Step 12: Penalties and Interest [T1]
+## Section 10 — Reference material
 
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing of TVA declaration | MDL 1,000-5,000 per declaration | Fiscal Code Article 261 |
-| Late payment of TVA | 0.1% per day of the outstanding amount | Fiscal Code Article 228 |
-| Understatement of tax | 30% of the understated amount | Fiscal Code Article 261 |
-| Failure to register for TVA | Back-assessment plus penalties | Fiscal Code Article 112 |
-| Issuing false invoices | Criminal liability for amounts exceeding threshold | Criminal Code |
-| Failure to maintain records | Administrative fine | Fiscal Code |
+### Sources
+1. Fiscal Code of Moldova — Title III (TVA)
+2. SFS — https://servicii.fisc.md
+3. National Bank of Moldova — https://www.bnm.md
 
-**Interest accrues daily at 0.1% of the outstanding TVA amount from the due date until payment.**
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
 
----
-
-## Step 13: Currency and Exchange Rate Rules [T1]
-
-- Moldova uses the Moldovan Leu (MDL) as national currency
-- All TVA returns filed in MDL
-- Foreign currency converted at the official National Bank of Moldova (BNM) rate
-- Import transactions: BNM rate on the date of the customs declaration
-- Services from non-residents: BNM rate on the date of the tax point
-- Exports: BNM rate on the date of supply
-
-**Exchange rate differences are income tax matters, not TVA events.**
-
----
-
-## Step 14: Record Keeping Requirements [T1]
-
-TVA payers must maintain the following records for a minimum of 6 years:
-
-| Record | Requirement |
-|--------|-------------|
-| Tax invoices (facturi fiscale / e-Factura) | All issued and received, sequentially filed |
-| Purchase ledger | All input TVA claims with invoice references |
-| Sales ledger | All output TVA with invoice references |
-| Import documentation | Customs declarations, payment confirmations |
-| Export documentation | Contracts, customs declarations, transport documents |
-| TVA declarations (filed copies) | All submitted returns with SFS confirmations |
-| Bank statements | Payment evidence |
-| Contracts and agreements | For significant transactions |
-
-**SFS may request records during desk audits (control cameral) or field audits (control fiscal).**
-
----
-
-## Step 15: Place of Supply Rules for Services [T1]
-
-| Service Type | Place of Supply | Legislation |
-|-------------|----------------|-------------|
-| B2B general services | Where recipient is established | Article 111(1) |
-| B2C general services | Where supplier is established | Article 111(2) |
-| Immovable property services | Where property is located | Article 111(3) |
-| Passenger transport | Where transport takes place | Article 111(4) |
-| Cultural/entertainment/sporting events | Where event takes place | Article 111(5) |
-| Restaurant/catering | Where services physically performed | Article 111(6) |
-| Telecommunications/electronic services (B2C) | Where recipient is established | Article 111(7) |
-
----
-
-## Contribution Notes
-
-This skill requires validation by a licensed Moldovan tax practitioner. Key areas requiring local expertise:
-
-1. Transnistria trade treatment and practical enforcement
-2. IT Park specific rules and eligibility
-3. DCFTA impact on customs and TVA alignment
-4. Current reduced rate (8%) category list
-5. E-Factura implementation status and requirements
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+## End of Moldova VAT (TVA) Skill v2.0
 
 
 ---

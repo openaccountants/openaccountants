@@ -1,538 +1,299 @@
 ---
 name: montenegro-vat
-description: Use this skill whenever asked to prepare, review, or advise on a Montenegro VAT (PDV) return or any transaction classification for Montenegrin VAT purposes. Trigger on phrases like "Montenegro VAT", "Montenegrin PDV", "Montenegro tax return", "Tax Administration Montenegro", or any request involving Montenegrin VAT obligations. This skill contains the complete Montenegrin PDV classification rules, rate structure (21% standard, 15% intermediate reduced, 7% lower reduced), return form mappings, deductibility rules, reverse charge treatment, and filing deadlines. ALWAYS read this skill before touching any Montenegrin VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Montenegro VAT (PDV) return for any client. Trigger on phrases like "Montenegro VAT", "Montenegrin PDV", "Montenegro tax return", or any request involving Montenegrin VAT. Montenegro has 21% standard, 15% intermediate, and 7% reduced rates. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Montenegrin VAT work.
+version: 2.0
 ---
 
-# Montenegro VAT (PDV) Return Preparation Skill
+# Montenegro VAT (PDV) Return Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Montenegro (Crna Gora) |
-| Jurisdiction Code | ME |
-| Tax Name | PDV (Porez na Dodatu Vrijednost / VAT) |
-| Primary Legislation | Law on Value Added Tax (Zakon o Porezu na Dodatu Vrijednost), Official Gazette of Montenegro No. 65/2001 (as amended, including No. 73/2010, 40/2011, 29/2013, 9/2015, 53/2016, 67/2023) |
-| Supporting Legislation | Rulebook on PDV implementation; Customs Law; Law on Fiscal Cash Registers |
-| Tax Authority | Tax Administration of Montenegro (Poreska Uprava Crne Gore) |
-| Filing Portal | https://eprijava.tax.gov.me (e-Filing portal) |
+|---|---|
+| Country | Montenegro (Crna Gora) |
+| Tax name | PDV (Porez na Dodatu Vrijednost) |
+| Standard rate | 21% |
+| Intermediate rate | 15% (food for human consumption) |
+| Reduced rate | 7% (bread, milk, textbooks, medicines, medical devices, accommodation, public transport) |
+| Zero rate | 0% (exports, international transport) |
+| Return form | Monthly PDV declaration |
+| Filing portal | https://eprijava.tax.gov.me |
+| Authority | Tax Administration of Montenegro (Poreska Uprava) |
+| Currency | EUR (Montenegro uses the euro unilaterally) |
+| Filing frequency | Monthly |
+| Deadline | 15th of the month following the reporting month |
+| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Pending -- requires validation by licensed Montenegrin tax practitioner |
-| Validation Date | April 2026 (web-verified; practitioner sign-off still pending) |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: rate application, standard classification, basic input deductions. Tier 2: tourism sector treatment, partial deduction, EU accession impact. Tier 3: transfer pricing, complex structures. |
+| Validated by | Pending local practitioner validation |
+| Validation date | April 2026 |
+
+**Key PDV return boxes:**
+
+| Box | Meaning |
+|---|---|
+| 1 | Taxable supplies at 21% — base |
+| 2 | Output PDV at 21% |
+| 3 | Taxable supplies at 15% — base |
+| 4 | Output PDV at 15% |
+| 5 | Taxable supplies at 7% — base |
+| 6 | Output PDV at 7% |
+| 7 | Zero-rated supplies |
+| 8 | Exempt supplies |
+| 9 | Reverse charge imported services — base |
+| 10 | Output PDV on reverse charge |
+| 11 | Total output PDV |
+| 12 | Input PDV on domestic purchases (21%) |
+| 13 | Input PDV on domestic purchases (15%) |
+| 14 | Input PDV on domestic purchases (7%) |
+| 15 | Import PDV |
+| 16 | Input PDV reverse charge (creditable) |
+| 17 | Total input PDV |
+| 18 | Net payable or credit |
+| 19 | Credit B/F |
+| 20 | Net payable |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 21% |
+| Unknown purchase status | Not deductible |
+| Unknown counterparty country | Domestic Montenegro |
+| Unknown SaaS billing entity | Reverse charge (Box 9/10/16) |
+| Unknown blocked-input status | Blocked |
+
+**Red flag thresholds:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | EUR 3,000 |
+| HIGH tax-delta | EUR 200 |
+| MEDIUM counterparty concentration | >40% |
+| LOW absolute net PDV | EUR 5,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax practitioner must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified practitioner and document the gap.
+**Minimum viable** — bank statement. Acceptable from: CKB (Crnogorska Komercijalna Banka), NLB Montenegro, Erste Bank Montenegro, Hipotekarna Banka, Addiko Bank ME, or any other.
 
----
+**Recommended** — invoices, client PIB (tax ID).
 
-## Step 0: Client Onboarding Questions
+### Refusal catalogue
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**R-ME-1 — Non-registered.** Below EUR 30,000 threshold. *Message:* "Not PDV registered. Out of scope."
 
-1. **Entity name and PIB (Tax Identification Number)** [T1]
-2. **PDV registration number** [T1] -- assigned upon registration
-3. **PDV registration status** [T1] -- registered PDV payer, small enterprise (exempt), or non-registered
-4. **PDV period** [T1] -- monthly (turnover > EUR 500,000) or quarterly (turnover <= EUR 500,000)
-5. **Industry/sector** [T2] -- impacts reduced rate and exemptions
-6. **Does the business make exempt supplies?** [T2] -- partial deduction rules apply
-7. **Does the business trade cross-border?** [T1] -- impacts import/export treatment
-8. **Accumulated PDV credit** [T1] -- from prior periods
-9. **Tourism sector?** [T2] -- 7% reduced rate on accommodation and food services
+**R-ME-2 — Partial exemption.** *Message:* "Apportionment required."
 
-**If any of items 1-4 are unknown, STOP. Do not classify any transactions.**
+**R-ME-3 — Income tax.** *Message:* "This skill handles PDV only."
 
 ---
 
-## Step 1: Transaction Classification Rules
+## Section 3 — Supplier pattern library
 
-### 1a. Determine Transaction Type [T1]
-- Sale (output PDV) or Purchase (input PDV)
-- Salaries, social contributions, dividends, loan repayments = OUT OF SCOPE
-- **Legislation:** Law on PDV, Article 3-4
+### 3.1 Montenegrin banks (exempt — exclude)
 
-### 1b. Determine Counterparty Location [T1]
-- Montenegro (domestic): supplier/customer registered in ME
-- EU: all 27 EU member states (ME is EU candidate; customs apply)
-- CEFTA: Serbia, North Macedonia, Bosnia, Kosovo, Albania, Moldova
-- Other foreign: all remaining countries
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CKB, CRNOGORSKA KOMERCIJALNA | EXCLUDE | Financial service, exempt |
+| NLB MONTENEGRO, NLB ME | EXCLUDE | Same |
+| ERSTE MONTENEGRO, HIPOTEKARNA | EXCLUDE | Same |
+| ADDIKO ME, LOVĆEN BANKA | EXCLUDE | Same |
+| KAMATA, INTEREST | EXCLUDE | Interest |
+| KREDIT, LOAN | EXCLUDE | Loan |
 
-### 1c. Determine PDV Rate [T1]
+### 3.2 Government (exclude)
 
-| Rate | Application | Legislation |
-|------|-------------|-------------|
-| 21% | Standard rate -- most goods and services | Article 24(1) |
-| 15% | Intermediate reduced rate -- books, publications, accommodation, food/beverage services (excl. alcohol, sugary drinks, coffee) (effective 1 January 2025) | Article 24, as amended |
-| 7% | Lower reduced rate -- basic foodstuffs, medicines, textbooks, water supply, public transport, and others (see below) | Article 24(2) |
-| 0% | Zero rate -- exports, international transport, diplomatic supplies | Article 25 |
-| Exempt | Financial, insurance, medical, educational, and others | Article 26 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PORESKA UPRAVA, TAX ADMIN | EXCLUDE | Tax payment |
+| CARINA, CUSTOMS | EXCLUDE | Duty |
+| FOND PIO, FOND ZDRAVSTVA | EXCLUDE | Social/health |
 
-### 1d. Intermediate Reduced Rate (15%) Categories (effective 1 January 2025) [T1]
+### 3.3 Utilities
 
-The 15% rate applies to:
-- Books, monographic and serial publications
-- Accommodation services (hotels, motels, tourist resorts, guesthouses, camps, tourist apartments, villas)
-- Food and beverage services in hospitality facilities (excluding alcoholic beverages, carbonated and non-carbonated drinks with added sugar, and coffee)
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| EPCG, ELEKTROPRIVREDA CG | Domestic 21% | 12 | Electricity |
+| VODOVOD, VODOKANAL | Domestic 21% | 12 | Water |
+| CRNOGORSKI TELEKOM, M:TEL ME, TELENOR ME | Domestic 21% | 12 | Telecoms |
 
-**Note:** These categories were previously subject to 7%. The reclassification to 15% was part of Montenegro's EU VAT Directive alignment.
+### 3.4 Insurance (exempt — exclude)
 
-**Legislation:** Article 24, as amended (Official Gazette 67/2023, amendments effective 1 January 2025)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| LOVĆEN OSIGURANJE, UNIQA ME, SAVA ME | EXCLUDE | Exempt |
+| OSIGURANJE, INSURANCE | EXCLUDE | Same |
 
-### 1e. Lower Reduced Rate (7%) Categories [T1]
+### 3.5 Food and entertainment
 
-The 7% rate continues to apply to:
-- Bread, flour, milk, and sugar
-- Medicines, orthotic and prosthetic devices
-- Textbooks and educational materials
-- Drinking water from public supply (excluding bottled water)
-- Daily and periodic newspapers
-- Public passenger transport services
-- Funeral services
-- Animal food, fertilizers, plant protection products
-- Seeds, planting materials, and live animals
-- Menstrual products and baby diapers
-- Public hygiene services
+| Pattern | Treatment | Notes |
+|---|---|---|
+| VOLI, IDEA ME, RODA | Default BLOCK | Personal provisioning |
+| RESTORAN, KAFANA, BAR | Default BLOCK | Entertainment blocked |
 
-**Legislation:** Article 24(2), as amended
+### 3.6 SaaS — non-resident (reverse charge)
 
-### 1e. Exempt Supplies (Article 26) [T1]
+| Pattern | Box | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | 9/10/16 | Reverse charge at 21% |
+| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 9/10/16 | Same |
 
-The following are exempt from PDV:
-- Financial and banking services (interest, deposits, currency exchange)
-- Insurance and reinsurance
-- Medical and dental services (licensed)
-- Educational services (state-accredited)
-- Residential property rental
-- Cultural, artistic, and sporting events (public interest)
-- Postal services (universal)
-- Gambling/lottery (separately taxed)
-- Burial services
-- Social welfare services
-- Sale of agricultural land
+### 3.7 Tourism/accommodation
 
-### 1f. Determine Expense Category [T1]
-- Fixed assets: per accounting standards, useful life > 12 months
-- Goods for resale: purchased for direct resale
-- Raw materials: consumed in production
-- Services/overheads: everything else
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| HOTEL (income from tourists) | 7% output PDV | 5/6 | Accommodation reduced rate |
+| BOOKING.COM payout | Flag for rate determination | — | Accommodation vs platform fee |
+
+### 3.8 Payroll and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PLATA, SALARY | EXCLUDE | Wages |
+| DIVIDENDA | EXCLUDE | Out of scope |
+| INTERNI, INTERNAL | EXCLUDE | Internal |
+| BANKOMAT, ATM | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 2: PDV Return Form Structure [T1]
+## Section 4 — Worked examples
 
-**The PDV return is filed monthly via the Tax Administration e-Filing portal.**
+### Example 1 — Non-resident SaaS reverse charge
 
-### Part I -- Output PDV
+**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; EUR 16.00`
 
-| Box | Description | Rate |
-|-----|-------------|------|
-| 1 | Taxable supplies at 21% -- tax base | 21% |
-| 2 | Output PDV at 21% | calculated |
-| 3a | Taxable supplies at 15% -- tax base | 15% |
-| 3b | Output PDV at 15% | calculated |
-| 3 | Taxable supplies at 7% -- tax base | 7% |
-| 4 | Output PDV at 7% | calculated |
-| 5 | Zero-rated supplies (exports) | 0% |
-| 6 | Exempt supplies | - |
-| 7 | Reverse charge -- services from abroad (tax base) | varies |
-| 8 | Output PDV on reverse charge | calculated |
-| 9 | Total output PDV (2 + 4 + 8) | sum |
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -16.00 | -16.00 | 3.36 | 21% | 16 | 9/10 | N |
 
-### Part II -- Input PDV
+### Example 2 — Domestic utility
 
-| Box | Description |
-|-----|-------------|
-| 10 | Domestic purchases -- tax base |
-| 11 | Input PDV on domestic purchases |
-| 12 | Imports -- customs value + duties |
-| 13 | PDV paid on imports |
-| 14 | Fixed asset acquisitions |
-| 15 | Input PDV on fixed assets |
-| 16 | Input PDV on reverse charge (deductible) |
-| 17 | Adjustments |
-| 18 | Total input PDV (11 + 13 + 15 + 16 + 17) |
+**Input line:** `10.04.2026 ; CRNOGORSKI TELEKOM ; DEBIT ; Internet April ; -35.00 ; EUR`
 
-### Part III -- Settlement
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 10.04.2026 | CRNOGORSKI TELEKOM | -35.00 | -28.93 | -6.07 | 21% | 12 | N |
 
-| Box | Description |
-|-----|-------------|
-| 19 | PDV payable (if 9 > 18) |
-| 20 | PDV credit (if 18 > 9) |
-| 21 | PDV credit from prior period |
-| 22 | PDV credit for refund |
-| 23 | Net PDV payable |
+### Example 3 — Entertainment blocked
 
----
+**Input line:** `15.04.2026 ; RESTORAN KONOBA CATOVICA ; DEBIT ; Dinner ; -95.00 ; EUR`
 
-## Step 3: Reverse Charge and Import Mechanisms
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORAN KONOBA CATOVICA | -95.00 | -95.00 | 0 | — | — | Y | "Entertainment: blocked" |
 
-### 3a. Services from Non-Residents [T1]
+### Example 4 — Export (zero-rated)
 
-When a Montenegrin entity purchases services from a non-resident with no ME registration:
-- Place of supply: determined under Law on PDV place of supply rules
-- If place of supply is Montenegro, buyer self-assesses PDV at 21% (or 7%)
-- Report in Box 7 and Box 8 (output), Box 16 (input deduction)
-- Net effect: zero for fully taxable businesses
+**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +3,500.00 ; EUR`
 
-### 3b. Imports of Goods [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | TECHCORP GMBH | +3,500 | +3,500 | 0 | 0% | 7 | Y | "Verify export docs" |
 
-- PDV collected by Customs at the border
-- Rate: 21% or 7% depending on goods classification
-- Tax base: customs value + import duties + excise (if applicable)
-- Customs PDV is recoverable as input PDV
+### Example 5 — Accommodation income at 7%
 
-### 3c. Exports [T1]
+**Input line:** `20.04.2026 ; BOOKING.COM ; CREDIT ; Guest payout April ; +2,800.00 ; EUR`
 
-- Zero-rated under Article 25
-- Customs export declaration required
-- Related input PDV fully deductible
+**Reasoning:** Short-term accommodation — 7% reduced rate. Platform fee from Booking.com (NL entity) is separate reverse charge.
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 20.04.2026 | BOOKING.COM (accommodation) | +2,800 | +2,617 | +183 | 7% | 5/6 | Y | "Confirm duration, separate platform fee" |
+
+### Example 6 — Motor vehicle blocked
+
+**Input line:** `28.04.2026 ; DELTA MOTORS ME ; DEBIT ; Car lease ; -450.00 ; EUR`
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | DELTA MOTORS ME | -450.00 | -450.00 | 0 | — | — | Y | "Vehicle: blocked" |
 
 ---
 
-## Step 4: Input PDV Deduction Rules
+## Section 5 — Tier 1 classification rules (compressed)
 
-### 4a. General Conditions [T1]
+### 5.1 Standard rate 21%
+Default. Sales to Box 1/2. Purchases to Box 12.
 
-Input PDV is deductible if ALL conditions are met:
-1. Goods/services acquired for use in taxable operations
-2. A valid tax invoice (porezna faktura) is available
-3. Goods/services recorded in accounting
-4. For imports: customs declaration and payment proof
+### 5.2 Intermediate rate 15%
+Food for human consumption (not beverages, not restaurant meals). Sales to Box 3/4. Purchases to Box 13.
 
-### 4b. Invoice Requirements [T1]
+### 5.3 Reduced rate 7%
+Bread, milk, textbooks, medicines, medical devices, accommodation (short-term), public transport. Sales to Box 5/6. Purchases to Box 14.
 
-A valid invoice must contain:
-- Sequential number and date
-- Seller's name, address, PIB, PDV number
-- Buyer's name, address, PIB, PDV number
-- Description of goods/services
-- Quantity and unit price (excl. PDV)
-- PDV rate and amount
-- Total including PDV
+### 5.4 Zero rate
+Exports, international transport. Box 7.
 
-### 4c. Blocked Input PDV (Non-Deductible) [T1]
+### 5.5 Exempt
+Financial, insurance, medical services, education, residential rental, postal.
 
-| Category | Legislation |
-|----------|-------------|
-| Goods/services for exempt operations | Article 37 |
-| Passenger vehicles (purchase, lease, fuel, maintenance) | Article 37(3) |
-| Entertainment, hospitality, representation | Article 37(3) |
-| Personal consumption of employees/directors | Article 37(3) |
-| Goods/services without valid invoice | Article 37(1) |
-| Accommodation and meals for staff (unless remote site) | Article 37(3) |
+### 5.6 Reverse charge
+Non-resident services. Self-assess at 21%. Box 9/10 (output), Box 16 (input).
 
-### 4d. Proportional Deduction [T2]
+### 5.7 Import PDV
+At customs. Box 15.
 
-If business makes both taxable and exempt supplies:
-
-```
-Deductible % = (Taxable + Zero-rated supplies) / Total supplies * 100
-```
-
-Round to nearest whole percentage. Annual adjustment.
-
-**Flag for reviewer: confirm calculation.**
+### 5.8 Blocked
+Passenger vehicles, entertainment, personal consumption, no valid invoice.
 
 ---
 
-## Step 5: Derived Calculations [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-```
-Total Output PDV (Box 9) = Box 2 + Box 4 + Box 8
-
-Total Input PDV (Box 18) = Box 11 + Box 13 + Box 15 + Box 16 + Box 17
-
-IF Box 9 > Box 18 THEN
-    Box 19 = Box 9 - Box 18
-    Box 20 = 0
-ELSE
-    Box 19 = 0
-    Box 20 = Box 18 - Box 9
-END
-
-Box 23 = Box 19 - Box 21
-IF Box 23 < 0 THEN Box 23 = 0; excess = credit
-```
+### 6.1 Fuel/vehicles — *Default:* 0%.
+### 6.2 Entertainment — *Default:* block.
+### 6.3 SaaS entities — *Default:* reverse charge at 21%.
+### 6.4 Rate determination (21%/15%/7%) — *Default:* 21%.
+### 6.5 Tourism income — *Default:* flag for reviewer. *Question:* "Short-term accommodation?"
+### 6.6 Owner transfers — *Default:* exclude.
+### 6.7 Foreign incoming — *Default:* zero-rated.
+### 6.8 Cash withdrawals — *Default:* exclude.
 
 ---
 
-## Step 6: Key Thresholds
+## Section 7 — Excel working paper template
 
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Mandatory PDV registration | Annual turnover > EUR 30,000 | Article 43 |
-| Voluntary registration | Below threshold | Article 43 |
-| Small enterprise exemption | <= EUR 30,000 | Article 43 |
-| Monthly filing threshold | Annual turnover > EUR 500,000 | Article 46 |
-| Quarterly filing | Annual turnover <= EUR 500,000 | Article 46 |
-| PDV refund eligibility | 3+ months credit or exporters | Article 40 |
+Per `vat-workflow-base` Section 3 with Montenegro-specific box codes. Note EUR currency.
 
 ---
 
-## Step 7: Filing Deadlines [T1]
+## Section 8 — Montenegrin bank statement reading guide
 
-| Obligation | Period | Deadline | Legislation |
-|------------|--------|----------|-------------|
-| PDV return (monthly filers) | Monthly | 15th of the month following the reporting month | Article 46 |
-| PDV payment (monthly filers) | Monthly | 15th of the month following the reporting month | Article 46 |
-| PDV return (quarterly filers) | Quarterly | 15th of the month following the quarter end | Article 46 |
-| PDV payment (quarterly filers) | Quarterly | 15th of the month following the quarter end | Article 46 |
-| Import PDV | Per import | At customs clearance | Customs Law |
-| Annual reconciliation | Annual | With annual financial statements | Article 46 |
+**CSV conventions.** CKB and NLB Montenegro use semicolons, DD.MM.YYYY.
 
----
+**Montenegrin/Serbian terms.** Plata (salary), kamata (interest), kredit (loan), gotovina (cash), interni (internal), carina (customs), osiguranje (insurance).
 
-## Step 8: Tourism Sector Special Rules [T2]
+**Currency.** Montenegro uses EUR unilaterally. No conversion needed.
 
-Montenegro's economy is heavily dependent on tourism. Special PDV considerations:
-
-1. **Accommodation services:** 15% intermediate reduced rate for certified tourism structures (changed from 7% on 1 January 2025)
-2. **Restaurant/food services:** 15% intermediate reduced rate for food and non-alcoholic beverages (changed from 7% on 1 January 2025; alcoholic beverages, sugary drinks, and coffee remain at 21%)
-3. **Tour operator margin scheme:** Tour operators may use a special margin scheme where PDV is calculated on the margin (selling price minus cost of bought-in services)
-4. **Seasonal considerations:** Many businesses operate seasonally; PDV returns must still be filed monthly even in off-season (nil returns if no activity)
-
-**Flag for reviewer: tourism margin scheme requires specialist analysis.**
+**IBAN prefix.** ME = Montenegro.
 
 ---
 
-## Step 9: Edge Case Registry
+## Section 9 — Onboarding fallback
 
-### EC1 -- Hotel accommodation at 15% [T1]
-
-**Situation:** Certified hotel charges for room accommodation.
-**Resolution:** Accommodation at 15% (changed from 7% effective 1 January 2025). Spa, minibar, parking, conference rooms at 21%. Separation required on invoice. If bundled without separation, flag for reviewer.
-**Legislation:** Article 24, as amended
-
-### EC2 -- Restaurant food services at 15% [T1]
-
-**Situation:** Restaurant charges for food and beverages.
-**Resolution:** Food and non-alcoholic beverage service at 15% (changed from 7% effective 1 January 2025). Alcoholic beverages, carbonated/non-carbonated drinks with added sugar, and coffee are at 21%. Separation required on invoice.
-**Legislation:** Article 24, as amended
-
-### EC3 -- Services from non-resident (reverse charge) [T1]
-
-**Situation:** Montenegrin company engages a UK IT firm for software development. No ME registration.
-**Resolution:** Reverse charge at 21%. Box 7 = net amount, Box 8 = PDV at 21%, Box 16 = deductible PDV. Net zero for fully taxable business.
-
-### EC4 -- CEFTA export to Serbia [T1]
-
-**Situation:** Montenegrin company exports goods to Serbia.
-**Resolution:** Zero-rated export. Customs declaration required. Box 5. Input PDV deductible.
-
-### EC5 -- Passenger vehicle blocked [T1]
-
-**Situation:** Company purchases a car.
-**Resolution:** Input PDV blocked. No deduction. Exception for taxis, rental fleet, driving school only.
-**Legislation:** Article 37(3)
-
-### EC6 -- Credit note [T1]
-
-**Situation:** Goods returned; credit note issued.
-**Resolution:** Both parties adjust current period. Seller reduces output; buyer reduces input.
-
-### EC7 -- Tour operator margin scheme [T2]
-
-**Situation:** Tour operator packages hotel, transport, and excursions for tourists.
-**Resolution:** May use margin scheme: PDV on margin only (selling price minus bought-in costs). Input PDV on bought-in travel services is NOT separately deductible under the margin scheme. Flag for reviewer: confirm margin scheme eligibility and calculation.
-**Legislation:** Special scheme provisions in Law on PDV
-
-### EC8 -- Real property sale [T2]
-
-**Situation:** Company sells commercial premises.
-**Resolution:** Sale of new commercial property generally subject to PDV at 21%. "New" typically means first transfer within a defined period of completion. Used commercial property may be exempt. Flag for reviewer: verify property status.
+### 9.1 Entity type — *Fallback:* "Sole trader or company (DOO/AD)?"
+### 9.2 PDV registration — *Fallback:* "PDV payer?"
+### 9.3 PIB — *Fallback:* "What is your PIB?"
+### 9.4 Period — *Inference:* statement dates.
+### 9.5 Industry — *Inference:* tourism/accommodation from Booking.com payouts. *Fallback:* "What does the business do?"
+### 9.6 Credit B/F — *Always ask.*
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 10 — Reference material
 
-- NEVER let AI guess PDV treatment -- deterministic from facts
-- NEVER apply input PDV without valid invoice
-- NEVER allow non-registered entities to claim input PDV
-- NEVER apply 0% without customs documentation
-- NEVER ignore reverse charge on non-resident services
-- NEVER apply 7% or 15% to categories not listed in the applicable rate schedules
-- NEVER allow input PDV on passenger vehicles or entertainment
-- NEVER assume EU intra-community rules -- Montenegro is NOT an EU member
-- NEVER skip monthly filing even in off-season (nil return required)
-- NEVER compute any number -- handled by deterministic engine
+### Sources
+1. Law on Value Added Tax of Montenegro (Zakon o PDV-u)
+2. Tax Administration — https://eprijava.tax.gov.me
+3. Central Bank of Montenegro — https://www.cbcg.me
 
----
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
 
-## Step 10: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax practitioner must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified practitioner. Document gap.
-```
-
----
-
-## Step 11: Test Suite
-
-### Test 1 -- Standard domestic sale at 21%
-
-**Input:** Montenegrin company sells IT services. Net EUR 5,000. PDV at 21%.
-**Expected output:** Box 1 = EUR 5,000. Box 2 = EUR 1,050.
-
-### Test 2 -- Domestic purchase with input PDV
-
-**Input:** Company purchases office equipment. Gross EUR 2,420 including PDV EUR 420. Valid invoice.
-**Expected output:** Box 10 includes EUR 2,000. Box 11 = EUR 420. Deductible.
-
-### Test 3 -- Import of goods
-
-**Input:** Import from China. Customs value EUR 10,000. Duty EUR 500. No excise.
-**Expected output:** PDV base = EUR 10,500. Import PDV = EUR 10,500 * 21% = EUR 2,205. Deductible.
-
-### Test 4 -- Hotel accommodation at 15%
-
-**Input:** Certified hotel provides accommodation. Net EUR 3,000. PDV at 15%.
-**Expected output:** Box 3a = EUR 3,000. Box 3b = EUR 450.
-
-### Test 5 -- Reverse charge on non-resident services
-
-**Input:** Montenegrin company engages a German law firm. Fee EUR 2,000. No ME registration.
-**Expected output:** Box 7 = EUR 2,000. Box 8 = EUR 420 (21%). Box 16 = EUR 420. Net zero.
-
-### Test 6 -- Export
-
-**Input:** Export furniture to Italy. EUR 8,000. Customs declaration confirmed.
-**Expected output:** Box 5 = EUR 8,000. PDV = 0%. Input PDV deductible.
-
-### Test 7 -- Blocked entertainment
-
-**Input:** Client dinner. Gross EUR 500 including PDV EUR 87.
-**Expected output:** Input PDV EUR 87 NOT deductible. Blocked.
-
-### Test 8 -- Restaurant food service at 15%
-
-**Input:** Restaurant bills customers for meals (non-alcoholic food and beverages). Net EUR 1,500. PDV at 15%.
-**Expected output:** Box 3a = EUR 1,500. Box 3b = EUR 225.
-
----
-
-## Step 12: Penalties and Interest [T1]
-
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing of PDV return | EUR 500-20,000 per return | Law on Tax Administration |
-| Late payment of PDV | 0.03% per day of outstanding amount | Law on Tax Administration |
-| Understatement of PDV | 50% of understated amount plus interest | Law on Tax Administration |
-| Failure to register | Back-assessment + EUR 500-5,000 penalty | Law on PDV |
-| Failure to issue invoice | EUR 500-3,000 per instance | Law on PDV |
-| False invoice | Criminal liability for amounts exceeding threshold | Criminal Code |
-
----
-
-## Step 13: Currency and Exchange Rate Rules [T1]
-
-- Montenegro uses the Euro (EUR) as its official currency (adopted unilaterally, not through Eurozone membership)
-- All PDV returns filed in EUR
-- No foreign currency conversion needed for EUR-denominated transactions
-- Non-EUR foreign currency: Central Bank of Montenegro (CBCG) middle rate on transaction date
-
----
-
-## Step 14: Place of Supply Rules for Services [T1]
-
-| Service Type | Place of Supply |
-|-------------|----------------|
-| B2B general services | Where recipient is established |
-| B2C general services | Where supplier is established |
-| Immovable property | Where property is located |
-| Transport | Where transport takes place |
-| Cultural/entertainment | Where event takes place |
-| Restaurant/catering | Where services performed |
-| Electronic services (B2C) | Where recipient is located |
-
----
-
-## Step 15: Record Keeping [T1]
-
-PDV payers must maintain records for a minimum of 10 years:
-
-| Record | Requirement |
-|--------|-------------|
-| Tax invoices (issued and received) | Sequential, chronological |
-| Purchase and sales ledgers | With PDV calculations |
-| Import/export customs documents | Originals retained |
-| PDV returns (filed copies) | With Tax Administration confirmation |
-| Contracts for significant transactions | Retained with supporting docs |
-| Bank statements | Payment trail |
-| Fiscal cash register records | Daily Z-reports for B2C |
-
----
-
-## Step 16: EU Accession and PDV Alignment [T2]
-
-Montenegro opened EU accession negotiations in 2012 and has made progress on Chapter 16 (Taxation):
-- The PDV system is largely aligned with the EU VAT Directive
-- The standard rate (21%) exceeds the EU minimum (15%)
-- The reduced rate (7%) exceeds the EU minimum for reduced rates (5%)
-- Upon accession, intra-community supply/acquisition rules will replace current import/export treatment for EU trade
-- The transition will require significant administrative and IT system changes
-- Current reverse charge mechanisms will be replaced by EU-standard rules
-
-**Flag for reviewer: monitor Chapter 16 negotiations and legislative changes.**
-
----
-
-## Contribution Notes
-
-This skill requires validation by a licensed Montenegrin tax practitioner. Key areas:
-
-1. Current reduced rate (7%) categories (subject to amendments)
-2. Tourism margin scheme details
-3. EU accession progress and PDV alignment
-4. Seasonal business PDV obligations
-5. Real property classification
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
-
----
-
-## Step 17: Fiscal Cash Register Requirements [T1]
-
-Montenegro requires fiscal cash registers for B2C transactions:
-
-| Requirement | Detail |
-|-------------|--------|
-| Mandatory for | All businesses conducting cash sales to consumers |
-| Fiscal device | Must be certified by Tax Administration |
-| Daily Z-report | Must be generated and stored daily |
-| Fiscal receipts | Must be issued for every B2C cash transaction |
-| Records retention | Minimum 5 years for fiscal memory data |
-| Connection to Tax Admin | Real-time or periodic electronic reporting may be required |
-| Penalties for non-compliance | EUR 500-5,000 per violation |
-
-**B2B transactions via bank transfer do not require fiscal cash register receipts, but standard PDV invoices must be issued.**
+## End of Montenegro VAT (PDV) Skill v2.0
 
 
 ---

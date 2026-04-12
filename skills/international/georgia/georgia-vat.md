@@ -1,510 +1,314 @@
 ---
 name: georgia-vat
-description: Use this skill whenever asked to prepare, review, or create a Georgia VAT return or any VAT filing for a Georgian business. Trigger on phrases like "prepare VAT return", "Georgia VAT", "RS filing", "Revenue Service Georgia", "Дღმა", or any request involving Georgia VAT. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Georgia VAT classification rules, return form mappings, input credit rules, and filing deadlines. ALWAYS read this skill before touching any Georgia VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Georgia VAT return for any client. Trigger on phrases like "Georgia VAT", "RS filing", "Revenue Service Georgia", or any request involving Georgian VAT. This skill covers standard VAT payers filing monthly returns. Small Business Status, Micro Business, Fixed Tax, and Virtual Zone IT regimes are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Georgian VAT work.
+version: 2.0
 ---
 
-# Georgia VAT Return Preparation Skill
+# Georgia VAT Return Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Georgia |
-| Jurisdiction Code | GE |
-| Primary Legislation | Tax Code of Georgia (as amended) |
-| Supporting Legislation | Ministerial Decrees; RS Instructions on VAT |
-| Tax Authority | Revenue Service (RS), Ministry of Finance |
-| Filing Portal | https://rs.ge (Revenue Service Online Portal) |
+|---|---|
+| Country | Georgia |
+| Tax name | VAT (ghirebuleba damatebiti gadasakhadi) |
+| Standard rate | 18% |
+| Reduced rates | None (single standard rate) |
+| Zero rate | 0% (exports, international transport, FIZ supplies, diplomatic) |
+| Return form | Monthly VAT declaration (electronic via rs.ge) |
+| Filing portal | https://rs.ge |
+| Authority | Revenue Service (RS), Ministry of Finance |
+| Currency | GEL (Georgian Lari) only |
+| Filing frequency | Monthly |
+| Deadline | 15th of the month following the reporting month |
+| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Pending local practitioner validation |
-| Validation Date | April 2026 (web-verified; practitioner sign-off still pending) |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: standard rate, input-output mapping, return structure. Tier 2: reverse charge, free industrial zones, partial exemption. Tier 3: virtual zone IT entities, complex international structures. |
+| Validated by | Pending local practitioner validation |
+| Validation date | April 2026 |
 
----
+**Key VAT return sections:**
 
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and TIN** [T1] -- 9 or 11-digit Tax Identification Number
-2. **VAT registration status** [T1] -- VAT registered (mandatory/voluntary) or below threshold
-3. **Tax regime** [T1] -- Standard, Small Business Status, Micro Business, or Fixed Tax
-4. **Filing period** [T1] -- monthly (standard for VAT payers)
-5. **Industry/sector** [T2] -- impacts exemptions
-6. **Does the business make exempt supplies?** [T2] -- apportionment required
-7. **Does the business export goods/services?** [T1] -- zero-rating
-8. **Is the entity in a Free Industrial Zone (FIZ)?** [T3] -- special rules
-9. **Is the entity a Virtual Zone IT company?** [T3] -- special rules
-10. **Excess credit brought forward** [T1] -- from prior period
-
-**If any of items 1-4 are unknown, STOP.**
-
----
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, social contributions, loan repayments, dividends = OUT OF SCOPE
-- **Legislation:** Tax Code, Articles 156-160
-
-### 1b. Determine Supply Location [T1]
-- Domestic (within Georgia)
-- Import (outside Georgia)
-- Export (outside Georgia)
-- **Legislation:** Tax Code, Articles 166-168 (place of supply)
-
-### 1c. Determine VAT Rate [T1]
-- **Standard rate:** 18%
-- **Zero-rated:** Exports, international transport, supplies to diplomats, supplies to FIZ entities
-- **Exempt (Article 168):**
-  - Financial services (interest, insurance premiums)
-  - Educational services (accredited institutions)
-  - Medical services and pharmaceuticals (listed)
-  - Residential rental (first supply)
-  - Public transportation
-  - Agricultural land supply
-  - Government services
-  - Cultural events (non-commercial)
-  - Postal services (universal)
-- **Legislation:** Tax Code, Article 164 (rate); Article 168 (exemptions)
-
-### 1d. Determine Expense Category [T1]
-- Capital goods: fixed assets > 1 year useful life
-- Trading stock: goods for resale
-- Services/overheads: rent, utilities, professional fees
-
----
-
-## Step 2: VAT Return Form Structure [T1]
-
-**Legislation:** Tax Code; RS prescribed form.
-
-### Monthly VAT Return Sections
-
-| Section | Description |
-|---------|-------------|
+| Section | Meaning |
+|---|---|
 | Part 1 | Taxpayer information (TIN, name, period) |
-| Part 2 | Taxable supplies at 18% |
-| Part 3 | Zero-rated supplies |
+| Part 2 | Taxable supplies at 18% — base |
+| Part 3 | Zero-rated supplies (exports) |
 | Part 4 | Exempt supplies |
 | Part 5 | Total supplies |
-| Part 6 | Output VAT (18% of taxable supplies) |
-| Part 7 | Reverse charge VAT (on imported services) |
+| Part 6 | Output VAT (18% of taxable) |
+| Part 7 | Reverse charge VAT (imported services) |
 | Part 8 | Total output VAT |
 | Part 9 | Input VAT on domestic purchases |
-| Part 10 | Input VAT on imports (paid at customs) |
+| Part 10 | Input VAT on imports (customs) |
 | Part 11 | Input VAT on reverse charge (creditable) |
 | Part 12 | Total input VAT credit |
 | Part 13 | Net VAT payable |
 | Part 14 | Credit brought forward |
 | Part 15 | Net payable or credit |
 
----
+**Conservative defaults:**
 
-## Step 3: Input Tax Credit Mechanism [T1]
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 18% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Georgia |
+| Unknown business-use proportion | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge (Part 7/11) |
+| Unknown blocked-input status | Blocked |
 
-**Legislation:** Tax Code, Articles 174-178.
-
-### Eligibility
-
-1. Business must be VAT registered [T1]
-2. Purchase must relate to taxable supplies [T1]
-3. Valid tax invoice held [T1]
-4. Supplier must be VAT registered [T1]
-5. Goods/services received [T1]
-
-### Electronic Invoicing [T1]
-Georgia uses an electronic invoicing system through rs.ge:
-- VAT-registered taxpayers issue invoices via the portal
-- Input credit validated against the system
-- Recommended: always verify invoice in RS system
-
-### Input Tax Apportionment [T2]
-
-```
-Creditable Input VAT = Total Input VAT x (Taxable + Zero-rated Supplies / Total Supplies)
-```
-**Flag for reviewer: confirm apportionment.**
-
----
-
-## Step 4: Deductibility Check
-
-### Blocked Input VAT Credit [T1]
-
-**Legislation:** Tax Code, Article 177.
-
-These have ZERO input VAT credit:
-
-- Motor vehicles for personal use (unless transport/rental business)
-- Entertainment and hospitality expenses (representation)
-- Personal consumption of owners/directors/employees
-- Purchases without valid tax invoice
-- Purchases from non-VAT-registered suppliers
-- Goods/services for exempt supplies
-- Fuel for non-commercial vehicles
-- Gifts and donations (unless documented promotional)
-
-Blocked categories OVERRIDE any other rule. Check blocked FIRST.
-
-### Regime-Based Recovery [T1]
-- VAT registered (standard): input credit allowed
-- Small Business Status: NO VAT obligations (1% turnover tax)
-- Micro Business: NO VAT obligations (exempt from VAT)
-- Fixed Tax: NO VAT obligations
-
----
-
-## Step 5: Reverse Charge [T1]
-
-**Legislation:** Tax Code, Article 161.
-
-### When Reverse Charge Applies
-- Services received from non-resident providers
-- Non-resident has no permanent establishment in Georgia
-- Place of supply is Georgia
-
-### Treatment
-1. Self-assess output VAT at 18%
-2. Report in Part 7 of return
-3. Input credit in Part 11 if for taxable supplies
-4. Net effect: zero for fully taxable businesses
-
----
-
-## Step 6: VAT on Imports [T1]
-
-**Legislation:** Tax Code, Article 162; Customs Code.
-
-### Import VAT
-- VAT payable at importation
-- Calculated on: Customs Value + Customs Duty + Excise
-- Rate: 18%
-- Paid to Revenue Service / Customs at clearing
-- Recoverable as input credit
-
----
-
-## Step 7: Free Industrial Zone (FIZ) [T3]
-
-**Legislation:** Law on Free Industrial Zones.
-
-FIZ entities enjoy:
-- VAT exemption on supplies between FIZ entities
-- Zero-rating on supplies from domestic territory to FIZ
-- When FIZ goods enter domestic market, import VAT applies
-
-**Do not classify FIZ transactions without reviewing specific regulations. Escalate.**
-
----
-
-## Step 8: Virtual Zone IT Companies [T3]
-
-**Legislation:** Tax Code, Article 99(2).
-
-Virtual Zone IT companies (registered under the Virtual Zone program) enjoy:
-- Profit tax exemption on income from IT services supplied to non-residents
-- VAT treatment: exports of IT services are zero-rated
-- Domestic IT services: standard 18% VAT applies
-
-**Complex determination. Escalate for confirmation of Virtual Zone status and service classification.**
-
----
-
-## Step 9: Key Thresholds [T1]
+**Red flag thresholds:**
 
 | Threshold | Value |
-|-----------|-------|
-| Mandatory VAT registration | Annual turnover > GEL 100,000 |
-| Voluntary registration | Below threshold |
-| Small Business Status | Turnover < GEL 500,000 (1% turnover tax) |
-| Micro Business | Income < GEL 30,000 (exempt) |
+|---|---|
+| HIGH single-transaction size | GEL 15,000 |
+| HIGH tax-delta on a single default | GEL 1,000 |
+| MEDIUM counterparty concentration | >40% |
+| MEDIUM conservative-default count | >4 |
+| LOW absolute net VAT position | GEL 25,000 |
 
 ---
 
-## Step 10: Filing Deadlines [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-| Category | Period | Deadline |
-|----------|--------|----------|
-| VAT return | Monthly | 15th of the following month |
-| VAT payment | Monthly | 15th of the following month |
-| Annual reconciliation | Annual | With annual profit tax return (1 April) |
+### Required inputs
 
-### Fiscal Year [T1]
-Georgia fiscal year: 1 January to 31 December (calendar year).
+**Minimum viable** — bank statement for the month. Acceptable from: TBC Bank, Bank of Georgia, Liberty Bank, Basis Bank, Credo Bank, ProCredit Bank Georgia, or any other.
 
-### Late Filing Penalties [T1]
+**Recommended** — invoices (especially e-invoices from rs.ge), client TIN (9 or 11 digits).
 
-| Default | Penalty |
-|---------|---------|
-| Late filing | GEL 200 (first offence); GEL 400 (repeat) |
-| Late payment | 0.05% per day of unpaid amount |
-| Non-filing | Assessment by RS + penalties |
-| Tax evasion | Criminal prosecution |
-| Failure to register | GEL 500 + retrospective registration |
+**Ideal** — complete e-invoice register from rs.ge, prior period declaration.
 
----
+### Refusal catalogue
 
-## Step 11: Derived Calculations [T1]
+**R-GE-1 — Small Business Status.** *Trigger:* client on SBS (1% turnover tax, below GEL 500,000). *Message:* "Small Business Status entities do not file VAT returns. Out of scope."
 
-```
-Output VAT             = Taxable supplies x 18%
-Reverse Charge VAT     = Imported services x 18%
-Total Output VAT       = Output VAT + Reverse Charge VAT
-Total Input VAT        = Domestic + Imports + Reverse Charge (creditable)
-Net VAT Payable        = Total Output - Total Input - Credit B/F
-If Net < 0             = Credit carried forward or refund
-```
+**R-GE-2 — Micro Business.** *Trigger:* client is micro business (below GEL 30,000, exempt). *Message:* "Micro businesses are exempt from VAT. Out of scope."
+
+**R-GE-3 — Fixed Tax.** *Trigger:* client on fixed tax regime. *Message:* "Fixed tax entities have separate obligations. Out of scope."
+
+**R-GE-4 — Virtual Zone IT company.** *Trigger:* registered Virtual Zone IT entity. *Message:* "Virtual Zone IT companies have special tax treatment. Please use a qualified Georgian practitioner for confirmation of scope."
+
+**R-GE-5 — Free Industrial Zone (FIZ).** *Trigger:* FIZ entity. *Message:* "FIZ entities have special VAT rules. Out of scope."
+
+**R-GE-6 — Partial exemption.** *Trigger:* mixed taxable and exempt. *Message:* "Input VAT apportionment required. Use a qualified practitioner."
+
+**R-GE-7 — Income tax.** *Trigger:* user asks about income/profit tax. *Message:* "This skill handles VAT only."
 
 ---
 
-## Step 12: Refund Mechanism [T2]
+## Section 3 — Supplier pattern library
 
-**Legislation:** Tax Code, Article 179.
+### 3.1 Georgian banks (fees exempt — exclude)
 
-### Refund Eligibility
-- Excess input credit accumulated for 3+ consecutive months
-- Exporters with persistent credit positions
-- Automatic refund for "Gold List" taxpayers (low-risk, compliant)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TBC BANK, TBC | EXCLUDE | Financial service, exempt |
+| BANK OF GEORGIA, BOG | EXCLUDE | Same |
+| LIBERTY BANK, BASIS BANK, CREDO BANK | EXCLUDE | Same |
+| PROCREDIT GEORGIA, TERABANK | EXCLUDE | Same |
+| PROTSENTI, INTEREST | EXCLUDE | Interest, out of scope |
+| SESXI, LOAN | EXCLUDE | Loan principal |
 
-### Process
-1. Apply via rs.ge portal
-2. RS may audit
-3. Processing: 30-45 days (Gold List: faster)
-4. Refund via bank transfer
+### 3.2 Government and statutory bodies (exclude)
 
----
+| Pattern | Treatment | Notes |
+|---|---|---|
+| REVENUE SERVICE, RS.GE | EXCLUDE | Tax payment |
+| SABAZHOEBI, CUSTOMS | EXCLUDE | Duty (import VAT separate) |
+| SAPENSIA, PENSION AGENCY | EXCLUDE | Pension contribution |
+| IUSTITSII, JUSTICE HOUSE | EXCLUDE | Government fee |
 
-## PROHIBITIONS [T1]
+### 3.3 Utilities
 
-- NEVER allow unregistered or Small Business/Micro Business entities to claim input VAT credit
-- NEVER classify exempt supplies as zero-rated
-- NEVER accept input credit without valid tax invoice
-- NEVER apply input credit on blocked categories
-- NEVER assume FIZ or Virtual Zone treatment without verification
-- NEVER file return without reconciling invoice records
-- NEVER ignore reverse charge on imported services
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| TELASI, GWP, ENERGO-PRO | Domestic 18% | Part 9 | Electricity/water |
+| SOCAR GEORGIA, GAZPROM GE | Domestic 18% | Part 9 | Gas |
+| MAGTICOM, BEELINE GE, GEOCELL | Domestic 18% | Part 9 | Telecoms |
+| SILKNET | Domestic 18% | Part 9 | Internet/TV |
 
----
+### 3.4 Insurance (exempt — exclude)
 
-## Step 13: Edge Case Registry
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ALDAGI, IC GROUP, TBC INSURANCE | EXCLUDE | Exempt |
+| DAZGHVEVA, INSURANCE | EXCLUDE | Same |
 
-### EC1 -- Virtual Zone IT company domestic sales [T3]
-**Situation:** Virtual Zone IT company provides services to a Georgian client.
-**Resolution:** Domestic sales subject to standard 18% VAT. Only exports to non-residents benefit from profit tax exemption. VAT still applies domestically. Escalate to confirm Virtual Zone application.
+### 3.5 Food and entertainment (blocked)
 
-### EC2 -- Reverse charge on digital services [T2]
-**Situation:** Georgian company subscribes to cloud software from US provider.
-**Resolution:** Reverse charge at 18%. Self-assess output VAT. Claim input credit if for taxable supplies. Flag for reviewer.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CARREFOUR GE, GOODWILL, NIKORA, FRESCO | Default BLOCK | Personal provisioning |
+| RESTORAN, RESTORANI, KAFE, BAR | Default BLOCK | Entertainment blocked |
 
-### EC3 -- FIZ to domestic supply [T1]
-**Situation:** FIZ entity sells goods to a domestic (non-FIZ) buyer.
-**Resolution:** Goods leaving FIZ to domestic market are treated as imports. Import VAT at 18% applies. Buyer pays import VAT, which is creditable.
+### 3.6 SaaS — non-resident (reverse charge)
 
-### EC4 -- Credit notes [T1]
-**Situation:** Price adjustment, credit note issued.
-**Resolution:** Supplier reduces output VAT. Buyer reduces input credit. Both adjust in period of correction.
+| Pattern | Box | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | Part 7/11 | Reverse charge at 18% |
+| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | Part 7/11 | Same |
 
-### EC5 -- Wine industry exemption [T2]
-**Situation:** Small winery sells wine domestically.
-**Resolution:** Wine is subject to standard 18% VAT. Excise tax also applies. No special VAT exemption for wine. Flag for reviewer: confirm excise rates.
+### 3.7 Professional services
 
-### EC6 -- Construction services progress billing [T1]
-**Situation:** Construction company bills in stages.
-**Resolution:** VAT at 18% on each progress billing. Issue tax invoice for each stage. Input credit on materials per invoice.
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| NOTARIUSI, NOTARY | Domestic 18% | Part 9 | If business purpose |
+| AUDITORI, BUKHGALTER | Domestic 18% | Part 9 | Deductible |
+| ADVOKATI, LAWYER | Domestic 18% | Part 9 | If business matter |
 
-### EC7 -- Tourism services [T1]
-**Situation:** Tour operator provides package tours to foreign tourists.
-**Resolution:** Export of services: zero-rated if tourists are non-residents and service consumed outside or during transit. Domestic tourism services to residents: 18%.
+### 3.8 Payroll and exclusions
 
-### EC8 -- Small Business Status entity crossing threshold [T2]
-**Situation:** Entity on Small Business Status (1% turnover) crosses GEL 100,000 threshold.
-**Resolution:** Must register for VAT. Transition from 1% turnover tax to standard 18% VAT regime. Flag for reviewer: confirm transition timing and retrospective obligations.
-
----
-
-## Step 14: Reviewer Escalation Protocol
-
-When a [T2] situation is identified:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list possible treatments]
-Recommended: [most likely correct]
-Action Required: Qualified accountant must confirm before filing.
-```
-
-When a [T3] situation is identified:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Refer to qualified accountant. Document gap.
-```
+| Pattern | Treatment | Notes |
+|---|---|---|
+| KHELFASI, SALARY | EXCLUDE | Wages |
+| DIVIDENDI | EXCLUDE | Out of scope |
+| SHIDA, INTERNAL, OWN TRANSFER | EXCLUDE | Internal |
+| ATM, NAGHDI | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 15: Test Suite
+## Section 4 — Worked examples
 
-### Test 1 -- Standard local sale at 18%
-**Input:** Domestic sale, net GEL 10,000, VAT GEL 1,800. VAT registered.
-**Expected output:** Part 2: GEL 10,000. Part 6: Output VAT GEL 1,800.
+### Example 1 — Non-resident SaaS reverse charge
 
-### Test 2 -- Local purchase with input credit
-**Input:** Purchase from registered supplier, net GEL 5,000, VAT GEL 900. Valid invoice.
-**Expected output:** Part 9: Input VAT GEL 900. Full credit.
+**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; GEL 43.20`
 
-### Test 3 -- Export (zero-rated)
-**Input:** Export of wine, FOB GEL 50,000. Documentation complete.
-**Expected output:** Part 3: GEL 50,000 at 0%. Full input credit recovery.
+**Reasoning:** US entity. Reverse charge at 18%. Part 7 (output VAT), Part 11 (input credit). Net zero.
 
-### Test 4 -- Import with customs VAT
-**Input:** Import of materials, customs value GEL 20,000. Duty GEL 2,000. VAT at 18% on GEL 22,000 = GEL 3,960.
-**Expected output:** Part 10: Input VAT GEL 3,960. Credit allowed.
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
+|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -43.20 | -43.20 | 7.78 | 18% | Part 11 | Part 7 | N |
 
-### Test 5 -- Blocked input: entertainment
-**Input:** Business dinner, GEL 1,000, VAT GEL 180.
-**Expected output:** Input VAT GEL 0 (BLOCKED).
+### Example 2 — Domestic purchase
 
-### Test 6 -- Reverse charge on foreign services
-**Input:** Georgian company pays USD 3,000 (GEL 8,100) to UK consulting firm.
-**Expected output:** Part 7: GEL 1,458 (18% output). Part 11: GEL 1,458 (input credit). Net: zero.
+**Input line:** `10.04.2026 ; MAGTICOM ; DEBIT ; Internet April ; -45.00 ; GEL`
 
-### Test 7 -- Small Business crossing threshold
-**Input:** Entity on 1% turnover tax, annual turnover reaches GEL 110,000.
-**Expected output:** Must register for VAT. Transition to 18% VAT regime. Future sales subject to VAT.
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 10.04.2026 | MAGTICOM | -45.00 | -38.14 | -6.86 | 18% | Part 9 | N |
 
-### Test 8 -- FIZ goods entering domestic market
-**Input:** FIZ entity sells goods GEL 30,000 to domestic buyer.
-**Expected output:** Treated as import. Buyer pays import VAT: GEL 5,400 (18%). Buyer claims input credit.
+### Example 3 — Entertainment blocked
 
----
+**Input line:** `15.04.2026 ; RESTORAN SHEMOIKHEDE ; DEBIT ; Business dinner ; -250.00 ; GEL`
 
-## Step 16: Invoice Requirements [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORAN SHEMOIKHEDE | -250.00 | -250.00 | 0 | — | — | Y | "Entertainment: blocked" |
 
-**Legislation:** Tax Code; RS e-Invoice Regulations.
+### Example 4 — Export of IT services (zero-rated)
 
-### Electronic Invoicing via rs.ge
-1. All VAT-registered taxpayers issue invoices through rs.ge portal
-2. Electronic invoices automatically registered in RS database
-3. Input credit validated against system records
-4. Paper invoices accepted but electronic strongly preferred
+**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +8,100.00 ; GEL`
 
-### Mandatory Contents
-1. Supplier's name, address, TIN
-2. Buyer's name and TIN
-3. Date of issue
-4. Invoice number (system-assigned or sequential)
-5. Description of goods/services
-6. Quantity and unit price
-7. VAT rate (18%) and VAT amount
-8. Total amount including VAT
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | TECHCORP GMBH | +8,100 | +8,100 | 0 | 0% | Part 3 | Y | "Verify export docs" |
+
+### Example 5 — Motor vehicle blocked
+
+**Input line:** `28.04.2026 ; TEGETA MOTORS ; DEBIT ; Car lease ; -1,200.00 ; GEL`
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
+|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | TEGETA MOTORS | -1,200.00 | -1,200.00 | 0 | — | — | Y | "Vehicle: blocked" |
+
+### Example 6 — Import of goods
+
+**Input line:** `25.04.2026 ; CUSTOMS ; DEBIT ; Import VAT ; -5,400.00 ; GEL`
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
+|---|---|---|---|---|---|---|---|
+| 25.04.2026 | CUSTOMS | -5,400 | -4,576 | -824 | 18% | Part 10 | N |
 
 ---
 
-## Step 17: Record Keeping [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-**Legislation:** Tax Code, Chapter 5.
+### 5.1 Standard rate 18% (Tax Code Article 164)
+Single rate. Sales to Part 2/6. Purchases to Part 9.
 
-### Mandatory Records (retain for 6 years)
-1. All electronic invoices (via rs.ge)
-2. Purchase and sales journals
-3. Import/export documentation
-4. Bank statements
-5. General ledger, journals, trial balance
-6. Stock records
-7. Fixed asset register
-8. Payroll records (separate)
+### 5.2 Zero rate
+Exports, international transport, FIZ supplies, diplomatic. Part 3.
 
----
+### 5.3 Exempt supplies (Article 168)
+Financial, insurance, medical, educational, residential rental, public transport, postal, cultural, agricultural land, government.
 
-## Step 18: Specific Sector Rules
+### 5.4 Reverse charge — non-resident services (Article 161)
+Self-assess at 18%. Part 7 (output), Part 11 (input credit). Net zero.
 
-### Wine and Spirits [T2]
-- Wine production: VAT at 18% on domestic sales
-- Wine export: zero-rated (significant sector for Georgia)
-- Excise tax on wine: separate calculation
-- Input credit on grapes, equipment, barrels allowed
-- **Flag for reviewer: confirm excise rates for specific beverages**
+### 5.5 Import VAT
+At customs. Base = customs value + duties + excise. 18%. Part 10.
 
-### Tourism and Hospitality [T1]
-- Hotel accommodation: VAT at 18%
-- Restaurant services: VAT at 18%
-- Tour packages for non-residents: zero-rated (export of services)
-- Domestic tourism: VAT at 18%
-- Input credit on hotel supplies allowed
+### 5.6 Blocked input VAT (Article 177)
+Motor vehicles for personal use, entertainment/representation, personal consumption, no valid invoice, from non-VAT-registered supplier, for exempt supplies, fuel for non-commercial vehicles, gifts/donations.
 
-### IT and Technology [T3]
-- Virtual Zone IT companies: special regime
-- IT service exports to non-residents: zero-rated
-- Domestic IT services: VAT at 18%
-- **Escalate Virtual Zone classification questions**
-
-### Construction and Real Estate [T2]
-- Construction services: VAT at 18%
-- Sale of new buildings: VAT at 18%
-- Sale of existing buildings: may be exempt (second-hand)
-- Residential rental: exempt
-- Commercial rental: VAT at 18%
-- **Flag for reviewer: new vs existing building distinction**
+### 5.7 Electronic invoicing
+All VAT-registered taxpayers issue invoices via rs.ge. Input credit validated against system.
 
 ---
 
-## Step 19: Penalties Detailed Summary [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-| Offence | Penalty |
-|---------|---------|
-| Failure to register | GEL 500 |
-| Late filing | GEL 200 (first) / GEL 400 (repeat) |
-| Late payment | 0.05% per day |
-| Failure to issue invoice | GEL 200 per instance |
-| Fraudulent declaration | Up to 200% of understated tax |
-| Failure to maintain records | GEL 200 |
-| Tax evasion | Criminal prosecution |
-| Under-declaration | Additional tax + penalty |
-
----
-
-## Step 20: Audit and Appeals [T2]
-
-### Audit Process
-1. RS may audit within **3 years** of filing (6 years for fraud)
-2. Risk-based selection
-3. "Gold List" taxpayers face less frequent audits
-
-### Appeals
-1. File objection with RS within **30 days**
-2. Appeal to court within **20 days** of RS decision
-
-**Escalate any audit situation to qualified practitioner.**
+### 6.1 Fuel/vehicles — *Default:* 0%. *Question:* "Car or commercial?"
+### 6.2 Entertainment — *Default:* block.
+### 6.3 SaaS entities — *Default:* reverse charge. *Question:* "Check invoice."
+### 6.4 Virtual Zone IT — *Default:* R-GE-4 fires if suspected.
+### 6.5 Owner transfers — *Default:* exclude.
+### 6.6 Foreign incoming — *Default:* zero-rated. *Question:* "Export docs?"
+### 6.7 Large purchases — *Question:* "Capital asset?"
+### 6.8 Mixed-use phone — *Default:* 0%.
+### 6.9 Cash withdrawals — *Default:* exclude.
+### 6.10 Wine industry — *Default:* 18% domestic, 0% export. *Question:* "Confirm excise obligations."
 
 ---
 
-## Contribution Notes
+## Section 7 — Excel working paper template
 
-This skill must be validated by a qualified auditor or tax consultant practicing in Georgia before use in production.
+Per `vat-workflow-base` Section 3 with Georgia-specific box codes.
 
-**A skill may not be published without sign-off from a qualified practitioner in Georgia.**
+---
+
+## Section 8 — Georgian bank statement reading guide
+
+**CSV conventions.** TBC Bank and Bank of Georgia export in CSV with semicolons or commas. DD.MM.YYYY or ISO dates depending on setting.
+
+**Georgian terms.** Khelfasi (salary), protsenti (interest), sesxi (loan), naghdi (cash), shida (internal), sabazhoebi (customs), dazghveva (insurance).
+
+**Internal transfers.** Between client's TBC, BOG, Liberty accounts. Exclude.
+
+**Foreign currency.** Convert to GEL at National Bank of Georgia rate.
+
+**Wine exports.** Georgia is a major wine exporter. Wine export receipts are zero-rated. Excise is separate.
+
+---
+
+## Section 9 — Onboarding fallback
+
+### 9.1 Entity type — *Fallback:* "Sole trader or company (LLC/JSC)?"
+### 9.2 VAT registration — *Fallback:* "Standard VAT, Small Business, Micro, or Fixed Tax?"
+### 9.3 TIN — *Fallback:* "What is your TIN?"
+### 9.4 Period — *Inference:* statement dates.
+### 9.5 Industry — *Inference:* wine, IT, tourism from counterparties. *Fallback:* "What does the business do?"
+### 9.6 Virtual Zone — *Fallback:* "Are you a Virtual Zone IT company?"
+### 9.7 Credit B/F — *Always ask.*
+### 9.8 Cross-border — *Fallback:* "Customers outside Georgia?"
+
+---
+
+## Section 10 — Reference material
+
+### Sources
+1. Tax Code of Georgia — Articles 156-184
+2. Revenue Service — https://rs.ge
+3. National Bank of Georgia rates — https://www.nbg.gov.ge
+
+### Known gaps
+1. Virtual Zone IT regime not covered in detail. 2. FIZ rules not covered. 3. Wine excise not covered.
+
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
+
+## End of Georgia VAT Skill v2.0
 
 
 ---

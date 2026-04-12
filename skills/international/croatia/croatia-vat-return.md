@@ -1,710 +1,523 @@
 ---
 name: croatia-vat-return
-description: Use this skill whenever asked to prepare, review, or create a Croatian VAT return (PDV form / PDV-S / Obrazac PDV) for any client. Trigger on phrases like "prepare VAT return", "do the PDV", "fill in PDV", "create the return", "Croatian VAT", or any request involving Croatia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Croatian VAT classification rules, box mappings, deductibility rules, reverse charge treatment, fiscalization requirements, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any VAT-related work for Croatia.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Croatian VAT return (Obrazac PDV) for any client. Trigger on phrases like "prepare VAT return", "do the PDV", "fill in PDV", "create the return", "Croatian VAT", or any request involving Croatia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Croatia only and standard PDV registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Croatian VAT work.
+version: 2.0
 ---
 
-# Croatia VAT Return Preparation Skill
+# Croatia VAT Return Skill (Obrazac PDV) v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Croatia |
-| Jurisdiction Code | HR |
-| Primary Legislation | Zakon o porezu na dodanu vrijednost (VAT Act, OG 73/13, as amended through OG 33/23 and subsequent) |
-| Supporting Legislation | Pravilnik o PDV-u (VAT Regulation, OG 79/13 as amended); Zakon o fiskalizaciji (Fiscalization Act, OG 133/12); EU VAT Directive 2006/112/EC |
-| Tax Authority | Porezna uprava (Tax Administration), Ministry of Finance |
-| Filing Portal | https://e-porezna.porezna-uprava.hr (ePorezna) |
-| Contributor | Auto-generated draft -- requires validation |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | 2026-04-10 |
-| Skill Version | 1.0 |
-| Status | validated |
-| Confidence Coverage | Tier 1: box assignment, reverse charge, deductibility blocks, derived calculations. Tier 2: partial exemption pro-rata, sector-specific deductibility, real estate options, fiscalization compliance. Tier 3: complex group structures, non-standard supplies, cross-border triangulation. |
+|---|---|
+| Country | Croatia (Republic of Croatia) |
+| Standard rate | 25% |
+| Reduced rates | 13% (accommodation, restaurant/catering food, newspapers, water, certain pharmaceuticals, cultural/sporting events, funeral services, firewood), 5% (basic foodstuffs, books, medical equipment, menstrual hygiene) |
+| Zero rate | 0% (exports, intra-EU B2B supplies of goods) |
+| Return form | Obrazac PDV (PDV-S for summary) |
+| Filing portal | https://e-porezna.porezna-uprava.hr (ePorezna) |
+| Authority | Porezna uprava (Tax Administration), Ministry of Finance |
+| Currency | EUR (from 1 January 2023) |
+| Filing frequencies | Monthly (default); Quarterly (turnover < EUR 110,000 prior year, no intra-EU acquisitions) |
+| Deadline | Last day of the month following the period (from 2026) |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
+| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
+| Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
+| Validated by | Deep research verification, April 2026 |
+| Validation date | April 2026 |
+
+**Key PDV return rows:**
+
+| Row | Meaning |
+|---|---|
+| I.1 | Supplies outside Croatia (place of supply not HR) |
+| I.2 | Exempt supplies without right of deduction |
+| I.3 | Exempt supplies with right of deduction (exports, intra-EU) |
+| I.4 | Intra-EU supplies of goods |
+| I.5 | Intra-EU supplies of services (B2B) |
+| II.1 | Domestic supplies at 25% — base |
+| II.2 | Output PDV at 25% |
+| II.3 | Domestic supplies at 13% — base |
+| II.4 | Output PDV at 13% |
+| II.5 | Domestic supplies at 5% — base |
+| II.6 | Output PDV at 5% |
+| II.7 | Self-assessed PDV on EU acquisitions — base |
+| II.8 | Self-assessed PDV on EU acquisitions — tax |
+| II.9 | Self-assessed PDV on EU services received — base |
+| II.10 | Self-assessed PDV on EU services received — tax |
+| II.11 | Self-assessed PDV on non-EU services — base |
+| II.12 | Self-assessed PDV on non-EU services — tax |
+| III.1 | Input PDV on domestic purchases |
+| III.2 | Input PDV on EU acquisitions (reverse charge input) |
+| III.3 | Input PDV on EU services (reverse charge input) |
+| III.4 | Input PDV on non-EU services (reverse charge input) |
+| III.5 | Input PDV on imports |
+| IV | Total output PDV |
+| V | Total input PDV |
+| VI | Net PDV payable or refundable (IV minus V) |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 25% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Croatia |
+| Unknown B2B vs B2C status for EU customer | B2C, charge 25% |
+| Unknown business-use proportion | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge from non-EU |
+| Unknown blocked-input status | Blocked |
+| Unknown whether transaction is in scope | In scope |
+
+**Red flag thresholds:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | EUR 3,000 |
+| HIGH tax-delta on a single conservative default | EUR 200 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net PDV position | EUR 5,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified accountant must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified accountant.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Croatian or international bank: Zagrebacka banka (ZABA), PBZ (Privredna banka Zagreb), Erste & Steiermarkische Bank HR, OTP banka, Addiko Bank, RBA (Raiffeisenbank Austria d.d.), Revolut Business, Wise Business, or any other.
 
----
+**Recommended** — sales invoices (especially for intra-EU B2B and exports), purchase invoices for input PDV claims above EUR 200, client's OIB (11-digit Personal Identification Number).
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete invoice register, prior period PDV return, fiscalization records (fiskalizacija), reconciliation of credit brought forward.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement, hard stop. If bank statement only, proceed but record in reviewer brief.
 
-1. **Entity name and OIB (Personal Identification Number)** [T1] -- 11-digit number, used as VAT ID with HR prefix for VIES
-2. **VAT registration status** [T1] -- Registered (obavezni = mandatory / dobrovoljni = voluntary) or exempt (small business under EUR 60,000 threshold)
-3. **Filing frequency** [T1] -- Monthly (default); Quarterly (turnover < EUR 110,000 prior year, no intra-EU acquisitions); from 2026 filing deadline extended to last day of following month
-4. **Industry/sector** [T2] -- impacts deductibility (hospitality, tourism, construction, agriculture)
-5. **Does the business make exempt supplies?** [T2] -- If yes, partial attribution required (pro-rata); reviewer must confirm
-6. **Does the business trade goods for resale?** [T1] -- impacts classification
-7. **Excess credit brought forward** [T1] -- from prior period
-8. **Fiscalization compliance** [T1] -- mandatory for all invoices (domestic)
-9. **Annual turnover** [T1] -- determines registration obligation
+### Croatia-specific refusal catalogue
 
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until confirmed.**
+These apply on top of EU-wide refusals in `eu-vat-directive` Section 13.
 
----
+**R-HR-1 — Small business exemption attempting PDV return.** *Trigger:* client is exempt (turnover < EUR 60,000) and not voluntarily registered. *Message:* "Exempt small businesses do not file PDV returns. Register voluntarily first if you wish to charge and recover PDV."
 
-## Step 1: Transaction Classification Rules
+**R-HR-2 — Partial exemption.** *Trigger:* client makes both taxable and exempt-without-credit supplies, non-de-minimis. *Message:* "Mixed taxable/exempt supplies require pro-rata input PDV apportionment. Use a qualified accountant."
 
-### 1a. Determine Transaction Type [T1]
-- Sale (output PDV / obracunani PDV) or Purchase (input PDV / pretporez)
-- Salaries, social contributions (HZZO, HZMO), income tax, loan repayments, dividends, bank charges = OUT OF SCOPE
-- **Legislation:** VAT Act Art. 4 (taxable transactions), Art. 7 (supply of goods), Art. 8 (supply of services)
+**R-HR-3 — VAT group.** *Trigger:* client is in a PDV group. *Message:* "PDV groups require consolidation. Out of scope."
 
-### 1b. Determine Counterparty Location [T1]
-- Croatia (domestic): supplier/customer country is HR
-- EU: AT, BE, BG, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE
-- Non-EU: everything else (US, UK, AU, CH, etc.)
-- **Note:** UK is Non-EU post-Brexit. Bosnia-Herzegovina, Serbia, Montenegro are Non-EU.
+**R-HR-4 — Special schemes (margin, travel agent).** *Trigger:* second-hand goods, travel packages. *Message:* "Special schemes require transaction-level computation. Out of scope."
 
-### 1c. Determine VAT Rate [T1]
+**R-HR-5 — Real estate option to tax.** *Trigger:* client exercises option to tax immovable property (domestic reverse charge). *Message:* "Immovable property transactions with option to tax require specialist review. Out of scope."
 
-| Rate | Category | Legislation |
-|------|----------|-------------|
-| 25% | Standard rate -- most goods and services | VAT Act Art. 38(1) |
-| 13% | Reduced -- accommodation services (hotels, guesthouses, camping), restaurant and catering services (food and non-alcoholic beverages), newspapers (print), water supply, certain pharmaceuticals, entrance to cultural/sporting events, funeral services, firewood | VAT Act Art. 38(2), Annex II |
-| 5% | Super-reduced -- basic foodstuffs (bread, milk, eggs, cooking oil, baby food), books (printed and electronic), medical equipment/prosthetics, scientific journals, menstrual hygiene products | VAT Act Art. 38(3), Annex I |
-| 0% | Zero-rated -- intra-EU supplies of goods (Art. 41), exports outside EU (Art. 45) | VAT Act Art. 41-46 |
-| Exempt with credit | International transport, supplies related to international trade | VAT Act Art. 42-44 |
-| Exempt without credit | Financial services (Art. 40(1)(a-g)), insurance (Art. 40(1)(h)), healthcare (Art. 39(1)(a)), education (Art. 39(1)(b)), postal services, gambling, residential rental (> 2 years, or permanent housing), transfer of going concern | VAT Act Art. 39-40 |
-
-### 1d. Determine Expense Category [T1]
-- Capital goods: tangible assets used for business, subject to adjustment if change in deductible proportion
-- Immovable property: 10-year adjustment period (VAT Act Art. 65)
-- Movable capital goods (> EUR 6,636): 5-year adjustment period
-- Resale: goods bought to resell
-- Overhead/services: everything else
-- **Legislation:** VAT Act Art. 64-65 (adjustment of deduction for capital goods)
+**R-HR-6 — Fiscalization non-compliance.** *Trigger:* client has not fiscalized domestic invoices as required. *Message:* "All domestic invoices must be fiscalized (fiskalizacija). Ensure compliance before filing the PDV return."
 
 ---
 
-## Step 2: VAT Return Form Structure (Obrazac PDV / PDV-S) [T1]
+## Section 3 — Supplier pattern library (the lookup table)
 
-**Legislation:** VAT Act Art. 85-86; VAT Regulation Art. 174-175.
+Match by case-insensitive substring. Most specific match wins. No match = fall through to Section 5.
 
-### Section I -- Transactions Not Subject to VAT and Exempt Transactions
+### 3.1 Croatian banks (fees exempt — exclude)
 
-| Row | Description | Notes |
-|-----|-------------|-------|
-| I.1 | Supplies of goods and services outside Croatia (place of supply not HR) | Intermediary services, B2B services to EU |
-| I.2 | Supplies exempt without right of deduction | Financial, insurance, healthcare, education |
-| I.3 | Supplies exempt with right of deduction | Intra-EU supplies, exports, international transport |
-| I.4 | Intra-Community supply of goods | EU B2B with valid VIES number |
-| I.5 | Exports of goods outside EU | With customs documentation |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ZAGREBACKA BANKA, ZABA | EXCLUDE for bank charges/fees | Financial service, exempt |
+| PBZ, PRIVREDNA BANKA ZAGREB | EXCLUDE for bank charges/fees | Same |
+| ERSTE BANK HR, ERSTE & STEIERMARKISCHE | EXCLUDE for bank charges/fees | Same |
+| OTP BANKA HR | EXCLUDE for bank charges/fees | Same |
+| ADDIKO BANK | EXCLUDE for bank charges/fees | Same |
+| RBA, RAIFFEISENBANK | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for taxable subscription invoices |
+| KAMATA, INTEREST | EXCLUDE | Interest, out of scope |
+| KREDIT, LOAN, ZAJAM | EXCLUDE | Loan principal, out of scope |
 
-### Section II -- Taxable Transactions (Output PDV)
+### 3.2 Croatian government and statutory bodies (exclude)
 
-| Row | Description | Rate | Tax Column |
-|-----|-------------|------|------------|
-| II.1 | Domestic supplies at 5% -- taxable base | 5% | PDV at 5% |
-| II.2 | Domestic supplies at 13% -- taxable base | 13% | PDV at 13% |
-| II.3 | Domestic supplies at 25% -- taxable base | 25% | PDV at 25% |
-| II.4 | Intra-Community acquisitions of goods -- taxable base | Self-assessed | PDV at applicable rate |
-| II.5 | Services received from EU (reverse charge) -- taxable base | Self-assessed | PDV at applicable rate |
-| II.6 | Services received from non-EU (reverse charge) -- taxable base | Self-assessed | PDV at applicable rate |
-| II.7 | Domestic reverse charge supplies received -- taxable base | Self-assessed | PDV at applicable rate |
-| II.8 | Import of goods -- taxable base | Customs | PDV at applicable rate |
-| II.9 | Self-supply / deemed supply | Applicable | At applicable rate |
-| II.10 | Total output PDV | -- | Sum of all output PDV |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| POREZNA UPRAVA, TAX ADMINISTRATION | EXCLUDE | Tax payment |
+| HZZO, CROATIAN HEALTH INSURANCE | EXCLUDE | Social security |
+| HZMO, PENSION FUND | EXCLUDE | Pension contribution |
+| HGK, CROATIAN CHAMBER OF COMMERCE | EXCLUDE | Membership (check if PDV applies) |
+| FINA | EXCLUDE | Government agency fees |
+| SUDSKI REGISTAR, COURT REGISTER | EXCLUDE | Registration fees |
 
-### Section III -- Input VAT (Pretporez -- Deductible)
+### 3.3 Croatian utilities
 
-| Row | Description | Notes |
-|-----|-------------|-------|
-| III.1 | Input PDV on domestic purchases at 5% | Domestic reduced |
-| III.2 | Input PDV on domestic purchases at 13% | Domestic intermediate |
-| III.3 | Input PDV on domestic purchases at 25% | Domestic standard |
-| III.4 | Input PDV on intra-Community acquisitions | Mirrors II.4 output |
-| III.5 | Input PDV on services received from EU | Mirrors II.5 output |
-| III.6 | Input PDV on services received from non-EU | Mirrors II.6 output |
-| III.7 | Input PDV on domestic reverse charge | Mirrors II.7 output |
-| III.8 | Input PDV on imports | From customs declaration |
-| III.9 | Adjustments to input PDV | Corrections, pro-rata adjustments |
-| III.10 | Total input PDV (deductible) | Sum |
+| Pattern | Treatment | Row | Notes |
+|---|---|---|---|
+| HEP, HRVATSKA ELEKTROPRIVREDA | Domestic 25% | III.1 | Electricity |
+| VODOVOD, VODOOPSKRBA | Domestic 13% | III.1 | Water supply at 13% |
+| HRVATSKI TELEKOM, HT, T-COM | Domestic 25% | III.1 | Telecoms |
+| A1 HRVATSKA, A1 HR | Domestic 25% | III.1 | Telecoms |
+| TELEMACH | Domestic 25% | III.1 | Telecoms/broadband |
 
-### Section IV -- VAT Liability
+### 3.4 Insurance (exempt — exclude)
 
-| Row | Description | Notes |
-|-----|-------------|-------|
-| IV.1 | PDV liability (II.10 minus III.10) -- if positive | TO PAY |
-| IV.2 | PDV excess credit -- if negative | TO REFUND or carry forward |
-| IV.3 | Deductible proportion (%) | For partial exemption |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CROATIA OSIGURANJE | EXCLUDE | Insurance, exempt |
+| ALLIANZ HRVATSKA | EXCLUDE | Same |
+| GENERALI OSIGURANJE | EXCLUDE | Same |
+| EUROHERC | EXCLUDE | Same |
+| UNIQA HR | EXCLUDE | Same |
+| OSIGURANJE, INSURANCE, POLICA | EXCLUDE | All exempt |
 
----
+### 3.5 Post and logistics
 
-## Step 3: Transaction Classification Matrix [T1]
+| Pattern | Treatment | Row | Notes |
+|---|---|---|---|
+| HRVATSKA POSTA, HP | EXCLUDE for standard post | | Universal service, exempt |
+| HRVATSKA POSTA (parcel/courier) | Domestic 25% | III.1 | Non-universal services |
+| OVERSEAS EXPRESS | Domestic 25% | III.1 | Courier |
+| DPD HR | Domestic 25% | III.1 | Courier |
+| DHL INTERNATIONAL | EU reverse charge (IE/DE entity) | III.3 | Check invoice |
 
-### Purchases -- Domestic (Croatian Supplier)
+### 3.6 Transport
 
-| VAT Rate | Category | Input Row | Notes |
-|----------|----------|-----------|-------|
-| 25% | Overhead/services | III.3 | Standard domestic |
-| 13% | Overhead/services | III.2 | Accommodation, restaurant, water |
-| 5% | Overhead/services | III.1 | Food, books, medical equipment |
-| 0% | Any | -- | No PDV to claim |
-| Any | Capital goods | III.3/III.2/III.1 | Track separately for 5/10-year adjustment |
-| Any | Vehicle (mixed use 50%) | III.3 at 50% | Art. 61(2) restriction |
-| Any | Representation (50%) | III.3/III.2 at 50% | Art. 61(2) restriction |
-| Any | Blocked category (0%) | -- | No deduction |
+| Pattern | Treatment | Row | Notes |
+|---|---|---|---|
+| HZ PUTNICKI PRIJEVOZ, CROATIAN RAILWAYS | Domestic 25% or 13% | III.1 | Domestic rail |
+| ZET, ZAGREB TRAM | EXCLUDE / 13% | | Public transport |
+| UBER, BOLT (platform fee) | EU reverse charge (IE entity) | III.3 | Platform fee; underlying ride domestic |
+| CROATIA AIRLINES (international) | EXCLUDE / 0% | | International flight |
 
-### Purchases -- EU Supplier (Reverse Charge)
+### 3.7 Food retail (blocked unless hospitality)
 
-| Type | Output Row | Input Row | Notes |
-|------|-----------|-----------|-------|
-| Physical goods | II.4 | III.4 | Intra-EU acquisition |
-| Services (B2B) | II.5 | III.5 | EU service RC |
-| Out-of-scope (wages etc.) | -- | -- | NEVER reverse charge |
-| Local consumption (hotel, restaurant abroad) | -- | -- | Foreign VAT at source |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| KONZUM, KAUFLAND, LIDL HR, SPAR HR, PLODINE | Default BLOCK input PDV | Personal provisioning |
+| RESTAURANT, RESTORAN, KAFIC | Default BLOCK | Entertainment |
 
-### Purchases -- Non-EU Supplier
+### 3.8 SaaS — EU suppliers (reverse charge, Row II.9/II.10 + III.3)
 
-| Type | Output Row | Input Row | Notes |
-|------|-----------|-----------|-------|
-| Services (B2B) | II.6 | III.6 | Non-EU service import |
-| Physical goods (customs) | II.8 | III.8 | Import via customs |
-| Out-of-scope | -- | -- | NEVER reverse charge |
+| Pattern | Billing entity | Row | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | II.9/II.10 + III.3 | Reverse charge services |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | II.9/II.10 + III.3 | Reverse charge |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | II.9/II.10 + III.3 | Reverse charge |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | II.9/II.10 + III.3 | Reverse charge |
+| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | II.9/II.10 + III.3 | Reverse charge |
+| SPOTIFY | Spotify AB (SE) | II.9/II.10 + III.3 | EU reverse charge |
+| DROPBOX | Dropbox International Unlimited (IE) | II.9/II.10 + III.3 | Reverse charge |
+| SLACK | Slack Technologies Ireland Ltd (IE) | II.9/II.10 + III.3 | Reverse charge |
+| ATLASSIAN | Atlassian Network Services BV (NL) | II.9/II.10 + III.3 | EU reverse charge |
+| ZOOM | Zoom Video Communications Ireland Ltd (IE) | II.9/II.10 + III.3 | Reverse charge |
+| STRIPE (subscription) | Stripe Technology Europe Ltd (IE) | II.9/II.10 + III.3 | Transaction fees exempt |
 
-### Sales -- Domestic
+### 3.9 SaaS — non-EU suppliers (reverse charge, Row II.11/II.12 + III.4)
 
-| Rate | Row | Notes |
-|------|-----|-------|
-| 25% | II.3 | Standard-rated supply |
-| 13% | II.2 | Accommodation, restaurant, water |
-| 5% | II.1 | Food, books, medical |
-| Exempt with credit | I.3 | International transport |
-| Exempt without credit | I.2 | Financial, insurance, healthcare |
+| Pattern | Billing entity | Row | Notes |
+|---|---|---|---|
+| AWS EMEA SARL | AWS EMEA SARL (LU) | II.9/II.10 + III.3 | LU = EU reverse charge |
+| NOTION | Notion Labs Inc (US) | II.11/II.12 + III.4 | Non-EU reverse charge |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | II.11/II.12 + III.4 | Non-EU reverse charge |
+| OPENAI, CHATGPT | OpenAI Inc (US) | II.11/II.12 + III.4 | Non-EU reverse charge |
+| GITHUB | GitHub Inc (US) | II.11/II.12 + III.4 | Check if billed by IE |
+| FIGMA | Figma Inc (US) | II.11/II.12 + III.4 | Non-EU reverse charge |
+| CANVA | Canva Pty Ltd (AU) | II.11/II.12 + III.4 | Non-EU reverse charge |
 
-### Sales -- EU / Non-EU
+### 3.10 Payment processors
 
-| Location | Type | Row | Notes |
-|----------|------|-----|-------|
-| EU B2B goods | Intra-EU supply | I.4 | Zero-rated, report on EC Sales List |
-| EU B2B services | Place of supply in customer MS | I.1 | B2B services to EU |
-| Non-EU | Export | I.5 | Zero-rated, customs docs |
-| Domestic RC supply made | Seller side | Row 25 equivalent | No PDV charged by seller |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Financial service |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
 
----
+### 3.11 Professional services (Croatia)
 
-## Step 4: Reverse Charge Mechanics [T1]
+| Pattern | Treatment | Row | Notes |
+|---|---|---|---|
+| JAVNI BILJEZNIK, NOTAR | Domestic 25% | III.1 | Notary |
+| RACUNOVODSTVO, ACCOUNTANT | Domestic 25% | III.1 | Accounting |
+| ODVJETNIK, LAWYER | Domestic 25% | III.1 | Legal |
 
-**Legislation:** VAT Act Art. 75-79 (reverse charge); Art. 17 (place of supply for services).
+### 3.12 Payroll and social security (exclude)
 
-### Intra-EU Acquisitions of Goods (Art. 9)
-1. Report net amount in II.4 (taxable base)
-2. Self-assess output PDV at applicable Croatian rate (25%, 13%, or 5%)
-3. Claim input PDV in III.4
-4. Net effect: zero for fully taxable businesses
-5. Report on ZP (Zbirna prijava -- EC Sales List)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HZZO, HZMO | EXCLUDE | Social contributions |
+| PLACA, SALARY, WAGES | EXCLUDE | Wages |
+| POREZ NA DOHODAK | EXCLUDE | Income tax |
 
-### EU Services Received -- B2B (Art. 17(1))
-1. Report in II.5 (taxable base)
-2. Self-assess output PDV at applicable rate
-3. Claim in III.5
-4. Net effect: zero
+### 3.13 Property and rent
 
-### Non-EU Services Received
-1. Report in II.6 (taxable base)
-2. Self-assess output PDV at applicable rate
-3. Claim in III.6
-4. Net effect: zero
+| Pattern | Treatment | Notes |
+|---|---|---|
+| NAJAM, RENT (commercial with PDV) | Domestic 25% | Commercial lease |
+| NAJAM, RENT (residential) | EXCLUDE | Residential exempt |
 
-### Domestic Reverse Charge [T1]
-**Legislation:** VAT Act Art. 75(3).
+### 3.14 Internal transfers and exclusions
 
-| Supply Type | Legislation | Notes |
-|-------------|-------------|-------|
-| Construction services (building, renovation, maintenance) | Art. 75(3)(a) | All construction, both parties must be PDV registered |
-| Supply of waste and scrap materials | Art. 75(3)(b) | Metals, paper, glass, plastic |
-| Supply of immovable property where seller opts to tax | Art. 75(3)(c) | Option to tax after exempt period |
-| CO2 emission allowances | Art. 75(3)(d) | Greenhouse gas permits |
-| Supply of gold material | Art. 75(3)(e) | Raw gold, semi-finished |
-
-Domestic reverse charge procedure:
-1. Report in II.7 (taxable base)
-2. Self-assess output PDV at applicable rate
-3. Claim in III.7
-4. Net effect: zero
-
-### Exceptions to Reverse Charge [T1]
-- Out-of-scope categories (wages, bank charges, dividends): NEVER reverse charge
-- Local consumption abroad (hotel, restaurant, taxi, conference): NOT reverse charge; foreign VAT at source
-- EU supplier charged their local VAT > 0%: NOT reverse charge; foreign VAT is part of expense
-- Construction services where one party is not PDV-registered: normal VAT applies
+| Pattern | Treatment | Notes |
+|---|---|---|
+| INTERNI PRIJENOS, OWN TRANSFER | EXCLUDE | Internal movement |
+| DIVIDENDA, DIVIDEND | EXCLUDE | Out of scope |
+| OTPLATA KREDITA, LOAN REPAYMENT | EXCLUDE | Loan principal |
+| BANKOMAT, ATM, CASH WITHDRAWAL | Ask | Default exclude |
 
 ---
 
-## Step 5: Deductibility Check
+## Section 4 — Worked examples
 
-### Blocked / Restricted Categories [T1]
-**Legislation:** VAT Act Art. 61 (restrictions on input tax deduction).
+### Example 1 — Non-EU SaaS reverse charge (Notion)
 
-| Category | VAT Recovery | Legislation | Notes |
-|----------|-------------|-------------|-------|
-| Passenger vehicles (mixed business/private) | 50% | Art. 61(2)(a) | Unless exclusively business or benefit-in-kind calculated |
-| Passenger vehicles (no BIK calculated) | 0% | Art. 61(2)(a) | If no BIK, no deduction |
-| Passenger vehicles (exclusively business) | 100% | Art. 61(2)(a) exception | Taxi, rental, driving school, delivery (must prove) |
-| Fuel for 50%-restricted vehicles | 50% | Art. 61(2)(a) | Follows vehicle rule |
-| Maintenance/repairs for restricted vehicles | 50% | Art. 61(2)(a) | Follows vehicle rule |
-| Representation/entertainment expenses | 50% | Art. 61(2)(b) | Client hospitality, gifts, events |
-| Yachts and pleasure craft | 0% | Art. 61(1)(b) | Unless rental/charter business |
-| Aircraft | 0% | Art. 61(1)(c) | Unless transport business |
-| Personal use items | 0% | Art. 61(1)(a) | No deduction |
-| Supplies for exempt-without-credit activities | 0% | Art. 58(1) | Financial, insurance, education inputs |
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
 
-### Vehicle Rules [T1]
-**Legislation:** VAT Act Art. 61(2)(a).
+**Reasoning:**
+US entity. Reverse charge under VAT Act Art. 17(1). Self-assess output PDV at 25% in Row II.11/II.12, input PDV in Row III.4. Net zero.
 
-| Scenario | PDV Deduction | Evidence Required |
-|----------|--------------|-------------------|
-| Passenger car, mixed use, BIK calculated | 50% | BIK in salary records |
-| Passenger car, mixed use, no BIK | 0% | No deduction at all |
-| Passenger car, exclusively business | 100% | Trip sheets, GPS, contracts [T2] |
-| Taxi / car rental / driving school vehicle | 100% | Qualifying business activity |
-| Delivery / courier vehicle | 100% | Must be core business activity |
-| Van / truck (N1+ category) | 100% | If for business purposes |
-| Fuel for 50% vehicle | 50% | Follows vehicle classification |
-| Fuel for 100% vehicle | 100% | Follows vehicle classification |
+**Output:**
 
-### Registration-Based Recovery [T1]
+| Date | Counterparty | Gross | Net | PDV | Rate | Row (input) | Row (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.67 | 25% | III.4 | II.11/II.12 | N | — | — |
 
-| Registration Type | Input VAT Recovery | Legislation |
-|-------------------|-------------------|-------------|
-| Registered (mandatory/voluntary) | Recovery subject to rules above | Art. 57-65 |
-| Small business (under EUR 60,000) | NO recovery | Art. 90(1) |
-| Non-established without HR registration | Must register or use refund procedure | Art. 73 |
+### Example 2 — EU service reverse charge (Google Ads)
 
-### Partial Exemption [T2]
-**Legislation:** VAT Act Art. 62.
+**Input line:**
+`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads ; -850.00 ; EUR`
 
-If business makes both taxable and exempt supplies:
+**Reasoning:**
+IE entity. EU reverse charge. Output in Row II.9/II.10, input in Row III.3.
 
-`Recovery % = (Taxable Supplies / Total Supplies) * 100`
+**Output:**
 
-| Rule | Detail | Legislation |
-|------|--------|-------------|
-| Rounding | Round to nearest whole percent | Art. 62(3) |
-| Provisional | Use prior year proportion during current year | Art. 62(4) |
-| Annual adjustment | True-up at year-end on annual return | Art. 62(5) |
-| Excluded | Incidental financial/property transactions | Art. 62(2) |
+| Date | Counterparty | Gross | Net | PDV | Rate | Row (input) | Row (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 212.50 | 25% | III.3 | II.9/II.10 | N | — | — |
 
-**Flag for reviewer: pro-rata calculation must be confirmed by qualified accountant before applying. Annual adjustment required.**
+### Example 3 — Entertainment, blocked
 
----
+**Input line:**
+`15.04.2026 ; RESTORAN DUBRAVKIN PUT ; DEBIT ; Business dinner ; -220.00 ; EUR`
 
-## Step 6: Fiscalization (e-Invoicing / Fiskalizacija) [T1]
+**Reasoning:**
+Restaurant. Entertainment/representation in Croatia: input PDV is NOT deductible for entertainment (VAT Act Art. 61). Block.
 
-**Legislation:** Zakon o fiskalizaciji u prometu gotovinom (Fiscalization Act, OG 133/12, as amended).
+**Output:**
 
-| Feature | Detail |
-|---------|--------|
-| Scope | All invoices (B2B and B2C) must be fiscalized through Tax Administration system |
-| B2B e-invoicing | Mandatory from 1 January 2026 (structured electronic invoicing) |
-| Real-time reporting | Cash register receipts must be reported in real time via internet connection |
-| Unique Invoice Number (JIR) | Assigned by Tax Administration for each invoice |
-| QR code | Required on all receipts from 2023 |
-| Penalty for non-fiscalization | EUR 266 - EUR 66,361 |
+| Date | Counterparty | Gross | Net | PDV | Rate | Row | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTORAN DUBRAVKIN PUT | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked" |
 
----
+### Example 4 — Capital goods
 
-## Step 7: Key Thresholds
+**Input line:**
+`18.04.2026 ; LINKS D.O.O. ; DEBIT ; Laptop Dell ; -1,595.00 ; EUR`
 
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Small business exemption | EUR 60,000 annual turnover (from 2025) | VAT Act Art. 90(1) |
-| EU SME scheme (from 2025) | EUR 85,000 domestic + EUR 100,000 EU-wide | EU Directive 2020/285 |
-| EU distance selling threshold | EUR 10,000/calendar year | EU Directive 2017/2455 |
-| Intrastat arrivals | EUR 400,000 | CBS regulation |
-| Intrastat dispatches | EUR 250,000 | CBS regulation |
-| Capital goods -- movable | 5-year adjustment | VAT Act Art. 64 |
-| Capital goods -- immovable | 10-year adjustment | VAT Act Art. 65 |
-| Filing frequency | Monthly (default); quarterly if turnover < EUR 110,000 and no intra-EU acquisitions | VAT Act Art. 85 |
-| Fiscalization (B2B e-invoicing) | Mandatory from 1 January 2026 | Fiscalization Act |
+**Reasoning:**
+Movable capital goods above the threshold (EUR 6,636 for 5-year adjustment). This laptop at EUR 1,595 is below the adjustment threshold — treat as overhead. Input PDV deductible at 25%.
 
----
+**Output:**
 
-## Step 8: VAT Registration [T1]
+| Date | Counterparty | Gross | Net | PDV | Rate | Row | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | LINKS D.O.O. | -1,595.00 | -1,276.00 | -319.00 | 25% | III.1 | N | — | — |
 
-| Feature | Detail | Legislation |
-|---------|--------|-------------|
-| VAT number format | HR + OIB (11 digits) | VAT Act Art. 77 |
-| Mandatory registration | Turnover > EUR 60,000 in calendar year | VAT Act Art. 76 |
-| Registration deadline | Before exceeding threshold | VAT Act Art. 76(1) |
-| Voluntary registration | May register at any time | VAT Act Art. 77(2) |
-| Group registration | Not available in Croatia | -- |
-| Deregistration | If turnover stays below threshold | VAT Act Art. 78 |
-| Fiscal representative | Required for non-EU businesses | VAT Act Art. 79 |
-| Croatia joined EU | 1 July 2013 | Treaty of Accession |
-| Croatia adopted EUR | 1 January 2023 | Council Decision 2022/1211 |
+### Example 5 — EU B2B service sale
+
+**Input line:**
+`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; IT consultancy ; +3,500.00 ; EUR`
+
+**Reasoning:**
+B2B service to Germany. Place of supply = Germany. Report in Row I.5 at 0%. Verify customer's USt-IdNr.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | PDV | Rate | Row | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | I.5 | Y | Q2 (HIGH) | "Verify German USt-IdNr" |
+
+### Example 6 — Motor vehicle, restricted
+
+**Input line:**
+`28.04.2026 ; INA D.D. ; DEBIT ; Fuel ; -80.00 ; EUR`
+
+**Reasoning:**
+Fuel for passenger vehicle. In Croatia, input PDV on passenger vehicles and related costs (fuel, maintenance) is deductible only for vehicles used exclusively for business (taxi, driving school, rental, delivery). Default: 0% recovery.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | PDV | Rate | Row | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | INA D.D. | -80.00 | -80.00 | 0 | — | — | Y | Q3 | "Vehicle: confirm exclusive business use" |
 
 ---
 
-## Step 9: Filing Deadlines and Penalties
+## Section 5 — Tier 1 classification rules (compressed)
 
-### Filing Deadlines [T1]
+### 5.1 Standard rate 25% (VAT Act Art. 38(1))
+Default rate. Sales: Row II.1/II.2. Purchases: Row III.1.
 
-| Filing | Period | Deadline | Legislation |
-|--------|--------|----------|-------------|
-| PDV return (until end 2025) | Monthly | 20th of month following tax period | VAT Act Art. 85(5) |
-| PDV return (from 2026) | Monthly | Last day of month following tax period | VAT Act Art. 85(5) (amended) |
-| EC Sales List (ZP) | Monthly | Same as VAT return deadline | VAT Act Art. 85(6) |
-| Annual PDV return | Annual | 28 February of following year | VAT Act Art. 85(7) |
-| Intrastat | Monthly | 15th of following month | CBS regulation |
-| PDV payment | Same as return | Same as filing deadline | General Tax Act Art. 61 |
+### 5.2 Reduced rate 13% (VAT Act Art. 38(2))
+Accommodation, restaurant/catering (food and non-alcoholic beverages), newspapers, water supply, certain pharmaceuticals, cultural/sporting events, funeral services, firewood.
 
-### Penalties [T1]
+### 5.3 Super-reduced rate 5% (VAT Act Art. 38(3))
+Basic foodstuffs (bread, milk, eggs, cooking oil, baby food), books (printed/electronic), medical equipment, menstrual hygiene products.
 
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing of PDV return | EUR 260 - EUR 6,600 (first offense); EUR 660 - EUR 13,300 (repeat) | General Tax Act Art. 208(1) |
-| Late payment of PDV | Interest at 5.89% p.a. (reference rate + 5%) | General Tax Act Art. 115 |
-| Tax shortfall (additional assessment) | Up to 20% of additional tax | General Tax Act Art. 210 |
-| Failure to register for PDV | EUR 2,600 - EUR 66,000 + back-assessment | General Tax Act Art. 208 |
-| Fiscalization non-compliance | EUR 266 - EUR 66,361 | Fiscalization Act Art. 34 |
-| EC Sales List late/missing | EUR 260 - EUR 13,300 | General Tax Act Art. 208 |
-| Failure to issue invoice | EUR 660 - EUR 33,180 per invoice | General Tax Act Art. 209 |
+### 5.4 Zero rate and exempt with credit
+Exports: Row I.3. Intra-EU B2B goods: Row I.4. Intra-EU B2B services: Row I.5. International transport: Row I.3.
 
----
+### 5.5 Exempt without credit
+Financial services, insurance, healthcare, education, postal universal service, residential rental (>2 years), gambling, transfer of going concern.
 
-## Step 10: Derived Box Calculations [T1]
+### 5.6 Reverse charge — EU services received (VAT Act Art. 17(1))
+Output PDV self-assessed at 25% in Row II.9/II.10, input PDV in Row III.3.
 
-```
-II.10 = PDV on II.1 + PDV on II.2 + PDV on II.3 + PDV on II.4 + PDV on II.5 + PDV on II.6 + PDV on II.7 + PDV on II.8 + PDV on II.9
-III.10 = III.1 + III.2 + III.3 + III.4 + III.5 + III.6 + III.7 + III.8 + III.9
+### 5.7 Reverse charge — EU goods received
+Output in Row II.7/II.8, input in Row III.2.
 
-IF II.10 > III.10 THEN
-  IV.1 = II.10 - III.10  -- Tax Payable
-  IV.2 = 0
-ELSE
-  IV.1 = 0
-  IV.2 = III.10 - II.10  -- Excess Credit (refund or carry forward)
-END
-```
+### 5.8 Reverse charge — non-EU services received
+Output in Row II.11/II.12, input in Row III.4.
 
----
+### 5.9 Imports
+Import PDV on customs declaration. Input in Row III.5.
 
-## Step 11: Edge Case Registry
+### 5.10 Capital goods (VAT Act Art. 64-65)
+Immovable property: 10-year adjustment. Movable capital goods (> EUR 6,636): 5-year adjustment.
 
-### EC1 -- EU hotel / restaurant / taxi booked abroad [T1]
-**Situation:** Croatian PDV-registered client pays for a hotel in Germany via credit card. Invoice shows German 7% VAT.
-**Resolution:** NOT reverse charge. Foreign VAT was charged and paid at source. No PDV boxes. German VAT is irrecoverable cost.
-**Legislation:** VAT Act Art. 19 -- place of supply for accommodation is where property is located.
+### 5.11 Blocked input PDV (VAT Act Art. 61)
+- Entertainment/representation: fully blocked (no exceptions)
+- Passenger vehicles and related costs (fuel, maintenance): blocked unless exclusively for taxable business (taxi, driving school, rental, delivery)
+- Personal use items: blocked
+- Goods/services for exempt supplies: blocked
 
-### EC2 -- SaaS subscription from non-EU provider (Google, AWS) [T1]
-**Situation:** Monthly charge from a US company, no VAT shown on invoice.
-**Resolution:** Reverse charge. II.6 (net base) / self-assessed output PDV at 25%. III.6 (input PDV at 25%). Net effect zero.
-**Legislation:** VAT Act Art. 17(1) -- place of supply for B2B services is customer's establishment.
-
-### EC3 -- Construction services (domestic reverse charge) [T1]
-**Situation:** Croatian construction company provides building services to another Croatian PDV-registered business. EUR 50,000.
-**Resolution:** Domestic reverse charge applies. Supplier invoices without PDV. Recipient: II.7 (base EUR 50K) / self-assessed output PDV EUR 12,500 at 25%. III.7 = EUR 12,500. Net zero.
-**Legislation:** VAT Act Art. 75(3)(a).
-
-### EC4 -- Passenger vehicle purchase, mixed use (50%) [T1]
-**Situation:** Client purchases a car used for business and private. BIK is calculated for employee.
-**Resolution:** Input PDV deductible at 50% only (Art. 61(2)(a)).
-**Legislation:** VAT Act Art. 61(2)(a).
-
-### EC5 -- Passenger vehicle, no BIK calculated (0%) [T1]
-**Situation:** Company car used partly private, but no benefit-in-kind is reported on payroll.
-**Resolution:** Input PDV is NOT deductible at all (0%). Must calculate BIK to claim 50%.
-**Legislation:** VAT Act Art. 61(2)(a) -- no BIK means no deduction.
-
-### EC6 -- Representation dinner with clients (50%) [T1]
-**Situation:** Client takes business partners to dinner. EUR 500 gross, PDV EUR 100 (25%).
-**Resolution:** Input PDV deductible at 50% only. III.3 += EUR 50. Other EUR 50 is non-deductible.
-**Legislation:** VAT Act Art. 61(2)(b).
-
-### EC7 -- Export sale outside EU [T1]
-**Situation:** Client sells goods to a US customer. EUR 10,000.
-**Resolution:** Zero-rated supply. Report in I.5 (exports). No output PDV. Input PDV on related costs is fully recoverable.
-**Legislation:** VAT Act Art. 45.
-
-### EC8 -- Credit notes [T1]
-**Situation:** Client receives a credit note from a supplier.
-**Resolution:** Reverse the original entry. Reduce the applicable input PDV row. Net figures reported.
-**Legislation:** VAT Act Art. 33(7) (correction of tax base).
-
-### EC9 -- Intra-Community acquisition of goods [T1]
-**Situation:** Client purchases goods from Italian supplier at 0% with valid VIES numbers.
-**Resolution:** Reverse charge. II.4 (base + self-assessed output PDV at 25%). III.4 (input PDV at 25%). Net zero. Report on EC Sales List (ZP).
-**Legislation:** VAT Act Art. 9.
-
-### EC10 -- Fiscalization non-compliance (from 2026) [T2]
-**Situation:** B2B domestic invoice not issued as structured e-invoice from 1 January 2026.
-**Resolution:** Flag for reviewer: ensure client's invoicing system is compliant with new fiscalization requirements. Penalties: EUR 266 - EUR 66,361. Non-compliant invoices may face deduction issues.
-**Legislation:** Fiscalization Act Art. 34.
-
-### EC11 -- Yacht purchase (blocked) [T1]
-**Situation:** Company buys a pleasure yacht for EUR 200,000 + PDV EUR 50,000.
-**Resolution:** Input PDV BLOCKED (Art. 61(1)(b)). Full EUR 250,000 is cost. Exception only for charter/rental as business activity.
-**Legislation:** VAT Act Art. 61(1)(b).
-
-### EC12 -- Accommodation at 13% (business trip) [T1]
-**Situation:** Business trip, hotel in Croatia. EUR 200 + EUR 26 PDV (13%). Not client entertainment.
-**Resolution:** III.2 += EUR 26. Fully deductible as business overhead.
-**Legislation:** VAT Act Art. 38(2).
-
-### EC13 -- Small business exceeds EUR 60,000 threshold [T1]
-**Situation:** Small business (exempt) turnover exceeds EUR 60,000 during the year.
-**Resolution:** Must register for PDV from the supply that causes the breach. Must charge PDV on all subsequent supplies. Can claim input PDV from registration date.
-**Legislation:** VAT Act Art. 90(2).
-
-### EC14 -- Import of physical goods via customs [T2]
-**Situation:** Client imports goods from China via the port of Rijeka.
-**Resolution:** PDV assessed by customs at the border. Import PDV appears on customs declaration. Report in II.8 (base) and III.8 (input PDV). Flag for reviewer: confirm customs documentation and that amounts match.
-**Legislation:** VAT Act Art. 32-33.
-
-### EC15 -- Mixed invoice from EU supplier (goods + installation) [T1]
-**Situation:** Italian supplier invoice covers both physical goods and installation services.
-**Resolution:** Split by line item. Physical goods go to II.4/III.4 (intra-EU acquisition). Installation services go to II.5/III.5 (EU services). If line items not separated, [T2] flag for reviewer.
-**Legislation:** VAT Act Art. 9 (goods acquisition) and Art. 17 (services).
-
-### EC16 -- Domestic reverse charge (waste/scrap) [T1]
-**Situation:** Croatian company sells scrap metal to another Croatian PDV-registered company. EUR 8,000.
-**Resolution:** Domestic reverse charge. Seller invoices without PDV. Buyer: II.7 = EUR 8,000, output PDV = EUR 2,000 (25%). III.7 = EUR 2,000. Net zero.
-**Legislation:** VAT Act Art. 75(3)(b).
-
-### EC17 -- Sale of immovable property (option to tax) [T2]
-**Situation:** Company sells a building more than 2 years after first occupation. Default: exempt without credit.
-**Resolution:** Seller may opt to tax the supply (Art. 40(1)(j) option) with buyer's agreement, in which case domestic reverse charge applies. Flag for reviewer: confirm if option to tax is exercised and buyer agrees.
-**Legislation:** VAT Act Art. 40(1)(j) and Art. 75(3)(c).
+### 5.12 Fiscalization (Zakon o fiskalizaciji)
+All domestic invoices must be fiscalized. Non-compliance is a separate obligation — does not affect PDV classification but must be flagged.
 
 ---
 
-## Step 12: VAT Rates -- Detailed Supply Classification [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-### 25% Standard Rate (Art. 38(1))
+### 6.1 Fuel and vehicle costs
+*Default:* 0% recovery. *Question:* "Passenger car or commercial? Exclusive business use?"
 
-| Supply Category | Examples |
-|----------------|----------|
-| General goods | Electronics, furniture, clothing, household items, motor vehicles |
-| Professional services | Legal, accounting, consulting, IT, advertising |
-| Telecommunications | Mobile, fixed-line, internet |
-| Alcohol | Beer, wine, spirits |
-| Tobacco | Cigarettes, cigars |
-| Construction materials | Cement, steel, timber |
-| Energy | Electricity, gas, fuel |
+### 6.2 Restaurants and entertainment
+*Default:* block. *Question:* "Entertainment meal? (Note: blocked regardless of purpose in Croatia.)"
 
-### 13% Reduced Rate (Art. 38(2), Annex II)
+### 6.3 Ambiguous SaaS billing entities
+*Default:* non-EU reverse charge. *Question:* "Check invoice for legal entity and billing country."
 
-| Supply Category | Specific Items |
-|----------------|----------------|
-| Accommodation | Hotel rooms, guesthouses, camping, Airbnb (commercial) |
-| Restaurant/catering | Dine-in meals, takeaway food (excluding alcohol) |
-| Newspapers (print) | Daily and weekly newspapers |
-| Water supply | Drinking water distribution |
-| Pharmaceuticals (certain) | Non-prescription medicines on approved list |
-| Cultural events | Theatre, concerts, cinema, museums |
-| Sporting events | Admission to sports matches, facilities |
-| Funeral services | Cremation, burial, undertaker |
-| Firewood | Firewood, wood chips for heating |
+### 6.4 Round-number incoming transfers
+*Default:* exclude as owner injection. *Question:* "Customer payment, own money, or loan?"
 
-### 5% Super-Reduced Rate (Art. 38(3), Annex I)
+### 6.5 Incoming from individuals
+*Default:* domestic B2C at 25%. *Question:* "Sale? B2B or B2C? Country?"
 
-| Supply Category | Specific Items |
-|----------------|----------------|
-| Basic foodstuffs | White and black bread, milk, eggs, cooking oil, butter |
-| Baby food | Infant formula, baby cereals, baby food jars |
-| Books | Printed and electronic books |
-| Scientific journals | Academic and research publications |
-| Medical equipment | Hearing aids, prosthetics, wheelchairs, orthopedic devices |
-| Menstrual products | Tampons, pads, menstrual cups |
+### 6.6 Foreign counterparty incoming
+*Default:* domestic 25%. *Question:* "B2B with VAT number? Country?"
 
----
+### 6.7 Large purchases (capital goods)
+*Default:* if > EUR 6,636 gross, flag for adjustment tracking. *Question:* "Confirm total invoice amount."
 
-## Step 13: Comparison with Malta
+### 6.8 Mixed-use phone/internet/home office
+*Default:* 0%. *Question:* "Dedicated business or mixed-use?"
 
-| Feature | Croatia (HR) | Malta (MT) |
-|---------|-------------|------------|
-| Standard rate | 25% | 18% |
-| Reduced rates | 13%, 5% | 12%, 7%, 5% |
-| Return form | PDV form (~4 sections) | VAT3 (45 boxes) |
-| Filing frequency | Monthly | Quarterly (Art. 10), Annual (Art. 11) |
-| Filing deadline | 20th (until 2025) / last day (from 2026) | 21st of month after quarter |
-| Payment deadline | Same as filing | Same as filing |
-| Small enterprise threshold | EUR 60,000 | EUR 35,000 |
-| Capital goods movable | 5-year adjustment | > EUR 1,160 gross |
-| Capital goods immovable | 10-year adjustment | No specific adjustment period |
-| Blocked: passenger cars | 50% (mixed use with BIK); 0% (no BIK) | Fully blocked (10th Schedule) |
-| Blocked: entertainment | 50% deductible | Fully blocked (10th Schedule) |
-| Blocked: yachts/aircraft | Fully blocked | Blocked (10th Schedule) |
-| Domestic reverse charge | Construction, waste, emissions, gold | No domestic reverse charge |
-| Fiscalization | Mandatory e-invoicing (from 2026 for B2B) | No fiscalization |
-| Partial exemption | Annual adjustment required | No de minimis |
-| Refund mechanism | Carry forward or refund request | Carry forward / refund request |
-| Currency | EUR (adopted 1 January 2023) | EUR |
-| Tax authority | Porezna uprava | CFR |
-| Filing portal | ePorezna | cfr.gov.mt |
+### 6.9 Outgoing to individuals
+*Default:* exclude as drawings. *Question:* "Contractor, wages, or personal?"
+
+### 6.10 Cash withdrawals
+*Default:* exclude. *Question:* "What was the cash used for?"
+
+### 6.11 Rent payments
+*Default:* no PDV (residential). *Question:* "Commercial or residential?"
+
+### 6.12 Water supply rate
+*Default:* 13%. *Question:* "Confirm water supply invoice (13% reduced rate)."
 
 ---
 
-## Step 14: Reviewer Escalation Protocol
+## Section 7 — Excel working paper template (Croatia-specific)
 
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified accountant must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified accountant. Document gap.
-```
+Per `vat-workflow-base` Section 3 base. Column H accepts Croatia PDV row codes. Sheet "Row Summary" maps to Obrazac PDV rows I.1 through VI. Bottom-line: Row VI (net payable/refundable).
 
 ---
 
-## Step 15: Test Suite
+## Section 8 — Croatia bank statement reading guide
 
-### Test 1 -- Standard domestic purchase, 25% PDV [T1]
-**Input:** Croatian supplier, office supplies, gross EUR 250, PDV EUR 50, net EUR 200. Registered taxpayer.
-**Expected output:** III.3 += EUR 50. Fully recoverable.
+**CSV conventions.** ZABA and PBZ use semicolons with DD.MM.YYYY. Revolut uses ISO dates.
 
-### Test 2 -- EU service subscription, reverse charge [T1]
-**Input:** Irish supplier, consulting services EUR 1,000, no VAT on invoice. Registered taxpayer.
-**Expected output:** II.5 = EUR 1,000, output PDV = EUR 250 (25%). III.5 = EUR 250. Net = zero.
+**Croatian language.** najam (rent), placa (salary), kamata (interest), prijenos (transfer), gotovina (cash).
 
-### Test 3 -- Representation expense (50%) [T1]
-**Input:** Croatian restaurant, business dinner EUR 500 gross, PDV EUR 100 (25%), net EUR 400.
-**Expected output:** III.3 += EUR 50 (50% of EUR 100). Only 50% recoverable.
+**Internal transfers.** "Interni prijenos", "vlastiti racun". Exclude.
 
-### Test 4 -- EU B2B sale, zero rated [T1]
-**Input:** Registered taxpayer sells goods to German company EUR 5,000, 0% PDV.
-**Expected output:** I.4 = EUR 5,000. No output PDV. Report on EC Sales List (ZP).
+**Sole trader draws.** Self-employed (obrt) cannot pay themselves wages. Exclude.
 
-### Test 5 -- Small business, purchase [T1]
-**Input:** Small business (under EUR 60,000) purchases supplies EUR 1,000 + PDV EUR 250.
-**Expected output:** No PDV return entry. Small business cannot recover input PDV.
+**HRK legacy.** Croatia adopted EUR on 1 January 2023. Any pre-2023 HRK amounts must be converted at the fixed rate 7.53450 HRK = 1 EUR.
 
-### Test 6 -- Passenger vehicle, mixed use (50%) [T1]
-**Input:** Registered taxpayer purchases car EUR 30,000 + PDV EUR 7,500 (25%). BIK calculated.
-**Expected output:** III.3 += EUR 3,750 (50% of EUR 7,500). Only 50% deductible.
-
-### Test 7 -- Non-EU software (US), reverse charge [T1]
-**Input:** US supplier (AWS), monthly fee EUR 100, no VAT on invoice. Registered taxpayer.
-**Expected output:** II.6 = EUR 100, output PDV = EUR 25 (25%). III.6 = EUR 25. Net = zero.
-
-### Test 8 -- Construction services (domestic RC) [T1]
-**Input:** Croatian subcontractor, construction work EUR 20,000. Both parties PDV registered.
-**Expected output:** Buyer: II.7 = EUR 20,000, output PDV = EUR 5,000 (25%). III.7 = EUR 5,000. Net = zero.
-
-### Test 9 -- Export of goods [T1]
-**Input:** Croatian company exports to US client, EUR 15,000.
-**Expected output:** I.5 = EUR 15,000. No output PDV. Zero-rated.
-
-### Test 10 -- Passenger vehicle, no BIK (0%) [T1]
-**Input:** Company car EUR 20,000 + PDV EUR 5,000. Private use portion exists but no BIK calculated.
-**Expected output:** III.3 += EUR 0. PDV NOT deductible (no BIK = no deduction under Art. 61(2)(a)).
-
-### Test 11 -- Accommodation at 13% (business trip) [T1]
-**Input:** Hotel in Croatia, EUR 150 + EUR 19.50 PDV (13%). Business purpose.
-**Expected output:** III.2 += EUR 19.50. Fully deductible.
-
-### Test 12 -- Yacht purchase (blocked) [T1]
-**Input:** Pleasure yacht EUR 100,000 + PDV EUR 25,000. Not a charter business.
-**Expected output:** III.3 += EUR 0. PDV BLOCKED (Art. 61(1)(b)). Full EUR 125,000 is cost.
+**IBAN prefix.** HR = Croatia. IE, DE, NL = EU. US, GB = non-EU.
 
 ---
 
-## Step 16: Annual PDV Return [T1]
+## Section 9 — Onboarding fallback (only when inference fails)
 
-**Legislation:** VAT Act Art. 85(7); VAT Regulation Art. 175.
+### 9.1 Entity type
+*Inference:* d.o.o. = limited, obrt = sole trader. *Fallback:* "Are you obrt (sole trader) or d.o.o. (company)?"
 
-The annual PDV return is a reconciliation filing submitted by 28 February of the following year. It contains:
+### 9.2 PDV registration
+*Fallback:* "Are you PDV-registered (mandatory or voluntary)?"
 
-| Section | Content |
-|---------|---------|
-| Summary of all periodic returns | Totals for each row across all 12 monthly returns |
-| Turnover by rate | Breakdown of taxable supplies by 25%, 13%, 5% |
-| Total input PDV for the year | Sum of all deductions claimed |
-| Pro-rata adjustment | Final pro-rata calculation (if partial exemption applies) |
-| Capital goods adjustment | Annual review of capital goods deduction proportions |
-| Final settlement | Reconciliation of all periodic payments/credits against annual total |
+### 9.3 OIB
+*Fallback:* "What is your OIB? (11 digits)"
 
-The annual return does NOT replace periodic (monthly) returns. It is an additional filing for reconciliation purposes.
+### 9.4 Filing period
+*Inference:* transaction dates; monthly or quarterly. *Fallback:* "Which period?"
 
----
+### 9.5 Industry
+*Fallback:* "What does the business do?"
 
-## Step 17: Refund Process [T1]
+### 9.6 Employees
+*Fallback:* "Do you have employees?"
 
-| Feature | Detail | Legislation |
-|---------|--------|-------------|
-| Refund request | Automatic if excess credit (IV.2) on return | VAT Act Art. 67 |
-| Refund timeline | Within 30 days of filing deadline | General Tax Act Art. 112 |
-| Audit delay | Tax authority may audit before releasing refund | General Tax Act Art. 113 |
-| Carry forward | Credit can be carried forward to next period | VAT Act Art. 67(2) |
-| Offset | Tax authority may offset credit against other tax liabilities | General Tax Act Art. 110 |
+### 9.7 Exempt supplies
+*Fallback:* "Do you make exempt supplies?" *If yes: R-HR-2 may fire.*
 
----
+### 9.8 Credit brought forward
+*Fallback:* "Excess PDV credit from prior period?"
 
-## Step 18: Out of Scope -- Direct Tax (Reference Only) [T3]
+### 9.9 Cross-border customers
+*Fallback:* "Customers outside Croatia? EU or non-EU? B2B or B2C?"
 
-This skill does not compute income tax. The following is reference information only. Escalate to qualified adviser.
-
-- **Corporate income tax (porez na dobit):** 10% (profit up to EUR 1M) / 18% (profit over EUR 1M)
-- **Personal income tax:** Progressive: 20% up to EUR 50,400 / 30% above EUR 50,400
-- **Dividend tax:** 10% withholding
-- **Social contributions:** employer ~16.5%, employee ~20%
-- **Surtax (prirez):** Local municipality surcharge on income tax (varies by city, up to 18% in Zagreb)
-- **Tourist tax (boravisna pristojba):** Applicable to accommodation providers
-- **Local self-government tax (prirez porezu na dohodak):** Surcharge on income tax, varies by municipality
-
-### Key Croatia-Specific Notes
-- Croatia adopted the euro (EUR) on 1 January 2023, replacing the kuna (HRK)
-- Croatia joined the Schengen area on 1 January 2023
-- Historical amounts in HRK should be converted at the fixed rate: 1 EUR = 7.53450 HRK
-- All VAT amounts from 2023 onward are in EUR
+### 9.10 Fiscalization status
+*Fallback:* "Are your invoices fiscalized?"
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 10 — Reference material
 
-- NEVER let AI guess PDV box -- it is 100% deterministic from facts
-- NEVER apply reverse charge to out-of-scope categories (wages, dividends, bank charges)
-- NEVER apply reverse charge to local consumption services abroad (hotel, restaurant, taxi)
-- NEVER allow small business (exempt) clients to claim input PDV
-- NEVER confuse zero-rated (exports/intra-EU, input PDV deductible) with exempt without credit (financial, input PDV NOT deductible)
-- NEVER apply reverse charge when EU supplier charged local VAT > 0%
-- NEVER apply 100% input deduction on passenger vehicles without confirming exclusive business use
-- NEVER apply any deduction on passenger vehicles if no BIK is calculated (Art. 61(2)(a))
-- NEVER apply 100% input deduction on representation expenses -- always 50%
-- NEVER claim input PDV on yachts/aircraft unless proven business exception
-- NEVER ignore fiscalization requirements for invoices
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
+### Sources
+1. Zakon o porezu na dodanu vrijednost (VAT Act, OG 73/13, as amended)
+2. Pravilnik o PDV-u (VAT Regulation)
+3. Zakon o fiskalizaciji (Fiscalization Act)
+4. EU VAT Directive 2006/112/EC — via eu-vat-directive companion skill
+5. VIES — https://ec.europa.eu/taxation_customs/vies/
 
----
+### Known gaps
+1. Supplier library does not cover every Croatian SME.
+2. Fiscalization technical compliance not detailed.
+3. Construction domestic reverse charge not covered in depth.
 
-## Contribution Notes
+### Change log
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure. Croatian banks (ZABA, PBZ, Erste HR).
+- **v1.0 (April 2026):** Initial skill.
 
-This skill covers Croatia's VAT system based on the Zakon o porezu na dodanu vrijednost (OG 73/13 as amended). Key distinctive features include: the 25%/13%/5% three-tier rate structure, the 50% restriction on passenger vehicles (with BIK requirement) and representation expenses, the mandatory fiscalization of all invoices, the domestic reverse charge for construction and waste, and Croatia's 2023 adoption of the euro. Validation by a qualified Croatian ovlasteni revizor or porezni savjetnik is required before production use.
+### Self-check
+1. Quick reference with row table and conservative defaults: yes.
+2. Supplier library: yes (14 sub-tables).
+3. Worked examples (6): yes.
+4. No inline [T1]/[T2]/[T3] tags: yes.
+5. 10-section structure: yes.
 
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+## End of Croatia VAT Return Skill v2.0
 
+This skill is incomplete without BOTH companion files: `vat-workflow-base` v0.1+ AND `eu-vat-directive` v0.1+.
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).

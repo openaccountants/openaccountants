@@ -1,277 +1,173 @@
 ---
 name: brunei-tax
-description: Use this skill whenever asked about Brunei Darussalam tax obligations, corporate tax, or the absence of VAT/GST. Trigger on phrases like "Brunei tax", "Brunei VAT", "Brunei GST", "corporate tax Brunei", "MOFE filing", or any request involving Brunei taxation. This skill clarifies that Brunei has NO VAT/GST and NO personal income tax, and covers the corporate income tax framework at 18.5%. ALWAYS read this skill before touching any Brunei tax-related work.
+description: Use this skill whenever asked about Brunei Darussalam tax obligations. Trigger on phrases like "Brunei tax", "Brunei VAT", "Brunei GST", "corporate tax Brunei", "MOFE filing". Brunei has NO VAT/GST and NO personal income tax. This skill covers corporate income tax at 18.5% and clarifies the absence of consumption tax. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Brunei tax work.
+version: 2.0
 ---
 
-# Brunei Darussalam Tax Skill
+# Brunei Darussalam Tax Skill v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Brunei Darussalam |
-| Jurisdiction Code | BN |
-| Primary Legislation | Income Tax Act (Chapter 35); Companies Income Tax Act (Chapter 97) |
-| Supporting Legislation | Petroleum Income Tax Act; Stamp Act |
-| Tax Authority | Revenue Division, Ministry of Finance and Economy (MOFE) |
-| Filing Portal | MOFE Revenue Division offices |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Pending local practitioner validation |
-| Validation Date | Pending |
-| Last Verified | 2026-04-10 -- web-research cross-check of rates, thresholds, deadlines |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: corporate tax rate, no VAT/GST, no personal income tax. Tier 2: petroleum tax, withholding tax. Tier 3: oil/gas PSAs, free trade zone operations. |
+|---|---|
+| Country | Brunei Darussalam |
+| VAT/GST | NONE — Brunei does NOT have a VAT, GST, or any consumption tax |
+| Personal income tax | NONE |
+| Corporate income tax | 18.5% on chargeable income |
+| Return form | Corporate income tax return (annual) |
+| Filing portal | MOFE Revenue Division |
+| Authority | Revenue Division, Ministry of Finance and Economy (MOFE) |
+| Currency | BND (Brunei Dollar, pegged 1:1 to SGD) |
+| Filing frequency | Annual (corporate tax only) |
+| Deadline | Within 6 months of financial year-end |
+| Companion skill | vat-workflow-base v0.1 or later — MUST be loaded |
+| Validated by | Pending local practitioner validation |
+
+**CRITICAL: Brunei has NO consumption tax.** There is no VAT return to prepare. This skill exists to prevent misclassification and to provide the corporate tax framework.
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown tax obligation | No consumption tax; corporate tax only if company |
+| Unknown withholding tax | Check if payment to non-resident triggers WHT |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+**Minimum viable** — financial statements for the year. Bank statements from: BIBD (Bank Islam Brunei Darussalam), Baiduri Bank, Standard Chartered Brunei, HSBC Brunei.
 
----
+### Brunei-specific refusal catalogue
 
-## Key Fact: NO VAT/GST in Brunei [T1]
+**R-BN-1 — Petroleum sector.** Trigger: client in oil/gas under Petroleum Income Tax Act. Message: "Petroleum companies are taxed under a separate regime (55% + 20% on profits). Please escalate."
 
-**Brunei Darussalam does NOT impose any VAT, GST, sales tax, or consumption tax.**
-
-There is:
-- NO Value Added Tax (VAT)
-- NO Goods and Services Tax (GST)
-- NO sales tax
-- NO service tax
-- NO personal income tax
-- NO capital gains tax
-- NO payroll tax
-- NO estate/inheritance tax
-
-**This makes Brunei one of the few countries globally with no broad-based consumption tax and no personal income tax.**
+**R-BN-2 — VAT/GST return request.** Trigger: user asks for VAT/GST return preparation. Message: "Brunei does NOT have a VAT/GST or any consumption tax. No consumption tax return exists. If you need corporate income tax assistance, this skill can help."
 
 ---
 
-## Step 1: Corporate Income Tax [T1]
+## Section 3 — Supplier pattern library
 
-**Legislation:** Companies Income Tax Act (Chapter 97).
+### 3.1 Brunei banks
 
-### Rate
-- **Standard corporate tax rate: 18.5%** on chargeable income
-- Applies to all companies (resident and non-resident with Brunei-source income)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BIBD, BANK ISLAM BRUNEI | Bank charges are a deductible expense | No VAT component |
+| BAIDURI, BAIDURI BANK | Same | Same |
+| STANDARD CHARTERED BN, HSBC BN | Same | Same |
+| INTEREST | Interest expense — deductible if for business | No VAT |
 
-### Taxable Income
-- Business profits derived in or from Brunei
-- Rental income from property in Brunei
-- Royalties and licence fees from Brunei sources
-- Interest from Brunei sources
+### 3.2 Government (exclude from expense claims where non-deductible)
 
-### Exempt Income
-- Dividends received from companies already subject to Brunei tax
-- Foreign-source income (generally not taxed if not remitted, subject to conditions)
-- Income of approved enterprises under Pioneer Certificate
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MOFE, REVENUE DIVISION | Tax payment — not deductible | Corporate tax |
+| TAP, EMPLOYEE TRUST FUND | Pension — deductible | Tabung Amanah Pekerja |
 
-### Deductible Expenses [T1]
-- Expenses wholly and exclusively incurred in the production of income
-- Capital allowances on qualifying assets (initial and annual allowances)
-- Bad debts (written off and proven irrecoverable)
-- Interest on business loans
-- Staff costs and contributions
-- Repairs and maintenance
+### 3.3 Utilities
 
-### Non-Deductible Expenses [T1]
-- Private or personal expenses
-- Capital expenditure (except via capital allowances)
-- Entertainment (unless wholly for business promotion)
-- Fines and penalties
-- Donations (unless to approved institutions)
-- Provisions (unless specific and proven)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| DES, DEPT OF ELECTRICAL SERVICES | Deductible expense | No consumption tax |
+| DST, PROGRESIF, IMAGINE | Deductible expense | Telecoms |
 
----
+### 3.4 SaaS and international services
 
-## Step 2: Capital Allowances [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, META, AWS | Deductible expense; check WHT on non-resident services | No consumption tax; WHT may apply |
+| ZOOM, SLACK, CANVA | Same | Same |
 
-**Legislation:** Companies Income Tax Act, Schedule.
+### 3.5 Payroll
 
-| Asset Category | Initial Allowance | Annual Allowance |
-|---------------|-------------------|------------------|
-| Industrial buildings | 10% | 2% |
-| Plant and machinery | 20% | 10% - 20% |
-| Motor vehicles | 20% | 20% |
-| Office equipment / furniture | 20% | 10% |
-| Computer equipment | 20% | 20% - 40% |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES | Deductible expense | No income tax on employees |
+| TAP CONTRIBUTION | Deductible | Mandatory employee savings |
 
 ---
 
-## Step 3: Withholding Tax [T2]
+## Section 4 — Worked examples
 
-**Legislation:** Companies Income Tax Act, Section 35.
+### Example 1 — No consumption tax applies
 
-| Payment Type | WHT Rate |
-|-------------|----------|
-| Royalties to non-residents | 10% |
-| Technical/management fees to non-residents | 10% |
-| Interest to non-residents | 2.5% |
-| Rent of movable property to non-residents | 10% |
+**Input line:** `05.04.2026 ; LOCAL CLIENT ; CREDIT ; Consulting fee ; BND 10,000`
 
-**Flag for reviewer: WHT rates may be reduced under Double Tax Agreements (DTAs). Brunei has DTAs with several countries. Check applicable treaty.**
+**Reasoning:** Brunei has no VAT/GST. This is revenue for corporate tax purposes. No consumption tax to charge or report.
 
----
+| Date | Counterparty | Gross | Net | Tax | Rate | Return field | Notes |
+|---|---|---|---|---|---|---|---|
+| 05.04.2026 | LOCAL CLIENT | +10,000 | +10,000 | 0 | N/A | Revenue | No consumption tax |
 
-## Step 4: Petroleum Income Tax [T3]
+### Example 2 — Purchase from overseas vendor
 
-**Legislation:** Petroleum Income Tax Act.
+**Input line:** `18.04.2026 ; AWS ; DEBIT ; Cloud hosting ; BND -500`
 
-- Petroleum companies operating under Production Sharing Agreements (PSAs) are subject to Petroleum Income Tax
-- Rate: **55%** on petroleum income
-- This is separate from the standard corporate tax
-- Complex ring-fencing and cost recovery rules apply
+**Reasoning:** No VAT/GST to self-assess. Check if withholding tax applies on payment to non-resident (typically 10% on management/technical fees, 15% on royalties).
 
-**Do not classify petroleum income. Escalate to specialist.**
+| Date | Counterparty | Gross | Net | Tax | Rate | Return field | Notes |
+|---|---|---|---|---|---|---|---|
+| 18.04.2026 | AWS | -500 | -500 | 0 | N/A | Expense | Check WHT |
 
 ---
 
-## Step 5: Key Thresholds [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-| Threshold | Value |
-|-----------|-------|
-| Corporate tax rate | 18.5% |
-| Petroleum tax rate | 55% |
-| VAT/GST rate | N/A -- does not exist |
-| Personal income tax rate | N/A -- does not exist |
-| SME incentive (if applicable) | Per specific approval |
-
----
-
-## Step 6: Filing Deadlines [T1]
-
-| Category | Deadline |
-|----------|----------|
-| Corporate tax return | Within 6 months after end of financial year |
-| Estimated tax payment | Per notice of assessment from MOFE |
-| WHT remittance | Within 1 month of payment to non-resident |
-| Financial year | Company chooses; most use calendar year |
+### 5.1 No consumption tax — Brunei has no VAT, GST, sales tax, or service tax.
+### 5.2 Corporate income tax — 18.5% on chargeable income for companies.
+### 5.3 No personal income tax — Individuals not taxed on income.
+### 5.4 Withholding tax — 10% on management/technical fees to non-residents; 15% on royalties; other rates per treaty.
+### 5.5 Stamp duty — Applies to certain documents (property transfers, share transfers).
+### 5.6 Customs duty — Applies on imports (separate from any consumption tax, which does not exist).
 
 ---
 
-## Step 7: Other Taxes and Levies [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-| Tax | Rate / Application |
-|-----|-------------------|
-| Stamp duty | Variable rates on documents (property transfers, shares) |
-| Property tax | Based on annual value of property |
-| Import duties | 0% - 30% depending on goods (no consumption tax) |
-| Excise duties | On tobacco, alcohol, motor vehicles |
+### 6.1 WHT on non-resident payments — Default: flag. Question: "Is this a management/technical fee or royalty to a non-resident?"
+### 6.2 Petroleum operations — Default: refuse (R-BN-1).
+### 6.3 Tax treaty benefits — Default: flag. Question: "Does Brunei have a DTA with the recipient's country?"
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 7 — Excel working paper template
 
-- NEVER state that Brunei has VAT, GST, or any consumption tax -- it does not
-- NEVER state that Brunei has personal income tax -- it does not
-- NEVER apply VAT/GST concepts to Brunei transactions
-- NEVER classify Brunei transactions into VAT boxes or GST categories
-- NEVER confuse corporate income tax (18.5%) with consumption tax
-- NEVER advise on petroleum tax without specialist involvement
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
+Per vat-workflow-base Section 3, adapted for corporate tax: Revenue, Deductible expenses, Non-deductible expenses, Chargeable income, Tax at 18.5%.
 
 ---
 
-## Step 8: Edge Case Registry
+## Section 8 — Bank statement reading guide
 
-### EC1 -- Foreign company with Brunei branch [T2]
-**Situation:** Foreign company operates a branch in Brunei.
-**Resolution:** Branch is subject to corporate tax at 18.5% on Brunei-source income. No VAT obligations. WHT may apply on payments to head office. Flag for reviewer: confirm treaty application.
-
-### EC2 -- Cross-border services to Brunei [T1]
-**Situation:** Brunei company pays for services from Singapore provider.
-**Resolution:** No VAT reverse charge (no VAT exists). WHT at 10% may apply if service is technical/management fee. Deductible for corporate tax if business-related.
-
-### EC3 -- Online business in Brunei [T1]
-**Situation:** E-commerce business operating from Brunei.
-**Resolution:** Subject to corporate tax at 18.5% on profits. No VAT/GST to charge customers. No consumption tax filing required.
-
-### EC4 -- Pioneer status enterprise [T2]
-**Situation:** Company granted Pioneer Certificate.
-**Resolution:** May receive tax holiday (reduced or zero corporate tax) for approved period. Conditions apply. Flag for reviewer: confirm Pioneer Certificate terms.
-
-### EC5 -- Property rental income [T1]
-**Situation:** Company earns rental income from Brunei property.
-**Resolution:** Taxable at 18.5% corporate tax rate. Property tax also applies (separate obligation based on annual value). No VAT on rent.
-
-### EC6 -- Employee remuneration [T1]
-**Situation:** How is employee salary taxed?
-**Resolution:** NO personal income tax in Brunei. Employees receive gross salary with no income tax deduction. Employer obligation: TAP (Tabung Amanah Pekerja / Employee Trust Fund) and SCP (Supplemental Contributory Pension) contributions.
+BIBD and Baiduri exports CSV/PDF. BND primary (pegged to SGD). Malay language descriptions common. Internal transfers: exclude. No VAT extraction needed — all amounts are gross.
 
 ---
 
-## Step 9: Reviewer Escalation Protocol
+## Section 9 — Onboarding fallback
 
-When a [T2] situation is identified:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list possible treatments]
-Recommended: [most likely correct]
-Action Required: Qualified accountant must confirm.
-```
-
-When a [T3] situation is identified:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Refer to qualified accountant. Document gap.
-```
+### 9.1 Entity type — "Company, sole proprietor, or partnership?" (Only companies pay corporate tax.)
+### 9.2 Financial year — "What is your financial year-end?"
+### 9.3 Petroleum sector — "Are you in oil and gas?" (If yes, R-BN-1 fires.)
+### 9.4 Non-resident payments — "Do you pay management fees or royalties to non-residents?"
 
 ---
 
-## Step 10: Test Suite
+## Section 10 — Reference material
 
-### Test 1 -- Corporate tax calculation
-**Input:** Brunei company, chargeable income BND 1,000,000 for the year.
-**Expected output:** Corporate tax at 18.5% = BND 185,000. No VAT/GST obligations.
+### Sources
+1. Income Tax Act (Chapter 35). 2. Companies Income Tax Act (Chapter 97). 3. Petroleum Income Tax Act. 4. MOFE Revenue Division guidelines.
 
-### Test 2 -- No VAT on sales
-**Input:** Brunei company sells goods locally for BND 50,000.
-**Expected output:** No VAT/GST charged. No consumption tax return. Income subject to corporate tax only.
+### Known gaps
+1. Petroleum sector refused. 2. No consumption tax means most of the vat-workflow-base structure is inapplicable.
 
-### Test 3 -- WHT on royalty payment
-**Input:** Brunei company pays BND 100,000 royalty to UK company.
-**Expected output:** WHT at 10% = BND 10,000. Remit within 1 month. Check UK-Brunei DTA for potential reduction.
-
-### Test 4 -- Employee salary
-**Input:** Employee earns BND 5,000/month.
-**Expected output:** No income tax deduction. Employer contributes to TAP/SCP. Employee receives gross amount minus TAP/SCP employee share.
-
-### Test 5 -- Import of goods
-**Input:** Company imports machinery worth BND 200,000.
-**Expected output:** Import duty at applicable rate (0-30%). No VAT/GST at customs. Capital allowance on machinery for corporate tax purposes.
-
-### Test 6 -- Non-deductible expense
-**Input:** Director's personal car expenses BND 20,000.
-**Expected output:** Not deductible for corporate tax. No VAT implication (no VAT exists).
-
----
-
-## Contribution Notes
-
-This skill must be validated by a qualified accountant or tax advisor practicing in Brunei Darussalam before use in production.
-
-**A skill may not be published without sign-off from a qualified practitioner in Brunei.**
-
+### Change log
+- v2.0 (April 2026): Full rewrite to Malta v2.0 ten-section structure. Emphasis on absence of VAT/GST.
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional before filing.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
