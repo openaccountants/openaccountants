@@ -1,1024 +1,766 @@
 ---
 name: spain-vat-return
-description: Use this skill whenever asked to prepare, review, or create a Spanish VAT return (Modelo 303 / IVA autoliquidacion) for any client. Trigger on phrases like "prepare VAT return", "do the Spanish VAT", "fill in Modelo 303", "IVA", "Modelo 390", or any request involving Spanish VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Spanish VAT classification rules, Modelo 303 casilla (box) mappings, Modelo 390 annual summary structure, deductibility rules, reverse charge treatment (inversion del sujeto pasivo), recargo de equivalencia, SII real-time reporting, prorrata de deduccion, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any VAT-related work for Spain.
-status: verified
-version: 2.1-verified
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Spanish VAT return (Modelo 303 / IVA autoliquidacion) for a self-employed individual or small business in peninsular Spain or the Balearic Islands. Trigger on phrases like "prepare VAT return", "do the Spanish VAT", "fill in Modelo 303", "IVA", "Modelo 390", or any request involving Spanish VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers peninsular Spain and Balearic Islands only under the regimen general. Canary Islands (IGIC), Ceuta/Melilla (IPSI), regimen simplificado, recargo de equivalencia, RECC cash-basis, VAT groups, and partial exemption (prorrata) are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Spain VAT work.
+version: 2.0
 ---
 
-# Spain VAT Return Preparation Skill
+# Spain VAT Return Skill (Modelo 303 / IVA) v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Spain (Peninsula + Balearic Islands) |
-| Jurisdiction Code | ES |
-| Primary Legislation | Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Anadido (LIVA) |
-| Regulations | Real Decreto 1624/1992, de 29 de diciembre (RIVA -- Reglamento del IVA) |
-| SII Regulation | Real Decreto 596/2016 (Suministro Inmediato de Informacion) |
-| Tax Authority | Agencia Estatal de Administracion Tributaria (AEAT) |
-| Filing Portal | Sede Electronica AEAT (sede.agenciatributaria.gob.es) |
-| Authentication | Certificado electronico, DNI electronico, or Cl@ve PIN |
-| Contributor | DRAFT -- awaiting practitioner validation |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | 2026-04-10 |
-| Skill Version | 2.1-verified |
-| Territorial Exclusions | Canary Islands (IGIC, not IVA), Ceuta (IPSI), Melilla (IPSI) |
-| Confidence Coverage | Tier 1: casilla assignment, reverse charge, deductibility blocks, derived calculations, recargo de equivalencia, SII obligation triggers. Tier 2: prorrata de deduccion, sector-specific regimes, regimen simplificado modules. Tier 3: complex group structures, IGIC/IPSI Canary Islands/Ceuta/Melilla, RECC cash-basis regime, regimen especial de bienes usados. |
+|---|---|
+| Country | Spain (Peninsula + Balearic Islands) |
+| Standard rate | 21% (tipo general) |
+| Reduced rates | 10% (tipo reducido), 4% (tipo superreducido) |
+| Zero rate | 0% (exports, intra-EU B2B supplies of goods/services) |
+| Return form | Modelo 303 (periodic self-assessment); Modelo 390 (annual summary) |
+| Filing portal | Sede Electronica AEAT (sede.agenciatributaria.gob.es) |
+| Authority | Agencia Estatal de Administracion Tributaria (AEAT) |
+| Currency | EUR only |
+| Filing frequencies | Quarterly (standard); Monthly (mandatory for SII-obliged / REDEME registrants / turnover > EUR 6,010,121.04) |
+| Deadline | Quarterly: 1st–20th of month after quarter end (April, July, October, January — January deadline is 30th); Monthly: 1st–20th of following month |
+| SII obligation | Suministro Inmediato de Informacion (RD 596/2016): real-time invoice reporting within 4 calendar days; mandatory for monthly filers |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
+| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
+| Contributor | Open Accounting Skills Community |
+| Validation date | April 2026 |
+
+**Key Modelo 303 casillas (boxes):**
+
+| Casilla | Meaning |
+|---|---|
+| 01 | Output base — standard rate 21% |
+| 02 | Output VAT — standard rate 21% |
+| 03 | Output base — reduced rate 10% |
+| 04 | Output VAT — reduced rate 10% |
+| 05 | Output base — super-reduced rate 4% |
+| 06 | Output VAT — super-reduced rate 4% |
+| 07 | Output base — recargo de equivalencia (surcharge) |
+| 08–14 | Output VAT recargo at various rates |
+| 15 | Output base — intra-EU acquisitions of goods |
+| 16 | Output VAT on intra-EU acquisitions of goods |
+| 17 | Output base — intra-EU acquisitions of services |
+| 18 | Output VAT on intra-EU acquisitions of services |
+| 19 | Output base — other reverse charge (Art. 84.Uno.2 LIVA) |
+| 20 | Output VAT on other reverse charge |
+| 21 | Output base — modification of bases and cuotas |
+| 22 | Output VAT modification |
+| 23 | Output base — recargo modification |
+| 24 | Output VAT recargo modification |
+| 25 | Total output cuotas (derived) |
+| 26 | Total output cuotas inc. recargo (derived) |
+| 27 | Total output VAT (derived: sum of output VAT lines) |
+| 28 | Input base — domestic purchases (cuotas soportadas en operaciones interiores corrientes) |
+| 29 | Input VAT — domestic purchases |
+| 30 | Input base — investment goods (bienes de inversion) |
+| 31 | Input VAT — investment goods |
+| 32 | Input base — intra-EU acquisitions (corrientes) |
+| 33 | Input VAT — intra-EU acquisitions |
+| 34 | Input base — intra-EU investment goods |
+| 35 | Input VAT — intra-EU investment goods |
+| 36 | Input base — imports (corrientes) |
+| 37 | Input VAT — imports |
+| 38 | Input base — imports investment goods |
+| 39 | Input VAT — imports investment goods |
+| 40 | Rectification of input deductions |
+| 41 | Rectification amount |
+| 45 | Total input VAT deductible (derived: 29+31+33+35+37+39+41) |
+| 46 | Difference (derived: 27 − 45) |
+| 59 | Exclusive state-level output base |
+| 60 | Exclusive state-level cuotas |
+| 61 | Exclusive state-level cuotas devengadas |
+| 64 | Result of the periodic self-assessment |
+| 65 | Attributable to state administration (for regional split) |
+| 66 | Resultado (derived) |
+| 67 | Cuotas a compensar de periodos anteriores (credit brought forward) |
+| 69 | Resultado de la autoliquidacion (final result: casilla 46 − casilla 67 adjustments) |
+| 71 | Result payable or refundable (final line) |
+
+**Conservative defaults — Spain-specific values for the universal categories in `vat-workflow-base` Section 2:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 21% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Spain |
+| Unknown B2B vs B2C status for EU customer | B2C, charge 21% |
+| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery (except vehicles — see 50% presumption in Section 5.11) |
+| Unknown SaaS billing entity | Reverse charge from non-EU (casilla 36/37) |
+| Unknown blocked-input status (entertainment, personal use) | Blocked |
+| Unknown whether transaction is in scope | In scope |
+
+**Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | EUR 5,000 |
+| HIGH tax-delta on a single conservative default | EUR 300 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | EUR 8,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. An Asesor Fiscal (licensed tax advisor) must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to Asesor Fiscal and document the gap.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Spanish or international business bank: CaixaBank, Santander, BBVA, Bankinter, Sabadell, ING Direct, Revolut Business, Wise Business, N26 Business, or any other.
 
----
+**Recommended** — sales invoices for the period (especially for intra-EU B2B services and zero-rated supplies), purchase invoices (facturas) for any input VAT claim above EUR 300, the client's NIF-IVA in writing (ES + letter/digits).
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete invoice register (libro registro de facturas emitidas y recibidas), Modelo 303 from prior period showing casilla 67 credit carried forward, SII submission confirmations.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This Modelo 303 was produced from bank statement alone. The reviewer must verify, before approval, that input VAT claims above EUR 300 are supported by compliant facturas and that all reverse-charge classifications match the supplier's invoice."
 
-1. **Entity name and NIF** [T1] -- NIF (Numero de Identificacion Fiscal) for individuals; CIF for companies (now unified as NIF). NIF-IVA format: ES + letter + 8 digits (e.g., ESB12345678) or ES + 8 digits + letter (e.g., ES12345678A). LIVA Art. 164.Uno.1.
-2. **Legal form** [T1] -- Persona fisica (individual/autonomo), Sociedad Limitada (SL), Sociedad Anonima (SA), Comunidad de Bienes (CB), etc. Impacts regime eligibility.
-3. **VAT regime** [T1] -- Regimen general (standard), regimen simplificado (simplified modules), recargo de equivalencia (surcharge for retailers), regimen especial de criterio de caja (RECC -- cash basis), or exempt (Art. 20 LIVA). LIVA Art. 148-163 (recargo), Art. 122-123 (simplificado).
-4. **Filing frequency** [T1] -- Quarterly (standard for most businesses) or monthly (mandatory for large companies with turnover > EUR 6,010,121.04, REDEME registrants, or SII-obliged entities). RIVA Art. 30.
-5. **Industry/sector** [T2] -- Impacts prorrata and special regimes (construction, agriculture, used goods, travel agencies).
-6. **Does the business make exempt supplies (Art. 20 LIVA)?** [T2] -- If yes, prorrata de deduccion required (Art. 102-106 LIVA). Examples: medical services, education, insurance, financial services.
-7. **Is the client in recargo de equivalencia?** [T1] -- Applies to retailers who are personas fisicas selling goods without transformation. LIVA Art. 148-163.
-8. **IVA credit carried forward from prior period** [T1] -- Casilla 67 (cuotas a compensar de periodos anteriores).
-9. **Is the client in SII (Suministro Inmediato de Informacion)?** [T1] -- Mandatory for monthly filers; near-real-time invoice reporting within 4 calendar days. RD 596/2016.
-10. **Is the client registered in REDEME?** [T1] -- Registro de Devolucion Mensual: voluntary monthly filing with monthly refund rights. RIVA Art. 30.
-11. **Does the client perform operations with Canary Islands, Ceuta, or Melilla?** [T3] -- These territories use IGIC/IPSI, not IVA. Escalate.
+### Spain-specific refusal catalogue
 
-For exempt clients [T1]: confirm activity falls under LIVA Art. 20 (exempt without right of deduction) or LIVA Art. 21-25 (exempt with right of deduction -- exports, intra-EU supplies).
+These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-**If items 1-4 are unknown, STOP. Do not classify any transactions until confirmed.**
+**R-ES-1 — Canary Islands (IGIC).** *Trigger:* client is located in the Canary Islands or asks about IGIC. *Message:* "The Canary Islands use IGIC (Impuesto General Indirecto Canario), not IVA. This skill covers IVA only (peninsular Spain + Balearic Islands). Please use an Asesor Fiscal familiar with IGIC."
 
----
+**R-ES-2 — Ceuta or Melilla (IPSI).** *Trigger:* client is in Ceuta or Melilla or asks about IPSI. *Message:* "Ceuta and Melilla use IPSI (Impuesto sobre la Produccion, los Servicios y la Importacion), not IVA. Out of scope for this skill."
 
-## Step 1: Transaction Classification Rules
+**R-ES-3 — Regimen simplificado (simplified modules).** *Trigger:* client files under the regimen simplificado with module-based calculations. *Message:* "The regimen simplificado uses activity-specific modules (modulos) to compute VAT, not actual transaction classification. This skill covers the regimen general only. Please use an Asesor Fiscal for module-based returns."
 
-### 1a. Determine Transaction Type [T1]
+**R-ES-4 — Recargo de equivalencia.** *Trigger:* client is a retailer subject to recargo de equivalencia. *Message:* "Recargo de equivalencia is a special surcharge regime for retailers (personas fisicas) who sell goods without transformation. Suppliers charge the recargo surcharge (5.2%/1.4%/0.5%) and the retailer has no filing obligation or input VAT recovery. This skill covers the regimen general only."
 
-| Category | Treatment | Legal Basis |
-|----------|-----------|-------------|
-| Sale of goods/services (entregas de bienes / prestaciones de servicios) | IVA repercutido (output IVA) | LIVA Art. 4, Art. 5 (entregas), Art. 11 (prestaciones) |
-| Purchase of goods/services | IVA soportado (input IVA) | LIVA Art. 92-94 |
-| Salaries / nominas | OUT OF SCOPE | Not a supply |
-| Social Security (Seguridad Social) | OUT OF SCOPE | Not a supply |
-| IRPF withholdings | OUT OF SCOPE | Income tax, not IVA |
-| Loan repayments | OUT OF SCOPE | Not a supply |
-| Dividends | OUT OF SCOPE | Not a supply |
-| Bank charges | EXEMPT without deduction right | LIVA Art. 20.Uno.18 |
+**R-ES-5 — RECC cash-basis regime.** *Trigger:* client uses the regimen especial de criterio de caja. *Message:* "The RECC regime defers VAT to the payment date rather than the invoice date. This changes the timing of both output and input VAT reporting. This skill assumes the standard accrual basis (devengo). Please use an Asesor Fiscal for RECC returns."
 
-**Legislation:** LIVA Art. 4 (taxable transactions -- hecho imponible).
+**R-ES-6 — Prorrata de deduccion (partial exemption).** *Trigger:* client makes both taxable and exempt supplies (Art. 20 LIVA) and the exempt proportion is not de minimis. *Message:* "Your business makes both taxable and exempt supplies. Input VAT must be apportioned under the prorrata rules (Art. 102–106 LIVA). This requires the annual definitive prorrata ratio. Please use an Asesor Fiscal to determine the prorrata percentage before input VAT is claimed."
 
-### 1b. Determine Counterparty Location [T1]
+**R-ES-7 — VAT groups (grupos de entidades).** *Trigger:* client is part of a VAT group under Art. 163 quinquies–nonies LIVA. *Message:* "VAT group consolidation is out of scope. Please use an Asesor Fiscal."
 
-| Territory | IVA Treatment | Notes |
-|-----------|---------------|-------|
-| Spain -- Peninsula + Balearic Islands | Standard IVA applies | TAI (Territorio de Aplicacion del Impuesto) per LIVA Art. 3 |
-| Canary Islands | IGIC applies, NOT IVA | Impuesto General Indirecto Canario. Escalate [T3]. LIVA Art. 3.Dos |
-| Ceuta | IPSI applies, NOT IVA | Impuesto sobre la Produccion, los Servicios y la Importacion. Escalate [T3]. LIVA Art. 3.Dos |
-| Melilla | IPSI applies, NOT IVA | Same as Ceuta. Escalate [T3]. LIVA Art. 3.Dos |
-| EU Member States | Intra-Community regime | LIVA Art. 13-16 (acquisitions), Art. 25 (exempt supplies) |
-| Non-EU / Third territories | Import/export regime | LIVA Art. 17-19 (imports), Art. 21-22 (export exemptions) |
-
-**Critical:** Canary Islands, Ceuta, and Melilla are Spanish sovereign territory but are NOT within the TAI (Territorio de Aplicacion del Impuesto). Supplies to/from these territories are treated similarly to exports/imports, not domestic transactions. LIVA Art. 3.Dos.
-
-### 1c. Determine VAT Rate [T1]
-
-**Legislation:** LIVA Art. 90 (general rate), Art. 91 (reduced and super-reduced rates).
-
-#### 21% -- Tipo General (Standard Rate) -- LIVA Art. 90
-
-Default rate for all supplies of goods and services not specifically listed in Art. 91.
-
-| Supply Category | Examples | Legal Basis |
-|----------------|----------|-------------|
-| Professional services | Legal, consulting, accounting, architecture | LIVA Art. 90 (default) |
-| Electronics and technology | Computers, phones, software licences | LIVA Art. 90 |
-| Clothing and footwear | All apparel not specifically reduced | LIVA Art. 90 |
-| Furniture and household goods | Office furniture, appliances | LIVA Art. 90 |
-| Telecommunications | Phone plans, internet services | LIVA Art. 90 |
-| Alcoholic beverages | Wine, beer, spirits | LIVA Art. 90 |
-| Tobacco | All tobacco products | LIVA Art. 90 |
-| Cosmetics and perfumery | Non-medical personal care | LIVA Art. 90 |
-| Jewellery and luxury goods | Precious metals, gems (non-trade) | LIVA Art. 90 |
-| Vehicles and accessories | Cars, motorbikes, parts | LIVA Art. 90 |
-
-#### 10% -- Tipo Reducido (Reduced Rate) -- LIVA Art. 91.Uno
-
-| Supply Category | Examples | Legal Basis |
-|----------------|----------|-------------|
-| Food products (general) | Meat, fish, eggs, vegetables, fruit (not super-reduced) | LIVA Art. 91.Uno.1.1 |
-| Water | All water supplies for human consumption | LIVA Art. 91.Uno.1.4 |
-| Passenger transport | Bus, train, taxi, air (domestic) | LIVA Art. 91.Uno.2.1 |
-| Hotel and accommodation | Hotels, hostels, camping (not long-term rental) | LIVA Art. 91.Uno.2.2 |
-| Restaurant and catering | Eating/drinking on premises, takeaway | LIVA Art. 91.Uno.2.3 |
-| Live cultural events | Theatre, cinema, concerts, exhibitions | LIVA Art. 91.Uno.2.6 |
-| Housing -- new construction | First delivery of new residential property | LIVA Art. 91.Uno.1.7 |
-| Renovation of private dwellings | Works on housing > 2 years old (conditions apply) | LIVA Art. 91.Uno.2.10 |
-| Agricultural inputs | Seeds, fertilisers, animal feed (not super-reduced) | LIVA Art. 91.Uno.1.3 |
-| Medical devices and equipment | Glasses, contact lenses, hearing aids (not super-reduced) | LIVA Art. 91.Uno.1.6 |
-| Funeral services | Coffins, burial, cremation | LIVA Art. 91.Uno.2.4 |
-| Cleaning of public roads | Street cleaning, waste collection | LIVA Art. 91.Uno.2.9 |
-
-#### 4% -- Tipo Superreducido (Super-Reduced Rate) -- LIVA Art. 91.Dos
-
-| Supply Category | Examples | Legal Basis |
-|----------------|----------|-------------|
-| Bread and bread-making flour | All varieties of bread, base flour | LIVA Art. 91.Dos.1.1 |
-| Milk | Natural, certified, pasteurised, concentrated, skimmed, sterilised | LIVA Art. 91.Dos.1.1 |
-| Cheese and eggs | All varieties | LIVA Art. 91.Dos.1.1 |
-| Fruit and vegetables | Fresh, natural, chilled (unprocessed) | LIVA Art. 91.Dos.1.1 |
-| Cereals and tubers | Natural, unprocessed (potatoes, rice, etc.) | LIVA Art. 91.Dos.1.1 |
-| Olive oil | All varieties of olive oil (virgin, extra-virgin, refined). Permanent super-reduced rate from 1 January 2025. | LIVA Art. 91.Dos.1.1 |
-| Books and newspapers | Physical and electronic books, periodicals, newspapers | LIVA Art. 91.Dos.1.2 |
-| Medicines for human use | Prescription and OTC (for human consumption) | LIVA Art. 91.Dos.1.3 |
-| Vehicles for disabled persons | Wheelchairs, adapted vehicles for persons with disability | LIVA Art. 91.Dos.1.4 |
-| Social housing (VPO) | Vivienda de proteccion oficial (state-subsidised housing) | LIVA Art. 91.Dos.1.6 |
-| Prostheses and implants | Medical prostheses, dental implants | LIVA Art. 91.Dos.1.5 |
-| Feminine hygiene products | Sanitary towels, tampons (since 2023 reform) | LIVA Art. 91.Dos.1.1 bis |
-
-#### 0% -- Temporary Zero Rate
-
-Temporary 0% rates were applied to specific basic food items during 2023-2024 under Royal Decree-Law 20/2022 and extensions. These expired as follows: basic staples (bread, milk, cheese, eggs, fruit, vegetables, cereals) returned to 4% from 1 January 2025; olive oil moved permanently to 4% super-reduced from 1 January 2025; seed oils and pasta returned to 10% from 1 January 2025. **As of 2025, no 0% food VAT rates remain in force.** Casillas 150-152 on Modelo 303 (introduced in 2023 for 0% rate operations) should be zero for periods from 1 January 2025 onward unless new temporary measures are enacted. **Always verify current status with AEAT guidance for the filing period.** [T2]
-
-### 1d. Determine Expense Category [T1]
-
-| Category | Definition | Legal Basis |
-|----------|-----------|-------------|
-| Bienes de inversion (capital assets) -- movable | Movable goods with acquisition cost > EUR 3,005.06 and useful life > 1 year | LIVA Art. 108.Uno |
-| Bienes de inversion (capital assets) -- immovable | All immovable property (buildings, land) regardless of value | LIVA Art. 108.Dos |
-| Stock / mercancias | Goods acquired for resale without transformation | LIVA Art. 92 |
-| Bienes corrientes (current goods) | Raw materials, consumables used in production | LIVA Art. 92 |
-| Servicios / gastos generales | Overhead: rent, utilities, professional fees, subscriptions | LIVA Art. 92 |
+**R-ES-8 — Used goods / travel agencies / art margin schemes.** *Trigger:* client deals in second-hand goods, travel agency packages, or art/antiques under margin scheme. *Message:* "Special margin scheme regimes (bienes usados, agencias de viaje, objetos de arte) require transaction-level margin computation. Out of scope."
 
 ---
 
-## Step 2: VAT Return Form Structure -- Modelo 303 [T1]
+## Section 3 — Supplier pattern library (the lookup table)
 
-### Overview
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. Do not consult Tier 1 rules — the table is authoritative for patterns it covers.
 
-| Field | Detail |
-|-------|--------|
-| Form | Modelo 303 -- Impuesto sobre el Valor Anadido, Autoliquidacion |
-| Frequency | Quarterly (1T, 2T, 3T, 4T) or monthly (01-12) |
-| Filing method | Sede Electronica AEAT (electronic only for most entities) |
-| Legal basis | LIVA Art. 164; RIVA Art. 71 |
+**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
 
-**Legislation:** LIVA Art. 164 (filing obligations); RIVA Art. 71 (form and deadlines).
+### 3.1 Spanish banks (fees exempt — exclude)
 
-### Section I: Identificacion (Identification)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CAIXABANK, LA CAIXA | EXCLUDE for bank charges/fees | Art. 20.Uno.18 LIVA: financial service, exempt |
+| SANTANDER, BANCO SANTANDER | EXCLUDE for bank charges/fees | Same |
+| BBVA, BANCO BILBAO | EXCLUDE for bank charges/fees | Same |
+| BANKINTER | EXCLUDE for bank charges/fees | Same |
+| SABADELL, BANCO SABADELL | EXCLUDE for bank charges/fees | Same |
+| ING DIRECT, ING BANK | EXCLUDE for bank charges/fees | Same |
+| UNICAJA, KUTXABANK, IBERCAJA, ABANCA | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
+| INTERESES, INTEREST | EXCLUDE | Interest income/expense, exempt |
+| PRESTAMO, HIPOTECA, LOAN | EXCLUDE | Loan principal movement, out of scope |
 
-| Casilla | Spanish Name | English Translation | Content |
-|---------|-------------|---------------------|---------|
-| -- | NIF | Numero de Identificacion Fiscal | Entity tax ID |
-| -- | Razon social / Apellidos y nombre | Company name / Surname and first name | Legal name |
-| -- | Ejercicio / Periodo | Tax year / Period | e.g., 2026 / 1T |
-| -- | Tipo de declaracion | Type of return | Ordinaria, complementaria, sustitutiva |
+### 3.2 Spanish government, regulators, and statutory bodies (exclude entirely)
 
-### Section II: Liquidacion -- IVA Devengado (Output IVA)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AEAT, AGENCIA TRIBUTARIA, HACIENDA | EXCLUDE | Tax payment, not a supply |
+| TGSS, TESORERIA GENERAL DE LA SEGURIDAD SOCIAL | EXCLUDE | Social security contribution |
+| SEGURIDAD SOCIAL, SEG. SOCIAL | EXCLUDE | Social security contribution |
+| IRPF, RETENCION | EXCLUDE | Income tax withholding payment |
+| AYUNTAMIENTO | EXCLUDE | Municipal tax/fee, sovereign act |
+| REGISTRO MERCANTIL | EXCLUDE | Registry fee, sovereign act |
+| IMPUESTO, IAE, IBI | EXCLUDE | Tax payments |
+| TRAFICO, DGT | EXCLUDE | Vehicle registration/fines, sovereign act |
 
-#### Regimen General (Standard Regime)
+### 3.3 Spanish utilities
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 01 | Base imponible al 4% | Taxable base at 4% | Total net value of supplies at super-reduced rate | No -- from records |
-| 02 | Tipo % | Rate % | Always 4 | Fixed |
-| 03 | Cuota | Tax amount | = Casilla 01 x 0.04 | Yes -- derived |
-| 04 | Base imponible al 10% | Taxable base at 10% | Total net value of supplies at reduced rate | No -- from records |
-| 05 | Tipo % | Rate % | Always 10 | Fixed |
-| 06 | Cuota | Tax amount | = Casilla 04 x 0.10 | Yes -- derived |
-| 07 | Base imponible al 21% | Taxable base at 21% | Total net value of supplies at standard rate | No -- from records |
-| 08 | Tipo % | Rate % | Always 21 | Fixed |
-| 09 | Cuota | Tax amount | = Casilla 07 x 0.21 | Yes -- derived |
+| Pattern | Treatment | Casilla | Notes |
+|---|---|---|---|
+| IBERDROLA | Domestic 21% | 28/29 | Electricity — overhead |
+| ENDESA, NATURGY, GAS NATURAL | Domestic 21% | 28/29 | Electricity/gas — overhead |
+| REPSOL (energy bills) | Domestic 21% | 28/29 | Energy/heating — overhead |
+| TELEFONICA, MOVISTAR | Domestic 21% | 28/29 | Telecoms — overhead |
+| VODAFONE SPAIN, VODAFONE ES | Domestic 21% | 28/29 | Telecoms — overhead |
+| ORANGE, MASMOVIL, YOIGO, DIGI | Domestic 21% | 28/29 | Telecoms — overhead |
+| AGUA, CANAL DE ISABEL II, AGUAS | Domestic 10% | 28/29 | Water supply — reduced rate |
 
-#### Operaciones al 0% (Zero-Rate Operations) -- Casillas added in 2023
+### 3.4 Insurance (exempt — exclude)
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 150 | Base imponible al 0% | Taxable base at 0% | Total net value of supplies at temporary 0% rate | No -- from records |
-| 151 | Tipo % | Rate % | Always 0 | Fixed |
-| 152 | Cuota | Tax amount | = 0 | Yes -- derived |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MAPFRE, MUTUA MADRILENA, MUTUALIA | EXCLUDE | Insurance, exempt Art. 20.Uno.16 LIVA |
+| AXA SEGUROS, ALLIANZ, ZURICH | EXCLUDE | Same |
+| GENERALI, SANTALUCIA, PELAYO | EXCLUDE | Same |
+| SEGURO, POLIZA, PRIMA | EXCLUDE | Insurance premium, exempt |
 
-**Note:** Casillas 150-152 were introduced for the temporary 0% food VAT rates (2023-2024). From 1 January 2025, no 0% food rates remain in force; these casillas should be zero unless new temporary measures are enacted. Casillas 153-155 (5% rate, used for energy during 2022-2023) also exist on the form but are not currently in active use for standard filers.
+### 3.5 Post and logistics
 
-#### Adquisiciones Intracomunitarias (Intra-Community Acquisitions)
+| Pattern | Treatment | Casilla | Notes |
+|---|---|---|---|
+| CORREOS, SOCIEDAD ESTATAL CORREOS | EXCLUDE for standard postage | | Universal postal service, exempt |
+| CORREOS EXPRESS | Domestic 21% | 28/29 | Express/courier is taxable |
+| SEUR, MRW, NACEX, GLS SPAIN | Domestic 21% | 28/29 | Courier services, taxable |
+| DHL EXPRESS SPAIN | Domestic 21% | 28/29 | Express courier |
+| DHL INTERNATIONAL | EU reverse charge (DE entity) | 32/33 | Check invoice — European billing entity |
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 10 | Base imponible -- adquisiciones intracomunitarias de bienes | Taxable base -- intra-EU goods acquisitions | Net value of goods acquired from EU suppliers | No -- from records |
-| 11 | Cuota | Tax amount | Self-assessed IVA on EU goods at applicable rate | Yes -- derived |
+### 3.6 Transport
 
-#### Otras operaciones con inversion del sujeto pasivo (Other Reverse Charge Operations)
+| Pattern | Treatment | Casilla | Notes |
+|---|---|---|---|
+| RENFE | Domestic 10% | 28/29 | Passenger rail — reduced rate (Art. 91 LIVA) |
+| METRO, EMT, TMB, TUSSAM | EXCLUDE or 10% | | Public urban transport — reduced rate |
+| CABIFY | Domestic 21% | 28/29 | Ride-hailing platform fee |
+| UBER SPAIN | Domestic 21% | 28/29 | Ride-hailing |
+| IBERIA, VUELING, AIR EUROPA (international) | EXCLUDE / 0% | | International flights exempt Art. 22 LIVA |
+| IBERIA, VUELING (domestic) | Domestic 10% | | Domestic passenger flights — reduced rate |
+| BLABLACAR | EXCLUDE | | Peer-to-peer, no VAT supply |
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 12 | Base imponible -- otras operaciones con ISP | Taxable base -- other reverse charge operations | Net value of services/goods received under reverse charge (Art. 84.Uno.2 LIVA): EU services, non-EU services, construction subcontracting, scrap, certain real estate | No -- from records |
-| 13 | Cuota | Tax amount | Self-assessed IVA on reverse charge operations at applicable rate | Yes -- derived |
+### 3.7 Food retail (blocked unless hospitality business)
 
-#### Recargo de Equivalencia (Equivalence Surcharge) -- Output Side
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MERCADONA, DIA, LIDL, ALDI, CARREFOUR | Default BLOCK input VAT | Personal provisioning. Deductible only if hospitality/catering. Rate mix: 4% staples, 10% prepared food, 21% non-food |
+| EL CORTE INGLES (food hall) | Default BLOCK | Same |
+| SUPERMERCADO, ALIMENTACION | Default BLOCK | Same |
+| RESTAURANTS, CAFES, BARS (any named) | Default BLOCK | Entertainment — see Section 5.12 |
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 14 | Base imponible RE al 0.5% | RE base at 0.5% | Base for super-reduced rate surcharge | No |
-| 15 | Cuota RE 0.5% | RE tax 0.5% | = Casilla 14 x 0.005 | Yes |
-| 16 | Base imponible RE al 1.4% | RE base at 1.4% | Base for reduced rate surcharge | No |
-| 17 | Cuota RE 1.4% | RE tax 1.4% | = Casilla 16 x 0.014 | Yes |
-| 18 | Base imponible RE al 5.2% | RE base at 5.2% | Base for standard rate surcharge | No |
-| 19 | Cuota RE 5.2% | RE tax 5.2% | = Casilla 18 x 0.052 | Yes |
+### 3.8 SaaS — EU suppliers (reverse charge, casilla 17/18)
 
-#### Modificaciones y Otros
+These are billed from EU entities (typically Ireland or Luxembourg) and trigger inversion del sujeto pasivo (reverse charge) under Art. 84.Uno.2 LIVA for services.
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 22 | Base imponible RE al 1.75% | RE base at 1.75% | Base for tobacco surcharge | No |
-| 23 | Cuota RE 1.75% | RE tax 1.75% | = Casilla 22 x 0.0175 | Yes |
-| 24 | Modificacion de bases y cuotas -- base | Adjustment to bases and tax (base) | Credit notes, corrections, bad debt relief (Art. 80 LIVA). Positive or negative. | No |
-| 25 | Modificacion de bases y cuotas -- cuota | Adjustment to bases and tax (tax amount) | Corresponding tax adjustment | No |
+| Pattern | Billing entity | Casilla | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 17/18 + 32/33 | Reverse charge services |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 17/18 + 32/33 | Reverse charge |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 17/18 + 32/33 | Reverse charge |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 17/18 + 32/33 | Reverse charge |
+| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 17/18 + 32/33 | Reverse charge |
+| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 17/18 + 32/33 | EU, reverse charge |
+| DROPBOX | Dropbox International Unlimited (IE) | 17/18 + 32/33 | Reverse charge |
+| SLACK | Slack Technologies Ireland Ltd (IE) | 17/18 + 32/33 | Reverse charge |
+| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 17/18 + 32/33 | EU, reverse charge |
+| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 17/18 + 32/33 | Reverse charge |
+| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | 17/18 + 32/33 | Transaction fees may be exempt — see 3.11 |
 
-#### Total IVA Devengado
+### 3.9 SaaS — non-EU suppliers (reverse charge, casilla 19/20 + 36/37)
 
-| Casilla | Spanish Name | English Translation | Calculation |
-|---------|-------------|---------------------|-------------|
-| 27 | Total cuota devengada | Total output IVA due | = 03 + 06 + 09 + 11 + 13 + 15 + 17 + 19 + 23 + 25 |
+| Pattern | Billing entity | Casilla | Notes |
+|---|---|---|---|
+| AWS (standard) | AWS EMEA SARL (LU) — check | 17/18 + 32/33 | LU entity = EU reverse charge |
+| NOTION | Notion Labs Inc (US) | 19/20 + 36/37 | Non-EU reverse charge |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 19/20 + 36/37 | Non-EU reverse charge |
+| OPENAI, CHATGPT | OpenAI Inc (US) | 19/20 + 36/37 | Non-EU reverse charge |
+| GITHUB (standard plans) | GitHub Inc (US) | 19/20 + 36/37 | Check if billed by IE entity |
+| FIGMA | Figma Inc (US) | 19/20 + 36/37 | Non-EU reverse charge |
+| CANVA | Canva Pty Ltd (AU) | 19/20 + 36/37 | Non-EU reverse charge |
+| HUBSPOT | HubSpot Inc (US) or HubSpot Ireland Ltd (IE) — check invoice | 19/20 or 17/18 | Depends on billing entity |
+| TWILIO | Twilio Inc (US) | 19/20 + 36/37 | Non-EU reverse charge |
 
-### Section III: IVA Deducible (Input IVA)
+### 3.10 SaaS — the exception (NOT reverse charge)
 
-#### Operaciones Interiores (Domestic Purchases)
+| Pattern | Treatment | Why |
+|---|---|---|
+| AWS EMEA SARL | EU reverse charge casilla 17/18 + 32/33 (Luxembourg entity) | Standard EU reverse charge. If invoice shows Spanish IVA charged, treat as domestic 21%. |
+| AMAZON ES, AMAZON.ES (marketplace) | Domestic 21% | Amazon Spain retail — domestic supply with IVA on invoice |
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 28 | Base -- operaciones interiores corrientes | Base -- domestic current operations | Net value of domestic purchases (goods and services, not capital) | No |
-| 29 | Cuota -- operaciones interiores corrientes | Tax -- domestic current operations | Deductible input IVA on domestic purchases | No |
-| 30 | Base -- bienes de inversion interiores | Base -- domestic capital assets | Net value of domestic capital asset purchases | No |
-| 31 | Cuota -- bienes de inversion interiores | Tax -- domestic capital assets | Deductible input IVA on domestic capital assets | No |
+### 3.11 Payment processors
 
-#### Importaciones (Imports from Non-EU -- Goods through Customs)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| STRIPE (monthly subscription) | EU reverse charge casilla 17/18 + 32/33 | Stripe IE entity — separate from transaction fees |
+| REDSYS, SERVIRED | EXCLUDE (exempt) | Card processing, exempt financial service |
+| SUMUP, SQUARE, ZETTLE | Check invoice | If Spanish entity: domestic 21%; if IE/EU entity: reverse charge |
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 32 | Base -- importaciones corrientes | Base -- imports current operations | Net value of imports of goods (customs value + duties). Only goods that pass through customs with DUA. | No |
-| 33 | Cuota -- importaciones corrientes | Tax -- imports current operations | IVA paid at customs or deferred (DUA document) | No |
-| 34 | Base -- importaciones bienes de inversion | Base -- imports capital assets | Net value of imported capital assets (goods through customs) | No |
-| 35 | Cuota -- importaciones bienes de inversion | Tax -- imports capital assets | IVA on imported capital assets | No |
+### 3.12 Professional services (Spain)
 
-#### Adquisiciones Intracomunitarias (Intra-EU Purchases -- Input Side)
+| Pattern | Treatment | Casilla | Notes |
+|---|---|---|---|
+| NOTARIO, NOTARIA | Domestic 21% | 28/29 | Notary fees, deductible if business purpose |
+| ASESOR, ASESORIA, GESTORIA | Domestic 21% | 28/29 | Tax advisor/accountant, always deductible |
+| ABOGADO, BUFETE, DESPACHO | Domestic 21% | 28/29 | Legal services, deductible if business purpose |
+| REGISTRO MERCANTIL | EXCLUDE | | Government registry fee |
+| COLEGIO PROFESIONAL | Domestic 21% | 28/29 | Professional body membership |
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 36 | Base -- adquisiciones intracomunitarias corrientes | Base -- intra-EU current goods and services | Net value of intra-EU purchases of goods and services (not capital) | No |
-| 37 | Cuota -- adquisiciones intracomunitarias corrientes | Tax -- intra-EU current goods and services | Self-assessed input IVA on EU acquisitions | No |
-| 38 | Base -- bienes de inversion intracomunitarios | Base -- intra-EU capital assets | Net value of intra-EU capital asset acquisitions | No |
-| 39 | Cuota -- bienes de inversion intracomunitarios | Tax -- intra-EU capital assets | Self-assessed input IVA on EU capital assets | No |
+### 3.13 Payroll and social security (exclude entirely)
 
-**Note on non-EU B2B services:** Services received from non-EU suppliers under reverse charge (Art. 84.Uno.2.a LIVA) are reported on the input side in casillas 28/29 (domestic current operations) or 30/31 (if capital), NOT in casillas 32-35 (which are exclusively for goods imported through customs). The output side for such services goes in casillas 12/13.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| NOMINA, SALARIO, SUELDO | EXCLUDE | Wages — outside VAT scope |
+| TGSS, SEGURIDAD SOCIAL | EXCLUDE | Statutory SSC payment |
+| IRPF, RETENCION, MOD 111, MOD 190 | EXCLUDE | IRPF withholding payment |
+| AUTONOMO, RETA, CUOTA AUTONOMO | EXCLUDE | Self-employed social security quota |
 
-#### Regularizaciones (Adjustments)
+### 3.14 Property and rent
 
-| Casilla | Spanish Name | English Translation | Content | Derived? |
-|---------|-------------|---------------------|---------|----------|
-| 40 | Rectificacion de deducciones | Correction of deductions | Adjustments for prior period errors, Art. 114 LIVA | No |
-| 41 | Regularizacion bienes de inversion | Capital goods regularisation | Annual adjustment of capital goods deductions over 5 years (movable) or 10 years (immovable). LIVA Art. 107-110 | No |
-| 42 | Regularizacion por prorrata definitiva | Definitive pro-rata regularisation | Adjustment when provisional prorrata differs from definitive. Only in Q4/December. LIVA Art. 105 | No |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ALQUILER, RENTA (commercial, with IVA) | Domestic 21% | Commercial lease where landlord charges IVA |
+| ALQUILER, RENTA (residential, no IVA) | EXCLUDE | Residential lease exempt Art. 20.Uno.23 LIVA |
+| COMUNIDAD DE PROPIETARIOS | EXCLUDE | Building community fees — not a taxable supply |
+| HIPOTECA | EXCLUDE | Mortgage payment, financial service |
 
-#### Total IVA Deducible
+### 3.15 Internal transfers and exclusions
 
-| Casilla | Spanish Name | English Translation | Calculation |
-|---------|-------------|---------------------|-------------|
-| 45 | Total a deducir | Total deductible input IVA | = 29 + 31 + 33 + 35 + 37 + 39 + 40 + 41 + 42 (casilla numbers unchanged; order: domestic + imports + intra-EU + adjustments) |
-
-### Section IV: Resultado (Result)
-
-| Casilla | Spanish Name | English Translation | Calculation |
-|---------|-------------|---------------------|-------------|
-| 46 | Diferencia | Difference | = Casilla 27 - Casilla 45 |
-| 47-58 | (Reserved for complementary declarations) | -- | -- |
-| 59 | Resultado regimen simplificado | Simplified regime result | Only for regimen simplificado filers |
-| 60 | Suma de resultados | Sum of results | = Casilla 46 + Casilla 59 (if applicable) |
-| 61 | Porcentaje atribuible a la Administracion del Estado | % attributable to State | 100% for most filers; adjusted for Pais Vasco/Navarra |
-| 62 | Atribuible a la Administracion del Estado | Amount attributable to State | = Casilla 60 x Casilla 61 / 100 |
-| 63 | Cuotas a compensar de periodos anteriores aplicadas | Prior period credits applied | Credits from Casilla 67 of prior period |
-| 64 | Resultado de la autoliquidacion | Self-assessment result | = Casilla 62 - Casilla 63 |
-| 65 | A deducir: resultado de la declaracion anterior | Deduct: prior return result | Only for complementary returns |
-| 66 | Resultado de la liquidacion | Settlement result | = Casilla 64 - Casilla 65 |
-| 67 | Cuotas a compensar de periodos anteriores | Credits to carry forward from prior periods | Accumulated negative balances not yet offset |
-| 71 | Resultado ingreso/devolucion | Final result: payment / refund | Final amount payable (positive) or refundable (negative, only in last period or REDEME) |
-
-### Section V: Sin Actividad
-
-| Casilla | Spanish Name | English Translation | Content |
-|---------|-------------|---------------------|---------|
-| 69 | Sin actividad | No activity | Tick if no economic activity in the period. Return still filed. LIVA Art. 164. |
-
-### Section VI: Datos Adicionales (Q4 / December Only)
-
-| Casilla | Spanish Name | English Translation | Content |
-|---------|-------------|---------------------|---------|
-| 80-99 | Various annual summary data | Annual regularisation data | Total annual turnover, exempt operations, prorrata adjustments, sector-specific data. Only completed in Q4 (quarterly filers) or December (monthly filers). |
-
----
-
-## Step 2b: Modelo 390 -- Annual Summary (Declaracion-Resumen Anual) [T1]
-
-### Overview
-
-| Field | Detail |
-|-------|--------|
-| Form | Modelo 390 -- Declaracion-Resumen Anual del IVA |
-| Frequency | Annual (covers full calendar year) |
-| Deadline | 1-30 January of following year |
-| Filing method | Sede Electronica AEAT |
-| Legal basis | RIVA Art. 71.4; LIVA Art. 164.Uno.6 |
-| Exemption from filing | SII-obliged entities are EXEMPT from filing Modelo 390 (since 2017) |
-
-**Legislation:** RIVA Art. 71.4 (annual summary obligation); RD 596/2016 (SII exemption from Modelo 390).
-
-### Key Sections of Modelo 390
-
-| Section | Content |
-|---------|---------|
-| 1. Identificacion | NIF, entity name, tax year |
-| 2. Devengo | Output IVA -- mirrors Modelo 303 totals for the full year |
-| 3. IVA deducible | Input IVA -- mirrors Modelo 303 totals for the full year |
-| 4. Resultado liquidacion anual | Annual result (should equal sum of Modelo 303 results) |
-| 5. Volumen de operaciones | Total turnover (Art. 121 LIVA) including: domestic taxable, intra-EU, exports, exempt |
-| 6. Operaciones especificas | Intra-EU acquisitions, imports, reverse charge received, non-subject operations |
-| 7. Prorrata | Provisional and definitive prorrata percentages; sector differentiation if applicable |
-| 8. Actividades con regimen de deduccion diferenciado | Sectored activities (prorrata especial) |
-| 9. Datos estadisticos | Statistical data on the nature of supplies by rate and type |
-
-### Modelo 390 Cross-Checks
-
-- Sum of all Modelo 303 Casilla 27 values across periods must equal Modelo 390 total output IVA [T1]
-- Sum of all Modelo 303 Casilla 45 values across periods must equal Modelo 390 total input IVA [T1]
-- Annual prorrata definitiva in Modelo 390 must match the Q4/December regularisation in Casilla 42 [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRASPASO, TRANSFERENCIA PROPIA | EXCLUDE | Internal movement |
+| DIVIDENDO | EXCLUDE | Dividend payment, out of scope |
+| AMORTIZACION PRESTAMO | EXCLUDE | Loan repayment, out of scope |
+| REINTEGRO, CAJERO, ATM | TIER 2 — ask | Default exclude; ask what cash was spent on |
+| BIZUM (personal) | EXCLUDE | Personal transfers via Bizum |
 
 ---
 
-## Step 3: Transaction Classification Matrix [T1]
+## Section 4 — Worked examples
 
-### Lookup Table: Sales (IVA Devengado / Output)
+These are six fully worked classifications drawn from a hypothetical bank statement of a Spain-based self-employed software consultant (autonomo). They illustrate the trickiest cases.
 
-| Transaction Type | Counterparty Location | Rate | Casilla (Base) | Casilla (Tax) | Legal Basis |
-|-----------------|-----------------------|------|----------------|---------------|-------------|
-| Domestic sale -- standard | Spain (TAI) | 21% | 07 | 09 | LIVA Art. 90 |
-| Domestic sale -- reduced | Spain (TAI) | 10% | 04 | 06 | LIVA Art. 91.Uno |
-| Domestic sale -- super-reduced | Spain (TAI) | 4% | 01 | 03 | LIVA Art. 91.Dos |
-| Intra-EU B2B supply of goods | EU | Exempt (0%) | Not on 303 | -- | LIVA Art. 25; report on Modelo 349 |
-| Intra-EU B2B supply of services | EU | Not subject | Not on 303 | -- | LIVA Art. 69-70; report on Modelo 349 |
-| Export of goods (non-EU) | Non-EU | Exempt with deduction right | Not on 303 | -- | LIVA Art. 21 |
-| Export of services (non-EU B2B) | Non-EU | Not subject | Not on 303 | -- | LIVA Art. 69.Uno |
-| Supply to Canary Islands | Canary Islands | Exempt/not subject | Not on 303 | -- | LIVA Art. 21.2; treated like export [T3] |
-| Supply with recargo de equivalencia | Spain (TAI) | 21%+5.2% | 07+18 | 09+19 | LIVA Art. 148-163 |
-| Credit note issued | Spain (TAI) | Negative | 24 | 25 | LIVA Art. 80 |
+### Example 1 — Non-EU SaaS reverse charge (Notion)
 
-### Lookup Table: Purchases (IVA Deducible / Input)
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; CARGO ; Monthly subscription ; USD 16.00 ; EUR 14.68`
 
-| Transaction Type | Counterparty Location | Category | Casilla (Base) | Casilla (Tax) | Legal Basis |
-|-----------------|-----------------------|----------|----------------|---------------|-------------|
-| Domestic purchase -- current | Spain (TAI) | Overhead/stock | 28 | 29 | LIVA Art. 92 |
-| Domestic purchase -- capital asset | Spain (TAI) | Capital (> EUR 3,005.06) | 30 | 31 | LIVA Art. 108 |
-| EU goods acquisition -- current | EU | Overhead/stock | 36 | 37 | LIVA Art. 13 |
-| EU goods acquisition -- capital | EU | Capital | 38 | 39 | LIVA Art. 13, 108 |
-| EU services received (B2B) | EU | Overhead | 36 | 37 | LIVA Art. 69-70 |
-| Non-EU import of goods -- current | Non-EU | Overhead/stock | 32 | 33 | LIVA Art. 17-19 |
-| Non-EU import of goods -- capital | Non-EU | Capital | 34 | 35 | LIVA Art. 17-19, 108 |
-| Non-EU services received (B2B) | Non-EU | Overhead | 28 | 29 | LIVA Art. 69-70, 84.Uno.2.a (reverse charge; input reported as domestic) |
-| Reverse charge received (construction, scrap, etc.) | Spain (TAI) | Any | 28 or 30 | 29 or 31 | LIVA Art. 84.Uno.2 |
-| Capital goods regularisation | -- | -- | -- | 41 | LIVA Art. 107-110 |
-| Prorrata definitiva regularisation | -- | -- | -- | 42 | LIVA Art. 105 |
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.9). No IVA on the invoice. This is a service received from a non-EU supplier. Art. 84.Uno.2 LIVA triggers inversion del sujeto pasivo. Both sides of the reverse charge must be reported: output IVA in casilla 19/20, input IVA in casilla 36/37. Net effect zero for a fully taxable registrant.
 
-### Lookup Table: Reverse Charge -- Output Side (Self-Assessment)
+**Output:**
 
-When reverse charge applies, the recipient ALSO records output IVA:
+| Date | Counterparty | Gross | Net | VAT | Rate | Casilla (input) | Casilla (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.08 | 21% | 36/37 | 19/20 | N | — | — |
 
-| Transaction Type | Output Casilla (Base) | Output Casilla (Tax) | Input Casilla (Base) | Input Casilla (Tax) |
-|-----------------|----------------------|---------------------|---------------------|---------------------|
-| EU goods acquisition | 10 | 11 | 36 or 38 | 37 or 39 |
-| EU/non-EU services, construction RC, scrap, etc. | 12 | 13 | 28 or 30 | 29 or 31 |
+### Example 2 — EU service, reverse charge (Google Ads)
 
----
+**Input line:**
+`10.04.2026 ; GOOGLE IRELAND LIMITED ; CARGO ; Google Ads abril 2026 ; -850.00 ; EUR`
 
-## Step 4: Reverse Charge -- Inversion del Sujeto Pasivo [T1]
+**Reasoning:**
+Google Ireland Limited is an IE entity — standard EU reverse charge for services. Casilla 17 for the output base, casilla 18 for output IVA, casilla 32 for input base, casilla 33 for input IVA. Net cash effect zero.
 
-**Legislation:** LIVA Art. 84.Uno.2.
+**Output:**
 
-### When Reverse Charge Applies
+| Date | Counterparty | Gross | Net | VAT | Rate | Casilla (input) | Casilla (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 178.50 | 21% | 32/33 | 17/18 | N | — | — |
 
-The RECIPIENT becomes the sujeto pasivo (taxable person) in the following cases:
+### Example 3 — Entertainment, no deduction right
 
-| Situation | Specific Provision | Conditions |
-|-----------|-------------------|------------|
-| Services from EU/non-EU businesses (B2B) | LIVA Art. 84.Uno.2.a | Supplier not established in TAI; recipient is empresario/profesional |
-| Intra-Community acquisition of goods | LIVA Art. 13 | Goods shipped from another EU state to TAI; supplier charges 0% |
-| Construction services (subcontracting) | LIVA Art. 84.Uno.2.f | Ejecuciones de obra (construction works) including renovation, demolition, when recipient is main contractor or developer (promotor) |
-| Waste and scrap materials (chatarra) | LIVA Art. 84.Uno.2.b | Sale of industrial waste, scrap metal, residual materials |
-| Gold (not for jewellery) | LIVA Art. 84.Uno.2.c | Investment gold and semi-finished gold products |
-| Mobile phones, tablets, laptops, game consoles | LIVA Art. 84.Uno.2.g | Only when total invoice value > EUR 5,000 (anti-fraud) |
-| Gas and electricity by non-established traders | LIVA Art. 84.Uno.2.d | Supplier not established in TAI |
-| Emissions trading (derechos de emision) | LIVA Art. 84.Uno.2.e | CO2 emissions allowances |
-| Real estate -- certain supplies | LIVA Art. 84.Uno.2.e | Renunciation of exemption on second or subsequent supplies of immovable property (Art. 20.Dos LIVA) |
-| Silver, platinum, and tin | LIVA Art. 84.Uno.2.b | Raw materials |
+**Input line:**
+`15.04.2026 ; RESTAURANTE BOTIN MADRID ; CARGO ; Cena de negocios ; -180.00 ; EUR`
 
-### Reverse Charge Mechanics
+**Reasoning:**
+Restaurant transaction. Under Spanish rules, entertainment and client meals (atenciones a clientes) are deductible for income tax purposes (IRPF) up to 1% of net turnover but the IVA deductibility is restricted: Art. 96.Uno.5 LIVA limits input IVA recovery on entertainment to expenses that are "strictly necessary" for business activity and can be justified. The conservative default is to block recovery. Flag for reviewer.
 
-1. Supplier invoices WITHOUT IVA, noting "Inversion del sujeto pasivo -- Art. 84.Uno.2 LIVA" [T1]
-2. Recipient reports net amount in output casillas (10/11 for EU goods; 12/13 for all other RC) [T1]
-3. Recipient self-assesses IVA at applicable rate (21% standard, or reduced if applicable) [T1]
-4. Recipient claims input IVA in corresponding deductible casillas (28/29 or 30/31 for domestic RC and non-EU services; 36/37 or 38/39 for EU acquisitions; 32/33 or 34/35 for imported goods through customs) [T1]
-5. Net effect: ZERO for fully taxable businesses [T1]
+**Output:**
 
-### Reverse Charge Exceptions [T1]
+| Date | Counterparty | Gross | Net | VAT | Rate | Casilla | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RESTAURANTE BOTIN | -180.00 | -180.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked (conservative)" |
 
-| Situation | Treatment | Legal Basis |
-|-----------|-----------|-------------|
-| Out-of-scope payments (wages, loans, dividends) | NEVER reverse charge | Not a supply |
-| Local consumption abroad (hotel, restaurant, taxi in another EU country) | NOT reverse charge; foreign VAT paid at source, irrecoverable | LIVA Art. 70 |
-| Canary Islands / Ceuta / Melilla supplies | IGIC/IPSI applies, NOT IVA | LIVA Art. 3.Dos [T3] |
-| EU supplier charged their local VAT > 0% | NOT reverse charge in Spain; expense includes foreign VAT | Supplier error if B2B; may need correction |
-| B2C services from non-established supplier | Supplier may still be sujeto pasivo in some cases | LIVA Art. 84.Uno.1 [T2] |
+### Example 4 — Investment goods (bienes de inversion)
 
----
+**Input line:**
+`18.04.2026 ; APPLE STORE PASEO DE GRACIA ; CARGO ; MacBook Pro 16 ; -2,999.00 ; EUR`
 
-## Step 5: Blocked Input Tax (IVA No Deducible) [T1]
+**Reasoning:**
+Gross amount is EUR 2,999. Investment goods threshold in Spain: assets with useful life > 1 year and acquisition cost > EUR 3,005.06 (historical threshold). At EUR 2,999 this falls just below the bienes de inversion threshold, so it goes to casilla 28/29 (current domestic inputs), not casilla 30/31. However, if the total including accessories exceeds the threshold, reclassify. Conservative: treat as ordinary input.
 
-**Legislation:** LIVA Art. 95-96.
+**Output:**
 
-### Fully Blocked Categories
+| Date | Counterparty | Gross | Net | VAT | Rate | Casilla | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | APPLE STORE | -2,999.00 | -2,478.51 | -520.49 | 21% | 28/29 | N | — | — |
 
-| Category | Spanish Term | Rule | Legal Basis |
-|----------|-------------|------|-------------|
-| Entertainment and client hospitality | Atenciones a clientes | 100% BLOCKED -- no deduction regardless of business purpose | LIVA Art. 96.Uno.5 |
-| Gifts to clients or third parties | Obsequios | 100% BLOCKED -- includes Christmas hampers, gift baskets, promotional gifts | LIVA Art. 96.Uno.5 |
-| Food, drink, tobacco (hospitality) | Alimentacion, bebidas, tabaco | 100% BLOCKED when provided as entertainment | LIVA Art. 96.Uno.5 |
-| Jewellery, gems, precious metals | Joyas, alhajas, piedras preciosas | 100% BLOCKED unless trade stock for resale | LIVA Art. 96.Uno.4 |
-| Recreational goods and services | Espectaculos, servicios recreativos | 100% BLOCKED unless directly related to taxable activity (e.g., event organiser) | LIVA Art. 96.Uno.3 |
-| Travel and accommodation (employee personal benefit) | Viajes, hosteleria | 100% BLOCKED unless directly and exclusively linked to taxable output | LIVA Art. 96.Uno.3 |
+### Example 5 — EU B2B service sale (inbound receipt)
 
-### Partially Deductible Categories
+**Input line:**
+`22.04.2026 ; KREBS CONSULTING GMBH ; ABONO ; Factura ES-2026-018 consultoria IT marzo ; +4,200.00 ; EUR`
 
-| Category | Spanish Term | Rule | Legal Basis |
-|----------|-------------|------|-------------|
-| Passenger vehicles (turismos) | Vehiculos turismos, ciclomotores, motocicletas | 50% presumed business use -- deduct 50% of IVA. 100% deductible ONLY if taxpayer proves exclusive business use (e.g., delivery vehicles, taxis, commercial reps with no personal use) | LIVA Art. 95.Tres.2 |
-| Vehicle running costs | Combustible, reparaciones, peajes | Same % as vehicle itself (50% presumed unless 100% proven) | LIVA Art. 95.Tres.2 |
-| Mixed-use assets | Bienes de uso mixto | Deductible in proportion to business use. Burden of proof on taxpayer. | LIVA Art. 95.Tres |
+**Reasoning:**
+Incoming EUR 4,200 from a German company. Client provides IT consulting services. B2B place of supply for services is the customer's country (Germany) under Art. 69.Uno.1 LIVA (general rule). Client invoices at 0% with a note that the customer self-assesses. Not reported in casilla 01–06 (those are domestic). Reported in Modelo 303 informative section (casilla 59 for operations with EU) and in the recapitulative declaration Modelo 349. Confirm: (a) customer has a valid DE VAT number verified on VIES; (b) the invoice shows no Spanish IVA.
 
-### Fuel-Specific Rules [T1]
+**Output:**
 
-| Fuel Use | Deductibility | Legal Basis |
-|----------|--------------|-------------|
-| Fuel for 50%-presumed vehicle | 50% deductible | LIVA Art. 95.Tres.2 |
-| Fuel for 100%-proven business vehicle | 100% deductible | LIVA Art. 95.Tres.2 |
-| Fuel for blocked vehicle (personal) | 0% deductible | LIVA Art. 95.Uno |
-| Fuel for non-vehicle use (machinery, generators) | 100% deductible if used in taxable activity | LIVA Art. 94 |
+| Date | Counterparty | Gross | Net | VAT | Rate | Casilla | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | KREBS CONSULTING GMBH | +4,200.00 | +4,200.00 | 0 | 0% | 59 (informative) | Y | Q2 (HIGH) | "Verify DE USt-IdNr on VIES" |
 
-### Vehicles Eligible for 100% Deduction (Exceptions to 50% Rule) [T1]
+### Example 6 — Vehicle costs, 50% presumption
 
-| Vehicle Type | Justification | Legal Basis |
-|-------------|---------------|-------------|
-| Vehicles used in driving instruction | Autoescuelas | LIVA Art. 95.Tres.2.a |
-| Vehicles used by commercial agents | Agentes comerciales (exclusively for travel) | LIVA Art. 95.Tres.2.b |
-| Vehicles for passenger transport (taxi, VTC) | Transporte de viajeros | LIVA Art. 95.Tres.2.c |
-| Vehicles used in car rental business | Alquiler de vehiculos | LIVA Art. 95.Tres.2.d |
-| Delivery and goods transport vehicles | Furgonetas, camiones | LIVA Art. 95.Tres.2 (not turismos) |
+**Input line:**
+`28.04.2026 ; REPSOL ESTACION DE SERVICIO ; CARGO ; Gasoleo A ; -85.00 ; EUR`
+
+**Reasoning:**
+Fuel purchase. In Spain, vehicle expenses have a special rule: Art. 95.Tres.2 LIVA creates a rebuttable presumption of 50% business use for passenger vehicles. This means 50% of input IVA is deductible by default (unlike Malta where vehicles are fully blocked). The 50% can be increased if the taxpayer proves higher business use, or reduced if AEAT proves lower. Conservative default: 50% recovery.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Casilla | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | REPSOL | -85.00 | -70.25 | -7.38 | 21% (50%) | 28/29 | Y | Q3 | "Vehicle fuel: 50% presumption applied" |
 
 ---
 
-## Step 6: Registration and Special Regimes [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-### Registration Obligation
+Each rule states the legal source and the casilla mapping. Apply silently if the data is unambiguous. For full doctrinal context, see the source citations in Section 10.
 
-**There is NO turnover threshold for VAT registration in Spain.** [T1]
+### 5.1 Standard rate 21% (Art. 90 LIVA)
 
-Any person or entity carrying out economic activity (actividad economica / actividad empresarial o profesional) in the TAI must register for IVA and file returns, regardless of turnover. LIVA Art. 164.Uno.
+Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales → casilla 01/02. Purchases → casilla 28/29.
 
-| Registration Detail | Rule | Legal Basis |
-|--------------------|------|-------------|
-| Registration trigger | All economic activity in TAI | LIVA Art. 164.Uno |
-| No threshold | No minimum turnover required | LIVA Art. 164 (no exemption threshold exists) |
-| Registration form | Modelo 036 (censal) or Modelo 037 (simplified censal) | RIVA Art. 9-11 |
-| NIF-IVA format | ES + letter + 8 digits (e.g., ESB12345678) or ES + 8 digits + letter (e.g., ES12345678A) | RIVA Art. 25 |
-| VIES registration | Required for intra-EU operations via Modelo 036 | RIVA Art. 25 |
-| De-registration | Modelo 036 within 1 month of cessation | RIVA Art. 11 |
+### 5.2 Reduced rate 10% (Art. 91.Uno LIVA)
 
-### Regimen General (Standard Regime) [T1]
+Applies to: food and beverages (excluding alcohol and tobacco), water supply, passenger transport (rail, bus, taxi, domestic air), hotel accommodation, restaurant and catering services, spectacles and cinema, housing (first transfer of new housing), medical devices, agricultural inputs. Sales → casilla 03/04. Purchases → casilla 28/29 (input base is aggregated).
 
-Default regime for all taxable persons. Full right of deduction subject to Art. 95-96 restrictions. Quarterly or monthly filing of Modelo 303. LIVA Art. 92-114.
+### 5.3 Super-reduced rate 4% (Art. 91.Dos LIVA)
 
-### Regimen Simplificado (Simplified Regime) [T1/T2]
+Applies to: bread, milk, eggs, fruit, vegetables, cereals, cheese, books, newspapers, periodicals, pharmaceutical products for human use, vehicles for disabled persons, social housing (VPO), prosthetics and implants. Sales → casilla 05/06. Purchases → casilla 28/29.
 
-| Field | Detail | Legal Basis |
-|-------|--------|-------------|
-| Who | Personas fisicas (individuals) and entidades en regimen de atribucion de rentas (partnerships) | LIVA Art. 122 |
-| Condition | Must also be in estimacion objetiva (modules) for IRPF | LIVA Art. 122.Dos |
-| How it works | IVA due calculated by fixed indices/modules based on activity type, not actual invoices | LIVA Art. 123 |
-| Input IVA | Deduction limited to cuotas soportadas supported by invoices for certain categories (capital assets, imports, intra-EU acquisitions) plus a fixed % for general expenses | LIVA Art. 123.Uno.C |
-| Filing | Modelo 303 quarterly: first 3 quarters are fixed instalments; Q4 is final annual calculation | RIVA Art. 40 |
-| Exclusion threshold | Annual turnover > EUR 250,000 (goods) or EUR 250,000 (services) | LIVA Art. 122.Dos.2 |
-| Incompatibility | Cannot be combined with regimen general for the same activity | LIVA Art. 122.Dos |
+### 5.4 Zero rate and exempt with credit
 
-**Flag as [T2]:** Module-based calculations require specific activity coefficients from AEAT published orders. Asesor Fiscal must determine the correct modules.
+Exports outside EU → exempt with right of deduction (Art. 21 LIVA), reported in casilla 60 informative. Intra-EU B2B supplies of goods → exempt with right of deduction (Art. 25 LIVA), reported in Modelo 349. Intra-EU B2B services → place of supply is customer's country (Art. 69 LIVA), reported in Modelo 349.
 
-### Regimen de Recargo de Equivalencia (Equivalence Surcharge for Retailers) [T1]
+### 5.5 Exempt without credit (Art. 20 LIVA)
 
-**Legislation:** LIVA Art. 148-163.
+Medical services, education, insurance, financial services, postal universal service, residential lettings, social welfare. These supplies are excluded from the return — no output VAT, no input VAT deduction on related costs. If significant → R-ES-6 prorrata refusal fires.
 
-| Field | Detail | Legal Basis |
-|-------|--------|-------------|
-| Who | Personas fisicas (individuals) who are comerciantes minoristas (retailers) selling goods acquired without transformation | LIVA Art. 148 |
-| Definition of minorista | > 80% of sales in prior year were to end consumers (not empresarios) | LIVA Art. 149 |
-| How it works | Supplier charges IVA + surcharge on the invoice. Retailer does NOT file Modelo 303. | LIVA Art. 154-156 |
-| No input IVA recovery | Retailer cannot deduct any input IVA | LIVA Art. 154.Dos |
-| No IVA books | Retailer is NOT required to keep libro registro de IVA | LIVA Art. 157 |
+### 5.6 Local standard purchases
 
-#### Surcharge Rates [T1]
+Input VAT on a compliant factura from a Spanish supplier is deductible for purchases used in taxable business activity. Subject to blocked-input rules (5.12) and bienes de inversion threshold (5.9). Map to casilla 28/29 (corrientes) or 30/31 (bienes de inversion).
 
-| IVA Rate | Surcharge Rate (Recargo) | Combined Rate | Legal Basis |
-|----------|------------------------|---------------|-------------|
-| 21% | 5.2% | 26.2% | LIVA Art. 161.1 |
-| 10% | 1.4% | 11.4% | LIVA Art. 161.2 |
-| 4% | 0.5% | 4.5% | LIVA Art. 161.3 |
-| 0% | 0% | 0% | LIVA Art. 161 |
-| Tobacco | 1.75% | varies | LIVA Art. 161.5 |
+### 5.7 Reverse charge — intra-EU services received (Art. 84.Uno.2 LIVA)
 
-#### Casillas for Recargo (Supplier/Wholesaler Reporting) [T1]
+When the client receives a service from an EU supplier and the supplier invoices at 0% with a reverse-charge note: output base → casilla 17, output IVA → casilla 18, input base → casilla 32, input IVA → casilla 33. Net effect zero. If the EU supplier charged their local VAT (e.g. Irish 23%), that is NOT reverse charge — treat as irrecoverable foreign VAT.
 
-| IVA Rate | Recargo Rate | Casilla (Base) | Casilla (Rate) | Casilla (Tax) |
-|----------|-------------|----------------|----------------|---------------|
-| 4% | 0.5% | 14 | -- | 15 |
-| 10% | 1.4% | 16 | -- | 17 |
-| 21% | 5.2% | 18 | -- | 19 |
-| Tobacco | 1.75% | 22 | -- | 23 |
+### 5.8 Reverse charge — intra-EU goods received (Art. 13 LIVA)
 
-**Critical:** [T2] If retailer also provides services or transforms goods, regimen general applies to those activities. Mixed activity requires Asesor Fiscal confirmation.
+Physical goods from an EU supplier: output base → casilla 15, output IVA → casilla 16, input base → casilla 32, input IVA → casilla 33.
 
-### NIF-IVA Format Reference [T1]
+### 5.9 Reverse charge — non-EU services and imports
 
-| Entity Type | Format | Example |
-|------------|--------|---------|
-| Sociedad (company) | ES + letter + 8 digits | ESB12345678 |
-| Persona fisica (individual) | ES + 8 digits + letter | ES12345678A |
-| Non-resident entity | ES + N + 7 digits + letter | ESN1234567A |
-| Foreign entity with Spanish establishment | ES + W + 7 digits + letter | ESW1234567A |
+Services from non-EU → Art. 84.Uno.2 LIVA: output base → casilla 19, output IVA → casilla 20, input base → casilla 36, input IVA → casilla 37. Physical goods imports: import IVA is paid at customs (DUA) and recovered via casilla 36/37.
+
+### 5.10 Investment goods — bienes de inversion (Art. 108–110 LIVA)
+
+Assets with useful life > 1 year and net acquisition cost > EUR 3,005.06: casilla 30/31 (domestic), casilla 34/35 (intra-EU), casilla 38/39 (imports). Subject to a 4-year adjustment period (9 years for immovable property). If gross < threshold → casilla 28/29 (ordinary input).
+
+### 5.11 Vehicle deduction — 50% presumption (Art. 95.Tres.2 LIVA)
+
+Passenger vehicles (turismos) and related expenses (fuel, maintenance, insurance premiums for the vehicle itself — but insurance is exempt anyway): rebuttable presumption of 50% business use. Apply 50% input IVA recovery by default. Vehicles used exclusively for: taxi/VTC, driving school, commercial transport, or traveling sales → 100% deduction. The 50% presumption does NOT apply to vans (furgonetas), trucks, or motorbikes used for delivery.
+
+### 5.12 Restricted input VAT (Art. 96 LIVA)
+
+The following categories have restricted or no VAT recovery:
+- Jewellery, precious stones, and furs (Art. 96.Uno.1)
+- Food, drink, and tobacco (Art. 96.Uno.2) — unless hospitality/catering business
+- Spectacles and entertainment (Art. 96.Uno.3) — for client entertainment
+- Services related to the above (Art. 96.Uno.4)
+- Gifts and samples above EUR 200 per recipient per year (Art. 96.Uno.5) — IVA deductible below threshold
+
+Unlike Malta, Spain does NOT have a hard block on entertainment. The IVA on business meals CAN be deductible if the expense is strictly necessary and directly related to the business activity. However, the conservative default is to block — the burden of proof is on the taxpayer.
+
+### 5.13 SII — Suministro Inmediato de Informacion (RD 596/2016)
+
+SII-obliged entities must report invoices to AEAT within 4 calendar days of issue (sales) or accounting date (purchases). SII is mandatory for monthly filers. If client is SII-obliged, note in the reviewer brief that invoice data must match the SII submissions.
+
+### 5.14 Modelo 390 — annual summary
+
+Modelo 390 is an annual informative declaration summarizing all periodic Modelo 303 filings. Due by 30 January following the tax year. SII-obliged entities are exempt from filing Modelo 390 (since 2017).
+
+### 5.15 Modelo 349 — recapitulative declaration
+
+Quarterly (or monthly if intra-EU operations exceed EUR 50,000 in any quarter): declares all intra-EU supplies and acquisitions. Must reconcile with casillas 15–18 and informative casilla 59.
 
 ---
 
-## Step 7: Filing Deadlines [T1]
+## Section 6 — Tier 2 catalogue (compressed)
 
-**Legislation:** RIVA Art. 71-72; LIVA Art. 167.
+For each ambiguity type: pattern, why the bank statement is insufficient, conservative default, question for the structured form.
 
-### Modelo 303 -- Quarterly Filers
+### 6.1 Fuel and vehicle costs
 
-| Period | Quarter | Filing Window | Legal Basis |
-|--------|---------|--------------|-------------|
-| 1T (Jan-Mar) | Q1 | 1-20 April | RIVA Art. 71.4 |
-| 2T (Apr-Jun) | Q2 | 1-20 July | RIVA Art. 71.4 |
-| 3T (Jul-Sep) | Q3 | 1-20 October | RIVA Art. 71.4 |
-| 4T (Oct-Dec) | Q4 | 1-30 January (following year) | RIVA Art. 71.4 |
+*Pattern:* Repsol, Cepsa, BP, Shell, Galp, fuel receipts. *Why insufficient:* vehicle type and business-use proportion unknown. *Default:* 50% recovery for passenger vehicles (Art. 95.Tres.2 LIVA presumption). *Question:* "Is this fuel for a passenger car (50% presumption), a commercial vehicle (100%), or personal use (0%)?"
 
-**Note:** Q4 has an extended deadline (30 January) to allow for annual regularisation.
+### 6.2 Restaurants and entertainment
 
-### Modelo 303 -- Monthly Filers (SII / REDEME / Large Companies)
+*Pattern:* any named restaurant, bar, cafeteria. *Why insufficient:* business necessity unclear. *Default:* block. *Question:* "Was this a business meal strictly necessary for the activity? (Note: conservative default is to block — reviewer must confirm deductibility under Art. 96 LIVA.)"
 
-| Period | Filing Deadline | Legal Basis |
-|--------|----------------|-------------|
-| January - November | 1st to 30th of following month (e.g., January filed by 28 February; note: for months with fewer than 30 days, the last calendar day applies) | RIVA Art. 71.4 |
-| December | 1-30 January (following year) | RIVA Art. 71.4 |
+### 6.3 Ambiguous SaaS billing entities
 
-### Monthly Filing Triggers [T1]
+*Pattern:* Google, Microsoft, Adobe, Meta, Slack, Zoom, LinkedIn, Apple, Amazon, Dropbox, Atlassian, Stripe where the legal entity is not visible. *Why insufficient:* same brand can bill from Ireland (EU reverse charge casilla 17/18), US (non-EU reverse charge casilla 19/20), or Spain (domestic 21%). *Default:* non-EU reverse charge casilla 19/20 + 36/37. *Question:* "Could you check the most recent invoice? I need the legal entity name and country."
 
-| Trigger | Threshold | Legal Basis |
-|---------|-----------|-------------|
-| Large company (gran empresa) | Turnover > EUR 6,010,121.04 in prior year | RIVA Art. 71.3 |
-| REDEME (Registro de Devolucion Mensual) | Voluntary registration; enables monthly refunds | RIVA Art. 30 |
-| SII (Suministro Inmediato de Informacion) | Mandatory for all monthly filers | RD 596/2016 |
-| Grupo de IVA (VAT group) | All group members | LIVA Art. 163 quinquies |
+### 6.4 Round-number incoming transfers from owner-named counterparties
 
-### Other Returns
+*Pattern:* large round credit from a name matching the client's name. *Default:* exclude as owner injection. *Question:* "The EUR X transfer from [name] — is this a customer payment, your own funds, or a loan?"
 
-| Return | Period | Deadline | Who Must File | Legal Basis |
-|--------|--------|----------|---------------|-------------|
-| Modelo 390 (annual summary) | Annual | 1-30 January | All filers EXCEPT SII-obliged entities | RIVA Art. 71.4 |
-| Modelo 349 (EU recapitulative) | Quarterly or monthly | Same as Modelo 303 | Entities with intra-EU transactions | RIVA Art. 78-81 |
-| Modelo 347 (annual third-party > EUR 3,005.06) | Annual | 1-28 February | All entities with qualifying transactions | RIVA Art. 31-35 |
-| SII reporting (replaced Modelo 340) | Real-time (4 calendar days, excluding Saturdays, Sundays, and national holidays) | Within 4 calendar days of invoice issuance (sales) or accounting date (purchases) | SII-obliged entities | RD 596/2016; RIVA Art. 69 bis |
+### 6.5 Incoming transfers from individual names (not owner)
 
-### Late Filing Penalties (Recargos por Declaracion Extemporanea) [T1]
+*Pattern:* incoming from private-looking counterparties. *Default:* domestic B2C sale at 21%, casilla 01/02. *Question:* "Was it a sale? Business or consumer? Country?"
 
-**Legislation:** Ley General Tributaria (LGT) Art. 27.
+### 6.6 Incoming transfers from foreign counterparties
 
-| Delay | Recargo (Surcharge) | Interest | Legal Basis |
-|-------|---------------------|----------|-------------|
-| 1 complete month late | 1% | None | LGT Art. 27.2 (as amended by Ley 11/2021) |
-| 2 complete months late | 2% | None | LGT Art. 27.2 |
-| 3 complete months late | 3% | None | LGT Art. 27.2 |
-| 4 complete months late | 4% | None | LGT Art. 27.2 |
-| 5 complete months late | 5% | None | LGT Art. 27.2 |
-| 6 complete months late | 6% | None | LGT Art. 27.2 |
-| 7 complete months late | 7% | None | LGT Art. 27.2 |
-| 8 complete months late | 8% | None | LGT Art. 27.2 |
-| 9 complete months late | 9% | None | LGT Art. 27.2 |
-| 10 complete months late | 10% | None | LGT Art. 27.2 |
-| 11 complete months late | 11% | None | LGT Art. 27.2 |
-| 12 complete months late | 12% | None | LGT Art. 27.2 |
-| > 12 months late | 15% | + intereses de demora from month 13 | LGT Art. 27.2 |
-| AEAT-initiated (requerimiento) | 50-150% sanction | + intereses de demora | LGT Art. 191-195 |
+*Pattern:* foreign IBAN or foreign currency. *Default:* domestic 21%. *Question:* "B2B with VAT number, B2C, goods or services, which country?"
 
-**Note:** Under Ley 11/2021 reform, the surcharge is 1% plus 1% for each additional complete month of delay (up to 12 months). Surcharges may be reduced by 25% if paid within the voluntary period (LGT Art. 27.5).
+### 6.7 Large one-off purchases (potential bienes de inversion)
 
----
+*Pattern:* single invoice EUR 2,500–3,500 range or labelled "ordenador", "equipo", "maquinaria". *Default:* if net > EUR 3,005.06 → casilla 30/31; if net <= EUR 3,005.06 → casilla 28/29. *Question:* "Confirm the total invoice amount including IVA."
 
-## Step 8: SII -- Suministro Inmediato de Informacion [T1]
+### 6.8 Mixed-use phone, internet, home office
 
-**Legislation:** RD 596/2016; RIVA Art. 69 bis.
+*Pattern:* Movistar, Vodafone, Orange personal lines; home electricity. *Default:* 0% if mixed without declared %. *Question:* "Is this a dedicated business line or mixed-use? What business percentage?"
 
-### Overview
+### 6.9 Outgoing transfers to individuals
 
-| Field | Detail |
-|-------|--------|
-| What | Real-time electronic reporting of invoice details to AEAT |
-| Who must use SII | All entities filing monthly Modelo 303: large companies (> EUR 6,010,121.04), REDEME registrants, VAT groups (grupo de IVA) |
-| Voluntary | Any entity may opt in voluntarily via Modelo 036 |
-| Reporting deadline | Within 4 calendar days of invoice date (issuance for sales; accounting date for purchases). Saturdays, Sundays, and national holidays are excluded from the count. |
-| Books reported | Libro registro de facturas expedidas, libro registro de facturas recibidas, libro registro de bienes de inversion, libro registro de operaciones intracomunitarias |
+*Pattern:* outgoing to private-looking names. *Default:* exclude as drawings. *Question:* "Was this a contractor (with factura), salary, refund, or personal transfer?"
 
-### SII Reporting Requirements [T1]
+### 6.10 Cash withdrawals
 
-| Book | Spanish Name | Content | Deadline |
-|------|-------------|---------|----------|
-| Sales invoices | Libro registro de facturas expedidas | Invoice number, date, counterparty NIF, base, rate, tax, type of operation | 4 calendar days from invoice date (excl. Sat/Sun/national holidays) |
-| Purchase invoices | Libro registro de facturas recibidas | Invoice number, date, supplier NIF, base, rate, deductible tax | 4 calendar days from accounting date (excl. Sat/Sun/national holidays) |
-| Capital goods | Libro registro de bienes de inversion | Asset details, acquisition date, amounts, prorrata adjustments | Annual |
-| Intra-EU operations | Libro registro de operaciones intracomunitarias | Details of all intra-EU acquisitions and supplies | 4 calendar days (excl. Sat/Sun/national holidays) |
+*Pattern:* ATM, cajero, reintegro. *Default:* exclude as personal drawing. *Question:* "What was the cash used for?"
 
-### SII Benefits and Implications [T1]
+### 6.11 Rent payments
 
-| Benefit | Detail |
-|---------|--------|
-| No Modelo 390 required | SII entities are exempt from filing the annual summary | RD 596/2016 |
-| No Modelo 347 required | SII entities are exempt from the annual third-party declaration | RD 596/2016 |
-| Extended Modelo 303 deadline | Monthly filers on SII have until last day of following month (not 20th) | RIVA Art. 71.4 |
-| Monthly refund eligibility | SII entities can obtain monthly refunds | RIVA Art. 30 |
-| Reduced inspection risk | Real-time data reduces likelihood of discrepancies | Administrative practice |
-| Verifactu (future) | From 2027, businesses NOT in SII will be required to use Verifactu-compliant invoicing software (RD-Ley 15/2025 delayed: corporates from 1 Jan 2027; others from 1 Jul 2027). SII-obliged entities are exempt from Verifactu. | Ley 11/2021 Art. 29.2.j; RD 1007/2023; RD-Ley 15/2025 |
+*Pattern:* monthly "alquiler", "renta" to a landlord name. *Default:* no IVA recovery (residential assumption). *Question:* "Is this a commercial property? Does the landlord charge IVA on the rent?"
+
+### 6.12 Foreign hotel and accommodation (non-Spain)
+
+*Pattern:* hotel abroad. *Default:* exclude from input IVA. *Question:* "Was this a business trip?" (For IRPF, the expense may still be deductible.)
+
+### 6.13 Amazon purchases
+
+*Pattern:* Amazon.es, Amazon EU SARL. *Why insufficient:* Amazon can sell as Amazon Spain (domestic 21%), Amazon EU SARL Luxembourg (EU reverse charge), or third-party marketplace seller. *Default:* domestic 21% for Amazon.es retail. *Question:* "Was this purchased from Amazon directly or a third-party seller? Check the factura."
+
+### 6.14 IRPF withholding on professional invoices
+
+*Pattern:* incoming payment that is less than the invoiced amount by exactly 15% or 7%. *Why insufficient:* the payer withheld IRPF retencion. *Default:* gross up the payment to the full invoice amount for IVA base calculation. *Question:* "Confirm the invoice amount before IRPF retention."
+
+### 6.15 Platform sales (Amazon, eBay, Wallapop, Etsy)
+
+*Pattern:* incoming from platform settlements. *Default:* if selling to EU consumers across multiple countries above EUR 10,000, R-EU-5 OSS refusal fires. For Spain-only: treat gross as casilla 01/02 base at 21%; platform fees as separate reverse charge casilla 17/18 (IE entity). *Question:* "Do you sell to buyers outside Spain? Total EU cross-border sales for the year?"
 
 ---
 
-## Step 9: Prorrata de Deduccion (Proportional Deduction) [T2]
+## Section 7 — Excel working paper template (Spain-specific)
 
-**Legislation:** LIVA Art. 102-106; RIVA Art. 28.
+The base specification is in `vat-workflow-base` Section 3. This section provides the Spain-specific overlay.
 
-### When Prorrata Applies
+### Sheet "Transactions"
 
-When a taxpayer makes BOTH taxable supplies (with right of deduction) AND exempt supplies (without right of deduction), input IVA can only be partially deducted.
+Columns A–L per the base. Column H ("Casilla code") accepts only valid Modelo 303 casilla codes from Section 1 of this skill. Use blank for excluded transactions. For reverse-charge transactions, enter both the output casilla (e.g. 17) and the input casilla (e.g. 32) separated by a slash in column H.
 
-### Prorrata General (General Pro-Rata) [T2]
+### Sheet "Casilla Summary"
 
-**Formula:**
+One row per casilla. Column A is the casilla number, column B is the description, column C is the value computed via formula. Mandatory rows:
 
 ```
-% deduccion = [(Taxable turnover + Exempt-with-deduction-right turnover) / Total turnover] x 100
+Output:
+| 01 | Output base 21% | =SUMIFS(Transactions!E:E, Transactions!H:H, "01") |
+| 02 | Output IVA 21% | =Casilla_Summary!C[01_row]*0.21 |
+| 03 | Output base 10% | =SUMIFS(Transactions!E:E, Transactions!H:H, "03") |
+| 04 | Output IVA 10% | =Casilla_Summary!C[03_row]*0.10 |
+| 05 | Output base 4% | =SUMIFS(Transactions!E:E, Transactions!H:H, "05") |
+| 06 | Output IVA 4% | =Casilla_Summary!C[05_row]*0.05 |
+| 15 | Output base intra-EU goods | =SUMIFS(Transactions!E:E, Transactions!H:H, "15") |
+| 16 | Output IVA intra-EU goods | =C[15_row]*0.21 |
+| 17 | Output base intra-EU services | =SUMIFS(Transactions!E:E, Transactions!H:H, "17") |
+| 18 | Output IVA intra-EU services | =C[17_row]*0.21 |
+| 19 | Output base non-EU reverse charge | =SUMIFS(Transactions!E:E, Transactions!H:H, "19") |
+| 20 | Output IVA non-EU reverse charge | =C[19_row]*0.21 |
+| 27 | Total output IVA | =SUM(C[02],C[04],C[06],C[16],C[18],C[20]) |
+
+Input:
+| 28 | Input base domestic current | =SUMIFS(Transactions!E:E, Transactions!H:H, "28") |
+| 29 | Input IVA domestic current | =variable rate — use SUMIFS on VAT column |
+| 30 | Input base investment goods | =SUMIFS(Transactions!E:E, Transactions!H:H, "30") |
+| 31 | Input IVA investment goods | =C[30_row]*0.21 |
+| 32 | Input base intra-EU current | =SUMIFS(Transactions!E:E, Transactions!H:H, "32") |
+| 33 | Input IVA intra-EU current | =C[32_row]*0.21 |
+| 36 | Input base imports/non-EU | =SUMIFS(Transactions!E:E, Transactions!H:H, "36") |
+| 37 | Input IVA imports/non-EU | =C[36_row]*0.21 |
+| 45 | Total input IVA | =SUM(C[29],C[31],C[33],C[35],C[37],C[39],C[41]) |
 ```
 
-| Rule | Detail | Legal Basis |
-|------|--------|-------------|
-| Rounding | Always round UP to next whole integer | LIVA Art. 104.Dos |
-| Threshold | If prorrata >= 99%, treat as 100% (full deduction) | LIVA Art. 104.Dos.2 |
-| Provisional | Apply provisional prorrata (from prior year) during Q1-Q3 | LIVA Art. 105.Uno |
-| Definitive | Calculate definitive prorrata in Q4 and regularise | LIVA Art. 105.Dos |
-| Regularisation | Adjustment in Casilla 42 of Q4 Modelo 303 | LIVA Art. 105 |
+### Sheet "Return Form"
 
-### Prorrata Especial (Special Pro-Rata / Sector Differentiation) [T2]
-
-**Legislation:** LIVA Art. 106.
-
-When a taxpayer has clearly differentiated sectors of activity (sectores diferenciados), each sector applies its own prorrata:
-
-| Rule | Detail | Legal Basis |
-|------|--------|-------------|
-| When required | Mandatory if prorrata general would distort deduction by > 10% in any sector | LIVA Art. 103.Dos |
-| Optional | Taxpayer may voluntarily elect prorrata especial | LIVA Art. 103.Dos |
-| How it works | Each sector calculates its own deduction % | LIVA Art. 106 |
-| Common costs | Allocated using prorrata general to common costs not attributable to any single sector | LIVA Art. 106.Dos |
-
-**Flag for reviewer [T2]:** Prorrata calculation must be confirmed by Asesor Fiscal. Both provisional and definitive rates require professional judgement.
-
----
-
-## Step 10: Key Thresholds [T1]
-
-| Threshold | Value | Legal Basis |
-|-----------|-------|-------------|
-| Capital goods -- movable (bienes de inversion) | > EUR 3,005.06 acquisition cost | LIVA Art. 108.Uno |
-| Capital goods -- immovable | Always capital regardless of value | LIVA Art. 108.Dos |
-| Capital goods regularisation period -- movable | 5 years | LIVA Art. 107.Uno |
-| Capital goods regularisation period -- immovable | 10 years | LIVA Art. 107.Uno |
-| Monthly filing trigger (gran empresa) | Turnover > EUR 6,010,121.04 in prior year | RIVA Art. 71.3 |
-| SII mandatory | All monthly filers | RD 596/2016 |
-| Vehicle business use presumption | 50% (rebuttable) | LIVA Art. 95.Tres.2 |
-| Prorrata rounding | >= 99% = treat as 100% | LIVA Art. 104.Dos.2 |
-| Recargo de equivalencia eligibility | Personas fisicas, > 80% sales to end consumers, goods sold without transformation | LIVA Art. 148-149 |
-| Anti-fraud reverse charge (electronics) | Invoice > EUR 5,000 | LIVA Art. 84.Uno.2.g |
-| Modelo 347 reporting threshold | > EUR 3,005.06 annual transactions with single counterparty | RIVA Art. 33 |
-| Regimen simplificado exclusion | Annual turnover > EUR 250,000 | LIVA Art. 122.Dos.2 |
-
----
-
-## PROHIBITIONS [T1]
-
-1. NEVER let AI guess casilla numbers -- they are 100% deterministic from facts. LIVA Art. 164.
-2. NEVER apply Canary Islands, Ceuta, or Melilla rules in this skill -- IGIC and IPSI are entirely separate tax regimes. LIVA Art. 3.Dos. Escalate as [T3].
-3. NEVER allow recargo de equivalencia clients to file Modelo 303 or claim input IVA. LIVA Art. 154.Dos.
-4. NEVER apply reverse charge to out-of-scope categories (wages, loans, dividends, bank charges). Not a supply under LIVA Art. 4.
-5. NEVER apply reverse charge to local consumption services abroad (hotel, restaurant, taxi in another EU country). LIVA Art. 70.
-6. NEVER classify vehicles at 100% business use without documented evidence proving exclusive business use -- default is always 50%. LIVA Art. 95.Tres.2.
-7. NEVER allow entertainment or gift deductions -- blocked under LIVA Art. 96.Uno.5 with no exceptions.
-8. NEVER confuse zero-rated (exempt with right of deduction -- exports, intra-EU supplies) with exempt without right of deduction (Art. 20 LIVA). The former allows input IVA recovery; the latter does not.
-9. NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.
-10. NEVER file Modelo 390 for SII-obliged entities -- they are exempt from this obligation. RD 596/2016.
-11. NEVER apply regimen simplificado to Sociedades (companies) -- only available to personas fisicas and entidades en regimen de atribucion de rentas. LIVA Art. 122.
-12. NEVER allow a recargo de equivalencia retailer to deduct input IVA on intra-EU acquisitions -- the supplier must charge the surcharge or the retailer must self-assess it. LIVA Art. 157.
-13. NEVER accept an invoice without the notation "Inversion del sujeto pasivo" as a valid reverse charge invoice -- RIVA Art. 6.1.k requires this notation.
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- EU hotel / restaurant / taxi booked abroad [T1]
-
-**Situation:** Client pays hotel in France. Invoice shows French TVA.
-**Resolution:** NOT reverse charge. Foreign VAT paid at source. No Modelo 303 entry. Irrecoverable foreign VAT embedded in expense. The service is consumed locally abroad.
-**Legislation:** LIVA Art. 70.Uno.1 (place of supply for immovable property-related services); Art. 70.Uno.5 (restaurant and catering services localised where performed).
-
-### EC2 -- SaaS subscription from US provider [T1]
-
-**Situation:** US company charges EUR 100/month for cloud software, no IVA on invoice.
-**Resolution:** Reverse charge applies. Output: Casilla 12 = EUR 100 (base), Casilla 13 = EUR 21 (21%). Input: Casilla 28 = EUR 100, Casilla 29 = EUR 21 (if fully taxable business; non-EU services go to domestic input casillas, not import casillas). Net = zero.
-**Legislation:** LIVA Art. 84.Uno.2.a; Art. 69.Uno (place of supply for B2B services).
-
-### EC3 -- Construction subcontracting (inversion del sujeto pasivo) [T1]
-
-**Situation:** Subcontractor provides construction works (ejecucion de obra) to a main contractor (contratista principal). Both are registered in Spain.
-**Resolution:** Reverse charge under Art. 84.Uno.2.f LIVA. Subcontractor invoices WITHOUT IVA, noting "Inversion del sujeto pasivo." Main contractor self-assesses: Output Casilla 12/13, Input Casilla 28/29 (or 30/31 if capital). Applies to: construction, renovation, demolition, urbanisation works where recipient is a developer or contractor who will in turn supply the works to a third party.
-**Legislation:** LIVA Art. 84.Uno.2.f; RIVA Art. 6.1.k.
-
-### EC4 -- Company car (vehiculo turismo) [T2]
-
-**Situation:** Client purchases car for EUR 25,000 + EUR 5,250 IVA (21%).
-**Resolution:** Presumed 50% business use. Input IVA deductible = EUR 2,625 (50%). Casilla 28 = EUR 12,500, Casilla 29 = EUR 2,625. If client can prove exclusive business use (e.g., vehicle is a commercial van, taxi, driving school car), 100% deductible. Flag for reviewer: request evidence of exclusive business use before allowing 100%.
-**Legislation:** LIVA Art. 95.Tres.2.
-
-### EC5 -- Client gifts and entertainment [T1]
-
-**Situation:** Client gives Christmas gift baskets (cestas de Navidad) worth EUR 500 + EUR 105 IVA to clients.
-**Resolution:** IVA NOT deductible. Entertainment and gifts to clients are BLOCKED under Art. 96.Uno.5 LIVA. No exceptions. Casilla 29 = EUR 0 for this item. The expense is recognised for income tax purposes (with limitations under Impuesto sobre Sociedades) but IVA is irrecoverable.
-**Legislation:** LIVA Art. 96.Uno.5.
-
-### EC6 -- Intra-Community supply of goods (entrega intracomunitaria) [T1]
-
-**Situation:** Client sells goods to German business (B2B), ships goods from Spain to Germany.
-**Resolution:** Exempt with right of deduction. No output IVA on Modelo 303. Report in Modelo 349 (recapitulative statement). Conditions: (i) buyer must be registered for VAT in another EU state; (ii) goods must physically leave Spain; (iii) client must have buyer's NIF-IVA and verify via VIES.
-**Legislation:** LIVA Art. 25; RIVA Art. 13.
-
-### EC7 -- Credit notes (facturas rectificativas) [T1]
-
-**Situation:** Client receives credit note from supplier correcting a prior invoice.
-**Resolution:** Reduce the original casilla entries by the credit note amount. Use Casillas 24/25 for modifications to output IVA bases/tax. For input IVA, reduce the relevant input casilla (28/29, 32/33, etc.). Report net figures. A factura rectificativa must reference the original invoice and comply with RIVA Art. 15.
-**Legislation:** LIVA Art. 80 (modification of bases); RIVA Art. 15 (rectification invoices).
-
-### EC8 -- Canary Islands transaction [T3]
-
-**Situation:** Client sells goods to customer in Canary Islands.
-**Resolution:** ESCALATE. IGIC (Impuesto General Indirecto Canario) applies, not IVA. The supply is treated similarly to an export from the TAI. For IVA purposes, the supply is exempt with right of deduction under LIVA Art. 21.2. However, the Canary Islands customer may owe IGIC on importation. Do NOT attempt to calculate IGIC -- different regime entirely.
-**Legislation:** LIVA Art. 3.Dos; Art. 21.2.
-
-### EC9 -- RECC (Regimen Especial del Criterio de Caja) [T2]
-
-**Situation:** Client is registered under the cash-basis IVA regime.
-**Resolution:** Under RECC, output IVA (IVA devengado) is not due until payment is received from the customer, rather than at invoice date. Input IVA (IVA soportado) is not deductible until payment is made to the supplier. Both the RECC taxpayer and their trading partners are affected (the customer of a RECC supplier cannot deduct input IVA until they pay). RECC invoices must be annotated "Regimen especial del criterio de caja." Cash basis applies up to 31 December of the year following the invoice date (longstop date). Flag for reviewer: timing of all deductions changes.
-**Legislation:** LIVA Art. 163 decies-163 sexdecies; RIVA Art. 61 decies-61 sexdecies.
-
-### EC10 -- SII real-time reporting obligation [T1]
-
-**Situation:** Client is a large company (turnover > EUR 6,010,121.04) and is obliged to use SII.
-**Resolution:** Client must report all invoices electronically to AEAT within 4 calendar days (excluding Saturdays, Sundays, and national holidays) of issuance (sales) or accounting date (purchases). Files monthly Modelo 303 (not quarterly). Exempt from Modelo 390 and Modelo 347. SII data must include: invoice type (F1, F2, etc.), operation key (01-15), counterparty NIF, base, rate, and tax amount.
-**Legislation:** RD 596/2016; RIVA Art. 69 bis.
-
-### EC11 -- Operaciones triangulares (triangular operations / EU simplification) [T2]
-
-**Situation:** Spanish company (A) buys goods from French company (B), but the goods are shipped directly from France to a German customer (C). A never takes physical possession in Spain.
-**Resolution:** This is an operacion triangular (ABC transaction) under the EU simplification. Company A is the intermediary. The intra-EU acquisition by A is deemed to take place in Germany (where goods arrive). Company A invoices C without IVA, noting "Operacion triangular -- Art. 141 Directiva 2006/112/CE." C self-assesses IVA in Germany. A reports the triangulation in Modelo 349 using the specific operation key "T." Flag for Asesor Fiscal to confirm the chain qualifies.
-**Legislation:** LIVA Art. 26 (triangular simplification); Directive 2006/112/EC Art. 141.
-
-### EC12 -- Regimen especial de bienes usados (second-hand goods margin scheme) [T2]
-
-**Situation:** Client is a dealer in second-hand goods (coches de segunda mano, antiguedades, objetos de arte).
-**Resolution:** Under the margin scheme, IVA is charged only on the profit margin (difference between selling price and purchase price), not on the full selling price. The dealer cannot deduct input IVA on goods purchased for resale under this regime. Invoices must NOT show IVA separately. The margin scheme cannot be applied if the goods were acquired with a right of deduction. Flag for Asesor Fiscal: verify each transaction qualifies.
-**Legislation:** LIVA Art. 135-139; RIVA Art. 50-51.
-
-### EC13 -- Prorrata de deduccion -- mixed taxable and exempt [T2]
-
-**Situation:** Client is a medical practice (exempt under Art. 20.Uno.3 LIVA) that also provides taxable cosmetic surgery services.
-**Resolution:** The practice makes both exempt supplies (no deduction right) and taxable supplies (deduction right). Prorrata de deduccion applies. Calculate provisional prorrata at start of year based on prior year's ratio. Apply to all input IVA. Regularise in Q4 with definitive prorrata. If prorrata >= 99%, treat as 100%. If sectors are clearly differentiated, prorrata especial may be mandatory (Art. 103.Dos LIVA).
-**Legislation:** LIVA Art. 102-106.
-
-### EC14 -- Bad debt relief (modificacion de base por creditos incobrables) [T1]
-
-**Situation:** Client issued invoice over 6 months ago and customer has not paid.
-**Resolution:** After 6 months from accrual (1 year for large companies), if the debt has been claimed judicially or through notarial requirement, the base can be modified downward. Output IVA previously reported is recovered. Report in Casillas 24/25. Must issue factura rectificativa and notify AEAT. Customer must adjust their input IVA deduction.
-**Legislation:** LIVA Art. 80.Cuatro; RIVA Art. 24.
-
-### EC15 -- Fuel card / fleet card purchases [T1]
-
-**Situation:** Client uses a fuel card (e.g., Repsol, Cepsa) for business vehicles.
-**Resolution:** Fuel for vehicles with 50% presumed business use: 50% of IVA deductible. Fuel for 100%-proven business vehicles (vans, trucks, taxis): 100% deductible. The fuel card statement must include valid factura data (NIF, base, IVA) per RIVA Art. 6. Simplified invoices (tickets) are NOT sufficient for deduction. Ensure the fuel card provider issues proper facturas.
-**Legislation:** LIVA Art. 95.Tres.2; RIVA Art. 6.
-
-### EC16 -- Intra-EU acquisition of goods by recargo de equivalencia retailer [T1]
-
-**Situation:** Retailer in recargo de equivalencia regime acquires goods from an EU supplier.
-**Resolution:** The retailer must self-assess both the IVA AND the recargo de equivalencia on the intra-EU acquisition, since the EU supplier cannot charge Spanish recargo. The retailer must file a special Modelo 309 for these acquisitions. This is an exception to the general rule that recargo retailers do not file returns.
-**Legislation:** LIVA Art. 157; RIVA Art. 17.
-
----
-
-## Step 12: Comparison with Malta
-
-| Feature | Spain (IVA) | Malta (VAT) |
-|---------|------------|-------------|
-| **Primary legislation** | Ley 37/1992 (LIVA) | VAT Act Cap. 406 |
-| **Standard rate** | 21% (LIVA Art. 90) | 18% (Cap. 406, 1st Schedule) |
-| **Reduced rates** | 10% and 4% (LIVA Art. 91) | 7%, 5%, 12% (Cap. 406, 5th Schedule) |
-| **Registration threshold** | None -- all economic activity triggers registration (LIVA Art. 164) | EUR 35,000 for Article 11 small enterprise exemption; Article 10 voluntary/mandatory |
-| **Return form** | Modelo 303 (quarterly/monthly) + Modelo 390 (annual) | VAT3 (quarterly) or Article 11 declaration (annual) |
-| **Filing portal** | Sede Electronica AEAT | CFR Online (cfr.gov.mt) |
-| **Quarterly deadline** | 20th of month after quarter (Q4 = 30 January) | 21st of month after quarter (e-filing); 14th (paper) |
-| **Capital goods threshold** | > EUR 3,005.06 movable; all immovable (LIVA Art. 108) | >= EUR 1,160 gross (Cap. 406, Art. 24) |
-| **Motor vehicle deduction** | 50% presumed (LIVA Art. 95.Tres.2) | Fully blocked (10th Schedule Item 3(1)(a)(iv-v)) |
-| **Entertainment deduction** | Fully blocked (LIVA Art. 96.Uno.5) | Fully blocked (10th Schedule Item 3(1)(b)) |
-| **Reverse charge** | Art. 84.Uno.2 LIVA -- extensive list including construction, scrap, electronics > EUR 5,000 | Art. 19-20 Cap. 406 -- EU/non-EU acquisitions |
-| **Real-time reporting** | SII mandatory for monthly filers (RD 596/2016) | No equivalent |
-| **Surcharge regime** | Recargo de equivalencia for retailers (LIVA Art. 148-163) | No equivalent |
-| **Simplified regime** | Regimen simplificado for small traders (LIVA Art. 122-123) | Article 11 small enterprise exemption |
-| **Territorial exclusions** | Canary Islands (IGIC), Ceuta/Melilla (IPSI) (LIVA Art. 3.Dos) | None |
-| **Prorrata** | Prorrata general and especial (LIVA Art. 102-106) | Partial exemption (Art. 22(4)) |
-| **Cash basis option** | RECC (LIVA Art. 163 decies) | Not available |
-| **Annual summary** | Modelo 390 (except SII entities) | No separate annual summary |
-| **EU recapitulative** | Modelo 349 | Included in VAT3 |
-| **Late filing penalty** | Graduated surcharges 1%-15% + interest (LGT Art. 27) | Administrative penalties per CFR |
-| **NIF-IVA format** | ES + letter + 8 digits or ES + 8 digits + letter | MT + 8 digits |
-
-### Key Differences for Practitioners
-
-1. **No registration threshold in Spain** vs Malta's EUR 35,000 Article 11 exemption. In Spain, even the smallest autonomo must register and file. LIVA Art. 164.
-2. **Spain allows 50% vehicle deduction** (LIVA Art. 95.Tres.2) vs Malta's full block (10th Schedule). This is a significant planning difference.
-3. **Spain has SII real-time reporting** (RD 596/2016) with no Malta equivalent. Spanish large companies must report invoices within 4 days.
-4. **Recargo de equivalencia** (LIVA Art. 148-163) has no Malta counterpart. Retailers in Spain may be in a fundamentally different regime.
-5. **Territorial complexity** -- Spain has three distinct indirect tax zones (IVA/IGIC/IPSI) within its sovereign territory. Malta has a single unified system.
-6. **Modelo 390 annual summary** is required in Spain (unless SII). Malta has no separate annual reconciliation form.
-
----
-
-## Step 13: Test Suite
-
-### Test 1 -- Standard domestic purchase, 21% IVA [T1]
-
-**Input:** Spanish supplier, office supplies, gross EUR 242, IVA EUR 42 (21%), net EUR 200. Regimen general client.
-**Expected output:** Casilla 28 = EUR 200 (base), Casilla 29 = EUR 42 (input IVA deductible).
-**Legislation:** LIVA Art. 92; Art. 94.
-
-### Test 2 -- US software subscription, reverse charge [T1]
-
-**Input:** US provider (no EU establishment), EUR 100/month, no IVA on invoice. Regimen general client.
-**Expected output:** Output: Casilla 12 = EUR 100, Casilla 13 = EUR 21 (21%). Input: Casilla 28 = EUR 100, Casilla 29 = EUR 21 (non-EU services under reverse charge go to domestic input casillas). Net IVA effect = zero.
-**Legislation:** LIVA Art. 84.Uno.2.a; Art. 69.Uno.
-
-### Test 3 -- Intra-Community goods acquisition [T1]
-
-**Input:** German supplier ships goods to Spain, EUR 5,000, no IVA on invoice. Regimen general client.
-**Expected output:** Output: Casilla 10 = EUR 5,000, Casilla 11 = EUR 1,050 (21%). Input: Casilla 36 = EUR 5,000, Casilla 37 = EUR 1,050 (intra-EU acquisitions). Net = zero.
-**Legislation:** LIVA Art. 13; Art. 26.
-
-### Test 4 -- EU B2B sale of goods [T1]
-
-**Input:** Client sells goods to French business EUR 3,000, ships Spain to France. French buyer has valid NIF-IVA verified on VIES.
-**Expected output:** No output IVA on Modelo 303. Exempt with right of deduction. Report EUR 3,000 on Modelo 349.
-**Legislation:** LIVA Art. 25.
-
-### Test 5 -- Company car, 50% presumed [T2]
-
-**Input:** Client purchases passenger car EUR 25,000 + EUR 5,250 IVA (21%). No proof of exclusive business use.
-**Expected output:** Casilla 28 = EUR 12,500, Casilla 29 = EUR 2,625 (50% deductible). Flag for reviewer.
-**Legislation:** LIVA Art. 95.Tres.2.
-
-### Test 6 -- Entertainment dinner, blocked [T1]
-
-**Input:** Client entertainment dinner with clients EUR 330 including IVA EUR 30 (10% restaurant rate). Net EUR 300.
-**Expected output:** Casilla 29 = EUR 0 for this item. IVA BLOCKED under Art. 96.Uno.5 LIVA. No deduction regardless of business purpose.
-**Legislation:** LIVA Art. 96.Uno.5.
-
-### Test 7 -- EU hotel, local consumption [T1]
-
-**Input:** Client pays hotel in Italy EUR 400 including Italian IVA.
-**Expected output:** No Modelo 303 entry. Foreign IVA irrecoverable. Service consumed locally abroad.
-**Legislation:** LIVA Art. 70.Uno.1.
-
-### Test 8 -- Recargo de equivalencia purchase by retailer [T1]
-
-**Input:** Retailer (persona fisica in recargo regime) buys goods from Spanish wholesaler: EUR 1,000 net + EUR 210 IVA (21%) + EUR 52 recargo (5.2%). Wholesaler invoices all three amounts.
-**Expected output:** NO Modelo 303 entry by the retailer. The retailer does not file. The wholesaler reports the recargo in Casillas 18 (base EUR 1,000) and 19 (tax EUR 52) on their own Modelo 303.
-**Legislation:** LIVA Art. 154-156; Art. 161.
-
-### Test 9 -- Construction subcontracting reverse charge [T1]
-
-**Input:** Subcontractor invoices main contractor EUR 50,000 for construction works. Invoice states "Inversion del sujeto pasivo -- Art. 84.Uno.2.f LIVA." No IVA charged.
-**Expected output (for main contractor):** Output: Casilla 12 = EUR 50,000, Casilla 13 = EUR 10,500 (21%). Input: Casilla 28 = EUR 50,000, Casilla 29 = EUR 10,500. Net = zero (if fully taxable).
-**Legislation:** LIVA Art. 84.Uno.2.f.
-
-### Test 10 -- Capital goods purchase (domestic) [T1]
-
-**Input:** Client purchases industrial machinery for EUR 15,000 + EUR 3,150 IVA (21%). Cost > EUR 3,005.06 and useful life > 1 year.
-**Expected output:** Casilla 30 = EUR 15,000 (capital assets base), Casilla 31 = EUR 3,150 (capital assets IVA). Subject to 5-year regularisation period.
-**Legislation:** LIVA Art. 108.Uno; Art. 107.
-
-### Test 11 -- Sale at reduced rate (restaurant) [T1]
-
-**Input:** Client operates a restaurant. Total sales for quarter: EUR 50,000 net.
-**Expected output:** Casilla 04 = EUR 50,000, Casilla 05 = 10, Casilla 06 = EUR 5,000.
-**Legislation:** LIVA Art. 91.Uno.2.3.
-
-### Test 12 -- Scrap metal purchase (chatarra) -- reverse charge [T1]
-
-**Input:** Client (recycling company) purchases scrap metal from Spanish supplier for EUR 8,000. Supplier invoices without IVA, noting reverse charge.
-**Expected output:** Output: Casilla 12 = EUR 8,000, Casilla 13 = EUR 1,680 (21%). Input: Casilla 28 = EUR 8,000, Casilla 29 = EUR 1,680. Net = zero.
-**Legislation:** LIVA Art. 84.Uno.2.b.
-
-### Test 13 -- Fuel for company car (50% rule) [T1]
-
-**Input:** Client purchases fuel EUR 100 + EUR 21 IVA (21%) for passenger car with 50% presumed business use.
-**Expected output:** Casilla 28 = EUR 50, Casilla 29 = EUR 10.50 (50% deductible). Same proportion as the vehicle.
-**Legislation:** LIVA Art. 95.Tres.2.
-
----
-
-## Step 14: Out of Scope -- Direct Tax [T3]
-
-This skill does not compute income tax. The following is reference only. Escalate to Asesor Fiscal.
-
-- **IRPF (Impuesto sobre la Renta de las Personas Fisicas):** Progressive rates 19%-47%. For autonomos filing quarterly: Modelo 130 (estimacion directa) or Modelo 131 (estimacion objetiva/modulos).
-- **Impuesto sobre Sociedades (Corporate Tax):** 25% standard; 23% for entities with net turnover < EUR 1,000,000 in prior year. Filed annually via Modelo 200.
-- **Seguridad Social autonomos:** Separate obligation based on real income (since 2023 reform). Not related to IVA.
-- **IAE (Impuesto sobre Actividades Economicas):** Exempt if turnover < EUR 1,000,000. Municipal tax.
-- **IBI, ITP/AJD:** Property-related taxes. Separate regimes.
-
----
-
-## Step 15: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
+Final Modelo 303-ready figures:
 
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Asesor Fiscal must confirm before filing.
+Casilla 27 = Total output IVA
+Casilla 45 = Total input IVA deductible
+
+Casilla 46 = Casilla 27 - Casilla 45   [difference]
+Casilla 67 = Credit brought forward from prior period
+Casilla 69 = Casilla 46 - Casilla 67   [final result]
+
+Positive Casilla 69 → payable to AEAT (ingreso)
+Negative Casilla 69 → credit to carry forward (a compensar) or request refund (devolucion, only in Q4 annual or REDEME monthly)
 ```
 
-When Claude identifies a [T3] situation, output:
+### Color and formatting conventions
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to Asesor Fiscal. Document gap.
+Per the xlsx skill: blue for hardcoded values from the bank statement, black for formulas, green for cross-sheet references, yellow background for any row where Default? = "Y".
+
+### Mandatory recalc step
+
+After building the workbook, run:
+
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/spain-vat-<period>-working-paper.xlsx
 ```
 
 ---
 
-## Contribution Notes
+## Section 8 — Spanish bank statement reading guide
 
-Adapted from the Malta VAT Return Skill template. All legislation, casilla numbers, thresholds, and blocked categories are specific to Spain (Peninsula + Balearic Islands). Canary Islands (IGIC), Ceuta, and Melilla (IPSI) are excluded from this skill entirely.
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these Spain-specific patterns.
 
-**A skill may not be published without sign-off from an Asesor Fiscal in Spain.**
+**Extracto bancario format conventions.** Spanish bank statements (extractos bancarios) vary by institution but share common fields:
+
+- **CaixaBank:** CSV/Excel export from CaixaBankNow. Columns: Fecha (date DD/MM/YYYY), Concepto (description), Importe (amount, negative for debits), Saldo (balance). The concepto field often includes the beneficiary name after a dash.
+- **Santander:** Online export from Santander One. Columns: Fecha Valor, Fecha Operacion, Concepto, Importe, Saldo. Uses "ADEUDO" for debits, "ABONO" for credits.
+- **BBVA:** Export from BBVA app/web. Columns: Fecha, Concepto, Movimiento (Cargo/Abono), Importe, Disponible. "Cargo" = debit, "Abono" = credit.
+- **Bankinter:** Columns: Fecha, Descripcion, Debe (debit), Haber (credit), Saldo.
+- **Revolut/Wise/N26:** ISO date format (YYYY-MM-DD), English column headers, amount in EUR with sign.
+
+**Key Spanish-language terms in bank descriptions:**
+
+| Term | Meaning |
+|---|---|
+| Concepto | Description/reference |
+| Beneficiario | Payee |
+| Ordenante | Payer (on incoming) |
+| Cargo / Adeudo | Debit |
+| Abono / Ingreso | Credit |
+| Transferencia | Transfer |
+| Domiciliacion / Recibo | Direct debit / bill payment |
+| Bizum | Spanish instant payment (like Venmo) |
+| Reintegro / Cajero | Cash withdrawal / ATM |
+| Comision | Bank fee/commission |
+| Nomina | Salary payment |
+| Cuota autonomo | Self-employed social security payment |
+
+**Internal transfers and exclusions.** Own-account transfers between the client's CaixaBank, Santander, BBVA, Revolut accounts. Labelled "traspaso", "transferencia propia", "movimiento entre cuentas". Always exclude.
+
+**Self-employed (autonomo) draws.** A self-employed person (autonomo/persona fisica) cannot pay themselves wages — any transfer to a personal account is a drawing. Exclude.
+
+**IRPF retenciones.** Incoming payments from business clients may be net of 15% IRPF retention (or 7% for new autonomos in first 3 years). The bank statement shows the net amount received. The IVA base is the full invoice amount before retention. Always gross up.
+
+**Refunds and reversals.** Identify by "devolucion", "anulacion", "abono por devolucion". Book as a negative in the same casilla as the original transaction.
+
+**Foreign currency transactions.** Convert to EUR at the transaction date rate. Use the ECB reference rate. Note the rate in column L (Notes).
+
+**Bizum transactions.** Bizum is Spain's peer-to-peer instant payment. Business Bizum (Bizum Comercios) shows merchant names. Personal Bizum shows individual names. Default: exclude personal Bizum as non-business unless client confirms it was a customer payment.
+
+---
+
+## Section 9 — Onboarding fallback (only when inference fails)
+
+The workflow in `vat-workflow-base` Section 1 mandates inferring the client profile from the data first and only confirming in Step 4. The questionnaire below is a fallback.
+
+### 9.1 Entity type and trading name
+*Inference rule:* "autonomo" or personal name = sole trader; "SL", "SA", "SLU" = company. *Fallback:* "Are you an autonomo (persona fisica) or a company (SL/SA)?"
+
+### 9.2 VAT regime
+*Inference rule:* if asking for Modelo 303, they are regimen general. If they mention modulos or modules, R-ES-3 fires. *Fallback:* "Are you in the regimen general, regimen simplificado, or recargo de equivalencia?"
+
+### 9.3 NIF-IVA
+*Inference rule:* sometimes visible in EU customer payment descriptions. *Fallback:* "What is your NIF-IVA? (ES + 9 characters)"
+
+### 9.4 Filing period
+*Inference rule:* first and last transaction dates. Standard is quarterly. *Fallback:* "Which quarter? 1T (Jan–Mar), 2T (Apr–Jun), 3T (Jul–Sep), or 4T (Oct–Dec)?"
+
+### 9.5 Industry and sector
+*Inference rule:* counterparty mix, invoice descriptions. *Fallback:* "In one sentence, what does the business do?"
+
+### 9.6 Employees
+*Inference rule:* TGSS/nomina/IRPF outgoing. *Fallback:* "Do you have employees?"
+
+### 9.7 Exempt supplies
+*Inference rule:* medical/financial/educational income. *Fallback:* "Do you make any IVA-exempt sales?" *If yes and non-de-minimis → R-ES-6 fires.*
+
+### 9.8 SII obligation
+*Inference rule:* monthly filing frequency, turnover > EUR 6M. *Fallback:* "Are you registered in SII or REDEME?"
+
+### 9.9 Credit brought forward (casilla 67)
+*Not inferable from a single period. Always ask.* "Do you have IVA credit carried forward from the previous period (casilla 67 of prior Modelo 303)?"
+
+### 9.10 Cross-border customers
+*Inference rule:* foreign IBANs on incoming payments. *Fallback:* "Do you have customers outside Spain? EU or non-EU? Businesses or consumers?"
+
+---
+
+## Section 10 — Reference material
+
+### Validation status
+
+This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture (vat-workflow-base + eu-vat-directive + country skill). The Spain-specific content (casilla mappings, rates, thresholds, blocked categories, SII requirements) is based on LIVA and RIVA as of April 2026.
+
+### Sources
+
+**Primary legislation:**
+1. Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Anadido (LIVA) — Art. 3, 4, 11, 13–16, 20, 21–25, 69, 84, 90, 91, 92–96, 102–106, 108–110, 148–163
+2. Real Decreto 1624/1992, de 29 de diciembre (RIVA — Reglamento del IVA) — Art. 30 (filing frequency)
+3. Real Decreto 596/2016 (SII — Suministro Inmediato de Informacion)
+
+**AEAT guidance:**
+4. Modelo 303 form and completion instructions — sede.agenciatributaria.gob.es
+5. Modelo 390 annual summary instructions
+6. Modelo 349 recapitulative declaration instructions
+7. AEAT guidance on inversion del sujeto pasivo (reverse charge)
+8. AEAT guidance on bienes de inversion (investment goods)
+
+**EU directive (loaded via companion skill):**
+9. Council Directive 2006/112/EC (Principal VAT Directive) — implemented via eu-vat-directive companion skill
+10. Council Implementing Regulation 282/2011
+
+**Other:**
+11. VIES validation — https://ec.europa.eu/taxation_customs/vies/
+12. ECB euro reference rates — https://www.ecb.europa.eu/stats/eurofxref/
+
+### Known gaps
+
+1. The supplier pattern library covers common Spanish and international counterparties but not every regional supplier.
+2. Worked examples are for a software consultant. Hospitality, retail, construction, and agricultural sectors need v2.1 examples.
+3. The 50% vehicle presumption (Art. 95.Tres.2) is well-established but AEAT may challenge it — flag for reviewer if vehicle costs are significant.
+4. The bienes de inversion threshold (EUR 3,005.06 net) is the historical amount. Verify annually.
+5. Prorrata calculation (Art. 102–106) is refused entirely — a future version should add basic prorrata support.
+6. IGIC/IPSI for Canary Islands/Ceuta/Melilla is refused — separate skills needed.
+7. The entertainment deduction rule (Art. 96) is fact-sensitive — the conservative block is appropriate but a reviewer may unlock it.
+
+### Change log
+
+- **v2.0 (April 2026):** Full rewrite to align with three-tier Accora architecture. 10-section Malta v2.0 structure adopted. Supplier pattern library restructured as literal lookup tables (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue added (Section 6). Excel template added (Section 7). Bank statement guide with extracto bancario formats added (Section 8). Onboarding moved to fallback (Section 9).
+- **v2.1-verified (April 2026):** Previous version with inline tier tags. Superseded by this rewrite.
+
+### Self-check (v2.0)
+
+1. Quick reference at top with casilla table and conservative defaults: yes (Section 1).
+2. Supplier library as literal lookup tables: yes (Section 3, 15 sub-tables).
+3. Worked examples (hypothetical autonomo IT consultant): yes (Section 4, 6 examples).
+4. Tier 1 rules compressed: yes (Section 5, 15 rules).
+5. Tier 2 catalogue compressed with inference rules: yes (Section 6, 15 items).
+6. Excel template with mandatory recalc: yes (Section 7).
+7. Onboarding as fallback only, inference rules first: yes (Section 9, 10 items).
+8. All 8 Spain-specific refusals present: yes (Section 2, R-ES-1 through R-ES-8).
+9. Reference material at bottom: yes (Section 10).
+10. Vehicle 50% presumption explicit: yes (Section 5.11 + Example 6).
+11. Entertainment conservative block explicit: yes (Section 5.12 + Example 3).
+12. SII obligation documented: yes (Section 5.13).
+13. IRPF retention grossing-up documented: yes (Section 6.14 + Section 8).
+14. Reverse charge both directions (EU + non-EU) explicit: yes (Examples 1–2 + Section 5.7–5.9).
+15. Canary Islands/Ceuta/Melilla refusal explicit: yes (R-ES-1, R-ES-2).
+
+## End of Spain VAT Return Skill v2.0
+
+This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a Modelo 303 without all three files loaded.
 
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an Asesor Fiscal, Economista, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

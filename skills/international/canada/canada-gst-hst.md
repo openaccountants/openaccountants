@@ -1,1058 +1,715 @@
 ---
 name: canada-gst-hst
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Canadian GST/HST return, QST return, or any filing involving federal or provincial sales tax in Canada. Trigger on phrases like "prepare GST return", "file HST", "Canadian sales tax", "GST/HST return", "Form GST34", "input tax credits", "ITC claim", "place of supply", "quick method", "simplified method", or any request involving Canadian indirect tax filing. Also trigger when classifying transactions for GST/HST purposes from bank statements, invoices, or other source data. This skill contains the complete Canada GST/HST classification rules, Form GST34 line mappings, ITC rules, place of supply determination, blocked/restricted categories, registration thresholds, filing deadlines, interprovincial supply rules, and quick method remittance rates required to produce a correct return. ALWAYS read this skill before touching any Canadian GST/HST-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Canadian GST/HST return (Form GST34) for a self-employed individual or small business in Canada. Trigger on phrases like "prepare GST return", "file HST", "Canadian sales tax", "GST/HST return", "Form GST34", "input tax credits", "ITC claim", or any request involving Canadian GST/HST filing. Also trigger when classifying transactions for GST/HST purposes from bank statements, invoices, or other source data. This skill covers federal GST and harmonized HST provinces only under the regular method. Quebec QST, Saskatchewan PST, Manitoba RST, British Columbia PST, Quick Method, and simplified method for charities are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any Canadian GST/HST work.
+version: 2.0
 ---
 
-# Canada GST/HST Return Preparation Skill
+# Canada GST/HST Return Skill (Form GST34) v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Canada |
-| Jurisdiction Code | CA |
-| Primary Legislation | Excise Tax Act (R.S.C., 1985, c. E-15), Part IX |
-| Supporting Legislation | New Harmonized Value-added Tax System Regulations; Input Tax Credit Information (GST/HST) Regulations; Place of Supply (GST/HST) Regulations (SOR/2010-117); Provincial sales tax acts (see Step 8) |
-| Tax Authority (Federal) | Canada Revenue Agency (CRA) |
-| Tax Authority (Quebec) | Revenu Quebec (for QST and GST in Quebec) |
-| Filing Portal | CRA My Business Account (https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses.html) |
-| Filing Portal (Quebec) | Mon dossier pour les entreprises (https://www.revenuquebec.ca) |
-| Contributor | Open Accounting Skills Registry |
-| Validation Date | April 2026 |
-| Validated By | Deep research verification, April 2026 |
-| Skill Version | 2.0 |
-| Confidence Coverage | Tier 1: GST/HST rate determination, line assignment, ITC eligibility, registration threshold, filing deadlines. Tier 2: place of supply for mixed supplies, partial ITC restrictions, Quick Method eligibility edge cases. Tier 3: complex interprovincial group structures, First Nations exemptions, transitional rules on rate changes. |
+|---|---|
+| Country | Canada |
+| Federal GST rate | 5% |
+| HST rates by province | ON 13%, NS 14% (effective Apr 1 2025), NB 15%, NL 15%, PE 15% |
+| GST-only provinces | AB, BC, SK, MB, QC, NT, NU, YT (5% GST; BC/SK/MB/QC have separate provincial sales taxes) |
+| Zero rate | 0% (basic groceries, prescription drugs, medical devices, exports) |
+| Exempt | Financial services, residential rent, most health/dental/legal aid, childcare |
+| Return form | GST34 (GST/HST Return for Registrants) |
+| Filing portal | CRA My Business Account (canada.ca) |
+| Authority | Canada Revenue Agency (CRA) |
+| Currency | CAD only |
+| Filing frequencies | Annual (taxable supplies <= $1.5M), Quarterly ($1.5M–$6M), Monthly (> $6M or voluntary election) |
+| Deadline | Monthly/quarterly: 1 month after period end; Annual: 3 months after fiscal year end (individuals: June 15 but payment due April 30) |
+| Small supplier threshold | $30,000 in any single calendar quarter or in the last four consecutive calendar quarters (ETA s.148) |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
+| Contributor | Open Accounting Skills Community |
+| Validation date | April 2026 |
+
+**Key GST34 lines:**
+
+| Line | Meaning |
+|---|---|
+| 101 | Total sales and other revenue (before GST/HST) |
+| 103 | GST/HST collected or collectible |
+| 104 | Adjustments to GST/HST (e.g., bad debt recovery, change-in-use) |
+| 105 | Total GST/HST and adjustments (= 103 + 104) |
+| 106 | Input tax credits (ITCs) |
+| 107 | Adjustments to ITCs (e.g., recapture of ITCs on large business inputs — expired 2018) |
+| 108 | Total ITCs and adjustments (= 106 + 107) |
+| 109 | Net tax (= 105 − 108; positive = owing, negative = refund) |
+| 110 | Instalments paid |
+| 111 | Rebates claimed |
+| 112 | Total other credits (= 110 + 111) |
+| 113 | Balance (= 109 − 112; positive = amount owing) |
+| 114 | Refund claimed |
+| 115 | Amount owing |
+
+**GST/HST rates by province (complete):**
+
+| Province/Territory | Rate | Components | Effective |
+|---|---|---|---|
+| Alberta (AB) | 5% | GST only | — |
+| British Columbia (BC) | 5% GST + 7% PST | Separate PST (not on GST34) | — |
+| Manitoba (MB) | 5% GST + 7% RST | Separate RST (not on GST34) | — |
+| New Brunswick (NB) | 15% HST | Harmonized | — |
+| Newfoundland & Labrador (NL) | 15% HST | Harmonized | — |
+| Northwest Territories (NT) | 5% | GST only | — |
+| Nova Scotia (NS) | 14% HST | Harmonized | Apr 1, 2025 |
+| Nunavut (NU) | 5% | GST only | — |
+| Ontario (ON) | 13% HST | Harmonized | — |
+| Prince Edward Island (PE) | 15% HST | Harmonized | — |
+| Quebec (QC) | 5% GST + 9.975% QST | Separate QST (filed with Revenu Quebec) | — |
+| Saskatchewan (SK) | 5% GST + 6% PST | Separate PST (not on GST34) | — |
+| Yukon (YT) | 5% | GST only | — |
+
+**Conservative defaults — Canada-specific values for the universal categories in `vat-workflow-base` Section 2:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | HST at rate of province of supply (default ON 13% if province unknown) |
+| Unknown GST/HST status of a purchase | Not eligible for ITC |
+| Unknown province of supply | Province of registration |
+| Unknown business-use proportion (vehicle, phone, home office) | 0% ITC |
+| Unknown whether personal or business expense | Personal (no ITC) |
+| Unknown blocked-input status (club dues, personal) | Blocked |
+| Unknown whether transaction is in scope | In scope |
+
+**Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | CAD 5,000 |
+| HIGH tax-delta on a single conservative default | CAD 400 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net tax position | CAD 10,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A CPA or qualified tax professional must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax professional and document the gap.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Canadian or international business bank: RBC, TD, Scotiabank, BMO, CIBC, National Bank, Desjardins, Tangerine, Simplii, EQ Bank, Revolut Business, Wise Business, or any other.
 
----
+**Recommended** — sales invoices for the period (especially for zero-rated exports and interprovincial supplies), purchase invoices for any ITC claim above CAD 400, the client's GST/HST Business Number (BN format: 123456789RT0001).
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete sales journal, purchase journal, prior period GST34, Quick Method election (if applicable — but then R-CA-3 fires).
 
-**GATE: Before classifying ANY transaction for a Canadian client, you MUST know these facts. Ask if not already known. If items 1-4 are unknown, STOP. Do not classify any transactions until registration status, province, and reporting period are confirmed.**
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in reviewer brief: "This GST34 was produced from bank statement alone. The reviewer must verify that ITC claims above CAD 400 are supported by compliant invoices containing the supplier's BN and that place-of-supply determinations are correct."
 
-| # | Question | Tier | Why It Matters |
-|---|----------|------|----------------|
-| 1 | **Business name and GST/HST Business Number** (Format: 123456789RT0001) | [T1] | Identity and filing authority |
-| 2 | **Province of registration / principal place of business** | [T1] | Determines default GST/HST rate |
-| 3 | **Registration status** (Registered / small supplier (not registered) / simplified registration (non-resident)) | [T1] | Determines filing obligation |
-| 4 | **Reporting period** (Annual / quarterly / monthly) | [T1] | Determines filing deadline |
-| 5 | **Fiscal year end** | [T1] | Determines filing deadline for annual filers |
-| 6 | **Accounting method** (Regular / Quick Method (GST74 election) / Simplified Method for ITCs) | [T1] | Changes remittance calculation |
-| 7 | **Does the business make exempt supplies?** | [T2] | If yes, ITC allocation required |
-| 8 | **Does the business make interprovincial supplies?** | [T1] | If yes, place of supply rules must be applied per transaction |
-| 9 | **Does the business have employees with taxable benefits?** | [T1] | Impacts ITC claims under ETA s.175 |
-| 10 | **Is the business a charity, NPO, or public service body?** | [T2] | Different thresholds and methods apply |
-| 11 | **Does the business operate in Quebec?** | [T1] | If yes, QST filing with Revenu Quebec is required |
-| 12 | **Annual taxable supplies (approximate)** | [T1] | Determines reporting period assignment and eligibility for simplified methods |
-| 13 | **Does the business deal with non-residents?** | [T1] | If yes, self-assessment under s.218 may apply |
+### Canada-specific refusal catalogue
 
----
+If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-## Step 1: Transaction Classification Rules
+**R-CA-1 — Quebec QST.** *Trigger:* client is in Quebec or asks about QST filing. *Message:* "Quebec Sales Tax (QST) is administered by Revenu Quebec and filed separately from the federal GST return. This skill covers federal GST/HST (Form GST34) only. For QST, please use a CPA familiar with Quebec tax administration."
 
-### 1.1 Supply Type Classification [T1]
+**R-CA-2 — Provincial sales tax (BC PST, SK PST, MB RST).** *Trigger:* client asks about BC PST, Saskatchewan PST, or Manitoba RST filing. *Message:* "Provincial sales taxes (BC PST, SK PST, MB RST) are separate from GST/HST and filed with the respective provincial authority. This skill covers the federal GST/HST return only."
 
-**Legislation:** ETA s.123(1) (definitions), Schedule V (exempt), Schedule VI (zero-rated).
+**R-CA-3 — Quick Method.** *Trigger:* client has elected the Quick Method of accounting (GST74). *Message:* "The Quick Method calculates GST/HST remittance as a percentage of GST/HST-included revenue rather than tracking actual ITCs. This skill covers the regular method only. For Quick Method returns, apply the prescribed remittance rate for your sector and province."
 
-Every supply in Canada falls into one of three categories:
+**R-CA-4 — Simplified method for charities/NPOs.** *Trigger:* client is a registered charity, NPO, or public service body using the simplified method or net tax calculation. *Message:* "Charities, NPOs, and public service bodies have special GST/HST rules including the net tax calculation and public service body rebates. Out of scope."
 
-| Category | GST/HST Charged | ITC Recovery | Legislation |
-|----------|-----------------|--------------|-------------|
-| **Taxable** (standard-rated) | Yes (5%, 13%, 14%, or 15% depending on province) | Yes -- full ITC on related inputs | ETA s.165 |
-| **Zero-rated** | 0% (but still a "taxable supply") | Yes -- full ITC on related inputs | ETA Schedule VI |
-| **Exempt** | No GST/HST | No -- NO ITC on related inputs | ETA Schedule V |
+**R-CA-5 — First Nations exemptions.** *Trigger:* client asks about tax exemptions under the Indian Act or supplies on reserve. *Message:* "First Nations tax exemptions under the Indian Act (section 87) have specific rules that are outside the scope of this skill. Please consult a tax professional experienced in Indigenous tax matters."
 
-**Critical distinction:** Zero-rated and exempt are NOT the same. Zero-rated supplies are taxable supplies taxed at 0%, so the supplier can still claim ITCs. Exempt supplies are NOT taxable supplies, so the supplier CANNOT claim ITCs on inputs used to make exempt supplies. [T1]
+**R-CA-6 — GST/HST groups (closely related corporations).** *Trigger:* client is part of a GST/HST group election under ETA s.156. *Message:* "Closely related group elections under s.156 involve intercompany supply rules that are out of scope. Please use a CPA."
 
-### 1.2 Taxable Supplies -- Standard-Rated [T1]
+**R-CA-7 — Non-resident simplified registration.** *Trigger:* non-resident registrant under the simplified registration framework. *Message:* "The simplified registration framework for non-resident digital economy businesses has different rules. Out of scope."
 
-Most goods and services supplied in Canada are taxable at the applicable GST or HST rate. The rate depends on the **place of supply** (see Step 8.1).
-
-| Supply | Rate | Notes |
-|--------|------|-------|
-| Office supplies sold in Ontario | 13% HST | Place of supply: ON |
-| Consulting services to ON client | 13% HST | Place of supply rules for services |
-| Retail goods sold in Alberta | 5% GST | No provincial component |
-| Restaurant meals in New Brunswick | 15% HST | Place of supply: NB |
-| Software subscription to BC client | 5% GST (+ 7% BC PST separately) | GST only; PST is separate |
-| Construction services in NS | 14% HST | Post April 1, 2025 rate |
-| Hotel accommodation in PEI | 15% HST | Tourism levy may also apply |
-
-### 1.3 Zero-Rated Supplies (0%, with ITC) [T1]
-
-**Legislation:** ETA Schedule VI.
-
-| Supply | Schedule VI Reference | Notes |
-|--------|-----------------------|-------|
-| Basic groceries | Part III | Excludes snack foods, candy, soft drinks, alcohol |
-| Prescription drugs | Part I, s.2 | Must be dispensed by pharmacist with prescription |
-| Medical devices | Part II | Listed devices: wheelchairs, hearing aids, artificial limbs, etc. |
-| Exports of goods | Part V | Goods shipped outside Canada |
-| Exports of services | Part V, s.7 | Services performed for non-resident, not consumed in Canada |
-| Agricultural products | Part IV | Farm livestock, grains, raw wool, etc. |
-| Certain fishing supplies | Part IV | Nets, bait, etc. for commercial fishing |
-| International transportation | Part VII | Freight and passenger, cross-border |
-| Financial services to non-residents | Part IX | Must meet conditions |
-| Certain First Nations supplies | Part IX.1 | Supplies on reserve -- see Edge Case EC7 |
-
-### 1.4 Exempt Supplies (No GST/HST, No ITC) [T1]
-
-**Legislation:** ETA Schedule V.
-
-| Supply | Schedule V Reference | Notes |
-|--------|-----------------------|-------|
-| Sale of used residential property | Part I, s.2-4 | New residential property IS taxable |
-| Long-term residential rent (1+ month) | Part I, s.6 | Short-term (< 1 month) IS taxable |
-| Most health care services | Part II | Physicians, dentists (most), optometrists, chiropractors, physiotherapists |
-| Dental services | Part II, s.5 | Most dental services are exempt |
-| Child care services | Part III | Licensed and unlicensed day care |
-| Legal aid | Part III | Services funded by legal aid plans |
-| Most educational services | Part III | Courses at public colleges/universities; vocational training |
-| Most financial services | Part VII | Interest, insurance premiums, most banking fees |
-| Insurance (arranging/underwriting) | Part VII | Property and casualty, life insurance |
-| Bridge/road/ferry tolls (certain) | Part VI | Government-imposed tolls |
-| Supplies by public sector bodies | Part V.1, VI | Certain municipal, hospital, school, charity supplies |
-| Music lessons (individual) | Part III, s.5 | Individual instruction in music, dance, etc. |
-| Used goods sold by charities | Part V.1 | Below threshold |
-
-### 1.5 Classification Matrix: Goods x Location [T1]
-
-| Goods Type | Domestic (within province) | Interprovincial | Export (outside Canada) |
-|------------|---------------------------|-----------------|------------------------|
-| Standard goods | Taxable at provincial GST/HST rate | Taxable at DESTINATION province rate (place of supply rules) | Zero-rated (Schedule VI, Part V) |
-| Basic groceries | Zero-rated | Zero-rated | Zero-rated |
-| Prescription drugs | Zero-rated | Zero-rated | Zero-rated |
-| Medical devices (listed) | Zero-rated | Zero-rated | Zero-rated |
-| Used residential property | Exempt | Exempt | N/A |
-| New residential property | Taxable + possible rebate | Taxable at destination rate | N/A |
-
-### 1.6 Classification Matrix: Services x Location [T1]
-
-| Service Type | Domestic (within province) | Interprovincial | International (non-resident client) |
-|-------------|---------------------------|-----------------|-------------------------------------|
-| Standard services | Taxable at rate where service performed/recipient located | Taxable at DESTINATION province rate | Zero-rated if conditions met (Schedule VI, Part V, s.7) |
-| Financial services | Exempt | Exempt | Zero-rated (to non-resident) |
-| Health care | Exempt | Exempt | Exempt (unless zero-rated export) |
-| Legal services | Taxable | Taxable at destination rate | Zero-rated if for non-resident |
-| Education (qualifying) | Exempt | Exempt | Exempt |
-| Real property services | Taxable at rate where property located | Taxable at rate where property located | Taxable at rate where property located |
-| Digital services/products | Taxable at recipient location | Taxable at recipient location | Zero-rated if non-resident, non-registered |
+**R-CA-8 — Real property transactions.** *Trigger:* client is buying/selling real property (land, buildings) with self-supply or change-of-use implications. *Message:* "Real property transactions involve self-supply rules (s.191), change-of-use rules, and rebate calculations that are too fact-sensitive for this skill. Please use a CPA."
 
 ---
 
-## Step 2: Box/Line Assignment
+## Section 3 — Supplier pattern library (the lookup table)
 
-### 2.1 Form GST34 -- Line Lookup Table [T1]
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
 
-**Legislation:** ETA s.238(1) (filing requirement), s.225 (net tax calculation).
+**How to read this table.** Match by case-insensitive substring on the counterparty name. If multiple patterns match, use the most specific.
 
-| Line | Description | What Goes Here |
-|------|-------------|----------------|
-| **101** | Sales and other revenue | Total revenue from taxable supplies (excluding GST/HST collected). Includes zero-rated and taxable at all rates. Does NOT include exempt supplies. |
-| **103** | GST/HST collected or collectible | Total GST/HST charged on supplies for the period. |
-| **104** | Adjustments to GST/HST collected | Add: GST/HST on employee benefits, bad debts recovered, change-of-use self-supply. |
-| **105** | Total GST/HST and adjustments | Line 103 + Line 104. |
-| **106** | Input tax credits (ITCs) | Total ITCs claimed for GST/HST paid on business purchases. |
-| **107** | Adjustments to ITCs | Subtract: change-of-use adjustments, ITCs previously overclaimed. |
-| **108** | Total ITCs and adjustments | Line 106 + Line 107. |
-| **109** | Net tax | Line 105 minus Line 108. Positive = amount owing. Negative = refund claimed. |
-| **110** | Instalments paid | Quarterly instalment amounts already remitted for this period. |
-| **111** | Rebates claimed | New housing rebate, employee rebate, etc. claimed on the return. |
-| **112** | Total other credits | Line 110 + Line 111. |
-| **113A** | Balance -- amount owing | If Line 109 > Line 112: amount to remit. |
-| **113B** | Balance -- refund claimed | If Line 112 > Line 109: refund to claim. |
-| **205** | GST/HST due on acquisition of taxable real property | Self-assessed tax on purchase of real property. |
-| **405** | Other GST/HST rebate | Additional rebates (e.g., public service bodies). |
+### 3.1 Canadian banks (fees exempt — exclude)
 
-### 2.2 Transaction-to-Line Mapping Table [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| RBC, ROYAL BANK OF CANADA | EXCLUDE for bank charges/fees | ETA Schedule V, Part VII: financial service, exempt |
+| TD, TORONTO-DOMINION, TD CANADA TRUST | EXCLUDE for bank charges/fees | Same |
+| SCOTIABANK, BANK OF NOVA SCOTIA | EXCLUDE for bank charges/fees | Same |
+| BMO, BANK OF MONTREAL | EXCLUDE for bank charges/fees | Same |
+| CIBC, CANADIAN IMPERIAL | EXCLUDE for bank charges/fees | Same |
+| NATIONAL BANK, BNC, BANQUE NATIONALE | EXCLUDE for bank charges/fees | Same |
+| DESJARDINS, CAISSE POPULAIRE | EXCLUDE for bank charges/fees | Same |
+| TANGERINE, SIMPLII, EQ BANK | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
+| INTEREST, INTERET | EXCLUDE | Interest income/expense, exempt |
+| MORTGAGE, HYPOTHEQUE, LOAN | EXCLUDE | Loan principal movement, out of scope |
 
-| Transaction Type | Line 101 | Line 103 | Line 106 | Notes |
-|-----------------|----------|----------|----------|-------|
-| Standard taxable sale | Revenue amount (excl. tax) | GST/HST collected | -- | |
-| Zero-rated sale (export, basic groceries) | Revenue amount | $0 | -- | Still reported on Line 101 |
-| Exempt sale | NOT included | NOT included | -- | Excluded entirely from return |
-| Business purchase (taxable) | -- | -- | GST/HST paid | ITC claimed |
-| Business purchase (exempt) | -- | -- | $0 | No ITC on exempt inputs |
-| Imported service (self-assessment) | -- | Line 205 | Line 106 | Self-assess then claim ITC if commercial |
-| Gift card sale | $0 | $0 | -- | Tax applies on redemption only |
-| Gift card redemption | Revenue / 1.rate | GST/HST portion | -- | |
-| Employee benefit (taxable) | -- | Line 104 | -- | GST/HST on benefit added as adjustment |
+### 3.2 Canadian government and statutory bodies (exclude entirely)
 
-### 2.3 Other Return Forms [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CRA, CANADA REVENUE AGENCY, RECEIVER GENERAL | EXCLUDE | Tax payment (GST remittance, income tax instalment) |
+| REVENU QUEBEC | EXCLUDE | QST or income tax payment |
+| CPP, CANADA PENSION PLAN | EXCLUDE | Pension contribution, not a supply |
+| EI, EMPLOYMENT INSURANCE | EXCLUDE | Employment insurance premium |
+| WSIB, WCB, CNESST | EXCLUDE | Workers compensation |
+| SERVICE CANADA, SERVICE ONTARIO | EXCLUDE | Government fees, sovereign act |
+| CITY OF, VILLE DE, MUNICIPAL | EXCLUDE | Municipal tax/fee |
 
-| Form | Purpose | Who Files |
-|------|---------|-----------|
-| **GST34** | Standard GST/HST return for registrants | All standard registrants |
-| **GST62** | GST/HST return for non-residents | Non-resident registrants (same line structure as GST34) |
-| **GST494** | Simplified Method election | Small businesses electing Simplified Method for ITCs |
-| **RC7200** | Combined GST/QST return (Quebec) | Registrants in Quebec (filed with Revenu Quebec) |
-| **GST59** | Return for imported taxable supplies | Self-assessing imported services under ETA s.218 |
-| **Schedule A** | Builders and land developers | Builders reporting self-supply under ETA s.191 [T2] |
-| **GST190** | New housing rebate (federal) | Individuals claiming GST new housing rebate |
-| **GST74** | Quick Method election | Businesses electing Quick Method |
+### 3.3 Canadian utilities
 
-### 2.4 Filing Methods [T1]
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| HYDRO ONE, TORONTO HYDRO, BC HYDRO, HYDRO-QUEBEC | Taxable | GST/HST at provincial rate | Electricity — overhead |
+| ENBRIDGE, FORTISBC, ATCO GAS | Taxable | GST/HST at provincial rate | Gas — overhead |
+| TELUS | Taxable | GST/HST at provincial rate | Telecoms — overhead |
+| ROGERS, ROGERS COMMUNICATIONS | Taxable | GST/HST at provincial rate | Telecoms — overhead |
+| BELL, BELL CANADA, BELL MOBILITY | Taxable | GST/HST at provincial rate | Telecoms — overhead |
+| SHAW, COGECO, VIDEOTRON | Taxable | GST/HST at provincial rate | Telecoms — overhead |
+| FIDO, KOODO, VIRGIN PLUS, FREEDOM MOBILE | Taxable | GST/HST at provincial rate | Telecoms — overhead |
 
-| Method | Description | Eligibility |
-|--------|-------------|-------------|
-| CRA My Business Account | Online portal | All registrants |
-| NETFILE | Electronic filing | Registered NETFILE users |
-| EDI (Electronic Data Interchange) | Automated filing | Large businesses with approved software |
-| GST/HST TELEFILE | Telephone filing | Eligible registrants (simple returns) |
-| Paper (mail) | Mail to Summerside Tax Centre | All registrants, but electronic filing is mandatory for registrants with > $1.5M in annual taxable supplies (ETA s.238(1)) |
+### 3.4 Insurance (exempt — exclude)
 
----
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MANULIFE, SUN LIFE, GREAT-WEST LIFE, CANADA LIFE | EXCLUDE | Insurance, exempt (ETA Schedule V, Part VII) |
+| INTACT, AVIVA, DESJARDINS ASSURANCE | EXCLUDE | Same |
+| CO-OPERATORS, WAWANESA, ECONOMICAL | EXCLUDE | Same |
+| INSURANCE, ASSURANCE | EXCLUDE | All exempt |
 
-## Step 3: Reverse Charge Mechanics
+### 3.5 Post and logistics
 
-### 3.1 Self-Assessment on Imported Taxable Supplies [T1]
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| CANADA POST, POSTES CANADA | EXCLUDE for standard letter mail | | Exempt (ETA Schedule V, Part VII.1) |
+| CANADA POST (courier, Xpresspost, Priority) | Taxable | GST/HST | Non-universal services are taxable |
+| PUROLATOR | Taxable | GST/HST | Express courier |
+| FEDEX CANADA, UPS CANADA, DHL CANADA | Taxable | GST/HST | Courier services |
+| CANPAR, DICOM, LOOMIS | Taxable | GST/HST | Courier services |
 
-**Legislation:** ETA s.218 (tax on imported taxable supplies).
+### 3.6 Transport
 
-**This is Canada's equivalent of the EU reverse charge mechanism.**
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| VIA RAIL | Taxable | GST/HST | Domestic passenger rail |
+| GO TRANSIT, TTC, STM, TRANSLINK, OC TRANSPO | EXCLUDE or zero-rated | | Municipal transit — zero-rated per ETA Schedule VI, Part VII |
+| UBER CANADA | Taxable | GST/HST | Ride-sharing; platform is GST-registered |
+| LYFT | Taxable | GST/HST | Same |
+| AIR CANADA (international) | Zero-rated | 0% | International transport — Schedule VI, Part VII |
+| AIR CANADA (domestic) | Taxable | GST/HST | Domestic air |
+| WESTJET (international) | Zero-rated | 0% | International |
+| WESTJET (domestic) | Taxable | GST/HST | Domestic air |
+| ENTERPRISE, HERTZ, AVIS, BUDGET (car rental) | Taxable | GST/HST at location rate | Car rental — ITC restricted if personal use |
 
-When a Canadian GST/HST registrant purchases services or intangible personal property from a non-resident who is NOT registered for GST/HST:
+### 3.7 Food retail (generally zero-rated basic groceries — but personal)
 
-| Step | Action | Line |
-|------|--------|------|
-| 1 | Calculate GST/HST on the value of the imported taxable supply at the applicable provincial rate | -- |
-| 2 | Report and remit the tax | Line 205 (or Form GST59) |
-| 3 | Claim an ITC for the same amount (if the service is for commercial activities) | Line 106 |
-| 4 | Net effect for fully commercial businesses: **zero** | -- |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TIM HORTONS, TIMS | Default BLOCK ITC | Restaurant/prepared food is taxable at GST/HST, but personal unless hospitality business |
+| STARBUCKS, MCDONALDS, SUBWAY, A&W | Default BLOCK ITC | Same — prepared food/beverages are taxable but likely personal |
+| LOBLAWS, NO FRILLS, REAL CANADIAN, SUPERSTORE | Default BLOCK ITC | Grocery — mix of zero-rated and taxable items; personal provisioning default |
+| METRO, SOBEYS, SAFEWAY, IGA, SAVE-ON-FOODS | Default BLOCK ITC | Same |
+| COSTCO, WALMART (grocery) | Default BLOCK ITC | Mixed supply — personal default |
+| CANADIAN TIRE (non-food) | Taxable | GST/HST — ITC eligible if business purpose confirmed |
 
-### 3.2 Non-Resident Digital Supplier Rules [T1]
+### 3.8 SaaS — non-resident suppliers (self-assessment under ETA s.218)
 
-**Legislation:** ETA s.211.13-211.23 (effective July 1, 2021).
+Non-resident digital services suppliers to Canadian businesses: the Canadian registrant must self-assess GST/HST on imported taxable supplies under ETA s.218. Report on Line 405 of GST34 and claim offsetting ITC on Line 106.
 
-| Scenario | Obligation |
-|----------|------------|
-| Non-resident B2C digital supplier, exceeds $30,000 threshold | Must register under Simplified Registration, collect and remit GST/HST, CANNOT claim ITCs |
-| Non-resident B2B digital supplier | Canadian business self-assesses under ETA s.218; non-resident need not register |
-| Place of supply determination for B2C digital | Customer's usual place of residence (Canadian address or IP geolocation); if cannot be determined, default to 5% GST |
+| Pattern | Billing entity | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | Self-assess GST/HST s.218 | Report on Line 405, claim ITC Line 106 |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | Self-assess GST/HST s.218 | Same |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | Self-assess GST/HST s.218 | Same |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | Self-assess GST/HST s.218 | Same |
+| NOTION | Notion Labs Inc (US) | Self-assess GST/HST s.218 | Same |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | Self-assess GST/HST s.218 | Same |
+| OPENAI, CHATGPT | OpenAI Inc (US) | Self-assess GST/HST s.218 | Same |
+| FIGMA | Figma Inc (US) | Self-assess GST/HST s.218 | Same |
+| CANVA | Canva Pty Ltd (AU) | Self-assess GST/HST s.218 | Same |
+| SLACK | Slack Technologies Ltd (various) | Self-assess GST/HST s.218 | Check if registered in Canada |
+| ZOOM | Zoom Video Communications Inc (US) | Self-assess GST/HST s.218 | Same |
+| ATLASSIAN | Atlassian Pty Ltd (AU) | Self-assess GST/HST s.218 | Same |
+| DROPBOX | Dropbox Inc (US) | Self-assess GST/HST s.218 | Same |
 
----
+**Note:** Many non-resident digital services suppliers have registered for GST/HST under the simplified registration framework (effective July 2021) and now charge GST/HST directly. If the invoice shows GST/HST charged with a valid BN, treat as a regular domestic purchase with ITC. If no GST/HST is charged, self-assess under s.218.
 
-## Step 4: Deductibility Check (Input Tax Credits)
+### 3.9 Canadian SaaS / domestic suppliers (ITC-eligible)
 
-### 4.1 General ITC Rule [T1]
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| SHOPIFY | Taxable domestic | GST/HST (ON entity, 13% HST) | Platform subscription — ITC eligible |
+| STRIPE PAYMENTS CANADA | Taxable domestic or exempt | Check invoice | Transaction fees may be exempt financial service; subscription taxable |
+| WEALTHSIMPLE | EXCLUDE (exempt) | — | Financial service |
+| FRESHBOOKS | Taxable domestic | GST/HST | Accounting software |
+| WAVE FINANCIAL | Taxable domestic | GST/HST | Accounting software (now owned by H&R Block) |
+| HOOTSUITE | Taxable domestic | GST/HST | Social media management |
 
-**Legislation:** ETA s.169(1).
+### 3.10 Payment processors
 
-A registrant may claim an ITC for GST/HST paid or payable on property or services acquired for consumption, use, or supply in the course of **commercial activities** of the registrant.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| SQUARE, MONERIS, GLOBAL PAYMENTS | Check invoice | Transaction fees exempt; hardware/subscription taxable |
+| INTERAC | EXCLUDE (exempt) | Interac fees are financial services |
 
-**Formula:**
-```
-ITC = Tax paid x (Extent of use in commercial activities / Total use)
-```
+### 3.11 CRA payments and refunds
 
-If 100% commercial use: ITC = 100% of GST/HST paid.
-If mixed use (commercial + personal/exempt): ITC must be prorated. [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CRA GST PAYMENT, RECEIVER GENERAL GST | EXCLUDE | GST remittance — not a supply |
+| CRA INCOME TAX, INSTALMENT PAYMENT | EXCLUDE | Income tax — not a supply |
+| CRA REFUND, GST REFUND | EXCLUDE | Government refund — not a supply |
+| CRA CEBA, CEWS, CERS | EXCLUDE | Government subsidy — not a supply (but may have GST implications on repayment) |
 
-### 4.2 ITC Eligibility Conditions [T1]
+### 3.12 Professional services (Canada)
 
-ALL of the following must be met to claim an ITC:
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| CPA, CHARTERED PROFESSIONAL ACCOUNTANT | Taxable | GST/HST | Always ITC-eligible |
+| LAWYER, LAW OFFICE, BARRISTERS | Taxable | GST/HST | ITC-eligible if business purpose |
+| NOTARY, NOTAIRE | Taxable | GST/HST | ITC-eligible if business purpose |
+| CONSULTANT, CONSULTING | Taxable | GST/HST | ITC-eligible if business purpose |
 
-| # | Condition | Legislation |
-|---|-----------|-------------|
-| 1 | Claimant is a **registrant** (registered or required to register) | ETA s.169(1) |
-| 2 | GST/HST was **paid or payable** | ETA s.169(1)(a) |
-| 3 | Property or service acquired for use in **commercial activities** | ETA s.169(1)(c) |
-| 4 | **Sufficient documentation** held (see 4.3 below) | Input Tax Credit Information Regulations |
-| 5 | Claimed within **time limit**: 4 years (most registrants); 2 years (specified persons: LFIs, businesses >$6M annual revenue) | ETA s.225(4) |
+### 3.13 Payroll (exclude entirely)
 
-### 4.3 Documentation Requirements for ITCs [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PAYROLL, SALARY, WAGES | EXCLUDE | Wages — outside GST/HST scope |
+| CPP CONTRIBUTION | EXCLUDE | Pension contribution |
+| EI PREMIUM | EXCLUDE | Employment insurance |
+| CERIDIAN, ADP, PAYWORKS | EXCLUDE for payroll runs | Payroll processing fee itself may be taxable |
 
-**Legislation:** Input Tax Credit Information (GST/HST) Regulations, s.3.
+### 3.14 Property and rent
 
-| Purchase Amount (tax-included) | Required Information |
-|-------------------------------|---------------------|
-| Under $100 | Supplier name (or trade name), date, total amount paid |
-| $100 to $499.99 | Above + supplier GST/HST registration number, terms of payment, brief description, total GST/HST charged |
-| $500 and over | Above + purchaser name (or trade name), purchaser address, individual item amounts or rate applied |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| RENT, LOYER (commercial) | Taxable | Commercial lease — GST/HST on rent, ITC eligible |
+| RENT, LOYER (residential) | EXCLUDE | Residential lease exempt (ETA Schedule V, Part I) |
+| CONDO FEES, STRATA FEES | EXCLUDE if residential | Residential condo fees exempt |
+| PROPERTY TAX, MUNICIPAL TAX | EXCLUDE | Government levy, not a supply |
 
-### 4.4 Completely Blocked ITCs [T1]
+### 3.15 Internal transfers and exclusions
 
-**Legislation:** ETA s.170.
-
-| Blocked Category | ETA Reference | Exception |
-|-----------------|---------------|-----------|
-| **Club memberships** (golf, fitness, dining, recreation, yacht clubs) | s.170(1)(a) | NONE. Even if 100% business client entertainment, NO ITC. |
-| **Personal or living expenses** | s.170(1)(b) | If property has BOTH personal and business use, ITC may be available on business-use portion. |
-| **Property for use in exempt activities** | s.169(1) | None -- not used in commercial activities. |
-
-### 4.5 Restricted (Partial) ITCs [T1]
-
-| Category | Restriction | ETA Reference | Details |
-|----------|-------------|---------------|---------|
-| **Meals and entertainment** | 50% of GST/HST | s.236(1) read with ITA s.67.1 | Exception: meals at remote work camps (100%), fundraising events (100%), meals as taxable employee benefit (100%), meals for resale by restaurants (100%), long-haul truck drivers (80%). |
-| **Passenger vehicles (CCA Class 10.1)** | ITC capped at GST/HST on $37,000 (non-ZEV) or $61,000 (ZEV Class 54) | s.202, s.235 | GST/HST on excess is irrecoverable. |
-| **Leased passenger vehicles** | ITC limited to GST/HST on $950/month (non-ZEV) or $1,100/month (ZEV) | s.202; ITA s.67.3 | |
-| **Passenger vehicle operating costs** | ITC prorated to business-use % | s.202 | Fuel, repairs, insurance -- prorate. |
-| **Employee benefits -- exempt** | No ITC | s.175 | Group health/dental insurance premiums are exempt financial services. |
-| **Employee benefits -- taxable** | ITC available | s.175 | Auto standby charge, etc. -- employer claims ITC on GST/HST component. |
-| **Home office expenses** | Prorated ITC | s.169(1) | Business-use portion of shared expenses (internet, utilities, office supplies). Must be reasonable. |
-
-### 4.6 Passenger Vehicle ITC Calculation [T1]
-
-**Legislation:** ETA s.202, s.235; ITA s.13(7)(g) (CCA Class 10.1 ceiling).
-
-| Province | Class 10.1 Max ITC (non-ZEV, $37,000 ceiling) | Class 54 Max ITC (ZEV, $61,000 ceiling) |
-|----------|------------------------------------------------|------------------------------------------|
-| Alberta (5% GST) | $1,850 | $3,050 |
-| Ontario (13% HST) | $4,810 | $7,930 |
-| Nova Scotia (14% HST) | $5,180 | $8,540 |
-| NB / NL / PEI (15% HST) | $5,550 | $9,150 |
-
-### 4.7 Capital Property ITCs [T1]
-
-**Legislation:** ETA s.169, s.195-211.
-
-| Capital Property Type | ITC Rule | Notes |
-|----------------------|----------|-------|
-| Real property (land/buildings) | ITC if used >50% in commercial activities | Change-in-use rules apply (see 4.8) |
-| Capital personal property (equipment, furniture) | ITC prorated to commercial use | >90% commercial = 100% ITC; <10% = 0% ITC; 10-90% = prorate |
-| Improvements to capital property | Follow underlying property rules | |
-| Passenger vehicles -- Class 10.1 | ITC capped (see 4.6) | |
-| Aircraft | ITC if commercial; prorate for personal use | |
-| Computer equipment | Standard capital property rules | |
-
-### 4.8 Change-in-Use Rules [T1]
-
-**Legislation:** ETA s.195-211.
-
-| Change | Rule | Effect |
-|--------|------|--------|
-| Commercial to exempt (real property) | Deemed sale at FMV | Output tax on FMV; recapture of ITCs |
-| Exempt to commercial (real property) | Deemed purchase at FMV | ITC available on deemed GST/HST |
-| Commercial to personal (personal property) | Deemed sale at FMV | Output tax on FMV |
-| Personal to commercial (personal property) | Deemed purchase at FMV | ITC available on deemed GST/HST |
-| Increase in commercial use (personal property) | Positive ITC adjustment | Additional ITC proportional to increase |
-| Decrease in commercial use (personal property) | Negative ITC adjustment (output tax) | Repay ITC proportional to decrease |
-
-### 4.9 Restricted ITCs -- Large Business Rule (Historical) [T1]
-
-**As of 2026, no RITC restrictions are in effect in any province.** Ontario RITCs phased out July 1, 2018; PEI RITCs phased out April 1, 2018. Nova Scotia, New Brunswick, and Newfoundland and Labrador never applied RITCs.
-
-**Note for historical returns:** If preparing returns for periods before July 1, 2018 (ON) or April 1, 2018 (PEI), the RITC rules applied to: energy, telecommunications services, road vehicles under 3,000 kg, fuel for such vehicles, meals and entertainment, and certain property and services used in ON/PEI. [T2] -- Escalate to reviewer for historical period calculations.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFER, E-TRANSFER (own accounts) | EXCLUDE | Internal movement |
+| INTERAC E-TRANSFER (to self) | EXCLUDE | Internal movement |
+| DIVIDEND | EXCLUDE | Dividend payment, out of scope |
+| LOAN REPAYMENT | EXCLUDE | Loan principal, out of scope |
+| ATM WITHDRAWAL | TIER 2 — ask | Default exclude; ask what cash was spent on |
+| OWNER DRAW, SHAREHOLDER LOAN | EXCLUDE | Owner withdrawal |
 
 ---
 
-## Step 5: Derived Calculations
+## Section 4 — Worked examples
 
-### 5.1 Net Tax Calculation (Regular Method) [T1]
+These are six fully worked classifications drawn from a hypothetical bank statement of an Ontario-based self-employed software consultant.
 
-**Legislation:** ETA s.225.
+### Example 1 — Non-resident SaaS, self-assessment (Notion)
 
-```
-Line 105 = Line 103 (GST/HST collected) + Line 104 (adjustments)
-Line 108 = Line 106 (ITCs) + Line 107 (ITC adjustments)
-Line 109 = Line 105 - Line 108
-If Line 109 > 0: amount owing (Line 113A)
-If Line 109 < 0: refund claimed (Line 113B)
-```
+**Input line:**
+`2026-04-03 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; CAD 21.89`
 
-### 5.2 Quick Method Calculation [T1]
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.8). No GST/HST on the invoice. This is an imported taxable supply under ETA s.218. The registrant must self-assess GST/HST at the applicable rate. Client is in Ontario → 13% HST. Self-assess HST of CAD 2.85 (21.89 * 0.13). Report on Line 405 (tax on imported supplies) and claim offsetting ITC on Line 106. Net effect zero.
 
-**Legislation:** ETA s.227; Quick Method of Accounting Regulations (SOR/91-51).
+**Output:**
 
-| Step | Action |
-|------|--------|
-| 1 | Collect GST/HST on sales at the normal rate |
-| 2 | Remit a **reduced percentage** (remittance rate) of GST/HST-included revenue |
-| 3 | Keep the difference (approximates average ITCs) |
-| 4 | Do NOT claim ITCs on operating expenses (except capital equipment >$30,000) |
+| Date | Counterparty | Gross | Net | GST/HST | Rate | Line (self-assess) | Line (ITC) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-03 | NOTION LABS INC | -21.89 | -21.89 | 2.85 | 13% HST | 405 | 106 | N | — | — |
 
-**Eligibility:** [T1]
+### Example 2 — Domestic purchase with HST (Shopify)
 
-| Criterion | Requirement |
-|-----------|-------------|
-| Annual taxable supplies (including associates) | $400,000 or less (including GST/HST) |
-| Filing status | Must be a registrant |
-| Excluded businesses | Financial institutions, charities using net-tax method, non-residents, accountants, actuaries, bookkeepers, financial consultants, tax consultants, lawyers |
-| Election | Must file Election Form GST74 before the first day of the reporting period |
+**Input line:**
+`2026-04-10 ; SHOPIFY COMMERCE INC ; DEBIT ; Monthly plan ; -49.00 ; CAD`
 
-**Remittance Rates -- Businesses that purchase goods for resale:** [T1]
+**Reasoning:**
+Shopify is an Ontario-headquartered Canadian company. They charge 13% HST. The CAD 49.00 is the HST-inclusive price. Net = 49.00 / 1.13 = 43.36. HST = 5.64. Full ITC eligible on Line 106 for business software.
 
-| Province/Territory | GST/HST Rate | Remittance Rate |
-|--------------------|-------------|-----------------|
-| AB, NT, NU, YT, BC, SK, MB (GST only) | 5% | 1.8% |
-| Ontario | 13% | 4.4% |
-| Nova Scotia | 14% | 4.7% |
-| NB, NL, PEI | 15% | 5.0% |
+**Output:**
 
-**Remittance Rates -- Service providers (NOT purchasing goods for resale):** [T1]
+| Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-10 | SHOPIFY | -49.00 | -43.36 | -5.64 | 13% HST | 106 | N | — | — |
 
-| Province/Territory | GST/HST Rate | Remittance Rate |
-|--------------------|-------------|-----------------|
-| AB, NT, NU, YT, BC, SK, MB (GST only) | 5% | 3.6% |
-| Ontario | 13% | 8.8% |
-| Nova Scotia | 14% | 9.4% |
-| NB, NL, PEI | 15% | 10.0% |
+### Example 3 — Entertainment, restricted ITC
 
-**First-year credit:** First $30,000 of HST-included revenue in the first year of election is subject to a 1% credit (remittance rate reduced by 1%). [T1]
+**Input line:**
+`2026-04-15 ; THE KEG STEAKHOUSE ; DEBIT ; Client dinner ; -285.00 ; CAD`
 
-### 5.3 Simplified Method for Calculating ITCs [T1]
+**Reasoning:**
+Restaurant meal. Under ETA s.67.1 (via Income Tax Act cross-reference), meals and entertainment expenses are limited to 50% for income tax purposes. However, the full GST/HST ITC is claimable on the portion that is deductible for income tax (i.e., 50% of the GST/HST). Conservative default: block entirely as likely personal. If confirmed as business entertainment, 50% of ITC is claimable.
 
-**Legislation:** ETA s.227(1); Simplified Method for Claiming ITCs Regulations.
+**Output:**
 
-Eligible for registrants with annual taxable supplies of $1,000,000 or less. Total purchases (tax-included) are multiplied by a factor:
+| Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-15 | THE KEG STEAKHOUSE | -285.00 | -285.00 | 0 | — | — | Y | Q1 | "Meals/entertainment: blocked (conservative)" |
 
-| Province | Factor |
-|----------|--------|
-| GST-only provinces (5%) | 5/105 = 4.762% |
-| Ontario (13% HST) | 13/113 = 11.504% |
-| Nova Scotia (14% HST) | 14/114 = 12.281% |
-| NB / NL / PEI (15% HST) | 15/115 = 13.043% |
+### Example 4 — Capital asset (over $30,000)
 
-Purchases from multiple provinces must be grouped and calculated separately. [T1]
+**Input line:**
+`2026-04-18 ; APPLE STORE YORKDALE ; DEBIT ; MacBook Pro 16 ; -3,729.00 ; CAD`
 
-### 5.4 Charity Net Tax Method [T1]
+**Reasoning:**
+CAD 3,729 including HST. Net = 3,729 / 1.13 = 3,300.88. HST = 428.12. This is a capital asset used in the business. Full ITC is claimable on Line 106. Capital assets are reported on Line 106 the same as current expenses in Canada (no separate capital line on GST34). However, if the asset is a passenger vehicle exceeding the CCA Class 10.1 ceiling (CAD 37,000 + tax for 2025/2026), the ITC is limited to the ceiling amount.
 
-**Legislation:** ETA s.225.1.
+**Output:**
 
-Registered charities can remit 60% of GST/HST collected on taxable supplies and claim NO ITCs. Public service body rebate (50% of GST on exempt-activity inputs) may also apply under ETA s.259.
+| Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-18 | APPLE STORE | -3,729.00 | -3,300.88 | -428.12 | 13% HST | 106 | N | — | — |
 
----
+### Example 5 — Export sale (zero-rated)
 
-## Step 6: Key Thresholds
+**Input line:**
+`2026-04-22 ; ACME CORP USA ; CREDIT ; Invoice CA-2026-018 IT consulting March ; +5,500.00 ; CAD`
 
-| Threshold | Amount | Legislation | Notes |
-|-----------|--------|-------------|-------|
-| **Small supplier (general)** | $30,000 in taxable supplies in last 4 consecutive calendar quarters, OR in any single quarter | ETA s.148 | [T1] |
-| **Small supplier (public service bodies)** | $50,000 in taxable supplies | ETA s.148 | [T1] |
-| **Taxi/limo operators** | $0 -- must register regardless | ETA s.240(1.1) | [T1] |
-| **Non-resident performers** | $0 -- must register if making taxable supplies in Canada | ETA s.240(2) | [T1] |
-| **Registration deadline** | Within 29 days of exceeding threshold | ETA s.240(1) | [T1] The supply that causes the threshold to be exceeded is itself subject to GST/HST. |
-| **Voluntary registration** | Any amount -- can register if engaged in commercial activity | ETA s.240(3) | [T1] Benefits: ITCs, credibility with commercial clients. |
-| **Cancellation of registration** | Taxable supplies under $30,000 for last 12 months AND registered for at least 1 year | ETA s.242 | [T1] |
-| **Mandatory electronic filing** | Annual taxable supplies > $1,500,000 | ETA s.238(1) | [T1] |
-| **Monthly reporting mandatory** | Annual taxable supplies > $6,000,000 | ETA s.245-248 | [T1] |
-| **Quick Method eligibility** | $400,000 or less (including GST/HST) | Regulations | [T1] |
-| **Simplified Method eligibility** | $1,000,000 or less in annual taxable supplies | Regulations | [T1] |
-| **Instalment requirement** | Prior year net tax > $3,000 (annual filers) | ETA s.237 | [T1] |
-| **ITC documentation -- simplified** | Purchase under $100 tax-included | Regulations s.3 | [T1] |
-| **ITC documentation -- intermediate** | $100 to $499.99 tax-included | Regulations s.3 | [T1] |
-| **ITC documentation -- full** | $500+ tax-included | Regulations s.3 | [T1] |
-| **ITC claim time limit (general)** | 4 years | ETA s.225(4) | [T1] |
-| **ITC claim time limit (specified persons)** | 2 years | ETA s.225(4) | [T1] Applies to LFIs, businesses >$6M revenue. |
-| **Passenger vehicle CCA ceiling (non-ZEV)** | $37,000 | ITA s.13(7)(g), Class 10.1 | [T1] |
-| **Passenger vehicle CCA ceiling (ZEV)** | $61,000 | ITA, Class 54 | [T1] |
-| **Lease ceiling (non-ZEV)** | $950/month | ITA s.67.3 | [T1] |
-| **Lease ceiling (ZEV)** | $1,100/month | ITA s.67.3 | [T1] |
-| **New housing rebate FMV phase-out** | $350,000 -- $450,000 | ETA s.254 | [T1] Federal GST rebate: 36% of GST, max $6,300. |
+**Reasoning:**
+Incoming CAD 5,500 from a US company. The client provides IT consulting services to a non-resident. Under ETA Schedule VI, Part V, s.5, services performed for a non-resident who is not registered for GST/HST and not a consumer in Canada are zero-rated. Report as revenue on Line 101 but zero-rated (no GST/HST on Line 103). Full ITC recovery on related inputs is preserved.
 
-### 6.1 GST/HST Registration Number Format [T1]
+**Output:**
 
-```
-123456789 RT 0001
-|         |  |
-|         |  +-- Account reference number (0001 = first GST/HST account)
-|         +---- Program identifier (RT = GST/HST)
-+--------- 9-digit Business Number
-```
+| Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-22 | ACME CORP USA | +5,500.00 | +5,500.00 | 0 | 0% | 101 (zero-rated) | Y | Q2 (HIGH) | "Verify non-resident status and zero-rating conditions" |
 
-The full 15-character number must be shown on invoices: `123456789RT0001`. [T1]
+### Example 6 — Vehicle costs, restricted ITC
 
-### 6.2 QST Registration Number Format [T1]
+**Input line:**
+`2026-04-28 ; PETRO-CANADA ; DEBIT ; Fuel ; -92.00 ; CAD`
 
-```
-1234567890 TQ 0001
-```
+**Reasoning:**
+Fuel purchase. In Canada, there is no blanket block on vehicle expenses (unlike Malta). ITCs are claimable to the extent of business use. For a passenger vehicle, the taxpayer must track business vs personal kilometers. Conservative default: 0% ITC (personal use assumed). If the taxpayer maintains a logbook showing, say, 60% business use, 60% of the GST/HST is claimable.
 
-In Quebec, Revenu Quebec administers both GST and QST. A single registration covers both. The $30,000 small supplier threshold applies separately to QST. [T1]
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST/HST | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-28 | PETRO-CANADA | -92.00 | -92.00 | 0 | — | — | Y | Q3 | "Vehicle fuel: 0% ITC (no logbook). Provide km logbook for partial ITC." |
 
 ---
 
-## Step 7: Filing Deadlines
+## Section 5 — Tier 1 classification rules (compressed)
 
-### 7.1 Reporting Periods [T1]
+### 5.1 GST at 5% (ETA s.165(1))
 
-**Legislation:** ETA s.245-248.
+Federal component of all taxable supplies. Applies in GST-only provinces (AB, BC, SK, MB, NT, NU, YT). In these provinces, only 5% GST applies on the GST34. Provincial taxes (BC PST, SK PST, MB RST) are separate filings.
 
-| Annual Taxable Supplies | Assigned Reporting Period | Can Elect |
-|------------------------|--------------------------|-----------|
-| $1,500,000 or less | Annual | Monthly or quarterly |
-| $1,500,001 to $6,000,000 | Quarterly | Monthly |
-| Over $6,000,000 | Monthly | None (monthly is mandatory) |
+### 5.2 HST at harmonized rates (ETA s.165(2))
 
-### 7.2 Filing and Payment Deadlines [T1]
+In harmonized provinces (ON 13%, NS 14%, NB 15%, NL 15%, PE 15%), the HST replaces GST. The full HST amount is reported on the GST34. There is no separate provincial filing for HST provinces.
 
-**Legislation:** ETA s.238(1), s.245.
+### 5.3 Place of supply (SOR/2010-117)
 
-| Reporting Period | Filing Deadline | Payment Deadline |
-|-----------------|-----------------|------------------|
-| **Monthly** | 1 month after end of reporting period | Same as filing deadline |
-| **Quarterly** | 1 month after end of reporting period | Same as filing deadline |
-| **Annual** (individual, Dec 31 year-end) | June 15 of following year | **April 30** of following year |
-| **Annual** (non-Dec 31 year-end) | 3 months after end of fiscal year | 3 months after end of fiscal year |
-| **Annual** (corporation, Dec 31 year-end) | March 31 of following year | 3 months after fiscal year end |
+The rate depends on where the supply is made. For tangible personal property: province where delivery occurs. For services: generally the province of the recipient's business address. For intangible personal property: province where the property may be used. Interprovincial supplies require transaction-level place-of-supply determination.
 
-**Key nuance for annual filers who are individuals:** The FILING deadline is June 15 (aligned with income tax), but the PAYMENT deadline is April 30. Late payment after April 30 incurs interest even if the return is filed by June 15. [T1]
+### 5.4 Zero-rated supplies (ETA Schedule VI)
 
-### 7.3 Instalment Requirements for Annual Filers [T1]
+Basic groceries (Part III), prescription drugs (Part I), medical devices (Part II), exports of goods (Part V), services to non-residents (Part V, s.5 — conditions apply), international transport (Part VII), agricultural products (Part IV), financial services to non-residents (Part IX). Zero-rated means 0% tax but full ITC eligibility on related inputs.
 
-**Legislation:** ETA s.237.
+### 5.5 Exempt supplies (ETA Schedule V)
 
-Annual filers whose net tax for the preceding fiscal year exceeds $3,000 must pay quarterly instalments:
+Financial services (Part VII), residential rent (Part I), health care services (Part II — but only listed services), educational services (Part III), childcare (Part IV), legal aid (Part V), public sector (Part VI). Exempt means no GST/HST charged and NO ITC on related inputs. If exempt supplies are significant → mixed-use apportionment required.
 
-| Instalment | Due Date | Amount |
-|------------|----------|--------|
-| Q1 | Last day of first quarter | 1/4 of prior year net tax |
-| Q2 | Last day of second quarter | 1/4 of prior year net tax |
-| Q3 | Last day of third quarter | 1/4 of prior year net tax |
-| Q4 | Last day of fourth quarter | 1/4 of prior year net tax |
+### 5.6 Input tax credits (ETA s.169)
 
-Alternatively, instalments can be based on estimated current-year net tax. [T1]
+ITCs are claimable on GST/HST paid on purchases used in commercial (taxable + zero-rated) activities. Documentation requirements (ETA Input Tax Credit Information Regulations): purchases under $30 need vendor name and amount; $30–$149.99 need vendor name, BN, date, amount, GST/HST; $150+ need all of the above plus purchaser name/address. Report on Line 106.
 
-### 7.4 Penalties [T1]
+### 5.7 Self-assessment on imported taxable supplies (ETA s.218)
 
-**Legislation:** ETA s.280, s.280.1, s.281.
+When a registrant receives a taxable supply from a non-resident who did not charge GST/HST: self-assess on Line 405 and claim offsetting ITC on Line 106. Net effect zero for fully taxable registrants. This is the Canadian equivalent of EU reverse charge.
 
-| Penalty Type | Rate/Amount | ETA Section |
-|-------------|-------------|-------------|
-| **Interest on overdue amounts** | Prescribed rate (set quarterly by CRA) + 4% per annum, compounded daily | s.280(1) |
-| **Failure to file** | 1% of amount owing + 0.25% per month late, up to 12 months (max 4% surcharge) | s.280.1(1) |
-| **Repeated failure to file** | 2% of amount owing + 0.5% per month, up to 20 months (max 12% surcharge) | s.280.1(2) |
-| **False statements or omissions** | Greater of $250 or 25% of tax sought to be evaded | s.285 |
-| **Gross negligence** | Greater of $250 or 25% of tax sought to be evaded | s.285 |
-| **Failure to register** | $1,000 to $25,000 fine and/or up to 12 months imprisonment | s.328(1) |
+### 5.8 Capital personal property / passenger vehicles (ETA s.201–202)
 
-### 7.5 Interest Rate [T1]
+ITCs on passenger vehicles are limited by the Income Tax Act CCA ceiling (Class 10.1: $37,000 + tax for 2025/2026). For luxury vehicles, ITC is capped at GST/HST on the ceiling amount. Leased vehicles: ITC limited proportionally. Business-use percentage applies on top.
 
-**Legislation:** ETA s.280; Regulations s.4301(a).
+### 5.9 Blocked ITCs (ETA s.170)
 
-The prescribed interest rate is set quarterly by CRA based on the Government of Canada Treasury Bill rate.
-- Interest on overdue GST/HST = prescribed rate + 4%.
-- Interest on GST/HST refunds owed by CRA = prescribed rate + 2%.
-- Rates published quarterly in the Canada Gazette. [T1]
+- Club memberships (golf, fitness, social clubs) — ETA s.170(1)(a) — fully blocked
+- Personal expenses — ETA s.170(1)(b) — fully blocked
+- Gifts over $50 (except food/drink) — limited
+- Passenger vehicles: not blocked per se but limited to business-use proportion and CCA ceiling
 
-### 7.6 Voluntary Disclosure Program (VDP) [T2]
+### 5.10 Meals and entertainment — 50% rule
 
-**Legislation:** ETA s.281.
+ETA s.236(1) cross-references ITA s.67.1: the GST/HST ITC on meals and entertainment is limited to 50% of the GST/HST paid. This is not a full block — it is a 50% restriction. The 50% rule does NOT apply to: meals provided at a remote work camp, meals included in convention fees, meals provided for fundraising, or meals for which the full cost is reimbursed by the client.
 
-CRA may waive or cancel penalties and interest if a registrant voluntarily discloses errors or omissions before CRA initiates enforcement action. Conditions: voluntary, complete, involves a penalty (at least one year overdue), payment arrangement proposed.
+### 5.11 Change in use — capital property (ETA s.195–199)
 
-**Flag for reviewer: VDP applications involve significant professional judgement. Always escalate to tax professional.**
+When a capital asset changes from business to personal use (or vice versa), a deemed supply/acquisition occurs. The registrant must self-assess or claim ITC based on the FMV at the time of change. Flag for reviewer.
+
+### 5.12 Small supplier threshold (ETA s.148)
+
+$30,000 in any single calendar quarter or in four consecutive calendar quarters. Below threshold: no obligation to register or charge GST/HST (but may voluntarily register). Above threshold: must register within 29 days.
+
+### 5.13 Bad debts (ETA s.231)
+
+If a registrant has previously reported GST/HST on a sale and the receivable becomes uncollectable, the GST/HST can be recovered via Line 107 (adjustment). Must be written off in the registrant's books. Recovery if the debt is later collected.
+
+### 5.14 Reporting sales on Line 101
+
+Line 101 includes all revenue — taxable, zero-rated, and exempt. It also includes GST/HST collected. This is a gross-inclusive line. Line 103 is the GST/HST collected portion.
 
 ---
 
-## Step 8: Place of Supply, Provincial Rates, and Canada-Specific Rules
+## Section 6 — Tier 2 catalogue (compressed)
 
-### 8.1 Rates by Province/Territory (as of April 2026) [T1]
+### 6.1 Vehicle costs
 
-**Legislation:** ETA s.165(1) (GST), s.165(2) (HST provincial component).
+*Pattern:* Petro-Canada, Shell, Esso, Canadian Tire (auto), car payments. *Default:* 0% ITC (no logbook). *Question:* "Do you have a vehicle logbook showing business vs personal kilometers?"
 
-| Province/Territory | Code | GST | Provincial Tax | Combined Rate | Tax Type | Administered By |
-|--------------------|------|-----|----------------|---------------|----------|-----------------|
-| Alberta | AB | 5% | 0% | 5% | GST only | CRA |
-| British Columbia | BC | 5% | 7% PST | 12% effective | GST + PST | CRA (GST) + BC Ministry of Finance (PST) |
-| Manitoba | MB | 5% | 7% RST | 12% effective | GST + RST | CRA (GST) + MB Ministry of Finance (RST) |
-| New Brunswick | NB | 5% | 10% (HST provincial) | 15% HST | HST | CRA |
-| Newfoundland and Labrador | NL | 5% | 10% (HST provincial) | 15% HST | HST | CRA |
-| Northwest Territories | NT | 5% | 0% | 5% | GST only | CRA |
-| Nova Scotia | NS | 5% | 9% (HST provincial) | 14% HST | HST | CRA |
-| Nunavut | NU | 5% | 0% | 5% | GST only | CRA |
-| Ontario | ON | 5% | 8% (HST provincial) | 13% HST | HST | CRA |
-| Prince Edward Island | PE | 5% | 10% (HST provincial) | 15% HST | HST | CRA |
-| Quebec | QC | 5% | 9.975% QST | ~14.975% effective | GST + QST | Revenu Quebec (administers BOTH) |
-| Saskatchewan | SK | 5% | 6% PST | 11% effective | GST + PST | CRA (GST) + SK Ministry of Finance (PST) |
-| Yukon | YT | 5% | 0% | 5% | GST only | CRA |
+### 6.2 Meals and entertainment
 
-**Nova Scotia rate change:** Reduced from 15% HST to 14% HST effective April 1, 2025. [T1]
+*Pattern:* restaurants, Tim Hortons, Starbucks, The Keg. *Default:* block. *Question:* "Was this a business meal? If yes, 50% of the GST/HST is claimable as ITC."
 
-### 8.2 HST Provincial Component Breakdown [T1]
+### 6.3 Home office expenses
 
-| HST Province | Federal Component | Provincial Component | Total HST |
-|-------------|-------------------|---------------------|-----------|
-| Ontario | 5% | 8% | 13% |
-| New Brunswick | 5% | 10% | 15% |
-| Newfoundland and Labrador | 5% | 10% | 15% |
-| Nova Scotia | 5% | 9% | 14% |
-| Prince Edward Island | 5% | 10% | 15% |
+*Pattern:* utility bills, internet at home. *Default:* 0% ITC. *Question:* "Do you work from home? What percentage of your home is used exclusively for business?"
 
-### 8.3 Historical Rate Changes (Reference) [T1]
+### 6.4 Round-number incoming transfers
 
-| Province | Previous Rate | New Rate | Effective Date |
-|----------|--------------|----------|----------------|
-| Nova Scotia | 15% HST | 14% HST | April 1, 2025 |
-| Newfoundland and Labrador | 13% HST | 15% HST | July 1, 2016 |
-| Prince Edward Island | 14% HST | 15% HST | October 1, 2016 |
-| New Brunswick | 13% HST | 15% HST | July 1, 2016 |
-| Ontario | 8% PST (retail) | 13% HST | July 1, 2010 |
-| British Columbia | 12% HST | 5% GST + 7% PST | April 1, 2013 (HST repealed by referendum) |
-| Prince Edward Island | 10% PST | 14% HST | April 1, 2013 |
+*Pattern:* large round credit from owner name. *Default:* exclude as owner injection. *Question:* "Is this a customer payment, owner contribution, or loan?"
 
-**When processing returns that span a rate change date, prorate supplies based on when the tax became payable (generally the earlier of invoice date or payment date). [T2]**
+### 6.5 Incoming from individuals
 
-### 8.4 Canada's Multi-Layer Indirect Tax System [T1]
+*Pattern:* incoming from private names. *Default:* taxable sale at provincial HST rate, Line 101/103. *Question:* "Was it a sale? What was supplied?"
 
-Canada does NOT have a single unified VAT/GST system. Four distinct tax types apply depending on province:
+### 6.6 Interprovincial sales
 
-**GST (Goods and Services Tax):** Federal tax at 5%, imposed under ETA s.165(1). Applies in every province and territory. ITCs recoverable by registrants. [T1]
+*Pattern:* incoming from counterparty in different province. *Default:* rate of recipient's province. *Question:* "Confirm the province of the customer for place-of-supply determination."
 
-**HST (Harmonized Sales Tax):** Single combined federal + provincial tax, imposed under ETA s.165(2). Federal component is always 5%. Provincial component varies. Administered entirely by CRA. One return, one remittance. ITCs recover the FULL HST amount. [T1]
+### 6.7 Large purchases (potential capital asset)
 
-**PST (Provincial Sales Tax):** Separate provincial retail sales tax. NOT a value-added tax. Imposed by BC, SK, and MB. Generally NOT recoverable by businesses. PST is NOT reported on the GST/HST return. It is a separate provincial filing. **This skill covers GST/HST. PST obligations are noted for context but are separate filings.** [T1]
+*Pattern:* single purchase > CAD 1,000. *Default:* current expense on Line 106. *Question:* "Is this a capital asset with useful life > 1 year?"
 
-**QST (Quebec Sales Tax):** Quebec's own VAT-style tax at 9.975%, imposed under AQST. Structurally similar to GST but administered separately by Revenu Quebec. Input Tax Refunds (ITRs) available. In Quebec, Revenu Quebec administers BOTH the GST and the QST. **This skill focuses on GST/HST. QST is referenced for completeness but has its own filing requirements.** [T1]
+### 6.8 Mixed-use phone, internet
 
-### 8.5 Place of Supply Rules [T1]
+*Pattern:* Rogers, Bell, Telus personal lines. *Default:* 0% if mixed. *Question:* "Is this a dedicated business line or mixed-use?"
 
-**Legislation:** ETA s.144.1, s.272.1; Place of Supply (GST/HST) Regulations (SOR/2010-117).
+### 6.9 Outgoing to individuals
 
-**General principle:** Tax follows the destination (where the supply is consumed or delivered), not the origin.
+*Pattern:* outgoing to private names. *Default:* exclude as draws. *Question:* "Was this a contractor payment, salary, refund, or personal transfer?"
 
-#### Tangible Personal Property (Goods) [T1]
+### 6.10 Cash withdrawals
 
-**Legislation:** Place of Supply Regulations s.3.
+*Pattern:* ATM, cash withdrawal. *Default:* exclude. *Question:* "What was the cash used for?"
 
-| Scenario | Place of Supply | Rate Applied |
-|----------|----------------|--------------|
-| Goods delivered to customer in Ontario | Ontario | 13% HST |
-| Goods delivered to customer in Alberta | Alberta | 5% GST |
-| Goods delivered to customer in New Brunswick | New Brunswick | 15% HST |
-| Goods shipped from Ontario to Alberta | Alberta (destination) | 5% GST |
-| Goods shipped from Alberta to Ontario | Ontario (destination) | 13% HST |
-| Goods shipped to customer outside Canada | Outside Canada | 0% (zero-rated export) |
-| Goods delivered to shipping company for export | Canada (where delivered to carrier) unless exported | Apply rules carefully [T2] |
+### 6.11 Rent payments
 
-**Key rule:** The place of supply is where **possession of the goods is transferred to the recipient** (delivery address), NOT where the supplier is located. [T1]
+*Pattern:* monthly rent to landlord. *Default:* commercial (taxable, ITC eligible). *Question:* "Is this a commercial or residential lease?"
 
-#### Services -- General Rule [T1]
+### 6.12 Amazon.ca purchases
 
-**Legislation:** Place of Supply Regulations s.5.
+*Pattern:* Amazon.ca, AMZN. *Default:* taxable domestic at HST rate. *Question:* "Was this a business purchase? Check invoice for GST/HST breakdown."
 
-**General rule:** Place of supply is the province where the **recipient** is located (business address or, for individuals, usual place of residence). [T1]
+### 6.13 Stripe/PayPal incoming
 
-#### Services -- Specific Overrides [T1]
+*Pattern:* Stripe payouts, PayPal transfers. *Default:* sales revenue at provincial rate, Line 101/103. *Question:* "Are these customer payments? What province are your customers in?"
 
-**Legislation:** Place of Supply Regulations s.6-13.
+### 6.14 Tips and gratuities
 
-| Service Type | Place of Supply | Regulation |
-|-------------|----------------|------------|
-| Services related to **real property** | Province where property is situated | s.6 |
-| Services related to **tangible personal property** | Province where property is at time of service | s.7 |
-| **Transportation services** (freight) | Province where shipment is delivered | s.8 |
-| **Passenger transportation** | Province where journey begins | s.9 |
-| **Events** (admission, conference, seminar) | Province where event takes place | s.10 |
-| **Acting/performing services** | Province where performance occurs | s.11 |
-| **Postage/mailing services** | Province where mail is deposited | s.12 |
-| **Telecommunications** | Province of ordinary location of the device | s.13 |
-| **Computer-related/IT services** | Province of recipient (general rule applies) | s.5 |
+*Pattern:* restaurant charges with tip component. *Default:* GST/HST only on pre-tip amount. *Question:* "Confirm pre-tip amount for ITC calculation."
 
-#### Intangible Personal Property (Digital Products, Licences) [T1]
+### 6.15 US dollar transactions
 
-**Legislation:** Place of Supply Regulations s.4.
-
-Place of supply determined by address of recipient. If non-resident, zero-rated if conditions met. [T1]
-
-#### Interprovincial Supply Examples [T1]
-
-| Supplier Location | Customer Location | GST/HST Rate | Why |
-|-------------------|-------------------|-------------|-----|
-| Alberta (5% GST) | Ontario (13% HST) | 13% HST | Destination-based |
-| Ontario (13% HST) | Alberta (5% GST) | 5% GST | Destination-based |
-| New Brunswick (15% HST) | Nova Scotia (14% HST) | 14% HST | Destination-based |
-| British Columbia (5% GST + 7% PST) | Ontario (13% HST) | 13% HST; no BC PST | GST/HST follows destination |
-| Ontario (13% HST) | Quebec (5% GST + 9.975% QST) | 5% GST + QST (separate) | QC is not an HST province |
-| Ontario (13% HST) | United States | 0% (zero-rated export) | Exported outside Canada |
-
-### 8.6 Key ETA Sections Reference [T1]
-
-| ETA Section | Subject |
-|-------------|---------|
-| s.123(1) | Definitions (supply, taxable supply, registrant, etc.) |
-| s.141.01 | Use of property -- taxable vs exempt |
-| s.148 | Small supplier threshold |
-| s.165(1) | Imposition of GST at 5% |
-| s.165(2) | Imposition of provincial component of HST |
-| s.169 | Input tax credits -- general rule |
-| s.170 | Restrictions on ITCs |
-| s.171 | ITCs for financial institutions |
-| s.202 | Employee and partner ITCs |
-| s.211-211.1 | Self-supply rules (real property) |
-| s.218 | Tax on imported taxable supplies (reverse charge equivalent) |
-| s.218.1 | Selected listed financial institutions -- special rules |
-| s.221 | Obligation to collect GST/HST |
-| s.225 | Net tax calculation |
-| s.227-228 | Quick method / simplified method |
-| s.228 | Reporting periods and filing |
-| s.237-240 | Registration requirements |
-| s.238-239 | Filing and remittance |
-| s.256-256.77 | Rebates (new housing, employee, etc.) |
-| s.261 | Rebate for overpayment |
-| s.272.1 | Place of supply rules |
-| s.280 | Interest on overdue amounts |
-| s.280.1 | Penalty for failure to file |
-| s.281 | Waiver of penalty/interest |
-| s.296 | Assessments |
-| Schedule V | Exempt supplies |
-| Schedule VI | Zero-rated supplies |
-
-### 8.7 Comparison with EU VAT [T1]
-
-| Feature | Canada GST/HST | EU VAT (Directive 2006/112/EC) |
-|---------|---------------|-------------------------------|
-| Tax type | Multi-rate consumption tax (GST/HST/PST/QST) | Value-added tax |
-| Federal vs. state | Federal tax (GST); provincial component varies | Each member state sets own rate within EU minimums |
-| Standard rates | 5% (GST), 13-15% (HST) | 15% minimum; most states 19-27% |
-| Reduced rates | None federally; provincial components create effective reduced rates | Two reduced rates allowed (min 5%) plus super-reduced/zero |
-| Zero-rating | Yes (basic groceries, prescription drugs, exports) | Yes, varies by member state |
-| Exempt without credit | Yes (financial services, health care, used residential) | Yes (similar categories) |
-| Registration threshold | $30,000 CAD (~EUR 20,000) | Varies by state (EUR 0 to EUR 85,000) |
-| Input tax credit/deduction | ITCs under ETA s.169 | Input VAT deduction under Art. 168 |
-| Reverse charge | Self-assessment under ETA s.218 | Reverse charge under Art. 196 |
-| Interprovincial/intra-community | Place of supply rules (destination principle) | Intra-community acquisition (destination principle) |
-| Digital economy | Simplified registration for non-resident B2C (since July 2021) | OSS/IOSS (since July 2021) |
-
-| EU VAT Concept | Canadian Equivalent |
-|----------------|-------------------|
-| VAT registration | GST/HST registration (BN + RT program) |
-| VAT return (periodic) | GST/HST return (Form GST34) |
-| Input VAT deduction | Input Tax Credit (ITC) |
-| Output VAT | GST/HST collected/collectible |
-| Intra-community supply | Interprovincial supply |
-| Reverse charge (cross-border services) | Self-assessment under ETA s.218 |
-| MOSS/OSS (digital economy) | Simplified Registration for non-residents |
-| Pro-rata / partial exemption | ITC allocation for mixed-use inputs |
-| Capital goods scheme | Change-in-use rules (ETA s.195-211) |
-| EC Sales List | No equivalent in Canada |
-| Intrastat | No equivalent in Canada |
+*Pattern:* USD amounts on bank statement. *Default:* convert to CAD at Bank of Canada daily rate. *Question:* "Confirm the CAD equivalent shown on the bank statement."
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 7 — Excel working paper template (Canada-specific)
 
-- NEVER apply HST rate based on supplier's province -- ALWAYS use destination (place of supply) province rate.
-- NEVER treat zero-rated supplies the same as exempt supplies -- zero-rated allows ITC recovery; exempt does NOT.
-- NEVER claim ITCs on club memberships (ETA s.170(1)(a)) -- blocked under ALL circumstances.
-- NEVER claim ITCs on personal or living expenses (ETA s.170(1)(b)).
-- NEVER claim more than 50% ITC on meals and entertainment (unless an exception applies).
-- NEVER claim ITCs on passenger vehicles above the CCA ceiling ($37,000 non-ZEV / $61,000 ZEV).
-- NEVER claim ITCs without proper documentation (supplier name, date, GST/HST number for purchases over $100).
-- NEVER charge GST/HST on exempt supplies (Schedule V).
-- NEVER charge GST/HST on the sale of gift cards -- tax applies only on redemption.
-- NEVER include PST in GST/HST return calculations -- PST is a separate provincial tax with separate filing.
-- NEVER apply RITCs (Restricted Input Tax Credits) to current-period returns -- all RITC programs have been fully phased out.
-- NEVER register a small supplier ($30,000 threshold) involuntarily unless the threshold is exceeded.
-- NEVER file a GST/HST return with CRA for a Quebec registrant -- Quebec registrants file with Revenu Quebec.
-- NEVER assume a non-resident digital supplier can claim ITCs under simplified registration -- they CANNOT.
-- NEVER guess on First Nations tax exemption -- confirm status, supply type, and delivery location with tax professional.
-- NEVER apply a single flat rate across all provinces -- rates vary from 5% to 15%.
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.
+The base specification is in `vat-workflow-base` Section 3. This section provides the Canada-specific overlay.
 
----
+### Sheet "Transactions"
 
-## Edge Case Registry
+Columns A–L per the base. Column H ("Line code") accepts GST34 line references (101, 103, 106, 405, etc.). Column I adds the GST/HST rate used (5%, 13%, 14%, 15%). For self-assessed imports, enter "405" in column H.
 
-### EC1 -- Interprovincial Supply: Ontario Seller to Alberta Buyer [T1]
+### Sheet "Line Summary"
 
-**Situation:** An Ontario-based business sells goods and ships them to a customer in Alberta.
-**Resolution:** Place of supply is Alberta (delivery address). The supplier charges **5% GST only**, NOT 13% HST. The destination-based rule under Place of Supply Regulations s.3 applies.
-**Legislation:** ETA s.144.1; Place of Supply Regulations s.3.
-**Common error:** Ontario-based suppliers often mistakenly charge 13% HST on all sales regardless of destination.
-
-### EC2 -- Place of Supply for Digital Services: SaaS to Consumer in Multiple Provinces [T2]
-
-**Situation:** A SaaS company sells subscriptions to consumers across Canada.
-**Resolution:** The supplier must determine each customer's province of residence and charge the applicable GST/HST rate. If unknown, use best available information (billing address, IP address). If cannot be determined, default to 5% GST.
-**Legislation:** Place of Supply Regulations s.4, s.5; ETA s.211.16.
-**Flag for reviewer:** High-volume B2C digital sales require system configuration for correct provincial rates.
-
-### EC3 -- Non-Resident Digital Supplier (e.g., Netflix, Spotify) [T1]
-
-**Situation:** A non-resident company provides digital services to Canadian consumers (B2C).
-**Resolution:** Since July 1, 2021, must register under Simplified Registration if exceeding $30,000 threshold. Must collect and remit GST/HST. CANNOT claim ITCs. B2B supplies: Canadian business self-assesses under ETA s.218.
-**Legislation:** ETA s.211.13-211.23.
-
-### EC4 -- Input Tax Credit Recapture (Historical -- Pre-2018) [T1]
-
-**Situation:** Preparing a return for a large Ontario business for a period before July 1, 2018.
-**Resolution:** Large businesses (>$10M annual taxable supplies) in Ontario and PEI were required to recapture the provincial component of HST on specified inputs. Recapture amount reported as negative adjustment on Line 107.
-**Current status:** All RITCs fully phased out. No recapture applies to current-period returns. [T1]
-
-### EC5 -- Real Property Self-Supply (Builder) [T2]
-
-**Situation:** A builder constructs a new residential property and rents or occupies it instead of selling.
-**Resolution:** ETA s.191 deems a taxable sale AND purchase at FMV. Builder must self-assess GST/HST on FMV (Line 205), claim ITC only if used in commercial activities (e.g., short-term rental). If exempt long-term rental, no ITC. New housing rebate may apply (ETA s.256, s.256.2).
-**Flag for reviewer:** FMV determination and rebate eligibility require professional judgement.
-
-### EC6 -- Employee Benefits: Automobile Standby Charge [T1]
-
-**Situation:** Employer provides company car with taxable benefit under ITA s.6(1)(e) and s.6(1)(k).
-**Resolution:** Employer can claim ITC on GST/HST component: `ITC = (Taxable benefit x GST/HST rate) / (100% + GST/HST rate)`. Claimed on annual return for the year T4 is issued.
-**Legislation:** ETA s.175(1).
-
-### EC7 -- First Nations Tax Exemption [T2]
-
-**Situation:** Supply made to an Indigenous person on a reserve, or supply made on a reserve.
-**Resolution:** Under Indian Act s.87 and CRA GST/HST Technical Information Bulletin B-039: tangible goods delivered to a reserve are GST/HST exempt; services performed entirely on a reserve for a Status Indian are exempt; off-reserve purchases are generally subject to GST/HST with possible point-of-sale relief.
-**Flag for reviewer:** First Nations tax exemption involves complex fact patterns. Always confirm with tax professional.
-
-### EC8 -- GST/HST New Housing Rebate [T1]
-
-**Situation:** Individual purchases newly constructed home as primary residence.
-**Resolution:**
-
-| Tax | Rebate | Maximum | Threshold |
-|-----|--------|---------|-----------|
-| GST (federal 5%) | 36% of GST paid | $6,300 | Full rebate at FMV $350,000 or less; phased out $350K-$450K; no rebate above $450K |
-| Ontario HST (provincial 8%) | 75% of provincial HST | $24,000 | No phase-out based on price |
-| Nova Scotia HST (provincial) | Up to $3,000 | $3,000 | Varies |
-| Other HST provinces | Varies | Province-specific | Province-specific |
-
-**Filed on:** Form GST190 (federal), Form RC7190-ON (Ontario), or equivalent provincial form.
-
-### EC9 -- Medical and Dental Services -- Exempt vs. Taxable [T1]
-
-| Exempt (No GST/HST) | Taxable (GST/HST applies) |
-|---------------------|--------------------------|
-| Physician services (medically necessary) | Cosmetic surgery (elective) |
-| Dental services (most) | Teeth whitening (cosmetic) |
-| Chiropractic services | Some paramedical services not in Schedule V |
-| Physiotherapy | Personal training / fitness coaching |
-| Optometry (eye exams) | Laser eye surgery (cosmetic -- [T2] may be exempt if medically necessary) |
-| Prescription drugs | Over-the-counter supplements and vitamins |
-| Medical devices (listed) | Non-listed health products |
-
-### EC10 -- Financial Services -- Exempt Treatment [T1]
-
-| Exempt Financial Services | NOT Exempt (Taxable) |
-|--------------------------|---------------------|
-| Interest on loans | Advisory/consulting fees (if separately charged) |
-| Insurance premiums (arranging, underwriting) | Insurance adjusting fees |
-| Trading in securities | Safe deposit box rental |
-| Exchange of currency | Financial planning fees (if not part of exempt service) |
-| Credit card annual fees | Credit report services |
-| Mortgage arrangement | Mortgage brokerage fees [T2] |
-
-**ITC impact:** Financial institutions making primarily exempt supplies have heavily restricted ITC claims. Special allocation methods under ETA s.141.02. [T3] -- Escalate financial institution ITCs to specialist.
-
-### EC11 -- Drop Shipping [T2]
-
-**Situation:** Non-resident sells goods to Canadian customer, shipped from Canadian warehouse.
-**Resolution:** Complex multi-party transaction. Non-resident may need to register. If registered, charges GST/HST to Canadian customer. Drop shipper charges GST/HST to non-resident. Special rules under ETA s.179 may allow zero-rating between drop shipper and non-resident.
-**Flag for reviewer:** Always confirm full fact pattern with tax professional.
-
-### EC12 -- Supplies by Charities and Non-Profit Organizations [T2]
-
-**Situation:** Registered charity or NPO makes taxable and exempt supplies.
-**Resolution:** Small supplier threshold is $50,000 (not $30,000). Net Tax Method available: remit 60% of GST/HST collected, claim no ITCs (ETA s.225.1). Public service body rebate: charities 50% of GST on exempt-activity inputs; municipalities 100% (ETA s.259).
-**Flag for reviewer:** Election between net tax and regular method has significant financial implications.
-
-### EC13 -- GST/HST on Imported Services (Reverse Charge) [T1]
-
-**Situation:** Canadian registrant purchases services from non-registered non-resident.
-**Resolution:** Self-assess under ETA s.218: calculate GST/HST, remit (Form GST59 or regular return), claim ITC if commercial. Net effect for fully commercial businesses: zero.
-
-### EC14 -- Gift Cards and Vouchers [T1]
-
-Sale of gift card is NOT a taxable supply. GST/HST applies on redemption, not sale. Revenue from gift card sales NOT included in Line 101 or Line 103; include only on redemption.
-**Legislation:** ETA s.181.2.
-
-### EC15 -- Tips and Gratuities [T1]
-
-Voluntary tips are NOT consideration for a supply -- NOT subject to GST/HST. Mandatory service charges/auto-gratuities added to the bill ARE consideration -- subject to GST/HST.
-**Legislation:** ETA s.123(1); CRA Policy Statement P-202.
-
-### EC16 -- Coupons and Discounts [T1]
-
-- **Store coupons/discounts:** GST/HST on NET (discounted) price. Discount reduces consideration.
-- **Manufacturer coupons (third-party reimburses retailer):** GST/HST on FULL price. Coupon is third-party payment, not a reduction.
-**Legislation:** ETA s.181 (coupons), s.232 (adjustments).
-
----
-
-## Test Suite
-
-### Test 1 -- Standard Ontario Sale, 13% HST [T1]
-
-**Input:** Ontario-based retailer sells office furniture to Ontario customer. Invoice: $1,000 + $130 HST = $1,130.
-**Expected output:**
-- Line 101: $1,000 (sales revenue)
-- Line 103: $130 (HST collected)
-- No ITC entries for this sale (ITCs relate to purchases, not sales).
-
-### Test 2 -- Interprovincial Sale: ON Seller to AB Buyer [T1]
-
-**Input:** Ontario-based consulting firm provides services to Alberta client. Invoice: $5,000. Place of supply: Alberta.
-**Expected output:**
-- Line 101: $5,000
-- Line 103: $250 (5% GST only, NOT 13% HST)
-- Supplier collects 5% GST because destination is Alberta.
-
-### Test 3 -- Zero-Rated Export [T1]
-
-**Input:** Manitoba manufacturer exports goods to US customer. Invoice: USD 10,000 (CAD $13,500). Goods shipped to Minneapolis.
-**Expected output:**
-- Line 101: $13,500
-- Line 103: $0 (zero-rated export)
-- ITCs on related manufacturing inputs: fully claimable.
-
-### Test 4 -- Exempt Supply: Used Residential Property [T1]
-
-**Input:** Individual sells used residential home in Ontario for $500,000.
-**Expected output:**
-- NOT reported on GST/HST return (exempt supply).
-- Line 101: $0 (exempt supplies excluded)
-- Line 103: $0
-- No ITCs claimable on expenses related to this sale.
-
-### Test 5 -- ITC on Business Purchase in New Brunswick [T1]
-
-**Input:** NB registrant purchases office supplies from local supplier. Invoice: $200 + $30 HST (15%) = $230.
-**Expected output:**
-- Line 106: $30 (ITC claimed for full HST)
-- Supporting documentation: supplier name, date, GST/HST reg number, amount.
-
-### Test 6 -- Blocked ITC: Golf Club Membership [T1]
-
-**Input:** Ontario registrant pays $5,000 + $650 HST for annual golf club membership. Used 100% for client entertaining.
-**Expected output:**
-- Line 106: $0 (ITC BLOCKED under ETA s.170(1)(a))
-- $650 HST is an irrecoverable cost.
-
-### Test 7 -- Meals and Entertainment: 50% ITC Restriction [T1]
-
-**Input:** Alberta registrant takes client to restaurant. Bill: $200 + $10 GST = $210.
-**Expected output:**
-- Line 106: $5 (50% of $10 GST)
-- The other $5 GST is a non-recoverable cost.
-
-### Test 8 -- Passenger Vehicle Exceeding CCA Ceiling [T1]
-
-**Input:** Ontario registrant purchases a luxury vehicle for $80,000 + $10,400 HST (13%). 100% business use.
-**Expected output:**
-- Maximum ITC = 13% x $37,000 = $4,810
-- Line 106: $4,810 (NOT $10,400)
-- $5,590 HST irrecoverable.
-
-### Test 9 -- Quick Method: Service Business in Ontario [T1]
-
-**Input:** Freelance consultant in Ontario. Annual revenue: $80,000 + $10,400 HST collected = $90,400 (HST-included). Quick Method, first year of election.
-**Expected output:**
-- First $30,000: remit at 7.8% (8.8% - 1% credit) = $2,340
-- Remaining $60,400: remit at 8.8% = $5,315.20
-- Total remittance: $7,655.20
-- Compared to $10,400 collected -- consultant keeps $2,744.80.
-
-### Test 10 -- Self-Assessment on Imported Service (Reverse Charge) [T1]
-
-**Input:** Ontario registrant purchases legal services from US law firm ($20,000 USD = $27,000 CAD). US firm not registered for GST/HST.
-**Expected output:**
-- Self-assess: 13% x $27,000 = $3,510 HST payable (Line 205)
-- ITC claim: $3,510 (Line 106) -- if 100% commercial use
-- Net effect: $0
-
-### Test 11 -- Charity Using Net Tax Method [T1]
-
-**Input:** Registered charity in Ontario. Annual taxable sales: $40,000 + $5,200 HST collected. Uses net tax method.
-**Expected output:**
-- Remittance = 60% x $5,200 = $3,120
-- No ITCs claimed (net tax method).
-- Charity may also claim public service body rebate on exempt-activity inputs.
-
-### Test 12 -- Small Supplier Threshold Exceeded Mid-Quarter [T1]
-
-**Input:** Sole proprietor in Alberta. Taxable supplies: Q1 = $8,000, Q2 = $9,000, Q3 = $7,000, Q4 = $10,000. Running four-quarter total after Q4: $34,000.
-**Expected output:**
-- Registration required within 29 days of Q4 end.
-- The supply that caused the threshold to be exceeded is itself subject to GST.
-- Must begin collecting 5% GST on all subsequent taxable supplies.
-
-### Test 13 -- New Housing Rebate (Ontario) [T1]
-
-**Input:** Individual purchases new home in Ontario for $400,000 + $52,000 HST (13%) as primary residence. FMV = $400,000.
-**Expected output:**
-- Federal GST rebate: 36% x ($400,000 x 5%) x (($450,000 - $400,000) / $100,000) = 36% x $20,000 x 50% = $3,600
-- Ontario provincial rebate: 75% x ($400,000 x 8%) = 75% x $32,000 = $24,000 (capped at $24,000)
-- Total rebate: $3,600 + $24,000 = $27,600
-- Net HST after rebate: $52,000 - $27,600 = $24,400
-
-### Test 14 -- Gift Card Sale and Redemption [T1]
-
-**Input:** Ontario retailer sells a $100 gift card. Card is later redeemed for $100 of taxable merchandise.
-**Expected output:**
-- At time of gift card sale: Line 101 = $0, Line 103 = $0 (no GST/HST on gift card sale).
-- At time of redemption: Line 101 = $88.50 ($100 / 1.13), Line 103 = $11.50 ($100 x 13/113).
-
----
-
-## Reviewer Escalation Protocol
-
-### T2 Escalation Format
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
+One row per GST34 line. Column A is the line number, column B is the description, column C is the value.
 
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: CPA or qualified Canadian tax professional must confirm before filing.
+| 101 | Total sales and revenue | =SUM of all credit transactions (sales, zero-rated, exempt) |
+| 103 | GST/HST collected | =SUMIFS(Transactions!F:F, Transactions!G:G, "SALE") |
+| 105 | Total GST/HST and adjustments | =C[103]+C[104] |
+| 106 | Input tax credits | =SUMIFS(Transactions!F:F, Transactions!G:G, "ITC") |
+| 108 | Total ITCs and adjustments | =C[106]+C[107] |
+| 109 | Net tax | =C[105]-C[108] |
+| 405 | Tax on imported supplies (s.218) | =SUMIFS(Transactions!F:F, Transactions!H:H, "405") |
 ```
 
-### T3 Escalation Format
+### Sheet "Return Form"
 
-When Claude identifies a [T3] situation, output:
+Final GST34-ready figures:
 
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to CPA or qualified Canadian tax professional. Document gap.
+Line 105 = Total GST/HST collected + adjustments
+Line 108 = Total ITCs + adjustments
+Line 109 = Line 105 - Line 108   [net tax]
+Line 113 = Line 109 - Line 112   [balance]
+
+Positive Line 113 → amount owing to CRA
+Negative Line 113 → refund claimed
 ```
 
-### Known T3 Situations (Always Escalate)
+### Mandatory recalc step
 
-- Financial institution ITC allocation methods (ETA s.141.02)
-- First Nations tax exemption determinations (Indian Act s.87)
-- Real property self-supply fair market value assessments (ETA s.191)
-- GST/HST group registration and elections (ETA s.156)
-- Related party non-arm's length transactions (ETA s.155)
-- Insolvency and bankruptcy GST/HST treatment
-- GST/HST on amalgamations and wind-ups
-- Cross-border transfer pricing adjustments affecting GST/HST
-- Selected listed financial institution (SLFI) special rules
+After building the workbook, run:
+
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/canada-gst-hst-<period>-working-paper.xlsx
+```
 
 ---
 
-## Contribution Notes
+## Section 8 — Canadian bank statement reading guide
 
-If you are adapting this skill for another jurisdiction:
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these Canada-specific patterns.
 
-1. Replace all legislation references (ETA sections) with equivalent national/state legislation.
-2. Replace all form numbers (GST34, etc.) with equivalent local return forms.
-3. Replace GST/HST rates with local rates.
-4. Replace the $30,000 small supplier threshold with local equivalent.
-5. Replace the CCA ceiling ($37,000) with local vehicle cost limitations.
-6. Replace the provincial rate table with applicable sub-national rates.
-7. Replace blocked/restricted categories with local equivalents.
-8. Replace place of supply rules with local rules for determining tax jurisdiction.
-9. Have a CPA or qualified tax professional in the target jurisdiction validate every T1 rule before publishing.
-10. Add jurisdiction-specific edge cases to the Edge Case Registry.
-11. Run all test suite cases against local rules and update expected outputs.
+**RBC Royal Bank online export format.** CSV export from RBC Online Banking. Columns: Account Type, Account Number, Transaction Date, Cheque Number, Description 1, Description 2, CAD$, USD$. Date format: MM/DD/YYYY. Amounts are positive for credits, negative for debits. Description 1 contains the transaction type (e.g., "POS Purchase", "Online Banking Transfer", "Direct Deposit"). Description 2 contains the counterparty/payee name.
 
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+**TD Canada Trust online export format.** CSV from EasyWeb. Columns: Date, Transaction Description, Debit, Credit, Balance. Date format: MM/DD/YYYY. The Transaction Description field combines type and payee (e.g., "POS W/D SHOPIFY COMMERCE INC", "INTERAC E-TRANSFER FROM JOHN SMITH"). "POS W/D" = point-of-sale withdrawal (debit). "PREAUTH PYMT" = pre-authorized payment.
+
+**Scotiabank export format.** CSV from Scotia OnLine. Columns: Date, Description, Withdrawals, Deposits, Balance. Date format: DD/MM/YYYY (different from RBC/TD).
+
+**BMO export format.** CSV from BMO Online Banking. Columns: Transaction Date, Description, Amount. Single amount column (negative for debits).
+
+**CIBC export format.** CSV or QFX from CIBC Online. Columns: Date, Description, Debit, Credit. Date format: YYYY-MM-DD.
+
+**Common Canadian bank statement patterns:**
+
+| Term | Meaning |
+|---|---|
+| POS, POS W/D, POS PURCHASE | Point-of-sale debit card purchase |
+| PREAUTH, PREAUTH PYMT, PAP | Pre-authorized payment (direct debit) |
+| INTERAC E-TRANSFER | Interac e-Transfer (incoming or outgoing) |
+| ONLINE BANKING TRANSFER, TFR | Online transfer |
+| DIRECT DEPOSIT, DIR DEP | Direct deposit (incoming) |
+| CRA FED, RECEIVER GENERAL | CRA tax payment |
+| NSF, NSF FEE | Non-sufficient funds fee (bank charge — exempt) |
+| MONTHLY FEE, SERVICE CHARGE | Bank account fees (exempt) |
+| INTL PURCHASE, FX FEE | International purchase and foreign exchange fee |
+| ABM W/D, ATM | Cash withdrawal |
+
+**Internal transfers.** Own-account transfers between client's RBC, TD, savings accounts. Labelled "online banking transfer", "TFR", or matching account numbers. Always exclude.
+
+**Self-employed draws.** Transfers from business account to personal account labelled with the owner's name. Exclude.
+
+**HST on bank statement lines.** Canadian invoices are GST/HST-inclusive on the bank statement. To extract the GST/HST component: Tax = Gross * Rate / (1 + Rate). Example: CAD 113.00 at 13% HST → Tax = 113 * 0.13 / 1.13 = 13.00.
+
+**Interac e-Transfers.** Very common in Canada for B2B and B2C. The description shows "INTERAC E-TRANSFER FROM [name]" for incoming and "INTERAC E-TRANSFER TO [name]" for outgoing. Default treatment: incoming = potential sale (ask), outgoing = potential contractor payment or personal (ask).
+
+**Foreign currency.** Convert to CAD using the Bank of Canada daily exchange rate. Note the rate in column L.
+
+---
+
+## Section 9 — Onboarding fallback (only when inference fails)
+
+### 9.1 Entity type
+*Inference rule:* "Inc", "Corp", "Ltd" = corporation; personal name = sole proprietor. *Fallback:* "Are you a sole proprietor, partnership, or corporation?"
+
+### 9.2 GST/HST registration
+*Inference rule:* if asking for a GST34, they are registered. *Fallback:* "Are you registered for GST/HST? What is your Business Number (BN)?"
+
+### 9.3 Province
+*Inference rule:* bank branch, counterparty mix, area codes in descriptions. *Fallback:* "What province is your principal place of business?"
+
+### 9.4 Filing period
+*Inference rule:* transaction date range. *Fallback:* "Is this for a monthly, quarterly, or annual period? What are the period dates?"
+
+### 9.5 Accounting method
+*Inference rule:* if no mention of Quick Method, assume regular. *Fallback:* "Are you using the regular method or the Quick Method (election GST74)?"
+
+### 9.6 Industry
+*Inference rule:* counterparty mix. *Fallback:* "In one sentence, what does the business do?"
+
+### 9.7 Employees
+*Inference rule:* CPP/EI/payroll outgoing. *Fallback:* "Do you have employees?"
+
+### 9.8 Exempt supplies
+*Inference rule:* financial/medical/educational/residential rental income patterns. *Fallback:* "Do you make any GST/HST-exempt supplies?"
+
+### 9.9 Interprovincial sales
+*Inference rule:* counterparties in multiple provinces. *Fallback:* "Do you sell to customers in provinces other than your own?"
+
+### 9.10 Prior period balance
+*Not inferable. Always ask.* "Do you have any GST/HST balance owing or credit from the previous period?"
+
+---
+
+## Section 10 — Reference material
+
+### Validation status
+
+This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture. Canada-specific content (rates, line mappings, ITC rules, place of supply) is based on the Excise Tax Act as of April 2026 including the Nova Scotia HST rate change to 14% effective April 1, 2025.
+
+### Sources
+
+**Primary legislation:**
+1. Excise Tax Act (R.S.C., 1985, c. E-15), Part IX — s.123 (definitions), s.148 (small supplier), s.165 (imposition), s.169 (ITCs), s.170 (restrictions), s.218 (self-assessment), Schedule V (exempt), Schedule VI (zero-rated)
+2. Input Tax Credit Information (GST/HST) Regulations — documentation thresholds
+3. Place of Supply (GST/HST) Regulations (SOR/2010-117)
+4. New Harmonized Value-added Tax System Regulations
+
+**CRA guidance:**
+5. GST34 form and guide (RC4022) — canada.ca
+6. Quick Method guide (RC4058)
+7. GST/HST Memoranda Series — various technical interpretations
+8. GST/HST Info Sheets — place of supply, ITCs, specific industries
+
+**Other:**
+9. Bank of Canada daily exchange rates — bankofcanada.ca
+10. CRA My Business Account — business registration verification
+
+### Known gaps
+
+1. Quebec QST is entirely refused — a separate skill is needed.
+2. BC PST, SK PST, MB RST are refused — separate provincial skills needed.
+3. Quick Method is refused — could be added as a v2.1 feature.
+4. First Nations exemptions are refused — specialized knowledge required.
+5. Real property self-supply rules (s.191) are refused — too fact-sensitive.
+6. The NS HST rate changed to 14% on April 1, 2025 — verify no further rate changes.
+7. Interprovincial place-of-supply for digital services is evolving — flag for reviewer if significant.
+8. The s.218 self-assessment landscape is changing as more non-residents register voluntarily — always check the invoice first.
+
+### Change log
+
+- **v2.0 (April 2026):** Full rewrite to align with three-tier Accora architecture. 10-section Malta v2.0 structure adopted. Supplier pattern library added (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue added (Section 6). Excel template added (Section 7). Bank statement guide with RBC/TD/BMO/CIBC formats added (Section 8). Onboarding moved to fallback (Section 9).
+- **v2.0 (prior, April 2026):** Previous version with inline tier tags. Superseded.
+
+### Self-check (v2.0)
+
+1. Quick reference at top with rate table and conservative defaults: yes (Section 1).
+2. Supplier library as literal lookup tables: yes (Section 3, 15 sub-tables).
+3. Worked examples (hypothetical ON IT consultant): yes (Section 4, 6 examples).
+4. Tier 1 rules compressed: yes (Section 5, 14 rules).
+5. Tier 2 catalogue compressed: yes (Section 6, 15 items).
+6. Excel template with mandatory recalc: yes (Section 7).
+7. Onboarding as fallback only: yes (Section 9, 10 items).
+8. All 8 Canada-specific refusals present: yes (Section 2, R-CA-1 through R-CA-8).
+9. Reference material at bottom: yes (Section 10).
+10. Self-assessment s.218 explicit: yes (Section 3.8 + Section 5.7 + Example 1).
+11. Meals 50% rule explicit: yes (Section 5.10 + Example 3).
+12. Vehicle logbook requirement explicit: yes (Example 6).
+13. Place of supply rules documented: yes (Section 5.3).
+14. HST rate table complete with NS 14%: yes (Section 1).
+15. Zero-rated vs exempt distinction explicit: yes (Section 5.4–5.5).
+
+## End of Canada GST/HST Return Skill v2.0
+
+This skill is incomplete without the companion workflow file loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture). Do not attempt to produce a GST34 without it loaded.
+
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

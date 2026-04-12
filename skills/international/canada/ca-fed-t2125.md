@@ -2,7 +2,7 @@
 name: ca-fed-t2125
 description: >
   Use this skill whenever asked about Canadian self-employment business income reported on Form T2125 (Statement of Business or Professional Activities). Trigger on phrases like "T2125", "business income Canada", "self-employed expenses", "CCA", "capital cost allowance", "home office Canada", "motor vehicle expenses CRA", "business-use-of-home", "sole proprietor Canada", "net business income", "business number BN", "fiscal year end", "GST ITC", or any question about computing, classifying, or reporting business income and expenses for a Canadian sole proprietor. Covers Parts 1-8 of T2125, allowable expenses, CCA classes and rates, AccII, business-use-of-home, motor vehicle expenses, GST/HST interaction, and net income computation. ALWAYS read this skill before touching any T2125 work.
-version: 1.0
+version: 2.0
 jurisdiction: CA-FED
 tax_year: 2025
 category: international
@@ -10,589 +10,457 @@ depends_on:
   - income-tax-workflow-base
 ---
 
-# Canada Self-Employment (T2125) -- Sole Proprietor Skill
+# Canada Self-Employment (T2125) -- Sole Proprietor Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Canada -- Federal |
-| Jurisdiction Code | CA-FED |
-| Primary Legislation | Income Tax Act (ITA), R.S.C. 1985, c. 1 (5th Supp.) |
-| Supporting Legislation | Income Tax Regulations (ITR); Excise Tax Act (ETA) for GST/HST; CRA Guide T4002 |
-| Tax Authority | Canada Revenue Agency (CRA) |
-| Filing Portal | CRA My Account / NETFILE / EFILE |
+|---|---|
+| Country | Canada -- Federal |
+| Tax | Federal income tax on business income + CPP self-employed contributions |
+| Currency | CAD only |
+| Tax year | Calendar year (sole proprietors must use December 31 fiscal year-end) |
+| Primary legislation | Income Tax Act (ITA), R.S.C. 1985, c. 1 (5th Supp.) |
+| Supporting legislation | Income Tax Regulations (ITR); Excise Tax Act (ETA) for GST/HST; CRA Guide T4002 |
+| Tax authority | Canada Revenue Agency (CRA) |
+| Filing portal | CRA My Account / NETFILE / EFILE |
+| Filing deadline | 15 June (self-employed), but tax owing due 30 April |
 | Form | T2125 -- Statement of Business or Professional Activities |
 | Contributor | Open Accountants Community |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: expense classification, CCA rates, tax bracket application, BN requirements, filing deadlines. Tier 2: mixed-use expense apportionment, home office, motor vehicle business %, reasonable expense judgement. Tier 3: partnerships, corporations, non-resident income, complex disposals, SR&ED. |
+| Validated by | Pending -- Canadian CPA sign-off required |
+| Skill version | 2.0 |
+
+### Federal Tax Brackets (2025) [T1]
+
+| Taxable Income (CAD) | Rate |
+|---|---|
+| 0 -- 57,375 | 15% |
+| 57,376 -- 114,750 | 20.5% |
+| 114,751 -- 158,468 | 26% |
+| 158,469 -- 220,000 | 29% |
+| 220,001+ | 33% |
+
+**Provincial tax is additional.** Each province has its own brackets. This skill covers federal only. Combined marginal rates range from ~20% to ~54% depending on province.
+
+### Basic Personal Amount (2025) [T1]
+
+| Item | Amount (CAD) |
+|---|---|
+| Basic personal amount (income under ~$177,882) | $16,129 |
+| Basic personal amount (income over ~$253,414) | $14,538 |
+| BPA clawback zone | Linear reduction between thresholds |
+
+### CPP Self-Employed Contributions (2025) [T1]
+
+| Item | Value |
+|---|---|
+| CPP rate (self-employed pay both portions) | 11.9% (2 x 5.95%) |
+| CPP2 rate | 8% (2 x 4%) on earnings between first and second ceilings |
+| First earnings ceiling | $71,300 |
+| Second earnings ceiling | $81,200 |
+| Basic exemption | $3,500 |
+| Maximum CPP contribution | $8,068.20 |
+| Maximum CPP2 contribution | $792.00 |
+
+Half of CPP self-employed contributions is deductible on Line 22200.
+
+### Key T2125 Thresholds [T1]
+
+| Item | Value |
+|---|---|
+| GST/HST registration required | Over $30,000 in 4 consecutive quarters |
+| CCA deduction | Optional -- can claim any amount up to the maximum |
+| Instant asset write-off (CEBA) | See AccII rules -- enhanced first-year deduction |
+| Business-use-of-home | Only if principal place of business OR used exclusively for income-earning and meeting clients |
+
+### Conservative Defaults [T1]
+
+| Ambiguity | Default |
+|---|---|
+| Unknown business-use % (vehicle, home, phone) | 0% deduction |
+| Unknown expense category | Not deductible |
+| Unknown CCA class | Do not depreciate -- ask |
+| Unknown GST/HST status | Not registered (gross amounts are the cost) |
+| Unknown whether expense is business or personal | Personal (not deductible) |
+| Unknown vehicle km split | 0% business |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. CPA/CA must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required Inputs
 
----
+**Minimum viable** -- bank statement for the full calendar year (January-December), confirmation of business activity and NAICS code.
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- all invoices issued, purchase receipts, vehicle km log, home office measurements, GST/HST returns filed, prior year T2125.
 
-Before computing any business income figure, you MUST know:
+**Ideal** -- complete bookkeeping records, CCA schedule from prior year, motor vehicle log, T4 slips (if also employed), prior year Notice of Assessment.
 
-1. **Legal name and business name** [T1] -- as registered with CRA
-2. **Business Number (BN)** [T1] -- 9-digit BN + RT program account if GST/HST registered
-3. **Industry code (NAICS)** [T1] -- 6-digit North American Industry Classification System code
-4. **Fiscal year end** [T1] -- must be December 31 for sole proprietors (see Step 2)
-5. **Gross business revenue** [T1] -- total sales/fees/commissions for the fiscal period
-6. **Business expenses by category** [T1/T2] -- nature and amount of each expense
-7. **Capital assets acquired or disposed of** [T1] -- type, cost, date acquired, CCA class
-8. **Business-use-of-home** [T2] -- does the taxpayer work from home? Dedicated space?
-9. **Motor vehicle usage** [T2] -- does the taxpayer use a vehicle for business? Log maintained?
-10. **GST/HST registration status** [T1] -- registered or small supplier? Quick method?
-11. **Method of accounting** [T1] -- accrual or cash (most sole proprietors may use either)
-12. **Partnership or sole proprietor** [T1] -- this skill covers sole proprietors only
+### Refusal Catalogue
 
-**If fiscal year end is not December 31 and no T1139 election exists, STOP. Confirm with the taxpayer.**
+**R-CA-1 -- Corporations.** "Corporations file T2 corporate tax returns. This skill covers sole proprietors filing T2125 only."
+
+**R-CA-2 -- Partnerships.** "Partnerships file T2125 at the partnership level with allocation to partners. Partnership-specific rules are out of scope."
+
+**R-CA-3 -- Non-residents.** "Non-resident business income has different rules. Out of scope."
+
+**R-CA-4 -- SR&ED claims.** "Scientific Research and Experimental Development tax credits require specialised review. Escalate."
+
+**R-CA-5 -- Farming/fishing income.** "Farming (T2042) and fishing (T2121) have their own forms and special rules. Out of scope."
 
 ---
 
-## Step 1: Business Number (BN) Requirements [T1]
+## Section 3 -- Transaction Pattern Library
 
-**Legislation:** ITA s. 162(7.01); CRA RC2 Guide
+### 3.1 Income Patterns (Credits on Bank Statement)
 
-| Requirement | Detail |
-|-------------|--------|
-| When required | Within 15 days of beginning any commercial activity if you are a GST/HST registrant; otherwise when the first T2125 is filed |
-| Format | 9-digit BN (e.g., 123456789) + 2-letter program identifier + 4-digit account number (e.g., 123456789RT0001 for GST/HST) |
-| Program accounts | RT (GST/HST), RC (corporate tax -- N/A for sole proprietors), RP (payroll), RZ (information returns) |
-| How to register | Online via CRA Business Registration Online, by phone, or by mail (Form RC1) |
-| Multiple businesses | One sole proprietor may have multiple T2125 forms attached to the same T1 return; each business gets its own BN or same BN with different program accounts |
+| Pattern | T2125 Line | Treatment | Notes |
+|---|---|---|---|
+| CLIENT DEPOSIT, CLIENT PAYMENT, [client name] | Line 8299 (Gross revenue) | Business income | Core revenue |
+| STRIPE PAYOUT, STRIPE TRANSFER | Line 8299 | Business income | Match to underlying invoices. Report gross (before Stripe fees). |
+| PAYPAL TRANSFER, PAYPAL PAYOUT | Line 8299 | Business income | Same -- report gross before fees |
+| ETRANSFER [client name], INTERAC | Line 8299 | Business income | Common Canadian payment method |
+| GST/HST REFUND, CRA GST REFUND | Check | May be income | GST/HST refund of ITCs: NOT income. Net income adjustment if previously expensed. |
+| INTEREST, SAVINGS INTEREST | NOT T2125 | Interest income | Report on Line 12100, not T2125 |
+| DIVIDEND | NOT T2125 | Dividend income | Report on Line 12000/12010 |
+| EMPLOYMENT INCOME, SALARY | NOT T2125 | Employment income | T4 slip income |
+| CRA REFUND, TAX REFUND | EXCLUDE | Not income | Tax refund |
+| RENTAL INCOME | NOT T2125 | Rental | Report on T776 |
+| OWN TRANSFER, SAVINGS TRANSFER | EXCLUDE | Internal | Between own accounts |
 
----
+### 3.2 Expense Patterns (Debits on Bank Statement)
 
-## Step 2: Fiscal Year End [T1]
+| Pattern | T2125 Line | Tier | Treatment |
+|---|---|---|---|
+| RENT, OFFICE RENT, COMMERCIAL LEASE | Line 8910 (Rent) | T1 | Fully deductible if business premises |
+| PROPERTY TAX (business premises) | Line 8810 (Property taxes) | T1 | Fully deductible for business property |
+| HYDRO, ELECTRICITY, GAS, ENBRIDGE, HYDRO ONE | Line 8945 (Utilities) | T2 | If home: business-use % only. If office: fully deductible. |
+| BELL, ROGERS, TELUS, SHAW | Line 8220 (Telephone/utilities) | T2 | Business portion only |
+| INTERNET, WIFI | Line 8220 | T2 | Business portion only |
+| INSURANCE, BUSINESS INSURANCE, LIABILITY | Line 8690 (Insurance) | T1 | Fully deductible if business insurance |
+| ACCOUNTING, BOOKKEEPER, CPA | Line 8860 (Professional fees) | T1 | Fully deductible |
+| LAWYER, LEGAL FEE | Line 8860 | T1 | Deductible if business-related |
+| OFFICE SUPPLIES, STAPLES, GRAND & TOY | Line 8810 (Office expenses) | T1 | Fully deductible |
+| BANK FEE, MONTHLY FEE, NSF | Line 8710 (Interest and bank charges) | T1 | Fully deductible for business account |
+| STRIPE FEE, PAYPAL FEE, SQUARE FEE | Line 8710 | T1 | Payment processing fees: fully deductible |
+| INTEREST (business loan) | Line 8710 | T1 | Fully deductible |
+| ADVERTISING, GOOGLE ADS, META ADS, FACEBOOK | Line 8520 (Advertising) | T1 | Fully deductible |
+| MEALS (client entertainment) | Line 8523 (Meals and entertainment) | T1 | 50% deductible only. The other 50% is permanently disallowed. |
+| MEALS (business travel, alone) | Line 8523 | T1 | 50% deductible |
+| SOFTWARE, SUBSCRIPTION, SAAS | Line 8810 or 8860 | T1 | Fully deductible |
+| TRAINING, COURSE, CONFERENCE | Line 9270 (Other expenses) | T1 | Fully deductible if business-related |
+| GAS, FUEL, PETRO-CANADA, SHELL, ESSO | Motor vehicle expenses | T2 | Business km / total km. Keep a log. |
+| CAR INSURANCE, AUTO INSURANCE | Motor vehicle expenses | T2 | Business km proportion only |
+| CAR REPAIR, SERVICE, OIL CHANGE | Motor vehicle expenses | T2 | Business km proportion only |
+| PARKING (business) | Motor vehicle or travel | T1 | Fully deductible if business purpose |
+| CRA INCOME TAX, TAX INSTALMENT | EXCLUDE | Not deductible | Income tax is not a business expense |
+| CRA GST PAYMENT, GST REMITTANCE | EXCLUDE from T2125 | T1 | GST is separate system. Net of GST on T2125 if registered. |
+| CPP CONTRIBUTION | EXCLUDE from T2125 | T1 | CPP is not a T2125 expense. Half deductible on Line 22200. |
+| PERSONAL, GROCERY, AMAZON (personal) | EXCLUDE | Not deductible | Personal expenses |
+| COMPUTER, LAPTOP, EQUIPMENT (over $500) | CCA (not current expense) | T1 | Capital -- claim CCA. See Section 5.4. |
+| MEMBERSHIP, DUES, PROFESSIONAL BODY | Line 8760 (Management fees) or 9270 | T1 | Fully deductible if business-related |
+| SUBCONTRACTOR, CONTRACTOR PAYMENT | Line 8340 (Subcontracts) | T1 | Fully deductible. Issue T4A if over $500. |
 
-**Legislation:** ITA s. 249.1(1); ITA s. 34.1 (alternative method)
+### 3.3 SaaS Subscriptions
 
-| Rule | Detail |
-|------|--------|
-| Default | Sole proprietors MUST use December 31 as fiscal year end |
-| Alternative method | ITA s. 34.1 allows a non-calendar fiscal year end if Form T1139 is filed. An additional income amount is added to reconcile to the calendar year. This is rare and adds complexity. |
-| First year | Fiscal period may be shorter than 12 months (from start date to December 31) |
-| CCA in short year | CCA is NOT prorated for a short fiscal period (CRA's position) unless the property was available for use for only part of the year |
-| Recommendation | [T2] If client has a non-December 31 fiscal year, flag for reviewer. The alternative method under s. 34.1 requires annual T1139 reconciliation. |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOOGLE WORKSPACE, MICROSOFT 365, ADOBE | Line 8810/8860 -- fully deductible | Operating expense |
+| SLACK, ZOOM, NOTION, FIGMA, GITHUB | Line 8810/8860 -- fully deductible | Same |
+| AWS, HEROKU, DIGITAL OCEAN | Line 8810 -- fully deductible | Hosting costs |
+| QUICKBOOKS, XERO, FRESHBOOKS, WAVE | Line 8860 -- fully deductible | Accounting software |
 
----
+### 3.4 Internal Transfers and Exclusions
 
-## Step 3: T2125 Structure -- Parts 1 through 8 [T1]
-
-**Legislation:** CRA Form T2125; CRA Guide T4002
-
-### Part 1 -- Identification
-
-| Field | Content |
-|-------|---------|
-| Business name | Legal or trade name |
-| Business address | Principal place of business |
-| BN | 9-digit business number |
-| Industry code | 6-digit NAICS code |
-| Business activity | Brief description of main activity |
-| Fiscal period | Start and end dates (normally Jan 1 -- Dec 31) |
-| Accounting method | Cash or accrual |
-| Partnership? | Yes/No (this skill: No -- sole proprietor only) |
-
-### Part 2 -- Internet Business Activities
-
-Website addresses and percentage of gross income from the internet.
-
-### Part 3 -- Business Income
-
-| Line | Description |
-|------|-------------|
-| 8000 | Gross sales, commissions, or fees |
-| 8230 | Reserves deducted last year (add back) |
-| 8290 | Other income (grants, subsidies, recoveries) |
-| 8299 | Gross business income (sum of above) |
-
-### Part 4 -- Cost of Goods Sold (if applicable)
-
-| Line | Description |
-|------|-------------|
-| 8300 | Opening inventory |
-| 8320 | Purchases during the year (net of personal portion) |
-| 8340 | Direct wage costs |
-| 8360 | Subcontracts |
-| 8450 | Closing inventory |
-| 8518 | Cost of goods sold = Opening + Purchases + Wages + Subcontracts - Closing |
-| 8519 | Gross profit = Line 8299 - Line 8518 |
-
-### Part 5 -- Net Income (Loss) before Adjustments
-
-| Line | Description |
-|------|-------------|
-| 9369 | Total business expenses (from expense section below) |
-| 9369 | Net income (loss) = Gross profit - Total expenses |
-
-### Part 6 -- Your Net Income (Loss)
-
-Adjustments for personal use, reserves, and other items to arrive at net business income reported on T1 line 13500 (business) or 13700 (professional).
-
-### Part 7 -- Business-Use-of-Home Expenses (see Step 7)
-
-### Part 8 -- Motor Vehicle Expenses (see Step 8)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| OWN TRANSFER, SAVINGS, TFSA, RRSP | EXCLUDE | Not business transaction |
+| MORTGAGE, RENT (personal) | EXCLUDE (or home office %) | Personal. Home office portion in business-use-of-home. |
+| ATM, CASH WITHDRAWAL | T2 -- ask | Default exclude |
+| DONATION, CHARITY | EXCLUDE from T2125 | Personal tax credit, not business expense |
 
 ---
 
-## Step 4: Allowable Business Expenses [T1/T2]
+## Section 4 -- Worked Examples
 
-**Legislation:** ITA s. 18(1)(a) -- general limitation; ITA s. 18(1)(h) -- personal/living expenses; ITA s. 67 -- reasonableness
+### Example 1 -- Standard Sole Proprietor (Web Developer)
 
-### The Test [T1]
+**Input:** Gross revenue CAD 95,000. Not GST registered (under $30K threshold last year, now over -- must register). Expenses: home office (see below), software CAD 2,400, accounting CAD 1,500, subcontractor CAD 8,000, travel CAD 3,000, meals (50%) CAD 1,200 (deductible: CAD 600).
 
-An expense is deductible if it was incurred to **earn business income**, is **reasonable in the circumstances**, and is **not a capital expenditure** (capital items go through CCA). Mixed-use expenses must be apportioned between business and personal.
+**Home office:** 1,200 sq ft house, 150 sq ft office (12.5%). Mortgage interest CAD 8,000, property tax CAD 4,000, utilities CAD 3,600, insurance CAD 1,800. Total: CAD 17,400 x 12.5% = CAD 2,175.
 
-### Deductible Expenses -- T2125 Lines
+**Computation:**
+- Revenue: CAD 95,000
+- Expenses: 2,400 + 1,500 + 8,000 + 3,000 + 600 + 2,175 = CAD 17,675
+- Net business income: CAD 77,325
+- CPP: (77,325 - 3,500) x 11.9% = CAD 8,068.20 (hits maximum)
+- Half CPP deductible: CAD 4,034.10
 
-| T2125 Line | Expense Category | Tier | Treatment |
-|------------|-----------------|------|-----------|
-| 8521 | Advertising | T1 | Fully deductible. Canadian newspaper/broadcasting restrictions apply (ITA s. 19). |
-| 8523 | Meals and entertainment | T1 | **50% deductible** only (ITA s. 67.1). Long-haul truckers: 80%. |
-| 8590 | Bad debts | T2 | Deductible if previously included in income and genuinely uncollectible. Flag for reviewer. |
-| 8690 | Insurance (business) | T1 | Fully deductible -- professional liability, property, business interruption. |
-| 8710 | Interest and bank charges | T1 | Interest on money borrowed for business purposes. Personal portion excluded. |
-| 8760 | Business taxes, licences, memberships | T1 | Fully deductible -- includes professional dues, municipal business licences. |
-| 8810 | Office expenses | T1 | Fully deductible -- supplies, postage, stationery, small items. |
-| 8811 | Office stationery and supplies | T1 | Fully deductible. |
-| 8860 | Professional fees (legal, accounting) | T1 | Fully deductible if related to business operations. |
-| 8871 | Management and administration fees | T1 | Fully deductible. |
-| 8910 | Rent (business premises) | T1 | Fully deductible for dedicated business premises. |
-| 8960 | Repairs and maintenance | T1 | Fully deductible if current expense (not capital improvement). |
-| 9060 | Salaries, wages, benefits (to employees) | T1 | Fully deductible. Must issue T4 slips. |
-| 9180 | Property taxes (business premises) | T1 | Fully deductible. |
-| 9200 | Travel (transportation, lodging) | T1 | Fully deductible if wholly business purpose. Meals while travelling: 50%. |
-| 9220 | Telephone and utilities | T1/T2 | Business portion only. Home phone: business % only. Dedicated business line: 100%. |
-| 9224 | Fuel costs (except motor vehicle) | T1 | Heating fuel for business premises. |
-| 9270 | Delivery, freight, express | T1 | Fully deductible. |
-| 9275 | Motor vehicle expenses | T2 | Business portion only -- see Step 8. |
-| 9281 | Capital cost allowance (CCA) | T1 | Per CCA schedule -- see Step 5. |
-| 9270 | Other expenses | T1/T2 | Catch-all. Must be reasonable and business-related. |
+### Example 2 -- Vehicle (Km-Based Apportionment)
 
-### NOT Deductible [T1]
+**Input:** Total km driven: 25,000. Business km: 15,000 (60%). Vehicle costs: gas CAD 3,600, insurance CAD 2,400, repairs CAD 800, licence CAD 120. Car cost CAD 36,000 (Class 10).
 
-| Expense | Reason | Legislation |
-|---------|--------|-------------|
-| Personal or living expenses | Blocked | ITA s. 18(1)(h) |
-| Club membership dues (golf, fitness, etc.) | Blocked even if business-related | ITA s. 18(1)(l) |
-| Political contributions | Not business expense | ITA s. 18(1)(n) |
-| Income tax or penalties paid to CRA | Cannot deduct tax on income | ITA s. 18(1)(t) |
-| Capital expenditures (depreciable assets) | Must go through CCA | ITA s. 18(1)(b) |
-| Drawings / owner withdrawals | Not an expense -- personal distribution | |
-| Fines and penalties (government-imposed) | Blocked | ITA s. 67.6 |
-| 50% of meals and entertainment | Only 50% is deductible | ITA s. 67.1 |
-| Reserves (in excess of allowed amounts) | Restricted | ITA s. 18(1)(e) |
+**Computation:**
+- Operating costs: (3,600 + 2,400 + 800 + 120) x 60% = CAD 4,152
+- CCA: CAD 36,000 x 30% (Class 10 rate) x 60% = CAD 6,480 (first year: AccII provides 1.5x = CAD 9,720 if eligible)
+- Total vehicle deduction: CAD 4,152 + CCA amount
+
+### Example 3 -- Meals (50% Rule)
+
+**Input:** CAD 2,500 in restaurant receipts for client meetings.
+
+**Classification:** Only 50% deductible = CAD 1,250. This is a permanent restriction under ITA s67.1. The full CAD 2,500 is reported on Line 8523, then 50% is added back.
+
+### Example 4 -- CCA on Computer Equipment
+
+**Input:** Laptop purchased for CAD 2,800. Class 50 (55% rate). First year.
+
+**Classification:** CCA Class 50 at 55%. With AccII (Accelerated Investment Incentive), first-year deduction enhanced: 1.5 x 55% x CAD 2,800 = CAD 2,310 (but cannot exceed cost, so CAD 2,310). UCC year-end: CAD 490.
 
 ---
 
-## Step 5: Capital Cost Allowance (CCA) [T1]
-
-**Legislation:** ITA s. 20(1)(a); ITR Part XI, Schedule II
-
-### Common CCA Classes and Rates (Declining Balance Unless Noted)
-
-| Class | Rate | Assets Included |
-|-------|------|-----------------|
-| 1 | 4% | Buildings acquired after 1987 |
-| 6 | 10% | Frame, log, stucco buildings; fences, greenhouses |
-| 8 | 20% | Furniture, fixtures, appliances, tools >$500, equipment not elsewhere |
-| 10 | 30% | Motor vehicles, automotive equipment, general-purpose electronic data processing equipment (pre-March 19, 2007) |
-| 10.1 | 30% | Passenger vehicles costing more than prescribed limit ($38,000 before tax for 2025) -- each vehicle in separate class |
-| 12 | 100% | Tools, utensils, kitchen equipment <$500; china, linen; computer software (packaged, not custom) |
-| 13 | S/L | Leasehold improvements -- straight-line over remaining lease term + first renewal (min 5 yr, max 40 yr) |
-| 14 | S/L | Patents, franchises, concessions, licences -- straight-line over remaining legal life |
-| 14.1 | 5% | Goodwill and other eligible capital property (post-2016) |
-| 43 | 30% | Manufacturing and processing machinery and equipment |
-| 44 | 25% | Patents, licences to use patents (acquired after April 26, 1993) |
-| 46 | 30% | Data network infrastructure equipment |
-| 50 | 55% | General-purpose electronic data processing equipment (computers) acquired after March 18, 2007 |
-| 52 | 100% | General-purpose electronic data processing equipment acquired after Jan 27, 2009 and before Feb 2011 (limited) |
-| 53 | 50% | Manufacturing and processing machinery (acquired after 2015 and before 2026) |
-| 54 | 30% | Zero-emission passenger vehicles (cost limit $61,000 before tax for 2025) |
-| 55 | 40% | Zero-emission vehicles that would otherwise be Class 16 |
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
-### Half-Year Rule [T1]
+### 5.1 Business Income [T1]
 
-**Legislation:** ITR s. 1100(2)
+**Legislation:** ITA s9
 
-- In the year a depreciable asset is acquired, only **50% of the net addition** to the class is eligible for CCA (the "half-year rule").
-- Net addition = additions - disposals in the class for the year.
-- The half-year rule applies to most classes. Exceptions: Class 12 (100%), Class 13, Class 14, Class 52.
+All revenue from business activities. Report gross on Line 8299. If GST/HST registered, report net of GST/HST.
 
-### Accelerated Investment Incentive (AccII) [T1]
+### 5.2 Deductible Expenses [T1]
 
-**Legislation:** ITR s. 1100(2)(a.2); ITA s. 1104(4)
+**Legislation:** ITA s18
 
-| Period | Treatment |
-|--------|-----------|
-| Property available for use before 2024 | AccII applied: first-year CCA on 1.5x the net addition (effectively suspending the half-year rule and providing an enhanced deduction) |
-| Property available for use in 2024-2025 | AccII continues at 1.5x for most classes |
-| Property available for use in 2026-2027 | AccII reduced to 1.25x |
-| Property available for use after 2027 | AccII expires; standard half-year rule applies |
-| Classes 43.1, 43.2, 53 (M&P) | Full expensing (100% first-year writeoff) if available for use before 2026; not subject to AccII but to separate immediate expensing rules |
-| Class 54, 55 (zero-emission vehicles) | Enhanced first-year: 1.5x for 2024-2025; phasing down after 2025 |
+Must be incurred to earn business income. Must be reasonable (s67). Personal or living expenses are not deductible (s18(1)(h)).
 
-**Status check (2025):** AccII remains active for property becoming available for use in 2025. Bill C-15 (tabled November 2025) reinstates/extends accelerated CCA and immediate expensing for certain classes. Confirm with current legislation before applying.
+### 5.3 Meals and Entertainment [T1]
 
-### Immediate Expensing (Individuals) [T1]
+**Legislation:** ITA s67.1
 
-**Legislation:** ITA s. 1100(0.1); ITR s. 1100(2)(a.3)
+50% limitation on meals and entertainment. Applies to all business meals, client entertainment, and food/drink. Long-haul truck drivers: 80%.
 
-- For tax years ending after April 18, 2021 and before 2025: eligible individuals (sole proprietors) could immediately expense up to $1.5M of eligible property per year.
-- For tax year 2025: the $1.5M immediate expensing for individuals has **expired** as of January 1, 2024. Standard CCA rules and AccII apply.
-- [T2] Flag for reviewer if client asks about immediate expensing -- confirm whether any extension has been enacted.
+### 5.4 Capital Cost Allowance (CCA) [T1]
 
-### CCA Computation Rules [T1]
+**Legislation:** ITA s20(1)(a); ITR Schedule II
 
-1. Group assets by CCA class
-2. Opening UCC (undepreciated capital cost) = prior year UCC
-3. Add: acquisitions during the year (capital cost of additions)
-4. Subtract: lesser of (proceeds of disposition, original capital cost) for assets disposed
-5. If result is negative: recapture (include in income)
-6. If class is empty and UCC > 0: terminal loss (deduct from income)
-7. Apply half-year rule (or AccII) to net additions
-8. Compute CCA = rate x adjusted UCC base
-9. CCA claimed may be any amount from $0 to the maximum -- it is discretionary
-10. Closing UCC = Opening UCC + Additions - Disposals - CCA claimed
+| Class | Rate | Assets |
+|---|---|---|
+| 1 | 4% | Buildings (non-residential after March 2007) |
+| 8 | 20% | Furniture, fixtures, equipment, photocopiers |
+| 10 | 30% | Motor vehicles (passenger, cost < $37,000 limit) |
+| 10.1 | 30% | Passenger vehicles over $37,000 (cost capped at limit) |
+| 12 | 100% | Small tools, computer software, cutlery |
+| 43 | 30% | Manufacturing equipment |
+| 50 | 55% | Computer hardware, data network equipment |
+| 54 | 30% | Zero-emission passenger vehicles (cost cap $61,000) |
+| 55 | 40% | Zero-emission vehicles not in class 54 |
 
-### Class 10.1 Special Rules [T1]
+**Passenger vehicle cost limit (2025):** CAD 37,000 (excluding GST/HST). Luxury vehicles capped at this amount for CCA purposes (Class 10.1).
 
-| Rule | Detail |
-|------|--------|
-| Cost limit (2025) | $38,000 before tax (GST/HST) |
-| Separate class | Each Class 10.1 vehicle is its own class |
-| No terminal loss | When disposed, no terminal loss or recapture |
-| No recapture | Deemed disposition at cost = proceeds |
-| Half-year in year of disposal | CCA allowed at 50% in the year of disposition |
-| AccII applies | 1.5x in first year (2024-2025) |
+**AccII (Accelerated Investment Incentive):** For eligible property acquired after November 20, 2018, the first-year CCA is enhanced by a 1.5x multiplier on the half-year rule. Effectively, you get 1.5 times the normal first-year CCA.
 
----
+### 5.5 Business-Use-of-Home [T1/T2]
 
-## Step 6: GST/HST Interaction with Business Expenses [T1]
+**Legislation:** ITA s18(12)
 
-**Legislation:** Excise Tax Act (ETA); ITA s. 248(16); CRA Guide RC4022
+| Condition | Eligibility |
+|---|---|
+| Principal place of business | YES -- deduction allowed |
+| Exclusive use for business + regular meetings | YES -- deduction allowed |
+| Neither condition met | NO deduction |
 
-### Small Supplier Threshold [T1]
+Deductible expenses: proportion of rent/mortgage interest, property tax, utilities, insurance, maintenance. Proportion = business area / total area.
 
-| Item | Amount |
-|------|--------|
-| Small supplier threshold | $30,000 in taxable supplies over 4 consecutive calendar quarters |
-| Consequence of exceeding | Must register for GST/HST within 29 days |
-| Below threshold | Registration is optional (voluntary registration allows ITCs) |
+**Cannot create or increase a business loss.** Excess carried forward to the next year.
 
-### GST/HST and Expense Deductions [T1]
-
-| Scenario | Income Tax Treatment |
-|----------|---------------------|
-| GST/HST registrant -- ITC claimed on expense | Deduct only the **net** (pre-tax) amount of the expense. The ITC recovers the GST/HST, so it is not a cost. |
-| GST/HST registrant -- ITC NOT claimed (blocked) | Deduct the **gross** amount including GST/HST. Blocked ITCs: meals (50% ITC only), personal-use portion, exempt supplies. |
-| GST/HST registrant -- Quick Method | Deduct the **gross** amount of expenses (no ITCs claimed except on capital property). |
-| NOT registered (small supplier) | Deduct the **gross** amount of expenses including GST/HST paid. No ITCs available. |
-
-### ITA s. 248(16) -- GST/HST Rebate/Refund Adjustment [T1]
-
-When a GST/HST registrant claims ITCs, the cost of the asset or expense for income tax purposes is reduced by the ITC amount. This happens automatically if you record expenses net of GST/HST recovered.
-
-### GST/HST on Revenue [T1]
-
-- GST/HST collected is NOT business income. Exclude from T2125 line 8000.
-- If using Quick Method: net GST/HST remitted is included in income (the difference between GST/HST collected and the reduced remittance is taxable income).
-
----
-
-## Step 7: Business-Use-of-Home Expenses (T2125 Part 7) [T2]
-
-**Legislation:** ITA s. 18(12)
-
-### Eligibility Conditions [T1]
-
-The home workspace must meet **one** of these two conditions:
-
-1. It is your **principal place of business** (i.e., more than 50% of business is conducted there), OR
-2. You use the workspace **exclusively** for earning business income AND you use it on a **regular and continuous basis** for meeting clients/customers.
-
-If neither condition is met, no home office deduction is allowed.
-
-### Deductible Home Expenses [T2]
-
-| Expense | Renter | Owner | Apportionment |
-|---------|--------|-------|---------------|
-| Rent | Yes | N/A | Business % |
-| Mortgage interest | N/A | Yes | Business % |
-| Property taxes | N/A | Yes | Business % |
-| Home insurance | Yes | Yes | Business % |
-| Electricity | Yes | Yes | Business % |
-| Heat (gas, oil, etc.) | Yes | Yes | Business % |
-| Water | Yes | Yes | Business % |
-| Internet | Yes | Yes | Business % |
-| Maintenance and repairs (common areas) | Yes | Yes | Business % |
-| Condo fees | Yes | N/A | Business % |
-
-### Apportionment Method [T2]
-
-- **Reasonable basis:** area of workspace / total area of home (square footage method is most common)
-- Alternative: number of rooms used for business / total rooms (acceptable if rooms are similar size)
-- [T2] Flag for reviewer: confirm the proportion claimed is reasonable and workspace genuinely meets the eligibility test
-
-### Limitation [T1]
-
-- Home office expenses **cannot create or increase a business loss** (ITA s. 18(12))
-- Unused home office expenses carry forward to the next year (indefinitely) and can be applied against future business income from the same business
-- CCA on the home is technically deductible but is **strongly discouraged** -- claiming CCA on a principal residence may trigger recapture on sale and jeopardize the principal residence exemption (ITA s. 40(2)(b))
-
-### What Goes Where [T1]
-
-Home office expenses are calculated in Part 7 of T2125 and then carried to the expense section. They are separate from rent on dedicated business premises (line 8910).
-
----
-
-## Step 8: Motor Vehicle Expenses (T2125 Part 8) [T2]
-
-**Legislation:** ITA s. 18(1)(r); ITR s. 7306; ITA s. 67.2, 67.3, 67.4
-
-### Prescribed Limits (2025) [T1]
-
-| Item | 2025 Limit |
-|------|-----------|
-| Class 10.1 passenger vehicle cost ceiling | $38,000 (before tax) |
-| Class 54 zero-emission vehicle cost ceiling | $61,000 (before tax) |
-| Deductible monthly lease cost ceiling | $1,050/month |
-| Deductible interest on auto loan | $350/month |
-| Tax-exempt per-km allowance -- first 5,000 km | $0.72/km |
-| Tax-exempt per-km allowance -- additional km | $0.66/km |
-| Tax-exempt per-km allowance (Yukon, NWT, Nunavut) -- first 5,000 km | $0.76/km |
-
-### Kilometre Log Requirement [T1]
-
-**CRA requires a detailed log for any motor vehicle expense claim.** The log must record:
-
-| Field | Detail |
-|-------|--------|
-| Date of each trip | Day/month/year |
-| Destination | Where you drove |
-| Purpose | Business reason for the trip |
-| Kilometres driven | For each trip |
-| Odometer readings | At the start and end of the fiscal period |
-| Total km for the year | Business km + personal km |
-
-**No log = no claim.** CRA will disallow motor vehicle expenses on audit if no contemporaneous log is maintained.
-
-### Deductible Motor Vehicle Expenses [T2]
-
-| Expense | Treatment |
-|---------|-----------|
-| Fuel and oil | Business % of total |
-| Insurance | Business % of total |
-| Licence and registration | Business % of total |
-| Maintenance and repairs | Business % of total |
-| Lease payments | Business % of total (subject to lease ceiling) |
-| Interest on auto loan | Business % of total (subject to interest ceiling) |
-| Parking (business) | 100% deductible (not subject to business % -- specific to business trips) |
-| Supplementary business insurance | 100% if business-only |
-| CCA | Business % of CCA claimed on the vehicle |
-
-### Business Percentage Calculation [T1]
-
-Business % = Total business kilometres / Total kilometres driven in the fiscal period
-
-### Motor Vehicle vs Passenger Vehicle [T1]
-
-| Type | Definition | CCA Class |
-|------|-----------|-----------|
-| Motor vehicle | Designed to carry people/goods on streets; excludes vehicles designed to carry >8 passengers, ambulances, hearses, vans/pickup trucks used >50% for goods transport | Class 10 (30%) |
-| Passenger vehicle | Motor vehicle designed to carry individuals on streets; includes most cars and SUVs. Pickups/vans that seat <3 and are used >50% for goods/equipment transport are excluded | Class 10 or 10.1 if over cost ceiling |
-
----
-
-## Step 9: Net Income Computation Summary [T1]
-
-| Step | Description | T2125 Lines |
-|------|-------------|-------------|
-| 1 | Gross business income | 8299 |
-| 2 | Less: Cost of goods sold (if applicable) | 8518 |
-| 3 | = Gross profit | 8519 |
-| 4 | Less: Total business expenses (Steps 4-8) | 9369 |
-| 5 | = Net income (loss) before adjustments | 9369 |
-| 6 | Add back: personal-use portion of expenses | |
-| 7 | Add back: reserves from prior year | |
-| 8 | Less: current year reserves | |
-| 9 | = Net business income (loss) | Line 13500 (business) or 13700 (professional) on T1 |
-
-**This figure flows to the T1 return.** Business income goes to T1 line 13500 (or 13700 for professional income). Business losses can offset other income in the year or be carried back 3 years / forward 20 years (ITA s. 111).
-
----
-
-## Step 10: Filing Requirements and Deadlines [T1]
-
-**Legislation:** ITA s. 150(1)(d)
+### 5.6 Filing Deadlines [T1]
 
 | Item | Deadline |
-|------|----------|
-| T1 filing deadline (self-employed) | June 15 of the following year |
-| Balance owing deadline | April 30 of the following year (even though return is due June 15) |
-| Penalty for late filing | 5% of balance owing + 1% per month (max 12 months) |
-| Repeated late filing | 10% of balance owing + 2% per month (max 20 months) |
-| Interest on balance owing | Prescribed rate, compounded daily |
-| Instalment payments | Quarterly (March 15, June 15, Sept 15, Dec 15) if net tax owing exceeds $3,000 in current year AND either of the two prior years |
+|---|---|
+| T1 filing (self-employed) | 15 June |
+| Tax payment due | 30 April (even though filing deadline is 15 June) |
+| Quarterly instalments | 15 March, 15 June, 15 September, 15 December |
+| T4A issuance (subcontractors) | Last day of February |
+| GST/HST annual return | 15 June (if annual filer) |
 
-**CRITICAL:** While self-employed individuals have until June 15 to FILE, any balance owing accrues interest from **April 30**. The filing extension does not extend the payment deadline.
+### 5.7 Penalties [T1]
 
----
-
-## Step 11: Record Keeping [T1]
-
-**Legislation:** ITA s. 230(1)
-
-| Requirement | Detail |
-|-------------|--------|
-| Minimum retention period | 6 years from the end of the last tax year they relate to |
-| What to keep | All sales invoices, purchase receipts, bank statements, contracts, loan agreements, motor vehicle log, asset register |
-| Format | Paper or electronic (CRA accepts digital records if complete and accessible) |
-| CRA can request | Books and records must be available for inspection at any time |
-| Failure to keep records | Penalty up to $2,500 per offence (ITA s. 162(6)) |
+| Offence | Penalty |
+|---|---|
+| Late filing | 5% of balance owing + 1% per month late (max 12 months) |
+| Repeated late filing (2nd+ time in 3 years) | 10% + 2% per month (max 20 months) |
+| Late instalment | Instalment interest at prescribed rate |
+| Gross negligence | 50% of understated tax or overstated credits |
 
 ---
 
-## Step 12: Edge Case Registry
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### EC1 -- GST/HST collected included in business income [T1]
-**Situation:** GST/HST registrant reports gross revenue of $113,000 which includes $13,000 GST/HST collected from clients.
-**Resolution:** Line 8000 must show $100,000 only. The $13,000 GST/HST collected is a liability to CRA, not business income. Remove before computing net income.
+### 6.1 Home Office [T2]
 
-### EC2 -- Non-registrant (small supplier) expense treatment [T1]
-**Situation:** Sole proprietor below $30,000 threshold buys $1,000 of office supplies + $130 HST = $1,130 total.
-**Resolution:** Full $1,130 is the deductible expense. No ITC is available since the proprietor is not GST/HST registered.
+Confirm: (1) principal place of business OR exclusive use + client meetings, (2) area measurements, (3) expense amounts. Cannot create or increase a loss. Excess carried forward.
 
-### EC3 -- Meals and entertainment over-deducted [T1]
-**Situation:** Client deducts $4,000 in business meals at 100%.
-**Resolution:** Only $2,000 is deductible (50% limitation under ITA s. 67.1). Reduce the expense by $2,000.
+**Flag for reviewer:** Confirm eligibility conditions and area calculation.
 
-### EC4 -- Club membership dues [T1]
-**Situation:** Client deducts $3,000 annual golf club membership claiming it is for client entertainment.
-**Resolution:** NOT deductible under any circumstances. ITA s. 18(1)(l) blocks club dues regardless of business purpose.
+### 6.2 Motor Vehicle [T2]
 
-### EC5 -- Capital item expensed directly [T1]
-**Situation:** Client buys a $3,000 laptop and deducts it as office expense on line 8810.
-**Resolution:** INCORRECT. The laptop is a capital asset (Class 50, 55% rate). Must be removed from expenses and added to the CCA schedule. First-year CCA (with AccII 2025): approximately $3,000 x 55% x 1.5 = $2,475 (or standard half-year: $3,000 x 55% x 50% = $825). Apply applicable rule.
+Must keep a contemporaneous km log. CRA audits vehicle claims frequently. If no log exists, default to 0% business use.
 
-### EC6 -- Home office creates a loss [T1]
-**Situation:** Business income before home office expenses is $2,000. Home office expenses total $5,000.
-**Resolution:** Home office expenses are limited to $2,000 (cannot create or increase a loss per ITA s. 18(12)). The remaining $3,000 carries forward to the next year.
+**Flag for reviewer:** Confirm km log exists and business percentage is reasonable.
 
-### EC7 -- No motor vehicle log [T1]
-**Situation:** Client claims 70% business use of vehicle but has no kilometre log.
-**Resolution:** CRA will likely disallow the entire claim on audit. Advise client to start a log immediately. For the current year, [T2] flag for reviewer -- the claim cannot be confidently supported without a log.
+### 6.3 Reasonableness (s67) [T2]
 
-### EC8 -- Class 10.1 vehicle disposed [T1]
-**Situation:** Client sells a passenger vehicle that was in Class 10.1 (original cost $45,000, entered at prescribed limit $38,000).
-**Resolution:** No recapture and no terminal loss applies to Class 10.1. In the year of disposition, CCA at 50% of the declining balance is allowed. The class is then closed with no further tax consequences.
+All expenses must be "reasonable in the circumstances." CRA can deny excessive expenses even if legitimately incurred. Flag any single expense that appears disproportionate.
 
-### EC9 -- CCA on principal residence [T2]
-**Situation:** Client working from home wants to claim CCA on the home office portion of their house.
-**Resolution:** [T2] Flag for reviewer. While technically permitted, claiming CCA on a principal residence may trigger a recapture inclusion on sale and partially disqualify the principal residence exemption. Most advisors recommend AGAINST claiming CCA on the home. Deduct other home office expenses only.
+### 6.4 CCA vs Expense [T2]
 
-### EC10 -- Quick Method GST/HST and income [T1]
-**Situation:** Client uses the GST/HST Quick Method. They collected $5,250 GST on $105,000 revenue (5% GST province) and remit only $3,780 (3.6% quick method rate on $105,000).
-**Resolution:** The difference of $1,470 ($5,250 - $3,780) is additional business income and must be included on line 8290 of T2125. Revenue line 8000 = $105,000 (excluding GST). Line 8290 includes the $1,470 Quick Method benefit.
-
-### EC11 -- Fiscal year not December 31 [T2]
-**Situation:** Client has historically used a March 31 fiscal year end with a T1139 election.
-**Resolution:** [T2] Flag for reviewer. The additional business income calculation under ITA s. 34.1 must be computed. This adds an amount to the T1 representing the estimated income from April 1 to December 31. This is complex; confirm the T1139 is filed and the stub-period income estimate is reasonable.
-
-### EC12 -- Mixing personal and business vehicle expenses [T2]
-**Situation:** Client has one vehicle used for both business and personal. Claims 80% business use.
-**Resolution:** [T2] Verify with kilometre log. An 80% business-use claim is high for a sole vehicle. Flag for reviewer to confirm the log supports the percentage and the claim is reasonable.
+Items with lasting value beyond one year: CCA. Items consumed in the year: current expense. Software subscriptions: current expense. Software perpetual licences: CCA Class 12 (100%). Hardware: CCA Class 50.
 
 ---
 
-## Step 13: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel Working Paper Template
 
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: CPA/CA must confirm before filing.
-```
+T2125 WORKING PAPER -- Tax Year 2025
 
-When Claude identifies a [T3] situation:
+A. GROSS INCOME
+  A1. Gross sales/revenue (Line 8299)              ___________
+  A2. GST/HST collected (if registered)            ___________
+  A3. Net sales (A1 - A2 if applicable)            ___________
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to CPA/CA. Document gap.
+B. EXPENSES
+  B1. Advertising (8520)                           ___________
+  B2. Meals and entertainment (8523) -- 50%        ___________
+  B3. Subcontracts (8340)                          ___________
+  B4. Insurance (8690)                             ___________
+  B5. Interest and bank charges (8710)             ___________
+  B6. Management and admin (8760)                  ___________
+  B7. Office expenses (8810)                       ___________
+  B8. Professional fees (8860)                     ___________
+  B9. Rent (8910)                                  ___________
+  B10. Telephone and utilities (8220)              ___________
+  B11. Travel (8520)                               ___________
+  B12. Other expenses (9270)                       ___________
+  B13. Total expenses                              ___________
+
+C. NET INCOME BEFORE CCA AND HOME OFFICE
+  C1. A3 - B13                                     ___________
+
+D. CCA
+  D1. Class 8 (20%)                                ___________
+  D2. Class 10/10.1 (30%)                          ___________
+  D3. Class 50 (55%)                               ___________
+  D4. Other classes                                ___________
+  D5. Total CCA                                    ___________
+
+E. BUSINESS-USE-OF-HOME
+  E1. Business area %                              ___________
+  E2. Total home costs                             ___________
+  E3. Deductible portion (E1 x E2)                 ___________
+
+F. NET BUSINESS INCOME (C1 - D5 - E3)              ___________
+
+REVIEWER FLAGS:
+  [ ] Vehicle km log available?
+  [ ] Home office eligibility confirmed?
+  [ ] CCA schedule reconciled from prior year?
+  [ ] Meals at 50% applied?
+  [ ] All T2 items flagged?
 ```
 
 ---
 
-## Step 14: Test Suite
+## Section 8 -- Bank Statement Reading Guide
 
-### Test 1 -- Standard sole proprietor, service business
-**Input:** Sole proprietor, graphic designer. Gross revenue $95,000. Expenses: advertising $2,000, office supplies $1,500, software subscriptions $3,600, professional fees $2,500, internet (75% business) $1,200 x 75% = $900, meals with clients $2,000 (50% = $1,000). No COGS. CCA: laptop Class 50 acquired in 2025, cost $2,800, AccII applies (1.5x). GST/HST registrant (ITCs claimed, expenses recorded net).
-**Expected:** Gross income = $95,000. Total expenses = $2,000 + $1,500 + $3,600 + $2,500 + $900 + $1,000 = $11,500. CCA: $2,800 x 55% x 1.5 = $2,310. Total deductions = $11,500 + $2,310 = $13,810. Net business income = $95,000 - $13,810 = $81,190 to T1 line 13500.
+### Canadian Bank Statement Formats
 
-### Test 2 -- Home office limitation
-**Input:** Sole proprietor, net business income before home office = $3,500. Home office expenses: rent $1,200/mo x 20% = $2,880. Insurance $100/mo x 20% = $240. Internet $100/mo x 20% = $240. Utilities $200/mo x 20% = $480. Total home office = $3,840.
-**Expected:** Home office deduction limited to $3,500 (cannot create a loss). Carry forward $340 to next year. Net business income = $0.
+| Bank | Format | Key Fields |
+|---|---|---|
+| RBC, TD, BMO, Scotiabank, CIBC | CSV, PDF | Date, Description, Debit, Credit, Balance |
+| Desjardins | CSV | Date, Description, Withdrawal, Deposit |
+| Tangerine, Simplii, EQ Bank | CSV | Date, Transaction, Amount |
+| Wise, Revolut | CSV | Date, Description, Amount, Currency |
 
-### Test 3 -- Motor vehicle expense
-**Input:** Sole proprietor. Vehicle cost $32,000 (Class 10, under $38,000 limit). Total km: 25,000. Business km: 18,000. Business % = 72%. Fuel $4,500. Insurance $2,400. Repairs $800. Licence $120. CCA on vehicle (first year, AccII): $32,000 x 30% x 1.5 = $14,400. Total vehicle operating = $7,820 x 72% = $5,630. CCA business portion = $14,400 x 72% = $10,368.
-**Expected:** Total motor vehicle expense on T2125 = $5,630 + $10,368 = $15,998.
+### Key Canadian Banking Terms
 
-### Test 4 -- GST/HST Quick Method income inclusion
-**Input:** Revenue $80,000 (5% GST province). GST collected $4,000. Quick Method rate 3.6%. Remittance = $80,000 x 1.05 x 3.6% = $3,024. Difference = $4,000 - $3,024 = $976.
-**Expected:** T2125 line 8000 = $80,000. Line 8290 includes $976 Quick Method benefit. Gross income = $80,976.
+| Term | Classification Hint |
+|---|---|
+| e-Transfer / Interac | Very common -- check direction and counterparty |
+| PAD (Pre-Authorized Debit) | Regular expense |
+| POS | Point-of-sale purchase |
+| Direct Deposit | Could be income or employment |
+| NSF | Non-sufficient funds fee -- bank charge |
+| Service Charge | Monthly bank fee |
 
-### Test 5 -- Capital item incorrectly expensed
-**Input:** Client includes $6,000 desk + chair as office expense.
-**Expected:** Remove $6,000 from line 8810. Add to CCA Class 8 (20%). First-year CCA with AccII: $6,000 x 20% x 1.5 = $1,800. Net effect: expenses decrease by $6,000, CCA increases by $1,800. Net income increases by $4,200 compared to the incorrect treatment.
+---
 
-### Test 6 -- Non-registrant expense recording
-**Input:** Small supplier (not GST/HST registered). Buys printer for $565 (including $65 HST).
-**Expected:** Full $565 is the cost for income tax purposes. If capital asset, $565 enters CCA schedule. If expensed (under $500 net -- but gross is $565, so capitalize under Class 8 or 50 depending on type). [T2] Flag: confirm whether this is a capital asset or current expense given the gross amount.
+## Section 9 -- Onboarding Fallback
+
+```
+ONBOARDING QUESTIONS -- CANADA T2125
+1. What is your business name and NAICS code?
+2. Do you have a Business Number (BN)?
+3. Are you GST/HST registered?
+4. Do you work from home? Is it your principal place of business?
+5. Do you use a vehicle for business? Do you have a km log?
+6. Any capital purchases this year? (computers, equipment, vehicles)
+7. Do you have subcontractors you paid over $500?
+8. Are you also employed (T4 income)?
+9. Province of residence?
+10. Prior year T2125 / CCA schedule available?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Reference |
+|---|---|
+| Business income | ITA s9 |
+| Deductible expenses | ITA s18 |
+| Reasonableness | ITA s67 |
+| Meals 50% limit | ITA s67.1 |
+| CCA | ITA s20(1)(a); ITR Schedule II |
+| Motor vehicle limits | ITA s67.2, s67.3; ITR 7307 |
+| Business-use-of-home | ITA s18(12) |
+| CPP self-employed | CPP Act s10, s12 |
+| Filing deadlines | ITA s150(1) |
+| Penalties | ITA s162, s163 |
+| GST/HST | ETA Part IX |
+
+### Interaction with GST/HST [T1]
+
+| Scenario | Income Tax Treatment |
+|---|---|
+| GST/HST collected on sales (registrant) | NOT income. Report net of GST/HST on T2125. |
+| ITC (Input Tax Credit) recovered | NOT an expense. Report net of recoverable GST/HST. |
+| Non-registrant (under $30K threshold) | GST/HST paid on purchases IS part of the cost. Report gross. |
+| ITCs denied (personal use portion) | Non-recoverable GST/HST is part of the expense cost. |
 
 ---
 
 ## PROHIBITIONS
 
-- NEVER include GST/HST collected on sales in business income (line 8000) for a regular GST/HST registrant
-- NEVER deduct meals and entertainment at more than 50% (unless long-haul trucker exception applies)
-- NEVER allow club membership dues as a deduction under any circumstances
-- NEVER allow fines, penalties, or income tax as deductions
-- NEVER expense capital assets directly -- they must go through CCA
-- NEVER allow home office expenses to create or increase a business loss
-- NEVER support a motor vehicle expense claim without a kilometre log
-- NEVER recommend claiming CCA on a principal residence without flagging the principal residence exemption risk
-- NEVER use a fiscal year end other than December 31 without confirming a valid T1139 election
-- NEVER present figures as final -- always label as estimated and direct client to their CPA/CA for sign-off
-- NEVER apply AccII rates without confirming the property was acquired in a year where AccII is active
-- NEVER compute tax liability directly -- pass net business income to the T1 return skill for tax computation
+- NEVER allow personal or living expenses as business deductions
+- NEVER allow more than 50% of meals and entertainment
+- NEVER claim CCA without a prior-year UCC reconciliation
+- NEVER claim home office if neither principal-place-of-business nor exclusive-use test is met
+- NEVER allow home office to create or increase a business loss
+- NEVER claim vehicle expenses without a km log
+- NEVER exceed the passenger vehicle cost limit for CCA
+- NEVER include income tax payments as business expenses
+- NEVER include CPP contributions as T2125 expenses (half goes to Line 22200)
+- NEVER report GST/HST-inclusive amounts on T2125 if the business is a registrant
+- NEVER present tax calculations as definitive -- always label as estimated
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CGA, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

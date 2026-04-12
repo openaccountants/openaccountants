@@ -1,823 +1,708 @@
 ---
 name: saudi-arabia-vat
-description: Use this skill whenever asked to prepare, review, or create a Saudi Arabia VAT return for any client. Trigger on phrases like "prepare VAT return", "Saudi VAT", "ZATCA return", "KSA VAT", "fill in VAT return", "Fatoorah", "e-invoicing Saudi", or any request involving Saudi Arabia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete KSA VAT classification rules, return field mappings, input tax recovery rules, e-invoicing requirements, penalty regime, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Saudi Arabia VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Saudi Arabia VAT return for any client. Trigger on phrases like "prepare VAT return", "Saudi VAT", "ZATCA return", "KSA VAT", "fill in VAT return", "Fatoorah", "e-invoicing Saudi", or any request involving Saudi Arabia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers KSA only and only standard VAT-registered persons. VAT groups, profit margin schemes, partial exemption with significant exempt supplies, oil & gas sector special rules, and designated zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any KSA VAT work.
+version: 2.0
 ---
 
-# Saudi Arabia VAT Return Preparation Skill
+# Saudi Arabia VAT Return Skill v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Kingdom of Saudi Arabia (KSA) |
-| Jurisdiction Code | SA |
-| Primary Legislation | VAT Law (Royal Decree No. A/113, dated 2/11/1438H); VAT Implementing Regulations (Board of Directors Resolution No. 3839, dated 14/12/1438H) |
-| Supporting Legislation | E-Invoicing Regulation (issued 4/12/1442H); Excise Tax Law (Royal Decree No. A/86); Unified VAT Agreement for the GCC States; VAT Implementing Regulations amendments (Board Resolution 01-06-24, published 18 April 2025) |
-| Tax Authority | Zakat, Tax and Customs Authority (ZATCA / formerly GAZT) |
-| Filing Portal | https://zatca.gov.sa (ZATCA portal); Fatoorah e-invoicing platform |
+|---|---|
+| Country | Kingdom of Saudi Arabia (KSA) |
+| Standard rate | 15% (from 1 July 2020; previously 5% from 1 January 2018) |
+| Zero rate | 0% (exports outside GCC, international transport, qualifying medicines, investment metals 99%+ purity, first residential property up to SAR 1,000,000 cap) |
+| Exempt supplies | Financial services (interest/margin-based, Islamic finance equivalents), residential rental, life insurance |
+| Return form | VAT return filed electronically via ZATCA portal |
+| Filing portal | https://zatca.gov.sa (ZATCA portal) |
+| Authority | Zakat, Tax and Customs Authority (ZATCA, formerly GAZT) |
+| Currency | SAR only |
+| Filing frequency | Monthly (annual taxable supplies > SAR 40,000,000); Quarterly (SAR 40,000,000 or less) |
+| Deadline | Last day of the month following end of tax period |
+| TIN format | 15-digit number starting with 3 and ending with 3 |
+| E-invoicing | Phase 1 (generation) mandatory since 4 Dec 2021; Phase 2 (integration) rolling waves from 1 Jan 2023 |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Community |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: field assignment, standard/zero/exempt classification, e-invoicing phases, derived calculations. Tier 2: apportionment, real estate first supply, designated zones, related party transactions. Tier 3: complex GCC customs union matters, oil & gas sector special rules, advanced transfer pricing with VAT implications. |
+| Validated by | Deep research verification, April 2026 |
+| Validation date | April 2026 |
+
+**Key VAT return fields (the fields you will use most):**
+
+| Field | Meaning |
+|---|---|
+| 1 | Standard-rated sales (15%) — VAT-exclusive amount |
+| 2 | VAT on standard-rated sales (Field 1 x 15%) |
+| 3 | Sales to GCC implementing states — VAT-exclusive amount |
+| 4 | VAT on GCC sales |
+| 5 | Zero-rated domestic sales — VAT-exclusive amount |
+| 6 | Exports — VAT-exclusive amount |
+| 7 | Exempt sales — VAT-exclusive amount |
+| 8 | Standard-rated purchases (15%) — VAT-exclusive amount |
+| 9 | VAT on standard-rated purchases (Field 8 x 15%) |
+| 10 | Imports subject to VAT paid at Customs — VAT-exclusive amount |
+| 11 | VAT paid at Customs |
+| 12 | Imports via reverse charge — VAT-exclusive amount |
+| 13 | VAT on reverse charge imports (Field 12 x 15%) |
+| 14 | Zero-rated purchases — VAT-exclusive amount |
+| 15 | Exempt purchases — VAT-exclusive amount |
+| 16 | Adjustments to output VAT (credit notes, corrections) |
+| 17 | Adjustments to input VAT (credit notes received, corrections) |
+| 18 | Total output VAT (derived: Field 2 + Field 4 + Field 13 + Field 16) |
+| 19 | Total input VAT (derived: Field 9 + Field 11 + Field 17) |
+| 20 | Net VAT due (derived: Field 18 − Field 19) |
+
+**E-invoicing phases summary:**
+
+| Phase | Requirement | Status |
+|---|---|---|
+| Phase 1 (Generation) | All VAT-registered taxpayers must generate, store, and share e-invoices. XML or PDF/A-3 with embedded XML. QR code mandatory on simplified (B2C) invoices. Handwritten invoices prohibited. | Mandatory since 4 December 2021 |
+| Phase 2 (Integration) | E-invoices reported to and validated by ZATCA platform (FATOORA) in near-real-time. ZATCA applies cryptographic stamp and UUID. QR code mandatory on ALL invoices. | Rolling waves from 1 January 2023. As of April 2026: Wave 24 (revenue > SAR 375K, deadline 30 Jun 2026). |
+
+**Conservative defaults — KSA-specific values for the universal categories in `vat-workflow-base` Section 2:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 15% (standard rate) |
+| Unknown VAT status of a purchase | Not recoverable |
+| Unknown counterparty location | Domestic KSA |
+| Unknown business-use proportion (vehicle, phone) | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge (non-resident supplier) |
+| Unknown blocked-input status (entertainment, motor vehicle, personal benefit) | Blocked |
+| Unknown whether transaction is in scope | In scope |
+| Unknown GCC implementing state treatment | Treat as domestic 15% (transitional rules) |
+
+**Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | SAR 20,000 |
+| HIGH tax-delta on a single conservative default | SAR 2,000 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | SAR 50,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A qualified tax consultant must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax consultant and document the gap.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full filing period. Acceptable from any Saudi business bank: Al Rajhi Bank, Saudi National Bank (SNB/NCB), Riyad Bank, Saudi British Bank (SABB), Banque Saudi Fransi (BSF), Arab National Bank (ANB), Alinma Bank, Bank AlJazira, Bank Albilad, or any other.
 
----
+**Recommended** — sales invoices for the period (especially for zero-rated exports and international services), purchase invoices for any input tax claim above SAR 2,000, the client's TIN (15-digit, starting and ending with 3) in writing, Commercial Registration (CR) number.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete e-invoice register (from FATOORA system), VAT registration certificate, prior period VAT return, reconciliation of any excess input tax.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This VAT return was produced from bank statement alone. The reviewer must verify, before approval, that input tax claims above SAR 2,000 are supported by compliant e-invoices and that all reverse charge and zero-rating classifications match the supplier's/customer's documentation."
 
-1. **Entity name and VAT registration number** [T1] -- 15-digit Tax Identification Number (TIN) starting with 3 and ending with 3
-2. **Commercial Registration (CR) number** [T1] -- required for ZATCA registration
-3. **Filing frequency** [T1] -- Monthly (annual taxable supplies > SAR 40,000,000) or Quarterly
-4. **VAT period** [T1] -- calendar month or calendar quarter
-5. **Accounting method** [T1] -- accrual basis (standard) or cash basis (permitted for certain taxpayers)
-6. **Industry/sector** [T2] -- impacts treatment (e.g., real estate, oil & gas, financial services, healthcare)
-7. **Does the business make exempt supplies?** [T2] -- If yes, apportionment required
-8. **E-invoicing phase** [T1] -- Phase 1 (generation) or Phase 2 (integration) -- depends on ZATCA wave rollout
-9. **Does the business operate in a designated zone?** [T2] -- special VAT rules apply
-10. **Is the business part of a VAT group?** [T2] -- group registration impacts reporting
+### KSA-specific refusal catalogue
 
-**If items 1-3 are unknown, STOP. Do not classify any transactions until registration status and filing frequency are confirmed.**
+If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-**Legislation:** VAT Law, Article 50 (registration); VAT Implementing Regulations, Article 8.
+**R-SA-1 — Partial exemption with significant exempt supplies.** *Trigger:* client makes both taxable and exempt supplies and the exempt proportion is not trivial (more than incidental bank charges/interest). *Message:* "You make both taxable and exempt supplies. Your input tax must be apportioned under Article 50 of the VAT Law and IR Article 50. This skill cannot compute the apportionment ratio. Please engage a qualified tax consultant to determine and confirm the recovery rate before input tax is claimed."
 
----
+**R-SA-2 — VAT group registration.** *Trigger:* client is part of a VAT group. *Message:* "VAT group registrations require consolidation across all group members. This skill covers single-entity VAT returns only. Please engage a qualified tax consultant."
 
-## Step 1: VAT Rate Structure
+**R-SA-3 — Oil and gas sector special rules.** *Trigger:* client operates in the oil and gas sector with specific VAT treatments for crude oil, refined products, or hydrocarbons. *Message:* "Oil and gas sector transactions have specific VAT rules including zero-rating conditions and reverse charge requirements that are highly fact-sensitive. Out of scope for this skill."
 
-### 1a. Standard Rate [T1]
+**R-SA-4 — Designated zone goods movement.** *Trigger:* client operates in a qualifying economic zone / designated zone and the transaction involves goods movement between zones or between a zone and the mainland. *Message:* "Designated zone goods movements have specific treatment under IR Article 39. Not all free zones are designated zones. This skill applies standard rules only. Please engage a qualified tax consultant to confirm zone treatment."
 
-| Rate | Application | Effective Date | Legislation |
-|------|-------------|----------------|-------------|
-| 15% | Standard rate on all taxable supplies and imports | From 1 July 2020 | VAT Law, Article 2; Royal Decree A/638 |
-| 5% | Former standard rate | 1 January 2018 to 30 June 2020 | VAT Law, Article 2 (original) |
-| 0% | Zero-rated supplies (exports, international transport, qualifying medicines, investment metals) | From 1 January 2018 | VAT Law, Article 33 |
-| Exempt | Financial services (interest-based), residential rental, life insurance premiums | From 1 January 2018 | VAT Law, Article 29 |
+**R-SA-5 — Capital assets scheme adjustment.** *Trigger:* the period contains an adjustment to previously deducted input tax on a capital asset where input VAT exceeded SAR 250,000 (5-year adjustment for movable, 10-year for immovable). *Message:* "Capital assets scheme adjustments under IR Article 51 require tracking the original deduction, current and intended use, and computing the annual fraction. Out of scope for this skill."
 
-**The rate increase from 5% to 15% took effect on 1 July 2020. Transitional rules applied for contracts entered before 11 May 2020.**
+**R-SA-6 — First supply of residential property (housing relief).** *Trigger:* client is selling residential property and claiming zero-rating under the SAR 1,000,000 housing relief cap. *Message:* "First supply of residential property with the SAR 1,000,000 housing VAT/RETT relief cap requires determining first-supply status, buyer eligibility (Saudi citizen, first home), and computing the relief. This is Tier 2 — flag for reviewer confirmation. If the transaction is straightforward, proceed with zero-rating in Field 5 up to SAR 1,000,000 and 15% on any excess, but the reviewer must verify eligibility."
 
-### 1b. Zero-Rated Supplies (Complete List) [T1]
-
-| Category | Description | Legislation |
-|----------|-------------|-------------|
-| Exports of goods | Goods exported outside GCC implementing states, with proof of export | Article 33(1); IR Article 32 |
-| Exports of services | Services supplied to non-resident outside KSA (no establishment in KSA, service not related to goods/real estate in KSA) | Article 33(2); IR Article 33 |
-| International transport | Transport of goods and passengers internationally, and related services | Article 34; IR Article 34 |
-| Qualifying medicines | Medicines and medical equipment listed by SFDA and Ministry of Health | Article 35; IR Article 35 |
-| Investment metals | Gold, silver, and platinum of 99% purity or higher, traded for investment purposes | Article 36; IR Article 36 |
-| Supplies to diplomats | Supplies to accredited diplomatic missions and international organizations (reciprocity basis) | Article 37; IR Article 37 |
-| First supply of residential property | First supply of a residential property within 3 years of completion (government-subsidized housing relief) -- subject to SAR 1,000,000 cap | Article 36(3); Royal Decree A/84 (housing VAT/RETT relief) |
-
-### 1c. Exempt Supplies (Complete List) [T1]
-
-| Category | Description | Legislation |
-|----------|-------------|-------------|
-| Financial services | Services based on interest or implicit margin (lending, deposits, Islamic finance equivalents) | Article 29(1); IR Article 29 |
-| Residential rental | Rental of residential real estate (not hotel/serviced apartments) | Article 30; IR Article 30 |
-| Life insurance | Life insurance and reinsurance premiums | Article 29(5); IR Article 29 |
-| Local passenger transport | Provision not yet activated -- currently taxable at 15% | Article 31 (reserved) |
-
-**Key distinction:** Zero-rated supplies allow full input tax recovery. Exempt supplies do NOT allow input tax recovery on related inputs.
-
-### 1d. Out-of-Scope Supplies [T1]
-
-| Category | Description | Legislation |
-|----------|-------------|-------------|
-| Salary/wages | Employment income -- not a supply | Article 2 (definition of supply) |
-| Government sovereign activities | Activities conducted by government in a sovereign capacity | Article 10; IR Article 9 |
-| Dividends | Distribution of profits -- not consideration for a supply | General principles |
-| Transfer within same legal entity | Not a supply between persons | Article 2 |
-| Intra-GCC (implementing state to implementing state) | Treated under GCC customs union transitional rules | Unified Agreement, transitional provisions |
+**R-SA-7 — Deemed supplier for electronic marketplaces.** *Trigger:* client operates a digital platform facilitating sales by non-resident or unregistered suppliers (deemed supplier rules effective 1 January 2026 under amended IR Article 47 Para 3). *Message:* "Deemed supplier obligations for electronic marketplace operators require specific assessment. Out of scope."
 
 ---
 
-## Step 2: VAT Return Form -- Field Mapping
+## Section 3 — Supplier pattern library (the lookup table)
 
-### 2a. VAT Return Structure (Complete) [T1]
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
 
-The Saudi VAT return is filed electronically via the ZATCA portal. The return is divided into sections:
+**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific.
 
-**Legislation:** VAT Law, Article 59 (returns); VAT Implementing Regulations, Article 59.
+### 3.1 Saudi banks (fees exempt — exclude)
 
-#### Section 1: Standard Rated Sales
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AL RAJHI, ALRAJHI, مصرف الراجحي | EXCLUDE for bank charges/fees | Financial service, exempt |
+| SNB, SAUDI NATIONAL BANK, NCB, البنك الأهلي | EXCLUDE for bank charges/fees | Same |
+| RIYAD BANK, بنك الرياض | EXCLUDE for bank charges/fees | Same |
+| SABB, SAUDI BRITISH BANK | EXCLUDE for bank charges/fees | Same |
+| BSF, BANQUE SAUDI FRANSI | EXCLUDE for bank charges/fees | Same |
+| ANB, ARAB NATIONAL BANK | EXCLUDE for bank charges/fees | Same |
+| ALINMA, مصرف الإنماء | EXCLUDE for bank charges/fees | Same |
+| BANK ALJAZIRA, بنك الجزيرة | EXCLUDE for bank charges/fees | Same |
+| BANK ALBILAD, بنك البلاد | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE (fee lines) | EXCLUDE for transaction fees | Check for separate taxable subscription invoices |
+| INTEREST, PROFIT, MURABAHA (margin) | EXCLUDE | Exempt financial service income/expense |
+| LOAN, TAMWEEL, FINANCING (principal) | EXCLUDE | Loan/financing principal, out of scope |
 
-| Field | Description |
-|-------|-------------|
-| Field 1 | Sales subject to standard rate (15%) -- VAT-exclusive amount |
-| Field 2 | VAT amount on standard rated sales (Field 1 x 15%) |
+### 3.2 Saudi government, regulators, and statutory bodies (exclude entirely)
 
-#### Section 2: Sales to GCC Countries (Implementing States)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ZATCA, GAZT, هيئة الزكاة والضريبة والجمارك | EXCLUDE | Tax/zakat payment, not a supply |
+| VAT PAYMENT, ضريبة القيمة المضافة | EXCLUDE | VAT payment |
+| ZAKAT PAYMENT, زكاة | EXCLUDE | Zakat payment |
+| CUSTOMS, جمارك | EXCLUDE for duty | Customs duty (but check for import VAT in Field 10/11) |
+| GOSI, GENERAL ORGANIZATION FOR SOCIAL INSURANCE, التأمينات الاجتماعية | EXCLUDE | Social insurance, out of scope |
+| MOC, MINISTRY OF COMMERCE, وزارة التجارة | EXCLUDE | Government fees, sovereign act |
+| MOL, MINISTRY OF LABOR, HRSD | EXCLUDE | Government fees |
+| MUNICIPALITY, BALADIYA, أمانة | EXCLUDE | Government fees |
+| CITC, COMMUNICATIONS AND IT COMMISSION | EXCLUDE | Government licence fees |
+| CMA, CAPITAL MARKET AUTHORITY | EXCLUDE | Regulatory fees |
+| SADAD | EXCLUDE (payment channel) | Sadad is a bill payment system, not a supplier |
+| ABSHER, MUQEEM, QIWA, MUDAD | EXCLUDE | Government digital platforms |
 
-| Field | Description |
-|-------|-------------|
-| Field 3 | Sales to customers in GCC implementing states -- VAT-exclusive amount |
-| Field 4 | VAT amount on GCC sales |
+### 3.3 Saudi utilities
 
-#### Section 3: Zero-Rated Sales
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| SEC, SAUDI ELECTRICITY COMPANY, الشركة السعودية للكهرباء | Domestic 15% | 8/9 | Electricity — overhead, input tax claimable |
+| SWCC, SALINE WATER CONVERSION, المؤسسة العامة لتحلية المياه المالحة | Domestic 15% | 8/9 | Desalinated water |
+| NATIONAL WATER COMPANY, NWC, شركة المياه الوطنية | Domestic 15% | 8/9 | Water services |
+| MARAFIQ | Domestic 15% | 8/9 | Utilities (Jubail/Yanbu) |
 
-| Field | Description |
-|-------|-------------|
-| Field 5 | Zero-rated domestic sales -- VAT-exclusive amount |
-| Field 6 | Exports -- VAT-exclusive amount |
+### 3.4 Saudi telecoms
 
-#### Section 4: Exempt Sales
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| STC, SAUDI TELECOM, الاتصالات السعودية | Domestic 15% | 8/9 | Telecoms — overhead |
+| MOBILY, ETIHAD ETISALAT, اتحاد اتصالات | Domestic 15% | 8/9 | Same |
+| ZAIN, زين | Domestic 15% | 8/9 | Same |
+| VIRGIN MOBILE KSA | Domestic 15% | 8/9 | MVNO |
 
-| Field | Description |
-|-------|-------------|
-| Field 7 | Exempt sales -- VAT-exclusive amount |
+### 3.5 Insurance (check type)
 
-#### Section 5: Standard Rated Purchases
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TAWUNIYA, التعاونية | Check invoice | Life insurance/family takaful: exempt. General/motor/health: domestic 15% |
+| BUPA ARABIA | Domestic 15% | Health insurance, standard rated |
+| MEDGULF | Check invoice | Life: exempt. General: domestic 15% |
+| MALATH, WALAA, AL RAJHI TAKAFUL | Check invoice | Life/family: exempt. General: domestic 15% |
+| MOTOR INSURANCE, VEHICLE INSURANCE | Domestic 15% | General insurance standard rated (but input blocked if for blocked motor vehicle) |
+| HEALTH INSURANCE, MEDICAL INSURANCE | Domestic 15% | Standard rated; input claimable unless employee personal benefit |
 
-| Field | Description |
-|-------|-------------|
-| Field 8 | Purchases subject to standard rate (15%) -- VAT-exclusive amount |
-| Field 9 | VAT on standard rated purchases (Field 8 x 15%) |
+### 3.6 Transport
 
-#### Section 6: Imports Subject to VAT (Reverse Charge)
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| UBER SA, CAREEM KSA | Domestic 15% | 8/9 | Ride-hailing, standard rated |
+| SAUDIA, SAUDI ARABIAN AIRLINES, الخطوط السعودية (international) | Zero-rated / EXCLUDE | 6 | International passenger transport |
+| SAUDIA (domestic flights) | Domestic 15% | 8/9 or 1/2 | Domestic flights standard rated |
+| FLYNAS, طيران ناس (international) | Zero-rated / EXCLUDE | 6 | International flights |
+| FLYNAS (domestic) | Domestic 15% | 8/9 | Domestic flights standard rated |
+| SAR, SAUDI RAILWAY, سار | Domestic 15% | 8/9 | Rail transport, standard rated |
+| DHL KSA, ARAMEX KSA | Domestic 15% | 8/9 | Courier/express, standard rated |
 
-| Field | Description |
-|-------|-------------|
-| Field 10 | Imports subject to VAT paid at Customs -- VAT-exclusive amount |
-| Field 11 | VAT paid at Customs |
+### 3.7 Food retail and supermarkets
 
-#### Section 7: Imports Subject to VAT (Accounted for via Reverse Charge Mechanism)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PANDA, بنده | Default BLOCK input tax | Personal provisioning. Claimable only if F&B business purchasing stock-in-trade |
+| CARREFOUR KSA, كارفور | Default BLOCK | Same |
+| DANUBE, الدانوب | Default BLOCK | Same |
+| TAMIMI MARKETS, التميمي | Default BLOCK | Same |
+| OTHAIM, العثيم | Default BLOCK | Same |
+| BIN DAWOOD, بن داود | Default BLOCK | Same |
+| RESTAURANTS, CAFES (any named restaurant) | Default BLOCK | Entertainment blocked under IR Art. 49(4) |
 
-| Field | Description |
-|-------|-------------|
-| Field 12 | Imports accounted for through reverse charge -- VAT-exclusive amount |
-| Field 13 | VAT on reverse charge imports (Field 12 x 15%) |
+### 3.8 SaaS — non-resident suppliers (reverse charge)
 
-#### Section 8: Purchases Subject to Zero Rate
+When the client receives services from a non-resident supplier not registered for KSA VAT: self-assess output VAT at 15% in Field 12/13 (reverse charge), claim input VAT (if entitled) in Field 9 or aggregated into Field 19. Net effect zero for fully taxable business.
 
-| Field | Description |
-|-------|-------------|
-| Field 14 | Zero-rated purchases -- VAT-exclusive amount |
+| Pattern | Billing entity | Field | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | 12/13 | Non-resident, reverse charge |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 12/13 | Non-resident, reverse charge |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 12/13 | Non-resident, reverse charge |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 12/13 | Non-resident, reverse charge |
+| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 12/13 | Non-resident, reverse charge |
+| AWS, AMAZON WEB SERVICES | AWS Inc (US) or AWS EMEA SARL (LU) | 12/13 | Non-resident, reverse charge |
+| NOTION | Notion Labs Inc (US) | 12/13 | Non-resident, reverse charge |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 12/13 | Non-resident, reverse charge |
+| OPENAI, CHATGPT | OpenAI Inc (US) | 12/13 | Non-resident, reverse charge |
+| GITHUB | GitHub Inc (US) | 12/13 | Non-resident, reverse charge |
+| FIGMA | Figma Inc (US) | 12/13 | Non-resident, reverse charge |
+| CANVA | Canva Pty Ltd (AU) | 12/13 | Non-resident, reverse charge |
+| SLACK | Slack Technologies LLC (US) | 12/13 | Non-resident, reverse charge |
+| ATLASSIAN (Jira, Confluence) | Atlassian Pty Ltd (AU) | 12/13 | Non-resident, reverse charge |
+| ZOOM | Zoom Video Communications Inc (US) | 12/13 | Non-resident, reverse charge |
+| HUBSPOT | HubSpot Inc (US) | 12/13 | Non-resident, reverse charge |
+| STRIPE (subscription) | Stripe Inc (US) | 12/13 | Non-resident, reverse charge |
+| SHOPIFY | Shopify Inc (CA) | 12/13 | Non-resident, reverse charge |
+| TWILIO | Twilio Inc (US) | 12/13 | Non-resident, reverse charge |
 
-#### Section 9: Exempt Purchases
+### 3.9 Payment processors
 
-| Field | Description |
-|-------|-------------|
-| Field 15 | Exempt purchases -- VAT-exclusive amount |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees, exempt financial service |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| MADA, MADA PAYMENT | EXCLUDE | Debit card payment network fees — exempt financial service |
+| HYPERPAY, MOYASAR, PAYFORT | Check invoice | If KSA entity: domestic 15%. If not: reverse charge |
 
-#### Section 10: Adjustments and Corrections
+### 3.10 Retail and office supplies (Saudi)
 
-| Field | Description |
-|-------|-------------|
-| Field 16 | Adjustments to output VAT (credit notes issued, corrections to previous periods) |
-| Field 17 | Adjustments to input VAT (credit notes received, corrections to previous periods) |
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| JARIR, مكتبة جرير | Domestic 15% | 8/9 | Office supplies, electronics — input claimable if business purpose |
+| EXTRA, اكسترا | Domestic 15% | 8/9 | Electronics retail |
+| IKEA KSA | Domestic 15% | 8/9 | Furniture/office |
+| SACO, ساكو | Domestic 15% | 8/9 | Hardware/office supplies |
 
-#### Section 11: Total VAT Due
+### 3.11 Professional services (Saudi)
 
-| Field | Description |
-|-------|-------------|
-| Field 18 | Total output VAT: Field 2 + Field 4 + Field 13 + Field 16 |
-| Field 19 | Total input VAT: Field 9 + Field 11 + Field 17 |
-| Field 20 | Net VAT due: Field 18 - Field 19 |
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| LAW FIRM names, محاماة, LEGAL | Domestic 15% | 8/9 | Legal fees, input claimable if business purpose |
+| ACCOUNTANT, AUDIT FIRM, محاسبة | Domestic 15% | 8/9 | Accounting/audit, always claimable |
+| DELOITTE KSA, PwC KSA, KPMG KSA, EY KSA | Domestic 15% | 8/9 | Big 4 KSA entities, domestic |
+| PRO SERVICES, TASHEEL, MUQEEM SERVICES | Domestic 15% | 8/9 | Government liaison services |
 
-### 2b. Derived Calculations [T1]
+### 3.12 Payroll and statutory contributions (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOSI, SOCIAL INSURANCE | EXCLUDE | Social insurance contributions, out of scope |
+| SALARY, WAGES, PAYROLL, WPS, رواتب | EXCLUDE | Employment, out of scope |
+| IQAMA RENEWAL, VISA FEES | EXCLUDE | Government fees |
+| END OF SERVICE, مكافأة نهاية الخدمة | EXCLUDE | Employment termination benefit |
+
+### 3.13 Property and rent
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| COMMERCIAL RENT, OFFICE RENT (with VAT invoice) | Domestic 15%, Field 8/9 | Commercial lease, input claimable |
+| RESIDENTIAL RENT, APARTMENT RENT, إيجار سكني | EXCLUDE | Residential lease, exempt |
+| EJAR, إيجار (residential) | EXCLUDE | Residential tenancy platform |
+| WAREHOUSE, INDUSTRIAL RENT | Domestic 15%, Field 8/9 | Commercial/industrial lease |
+| WAFI (residential off-plan sales platform) | See R-SA-6 | May involve first-supply housing relief |
+
+### 3.14 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| OWN TRANSFER, INTERNAL, BETWEEN ACCOUNTS | EXCLUDE | Internal movement |
+| DIVIDEND, توزيعات | EXCLUDE | Dividend, out of scope |
+| LOAN REPAYMENT, FINANCING REPAYMENT | EXCLUDE | Principal, out of scope |
+| CASH WITHDRAWAL, ATM, سحب نقدي | TIER 2 — ask | Default exclude; ask what cash was spent on |
+| PARTNER DRAWING, OWNER DRAWING | EXCLUDE | Drawing, out of scope |
+| ZAKAT PAYMENT | EXCLUDE | Zakat, separate obligation from VAT |
+
+---
+
+## Section 4 — Worked examples
+
+These are six fully worked classifications drawn from a hypothetical bank statement of a KSA-based self-employed IT consultant operating from Riyadh.
+
+### Example 1 — Non-resident SaaS reverse charge (Notion)
+
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; SAR 60.00`
+
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.8). No VAT on the invoice. This is a service received from a non-resident supplier not registered for KSA VAT. The client must self-assess reverse charge under Article 47: output VAT at 15% in Field 12/13, claim input VAT in Field 19 (via Field 9). Net effect zero for a fully taxable client. Both sides must appear on the return.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field (output) | Field (input) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -60.00 | -60.00 | 9.00 | 15% | 12/13 | 9 (via 19) | N | — | — |
+
+### Example 2 — Zero-rated export of services
+
+**Input line:**
+`10.04.2026 ; TECHCORP INC DELAWARE ; CREDIT ; Invoice SA-2026-018 IT consultancy March ; +25,000.00 ; SAR`
+
+**Reasoning:**
+Incoming SAR 25,000 from a US company. The client provides IT consulting services to a non-resident with no KSA establishment. Under Article 33(2) and IR Article 33, this is a zero-rated export of services. Report in Field 6. No output VAT. Confirm: the customer has no establishment in KSA, the service is not related to goods or real estate in KSA.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | TECHCORP INC DELAWARE | +25,000.00 | +25,000.00 | 0 | 0% | 6 | Y | Q1 (HIGH) | "Verify customer has no KSA establishment" |
+
+### Example 3 — Entertainment, blocked
+
+**Input line:**
+`15.04.2026 ; THE GLOBE RESTAURANT RIYADH ; DEBIT ; Client dinner ; -1,800.00 ; SAR`
+
+**Reasoning:**
+Restaurant transaction. Entertainment and hospitality expenses for non-business purposes are blocked under IR Article 49(4). Client entertainment is a hard block — the input VAT is irrecoverable. Default: full block.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | THE GLOBE RESTAURANT | -1,800.00 | -1,800.00 | 0 | — | — | Y | Q2 | "Entertainment: blocked under IR Art. 49(4)" |
+
+### Example 4 — Domestic standard-rated purchase (office equipment)
+
+**Input line:**
+`18.04.2026 ; JARIR BOOKSTORE ; DEBIT ; Invoice JR-2026-441 Laptop HP ; -5,750.00 ; SAR`
+
+**Reasoning:**
+Jarir is a local retailer (Section 3.10). The gross amount is SAR 5,750 inclusive of 15% VAT. Net = 5,750 x (100/115) = SAR 5,000. VAT = SAR 750. Standard-rated domestic purchase used for business. Input tax claimable. Goes to Field 8 (purchases) and Field 9 (input tax).
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field (purchase) | Field (input) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | JARIR BOOKSTORE | -5,750.00 | -5,000.00 | -750.00 | 15% | 8 | 9 | N | — | — |
+
+### Example 5 — Motor vehicle expense, blocked
+
+**Input line:**
+`22.04.2026 ; AL JAZIRAH VEHICLES ; DEBIT ; Monthly car lease ; -4,500.00 ; SAR`
+
+**Reasoning:**
+Car lease payment. Input VAT on motor vehicles (purchase, lease, running costs) is blocked under IR Article 49(3) unless the vehicle is essential to the business (taxi, delivery, car rental, transportation business). An IT consultant does not qualify. Default: full block.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | AL JAZIRAH VEHICLES | -4,500.00 | -4,500.00 | 0 | — | — | Y | Q3 | "Motor vehicle: blocked under IR Art. 49(3)" |
+
+### Example 6 — Exempt financial service (bank charges)
+
+**Input line:**
+`28.04.2026 ; AL RAJHI BANK ; DEBIT ; Monthly account maintenance ; -50.00 ; SAR`
+
+**Reasoning:**
+Bank maintenance fee. Financial services based on interest or implicit margin are exempt under Article 29. No VAT is charged. No input tax to claim. Exclude from the return.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | AL RAJHI BANK | -50.00 | — | — | — | — | N | — | "Exempt financial service" |
+
+---
+
+## Section 5 — Tier 1 classification rules (compressed)
+
+Each rule states the legal source and the field mapping. Apply silently if the data is unambiguous.
+
+### 5.1 Standard rate 15% (VAT Law Art. 2; Royal Decree A/638)
+
+Default rate for any taxable supply in KSA unless zero-rated or exempt. Sales go to Field 1/2. Purchases go to Field 8/9. The rate has been 15% since 1 July 2020. Do not apply the former 5% rate to supplies after that date (subject to transitional rules for pre-existing contracts entered before 11 May 2020).
+
+### 5.2 Zero-rated supplies (Art. 33-37)
+
+Exports of goods outside GCC implementing states with proof of export (customs declaration, bill of lading). Report in Field 6. Exports of services to non-resident outside KSA (no KSA establishment, service not related to goods/real estate in KSA). Report in Field 6. International transport of goods and passengers. Report in Field 6. Zero-rated domestic sales (qualifying medicines per SFDA list, investment metals 99%+ purity, supplies to diplomats). Report in Field 5. First supply of residential property within 3 years up to SAR 1,000,000 cap. Report in Field 5. No output VAT. Full input tax recovery on related costs.
+
+### 5.3 Exempt supplies (Art. 29-30)
+
+Financial services based on interest or implicit margin (lending, deposits, Islamic finance equivalents like murabaha profit margin). Residential rental. Life insurance premiums. Report in Field 7. No output VAT. No input tax recovery on directly attributable costs.
+
+### 5.4 Out of scope
+
+Salaries, wages, GOSI contributions, zakat, government fines/fees, dividends, loan principal, TOGC, government sovereign activities. Not reported on VAT return. Exclude entirely.
+
+### 5.5 Reverse charge — services from non-resident (Art. 47)
+
+When the client receives services or intangibles from a non-resident not registered for KSA VAT: self-assess output VAT at 15% in Field 12/13, claim input VAT in Field 19 (if entitled). Net effect zero for a fully taxable client. Both sides must appear.
+
+### 5.6 Import of goods via Customs (Art. 47-49)
+
+Goods imported and cleared at Customs. VAT paid at border. Report in Field 10 (value) and Field 11 (VAT). Input tax claimable in Field 19. Customs declaration is the supporting document.
+
+### 5.7 Domestic purchases — standard rated
+
+Input tax on a valid e-invoice from a KSA VAT-registered supplier is recoverable for purchases used in taxable business activity. Subject to blocked-input rules (5.9). Map to Field 8 (value) and Field 9 (input tax).
+
+### 5.8 GCC implementing state supplies (Field 3/4)
+
+Sales to customers in GCC implementing states (UAE, Bahrain, Oman) during transitional period: Field 3/4 at 15%. The GCC electronic service system for customs union is not yet fully operational — treat as domestic supply during transitional period.
+
+### 5.9 Blocked input tax (IR Art. 49)
+
+The following categories have zero VAT recovery:
+- Motor vehicles: purchase, lease, running costs — IR Art. 49(3). Exception: vehicle is essential to the business (taxi, delivery fleet, car rental, transportation business).
+- Entertainment, hospitality, recreation for non-business purposes — IR Art. 49(4). Exception: staff meals at workplace may be claimable.
+- Employee personal benefits: housing, childcare (unless legally required) — IR Art. 49(5).
+- Costs related to exempt supplies — Art. 46(1).
+
+Blocked categories override any other recovery rule. Check blocked status before applying recovery.
+
+### 5.10 E-invoicing compliance
+
+All invoices must be electronic since 4 December 2021 (Phase 1). Phase 2 integration with FATOORA platform is rolling out in waves based on revenue thresholds. QR code is mandatory on all invoices in Phase 2 (and on simplified B2C invoices since Phase 1). A non-compliant invoice is still a valid invoice for VAT purposes but triggers penalties.
+
+### 5.11 Credit notes and adjustments
+
+Credit notes issued reduce output tax. Credit notes received reduce input tax. Enter in Field 16 (output adjustments) and Field 17 (input adjustments). For errors in prior returns: if VAT difference exceeds SAR 5,000, mandatory voluntary disclosure via ZATCA portal. If SAR 5,000 or less, correct in next return.
+
+### 5.12 Penalty amnesty
+
+ZATCA penalty cancellation initiative extended to 30 June 2026. Covers late registration, late filing, late payment, and correction penalties. Requires: taxpayer registered, all returns submitted, full principal tax paid.
+
+### 5.13 Sales — domestic standard
+
+Charge 15% on all local sales. Map to Field 1 (net) and Field 2 (output VAT).
+
+### 5.14 Calculating VAT from gross amounts
 
 ```
-Field 2  = Field 1 x 15%
-Field 4  = Field 3 x 15%
-Field 9  = Field 8 x 15%
-Field 13 = Field 12 x 15%
-
-Field 18 = Field 2 + Field 4 + Field 13 + Field 16
-Field 19 = Field 9 + Field 11 + Field 17
-
-IF Field 18 > Field 19 THEN
-    Field 20 = Field 18 - Field 19    -- Net VAT payable
-ELSE
-    Field 20 = Field 18 - Field 19    -- Net VAT refundable (negative value)
-END
-```
-
----
-
-## Step 3: Transaction Classification Rules
-
-### 3a. Determine Transaction Type [T1]
-
-- Sale/revenue (output VAT) or Purchase/expense (input VAT)
-- Salaries, wages, government levies, zakat, loan repayments, dividends = OUT OF SCOPE (never on VAT return)
-
-**Legislation:** VAT Law, Article 2 (definition of taxable supply), Article 9 (supply of goods and services).
-
-### 3b. Determine Counterparty Location [T1]
-
-| Location | Classification |
-|----------|---------------|
-| Saudi Arabia (domestic) | Local supply, standard 15% or zero-rated or exempt |
-| GCC implementing state | GCC rules (currently only UAE, Bahrain -- others not yet implementing) |
-| GCC non-implementing state | Treated as export (zero-rated if export conditions met) |
-| Outside GCC | Export (zero-rated if conditions met) or import (reverse charge/customs) |
-
-**GCC implementing states (as at 2026):** UAE (1 Jan 2018, 5%), Bahrain (1 Jan 2019, increased to 10% on 1 Jan 2022), Oman (16 April 2021, 5%). Kuwait and Qatar have not yet implemented VAT.
-
-### 3c. Sales Classification [T1]
-
-| Type | Field 1/2 | Field 3/4 | Field 5/6 | Field 7 | Notes |
-|------|-----------|-----------|-----------|---------|-------|
-| Standard domestic sale | Yes | -- | -- | -- | 15% VAT |
-| Sale to GCC implementing state customer | -- | Yes | -- | -- | 15% VAT (transitional) |
-| Zero-rated domestic sale | -- | -- | Field 5 | -- | No VAT |
-| Export outside GCC | -- | -- | Field 6 | -- | No VAT, proof of export required |
-| Exempt sale | -- | -- | -- | Yes | No VAT, no input recovery |
-
-### 3d. Purchases Classification [T1]
-
-| Type | Field | Notes |
-|------|-------|-------|
-| Standard domestic purchase | Field 8/9 | 15% VAT, input recoverable (subject to rules) |
-| Import cleared at Customs | Field 10/11 | VAT paid to Customs, recoverable as input |
-| Import via reverse charge (services, intangibles) | Field 12/13 | Self-assess output AND claim input (net zero for fully taxable) |
-| Zero-rated purchase | Field 14 | No VAT content |
-| Exempt purchase | Field 15 | No input VAT recovery |
-
----
-
-## Step 4: Input Tax Recovery Rules
-
-### 4a. General Entitlement [T1]
-
-A taxable person may deduct input VAT on goods and services acquired for the purpose of making taxable supplies (standard-rated or zero-rated).
-
-**Legislation:** VAT Law, Article 46 (input tax deduction); IR Article 46.
-
-**Requirements:**
-1. The person must be registered for VAT
-2. The goods/services must be for making taxable supplies
-3. A valid tax invoice must be held (or Customs declaration for imports)
-4. The input VAT must have been correctly charged
-
-### 4b. Blocked Input Tax Categories [T1]
-
-The following categories are specifically blocked from input tax recovery:
-
-| Category | Legislation |
-|----------|-------------|
-| Motor vehicles (purchase, lease, running costs) -- unless the vehicle is essential to the business (e.g., taxi, delivery, car rental, transportation business) | IR Article 49(3) |
-| Entertainment, hospitality, and recreation expenses for employees or non-business purposes | IR Article 49(4) |
-| Services for personal benefit of employees (housing, childcare) unless legally required | IR Article 49(5) |
-| Goods and services acquired for making exempt supplies | Article 46(1) |
-
-### 4c. Apportionment for Mixed Supplies [T2]
-
-If a taxable person makes both taxable and exempt supplies, input VAT must be apportioned:
-
-**Step 1 -- Direct attribution:**
-- Input VAT directly attributable to taxable supplies: fully recoverable
-- Input VAT directly attributable to exempt supplies: not recoverable
-
-**Step 2 -- Residual input VAT (overheads):**
-```
-Recovery % = (Value of taxable supplies / Total value of all supplies) x 100
-```
-
-**Annual adjustment:** Required at end of calendar year based on actual ratios for the year.
-
-**Legislation:** VAT Law, Article 50; IR Article 50.
-
-**Flag for reviewer: apportionment ratio must be confirmed by qualified tax consultant before applying.**
-
-### 4d. Capital Assets Scheme [T2]
-
-For capital assets with input VAT exceeding SAR 250,000:
-- Adjustment period: 5 years for movable assets, 10 years for immovable property (real estate)
-- Annual comparison of actual use vs initial claim
-- Adjustment = (1/5 or 1/10) x Full input VAT x (Current year % taxable use - Initial % taxable use)
-
-**Legislation:** VAT Implementing Regulations, Article 51.
-
----
-
-## Step 5: Reverse Charge Mechanics
-
-### 5a. When Reverse Charge Applies [T1]
-
-The reverse charge mechanism applies when:
-1. A non-resident person who is not registered for VAT in KSA makes a taxable supply to a registered person in KSA
-2. The supply is of services, intangibles, or goods in certain circumstances
-
-**Legislation:** VAT Law, Article 47 (reverse charge); IR Article 47.
-
-### 5b. Reverse Charge Treatment [T1]
-
-For qualifying imports via reverse charge:
-1. Report the VAT-exclusive value in Field 12
-2. Self-assess output VAT at 15% in Field 13
-3. Claim input VAT (if entitled) in Field 19 (via Field 9 or aggregated)
-4. Net effect: zero for fully taxable businesses
-
-**Both sides must be shown on the return.**
-
-### 5c. Exceptions to Reverse Charge [T1]
-
-| Situation | Treatment |
-|-----------|-----------|
-| Non-resident supplier IS registered for VAT in KSA | Normal supply, not reverse charge |
-| Import of physical goods cleared at Customs | VAT collected at border (Field 10/11), not reverse charge |
-| Supply by non-resident to non-registered person | Non-resident must register and charge VAT |
-
----
-
-## Step 6: E-Invoicing (Fatoorah) Requirements
-
-### 6a. Overview [T1]
-
-Saudi Arabia has implemented mandatory e-invoicing in two phases under the E-Invoicing Regulation issued by ZATCA.
-
-**Legislation:** E-Invoicing Regulation (Resolution dated 4/12/1442H, 4 December 2020).
-
-### 6b. Phase 1 -- Generation Phase [T1]
-
-| Item | Detail |
-|------|--------|
-| Effective date | 4 December 2021 |
-| Requirement | All VAT-registered taxpayers must generate, store, and share electronic invoices and electronic notes using compliant e-invoicing solutions |
-| Format | XML or PDF/A-3 with embedded XML |
-| Prohibitions | Handwritten invoices prohibited; unstructured electronic invoices prohibited |
-| QR code | Required on simplified (B2C) invoices; optional on standard (B2B) invoices in Phase 1 |
-| Storage | E-invoices must be stored for minimum 6 years |
-
-### 6c. Phase 2 -- Integration Phase [T1]
-
-| Item | Detail |
-|------|--------|
-| Effective date | Rolling waves starting 1 January 2023 |
-| Wave 1 | Taxpayers with annual revenue > SAR 3,000,000,000 (from 1 January 2023) |
-| Wave 2 | Taxpayers with annual revenue > SAR 500,000,000 (from 1 July 2023) |
-| Subsequent waves | Revenue thresholds progressively lowered; ZATCA notifies taxpayers at least 6 months before their go-live date. As at April 2026: Wave 22 (revenue > SAR 1M, deadline 31 Dec 2025), Wave 23 (revenue > SAR 750K, deadline 31 Mar 2026), Wave 24 (revenue > SAR 375K, deadline 30 Jun 2026). Revenue reference years: 2022, 2023, or 2024. |
-| Requirement | E-invoices must be reported to and validated by ZATCA platform (FATOORA) in near-real-time for standard invoices; within 24 hours for simplified invoices |
-| UUID | Each invoice assigned a unique identifier by ZATCA |
-| Cryptographic stamp | ZATCA applies a cryptographic stamp to validated invoices |
-| QR code | Mandatory on ALL invoices (B2B and B2C) in Phase 2 |
-
-### 6d. QR Code Requirements [T1]
-
-The QR code on invoices must encode (at minimum):
-
-| Field | Description |
-|-------|-------------|
-| 1 | Seller's name |
-| 2 | Seller's VAT registration number |
-| 3 | Invoice date and time (timestamp) |
-| 4 | Invoice total (including VAT) |
-| 5 | VAT amount |
-
-For Phase 2, additional fields are required including the cryptographic hash and digital signature.
-
-### 6e. Invoice Types [T1]
-
-| Type | Usage | Requirements |
-|------|-------|-------------|
-| Standard (tax) invoice | B2B transactions and exports | Full details: buyer/seller info, line items, VAT breakdown, sequential numbering |
-| Simplified (tax) invoice | B2C transactions under SAR 1,000 | Reduced requirements: seller info, QR code, total with VAT |
-
-### 6f. Credit Notes and Debit Notes [T1]
-
-Credit notes and debit notes must also be issued electronically and reference the original invoice. They follow the same e-invoicing requirements as the original invoice type.
-
-**Legislation:** VAT Implementing Regulations, Article 54 (credit notes); E-Invoicing Regulation.
-
----
-
-## Step 7: Registration Rules
-
-### 7a. Registration Thresholds [T1]
-
-| Type | Threshold | Legislation |
-|------|-----------|-------------|
-| Mandatory registration | Annual taxable supplies (including imports subject to reverse charge) exceed SAR 375,000 | VAT Law, Article 50(1); IR Article 7 |
-| Voluntary registration | Annual taxable supplies (or eligible expenses) exceed SAR 187,500 | VAT Law, Article 50(3); IR Article 8 |
-| Non-resident mandatory registration | Any taxable supplies in KSA (no threshold) | VAT Law, Article 50(2) |
-| Group registration | Two or more related legal persons may register as a single taxable person | VAT Law, Article 51; IR Article 10 |
-
-### 7b. Deregistration [T1]
-
-| Type | Condition | Legislation |
-|------|-----------|-------------|
-| Mandatory deregistration | Taxable supplies fall below SAR 187,500 for 12 consecutive months | IR Article 13 |
-| Voluntary deregistration | After minimum 12 months of registration, if taxable supplies below SAR 375,000 | IR Article 13 |
-
----
-
-## Step 8: Filing Frequency and Deadlines
-
-### 8a. Filing Periods [T1]
-
-| Frequency | Eligibility | Legislation |
-|-----------|-------------|-------------|
-| Monthly | Annual taxable supplies exceed SAR 40,000,000 | VAT Law, Article 59(2) |
-| Quarterly | Annual taxable supplies of SAR 40,000,000 or less | VAT Law, Article 59(2) |
-
-### 8b. Quarterly Periods [T1]
-
-| Quarter | Period |
-|---------|--------|
-| Q1 | 1 January - 31 March |
-| Q2 | 1 April - 30 June |
-| Q3 | 1 July - 30 September |
-| Q4 | 1 October - 31 December |
-
-### 8c. Due Dates [T1]
-
-| Item | Due Date | Legislation |
-|------|----------|-------------|
-| VAT return filing | Last day of the month following the end of the tax period | VAT Law, Article 60 |
-| VAT payment | Last day of the month following the end of the tax period (same as filing) | VAT Law, Article 60 |
-
-**Example:** For Q1 (Jan-Mar), the return and payment are due by 30 April.
-**Example:** For the month of January (monthly filer), the return and payment are due by 28/29 February.
-
----
-
-## Step 9: Penalties
-
-### 9a. Penalty Schedule [T1]
-
-| Offence | Penalty | Legislation |
-|---------|---------|-------------|
-| Late registration | SAR 10,000 | VAT Law, Article 62 |
-| Late filing of VAT return | 5% to 25% of unpaid VAT for the period | VAT Law, Article 62; IR Article 62 |
-| Late payment of VAT | 5% of unpaid VAT for each month (or part month) of delay | VAT Law, Article 62 |
-| Failure to issue tax invoice / e-invoice | SAR 5,000 to SAR 50,000 per invoice | VAT Law, Article 62; E-Invoicing Regulation |
-| Incorrect VAT return (unintentional) | 50% of the difference between correct and filed tax | VAT Law, Article 62 |
-| Tax evasion | 25% to 200% of evaded tax + potential criminal penalties | VAT Law, Article 62 |
-| Failure to maintain records | SAR 50,000 per instance | VAT Law, Article 62 |
-| Failure to submit information to ZATCA | SAR 1,000 per item (up to SAR 100,000) | VAT Law, Article 62 |
-| E-invoicing non-compliance | Warning for first offence, then SAR 1,000 per invoice, escalating | E-Invoicing Regulation penalties |
-
-### 9b. Voluntary Disclosure [T1]
-
-Taxpayers may submit a voluntary disclosure for errors in previously filed returns:
-- If error results in VAT difference of SAR 5,000 or less: correct in next return
-- If error results in VAT difference of more than SAR 5,000: submit voluntary disclosure form via ZATCA portal
-- Reduced penalties may apply for voluntary disclosure before ZATCA audit
-
-**Legislation:** VAT Implementing Regulations, Article 63.
-
----
-
-## Step 10: Key Thresholds Lookup Table
-
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Mandatory registration | SAR 375,000 annual taxable supplies | Article 50(1) |
-| Voluntary registration | SAR 187,500 annual taxable supplies/expenses | Article 50(3) |
-| Monthly filing | SAR 40,000,000 annual taxable supplies | Article 59(2) |
-| Voluntary disclosure (correction in next return) | SAR 5,000 or less VAT difference | IR Article 63 |
-| Simplified invoice threshold | SAR 1,000 (transaction value) | IR Article 53(7) |
-| Capital asset adjustment (movable) | Input VAT > SAR 250,000, 5-year period | IR Article 51 |
-| Capital asset adjustment (immovable) | Input VAT > SAR 250,000, 10-year period | IR Article 51 |
-| Record retention | 6 years minimum | VAT Law, Article 64 |
-| Housing VAT/RETT relief cap | SAR 1,000,000 (first residential property) | Royal Decree A/84 |
-| Late registration penalty | SAR 10,000 fixed | Article 62 |
-
----
-
-## Step 11: Real Estate Rules
-
-### 11a. Commercial Real Estate [T1]
-
-| Transaction | Treatment | Rate | Legislation |
-|-------------|-----------|------|-------------|
-| Sale of commercial property | Taxable supply | 15% | Article 9 (standard supply) |
-| Lease of commercial property | Taxable supply | 15% | Article 9 |
-| Sale of bare commercial land | Taxable supply | 15% | Article 9 |
-
-### 11b. Residential Real Estate [T2]
-
-| Transaction | Treatment | Rate | Legislation |
-|-------------|-----------|------|-------------|
-| First supply of residential property (within 3 years) | Zero-rated (up to SAR 1,000,000) | 0% | Article 36(3); Royal Decree A/84 housing relief |
-| First supply above SAR 1,000,000 | 15% on amount exceeding the cap | 15% on excess | Housing relief rules |
-| Subsequent supply of residential property | Exempt | Exempt | Article 30 |
-| Lease of residential property | Exempt | Exempt | Article 30 |
-| Sale of residential land (bare) | Exempt from VAT; subject to RETT at 5% | Exempt (VAT) | Real Estate Transaction Tax Law |
-
-**Flag for reviewer: "first supply" determination and the SAR 1,000,000 cap calculation require careful analysis. Confirm whether the supply qualifies.**
-
-### 11c. Real Estate Transaction Tax (RETT) [T1]
-
-From 4 October 2020, real estate transactions exempt from VAT are subject to RETT at 5% of the transaction value. RETT replaced the previous 15% VAT on real estate dispositions that are now exempt.
-
-**Legislation:** Real Estate Transaction Tax Law (Royal Decree A/84).
-
----
-
-## Step 12: Designated Zones
-
-### 12a. Overview [T2]
-
-Certain areas in KSA are designated as "Qualifying Economic Zones" or "Designated Zones" where specific VAT rules apply:
-
-| Rule | Description | Legislation |
-|------|-------------|-------------|
-| Goods within designated zone | Movement of goods within a designated zone is not treated as a supply | IR Article 39 |
-| Goods between designated zones | Transfer of goods between qualifying designated zones may be outside scope of VAT | IR Article 39 |
-| Goods from designated zone to KSA mainland | Treated as an import into KSA; VAT applies | IR Article 39 |
-| Services in designated zone | Standard VAT rules apply to services (no special treatment) | IR Article 39 |
-
-**Flag for reviewer: confirm whether the specific zone qualifies under ZATCA's designated zone rules. Not all free zones automatically qualify.**
-
----
-
-## Step 12A: Recent Changes (April 2025 Amendments and Penalty Amnesty)
-
-### 12Aa. April 2025 VAT Implementing Regulations Amendments [T2]
-
-On 18 April 2025, ZATCA published Board Resolution No. 01-06-24, amending the VAT Implementing Regulations. Key changes:
-
-| Change | Effective Date | Detail |
-|--------|---------------|--------|
-| VAT grouping (Article 10, Para 1) | 15 October 2025 | Updated rules for related entities forming VAT groups |
-| Deemed supplier for electronic marketplaces (Article 47, Para 3) | 1 January 2026 | Digital platforms facilitating sales by non-resident or unregistered suppliers become liable for VAT collection. The platform is treated as having acquired and supplied the goods/services on its own account. Exceptions apply where the non-resident supplier is explicitly the principal supplier and the platform does not set terms, determine consideration, collect payment, handle complaints, or offer promotions. |
-| Transfer of economic activity | Various | Updated rules on going-concern transfers |
-| Special/designated zones | Various | Revised treatment for supplies to or within special zones |
-| Tourist VAT refunds | Various | Updated designated person provisions for administering tourist refunds |
-
-**Flag for reviewer: businesses operating digital platforms or electronic marketplaces must assess deemed supplier obligations before 1 January 2026.**
-
-**Legislation:** Board Resolution No. 01-06-24; PWC Tax Alert May 2025; KPMG Tax Flash April 2025.
-
-### 12Ab. Penalty Waiver / Amnesty Initiative [T1]
-
-ZATCA's penalty cancellation and fine exemption initiative has been extended to **30 June 2026** (per Minister of Finance decision, effective 1 January 2026). The initiative covers:
-
-- Late registration penalties (all tax systems)
-- Late filing penalties (all tax systems)
-- Late payment penalties
-- VAT return correction penalties
-- E-invoicing field inspection violation fines
-
-**Requirements:** Taxpayer must be registered, submit all required returns, and pay the full principal tax liability. The initiative covers VAT, Excise Tax, RETT, WHT, and CIT.
-
-**Legislation:** ZATCA penalty waiver initiative; Minister of Finance decision (December 2025 extension).
-
----
-
-## Step 13: PROHIBITIONS [T1]
-
-- NEVER let AI guess VAT classification -- it is deterministic from facts and legislation
-- NEVER claim input tax on blocked categories (motor vehicles for private use, entertainment for non-business purposes)
-- NEVER claim input tax on expenses related to exempt supplies without apportionment
-- NEVER treat residential rental as taxable -- it is EXEMPT
-- NEVER treat lease of commercial property as exempt -- it is TAXABLE at 15%
-- NEVER issue non-electronic invoices -- all invoices must be e-invoices since 4 December 2021
-- NEVER zero-rate a domestic supply without specific legislation supporting the zero-rating
-- NEVER confuse zero-rated (input tax claimable) with exempt (input tax NOT claimable)
-- NEVER file a return using GST-inclusive figures -- Saudi VAT returns use VAT-EXCLUSIVE amounts for the base
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
-- NEVER apply former 5% rate to supplies made after 1 July 2020 (subject to transitional rules for pre-existing contracts)
-- NEVER ignore the SAR 5,000 voluntary disclosure threshold -- errors above this amount require a separate disclosure
-- NEVER treat a sale of residential property as exempt if it is the first supply within 3 years -- it may be zero-rated
-- NEVER assume all free zones are designated zones -- each must be specifically designated by ZATCA
-
----
-
-## Step 14: Edge Case Registry
-
-### EC1 -- Real Estate: First Supply vs Subsequent Supply [T2]
-
-**Situation:** Developer sells a new apartment to a buyer. The building was completed 2 years ago and this is the first sale.
-**Resolution:** This is a "first supply" of residential real estate within 3 years of completion. Zero-rated up to SAR 1,000,000 of the purchase price. VAT at 15% applies on any amount exceeding SAR 1,000,000. Buyer must be a Saudi citizen purchasing their first home for the government relief to apply.
-**Legislation:** VAT Law, Article 36(3); Housing VAT relief program (Ministry of Housing/ZATCA).
-**Flag for reviewer:** Confirm first-supply status and eligibility for housing relief.
-
-### EC2 -- Designated Zone: Goods Transfer to Mainland [T1]
-
-**Situation:** Company in a designated zone sells goods to a customer on the KSA mainland. Goods are shipped from the designated zone.
-**Resolution:** Treated as an import into KSA. VAT at 15% applies. The goods are treated as if imported from outside KSA. Buyer accounts for VAT (at customs or via reverse charge mechanism depending on arrangement).
-**Legislation:** VAT Implementing Regulations, Article 39.
-
-### EC3 -- E-Invoicing: Phase 2 Non-Compliance [T1]
-
-**Situation:** A taxpayer in Phase 2 wave issues invoices without connecting to ZATCA's FATOORA platform for validation.
-**Resolution:** Non-compliant. Invoices without ZATCA validation are not valid tax invoices. Buyer cannot claim input tax based on non-validated invoices. Seller faces penalties (warning for first offence, then SAR 1,000+ per invoice).
-**Legislation:** E-Invoicing Regulation; ZATCA penalties schedule.
-
-### EC4 -- Oil and Gas Sector [T3]
-
-**Situation:** Oil company makes supplies under a government concession arrangement.
-**Resolution:** ESCALATE. The oil and gas sector has special rules regarding government concessions, deemed supplies, and the treatment of crude oil transfers. These rules are complex and require specialized knowledge.
-**Legislation:** VAT Implementing Regulations, various sector-specific provisions.
-**Action:** Refer to specialized oil & gas tax consultant.
-
-### EC5 -- Related Party Transactions [T2]
-
-**Situation:** Company sells goods to a related company at below-market value. Both are registered for VAT.
-**Resolution:** ZATCA may adjust the value to open market value for VAT purposes under the related party rules. If the recipient cannot claim full input tax, ZATCA will deem the supply at market value. If both parties are fully taxable, no adjustment (net effect zero).
-**Legislation:** VAT Law, Article 26 (related party supplies); IR Article 26.
-**Flag for reviewer:** Confirm related party status and whether both parties are fully taxable.
-
-### EC6 -- GCC Customs Union: Goods Moving Between KSA and UAE [T2]
-
-**Situation:** KSA registered company sells goods to UAE registered company. Goods are physically shipped from KSA to UAE.
-**Resolution:** Under the transitional GCC rules (until full GCC electronic services system is implemented), the export from KSA is zero-rated if proof of export is obtained. The UAE customer accounts for import VAT in UAE. Standard export documentation required.
-**Legislation:** Unified VAT Agreement for GCC States; transitional provisions.
-**Flag for reviewer:** GCC transitional rules are evolving. Confirm current treatment with latest ZATCA guidance.
-
-### EC7 -- Tourist Refund Scheme [T1]
-
-**Situation:** Tourist purchases goods in KSA and requests a VAT refund on departure.
-**Resolution:** Saudi Arabia launched a VAT refund scheme for tourists. Eligible tourists can claim refunds on purchases from participating retailers. The refund is processed through an approved operator (Planet). Minimum purchase amount and conditions apply.
-**Legislation:** ZATCA tourist refund scheme regulations.
-
-### EC8 -- Profit Margin Scheme [T2]
-
-**Situation:** Dealer in secondhand goods (e.g., used cars) wants to account for VAT only on the profit margin rather than the full selling price.
-**Resolution:** The KSA VAT law includes a profit margin scheme for eligible goods. VAT is calculated on the difference between the purchase price and the selling price (margin). The dealer must maintain records of both prices. Not all goods qualify.
-**Legislation:** VAT Implementing Regulations, Article 44 (profit margin scheme).
-**Flag for reviewer:** Confirm eligibility for profit margin scheme.
-
-### EC9 -- Deemed Supplies [T1]
-
-**Situation:** Registered person transfers business assets for non-business purposes (e.g., personal use), or provides free goods/services to employees above de minimis thresholds.
-**Resolution:** Treated as a deemed supply. Output VAT at 15% must be accounted for on the open market value of the goods/services. This applies to gifts of goods valued above SAR 200 per recipient per year.
-**Legislation:** VAT Law, Article 14 (deemed supplies); IR Article 14.
-
-### EC10 -- Credit Notes and Adjustments [T1]
-
-**Situation:** Registered person issues a credit note to a customer for a price reduction or returned goods.
-**Resolution:** Reduce Field 1 (or appropriate sales field) by the credit note amount. Output VAT is reduced accordingly. Credit notes must be e-invoiced with reference to the original invoice. Enter the net adjustment in Field 16 if correcting a prior period.
-**Legislation:** VAT Implementing Regulations, Article 54 (credit notes).
-
-### EC11 -- Government Entities as Taxable Persons [T2]
-
-**Situation:** A government entity undertakes commercial activities (e.g., leasing commercial property, providing commercial services) alongside its sovereign functions.
-**Resolution:** Government entities are taxable persons for their commercial (non-sovereign) activities. They must register for VAT if their taxable commercial supplies exceed SAR 375,000. Sovereign activities remain outside the scope of VAT.
-**Legislation:** VAT Law, Article 10 (government entities); IR Article 9.
-**Flag for reviewer:** Determine which activities are commercial vs. sovereign.
-
-### EC12 -- Pre-1 July 2020 Contracts (Transitional Rules) [T1]
-
-**Situation:** A contract was signed before 11 May 2020 at 5% VAT. Supplies continued after 1 July 2020.
-**Resolution:** Supplies made after 1 July 2020 under contracts entered before 11 May 2020 may continue at 5% until 30 June 2021 (or contract renewal/amendment date, whichever is earlier). After 30 June 2021, all supplies are at 15% regardless of contract date.
-**Legislation:** Transitional provisions under Royal Decree A/638; ZATCA guidelines on transitional rules.
-
----
-
-## Step 15: Comparison with EU VAT
-
-| Feature | Saudi Arabia VAT | EU VAT (Standard) |
-|---------|------------------|--------------------|
-| Rate structure | Single rate: 15% (plus zero and exempt) | Multiple rates per member state (standard, reduced, super-reduced, zero) |
-| Rate history | 5% (2018-2020), 15% (2020-present) | Varies by state, generally stable |
-| Return basis | VAT-exclusive amounts | VAT-exclusive amounts (most states) |
-| E-invoicing | Mandatory (Phase 1 generation, Phase 2 integration with ZATCA) | Varies by state (mandatory in Italy, France upcoming, voluntary in most) |
-| QR code | Mandatory on all invoices (Phase 2) | Generally not required (some states for B2C) |
-| Reverse charge | On imports of services from non-registered non-residents | On intra-EU B2B services and specific domestic supplies |
-| Registration threshold | SAR 375,000 (~EUR 93,000) mandatory | Varies by state (EUR 0 to EUR 85,000) |
-| Capital goods adjustment | 5 years (movable), 10 years (immovable); only if input VAT > SAR 250,000 | 5 years (movable), 10-20 years (immovable); varies by state |
-| Profit margin scheme | Available for eligible secondhand goods | Available (margin scheme for travel agents, auctioneers, secondhand goods) |
-| Real estate | First supply zero-rated (up to SAR 1,000,000 cap), subsequent exempt, commercial taxable | Varies by state; generally new buildings taxable, used buildings exempt (option to tax) |
-| Tourist refunds | Available via approved operators | Available via global blue/planet etc. |
-| Group registration | Available for related entities | Available in most member states |
-| GCC customs union | Transitional rules between implementing states | Full single market with intra-community rules |
-| Filing frequency | Monthly (>SAR 40M) or quarterly | Monthly (most states) or quarterly |
-| Penalty for late filing | 5%-25% of unpaid tax | Varies by state |
-| Fiscal representative | Required for non-resident without establishment | Required in many states for non-EU businesses |
-
----
-
-## Step 16: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Licensed Saudi tax consultant must confirm before filing.
-```
-
-When Claude identifies a [T3] situation, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed Saudi tax consultant. Document gap.
+Net = Gross / 1.15
+VAT = Gross - Net  (or equivalently, Gross x 15/115)
 ```
 
 ---
 
-## Step 17: Test Suite
+## Section 6 — Tier 2 catalogue (compressed)
 
-### Test 1 -- Standard Domestic Sale at 15% [T1]
+### 6.1 Motor vehicle vs commercial vehicle
 
-**Input:** KSA registered company sells goods to KSA customer. Invoice: SAR 10,000 + SAR 1,500 VAT = SAR 11,500 total. Standard rated.
-**Expected output:** Field 1 = SAR 10,000. Field 2 = SAR 1,500. No other sales fields affected.
+*Pattern:* petrol station, parking, car rental, vehicle maintenance. *Why insufficient:* vehicle type unknown. Motor car expenses are blocked; vehicles essential to business (delivery fleet, taxi) may be claimable. *Default:* 0% recovery. *Question:* "Is this for a passenger car (blocked) or a vehicle essential to the business (delivery, transport)?"
 
-### Test 2 -- Export Sale (Zero-Rated) [T1]
+### 6.2 Entertainment vs staff welfare
 
-**Input:** KSA registered company exports goods to a customer in India. Invoice: SAR 50,000 (zero-rated). Proof of export obtained.
-**Expected output:** Field 6 = SAR 50,000. No VAT. Fields 1-4 and 7 = no entry for this transaction.
+*Pattern:* restaurant, cafe, catering, event. *Why insufficient:* client entertainment is blocked; staff meals at workplace may be claimable. *Default:* block. *Question:* "Was this client entertainment (blocked) or a staff meal at the workplace?"
 
-### Test 3 -- Standard Domestic Purchase with Input Recovery [T1]
+### 6.3 Ambiguous SaaS billing entities
 
-**Input:** KSA registered company (fully taxable) purchases office equipment from local supplier. Invoice: SAR 5,000 + SAR 750 VAT = SAR 5,750 total.
-**Expected output:** Field 8 = SAR 5,000. Field 9 = SAR 750. Full input recovery.
+*Pattern:* Google, Microsoft, AWS where the billing entity may be a KSA-registered entity or non-resident. *Default:* reverse charge (non-resident). *Question:* "Could you check the invoice for the legal entity name and TIN? If the supplier has a KSA TIN, this is domestic 15%; if not, reverse charge applies."
 
-### Test 4 -- Import of Services via Reverse Charge [T1]
+### 6.4 Round-number incoming transfers from owner-named counterparties
 
-**Input:** KSA registered company (fully taxable) purchases consulting services from a UK firm not registered in KSA. Invoice: SAR 20,000 (no VAT charged).
-**Expected output:** Field 12 = SAR 20,000. Field 13 = SAR 3,000 (output VAT at 15%). Input VAT claim = SAR 3,000 (included in Field 19). Net effect = zero.
+*Pattern:* large round credit from a name matching the client's name. *Default:* exclude as owner injection. *Question:* "The SAR X transfer from [name] — is this a customer payment, your own money, or a loan?"
 
-### Test 5 -- Exempt Sale: Residential Rental [T1]
+### 6.5 Incoming transfers from foreign counterparties
 
-**Input:** KSA registered property company earns SAR 8,000/month from residential rental.
-**Expected output:** Field 7 = SAR 8,000. No output VAT. Input tax on expenses related to residential rental: NOT claimable.
+*Pattern:* foreign bank, foreign currency, international SWIFT. *Default:* domestic 15%. *Question:* "Was this a service to an overseas customer (potentially zero-rated)? Does the customer have a KSA establishment?"
 
-### Test 6 -- Blocked Input Tax: Employee Entertainment [T1]
+### 6.6 Insurance type determination
 
-**Input:** KSA registered company hosts a staff party. Catering bill SAR 15,000 + SAR 2,250 VAT.
-**Expected output:** Field 8 = SAR 15,000. Field 9 = SAR 0 (VAT BLOCKED -- entertainment for employees). Input tax NOT recoverable. The SAR 2,250 is a cost to the business.
+*Pattern:* insurance premium payment to Tawuniya, MedGulf, etc. *Default:* exclude (exempt — life insurance default). *Question:* "Is this life/family takaful (exempt) or general/motor/health insurance (standard rated, input claimable)?"
 
-### Test 7 -- First Supply of Residential Property (Zero-Rated) [T2]
+### 6.7 Residential vs commercial property
 
-**Input:** Developer sells new apartment (completed 1 year ago, first sale) to eligible Saudi citizen. Price: SAR 1,100,000.
-**Expected output:** First SAR 1,000,000 is zero-rated (Field 5 = SAR 1,000,000). Remaining SAR 100,000 is taxable at 15% (Field 1 = SAR 100,000, Field 2 = SAR 15,000). Flag for reviewer: confirm first supply status and buyer eligibility.
+*Pattern:* rent payment, Ejar platform. *Default:* residential (exempt). *Question:* "Is this a commercial property (VAT claimable with e-invoice) or residential (exempt)?"
 
-### Test 8 -- Goods Imported at Customs [T1]
+### 6.8 Mixed-use phone, internet
 
-**Input:** KSA registered company imports machinery from Germany. Customs value: SAR 100,000. VAT of SAR 15,000 paid at border.
-**Expected output:** Field 10 = SAR 100,000. Field 11 = SAR 15,000. Input VAT of SAR 15,000 recoverable (fully taxable business).
+*Pattern:* STC, Mobily, Zain personal lines. *Default:* 0% if mixed. *Question:* "Is this a dedicated business line or mixed-use? What business percentage?"
 
-### Test 9 -- Related Party Transaction Below Market Value [T2]
+### 6.9 Cash withdrawals
 
-**Input:** Company A (registered) sells goods to Company B (registered, related party). Invoice: SAR 10,000. Open market value: SAR 25,000. Both companies are fully taxable.
-**Expected output:** Since both parties are fully taxable, no adjustment required by ZATCA (net effect is zero). Field 1 = SAR 10,000. Field 2 = SAR 1,500. Flag for reviewer: confirm both parties' fully taxable status.
+*Pattern:* ATM, cash withdrawal. *Default:* exclude as owner drawing. *Question:* "What was the cash used for?"
 
-### Test 10 -- Voluntary Disclosure: Error Above SAR 5,000 [T1]
+### 6.10 Outgoing transfers to individuals
 
-**Input:** Company discovers it underreported output VAT by SAR 8,000 in a previous period.
-**Expected output:** Since the VAT difference exceeds SAR 5,000, a separate voluntary disclosure must be filed via ZATCA portal. Cannot simply correct in the next return. Field 16 adjustment in a future return is NOT sufficient.
+*Pattern:* outgoing to private-looking names. *Default:* exclude as salary/drawings. *Question:* "Was this a contractor payment (with e-invoice), salary, or personal transfer?"
 
-### Test 11 -- Credit Note Issued [T1]
+### 6.11 GOSI deductions
 
-**Input:** KSA registered company issues credit note to customer for SAR 2,000 + SAR 300 VAT for returned goods. Original sale was in the same period.
-**Expected output:** Reduce Field 1 by SAR 2,000. Reduce Field 2 by SAR 300. Net sales for the period are reduced accordingly. If correcting a prior period, use Field 16 = -SAR 300.
+*Pattern:* GOSI debit. *Default:* exclude (statutory, out of scope). No question needed.
 
-### Test 12 -- Deemed Supply: Business Asset for Personal Use [T1]
+### 6.12 Zakat vs VAT
 
-**Input:** Registered person takes company laptop (original cost SAR 4,000) for personal use. Market value at time of transfer: SAR 2,500.
-**Expected output:** Deemed supply at market value. Field 1 = SAR 2,500. Field 2 = SAR 375 (15% VAT on deemed supply value). Output VAT must be accounted for.
+*Pattern:* ZATCA payment that could be zakat or VAT. *Default:* exclude both — neither is a supply. *Question:* "Was this a VAT payment, a zakat payment, or both?"
 
 ---
 
-## Step 18: Out of Scope -- Zakat and Income Tax (Reference Only) [T3]
+## Section 7 — Excel working paper template (KSA-specific)
 
-This skill does not compute Zakat or Corporate Income Tax. The following is reference information only. Escalate to qualified consultant.
+The base specification is in `vat-workflow-base` Section 3. This section provides the KSA-specific overlay.
 
-- **Zakat:** 2.5% on Zakat base (net assets) for Saudi/GCC-owned entities
-- **Corporate Income Tax (CIT):** 20% on adjusted profit for non-Saudi/non-GCC shareholders
-- **Withholding Tax (WHT):** 5%-20% on payments to non-residents (royalties, technical services, rent, etc.)
-- **Real Estate Transaction Tax (RETT):** 5% on real estate transactions (separate from VAT)
-- **Excise Tax:** 50%-100% on tobacco, soft drinks, energy drinks, sweetened beverages
+### Sheet "Transactions"
+
+Columns A–L per the base. Column H ("Field code") accepts: 1, 5, 6, 7, 8, 10, 12, 14, 15, RC. Use blank for excluded transactions. For reverse-charge transactions, enter "RC" in column H.
+
+### Sheet "Field Summary"
+
+One row per field. Column A is the field number, column B is the description, column C is the value computed via formula.
+
+```
+Output:
+| 1  | Standard-rated sales | =SUMIFS(Transactions!E:E, Transactions!H:H, "1") |
+| 2  | VAT on standard-rated sales | =C[1_row]*0.15 |
+| 5  | Zero-rated domestic sales | =SUMIFS(Transactions!E:E, Transactions!H:H, "5") |
+| 6  | Exports | =SUMIFS(Transactions!E:E, Transactions!H:H, "6") |
+| 7  | Exempt sales | =SUMIFS(Transactions!E:E, Transactions!H:H, "7") |
+| 12 | Reverse charge imports | =SUMIFS(Transactions!E:E, Transactions!H:H, "RC") |
+| 13 | VAT on reverse charge | =C[12_row]*0.15 |
+
+Input:
+| 8  | Standard-rated purchases | =SUMIFS(Transactions!E:E, Transactions!H:H, "8") |
+| 9  | VAT on standard-rated purchases | =C[8_row]*0.15 |
+| 10 | Imports at Customs | =SUMIFS(Transactions!E:E, Transactions!H:H, "10") |
+| 11 | VAT paid at Customs | =C[10_row]*0.15 |
+| 14 | Zero-rated purchases | =SUMIFS(Transactions!E:E, Transactions!H:H, "14") |
+| 15 | Exempt purchases | =SUMIFS(Transactions!E:E, Transactions!H:H, "15") |
+
+Totals:
+| 18 | Total output VAT | =C[2_row]+C[13_row] |
+| 19 | Total input VAT | =C[9_row]+C[11_row] |
+| 20 | Net VAT due | =C[18_row]-C[19_row] |
+```
+
+### Sheet "Return Form"
+
+```
+Field 20 = Field 18 - Field 19
+
+IF Field 20 > 0:
+  VAT payable to ZATCA
+ELSE:
+  Excess input tax (refundable or carry forward)
+```
+
+### Color and formatting conventions
+
+Per the xlsx skill: blue for hardcoded values, black for formulas, green for cross-sheet references, yellow background for rows where Default? = "Y".
+
+### Mandatory recalc step
+
+After building the workbook, run:
+
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/saudi-vat-<period>-working-paper.xlsx
+```
 
 ---
 
-## Contribution Notes
+## Section 8 — Saudi bank statement reading guide
 
-If you are adapting this skill for another jurisdiction:
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these KSA-specific patterns.
 
-1. Replace all legislation references with the equivalent national legislation.
-2. Replace all field numbers with the equivalent fields on your jurisdiction's VAT return form.
-3. Replace VAT rates with your jurisdiction's standard, reduced, and zero rates.
-4. Replace all SAR thresholds with your jurisdiction's equivalents in local currency.
-5. Replace the e-invoicing requirements with your jurisdiction's electronic invoicing rules.
-6. Replace blocked categories with your jurisdiction's equivalent non-deductible categories.
-7. Have a qualified tax consultant in your jurisdiction validate every T1 rule before publishing.
-8. Add your own edge cases to the Edge Case Registry.
-9. Run all test suite cases against your jurisdiction's rules.
-10. Update the comparison table to reflect differences from your jurisdiction's perspective.
+**Al Rajhi Bank statement format.** Al Rajhi online banking exports use CSV or Excel with DD/MM/YYYY (Gregorian) dates. Some statements also show Hijri dates. Common columns: Transaction Date, Description, Debit, Credit, Balance. The description field contains the counterparty name, sometimes in Arabic. SADAD bill payments show the biller name (e.g., "SADAD-STC", "SADAD-SEC"). SWIFT transfers show the beneficiary name separately.
 
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+**Saudi National Bank (SNB/NCB) statement format.** SNB exports use CSV with columns: Date, Description, Reference, Debit, Credit, Balance. Card purchases show the merchant name. Mada debit card payments show "MADA POS" followed by the merchant name. SWIFT transfers show the beneficiary bank and name.
+
+**Riyad Bank statement format.** Riyad Bank online exports: Date, Narrative, Reference, Debit, Credit, Balance. The narrative field is the primary source for counterparty identification.
+
+**Revolut / Wise Business.** ISO date format. Clear counterparty names. Separate fee lines — exclude fee lines (exempt financial service).
+
+**Internal transfers and exclusions.** Own-account transfers between the client's banks. Labelled "transfer between accounts", "internal", "حوالة داخلية". Always exclude.
+
+**WPS (Wage Protection System) entries.** Salary payments via WPS appear as "WPS", "SALARY TRANSFER", "رواتب", or individual employee names. Always exclude — employment, out of scope.
+
+**SADAD entries.** SADAD is the national bill payment system. SADAD debits show the biller name (e.g., "SADAD-STC" = STC telecom bill, "SADAD-SEC" = electricity bill). Map to the appropriate category using Section 3 based on the biller name after the "SADAD-" prefix.
+
+**Mada entries.** Mada is the national debit card network. Entries show "MADA" or "MADA POS" followed by the merchant name and city. The merchant name is the key for counterparty identification.
+
+**Arabic language descriptions.** Some bank statement descriptions appear in Arabic. Common terms: مشتريات (purchases), مبيعات (sales), رواتب (salaries), إيجار (rent), كهرباء (electricity), مياه (water), اتصالات (telecom). Treat as the English equivalent.
+
+**Foreign currency transactions.** Convert to SAR at the Saudi Central Bank (SAMA) exchange rate on the transaction date. Note the rate in column L (Notes). SAR is pegged to USD at approximately 3.75.
+
+**GOSI entries.** GOSI (General Organization for Social Insurance) debits are statutory employer/employee contributions. Always out of scope. Exclude immediately.
+
+**Zakat and tax entries.** ZATCA debits may be VAT payments, zakat payments, or both. Both are government payments, not supplies. Exclude. Do not confuse a VAT payment with a VAT-inclusive purchase.
+
+---
+
+## Section 9 — Onboarding fallback (only when inference fails)
+
+### 9.1 Entity type and trading name
+*Inference rule:* "مؤسسة" (mu'assasa) = sole establishment; "شركة ذات مسؤولية محدودة" or "LLC" = limited liability company. *Fallback question:* "Are you a sole establishment, LLC, or other entity type?"
+
+### 9.2 TIN and CR number
+*Inference rule:* TIN may appear on e-invoices. CR number may appear on bank statement header. *Fallback question:* "What is your VAT TIN (15-digit, starts and ends with 3)? What is your CR number?"
+
+### 9.3 Filing period and frequency
+*Inference rule:* first and last transaction dates. Monthly if revenue > SAR 40M, otherwise quarterly. *Fallback question:* "Which period does this cover? Monthly (which month) or quarterly (Q1/Q2/Q3/Q4)?"
+
+### 9.4 Industry and sector
+*Inference rule:* counterparty mix, sales patterns. *Fallback question:* "In one sentence, what does the business do?"
+
+### 9.5 Employees
+*Inference rule:* WPS, GOSI, salary transfers. *Fallback question:* "Do you have employees?"
+
+### 9.6 Exempt supplies
+*Inference rule:* residential rental income, financial service income. *Fallback question:* "Do you make any VAT-exempt sales (residential rental, financial services, life insurance)?" *If yes and significant, R-SA-1 may fire.*
+
+### 9.7 International customers
+*Inference rule:* foreign bank credits, SWIFT inflows. *Fallback question:* "Do you have customers outside KSA? Are they businesses? Do any have a KSA establishment?"
+
+### 9.8 E-invoicing phase
+*Inference rule:* ZATCA wave notifications based on revenue. *Fallback question:* "Are you in Phase 2 of e-invoicing (integrated with FATOORA)? If not, which wave are you assigned to?"
+
+### 9.9 Carried-forward excess input tax
+*Inference rule:* not inferable from a single period. Always ask. *Question:* "Do you have any excess input tax carried forward from the previous period?"
+
+---
+
+## Section 10 — Reference material
+
+### Validation status
+
+This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structure. It supersedes v1.0/v1.1.
+
+### Sources
+
+**Primary legislation:**
+1. VAT Law (Royal Decree No. A/113, dated 2/11/1438H) — Articles 2, 9, 29-37, 46-51, 59-60, 62, 64
+2. VAT Implementing Regulations (Board of Directors Resolution No. 3839) — Articles 7-10, 29-37, 39, 46-51, 53-54, 59, 62-63
+3. E-Invoicing Regulation (issued 4/12/1442H)
+4. Royal Decree A/638 (rate increase to 15%)
+5. Royal Decree A/84 (housing VAT/RETT relief)
+6. Unified VAT Agreement for the GCC States
+7. Board Resolution No. 01-06-24 (April 2025 IR amendments)
+
+**ZATCA guidance:**
+8. ZATCA VAT return completion guide
+9. ZATCA e-invoicing implementation guides (Phase 1, Phase 2)
+10. ZATCA penalty waiver initiative guidance
+
+**Other:**
+11. ZATCA portal — https://zatca.gov.sa
+12. FATOORA e-invoicing platform
+13. SAMA exchange rates
+
+### Known gaps
+
+1. The supplier pattern library covers the most common Saudi and international counterparties but does not cover every local business.
+2. The worked examples are drawn from a hypothetical IT consultant in Riyadh. They do not cover construction, oil & gas, real estate, or F&B specifically.
+3. GCC inter-state supply rules (transitional provisions) are simplified — the GCC electronic service system is not yet fully operational.
+4. The housing relief (first residential property, SAR 1,000,000 cap) is referred to R-SA-6 for reviewer confirmation rather than fully deterministic.
+5. Real Estate Transaction Tax (RETT) at 5% for exempt real estate is referenced but not computed.
+6. The deemed supplier rules for electronic marketplaces (effective 1 January 2026) are refused (R-SA-7) rather than handled.
+7. Arabic-language patterns in the supplier library are limited to major brands — more Arabic variants should be added.
+
+### Change log
+
+- **v2.0 (April 2026):** Full rewrite to align with Malta v2.0 structure. Quick reference with field table, e-invoicing phases summary, and conservative defaults at top (Section 1). Supplier pattern library with Saudi vendors (Al Rajhi, SNB, Riyad Bank, STC, Mobily, SEC, SWCC, Panda/Carrefour, Jarir, SAUDIA, ZATCA) in Section 3. Six worked examples (Section 4). Compressed Tier 1 rules (Section 5). Tier 2 catalogue (Section 6). Excel working paper (Section 7). Saudi bank statement guide with Al Rajhi/SNB formats, SADAD/Mada patterns, Arabic descriptions (Section 8). Onboarding fallback (Section 9). References (Section 10).
+- **v1.1 (April 2026):** Updated with April 2025 IR amendments, penalty amnesty extension, e-invoicing wave 24.
+- **v1.0 (April 2026):** Initial standalone skill covering VAT Law, field mappings, reverse charge, blocked categories, e-invoicing, registration, penalties.
+
+### Self-check (v2.0 of this document)
+
+1. Quick reference at top with field table and conservative defaults: yes (Section 1).
+2. E-invoicing phases summary in quick reference: yes (Section 1).
+3. Supplier library as literal lookup tables: yes (Section 3, 14 sub-tables).
+4. Worked examples: yes (Section 4, 6 examples).
+5. Tier 1 rules compressed: yes (Section 5, 14 rules).
+6. Tier 2 catalogue compressed: yes (Section 6, 12 items).
+7. Excel template specification with mandatory recalc: yes (Section 7).
+8. Onboarding as fallback only: yes (Section 9, 9 items).
+9. All 7 KSA-specific refusals present: yes (Section 2, R-SA-1 through R-SA-7).
+10. Reference material at bottom: yes (Section 10).
+11. Entertainment block explicit: yes (Section 5.9 + Example 3).
+12. Motor vehicle block explicit: yes (Section 5.9 + Example 5).
+13. Reverse charge for non-resident services explicit: yes (Example 1 + Section 5.5).
+14. Zero-rated export and "no KSA establishment" test explicit: yes (Example 2 + Section 5.2).
+15. Al Rajhi/SNB bank statement format guide with SADAD/Mada patterns: yes (Section 8).
+16. Arabic language descriptions covered: yes (Section 8).
+17. Penalty amnesty referenced: yes (Section 5.12).
+
+## End of Saudi Arabia VAT Return Skill v2.0
+
+This skill is incomplete without the companion file loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture). Do not attempt to produce a VAT return without both files loaded.
 
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax consultant, CPA, or equivalent practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

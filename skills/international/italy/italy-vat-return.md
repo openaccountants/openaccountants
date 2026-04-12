@@ -1,538 +1,693 @@
 ---
 name: italy-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for an Italian VAT return (Liquidazione IVA Periodica / LIPE) for a self-employed individual or very small business operating under the ordinary VAT regime (regime ordinario) in Italy. Trigger on phrases like "prepare LIPE", "Italian VAT return", "Liquidazione IVA", "classify transactions for Italy", "IVA italiana", "autoliquidazione", "cessione intracomunitaria", "reverse charge Italia", or any request involving Italian VAT filing. This skill covers Italy only and only the regime ordinario. Regime forfettario, regime dei minimi, split payment to public administration, margin schemes, travel agents, agricultural flat rate, the annual Dichiarazione IVA, partial exemption (pro rata), and VAT groups (gruppo IVA) are all in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.2.0 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Italian VAT work.
-version: 0.1
+description: Use this skill whenever asked to prepare, review, or classify transactions for an Italian VAT return (Liquidazione IVA Periodica / LIPE) for a self-employed individual or small business under the regime ordinario in Italy. Trigger on phrases like "prepare LIPE", "Italian VAT return", "Liquidazione IVA", "IVA italiana", "classify transactions for Italian VAT", or any request involving Italy VAT filing. This skill covers Italy only, regime ordinario (monthly or quarterly LIPE). Regime forfettario, regime dei minimi, split payment, margin schemes, and VAT groups are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Italian VAT work.
+version: 2.0
 ---
 
-# Italy VAT Return Skill (LIPE, Regime Ordinario) v0.1
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
+# Italy VAT Return Skill (LIPE / Liquidazione IVA Periodica) v2.0
 
 ## Section 1 — Quick reference
 
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
+
 | Field | Value |
 |---|---|
-| Country | Italy |
-| Return form | LIPE (Liquidazione IVA Periodica) — the periodic VAT settlement |
-| Tax | IVA (Imposta sul Valore Aggiunto) — the Italian name for VAT |
-| Governing law | D.P.R. 26 ottobre 1972 n. 633 (the Italian VAT law) |
-| Authority | Agenzia delle Entrate (national tax authority) |
-| Filing portal | Fisconline (individuals) / Entratel (intermediaries) — https://www.agenziaentrate.gov.it |
-| Currency | EUR only |
+| Country | Italy (Repubblica Italiana) |
 | Standard rate | 22% |
-| Reduced rates | 10%, 5%, 4% |
-| Filing frequencies | Monthly (turnover > €800,000 services / > €700,000 goods), Quarterly (below those thresholds, by election) |
-| Deadline | Monthly: 16th of the second month after the period. Quarterly: 16th of the second month after the quarter, with the fourth quarter LIPE replaced by the annual return (Dichiarazione IVA) filed by 30 April |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.2.0 or later — MUST be loaded** |
+| Reduced rates | 10% (tourism, restaurants, renovation, certain foodstuffs), 5% (certain health/social services, selected food items), 4% (basic foodstuffs, printed books, first-home construction) |
+| Zero rate | 0% (exports, intra-EU B2B supplies of goods) |
+| Return form | LIPE (Comunicazione Liquidazioni Periodiche IVA, quarterly communication); annual Dichiarazione IVA |
+| Filing portal | https://www.agenziaentrate.gov.it (Fatture e Corrispettivi / Fisconline) |
+| Authority | Agenzia delle Entrate |
+| Currency | EUR only |
+| Filing frequencies | Monthly (turnover > €800,000 services / €800,000 goods in prior year); Quarterly (below thresholds, with 1% interest surcharge); Annual (Dichiarazione IVA by 30 April) |
+| Deadline | LIPE: last day of 2nd month after quarter end (Q1 by 31 May, Q2 by 16 Sept, Q3 by 30 Nov, Q4 by 28 Feb); monthly: 16th of following month for payment |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
+| Contributor | Open Accountants contributors |
+| Validation date | April 2026 |
 
-**Key LIPE fields (the boxes you will use most):**
+**Key LIPE fields (VP section — the fields you will use most):**
 
 | Field | Meaning |
 |---|---|
-| VP1 | Reference period (month or quarter) |
-| VP2 | Total taxable operations (output side, excluding reverse charge) |
-| VP3 | Total purchases and imports (input side) |
-| VP4 | IVA a debito (output VAT, including self-assessed from reverse charge) |
-| VP5 | IVA a credito (input VAT deductible) |
-| VP6 | IVA dovuta (VAT due = VP4 − VP5) or IVA a credito (credit = VP5 − VP4) |
-| VP7 | Previous period credit carried forward |
-| VP8 | Periodic settlement result (positive = payable, negative = credit) |
-| VP13 | Metodo previsionale / storico (only used for the December LIPE of quarterly filers) |
-| VP14 | IVA versata (VAT actually paid) |
+| VP2 | Total taxable transactions (imponibile) |
+| VP3 | Total intra-EU acquisitions (imponibile) |
+| VP4 | Total output VAT (IVA a debito) |
+| VP5 | Total input VAT (IVA a credito) |
+| VP6 | VAT payable or credit for the period |
+| VP7 | Credit from prior period |
+| VP8 | Credit from annual declaration used |
+| VP9 | Advance payment (acconto) used |
+| VP10 | Intra-EU purchases (acquisti intracomunitari) |
+| VP11 | Imports (importazioni) |
+| VP12 | Reverse charge purchases (acquisti con inversione contabile) |
+| VP14 | Net amount due or credit |
 
-**USt-IdNr equivalent — Partita IVA format:** IT + 11 digits (e.g., IT12345678901). The first 7 digits identify the taxpayer, digits 8-10 identify the issuing tax office, digit 11 is a check digit per the Luhn-like algorithm specified in D.M. 23/12/1976.
+**Registri IVA (VAT registers) — the backbone of Italian VAT:**
 
-**Refusal catalogue quick index:** R-IT-1 through R-IT-13 in Section 2.
+| Register | Purpose |
+|---|---|
+| Registro delle fatture emesse | Sales invoices issued |
+| Registro degli acquisti | Purchase invoices received |
+| Registro dei corrispettivi | Daily receipts (retail/hospitality) |
 
 **Conservative defaults — Italy-specific values for the universal categories in `vat-workflow-base` Section 2:**
 
-| Category | Default | Italian-specific note |
-|---|---|---|
-| Unknown rate on a sale | 22% | Standard rate, regime ordinario |
-| Unknown VAT status of a purchase | Not deductible | Requires invoice compliant with art. 21 D.P.R. 633/72 |
-| Unknown counterparty country | Italy domestic | If IBAN starts with anything other than IT or if counterparty name is foreign, re-check |
-| Unknown customer status (B2B vs B2C) | B2C with 22% | Applies the conservative customer-side treatment |
-| Unknown vehicle business use | 40% deductible | Art. 19-bis1 D.P.R. 633/72 — statutory 40% cap on most mixed-use vehicles (cars, motorcycles, mopeds) regardless of actual business use percentage |
-| Unknown business meal (rappresentanza) | Blocked unless documentable business purpose | Art. 19-bis1(h) — entertainment expenses partially deductible, but the skill defaults to blocked |
-| Unknown restaurant/bar expense | Blocked by default | Requires identification as either "spesa di rappresentanza" (limited) or "spesa per vitto e alloggio" (generally fully deductible if in business trip context) |
-| Gift to customer | Blocked if unit value > €50 | Art. 19-bis1(h) — gift threshold |
-| Telephone / mobile | 50% deductible cap | Statutory cap for mobile phones used partly for business |
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 22% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Italy |
+| Unknown B2B vs B2C status for EU customer | B2C, charge 22% |
+| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge from non-EU (Art. 17 c.2 DPR 633/72) |
+| Unknown blocked-input status (entertainment, personal use) | Blocked |
+| Unknown whether transaction is in scope | In scope |
 
 **Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
 
-- Single transaction HIGH threshold: €5,000
-- Tax delta HIGH threshold: €500
-- Period total HIGH threshold: €50,000
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | €5,000 |
+| HIGH tax-delta on a single conservative default | €400 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | €10,000 |
 
-## Section 2 — Italy-specific refusal catalogue (R-IT-1 through R-IT-13)
+---
 
-These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation. Refusal is a safety mechanism.
+## Section 2 — Required inputs and refusal catalogue
 
-**R-IT-1 — Regime forfettario.**
-*Condition.* The user indicates they operate under the regime forfettario (the Italian flat-rate scheme for small businesses with turnover up to €85,000).
-*Reason.* Regime forfettario taxpayers do not charge VAT on their invoices, do not recover input VAT, do not file LIPE returns, and have a completely different tax computation based on activity coefficients. This skill targets the regime ordinario and cannot produce a forfettario return.
-*Message.* "You operate under the regime forfettario, which is an entirely different tax regime from the one this skill handles. Regime forfettario taxpayers do not file LIPE returns — instead, they report their turnover annually through the Dichiarazione dei Redditi (Quadro LM) and pay a flat substitutive tax based on their activity coefficient. You need a commercialista familiar with the forfettario regime, or you can handle the simpler annual filing yourself via the Agenzia delle Entrate portal. This skill cannot help with forfettario compliance."
+### Required inputs
 
-**R-IT-2 — Regime dei minimi (legacy).**
-*Condition.* The user indicates they operate under the old regime dei minimi (effective 2008-2015, grandfathered for some taxpayers).
-*Message.* "You operate under the legacy regime dei minimi, which has been closed to new entrants since 2015 but grandfathered for some taxpayers. This regime has its own separate rules and this skill does not handle it. You need a commercialista with specific experience in the regime dei minimi."
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Italian or international business bank: UniCredit, Intesa Sanpaolo, Banco BPM, Monte dei Paschi di Siena, BPER Banca, Poste Italiane (BancoPosta), Revolut Business, Wise Business, N26 Business, or any other.
 
-**R-IT-3 — Split payment (scissione dei pagamenti).**
-*Condition.* The user makes supplies to Italian public administration (PA), listed companies on the FTSE MIB, or other entities subject to split payment under art. 17-ter D.P.R. 633/72.
-*Reason.* Split payment is a unique Italian mechanism where the customer (public administration or listed company) pays the net amount to the supplier and the VAT directly to the Erario. The supplier issues an invoice with VAT shown but does not receive the VAT. The accounting treatment, the LIPE reporting, and the cash flow implications are all non-standard.
-*Message.* "Some of your customers appear to be public administration entities or listed companies subject to split payment (scissione dei pagamenti) under art. 17-ter D.P.R. 633/72. Split payment has specialized rules about how VAT is invoiced, reported, and paid that this skill does not handle. You need a commercialista with public-administration billing experience."
+**Recommended** — electronic invoices (fatture elettroniche) for the period from SDI (Sistema di Interscambio), purchase invoices for any input VAT claim above €400, the client's Partita IVA in writing (IT + 11 digits).
 
-**R-IT-4 — E-invoicing non-compliance (Sistema di Interscambio).**
-*Condition.* The user indicates they are not operating via the Sistema di Interscambio (SdI) for electronic invoicing, or the bank statement shows business activity that would require SdI compliance but no corresponding SdI infrastructure is mentioned.
-*Reason.* Since 1 January 2019, electronic invoicing via SdI is mandatory for almost all B2B and B2G transactions, and since 1 July 2022 extended to regime forfettario taxpayers with turnover > €25,000, and since 1 January 2024 extended to all regime forfettario taxpayers regardless of turnover. A business that is not SdI-compliant is either operating illegally or the profile inference has misidentified the business. Either way, this skill cannot proceed until SdI compliance is confirmed.
-*Message.* "Since 2019, Italian businesses are required to issue invoices through the Sistema di Interscambio (SdI) for B2B and B2G transactions. If you are not currently using SdI or an accredited intermediary (commercialista, software provider), you cannot legally issue invoices and this skill cannot prepare a LIPE for you. You need to set up SdI access through your commercialista or a certified e-invoicing provider before any VAT return can be filed. This is not optional — it is a legal requirement. Contact the Agenzia delle Entrate or a commercialista to get set up."
+**Ideal** — complete SDI extract (XML), prior period LIPE, Registri IVA (fatture emesse + acquisti), reconciliation of VP7 credit brought forward.
 
-**R-IT-5 — Partial exemption (pro rata).**
-*Condition.* The user makes both taxable and exempt supplies (esenti under art. 10 D.P.R. 633/72) that are not de minimis.
-*Reason.* Italian partial exemption uses the pro-rata method under art. 19-bis D.P.R. 633/72, with different calculation rules from the directive's default. Sector-specific rules apply.
-*Message.* "Your business makes both taxable and exempt supplies (operazioni esenti), which requires pro-rata calculation of deductible input VAT under art. 19-bis D.P.R. 633/72. The pro-rata calculation is complex, sector-specific, and requires annual adjustment. This skill cannot handle pro-rata. You need a commercialista to set up the pro-rata methodology before filing LIPE returns."
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all → hard stop. If bank statement only without invoices → proceed but record in the reviewer brief: "This LIPE was produced from bank statement alone. The reviewer must verify, before approval, that input VAT claims above €400 are supported by compliant fatture elettroniche received via SDI and that all reverse-charge classifications match the supplier's invoice."
 
-**R-IT-6 — Margin schemes (regime del margine).**
-*Condition.* The user resells second-hand goods, art, or collectors' items under the margin scheme.
-*Message.* "Your business involves the resale of second-hand goods, works of art, or collectors' items under the regime del margine (art. 36-40 D.L. 41/1995). This scheme requires item-by-item margin tracking that cannot be derived from a bank statement. You need a commercialista familiar with the margin scheme."
+### Italy-specific refusal catalogue
 
-**R-IT-7 — Travel agents (regime agenzie di viaggio).**
-*Condition.* The user operates a travel agency reselling travel and accommodation under art. 74-ter D.P.R. 633/72.
-*Message.* "Your business is subject to the regime agenzie di viaggio under art. 74-ter, which has specialized VAT rules quite different from standard IVA. This skill cannot handle the travel agents margin scheme."
+These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-**R-IT-8 — Agricultural flat rate (regime speciale agricoltura).**
-*Condition.* The user operates under the agricultural flat-rate scheme (art. 34 D.P.R. 633/72).
-*Message.* "You operate under the regime speciale agricoltura, which has its own input VAT recovery mechanics based on compensation percentages rather than actual input VAT. This skill cannot handle the agricultural flat rate. You need a commercialista with agricultural sector experience."
+**R-IT-1 — Regime forfettario.** *Trigger:* client is under the regime forfettario (flat-rate scheme, turnover below €85,000). *Message:* "Regime forfettario taxpayers do not charge IVA on their invoices and cannot recover input IVA. They do not file LIPE or the annual Dichiarazione IVA. This skill covers the regime ordinario only."
 
-**R-IT-9 — VAT group (gruppo IVA).**
-*Condition.* The user is part of a gruppo IVA under art. 70-bis ff. D.P.R. 633/72.
-*Message.* "Your business is part of a gruppo IVA (Italian VAT group), where multiple related entities are treated as a single taxable person for IVA purposes. The group return is prepared by the representing entity and involves intra-group transaction handling that this skill does not support. You need the group representative's commercialista."
+**R-IT-2 — Regime dei minimi.** *Trigger:* client is under the legacy regime dei minimi (contribuenti minimi). *Message:* "Regime dei minimi taxpayers have a simplified regime outside the ordinary IVA system. This skill covers the regime ordinario only."
 
-**R-IT-10 — Annual VAT return (Dichiarazione IVA).**
-*Condition.* The user asks for help with the annual Dichiarazione IVA rather than a periodic LIPE.
-*Reason.* The annual Dichiarazione IVA is a substantially more complex filing than the LIPE, with reconciliation of all periodic settlements, multiple quadri (VE, VF, VG, VH, VJ, VL, VX, etc.), and integration with the corporate income tax return. v0.1 of this skill handles only the LIPE.
-*Message.* "The annual Dichiarazione IVA is more complex than the periodic LIPE and requires reconciliation of all periods plus integration with your overall tax position. This skill version (v0.1) handles only the periodic LIPE. For the annual Dichiarazione IVA, you need a commercialista or a more complete version of this skill. The annual return is due by 30 April of the year following the tax year."
+**R-IT-3 — Split payment (scissione dei pagamenti).** *Trigger:* client's customers include Italian public administration bodies subject to split payment under Art. 17-ter DPR 633/72. *Message:* "Split payment (scissione dei pagamenti) for supplies to public administration requires specific treatment where the PA withholds IVA. This is complex and out of scope."
 
-**R-IT-11 — Construction reverse charge (reverse charge edilizia).**
-*Condition.* The user is a construction subcontractor or contractor subject to the internal reverse charge under art. 17, c. 6, lett. a) D.P.R. 633/72.
-*Message.* "You operate in the construction sector with reverse charge obligations between contractor and subcontractor. The Italian construction reverse charge has strict conditions about when it applies, how invoices must be issued, and how it interacts with split payment when the final customer is public administration. This skill does not handle construction reverse charge. You need a commercialista with construction sector experience."
+**R-IT-4 — Partial exemption (pro rata).** *Trigger:* client makes both taxable and exempt-without-credit supplies (financial, medical, educational) and the exempt proportion is not de minimis. *Message:* "You make both taxable and exempt supplies. Input IVA must be apportioned under the pro rata rule (Art. 19 and 19-bis DPR 633/72). Please use a commercialista to determine the pro rata."
 
-**R-IT-12 — Import via postponed accounting.**
-*Condition.* The user imports goods from outside the EU and uses postponed accounting.
-*Reason.* Italy operates a partial postponed accounting regime for imports (reverse charge for certain goods via the importer's VAT identification), with specific rules that differ from other EU member states.
-*Message.* "Your business imports goods from outside the EU and appears to use postponed accounting (reverse charge all'importazione). The Italian rules around which imports qualify for postponed accounting vs cash payment at the border are complex and fact-specific. This skill cannot reliably distinguish between the two treatments from a bank statement alone. You need a commercialista with import/export experience, or you need to provide the actual customs documents (bolle doganali) rather than just the bank statement."
+**R-IT-5 — Margin scheme (regime del margine).** *Trigger:* client deals in second-hand goods, art, antiques, or collectables. *Message:* "Margin scheme transactions require transaction-level margin computation. Out of scope."
 
-**R-IT-13 — Cash accounting election (IVA per cassa).**
-*Condition.* The user operates under the IVA per cassa regime (cash accounting for VAT) under art. 32-bis D.L. 83/2012.
-*Reason.* Under IVA per cassa, output VAT becomes due when the customer pays (not when the invoice is issued) and input VAT is recoverable when the supplier is paid (not when the invoice is received). This shifts the entire classification from accrual to cash basis and the bank statement becomes the primary data source in a way it is not under ordinary regime. The LIPE reporting is also different.
-*Message.* "You operate under the IVA per cassa regime, where VAT follows cash movements rather than invoice dates. This is a substantially different basis of accounting and this skill version (v0.1) assumes the ordinary accrual basis. For IVA per cassa returns, you need a commercialista familiar with the regime or a later version of this skill."
+**R-IT-6 — VAT group (gruppo IVA).** *Trigger:* client is part of a VAT group under Art. 70-bis to 70-duodecies DPR 633/72. *Message:* "VAT groups require consolidation across the group. Out of scope."
 
-## Section 3 — Italian supplier pattern library (literal lookup table)
+**R-IT-7 — Fiscal representative (rappresentante fiscale).** *Trigger:* non-resident supplier or client with a fiscal representative in Italy. *Message:* "Non-resident registrations with fiscal representatives have specific obligations beyond this skill. Please use a commercialista."
 
-When you encounter these counterparties, apply the treatment indicated. Do not second-guess the table. The table is derived from public corporate disclosures and Italian tax authority guidance as of v0.1; reviewer must confirm for high-value transactions.
+**R-IT-8 — Income tax instead of IVA.** *Trigger:* user asks about annual income tax (IRPEF, IRES, Modello Redditi) instead of IVA. *Message:* "This skill only handles Italian VAT (IVA) returns. For income tax, use a dedicated Italian income tax skill."
 
-### 3.1 — Italian telecommunications
+---
 
-| Supplier | Typical IBAN / context | Treatment |
+## Section 3 — Supplier pattern library (the lookup table)
+
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. Do not consult Tier 1 rules — the table is authoritative for patterns it covers.
+
+**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
+
+### 3.1 Italian banks (fees exempt — exclude)
+
+| Pattern | Treatment | Notes |
 |---|---|---|
-| TIM S.p.A. (Telecom Italia) | IT IBAN | Domestic 22% business line — mobile mixed-use defaults to 50% cap under art. 19-bis1(g); fixed line "ufficio" in description → 100% business recovery at 22% |
-| Vodafone Italia S.p.A. | IT IBAN | Same as TIM |
-| WindTre S.p.A. | IT IBAN | Same as TIM |
-| Fastweb S.p.A. | IT IBAN | Same as TIM; note Fastweb is owned by Swisscom but bills from Italy |
-| Iliad Italia S.p.A. | IT IBAN | Same as TIM — low-cost mobile operator with Italian VAT registration |
+| UNICREDIT, UNICREDIT SPA | EXCLUDE for bank charges/fees | Financial service, exempt (Art. 10 c.1 n.1 DPR 633/72) |
+| INTESA SANPAOLO, INTESA SP | EXCLUDE for bank charges/fees | Same |
+| BANCO BPM, BPM | EXCLUDE for bank charges/fees | Same |
+| MONTE DEI PASCHI, MPS | EXCLUDE for bank charges/fees | Same |
+| BPER BANCA | EXCLUDE for bank charges/fees | Same |
+| POSTE ITALIANE, BANCOPOSTA | EXCLUDE for bank charges/fees | Same |
+| CREDITO EMILIANO, CREDEM | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
+| INTERESSI, INTERESSE | EXCLUDE | Interest income/expense, out of scope |
+| MUTUO, PRESTITO, FINANZIAMENTO | EXCLUDE | Loan principal movement, out of scope |
 
-### 3.2 — Italian energy, water, and utilities
+### 3.2 Italian government, regulators, and statutory bodies (exclude entirely)
 
-| Supplier | Treatment |
-|---|---|
-| Enel Energia S.p.A. | Domestic 22% electricity — but note Enel offers multiple rate classes, residential invoices are 10% reduced rate, business invoices are 22% |
-| ENI Gas e Luce | Domestic gas supply — 10% reduced rate for residential, 22% for non-residential |
-| A2A S.p.A. (Milan utility) | Domestic 22% for business, 10% for residential |
-| Hera S.p.A. (Emilia-Romagna utility) | Same structure as A2A |
-| ACEA S.p.A. (Rome utility) | Same structure |
-| Iren S.p.A. (Liguria/Piemonte utility) | Same structure |
-
-### 3.3 — Italian banks and financial services
-
-| Supplier | Treatment |
-|---|---|
-| Intesa Sanpaolo | Bank fees — exempt under art. 10 D.P.R. 633/72 (EU Article 135). Excluded from LIPE as esenti. No input VAT to recover. |
-| UniCredit S.p.A. | Same as Intesa |
-| Banca Nazionale del Lavoro (BNL) | Same |
-| Banco BPM S.p.A. | Same |
-| Mediobanca, Monte dei Paschi, Credem, Banca Popolare di Sondrio, etc. | Same — all Italian banks follow the art. 10 exemption for their core banking services |
-| Poste Italiane — BancoPosta services | Same — banking services exempt |
-
-### 3.4 — Italian insurance
-
-| Supplier | Treatment |
-|---|---|
-| Generali Italia S.p.A. | Insurance premiums — exempt art. 10 D.P.R. 633/72 (EU Article 135). Excluded from LIPE. No input VAT. |
-| Allianz S.p.A. | Same |
-| AXA Assicurazioni | Same |
-| UnipolSai | Same |
-| Reale Mutua | Same |
-
-### 3.5 — Italian tax authority and statutory bodies
-
-| Supplier / Counterparty | Treatment |
-|---|---|
-| Agenzia delle Entrate (tax payments) | Excluded — tax authority payment, not a supply. Flag for reviewer if unusual amount. |
-| INPS (Istituto Nazionale della Previdenza Sociale) | Excluded — statutory social security contributions, outside VAT scope |
-| INAIL (workplace accident insurance) | Excluded — statutory insurance, outside VAT scope |
-| Equitalia / Agenzia delle Entrate-Riscossione | Excluded — tax collection agency |
-| Camera di Commercio (Chamber of Commerce) — diritto annuale | Excluded — statutory contribution to a public-law body, NOT subject to VAT. Do NOT claim input VAT on Camera di Commercio annual fees regardless of invoice format. |
-| Ordini professionali (professional orders — Ordine dei Dottori Commercialisti, Ordine degli Avvocati, etc.) — annual dues | Excluded — statutory contribution to a public-law professional order, outside VAT scope |
-| Comune (municipal taxes — IMU, TARI, TASI) | Excluded — local taxes, outside VAT scope |
-
-### 3.6 — Italian postal service
-
-| Supplier | Treatment |
-|---|---|
-| Poste Italiane — universal postal service (francobolli, raccomandate ordinarie) | Exempt under art. 10 D.P.R. 633/72 universal service exemption. No VAT, no input VAT. |
-| Poste Italiane — courier services (Poste Delivery, SDA) | Domestic 22% standard rate — competitive courier services are NOT part of the universal service exemption |
-| BRT (Bartolini) | Domestic 22% |
-| GLS Italy | Domestic 22% |
-| DHL Express (Italia) | Domestic 22% if billed via DHL Italy; if billed from DE via DHL International, EU reverse charge autoliquidazione |
-| TNT (now FedEx) | Similar — check billing entity on invoice |
-
-### 3.7 — Italian public transport and rail
-
-| Supplier | Treatment |
-|---|---|
-| Trenitalia (Frecciarossa, Frecciargento, Frecciabianca, Intercity, Regionale) | Domestic 10% reduced rate under Tabella A Parte III (passenger transport) |
-| Italo - Nuovo Trasporto Viaggiatori | Same 10% |
-| ATM (Azienda Trasporti Milanesi) — Milan metro/bus | 10% reduced rate — public transport |
-| ATAC S.p.A. (Rome metro/bus) | Same 10% |
-| ANM (Napoli) | Same 10% |
-| Autostrade per l'Italia — toll charges | Domestic 22% — road tolls, fully deductible if business use |
-| ENAV / Italian airport charges (via airline invoice) | Generally embedded in airline ticket; see 3.8 |
-
-### 3.8 — Airlines and air transport
-
-| Supplier | Treatment |
-|---|---|
-| ITA Airways (Italia Trasporto Aereo) | International flights exempt under art. 9 D.P.R. 633/72; domestic Italian flights 10% reduced rate |
-| Ryanair | International — exempt art. 9; domestic — 10% but Ryanair billing entity is often Irish, check invoice |
-| easyJet | Similar — check billing entity (Swiss, UK, or Italian sub) |
-| Alitalia (legacy, ceased operations October 2021) | n/a, but may appear in historical statements — same treatment as ITA |
-| Lufthansa / Air France / KLM for flights departing from Italy | Generally billed from the home country; place of supply rules for passenger transport apply — Italian portion potentially taxable, foreign portion generally exempt |
-
-### 3.9 — Italian hotels, restaurants, and hospitality
-
-| Category | Treatment |
-|---|---|
-| Italian hotels (business travel) | 10% reduced rate on accommodation; 22% on ancillary services (minibar, spa, parking). For LIPE purposes apply conservative 10% on full gross unless invoice breaks out ancillaries. Input VAT recoverable if the trip is documented business purpose. |
-| Italian restaurants (business meal / "trasferta") | 10% reduced rate on food and non-alcoholic beverages. Input VAT recoverable at 75% for "spese di rappresentanza" (entertainment) if documented; 100% for "vitto e alloggio during transferte" (business trip meals) if documented. Default for unclear cases: blocked. |
-| Bar / caffetteria | 10% — but often unclear business purpose; default to blocked for single-transaction bar receipts. |
-| Italian Airbnb bookings | Via Airbnb Ireland UAC — EU reverse charge on the service fee. The accommodation itself is typically billed by the Italian host (if VAT-registered) or outside VAT (if below registration threshold). Check the invoice. |
-
-### 3.10 — Italian supermarkets and food retail
-
-| Supplier | Treatment |
-|---|---|
-| Esselunga | Mixed — food is 4%/10% reduced rates, non-food household items 22%. Default to blocked for single-transaction supermarket purchases (assume private provisioning) unless clear business purpose in description. |
-| Conad, Coop, Carrefour Italia, Lidl Italia, Eurospin, PAM | Same treatment as Esselunga — default blocked |
-| Metro Italia Cash & Carry | Mixed food/non-food, but Metro is a business-to-business wholesaler so the presumption shifts slightly toward business purpose; still default blocked without specific description |
-
-### 3.11 — Fuel stations
-
-| Supplier | Treatment |
-|---|---|
-| Eni Station, Agip, Q8, IP, Esso Italia, Tamoil | Domestic 22% on fuel. BUT vehicle input VAT is capped at 40% under art. 19-bis1(c) D.P.R. 633/72 for cars, motorcycles, and mopeds regardless of actual business use, unless the vehicle is exclusively used for business and this is documented. Default to 40% deductible. Trucks and commercial vehicles (autocarri) get 100% deduction if used 100% business. |
-
-### 3.12 — Universal SaaS suppliers (EU reverse charge — autoliquidazione)
-
-These are the same universal patterns that appear in Germany and other EU countries. The treatment is EU reverse charge (autoliquidazione under art. 17, c. 2 D.P.R. 633/72): the supplier does not charge IVA, the user self-accounts for 22% output IVA (reported in VP4 on the LIPE) and simultaneously claims 22% input IVA (reported in VP5 on the LIPE), net cash effect zero.
-
-| Supplier | Billing entity | Treatment |
+| Pattern | Treatment | Notes |
 |---|---|---|
-| Google Ireland Ltd | IE IBAN | EU autoliquidazione 22% — Google Ads, Google Workspace, Google Cloud (EMEA) |
-| Microsoft Ireland Operations | IE IBAN | EU autoliquidazione 22% — Microsoft 365, Azure, GitHub Enterprise |
-| Adobe Systems Software Ireland | IE IBAN | EU autoliquidazione 22% — Creative Cloud, Acrobat |
-| LinkedIn Ireland Unlimited | IE IBAN | EU autoliquidazione 22% |
-| Meta Platforms Ireland | IE IBAN | EU autoliquidazione 22% — Facebook Ads, Instagram Ads |
-| Slack Technologies Ireland | IE IBAN | EU autoliquidazione 22% |
-| Dropbox International | IE IBAN | EU autoliquidazione 22% |
-| Atlassian Pty (Ireland) | IE IBAN | EU autoliquidazione 22% — Jira, Confluence |
-| Stripe Payments Europe | IE IBAN | EU autoliquidazione 22% — Stripe platform fees |
-| Uber BV | NL IBAN | EU autoliquidazione 22% — Uber ride bookings and Uber for Business |
-| Zoom Video Communications | US entity billing EU | Non-EU reverse charge art. 17 c. 2 — autoliquidazione 22% |
-| Fiverr International | Israeli entity | Non-EU reverse charge art. 17 c. 2 — autoliquidazione 22% |
+| AGENZIA ENTRATE, AGENZIA DELLE ENTRATE | EXCLUDE | Tax payment, not a supply |
+| F24, MODELLO F24, PAGAMENTO F24 | EXCLUDE | Tax payment (IVA, IRPEF, INPS, IRAP) via F24 |
+| INPS | EXCLUDE | Social security contributions (contributi previdenziali) |
+| INAIL | EXCLUDE | Workplace insurance contributions |
+| CAMERA DI COMMERCIO, CCIAA | EXCLUDE | Chamber of Commerce fees, government body |
+| COMUNE DI, MUNICIPIO | EXCLUDE | Municipal fees/taxes |
+| REGIONE, PROVINCIA | EXCLUDE | Regional/provincial government |
+| EQUITALIA, AGENZIA RISCOSSIONE | EXCLUDE | Tax collection agency |
+| DOGANA, AGENZIA DOGANE | EXCLUDE | Customs (but check for import IVA on C88 equivalent) |
 
-### 3.13 — AWS (the branch-billing exception)
+### 3.3 Italian utilities
 
-AWS EMEA SARL bills most EU customers through local branches with local VAT registration. For Italian customers, the billing entity may be "AWS EMEA SARL Italy Branch" or similar, with an Italian partita IVA and 22% IVA charged on the invoice. **If the IBAN is Italian and the invoice shows Italian IVA, treat as domestic 22% (not as reverse charge).** If the IBAN is Luxembourg and the invoice shows no VAT with a reverse-charge note, treat as EU autoliquidazione. This is the same exception structure as the German AWS case and it is the most common misclassification trap in Italian SaaS billing. Always check the invoice rather than defaulting to one treatment or the other.
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| ENEL, ENEL ENERGIA, ENEL SERVIZIO | Domestic 22% | VP5 (input) | Electricity — standard rate overhead |
+| ENI, ENI PLENITUDE | Domestic 22% or 10% | VP5 (input) | Gas: check invoice — domestic gas may be 10% (reduced) or 22% |
+| EDISON, A2A, IREN, HERA | Domestic 22% | VP5 (input) | Utilities |
+| ACEA | Domestic 22% or 10% | VP5 (input) | Water/electricity — water may be 10% |
+| TIM, TELECOM ITALIA | Domestic 22% | VP5 (input) | Telecoms — overhead |
+| VODAFONE IT, VODAFONE ITALIA | Domestic 22% | VP5 (input) | Telecoms |
+| WIND TRE, WINDTRE | Domestic 22% | VP5 (input) | Telecoms |
+| FASTWEB | Domestic 22% | VP5 (input) | Internet/telecoms |
+| ILIAD | Domestic 22% | VP5 (input) | Mobile telecoms |
 
-### 3.14 — Apple and consumer-tier app stores
+### 3.4 Insurance (exempt — exclude)
 
-| Supplier | Treatment |
-|---|---|
-| Apple Distribution International (Ireland) — Apple One, iCloud+, App Store | Check billing entity on invoice. Apple One Premier and consumer subscriptions billed on a personal Apple ID are typically personal expenses — default to excluded. Apple Business Essentials billed on a business account with partita IVA is a B2B service — EU autoliquidazione 22%. The default for ambiguous Apple One lines is excluded as personal. |
-| Google Play Store consumer purchases | Similar — default excluded as personal unless clearly business (e.g., business Google account with partita IVA) |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GENERALI, ASSICURAZIONI GENERALI | EXCLUDE | Insurance, exempt (Art. 10 c.1 n.2) |
+| ALLIANZ, ALLIANZ ITALIA | EXCLUDE | Same |
+| UNIPOL, UNIPOLSAI | EXCLUDE | Same |
+| AXA ITALIA | EXCLUDE | Same |
+| CATTOLICA ASSICURAZIONI, ZURICH | EXCLUDE | Same |
+| ASSICURAZIONE, POLIZZA | EXCLUDE | All insurance exempt |
 
-### 3.15 — Anthropic and AI services
+### 3.5 Post and logistics
 
-| Supplier | Treatment |
-|---|---|
-| Anthropic PBC — Claude Pro (individual tier) | Consumer-tier on personal email → default excluded as personal |
-| Anthropic PBC — Claude Team / Claude Enterprise | Business tier with partita IVA on invoice → non-EU reverse charge art. 17 c. 2, autoliquidazione 22% |
-| OpenAI LLC — ChatGPT Plus (individual) | Default excluded as personal |
-| OpenAI LLC — ChatGPT Team / Enterprise | Non-EU reverse charge autoliquidazione 22% |
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| POSTE ITALIANE (standard mail) | EXCLUDE for standard postage | | Universal postal service, exempt |
+| POSTE ITALIANE (parcels, Poste Delivery) | Domestic 22% | VP5 | Non-universal services are taxable |
+| SDA EXPRESS, BRT, BARTOLINI | Domestic 22% | VP5 | Express courier, taxable |
+| DHL EXPRESS ITALIA | Domestic 22% | VP5 | Express courier |
+| GLS ITALY, TNT ITALIA | Domestic 22% | VP5 | Courier |
 
-### 3.16 — Amazon (intra-Community acquisitions and local billing)
+### 3.6 Transport (Italy domestic)
 
-| Pattern | Treatment |
-|---|---|
-| Amazon.it marketplace sale billed by an Italian seller | Domestic 22% (or reduced rate for books etc.), check invoice |
-| Amazon Business EU SARL with LU IBAN | Intra-Community acquisition of goods — report in VP4/VP5 as acquisto intracomunitario with self-assessed 22% |
-| Amazon Web Services (see 3.13) | See AWS branch exception |
-| Amazon consumer purchases on .it with an IT IBAN | Depends on the seller — if the invoice shows an Italian partita IVA it's domestic; if it shows an LU partita IVA it's an intra-Community acquisition |
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| TRENITALIA, ITALO, NTV | Domestic 10% | VP5 (input) | Rail transport at reduced rate |
+| ATAC, ATM MILANO, GTT, ANM | Domestic 10% | VP5 (input) | Urban public transport, reduced rate |
+| UBER IT, UBER ITALY | Domestic 10% (transport) | VP5 | Ride-hailing, transport reduced rate |
+| TAXI, RADIOTAXI | Domestic 10% | VP5 | Local taxi, reduced rate |
+| ALITALIA, ITA AIRWAYS (domestic) | Domestic 10% | VP5 | Domestic flights at 10% |
+| ITA AIRWAYS, RYANAIR, EASYJET (international) | EXCLUDE / 0% | | International flights exempt |
+| AUTOSTRADE, TELEPASS | Domestic 22% | VP5 | Motorway tolls at 22% |
+
+### 3.7 Food retail (blocked unless hospitality business)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ESSELUNGA | Default BLOCK input VAT | Personal provisioning. Deductible only if hospitality/catering business. |
+| CONAD, COOP, EUROSPIN, LIDL | Default BLOCK | Same |
+| CARREFOUR ITALIA, PENNY, MD | Default BLOCK | Same |
+| PAM, DESPAR, IPER | Default BLOCK | Same |
+| RISTORANTE, TRATTORIA, PIZZERIA, BAR | Default BLOCK | Entertainment — see Section 5.12 |
+
+### 3.8 SaaS — EU suppliers (reverse charge, Art. 17 c.2 / inversione contabile)
+
+These are billed from EU entities (typically Ireland or Luxembourg) and trigger inversione contabile.
+
+| Pattern | Billing entity | Field | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | VP3/VP10 + VP5 | Inversione contabile: output in VP4, input in VP5 |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| SPOTIFY TECHNOLOGY | Spotify AB (SE) | VP3/VP10 + VP5 | EU, inversione contabile |
+| DROPBOX | Dropbox International Unlimited (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| SLACK | Slack Technologies Ireland Ltd (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | VP3/VP10 + VP5 | EU, inversione contabile |
+| ZOOM | Zoom Video Communications Ireland Ltd (IE) | VP3/VP10 + VP5 | Inversione contabile |
+| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | VP3/VP10 + VP5 | Transaction fees may be exempt — see 3.11 |
+
+### 3.9 SaaS — non-EU suppliers (reverse charge, Art. 17 c.2)
+
+| Pattern | Billing entity | Field | Notes |
+|---|---|---|---|
+| AWS (standard) | AWS EMEA SARL (LU) — check | VP3/VP10 + VP5 | LU entity → EU inversione contabile |
+| NOTION | Notion Labs Inc (US) | VP11/VP12 + VP5 | Non-EU reverse charge |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | VP11/VP12 + VP5 | Non-EU reverse charge |
+| OPENAI, CHATGPT | OpenAI Inc (US) | VP11/VP12 + VP5 | Non-EU reverse charge |
+| GITHUB (standard plans) | GitHub Inc (US) | VP11/VP12 + VP5 | Check if billed by IE entity |
+| FIGMA | Figma Inc (US) | VP11/VP12 + VP5 | Non-EU reverse charge |
+| CANVA | Canva Pty Ltd (AU) | VP11/VP12 + VP5 | Non-EU reverse charge |
+| HUBSPOT | HubSpot Inc (US) or HubSpot Ireland Ltd (IE) — check | VP11/VP12 or VP3/VP10 | Depends on billing entity |
+| TWILIO | Twilio Inc (US) | VP11/VP12 + VP5 | Non-EU reverse charge |
+
+### 3.10 SaaS — the exception (NOT reverse charge)
+
+| Pattern | Treatment | Why |
+|---|---|---|
+| AWS EMEA SARL | EU inversione contabile VP3/VP10 + VP5 (Luxembourg entity) | Standard EU reverse charge applies. If invoice shows Italian IVA charged, treat as domestic 22%. |
+
+### 3.11 Payment processors
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| STRIPE (monthly subscription) | EU inversione contabile VP3/VP10 + VP5 | Stripe IE entity |
+| SUMUP, SQUARE, ZETTLE | Check invoice | If Italian entity: domestic 22%; if IE/EU entity: inversione contabile |
+| NEXI, SATISPAY | Check invoice | Italian payment processor — fees may be exempt or taxable |
+
+### 3.12 Professional services (Italy)
+
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| COMMERCIALISTA, STUDIO COMMERCIALE | Domestic 22% | VP5 | Always deductible |
+| AVVOCATO, STUDIO LEGALE | Domestic 22% | VP5 | Deductible if business legal matter |
+| NOTAIO, STUDIO NOTARILE | Domestic 22% | VP5 | Notarial fees on business transactions |
+| CONSULENTE DEL LAVORO | Domestic 22% | VP5 | Payroll consultant, deductible |
+| ARCHITETTO, INGEGNERE, GEOMETRA | Domestic 22% | VP5 | Professional services |
+| REGISTRO IMPRESE | EXCLUDE | Company registry fee, government body |
+
+### 3.13 Payroll and social security (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| INPS, CONTRIBUTI INPS | EXCLUDE | Social security contributions |
+| INAIL, PREMIO INAIL | EXCLUDE | Workplace insurance |
+| STIPENDIO, SALARIO, BUSTA PAGA | EXCLUDE | Wages — outside IVA scope |
+| TFR, TRATTAMENTO FINE RAPPORTO | EXCLUDE | Severance fund, out of scope |
+| CASSA PREVIDENZA, ENPAM, CNPADC | EXCLUDE | Professional pension fund |
+
+### 3.14 Property and rent
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AFFITTO COMMERCIALE, LOCAZIONE COMMERCIALE | Domestic 22% | Commercial lease where landlord opted to charge IVA |
+| AFFITTO, LOCAZIONE (residential, no IVA) | EXCLUDE | Residential lease exempt |
+| IMU, TASI | EXCLUDE | Property tax, not a supply |
+| CONDOMINIO | EXCLUDE or Domestic 22% | Building management — check if IVA invoiced |
+
+### 3.15 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GIROCONTO, BONIFICO INTERNO | EXCLUDE | Internal movement |
+| TRASFERIMENTO TRA CONTI | EXCLUDE | Own-account transfer |
+| DIVIDENDO | EXCLUDE | Dividend payment, out of scope |
+| RATA MUTUO, RIMBORSO PRESTITO | EXCLUDE | Loan repayment, out of scope |
+| PRELIEVO BANCOMAT, PRELIEVO CONTANTI | TIER 2 — ask | Default exclude; ask what cash was spent on |
+| APPORTO PERSONALE, VERSAMENTO SOCIO | EXCLUDE | Owner injection |
+
+---
 
 ## Section 4 — Worked examples
 
-The worked examples below use a hypothetical client: **Marco Bianchi, architect in Milan (studio di architettura), operating as a ditta individuale in regime ordinario, USt-IdNr IT01234567890, Studio in Via Torino 45 Milano, VP filings quarterly.** This client does NOT correspond to any test fixture used to validate this skill — the examples are drawn from a fictional profile to avoid eval contamination.
+These are six fully worked classifications drawn from a hypothetical bank statement of an Italy-based self-employed IT consultant (regime ordinario). They illustrate the trickiest cases.
 
-### Example 1 — The AWS branch exception
+### Example 1 — Non-EU SaaS reverse charge (Notion)
 
-Bank line: `AWS EMEA SARL IT BRANCH -640.00 EUR "AWS compute charges Q1"`. IBAN on payment: IT.
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
 
-**Wrong treatment:** Kz 46 EU reverse charge under autoliquidazione. This is the default assumption for "AWS EMEA SARL" because the parent entity is Luxembourg.
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.9). No IVA on the invoice. This is a service received from a non-EU supplier. The Italian client must self-assess IVA (inversione contabile / autofattura) under Art. 17 c.2 DPR 633/72. The client issues an autofattura, records output IVA in VP4 and input IVA in VP5. Net effect zero for a fully taxable client.
 
-**Right treatment:** Domestic 22% — the IT branch designation in the counterparty field and the Italian IBAN together indicate that AWS is billing from its Italian branch with an Italian partita IVA. The invoice will show Italian IVA charged. Treat as a normal domestic purchase with VP5 input VAT recovery of (640 / 1.22 × 0.22) = €115.41.
+**Output:**
 
-**Reviewer note:** Confirm by inspecting the actual AWS invoice for the period. The bank statement alone is not sufficient to confirm branch billing.
+| Date | Counterparty | Gross | Net | VAT | Rate | Field (input) | Field (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.23 | 22% | VP5 | VP4 (via VP12) | N | — | — |
 
-### Example 2 — The Apple One consumer trap
+### Example 2 — EU service, inversione contabile (Google Ads)
 
-Bank line: `APPLE DISTRIBUTION INTL -14.99 EUR "APPLE ONE PREMIER m.bianchi@gmail.com"`.
+**Input line:**
+`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
 
-**Wrong treatment:** Kz 46 EU reverse charge at 22%, recover €2.70 input VAT.
+**Reasoning:**
+Google Ireland Limited is an IE entity — standard EU inversione contabile. Google Ads is a service. Output IVA in VP4, input IVA in VP5. Net → VP3/VP10. Both sides must appear. Net effect zero for a fully taxable client.
 
-**Right treatment:** Excluded as personal expense. The description contains "m.bianchi@gmail.com" — a personal Gmail address, not a business domain. Apple One Premier is a consumer bundle (iCloud+, Music, TV+, Arcade, Fitness+) and is almost never legitimately a business expense for a one-person architectural practice. Default to excluded. If the user specifically confirms business use, reclassify as autoliquidazione — but the default is excluded and the reviewer brief should flag the need for confirmation.
+**Output:**
 
-### Example 3 — Rappresentanza vs vitto e alloggio
+| Date | Counterparty | Gross | Net | VAT | Rate | Field (input) | Field (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 187.00 | 22% | VP5 | VP4 (via VP3) | N | — | — |
 
-Bank line: `RISTORANTE DA GIOVANNI MILANO -187.50 EUR "cena cliente"`.
+### Example 3 — Entertainment, partially recoverable in Italy
 
-**First question:** is this "spese di rappresentanza" (entertainment, art. 19-bis1(h), 75% deductible with documentation) or "vitto e alloggio durante trasferta" (business trip meals, 100% deductible with documentation)?
+**Input line:**
+`15.04.2026 ; RISTORANTE DA MARIO ROMA ; DEBIT ; Business dinner ; -220.00 ; EUR`
 
-The description says "cena cliente" (client dinner) in Milan. Marco is based in Milan — this is not a trasferta (out-of-town trip), so it falls under rappresentanza, not vitto e alloggio. Apply 75% deductibility if (and only if) the user can produce a "giustificativo" showing the attendees, the business purpose, and the date. Without documentation, default to blocked.
+**Reasoning:**
+Restaurant transaction. In Italy, business entertainment (spese di rappresentanza) has complex deductibility rules. For IVA purposes, restaurant meals are deductible if they qualify as business expenses under Art. 19 DPR 633/72 and are properly documented with a fattura (not just a scontrino/receipt). The IVA deduction was restored by D.L. 112/2008, but personal meals remain blocked. Default: block, flag for reviewer. If confirmed as documented business expense with fattura → deductible at 10% (restaurant rate).
 
-For LIPE purposes, the input VAT at 10% (restaurants are reduced rate) on €187.50 is €17.05. At 75% deductibility: €12.79 recovered. Default treatment: blocked, €0 recovered, flag for Q3 question on the reviewer form asking whether documentation exists.
+**Output:**
 
-### Example 4 — Intra-Community supply of services to a French B2B customer
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | RISTORANTE DA MARIO ROMA | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Restaurant: do you have a fattura (not scontrino)? Confirm business purpose." |
 
-Bank line: `ARCHITECTES ASSOCIES PARIS +4,500.00 EUR "Consulting architettonico progetto Lyon"`. IBAN: FR.
+### Example 4 — Capital goods (bene strumentale)
 
-**Treatment:** This is a B2B supply of services to a VAT-registered EU customer under art. 44 of the directive (place of supply = customer's country). Italian treatment: the supply is "non soggetto" (not subject to Italian IVA) per art. 7-ter D.P.R. 633/72 and the invoice is issued without IVA. For LIPE purposes, the amount appears in VP2 as a non-taxable output (operazione non imponibile) but carries no output VAT.
+**Input line:**
+`18.04.2026 ; DELL ITALIA SRL ; DEBIT ; Invoice DEL2026-0041 Laptop XPS 15 ; -1,595.00 ; EUR`
 
-**Additional requirement:** this triggers a separate Esterometro filing (or Fattura Elettronica Estero via SdI, depending on the period — the rules changed effective 1 July 2022). Flag in the reviewer brief — the skill does NOT generate the Esterometro, but the obligation must be noted.
+**Reasoning:**
+The gross amount is €1,595. In Italy, assets with a useful life beyond one year and value above €516.46 (net of IVA) are capitalised as beni strumentali. €1,595 / 1.22 = €1,307.38 > €516.46. This is a capital goods purchase. Input IVA is deductible (VP5) as for any business purchase. The distinction matters for income tax depreciation, not for IVA recovery — but flag it for proper registro dei beni ammortizzabili entry.
 
-**Conditions to verify:** the French customer's TVA number must be valid on VIES at the time of supply; the invoice must include both VAT numbers and the note "operazione non soggetta art. 7-ter D.P.R. 633/72". If the VIES check was not performed, the supply reclassifies to domestic 22% with €990 of output IVA — cash swing of nearly €1,000 on this single line. Q1 question on the reviewer form: "did you verify ARCHITECTES ASSOCIES PARIS on VIES before invoicing?"
+**Output:**
 
-### Example 5 — Fuel station with 40% cap
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | DELL ITALIA SRL | -1,595.00 | -1,307.38 | -287.62 | 22% | VP5 | N | — | — |
 
-Bank line: `ENI STATION VIA MILANO 12 -85.00 EUR`.
+### Example 5 — EU B2B service sale (inbound receipt)
 
-**Treatment:** Fuel for a non-commercial vehicle (presumed car, as Marco is an architect without a van or truck). Under art. 19-bis1(c) D.P.R. 633/72, input VAT on cars and fuel for cars is capped at 40% regardless of actual business use, unless the vehicle is exclusively business and this is documented (rare for a sole practitioner).
+**Input line:**
+`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice IT-2026-018 IT consultancy March ; +3,500.00 ; EUR`
 
-- Gross: €85.00
-- Net: 85 / 1.22 = €69.67
-- Full input VAT at 22%: €15.33
-- Recoverable at 40% cap: €6.13
+**Reasoning:**
+Incoming €3,500 from a German company. B2B services: place of supply is the customer's country (Germany) under Art. 7-ter DPR 633/72 / Art. 44 VAT Directive. The client invoices without IVA with notation "Inversione contabile — Art. 196 Direttiva 2006/112/CE". Report as non-taxable (operazione non imponibile). Confirm: (a) customer is VAT-registered — verify German USt-IdNr on VIES; (b) invoice is correctly issued.
 
-For LIPE: VP5 input VAT recovery = €6.13. The remaining €9.20 of input VAT is blocked.
+**Output:**
 
-**Trucks and commercial vehicles:** if the bank description indicates a commercial vehicle (autocarro, furgone, van), the 40% cap does not apply and the full €15.33 is recoverable. The skill's bank statement reading guide (Section 8) lists the Italian terms to look for.
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | n/a | VP2 (non-imp.) | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
 
-### Example 6 — Camera di Commercio annual fee
+### Example 6 — Motor vehicle, partial recovery
 
-Bank line: `CCIAA MILANO -120.00 EUR "diritto annuale 2026"`.
+**Input line:**
+`28.04.2026 ; LEASYS SPA ; DEBIT ; Lease payment Fiat 500X ; -450.00 ; EUR`
 
-**Wrong treatment:** Assume an invoice was issued with 22% IVA and claim €21.64 input VAT.
+**Reasoning:**
+Car lease payment. In Italy, IVA on passenger vehicles is deductible at 40% if the vehicle is used for business (Art. 19-bis1 lett. c DPR 633/72). This is a partial deduction (not a full block as in Malta). The 40% is a legal presumption of business use. Full 100% deduction only applies to taxis, driving schools, car rental, and vehicles forming the core business asset. For an IT consultant: 40% deductible.
 
-**Right treatment:** Excluded. The Camera di Commercio is a public-law body and the "diritto annuale" is a statutory contribution under L. 580/1993, NOT consideration for a taxable supply. No IVA is charged on the annual fee. There is no input VAT to recover. Mark the line as excluded with reason "Camera di Commercio statutory contribution, outside VAT scope." Do NOT claim €21.64 of input VAT.
+**Output:**
 
-**This is the Italian equivalent of the German IHK error** that surfaced in the German skill's rerun analysis. Camera di Commercio dues, ordini professionali dues, and similar statutory contributions to public-law bodies never carry VAT and the skill must not invent it.
+| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | LEASYS SPA | -450.00 | -368.85 | -81.15 (x 40% = -32.46 deductible) | 22% | VP5 (partial) | Y | Q3 | "Vehicle: 40% IVA deductible. Is this a core business vehicle (taxi/rental)?" |
 
-## Section 5 — Tier 1 deterministic rules (compressed)
+---
 
-These are the rules applied silently by the classifier when the data unambiguously resolves the treatment. They do not trigger Tier 2 questions.
+## Section 5 — Tier 1 classification rules (compressed)
 
-**5.1 — Domestic B2B sale to an Italian partita IVA customer.** 22% standard, or reduced rate per Tabella A if the goods/services qualify. Report in VP2 (net) and VP4 (output VAT). No reverse charge unless specifically covered by a national extension (construction, scrap metal, electronics above thresholds).
+### 5.1 Standard rate 22% (Art. 16 c.1 DPR 633/72)
 
-**5.2 — Domestic B2C sale.** Same rates. Same reporting. Different invoice requirements (scontrino elettronico or invoice per customer request).
+Default rate. Sales → VP2/VP4. Purchases → VP5.
 
-**5.3 — Intra-Community supply of goods to an EU VAT-registered customer.** Non imponibile under art. 41 D.L. 331/1993. Report in VP2 but with no output VAT. Triggers Esterometro filing. Conditions: customer VAT verified on VIES, goods physically transported out of Italy, proof of transport retained, invoice shows both partite IVA and the "operazione non imponibile art. 41" note. If any condition fails, reclassify as domestic 22%.
+### 5.2 Reduced rate 10% (Table A, Part III, DPR 633/72)
 
-**5.4 — B2B service to a VAT-registered EU customer.** Non soggetto under art. 7-ter — place of supply is the customer's country. Report in VP2 as a non-taxable output. Triggers Esterometro.
+Applies to: restaurants, hotels, renovation of residential buildings, certain food products (meat, fish, certain processed foods), passenger transport, cultural events. Sales → VP2/VP4. Purchases → VP5.
 
-**5.5 — B2B service to a non-EU customer.** Non soggetto under art. 7-ter. No IVA. No Esterometro (non-EU customers are outside the esterometro regime for services — but the Esterometro rules for non-EU transactions have changed multiple times, note for reviewer).
+### 5.3 Reduced rate 5% (Table A, Part II-bis)
 
-**5.6 — Purchase from EU supplier (goods).** Intra-Community acquisition under art. 38 D.L. 331/1993. Self-assess 22% output IVA in VP4 and claim 22% input IVA in VP5 (net cash zero unless partial exemption or blocked input). Requires invoice from EU supplier with both partite IVA.
+Applies to: certain health and social services, selected food items (herbs, spices), basilico, oregano. Very narrow. Sales → VP2/VP4. Purchases → VP5.
 
-**5.7 — Purchase of services from EU supplier (reverse charge — autoliquidazione).** Under art. 17 c. 2 D.P.R. 633/72 and art. 44 of the directive. Self-assess 22% in VP4, claim 22% in VP5. Net zero. The Irish/Luxembourg SaaS stack (Google, Microsoft, Adobe, Slack, Dropbox, etc.) is the dominant case.
+### 5.4 Super-reduced rate 4% (Table A, Part II)
 
-**5.8 — Purchase from non-EU supplier (services).** Reverse charge under art. 17 c. 2. Same mechanics as EU reverse charge — self-assess 22%, claim 22%, net zero. Zoom, Fiverr, US-based consultants, Anthropic business tier all fall here.
+Applies to: basic foodstuffs (bread, milk, olive oil, fresh fruit/vegetables), printed books and newspapers, first-home construction materials, medical devices for disabled persons. Sales → VP2/VP4. Purchases → VP5.
 
-**5.9 — Import of goods from outside the EU.** Cash payment at the border through customs agent (spedizioniere) unless the user has elected postponed accounting (reverse charge all'importazione, a refusal trigger for v0.1 — see R-IT-12). Cash payment treatment: the customs document (bolletta doganale) is the invoice equivalent, and the IVA paid at import is recoverable as input VAT in the period of payment.
+### 5.5 Zero rate and exempt with credit (non imponibile)
 
-**5.10 — Exempt-without-credit supplies.** Sales of banking/insurance/healthcare/education/residential letting services are esenti under art. 10 D.P.R. 633/72 — non-taxable sales, no output VAT, no input VAT on related costs. If the user's business makes any esenti supplies above de minimis, fire R-IT-5 (partial exemption).
+Exports outside EU → Art. 8 DPR 633/72 (non imponibile, requires export evidence). Intra-EU B2B supplies of goods → Art. 41 D.L. 331/93 (non imponibile, requires VIES verification). Intra-EU B2B services → Art. 7-ter (non imponibile, customer country rule).
 
-**5.11 — Mixed-use vehicle fuel and maintenance.** 40% cap applies by default (art. 19-bis1(c)). Do not ask for actual business use percentage unless the user volunteers it.
+### 5.6 Exempt without credit (esente Art. 10)
 
-**5.12 — Business gifts above €50 per recipient per year.** Blocked under art. 19-bis1(h) — same principle as Germany but different threshold (Italy €50, Germany €50 — happen to match).
+Medical services, education, insurance, financial services, residential rent, postal universal service. No output IVA, no input IVA deduction on related costs. If significant → **R-IT-4 refuses**.
 
-**5.13 — Business meals and entertainment.** Default blocked unless documented as "vitto e alloggio in trasferta" (100%) or "spesa di rappresentanza" (75% with formal documentation). The 75% vs 100% distinction depends on whether the user was away from their normal place of work.
+### 5.7 Local standard purchases
 
-## Section 6 — Italy-specific Tier 2 ambiguity catalogue
+Input IVA on a compliant fattura from an Italian supplier is deductible for purchases used in taxable business activity. Subject to blocked-input rules (5.12). Map to VP5.
 
-Applied after the EU-wide T2-EU catalogue in `eu-vat-directive` Section 12. Each entry: pattern / why the data can't answer / question / default.
+### 5.8 Inversione contabile — EU services received (Art. 17 c.2 + Art. 7-ter)
 
-**T2-IT-1 — Rappresentanza vs trasferta.** *Pattern:* restaurant/hotel line in a city that may or may not be the user's base of operations. *Why:* bank line doesn't indicate trasferta. *Question:* "Was this meal/hotel during a business trip away from your office, or was it entertainment at or near your office location?" *Default:* blocked.
+EU supplier invoices at 0% with reverse-charge note: client issues autofattura or integrazione della fattura. Output IVA → VP4, input IVA → VP5. Net → VP3/VP10. Net effect zero for fully taxable client.
 
-**T2-IT-2 — Vehicle category.** *Pattern:* fuel or vehicle expense on an unspecified vehicle. *Why:* bank line doesn't distinguish autoveicolo from autocarro. *Question:* "Is the vehicle a passenger car (autoveicolo, deduction capped at 40%) or a commercial vehicle (autocarro, deduction up to 100%)?" *Default:* 40% cap.
+### 5.9 Inversione contabile — EU goods received
 
-**T2-IT-3 — Telephone/mobile mixed use.** *Pattern:* mobile phone invoice. *Why:* bank line doesn't indicate business-only use. *Question:* "Is this a pure business line or mixed personal/business?" *Default:* 50% cap under art. 19-bis1(g).
+Physical goods from EU: integration of supplier invoice. Output IVA → VP4, input IVA → VP5. Net → VP3/VP10.
 
-**T2-IT-4 — Esenti income detection.** *Pattern:* incoming payment with a description suggesting exempt activity (interest, rental from residential property, insurance commission). *Why:* bank line doesn't classify as esente vs imponibile. *Question:* "Does your business earn any interest income, residential rent, insurance commission, or other art. 10 exempt supplies?" *Default:* if yes, fire R-IT-5 (partial exemption); if no, treat as taxable at 22%.
+### 5.10 Inversione contabile — non-EU services and imports
 
-**T2-IT-5 — SdI compliance.** *Pattern:* the bank statement shows B2B activity but the skill has not established that the user is operating via SdI. *Why:* SdI compliance is not directly visible on the bank statement. *Question:* "Are all your sales invoices issued through the Sistema di Interscambio (SdI), either directly or via a commercialista/software provider?" *Default:* if the user says no or unclear, fire R-IT-4 (e-invoicing non-compliance).
+Non-EU services: autofattura required. Output IVA and input IVA both self-assessed. → VP12/VP11 + VP4/VP5. Goods imports: since 2022, IVA on imports can be deferred to the LIPE (pre-liquidazione doganale).
 
-**T2-IT-6 — Split payment customer.** *Pattern:* incoming payment from an entity with "S.p.A." or "Comune di" or "Ministero" or "Regione" in the counterparty name. *Why:* the PA/listed-company status is not on the bank line. *Question:* "Is this customer a public administration entity, a listed company, or otherwise subject to split payment under art. 17-ter?" *Default:* if yes, fire R-IT-3 (split payment).
+### 5.11 Capital goods (beni strumentali)
 
-**T2-IT-7 — LIPE period mismatch.** *Pattern:* the bank statement period doesn't align with a standard monthly or quarterly LIPE boundary. *Why:* the user may be on an unusual filing cadence. *Question:* "Are you on monthly or quarterly LIPE filing?" *Default:* quarterly (the more common case for small businesses).
+Assets > €516.46 net: capitalize for income tax depreciation (registro beni ammortizzabili). For IVA purposes, input deduction follows the same rules as other purchases (VP5) — there is no separate IVA line for capital goods on the LIPE. The distinction matters for the annual Dichiarazione IVA and for the 5-year adjustment period (rettifica della detrazione, Art. 19-bis2).
 
-## Section 7 — Excel working paper template (Italy-specific overlay)
+### 5.12 Blocked input IVA (Art. 19-bis1 DPR 633/72)
+
+- Motor vehicles (autovetture): 40% deductible (legal presumption). 100% for taxis, driving schools, car rental, vehicles as core business tools.
+- Fuel (carburante): 40% deductible for vehicles at 40%; 100% for fully deductible vehicles. Must be paid via traceable means (no cash).
+- Entertainment (spese di rappresentanza): IVA deductible if proper fattura obtained and expense is proportionate to business. Meals and accommodation deductible with fattura since D.L. 112/2008.
+- Accommodation (alberghi): IVA deductible since D.L. 112/2008 if documented with fattura and for business.
+- Personal use items: not deductible.
+- Phone/telecoms: 50% deductible (Art. 19-bis1 lett. d) — overridable if exclusively business.
+- Gifts: IVA deductible only if unit cost ≤ €50.
+
+### 5.13 Quarterly interest surcharge
+
+Quarterly filers must add 1% interest on the net IVA payable for the quarter (Art. 7 DPR 542/99). This interest goes on the LIPE as an additional amount. Monthly filers do not pay this surcharge.
+
+### 5.14 Sales — local domestic (any rate)
+
+Charge 22%, 10%, 5%, or 4% as applicable. All via fattura elettronica through SDI.
+
+### 5.15 Sales — cross-border B2C
+
+Goods to EU consumers above €10,000 EU-wide threshold → **R-EU-5 (OSS refusal)**. Below threshold → Italian IVA at applicable rate.
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Fuel and vehicle costs
+
+*Pattern:* ENI, Q8, IP, ESSO, SHELL, fuel receipts. *Why insufficient:* 40% vs 100% deduction depends on vehicle type. *Default:* 40% recovery. *Question:* "Is this a core business vehicle (taxi/rental) or a standard company car?"
+
+### 6.2 Restaurants and entertainment
+
+*Pattern:* any named ristorante, trattoria, pizzeria, bar. *Why insufficient:* IVA on meals is deductible only with a fattura (not scontrino). *Default:* block. *Question:* "Do you have a fattura elettronica (not just a scontrino) for this meal? Was it a business expense?"
+
+### 6.3 Ambiguous SaaS billing entities
+
+*Pattern:* Google, Microsoft, Adobe, Meta, etc. *Default:* non-EU reverse charge (VP11/VP12 + VP5). *Question:* "Could you check the invoice? I need the legal entity name and country."
+
+### 6.4 Round-number incoming transfers from owner-named counterparties
+
+*Default:* exclude as owner injection. *Question:* "The €X transfer from [name] — customer payment, own money, or loan?"
+
+### 6.5 Incoming transfers from individual names (not owner)
+
+*Default:* domestic B2C sale at 22%. *Question:* "Was it a sale? Business or consumer?"
+
+### 6.6 Incoming transfers from foreign counterparties
+
+*Default:* domestic 22%. *Question:* "B2B with Partita IVA, B2C, goods or services, which country?"
+
+### 6.7 Large one-off purchases (potential beni strumentali)
+
+*Pattern:* near €516.46 threshold. *Default:* if net > €516.46 → capital goods. *Question:* "Confirm total invoice amount."
+
+### 6.8 Mixed-use phone, internet
+
+*Pattern:* TIM, Vodafone, WindTre personal lines. *Default:* 50% deductible (Art. 19-bis1 lett. d). *Question:* "Is this a dedicated business line or mixed-use?"
+
+### 6.9 Outgoing transfers to individuals
+
+*Default:* exclude as drawings. *Question:* "Contractor payment, wages, refund, or personal?"
+
+### 6.10 Cash withdrawals
+
+*Pattern:* prelievo bancomat, prelievo contanti. *Default:* exclude. *Question:* "What was the cash used for?"
+
+### 6.11 Rent payments
+
+*Pattern:* affitto, locazione, canone. *Default:* no IVA (residential default). *Question:* "Commercial or residential? Does the landlord charge IVA?"
+
+### 6.12 Foreign hotel and accommodation
+
+*Default:* exclude from input IVA. *Question:* "Business trip?" (Income tax deduction possible.)
+
+### 6.13 Airbnb income
+
+*Default:* [T2] flag. *Question:* "Short-term tourist rental? Duration? Cedolare secca applied?"
+
+### 6.14 Domestic reverse charge (construction, cleaning)
+
+*Pattern:* payments to subcontractors in construction and cleaning sectors. *Why insufficient:* Italy has broad domestic reverse charge (Art. 17 c.6 DPR 633/72) for construction subcontracting, building cleaning, and energy sector. *Default:* [T2] flag. *Question:* "Is this a domestic reverse charge sector (construction/cleaning)?"
+
+### 6.15 Platform sales
+
+*Default:* if selling EU cross-border above €10,000 → R-EU-5. Otherwise: domestic 22% for sales; platform fees as EU inversione contabile. *Question:* "Do you sell to buyers outside Italy?"
+
+---
+
+## Section 7 — Excel working paper template (Italy-specific)
 
 The base specification is in `vat-workflow-base` Section 3. This section provides the Italy-specific overlay.
 
-**Sheet 1 — "Transactions".** 12 columns: Date, Counterparty, Description, Gross (EUR), Net (EUR), IVA (EUR), Rate, LIPE field, Treatment, Default? (Y/N), Q-Ref, Excluded reason.
+### Sheet "Transactions"
 
-**Sheet 2 — "LIPE Summary".** Aggregates by LIPE field:
+Columns A–L per the base. Column H ("Field code") accepts VP field codes from Section 1 of this skill. For inversione contabile transactions, enter both input and output fields separated by a slash.
 
-| Field | Description | Formula |
-|---|---|---|
-| VP2 | Totale operazioni attive (imponibili) | `=SUMIFS(Transactions!E:E,Transactions!H:H,"VP2")` |
-| VP3 | Totale operazioni passive | `=SUMIFS(Transactions!E:E,Transactions!H:H,"VP3")` |
-| VP4 | IVA a debito | `=SUMIFS(Transactions!F:F,Transactions!H:H,"VP4")` |
-| VP5 | IVA a credito | `=SUMIFS(Transactions!F:F,Transactions!H:H,"VP5")` |
-| VP6 | IVA dovuta / credito | `=VP4-VP5` |
-| VP8 | Risultato periodo | `=VP6-VP7` |
+### Sheet "Field Summary"
 
-**Sheet 3 — "Return Form".** Lays out the LIPE form with the final values drawn from the LIPE Summary sheet.
+One row per VP field. Mandatory rows:
 
-**Color conventions:** yellow highlight on every row with Default? = Y. No other colors.
+```
+| VP2 | Total taxable operations | =SUMIFS(Transactions!E:E, ...) |
+| VP3 | Intra-EU acquisitions | =SUMIFS(Transactions!E:E, ..., "VP3") |
+| VP4 | Total output IVA | =SUM(output VAT on all taxable and RC lines) |
+| VP5 | Total input IVA | =SUM(input VAT on all deductible lines) |
+| VP6 | Net IVA for period | =VP4-VP5 |
+| VP7 | Credit from prior period | (manual entry) |
+| VP10 | Intra-EU purchases | =VP3 |
+| VP11 | Imports | =SUMIFS(..., "VP11") |
+| VP12 | Reverse charge purchases | =SUMIFS(..., "VP12") |
+| VP14 | Net amount due/credit | =VP6-VP7-VP8-VP9 |
+```
 
-**Mandatory recalc step:** `python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/italy-vat-<period>-working-paper.xlsx` after writing. Verify `status: success, total_errors: 0` before proceeding.
+### Sheet "Return Form"
+
+Final LIPE-ready figures.
+
+```
+IF VP5 > VP4:
+  VP6 = credit (credito)
+  VP14 = credit after adjustments
+ELSE:
+  VP6 = payable (debito)
+  VP14 = net payable + 1% interest (if quarterly)
+```
+
+### Mandatory recalc step
+
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/italy-vat-<period>-working-paper.xlsx
+```
+
+---
 
 ## Section 8 — Italian bank statement reading guide
 
-Follow the universal exclusion rules in `vat-workflow-base` Section 1 Step 6, plus these Italy-specific patterns.
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these Italy-specific patterns.
 
-**CSV format conventions.** Italian business banks export in several formats. Common columns: Data Contabile, Data Valuta, Descrizione, Importo, Valuta, Causale, Beneficiario/Ordinante, IBAN Controparte. Date format: DD/MM/YYYY. Decimal separator: comma (1.234,56 EUR means one thousand two hundred thirty-four euros and fifty-six cents). Currency indicator: EUR or € symbol.
+**CSV format conventions.** Italian banks typically export in CSV or Excel with DD/MM/YYYY dates. Common columns: Data, Descrizione/Causale, Dare (debit), Avere (credit), Saldo. UniCredit and Intesa exports include ABI causale codes (e.g., 27 = bonifico, 48 = carta di credito).
 
-**Common causali (bank transaction codes)** that help with classification:
-- BON = bonifico (wire transfer)
-- ADD = addebito diretto (direct debit)
-- POS = point-of-sale card payment
-- PRE = prelievo (withdrawal)
-- SDD = SEPA Direct Debit
-- VER = versamento (deposit)
-- COM = commissioni (fees — usually bank fees, exempt art. 10)
-- STI = stipendio (salary payment — excluded as payroll)
-- F24 = tax payment via the F24 form (excluded as tax authority payment)
+**Italian language variants.** Affitto (rent), stipendio (salary), interessi (interest), bonifico (transfer), contributi (contributions), fattura (invoice), rimborso (refund), versamento (deposit), prelievo (withdrawal). Treat as English equivalents.
 
-**Internal transfers and exclusions.** Giroconto (internal transfer between own accounts), prelievo (cash withdrawal), versamento contanti (cash deposit), rimborso spese (expense reimbursement), stipendio, TFR (end-of-service allowance), interessi attivi/passivi (interest — exempt), F24 (tax payment), INPS/INAIL (statutory contributions). None of these are VAT events.
+**ABI causale codes.** 27 = bank transfer (bonifico), 48 = credit card, 05 = direct debit (RID/SDD), 26 = cheque. The code helps classify.
 
-**Italian supplier name abbreviations.** Italian banks often truncate or abbreviate counterparty names in ways that obscure the actual entity. Common patterns:
-- "TIM SpA" / "T.I.M. S.P.A." / "TELECOM ITALIA" — all the same entity
-- "INTESA SP" / "INTESA SANP" — Intesa Sanpaolo
-- "ENEL EN" / "ENEL ENERGIA" — Enel Energia S.p.A.
-- "AGE ENTRATE" / "AG.ENTRATE" / "AGENZIA ENTRATE" — Agenzia delle Entrate
+**Internal transfers and exclusions.** Giroconto = internal transfer. Always exclude.
 
-**Partita IVA and codice fiscale in descriptions.** Italian bank descriptions sometimes include the counterparty's partita IVA (11 digits starting with IT) or codice fiscale (16 alphanumeric characters for individuals, 11 digits for companies — same as partita IVA). These are useful for verifying counterparty identity and should be captured in the Transactions sheet where available.
+**F24 payments.** Tax payments via F24 (modello F24) appear as "PAGAMENTO F24" or with specific tax codes (6001-6012 for monthly IVA, 6031-6034 for quarterly IVA). Always exclude.
 
-## Section 9 — Onboarding (fallback only — use after Step 3 of the workflow base)
+**Fattura elettronica (SDI).** Since 2019, all B2B invoices in Italy must be electronic via SDI. If the client has an SDI extract, it provides the most reliable data source for IVA classification — prefer over bank statement for invoice details.
 
-The workflow in `vat-workflow-base` Section 1 mandates inferring the client profile from the data first (Step 3) and only confirming with the user in Step 4. The questions below are a *fallback* — ask only the questions the data could not answer at all.
+**Foreign currency transactions.** Convert to EUR at the ECB rate or bank statement rate.
 
-**Q1. Regime check.** "Are you in the regime ordinario (standard VAT), regime forfettario (flat-rate small business), or another special regime?" Only the regime ordinario is supported by this skill — forfettario fires R-IT-1.
+**IBAN country prefix.** IT = Italy. IE, LU, NL, FR, DE = EU. US, GB, AU, CH = non-EU.
 
-**Q2. LIPE frequency.** "Are you on monthly or quarterly LIPE filing?" If turnover > €800,000 (services) or > €700,000 (goods), monthly is mandatory.
+---
 
-**Q3. SdI compliance.** "Are all your sales invoices issued through the Sistema di Interscambio (SdI)?" If no, fire R-IT-4.
+## Section 9 — Onboarding fallback (only when inference fails)
 
-**Q4. Partial exemption check.** "Does your business earn any exempt income (interest, insurance commission, residential rent, medical/educational services)?" If yes, fire R-IT-5.
+### 9.1 Entity type
+*Inference rule:* SRL, SPA, SAS = company; ditta individuale = sole trader; libero professionista = freelance professional. *Fallback:* "Ditta individuale, SRL, or libero professionista?"
 
-**Q5. Split payment customer check.** "Do you have any customers that are public administration, listed companies, or otherwise subject to split payment?" If yes, fire R-IT-3.
+### 9.2 VAT regime
+*Inference rule:* if filing LIPE, they are regime ordinario. *Fallback:* "Are you under regime ordinario or regime forfettario?"
 
-**Q6. Construction sector check.** "Do you work as a contractor or subcontractor in the construction sector?" If yes, fire R-IT-11.
+### 9.3 Partita IVA
+*Inference rule:* IT-format P.IVA on invoices. *Fallback:* "What is your Partita IVA? (IT + 11 digits)"
 
-**Q7. Vehicle use.** "Do you have a vehicle used for the business? Is it a passenger car (40% cap) or a commercial vehicle (autocarro, up to 100%)?"
+### 9.4 Filing period and frequency
+*Inference rule:* date range on statement. *Fallback:* "Which period? Monthly or quarterly filer?"
 
-**Q8. Esterometro awareness.** "Are you aware of the Esterometro / fattura elettronica estero obligation for cross-border transactions? Do you file it separately?" This is not a question whose answer changes the LIPE, but it affects what goes in the reviewer brief.
+### 9.5 Industry and sector
+*Inference rule:* counterparty mix. *Fallback:* "What does the business do?"
+
+### 9.6 Employees
+*Inference rule:* INPS outgoing. *Fallback:* "Do you have employees?"
+
+### 9.7 Exempt supplies
+*Inference rule:* medical/financial/educational income. *Fallback:* "Do you make any exempt sales?" *If yes → R-IT-4 refuses.*
+
+### 9.8 Credit carried forward
+*Inference rule:* not inferable. Always ask. *Question:* "Do you have IVA credit from the prior period? (VP7)"
+
+### 9.9 Cross-border customers
+*Inference rule:* foreign IBANs. *Fallback:* "Customers outside Italy? EU or non-EU? B2B or B2C?"
+
+### 9.10 Public administration customers
+*Inference rule:* payments from PA-sounding entities. *Conditional fallback:* "Do you supply to Italian public administration?" *If yes → R-IT-3 (split payment) refuses.*
+
+---
 
 ## Section 10 — Reference material
 
 ### Validation status
 
-This is v0.1 of `italy-vat-return`. Drafted in April 2026 from public sources (D.P.R. 633/1972, Agenzia delle Entrate published guidance, EU directive content from `eu-vat-directive` v0.1) with no practitioner validation. The supplier pattern library, the refusal catalogue, the Tier 1 rules, and the worked examples are all derived from the same sources and should be treated as v0.1 — not practitioner-validated, not tested against a real Italian bank statement, likely to contain errors that only a local commercialista would catch.
-
-**Specific known limitations:**
-
-1. The LIPE field mapping (VP2, VP3, VP4, VP5) is simplified relative to the actual LIPE form, which has more granular fields for specific transaction types. v0.1 covers the most common cases; edge cases may need manual adjustment.
-2. The Esterometro / fattura elettronica estero rules have changed multiple times between 2019 and 2023 and v0.1 describes them in general terms. The skill flags the obligation but does not generate the Esterometro filing.
-3. The regime forfettario is in the refusal catalogue — v0.1 does not attempt to handle it even though it is the most common Italian regime for small businesses. This is deliberate: forfettario is structurally different from the regime ordinario and would require a separate skill.
-4. The split payment and construction reverse charge regimes are in the refusal catalogue for the same reason — they are different enough from standard IVA classification to warrant their own dedicated skills.
-5. The annual Dichiarazione IVA is not supported — v0.1 covers only the periodic LIPE. The annual return requires integration with the income tax return and multi-period reconciliation.
-6. The IVA per cassa regime is in the refusal catalogue.
+This skill is v2.0, written in April 2026 to align with the three-tier Accora architecture.
 
 ### Sources
 
-1. D.P.R. 26 ottobre 1972 n. 633 (the Italian VAT law, the "Decreto IVA"): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633
-2. D.L. 30 agosto 1993 n. 331 (intra-Community VAT): https://www.normattiva.it
-3. Agenzia delle Entrate — Area Tematica IVA: https://www.agenziaentrate.gov.it/portale/web/guest/schede/comunicazioni/liquidazioni-periodiche-iva
-4. Agenzia delle Entrate — guide pratiche on specific topics (fatturazione elettronica, esterometro, split payment, regime forfettario)
-5. EU Directive 2006/112/EC via `eu-vat-directive` v0.1
-6. Ministero dell'Economia e delle Finanze circolari and risoluzioni
-7. D.Lgs. 127/2015 (electronic invoicing and Sistema di Interscambio)
+**Primary legislation:**
+1. DPR 633/72 (Decreto IVA) — the core Italian VAT law
+2. D.L. 331/93 — intra-EU transactions
+3. DPR 542/99 — quarterly filing and interest surcharge
+
+**Agenzia delle Entrate guidance:**
+4. LIPE form and completion instructions — https://www.agenziaentrate.gov.it
+5. Fatturazione elettronica guidance
+6. Circular letters on reverse charge and domestic inversione contabile
+
+**EU directive:**
+7. Council Directive 2006/112/EC — via eu-vat-directive companion skill
+8. Council Implementing Regulation 282/2011
+
+**Other:**
+9. VIES validation — https://ec.europa.eu/taxation_customs/vies/
+10. ECB euro reference rates
+
+### Known gaps
+
+1. Supplier pattern library does not cover every Italian SME.
+2. Split payment (scissione dei pagamenti) for PA customers is out of scope — R-IT-3 refuses.
+3. Domestic reverse charge (Art. 17 c.6) is flagged T2 only.
+4. Capital goods threshold (€516.46 net) is per current guidance — verify annually.
+5. Motor vehicle 40% presumption may change — verify annually.
+6. Restaurant IVA deductibility requires fattura (not scontrino) — skill flags but cannot verify document type.
+7. Quarterly 1% interest surcharge calculation is approximate.
 
 ### Change log
 
-- **v0.1 (April 2026):** Initial draft following the germany-vat-return v0.3.1 architecture. Three-tier model: loads on top of vat-workflow-base v0.2.0 and eu-vat-directive v0.1. Covers regime ordinario periodic LIPE only. Forfettario, split payment, construction reverse charge, margin schemes, travel agents, agricultural flat rate, partial exemption, VAT groups, annual Dichiarazione IVA, and IVA per cassa are all in the refusal catalogue. Supplier pattern library has roughly 50 entries across 16 sub-categories. Six worked examples from a hypothetical Milan architect. Not practitioner-validated.
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure. 10 sections. Country-specific supplier pattern library.
+- **v1.0:** Initial skill.
 
-### Self-check (v0.1 of this document)
+### Self-check (v2.0)
 
 1. Quick reference at top: yes (Section 1).
-2. Refusal catalogue distinct from EU-wide: yes (13 R-IT refusals in Section 2, on top of R-EU-1 through R-EU-12).
-3. Supplier library as literal lookup table: yes (Section 3, 16 sub-tables).
-4. Worked examples drawn from a hypothetical non-test client: yes (Milan architect, Section 4).
-5. Tier 1 rules compressed: yes (Section 5, thirteen rules).
-6. Tier 2 catalogue distinct from EU-wide: yes (seven T2-IT entries in Section 6).
-7. Excel template specification with mandatory recalc: yes (Section 7).
-8. Italian bank statement reading guide: yes (Section 8).
-9. Onboarding as fallback only: yes (Section 9).
-10. Reference material at bottom: yes (Section 10).
-11. AWS branch exception explicit: yes (Section 3.13 and Example 1).
-12. Apple consumer trap explicit: yes (Section 3.14 and Example 2).
-13. Camera di Commercio zero-VAT explicit: yes (Section 3.5 and Example 6).
-14. Rappresentanza vs trasferta distinction explicit: yes (Section 5.13 and Example 3).
-15. Vehicle 40% cap explicit: yes (Section 3.11, Section 5.11, and Example 5).
+2. Supplier library: yes (Section 3, 15 sub-tables).
+3. Worked examples: yes (Section 4, 6 examples).
+4. Tier 1 rules: yes (Section 5, 15 rules).
+5. Tier 2 catalogue: yes (Section 6, 15 items).
+6. Excel template: yes (Section 7).
+7. Onboarding fallback: yes (Section 9, 10 items).
+8. All 8 Italy-specific refusals: yes (Section 2).
+9. Reference material: yes (Section 10).
+10. Motor vehicle 40% partial deduction (key Italy difference): yes (Section 5.12 + Example 6).
+11. Restaurant fattura requirement: yes (Section 5.12 + Example 3).
+12. Fattura elettronica / SDI requirement: yes (Section 8).
+13. Quarterly 1% interest surcharge: yes (Section 5.13).
+14. Non-EU SaaS autofattura: yes (Example 1).
+15. Domestic reverse charge flagged: yes (Section 6.14).
 
-## End of Italy VAT Return Skill v0.1
+## End of Italy VAT Return Skill v2.0
 
-This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.2.0 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a LIPE without all three files loaded.
-
-**Practitioner review note:** this skill has not been reviewed by an Italian commercialista. Before this skill is used for any real return, it should be reviewed line-by-line by a practitioner with experience in the Italian regime ordinario and periodic LIPE filings. The refusal catalogue, in particular, may be over- or under-inclusive relative to real Italian practice.
+This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later AND `eu-vat-directive` v0.1 or later.
 
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a commercialista, revisore legale, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

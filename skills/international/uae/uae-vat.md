@@ -1,1102 +1,684 @@
 ---
 name: uae-vat
-description: Use this skill whenever asked to prepare, review, or create a UAE VAT return (VAT201 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in VAT201", "create the return", "UAE VAT filing", or any request involving UAE VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete UAE VAT classification rules, box mappings, input tax recovery rules, reverse charge treatment, designated zone rules, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any UAE VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a UAE VAT return (VAT201 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in VAT201", "create the return", "UAE VAT filing", "FTA return", or any request involving UAE VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers the UAE only and only standard VAT-registered persons filing VAT201. VAT groups, profit margin schemes, partial exemption with non-trivial exempt supplies, and Designated Zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any UAE VAT work.
+version: 2.0
 ---
 
-# UAE VAT Return Preparation Skill
+# UAE VAT Return Skill (VAT201) v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | United Arab Emirates |
-| Jurisdiction Code | AE |
-| Primary Legislation | Federal Decree-Law No. 8 of 2017 on Value Added Tax (VAT Decree-Law) |
-| Supporting Legislation | Cabinet Decision No. 52 of 2017 (Executive Regulation); Federal Decree-Law No. 7 of 2017 on Tax Procedures; Cabinet Decision No. 40 of 2017 (Designated Zones); Cabinet Decision No. 49 of 2021 (Penalties, superseded by Cabinet Decision No. 129 of 2025 from 14 April 2026) |
-| Tax Authority | Federal Tax Authority (FTA), United Arab Emirates |
-| Filing Portal | https://eservices.tax.gov.ae (FTA e-Services Portal) |
-| VAT Introduction Date | 1 January 2018 |
-| Standard Rate | 5% |
-| Currency | AED (United Arab Emirates Dirham) |
+|---|---|
+| Country | United Arab Emirates |
+| Standard rate | 5% |
+| Zero rate | 0% (exports, international transport, first residential property within 3 years, qualifying education, qualifying healthcare, investment precious metals 99%+ purity, crude oil and natural gas) |
+| Exempt supplies | Financial services (interest/margin-based), residential property resale/lease after first supply, bare land, local passenger transport, life insurance |
+| Return form | VAT201 (filed via FTA e-Services portal) |
+| Filing portal | https://eservices.tax.gov.ae (FTA e-Services Portal) — electronic only |
+| Authority | Federal Tax Authority (FTA), United Arab Emirates |
+| Currency | AED only |
+| Filing frequency | Quarterly (default, annual turnover < AED 150M); Monthly (assigned by FTA, turnover >= AED 150M) |
+| Deadline | 28th day of the month following end of tax period |
+| VAT introduction date | 1 January 2018 |
+| TRN format | 15-digit numeric |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Skill Version | 2.0 |
-| Confidence Coverage | Tier 1: box assignment, reverse charge, input tax blocks, derived calculations. Tier 2: partial apportionment, designated zone classification, sector-specific zero-rating conditions. Tier 3: complex group structures, profit margin scheme, multi-jurisdictional supplies. |
+| Validated by | Deep research verification, April 2026 |
+| Validation date | April 2026 |
+
+**Key VAT201 boxes/fields (the fields you will use most):**
+
+| Field | Meaning |
+|---|---|
+| 1 (1a–1g) | Standard-rated supplies, broken down by Emirate (Abu Dhabi, Dubai, Sharjah, Ajman, UAQ, RAK, Fujairah) — net value + 5% VAT |
+| 2 | Tax refunds provided to tourists (Tourist Refund Scheme) |
+| 3 | Supplies subject to reverse charge — value of taxable supplies received from non-resident suppliers + 5% VAT |
+| 4 | Zero-rated supplies — net value |
+| 5 | Exempt supplies — net value |
+| 6 | Goods imported into the UAE — CIF value + 5% VAT |
+| 7 | Adjustments to output tax (credit notes, corrections, bad debt relief) |
+| 8 | Total output tax due (derived: VAT on Box 1 + Box 2 + VAT on Box 3 + VAT on Box 6 + Box 7) |
+| 9 | Standard-rated expenses — net value + 5% VAT |
+| 10 | Reverse charge input tax — VAT recoverable on reverse charge supplies from Box 3 |
+| 11 | Total recoverable input tax (derived: VAT on Box 9 + Box 10 − blocked input tax adjustments) |
+
+**Net VAT payable = Box 8 − Box 11. Positive = payable to FTA. Negative = refundable or carried forward.**
+
+**Conservative defaults — UAE-specific values for the universal categories in `vat-workflow-base` Section 2:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 5% (standard rate) |
+| Unknown VAT status of a purchase | Not recoverable |
+| Unknown counterparty location | Domestic UAE |
+| Unknown Emirate for Box 1 breakdown | Flag for reviewer — Emirate must be determined |
+| Unknown business-use proportion (vehicle, phone) | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge (non-resident supplier) |
+| Unknown blocked-input status (entertainment, motor vehicle, personal benefit) | Blocked |
+| Unknown whether transaction is in scope | In scope |
+| Unknown Designated Zone involvement | Treat as mainland (standard VAT rules) |
+
+**Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | AED 20,000 |
+| HIGH tax-delta on a single conservative default | AED 1,000 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | AED 25,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A qualified tax agent or registered tax advisor must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax advisor and document the gap.
+**Minimum viable** — bank statement for the quarter in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any UAE business bank: Emirates NBD, First Abu Dhabi Bank (FAB), Abu Dhabi Commercial Bank (ADCB), Mashreq Bank, Dubai Islamic Bank, RAKBANK, Commercial Bank of Dubai, HSBC UAE, Standard Chartered UAE, Citibank UAE, Revolut Business, Wise Business, or any other.
 
----
+**Recommended** — sales invoices for the period (especially for zero-rated supplies and exports), purchase invoices for any input tax claim above AED 1,000, the client's TRN (15-digit number) in writing, and the Emirate of the client's establishment.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete invoice register, VAT registration certificate from FTA, prior period VAT201, reconciliation of any excess input tax carried forward.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This VAT201 was produced from bank statement alone. The reviewer must verify, before approval, that input tax claims above AED 1,000 are supported by valid tax invoices, that all reverse charge and zero-rating classifications match the supplier's/customer's documentation, and that the Emirate breakdown in Box 1 is correct."
 
-1. **Entity name and TRN** [T1] -- 15-digit Tax Registration Number (format: numeric, e.g., 100123456789012). The TRN must appear on all tax invoices, returns, and official VAT correspondence.
-2. **Legal form** [T1] -- LLC, sole establishment, branch, free zone entity, etc.
-3. **VAT registration date** [T1] -- when the entity became VAT-registered.
-4. **Tax period** [T1] -- quarterly or monthly (as assigned by FTA). Registrants cannot choose their own period without FTA approval.
-5. **Industry/sector** [T2] -- impacts zero-rating eligibility (healthcare, education, real estate).
-6. **Does the business make exempt supplies?** [T2] -- If yes, input tax apportionment required.
-7. **Is the business in a Designated Zone?** [T2] -- Impacts goods treatment significantly. Designated Zones are treated as being outside the UAE for VAT purposes, but only for goods transactions (Art. 51, VAT Decree-Law).
-8. **Does the business import goods?** [T1] -- Customs documentation required.
-9. **Does the business receive services from non-resident suppliers?** [T1] -- Reverse charge required.
-10. **Carried forward excess input tax from prior period?** [T1] -- Needed for net position. Note: from 1 January 2026, a five-year limitation applies to excess input VAT refunds.
+### UAE-specific refusal catalogue
 
-**If items 1-4 are unknown, STOP. Do not classify any transactions until registration details and period are confirmed.**
+If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-### Territorial Scope [T1]
+**R-AE-1 — Partial exemption with significant exempt supplies.** *Trigger:* client makes both taxable and exempt supplies and the exempt proportion is not trivial (more than incidental bank charges/interest). *Message:* "You make both taxable and exempt supplies. Your input tax must be apportioned under Articles 55-56 of the VAT Decree-Law. This skill cannot compute the apportionment ratio. Please engage a registered tax agent to determine and confirm the recovery rate before input tax is claimed."
 
-- VAT applies throughout all seven Emirates: Abu Dhabi, Dubai, Sharjah, Ajman, Umm Al Quwain (UAQ), Ras Al Khaimah (RAK), and Fujairah.
-- The UAE is a member of the Gulf Cooperation Council (GCC). The GCC VAT Framework Agreement provides for mutual recognition, but as of 2026, only Saudi Arabia, Bahrain, and Oman have implemented VAT alongside the UAE. Kuwait and Qatar have not yet implemented.
-- **Legislation:** VAT Decree-Law Art. 1 (definitions), Art. 2 (scope), Art. 51 (Designated Zones).
+**R-AE-2 — VAT group registration.** *Trigger:* client is part of a VAT group (Tax Group). *Message:* "VAT group registrations require consolidation across all group members and disregard of intra-group supplies. This skill covers single-entity VAT201 returns only. Please engage a registered tax agent."
 
-### Currency [T1]
+**R-AE-3 — Designated Zone goods movement classification.** *Trigger:* client operates in a Designated Zone and the transaction involves movement of goods between Designated Zones, or from a Designated Zone to mainland, or vice versa. *Message:* "Designated Zone goods movements have specific import/export treatment under Article 51 of the VAT Decree-Law. The classification depends on the specific zone's designation status and the direction of movement. This skill applies standard mainland rules only. Please engage a registered tax agent to confirm the Designated Zone treatment."
 
-All amounts on the VAT201 form are reported in **United Arab Emirates Dirhams (AED)**. Foreign currency transactions must be converted to AED at the exchange rate published by the UAE Central Bank on the date of supply.
+**R-AE-4 — Profit margin scheme.** *Trigger:* client deals in second-hand goods, art, or collectables under the profit margin scheme. *Message:* "Profit margin scheme transactions require transaction-level margin computation under Article 29 of the Executive Regulation. Out of scope."
 
-**Legislation:** Executive Regulation Art. 69.
+**R-AE-5 — Capital assets scheme adjustment.** *Trigger:* the period contains an adjustment to previously deducted input tax on a capital asset under Article 57 (assets exceeding AED 5,000,000 for buildings or 5-year useful life for other assets). *Message:* "Capital assets scheme adjustments are too fact-sensitive for this skill. They require tracking the original deduction, current use, and computing the annual fraction over 10 years (buildings) or 5 years (other assets). Please engage a registered tax agent."
+
+**R-AE-6 — Concerned goods (hydrocarbons) reverse charge.** *Trigger:* client supplies or acquires crude oil, refined petroleum products, hydrocarbons, or natural gas between VAT-registered persons under Article 48(2). *Message:* "Concerned goods reverse charge under Cabinet Decision No. 25 of 2018 has specific reporting requirements. Out of scope."
+
+**R-AE-7 — Tourist Refund Scheme operator.** *Trigger:* client is a retailer or central refund agency operating the Tourist Refund Scheme and needs to report Box 2 amounts. *Message:* "Tourist Refund Scheme reporting requires specific Box 2 entries from approved operator reports (Planet/Fintrax). This skill does not compute TRS amounts. Obtain the operator report and enter Box 2 directly."
 
 ---
 
-## Step 1: Transaction Classification Rules
+## Section 3 — Supplier pattern library (the lookup table)
 
-### 1.1 Classification Framework [T1]
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
 
-Every transaction must be classified into one of four categories:
+**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific.
 
-| Category | VAT Rate | Output VAT | Input Tax Recovery | Box |
-|----------|----------|------------|-------------------|-----|
-| Standard Rated | 5% | Yes, 5% | Yes | Box 1 (sales), Box 9 (purchases) |
-| Zero-Rated | 0% | No (0%) | Yes | Box 4 (sales) |
-| Exempt | N/A | No | No | Box 5 (sales) |
-| Out of Scope | N/A | No | No | Not reported |
+### 3.1 UAE banks (fees exempt — exclude)
 
-### 1.2 Determining Transaction Type [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| EMIRATES NBD, ENBD | EXCLUDE for bank charges/fees | Financial service, exempt |
+| FAB, FIRST ABU DHABI BANK, NBAD | EXCLUDE for bank charges/fees | Same |
+| ADCB, ABU DHABI COMMERCIAL BANK | EXCLUDE for bank charges/fees | Same |
+| MASHREQ, MASHREQBANK | EXCLUDE for bank charges/fees | Same |
+| DUBAI ISLAMIC BANK, DIB | EXCLUDE for bank charges/fees | Same |
+| RAKBANK, NATIONAL BANK OF RAK | EXCLUDE for bank charges/fees | Same |
+| CBD, COMMERCIAL BANK OF DUBAI | EXCLUDE for bank charges/fees | Same |
+| HSBC UAE, HSBC MIDDLE EAST | EXCLUDE for bank charges/fees | Same |
+| STANDARD CHARTERED UAE | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
+| INTEREST, PROFIT RATE, MURABAHA | EXCLUDE | Interest/profit income/expense, exempt financial service |
+| LOAN, FINANCING, IJARA (principal) | EXCLUDE | Loan/financing principal movement, out of scope |
 
-- **Supply of goods:** Transfer of ownership or the right to dispose of goods (Art. 2, VAT Decree-Law).
-- **Supply of services:** Any supply that is not a supply of goods (Art. 3, VAT Decree-Law).
-- **Deemed supply:** Goods/services used for non-business purposes; disposal of assets without consideration (Art. 6-7, VAT Decree-Law). Free samples/gifts exceeding AED 500 per recipient per year trigger deemed supply treatment.
-- **Out of scope:** Salaries/wages, government fees, fines, dividends, loan repayments, bank interest (non-financial-services), personal transfers.
+### 3.2 UAE government, regulators, and statutory bodies (exclude entirely)
 
-**Legislation:** VAT Decree-Law Art. 1-7; Executive Regulation Art. 1-5.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| FTA, FEDERAL TAX AUTHORITY | EXCLUDE | Tax payment, not a supply |
+| VAT PAYMENT, TAX PAYMENT | EXCLUDE | VAT/tax payment |
+| ZATCA (if cross-border payment to Saudi authority) | EXCLUDE | Foreign tax payment |
+| CUSTOMS, DUBAI CUSTOMS, ABU DHABI CUSTOMS | EXCLUDE for customs duty | Customs duty is not VAT (but check for import VAT in Box 6) |
+| DED, DEPARTMENT OF ECONOMIC DEVELOPMENT | EXCLUDE | Trade licence fees, government sovereign act |
+| DMCC, DAFZA, JAFZA, SAIF ZONE (licence fees) | EXCLUDE | Free zone authority fees, government |
+| DIFC, ADGM | EXCLUDE for registration/licence fees | Financial centre authority fees |
+| MOHRE, MINISTRY OF HUMAN RESOURCES | EXCLUDE | Government labour fees |
+| IMMIGRATION, GDRFA | EXCLUDE | Visa/immigration fees |
+| MUNICIPALITY, BALADIYA | EXCLUDE | Government fees |
+| RTA, ROADS AND TRANSPORT AUTHORITY | EXCLUDE | Government fees (Salik tolls are out of scope) |
 
-### 1.3 Place of Supply Rules [T1]
+### 3.3 UAE utilities
 
-| Transaction Type | Place of Supply | Reference |
-|-----------------|----------------|-----------|
-| Goods without transport | Where goods are at time of supply | Art. 27 |
-| Goods with transport | Where transport starts | Art. 27 |
-| Goods assembled/installed | Where assembly/installation takes place | Art. 28 |
-| Water/energy via network | Where delivered | Art. 28 |
-| Services (general rule) | Where supplier has place of residence | Art. 29 |
-| Services (B2B override) | Where recipient has place of residence | Art. 30 |
-| Real estate services | Where real estate is located | Art. 31 |
-| Transport services | Where transport starts | Art. 32 |
-| Telecommunications | Where SIM was issued / where received | Art. 33 |
-| Electronic services (B2C) | Where customer resides | Art. 34 |
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| DEWA, DUBAI ELECTRICITY AND WATER | Domestic 5% | 9 | Electricity and water — overhead, input tax claimable |
+| ADDC, ABU DHABI DISTRIBUTION COMPANY | Domestic 5% | 9 | Same |
+| SEWA, SHARJAH ELECTRICITY AND WATER | Domestic 5% | 9 | Same |
+| FEWA, FEDERAL ELECTRICITY AND WATER | Domestic 5% | 9 | Same (covers Ajman, UAQ, Fujairah) |
+| AADC, AL AIN DISTRIBUTION COMPANY | Domestic 5% | 9 | Same |
+| DISTRICT COOLING, EMPOWER, TABREED | Domestic 5% | 9 | District cooling services |
 
-**Legislation:** VAT Decree-Law Art. 27-34; Executive Regulation Art. 14-21.
+### 3.4 UAE telecoms
 
-### 1.4 Date of Supply (Tax Point) [T1]
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| DU, EMIRATES INTEGRATED TELECOM, EITC | Domestic 5% | 9 | Telecoms/broadband — overhead |
+| ETISALAT, E&, EMIRATES TELECOM | Domestic 5% | 9 | Same |
+| VIRGIN MOBILE UAE | Domestic 5% | 9 | MVNO telecoms |
 
-The date of supply determines in which tax period the supply must be reported:
+### 3.5 Insurance (check type)
 
-| Event | Date of Supply | Reference |
-|-------|---------------|-----------|
-| Goods supplied without installation | Earlier of: removal date or date made available | Art. 25(1) |
-| Goods with installation | Date installation/assembly completed | Art. 25(2) |
-| Services | Date services performed or completed | Art. 25(3) |
-| Payment received before supply | Date payment received (partial or full) | Art. 25(4) |
-| Tax invoice issued before supply | Date of invoice | Art. 25(5) |
-| Periodic supplies (continuous) | Earlier of: invoice date or payment due date | Art. 25(6) |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| LIFE INSURANCE, METLIFE, ZURICH LIFE | EXCLUDE | Life insurance exempt |
+| SALAMA, TAKAFUL, ISLAMIC INSURANCE (life) | EXCLUDE | Life/family takaful exempt |
+| MOTOR INSURANCE, VEHICLE INSURANCE | Domestic 5% | General insurance is standard-rated, input claimable (unless for blocked motor vehicle) |
+| HEALTH INSURANCE, MEDICAL INSURANCE | Domestic 5% | Standard-rated; input claimable unless employee personal benefit |
+| PROPERTY INSURANCE, FIRE INSURANCE | Domestic 5% | Standard-rated, input claimable |
+| OMAN INSURANCE, AXA GULF, RSA (general) | Domestic 5% | General insurance standard-rated |
 
-**The earliest of the above triggers applies.**
+### 3.6 Transport
 
-**Legislation:** VAT Decree-Law Art. 25-26; Executive Regulation Art. 11-13.
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| CAREEM, UBER UAE | Domestic 5% | 9 | Ride-hailing, standard rated |
+| RTA TAXI, DUBAI TAXI, ABU DHABI TAXI | EXCLUDE | Local passenger transport, exempt |
+| METRO, TRAM, BUS (RTA public transport) | EXCLUDE | Local passenger transport, exempt |
+| SALIK, TOLL | EXCLUDE | Road toll, government fee |
+| EMIRATES (airline, international) | Zero-rated / EXCLUDE | International passenger transport zero-rated |
+| FLY DUBAI, FLYDUBAI | Zero-rated / EXCLUDE | International flights |
+| ETIHAD AIRWAYS | Zero-rated / EXCLUDE | International flights |
+| AIR ARABIA | Zero-rated / EXCLUDE | International flights |
+| DHL EXPRESS UAE, ARAMEX | Domestic 5% | 9 | Courier/express, standard rated |
+| DHL INTERNATIONAL | Reverse charge | 3/10 | Non-resident supplier — check invoice entity |
 
-### 1.5 Supply Classification Lookup Table [T1]
+### 3.7 Food retail and supermarkets
 
-| Supply Description | Category | Rate | Sales Box | Legislation |
-|-------------------|----------|------|-----------|-------------|
-| Sale of goods within UAE | Standard | 5% | Box 1 | Art. 2, 5 |
-| Provision of services within UAE | Standard | 5% | Box 1 | Art. 3, 5 |
-| Export of goods outside UAE | Zero-rated | 0% | Box 4 | Art. 45(1) |
-| Export of services outside UAE | Zero-rated | 0% | Box 4 | Art. 31(1)(a) |
-| International passenger transport | Zero-rated | 0% | Box 4 | Art. 45(2) |
-| International freight transport | Zero-rated | 0% | Box 4 | Art. 45(2) |
-| Supply of aircraft/vessel for international transport | Zero-rated | 0% | Box 4 | Art. 45(3) |
-| First sale of residential property (<3 years) | Zero-rated | 0% | Box 4 | Art. 45(4) |
-| Qualifying education services | Zero-rated | 0% | Box 4 | Art. 45(5) |
-| Qualifying healthcare services | Zero-rated | 0% | Box 4 | Art. 45(6) |
-| Investment precious metals (99%+ purity) | Zero-rated | 0% | Box 4 | Art. 45(7) |
-| Crude oil and natural gas | Zero-rated | 0% | Box 4 | Art. 45(8) |
-| Financial services (interest/margin-based) | Exempt | N/A | Box 5 | Art. 46(1) |
-| Residential property (resale/lease after first supply) | Exempt | N/A | Box 5 | Art. 46(2) |
-| Bare land | Exempt | N/A | Box 5 | Art. 46(3) |
-| Local passenger transport | Exempt | N/A | Box 5 | Art. 46(4) |
-| Life insurance and reinsurance | Exempt | N/A | Box 5 | Art. 46(5) |
-| Salary payment | Out of scope | N/A | None | N/A |
-| Dividend payment | Out of scope | N/A | None | N/A |
-| Government fine/penalty | Out of scope | N/A | None | N/A |
-| Loan repayment (principal) | Out of scope | N/A | None | N/A |
-| Transfer of business as going concern | Out of scope | N/A | None | Art. 7(2) |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CARREFOUR, CARREFOUR UAE, MAF | Default BLOCK input tax | Personal provisioning. Claimable only if F&B/hospitality business purchasing stock-in-trade |
+| LULU, LULU HYPERMARKET | Default BLOCK | Same |
+| SPINNEYS, WAITROSE UAE | Default BLOCK | Same |
+| CHOITHRAMS | Default BLOCK | Same |
+| NOON DAILY, NOON.COM (grocery) | Default BLOCK | Same |
+| RESTAURANTS, CAFES (any named restaurant) | Default BLOCK | Entertainment blocked under Exec. Reg. Art. 53(1)(a) |
 
-### 1.6 Purchases Classification Lookup Table [T1]
+### 3.8 SaaS — non-resident suppliers (reverse charge)
 
-| Purchase Description | Category | Input Tax | Purchase Box | Legislation |
-|---------------------|----------|-----------|-------------|-------------|
-| Domestic purchase from VAT-registered supplier | Standard | Recoverable | Box 9 | Art. 54 |
-| Import of goods via customs | Import | Recoverable | Box 6 | Art. 47-49 |
-| Purchase from non-resident supplier (reverse charge) | Reverse charge | Recoverable (input side) | Box 3 / Box 10 | Art. 48 |
-| Purchase related to exempt supplies | Mixed | Not recoverable (apportionment) | Box 9 | Art. 55 |
-| Blocked expense (entertainment) | Blocked | Not recoverable | Box 9 (no tax recovery) | Art. 53 |
-| Salary expense | Out of scope | N/A | Not reported | N/A |
+When the client receives services from a non-resident supplier who is not VAT-registered in UAE: report in Box 3 (value + 5% VAT output side), claim input in Box 10 (if entitled). Net effect zero for fully taxable business.
 
-### 1.7 Zero-Rated Supply Conditions [T1/T2]
+| Pattern | Billing entity | Box | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | 3/10 | Non-resident, reverse charge |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 3/10 | Non-resident, reverse charge |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 3/10 | Non-resident, reverse charge |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 3/10 | Non-resident, reverse charge |
+| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 3/10 | Non-resident, reverse charge |
+| AWS, AMAZON WEB SERVICES | AWS Inc (US) or AWS EMEA SARL (LU) | 3/10 | Non-resident, reverse charge |
+| NOTION | Notion Labs Inc (US) | 3/10 | Non-resident, reverse charge |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 3/10 | Non-resident, reverse charge |
+| OPENAI, CHATGPT | OpenAI Inc (US) | 3/10 | Non-resident, reverse charge |
+| GITHUB | GitHub Inc (US) | 3/10 | Non-resident, reverse charge |
+| FIGMA | Figma Inc (US) | 3/10 | Non-resident, reverse charge |
+| CANVA | Canva Pty Ltd (AU) | 3/10 | Non-resident, reverse charge |
+| SLACK | Slack Technologies LLC (US) | 3/10 | Non-resident, reverse charge |
+| ATLASSIAN (Jira, Confluence) | Atlassian Pty Ltd (AU) | 3/10 | Non-resident, reverse charge |
+| ZOOM | Zoom Video Communications Inc (US) | 3/10 | Non-resident, reverse charge |
+| HUBSPOT | HubSpot Inc (US) | 3/10 | Non-resident, reverse charge |
+| STRIPE (subscription) | Stripe Inc (US) | 3/10 | Non-resident, reverse charge |
+| SHOPIFY | Shopify Inc (CA) | 3/10 | Non-resident, reverse charge |
+| TWILIO | Twilio Inc (US) | 3/10 | Non-resident, reverse charge |
 
-#### Exports of Goods (Art. 45(1)) [T1]
-- Direct export: goods physically leave the UAE within 90 days of supply.
-- Indirect export: overseas customer arranges transport; goods leave UAE within 90 days.
-- Evidence required: customs export declaration, bill of lading/airway bill, proof of delivery outside UAE.
-- **Legislation:** Executive Regulation Art. 30.
+### 3.9 Payment processors
 
-#### International Transport (Art. 45(2)) [T1]
-- Transport of passengers and goods that starts or ends outside the UAE, or crosses the UAE as part of an international journey.
-- Includes ancillary services directly connected to international transport.
-- **Legislation:** Executive Regulation Art. 31.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees, exempt financial service |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| TELR, NETWORK INTERNATIONAL, PAYFORT (AMAZON PAYMENT SERVICES) | Check invoice | If UAE entity: domestic 5%. Fees may be exempt financial service |
 
-#### Means of Transport for International Use (Art. 45(3)) [T1]
-- Supply, lease, repair, maintenance, and conversion of aircraft and vessels used for international transport.
-- Supply of goods and services for use on board such aircraft or vessels.
-- **Legislation:** Executive Regulation Art. 32.
+### 3.10 Freezone suppliers
 
-#### First Supply of Residential Property (Art. 45(4)) [T2]
-- First supply of a residential building within **3 years of completion**.
-- "First supply" includes first sale or first lease.
-- The building must be designed or adapted for residential use.
-- **After 3 years from completion, subsequent supplies are exempt (not zero-rated).**
-- Mixed-use properties: [T2] flag for reviewer -- apportionment may be required between residential and commercial portions.
-- **Legislation:** Executive Regulation Art. 33; VAT Public Clarification VATP002.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| Supplier in Designated Zone (goods) | See R-AE-3 — may trigger refusal | Goods from Designated Zone to mainland = import (Box 6) |
+| Supplier in Designated Zone (services) | Domestic 5%, Box 9 | Services in/from Designated Zones follow standard VAT rules |
+| Supplier in non-Designated free zone | Domestic 5%, Box 9 | Non-designated free zones follow standard UAE VAT rules for all supplies |
 
-#### Education Services (Art. 45(5)) [T2]
-- Education services and related goods/services supplied by educational institutions recognized by the competent government authority.
-- Must be included in a curriculum recognized by the federal or emirate-level education authority.
-- Pre-school, school education, and higher education qualify.
-- **Conditions:** The institution must be licensed/recognized. Private tutoring outside recognized institutions is standard rated. [T2] flag if institution recognition status is unclear.
-- **Legislation:** Executive Regulation Art. 34.
+### 3.11 E-commerce and retail platforms
 
-#### Healthcare Services (Art. 45(6)) [T2]
-- Preventive and basic healthcare services as defined by the relevant health authority.
-- Supply of related goods and services directly connected to healthcare treatment.
-- **Conditions:** Must be provided by a licensed healthcare provider. Cosmetic/elective procedures are standard rated unless medically necessary. [T2] flag if procedure classification is unclear.
-- **Legislation:** Executive Regulation Art. 35.
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| NOON, NOON.COM | Domestic 5% | 9 | UAE marketplace, standard rated |
+| AMAZON.AE, SOUQ.COM | Domestic 5% | 9 | UAE marketplace |
+| NAMSHI | Domestic 5% | 9 | Fashion retail |
 
-#### Investment Precious Metals (Art. 45(7)) [T1]
-- Gold, silver, and platinum of **99% purity or higher** (or as specified).
-- Must be investment-grade (tradeable on global markets).
-- Jewellery and manufactured gold items are **standard rated** (not zero-rated).
-- **Legislation:** Executive Regulation Art. 36.
+### 3.12 Professional services (UAE)
 
-#### Crude Oil and Natural Gas (Art. 45(8)) [T1]
-- Supply and import of crude oil and natural gas.
-- Refined petroleum products (petrol, diesel) are **standard rated**.
-- **Legislation:** Executive Regulation Art. 37.
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| LAW FIRM names, ADVOCATES, LEGAL | Domestic 5% | 9 | Legal fees, input claimable if business purpose |
+| ACCOUNTANT, AUDIT FIRM, CPA | Domestic 5% | 9 | Accounting/audit, always claimable |
+| PRO SERVICES, TYPING CENTRE | Domestic 5% | 9 | Government liaison services |
+| NOTARY, NOTARIZATION | Domestic 5% | 9 | Notarial services |
 
-### 1.8 Exempt Supply Rules [T1/T2]
+### 3.13 Payroll and employee costs (exclude entirely)
 
-Exempt supplies are not subject to VAT. No output VAT is charged, and **input tax on costs related to exempt supplies is NOT recoverable**.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES, PAYROLL, WPS | EXCLUDE | Employment, out of scope |
+| END OF SERVICE, GRATUITY, EOSB | EXCLUDE | Employment termination benefit, out of scope |
+| VISA FEES, LABOUR CARD | EXCLUDE | Government fees |
+| HEALTH INSURANCE (employee mandatory) | Domestic 5% | Mandatory employee health insurance is standard rated and input claimable |
 
-#### Financial Services (Art. 46(1)) [T2]
-- **Exempt:** Interest on loans, credit cards, finance leases (margin-based, interest-based financial services).
-- **Standard rated:** Explicit fee-based financial services (e.g., advisory fees, arrangement fees, brokerage commissions, fund management fees).
-- The distinction between margin-based (exempt) and fee-based (standard rated) financial services is critical. [T2] flag when classification is ambiguous.
-- **Legislation:** Executive Regulation Art. 38; VAT Public Clarification VATP011.
+### 3.14 Property and rent
 
-#### Residential Property -- Subsequent Supply/Lease (Art. 46(2)) [T1]
-- Sale of residential property more than 3 years after completion.
-- Lease of residential property.
-- **Commercial property is always standard rated** (sale or lease).
-- **Legislation:** Executive Regulation Art. 39; VAT Public Clarification VATP002.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| COMMERCIAL RENT, OFFICE RENT (with VAT invoice) | Domestic 5%, Box 9 | Commercial property lease, input claimable |
+| RESIDENTIAL RENT, APARTMENT RENT | EXCLUDE | Residential lease, exempt |
+| EJARI, TAWTHEEQ (residential) | EXCLUDE | Residential tenancy registration |
+| WAREHOUSE, INDUSTRIAL RENT | Domestic 5%, Box 9 | Commercial/industrial lease, standard rated |
 
-#### Bare Land (Art. 46(3)) [T1]
-- Supply of bare (undeveloped) land.
-- Land with any building or civil engineering works is NOT bare land.
-- **Legislation:** Executive Regulation Art. 40.
+### 3.15 Internal transfers and exclusions
 
-#### Local Passenger Transport (Art. 46(4)) [T1]
-- Transport of passengers by any means within the UAE.
-- Includes taxis, buses, metro, tram within the UAE.
-- Does NOT include limousine/luxury car hire (standard rated).
-- **Legislation:** Executive Regulation Art. 41.
-
-#### Life Insurance (Art. 46(5)) [T1]
-- Life insurance policies and reinsurance of life insurance.
-- General insurance (property, motor, health, travel) is **standard rated**.
-- **Legislation:** Executive Regulation Art. 42.
-
----
-
-## Step 2: Box/Line Assignment
-
-### VAT201 Form Structure [T1]
-
-The UAE VAT return is filed on **Form VAT201** via the FTA e-Services portal at https://eservices.tax.gov.ae. Filed **exclusively online** -- no paper filing accepted. A Tax Registration Number (TRN) is required for access.
-
-**Legislation:** Tax Procedures Law Art. 28; Executive Regulation Art. 59.
-
-### Deterministic Box Assignment Table [T1]
-
-| Box | Label | What Goes Here | Amount Column | VAT Column | Adjustment Column |
-|-----|-------|---------------|---------------|------------|-------------------|
-| **1** | Standard Rated Supplies | All domestic sales at 5%, broken down by Emirate (1a-1g) | Net value (AED) | 5% of net | If applicable |
-| **2** | Tax Refunds Provided to Tourists | VAT refunded under Tourist Refund Scheme (Planet/Fintrax) | Refund amount | -- | -- |
-| **3** | Supplies Subject to Reverse Charge (Purchases) | Value of taxable supplies received from non-resident suppliers | Net value | 5% VAT | -- |
-| **4** | Zero-Rated Supplies | All zero-rated sales (exports, international transport, first residential, healthcare, education, precious metals, crude oil/gas) | Net value | AED 0 | -- |
-| **5** | Exempt Supplies | All exempt sales (margin-based financial services, residential lease/resale, bare land, local transport, life insurance) | Net value | -- | -- |
-| **6** | Goods Imported into the UAE | Value of goods imported through customs (including from Designated Zones to mainland) | Net value | 5% VAT | -- |
-| **7** | Adjustments to Output Tax | Credit notes, corrections, bad debt relief, capital asset adjustments | +/- amount | -- | -- |
-| **8** | Total Output Tax Due | **Calculated:** VAT on Box 1 + Box 2 + VAT on Box 3 + VAT on Box 6 + Box 7 | -- | Total | -- |
-| **9** | Standard Rated Expenses | All domestic purchases at 5% from UAE-registered suppliers | Net value | 5% VAT | -- |
-| **10** | Reverse Charge Input Tax | VAT recoverable on reverse charge supplies from Box 3 | -- | VAT amount | -- |
-| **11** | Total Recoverable Input Tax | **Calculated:** VAT on Box 9 + Box 10 - blocked input tax adjustments | -- | Total | -- |
-
-### Box 1 Emirate-Level Breakdown [T1]
-
-| Sub-Box | Emirate | Amount (AED) | VAT Amount (AED) | Adjustment (AED) |
-|---------|---------|-------------|-------------------|-------------------|
-| 1a | Abu Dhabi | Net value | 5% of net | If applicable |
-| 1b | Dubai | Net value | 5% of net | If applicable |
-| 1c | Sharjah | Net value | 5% of net | If applicable |
-| 1d | Ajman | Net value | 5% of net | If applicable |
-| 1e | Umm Al Quwain | Net value | 5% of net | If applicable |
-| 1f | Ras Al Khaimah | Net value | 5% of net | If applicable |
-| 1g | Fujairah | Net value | 5% of net | If applicable |
-
-**Rules for Emirate allocation:**
-- Supplies of goods: Emirate where the goods are delivered or made available to the customer.
-- Supplies of services: Emirate where the supplier's place of business (or fixed establishment providing the service) is located.
-- If a supplier has establishments in multiple Emirates, allocate to the Emirate of the establishment most directly concerned with the supply.
-
-**Legislation:** VAT Decree-Law Art. 29-31 (place of supply); Executive Regulation Art. 14-19.
-
-### Populating the VAT201 Form [T1]
-
-1. **Box 1:** Sum all standard rated sales by Emirate.
-2. **Box 2:** Enter tourist refund amounts (from approved operator reports).
-3. **Box 3:** Sum all reverse charge supplies received from non-residents.
-4. **Box 4:** Sum all zero-rated sales.
-5. **Box 5:** Sum all exempt sales.
-6. **Box 6:** Sum all imported goods values.
-7. **Box 7:** Enter any adjustments (credit notes, corrections, bad debt relief).
-8. **Box 8:** Calculate total output tax.
-9. **Box 9:** Sum all standard rated purchases.
-10. **Box 10:** Enter reverse charge input tax from Box 3.
-11. **Box 11:** Calculate total recoverable input tax (after blocked items and apportionment).
-
-### Validation Checks [T1]
-
-1. Cross-check: Box 8 (output) minus Box 11 (input) = Net VAT payable or refundable.
-2. Verify Emirate-level breakdown in Box 1 sums to total standard rated supplies.
-3. Verify reverse charge entries appear on both output (Box 3) and input (Box 10) sides.
-4. Confirm no blocked input tax has been included in Box 11.
-5. Submit via FTA e-Services portal before the 28th of the month following period end.
-6. Make payment before the same deadline.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| OWN TRANSFER, INTERNAL, BETWEEN ACCOUNTS | EXCLUDE | Internal movement |
+| DIVIDEND, DIV PAYMENT | EXCLUDE | Dividend, out of scope |
+| LOAN REPAYMENT, FINANCING REPAYMENT | EXCLUDE | Principal, out of scope |
+| CASH WITHDRAWAL, ATM | TIER 2 — ask | Default exclude; ask what cash was spent on |
+| PARTNER DRAWING, OWNER DRAWING | EXCLUDE | Drawing, out of scope |
 
 ---
 
-## Step 3: Reverse Charge Mechanics
+## Section 4 — Worked examples
 
-### 3.1 When Reverse Charge Applies (Art. 48, VAT Decree-Law) [T1]
+These are six fully worked classifications drawn from a hypothetical bank statement of a UAE-based self-employed IT consultant operating from Dubai.
 
-The reverse charge applies when a **UAE-registered taxable person** receives:
+### Example 1 — Non-resident SaaS reverse charge (Notion)
 
-1. **Services from a non-resident supplier** who does not have a place of residence in the UAE and is not registered for UAE VAT.
-2. **Goods from a non-resident supplier** where the goods are located in the UAE at the time of supply.
-3. **Concerned Goods** as specified by Cabinet Decision (e.g., hydrocarbons between registrants).
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; AED 58.72`
 
-### 3.2 Reverse Charge Step-by-Step [T1]
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.8). No VAT on the invoice. This is a service received from a non-resident supplier not registered for UAE VAT. The client must self-assess reverse charge under Article 48: output VAT at 5% in Box 3/Box 8, input VAT in Box 10/Box 11. Net effect zero for a fully taxable client.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (output) | Box (input) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -58.72 | -58.72 | 2.94 | 5% | 3 / 8 | 10 / 11 | N | — | — |
+
+### Example 2 — Zero-rated export of services
+
+**Input line:**
+`10.04.2026 ; TECHCORP LLC DELAWARE ; CREDIT ; Invoice UAE-2026-018 IT consultancy March ; +18,000.00 ; AED`
+
+**Reasoning:**
+Incoming AED 18,000 from a US company. The client provides IT consulting services to a non-resident customer with no UAE establishment. Under Article 31(1)(a) and Article 45, this is a zero-rated export of services. Report in Box 4. No output VAT. Confirm: the customer has no place of residence in the UAE.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | TECHCORP LLC DELAWARE | +18,000.00 | +18,000.00 | 0 | 0% | 4 | Y | Q1 (HIGH) | "Verify customer has no UAE establishment" |
+
+### Example 3 — Entertainment, blocked
+
+**Input line:**
+`15.04.2026 ; PIERCHIC RESTAURANT DUBAI ; DEBIT ; Client dinner ; -1,200.00 ; AED`
+
+**Reasoning:**
+Restaurant transaction. Client entertainment is blocked under Executive Regulation Article 53(1)(a). Unlike staff meals at the workplace (which may be claimable), client entertainment is a hard block. The input VAT is irrecoverable. Default: full block. No input tax recovery.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | PIERCHIC RESTAURANT | -1,200.00 | -1,200.00 | 0 | — | — | Y | Q2 | "Entertainment: blocked under Art. 53(1)(a)" |
+
+### Example 4 — Domestic standard-rated purchase (office equipment)
+
+**Input line:**
+`18.04.2026 ; SHARAF DG ELECTRONICS ; DEBIT ; Invoice SH-2026-441 Laptop Dell ; -4,200.00 ; AED`
+
+**Reasoning:**
+Sharaf DG is a UAE retailer. The gross amount is AED 4,200 inclusive of 5% VAT. Net = 4,200 x (100/105) = AED 4,000. VAT = AED 200. Standard-rated domestic purchase used for business. Input tax claimable. Goes to Box 9 (purchases) and Box 11 (input tax).
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (purchase) | Box (input) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | SHARAF DG ELECTRONICS | -4,200.00 | -4,000.00 | -200.00 | 5% | 9 | 11 | N | — | — |
+
+### Example 5 — Motor vehicle expense, blocked
+
+**Input line:**
+`22.04.2026 ; HERTZ UAE ; DEBIT ; Monthly car rental ; -3,500.00 ; AED`
+
+**Reasoning:**
+Car rental payment. Input VAT on motor vehicles (purchase, rental, lease, and running costs) is blocked under Executive Regulation Article 53(1)(b). The exceptions are: vehicle is stock-in-trade (car dealership), used for licensed taxi service, used for a vehicle rental business (where renting is the business), or designed exclusively for business goods transport. An IT consultant does not qualify. Default: full block.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | HERTZ UAE | -3,500.00 | -3,500.00 | 0 | — | — | Y | Q3 | "Motor vehicle: blocked under Art. 53(1)(b)" |
+
+### Example 6 — Residential rent (exempt, excluded)
+
+**Input line:**
+`01.04.2026 ; EMAAR PROPERTIES ; DEBIT ; April apartment rent ; -8,000.00 ; AED`
+
+**Reasoning:**
+Residential apartment rent. Residential property lease is exempt under Article 46(2). No VAT is charged. No input tax to claim. Exclude from the return entirely.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 01.04.2026 | EMAAR PROPERTIES | -8,000.00 | — | — | — | — | N | — | "Residential rent: exempt" |
+
+---
+
+## Section 5 — Tier 1 classification rules (compressed)
+
+Each rule states the legal source and the box mapping. Apply silently if the data is unambiguous.
+
+### 5.1 Standard rate 5% (VAT Decree-Law Art. 2, 5)
+
+Default rate for any taxable supply in the UAE unless zero-rated or exempt. Sales go to Box 1 (with Emirate breakdown 1a–1g). Output tax goes to Box 8. Purchases go to Box 9. Input tax goes to Box 11.
+
+### 5.2 Zero-rated supplies (Art. 45)
+
+Exports of goods outside UAE with proof of export (customs declaration, bill of lading). Exports of services to non-resident with no UAE establishment. International passenger/freight transport. First supply of residential property within 3 years of completion. Qualifying education and healthcare from recognised/licensed providers. Investment precious metals (99%+ purity). Crude oil and natural gas. All go to Box 4. No output VAT. Full input tax recovery on related costs.
+
+### 5.3 Exempt supplies (Art. 46)
+
+Financial services based on interest or implicit margin (lending, deposits, Islamic finance equivalents). Residential property resale/lease after first supply. Bare (undeveloped) land. Local passenger transport (taxis, buses, metro within UAE — not limousine/luxury hire). Life insurance and reinsurance. Go to Box 5. No output VAT. No input tax recovery on directly attributable costs.
+
+### 5.4 Out of scope
+
+Salaries, wages, end-of-service gratuity, dividends, government fines/penalties, loan principal, TOGC, Salik tolls, government licence fees. Not reported on VAT201. Exclude entirely.
+
+### 5.5 Reverse charge — services from non-resident (Art. 48)
+
+When the client receives services from a non-resident supplier who does not have a place of residence in UAE and is not UAE VAT-registered: self-assess output VAT at 5% in Box 3, claim input tax in Box 10 (if entitled). Net effect zero for a fully taxable client.
+
+### 5.6 Reverse charge — import of goods (Art. 47-49)
+
+Goods imported via customs: VAT paid at border (or deferred under customs scheme). Report in Box 6 (value + VAT). Input tax claimable in Box 11. Customs declaration is the supporting document.
+
+### 5.7 Domestic purchases — standard rated
+
+Input tax on a valid tax invoice from a UAE VAT-registered supplier is recoverable for purchases used in taxable business activity. Subject to blocked-input rules (5.9). Map to Box 9 (value) and Box 11 (input tax).
+
+### 5.8 Box 1 Emirate breakdown
+
+Goods: allocate to the Emirate where goods are delivered or made available. Services: allocate to the Emirate where the supplier's establishment providing the service is located. If multiple establishments, allocate to the most directly concerned. Each sub-box (1a–1g) carries its own net value and VAT column.
+
+### 5.9 Blocked input tax (Exec. Reg. Art. 53)
+
+The following categories have zero VAT recovery:
+- Entertainment, hospitality, and recreation for non-business purposes — Art. 53(1)(a). Exception: staff meals at the workplace are claimable.
+- Motor vehicles: purchase, hire, lease, and running costs (fuel, maintenance, insurance) — Art. 53(1)(b). Exceptions: stock-in-trade (car dealership), licensed taxi service, vehicle rental business, vehicles designed exclusively for business goods transport, emergency vehicles.
+- Employee personal benefits: gym, personal phone, personal accommodation (unless required by law) — Art. 53(1)(c).
+
+Blocked categories override any other recovery rule. Check blocked status before applying recovery.
+
+### 5.10 Free samples and gifts
+
+Gifts not exceeding AED 500 per recipient per year: no deemed supply. Above AED 500: deemed supply, output VAT at 5% due on cost. Report in Box 1.
+
+### 5.11 Credit notes and adjustments
+
+Credit notes issued reduce output tax. Credit notes received reduce input tax. Enter in Box 7 (adjustments to output tax). For errors in prior returns: if tax difference exceeds AED 10,000, mandatory Voluntary Disclosure. If AED 10,000 or less, adjust in next return.
+
+### 5.12 Sales — domestic standard
+
+Charge 5% on all local sales of goods and services. Map to Box 1 (with Emirate breakdown) and Box 8 (output tax).
+
+### 5.13 Sales — zero-rated exports
+
+Goods exported outside UAE: Box 4. Services to non-resident with no UAE establishment: Box 4. Evidence required: customs export declaration, bill of lading, proof of delivery outside UAE, or contract with non-resident.
+
+### 5.14 Local passenger transport (exempt)
+
+Taxis, buses, metro, tram within UAE: exempt under Art. 46(4). Not standard rated. Limousine and luxury car hire: standard rated. This distinction is important — Careem/Uber ride-hailing is standard rated (not local passenger transport exemption).
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Motor vehicle vs commercial vehicle
+
+*Pattern:* petrol station, parking, car wash, car rental, vehicle maintenance. *Why insufficient:* vehicle type unknown. Motor car expenses are blocked; commercial vehicles (delivery vans, trucks designed for goods) may be claimable. *Default:* 0% recovery. *Question:* "Is this for a passenger car (blocked) or a commercial vehicle designed exclusively for business goods transport?"
+
+### 6.2 Entertainment vs staff welfare
+
+*Pattern:* restaurant, cafe, catering, event venue. *Why insufficient:* client entertainment is blocked; staff meals at the workplace are claimable. *Default:* block. *Question:* "Was this client entertainment (blocked) or a staff meal at the workplace (claimable)?"
+
+### 6.3 Ambiguous SaaS billing entities
+
+*Pattern:* Google, Microsoft, AWS where the billing entity may be a UAE-registered entity or a non-resident. *Default:* reverse charge (non-resident). *Question:* "Could you check the invoice for the legal entity name and TRN? If the supplier has a UAE TRN, this is domestic 5%; if not, reverse charge applies."
+
+### 6.4 Emirate allocation for Box 1
+
+*Pattern:* sales where the delivery Emirate or establishment Emirate is unclear. *Why insufficient:* Box 1 requires breakdown by Emirate. *Default:* flag for reviewer. *Question:* "In which Emirate were these goods delivered / where is the establishment that provided this service?"
+
+### 6.5 Round-number incoming transfers from owner-named counterparties
+
+*Pattern:* large round credit from a name matching the client's name. *Default:* exclude as owner injection. *Question:* "The AED X transfer from [name] — is this a customer payment, your own money going in, or a loan?"
+
+### 6.6 Incoming transfers from foreign counterparties
+
+*Pattern:* foreign bank, foreign currency. *Default:* domestic 5%. *Question:* "Was this a service to an overseas customer (potentially zero-rated)? Does the customer have a place of residence in the UAE?"
+
+### 6.7 Insurance type determination
+
+*Pattern:* insurance premium payment. *Why insufficient:* life insurance is exempt; general insurance (motor, property, health) is standard rated. *Default:* exclude (exempt default). *Question:* "Is this life insurance (exempt) or general/property/motor insurance (standard rated, input claimable)?"
+
+### 6.8 Residential vs commercial property
+
+*Pattern:* rent payment, property-related payment. *Why insufficient:* residential lease is exempt; commercial lease is standard rated. *Default:* residential (exempt). *Question:* "Is this a commercial property (VAT claimable) or residential (exempt)?"
+
+### 6.9 Designated Zone involvement
+
+*Pattern:* counterparty in a known free zone (JAFZA, DAFZA, KIZAD, etc.). *Why insufficient:* treatment depends on whether the zone is a Designated Zone and whether the transaction involves goods or services. *Default:* treat as mainland (standard 5%). *Question:* "Is this supplier in a Designated Zone? Is the transaction for goods or services?"
+
+### 6.10 Employee health insurance
+
+*Pattern:* health/medical insurance premium. *Why insufficient:* mandatory employee health insurance is claimable; additional voluntary benefits may be blocked as personal employee benefit. *Default:* claimable (mandatory DHA/HAAD requirement). *Question:* "Is this mandatory employee health insurance required by law, or voluntary additional coverage?"
+
+### 6.11 Cash withdrawals
+
+*Pattern:* ATM, cash withdrawal. *Default:* exclude as owner drawing. *Question:* "What was the cash used for?"
+
+### 6.12 Outgoing transfers to individuals
+
+*Pattern:* outgoing to private-looking names. *Default:* exclude as drawings/salary. *Question:* "Was this a contractor payment (with invoice), salary, or personal transfer?"
+
+---
+
+## Section 7 — Excel working paper template (UAE-specific)
+
+The base specification is in `vat-workflow-base` Section 3. This section provides the UAE-specific overlay.
+
+### Sheet "Transactions"
+
+Columns A–L per the base. Column H ("Box code") accepts: 1a, 1b, 1c, 1d, 1e, 1f, 1g, 3, 4, 5, 6, 9, 10, RC. Use blank for excluded transactions. Column M: Emirate (for Box 1 entries). For reverse-charge transactions, enter "RC" in column H.
+
+### Sheet "Box Summary"
 
 ```
-Step 1: Identify supply from non-resident supplier (goods or services).
-Step 2: Determine the value of supply (contract value, excluding any foreign VAT).
-Step 3: Self-assess output VAT at 5% on the value of supply.
-Step 4: Report in Box 3 (value) and include 5% VAT in output tax.
-Step 5: If entitled to input tax recovery, report the same VAT in Box 10.
-Step 6: Net effect for fully taxable business = zero.
+Output:
+| 1a | Standard-rated supplies — Abu Dhabi | =SUMIFS(Transactions!E:E, Transactions!M:M, "Abu Dhabi") |
+| 1b | Standard-rated supplies — Dubai | =SUMIFS(Transactions!E:E, Transactions!M:M, "Dubai") |
+| 1c | Standard-rated supplies — Sharjah | =SUMIFS(...) |
+| 1d-1g | (Ajman, UAQ, RAK, Fujairah) | =SUMIFS(...) |
+| 1  | Total standard-rated supplies | =SUM(1a:1g) |
+| 3  | Reverse charge supplies | =SUMIFS(Transactions!E:E, Transactions!H:H, "RC") |
+| 4  | Zero-rated supplies | =SUMIFS(Transactions!E:E, Transactions!H:H, "4") |
+| 5  | Exempt supplies | =SUMIFS(Transactions!E:E, Transactions!H:H, "5") |
+| 6  | Goods imported | =SUMIFS(Transactions!E:E, Transactions!H:H, "6") |
+| 8  | Total output tax | =C[1_row]*0.05 + C[3_row]*0.05 + C[6_row]*0.05 |
+
+Input:
+| 9  | Standard-rated expenses | =SUMIFS(Transactions!E:E, Transactions!H:H, "9") |
+| 10 | Reverse charge input tax | =C[3_row]*0.05 |
+| 11 | Total recoverable input tax | =C[9_row]*0.05 + C[10_row] |
 ```
 
-**Note (effective 1 January 2026):** Taxpayers are no longer required to issue a tax invoice to themselves for imports under the reverse charge mechanism.
-
-### 3.3 Reverse Charge -- Import of Goods [T1]
-
-| Import Method | Treatment | Reference |
-|--------------|-----------|-----------|
-| Via Customs (standard) | VAT paid at customs border (or deferred under customs scheme) | Art. 47 |
-| Customs deferment scheme | VAT accounted for via VAT return (Box 6) | Art. 48 |
-| From Designated Zone to mainland | Treated as import; VAT due via return (Box 6) | Art. 51 |
-
-**Legislation:** VAT Decree-Law Art. 47-49; Executive Regulation Art. 39-42.
-
-### 3.4 Reverse Charge -- Services from Non-Resident [T1]
-
-| Scenario | Reverse Charge Applies? | Box |
-|----------|------------------------|-----|
-| Non-resident supplier, services consumed in UAE | Yes | Box 3 / Box 10 |
-| Non-resident supplier registered for UAE VAT | No (supplier charges VAT) | Box 9 |
-| GCC supplier (from implementing state) | Depends on GCC mutual agreement status | [T2] flag |
-| Out-of-scope categories (wages, dividends) | NEVER | Not reported |
-
-**Legislation:** VAT Decree-Law Art. 48; Executive Regulation Art. 33.
-
-### 3.5 Concerned Goods (Art. 48(2)) [T1]
-
-Certain categories of goods are subject to reverse charge when supplied between VAT-registered persons within the UAE:
-
-- Crude oil and refined petroleum products.
-- Hydrocarbons.
-- Natural gas.
-
-The recipient (buyer) accounts for the VAT rather than the supplier.
-
-**Legislation:** VAT Decree-Law Art. 48(2); Cabinet Decision No. 25 of 2018.
-
----
-
-## Step 4: Deductibility Check
-
-### 4.1 General Right to Recover (Art. 54, VAT Decree-Law) [T1]
-
-A taxable person may recover input tax incurred on goods and services used, or intended to be used, for making **taxable supplies** (standard rated or zero-rated).
-
-**Conditions for recovery:**
-1. The person must be a VAT-registered taxable person.
-2. The goods/services must be used for making taxable supplies.
-3. A valid tax invoice must be held.
-4. The input tax must not fall into a blocked category.
-
-**Legislation:** VAT Decree-Law Art. 54; Executive Regulation Art. 43-46.
-
-### 4.2 Blocked Input Tax (Art. 53, Executive Regulation) [T1]
-
-The following categories of input tax are **NOT recoverable** regardless of business purpose:
-
-| Blocked Category | Description | Reference |
-|-----------------|-------------|-----------|
-| Entertainment | Entertainment, hospitality, and recreation services for non-business purposes | Exec. Reg. Art. 53(1)(a) |
-| Motor vehicles | Purchase, hire, or lease of motor vehicles (unless used for taxable supply as stock-in-trade, or the vehicle is specifically designed for the business purpose) | Exec. Reg. Art. 53(1)(b) |
-| Employee personal benefits | Goods/services provided for personal benefit of employees (not required by law and not a deemed supply) | Exec. Reg. Art. 53(1)(c) |
-
-#### Entertainment Block Details [T1]
-- Hospitality of any kind provided to anyone other than employees.
-- Client entertainment (meals, events, gifts).
-- **Exception:** Entertainment provided to employees as part of employment (e.g., staff meals in the workplace) is NOT blocked.
-- **Legislation:** Executive Regulation Art. 53(1)(a).
-
-#### Motor Vehicle Block Details [T1]
-- Purchase, rental, or lease of motor vehicles.
-- Running costs (fuel, maintenance, insurance) for blocked vehicles are also blocked.
-- **Exceptions where recovery IS allowed:**
-  - Vehicle is stock-in-trade (e.g., car dealership).
-  - Vehicle is used for licensed taxi services.
-  - Vehicle is used for a rental business (renting vehicles is the business activity).
-  - Vehicle is designed and used exclusively for business transport of goods (e.g., delivery van with no passenger seats).
-  - Emergency vehicles for licensed operators.
-- [T2] flag if client claims vehicle is purely for business -- reviewer must confirm before allowing recovery.
-- **Legislation:** Executive Regulation Art. 53(1)(b).
-
-#### Employee Personal Benefits Block [T1]
-- Gym memberships, personal phone plans, personal accommodation (unless required by law or a condition of employment).
-- **Exception:** Benefits required by UAE labour law (e.g., end-of-service gratuity provisions do not apply here as they are cash, not goods/services).
-- **Legislation:** Executive Regulation Art. 53(1)(c).
-
-### 4.3 Input Tax Recovery Summary Table [T1]
-
-| Expense Type | Taxable Business | Partially Exempt Business | Fully Exempt Business |
-|-------------|-----------------|--------------------------|----------------------|
-| Standard rated purchase (general) | Recoverable | Apportioned | Not recoverable |
-| Standard rated purchase (blocked category) | NOT recoverable | NOT recoverable | NOT recoverable |
-| Zero-rated purchase | No VAT to recover | No VAT to recover | No VAT to recover |
-| Reverse charge (from Box 3/10) | Recoverable | Apportioned | Not recoverable |
-| Import VAT (from Box 6) | Recoverable | Apportioned | Not recoverable |
-
-### 4.4 Apportionment for Mixed Supplies (Art. 55-56, VAT Decree-Law) [T2]
-
-If a taxable person makes both **taxable and exempt supplies**, input tax must be apportioned. Only the portion relating to taxable supplies is recoverable.
-
-**Standard apportionment method:**
-```
-Recoverable input tax = Total input tax x (Value of taxable supplies / Total value of all supplies)
-```
-
-**Rules:**
-1. Input tax directly attributable to taxable supplies: fully recoverable.
-2. Input tax directly attributable to exempt supplies: NOT recoverable.
-3. Residual input tax (overheads): apportioned using the formula above.
-4. An annual adjustment is required at the end of each tax year.
-
-**Special methods:** The FTA may approve alternative apportionment methods if the standard method does not produce a fair result.
-
-**[T2] flag: The apportionment calculation and method must be confirmed by a qualified tax advisor before filing.**
-
-**Legislation:** VAT Decree-Law Art. 55-56; Executive Regulation Art. 47-49.
-
-### 4.5 Capital Assets Scheme (Art. 57, VAT Decree-Law) [T2]
-
-For capital assets exceeding **AED 5,000,000** (buildings/land) or other capital assets with a useful life exceeding **5 years**:
-
-- Input tax recovery is adjusted over a period of:
-  - **10 years** for real estate/buildings.
-  - **5 years** for other capital assets.
-- An annual adjustment is made if the proportion of taxable use changes.
-- The adjustment period starts from the tax period in which the asset was acquired.
-
-**[T2] flag: Capital asset adjustments are complex. Reviewer must confirm the calculation.**
-
-**Legislation:** VAT Decree-Law Art. 57; Executive Regulation Art. 50.
-
-### 4.6 Five-Year Limitation on Excess Input Tax Refunds [T1]
-
-Effective **1 January 2026**, a five-year limitation applies to claims for excess input VAT refunds or offsets. Taxpayers have a one-year transition period for pre-existing claims. If the excess is neither used to offset VAT liabilities nor the subject of a refund request within five years from the end of the tax period in which the excess arose, the right to recover the excess lapses.
-
-**Legislation:** Amendment to Federal Decree-Law No. 7 of 2017 (Tax Procedures Law).
-
----
-
-## Step 5: Derived Calculations
-
-### 5.1 Net Tax Calculation [T1]
+### Sheet "Return Form"
 
 ```
-Net VAT Payable = Box 8 (Total Output Tax) - Box 11 (Total Recoverable Input Tax)
+Net VAT = Box 8 - Box 11
 
-IF Net VAT Payable > 0:
-    Tax is payable to FTA by the due date.
-IF Net VAT Payable < 0:
-    Excess input tax may be:
-    (a) Carried forward to offset against future output tax; OR
-    (b) Refunded by the FTA upon application.
-    Note: Five-year limitation applies from 1 January 2026.
+IF Box 8 > Box 11:
+  VAT payable to FTA
+ELSE:
+  Excess input tax (refundable or carry forward)
 ```
 
-**Legislation:** VAT Decree-Law Art. 55 (net tax); Tax Procedures Law Art. 29 (refunds).
+### Color and formatting conventions
 
-### 5.2 Box 8 -- Total Output Tax Due [T1]
+Per the xlsx skill: blue for hardcoded values, black for formulas, green for cross-sheet references, yellow background for rows where Default? = "Y".
 
-```
-Box 8 = VAT on Box 1 (total across all Emirates) + Box 2 + VAT on Box 3 + VAT on Box 6 + Box 7
-```
+### Mandatory recalc step
 
-### 5.3 Box 11 -- Total Recoverable Input Tax [T1]
+After building the workbook, run:
 
-```
-Box 11 = VAT on Box 9 + Box 10 - any blocked input tax adjustments
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/uae-vat-<period>-working-paper.xlsx
 ```
 
 ---
 
-## Step 6: Key Thresholds
+## Section 8 — UAE bank statement reading guide
 
-### 6.1 Registration Thresholds [T1]
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these UAE-specific patterns.
 
-| Registration Type | Threshold (AED) | Threshold (approx. USD) | Condition |
-|------------------|-----------------|------------------------|-----------|
-| Mandatory | 375,000 | ~102,000 | Past 12 months or next 30 days |
-| Voluntary | 187,500 | ~51,000 | Past 12 months or next 30 days |
-| Non-resident | No threshold | N/A | Any taxable supply in UAE |
-| Tax Group | 375,000 (combined) | ~102,000 | Combined group taxable supplies |
+**Emirates NBD statement format.** Emirates NBD business banking exports use CSV or Excel with DD/MM/YYYY dates. Common columns: Transaction Date, Value Date, Description, Cheque No, Debit, Credit, Balance. The description field contains the counterparty name and transaction reference. SWIFT transfers show beneficiary name separately. Direct debits show the beneficiary/collector name.
 
-**Legislation:** VAT Decree-Law Art. 13, 17; Executive Regulation Art. 6-7.
+**First Abu Dhabi Bank (FAB) statement format.** FAB exports use CSV with columns: Transaction Date, Description, Reference, Debit, Credit, Balance. International payments show the beneficiary bank and name. The description may be truncated for card transactions — check the reference field for additional detail.
 
-### 6.2 Other Key Thresholds [T1]
+**ADCB statement format.** ADCB online banking exports include columns: Date, Narrative, Reference Number, Debit, Credit, Balance. The narrative field is the primary source for counterparty identification.
 
-| Threshold | Amount | Purpose | Reference |
-|-----------|--------|---------|-----------|
-| Voluntary Disclosure trigger | AED 10,000 (tax difference) | If error exceeds AED 10,000, Voluntary Disclosure is mandatory; if AED 10,000 or less, adjust in next return | Tax Procedures Law Art. 30 |
-| Simplified Tax Invoice limit | AED 10,000 (inclusive of VAT) | Supplies not exceeding this may use simplified invoice | Exec. Reg. Art. 59(6) |
-| Free samples/gifts threshold | AED 500 per recipient per year | Below = no deemed supply; above = deemed supply, 5% output VAT due on cost | Art. 6; Exec. Reg. Art. 5 |
-| Capital Assets Scheme | AED 5,000,000 (buildings/land) | Triggers multi-year input tax adjustment (10 years for buildings, 5 years for other assets) | Art. 57; Exec. Reg. Art. 50 |
-| Tax period assignment | AED 150,000,000 annual turnover | Below = quarterly; at or above = monthly (FTA discretion) | Art. 59-60; Exec. Reg. Art. 55 |
+**Mashreq statement format.** Mashreq exports: Date, Description, Debit, Credit, Balance. Card purchases show the merchant name. SWIFT transfers show the beneficiary name.
 
-### 6.3 Deregistration [T1]
+**Revolut / Wise Business.** ISO date format. Clear counterparty names. Separate fee lines — exclude fees (exempt financial service). Currency conversion details included.
 
-- **Mandatory deregistration:** The person ceases to make taxable supplies.
-- **Voluntary deregistration:** Taxable supplies in the past 12 months fell below AED 187,500 (and was not mandatorily registered based on exceeding AED 375,000 threshold).
-- The FTA must be notified within 20 business days of cessation.
+**Internal transfers and exclusions.** Own-account transfers between the client's Emirates NBD, FAB, ADCB accounts. Labelled "own transfer", "internal transfer", "between accounts". Always exclude.
 
-**Legislation:** VAT Decree-Law Art. 21-22; Executive Regulation Art. 9-10.
+**WPS (Wage Protection System) entries.** Salary payments via WPS appear as "WPS SALARY", "SALARY TRANSFER", or individual employee names. Always exclude — employment, out of scope.
 
-### 6.4 VAT Grouping (Art. 18, VAT Decree-Law) [T2]
+**Salik (road toll).** Salik top-ups and toll deductions appear as "SALIK", "RTA SALIK". These are government fees, out of scope. Exclude.
 
-Two or more taxable persons may apply to form a **Tax Group** if:
-- Each is a legal person.
-- They are related parties (common control or direction).
-- One or more members are established in the UAE.
+**Foreign currency transactions.** Convert to AED at the UAE Central Bank exchange rate on the transaction date. Note the rate used in column L (Notes).
 
-**Effects:**
-- The group is treated as a single taxable person with one TRN.
-- Intra-group supplies are disregarded for VAT.
-- The representative member files the return and is liable for group VAT obligations.
+**Card purchases with merchant terminal codes.** Some card purchases show only a merchant terminal code (e.g., "POS 1234567 DUBAI"). If the counterparty cannot be identified, ask the client. Do not classify unidentified transactions.
 
-**[T2] flag: VAT grouping has significant implications. Reviewer must confirm eligibility and impact.**
-
-**Legislation:** VAT Decree-Law Art. 18; Executive Regulation Art. 8.
+**DEWA/ADDC housing fee component.** DEWA and ADDC bills include a municipality housing fee (5% of annual rent for Dubai/Abu Dhabi). The housing fee component is a government fee, out of scope. The electricity/water component is standard-rated at 5%. If the statement shows a single DEWA amount, treat the full amount as standard-rated 5% (conservative — the housing fee is a small proportion and is not VAT-deductible anyway).
 
 ---
 
-## Step 7: Filing Deadlines
+## Section 9 — Onboarding fallback (only when inference fails)
 
-### 7.1 Tax Periods [T1]
+### 9.1 Entity type and trading name
+*Inference rule:* "LLC" = limited liability company; "sole establishment" or personal name = sole proprietor; "FZCO", "FZE", "FZ-LLC" = free zone entity. *Fallback question:* "Are you a mainland LLC, sole establishment, free zone company, or branch?"
 
-| Registrant Type | Standard Period | Frequency |
-|----------------|----------------|-----------|
-| Default (annual turnover < AED 150 million) | Quarterly | 4 returns per year |
-| Assigned by FTA (annual turnover >= AED 150 million) | Monthly | 12 returns per year |
-| As specified by FTA | Custom | As determined |
+### 9.2 TRN
+*Inference rule:* TRN may appear on bank statement descriptions (rare) or invoices. *Fallback question:* "What is your Tax Registration Number (TRN)? (15-digit number)"
 
-Tax periods are assigned by the FTA upon registration. Registrants cannot choose their own period without FTA approval.
+### 9.3 Filing period
+*Inference rule:* first and last transaction dates on bank statement. Quarterly is default. *Fallback question:* "Which quarter does this cover? Q1 (Jan–Mar), Q2 (Apr–Jun), Q3 (Jul–Sep), or Q4 (Oct–Dec)?"
 
-**Legislation:** VAT Decree-Law Art. 59-60; Executive Regulation Art. 55.
+### 9.4 Emirate of establishment
+*Inference rule:* utility bills (DEWA = Dubai, ADDC = Abu Dhabi, SEWA = Sharjah), commercial rent, trade licence issuer. *Fallback question:* "Which Emirate is your business established in? (For Box 1 allocation of service sales)"
 
-### 7.2 Filing and Payment Deadline [T1]
+### 9.5 Industry and sector
+*Inference rule:* counterparty mix, sales patterns. *Fallback question:* "In one sentence, what does the business do?"
 
-- **Filing deadline:** 28th day of the month following the end of the tax period.
-- **Payment deadline:** Same day -- 28th day of the month following the end of the tax period.
-- Both the return and the payment must be submitted/completed by this date.
-- If the 28th falls on a weekend or public holiday, the deadline moves to the next working day.
+### 9.6 Employees
+*Inference rule:* WPS salary payments, visa fees, health insurance. *Fallback question:* "Do you have employees?"
 
-| Quarter | Period | Filing/Payment Due |
-|---------|--------|-------------------|
-| Q1 | 1 Jan -- 31 Mar | 28 April |
-| Q2 | 1 Apr -- 30 Jun | 28 July |
-| Q3 | 1 Jul -- 30 Sep | 28 October |
-| Q4 | 1 Oct -- 31 Dec | 28 January (next year) |
+### 9.7 Exempt supplies
+*Inference rule:* residential rental income, financial service income. *Fallback question:* "Do you make any VAT-exempt sales (residential property, financial services, life insurance)?" *If yes and significant, R-AE-1 may fire.*
 
-**Legislation:** Tax Procedures Law Art. 28-29.
+### 9.8 Designated Zone
+*Inference rule:* free zone trade licence, JAFZA/DAFZA/KIZAD in address. *Fallback question:* "Is your business in a Designated Zone (e.g., JAFZA, DAFZA, KIZAD)? Do you move goods in/out of the zone?"
 
-### 7.3 Penalties Framework [T1]
-
-The penalty regime was updated by **Cabinet Decision No. 49 of 2021** (effective 28 June 2021) and further revised by **Cabinet Decision No. 129 of 2025** (effective 14 April 2026).
-
-#### Late Filing Penalties [T1]
-
-| Offence | Penalty |
-|---------|---------|
-| Late filing -- first offence | AED 1,000 |
-| Late filing -- repeat offence (within 24 months) | AED 2,000 |
-
-**Legislation:** Cabinet Decision No. 49 of 2021, Table 1; Cabinet Decision No. 129 of 2025.
-
-#### Late Payment Penalties [T1]
-
-**Prior to 14 April 2026 (Cabinet Decision No. 49 of 2021):**
-
-| Timing | Penalty |
-|--------|---------|
-| Immediately upon late payment | 2% of unpaid tax |
-| 7 days after due date | Additional 4% of unpaid tax |
-| After 7 days: monthly penalty | 1% per month on outstanding balance |
-| Maximum cumulative late payment penalty | 300% of the unpaid tax |
-
-**From 14 April 2026 (Cabinet Decision No. 129 of 2025):**
-
-| Timing | Penalty |
-|--------|---------|
-| Late payment | 14% per annum, calculated monthly from the day after the due date until payment is made |
-
-**Legislation:** Cabinet Decision No. 49 of 2021, Table 1, Item 11; Cabinet Decision No. 129 of 2025.
-
-#### Other Key Penalties [T1]
-
-| Violation | Penalty |
-|-----------|---------|
-| Failure to register | AED 20,000 |
-| Failure to display TRN | AED 20,000 |
-| Failure to notify FTA of amendments to tax return | AED 1,000 (first), AED 2,000 (repeat) |
-| Failure to submit Voluntary Disclosure | Fixed penalty + percentage of tax difference |
-| Failure to issue tax invoice | AED 5,000 per invoice |
-| Failure to issue tax credit note | AED 5,000 per credit note |
-| Failure to keep records | AED 10,000 (first), AED 50,000 (repeat) |
-| Filing incorrect return | Fixed penalty + percentage of tax underpaid |
-| Tax evasion | Criminal prosecution, imprisonment, and/or fines up to 5x the evaded tax |
-
-**Legislation:** Cabinet Decision No. 49 of 2021; Cabinet Decision No. 129 of 2025; Tax Procedures Law Art. 42-48.
-
-### 7.4 Voluntary Disclosure [T1]
-
-If a registrant discovers an error in a previously filed return that resulted in an underpayment of tax or overpayment of refund:
-
-- **Voluntary Disclosure** must be filed via the FTA portal.
-- If the error results in a tax difference exceeding **AED 10,000**, a Voluntary Disclosure is mandatory.
-- If the error is **AED 10,000 or less**, the adjustment can be made in the next return filing.
-
-**Legislation:** Tax Procedures Law Art. 30; Executive Regulation (Tax Procedures).
+### 9.9 Carried-forward excess input tax
+*Inference rule:* not inferable from a single period statement. Always ask. *Question:* "Do you have any excess input tax carried forward from the previous period?"
 
 ---
 
-## Step 8: Designated Zones, Tax Invoices, Record-Keeping, and EU Comparison
+## Section 10 — Reference material
+
+### Validation status
+
+This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structure. It supersedes v1.0/v2.0 standalone versions.
+
+### Sources
+
+**Primary legislation:**
+1. Federal Decree-Law No. 8 of 2017 on Value Added Tax (VAT Decree-Law) — Articles 2-7, 25-34, 45-57, 59-60
+2. Cabinet Decision No. 52 of 2017 (Executive Regulation) — Articles 14-21, 30-50, 53, 59, 62, 69
+3. Federal Decree-Law No. 7 of 2017 on Tax Procedures — Articles 26, 28-30
+4. Cabinet Decision No. 40 of 2017 (Designated Zones)
+5. Cabinet Decision No. 59 of 2017 (Designated Zones list, as amended)
+6. Cabinet Decision No. 49 of 2021 (Penalties)
+7. Cabinet Decision No. 129 of 2025 (Revised penalties, effective 14 April 2026)
+8. Cabinet Decision No. 106 of 2025 (E-invoicing)
+
+**FTA guidance:**
+9. VAT Public Clarification VATP002 (residential property)
+10. VAT Public Clarification VATP011 (financial services)
+11. FTA VAT201 form completion guide
+
+**Other:**
+12. FTA e-Services portal — https://eservices.tax.gov.ae
+13. UAE Central Bank exchange rates
+
+### Known gaps
+
+1. The supplier pattern library covers the most common UAE and international counterparties but does not cover every local business.
+2. The worked examples are drawn from a hypothetical IT consultant in Dubai. They do not cover construction, oil & gas, real estate, or F&B specifically.
+3. The Designated Zone treatment (R-AE-3) is refused rather than handled — future versions should add deterministic rules for common Designated Zone goods movements.
+4. E-invoicing requirements (from mid-2026 / January 2027) are referenced but compliance specifics are not detailed.
+5. The Tourist Refund Scheme (Box 2) is refused (R-AE-7) — only relevant for qualifying retailers.
+6. GCC inter-state supply rules (UAE to Bahrain, Oman, Saudi) are not covered in detail due to ongoing transitional provisions.
+
+### Change log
+
+- **v2.0 (April 2026):** Full rewrite to align with Malta v2.0 structure. Quick reference with Box/Field table and conservative defaults at top (Section 1). Supplier pattern library with UAE vendors (Emirates NBD, FAB, ADCB, Mashreq, du, Etisalat, DEWA/ADDC, Carrefour, Noon, Emirates, Freezone suppliers) in Section 3. Six worked examples (Section 4). Compressed Tier 1 rules (Section 5). Tier 2 catalogue (Section 6). Excel working paper (Section 7). UAE bank statement guide with Emirates NBD/FAB formats (Section 8). Onboarding fallback (Section 9). References (Section 10).
+- **v1.0 (April 2026):** Initial standalone skill covering VAT Decree-Law, box mappings, reverse charge, blocked categories, Designated Zones, e-invoicing, registration, penalties.
+
+### Self-check (v2.0 of this document)
+
+1. Quick reference at top with field/box table and conservative defaults: yes (Section 1).
+2. Supplier library as literal lookup tables: yes (Section 3, 15 sub-tables).
+3. Worked examples: yes (Section 4, 6 examples).
+4. Tier 1 rules compressed: yes (Section 5, 14 rules).
+5. Tier 2 catalogue compressed: yes (Section 6, 12 items).
+6. Excel template specification with mandatory recalc: yes (Section 7).
+7. Onboarding as fallback only: yes (Section 9, 9 items).
+8. All 7 UAE-specific refusals present: yes (Section 2, R-AE-1 through R-AE-7).
+9. Reference material at bottom: yes (Section 10).
+10. Entertainment block explicit: yes (Section 5.9 + Example 3).
+11. Motor vehicle block explicit: yes (Section 5.9 + Example 5).
+12. Reverse charge for non-resident services explicit: yes (Example 1 + Section 5.5).
+13. Zero-rated export and "no UAE establishment" test explicit: yes (Example 2 + Section 5.13).
+14. Emirate breakdown (Box 1a–1g) explicit: yes (Section 5.8 + Tier 2 item 6.4).
+15. Emirates NBD/FAB bank statement format guide: yes (Section 8).
+
+## End of UAE VAT Return Skill v2.0
+
+This skill is incomplete without the companion file loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture). Do not attempt to produce a VAT201 without both files loaded.
 
-### 8.1 Designated Zones (Free Zones) (Art. 51, VAT Decree-Law) [T1]
-
-Certain free zones in the UAE are designated as **Designated Zones** by Cabinet Decision. For VAT purposes, Designated Zones are treated as being **outside the UAE** but **only for the supply of goods**.
-
-**Key principle:** Goods transactions involving Designated Zones follow import/export rules. Services within or to Designated Zones are treated as UAE supplies (standard UAE VAT rules apply).
-
-**Legislation:** VAT Decree-Law Art. 51; Cabinet Decision No. 59 of 2017 (as amended).
-
-#### Conditions for Designated Zone Treatment [T1]
-
-A free zone qualifies as a Designated Zone only if:
-1. It is fenced and has security and customs controls on entry/exit of goods and people.
-2. It has internal procedures for record-keeping of goods and inventory.
-3. The operator of the zone complies with FTA requirements.
-
-**Legislation:** Executive Regulation Art. 51.
-
-#### VAT Treatment of Designated Zone Transactions [T1]
-
-| Transaction | VAT Treatment | Reference |
-|------------|---------------|-----------|
-| Supply of goods within same Designated Zone | Not a supply (no VAT) | Art. 51(1) |
-| Transfer of goods between two Designated Zones | Not a supply (no VAT) | Art. 51(2) |
-| Supply of goods from Designated Zone to UAE mainland | Treated as import (VAT due) | Art. 51(4) |
-| Supply of goods from UAE mainland to Designated Zone | May be zero-rated if conditions met | Art. 51(3) |
-| Supply of goods from Designated Zone to outside UAE | Export (zero-rated) | Art. 45(1) |
-| Import of goods from outside UAE to Designated Zone | Not an import (no VAT at point of entry) | Art. 51(5) |
-| Supply of services within Designated Zone | Standard UAE VAT rules apply (5%) | Art. 51(8) |
-| Supply of services from mainland to Designated Zone | Standard UAE VAT rules apply (5%) | Art. 51(8) |
-| Supply of water, energy, or telecommunications to Designated Zone | Standard UAE VAT rules apply (5%) | Art. 51(7) |
-
-#### Key Designated Zones [T1]
-
-The following is a non-exhaustive list of Designated Zones specified by Cabinet Decision:
-
-**Abu Dhabi:**
-- Khalifa Industrial Zone (KIZAD)
-- Abu Dhabi Airport Free Zone
-- Masdar City Free Zone
-- twofour54 (for goods only)
-- Abu Dhabi Global Market (ADGM) -- note: services are standard rated
-
-**Dubai:**
-- Jebel Ali Free Zone (JAFZA)
-- Dubai Airport Free Zone (DAFZA)
-- Dubai Multi Commodities Centre (DMCC) -- for goods only
-- Dubai Silicon Oasis (portions)
-- Dubai South Free Zone
-- Dubai International Financial Centre (DIFC) -- note: only for goods
-- Dubai Gold & Diamond Park
-- Dubai Textile City
-- Dubai Auto Zone
-- International Humanitarian City
-
-**Sharjah:**
-- Hamriyah Free Zone
-- Sharjah Airport International Free Zone (SAIF Zone)
-
-**Ajman:**
-- Ajman Free Zone
-
-**Umm Al Quwain:**
-- Umm Al Quwain Free Trade Zone (UAQFTZ)
-- Ahmed Bin Rashid Free Zone
-
-**Ras Al Khaimah:**
-- RAK Free Trade Zone
-- RAK Investment Authority Free Zone
-- RAK Maritime City Free Zone
-- Al Hamra Industrial Zone
-
-**Fujairah:**
-- Fujairah Free Zone
-- Fujairah Oil Industry Zone (FOIZ)
-- Fujairah Creative City
-
-**[T2] flag: The list of Designated Zones is updated periodically by Cabinet Decision. Always verify the current list on the FTA website before applying Designated Zone treatment.**
-
-**Legislation:** Cabinet Decision No. 59 of 2017 (as amended).
-
-### 8.2 E-Invoicing (Effective 2026-2027) [T1]
-
-Cabinet Decision No. 106 of 2025 introduces e-invoicing requirements:
-- **Voluntary pilot:** Expected to begin July 2026.
-- **Mandatory adoption:** Large businesses from January 2027.
-- Penalties for non-compliance apply from mid-2026.
-
-**[T2] flag: E-invoicing requirements are evolving. Verify current status with FTA before advising on compliance obligations.**
-
-### 8.3 Tax Invoice Requirements [T1]
-
-#### Full Tax Invoice (Art. 59, Executive Regulation) [T1]
-
-A tax invoice must be issued within **14 days** of the date of supply and must contain:
-
-| Field | Requirement |
-|-------|-------------|
-| Title | "Tax Invoice" clearly displayed |
-| Supplier name | Full legal name of the supplier |
-| Supplier address | Registered address |
-| Supplier TRN | 15-digit Tax Registration Number |
-| Recipient name | Full legal name of the recipient |
-| Recipient address | Address of the recipient |
-| Recipient TRN | If recipient is VAT-registered |
-| Invoice number | Sequential, unique number |
-| Invoice date | Date of issuance |
-| Date of supply | If different from invoice date |
-| Description | Description of goods/services supplied |
-| Quantity | For goods: quantity of items |
-| Unit price | Price per unit (exclusive of VAT) |
-| Discount | Any discount applied |
-| Net amount | Total value before VAT |
-| VAT rate | 5%, 0%, or "Exempt" |
-| VAT amount | In AED |
-| Gross amount | Total including VAT |
-| Currency | If not AED, state the exchange rate used |
-
-**Legislation:** Executive Regulation Art. 59.
-
-#### Simplified Tax Invoice [T1]
-
-A simplified tax invoice may be issued for supplies not exceeding **AED 10,000** (inclusive of VAT). Required fields:
-
-| Field | Requirement |
-|-------|-------------|
-| Title | "Tax Invoice" |
-| Supplier name | Full legal name |
-| Supplier TRN | 15-digit number |
-| Invoice date | Date of issuance |
-| Description | Description of goods/services |
-| Total amount | Including VAT |
-| VAT amount | In AED |
-
-**Legislation:** Executive Regulation Art. 59(6).
-
-#### Tax Credit Note [T1]
-
-A tax credit note must be issued when there is a decrease in the consideration for a supply. It must contain:
-- Reference to the original tax invoice.
-- Reason for the credit note.
-- The amount of the adjustment.
-- The VAT amount adjusted.
-
-**Legislation:** Executive Regulation Art. 62.
-
-### 8.4 Record-Keeping Requirements [T1]
-
-Registrants must maintain the following records for a minimum of **5 years** (15 years for real estate):
-
-| Record Type | Retention Period | Reference |
-|------------|-----------------|-----------|
-| Tax invoices (issued and received) | 5 years | Tax Procedures Law Art. 26 |
-| Tax credit notes | 5 years | Tax Procedures Law Art. 26 |
-| Import/export documents | 5 years | Tax Procedures Law Art. 26 |
-| Accounting records | 5 years | Tax Procedures Law Art. 26 |
-| Bank statements | 5 years | Tax Procedures Law Art. 26 |
-| Contracts and agreements | 5 years | Tax Procedures Law Art. 26 |
-| Real estate records | 15 years | Tax Procedures Law Art. 26 |
-| VAT returns filed | 5 years | Tax Procedures Law Art. 26 |
-| Customs declarations | 5 years | Tax Procedures Law Art. 26 |
-
-**Legislation:** Tax Procedures Law Art. 26; Executive Regulation (Tax Procedures) Art. 16.
-
-### 8.5 Comparison with EU VAT [T1]
-
-| Feature | UAE VAT | EU VAT (Directive 2006/112/EC) |
-|---------|---------|-------------------------------|
-| Standard rate | 5% (single rate) | Varies by member state: 17-27% (e.g., MT 18%, DE 19%, HU 27%) |
-| Reduced rates | None | Multiple reduced rates permitted (5%, 9%, 12%, etc.) |
-| Zero-rating | Specified categories (Art. 45) | Limited zero-rating (mostly UK legacy); EU uses exemptions with/without credit |
-| Exempt categories | Financial services (margin), residential property, bare land, local transport, life insurance | Broader: medical, education, insurance, postal, cultural, sports, financial, real estate |
-| Registration threshold (resident) | AED 375,000 (~EUR 94,000) | Varies: EUR 5,000 (Sweden) to EUR 85,000 (UK pre-Brexit); no EU-wide standard |
-| Filing frequency | Quarterly (default) or monthly | Varies: monthly, quarterly, annual depending on member state |
-| Reverse charge (imports) | Via VAT return (Box 3/6) or customs | Via VAT return (acquisitions boxes) |
-| Intra-community supplies | N/A (no GCC equivalent fully operational) | Extensive rules for goods (EC Sales List, Intrastat) |
-| Emirate-level breakdown | Required (Box 1) | No sub-national breakdown required |
-| Tourist refund scheme | Yes (Planet/Fintrax) | Yes (various operators per member state) |
-| Tax invoicing | Mandatory for all taxable supplies | Mandatory with EU-wide minimum requirements |
-| Digital services (B2C) | Non-resident must register | One-Stop Shop (OSS) available |
-| VAT grouping | Available | Available in most member states |
-| Profit margin scheme | Available (second-hand goods) | Available (Directive Art. 312-325) |
-| Penalties (late filing) | AED 1,000 / 2,000 | Varies widely by member state |
-| Penalties (late payment) | 14% per annum (from Apr 2026) | Varies widely by member state |
-| Capital assets adjustment | 5-10 years | 5-20 years depending on member state |
-
-#### Key Conceptual Differences [T1]
-
-1. **Single rate vs. multiple rates:** The UAE has only one positive rate (5%). EU member states have standard, reduced, super-reduced, and parking rates. This makes UAE classification simpler.
-
-2. **No intra-community system:** The EU has an extensive intra-community supply/acquisition system with EC Sales Lists and Intrastat reporting. The GCC equivalent is not yet fully operational (only SA, BH, OM have implemented alongside UAE).
-
-3. **Designated Zones:** The UAE's Designated Zone concept (treating free zones as outside the state for goods) has no direct EU equivalent. EU free zones exist but operate differently for VAT.
-
-4. **Emirate-level reporting:** The UAE requires supplies to be broken down by Emirate in Box 1. No EU member state requires sub-national VAT reporting on the return itself (though Intrastat and local reporting may exist).
-
-5. **Simpler exemption structure:** UAE exemptions are narrower than EU exemptions. The EU exempts a wider range of activities (medical, education, cultural, sports, postal) while the UAE zero-rates some of these (healthcare, education) allowing input tax recovery.
-
-6. **No input tax deduction for exempt businesses:** Both systems deny input tax recovery for exempt activities, but the EU's partial exemption rules are more complex due to the broader range of exempt activities.
-
-#### Practical Implications for Multi-Jurisdictional Businesses [T2]
-
-If a business operates in both the UAE and an EU member state:
-- **Transfer pricing:** Intra-group supplies must be at arm's length for both UAE VAT (Art. 36) and EU VAT purposes.
-- **Reverse charge:** A UAE entity receiving services from an EU entity applies UAE reverse charge (5%). The EU entity treats the supply as an export of services (outside EU).
-- **No mutual recognition:** UAE VAT registration does not confer any status in the EU, and vice versa. Separate registrations required.
-- **Different fiscal representatives:** UAE does not require fiscal representatives for non-residents (they register directly with FTA). Some EU states require fiscal representatives for non-EU businesses.
-
----
-
-## PROHIBITIONS
-
-- **NEVER** let AI guess VAT box assignment -- it is deterministic from the classification facts. [T1]
-- **NEVER** classify a supply as zero-rated without verifying the specific conditions under Art. 45 are met. [T1]
-- **NEVER** allow input tax recovery on blocked categories (entertainment, motor vehicles for personal use, employee personal benefits) under any circumstances. [T1]
-- **NEVER** apply the reverse charge to out-of-scope categories (salaries, dividends, fines, loan repayments). [T1]
-- **NEVER** apply the reverse charge when the non-resident supplier is already registered for UAE VAT and has charged VAT on the invoice. [T1]
-- **NEVER** treat services in a Designated Zone as being outside the UAE -- only goods qualify for Designated Zone treatment. [T1]
-- **NEVER** report services supplied within or to a Designated Zone as exports or outside the scope of UAE VAT. [T1]
-- **NEVER** confuse zero-rated (Art. 45, input tax recoverable) with exempt (Art. 46, input tax NOT recoverable). [T1]
-- **NEVER** omit the Emirate-level breakdown in Box 1 -- the FTA requires supplies to be allocated by Emirate. [T1]
-- **NEVER** file a return without confirming the tax period assignment (quarterly vs. monthly) with the FTA portal. [T1]
-- **NEVER** ignore the AED 500 per recipient threshold for free samples -- exceeding it triggers deemed supply treatment. [T1]
-- **NEVER** apply tourist refund amounts without confirmation from the approved operator (Planet/Fintrax). [T1]
-- **NEVER** allow bad debt relief without verifying the 6-month aging and write-off conditions. [T1]
-- **NEVER** accept a "first supply" residential property zero-rating claim without verifying the completion date is within 3 years. [T1]
-- **NEVER** compute any number -- all arithmetic is handled by the deterministic engine, not Claude. [T1]
-- **NEVER** classify financial services as standard rated without confirming they are fee-based (not margin/interest-based). [T1]
-- **NEVER** ignore the AED 5,000,000 capital asset threshold when determining whether the Capital Assets Scheme applies. [T1]
-
----
-
-## Edge Case Registry
-
-### EC1 -- Designated Zone: Goods Transfer Between Zones [T1]
-**Situation:** Company A in JAFZA sells goods to Company B in KIZAD. Both are Designated Zones.
-**Resolution:** This is NOT a supply for VAT purposes. No output VAT, no invoice required (for VAT purposes). The transfer of goods between Designated Zones is treated as outside the UAE. No entry on the VAT return.
-**Legislation:** VAT Decree-Law Art. 51(2); Executive Regulation Art. 51.
-
-### EC2 -- Designated Zone: Goods from Zone to Mainland [T1]
-**Situation:** Company in JAFZA sells goods to a Dubai mainland customer.
-**Resolution:** This is treated as an **import** by the mainland customer. The goods enter the UAE mainland and VAT at 5% is due. The mainland buyer reports this in **Box 6** (goods imported). The JAFZA company does NOT charge VAT (the zone company treats this as an export from the zone).
-**Legislation:** VAT Decree-Law Art. 51(4); Executive Regulation Art. 51.
-
-### EC3 -- Real Estate: First Sale vs. Resale [T2]
-**Situation:** Developer sells a new residential apartment completed 18 months ago for the first time.
-**Resolution:** This is a **zero-rated** supply under Art. 45(4) (first supply of residential property within 3 years of completion). Report in **Box 4**. Input tax on construction costs is recoverable.
-**Follow-up:** If the buyer later resells the same property 5 years after original completion, that subsequent sale is **exempt** under Art. 46(2). Report in **Box 5**. Input tax on costs related to the resale is NOT recoverable.
-**[T2] flag: Verify "first supply" status and completion date with supporting documentation.**
-**Legislation:** VAT Decree-Law Art. 45(4), Art. 46(2); VAT Public Clarification VATP002.
-
-### EC4 -- Profit Margin Scheme (Art. 29, Executive Regulation) [T2]
-**Situation:** Second-hand goods dealer purchases a used car from a private (non-registered) individual and resells it.
-**Resolution:** The **profit margin scheme** may apply. VAT is calculated on the **profit margin** (selling price minus purchase price), not the full selling price. This is available for second-hand goods, antiques, and collectors' items where VAT was not charged on the original purchase.
-**[T2] flag: Profit margin scheme requires specific conditions. Reviewer must confirm eligibility.**
-**Legislation:** VAT Decree-Law Art. 44; Executive Regulation Art. 29.
-
-### EC5 -- Tourist VAT Refund (Planet/Fintrax) [T1]
-**Situation:** Retail store participates in the Tourist Refund Scheme and processes refunds for departing tourists.
-**Resolution:** The store charges 5% VAT at point of sale (standard rated, Box 1). The tourist claims a refund at the airport/port via the approved operator (Planet Tax Free). The **refund amount** is reported in **Box 2** of the store's VAT return, reducing the net output tax liability. The store must be registered with the Tourist Refund Scheme.
-**Legislation:** VAT Decree-Law Art. 68; Cabinet Decision No. 41 of 2018; FTA Tourist Refund Scheme guidelines.
-
-### EC6 -- Healthcare/Education Zero-Rating Conditions [T2]
-**Situation:** Private clinic provides cosmetic surgery services.
-**Resolution:** Cosmetic procedures are **NOT** qualifying healthcare under Art. 45(6) unless the procedure is deemed medically necessary by a licensed healthcare professional. Elective cosmetic surgery is **standard rated** at 5%.
-**[T2] flag: Classification depends on medical necessity. Reviewer must confirm with client's medical documentation.**
-**Similarly for education:** Private tutoring outside a recognized institution is **standard rated**. Only education within a curriculum recognized by the relevant government authority qualifies for zero-rating.
-**Legislation:** VAT Decree-Law Art. 45(5)-(6); Executive Regulation Art. 34-35.
-
-### EC7 -- Agent vs. Principal (Art. 8-9, VAT Decree-Law) [T1]
-**Situation:** Company A acts as an agent for Company B, collecting payments on behalf of Company B.
-**Resolution:** Determine whether the person acts as **agent** (disclosed) or **principal** (undisclosed):
-- **Disclosed agent:** The agent is not making the supply. The principal makes the supply. The agent reports only their commission/fee as their taxable supply. The underlying supply is reported by the principal.
-- **Undisclosed agent:** The agent is treated as having received and made the supply. Both the acquisition and the onward supply must be reported.
-**Legislation:** VAT Decree-Law Art. 8-9; Executive Regulation Art. 6.
-
-### EC8 -- Related Party Supplies at Market Value (Art. 36, VAT Decree-Law) [T1]
-**Situation:** Parent company supplies services to a subsidiary at below-market-value prices. The subsidiary is partially exempt and cannot recover all input tax.
-**Resolution:** Where a supply is made between **related parties** and the recipient cannot fully recover input tax, the supply is valued at **open market value** (not the actual consideration). This prevents VAT leakage through underpriced intra-group transactions.
-- If both parties can fully recover input tax, the actual consideration is accepted.
-**Legislation:** VAT Decree-Law Art. 36; Executive Regulation Art. 23.
-
-### EC9 -- Bad Debt Relief (Art. 64, VAT Decree-Law) [T2]
-**Situation:** Supplier issued a tax invoice 18 months ago, charged and reported VAT, but the customer has not paid and the debt is now written off as bad.
-**Resolution:** The supplier may adjust the output tax previously reported if:
-1. The supply was made to a registered person (or the supply value including VAT exceeds AED 500).
-2. The supplier has written off the debt (wholly or partly) in their accounts.
-3. More than **6 months** have passed since the payment was due.
-4. The supplier has made reasonable efforts to collect the debt.
-The adjustment is reported in **Box 7** as a negative adjustment to output tax.
-**If the customer later pays (full or partial), the supplier must re-account for the output tax.**
-**[T2] flag: Bad debt relief conditions must be verified by reviewer. Documentary evidence required.**
-**Legislation:** VAT Decree-Law Art. 64; Executive Regulation Art. 52.
-
-### EC10 -- Capital Assets Adjustment [T2]
-**Situation:** A company acquired a building 3 years ago for AED 10 million (plus AED 500,000 VAT) and claimed full input tax. The building is now partially used for exempt supplies (leasing residential units).
-**Resolution:** The **Capital Assets Scheme** requires annual adjustment of input tax over:
-- 10 years for buildings.
-- 5 years for other capital assets over AED 5 million.
-In Year 4, if 30% of the building is used for exempt supplies, the company must repay 30% of 1/10th of the original input tax claimed (AED 500,000 x 1/10 x 30% = AED 15,000 repayment).
-**[T2] flag: Capital asset adjustments are complex. Reviewer must verify the calculation and usage proportions.**
-**Legislation:** VAT Decree-Law Art. 57; Executive Regulation Art. 50.
-
-### EC11 -- E-Commerce and Digital Services [T1]
-**Situation:** UAE-based e-commerce company sells goods online to customers within the UAE and ships from a warehouse in Dubai.
-**Resolution:** Standard rated supply at 5%. Report in Box 1 (Emirate: Dubai, based on warehouse location). If the company also sells to customers outside the UAE, those are exports (Box 4, zero-rated) provided export evidence (customs declarations, delivery proof) is maintained.
-**For non-resident digital service providers:** If a non-resident provides electronic/digital services to UAE consumers (B2C), the non-resident must register for UAE VAT (no threshold applies) and account for VAT.
-**Legislation:** VAT Decree-Law Art. 34 (electronic services place of supply); Executive Regulation Art. 21.
-
-### EC12 -- Mixed-Use Building (Residential + Commercial) [T2]
-**Situation:** Developer constructs a building with ground-floor commercial units and upper-floor residential apartments. First sale.
-**Resolution:** The commercial portion is **standard rated** at 5%. The residential portion (first supply within 3 years) is **zero-rated**. Input tax on construction must be apportioned between the two uses.
-**[T2] flag: Apportionment method must be confirmed by reviewer (e.g., floor area, cost allocation).**
-**Legislation:** VAT Decree-Law Art. 45(4); Executive Regulation Art. 33.
-
-### EC13 -- Free Samples and Gifts [T1]
-**Situation:** Company distributes free product samples to potential customers.
-**Resolution:** If the cost per recipient per year is **AED 500 or less**, this is NOT a deemed supply and no output VAT is due. If the cost exceeds AED 500 per recipient, it is a **deemed supply** and output VAT at 5% must be accounted for on the cost of the goods.
-**Legislation:** VAT Decree-Law Art. 6; Executive Regulation Art. 5.
-
-### EC14 -- Intercompany Services within a Tax Group [T1]
-**Situation:** Company A and Company B are members of the same VAT Tax Group. Company A provides management services to Company B.
-**Resolution:** Intra-group supplies between members of a registered Tax Group are **disregarded** for VAT purposes. No output VAT, no entry on the VAT return. The group is treated as a single taxable person.
-**Legislation:** VAT Decree-Law Art. 18; Executive Regulation Art. 8.
-
----
-
-## Test Suite
-
-### Test 1 -- Standard Local Sale (Dubai) [T1]
-**Input:** UAE-registered company sells office furniture to a Dubai customer. Invoice: AED 10,000 net + AED 500 VAT. Customer is in Dubai.
-**Expected output:** Box 1b (Dubai) = AED 10,000. VAT amount = AED 500. Total output tax includes AED 500.
-
-### Test 2 -- Export of Goods (Zero-Rated) [T1]
-**Input:** UAE-registered company exports machinery to India. Invoice: AED 50,000 net. Customs export declaration obtained. Goods left UAE within 30 days.
-**Expected output:** Box 4 = AED 50,000. VAT amount = AED 0. No output VAT. Full input tax recovery on related purchases.
-
-### Test 3 -- Reverse Charge: Services from Non-Resident [T1]
-**Input:** UAE-registered company receives legal advisory services from a UK law firm. Invoice: AED 20,000 (no VAT charged). UK firm has no UAE establishment.
-**Expected output:** Box 3 = AED 20,000. Output VAT = AED 1,000 (5%). Box 10 = AED 1,000 (input tax recovery). Net VAT effect = zero (for fully taxable business).
-
-### Test 4 -- Exempt Supply: Residential Lease [T1]
-**Input:** UAE-registered property company leases a residential apartment (completed 5 years ago). Monthly rent: AED 8,000.
-**Expected output:** Box 5 = AED 8,000. No output VAT. Input tax on expenses related to this property is NOT recoverable.
-
-### Test 5 -- Blocked Input Tax: Motor Vehicle [T1]
-**Input:** UAE-registered company purchases a sedan for employee use. Invoice: AED 120,000 + AED 6,000 VAT. Not a taxi company, not a car rental business.
-**Expected output:** Box 9 = AED 120,000. Input tax recovery = AED 0 (BLOCKED under Exec. Reg. Art. 53(1)(b)). The AED 6,000 VAT is a cost to the business.
-
-### Test 6 -- Designated Zone: Goods from JAFZA to Abu Dhabi Mainland [T1]
-**Input:** Company in JAFZA (Designated Zone) sells goods valued at AED 30,000 to a customer in Abu Dhabi mainland.
-**Expected output (Abu Dhabi customer's return):** Box 6 = AED 30,000. Import VAT = AED 1,500 (5%). Input tax recoverable: AED 1,500 (if fully taxable business). The JAFZA company does not charge VAT (treats as export from zone).
-
-### Test 7 -- Tourist VAT Refund [T1]
-**Input:** Dubai retail store (VAT-registered) sells goods worth AED 5,000 + AED 250 VAT to a tourist. Tourist claims AED 212.50 refund via Planet Tax Free at departure.
-**Expected output:** Box 1b (Dubai) = AED 5,000. Output VAT = AED 250. Box 2 = AED 212.50 (tourist refund). Net output tax contribution from this transaction: AED 250 - AED 212.50 = AED 37.50.
-
-### Test 8 -- Bad Debt Relief [T2]
-**Input:** UAE company issued invoice for AED 10,500 (AED 10,000 + AED 500 VAT) in Q1 2025. Customer has not paid. 8 months have passed. Debt written off. Reasonable collection efforts documented.
-**Expected output:** Box 7 = -AED 500 (negative adjustment to output tax). Net output tax reduced by AED 500. If customer later pays, AED 500 must be re-accounted.
-
-### Test 9 -- First Sale of Residential Property (Zero-Rated) [T2]
-**Input:** Developer sells a new residential villa completed 24 months ago. Sale price: AED 2,000,000. This is the first sale of this property.
-**Expected output:** Box 4 = AED 2,000,000. VAT = AED 0 (zero-rated). Input tax on construction costs is fully recoverable.
-**[T2] flag: Verify completion date and "first supply" status.**
-
-### Test 10 -- Mixed Supplies: Apportionment [T2]
-**Input:** Financial services company makes both fee-based services (standard rated, AED 600,000/year) and interest income (exempt, AED 400,000/year). Total input tax for the period: AED 12,000.
-**Expected output:**
-- Recoverable input tax = AED 12,000 x (600,000 / 1,000,000) = AED 7,200.
-- Non-recoverable (exempt portion) = AED 4,800.
-- Box 11 = AED 7,200 (after apportionment).
-**[T2] flag: Apportionment ratio and method must be confirmed by reviewer.**
-
-### Test 11 -- Credit Note Adjustment [T1]
-**Input:** UAE company issued a credit note for AED 2,100 (AED 2,000 net + AED 100 VAT) against a previous standard rated sale in Abu Dhabi.
-**Expected output:** Box 7 = -AED 100 (negative adjustment to output VAT). Box 1a (Abu Dhabi) is reduced by AED 2,000 in the adjustment column.
-
-### Test 12 -- E-Commerce Export to Saudi Arabia [T1]
-**Input:** UAE-registered online retailer ships goods to a customer in Saudi Arabia. Invoice: AED 3,000. Customs export documentation obtained.
-**Expected output:** Box 4 = AED 3,000. VAT = AED 0 (zero-rated export). Full input tax recovery on related costs. Export evidence must be retained.
-
----
-
-## Reviewer Escalation Protocol
-
-### Tier 2 Flag Format [T2]
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Qualified UAE tax advisor must confirm before filing.
-```
-
-### Tier 3 Escalation Format [T3]
-
-When Claude identifies a [T3] situation, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified UAE tax advisor. Document gap.
-```
-
-### Situations Requiring Escalation [T2/T3]
-
-| Situation | Tier | Reason |
-|-----------|------|--------|
-| Apportionment method selection | T2 | Multiple methods possible; reviewer must confirm |
-| Healthcare/education zero-rating eligibility | T2 | Conditions depend on licensing and recognition |
-| First sale of residential property | T2 | Completion date verification required |
-| Profit margin scheme eligibility | T2 | Specific conditions must be met |
-| Bad debt relief | T2 | Documentation and timing conditions |
-| Capital asset adjustment calculation | T2 | Complex multi-year calculation |
-| Designated Zone status verification | T2 | Zone list may be updated |
-| VAT group formation/dissolution | T2 | Significant structural implications |
-| Financial services classification (margin vs. fee) | T2 | Critical distinction for exempt vs. standard |
-| Transfer of business as going concern | T3 | Complex conditions; outside skill scope |
-| Multi-jurisdictional group restructuring | T3 | Requires specialist cross-border advice |
-| Criminal tax evasion concerns | T3 | Legal matter; outside skill scope entirely |
-| FTA audit response strategy | T3 | Requires specialist representation |
-
----
-
-## Contribution Notes
-
-If you are adapting this skill for another GCC jurisdiction (Saudi Arabia, Bahrain, Oman, Kuwait, Qatar), you must:
-
-1. Replace all legislation references with the equivalent national legislation.
-2. Replace all box numbers with the equivalent boxes on your jurisdiction's VAT return form.
-3. Replace VAT rates with your jurisdiction's standard rate (SA/BH: 15%; OM: 5%; KW/QA: not yet implemented).
-4. Replace the registration thresholds with your jurisdiction's equivalents.
-5. Replace the Designated Zone rules with your jurisdiction's free zone VAT treatment.
-6. Replace the penalty schedule with your jurisdiction's penalty framework.
-7. Replace the Emirate-level breakdown requirement (UAE-specific) with any sub-national reporting.
-8. Have a qualified tax advisor in your jurisdiction validate every T1 rule before publishing.
-9. Add your own edge cases for known ambiguous situations in your jurisdiction.
-10. Run all test suite cases against your jurisdiction's rules and replace expected outputs accordingly.
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a registered tax agent, CPA, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

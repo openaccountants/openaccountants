@@ -1,785 +1,693 @@
 ---
 name: new-zealand-gst
-description: Use this skill whenever asked to prepare, review, or create a New Zealand GST return (GST101A form) for any client. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", or any request involving New Zealand GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill contains the complete NZ GST classification rules, return field mappings, input tax credit rules, change-of-use adjustment mechanics, zero-rating rules, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any NZ GST-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a New Zealand GST return (GST101A form) for a self-employed individual or small business in New Zealand. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", or any request involving New Zealand GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers standard GST-registered persons under the invoice or payments basis. Financial services elections, GST groups, non-profit bodies, and complex change-of-use adjustments on high-value mixed-use assets are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any NZ GST work.
+version: 2.0
 ---
 
-# New Zealand GST Return Preparation Skill
+# New Zealand GST Return Skill (GST101A) v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | New Zealand |
-| Jurisdiction Code | NZ |
-| Primary Legislation | Goods and Services Tax Act 1985 (NZ) |
-| Supporting Legislation | Tax Administration Act 1994 (NZ); Taxation (Annual Rates for 2023-24, Multinational Tax, and Remedial Matters) Act 2024; Taxation (Annual Rates for 2025-26, Emergency Response, and Remedial Matters) Act 2026 (April 2026 GST amendments) |
-| Tax Authority | Inland Revenue Department (IRD / Te Tari Taake) |
-| Filing Portal | https://myir.ird.govt.nz (myIR) |
+|---|---|
+| Country | New Zealand |
+| Standard rate | 15% (single rate — no reduced rates) |
+| Zero rate | 0% (exports, going concerns, certain land transactions, financial services election, international transport) |
+| Exempt | Financial services, residential rental, donated goods by nonprofits |
+| Return form | GST101A (GST Return) |
+| Filing portal | myIR (myir.ird.govt.nz) |
+| Authority | Inland Revenue Department (IRD / Te Tari Taake) |
+| Currency | NZD only |
+| Filing frequencies | Monthly (taxable supplies > $24M or voluntary), 2-monthly (standard), 6-monthly (taxable supplies < $500,000) |
+| Deadline | 28th of month following end of taxable period (except March period: 7 May; November period: 15 January) |
+| Registration threshold | $60,000 taxable supplies in any 12-month period (compulsory); voluntary below threshold |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Contributor | Open Accounting Skills Community |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.1 |
-| Confidence Coverage | Tier 1: field assignment, zero-rating, input tax credits, derived calculations. Tier 2: change-of-use adjustments, apportionment elections, mixed-use assets. Tier 3: complex group registrations, financial services elections, non-standard arrangements. |
+| Validation date | April 2026 |
+
+**Key GST101A fields:**
+
+| Field | Meaning |
+|---|---|
+| 5 | Total sales and income for the period (GST-exclusive if invoice basis, GST-inclusive if payments basis) |
+| 6 | Zero-rated supplies (included in field 5) |
+| 7 | Total output tax on sales (field 5 minus field 6, multiplied by 3/23) |
+| 8 | Adjustments to output tax (e.g., change of use from non-taxable to taxable) |
+| 9 | Total output tax (= field 7 + field 8) |
+| 10 | Total purchases and expenses (GST-exclusive if invoice basis, GST-inclusive if payments basis) |
+| 11 | Input tax claimed (field 10 multiplied by 3/23) |
+| 12 | Adjustments to input tax (e.g., change of use from taxable to non-taxable) |
+| 13 | Total input tax (= field 11 + field 12) |
+| 15 | Difference (= field 9 minus field 13; positive = tax to pay, negative = refund) |
+
+**The 3/23 formula.** New Zealand GST returns work on GST-inclusive amounts (for payments basis) or GST-exclusive amounts (for invoice basis). The 3/23 fraction extracts the GST component from a GST-inclusive amount: 15/115 = 3/23. For GST-exclusive amounts, multiply by 15% (3/20).
+
+**Conservative defaults — NZ-specific values for the universal categories in `vat-workflow-base` Section 2:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 15% (only rate available) |
+| Unknown GST status of a purchase | Not claimable (no input tax) |
+| Unknown counterparty country | Domestic New Zealand |
+| Unknown business-use proportion (vehicle, phone, home office) | 0% input tax |
+| Unknown whether personal or business expense | Personal (no input tax) |
+| Unknown non-resident supplier GST status | Assume not registered (no input tax claim) |
+| Unknown whether transaction is in scope | In scope |
+
+**Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | NZD 5,000 |
+| HIGH tax-delta on a single conservative default | NZD 400 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net GST position | NZD 10,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A qualified accountant must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified accountant and document the gap.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full taxable period. Acceptable from any NZ or international business bank: ANZ NZ, Westpac NZ, ASB, BNZ, Kiwibank, TSB, Heartland Bank, Co-operative Bank, Revolut, Wise Business, or any other.
 
----
+**Recommended** — sales invoices for the period (especially for zero-rated supplies and exports), purchase invoices (tax invoices) for any input tax claim above NZD 400, the client's IRD number.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete sales and purchase journal, prior period GST101A, Xero/MYOB trial balance export, reconciliation of any adjustments.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement at all, hard stop. If bank statement only, proceed but record: "This GST101A was produced from bank statement alone. The reviewer must verify that input tax claims above NZD 400 are supported by compliant tax invoices and that all zero-rating conditions are met."
 
-1. **Entity name and IRD number** [T1] -- IRD number format: XX-XXX-XXX or XXX-XXX-XXX
-2. **GST registration status** [T1] -- Registered (compulsory or voluntary) or not registered
-3. **GST registration number** [T1] -- same as IRD number for most entities
-4. **Accounting basis** [T1] -- Invoice basis (accrual), Payments basis (cash), or Hybrid basis
-5. **Filing frequency** [T1] -- Monthly, 2-monthly, or 6-monthly
-6. **Taxable period end date** [T1] -- determines which period transactions fall into
-7. **Business activity** [T2] -- impacts apportionment and deductibility (e.g., financial services, residential property)
-8. **Does the business make exempt supplies?** [T2] -- If yes, apportionment required (change-of-use rules apply)
-9. **Does the business make zero-rated supplies?** [T1] -- exports, land transactions, going concerns
-10. **Ratio of taxable to total supplies** [T2] -- needed for change-of-use adjustment calculations
+### NZ-specific refusal catalogue
 
-**If items 1-3 are unknown, STOP. Do not classify any transactions until registration status and period are confirmed.**
+If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-**Legislation:** Goods and Services Tax Act 1985, s.51 (registration requirements).
+**R-NZ-1 — Financial services election (s.20F).** *Trigger:* client has elected to zero-rate financial services or asks about s.20F. *Message:* "The election to zero-rate financial services under s.20F of the GST Act requires complex calculations and specific conditions. This skill covers standard taxable and zero-rated supplies only. Please use a chartered accountant familiar with financial services GST."
 
----
+**R-NZ-2 — GST groups.** *Trigger:* client is part of a GST group registration. *Message:* "GST group registrations require consolidated reporting and intra-group supply rules. Out of scope."
 
-## Step 1: GST Rate Structure
+**R-NZ-3 — Non-profit bodies with donated goods.** *Trigger:* client is a non-profit using the donated goods exemption. *Message:* "Non-profit bodies have special GST rules for donated goods and services. Out of scope."
 
-### 1a. Standard Rate [T1]
+**R-NZ-4 — Complex change-of-use adjustments on high-value assets.** *Trigger:* client has a high-value mixed-use asset (e.g., holiday home used partly for Airbnb) requiring annual change-of-use adjustments under s.21–21H. *Message:* "Change-of-use adjustments for mixed-use assets with a value exceeding $5,000 require annual recalculation of the taxable-use proportion. This is too fact-sensitive for this skill. Please use a chartered accountant."
 
-| Rate | Application | Legislation |
-|------|-------------|-------------|
-| 15% | Standard rate on all taxable supplies of goods and services in New Zealand | GST Act 1985, s.8(1) |
-| 0% | Zero-rated supplies (exports, going concerns, certain land, listed financial services) | GST Act 1985, s.11, s.11A, s.11AB |
-| Exempt | Financial services, residential rental, donated goods/services by nonprofits | GST Act 1985, s.14 |
+**R-NZ-5 — Compulsory zero-rating of land.** *Trigger:* client is selling or buying land between GST-registered persons. *Message:* "Land transactions between registered persons are subject to compulsory zero-rating under s.11(1)(mb). This requires specific contractual wording and a vendor/purchaser notification process. Please use a property lawyer and chartered accountant."
 
-**New Zealand has a single positive GST rate of 15%.** There are NO reduced rates (unlike the EU). Supplies are either taxable at 15%, zero-rated at 0%, or exempt.
+**R-NZ-6 — Secondhand goods input tax credit (s.24).** *Trigger:* client regularly buys secondhand goods from unregistered persons and claims input tax under s.24. *Message:* "The secondhand goods input tax credit under s.24 has specific documentation requirements and valuation rules. If this is a significant part of the business, please use a chartered accountant to confirm eligibility and amounts."
 
-**Legislation:** GST Act 1985, s.8 (imposition of GST).
+**R-NZ-7 — GST on imported services (s.8(4B)).** *Trigger:* client is a non-profit or makes significant exempt supplies and receives services from non-residents. *Message:* "The reverse charge on imported services under s.8(4B) applies when the recipient cannot claim a full input tax credit. For fully taxable businesses, there is no reverse charge obligation (the input tax offsets the output tax). If your business makes exempt supplies, please use a chartered accountant."
 
-### 1b. Zero-Rated Supplies (Complete List) [T1]
-
-| Category | Description | Legislation |
-|----------|-------------|-------------|
-| Exports of goods | Goods entered for export under Customs and Excise Act 2018 | s.11(1)(a) |
-| Services to non-residents | Services supplied to non-resident outside NZ (conditions apply) | s.11A(1)(k) |
-| Going concerns | Supply of a going concern to a registered person | s.11(1)(mb) |
-| Land (compulsory zero-rating) | Supply of land between registered persons where purchaser acquires for taxable activity | s.11(1)(mb) |
-| International transport | Transport of passengers/goods to or from NZ | s.11A(1)(a)-(c) |
-| Duty-free goods | Goods supplied at duty-free shops for export | s.11(1)(b) |
-| Fine metals | Supply of fine metal (gold, silver, platinum of specified fineness) | s.11(1)(mb) |
-| Financial services (election) | Registered person electing to zero-rate financial services to registered persons | s.11A(1)(q)-(r), s.20F |
-| Telecommunications (roaming) | Roaming services for overseas mobile users | s.11A(1)(lb) |
-
-### 1c. Exempt Supplies (Complete List) [T1]
-
-| Category | Description | Legislation |
-|----------|-------------|-------------|
-| Financial services | Lending, exchange of currency, life insurance, equity securities | s.14(a), s.3 (definition) |
-| Residential rental | Rental of a dwelling (residential accommodation) | s.14(c) |
-| Donated goods/services | Supply of donated goods or services by a nonprofit body | s.14(ca) |
-| Penalty/fine/interest | Certain penalties, fines, and default interest | s.14 |
-
-**Key distinction:** Zero-rated supplies allow full input tax recovery. Exempt supplies do NOT allow input tax recovery on related inputs. This distinction is critical.
+**R-NZ-8 — Payments basis with large accruals.** *Trigger:* client uses payments basis but has significant unpaid invoices at period end that may distort the return. *Message:* "Under the payments basis, GST is accounted for when payment is made or received, not when invoiced. If you have large outstanding invoices at period end, ensure only paid amounts are included. If you are unsure, confirm your accounting basis with your accountant."
 
 ---
 
-## Step 2: GST Return Form -- GST101A Field Mapping
+## Section 3 — Supplier pattern library (the lookup table)
 
-### 2a. GST101A Return Fields (Complete) [T1]
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
 
-**Legislation:** GST Act 1985, s.16 (returns); Tax Administration Act 1994, s.33 (return requirements).
+**How to read this table.** Match by case-insensitive substring on the counterparty name. If multiple patterns match, use the most specific.
 
-| Field | Description | Classification |
-|-------|-------------|----------------|
-| **Box 5** | Total sales and income for the period (inclusive of GST) | output_total |
-| **Box 6** | Zero-rated supplies (included in Box 5) | output_zero |
-| **Box 7** | Total output tax (GST on sales): (Box 5 - Box 6) x 3/23 | output_tax |
-| **Box 8** | Adjustments to output tax (increases) | output_adj_increase |
-| **Box 9** | Total output tax after adjustments: Box 7 + Box 8 | output_tax_adjusted |
-| **Box 10** | Total purchases and expenses (inclusive of GST) | input_total |
-| **Box 11** | Total input tax (GST on purchases): Box 10 x 3/23 | input_tax |
-| **Box 12** | Adjustments to input tax (increases/decreases) | input_adj |
-| **Box 13** | Total input tax after adjustments: Box 11 + Box 12 | input_tax_adjusted |
-| **Box 14** | If Box 9 > Box 13: GST to pay (Box 9 - Box 13) | tax_payable |
-| **Box 15** | If Box 13 > Box 9: GST refund (Box 13 - Box 9) | tax_refund |
+### 3.1 New Zealand banks (fees exempt — exclude)
 
-### 2b. GST Fraction [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ANZ, ANZ NEW ZEALAND, ANZ NZ | EXCLUDE for bank charges/fees | Financial service, exempt (s.14(a), s.3) |
+| WESTPAC, WESTPAC NZ | EXCLUDE for bank charges/fees | Same |
+| ASB, ASB BANK | EXCLUDE for bank charges/fees | Same |
+| BNZ, BANK OF NEW ZEALAND | EXCLUDE for bank charges/fees | Same |
+| KIWIBANK | EXCLUDE for bank charges/fees | Same |
+| TSB BANK, HEARTLAND BANK, CO-OPERATIVE BANK | EXCLUDE for bank charges/fees | Same |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
+| INTEREST, INT | EXCLUDE | Interest income/expense, exempt |
+| MORTGAGE, LOAN | EXCLUDE | Loan principal movement, out of scope |
 
-The GST fraction for calculating GST content of a GST-inclusive amount is:
+### 3.2 New Zealand government and statutory bodies (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| IRD, INLAND REVENUE, TE TARI TAAKE | EXCLUDE | Tax payment (GST, income tax, PAYE) |
+| ACC, ACCIDENT COMPENSATION | EXCLUDE | ACC levy — not a supply |
+| NZTA, WAKA KOTAHI | EXCLUDE | Transport agency fees/levies |
+| MINISTRY OF, DEPARTMENT OF | EXCLUDE | Government fees |
+| COMPANIES OFFICE, NZBN | EXCLUDE | Registry fee |
+| COUNCIL, CITY COUNCIL, DISTRICT COUNCIL | EXCLUDE for rates | Property rates — not a supply |
+| COUNCIL (consent fees, building permits) | Domestic 15% | Regulatory services — taxable |
+
+### 3.3 New Zealand utilities
+
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| MERCURY ENERGY, GENESIS ENERGY, CONTACT ENERGY | Domestic 15% | 10/11 | Electricity — overhead |
+| MERIDIAN ENERGY, TRUSTPOWER, FLICK ELECTRIC | Domestic 15% | 10/11 | Electricity — overhead |
+| NOVA ENERGY, ELECTRIC KIWI, POWERSHOP | Domestic 15% | 10/11 | Electricity — overhead |
+| SPARK, SPARK NZ | Domestic 15% | 10/11 | Telecoms — overhead |
+| VODAFONE NZ, VODAFONE NEW ZEALAND | Domestic 15% | 10/11 | Telecoms — overhead |
+| 2DEGREES, TWO DEGREES | Domestic 15% | 10/11 | Telecoms — overhead |
+| SKINNY MOBILE | Domestic 15% | 10/11 | Telecoms — overhead |
+| CHORUS, ENABLE, ULTRAFAST FIBRE | Domestic 15% | 10/11 | Fibre broadband — overhead |
+| WATERCARE, WELLINGTON WATER | Domestic 15% | 10/11 | Water — overhead |
+
+### 3.4 Insurance (exempt — exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| IAG, STATE INSURANCE, AMI, NZI | EXCLUDE | Insurance, exempt (s.14) |
+| AA INSURANCE, TOWER INSURANCE | EXCLUDE | Same |
+| SOUTHERN CROSS, PARTNERS LIFE, AIA NZ | EXCLUDE | Health/life insurance, exempt |
+| INSURANCE, INS PREMIUM | EXCLUDE | All exempt |
+
+### 3.5 Post and logistics
+
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| NZ POST, NEW ZEALAND POST | Domestic 15% | 10/11 | NZ Post is taxable (unlike some EU postal services) |
+| COURIER POST, PACE | Domestic 15% | 10/11 | NZ Post courier service |
+| FASTWAY, ARAMEX NZ, TOLL, MAINFREIGHT | Domestic 15% | 10/11 | Courier/freight services |
+| DHL NZ, FEDEX NZ, UPS NZ | Domestic 15% | 10/11 | Express courier |
+
+### 3.6 Transport
+
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| AIR NEW ZEALAND, AIR NZ (domestic) | Domestic 15% | 10/11 | Domestic flights taxable |
+| AIR NEW ZEALAND (international) | Zero-rated | 6 | International transport — s.11A(1)(a) |
+| JETSTAR NZ (domestic) | Domestic 15% | 10/11 | Domestic flights taxable |
+| AT HOP, METLINK, METRO CANTERBURY | Domestic 15% | 10/11 | Public transport — taxable in NZ (not exempt like some countries) |
+| UBER NZ | Domestic 15% | 10/11 | Ride-sharing — GST registered |
+| OLA NZ | Domestic 15% | 10/11 | Ride-sharing |
+| INTERISLANDER, BLUEBRIDGE | Domestic 15% (inter-island) | 10/11 | Cook Strait ferry — domestic |
+| RENTAL CAR, BUDGET NZ, HERTZ NZ, AVIS NZ | Domestic 15% | 10/11 | Car rental |
+
+### 3.7 Food retail (blocked unless hospitality business)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| COUNTDOWN, WOOLWORTHS NZ | Default BLOCK input tax | Personal provisioning. Zero-rated basic food + 15% non-food mix. Only deductible if hospitality business. |
+| PAK'N SAVE, PAK N SAVE, PAKNSAVE | Default BLOCK | Same |
+| NEW WORLD | Default BLOCK | Same |
+| FOUR SQUARE | Default BLOCK | Same |
+| FARRO, MOORE WILSONS | Default BLOCK | Same (though Moore Wilsons is popular with hospitality) |
+| RESTAURANTS, CAFES, BARS (any named) | Default BLOCK | Entertainment — see Section 5.11 |
+
+### 3.8 SaaS — non-resident suppliers (reverse charge or GST-registered)
+
+In New Zealand, a reverse charge on imported services applies only when the recipient cannot claim a full input tax credit (s.8(4B)). For fully taxable businesses, there is NO reverse charge obligation — the supplier either charges NZ GST (if registered under the non-resident rules) or does not, and the recipient cannot claim input tax on a supply where no GST was charged. Many large non-resident digital suppliers are now GST-registered in NZ.
+
+| Pattern | GST status | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | GST-registered in NZ | If NZ GST on invoice: domestic 15%, field 10/11 | Check invoice — Google NZ entity charges GST |
+| MICROSOFT (365, Azure) | GST-registered in NZ | If NZ GST on invoice: domestic 15%, field 10/11 | Same |
+| ADOBE | GST-registered in NZ | If NZ GST on invoice: domestic 15%, field 10/11 | Same |
+| META, FACEBOOK ADS | GST-registered in NZ | If NZ GST on invoice: domestic 15%, field 10/11 | Same |
+| SPOTIFY | GST-registered in NZ | If NZ GST on invoice: domestic 15%, field 10/11 | Same |
+| NOTION | Not NZ-registered (US) | No GST charged, no input tax claim | Cost is a non-deductible GST expense |
+| ANTHROPIC, CLAUDE | Not NZ-registered (US) | No GST charged, no input tax claim | Same |
+| OPENAI, CHATGPT | Not NZ-registered (US) | No GST charged, no input tax claim | Same |
+| GITHUB | Check invoice | If NZ GST charged: domestic 15%; if not: no claim | |
+| FIGMA | Not NZ-registered (US) | No GST charged, no input tax claim | |
+| CANVA | GST-registered in NZ (AU entity) | If NZ GST on invoice: domestic 15%, field 10/11 | Canva AU registered for NZ GST |
+| SLACK, ATLASSIAN, ZOOM, DROPBOX | Check invoice | If NZ GST charged: 15%; if not: no claim | Some have registered, some not |
+
+### 3.9 New Zealand SaaS / domestic suppliers
+
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| XERO | Domestic 15% | 10/11 | NZ-headquartered accounting software |
+| STRIPE NZ, STRIPE PAYMENTS NZ | Check invoice | | Transaction fees may be exempt; subscription taxable |
+| VEND (LIGHTSPEED) | Domestic 15% | 10/11 | POS software |
+| TIMELY, UNLEASHED | Domestic 15% | 10/11 | NZ SaaS |
+| PUSHPAY | Domestic 15% | 10/11 | NZ SaaS |
+| TRADEME, TRADE ME | Domestic 15% | 10/11 | NZ marketplace fees |
+
+### 3.10 Payment processors
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| WINDCAVE, PAYMARK, DPS | EXCLUDE for transaction fees | Payment gateway — exempt financial service |
+| EFTPOS NZ | EXCLUDE | Card processing fees — exempt |
+| AFTERPAY, LAYBUY | Check invoice | Merchant fees may be exempt (financial service) |
+
+### 3.11 Professional services (NZ)
+
+| Pattern | Treatment | Field | Notes |
+|---|---|---|---|
+| CHARTERED ACCOUNTANT, CA, CPA | Domestic 15% | 10/11 | Always claimable |
+| LAWYER, SOLICITOR, BARRISTER | Domestic 15% | 10/11 | Claimable if business purpose |
+| SURVEYOR, VALUER, ENGINEER | Domestic 15% | 10/11 | Claimable if business purpose |
+| COMPANIES OFFICE | EXCLUDE | | Government registry fee |
+
+### 3.12 Payroll and statutory (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES, PAY | EXCLUDE | Wages — outside GST scope |
+| PAYE, IRD PAYE | EXCLUDE | PAYE tax remittance |
+| KIWISAVER | EXCLUDE | Superannuation contribution |
+| ACC LEVY | EXCLUDE | Accident compensation — not a supply |
+| STUDENT LOAN | EXCLUDE | Loan repayment |
+
+### 3.13 Property and rent
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| RENT (commercial) | Domestic 15% | Commercial lease — GST on rent, input tax claimable |
+| RENT (residential) | EXCLUDE | Residential rental exempt (s.14(c)) |
+| BODY CORPORATE | EXCLUDE if residential | Residential body corporate exempt |
+| RATES, COUNCIL RATES | EXCLUDE | Local authority rates — not a supply |
+
+### 3.14 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFER, TFR, OWN ACCOUNT | EXCLUDE | Internal movement |
+| DIVIDEND | EXCLUDE | Dividend, out of scope |
+| LOAN REPAYMENT | EXCLUDE | Principal, out of scope |
+| ATM, CASH WITHDRAWAL | TIER 2 — ask | Default exclude; ask what cash was for |
+| DRAWINGS, OWNER DRAW | EXCLUDE | Owner withdrawal |
+
+### 3.15 Specific NZ patterns
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BUNNINGS NZ | Domestic 15% | Hardware/tools — claimable if business purpose |
+| THE WAREHOUSE | Default BLOCK | Likely personal — mixed retail |
+| MITRE 10 | Domestic 15% if trade purchase | Hardware — claimable if business tools/materials |
+| NOEL LEEMING, PB TECH, MIGHTY APE | Domestic 15% if business | Electronics — claimable if business asset |
+| Z ENERGY, BP NZ, MOBIL NZ, CALTEX | Domestic 15% | Fuel — claimable to extent of business use |
+| AA NZ (membership) | Domestic 15% | Automobile Association — claimable if business |
+
+---
+
+## Section 4 — Worked examples
+
+These are six fully worked classifications drawn from a hypothetical bank statement of an Auckland-based self-employed software consultant.
+
+### Example 1 — Non-resident SaaS, no NZ GST (Notion)
+
+**Input line:**
+`2026-04-03 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; NZD 26.18`
+
+**Reasoning:**
+Notion Labs Inc is a US entity not registered for NZ GST (Section 3.8). No GST on the invoice. In NZ, there is no reverse charge obligation for fully taxable businesses (s.8(4B) only applies to recipients who cannot claim full input tax). The NZD 26.18 is a business expense for income tax purposes but generates no GST input tax claim. Include in field 10 (purchases) but no input tax in field 11.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-03 | NOTION LABS INC | -26.18 | -26.18 | 0 | — | 10 (no GST) | N | — | — |
+
+### Example 2 — Non-resident SaaS, NZ GST charged (Google Ads)
+
+**Input line:**
+`2026-04-10 ; GOOGLE NEW ZEALAND LTD ; DEBIT ; Google Ads April 2026 ; -920.00 ; NZD`
+
+**Reasoning:**
+Google is GST-registered in NZ and charges 15% GST. The NZD 920.00 is GST-inclusive. GST = 920 * 3/23 = 120.00. Net = 800.00. Full input tax claim on field 11.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-10 | GOOGLE NZ | -920.00 | -800.00 | -120.00 | 15% | 10/11 | N | — | — |
+
+### Example 3 — Entertainment, 50% deduction
+
+**Input line:**
+`2026-04-15 ; THE GROVE RESTAURANT AUCKLAND ; DEBIT ; Client dinner ; -350.00 ; NZD`
+
+**Reasoning:**
+Restaurant transaction. In NZ, entertainment expenses are subject to the 50% deduction limitation under the Income Tax Act 2007, s.DD 1. For GST purposes, the input tax claim follows the entertainment limitation — only 50% of the GST is claimable (s.21(1) read with ITA s.DD 1). GST on full amount = 350 * 3/23 = 45.65. Claimable input tax = 22.83 (50%). Conservative default: block entirely as likely personal. If confirmed as business, 50% is claimable.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-15 | THE GROVE RESTAURANT | -350.00 | -350.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked (conservative). If business, 50% claimable." |
+
+### Example 4 — Capital asset (business equipment)
+
+**Input line:**
+`2026-04-18 ; PB TECH AUCKLAND ; DEBIT ; MacBook Pro 16 ; -4,599.00 ; NZD`
+
+**Reasoning:**
+NZD 4,599 GST-inclusive. GST = 4,599 * 3/23 = 599.87. Net = 3,999.13. This is a business asset. In NZ there is no separate capital goods line on the GST101A — all input tax goes to field 11. However, assets over $5,000 (GST-exclusive) are subject to change-of-use adjustment rules (s.21–21H). At $3,999.13 net, this is below the $5,000 threshold. Full input tax claim.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-18 | PB TECH | -4,599.00 | -3,999.13 | -599.87 | 15% | 10/11 | N | — | — |
+
+### Example 5 — Export sale (zero-rated)
+
+**Input line:**
+`2026-04-22 ; ACME PTY LTD SYDNEY ; CREDIT ; Invoice NZ-2026-018 IT consulting March ; +8,500.00 ; NZD`
+
+**Reasoning:**
+Incoming NZD 8,500 from an Australian company. Client provides IT consulting services to a non-resident outside NZ. Under s.11A(1)(k), services supplied to a non-resident who is outside NZ at the time of supply are zero-rated (subject to conditions — the service must not be performed for a person in NZ or relate to NZ land/goods). Include in field 5 (total sales) and field 6 (zero-rated). No output tax in field 7.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-22 | ACME PTY LTD | +8,500.00 | +8,500.00 | 0 | 0% | 5 + 6 | Y | Q2 (HIGH) | "Verify non-resident and outside-NZ conditions for zero-rating" |
+
+### Example 6 — Vehicle costs, no logbook
+
+**Input line:**
+`2026-04-28 ; Z ENERGY PARNELL ; DEBIT ; Fuel ; -102.00 ; NZD`
+
+**Reasoning:**
+Fuel purchase. In NZ, motor vehicle expenses are claimable to the extent of business use. IRD accepts a logbook kept for 3 consecutive months as evidence of the business-use percentage, which then applies for 3 years. Without a logbook, the conservative default is 0% input tax claim. If a logbook exists showing, say, 70% business use, then 70% of the GST is claimable.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | GST | Rate | Field | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-28 | Z ENERGY | -102.00 | -102.00 | 0 | — | — | Y | Q3 | "Vehicle fuel: 0% (no logbook). Provide 3-month logbook for partial claim." |
+
+---
+
+## Section 5 — Tier 1 classification rules (compressed)
+
+### 5.1 Standard rate 15% (GST Act s.8(1))
+
+The only positive GST rate in New Zealand. All taxable supplies of goods and services are taxed at 15%. There are no reduced rates. Sales → field 5 (total), output tax → field 7. Purchases → field 10, input tax → field 11.
+
+### 5.2 Zero-rated supplies (GST Act s.11, s.11A, s.11AB)
+
+Exports of goods (s.11(1)(a)): requires Customs export entry. Services to non-residents (s.11A(1)(k)): conditions — recipient must be non-resident, outside NZ at time of supply, service must not relate to NZ land or be performed for a person in NZ. Going concerns (s.11(1)(mb)): supply of a business as a going concern to a registered person. Land between registered persons (s.11(1)(mb)): compulsory zero-rating — R-NZ-5 fires. International transport (s.11A(1)(a)–(c)). Report in field 5 (total) and field 6 (zero-rated).
+
+### 5.3 Exempt supplies (GST Act s.14)
+
+Financial services (s.14(a), s.3): lending, currency exchange, life insurance, equity securities — exempt. Residential rental (s.14(c)): rental of a dwelling — exempt. Donated goods/services by nonprofits (s.14(ca)). Penalties, fines, and default interest (s.14). Exempt supplies do NOT go on the return. No output tax, no input tax on related costs.
+
+### 5.4 Input tax credits (GST Act s.20(3))
+
+Input tax is claimable on GST-inclusive purchases used in making taxable supplies. Must have a tax invoice (s.24). Tax invoice requirements: supplier name, GST number, date, description, consideration, and GST amount. For supplies under $50, a simplified tax invoice is acceptable. For supplies $50–$1,000, supplier name, date, description, and total (GST-inclusive) suffice. For supplies over $1,000, full details required.
+
+### 5.5 No reverse charge for fully taxable businesses
+
+Unlike the EU, NZ does not require a fully taxable business to self-assess GST on imported services. The reverse charge under s.8(4B) only applies when the recipient makes exempt supplies and therefore cannot claim full input tax. For a typical self-employed consultant making only taxable supplies, no reverse charge applies — either the non-resident supplier charges NZ GST (if registered) or no NZ GST applies and there is no input tax claim.
+
+### 5.6 Non-resident supplier registration
+
+Since October 2016, non-resident suppliers of remote services (digital services, streaming, SaaS) to NZ consumers must register for NZ GST if their supplies exceed $60,000. Many large suppliers (Google, Microsoft, Adobe, Meta, Spotify, Netflix, Canva) are now registered and charge NZ GST. Check the invoice: if NZ GST is on the invoice, treat as a domestic supply with input tax. If no NZ GST, no input tax claim.
+
+### 5.7 Payments basis vs invoice basis
+
+Invoice basis (accrual): account for GST when the invoice is issued (sales) or received (purchases), regardless of payment. Payments basis (cash): account for GST when payment is made or received. The bank statement naturally aligns with payments basis. For invoice basis clients, outstanding invoices at period end must be included even if not yet paid — ask for the invoice register.
+
+### 5.8 Change-of-use adjustments (s.21–21H)
+
+When an asset or expense changes its proportion of taxable use, an adjustment may be required. For assets under $5,000 (GST-exclusive), no adjustment is needed. For assets $5,000–$10,000, a one-off adjustment at first non-taxable use. For assets over $10,000, annual adjustments for up to 10 years (land: 10 years; other: useful life or 5 years). Report adjustments in field 8 (output) or field 12 (input). If complex → R-NZ-4 fires.
+
+### 5.9 Secondhand goods (s.24(5))
+
+A registered person who purchases goods from an unregistered seller can claim input tax based on the purchase price (not exceeding the open market value). Must maintain records: name/address of seller, date, description, and price. No tax invoice required from seller (since they are not registered). Claim on field 11.
+
+### 5.10 Motor vehicles
+
+No blanket block on motor vehicles in NZ (unlike Malta). ITCs are claimable to the extent of business use. IRD expects a logbook: keep for a 3-month representative period, then apply the resulting percentage for 3 years. FBT (fringe benefit tax) applies if a company provides a vehicle to an employee for private use — but FBT is outside GST scope.
+
+### 5.11 Entertainment — 50% limitation
+
+GST Act s.21(1) read with Income Tax Act 2007 subpart DD. Entertainment expenses (meals, functions, corporate hospitality) are subject to a 50% limitation. The GST input tax claim is limited to 50% of the GST component. This applies to: meals and drinks, corporate boxes, holiday accommodation for employees, entertainment allowances. Does NOT apply to: light refreshments at business meetings, meals while traveling on business overnight, conferences/seminars with incidental catering.
+
+### 5.12 Goods and services purchased from non-residents
+
+If the non-resident supplier is GST-registered in NZ and charges GST: treat as domestic purchase, claim input tax. If not registered and no GST charged: no input tax claim (for fully taxable businesses). The cost is still deductible for income tax. If the recipient makes exempt supplies: reverse charge under s.8(4B) may apply — R-NZ-7 fires.
+
+### 5.13 Bad debts (s.26)
+
+If a registrant has accounted for GST on a sale (invoice basis) and the debt becomes bad, an adjustment is made in field 12 (reduction of output tax previously returned). The adjustment is 3/23 of the bad debt written off. If the debt is later recovered, a reverse adjustment is required.
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Vehicle costs
+
+*Pattern:* Z Energy, BP, Mobil, Caltex, vehicle lease. *Default:* 0% (no logbook). *Question:* "Do you have a vehicle logbook? What is your business-use percentage?"
+
+### 6.2 Entertainment
+
+*Pattern:* restaurants, bars, cafes, catering. *Default:* block. *Question:* "Was this a business entertainment expense? If yes, 50% of GST is claimable."
+
+### 6.3 Non-resident SaaS — GST status unknown
+
+*Pattern:* SaaS charges from international brands without clear GST line. *Default:* no input tax claim. *Question:* "Does the invoice show NZ GST charged? If so, what is the supplier's NZ GST number?"
+
+### 6.4 Round-number incoming transfers
+
+*Pattern:* large round credit from owner name. *Default:* exclude as owner injection. *Question:* "Is this a customer payment, your own funds, or a loan?"
+
+### 6.5 Incoming from individuals
+
+*Pattern:* incoming from private names. *Default:* taxable sale at 15%, field 5/7. *Question:* "Was it a sale? What was supplied?"
+
+### 6.6 Incoming from overseas
+
+*Pattern:* foreign currency or non-NZ bank. *Default:* zero-rated (service to non-resident). *Question:* "Is the customer a non-resident outside NZ? Confirm zero-rating conditions."
+
+### 6.7 Large purchases (potential high-value asset)
+
+*Pattern:* single purchase > NZD 5,000. *Default:* include in field 10/11 but flag for change-of-use monitoring. *Question:* "Is this a capital asset? Will it be used 100% for business?"
+
+### 6.8 Mixed-use phone, internet, home office
+
+*Pattern:* Spark, Vodafone personal lines; home power bills. *Default:* 0% if mixed. *Question:* "Is this a dedicated business line or mixed-use?"
+
+### 6.9 Outgoing to individuals
+
+*Pattern:* outgoing to private names. *Default:* exclude as draws. *Question:* "Was this a contractor payment, salary, or personal transfer?"
+
+### 6.10 Cash withdrawals
+
+*Pattern:* ATM, cash withdrawal. *Default:* exclude. *Question:* "What was the cash used for?"
+
+### 6.11 Rent payments
+
+*Pattern:* monthly rent. *Default:* commercial (taxable, input tax claimable). *Question:* "Is this commercial or residential?"
+
+### 6.12 Trade Me / marketplace sales
+
+*Pattern:* Trade Me payouts. *Default:* taxable sale at 15%, field 5/7. Trade Me fees → domestic 15%, field 10/11. *Question:* "Are these business sales or personal item disposals?"
+
+### 6.13 Airbnb income
+
+*Pattern:* Airbnb payouts. *Default:* flag for reviewer — short-term accommodation is taxable at 15% but may trigger change-of-use issues if property was previously private. *Question:* "Is this a dedicated rental property or your private home? What is the taxable-use percentage?"
+
+### 6.14 Secondhand goods purchases
+
+*Pattern:* purchases from individuals, estate sales, auctions. *Default:* no input tax claim unless s.24 conditions met. *Question:* "Was this purchased from an unregistered seller? Do you have the seller's name and address?"
+
+### 6.15 Foreign currency transactions
+
+*Pattern:* non-NZD amounts. *Default:* convert to NZD at the RBNZ mid-rate on the transaction date. *Question:* "Confirm the NZD equivalent on the bank statement."
+
+---
+
+## Section 7 — Excel working paper template (NZ-specific)
+
+The base specification is in `vat-workflow-base` Section 3. This section provides the NZ-specific overlay.
+
+### Sheet "Transactions"
+
+Columns A–L per the base. Column H ("Field code") accepts GST101A field numbers (5, 6, 10, etc.). NZ has a simpler structure — no reverse charge fields for fully taxable businesses.
+
+### Sheet "Field Summary"
+
+One row per GST101A field:
 
 ```
-GST fraction = 3/23 (which equals 15/115 = 0.13043478...)
+| 5  | Total sales and income | =SUM of all credit (sales) transactions |
+| 6  | Zero-rated supplies | =SUMIFS(Transactions!D:D, Transactions!H:H, "6") |
+| 7  | Output tax | =(C[5]-C[6]) * 3/23  [if payments basis, GST-inclusive] |
+|    |            | OR =(C[5]-C[6]) * 0.15 [if invoice basis, GST-exclusive] |
+| 8  | Adjustments to output tax | =manual entries only |
+| 9  | Total output tax | =C[7]+C[8] |
+| 10 | Total purchases and expenses | =SUM of all debit (purchase) transactions with GST |
+| 11 | Input tax | =C[10] * 3/23  [if payments basis] |
+|    |           | OR =C[10] * 0.15 [if invoice basis] |
+| 12 | Adjustments to input tax | =manual entries (change of use, bad debts) |
+| 13 | Total input tax | =C[11]+C[12] |
+| 15 | GST to pay / refund | =C[9]-C[13] |
 ```
 
-**This fraction is used because NZ GST returns work on a GST-inclusive basis for Box 5 and Box 10.**
+**Note on accounting basis:** If payments basis, fields 5 and 10 are GST-inclusive amounts and the 3/23 formula applies. If invoice basis, fields 5 and 10 are GST-exclusive and 15% (3/20) applies. Confirm the client's basis before building.
 
-**Legislation:** GST Act 1985, s.2 (definition of "tax fraction").
+### Sheet "Return Form"
 
-### 2c. Derived Calculations [T1]
-
-```
-Box 7  = (Box 5 - Box 6) x 3/23
-Box 9  = Box 7 + Box 8
-Box 11 = Box 10 x 3/23
-Box 13 = Box 11 + Box 12
-
-IF Box 9 > Box 13 THEN
-    Box 14 = Box 9 - Box 13   -- GST to pay
-    Box 15 = 0
-ELSE
-    Box 14 = 0
-    Box 15 = Box 13 - Box 9   -- GST refund
-END
-```
-
----
-
-## Step 3: Transaction Classification Rules
-
-### 3a. Determine Transaction Type [T1]
-
-- Sale/income (output GST) or Purchase/expense (input GST)
-- Salaries, wages, PAYE, ACC levies, dividends, bank interest received, loan repayments = OUT OF SCOPE (not on GST return)
-- **Private/domestic expenditure** = no input tax claim regardless of GST content
-
-**Legislation:** GST Act 1985, s.2 (definition of "taxable activity"), s.6 (meaning of taxable activity).
-
-### 3b. Determine Supply Location [T1]
-
-| Origin | Classification |
-|--------|---------------|
-| New Zealand domestic | Standard 15% or zero-rated or exempt |
-| Imported goods | GST collected at border by Customs (or deferred payment) |
-| Imported services | Reverse charge may apply (s.8(4B)) |
-| Exports (goods) | Zero-rated under s.11 |
-| Exports (services) | Zero-rated under s.11A if supplied to non-resident outside NZ |
-
-### 3c. Sales Classification [T1]
-
-| Type | Box 5 | Box 6 | Notes |
-|------|-------|-------|-------|
-| Standard taxable sale (15%) | Include GST-inclusive amount | -- | GST = amount x 3/23 |
-| Zero-rated sale (export, land, going concern) | Include full amount | Include same amount | Net GST = 0 |
-| Exempt sale (financial services, residential rent) | Do NOT include | -- | No GST, no input recovery on related costs |
-| Out of scope (wages, dividends etc) | Do NOT include | -- | Not a supply |
-
-### 3d. Purchases Classification [T1]
-
-| Type | Box 10 | Notes |
-|------|--------|-------|
-| Standard purchase (15% GST charged) | Include GST-inclusive amount | Input tax = amount x 3/23 |
-| Zero-rated purchase | Include full amount | Input tax = 0 (no GST content) |
-| No GST charged (from unregistered supplier) | Do NOT include | No input tax claim |
-| Exempt purchase | Do NOT include | No input tax claim |
-| Private/domestic expense | Do NOT include | Blocked regardless |
-| Secondhand goods (from unregistered person) | Include deemed value | Special input credit rules apply (s.3A, s.20(3)) |
-
----
-
-## Step 4: Input Tax Credit Rules
-
-### 4a. General Entitlement [T1]
-
-A registered person may claim input tax credits for GST on goods and services acquired for the principal purpose of making taxable supplies.
-
-**Legislation:** GST Act 1985, s.20(3) (input tax deduction).
-
-**Requirements for claiming input tax:**
-1. The person must be registered for GST
-2. The goods/services must be acquired for making taxable supplies (including zero-rated)
-3. A tax invoice must be held (except for secondhand goods, or supplies under $50)
-4. The supply must have been made to the claimant
-
-### 4b. Tax Invoice Requirements [T1]
-
-| Threshold | Required Information | Legislation |
-|-----------|---------------------|-------------|
-| Supply < $50 | Supplier name, date, description, total including GST | s.24(6) |
-| Supply $50 - $1,000 | Above + supplier IRD number + statement "includes GST" | s.24(3)-(4) |
-| Supply > $1,000 | Above + recipient name/address + quantity + GST-exclusive amount + GST amount | s.24(3) |
-
-### 4c. Secondhand Goods Input Credit [T1]
-
-**This is a NZ-unique provision.** A registered person who acquires secondhand goods from an unregistered person can claim an input tax credit WITHOUT a tax invoice.
-
-**Conditions:**
-- Goods must be situated in NZ at time of supply
-- Supplier is NOT a registered person (or not required to charge GST)
-- Goods acquired for making taxable supplies
-- Input credit = purchase price x 3/23 (i.e., deemed to include GST at 15%)
-- Records must be kept: supplier name/address, date, description, price paid
-
-**Legislation:** GST Act 1985, s.3A (definition of secondhand goods), s.20(3)(a)(ia).
-
-**Cap:** Input credit limited to GST fraction of consideration actually paid.
-
-### 4d. Blocked Input Tax Categories [T1]
-
-New Zealand has fewer blocked categories than many jurisdictions:
-
-| Category | Treatment | Legislation |
-|----------|-----------|-------------|
-| Private/domestic use | No claim -- not for taxable activity | s.20(3) general requirement |
-| Entertainment (50% deductible) | Claim limited to 50% of GST content for entertainment expenditure | s.21I |
-| Non-taxable activity expenses | No claim | s.20(3) |
-| Exempt supply-related expenses | No claim (unless apportioned) | s.20(3), s.20C |
-| Residential accommodation (employer-provided) | No claim | s.21H |
-| Motor vehicles used privately | Apportionment required for private use component | s.20C-20G |
-
-**Note:** Unlike Malta and many EU countries, NZ does NOT have a blanket block on motor vehicles. Business use of motor vehicles IS claimable; only the private use portion is denied.
-
----
-
-## Step 5: Change-of-Use Adjustments (NZ Unique Approach)
-
-### 5a. Overview [T2]
-
-**New Zealand uses a change-of-use adjustment system, NOT an annual pro-rata method like the EU.** This is a fundamental difference.
-
-Under the EU VAT system, input tax is apportioned annually based on the ratio of taxable to total supplies. Under the NZ system, input tax is claimed in full at acquisition (if principal purpose is taxable), and adjustments are made in later periods if actual use changes.
-
-**Legislation:** GST Act 1985, s.20C (principal purpose test), s.20D (adjustments for going concerns), s.20E (wash-up adjustments on disposal), s.20F (financial services elections), s.20G (application).
-
-### 5b. Principal Purpose Test at Acquisition [T1]
-
-At the time of acquisition:
-- If the **principal purpose** (>50%) is making taxable supplies: claim FULL input tax, then adjust later if use changes
-- If the **principal purpose** is NOT making taxable supplies: claim NO input tax, then adjust later if use changes
-
-**Legislation:** GST Act 1985, s.20(3C)-(3D).
-
-### 5c. Adjustment Periods [T2]
-
-Adjustments are required in subsequent adjustment periods if actual taxable use differs from the percentage previously used.
-
-| Asset Value (GST-exclusive) | Number of Adjustment Periods | Period Length |
-|-----------------------------|------|---------------|
-| $0 - $5,000 | 0 | No adjustments required |
-| $5,001 - $10,000 | 2 | Equal to taxable period |
-| $10,001 - $500,000 | 5 | Equal to taxable period |
-| Over $500,000 | 10 | Equal to taxable period |
-
-**Legislation:** GST Act 1985, s.21G (number of adjustment periods).
-
-### 5d. Adjustment Calculation [T2]
+Final GST101A-ready figures:
 
 ```
-Adjustment = Full input tax x (Percentage actual taxable use - Percentage previously used)
+Field 9  = Total output tax
+Field 13 = Total input tax
+
+Field 15 = Field 9 - Field 13
+
+Positive Field 15 → GST to pay to IRD
+Negative Field 15 → Refund due from IRD
 ```
 
-If the actual taxable use percentage INCREASES from what was previously claimed, an additional input credit is available (positive adjustment in Box 12).
+### Mandatory recalc step
 
-If the actual taxable use percentage DECREASES, output tax adjustment is required (adjustment in Box 8).
+After building the workbook, run:
 
-**Legislation:** GST Act 1985, s.21A-21H.
-
-### 5e. Wash-Up on Disposal [T1]
-
-When goods or services are disposed of, a final wash-up adjustment is required under s.21(1)-(5) to reconcile total input tax claimed over the life of the asset with the actual taxable use over that period.
-
-**Legislation:** GST Act 1985, s.20E (disposal adjustment).
-
-### 5f. Comparison with EU VAT Pro-Rata
-
-| Feature | NZ GST | EU VAT |
-|---------|--------|--------|
-| Method | Change-of-use adjustments | Annual pro-rata (capital goods scheme for large items) |
-| Initial claim | Full or nothing based on principal purpose | Pro-rata at acquisition |
-| Subsequent adjustments | Per-period based on actual use change | Annual recalculation for capital goods (typically 5 or 10 years) |
-| De minimis | No adjustment for assets under $5,000 | Varies by member state |
-| Complexity | Simpler for single-use assets; complex for mixed-use | Consistent annual calculation |
-
----
-
-## Step 6: Registration Rules
-
-### 6a. Registration Thresholds [T1]
-
-| Type | Threshold | Legislation |
-|------|-----------|-------------|
-| Compulsory registration | Taxable supplies exceed or expected to exceed NZD 60,000 in any 12-month period | s.51(1) |
-| Voluntary registration | Below NZD 60,000 but carrying on a taxable activity | s.51(3) |
-| Non-resident registration | NZD 60,000 threshold applies to non-resident suppliers of remote services and low-value imported goods | s.51(1)(b) |
-
-### 6b. Marketplace Operators [T1]
-
-Electronic marketplace operators are deemed to be the supplier for GST purposes for:
-- Listed services (ride-sharing, short-stay accommodation, food/beverage delivery) -- since 1 April 2024
-- Remote services supplied by non-resident operators to NZ consumers
-- Low-value imported goods (goods valued at or below NZD 1,000) supplied by non-resident operators
-
-**Legislation:** GST Act 1985, s.60C (marketplace rules), s.8(3)(abc).
-
-### 6c. Non-Resident Suppliers [T1]
-
-Since 1 October 2016, non-resident suppliers of remote services (digital services) to NZ consumers must register and charge GST if their supplies to NZ exceed NZD 60,000 in a 12-month period.
-
-Since 1 December 2019, non-resident suppliers of low-value imported goods (NZD 1,000 or less) must also register and charge GST.
-
-**Legislation:** GST Act 1985, s.8(3)(c), s.51(1)(b).
-
-### 6d. April 2026 GST Amendments [T1]
-
-The following changes took effect from 1 April 2026:
-
-| Change | Detail | Impact |
-|--------|--------|--------|
-| Filing frequency correction | Businesses can correct GST filing frequency selections made in error within 35 days of registration | Registration admin |
-| Secondhand goods input credits | Registered businesses may claim input credits for secondhand goods acquired before registration, provided those goods support taxable supplies | Expanded s.3A / s.20(3) entitlement |
-| Record-keeping relaxation | Suppliers no longer required to collect personal details from unregistered buyers for supplies exceeding $1,000 | Reduced compliance burden; amends s.24 requirements |
-| Joint venture flow-through | Unincorporated joint venture members may elect flow-through GST treatment; registration thresholds determined at joint venture level | New s.60 election |
-| Non-taxable goods | Only integral or substantial improvement costs disqualify supplies from non-taxable treatment; minor improvements no longer prevent non-taxable status | Simplification |
-| Inherited goods | Inherited goods entering New Zealand qualify for GST exemption at Customs | Customs concession |
-| Supplier groups | Issuing members only responsible for taxable supply information for members covered by formal agreements (retroactive to 1 April 2023) | Group registration clarification |
-
-**Legislation:** Taxation (Annual Rates for 2025-26, Emergency Response, and Remedial Matters) Act 2026.
-
----
-
-## Step 7: Filing Frequency and Deadlines
-
-### 7a. Filing Periods [T1]
-
-| Frequency | Eligibility | Legislation |
-|-----------|-------------|-------------|
-| 2-monthly | Default / standard for most registered persons | s.15(2) |
-| Monthly | Taxable supplies exceed NZD 24,000,000 p.a. (compulsory), or by election | s.15(1), s.15(3) |
-| 6-monthly | Taxable supplies do not exceed NZD 500,000 p.a. AND not requesting refunds in most periods | s.15(4) |
-
-### 7b. 2-Monthly Periods (Standard) [T1]
-
-Standard 2-monthly periods end on the last day of:
-- January, March, May, July, September, November (Category A)
-- February, April, June, August, October, December (Category B)
-
-The category depends on the person's balance date.
-
-### 7c. Due Dates [T1]
-
-| Filing Method | Due Date | Legislation |
-|---------------|----------|-------------|
-| Electronic filing (myIR) | 28th of the month following the end of the taxable period | s.16(4), Tax Administration Act s.36 |
-| Paper filing | 28th of the month following the end of the taxable period | s.16(4) |
-
-**Exception:** If the 28th falls on a weekend or public holiday, the due date is the next working day.
-
-**Special:** For the period ending 31 March (or 30 November for 6-monthly filers with March balance date), the due date may be extended to 7 May for tax agents.
-
-**Legislation:** Tax Administration Act 1994, s.36 (due dates for GST returns).
-
----
-
-## Step 8: Penalties and Interest
-
-### 8a. Late Filing Penalty [T1]
-
-| Offence | Penalty | Legislation |
-|---------|---------|-------------|
-| Failure to file GST return on time | Initial penalty: $250 for the first month (or part month) late | Tax Administration Act 1994, s.139A |
-| Continued failure | Additional $250 for each subsequent month (up to a maximum total of $250 per return for small taxpayers) | s.139A |
-
-### 8b. Late Payment Penalty [T1]
-
-| Period | Penalty Rate | Legislation |
-|--------|-------------|-------------|
-| Day after due date | 1% of unpaid tax | Tax Administration Act 1994, s.139B |
-| 7th day after due date | Additional 4% of remaining unpaid tax | s.139B |
-| No further incremental penalties | Use-of-money interest applies instead | s.139B |
-
-### 8c. Use-of-Money Interest (UOMI) [T1]
-
-| Type | Rate (from 16 January 2026) | Legislation |
-|------|-------------------|-------------|
-| Underpayment (taxpayer owes IRD) | 8.97% p.a. (changes periodically; was 10.91% before May 2025, then 9.89% from May 2025) | Tax Administration Act 1994, s.120D |
-| Overpayment (IRD owes taxpayer) | 2.25% p.a. (changes periodically; was 2.31% before May 2025, then 3.27% from May 2025) | s.120D |
-
-**Note:** UOMI rates are set by Order in Council and change with market interest rates. Always verify current rates on the IRD website.
-
-### 8d. Shortfall Penalties [T2]
-
-| Type | Penalty Rate | Legislation |
-|------|-------------|-------------|
-| Lack of reasonable care | 20% of tax shortfall | Tax Administration Act 1994, s.141A |
-| Unacceptable tax position | 20% of tax shortfall | s.141B |
-| Gross carelessness | 40% of tax shortfall | s.141C |
-| Abusive tax position | 100% of tax shortfall | s.141D |
-| Evasion | 150% of tax shortfall | s.141E |
-
----
-
-## Step 9: Key Thresholds Lookup Table
-
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| Compulsory GST registration | NZD 60,000 / 12 months | s.51(1) |
-| Monthly filing (compulsory) | NZD 24,000,000 / 12 months | s.15(1) |
-| 6-monthly filing eligibility | NZD 500,000 / 12 months max | s.15(4) |
-| Tax invoice not required | Supply under NZD 50 | s.24(6) |
-| Simplified tax invoice | Supply NZD 50 - NZD 1,000 | s.24(4) |
-| Full tax invoice | Supply over NZD 1,000 | s.24(3) |
-| Change-of-use: no adjustments | Asset under NZD 5,000 (GST-exclusive) | s.21G |
-| Change-of-use: 2 adjustments | Asset NZD 5,001 - NZD 10,000 | s.21G |
-| Change-of-use: 5 adjustments | Asset NZD 10,001 - NZD 500,000 | s.21G |
-| Change-of-use: 10 adjustments | Asset over NZD 500,000 | s.21G |
-| Low-value imported goods | NZD 1,000 or less (marketplace/non-resident rules) | s.12(1) |
-| Small business cash accounting | Available to all registered persons on payments basis | s.19 |
-
----
-
-## Step 10: Reverse Charge Mechanics
-
-### 10a. When Reverse Charge Applies [T1]
-
-In NZ, the reverse charge applies in limited circumstances:
-
-1. **Imported services** -- where a registered person receives services from a non-resident and the services are NOT already subject to NZ GST, AND the recipient would not be entitled to a full input tax credit (i.e., they make exempt or mixed supplies)
-2. **If the recipient would be entitled to a full input tax credit, reverse charge is NOT required** (as it would net to zero)
-
-**Legislation:** GST Act 1985, s.8(4B) (reverse charge on imported services).
-
-### 10b. Reverse Charge Treatment [T1]
-
-When reverse charge applies:
-- Include the value of imported services in Box 5 (output) AND add GST in Box 8 (adjustment to output tax)
-- If partly for taxable supplies, claim a proportionate input tax credit in Box 12 (adjustment to input tax)
-
-### 10c. Key Difference from EU [T1]
-
-| Feature | NZ GST | EU VAT |
-|---------|--------|--------|
-| Reverse charge scope | Only on imported services where recipient cannot claim full input tax | All B2B cross-border services (broadly) |
-| Self-supply | Reverse charge disappears if full input credit available | Both sides always shown |
-| Filing | Adjustments in Box 8 and Box 12 | Separate acquisition/input boxes |
-
----
-
-## Step 11: Specific Supply Rules
-
-### 11a. Going Concern Zero-Rating [T1]
-
-The supply of a taxable activity as a going concern is zero-rated if:
-1. The supplier and recipient agree in writing that the supply is of a going concern
-2. The supply is of a taxable activity (or part of a taxable activity) that is capable of being carried on as a going concern
-3. The recipient is a registered person (or will be by settlement)
-
-**Legislation:** GST Act 1985, s.11(1)(mb).
-
-**Risk:** If conditions are not met, the supply is taxable at 15%. This can result in a significant unexpected GST liability. **Always confirm all conditions are met before zero-rating.**
-
-### 11b. Compulsory Zero-Rating of Land [T1]
-
-Since 1 April 2011, the supply of land between GST-registered persons is compulsorily zero-rated if:
-1. The supply wholly or partly consists of land
-2. The supplier and recipient are both registered persons
-3. The recipient acquires the land for the principal purpose of making taxable supplies
-4. The supply is not a supply of accommodation in a commercial dwelling
-
-**Legislation:** GST Act 1985, s.11(1)(mb).
-
-**The recipient must provide a written statement to the supplier confirming their registration and intended use.** If the statement is incorrect, the recipient (not the supplier) bears the GST liability.
-
-### 11c. Financial Services Elections [T2]
-
-A registered person making supplies of financial services can elect under s.20F to treat specified supplies as zero-rated (rather than exempt). This allows input tax recovery on related costs.
-
-**Conditions for election:**
-- Must be a registered person
-- Must make taxable supplies (other than financial services) as well as exempt financial services
-- The election applies to financial services supplied to other registered persons
-
-**Legislation:** GST Act 1985, s.20F.
-
-**Flag for reviewer: election must be confirmed and documented. Once made, the election affects all subsequent periods.**
-
-### 11d. Short-Stay Accommodation [T1]
-
-Short-stay accommodation (e.g., Airbnb, holiday rental) is a taxable supply at 15%.
-
-**Marketplace operator rules (from 1 April 2024):** If listed on an electronic marketplace, the marketplace operator is deemed the supplier and must account for GST.
-
-**Legislation:** GST Act 1985, s.60C.
-
-**Distinction from residential rent:** Long-term residential rental (tenancy of 4 weeks or more as a principal place of residence) is EXEMPT. Short-stay / holiday accommodation is TAXABLE at 15%.
-
-### 11e. GST on Imported Goods [T1]
-
-| Value | Treatment | Legislation |
-|-------|-----------|-------------|
-| Over NZD 1,000 | GST collected by NZ Customs at border (or deferred payment scheme) | s.12(1) |
-| NZD 1,000 or less (low-value goods) | GST collected by offshore supplier or marketplace operator | s.8(3)(ab) |
-
-For goods over NZD 1,000, the importer claims input tax based on the Customs import entry document, not a tax invoice from the supplier.
-
-**Legislation:** GST Act 1985, s.12 (imposition of GST on imports), s.20(3)(a)(iii) (input tax on imports).
-
----
-
-## Step 12: PROHIBITIONS [T1]
-
-- NEVER let AI guess GST classification -- it is deterministic from facts and legislation
-- NEVER claim input tax for a person who is not GST-registered
-- NEVER claim input tax on exempt supplies (financial services, residential rent) without checking for s.20F election
-- NEVER zero-rate a land transaction without confirming BOTH parties are registered AND the recipient's written statement has been provided
-- NEVER zero-rate a going concern without confirming ALL three conditions (written agreement, capable of being carried on, recipient registered)
-- NEVER apply the secondhand goods credit when the supplier IS a registered person charging GST
-- NEVER ignore the change-of-use adjustment thresholds -- assets under $5,000 do NOT require adjustments
-- NEVER treat long-term residential rental as taxable -- it is EXEMPT
-- NEVER treat short-stay accommodation as exempt -- it is TAXABLE at 15%
-- NEVER confuse zero-rated (input tax claimable) with exempt (input tax NOT claimable)
-- NEVER file a return using GST-exclusive figures -- Box 5 and Box 10 use GST-INCLUSIVE amounts
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
-- NEVER ignore marketplace operator rules for ride-sharing, accommodation, and food delivery platforms
-- NEVER apply reverse charge when the recipient is entitled to a full input tax credit (it nets to zero, so the reverse charge mechanism is disapplied)
-
----
-
-## Step 13: Edge Case Registry
-
-### EC1 -- Going Concern: Conditions Not Met [T2]
-
-**Situation:** Vendor sells a business to a buyer. Both are registered. Buyer signs a going concern statement. However, the business has ceased trading 6 months prior and has no employees, stock, or customers.
-**Resolution:** The supply may NOT qualify as a going concern because the activity is not "capable of being carried on." Zero-rating is at risk. Flag for reviewer: assess whether the business as transferred is genuinely capable of operating as a going concern. If not, standard-rate at 15%.
-**Legislation:** GST Act 1985, s.11(1)(mb); Case law: Belton v CIR (2014).
-
-### EC2 -- Compulsory Zero-Rating of Land: Incorrect Statement [T1]
-
-**Situation:** Registered vendor sells land to registered purchaser. Purchaser provides a written statement that they will use the land for taxable supplies. After settlement, purchaser converts to residential rental (exempt).
-**Resolution:** The supply was correctly zero-rated at the time. The PURCHASER is liable for the GST as an adjustment under s.5(2). The vendor is protected provided they held a valid statement at the time of supply.
-**Legislation:** GST Act 1985, s.5(2) (recipient's liability on incorrect statement).
-
-### EC3 -- Change-of-Use Adjustment: Asset Increases in Taxable Use [T2]
-
-**Situation:** Registered person acquires a building for $800,000 (GST-exclusive). Initially 60% taxable use, 40% exempt. Claims full input tax (principal purpose is taxable, >50%). In Year 2, taxable use increases to 80%.
-**Resolution:** No adjustment needed in Year 2 because the actual taxable use (80%) is HIGHER than the 100% initially claimed. Adjustment only required if actual taxable use is LOWER than previously claimed percentage.
-**Wait:** Actually under the NZ rules, the initial claim was 100% (full input tax). If actual use is only 80%, an OUTPUT adjustment of 20% x (full input tax / number of adjustment periods) is required. If use later increases to 90%, a partial INPUT adjustment reversal occurs.
-**Legislation:** GST Act 1985, s.21A-21H.
-**Flag for reviewer:** Change-of-use calculations for high-value mixed-use assets require careful tracking of percentage changes period by period. Confirm actual use percentages.
-
-### EC4 -- Secondhand Goods: No Invoice Available [T1]
-
-**Situation:** Registered dealer purchases a used car from a private individual for NZD 15,000. No tax invoice is available (private seller is not registered).
-**Resolution:** Secondhand goods credit applies. Input tax = NZD 15,000 x 3/23 = NZD 1,956.52. Record must include: seller's name and address, date of purchase, description of goods, and consideration paid. Include in Box 10 (NZD 15,000) and claim input tax in Box 11.
-**Legislation:** GST Act 1985, s.3A, s.20(3)(a)(ia), s.24(7).
-
-### EC5 -- Non-Resident Digital Services [T1]
-
-**Situation:** A NZ consumer subscribes to a streaming service from a US company. The US company is registered for NZ GST (exceeds NZD 60,000 threshold).
-**Resolution:** The non-resident supplier charges and accounts for NZ GST at 15%. The consumer pays the GST-inclusive price. If a registered NZ business subscribes, it may claim an input tax credit if the service is for a taxable activity.
-**Legislation:** GST Act 1985, s.8(3)(c), s.51(1)(b).
-
-### EC6 -- Marketplace Operator Deemed Supplier [T1]
-
-**Situation:** NZ resident lists their apartment on Airbnb for short-stay accommodation. Airbnb is an electronic marketplace operator.
-**Resolution:** From 1 April 2024, Airbnb is the deemed supplier and must account for GST on the accommodation supply. The underlying supplier (host) does not charge GST on the Airbnb-facilitated supply. However, the host can still claim input tax on expenses related to providing the accommodation if they are registered.
-**Legislation:** GST Act 1985, s.60C (marketplace operators for listed services).
-
-### EC7 -- Financial Services: Mixed Supplier [T2]
-
-**Situation:** A registered person provides both taxable consulting services and exempt financial services (e.g., loan brokering).
-**Resolution:** Input tax on costs directly attributable to taxable supplies: fully claimable. Input tax on costs directly attributable to exempt supplies: not claimable. Input tax on overheads (shared costs): apportionment required using change-of-use rules (not the EU annual pro-rata). Consider s.20F election to zero-rate financial services to other registered persons.
-**Legislation:** GST Act 1985, s.20C (apportionment), s.20F (election).
-**Flag for reviewer:** Confirm whether s.20F election is appropriate and has been or should be made.
-
-### EC8 -- Associated Persons: Market Value Rule [T2]
-
-**Situation:** A company sells a vehicle to its shareholder (associated person) for NZD 5,000 when market value is NZD 20,000.
-**Resolution:** Under s.10(3), where supply is between associated persons for less than market value AND the recipient cannot claim full input tax, the supply is deemed to be at open market value (NZD 20,000). Output GST applies on NZD 20,000.
-**Legislation:** GST Act 1985, s.10(3) (associated persons), s.2A (definition of associated persons).
-**Flag for reviewer:** Confirm association and whether recipient can claim full input tax.
-
-### EC9 -- GST on Imported Services: Reverse Charge Not Required [T1]
-
-**Situation:** Fully taxable registered person (100% taxable supplies) purchases marketing services from an Australian company. No NZ GST charged.
-**Resolution:** Reverse charge is NOT required because the recipient would be entitled to claim a full input tax credit (net effect zero). Simply record the expense as a non-GST purchase. Do NOT include in GST return.
-**Legislation:** GST Act 1985, s.8(4B)(b) -- reverse charge does not apply where input tax would be fully recoverable.
-
-### EC10 -- Motor Vehicle: Mixed Business and Private Use [T2]
-
-**Situation:** Registered person acquires a car for NZD 45,000 (GST-inclusive). 70% business use, 30% private use.
-**Resolution:** Principal purpose is taxable (>50%), so claim FULL input tax at acquisition (NZD 45,000 x 3/23 = NZD 5,869.57). In subsequent adjustment periods, make change-of-use adjustments for the 30% private use component. Asset value exceeds NZD 10,000, so 5 adjustment periods apply.
-**Legislation:** GST Act 1985, s.20(3C), s.21G.
-**Flag for reviewer:** Confirm the business/private use split. Log-book or reasonable estimate required.
-
-### EC11 -- Credit Notes and Debit Notes [T1]
-
-**Situation:** Registered person issues a credit note to a customer for returned goods.
-**Resolution:** Reduce Box 5 by the credit note amount (GST-inclusive). Output tax in Box 7 is automatically reduced by the GST fraction calculation. If a debit note is issued (price increase), increase Box 5 accordingly.
-**Legislation:** GST Act 1985, s.25 (credit and debit notes).
-
-### EC12 -- Payments Basis: Timing of Claim [T1]
-
-**Situation:** Registered person on payments basis receives a purchase invoice in March but pays in May.
-**Resolution:** On payments basis, the input tax is claimed in the period the payment is made (May period), NOT the period the invoice is received. Similarly, output tax is accounted for when payment is received from customers, not when invoiced.
-**Legislation:** GST Act 1985, s.19 (accounting basis), s.20(4) (payments basis adjustments).
-
-### EC13 -- Insurance Proceeds [T1]
-
-**Situation:** Registered person receives an insurance payout for damaged business equipment.
-**Resolution:** Insurance proceeds for a taxable supply are treated as consideration for a deemed supply. Include in Box 5 (GST-inclusive basis). GST content = amount x 3/23.
-**Legislation:** GST Act 1985, s.5(13) (insurance).
-
----
-
-## Step 14: Comparison with EU VAT
-
-| Feature | NZ GST | EU VAT (Standard) |
-|---------|--------|--------------------|
-| Rate structure | Single rate: 15% | Multiple rates: standard (17-27%), reduced (5-18%), super-reduced, zero |
-| Tax fraction | 3/23 | Varies (e.g., 1/6 for UK 20%) |
-| Return basis | GST-inclusive amounts | GST/VAT-exclusive amounts (most member states) |
-| Apportionment method | Change-of-use adjustments (NZ unique) | Annual pro-rata + capital goods scheme |
-| Reverse charge | Only when recipient cannot claim full input credit | Mandatory for all B2B cross-border services |
-| Secondhand goods | Input credit from unregistered supplier (no invoice needed) | Margin scheme (no input credit on purchase) |
-| Registration threshold | NZD 60,000 (~EUR 33,000) | Varies by member state (EUR 0 to EUR 85,000) |
-| Filing frequency | 2-monthly (standard) | Monthly or quarterly (varies) |
-| E-invoicing | Not mandatory (myIR filing) | Mandatory in some member states (Italy, etc.) |
-| Marketplace rules | Deemed supplier for listed services, remote services, low-value goods | Deemed supplier for certain B2C e-commerce |
-| Place of supply (services) | Where services are performed or where recipient is | Complex rules based on service type (B2B: customer location) |
-| Capital goods adjustment | Change-of-use periods based on asset value ($5k/$10k/$500k bands) | 5-year or 10-year (20-year for immovable property in some states) |
-| Going concern relief | Zero-rated (conditions) | Outside scope of VAT / TOGC (conditions) |
-
----
-
-## Step 15: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Qualified NZ accountant must confirm before filing.
-```
-
-When Claude identifies a [T3] situation, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified NZ accountant. Document gap.
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/nz-gst-<period>-working-paper.xlsx
 ```
 
 ---
 
-## Step 16: Test Suite
+## Section 8 — New Zealand bank statement reading guide
 
-### Test 1 -- Standard Local Sale at 15% [T1]
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these NZ-specific patterns.
 
-**Input:** NZ registered person sells consulting services to NZ customer. Invoice: NZD 1,150 (GST-inclusive, being NZD 1,000 + NZD 150 GST). Payments basis, payment received in period.
-**Expected output:** Box 5 = NZD 1,150. Box 7 = NZD 1,150 x 3/23 = NZD 150.00. No entry in Box 6.
+**ANZ NZ export format.** CSV download from ANZ Internet Banking. Columns: Date (DD/MM/YYYY), Transaction Details, Amount, Balance. The Amount column uses negative for debits. Transaction Details combines type and payee (e.g., "Visa Purchase - PB Tech Auckland", "Direct Debit - Spark NZ").
 
-### Test 2 -- Zero-Rated Export Sale [T1]
+**Westpac NZ export format.** CSV from Westpac One. Columns: Date, Amount, Other Party, Description, Reference, Particulars, Analysis Code. The "Other Party" field contains the counterparty name. "Particulars", "Reference", and "Description" are the three freeform fields from NZ bank payment references.
 
-**Input:** NZ registered person exports goods to Australia. Invoice: NZD 5,000 (zero-rated). Goods entered for export with NZ Customs.
-**Expected output:** Box 5 = NZD 5,000. Box 6 = NZD 5,000. Box 7 = (NZD 5,000 - NZD 5,000) x 3/23 = NZD 0.
+**ASB export format.** CSV from ASB FastNet Classic. Columns: Date, Unique Id, Tran Type, Cheque Number, Payee, Memo, Amount. Date format: YYYY-MM-DD.
 
-### Test 3 -- Standard Purchase with Input Tax Claim [T1]
+**BNZ export format.** CSV from BNZ Online. Columns: Date, Amount, Payee, Particulars, Code, Reference, Tran Type, This Party Account. Date format: DD/MM/YYYY.
 
-**Input:** NZ registered person purchases office supplies from NZ supplier. Invoice: NZD 230 (GST-inclusive, being NZD 200 + NZD 30 GST). Fully taxable business.
-**Expected output:** Box 10 = NZD 230. Box 11 = NZD 230 x 3/23 = NZD 30.00.
+**Kiwibank export format.** CSV from Kiwibank Internet Banking. Columns: Date, Description, Amount, Balance. Simple format.
 
-### Test 4 -- Secondhand Goods Purchase from Private Seller [T1]
+**Common NZ bank statement patterns:**
 
-**Input:** NZ registered dealer purchases used furniture from a private individual for NZD 2,300. Seller is not registered. No tax invoice.
-**Expected output:** Box 10 = NZD 2,300 (deemed GST-inclusive). Box 11 = NZD 2,300 x 3/23 = NZD 300.00. Secondhand goods credit applies.
+| Term | Meaning |
+|---|---|
+| Visa Purchase, EFTPOS | Card purchase (debit) |
+| Direct Debit, D/D | Pre-authorized direct debit |
+| Automatic Payment, A/P | Scheduled automatic payment |
+| Direct Credit, D/C | Incoming direct credit |
+| Transfer, TFR | Internal transfer |
+| ATM W/D | Cash withdrawal |
+| BNPL | Buy now pay later (Afterpay, Laybuy) |
+| Particulars / Code / Reference | NZ-specific 3-field payment reference system |
 
-### Test 5 -- Exempt Supply: Residential Rental Income [T1]
+**NZ payment reference system.** New Zealand bank payments have three freeform reference fields: Particulars (12 chars), Code (12 chars), Reference (12 chars). These often contain invoice numbers, account references, or payment descriptions. Always read all three fields when identifying a transaction.
 
-**Input:** NZ registered person (also has other taxable business) earns NZD 2,000 per month in long-term residential rental income.
-**Expected output:** Do NOT include in Box 5. Exempt supply. No output GST. Input tax on expenses related to this rental: NOT claimable (apportionment required if mixed with taxable activity).
+**Internal transfers.** Own-account transfers between the client's ANZ, ASB, Westpac accounts. Labelled "transfer", "TFR", or matching account numbers. Always exclude.
 
-### Test 6 -- Imported Services: Reverse Charge Not Required [T1]
+**Sole trader draws.** A self-employed sole trader cannot pay themselves wages. Transfers to personal accounts are drawings. Exclude.
 
-**Input:** Fully taxable NZ registered person (100% taxable) purchases digital marketing services from US company for NZD 500. No NZ GST charged.
-**Expected output:** No GST return entry required. Reverse charge is disapplied because recipient would claim full input credit (net effect zero). Record as expense only.
+**ACC levies.** ACC (Accident Compensation Corporation) levies appear as direct debits. These are not a supply — exclude. They are deductible for income tax but generate no GST input tax.
 
-### Test 7 -- Imported Services: Reverse Charge Required [T2]
+**IRD payments.** GST payments, provisional tax, PAYE appear as "IRD" or "INLAND REVENUE". Always exclude — these are tax payments, not supplies.
 
-**Input:** NZ registered person making 60% taxable and 40% exempt supplies purchases consulting from UK firm for NZD 10,000. No NZ GST charged.
-**Expected output:** Reverse charge applies (recipient cannot claim full input credit). Box 5 += NZD 10,000. Box 8 = NZD 10,000 x 3/23 = NZD 1,304.35 (output tax adjustment). Box 12 = NZD 1,304.35 x 60% = NZD 782.61 (input tax adjustment for taxable portion). Net cost = NZD 521.74.
+**Refunds and reversals.** Identify by "refund", "reversal", "credit adj". Book as a negative in the same field as the original.
 
-### Test 8 -- Going Concern Zero-Rating [T1]
-
-**Input:** Registered vendor sells entire business to registered buyer for NZD 500,000. Written agreement in place. Business is fully operational with staff, stock, and customers.
-**Expected output:** Box 5 = NZD 500,000. Box 6 = NZD 500,000. Box 7 = NZD 0. Zero-rated going concern. All three conditions met.
-
-### Test 9 -- Land Transaction: Compulsory Zero-Rating [T1]
-
-**Input:** Registered person sells commercial property to another registered person for NZD 1,200,000. Buyer provides written statement confirming registration and taxable use.
-**Expected output:** Box 5 = NZD 1,200,000. Box 6 = NZD 1,200,000. Zero-rated under s.11(1)(mb). Box 7 = NZD 0.
-
-### Test 10 -- Entertainment: 50% Limitation [T1]
-
-**Input:** NZ registered person takes clients to dinner. Restaurant bill NZD 460 (GST-inclusive). Fully taxable business.
-**Expected output:** Box 10 = NZD 460 (full amount). Box 11 = NZD 460 x 3/23 = NZD 60.00. BUT input tax claimable is limited to 50% = NZD 30.00. Adjustment of NZD -30.00 in Box 12 (or only claim NZD 30.00 net in Box 11/12).
-
-### Test 11 -- Late Payment Penalty Calculation [T1]
-
-**Input:** Registered person files GST return on time but pays NZD 10,000 GST liability 10 days late.
-**Expected output:** Day 1 late: 1% penalty = NZD 100. Day 7: additional 4% penalty on remaining = 4% x NZD 10,100 = NZD 404. Total penalties = NZD 504. Plus UOMI from due date at applicable rate.
-
-### Test 12 -- Marketplace Operator: Airbnb Short-Stay [T1]
-
-**Input:** NZ resident lists apartment on Airbnb. Guest pays NZD 230 per night for 3 nights (NZD 690 total). Airbnb is registered marketplace operator.
-**Expected output:** Airbnb accounts for GST as deemed supplier. The host does NOT charge GST on the Airbnb-facilitated booking. Host's GST return: no output entry for this supply. Airbnb's GST return: Box 5 includes the GST-inclusive accommodation amount.
+**Foreign currency.** Convert to NZD at the RBNZ (Reserve Bank of New Zealand) mid-rate on the transaction date. Note the rate in column L.
 
 ---
 
-## Step 17: Out of Scope -- Income Tax (Reference Only) [T3]
+## Section 9 — Onboarding fallback (only when inference fails)
 
-This skill does not compute income tax. The following is reference information only. Escalate to qualified accountant.
+### 9.1 Entity type
+*Inference rule:* personal name = sole trader; "Ltd", "Limited" = company; "LP" = limited partnership. *Fallback:* "Are you a sole trader, partnership, company, or look-through company?"
 
-- **Company tax rate:** 28% on taxable income
-- **Individual tax rates:** Progressive bands 10.5% / 17.5% / 30% / 33% / 39%
-- **Trustee tax rate:** 33% (unless beneficiary income)
-- **ACC levies:** Separate obligation, not part of GST
-- **PAYE:** Employer obligation, separate from GST
-- **FBT (Fringe Benefit Tax):** Separate return and payment, not on GST return
-- **Provisional tax:** Separate obligation for taxpayers with residual income tax over NZD 5,000
+### 9.2 GST registration
+*Inference rule:* if asking for a GST101A, they are registered. *Fallback:* "Are you GST-registered? What is your IRD number?"
+
+### 9.3 Accounting basis
+*Inference rule:* small businesses typically use payments basis. If Xero/MYOB export shows accrual data, likely invoice basis. *Fallback:* "Are you on the invoice basis (accrual) or payments basis (cash)?"
+
+### 9.4 Filing period
+*Inference rule:* transaction date range. 2-monthly is most common. *Fallback:* "Is this a 1-month, 2-month, or 6-month GST period? What are the dates?"
+
+### 9.5 Industry
+*Inference rule:* counterparty mix. *Fallback:* "In one sentence, what does the business do?"
+
+### 9.6 Employees
+*Inference rule:* PAYE/KiwiSaver/wages outgoing. *Fallback:* "Do you have employees?"
+
+### 9.7 Exempt supplies
+*Inference rule:* financial services, residential rental income patterns. *Fallback:* "Do you make any GST-exempt supplies (financial services, residential rental)?"
+
+### 9.8 Zero-rated supplies
+*Inference rule:* foreign currency incoming, Australian/overseas counterparties. *Fallback:* "Do you export goods or provide services to customers outside NZ?"
+
+### 9.9 Prior period balance
+*Not inferable. Always ask.* "Do you have any GST owing or refund due from the previous period?"
+
+### 9.10 Vehicle use
+*Inference rule:* fuel purchases, vehicle-related charges. *Fallback:* "Do you use a vehicle for business? Do you have a logbook?"
 
 ---
 
-## Contribution Notes
+## Section 10 — Reference material
 
-If you are adapting this skill for another jurisdiction:
+### Validation status
 
-1. Replace all legislation references with the equivalent national legislation.
-2. Replace all field numbers with the equivalent fields on your jurisdiction's GST/VAT return form.
-3. Replace GST rates with your jurisdiction's standard, reduced, and zero rates.
-4. Replace all NZD thresholds with your jurisdiction's equivalents in local currency.
-5. Replace the change-of-use adjustment rules with your jurisdiction's apportionment method.
-6. Replace blocked/limited categories with your jurisdiction's equivalent non-deductible categories.
-7. Have a qualified accountant in your jurisdiction validate every T1 rule before publishing.
-8. Add your own edge cases to the Edge Case Registry.
-9. Run all test suite cases against your jurisdiction's rules.
-10. Update the comparison table to reflect differences from your jurisdiction's perspective.
+This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture. NZ-specific content (rates, field mappings, input tax rules, zero-rating conditions) is based on the Goods and Services Tax Act 1985 as of April 2026.
 
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+### Sources
+
+**Primary legislation:**
+1. Goods and Services Tax Act 1985 (NZ) — s.3 (definitions), s.8 (imposition), s.8(4B) (reverse charge), s.11/11A (zero-rating), s.14 (exempt), s.20 (calculation of tax), s.21–21H (change of use), s.24 (tax invoices and secondhand goods), s.26 (bad debts), s.51 (registration)
+2. Tax Administration Act 1994 — filing and payment obligations
+3. Income Tax Act 2007, subpart DD — entertainment limitation
+
+**IRD guidance:**
+4. GST101A form and guide — ird.govt.nz
+5. IR375 GST guide — comprehensive GST guidance
+6. IR546 Keeping records — record-keeping requirements
+7. IS 24/07 (or current version) — non-resident digital services GST registration
+
+**Other:**
+8. RBNZ exchange rates — rbnz.govt.nz
+9. Companies Office — companiesoffice.govt.nz (entity verification)
+10. myIR — myir.ird.govt.nz (filing portal)
+
+### Known gaps
+
+1. Financial services election (s.20F) is refused — specialized skill needed.
+2. Compulsory zero-rating of land is refused — requires property lawyer involvement.
+3. Complex change-of-use adjustments on high-value mixed-use assets are refused — too fact-sensitive.
+4. GST group registrations are refused.
+5. The non-resident supplier GST registration landscape is evolving — always check the invoice for NZ GST before assuming no input tax claim.
+6. The 3/23 formula vs 3/20 depends on the accounting basis — confirm before building the workbook.
+7. The secondhand goods credit (s.24) has been subject to legislative tightening — verify current requirements.
+8. Crypto/digital asset transactions have no specific GST guidance as of April 2026 — flag for reviewer.
+
+### Change log
+
+- **v2.0 (April 2026):** Full rewrite to align with three-tier Accora architecture. 10-section Malta v2.0 structure adopted. Supplier pattern library added (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue added (Section 6). Excel template added (Section 7). Bank statement guide with ANZ/Westpac/ASB/BNZ formats added (Section 8). Onboarding moved to fallback (Section 9).
+- **v1.1 (April 2026):** Previous version with inline tier tags. Superseded.
+
+### Self-check (v2.0)
+
+1. Quick reference at top with single-rate table and conservative defaults: yes (Section 1).
+2. Supplier library as literal lookup tables: yes (Section 3, 15 sub-tables).
+3. Worked examples (hypothetical Auckland IT consultant): yes (Section 4, 6 examples).
+4. Tier 1 rules compressed: yes (Section 5, 13 rules).
+5. Tier 2 catalogue compressed: yes (Section 6, 15 items).
+6. Excel template with mandatory recalc: yes (Section 7).
+7. Onboarding as fallback only: yes (Section 9, 10 items).
+8. All 8 NZ-specific refusals present: yes (Section 2, R-NZ-1 through R-NZ-8).
+9. Reference material at bottom: yes (Section 10).
+10. No reverse charge for fully taxable businesses explicit: yes (Section 5.5 + Example 1).
+11. Non-resident GST registration landscape documented: yes (Section 5.6 + Section 3.8).
+12. Entertainment 50% limitation explicit: yes (Section 5.11 + Example 3).
+13. Vehicle logbook requirement explicit: yes (Section 5.10 + Example 6).
+14. 3/23 formula explained: yes (Section 1 + Section 7).
+15. Payments vs invoice basis distinction explicit: yes (Section 5.7 + Section 7).
+
+## End of New Zealand GST Return Skill v2.0
+
+This skill is incomplete without the companion workflow file loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture). Do not attempt to produce a GST101A without it loaded.
 
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Chartered Accountant or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

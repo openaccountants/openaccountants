@@ -1,603 +1,630 @@
 ---
 name: south-korea-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a South Korea VAT return (부가가치세 신고서) for any business operator. Trigger on phrases like "prepare Korean VAT return", "Korean VAT", "HomeTax filing", "e-tax invoice", "전자세금계산서", "부가가치세", or any request involving South Korea VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete South Korea VAT classification rules, return form mappings, deductibility rules, reverse charge treatment, simplified taxation thresholds, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any South Korea VAT-related work.
+version: 2.0
 ---
 
-# South Korea VAT Return Preparation Skill
+# South Korea VAT Return Preparation Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | South Korea (Republic of Korea) |
-| Jurisdiction Code | KR |
-| Primary Legislation | VAT Act (부가가치세법, Act No. 11873, as amended) |
-| Supporting Legislation | VAT Act Enforcement Decree (부가가치세법 시행령); Restriction of Special Taxation Act (조세특례제한법); Framework Act on National Taxes (국세기본법) |
-| Tax Authority | National Tax Service (국세청, NTS) |
-| Filing Portal | https://hometax.go.kr (HomeTax / 홈택스) |
-| Standard VAT Rate | 10% (Article 30 VAT Act) |
-| Currency | Korean Won (KRW) |
+|---|---|
+| Country | South Korea (Republic of Korea, 대한민국) |
+| Standard rate | 10% (single rate, Article 30 VAT Act) |
+| Reduced rates | None (Korea uses only standard 10%, zero 0%, and exempt) |
+| Zero rate | 0% (exports, foreign currency earning services, international transport) |
+| Exempt | No VAT charged, no input deduction (unprocessed food, medical, education, financial, public transport, books) |
+| Return form | 일반과세자 부가가치세 신고서 (General Taxpayer VAT Return); 간이과세자 신고서 (Simplified Taxpayer Return) |
+| Filing portal | https://hometax.go.kr (HomeTax / 홈택스) |
+| Authority | National Tax Service (국세청, NTS) |
+| Currency | KRW (Korean Won) |
+| Filing frequency | Semi-annual with quarterly preliminary returns (general taxpayer); semi-annual (simplified taxpayer) |
+| E-invoice requirement | 전자세금계산서 (e-tax invoice) mandatory for all corporations and individual taxpayers with revenue >= KRW 80M |
+| Primary legislation | VAT Act (부가가치세법, as amended); VAT Act Enforcement Decree (시행령); Framework Act on National Taxes (국세기본법) |
 | Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: transaction classification, e-tax invoice requirements, standard/zero-rated determination, filing deadlines. Tier 2: simplified taxation eligibility, partial input tax apportionment, cross-border digital services. Tier 3: group VAT registration, special industry regimes, tax tribunal disputes. |
-
----
-
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A licensed tax practitioner (세무사/공인회계사) must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to licensed practitioner and document the gap.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Business registration number (사업자등록번호)** [T1] -- 10-digit format (XXX-XX-XXXXX)
-2. **Business type** [T1] -- General taxpayer (일반과세자), Simplified taxpayer (간이과세자), or Exempt business (면세사업자)
-3. **VAT filing period** [T1] -- Period 1 (Jan-Jun) or Period 2 (Jul-Dec); preliminary returns within each period
-4. **Industry/sector** [T2] -- impacts simplified taxation value-added ratios and special deductibility rules
-5. **Does the business make exempt supplies?** [T2] -- If yes, partial input tax apportionment required (Article 40 VAT Act)
-6. **Annual revenue** [T1] -- determines simplified taxation eligibility (< KRW 104 million; raised from KRW 80M effective July 2024)
-7. **Does the business issue e-tax invoices (전자세금계산서)?** [T1] -- mandatory for all general taxpayers
-8. **Does the business import goods?** [T1] -- customs VAT recovery rules apply
-9. **Does the business provide cross-border digital services?** [T2] -- simplified registration for non-residents applies
-10. **Prior period carried-forward refund amount** [T1] -- for offset against current period liability
-
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until business type and period are confirmed.**
-
----
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-
-- Sale (output VAT / 매출세액) or Purchase (input VAT / 매입세액)
-- Salaries, loan repayments, dividends, income tax payments = OUT OF SCOPE (never on VAT return)
-- **Legislation:** VAT Act Article 4 (taxable transactions), Article 9 (supply of goods), Article 11 (supply of services)
-
-### 1b. Determine Counterparty Location [T1]
-
-- Domestic (Korea): supplier/customer has Korean business registration
-- Foreign: all non-Korean counterparties
-- **Note:** For services received from abroad, reverse charge (대리납부) applies under Article 52
-- **Legislation:** VAT Act Article 20 (place of supply for goods), Article 21 (place of supply for services)
-
-### 1c. Determine Supply Type [T1]
-
-| Supply Type | VAT Treatment | Legislation |
-|------------|---------------|-------------|
-| Standard domestic supply of goods | 10% | Article 30(1) |
-| Standard domestic supply of services | 10% | Article 30(1) |
-| Export of goods | 0% (zero-rated) | Article 24(1)1 |
-| Services to non-residents earning foreign currency | 0% (zero-rated) | Article 24(1)2 |
-| International transportation | 0% (zero-rated) | Article 24(1)3 |
-| Exempt supply | Exempt (no VAT) | Article 26 |
-| Deemed supply (self-use, gifts) | 10% on market value | Article 10 |
-
-### 1d. Determine Expense Category [T1]
-
-- Capital asset (감가상각자산): assets subject to depreciation per Corporate Tax Act / Income Tax Act
-- Inventory for resale (재화): goods purchased for direct resale
-- Overhead / operating expense (일반경비): all other business expenses
-- **Legislation:** VAT Act Article 39 (non-deductible input tax), Enforcement Decree Article 80
-
----
-
-## Step 2: VAT Return Form Structure (일반과세자 부가가치세 신고서) [T1]
-
-**Legislation:** VAT Act Article 49 (filing of return); NTS prescribed return form.
-
-### Section 1: Output Tax (매출세액)
-
-| Line | Description | Classification |
-|------|-------------|----------------|
-| Line 1 | Tax invoices issued -- taxable sales (세금계산서 발급분) | Domestic B2B sales with e-tax invoice |
-| Line 2 | Tax invoices issued -- zero-rated sales (영세율 세금계산서 발급분) | Zero-rated B2B with e-tax invoice |
-| Line 3 | Credit card / cash receipt sales (신용카드·현금영수증 발행분) | B2C sales via card/cash receipt |
-| Line 4 | Other sales (기타 매출) | Sales without tax invoice (rare, penalty risk) |
-| Line 5 | Total taxable supply value (과세표준) | Sum of Lines 1-4 |
-| Line 6 | Output tax (매출세액) | Line 5 x 10% (adjusted for zero-rated) |
-
-### Section 2: Zero-Rated Sales Detail (영세율 매출명세)
-
-| Line | Description | Classification |
-|------|-------------|----------------|
-| Line 7 | Direct exports (직접수출) | FOB value of exported goods |
-| Line 8 | Intermediary trade (중계무역) | Re-export / entrepot trade |
-| Line 9 | Deemed exports (내국신용장·구매확인서) | Local letter of credit / purchase confirmation |
-| Line 10 | Foreign currency earning services (외화획득 용역) | Services to non-residents |
-| Line 11 | Other zero-rated (기타 영세율) | Other qualifying zero-rated supplies |
-
-### Section 3: Input Tax (매입세액)
-
-| Line | Description | Classification |
-|------|-------------|----------------|
-| Line 12 | Tax invoices received (세금계산서 수취분) | Domestic purchases with valid e-tax invoice |
-| Line 13 | Fixed assets (고정자산 매입) | Capital asset purchases (subset of Line 12) |
-| Line 14 | Non-tax-invoice purchases (기타 공제매입세액) | Credit card, cash receipt purchases eligible for input |
-| Line 15 | Total input tax (매입세액 합계) | Sum of Lines 12-14 |
-
-### Section 4: Tax Calculation (세액계산)
-
-| Line | Description | Calculation |
-|------|-------------|-------------|
-| Line 16 | Net tax (차감세액) | Line 6 - Line 15 |
-| Line 17 | Adjustments (가감조정세액) | Credit note adjustments, bad debt relief |
-| Line 18 | Preliminary payment credit (예정신고 미환급세액) | Credit from preliminary return |
-| Line 19 | Carried-forward credit (전기 미환급세액) | Refund carried from prior period |
-| Line 20 | Tax payable / refundable (납부(환급)세액) | Line 16 +/- Line 17 - Line 18 - Line 19 |
-
----
-
-## Step 3: E-Tax Invoice Requirements (전자세금계산서) [T1]
-
-**Legislation:** VAT Act Article 32 (tax invoices), Article 36 (electronic tax invoices).
-
-### Mandatory E-Tax Invoice Issuance
-
-| Business Type | Requirement | Effective |
-|--------------|-------------|-----------|
-| All corporations | Mandatory e-tax invoice | Since 2011 |
-| Individual general taxpayer (revenue >= KRW 80M) | Mandatory e-tax invoice | Since July 2024 (previously KRW 100M since July 2023) |
-| Individual general taxpayer (revenue < KRW 80M) | Voluntary (paper permitted) | Current |
-| Simplified taxpayer | Not applicable (no tax invoices issued) | Current |
-
-### E-Tax Invoice Content Requirements [T1]
-
-Every e-tax invoice must contain (Article 32(1)):
-1. Business registration number of supplier and recipient
-2. Name or trade name of supplier
-3. Date of supply
-4. Description and quantity of goods/services
-5. Supply value (공급가액) and VAT amount (세액)
-6. Transmission to NTS within one day of issuance
-
-### Penalties for Non-Compliance [T1]
-
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Failure to issue tax invoice | 2% of supply value (additional tax) | Article 60(2) |
-| Late issuance of e-tax invoice | 1% of supply value | Article 60(3) |
-| Failure to transmit to NTS | 0.5% of supply value | Article 60(5) |
-| Receipt of false tax invoice | 2% of supply value (input denied) | Article 60(4) |
-| Failure to issue e-tax invoice (when mandatory) | 2% of supply value | Article 60(2) |
-
----
-
-## Step 4: VAT Rate Classification Matrix [T1]
-
-**Legislation:** VAT Act Articles 24-28.
-
-### Standard Rate (10%)
-
-| Category | Examples | Article |
-|----------|----------|---------|
-| Domestic goods supply | Sale of manufactured goods, retail | Art. 30(1) |
-| Domestic services supply | Professional services, consulting, IT | Art. 30(1) |
-| Import of goods | Customs value + duties | Art. 30(2) |
-| Deemed supply | Self-use of business goods, employee gifts | Art. 10 |
-
-### Zero-Rated (0%)
-
-| Category | Examples | Article |
-|----------|----------|---------|
-| Export of goods | FOB export, bonded area supply | Art. 24(1)1 |
-| Services earning foreign currency | IT outsourcing to foreign client | Art. 24(1)2 |
-| International transportation | Shipping, air cargo | Art. 24(1)3 |
-| Goods/services to foreign diplomats | Embassy supplies | Art. 24(1)4 |
-| Local letter of credit supplies | Deemed export (내국신용장) | Art. 24(2) |
-
-### Exempt Supplies (면세)
-
-| Category | Examples | Article |
-|----------|----------|---------|
-| Unprocessed foodstuffs | Rice, vegetables, fresh fish, livestock | Art. 26(1)1 |
-| Medical / health services | Hospital services, pharmacy (prescription) | Art. 26(1)5 |
-| Education services | Schools, academies (accredited) | Art. 26(1)6 |
-| Financial / insurance services | Banking, insurance premiums, securities | Art. 26(1)11 |
-| Books / newspapers | Physical publications, e-books (since 2019) | Art. 26(1)8 |
-| Residential rental | Lease of residential property (국민주택 규모 이하) | Art. 26(1)12 |
-| Public transportation | City bus, subway, rural bus | Art. 26(1)7 |
-| Stamp / postal services | Korea Post services | Art. 26(1)9 |
-| Religious / charitable activities | Church, temple, NGO services | Art. 26(1)18 |
-
----
-
-## Step 5: Blocked Input Tax (매입세액 불공제) [T1]
-
-**Legislation:** VAT Act Article 39 (non-deductible input tax).
-
-### Categories Where Input VAT is NOT Recoverable
-
-| Blocked Category | Description | Article |
-|-----------------|-------------|---------|
-| Non-business expenses | Expenses not related to business operations | Art. 39(1)1 |
-| Entertainment expenses (접대비) | Client entertainment, gifts to clients | Art. 39(1)4 |
-| Non-business vehicles (비영업용 소형승용차) | All non-business passenger cars regardless of engine size | Art. 39(1)5 |
-| Vehicle maintenance for blocked vehicles | Fuel, repair, insurance for non-business vehicles | Art. 39(1)5 |
-| Purchases without proper tax invoice | Missing or incomplete tax invoices | Art. 39(1)2 |
-| Input tax on exempt supplies | Purchases directly attributable to exempt supplies | Art. 39(1)7 |
-| Employee personal expenses | Personal consumption by employees | Art. 39(1)1 |
-| Land-related input tax | Acquisition and capital expenditure on land | Art. 39(1)6 |
-
-### Exceptions to Vehicle Block [T1]
-
-Input VAT IS recoverable for vehicles used in these business categories (Enforcement Decree Art. 80):
-- Taxi / rental car operators
-- Driving schools
-- Freight transport businesses
-- Vehicle sales / repair businesses
-- Funeral service vehicles (hearse)
-
-**Blocked categories OVERRIDE partial exemption. Check blocked status FIRST, then apply partial exemption if relevant.**
-
----
-
-## Step 6: Simplified Taxation Regime (간이과세) [T1]
-
-**Legislation:** VAT Act Articles 61-68 (simplified taxation).
-
-### Eligibility [T1]
-
-| Criterion | Threshold | Article |
-|-----------|-----------|---------|
-| Annual revenue | < KRW 104,000,000 (KRW 104 million) since July 2024 (previously KRW 80M) | Art. 61(1), as amended |
-| Excluded businesses | Real estate rental and taxable entertainment venues: threshold remains < KRW 48M | Art. 61(2) |
-| Newly registered | Eligible if expected revenue < KRW 104M | Enforcement Decree Art. 109 |
-
-### How Simplified Tax Works [T1]
-
-| Element | General Taxpayer | Simplified Taxpayer |
-|---------|-----------------|---------------------|
-| Output tax calculation | Supply value x 10% | Supply value x industry ratio x 10% |
-| Input tax deduction | Full input tax from invoices | Supply value of purchases x 0.5% |
-| Tax invoice issuance | Mandatory (e-tax invoice) | Cannot issue tax invoices (issue receipt only) |
-| Filing frequency | Quarterly (with preliminary) | Semi-annual (Jan-Jun, Jul-Dec) |
-| VAT exemption | Not applicable | If revenue < KRW 48M, exempt from VAT payment (unchanged) |
-
-### Industry Value-Added Ratios (업종별 부가가치율) [T1]
-
-| Industry | Ratio | Effective Rate |
-|----------|-------|---------------|
-| Retail / wholesale | 15% | 1.5% |
-| Manufacturing | 20% | 2.0% |
-| Agriculture / fishery | 10% | 1.0% |
-| Food & beverage (restaurant) | 40% | 4.0% |
-| Accommodation | 30% | 3.0% |
-| Transportation | 40% | 4.0% |
-| Construction | 30% | 3.0% |
-| Other services | 30% | 3.0% |
-| Real estate rental | 40% | 4.0% |
-| Professional / technical services | 40% | 4.0% |
-
-**Legislation:** VAT Act Article 62, Enforcement Decree Article 111.
-
----
-
-## Step 7: Registration Rules [T1]
-
-**Legislation:** VAT Act Articles 5-8 (registration).
-
-### Who Must Register
-
-| Category | Requirement | Article |
-|----------|-------------|---------|
-| All business operators (사업자) | Must register before commencing business | Art. 5(1) |
-| Corporations | Always general taxpayer | Art. 5 |
-| Individuals < KRW 104M revenue | May register as simplified taxpayer | Art. 61 |
-| Non-resident digital service providers | Simplified registration via NTS | Art. 53-2 |
-| Exempt-only businesses | Register as exempt business operator (면세사업자) | Art. 26 |
-
-### Registration Process [T1]
-
-1. Apply via HomeTax (온라인) or visit local tax office (세무서)
-2. Receive business registration certificate (사업자등록증) within 3 days
-3. Registration number format: XXX-XX-XXXXX (3-2-5 digits)
-4. Late registration penalty: 1% of revenue from start of business to registration date (Art. 60(1))
-
-### Cancellation of Registration [T1]
-
-- Business closure: must file final return within 25 days of closure (Article 49(3))
-- Failure to file closure return: penalties apply under Framework Act on National Taxes
-
----
-
-## Step 8: Filing Deadlines and Penalties [T1]
-
-**Legislation:** VAT Act Article 49 (filing), Article 48 (preliminary return), Framework Act on National Taxes Articles 47-47-5.
-
-### Filing Calendar -- General Taxpayer
+| Validated by | Deep research verification, April 2026 |
+| Validation date | April 2026 |
+| Skill version | 2.0 |
+
+**Key return lines (일반과세자 부가가치세 신고서):**
+
+| Line | Meaning |
+|---|---|
+| 1 | Tax invoices issued -- taxable sales (세금계산서 발급분) |
+| 2 | Tax invoices issued -- zero-rated sales (영세율 세금계산서 발급분) |
+| 3 | Credit card / cash receipt sales (신용카드/현금영수증 발행분) |
+| 4 | Other sales (기타 매출) |
+| 5 | Total taxable supply value (과세표준, derived: Lines 1-4) |
+| 6 | Output tax (매출세액, Line 5 x 10%, adjusted for zero-rated) |
+| 7 | Direct exports (직접수출) |
+| 8 | Intermediary trade (중계무역) |
+| 9 | Deemed exports / local L/C (내국신용장/구매확인서) |
+| 10 | Foreign currency earning services (외화획득 용역) |
+| 11 | Other zero-rated (기타 영세율) |
+| 12 | Tax invoices received (세금계산서 수취분, input) |
+| 13 | Fixed assets (고정자산 매입, subset of Line 12) |
+| 14 | Non-tax-invoice purchases eligible for input (기타 공제매입세액, credit card/cash receipt) |
+| 15 | Total input tax (매입세액 합계) |
+| 16 | Net tax (차감세액, Line 6 - Line 15) |
+| 17 | Adjustments (가감조정세액, credit notes, bad debt relief) |
+| 18 | Preliminary payment credit (예정신고 미환급세액) |
+| 19 | Carried-forward credit from prior period (전기 미환급세액) |
+| 20 | Tax payable / refundable (납부/환급세액) |
+
+**E-tax invoice (전자세금계산서) requirements:**
+
+All corporations must issue e-tax invoices. Individual general taxpayers with revenue >= KRW 80M must issue e-tax invoices (mandatory since July 2024; threshold was KRW 100M before July 2023). E-tax invoices must contain: business registration numbers (사업자등록번호) of supplier and recipient, supplier name, supply date, description and quantity, supply value (공급가액) and VAT amount (세액). Must be transmitted to NTS within one day of issuance. Penalties: 2% of supply value for failure to issue; 1% for late issuance; 0.5% for failure to transmit to NTS.
+
+**Simplified taxpayer (간이과세자) threshold:**
+
+Annual revenue below KRW 104,000,000 (KRW 104M, raised from KRW 80M effective July 2024). Simplified taxpayers calculate tax using industry value-added ratios (업종별 부가가치율), cannot issue tax invoices (receipts only), and file semi-annually. If revenue below KRW 48M, exempt from VAT payment entirely.
+
+**Filing deadlines -- general taxpayer:**
 
 | Period | Type | Covers | Deadline |
-|--------|------|--------|----------|
+|---|---|---|---|
 | Period 1 Preliminary | Preliminary return | Jan 1 - Mar 31 | April 25 |
 | Period 1 Final | Confirmed return | Jan 1 - Jun 30 | July 25 |
 | Period 2 Preliminary | Preliminary return | Jul 1 - Sep 30 | October 25 |
 | Period 2 Final | Confirmed return | Jul 1 - Dec 31 | January 25 (following year) |
 
-### Filing Calendar -- Simplified Taxpayer
+**Filing deadlines -- simplified taxpayer:**
 
 | Period | Type | Covers | Deadline |
-|--------|------|--------|----------|
-| Period 1 | Semi-annual return | Jan 1 - Jun 30 | July 25 |
-| Period 2 | Semi-annual return | Jul 1 - Dec 31 | January 25 (following year) |
+|---|---|---|---|
+| Period 1 | Semi-annual | Jan 1 - Jun 30 | July 25 |
+| Period 2 | Semi-annual | Jul 1 - Dec 31 | January 25 (following year) |
 
-### Penalty Structure [T1]
+**Conservative defaults -- Korea-specific:**
 
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing | Greater of: (a) 20% of unpaid tax or (b) Revenue x 0.07% | Framework Act Art. 47-2 |
-| Failure to file | 20% of tax due (general) / 40% (fraudulent) | Framework Act Art. 47-2 |
-| Late payment | 0.022% per day of unpaid tax (approx. 8% per annum) | Framework Act Art. 47-4 |
-| Underreporting (general) | 10% of understated tax | Framework Act Art. 47-3 |
-| Underreporting (fraudulent) | 40% of understated tax | Framework Act Art. 47-3 |
-| Failure to issue tax invoice | 2% of supply value | VAT Act Art. 60(2) |
-| False tax invoice (issued/received) | 3% of supply value + criminal penalty risk | VAT Act Art. 60(4) |
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 10% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty location | Domestic Korea |
+| Unknown B2B vs B2C status | B2C (no tax invoice exchange) |
+| Unknown business-use proportion (vehicle, phone) | 0% recovery |
+| Unknown blocked-input status (entertainment, personal, vehicle) | Blocked |
+| Unknown whether transaction is in scope | In scope at 10% |
+| Unknown foreign SaaS billing entity | Reverse charge from non-resident |
+| Unknown whether e-tax invoice exists | Not deductible (no invoice = no credit) |
 
----
+**Red flag thresholds:**
 
-## Step 9: Reverse Charge for Imported Services (대리납부) [T1]
-
-**Legislation:** VAT Act Article 52 (reverse charge on foreign services).
-
-### When Reverse Charge Applies [T1]
-
-| Scenario | Reverse Charge? | Treatment |
-|----------|----------------|-----------|
-| Korean business receives services from non-resident with no Korean PE | Yes | Recipient self-assesses and pays VAT to NTS |
-| Korean business imports goods | No | VAT collected by Customs at import |
-| Korean consumer receives digital services from non-resident | No (supplier registered) | Non-resident supplier charges and remits VAT |
-| Korean business purchases from Korean-registered foreign supplier | No | Normal domestic transaction |
-
-### Reverse Charge Mechanics [T1]
-
-1. Recipient calculates VAT at 10% on the service fee
-2. Report on VAT return as both output tax (additional) and input tax (deductible)
-3. Net effect: zero for fully taxable businesses
-4. File and pay via HomeTax by the 25th of the month following the quarter end
-5. If business makes exempt supplies, input tax from reverse charge is subject to partial apportionment
-
-### Non-Resident Digital Services (Article 53-2) [T1]
-
-| Element | Rule |
-|---------|------|
-| Who must register | Non-resident providers of electronic services to Korean consumers (B2C) |
-| Registration method | Simplified registration via NTS |
-| Filing | Quarterly, by 25th of month following quarter end |
-| Input tax deduction | NOT available under simplified registration |
-| Examples | App stores, streaming services, cloud computing, online advertising |
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | KRW 5,000,000 |
+| HIGH tax-delta on a single conservative default | KRW 500,000 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | KRW 10,000,000 |
 
 ---
 
-## Step 10: Partial Input Tax Apportionment (공통매입세액 안분) [T2]
+## Section 2 -- Required inputs and refusal catalogue
 
-**Legislation:** VAT Act Article 40 (common input tax apportionment).
+### Required inputs
 
-### When Apportionment Applies [T2]
+**Minimum viable** -- bank statement (거래내역) for the period in CSV, PDF, Excel, or pasted text. Must cover the full semi-annual or quarterly period. Acceptable from any Korean bank: KB Kookmin, Shinhan, Woori, Hana, NH Nonghyup, IBK, Kakao Bank, Toss Bank, K Bank, or any other.
 
-If a business makes BOTH taxable and exempt supplies, input tax on common expenses must be apportioned:
+**Recommended** -- e-tax invoice listing from HomeTax (전자세금계산서 합계표) for both issued and received invoices, credit card usage statement (신용카드매출전표), prior period return showing carried-forward credit.
+
+**Ideal** -- complete e-tax invoice download from HomeTax, credit card sales slip summary, cash receipt summary, prior period VAT return, business registration certificate (사업자등록증).
+
+**Refusal policy if minimum is missing -- SOFT WARN.** If no bank statement and no e-tax invoice listing at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This VAT return was produced from bank statement alone. The reviewer must verify that all input tax claims are supported by valid e-tax invoices or credit card sales slips and that all output tax is properly accounted for."
+
+### Korea-specific refusal catalogue
+
+**R-KR-1 -- Group VAT registration.** *Trigger:* client is part of a VAT group registration. *Message:* "VAT group registrations require consolidated treatment across the group. This is outside this skill's scope. Escalate to a 세무사 or 공인회계사."
+
+**R-KR-2 -- Special industry regimes.** *Trigger:* client operates under special VAT regimes (gold bullion, scrap metal intermediary, real estate development). *Message:* "Special industry regimes have unique VAT rules beyond this skill's coverage. Escalate to a licensed practitioner."
+
+**R-KR-3 -- Tax tribunal disputes.** *Trigger:* client is in a tax dispute or appealing an NTS assessment. *Message:* "Tax tribunal and appeals work is outside this skill's scope. Engage a tax attorney."
+
+**R-KR-4 -- Partial exemption apportionment (complex).** *Trigger:* client has significant exempt supplies requiring Article 40 apportionment with annual adjustment, and the exempt proportion is not de minimis (>5%). *Message:* "Your exempt supplies exceed 5% of total supplies. Partial input tax apportionment under Article 40 requires confirmation of the apportionment ratio by a 세무사 or 공인회계사 before filing."
+
+**R-KR-5 -- Income tax return instead of VAT.** *Trigger:* user asks about income tax (소득세) or corporate tax (법인세). *Message:* "This skill only handles the VAT return (부가가치세 신고서). For income tax or corporate tax, use the appropriate skill."
+
+**R-KR-6 -- Exempt business operator (면세사업자).** *Trigger:* client is registered as exempt-only business operator. *Message:* "Exempt business operators do not file VAT returns. They file a 사업장 현황 신고 (business status report) annually. This skill covers general and simplified taxpayers only."
+
+---
+
+## Section 3 -- Supplier pattern library (the lookup table)
+
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
+
+**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. Korean names may appear in Hangul or romanized form. If multiple patterns match, use the most specific.
+
+### 3.1 Korean banks (fees exempt -- exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| KB국민은행, KB KOOKMIN, 국민은행 | EXCLUDE for bank charges/fees | Financial service, exempt under Art. 26(1)11 |
+| 신한은행, SHINHAN BANK | EXCLUDE for bank charges/fees | Same |
+| 우리은행, WOORI BANK | EXCLUDE for bank charges/fees | Same |
+| 하나은행, HANA BANK, KEB하나 | EXCLUDE for bank charges/fees | Same |
+| NH농협, NONGHYUP, 농협은행 | EXCLUDE for bank charges/fees | Same |
+| IBK기업은행, IBK, 기업은행 | EXCLUDE for bank charges/fees | Same |
+| 카카오뱅크, KAKAO BANK | EXCLUDE for bank charges/fees | Same |
+| 토스뱅크, TOSS BANK | EXCLUDE for bank charges/fees | Same |
+| 케이뱅크, K BANK | EXCLUDE for bank charges/fees | Same |
+| 이자, 이자수입, INTEREST | EXCLUDE | Interest income/expense, exempt financial service |
+| 대출, 상환, LOAN, REPAYMENT | EXCLUDE | Loan principal, out of scope |
+| 수수료, 거래수수료, 이체수수료 | EXCLUDE | Bank fees, exempt financial service |
+
+### 3.2 Korean government and statutory bodies (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 국세청, NTS, HOMETAX | EXCLUDE | Tax authority / tax payment |
+| 부가가치세, 부가세 납부 | EXCLUDE | VAT payment to NTS |
+| 소득세, 법인세, 원천세 | EXCLUDE | Income/corporate/withholding tax payment |
+| 국민연금, NATIONAL PENSION | EXCLUDE | Pension contribution |
+| 건강보험, 국민건강보험 | EXCLUDE | Health insurance contribution |
+| 고용보험, 산재보험 | EXCLUDE | Employment/workers compensation insurance |
+| 지방세, 재산세, 자동차세 | EXCLUDE | Local taxes, not VAT |
+| 관세, 세관 | EXCLUDE (but see import VAT below) | Customs duty (not VAT -- but import VAT invoice is separate) |
+
+### 3.3 Korean utilities
+
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| 한국전력, KEPCO, 전기요금 | Domestic 10% | 12/input | Electricity -- deductible with e-tax invoice |
+| 한국가스공사, 도시가스, 가스요금 | Domestic 10% | 12/input | Gas supply |
+| 수도요금, 상수도 | EXCLUDE or exempt | | Water -- municipal water is generally exempt |
+| KT, 케이티, KT CORP | Domestic 10% | 12/input | Telecoms -- deductible if business use |
+| SKT, SK텔레콤, SK TELECOM | Domestic 10% | 12/input | Same |
+| LG유플러스, LG U+, UPLUS | Domestic 10% | 12/input | Same |
+| SK브로드밴드, KT인터넷, LG인터넷 | Domestic 10% | 12/input | Internet/broadband |
+
+### 3.4 Insurance (exempt -- exclude)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 삼성화재, 삼성생명, SAMSUNG INSURANCE | EXCLUDE | Insurance premium, exempt Art. 26(1)11 |
+| 현대해상, 현대라이프 | EXCLUDE | Same |
+| DB손해보험, 동부화재 | EXCLUDE | Same |
+| KB손해보험, KB라이프 | EXCLUDE | Same |
+| 한화생명, 한화손해보험 | EXCLUDE | Same |
+| 보험, 보험료, INSURANCE | EXCLUDE | All insurance premiums exempt |
+
+### 3.5 Transport
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 코레일, KORAIL, KTX, SRT | Domestic 10% | Rail transport -- standard rated. Deductible with e-tax invoice. |
+| 시내버스, 마을버스, 지하철, METRO | EXCLUDE or exempt | Public transport (city bus, subway) exempt Art. 26(1)7 |
+| 택시, TAXI, 카카오택시 | Domestic 10% | Taxi -- standard rated. Credit card receipt deductible (Line 14). |
+| 카카오T, KAKAO T | Domestic 10% | Platform taxi service |
+| 대한항공, KOREAN AIR, 아시아나, ASIANA | 0% (international) or 10% (domestic) | International flights zero-rated. Domestic flights 10%. |
+| 제주항공, JEJU AIR, 진에어, JIN AIR | Same | Budget airlines, same treatment |
+
+### 3.6 Major Korean retailers and e-commerce
+
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| 쿠팡, COUPANG | Domestic 10% | 14 (credit card) or 12 (if e-tax invoice) | E-commerce -- credit card receipt deductible at Line 14. Check for mixed items (food may be exempt). |
+| 네이버, NAVER, 네이버쇼핑 | Domestic 10% | 14 or 12 | Same |
+| 카카오, KAKAO | Domestic 10% | 14 or 12 | Kakao services |
+| SSG, 이마트, EMART, 신세계 | Domestic 10% | 14 | Retail -- credit card receipt. Food items may be exempt (unprocessed). |
+| 롯데마트, LOTTE MART, 롯데백화점 | Domestic 10% | 14 | Same -- department store |
+| 홈플러스, HOMEPLUS | Domestic 10% | 14 | Same |
+| GS25, CU, 세븐일레븐, 7-ELEVEN | Domestic 10% | 14 | Convenience store -- small purchases. Confirm business purpose. |
+| 다이소, DAISO | Domestic 10% | 14 | General merchandise |
+| 배달의민족, BAEMIN, 요기요, YOGIYO | Domestic 10% | 14 | Food delivery platform -- standard rated service. Food items may include exempt components. |
+
+### 3.7 Food and entertainment (blocked unless qualifying business)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 식당, RESTAURANT, 음식점, 한식, 중식, 일식 | Default BLOCK input VAT | Entertainment (접대비) is ALWAYS blocked under Art. 39(1)4. No exceptions for business purpose. |
+| 카페, CAFE, 스타벅스, STARBUCKS, 이디야 | Default BLOCK | Same -- entertainment, blocked |
+| 술집, BAR, 호프, 노래방 | Default BLOCK | Same |
+| 슈퍼마켓, 마트 (personal provisioning) | Default BLOCK | Unless hospitality/catering business |
+
+### 3.8 SaaS -- foreign suppliers (reverse charge)
+
+Korean businesses receiving services from non-residents self-assess VAT at 10% under Article 52 (reverse charge / 대리납부). Both output and input VAT reported; net effect zero for fully taxable businesses.
+
+| Pattern | Billing entity | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Asia Pacific Pte Ltd (SG) or Google LLC (US) | Reverse charge 10% | Self-assess output + input. Net zero if fully taxable. |
+| MICROSOFT (365, Azure) | Microsoft Corp (US) or regional entity | Reverse charge 10% | Same |
+| ADOBE | Adobe Inc (US) | Reverse charge 10% | Same |
+| META, FACEBOOK ADS | Meta Platforms Inc (US) | Reverse charge 10% | Same |
+| AWS, AMAZON WEB SERVICES | Amazon Web Services Inc (US) | Reverse charge 10% | Same |
+| SLACK, NOTION, FIGMA | US entities | Reverse charge 10% | Same |
+| ANTHROPIC, OPENAI, CHATGPT | US entities | Reverse charge 10% | Same |
+| ZOOM | Zoom Video Communications Inc (US) | Reverse charge 10% | Same |
+| ATLASSIAN (Jira, Confluence) | Atlassian Pty Ltd (AU) or US entity | Reverse charge 10% | Same |
+| GITHUB | GitHub Inc (US) | Reverse charge 10% | Same |
+
+**Note:** For B2C digital services, non-resident providers (Netflix, Spotify, Apple) register under the simplified registration scheme (Article 53-2) and collect VAT directly from Korean consumers. B2B clients receiving from these providers still self-assess under reverse charge.
+
+### 3.9 Payment processors
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 토스페이먼츠, TOSS PAYMENTS | EXCLUDE (exempt) | Payment processing -- financial service |
+| KG이니시스, INICIS | EXCLUDE (exempt) | Same |
+| NHN한국사이버결제, KCP | EXCLUDE (exempt) | Same |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Payment processing, financial service |
+| STRIPE (transaction fees) | EXCLUDE (exempt) or reverse charge | If billed from US: imported financial service. Transaction fees may be exempt. |
+
+### 3.10 Professional services (Korea)
+
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| 세무사, 세무법인, TAX ACCOUNTANT | Domestic 10% | 12/input | Tax advisory, deductible with e-tax invoice |
+| 회계사, 회계법인, 공인회계사 | Domestic 10% | 12/input | Audit/accounting, always deductible |
+| 변호사, 법무법인, LAW FIRM | Domestic 10% | 12/input | Legal, deductible if business matter |
+| 법무사, 변리사 | Domestic 10% | 12/input | Judicial scrivener / patent attorney |
+| 컨설팅, CONSULTING | Domestic 10% | 12/input | Consulting, standard rated |
+
+### 3.11 Payroll and social security (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 급여, 월급, SALARY, WAGES | EXCLUDE | Wages, outside VAT scope |
+| 국민연금, PENSION | EXCLUDE | Pension contribution |
+| 건강보험, HEALTH INSURANCE | EXCLUDE | National health insurance |
+| 고용보험, EMPLOYMENT INSURANCE | EXCLUDE | Employment insurance |
+| 산재보험, WORKERS COMP | EXCLUDE | Workers compensation |
+| 퇴직금, SEVERANCE | EXCLUDE | Severance, outside VAT |
+
+### 3.12 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 자기이체, 본인이체, OWN TRANSFER | EXCLUDE | Internal movement |
+| 적금, 예금, 정기예금 | EXCLUDE | Savings/time deposit |
+| 배당, DIVIDEND | EXCLUDE | Dividend, out of scope |
+| 대출상환, LOAN REPAYMENT | EXCLUDE | Loan principal |
+| 현금인출, ATM, 출금 | Ask | Cash withdrawal -- ask what it was spent on |
+| NTS 납부, 세금납부 | EXCLUDE | Tax payment |
+
+---
+
+## Section 4 -- Worked examples
+
+These are six fully worked classifications drawn from a hypothetical bank statement of a Seoul-based self-employed IT consultant (일반과세자, general taxpayer).
+
+### Example 1 -- Standard domestic B2B sale with e-tax invoice
+
+**Input line:**
+`2026.04.05 ; (주)테크솔루션즈 ; 입금 ; 전자세금계산서 IT컨설팅 4월 ; KRW 11,000,000`
+
+**Reasoning:**
+Client issued e-tax invoice for supply value KRW 10,000,000 + VAT KRW 1,000,000 = KRW 11,000,000. Line 1 = KRW 10,000,000. Output tax = KRW 1,000,000. E-tax invoice transmitted to NTS.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 2026.04.05 | (주)테크솔루션즈 | +11,000,000 | +10,000,000 | +1,000,000 | 10% | 1 (output) | N | -- |
+
+### Example 2 -- Export sale, zero-rated
+
+**Input line:**
+`2026.04.10 ; ACME CORP (US) ; 입금 ; Invoice KR-2026-018 software dev ; USD 8,000 ; KRW 10,800,000`
+
+**Reasoning:**
+IT consulting services to US company earning foreign currency. Zero-rated under Article 24(1)2. Line 2 = KRW 10,800,000 (zero-rated). Line 10 = KRW 10,800,000 (foreign currency earning services detail). Output tax = 0. Export evidence retained.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 2026.04.10 | ACME CORP (US) | +10,800,000 | +10,800,000 | 0 | 0% | 2 / 10 | Y | Verify service qualifies as foreign currency earning |
+
+### Example 3 -- Reverse charge on imported SaaS (US provider)
+
+**Input line:**
+`2026.04.15 ; NOTION LABS INC ; 출금 ; Monthly subscription ; USD 16 ; KRW 21,600`
+
+**Reasoning:**
+Notion Labs Inc is US entity. No Korean VAT charged. Reverse charge under Article 52. Self-assess output VAT KRW 2,160 (10% of KRW 21,600). Claim input VAT KRW 2,160. Net effect zero for fully taxable business.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT (output) | VAT (input) | Rate | Line | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026.04.15 | NOTION LABS INC | -21,600 | -21,600 | +2,160 | -2,160 | 10% | Reverse charge adj. | N | -- |
+
+### Example 4 -- Entertainment expense, input blocked
+
+**Input line:**
+`2026.04.18 ; 강남 삼겹살집 ; 출금 ; 접대비 고객미팅 ; KRW 550,000`
+
+**Reasoning:**
+Restaurant meal (삼겹살집). Entertainment (접대비) is ALWAYS blocked under Article 39(1)4, regardless of business purpose. This is an absolute block in Korea -- no exceptions. VAT component (KRW 50,000) is irrecoverable. The entire KRW 550,000 is a cost.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 2026.04.18 | 강남 삼겹살집 | -550,000 | -550,000 | 0 | -- | -- | Y | "Entertainment: blocked Art. 39(1)4" |
+
+### Example 5 -- Non-business vehicle purchase, input blocked
+
+**Input line:**
+`2026.04.22 ; 현대자동차 강남지점 ; 출금 ; 투싼 리스 월납입 ; KRW 650,000`
+
+**Reasoning:**
+Car lease payment. Input VAT on non-business passenger vehicles (비영업용 소형승용차) is hard-blocked under Article 39(1)5. This applies to purchase, lease, fuel, repair, insurance. IT consultant does not fall within exception categories (taxi, rental car, driving school, freight). Entire KRW 650,000 is cost.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 2026.04.22 | 현대자동차 강남지점 | -650,000 | -650,000 | 0 | -- | -- | Y | "Vehicle: blocked Art. 39(1)5" |
+
+### Example 6 -- Credit card purchase without e-tax invoice
+
+**Input line:**
+`2026.04.28 ; 오피스디포 코리아 ; 출금 ; 법인카드 사무용품 ; KRW 330,000`
+
+**Reasoning:**
+Office supplies purchased with corporate credit card. No e-tax invoice obtained. Input VAT is still recoverable via credit card sales slip (신용카드매출전표) under Article 46(1). Report on Line 14 (non-tax-invoice purchases eligible for input). VAT = KRW 330,000 / 1.1 x 0.1 = KRW 30,000 (net KRW 300,000). Retain card statement.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? |
+|---|---|---|---|---|---|---|---|---|
+| 2026.04.28 | 오피스디포 코리아 | -330,000 | -300,000 | -30,000 | 10% | 14 (credit card input) | N | -- |
+
+---
+
+## Section 5 -- Tier 1 classification rules (compressed)
+
+### 5.1 Standard rate 10% (Article 30)
+
+Single rate for all taxable supplies. No reduced rates in Korea. Sales: Line 1 (with e-tax invoice) or Line 3 (credit card/cash receipt). Purchases: Line 12 (with e-tax invoice) or Line 14 (credit card/cash receipt).
+
+### 5.2 Zero-rated supplies (Article 24)
+
+Exports of goods (FOB value) -- Line 2/7. Services to non-residents earning foreign currency -- Line 2/10. International transportation -- Line 2/11. Local letter of credit supplies (내국신용장) -- Line 2/9. Goods/services to foreign diplomats -- Line 2/11. Zero-rating allows full input tax deduction.
+
+### 5.3 Exempt supplies (Article 26)
+
+Unprocessed foodstuffs (rice, vegetables, fresh fish), medical/health services, accredited education, financial/insurance services, books/newspapers, residential rental (국민주택 규모 이하, 85 sqm or less), public transport (city bus, subway), postal services, religious/charitable activities. No output VAT; no input deduction on attributable costs.
+
+### 5.4 E-tax invoice requirement
+
+Mandatory for all corporations (since 2011) and individual general taxpayers with revenue >= KRW 80M (since July 2024). Must transmit to NTS within one day. Content: both parties' registration numbers, supply date, description, supply value and VAT. Without valid e-tax invoice, input VAT is not deductible EXCEPT via credit card sales slip (Line 14) or cash receipt.
+
+### 5.5 Credit card and cash receipt input deduction (Article 46)
+
+Corporate credit card purchases without e-tax invoice: input VAT deductible via credit card sales slip. Report on Line 14. Entertainment expenses remain blocked regardless. Cash receipt (현금영수증) purchases: same treatment as credit card for VAT purposes.
+
+### 5.6 Blocked input VAT (Article 39)
+
+Entertainment of any kind (접대비) -- absolute block, Art. 39(1)4. Non-business passenger vehicles (비영업용 소형승용차) including purchase, lease, fuel, repair, insurance -- Art. 39(1)5. Exceptions for vehicles: taxi, rental car operators, driving schools, freight transport, vehicle sales/repair, hearse. Non-business expenses -- Art. 39(1)1. Purchases without proper tax invoice -- Art. 39(1)2. Land acquisition costs -- Art. 39(1)6. Input tax on exempt supplies -- Art. 39(1)7. Pre-registration expenses beyond 20-day lookback -- Art. 39(1)8. Blocked categories override partial exemption. Check blocked status FIRST.
+
+### 5.7 Reverse charge on imported services (Article 52)
+
+Korean business receives services from non-resident with no Korean PE: self-assess VAT at 10%. Report as both output tax (additional) and input tax (deductible). Net effect zero for fully taxable businesses. File and pay via HomeTax by the 25th of the month following quarter end. If business makes exempt supplies, reverse charge input tax is subject to partial apportionment.
+
+### 5.8 Simplified taxpayer regime (Articles 61-68)
+
+Revenue below KRW 104M: eligible as simplified taxpayer. Tax = supply value x industry value-added ratio x 10%. Industry ratios: retail 15%, manufacturing 20%, agriculture 10%, food/beverage 40%, accommodation 30%, transportation 40%, construction 30%, other services 30%, real estate rental 40%, professional services 40%. Input deduction = purchases x 0.5%. Cannot issue tax invoices. Revenue below KRW 48M: exempt from VAT payment.
+
+### 5.9 Capital assets (fixed assets, 고정자산)
+
+Assets subject to depreciation per Corporate Tax Act or Income Tax Act. Report as a subset of Line 12 on Line 13. No separate threshold test like Malta. All depreciable assets go to Line 13 regardless of value.
+
+### 5.10 Bad debt relief (Article 45)
+
+Output VAT on irrecoverable debts can be recovered in the period confirmed irrecoverable. Report on Line 17 (adjustments). Conditions: debt must be legally irrecoverable (bankruptcy, statute of limitations); claim within 5 years of original supply.
+
+### 5.11 Credit notes and adjustments
+
+Credit notes (수정세금계산서) for price changes, returns, or cancellations. Report on Line 17 (adjustments). Must issue revised e-tax invoice with reason code.
+
+### 5.12 Correction of prior returns (수정신고)
+
+File amended return via HomeTax. Additional tax: underreporting penalty 10% (general) or 40% (fraudulent). Voluntary correction before NTS audit notice: reduced penalties (50-90% reduction depending on timing).
+
+---
+
+## Section 6 -- Tier 2 catalogue (compressed)
+
+### 6.1 Fuel and vehicle costs
+
+*Pattern:* 주유소, GS칼텍스, SK에너지, S-OIL, 현대오일뱅크, fuel receipts. *Why insufficient:* vehicle type and business use unknown. If car (소형승용차) = blocked regardless of use. If van, truck, delivery vehicle = deductible. *Default:* 0% recovery. *Question:* "Is this a passenger car (blocked) or a commercial/delivery vehicle used exclusively for business?"
+
+### 6.2 Restaurants and entertainment
+
+*Pattern:* any restaurant, cafe, bar. *Why insufficient:* entertainment is hard blocked under Art. 39(1)4. No business-purpose exception in Korea. *Default:* block. *Question:* "Was this entertainment (접대비)? (Note: blocked regardless of business purpose.)"
+
+### 6.3 Ambiguous SaaS billing entity
+
+*Pattern:* Google, Microsoft, Adobe, Meta, Amazon where billing entity unclear. *Default:* reverse charge from non-resident. *Question:* "Can you check the invoice? I need the legal entity name and whether Korean VAT was charged."
+
+### 6.4 Round-number incoming transfers from owner-named counterparties
+
+*Pattern:* large round credit from a name matching the business owner. *Default:* exclude as owner capital injection. *Question:* "Is this a customer payment, your own capital injection, or a loan?"
+
+### 6.5 Incoming transfers from foreign counterparties
+
+*Pattern:* foreign currency or foreign name on incoming. *Default:* domestic 10% sale. *Question:* "Is this a B2B export service (zero-rated) or domestic sale? Can you provide the customer's country and business status?"
+
+### 6.6 Mixed-use phone and internet
+
+*Pattern:* KT, SKT, LG U+ on personal lines, home internet. *Default:* 0% if mixed use. 100% if confirmed dedicated business line. *Question:* "Is this a dedicated business line or mixed personal/business?"
+
+### 6.7 Cash withdrawals
+
+*Pattern:* 현금인출, ATM, 출금. *Default:* exclude as personal drawing. *Question:* "What was the cash used for?"
+
+### 6.8 Outgoing transfers to individuals
+
+*Pattern:* outgoing to private-sounding names. *Default:* exclude as drawings or wages. *Question:* "Was this a contractor payment with tax invoice, wages, or personal transfer?"
+
+### 6.9 Simplified vs general taxpayer determination
+
+*Pattern:* client's taxpayer type is unknown. *Default:* general taxpayer (more conservative filing obligations). *Question:* "Are you a 일반과세자 (general taxpayer) or 간이과세자 (simplified taxpayer)? What is your annual revenue?"
+
+### 6.10 Real estate lease
+
+*Pattern:* monthly 임대료, 월세 payment. *Default:* no VAT deduction (assume residential). *Question:* "Is this a commercial property lease (10% VAT) or residential lease (exempt)?"
+
+---
+
+## Section 7 -- Excel working paper template (Korea-specific)
+
+### Sheet "Transactions"
+
+Columns: A (Date), B (Counterparty), C (사업자등록번호 or note), D (Gross KRW), E (Net KRW), F (VAT KRW), G (Rate), H (Line code), I (Input method: e-tax invoice / credit card / cash receipt), J (Default Y/N), K (Question), L (Notes).
+
+Column I (input method) is important in Korea because it determines which return line receives the input: Line 12 for e-tax invoices, Line 14 for credit card/cash receipt.
+
+### Sheet "Return Summary"
 
 ```
-Deductible Input Tax = Total Common Input Tax x (Taxable Supply Value / Total Supply Value)
+Output tax:
+| 1  | Tax invoices issued -- taxable | =SUMIFS(Transactions!E:E, Transactions!H:H, "1") |
+| 2  | Tax invoices issued -- zero-rated | =SUMIFS(Transactions!E:E, Transactions!H:H, "2") |
+| 3  | Credit card / cash receipt sales | =SUMIFS(Transactions!E:E, Transactions!H:H, "3") |
+| 4  | Other sales | =SUMIFS(Transactions!E:E, Transactions!H:H, "4") |
+| 5  | Total taxable supply value | =SUM(Lines 1-4) |
+| 6  | Output tax | =(Line 1 + Line 3 + Line 4) * 0.10 |
+
+Zero-rated detail:
+| 7  | Direct exports | =SUMIFS(Transactions!E:E, Transactions!H:H, "7") |
+| 10 | Foreign currency services | =SUMIFS(Transactions!E:E, Transactions!H:H, "10") |
+
+Input tax:
+| 12 | Tax invoices received | =SUMIFS(Transactions!E:E, Transactions!H:H, "12") |
+| 13 | Fixed assets (subset of 12) | =SUMIFS(Transactions!E:E, Transactions!H:H, "13") |
+| 14 | Credit card / cash receipt purchases | =SUMIFS(Transactions!E:E, Transactions!H:H, "14") |
+| 15 | Total input tax | =SUM(input VAT from Lines 12, 14) |
+
+Calculation:
+| 16 | Net tax | =Line 6 - Line 15 |
+| 17 | Adjustments | [manual: credit notes, bad debt] |
+| 18 | Preliminary payment credit | [manual from prior preliminary return] |
+| 19 | Carried-forward credit | [manual from prior period] |
+| 20 | Tax payable / refundable | =Line 16 + Line 17 - Line 18 - Line 19 |
 ```
 
-### Apportionment Rules [T2]
+### Color and formatting conventions
 
-| Rule | Detail | Article |
-|------|--------|---------|
-| Calculation basis | Supply values for the relevant tax period | Art. 40(1) |
-| Annual adjustment | Reconcile at year-end based on total annual supply values | Art. 40(2) |
-| De minimis | If exempt supplies < 5% of total, full input tax deductible | Enforcement Decree Art. 81 |
-| Direct attribution | Input tax directly attributable to taxable supplies: fully deductible | Art. 40(1) |
-| Direct attribution | Input tax directly attributable to exempt supplies: fully blocked | Art. 40(1) |
-
-**Flag for reviewer: apportionment ratios must be confirmed by licensed practitioner before filing. Annual adjustment may result in additional tax payable or refundable.**
+Blue for hardcoded values from bank statement. Black for formulas. Green for cross-sheet references. Yellow background for any row where Default = "Y". Red background for entertainment or vehicle entries (blocked).
 
 ---
 
-## Step 11: Edge Case Registry
+## Section 8 -- Korean bank statement reading guide (거래내역)
 
-These are known ambiguous situations and their confirmed resolutions.
+**Korean bank statement format conventions.** Korean banks (KB Kookmin, Shinhan, Woori, Hana) export statements in Excel (XLS/XLSX), CSV, or PDF. Date format: YYYY.MM.DD or YYYY-MM-DD. Common columns: 거래일 (date), 적요 or 거래내용 (description), 출금 (debit/withdrawal), 입금 (credit/deposit), 잔액 (balance). Some banks include 거래점 (branch), 메모 (memo), and 거래구분 (transaction type).
 
-### EC1 -- Credit card purchases without e-tax invoice [T1]
-**Situation:** Employee makes business purchase using corporate credit card. No e-tax invoice obtained.
-**Resolution:** Input VAT is still recoverable via credit card sales slip (신용카드매출전표). Report on Line 14 (non-tax-invoice purchases). However, recovery is limited to business-related expenses. Entertainment expenses remain blocked regardless.
-**Legislation:** VAT Act Article 46(1), Enforcement Decree Article 87.
+**Transaction types.** 이체 (transfer), 카드결제 (card payment), 자동이체 (automatic transfer/direct debit), 현금입금 (cash deposit), 현금출금 (cash withdrawal), 수표 (check), 대출 (loan), 이자 (interest).
 
-### EC2 -- Mixed-use vehicle (business and personal) [T2]
-**Situation:** Owner uses passenger vehicle for both business and personal purposes.
-**Resolution:** If the vehicle is a non-business small passenger car (비영업용 소형승용차), ALL input VAT is blocked, including fuel and maintenance. No apportionment is allowed for non-business vehicles. Exception: if the vehicle is used exclusively for business in a qualifying industry (taxi, rental, etc.), full recovery applies. Flag for reviewer: confirm vehicle type and exclusive business use.
-**Legislation:** VAT Act Article 39(1)5, Enforcement Decree Article 80.
+**Hangul descriptions.** Most descriptions are in Korean. Common terms: 급여 (salary), 임대료 (rent), 보험료 (insurance premium), 전기요금 (electricity), 통신요금 (telecoms), 세금 (tax), 수수료 (fee/commission), 이자 (interest), 배당 (dividend).
 
-### EC3 -- Local letter of credit (내국신용장) supply [T1]
-**Situation:** Korean manufacturer supplies goods to another Korean company under a local letter of credit for eventual export.
-**Resolution:** Zero-rated under Article 24(2). Report on Line 9 (deemed exports). Supplier must retain the purchase confirmation document (구매확인서) issued by the bank.
-**Legislation:** VAT Act Article 24(2), Enforcement Decree Article 33.
+**Internal transfers.** Between the client's own accounts. Labelled 자기이체, 본인이체, 계좌이체 (own transfer). Always exclude.
 
-### EC4 -- Bad debt relief (대손세액공제) [T1]
-**Situation:** Customer fails to pay invoice including VAT. Debt is written off.
-**Resolution:** Output VAT previously reported can be recovered as a deduction in the period the debt is confirmed irrecoverable. Claim on Line 17 (adjustments). Conditions: debt must be legally irrecoverable (bankruptcy, statute of limitations, etc.); claim within 5 years of original supply.
-**Legislation:** VAT Act Article 45.
+**Card payments.** Credit/debit card charges appear with the merchant name, often abbreviated. 쿠팡 = Coupang, 네이버 = Naver, 카카오 = Kakao, 배민 = Baemin (배달의민족). Card charges are important for VAT because credit card sales slips (신용카드매출전표) serve as input VAT evidence on Line 14.
 
-### EC5 -- Free samples and promotional gifts [T1]
-**Situation:** Business distributes free product samples at a trade show.
-**Resolution:** Deemed supply under Article 10(1). Output VAT must be charged on the market value of the goods. However, if the samples are of minimal value and distributed for advertising purposes, they may be excluded from deemed supply under Enforcement Decree Article 17.
-**Legislation:** VAT Act Article 10(1), Enforcement Decree Article 17.
+**Salary payments.** Outgoing 급여, 월급, 상여금 (salary, monthly pay, bonus) to employee names. Exclude -- outside VAT scope.
 
-### EC6 -- Cross-border digital services (B2B) [T1]
-**Situation:** Korean company subscribes to a US SaaS platform (e.g., AWS, Salesforce).
-**Resolution:** Reverse charge applies. Korean company self-assesses VAT at 10%. Report as both output and input tax. Net effect zero for fully taxable businesses. Must retain foreign invoice as supporting document.
-**Legislation:** VAT Act Article 52.
+**Tax payments.** 부가세, 소득세, 법인세, 원천세, 국세 to NTS or 지방세 to local government. Exclude -- tax payments, not supplies.
 
-### EC7 -- Import of goods with customs VAT [T1]
-**Situation:** Business imports machinery from Germany. Customs collects VAT at import.
-**Resolution:** VAT paid at customs is recoverable as input tax. Report on Line 12 using the import tax invoice (수입세금계산서) issued by customs. The customs declaration (수입신고필증) serves as the supporting document.
-**Legislation:** VAT Act Article 38(1)2.
+**Insurance premiums.** 보험료 to insurance company names. Exempt financial service -- exclude.
 
-### EC8 -- Goods supplied to foreign diplomats [T1]
-**Situation:** Business sells goods to a foreign embassy in Seoul.
-**Resolution:** Zero-rated under Article 24(1)4. Must obtain diplomatic purchase certificate. Report on Line 11 (other zero-rated).
-**Legislation:** VAT Act Article 24(1)4, Enforcement Decree Article 35.
+**Foreign currency entries.** Some banks show USD, EUR, JPY amounts alongside KRW equivalent. Use the KRW amount. If only foreign currency is shown, convert at the 매매기준율 (market base rate) from the Bank of Korea for the transaction date.
 
-### EC9 -- Real estate lease (commercial vs. residential) [T2]
-**Situation:** Client leases property. Need to determine VAT treatment.
-**Resolution:** Commercial property lease: standard 10% VAT applies. Residential property lease (국민주택 규모 이하, 85 sqm or less): exempt under Article 26. If property is mixed-use (commercial ground floor, residential upper floors), split by area. Flag for reviewer: confirm property classification and area measurements.
-**Legislation:** VAT Act Article 26(1)12, Enforcement Decree Article 44.
+**Refunds and reversals.** 환불, 반품, 취소 (refund, return, cancellation). Book as negative in the same line as the original. Ensure a revised e-tax invoice (수정세금계산서) has been issued.
 
-### EC10 -- Pre-registration input tax [T2]
-**Situation:** Business incurred expenses before completing VAT registration.
-**Resolution:** Input VAT on purchases made up to 20 days before the registration date is recoverable, provided valid tax invoices exist. Beyond 20 days, input tax is not recoverable. Flag for reviewer: verify dates and confirm tax invoice validity.
-**Legislation:** VAT Act Article 39(1)8, Enforcement Decree Article 82.
-
-### EC11 -- Correction of previously filed return (수정신고) [T1]
-**Situation:** Error discovered in a previously filed VAT return.
-**Resolution:** File an amended return (수정신고) via HomeTax. If the correction results in additional tax, underreporting penalty applies (10% general, 40% fraudulent). If the taxpayer voluntarily corrects before NTS audit notice, reduced penalties apply (50-90% reduction depending on timing).
-**Legislation:** Framework Act on National Taxes Article 45, Article 47-3.
-
-### EC12 -- Entertainment expenses classification [T1]
-**Situation:** Client dinner with business partner at a restaurant.
-**Resolution:** Classified as entertainment (접대비). Input VAT is BLOCKED under Article 39(1)4, regardless of business purpose. This is absolute -- no exceptions. The expense is deductible for income/corporate tax purposes (subject to limits), but the VAT component is never recoverable.
-**Legislation:** VAT Act Article 39(1)4.
+**Cryptic descriptions.** Some entries show only a transaction number or abbreviated code. Ask the client for clarification. Do not classify unidentified transactions.
 
 ---
 
-## Step 12: Comparison with EU VAT System
+## Section 9 -- Onboarding fallback (only when inference fails)
 
-| Feature | South Korea VAT | EU VAT (Directive 2006/112/EC) |
-|---------|----------------|-------------------------------|
-| Standard rate | 10% (single rate) | Varies 17-27% by member state |
-| Reduced rates | None (only standard + zero + exempt) | Multiple reduced rates allowed |
-| Zero-rating | Exports, foreign currency services | Exports + member state options |
-| Registration threshold | All business operators must register | Varies by member state (up to EUR 85,000) |
-| Filing frequency | Quarterly (with preliminary) | Monthly/quarterly/annually varies |
-| Invoice system | Mandatory e-tax invoice via HomeTax | E-invoicing varies; ViDA proposal pending |
-| Reverse charge (imports) | Services only; goods via customs | Services + intra-community goods |
-| Simplified regime | < KRW 104M, reduced rates by industry | Small enterprise exemption varies |
-| Input tax blocking | Entertainment, non-business vehicles, land | Varies by member state |
-| Group registration | Available (limited) | Available in most member states |
-| Bad debt relief | Available (5-year limit) | Available (conditions vary) |
-| Digital services B2C | Non-resident simplified registration | OSS (One Stop Shop) |
+### 9.1 Business registration number (사업자등록번호)
+*Inference rule:* 10-digit format XXX-XX-XXXXX may appear in transfer descriptions or e-tax invoice data. *Fallback question:* "What is your 사업자등록번호?"
 
----
+### 9.2 Business type
+*Inference rule:* if client asks for a VAT return with e-tax invoices, they are 일반과세자. If revenue seems low and they mention simplified filing, likely 간이과세자. *Fallback question:* "Are you a 일반과세자 (general taxpayer), 간이과세자 (simplified taxpayer), or 면세사업자 (exempt operator)?"
 
-## Step 13: Test Suite
+### 9.3 Filing period
+*Inference rule:* first and last transaction dates on the statement. Semi-annual periods: Jan-Jun (Period 1) or Jul-Dec (Period 2). *Fallback question:* "Which period -- Period 1 (Jan-Jun) or Period 2 (Jul-Dec)? Is this a preliminary (quarterly) or final (semi-annual) return?"
 
-These reference transactions have known correct outputs. Use to validate skill execution.
+### 9.4 Industry and sector
+*Inference rule:* counterparty mix, income patterns. *Fallback question:* "What is your business activity?"
 
-### Test 1 -- Standard domestic sale [T1]
-**Input:** Korean general taxpayer sells goods to Korean customer, supply value KRW 10,000,000.
-**Expected output:** Line 1 = KRW 10,000,000, Output tax = KRW 1,000,000. E-tax invoice issued and transmitted to NTS.
+### 9.5 Exempt supplies
+*Inference rule:* presence of medical, educational, financial, or residential rental income. *Fallback question:* "Do you make any exempt supplies (면세)? If so, what proportion of your revenue?"
 
-### Test 2 -- Export sale, zero-rated [T1]
-**Input:** Korean manufacturer exports goods FOB value KRW 50,000,000 to US buyer.
-**Expected output:** Line 2 = KRW 50,000,000 (zero-rated), Line 7 = KRW 50,000,000 (direct export detail). Output tax = KRW 0. Export declaration retained.
+### 9.6 Annual revenue
+*Inference rule:* extrapolate from period income. *Fallback question:* "What is your approximate annual revenue? (Determines simplified taxpayer eligibility at KRW 104M threshold.)"
 
-### Test 3 -- Domestic purchase with e-tax invoice [T1]
-**Input:** General taxpayer purchases office supplies KRW 2,200,000 (VAT inclusive), supply value KRW 2,000,000, VAT KRW 200,000.
-**Expected output:** Line 12 = KRW 2,000,000, Input tax = KRW 200,000. Full recovery (not blocked category).
+### 9.7 E-tax invoice usage
+*Inference rule:* if corporation or revenue >= KRW 80M, mandatory. *Fallback question:* "Do you issue e-tax invoices (전자세금계산서)?"
 
-### Test 4 -- Entertainment expense, input blocked [T1]
-**Input:** General taxpayer pays KRW 550,000 (VAT inclusive) for client dinner. Supply value KRW 500,000, VAT KRW 50,000.
-**Expected output:** Line 12 = KRW 500,000 (reported), but Input tax = KRW 0 (BLOCKED under Article 39(1)4). VAT is irrecoverable cost.
+### 9.8 Import activities
+*Inference rule:* customs payments, foreign-currency debits for goods. *Fallback question:* "Do you import goods? (Customs VAT recovery rules apply.)"
 
-### Test 5 -- Non-business vehicle purchase [T1]
-**Input:** General taxpayer purchases sedan for owner, KRW 44,000,000 (VAT inclusive), supply value KRW 40,000,000, VAT KRW 4,000,000.
-**Expected output:** Input tax = KRW 0. BLOCKED under Article 39(1)5. Entire KRW 44,000,000 is cost.
+### 9.9 Prior period credit
+*Inference rule:* not inferable from single period. Always ask. *Question:* "Do you have a carried-forward refund (전기 미환급세액) from the prior period?"
 
-### Test 6 -- Reverse charge on imported services [T1]
-**Input:** Korean company pays USD 10,000 (KRW 13,000,000 equivalent) to US law firm for legal advisory. No Korean VAT charged.
-**Expected output:** Self-assess output VAT KRW 1,300,000. Claim input VAT KRW 1,300,000. Net effect = zero. Report on return as reverse charge adjustment.
-
-### Test 7 -- Simplified taxpayer, retail [T1]
-**Input:** Simplified taxpayer (retail shop), quarterly revenue KRW 15,000,000.
-**Expected output:** Tax = KRW 15,000,000 x 15% (retail ratio) x 10% = KRW 225,000. Input deduction = purchases x 0.5%.
-
-### Test 8 -- Credit card purchase, no tax invoice [T1]
-**Input:** Employee uses corporate card for KRW 330,000 office supplies (VAT inclusive). No e-tax invoice obtained.
-**Expected output:** Line 14 = KRW 300,000. Input tax = KRW 30,000 (recoverable via credit card slip). Retain card statement.
-
-### Test 9 -- Local letter of credit (deemed export) [T1]
-**Input:** Manufacturer supplies components worth KRW 20,000,000 under local L/C to exporter.
-**Expected output:** Line 2 = KRW 20,000,000 (zero-rated). Line 9 = KRW 20,000,000. Output tax = KRW 0. Purchase confirmation retained.
-
-### Test 10 -- Bad debt recovery [T1]
-**Input:** Customer went bankrupt. Original invoice KRW 11,000,000 (supply KRW 10,000,000, VAT KRW 1,000,000). Court confirms irrecoverable.
-**Expected output:** Line 17 adjustment = negative KRW 1,000,000 (bad debt VAT recovery). Retain court documentation.
-
-### Test 11 -- Import of goods with customs VAT [T1]
-**Input:** Import machinery from Japan, customs value KRW 100,000,000. Customs VAT = KRW 10,000,000. Import tax invoice received.
-**Expected output:** Line 12 = KRW 100,000,000. Line 13 = KRW 100,000,000 (fixed asset). Input tax = KRW 10,000,000 (fully recoverable). Customs declaration retained.
-
-### Test 12 -- Partial exemption business [T2]
-**Input:** Financial advisory firm (60% taxable, 40% exempt). Common overhead purchase KRW 5,500,000 (VAT KRW 500,000).
-**Expected output:** Recoverable input tax = KRW 500,000 x 60% = KRW 300,000. Flag for reviewer: confirm apportionment ratio and annual adjustment requirement.
+### 9.10 Cross-border digital services
+*Inference rule:* SaaS debits to foreign names. *Fallback question:* "Do you subscribe to foreign digital services (SaaS, cloud)? (Reverse charge may apply.)"
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 10 -- Reference material
 
-- NEVER classify entertainment expenses as deductible input tax -- they are ALWAYS blocked under Article 39(1)4
-- NEVER allow input VAT recovery on non-business passenger vehicles or their running costs (Article 39(1)5)
-- NEVER allow a simplified taxpayer to issue tax invoices (세금계산서) -- they may only issue receipts
-- NEVER apply reverse charge to imports of physical goods -- customs collects VAT at the border
-- NEVER allow input VAT recovery without a valid tax invoice, credit card slip, or customs import document
-- NEVER file a VAT return without confirming the client's business type (general vs. simplified vs. exempt)
-- NEVER ignore the e-tax invoice transmission requirement -- must transmit to NTS within 1 day of issuance
-- NEVER allow input VAT on land acquisition costs (Article 39(1)6)
-- NEVER confuse zero-rated (exports, input tax deductible) with exempt (no output tax, input tax NOT deductible on attributable purchases)
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI
-- NEVER allow pre-registration input tax beyond the 20-day lookback window
-- NEVER allow bad debt relief beyond the 5-year statutory limit
+### Sources
 
----
+**Primary legislation:**
+1. VAT Act (부가가치세법) -- Articles 4, 5-8, 9-11, 24-28, 30, 32, 36, 38, 39, 40, 45, 46, 48, 49, 52, 53-2, 60, 61-68
+2. VAT Act Enforcement Decree (부가가치세법 시행령) -- Articles 17, 33, 35, 44, 80, 81, 82, 87, 109, 111
+3. Framework Act on National Taxes (국세기본법) -- Articles 45, 47-2, 47-3, 47-4, 47-5
+4. Restriction of Special Taxation Act (조세특례제한법)
 
-## Step 14: Reviewer Escalation Protocol
+**NTS guidance:**
+5. HomeTax (홈택스) -- https://hometax.go.kr
+6. NTS e-tax invoice system and completion notes
+7. NTS simplified taxpayer guidance
 
-When a [T2] situation is identified, output the following structured flag:
+### Known gaps
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is considered most likely correct and why]
-Action Required: Licensed tax practitioner (세무사/공인회계사) must confirm before filing.
-```
+1. The supplier pattern library covers common national brands but not every regional business or local shop.
+2. The worked examples are from a hypothetical Seoul IT consultant. Sector-specific examples (manufacturing, retail, hospitality) should be added in v2.1.
+3. Simplified taxpayer industry value-added ratios may be updated by NTS -- verify annually.
+4. The KRW 104M simplified taxpayer threshold and KRW 48M payment exemption threshold are as of July 2024 -- verify for changes.
+5. The KRW 80M e-tax invoice threshold for individuals may change.
+6. Partial exemption apportionment (Article 40) is simplified here; complex multi-activity businesses need specialist review.
 
-When a [T3] situation is identified, output:
+### Change log
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed tax practitioner. Document gap.
-```
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure. Quick reference at top (Section 1) with 10% rate, semi-annual filing, e-tax invoice requirements, and conservative defaults. Supplier pattern library restructured as literal lookup tables (Section 3) with Korean vendors. Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue added (Section 6). Excel template specification added (Section 7). Korean bank statement reading guide (거래내역) added (Section 8). Onboarding fallback with inference rules (Section 9).
+- **v1.0 (April 2026):** Previous version with full monolithic structure.
 
----
+### Self-check (v2.0)
 
-## Contribution Notes
+1. Quick reference at top with 10% rate and e-tax invoice requirements: yes (Section 1).
+2. Semi-annual filing with quarterly preliminary returns explicit: yes (Section 1).
+3. Conservative defaults with Korean-specific values: yes (Section 1).
+4. Supplier library as literal lookup tables with Korean vendors: yes (Section 3, 12 sub-tables).
+5. Worked examples from hypothetical Seoul IT consultant: yes (Section 4, 6 examples).
+6. Tier 1 rules compressed: yes (Section 5, 12 rules).
+7. Tier 2 catalogue compressed: yes (Section 6, 10 items).
+8. Excel template specification: yes (Section 7).
+9. Korean bank statement reading guide (거래내역): yes (Section 8).
+10. Onboarding as fallback with inference rules: yes (Section 9, 10 items).
+11. Entertainment hard-block (접대비, Art. 39(1)4) explicit: yes (Section 5.6, Example 4).
+12. Vehicle hard-block (비영업용 소형승용차, Art. 39(1)5) explicit: yes (Section 5.6, Example 5).
+13. Reverse charge on imported services (Art. 52) explicit: yes (Section 5.7, Example 3).
+14. Credit card input deduction without e-tax invoice (Line 14) explicit: yes (Section 5.5, Example 6).
+15. Refusal catalogue present: yes (Section 2, R-KR-1 through R-KR-6).
 
-This skill covers the standard VAT return for general taxpayers (일반과세자) and simplified taxpayers (간이과세자) in South Korea. It does not cover:
-
-- Corporate income tax or individual income tax computation [T3]
-- Customs duties (beyond VAT at import) [T3]
-- Special consumption tax (개별소비세) [T3]
-- Local taxes (지방세) [T3]
-- Group VAT registration mechanics [T3]
-- Transfer pricing implications on intercompany supplies [T3]
-
-**A skill may not be published without sign-off from a licensed practitioner (세무사 or 공인회계사) in South Korea.**
+## End of South Korea VAT Return Skill v2.0
 
 
 ---

@@ -1,619 +1,730 @@
 ---
 name: france-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a French VAT return (déclaration de TVA CA3) for a self-employed individual or small business under the régime réel normal in France. Trigger on phrases like "prepare CA3", "French VAT return", "déclaration TVA France", "classify transactions for France", "TVA française", "autoliquidation", "reverse charge France", or any request involving French VAT filing. Covers régime réel normal only. Franchise en base de TVA, régime simplifié (CA12), micro-entreprise, margin schemes, travel agents, agricultural flat rate, partial exemption (prorata), and VAT groups (groupe TVA) are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.2.0+ and eu-vat-directive v0.1+. ALWAYS read before touching French VAT work.
-version: 0.1
+description: Use this skill whenever asked to prepare, review, or classify transactions for a French VAT return (déclaration de TVA CA3) for a self-employed individual or small business under the régime réel normal in France. Trigger on phrases like "prepare CA3", "French VAT return", "TVA", "déclaration de TVA", "classify these transactions for French VAT", or any request involving France VAT filing. This skill covers France only, régime réel normal (monthly CA3) and régime réel simplifié (annual CA12 with two advance payments). Micro-entreprise (franchise en base de TVA), partial exemption, and margin schemes are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any French VAT work.
+version: 2.0
 ---
 
-# France VAT Return Skill (CA3, Régime Réel Normal) v0.1
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
+# France VAT Return Skill (CA3 / CA12) v2.0
 
 ## Section 1 — Quick reference
 
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
+
 | Field | Value |
 |---|---|
-| Country | France (France métropolitaine — Corsica and DOM-TOM out of scope for v0.1) |
-| Return form | CA3 — déclaration mensuelle ou trimestrielle de TVA (régime réel normal) |
-| Tax | TVA (Taxe sur la Valeur Ajoutée) |
-| Governing law | Code général des impôts (CGI), primarily articles 256 through 298 sexdecies. **See recodification note in Section 10 — from 1 September 2026 VAT provisions move to the Code des Impositions sur les Biens et Services (CIBS) under Ordonnance n° 2025-1247 of 17 December 2025.** This v0.1 cites the CGI as currently in force. |
+| Country | France (République française) |
+| Standard rate | 20% |
+| Reduced rates | 10% (restaurants, transport, renovation works, prepared food), 5.5% (food staples, books, energy renovation, cultural events), 2.1% (press, certain medicines) |
+| Zero rate | 0% (exports, intra-EU B2B supplies of goods) |
+| Return form | CA3 (régime réel normal, monthly or quarterly); CA12 (régime réel simplifié, annual) |
+| Filing portal | https://www.impots.gouv.fr (espace professionnel) |
 | Authority | Direction Générale des Finances Publiques (DGFiP) |
-| Filing portal | impots.gouv.fr — compte professionnel, either EDI-TVA or EFI (échange de formulaires informatisé) |
 | Currency | EUR only |
-| Standard rate | 20% (art. 278 CGI) |
-| Intermediate rate | 10% (art. 278 bis, 278 quater, 278 sexies A, 278 septies, 279 CGI) |
-| Reduced rate | 5.5% (art. 278-0 bis CGI) |
-| Super-reduced rate | 2.1% (art. 281 quater CGI) |
-| Filing frequencies | Monthly (default for régime réel normal), or quarterly if annual TVA due is below €4,000 |
-| Deadline | Between 15th and 24th of the following month, depending on the first letter of the company name and the département (set by local DGFiP) |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.2.0 or later — MUST be loaded** |
+| Filing frequencies | Monthly (réel normal, turnover > €254,000 services / €840,000 goods); Quarterly (réel normal, VAT < €4,000/year); Annual with advance payments (réel simplifié) |
+| Deadline | CA3: between 15th and 24th of following month (exact date depends on company identifier); CA12: 2nd working day after 1 May |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
+| Contributor | Open Accountants contributors |
+| Validation date | April 2026 |
 
-**Key CA3 fields (the cadres you will use most):**
+**Key CA3 lines (the lines you will use most):**
 
-| Cadre / Ligne | Meaning |
+| Line | Meaning |
 |---|---|
-| Ligne A1 | Ventes, prestations de services (France métropolitaine) — net taxable at standard/intermediate/reduced rates |
-| Ligne A2 | Autres opérations imposables — typically intra-Community acquisitions of services (autoliquidation), import of services from outside the EU |
-| Ligne A3 | Acquisitions intracommunautaires (goods) — self-assessed output TVA |
-| Ligne A4 | Opérations en provenance de Monaco (treated as internal French VAT, not cross-border) |
-| Ligne B1 | Livraisons intracommunautaires (exempt intra-Community supplies of goods, art. 262 ter I CGI) |
-| Ligne B2 | Exportations hors UE (exempt exports, art. 262 I CGI) |
-| Ligne B3 | Other exempt operations — typically B2B services to EU customers (art. 259-1° CGI / art. 44 directive) |
-| Ligne B4 | Livraisons d'électricité, gaz, chaleur et froid (special regime) |
-| Cadre I | TVA brute collectée (output VAT by rate) |
-| Cadre II | TVA déductible (input VAT, separated by type: immobilisations, autres biens et services) |
-| Ligne 16 | TVA nette due (positive = payable) |
-| Ligne 24 | Crédit de TVA (negative = credit carried forward or refundable) |
-
-**Numéro de TVA intracommunautaire format:** FR + 2 check digits (alphanumeric) + 9 digits of SIREN (e.g., FR32123456789). The 9-digit SIREN is the company identifier; the 2 check digits are computed from the SIREN. The full SIRET (14 digits) identifies a specific établissement and is used in e-invoicing routing.
-
-**Refusal catalogue quick index:** R-FR-1 through R-FR-14 in Section 2.
+| 01 | Sales of goods and services at 20% (net) |
+| 02 | Sales of goods and services at 5.5% (net) |
+| 03 | Sales of goods and services at 10% (net) |
+| 04 | Sales of goods and services at 2.1% (net) |
+| 04B | Intra-EU acquisitions (net) |
+| 05 | Imports (net, since 2022 auto-liquidation) |
+| 06 | Sales of goods to other EU member states (net, 0%) |
+| 06A | Intra-EU B2B services (Art. 283-2 reverse charge out, net) |
+| 07 | Exports outside EU (net, 0%) |
+| 07A | Other non-taxable operations |
+| 08 | Output VAT on line 01 (20%) |
+| 09 | Output VAT on line 02 (5.5%) |
+| 09B | Output VAT on line 03 (10%) |
+| 09C | Output VAT on line 04 (2.1%) |
+| 10 | Total output VAT |
+| 17 | Output VAT on intra-EU acquisitions |
+| 18 | Output VAT on services from EU (autoliquidation) |
+| 19 | Deductible VAT on immobilisations (capital goods) |
+| 20 | Deductible VAT on other goods and services (ABS) |
+| 21 | Other deductible VAT |
+| 22 | Credit from prior period (report de crédit) |
+| 23 | Total deductible VAT |
+| 24 | Credit de TVA (if line 23 > line 10+17+18) |
+| 25 | Net VAT due (if line 10+17+18 > line 23) |
+| 28 | VAT payable (line 25 minus any adjustments) |
 
 **Conservative defaults — France-specific values for the universal categories in `vat-workflow-base` Section 2:**
 
-| Category | Default | French-specific note |
-|---|---|---|
-| Unknown rate on a sale | 20% | Taux normal (art. 278 CGI) |
-| Unknown VAT status of a purchase | Not deductible | Requires a facture compliant with art. 242 nonies A Annexe II CGI |
-| Unknown counterparty country | France domestic | If IBAN starts with anything other than FR or if counterparty name is foreign, re-check |
-| Unknown customer status (B2B vs B2C) | B2C with 20% | Applies the conservative customer-side treatment |
-| Unknown vehicle business use | 0% deductible (cars) | Art. 206 IV Annexe II CGI — input TVA on passenger cars (VP — véhicules de tourisme) is **entirely blocked** regardless of business use. This is stricter than the German 50% default and the Italian 40% cap. |
-| Unknown restaurant / business meal | Deductible if business purpose documented | Different from Germany and Italy — France allows deduction on business meals provided the "frais de réception" are justified. Default to blocked pending documentation. |
-| Unknown fuel (gasoline vs diesel) | Diesel 80% deductible, gasoline 80% deductible | Since 2022 gasoline and diesel are treated identically at 80% deductible for passenger vehicles (art. 298 4° CGI). Commercial vehicles: 100%. |
-| Gift to customer | Blocked if unit value > €73 TTC (2025) | Art. 206 IV-2-3° Annexe II CGI — low-value gift threshold, revalued annually |
-| Telephone / mobile | 100% deductible if documentable business use | France does not impose a statutory cap on mobile phone deduction (unlike Italy's 50%). Default: block unless business use is clear from the data or context. |
-| Hotels | Deductible at 10% TVA rate for accommodation | Hotels are at the 10% intermediate rate, full deduction for business travel |
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 20% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic France |
+| Unknown B2B vs B2C status for EU customer | B2C, charge 20% |
+| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge from non-EU (autoliquidation, line 05 equivalent) |
+| Unknown blocked-input status (entertainment, personal use) | Blocked |
+| Unknown whether transaction is in scope | In scope |
 
 **Red flag thresholds — country slot values for the reviewer brief in `vat-workflow-base` Section 3:**
 
-- Single transaction HIGH threshold: €5,000
-- Tax delta HIGH threshold: €500
-- Period total HIGH threshold: €50,000
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | €5,000 |
+| HIGH tax-delta on a single conservative default | €400 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | €10,000 |
 
-## Section 2 — France-specific refusal catalogue (R-FR-1 through R-FR-14)
+---
+
+## Section 2 — Required inputs and refusal catalogue
+
+### Required inputs
+
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any French or international business bank: BNP Paribas, Société Générale, Crédit Agricole, LCL, Banque Populaire, Caisse d'Épargne, La Banque Postale, CIC, Revolut Business, Wise Business, N26 Business, Qonto, or any other.
+
+**Recommended** — sales invoices for the period (especially for intra-EU B2B services and zero-rated supplies), purchase invoices for any input VAT claim above €400, the client's TVA number in writing (FR + 2 check digits + 9-digit SIREN).
+
+**Ideal** — complete invoice register (FEC-compatible), SIRET number, prior period CA3, reconciliation of line 22 credit carried forward.
+
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all → hard stop. If bank statement only without invoices → proceed but record in the reviewer brief: "This CA3 was produced from bank statement alone. The reviewer must verify, before approval, that input VAT claims above €400 are supported by compliant tax invoices (factures) and that all reverse-charge classifications match the supplier's invoice."
+
+### France-specific refusal catalogue
 
 These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation.
 
-**R-FR-1 — Franchise en base de TVA.**
-*Condition.* The user is registered under the franchise en base (art. 293 B CGI) — the small-business scheme where turnover is below the thresholds (€37,500 services / €85,000 commerce as of 2026) and the taxpayer does not charge TVA, does not recover input TVA, and does not file CA3 returns.
-*Message.* "You operate under the franchise en base de TVA (art. 293 B CGI), which means you do not charge TVA on your invoices, do not recover input TVA, and do not file CA3 returns. Your invoices should carry the mandatory mention 'TVA non applicable, art. 293 B du CGI'. This skill targets the régime réel normal and cannot produce a return for a franchise en base taxpayer — there is no return to produce. If you have exceeded the franchise threshold during the period, you need an expert-comptable to handle the transition to régime réel."
+**R-FR-1 — Micro-entreprise / franchise en base de TVA.** *Trigger:* client is under the franchise en base (turnover below €36,800 services / €91,900 goods for 2025/2026) and has not opted for VAT. *Message:* "Micro-entrepreneurs under the franchise en base de TVA are exempt from charging and collecting VAT. They do not file a CA3 or CA12. This skill cannot prepare a return for a franchise en base client. If you have opted for VAT (option pour la TVA), please confirm and provide your FR TVA number."
 
-**R-FR-2 — Régime simplifié d'imposition (CA12).**
-*Condition.* The user is on the régime réel simplifié, filing an annual CA12 with two provisional acomptes during the year rather than monthly or quarterly CA3.
-*Message.* "You are on the régime réel simplifié (RSI), which files an annual CA12 declaration rather than periodic CA3. The CA12 computation includes régularisations and the two provisional acomptes during the year that this skill does not handle. This skill targets only the régime réel normal with monthly or quarterly CA3 filing. You need an expert-comptable to prepare the CA12."
+**R-FR-2 — Partial exemption (prorata de déduction).** *Trigger:* client makes both taxable supplies and exempt-without-credit supplies (financial, medical, educational, insurance) and the exempt proportion is not de minimis. *Message:* "You make both taxable and exempt supplies. Your input VAT must be apportioned under the coefficient de déduction / prorata rules (Articles 206 to 214 of Annexe II to the CGI). Please use a qualified expert-comptable to determine the prorata before input VAT is claimed."
 
-**R-FR-3 — Micro-entreprise.**
-*Condition.* The user operates as a micro-entrepreneur (formerly auto-entrepreneur) under the régime micro-BIC or micro-BNC, which generally means they are also under franchise en base unless they've opted out.
-*Message.* "You operate as a micro-entrepreneur. If your turnover is below the franchise threshold and you have not opted for TVA, you do not file a TVA return at all (see R-FR-1). If you have opted for TVA, your profile description should confirm this — in that case, please tell me explicitly so I can proceed. Without confirmation, the default assumption for a micro-entrepreneur is franchise en base, which this skill cannot handle."
+**R-FR-3 — Margin scheme (régime de la marge).** *Trigger:* client deals in second-hand goods, art, antiques, or collectables under the margin scheme. *Message:* "Margin scheme transactions (TVA sur la marge) require transaction-level margin computation. Out of scope for this skill."
 
-**R-FR-4 — E-invoicing mandate (réforme de la facturation électronique).**
-*Condition.* The user is within the scope of the phased French e-invoicing mandate. Rollout per the February 2026 Finance Bill and current DGFiP guidance: from **1 September 2026**, all businesses subject to French VAT must be able to **receive** e-invoices via a Plateforme Agréée (PA) or the Portail Public de Facturation (PPF) directory; large and intermediate-sized companies (grandes entreprises and ETI) must also **issue** e-invoices from this date. From **1 September 2027**, small enterprises (PME) and micro-enterprises subject to TVA must also issue e-invoices. Both dates carry an optional three-month extension to 1 December of the same year.
-*Handling.* This is not a simple "issue refusal" — it depends on the user's size and the current date. The skill should handle it as follows:
-  1. **If the current date is before 1 September 2026:** no e-invoicing refusal applies. Proceed normally, but note in the reviewer brief that the user should be preparing for PA selection and onboarding.
-  2. **If the current date is on or after 1 September 2026 AND the user is a grande entreprise or ETI:** the user must already be issuing e-invoices via a PA. If the profile inference in Step 3 of the workflow suggests no PA is in place, fire this refusal.
-  3. **If the current date is on or after 1 September 2026 AND the user is a PME or micro-entreprise:** the user must already be able to receive e-invoices. If the profile inference suggests the receive obligation is not met, fire this refusal. The issue obligation does not yet apply until 1 September 2027.
-  4. **If the current date is on or after 1 September 2027:** all VAT-registered businesses must be both issuing and receiving e-invoices via a PA. If profile inference suggests either obligation is unmet, fire this refusal.
-*Message (when fired).* "As of [current date], French VAT-registered businesses of your size are required to [receive / issue and receive] electronic invoices via a Plateforme Agréée (PA) accredited by the DGFiP. Your profile does not indicate an accredited platform is in place. You cannot legally operate without PA compliance and this skill cannot prepare a CA3 for a business that is not meeting its e-invoicing obligations. Contact an expert-comptable or select a PA from the DGFiP's published list at impots.gouv.fr before any return can be prepared. This is not optional — it is a legal requirement under the loi de finances and the associated DGFiP implementing texts."
-*Terminology note.* The PA (Plateforme Agréée) terminology replaced the earlier PDP (Plateforme de Dématérialisation Partenaire) terminology in the February 2026 Finance Bill. References to PDP in older documents now mean PA. The PPF (Portail Public de Facturation) remains the central directory and data hub but is no longer a free billing service — all actual invoice transmission goes through an accredited PA.
+**R-FR-4 — Real estate (TVA immobilière).** *Trigger:* client deals in new construction, building land, or property transactions subject to TVA immobilière. *Message:* "Real estate VAT (TVA immobilière) is complex and fact-specific. Out of scope for this skill. Please consult an expert-comptable."
 
-**R-FR-5 — Partial exemption (prorata de déduction).**
-*Condition.* The user makes both taxable and exempt supplies (opérations exonérées under art. 261 CGI) above de minimis, requiring the prorata de déduction mechanism under art. 271 CGI and art. 205-206 Annexe II CGI.
-*Reason.* French prorata is structurally complex — it distinguishes between the coefficient d'assujettissement, coefficient de taxation, and coefficient d'admission, combined as the coefficient de déduction. The calculation requires annual régularisation and sector-specific adjustments.
-*Message.* "Your business makes both taxable and exempt supplies, which triggers the prorata de déduction under art. 271 CGI. French prorata is computed using three separate coefficients (assujettissement, taxation, admission) and requires annual régularisation in the December return. This is substantially more complex than ordinary input TVA recovery and this skill does not handle it. You need an expert-comptable with experience in partial exemption to set up the prorata methodology."
+**R-FR-5 — VAT group (groupe TVA).** *Trigger:* client is part of a VAT group under Article 256 C of the CGI. *Message:* "VAT groups require consolidation across the group. Out of scope."
 
-**R-FR-6 — Margin schemes (régime de la marge bénéficiaire).**
-*Condition.* The user resells second-hand goods, works of art, antiques, or collectors' items under the régime particulier de la marge bénéficiaire (art. 297 A ff. CGI).
-*Message.* "Your business involves the resale of second-hand goods, works of art, antiques, or collectors' items under the régime de la marge bénéficiaire (art. 297 A CGI). This scheme requires item-by-item margin tracking and specific invoicing mentions that cannot be derived from a bank statement. You need an expert-comptable familiar with the régime de la marge."
+**R-FR-6 — Fiscal representative.** *Trigger:* non-resident supplier or client with a fiscal representative in France. *Message:* "Non-resident registrations with fiscal representatives have specific obligations beyond this skill. Please use a qualified comptable."
 
-**R-FR-7 — Travel agents (régime des agences de voyages).**
-*Condition.* The user operates a travel agency reselling travel and accommodation under art. 266-1-e CGI.
-*Message.* "Your business is subject to the régime particulier des agences de voyages under art. 266-1-e CGI, which has specialized VAT rules quite different from standard TVA. This skill cannot handle the travel agents margin scheme."
+**R-FR-7 — DOM-TOM filing.** *Trigger:* client is based in an overseas department/territory (Guadeloupe, Martinique, Réunion, Guyane, Mayotte). *Message:* "DOM-TOM territories have specific reduced rates (8.5% standard in Guadeloupe/Martinique/Réunion, 0% for some categories) that differ from mainland France. This skill covers metropolitan France only."
 
-**R-FR-8 — Agricultural flat rate (régime du remboursement forfaitaire agricole).**
-*Condition.* The user operates under the agricultural flat-rate reimbursement scheme.
-*Message.* "You operate under the régime du remboursement forfaitaire agricole, which uses compensation percentages rather than actual input TVA. This skill cannot handle the agricultural flat rate."
+**R-FR-8 — Income tax instead of VAT.** *Trigger:* user asks about annual income tax (impôt sur le revenu, IS, BNC, BIC) instead of TVA. *Message:* "This skill only handles French VAT returns (CA3/CA12). For income tax, use a dedicated French income tax skill."
 
-**R-FR-9 — VAT group (groupe TVA / assujetti unique).**
-*Condition.* The user is part of a groupe TVA (assujetti unique) under art. 256 C CGI.
-*Message.* "Your business is part of a groupe TVA (French VAT group) under art. 256 C CGI, where multiple related entities are treated as a single taxable person (assujetti unique). The group return is prepared by the representing entity with specific intra-group transaction handling that this skill does not support. You need the group representative's expert-comptable."
+---
 
-**R-FR-10 — Construction reverse charge (autoliquidation sous-traitance BTP).**
-*Condition.* The user is a subcontractor in the construction sector (bâtiment et travaux publics) providing services to another business that is itself the main contractor, subject to the internal reverse charge under art. 283 2 nonies CGI.
-*Message.* "You work as a sous-traitant in the BTP sector, where the autoliquidation de la sous-traitance applies under art. 283 2 nonies CGI. The construction reverse charge has strict conditions about when it applies, what invoicing mentions are required, and how it interacts with other obligations. This skill does not handle the BTP reverse charge. You need an expert-comptable with construction sector experience."
+## Section 3 — Supplier pattern library (the lookup table)
 
-**R-FR-11 — Import with postponed accounting (autoliquidation à l'importation).**
-*Condition.* The user imports goods from outside the EU and uses the generalized postponed accounting regime that became mandatory from 1 January 2022 (art. 1695 II CGI).
-*Reason.* Since 2022, autoliquidation de la TVA à l'importation is **mandatory** for all taxable persons identified for VAT in France. The import TVA is declared and deducted on the same CA3 (in ligne A2 and cadre II respectively), with a specific reference to the importation. The bank statement does not show the import TVA as a separate flow because no cash changes hands for the TVA itself — this must be reconciled against the monthly data file provided by the DGDDI (customs) via the "service en ligne des données mensuelles de TVA à l'importation."
-*Message.* "Your business imports goods from outside the EU. Since 1 January 2022, French import TVA is subject to mandatory autoliquidation under art. 1695 II CGI — you report the import TVA in ligne A2 of your CA3 and simultaneously deduct it in cadre II, with no cash payment at the border. The amounts must match the DGDDI monthly data file available via your espace professionnel on impots.gouv.fr. This reconciliation cannot be derived from a bank statement alone. You need to provide the DGDDI monthly data export, or this skill cannot reliably compute your import TVA position."
+This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. Do not consult Tier 1 rules — the table is authoritative for patterns it covers.
 
-**R-FR-12 — DEB / Déclaration d'échanges de biens (EMEBI).**
-*Condition.* The user's cross-border supplies of goods within the EU exceed the EMEBI threshold (post-2022 reform, statistical reporting is separated from tax reporting — the tax side is the TVA Etat Récapitulatif (ESL equivalent), the statistical side is the EMEBI).
-*Message.* "Your business has intra-Community movements of goods that may trigger the EMEBI statistical declaration and the TVA Etat Récapitulatif (ESL) fiscal declaration. These are separate filings from the CA3 and are submitted via DEBWEB2. This skill handles only the CA3 return and flags the EMEBI / ESL obligation in the reviewer brief — it does not produce those filings. If your EMEBI obligations are not already being handled by an expert-comptable, you need to address that before filing."
+**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
 
-**R-FR-13 — Cash accounting election (TVA sur les encaissements) mismatched with régime.**
-*Condition.* Service providers by default are on TVA sur les encaissements (TVA due on cash receipt), while providers of goods are on TVA sur les débits (TVA due on invoice issue). A mismatch between the user's actual regime and the data basis is a refusal trigger.
-*Message.* "Your business combines supplies of goods (TVA sur les débits — TVA due at invoice date) and services (TVA sur les encaissements — TVA due at cash receipt, unless you have opted for débits). The two bases interact in specific ways and the bank statement alone is insufficient to distinguish them without knowing which basis applies to each line. You need to confirm whether you have opted for TVA sur les débits for your services, and ideally provide your invoice register in addition to the bank statement. This skill v0.1 assumes a single basis throughout; mixed bases require an expert-comptable."
+### 3.1 French banks (fees exempt — exclude)
 
-**R-FR-14 — Corsica or DOM-TOM operations.**
-*Condition.* The user has operations in Corsica (with its specific reduced rates of 13%, 0.9%, etc.) or the DOM (Guadeloupe, Martinique, La Réunion, where the standard rate is 8.5% and special rates apply), or operations mixing France métropolitaine with these zones.
-*Message.* "Your business appears to involve operations in Corsica or the DOM-TOM, which have specific VAT rates and rules different from France métropolitaine (Corsica: 20%, 13%, 10%, 2.1%, 0.9% under art. 297 CGI; DOM: 8.5% standard rate, reduced rates per art. 294 CGI). This skill v0.1 covers France métropolitaine only. You need an expert-comptable familiar with the Corsican or overseas territories VAT rules."
-
-## Section 3 — French supplier pattern library (literal lookup table)
-
-When you encounter these counterparties, apply the treatment indicated. The table is derived from public corporate disclosures, French tax authority guidance (BOFiP), and common business practice as of v0.1; reviewer must confirm for high-value transactions.
-
-### 3.1 — French telecommunications
-
-| Supplier | Typical IBAN / context | Treatment |
+| Pattern | Treatment | Notes |
 |---|---|---|
-| Orange S.A. (ex France Télécom) | FR IBAN | Domestic 20% — fixed line, mobile, internet. Business contracts typically show "Orange Business Services" on invoices. No statutory cap on mobile deduction. Default deductible if business use is documented. |
-| SFR (Société Française du Radiotéléphone — Altice) | FR IBAN | Same as Orange — domestic 20% |
-| Bouygues Telecom | FR IBAN | Same |
-| Free / Iliad S.A. | FR IBAN | Same |
-| Sosh (Orange subsidiary) | FR IBAN | Consumer-tier Orange brand — treat as Orange but default to personal unless business use is established |
-| Red by SFR | FR IBAN | Consumer-tier SFR — same treatment as Sosh |
+| BNP PARIBAS, BNP | EXCLUDE for bank charges/fees | Financial service, exempt |
+| SOCIETE GENERALE, SOC GEN, SG | EXCLUDE for bank charges/fees | Same |
+| CREDIT AGRICOLE, CA, CRCAM | EXCLUDE for bank charges/fees | Same |
+| LCL, CREDIT LYONNAIS | EXCLUDE for bank charges/fees | Same |
+| BANQUE POPULAIRE, BPCE | EXCLUDE for bank charges/fees | Same |
+| CAISSE D'EPARGNE, CE | EXCLUDE for bank charges/fees | Same |
+| LA BANQUE POSTALE | EXCLUDE for bank charges/fees | Same |
+| CIC, CREDIT MUTUEL | EXCLUDE for bank charges/fees | Same |
+| QONTO | EXCLUDE for bank charges/fees | Check for separate taxable subscription invoices |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
+| INTERETS, INTEREST, AGIOS | EXCLUDE | Interest income/expense, out of scope |
+| PRET, EMPRUNT, LOAN | EXCLUDE | Loan principal movement, out of scope |
 
-### 3.2 — French energy, water, and utilities
+### 3.2 French government, regulators, and statutory bodies (exclude entirely)
 
-| Supplier | Treatment |
-|---|---|
-| EDF (Électricité de France) | Domestic — rate depends on use. **Since 1 August 2025, electricity and gas subscriptions are all at 20% standard rate** (previously 5.5% for the subscription component). Consumption is at 20%. For business use, fully deductible. |
-| ENGIE (ex GDF Suez) | Same structure as EDF — 20% from 1 August 2025, fully deductible for business use |
-| TotalEnergies Électricité et Gaz | Same |
-| Eni Gas & Power France | Same |
-| Veolia Eau / Suez Eau France | Water supply — 5.5% reduced rate for water (art. 278-0 bis CGI), deductible if business use |
-
-### 3.3 — French banks and financial services
-
-| Supplier | Treatment |
-|---|---|
-| BNP Paribas | Bank fees — exempt under art. 261 C CGI (EU Article 135). Excluded from CA3. No input TVA. |
-| Crédit Agricole (regional Caisses) | Same |
-| Société Générale | Same |
-| Crédit Mutuel | Same |
-| BPCE (Banque Populaire, Caisse d'Épargne) | Same |
-| La Banque Postale | Same — banking services exempt |
-| Boursorama Banque, Fortuneo, Hello Bank, N26, Revolut Bank (France) | Same exemption |
-| Stripe Payments Europe (Ireland) | EU reverse charge on the Stripe platform fee component — but the actual payment processing flows are not VAT events. See Example 4 in Section 4. |
-
-### 3.4 — French insurance
-
-| Supplier | Treatment |
-|---|---|
-| AXA France | Insurance premiums — exempt art. 261 C CGI (EU Article 135). Excluded from CA3. No input TVA. |
-| Allianz France | Same |
-| Generali France | Same |
-| Groupama | Same |
-| MAIF / MACIF / MAAF | Same |
-| MMA (Mutuelles du Mans Assurances) | Same |
-| CNP Assurances | Same |
-
-### 3.5 — French tax authority, URSSAF, and statutory bodies
-
-| Supplier / Counterparty | Treatment |
-|---|---|
-| DGFiP — impots.gouv.fr (tax payments) | Excluded — tax authority payment, not a supply. Flag for reviewer if unusual amount. Common line descriptions: "DGFIP", "Trésor Public", "IMPOT", "PLF". |
-| URSSAF (Union de Recouvrement des cotisations de Sécurité Sociale et d'Allocations Familiales) | Excluded — social security contributions, outside VAT scope |
-| Caisse Nationale de l'Assurance Maladie (CNAM) / CPAM | Excluded — health insurance contributions |
-| Pôle Emploi / France Travail | Excluded — unemployment insurance |
-| Chambre de Commerce et d'Industrie (CCI) — contribution annuelle | **Excluded — statutory contribution to a public-law body, NOT subject to VAT.** Do NOT claim input VAT on CCI annual fees regardless of invoice format. This is the French equivalent of the German IHK / Italian Camera di Commercio zero-VAT rule. |
-| Chambre des Métiers et de l'Artisanat (CMA) | Excluded — same logic as CCI |
-| Ordres professionnels (Ordre des avocats, Ordre des experts-comptables, Ordre des architectes, etc.) — cotisations annuelles | Excluded — statutory contribution to a public-law professional order, outside VAT scope |
-| Commune / Mairie — taxes locales (taxe foncière, CFE — Cotisation Foncière des Entreprises, CVAE) | Excluded — local taxes, outside VAT scope. CFE and CVAE are corporate taxes, not VAT. |
-
-### 3.6 — French postal service
-
-| Supplier | Treatment |
-|---|---|
-| La Poste — timbres et courrier ordinaire (lettres, colis suivis via Colissimo ordinaire) | Services relevant du service universel postal are **exempt under art. 261-4-11° CGI**. No TVA charged, no input TVA recovery. |
-| La Poste — Colissimo Expert, Chronopost | Competitive courier services are at 20% standard rate — these are NOT part of the universal service exemption |
-| Chronopost (La Poste subsidiary) | Domestic 20% |
-| DPD France | Domestic 20% |
-| UPS France | Domestic 20% if billed from UPS France; if billed from UPS NL or elsewhere, EU reverse charge |
-| FedEx France | Domestic 20% |
-| DHL Express France | Domestic 20% if billed from DHL France; if billed from DHL Germany or elsewhere, EU reverse charge |
-
-### 3.7 — French public transport and rail
-
-| Supplier | Treatment |
-|---|---|
-| SNCF Voyageurs (TGV, Intercités, TER) | Passenger rail — **10% intermediate rate** under art. 279 b quater CGI |
-| Trenitalia France (Paris-Lyon-Milan) | Same 10% |
-| Ouigo (SNCF subsidiary) | Same 10% |
-| RATP (Paris metro, bus, RER A and B) | 10% passenger transport |
-| Île-de-France Mobilités (Navigo pass) | 10% passenger transport |
-| Urban transport networks in Lyon (TCL), Marseille (RTM), Bordeaux (TBM), Lille (ilévia), Toulouse (Tisséo), Strasbourg (CTS), Nantes (TAN), Nice (Lignes d'Azur) | 10% passenger transport |
-| Vinci Autoroutes / APRR / Sanef — péages autoroute | **20% standard rate** — road tolls, fully deductible if business use |
-| BlaBlaCar (carpooling) | Not a VAT supply for the driver (peer-to-peer ride sharing); BlaBlaCar's own fee is a service subject to 20% but typically embedded |
-
-### 3.8 — Airlines and air transport
-
-| Supplier | Treatment |
-|---|---|
-| Air France — international flights | Exempt under art. 262 II 4° CGI (international air transport) |
-| Air France — domestic flights (e.g. Paris-Nice, Paris-Toulouse) | 10% intermediate rate (art. 279 b quater) |
-| Transavia France (Air France-KLM subsidiary) | Same treatment based on origin/destination |
-| Ryanair (billed from Ireland) | International flights exempt; domestic French flights taxable at 10% but Ryanair billing entity is Irish — check invoice |
-| easyJet | Similar — check billing entity |
-| Lufthansa / KLM / Iberia for flights departing France | Generally billed from home country; apply place-of-supply rules |
-
-### 3.9 — French hotels, restaurants, and hospitality
-
-| Category | Treatment |
-|---|---|
-| French hotels (business travel) | **10% intermediate rate** on accommodation (art. 279 a bis CGI). Ancillary services (parking, minibar) at 20% or 10% depending on the item. For CA3 purposes apply 10% on the full gross unless the invoice breaks out ancillaries. Input TVA recoverable if the trip is documented business purpose. |
-| French restaurants — food and non-alcoholic beverages | **10% intermediate rate** (art. 279 m CGI) |
-| French restaurants — alcoholic beverages | **20% standard rate** — alcohol is always at the taux normal even when served in a restaurant |
-| Business meals (frais de réception) | Deductible if business purpose is documented (client, supplier, staff meeting, conference). Unlike the German Bewirtungsbeleg formalism, France has less rigid documentation but the burden of proof on "intérêt direct de l'exploitation" lies with the taxpayer. Default: blocked pending documentation confirmation. |
-| Bars / cafés | Coffee and non-alcoholic drinks 10%; alcohol 20%. Single-line bar receipts default to blocked (unclear business purpose). |
-| French Airbnb (accommodation) | Via Airbnb Ireland UC — EU reverse charge on the Airbnb service fee component only. The accommodation itself is billed by the host (TVA-registered or franchise en base). Check the invoice structure. |
-
-### 3.10 — French supermarkets and food retail
-
-| Supplier | Treatment |
-|---|---|
-| Carrefour, Auchan, Leclerc, Intermarché, Casino, Monoprix, Franprix, Picard, Lidl France, Aldi France | Mixed — most food items at 5.5% (art. 278-0 bis D), prepared food and restauration at 10%, non-food items and alcohol at 20%. Default to blocked for single-transaction supermarket purchases (assume private provisioning) unless clear business purpose in description. |
-| Metro Cash & Carry France | B2B wholesaler — presumption shifts slightly toward business use, but still default blocked without specific description |
-
-### 3.11 — Fuel stations
-
-| Supplier | Treatment |
-|---|---|
-| TotalEnergies stations, BP France, Shell France, Esso France, Avia, Intermarché carburant, Leclerc carburant | Domestic 20% on fuel. **Input TVA on fuel for passenger vehicles (véhicules de tourisme) is deductible at 80% for both diesel and essence since 2022** (art. 298 4° CGI — the equalization was phased in between 2017 and 2022). Commercial vehicles (véhicules utilitaires, camions) get 100% deduction. **Passenger vehicles themselves (purchase, lease, repair, insurance) — input TVA is entirely blocked under art. 206 IV Annexe II CGI, which is stricter than the fuel rule.** |
-
-### 3.12 — Universal SaaS suppliers (EU reverse charge — autoliquidation)
-
-These are the same universal patterns that appear in Germany and Italy. The treatment is EU reverse charge (autoliquidation under art. 283-2 CGI, implementing art. 196 of the directive): the supplier does not charge TVA, the user self-accounts for 20% output TVA (reported in ligne A2 on the CA3) and simultaneously claims 20% input TVA (reported in cadre II), net cash zero.
-
-| Supplier | Billing entity | Treatment |
+| Pattern | Treatment | Notes |
 |---|---|---|
-| Google Ireland Ltd | IE IBAN | EU autoliquidation 20% — Google Ads, Google Workspace, Google Cloud (EMEA) |
-| Microsoft Ireland Operations | IE IBAN | EU autoliquidation 20% — Microsoft 365, Azure, GitHub Enterprise |
-| Adobe Systems Software Ireland | IE IBAN | EU autoliquidation 20% — Creative Cloud, Acrobat |
-| LinkedIn Ireland Unlimited | IE IBAN | EU autoliquidation 20% |
-| Meta Platforms Ireland | IE IBAN | EU autoliquidation 20% — Facebook Ads, Instagram Ads |
-| Slack Technologies Ireland | IE IBAN | EU autoliquidation 20% |
-| Dropbox International Unlimited Company | IE IBAN | EU autoliquidation 20% |
-| Atlassian Pty (Ireland) | IE IBAN | EU autoliquidation 20% — Jira, Confluence |
-| Stripe Payments Europe Ltd | IE IBAN | EU autoliquidation 20% — Stripe platform fees |
-| Uber BV | NL IBAN | EU autoliquidation 20% — Uber ride bookings and Uber for Business |
-| Booking.com B.V. | NL IBAN | EU autoliquidation 20% — commission on hotel bookings |
-| Zoom Video Communications | US entity billing EU | Non-EU reverse charge art. 283-2 — autoliquidation 20% |
-| Fiverr International | Israeli entity | Non-EU reverse charge art. 283-2 — autoliquidation 20% |
+| DGFIP, IMPOTS.GOUV, TRESOR PUBLIC | EXCLUDE | Tax payment (TVA, IS, IR), not a supply |
+| DIRECTION GENERALE DES FINANCES | EXCLUDE | Tax payment |
+| URSSAF | EXCLUDE | Social charges (cotisations sociales), not a VATable supply |
+| CPAM, ASSURANCE MALADIE | EXCLUDE | Social security, not a supply |
+| RSI, SSI | EXCLUDE | Social security for self-employed |
+| GREFFE, TRIBUNAL DE COMMERCE | EXCLUDE | Court/registry fees, sovereign acts |
+| CFE, COTISATION FONCIERE | EXCLUDE | Local business tax, not a supply |
+| CVAE | EXCLUDE | Contribution on added value, not a supply |
+| PREFECTURE, SOUS-PREFECTURE | EXCLUDE | Government administrative fees |
+| INPI | EXCLUDE | Trademark/patent office, government fee |
 
-### 3.13 — AWS (the branch-billing exception)
+### 3.3 French utilities
 
-AWS EMEA SARL bills most EU customers through local branches with local VAT registration. For French customers, the billing entity may be "AWS EMEA SARL Succursale France" or similar, with a French SIREN / numéro de TVA intracommunautaire and 20% French TVA charged on the invoice. **If the IBAN is French and the invoice shows French TVA, treat as domestic 20% (not as reverse charge).** If the IBAN is Luxembourg and the invoice shows no VAT with a reverse-charge note, treat as EU autoliquidation. This is the same exception structure as the German and Italian AWS cases. Always check the invoice rather than defaulting to one treatment or the other.
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| EDF, ELECTRICITE DE FRANCE | Domestic 20% | 20 (input) | Electricity — standard rate overhead |
+| ENGIE, GDF SUEZ | Domestic 20% or 5.5% | 20 (input) | Gas: subscription at 20%, energy portion may be 5.5% for residential heating — check invoice |
+| TOTAL ENERGIES, TOTALENERGIES | Domestic 20% | 20 (input) | Energy/fuel supplier |
+| ORANGE, ORANGE BUSINESS | Domestic 20% | 20 (input) | Telecoms/broadband — overhead |
+| FREE, FREE MOBILE, FREE SAS | Domestic 20% | 20 (input) | Telecoms/broadband — overhead |
+| SFR, ALTICE | Domestic 20% | 20 (input) | Telecoms/broadband |
+| BOUYGUES TELECOM | Domestic 20% | 20 (input) | Telecoms/broadband |
+| OVH, OVH SAS, OVHCLOUD | Domestic 20% | 20 (input) | Hosting, French entity |
+| VEOLIA, SUEZ EAU | Domestic 5.5% | 20 (input) | Water supply at reduced rate |
 
-### 3.14 — Apple and consumer-tier app stores
+### 3.4 Insurance (exempt — exclude)
 
-| Supplier | Treatment |
-|---|---|
-| Apple Distribution International (Ireland) — Apple One, iCloud+, App Store | Check billing entity on invoice. Consumer subscriptions billed on a personal Apple ID are typically personal expenses — default to excluded. Apple Business Essentials billed on a business account with SIREN is a B2B service — EU autoliquidation 20%. |
-| Google Play Store consumer purchases | Similar — default excluded as personal unless clearly business |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AXA, AXA FRANCE | EXCLUDE | Insurance, exempt |
+| MAIF, MACIF, MATMUT, MAAF | EXCLUDE | Mutual insurance, exempt |
+| GROUPAMA, GENERALI FRANCE | EXCLUDE | Insurance, exempt |
+| AG2R, MALAKOFF HUMANIS | EXCLUDE | Complementary insurance/prévoyance, exempt |
+| ASSURANCE, PRIME D'ASSURANCE | EXCLUDE | All insurance exempt |
 
-### 3.15 — Anthropic and AI services
+### 3.5 Post and logistics
 
-| Supplier | Treatment |
-|---|---|
-| Anthropic PBC — Claude Pro (individual tier) | Consumer-tier on personal email → default excluded as personal |
-| Anthropic PBC — Claude Team / Claude Enterprise | Business tier with SIREN on invoice → non-EU reverse charge art. 283-2, autoliquidation 20% |
-| OpenAI LLC — ChatGPT Plus (individual) | Default excluded as personal |
-| OpenAI LLC — ChatGPT Team / Enterprise | Non-EU reverse charge autoliquidation 20% |
-| Mistral AI (French company) | Domestic 20% — Mistral is a French company based in Paris, so supplies to French customers carry French TVA directly |
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| LA POSTE (standard mail) | EXCLUDE for standard postage | | Universal postal service, exempt |
+| LA POSTE (parcels, Colissimo) | Domestic 20% | 20 | Non-universal services are taxable |
+| CHRONOPOST | Domestic 20% | 20 | Express courier, taxable |
+| DHL EXPRESS FRANCE | Domestic 20% | 20 | Express courier, taxable |
+| UPS FRANCE, TNT FRANCE, FEDEX | Domestic 20% or EU reverse charge | 20 or 17/18 | Check billing entity — French or EU |
+| MONDIAL RELAY | Domestic 20% | 20 | Parcel delivery, French entity |
 
-### 3.16 — Amazon (intra-Community acquisitions and local billing)
+### 3.6 Transport (France domestic)
 
-| Pattern | Treatment |
-|---|---|
-| Amazon.fr marketplace sale billed by a French seller | Domestic 20% (or 5.5% for books under art. 278-0 bis D), check invoice |
-| Amazon EU Sarl with LU IBAN | Intra-Community acquisition of goods — report in ligne A3 with self-assessed 20% and deduct in cadre II |
-| Amazon Web Services (see 3.13) | See AWS branch exception |
-| Amazon consumer purchases on .fr with an FR IBAN | Depends on the seller — if the invoice shows a French SIREN it's domestic; if it shows an LU VAT number it's an intra-Community acquisition |
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| SNCF, OUIGO | Domestic 10% | 20 (input) | Rail transport at reduced rate |
+| RATP, METRO, BUS RATP | Domestic 10% | 20 (input) | Public transport, reduced rate |
+| UBER FR, UBER FRANCE | Domestic 10% (transport) / 20% (delivery) | 20 | Underlying ride at 10%; check Uber Eats vs rides |
+| BOLT FR, HEETCH | Domestic 10% | 20 | Ride-hailing, transport reduced rate |
+| AIR FRANCE (domestic) | Domestic 10% | 20 | Domestic flights at 10% |
+| AIR FRANCE, RYANAIR, EASYJET (international) | EXCLUDE / 0% | | International flights exempt |
+| TAXI, G7, TAXIS BLEUS | Domestic 10% | 20 | Local taxi, reduced rate |
+| AUTOROUTE, VINCI AUTOROUTES, SANEF, APRR | Domestic 20% | 20 | Motorway tolls at 20% |
+
+### 3.7 Food retail (blocked unless hospitality business)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CARREFOUR, AUCHAN, LECLERC, INTERMARCHE | Default BLOCK input VAT | Personal provisioning. Deductible only if hospitality/catering business. |
+| LIDL, MONOPRIX, FRANPRIX, CASINO | Default BLOCK | Same |
+| PICARD, LEADER PRICE, SUPER U | Default BLOCK | Same |
+| RESTAURANT, BRASSERIE, CAFE, BISTRO | Default BLOCK | Entertainment — see Section 5.12 for France-specific partial recovery rules |
+
+### 3.8 SaaS — EU suppliers (reverse charge, autoliquidation line 17/18)
+
+These are billed from EU entities (typically Ireland or Luxembourg) and trigger autoliquidation (Art. 283-2 CGI).
+
+| Pattern | Billing entity | Line | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 17/18 + 20 | Autoliquidation: output on 17 or 18, input on 20 |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 17/18 + 20 | Autoliquidation |
+| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 17/18 + 20 | Autoliquidation |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 17/18 + 20 | Autoliquidation |
+| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 17/18 + 20 | Autoliquidation |
+| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 17/18 + 20 | EU, autoliquidation |
+| DROPBOX | Dropbox International Unlimited (IE) | 17/18 + 20 | Autoliquidation |
+| SLACK | Slack Technologies Ireland Ltd (IE) | 17/18 + 20 | Autoliquidation |
+| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 17/18 + 20 | EU, autoliquidation |
+| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 17/18 + 20 | Autoliquidation |
+| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | 17/18 + 20 | Transaction fees may be exempt — see 3.11 |
+
+### 3.9 SaaS — non-EU suppliers (autoliquidation, line 05 equivalent)
+
+| Pattern | Billing entity | Line | Notes |
+|---|---|---|---|
+| AWS (standard) | AWS EMEA SARL (LU) — check | 17/18 + 20 | LU entity → EU autoliquidation |
+| NOTION | Notion Labs Inc (US) | 05 + 20 | Non-EU autoliquidation (import of services) |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 05 + 20 | Non-EU autoliquidation |
+| OPENAI, CHATGPT | OpenAI Inc (US) | 05 + 20 | Non-EU autoliquidation |
+| GITHUB (standard plans) | GitHub Inc (US) | 05 + 20 | Check if billed by IE entity |
+| FIGMA | Figma Inc (US) | 05 + 20 | Non-EU autoliquidation |
+| CANVA | Canva Pty Ltd (AU) | 05 + 20 | Non-EU autoliquidation |
+| HUBSPOT | HubSpot Inc (US) or HubSpot Ireland Ltd (IE) — check invoice | 05 + 20 or 17/18 + 20 | Depends on billing entity |
+| TWILIO | Twilio Inc (US) | 05 + 20 | Non-EU autoliquidation |
+
+### 3.10 SaaS — the exception (NOT reverse charge)
+
+| Pattern | Treatment | Why |
+|---|---|---|
+| AWS EMEA SARL | EU autoliquidation line 17/18 + 20 (Luxembourg entity) | Standard EU reverse charge applies. If invoice shows French TVA charged, treat as domestic 20%. |
+
+### 3.11 Payment processors
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| STRIPE (monthly subscription) | EU autoliquidation line 17/18 + 20 | Stripe IE entity — separate line item from transaction fees |
+| SUMUP, SQUARE, ZETTLE | Check invoice | If French entity: domestic 20%; if IE/EU entity: autoliquidation |
+
+### 3.12 Professional services (France)
+
+| Pattern | Treatment | Line | Notes |
+|---|---|---|---|
+| EXPERT COMPTABLE, CABINET COMPTABLE | Domestic 20% | 20 | Always deductible |
+| AVOCAT, CABINET D'AVOCATS | Domestic 20% | 20 | Deductible if business legal matter |
+| NOTAIRE (business-related fees) | Domestic 20% | 20 | Notarial fees on business transactions |
+| COMMISSAIRE AUX COMPTES, CAC | Domestic 20% | 20 | Audit fees, always deductible |
+| ARCHITECTE, GEOMETRE | Domestic 20% | 20 | Professional services |
+| CHAMBRE DE COMMERCE, CCI | EXCLUDE | Registration/membership fees, government body |
+| CHAMBRE DES METIERS, CMA | EXCLUDE | Same |
+
+### 3.13 Payroll and social security (exclude entirely)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| URSSAF | EXCLUDE | Social contributions |
+| POLE EMPLOI, FRANCE TRAVAIL | EXCLUDE | Employment agency, social contribution |
+| RETRAITE, CIPAV, CNAV | EXCLUDE | Pension/retirement contributions |
+| SALAIRE, PAIE, VIREMENT SALAIRE | EXCLUDE | Wages — outside VAT scope |
+| MUTUELLE (employee complementary) | EXCLUDE | Social benefit, not VATable |
+
+### 3.14 Property and rent
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| LOYER COMMERCIAL, BAIL COMMERCIAL | Domestic 20% | Commercial lease where landlord opted to charge VAT (option à la TVA) |
+| LOYER, BAIL (residential, no VAT) | EXCLUDE | Residential lease exempt |
+| FONCIER, TAXE FONCIERE | EXCLUDE | Property tax, not a supply |
+| SCI (with TVA invoiced) | Domestic 20% | Commercial property via SCI with TVA option |
+
+### 3.15 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| VIREMENT INTERNE, VIR INTERNE | EXCLUDE | Internal movement |
+| VIREMENT ENTRE COMPTES | EXCLUDE | Own-account transfer |
+| DIVIDENDE | EXCLUDE | Dividend payment, out of scope |
+| REMBOURSEMENT PRET, ECHEANCE | EXCLUDE | Loan repayment, out of scope |
+| RETRAIT DAB, RETRAIT ESPECES | TIER 2 — ask | Default exclude; ask what cash was spent on |
+| APPORT, APPORT PERSONNEL | EXCLUDE | Owner injection |
+
+---
 
 ## Section 4 — Worked examples
 
-The worked examples below use a hypothetical client: **Sophie Laurent, graphic designer in Toulouse (graphiste indépendante), operating as an EURL (entreprise unipersonnelle à responsabilité limitée) under the régime réel normal, SIREN 823456789, Atelier in rue de la Dalbade 15 Toulouse, monthly CA3 filer.** This client does NOT correspond to any test fixture used to validate this skill — the examples are drawn from a fictional profile distinct from the Hamburg UX designer (Germany) and the Milan architect (Italy).
+These are six fully worked classifications drawn from a hypothetical bank statement of a France-based self-employed IT consultant (having opted for TVA / régime réel). They illustrate the trickiest cases.
 
-### Example 1 — The AWS branch exception
+### Example 1 — Non-EU SaaS autoliquidation (Notion)
 
-Bank line: `AWS EMEA SARL SUCCURSALE FRANCE -780.00 EUR "AWS compute charges"`. IBAN on payment: FR.
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
 
-**Wrong treatment:** EU autoliquidation under art. 283-2. This is the default assumption for "AWS EMEA SARL" because the parent entity is Luxembourg.
+**Reasoning:**
+Notion Labs Inc is a US entity (Section 3.9). No VAT on the invoice. This is a service received from a non-EU supplier. The French client must self-assess VAT (autoliquidation) under Art. 283-1 CGI. Output VAT is declared, and simultaneously input VAT is deducted on line 20. Net effect zero for a fully taxable client.
 
-**Right treatment:** Domestic 20% — the "Succursale France" designation and the French IBAN together indicate AWS is billing from its French branch with a French SIREN and French TVA. The invoice will show French TVA charged. Treat as a normal domestic purchase: net 650.00, TVA 130.00 deductible in cadre II (autres biens et services). Post to ligne A1 on the input side — wait, inputs don't go to A1, A1 is for sales. The input side goes in cadre II only; the net taxable amount for a pure input does not appear on the output cadres. Correct CA3 mapping: net is implicit, TVA déductible 130.00 in cadre II "autres biens et services."
+**Output:**
 
-**Reviewer note:** confirm by inspecting the actual AWS invoice. The bank statement alone is not sufficient to confirm branch billing.
+| Date | Counterparty | Gross | Net | VAT | Rate | Line (input) | Line (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 2.94 | 20% | 20 | 05 | N | — | — |
 
-### Example 2 — The passenger vehicle full block (stricter than Germany and Italy)
+### Example 2 — EU service, autoliquidation (Google Ads)
 
-Bank line: `TOTAL ENERGIES STATION TOULOUSE -95.00 EUR`. Sophie's EURL owns a passenger car (véhicule de tourisme) used mostly for client visits in the Toulouse metro area.
+**Input line:**
+`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
 
-**Germany/Italy approach:** partial cap (Germany 50% default, Italy 40%). You might expect a similar partial deduction in France.
+**Reasoning:**
+Google Ireland Limited is an IE entity — standard EU autoliquidation. Google Ads is a service. Output VAT on line 17 or 18 (EU acquisitions), input VAT on line 20. Both sides must appear on the return. Net effect zero for a fully taxable client.
 
-**Right French treatment:** This is **fuel** for a passenger vehicle, which is governed by art. 298 4° CGI — **80% of the TVA on fuel is deductible** regardless of vehicle category (since 2022, diesel and gasoline are equalized).
+**Output:**
 
-- Gross: €95.00
-- Net: 95 / 1.20 = €79.17
-- Full input TVA at 20%: €15.83
-- Recoverable at 80%: €12.67
+| Date | Counterparty | Gross | Net | VAT | Rate | Line (input) | Line (output) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 170.00 | 20% | 20 | 17/18 | N | — | — |
 
-For cadre II: €12.67. For the blocked portion (€3.17): disclose in the brief.
+### Example 3 — Entertainment, partially recoverable in France
 
-**Note on vehicle itself:** if the same bank statement showed a line for the vehicle's purchase, lease, repair, or insurance, that would be **entirely blocked** under art. 206 IV Annexe II CGI — input TVA on passenger vehicles themselves is 100% non-deductible, which is stricter than Germany's and Italy's partial caps. Only fuel has the 80% rule. This distinction is important: fuel is 80%, everything else about the passenger car is 0%. If the bank line says "CARROSSERIE MARTIN -450 EUR repair péage voiture" the right treatment is fully blocked, not 80%.
+**Input line:**
+`15.04.2026 ; BRASSERIE LIPP PARIS ; DEBIT ; Business dinner ; -220.00 ; EUR`
 
-### Example 3 — Hotel at 10% intermediate rate
+**Reasoning:**
+Restaurant transaction. Unlike Malta, France does NOT have a hard block on business entertainment. Business meals (repas d'affaires) are deductible at 20% if justified by a business purpose and documented with attendee names. However, personal meals and unjustified entertaining are blocked. Default: block, flag for reviewer. If confirmed as justified business entertainment with documentation → deductible at 20%.
 
-Bank line: `HOTEL DU CAPITOLE TOULOUSE -156.00 EUR "nuitée conférence web design"`.
+**Output:**
 
-**Treatment:** French hotels are at the 10% intermediate rate (art. 279 a bis CGI), not the standard 20%.
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | BRASSERIE LIPP PARIS | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Restaurant: confirm business purpose and attendees for deduction" |
 
-- Gross: €156.00
-- Net: 156 / 1.10 = €141.82
-- TVA at 10%: €14.18 — fully recoverable in cadre II "autres biens et services" because the description "nuitée conférence web design" establishes business purpose
+### Example 4 — Capital goods (immobilisation)
 
-If you default to 20% by mistake (as you would for Germany), you would compute TVA as 156/1.20 = 130, TVA 26.00 — that's €11.82 of TVA that doesn't exist. The CA3 would overstate input TVA by €11.82 and the return would be rejected on audit reconciliation against the hotel's own CA3.
+**Input line:**
+`18.04.2026 ; DELL FRANCE SAS ; DEBIT ; Invoice DEL2026-0041 Laptop XPS 15 ; -1,595.00 ; EUR`
 
-The 10% rate for hotels is not a small-cash-impact quirk — it materially changes the recoverable TVA on any business trip line and it must be applied correctly.
+**Reasoning:**
+The gross amount is €1,595. In France, assets with a unit value exceeding €500 HT (net of VAT) are typically capitalised as immobilisations. €1,595 TTC / 1.20 = €1,329.17 HT > €500. This is a capital goods purchase. Input VAT goes to line 19 (TVA déductible sur immobilisations), not line 20.
 
-### Example 4 — Stripe platform fees (the payment processor pattern)
+**Output:**
 
-Bank line: `STRIPE PAYMENTS EUROPE -47.30 EUR "Stripe fee April 2026"`. IBAN: IE.
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | DELL FRANCE SAS | -1,595.00 | -1,329.17 | -265.83 | 20% | 19 | N | — | — |
 
-**What's happening.** Sophie uses Stripe to accept payments from her clients. Her clients pay via Stripe, Stripe takes a 2.9% + €0.25 fee per transaction, and transfers the net to Sophie's account. The fee that Stripe charges for this service is a B2B service from an Irish supplier to a French business — it qualifies for EU autoliquidation under art. 283-2 CGI.
+### Example 5 — EU B2B service sale (inbound receipt)
 
-**Treatment of the Stripe fee line:**
-- Net: €47.30 (the fee is stated net of TVA because Stripe does not charge French TVA on a B2B EU service)
-- Self-assessed output TVA at 20%: €9.46 in ligne A2
-- Input TVA deduction at 20%: €9.46 in cadre II
-- Net cash effect on the CA3: zero
+**Input line:**
+`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice FR-2026-018 IT consultancy March ; +3,500.00 ; EUR`
 
-**Common misclassification:** treating the Stripe fee as a "bank fee" (exempt art. 261 C) because Stripe is a financial services company. This is wrong — the Stripe platform fee is consideration for an electronic service, not for banking or payment-initiation services in the art. 261 C sense. BOFiP guidance on this has evolved, but the current DGFiP position is that payment service platform fees from non-French EU providers are subject to reverse charge, not to the banking exemption. Reviewer should confirm for the specific period.
+**Reasoning:**
+Incoming €3,500 from a German company (DE IBAN). The client is providing IT consulting services. B2B place of supply for services is the customer's country (Germany) under the general rule (Art. 259-1 CGI / Art. 44 VAT Directive). The client invoices at 0% with mention "Autoliquidation — Art. 283-2 du CGI / Art. 196 Directive 2006/112/CE". Report on line 06A (services intracommunautaires). No output VAT. Confirm: (a) customer is VAT-registered — verify German USt-IdNr on VIES; (b) the invoice carries the correct reverse-charge mention.
 
-**Separate question:** the actual money flows from clients through Stripe to Sophie are NOT VAT events on their own. The VAT is on Sophie's invoices to her clients (output TVA on each invoice) and on Stripe's fees (reverse charge as above). The bank line showing "STRIPE PAYMENTS EUROPE +4,500.00 EUR" when a client payment arrives is a transfer, not a sale — the underlying sale is the invoice Sophie issued, which is the VAT event. Make sure the classification separates these correctly.
+**Output:**
 
-### Example 5 — Business meal (frais de réception)
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | 06A | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
 
-Bank line: `RESTAURANT MICHEL SARRAN TOULOUSE -284.00 EUR "déjeuner client Airbus"`.
+### Example 6 — Motor vehicle, blocked for VP
 
-**Treatment:** the description "déjeuner client Airbus" establishes business purpose. French frais de réception are deductible if "engagés dans l'intérêt direct de l'exploitation" and properly documented (BOFiP-TVA-DED-30-30-30). Unlike Germany's formal Bewirtungsbeleg requirement, France has less prescriptive documentation, but the burden of proof is on the taxpayer.
+**Input line:**
+`28.04.2026 ; ARVAL FRANCE ; DEBIT ; Lease payment Peugeot 3008 ; -650.00 ; EUR`
 
-- Gross: €284.00
-- Split: food at 10%, wine at 20% — restaurants typically issue a split invoice. Without the invoice in hand, default to the conservative treatment: assume 100% at the higher 20% rate, which underestimates the recoverable TVA and is the conservative direction.
-- Conservative computation: net 236.67, TVA 47.33, fully deductible
-- Realistic computation (with invoice): the food portion (say €220) at 10% = TVA €20.00, the wine (say €64) at 20% = TVA €10.67, total TVA €30.67
+**Reasoning:**
+Car lease payment. In France, input VAT on passenger vehicle (VP — véhicule de tourisme) leases is NOT deductible for most businesses (Art. 206-IV Annexe II CGI). Exceptions: taxis, driving schools, car rental businesses, commercial vehicles (VU — véhicule utilitaire). For an IT consultant leasing a passenger car, VAT is blocked. Note: diesel/petrol fuel for VP is 80% deductible; electric vehicle charging is 100% deductible.
 
-The conservative approach recovers more TVA than the realistic approach because it assumes the higher rate across the whole amount. This is *anti-conservative* for the tax authority — we are overstating deduction. The correct conservative default is the **lower** TVA amount, which means assuming food at 10% across the whole gross, yielding TVA of €25.82. Block this at zero until the invoice is provided and then the user can compute the actual split.
+**Output:**
 
-**Reviewer brief entry:** flag this as a Tier 2 question — the invoice needs to be inspected to split food from alcohol at 10% vs 20%. Cash swing on this single line is roughly €5-20 depending on alcohol proportion.
+| Date | Counterparty | Gross | Net | VAT | Rate | Line | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | ARVAL FRANCE | -650.00 | -650.00 | 0 | — | — | Y | Q3 | "Véhicule de tourisme: VAT blocked. Is this a VU (commercial vehicle)?" |
 
-### Example 6 — CCI annual contribution
+---
 
-Bank line: `CCI HAUTE GARONNE -120.00 EUR "cotisation annuelle 2026"`.
+## Section 5 — Tier 1 classification rules (compressed)
 
-**Wrong treatment:** Assume an invoice was issued with 20% TVA and claim €20 input TVA.
+Each rule states the legal source and the line mapping. Apply silently if the data is unambiguous.
 
-**Right treatment:** Excluded. The Chambre de Commerce et d'Industrie (CCI Haute-Garonne in this case, for Toulouse) is a public-law body (établissement public administratif) and the cotisation annuelle is a statutory contribution, NOT consideration for a taxable supply. No TVA is charged. There is no input TVA to recover. Mark the line as excluded with reason "CCI statutory contribution, outside VAT scope."
+### 5.1 Standard rate 20% (Art. 278 CGI)
 
-**This is the French equivalent of the German IHK zero-VAT rule and the Italian Camera di Commercio rule.** The same class of error (hallucinated input VAT on a statutory contribution) is the single highest-risk attention failure in all three countries. Do not let it past.
+Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales → line 01 / line 08. Purchases → line 20 (ABS) or line 19 (immobilisations).
 
-## Section 5 — Tier 1 deterministic rules (compressed)
+### 5.2 Reduced rate 10% (Art. 278 bis, 279 CGI)
 
-These are the rules applied silently by the classifier when the data unambiguously resolves the treatment.
+Applies to: restaurant meals (food and non-alcoholic drinks on-premises), passenger transport, renovation works on residential buildings (over 2 years old), hotels and holiday accommodation, prepared food for immediate consumption. Sales → line 03 / line 09B. Purchases → line 20.
 
-**5.1 — Domestic B2B sale to a French SIREN customer.** 20% standard, or reduced rate per CGI if the goods/services qualify. Report in cadre I at the appropriate rate and ligne A1.
+### 5.3 Reduced rate 5.5% (Art. 278-0 bis CGI)
 
-**5.2 — Domestic B2C sale.** Same rates. Same reporting. Different invoice requirements (simplified invoice allowed below threshold).
+Applies to: food staples (not prepared/on-premises), books (printed and digital since 2012), theatre and live performances, energy renovation works (insulation, heating upgrades), water supply. Sales → line 02 / line 09. Purchases → line 20.
 
-**5.3 — Intra-Community supply of goods to an EU VAT-registered customer.** Exempt under art. 262 ter I CGI (directive art. 138). Report in ligne B1 with no output VAT. Triggers ESL (État Récapitulatif des Clients for services, or equivalent for goods via EMEBI). Conditions: customer VAT verified on VIES, goods physically transported out of France, proof of transport retained, invoice shows both numéros de TVA intracommunautaire and the "Exonération TVA, art. 262 ter I du CGI" note. If any condition fails, reclassify as domestic 20%.
+### 5.4 Super-reduced rate 2.1% (Art. 281 quater to 281 nonies CGI)
 
-**5.4 — B2B service to a VAT-registered EU customer.** Exempt / non-taxable in France under art. 259-1° CGI (directive art. 44). Place of supply is the customer's country. Report in ligne B3. Triggers ESL.
+Applies to: press publications (print and online since 2014), certain reimbursable medicines (Sécurité Sociale list), first showings of films and theatrical performances under certain conditions. Sales → line 04 / line 09C. Very narrow — default to 20% if uncertain.
 
-**5.5 — B2B service to a non-EU customer.** Non-taxable in France under art. 259-1° CGI. Report in ligne B3 (exempt operations). No ESL for non-EU recipients.
+### 5.5 Zero rate and exempt with credit
 
-**5.6 — Purchase from EU supplier (goods).** Acquisition intracommunautaire under art. 256 bis CGI. Self-assess 20% output TVA in ligne A3 and claim 20% input TVA in cadre II (net cash zero unless partial exemption or blocked input). Requires invoice from EU supplier with both numéros de TVA intracommunautaire.
+Exports outside EU → line 07 (zero-rated, requires export evidence / DAU). Intra-EU B2B supplies of goods → line 06 (zero-rated, requires customer VAT number verified on VIES, transport proof, compliant invoice with mention obligatoire). Intra-EU B2B services → line 06A (place of supply is customer's country, no French VAT, requires customer VAT number and reverse-charge mention).
 
-**5.7 — Purchase of services from EU supplier (reverse charge — autoliquidation).** Under art. 283-2 CGI and art. 44 of the directive. Self-assess 20% in ligne A2, claim 20% in cadre II. Net zero. The Irish/Luxembourg SaaS stack (Google, Microsoft, Adobe, Slack, Dropbox, etc.) is the dominant case.
+### 5.6 Exempt without credit (Art. 261 CGI)
 
-**5.8 — Purchase from non-EU supplier (services).** Reverse charge under art. 283-2 CGI. Same mechanics as EU reverse charge — self-assess 20% in ligne A2, claim 20% in cadre II, net zero. Zoom, Fiverr, US-based consultants, Anthropic business tier all fall here.
+Medical and paramedical services, education and training (under certain conditions), insurance, financial services, residential rent, certain cultural and sporting activities. These are excluded from the VAT return — no output VAT, no input VAT deduction on related costs. If significant, partial exemption rules apply — **R-FR-2 refuses** if non-de-minimis.
 
-**5.9 — Import of goods from outside the EU.** **Mandatory autoliquidation under art. 1695 II CGI since 1 January 2022** — report import TVA in ligne A2 and deduct in cadre II. NO cash payment at the border for the TVA itself. The amounts must be reconciled against the DGDDI monthly data file. See R-FR-11 — this skill does not handle imports without the DGDDI export.
+### 5.7 Local standard purchases
 
-**5.10 — Exempt-without-credit supplies.** Sales of banking / insurance / medical / educational services are exempt under art. 261 CGI. If the business makes any exempt supplies above de minimis, fire R-FR-5 (partial exemption / prorata).
+Input VAT on a compliant facture from a French supplier is deductible for purchases used in taxable business activity. Subject to blocked-input rules (5.12) and the capital goods rules (5.9). Map overhead to line 20. Map capital goods to line 19.
 
-**5.11 — Passenger vehicle expenses.** Blocked under art. 206 IV Annexe II CGI — 0% deductible on purchase, lease, repair, insurance, maintenance. **Exception: fuel at 80%** under art. 298 4° CGI. Commercial vehicles: 100% if used for business.
+### 5.8 Autoliquidation — EU services received (Art. 283-2 CGI)
 
-**5.12 — Business gifts above €73 per recipient per year (2025 threshold, revalued annually).** Blocked under art. 206 IV-2-3° Annexe II CGI. Below €73: deductible.
+When the client receives a service from an EU supplier and the supplier invoices at 0% with a reverse-charge note: output VAT on line 17 or 18, input VAT on line 20. Net effect zero for a fully taxable client. If the EU supplier charged their local VAT (e.g. Irish 23%), that is NOT autoliquidation — treat as an expense with irrecoverable foreign VAT.
 
-**5.13 — Frais de réception (business meals).** Deductible if business purpose is documented ("intérêt direct de l'exploitation"). Default blocked pending documentation.
+### 5.9 Autoliquidation — EU goods received (acquisitions intracommunautaires)
 
-**5.14 — Standard rate applies by default.** If the rate is not explicitly identified in the supplier pattern library or the description, assume 20% (art. 278 CGI — taux normal as the residual rule).
+Physical goods from an EU supplier: output VAT on line 17 (line 04B for the base), input VAT on line 20 or 19 (if immobilisation).
 
-## Section 6 — France-specific Tier 2 ambiguity catalogue
+### 5.10 Autoliquidation — non-EU services and imports
 
-Applied after the EU-wide T2-EU catalogue in `eu-vat-directive` Section 12.
+For services received from outside the EU where no VAT was charged: output VAT and input VAT both self-assessed. Since 1 January 2022, import VAT on goods is also auto-liquidated on the CA3 (line 05 for base, line 20/19 for input deduction) — no more paying VAT at customs.
 
-**T2-FR-1 — Restaurant alcohol split.** *Pattern:* restaurant bill where food (10%) and alcohol (20%) are likely mixed. *Why:* bank line doesn't split. *Question:* "Does your invoice split food from alcoholic beverages?" *Default:* blocked pending invoice.
+### 5.11 Capital goods (immobilisations)
 
-**T2-FR-2 — Passenger vehicle vs commercial vehicle.** *Pattern:* fuel or vehicle expense on an unspecified vehicle. *Why:* bank line doesn't distinguish véhicule de tourisme from véhicule utilitaire. *Question:* "Is the vehicle a passenger car (véhicule de tourisme — fuel 80% / vehicle itself 0%) or a commercial vehicle (véhicule utilitaire — 100%)?" *Default:* passenger car.
+If net (HT) value > €500: line 19 for input VAT. If net ≤ €500: line 20 as current expenditure. Capital goods may be subject to regularisation over 5 years (movable property) or 20 years (immovable property) if use changes.
 
-**T2-FR-3 — Electricity/gas rate change (post-1 August 2025).** *Pattern:* EDF or ENGIE line that may straddle the 1 August 2025 rate change. *Why:* invoices spanning the cutover may apply different rates to the subscription component vs consumption. *Question:* "For the period before 1 August 2025, apply 5.5% on subscription; after, 20%. Is your invoice period entirely after 1 August 2025?" *Default:* assume entirely after (simplest case) unless evidence otherwise.
+### 5.12 Blocked input VAT (Art. 206 Annexe II CGI and related)
 
-**T2-FR-4 — E-invoicing readiness.** *Pattern:* the current date is approaching or past the user's applicable e-invoicing deadline (1 September 2026 for receive-all / large-issue, 1 September 2027 for SME-issue). *Why:* compliance status is not on the bank statement. *Question:* "Are you set up with a Plateforme Agréée (PA) accredited by the DGFiP for e-invoicing?" *Default:* if user is an SME and date is before September 2027, note in brief but do not refuse; if after, fire R-FR-4.
+The following categories have restricted or zero VAT recovery:
+- Passenger vehicles (véhicules de tourisme): purchase, lease, maintenance — blocked. Exceptions: taxis, driving schools, car rental, funeral vehicles. Commercial vehicles (VU) fully deductible.
+- Fuel: diesel/petrol for VP 80% deductible; GPL/electricity 100% deductible; diesel/petrol for VU 100% deductible.
+- Accommodation (hébergement): hotel stays for staff are NOT deductible. Hotel stays paid for clients/third parties ARE deductible.
+- Gifts and cadeaux d'affaires: blocked if unit value > €73 TTC per beneficiary per year. Below threshold: deductible.
+- Personal use items: not deductible.
+- **Business meals (repas d'affaires) ARE deductible at 20% with proper justification** (names of attendees, business purpose). This is a key France-specific difference from Malta and other jurisdictions with hard entertainment blocks.
 
-**T2-FR-5 — TVA sur les encaissements vs débits.** *Pattern:* service provider. *Why:* default basis for services is TVA sur les encaissements (cash receipt), not TVA sur les débits. *Question:* "For your services, are you on TVA sur les encaissements (default, TVA due at payment) or have you opted for TVA sur les débits (TVA due at invoice issue)?" *Default:* encaissements for services, débits for goods.
+### 5.13 Régime réel simplifié (CA12)
 
-**T2-FR-6 — ESL / EMEBI obligations.** *Pattern:* intra-Community supplies or acquisitions in the period. *Why:* whether the user is already filing ESL and EMEBI is not on the bank statement. *Question:* "Do you already file the TVA Etat Récapitulatif (ESL) and the EMEBI statistical declaration for your cross-border EU flows?" *Default:* flag in brief; do not refuse.
+CA12 clients file annually and pay two advance payments (acomptes) in July and December. The annual CA12 has similar structure to the CA3 but covers the full year. This skill can prepare CA12 data — accumulate monthly/quarterly totals into annual figures.
 
-**T2-FR-7 — Corsica or DOM-TOM operations.** *Pattern:* Corsican or overseas supplier/customer. *Why:* Corsica and DOM have specific rates. *Question:* confirms geographic scope. *Default:* if confirmed, fire R-FR-14.
+### 5.14 Sales — local domestic (any rate)
 
-## Section 7 — Excel working paper template (France-specific overlay)
+Charge 20%, 10%, 5.5%, or 2.1% as applicable. Map to line 01/02/03/04 as appropriate.
+
+### 5.15 Sales — cross-border B2C
+
+Goods to EU consumers above €10,000 EU-wide threshold → **R-EU-5 (OSS refusal) from eu-vat-directive fires**. Digital services to EU consumers above €10,000 → same. Below threshold → French VAT at applicable rate.
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Fuel and vehicle costs
+
+*Pattern:* TOTAL, SHELL, BP, ESSO, AVIA, fuel receipts. *Why insufficient:* vehicle type (VP vs VU) determines deductibility. *Default:* 0% recovery. *Question:* "Is this a passenger vehicle (VP — blocked) or a commercial vehicle (VU — deductible)? Diesel/petrol for VP is 80% deductible for fuel only."
+
+### 6.2 Restaurants and entertainment
+
+*Pattern:* any named restaurant, brasserie, café, traiteur. *Why insufficient:* France allows deduction of business meals with proper justification, but personal meals are blocked. *Default:* block. *Question:* "Was this a justified business meal (repas d'affaires) with external guests? If yes, provide attendee names for the file."
+
+### 6.3 Ambiguous SaaS billing entities
+
+*Pattern:* Google, Microsoft, Adobe, Meta, Slack, Zoom, LinkedIn, Apple, Amazon, Dropbox, Atlassian, Stripe, PayPal. *Why insufficient:* same brand can bill from Ireland (EU autoliquidation), US (non-EU autoliquidation), or France (domestic 20%). *Default:* non-EU autoliquidation line 05 + 20. *Question:* "Could you check the invoice? I need the legal entity name and country."
+
+### 6.4 Round-number incoming transfers from owner-named counterparties
+
+*Pattern:* large round credit from a name matching the client's name. *Default:* exclude as owner injection (apport personnel). *Question:* "The €X transfer from [name] — is this a customer payment, your own money going in, or a loan?"
+
+### 6.5 Incoming transfers from individual names (not owner)
+
+*Pattern:* incoming from private-looking counterparties. *Default:* domestic B2C sale at 20%, line 01/08. *Question:* "For each: was it a sale? Business or consumer customer? Country?"
+
+### 6.6 Incoming transfers from foreign counterparties
+
+*Pattern:* foreign IBAN or foreign currency. *Default:* domestic 20%. *Question:* "What was this — B2B with a VAT number, B2C, goods or services, and which country?"
+
+### 6.7 Large one-off purchases (potential immobilisations)
+
+*Pattern:* single invoice near €500 HT threshold, or labelled "laptop", "equipment", "machinery". *Default:* if HT > €500 → line 19; if HT ≤ €500 → line 20. *Question:* "Could you confirm the total invoice amount including VAT?"
+
+### 6.8 Mixed-use phone, internet, home office
+
+*Pattern:* Orange, Free, SFR personal lines; home electricity. *Default:* 0% if mixed without declared %. *Question:* "Is this a dedicated business line or mixed-use? What business percentage?"
+
+### 6.9 Outgoing transfers to individuals
+
+*Pattern:* outgoing to private-looking names. *Default:* exclude as drawings. *Question:* "Was this a contractor payment with an invoice, wages, a refund, or a personal transfer?"
+
+### 6.10 Cash withdrawals
+
+*Pattern:* DAB, retrait espèces, retrait guichet. *Default:* exclude as owner drawing. *Question:* "What was the cash used for?"
+
+### 6.11 Rent payments
+
+*Pattern:* loyer, bail, monthly to a landlord-sounding counterparty. *Default:* no VAT (residential default). *Question:* "Is this a commercial property where the landlord has exercised the option for TVA?"
+
+### 6.12 Foreign hotel and accommodation
+
+*Pattern:* hotel or accommodation charged abroad. *Default:* exclude from input VAT (French VAT not recoverable on foreign hotel). *Question:* "Was this a business trip?" (For income tax records, still deductible.)
+
+### 6.13 Airbnb income
+
+*Pattern:* Airbnb payouts. *Default:* [T2] flag for reviewer. *Question:* "Is this furnished rental (LMNP/LMP)? Duration? Tourist accommodation at 10%?"
+
+### 6.14 Subcontractor reverse charge (construction)
+
+*Pattern:* payments to construction subcontractors. *Why insufficient:* since 2014, construction subcontracting in France triggers a domestic reverse charge (autoliquidation Art. 283-2 nonies CGI). The subcontractor invoices without VAT and the main contractor self-assesses. *Default:* [T2] flag for reviewer. *Question:* "Is this a construction subcontractor subject to domestic autoliquidation?"
+
+### 6.15 Platform sales (Amazon, eBay, Etsy)
+
+*Pattern:* incoming from Amazon Payments EU, Etsy Payments, PayPal, Stripe. *Default:* if client sells to EU consumers across multiple countries above €10,000, R-EU-5 OSS refusal fires. For France-only or below-threshold: treat gross as line 01 base at 20%; platform fees as separate EU autoliquidation. *Question:* "Do you sell to buyers outside France? Total EU cross-border sales for the year?"
+
+---
+
+## Section 7 — Excel working paper template (France-specific)
 
 The base specification is in `vat-workflow-base` Section 3. This section provides the France-specific overlay.
 
-**Sheet 1 — "Transactions".** 12 columns: Date, Counterparty, Description, Gross (EUR), Net (EUR), TVA (EUR), Rate, CA3 ligne, Treatment, Default? (Y/N), Q-Ref, Excluded reason.
+### Sheet "Transactions"
 
-**Sheet 2 — "CA3 Summary".** Aggregates by CA3 ligne:
+Columns A–L per the base. Column H ("Line code") accepts only valid CA3 line codes from Section 1 of this skill. Use blank for excluded transactions. For autoliquidation transactions, enter both the input line and output line separated by a slash in column H.
 
-| Ligne | Description | Formula |
-|---|---|---|
-| A1-20% | Ventes France 20% | `=SUMIFS(Transactions!E:E,Transactions!H:H,"A1",Transactions!G:G,0.20)` |
-| A1-10% | Ventes France 10% | `=SUMIFS(Transactions!E:E,Transactions!H:H,"A1",Transactions!G:G,0.10)` |
-| A1-5.5% | Ventes France 5.5% | `=SUMIFS(Transactions!E:E,Transactions!H:H,"A1",Transactions!G:G,0.055)` |
-| A2 | Autres opérations imposables (autoliquidation) | `=SUMIFS(Transactions!E:E,Transactions!H:H,"A2")` |
-| A3 | Acquisitions intracommunautaires | `=SUMIFS(Transactions!E:E,Transactions!H:H,"A3")` |
-| B1 | Livraisons intracommunautaires | `=SUMIFS(Transactions!E:E,Transactions!H:H,"B1")` |
-| B2 | Exportations hors UE | `=SUMIFS(Transactions!E:E,Transactions!H:H,"B2")` |
-| B3 | Services intra-UE et non-UE | `=SUMIFS(Transactions!E:E,Transactions!H:H,"B3")` |
-| TVA collectée | Output VAT total | `=SUMIFS(Transactions!F:F,Transactions!I:I,"output")` |
-| TVA déductible immobilisations | Input VAT on fixed assets | `=SUMIFS(Transactions!F:F,Transactions!I:I,"input-immo")` |
-| TVA déductible autres | Input VAT other | `=SUMIFS(Transactions!F:F,Transactions!I:I,"input-autres")` |
-| Ligne 16 | TVA nette due | `=TVA collectée - TVA déductible immobilisations - TVA déductible autres` |
+### Sheet "Line Summary"
 
-**Sheet 3 — "Return Form".** Lays out the CA3 cadres with the final values.
+One row per line. Column A is the line number, column B is the description, column C is the value computed via formula. Mandatory rows:
 
-**Color conventions:** yellow highlight on every row with Default? = Y.
+```
+Output:
+| 01 | Sales 20% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "01") |
+| 02 | Sales 5.5% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "02") |
+| 03 | Sales 10% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "03") |
+| 06 | Intra-EU B2B goods (0%) | =SUMIFS(Transactions!E:E, Transactions!H:H, "06") |
+| 06A| Intra-EU B2B services (0%) | =SUMIFS(Transactions!E:E, Transactions!H:H, "06A") |
+| 07 | Exports (0%) | =SUMIFS(Transactions!E:E, Transactions!H:H, "07") |
+| 08 | Output VAT 20% | =C[01_row]*0.20 |
+| 09 | Output VAT 5.5% | =C[02_row]*0.055 |
+| 09B| Output VAT 10% | =C[03_row]*0.10 |
+| 10 | Total output VAT | =SUM(08,09,09B) |
 
-**Mandatory recalc step:** `python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/france-vat-<period>-working-paper.xlsx`. Verify `status: success, total_errors: 0`.
+Autoliquidation:
+| 04B| Intra-EU acquisitions net | =SUMIFS(Transactions!E:E, Transactions!H:H, "04B") |
+| 05 | Non-EU imports/services net | =SUMIFS(Transactions!E:E, Transactions!H:H, "05") |
+| 17 | Output VAT EU acquisitions | =C[04B_row]*0.20 |
+| 18 | Output VAT EU services | (separate if needed) |
+
+Input:
+| 19 | Input VAT immobilisations | =SUMIFS(Transactions!F:F, ..., "19") |
+| 20 | Input VAT ABS (other goods/services) | =SUMIFS(Transactions!F:F, ..., "20") |
+| 22 | Credit carried forward | (manual entry) |
+| 23 | Total deductible VAT | =SUM(19,20,21,22) |
+
+Bottom line:
+| 25 | Net VAT due | =MAX(0, C[10]+C[17]+C[18]-C[23]) |
+| 24 | Credit de TVA | =MAX(0, C[23]-C[10]-C[17]-C[18]) |
+| 28 | VAT payable | =C[25] |
+```
+
+### Sheet "Return Form"
+
+Final CA3-ready figures.
+
+```
+IF line 23 > (line 10 + line 17 + line 18):
+  Line 24 = credit de TVA
+  Line 25 = 0
+ELSE:
+  Line 24 = 0
+  Line 25 = net VAT due
+  Line 28 = Line 25 (minus any adjustments)
+```
+
+### Color and formatting conventions
+
+Per the xlsx skill: blue for hardcoded values, black for formulas, green for cross-sheet references, yellow background for any row where Default? = "Y".
+
+### Mandatory recalc step
+
+After building the workbook, run:
+
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/france-vat-<period>-working-paper.xlsx
+```
+
+---
 
 ## Section 8 — French bank statement reading guide
 
-Follow the universal exclusion rules in `vat-workflow-base` Section 1 Step 6, plus these France-specific patterns.
+Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these France-specific patterns.
 
-**CSV format conventions.** French business banks export in varied formats. Common columns: Date opération, Date valeur, Libellé, Débit, Crédit, Solde, Référence. Date format: DD/MM/YYYY. Decimal separator: comma (1 234,56 EUR). Thousand separator: space (not comma, not period). Currency: EUR.
+**CSV format conventions.** French banks typically export in CSV with semicolon delimiters and DD/MM/YYYY dates. Common columns: Date, Libellé (description), Débit, Crédit, Solde. Qonto and Revolut use ISO dates. BNP and SG exports may include operation codes (VIR = virement, CB = carte bancaire, CHQ = chèque, REM = remise, PRLV = prélèvement).
 
-**Common French bank description codes:**
-- VIR = virement (wire transfer)
-- PRLV = prélèvement (direct debit)
-- CB = carte bancaire (card payment)
-- RETRAIT DAB = cash withdrawal from ATM
-- REMISE CHEQUE = check deposit
-- AGIOS / INTERETS DEBITEURS = overdraft interest (exempt art. 261 C)
-- COMMISSIONS BANCAIRES = bank fees (exempt art. 261 C)
-- IMPOT / PLF / DGFIP = tax authority payment (excluded)
-- URSSAF = social security contribution (excluded)
-- SALAIRE / PAIE = payroll (excluded as payroll, not a VAT event)
-- CVAE / CFE = corporate tax (excluded)
+**French language variants.** Some descriptions appear in French: loyer (rent), salaire/paie (salary), intérêts (interest), virement (transfer), cotisations (contributions), facture (invoice), remboursement (refund). Treat as the English equivalent.
 
-**Internal transfers and exclusions.** Virement interne between own accounts, retrait DAB, remise chèque, rémunération du dirigeant (gérant EURL), dividendes, apports en compte courant, remboursement d'emprunt principal (interest may be exempt), URSSAF, impôts (IS, CFE, CVAE, DGFiP payments), salaires.
+**Operation code prefixes.** VIR = bank transfer, CB = card payment, PRLV = direct debit (prélèvement), CHQ = cheque, REM = cheque deposit, TIP = interbank payment title. The prefix helps classify — CB payments are typically purchases, VIR CREDIT incoming are typically sales.
 
-**French supplier name abbreviation patterns:**
-- "CRED AGR" / "CAM" / "C AGR" — Crédit Agricole
-- "SG" / "STE GENERALE" — Société Générale
-- "BNPP" — BNP Paribas
-- "CMB" / "CRED MUT" — Crédit Mutuel
-- "ORANGE" / "FR TELECOM" (legacy) — Orange
-- "EDF" — Électricité de France
-- "GDF" / "ENGIE" — Engie
-- "SNCF" — Société Nationale des Chemins de Fer
-- "RATP" — Régie Autonome des Transports Parisiens
+**Internal transfers and exclusions.** Own-account transfers between the client's accounts. Labelled "VIR INTERNE", "virement entre comptes". Always exclude.
 
-**SIREN and SIRET in descriptions.** French bank descriptions sometimes include the counterparty's SIREN (9 digits) or SIRET (14 digits). These are useful for verifying counterparty identity. The first 9 digits of a SIRET are the SIREN; the last 5 are the NIC (numéro interne de classement) identifying the specific établissement.
+**Refunds and reversals.** Identify by "remboursement", "annulation", "avoir", "storno". Book as a negative in the same line as the original transaction.
 
-## Section 9 — Onboarding (fallback only — use after Step 3 of the workflow base)
+**URSSAF and social charges.** Monthly or quarterly URSSAF debits (PRLV URSSAF) are social contributions, not VATable. Always exclude. These can be large amounts — do not confuse with business purchases.
 
-The workflow in `vat-workflow-base` Section 1 mandates inferring the client profile from the data first (Step 3) and only confirming with the user in Step 4. The questions below are a *fallback* — ask only the questions the data could not answer at all.
+**impots.gouv.fr payments.** Tax payments (TVA, IS, IR, CFE) appearing as "DGFIP", "TRESOR PUBLIC", or "IMPOTS.GOUV". Always exclude — these are tax settlements, not supplies.
 
-**Q1. Regime check.** "Are you in the régime réel normal (CA3), régime réel simplifié (CA12), or franchise en base de TVA?" Only régime réel normal is supported by this skill.
+**Foreign currency transactions.** Convert to EUR at the transaction date rate. Use the ECB reference rate or the rate shown on the bank statement.
 
-**Q2. Micro-entrepreneur status.** "Are you operating as a micro-entrepreneur? If yes, have you explicitly opted for TVA?" Default assumption: micro-entrepreneur means franchise en base unless explicitly told otherwise (fires R-FR-3).
+**IBAN country prefix.** FR = France. IE, LU, NL, DE = EU. US, GB, AU, CH = non-EU. A French IBAN does not automatically mean a French VAT registration — always cross-check.
 
-**Q3. Filing frequency.** "Are you on monthly or quarterly CA3 filing?" Monthly is the default; quarterly only if annual TVA due is below €4,000.
+---
 
-**Q4. E-invoicing PA status.** "Are you set up with a Plateforme Agréée (PA) for e-invoicing? If yes, which one?" Context-dependent refusal per R-FR-4.
+## Section 9 — Onboarding fallback (only when inference fails)
 
-**Q5. Partial exemption check.** "Does your business earn any exempt income (interest, insurance commission, medical services, residential rent, educational services)?" If yes, fire R-FR-5.
+### 9.1 Entity type and trading name
+*Inference rule:* sole trader (EI/EIRL) names often match account holder; company names end in "SARL", "SAS", "EURL", "SA". *Fallback:* "Are you a sole trader (EI), EURL, SARL, SAS, or other?"
 
-**Q6. Construction sector check.** "Do you work as a sous-traitant in the BTP sector?" If yes, fire R-FR-10.
+### 9.2 VAT regime
+*Inference rule:* if filing CA3, they are réel normal. If mention of annual filing, réel simplifié. *Fallback:* "Are you under régime réel normal (monthly CA3) or régime réel simplifié (annual CA12)?"
 
-**Q7. Import activity.** "Do you import goods from outside the EU? If yes, do you have access to the DGDDI monthly data file for import TVA reconciliation?" If yes to imports but no to DGDDI data, fire R-FR-11.
+### 9.3 TVA number
+*Inference rule:* FR-format TVA numbers sometimes appear on invoices. *Fallback:* "What is your French TVA number? (FR + 2 digits + SIREN)"
 
-**Q8. Vehicle use.** "Do you have a vehicle used for the business? Is it a véhicule de tourisme (0% deduction except 80% on fuel) or a véhicule utilitaire (up to 100%)?"
+### 9.4 Filing period
+*Inference rule:* first and last transaction dates. *Fallback:* "Which month does this CA3 cover?"
 
-**Q9. Geographic scope.** "Are all your operations in France métropolitaine, or do you have any operations in Corsica or the DOM-TOM?" If yes to Corsica/DOM, fire R-FR-14.
+### 9.5 Industry and sector
+*Inference rule:* counterparty mix, sales descriptions. *Fallback:* "In one sentence, what does the business do?"
 
-**Q10. TVA basis.** "For your services, are you on TVA sur les encaissements or have you opted for TVA sur les débits?" This affects how bank statement data maps to VAT events.
+### 9.6 Employees
+*Inference rule:* URSSAF, PAYE outgoing. *Fallback:* "Do you have employees?"
+
+### 9.7 Exempt supplies
+*Inference rule:* presence of medical/financial/educational/residential rental income. *Fallback:* "Do you make any exempt sales?" *If yes and non-de-minimis → R-FR-2 refuses.*
+
+### 9.8 Credit carried forward
+*Inference rule:* not inferable. Always ask. *Question:* "Do you have a credit de TVA from the prior period? (Line 22)"
+
+### 9.9 Cross-border customers
+*Inference rule:* foreign IBANs on incoming. *Fallback:* "Do you have customers outside France? EU or non-EU? B2B or B2C?"
+
+### 9.10 Construction subcontracting
+*Inference rule:* construction-related counterparties in payments. *Conditional fallback:* "Do you subcontract construction work? (Domestic autoliquidation may apply.)"
+
+---
 
 ## Section 10 — Reference material
 
 ### Validation status
 
-This is v0.1 of `france-vat-return`. Drafted in April 2026 from public sources accessed at draft time, including Légifrance (Code général des impôts articles 256 through 298 sexdecies), the Bulletin officiel des finances publiques (BOFiP), DGFiP guidance on the e-invoicing reform, and various expert-comptable commentary on 2026 rate changes. **Not practitioner-validated.** The supplier pattern library, refusal catalogue, Tier 1 rules, and worked examples are all derived from public sources and should be treated as v0.1 — likely to contain errors that only a French expert-comptable would catch.
-
-### Critical pending updates (CIBS recodification)
-
-**Ordonnance n° 2025-1247 of 17 December 2025** moves VAT legislation from the Code général des impôts (CGI) into a new Code des Impositions sur les Biens et Services (CIBS), effective **1 September 2026**. This v0.1 cites CGI articles throughout because they are still in force as of the draft date. **From 1 September 2026, all article citations in this skill will need wholesale updating to reference the CIBS.** The substantive rules are being transposed, not changed, but the article numbering and code references will all shift. A v0.2 of this skill will need to be issued before or by 1 September 2026 to reflect the recodification. Until then, any CGI citation in this skill should be understood as "the rule in CGI art. X, which will become CIBS art. Y from 1 September 2026."
-
-### E-invoicing rollout — verified state as of April 2026
-
-Based on the February 2026 Finance Bill (PLF 2026), DGFiP guidance, and current BOFiP:
-
-- **1 September 2026:** all French VAT-registered businesses must be able to receive e-invoices via a PA. Large enterprises (grandes entreprises, GE) and intermediate-sized enterprises (entreprises de taille intermédiaire, ETI) must also issue e-invoices from this date. Option to extend to 1 December 2026.
-- **1 September 2027:** SMEs (PME) and micro-enterprises that are TVA-registered must issue e-invoices from this date. Option to extend to 1 December 2027.
-- **Terminology change:** "Plateforme Agréée (PA)" replaces the earlier "Plateforme de Dématérialisation Partenaire (PDP)." The PPF (Portail Public de Facturation) is scaled back to directory and data hub functions — it no longer offers free billing services, so all businesses must use an accredited PA.
-- **Pilot phase:** ran from 24 February 2026 through end of August 2026 with 60,000 businesses voluntarily testing the system.
-
-These dates and rules are as of April 2026 and are subject to change via subsequent Finance Bills or DGFiP guidance. R-FR-4 should be treated as the live refusal mechanism but the specific dates in its conditions may need updating.
-
-### Specific known limitations
-
-1. The CA3 field mapping in Section 7 is simplified relative to the actual CA3 form, which has more granular lignes for specific transaction types. v0.1 covers the common cases.
-2. The ESL (TVA Etat Récapitulatif) and EMEBI (statistical) filings are flagged but not generated. Skill produces only the CA3.
-3. The DGDDI monthly data file reconciliation for import TVA is not implemented; imports trigger R-FR-11.
-4. Franchise en base, régime réel simplifié, micro-entreprise (without TVA option), margin schemes, travel agents, agricultural flat rate, prorata, VAT group, BTP reverse charge, and Corsica/DOM-TOM are all in the refusal catalogue.
-5. Prorata de déduction (partial exemption) is completely out of scope — the French three-coefficient system is not modelled.
-6. TVA sur les encaissements vs débits is flagged as a Tier 2 question but not modelled as a structural difference in the skill.
-7. Rate of 8.5% in the DOM, 13% in Corsica, and various other territorial rates are not supported.
-8. Rate change cutover on 1 August 2025 (electricity/gas subscriptions from 5.5% to 20%) and 1 October 2025 (photovoltaic panels from 10% to 5.5%) are noted as Tier 2 flags but not automatically handled.
+This skill is v2.0, written in April 2026 to align with the three-tier Accora architecture (vat-workflow-base + eu-vat-directive + country skill). The France-specific content (line mappings, rates, thresholds, blocked categories) is based on the Code Général des Impôts and DGFiP guidance.
 
 ### Sources
 
-1. Code général des impôts (CGI): https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069577
-2. Bulletin officiel des finances publiques (BOFiP): https://bofip.impots.gouv.fr
-3. DGFiP e-invoicing portal: https://www.impots.gouv.fr/facturation-electronique
-4. Ordonnance n° 2025-1247 of 17 December 2025 (CIBS recodification): https://www.legifrance.gouv.fr
-5. Loi de finances pour 2026 (PLF 2026, adopted 2 February 2026)
-6. EU Directive 2006/112/EC via `eu-vat-directive` v0.1
-7. Industry commentary: EY France tax alerts, BDO France e-invoicing updates, Pagero compliance portal, Taxually, Vertex, Avalara (as background cross-reference for dates and terminology; primary sources above are authoritative)
+**Primary legislation:**
+1. Code Général des Impôts (CGI) — Articles 256 to 298 (TVA provisions)
+2. Annexe II au CGI — Articles 205 to 242 (deduction rules)
+3. Annexe IV au CGI — specific exemptions
+
+**DGFiP guidance:**
+4. Notice CA3 (formulaire 3310-CA3) and completion notes — https://www.impots.gouv.fr
+5. BOFiP-Impôts — Bulletin Officiel des Finances Publiques (TVA section)
+6. DGFiP guidance on autoliquidation (intra-EU and non-EU services)
+
+**EU directive (loaded via companion skill):**
+7. Council Directive 2006/112/EC — implemented via eu-vat-directive companion skill
+8. Council Implementing Regulation 282/2011
+
+**Other:**
+9. VIES validation — https://ec.europa.eu/taxation_customs/vies/
+10. ECB euro reference rates — https://www.ecb.europa.eu/stats/eurofxref/
+
+### Known gaps
+
+1. The supplier pattern library covers common French and international counterparties but not every local SME.
+2. DOM-TOM specific rates (8.5%, 2.1%, 1.75%) are not covered — R-FR-7 refuses.
+3. Construction subcontracting domestic reverse charge (Art. 283-2 nonies) is flagged T2 only.
+4. The capital goods threshold (€500 HT) is the standard accounting threshold — verify with current guidance.
+5. Red flag thresholds are conservative starting values.
+6. Business meals deductibility (unlike Malta's hard block) requires documentation — the skill flags but cannot verify attendee lists.
+7. Fuel deduction percentages (80% for VP diesel/petrol) are 2025/2026 values — verify annually.
 
 ### Change log
 
-- **v0.1 (April 2026):** Initial draft following the germany-vat-return v0.3.1 and italy-vat-return v0.1 architecture. Three-tier model: loads on top of vat-workflow-base v0.2.0 and eu-vat-directive v0.1. Covers régime réel normal monthly/quarterly CA3 only. Fourteen R-FR refusals including the phased e-invoicing mandate (R-FR-4) with date-dependent handling. Supplier pattern library has roughly 55 entries across 16 sub-categories. Six worked examples from a hypothetical Toulouse graphic designer (Sophie Laurent). Not practitioner-validated. Drafted after live web search of current French e-invoicing state and 2026 TVA rates to avoid training-data staleness; sources accessed April 2026. CIBS recodification flagged as a known pending update (1 September 2026).
+- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure. 10 sections. Supplier pattern library with French banks, utilities, government, SaaS, transport, food, professional services. Six worked examples. Tier 1 and Tier 2 catalogues. Excel template. Bank statement reading guide. Onboarding fallback.
+- **v1.0:** Initial skill, standalone monolithic document.
 
-### Self-check (v0.1 of this document)
+### Self-check (v2.0)
 
-1. Quick reference at top: yes (Section 1).
-2. Refusal catalogue distinct from EU-wide: yes (14 R-FR refusals in Section 2, on top of R-EU-1 through R-EU-12).
-3. Supplier library as literal lookup table: yes (Section 3, 16 sub-tables).
-4. Worked examples drawn from a hypothetical non-test client distinct from Germany/Italy: yes (Toulouse graphic designer Sophie Laurent, Section 4 — distinct from Hamburg UX designer and Milan architect).
-5. Tier 1 rules compressed: yes (Section 5, fourteen rules).
-6. Tier 2 catalogue distinct from EU-wide: yes (seven T2-FR entries in Section 6).
-7. Excel template specification with mandatory recalc: yes (Section 7).
-8. French bank statement reading guide: yes (Section 8).
-9. Onboarding as fallback only: yes (Section 9, ten questions).
-10. Reference material at bottom with validation status: yes (Section 10).
-11. AWS branch exception explicit: yes (Section 3.13 and Example 1).
-12. Apple consumer trap explicit: yes (Section 3.14).
-13. CCI zero-VAT explicit: yes (Section 3.5 and Example 6).
-14. Passenger vehicle 0% + 80% fuel rule explicit: yes (Section 3.11, Section 5.11, and Example 2).
-15. Hotel 10% rate explicit: yes (Section 3.9 and Example 3).
-16. Stripe platform fee pattern explicit: yes (Section 4 Example 4).
-17. E-invoicing phased rollout with date-dependent refusal: yes (R-FR-4 in Section 2).
-18. CIBS recodification flagged: yes (Section 10).
+1. Quick reference at top with line table and conservative defaults: yes (Section 1).
+2. Supplier library as literal lookup tables: yes (Section 3, 15 sub-tables).
+3. Worked examples: yes (Section 4, 6 examples).
+4. Tier 1 rules compressed: yes (Section 5, 15 rules).
+5. Tier 2 catalogue compressed: yes (Section 6, 15 items).
+6. Excel template specification: yes (Section 7).
+7. Onboarding as fallback only: yes (Section 9, 10 items).
+8. All 8 France-specific refusals present: yes (Section 2, R-FR-1 through R-FR-8).
+9. Reference material at bottom: yes (Section 10).
+10. Business meals partial deductibility (key France difference from Malta): yes (Section 5.12 + Example 3).
+11. Motor vehicle VP/VU distinction: yes (Section 5.12 + Example 6).
+12. Capital goods immobilisation threshold: yes (Section 5.11 + Example 4).
+13. EU B2B service sale (line 06A) and VIES verification: yes (Example 5).
+14. Non-EU SaaS autoliquidation: yes (Example 1 + Section 3.9).
+15. Construction subcontracting domestic reverse charge flagged: yes (Section 6.14).
 
-## End of France VAT Return Skill v0.1
+## End of France VAT Return Skill v2.0
 
-This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.2.0 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a CA3 without all three files loaded.
-
-**Practitioner review note:** this skill has not been reviewed by a French expert-comptable. Before this skill is used for any real return, it should be reviewed line-by-line by a practitioner with experience in the régime réel normal and CA3 filings. The refusal catalogue, the supplier pattern library rates, and the e-invoicing mandate refusal timing are the three areas most likely to need practitioner correction.
-
-**CIBS recodification note:** this skill cites CGI articles. From 1 September 2026, those articles move to the CIBS under Ordonnance n° 2025-1247. A v0.2 will be needed before that date to update all citations.
+This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a CA3 without all three files loaded.
 
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an expert-comptable, commissaire aux comptes, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

@@ -1,709 +1,615 @@
 ---
 name: ireland-vat-return
-description: Use this skill whenever asked to prepare, review, or create an Ireland VAT return (VAT3 form), VAT Return of Trading Details (RTD), or any request involving Irish VAT filing. Trigger on phrases like "prepare Irish VAT return", "do the Irish VAT", "fill in VAT3", "create the return", "Irish VAT", "Revenue Online Service", "ROS return", or any request involving Ireland VAT filing. Also trigger when classifying transactions for Irish VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Ireland VAT classification rules, VAT3 box mappings, deductibility rules, reverse charge treatment, capital goods scheme, two-thirds rule, property VAT, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Ireland VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for an Irish VAT return (VAT3 form) for a self-employed individual or small business in Ireland. Trigger on phrases like "prepare VAT return", "do the VAT", "Irish VAT", "VAT3", "ROS return", "Revenue Online", or any request involving Ireland VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Ireland only and only standard VAT-registered businesses. VAT groups, Capital Goods Scheme adjustments, and complex property transactions are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Irish VAT work.
+version: 2.0
 ---
 
-# Ireland VAT Return Preparation Skill
+# Ireland VAT Return Skill (VAT3) v2.0
 
----
+## Section 1 — Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Ireland |
-| Jurisdiction Code | IE |
-| Primary Legislation | Value-Added Tax Consolidation Act 2010 (VATCA 2010), as amended |
-| Supporting Legislation | Schedule 1 (exempt activities); Schedule 2 (zero-rated goods/services); Section 59 (blocked deductions); Section 60 (apportionment); Section 64 (Capital Goods Scheme); Section 41 (two-thirds rule); Section 56 (reverse charge) |
-| Tax Authority | Revenue Commissioners (Revenue), Ireland |
-| Filing Portal | https://www.ros.ie (Revenue Online Service -- ROS) |
-| Contributor | PENDING -- requires warranted Irish CPA/CTA |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: VAT3 box assignment, reverse charge, blocked deductions, derived calculations, filing deadlines. Tier 2: partial exemption apportionment, two-thirds rule application, property VAT, cash basis eligibility. Tier 3: complex property transactions, Capital Goods Scheme adjustments, group VAT, cross-border digital services (OSS/IOSS). |
+|---|---|
+| Country | Ireland (Eire) |
+| Standard rate | 23% |
+| Reduced rates | 13.5% (construction, repair, cleaning, short-term car hire, certain fuels), 9% (newspapers, e-publications, sporting facilities, hairdressing), 4.8% (livestock, greyhounds) |
+| Zero rate | 0% (exports, most food, children's clothing/footwear, books, oral medicines, medical devices, passenger transport) |
+| Second reduced rate | 0% items listed in Schedule 2 VATCA 2010 |
+| Flat-rate (farmers) | 5.5% flat-rate addition (farmer scheme — not covered, R-IE-6) |
+| Return form | VAT3 (4 boxes: T1, T2, T3, T4) |
+| Annual return | RTD (Return of Trading Details — 6 categories, annual) |
+| Filing portal | https://www.ros.ie (Revenue Online Service — ROS) |
+| Authority | Revenue Commissioners (Revenue) |
+| Currency | EUR only |
+| Filing frequencies | Bi-monthly (standard — 6 periods per year); Quarterly (by Revenue agreement); Monthly (by election); Annual (small traders with Revenue approval) |
+| Deadline | 23rd of month following bi-monthly period end (extended to 23rd for ROS e-filers) |
+| Two-thirds rule | If ≥2/3 of supply value is materials/goods, entire supply taxed as goods (Section 41 VATCA 2010) |
+| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
+| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
+| Contributor | Open Accountants |
+| Validated by | Pending — requires Irish CPA/CTA validation |
+| Validation date | Pending |
+
+**Key VAT3 boxes:**
+
+| Box | Meaning |
+|---|---|
+| T1 | VAT charged on supplies (output VAT) — total of VAT charged on all sales, plus VAT self-accounted on reverse charge |
+| T2 | VAT on intra-EU acquisitions — VAT self-accounted on goods acquired from other EU member states |
+| T3 | VAT on imports — VAT on goods imported from outside EU (postponed accounting or paid at customs) |
+| T4 | Total deductible VAT (input VAT) — total VAT on purchases and reverse charge input |
+| E1 | Total sales (incl. zero-rated, exempt) |
+| E2 | Total intra-EU acquisitions |
+
+**Note:** Ireland's VAT3 is extremely simple — only 4 VAT boxes plus 2 statistical boxes. All the detail goes into the annual RTD and the underlying records.
+
+**Conservative defaults — Ireland-specific:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 23% |
+| Unknown VAT status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Ireland |
+| Unknown B2B vs B2C status for EU customer | B2C, charge 23% |
+| Unknown business-use proportion | 0% recovery |
+| Unknown SaaS billing entity | Reverse charge from non-EU |
+| Unknown blocked-input status (entertainment, personal use) | Blocked |
+| Unknown whether transaction is in scope | In scope |
+| Unknown two-thirds rule applicability | Treat as services |
+
+**Red flag thresholds:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | EUR 5,000 |
+| HIGH tax-delta on a single conservative default | EUR 300 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net VAT position | EUR 8,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A chartered accountant or chartered tax adviser must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to chartered accountant and document the gap.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Acceptable from: AIB (Allied Irish Banks), Bank of Ireland, PTSB (Permanent TSB), Ulster Bank, KBC Ireland (legacy), Revolut Business, Wise Business, N26, or any other.
 
----
+**Recommended** — sales invoices, purchase invoices for input VAT claims above EUR 300, VAT number (IE format), prior VAT3.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete invoice register, prior RTD, carry-forward reconciliation, cash basis election confirmation if applicable.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement → hard stop. If bank statement only → reviewer brief warning.
 
-1. **Entity name and VAT number** [T1] -- IE + 7 digits + 1-2 letters (e.g., IE1234567T or IE1234567WI)
-2. **VAT accounting basis** [T1] -- Invoice basis (default) or Moneys Received basis (cash basis)
-3. **VAT period** [T1] -- bi-monthly (standard), quarterly (by Revenue agreement), annual (small traders), or monthly (by election)
-4. **Industry/sector** [T2] -- impacts two-thirds rule applicability, construction reverse charge (RCT), and sector-specific rates
-5. **Does the business make exempt supplies?** [T2] -- If yes, partial exemption apportionment required (Section 60 VATCA 2010); reviewer must confirm method
-6. **Does the business trade goods for resale?** [T1] -- impacts RTD classification
-7. **Is the business a principal contractor under RCT?** [T1] -- impacts construction reverse charge obligations
-8. **Does the business deal in property?** [T3] -- triggers Capital Goods Scheme (Section 64), complex rules requiring specialist review
-9. **Turnover level** [T1] -- determines cash basis eligibility (under EUR 2 million) and registration obligation
-10. **Prior period credit/debit** [T1] -- any VAT balance carried forward
+### Ireland-specific refusal catalogue
 
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until VAT registration details and period are confirmed.**
+On top of EU-wide refusals in `eu-vat-directive` Section 13.
 
----
+**R-IE-1 — VAT group.** *Trigger:* client is part of a VAT group. *Message:* "VAT groups require consolidated filing. Out of scope."
 
-## Step 1: Transaction Classification Rules
+**R-IE-2 — Capital Goods Scheme (Section 64 VATCA 2010).** *Trigger:* client has capital goods with adjustment intervals (20 years for developed property, other intervals for refurbishment). *Message:* "Capital Goods Scheme adjustments are too complex for this skill. Please use a chartered accountant."
 
-### 1a. Determine Transaction Type [T1]
-- Sale (output VAT) or Purchase (input VAT)
-- Salaries, PAYE, PRSI, USC, loan repayments, dividends, bank charges, corporation tax, income tax = OUT OF SCOPE (never on VAT return)
-- **Legislation:** VATCA 2010, Section 2 (interpretation), Section 3 (supply of goods), Section 5 (supply of services)
+**R-IE-3 — Complex property transactions.** *Trigger:* client buys/sells/develops property where the joint option to tax, the two-thirds rule on property, or CGS applies. *Message:* "Property VAT in Ireland requires specialist advice. Out of scope."
 
-### 1b. Determine Counterparty Location [T1]
-- Ireland (domestic): supplier/customer country is IE
-- EU: AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, SI, ES, SE
-- Non-EU: everything else (US, UK, AU, CH, etc.)
-- **Note:** UK is Non-EU post-Brexit. Northern Ireland follows special protocol for goods (XI VAT numbers) but is Non-EU for services. Gibraltar is Non-EU. Channel Islands are Non-EU.
-- **Legislation:** VATCA 2010, Section 30 (place of supply of goods), Section 33 (place of supply of services)
+**R-IE-4 — Partial exemption.** *Trigger:* client makes both taxable and exempt supplies, exempt proportion non-de-minimis. *Message:* "You make both taxable and exempt supplies. Input VAT must be apportioned under Section 60 VATCA 2010. Please use a chartered tax adviser."
 
-### 1c. Determine VAT Rate [T1]
+**R-IE-5 — Margin scheme.** *Trigger:* second-hand goods, art, antiques. *Message:* "Margin scheme requires transaction-level margin computation. Out of scope."
 
-| Rate | Application | Legislation |
-|------|-------------|-------------|
-| 23% | Standard rate -- most goods and services | VATCA 2010, Section 46(1)(a) |
-| 13.5% | Reduced rate -- construction services, building materials (where two-thirds rule applies), fuel (coal, heating oil, gas for non-domestic), repair/maintenance services, cleaning services, waste collection, restaurant/catering (until 30 June 2026), hairdressing (until 30 June 2026), short-term car hire, photographic supplies | VATCA 2010, Schedule 3 |
-| 9% | Second reduced rate -- newspapers, e-newspapers, printed periodicals, e-periodicals, sports facilities, cinemas, theatres, amusement services, hairdressing (from 1 July 2026), restaurant/catering (from 1 July 2026), electricity and gas (extended to 31 Dec 2030), hotel and holiday accommodation, heat pump installation, qualifying apartments (8 Oct 2025 to 31 Dec 2030) | VATCA 2010, Schedule 3 as amended by Finance Act 2024/2025 |
-| 4.8% | Livestock rate -- livestock (excluding chickens), greyhounds, hire of horses | VATCA 2010, Schedule 3 |
-| 4.5% | Flat-rate compensation percentage for unregistered farmers (not a VAT rate -- compensation for input VAT not reclaimed). Decreased from 5.1% to 4.5% effective 1 January 2026. | VATCA 2010, Section 86; Finance Act 2025 |
-| 0% | Zero rate -- exports, intra-EU B2B supplies of goods, most food and drink for human consumption, oral medicines (human and animal), children's clothing and footwear, books (printed), seeds/plants/trees, fertilisers, animal feed, disability aids (wheelchairs, crutches, hearing aids), sanitary products | VATCA 2010, Schedule 2 |
-| Exempt | No VAT, no input credit -- financial services, insurance, medical/dental services, education, passenger transport, letting of immovable property (residential), funeral services, certain cultural/sporting activities by non-profit bodies | VATCA 2010, Schedule 1 |
+**R-IE-6 — Flat-rate farmer scheme.** *Trigger:* client is a flat-rate farmer adding 5.5%. *Message:* "Flat-rate farmer scheme has special obligations. Out of scope."
 
-### 1d. Determine Expense Category [T1]
-- Capital goods (property): developed property -- triggers CGS (20-year adjustment for new build, 10-year for refurbishment)
-- Resale: goods bought specifically to resell (stock-in-trade)
-- Overhead/services: everything else (office supplies, professional services, utilities, etc.)
-- **Note:** Ireland does NOT have a general capital goods threshold for non-property assets like Malta's EUR 1,160. The Capital Goods Scheme applies ONLY to developed property (Section 64 VATCA 2010).
-- **Legislation:** VATCA 2010, Section 64 (Capital Goods Scheme)
+**R-IE-7 — RCT (Relevant Contracts Tax) / construction reverse charge.** *Trigger:* client is a principal contractor or subcontractor in construction. *Message:* "RCT reverse charge in construction requires determining whether the contract is a 'relevant contract' under Section 530A TCA 1997. [T2] — flag for review with details of the construction contract."
+
+**R-IE-8 — Income tax instead of VAT.** *Trigger:* user asks about income tax. *Message:* "This skill handles VAT3 only."
 
 ---
 
-## Step 2: VAT3 Box Assignment [T1]
+## Section 3 — Supplier pattern library (the lookup table)
 
-**Legislation:** VATCA 2010, Section 76 (returns); Revenue guidance on completing VAT3 return.
+Match by case-insensitive substring. If none match, fall through to Tier 1 rules in Section 5.
 
-The Irish VAT3 is structured differently from Malta's. It has far fewer boxes -- the key boxes are T1-T4, E1-E2, ES1-ES2, and PA1.
+### 3.1 Irish banks (fees exempt — exclude)
 
-### VAT3 Box Structure
+| Pattern | Treatment | Notes |
+|---|---|---|
+| AIB, ALLIED IRISH BANKS | EXCLUDE | Financial service, exempt Schedule 1 VATCA 2010 |
+| BANK OF IRELAND, BOI | EXCLUDE | Same |
+| PTSB, PERMANENT TSB | EXCLUDE | Same |
+| ULSTER BANK | EXCLUDE | Same |
+| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for taxable subscriptions |
+| INTEREST, UILC | EXCLUDE | Interest, out of scope |
+| LOAN, MORTGAGE | EXCLUDE | Loan principal, out of scope |
 
-| Box | Description | What Goes Here |
-|-----|-------------|----------------|
-| **T1** | VAT charged on sales + VAT self-accounted | All output VAT: VAT on domestic sales at all rates + reverse charge output VAT (EU acquisitions, imported services, construction reverse charge) |
-| **T2** | VAT on purchases (reclaimable input VAT) | All deductible input VAT: VAT on domestic purchases + reverse charge input VAT (where deductible) + postponed accounting VAT (where deductible) |
-| **T3** | Amount payable | If T1 > T2, then T3 = T1 - T2 (pay this to Revenue) |
-| **T4** | Amount repayable | If T2 > T1, then T4 = T2 - T1 (claim this from Revenue) |
-| **E1** | Goods supplied to other EU countries | Net value of goods dispatched to VAT-registered customers in other EU Member States (zero-rated intra-EU supplies) |
-| **E2** | Goods received from other EU countries | Net value of goods acquired from suppliers in other EU Member States (intra-Community acquisitions) |
-| **ES1** | Services supplied to other EU countries | Net value of B2B services supplied to customers in other EU Member States (reverse charge applies in customer's state) |
-| **ES2** | Services received from other EU countries | Net value of B2B services received from suppliers in other EU Member States (reverse charge -- self-account in Ireland) |
-| **PA1** | Postponed Accounting imports | Customs value + duty of goods imported under the Postponed Accounting scheme |
+### 3.2 Irish government and statutory bodies (exclude entirely)
 
-### Domestic Sales -- Output VAT (goes into T1)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| REVENUE, REVENUE COMMISSIONERS | EXCLUDE | Tax payment |
+| ROS PAYMENT | EXCLUDE | Revenue Online Service payment |
+| CRO, COMPANIES REGISTRATION OFFICE | EXCLUDE | Registry fee, sovereign acts |
+| PRSI, DEPT OF SOCIAL PROTECTION | EXCLUDE | Social insurance |
+| LOCAL PROPERTY TAX, LPT | EXCLUDE | Property tax |
+| COMMERCIAL RATES | EXCLUDE | Local authority rates, not a supply |
 
-| Rate | Treatment |
-|------|-----------|
-| 23% | Calculate VAT at 23% on net amount. Include VAT in T1. |
-| 13.5% | Calculate VAT at 13.5% on net amount. Include VAT in T1. |
-| 9% | Calculate VAT at 9% on net amount. Include VAT in T1. |
-| 4.8% | Calculate VAT at 4.8% on net amount. Include VAT in T1. |
-| 0% (zero-rated) | No VAT. Nothing in T1. If EU B2B goods, report net in E1. If EU B2B services, report net in ES1. |
-| Exempt | No VAT. Nothing in T1. No input credit on related costs. |
+### 3.3 Irish utilities
 
-### Domestic Purchases -- Input VAT (goes into T2)
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| ESB, ELECTRIC IRELAND | Domestic 23% or 13.5% | T4 (input) | Electricity — domestic energy at 23% (may have been temporarily reduced) |
+| BORD GÁIS, BORD GÁIS ENERGY | Domestic 23% or 13.5% | T4 (input) | Gas supply |
+| SSE AIRTRICITY | Domestic 23% or 13.5% | T4 (input) | Electricity/gas |
+| ENERGIA, PANDA POWER, FLOGAS | Domestic 23% or 13.5% | T4 (input) | Energy suppliers |
+| EIR, EIRCOM | Domestic 23% | T4 (input) | Telecoms |
+| THREE IRELAND, 3 IRELAND, THREE | Domestic 23% | T4 (input) | Mobile telecoms |
+| VODAFONE IE | Domestic 23% | T4 (input) | Mobile telecoms |
+| VIRGIN MEDIA IE, SKY IRELAND | Domestic 23% | T4 (input) | Broadband/TV |
 
-| Category | Deductible? | Treatment |
-|----------|-------------|-----------|
-| Business overhead (not blocked) | Yes | Include VAT paid in T2 |
-| Stock for resale | Yes | Include VAT paid in T2 |
-| Blocked category (Section 59) | No | Do NOT include in T2 |
-| Related to exempt supplies only | No | Do NOT include in T2 |
-| Mixed (taxable + exempt) | Partial | Apportion per Section 60 [T2] |
+### 3.4 Insurance (exempt — exclude)
 
-### EU Acquisitions of Goods (Intra-Community Acquisitions)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| FBD, ZURICH IE, AVIVA IE | EXCLUDE | Insurance exempt, Schedule 1 |
+| AXA IRELAND, ALLIANZ IRELAND | EXCLUDE | Same |
+| INSURANCE, ÁRACHAS | EXCLUDE | All exempt |
 
-| Step | Box | Amount |
-|------|-----|--------|
-| Report net value of goods | E2 | Net amount |
-| Self-account output VAT at applicable Irish rate | T1 | VAT amount |
-| Claim input VAT (if deductible) | T2 | VAT amount |
-| Net effect for fully taxable business | -- | Zero |
+### 3.5 Post and logistics
 
-### EU Services Received (Reverse Charge -- B2B)
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| AN POST | EXCLUDE for standard postage | | Universal postal service, exempt |
+| AN POST | Domestic 23% for parcel/courier | T4 | Non-universal services taxable |
+| DPD IRELAND, FASTWAY, NIGHTLINE | Domestic 23% | T4 | Courier, taxable |
 
-| Step | Box | Amount |
-|------|-----|--------|
-| Report net value of services | ES2 | Net amount |
-| Self-account output VAT at 23% (standard rate) | T1 | VAT amount |
-| Claim input VAT (if deductible) | T2 | VAT amount |
-| Net effect for fully taxable business | -- | Zero |
+### 3.6 Transport (Ireland domestic)
 
-### EU Services Supplied (B2B)
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| IRISH RAIL, IARNRÓD ÉIREANN | Zero-rated | T4 | Domestic passenger transport is ZERO-RATED in Ireland |
+| DUBLIN BUS, BUS ÉIREANN, GO-AHEAD IRELAND | Zero-rated | T4 | Same — passenger transport 0% |
+| LUAS, TRANSPORT FOR IRELAND | Zero-rated | T4 | Same |
+| TAXI | Domestic 13.5% | T4 | Taxis at 13.5% |
+| RYANAIR, AER LINGUS (international) | EXCLUDE / 0% | | International flights zero rated |
+| RYANAIR, AER LINGUS (domestic) | Zero-rated | T4 | Domestic flights also 0% |
 
-| Step | Box | Amount |
-|------|-----|--------|
-| Report net value of services | ES1 | Net amount |
-| No Irish VAT (customer self-accounts) | -- | -- |
-| Include on VIES return | -- | -- |
+**Note on Irish transport:** Most passenger transport in Ireland is zero-rated (0%), not reduced-rate. This is unusual in the EU. Taxis are the exception at 13.5%.
 
-### Non-EU Services Received (Reverse Charge)
+### 3.7 Food retail and entertainment
 
-| Step | Box | Amount |
-|------|-----|--------|
-| Self-account output VAT at 23% | T1 | VAT amount |
-| Claim input VAT (if deductible) | T2 | VAT amount |
-| Net effect for fully taxable business | -- | Zero |
-| **Note:** No ES2 entry -- ES2 is EU only | -- | -- |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TESCO IE, TESCO IRELAND | Zero-rated for most food | Food is zero-rated in Ireland (Schedule 2 VATCA 2010) |
+| SUPERVALU, DUNNES STORES, ALDI IE, LIDL IE | Zero-rated for most food | Same — but confectionery, ice cream, soft drinks are at 23% |
+| CENTRA, SPAR IE | Zero-rated / 23% mixed | Split between zero-rated food and standard-rate items |
+| RESTAURANTS, PUB FOOD, CAFES | Domestic 13.5% | Restaurant/catering services at 13.5% |
 
-### Non-EU Services Supplied
+**Note on Irish entertainment/meals:** Ireland has no hard block on business entertainment VAT. If the meal is a genuine business expense, input VAT at 13.5% is deductible. However, Section 59 VATCA 2010 blocks VAT on entertainment of any kind that is not part of a taxable supply. Default: block for non-hospitality businesses. [T2] flag if client claims business purpose.
 
-| Step | Box | Amount |
-|------|-----|--------|
-| Outside scope of Irish VAT | -- | No entry on VAT3 |
-| No output VAT | -- | -- |
+### 3.8 SaaS — EU suppliers (reverse charge, T1/T4)
 
-### Imports of Physical Goods from Non-EU
+Since many tech companies bill from Ireland, check whether the supplier is actually Irish (domestic) or billing from Ireland to an Irish customer (domestic, NOT reverse charge).
 
-| Method | Treatment |
-|--------|-----------|
-| **Postponed Accounting (PA)** | Report customs value + duty in PA1. Self-account VAT in T1. Claim in T2 (if deductible). Net effect = zero for fully taxable business. |
-| **VAT paid at Customs** | VAT paid to Customs on import. Claim as input VAT in T2 (based on Customs C2/SAD document). |
+| Pattern | Billing entity | Box | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) — DOMESTIC | T4 only | Irish entity billing Irish customer = DOMESTIC 23%. NOT reverse charge. |
+| MICROSOFT (365, Azure) | Microsoft Ireland (IE) — DOMESTIC | T4 only | Same — domestic 23% |
+| ADOBE | Adobe Ireland (IE) — DOMESTIC | T4 only | Same — domestic 23% |
+| META, FACEBOOK ADS | Meta Platforms Ireland (IE) — DOMESTIC | T4 only | Same — domestic 23% |
+| LINKEDIN (paid) | LinkedIn Ireland (IE) — DOMESTIC | T4 only | Same |
+| SPOTIFY | Spotify AB (SE) | T1/T4 | EU reverse charge (SE entity, not IE) |
+| DROPBOX | Dropbox Ireland (IE) — DOMESTIC | T4 only | Domestic |
+| SLACK | Slack Ireland (IE) — DOMESTIC | T4 only | Domestic |
+| ATLASSIAN | Atlassian BV (NL) | T1/T4 | EU reverse charge |
+| ZOOM | Zoom Ireland (IE) — DOMESTIC | T4 only | Domestic |
+| STRIPE (subscription) | Stripe Ireland (IE) — DOMESTIC | T4 only | Domestic. Transaction fees are exempt. |
 
-### Construction Services -- RCT Reverse Charge [T1]
+**CRITICAL for Ireland:** Most major SaaS companies are billed from their IRISH entity. For an Irish customer, this means they are DOMESTIC supplies at 23%, NOT reverse charge. The invoice will show Irish VAT. Only non-IE EU entities (e.g. Spotify SE, Atlassian NL) trigger reverse charge. Verify the entity country on every invoice.
 
-| Scenario | Treatment |
-|----------|-----------|
-| Subcontractor invoices principal (no VAT charged) | Principal self-accounts: output VAT at 13.5% in T1, input VAT in T2 (if deductible) |
-| Principal is the accountable person for VAT | Subcontractor does NOT charge VAT on invoice |
-| **Legislation:** VATCA 2010, Section 56(2) | Applies where RCT operates |
+### 3.9 SaaS — non-EU suppliers (reverse charge, T1/T4)
 
----
+| Pattern | Billing entity | Box | Notes |
+|---|---|---|---|
+| NOTION | Notion Labs Inc (US) | T1/T4 | Non-EU reverse charge — self-account 23% |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | T1/T4 | Non-EU reverse charge |
+| OPENAI, CHATGPT | OpenAI Inc (US) | T1/T4 | Non-EU reverse charge |
+| GITHUB | GitHub Inc (US) | T1/T4 | Check if billed by IE entity (then domestic) |
+| FIGMA | Figma Inc (US) | T1/T4 | Non-EU reverse charge |
+| CANVA | Canva Pty Ltd (AU) | T1/T4 | Non-EU reverse charge |
+| HUBSPOT | HubSpot Ireland (IE) — likely DOMESTIC | T4 only | Check — may be billed from IE |
+| TWILIO | Twilio Inc (US) or Twilio Ireland | Check | Could be domestic or non-EU |
+| AWS | AWS EMEA SARL (LU) | T1/T4 | EU reverse charge (LU entity) |
 
-## Step 3: Reverse Charge Mechanics [T1]
+### 3.10 Payment processors
 
-**Legislation:** VATCA 2010, Section 56 (general reverse charge); Section 16 (intra-Community acquisitions); Section 33-37 (place of supply of services).
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing exempt — Stripe IE entity |
+| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
+| SUMUP IE, SQUARE IE | Check invoice | Irish entity: fees may be exempt financial services |
 
-For EU and non-EU purchases where the Irish business must self-account:
-1. Calculate Irish VAT at the applicable rate (usually 23% for services, applicable goods rate for ICA)
-2. Include the calculated VAT in T1 (output VAT -- self-accounted)
-3. Include the same amount in T2 (input VAT -- if deductible)
-4. Net effect: zero for fully taxable businesses
+### 3.11 Professional services (Ireland)
 
-**The VAT3 must show BOTH sides (T1 and T2) for reverse charge transactions.**
+| Pattern | Treatment | Box | Notes |
+|---|---|---|---|
+| SOLICITOR, & CO SOLICITORS | Domestic 23% | T4 | Legal — deductible if business |
+| ACCOUNTANT, & ASSOCIATES, CPA, ACCA | Domestic 23% | T4 | Accountant — always deductible |
+| CRO, COMPANIES REGISTRATION OFFICE | EXCLUDE | Registry fee |
 
-### When Reverse Charge Applies [T1]
+### 3.12 Payroll and social security (exclude entirely)
 
-| Scenario | Reverse Charge? |
-|----------|----------------|
-| B2B services from EU supplier | Yes -- ES2 + T1 + T2 |
-| B2B services from non-EU supplier | Yes -- T1 + T2 (no ES2) |
-| Goods from EU supplier (ICA) | Yes -- E2 + T1 + T2 |
-| Goods imported from non-EU (Postponed Accounting) | Yes -- PA1 + T1 + T2 |
-| Goods imported from non-EU (VAT paid at Customs) | No reverse charge -- claim via T2 from Customs doc |
-| Construction services under RCT | Yes -- T1 + T2 |
-| B2C services from EU supplier | No -- supplier charges local VAT |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PRSI, EMPLOYER PRSI | EXCLUDE | Social insurance |
+| PAYE, PSWT | EXCLUDE | Payroll tax |
+| SALARY, WAGES (outgoing) | EXCLUDE | Wages — outside VAT scope |
+| USC | EXCLUDE | Universal Social Charge |
 
-### Exceptions to Reverse Charge [T1]
+### 3.13 Property and rent
 
-- Out-of-scope categories (wages, bank charges, dividends, etc.): NEVER reverse charge
-- Local consumption abroad (hotel, restaurant, taxi in another country): NOT reverse charge. Foreign VAT paid at source. Irish business cannot recover foreign VAT via Irish return (must use EU VAT Refund Directive if applicable).
-- EU supplier charged their local VAT > 0%: NOT reverse charge on Irish return. Foreign VAT is part of the expense cost.
-- B2C digital services: may fall under OSS rules [T3]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| RENT (commercial, with VAT) | Domestic 23% | Commercial lease where landlord opted to charge VAT |
+| RENT (residential, no VAT) | EXCLUDE | Residential lease, exempt Schedule 1 |
+| COMMERCIAL RATES | EXCLUDE | Local authority, not a supply |
 
----
+### 3.14 Internal transfers and exclusions
 
-## Step 4: Deductibility Check
-
-### Blocked Categories (Section 59, VATCA 2010) [T1]
-
-**Legislation:** VATCA 2010, Section 59(2).
-
-These have ZERO VAT recovery regardless of business purpose:
-
-| Category | Detail | Legislation Reference |
-|----------|--------|-----------------------|
-| **Food and drink** | All food and drink for consumption by the business, staff, or clients. Exception: stock-in-trade for resale (e.g., restaurant buying ingredients). | Section 59(2)(a) |
-| **Accommodation** | Hotel, B&B, serviced apartment. Exception: qualifying conference attendance (accommodation element only, NOT food/drink). | Section 59(2)(b) |
-| **Entertainment** | Client entertainment, staff entertainment, corporate hospitality. No exceptions. | Section 59(2)(c) |
-| **Motor vehicles** | Purchase or hire of motor vehicles. Exceptions: stock-in-trade (motor dealer), hire purchase for onward supply (finance house), car hire business, driving instruction. | Section 59(2)(d) |
-| **Petrol** | All petrol, regardless of business use. No exceptions. Even if the vehicle itself qualifies for input VAT recovery, petrol does not. | Section 59(2)(e) |
-
-**Critical distinction:** Diesel is NOT blocked. Auto-diesel for business vehicles (where the vehicle qualifies) IS deductible. Petrol is ALWAYS blocked.
-
-Blocked categories OVERRIDE partial exemption. Check blocked FIRST.
-
-### Diesel and Other Fuel [T1]
-
-| Fuel Type | Deductible? | Condition |
-|-----------|-------------|-----------|
-| Petrol | Never | Blocked under Section 59 |
-| Auto-diesel | Yes | If vehicle qualifies (commercial vehicle, taxi, etc.) |
-| Marked diesel (green diesel) | Yes | Agricultural/industrial use |
-| Heating oil | Yes | Business premises heating |
-| Electricity | Yes | Business use |
-| Gas | Yes | Business use |
-
-### Registration-Based Recovery [T1]
-- VAT-registered (standard): full recovery (subject to category blocks and apportionment)
-- Unregistered: NO recovery
-- Flat-rate farmer (Section 86): no recovery, but applies flat-rate addition (4.5% from 1 January 2026; was 5.1%) on sales
-
-### Partial Exemption (Section 60, VATCA 2010) [T2]
-
-**Legislation:** VATCA 2010, Section 60.
-
-If business makes both taxable and exempt supplies:
-- Direct attribution first: costs directly attributable to taxable supplies = fully deductible; costs directly attributable to exempt supplies = not deductible
-- Residual (overhead) costs: apportion using a fair and reasonable method
-- Common method: `Recovery % = (Taxable Turnover / Total Turnover) * 100`
-- Revenue may agree alternative methods (floor area, headcount, transaction count)
-
-**Flag for reviewer: apportionment method and rate must be confirmed by chartered accountant before applying. Annual review and adjustment may be required.**
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFER, INTERNAL, OWN ACCOUNT | EXCLUDE | Internal movement |
+| DIVIDEND | EXCLUDE | Out of scope |
+| LOAN REPAYMENT | EXCLUDE | Loan principal |
+| ATM, CASH WITHDRAWAL | TIER 2 — ask | Default exclude |
 
 ---
 
-## Step 5: Derived Box Calculations [T1]
+## Section 4 — Worked examples
 
-The Irish VAT3 calculations are simpler than Malta's multi-box approach:
+Six fully worked classifications from a hypothetical Irish self-employed IT consultant.
+
+### Example 1 — Non-EU SaaS reverse charge (Notion)
+
+**Input line:**
+`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
+
+**Reasoning:**
+US entity. Non-EU service — self-account VAT at 23%. Add EUR 3.38 (23% of EUR 14.68) to T1 (output VAT) and the same EUR 3.38 to T4 (input VAT). Net effect zero for fully taxable business.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box (output) | Box (input) | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.38 | 23% | T1 | T4 | N | — | — |
+
+### Example 2 — Domestic purchase from Irish-based SaaS (Google)
+
+**Input line:**
+`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April ; -1,045.50 ; EUR`
+
+**Reasoning:**
+Google Ireland Ltd is an IRISH entity billing an IRISH customer. This is a DOMESTIC purchase at 23%. The invoice will include Irish VAT. EUR 1,045.50 incl. 23% VAT. Net = EUR 850. VAT = EUR 195.50. Input VAT goes to T4. No reverse charge — this is NOT a cross-border transaction.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 10.04.2026 | GOOGLE IRELAND LIMITED | -1,045.50 | -850.00 | -195.50 | 23% | T4 | N | — | — |
+
+### Example 3 — Entertainment, blocked by default
+
+**Input line:**
+`15.04.2026 ; CHAPTER ONE RESTAURANT ; DEBIT ; Client dinner ; -280.00 ; EUR`
+
+**Reasoning:**
+Restaurant. Section 59 VATCA 2010 blocks input VAT on entertainment unless it forms part of a taxable supply. For an IT consultant, client entertainment is blocked. Default: block. [T2] flag.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 15.04.2026 | CHAPTER ONE RESTAURANT | -280.00 | -280.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked under Section 59 — recovery only if part of taxable supply" |
+
+### Example 4 — Zero-rated food purchase (for hospitality business)
+
+**Input line:**
+`18.04.2026 ; MUSGRAVES WHOLESALE ; DEBIT ; Food supplies invoice ; -2,400.00 ; EUR`
+
+**Reasoning:**
+Musgraves is a wholesale food distributor. Most food in Ireland is zero-rated (Schedule 2 VATCA 2010). If the client is in hospitality/catering, this is stock for resale and is zero-rated on purchase. VAT = EUR 0. But the purchase still goes into the records for the RTD. If the client is NOT in food business, this is personal provisioning — block.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 18.04.2026 | MUSGRAVES WHOLESALE | -2,400.00 | -2,400.00 | 0 | 0% | T4 | Y | Q2 | "Wholesale food — zero-rated. Is this for business (hospitality/resale) or personal?" |
+
+### Example 5 — EU B2B service sale (inbound receipt)
+
+**Input line:**
+`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice IE-2026-018 IT consultancy ; +3,500.00 ; EUR`
+
+**Reasoning:**
+Incoming from German company. B2B IT consulting — place of supply is Germany. Invoice at 0%, customer accounts for reverse charge. Report net in E1 (total sales) and underlying records. No output VAT in T1. Verify German USt-IdNr on VIES.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | E1 (no T1) | Y | Q3 (HIGH) | "Verify German USt-IdNr on VIES" |
+
+### Example 6 — Motor vehicle, blocked (Section 59)
+
+**Input line:**
+`28.04.2026 ; BMW FINANCIAL SERVICES IE ; DEBIT ; Car lease May ; -650.00 ; EUR`
+
+**Reasoning:**
+Car lease. Section 59 VATCA 2010 blocks input VAT on motor vehicles (purchase, hire, or lease) unless the vehicle is stock-in-trade or qualifying for a short-term hire business. An IT consultant cannot recover VAT on car leases. Hard block. Exception: commercial vehicles (vans, trucks) used solely for business ARE deductible.
+
+**Output:**
+
+| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
+|---|---|---|---|---|---|---|---|---|---|
+| 28.04.2026 | BMW FINANCIAL SERVICES IE | -650.00 | -650.00 | 0 | — | — | Y | Q4 | "Motor vehicle: blocked under Section 59 — exception for commercial vehicles and stock-in-trade only" |
+
+---
+
+## Section 5 — Tier 1 classification rules (compressed)
+
+### 5.1 Standard rate 23% (Section 46(1)(a) VATCA 2010)
+
+Default rate. Sales → T1 (output VAT). Purchases → T4 (input VAT).
+
+### 5.2 Reduced rate 13.5% (Section 46(1)(c))
+
+Construction, repair and maintenance of buildings, cleaning services, short-term car hire, restaurant/catering, waste collection, certain fuels (coal, peat, gas for residential). Sales → T1. Purchases → T4 (input VAT at 13.5%).
+
+### 5.3 Second reduced rate 9% (Section 46(1)(ca))
+
+Newspapers, electronic publications, sporting facilities, hairdressing, printed and digital periodicals.
+
+### 5.4 Reduced rate 4.8% (Section 46(1)(cb))
+
+Livestock (cattle, sheep), greyhounds. Very niche — unlikely for IT consultants.
+
+### 5.5 Zero rate (Section 46(1)(b), Schedule 2)
+
+Exports, most food and drink (but NOT alcohol, confectionery, soft drinks, restaurant meals, hot takeaway), children's clothing and footwear, books, oral medicines, medical aids and appliances, fertilisers, seeds, animal feeding stuffs, electricity (domestic — temporarily zero-rated), passenger transport.
+
+### 5.6 Exempt without credit (Schedule 1)
+
+Financial services, insurance, medical services, education, postal universal service, residential rent, certain sporting and cultural services. If significant → **R-IE-4 refuses**.
+
+### 5.7 Reverse charge — EU services and goods
+
+Self-account VAT at 23% on services received from EU suppliers (non-IE). Add to T1 and T4. For EU goods: add to T2 and T4. E2 captures EU acquisitions value.
+
+### 5.8 Reverse charge — non-EU services
+
+Self-account 23% on services from outside EU. Add to T1 and T4.
+
+### 5.9 Import VAT (T3)
+
+Goods from non-EU: import VAT at point of entry or via postponed accounting (if approved). Report in T3 (output) and T4 (input if deductible).
+
+### 5.10 Blocked input VAT (Section 59 VATCA 2010)
+
+- Motor vehicles: purchase, hire, lease of motor cars — hard block. Exception: stock-in-trade, short-term hire business, driving school.
+- Petrol: fully blocked. Diesel for commercial vehicles: deductible.
+- Entertainment: blocked unless part of a taxable supply.
+- Food and drink: personal consumption blocked.
+- Accommodation: blocked unless in the course of a taxable supply.
+
+### 5.11 Two-thirds rule (Section 41)
+
+If a composite supply consists of ≥2/3 goods (by value), the entire supply is taxed at the goods rate. If ≥2/3 services, entire supply at services rate. [T2] — requires analysis of the supply composition.
+
+### 5.12 Cash basis (Moneys Received basis)
+
+If turnover < EUR 2 million and approved by Revenue, VAT on sales can be accounted for when payment is received rather than when invoiced. Purchases are still accounted on invoice basis. [T2] — confirm with client.
+
+### 5.13 RTD (Return of Trading Details)
+
+Annual return with 6 categories: (1) goods at standard rate, (2) goods at reduced/zero rate, (3) services at standard rate, (4) services at reduced/zero rate, (5) exempt supplies, (6) non-deductible purchases. Not due with every VAT3 but must be prepared at year end.
+
+### 5.14 Sales — cross-border B2C
+
+EU consumers above €10,000 threshold → **R-EU-5 (OSS refusal)**. Below threshold → Irish VAT.
+
+---
+
+## Section 6 — Tier 2 catalogue (compressed)
+
+### 6.1 Fuel and vehicle costs
+
+*Pattern:* Topaz, Circle K IE, Applegreen, Maxol. *Default:* block (petrol always blocked; diesel for commercial vehicles only). *Question:* "Is this petrol (blocked) or diesel for a commercial vehicle?"
+
+### 6.2 Entertainment
+
+*Pattern:* restaurant, pub, hotel meal. *Default:* block under Section 59. *Question:* "Is this entertainment part of a taxable supply? (If not, VAT is blocked.)"
+
+### 6.3 Ambiguous SaaS billing entities
+
+*Default:* check if IE entity (then domestic 23%, not reverse charge). *Question:* "Check invoice — is this billed from an Irish entity or foreign?"
+
+### 6.4 Round-number owner transfers
+
+*Default:* exclude as owner injection. *Question:* "Customer payment, capital, or loan?"
+
+### 6.5 Incoming from individuals
+
+*Default:* domestic sale — determine rate based on goods/services. *Question:* "Was this a sale? What was supplied?"
+
+### 6.6 Foreign counterparty incoming
+
+*Default:* check if EU B2B or B2C. *Question:* "B2B with VAT number or B2C? Country?"
+
+### 6.7 Large one-off purchases
+
+*Default:* normal input VAT in T4. *Question:* "Confirm invoice amount and what was purchased."
+
+### 6.8 Mixed-use phone/internet
+
+*Pattern:* Eir, Three, Vodafone personal lines. *Default:* 0% if mixed. *Question:* "Dedicated business line? Business percentage?"
+
+### 6.9 Outgoing to individuals
+
+*Default:* exclude as drawings. *Question:* "Contractor, wages, refund, or personal?"
+
+### 6.10 Cash withdrawals
+
+*Default:* exclude. *Question:* "What was cash used for?"
+
+### 6.11 Rent payments
+
+*Default:* no VAT (residential). *Question:* "Commercial property? Does landlord charge VAT?"
+
+### 6.12 Foreign hotel
+
+*Default:* exclude from input VAT. *Question:* "Business trip?"
+
+### 6.13 Construction services (RCT)
+
+*Pattern:* builder, contractor, plumber, electrician. *Default:* domestic 13.5% in T4. *Question:* "Are you a principal contractor? Is this a relevant contract under RCT?" *If yes → R-IE-7 fires.*
+
+### 6.14 Two-thirds rule composite supplies
+
+*Pattern:* single invoice combining goods and services. *Default:* treat as services at applicable rate. *Question:* "What proportion of this supply is goods vs services?"
+
+---
+
+## Section 7 — Excel working paper template (Ireland-specific)
+
+The base specification is in `vat-workflow-base` Section 3. This section provides the Ireland-specific overlay.
+
+### Sheet "Transactions"
+
+Columns A–L per the base. Column H ("VAT3 box") accepts: T1, T2, T3, T4, E1, E2. For reverse charge, enter "T1/T4" (both output and input). Column M for RTD category (1–6, for annual RTD preparation).
+
+### Sheet "Box Summary"
+
+Ireland's VAT3 is very simple:
 
 ```
-IF T1 > T2 THEN
-  T3 = T1 - T2    -- Amount payable to Revenue
-  T4 = 0
-ELSE
-  T3 = 0
-  T4 = T2 - T1    -- Amount repayable from Revenue
-END
-
--- E1, E2, ES1, ES2, PA1 are informational/statistical
--- They do NOT directly feed into T1-T4 calculations
--- BUT the VAT on E2/ES2/PA1 transactions DOES feed into T1 and T2
+| T1 | Output VAT (incl. reverse charge output) | =SUMIFS(Transactions!F:F, ..., "T1") |
+| T2 | VAT on intra-EU acquisitions | =SUMIFS(Transactions!F:F, ..., "T2") |
+| T3 | VAT on imports | =SUMIFS(Transactions!F:F, ..., "T3") |
+| T4 | Deductible input VAT | =SUMIFS(Transactions!F:F, ..., "T4") |
+| NET | VAT payable / refundable | =C[T1]+C[T2]+C[T3]-C[T4] |
+| E1 | Total sales value | =SUMIFS(Transactions!E:E, ..., sales rows) |
+| E2 | EU acquisitions value | =SUMIFS(Transactions!E:E, ..., EU acq rows) |
 ```
 
----
-
-## Step 6: Two-Thirds Rule (Section 41) [T2]
-
-**Legislation:** VATCA 2010, Section 41.
-
-When a supply involves both goods and services:
-
-| Condition | Treatment |
-|-----------|-----------|
-| VAT-exclusive cost of goods to the supplier > two-thirds of VAT-exclusive total charge | Entire supply taxed at the GOODS rate |
-| VAT-exclusive cost of goods to the supplier <= two-thirds of VAT-exclusive total charge | Entire supply taxed at the SERVICES rate |
-
-### Common Application
-- **Construction:** If materials cost > two-thirds of total contract value, charge goods rate (13.5% or 23%) on entire supply. If materials <= two-thirds, charge services rate (13.5%) on entire supply.
-- **Repairs:** Parts + labour. If parts cost > two-thirds, goods rate applies to whole job.
-
-### Exceptions [T1]
-The two-thirds rule does NOT apply to:
-- Repair and maintenance of motor vehicles
-- Repair and maintenance of agricultural machinery
-- Supplies where the reverse charge applies (construction RCT)
-
-**Flag for reviewer: determining the cost of goods to the supplier requires judgement. Confirm with client before applying.**
-
----
-
-## Step 7: Key Thresholds
-
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| VAT registration -- goods | EUR 85,000 per annum | VATCA 2010, Schedule 4 (as amended by Finance Act 2024) |
-| VAT registration -- services | EUR 42,500 per annum | VATCA 2010, Schedule 4 (as amended by Finance Act 2024) |
-| Cash basis (Moneys Received) eligibility | EUR 2,000,000 turnover (or 90%+ supplies to non-VAT registered) | VATCA 2010, Section 14 |
-| Intrastat -- Arrivals | EUR 500,000 per calendar year | Revenue Intrastat Traders Manual |
-| Intrastat -- Dispatches | EUR 635,000 per calendar year | Revenue Intrastat Traders Manual |
-| Intrastat -- Extended arrivals | EUR 5,000,000 per annum (more detailed declaration) | Revenue Intrastat Traders Manual |
-| Intrastat -- Extended dispatches | EUR 35,000,000 per annum (more detailed declaration) | Revenue Intrastat Traders Manual |
-| Distance sales to Ireland (OSS) | EUR 10,000 aggregate EU threshold | EU VAT e-Commerce Directive |
-| Capital Goods Scheme -- new build | 20 adjustment intervals (years) | VATCA 2010, Section 64 |
-| Capital Goods Scheme -- refurbishment | 10 adjustment intervals (years) | VATCA 2010, Section 64 |
-
----
-
-## Step 8: Filing Deadlines
-
-### VAT3 Return [T1]
-
-| Period Type | Period Dates | Filing Deadline (ROS) | Filing Deadline (Paper) |
-|-------------|-------------|----------------------|------------------------|
-| Bi-monthly (standard) | Jan-Feb | 23 March | 19 March |
-| Bi-monthly | Mar-Apr | 23 May | 19 May |
-| Bi-monthly | May-Jun | 23 July | 19 July |
-| Bi-monthly | Jul-Aug | 23 September | 19 September |
-| Bi-monthly | Sep-Oct | 23 November | 19 November |
-| Bi-monthly | Nov-Dec | 23 January (following year) | 19 January (following year) |
-
-**ROS filers get 4 extra days.** All VAT-registered businesses must file via ROS.
-
-### Other Returns [T1]
-
-| Return | Frequency | Deadline |
-|--------|-----------|----------|
-| VAT RTD (Return of Trading Details) | Annual | 23rd of month following accounting year-end (ROS) |
-| VIES | Bi-monthly (aligned with VAT3) or monthly (by election) | 23rd of month following period end (ROS) |
-| Intrastat | Monthly (if above threshold) | 23rd of month following reference month |
-
-### Penalties for Late Filing [T1]
-
-| Penalty Type | Amount | Legislation |
-|-------------|--------|-------------|
-| Fixed penalty -- failure to file | EUR 4,000 per return | VATCA 2010, Section 115 |
-| Late filing surcharge (within 2 months) | 5% of tax due (max EUR 12,695) | TCA 1997, Section 1084 |
-| Late filing surcharge (over 2 months) | 10% of tax due (max EUR 63,485) | TCA 1997, Section 1084 |
-| Interest on late payment | 0.0274% per day (~10% per annum) | TCA 1997, Section 1080 |
-
----
-
-## Step 9: VAT Return of Trading Details (RTD) [T1]
-
-**Legislation:** VATCA 2010, Section 76(2).
-
-The RTD is an annual informational return -- separate from the VAT3. It does NOT create a VAT liability or refund. Revenue uses it for compliance checks and cross-referencing against bi-monthly returns.
-
-### RTD Structure
-
-The RTD breaks down all trading activity across four columns, by VAT rate:
-
-| Column | Description |
-|--------|-------------|
-| Column 1 | Supplies: value of all goods and services supplied, broken down by rate (23%, 13.5%, 9%, 4.8%, 0%, exempt) |
-| Column 2 | Intra-EU Acquisitions + Imports: value of goods/services acquired from EU and imports where VAT was not charged at source, by rate |
-| Column 3 | Stock Inputs: value of goods purchased for resale, by rate |
-| Column 4 | Non-Stock Inputs: value of goods/services purchased NOT for resale (overheads, capital), by rate |
-
-### RTD Filing [T1]
-- Based on the business's accounting year (not calendar year)
-- Due: 23rd of the month following the accounting year-end (ROS)
-- Failure to file: Revenue will withhold ALL tax refunds across all tax heads until RTD is submitted
-
----
-
-## Step 10: Cash Basis (Moneys Received) [T1]
-
-**Legislation:** VATCA 2010, Section 14.
-
-| Aspect | Invoice Basis (Default) | Cash Basis (Moneys Received) |
-|--------|------------------------|------------------------------|
-| When output VAT is due | When invoice is issued | When payment is received |
-| When input VAT is claimable | When invoice is received | When invoice is received (NOT when paid) |
-| Eligibility | All businesses | Turnover < EUR 2,000,000 OR 90%+ supplies to non-VAT-registered persons |
-| How to elect | N/A (default) | Apply at registration or notify Revenue |
-| Cancellation trigger | N/A | Exceed EUR 2M or < 90% to unregistered -- notify Revenue by end of following month |
-
-**Important:** On cash basis, input VAT is STILL claimed on the invoice basis (when received), NOT when the supplier is paid. Only output VAT timing changes.
-
----
-
-## Step 11: Property VAT [T3]
-
-**This is one of the most complex areas of Irish VAT. ALWAYS escalate to a specialist.**
-
-**Legislation:** VATCA 2010, Part 11 (Sections 93-98); Section 64 (CGS).
-
-### Summary of Key Principles (Reference Only -- Do Not Execute)
-
-| Scenario | VAT Treatment |
-|----------|---------------|
-| Sale of new completed property by developer | Taxable at 13.5% (or 9% for qualifying apartments 2025-2030) |
-| Sale of "old" property (no development in 5 years, or occupied 2+ years) | Exempt (unless option to tax exercised for commercial) |
-| Residential letting | Always exempt |
-| Commercial letting | Exempt, but landlord may opt to tax (creates CGS obligation) |
-| Sale of residential property by developer | Always taxable (two-year/five-year rules do not apply to developers) |
-| Refurbishment | May create new CGS obligation (10-year adjustment) |
-
-### Capital Goods Scheme [T3]
-
-- New property: 20 annual adjustment intervals
-- Refurbishment (exceeding EUR 25,000 ex-VAT): 10 annual adjustment intervals
-- Each year, compare actual use (taxable vs exempt) against initial deduction
-- If use changes, adjustment required (additional deduction or clawback)
-- Disposal triggers full remaining adjustment in year of sale
-
-**NEVER attempt CGS calculations without specialist review.**
-
----
-
-## PROHIBITIONS [T1]
-
-- NEVER let AI guess VAT rates or box assignments -- classification is deterministic from facts
-- NEVER apply reverse charge to out-of-scope categories (wages, dividends, bank charges, etc.)
-- NEVER apply reverse charge to local consumption services abroad (hotel, restaurant, taxi consumed in another country)
-- NEVER allow input VAT recovery on petrol -- it is ALWAYS blocked under Section 59
-- NEVER allow input VAT recovery on food, drink, accommodation, or entertainment (except the narrow conference accommodation exception and stock-in-trade for resale)
-- NEVER confuse zero-rated (0% with input credit) with exempt (no VAT, no input credit)
-- NEVER apply reverse charge when EU supplier charged their local VAT > 0%
-- NEVER attempt Capital Goods Scheme calculations without specialist review
-- NEVER apply the two-thirds rule to motor vehicle repairs or agricultural machinery repairs
-- NEVER apply the two-thirds rule where the construction reverse charge (RCT) applies
-- NEVER confuse diesel (deductible for qualifying vehicles) with petrol (always blocked)
-- NEVER assume Northern Ireland is EU for services -- it follows Non-EU rules for services, EU rules for goods only
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
-- NEVER file a return without the RTD being up to date -- Revenue will withhold all refunds
-
----
-
-## Step 12: VIES Returns [T1]
-
-**Legislation:** VATCA 2010, Section 80; Council Regulation (EU) 904/2010.
-
-| Requirement | Detail |
-|-------------|--------|
-| Who must file | Any Irish VAT-registered business that zero-rates goods to, or supplies reverse-charge services to, a VAT-registered business in another EU Member State |
-| Frequency | Bi-monthly (aligned with VAT3 periods), or monthly by election |
-| Content | Customer's VAT number, total value of goods (corresponds to E1), total value of services (corresponds to ES1) |
-| Deadline | 23rd of month following period end (ROS) |
-| Verification | Must verify customer's VAT number on VIES system before zero-rating |
-
-**If a customer's VAT number cannot be verified, do NOT zero-rate the supply. Charge Irish VAT.**
-
----
-
-## Step 13: Edge Case Registry
-
-These are known ambiguous situations and their confirmed resolutions. Each is tagged with its confidence tier.
-
-### EC1 -- EU hotel / restaurant / taxi consumed abroad [T1]
-**Situation:** Irish VAT-registered business pays for a hotel in France. Invoice shows French VAT.
-**Resolution:** NOT reverse charge. French VAT was charged and paid at source. No entry on Irish VAT3 (T1/T2). The foreign VAT is an irrecoverable cost embedded in the expense. If the business wants to recover the French VAT, it must use the EU VAT Refund Directive (Electronic VAT Refund -- EVR) via ROS, which is a separate process.
-**Legislation:** VATCA 2010, Section 33 (place of supply exceptions for immovable property services); Council Directive 2008/9/EC (VAT refund).
-
-### EC2 -- SaaS subscription from US company (e.g., AWS, Google, Notion) [T1]
-**Situation:** Monthly charge from a US company, no VAT shown on invoice. B2B supply of services.
-**Resolution:** Reverse charge applies. Self-account output VAT at 23% in T1. Claim input VAT at 23% in T2 (if deductible). Net effect = zero for fully taxable business. No ES2 entry (ES2 is EU only).
-**Legislation:** VATCA 2010, Section 33(b) (B2B services -- place of supply is where customer is established); Section 56 (reverse charge).
-
-### EC3 -- SaaS subscription from EU company (e.g., SAP Germany) [T1]
-**Situation:** Monthly charge from a German company, no VAT shown, customer's Irish VAT number on invoice.
-**Resolution:** Reverse charge applies. Report net value in ES2. Self-account output VAT at 23% in T1. Claim input VAT at 23% in T2 (if deductible). Net effect = zero for fully taxable business.
-**Legislation:** VATCA 2010, Section 33(b); Section 56.
-
-### EC4 -- Intra-Community acquisition of goods [T1]
-**Situation:** Irish business buys physical goods from Italian supplier. Invoice shows 0% VAT with Irish customer's VAT number.
-**Resolution:** Report net value in E2. Self-account output VAT at applicable Irish rate in T1. Claim input VAT in T2 (if deductible). Report on VIES (this is handled by the Italian supplier on their side).
-**Legislation:** VATCA 2010, Section 16 (intra-Community acquisitions).
-
-### EC5 -- Motor vehicle purchase [T1]
-**Situation:** Business purchases a car for staff use.
-**Resolution:** Input VAT BLOCKED under Section 59(2)(d). No T2 entry for the VAT. Full cost including VAT is the expense. Exception only if: (a) motor dealer buying as stock-in-trade, (b) taxi/hackney operator, (c) car hire business, (d) driving school.
-**Legislation:** VATCA 2010, Section 59(2)(d).
-
-### EC6 -- Diesel for commercial van [T1]
-**Situation:** Business purchases auto-diesel for a commercial delivery van.
-**Resolution:** Input VAT IS deductible. Diesel is NOT petrol. The vehicle must itself qualify (commercial vehicle, not a blocked motor car). Include VAT in T2.
-**Legislation:** VATCA 2010, Section 59 -- petrol is blocked, diesel is not.
-
-### EC7 -- Petrol for any vehicle [T1]
-**Situation:** Business purchases petrol for a qualifying business vehicle (e.g., taxi).
-**Resolution:** Input VAT is BLOCKED. Petrol is always non-deductible under Section 59(2)(e), even if the vehicle itself qualifies for input VAT recovery.
-**Legislation:** VATCA 2010, Section 59(2)(e).
-
-### EC8 -- Conference attendance -- hotel accommodation [T2]
-**Situation:** Employee attends a qualifying conference in Dublin. Hotel invoice shows accommodation and meals separately.
-**Resolution:** VAT on the accommodation element MAY be deductible if: (a) it is a qualifying conference, (b) the accommodation is necessary for attendance, (c) the claim is for accommodation only. VAT on food and drink at the conference is NOT deductible (Section 59 block). Flag for reviewer to confirm qualifying conference status.
-**Legislation:** VATCA 2010, Section 59(2)(b) -- exception for qualifying conferences; Revenue guidance.
-
-### EC9 -- Credit notes [T1]
-**Situation:** Business receives a credit note from a supplier.
-**Resolution:** Reduce the original VAT entry. If original purchase included VAT in T2, reduce T2 by the VAT on the credit note. If the original sale included VAT in T1, reduce T1 by the VAT on the credit note. Net figures are reported.
-**Legislation:** VATCA 2010, Section 57 (adjustments).
-
-### EC10 -- Construction subcontractor under RCT [T1]
-**Situation:** A principal contractor receives an invoice from a construction subcontractor. The invoice shows no VAT. RCT applies.
-**Resolution:** Principal self-accounts for VAT. Output VAT at 13.5% goes in T1. Input VAT at 13.5% goes in T2 (if deductible). The subcontractor does NOT charge VAT. This is separate from the RCT withholding tax (0%/20%/35%) which is an income tax matter.
-**Legislation:** VATCA 2010, Section 56(2); Taxes Consolidation Act 1997, Sections 530A-530T (RCT).
-
-### EC11 -- Postponed Accounting for non-EU imports [T1]
-**Situation:** Business imports goods from the US. Registered for Postponed Accounting.
-**Resolution:** Report customs value + duty in PA1. Self-account VAT in T1 at applicable rate. Claim same VAT in T2 (if deductible). Net cash effect = zero. Without Postponed Accounting, VAT would be paid to Customs at import and recovered later via T2 (cash flow disadvantage).
-**Legislation:** VATCA 2010, Section 56(6) as inserted by Finance Act 2020.
-
-### EC12 -- Flat-rate farmer supplies [T1]
-**Situation:** VAT-registered business buys agricultural produce from a flat-rate farmer.
-**Resolution:** The flat-rate farmer charges a 4.5% flat-rate addition (not VAT; reduced from 5.1% effective 1 January 2026). The purchasing business CAN claim this 4.5% as input VAT in T2. The flat-rate farmer does not file VAT returns.
-**Legislation:** VATCA 2010, Section 86.
-
-### EC13 -- Northern Ireland post-Brexit [T1 for goods, T2 for services]
-**Situation:** Irish business trades with a Northern Ireland business.
-**Resolution for GOODS:** Northern Ireland has XI-prefix VAT numbers. Treat as intra-EU for goods. Use E1/E2 boxes. Zero-rate if B2B with valid XI VAT number.
-**Resolution for SERVICES:** Treat Northern Ireland as non-EU (GB). Reverse charge applies. No ES1/ES2 entry (those are EU only). Self-account in T1/T2.
-**Legislation:** Northern Ireland Protocol / Windsor Framework; Revenue eBrief guidance.
-
-### EC14 -- Bad debt relief [T2]
-**Situation:** Customer has not paid invoice for over 6 months.
-**Resolution:** If on invoice basis, business has already accounted for output VAT. Can claim bad debt relief by reducing T1 in the period the debt becomes bad (6 months overdue, written off in accounts, and debtor has been notified). If later recovered, must re-account.
-**Legislation:** VATCA 2010, Section 39.
-
----
-
-## Step 14: Out of Scope -- Direct Tax (Reference Only) [T3]
-
-This skill does not compute income tax or corporation tax. The following is reference information only. Do not execute any of these rules. Escalate to chartered accountant.
-
-- **Corporation Tax:** Standard rate 12.5% on trading income; 25% on passive/non-trading income. Pillar Two minimum effective rate of 15% for qualifying groups.
-- **Income Tax (self-employed):** Progressive bands 20%/40%. USC applies on gross income. PRSI Class S for self-employed.
-- **RCT (Relevant Contracts Tax):** 0%, 20%, or 35% withholding on construction/meat/forestry payments. Separate from VAT. Filed via ROS.
-- **Preliminary Tax:** Paid by 23rd of month 11 of accounting period (ROS). 90% of current year or 100% of prior year.
-
----
-
-## Step 15: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
+### Sheet "Return Form"
 
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Chartered accountant or chartered tax adviser must confirm before filing.
+Positive NET → payable to Revenue.
+Negative NET → refund from Revenue.
 ```
 
-When Claude identifies a [T3] situation, output:
+### Mandatory recalc step
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to chartered accountant. Document gap.
+```bash
+python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/ireland-vat-<period>-working-paper.xlsx
 ```
 
 ---
 
-## Step 16: Test Suite
+## Section 8 — Ireland bank statement reading guide
 
-These reference transactions have known correct outputs. Use to validate skill execution.
+**CSV format conventions.** AIB exports use comma-separated with DD/MM/YYYY dates. Bank of Ireland uses similar format. PTSB may use semicolons. Common columns: Date, Description, Debit, Credit, Balance.
 
-### Test 1 -- Standard domestic purchase, 23% VAT, office supplies
-**Input:** Irish supplier, office supplies, gross EUR 246, VAT EUR 46, net EUR 200. Fully taxable business.
-**Expected output:** T2 includes EUR 46. Input VAT recoverable in full.
+**Irish language variants.** Most descriptions are in English. Occasional Irish: cíos (rent), tuarastal (salary), ús (interest). Treat as English equivalents.
 
-### Test 2 -- Non-EU SaaS subscription, reverse charge
-**Input:** US supplier (AWS), monthly fee EUR 100, no VAT on invoice. Fully taxable business.
-**Expected output:** T1 includes EUR 23 (23% self-accounted output VAT). T2 includes EUR 23 (input VAT, deductible). Net VAT effect = zero. No ES2 entry (non-EU).
+**Internal transfers.** Labelled "transfer", "own account", "internal". Always exclude.
 
-### Test 3 -- EU SaaS subscription, reverse charge
-**Input:** German supplier (SAP), monthly fee EUR 500, no VAT charged, Irish customer VAT number on invoice. Fully taxable business.
-**Expected output:** ES2 = EUR 500. T1 includes EUR 115 (23% self-accounted). T2 includes EUR 115 (deductible). Net VAT effect = zero.
+**Owner draws.** Sole trader transfers to personal account are drawings — exclude.
 
-### Test 4 -- Intra-Community acquisition of goods
-**Input:** Italian supplier ships physical goods to Ireland. Invoice EUR 2,000, no VAT, Irish customer VAT number referenced. Goods are standard-rated in Ireland.
-**Expected output:** E2 = EUR 2,000. T1 includes EUR 460 (23% self-accounted). T2 includes EUR 460 (deductible). Net = zero.
+**Refunds.** Identify by "refund", "credit note", "reversal". Book as negative.
 
-### Test 5 -- EU B2B service sale, zero rated
-**Input:** Irish business invoices French company EUR 1,000 for consulting. French customer has valid VAT number. Reverse charge applies in France.
-**Expected output:** ES1 = EUR 1,000. No T1 entry. No T2 entry. Include on VIES return.
+**Currency.** EUR only for domestic. Foreign currency → convert at ECB rate.
 
-### Test 6 -- Motor vehicle purchase, blocked
-**Input:** Business (not motor dealer/taxi) purchases a car for EUR 30,000 including EUR 5,610 VAT (23%).
-**Expected output:** T2 = EUR 0 for this transaction. VAT is BLOCKED under Section 59(2)(d). Full EUR 30,000 is cost.
+**IBAN prefix.** IE = Ireland. GB = UK (non-EU post-Brexit). DE, FR, NL = EU. US, AU, CH = non-EU.
 
-### Test 7 -- Petrol, always blocked
-**Input:** Taxi operator purchases petrol EUR 100 including EUR 18.70 VAT (23%).
-**Expected output:** T2 = EUR 0 for this transaction. Petrol VAT is BLOCKED even though the taxi itself qualifies for VAT recovery.
-
-### Test 8 -- Diesel for commercial van, deductible
-**Input:** Delivery company purchases auto-diesel EUR 150 including EUR 28.05 VAT (23%). Commercial van.
-**Expected output:** T2 includes EUR 28.05. Diesel is NOT petrol. Vehicle qualifies. VAT is deductible.
-
-### Test 9 -- EU hotel consumed abroad
-**Input:** Employee stays at hotel in Spain. Invoice EUR 200 including EUR 20 Spanish VAT.
-**Expected output:** No entry on Irish VAT3. Not reverse charge. Spanish VAT is irrecoverable on Irish return. May be recoverable via EU VAT Refund Directive (separate process).
-
-### Test 10 -- Construction reverse charge (RCT)
-**Input:** Principal contractor receives invoice from subcontractor for EUR 10,000, no VAT charged. RCT applies. Construction services at 13.5%.
-**Expected output:** T1 includes EUR 1,350 (13.5% self-accounted). T2 includes EUR 1,350 (if deductible). Net = zero.
-
-### Test 11 -- Domestic sale at 9% (restaurant, from July 2026)
-**Input:** Restaurant sells meal for EUR 50 net. 9% VAT applies (post-1 July 2026).
-**Expected output:** T1 includes EUR 4.50.
-
-### Test 12 -- Postponed Accounting import
-**Input:** Business imports goods from US. Customs value EUR 5,000, duty EUR 200. Standard rate goods. Registered for PA.
-**Expected output:** PA1 = EUR 5,200. T1 includes EUR 1,196 (23% of EUR 5,200). T2 includes EUR 1,196 (if deductible). Net = zero.
-
-### Test 13 -- Flat-rate farmer purchase
-**Input:** Food manufacturer buys cattle from flat-rate farmer. Net EUR 10,000 + 5.5% flat-rate addition = EUR 550.
-**Expected output:** T2 includes EUR 550 (flat-rate addition is claimable as input VAT).
-
-### Test 14 -- Entertainment, blocked
-**Input:** Business takes client to dinner. Restaurant bill EUR 200 including EUR 16.36 VAT (9%).
-**Expected output:** T2 = EUR 0 for this transaction. Entertainment is BLOCKED under Section 59(2)(c). No exceptions.
+**Important post-Brexit note:** UK (GB) is non-EU. Supplies to/from UK are treated as non-EU (imports/exports), NOT intra-EU. Northern Ireland has special protocol for goods.
 
 ---
 
-## Step 17: Legal References Summary
+## Section 9 — Onboarding fallback (only when inference fails)
 
-| Reference | Description |
-|-----------|-------------|
-| VATCA 2010 | Value-Added Tax Consolidation Act 2010 (principal legislation) |
-| Schedule 1 | Exempt activities |
-| Schedule 2 | Zero-rated goods and services |
-| Schedule 3 | Goods and services subject to reduced rates |
-| Schedule 4 | Registration thresholds |
-| Section 3 | Supply of goods |
-| Section 5 | Supply of services |
-| Section 14 | Moneys received (cash) basis |
-| Section 16 | Intra-Community acquisitions |
-| Section 30 | Place of supply of goods |
-| Section 33 | Place of supply of services (general rule) |
-| Section 39 | Bad debt relief |
-| Section 41 | Two-thirds rule |
-| Section 46 | Rates of tax |
-| Section 56 | Reverse charge |
-| Section 59 | Blocked deductions (food, drink, accommodation, entertainment, motor vehicles, petrol) |
-| Section 60 | Apportionment (partial exemption) |
-| Section 64 | Capital Goods Scheme |
-| Section 76 | Returns (VAT3, RTD) |
-| Section 80 | VIES |
-| Section 86 | Flat-rate farmers |
-| Section 93-98 | VAT on property |
-| Section 115 | Penalties |
-| TCA 1997, s.1080 | Interest on late payment |
-| TCA 1997, s.1084 | Surcharges for late filing |
-| TCA 1997, s.530A-530T | Relevant Contracts Tax (RCT) |
-| Finance Act 2024/2025 | Rate changes (9% extensions, threshold increases) |
+### 9.1 Entity type
+*Inference rule:* sole trader vs Ltd vs DAC vs LLP. *Fallback:* "Are you a sole trader, company limited by shares (Ltd), DAC, or partnership?"
 
----
+### 9.2 VAT registration status and basis
+*Fallback:* "Invoice basis or Moneys Received (cash) basis?"
 
-## Contribution Notes
+### 9.3 VAT number
+*Fallback:* "What is your VAT number? (IE + 7 digits + 1-2 letters)"
 
-This skill follows the format established by the Malta VAT Return Preparation Skill. Key differences from Malta:
+### 9.4 Filing period
+*Fallback:* "Bi-monthly, quarterly, monthly, or annual? Which period?"
 
-1. **Fewer VAT3 boxes:** Ireland uses T1-T4, E1-E2, ES1-ES2, PA1 vs Malta's 45+ boxes.
-2. **Different blocked categories:** Ireland blocks petrol specifically (not just motor vehicles). Diesel for qualifying vehicles IS deductible.
-3. **No small enterprise annual declaration:** Ireland does not have an equivalent to Malta's Article 11 simplified form. Businesses below the threshold are simply unregistered.
-4. **Two-thirds rule:** Unique to Ireland (Section 41). Malta does not have an equivalent.
-5. **Construction reverse charge (RCT):** Ireland's construction reverse charge is linked to the RCT withholding tax system. Malta does not have an equivalent.
-6. **Property VAT / CGS:** Ireland's Capital Goods Scheme for property is far more complex than Malta's capital goods threshold.
-7. **Cash basis available:** Ireland allows Moneys Received basis for businesses under EUR 2M. Malta does not have an equivalent election.
-8. **Postponed Accounting:** Ireland's PA1 box on VAT3 is specific to post-Brexit import arrangements. Malta handles imports differently.
-9. **Filing frequency:** Ireland is bi-monthly (6 returns per year). Malta is quarterly (4 returns for Article 10).
-10. **Flat-rate farmer scheme:** Ireland's 5.5% flat-rate addition is claimable as input VAT by the purchaser.
+### 9.5 Industry
+*Fallback:* "What does the business do?"
 
-**A skill may not be published without sign-off from a warranted practitioner in the relevant jurisdiction. This skill is version 0.9 (draft) and MUST be validated by an Irish chartered accountant or chartered tax adviser before use in production.**
+### 9.6 Employees
+*Inference rule:* PRSI, PAYE, salary outgoing. *Fallback:* "Do you have employees?"
 
+### 9.7 Exempt supplies
+*Fallback:* "Do you make VAT-exempt sales?" *If yes → R-IE-4 may fire.*
+
+### 9.8 Credit brought forward
+*Always ask:* "Excess credit from previous period?"
+
+### 9.9 Cross-border customers
+*Fallback:* "Customers outside Ireland? EU or non-EU? B2B or B2C?"
+
+### 9.10 Property / construction
+*Fallback:* "Do you deal in property or construction?" *If yes → R-IE-2/R-IE-3/R-IE-7 may fire.*
 
 ---
 
-## Disclaimer
+## Section 10 — Reference material
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+### Validation status
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+v2.0, rewritten April 2026. Awaiting validation by Irish chartered accountant or chartered tax adviser.
+
+### Sources
+
+1. VATCA 2010 (Value-Added Tax Consolidation Act 2010) — https://www.irishstatutebook.ie
+2. Revenue guidance — https://www.revenue.ie
+3. ROS — https://www.ros.ie
+4. Council Directive 2006/112/EC — via eu-vat-directive companion skill
+5. VIES — https://ec.europa.eu/taxation_customs/vies/
+6. ECB exchange rates
+
+### Known gaps
+
+1. The SaaS pattern library is critical for Ireland — most major tech companies bill from IE entities, making them domestic rather than reverse charge. Verify each supplier.
+2. Capital Goods Scheme (Section 64) is entirely excluded.
+3. Two-thirds rule (Section 41) is flagged as Tier 2 but not fully worked.
+4. Northern Ireland Protocol for goods is not fully addressed.
+5. Cash basis eligibility and mechanics are noted but not detailed.
+6. Energy VAT rates may have temporary changes — verify current rates.
+
+### Change log
+
+- **v2.0 (April 2026):** Full rewrite to three-tier Accora architecture.
+- **v1.0 (April 2026):** Initial draft. Standalone document.
+
+### Self-check (v2.0)
+
+1. Quick reference with VAT3 box table and conservative defaults: yes (Section 1).
+2. Supplier library with Irish patterns: yes (Section 3, 14 sub-tables).
+3. Worked examples: yes (Section 4, 6 examples).
+4. Tier 1 rules compressed: yes (Section 5, 14 rules).
+5. Tier 2 catalogue: yes (Section 6, 14 items).
+6. Excel template with recalc: yes (Section 7).
+7. Onboarding as fallback: yes (Section 9, 10 items).
+8. All 8 Ireland-specific refusals: yes (R-IE-1 through R-IE-8).
+9. Reference material at bottom: yes (Section 10).
+10. Multiple rates (23%/13.5%/9%/4.8%/0%) documented: yes.
+11. Irish SaaS domestic exception (IE entities = domestic, NOT reverse charge): yes (Section 3.8, Example 2).
+12. Motor vehicle hard block (Section 59): yes (Section 5.10, Example 6).
+13. Zero-rated food documented: yes (Section 5.5).
+14. Passenger transport zero-rated: yes (Section 3.6).
