@@ -1,639 +1,529 @@
 ---
 name: philippines-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for Philippines VAT purposes. Trigger on phrases like "Philippines VAT", "BIR VAT", "2550Q", "2550M", "Philippine VAT return", "NIRC VAT", "VAT 12%", or any request involving Philippine VAT filing, classification, or compliance. This skill contains the complete Philippines VAT classification rules, BIR form mappings, deductibility rules, reverse charge treatment, registration thresholds, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Philippines VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Philippines VAT return (BIR Form 2550M/2550Q), classify transactions for Philippine VAT purposes, or advise on VAT registration and filing in the Philippines. Trigger on phrases like "Philippines VAT", "BIR Form 2550", "input VAT Philippines", "output VAT Philippines", "VAT-registered Philippines", "percentage tax Philippines", or any Philippines VAT request. ALWAYS read this skill before touching any Philippines VAT work.
+version: 2.0
+jurisdiction: PH
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# Philippines VAT Return Preparation Skill
+# Philippines VAT Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Philippines |
-| Jurisdiction Code | PH |
-| Primary Legislation | National Internal Revenue Code of 1997 (NIRC), as amended by Republic Act No. 10963 (TRAIN Law, 2017), Republic Act No. 12066 (CREATE MORE Act, 2024), and Republic Act No. 12023 (VAT on Digital Services Act, 2024) -- Title IV, Sections 105-115 |
-| Supporting Legislation | Revenue Regulations (RR) No. 16-2005 (Consolidated VAT Regulations); RR No. 9-2021 (invoicing); RR No. 13-2018 (TRAIN implementation); RR No. 3-2025 and RR No. 14-2025 (VAT on Digital Services implementing rules); Revenue Memorandum Circular (RMC) No. 5-2024 (e-invoicing/CAS) |
-| Tax Authority | Bureau of Internal Revenue (BIR) |
-| Filing Portal | https://efps.bir.gov.ph (eFPS) and https://ebirforms.bir.gov.ph |
-| Contributor | [Jurisdiction practitioner to be confirmed] |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: transaction classification, rate determination, BIR form box assignment, blocked input tax, zero-rating conditions, derived calculations. Tier 2: partial input VAT allocation for mixed taxpayers, transitional input VAT, CAS compliance. Tier 3: BOI/PEZA interactions, treaty-based exemptions, complex financial instruments. |
+|---|---|
+| Country | Philippines (Republika ng Pilipinas) |
+| Tax | Value Added Tax (VAT) |
+| Currency | PHP (Philippine Peso / ₱) |
+| Tax year | Calendar year (1 Jan – 31 Dec) |
+| Standard rate | 12% |
+| Zero rate | 0% (exports; services to non-residents; PEZA/BOI-registered enterprises; international transport) |
+| Exempt | Agricultural products (unprocessed), educational services, medical/hospital services, housing below threshold (PHP 3.199M), financial services (some), life insurance premiums, importation of basic necessities |
+| Registration threshold | PHP 3,000,000 per year in gross sales/receipts |
+| Non-VAT (percentage tax) | 3% on gross receipts for non-VAT-registered (< PHP 3M); quarterly Form 2551Q |
+| Tax authority | Bureau of Internal Revenue (BIR) |
+| Monthly return | BIR Form 2550M (due: 20th of following month) |
+| Quarterly return | BIR Form 2550Q (due: 25th of month following quarter end) |
+| Filing portal | EFPS (Electronic Filing and Payment System) — https://efps.bir.gov.ph |
+| Tax invoice | Official Receipt (OR) or Sales Invoice — BIR-registered |
+| TIN | Tax Identification Number (9 or 12 digits) |
+| RDO | Revenue District Office — taxpayer's registered district |
+| Contributor | Open Accountants Community |
+| Validated by | Pending — requires sign-off by a Philippine CPA or tax practitioner |
+| Skill version | 2.0 |
+
+### Key Form 2550M/Q lines
+
+| Line | Meaning |
+|---|---|
+| Part I-A | Sales/receipts at 12% (net of VAT) |
+| Part I-B | Zero-rated sales |
+| Part I-C | Exempt sales |
+| Part II | Output VAT at 12% |
+| Part III | Input VAT from domestic purchases |
+| Part IV | Input VAT from importation |
+| Part V | Net input VAT available |
+| Part VI | VAT payable (Part II − Part V) |
+| Part VII | Tax credits/excess credit |
+| Part VIII | Net VAT still due |
+
+### Conservative defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 12% standard |
+| Unknown counterparty country | Domestic Philippines |
+| Unknown export/zero-rate qualification | 12% until evidence confirmed |
+| Unknown business-use % (vehicle, phone) | 0% input VAT |
+| Unknown whether Official Receipt compliant | No input credit |
+| Unknown B2B vs B2C for digital services | 12% domestic |
+| Unknown PEZA status | Not zero-rated until certificate confirmed |
+
+### Red flag thresholds
+
+| Threshold | Value |
+|---|---|
+| HIGH single transaction | PHP 500,000 |
+| HIGH tax delta on single default | PHP 60,000 |
+| MEDIUM counterparty concentration | >40% of output or input |
+| MEDIUM conservative default count | >4 per period |
+| LOW absolute net VAT position | PHP 200,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A licensed tax practitioner must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to licensed tax practitioner and document the gap.
+**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. TIN and confirmation of VAT registration (Certificate of Registration — COR, BIR Form 2303).
 
----
+**Recommended** — Official Receipts (ORs) or Sales Invoices for all output VAT, supplier ORs/invoices for all input VAT claimed, prior period excess credit.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete sales/purchase journal, import entries, prior quarterly return, EFPS filing confirmation.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal if minimum missing — SOFT WARN.** No bank statement = hard stop. "Input VAT credits require BIR-registered Official Receipts (OR) or Sales Invoices from VAT-registered suppliers. All credits are provisional pending receipt verification."
 
-1. **Entity name and TIN (Taxpayer Identification Number)** [T1] -- 9-digit TIN plus branch code (if applicable)
-2. **VAT registration status** [T1] -- VAT-registered, Non-VAT (percentage tax under Section 116), or VAT-exempt
-3. **Filing type** [T1] -- eFPS (Electronic Filing and Payment System) or eBIRForms
-4. **Taxable quarter** [T1] -- fiscal quarter (January-March, April-June, July-September, October-December for calendar year taxpayers)
-5. **Business type** [T1] -- corporation, sole proprietor, partnership, professional
-6. **Industry/sector** [T2] -- impacts exempt/zero-rated classification and input VAT allocation
-7. **Does the business make both taxable and exempt supplies?** [T2] -- if yes, input VAT allocation required (Section 110(A)(3)); reviewer must confirm allocation method
-8. **Does the business have PEZA/BOI registration?** [T3] -- fiscal incentive zones have VAT zero-rating or exemptions; escalate
-9. **Does the business use a CAS (Computerized Accounting System)?** [T1] -- CAS permit from BIR required if using computerized books/invoices
-10. **Excess input VAT carried forward** [T1] -- from prior quarter's BIR Form 2550Q
+### Refusal catalogue
 
-**If any of items 1-2 are unknown, STOP. Do not classify any transactions until registration status is confirmed.**
+**R-PH-1 — Non-VAT (percentage tax) taxpayer.** "Businesses below the PHP 3M threshold pay percentage tax (3% of gross receipts) via Form 2551Q, not VAT. They cannot register ORs for VAT and cannot recover input VAT. This skill covers VAT-registered businesses only."
+
+**R-PH-2 — PEZA/BOI zero-rating complex structures.** "PEZA-registered enterprises have specific zero-rating rules for sales within the ecozone. If the client sells to a PEZA entity and claims zero-rating, verify the PEZA certificate — if complex, escalate to a Philippine CPA."
+
+**R-PH-3 — Partial exemption with mixed supplies.** "If the business makes both taxable and exempt supplies and cannot directly attribute input VAT, an allocation is required. Out of scope without the annual ratio — escalate."
+
+**R-PH-4 — Withholding VAT (Final Withholding VAT).** "Certain transactions (e.g., payments by government, non-residents) are subject to final withholding VAT. If significant government contracts exist, track separately — escalate to a CPA."
+
+**R-PH-5 — Digital service providers (non-residents).** "Non-resident digital service providers with Philippine consumption must register for VAT under the Digital Economy Taxation Act. Out of scope for domestic filers."
 
 ---
 
-## Step 1: Transaction Classification Rules
+## Section 3 — Supplier pattern library
 
-### 1a. Determine Transaction Type [T1]
-- Sale/revenue (output VAT) or Purchase/expense (input VAT)
-- Salaries, withholding taxes (EWT/FWT), SSS/PhilHealth/Pag-IBIG contributions, loan repayments, dividends = OUT OF SCOPE (never on VAT return)
-- **Legislation:** NIRC Section 105 -- persons liable for VAT; Section 106 (sale of goods); Section 108 (sale of services)
+Match by case-insensitive substring on counterparty name or reference. Most specific match wins. Fall through to Section 5 if no match.
 
-### 1b. Determine Counterparty Location [T1]
-- Domestic (Philippines): supplier/customer located in the Philippines
-- Overseas: supplier/customer located outside the Philippines
-- **Note:** Services rendered to non-resident foreign clients (B2B) may qualify for zero-rating (Section 108(B))
-- **Note:** Goods imported into the Philippines = subject to import VAT (collected by Bureau of Customs)
+### 3.1 Philippine banks — fees and charges (exempt / exclude)
 
-### 1c. Determine VAT Rate [T1]
-- **Standard rate: 12%** (NIRC Section 106(A), Section 108(A))
-- **Zero rate: 0%** -- exports, services to non-residents, specific activities (Sections 106(A)(2), 108(B))
-- **Exempt: no VAT** -- listed in Section 109
-- **Legislation:** NIRC Sections 106, 108, 109
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BDO UNIBANK, BANCO DE ORO | EXCLUDE (fee lines) | Financial service — VAT exempt |
+| BANK OF THE PHILIPPINE ISLANDS, BPI | EXCLUDE (fee lines) | Same |
+| METROBANK, METROPOLITAN BANK | EXCLUDE (fee lines) | Same |
+| UNIONBANK OF THE PHILIPPINES | EXCLUDE (fee lines) | Same |
+| SECURITY BANK | EXCLUDE (fee lines) | Same |
+| LANDBANK OF THE PHILIPPINES, LBP | EXCLUDE (fee lines) | Same |
+| PHILIPPINE NATIONAL BANK, PNB | EXCLUDE (fee lines) | Same |
+| CHINA BANKING, CHINABANK | EXCLUDE (fee lines) | Same |
+| RCBC, RIZAL COMMERCIAL BANKING | EXCLUDE (fee lines) | Same |
+| GCASH, G-XCHANGE (GXI) | EXCLUDE (fee lines) | E-wallet — financial service |
+| MAYA, PAYMAYA | EXCLUDE (fee lines) | E-wallet — financial service |
+| SEABANK | EXCLUDE (fee lines) | Digital bank — financial service |
+| SERVICE CHARGE, BANK FEE, INTEREST | EXCLUDE | Bank charges/interest — exempt |
 
-### 1d. Rate Calculation from Invoice [T1]
-- Calculate from amounts: `rate = vat_amount / (gross_amount - vat_amount) * 100`
-- Philippine invoices typically show VAT as: `gross_amount / 1.12 = net_amount; VAT = net_amount * 0.12`
-- Normalize to 0% or 12%
-- If calculated rate does not match 0% or 12%, [T2] flag for reviewer
+### 3.2 Philippine government and statutory (exclude)
 
-### 1e. Determine Expense Category [T1]
-- Capital goods: tangible depreciable assets with aggregate acquisition cost > PHP 1,000,000 within a 12-month period (amortization of input VAT applies -- Section 110(A)(2))
-- Goods for resale: inventory purchased for resale
-- Goods other than for resale: raw materials, supplies, operating inputs
-- Services: professional fees, utilities, rent, etc.
-- **Legislation:** NIRC Section 110(A)(2) (capital goods input VAT amortization)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BUREAU OF INTERNAL REVENUE, BIR | EXCLUDE | Tax payment |
+| BUREAU OF CUSTOMS, BOC | EXCLUDE | Customs duty |
+| SOCIAL SECURITY SYSTEM, SSS | EXCLUDE | Social insurance |
+| PHILHEALTH | EXCLUDE | Health insurance |
+| PAG-IBIG, HDMF | EXCLUDE | Housing fund |
+| SEC PHILIPPINES | EXCLUDE | Regulatory fee |
+| LGU, BARANGAY, CITY HALL | EXCLUDE | Local government fee |
+
+### 3.3 Philippine utilities (taxable at 12%)
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| MERALCO, MANILA ELECTRIC | Input 12% | 12% | Electricity (Metro Manila) — taxable |
+| CEPALCO (Cagayan de Oro electric) | Input 12% | 12% | Electricity — taxable |
+| VECO (Visayas Electric) | Input 12% | 12% | Electricity — taxable |
+| MANILA WATER | Input 12% | 12% | Water (East Zone) — taxable |
+| MAYNILAD WATER SERVICES | Input 12% | 12% | Water (West Zone) — taxable |
+| PLDT, PHILIPPINE LONG DISTANCE | Input 12% | 12% | Telecom/internet — taxable |
+| GLOBE TELECOM | Input 12% | 12% | Mobile/internet — taxable |
+| SMART COMMUNICATIONS, SMART | Input 12% | 12% | Mobile — taxable |
+| DITO TELECOMMUNITY | Input 12% | 12% | Mobile — taxable |
+| CONVERGE ICT | Input 12% | 12% | Internet — taxable |
+
+### 3.4 Transport and logistics
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| PHILIPPINE AIRLINES, PAL | Check route | 0%/12% | International 0%; domestic 12% |
+| CEBU PACIFIC | Check route | 0%/12% | International 0%; domestic 12% |
+| AIRASIA PHILIPPINES | Check route | 0%/12% | International 0%; domestic 12% |
+| PHILIPPINE NATIONAL RAILWAYS, PNR | Input 12% | 12% | Rail — taxable |
+| LRT, MRT (Metro Rail Transit) | Input 12% | 12% | Mass transit — taxable |
+| GRAB PHILIPPINES | Input 12% | 12% | Ride-hailing — taxable |
+| ANGKAS | Input 12% | 12% | Motorcycle taxi — taxable |
+| LBC EXPRESS | Input 12% | 12% | Courier — taxable |
+| JRS EXPRESS | Input 12% | 12% | Courier — taxable |
+| DHL PHILIPPINES | Input 12% | 12% | Courier — taxable |
+| FEDEX PHILIPPINES | Input 12% | 12% | Courier — taxable |
+| 2GO EXPRESS | Input 12% | 12% | Courier — taxable |
+| NINJA VAN PHILIPPINES | Input 12% | 12% | Courier — taxable |
+| J&T EXPRESS PHILIPPINES | Input 12% | 12% | Courier — taxable |
+
+### 3.5 Food and retail
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| SM SUPERMARKET, SM MARKETS | Input 12% | 12% | Supermarket — 12% on non-exempt items |
+| ROBINSONS SUPERMARKET | Input 12% | 12% | Supermarket — 12% |
+| PUREGOLD | Input 12% | 12% | Supermarket — 12% |
+| S&R MEMBERSHIP SHOPPING | Input 12% | 12% | Warehouse club — 12% |
+| MERCURY DRUG | Input 12% (medicine) / EXEMPT (prescription) | Mixed | Prescription medicines exempt; OTC/non-medicine 12% |
+| WATSONS PHILIPPINES | Input 12% | 12% | Health/beauty retail — 12% |
+| 7-ELEVEN PHILIPPINES | Input 12% | 12% | Convenience store — 12% |
+| JOLLIBEE (eat-in) | Input 12% | 12% | Restaurant — 12% (food not exempt when eaten in) |
+| MCDONALD'S PHILIPPINES | Input 12% | 12% | Restaurant — 12% |
+
+### 3.6 SaaS — international suppliers (note: PH now has digital VAT)
+
+Under the Digital Economy Taxation Act (R.A. 11976, signed 2024), non-resident digital service providers must register for Philippine VAT. For B2B PKP buyers: input credit claimable if the foreign supplier charges and remits 12% VAT.
+
+| Pattern | Status | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Workspace, Ads, Cloud) | Should be registered | Input 12% if charged | Check if Google charges PH VAT on invoice |
+| MICROSOFT (365, Azure) | Should be registered | Input 12% if charged | Same |
+| META, FACEBOOK ADS | Should be registered | Input 12% if charged | Same |
+| NETFLIX | Registered | 12% on subscription | Consumer-facing |
+| ZOOM | Check | Input 12% if charged | Verify registration |
+| SLACK | Check | Input 12% if charged | Verify |
+| NOTION, OPENAI, ANTHROPIC | Check | Flag for verification | Verify PH registration status |
+| AWS | Check | Input 12% if charged | Verify |
+
+### 3.7 Payment processors (exempt fees)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PAYPAL (transaction fees) | EXCLUDE | Financial service — VAT exempt |
+| STRIPE (transaction fees) | EXCLUDE | Same |
+| GCASH (transaction fees) | EXCLUDE | Same |
+| PAYMONGO (fees) | EXCLUDE | Payment gateway — exempt |
+| DRAGONPAY (fees) | EXCLUDE | Same |
+
+### 3.8 Professional services (VAT-registered)
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| CPA FIRM, ACCOUNTING FIRM | Input 12% | 12% | Professional services — taxable |
+| LAW FIRM, ATTY, ATTORNEY | Input 12% | 12% | Legal services — taxable |
+| NOTARY PUBLIC | Input 12% | 12% | Notarial services — taxable |
+| ADVERTISING AGENCY | Input 12% | 12% | Marketing — taxable |
+
+### 3.9 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| INTER-ACCOUNT TRANSFER, OWN ACCOUNT | EXCLUDE | Internal movement |
+| LOAN PROCEEDS, LOAN REPAYMENT | EXCLUDE | Loan principal — out of scope |
+| SALARY, PAYROLL | EXCLUDE | Wages — outside VAT scope |
+| DIVIDEND | EXCLUDE | Out of scope |
+| SECURITY DEPOSIT, ADVANCE DEPOSIT | Tier 2 — check | May trigger VAT if applied to taxable supply |
+| ATM WITHDRAWAL, CASH WITHDRAWAL | Tier 2 — ask | Default exclude |
 
 ---
 
-## Step 2: VAT Rates and Classification Matrix
+## Section 4 — Worked examples
 
-### Taxable Sales at 12% (Standard Rate) [T1]
-**Legislation:** NIRC Section 106(A) (goods), Section 108(A) (services)
+Six classifications from a hypothetical Manila-based IT consultant. Format: BDO Unibank transaction history.
 
-All sales of goods, properties, and services by VAT-registered persons are subject to 12% VAT unless specifically zero-rated or exempt. Includes:
-- Sale of goods/merchandise in the ordinary course of trade
-- Sale of real property in the ordinary course of trade (not residential under PHP 3.199M threshold)
-- Lease of commercial property
-- Services rendered domestically (professional, consulting, etc.)
-- Importation of goods (collected by Bureau of Customs)
-- Deemed sale transactions (Section 106(B)): distribution of inventory to shareholders, change from VAT to non-VAT, retirement/dissolution
+### Example 1 — Domestic B2B revenue (12%)
 
-### Zero-Rated Sales (0%) [T1]
-**Legislation:** NIRC Section 106(A)(2) (goods), Section 108(B) (services)
+**Input line:**
+`04/15/2025  CREDIT  ABC TECH SOLUTIONS INC  REF INV-2025-041  PHP 1,120,000.00  PHP 5,000,000.00`
 
-| Category | Section | Conditions |
-|----------|---------|------------|
-| Export sales | 106(A)(2)(a)(1) | Goods shipped from Philippines to foreign country; must have export documentation |
-| Foreign currency denominated sales | 106(A)(2)(a)(2) | Sale to non-resident, paid in foreign currency, goods shipped abroad |
-| Sales to PEZA/Freeport enterprises | 106(A)(2)(a)(5) | Sales to registered enterprises in ecozones (cross-border doctrine) |
-| Services rendered to non-residents | 108(B)(1) | Service performed for a person engaged in business outside Philippines; paid in foreign currency or equivalent |
-| Services rendered to PEZA/Freeport enterprises | 108(B)(5) | Services to registered enterprises in ecozones |
-| Transport of passengers/cargo by domestic carrier from Philippines to foreign country | 108(B)(4) | International carriers |
-| Sale of power/fuel generated through renewable energy | 106(A)(2)(a)(6) | Renewable energy developers registered under RE Act |
+**Reasoning:**
+Incoming PHP 1,120,000 from a Philippine company for IT consulting. Standard 12% VAT. Gross PHP 1,120,000 includes VAT. Net = PHP 1,000,000 (taxable base) + PHP 120,000 output VAT. A BIR-registered Official Receipt or Service Invoice must be issued. Report on Form 2550M Part I-A.
 
-### Zero-Rating Requirements (Critical) [T1]
-For zero-rating to apply, ALL of the following must be present:
-1. The seller must be VAT-registered
-2. The transaction must fall within the enumerated zero-rated categories
-3. Proper documentation must exist (export permits, proof of foreign currency payment, BOC export declarations)
-4. BIR invoices/receipts must indicate zero-rated sale
+**Classification:** Output VAT 12% — PHP 120,000. Net sales: PHP 1,000,000.
 
-**If documentation is incomplete, zero-rating is disallowed and 12% applies.** [T2] flag for reviewer if documentation is uncertain.
+### Example 2 — Zero-rated export service
 
-### Exempt Transactions (Section 109) [T1]
-**Legislation:** NIRC Section 109 (as amended by TRAIN Law)
+**Input line:**
+`04/22/2025  CREDIT  ACME CORPORATION USA  USD 10,000 (PHP 560,000.00)  PHP 5,560,000.00`
 
-| Category | Section 109 Reference | Notes |
-|----------|----------------------|-------|
-| Sale/importation of agricultural products in original state | 109(A) | Unprocessed: rice, corn, vegetables, fruits, meat, fish, poultry, eggs, milk |
-| Sale/importation of fertilizers, seeds, seedlings, fingerlings, feeds, ingredients for animal feeds | 109(B) | Agricultural inputs |
-| Importation of personal/household effects (returning residents) | 109(C) | Subject to conditions |
-| Importation of professional instruments/tools (returning OFWs) | 109(D) | Conditions apply |
-| Services of agricultural contract growers/milling for others | 109(E) | Processing for agricultural producers |
-| Medical/dental/hospital/veterinary services (except those by professionals) | 109(G) | Hospital services exempt; professional fees of doctors subject to 12% if > PHP 3M or VAT-registered |
-| Educational services | 109(H) | By government or proprietary educational institutions and non-stock non-profit |
-| Services rendered by individuals under employer-employee relationship | 109(I) | Salary/wages are not subject to VAT |
-| Services by regional/area headquarters of multinationals | 109(K) | Non-income generating RHQs |
-| Sale/lease of residential dwelling not exceeding PHP 3,199,200 | 109(P) | Threshold per TRAIN Law (updated annually) |
-| Lease of residential unit with monthly rent not exceeding PHP 15,000 | 109(Q) | Per unit per month |
-| Sale of books, newspapers, magazines | 109(R) | Mass media publications |
-| Transport of passengers by international carriers | 109(S) | Subject to special tax |
-| Sale/importation of drugs and medicines for diabetes, high cholesterol, hypertension | 109(AA) | TRAIN Law addition |
-| Sale of gold to BSP | 109(T) | Small-scale mining |
-| Sale of real property not primarily for sale (occasional sale) | 109(P) | Not in the ordinary course of trade |
-| Cooperatives (limited conditions) | 109(L), 109(M), 109(N) | Duly registered cooperatives |
-| Financial services (lending, guarantees) | 109(U), 109(V), 109(W) | Banks subject to GRT instead of VAT on certain services |
+**Reasoning:**
+USD receipt from a US company for IT consulting services rendered to a non-resident. Zero-rated if: (1) service rendered in the Philippines; (2) paid by a non-resident in foreign currency; (3) proceeds inwardly remitted through Philippine banking. Report PHP 560,000 on Form 2550M Part I-B (zero-rated). Output VAT: PHP 0. Confirm: inward remittance documentation held.
+
+**Classification:** Zero-rated — PHP 560,000. Output VAT: PHP 0.
+
+### Example 3 — Utility expense (12%, input credit)
+
+**Input line:**
+`04/10/2025  DEBIT  MERALCO  April 2025 Electric Bill  -PHP 11,200.00  PHP 4,988,800.00`
+
+**Reasoning:**
+MERALCO electricity bill. Taxable at 12%. Gross PHP 11,200 includes VAT. Net = PHP 10,000 + PHP 1,200 input VAT. MERALCO issues BIR-registered ORs — input credit of PHP 1,200 claimable. Report on Form 2550M Part III.
+
+**Classification:** Input VAT 12% — PHP 1,200. Net expense: PHP 10,000.
+
+### Example 4 — International airline (domestic route, 12%)
+
+**Input line:**
+`04/08/2025  DEBIT  CEBU PACIFIC AIR  Manila-Cebu ticket  -PHP 4,480.00  PHP 4,984,320.00`
+
+**Reasoning:**
+Domestic flight (Manila to Cebu) on Cebu Pacific. Domestic air transport is taxable at 12%. Gross PHP 4,480. Net = PHP 4,000 + PHP 480 input VAT. Cebu Pacific issues VAT ORs for domestic tickets — input credit of PHP 480 claimable if OR is BIR-registered.
+
+**Classification:** Input VAT 12% — PHP 480. Net expense: PHP 4,000.
+
+### Example 5 — Exempt supply received (SSS contribution)
+
+**Input line:**
+`04/25/2025  DEBIT  SOCIAL SECURITY SYSTEM  SSS April 2025  -PHP 4,500.00  PHP 4,979,820.00`
+
+**Reasoning:**
+SSS employer contribution. Government social insurance — EXCLUDE from VAT return entirely. Not a supply of goods or services. No input VAT. This is a payroll-related obligation, not a business expense generating input credit.
+
+**Classification:** EXCLUDE — outside VAT scope. Statutory employer obligation.
+
+### Example 6 — Restaurant (12%, no block in Philippines)
+
+**Input line:**
+`04/12/2025  DEBIT  JOLLIBEE FOODS CORP  Client lunch  -PHP 1,120.00  PHP 4,978,700.00`
+
+**Reasoning:**
+Client lunch at Jollibee. In the Philippines, there is no absolute block on entertainment/meals input VAT (unlike Malta). Restaurant meals are taxable at 12%. If a BIR-registered OR is obtained, input VAT of PHP 120 is claimable (PHP 1,120 gross / 1.12 = PHP 1,000 net + PHP 120 VAT). However, BIR scrutinises entertainment claims — ensure business purpose is documented. If no OR: no credit.
+
+**Classification:** Input VAT 12% — PHP 120 (if OR held). Net expense: PHP 1,000. Flag: confirm BIR-registered OR from Jollibee.
 
 ---
 
-## Step 3: BIR Forms Structure and Box Assignment [T1]
+## Section 5 — Tier 1 rules (compressed)
 
-### BIR Form 2550M -- Monthly VAT Declaration
+### 5.1 Standard rate 12%
 
-**Filed monthly for the first two months of each quarter (e.g., January, February for Q1).**
+Default rate for all taxable supplies of goods and services. Legislation: National Internal Revenue Code (NIRC) Section 106 (goods) and Section 108 (services).
 
-| Section | Description |
-|---------|-------------|
-| Part I | Background information (TIN, name, period) |
-| Part II | Tax Credits/Payments |
-| Part III | Details of transactions |
+### 5.2 Zero rate — exports and qualifying supplies
 
-| Item | Description | Amount |
-|------|-------------|--------|
-| 12A | Taxable sales (12%) | Net sales |
-| 12B | Sales to government (12%, subject to withholding) | Net sales |
-| 12C | Zero-rated sales | Net sales |
-| 12D | Exempt sales | Net sales |
-| 13 | Total sales (12A + 12B + 12C + 12D) | Sum |
-| 14A | Output VAT on 12A (12%) | VAT amount |
-| 14B | Output VAT on 12B (12%) | VAT amount |
-| 14C | Less: Allowable input VAT | Input VAT |
-| 15 | Net VAT payable (14A + 14B - 14C) | Net |
-| 16-20 | Tax credits (prior excess, withholding, etc.) | Credits |
-| 21 | Tax still due | After credits |
-| 22 | Surcharges/interest/penalties | If late |
-| 23 | Total amount payable | Final |
+Zero-rated: export of goods; services rendered to non-residents paid in foreign currency (with inward remittance); services to PEZA-registered entities within ecozones; services to BOI-registered enterprises (specific cases); international transport of passengers and cargo. Evidence: export documentation; inward remittance records; PEZA certificate. Legislation: NIRC Sections 106(A)(2) and 108(B).
 
-### BIR Form 2550Q -- Quarterly VAT Return
+### 5.3 Exempt supplies
 
-**Filed quarterly for the entire quarter (cumulative of all 3 months).**
+Agricultural products in original state; educational services; medical/hospital services; literary/musical compositions; housing below PHP 3,199,200 (BIR threshold); lease of residential unit below PHP 15,000/month; life insurance premiums; common carriers below threshold; importation of basic necessities. Legislation: NIRC Sections 109.
 
-| Section | Description |
-|---------|-------------|
-| Part I | Background information |
-| Part IV-A | Summary of Sales |
-| Part IV-B | Summary of Purchases/Input VAT |
-| Part IV-C | VAT Computation |
+### 5.4 Official Receipt (OR) / Sales Invoice requirements
 
-#### Part IV-A: Sales/Receipts
+BIR-registered ORs or Sales Invoices are required for input credit. Must contain: TIN of seller and buyer, BIR-registered serial number, date, description, net amount, VAT rate, VAT amount. Electronic invoices allowed via EFPS-registered providers.
 
-| Item | Description |
-|------|-------------|
-| 16A | Taxable sales -- private (12%) |
-| 16B | Taxable sales -- government (12%, subject to 5% FWT) |
-| 16C | Zero-rated sales |
-| 16D | Exempt sales |
-| 17 | Total sales |
-| 18A | Output VAT on 16A |
-| 18B | Output VAT on 16B |
-| 19 | Total output VAT |
+### 5.5 Input VAT limitations
 
-#### Part IV-B: Purchases/Input VAT
+Input VAT is not creditable for: entertainment/representation expenses (limited — see Section 6.1); motor vehicles not used exclusively for business; purchases from non-VAT-registered suppliers; purchases without valid ORs.
 
-| Item | Description |
-|------|-------------|
-| 20A | Purchases of capital goods exceeding PHP 1M (amortized) |
-| 20B | Purchases of capital goods not exceeding PHP 1M |
-| 20C | Purchases of goods other than capital goods |
-| 20D | Purchases of services |
-| 20E | Purchases not qualifying for input VAT (blocked) |
-| 20F | Others (importations) |
-| 21 | Total purchases |
-| 22A | Input VAT on 20A (amortized portion for the quarter) |
-| 22B | Input VAT on 20B |
-| 22C | Input VAT on 20C |
-| 22D | Input VAT on 20D |
-| 22E | Input VAT on 20E (always zero -- blocked) |
-| 22F | Input VAT on 20F (imports) |
-| 23 | Total allowable input VAT |
+### 5.6 Transitional input VAT
 
-#### Part IV-C: VAT Computation
+Beginning inventory VAT credit available upon VAT registration (2% of inventory value or actual input VAT on goods for sale, whichever is higher).
 
-| Item | Description | Calculation |
-|------|-------------|-------------|
-| 24 | Total output VAT | From Item 19 |
-| 25 | Less: Total allowable input VAT | From Item 23 |
-| 26A | VAT payable (if 24 > 25) | 24 - 25 |
-| 26B | Excess input VAT (if 25 > 24) | 25 - 24 |
-| 27 | Less: Tax credits (excess from prior quarter, FWT) | Credits |
-| 28 | Net VAT payable | 26A - 27 |
-| 29 | Surcharges/interest/penalties | If late |
-| 30 | Total amount payable | 28 + 29 |
+### 5.7 Filing deadlines
 
-### Derived Calculations [T1]
+| Return | Period | Due date |
+|---|---|---|
+| Form 2550M (monthly) | Monthly | 20th of following month |
+| Form 2550Q (quarterly) | Quarterly | 25th of month following quarter |
+| Payment | Same as filing | Same deadline |
+
+### 5.8 Penalties
+
+| Offence | Penalty |
+|---|---|
+| Late filing | PHP 1,000 per return + 25% surcharge |
+| Late payment | 12% interest per annum on unpaid tax |
+| Failure to issue OR | 50% surcharge on transaction + compromise penalty |
+| Fraud/falsification | 50% surcharge + criminal liability |
+
+---
+
+## Section 6 — Tier 2 catalogue
+
+### 6.1 Entertainment expense input VAT limit
+
+**What it shows:** Restaurant, hotel, or entertainment expense claimed as business entertainment.
+**What's missing:** Whether BIR-registered OR held and whether expense is within the entertainment deduction limit.
+**Conservative default:** No input credit (treat as personal if OR not confirmed).
+**Question to ask:** "Is there a BIR-registered OR for this entertainment expense? Is this within the 0.5% of net sales / 1% of net revenue entertainment ceiling?"
+
+### 6.2 Zero-rating for services to non-residents
+
+**What it shows:** Revenue from a foreign client.
+**What's missing:** Whether payment was received in foreign currency with inward remittance through a Philippine bank.
+**Conservative default:** 12% standard rate.
+**Question to ask:** "Was payment received in USD/foreign currency? Was it remitted through a Philippine bank (with bank credit advice)? Is the client a non-resident foreign company?"
+
+### 6.3 PEZA zero-rating
+
+**What it shows:** Sale to a company that may be PEZA-registered.
+**What's missing:** PEZA registration certificate and whether the supply is within the ecozone.
+**Conservative default:** 12% — do not zero-rate without certificate.
+**Question to ask:** "Can the buyer provide their PEZA Certificate of Registration and authority to zero-rate?"
+
+### 6.4 Digital services — foreign provider VAT status
+
+**What it shows:** Payment to a foreign tech/SaaS company.
+**What's missing:** Whether the foreign provider has registered for Philippine VAT (post-Digital Economy Act 2024) and whether they are charging 12% VAT on invoices.
+**Conservative default:** No input credit until confirmed.
+**Question to ask:** "Does the invoice from this foreign provider show Philippine VAT (12%) charged? If not, no input credit is available."
+
+### 6.5 Motor vehicle expenses
+
+**What it shows:** Vehicle purchase, lease, fuel, or maintenance.
+**What's missing:** Whether vehicle is used exclusively for business.
+**Conservative default:** 0% input credit.
+**Question to ask:** "Is this vehicle registered in the company name and used exclusively for business? Personal-use vehicles and mixed-use vehicles have limited input VAT recovery."
+
+---
+
+## Section 7 — Excel working paper template
 
 ```
-Item 17  = 16A + 16B + 16C + 16D
-Item 19  = 18A + 18B
-Item 21  = 20A + 20B + 20C + 20D + 20E + 20F
-Item 23  = 22A + 22B + 22C + 22D + 22E (always 0) + 22F
-IF Item 19 > Item 23 THEN
-  Item 26A = Item 19 - Item 23  -- VAT payable
-  Item 26B = 0
-ELSE
-  Item 26A = 0
-  Item 26B = Item 23 - Item 19  -- Excess input VAT
-END
-Item 28  = max(0, Item 26A - Item 27)
-Item 30  = Item 28 + Item 29
-```
-
----
-
-## Step 4: Input VAT Rules [T1]
-
-### Creditable Input VAT (Section 110) [T1]
-**Legislation:** NIRC Section 110(A)
-
-| Source of Input VAT | Creditable? | Conditions |
-|-------------------|-------------|------------|
-| Domestic purchases of goods with VAT invoice | Yes | Must have valid VAT invoice/receipt |
-| Domestic purchases of services with VAT receipt | Yes | Must have valid VAT official receipt |
-| Import VAT paid to Bureau of Customs | Yes | With import entry and proof of payment |
-| Transitional input VAT (Section 111(A)) | Yes | Inventory on hand at time of VAT registration |
-| Presumptive input VAT (Section 111(B)) | Yes | For processors of sardines, mackerel, milk, refined sugar, cooking oil, flour |
-
-### Capital Goods Input VAT Amortization (Section 110(A)(2)) [T1]
-**Legislation:** NIRC Section 110(A)(2)
-
-- If aggregate acquisition cost of capital goods > PHP 1,000,000 in a 12-month period:
-  - Input VAT must be AMORTIZED over the useful life or 60 months, whichever is shorter
-  - Monthly amortization = Total input VAT / (useful life in months or 60, whichever is shorter)
-  - Only the quarterly amortized portion is claimed on the 2550Q
-- If aggregate acquisition cost <= PHP 1,000,000:
-  - Full input VAT claimed in the period of purchase
-
-### Blocked / Non-Creditable Input VAT [T1]
-**Legislation:** NIRC Section 110(A); RR 16-2005
-
-| Blocked Category | Notes |
-|-----------------|-------|
-| Purchases from non-VAT registered suppliers | No valid VAT invoice = no input VAT |
-| Purchases without valid VAT invoice/receipt | Documentation requirement absolute |
-| Input VAT attributable to exempt sales (if mixed, allocated portion) | Must allocate if mixed taxpayer |
-| Input VAT on purchases for personal use | Not related to business |
-| Input VAT on entertainment, amusement, recreation expenses | Not creditable (RR 16-2005) |
-| Input VAT on passenger vehicles and components (non-transport business) | Unless transport or dealer |
-| Purchases supported only by acknowledgment receipts or non-VAT invoices | Must be official VAT receipt/invoice |
-
-### Input VAT Allocation for Mixed Taxpayers [T2]
-**Legislation:** NIRC Section 110(A)(3)
-
-If taxpayer makes both taxable and exempt sales:
-- Input VAT directly attributable to taxable sales = fully creditable
-- Input VAT directly attributable to exempt sales = NOT creditable
-- Input VAT on common expenses = allocated proportionally:
-
-```
-Creditable % = (Taxable Sales / Total Sales) * 100
-```
-
-- Allocation calculated quarterly on the 2550Q
-- **Flag for reviewer:** Classification of expenses as direct vs. common must be confirmed
-
----
-
-## Step 5: Reverse Charge / Withholding VAT Mechanics [T1]
-
-### VAT on Services from Non-Residents (Section 108(A)) [T1]
-**Legislation:** NIRC Section 108(A); RR 16-2005, Section 4.108-1
-
-When a VAT-registered person pays for services rendered by a non-resident (no Philippine branch/establishment):
-1. The VAT-registered payor acts as withholding agent
-2. Withhold VAT at 12% on the gross payment
-3. Remit using BIR Form 1600 (monthly) -- filed by the 10th of the following month
-4. The withheld VAT is the supplier's output VAT (remitted on their behalf)
-5. The payor claims the withheld amount as input VAT on their 2550Q (Item 22D or 22F)
-
-### VAT on Digital Services (Effective 2 June 2025) [T1]
-**Legislation:** Republic Act No. 12023 (VAT on Digital Services Act); RR No. 3-2025; RR No. 14-2025
-
-Effective 2 June 2025, 12% VAT applies to all digital services consumed in the Philippines, whether provided by resident or non-resident providers.
-
-| Rule | Detail |
-|------|--------|
-| Scope | Digital services consumed in the Philippines, including online advertising, digital content, SaaS, cloud services, online marketplaces, and electronic data management |
-| Registration threshold (non-resident DSPs) | PHP 3,000,000 gross sales in any 12-month period |
-| Registration deadline | On or before 1 July 2025 via VDS Portal or ORUS |
-| B2C sales by non-resident DSP | Non-resident DSP directly reports and remits 12% VAT |
-| B2B sales by non-resident DSP to VAT-registered buyer | VAT-registered buyer withholds 12% VAT and remits under the reverse-charge mechanism |
-| Non-compliance | Suspension of business operations including blocking of digital services in the Philippines |
-
-### VAT Withholding on Government Payments (Section 114(C)) [T1]
-**Legislation:** NIRC Section 114(C); RR 16-2005
-
-Government agencies/instrumentalities must:
-1. Withhold 5% Final Withholding VAT (FWT) on payments to VAT-registered suppliers
-2. Supplier reports total output VAT (12%) but credits the 5% FWT
-3. Supplier's remaining 7% liability = self-remitted with the return
-4. FWT withheld by government = creditable against supplier's VAT liability
-
----
-
-## Step 6: Invoicing and CAS Requirements [T1]
-
-### VAT Invoice Requirements (Section 113) [T1]
-**Legislation:** NIRC Section 113; RR 9-2021
-
-#### VAT Sales Invoice (for goods)
-1. Name, TIN, and address of seller (VAT-registered)
-2. Name, TIN, and address of buyer
-3. Sequential invoice number
-4. Date of transaction
-5. Description of goods, quantity, unit cost, total price
-6. VAT amount shown separately
-7. The words "VAT-Registered" and TIN prominently displayed
-8. BIR Authority to Print (ATP) number or CAS Permit number (if computerized)
-9. Imprinted on invoice: TIN-VAT
-
-#### VAT Official Receipt (for services)
-Same requirements as invoice but issued for services rendered.
-
-### CAS (Computerized Accounting System) Requirements [T1]
-**Legislation:** RR 9-2021; RMC 5-2024
-
-- All taxpayers using computerized books of accounts and/or computerized invoicing must obtain a CAS Permit (Permit to Use) from BIR
-- CAS must be capable of generating VAT invoices/receipts that meet all BIR requirements
-- CAS systems subject to BIR audit -- system documentation must be maintained
-- Loose-leaf books of accounts: separate permit required
-- Non-compliance: potential revocation of permit and assessment of penalties
-
----
-
-## Step 7: Registration Rules [T1]
-
-**Legislation:** NIRC Section 236; RR 16-2005; TRAIN Law amendments
-
-| Registration Rule | Threshold / Condition |
-|-------------------|----------------------|
-| Mandatory VAT registration | Gross sales/receipts exceed PHP 3,000,000 in any 12-month period |
-| Voluntary registration | Any person below PHP 3M may voluntarily register for VAT |
-| Non-VAT alternative (below threshold) | Subject to 3% Percentage Tax under Section 116 (reduced to 1% during COVID, reverted per TRAIN sunset) |
-| Registration deadline | Within 30 days of exceeding PHP 3M threshold |
-| VAT-exempt persons | Listed in Section 109 -- registration as VAT is not required |
-| PEZA/Freeport registered entities | May be zero-rated or exempt depending on registration type [T3] |
-| Professionals | If gross receipts exceed PHP 3M, must register for VAT |
-
-### Change of Registration Status [T1]
-- Non-VAT to VAT: file BIR Form 1905; transitional input VAT may be claimed on inventory
-- VAT to Non-VAT: file BIR Form 1905; deemed sale provisions apply (Section 106(B))
-
----
-
-## Step 8: Filing Deadlines and Penalties [T1]
-
-**Legislation:** NIRC Sections 248-252 (penalties); Section 114 (filing)
-
-### Filing Deadlines
-
-| Form | Purpose | Deadline | Frequency |
-|------|---------|----------|-----------|
-| BIR Form 2550M | Monthly VAT Declaration | 20th of the following month | Monthly (Months 1 and 2 of each quarter) |
-| BIR Form 2550Q | Quarterly VAT Return | 25th of the month following the close of the quarter | Quarterly (cumulative for the full quarter) |
-| BIR Form 1600 | Monthly remittance of VAT withheld on non-resident services | 10th of the following month | Monthly |
-| Summary List of Sales (SLSP) | Quarterly list of sales with VAT | Same as 2550Q | Quarterly |
-| Summary List of Purchases (SLP) | Quarterly list of purchases with input VAT | Same as 2550Q | Quarterly |
-
-### Penalties [T1]
-
-| Violation | Penalty | Legal Reference |
-|-----------|---------|-----------------|
-| Late filing | 25% surcharge on tax due | Section 248(A)(1) |
-| Willful neglect to file | 50% surcharge on tax due | Section 248(A)(2) |
-| Late payment | 12% interest per annum (previously 20%, reduced by TRAIN) | Section 249 |
-| Failure to register for VAT | Fine PHP 5,000 -- 20,000 + criminal penalty | Section 236, Section 275 |
-| Failure to issue VAT invoice/receipt | Fine PHP 5,000 -- 50,000 + criminal penalty | Section 264 |
-| Issuance of false/fraudulent invoice | Fine + imprisonment (2-4 years) | Section 254 |
-| Failure to file quarterly returns | Penalty + potential assessment by BIR | Sections 248-249 |
-| Under-declaration of income | 50% surcharge + 12% interest | Section 248(B) |
-
-### Compromise Penalty [T1]
-BIR publishes a schedule of compromise penalties (in lieu of criminal prosecution for minor violations). Amount depends on the violation type and applicable taxes.
-
----
-
-## Step 9: Refund and Excess Input VAT [T1]
-
-**Legislation:** NIRC Section 112 (refund of input VAT on zero-rated sales)
-
-### Excess Input VAT Treatment
-
-| Situation | Treatment | Reference |
-|-----------|-----------|-----------|
-| Excess from domestic sales | Carry forward to next quarter (NO refund) | Section 110(B) |
-| Excess attributable to zero-rated sales | May apply for refund OR carry forward | Section 112(A) |
-| Excess attributable to zero-rated sales to PEZA | May apply for refund | Section 112(A) |
-
-### Refund Rules (Section 112) [T1]
-- Refund application must be filed within 2 years from the close of the quarter when the zero-rated sale was made
-- BIR has 90 days to process (per CREATE Act amendments -- previously 120 days)
-- If BIR does not act within 90 days, taxpayer may appeal to the Court of Tax Appeals (CTA) within 30 days
-- Refund ONLY available for excess input VAT attributable to zero-rated sales (Section 112(A))
-- Excess input VAT from domestic sales: carry forward only, NO refund
-
----
-
-## Step 10: Edge Case Registry
-
-These are known ambiguous situations and their confirmed resolutions. Each is tagged with its confidence tier.
-
-### EC1 -- Services rendered to non-resident foreign company, paid in PHP [T2]
-**Situation:** VAT-registered company provides consulting to a Singapore firm but receives payment in Philippine Pesos.
-**Resolution:** Zero-rating under Section 108(B)(1) requires payment in acceptable foreign currency or its equivalent in accordance with BSP rules. Payment in PHP may disqualify zero-rating. [T2] Flag for reviewer: confirm currency of payment and whether it meets BSP requirements for foreign currency equivalent.
-**Legislation:** NIRC Section 108(B)(1); RR 16-2005
-
-### EC2 -- Sale of passenger vehicle by non-transport company [T1]
-**Situation:** Company (not in transport business) sells a used company car.
-**Resolution:** Sale of capital asset by a VAT-registered person is subject to 12% output VAT (Section 106(A)). Even if input VAT was blocked on purchase, output VAT is still due on sale. If the company is non-VAT, the sale is subject to percentage tax or exempt depending on registration.
-**Legislation:** NIRC Section 106(A)
-
-### EC3 -- Import of goods: VAT paid at Customs [T1]
-**Situation:** VAT-registered company imports raw materials. Bureau of Customs collects 12% VAT on import value (CIF + duty).
-**Resolution:** Import VAT is creditable as input VAT. Report on BIR Form 2550Q, Item 20F (importations) and Item 22F (input VAT). Supporting document: Import Entry and Internal Revenue Declaration (IEIRD) or Single Administrative Document.
-**Legislation:** NIRC Section 110(A)(1)(B)
-
-### EC4 -- Government payment with 5% FWT [T1]
-**Situation:** VAT-registered company supplies goods to a government agency for PHP 112,000 (inclusive of 12% VAT). Government withholds 5% FWT.
-**Resolution:** Output VAT = PHP 12,000 (12% of PHP 100,000 net). Government withholds 5% FWT = PHP 5,000 (5% of net PHP 100,000). Supplier self-remits 7% = PHP 7,000. On 2550Q: Item 16B = PHP 100,000, Item 18B = PHP 12,000. FWT credit of PHP 5,000 applied in Part IV-C.
-**Legislation:** NIRC Section 114(C)
-
-### EC5 -- Lease of residential unit at PHP 14,000/month [T1]
-**Situation:** Taxpayer leases a residential apartment at PHP 14,000 per month.
-**Resolution:** Exempt from VAT under Section 109(Q) -- lease of residential unit with monthly rent not exceeding PHP 15,000. No output VAT. If rent exceeds PHP 15,000, the ENTIRE rent (not just the excess) becomes subject to 12% VAT.
-**Legislation:** NIRC Section 109(Q)
-
-### EC6 -- Professional earning PHP 2.5M gross receipts [T1]
-**Situation:** Self-employed CPA with gross receipts of PHP 2.5M per year. Not VAT-registered.
-**Resolution:** Below the PHP 3M threshold. Subject to 3% Percentage Tax under Section 116 (or 8% income tax option under TRAIN). Not required to register for VAT. Cannot issue VAT receipts. Cannot charge output VAT.
-**Legislation:** NIRC Section 116; Section 24(A)(2)(b)
-
-### EC7 -- Mixed taxpayer: allocation of input VAT [T2]
-**Situation:** Hospital (VAT-registered) provides both exempt medical services and taxable pharmacy/canteen sales.
-**Resolution:** Input VAT on purchases directly for taxable sales = fully creditable. Input VAT on purchases directly for exempt services = blocked. Common expenses: allocate proportionally using the formula (Taxable Sales / Total Sales). [T2] Flag for reviewer: direct vs. common expense classification requires professional judgement.
-**Legislation:** NIRC Section 110(A)(3)
-
-### EC8 -- Credit note / sales return [T1]
-**Situation:** Customer returns goods worth PHP 56,000 (inclusive of PHP 6,000 VAT).
-**Resolution:** Issue a credit memo / adjustment note referencing the original VAT invoice. Reduce output VAT by PHP 6,000 and net sales by PHP 50,000 in the quarter the credit is issued. Must maintain supporting documentation (return slip, credit memo, adjusted invoice).
-**Legislation:** RR 16-2005, Section 4.113
-
-### EC9 -- Withholding VAT on non-resident digital service [T1]
-**Situation:** Company pays USD 5,000 to a US-based cloud provider for SaaS services. No Philippine presence.
-**Resolution:** Company must withhold 12% VAT on the gross payment (converting to PHP at exchange rate on payment date). File BIR Form 1600 by the 10th. Claim the withheld amount as input VAT on the 2550Q.
-**Legislation:** NIRC Section 108(A); RR 16-2005, Section 4.108-1
-
-### EC10 -- Sale of real property in ordinary course of trade, price PHP 2.5M [T1]
-**Situation:** Real estate developer (VAT-registered) sells a residential unit for PHP 2,500,000.
-**Resolution:** Below the PHP 3,199,200 threshold. Exempt from VAT under Section 109(P). No output VAT. However, if the same developer sells a commercial unit or a residential unit above the threshold, 12% VAT applies.
-**Legislation:** NIRC Section 109(P); TRAIN Law threshold
-
----
-
-## Step 11: Key Thresholds Summary
-
-| Threshold | Value | Legal Reference |
-|-----------|-------|-----------------|
-| Mandatory VAT registration | PHP 3,000,000 gross sales/receipts | Section 236(G) NIRC |
-| VAT rate | 12% | Section 106(A), 108(A) |
-| Percentage tax for non-VAT | 3% | Section 116 |
-| Capital goods amortization trigger | PHP 1,000,000 aggregate in 12 months | Section 110(A)(2) |
-| Capital goods amortization period | Useful life or 60 months (shorter) | Section 110(A)(2) |
-| Residential dwelling exempt threshold | PHP 3,199,200 | Section 109(P) |
-| Residential lease exempt threshold | PHP 15,000/month per unit | Section 109(Q) |
-| Government FWT rate | 5% of net | Section 114(C) |
-| Refund filing deadline | 2 years from close of quarter of zero-rated sale | Section 112(A) |
-| BIR refund processing | 90 days | Section 112(C) |
-| CTA appeal after BIR inaction | 30 days after 90-day period | Section 112(C) |
-| Late filing surcharge | 25% (basic) or 50% (willful) | Section 248 |
-| Interest on late payment | 12% per annum | Section 249 |
-| 2550M filing deadline | 20th of following month | Section 114 |
-| 2550Q filing deadline | 25th of month following quarter | Section 114 |
-
----
-
-## Step 12: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Licensed tax practitioner must confirm before filing.
-```
-
-When Claude identifies a [T3] situation, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed tax practitioner. Document gap.
+PHILIPPINES VAT WORKING PAPER
+Period: ____________  TIN: ____________  RDO: ____________
+
+A. OUTPUT VAT
+  A1. Taxable sales at 12% (net)               ___________
+  A2. Output VAT at 12% (A1 × 12%)             ___________
+  A3. Zero-rated sales (exports/non-resident)  ___________
+  A4. Exempt sales (net)                        ___________
+
+B. INPUT VAT
+  B1. Domestic purchases — 12% (net)           ___________
+  B2. Input VAT at 12% (B1 × 12%)              ___________
+  B3. Importation input VAT                    ___________
+  B4. Total input VAT (B2+B3)                  ___________
+  B5. Disallowed input (blocked items)         ___________
+  B6. Net input VAT (B4 − B5)                  ___________
+
+C. NET VAT PAYABLE
+  C1. Net VAT (A2 − B6)                         ___________
+  C2. Excess credit from prior period           ___________
+  C3. Tax credits (e.g., CWT, advance payments) ___________
+  C4. Net payable / (refund) (C1−C2−C3)         ___________
+
+REVIEWER FLAGS:
+  [ ] BIR-registered ORs/invoices confirmed for all input credits?
+  [ ] Inward remittance documentation for zero-rated services?
+  [ ] PEZA certificates confirmed for zero-rated sales to ecozone?
+  [ ] Digital service provider VAT registration confirmed?
+  [ ] Motor vehicle input VAT blocked where applicable?
+  [ ] Entertainment ceiling calculated?
 ```
 
 ---
 
-## Step 13: Test Suite
+## Section 8 — Bank statement reading guide
 
-These reference transactions have known correct outputs. Use to validate skill execution.
+### Common Philippine bank statement formats
 
-### Test 1 -- Standard domestic sale, 12% VAT
-**Input:** VAT-registered company sells goods to private buyer, gross PHP 112,000 (net PHP 100,000, VAT PHP 12,000).
-**Expected output:** 2550Q Item 16A = PHP 100,000, Item 18A = PHP 12,000 (output VAT).
+| Bank | Key columns | Date format | Amount |
+|---|---|---|---|
+| BDO | Date, Reference, Description, Debit, Credit, Balance | MM/DD/YYYY | PHP with 2 decimals |
+| BPI | Date, Transaction Reference, Description, Withdrawal, Deposit, Balance | MM/DD/YYYY | PHP |
+| Metrobank | Date, Description, Debit, Credit, Balance | MM/DD/YYYY | PHP |
+| UnionBank | Date, Description, Debit, Credit, Available Balance | MM/DD/YYYY | PHP |
+| Landbank | Posting Date, Description, Debit, Credit, Running Balance | MM/DD/YYYY | PHP |
 
-### Test 2 -- Domestic purchase with valid VAT invoice
-**Input:** VAT-registered company purchases office supplies, net PHP 50,000, VAT PHP 6,000, valid VAT invoice received.
-**Expected output:** 2550Q Item 20C = PHP 50,000, Item 22C = PHP 6,000 (creditable input VAT).
+### Key Philippine banking terms
 
-### Test 3 -- Export sale (zero-rated)
-**Input:** VAT-registered exporter ships goods to Japan, FOB PHP 500,000. Export documentation complete.
-**Expected output:** 2550Q Item 16C = PHP 500,000 (zero-rated sales). Output VAT = PHP 0. Input VAT on related purchases fully creditable.
-
-### Test 4 -- Services to non-resident, paid in USD (zero-rated)
-**Input:** VAT-registered company provides consulting to Singapore client. Fee USD 10,000 (= PHP 560,000). Paid in USD. Service performed in Philippines.
-**Expected output:** 2550Q Item 16C = PHP 560,000 (zero-rated service). No output VAT. Input VAT on related expenses fully creditable.
-
-### Test 5 -- Government sale with 5% FWT
-**Input:** VAT-registered company supplies IT equipment to government agency, net PHP 200,000, VAT PHP 24,000, gross PHP 224,000. Government withholds 5% = PHP 10,000.
-**Expected output:** 2550Q Item 16B = PHP 200,000, Item 18B = PHP 24,000. FWT credit PHP 10,000 in Part IV-C Item 27. Net VAT self-remitted = PHP 14,000.
-
-### Test 6 -- Capital goods > PHP 1M (amortized)
-**Input:** VAT-registered company purchases machinery for PHP 2,400,000 (net) + PHP 288,000 (VAT). Useful life = 10 years.
-**Expected output:** Input VAT PHP 288,000 amortized over 60 months (shorter of 10 years or 60 months). Quarterly claim = PHP 288,000 / 60 * 3 = PHP 14,400 per quarter. 2550Q Item 20A = PHP 2,400,000, Item 22A = PHP 14,400.
-
-### Test 7 -- Exempt sale: unprocessed agricultural products
-**Input:** Farmer (VAT-registered for other activities) sells fresh vegetables for PHP 200,000.
-**Expected output:** 2550Q Item 16D = PHP 200,000 (exempt sales). No output VAT. Input VAT on expenses exclusively for vegetable farming = NOT creditable.
-
-### Test 8 -- Residential lease below PHP 15,000/month
-**Input:** Taxpayer leases a residential apartment at PHP 12,000/month (3 months in the quarter = PHP 36,000).
-**Expected output:** Exempt from VAT under Section 109(Q). Report as exempt in Item 16D = PHP 36,000. No output VAT.
-
-### Test 9 -- Withholding VAT on foreign service provider
-**Input:** Company pays GBP 3,000 to UK consultant (no PH presence) = PHP 210,000. Withholds 12% VAT.
-**Expected output:** VAT withheld = PHP 22,500 (12% of PHP 187,500 net -- or 12% of gross if payment terms are VAT-exclusive). File BIR Form 1600. Claim PHP 22,500 as input VAT on 2550Q Item 22D.
-
-### Test 10 -- Import VAT at Customs
-**Input:** Company imports electronics, CIF + duty value PHP 1,000,000. Customs collects 12% VAT = PHP 120,000.
-**Expected output:** 2550Q Item 20F = PHP 1,000,000, Item 22F = PHP 120,000 (creditable input VAT). Supporting document: IEIRD.
+| Term | Meaning | Classification hint |
+|---|---|---|
+| CREDIT / DEPOSIT | Incoming funds | Potential revenue |
+| DEBIT / WITHDRAWAL | Outgoing payment | Potential expense |
+| INWARD REMITTANCE | Foreign currency receipt | Potential zero-rated export |
+| SERVICE CHARGE | Bank fee | Exempt |
+| INTEREST | Bank interest | Exempt |
+| BALANCE | Running balance | Ignore |
+| ATM WITHDRAWAL | Cash withdrawal | Tier 2 — ask |
+| PAYROLL DEBIT | Salary payment | Out of VAT scope |
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 9 — Onboarding fallback
 
-- NEVER let AI guess VAT classification -- it is deterministic from the facts and legislation
-- NEVER claim input VAT without a valid BIR-registered VAT invoice or official receipt
-- NEVER claim full input VAT on capital goods exceeding PHP 1,000,000 aggregate -- amortization is mandatory
-- NEVER apply zero-rate without confirming ALL documentation requirements are met (export docs, foreign currency proof)
-- NEVER confuse zero-rated sales (input VAT fully recoverable) with exempt sales (input VAT NOT recoverable)
-- NEVER refund excess input VAT from purely domestic sales -- carry forward only (Section 110(B))
-- NEVER ignore the 5% FWT on government payments -- it reduces the supplier's VAT liability
-- NEVER apply VAT to transactions specifically listed under Section 109 exemptions
-- NEVER allow a non-VAT registered person to issue VAT invoices or charge output VAT
-- NEVER claim input VAT on entertainment, amusement, or recreation expenses
-- NEVER confuse BIR Form 2550M (monthly) with BIR Form 2550Q (quarterly) -- different forms, different deadlines
-- NEVER file 2550M for the third month of a quarter -- the full quarter is covered by 2550Q
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
+If the client provides a bank statement but cannot answer all questions immediately:
+
+1. Classify all transactions using the pattern library (Section 3)
+2. Apply conservative defaults (Section 1)
+3. Mark Tier 2 items as "PENDING — reviewer must confirm"
+4. Generate working paper with flags
+
+```
+PHILIPPINES VAT ONBOARDING — MINIMUM QUESTIONS
+1. TIN (Tax Identification Number) and RDO (Revenue District Office)?
+2. Certificate of Registration (BIR Form 2303) — VAT registered? What is the effective date?
+3. Filing basis: monthly (2550M) or monthly + quarterly (2550Q)?
+4. Do you have any exports or services to non-resident clients?
+   If yes: was payment received in foreign currency with inward remittance?
+5. Do you have any PEZA-registered customers?
+6. Motor vehicle expenses — are vehicles exclusively for business?
+7. Any international SaaS subscriptions? Do those invoices show 12% Philippine VAT?
+8. Prior period excess input VAT credit carried forward?
+```
 
 ---
 
-## Contribution Notes
+## Section 10 — Reference material
 
-If you are adapting this skill for another ASEAN jurisdiction, you must:
+### Key legislation
 
-1. Replace all legislation references with the equivalent national legislation.
-2. Replace BIR form items with the equivalent form structure for your jurisdiction.
-3. Replace VAT rates with your jurisdiction's rates.
-4. Replace the registration threshold (PHP 3M) with your jurisdiction's equivalent.
-5. Replace the blocked categories with your jurisdiction's equivalent non-creditable categories.
-6. Have a licensed tax practitioner in your jurisdiction validate every T1 rule before publishing.
-7. Add your own edge cases to the Edge Case Registry.
-8. Run all test suite cases against your jurisdiction's rules and replace expected outputs accordingly.
+| Topic | Reference |
+|---|---|
+| VAT on goods | NIRC Section 106 |
+| VAT on services | NIRC Section 108 |
+| Zero-rated sales | NIRC Sections 106(A)(2), 108(B) |
+| Exempt transactions | NIRC Section 109 |
+| Input VAT | NIRC Section 110 |
+| Official Receipts | NIRC Section 237 |
+| Registration threshold | NIRC Section 109(BB) (PHP 3M) |
+| Digital economy VAT | R.A. 11976 (Digital Economy Taxation Act, 2024) |
+| Penalties | NIRC Sections 248–249 |
 
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
+### Known gaps
 
+- PEZA zero-rating complex structures — escalate to CPA
+- Final withholding VAT on government transactions — track separately
+- Percentage tax (non-VAT registered) — separate Form 2551Q; different skill
+- Import VAT (Bureau of Customs process) — coordinate with customs broker
+- Digital Economy VAT implementation — verify BIR RMC for latest guidance
+
+### Self-check before filing
+
+- [ ] BIR-registered ORs/invoices held for all input VAT claimed
+- [ ] Inward remittance documentation for all zero-rated services
+- [ ] PEZA certificates on file for any PEZA zero-rated sales
+- [ ] Digital service VAT registration confirmed for foreign suppliers
+- [ ] Prior period excess credit correctly applied
+- [ ] Entertainment input VAT within the BIR ceiling
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 1.0 | 2024 | Initial release |
+| 2.0 | April 2026 | Full v2.0 rewrite: pattern library, worked examples, Digital Economy Act note, no inline tier tags |
+
+---
+
+## Prohibitions
+
+- NEVER claim input VAT from a supplier who is not BIR VAT-registered
+- NEVER zero-rate services to non-residents without inward remittance documentation
+- NEVER zero-rate PEZA sales without the buyer's PEZA certificate
+- NEVER claim input VAT from foreign SaaS providers without confirming Philippine VAT registration
+- NEVER apply 12% to exempt supplies (unprocessed agriculture, medical, education, etc.)
+- NEVER present calculations as definitive — direct to a Philippine CPA or BIR-accredited tax practitioner
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional before filing.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date version is maintained at openaccountants.com.

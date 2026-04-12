@@ -1,723 +1,526 @@
 ---
 name: taiwan-vat
-description: Use this skill whenever asked to prepare, review, or advise on a Taiwan VAT return (Business Tax / 營業稅), e-invoice (電子發票) compliance, or any matter involving Taiwan's value-added and non-value-added business tax. Trigger on phrases like "Taiwan VAT", "Taiwan business tax", "營業稅", "Form 401", "Form 403", "e-invoice Taiwan", "GUI (Government Uniform Invoice)", "zero-rated export Taiwan", or any request involving Taiwan VAT filing. This skill contains the complete Taiwan VAT rate structure, filing rules, input credit mechanics, e-invoice requirements, and GBRT treatment for financial institutions. ALWAYS read this skill before touching any Taiwan VAT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Taiwan Business Tax (營業稅) return, handle uniform invoice (統一發票) compliance, or advise on VAT registration and filing in Taiwan. Trigger on phrases like "營業稅", "Taiwan business tax", "統一發票", "uniform invoice", "401 return", "403 return", "申報營業稅", or any Taiwan VAT/business tax request. ALWAYS read this skill before touching any Taiwan business tax work.
+version: 2.0
+jurisdiction: TW
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# Taiwan VAT (Business Tax / 營業稅) Return Preparation Skill
+# Taiwan Business Tax (營業稅) Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Taiwan (Republic of China / 中華民國) |
-| Jurisdiction Code | TW |
-| Primary Legislation | Value-Added and Non-Value-Added Business Tax Act (加值型及非加值型營業稅法), as amended |
-| Supporting Legislation | Enforcement Rules of the Business Tax Act; Ministry of Finance (MoF) interpretive rulings; Statute for Industrial Innovation Art. 23-2 (tax incentives) |
-| Tax Authority | National Taxation Bureau (國稅局), under the Ministry of Finance |
-| Filing Portal | eTax Portal (財政部電子申報繳稅服務網) — https://tax.nat.gov.tw |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, input/output mechanics, filing deadlines, e-invoice rules. Tier 2: GBRT classification, mixed-supply apportionment, cross-border digital services. Tier 3: transfer pricing, tax treaty application, complex restructuring. |
+|---|---|
+| Country | Taiwan (中華民國 / Republic of China) |
+| Tax | 營業稅 (Yíngyèshuì — Business Tax / VAT) |
+| Currency | NTD (New Taiwan Dollar / 新台幣 NT$) |
+| Tax year | Calendar year (1 Jan – 31 Dec) |
+| Standard rate | 5% |
+| Zero rate | 0% (exports, services to foreign businesses paid in foreign currency) |
+| Exempt | Medical, education, land sales, financial services (banking interest, insurance premiums), small businesses below threshold |
+| Registration threshold | NTD 480,000/year (goods); NTD 240,000/year (services) for small business; above = mandatory general registration |
+| Small business (小規模營業人) | Monthly revenue < NTD 80,000 (goods) / NTD 40,000 (services) — special simplified tax |
+| Tax authority | 財政部國稅局 (Ministry of Finance — National Tax Administration / NTA) |
+| Return form | 401 (bi-monthly, general taxpayers); 403 (quarterly, small business) |
+| Filing portal | eTax (https://www.etax.nat.gov.tw) |
+| Filing frequency | Bi-monthly (每兩個月申報一次) for most; quarterly for small |
+| Deadline | 15th of month following reporting period (e.g., Jan–Feb period → 15 March) |
+| Uniform invoice (統一發票) | Mandatory for B2B and B2C; government-issued invoice numbers |
+| Contributor | Open Accountants Community |
+| Validated by | Pending — requires sign-off by a Taiwan-licensed 會計師 (CPA) |
+| Skill version | 2.0 |
+
+### Key 401 return boxes
+
+| Box | Meaning |
+|---|---|
+| 401-1 | Sales amount — taxable at 5% (課稅銷售額) |
+| 401-2 | Output tax at 5% (銷項稅額) |
+| 401-3 | Zero-rated sales (零稅率銷售額) |
+| 401-4 | Exempt sales (免稅銷售額) |
+| 401-5 | Total input tax (進項稅額合計) |
+| 401-6 | Disallowed input tax (不得扣抵進項稅額) |
+| 401-7 | Net input tax (進項稅額 − 不得扣抵) |
+| 401-8 | Tax payable (應納稅額 = 401-2 − 401-7) |
+| 401-9 | Excess credit carried forward (留抵稅額) |
+| 401-10 | Net payable after prior credit |
+
+### Conservative defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 5% |
+| Unknown counterparty country | Domestic Taiwan |
+| Unknown B2B vs B2C for foreign customer | B2C — charge 5% |
+| Unknown business-use % (vehicle, phone) | 0% credit |
+| Unknown invoice type | No input credit until uniform invoice confirmed |
+| Unknown whether exempt or taxable service | Taxable at 5% |
+| Unknown export documentation | Not zero-rated — 5% default |
+
+### Red flag thresholds
+
+| Threshold | Value |
+|---|---|
+| HIGH single transaction | NTD 300,000 |
+| HIGH tax delta on single default | NTD 15,000 |
+| MEDIUM counterparty concentration | >40% of output or input |
+| MEDIUM conservative default count | >4 per period |
+| LOW absolute net tax position | NTD 100,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A licensed CPA/tax agent must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to licensed practitioner and document the gap.
+**Minimum viable** — bank statement for the bi-monthly period in CSV, PDF, or pasted text. Confirmation of taxpayer type (general 一般 or small business 小規模).
 
----
+**Recommended** — uniform invoices (統一發票) for all sales, purchase invoices for all input credits claimed above NTD 10,000, business registration certificate (統一編號 8-digit business ID).
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete invoice register, 進項憑證 (input vouchers), prior period return and credit carried forward (留抵稅額), export documentation.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal if minimum missing — SOFT WARN.** No bank statement = hard stop. "Input tax credits require uniform invoices (統一發票 or 電子發票). All credits are provisional pending invoice confirmation."
 
-1. **Entity name and Unified Business Number (統一編號 / UBN)** [T1] -- 8-digit number
-2. **Business tax classification** [T1] -- VAT taxpayer (Section 4, Chapter 4) or GBRT taxpayer (Section 2, Chapter 4)
-3. **Industry sector** [T2] -- determines if VAT (5%) or GBRT (1-5%) applies; financial institutions, small businesses, and special drinking/entertainment establishments use GBRT
-4. **Filing period** [T1] -- bi-monthly (standard for VAT taxpayers) or monthly (for certain large enterprises)
-5. **Filing form** [T1] -- Form 401 (VAT taxpayers) or Form 403 (GBRT taxpayers)
-6. **Does the business export goods or services?** [T1] -- zero-rated treatment
-7. **Does the business make exempt supplies?** [T2] -- impacts input VAT apportionment
-8. **E-invoice (電子發票) compliance status** [T1] -- all business entities must use e-invoices via MoF platform
-9. **Is the entity a foreign enterprise providing cross-border digital services?** [T2] -- special registration rules apply
-10. **Input VAT credit balance carried forward from prior period** [T1]
+### Refusal catalogue
 
-**If items 1-2 are unknown, STOP. Do not classify any transactions until business tax type is confirmed.**
+**R-TW-1 — Small business (小規模) with input credit claims.** "Small businesses (小規模營業人) are taxed on a simplified basis and cannot claim input credits. They file quarterly using Form 403 and pay a deemed tax on purchases. This skill can compute the simplified tax but cannot process input credits for small businesses."
+
+**R-TW-2 — Special industry taxpayers.** "Banks, insurance companies, and certain financial institutions have different business tax calculation methods. Out of scope."
+
+**R-TW-3 — Partial exemption proration.** "If the business makes both taxable and exempt sales and cannot clearly allocate input tax, a proration (比例扣抵) is required. Out of scope without the annual ratio — escalate to a 會計師."
+
+**R-TW-4 — Cross-border electronic services (B2C).** "Foreign businesses providing electronic services to Taiwan consumers (B2C) must register under the special e-services regime. Out of scope for domestic filing."
+
+**R-TW-5 — Land transactions.** "Sales of land are exempt from business tax. If this forms a significant portion of transactions, proration rules apply — escalate."
 
 ---
 
-## Step 1: Tax System Overview [T1]
+## Section 3 — Supplier pattern library
 
-**Legislation:** Business Tax Act (BTA), Chapter 1, Art. 1-3.
+Match by case-insensitive substring on counterparty or reference. Most specific match wins. Fall through to Section 5 if no match.
 
-Taiwan operates a dual business tax system:
+### 3.1 Taiwanese banks — fees and charges (exempt / exclude)
 
-| System | Applicable To | Rate | Method | Return Form |
-|--------|--------------|------|--------|-------------|
-| Value-Added Tax (VAT / 加值型營業稅) | General industries, manufacturing, trading, services | 5% | Credit-invoice method (output minus input) | Form 401 (每兩月) |
-| Gross Business Receipts Tax (GBRT / 非加值型營業稅) | Financial institutions, insurance, small businesses (monthly sales < TWD 200,000), special drinking/entertainment establishments | 1-5% (varies by category) | Tax on gross receipts (no input credit) | Form 403 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 中華郵政, CHUNGHWA POST BANK | EXCLUDE (fee lines) | Banking — exempt financial service |
+| 台灣銀行, BANK OF TAIWAN, BOT | EXCLUDE (fee lines) | Same |
+| 合作金庫, TAIWAN COOPERATIVE BANK, TCB | EXCLUDE (fee lines) | Same |
+| 第一銀行, FIRST COMMERCIAL BANK | EXCLUDE (fee lines) | Same |
+| 兆豐銀行, MEGA BANK, MEGA INTERNATIONAL | EXCLUDE (fee lines) | Same |
+| 玉山銀行, E.SUN BANK | EXCLUDE (fee lines) | Same |
+| 國泰世華, CATHAY UNITED BANK | EXCLUDE (fee lines) | Same |
+| 富邦銀行, TAIPEI FUBON BANK | EXCLUDE (fee lines) | Same |
+| 永豐銀行, SINOPAC BANK | EXCLUDE (fee lines) | Same |
+| 中信銀行, CTBC BANK, 中國信託 | EXCLUDE (fee lines) | Same |
+| 手續費, 帳管費, 匯費 | EXCLUDE | Bank fees — exempt |
+| 利息, 利息收入 | EXCLUDE | Interest — exempt |
 
-### VAT Rate [T1]
+### 3.2 Taiwanese government and statutory (exclude)
 
-| Rate | Applies To | Legislation |
-|------|-----------|-------------|
-| 5% | All taxable goods and services (standard) | BTA Art. 10 |
-| 0% | Exports, international transport, services to foreign enterprises for use outside Taiwan, goods to bonded zones/FTZs | BTA Art. 7 |
-| Exempt | Specified goods/services listed in BTA Art. 8 | BTA Art. 8 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 財政部, 國稅局, NTA | EXCLUDE | Tax payment — not a supply |
+| 營業稅, 綜所稅, 所得稅 | EXCLUDE | Tax remittance |
+| 勞保, 健保, 勞工保險, 全民健康保險 | EXCLUDE | Social insurance — out of scope |
+| 勞動部, 勞工局 | EXCLUDE | Government authority fees |
+| 公路監理, 地方稅 | EXCLUDE | Licensing/local tax — not a supply |
+| 中華民國專利局, 智財局 | EXCLUDE | Government IP fees |
 
-### GBRT Rates [T1]
+### 3.3 Taiwanese utilities (taxable at 5%)
 
-| Rate | Applies To | Legislation |
-|------|-----------|-------------|
-| 2% | Reinsurance premiums | BTA Art. 11(1) |
-| 1% | Banks (core banking revenue: interest, commissions) | BTA Art. 11(2) |
-| 2% | Insurance premiums (other than reinsurance) | BTA Art. 11(2) |
-| 5% | Banks (non-core revenue: trading gains, etc.) | BTA Art. 11(2) |
-| 2% | Trust investment companies, securities finance companies, short-term bill dealers | BTA Art. 11(2) |
-| 5% | Pawnshops | BTA Art. 11(3) |
-| 15-25% | Special drinking/entertainment establishments (夜總會, 酒家) | BTA Art. 12 |
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| 台灣電力, TAIWAN POWER, TAIPOWER | Input 5% | 5% | Electricity — taxable |
+| 台灣自來水, TAIWAN WATER | Input 5% | 5% | Water — taxable |
+| 中華電信, CHUNGHWA TELECOM, CHT | Input 5% | 5% | Telecom/broadband — taxable |
+| 台灣大哥大, TAIWAN MOBILE | Input 5% | 5% | Mobile — taxable |
+| 遠傳電信, FAR EASTONE | Input 5% | 5% | Mobile — taxable |
+| 台灣之星, TAIWAN STAR (now TWM) | Input 5% | 5% | Mobile — taxable |
+| 台灣固網, TFIX | Input 5% | 5% | Fixed-line — taxable |
+
+### 3.4 Transport and logistics (taxable at 5%)
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| 台灣高鐵, THSR, 高鐵 | Input 5% | 5% | High-speed rail — taxable |
+| 台灣鐵路, TRA, 台鐵 | Input 5% | 5% | Rail — taxable |
+| 台北捷運, TAIPEI MRT, 北捷 | Input 5% | 5% | Metro — taxable |
+| 高雄捷運, KAOHSIUNG MRT | Input 5% | 5% | Metro — taxable |
+| 統聯客運, UBUS | Input 5% | 5% | Long-distance bus — taxable |
+| 中華航空, CHINA AIRLINES, CAL | Check route | 0%/5% | International 0%; domestic 5% |
+| 長榮航空, EVA AIR | Check route | 0%/5% | Same |
+| 黑貓宅急便, YAMATO TAIWAN | Input 5% | 5% | Domestic courier — taxable |
+| 新竹物流, HSINCHU TRANSPORT | Input 5% | 5% | Domestic freight — taxable |
+| 大榮貨運, GREAT WALL TRANSPORT | Input 5% | 5% | Freight — taxable |
+| 台灣宅配通, TAIWAN DELIVERY | Input 5% | 5% | Courier — taxable |
+
+### 3.5 Food and retail
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| 7-ELEVEN TAIWAN, 統一超商 | Input 5% | 5% | Retail — taxable (food included at 5%) |
+| 全家便利商店, FAMILY MART TAIWAN | Input 5% | 5% | Same |
+| 萊爾富, HI-LIFE | Input 5% | 5% | Same |
+| OK MART | Input 5% | 5% | Same |
+| 全聯福利中心, PX MART | Input 5% | 5% | Supermarket — taxable |
+| 大潤發, RT-MART TAIWAN | Input 5% | 5% | Hypermarket — taxable |
+| 家樂福, CARREFOUR TAIWAN | Input 5% | 5% | Hypermarket — taxable |
+| 愛買, JASON'S | Input 5% | 5% | Supermarket — taxable |
+| 餐廳, 飲食 (eat-in) | Input 5% | 5% | Restaurant meals — taxable (no exemption for food in Taiwan) |
+
+### 3.6 SaaS — local Taiwanese suppliers (5%)
+
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| 104人力銀行, 104 JOB BANK | Input 5% | 5% | HR platform — taxable |
+| 1111人力銀行 | Input 5% | 5% | HR platform — taxable |
+| 鼎新電腦, DIGIWIN | Input 5% | 5% | Taiwanese ERP — taxable |
+| 資通電腦, ARES | Input 5% | 5% | Taiwanese software — taxable |
+| LINE (Taiwan entity) | Input 5% | 5% | If billed via Taiwan entity |
+
+### 3.7 SaaS — international suppliers (reverse charge consideration)
+
+Taiwan imposes business tax on cross-border electronic services to Taiwan businesses. The foreign supplier should register or the Taiwan buyer may need to self-assess.
+
+| Pattern | Billing entity | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Workspace, Ads, Cloud) | Google Asia Pacific (SG) | Reverse charge 5% | Foreign electronic service — self-assess |
+| MICROSOFT (365, Azure) | Microsoft Taiwan or regional | Check invoice | If Taiwan entity: 5% on invoice; if foreign: self-assess |
+| ADOBE | Adobe Systems (US/SG) | Reverse charge 5% | Foreign service |
+| META, FACEBOOK ADS | Meta Platforms | Reverse charge 5% | Foreign service |
+| SLACK | Salesforce/Slack (US) | Reverse charge 5% | Foreign service |
+| ZOOM | Zoom Video (US) | Reverse charge 5% | Foreign service |
+| NOTION | Notion Labs (US) | Reverse charge 5% | Foreign service |
+| ANTHROPIC, CLAUDE | Anthropic (US) | Reverse charge 5% | Foreign service |
+| OPENAI, CHATGPT | OpenAI (US) | Reverse charge 5% | Foreign service |
+| GITHUB | GitHub/Microsoft | Check entity | If via Taiwan entity: 5%; if US: reverse charge |
+| AWS | AWS Asia Pacific (SG) | Reverse charge 5% | Singapore entity — foreign service |
+
+### 3.8 Payment processors (exempt fees)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE | Payment processing — exempt financial service |
+| PAYPAL (fees) | EXCLUDE | Same |
+| LINE PAY 手續費 | EXCLUDE | Same |
+| 街口支付, JKOPAY 手續費 | EXCLUDE | Same |
+
+### 3.9 Internal transfers and exclusions
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 帳戶轉帳, 內部轉帳 | EXCLUDE | Internal movement |
+| 借款, 還款, 貸款 | EXCLUDE | Loan principal — out of scope |
+| 薪資, 工資 | EXCLUDE | Payroll — outside business tax scope |
+| 股利, 股息 | EXCLUDE | Dividend — outside scope |
+| 押金, 保證金 | EXCLUDE | Deposit — out of scope until applied |
+| ATM提款 | Tier 2 — ask | Default exclude; ask purpose |
 
 ---
 
-## Step 2: VAT Registration [T1]
+## Section 4 — Worked examples
 
-**Legislation:** BTA Art. 28, 29, 30.
+Six classifications from a hypothetical Taipei-based IT consultant. Format: 玉山銀行 (E.SUN Bank) CSV.
 
-### Registration Requirements
+### Example 1 — Domestic B2B revenue (5%)
 
-| Entity Type | Registration Required? | Threshold |
-|-------------|----------------------|-----------|
-| All profit-seeking enterprises | Yes -- must register before commencing business | No minimum threshold (all must register) |
-| Foreign enterprises with fixed place of business in Taiwan | Yes | Upon establishment |
-| Foreign e-service providers (cross-border digital services) | Yes -- if annual sales to Taiwan consumers >= TWD 600,000 (raised from TWD 480,000 effective April 2025) | TWD 600,000/year |
-| Small-scale businesses (小規模營業人) | Register but assessed by tax authority (GBRT at 1%) | Monthly sales < TWD 200,000 |
+**Input line:**
+`2025/04/15  轉帳收入  中信工程顧問股份有限公司  統一發票: WX12345678  +525,000  NT$`
 
-### Registration Process [T1]
+**Reasoning:**
+Incoming NTD 525,000 from a Taiwan company for IT consulting. Business tax at 5%. Gross NTD 525,000 includes 5% tax. Net = NTD 500,000 (課稅銷售額) + NTD 25,000 output tax. A uniform invoice (統一發票) must be issued with the 8-digit business number of the buyer. Report on Form 401 box 401-1.
 
-1. Apply to the local National Taxation Bureau
-2. Obtain Unified Business Number (UBN / 統一編號)
-3. Register on the MoF e-invoice platform (電子發票整合服務平台)
-4. Set up electronic filing on eTax portal
+**Classification:** Output tax 5% — NTD 25,000. Net sales: NTD 500,000.
 
-**Legislation:** BTA Art. 28; Registration Rules for Business Tax.
+### Example 2 — Export service (zero-rated, paid in foreign currency)
+
+**Input line:**
+`2025/04/22  外匯入款  ACME CORPORATION USA  Consulting Invoice TW-2025-018  +USD 10,000 (NTD 312,000)`
+
+**Reasoning:**
+USD payment from a US company for consulting services. Services provided to a foreign business paid in foreign currency qualify for zero-rating under the Business Tax Act. Evidence: contract, foreign wire transfer record. Report NTD 312,000 on box 401-3 (zero-rated). No output tax. Confirm: (a) service consumed by a foreign company; (b) payment received in foreign currency.
+
+**Classification:** Zero-rated export — NTD 312,000. Output tax: NTD 0.
+
+### Example 3 — Utility expense (5%, input credit)
+
+**Input line:**
+`2025/04/10  自動扣款  台灣電力股份有限公司  電費 2025年3月  -4,200  NT$`
+
+**Reasoning:**
+Monthly electricity bill from Taiwan Power (Taipower). Standard 5% business tax. NTD 4,200 gross. Net = NTD 4,000 + NTD 200 input tax. Taipower issues a uniform invoice — input credit of NTD 200 is claimable. Report on 401-5 (total input tax).
+
+**Classification:** Input tax 5% — NTD 200. Net expense: NTD 4,000.
+
+### Example 4 — International SaaS reverse charge (Google Ads)
+
+**Input line:**
+`2025/04/08  扣款  GOOGLE ASIA PACIFIC PTE  Google Ads April 2025  -31,500  NT$`
+
+**Reasoning:**
+Google Ads billed from Singapore entity. Foreign electronic service provided to a Taiwan business. Taiwan's cross-border e-services rules require the Taiwan buyer to self-assess 5% business tax if the foreign supplier has not registered. NTD 31,500 is treated as net; self-assessed tax = NTD 31,500 × 5% = NTD 1,575. Google Singapore has Taiwan registration — check if their invoice shows Taiwan business tax. If yes, treat as standard input; if no, self-assess.
+
+**Classification:** Reverse charge 5% — NTD 1,575. Confirm Google's Taiwan registration status.
+
+### Example 5 — Blocked input (personal vehicle)
+
+**Input line:**
+`2025/04/05  扣款  中油加油站  加油費  -3,000  NT$`
+
+**Reasoning:**
+Fuel from CPC (China Petroleum Corporation / 中油). Vehicle expenses — business-use percentage unknown. Business tax rules: input tax on vehicles is disallowed if the vehicle is also used privately. Default: 0% credit until business-use percentage confirmed. If dedicated business vehicle with no personal use: full 5% input credit. Flag for Tier 2 confirmation.
+
+**Classification:** Tier 2 — ask. Conservative default: no input credit (0%).
+
+### Example 6 — Exempt service received (bank interest income recorded as expense reversal)
+
+**Input line:**
+`2025/04/01  利息收入  玉山銀行  存款利息 2025年3月  +1,250  NT$`
+
+**Reasoning:**
+Bank interest credit. Interest income is exempt from business tax in Taiwan. EXCLUDE from 營業稅 return. This is also not a supply — it is passive income. No output tax. No impact on input credit proration unless the business has significant exempt income that triggers proration rules.
+
+**Classification:** EXCLUDE. Exempt interest income — outside business tax scope.
 
 ---
 
-## Step 3: Output VAT [T1]
+## Section 5 — Tier 1 rules (compressed)
 
-**Legislation:** BTA Art. 14, 16.
+### 5.1 Standard rate 5%
 
-### Calculation
+Default rate for all taxable sales of goods and services in Taiwan. Legislation: Business Tax Act (加值型及非加值型營業稅法) Article 10.
+
+### 5.2 Zero rate — exports
+
+Exports of goods and services rendered to foreign businesses paid in foreign currency. Evidence required: export customs declaration for goods; contracts and FX transfer records for services. Legislation: Business Tax Act Article 7.
+
+### 5.3 Exempt supplies
+
+Exempt (免稅) supplies: medical and hospital services, education, cultural/arts services (some), financial services (interest, insurance premiums), residential land, sale of securities, postage stamps. No output tax; no input credit claimable on costs attributable to exempt revenue. Legislation: Business Tax Act Articles 8–9.
+
+### 5.4 Uniform invoice (統一發票)
+
+All taxable sales must be evidenced by a uniform invoice (統一發票) with a government-issued sequential number. Required fields: seller's business number (統一編號), buyer's business number (for B2B), transaction date, description, taxable amount, tax amount. Electronic invoices (電子發票) allowed if registered on the e-invoice platform.
+
+### 5.5 Input credit rules
+
+Input tax is deductible if: (1) a uniform invoice is held; (2) the purchase relates to taxable (not exempt) business activities; (3) not blocked (motor vehicles for mixed use, entertainment, personal expenses). Blocked inputs cannot be credited regardless of business purpose.
+
+### 5.6 Cross-border electronic services
+
+Foreign suppliers of electronic services (B2C to Taiwan consumers) must register if Taiwan B2C sales > NTD 480,000/year. Taiwan B2B buyers self-assess if the foreign supplier has not registered. Rate: 5%.
+
+### 5.7 Small business tax (小規模營業人)
+
+Monthly revenue below NTD 80,000 (goods) / NTD 40,000 (services): file quarterly Form 403. Tax is assessed by the tax office on a deemed basis (usually 1% of sales for food/beverage; standard rates otherwise). No input credits. No uniform invoice required (use plain receipt).
+
+### 5.8 Filing deadlines
+
+| Filer | Period | Due date |
+|---|---|---|
+| General taxpayer (bi-monthly) | Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct, Nov–Dec | 15th of following month |
+| Small business (quarterly) | Q1, Q2, Q3, Q4 | 15th of month following quarter |
+
+### 5.9 Penalties
+
+| Offence | Penalty |
+|---|---|
+| Late filing | NTD 1,200–12,000 |
+| Late payment | 1% per month up to 30% |
+| Failure to issue uniform invoice | NTD 3,000–30,000 + 5× assessed tax |
+| Tax evasion | Up to 5× evaded tax + potential criminal liability |
+
+---
+
+## Section 6 — Tier 2 catalogue
+
+### 6.1 Vehicle expenses — business-use percentage
+
+**What it shows:** Fuel, tolls, parking, or vehicle lease payment.
+**What's missing:** Proportion of business vs. personal use.
+**Conservative default:** 0% input credit.
+**Question to ask:** "Is this vehicle used exclusively for business? If mixed, what is the estimated business-use percentage? Is a mileage log kept?"
+
+### 6.2 Export qualification for services
+
+**What it shows:** Revenue from a foreign customer.
+**What's missing:** Whether payment was received in foreign currency and the service was consumed outside Taiwan.
+**Conservative default:** Taxable at 5%.
+**Question to ask:** "Was payment received in foreign currency? Was the service entirely consumed by a foreign entity outside Taiwan?"
+
+### 6.3 International SaaS — registered or not in Taiwan
+
+**What it shows:** Payment to a foreign tech company.
+**What's missing:** Whether the foreign supplier has registered for Taiwan business tax.
+**Conservative default:** Self-assess 5% reverse charge.
+**Question to ask:** "Does the invoice from this supplier show a Taiwan business number (統一編號)? If yes, treat as standard; if no, self-assess."
+
+### 6.4 Mixed residential/commercial property rent
+
+**What it shows:** Rent payment.
+**What's missing:** Whether commercial (taxable) or residential (depends — residential land exempt but building portion taxable in some cases).
+**Conservative default:** Taxable at 5% if commercial; check for exempt status.
+**Question to ask:** "Is this rent for commercial office space or residential? Does the landlord issue a uniform invoice?"
+
+### 6.5 ATM cash withdrawals
+
+**What it shows:** Cash withdrawal.
+**What's missing:** What the cash was spent on.
+**Conservative default:** Exclude.
+**Question to ask:** "What was this cash used for? Do you have receipts?"
+
+---
+
+## Section 7 — Excel working paper template
 
 ```
-Output VAT = Taxable Sales Amount (未含稅銷售額) x 5%
-```
-
-If the price is VAT-inclusive:
-```
-Sales Amount = VAT-inclusive Price / 1.05
-Output VAT = Sales Amount x 5%
-```
-
-### Time of Supply (Tax Obligation Point) [T1]
-
-| Transaction Type | Tax Point | Legislation |
-|-----------------|-----------|-------------|
-| Sale of goods | Delivery or payment received, whichever is earlier | BTA Art. 12-1 |
-| Services | Service completed or payment received, whichever is earlier | BTA Art. 12-1 |
-| Imports | Date of customs declaration | BTA Art. 15 |
-| Long-term contracts | As per contract milestones or payment schedule | BTA Art. 12-1 |
-| Consignment | Upon sale by consignee | BTA Art. 12-1 |
-
-### Deemed Sales [T2]
-
-| Situation | VAT Treatment | Legislation |
-|-----------|--------------|-------------|
-| Self-use of goods (non-business purpose) | Deemed sale at market value | BTA Art. 3(3) |
-| Gifts to others | Deemed sale at market value | BTA Art. 3(3) |
-| Dissolution/liquidation — remaining inventory | Deemed sale at market value | BTA Art. 3(3) |
-| Transfer of goods between head office and branches (if separately registered) | Deemed sale | BTA Art. 3(3) |
-
-**Flag for reviewer: deemed sale valuation must be confirmed by CPA.**
-
----
-
-## Step 4: Zero-Rated Supplies [T1]
-
-**Legislation:** BTA Art. 7.
-
-The following are taxed at 0% (input VAT fully refundable):
-
-| Zero-Rated Category | Details | Legislation |
-|---------------------|---------|-------------|
-| Export of goods | Goods shipped outside Taiwan (proof: export declaration) | BTA Art. 7(1) |
-| Services related to exports | Processing, repairing, or manufacturing for exported goods | BTA Art. 7(2) |
-| International transport | International transport services by domestic operators | BTA Art. 7(3) |
-| Services to foreign enterprises | Services provided to foreign enterprises for use outside Taiwan | BTA Art. 7(4) |
-| Goods to bonded areas | Sales to Export Processing Zones, Science Parks, bonded warehouses, FTZs | BTA Art. 7(5) |
-| Goods sold to duty-free shops | Duty-free shop supplies | BTA Art. 7(6) |
-| Sales to foreign diplomatic entities | Goods/services to embassies, consulates with reciprocity | BTA Art. 7(7) |
-
-### Proof Requirements for Zero-Rating [T1]
-
-| Category | Required Documents |
-|----------|--------------------|
-| Export of goods | Customs export declaration (出口報單); shipping documents |
-| Services to foreign enterprises | Contract; proof of foreign enterprise status; proof service is for use outside Taiwan |
-| International transport | Transport documents; passenger manifests / bills of lading |
-
----
-
-## Step 5: Exempt Supplies [T1]
-
-**Legislation:** BTA Art. 8.
-
-The following are exempt from VAT (no output VAT; input VAT NOT deductible):
-
-| Exempt Category | Description | BTA Art. 8 Item |
-|----------------|-------------|----------------|
-| Sale of land | Land transactions (building portion is taxable) | Item 1 |
-| Water supply | Tap water supplied by water utilities | Item 2 |
-| Medical services | Services by hospitals, clinics, nursing homes | Item 3 |
-| Education | Tuition by schools, kindergartens, approved educational institutions | Item 4 |
-| Banking / financial services | Interest, commissions of financial institutions (subject to GBRT instead) | Item 5 |
-| Insurance | Insurance premiums (subject to GBRT instead) | Item 6 |
-| Postal services | Stamps, postal money orders by Chunghwa Post | Item 7 |
-| Government fees | Administrative fees, regulatory charges by government entities | Item 8 |
-| Lottery tickets | Government-issued lottery tickets | Item 9 |
-| Agricultural inputs | Fertilizers, pesticides, feeds, veterinary drugs, farm machinery | Item 10-13 |
-| Fishery | Fish caught by fishermen and sold at wholesale fish markets | Item 14 |
-| Magazines / newspapers | Sales by publishers (not advertising revenue) | Item 15 |
-| Handicapped goods | Goods/equipment specifically designed for disabled persons | Item 16 |
-| Residential rent | Rental of residential property | Item 17 |
-| Research equipment | Imported instruments for research by academic institutions | Item 18 |
-| Coastal/international ships and aircraft | Sale or lease | Item 19 |
-| Diplomats | Goods/services to diplomats with reciprocity | Item 20 |
-| Agricultural products | Unprocessed agricultural, forestry, fishery, livestock products sold by farmers | Item 21 |
-| Secondhand goods | Consigned secondhand goods via qualified consignment dealers | Item 22 |
-| Social welfare | Services by social welfare organizations | Item 23 |
-| Voluntarily exempt small businesses | Small businesses with monthly sales below TWD 80,000 (goods) or TWD 50,000 (services, raised from TWD 40,000 effective 1 January 2025) | Item 27-28 |
-
----
-
-## Step 6: Input VAT Credit Rules [T1]
-
-**Legislation:** BTA Art. 15, 19, 33.
-
-### Creditable Input VAT
-
-| Document Type | Deductible? | Conditions |
-|--------------|-------------|------------|
-| Government Uniform Invoice (GUI / 統一發票) with UBN | Yes | Buyer's UBN must appear on invoice |
-| Customs duty payment certificate | Yes | For import VAT paid at customs |
-| E-invoice with UBN | Yes | Via MoF e-invoice platform |
-| Receipt from small-scale business | Yes -- 1% deemed input | Only 1% of purchase amount is deductible |
-| Simplified invoice without UBN | No | Cannot claim input VAT |
-
-### Blocked Input VAT (Non-Deductible) [T1]
-
-**Legislation:** BTA Art. 19.
-
-The following input VAT may NOT be credited:
-
-| Blocked Category | BTA Art. 19 Item |
-|-----------------|-----------------|
-| Purchases not for business use (personal consumption) | Item 1 |
-| Entertainment expenses (交際費) | Item 2 |
-| Gifts and donations | Item 2 |
-| Passenger vehicles not essential to business operations | Item 3 |
-| Goods/services for exempt supplies | Item 4 |
-| Invoices not bearing the buyer's UBN | Item 5 |
-| Purchases prior to business registration | Item 6 (exception: pre-opening expenses within certain period) |
-
-### Mixed-Use Apportionment [T2]
-
-**Legislation:** BTA Art. 19(3); Enforcement Rules Art. 26.
-
-If a taxpayer makes both taxable and exempt supplies:
-
-```
-Non-deductible Input VAT = Total Input VAT x (Exempt Sales / Total Sales)
-```
-
-If the ratio of exempt sales to total sales is <= 10%, the taxpayer may claim ALL input VAT (de minimis rule).
-
-**Flag for reviewer: apportionment ratio must be confirmed by CPA. Annual adjustment may be required.**
-
----
-
-## Step 7: VAT Return Structure (Form 401) [T1]
-
-**Legislation:** BTA Art. 35; Enforcement Rules Art. 33-38.
-
-### Filing Period
-
-| Period | Months Covered | Filing Deadline |
-|--------|---------------|-----------------|
-| Period 1 (Jan-Feb) | January + February | 15 March |
-| Period 2 (Mar-Apr) | March + April | 15 May |
-| Period 3 (May-Jun) | May + June | 15 July |
-| Period 4 (Jul-Aug) | July + August | 15 September |
-| Period 5 (Sep-Oct) | September + October | 15 November |
-| Period 6 (Nov-Dec) | November + December | 15 January (following year) |
-
-**Deadline rule:** If the 15th falls on a Saturday, Sunday, or national holiday, the deadline is extended to the next business day.
-
-### Form 401 Key Sections
-
-| Section | Line Items | Description |
-|---------|-----------|-------------|
-| I. Sales | Lines 1-9 | Taxable sales, zero-rated sales, exempt sales |
-| II. Output VAT | Lines 10-14 | Output VAT on taxable sales |
-| III. Input VAT | Lines 15-22 | Input VAT from purchases (by document type) |
-| IV. Tax Payable / Refundable | Lines 23-30 | Net VAT calculation |
-
-### Form 401 Detailed Line Mapping
-
-| Line | Description | Category |
-|------|-------------|----------|
-| Line 1 | Sales at 5% (taxable domestic sales) | Output |
-| Line 2 | Sales at 0% (zero-rated: exports, intl transport) | Output |
-| Line 3 | Exempt sales | Output |
-| Line 4 | Total sales (Line 1 + 2 + 3) | Output |
-| Line 5 | Sales returns and allowances | Output (deduction) |
-| Line 7 | Fixed asset sales | Output |
-| Line 10 | Output VAT on Line 1 sales | Output VAT |
-| Line 11 | Output VAT on fixed asset sales | Output VAT |
-| Line 12 | Total output VAT | Output VAT |
-| Line 15 | Input VAT from GUI (統一發票) | Input VAT |
-| Line 16 | Input VAT from customs certificates | Input VAT |
-| Line 17 | Input VAT from other deductible documents | Input VAT |
-| Line 18 | Deemed input (1% from small-scale business receipts) | Input VAT |
-| Line 19 | Input VAT on fixed asset purchases | Input VAT |
-| Line 20 | Total input VAT | Input VAT |
-| Line 21 | Less: non-deductible input VAT (BTA Art. 19) | Input VAT adjustment |
-| Line 22 | Net deductible input VAT | Input VAT |
-| Line 23 | VAT payable = Line 12 - Line 22 | Balance |
-| Line 24 | Prior period overpayment / credit balance | Balance |
-| Line 25 | VAT payable after credits | Balance |
-| Line 27 | Refund claimed (for zero-rated excess input) | Refund |
-
----
-
-## Step 8: GBRT Return (Form 403) [T1]
-
-**Legislation:** BTA Art. 11, 12, 21, 22, 23.
-
-### Filing Period
-
-| Taxpayer Type | Period | Deadline |
-|--------------|--------|----------|
-| Banks, insurance, securities firms | Monthly / Quarterly (varies by category) | 15th of following month or quarter-end month |
-| Special drinking/entertainment establishments | Bi-monthly (same as VAT) | 15th of month following period end |
-
-### Form 403 Structure
-
-| Section | Description |
-|---------|-------------|
-| I. Business Revenue | Gross receipts by category |
-| II. Tax Calculation | Revenue x applicable GBRT rate |
-| III. Tax Payable | Total GBRT due |
-
-### GBRT taxpayers CANNOT claim input VAT credits [T1]
-
-GBRT replaces VAT for these entities. They pay tax on gross receipts and have no credit-invoice mechanism.
-
----
-
-## Step 9: E-Invoice System (電子發票) [T1]
-
-**Legislation:** Uniform Invoice Award Regulations (統一發票給獎辦法); MoF e-invoice platform regulations.
-
-### E-Invoice Requirements
-
-| Requirement | Detail |
-|-------------|--------|
-| Mandatory for | All registered business entities |
-| Platform | MoF e-Invoice Platform (財政部電子發票整合服務平台) |
-| Format | XML-based electronic format; can be stored on cloud |
-| Consumer invoices | May be stored in carrier (載具) — mobile barcode, NPC card, etc. |
-| B2B invoices | Must include buyer's UBN for input VAT deduction |
-| Archive period | 5 years minimum (paper or electronic) |
-
-### Government Uniform Invoice (GUI / 統一發票) Types
-
-| Type | Code | Use |
-|------|------|-----|
-| Triplicate GUI | 三聯式 | B2B transactions (buyer claims input VAT) |
-| Duplicate GUI | 二聯式 | B2C transactions (consumer/no input claim) |
-| Special GUI | 特種 | Special industries (GBRT taxpayers) |
-| E-invoice | 電子發票 | Electronic equivalent of above types |
-| Cash register receipt | 收銀機統一發票 | Retail (progressively replaced by e-invoice) |
-
-### Invoice Lottery (統一發票兌獎) [T1]
-
-Taiwan has a unique invoice lottery system where consumer invoice numbers are eligible for bi-monthly prize drawings. This does NOT affect VAT compliance but is relevant context:
-- Special prize: TWD 10,000,000
-- Grand prize: TWD 2,000,000
-- Additional prizes for cloud-stored invoices
-
----
-
-## Step 10: Import VAT [T1]
-
-**Legislation:** BTA Art. 9, 41.
-
-### VAT on Imports
-
-| Item | Treatment |
-|------|-----------|
-| Imported goods | 5% VAT levied by Customs on (CIF value + customs duty + commodity tax + other charges) |
-| Payment | At time of customs clearance |
-| Input credit | Customs duty payment certificate is valid input VAT document |
-| Importer | Any person importing goods (business or individual) |
-
-### Import Exemptions [T1]
-
-| Exemption | Legislation |
-|-----------|-------------|
-| Goods for military use | BTA Art. 9 |
-| Goods imported by diplomatic entities with reciprocity | BTA Art. 9 |
-| Goods for humanitarian relief | BTA Art. 9 |
-| Returned export goods (within certain conditions) | Customs Act |
-
----
-
-## Step 11: Cross-Border Digital Services [T2]
-
-**Legislation:** BTA Art. 2-1, 6, 28-1; MoF Announcement No. 10504704390 (2017).
-
-### Foreign E-Service Provider Registration
-
-| Criterion | Detail |
-|-----------|--------|
-| Who must register? | Foreign enterprises providing electronic services to Taiwan individuals (B2C) |
-| Threshold | Annual sales to Taiwan >= TWD 600,000 (raised from TWD 480,000, effective April 2025) |
-| Registration | Apply to Taipei National Taxation Bureau |
-| Filing | Bi-monthly Form 401 |
-| Rate | 5% on Taiwan-sourced revenue |
-| Input VAT | Cannot claim input VAT (no Taiwan purchases typically) |
-
-### B2B Cross-Border Services [T1]
-
-| Scenario | Treatment |
-|----------|-----------|
-| Foreign enterprise provides services to Taiwan business (B2B) | Taiwan buyer self-assesses and remits 5% VAT (reverse charge equivalent); buyer claims input VAT credit simultaneously if fully taxable |
-| Taiwan buyer is fully engaged in taxable supplies (0% or 5% rate only) | Buyer is exempt from withholding obligation | BTA Art. 36(1) proviso |
-
-**Flag for reviewer: verify B2B qualification and whether buyer is "exclusively engaged in taxable transactions" for the proviso to apply.**
-
----
-
-## Step 12: Filing Deadlines and Penalties [T1]
-
-### Filing Deadlines Summary
-
-| Return | Period | Deadline |
-|--------|--------|----------|
-| Form 401 (VAT) | Bi-monthly | 15th of month following period end |
-| Form 403 (GBRT) | Monthly or bi-monthly | 15th of month following period end |
-| Annual VAT reconciliation (where applicable) | Annual | Per MoF announcement |
-| Zero-rated refund application | With bi-monthly return | Filed with Form 401 |
-
-### Penalties [T1]
-
-| Violation | Penalty | Legislation |
-|-----------|---------|-------------|
-| Late filing | Surcharge: 1% of tax due per 2 days, up to 15% | BTA Art. 49 |
-| Failure to register | Fine TWD 3,000-30,000; may be assessed tax retroactively | BTA Art. 45 |
-| Failure to issue GUI | Fine 1-10x the tax amount on the uninvoiced sale | BTA Art. 52 |
-| Issuing false invoices | Fine 1-10x the tax amount; criminal liability possible | BTA Art. 52; Tax Collection Act Art. 41-43 |
-| Under-reporting sales | Additional tax + surcharge + fine up to 5x the underpaid tax | BTA Art. 51 |
-| Failure to use e-invoice | Fine TWD 3,000-30,000 per instance | BTA Art. 45 |
-| Late payment | Interest surcharge at 1% per month, up to 10% | Tax Collection Act Art. 20 |
-
----
-
-## Step 13: Key Thresholds Summary
-
-| Threshold | Value | Legislation |
-|-----------|-------|-------------|
-| VAT registration | All profit-seeking enterprises (no minimum) | BTA Art. 28 |
-| Foreign e-service provider registration | Annual sales >= TWD 600,000 (raised from TWD 480,000, effective April 2025) | BTA Art. 28-1 |
-| Small-scale business (GBRT assessed) | Monthly sales < TWD 200,000 | BTA Art. 13; Enforcement Rules Art. 9 |
-| Small-scale business voluntary VAT exemption | Monthly sales < TWD 80,000 (goods) / TWD 50,000 (services, raised from TWD 40,000 effective 1 Jan 2025) | BTA Art. 8(27-28) |
-| Mixed-use de minimis rule | Exempt sales <= 10% of total sales | BTA Art. 19(3); Enforcement Rules Art. 26 |
-| Invoice retention period | 5 years | Tax Collection Act Art. 11 |
-
----
-
-## Step 14: Edge Case Registry
-
-### EC1 -- Land and Building Sold Together [T2]
-**Situation:** Seller sells a property consisting of land and building in a single transaction.
-**Resolution:** Land sale is exempt (BTA Art. 8, Item 1). Building sale is taxable at 5%. The total price must be apportioned between land and building. Apportionment typically follows the government-assessed values (公告地價 for land, 房屋評定現值 for building) unless a different allocation is contractually specified and commercially reasonable. Flag for reviewer: apportionment methodology.
-**Legislation:** BTA Art. 8(1); MoF interpretive ruling.
-
-### EC2 -- Foreign Enterprise Service Income [T1]
-**Situation:** Taiwan company pays a US company for cloud software subscription (B2B).
-**Resolution:** Taiwan buyer must withhold and remit 5% VAT on the payment (reverse charge equivalent). If the Taiwan buyer is exclusively engaged in taxable transactions (5% or 0% rate), the buyer is exempt from this withholding obligation per BTA Art. 36(1) proviso. If buyer makes any exempt supplies, must withhold.
-**Legislation:** BTA Art. 36.
-
-### EC3 -- Entertainment Expenses [T1]
-**Situation:** Company purchases meals and drinks for client entertainment.
-**Resolution:** Input VAT is BLOCKED under BTA Art. 19(2). The expense is deductible for income tax (subject to limits under Income Tax Act Art. 37) but input VAT is not recoverable.
-
-### EC4 -- Employee Welfare / Gifts [T1]
-**Situation:** Company purchases gifts for employee year-end party or Mid-Autumn Festival gifts.
-**Resolution:** If gifts are for employees (not clients), input VAT is blocked as non-business use (BTA Art. 19(1)). If the company is deemed to have made a deemed supply, output VAT at 5% applies on the market value.
-**Legislation:** BTA Art. 3(3), Art. 19(1).
-
-### EC5 -- Passenger Vehicle Purchase [T1]
-**Situation:** Company purchases a passenger car for general business use (not a taxi or rental company).
-**Resolution:** Input VAT on passenger vehicles is BLOCKED under BTA Art. 19(3), unless the vehicle is essential to the business operations (e.g., car rental, taxi, driving school). If the entity is a car rental company, input VAT is deductible.
-
-### EC6 -- Credit Notes and Sales Returns [T1]
-**Situation:** Customer returns goods and a credit note is issued.
-**Resolution:** Issue a Sales Return/Allowance Certificate (銷貨退回或折讓證明單). Seller reduces output VAT in the period the credit note is issued. Buyer must reduce input VAT in the same period.
-**Legislation:** BTA Art. 15; Enforcement Rules Art. 24.
-
-### EC7 -- Consignment Sales [T1]
-**Situation:** Principal consigns goods to an agent/consignee for sale.
-**Resolution:** Tax point is when the consignee sells to the final customer. Principal issues GUI to consignee upon sale. Consignment transfer itself is not a taxable event (unless separately registered entities).
-**Legislation:** BTA Art. 3, 12-1.
-
-### EC8 -- Pre-Opening Input VAT [T2]
-**Situation:** Company incurs expenses before formal business registration.
-**Resolution:** Input VAT on pre-opening expenses is generally blocked (BTA Art. 19(6)), BUT may be recovered if the company registers within a reasonable period and the expenses are directly related to the future business. Flag for reviewer.
-**Legislation:** BTA Art. 19(6); MoF interpretive rulings.
-
-### EC9 -- Construction Services for Own Use [T2]
-**Situation:** Company constructs a building for its own use.
-**Resolution:** Self-constructed assets are deemed sales. Output VAT is calculated on the construction cost. Input VAT on materials and services is deductible. Net effect may be zero but both sides must be reported. Flag for reviewer for valuation.
-**Legislation:** BTA Art. 3(3)(3).
-
-### EC10 -- Tax-Free Shop Sales [T1]
-**Situation:** Retailer participates in the Foreign Passenger Tax Refund Scheme (外籍旅客購物退稅).
-**Resolution:** Foreign passengers purchasing goods >= TWD 2,000 from approved Tax Refund Shopping (TRS) stores can claim VAT refund upon departure. The retailer charges and collects 5% VAT normally. Refund is processed by the refund agent at the airport/port.
-**Legislation:** BTA Art. 7-1; Implementation Rules for Foreign Passenger VAT Refund.
-
----
-
-## Step 15: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output the following structured flag:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed Taiwan CPA (會計師) or tax agent (記帳士) must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed CPA/tax agent. Document gap.
+TAIWAN BUSINESS TAX WORKING PAPER — 營業稅計算表
+Period: ____________  Entity: ____________  統一編號: ____________
+
+A. OUTPUT TAX (銷項稅額)
+  A1. Taxable sales at 5% (net)               ___________
+  A2. Output tax at 5% (A1 × 5%)              ___________
+  A3. Zero-rated exports (net)                ___________
+  A4. Exempt sales (net)                      ___________
+  A5. Reverse charge output self-assessed     ___________
+
+B. INPUT TAX (進項稅額)
+  B1. Domestic purchases — 5% (net)           ___________
+  B2. Input tax at 5% (B1 × 5%)               ___________
+  B3. Import business tax paid                ___________
+  B4. Reverse charge self-assessed input      ___________
+  B5. Total input tax (B2+B3+B4)             ___________
+  B6. Disallowed input (vehicles, personal)   ___________
+  B7. Net input (B5 − B6)                     ___________
+
+C. NET PAYABLE
+  C1. Net tax (A2 − B7)                       ___________
+  C2. Prior period credit carried forward     ___________
+  C3. Net payable / (excess credit) (C1 − C2) ___________
+
+REVIEWER FLAGS:
+  [ ] All uniform invoices (統一發票) confirmed?
+  [ ] Export FX evidence available for zero-rated sales?
+  [ ] Vehicle use percentage confirmed?
+  [ ] International SaaS registration status confirmed?
+  [ ] Exempt income proration check done?
 ```
 
 ---
 
-## Step 16: Test Suite
+## Section 8 — Bank statement reading guide
 
-### Test 1 -- Standard Domestic Sale, 5% VAT
-**Input:** Taiwan company sells goods domestically. Invoice: TWD 105,000 VAT-inclusive. Rate: 5%.
-**Expected output:** Sales amount = TWD 100,000. Output VAT = TWD 5,000. Report on Form 401 Line 1 (sales), Line 10 (output VAT).
+### Common Taiwanese bank CSV formats
 
-### Test 2 -- Export Sale, Zero-Rated
-**Input:** Taiwan manufacturer exports goods to the US. Export value: TWD 500,000. Customs export declaration obtained.
-**Expected output:** Sales amount = TWD 500,000. Output VAT = TWD 0. Report on Form 401 Line 2 (zero-rated sales). Input VAT on related purchases fully refundable.
+| Bank | Key columns | Date format | Amount |
+|---|---|---|---|
+| 玉山銀行 E.SUN | 交易日期, 摘要, 交易金額, 餘額 | YYYY/MM/DD | NTD integer or decimal |
+| 國泰世華 Cathay | 交易日, 說明, 存入, 提出, 餘額 | YYYY/MM/DD | NTD |
+| 中信銀行 CTBC | 交易日期, 交易說明, 轉入金額, 轉出金額, 餘額 | YYYY-MM-DD | NTD |
+| 富邦銀行 Fubon | 交易日期, 交易種類, 金額, 餘額 | YYYYMMDD | NTD |
+| 台灣銀行 BOT | 交易日, 摘要, 借方金額, 貸方金額, 餘額 | YYYY/MM/DD | NTD |
+| 中華郵政 Chunghwa Post | 日期, 說明, 取款, 存款, 餘額 | YYYY/MM/DD | NTD |
 
-### Test 3 -- Input VAT on Domestic Purchase
-**Input:** Taiwan company purchases raw materials. GUI shows: sales TWD 200,000, VAT TWD 10,000. Buyer UBN on invoice.
-**Expected output:** Input VAT = TWD 10,000. Deductible in full. Report on Form 401 Line 15.
+### Key Taiwanese banking terms
 
-### Test 4 -- Entertainment Expense (Blocked)
-**Input:** Company pays TWD 10,500 (VAT-inclusive) for client entertainment dinner. GUI received.
-**Expected output:** Input VAT = TWD 500. BLOCKED under BTA Art. 19(2). Non-deductible. Expense of TWD 10,500 gross.
-
-### Test 5 -- Passenger Vehicle (Blocked)
-**Input:** Non-car-rental company purchases a car. Price TWD 1,050,000 VAT-inclusive. GUI received.
-**Expected output:** Input VAT = TWD 50,000. BLOCKED under BTA Art. 19(3). Non-deductible.
-
-### Test 6 -- Cross-Border Service (B2B Reverse Charge)
-**Input:** Taiwan company (fully taxable) pays US cloud provider TWD 30,000 for SaaS subscription.
-**Expected output:** Taiwan buyer is exempt from withholding per BTA Art. 36(1) proviso (exclusively engaged in taxable transactions). No VAT withholding required. If buyer also makes exempt supplies, must withhold and remit TWD 1,500 (5%) and claim input credit.
-
-### Test 7 -- Exempt Supply (Medical Services)
-**Input:** Hospital provides medical services. Revenue TWD 1,000,000.
-**Expected output:** Exempt under BTA Art. 8(3). No output VAT. Input VAT on related purchases NOT deductible. Report on Form 401 Line 3 (exempt sales).
-
-### Test 8 -- Import of Goods
-**Input:** Company imports machinery. CIF value TWD 1,000,000. Customs duty TWD 50,000. No commodity tax.
-**Expected output:** Import VAT = (1,000,000 + 50,000) x 5% = TWD 52,500. Paid at customs. Input VAT TWD 52,500 deductible via customs duty payment certificate on Form 401 Line 16.
+| Chinese | Meaning | Classification hint |
+|---|---|---|
+| 轉帳收入 / 入款 | Incoming transfer | Potential revenue |
+| 轉帳支出 / 扣款 | Outgoing transfer / debit | Potential expense |
+| 自動扣款 | Auto-debit / standing order | Recurring expense |
+| 外匯入款 | Foreign currency receipt | Potential export |
+| 手續費 | Handling fee | Bank fee — exempt |
+| 利息收入 | Interest income | Exempt |
+| 餘額 | Balance | Running balance — ignore |
+| 摘要 / 說明 | Description / narrative | Key classification field |
+| ATM提款 | ATM withdrawal | Tier 2 — ask |
+| 薪資 | Salary | Out of scope |
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 9 — Onboarding fallback
 
-- NEVER allow GBRT taxpayers to claim input VAT credits (GBRT is a gross receipts tax with no credit mechanism)
-- NEVER claim input VAT without a valid GUI bearing the buyer's UBN
-- NEVER claim input VAT on entertainment, gifts, donations, or non-business personal consumption
-- NEVER claim input VAT on passenger vehicles unless the entity is in the vehicle rental, taxi, or driving school business
-- NEVER confuse zero-rated (0%, input VAT refundable) with exempt (no VAT, input VAT NOT refundable)
-- NEVER apply the 5% VAT rate to GBRT-classified entities (use GBRT rates)
-- NEVER file Form 401 for a GBRT taxpayer or Form 403 for a VAT taxpayer
-- NEVER ignore the de minimis rule for mixed-use apportionment (exempt sales <= 10% = full input credit)
-- NEVER issue or accept invoices without the e-invoice platform registration
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not by the AI
+If the client provides a bank statement but cannot answer all questions immediately:
 
----
+1. Classify all transactions using the pattern library (Section 3)
+2. Apply conservative defaults (Section 1)
+3. Mark Tier 2 items as "PENDING — reviewer must confirm"
+4. Generate working paper with flags
 
-## Step 17: VAT Compliance Calendar [T1]
-
-### Bi-Monthly Filing Timeline
-
-| Period | Months Covered | Key Actions | Deadline |
-|--------|---------------|-------------|----------|
-| Period 1 | Jan-Feb | Compile Jan+Feb invoices; reconcile e-invoice platform data | 15 Mar |
-| Period 2 | Mar-Apr | Compile Mar+Apr invoices; file Form 401/403 | 15 May |
-| Period 3 | May-Jun | Compile May+Jun invoices | 15 Jul |
-| Period 4 | Jul-Aug | Compile Jul+Aug invoices | 15 Sep |
-| Period 5 | Sep-Oct | Compile Sep+Oct invoices | 15 Nov |
-| Period 6 | Nov-Dec | Compile Nov+Dec invoices; year-end reconciliation | 15 Jan (next year) |
-
-### Pre-Filing Checklist [T1]
-
-| Step | Action | Reference |
-|------|--------|-----------|
-| 1 | Download e-invoice data from MoF platform for the bi-monthly period | E-invoice platform |
-| 2 | Reconcile sales invoices (issued GUIs) with accounting records | Form 401, Section I |
-| 3 | Reconcile purchase invoices (received GUIs with UBN) with accounting records | Form 401, Section III |
-| 4 | Identify and exclude blocked input VAT (Art. 19 items) | BTA Art. 19 |
-| 5 | Calculate apportionment ratio if mixed taxable/exempt supplies | BTA Art. 19(3) |
-| 6 | Check credit balance carried forward from prior period | Form 401, Line 24 |
-| 7 | Prepare zero-rated documentation (export declarations, contracts) | BTA Art. 7 |
-| 8 | File electronically via eTax portal | eTax Portal |
-| 9 | Remit payment via bank transfer or designated payment channels | By same deadline |
+```
+TAIWAN BUSINESS TAX ONBOARDING — MINIMUM QUESTIONS
+1. Are you a general taxpayer (一般納稅義務人) or small business (小規模)?
+2. Your 統一編號 (8-digit business number)?
+3. Filing period: which bi-monthly period does this bank statement cover?
+4. Do you have any export sales (paid in foreign currency from foreign clients)?
+5. Any vehicle expenses? Business-use percentage?
+6. Any international SaaS subscriptions? Do those suppliers show a Taiwan 統一編號?
+7. Do you make any exempt sales (land, financial services, medical)?
+8. Prior period excess credit (留抵稅額) carried forward amount?
+```
 
 ---
 
-## Step 18: Industry-Specific VAT Rules [T2]
+## Section 10 — Reference material
 
-### Real Estate Transactions
+### Key legislation
 
-| Transaction | Tax Treatment | Rate | Notes |
-|------------|--------------|------|-------|
-| Sale of land | Exempt (BTA Art. 8(1)) | N/A | Land value tax applies separately |
-| Sale of building | Taxable | 5% | On building portion only (apportion from land) |
-| Residential rent | Exempt (BTA Art. 8(17)) | N/A | Commercial rent is taxable at 5% |
-| Commercial rent | Taxable | 5% | Landlord charges 5% VAT; tenant claims input |
-| Construction services | Taxable | 5% | Standard rate |
+| Topic | Reference |
+|---|---|
+| Business Tax Act | 加值型及非加值型營業稅法 |
+| Standard rate | Business Tax Act Article 10 |
+| Zero rate | Business Tax Act Article 7 |
+| Exemptions | Business Tax Act Articles 8–9 |
+| Uniform invoice | 統一發票使用辦法 |
+| Cross-border e-services | 財政部公告 (MoF Announcement) on B2C digital services |
+| Small business | Business Tax Act Article 13 |
+| Penalties | Business Tax Act Articles 45–52; Tax Collection Act |
 
-### Financial Services (GBRT Entities)
+### Known gaps
 
-| Activity | Tax Type | Rate | Notes |
-|----------|---------|------|-------|
-| Bank interest income | GBRT | 1% (core) / 5% (non-core) | No input credit |
-| Insurance premiums | GBRT | 2% | No input credit |
-| Securities brokerage | GBRT | 2% | No input credit |
-| Reinsurance premiums | GBRT | 2% | No input credit |
-| Fund management fees | GBRT | 2% | No input credit |
+- Partial exemption proration (exempt income > de minimis) — escalate to 會計師
+- Financial institution special calculation — escalate
+- Non-resident B2C e-service registration — out of scope
+- Land transaction exemption interaction — verify with 會計師
 
-### E-Commerce and Digital Economy [T2]
+### Self-check before filing
 
-| Scenario | Treatment |
-|----------|-----------|
-| Taiwan company sells goods online domestically | Standard 5% VAT; must issue e-invoice |
-| Taiwan company sells digital services to foreign consumers | Zero-rated (BTA Art. 7(4)) if for use outside Taiwan |
-| Foreign platform sells to Taiwan consumers (B2C) | Foreign provider must register if annual sales >= TWD 480,000; charge 5% |
-| Foreign platform sells to Taiwan business (B2B) | Taiwan buyer self-assesses (reverse charge); may be exempt per Art. 36(1) proviso |
+- [ ] All uniform invoices issued for taxable sales
+- [ ] Export FX documentation held for zero-rated sales
+- [ ] Input tax correctly split: taxable vs. exempt vs. blocked
+- [ ] International SaaS reverse charge self-assessed where needed
+- [ ] Prior period credit (留抵稅額) correctly carried forward
+- [ ] Vehicle and entertainment inputs correctly blocked
 
-**Flag for reviewer: digital economy transactions require case-by-case assessment of where the service is "used" for place of supply purposes.**
+### Changelog
 
----
-
-## Step 19: Penalties Detail and Dispute Resolution [T1]
-
-### Penalty Calculation Examples
-
-| Scenario | Calculation |
-|----------|-------------|
-| Return due 15 Mar, filed 25 Mar (10 days late) | 1% x tax due x (10/2) = 5% surcharge on tax |
-| Return due 15 Mar, filed 15 Apr (31 days late) | Capped at 15% surcharge |
-| Sales of TWD 1,000,000 not reported | Additional tax TWD 50,000 (5%) + surcharge + fine up to 5x |
-| Failure to issue GUI on TWD 100,000 sale | Fine: 1-10x of TWD 5,000 (the tax) = TWD 5,000-50,000 |
-
-### Dispute Resolution [T2]
-
-| Step | Process | Deadline |
-|------|---------|----------|
-| 1. Administrative review | Apply to original NTB for reassessment | 30 days from assessment notice |
-| 2. Administrative appeal | Appeal to MoF Appeals Committee | 30 days from review decision |
-| 3. Administrative litigation | File with Administrative Court | 2 months from appeal decision |
-| 4. Supreme Administrative Court | Final appeal | Per court rules |
-
-**Flag for reviewer: tax disputes should involve a licensed tax agent or CPA. Do not self-represent without professional advice.**
+| Version | Date | Change |
+|---|---|---|
+| 1.0 | 2024 | Initial release |
+| 2.0 | April 2026 | Full v2.0 rewrite: pattern library, worked examples, no inline tier tags |
 
 ---
 
-## Step 20: Tax Incentives Related to VAT [T2]
+## Prohibitions
 
-### Statute for Industrial Innovation
-
-| Incentive | Detail | Legislation |
-|-----------|--------|-------------|
-| R&D tax credit | 15% of qualifying R&D expenditure (income tax credit, not VAT) | Statute for Industrial Innovation, Art. 10 |
-| Smart machinery investment credit | 5% of qualifying investment | Art. 10-1 |
-| Biotech company tax holiday | 5-year income tax exemption | Biotech Industry Development Act |
-
-**Note:** These are income tax incentives, NOT VAT incentives. However, VAT on purchases for qualifying activities remains deductible under standard rules.
-
-### Free Trade Zones / Bonded Warehouses [T2]
-
-| Zone Type | VAT Treatment |
-|-----------|--------------|
-| Export Processing Zone (加工出口區) | Goods entering zone: zero-rated; goods leaving to domestic: taxable at 5% |
-| Science Park (科學園區) | Similar to EPZ for bonded goods |
-| Free Trade Zone (自由貿易港區) | Goods in zone: outside VAT scope; goods entering domestic market: import VAT at 5% |
-| Bonded warehouse | VAT deferred until goods cleared for domestic consumption |
-
----
-
-## Step 21: Direct Tax Reference (Out of Scope) [T3]
-
-This skill does NOT cover direct taxes. The following is reference only:
-
-- **Profit-Seeking Enterprise Income Tax:** Standard rate 20%. Surtax of 5% on undistributed earnings. Legislation: Income Tax Act (所得稅法).
-- **Individual Income Tax:** Progressive rates 5%, 12%, 20%, 30%, 40%. Legislation: Income Tax Act.
-- **Alternative Minimum Tax (AMT):** Rate 12% for enterprises, 20% for individuals. Legislation: Income Basic Tax Act.
-- **Stamp Duty:** Varies by document type (0.1-0.4%). Legislation: Stamp Duty Act.
-- **Securities Transaction Tax:** 0.3% on listed securities sales. Legislation: Securities Transaction Tax Act.
-
----
-
-## Contribution Notes
-
-This skill covers the Taiwan VAT/Business Tax framework as of early 2026. Taiwan's business tax system is relatively stable compared to other jurisdictions but practitioners should monitor MoF announcements for threshold adjustments and e-invoice platform updates.
-
-**A skill may not be published without sign-off from a licensed practitioner (會計師 or 記帳士) in the relevant jurisdiction.**
-
+- NEVER claim input credit without a valid uniform invoice (統一發票)
+- NEVER zero-rate a service without confirming FX payment from a foreign entity
+- NEVER allow small business taxpayers to claim input credits
+- NEVER omit self-assessed reverse charge for foreign electronic services
+- NEVER classify bank interest as taxable revenue — it is exempt
+- NEVER present calculations as definitive — direct to a licensed 會計師 (CPA) for confirmation
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes. All outputs must be reviewed by a qualified professional (會計師 or equivalent) before filing.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date version is maintained at openaccountants.com.

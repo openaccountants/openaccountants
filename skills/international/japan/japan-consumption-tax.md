@@ -1,837 +1,580 @@
 ---
 name: japan-consumption-tax
-description: Use this skill whenever asked to prepare, review, or create a Japan Consumption Tax (JCT) return, classify transactions for JCT purposes, handle Qualified Invoice System (QIS) compliance, or advise on JCT registration, filing, and reporting. Trigger on phrases like "prepare consumption tax return", "JCT return", "shouhizei", "qualified invoice", "tekikaku invoice", "e-Tax filing", "JCT classification", or any request involving Japan consumption tax. Also trigger when classifying transactions from bank statements, invoices, or other source data for JCT purposes. This skill contains the complete JCT classification rules, return form mappings, input tax credit rules, QIS requirements, reverse charge treatment, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any JCT-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Japan Consumption Tax (JCT) return (消費税及び地方消費税の確定申告書), handle Qualified Invoice System (QIS / 適格請求書等保存方式) compliance, or advise on JCT registration, filing, and reporting. Trigger on phrases like "prepare consumption tax return", "JCT return", "消費税", "shouhizei", "qualified invoice", "tekikaku invoice", "e-Tax filing", or any Japan consumption tax request. ALWAYS read this skill before touching any JCT-related work.
+version: 2.0
+jurisdiction: JP
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# Japan Consumption Tax (JCT) Return Preparation Skill
+# Japan Consumption Tax (JCT / 消費税) Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Japan |
-| Jurisdiction Code | JP |
-| Primary Legislation | Consumption Tax Act (Act No. 108 of 1988, as amended) |
-| Supporting Legislation | Local Tax Act (chihou-zei-hou); Act on Special Measures Concerning Taxation (Sozei Tokubetsu Sochi Hou); Cabinet Order for Enforcement of Consumption Tax Act; Qualified Invoice Retention Method (Article 57-2 to 57-4, Consumption Tax Act) |
-| Tax Authority | National Tax Agency (NTA / Kokuzei-cho) |
-| Filing Portal | e-Tax (https://www.e-tax.nta.go.jp) |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate application, return form box assignment, QIS invoice requirements, basic input credit rules, derived calculations. Tier 2: partial credit under 95% rule, proportional division methods, transitional credit calculations, industry-specific classifications. Tier 3: complex group reorganisations, consolidated filing, cross-border PE structures, transfer pricing adjustments on intercompany services. |
+|---|---|
+| Country | Japan (日本国) |
+| Tax | Consumption Tax (消費税 / JCT) + Local Consumption Tax (地方消費税) |
+| Currency | JPY only |
+| Tax year | Fiscal year (varies by entity; calendar year for most individuals) |
+| Standard rate | 10% (national 7.8% + local 2.2%) |
+| Reduced rate | 8% (food and non-alcoholic beverages 食料品; subscription newspapers 新聞) |
+| Zero rate | 0% (exports 輸出; international transport) |
+| Exempt | Financial services, insurance, medical, education, residential rent, postage stamps, certain land transactions |
+| Registration threshold | JPY 10,000,000 in base period (基準期間) taxable sales |
+| Small business simplified | 簡易課税制度 — taxable sales ≤ JPY 50M; fixed credit ratio by industry |
+| Tax authority | National Tax Agency (NTA / 国税庁) |
+| Filing portal | e-Tax (https://www.e-tax.nta.go.jp) |
+| Return form | 消費税及び地方消費税の確定申告書 |
+| Annual filing deadline | 2 months after fiscal year end (e.g., 31 March for calendar-year filers) |
+| Quarterly/monthly deadlines | End of month following reporting period |
+| QIS registration | 適格請求書発行事業者登録番号 — T + 13 digits; mandatory from 1 October 2023 |
+| Contributor | Open Accountants Community |
+| Validated by | Pending — requires sign-off by a Japan-licensed zeirishi (税理士) |
+| Skill version | 2.0 |
+
+### Key return form lines
+
+| Line | Meaning |
+|---|---|
+| ① | Taxable sales (課税売上高) at 10% — net of tax |
+| ② | Taxable sales at 8% reduced rate — net of tax |
+| ③ | Zero-rated exports (輸出売上高) |
+| ④ | Exempt sales (非課税売上高) |
+| ⑤ | Total output tax (課税標準額に対する消費税額) |
+| ⑥ | Input tax credit (仕入税額控除) |
+| ⑦ | Net consumption tax payable (納付税額) = ⑤ − ⑥ |
+| ⑧ | Local consumption tax (地方消費税) = ⑦ × 22/78 |
+| ⑨ | Total payable (⑦ + ⑧) |
+
+### Conservative defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 10% standard |
+| Unknown whether food/beverage qualifies for 8% | 10% until confirmed |
+| Unknown counterparty registration status | Assume unregistered — no input credit |
+| Unknown business-use % (vehicle, phone, home) | 0% credit |
+| Unknown import classification | Taxable at 10% |
+| Unknown whether QIS invoice available | No input credit until confirmed |
+| Unknown B2B vs B2C for digital services | B2C — supplier must self-assess |
+
+### Red flag thresholds
+
+| Threshold | Value |
+|---|---|
+| HIGH single transaction | JPY 300,000 |
+| HIGH tax delta on single conservative default | JPY 30,000 |
+| MEDIUM counterparty concentration | >40% of output or input |
+| MEDIUM conservative default count | >4 per return |
+| LOW absolute net JCT position | JPY 500,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 — Required inputs and refusal catalogue
 
-Every rule in this skill is tagged with a confidence tier:
+### Required inputs
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A qualified tax accountant (zeirishi) must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax accountant and document the gap.
+**Minimum viable** — bank statement for the full fiscal year in CSV, PDF, or pasted text, plus confirmation of registration status (taxable operator 課税事業者 or exempt 免税事業者) and fiscal year dates.
 
----
+**Recommended** — QIS registration number (T + 13 digits), sales invoices (適格請求書) for any line above JPY 100,000, purchase invoices confirming supplier QIS numbers.
 
-## Step 0: Client Onboarding Questions
+**Ideal** — complete transaction register (帳簿), prior year return, asset register, quarterly prepayment records (中間申告), industry code for 簡易課税.
 
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
+**Refusal if minimum is missing — SOFT WARN.** No bank statement = hard stop. Bank statement without invoices = proceed but flag: "Input tax credit claims require qualified invoices (適格請求書) from QIS-registered suppliers. All credits are provisional pending invoice verification."
 
-1. **Entity name and corporate number (houjin bangou)** [T1] -- 13-digit corporate number (T + 13 digits for QIS registration number)
-2. **QIS registration number (tekikaku seikyuusho hakkou jigyousha touroku bangou)** [T1] -- format T + 13 digits; required from 1 October 2023 to issue qualified invoices
-3. **Taxable status** [T1] -- Taxable business operator (kazei jigyousha) or Tax-exempt business operator (menzei jigyousha)
-4. **Fiscal year end** [T1] -- determines filing period and deadlines
-5. **Base period taxable sales (kijun kikan)** [T1] -- taxable sales in the base period (two fiscal years prior for corporations); determines taxable status (JPY 10M threshold)
-6. **Specified period taxable sales** [T1] -- first six months of prior fiscal year; alternative threshold test
-7. **Does the business make both taxable and exempt supplies?** [T2] -- if yes, proportional input credit calculation required (95% rule or individual/lump-sum/proportional method)
-8. **Total taxable sales in current period** [T2] -- needed to determine if 95% rule applies (threshold: JPY 500M)
-9. **Filing frequency** [T1] -- annual (default), quarterly (if elected or required), or monthly (if elected or required)
-10. **Industry sector** [T2] -- impacts simplified tax calculation method (kantanni kazei) category selection
+### Refusal catalogue
 
-**If items 1-3 are unknown, STOP. Do not classify any transactions until registration status and taxable period are confirmed.**
+**R-JP-1 — Exempt business operator (免税事業者).** "This client's base-period taxable sales are below JPY 10M. They are exempt from filing a consumption tax return and cannot recover input tax. If they have voluntarily registered (課税事業者選択届出書), provide registration document before proceeding."
+
+**R-JP-2 — Corporations with complex group structures.** "Consolidated consumption tax filing and intercompany transactions in a corporate group require specialist handling. Out of scope."
+
+**R-JP-3 — 95% rule with proportional allocation required.** "Client makes both taxable and exempt supplies and taxable sales exceed JPY 500M, triggering individual or lump-sum proportional methods. Out of scope — escalate to zeirishi."
+
+**R-JP-4 — Non-resident digital service providers.** "Non-resident businesses providing digital services to Japanese consumers (国境を越えた役務の提供) have separate registration and filing obligations. Out of scope."
+
+**R-JP-5 — Real estate or construction companies.** "Industry-specific JCT rules for real estate and construction (e.g., long-term contracts, land/building allocation) require specialist input. Out of scope."
 
 ---
 
-## Step 1: Tax Rate Classification
+## Section 3 — Supplier pattern library
 
-### 1a. Standard Rate [T1]
+Match by case-insensitive substring on the counterparty name or reference in the bank statement. Most specific match wins. If no match, fall through to Section 5.
 
-**Rate: 10% (national 7.8% + local 2.2%)**
+### 3.1 Japanese banks — fees and charges (exempt / exclude)
 
-Applies to all taxable supplies of goods and services in Japan unless the reduced rate applies.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| みずほ銀行, MIZUHO BANK | EXCLUDE (bank fee lines) | Financial service — exempt from JCT |
+| 三菱UFJ銀行, MUFG BANK | EXCLUDE (bank fee lines) | Same |
+| 三井住友銀行, SMBC, SUMITOMO MITSUI | EXCLUDE (bank fee lines) | Same |
+| りそな銀行, RESONA BANK | EXCLUDE (bank fee lines) | Same |
+| ゆうちょ銀行, JAPAN POST BANK, 郵便貯金 | EXCLUDE (bank fee lines) | Same |
+| 楽天銀行, RAKUTEN BANK | EXCLUDE (bank fee lines) | Same |
+| SBI新生銀行, SBI SHINSEI | EXCLUDE (bank fee lines) | Same |
+| PayPay銀行, PAYPAY BANK | EXCLUDE (bank fee lines) | Same |
+| 振込手数料, 口座維持手数料, ATM手数料 | EXCLUDE | Bank transaction/maintenance fees — exempt |
+| 利息, 利子, INTEREST | EXCLUDE | Interest income/expense — exempt from JCT |
 
-**Legislation:** Consumption Tax Act, Article 29 (national rate); Local Tax Act, Article 72-78 (local consumption tax rate = 22/78 of national consumption tax).
+### 3.2 Japanese government and statutory payments (exclude)
 
-### 1b. Reduced Rate [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 国税庁, 税務署, NTA | EXCLUDE | Tax payment — not a supply |
+| 消費税, 所得税, 法人税 | EXCLUDE | Tax remittance — not a supply |
+| 社会保険料, 年金, 健康保険 | EXCLUDE | Social insurance — out of JCT scope |
+| 日本年金機構, JAPAN PENSION SERVICE | EXCLUDE | Pension — out of scope |
+| 労働保険, 雇用保険 | EXCLUDE | Employment insurance — out of scope |
+| 都道府県税, 市区町村税, 住民税 | EXCLUDE | Local income tax — not a JCT supply |
+| 印紙税 | EXCLUDE | Stamp duty — exempt |
 
-**Rate: 8% (national 6.24% + local 1.76%)**
+### 3.3 Japanese utilities (taxable at 10%)
 
-Applies to:
-1. **Food and beverages** -- excluding alcoholic beverages (as defined under the Liquor Tax Act) and excluding food service (eating in at restaurants, catering services with serving staff). Take-out and delivery are reduced rate.
-2. **Newspaper subscriptions** -- newspapers published at least twice per week under a subscription contract (teiki koudoku keiyaku). Single-copy purchases and digital newspaper subscriptions are standard rate.
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| 東京電力, TEPCO, 東京電力エナジーパートナー | Input 10% | 10% | Electricity — taxable |
+| 関西電力, KEPCO, 関西電力送配電 | Input 10% | 10% | Electricity — taxable |
+| 中部電力, CHUDEN, CHUBU ELECTRIC | Input 10% | 10% | Electricity — taxable |
+| 東京ガス, TOKYO GAS | Input 10% | 10% | Gas — taxable |
+| 大阪ガス, OSAKA GAS | Input 10% | 10% | Gas — taxable |
+| NTT東日本, NTT西日本, NTT EAST, NTT WEST | Input 10% | 10% | Fixed-line telephone — taxable |
+| NTTドコモ, DOCOMO | Input 10% | 10% | Mobile — taxable |
+| ソフトバンク, SOFTBANK | Input 10% | 10% | Mobile/internet — taxable |
+| au, KDDI | Input 10% | 10% | Mobile — taxable |
+| 楽天モバイル, RAKUTEN MOBILE | Input 10% | 10% | Mobile — taxable |
 
-**Legislation:** Consumption Tax Act, Article 29, Appended Table 1; Act on Special Measures Concerning Taxation, Article 86-6.
+### 3.4 Japanese transport (various rates)
 
-### 1c. Zero Rate (Export Exemption) [T1]
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| JR東日本, JR西日本, JR EAST, JR WEST | Input 10% | 10% | Domestic rail — taxable |
+| 東急電鉄, TOKYU | Input 10% | 10% | Private rail — taxable |
+| 東京メトロ, TOKYO METRO | Input 10% | 10% | Subway — taxable |
+| 都営地下鉄, TOEI SUBWAY | Input 10% | 10% | Subway — taxable |
+| 日本航空, JAL, JAPAN AIRLINES | Check route | 0%/10% | Domestic 10%; international 0% |
+| 全日空, ANA, ALL NIPPON AIRWAYS | Check route | 0%/10% | Domestic 10%; international 0% |
+| ヤマト運輸, YAMATO TRANSPORT, クロネコヤマト | Input 10% | 10% | Domestic courier — taxable |
+| 佐川急便, SAGAWA EXPRESS | Input 10% | 10% | Domestic courier — taxable |
+| 日本郵便, JAPANPOST (parcel) | Input 10% | 10% | Parcel services — taxable |
+| 日本郵便, JAPANPOST (stamps) | EXCLUDE | Exempt | Postage stamps — exempt |
 
-**Rate: 0%**
+### 3.5 Food and retail (8% reduced rate for food items)
 
-Applies to:
-- Export of goods from Japan (Consumption Tax Act, Article 7)
-- International transport services
-- Services provided to non-residents consumed entirely outside Japan
-- Sale of goods in bonded areas for export
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| セブン-イレブン, 7-ELEVEN JAPAN | Split 8%/10% | Mixed | Food 8%; non-food 10%; eat-in 10% |
+| ローソン, LAWSON | Split 8%/10% | Mixed | Same |
+| ファミリーマート, FAMILY MART | Split 8%/10% | Mixed | Same |
+| イオン, AEON | Split 8%/10% | Mixed | Supermarket — classify by item |
+| イトーヨーカ堂, ITO-YOKADO | Split 8%/10% | Mixed | Same |
+| ライフ, LIFE SUPERMARKET | Input 8% (food) | 8% | Grocery — default food rate |
+| 業務スーパー, GYOMU SUPER | Input 8% (food) | 8% | Wholesale food — taxable at 8% |
+| 飲食店, レストラン, 食堂 (eat-in) | Input 10% | 10% | Eat-in meals — standard rate |
+| UberEats, ウーバーイーツ | Input 8% | 8% | Takeout food delivery — reduced rate |
+| 出前館, DEMAE-CAN | Input 8% | 8% | Takeout delivery — reduced rate |
 
-Zero-rated supplies allow full input tax credit recovery.
+### 3.6 SaaS — Japanese suppliers (taxable at 10%)
 
-**Legislation:** Consumption Tax Act, Article 7 (export exemption); Article 7(1)(i)-(v).
+| Pattern | Treatment | Rate | Notes |
+|---|---|---|---|
+| freee, フリー | Input 10% | 10% | Japanese accounting SaaS — taxable |
+| マネーフォワード, MONEY FORWARD | Input 10% | 10% | Japanese finance SaaS — taxable |
+| 弥生, YAYOI | Input 10% | 10% | Japanese accounting software — taxable |
+| 勘定奉行, OBC | Input 10% | 10% | Japanese ERP — taxable |
+| サイボウズ, CYBOZU | Input 10% | 10% | Japanese groupware — taxable |
+| ChatWork, チャットワーク | Input 10% | 10% | Japanese messaging SaaS — taxable |
 
-### 1d. Non-Taxable Transactions [T1]
+### 3.7 SaaS — international suppliers (reverse charge for B2B)
 
-The following are outside the scope of JCT entirely:
-- Transactions without consideration (gifts, donations -- unless deemed supply)
-- Transactions outside Japan (place of supply rules)
-- Salary and wages
-- Dividends
-- Share transfers as capital transactions
-- Insurance claim receipts
+For B2B digital services from foreign suppliers (国外事業者から受ける電気通信利用役務の提供), the Japanese business must self-assess JCT under the reverse charge mechanism (リバースチャージ方式). Applies only to taxable businesses where taxable sales > 95% of total sales.
 
-**Legislation:** Consumption Tax Act, Article 4 (taxable transactions defined as domestic supply of goods/services for consideration by a business operator in the course of business).
+| Pattern | Billing entity | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Workspace, Ads, Cloud) | Google LLC (US) | Reverse charge 10% | Self-assess; note on return |
+| MICROSOFT (365, Azure) | Microsoft Corp (US) | Reverse charge 10% | Same |
+| ADOBE | Adobe Inc (US) | Reverse charge 10% | Same |
+| META, FACEBOOK ADS | Meta Platforms Inc (US) | Reverse charge 10% | Same |
+| SLACK | Slack Technologies (US) | Reverse charge 10% | Same |
+| ZOOM | Zoom Video Communications (US) | Reverse charge 10% | Same |
+| GITHUB | GitHub Inc (US) | Reverse charge 10% | Same |
+| NOTION | Notion Labs Inc (US) | Reverse charge 10% | Same |
+| ANTHROPIC, CLAUDE | Anthropic PBC (US) | Reverse charge 10% | Same |
+| OPENAI, CHATGPT | OpenAI Inc (US) | Reverse charge 10% | Same |
+| FIGMA | Figma Inc (US) | Reverse charge 10% | Same |
+| CANVA | Canva Pty Ltd (AU) | Reverse charge 10% | Same |
+| AWS (AMAZON WEB SERVICES) | AWS Inc (US) | Reverse charge 10% | Check if billed via Japanese entity |
 
-### 1e. Exempt Transactions (Non-Taxable Supplies / Hi-kazei Torihiki) [T1]
+### 3.8 Payment processors and fintech
 
-The following are exempt from JCT (no tax charged, and input credits NOT available for attributable inputs):
-- Sale or lease of land
-- Sale of securities and payment instruments
-- Interest, insurance premiums, and guarantee fees
-- Postage stamps and revenue stamps (when sold at face value by designated sellers)
-- Fees charged by national/local governments for administrative services
-- International money transfers
-- Medical services covered by public health insurance
-- Certain educational services (school tuition at recognised institutions)
-- Rental of residential property
-- Funeral/cremation services provided by local government
-- Childbirth-related services covered by public insurance
+| Pattern | Treatment | Notes |
+|---|---|---|
+| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing — exempt financial service |
+| PayPay手数料, PAYPAY FEE | EXCLUDE (exempt) | Payment processing — exempt |
+| Square手数料, SQUARE FEE | EXCLUDE (exempt) | Same |
+| LINE Pay手数料, LINE PAY FEE | EXCLUDE (exempt) | Same |
 
-**Legislation:** Consumption Tax Act, Article 6; Appended Table 1 (exempt supplies list).
+### 3.9 Internal transfers and exclusions
 
----
-
-## Step 2: Consumption Tax Return Form Structure [T1]
-
-### 2a. General Filing (Standard Method / Ippan Kazei)
-
-The JCT return (shouhizei oyobi chihou shouhizei no shinkoku-sho) consists of Form 1 (general) or Form 1 (simplified), plus Appendix 1 and Appendix 2. The key fields for the general method are:
-
-**Legislation:** Consumption Tax Act, Article 45 (obligation to file return); NTA prescribed return forms.
-
-#### Output Tax Section (Sales / Uriage)
-
-| Line | Description | Rate | Notes |
-|------|-------------|------|-------|
-| Line 1 | Taxable sales amount (tax-included basis, 10%) | 10% | Total consideration received for standard-rated supplies |
-| Line 2 | Taxable sales amount (tax-included basis, 8%) | 8% | Total consideration for reduced-rated supplies |
-| Line 3 | Tax amount on Line 1 sales | 10% | Line 1 x 7.8/110 (national portion) |
-| Line 4 | Tax amount on Line 2 sales | 8% | Line 2 x 6.24/108 (national portion) |
-| Line 5 | Consumption tax on taxable sales (Line 3 + Line 4) | -- | Sum of national consumption tax on output |
-| Line 6 | Sales returns and allowances (tax amount, 10%) | 10% | Credit notes / returns at standard rate |
-| Line 7 | Sales returns and allowances (tax amount, 8%) | 8% | Credit notes / returns at reduced rate |
-| Line 8 | Net output tax (Line 5 - Line 6 - Line 7) | -- | Net national consumption tax on output |
-| Line 9 | Taxable sales for export / zero-rated | 0% | Export sales and qualifying zero-rated supplies |
-
-#### Input Tax Credit Section (Purchases / Shiire)
-
-| Line | Description | Notes |
-|------|-------------|-------|
-| Line 10 | Total input consumption tax (national portion) | Sum of creditable input tax at 7.8% and 6.24% |
-| Line 11 | Input tax credit amount | After applying 95% rule or proportional method |
-| Line 12 | Bad debt adjustment (tax amount recovered) | Tax on previously written-off receivables now recovered |
-| Line 13 | Net input tax credit (Line 11 + Line 12) | -- |
-
-#### Tax Payable / Refund Section
-
-| Line | Description | Notes |
-|------|-------------|-------|
-| Line 14 | Tax payable or refundable (Line 8 - Line 13) | National consumption tax payable (positive) or refundable (negative) |
-| Line 15 | Interim payment credit | Interim tax payments already made during the period |
-| Line 16 | Net tax payable or refundable (Line 14 - Line 15) | Final national consumption tax payable/refundable |
-| Line 17 | Local consumption tax payable | Line 14 x 22/78 |
-| Line 18 | Interim local consumption tax credit | Local interim payments already made |
-| Line 19 | Net local consumption tax payable/refundable | Line 17 - Line 18 |
-| Line 20 | Total consumption tax payable/refundable | Line 16 + Line 19 |
-
-#### Appendix 2 -- Input Tax Credit Calculation
-
-| Section | Description | Notes |
-|---------|-------------|-------|
-| Section 1 | Taxable sales (tax-excluded) | Base for 95% rule test |
-| Section 2 | Exempt sales | Non-taxable revenue |
-| Section 3 | Total sales | Section 1 + Section 2 |
-| Section 4 | Taxable sales ratio | Section 1 / Section 3 (percentage) |
-| Section 5 | Total input tax | All consumption tax paid on purchases |
-| Section 6 | Input tax on taxable-only purchases | Directly attributable to taxable supplies |
-| Section 7 | Input tax on exempt-only purchases | Directly attributable to exempt supplies |
-| Section 8 | Input tax on common purchases | Not directly attributable -- must be apportioned |
-| Section 9 | Creditable input tax | Calculated per applicable method |
-
-### 2b. Simplified Tax Calculation Method (Kantan Kazei) [T1]
-
-Available only when base period taxable sales are JPY 50M or less AND election filed in advance.
-
-**Legislation:** Consumption Tax Act, Article 37.
-
-Under the simplified method, input tax credits are calculated as a deemed percentage of output tax, based on business category:
-
-| Category | Business Type | Deemed Input Rate |
-|----------|--------------|-------------------|
-| Category 1 | Wholesale (oroshi-uri) | 90% |
-| Category 2 | Retail (kouri) | 80% |
-| Category 3 | Agriculture, forestry, fishery, mining, manufacturing, electricity/gas/water | 70% |
-| Category 4 | Other (restaurants, services not in 1-3/5/6) | 60% |
-| Category 5 | Services (finance, insurance, transport, communications, professional services) | 50% |
-| Category 6 | Real estate | 40% |
-
-**Legislation:** Consumption Tax Act, Article 37(1); Appended Table 4.
-
-If a business has activities across multiple categories, the weighted-average method or most-advantageous method applies. [T2] -- flag for reviewer to confirm category allocation.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| 振替, 内部振替, INTERNAL TRANSFER | EXCLUDE | Internal movement between own accounts |
+| 借入金, LOAN PROCEEDS | EXCLUDE | Loan principal — out of JCT scope |
+| 元金返済, LOAN REPAYMENT | EXCLUDE | Loan repayment — out of scope |
+| 役員報酬, 給与, 賃金 | EXCLUDE | Salaries/wages — outside JCT scope |
+| 配当金, DIVIDEND | EXCLUDE | Dividend — exempt |
+| ATM出金, 現金引出 | Tier 2 — ask | Default exclude; ask what cash was spent on |
 
 ---
 
-## Step 3: National and Local Tax Component Breakdown [T1]
+## Section 4 — Worked examples
 
-JCT is a composite tax. Every calculation must split national and local components:
+Six classifications drawn from a hypothetical bank statement of a Tokyo-based freelance IT consultant. Format: みずほ銀行 CSV export.
 
-**Legislation:** Consumption Tax Act, Article 29; Local Tax Act, Article 72-78.
+### Example 1 — Client payment (domestic, taxable at 10%)
 
-### Standard Rate (10%)
-```
-Total rate:           10.0%
-National component:    7.8%
-Local component:       2.2% (= 7.8% x 22/78)
-```
+**Input line:**
+`2025年04月15日,振込入金,株式会社サクラテック,請求書番号:ST-2025-041,+1,100,000,1,100,000`
 
-### Reduced Rate (8%)
-```
-Total rate:            8.0%
-National component:    6.24%
-Local component:       1.76% (= 6.24% x 22/78)
-```
+**Reasoning:**
+Incoming JPY 1,100,000 from a Japanese company. This is revenue for IT consulting services. Standard rate 10% applies. If the invoice is JPY 1,100,000 gross, net = JPY 1,000,000 (課税売上高) + JPY 100,000 (JCT). Report net on line ①. Confirm QIS invoice was issued showing registration number T + 13 digits.
 
-### Extraction Formulas [T1]
-```
-From tax-included amount at 10%:
-  National tax = Amount x 7.8 / 110
-  Local tax    = Amount x 2.2 / 110
-  Tax-excluded = Amount x 100 / 110
+**Classification:** 課税売上高 (taxable sales) Line ①, JPY 1,000,000 net. Output JCT: JPY 100,000.
 
-From tax-included amount at 8%:
-  National tax = Amount x 6.24 / 108
-  Local tax    = Amount x 1.76 / 108
-  Tax-excluded = Amount x 100 / 108
-```
+### Example 2 — Food delivery platform payout (reduced rate 8%)
 
----
+**Input line:**
+`2025年04月18日,振込入金,ウーバーイーツジャパン合同会社,売上精算 2025-04,+216,000,1,316,000`
 
-## Step 4: Qualified Invoice System (QIS / Tekikaku Seikyuusho Hozon Houshiki) [T1]
+**Reasoning:**
+Payout from Uber Eats Japan (takeout food delivery). Takeout food is reduced rate 8%. JPY 216,000 gross includes 8% JCT. Net = JPY 200,000 (課税売上高 reduced) + JPY 16,000 (JCT). Report on line ② (reduced rate sales). Confirm platform invoices show the 8% rate and the client's QIS registration.
 
-### 4a. Overview
+**Classification:** 課税売上高 reduced rate line ②, JPY 200,000 net. Output JCT at 8%: JPY 16,000.
 
-Effective 1 October 2023, the Qualified Invoice System replaced the prior Account-Based Method. Under QIS, input tax credits require retention of a qualified invoice (tekikaku seikyuusho) issued by a registered qualified invoice issuer (tekikaku seikyuusho hakkou jigyousha).
+### Example 3 — International reverse charge (Google Ads)
 
-**Legislation:** Consumption Tax Act, Article 30(7)-(9) (input credit requirements); Article 57-2 (registration); Article 57-4 (qualified invoice requirements).
+**Input line:**
+`2025年04月10日,引落,GOOGLE LLC,Google Ads April 2025,-110,000,1,206,000`
 
-### 4b. Registration [T1]
+**Reasoning:**
+Google LLC is a US entity providing B2B digital advertising services to a Japanese business. This triggers the reverse charge mechanism (リバースチャージ方式). The JPY 110,000 payment is treated as net (Google does not charge Japanese JCT on the invoice). Self-assess: output JCT = JPY 110,000 × 10/110 × 10% ... actually: JPY 110,000 is net; self-assessed JCT = JPY 110,000 × 10% = JPY 11,000. Simultaneously claim same as input credit if taxable sales > 95% threshold.
 
-- Any business operator conducting taxable transactions may apply for QIS registration with the NTA
-- Tax-exempt operators (menzei jigyousha) who register become taxable operators by virtue of registration
-- Registration number format: T + 13-digit corporate number (for corporations) or T + 13-digit assigned number (for individuals)
-- Registration is published in the NTA's Qualified Invoice Issuer Publication Site
+**Classification:** Reverse charge — note on return. Net base: JPY 110,000. Self-assessed JCT: JPY 11,000 (output and input if fully taxable).
 
-**Legislation:** Consumption Tax Act, Article 57-2(1)-(4).
+### Example 4 — Domestic software subscription (10%, requires QIS invoice)
 
-### 4c. Required Contents of a Qualified Invoice [T1]
+**Input line:**
+`2025年04月01日,引落,フリー株式会社,freee会計 プロプラン 2025年4月,-11,000,1,195,000`
 
-A qualified invoice must contain ALL of the following:
+**Reasoning:**
+freee is a Japanese SaaS company (QIS registered). Monthly subscription JPY 11,000 gross. Net = JPY 10,000 + JPY 1,000 JCT at 10%. Input credit claimable if supplier's QIS registration number (T + 13 digits) appears on the invoice/receipt. freee is a major registered supplier — credit is expected to be available. Confirm invoice.
 
-1. Name and QIS registration number (T-number) of the issuer
-2. Date of the transaction (supply date)
-3. Description of the goods or services supplied, with indication of which items are subject to the reduced rate
-4. Total consideration for each applicable tax rate (tax-inclusive or tax-exclusive), grouped by rate
-5. Consumption tax amount for each applicable rate, calculated on the grouped total
-6. Name of the recipient (buyer)
+**Classification:** Input JCT Line ⑥, JPY 1,000. Net purchase JPY 10,000.
 
-**Legislation:** Consumption Tax Act, Article 57-4(1).
+### Example 5 — Exempt rent (residential — no input credit)
 
-### 4d. Simplified Qualified Invoice (Tekikaku Kantan Seikyuusho) [T1]
+**Input line:**
+`2025年04月01日,引落,田中不動産株式会社,4月分賃料,-110,000,1,085,000`
 
-Permitted for retail, food service, taxi, parking, and other businesses dealing with numerous unspecified customers. Differs from full qualified invoice:
+**Reasoning:**
+Monthly rent payment. Need to determine: is this office rent (課税) or residential rent (非課税)? The reference "賃料" (rent) is ambiguous. Default: residential = exempt, no input credit. If this is confirmed commercial/office rent and the landlord is JCT-registered and issued a qualified invoice, input credit is available. Flag for confirmation.
 
-- Recipient name is NOT required
-- Either the tax rate OR the tax amount must be shown (not necessarily both)
+**Classification:** Tier 2 — ask. Default: EXCLUDE (residential/exempt assumption). If commercial: Input 10%, JPY 10,000 credit available.
 
-**Legislation:** Consumption Tax Act, Article 57-4(2).
+### Example 6 — Export sale (zero rate)
 
-### 4e. Prohibited Conduct [T1]
+**Input line:**
+`2025年04月22日,外貨入金,Acme Corp USA,Invoice JP-2025-018 IT Consulting,-,+1,250,000,2,335,000`
 
-- Non-registered persons MUST NOT issue documents that could be mistaken for qualified invoices
-- Penalty: up to JPY 1,000,000 fine or imprisonment up to 1 year
+**Reasoning:**
+Incoming JPY 1,250,000 from a US company for IT consulting exported overseas. Export services (輸出免税) are zero-rated (0% JCT) if the service is provided to a non-resident for use outside Japan. Report on line ③. The client must retain export evidence (contracts, wire transfer records showing foreign payor). No output JCT. No box entry for input side of this transaction.
 
-**Legislation:** Consumption Tax Act, Article 57-5; Article 65(iv).
-
-### 4f. QIS Transitional Measures (Input Credit for Non-Qualified Invoices) [T1]
-
-For purchases from non-registered (tax-exempt) suppliers, transitional credit percentages apply:
-
-| Period | Credit Percentage | Legislation |
-|--------|------------------|-------------|
-| 1 Oct 2023 -- 30 Sep 2026 | 80% of input tax | Act on Special Measures, Article 86-9, Paragraph 2 |
-| 1 Oct 2026 -- 30 Sep 2029 | 50% of input tax | Act on Special Measures, Article 86-9, Paragraph 3 |
-| From 1 Oct 2029 | 0% (no credit) | Full QIS enforcement |
-
-**Important:** The transitional credit requires that the invoice from the non-registered supplier still meets the content requirements of the former account-based method, and the buyer must annotate the books to indicate that the transitional measure is being applied.
-
-### 4g. Small Business QIS Special Measure (2-Wari Tokurei) [T1]
-
-For formerly tax-exempt operators who registered for QIS, a special measure applies for fiscal years starting within the period 1 October 2023 to 30 September 2026:
-
-- Tax payable = Output tax - (Output tax x 80%)
-- Effectively, tax liability is capped at 20% of output tax
-- Available only if base period taxable sales are JPY 10M or less
-- No actual input tax credit calculation required
-
-**Legislation:** Act on Special Measures Concerning Taxation (28th Revised Act), Article 86-9-2.
+**Classification:** 輸出等の売上高 (zero-rated exports) Line ③, JPY 1,250,000. Output JCT: JPY 0.
 
 ---
 
-## Step 5: Input Tax Credit Rules
+## Section 5 — Tier 1 rules (compressed)
 
-### 5a. The 95% Rule [T1]
+Apply these rules when a transaction is unambiguous. No flags required. For complex or data-dependent situations, see Tier 2 catalogue in Section 6.
 
-**Legislation:** Consumption Tax Act, Article 30(1)-(2).
+### 5.1 Standard rate 10%
 
-If taxable sales ratio (taxable sales / total sales) is **95% or more** AND taxable sales do not exceed **JPY 500M** for the period:
-- **Full input tax credit** is allowed on ALL consumption tax paid on purchases
-- No apportionment required
+All taxable supplies of goods and services in Japan not falling into reduced rate, zero rate, or exemption. Output: Line ①. Input credit: Line ⑥. Legislation: Consumption Tax Act (消費税法) Article 29.
 
-If taxable sales ratio is **below 95%** OR taxable sales **exceed JPY 500M**:
-- Input tax must be apportioned using one of the methods below [T2]
+### 5.2 Reduced rate 8% (軽減税率)
 
-### 5b. Apportionment Methods (When 95% Rule Does Not Apply) [T2]
+Applies to: (1) food and non-alcoholic beverages 食料品 for home consumption (takeout, grocery) — NOT eat-in meals; (2) subscription newspapers (週2回以上発行の定期購読新聞). Output: Line ②. Legislation: 消費税法 Article 29, 軽減税率 Schedule.
 
-**Legislation:** Consumption Tax Act, Article 30(2)-(5).
+**Eat-in test:** If food is consumed on the premises (外食), standard 10% applies. If taken away or delivered, 8% applies. When bank statement only — default to 8% for grocery/delivery, flag restaurants as 10%.
 
-Three methods are available. A qualified tax accountant must confirm the most appropriate method:
+### 5.3 Zero rate 0% — exports (輸出免税)
 
-#### Method 1: Individual Attribution (Kobetsu Taiou Houshiki)
-- Input tax directly attributable to taxable supplies: fully creditable
-- Input tax directly attributable to exempt supplies: not creditable
-- Input tax on common purchases: apportioned by taxable sales ratio
+Exports of goods and services provided to non-residents for use outside Japan are zero-rated. Evidence required: export declarations (輸出許可通知書) for goods; contracts and payment records for services. Legislation: 消費税法 Article 7.
 
-#### Method 2: Lump-Sum Proportional (Ikkatsu Hirei Haibun Houshiki)
-- ALL input tax (including directly attributable) is multiplied by the taxable sales ratio
-- Simpler but may be less advantageous
+### 5.4 Exempt supplies (非課税取引)
 
-#### Method 3: Proportional with Specific Criteria (Approved Method)
-- Requires advance approval from NTA
-- Uses alternative allocation bases (floor space, headcount, etc.)
+No JCT charged; no input credit on related purchases. Includes: financial services (利子、保険料), medical services (社会保険診療), education (学校教育), residential rent (住宅の貸付), postage stamps, certain land transactions. Legislation: 消費税法 Article 6, Exempt Schedule (別表第一).
 
-**Once a method is elected, it generally must be used for at least 2 consecutive years.**
+### 5.5 Outside scope (不課税 / 課税対象外)
 
-### 5c. Blocked / Non-Creditable Input Tax [T1]
+No JCT. Includes: wages and salaries (給与), dividend payments (配当), gifts, donations, loan principal. These are not supplies for JCT purposes. Legislation: 消費税法 Article 2(1)(viii).
 
-The following input tax is NEVER creditable regardless of other rules:
+### 5.6 QIS invoice requirement (適格請求書等保存方式)
 
-| Category | Legislation |
-|----------|-------------|
-| Personal consumption / private use | Consumption Tax Act, Article 30(1) -- only business-use purchases qualify |
-| Purchases not supported by qualified invoice (post-transition) | Article 30(7) |
-| Entertainment expenses with no business nexus | Article 30(1) -- must be in course of business |
-| Purchases for producing exempt supplies (when 95% rule fails) | Article 30(2) |
-| Consumption tax on purchases from fictitious invoices | Article 30(7) -- invoice must be genuine |
+From 1 October 2023, input tax credit requires a qualified invoice (適格請求書) from a QIS-registered supplier. Required fields: supplier name, QIS registration number (T + 13 digits), transaction date, description, taxable amount (10% and 8% separately), JCT amount, recipient name. Without a compliant invoice, NO input credit is allowed.
 
-### 5d. Capital Asset Adjustments [T2]
+### 5.7 Transitional credit for non-QIS suppliers (経過措置)
 
-**Legislation:** Consumption Tax Act, Article 33 (adjustment for significant assets); Article 34 (adjustment for change in taxable status).
+Purchases from unregistered suppliers: 80% of otherwise allowable credit available through 30 September 2026; 50% through 30 September 2029; 0% thereafter. Always flag when supplier QIS status is unconfirmed.
 
-For capital assets (chousei taishou koteishisan) costing JPY 1,000,000 or more (tax-excluded):
-- If the taxable sales ratio changes significantly (by 50 percentage points or more) within the 3-year adjustment period, input tax credit must be adjusted
-- Applies to the third year after acquisition
-- Flag for reviewer: confirm whether adjustment applies based on ratio change
+### 5.8 Filing deadlines
 
-For residential rental property (kyojuu-you chinntai):
-- Input tax on construction/purchase of residential rental property is BLOCKED if used exclusively for exempt residential rental
-- If subsequently converted to taxable use within 3 years, partial recovery may be available [T2]
+| Filer type | Deadline |
+|---|---|
+| Individual (calendar year) | 31 March of following year |
+| Corporation (annual) | 2 months after fiscal year end |
+| Quarterly filers | End of month following quarter |
+| Monthly filers | End of following month |
+| Interim payment (中間申告) | End of month following applicable period |
 
-**Legislation:** Consumption Tax Act, Article 35-2 (residential rental property restriction, effective April 2020).
+### 5.9 Simplified tax method (簡易課税制度)
 
----
+Available to taxable businesses with prior-year taxable sales ≤ JPY 50M. Input credit is calculated as a fixed percentage of output tax based on industry category (みなし仕入率):
 
-## Step 6: Reverse Charge Mechanism
+| Category | Industry | Credit ratio |
+|---|---|---|
+| 第一種 | Wholesale | 90% |
+| 第二種 | Retail, agriculture | 80% |
+| 第三種 | Manufacturing, construction | 70% |
+| 第四種 | Restaurant, other | 60% |
+| 第五種 | Services (IT consulting, finance, insurance) | 50% |
+| 第六種 | Real estate | 40% |
 
-### 6a. Cross-Border Digital Services (Since 1 October 2015) [T1]
+Actual input invoices are irrelevant under 簡易課税 — the fixed ratio applies automatically.
 
-**Legislation:** Consumption Tax Act, Article 4(3)-2 to (3)-4; Article 5(2).
+### 5.10 Penalties
 
-Digital services provided by foreign providers to recipients in Japan are subject to JCT under the following framework:
-
-| Service Type | Provider | Recipient | Who Accounts for JCT |
-|-------------|----------|-----------|---------------------|
-| B2B digital services | Foreign | Japanese business | Recipient (reverse charge) |
-| B2C digital services | Foreign registered | Japanese consumer | Foreign provider (registered for JCT) |
-| B2C digital services | Foreign not registered | Japanese consumer | No JCT collected (foreign provider must register if exceeding threshold) |
-
-**"Digital services" (denki tsushin rieki jigyou) include:** e-books, music/video streaming, software subscriptions (SaaS), online advertising, cloud services, online gaming, digital consulting delivered electronically.
-
-### 6b. Reverse Charge Accounting for B2B Digital Services [T1]
-
-**Legislation:** Consumption Tax Act, Article 5(2); Article 28(4).
-
-When a Japanese taxable business receives B2B digital services from a foreign provider:
-1. Include the service amount in BOTH taxable sales AND taxable purchases for consumption tax calculation purposes
-2. Self-assess output tax at the applicable rate (10%)
-3. Claim input tax credit at the same rate (subject to 95% rule)
-4. Net effect is zero if the 95% rule applies (full credit)
-5. If the 95% rule does NOT apply, the reverse-charged amount is subject to the normal apportionment rules [T2]
-
-**Special rule:** If the recipient's taxable sales ratio is 95% or more AND taxable sales do not exceed JPY 500M, the reverse charge is effectively ignored (output and input cancel out). The NTA has confirmed that in this case, reporting is not required.
-
-### 6c. Platform Taxation (Since April 2025) [T1]
-
-**Legislation:** 2024 Tax Reform Act; Consumption Tax Act, Article 15-2 (as amended).
-
-Designated platform operators (shitei purattofoumu jigyousha) are deemed the supplier for B2C digital services sold through their platforms by foreign providers. The platform operator must:
-- Register for JCT
-- Collect and remit JCT on behalf of foreign sellers
-- Issue qualified invoices
-
-This does not affect B2B transactions (reverse charge still applies).
+| Offence | Penalty |
+|---|---|
+| Late filing (無申告加算税) | 15% of unpaid tax (20% if undeclared income detected) |
+| Late payment (延滞税) | 2.4%–8.7% per annum (rate varies by year) |
+| Understatement (過少申告加算税) | 10% (15% if detected after investigation) |
+| Fraud (重加算税) | 35%–40% |
 
 ---
 
-## Step 7: Registration and Taxable Status
+## Section 6 — Tier 2 catalogue (reviewer judgement required)
 
-### 7a. Taxable vs Tax-Exempt Business Operators [T1]
+Tier 2 items are those where the correct classification cannot be determined from the bank statement line alone because critical factual data is missing. The rule is clear — the data is not.
 
-**Legislation:** Consumption Tax Act, Article 9 (tax-exempt operator); Article 9-2 (specified period test).
+### 6.1 Eat-in vs. takeout (restaurant/café charges)
 
-| Status | Condition |
-|--------|-----------|
-| Tax-exempt (menzei jigyousha) | Base period taxable sales <= JPY 10,000,000 AND specified period taxable sales <= JPY 10,000,000 (or payroll <= JPY 10M) |
-| Taxable (kazei jigyousha) | Base period taxable sales > JPY 10,000,000 OR specified period sales > JPY 10,000,000 |
-| Voluntarily taxable | Tax-exempt operator who elects taxable status (Article 9(4)) -- irrevocable for 2 years |
-| Newly established corporation | Special rules in first 2 fiscal years (no base period) -- see 7b |
+**What it shows:** Debit to a restaurant or café.
+**What's missing:** Whether the meal was consumed on premises (eat-in = 10%) or taken away (takeout = 8%).
+**Conservative default:** 10% (eat-in).
+**Question to ask:** "Was this meal consumed at the restaurant, or was it a takeout/delivery order?"
 
-**Base period (kijun kikan):**
-- Corporations: the fiscal year two years prior
-- Individuals: the calendar year two years prior
+### 6.2 Commercial vs. residential rent
 
-**Specified period (tokutei kikan):**
-- Corporations: the first 6 months of the immediately preceding fiscal year
-- Individuals: 1 January to 30 June of the preceding year
+**What it shows:** Regular debit to a property company or individual labelled "賃料" or "家賃".
+**What's missing:** Whether the premises are office/commercial (課税) or residential (非課税/exempt).
+**Conservative default:** Exempt — no input credit.
+**Question to ask:** "Is this payment for office/commercial space or for residential accommodation? Does the landlord issue a JCT-registered invoice?"
 
-### 7b. Newly Established Corporations [T1]
+### 6.3 Vehicle expenses (business vs. personal use)
 
-**Legislation:** Consumption Tax Act, Article 12-2; Article 12-3.
+**What it shows:** Debit to petrol station, parking, car dealer, or car leasing company.
+**What's missing:** Business-use percentage; whether a mileage log (運行記録) is maintained.
+**Conservative default:** 0% input credit.
+**Question to ask:** "What percentage of this vehicle's use is for business? Is a mileage log maintained?"
 
-- In the first two fiscal years, no base period exists, so the entity is generally tax-exempt
-- **Exception 1:** If paid-in capital at incorporation is JPY 10M or more, the entity is taxable from day one
-- **Exception 2:** If the entity is a subsidiary of a large corporation (parent with taxable sales > JPY 500M), special taxable status applies
-- **Exception 3:** If the entity registers as a QIS issuer, it becomes taxable by virtue of registration
+### 6.4 Cash withdrawals (ATM出金)
 
-### 7c. QIS Registration for Tax-Exempt Operators [T1]
+**What it shows:** ATM cash withdrawal.
+**What's missing:** What the cash was spent on.
+**Conservative default:** Exclude (no credit, no income).
+**Question to ask:** "What was this cash withdrawal used for? Do you have receipts?"
 
-**Legislation:** Consumption Tax Act, Article 57-2(2).
+### 6.5 Mixed purchases (convenience store — food and non-food)
 
-A tax-exempt operator may register as a qualified invoice issuer. Upon registration:
-- The operator becomes a taxable operator for the period from the registration date
-- The operator must file consumption tax returns
-- The 2-wari tokurei (20% liability cap) may apply during the transitional period (see Step 4g)
+**What it shows:** Single debit to convenience store (7-Eleven, Lawson, Family Mart).
+**What's missing:** Proportion of food items (8%) vs. non-food (10%).
+**Conservative default:** 10% (single rate) unless itemised receipt available.
+**Question to ask:** "Do you have an itemised receipt showing which items were food vs. non-food?"
 
----
+### 6.6 Supplier QIS registration status unconfirmed
 
-## Step 8: Filing Deadlines and Interim Returns
-
-### 8a. Annual Return Filing Deadline [T1]
-
-**Legislation:** Consumption Tax Act, Article 45 (corporations); Article 45(1) (individuals).
-
-| Entity Type | Filing Deadline |
-|-------------|----------------|
-| Corporation | Within 2 months after the end of the fiscal year |
-| Individual | 31 March of the following year (for calendar year filers) |
-
-**Extension:** Corporations may obtain a 1-month extension for income tax filing, but consumption tax filing does NOT automatically extend. A separate application for extension of the consumption tax deadline may be available but is not guaranteed. [T2]
-
-### 8b. Interim Returns (Chuukan Shinkoku) [T1]
-
-**Legislation:** Consumption Tax Act, Article 42; Article 43.
-
-Interim returns are required based on the prior year's annual national consumption tax liability:
-
-| Prior Year National Tax | Interim Frequency | Payment Schedule |
-|------------------------|-------------------|-----------------|
-| JPY 480,000 or less | None (annual only) | -- |
-| JPY 480,001 -- JPY 4,000,000 | 1 interim return (semi-annual) | Within 2 months after the first 6 months |
-| JPY 4,000,001 -- JPY 48,000,000 | 3 interim returns (quarterly) | Within 2 months after each 3-month period |
-| Over JPY 48,000,000 | 11 interim returns (monthly) | Within 2 months after each month |
-
-**Interim calculation options:**
-1. **Proportional method (default):** Prior year tax / number of interim periods
-2. **Actual calculation method:** File based on actual figures for the interim period (optional but may be advantageous if current period tax is lower)
-
-### 8c. Payment Deadlines [T1]
-
-Payment is due on the same date as the filing deadline. Late payment triggers delinquent tax (entai-zei):
-- First 2 months: approximately 2.4% per annum (variable, linked to prime rate + 1%)
-- After 2 months: approximately 8.7% per annum (variable, linked to prime rate + 7.3%)
-
-**Legislation:** National Tax General Act (Kokuzei Tsuusoku Hou), Article 60.
-
-### 8d. Penalties [T1]
-
-| Penalty Type | Rate / Amount | Legislation |
-|-------------|--------------|-------------|
-| Late filing penalty (mushinkoku kasanzei) | 15% of tax (20% if tax > JPY 500,000 on the excess) | National Tax General Act, Article 66 |
-| Understatement penalty (kajou-shinkoku kasanzei) | 10% of additional tax (15% on excess over JPY 500,000 or prior return amount, whichever greater) | Article 65 |
-| Fraud penalty (juukazei) | 35% of evaded tax | Article 68 |
-| No-return penalty with fraud | 40% of evaded tax | Article 68 |
-| Delinquent tax (entai-zei) | Variable rate per 8c above | Article 60 |
+**What it shows:** Purchase from a domestic supplier with no QIS number on record.
+**What's missing:** Whether the supplier is QIS-registered.
+**Conservative default:** Apply 80% transitional credit (through 30 Sep 2026) — flag as requiring confirmation.
+**Question to ask:** "Can you provide the supplier's QIS registration number (T + 13 digits) from their invoice?"
 
 ---
 
-## Step 9: Transaction Classification Matrix [T1]
-
-### 9a. Sales (Output Tax)
-
-| Transaction | Rate | Return Line | Notes |
-|------------|------|-------------|-------|
-| Domestic sale of goods (standard) | 10% | Line 1 / Line 3 | Include tax in consideration |
-| Domestic sale of food/beverages (take-out, delivery) | 8% | Line 2 / Line 4 | Reduced rate; excl. alcohol, dine-in |
-| Domestic sale of subscribed newspapers (2x/week+) | 8% | Line 2 / Line 4 | Physical subscription only |
-| Export of goods | 0% | Line 9 | Zero-rated; full input credit |
-| International services to non-residents | 0% | Line 9 | Zero-rated; confirm place of supply |
-| Rental of residential property | Exempt | Not on return as taxable | No output tax; reduces taxable ratio |
-| Sale of land | Exempt | Not on return as taxable | No output tax; reduces taxable ratio |
-| Interest income | Exempt | Not on return as taxable | Financial transaction exemption |
-| Sale of securities | Exempt | Not on return as taxable (5% of value counted for ratio) | Special rule for ratio calculation |
-| Insurance claims received | Non-taxable | Not on return | Outside scope |
-| Government subsidies | Non-taxable | Not on return | Outside scope (no consideration for supply) |
-| Dividend income | Non-taxable | Not on return | Outside scope |
-
-### 9b. Purchases (Input Tax)
-
-| Transaction | Rate Paid | Creditable? | Notes |
-|------------|-----------|-------------|-------|
-| Domestic purchase of goods/services (standard, with QI) | 10% | Yes | Qualified invoice required |
-| Domestic purchase of food for resale (with QI) | 8% | Yes | Reduced rate input |
-| Purchase from non-registered supplier (2023-2026) | 10% or 8% | 80% | Transitional measure |
-| Purchase from non-registered supplier (2026-2029) | 10% or 8% | 50% | Transitional measure |
-| Purchase from non-registered supplier (from 2029) | 10% or 8% | 0% | No credit without QI |
-| Import of goods (customs) | 10% or 8% | Yes | Tax paid at customs; receipt required |
-| Purchase of capital asset >= JPY 1M | 10% | Yes (subject to adjustment) | 3-year adjustment period applies |
-| Residential rental property construction | 10% | Blocked | Article 35-2 restriction |
-| Entertainment (with business nexus) | 10% | Yes (subject to income tax limits) | Must be in course of business |
-| Entertainment (no business nexus / personal) | 10% | Blocked | Not in course of business |
-| Employee salary / wages | N/A | N/A | Not a taxable purchase |
-| B2B digital services from abroad | 10% (reverse charge) | Reverse charge | See Step 6 |
-
----
-
-## Step 10: Comparison with EU VAT System
-
-| Feature | Japan JCT | EU VAT (Directive 2006/112/EC) |
-|---------|-----------|-------------------------------|
-| Standard rate | 10% (single national rate) | 15-27% (varies by member state) |
-| Reduced rate | 8% (single reduced rate) | Multiple reduced rates permitted (5%+); some super-reduced/zero |
-| Rate components | National (7.8%) + Local (2.2%) reported together | Single rate, no sub-national split |
-| Invoice system | Qualified Invoice System (QIS) from Oct 2023 | VAT invoice requirements long established; e-invoicing rollout varies |
-| Registration threshold | JPY 10M (~EUR 60,000) in base period | Varies by state (EUR 0 -- EUR 85,000) |
-| Filing frequency | Annual + interim based on prior year tax | Varies by state (monthly/quarterly/annual) |
-| Reverse charge (B2B services) | Yes, for cross-border digital services | Yes, for all cross-border B2B services |
-| Reverse charge (B2B goods) | No (import VAT at customs) | Intra-community acquisition (reverse charge for goods within EU) |
-| Input credit apportionment | 95% rule + 3 methods | Pro-rata based on turnover ratio; varies by state |
-| Exempt supply treatment | Similar (land, financial, medical, education, residential rental) | Similar (land, financial, medical, education) |
-| Place of supply -- services | B2B: recipient location; B2C: supplier location (with digital service exceptions) | B2B: recipient; B2C: supplier (with digital/telecom exceptions) |
-| Transitional credit for non-registered suppliers | Yes (80%/50%/0% over 6 years) | No equivalent (EU always required VAT invoices from registered suppliers) |
-| Simplified method | Deemed input rate by industry (40-90%) | Flat-rate schemes exist in some states |
-| Tax return currency | JPY only | Local currency of member state |
-| Filing portal | e-Tax (national) | National portals per member state |
-| Penalties for late filing | 15-20% surcharge + delinquent tax | Varies by state |
-| Group registration | Limited (consolidated only for certain structures) [T3] | VAT grouping available in many states |
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Dine-in vs Take-out Determination [T1]
-
-**Situation:** A food retailer sells bento boxes. Some customers eat at tables provided in the store; others take away.
-**Resolution:** If the retailer provides tables/seating for eating and the customer indicates intent to eat in, standard rate (10%) applies. If the customer takes away, reduced rate (8%) applies. The determination is made at the point of sale based on the customer's stated intention. If the retailer asks at the register and the customer says "take-out," the reduced rate applies even if the customer subsequently eats on premises.
-**Legislation:** Consumption Tax Act, Appended Table 1, Note 1; NTA Q&A on Reduced Rate (Category 1-2).
-
-### EC2 -- Alcohol Content in Food Products [T1]
-
-**Situation:** A product labelled as cooking wine (mirin) or a food item containing alcohol is sold.
-**Resolution:** If the product is classified as an alcoholic beverage under the Liquor Tax Act (shuzeinou > 1%), standard rate (10%) applies, not reduced rate. "Hon-mirin" is an alcoholic beverage (10%). "Mirin-style seasoning" (mirin-fuu choumiryou) with < 1% alcohol and added salt is a food product (8%).
-**Legislation:** Consumption Tax Act, Appended Table 1, Column 1, Item 1(a); Liquor Tax Act, Article 2.
-
-### EC3 -- Catering vs Delivery [T1]
-
-**Situation:** A company orders food delivered to its office for a meeting. The food service sends staff to set up and serve.
-**Resolution:** If the supplier provides serving services (haizen -- arranging plates, serving to individuals, clearing), this is classified as food service (gaishoku) at 10%. If the supplier simply delivers food without serving (e.g., pizza delivery, bento delivery), the reduced rate (8%) applies.
-**Legislation:** Consumption Tax Act, Appended Table 1, Note 2; NTA Q&A on Reduced Rate (Category 3).
-
-### EC4 -- Newspaper Subscription vs Single Purchase [T1]
-
-**Situation:** A company buys newspapers at a convenience store daily rather than subscribing.
-**Resolution:** Only newspapers sold under a subscription agreement (teiki koudoku keiyaku) qualify for the reduced rate (8%). Individual purchases at retail are standard rate (10%). Digital newspaper subscriptions are also standard rate (10%) -- the reduced rate applies only to physical newspapers.
-**Legislation:** Consumption Tax Act, Appended Table 1, Column 1, Item 2.
-
-### EC5 -- QIS Transitional Credit Calculation [T2]
-
-**Situation:** A business purchases JPY 1,100,000 (tax-included) of goods from a non-registered supplier in the period 1 October 2023 to 30 September 2026.
-**Resolution:** The implied consumption tax is JPY 100,000 (= JPY 1,100,000 x 10/110). Under the 80% transitional measure, the creditable amount is JPY 100,000 x 80% = JPY 80,000 (of which national portion = JPY 80,000 x 78/100 = JPY 62,400). The buyer must annotate purchase records to indicate that the transitional measure is applied and retain the supplier's invoice (which need not be a qualified invoice but must meet prior format requirements). Flag for reviewer to confirm calculation and documentation.
-**Legislation:** Act on Special Measures Concerning Taxation, Article 86-9.
-
-### EC6 -- 95% Rule Threshold Exceeded [T2]
-
-**Situation:** A business has taxable sales of JPY 600M (taxable sales ratio is 98%) in the period.
-**Resolution:** Even though the taxable sales ratio exceeds 95%, the JPY 500M taxable sales ceiling is breached. Therefore, the 95% rule does NOT apply and input tax must be apportioned using the individual attribution method, lump-sum proportional method, or approved method. Flag for reviewer to select and calculate the appropriate method.
-**Legislation:** Consumption Tax Act, Article 30(2).
-
-### EC7 -- Small Business QIS Exemption (2-Wari Tokurei) [T1]
-
-**Situation:** An individual sole proprietor with prior-year taxable sales of JPY 8M registered for QIS on 1 October 2023. In the current period (within 1 Oct 2023 - 30 Sep 2026), output tax is JPY 500,000.
-**Resolution:** Under the 2-wari tokurei, the tax payable is JPY 500,000 x 20% = JPY 100,000. No actual input tax credit calculation is needed. This is available because base period sales are JPY 10M or less and the fiscal year starts within the eligible window.
-**Legislation:** Act on Special Measures Concerning Taxation (28th Revised Act), Article 86-9-2.
-
-### EC8 -- Export Zero-Rating and Proof Requirements [T1]
-
-**Situation:** A Japanese manufacturer sells goods to a US buyer. Goods are shipped from a Japanese port.
-**Resolution:** The sale qualifies as an export transaction at 0% under Article 7. The exporter must retain: (a) export declaration (yushutsu kyokasho) stamped by customs, (b) shipping documents (bill of lading), (c) sales contract or purchase order. Without these documents, zero-rating is denied and 10% tax applies. All input tax on purchases attributable to the export is fully creditable.
-**Legislation:** Consumption Tax Act, Article 7(1)(i); Enforcement Regulations, Article 5.
-
-### EC9 -- Sale of Securities and the Taxable Sales Ratio [T1]
-
-**Situation:** A business sells listed shares for JPY 100M, generating a gain. Total other taxable sales are JPY 50M. Exempt sales (interest) are JPY 5M.
-**Resolution:** For purposes of the taxable sales ratio calculation, only 5% of the face value of securities sold is included in exempt sales (not the full JPY 100M). So exempt sales for ratio = JPY 5M (interest) + JPY 5M (5% of JPY 100M securities) = JPY 10M. Taxable ratio = JPY 50M / (JPY 50M + JPY 10M) = 83.3%. The 95% rule would NOT apply (ratio < 95%), so apportionment is required.
-**Legislation:** Consumption Tax Act, Enforcement Order, Article 48(1); NTA circular on taxable sales ratio.
-
-### EC10 -- Import of Goods and Customs JCT [T1]
-
-**Situation:** A business imports raw materials from China. Japan Customs assesses consumption tax on the CIF value plus customs duty.
-**Resolution:** JCT on imports is paid to Customs (not on the regular return as reverse charge). The tax paid is creditable as input tax on the consumption tax return, provided the import permit (yunyuu kyokasho) is retained. The tax base for import JCT = CIF value + customs duty + excise tax (if any). Standard rate (10%) applies to most goods; reduced rate (8%) applies to imported food and beverages (excluding alcohol).
-**Legislation:** Consumption Tax Act, Article 28(4) (tax base for imports); Article 30(1)(ii) (input credit for import tax).
-
-### EC11 -- Deemed Supply on Personal Use [T1]
-
-**Situation:** A business operator takes inventory (standard-rated goods) for personal use.
-**Resolution:** Under JCT, consumption of business assets for personal use is treated as a deemed supply. Output tax at the applicable rate must be accounted for, based on the market value or the cost price (whichever is higher for income tax, but cost is acceptable for JCT if it is at least purchase price). The business must issue a record of self-supply.
-**Legislation:** Consumption Tax Act, Article 4(5)(i) (deemed supply for personal consumption); Article 28(3) (tax base for deemed supplies).
-
-### EC12 -- Free Samples and Promotional Gifts [T1]
-
-**Situation:** A business gives away product samples to potential customers as a marketing activity.
-**Resolution:** Free distribution of business assets for business promotion purposes is NOT treated as a deemed supply for JCT (unlike personal consumption). No output tax is required. However, input tax previously claimed on the production/purchase of the samples remains creditable, as the samples are used in the course of business (for taxable sales promotion).
-**Legislation:** Consumption Tax Act, Article 4(5) -- deemed supply applies only to personal use and gifts to related parties, not to business promotion; NTA circular (kihon tsuttatsu) 5-3-1.
-
-### EC13 -- Mixed Supplies (Standard and Reduced Rate in One Transaction) [T1]
-
-**Situation:** A convenience store sale includes a bento (food, 8%) and a bottle of sake (alcohol, 10%) on a single receipt.
-**Resolution:** Each item must be classified separately. The qualified invoice (or simplified qualified invoice) must show the tax-included amount grouped by rate: one total for 8% items and one total for 10% items, with the consumption tax calculated on each group total. The receipt must indicate which items are subject to the reduced rate (commonly marked with an asterisk).
-**Legislation:** Consumption Tax Act, Article 57-4(1)(iv)-(v); NTA guidance on multi-rate invoicing.
-
-### EC14 -- Adjustment for Bad Debts [T1]
-
-**Situation:** A business wrote off a receivable of JPY 1,100,000 (tax-included at 10%) as uncollectable.
-**Resolution:** The business can claim a bad debt adjustment (kashidaore ni kakaru zei-gaku no koujo) equal to the consumption tax portion of the written-off receivable: JPY 1,100,000 x 7.8/110 = JPY 78,000 (national portion). This is entered on Line 12 of the return. If the debt is subsequently recovered, the recovered tax must be added back to output tax in the period of recovery.
-**Legislation:** Consumption Tax Act, Article 39 (bad debt relief); Article 39(3) (recovery adjustment).
-
----
-
-## Step 12: Test Suite
-
-### Test 1 -- Standard domestic sale [T1]
-
-**Input:** Corporation sells office equipment to domestic customer. Invoice: JPY 550,000 (tax-included). Standard rate 10%.
-**Expected output:**
-- Tax-excluded amount: JPY 500,000
-- National consumption tax: JPY 550,000 x 7.8/110 = JPY 39,000
-- Local consumption tax: JPY 550,000 x 2.2/110 = JPY 11,000
-- Report: Line 1 = JPY 550,000; Line 3 = JPY 39,000
-- Local tax: Line 17 calculated as Line 14 x 22/78
-
-### Test 2 -- Reduced rate food sale (take-out) [T1]
-
-**Input:** Convenience store sells bento boxes for take-out. Daily total: JPY 108,000 (tax-included). Reduced rate 8%.
-**Expected output:**
-- Tax-excluded amount: JPY 100,000
-- National consumption tax: JPY 108,000 x 6.24/108 = JPY 6,240
-- Local consumption tax: JPY 108,000 x 1.76/108 = JPY 1,760
-- Report: Line 2 = JPY 108,000; Line 4 = JPY 6,240
-
-### Test 3 -- Export zero-rated sale [T1]
-
-**Input:** Manufacturer exports goods to US buyer. Invoice: JPY 10,000,000. Export declaration obtained from customs.
-**Expected output:**
-- JCT rate: 0%
-- Report: Line 9 = JPY 10,000,000
-- Full input tax credit available on attributable purchases
-- No output tax
-
-### Test 4 -- Purchase with qualified invoice (standard rate) [T1]
-
-**Input:** Business purchases office supplies from registered supplier. Invoice shows: JPY 330,000 (tax-included), consumption tax JPY 30,000, QIS registration number T1234567890123.
-**Expected output:**
-- Input tax (national): JPY 330,000 x 7.8/110 = JPY 23,400
-- Creditable in full (assuming 95% rule applies)
-- Report: included in Line 10 and Line 11
-
-### Test 5 -- Purchase from non-registered supplier (transitional 80%) [T2]
-
-**Input:** Business purchases raw materials from a non-QIS-registered farmer for JPY 540,000 (tax-included at 8%) during the period Oct 2023 - Sep 2026. No qualified invoice available.
-**Expected output:**
-- Implied national tax: JPY 540,000 x 6.24/108 = JPY 31,200
-- Transitional credit: JPY 31,200 x 80% = JPY 24,960
-- Non-creditable portion: JPY 31,200 x 20% = JPY 6,240
-- Buyer must annotate records; flag for reviewer confirmation
-
-### Test 6 -- Reverse charge on B2B digital services from abroad [T1]
-
-**Input:** Japanese corporation subscribes to US-based SaaS platform. Monthly fee: USD 5,000 (approx JPY 750,000). No JCT charged by supplier.
-**Expected output:**
-- Self-assess output tax: JPY 750,000 x 7.8% = JPY 58,500 (national)
-- Self-assess input tax: JPY 750,000 x 7.8% = JPY 58,500 (national)
-- Net effect: zero (if 95% rule applies)
-- If 95% rule does NOT apply: flag for reviewer -- input credit subject to apportionment
-
-### Test 7 -- 95% rule does not apply (taxable sales > JPY 500M) [T2]
-
-**Input:** Corporation has taxable sales of JPY 800M, exempt sales of JPY 10M (taxable ratio = 98.8%). Total input tax paid: JPY 20,000,000 (national portion).
-**Expected output:**
-- Taxable ratio: 98.8% (>= 95%)
-- BUT taxable sales exceed JPY 500M, so 95% rule is NOT available
-- Must use apportionment method
-- If lump-sum proportional: creditable = JPY 20,000,000 x 98.8% = JPY 19,760,000
-- Flag for reviewer: confirm method selection
-
-### Test 8 -- Simplified method (kantan kazei) [T1]
-
-**Input:** Small retailer (Category 2) with base period sales JPY 30M. Output tax for the period: national consumption tax = JPY 2,340,000.
-**Expected output:**
-- Deemed input rate for Category 2 (retail): 80%
-- Deemed input tax credit: JPY 2,340,000 x 80% = JPY 1,872,000
-- Tax payable (national): JPY 2,340,000 - JPY 1,872,000 = JPY 468,000
-- Local tax: JPY 468,000 x 22/78 = JPY 132,000
-- Total payable: JPY 600,000
-
-### Test 9 -- Interim return calculation [T1]
-
-**Input:** Corporation's prior year national consumption tax was JPY 6,000,000. Fiscal year is April to March.
-**Expected output:**
-- Prior year tax is between JPY 4,000,001 and JPY 48,000,000
-- 3 interim returns required (quarterly)
-- Each interim payment: JPY 6,000,000 / 3 = JPY 2,000,000 (national)
-- Local interim: JPY 2,000,000 x 22/78 = JPY 564,103 per interim
-- Filing deadlines: within 2 months after each 3-month period end
-
-### Test 10 -- Bad debt adjustment [T1]
-
-**Input:** Corporation wrote off receivable of JPY 2,200,000 (originally invoiced at 10%, tax-included) as uncollectable in the current period.
-**Expected output:**
-- Bad debt tax adjustment (national): JPY 2,200,000 x 7.8/110 = JPY 156,000
-- Report: Line 12 = JPY 156,000
-- This reduces net tax payable
-- If subsequently recovered, JPY 156,000 must be added back to output
-
-### Test 11 -- Residential rental property input tax block [T1]
-
-**Input:** Corporation constructs a residential apartment building for rental. Construction cost: JPY 110,000,000 (tax-included at 10%). All units are for residential rental (exempt supply).
-**Expected output:**
-- Input tax: JPY 110,000,000 x 7.8/110 = JPY 7,800,000
-- Input tax is BLOCKED under Article 35-2 (exclusively for exempt residential rental)
-- Creditable amount: JPY 0
-- If any units are converted to taxable use (e.g., office rental) within 3 years, partial recovery is possible [T2]
-
-### Test 12 -- 2-Wari Tokurei for newly registered QIS operator [T1]
-
-**Input:** Individual sole proprietor registered for QIS on 1 Oct 2023. Base period sales: JPY 7M. Current period output tax (national): JPY 390,000. Period falls within Oct 2023 - Sep 2026.
-**Expected output:**
-- 2-Wari tokurei applies (base period < JPY 10M, period within eligible window)
-- Tax payable (national): JPY 390,000 x 20% = JPY 78,000
-- Local tax: JPY 78,000 x 22/78 = JPY 22,000
-- Total payable: JPY 100,000
-- No input credit calculation required
-
----
-
-## Step 13: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation, output the following structured flag before proceeding:
+## Section 7 — Excel working paper template
 
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment Claude considers most likely correct and why]
-Action Required: Qualified tax accountant (zeirishi) must confirm before filing.
-```
+JAPAN CONSUMPTION TAX WORKING PAPER — 消費税計算書
+Fiscal Year: 2025 / Entity: _______________
 
-When Claude identifies a [T3] situation, output:
+A. TAXABLE SALES (課税売上)
+  A1. Standard rate 10% sales (net)           ___________
+  A2. Reduced rate 8% sales (net)             ___________
+  A3. Zero-rated exports (輸出)               ___________
+  A4. Exempt sales (非課税売上)               ___________
+  A5. Total sales (A1+A2+A3+A4)              ___________
+  A6. Taxable ratio (A1+A2+A3) / A5           ___________%
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified tax accountant (zeirishi). Document gap.
+B. OUTPUT TAX (課税標準額に対する消費税額)
+  B1. Output JCT at 10% (A1 × 10/110)        ___________
+  B2. Output JCT at 8% (A2 × 8/108)          ___________
+  B3. Reverse charge output JCT               ___________
+  B4. Total output JCT (B1+B2+B3)             ___________
+
+C. INPUT TAX CREDIT (仕入税額控除)
+  C1. Domestic purchases — 10% (net)          ___________
+  C2. Domestic purchases — 8% (net)           ___________
+  C3. Import purchases (net)                  ___________
+  C4. Total input JCT (C1×10% + C2×8% + C3×10%)  _______
+  C5. Reverse charge input credit             ___________
+  C6. Transitional credit adjustments         ___________
+  C7. Total input credit (C4+C5+C6)           ___________
+
+D. NET CONSUMPTION TAX
+  D1. Net national JCT (B4 − C7)              ___________
+  D2. Local consumption tax (D1 × 22/78)      ___________
+  D3. Total payable (D1 + D2)                 ___________
+  D4. Interim payments deducted (中間申告)     ___________
+  D5. Net payable / (refundable) (D3 − D4)    ___________
+
+REVIEWER FLAGS:
+  [ ] QIS registration numbers confirmed for all major suppliers?
+  [ ] Eat-in vs. takeout split confirmed for food items?
+  [ ] Reverse charge self-assessments documented?
+  [ ] Transitional credits for non-QIS suppliers calculated?
+  [ ] Taxable ratio computed for 95% rule check?
+  [ ] Simplified tax method (簡易課税) applicable?
 ```
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 8 — Bank statement reading guide
 
-- NEVER guess the applicable JCT rate -- it is deterministic from the transaction type and applicable legislation
-- NEVER apply the reduced rate (8%) to alcohol, dine-in food service, digital newspaper subscriptions, or single-copy newspaper purchases
-- NEVER allow input tax credit without a qualified invoice (post-transition period) or without proper transitional documentation (during transition)
-- NEVER apply the 95% rule when taxable sales exceed JPY 500M, regardless of the taxable sales ratio
-- NEVER classify salaries, dividends, insurance claims, government subsidies, or loan principal as taxable transactions
-- NEVER treat import JCT (paid at customs) as reverse charge -- import JCT is paid to Customs and claimed as input credit from the customs receipt
-- NEVER apply reverse charge to B2C digital services -- B2C is handled by the foreign provider's registration or platform taxation
-- NEVER allow input credit on residential rental property construction used exclusively for exempt residential rental (Article 35-2)
-- NEVER ignore the 3-year capital asset adjustment rule for assets costing JPY 1,000,000+ when the taxable ratio changes significantly
-- NEVER apply the simplified method (kantan kazei) if base period taxable sales exceed JPY 50M
-- NEVER allow the 2-wari tokurei if base period taxable sales exceed JPY 10M or the fiscal year falls outside the eligible window
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
-- NEVER issue or instruct issuance of a document resembling a qualified invoice on behalf of a non-registered person
-- NEVER classify a transaction without confirming the client's taxable status (kazei jigyousha vs menzei jigyousha) first
+### Common Japanese bank CSV formats
+
+| Bank | CSV columns | Date format | Amount |
+|---|---|---|---|
+| みずほ銀行 (Mizuho) | 取引日, 摘要, 相手先, 備考, 入金, 出金, 残高 | YYYY年MM月DD日 | JPY integer |
+| 三菱UFJ銀行 (MUFG) | 取引日付, 取引内容, お支払金額, お預り金額, 差引残高 | YYYY/MM/DD | JPY integer |
+| 三井住友銀行 (SMBC) | 年月日, 摘要, 金額(出金), 金額(入金), 残高 | YYYY/MM/DD | JPY integer |
+| ゆうちょ銀行 (Japan Post Bank) | 年月日, 取引内容, 出金, 入金, 残高 | YYYY.MM.DD | JPY integer |
+| 楽天銀行 (Rakuten) | 取引日, 入出金種別, 摘要, 入金額, 出金額, 残高 | YYYY/MM/DD | JPY |
+| SBI新生銀行 | 日付, 取引内容, お引き出し, お預け入れ, 残高 | YYYY/MM/DD | JPY |
+
+### Key Japanese banking terms
+
+| Japanese | Meaning | Classification hint |
+|---|---|---|
+| 振込入金 | Incoming wire transfer | Potential income |
+| 引落 / 口座振替 | Direct debit | Potential expense |
+| 振込出金 | Outgoing wire transfer | Potential expense |
+| 利息 | Interest | Exempt — exclude |
+| 手数料 | Fee/commission | Potentially exempt |
+| 残高 | Balance | Running balance — ignore |
+| 摘要 | Description/narrative | Key classification field |
+| 相手先 | Counterparty | Key identification field |
+| ATM出金 | ATM cash withdrawal | Tier 2 — ask |
+| 定期振込 | Regular/standing transfer | Check if business expense |
 
 ---
 
-## Contribution Notes (For Other Jurisdictions)
+## Section 9 — Onboarding fallback
 
-If you are adapting this skill for another country, you must:
+If the client uploads a bank statement but cannot immediately answer all onboarding questions:
 
-1. Replace all legislation references with the equivalent national legislation.
-2. Replace all return form line numbers with the equivalent lines on your jurisdiction's consumption/VAT return form.
-3. Replace tax rates (10% / 8%) with your jurisdiction's standard and reduced rates.
-4. Replace the capital asset threshold (JPY 1,000,000) with your jurisdiction's equivalent.
-5. Replace the registration threshold (JPY 10,000,000) with your jurisdiction's equivalent.
-6. Replace the simplified method categories and deemed rates with your jurisdiction's equivalent.
-7. Replace the QIS requirements with your jurisdiction's invoice requirements.
-8. Replace the blocked categories with your jurisdiction's equivalent non-deductible categories.
-9. Have a qualified tax practitioner in your jurisdiction validate every T1 rule before publishing.
-10. Add your own edge cases to the Edge Case Registry for known ambiguous situations in your jurisdiction.
-11. Run all test suite cases against your jurisdiction's rules and replace expected outputs accordingly.
+1. Classify all transactions using the pattern library (Section 3)
+2. Apply conservative defaults from Section 1
+3. Mark all Tier 2 items as "PENDING — reviewer must confirm"
+4. Generate the working paper with flagged items
+5. Ask only the following priority questions:
 
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
+```
+JAPAN JCT ONBOARDING — MINIMUM QUESTIONS
+1. What is your QIS registration number? (T + 13 digits)
+   If unregistered: confirm annual taxable sales are below JPY 10M
+2. What is your fiscal year start and end date?
+3. Are you using the simplified tax method (簡易課税)?
+   If yes: what is your primary business category?
+4. Do you make any exempt sales (e.g. residential rent, financial services)?
+5. Any export sales to overseas clients? (zero-rated)
+6. Are there any vehicle expenses? What is the business-use percentage?
+7. Any mixed-rate convenience store purchases with itemised receipts?
+```
 
+Do not ask for information that can be inferred from the bank statement.
+
+---
+
+## Section 10 — Reference material
+
+### Key legislation
+
+| Topic | Reference |
+|---|---|
+| Consumption Tax Act | 消費税法 (Act No. 108 of 1988, as amended) |
+| Standard rate | 消費税法 Article 29 |
+| Reduced rate | 消費税法 附則第34条; 軽減税率制度 |
+| Exemptions | 消費税法 Article 6; 別表第一 |
+| Exports zero rate | 消費税法 Article 7 |
+| Input tax credit | 消費税法 Articles 30–36 |
+| QIS (qualified invoice) | 消費税法 Articles 57-2 to 57-4 |
+| Simplified tax | 消費税法 Article 37 |
+| Penalties | 国税通則法 (National Tax General Act) |
+| Reverse charge (digital) | 消費税法 Article 28(2); 5% rule |
+
+### Known gaps and escalation triggers
+
+- 95% rule with proportional allocation methods (個別対応方式 / 一括比例配分方式) — escalate to zeirishi
+- Real estate and construction long-term contracts — escalate
+- Non-resident digital service providers' separate obligations — escalate
+- Corporate group consolidated filing — escalate
+- Transfer pricing adjustments — escalate
+
+### Self-check before filing
+
+- [ ] All QIS registration numbers recorded for input credits claimed
+- [ ] Eat-in / takeout split resolved for all food items
+- [ ] All export sales supported by evidence
+- [ ] Reverse charge self-assessments included in return
+- [ ] Transitional credits calculated for any non-QIS suppliers
+- [ ] Simplified tax method elected? If yes, industry ratio applied
+- [ ] Interim payment (中間申告) credited against total payable
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 1.0 | 2024 | Initial release |
+| 2.0 | April 2026 | Full v2.0 rewrite: supplier pattern library, worked examples, QIS update, no inline tier tags |
+
+---
+
+## Prohibitions
+
+- NEVER allow input tax credit without confirming QIS invoice availability (post October 2023)
+- NEVER classify eat-in restaurant meals at 8% — standard 10% applies
+- NEVER claim input credit for exempt purchases (residential rent, financial services, medical)
+- NEVER omit reverse charge self-assessment for B2B digital services from non-resident suppliers
+- NEVER apply simplified tax method without confirming election (簡易課税選択届出書) was filed
+- NEVER present calculations as definitive — always label as estimates and direct to a licensed zeirishi (税理士)
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a zeirishi 税理士 or equivalent) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date version of this skill is maintained at openaccountants.com.
