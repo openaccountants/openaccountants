@@ -32,7 +32,7 @@ depends_on:
 | Validation date | Pending |
 | Skill version | 2.0 |
 
-### Tax Rate Brackets (2025) [T1]
+### Tax Rate Brackets (2025)
 
 | Taxable Income (EUR) | Rate | Notes |
 |---|---|---|
@@ -44,7 +44,7 @@ depends_on:
 
 **Germany uses a FORMULA-BASED progressive rate, not simple bracket multiplication. Each euro is taxed at its own marginal rate within zones 1 and 2. Do not compute manually -- pass to the deterministic engine.**
 
-### Solidaritatszuschlag (SolZ) [T1]
+### Solidaritatszuschlag (SolZ)
 
 | Item | Value |
 |---|---|
@@ -53,25 +53,37 @@ depends_on:
 | Exemption threshold (married/joint) | ESt up to EUR 36,260 -- no SolZ |
 | Gleitzone (phase-in) | 11.9% marginal rate on ESt between threshold and full-rate zone |
 
-Most self-employed with moderate income will fall below the SolZ exemption threshold. Check before applying.
-
-### Kirchensteuer (KiSt) [T1]
+### Kirchensteuer (KiSt)
 
 | Item | Value |
 |---|---|
 | Rate (most Lander) | 9% of ESt |
 | Rate (Bavaria, Baden-Wurttemberg) | 8% of ESt |
-| Applicability | Only if taxpayer is a registered member of a tax-collecting church (evangelisch, katholisch, etc.) |
+| Applicability | Only if taxpayer is a registered church member |
 
-### Gewerbesteuer Credit [T1]
+### Gewerbesteuer Credit
 
 | Item | Value |
 |---|---|
 | Credit against ESt | Factor 4.0 x Gewerbesteuer-Messbetrag |
-| Cap | Cannot exceed the actual Gewerbesteuer paid |
+| Cap | Cannot exceed actual Gewerbesteuer paid |
 | Applicability | Gewerbetreibende only -- Freiberufler do NOT pay Gewerbesteuer |
 
-### Conservative Defaults [T1]
+### Key Anlage EUR Lines
+
+| Line | Description |
+|---|---|
+| Betriebseinnahmen | Gross business revenue (net of USt if registered) |
+| Raumkosten | Office costs (rent, utilities, home office) |
+| Fahrzeugkosten | Vehicle costs (business portion) |
+| Reisekosten | Travel expenses |
+| Bewirtungskosten | Business entertainment (70% deductible) |
+| Werbekosten | Marketing/advertising |
+| AfA (Abschreibungen) | Depreciation |
+| Nebenkosten Geldverkehr | Bank fees, payment processing |
+| Gewinn/Verlust | Net profit/loss |
+
+### Conservative Defaults
 
 | Ambiguity | Default |
 |---|---|
@@ -100,7 +112,7 @@ Most self-employed with moderate income will fall below the SolZ exemption thres
 
 **R-DE-1 -- Corporations (GmbH, UG, AG).** "This skill covers Einkommensteuer for natural persons only. Kapitalgesellschaften file Korperschaftsteuer. Out of scope."
 
-**R-DE-2 -- Partnerships (GbR, OHG, KG).** "Partnership income is determined at partnership level (gesonderte und einheitliche Feststellung) and allocated to partners. Out of scope for this skill."
+**R-DE-2 -- Partnerships (GbR, OHG, KG).** "Partnership income is determined at partnership level (gesonderte und einheitliche Feststellung) and allocated to partners. Out of scope."
 
 **R-DE-3 -- Non-resident limited taxpayer (beschrankt steuerpflichtig).** "Non-resident taxation has different rules and rate tables. Out of scope."
 
@@ -118,71 +130,85 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 | Pattern | Tax Line | Treatment | Notes |
 |---|---|---|---|
-| KUNDENUEBERWEISUNG, KUNDENUBERWEISUNG, UBERWEISUNG [client name] | Betriebseinnahmen (business revenue) | Gross revenue line on Anlage EUR | If USt-registered, extract net amount (excl. 19% USt) |
-| HONORAR, HONORARNOTE, VERGUETUNG | Betriebseinnahmen | Revenue | Professional fees -- typical for Freiberufler |
-| GEHALT, LOHN, ARBEITGEBER [name] | Einkuenfte aus nichtselbstaendiger Arbeit (Anlage N) | NOT self-employment income | Employment income -- separate Anlage N, not Anlage S/G |
-| MIETEINNAHME, MIETE ERHALTEN | Einkuenfte aus Vermietung (Anlage V) | NOT self-employment income | Rental income -- separate Anlage V |
-| ZINSEN, ZINSERTRAG, KAPITALERTRAG | Einkuenfte aus Kapitalvermogen (Anlage KAP) | NOT self-employment income | Capital income -- usually withheld at source (Abgeltungsteuer 25%) |
-| DIVIDENDE | Einkuenfte aus Kapitalvermogen | NOT self-employment income | Dividend -- Abgeltungsteuer applies |
-| ERSTATTUNG FINANZAMT, STEUERERSTATTUNG | EXCLUDE | Not income | Tax refund -- not taxable income |
+| KUNDENUEBERWEISUNG, KUNDENUBERWEISUNG, UBERWEISUNG [client name] | Betriebseinnahmen | Gross revenue on Anlage EUR | If USt-registered, extract net (excl. 19% USt) |
+| HONORAR, HONORARNOTE, VERGUETUNG | Betriebseinnahmen | Revenue | Professional fees -- typical Freiberufler |
 | PAYPAL PAYOUT, STRIPE PAYOUT, STRIPE TRANSFER | Betriebseinnahmen | Revenue | Platform payout -- match to underlying invoices |
-| GUTSCHRIFT [supplier name] | Check context | Could be credit note or refund | If refund of expense: reduce that expense. If revenue: add to income. |
+| GEHALT, LOHN, ARBEITGEBER [name] | Einkuenfte aus nichtselbstaendiger Arbeit (Anlage N) | NOT self-employment income | Employment income -- separate Anlage N |
+| MIETEINNAHME, MIETE ERHALTEN | Einkuenfte aus Vermietung (Anlage V) | NOT self-employment income | Rental income -- separate |
+| ZINSEN, ZINSERTRAG, KAPITALERTRAG | Einkuenfte aus Kapitalvermogen (Anlage KAP) | NOT self-employment income | Capital income -- Abgeltungsteuer 25% |
+| DIVIDENDE | Einkuenfte aus Kapitalvermogen | NOT self-employment income | Dividend |
+| ERSTATTUNG FINANZAMT, STEUERERSTATTUNG | EXCLUDE | Not income | Tax refund |
+| GUTSCHRIFT [supplier name] | Check context | Could be credit note or refund | If refund of expense: reduce expense. If revenue: add to income |
 
 ### 3.2 Expense Patterns (Debits on Bank Statement)
 
-| Pattern | Tax Line (Anlage EUR) | Tier | Treatment |
+| Pattern | Tax Line (Anlage EUR) | Treatment | Notes |
 |---|---|---|---|
-| MIETE BUERO, BUEROMIETE, OFFICE RENT | Raumkosten (office costs) | T1 | Fully deductible if dedicated business premises |
-| ARBEITSZIMMER, HOME OFFICE | Raumkosten -- hausliches Arbeitszimmer | T2 | See home office rules -- max EUR 1,260/year Pauschale or actual costs |
-| FAHRTKOSTEN, TANKSTELLE, ARAL, SHELL, TOTAL | Fahrzeugkosten | T2 | Business portion only -- Fahrtenbuch or 1%-Regelung required |
-| BAHNCARD, DEUTSCHE BAHN, DB FERNVERKEHR | Reisekosten (travel) | T1 | Fully deductible if business travel |
-| FLUG, LUFTHANSA, RYANAIR, EASYJET | Reisekosten | T1 | Fully deductible if business purpose |
-| BEWIRTUNG, RESTAURANT, GASTSTATTE | Bewirtungskosten | T1/T2 | 70% deductible (ESt), 100% Vorsteuerabzug (USt). MUST have Bewirtungsbeleg with names, business reason, date, amount |
-| FACHLITERATUR, BUCH, AMAZON (books) | Betriebsausgaben (other) | T1 | Fully deductible if professional literature |
-| FORTBILDUNG, SEMINAR, KURS, TRAINING | Fortbildungskosten | T1 | Fully deductible if related to business activity |
-| TELEFON, TELEKOM, VODAFONE, O2 | Telekommunikation | T2 | Business portion only -- default 0% if mixed use |
-| INTERNET, DSL | Telekommunikation | T2 | Business portion only |
-| VERSICHERUNG, HAFTPFLICHT, BERUFSHAFTPFLICHT | Versicherungen | T1 | Professional liability: fully deductible. Personal insurance: not deductible as Betriebsausgabe |
-| STEUERBERATER, STEUERKANZLEI, BUCHHALTER | Beratungskosten | T1 | Fully deductible |
-| RECHTSANWALT, ANWALT, KANZLEI | Rechtskosten | T1 | Fully deductible if business-related legal matter |
-| IHK, HANDWERKSKAMMER, BEITRAG | Beitrage (memberships) | T1 | Fully deductible -- compulsory chamber fees |
-| BUROMATERIAL, STAPLES, VIKING | Burobedarf | T1 | Fully deductible |
-| SOFTWARE, LIZENZ, SUBSCRIPTION | Betriebsausgaben (IT) | T1 | Deductible if under EUR 800 net. Over EUR 800 net: capitalise and depreciate |
-| WERBUNG, MARKETING, GOOGLE ADS, META ADS | Werbekosten | T1 | Fully deductible |
-| KRANKENKASSE, AOK, TK, BARMER, DAK | Sonderausgaben (not Betriebsausgabe) | T1 | Health insurance: Sonderausgabe on main return, NOT a business expense |
-| RENTENVERSICHERUNG, DRV | Sonderausgaben (Altersvorsorge) | T1 | Pension: Sonderausgabe, NOT a business expense |
-| KUENSTLERSOZIALKASSE, KSK | Sonderausgaben | T1 | KSK contributions: Sonderausgabe, not Betriebsausgabe |
-| FINANZAMT, EINKOMMENSTEUER, VORAUSZAHLUNG ESt | EXCLUDE | Not deductible | Income tax payments are not business expenses |
-| GEWERBESTEUER, GewSt | Betriebsausgabe (limited) | T1 | Gewerbesteuer IS a deductible Betriebsausgabe since 2008 |
-| PRIVATENTNAHME, EIGENBELEG PRIVAT | EXCLUDE | Not deductible | Drawings / personal withdrawals |
-| UMSATZSTEUER ZAHLUNG, USt VORAUSZAHLUNG | EXCLUDE from P&L (if EUR method) | T1 | USt payments are balance sheet movements for Article 10 equivalent |
-| KONTOFUHRUNGSGEBÜHR, BANKGEBÜHR | Betriebsausgaben (Nebenkosten des Geldverkehrs) | T1 | Fully deductible for business account |
-| PAYPAL FEE, STRIPE FEE | Betriebsausgaben (Nebenkosten des Geldverkehrs) | T1 | Transaction fees -- fully deductible |
+| MIETE BUERO, BUEROMIETE, OFFICE RENT | Raumkosten | Fully deductible | Dedicated business premises |
+| ARBEITSZIMMER, HOME OFFICE | Raumkosten -- hausliches Arbeitszimmer | T2 -- see Section 6 | Max EUR 1,260/year Tagespauschale or actual |
+| FAHRTKOSTEN, TANKSTELLE, ARAL, SHELL, TOTAL | Fahrzeugkosten | T2 -- business portion only | Fahrtenbuch or 1%-Regelung required |
+| BAHNCARD, DEUTSCHE BAHN, DB FERNVERKEHR | Reisekosten | Fully deductible | Business travel |
+| FLUG, LUFTHANSA, RYANAIR, EASYJET | Reisekosten | Fully deductible | Business purpose flights |
+| BEWIRTUNG, RESTAURANT, GASTSTATTE | Bewirtungskosten | 70% deductible (ESt) | MUST have Bewirtungsbeleg |
+| FACHLITERATUR, BUCH, AMAZON (books) | Betriebsausgaben | Fully deductible | Professional literature |
+| FORTBILDUNG, SEMINAR, KURS, TRAINING | Fortbildungskosten | Fully deductible | Related to business activity |
+| TELEFON, TELEKOM, VODAFONE, O2 | Telekommunikation | T2 -- business portion only | Default 0% if mixed use |
+| INTERNET, DSL | Telekommunikation | T2 -- business portion only | |
+| VERSICHERUNG, BERUFSHAFTPFLICHT | Versicherungen | Fully deductible | Professional liability only; personal = not deductible |
+| STEUERBERATER, STEUERKANZLEI, BUCHHALTER | Beratungskosten | Fully deductible | |
+| RECHTSANWALT, ANWALT, KANZLEI | Rechtskosten | Fully deductible | Business-related legal only |
+| IHK, HANDWERKSKAMMER, BEITRAG | Beitrage | Fully deductible | Compulsory chamber fees |
+| BUROMATERIAL, STAPLES, VIKING | Burobedarf | Fully deductible | |
+| SOFTWARE, LIZENZ, SUBSCRIPTION | Betriebsausgaben (IT) | Fully deductible if under EUR 800 net | Over EUR 800: capitalise and depreciate |
+| WERBUNG, MARKETING, GOOGLE ADS, META ADS | Werbekosten | Fully deductible | |
+| KONTOFUHRUNGSGEBUHR, BANKGEBUHR | Nebenkosten Geldverkehr | Fully deductible | Business account |
+| PAYPAL FEE, STRIPE FEE | Nebenkosten Geldverkehr | Fully deductible | Transaction fees |
 
-### 3.3 SaaS -- EU Suppliers (Reverse Charge, for USt purposes; fully deductible for ESt)
+### 3.3 Expense Patterns -- NOT Deductible as Betriebsausgaben
+
+| Pattern | Correct Treatment | Notes |
+|---|---|---|
+| KRANKENKASSE, AOK, TK, BARMER, DAK | Sonderausgabe (Anlage Vorsorgeaufwand) | NOT a business expense |
+| RENTENVERSICHERUNG, DRV | Sonderausgabe (Altersvorsorge) | NOT a business expense |
+| KUENSTLERSOZIALKASSE, KSK | Sonderausgabe | NOT a business expense |
+| FINANZAMT, EINKOMMENSTEUER, VORAUSZAHLUNG ESt | EXCLUDE | Income tax not deductible |
+| GEWERBESTEUER, GewSt | Betriebsausgabe | Deductible since 2008 (for Gewerbetreibende) |
+| PRIVATENTNAHME, EIGENBELEG PRIVAT | EXCLUDE | Drawings |
+| UMSATZSTEUER ZAHLUNG, USt VORAUSZAHLUNG | EXCLUDE from P&L | USt is balance sheet for Regelbesteuerung |
+| SPENDE, DONATION | Sonderausgabe | NOT a business expense |
+
+### 3.4 SaaS -- EU Suppliers (Reverse Charge for USt; fully deductible for ESt)
 
 | Pattern | ESt Treatment | Notes |
 |---|---|---|
-| GOOGLE, MICROSOFT, ADOBE, META, SLACK, ZOOM | Betriebsausgaben (IT) | Net amount deductible. Reverse charge USt is separate. |
+| GOOGLE, MICROSOFT, ADOBE, META, SLACK, ZOOM | Betriebsausgaben (IT) | Net amount deductible. Reverse charge USt separate. |
 | ATLASSIAN, DROPBOX, SPOTIFY (business) | Betriebsausgaben (IT) | Same |
-| STRIPE (subscription fee) | Betriebsausgaben | Separate from transaction fees (which are Nebenkosten Geldverkehr) |
+| STRIPE (subscription fee) | Betriebsausgaben | Separate from transaction fees |
 
-### 3.4 SaaS -- Non-EU Suppliers
+### 3.5 SaaS -- Non-EU Suppliers
 
 | Pattern | ESt Treatment | Notes |
 |---|---|---|
 | NOTION, ANTHROPIC, OPENAI, GITHUB, FIGMA, CANVA | Betriebsausgaben (IT) | Net amount deductible. Non-EU reverse charge for USt. |
 | AWS (check billing entity) | Betriebsausgaben (IT) | AWS EMEA SARL (LU) = EU; AWS Inc (US) = non-EU |
 
-### 3.5 Internal Transfers and Exclusions
+### 3.6 Internal Transfers and Exclusions
 
 | Pattern | Treatment | Notes |
 |---|---|---|
 | UMBUCHUNG, EIGENUEBERWEISUNG, INTERNAL TRANSFER | EXCLUDE | Internal movement between own accounts |
 | DARLEHEN, KREDIT, TILGUNG | EXCLUDE | Loan principal -- not income or expense |
 | ZINSEN DARLEHEN (paid) | Betriebsausgaben (Schuldzinsen) | Interest on business loan: deductible |
-| BARGELDABHEBUNG, GELDAUTOMAT, ATM | TIER 2 -- ask | Default exclude; ask what cash was spent on |
-| SPENDE, DONATION | Sonderausgabe (not Betriebsausgabe) | Charitable donation: Sonderausgabe on main return |
+| BARGELDABHEBUNG, GELDAUTOMAT, ATM | T2 -- ask | Default exclude; ask what cash was spent on |
+
+### 3.7 German Banks -- Statement Format Reference
+
+| Bank | Format | Key Fields |
+|---|---|---|
+| Sparkasse, Volksbank | CSV, PDF | Buchungstag, Wertstellung, Verwendungszweck, Betrag |
+| Deutsche Bank, Commerzbank | CSV, MT940 | Valuta, Buchungstext, Auftraggeber/Empfanger, Betrag |
+| N26, Revolut | CSV | Date, Counterparty, Amount, Reference |
+| ING DiBa | CSV | Buchung, Auftraggeber/Empfanger, Verwendungszweck, Betrag |
 
 ---
 
@@ -194,7 +220,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 `15.03.2025 ; KUNDENUEBERWEISUNG STUDIO KREBS GMBH ; CREDIT ; Honorar Maerz 2025 ; +4,500.00 ; EUR`
 
 **Reasoning:**
-Client payment for professional services. Freiberufler income. If USt-registered (Regelbesteuerung), the EUR 4,500 may include 19% USt. Check invoice: if EUR 4,500 gross, net = EUR 3,781.51 (Betriebseinnahme) + EUR 718.49 (USt liability). If Kleinunternehmer (s19 UStG), full EUR 4,500 is income.
+Client payment for professional services. Freiberufler income. If USt-registered (Regelbesteuerung), EUR 4,500 may include 19% USt. Check invoice: if EUR 4,500 gross, net = EUR 3,781.51 (Betriebseinnahme) + EUR 718.49 (USt liability). If Kleinunternehmer (s19 UStG), full EUR 4,500 is income.
 
 **Classification:** Betriebseinnahmen on Anlage EUR / Anlage S.
 
@@ -204,11 +230,9 @@ Client payment for professional services. Freiberufler income. If USt-registered
 `22.04.2025 ; RESTAURANT GOLDENER HIRSCH ; DEBIT ; Bewirtung Kundentreffen ; -180.00 ; EUR`
 
 **Reasoning:**
-Bewirtungskosten are 70% deductible for ESt (s4 Abs.5 Nr.2 EStG). The full Vorsteuer (19% USt) is recoverable for USt purposes if a proper Bewirtungsbeleg exists (names of attendees, business reason, date, location, amount, signature). Without the Bewirtungsbeleg: 0% deductible.
+Bewirtungskosten are 70% deductible for ESt (s4 Abs.5 Nr.2 EStG). The full Vorsteuer (19% USt) is recoverable for USt purposes if a proper Bewirtungsbeleg exists. Without Bewirtungsbeleg: 0% deductible.
 
-**Classification:**
-- ESt: EUR 180.00 x 70% = EUR 126.00 deductible Betriebsausgabe. EUR 54.00 not deductible.
-- USt: EUR 180.00 / 1.19 = EUR 151.26 net. EUR 28.74 Vorsteuer -- 100% recoverable with proper Beleg.
+**Classification:** ESt: EUR 180.00 x 70% = EUR 126.00 deductible. EUR 54.00 not deductible. USt: EUR 28.74 Vorsteuer 100% recoverable with proper Beleg.
 
 ### Example 3 -- Home Office (Arbeitszimmer)
 
@@ -216,43 +240,40 @@ Bewirtungskosten are 70% deductible for ESt (s4 Abs.5 Nr.2 EStG). The full Vorst
 `01.01.2025 ; VERMIETER MUELLER ; DEBIT ; Miete inkl. Nebenkosten ; -850.00 ; EUR`
 
 **Reasoning:**
-Monthly rent. Home office deduction depends on the arrangement:
-- **Tagespauschale (day-based flat rate):** EUR 6/day, max 210 days = EUR 1,260/year. Available from 2023 onwards regardless of room arrangement.
-- **Dedicated room (full deduction):** If the Arbeitszimmer is a separate room used exclusively for work AND is the centre of all professional activity (Mittelpunkt der gesamten Tatigkeit), full actual costs are deductible (proportional by floor area).
-- **No dedicated room, but works from home:** Tagespauschale only.
+Monthly rent. Home office deduction depends on arrangement:
+- **Tagespauschale:** EUR 6/day, max 210 days = EUR 1,260/year. Available regardless of room arrangement.
+- **Dedicated room (Mittelpunkt):** If separate room, exclusively for work, AND centre of all professional activity, full actual costs deductible (proportional by floor area).
+- **No dedicated room:** Tagespauschale only.
 
-**Classification:** [T2] -- ask client about room arrangement. Default: Tagespauschale EUR 1,260/year.
+**Classification:** T2 -- ask client about room arrangement. Default: Tagespauschale EUR 1,260/year.
 
-### Example 4 -- Vehicle (Fahrzeugkosten)
+### Example 4 -- Vehicle Fuel
 
 **Input line:**
 `10.05.2025 ; ARAL TANKSTELLE BERLIN ; DEBIT ; Diesel ; -85.00 ; EUR`
 
 **Reasoning:**
-Fuel purchase. Vehicle expenses require either:
-- **Fahrtenbuch (logbook):** Actual costs apportioned by business vs private km. Full Vorsteuer on business portion.
-- **1%-Regelung:** Private use taxed at 1% of Bruttolistenpreis per month. All actual costs are Betriebsausgaben but private use is added back as income.
-- **Kilometerpauschale:** EUR 0.30/km for first 20 km of commute (Entfernungspauschale); EUR 0.38/km from 21st km. For business trips: EUR 0.30/km (no Vorsteuer).
+Fuel purchase. Vehicle expenses require either Fahrtenbuch (logbook), 1%-Regelung, or Kilometerpauschale. Without confirmed method: 0% deduction.
 
-**Classification:** [T2] -- ask which method. Default: 0% deduction until method confirmed.
+**Classification:** T2 -- ask which method. Default: 0% deduction until confirmed.
 
-### Example 5 -- Software Purchase Over EUR 800
+### Example 5 -- Software Subscription Under EUR 800
 
 **Input line:**
 `03.06.2025 ; ADOBE SYSTEMS ; DEBIT ; Creative Cloud Jahresabo ; -713.88 ; EUR`
 
 **Reasoning:**
-Annual subscription EUR 713.88. Under the EUR 800 net threshold for Geringwertige Wirtschaftsguter (GWG). This is a subscription (not a perpetual licence), so it is a Betriebsausgabe in full in the year paid, regardless of the EUR 800 threshold. Subscriptions are operating expenses, not capital items.
+Annual subscription under EUR 800 net. Subscription (not perpetual licence) = Betriebsausgabe in full in year paid, regardless of EUR 800 threshold.
 
 **Classification:** Betriebsausgaben (IT/Software). Fully deductible.
 
-### Example 6 -- Health Insurance (Not a Business Expense)
+### Example 6 -- Health Insurance (NOT Business Expense)
 
 **Input line:**
 `15.01.2025 ; TECHNIKER KRANKENKASSE ; DEBIT ; Krankenversicherung Jan 2025 ; -450.00 ; EUR`
 
 **Reasoning:**
-Health insurance is a Sonderausgabe (special expense) on the main Einkommensteuererklarung, NOT a Betriebsausgabe on the Anlage EUR. The Basisabsicherung (basic health coverage) is fully deductible as a Sonderausgabe. Supplementary cover (Zusatzversicherung) has limited deductibility.
+Health insurance is a Sonderausgabe on the main return, NOT a Betriebsausgabe on Anlage EUR.
 
 **Classification:** EXCLUDE from Anlage EUR. Record as Sonderausgabe (Anlage Vorsorgeaufwand).
 
@@ -260,58 +281,55 @@ Health insurance is a Sonderausgabe (special expense) on the main Einkommensteue
 
 ## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
-### 5.1 Betriebseinnahmen (Business Revenue) [T1]
+### 5.1 Betriebseinnahmen (Business Revenue)
 
 **Legislation:** EStG s4 Abs.1, s15 (Gewerbebetrieb), s18 (freiberufliche Tatigkeit)
 
-All business income is Betriebseinnahmen. For USt-registered taxpayers, report net of USt on the Anlage EUR. For Kleinunternehmer (s19 UStG), report gross.
+All business income is Betriebseinnahmen. For USt-registered, report net of USt on Anlage EUR. For Kleinunternehmer (s19 UStG), report gross.
 
-### 5.2 Betriebsausgaben (Business Expenses) [T1]
+### 5.2 Betriebsausgaben (Business Expenses)
 
 **Legislation:** EStG s4 Abs.4
 
-Expenses are deductible if they are caused by the business (betrieblich veranlasst). This is broader than the UK "wholly and exclusively" test -- Germany allows apportionment of mixed-use expenses where the business and private portions can be objectively separated.
+Expenses are deductible if caused by the business (betrieblich veranlasst). Germany allows apportionment of mixed-use expenses where business and private portions can be objectively separated.
 
-### 5.3 Geringwertige Wirtschaftsguter (GWG / Low-Value Assets) [T1]
+### 5.3 Geringwertige Wirtschaftsguter (GWG / Low-Value Assets)
 
 | Net Cost (excl. USt) | Treatment |
 |---|---|
-| Up to EUR 250 | Immediate full deduction, no asset register required |
-| EUR 250.01 -- EUR 800 | Immediate full deduction OR Sammelposten (pool). Individual asset register entry required. |
-| EUR 800.01 -- EUR 1,000 | Sammelposten option: pool all items in this range, depreciate over 5 years (20%/year) |
+| Up to EUR 250 | Immediate full deduction, no asset register |
+| EUR 250.01 -- EUR 800 | Immediate full deduction OR Sammelposten. Asset register required. |
+| EUR 800.01 -- EUR 1,000 | Sammelposten option: pool, depreciate 5 years (20%/year) |
 | Over EUR 1,000 | Normal AfA over useful life per AfA-Tabelle |
 
-**From 2024:** The GWG limit is EUR 800 net. The Sammelposten range is EUR 250.01 -- EUR 1,000.
-
-### 5.4 AfA (Absetzung fur Abnutzung / Depreciation) [T1]
+### 5.4 AfA (Depreciation)
 
 **Legislation:** EStG s7
 
-| Asset Type | Useful Life (years) | Annual Rate |
+| Asset Type | Useful Life | Annual Rate |
 |---|---|---|
-| Computer hardware (incl. peripherals) | 1 (since 2021 BMF ruling) | 100% |
-| Computer software | 1 (since 2021 BMF ruling) | 100% |
-| Office furniture | 13 | ~7.7% |
-| Motor vehicles | 6 | ~16.7% |
-| Office equipment (printers, copiers) | 7 | ~14.3% |
-| Mobile phones | 5 | 20% |
-| Buildings (commercial) | 33 or 50 | 3% or 2% |
+| Computer hardware (incl. peripherals) | 1 year (since 2021 BMF ruling) | 100% |
+| Computer software | 1 year | 100% |
+| Office furniture | 13 years | ~7.7% |
+| Motor vehicles | 6 years | ~16.7% |
+| Office equipment (printers, copiers) | 7 years | ~14.3% |
+| Mobile phones | 5 years | 20% |
+| Buildings (commercial) | 33 or 50 years | 3% or 2% |
 
-**Computer hardware and software:** Since the BMF ruling of 26.02.2021, digital assets (computers, peripherals, software) can be written off in full in the year of acquisition regardless of cost. This is treated as a 1-year useful life, not as GWG.
+**Computer hardware and software:** Since BMF ruling of 26.02.2021, digital assets can be written off in full in the year of acquisition regardless of cost.
 
-### 5.5 Non-Deductible Expenses [T1]
+### 5.5 Non-Deductible Expenses
 
 | Expense | Reason |
 |---|---|
 | Einkommensteuer, SolZ, KiSt | Tax on income -- s12 Nr.3 EStG |
 | Private living expenses | s12 Nr.1 EStG |
 | Fines and penalties (Geldstrafen, Busgelder) | s4 Abs.5 Nr.8 EStG |
-| Gifts to business partners over EUR 50/person/year | s4 Abs.5 Nr.1 EStG -- excess not deductible |
+| Gifts to business partners over EUR 50/person/year | s4 Abs.5 Nr.1 EStG |
 | 30% of Bewirtungskosten | s4 Abs.5 Nr.2 EStG |
-| Private clothing | Not business-related |
-| Personal insurance (life, household) | Sonderausgabe or not deductible, not Betriebsausgabe |
+| Personal insurance (life, household) | Sonderausgabe, not Betriebsausgabe |
 
-### 5.6 Vorauszahlungen (Quarterly Prepayments) [T1]
+### 5.6 Vorauszahlungen (Quarterly Prepayments)
 
 **Legislation:** EStG s37
 
@@ -322,66 +340,70 @@ Expenses are deductible if they are caused by the business (betrieblich veranlas
 | Q3 | 10 September |
 | Q4 | 10 December |
 
-- Based on the most recent Steuerbescheid (tax assessment)
-- Finanzamt sets the amount via Vorauszahlungsbescheid
-- Can be adjusted (up or down) by application to the Finanzamt if income changes significantly
-- First year: Finanzamt estimates based on projected income
+Based on most recent Steuerbescheid. First year: Finanzamt estimates.
 
-### 5.7 Filing Deadlines [T1]
+### 5.7 Filing Deadlines
 
 | Scenario | Deadline |
 |---|---|
-| Self-filed (without Steuerberater) | 31 July of the following year |
-| Filed by Steuerberater | End of February of the year after next (e.g., 2025 return due 28 Feb 2027) |
-| Voranmeldungen (USt) | 10th of the following month (monthly) or 10th after quarter end (quarterly) |
+| Self-filed (without Steuerberater) | 31 July of following year |
+| Filed by Steuerberater | End of February, year after next |
+| USt Voranmeldungen | 10th of following month/quarter |
 
-### 5.8 Penalties [T1]
+### 5.8 Penalties
 
 | Offence | Penalty |
 |---|---|
-| Late filing (Verspatungszuschlag) | 0.25% of assessed tax per month late, minimum EUR 25/month |
-| Late payment (Saumiszuschlag) | 1% per month (per commenced month) on unpaid tax |
-| Interest on late assessment | 0.15% per month (from 15 months after end of tax year) |
-| Incorrect return | Up to EUR 25,000 (Zwangsgeld); criminal penalties for fraud |
+| Late filing (Verspatungszuschlag) | 0.25% of assessed tax per month, min EUR 25/month |
+| Late payment (Saumiszuschlag) | 1% per commenced month on unpaid tax |
+| Interest on late assessment | 0.15% per month (from 15 months after year end) |
+| Incorrect return | Up to EUR 25,000; criminal penalties for fraud |
+
+### 5.9 Interaction with Umsatzsteuer (USt)
+
+| Scenario | Income Tax Treatment |
+|---|---|
+| USt collected (Regelbesteuerung) | NOT income -- report net on Anlage EUR |
+| Vorsteuer recovered | NOT an expense -- report net on Anlage EUR |
+| Vorsteuer blocked (e.g., 30% Bewirtung for ESt, 100% for USt) | ESt and USt have DIFFERENT rules |
+| Kleinunternehmer (s19 UStG) | No USt charged; all costs gross including USt paid |
+| Reverse-charge on imports | Net effect zero for USt; net cost deductible for ESt |
 
 ---
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### 6.1 Home Office (Hausliches Arbeitszimmer) [T2]
-
-**Three scenarios:**
+### 6.1 Home Office (Hausliches Arbeitszimmer)
 
 | Scenario | Deduction | Condition |
 |---|---|---|
 | No dedicated room | Tagespauschale: EUR 6/day, max EUR 1,260/year | Available to all who work from home |
-| Dedicated room, not Mittelpunkt | Tagespauschale only (since 2023 reform) | Room exists but taxpayer also works elsewhere |
-| Dedicated room, Mittelpunkt der Tatigkeit | Full actual costs (pro-rata by floor area) | Room is centre of ALL professional activity |
+| Dedicated room, not Mittelpunkt | Tagespauschale only (since 2023 reform) | Room exists but works elsewhere too |
+| Dedicated room, Mittelpunkt der Tatigkeit | Full actual costs (pro-rata by floor area) | Centre of ALL professional activity |
 
-**Flag for reviewer:** Confirm room arrangement, floor area ratio, and whether Mittelpunkt applies.
+**Flag for reviewer:** Confirm room arrangement, floor area ratio, Mittelpunkt status.
 
-### 6.2 Vehicle Business Use [T2]
+### 6.2 Vehicle Business Use
 
 | Method | How It Works |
 |---|---|
 | Fahrtenbuch | Actual costs x (business km / total km). Must be contemporaneous, complete, unchangeable. |
-| 1%-Regelung | Private use = 1% x Bruttolistenpreis/month added back as Betriebseinnahme. All costs deductible. |
+| 1%-Regelung | Private use = 1% x Bruttolistenpreis/month added as income. All costs deductible. |
 | Kilometerpauschale | EUR 0.30/km for business trips. No actual cost records needed. No Vorsteuer. |
 
-**Flag for reviewer:** Confirm which method and business-use percentage.
+**Flag for reviewer:** Confirm method and business-use percentage.
 
-### 6.3 Phone / Internet Mixed Use [T2]
+### 6.3 Phone / Internet Mixed Use
 
-Default: 0% deduction. If client provides a reasonable business-use estimate:
-- **Flat rate option:** 20% of phone/internet costs, capped at EUR 20/month, without detailed records.
-- **Actual records:** Higher percentage allowed with 3-month representative usage log.
+Default: 0% deduction. Options:
+- **Flat rate:** 20% of phone/internet costs, capped EUR 20/month, without records
+- **Actual records:** Higher % with 3-month representative usage log
 
-### 6.4 Geschenke (Business Gifts) [T2]
+### 6.4 Geschenke (Business Gifts)
 
-- Deductible up to EUR 50 net per person per year (since 2024, raised from EUR 35)
-- Must be recorded individually with recipient name
-- Over EUR 50: entire amount non-deductible (not just the excess)
-- Pauschalversteuerung (s37b EStG): donor can pay 30% flat tax on behalf of recipient
+- Deductible up to EUR 50 net per person per year (since 2024)
+- Must record individually with recipient name
+- Over EUR 50: entire amount non-deductible (not just excess)
 
 ---
 
@@ -390,6 +412,8 @@ Default: 0% deduction. If client provides a reasonable business-use estimate:
 ```
 EINNAHMEN-UBERSCHUSS-RECHNUNG (EUR) -- Working Paper
 Tax Year: 2025
+Client: ___________________________
+Status: Freiberufler / Gewerbetreibende
 
 A. BETRIEBSEINNAHMEN
   A1. Umsatzerlose (net of USt if registered)    ___________
@@ -417,6 +441,9 @@ B. BETRIEBSAUSGABEN
 C. GEWINN / VERLUST (A3 - B16)                    ___________
 
 REVIEWER FLAGS:
+  [ ] Freiberufler or Gewerbetreibende confirmed?
+  [ ] Filing status confirmed (single/married)?
+  [ ] Church membership confirmed?
   [ ] Home office method confirmed?
   [ ] Vehicle method confirmed?
   [ ] Bewirtungsbelege available?
@@ -488,36 +515,52 @@ ONBOARDING QUESTIONS -- GERMANY INCOME TAX
 | GWG low-value assets | EStG s6 Abs.2 |
 | Bewirtungskosten | EStG s4 Abs.5 Nr.2 |
 | Geschenke (gifts) | EStG s4 Abs.5 Nr.1 |
-| Arbeitszimmer | EStG s4 Abs.5 Nr.6b (old) / s4 Abs.5 Nr.6c (Tagespauschale) |
+| Arbeitszimmer | EStG s4 Abs.5 Nr.6b / Nr.6c (Tagespauschale) |
 | Vorauszahlungen | EStG s37 |
 | Solidaritatszuschlag | SolZG |
 | Kirchensteuer | KiStG (Lander) |
 | Gewerbesteuer credit | EStG s35 |
 
-### Interaction with Umsatzsteuer (USt) [T1]
+### Test Suite
 
-| Scenario | Income Tax Treatment |
-|---|---|
-| USt collected on sales (Regelbesteuerung) | NOT income -- liability to Finanzamt. Report net on Anlage EUR. |
-| Vorsteuer recovered | NOT an expense -- reclaimable. Report net on Anlage EUR. |
-| Vorsteuer blocked (e.g., 30% Bewirtung for ESt but 100% for USt) | ESt and USt have DIFFERENT rules. Full USt recovery; only 70% ESt deduction. |
-| Kleinunternehmer (s19 UStG) | No USt charged. All costs are gross including USt paid. USt paid is part of the expense. |
-| Reverse-charge USt on imports | Net effect zero for USt. For ESt, the net purchase cost is the deductible expense. |
+**Test 1 -- Freiberufler, mid-range income.**
+Input: Single, no church, Freiberufler, Betriebseinnahmen EUR 60,000, Betriebsausgaben EUR 15,000. Gewinn EUR 45,000.
+Expected: Apply formula-based progressive rate to EUR 45,000. SolZ likely below exemption threshold. No GewSt.
+
+**Test 2 -- Bewirtung correctly limited.**
+Input: EUR 500 Bewirtungskosten claimed.
+Expected: EUR 350 deductible (70%). EUR 150 not deductible.
+
+**Test 3 -- Computer hardware full write-off.**
+Input: Laptop EUR 2,500 purchased.
+Expected: Full deduction in year of acquisition (BMF 2021 ruling). 100% AfA.
+
+**Test 4 -- Health insurance excluded.**
+Input: TK Krankenversicherung EUR 5,400.
+Expected: EXCLUDE from Anlage EUR. Sonderausgabe on Anlage Vorsorgeaufwand.
+
+**Test 5 -- Geschenke over limit.**
+Input: EUR 80 gift to business partner.
+Expected: Over EUR 50 limit. Entire EUR 80 non-deductible.
+
+**Test 6 -- Kleinunternehmer gross reporting.**
+Input: Kleinunternehmer, invoice EUR 1,000 (no USt charged).
+Expected: Full EUR 1,000 is Betriebseinnahme. All purchase costs at gross.
 
 ---
 
 ## PROHIBITIONS
 
-- NEVER compute Einkommensteuer using simple bracket multiplication -- Germany uses a formula-based progressive rate. Pass to the deterministic engine.
-- NEVER include Krankenversicherung or Rentenversicherung as Betriebsausgaben -- they are Sonderausgaben.
-- NEVER allow more than 70% of Bewirtungskosten as Betriebsausgabe.
-- NEVER allow Geschenke over EUR 50 per person per year.
-- NEVER allow Einkommensteuer, SolZ, or KiSt as deductible expenses.
-- NEVER allow fines or penalties (Geldstrafen, Busgelder) as deductible.
-- NEVER apply Gewerbesteuer to a Freiberufler -- only Gewerbetreibende pay GewSt.
-- NEVER deduct vehicle expenses without confirming the method (Fahrtenbuch, 1%, or Pauschale).
-- NEVER deduct home office costs beyond EUR 1,260 Tagespauschale without confirming Mittelpunkt status.
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their Steuerberater for confirmation.
+- NEVER compute Einkommensteuer using simple bracket multiplication -- use formula-based progressive rate
+- NEVER include Krankenversicherung or Rentenversicherung as Betriebsausgaben -- they are Sonderausgaben
+- NEVER allow more than 70% of Bewirtungskosten as Betriebsausgabe
+- NEVER allow Geschenke over EUR 50 per person per year
+- NEVER allow Einkommensteuer, SolZ, or KiSt as deductible expenses
+- NEVER allow fines or penalties as deductible
+- NEVER apply Gewerbesteuer to a Freiberufler
+- NEVER deduct vehicle expenses without confirming the method
+- NEVER deduct home office beyond EUR 1,260 Tagespauschale without confirming Mittelpunkt
+- NEVER present tax calculations as definitive -- direct client to Steuerberater
 
 ---
 

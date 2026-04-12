@@ -1,8 +1,8 @@
 ---
 name: ro-income-tax
 description: >
-  Use this skill whenever asked about Romanian income tax for self-employed individuals (PFA). Trigger on phrases like "how much tax do I pay", "Declarația Unică", "PFA tax", "norma de venit", "impozit pe venit", "CAS", "CASS", "self-employed tax Romania", or any question about filing or computing income tax for a self-employed or freelance client in Romania. This skill covers the flat 10% income tax, real income system (sistem real), norma de venit (deemed income), micro-enterprise regime, CAS (25% pension), CASS (10% health), filing deadlines, and penalties. ALWAYS read this skill before touching any Romanian income tax work.
-version: 1.0
+  Use this skill whenever asked about Romanian income tax for self-employed individuals (PFA). Trigger on phrases like "how much tax do I pay", "Declarația Unică", "PFA tax", "norma de venit", "impozit pe venit", "CAS", "CASS", "self-employed tax Romania", or any question about filing or computing income tax for a self-employed or freelance client in Romania. ALWAYS read this skill before touching any Romanian income tax work.
+version: 2.0
 jurisdiction: RO
 tax_year: 2025
 category: international
@@ -10,359 +10,321 @@ depends_on:
   - income-tax-workflow-base
 ---
 
-# Romania Income Tax (Declarația Unică) -- Self-Employed Skill
+# Romania Income Tax (Declarația Unică) -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Romania |
-| Jurisdiction Code | RO |
-| Primary Legislation | Codul Fiscal (Legea 227/2015), Titlul IV (income from independent activities) |
-| Supporting Legislation | Codul de Procedură Fiscală (Legea 207/2015); OUG 168/2022 (fiscal consolidation measures); Legea 239/2025 (fiscal package 2) |
-| Tax Authority | Agenția Națională de Administrare Fiscală (ANAF) |
-| Filing Portal | SPV (Spațiul Privat Virtual) / declaratii.anaf.ro |
+|---|---|
+| Country | Romania (România) |
+| Tax type | Impozit pe venit (income tax on independent activities) |
+| Primary legislation | Codul Fiscal (Legea 227/2015), Titlul IV |
+| Supporting legislation | Codul de Procedură Fiscală (Legea 207/2015); OUG 168/2022; Legea 239/2025 |
+| Tax authority | ANAF (Agenția Națională de Administrare Fiscală) |
+| Filing portal | SPV (Spațiul Privat Virtual) / declaratii.anaf.ro |
+| Currency | RON only |
+| Income tax rate | 10% flat on net income |
+| CAS (pension) | 25% on threshold tiers (RON 48,600 / 97,200) |
+| CASS (health) | 10% on threshold tiers (RON 24,300 / 48,600 / 97,200) |
+| Filing deadline | 25 May of the following year |
+| Minimum wage (2025) | RON 4,050/month |
 | Contributor | Open Accountants Community |
-| Validated By | Pending -- requires Romanian expert contabil or consultant fiscal sign-off |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: income tax rate, CAS/CASS thresholds, norma de venit identification, filing deadlines. Tier 2: choosing between sistem real and norma de venit, CAS/CASS optimisation, micro-enterprise vs PFA decision. Tier 3: international income, tax treaties, crypto, transfer pricing. |
+| Validated by | Pending -- requires Romanian expert contabil or consultant fiscal sign-off |
+| Validation date | Pending |
+
+**Income determination methods:**
+
+| Method | Tax base | Bookkeeping |
+|---|---|---|
+| Sistem real | Revenue - documented expenses | Full daňová evidence required |
+| Norma de venit | Fixed deemed amount by CAEN/county | Revenue records only |
+
+**CAS/CASS threshold tiers (2025):**
+
+| Threshold | CAS (25%) | CASS (10%) |
+|---|---|---|
+| Below 6x min wage (RON 24,300) | Optional | Mandatory minimum RON 2,430 |
+| 6x--12x (RON 24,300--48,600) | Optional | RON 2,430 |
+| 12x--24x (RON 48,600--97,200) | RON 12,150 | RON 4,860 |
+| Above 24x (RON 97,200+) | RON 24,300 | RON 9,720 |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown entity type | STOP -- PFA vs SRL changes everything |
+| Unknown income method | STOP -- sistem real vs norma |
+| Unknown expense category | Not deductible |
+| Unknown CAEN code for norma | STOP -- norma varies by code and county |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified consultant fiscal must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- bank statement for the tax year. Acceptable from: BCR (Banca Comercială Română), BRD (Groupe Société Générale), Banca Transilvania, ING Romania, Raiffeisen Romania, CEC Bank, or fintech (Revolut, Wise).
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- invoices, CAEN code, county (județ), chosen income method, prior year Declarația Unică.
 
-Before computing any income tax figure, you MUST know:
+**Ideal** -- complete bookkeeping, norma de venit published amount, CAS/CASS payment statements.
 
-1. **Entity type** [T1] -- PFA (Persoană Fizică Autorizată), II (Întreprindere Individuală), IF (Întreprindere Familială), or SRL (micro-enterprise).
-2. **Income determination method** [T1] -- sistem real (actual income/expenses) or norma de venit (deemed income).
-3. **CAEN activity code(s)** [T1] -- determines norma de venit availability and amount.
-4. **County (județ)** [T1] -- norma de venit varies by county.
-5. **Gross revenue** [T1] -- total received in the year.
-6. **Business expenses** [T1/T2] -- if using sistem real.
-7. **Other income** [T1] -- employment, rental, dividends, interest, crypto.
-8. **Minimum wage basis** [T1] -- RON 4,050/month for 2025.
+### Refusal catalogue
 
-**If entity type and income determination method are unknown, STOP. Must determine before computing.**
+**R-RO-1 -- SRL.** *Trigger:* client is a limited company. *Message:* "This skill covers PFA/II/IF only. SRL files corporate income tax (impozit pe profit) or micro-enterprise tax. Please use a separate skill."
+
+**R-RO-2 -- International income.** *Trigger:* significant foreign income. *Message:* "International income is outside scope. Consult a consultant fiscal."
+
+**R-RO-3 -- Crypto.** *Trigger:* crypto trading income. *Message:* "Crypto taxation is outside scope."
+
+**R-RO-4 -- Income method unknown.** *Trigger:* not confirmed. *Message:* "I cannot compute without knowing: sistem real or norma de venit?"
 
 ---
 
-## Step 1: Income Tax Rate [T1]
+## Section 3 -- Transaction pattern library (the lookup table)
 
-**Legislation:** Codul Fiscal, Art. 68, Art. 69
+### 3.1 Romanian banks (fees and interest)
 
-### PFA / II / IF Income Tax
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BCR, BANCA COMERCIALĂ ROMÂNĂ | Bank charges: deductible (sistem real) | Monthly fees |
+| BRD, GROUPE SOCIÉTÉ GÉNÉRALE | Bank charges: deductible | Same |
+| BANCA TRANSILVANIA, BT | Bank charges: deductible | Same |
+| ING BANK ROMANIA | Bank charges: deductible | Same |
+| RAIFFEISEN BANK ROMANIA | Bank charges: deductible | Same |
+| CEC BANK | Bank charges: deductible | Same |
+| REVOLUT, WISE (fees) | Deductible | Fintech fees |
+| DOBÂNDĂ (interest credit) | EXCLUDE from independent activity income | Capital income |
+| DOBÂNDĂ (interest debit) | Deductible if business loan | Personal: EXCLUDE |
+| CREDIT, ÎMPRUMUT (principal) | EXCLUDE | Loan principal |
 
-| Rate | Applies To |
-|------|-----------|
-| 10% flat | Net income from independent activities |
+### 3.2 Romanian government and statutory bodies
 
-**Romania uses a flat 10% income tax on net income from self-employment. There are no progressive bands.**
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ANAF | EXCLUDE | Tax payment |
+| IMPOZIT PE VENIT | EXCLUDE | Income tax payment |
+| CAS, CASA NAȚIONALĂ DE PENSII | Deductible from gross income (sistem real) | Pension contribution |
+| CASS, CASA NAȚIONALĂ DE SĂNĂTATE | Deductible from gross income (sistem real) | Health contribution |
+| REGISTRUL COMERȚULUI, ONRC | Deductible | Registration fees |
 
----
+### 3.3 Romanian utilities and telecoms
 
-## Step 2: Income Determination Methods [T1/T2]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ENEL, E-DISTRIBUȚIE, ELECTRICA | Deductible if business premises | Electricity; apportion if home |
+| ENGIE, E.ON ENERGIE | Deductible if business premises | Gas |
+| ORANGE RO, VODAFONE RO, DIGI, RCS & RDS | Deductible: business phone/internet | Mixed: apportion |
+| TELEKOM ROMANIA | Deductible: business phone/internet | Mixed: apportion |
 
-### Option A: Sistem Real (Real Income System) [T1]
+### 3.4 Insurance
 
-**Legislation:** Codul Fiscal, Art. 68
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ALLIANZ-ȚIRIAC, EUROINS, GROUPAMA, OMNIASIG | Deductible if business insurance | Personal: NOT deductible |
+| ASIGURARE AUTO (RCA/CASCO) | Deductible: business vehicle portion | Personal vehicle: NOT deductible |
 
-Net income = Gross revenue - Deductible expenses
+### 3.5 SaaS and software -- international
 
-**Deductible expenses** must be:
-- Incurred for the purpose of earning income
-- Documented with invoices/receipts
-- Not on the non-deductible list (Art. 68 para. 5)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | Deductible expense | EU reverse charge TVA |
+| GITHUB, OPENAI, ANTHROPIC | Deductible expense | Non-EU |
+| SLACK, ZOOM, ATLASSIAN | Deductible expense | Check entity |
 
-**Key deductible expenses:**
-| Expense | Treatment |
-|---------|-----------|
-| Materials and supplies | Fully deductible |
-| Rent (business premises) | Fully deductible |
-| Utilities (business) | Fully deductible; proportional if home office |
-| Professional services | Fully deductible |
-| Insurance (business) | Fully deductible |
-| Depreciation | Per Codul Fiscal rates |
-| CAS and CASS contributions | Deductible from gross income |
-| Travel (business purpose) | Deductible with documentation |
-| Training/education (related to activity) | Fully deductible |
+### 3.6 Professional services (Romania)
 
-**NOT deductible:**
-| Expense | Reason |
-|---------|--------|
-| Personal expenses | Not business-related |
-| Fines and penalties | Public policy |
-| Income tax itself | Cannot deduct tax on income |
-| Entertainment (protocol) expenses | Limited to 2% of adjusted gross income |
-| Sponsorship | Separate regime -- tax credit, not deduction |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CONTABIL, CONTABILITATE, EXPERT CONTABIL | Deductible | Accounting fees |
+| AVOCAT, CABINET AVOCAT | Deductible if business | Legal fees |
+| NOTAR, BIROU NOTARIAL | Deductible if business | Notary fees |
+| CONSULTANT FISCAL | Deductible | Tax advisory |
 
-### Option B: Norma de Venit (Deemed Income) [T1]
+### 3.7 Transport and travel
 
-**Legislation:** Codul Fiscal, Art. 69
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CFR CĂLĂTORI | Deductible if business | Train |
+| TAROM, WIZZAIR, RYANAIR | Deductible if business travel | Flights |
+| UBER, BOLT | Deductible if business | Ride services |
+| PETROM, OMV, MOL, ROMPETROL, LUKOIL | Deductible: business vehicle portion | Fuel |
 
-- ANAF publishes annual deemed income amounts by CAEN code and county (județ)
-- If the taxpayer's CAEN code has an established norma, they may elect to use it
-- Income tax = 10% x norma de venit amount (fixed, regardless of actual revenue or expenses)
-- No bookkeeping required (only revenue records for VAT if applicable)
-- Norma is set by the territorial fiscal authority and published by 15 February each year
+### 3.8 Food and entertainment
 
-**Norma de venit is attractive when actual profit exceeds the deemed amount.** If actual profit is lower, sistem real is preferable.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| KAUFLAND, LIDL, CARREFOUR, MEGA IMAGE, AUCHAN | Default: NOT deductible | Personal provisioning |
+| RESTAURANT, PENSIUNE | Protocol expenses: limited to 2% of adjusted gross income | Must document business purpose |
 
-**Limitation:** Norma de venit is available only for specific CAEN codes (typically services, trades, small retail). Not all activities qualify.
+### 3.9 Internal transfers and exclusions
 
----
-
-## Step 3: Micro-Enterprise Regime (SRL only) [T1]
-
-**Legislation:** Codul Fiscal, Art. 47-56^3
-
-**This section applies to SRL (limited liability company), NOT PFA. Included for comparison since many freelancers consider SRL vs PFA.**
-
-| Condition | 2025 Requirement |
-|-----------|-----------------|
-| Revenue threshold | Up to EUR 250,000 (reduced from EUR 500,000 as of 1 Jan 2025) |
-| Employees | At least 1 employee required |
-| Share capital | Not held >25% by state entities |
-| Activity | Not in excluded CAEN codes (banking, insurance, gambling, consulting under specific codes) |
-
-| Tax Rate | Condition |
-|----------|-----------|
-| 1% on revenue | At least 1 employee |
-| 3% on revenue | Certain CAEN codes (including custom software development from 2025) or no employee |
-
-**From 2026:** Threshold further reduced to EUR 100,000.
-
-**Key difference from PFA:** Micro-enterprise tax is on REVENUE (turnover), not profit. No expense deductions.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFER PROPRIU, OWN TRANSFER | EXCLUDE | Internal |
+| NUMERAR, ATM | EXCLUDE (default: drawings) | Ask client |
+| DEPUNERE | EXCLUDE | Owner deposit |
 
 ---
 
-## Step 4: Social Contributions (CAS and CASS) [T1]
+## Section 4 -- Worked examples
 
-**Legislation:** Codul Fiscal, Art. 148-154 (CAS), Art. 170-174 (CASS)
+### Example 1 -- PFA sistem real, mid-range
 
-### CAS -- Contribuția de Asigurări Sociale (Pension) [T1]
+**Input:** CAEN 6201, revenue RON 200,000, expenses RON 70,000 (including prior CAS/CASS).
+**Computation:** Net income = RON 130,000. Tax = 10% x RON 130,000 = RON 13,000. CAS = 25% x RON 97,200 = RON 24,300 (above 24x). CASS = 10% x RON 48,600 = RON 4,860. Total = RON 42,160.
 
-| Item | 2025 Value |
-|------|-----------|
-| Rate | 25% |
-| Minimum threshold | 12 x minimum wage = 12 x RON 4,050 = RON 48,600/year |
-| Upper threshold | 24 x minimum wage = 24 x RON 4,050 = RON 97,200/year |
+### Example 2 -- PFA norma de venit
 
-**Rules:**
-- If net income < RON 48,600: CAS is optional (but no pension rights accrue if not paid)
-- If net income >= RON 48,600 and < RON 97,200: CAS = 25% x RON 48,600 = RON 12,150
-- If net income >= RON 97,200: CAS = 25% x RON 97,200 = RON 24,300
-- CAS is paid as a fixed amount based on the threshold tier, NOT as a percentage of actual income
+**Input:** Taxi driver, Bucharest, norma = RON 32,000.
+**Computation:** Tax = RON 3,200. CAS optional (below RON 48,600). CASS = RON 2,430 (mandatory minimum). Total (no CAS) = RON 5,630.
 
-### CASS -- Contribuția de Asigurări Sociale de Sănătate (Health) [T1]
+### Example 3 -- Low-income mandatory CASS
 
-| Item | 2025 Value |
-|------|-----------|
-| Rate | 10% |
-| Minimum threshold | 6 x minimum wage = 6 x RON 4,050 = RON 24,300/year |
-| Upper threshold | 12 x minimum wage = 12 x RON 4,050 = RON 48,600/year |
-| Maximum cap | 24 x minimum wage = 24 x RON 4,050 = RON 97,200/year (for very high earners) |
+**Input:** Net income RON 18,000.
+**Computation:** Tax = RON 1,800. CAS optional. CASS = RON 2,430 (mandatory minimum). Total = RON 4,230.
 
-**Rules:**
-- If net income < RON 24,300: CASS is STILL mandatory at minimum = 10% x RON 24,300 = RON 2,430/year (ensures basic health coverage)
-- If net income >= RON 24,300 and < RON 48,600: CASS = 10% x RON 24,300 = RON 2,430
-- If net income >= RON 48,600: CASS = 10% x RON 48,600 = RON 4,860
-- If net income >= RON 97,200: CASS = 10% x RON 97,200 = RON 9,720
+### Example 4 -- Part-year PFA
 
-### Combined Maximum Burden (2025) [T1]
-
-| Component | Maximum Annual Amount (RON) |
-|-----------|----------------------------|
-| Income tax (10%) | Varies with income |
-| CAS (25%) | 24,300 |
-| CASS (10%) | 9,720 |
+**Input:** Registered July 2025 (6 months), net income RON 30,000.
+**Computation:** Tax = RON 3,000. CAS prorated: 6/12 x RON 48,600 = RON 24,300 threshold. RON 30,000 > RON 24,300, so CAS = 25% x RON 24,300 = RON 6,075. CASS prorated similarly = RON 1,215. Total = RON 10,290.
 
 ---
 
-## Step 5: Computation Walkthrough [T1]
+## Section 5 -- Tier 1 rules (deterministic)
 
-### Sistem Real Computation
+### 5.1 Income tax rate
+Flat 10% on net income from independent activities. No progressive bands. **Legislation:** Codul Fiscal, Art. 68-69.
 
-| Step | Description | Formula |
-|------|-------------|---------|
-| 1 | Gross revenue | A |
-| 2 | Less: Deductible expenses (including CAS/CASS paid) | B |
-| 3 | Net income (venit net) | A - B = C |
-| 4 | Income tax = 10% x C | D |
-| 5 | Determine CAS tier based on C | E |
-| 6 | Determine CASS tier based on C | F |
-| 7 | Total tax + contributions | D + E + F |
+### 5.2 Sistem real
+Net income = gross revenue - deductible expenses. CAS/CASS paid are deductible. Expenses must be documented and incurred for business purpose. Protocol/entertainment limited to 2% of adjusted gross income. **Legislation:** Art. 68.
 
-### Norma de Venit Computation
+### 5.3 Norma de venit
+Fixed deemed income by CAEN code and county. Published by ANAF by 15 February. Tax = 10% x norma. Actual revenue/expenses irrelevant. Available only for specific CAEN codes. **Legislation:** Art. 69.
 
-| Step | Description | Formula |
-|------|-------------|---------|
-| 1 | Look up norma de venit for CAEN code + county | N |
-| 2 | Income tax = 10% x N | D |
-| 3 | Determine CAS tier based on N | E |
-| 4 | Determine CASS tier based on N | F |
-| 5 | Total tax + contributions | D + E + F |
+### 5.4 CAS thresholds
+Fixed amounts based on tier brackets, NOT percentage of actual income. Below RON 48,600: optional. RON 48,600--97,200: RON 12,150. Above RON 97,200: RON 24,300. **Legislation:** Art. 148-154.
 
-**Under norma de venit, actual revenue and expenses are irrelevant to the tax computation.**
+### 5.5 CASS thresholds
+Mandatory even if income is zero. Minimum RON 2,430. Tiers at RON 24,300/48,600/97,200. **Legislation:** Art. 170-174.
+
+### 5.6 Part-year proration
+CAS/CASS thresholds prorated by months of registration. **Legislation:** Codul Fiscal.
+
+### 5.7 Record keeping
+Sistem real: full accounting records. Norma: revenue records only. Retention: 5 years. **Legislation:** Codul de Procedură Fiscală.
 
 ---
 
-## Step 6: Filing Deadlines [T1]
+## Section 6 -- Tier 2 catalogue
 
-**Legislation:** Codul de Procedură Fiscală
+### 6.1 Norma vs sistem real comparison
+*Why:* Depends on actual profit vs deemed amount. *Default:* Present both. *Question:* "What is the published norma for your CAEN code and county?"
 
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| Declarația Unică (Form 212) -- annual declaration | 25 May of following year |
-| Advance payments (if applicable) | Based on prior year amounts, due with Declarația Unică |
-| VAT return (if VAT registered) | Monthly by 25th, or quarterly/semester |
-| Norma de venit election | At registration or by 31 January for existing PFA |
+### 6.2 SRL micro vs PFA comparison
+*Why:* Total cost differs significantly including dividend extraction tax. Threshold drops to EUR 100,000 in 2026. *Default:* Flag for reviewer. *Question:* "Are you considering SRL structure? Revenue level?"
 
-**Note (2025 change):** Starting from income year 2024 filed in 2025, the Declarația Unică includes ONLY prior year actual income -- estimated current-year income is no longer required in the same form.
+### 6.3 Multiple CAEN codes
+*Why:* Norma applies only to qualifying activities; others must use sistem real. *Default:* Flag for reviewer. *Question:* "Do you have multiple CAEN codes? Which have published norma?"
 
----
-
-## Step 7: Penalties [T1]
-
-**Legislation:** Codul de Procedură Fiscală, Art. 181-186
-
-| Offence | Penalty |
-|---------|---------|
-| Late filing of Declarația Unică | RON 500 -- RON 5,500 for individuals |
-| Late payment interest | 0.02% per day of delay |
-| Late payment penalties | 0.01% per day of delay (cumulative with interest) |
-| Failure to declare income | Up to RON 27,500 + potential criminal liability |
-| Tax evasion | Criminal penalties under Legea 241/2005 |
+### 6.4 Minimum wage increase impact
+*Why:* CAS/CASS thresholds tied to minimum wage. *Default:* Use RON 4,050 (2025). *Question:* "Confirm current minimum wage if mid-year change occurred."
 
 ---
 
-## Step 8: Edge Case Registry
+## Section 7 -- Excel working paper template
 
-### EC1 -- PFA net income falls between CAS thresholds [T1]
-**Situation:** PFA earns RON 60,000 net income (above 12x but below 24x minimum wage).
-**Resolution:** CAS = 25% x RON 48,600 = RON 12,150 (fixed at the 12x tier). CASS = 10% x RON 48,600 = RON 4,860 (at the 12x tier). Income tax = 10% x RON 60,000 = RON 6,000. Total = RON 23,010.
+### Sheet "Transactions"
+Columns: Date, Counterparty, Description, Amount (RON), Category (Revenue/Expense/CAS/CASS/EXCLUDE), Deductible amount, Default?, Question, Notes.
 
-### EC2 -- PFA with very low income, CASS still mandatory [T1]
-**Situation:** PFA earns RON 15,000 net income (below 6x minimum wage).
-**Resolution:** CAS is optional (below RON 48,600 threshold). CASS is mandatory at minimum = RON 2,430. Income tax = 10% x RON 15,000 = RON 1,500. Total minimum = RON 3,930 (assuming CAS not elected).
-
-### EC3 -- Norma de venit vs sistem real comparison [T2]
-**Situation:** PFA taxi driver in Bucharest. Norma de venit = RON 30,000. Actual profit = RON 55,000.
-**Resolution:** Under norma: tax = RON 3,000 + CAS on RON 30,000 basis. Under sistem real: tax = RON 5,500 + CAS on RON 55,000 basis. Norma is significantly cheaper. [T2] Flag for reviewer to verify current norma amount for CAEN code and county.
-
-### EC4 -- SRL micro vs PFA comparison [T2]
-**Situation:** IT developer earning RON 300,000/year considering PFA vs SRL micro.
-**Resolution:** PFA: 10% income tax on net profit + CAS (max RON 24,300) + CASS (max RON 9,720). SRL micro (1%): RON 3,000 on revenue + employee salary taxes. But SRL threshold drops to EUR 100,000 in 2026 and software CAEN codes face 3% rate from 2025. [T2] Flag: requires full comparison of PFA vs SRL total cost including dividend extraction.
-
-### EC5 -- Multiple CAEN codes, one has norma [T2]
-**Situation:** PFA registered for CAEN 4711 (retail, norma available) and CAEN 6201 (software, no norma).
-**Resolution:** Norma de venit can be applied only to the activity for which a norma exists. The other activity must use sistem real. [T2] This creates complexity -- flag for reviewer to ensure proper income separation.
-
-### EC6 -- CAS/CASS deductibility timing [T1]
-**Situation:** PFA pays CAS/CASS in March 2025 for tax year 2024 income.
-**Resolution:** CAS/CASS are deductible in the year they are paid, not the year they relate to. The March 2025 payment is deductible from 2025 income (if using sistem real). In the Declarația Unică, the contributions are declared for the income year to which they apply.
-
-### EC7 -- Exceeding micro-enterprise threshold mid-year [T1]
-**Situation:** SRL micro earns EUR 260,000 in first 9 months, exceeding EUR 250,000 threshold.
-**Resolution:** SRL exits micro-enterprise regime and must pay standard 16% corporate income tax (impozit pe profit) from the quarter in which the threshold was exceeded. Cannot re-enter micro regime until revenue falls below threshold for a full year.
-
-### EC8 -- Part-year PFA registration [T1]
-**Situation:** PFA registered in July 2025 (6 months of activity).
-**Resolution:** Income tax applies to actual income earned. CAS threshold is prorated: 6/12 x RON 48,600 = RON 24,300. CASS threshold is prorated: 6/12 x RON 24,300 = RON 12,150. If net income exceeds prorated thresholds, contributions are due.
-
-### EC9 -- PFA with employment income [T1]
-**Situation:** Employee earns RON 80,000 from employment. PFA earns RON 40,000 net from freelance work.
-**Resolution:** Employment income: CAS/CASS withheld by employer. PFA income: separate CAS/CASS calculation based on PFA net income only. Income tax on PFA = 10% x RON 40,000 = RON 4,000. CAS may not be required if PFA income < RON 48,600 (optional). CASS = minimum RON 2,430 (mandatory regardless).
-
-### EC10 -- Minimum wage increase mid-year impact [T2]
-**Situation:** Minimum wage increases from RON 4,050 to a new amount mid-year.
-**Resolution:** CAS/CASS thresholds are generally set based on the minimum wage in force at the time the Declarația Unică is filed. [T2] Flag for reviewer: if minimum wage changes during the tax year, verify which rate applies for threshold calculations.
+### Sheet "Tax Computation"
+Branches by method: sistem real or norma de venit. Includes CAS/CASS tier determination.
 
 ---
 
-## Step 9: Reviewer Escalation Protocol
+## Section 8 -- Bank statement reading guide
 
-When Claude identifies a [T2] situation:
+**CSV formats.** BCR exports use semicolons with DD.MM.YYYY. BRD uses CSV with comma delimiters. Banca Transilvania offers various formats. Common columns: Data (Date), Beneficiar/Ordonator (Counterparty), Suma (Amount), Sold (Balance).
 
-```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified consultant fiscal must confirm before filing.
-```
+**Romanian language variants.** Common: transfer (transfer), depunere (deposit), retragere (withdrawal), comision (commission), dobândă (interest), factură (invoice), plată (payment), chirie (rent).
 
-When Claude identifies a [T3] situation:
+**CAS/CASS payments.** Payments to ANAF labelled "CAS" or "CASS". These are deductible from gross income under sistem real.
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to consultant fiscal. Document gap.
-```
+**Tax payments.** Impozit pe venit payments to ANAF: EXCLUDE (not deductible).
+
+**Foreign currency.** Convert to RON at BNR (National Bank) rate on transaction date.
 
 ---
 
-## Step 10: Test Suite
+## Section 9 -- Onboarding fallback
 
-### Test 1 -- Standard PFA, sistem real, mid-range income
-**Input:** PFA, sistem real, CAEN 6201 (software), gross revenue RON 200,000, deductible expenses RON 70,000 (including CAS/CASS from prior year).
-**Expected output:** Net income = RON 130,000. Income tax = 10% x RON 130,000 = RON 13,000. CAS = 25% x RON 97,200 = RON 24,300 (above 24x threshold). CASS = 10% x RON 48,600 = RON 4,860. Total = RON 42,160.
+### 9.1 Entity type
+*Inference:* PFA from bank account name. *Fallback:* "Are you a PFA, II, IF, or SRL?"
 
-### Test 2 -- PFA using norma de venit
-**Input:** PFA taxi driver, Bucharest, norma de venit = RON 32,000.
-**Expected output:** Income tax = 10% x RON 32,000 = RON 3,200. CAS = optional (RON 32,000 < RON 48,600). CASS = 10% x RON 24,300 = RON 2,430 (minimum mandatory). Total (no CAS) = RON 5,630.
+### 9.2 Income method
+*Inference:* Not inferable. Always ask. *Fallback:* "Sistem real or norma de venit?"
 
-### Test 3 -- Low-income PFA, mandatory CASS
-**Input:** PFA, sistem real, net income RON 18,000.
-**Expected output:** Income tax = RON 1,800. CAS = optional (below RON 48,600). CASS = RON 2,430 (mandatory minimum at 6x tier). Total (no CAS) = RON 4,230.
+### 9.3 CAEN code
+*Inference:* From counterparty mix. *Fallback:* "What is your CAEN activity code?"
 
-### Test 4 -- High-income PFA, all caps hit
-**Input:** PFA, sistem real, net income RON 500,000.
-**Expected output:** Income tax = RON 50,000. CAS = RON 24,300 (capped at 24x). CASS = RON 9,720 (capped at 24x). Total = RON 84,020. Effective rate = 16.8%.
+### 9.4 County (județ)
+*Inference:* From bank branch or address. *Fallback:* "Which county (județ) are you registered in? (Affects norma de venit.)"
 
-### Test 5 -- SRL micro-enterprise vs PFA comparison
-**Input:** Revenue RON 240,000, expenses RON 100,000, 1 employee.
-**Expected output:** PFA sistem real: net = RON 140,000. Tax = RON 14,000. CAS = RON 24,300. CASS = RON 4,860. PFA total = RON 43,160. SRL micro (1%): tax = RON 2,400. Plus employee salary costs and 8% dividend tax on extraction. Flag: SRL micro appears cheaper but must account for dividend extraction tax and employee costs.
+### 9.5 VAT status
+*Inference:* TVA payments in statement. *Fallback:* "Are you TVA registered?"
 
-### Test 6 -- Part-year PFA registration
-**Input:** PFA registered 1 July 2025. Net income for 6 months = RON 30,000.
-**Expected output:** Income tax = RON 3,000. CAS threshold prorated: 6/12 x RON 48,600 = RON 24,300. Net income RON 30,000 > RON 24,300, so CAS = 25% x RON 24,300 = RON 6,075. CASS threshold prorated: 6/12 x RON 24,300 = RON 12,150. Net income > RON 12,150, so CASS = 10% x RON 12,150 = RON 1,215. Total = RON 10,290.
+### 9.6 Other income
+*Inference:* Salary credits. *Fallback:* "Do you have employment income? (Affects CAS/CASS.)"
 
 ---
 
-## PROHIBITIONS
+## Section 10 -- Reference material
 
-- NEVER apply progressive tax rates -- Romania uses a flat 10% income tax for PFA
-- NEVER ignore the mandatory CASS minimum -- CASS is due even if income is zero or very low
-- NEVER confuse CAS thresholds with actual income percentages -- CAS is a fixed amount based on tier brackets, not a percentage of actual income
-- NEVER apply norma de venit to a CAEN code or county for which no norma has been published
-- NEVER use micro-enterprise rules for a PFA -- micro-enterprise is for SRL only
-- NEVER advise SRL micro-enterprise for CAEN codes that face the 3% rate without disclosing the rate difference
-- NEVER forget to prorate CAS/CASS thresholds for part-year registrations
-- NEVER advise on crypto, international income, or transfer pricing -- escalate to T3
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their consultant fiscal for confirmation
-- NEVER assume the micro-enterprise EUR 250,000 threshold is stable -- it drops to EUR 100,000 in 2026
+### Test suite
 
----
+**Test 1 -- Sistem real, mid-range.** Revenue RON 200,000, expenses RON 70,000. Tax RON 13,000 + CAS RON 24,300 + CASS RON 4,860 = RON 42,160.
+**Test 2 -- Norma de venit taxi.** Norma RON 32,000. Tax RON 3,200 + CASS RON 2,430 = RON 5,630.
+**Test 3 -- Low income, mandatory CASS.** RON 18,000 net. Tax RON 1,800 + CASS RON 2,430 = RON 4,230.
+**Test 4 -- High income, all caps.** RON 500,000 net. Tax RON 50,000 + CAS RON 24,300 + CASS RON 9,720 = RON 84,020.
+**Test 5 -- Part-year.** 6 months, RON 30,000. Tax RON 3,000 + prorated CAS/CASS.
 
-## Disclaimer
+### Edge case registry
+
+**EC1 -- CAS between thresholds.** Fixed at tier amount, not percentage of actual income.
+**EC2 -- Low income, CASS still mandatory.** Minimum RON 2,430 even if income is zero.
+**EC3 -- Norma vs sistem real.** Compare both.
+**EC4 -- SRL micro vs PFA.** Include dividend extraction cost.
+**EC5 -- Multiple CAEN codes.** Separate norma and sistem real activities.
+**EC6 -- CAS/CASS deductibility timing.** Deductible in year paid.
+**EC7 -- Micro threshold exceeded.** Exit to impozit pe profit.
+**EC8 -- Part-year proration.** CAS/CASS thresholds prorated.
+**EC9 -- PFA with employment.** Separate CAS/CASS calculations.
+**EC10 -- Minimum wage change.** Verify threshold basis.
+
+### Prohibitions
+
+- NEVER apply progressive rates -- Romania uses flat 10%
+- NEVER ignore mandatory CASS minimum
+- NEVER confuse CAS thresholds with percentage of actual income
+- NEVER apply norma to CAEN codes without published norma
+- NEVER use micro-enterprise rules for PFA
+- NEVER forget to prorate for part-year
+- NEVER advise on crypto, international income, or transfer pricing
+- NEVER present calculations as definitive
+- NEVER assume micro EUR 250,000 threshold is stable (drops to EUR 100,000 in 2026)
+
+### Sources
+
+1. Codul Fiscal (Legea 227/2015)
+2. Codul de Procedură Fiscală (Legea 207/2015)
+3. OUG 168/2022
+4. Legea 239/2025
+5. ANAF -- https://www.anaf.ro
+
+### Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an expert contabil or consultant fiscal in Romania) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).

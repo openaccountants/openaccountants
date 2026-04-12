@@ -1,188 +1,327 @@
 ---
 name: malta-income-tax
-description: Use this skill whenever asked about Malta income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay", "TA24", "income tax return", "allowable deductions", "capital allowances", "provisional tax", "TA22 regime", "chargeable income", "tax credits", "self-employed tax Malta", or any question about filing or computing income tax for a self-employed or part-time self-employed client. Also trigger when preparing or reviewing a TA24 or TA22 return, computing deductible expenses, or advising on provisional tax instalments. This skill covers tax rates (single/married/parent), TA24 box structure, allowable deductions, capital allowances, provisional tax, TA22 regime, penalties, and interaction with VAT and SSC. ALWAYS read this skill before touching any income tax work.
+description: >
+  Use this skill whenever asked about Malta income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay", "TA24", "income tax return", "allowable deductions", "capital allowances", "provisional tax", "TA22 regime", "chargeable income", "tax credits", "self-employed tax Malta", or any question about filing or computing income tax for a self-employed or part-time self-employed client. Also trigger when preparing or reviewing a TA24 or TA22 return, computing deductible expenses, or advising on provisional tax instalments. This skill covers tax rates (single/married/parent), TA24 box structure, allowable deductions, capital allowances, provisional tax, TA22 regime, penalties, and interaction with VAT and SSC. ALWAYS read this skill before touching any income tax work.
+version: 2.0
+jurisdiction: MT
+tax_year: 2025
+category: international
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# Malta Income Tax — Self-Employed Skill
+# Malta Income Tax -- Self-Employed Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Malta |
-| Jurisdiction Code | MT |
-| Primary Legislation | Income Tax Act, Chapter 123 |
-| Supporting Legislation | Income Tax Management Act (Chapter 372); ITA Article 4C (TA22); ITA Article 14 (deductions); ITA Article 16 + 6th Schedule (capital allowances); ITMA Articles 44, 51, 52, 52A (penalties) |
-| Tax Authority | Commissioner for Revenue (CFR) / MTCA, Malta |
-| Filing Portal | MTCA e-Services |
+|---|---|
+| Country | Malta (Republic of Malta) |
+| Tax | Income Tax (Einkommensteuer equivalent) |
+| Currency | EUR only |
+| Tax year | Calendar year (1 January -- 31 December) |
+| Primary legislation | Income Tax Act, Chapter 123 |
+| Supporting legislation | Income Tax Management Act (Chapter 372); ITA Article 4C (TA22); ITA Article 14 (deductions); ITA Article 16 + 6th Schedule (capital allowances); ITMA Articles 44, 51, 52, 52A (penalties) |
+| Tax authority | Commissioner for Revenue (CFR) / MTCA, Malta |
+| Filing portal | MTCA e-Services |
+| Filing deadline | 30 June of the following year (TA24 and TA22) |
 | Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-| Validated By | Michael Cutajar |
-| Validation Date | March 2026 |
-| Skill Version | 1.0 |
-| Accora Integration | `generate_provisional_tax_installments()`, `provisional_tax_payments` table, Box 20 SSC deduction in `tax-return-service.ts` |
-| Confidence Coverage | Tier 1: rate table application, box structure, capital allowance rates, provisional tax schedule, TA22 eligibility, penalty rates. Tier 2: mixed-use expense apportionment, home office deductions, motor vehicle business %, first-year provisional tax. Tier 3: group structures, non-resident income, complex capital disposals. |
+| Validated by | Michael Cutajar |
+| Validation date | March 2026 |
+| Skill version | 2.0 |
 
----
+### Tax Rate Brackets (2025/2026)
 
-## Confidence Tier Definitions
+**Single Rates**
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Warranted accountant must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+| Taxable Income (EUR) | Rate | Cumulative Tax at Top |
+|---|---|---|
+| 0 -- 9,100 | 0% | EUR 0 |
+| 9,101 -- 14,500 | 15% | EUR 810 |
+| 14,501 -- 19,500 | 25% | EUR 2,060 |
+| 19,501 -- 60,000 | 25% | EUR 12,185 |
+| 60,001+ | 35% | -- |
 
----
+**Married Rates (joint computation)**
 
-## Step 0: Client Onboarding Questions
+| Taxable Income (EUR) | Rate | Cumulative Tax at Top |
+|---|---|---|
+| 0 -- 12,700 | 0% | EUR 0 |
+| 12,701 -- 21,200 | 15% | EUR 1,275 |
+| 21,201 -- 28,700 | 25% | EUR 3,150 |
+| 28,701 -- 60,000 | 25% | EUR 10,975 |
+| 60,001+ | 35% | -- |
 
-Before computing any income tax figure, you MUST know:
+**Parent Rates (single parent maintaining a child)**
 
-1. **Marital status** [T1] -- single, married, or single parent. Determines which rate table applies.
-2. **Employment status** [T1] -- fully self-employed (TA24) or employed + side income (TA22 eligible)
-3. **Gross self-employment income** [T1] -- total invoiced/received in the year
-4. **VAT registration type** [T1] -- Article 10 or Article 11 (affects how VAT is treated in P&L)
-5. **Business expenses** [T1/T2] -- nature and amount of each expense (T2 for mixed-use items)
-6. **Capital assets acquired in the year** [T1] -- type, cost, date first used in business
-7. **SSC paid in the year** [T1] -- Class 2 amount paid (goes to Box 20)
-8. **Prior year tax liability** [T1] -- for provisional tax calculation. First year = no provisional tax.
-9. **Other income** [T1] -- employment income, rental income, dividends, interest (Box 4)
-
-**If marital status is unknown, STOP. Do not apply a rate table. Marital status is mandatory.**
-
----
-
-## Step 1: Determine Applicable Rate Table [T1]
-
-**Legislation:** Income Tax Act, Chapter 123, Tax Rate Schedule (2026)
-
-### Single Rates
-
-| Taxable Income (EUR) | Rate | Notes |
-|---------------------|------|-------|
-| 0 -- 9,100 | 0% | |
-| 9,101 -- 14,500 | 15% | Cumulative tax at top of band: EUR 810 |
-| 14,501 -- 19,500 | 25% | Cumulative tax at top of band: EUR 2,060 |
-| 19,501 -- 60,000 | 25% | Cumulative tax at top of band: EUR 12,185 |
-| 60,001+ | 35% | |
-
-### Married Rates (joint computation)
-
-| Taxable Income (EUR) | Rate | Notes |
-|---------------------|------|-------|
-| 0 -- 12,700 | 0% | |
-| 12,701 -- 21,200 | 15% | Cumulative tax at top of band: EUR 1,275 |
-| 21,201 -- 28,700 | 25% | Cumulative tax at top of band: EUR 3,150 |
-| 28,701 -- 60,000 | 25% | Cumulative tax at top of band: EUR 10,975 |
-| 60,001+ | 35% | |
-
-### Parent Rates (single parent maintaining a child)
-
-| Taxable Income (EUR) | Rate | Notes |
-|---------------------|------|-------|
-| 0 -- 10,500 | 0% | |
-| 10,501 -- 15,800 | 15% | Cumulative tax at top of band: EUR 795 |
-| 15,801 -- 21,200 | 25% | Cumulative tax at top of band: EUR 2,145 |
-| 21,201 -- 60,000 | 25% | Cumulative tax at top of band: EUR 11,845 |
-| 60,001+ | 35% | |
+| Taxable Income (EUR) | Rate | Cumulative Tax at Top |
+|---|---|---|
+| 0 -- 10,500 | 0% | EUR 0 |
+| 10,501 -- 15,800 | 15% | EUR 795 |
+| 15,801 -- 21,200 | 25% | EUR 2,145 |
+| 21,201 -- 60,000 | 25% | EUR 11,845 |
+| 60,001+ | 35% | -- |
 
 **Note (2026):** The first 0% band was increased by EUR 500 for all categories as part of the 2026 budget measures.
 
 **Malta does not have a separate personal allowance -- the 0% band IS the personal allowance.**
 
+### TA24 Key Boxes
+
+| Box | Description |
+|---|---|
+| Box 1 | Gross income from self-employment |
+| Box 2 | Less: Allowable deductions |
+| Box 3 | Net profit/loss (Box 1 - Box 2) |
+| Box 4 | Other income (employment, rental, dividends, interest) |
+| Box 5 | Total income (Box 3 + Box 4) |
+| Box 15 | Capital allowances (depreciation per 6th Schedule) |
+| Box 20 | SSC Class 2 (amount actually paid in the tax year) |
+| Box 25 | Total deductions (sum of all deduction boxes including Box 15 and Box 20) |
+| Box 30 | Chargeable income (Box 5 - Box 25) |
+| Box 35 | Tax liability (applied from rate table to Box 30) |
+| Box 36 | Less: Provisional tax paid |
+| Box 37 | Less: Tax credits |
+| Box 40 | Tax due / refund (Box 35 - Box 36 - Box 37) |
+
+### Conservative Defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown marital status | STOP -- do not apply a rate table without marital status |
+| Unknown filing status (TA24 vs TA22) | TA24 (full self-employed) |
+| Unknown business-use % (vehicle, phone, home) | 0% deduction |
+| Unknown expense category | Not deductible |
+| Unknown VAT registration type | Article 10 (standard) |
+| Unknown asset useful life | Use 6th Schedule rates |
+| Unknown whether expense is entertainment | Treat as entertainment (blocked) |
+
 ---
 
-## Step 2: TA24 Box Structure [T1]
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-**Legislation:** Income Tax Act Chapter 123; MTCA TA24 form guidance
+### Required Inputs
 
-| Box | Description | How to Populate |
-|-----|-------------|-----------------|
-| Box 1 | Gross income from self-employment | Total invoiced/received in the year |
-| Box 2 | Less: Allowable deductions | Business expenses passing wholly and exclusively test |
-| Box 3 | Net profit/loss | Box 1 minus Box 2 |
-| Box 4 | Other income | Employment, rental, dividends, interest |
-| Box 5 | Total income | Box 3 plus Box 4 |
-| Box 15 | Capital allowances | Depreciation per 6th Schedule rates |
-| Box 20 | SSC Class 2 | Amount actually paid in the tax year |
-| Box 25 | Total deductions | Sum of all deduction boxes including Box 15 and Box 20 |
-| Box 30 | Chargeable income | Box 5 minus Box 25 |
-| Box 35 | Tax liability | Applied from rate table to Box 30 |
-| Box 36 | Less: Provisional tax paid | Sum of 3 instalments paid during year |
-| Box 37 | Less: Tax credits | Personal reliefs, green credits, disability credits |
-| Box 40 | Tax due / refund | Box 35 minus Box 36 minus Box 37 |
+**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of marital status (single/married/parent) and employment status (fully self-employed TA24 or part-time TA22).
 
-**NEVER compute Box 35 using Claude -- pass chargeable income to the deterministic engine to apply the rate table.**
+**Recommended** -- all sales invoices, purchase invoices/receipts, SSC Class 2 payment records, prior year TA24 or tax assessment, VAT registration type (Article 10 or Article 11).
+
+**Ideal** -- complete income and expenditure account, asset register with capital allowances schedule, provisional tax payment confirmations, employment income details (if TA22).
+
+**Refusal if minimum is missing -- SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This TA24 was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid documentation and that the wholly-and-exclusively test is met."
+
+### Refusal Catalogue
+
+**R-MT-1 -- Marital status unknown.** "Marital status determines the applicable rate table. This skill cannot compute tax without knowing whether the client is single, married, or a single parent. Please confirm before proceeding."
+
+**R-MT-2 -- Group structures or partnerships.** "This skill covers sole proprietors and part-time self-employed individuals only. Group structures, partnerships, and companies file separate returns. Escalate to a warranted accountant."
+
+**R-MT-3 -- Non-resident income.** "Non-resident and dual-resident taxation has different rules. Out of scope. Escalate to a warranted accountant."
+
+**R-MT-4 -- Capital gains / property disposals.** "Capital gains computations under Article 5A or property transfers require specialised analysis. Escalate to a warranted accountant."
+
+**R-MT-5 -- Arrears / enforcement.** "Client has outstanding tax arrears or is subject to MTCA enforcement action. The 1.6%/month combined late payment charges are severe and uncapped. Do not advise. Escalate to a warranted accountant immediately."
+
+**R-MT-6 -- VAT return requested.** "This skill covers income tax (TA24/TA22) only. For Malta VAT (VAT3), use the malta-vat-return skill."
 
 ---
 
-## Step 3: Allowable Deductions -- The Wholly and Exclusively Test [T1/T2]
+## Section 3 -- Transaction Pattern Library
+
+This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
+
+**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
+
+### 3.1 Income Patterns (Credits on Bank Statement)
+
+| Pattern | TA24 Line | Treatment | Notes |
+|---|---|---|---|
+| Client name + TRANSFER, DEPOSIT, PAYMENT RECEIVED | Box 1 (gross revenue) | Business income | If Article 10 VAT-registered, extract net (excl. 18% VAT) |
+| HONORARJU, FEES, PROFESSIONAL FEES, CONSULTANCY | Box 1 | Business income | Professional fees -- typical for self-employed |
+| STRIPE PAYOUT, STRIPE TRANSFER | Box 1 | Business income | Platform payout -- match to underlying invoices |
+| PAYPAL PAYOUT, PAYPAL TRANSFER | Box 1 | Business income | Platform payout -- verify against invoices |
+| WISE PAYOUT, WISE TRANSFER | Box 1 | Business income | International platform payout |
+| REVOLUT PAYOUT | Box 1 | Business income | Check if business or personal Revolut |
+| UPWORK, FIVERR, TOPTAL | Box 1 | Business income | Freelance platform -- net of platform commission |
+| PAGA, SALARY, STIPENDJU, EMPLOYER [name] | Box 4 (other income) | Employment income | NOT self-employment -- goes to Box 4 |
+| KIRI, RENT RECEIVED | Box 4 | Rental income | Not self-employment income |
+| INTERESSI, INTEREST RECEIVED | Box 4 | Investment income | Interest income |
+| DIVIDENDI, DIVIDEND | Box 4 | Investment income | Dividend income |
+| CFR REFUND, TAX REFUND, RISTORN | EXCLUDE | Not income | Tax refund from prior year |
+| BONUS GVERN, GOVERNMENT GRANT, MALTA ENTERPRISE | EXCLUDE unless revenue grant | Check nature | Capital grants EXCLUDE; revenue grants = Box 1 |
+
+### 3.2 Expense Patterns (Debits on Bank Statement) -- Fully Deductible (Box 2)
+
+| Pattern | Category | Treatment | Notes |
+|---|---|---|---|
+| KIRI UFFICCJU, OFFICE RENT, RENT [commercial address] | Office rent | Box 2 -- fully deductible | Dedicated business premises |
+| PROFESSIONAL INDEMNITY, PI INSURANCE | Professional insurance | Box 2 -- fully deductible | |
+| ACCOUNTANT, AUDITOR, BOOKKEEP, CPA, ACCA FEES | Accountancy fees | Box 2 -- fully deductible | |
+| AVUKAT, LAWYER, LEGAL, NOTARY (business) | Legal fees | Box 2 -- fully deductible | Must be business-related |
+| STATIONERY, OFFICE SUPPLIES, VIKING | Office supplies | Box 2 -- fully deductible | |
+| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing/advertising | Box 2 -- fully deductible | |
+| TRAINING, CPD, COURSE, SEMINAR, CONFERENCE | Training/CPD | Box 2 -- fully deductible | Must relate to current business |
+| MIA, ACCA SUBSCRIPTION, PROFESSIONAL BODY | Professional subscriptions | Box 2 -- fully deductible | |
+| BOV CHARGE, HSBC CHARGE, BANK FEE, MAINTENANCE FEE | Bank charges | Box 2 -- fully deductible | Business account only |
+| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | Box 2 -- fully deductible | |
+| POSTAGE, MALTAPOST (business) | Postage | Box 2 -- fully deductible | Business correspondence |
+| DOMAIN, HOSTING, CLOUDFLARE, AWS, DIGITALOCEAN | IT infrastructure | Box 2 -- fully deductible | Under EUR 1,160 = expense; over = capital |
+
+### 3.3 Expense Patterns (Debits) -- SaaS and Software (Box 2 if under EUR 1,160)
+
+| Pattern | Category | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Box 2 -- fully deductible | Recurring subscription = operating expense |
+| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Box 2 -- fully deductible | |
+| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Box 2 -- fully deductible | |
+| SOFTWARE LICENCE (perpetual, over EUR 1,160) | Capital item | Box 15 -- capitalise at 25%/year | Perpetual licence above threshold |
+
+### 3.4 Expense Patterns (Debits) -- Utilities (Box 2, may need apportionment)
+
+| Pattern | Category | Tier | Notes |
+|---|---|---|---|
+| ARMS, ARMS LTD, ENEMALTA | Electricity/water | T2 if home office | 100% if dedicated office; proportional if home |
+| MELITA, GO PLC, EPIC | Telecoms/broadband | T2 | Business use portion only; default 0% if mixed |
+| VODAFONE, MOBILE, GO MOBILE | Phone | T2 | Business use portion only |
+
+### 3.5 Expense Patterns (Debits) -- Travel
+
+| Pattern | Category | Treatment | Notes |
+|---|---|---|---|
+| AIR MALTA, RYANAIR, WIZZ AIR, EASYJET | Flights | Box 2 if business travel | Must be wholly business purpose |
+| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Box 2 if business travel | |
+| BOLT, UBER, ECABS, TAXI | Local transport | Box 2 if business purpose | |
+| FUEL, ENEMED, PETROL | Vehicle fuel | T2 -- business % only | Requires mileage log |
+| PARKING, CVA, MCP PARKING | Parking | T2 -- business % only | |
+
+### 3.6 Expense Patterns (Debits) -- NOT Deductible
+
+| Pattern | Category | Treatment | Notes |
+|---|---|---|---|
+| RESTAURANT, DINNER, LUNCH, ENTERTAINMENT, CLIENT MEAL | Entertainment | NOT deductible | Blocked under Article 14 -- no partial deduction |
+| PERSONAL, GROCERIES, SUPERMARKET, LIDL, PAVI | Personal expenses | NOT deductible | Private living costs |
+| FINE, PENALTY, MULTA, PARKING FINE | Fines/penalties | NOT deductible | Public policy |
+| CFR PAYMENT, INCOME TAX, TAX PAYMENT | Tax payments | NOT deductible | Income tax cannot reduce income |
+| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | NOT deductible | Not an expense |
+
+### 3.7 Expense Patterns (Debits) -- Capital Items (Box 15)
+
+| Pattern | Category | Annual Rate | Notes |
+|---|---|---|---|
+| LAPTOP, COMPUTER, MACBOOK, IMAC, DESKTOP | Computer hardware | 25% | Box 15 |
+| PRINTER, SCANNER, COPIER | Office equipment | 20% | Box 15 |
+| FURNITURE, DESK, CHAIR, FILING CABINET | Furniture/fittings | 10% | Box 15 |
+| VEHICLE, CAR (business) | Motor vehicle | 20% | Box 15, business % only |
+| AIR CONDITIONING, AC UNIT | A/C equipment | 20% | Box 15 |
+
+### 3.8 Exclusions (Neither Income nor Expense)
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| INTERNAL TRANSFER, OWN ACCOUNT, BETWEEN ACCOUNTS | EXCLUDE | Own-account transfer |
+| LOAN REPAYMENT, SELF-EMPLOYED LOAN, PERSONAL LOAN | EXCLUDE | Loan principal movement |
+| SSC, CLASS 2, SOCIAL SECURITY | Box 20 (SSC deduction) | Deductible in Box 20, NOT Box 2 |
+| VAT PAYMENT, CFR VAT | EXCLUDE | VAT liability payment, not expense |
+| PROVISIONAL TAX, PT INSTALMENT | Box 36 (provisional tax paid) | Not an expense -- credit against liability |
+
+### 3.9 Maltese Banks -- Statement Format Reference
+
+| Bank | Common Patterns | Notes |
+|---|---|---|
+| BOV (Bank of Valletta) | TRANSFER, DD, SO, CHQ, CHARGES | PDF/CSV; Buchungstag format DD/MM/YYYY |
+| HSBC Malta | PAYMENT, TRF, D/D, FEE | PDF/CSV; counterparty in description field |
+| APS Bank | TRANSFER, DIRECT DEBIT, CHARGE | PDF; less common CSV export |
+| Revolut Business | PAYMENT, TRANSFER, CARD PAYMENT | CSV; clean counterparty names |
+| Wise Business | TRANSFER, CONVERSION, FEE | CSV; multi-currency -- use EUR amounts |
+
+---
+
+## Section 4 -- Worked Examples
+
+### Example 1 -- Client Payment (Article 10, VAT-registered)
+
+**Input line:**
+`15/03/2025 ; BOV TRANSFER IN ; STUDIO KREBS GMBH ; PAYMENT INV-2025-003 ; +1,180.00 ; EUR`
+
+**Reasoning:**
+Client payment for services. Client is Article 10 VAT-registered, so EUR 1,180 includes 18% VAT. Net = EUR 1,000 (Box 1). EUR 180 is VAT collected (excluded from income -- it is a liability to CFR).
+
+**Classification:** Box 1 = EUR 1,000. VAT EUR 180 excluded.
+
+### Example 2 -- SaaS Subscription (Fully Deductible)
+
+**Input line:**
+`01/04/2025 ; HSBC DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR`
+
+**Reasoning:**
+Monthly SaaS subscription. Under EUR 1,160, recurring. Fully deductible as operating expense. For Article 10 clients, the net amount (excl. recoverable VAT) is the expense. If Article 11, gross amount is the cost.
+
+**Classification:** Box 2 = EUR 29.99 (or net if Article 10 with recoverable input VAT).
+
+### Example 3 -- Entertainment (Blocked)
+
+**Input line:**
+`22/04/2025 ; BOV CARD ; WATERBISCUIT RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR`
+
+**Reasoning:**
+Client entertainment. Blocked under Article 14. No partial deduction. No apportionment. Full block. Same as VAT treatment.
+
+**Classification:** NOT deductible. Remove from Box 2 entirely.
+
+### Example 4 -- SSC Class 2 Payment
+
+**Input line:**
+`10/01/2025 ; BOV DD ; CFR SSC CLASS 2 ; Q4 2024 ; -1,090.50 ; EUR`
+
+**Reasoning:**
+SSC Class 2 payment. Deductible, but in Box 20, NOT Box 2. SSC paid in 2025 = deduction in 2025 TA24.
+
+**Classification:** Box 20 = EUR 1,090.50.
+
+### Example 5 -- Laptop Purchase (Capital Item)
+
+**Input line:**
+`03/06/2025 ; HSBC CARD ; APPLE STORE MALTA ; MACBOOK PRO ; -1,899.00 ; EUR`
+
+**Reasoning:**
+Capital asset. Computer hardware depreciated at 25% per year (6th Schedule). EUR 1,899 x 25% = EUR 474.75 per year in Box 15. Do NOT put in Box 2.
+
+**Classification:** Box 15 = EUR 474.75. NOT Box 2.
+
+### Example 6 -- Internal Transfer (Exclude)
+
+**Input line:**
+`15/05/2025 ; BOV TRANSFER ; OWN ACCOUNT - SAVINGS ; ; -2,000.00 ; EUR`
+
+**Reasoning:**
+Transfer between own accounts. Neither income nor expense. Exclude entirely.
+
+**Classification:** EXCLUDE.
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 The Wholly and Exclusively Test
 
 **Legislation:** Income Tax Act, Article 14
 
-### The Test [T1]
-An expense is deductible only if incurred **wholly and exclusively** in the production of income. Mixed-use expenses must be apportioned. The apportionment method must be reasonable and documented.
+An expense is deductible only if incurred wholly and exclusively in the production of income. Mixed-use expenses must be apportioned. The apportionment method must be reasonable and documented.
 
-### Deductible Expenses
+### 5.2 Revenue Recognition
 
-| Expense | Tier | Treatment |
-|---------|------|-----------|
-| Office rent (dedicated) | T1 | Fully deductible |
-| Professional insurance (PI) | T1 | Fully deductible |
-| Accountancy fees | T1 | Fully deductible |
-| Legal fees (business-related) | T1 | Fully deductible |
-| Office supplies / stationery | T1 | Fully deductible |
-| Software subscriptions (under EUR 1,160) | T1 | Fully deductible |
-| Marketing / advertising | T1 | Fully deductible |
-| Bank charges (business account) | T1 | Fully deductible |
-| Training / CPD related to business | T1 | Fully deductible |
-| Trade subscriptions (MIA, ACCA, MIA etc.) | T1 | Fully deductible |
-| Bad debts (genuinely irrecoverable, previously declared as income) | T2 | Flag for reviewer -- confirm write-off criteria met |
-| SSC Class 2 | T1 | Deductible -- Box 20 |
-| Utilities (home office) | T2 | Proportional only -- see home office rules |
-| Phone / mobile | T2 | Business use portion only -- client to confirm % |
-| Motor vehicle expenses | T2 | Business use portion only -- mileage log required |
-| Travel (flights, hotels for business) | T1 | Fully deductible if wholly business purpose |
-| Home office rent / mortgage interest | T2 | Proportional -- see home office rules |
+All business income goes to Box 1. For Article 10 clients, report net of VAT. For Article 11 clients, report gross (no VAT charged). VAT collected on sales is NOT income.
 
-### NOT Deductible [T1]
+### 5.3 Capital vs Revenue
 
-| Expense | Reason |
-|---------|--------|
-| Entertainment (client meals, events) | Blocked under Article 14 -- same block as VAT |
-| Personal living expenses | Not business-related |
-| Fines and penalties | Public policy |
-| Income tax itself | Tax on income cannot be deducted against income |
-| Capital expenditure | Goes through capital allowances (Box 15), not Box 2 |
-| Drawings / personal withdrawals | Not an expense |
-| Personal car insurance (unapportioned) | Personal -- apportion business % only |
+Capital items must go through Box 15 (capital allowances), not Box 2. There is no de minimis threshold -- all business assets are depreciated per the 6th Schedule. The VAT Capital Goods Scheme threshold (EUR 1,160) is a separate system.
 
-### Home Office Rules [T2]
-
-**Legislation:** Income Tax Act, Article 14
-
-- Calculate the proportion of home used for business: dedicated room(s) as percentage of total rooms or floor area
-- Apply that percentage to: rent or mortgage interest, electricity, water, internet, maintenance
-- Must be a dedicated workspace -- a dual-use room (kitchen table, living room) does not qualify
-- Client must document the calculation and retain it for 6 years
-- [T2] Flag for reviewer: confirm room count, floor area basis, and that workspace is genuinely dedicated
-
-### Motor Vehicle Rules [T2]
-
-- Only the business-use percentage of fuel, insurance, maintenance, and depreciation is deductible
-- Client must maintain a mileage log (business trips vs total mileage)
-- [T2] Flag for reviewer: confirm business percentage claimed is reasonable and documented
-
----
-
-## Step 4: Capital Allowances [T1]
-
-**Legislation:** Income Tax Act, Article 16; 6th Schedule
-
-### Depreciation Rates (Straight-Line on Cost)
+### 5.4 Capital Allowance Rates (6th Schedule)
 
 | Asset Type | Annual Rate |
-|-----------|-------------|
+|---|---|
 | Computer hardware | 25% |
 | Computer software | 25% |
 | Motor vehicles | 20% |
@@ -193,258 +332,296 @@ An expense is deductible only if incurred **wholly and exclusively** in the prod
 | Commercial buildings | 2% |
 | Industrial buildings | 2% |
 
-### Rules [T1]
+Depreciation is straight-line on cost. Starts in the year first used in business.
 
-- Depreciation starts in the year the asset is **first used** in the business
-- Calculated on **cost price** -- straight-line, NOT reducing balance
-- Claimed in **Box 15** of the TA24
-- Motor vehicles: only the business-use proportion is claimable [T2]
-- Low-value assets (under approximately EUR 700): some practitioners expense immediately -- [T2] flag for reviewer to confirm treatment
+### 5.5 SSC Class 2 Deduction
 
-### Asset Disposal [T2]
+SSC Class 2 paid during the tax year is deductible in Box 20 of the TA24. It is deducted in the year it is paid (cash basis).
 
-- Sale proceeds minus written-down value = balancing charge (taxable) or balancing allowance (deductible)
-- Flag for reviewer: confirm disposal proceeds and written-down value before computing
+### 5.6 Non-Deductible Expenses
 
-### Capital Allowances vs VAT Capital Goods -- Important Distinction [T1]
+| Expense | Reason |
+|---|---|
+| Entertainment (client meals, events) | Blocked under Article 14 |
+| Personal living expenses | Not business-related |
+| Fines and penalties | Public policy |
+| Income tax itself | Tax on income |
+| Capital expenditure | Goes through Box 15 |
+| Drawings / personal withdrawals | Not an expense |
+| Personal car insurance (unapportioned) | Personal |
 
-| System | Threshold | Purpose |
-|--------|-----------|---------|
-| VAT Capital Goods Scheme | EUR 1,160 gross | Determines VAT Box 30 treatment |
-| Income Tax Capital Allowances | No threshold | ALL business assets depreciated |
+### 5.7 VAT Interaction
 
-A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year) but does NOT go to VAT Box 30 (below EUR 1,160 threshold). These are entirely separate systems.
+| Scenario | Income Tax Treatment |
+|---|---|
+| VAT collected on sales (Article 10) | NOT income -- exclude from Box 1 |
+| Input VAT recovered (Article 10) | NOT an expense -- exclude from Box 2 |
+| Input VAT blocked/non-deductible (Article 10) | IS an expense -- include in Box 2 |
+| Article 11 client -- all VAT paid on purchases | IS an expense -- gross amount is cost |
+| Foreign VAT (non-reclaimable) | IS an expense -- full gross is cost |
 
----
+### 5.8 TA22 Regime (Part-Time Self-Employment)
 
-## Step 5: Provisional Tax [T1]
+**Legislation:** Income Tax Act, Article 4C
+
+| Condition | Requirement |
+|---|---|
+| Employment status | Must be in full-time employment with Class 1 SSC |
+| Net self-employment profit | Must not exceed EUR 12,000 |
+| Tax rate | Flat 10% on net self-employment profit |
+| SSC | No additional Class 2 -- Class 1 covers all |
+
+If net profit exceeds EUR 12,000: first EUR 12,000 at 10% on TA22, excess at progressive rates on TA24.
+
+### 5.9 Provisional Tax
 
 **Legislation:** Income Tax Management Act, Chapter 372
 
-### Instalment Schedule
-
-| Instalment | Percentage of Prior Year Tax | Deadline |
-|-----------|------------------------------|----------|
+| Instalment | % of Prior Year Tax | Deadline |
+|---|---|---|
 | 1st | 20% | 30 April |
 | 2nd | 30% | 31 August |
 | 3rd | 50% | 21 December |
 
-### Rules [T1]
+Always based on prior year's final liability. First year = no provisional tax due.
 
-- Always based on **prior year's final tax liability** -- not current year estimates
-- First year of self-employment: no provisional tax due (no prior year)
-- Second year: based on first year actual tax
-- Provisional tax paid enters Box 36 of the TA24
+### 5.10 Filing Deadline and Penalties
 
-### Reduced Rate (First 3 Years) [T2]
-
-New self-employed persons may benefit from reduced provisional tax in their first 3 years. Conditions apply and availability should be confirmed with MTCA. Flag for reviewer.
-
-**Accora integration:** `generate_provisional_tax_installments()` function, `provisional_tax_payments` table.
-
----
-
-## Step 6: TA22 Regime -- Part-Time Self-Employment [T1]
-
-**Legislation:** Income Tax Act, Article 4C
-
-### Eligibility [T1]
-
-| Condition | Requirement |
-|-----------|-------------|
-| Employment status | Must be in full-time employment with Class 1 SSC being paid |
-| Net self-employment profit | Must not exceed EUR 12,000 |
-| SSC | No additional Class 2 -- Class 1 from employment covers all |
-| VAT | Can be Article 11 if under EUR 35,000 turnover |
-
-### How It Works [T1]
-
-1. Client is full-time employed (Class 1 SSC paid by employer)
-2. Client has side self-employment income
-3. File a TA22 instead of including self-employment income on TA24
-4. Tax on self-employment net profit = flat 10%
-5. No progressive rates applied -- employment income and self-employment income are taxed separately
-
-### TA22 vs TA24 Decision [T1/T2]
-
-- If net self-employment profit is under EUR 12,000 AND client is full-time employed: TA22 is almost always more favourable (flat 10% vs progressive rates)
-- If net profit exceeds EUR 12,000: excess is taxed at normal TA24 progressive rates
-- [T2] Flag for reviewer to confirm TA22 eligibility and whether flat 10% is genuinely more favourable given the client's total income profile
-
----
-
-## Step 7: Interaction with VAT [T1]
-
-**Legislation:** Income Tax Act, Article 14; VAT Act Chapter 406
-
-| Scenario | Income Tax Treatment |
-|----------|---------------------|
-| VAT collected on sales (Article 10) | NOT income -- it is a liability to government. Exclude from Box 1. |
-| Input VAT recovered (Article 10) | NOT an expense -- it is reclaimable. Exclude from Box 2. |
-| Input VAT blocked/non-deductible (Article 10) | IS an expense -- adds to the cost of the purchase. Include in Box 2. |
-| Article 11 client -- all VAT paid on purchases | IS an expense -- cannot reclaim any input VAT. Gross amount is the cost. |
-| Foreign VAT (non-reclaimable) | IS an expense -- full gross including foreign VAT is the cost. |
-
-**Key rule:** For Article 10 clients, only blocked or non-deductible VAT appears in the P&L. Reclaimable VAT is a balance sheet item only. For Article 11 clients, all VAT paid on purchases is a P&L expense.
-
----
-
-## Step 8: Filing Deadlines [T1]
-
-**Legislation:** Income Tax Management Act, Chapter 372
-
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| TA24 (self-employed annual return) | 30 June of following year |
-| TA22 (part-time self-employment) | 30 June of following year |
-| Provisional tax 1st instalment | 30 April |
-| Provisional tax 2nd instalment | 31 August |
-| Provisional tax 3rd instalment | 21 December |
-| Balance of tax due | With the TA24, by 30 June |
-
----
-
-## Step 9: Penalties [T1]
-
-**Legislation:** ITMA Articles 44(1), 44(2A), 51, 52, 52A
-
-| Offence | Penalty |
-|---------|---------|
-| Late filing of TA24 | EUR 50 + EUR 10/month (maximum EUR 500) |
-| Late payment surcharge | 1% per month on unpaid tax -- UNCAPPED |
-| Late payment interest | 0.6% per month -- capped at original tax amount |
+| Item | Detail |
+|---|---|
+| TA24/TA22 filing deadline | 30 June of following year |
+| Late filing | EUR 50 + EUR 10/month (max EUR 500) |
+| Late payment surcharge | 1% per month -- UNCAPPED |
+| Late payment interest | 0.6% per month -- capped at original tax |
 | Combined late payment | 1.6% per month total |
 | Incorrect return | Up to EUR 2,000 |
-| Fraud / evasion | Up to EUR 5,000 + imprisonment |
-| Out-of-court settlement | Available since 2025 under Article 52A |
-
-**WARNING:** The 1%/month late payment surcharge is uncapped and can exceed the original tax owed. Combined with interest: 1.6%/month is severe. Any arrears situation must be escalated to a warranted accountant immediately.
 
 ---
 
-## Step 10: Record Keeping [T1]
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-**Legislation:** Income Tax Act; Income Tax Management Act
+### 6.1 Home Office Deduction
 
-| Requirement | Detail |
-|-------------|--------|
-| Minimum retention period | 6 years from end of the year of assessment |
-| What to keep | All sales invoices, purchase invoices, bank statements, receipts, contracts, asset register |
-| Format | Paper or digital (MTCA accepts digital) |
-| Invoice requirements | Supplier name, VAT number, date, amount, description |
-| Capital asset register | Date acquired, cost, depreciation claimed each year, written-down value |
+**Legislation:** Income Tax Act, Article 14
 
----
+- Calculate proportion of home used for business: dedicated room(s) as percentage of total rooms or floor area
+- Apply that percentage to: rent or mortgage interest, electricity, water, internet, maintenance
+- Must be a dedicated workspace -- a dual-use room (kitchen table, living room) does NOT qualify
+- Client must document the calculation and retain for 6 years
 
-## Step 11: Edge Case Registry
+**Conservative default:** 0% deduction until reviewer confirms room arrangement.
 
-### EC1 -- VAT collected included in income [T1]
-**Situation:** Article 10 client invoices EUR 1,180 (EUR 1,000 net + EUR 180 VAT). Client treats EUR 1,180 as gross income.
-**Resolution:** Box 1 must show EUR 1,000 only. The EUR 180 VAT collected is a liability to CFR, not income. Correct before filing.
+**Flag for reviewer:** Confirm room count, floor area basis, and that workspace is genuinely dedicated.
 
-### EC2 -- Article 11 client expense treatment [T1]
-**Situation:** Article 11 client purchases office supplies for EUR 59 (gross including 18% VAT = EUR 50 net).
-**Resolution:** Full EUR 59 is the deductible expense. Article 11 clients cannot reclaim input VAT, so the gross amount is the cost.
+### 6.2 Motor Vehicle Business Use
 
-### EC3 -- Entertainment expenses [T1]
-**Situation:** Client takes a client to dinner and wants to deduct it.
-**Resolution:** NOT deductible. Entertainment is blocked under Article 14, same as the VAT block. No partial deduction. No apportionment. Full block.
+- Only the business-use percentage of fuel, insurance, maintenance, and depreciation is deductible
+- Client must maintain a mileage log (business trips vs total mileage)
+- Capital allowance on vehicle: 20% straight-line on cost, multiplied by business %
 
-### EC4 -- Motor vehicle, mixed use [T2]
-**Situation:** Client uses their personal car 60% for business, 40% personal. Annual running costs EUR 4,000. Car cost EUR 18,000.
-**Resolution:** Deductible expenses: EUR 4,000 x 60% = EUR 2,400 running costs. Capital allowance: EUR 18,000 x 20% x 60% = EUR 2,160. [T2] Flag for reviewer: confirm business percentage is documented with mileage log and is reasonable.
+**Conservative default:** 0% business use until mileage log provided.
 
-### EC5 -- Capital item expensed directly [T1]
-**Situation:** Client buys a laptop for EUR 1,500 and puts it in Box 2 as an expense.
-**Resolution:** INCORRECT. Capital items must go through capital allowances (Box 15), not Box 2. EUR 1,500 laptop: 25% per year = EUR 375 per year in Box 15. Remove from Box 2.
+**Flag for reviewer:** Confirm business percentage is documented and reasonable.
 
-### EC6 -- First year, no provisional tax [T1]
-**Situation:** Client started self-employment in 2025. Now preparing 2025 TA24 in 2026.
-**Resolution:** No provisional tax was due during 2025 (no prior year). Box 36 = EUR 0. Full tax liability is paid with the return by 30 June 2026. From 2026 onwards provisional tax applies based on 2025 final liability.
+### 6.3 Phone / Internet Mixed Use
 
-### EC7 -- SSC deductibility timing [T1]
-**Situation:** Client paid 2025 SSC quarterly instalments during 2025. Preparing 2025 TA24.
-**Resolution:** SSC paid during 2025 goes in Box 20 of the 2025 TA24. SSC paid = deduction in the same year it is paid.
+- Business use portion only
+- Client must provide reasonable estimate of business vs personal use
 
-### EC8 -- TA22 profit exceeds EUR 12,000 [T1]
-**Situation:** TA22 client earns EUR 15,000 net from side business.
-**Resolution:** First EUR 12,000 taxed at 10% on TA22 = EUR 1,200. Excess EUR 3,000 must be declared on TA24 at progressive rates combined with employment income. [T2] Flag for reviewer to compute the correct split and confirm progressive rate on the excess.
+**Conservative default:** 0% deduction until business percentage confirmed.
 
-### EC9 -- Home office, dual-use room [T2]
-**Situation:** Client works from the kitchen table and wants to deduct 20% of home expenses.
-**Resolution:** NOT deductible. A dual-use room does not qualify. A dedicated room used exclusively for work is required. If client has no dedicated workspace, no home office deduction applies. [T2] Flag for reviewer to confirm workspace arrangement with client.
+### 6.4 Bad Debt Write-Off
 
-### EC10 -- Bad debt write-off [T2]
-**Situation:** Client invoiced EUR 3,000 to a client who has not paid for 18 months and is now insolvent.
-**Resolution:** Deductible as bad debt only if: (1) the income was previously declared (it was in Box 1 in a prior year), (2) all reasonable steps to recover have been taken, and (3) the debt is genuinely irrecoverable. [T2] Flag for reviewer to confirm all three conditions before allowing the deduction.
+- Deductible only if: (1) income was previously declared in Box 1, (2) all reasonable recovery steps taken, (3) debt is genuinely irrecoverable
+- Flag for reviewer to confirm all three conditions
 
-### EC11 -- Software capitalisation vs expensing [T1/T2]
-**Situation:** Client pays EUR 2,400 for a 2-year software licence upfront.
-**Resolution:** If the licence is under EUR 1,160 or is a recurring subscription, expense in Box 2 fully. If it is a capital software purchase over EUR 1,160, capitalise and depreciate at 25% per year. [T2] Flag for reviewer if the nature of the software licence is unclear (perpetual vs subscription).
+### 6.5 Software Capitalisation vs Expensing
+
+- Recurring subscriptions (monthly/annual): expense in Box 2 fully
+- Perpetual licence over EUR 1,160: capitalise at 25%/year in Box 15
+- Flag for reviewer if nature of licence is unclear
+
+### 6.6 Low-Value Asset Treatment
+
+- Some practitioners expense assets under approximately EUR 700 immediately
+- Flag for reviewer to confirm treatment -- strictly, all assets should be depreciated per 6th Schedule
+
+### 6.7 Asset Disposal
+
+- Sale proceeds minus written-down value = balancing charge (taxable) or balancing allowance (deductible)
+- Flag for reviewer to confirm disposal proceeds and written-down value
 
 ---
 
-## Step 12: Reviewer Escalation Protocol
-
-When Claude identifies a [T2] situation:
+## Section 7 -- Excel Working Paper Template
 
 ```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Warranted accountant must confirm before filing.
-```
+MALTA INCOME TAX -- TA24 WORKING PAPER
+Tax Year: 2025
+Client: ___________________________
+Marital Status: Single / Married / Parent
 
-When Claude identifies a [T3] situation:
+A. BOX 1 -- GROSS SELF-EMPLOYMENT INCOME
+  A1. Client payments (net of VAT if Art.10)    ___________
+  A2. Platform payouts (Stripe, PayPal, etc.)   ___________
+  A3. Other business income                      ___________
+  A4. TOTAL Box 1                                ___________
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to warranted accountant. Document gap.
+B. BOX 2 -- ALLOWABLE DEDUCTIONS
+  B1. Office rent                                ___________
+  B2. Professional insurance                     ___________
+  B3. Accountancy / legal fees                   ___________
+  B4. Office supplies / stationery               ___________
+  B5. Software subscriptions                     ___________
+  B6. Marketing / advertising                    ___________
+  B7. Bank charges / payment processing fees     ___________
+  B8. Training / CPD / professional subs         ___________
+  B9. Travel (flights, hotels, transport)        ___________
+  B10. Telecoms (business % of phone/internet)   ___________
+  B11. Home office (% of utilities/rent)         ___________
+  B12. Vehicle expenses (business %)             ___________
+  B13. Other allowable expenses                  ___________
+  B14. TOTAL Box 2                               ___________
+
+C. BOX 3 -- NET PROFIT (A4 - B14)               ___________
+
+D. BOX 4 -- OTHER INCOME
+  D1. Employment income                          ___________
+  D2. Rental income                              ___________
+  D3. Investment income                          ___________
+  D4. TOTAL Box 4                                ___________
+
+E. BOX 5 -- TOTAL INCOME (C + D4)               ___________
+
+F. DEDUCTIONS
+  F1. Box 15 -- Capital allowances               ___________
+  F2. Box 20 -- SSC Class 2                      ___________
+  F3. Box 25 -- Total deductions (F1 + F2)       ___________
+
+G. BOX 30 -- CHARGEABLE INCOME (E - F3)         ___________
+
+H. TAX COMPUTATION (pass to deterministic engine)
+  H1. Box 35 -- Tax liability                    ___________
+  H2. Box 36 -- Provisional tax paid             ___________
+  H3. Box 37 -- Tax credits                      ___________
+  H4. Box 40 -- Tax due / refund                 ___________
+
+REVIEWER FLAGS:
+  [ ] Marital status confirmed?
+  [ ] VAT registration type confirmed (Art.10/11)?
+  [ ] Home office arrangement confirmed?
+  [ ] Vehicle business % confirmed with mileage log?
+  [ ] Phone/internet business % confirmed?
+  [ ] All T2 items flagged for review?
+  [ ] Entertainment expenses excluded?
+  [ ] Capital items in Box 15 (not Box 2)?
+  [ ] SSC in Box 20 (not Box 2)?
 ```
 
 ---
 
-## Step 13: Test Suite
+## Section 8 -- Bank Statement Reading Guide
 
-### Test 1 -- Standard single self-employed, mid-range income
-**Input:** Single, born 1990, gross revenue EUR 45,000, allowable expenses EUR 13,000, capital allowances EUR 375, SSC paid EUR 3,000, provisional tax paid EUR 3,500.
-**Expected output:** Box 3 = EUR 32,000, Box 15 = EUR 375, Box 20 = EUR 3,000, Box 25 = EUR 3,375, Box 30 = EUR 28,625. Tax: EUR 0 + EUR 810 + EUR 1,250 + EUR 2,281 = EUR 4,341. Box 36 = EUR 3,500. Box 40 = EUR 841 due.
+### Maltese Bank Statement Formats
 
-### Test 2 -- Married, higher income, capped at 35%
-**Input:** Married, gross revenue EUR 80,000, allowable expenses EUR 20,000, SSC paid EUR 4,362 (maximum), no provisional tax (first year).
-**Expected output:** Box 3 = EUR 60,000, Box 20 = EUR 4,362, Box 30 = EUR 55,638. Tax: EUR 0 + EUR 1,275 + EUR 3,150 + EUR 6,735 + EUR (55,638-60,000 = negative, cap at 60,000 band) -- chargeable income is EUR 55,638 so stays within 25% band. Total tax = EUR 0 + EUR 1,275 + EUR 1,875 + EUR 6,735 = EUR 9,885. Box 40 = EUR 9,885 due.
+| Bank | Format | Key Fields | Notes |
+|---|---|---|---|
+| BOV (Bank of Valletta) | PDF, CSV | Date, Description, Debit, Credit, Balance | Most common; description contains counterparty + reference |
+| HSBC Malta | PDF, CSV | Value Date, Description, Amount, Balance | Card transactions show merchant name |
+| APS Bank | PDF | Date, Particulars, Withdrawals, Deposits | Less common CSV; shorter descriptions |
+| Revolut Business | CSV | Date, Counterparty, Amount, Currency, Reference | Clean data; multi-currency possible |
+| Wise Business | CSV | Date, Description, Amount, Currency, Running Balance | Multi-currency; conversion fees separate line |
 
-### Test 3 -- TA22 eligible client
-**Input:** Full-time employed, side income net profit EUR 8,000, Class 1 SSC paid through employer.
-**Expected output:** TA22 applies. Tax = EUR 8,000 x 10% = EUR 800. No Class 2 SSC. No provisional tax instalments on side income.
+### Key Maltese Banking Terms
 
-### Test 4 -- Entertainment expense blocked
-**Input:** Client includes EUR 2,000 client entertainment in Box 2.
-**Expected output:** Remove EUR 2,000 from Box 2. Entertainment blocked under Article 14. Not deductible.
+| Term | English | Classification Hint |
+|---|---|---|
+| TRASFERIMENT / TRF | Transfer | Check direction for income/expense |
+| DEBIT DIRETT / DD | Direct debit | Regular expense (utility, subscription) |
+| STANDING ORDER / SO | Standing order | Regular expense (rent, loan) |
+| KARTA / CARD | Card payment | Expense -- check merchant |
+| HLAS / DEPOSIT | Deposit | Potential income |
+| SPEJJEZ / CHARGES | Bank charges | Deductible (Box 2) |
+| INTERESSI | Interest | Interest income (Box 4) or bank charge |
+| SELF-SERVICE / ATM | Cash withdrawal | Ask what cash was spent on |
 
-### Test 5 -- Capital item incorrectly expensed
-**Input:** Laptop EUR 1,500 included in Box 2 as expense.
-**Expected output:** Remove EUR 1,500 from Box 2. Add EUR 375 (25% x EUR 1,500) to Box 15 as capital allowance.
+---
 
-### Test 6 -- Article 11 client, VAT as expense
-**Input:** Article 11 client. Purchase invoice EUR 236 gross (EUR 200 net + EUR 36 VAT).
-**Expected output:** Box 2 deductible expense = EUR 236 (gross). Cannot reclaim VAT. Full gross is the cost.
+## Section 9 -- Onboarding Fallback
 
-### Test 7 -- Provisional tax calculation
-**Input:** 2025 TA24 shows final tax liability EUR 6,000. Client asks for 2026 provisional tax schedule.
-**Expected output:** 1st instalment 30 April 2026 = EUR 1,200 (20%). 2nd instalment 31 August 2026 = EUR 1,800 (30%). 3rd instalment 21 December 2026 = EUR 3,000 (50%).
+If the client provides a bank statement but cannot answer onboarding questions immediately:
 
-### Test 8 -- VAT excluded from income correctly
-**Input:** Article 10 client. Total receipts from clients EUR 53,100 (includes 18% VAT on all sales). Net sales = EUR 45,000.
-**Expected output:** Box 1 = EUR 45,000. EUR 8,100 VAT collected is excluded -- it is a VAT liability, not income.
+1. Classify all transactions using the pattern library (Section 3)
+2. Mark all Tier 2 items as "PENDING -- reviewer must confirm"
+3. Apply conservative defaults (Section 1)
+4. Generate the working paper (Section 7) with clear flags
+5. Present the following questions to the client:
+
+```
+ONBOARDING QUESTIONS -- MALTA INCOME TAX
+1. Marital status: single, married, or single parent?
+2. Employment status: fully self-employed (TA24) or employed + side income (TA22)?
+3. VAT registration: Article 10 or Article 11?
+4. Home office: dedicated room or shared space? If dedicated, what % of floor area?
+5. Vehicle: do you use a car for business? If yes, what % is business use? Do you keep a mileage log?
+6. Phone/internet: what % is business use?
+7. SSC Class 2: total amount paid in the tax year?
+8. Provisional tax: total amount paid in the tax year?
+9. Any other income (employment, rental, dividends, interest)?
+10. Any capital assets purchased during the year?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation References
+
+| Topic | Reference |
+|---|---|
+| Income tax rates | Income Tax Act, Chapter 123, Tax Rate Schedule |
+| Allowable deductions | ITA Article 14 |
+| Capital allowances | ITA Article 16 + 6th Schedule |
+| TA22 part-time regime | ITA Article 4C |
+| Provisional tax | ITMA Chapter 372 |
+| Filing deadlines | ITMA Chapter 372 |
+| Penalties | ITMA Articles 44, 51, 52, 52A |
+| Record keeping | ITA; ITMA (6-year retention) |
+
+### Capital Allowances vs VAT Capital Goods -- Important Distinction
+
+| System | Threshold | Purpose |
+|---|---|---|
+| VAT Capital Goods Scheme | EUR 1,160 gross | Determines VAT Box 30 treatment |
+| Income Tax Capital Allowances | No threshold | ALL business assets depreciated via Box 15 |
+
+A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in Box 15) but does NOT go to VAT Box 30 (below EUR 1,160 threshold). These are entirely separate systems.
+
+### Test Suite
+
+**Test 1 -- Standard single, mid-range income.**
+Input: Single, gross revenue EUR 45,000, allowable expenses EUR 13,000, capital allowances EUR 375, SSC EUR 3,000, provisional tax EUR 3,500.
+Expected: Box 3 = EUR 32,000, Box 15 = EUR 375, Box 20 = EUR 3,000, Box 25 = EUR 3,375, Box 30 = EUR 28,625. Tax = EUR 4,341. Box 40 = EUR 841 due.
+
+**Test 2 -- Married, higher income.**
+Input: Married, gross EUR 80,000, expenses EUR 20,000, SSC EUR 4,362, no provisional tax (first year).
+Expected: Box 3 = EUR 60,000, Box 20 = EUR 4,362, Box 30 = EUR 55,638. Tax = EUR 9,885. Box 40 = EUR 9,885 due.
+
+**Test 3 -- TA22 eligible.**
+Input: Full-time employed, side net profit EUR 8,000, Class 1 SSC through employer.
+Expected: TA22 at 10% = EUR 800. No Class 2 SSC.
+
+**Test 4 -- Entertainment blocked.**
+Input: EUR 2,000 client entertainment in Box 2.
+Expected: Remove from Box 2. Not deductible.
+
+**Test 5 -- Capital item in wrong box.**
+Input: Laptop EUR 1,500 in Box 2.
+Expected: Remove from Box 2. Add EUR 375 (25%) to Box 15.
+
+**Test 6 -- Article 11 VAT as expense.**
+Input: Article 11 client. Invoice EUR 236 gross (EUR 200 + EUR 36 VAT).
+Expected: Box 2 = EUR 236 (full gross). Cannot reclaim VAT.
 
 ---
 
@@ -456,31 +633,10 @@ Action Required: Do not advise. Refer to warranted accountant. Document gap.
 - NEVER allow income tax itself as a deduction
 - NEVER allow fines or penalties as a deduction
 - NEVER include VAT collected on sales in Box 1 for Article 10 clients
-- NEVER allow a capital item to be expensed directly in Box 2 -- it must go through Box 15 capital allowances
+- NEVER allow a capital item in Box 2 -- it must go through Box 15
+- NEVER put SSC in Box 2 -- it goes in Box 20
 - NEVER use current year income for provisional tax -- always prior year final liability
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their accountant for confirmation
-- NEVER advise on arrears situations without escalating to a warranted accountant
-
----
-
-## Contribution Notes (For Non-Malta Jurisdictions)
-
-If adapting this skill for another country:
-
-1. Replace Chapter 123 references with the equivalent national income tax legislation.
-2. Replace the rate tables (single/married/parent) with your jurisdiction's equivalent bands and rates.
-3. Replace the TA24 box structure with your jurisdiction's equivalent self-assessment return form and box numbers.
-4. Replace the "wholly and exclusively" test with your jurisdiction's equivalent deductibility standard.
-5. Replace capital allowance rates (6th Schedule) with your jurisdiction's equivalent depreciation schedule.
-6. Replace provisional tax percentages and deadlines with your jurisdiction's equivalent instalment system.
-7. Replace the TA22 regime with your jurisdiction's equivalent simplified regime for part-time self-employment, if one exists.
-8. Replace filing deadlines (30 June) and penalty rates with your jurisdiction's current figures.
-9. Replace the VAT interaction rules based on your jurisdiction's VAT/GST system.
-10. Have a licensed practitioner in your jurisdiction validate every T1 rule before publishing.
-11. Add jurisdiction-specific edge cases to the Edge Case Registry.
-
-**A skill may not be published without sign-off from a warranted practitioner in the relevant jurisdiction.**
-
+- NEVER present tax calculations as definitive -- always label as estimated
 
 ---
 

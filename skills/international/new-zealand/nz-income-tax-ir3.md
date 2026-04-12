@@ -1,29 +1,49 @@
 ---
 name: nz-income-tax-ir3
 description: >
-  Use this skill whenever asked about New Zealand income tax for self-employed individuals filing an IR3 return. Trigger on phrases like "how much tax do I pay in NZ", "IR3", "income tax return New Zealand", "allowable deductions NZ", "provisional tax NZ", "schedular payments", "independent earner tax credit", "IETC", "ACC levies", "Working for Families", "residual income tax", "self-employed tax NZ", "schedular withholding NZ", or any question about filing or computing income tax for a self-employed individual in New Zealand. This skill covers NZ tax brackets (10.5%–39%), IR3 return structure, allowable deductions, ACC levies, provisional tax, IETC, penalties, and interaction with GST. ALWAYS read this skill before touching any NZ income tax work.
+  Use this skill whenever asked about New Zealand income tax for self-employed individuals filing an IR3 return. Trigger on phrases like "how much tax do I pay in NZ", "IR3", "income tax return New Zealand", "allowable deductions NZ", "provisional tax NZ", "schedular payments", "independent earner tax credit", "IETC", "ACC levies", "Working for Families", "residual income tax", "self-employed tax NZ", "schedular withholding NZ", or any question about filing or computing income tax for a self-employed individual in New Zealand. This skill covers NZ tax brackets (10.5%-39%), IR3 return structure, allowable deductions, ACC levies, provisional tax, IETC, penalties, and interaction with GST. ALWAYS read this skill before touching any NZ income tax work.
 version: 2.0
+jurisdiction: NZ
+tax_year: 2025
+category: international
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# New Zealand Income Tax — Self-Employed IR3 v2.0
+# New Zealand Income Tax -- Self-Employed IR3 v2.0
 
-## Section 1 — Quick Reference
+---
 
-### Income Tax Brackets 2025 (FY ended 31 March 2025)
+## Section 1 -- Quick Reference
+
+| Field | Value |
+|---|---|
+| Country | New Zealand (Aotearoa) |
+| Tax | Income Tax (progressive 10.5%-39%) + ACC Earner Levy |
+| Currency | NZD only |
+| Tax year | 1 April to 31 March (FY 2025 = 1 April 2024 to 31 March 2025) |
+| Primary legislation | Income Tax Act 2007 (NZ) |
+| Supporting legislation | Tax Administration Act 1994; Goods and Services Tax Act 1985 |
+| Tax authority | Inland Revenue (Te Tari Taake) |
+| Filing portal | myIR (myir.ird.govt.nz) |
+| Filing deadline | 7 July (self-filers); 31 March of following year (with tax agent) |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires sign-off by a NZ Chartered Accountant (CA ANZ) |
+| Skill version | 2.0 |
+
+### Income Tax Brackets FY 2025 (1 April 2024 - 31 March 2025) [T1]
 
 | Taxable Income (NZD) | Rate | Tax on Band | Cumulative Tax |
 |---|---|---|---|
-| 0 – 14,000 | 10.5% | 1,470 | 1,470 |
-| 14,001 – 48,000 | 17.5% | 5,950 | 7,420 |
-| 48,001 – 70,000 | 30% | 6,600 | 14,020 |
-| 70,001 – 180,000 | 33% | 36,300 | 50,320 |
+| 0 -- 14,000 | 10.5% | 1,470 | 1,470 |
+| 14,001 -- 48,000 | 17.5% | 5,950 | 7,420 |
+| 48,001 -- 70,000 | 30% | 6,600 | 14,020 |
+| 70,001 -- 180,000 | 33% | 36,300 | 50,320 |
 | Over 180,000 | 39% | on excess | 50,320 + 39% |
 
-**Formula:** Tax = cumulative tax for lower bracket + (income − lower bracket threshold) × marginal rate
+**Formula:** Tax = cumulative tax for lower bracket + (income - lower bracket threshold) x marginal rate
 
-**Tax year:** 1 April to 31 March (FY 2025 = 1 April 2024 to 31 March 2025)
-
-### ACC Levies 2025
+### ACC Levies 2025 [T1]
 
 | Levy | Rate | Base | Cap |
 |---|---|---|---|
@@ -31,11 +51,11 @@ version: 2.0
 | Working safer levy | NZD 0.08 per NZD 100 | Same base | Same cap |
 | Earner levy | ~NZD 1.33 per NZD 100 | Same base | Same cap |
 
-**Total ACC rate ~NZD 2.74 per NZD 100 of liable earnings (varies by industry — confirm ACC invoice).**
+**Total ACC rate ~NZD 2.74 per NZD 100 of liable earnings (varies by industry -- confirm ACC invoice).**
 
-ACC is charged by Accident Compensation Corporation; invoiced separately. Self-employed pay via IR3 (earner levy included with income tax) + separate ACC invoice (work levy).
+ACC earner levy is assessed by IRD alongside income tax. ACC work levy is a separate invoice from ACC and IS a deductible expense.
 
-### Provisional Tax
+### Provisional Tax [T1]
 
 Self-employed taxpayers with Residual Income Tax (RIT) > NZD 5,000 must pay provisional tax.
 
@@ -45,366 +65,289 @@ Self-employed taxpayers with Residual Income Tax (RIT) > NZD 5,000 must pay prov
 | Estimation method | Estimate current-year tax, pay in 3 instalments |
 | Ratio method (GST registered) | Available for GST-registered taxpayers; proportional to GST turnover |
 
-**RIT = Income tax + ACC earner levy − PAYE and withholding tax credits**
+**RIT = Income tax + ACC earner levy - PAYE and withholding tax credits**
 
-Provisional tax dates (most taxpayers, March balance date):
-- 28 August
-- 15 January
-- 7 May
+Provisional tax dates (most taxpayers, March balance date): 28 August, 15 January, 7 May.
 
-### Independent Earner Tax Credit (IETC)
+### Independent Earner Tax Credit (IETC) [T1]
 
 | Income | IETC Amount |
 |---|---|
-| NZD 24,000 – NZD 44,000 | NZD 520/year |
+| NZD 24,000 -- NZD 44,000 | NZD 520/year |
 | Phases out above NZD 44,000 | Reduces by NZD 13/NZD 1 above NZD 44,000 |
 | NZD 48,000+ | NZD 0 |
 
-Conditions: no Working for Families, not receiving NZ Super, income between NZD 24,000–48,000.
+Conditions: no Working for Families, not receiving NZ Super, income between NZD 24,000-48,000.
 
-### Conservative Defaults
+### Conservative Defaults [T1]
 
 | Situation | Default Assumption |
 |---|---|
-| GST-exclusive vs. GST-inclusive unclear | Flag — income tax uses GST-exclusive amounts (for GST-registered) |
-| Mixed personal/business expense | Non-deductible — flag for reviewer |
+| GST-exclusive vs GST-inclusive unclear | Flag -- income tax uses GST-exclusive amounts (for GST-registered) |
+| Mixed personal/business expense | Non-deductible -- flag for reviewer |
 | Home office deduction claimed | Apply only if dedicated workspace; use floor area proportion |
 | Motor vehicle: business % unclear | Use actual logbook records; if no logbook, default 25% business |
 | Schedular payment withholding rate unknown | Apply 20% default (standard schedular rate) |
-| ACC levy amount uncertain | Use ~2.74% of liable earnings; flag — actual invoice may differ |
+| ACC levy amount uncertain | Use ~2.74% of liable earnings; flag -- actual invoice may differ |
 | Provisional tax method not specified | Standard method (105% of prior year) |
 
-### Red Flag Thresholds
+### Red Flag Thresholds [T1]
 
 | Flag | Threshold |
 |---|---|
-| RIT > NZD 5,000 | Provisional tax required — check if paid |
-| Gross income > NZD 60,000 | GST registration mandatory — verify |
-| Motor vehicle expenses > 50% of all expenses | Logbook scrutiny — flag |
+| RIT > NZD 5,000 | Provisional tax required -- check if paid |
+| Gross income > NZD 60,000 | GST registration mandatory -- verify |
+| Motor vehicle expenses > 50% of all expenses | Logbook scrutiny -- flag |
 | Cash income with no trail | Document carefully; Inland Revenue audit risk |
-| Single contractor relationship (regular, directed work) | Possible employment — flag |
+| Single contractor relationship (regular, directed work) | Possible employment -- flag |
 
 ---
 
-## Section 2 — Required Inputs + Refusal Catalogue
+## Section 2 -- Required Inputs and Refusal Catalogue
 
 ### Required Inputs
 
-Before computing New Zealand income tax, collect:
+**Minimum viable:** Bank statement for the full tax year (1 April - 31 March) in CSV, PDF, or pasted text. Confirmation of GST registration status.
 
-1. **Total gross income** — all self-employment receipts, ex-GST (if registered)
-2. **Itemised deductible expenses** — with receipts or bank evidence
-3. **Motor vehicle logbook** — if claiming vehicle expenses (or no logbook: use default)
-4. **Prior-year RIT** — for provisional tax standard method
-5. **Bank statements** — 12 months (1 April–31 March)
-6. **Schedular payment withholding certificates** — if income subject to schedular deductions
-7. **GST return summary** — to cross-check income (if GST registered)
-8. **ACC levy invoice** — actual work levy charged by ACC
-9. **Provisional tax instalments paid** — dates and amounts
-10. **Other income sources** — salary/wages (IR4 employers), rental (Schedule E), interest, dividends
+**Recommended:** All client invoices, schedular payment withholding certificates, motor vehicle logbook (if claiming > 25%), ACC levy invoice, provisional tax payment receipts, prior year IR3.
+
+**Ideal:** Complete accounting records (Xero/MYOB export), GST return summary, depreciation schedule, prior year Notice of Assessment.
 
 ### Refusal Catalogue
 
-| Code | Situation | Action |
-|---|---|---|
-| R-NZ-1 | Income figures include GST but taxpayer is GST-registered | Stop — strip GST from all income and expense figures before computing; mixed amounts distort the computation |
-| R-NZ-2 | Company (Ltd) income mixed with personal IR3 | Stop — company income is not personal income; only dividends/salary from company appear in IR3 |
-| R-NZ-3 | Non-resident with NZ-source income | Flag — non-resident withholding tax (NRWT) and different rate schedule applies |
-| R-NZ-4 | No motor vehicle logbook available but large vehicle claim made | Reject undocumented vehicle claim > 25% default; flag for Inland Revenue |
-| R-NZ-5 | Client relationship appears to be employment (regular hours, tools provided by payer) | Flag — Inland Revenue employment test may apply; do not treat as self-employment without review |
+**R-NZ-1 -- Income figures include GST but taxpayer is GST-registered.** "Stop -- strip GST from all income and expense figures before computing. Mixed amounts distort the computation."
+
+**R-NZ-2 -- Company (Ltd) income mixed with personal IR3.** "Company income is not personal income. Only dividends/salary from the company appear in the IR3. Escalate."
+
+**R-NZ-3 -- Non-resident with NZ-source income.** "Non-resident withholding tax (NRWT) and different rate schedule applies. Escalate."
+
+**R-NZ-4 -- No motor vehicle logbook but large vehicle claim.** "Reject undocumented vehicle claim > 25% default. Flag for Inland Revenue."
+
+**R-NZ-5 -- Client relationship appears to be employment.** "Inland Revenue employment test may apply. Do not treat as self-employment without review."
 
 ---
 
-## Section 3 — Transaction Pattern Library
+## Section 3 -- Transaction Pattern Library
 
-### Income Patterns
+This is the deterministic pre-classifier. When a bank statement line matches a pattern, apply the treatment directly. If no pattern matches, fall through to Tier 1 rules in Section 5.
 
-| # | Narration Pattern | Tax Line | Notes |
+### 3.1 Income Patterns (Credits)
+
+| Pattern | Tax Line | Treatment | Notes |
 |---|---|---|---|
-| I-01 | `PAYMENT FROM [client]` / `TFR FROM [client]` | Self-employment income | Standard bank credit from client |
-| I-02 | `INTERNET TFR` / `ONLINE PAYMENT [client]` | Self-employment income | NZ online transfer from business client |
-| I-03 | `STRIPE PAYOUT` / `STRIPE PAYMENTS` | Self-employment income — gross-up | Stripe NZ payout; gross-up to pre-fee; fee deductible |
-| I-04 | `PAYPAL TRANSFER` / `PAYPAL NZ` | Self-employment income — gross-up | PayPal net; fee deductible |
-| I-05 | `WINDCAVE SETTLEMENT` / `EFTPOS NZ SETTLEMENT` | Self-employment income — gross-up | NZ card payment providers; gross-up |
-| I-06 | `SQUARESPACE PAYMENTS` / `SQUARE NZ` | Self-employment income — gross-up | Square NZ / Squarespace; gross-up |
-| I-07 | `SCHEDULAR PAYMENT` (line annotation) | Schedular income — gross-up | Withholding deducted by payer; gross = net ÷ (1 − WHT rate) |
-| I-08 | `IRD REFUND` / `INLAND REVENUE REFUND` | NOT income — tax refund | Provisional tax refund from Inland Revenue |
-| I-09 | `GST REFUND IRD` | NOT income — GST refund | GST is separate; not income tax income |
-| I-10 | `RENTAL INCOME [property]` | Rental income — Schedule E | Separate from self-employment; different return section |
-| I-11 | `INTEREST PAID` / `BANK INTEREST` | Interest income | Reportable income; usually subject to RWT deduction |
-| I-12 | `DIVIDEND [company]` | Dividend income | Include gross dividend + imputation credits in return |
+| PAYMENT FROM [client] / TFR FROM [client] | Self-employment income | Gross revenue | Standard bank credit from client |
+| INTERNET TFR / ONLINE PAYMENT [client] | Self-employment income | Revenue | NZ online transfer from business client |
+| STRIPE PAYOUT / STRIPE PAYMENTS | Self-employment income -- gross-up | Revenue | Stripe NZ payout; gross-up to pre-fee; fee deductible |
+| PAYPAL TRANSFER / PAYPAL NZ | Self-employment income -- gross-up | Revenue | PayPal net; fee deductible |
+| WINDCAVE SETTLEMENT / EFTPOS NZ SETTLEMENT | Self-employment income -- gross-up | Revenue | NZ card payment providers; gross-up |
+| SQUARESPACE PAYMENTS / SQUARE NZ | Self-employment income -- gross-up | Revenue | Square NZ / Squarespace; gross-up |
+| SCHEDULAR PAYMENT (line annotation) | Schedular income -- gross-up | Revenue | Withholding deducted by payer; gross = net / (1 - WHT rate) |
+| SALARY CREDIT [employer] | Employment income | NOT self-employment income | Separate income category; Form IR4 employer |
+| INTEREST PAID / BANK INTEREST | Interest income | Reportable income | Usually subject to RWT deduction |
+| DIVIDEND [company] | Dividend income | Include gross + imputation credits | Separate income type |
+| IRD REFUND / INLAND REVENUE REFUND | EXCLUDE | Not income | Tax refund |
+| GST REFUND IRD | EXCLUDE | Not income | GST refund -- separate tax |
+| RENTAL INCOME [property] | Rental income -- Schedule E | NOT self-employment income | Different return section |
 
-### Expense Patterns
+### 3.2 Expense Patterns (Debits)
 
-| # | Narration Pattern | Tax Line | Notes |
+| Pattern | Tax Category | Treatment | Notes |
 |---|---|---|---|
-| E-01 | `RENT [office/workspace]` / `COMMERCIAL RENT` | Office rent — 100% deductible | Home office: floor area proportion only |
-| E-02 | `GENESIS ENERGY` / `MERIDIAN ENERGY` / `CONTACT ENERGY` / `MERCURY` | Utilities — business proportion | Home office: floor area %; dedicated office: 100% |
-| E-03 | `SPARK NZ` / `ONE NZ` / `2DEGREES` | Phone/internet — business proportion | Document business % (commonly 50–80%) |
-| E-04 | `ADOBE` / `MICROSOFT 365` / `GOOGLE WORKSPACE` / `XERO` / `MYOB` | Software subscriptions — 100% deductible | Professional software |
-| E-05 | `CHARTERED ACCOUNTANTS` / `ACCOUNTANT` / `TAX AGENT` | Accounting/tax fees — 100% deductible | Tax preparation fees are deductible |
-| E-06 | `INTERISLANDER` / `BLUEBRIDGE` / `AIR NZ` / `JETSTAR` | Travel — 100% deductible (business purpose) | Require purpose note; personal travel = 0% |
-| E-07 | `HILTON` / `IBIS` / `NOVOTEL` / `AIRBNB` | Accommodation — 100% deductible (business travel) | Personal = 0%; require business purpose evidence |
-| E-08 | `Z ENERGY` / `BP NZ` / `MOBIL NZ` / `GULL` | Fuel — deductible (business proportion) | Require logbook or 25% default if no logbook |
-| E-09 | `AA NZ` / `VEHICLE REGISTRATION` / `NZTA` | Vehicle costs — deductible (business %) | Same logbook rule as fuel |
-| E-10 | `ACC LEVY` / `ACC INVOICE` | ACC work levy — 100% deductible | ACC earner levy is embedded in tax computation; work levy paid to ACC is a deductible expense |
-| E-11 | `INLAND REVENUE PROV TAX` / `IRD PROVISIONAL TAX` | Provisional tax — NOT deductible | Tax prepayments are not expenses |
-| E-12 | `GST PAYMENT IRD` | GST payment — NOT deductible | Separate tax; not income tax expense |
-| E-13 | `PROFESSIONAL INDEMNITY INS` / `PUBLIC LIABILITY INS` | Business insurance — 100% deductible | Professional and business policies |
-| E-14 | `LINKEDIN PREMIUM` / `SEEK ADVERTISE` / `TRADEME JOBS` | Business platform subscriptions — 100% deductible | Marketing and recruitment platforms |
-| E-15 | `COURIER POST` / `NZ POST` / `DHL NZ` | Postage/courier — 100% deductible | Business deliveries |
-| E-16 | `BANK FEE` / `ACCOUNT FEE` / `ANZ MONTHLY FEE` | Bank charges — 100% deductible | Business account fees |
-| E-17 | `DEPRECIATION` (journal entry) | Capital allowance — via depreciation schedule | IRD depreciation rates apply; do not expense >NZD 1,000 assets outright |
-| E-18 | `XERO SUBSCRIPTION` / `MYOB SUBSCRIPTION` | Accounting software — 100% deductible | Financial software |
-| E-19 | `TRAINING` / `COURSE` / `CONFERENCE` | Professional development — deductible | Must maintain or improve existing skills; new career = not deductible |
-| E-20 | `SUBCONTRACTOR PAYMENT` / `CONTRACTOR INVOICE` | Subcontract expenses — deductible | Schedular withholding obligation may apply if subcontractor |
-| E-21 | `STRIPE FEES` / `PAYPAL FEES` / `SQUARE FEES` | Payment processing fees — deductible | Deduct the gross-up difference |
-| E-22 | `ENTERTAINMENT` / `MEALS CLIENT` | Entertainment — 50% deductible | Entertainment deduction limitation: 50% of costs for business meals/entertainment |
+| RENT [office/workspace] / COMMERCIAL RENT | Office rent -- 100% deductible | Fully deductible | Home office: floor area proportion only |
+| GENESIS ENERGY / MERIDIAN ENERGY / CONTACT ENERGY / MERCURY | Utilities -- business proportion | Deductible | Home office: floor area %; dedicated office: 100% |
+| SPARK NZ / ONE NZ / 2DEGREES | Phone/internet -- business proportion | Deductible | Document business % (commonly 50-80%) |
+| ADOBE / MICROSOFT 365 / GOOGLE WORKSPACE / XERO / MYOB | Software subscriptions -- 100% deductible | Fully deductible | Professional software |
+| CHARTERED ACCOUNTANTS / ACCOUNTANT / TAX AGENT | Accounting/tax fees -- 100% deductible | Fully deductible | Tax preparation fees are deductible |
+| INTERISLANDER / BLUEBRIDGE / AIR NZ / JETSTAR | Travel -- 100% deductible (business purpose) | Fully deductible | Require purpose note; personal travel = 0% |
+| HILTON / IBIS / NOVOTEL / AIRBNB | Accommodation -- 100% deductible (business travel) | Fully deductible | Personal = 0%; require business purpose |
+| Z ENERGY / BP NZ / MOBIL NZ / GULL | Fuel -- deductible (business proportion) | Business portion | Require logbook or 25% default |
+| AA NZ / VEHICLE REGISTRATION / NZTA | Vehicle costs -- deductible (business %) | Business portion | Same logbook rule as fuel |
+| ACC LEVY / ACC INVOICE | ACC work levy -- 100% deductible | Fully deductible | Work levy paid to ACC is deductible; earner levy is in tax computation |
+| INLAND REVENUE PROV TAX / IRD PROVISIONAL TAX | Provisional tax -- NOT deductible | EXCLUDE | Tax prepayments are not expenses |
+| GST PAYMENT IRD | GST payment -- NOT deductible | EXCLUDE | Separate tax; not income tax expense |
+| PROFESSIONAL INDEMNITY INS / PUBLIC LIABILITY INS | Business insurance -- 100% deductible | Fully deductible | Professional and business policies |
+| LINKEDIN PREMIUM / SEEK ADVERTISE / TRADEME JOBS | Business platform subscriptions | Fully deductible | Marketing and recruitment platforms |
+| COURIER POST / NZ POST / DHL NZ | Postage/courier -- 100% deductible | Fully deductible | Business deliveries |
+| BANK FEE / ACCOUNT FEE / ANZ MONTHLY FEE | Bank charges -- 100% deductible | Fully deductible | Business account fees |
+| XERO SUBSCRIPTION / MYOB SUBSCRIPTION | Accounting software -- 100% deductible | Fully deductible | Financial software |
+| TRAINING / COURSE / CONFERENCE | Professional development -- deductible | Fully deductible | Must maintain/improve existing skills; new career = not deductible |
+| SUBCONTRACTOR PAYMENT / CONTRACTOR INVOICE | Subcontract expenses -- deductible | Fully deductible | Schedular withholding obligation may apply |
+| STRIPE FEES / PAYPAL FEES / SQUARE FEES | Payment processing fees -- deductible | Fully deductible | Deduct the gross-up difference |
+| ENTERTAINMENT / MEALS CLIENT | Entertainment -- 50% deductible | 50% only | Entertainment deduction limitation |
 
 ---
 
-## Section 4 — Worked Examples
+## Section 4 -- Worked Examples
 
-### Example 1 — ANZ NZ (Auckland, IT Consultant)
+### Example 1 -- ANZ NZ (Auckland, IT Consultant)
 
-**Bank:** ANZ Business One CSV export
-**Client:** James Tane, IT consultant, Auckland, GST registered
+**Input line (ANZ Business One CSV):**
+`03/01/2025,,PAYMENT FROM ACME LTD,,11500.00,`
 
-```
-Date,Description,Debit,Credit,Balance
-03/01/2025,,PAYMENT FROM ACME LTD,,11500.00,
-15/01/2025,ANZ MONTHLY FEE,10.00,,
-10/02/2025,,PAYMENT FROM TECHCO NZ,,8050.00,
-28/02/2025,SPARK NZ INVOICE,115.00,,
-15/03/2025,,STRIPE PAYOUT,,2185.00,
-01/04/2025,ADOBE CREATIVE CLOUD,69.00,,
-20/04/2025,,PAYMENT FROM STARTUP LTD,,5750.00,
-15/06/2025,IRD PROVISIONAL TAX,4500.00,,
-10/07/2025,CHARTERED ACCOUNTANTS NZ,920.00,,
-10/10/2025,AIR NZ CHRISTCHURCH,245.00,,
-```
+**Reasoning:**
+Payment from business client. If James is GST-registered, this NZD 11,500 may be GST-inclusive. Ex-GST amount = NZD 11,500 / 1.15 = NZD 10,000. For income tax, use the ex-GST figure.
 
-**Step 1 — Income (ex-GST)**
+**Classification:** Self-employment income NZD 10,000 (ex-GST if registered).
 
-| Narration | Pattern | Amount (ex-GST) |
-|---|---|---|
-| PAYMENT FROM ACME LTD | I-01 | NZD 10,000 (÷ 1.15 if GST-inclusive) |
-| PAYMENT FROM TECHCO NZ | I-01 | NZD 7,000 |
-| STRIPE PAYOUT | I-03 | NZD 2,185 net → gross ~NZD 2,254 ex-Stripe fees |
-| PAYMENT FROM STARTUP LTD | I-01 | NZD 5,000 |
-| **Total income (ex-GST)** | | **NZD 24,254** |
+### Example 2 -- Westpac NZ (Auckland, Photographer -- Vehicle Claim)
 
-Note: Amounts above show ex-GST (GST registered client invoices + GST, receives + GST, remits to IRD). If not GST registered: face value = income.
+**Input line (Westpac Business Online CSV):**
+`10/08/2025,SHELL SELECT QUEENSTOWN,120.00,,`
 
-**Step 2 — Deductible Expenses**
+**Reasoning:**
+Petrol NZD 120. Emma drives a personal car for client shoots. Business km logged: 8,400/14,000 total = 60% business (logbook maintained for 90+ days). Deductible portion: NZD 120 x 60% = NZD 72. Without logbook, default is 25% = NZD 30.
 
-| Narration | Pattern | Amount | Deductible |
-|---|---|---|---|
-| ANZ MONTHLY FEE | E-16 | NZD 120/yr | NZD 120 |
-| SPARK NZ | E-03 | NZD 1,380/yr | NZD 1,104 (80% business) |
-| ADOBE | E-04 | NZD 828/yr | NZD 828 |
-| CHARTERED ACCOUNTANTS | E-05 | NZD 920 | NZD 920 |
-| AIR NZ | E-06 | NZD 245 | NZD 245 (business trip) |
-| Stripe fees (gross-up) | E-21 | ~NZD 69 | NZD 69 |
-| IRD PROVISIONAL TAX | E-11 | NZD 4,500 | NZD 0 |
-| **Total deductible** | | | **NZD 3,286** |
+**Classification:** Motor vehicle expense NZD 72 (60% business per logbook). If no logbook: NZD 30 (25% default).
 
-**Step 3 — Net Income**
+### Example 3 -- ASB Bank (Christchurch, Plumber -- Schedular Payment)
 
-```
-Total income (ex-GST):   NZD 24,254
-Less expenses:           NZD  3,286
-Net taxable income:      NZD 20,968
-```
+**Input line (ASB Business Edge CSV):**
+`15/03/2025,SCHEDULAR PAYMENT BUILDCO LTD,-,4000.00,`
 
-**Step 4 — Income Tax**
+**Reasoning:**
+Schedular payment received NZD 4,000. Building company withheld 20% tax before paying. Gross income = NZD 4,000 / (1 - 0.20) = NZD 5,000. Withholding tax credit = NZD 1,000. Report NZD 5,000 as gross income and claim NZD 1,000 as withholding credit.
 
-```
-NZD 14,000 × 10.5% = NZD 1,470.00
-NZD 6,968 × 17.5%  = NZD 1,219.40
-Income tax:            NZD 2,689.40
+**Classification:** Self-employment income NZD 5,000 (gross). Withholding credit NZD 1,000.
 
-IETC: income NZD 20,968 (in NZD 24,000–44,000 band): NZD 520
-Net income tax: NZD 2,689.40 − NZD 520 = NZD 2,169.40
-```
+### Example 4 -- BNZ (Wellington, Marketing Consultant)
 
-**Step 5 — ACC Earner Levy**
+**Input line (BNZ Business CSV):**
+`28/02/2025,TT,STRIPE PAYOUT,CODE,REF,2185.00,`
 
-```
-NZD 20,968 × 1.33% = NZD 278.87
-```
+**Reasoning:**
+Stripe NZ payout NZD 2,185. Stripe collected approximately NZD 2,254 from clients and deducted ~NZD 69 in fees. Gross revenue = NZD 2,254 (ex-GST if GST-registered). Stripe fee NZD 69 is deductible.
 
-**Step 6 — Residual Income Tax (RIT)**
+**Classification:** Gross revenue NZD 2,254. Stripe fees NZD 69 deductible.
 
-```
-Income tax + ACC earner levy − withholding credits
-= NZD 2,169.40 + NZD 278.87 − NZD 0 = NZD 2,448.27
-RIT < NZD 5,000 → no provisional tax required for next year
-Less provisional tax paid: NZD 4,500 → refund NZD 2,051.73
-```
+### Example 5 -- Kiwibank (Dunedin, Freelance Writer -- Foreign Income)
+
+**Input line (Kiwibank CSV):**
+`20/05/2025,PAYPAL TRANSFER USD,,,1850.00,`
+
+**Reasoning:**
+PayPal payout NZD 1,850 from overseas clients paid in USD. Foreign currency income must be converted to NZD at the Reserve Bank mid-rate on the date of receipt (or annual average rate by agreement). The NZD equivalent at receipt date is the income figure.
+
+**Classification:** Self-employment income NZD 1,850 (converted at receipt-date rate).
+
+### Example 6 -- ANZ (Hamilton, E-commerce Seller -- GST Check)
+
+**Input line (ANZ FastNet Business CSV):**
+`01/09/2025,,WINDCAVE SETTLEMENT,,8500.00,`
+
+**Reasoning:**
+Windcave card payment settlement NZD 8,500. Rachel's annual gross revenue is NZD 95,000 -- above the NZD 60,000 GST registration threshold. She must be GST-registered. All figures must be ex-GST for income tax: NZD 8,500 / 1.15 = NZD 7,391.30.
+
+**Classification:** Revenue NZD 7,391.30 (ex-GST). RED FLAG: verify GST registration.
 
 ---
 
-### Example 2 — BNZ (Wellington, Marketing Consultant)
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
-**Bank:** BNZ Business CSV
-**Client:** Sarah O'Brien, marketing consultant, Wellington
+### 5.1 GST-Registered: Always Use Ex-GST Amounts
 
-Revenue: NZD 85,000 (ex-GST, multiple clients)
-Expenses: Rent (home office 15% floor area × NZD 24,000 rent = NZD 3,600), utilities NZD 600, phone 70% × NZD 1,200 = NZD 840, software NZD 1,500, accounting NZD 1,200, travel NZD 2,000
-Total expenses: NZD 9,740
+For GST-registered taxpayers, all income and expenses in the IR3 must be reported exclusive of GST. Strip 3/23 (for 15% GST) from GST-inclusive amounts. Apply without escalating.
 
-Net income: NZD 85,000 − NZD 9,740 = **NZD 75,260**
+### 5.2 ACC Earner Levy Is Included in Tax Payment
 
-Income tax:
-NZD 14,000 × 10.5% = NZD 1,470
-NZD 34,000 × 17.5% = NZD 5,950
-NZD 22,000 × 30%   = NZD 6,600
-NZD 5,260 × 33%    = NZD 1,735.80
-Total: NZD 15,755.80
-
-IETC: NZD 0 (income > NZD 48,000)
-ACC earner levy: NZD 75,260 × 1.33% = NZD 1,000.96
-RIT: NZD 15,755.80 + NZD 1,000.96 = NZD 16,756.76
-
-RIT > NZD 5,000 — provisional tax required next year (standard: 105% × NZD 16,756.76 = NZD 17,594.60 over 3 instalments).
-
----
-
-### Example 3 — ASB Bank (Christchurch, Tradespeople/Contractor)
-
-**Bank:** ASB Business Edge CSV
-**Client:** Mike Henderson, plumber, Christchurch, schedular payments received
-
-Schedular income: Mike receives schedular payments from building company. Withholding deducted at 20%.
-
-Received (net): NZD 48,000
-Gross income: NZD 48,000 ÷ (1 − 0.20) = NZD 60,000
-Withholding tax credit: NZD 12,000
-
-Net income after expenses (NZD 8,000 tools/equipment/vehicle): NZD 52,000
-
-Income tax: NZD 14,020 (for NZD 48,000) + (NZD 52,000 − NZD 48,000) × 30% = NZD 14,020 + NZD 1,200 = NZD 15,220
-ACC earner levy: NZD 52,000 × 1.33% = NZD 691.60
-RIT = NZD 15,220 + NZD 691.60 − NZD 12,000 = **NZD 3,911.60**
-
-RIT < NZD 5,000 → no provisional tax next year.
-
-Note: ACC work levy (industry rate for plumbers ~NZD 1.53/$100) charged separately by ACC on NZD 52,000 = ~NZD 795.60 deductible expense.
-
----
-
-### Example 4 — Westpac NZ (Auckland, Photographer)
-
-**Bank:** Westpac Business Online CSV
-**Client:** Emma Liu, photographer, Auckland, motor vehicle claim
-
-Motor vehicle: Emma drives her personal car for client shoots. Business km logged: 8,400/14,000 total = 60% business.
-
-Vehicle expenses: fuel NZD 3,200, registration NZD 300, WOF NZD 80, insurance NZD 1,200, depreciation NZD 2,500
-Total vehicle: NZD 7,280 × 60% = NZD 4,368 deductible
-
-Note: Must have maintained logbook for at least 90 consecutive days to establish business %. Log requirement by IRD.
-
-Net income: NZD 62,000 − NZD 12,000 (all expenses incl. NZD 4,368 vehicle) = **NZD 50,000**
-
-Income tax: NZD 14,020 + (NZD 50,000 − NZD 48,000) × 30% = NZD 14,020 + NZD 600 = NZD 14,620
-IETC: NZD 0 (income > NZD 48,000)
-
----
-
-### Example 5 — Kiwibank (Dunedin, Freelance Writer)
-
-**Bank:** Kiwibank CSV
-**Client:** Tom Walker, freelance writer, Dunedin
-
-Revenue: NZD 28,000 (mix of NZ and overseas clients via PayPal)
-PayPal note: overseas clients paid in USD; NZD equivalent at time of receipt = income. Use IRD-accepted rate (Reserve Bank of NZ mid-rate on payment date or average rate method).
-
-Net income: NZD 28,000 − NZD 3,500 (home office, phone, software, accounting) = **NZD 24,500**
-
-Income tax:
-NZD 14,000 × 10.5% = NZD 1,470
-NZD 10,500 × 17.5% = NZD 1,837.50
-Total: NZD 3,307.50
-
-IETC: income NZD 24,500 (in range NZD 24,000–44,000): NZD 520
-Net tax: NZD 3,307.50 − NZD 520 = **NZD 2,787.50**
-
----
-
-### Example 6 — ANZ (Hamilton, E-commerce Seller)
-
-**Bank:** ANZ FastNet Business CSV
-**Client:** Rachel Park, e-commerce seller, Hamilton
-
-Note: If Rachel has a trading company (Ltd), revenue flows through company — IR3 only for salary/dividends. Confirm structure.
-
-Assuming sole trader (no company):
-Gross revenue: NZD 95,000 (Shopify/Windcave settlements)
-
-Check GST: NZD 95,000 > NZD 60,000 threshold → must be GST registered. All figures ex-GST.
-
-COGS (cost of goods sold): NZD 42,000 (purchases)
-Gross margin: NZD 53,000
-Other expenses: NZD 11,000 (postage, packaging, platform fees, accounting)
-Net income: **NZD 42,000**
-
-Income tax: NZD 14,020 + (NZD 42,000 − NZD 48,000... wait: NZD 42,000 < NZD 48,000)
-NZD 14,000 × 10.5% + NZD 28,000 × 17.5% = NZD 1,470 + NZD 4,900 = NZD 6,370
-IETC: NZD 0 (NZD 42,000 > NZD 24,000 but < NZD 44,000): NZD 520
-Net: NZD 6,370 − NZD 520 = **NZD 5,850**
-
-RIT = NZD 5,850 + ACC → likely > NZD 5,000 → provisional tax required.
-
----
-
-## Section 5 — Tier 1 Rules (Apply Directly)
-
-**T1-NZ-1 — GST-registered: always use ex-GST amounts**
-For GST-registered taxpayers, all income and expenses in the IR3 must be reported exclusive of GST. Amounts shown in bank statements may be inclusive of GST. Strip 3/23 (for 15% GST) from GST-inclusive amounts to get ex-GST. Apply without escalating.
-
-**T1-NZ-2 — ACC earner levy is included in income tax payment**
 The ACC earner levy (~1.33% of liable earnings) is assessed by IRD alongside income tax and paid with the IR3 balance. It is NOT a separate payment to ACC. The ACC work levy IS a separate invoice from ACC and IS a deductible expense. Apply this distinction consistently.
 
-**T1-NZ-3 — Entertainment: 50% limitation**
+### 5.3 Entertainment: 50% Limitation
+
 Business meals and entertainment are limited to 50% deductible under the Income Tax Act. Apply 50% to all restaurant, cafe, and entertainment narrations where a business purpose is noted. Social/personal entertainment = 0%.
 
-**T1-NZ-4 — Provisional tax is not a deductible expense**
-Provisional tax instalments paid to IRD (appearing as `IRD PROV TAX` in bank statements) are not deductible business expenses — they are advance payments of income tax. Always exclude them from the expense calculation.
+### 5.4 Provisional Tax Is Not Deductible
 
-**T1-NZ-5 — Motor vehicle logbook required for >25% business use claims**
-Claims above the default 25% business use require a logbook maintained for a minimum of 90 consecutive days at least once every three years. If no logbook is available, cap the business use at 25%. Never claim >25% without logbook evidence.
+Provisional tax instalments paid to IRD are not deductible business expenses. They are advance payments of income tax. Always exclude them from the expense calculation.
 
-**T1-NZ-6 — Schedular payments: always gross up**
-When income was subject to schedular withholding (the payer deducted tax), the gross income = amount received ÷ (1 − withholding rate). The withheld amount is a tax credit against the final liability. Always gross up before entering in the income section.
+### 5.5 Motor Vehicle Logbook Required for > 25% Business Use
 
-**T1-NZ-7 — Foreign currency income: use NZD at date of receipt**
-Income received in foreign currencies must be converted to NZD at the exchange rate on the date of receipt (or annual average rate by agreement). Use Reserve Bank of NZ indicative rates. Do not convert at the year-end rate.
+Claims above the default 25% business use require a logbook maintained for a minimum of 90 consecutive days at least once every three years. If no logbook is available, cap business use at 25%. Never claim > 25% without logbook evidence.
 
----
+### 5.6 Schedular Payments: Always Gross Up
 
-## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
+When income was subject to schedular withholding, gross income = amount received / (1 - withholding rate). The withheld amount is a tax credit. Always gross up before entering in the income section.
 
-| Code | Situation | Escalation Reason | Suggested Treatment |
-|---|---|---|---|
-| T2-NZ-1 | Mixed company/personal income (trading company + sole trader) | Company income not reportable in IR3; only salary/dividends from company | Flag — clarify business structure |
-| T2-NZ-2 | Rental property income | Separate schedule in IR3; different deductibility rules (interest deductibility limited post-Brightline reform) | Flag — ring-fence rental losses may apply |
-| T2-NZ-3 | Brightline property sale | 10-year Brightline test: gains on residential property sold within 10 years are taxable | Flag — complex rules; confirm purchase and sale dates |
-| T2-NZ-4 | Working for Families Tax Credits | IETC cannot be claimed alongside WFF; complex abatement on WFF | Flag — confirm eligibility before applying either IETC or WFF |
-| T2-NZ-5 | Non-resident earning NZ-source income | Non-resident withholding tax (NRWT) applies; different rates | Flag — do not apply resident rates |
-| T2-NZ-6 | Imputation credits on dividends | Dividends gross + imputation credits both reportable; imputation credit is a tax credit | Flag — require dividend statement from company |
-| T2-NZ-7 | Losses in prior years (tax loss carry-forward) | NZ allows carrying forward business losses | Flag — prior-year losses reduce current taxable income if criteria met |
+### 5.7 Foreign Currency Income: Use NZD at Date of Receipt
 
----
+Income received in foreign currencies must be converted to NZD at the exchange rate on the date of receipt (or annual average rate by agreement). Use Reserve Bank of NZ indicative rates. Do not convert at year-end rate.
 
-## Section 7 — Excel Working Paper Template
+### 5.8 Tax Computation Flow
 
 ```
-NEW ZEALAND INCOME TAX WORKING PAPER (IR3 — SELF-EMPLOYED)
-Taxpayer: _______________  IRD Number: _______________  FY: 1 April 2024 – 31 March 2025
+Gross self-employment receipts (ex-GST if registered)
+Less: Allowable business expenses
+= Net taxable income
+Apply bracket rates
+Less: IETC (if income NZD 24,000-48,000)
+= Net income tax
+Plus: ACC earner levy (~1.33% of liable earnings)
+= Total tax
+Less: Schedular withholding credits
+Less: Provisional tax paid
+= Residual Income Tax (RIT) / refund
+```
 
-SECTION A — SELF-EMPLOYMENT INCOME (ex-GST)
+### 5.9 Filing Deadlines
+
+| Item | Deadline |
+|---|---|
+| IR3 due (self-filers) | 7 July of following year |
+| IR3 due (with tax agent) | 31 March of second following year |
+| Terminal tax | 7 February of following year |
+| Provisional tax (March balance date) | 28 August, 15 January, 7 May |
+
+### 5.10 Penalties
+
+| Offence | Penalty |
+|---|---|
+| Late filing | NZD 50/month up to NZD 300 |
+| Late payment | 1% initial + 4% incremental (after 7 days) + 1.5%/month ongoing |
+| Shortfall penalties (not taking reasonable care) | 20% of shortfall |
+| Shortfall (unacceptable interpretation) | 20% |
+| Shortfall (gross carelessness) | 40% |
+| Shortfall (evasion) | 150% |
+
+---
+
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
+
+### 6.1 Mixed Company/Personal Income
+
+Company income not reportable in IR3; only salary/dividends from the company appear. Clarify business structure before proceeding.
+
+### 6.2 Rental Property Income
+
+Separate schedule in IR3. Different deductibility rules -- interest deductibility limited post-Brightline reform. Ring-fenced rental losses may apply.
+
+### 6.3 Brightline Property Sale
+
+10-year Brightline test: gains on residential property sold within 10 years are taxable. Complex rules; confirm purchase and sale dates.
+
+### 6.4 Working for Families Tax Credits
+
+IETC cannot be claimed alongside WFF. Complex abatement on WFF. Confirm eligibility before applying either IETC or WFF.
+
+### 6.5 Non-Resident NZ-Source Income
+
+Non-resident withholding tax (NRWT) applies with different rates. Do not apply resident rates.
+
+### 6.6 Imputation Credits on Dividends
+
+Dividends gross + imputation credits both reportable. Imputation credit is a tax credit. Require dividend statement from company.
+
+### 6.7 Losses in Prior Years
+
+NZ allows carrying forward business losses. Prior-year losses reduce current taxable income if criteria met. Confirm with prior year return.
+
+---
+
+## Section 7 -- Excel Working Paper Template
+
+```
+NEW ZEALAND INCOME TAX WORKING PAPER (IR3 -- SELF-EMPLOYED)
+Taxpayer: _______________  IRD Number: _______________  FY: 1 April 2024 - 31 March 2025
+
+SECTION A -- SELF-EMPLOYMENT INCOME (ex-GST)
                                         NZD
 Gross self-employment receipts         ___________
 Less: GST component (if incl.)         (___________)
@@ -413,7 +356,7 @@ Schedular income (grossed up)          ___________
 Other business income                  ___________
 TOTAL INCOME                           ___________
 
-SECTION B — DEDUCTIBLE EXPENSES
+SECTION B -- DEDUCTIBLE EXPENSES
 Rent / workspace (business portion)    ___________
 Utilities (business proportion)        ___________
 Phone / internet (business %)          ___________
@@ -429,33 +372,33 @@ Motor vehicle (logbook %)              ___________
 ACC work levy                          ___________
 Depreciation                           ___________
 Subcontractor costs                    ___________
-Other business expenses                ___________
 Payment processor fees                 ___________
+Other business expenses                ___________
 TOTAL DEDUCTIBLE EXPENSES              ___________
 
-SECTION C — NET TAXABLE INCOME
-Total income − Total expenses          ___________
+SECTION C -- NET TAXABLE INCOME
+Total income - Total expenses          ___________
 
-SECTION D — INCOME TAX
+SECTION D -- INCOME TAX
 Tax at bracket rates (see table)       ___________
-Less: IETC (if income NZD 24k–48k)    (___________)
+Less: IETC (if income NZD 24k-48k)    (___________)
 NET INCOME TAX                         ___________
 
-SECTION E — ACC EARNER LEVY
-Net income × 1.33%                     ___________
+SECTION E -- ACC EARNER LEVY
+Net income x 1.33%                     ___________
 
-SECTION F — RIT AND PROVISIONAL TAX
-Income tax + ACC − withholding credits ___________
+SECTION F -- RIT AND PROVISIONAL TAX
+Income tax + ACC - withholding credits ___________
 Less: provisional tax paid             (___________)
 RIT BALANCE DUE / (REFUND)             ___________
 Next year provisional (105% of RIT):   ___________
 
-SECTION G — REVIEWER FLAGS
+SECTION G -- REVIEWER FLAGS
 [ ] GST stripped from income/expenses (if GST-registered)?
 [ ] Schedular payments grossed up and withholding credit recorded?
-[ ] Motor vehicle logbook reviewed — business % substantiated?
+[ ] Motor vehicle logbook reviewed -- business % substantiated?
 [ ] Entertainment capped at 50%?
-[ ] Home office — floor area proportion documented?
+[ ] Home office -- floor area proportion documented?
 [ ] ACC work levy invoice included as expense?
 [ ] Provisional tax instalments reconciled against IRD account?
 [ ] Foreign income converted to NZD at receipt-date rate?
@@ -463,85 +406,140 @@ SECTION G — REVIEWER FLAGS
 
 ---
 
-## Section 8 — Bank Statement Reading Guide
+## Section 8 -- Bank Statement Reading Guide
 
-### ANZ New Zealand
-- Export: CSV via ANZ Internet Banking ("Download transactions")
-- Columns: `Date,Description,Debit,Credit,Balance`
-- Date format: DD/MM/YYYY
-- Amount format: no thousands separator, period decimal (e.g., `11500.00`)
-- Credit = positive Credit column; Debit = positive Debit column
+### New Zealand Bank Statement Formats
 
-### BNZ (Bank of New Zealand)
-- Export: CSV from BNZ Online Banking
-- Columns: `Date,Tran Type,Particulars,Code,Reference,Amount,Balance`
-- Positive Amount = credit; negative Amount = debit
-- Particulars/Code/Reference: three-part narration on NZ bank transfers
+| Bank | Format | Key Fields |
+|---|---|---|
+| ANZ NZ | CSV | Date,Description,Debit,Credit,Balance |
+| BNZ (Bank of New Zealand) | CSV | Date,Tran Type,Particulars,Code,Reference,Amount,Balance |
+| ASB Bank | CSV | Date,Unique Id,Tran Type,Cheque Number,Payee,Memo,Amount |
+| Westpac NZ | CSV | Date,Narrative,Debit Amount,Credit Amount,Balance |
+| Kiwibank | CSV | Date,Description,Debit,Credit,Balance |
 
-### ASB Bank
-- Export: CSV from ASB FastNet ("Export")
-- Columns: `Date,Unique Id,Tran Type,Cheque Number,Payee,Memo,Amount`
-- Positive Amount = credit; negative = debit
-- Date: DD/MM/YYYY
+### Key NZ Banking Narrations
 
-### Westpac NZ
-- Export: CSV from Westpac Online ("Download Statement")
-- Columns: `Date,Narrative,Debit Amount,Credit Amount,Balance`
-- Separate debit/credit columns (similar to AU banks)
+| Narration | Meaning | Classification Hint |
+|---|---|---|
+| PAYMENT FROM [name] / TFR FROM [name] | Bank transfer in | Potential business income |
+| INTERNET TFR | Online transfer | Income or expense |
+| D/C (Direct Credit) | Direct credit | Potential income |
+| D/D (Direct Debit) | Direct debit | Recurring expense |
+| ATM WITHDRAWAL | Cash withdrawal | Personal -- investigate |
+| IRD PROV TAX / INLAND REVENUE | Tax payment | Tax prepayment -- exclude |
+| GST PAYMENT | GST remittance | Separate tax -- exclude |
+| INTEREST | Bank interest | Other income |
+| ACC LEVY | ACC payment | Work levy deductible; earner levy in tax |
 
-### Kiwibank
-- Export: CSV from Kiwibank Online ("Download")
-- Columns: `Date,Description,Debit,Credit,Balance`
-- Standard NZ format; date DD/MM/YYYY
+### NZ Three-Part Narration (Particulars/Code/Reference)
 
-### ASB / BNZ three-part narration (Particulars/Code/Reference)
 NZ bank-to-bank transfers allow three fields the sender fills in:
 - **Particulars:** Usually the payer's name or invoice reference
 - **Code:** Account code or project reference
 - **Reference:** Invoice number, date, or other identifier
+
 Combine all three to identify transaction source.
 
----
+### Amount Format Notes
 
-## Section 9 — Onboarding Fallback
-
-**GST registration unclear:**
-> "To correctly prepare your IR3, I need to know whether you are GST-registered. If your gross annual income from self-employment exceeds NZD 60,000, GST registration is compulsory. If you are registered, your income and expenses are reported exclusive of GST. If you are unsure, check your IRD myIR account or GST registration certificate."
-
-**Motor vehicle logbook missing:**
-> "You've claimed vehicle expenses. To support a business use percentage above 25%, IRD requires a logbook maintained for at least 90 consecutive days showing each trip, distance, and business purpose. If you don't have a logbook, I'll apply the default 25% business use rate. Would you like to provide the logbook, or shall I proceed with 25%?"
-
-**Provisional tax instalments:**
-> "Do you have records of provisional tax payments made to IRD during the 2025 tax year? These would have been debited from your bank account as 'IRD Provisional Tax' on three dates: 28 August 2024, 15 January 2025, and 7 May 2025. I need these to calculate your final balance owing (or refund) and to determine next year's provisional tax obligation."
-
-**Schedular payment withholding:**
-> "I see payments that may have had tax withheld (schedular payments). Do you have withholding tax certificates from your clients, or a summary from IRD myIR? The gross income and the withheld amount will appear in your myIR account. I need the gross figures to correctly report your income."
+- Date format: DD/MM/YYYY
+- Amount format: no thousands separator, period decimal (e.g., 11500.00)
+- ANZ/Westpac: separate Debit/Credit columns
+- BNZ/ASB: single Amount column (positive = credit, negative = debit)
 
 ---
 
-## Section 10 — Reference Material
+## Section 9 -- Onboarding Fallback
+
+If the client provides a bank statement but cannot answer onboarding questions immediately:
+
+1. Classify all PAYMENT FROM / TFR FROM credits from non-personal sources as potential self-employment income
+2. Apply conservative defaults: non-GST registered (use face value), 25% vehicle default, no IETC
+3. Exclude all IRD PROV TAX and GST PAYMENT debits from expenses
+4. Mark all Stripe/PayPal/Windcave for gross-up
+5. Flag all entertainment at 50% pending confirmation
+6. Generate working paper with PENDING flags
+
+Present these questions:
+
+```
+ONBOARDING QUESTIONS -- NEW ZEALAND INCOME TAX (IR3)
+1. Are you GST-registered? If so, are your bank statement amounts GST-inclusive or exclusive?
+2. Tax year: are we preparing FY ended 31 March 2025?
+3. Do you use a vehicle for work? If so, do you have a logbook (90+ consecutive days)?
+4. Do you work from a dedicated home office? What % of floor area?
+5. Did any clients deduct schedular withholding tax before paying you? At what rate?
+6. Prior year RIT: did you pay provisional tax this year? How much?
+7. Do you receive Working for Families tax credits?
+8. Any income from rental properties?
+9. Did you receive dividends from NZ companies? (Imputation credits)
+10. Any foreign currency income? From which countries?
+```
+
+---
+
+## Section 10 -- Reference Material
 
 ### Key Legislation
-- **Income Tax Act 2007 (NZ)** — primary income tax legislation
-- **Tax Administration Act 1994** — filing, penalties, provisional tax
-- **Goods and Services Tax Act 1985** — GST (separate from income tax)
 
-### Filing Deadlines (FY ended 31 March 2025)
-| Deadline | Event |
+| Topic | Reference |
 |---|---|
-| 7 July 2025 | IR3 due for self-filers (without tax agent) |
-| 31 March 2026 | Extended deadline with registered tax agent |
-| 7 February 2026 | Terminal tax due (for standard March balance date) |
+| Income tax (general) | Income Tax Act 2007 (NZ) |
+| Filing and penalties | Tax Administration Act 1994 |
+| GST (separate) | Goods and Services Tax Act 1985 |
+| Schedular payments | Income Tax Act 2007 Part R |
+| Entertainment limitation | Income Tax Act 2007 subpart DD |
+| Depreciation | Income Tax Act 2007 subpart EE |
+| ACC levies | Accident Compensation Act 2001 |
 
-### Useful Rates 2025
-- Top bracket: 39% (income > NZD 180,000)
-- GST rate: 15%
-- Default schedular payment rate: 20%
-- ACC earner levy ~1.33% (confirm current ACC schedule)
-- Provisional tax: 105% of prior RIT (standard method)
+### Known Gaps / Out of Scope
 
-### Useful References
-- Inland Revenue: ird.govt.nz
-- myIR (secure IRD portal): myir.ird.govt.nz
-- Reserve Bank NZ FX rates: rbnz.govt.nz/statistics/exchange-rates
-- ACC levy rates: acc.co.nz/for-business/self-employed
+- Company (Ltd) income tax
+- Non-resident NZ-source income (NRWT)
+- Brightline property gains (complex)
+- Working for Families calculations
+- GST return computation
+- KiwiSaver employer contribution calculations
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; NZ bank formats (ANZ, BNZ, ASB, Westpac, Kiwibank); transaction pattern library; Windcave/PayNow patterns; worked examples; PROHIBITIONS and disclaimer added |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] GST stripped from all amounts for GST-registered taxpayers?
+- [ ] Schedular payments grossed up (not net bank receipt)?
+- [ ] Motor vehicle claim supported by logbook or capped at 25%?
+- [ ] Entertainment limited to 50%?
+- [ ] ACC earner levy added to tax (not as a separate expense)?
+- [ ] ACC work levy included as deductible expense?
+- [ ] Provisional tax excluded from expenses?
+- [ ] Foreign currency converted at receipt-date rate?
+- [ ] RIT correctly computed (income tax + ACC earner levy - withholding)?
+
+---
+
+## PROHIBITIONS
+
+- NEVER include GST-inclusive amounts in income or expenses for GST-registered taxpayers -- always strip GST first
+- NEVER claim motor vehicle business use above 25% without a qualifying logbook (90+ consecutive days)
+- NEVER allow entertainment deductions above 50% of the cost
+- NEVER include provisional tax or GST payments as deductible business expenses
+- NEVER apply IETC if the taxpayer receives Working for Families tax credits or NZ Super
+- NEVER confuse ACC earner levy (in tax computation) with ACC work levy (deductible expense)
+- NEVER convert foreign currency income at year-end rate -- use receipt-date rate
+- NEVER treat schedular payment net receipts as gross income -- always gross up
+- NEVER apply resident rates to non-residents -- escalate
+- NEVER present tax calculations as definitive -- always label as estimated and direct client to their Chartered Accountant for confirmation
+
+---
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Chartered Accountant CA ANZ, or equivalent licensed practitioner in New Zealand) before filing or acting upon.
+
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

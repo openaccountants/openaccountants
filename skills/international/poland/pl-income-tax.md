@@ -1,483 +1,421 @@
 ---
 name: pl-income-tax
 description: Use this skill whenever asked about Polish income tax (PIT) for self-employed individuals (działalność gospodarcza / JDG). Trigger on phrases like "Polish tax", "PIT-36", "PIT-36L", "skala podatkowa", "ryczałt", "IP Box", "kwota wolna", "ZUS", "składki", "działalność gospodarcza", "self-employed tax Poland", or any question about filing or computing income tax for a Polish self-employed client. Covers skala podatkowa (12%/32%), flat tax (19%), ryczałt, IP Box (5%), kwota wolna, ZUS contributions, deductible expenses, filing deadlines, and penalties. ALWAYS read this skill before touching any Polish income tax work.
+version: 2.0
 ---
 
-# Poland Income Tax (PIT) -- Self-Employed Skill
+# Poland Income Tax (PIT) -- Self-Employed Skill v2.0
 
----
+## Section 1 -- Quick reference
 
-## Skill Metadata
+**Read this whole section before classifying anything.**
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Poland |
-| Jurisdiction Code | PL |
-| Primary Legislation | Ustawa o podatku dochodowym od osob fizycznych (PIT Act, 26 July 1991); Ustawa o zryczaltowanym podatku dochodowym (Ryczałt Act, 20 November 1998) |
-| Supporting Legislation | Ustawa o systemie ubezpieczeń społecznych (Social Insurance Act); Ustawa o świadczeniach opieki zdrowotnej (Health Insurance Act); Ordynacja podatkowa (Tax Ordinance) |
-| Tax Authority | Krajowa Administracja Skarbowa (KAS -- National Revenue Administration) |
-| Filing Portal | e-Urzad Skarbowy (e-US) / podatki.gov.pl |
+|---|---|
+| Country | Poland (Rzeczpospolita Polska) |
+| Tax type | Personal income tax (podatek dochodowy od osob fizycznych -- PIT) |
+| Primary legislation | PIT Act (26 July 1991); Ryczałt Act (20 November 1998) |
+| Supporting legislation | Social Insurance Act; Health Insurance Act; Tax Ordinance (Ordynacja podatkowa) |
+| Tax authority | Krajowa Administracja Skarbowa (KAS -- National Revenue Administration) |
+| Filing portal | e-Urzad Skarbowy (e-US) / podatki.gov.pl |
+| Currency | PLN only |
+| Skala podatkowa | 12% up to PLN 120,000; 32% above; kwota wolna PLN 30,000 |
+| Podatek liniowy (flat tax) | 19% flat; no kwota wolna; no joint filing |
+| Ryczałt rates | 2%--17% depending on activity (PKD code) |
+| IP Box | 5% on qualifying IP income |
+| Filing deadline | 30 April of the following year (all PIT forms) |
+| Monthly advance payments | 20th of the following month |
 | Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a Polish doradca podatkowy or biegły rewident |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: skala podatkowa rates, flat tax rate, ryczałt rates, kwota wolna, filing deadlines. Tier 2: ryczałt rate classification by activity (PKD code), IP Box eligibility, ZUS optimization. Tier 3: international income, CFC rules, transfer pricing, complex structures. |
+| Validated by | Pending -- requires Polish doradca podatkowy or biegły rewident sign-off |
+| Validation date | Pending |
+
+**Taxation form summary:**
+
+| Form | Return | Kwota wolna | Joint filing | Expense deductions |
+|---|---|---|---|---|
+| Skala podatkowa | PIT-36 | Yes (PLN 30,000) | Yes | Yes |
+| Podatek liniowy | PIT-36L | No | No | Yes |
+| Ryczałt | PIT-28 | No | No | No (revenue-based) |
+| IP Box | PIT-36/36L + PIT/IP | Per base form | Per base form | Yes (nexus ratio) |
+
+**Conservative defaults:**
+
+| Ambiguity | Default |
+|---|---|
+| Unknown taxation form | STOP -- must determine before computing |
+| Unknown expense category | Not deductible |
+| Unknown business-use proportion (car, phone) | 0% business use (20% if car not in asset register) |
+| Unknown PKD code for ryczałt | STOP -- rate depends on PKD |
+| Unknown VAT status | Assume non-deductible VAT adds to cost |
+
+**Red flag thresholds:**
+
+| Threshold | Value |
+|---|---|
+| HIGH single-transaction size | PLN 20,000 |
+| HIGH tax-delta on a single conservative default | PLN 2,000 |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net tax position | PLN 50,000 |
 
 ---
 
-## Confidence Tier Definitions
+## Section 2 -- Required inputs and refusal catalogue
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified doradca podatkowy must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
+### Required inputs
 
----
+**Minimum viable** -- bank statement for the tax year in CSV, PDF, or pasted text. Must cover full year. Acceptable from any Polish bank: PKO BP, mBank, ING Bank Śląski, Santander Polska, Bank Pekao, Alior Bank, or fintech (Revolut, Wise).
 
-## Step 0: Client Onboarding Questions
+**Recommended** -- sales invoices (faktury), purchase invoices, chosen taxation form confirmation, PKD code(s), ZUS contribution statements (ZUS DRA).
 
-Before computing any income tax figure, you MUST know:
+**Ideal** -- complete KPiR (tax ledger) or ewidencja przychodów (for ryczałt), środki trwałe register (asset register), prior year PIT return.
 
-1. **Business form** [T1] -- jednoosobowa działalność gospodarcza (JDG / sole proprietorship), freelancer, or other
-2. **Chosen taxation form** [T1] -- skala podatkowa, podatek liniowy (flat tax), ryczałt, or karta podatkowa
-3. **PKD code (activity classification)** [T2] -- determines available taxation forms and ryczałt rate
-4. **Gross business revenue** [T1] -- total invoiced/received in the year
-5. **Business expenses** [T1/T2] -- nature and amount (not relevant for ryczałt, which taxes revenue)
-6. **ZUS contributions paid** [T1] -- social (społeczne) and health (zdrowotne) amounts
-7. **ZUS basis** [T1] -- preferential (ulga na start / preferencyjne), standard, or large ZUS
-8. **Other income** [T1] -- employment, rental, capital gains
-9. **IP income** [T2] -- if claiming IP Box, nature and documentation of qualifying IP
+**Refusal policy if minimum is missing -- SOFT WARN.** No bank statement = hard stop. Bank statement only = proceed with warnings.
 
-**If taxation form is unknown, STOP. The entire computation depends on which form the client has elected.**
+### Refusal catalogue
+
+**R-PL-1 -- Spółka z o.o. (sp. z o.o.) or spółka akcyjna.** *Trigger:* client operates through a limited company. *Message:* "This skill covers JDG (sole proprietorship) only. Sp. z o.o. files CIT-8 under corporate income tax at 9%/19%. Please use a separate skill."
+
+**R-PL-2 -- International income / CFC rules.** *Trigger:* client has controlled foreign company or significant foreign income. *Message:* "International income and CFC rules are outside scope. Consult a doradca podatkowy."
+
+**R-PL-3 -- Transfer pricing.** *Trigger:* related-party transactions. *Message:* "Transfer pricing is outside scope."
+
+**R-PL-4 -- Taxation form unknown.** *Trigger:* client has not confirmed skala/liniowy/ryczałt. *Message:* "I cannot compute tax without knowing your chosen taxation form. Please confirm: skala podatkowa, podatek liniowy, or ryczałt."
 
 ---
 
-## Step 1: Taxation Form Options [T1/T2]
+## Section 3 -- Transaction pattern library (the lookup table)
 
-**Legislation:** PIT Act art. 9a, 27, 30c; Ryczałt Act
+### 3.1 Polish banks (fees and interest)
 
-Polish self-employed individuals must choose one taxation form at the start of the year (or when registering). The choice is binding for the entire tax year.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PKO BP, PKO BANK POLSKI | Bank charges: deductible expense (KPiR) | Monthly service fees |
+| MBANK, MBANK S.A. | Bank charges: deductible expense | Same |
+| ING BANK ŚLĄSKI, ING PL | Bank charges: deductible expense | Same |
+| SANTANDER POLSKA, BZWBK | Bank charges: deductible expense | Same |
+| BANK PEKAO, PEKAO S.A. | Bank charges: deductible expense | Same |
+| ALIOR BANK | Bank charges: deductible expense | Same |
+| REVOLUT, WISE, N26 (fee lines) | Deductible expense | Check for subscription invoices |
+| ODSETKI, INTEREST (credit) | Revenue if business loan interest received; else EXCLUDE | Personal interest = capital income |
+| ODSETKI, INTEREST (debit) | Deductible if business loan interest | Personal: EXCLUDE |
+| KREDYT, POŻYCZKA (principal) | EXCLUDE | Loan principal movement |
 
-### Option A: Skala Podatkowa (Progressive Scale) [T1]
+### 3.2 Polish government and statutory bodies
 
-| Bracket | Rate (2025) | Threshold |
-|---------|-------------|-----------|
-| First bracket | 12% | Income up to PLN 120,000 |
-| Second bracket | 32% | Income above PLN 120,000 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| URZĄD SKARBOWY, US | EXCLUDE | Tax payment -- not deductible |
+| ZUS, ZAKŁAD UBEZPIECZEŃ SPOŁECZNYCH | Social ZUS: deductible from income (or as cost); Health ZUS: depends on form | See Section 5.2 |
+| CEIDG | EXCLUDE | Registration -- government act |
+| GUS | EXCLUDE | Statistical office fees |
+| KRS | Deductible if business registration | Court register fee |
 
-| Item | Amount (2025) |
-|------|---------------|
-| Kwota wolna od podatku (tax-free amount) | PLN 30,000 |
-| Kwota zmniejszająca podatek (tax-reducing amount) | PLN 3,600 (= PLN 30,000 x 12%) |
-| Monthly tax-reducing amount | PLN 300 |
+### 3.3 Polish utilities and telecoms
 
-**Form filed:** PIT-36
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PGE, TAURON, ENEA, ENERGA | Deductible if business premises | Home: apportion business % |
+| PGNiG, INNOGY | Deductible if business premises (gas) | Apportion if home |
+| ORANGE, PLAY, T-MOBILE, PLUS | Deductible: business phone/internet | Mixed-use: apportion |
+| UPC, VECTRA, NETIA | Deductible: business internet | Mixed-use: apportion |
+| MPWIK, WODOCIĄGI | Deductible if business premises (water) | Apportion if home |
 
-**Advantages:** Kwota wolna applies; joint filing with spouse possible; most deductions and credits available (ulgi podatkowe).
+### 3.4 Insurance
 
-### Option B: Podatek Liniowy (Flat Tax) [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PZU, ERGO HESTIA, WARTA, ALLIANZ, AXA | Deductible if business insurance | Personal insurance: NOT deductible from income |
+| UBEZPIECZENIE OC/AC (vehicle) | Deductible: business portion of vehicle insurance | If car not in asset register: 20% of costs |
 
-| Item | Rate / Amount (2025) |
-|------|----------------------|
-| Flat rate | 19% on net income |
-| Kwota wolna | Does NOT apply |
-| Joint filing with spouse | NOT available |
+### 3.5 SaaS and software -- international
 
-**Form filed:** PIT-36L
+| Pattern | Billing entity | Treatment | Notes |
+|---|---|---|---|
+| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | Deductible expense | Reverse charge VAT applies |
+| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | Deductible expense | Same |
+| ADOBE | Adobe Ireland (IE) | Deductible expense | Same |
+| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | Deductible expense (marketing) | Same |
+| GITHUB, OPENAI, ANTHROPIC | US entities | Deductible expense | Non-EU |
+| SLACK, ATLASSIAN, ZOOM | Various IE/NL/US | Deductible expense | Check billing entity |
+| SPOTIFY | Spotify AB (SE) | Deductible expense if business use | EU entity |
 
-**Advantages:** Lower effective rate for high earners (above approximately PLN 120,000 net income). Simpler computation.
+### 3.6 Professional services (Poland)
 
-**Disadvantages:** No kwota wolna (PLN 30,000 tax-free threshold does not apply). Cannot file jointly. Most personal tax credits (ulgi) are not available.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BIURO RACHUNKOWE, KSIĘGOWA, ACCOUNTING | Deductible expense | Bookkeeping fees |
+| KANCELARIA, ADWOKAT, RADCA PRAWNY | Deductible expense | Legal fees if business |
+| NOTARIUSZ | Deductible expense | If business transaction |
+| DORADCA PODATKOWY | Deductible expense | Tax advisory |
 
-### Option C: Ryczałt od przychodów ewidencjonowanych (Lump-Sum Tax on Recorded Revenue) [T1/T2]
+### 3.7 ZUS contributions (special treatment)
 
-| Rate | Applies To (examples) |
-|------|----------------------|
-| 17% | Liberal professions (lawyers, doctors -- individual practice) |
-| 15% | Certain consulting, advertising, IT services |
-| 14% | Healthcare services |
-| 12.5% | Revenue above PLN 100,000 from rental |
-| 12% | IT services (many software development activities under certain PKD codes) |
-| 10% | Property purchase/sale services |
-| 8.5% | Service activities (general); rental income up to PLN 100,000 |
-| 5.5% | Construction, manufacturing |
-| 3% | Trade (retail/wholesale), gastronomy |
-| 2% | Sale of agricultural products |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ZUS SPOŁECZNE (emerytalna, rentowa, chorobowa, wypadkowa) | Deductible from income or as KPiR cost | Both methods allowed |
+| ZUS ZDROWOTNE (health) -- skala podatkowa | NOT deductible | Non-deductible under skala |
+| ZUS ZDROWOTNE (health) -- podatek liniowy | Deductible from income up to annual limit | Check current limit |
+| ZUS ZDROWOTNE (health) -- ryczałt | 50% deductible from revenue | Half deductible |
+| FUNDUSZ PRACY | Deductible | Labour fund contribution |
 
-**Form filed:** PIT-28
+### 3.8 Transport and travel
 
-**Advantages:** Lowest effective rate for many service activities. Simple -- tax on revenue, no need to track expenses.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PKP, PKP INTERCITY | Deductible if business travel (delegacja) | Document purpose |
+| LOT, RYANAIR, WIZZAIR | Deductible if business travel | Document purpose and destination |
+| UBER, BOLT, FREENOW | Deductible if business purpose | Document occasion |
+| ORLEN, BP, SHELL, CIRCLE K (fuel) | Deductible: if car in asset register, 100% business or 75% mixed; if private car, 20% | Requires documentation |
+| PARKING, APCOA, SKYCASH | Deductible if business purpose | Document occasion |
 
-**Disadvantages:** Cannot deduct business expenses (tax is on gross revenue, not net income). Kwota wolna does NOT apply. Limited deductions.
+### 3.9 Office and supplies
 
-**Revenue limit for ryczałt eligibility (2025):** PLN 8,569,200 (EUR 2 million equivalent) in the prior year.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MEDIA EXPERT, RTV EURO AGD, KOMPUTRONIK | Capital if > PLN 10,000; else deductible | Check środki trwałe threshold |
+| IKEA, LEROY MERLIN | Capital or expense depending on amount | Office furniture/equipment |
+| CASTORAMA, OBI | Deductible if business premises repairs | Document purpose |
+| ALLEGRO, AMAZON.PL | Deductible if business purchase | Verify nature of purchase |
 
-**[T2] The correct ryczałt rate depends on the PKD code and specific nature of services. Flag for reviewer to confirm rate classification.**
+### 3.10 Food and entertainment
 
-### Option D: IP Box [T2]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BIEDRONKA, LIDL, ŻABKA, KAUFLAND, AUCHAN | Default: NOT deductible (personal provisioning) | Deductible only if hospitality/catering business |
+| RESTAURANT, RESTAURACJA | Deductible if documented business purpose (representation) | Unlike Sweden, PL allows business meal deduction with documentation |
 
-| Item | Detail |
-|------|--------|
-| Rate | 5% on qualifying IP income |
-| Eligible IP | Patents, copyrights to computer programs, industrial designs, utility models |
-| Requirement | R&D activity must be conducted; qualifying costs tracked; nexus ratio computed |
-| Documentation | Separate IP income ledger (ewidencja) required |
-| Can combine with | Skala podatkowa or podatek liniowy (NOT ryczałt) |
+### 3.11 Rent and property
 
-**Form filed:** PIT-36 or PIT-36L with PIT/IP attachment
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CZYNSZ, WYNAJEM (monthly rent) | Deductible if business premises | Home office: proportional to business area |
+| WSPÓLNOTA MIESZKANIOWA | NOT deductible unless home office proportion | Housing cooperative fees |
 
-**[T2] IP Box requires extensive documentation and nexus ratio computation. Always flag for reviewer. Incorrect application carries significant penalty risk.**
+### 3.12 Internal transfers and exclusions
 
----
-
-## Step 2: ZUS Contributions [T1/T2]
-
-**Legislation:** Social Insurance Act; Health Insurance Act
-
-### Social Contributions (Składki społeczne) [T1]
-
-| Contribution | Rate (2025) |
-|-------------|-------------|
-| Emerytalna (pension) | 19.52% |
-| Rentowa (disability) | 8.00% |
-| Chorobowa (sickness -- voluntary) | 2.45% |
-| Wypadkowa (accident) | 1.67% (standard for JDG) |
-| Fundusz Pracy (labour fund) | 2.45% |
-| Total (with sickness) | ~34.09% of declared base |
-
-### ZUS Bases (2025)
-
-| Category | Monthly Base | Duration |
-|----------|-------------|----------|
-| Ulga na start | No social ZUS; health only | First 6 months of activity |
-| Preferencyjne ZUS | 30% of minimum wage base | Months 7--30 of activity |
-| Standard (duży) ZUS | 60% of forecast average wage | After preferential period |
-
-### Health Contribution (Składka zdrowotna) [T1/T2]
-
-The health contribution depends on the chosen taxation form:
-
-| Taxation Form | Health Contribution Base (2025) |
-|--------------|-------------------------------|
-| Skala podatkowa | 9% of actual monthly income (minimum PLN 314.96/month) |
-| Podatek liniowy | 4.9% of actual monthly income (minimum PLN 314.96/month) |
-| Ryczałt | Fixed amounts based on revenue brackets |
-
-### Health Contribution Deductibility [T1]
-
-| Taxation Form | Health Contribution Deductibility |
-|--------------|----------------------------------|
-| Skala podatkowa | NOT deductible from income or tax |
-| Podatek liniowy | Deductible from income up to annual limit |
-| Ryczałt | 50% deductible from revenue |
-
-### Social Contribution Deductibility [T1]
-
-Social contributions (społeczne) are fully deductible from income (skala podatkowa / liniowy) or from revenue (ryczałt). This includes pension, disability, sickness (if opted in), accident, and labour fund contributions.
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PRZELEW WŁASNY, OWN TRANSFER | EXCLUDE | Internal movement |
+| WPŁATA WŁASNA | EXCLUDE | Owner capital injection |
+| WYPŁATA, DRAWINGS | EXCLUDE | Owner drawings |
+| DYWIDENDA | EXCLUDE | Dividend (capital income) |
+| LOKATA, SAVINGS | EXCLUDE | Savings transfer |
 
 ---
 
-## Step 3: Computation -- Skala Podatkowa [T1]
+## Section 4 -- Worked examples
 
-**Step-by-step:**
+### Example 1 -- Skala podatkowa, standard computation
 
-1. Gross revenue
-2. Less: Tax-deductible costs (koszty uzyskania przychodow)
-3. = Dochod (income)
-4. Less: Social ZUS contributions (if not already deducted in costs)
-5. Less: Other deductions (ulgi -- e.g., internet deduction, rehabilitation, donations)
-6. = Podstawa opodatkowania (tax base), rounded to full PLN
-7. Apply rate: 12% on first PLN 120,000; 32% on excess
-8. Less: Kwota zmniejszająca podatek (PLN 3,600)
-9. = Tax before credits
-10. Less: Health contribution (NOT deductible under skala)
-11. Less: Tax credits (ulga prorodzinna -- child credit, etc.)
-12. = Tax due (PIT-36)
+**Input:** JDG, skala podatkowa, revenue PLN 300,000, costs PLN 100,000, social ZUS PLN 18,000.
+**Computation:** Dochód = PLN 200,000. Less social ZUS = PLN 182,000. Tax: 12% on PLN 120,000 = PLN 14,400; 32% on PLN 62,000 = PLN 19,840. Total = PLN 34,240. Less kwota zmniejszająca PLN 3,600. Tax = PLN 30,640.
 
----
+### Example 2 -- Private car used for business (20% rule)
 
-## Step 4: Computation -- Podatek Liniowy [T1]
+**Input line:**
+`2025-04-15 ; ORLEN WARSZAWA ; DEBIT ; Fuel ; -350.00 PLN`
 
-**Step-by-step:**
+**Reasoning:** Car is NOT in the business asset register (środki trwałe). Per Art. 23 PIT Act, only 20% of total car expenses are deductible. Deductible amount = PLN 70.00.
 
-1. Gross revenue
-2. Less: Tax-deductible costs
-3. = Dochod (income)
-4. Less: Social ZUS contributions
-5. Less: Health contribution (deductible up to annual limit)
-6. = Podstawa opodatkowania
-7. Apply rate: 19% flat
-8. = Tax due (PIT-36L)
+### Example 3 -- Capital asset above PLN 10,000
 
-**No kwota wolna. No kwota zmniejszająca. No joint filing. No child credit.**
+**Input line:**
+`2025-07-01 ; KOMPUTRONIK ; DEBIT ; Laptop ThinkPad ; -12,500.00 PLN`
+
+**Reasoning:** Above PLN 10,000. Must enter środki trwałe register. Computer hardware: 30% straight-line depreciation. Year 1 (6 months): PLN 12,500 x 30% x 6/12 = PLN 1,875 depreciation.
+
+### Example 4 -- Ryczałt IT services
+
+**Input:** Revenue PLN 400,000, social ZUS PLN 18,000, health ZUS 50% deductible = PLN 6,000.
+**Computation:** Base = PLN 400,000 - PLN 18,000 - PLN 6,000 = PLN 376,000. Tax at 12% = PLN 45,120. No expense deductions under ryczałt.
 
 ---
 
-## Step 5: Computation -- Ryczałt [T1]
+## Section 5 -- Tier 1 rules (deterministic)
 
-**Step-by-step:**
+### 5.1 Skala podatkowa rates
 
-1. Gross revenue (przychód)
-2. Less: Social ZUS contributions
-3. Less: 50% of health contribution
-4. = Podstawa opodatkowania
-5. Apply applicable ryczałt rate (by activity type)
-6. = Tax due (PIT-28)
+12% on first PLN 120,000. 32% above. Kwota zmniejszająca podatek = PLN 3,600 (= PLN 30,000 x 12%). Monthly tax-reducing amount = PLN 300. **Legislation:** PIT Act art. 27.
 
-**No business expense deductions. Tax is on revenue, not profit.**
+### 5.2 ZUS contribution deductibility
 
----
+Social contributions (społeczne): fully deductible from income (all forms). Health contribution (zdrowotna): NOT deductible under skala; deductible up to limit under liniowy; 50% deductible under ryczałt. **Legislation:** PIT Act, Health Insurance Act.
 
-## Step 6: Allowable Deductions (Skala / Liniowy Only) [T1/T2]
+### 5.3 Podatek liniowy
 
-**Legislation:** PIT Act art. 22, 23
+19% flat on net income. No kwota wolna. No joint filing. No child credit. Health contribution deductible up to annual limit. **Legislation:** PIT Act art. 30c.
 
-### The Deduction Rule [T1]
+### 5.4 Ryczałt rates
 
-An expense is deductible if it was incurred to earn, maintain, or secure taxable revenue (art. 22 ust. 1) and is not on the exclusion list (art. 23).
+Tax on gross revenue, not profit. No expense deductions. Rates: 17% (liberal professions), 15% (consulting), 12% (IT services), 8.5% (general services), 5.5% (construction), 3% (trade). Rate depends on PKD code. Revenue limit: PLN 8,569,200. **Legislation:** Ryczałt Act.
 
-### Deductible Expenses (Koszty uzyskania przychodow)
+### 5.5 Capital asset threshold
 
-| Expense | Tier | Treatment |
-|---------|------|-----------|
-| Office rent | T1 | Fully deductible |
-| Professional insurance | T1 | Fully deductible |
-| Accountancy / biuro rachunkowe fees | T1 | Fully deductible |
-| Office supplies | T1 | Fully deductible |
-| Software subscriptions (business) | T1 | Fully deductible |
-| Marketing / advertising | T1 | Fully deductible |
-| Business bank charges | T1 | Fully deductible |
-| Professional development | T1 | Fully deductible if related to business |
-| Business travel (delegacja) | T1 | Per diem rates (dieta) + actual transport/accommodation |
-| Phone / internet | T2 | Business use portion; mixed-use apportionment |
-| Motor vehicle (in środki trwałe) | T2 | If in business asset register: 100% costs; if private car used for business: 20% of expenses deductible |
-| Home office | T2 | Proportional to business-use area |
-| Social ZUS contributions | T1 | Fully deductible (from income or as cost) |
-| Representation (limited) | T1 | Deductible if documented and business-related |
+Assets above PLN 10,000: must enter środki trwałe register and depreciate. Below PLN 10,000: may expense immediately. Car depreciation cap: PLN 150,000 (combustion) / PLN 225,000 (electric). **Legislation:** PIT Act art. 22a--22o.
 
-### NOT Deductible (art. 23) [T1]
+### 5.6 Depreciation rates
 
-| Expense | Reason |
-|---------|--------|
-| Personal living expenses | Not business-related |
-| Fines and penalties (kary, grzywny) | Public policy (art. 23 ust. 1 pkt 15) |
-| Income tax (PIT) | Tax on income (art. 23 ust. 1 pkt 12) |
-| Capital expenditure | Depreciated via środki trwałe |
-| Health contribution (under skala podatkowa) | Explicitly non-deductible |
-| 75% of private car expenses used for business | Only 20% deductible if car not in asset register |
+Computer hardware: 30%. Software: 50%. Passenger cars: 20%. Office furniture: 20%. Buildings: 2.5%. Depreciation starts month after asset placed in service. **Legislation:** PIT Act art. 22a--22o.
 
-### Private Car Used for Business [T2]
+### 5.7 Private car expenses
 
-- Car NOT in business asset register (środki trwałe): only 20% of total car expenses deductible
-- Car IN business asset register: 100% if exclusively business use; 75% if mixed use
-- [T2] Flag for reviewer to confirm car use documentation
+Car NOT in asset register: only 20% deductible. Car IN register: 100% if exclusively business; 75% if mixed use. **Legislation:** PIT Act art. 23.
+
+### 5.8 VAT interaction
+
+VAT collected: NOT income. Input VAT recovered: NOT expense. Non-deductible VAT (e.g., 50% on passenger cars): IS expense. VAT-exempt (under PLN 200,000): gross = net. **Legislation:** VAT Act.
+
+### 5.9 Record keeping
+
+KPiR required for skala/liniowy. Ewidencja przychodów for ryczałt. Retention: 5 years from end of year return was filed. JPK reporting for digital books. **Legislation:** PIT Act, Tax Ordinance.
+
+### 5.10 Czynny żal (voluntary disclosure)
+
+Filing voluntary correction before audit initiation provides immunity from fiscal penalties. Critical safety valve. **Legislation:** Kodeks karny skarbowy.
 
 ---
 
-## Step 7: Depreciation (Amortyzacja) [T1]
+## Section 6 -- Tier 2 catalogue (reviewer judgement required)
 
-**Legislation:** PIT Act art. 22a--22o
+### 6.1 Ryczałt rate classification
 
-### Depreciation Rates
+*Why ambiguous:* Rate depends on specific PKD code and nature of services. Many IT activities could be 12% or 15%. *Default:* STOP -- do not guess rate. *Question:* "What is your PKD code? What specific services do you provide?"
 
-| Asset Type | Rate | Method |
-|-----------|------|--------|
-| Computer hardware | 30% | Straight-line |
-| Computer software | 50% | Straight-line |
-| Passenger cars | 20% | Straight-line |
-| Office furniture | 20% | Straight-line |
-| Machinery / equipment | 10--20% | Straight-line |
-| Buildings (commercial) | 2.5% | Straight-line |
-| Goodwill | Over contract period or 60 months | Straight-line |
+### 6.2 IP Box eligibility
 
-### Rules [T1]
+*Why ambiguous:* Requires R&D documentation, separate IP income ledger, nexus ratio. Incorrect application carries significant penalty risk. *Default:* Do not apply without reviewer confirmation. *Question:* "Do you have R&D cost documentation and a separate IP income ledger?"
 
-- Assets with initial value above PLN 10,000: must be entered in środki trwałe register and depreciated
-- Assets with initial value up to PLN 10,000: may be expensed immediately (jednorazowa amortyzacja)
-- Passenger car depreciation cap: PLN 150,000 (for combustion cars); PLN 225,000 (for electric/hybrid cars)
-- Depreciation starts the month after the asset is placed in service
+### 6.3 Mixed-use vehicle
 
----
+*Why insufficient:* Business vs private use proportion unknown. *Default:* 20% of expenses (car not in register). *Question:* "Is your car in the business asset register (środki trwałe)? If so, is it exclusively or mixed business use?"
 
-## Step 8: Filing Deadlines [T1]
+### 6.4 Home office proportion
 
-**Legislation:** PIT Act; Tax Ordinance
+*Why insufficient:* Business area unknown. *Default:* 0% deduction. *Question:* "Do you have a dedicated room for business? What proportion of total floor area?"
 
-| Filing / Payment | Deadline |
-|-----------------|----------|
-| PIT-36 (skala podatkowa) | 30 April of the following year |
-| PIT-36L (flat tax) | 30 April of the following year |
-| PIT-28 (ryczałt) | 30 April of the following year |
-| Monthly advance payments (zaliczki) | 20th of the following month |
-| Quarterly advance payments (if elected) | 20th of the month following the quarter |
-| Annual ZUS reconciation (ZUS DRA) | Monthly, by 20th |
+### 6.5 ZUS optimization (ulga na start / preferencyjne)
+
+*Why ambiguous:* ZUS basis depends on business duration and elections. *Default:* Use amounts actually paid per ZUS DRA. *Question:* "Are you in the ulga na start period, preferencyjne ZUS, or standard ZUS?"
+
+### 6.6 Switching between lump-sum and real expenses
+
+*Why complex:* Transition adjustment required for receivables and payables. *Default:* Flag for reviewer. *Question:* "Did you switch expense methods this year? If so, provide year-end receivables/payables from prior year."
 
 ---
 
-## Step 9: Penalties [T1]
+## Section 7 -- Excel working paper template
 
-**Legislation:** Kodeks karny skarbowy (Fiscal Penal Code)
+### Sheet "Transactions"
 
-| Offence | Penalty |
-|---------|---------|
-| Late filing (wykroczenie skarbowe) | Grzywna (fine): PLN 430 to PLN 86,000 (2025, indexed) |
-| Late payment of tax | Interest (odsetki) at 14.5% per annum (2025, verify) |
-| Incorrect return (negligence) | Fine + corrected assessment + interest |
-| Incorrect return (intentional) | Criminal prosecution; fines up to 720 daily rates |
-| Failure to keep records | Fine + estimated assessment |
-| Czynny żal (voluntary disclosure) | Immunity from penalty if filed before audit commences |
+| Column | Content |
+|---|---|
+| A | Date |
+| B | Counterparty |
+| C | Description |
+| D | Amount (PLN) |
+| E | Category (Revenue / KPiR Cost / Depreciation / ZUS Social / ZUS Health / EXCLUDE) |
+| F | Deductible amount |
+| G | Default? (Y/N) |
+| H | Question for client |
+| I | Notes |
 
-**Czynny żal (active regret):** A taxpayer who voluntarily corrects their return and pays the outstanding tax before the tax authority initiates proceedings is exempt from fiscal penalties. This is a critical safety valve.
+### Sheet "Tax Computation"
 
----
-
-## Step 10: Interaction with VAT (Podatek VAT) [T1]
-
-**Legislation:** Ustawa o podatku od towarów i usług (VAT Act)
-
-| Scenario | Income Tax Treatment |
-|----------|---------------------|
-| VAT collected on sales (czynny podatnik VAT) | NOT income -- liability to US. Exclude from revenue. |
-| Input VAT recovered | NOT an expense -- reclaimable. Exclude from costs. |
-| Non-deductible VAT (e.g., 50% on passenger cars) | IS an expense -- adds to cost |
-| VAT-exempt (zwolnienie podmiotowe, under PLN 200,000) | No VAT charged or reclaimed; gross = net |
+Branches by taxation form: skala podatkowa, liniowy, or ryczałt. Each with step-by-step formulas per Section 5.
 
 ---
 
-## Step 11: Record Keeping [T1]
+## Section 8 -- Bank statement reading guide
 
-**Legislation:** PIT Act; Tax Ordinance; Accounting Act
+**CSV format conventions.** PKO BP exports use semicolons with DD.MM.YYYY dates. mBank exports use CSV with comma delimiters. ING PL uses semicolons. Common columns: Data (Date), Opis (Description), Kwota (Amount), Saldo (Balance).
 
-| Requirement | Detail |
-|-------------|--------|
-| KPiR (Podatkowa Księga Przychodów i Rozchodów) | Required for skala podatkowa and podatek liniowy |
-| Ewidencja przychodów | Required for ryczałt |
-| Minimum retention | 5 years from end of calendar year in which tax return was filed |
-| What to keep | All invoices (faktury), receipts, bank statements, contracts, asset register (ewidencja środków trwałych) |
-| Format | Paper or digital (JPK reporting requirements for digital books) |
+**Polish language variants.** Common: przelew (transfer), wpłata (deposit), wypłata (withdrawal), prowizja (commission/fee), odsetki (interest), faktura (invoice), opłata (charge), czynsz (rent).
 
----
+**ZUS payments.** Monthly payments to ZUS appear as "ZUS" or "ZAKŁAD UBEZPIECZEŃ SPOŁECZNYCH". Separate social from health contributions using payment details or ZUS DRA statements.
 
-## Step 12: Edge Case Registry
+**Tax payments.** Payments to Urząd Skarbowy for PIT advances: EXCLUDE (not deductible).
 
-### EC1 -- Kwota wolna claimed under podatek liniowy [T1]
-**Situation:** Client on flat tax (PIT-36L) claims PLN 30,000 tax-free amount.
-**Resolution:** INCORRECT. Kwota wolna does NOT apply to podatek liniowy. The full income is taxed at 19%.
-
-### EC2 -- Ryczałt rate misclassified [T2]
-**Situation:** Software developer claims 8.5% ryczałt rate on all IT revenue.
-**Resolution:** The correct rate depends on the specific PKD code and nature of services. Many IT services qualify for 12%, not 8.5%. Some qualify for 15%. [T2] Flag for reviewer to confirm PKD code and applicable rate based on classification ruling (interpretacja podatkowa).
-
-### EC3 -- Business expenses deducted under ryczałt [T1]
-**Situation:** Client on ryczałt deducts PLN 50,000 in business expenses from revenue.
-**Resolution:** INCORRECT. Ryczałt is levied on gross revenue. No business expense deductions are allowed (only ZUS social contributions and 50% of health contribution).
-
-### EC4 -- Health contribution deducted under skala podatkowa [T1]
-**Situation:** Client on skala podatkowa deducts health contribution from income.
-**Resolution:** INCORRECT. Under skala podatkowa, health contribution is NOT deductible from income or tax. It is deductible only under podatek liniowy (from income) and ryczałt (50% from revenue).
-
-### EC5 -- IP Box without R&D documentation [T2]
-**Situation:** Client claims 5% IP Box rate but has no R&D cost documentation or separate IP income ledger.
-**Resolution:** IP Box REQUIRES: (1) separate IP income ledger, (2) R&D activity documentation, (3) nexus ratio calculation. Without these, IP Box cannot be applied. Revert to the client's base taxation form. [T2] Escalate -- risk of penalties.
-
-### EC6 -- Private car 100% expenses deducted [T1]
-**Situation:** Client uses private car (not in środki trwałe) for business and deducts 100% of car expenses.
-**Resolution:** INCORRECT. If car is NOT in the business asset register, only 20% of total car expenses are deductible. Reduce deduction to 20%.
-
-### EC7 -- Joint filing claimed with podatek liniowy [T1]
-**Situation:** Married client on PIT-36L wants to file jointly with spouse.
-**Resolution:** NOT available. Joint filing (wspólne rozliczenie) is only available for skala podatkowa (PIT-36). Client must file PIT-36L individually.
-
-### EC8 -- Czynny żal after audit commenced [T1]
-**Situation:** Client wants to file czynny żal after receiving notification of tax audit.
-**Resolution:** TOO LATE. Czynny żal is only effective if filed before the tax authority initiates proceedings (kontrola or postępowanie). After notification, czynny żal does not provide immunity.
-
-### EC9 -- Ulga dla klasy średniej claimed [T1]
-**Situation:** Client claims ulga dla klasy średniej (middle class relief) on 2025 return.
-**Resolution:** This relief was abolished effective 1 July 2022 (replaced by the 12% rate reduction from 17% under Polski Ład 2.0). It does NOT exist for tax year 2025. Remove from computation.
-
-### EC10 -- Car depreciation above cap [T1]
-**Situation:** Client depreciates a car with initial value PLN 200,000 at full 20%.
-**Resolution:** Depreciation is capped at PLN 150,000 initial value for combustion cars (PLN 225,000 for electric). Only PLN 150,000 x 20% = PLN 30,000/year is deductible. Excess depreciation (on PLN 50,000 x 20% = PLN 10,000) is NOT deductible.
+**Foreign currency.** Convert to PLN at NBP average rate for the business day before the transaction.
 
 ---
 
-## Step 13: Reviewer Escalation Protocol
+## Section 9 -- Onboarding fallback (only when inference fails)
 
-When Claude identifies a [T2] situation:
+### 9.1 Business form
+*Inference:* JDG identifiable from CEIDG registration or account type. *Fallback:* "Are you a JDG (sole proprietorship) or operating through a spółka?"
 
-```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified doradca podatkowy must confirm before filing.
-```
+### 9.2 Taxation form
+*Inference:* Not inferable from bank statement. Always ask. *Fallback:* "Which taxation form have you chosen: skala podatkowa, podatek liniowy, or ryczałt?"
 
-When Claude identifies a [T3] situation:
+### 9.3 PKD code
+*Inference:* Inferable from counterparty mix and invoice descriptions. *Fallback:* "What is your PKD code? (Required for ryczałt rate determination.)"
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified doradca podatkowy or biegły rewident. Document gap.
-```
+### 9.4 ZUS basis
+*Inference:* ZUS payment amounts may indicate ulga na start vs standard. *Fallback:* "Are you in ulga na start, preferencyjne, or standard ZUS?"
+
+### 9.5 VAT status
+*Inference:* VAT payments in bank statement. *Fallback:* "Are you a czynny podatnik VAT (active VAT payer)?"
+
+### 9.6 Prior year losses
+*Inference:* Not inferable. *Fallback:* "Do you have losses carried forward from prior years?"
 
 ---
 
-## Step 14: Test Suite
+## Section 10 -- Reference material
 
-### Test 1 -- Skala podatkowa, mid-range income
-**Input:** JDG on skala podatkowa, revenue PLN 300,000, tax-deductible costs PLN 100,000, social ZUS PLN 18,000, no health deduction.
-**Expected output:** Dochód = PLN 200,000. Less social ZUS = PLN 182,000. Tax: PLN 120,000 x 12% = PLN 14,400; PLN 62,000 x 32% = PLN 19,840. Total = PLN 34,240. Less kwota zmniejszająca = PLN 3,600. Tax = PLN 30,640.
+### Test suite
 
-### Test 2 -- Podatek liniowy, high income
-**Input:** JDG on flat tax, dochód PLN 500,000, social ZUS PLN 18,000, health contribution deductible amount PLN 12,000.
-**Expected output:** Base = PLN 500,000 - PLN 18,000 - PLN 12,000 = PLN 470,000. Tax = PLN 470,000 x 19% = PLN 89,300. No kwota wolna.
+**Test 1 -- Skala podatkowa, mid-range.**
+PLN 300,000 revenue, PLN 100,000 costs, PLN 18,000 social ZUS. Tax = PLN 30,640.
 
-### Test 3 -- Ryczałt, IT services at 12%
-**Input:** JDG on ryczałt (12% rate), revenue PLN 400,000, social ZUS PLN 18,000, health contribution 50% deductible = PLN 6,000.
-**Expected output:** Base = PLN 400,000 - PLN 18,000 - PLN 6,000 = PLN 376,000. Tax = PLN 376,000 x 12% = PLN 45,120.
+**Test 2 -- Podatek liniowy, high income.**
+PLN 500,000 dochód, PLN 18,000 social ZUS, PLN 12,000 health deductible. Tax = PLN 89,300.
 
-### Test 4 -- Kwota wolna incorrectly applied to flat tax
-**Input:** Client on PIT-36L claims PLN 30,000 tax-free.
-**Expected output:** Reject. Kwota wolna does not apply to podatek liniowy. Full income taxed at 19%.
+**Test 3 -- Ryczałt IT 12%.**
+PLN 400,000 revenue, PLN 18,000 social ZUS, PLN 6,000 health (50%). Tax = PLN 45,120.
 
-### Test 5 -- Car depreciation exceeds cap
-**Input:** Car PLN 200,000 entered in środki trwałe. Client claims PLN 40,000 depreciation (20%).
-**Expected output:** Cap applies: deductible depreciation = PLN 150,000 x 20% = PLN 30,000. Excess PLN 10,000 is non-deductible. Adjust.
+**Test 4 -- Kwota wolna on flat tax.**
+Client on PIT-36L claims PLN 30,000 tax-free. REJECT -- kwota wolna does not apply to liniowy.
 
-### Test 6 -- Ulga dla klasy średniej claimed
-**Input:** Client includes ulga dla klasy średniej on 2025 PIT-36.
-**Expected output:** Reject. Relief abolished since July 2022. Remove from return.
+**Test 5 -- Car depreciation cap.**
+Car PLN 200,000. Deductible depreciation = PLN 150,000 x 20% = PLN 30,000. Excess non-deductible.
 
-### Test 7 -- Czynny żal timing
-**Input:** Client received audit notification on 15 March. Files czynny żal on 20 March.
-**Expected output:** Invalid. Czynny żal must be filed before audit notification. No immunity from penalties.
+### Edge case registry
 
----
+**EC1 -- Kwota wolna claimed under liniowy.** INCORRECT.
+**EC2 -- Ryczałt rate misclassified.** Flag for reviewer -- PKD code determines rate.
+**EC3 -- Business expenses under ryczałt.** INCORRECT -- ryczałt taxes revenue.
+**EC4 -- Health contribution deducted under skala.** INCORRECT.
+**EC5 -- IP Box without documentation.** Revert to base form.
+**EC6 -- Private car 100% expenses.** Cap at 20% if not in asset register.
+**EC7 -- Joint filing with liniowy.** NOT available.
+**EC8 -- Czynny żal after audit.** TOO LATE.
+**EC9 -- Ulga dla klasy średniej.** Abolished since July 2022.
+**EC10 -- Car depreciation above cap.** PLN 150,000 combustion / PLN 225,000 electric.
 
-## PROHIBITIONS
+### Prohibitions
 
-- NEVER apply kwota wolna (PLN 30,000) to podatek liniowy or ryczałt -- it applies only to skala podatkowa
-- NEVER deduct business expenses under ryczałt -- ryczałt is levied on revenue
-- NEVER deduct health contribution under skala podatkowa -- it is non-deductible under this form
-- NEVER allow joint filing for podatek liniowy clients
-- NEVER apply ulga dla klasy średniej -- it was abolished in 2022
-- NEVER apply IP Box without confirming R&D documentation and separate IP income ledger
-- NEVER allow 100% car expense deduction for private cars not in the business asset register -- cap at 20%
-- NEVER exceed car depreciation caps (PLN 150,000 combustion / PLN 225,000 electric)
-- NEVER present tax calculations as definitive -- always label as estimated and direct client to their doradca podatkowy
-- NEVER advise on international income, CFC rules, or transfer pricing -- escalate to T3
+- NEVER apply kwota wolna to podatek liniowy or ryczałt
+- NEVER deduct business expenses under ryczałt
+- NEVER deduct health contribution under skala podatkowa
+- NEVER allow joint filing for podatek liniowy
+- NEVER apply ulga dla klasy średniej (abolished 2022)
+- NEVER apply IP Box without R&D documentation
+- NEVER allow 100% car expenses for private cars not in asset register
+- NEVER exceed car depreciation caps
+- NEVER present calculations as definitive
+- NEVER advise on international income, CFC rules, or transfer pricing
 
----
+### Sources
 
-## Disclaimer
+1. Ustawa o podatku dochodowym od osob fizycznych (PIT Act, 26 July 1991)
+2. Ustawa o zryczaltowanym podatku dochodowym (Ryczałt Act, 20 November 1998)
+3. Ustawa o systemie ubezpieczeń społecznych (Social Insurance Act)
+4. Ordynacja podatkowa (Tax Ordinance)
+5. podatki.gov.pl
+
+### Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a doradca podatkowy, biegły rewident, or equivalent licensed practitioner in Poland) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
