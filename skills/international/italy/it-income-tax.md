@@ -1,589 +1,563 @@
 ---
 name: it-income-tax
 description: >
-  Use this skill whenever asked about Italian income tax for self-employed individuals (lavoratori autonomi, liberi professionisti). Trigger on phrases like "Modello Redditi PF", "Quadro RE", "IRPEF", "redditi di lavoro autonomo", "imposta sul reddito Italy", "deduzioni", "detrazioni", "addizionale regionale", "addizionale comunale", "regime ordinario", "acconti IRPEF", "no tax area", "regime forfettario comparison", "partita IVA", "flat tax 15%", or any question about filing or computing income tax for an Italian freelancer or professional. Covers progressive IRPEF brackets (23–43%), regime forfettario (15% flat tax, 5% startup), deduzioni/detrazioni, addizionali regionali/comunali, acconti IRPEF, Quadro RE, INPS Gestione Separata, and penalties.
+  Use this skill whenever asked about Italian income tax for self-employed individuals (lavoratori autonomi, liberi professionisti) under regime ordinario. Trigger on phrases like "Modello Redditi PF", "Quadro RE", "IRPEF", "redditi di lavoro autonomo", "imposta sul reddito Italy", "deduzioni", "detrazioni", "addizionale regionale", "addizionale comunale", "regime ordinario", "acconti IRPEF", "no tax area", "INPS Gestione Separata", "rivalsa INPS", or any question about filing or computing income tax for an Italian freelancer or professional. Also trigger when preparing or reviewing a Modello Redditi PF, computing deductions, or advising on regime ordinario tax obligations. This skill covers progressive IRPEF brackets, deduzioni, detrazioni, addizionali, acconti, Quadro RE structure, rivalsa INPS, and penalties. ALWAYS read this skill before touching any Italian income tax work. Does NOT cover regime forfettario — see it-regime-forfettario.md.
 version: 2.0
 ---
 
-# Italy Income Tax — Self-Employed / Libero Professionista (IRPEF)
+# Italian Income Tax — Regime Ordinario (IRPEF) v2.0
 
 ## Section 1 — Quick Reference
 
-### IRPEF Brackets (2025 — Regime Ordinario)
-| Reddito imponibile (EUR) | Aliquota |
+### IRPEF Brackets 2025 (Regime Ordinario)
+
+| Taxable Income (EUR) | Rate | Tax on Band | Cumulative Tax |
+|---|---|---|---|
+| 0 – 28,000 | 23% | 6,440 | 6,440 |
+| 28,001 – 50,000 | 35% | 7,700 | 14,140 |
+| Over 50,000 | 43% | on excess | 14,140 + 43% |
+
+**Formula:** Tax = cumulative tax for lower bracket + (income − lower bracket threshold) × marginal rate
+
+**No-tax area:** Detrazioni per lavoro autonomo reduce effective IRPEF to zero up to roughly EUR 4,800 net income (not a true zero-tax band — result of detrazioni calculation).
+
+### Addizionali (Regional + Municipal Surtaxes)
+
+| Surtax | Rate | Notes |
+|---|---|---|
+| Addizionale regionale | 1.23%–3.33% | Varies by region; default 1.23% if region not specified |
+| Addizionale comunale | 0%–0.9% | Varies by municipality; zero in some comuni |
+
+Apply both addizionali to the same taxable income (net income after deduzioni, before detrazioni).
+
+### Detrazioni per Lavoro Autonomo (Work Deductions — Reduce Tax Payable)
+
+| Net Income (EUR) | Detrazione |
 |---|---|
-| 0 – 28,000 | 23% |
-| 28,001 – 50,000 | 35% |
-| Over 50,000 | 43% |
+| ≤ 5,500 | EUR 1,265 |
+| 5,501 – 28,000 | EUR 500 + [1,200 × (28,000 − income) / 22,500] |
+| 28,001 – 50,000 | EUR 500 × (50,000 − income) / 22,000 |
+| > 50,000 | 0 |
 
-**No-tax area (detrazione lavoro autonomo):** Deduction of up to €5,500 for income ≤ €5,500; phases out to zero at €55,000. Reduces IRPEF payable (not taxable income).
+These detrazioni reduce IRPEF payable (not taxable income). Compute after applying bracket rates.
 
-**Addizionale regionale:** 1.23%–3.33% (varies by region; 1.23% is the minimum national floor; each region sets its own rate)
+### INPS Gestione Separata (Social Contributions)
 
-**Addizionale comunale:** 0%–0.9% (set by each municipality; average ~0.4%)
-
-### Regime Forfettario (Flat Tax — Alternative to Regime Ordinario)
-| Feature | Value |
+| Contributor Type | Rate 2025 |
 |---|---|
-| Revenue threshold (2025) | ≤ €85,000 |
-| Flat tax rate | 15% |
-| Startup rate (first 5 years) | 5% (if first-ever business; no prior employment in same sector) |
-| Tax base | Revenue × (1 − coefficiente di redditività) |
-| Coefficiente di redditività | 78% for most professional activities (so taxable income = 78% × revenue) |
-| IVA obligation | Exempt from IVA — no IVA on invoices, no IVA recovery |
-| Social contributions (INPS) | Reduced 35% discount for forfettari on Gestione Separata |
-| Studi di settore / ISA | Exempt |
-| Contraindications | Cannot claim business expenses; cannot recover IVA on purchases |
+| Freelancer without pension fund (no cassa) | 26.07% |
+| Freelancer with pension fund (con cassa) | 24% |
+| Pensioners or those with other coverage | 24% |
 
-**Regime forfettario vs ordinario decision:**
-- Forfettario better when: revenue ≤ €85,000 AND actual deductible expenses < (1 − coefficiente) × revenue = 22% for professionisti
-- Ordinario better when: high deductible expenses (>22% of revenue), OR significant personal detrazioni, OR very high income (43% bracket same as flat tax becomes competitive)
+Applied to: **net income** (gross receipts − deductible expenses). Cap: EUR 119,650 gross (contributions stop above this).
 
-### IRPEF Detrazioni d'Imposta (Tax Credits — Regime Ordinario)
-| Detrazione | Amount |
+**Rivalsa INPS (4% surcharge on invoices):** Freelancers without a cassa previdenziale may add 4% to invoice as rivalsa INPS. The rivalsa received is taxable income; the corresponding INPS contribution paid is deductible.
+
+### Acconti IRPEF (Advance Payments)
+
+| Threshold | Rule |
 |---|---|
-| Lavoro autonomo base detrazione | Up to €5,500 (phases out to 0 at €55,000) |
-| Familiari a carico (spouse) | €800 (phases out above €80,000) |
-| Familiari a carico (each child <21) | €950 per child (phases out with income) |
-| Spese mediche | 19% of expenses exceeding €129.11 |
-| Interessi mutuo prima casa | 19% of interest, max €4,000 |
-| Spese istruzione universitaria | 19% of university fees |
-| Premi assicurazione vita/infortuni | 19%, max €530 |
-| Donazioni (onlus) | 30% or 35% (for social enterprises) |
-| Spese ristrutturazione (bonus) | 36–50% of works (spread over 10 years) |
+| IRPEF due < EUR 51.65 | No acconto required |
+| IRPEF due EUR 51.65–257.52 | One payment: 100% by 30 November |
+| IRPEF due > EUR 257.52 | 40% by 30 June (with saldo); 60% by 30 November |
+
+Acconto rate: 100% of prior-year IRPEF (or 100% of current-year estimate if lower).
 
 ### Conservative Defaults
-| Item | Default |
+
+| Situation | Default Assumption |
 |---|---|
-| Regime choice | Forfettario if revenue ≤ €85,000 and no documentation of higher expenses |
-| Home office % | Do not assume — ask for floor area |
-| Vehicle business % | Do not assume — ask for km log |
-| Phone/internet | 50% if mixed use |
-| Addizionale regionale | Use 1.23% (minimum) unless region confirmed |
-| Forfettario coefficiente | 78% (professional activities) unless specific ATECO code confirmed |
+| Regional surtax unknown | Apply 1.23% (statutory minimum) |
+| Municipal surtax unknown | Apply 0% (cannot assume) — flag for client |
+| Pension fund (cassa) membership unknown | Apply 26.07% Gestione Separata rate |
+| Rivalsa INPS on invoices unclear | Do NOT assume 4% added — ask client |
+| Deductible vs. non-deductible expense disputed | Non-deductible — flag for reviewer |
+| Payment received: unclear if taxable | Taxable — flag for reviewer |
+| Invoice date vs. payment date conflict | Apply **cassa** (cash) basis for freelancers |
+| Refund or reimbursement | Non-taxable if documented client reimbursement; taxable otherwise |
 
 ### Red Flag Thresholds
-| Situation | Flag |
+
+| Flag | Threshold |
 |---|---|
-| Revenue > €85,000 | Must use regime ordinario |
-| Revenue approaching €85,000 | Warn — exceeding threshold in-year triggers ordinario for entire year |
-| Two employees earning >€20,000 combined | Forfettario exclusion — flag |
-| Participation in partnerships | May exclude from forfettario |
-| Expenses > 22% of revenue (forfettario) | Forfettario may not be optimal — recalculate |
+| Gross receipts > EUR 85,000 | Was regime forfettario? — verify |
+| INPS contributions < 20% of net income | Possible miscalculation — review |
+| No acconto payments recorded | Check if acconti were due |
+| Large cash payments > EUR 999.99 | Anti-money-laundering limit — flag |
+| Expense > EUR 5,000 with no documentation | Reject — cannot deduct |
 
 ---
 
-## Section 2 — Required Inputs & Refusal Catalogue
+## Section 2 — Required Inputs + Refusal Catalogue
 
-### Minimum Required Inputs
-1. Total gross revenue (compensi lordi) for the year
-2. Regime chosen: forfettario or ordinario
-3. If ordinario: itemised deductible professional expenses (spese inerenti)
-4. ATECO code (for forfettario coefficiente confirmation)
-5. INPS Gestione Separata contributions paid
-6. Personal situation: spouse, children, family members a carico
-7. Acconti IRPEF already paid during the year
+### Required Inputs
+
+Before computing Italian income tax, collect:
+
+1. **Total gross receipts** (fatturato lordo) — all amounts invoiced or received, including rivalsa INPS if applied
+2. **Deductible expenses** — receipts or bank evidence for each
+3. **Region and municipality** — for addizionali rates
+4. **Pension fund membership** — yes/no; if yes, which cassa (e.g., ENPAM, INPGI, Inarcassa) — affects INPS rate
+5. **Rivalsa INPS applied on invoices** — yes/no; if yes, total rivalsa received
+6. **Prior-year IRPEF** — for acconto calculation
+7. **Bank statements** — 12 months for the fiscal year
+8. **Advance payments made** — acconti IRPEF paid (F24 receipts)
+9. **Detrazioni claimed** — family dependants (coniuge, figli) for additional detrazioni
+10. **Other income sources** — employment (redditi da lavoro dipendente), rental (redditi fondiari), capital gains
 
 ### Refusal Catalogue
-**R-IT-1 — Forfettario threshold exceeded**
-If gross revenue > €85,000: forfettario not available. State: "Your revenue exceeds the €85,000 forfettario threshold. You must use the regime ordinario and file Modello Redditi PF with Quadro RE."
 
-**R-IT-2 — No expense documentation (ordinario)**
-Refuse undocumented professional expenses. State: "Without receipts and records, we cannot deduct these costs as spese inerenti in Quadro RE. Only expenses inherent to and necessary for professional activity are deductible."
-
-**R-IT-3 — Personal expenses as professional costs**
-Refuse personal costs (personal vacations, family meals, personal clothing). State: "These are personal expenses. Only costs inerenti to the professional activity are deductible under TUIR art. 54."
-
-**R-IT-4 — IVA amounts included in compensi**
-If client has partita IVA in ordinario: compensi on Quadro RE must be net of IVA. State: "IVA collected from clients is not your income — remove IVA before entering compensi on Quadro RE."
-
-**R-IT-5 — Forfettario and IVA recovery**
-In forfettario, client cannot recover IVA on purchases. Do not include IVA-recovery calculations for forfettario clients. State: "Regime forfettario clients are exempt from IVA but also cannot deduct input IVA on purchases."
+| Code | Situation | Action |
+|---|---|---|
+| R-IT-1 | Client provides only bank totals, no itemised expenses | Request itemised expense list with F24/receipts before proceeding |
+| R-IT-2 | Income from both regime ordinario AND regime forfettario in same year | Stop — mixed regime not possible; verify which applies and for which period |
+| R-IT-3 | Gross receipts > EUR 85,000 but client claims regime forfettario applies | Stop — forfettario threshold exceeded; regime ordinario applies automatically |
+| R-IT-4 | Non-resident claiming full Italian detrazioni | Clarify residency status; non-residents have restricted access to detrazioni |
+| R-IT-5 | Client requests deduction for private vehicle without usage log | Reject vehicle deduction — 20% cap applies and requires documented business use |
 
 ---
 
 ## Section 3 — Transaction Pattern Library
 
-### 3.1 Income Patterns
-| Bank Description Pattern | Income Type | Tax Treatment | Notes |
+Map bank statement narrations to tax lines deterministically. If a narration matches a pattern, apply the mapped treatment without escalating. If no pattern matches, escalate to Tier 2.
+
+### Income Patterns
+
+| # | Narration Pattern | Tax Line | Notes |
 |---|---|---|---|
-| Bonifico da cliente | Compensi professionali | Include gross (net of IVA if registered) | |
-| Pagamento fattura / SEPA credit | Professional fees | Include | |
-| Bonifico estero / SWIFT | Foreign client payment | Include — convert to EUR at receipt date | |
-| Stripe accredito / STRIPE | Platform receipts | Include net + Stripe fee as expense | |
-| PayPal accredito | Platform receipts | EUR equivalent | |
-| Marketplace / Fiverr / Upwork | Platform receipts | Gross earnings | Platform fee = spesa |
-| Interessi bancari | Interessi (redditi di capitale) | Separate — subject to 26% ritenuta | Not Quadro RE |
-| Canoni di locazione | Redditi fondiari | Separate — Quadro RB or cedolare secca | Not Quadro RE |
-| Anticipo (advance payment) | Competence-based | Include in year received (cassa principle) | |
-| Rimborso spese (pass-through) | Exclude if pure reimbursement | Check if included in fattura or separate | |
+| I-01 | `BONIFICO DA [client name]` | Gross receipts — professional income | Standard SEPA credit transfer from client |
+| I-02 | `VB DA [client name]` / `VB ENTRATA` | Gross receipts — professional income | UniCredit/BancoBPM credit notation |
+| I-03 | `ACCREDITO DA [client]` | Gross receipts — professional income | Generic bank credit from client |
+| I-04 | `STRIPE PAYMENTS EUROPE` / `STRIPE PAYOUT` | Gross receipts — online professional income | Gross-up to pre-fee amount; Stripe fee is deductible |
+| I-05 | `PAYPAL TRANSFER` / `PAYPAL ACCREDITO` | Gross receipts — professional income | Gross-up; PayPal fee deductible |
+| I-06 | `SATISPAY BUSINESS PAYOUT` | Gross receipts — professional income | Satispay payout; fee deductible |
+| I-07 | `NEXI PAGAMENTI` / `NEXI POS VERSAMENTO` | Gross receipts — card payment income | Nexi merchant settlement; gross-up |
+| I-08 | `SUMUP PAYOUT` / `ZETTLE PAYOUT` | Gross receipts — card payment income | Card terminal payout; gross-up |
+| I-09 | `REVERSALE [client]` / `RIMESSA CLIENTI` | Gross receipts — professional income | Public administration or factoring payment |
+| I-10 | `RIVALSA INPS` (portion of invoice) | Taxable — included in gross receipts | 4% rivalsa component is taxable income |
+| I-11 | `INTERESSI ATTIVI` / `INTERESSI MATURATI` | Interest income — Quadro RW/RL | Not professional income; separate treatment |
+| I-12 | `RIMBORSO SPESE [client]` | Non-taxable reimbursement (if documented) | Requires client reimbursement note; flag if undocumented |
 
-### 3.2 Expense Patterns (Spese Inerenti — Regime Ordinario Only)
-| Bank Description Pattern | Categoria | Deducibile? | Note |
+### Expense Patterns
+
+| # | Narration Pattern | Tax Line | Notes |
 |---|---|---|---|
-| TIM / Vodafone / WindTre / Iliad | Telefono | Parziale — 80% se linea professionale | T2 se uso misto |
-| Enel / A2A / Iren / Edison | Energia elettrica | % ufficio domestico | T2 |
-| ENI gas / Italgas | Gas riscaldamento | % ufficio domestico | T2 |
-| Affitto ufficio / locale professionale | Canone professionale | 100% | Deve essere uso esclusivo professionale |
-| Software / SaaS (Adobe, Figma, ecc.) | Software | 100% | Uso professionale |
-| Amazon (materiale ufficio) | Cancelleria / forniture | 100% se uso professionale | |
-| Trenitalia / Italo / Frecciarossa | Viaggio professionale | 100% — scopo professionale documentato | |
-| Alitalia / Ryanair / EasyJet | Viaggio professionale | 100% — documentare | |
-| Hotel / Airbnb (deplacement professionale) | Alloggio | 100% — scopo professionale | |
-| Ristorante (pasto di lavoro con cliente) | Spese di rappresentanza | 75% (TUIR art. 54 c.5) | Limite annuo |
-| INPS Gestione Separata | Contributi previdenziali | Deducibili su Quadro RE (50%) e su Quadro RP (50%) | IMPORTANTE |
-| Commercialista / dottore commercialista | Onorari professionali | 100% | |
-| Corsi di formazione professionale | Formazione | 100% — inerente attività | |
-| Libri / pubblicazioni professionali | Documentazione | 100% — inerenti | |
-| Assicurazione professionale (RCP) | Assicurazione | 100% | |
-| Materiale amortizzabile (>€516 HT) | Beni strumentali | Quote di ammortamento (TUIR) | Non spesa immediata |
-| Materiale <€516 | Attrezzatura minore | 100% nell'anno | |
-| IVA versata all'erario | IVA | ESCLUSA — non deducibile IRPEF | |
-| IRPEF versata / acconti | Imposta | ESCLUSA | |
-| Spese personali | Personale | ESCLUSE | |
-
-### 3.3 INPS Gestione Separata (Special Treatment)
-- Self-employed without separate INPS cassa (most liberi professionisti without an Ordine with mandatory cassa): pay into **Gestione Separata INPS**
-- Rate 2025: 26.23% of net professional income (up to INPS ceiling; then 0% above)
-- 50% deductible directly from Quadro RE (reducing reddito di lavoro autonomo)
-- Remaining 50% deductible in Quadro RP as onere deducibile
-- Professionals with mandatory INPS cassa (doctors: ENPAM, lawyers: CNPA, engineers: INARCASSA): different — their cassa contributions = 100% deductible from RE
-
-### 3.4 Foreign Currency & Platform Receipts
-| Source | Currency | Treatment |
-|---|---|---|
-| USD from US clients | USD | Convert to EUR at Banca d'Italia rate on invoice/payment date |
-| GBP from UK clients | GBP | Convert at payment date |
-| Stripe USD | USD | Use Stripe statement EUR equivalent |
-| PayPal multi-currency | Various | Use PayPal statement EUR equivalent |
-| Upwork USD | USD | Gross USD → convert to EUR; platform fee = spesa deducibile |
-| Google AdSense | USD/EUR | Monthly → convert if USD |
-
-### 3.5 Internal Transfers
-| Pattern | Treatment |
-|---|---|
-| Bonifico verso conto risparmio | ESCLUSO — trasferimento interno |
-| Pagamento carta di credito | ESCLUSO — singole spese già catturate |
-| Bonifico tra propri conti | ESCLUSO |
-| Rimborso prestito personale | ESCLUSO — non è reddito |
+| E-01 | `AFFITTO UFFICIO` / `CANONE LOCAZIONE` / `PIGIONE` | Rent — deductible (professional share) | Home office: only dedicated professional portion |
+| E-02 | `ENEL` / `ENI PLENITUDE` / `A2A ENERGIA` | Utilities — 50% deductible (mixed use assumption) | Flag if solely professional premises — 100% |
+| E-03 | `TELECOM ITALIA` / `TIM FIBRA` / `FASTWEB` / `WIND3` | Internet/phone — 80% deductible (Telecomunicazioni rule) | 80% cap for all telecoms under Art. 54 TUIR |
+| E-04 | `VODAFONE MOBILE` / `TIM MOBILE` / `ILIAD` | Mobile phone — 80% deductible | Same 80% telecoms cap |
+| E-05 | `ADOBE` / `MICROSOFT 365` / `GOOGLE WORKSPACE` | Software subscriptions — 100% deductible | Professional software, fully deductible |
+| E-06 | `COMMERCIALISTA` / `CONSULENTE FISCALE` / `STUDIO [name]` | Professional fees — 100% deductible | Accountant/tax advisor fees |
+| E-07 | `AVVOCATO` / `NOTAIO` | Legal fees — 100% deductible (if professional purpose) | Flag if personal legal matter |
+| E-08 | `TRENITALIA` / `ITALO` / `FRECCIAROSSA` | Travel — 100% deductible if professional | Require destination + purpose note |
+| E-09 | `RYANAIR` / `EASYJET` / `ITA AIRWAYS` / `ALITALIA` | Air travel — 100% deductible if professional | Require itinerary + purpose |
+| E-10 | `HOTEL` / `AGODA` / `BOOKING.COM` | Accommodation — 75% deductible (forfait hospitality limit) | Art. 109 TUIR hospitality cap |
+| E-11 | `RISTORANTE` / `PIZZERIA` / `CAFFE` | Meals — 75% deductible (hospitality limit) | Must be professional purpose; social meals = 0% |
+| E-12 | `INPS F24` / `CONTRIBUTI GESTIONE SEPARATA` | INPS contributions — 100% deductible | Social contributions reduce taxable income |
+| E-13 | `F24 ACCONTO IRPEF` / `F24 SALDO IRPEF` | IRPEF advance/balance — NOT deductible | Tax payments are not expenses |
+| E-14 | `ASSICURAZIONE PROFESSIONALE` / `RC PROFESSIONALE` | Professional insurance — 100% deductible | Professional liability insurance |
+| E-15 | `ADDIZIONALE REGIONALE` / `ADDIZIONALE COMUNALE` | NOT deductible | Surtaxes paid are not deductible from income |
+| E-16 | `SPESE BANCARIE` / `COMMISSIONI BANCARIE` / `CANONE CONTO` | Bank fees — 100% deductible | Professional account fees |
+| E-17 | `AMORTAMENTO` / `BENE STRUMENTALE` | Capital asset — depreciation schedule | Do not expense in full; apply ammortamento table |
+| E-18 | `AUTONOLEGGIO` / `NOLEGGIO AUTO` | Car hire — 20% deductible cap | Art. 164 TUIR; full deduction only if exclusively professional |
+| E-19 | `CARBURANTE` / `ENI` / `Q8` / `SHELL` | Fuel — 20% deductible cap | Same Art. 164 TUIR car expense limit |
+| E-20 | `FORMAZIONE` / `CORSO` / `SEMINARIO` | Training/education — 100% deductible | Professional development |
+| E-21 | `CANCELLERIA` / `MATERIALE UFFICIO` / `UNIEURO` (office) | Office supplies — 100% deductible | Minor consumables; flag large amounts |
+| E-22 | `CONTRIBUTO CASSA [profession]` / `ENPAM` / `INARCASSA` | Cassa contributions — 100% deductible | Replaces Gestione Separata for applicable professions |
 
 ---
 
 ## Section 4 — Worked Examples
 
-### Example 1 — UniCredit: Consulente IT, Regime Ordinario
-**Scenario:** Consulente IT, €90,000 compensi, €20,000 spese, INPS Gestione Separata €23,607, single
+### Example 1 — Intesa Sanpaolo (Milan, Graphic Designer)
 
-**Bank statement extract (UniCredit):**
+**Bank:** Intesa Sanpaolo CSV export (semicolon-delimited)
+**Client:** Valentina Rossi, graphic designer, Milan, no pension fund
+
 ```
-Data valuta  | Descrizione                                | Dare (€)      | Avere (€)     | Saldo (€)
-15/04/2025   | BON. ACCRED. TECHCORP SRL                 |               | 18,000.00     | 75,000.00
-20/04/2025   | BON. ACCRED. STARTUP ITALIA SRL           |               |  9,000.00     | 84,000.00
-25/04/2025   | ADD. GESTIONE SEPARATA INPS               | 1,967.25      |               | 82,032.75
-28/04/2025   | PAGAMENTO ADOBE CC                        |    79.00      |               | 81,953.75
-30/04/2025   | COMMISSIONI BANCARIE                      |    10.00      |               | 81,943.75
-```
-
-**Quadro RE Computation:**
-| Linea | Importo |
-|---|---|
-| Compensi lordi (RE5) | €90,000 |
-| INPS Gestione Separata 50% deducibile RE (RE17) | (€11,804) |
-| Altre spese inerenti (RE14) | (€20,000) |
-| **Reddito netto Quadro RE** | **€58,196** |
-
-**IRPEF Computation:**
-| Linea | Importo |
-|---|---|
-| Reddito lavoro autonomo | €58,196 |
-| INPS 50% restante (Quadro RP) | (€11,804) |
-| Reddito complessivo | €46,392 |
-| Detrazione lavoro autonomo (phased out) | ~€0 (reddito > €55,000) |
-| IRPEF: 23% × €28,000 + 35% × (46,392−28,000) | €6,440 + €6,437 = **€12,877** |
-| Addizionale regionale (~1.7% Roma) | ₩787 |
-| Addizionale comunale (~0.5%) | €232 |
-
-### Example 2 — Intesa Sanpaolo: Designer, Regime Forfettario
-**Scenario:** Graphic designer, €55,000 compensi, regime forfettario, ATECO 74.10 (coefficiente 78%)
-
-**Bank statement extract (Intesa Sanpaolo):**
-```
-Data operaz. | Causale                                    | Addebiti (€)  | Accrediti (€) | Saldo (€)
-10/03/2025   | RIACCREDITO STUDIO CREATIVO SRL           |               | 8,500.00      | 34,200.00
-15/03/2025   | ACCREDITO AGENZIA DIGITALE                |               | 5,000.00      | 39,200.00
-20/03/2025   | ADDEBITO FIGMA INC                        | 45.00         |               | 39,155.00
-22/03/2025   | ADDEBITO TRENITALIA                       | 89.00         |               | 39,066.00
-28/03/2025   | COMMISSIONI SDD                           | 2.50          |               | 39,063.50
+Data;Valuta;Descrizione;Dare;Avere
+03/01/2025;;BONIFICO DA STUDIO GAMBA SRL;;3.500,00
+15/01/2025;;SPESE BANCARIE TENUTA CONTO;4,50;
+10/02/2025;;BONIFICO DA FREELANCE CORP;;2.200,00
+28/02/2025;;FASTWEB INTERNET;35,90;
+15/03/2025;;STRIPE PAYMENTS EUROPE;;1.850,00
+31/03/2025;;ADOBE CREATIVE CLOUD;59,99;
+20/04/2025;;BONIFICO DA MEDIA HOUSE SRL;;4.100,00
+15/05/2025;;F24 ACCONTO IRPEF;1.200,00;
+30/06/2025;;CONTRIBUTI GESTIONE SEPARATA F24;1.800,00;
+15/07/2025;;COMMERCIALISTA STUDIO BIANCHI;500,00;
+10/10/2025;;TRENITALIA ROMA-MILANO;89,00;
+30/11/2025;;F24 ACCONTO IRPEF;1.800,00;
 ```
 
-**Regime Forfettario Computation:**
-| Linea | Importo |
-|---|---|
-| Compensi lordi | €55,000 |
-| Reddito imponibile (78%): €55,000 × 78% | €42,900 |
-| INPS Gestione Separata (forfettario, riduzione 35%): 26.23% × 65% × €42,900 | €7,314 (approx; reduces taxable income) |
-| Reddito imponibile netto | €35,586 |
-| Imposta sostitutiva 15% | **€5,338** |
-| Note: IVA NOT charged on invoices | Regime forfettario |
+**Step 1 — Income**
 
-**Comparison with ordinario at same revenue:** IRPEF ordinario would be ~€8,500–10,000 → forfettario saves ~€3,000–5,000 at this income level.
-
-### Example 3 — Banco BPM: Avvocato (Lawyer), Cassa Forense
-**Scenario:** Avvocato with Cassa Forense (mandatory pension), €120,000 compensi, €30,000 spese, Cassa Forense €15,000
-
-**Bank statement extract (Banco BPM):**
-```
-Data          | Descrizione                               | Importo addebitato | Importo accreditato | Saldo
-08/05/2025    | BON. ENTRATA CLIENTI STUDIO LEGALE       |                    | 25,000.00           | 98,000.00
-12/05/2025    | BON. ENTRATA STUDIO LEGALE ASSOC.        |                    | 10,000.00           | 108,000.00
-15/05/2025    | VERS. CASSA FORENSE TRIMESTRALE          | 3,750.00           |                     | 104,250.00
-20/05/2025    | PAGAMENTO AFFITTO STUDIO                 | 1,200.00           |                     | 103,050.00
-25/05/2025    | ADDEBITO LEXIS NEXIS ABBONAMENTO         | 350.00             |                     | 102,700.00
-```
-
-**Avvocati note:** Cassa Forense (not INPS GS) = mandatory; contributions 100% deductible on RE (not 50/50 split). Also: lawyers add 4% rivalsa to client invoices (contributo integrativo).
-
-**Quadro RE:**
-| Linea | Importo |
-|---|---|
-| Compensi lordi | €120,000 |
-| Contributi integrativi 4% incassati (rivalsa) | Inclusi nei compensi — poi spesa |
-| Cassa Forense (100% deducibile RE) | (€15,000) |
-| Altre spese | (€30,000) |
-| **Reddito RE netto** | **€75,000** |
-| IRPEF: 23% × €28,000 + 35% × €22,000 + 43% × €25,000 | €6,440 + €7,700 + €10,750 = **€24,890** |
-
-### Example 4 — Monte dei Paschi di Siena: Freelancer con Home Office
-**Scenario:** Copywriter, €38,000 compensi, regime ordinario, home office (appartamento 70mq, studio 10mq)
-
-**Bank statement extract (MPS):**
-```
-Data         | Descrizione                                | Uscite (€)    | Entrate (€)   | Saldo (€)
-05/06/2025   | BONIFICO IN ENTRATA EDITORE SRL           |               | 5,000.00      | 18,500.00
-10/06/2025   | BONIFICO IN ENTRATA AGENZIA COPY          |               | 3,200.00      | 21,700.00
-15/06/2025   | UTENZA ENEL ENERGIA                       | 180.00        |               | 21,520.00
-20/06/2025   | AFFITTO MENSILE (gestore)                 | 900.00        |               | 20,620.00
-25/06/2025   | ABBONAMENTO INTERNET TELECOM              | 35.00         |               | 20,585.00
-```
-
-**Home office calculation (studio a casa):**
-- % uso professionale: 10/70 = 14.3%
-- Affitto annuo €10,800 × 14.3% = €1,545 deducibile
-- Utenze annue €2,160 × 14.3% = €309 deducibile
-
-**Quadro RE:**
-| Linea | Importo |
-|---|---|
-| Compensi | €38,000 |
-| Spese dirette | (€4,000) |
-| Home office (affitto + utenze) | (€1,854) |
-| INPS GS 50% | (€4,980) |
-| **Reddito RE** | **€27,166** |
-| IRPEF (23%): €27,166 × 23% | €6,248 |
-| Detrazione lavoro autonomo (reddito < €55K) | phased — approx. (€1,200) |
-| **IRPEF netta** | **~€5,048** |
-
-### Example 5 — BPER Banca: Developer con Startup Forfettario
-**Scenario:** Sviluppatore software, primo anno attività, €42,000 compensi, regime forfettario 5% (startup rate)
-
-**Bank statement extract (BPER Banca):**
-```
-Data          | Descrizione                               | Addebito (€)  | Accredito (€) | Saldo (€)
-12/07/2025    | ACCREDITO CLIENTE STARTUP.IO              |               | 12,000.00     | 32,000.00
-18/07/2025    | ACCREDITO FREELANCER PORTAL               |               |  6,500.00     | 38,500.00
-22/07/2025    | ADDEBITO GITHUB ENTERPRISE                | 180.00        |               | 38,320.00
-26/07/2025    | ADDEBITO AWS AMAZON                       | 245.00        |               | 38,075.00
-30/07/2025    | COMMISSIONI BPER                          | 8.00          |               | 38,067.00
-```
-
-**Regime forfettario 5% (startup):**
-| Linea | Importo |
-|---|---|
-| Compensi | €42,000 |
-| Reddito imponibile (78%): €42,000 × 78% | €32,760 |
-| INPS ridotta 35%: approx. €5,600 | deducible from €32,760 |
-| Reddito netto | €27,160 |
-| Imposta sostitutiva 5% | **€1,358** |
-| Note: available for first 5 years if conditions met | |
-
-### Example 6 — Fineco Bank: Architetto con IVA e Acconti
-**Scenario:** Architetto (regime ordinario), €150,000 compensi IVA esclusa, €45,000 spese, acconti IRPEF €18,000 già versati
-
-**Bank statement extract (Fineco):**
-```
-Data valuta   | Descrizione                               | Dare (€)      | Avere (€)     | Saldo (€)
-03/08/2025    | ACCREDITO BONIFICO STUDIO ARCH. BIANCHI  |               | 36,600.00     | 142,000.00
-10/08/2025    | ACCREDITO BONIFICO PROMOZIONE IMM. SRL   |               | 24,400.00     | 166,400.00
-15/08/2025    | VERSAMENTO ACCONTO IRPEF F24              | 9,000.00      |               | 157,400.00
-20/08/2025    | ADDEBITO INARCASSA TRIMESTRALE            | 3,500.00      |               | 153,900.00
-25/08/2025    | ADDEBITO AFFITTO STUDIO                   | 2,500.00      |               | 151,400.00
-```
-
-**Note on bonifici:** €36,600 = €30,000 + €6,000 IVA 20%. Compensi = €30,000 only (HT). Always separate IVA.
-
-**Quadro RE:**
-| Linea | Importo |
-|---|---|
-| Compensi IVA esclusa | €150,000 |
-| Inarcassa (100% deducibile RE) | (€21,000) |
-| Altre spese | (€45,000) |
-| **Reddito RE** | **€84,000** |
-| IRPEF: 23%×28K + 35%×22K + 43%×34K | €6,440+€7,700+€14,620 = **€28,760** |
-| Meno: acconti già versati | (€18,000) |
-| **IRPEF a saldo** | **€10,760** |
-
----
-
-## Section 5 — Tier 1 Rules (Compressed Reference)
-
-### Residenza Fiscale
-- **Residente:** Iscritto all'anagrafe OR domicilio/residenza in Italia per >183 giorni → redditi worldwide tassati in Italia
-- **Non residente:** Solo redditi di fonte italiana; ritenute alla fonte diverse
-
-### Principio di Cassa vs Competenza
-- Lavoro autonomo: **principio di cassa** (cash basis) — compensi e spese nella dichiarazione dell'anno in cui pagati/incassati
-- Eccezione: ammortamenti (depreciation) seguono principio di competenza (spread over useful life)
-
-### IVA e Regime Forfettario
-- Regime forfettario: esonerato da IVA — nessuna IVA sulle fatture, nessun recupero IVA sugli acquisti
-- Regime ordinario: partita IVA attiva — IVA sulle fatture, dichiarazione IVA periodica separata
-
-### Rivalsa INPS
-- Professionisti INPS Gestione Separata: possono aggiungere 4% di rivalsa sulle fatture ai clienti (rivalsa previdenziale)
-- La rivalsa è reddito — inclusa nei compensi (ma poi diventa costo previdenziale)
-- Non confondere con la rivalsa IVA
-
-### Acconti IRPEF
-- Se IRPEF anno precedente > €51.65: obbligo acconti
-- 1° acconto: 40% dell'IRPEF precedente — scadenza **30 giugno** (o luglio con maggiorazione 0.4%)
-- 2° acconto: 60% — scadenza **30 novembre**
-- Versamento tramite modello F24
-
-### Deduzioni vs Detrazioni
-- **Deduzioni (deducibili):** Riducono il reddito imponibile prima di applicare le aliquote (es. spese inerenti, INPS, contributi previdenziali)
-- **Detrazioni (creditorie):** Riducono l'IRPEF lorda dopo il calcolo (es. spese mediche 19%, interessi mutuo 19%, carichi di famiglia)
-
-### Scadenze
-| Evento | Scadenza |
-|---|---|
-| Modello Redditi PF (online) | 31 ottobre (anno successivo) |
-| Pagamento saldo IRPEF + 1° acconto | 30 giugno (o 30 luglio +0.4%) |
-| 2° acconto IRPEF | 30 novembre |
-| Liquidazione IVA trimestrale | Entro il 16° giorno del 2° mese successivo |
-
-### Sanzioni
-| Situazione | Sanzione |
-|---|---|
-| Omessa dichiarazione | 120%–240% dell'imposta dovuta |
-| Dichiarazione infedele | 70%–210% dell'imposta |
-| Tardivo versamento | 15%–30% dell'importo + interessi |
-| Ravvedimento operoso | Riduzione sanzione se regolarizzato spontaneamente |
-
----
-
-## Section 6 — Tier 2 Catalogue
-
-### T2-IT-1: Studio a Casa / Home Office
-**Perché T2:** La proporzione di utilizzo professionale dipende da dati che solo il cliente conosce.
-
-**Metodo:** m² uso professionale ÷ m² totale × canone/utenze
-**Requisiti dal cliente:** Superficie totale appartamento (m²), superficie studio/ufficio dedicato (m²), conferma uso esclusivo professionale (non misto).
-**Avvertenza:** L'Agenzia delle Entrate può contestare l'uso esclusivo se lo studio è in una stanza condivisa — documentare bene.
-
-### T2-IT-2: Uso Promiscuo del Veicolo (Auto)
-**Perché T2:** La proporzione di uso professionale dipende dai km effettivi percorsi.
-
-**Opzioni:**
-1. **Rimborso chilometrico ACI:** Usare le tabelle ACI pubblicate annualmente per il rimborso km
-2. **Costi reali × %:** Documentare km business vs km totali
-3. **Forfait 20%:** Per veicoli ad uso promiscuo — TUIR art. 54 c.1-bis: deducibilità limitata al 20% dei costi (max €5,164.57)
-
-**Requisiti dal cliente:** Tipo veicolo (cilindrata, carburante), km percorsi totali e per motivi professionali, costi sostenuti (carburante, assicurazione, manutenzione).
-
-### T2-IT-3: Telefono e Internet
-**Perché T2:** Uso misto professionale/personale — solo il cliente conosce la proporzione.
-
-**Regola TUIR:** Telefono fisso e cellulare: 80% deducibile se uso promiscuo (limite fiscale). Internet: proporzione uso professionale.
-
-**Requisiti dal cliente:** Conferma se linea esclusivamente professionale o mista.
-
-### T2-IT-4: Spese di Rappresentanza
-**Perché T2:** La natura (con cliente o da solo) e il motivo professionale devono venire dal cliente.
-
-**Regole TUIR art. 54 c.5:**
-- Pasti con clienti: 75% deducibili (con limite plafond annuo = 1% dei compensi)
-- Omaggi: 75% fino a €50 unitario
-- Senza documentazione del cliente presente: non deducibili
-
-### T2-IT-5: Regime Forfettario vs Ordinario
-**Perché T2:** La scelta ottimale dipende da dati specifici del cliente (ammontare spese reali, detrazioni personali disponibili).
-
-**Calcolo comparativo necessario:**
-- Ordinario: compensi − spese − INPS → IRPEF progressiva
-- Forfettario: compensi × 78% − INPS ridotta → 15% flat
-- Considerare anche detrazioni personali (figli, mutuo, spese mediche) che si perdono con forfettario
-
----
-
-## Section 7 — Excel Working Paper
-
-### Foglio 1: Compensi (Revenue)
-| Colonna | Contenuto |
-|---|---|
-| A | Data incasso |
-| B | Cliente |
-| C | N° fattura |
-| D | Importo IVA esclusa (€) |
-| E | IVA (se applicabile) |
-| F | Totale fattura |
-| G | Categoria (Compensi RE / Altro / Escludere) |
-
-**Totale compensi:** `=SUMIF(G:G,"Compensi RE",D:D)`
-
-### Foglio 2: Spese Inerenti
-| Colonna | Contenuto |
-|---|---|
-| A | Data pagamento |
-| B | Fornitore |
-| C | Importo IVA esclusa (€) |
-| D | Categoria |
-| E | % utilizzo professionale |
-| F | Importo deducibile (=C×E) |
-| G | Riferimento giustificativo |
-
-### Foglio 3: Quadro RE Riepilogo
-| Linea | Rif. Quadro RE | Importo |
+| Narration | Pattern | Gross Amount |
 |---|---|---|
-| Compensi lordi | RE5 | |
-| Spese inerenti | RE14 | |
-| INPS GS 50% | RE17 | |
-| **Reddito netto** | RE20 | |
-| INPS GS 50% restante | Quadro RP | |
+| BONIFICO DA STUDIO GAMBA | I-01 | EUR 3,500.00 |
+| BONIFICO DA FREELANCE CORP | I-01 | EUR 2,200.00 |
+| STRIPE PAYMENTS EUROPE | I-04 | EUR 1,850.00 (net); gross-up: assume ~2.9%+0.30 fee → ~EUR 1,905.81 |
+| BONIFICO DA MEDIA HOUSE | I-01 | EUR 4,100.00 |
+| **Total gross receipts** | | **EUR 11,705.81** |
 
-### Foglio 4: IRPEF
-| Linea | Importo |
-|---|---|
-| Reddito complessivo | |
-| Oneri deducibili (Quadro RP) | |
-| Reddito imponibile | |
-| IRPEF lorda (aliquote) | |
-| Detrazioni (lavoro autonomo, familiari, ecc.) | |
-| IRPEF netta | |
-| Acconti versati | |
-| **IRPEF a saldo / rimborso** | |
+**Step 2 — Expenses**
+
+| Narration | Pattern | Amount | Deductible |
+|---|---|---|---|
+| SPESE BANCARIE | E-16 | EUR 4.50 | EUR 4.50 |
+| FASTWEB INTERNET | E-03 | EUR 35.90 × 12 = EUR 430.80 | EUR 344.64 (80%) |
+| ADOBE CREATIVE CLOUD | E-05 | EUR 59.99 × 12 = EUR 719.88 | EUR 719.88 (100%) |
+| CONTRIBUTI GESTIONE SEPARATA | E-12 | EUR 1,800.00 | EUR 1,800.00 (100%) |
+| COMMERCIALISTA | E-06 | EUR 500.00 | EUR 500.00 |
+| TRENITALIA | E-08 | EUR 89.00 | EUR 89.00 (professional) |
+| F24 ACCONTO IRPEF | E-13 | EUR 3,000.00 | EUR 0 (not deductible) |
+| **Total deductible expenses** | | | **EUR 3,458.02** |
+
+**Step 3 — Net Income**
+
+```
+Gross receipts:          EUR 11,705.81
+Less deductible expenses: EUR  3,458.02
+Net income (Quadro RE):  EUR  8,247.79
+```
+
+**Step 4 — INPS Gestione Separata (final)**
+
+```
+EUR 8,247.79 × 26.07% = EUR 2,150.99
+Less advance paid:       EUR 1,800.00
+Balance due:             EUR   350.99
+Deductible from IRPEF base: EUR 2,150.99 (adjust if advance differs from actual)
+```
+
+Note: Net income for IRPEF = EUR 8,247.79 − additional INPS adjustment if any. For simplicity here use EUR 8,247.79.
+
+**Step 5 — IRPEF**
+
+```
+EUR 8,247.79 × 23% = EUR 1,896.99
+Detrazione lavoro autonomo (income EUR 8,247.79):
+  = EUR 500 + [1,200 × (28,000 − 8,247.79) / 22,500]
+  = EUR 500 + [1,200 × 19,752.21 / 22,500]
+  = EUR 500 + EUR 1,053.45 = EUR 1,553.45
+IRPEF net = EUR 1,896.99 − EUR 1,553.45 = EUR 343.54
+```
+
+**Step 6 — Addizionali (Lombardia, Milan)**
+
+```
+Regionale (Lombardia 1.23%): EUR 8,247.79 × 1.23% = EUR 101.45
+Comunale (Milan 0.80%):      EUR 8,247.79 × 0.80% = EUR  65.98
+Total addizionali:            EUR 167.43
+```
+
+**Total tax:** EUR 343.54 + EUR 167.43 = **EUR 510.97**
+
+---
+
+### Example 2 — UniCredit (Turin, IT Consultant)
+
+**Bank:** UniCredit PDF statement (manual parse)
+**Client:** Marco Ferretti, IT consultant, Turin, Gestione Separata
+
+Key transactions:
+- BONIFICO VB DA ACCENTURE SRL: EUR 6,500/month × 10 = EUR 65,000
+- MICROSOFT 365 BUSINESS: EUR 12.50/month
+- SPESE BANCARIE: EUR 3.00/month
+- FORMAZIONE UDEMY/COURSERA: EUR 250 total
+- F24 INPS GESTIONE SEPARATA: EUR 8,500 (acconti)
+
+**Net income:** EUR 65,000 − EUR 250 (training) − EUR 36 (bank) − EUR 150 (Microsoft 80%) − EUR 16,945.50 (INPS 26.07%) = **EUR 47,618.50**
+
+IRPEF: EUR 28,000 × 23% + EUR 19,618.50 × 35% = EUR 6,440 + EUR 6,866.48 = EUR 13,306.48
+Detrazione: income > EUR 28,000 → EUR 500 × (50,000 − 47,618.50) / 22,000 = EUR 54.12
+IRPEF net: EUR 13,306.48 − EUR 54.12 = **EUR 13,252.36**
+
+Flag: Gross receipts EUR 65,000 — below EUR 85,000 forfettario threshold, but single client — verify no regime forfettario election was active.
+
+---
+
+### Example 3 — FinecoBank (Rome, Photographer)
+
+**Bank:** FinecoBank digital statement (CSV)
+**Client:** Sofia Mancini, photographer, Rome, no cassa
+
+Key transactions:
+- ACCREDITO BONIFICO clienti: EUR 28,000 total
+- NEXI POS VERSAMENTO (card payments on-site): EUR 7,000 total
+- AFFITTO STUDIO FOTOGRAFICO: EUR 600/month = EUR 7,200
+- ENEL ENERGIA studio: EUR 120/month = EUR 1,440 (100% professional premises)
+- ATTREZZATURA FOTOGRAFICA (equipment purchase > EUR 516.46): EUR 3,500 → ammortamento 25% = EUR 875 deductible year 1
+- ASSICURAZIONE RC PROFESSIONALE: EUR 350
+
+**Net income:** EUR 35,000 − EUR 7,200 − EUR 1,440 − EUR 875 − EUR 350 − EUR 9,124.50 (INPS 26.07%) = **EUR 16,010.50**
+
+IRPEF: EUR 16,010.50 × 23% = EUR 3,682.42
+Detrazione: EUR 500 + [1,200 × (28,000 − 16,010.50) / 22,500] = EUR 500 + EUR 639.40 = EUR 1,139.40
+IRPEF net: EUR 3,682.42 − EUR 1,139.40 = **EUR 2,543.02**
+
+Note: Equipment EUR 3,500 > EUR 516.46 threshold — cannot fully expense in year 1; ammortamento table applies (25% for fotocamere/attrezzatura).
+
+---
+
+### Example 4 — N26 Italy (Florence, Translator/Copywriter)
+
+**Bank:** N26 app CSV (comma-delimited, EUR amounts without thousands separator)
+**Client:** Luca Bianchi, translator, Florence, no pension fund
+
+Key income: STRIPE PAYOUT EUR 22,000 (net of fees), PayPal ACCREDITO EUR 5,500 (net)
+
+Gross-up: Stripe ~EUR 22,660 / PayPal ~EUR 5,664 = EUR 28,324 gross receipts
+
+Key expenses: FASTWEB 80% = EUR 344, ADOBE 100% = EUR 720, INPS contributions EUR 7,378 (26.07%)
+
+Net income: EUR 28,324 − EUR 344 − EUR 720 − EUR 7,378 = **EUR 19,882**
+
+IRPEF net of detrazione: EUR 19,882 × 23% = EUR 4,572.86 − EUR 1,265 (threshold detrazione) = wait — income EUR 19,882 > EUR 5,500; use formula: EUR 500 + [1,200 × (28,000 − 19,882) / 22,500] = EUR 500 + EUR 432.96 = EUR 932.96
+
+IRPEF: EUR 4,572.86 − EUR 932.96 = **EUR 3,639.90**
+
+Note: N26 Italy CSV exports use DD/MM/YYYY date format; amounts use period decimal separator, no thousands separator.
+
+---
+
+### Example 5 — Hype Business (Naples, E-commerce)
+
+**Bank:** Hype Business statement
+**Client:** Anna Greco, e-commerce seller, Naples
+
+Note: If e-commerce generates redditi d'impresa (business income), Quadro RE does NOT apply — Quadro RF (impresa) applies. Flag immediately if client is registered as impresa individuale.
+
+Assuming **lavoro autonomo** status (occasional/consulting, not impresa):
+- SUMUP PAYOUT (card sales): EUR 15,000
+- Refunds issued to customers: EUR 800 → deduct from gross
+- Hosting/platform fees (Shopify/WooCommerce): EUR 500 (100% deductible)
+
+Net receipts: EUR 15,000 − EUR 800 = EUR 14,200
+Net income: EUR 14,200 − EUR 500 − EUR 3,701.94 (INPS) = **EUR 9,998.06**
+
+Flag: E-commerce structure — confirm lavoro autonomo vs. impresa individuale before filing Quadro RE.
+
+---
+
+### Example 6 — BancoBPM (Bergamo, Architect)
+
+**Bank:** BancoBPM PDF (tabular format, Dare/Avere columns)
+**Client:** Roberto Villa, architect, Bergamo, Inarcassa member
+
+Key note: Architects are Inarcassa members → Gestione Separata does NOT apply. Inarcassa rate: ~14.5% subjective contribution + integrative 4%. Verify current Inarcassa rates separately.
+
+Income: EUR 85,000 gross (below EUR 85,000 threshold — wait: EUR 85,000 equals threshold — forfettario cap is EUR 85,000; amounts > EUR 85,000 preclude forfettario. At exactly EUR 85,000 forfettario still eligible. Verify with client.)
+
+For regime ordinario calculation:
+IRPEF: EUR 28,000 × 23% + EUR 22,000 × 35% + EUR 35,000 × 43% = EUR 6,440 + EUR 7,700 + EUR 15,050 = EUR 29,190
+Detrazione: income > EUR 50,000 → EUR 0
+IRPEF net: **EUR 29,190**
+
+Flag: Inarcassa contributions deductible from income — collect Inarcassa annual statement for exact amounts. High-income flag (> EUR 85,000 gross).
+
+---
+
+## Section 5 — Tier 1 Rules (Apply Directly)
+
+**T1-IT-1 — Cash basis for freelancers**
+Italian freelancers (liberi professionisti) use the **cassa** (cash) principle: income is taxed when received, expenses are deductible when paid. Invoice date is irrelevant for timing.
+
+**T1-IT-2 — INPS Gestione Separata deductibility**
+All INPS Gestione Separata contributions paid in the fiscal year are 100% deductible from professional income. This reduces taxable income before applying IRPEF brackets. Apply without escalating.
+
+**T1-IT-3 — Telecoms 80% cap**
+All telephone and internet expenses — mobile, fixed, broadband — are subject to a statutory 80% deductibility cap under Art. 54 TUIR. Apply 80% to all telecom narrations without exception.
+
+**T1-IT-4 — Vehicles 20% cap**
+Car purchase, hire, lease, fuel, and maintenance are capped at 20% deductibility under Art. 164 TUIR for professionals. Exception: vehicles exclusively assigned to employees (100%) — flag for reviewer, do not apply automatically.
+
+**T1-IT-5 — Equipment threshold (beni strumentali)**
+Assets costing ≤ EUR 516.46 (unit cost) may be fully expensed in year of purchase. Assets > EUR 516.46 must be depreciated over their useful life using the Ministerial ammortamento table. Never fully expense assets > EUR 516.46 in year 1.
+
+**T1-IT-6 — IVA (VAT) not included in income or expenses**
+Amounts subject to IVA: strip IVA before computing professional income. Gross receipts = invoiced amount ex-IVA. Deductible expenses = cost ex-IVA (IVA is separately recovered via IVA return or disallowed if pro-rated). Do not double-count IVA.
+
+**T1-IT-7 — F24 tax payments are not deductible**
+IRPEF (saldo and acconti), addizionali, and IVA paid via F24 are tax payments, not business expenses. Never include F24 tax payments as deductible expenses.
+
+**T1-IT-8 — Hospitality (meals/accommodation) 75% cap**
+Restaurant, hotel, and entertainment expenses incurred for professional purposes are capped at 75% deductibility. Strictly social meals are 0% deductible.
+
+---
+
+## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
+
+| Code | Situation | Escalation Reason | Suggested Treatment |
+|---|---|---|---|
+| T2-IT-1 | Home office deduction claimed | Portion of rent/utilities attributable to professional use requires documented floor area calculation | Accept only dedicated professional space; estimate pro-rata if client provides layout |
+| T2-IT-2 | Mixed-use vehicle (auto ad uso promiscuo) | 20% cap applies unless vehicle is exclusively professional or employee-assigned | Default to 20%; upgrade to higher only with written assignment evidence |
+| T2-IT-3 | Regime ordinario vs. regime forfettario comparison | Client approaching EUR 85,000 threshold or asking which is better | Present both calculations; do not recommend — flag for accountant |
+| T2-IT-4 | Cassa previdenziale contributions (Inarcassa, ENPAM, etc.) | Rates differ by profession and year; not standard Gestione Separata | Collect annual Inarcassa/cassa statement; do not estimate |
+| T2-IT-5 | Rappresentanza (entertainment/promotional) expenses | Deductible at 75% if < 1% of revenues; above 1% may be disallowed | Flag if total entertainment > 1% of gross |
+| T2-IT-6 | Compensation received from foreign clients (non-resident payor) | Withholding tax may apply; foreign tax credit possible | Flag — requires double-tax treaty analysis |
+| T2-IT-7 | Crypto income or NFT sales | Italian treatment evolving — imposta sostitutiva 26% on gains; separate from professional income | Flag — do not include in Quadro RE; separate Quadro RT/RW treatment |
+| T2-IT-8 | Occasional work (lavoro autonomo occasionale) vs. habitual | Occasional work < EUR 5,000/year: no INPS obligation, different withholding rules | Confirm habitual/occasional status before applying INPS |
+
+---
+
+## Section 7 — Excel Working Paper Template
+
+```
+ITALIAN INCOME TAX WORKING PAPER (REGIME ORDINARIO)
+Taxpayer: _______________  CF: _______________  FY: 2025  Region: _______________
+
+SECTION A — INCOME (Quadro RE)
+                                        EUR
+Gross professional receipts             ___________
+Less: returned amounts/refunds          (__________)
+Net receipts                            ___________
+
+SECTION B — DEDUCTIBLE EXPENSES
+Rent (professional portion)             ___________
+Utilities (professional portion)        ___________
+Telecoms (80% of total)                ___________
+Software subscriptions                  ___________
+Professional fees (commercialista etc.) ___________
+Legal fees                              ___________
+Training / CPD                          ___________
+Travel (trains, flights — professional) ___________
+Accommodation & meals (75%)            ___________
+Professional insurance                  ___________
+Bank charges                            ___________
+Capital allowances (ammortamento)       ___________
+Other deductible expenses               ___________
+INPS Gestione Separata / Cassa         ___________
+TOTAL DEDUCTIBLE EXPENSES               ___________
+
+SECTION C — NET INCOME (Quadro RE, line RE23)
+Net professional income (A − B)         ___________
+
+SECTION D — IRPEF COMPUTATION
+IRPEF gross (bracket calculation)       ___________
+Less: Detrazione lavoro autonomo        (___________)
+IRPEF net                               ___________
+Less: ritenute d'acconto withheld       (___________)
+Less: acconti paid (F24)               (___________)
+IRPEF balance due / (refund)            ___________
+
+SECTION E — ADDIZIONALI
+Addizionale regionale (___%)           ___________
+Addizionale comunale (___%)            ___________
+Total addizionali                       ___________
+
+SECTION F — INPS GESTIONE SEPARATA
+Net income × 26.07% (or cassa rate)    ___________
+Less: advance contributions paid        (___________)
+INPS balance due                        ___________
+
+SECTION G — REVIEWER FLAGS
+[ ] Regime forfettario threshold check (< EUR 85,000?)
+[ ] Vehicle deduction — 20% cap applied?
+[ ] Equipment > EUR 516.46 — depreciation schedule used?
+[ ] Telecoms — 80% cap applied?
+[ ] Home office — documented floor area?
+[ ] Acconto payments verified against F24 receipts
+[ ] IVA stripped from all amounts
+```
 
 ---
 
 ## Section 8 — Bank Statement Reading Guide
 
-### UniCredit
-- Format: `Data valuta | Descrizione | Dare (€) | Avere (€) | Saldo (€)`
-- Date: DD/MM/YYYY
-- Income = Avere (credit) column
-- Key: "BON. ACCRED." = bonifico accreditato (incoming wire)
-
 ### Intesa Sanpaolo
-- Format: `Data operaz. | Causale | Addebiti (€) | Accrediti (€) | Saldo (€)`
-- Date: DD/MM/YYYY
-- Income = Accrediti
+- Export: CSV via online banking ("Scarica Movimenti") — semicolon-delimited
+- Columns: `Data movimento; Valuta; Descrizione; Dare (debit); Avere (credit)`
+- Amount format: thousands separator = `.`, decimal = `,` (e.g., `1.234,56`)
+- Date format: DD/MM/YYYY
+- Credit narrations: `BONIFICO DA [sender]`, `ACCREDITO BONIFICO SEPA`
+- Debit narrations: `BONIFICO A FAVORE`, `ADDEBITO`, `PAGAMENTO F24`
 
-### Banco BPM
-- Format: `Data | Descrizione | Importo addebitato | Importo accreditato | Saldo`
-- Date: DD/MM/YYYY
-- Income = Importo accreditato
+### UniCredit
+- Export: CSV or PDF ("Estratto conto")
+- Columns: `Data; Descrizione operazione; Dare; Avere; Saldo`
+- Credit narrations often prefixed: `VB DA [sender]` or `ACCREDITO BONIF. DA`
+- UniCredit uses `VB` (versamento bancario) prefix in many narrations
 
-### Monte dei Paschi di Siena (MPS)
-- Format: `Data | Descrizione | Uscite (€) | Entrate (€) | Saldo (€)`
-- Date: DD/MM/YYYY
-- Income = Entrate column
+### BancoBPM
+- Export: PDF or Excel from online portal
+- Columns: `Data; Causale; Importo Dare; Importo Avere`
+- Uses standard ABI causale codes alongside description text
 
-### Fineco Bank
-- Format: `Data valuta | Descrizione | Dare (€) | Avere (€) | Saldo (€)`
-- Date: DD/MM/YYYY
-- Income = Avere; "ACCREDITO BONIFICO" = incoming wire
+### FinecoBank
+- Export: CSV ("Scarica CSV") from "Conto" > "Movimenti"
+- Columns: `Data; Entrata; Uscita; Descrizione; Tipo`
+- Amount format: no thousands separator, comma decimal (e.g., `1234,56`)
+- Date format: DD/MM/YYYY
+- All electronic transfers show as `BONIFICO` with IBAN of counterpart
 
-### BPER Banca
-- Format: `Data | Descrizione | Addebito (€) | Accredito (€) | Saldo (€)`
-- Date: DD/MM/YYYY
-- Income = Accredito
+### N26 Italy
+- Export: CSV from app ("Scarica estratto conto")
+- Columns: `Date,Payee,Account number,Transaction type,Payment reference,Amount (EUR),Amount (Foreign Currency),Type Foreign Currency,Exchange Rate`
+- Amount format: no thousands separator, period decimal (e.g., `1234.56`) — note: opposite of Italian banks
+- Date format: YYYY-MM-DD
+- Stripe payouts appear as: `Stripe` in Payee column
 
-### Exclusion Patterns (all Italian banks)
-| Pattern | Action |
-|---|---|
-| BONIFICO VERSO CONTO PROPRIO | ESCLUSO — trasferimento interno |
-| PAGAMENTO CARTA / ADDEBITO CARTA | ESCLUSO — singole spese già catturate |
-| VERSAMENTO IVA F24 | ESCLUSO — non deducibile IRPEF |
-| VERSAMENTO ACCONTO IRPEF F24 | Accredito verso erario — NON spesa (diventa credito in dichiarazione) |
-| RIENTRO PRESTITO / MUTUO (quota capitale) | ESCLUSO — non è spesa professionale |
-| ADDEBITO CANONE BANCA | Sì — spese bancarie deducibili |
+### Hype Business
+- Export: CSV from Hype app
+- Simple format: `Data;Descrizione;Importo;Tipo`
+- Tipo: `ENTRATA` (credit) or `USCITA` (debit)
+- NEXI/card settlements appear as `NEXI PAGAMENTI`
+
+### Revolut Italy
+- Export: CSV ("Statements" in app)
+- Columns: `Type,Product,Started Date,Completed Date,Description,Amount,Fee,Currency,State`
+- Amounts in EUR with period decimal; filter `State = COMPLETED` only
 
 ---
 
 ## Section 9 — Onboarding Fallback
 
-**Priorità 1 (bloccante):**
-1. "Qual è stato il totale dei tuoi compensi lordi (IVA esclusa) per l'anno fiscale?"
-2. "Stai usando il regime forfettario o il regime ordinario?"
-3. "Qual è il tuo codice ATECO di attività?"
+If the client cannot provide all required inputs, use this script:
 
-**Priorità 2 (per calcolo accurato):**
-4. "Hai ricevute e giustificativi per tutte le spese professionali?"
-5. "Lavori da casa? Se sì: superficie totale appartamento e superficie ufficio?"
-6. "Hai versato contributi INPS Gestione Separata o contributi a una cassa professionale? Importo totale?"
-7. "Sei single, sposato/a, o con figli a carico?"
+**Missing bank statements:**
+> "To compute your IRPEF accurately I need your full 2025 bank statements (January–December). Please download from your bank's online portal: Intesa Sanpaolo → 'Scarica Movimenti'; UniCredit → 'Estratto conto'; FinecoBank → 'Scarica CSV'. If unavailable, your commercialista can request them directly from the bank."
 
-**Priorità 3 (detrazioni aggiuntive):**
-8. "Hai avuto spese mediche significative nell'anno?"
-9. "Hai un mutuo per la prima casa? Importo interessi passivi pagati?"
-10. "Hai già versato acconti IRPEF? Importo totale degli acconti versati?"
+**Unknown region/municipality:**
+> "Your addizionale regionale and comunale rates depend on your tax residence (residenza fiscale) as of 31 December 2025. Please confirm your comune of residence on that date. If unsure, check your last Modello Redditi or identity documents."
 
-**Approccio conservativo:**
-- Usa regime forfettario se redditi ≤ €85,000 e nessuna documentazione spese
-- Non includere spese non documentate
-- Per home office: escludi se non disponibili dati metratura
+**Cassa previdenziale unknown:**
+> "To apply the correct social contribution rate I need to know if you are enrolled in a cassa previdenziale (e.g., ENPAM for doctors, Inarcassa for architects). If you receive a quarterly statement from a cassa, you are enrolled there and Gestione Separata does NOT apply. If you have no cassa, INPS Gestione Separata applies at 26.07%."
+
+**Expense receipts missing:**
+> "Italian tax law requires documentary evidence (ricevuta, fattura, or bank payment) for all deductions. I cannot include expenses for which you have no evidence. Please retrieve receipts from suppliers or, where unavailable, note the expense as unsubstantiated — it will be excluded from deductions."
+
+**Regime ordinario vs. forfettario unclear:**
+> "Before proceeding under regime ordinario, confirm: (1) Did your gross receipts in 2024 exceed EUR 85,000? (2) Do you have any employment income simultaneously? If gross receipts stayed below EUR 85,000 and you have no employment income, regime forfettario may be available and more beneficial. This skill covers only regime ordinario — see it-regime-forfettario.md for forfettario analysis."
 
 ---
 
 ## Section 10 — Reference Material
 
-### Quadro RE — Linee Principali (Modello Redditi PF)
-| Linea | Descrizione |
+### Key Legislation
+- **DPR 917/1986 (TUIR)** — Testo Unico delle Imposte sui Redditi; Art. 53 (lavoro autonomo), Art. 54 (deductions), Art. 164 (vehicles)
+- **Legge di Bilancio 2025** — annual budget law adjusting brackets and detrazioni
+- **DPR 633/1972** — IVA; relevant for VAT treatment of receipts/expenses
+
+### Filing Deadlines 2025 (FY 2024 return)
+| Deadline | Event |
 |---|---|
-| RE5 | Compensi lordi (totale) |
-| RE6 | Compensi in natura / autoconsumo |
-| RE14 | Spese inerenti |
-| RE17 | Quote di ammortamento |
-| RE19 | INPS / contributi previdenziali (50%) |
-| RE20 | Reddito o perdita netta |
+| 30 June 2025 | Modello Redditi PF filing deadline (online) |
+| 30 June 2025 | IRPEF saldo + 1st acconto (40%) payment |
+| 30 November 2025 | 2nd acconto (60%) payment |
 
-### Modulo F24 — Codici Tributo Principali
-| Codice | Descrizione |
-|---|---|
-| 4001 | IRPEF saldo |
-| 4033 | Primo acconto IRPEF |
-| 4034 | Secondo acconto IRPEF |
-| 0301–0303 | Addizionale regionale |
-| 3844 | Addizionale comunale |
+### INPS Gestione Separata 2025 Rates
+- No other coverage: 26.07%
+- Pensioners / those with other mandatory coverage: 24%
+- Contribution ceiling: EUR 119,650
 
-### Riferimenti Normativi
-- TUIR art. 54: Redditi di lavoro autonomo (deduzione spese)
-- TUIR art. 53: Definizione lavoro autonomo
-- Legge 190/2014: Regime forfettario
-- D.Lgs. 446/1997: IRAP (se applicabile a liberi professionisti)
+### IRPEF Acconti Computation
+- Method 1 (storico): 100% of prior-year tax liability
+- Method 2 (previsionale): 100% of estimated current-year liability
+- Use whichever is lower (legal option)
 
-### Piattaforme Dichiarazione
-- **Redditi Online (SOGEI):** accessibile via SPID / CIE su agenziaentrate.gov.it
-- **CAF / Commercialista:** tramite abilitato
-- Scadenza: 31 ottobre ogni anno
-
----
-
-## Prohibitions
-- Non fornire consulenza su IVA (imposta sul valore aggiunto) — richiede skill separata IVA Italia
-- Non fornire consulenza su IRES (imposta sul reddito delle società) — questa skill copre solo persone fisiche
-- Non fornire consulenza su IRAP per liberi professionisti che potrebbero non essere soggetti — verificare con il cliente
-- Non fornire consulenza su successioni o donazioni
-- Non garantire l'accettazione di posizioni fiscali da parte dell'Agenzia delle Entrate — ogni situazione va verificata
-
-## Disclaimer
-Questa skill fornisce orientamento generale a scopo informativo e di pianificazione. Non costituisce consulenza fiscale. La normativa fiscale italiana è amministrata dall'Agenzia delle Entrate. I clienti devono consultare un dottore commercialista o esperto contabile iscritto all'albo per consigli specifici alla propria situazione. Le aliquote, le soglie e le deduzioni cambiano annualmente — verificare sempre le regole aggiornate su agenziaentrate.gov.it.
+### Useful References
+- Agenzia delle Entrate: agenziaentrate.gov.it
+- INPS Gestione Separata: inps.it/rubrica-del-sito/gestione-separata
+- Modello Redditi PF instructions: published annually by AdE (typically April)
+- Ammortamento table: DM 31/12/1988 (ministerial decree on depreciation rates)

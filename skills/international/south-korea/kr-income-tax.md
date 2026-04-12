@@ -1,609 +1,539 @@
 ---
 name: kr-income-tax
 description: >
-  Use this skill whenever asked about South Korean income tax for self-employed individuals. Trigger on phrases like "comprehensive income tax", "종합소득세", "global income tax Korea", "사업소득", "business income Korea", "간편장부", "simplified bookkeeping", "복식부기", "double-entry Korea", "local income tax surtax", "estimated tax Korea", "Korean income tax return", or any question about filing or computing income tax for a Korean freelancer or self-employed person. Covers progressive brackets (6–45%), local income tax (10% surtax), bookkeeping method thresholds, standard deduction rates, personal deductions, withholding tax (원천징수), filing deadlines, and penalties.
+  Use this skill whenever asked about South Korean income tax for self-employed individuals. Trigger on phrases like "comprehensive income tax", "종합소득세", "global income tax Korea", "사업소득", "business income Korea", "간편장부", "simplified bookkeeping", "복식부기", "double-entry Korea", "local income tax surtax", "estimated tax Korea", "Korean income tax return", "Hometax Korea", "Kakao Pay income", "Naver Pay settlement", "KakaoBank statement", or any question about filing or computing income tax for a Korean freelancer or self-employed person. This skill covers progressive brackets (6--45%), local income tax (10% surtax), bookkeeping methods, standard deduction rates, personal deductions, estimated tax, filing deadlines, and penalties. ALWAYS read this skill before touching any Korean income tax work.
 version: 2.0
+jurisdiction: KR
+tax_year: 2025
+category: international
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# South Korea Income Tax — Self-Employed (종합소득세)
+# South Korea Income Tax (종합소득세) -- Self-Employed Skill v2.0
 
-## Section 1 — Quick Reference
+---
 
-### National Income Tax Brackets (2025)
-| Taxable Income (KRW) | Rate | Cumulative Deduction |
+## Section 1 -- Quick Reference
+
+| Field | Value |
+|---|---|
+| Country | South Korea (대한민국) |
+| Tax | Comprehensive Income Tax (종합소득세) + Local Income Tax (지방소득세, 10% surtax) |
+| Currency | KRW only |
+| Tax year | Calendar year (1 January -- 31 December) |
+| Primary legislation | Income Tax Act (소득세법) |
+| Supporting legislation | Local Tax Act (지방세법); Tax Procedures Act (국세기본법) |
+| Tax authority | National Tax Service (국세청, NTS) |
+| Filing portal | Hometax (hometax.go.kr) |
+| Filing deadline | 31 May of the following year |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires sign-off by a qualified 세무사 (tax accountant) or 공인회계사 (CPA) |
+| Skill version | 2.0 |
+
+### National Tax Rate Table (2025) [T1]
+
+| Taxable Income (KRW) | Rate | Deduction Amount (누진공제) |
 |---|---|---|
-| 0 – 14,000,000 | 6% | — |
-| 14,000,001 – 50,000,000 | 15% | ₩1,260,000 |
-| 50,000,001 – 88,000,000 | 24% | ₩5,760,000 |
-| 88,000,001 – 150,000,000 | 35% | ₩15,440,000 |
-| 150,000,001 – 300,000,000 | 38% | ₩19,940,000 |
-| 300,000,001 – 500,000,000 | 40% | ₩25,940,000 |
-| 500,000,001 – 1,000,000,000 | 42% | ₩35,940,000 |
-| Over 1,000,000,000 | 45% | ₩65,940,000 |
+| 0 -- 14,000,000 | 6% | 0 |
+| 14,000,001 -- 50,000,000 | 15% | 1,260,000 |
+| 50,000,001 -- 88,000,000 | 24% | 5,760,000 |
+| 88,000,001 -- 150,000,000 | 35% | 15,440,000 |
+| 150,000,001 -- 300,000,000 | 38% | 19,940,000 |
+| 300,000,001 -- 500,000,000 | 40% | 25,940,000 |
+| 500,000,001 -- 1,000,000,000 | 42% | 35,940,000 |
+| Above 1,000,000,000 | 45% | 65,940,000 |
 
-**Formula:** (Taxable income × rate) − cumulative deduction = national income tax
-**Local income tax (지방소득세):** 10% of national income tax (assessed separately, filed with municipality)
-**Total effective tax:** national tax + local income tax
+**Formula:** Tax = (Taxable Income x Rate) - Deduction Amount.
 
-### Standard Expense Deduction Rates (단순경비율 — Simple Standard Deduction)
-For taxpayers below the double-entry bookkeeping threshold who use the simplified standard deduction:
-| Business Type | Standard Deduction Rate |
+**Local Income Tax:** Add 10% of national income tax. Total effective rate = national tax x 110%.
+
+### Standard Deduction Rates (기준/단순경비율) -- Selected Business Types [T1]
+
+| Business Type (업종) | Simplified Deduction Rate (단순경비율) | Standard Deduction Rate (기준경비율) |
+|---|---|---|
+| IT/software services | ~72% | ~17% |
+| Design / creative services | ~69% | ~18% |
+| Consulting / management advice | ~67% | ~17% |
+| Retail trade | ~87% | ~10% |
+| Restaurant / food service | ~88% | ~8% |
+| Professional services (doctors, lawyers) | ~65% | ~15% |
+| Education / tutoring | ~73% | ~16% |
+
+*Exact rates are set annually by NTS. Confirm current rates on Hometax.*
+
+### Bookkeeping Thresholds [T1]
+
+| Revenue Threshold | Required Method |
 |---|---|
-| Retail / wholesale trade | 85–90% |
-| Service industry (general) | 60–75% |
-| Professional services (doctors, lawyers, engineers) | 60–65% |
-| Freelance/creative (writers, designers, artists) | 60–70% |
+| Below KRW 48,000,000 (most service industries) | Simplified bookkeeping (간편장부) permitted |
+| KRW 48,000,000 -- below double-entry threshold | Simplified bookkeeping OR double-entry |
+| Above KRW 75,000,000 (service) / 150,000,000 (manufacturing) | Double-entry bookkeeping (복식부기) required |
 
-**Note:** Standard deduction = Revenue × deduction rate. Net income = Revenue − standard deduction. Does not require expense receipts.
+### Conservative Defaults [T1]
 
-### Bookkeeping Threshold (2025)
-| Criteria | Required bookkeeping |
+| Ambiguity | Default |
 |---|---|
-| Revenue < ₩75,000,000 (most services) | Simple bookkeeping (간편장부) or standard deduction |
-| Revenue ≥ ₩75,000,000 (services) | Double-entry bookkeeping (복식부기) required |
-| Revenue < ₩150,000,000 (wholesale/retail) | Simple bookkeeping |
-| Revenue ≥ ₩150,000,000 (wholesale/retail) | Double-entry required |
-| Professional services (all revenues) | Double-entry always required for tax benefit |
+| Business type unknown | STOP -- business type determines deduction rate |
+| Bookkeeping method unknown | Simplified bookkeeping (간편장부) |
+| Deduction method unclear | Standard deduction rate (기준경비율) -- more conservative |
+| Estimated tax paid unknown | Nil -- will result in penalty calculation |
+| Family deduction eligibility unclear | No deduction until confirmed |
 
-### Key Personal Deductions (인적공제)
-| Deduction | Amount |
-|---|---|
-| Basic personal deduction (본인) | ₩1,500,000 |
-| Spouse deduction (income ≤ ₩1,000,000/year) | ₩1,500,000 |
-| Dependent deduction (each qualifying dependent) | ₩1,500,000 |
-| Elderly (70+) additional deduction | ₩1,000,000 per person |
-| Disability additional deduction | ₩2,000,000 per person |
-| Single-parent deduction | ₩1,000,000 |
+### Red Flag Thresholds [T1]
 
-### Key Tax Credits (세액공제)
-| Credit | Amount |
+| Flag | Threshold |
 |---|---|
-| Standard tax credit (소득세액공제) | 7% of national tax (cap ₩740,000 for income < ₩30M; ₩660,000 for ₩30M–₩40M; ₩500,000 for ₩40M–₩70M; reduced for higher) |
-| Insurance premium credit | 12% of premiums paid (medical, life, personal pension) |
-| Medical expense credit | 15% of expenses > 3% of income |
-| Education expense credit | 15% of education costs (children) |
-| Political contribution credit | 10%/15% depending on amount |
-| Pension account credit (연금계좌세액공제) | 12–15% of pension account contributions |
-
-### Conservative Defaults
-| Item | Default |
-|---|---|
-| Home office % | Do not assume — ask for floor area |
-| Vehicle business % | Do not assume — ask for mileage records |
-| Phone/internet | 50% if dual-use |
-| Bookkeeping method | Assume simple bookkeeping unless double-entry records provided |
-| Standard vs actual expenses | Use actual if receipts available and exceed standard deduction |
-
-### Red Flag Thresholds
-| Situation | Flag |
-|---|---|
-| Revenue > ₩75M (services) | Double-entry required — flag if only simple books kept |
-| Revenue > ₩100M | VAT registration threshold check |
-| Expenses > 80% of revenue | High — verify with receipts |
-| Home office > 30% | Aggressive — document |
-| No national pension (NPS) contributions | Likely missing deduction — ask |
+| Double-entry bookkeeping required | Revenue > KRW 75,000,000 (services) |
+| Estimated tax (중간예납) required | Prior year tax > KRW 300,000 |
+| VAT registration required | Revenue > KRW 48,000,000 (standard) |
+| Tax accountant (세무사) recommended | Revenue > KRW 100,000,000 |
 
 ---
 
-## Section 2 — Required Inputs & Refusal Catalogue
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-### Minimum Required Inputs
-1. Total gross business income (사업소득 총수입금액) for the tax year
-2. Bookkeeping method (simple, double-entry, or standard deduction)
-3. If actual expenses: itemised expenses with receipts
-4. Personal deductions applicable (spouse, children, parents)
-5. National Health Insurance (건강보험료) and National Pension (국민연금) premiums paid
-6. Withholding taxes (원천징수세액) already paid during the year
-7. Advance tax (중간예납) paid (if applicable)
+### Required Inputs
+
+**Minimum viable:** Bank statement for the full calendar year (January--December) in CSV, PDF, or pasted text, plus confirmation of business type (업종 코드) and bookkeeping method.
+
+**Recommended:** Withholding tax (원천징수) certificates from clients, prior year tax return, estimated tax (중간예납) payment receipts, national health insurance (국민건강보험) and pension (국민연금) payment receipts.
+
+**Ideal:** Complete books of accounts (간편장부 or 복식부기), all client invoices, expense receipts, asset register, prior year tax assessment (납세고지서).
 
 ### Refusal Catalogue
-**R-KR-1 — No expense documentation**
-If actual expense method claimed but no receipts: refuse undocumented expenses. State: "Without receipts or records, we cannot claim these expenses. Consider using the standard deduction rate (단순경비율) instead if your revenue is below the threshold."
 
-**R-KR-2 — Double-entry required but not maintained**
-If revenue exceeds the double-entry threshold and client only has simple records: flag as non-compliant. State: "Your revenue requires double-entry bookkeeping. Using the simplified method may result in penalties and a 20% additional tax on the amount not properly recorded."
+**R-KR-1 -- Foreign residents / non-residents.** "Non-resident taxation of Korean-source income has different rules. Out of scope -- escalate."
 
-**R-KR-3 — Personal expenses claimed as business**
-Refuse personal costs (personal travel, family meals, school fees) as business expenses. State: "These are personal expenses and cannot be deducted as business expenses under Korean income tax law."
+**R-KR-2 -- Corporations (법인).** "Corporations file Corporate Tax (법인세). Out of scope."
 
-**R-KR-4 — VAT amounts included in income**
-VAT (부가가치세) collected from clients must not be included in taxable income. State: "VAT collected is not your income — it must be excluded from business income before computing income tax."
+**R-KR-3 -- Financial income global taxation (금융소득 종합과세).** "If interest + dividends exceed KRW 20,000,000, these must be included in comprehensive income. Complex analysis required -- escalate."
 
-**R-KR-5 — Non-resident claiming resident deductions**
-Non-residents are not entitled to personal deductions. State: "Personal deductions are only available to tax residents. Please confirm your residence status."
+**R-KR-4 -- Real estate income and capital gains.** "Real estate rental income and gains on disposal require separate computation under different schedules. Escalate."
+
+**R-KR-5 -- Foreign income / DTAA.** "Cross-border income requires tax treaty analysis. Escalate."
 
 ---
 
-## Section 3 — Transaction Pattern Library
+## Section 3 -- Transaction Pattern Library
 
-### 3.1 Income Patterns
-| Bank Description Pattern | Income Type | Tax Treatment | Notes |
+This is the deterministic pre-classifier. When a bank statement line matches a pattern, apply the treatment directly. If no pattern matches, fall through to Tier 1 rules in Section 5.
+
+### 3.1 Income Patterns (Credits -- 입금)
+
+| Pattern | Tax Line | Treatment | Notes |
 |---|---|---|---|
-| 입금 / 이체 + client name | Business income (사업소득) | Include in gross revenue | Verify not a personal transfer |
-| 전신환 / 외화 입금 / SWIFT | Foreign client payment | Include — convert to KRW at receipt date rate (KEB Hana/BOK rate) | |
-| 세금계산서 발행 거래처 | Invoice payment | Include gross amount | Separate VAT component if registered |
-| 플랫폼 정산 (Kakao, Naver, Coupang) | Platform payout | Include gross (net of platform fees = add fees back as expense) | |
-| Upwork / Fiverr 입금 | Freelance platform | Include — convert USD to KRW | Platform fee = deductible |
-| PayPal 정산 | PayPal payout | Include KRW equivalent | |
-| 이자 수입 | Bank interest | 이자소득 — already taxed at source 15.4% | Separate income category |
-| 배당금 | Dividend | 배당소득 — separate | Not 사업소득 |
-| 임대 수입 | Rental income | 부동산임대소득 — separate schedule | Not 사업소득 |
-| 원천징수 후 지급 (net payment) | Withheld income | Gross up: net ÷ (1 − withholding rate) | Withholding = tax credit |
+| 타행입금 [client name] / 이체입금 | 사업소득 (business income) | Gross revenue | Wire transfer from business client |
+| 자동이체 입금 [client] | 사업소득 | Revenue | Auto-transfer standing order from client |
+| 카카오페이 입금 / KAKAOPAY | 사업소득 | Revenue | KakaoTalk Pay settlement -- digital platform |
+| 네이버페이 정산 / NAVERPAY | 사업소득 | Revenue | Naver Pay e-commerce settlement |
+| 쿠팡페이 정산 / COUPANG | 사업소득 | Revenue | Coupang marketplace settlement |
+| 토스 입금 / TOSS CREDIT | 사업소득 | Revenue | Toss digital payment receipt |
+| 원천징수 후 입금 | 사업소득 (gross-up required) | Revenue -- GROSS UP | Client withheld 3.3% (local 0.33%); gross up to invoice amount |
+| 급여이체 [employer] | 근로소득 | NOT business income | Employment salary |
+| 이자입금 / 이자수익 [bank] | 이자소득 | NOT business income | Bank interest -- separate income type |
+| 배당금 입금 | 배당소득 | NOT business income | Dividend income |
+| 세금환급 국세청 | EXCLUDE | Not income | Tax refund |
+| 대출금 입금 | EXCLUDE | Not income | Loan proceeds |
 
-### 3.2 Expense Patterns
-| Bank Description Pattern | Expense Category | Deductible? | Notes |
+### 3.2 Expense Patterns (Debits -- 출금)
+
+| Pattern | Tax Category | Treatment | Notes |
 |---|---|---|---|
-| SKT / KT / LGU+ 통신비 | Phone | Partial — business % | T2: confirm % |
-| KT 인터넷 / LGU+ 가정인터넷 | Internet | Home office % | T2: floor area |
-| 전기요금 / 가스요금 / 수도요금 | Utilities | Home office % | T2: floor area |
-| 임대료 / 월세 | Rent | Home office % if home; 100% if office | T2 if home |
-| 카페 결제 / 스타벅스 (business meeting) | Meals/entertainment | Yes — business purpose documented | Keep receipts with names |
-| 교통비 / 지하철 / 버스 | Transport | Yes — business trips | Personal commute excluded |
-| 항공권 / 숙박비 | Travel | Yes — business purpose | Document |
-| 소프트웨어 / 구독서비스 | Software/SaaS | Yes — 100% | Business tools |
-| 도서 / 자료 구매 | Books/research | Yes — business-related | |
-| 광고비 / 마케팅 | Advertising | Yes — 100% | |
-| 세금계산서 수취 거래처 | B2B expenses | Yes — with 세금계산서 | Required for VAT credit too |
-| 건강보험료 (직장가입자 아닌 경우) | National health insurance | Social insurance deduction (별도) | Not a business expense |
-| 국민연금 (지역가입자) | National pension | Social insurance deduction (별도) | Not a business expense |
-| 부가가치세 납부 | VAT payment | EXCLUDE — not income tax deductible | |
-| 소득세 납부 | Income tax payment | EXCLUDE | |
-| 은행 수수료 | Bank charges | Yes — 100% | |
-| 세무사 / 회계사 비용 | Tax/accounting fees | Yes — 100% | |
+| 사무실임대료 / 임차료 [landlord] | 임차료 (rent) | Fully deductible | Business premises rent |
+| 공과금 / 전기요금 [KEPCO/한국전력] | 수도광열비 (utilities) | Business portion deductible | Home office: apportion |
+| 도시가스 / 가스요금 | 수도광열비 | Business portion deductible | Apportion if home office |
+| 인터넷 요금 [KT/SK브로드밴드/LG유플러스] | 통신비 (communications) | Business portion deductible | Mixed use: apportion |
+| 휴대폰 요금 [SK텔레콤/KT/LG유플러스] | 통신비 | Business portion deductible | Mixed use: apportion |
+| 교통비 [대중교통/버스/지하철] | 여비교통비 (travel) | Deductible if business | T-money/Cashbee transit charges |
+| KTX / SRT [train] | 여비교통비 | Deductible if business purpose | Keep boarding pass |
+| 대한항공 / 아시아나 / 저비용항공사 | 여비교통비 | Deductible if business | |
+| 접대비 / 식사 [restaurant] | 접대비 (entertainment) | Limited deduction | Cap applies; document names, purpose |
+| 도서비 [Kyobo/Aladin] | 소모품비 (consumables) | Deductible if professional literature | |
+| 교육훈련비 [Fastcampus/패스트캠퍼스/학원] | 교육훈련비 | Fully deductible if business-related | |
+| Adobe / Microsoft / Google Workspace | 소모품비 / 임차료 | Deductible if business | Subscription: current expense |
+| Figma / Notion / Slack | 소모품비 | Deductible | Business SaaS |
+| 세무사 수수료 | 지급수수료 (professional fees) | Fully deductible | Tax accountant fees |
+| 법무사 / 변호사 수수료 | 지급수수료 | Deductible if business-related | Legal fees |
+| 국민건강보험 / 건보 | 소득공제 (NOT 필요경비) | EXCLUDE from business expenses | Health insurance = income deduction |
+| 국민연금 / 연금보험료 | 소득공제 (NOT 필요경비) | EXCLUDE from business expenses | Pension = income deduction |
+| 종합소득세 납부 / 소득세 | EXCLUDE | Tax payment | Not deductible |
+| 지방소득세 납부 | EXCLUDE | Local tax payment | Not deductible |
+| 중간예납 국세청 | EXCLUDE | Estimated tax prepayment | Credit against final liability |
+| 개인인출 / 본인출금 | EXCLUDE | Drawings | Not business expense |
 
-### 3.3 Withholding Tax Credits (원천징수)
-| Source | Withholding Rate | Treatment |
+### 3.3 Platform and Digital Payment Patterns
+
+| Pattern | Treatment | Notes |
 |---|---|---|
-| 사업소득 (services to companies) | 3.3% (3% tax + 0.3% local) | Credit against final tax |
-| 이자소득 | 15.4% (14% + 1.4%) | Separate — final withholding usually |
-| 프리랜서 방송·예술 소득 | 3.3% | Credit against final tax |
-| Foreign wire (no withholding) | 0% at source | Include gross in income |
+| 카카오뱅크 이체 / KakaoBank Transfer | Business income | Confirm client vs personal transfer |
+| 토스뱅크 입금 / TossBank Credit | Business income | Digital bank receipt |
+| 케이뱅크 이체 / K bank | Business income | Digital bank |
+| 네이버파이낸셜 / 네이버페이 | Business income | Naver Pay settlement |
+| 원천징수 3.3% | Revenue gross-up required | National 3% + local 0.3%; client deducted before paying |
 
-### 3.4 Platform Payouts (Korea-Specific)
-| Platform | Currency | Notes |
+### 3.4 Withholding Tax (원천징수) -- 3.3% Rate
+
+Most self-employed Koreans have 3.3% withheld by corporate clients (national 3% + local income tax 0.3%). This appears in bank statements as net amounts.
+
+**Rule:** Always gross up to the full invoice amount. The withheld 3.3% is a tax credit on the final return.
+
+Example: Client pays KRW 966,700 (net of 3.3% withholding on KRW 1,000,000 invoice). Report gross income KRW 1,000,000; claim KRW 33,300 as withholding tax credit.
+
+---
+
+## Section 4 -- Worked Examples
+
+### Example 1 -- Standard Client Wire Transfer
+
+**Input line (KB국민은행 Kookmin Bank statement):**
+`2025.03.15 | 타행이체 ABC디자인컴퍼니 | 입금 970,100 | 잔액 4,521,300`
+
+**Reasoning:**
+Wire transfer from a business client. KRW 970,100 received is likely net of 3% national withholding tax. If the invoice was KRW 1,000,000, client withheld KRW 30,000 (3%) and paid KRW 970,000. The local income tax portion (0.3% = KRW 3,000) was also withheld separately. Total gross income: KRW 1,000,000. Total withholding credit: KRW 33,000.
+
+**Classification:** 사업소득 KRW 1,000,000 (gross). Withholding credit KRW 33,000.
+
+### Example 2 -- Kakao Pay Settlement
+
+**Input line (카카오뱅크 KakaoBank statement):**
+`2025-05-10 | 카카오페이 정산 | +350,000 | 잔고 2,840,000`
+
+**Reasoning:**
+KakaoTalk Pay settlement for goods/services sold. This is a digital platform payout representing revenue earned. Check KakaoPay business dashboard for gross sales vs fees.
+
+**Classification:** 사업소득 KRW 350,000 (or gross up if platform fees deducted separately).
+
+### Example 3 -- National Pension Premium
+
+**Input line (신한은행 Shinhan Bank statement):**
+`2025-04-30 | 국민연금보험료 자동이체 | -268,500 | 잔액 1,450,200`
+
+**Reasoning:**
+National pension premium (국민연금) KRW 268,500. This is NOT a business expense (필요경비). It is an income deduction (소득공제) -- deducted from total income after business income is computed. The full amount paid is deductible as a social insurance premium deduction.
+
+**Classification:** EXCLUDE from 필요경비. Record as 국민연금 소득공제.
+
+### Example 4 -- Estimated Tax Payment
+
+**Input line (우리은행 Woori Bank statement):**
+`2025-11-30 | 국세청 중간예납 | -450,000 | 잔액 3,210,000`
+
+**Reasoning:**
+Estimated tax (중간예납) payment to NTS. This is a prepayment of income tax -- NOT a business expense. Self-employed persons with prior year tax liability > KRW 300,000 must pay an estimated tax instalment in November.
+
+**Classification:** EXCLUDE. Record as 중간예납 KRW 450,000 (credit against final liability).
+
+### Example 5 -- Business Meal (Entertainment)
+
+**Input line (하나은행 KEB Hana Bank statement):**
+`2025-07-22 | 음식점 강남ABC식당 | -88,000 | 잔액 2,125,000`
+
+**Reasoning:**
+Restaurant meal KRW 88,000. Entertainment expenses (접대비) are deductible but subject to annual limits under NTS rules. Document: date, restaurant, purpose, names of attendees. Without documentation, the deduction is disallowed.
+
+**Classification:** 접대비 KRW 88,000. Deductible if documented. Subject to annual cap.
+
+### Example 6 -- Adobe Creative Cloud
+
+**Input line (KEB하나은행 statement):**
+`2025-09-01 | ADOBE SYSTEMS | -80,000 | 잔액 3,870,000`
+
+**Reasoning:**
+Adobe Creative Cloud monthly subscription KRW 80,000. Business software used for design services. Classified as 소모품비 (consumables) -- subscription. Fully deductible as a business expense.
+
+**Classification:** 소모품비 KRW 80,000. Fully deductible.
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 Business Income Computation Methods
+
+**Legislation:** Income Tax Act (소득세법) Arts. 27-55
+
+Three methods exist, applied based on revenue and bookkeeping:
+
+| Method | Who | How |
 |---|---|---|
-| Kakao / Kakao Pay | KRW | Net of platform commission; add back as expense |
-| Naver Smart Store | KRW | Net payout; gross up for commissions |
-| Coupang | KRW | Net payout; gross up |
-| Kmong / Soomgo | KRW | Freelance platforms; net payout |
-| YouTube Korea (AdSense) | USD | Convert to KRW monthly |
+| Double-entry (복식부기) | Required above threshold; option for all | Actual revenue minus actual expenses. Most accurate. |
+| Simplified bookkeeping (간편장부) | Available below threshold | Actual revenue minus documented expenses |
+| Standard deduction (기준경비율 / 단순경비율) | No books maintained | Revenue minus major expenses, then multiplied by standard rate |
 
-### 3.5 Internal Transfers
-| Pattern | Treatment |
+### 5.2 Tax Computation Flow
+
+```
+Total business revenue (총수입금액)
+Less: Necessary expenses (필요경비) -- actual or standard rate
+= Business income (사업소득금액)
+Plus: Other income (근로소득, 이자소득, 배당소득, 연금소득)
+= Total income (종합소득금액)
+Less: Income deductions (소득공제)
+= Taxable income (과세표준) -- round down to 10,000 KRW
+Apply national rate table
+= National income tax (산출세액)
+Less: Tax credits (세액공제)
+= National income tax due
+x 1.10 (add local income tax 10%)
+= Total tax
+Less: Withholding credits (원천징수)
+Less: Estimated tax paid (중간예납)
+= Final tax due / refund
+```
+
+### 5.3 Income Deductions (소득공제)
+
+| Deduction | Amount |
 |---|---|
-| 본인 계좌 간 이체 | EXCLUDE — internal transfer |
-| 적금 / 예금 이체 | EXCLUDE — savings movement |
-| 카드값 자동이체 | EXCLUDE — expense captured individually |
-| 대출금 입금 | EXCLUDE — not income |
+| Basic deduction (기본공제) | KRW 1,500,000 per person (self, spouse, dependents) |
+| Additional deduction -- elderly (70+) | KRW 1,000,000 per person |
+| Additional deduction -- disabled | KRW 2,000,000 per person |
+| Pension insurance premium (국민연금) | Full amount paid |
+| National health insurance (국민건강보험) | Full amount paid |
+| Employment insurance (고용보험) | Full amount paid |
+
+### 5.4 Tax Credits (세액공제)
+
+| Credit | Amount |
+|---|---|
+| Standard credit (표준세액공제) | KRW 70,000 (if no other special deductions claimed) |
+| Child tax credit | KRW 150,000 per child (age ≤ 7: KRW 200,000) |
+| Pension savings credit | 12% or 15% of pension contributions (up to limits) |
+
+### 5.5 Estimated Tax / Prepayment (중간예납)
+
+**Legislation:** Income Tax Act Art. 65
+
+- Required when prior year comprehensive income tax > KRW 300,000
+- Amount: approximately 50% of prior year tax
+- Due: 30 November (payment window: 1--30 November)
+- NTS issues a notice (중간예납세액 납부고지서)
+
+### 5.6 Filing Deadlines
+
+| Item | Deadline |
+|---|---|
+| Comprehensive income tax return | 31 May of the following year |
+| Payment | 31 May (or in instalments with NTS approval) |
+| Estimated tax (중간예납) | 30 November of the current year |
+| VAT return (if applicable) | 25 January and 25 July (biannual) |
+
+### 5.7 Penalties
+
+| Offence | Penalty |
+|---|---|
+| Late filing (무신고) | 20% of tax due (or 40% if fraudulent) |
+| Under-reporting (과소신고) | 10% of additional tax (or 40% if fraudulent) |
+| Late payment (납부불성실) | 0.022% per day (approx. 8% per year) |
+| Failure to keep records | KRW 200,000--2,000,000 |
 
 ---
 
-## Section 4 — Worked Examples
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### Example 1 — Shinhan Bank: IT Freelancer, Simple Bookkeeping
-**Scenario:** IT consultant, ₩60,000,000 gross revenue, actual expenses ₩15,000,000, 3.3% withholding ₩1,980,000 already deducted
+### 6.1 Regime / Method Selection
 
-**Bank statement extract (신한은행):**
-```
-거래일자      | 적요                              | 출금(원)      | 입금(원)      | 잔액(원)
-2025.04.15   | 이체 ㈜테크솔루션                    |               | 4,850,000     | 28,400,000
-2025.04.20   | 이체 프리랜서닷컴 정산               |               | 1,650,000     | 30,050,000
-2025.04.25   | 자동이체 AWS Korea                  | 320,000        |               | 29,730,000
-2025.04.28   | 자동이체 SKT 통신비                  | 89,000         |               | 29,641,000
-2025.04.30   | 신한은행 수수료                      | 500            |               | 29,640,500
-```
+Choosing between actual expenses (복식부기 / 간편장부) and the standard deduction rate (기준경비율) requires comparing actual documented expenses vs the standard deduction rate applied to revenue. For most service businesses with low costs (consulting, IT), actual bookkeeping yields lower taxable income.
 
-**Note on 3.3% withholding:** Client companies often pay net: e.g., ₩5,000,000 gross → ₩165,000 withheld → ₩4,835,000 deposited. Always gross up deposits where withholding applies.
+Flag for reviewer to compute both and select the lower-tax method.
 
-**Calculation:**
-| Line | Amount |
-|---|---|
-| Gross business income | ₩60,000,000 |
-| Actual expenses (receipts) | (₩15,000,000) |
-| Business income | ₩45,000,000 |
-| Personal deductions (self) | (₩1,500,000) |
-| **Taxable income** | **₩43,500,000** |
-| National tax (15% bracket: ₩43,500,000 × 15% − ₩1,260,000) | ₩5,265,000 |
-| Less: tax credits (standard credit) | (₩660,000) |
-| Less: withholding credit | (₩1,980,000) |
-| **National tax payable** | **₩2,625,000** |
-| Local income tax (10%) | ₩262,500 |
-| **Total tax** | **₩2,887,500** |
+### 6.2 Home Office (가사관련비 按分)
 
-### Example 2 — KB Kookmin Bank: Designer, Standard Deduction
-**Scenario:** Freelance designer, ₩40,000,000 gross, uses standard deduction (62% rate), no receipts maintained
+Korea allows apportionment of home expenses for self-employed persons working from home. Acceptable basis: floor area ratio. Utilities, internet, and proportionate rent (if renting) are deductible at the business-use percentage.
 
-**Bank statement extract (KB국민은행):**
-```
-거래일       | 내용                                | 찾으신 금액    | 맡기신 금액    | 잔액
-25-03-10    | 타행이체 디자인스튜디오봄               |                | 3,200,000      | 15,600,000
-25-03-15    | 인터넷뱅킹 이체 프리모션㈜              |                | 2,000,000      | 17,600,000
-25-03-20    | 자동이체 어도비시스템즈                 | 14,000         |                | 17,586,000
-25-03-25    | ATM 출금                             | 300,000        |                | 17,286,000
-25-03-31    | KB 이체수수료                         | 500            |                | 17,285,500
-```
+### 6.3 Entertainment Expense Cap (접대비)
 
-**Standard deduction method:**
-- Standard deduction rate for designers: 62%
-- Standard deduction: ₩40,000,000 × 62% = ₩24,800,000
-- Business income: ₩40,000,000 − ₩24,800,000 = ₩15,200,000
+Entertainment expenses for sole proprietors are capped under NTS guidance. The annual cap depends on the type of business. Document every meal with names, business purpose, and receipts.
 
-**Calculation:**
-| Line | Amount |
-|---|---|
-| Gross revenue | ₩40,000,000 |
-| Standard deduction (62%) | (₩24,800,000) |
-| Business income | ₩15,200,000 |
-| Personal deduction (self) | (₩1,500,000) |
-| **Taxable income** | **₩13,700,000** |
-| National tax (6% bracket) | ₩822,000 |
-| Less: standard tax credit (7%) | (₩57,540) |
-| **National tax payable** | **₩764,460** |
-| Local income tax (10%) | ₩76,446 |
-| **Total tax** | **₩840,906** |
+### 6.4 Vehicle Expenses
 
-### Example 3 — Woori Bank: Writer with NPS Deduction
-**Scenario:** Freelance writer, ₩35,000,000 gross, ₩8,000,000 actual expenses, married (spouse income ₩0), NPS premium ₩1,485,000, NHI ₩1,200,000
+Korea allows deduction of vehicle expenses for business-use vehicles. For passenger vehicles used for both business and personal purposes, a vehicle usage log (운행기록부) is required.
 
-**Bank statement extract (우리은행):**
-```
-거래일시          | 거래내용                           | 출금금액       | 입금금액       | 잔액
-2025-05-12 09:15 | 이체 도서출판사㈜                   |                | 2,500,000      | 12,300,000
-2025-05-18 14:30 | 이체 ㈜온라인미디어                  |                | 1,200,000      | 13,500,000
-2025-05-22 10:00 | 지로 국민연금공단                   | 247,500        |                | 13,252,500
-2025-05-25 09:30 | 지로 건강보험공단                   | 200,000        |                | 13,052,500
-2025-05-30 16:45 | 우리은행 수수료                     | 500            |                | 13,052,000
-```
+**Flag for reviewer:** Confirm vehicle type, business-use percentage, and documentation method.
 
-**Calculation:**
-| Line | Amount |
-|---|---|
-| Gross revenue | ₩35,000,000 |
-| Actual expenses | (₩8,000,000) |
-| Business income | ₩27,000,000 |
-| Social insurance deduction (NPS ₩1,485,000 + NHI ₩1,200,000) | (₩2,685,000) |
-| Personal deduction — self | (₩1,500,000) |
-| Personal deduction — spouse | (₩1,500,000) |
-| **Taxable income** | **₩21,315,000** |
-| National tax (15% bracket: ₩21,315,000 × 15% − ₩1,260,000) | ₩1,937,250 |
-| Less: standard credit | (₩135,607) |
-| **National tax payable** | **₩1,801,643** |
-| Local income tax | ₩180,164 |
-| **Total** | **₩1,981,807** |
+### 6.5 Withholding Credit Reconciliation
 
-### Example 4 — Hana Bank: Developer with Foreign Income
-**Scenario:** Developer, ₩50,000,000 domestic + USD $30,000 (converted ₩40,000,000) from US client, actual expenses ₩18,000,000
-
-**Bank statement extract (하나은행):**
-```
-거래일자       | 적요                               | 출금액(원)     | 입금액(원)     | 잔고(원)
-2025-06-10    | 외화입금 USD 10,000 COMPANY ABC     |                | 13,500,000     | 45,000,000
-2025-06-15    | 타행이체입금 ㈜테크스타트              |                | 8,000,000      | 53,000,000
-2025-06-20    | 신용카드결제 AWS Korea              | 450,000        |                | 52,550,000
-2025-06-25    | 자동이체 깃허브 엔터프라이즈          | 180,000        |                | 52,370,000
-2025-06-30    | 하나은행 수수료                      | 500            |                | 52,369,500
-```
-
-**Foreign income:** Convert USD at KEB Hana / Bank of Korea TTM rate on transaction date. Total foreign income ₩40,000,000 (cumulative over year).
-
-**Calculation:**
-| Line | Amount |
-|---|---|
-| Domestic revenue | ₩50,000,000 |
-| Foreign revenue (KRW equivalent) | ₩40,000,000 |
-| Total gross revenue | ₩90,000,000 |
-| Actual expenses | (₩18,000,000) |
-| Business income | ₩72,000,000 |
-| Social insurance deductions | (₩2,800,000) |
-| Personal deduction | (₩1,500,000) |
-| **Taxable income** | **₩67,700,000** |
-| National tax (24% bracket: ₩67,700,000 × 24% − ₩5,760,000) | ₩10,488,000 |
-| Local income tax | ₩1,048,800 |
-| **Total** | **₩11,536,800** |
-
-### Example 5 — IBK Industrial Bank: Sole Proprietor with Double-Entry
-**Scenario:** Consulting firm (sole proprietor), ₩200,000,000 revenue, ₩120,000,000 expenses (double-entry required), advance tax ₩8,000,000 paid
-
-**Bank statement extract (IBK기업은행):**
-```
-날짜          | 거래내용                            | 출금           | 입금           | 잔액
-2025-08-05   | 이체입금 ㈜대한컨설팅                 |                | 22,000,000     | 185,000,000
-2025-08-10   | 이체입금 글로벌비즈니스㈜              |                | 15,000,000     | 200,000,000
-2025-08-15   | 이체출금 직원급여 (직원A)             | 3,500,000      |                | 196,500,000
-2025-08-20   | 국세 중간예납                        | 8,000,000      |                | 188,500,000
-2025-08-25   | 이체출금 사무실임대료                 | 2,000,000      |                | 186,500,000
-```
-
-**Calculation:**
-| Line | Amount |
-|---|---|
-| Gross revenue | ₩200,000,000 |
-| Business expenses (double-entry) | (₩120,000,000) |
-| Business income | ₩80,000,000 |
-| Social insurance | (₩3,500,000) |
-| Personal deduction | (₩1,500,000) |
-| **Taxable income** | **₩75,000,000** |
-| National tax (35% bracket: ₩75,000,000 × 35% − ₩15,440,000) | ₩10,810,000 |
-| Less: advance tax (중간예납) | (₩8,000,000) |
-| **National tax balance due** | **₩2,810,000** |
-| Local income tax | ₩281,000 |
-| **Total balance** | **₩3,091,000** |
-
-### Example 6 — Kakao Bank: Creator/YouTuber
-**Scenario:** YouTuber/content creator, ₩25,000,000 AdSense (USD converted), ₩10,000,000 brand deals, standard deduction used
-
-**Bank statement extract (카카오뱅크):**
-```
-거래일시              | 내용                               | 보낸금액       | 받은금액       | 잔액
-2025.09.05 10:23:11  | 구글 AdSense 입금                  |                | 4,500,000      | 18,200,000
-2025.09.12 14:05:33  | 타행입금 마케팅에이전시              |                | 3,000,000      | 21,200,000
-2025.09.20 09:45:02  | 이체 쿠팡이츠 저녁식사 (미팅)        | 45,000         |                | 21,155,000
-2025.09.25 11:30:45  | 국민연금 자동납부                   | 247,500        |                | 20,907,500
-2025.09.30 00:00:01  | 카카오뱅크 이자                    |                | 8,500          | 20,916,000
-```
-
-**Standard deduction for creators (65% rate):**
-- Total revenue: ₩35,000,000
-- Standard deduction: ₩35,000,000 × 65% = ₩22,750,000
-- Business income: ₩12,250,000
-
-**Calculation:**
-| Line | Amount |
-|---|---|
-| Gross revenue | ₩35,000,000 |
-| Standard deduction (65%) | (₩22,750,000) |
-| Business income | ₩12,250,000 |
-| NPS deduction | (₩1,485,000) |
-| Personal deduction | (₩1,500,000) |
-| **Taxable income** | **₩9,265,000** |
-| National tax (6%) | ₩555,900 |
-| Less: standard credit | (₩38,913) |
-| **National tax** | **₩516,987** |
-| Local income tax | ₩51,699 |
-| **Total** | **₩568,686** |
+Self-employed persons often receive net amounts after 3.3% withholding. At year-end, clients must issue a withholding receipt (원천징수영수증). Reconcile bank inflows against withholding receipts to ensure all income is reported gross and all withholding is claimed as credits.
 
 ---
 
-## Section 5 — Tier 1 Rules (Compressed Reference)
+## Section 7 -- Excel Working Paper Template
 
-### Tax Residency
-- **Resident:** Domicile in Korea OR presence ≥ 183 days in tax year → worldwide income taxable
-- **Non-resident:** < 183 days → Korea-source income only; withheld at source (no personal deductions)
+```
+종합소득세 WORKING PAPER -- Tax Year 2025
+납세자 (Taxpayer): _______________  사업자번호: ___________
+업종 코드 (Business type code): ___________
+장부 방법 (Bookkeeping): 복식부기 / 간편장부 / 기준경비율 [circle one]
 
-### Business Income vs Other Income
-| Source | Category |
-|---|---|
-| Freelance, consulting, design, IT services | 사업소득 (business income) |
-| Rental income | 부동산임대소득 |
-| Interest | 이자소득 |
-| Dividends | 배당소득 |
-| Employment salary | 근로소득 (separate schedule) |
-| Capital gains | 양도소득 (separate, not aggregated) |
+A. 총수입금액 (GROSS REVENUE)
+  A1. Total business revenue (gross, before withholding) ___________
 
-**Comprehensive income tax (종합소득세):** Aggregates business, rental, interest, dividend, employment income into one progressive rate. Capital gains computed separately.
+B. 필요경비 (NECESSARY EXPENSES)
+  B1. 임차료 (rent)                           ___________
+  B2. 수도광열비 (utilities -- business %)    ___________
+  B3. 통신비 (communications -- business %)  ___________
+  B4. 여비교통비 (travel)                    ___________
+  B5. 접대비 (entertainment -- capped)       ___________
+  B6. 광고선전비 (advertising)               ___________
+  B7. 소모품비 (consumables / SaaS)         ___________
+  B8. 감가상각비 (depreciation)             ___________
+  B9. 외주비 (subcontracting)               ___________
+  B10. 지급수수료 (professional fees)       ___________
+  B11. 기타경비 (other expenses)            ___________
+  B12. Total 필요경비                        ___________
 
-### Withholding Tax (원천징수)
-- Business services paid by companies: 3.3% withheld (3% national + 0.3% local)
-- Gross up all net payments before including in income
-- Withholding amounts = credit against final tax liability
+C. 사업소득금액 (A1 - B12)                   ___________
 
-### Advance Tax (중간예납)
-- If prior year tax ≥ ₩500,000: advance tax required
-- 1st installment: November 30 = 50% of prior year final national tax
-- Reduce advance tax if current year income significantly lower (감액 신청 by November 1)
+D. 소득공제 (INCOME DEDUCTIONS)
+  D1. 기본공제 (basic deduction)             ___________
+  D2. 국민연금 (pension premiums)            ___________
+  D3. 국민건강보험 (health insurance)        ___________
+  D4. 기타 공제                              ___________
+  D5. Total 소득공제                         ___________
 
-### National Pension (국민연금) & National Health Insurance (건강보험)
-- Self-employed join as 지역가입자 (regional subscriber)
-- NPS premium: ~9% of income (employer+employee combined; self-employed pay full 9%), capped at ₩590,850/month (2025 approx)
-- NHI premium: ~6.99% of income, also income-tested for 지역가입자
-- Both 100% deductible as social insurance deduction (소득공제)
+E. 과세표준 (C - D5, round down to 10,000)   ___________
 
-### Filing Deadlines
-| Event | Deadline |
-|---|---|
-| 종합소득세 return filing | May 31 (following year) |
-| Tax payment | May 31 |
-| Advance tax (중간예납) | November 30 |
-| VAT return (if registered) | Separate — Jan 25 and Jul 25 |
+F. 산출세액 (national tax per rate table)    ___________
 
-### Penalties
-| Situation | Penalty |
-|---|---|
-| Late filing | 20% of unpaid tax |
-| Late payment | 8.03% p.a. (2025 rate) |
-| Under-reporting | 10–40% additional tax |
-| Double-entry required but not kept | 20% additional tax on net income |
+G. 세액공제 (TAX CREDITS)
+  G1. 표준세액공제 / other credits           ___________
 
----
+H. NATIONAL TAX DUE (F - G1)               ___________
 
-## Section 6 — Tier 2 Catalogue
+I. 지방소득세 (H x 10%)                     ___________
 
-### T2-KR-1: Home Office (사업용 비율 — 주거용 겸용)
-**Why T2:** Floor area split is a fact only the client knows.
+J. TOTAL TAX (H + I)                        ___________
 
-**Method:** Business area ÷ total area × rent/utilities
-**Required from client:** Total floor area (m²), office area (m²), whether space exclusively used for business.
+K. 원천징수 공제 (withholding credits 3.3%) ___________
 
-### T2-KR-2: Vehicle Business Use
-**Why T2:** Business use proportion depends on actual trips — only client knows.
+L. 중간예납 (estimated tax paid)            ___________
 
-**Required from client:** Total km driven, business km (logbook or estimate), vehicle operating costs.
-**Note:** Korean tax law requires a vehicle logbook (업무용 승용차 운행기록부) for tax deduction of vehicle expenses > ₩15,000,000/year. Without logbook, deduction is capped at ₩15,000,000.
+M. FINAL TAX DUE / REFUND (J - K - L)      ___________
 
-### T2-KR-3: Phone & Internet
-**Why T2:** Business/personal split is client-specific.
-
-**Default:** 50% if dual-use; 100% if dedicated business line.
-**Required from client:** Whether personal phone is also used for business, estimated business call %.
-
-### T2-KR-4: Standard vs Actual Expenses
-**Why T2:** Decision depends on whether actual expenses exceed the standard deduction.
-
-**Guidance:** Calculate both; claim whichever is higher. Standard deduction requires no receipts but may be lower for high-expense businesses. Actual expenses require full documentation.
-
-**Required from client:** Decision on method, and if actual: all receipts.
-
-### T2-KR-5: Family Member Employment
-**Why T2:** Whether spouse/family member genuinely works in the business affects deductibility.
-
-**Rules:**
-- Salary paid to spouse/family members only deductible if they actually work and are properly registered as employees with NPS/NHI
-- Must be reasonable market rate for work performed
-- Cannot pay family members for work they don't actually do
+REVIEWER FLAGS:
+  [ ] Business type code confirmed?
+  [ ] All withholding receipts (원천징수영수증) collected?
+  [ ] Estimated tax (중간예납) credited?
+  [ ] Pension/health insurance correctly in 소득공제 (not 필요경비)?
+  [ ] Entertainment cap applied?
+  [ ] Double-entry threshold checked for this business?
+```
 
 ---
 
-## Section 7 — Excel Working Paper
+## Section 8 -- Bank Statement Reading Guide
 
-### Sheet 1: Revenue Ledger (매출장)
-| Column | Content |
-|---|---|
-| A | Date |
-| B | Bank |
-| C | Payer |
-| D | Gross amount (KRW) |
-| E | Withholding (3.3%) deducted |
-| F | Net received |
-| G | Category (사업소득 / Other / Exclude) |
+### Korean Bank Statement Formats
 
-**Gross up formula (E2):** `=D2/(1-0.033)` (when net amount known)
-**Total gross revenue:** `=SUMIF(G:G,"사업소득",D:D)`
+| Bank | Format | Key Fields |
+|---|---|---|
+| KB국민은행 (Kookmin) | CSV / PDF | 거래일, 거래내용, 출금금액, 입금금액, 잔액 |
+| 신한은행 (Shinhan) | CSV | 거래일자, 적요, 출금액, 입금액, 잔액 |
+| 우리은행 (Woori) | CSV | 날짜, 내용, 출금, 입금, 잔액 |
+| KEB하나은행 (Hana) | CSV | 거래일, 거래내용, 출금(원), 입금(원), 잔액(원) |
+| 카카오뱅크 (KakaoBank) | CSV | 거래일시, 거래내용, 출금금액, 입금금액, 잔액 |
+| 토스뱅크 (TossBank) | CSV / App | 날짜, 내용, 금액, 잔액 |
+| 케이뱅크 (K bank) | CSV | 거래일, 내용, 출금, 입금, 잔액 |
 
-### Sheet 2: Expense Ledger (경비장)
-| Column | Content |
-|---|---|
-| A | Date |
-| B | Vendor |
-| C | Amount (KRW) |
-| D | Category |
-| E | Business % |
-| F | Deductible amount |
-| G | Receipt? Y/N |
+### Key Korean Banking Terms
 
-### Sheet 3: Deduction & Credit Summary
-| Line | Amount |
-|---|---|
-| Gross business income | |
-| Standard deduction OR actual expenses | |
-| Business income | |
-| Social insurance deduction (NPS + NHI) | |
-| Personal deductions | |
-| **Taxable income** | |
-| National tax (per bracket) | |
-| Tax credits | |
-| Withholding credits (3.3%) | |
-| Advance tax credits | |
-| **Net tax payable** | |
-| Local income tax (10%) | |
-| **Total** | |
+| Korean Term | English | Classification Hint |
+|---|---|---|
+| 타행이체 입금 | Transfer from another bank | Potential business income |
+| 자동이체 입금 | Auto-transfer credit | Regular income from client |
+| 카드결제 | Card payment | Expense |
+| ATM출금 / 자동화기기 | ATM withdrawal | Personal -- investigate |
+| 세금이체 / 국세청 | Tax payment | Tax payment -- exclude |
+| 공과금 자동이체 | Utility auto-debit | Business or personal expense |
+| 이자입금 | Interest credit | Other income |
+| 중간예납 | Estimated tax prepayment | Tax credit |
+| 원천징수 후 수령 | Received after withholding | Gross up 3.3% |
 
 ---
 
-## Section 8 — Bank Statement Reading Guide
+## Section 9 -- Onboarding Fallback
 
-### Shinhan Bank (신한은행)
-- Format: `거래일자 | 적요 | 출금(원) | 입금(원) | 잔액(원)`
-- Date: YYYY.MM.DD
-- Income = 입금 column
-- Key: 이체 = transfer; 타행이체 = inter-bank transfer
+If the client provides a bank statement but cannot answer onboarding questions immediately:
 
-### KB Kookmin Bank (KB국민은행)
-- Format: `거래일 | 내용 | 찾으신 금액 | 맡기신 금액 | 잔액`
-- Date: YY-MM-DD
-- Income = 맡기신 금액
+1. Classify all wire transfer credits from non-personal accounts as potential 사업소득
+2. Assume all client payments are net of 3.3% withholding -- gross up
+3. Mark all 국민연금 and 국민건강보험 auto-debits as income deductions (NOT expenses)
+4. Apply conservative defaults: simplified bookkeeping, standard deduction rate
+5. Flag all large purchases (> KRW 500,000) for review -- potential capital assets
 
-### Woori Bank (우리은행)
-- Format: `거래일시 | 거래내용 | 출금금액 | 입금금액 | 잔액`
-- Date: YYYY-MM-DD HH:MM:SS
-- Income = 입금금액
+Present these questions:
 
-### Hana Bank (하나은행)
-- Format: `거래일자 | 적요 | 출금액(원) | 입금액(원) | 잔고(원)`
-- Date: YYYY-MM-DD
-- 외화입금 = foreign currency inward remittance
-
-### IBK Industrial Bank (IBK기업은행)
-- Format: `날짜 | 거래내용 | 출금 | 입금 | 잔액`
-- Date: YYYY-MM-DD
-- 국세 중간예납 = advance tax payment → EXCLUDE from expenses
-
-### Kakao Bank (카카오뱅크)
-- Format: `거래일시 | 내용 | 보낸금액 | 받은금액 | 잔액`
-- Date: YYYY.MM.DD HH:MM:SS
-- Income = 받은금액
-
-### Exclusion Patterns (all banks)
-| Pattern | Action |
-|---|---|
-| 본인계좌 이체 / 자기계좌 | EXCLUDE — internal transfer |
-| 카드값 자동이체 | EXCLUDE — captured as individual expenses |
-| 부가가치세 납부 / 국세 | EXCLUDE — tax payments |
-| 중간예납 | Credit against final tax — not expense |
-| 대출 입금 | EXCLUDE — not income |
-| 적금 만기 입금 | EXCLUDE — return of savings |
+```
+ONBOARDING QUESTIONS -- SOUTH KOREA 종합소득세
+1. What is your main business type (업종)? Do you have an 업종코드?
+2. Did you maintain simplified (간편장부) or double-entry (복식부기) books?
+3. What is your total gross revenue for 2025 (before 3.3% withholding)?
+4. Did any corporate clients withhold 3.3%? If so, do you have withholding receipts (원천징수영수증)?
+5. Did you pay estimated tax (중간예납) in November 2025?
+6. Marital status and number of dependents?
+7. National pension (국민연금) total paid in 2025?
+8. National health insurance (국민건강보험) total paid in 2025?
+9. Do you use a vehicle for business? If so, do you keep a driving log (운행기록부)?
+10. Did you work from a home office? If so, what % of your home is used for business?
+```
 
 ---
 
-## Section 9 — Onboarding Fallback
+## Section 10 -- Reference Material
 
-**Priority 1 (blocking):**
-1. "What was your total gross business income for the year? Please provide bank statements."
-2. "Do you have receipts for business expenses, or should we use the standard deduction rate?"
-3. "What is your bookkeeping method — simple bookkeeping (간편장부) or double-entry (복식부기)?"
+### Key Legislation
 
-**Priority 2 (deductions):**
-4. "Are you married? Does your spouse have income?"
-5. "Do you have children or elderly parents as dependants?"
-6. "What were your National Pension and National Health Insurance premiums this year?"
-7. "Did you contribute to a personal pension account (연금저축)?"
+| Topic | Article |
+|---|---|
+| Comprehensive income (종합소득) | Income Tax Act Art. 4 |
+| Business income (사업소득) | ITA Art. 27 |
+| Necessary expenses (필요경비) | ITA Art. 27, 33-35 |
+| Income deductions (소득공제) | ITA Art. 50-55 |
+| Tax credits (세액공제) | ITA Art. 56-66 |
+| Estimated tax (중간예납) | ITA Art. 65 |
+| Bookkeeping obligation | ITA Art. 160 |
+| Local income tax | Local Tax Act Art. 86-92 |
 
-**Priority 3 (credits and advance tax):**
-8. "Were any of your payments made with 3.3% withholding deducted? If so, please provide the withholding statements (원천징수영수증)."
-9. "Did you pay advance tax (중간예납) in November? If so, how much?"
-10. "Do you have any medical expenses exceeding 3% of your income?"
+### Known Gaps / Out of Scope
 
-**Conservative defaults:**
-- Use standard deduction if no receipts maintained
-- Exclude any expenses without documentation
-- Do not claim home office or vehicle unless client provides specific data
+- Non-resident Korean-source income
+- Financial income global taxation (금융소득 종합과세, > KRW 20M)
+- Real estate capital gains (양도소득세)
+- Corporate income tax (법인세)
+- International income / DTAA
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; Korean bank formats; local platform patterns (KakaoTalk Pay, Naver Pay, Toss); worked examples |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] Business type (업종) confirmed? Standard deduction rate varies by type.
+- [ ] All client payments grossed up from net-of-withholding amounts?
+- [ ] Local income tax (10%) added to national tax?
+- [ ] National pension and health insurance in 소득공제, NOT 필요경비?
+- [ ] Estimated tax (중간예납) credited against final liability?
+- [ ] Double-entry threshold checked? Revenue > KRW 75M (services) requires 복식부기.
 
 ---
 
-## Section 10 — Reference Material
+## PROHIBITIONS
 
-### Key Forms
-| Form | Purpose |
-|---|---|
-| 종합소득세 신고서 | Main comprehensive income tax return |
-| 사업소득명세서 | Business income schedule |
-| 원천징수영수증 | Withholding tax certificate (from payers) |
-| 소득공제 신청서 | Deductions claim form |
-
-### Filing Platform
-- **홈택스 (Hometax):** hometax.go.kr — NTS (National Tax Service)
-- Mobile: 손택스 (Sontax) app
-- Filing period: May 1–31 each year
-
-### Key Rates (2025)
-| Item | Rate |
-|---|---|
-| National income tax | 6%–45% progressive |
-| Local income tax | 10% of national tax |
-| Withholding on services | 3.3% (3% + 0.3%) |
-| VAT (별도) | 10% (separate obligation) |
-
-### National Tax Service (NTS)
-- Website: nts.go.kr
-- Telephone: 126
+- NEVER compute income without confirming the business type (업종) -- standard deduction rates differ by industry
+- NEVER treat 3.3% withheld amounts as income -- always gross up to invoice amount
+- NEVER include national pension or health insurance as business expenses -- they are income deductions (소득공제)
+- NEVER omit the 10% local income tax surtax on national income tax
+- NEVER allow income tax or local tax payments as deductible expenses
+- NEVER advise on non-resident taxation -- escalate
+- NEVER present tax calculations as definitive -- always label as estimated and direct client to their 세무사 for confirmation
 
 ---
-
-## Prohibitions
-- Do not advise on VAT (부가가치세) — separate Korean VAT skill required
-- Do not advise on corporate tax (법인세) — sole proprietors only
-- Do not advise on capital gains tax (양도소득세) on property or securities — separate schedule
-- Do not advise on payroll tax (근로소득세) for employees
-- Do not advise on customs duties or import taxes
 
 ## Disclaimer
-This skill provides general guidance for informational and planning purposes. It does not constitute tax advice. Korean tax law is administered by the National Tax Service (국세청). Clients should consult a licensed 세무사 (tax accountant) registered with the Korea Tax Accountants Association for advice specific to their circumstances. Tax brackets, rates, and deduction amounts are updated annually — verify current rules at nts.go.kr.
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a 세무사, 공인회계사, or equivalent licensed practitioner in South Korea) before filing or acting upon.
+
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

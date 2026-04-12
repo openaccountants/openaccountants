@@ -1,7 +1,7 @@
 ---
 name: in-income-tax
 description: >
-  Use this skill whenever asked about Indian income tax for self-employed professionals, freelancers, or sole proprietors. Trigger on phrases like "how much tax do I pay in India", "ITR-4", "ITR-3", "Sugam", "Section 44ADA", "Section 44AD", "presumptive taxation", "new tax regime", "old tax regime", "advance tax India", "TDS credit", "PAN", "80C", "80D", "income tax return India", "surcharge", "health and education cess", or any question about filing or computing income tax for a self-employed individual in India. This skill covers new regime vs old regime rate tables, presumptive taxation (44ADA for professionals, 44AD for business), regular computation (ITR-3), surcharge, cess, standard deduction, Section 80C/80D deductions, advance tax schedule, TDS credits, PAN requirements, and ITR-4 (Sugam) structure. ALWAYS read this skill before touching any Indian income tax work.
+  Use this skill whenever asked about Indian income tax for self-employed professionals, freelancers, or sole proprietors. Trigger on phrases like "how much tax do I pay in India", "ITR-4", "ITR-3", "Sugam", "Section 44ADA", "Section 44AD", "presumptive taxation", "new tax regime", "old tax regime", "advance tax India", "TDS credit", "PAN", "80C", "80D", "income tax return India", "surcharge", "health and education cess", "UPI income", "Razorpay payout", "Paytm business", or any question about filing or computing income tax for a self-employed individual in India. This skill covers new regime vs old regime rate tables, presumptive taxation (44ADA for professionals, 44AD for business), regular computation (ITR-3), surcharge, cess, standard deduction, Section 80C/80D deductions, advance tax schedule, TDS credits, PAN requirements, and ITR-4 (Sugam) structure. ALWAYS read this skill before touching any Indian income tax work.
 version: 2.0
 jurisdiction: IN
 tax_year: 2025-26
@@ -10,516 +10,537 @@ depends_on:
   - income-tax-workflow-base
 ---
 
-# India Income Tax — Self-Employed Skill v2.0
+# India Income Tax (आयकर) -- Self-Employed Skill v2.0
 
 ---
 
-## Section 1 — Quick Reference
+## Section 1 -- Quick Reference
 
 | Field | Value |
 |---|---|
-| Country | India (Republic of India) |
-| Tax | Income Tax (Aaykar) |
-| Currency | INR (Indian Rupee — ₹) |
-| Tax year | Financial Year (FY) April 1 — March 31; Assessment Year (AY) = FY + 1 |
-| Primary legislation | Income Tax Act 1961; Finance Act (annual) |
-| Tax authority | Income Tax Department (ITD); CBDT |
-| Filing portal | e-filing portal — https://www.incometax.gov.in |
-| Filing deadline | 31 July (non-audit); 31 October (tax audit required); 31 March (belated) |
+| Country | India (भारत) |
+| Tax | Income Tax + Health & Education Cess (4%) + Surcharge (if applicable) |
+| Currency | INR only |
+| Tax year | Financial Year (FY): 1 April -- 31 March |
+| Current year | FY 2025-26 (Assessment Year 2026-27) |
+| Primary legislation | Income Tax Act, 1961 (as amended by Finance Act, 2025) |
+| Tax authority | Central Board of Direct Taxes (CBDT) / Income Tax Department |
+| Filing portal | incometax.gov.in |
+| Filing deadline | 31 July 2026 (non-audit cases) |
 | Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a India-licensed Chartered Accountant (CA) |
+| Validated by | Pending -- requires sign-off by a Chartered Accountant (India) |
 | Skill version | 2.0 |
 
-### New Tax Regime — Rate Brackets (FY 2025-26, default)
+### New Tax Regime Rate Table -- FY 2025-26 (Default) [T1]
 
-| Taxable Income (INR) | Rate |
+| Total Income (INR) | Rate |
 |---|---|
-| 0 — 4,00,000 | 0% |
-| 4,00,001 — 8,00,000 | 5% |
-| 8,00,001 — 12,00,000 | 10% |
-| 12,00,001 — 16,00,000 | 15% |
-| 16,00,001 — 20,00,000 | 20% |
-| 20,00,001 — 24,00,000 | 25% |
+| 0 -- 4,00,000 | 0% |
+| 4,00,001 -- 8,00,000 | 5% |
+| 8,00,001 -- 12,00,000 | 10% |
+| 12,00,001 -- 16,00,000 | 15% |
+| 16,00,001 -- 20,00,000 | 20% |
+| 20,00,001 -- 24,00,000 | 25% |
 | Above 24,00,000 | 30% |
 
-**Rebate u/s 87A (new regime):** If total income ≤ ₹12,00,000: full tax rebate (effective zero tax). Rebate does not apply to special rate income (capital gains, etc.).
+**Section 87A Rebate (New Regime):** If taxable income ≤ Rs. 12,00,000, tax is fully rebated (zero tax). For salaried persons with Rs. 75,000 standard deduction, effective zero-tax threshold is Rs. 12,75,000.
 
-**Standard deduction (new regime, from AY 2025-26):** ₹75,000 for salaried/pension income. Not applicable to self-employment income directly.
+**Cess:** Add 4% Health & Education Cess on all income tax computed (after rebate).
 
-### Old Tax Regime — Rate Brackets (opt-in)
+### Old Tax Regime Rate Table (Below 60) [T1]
 
-| Taxable Income (INR) | Rate |
+| Total Income (INR) | Rate |
 |---|---|
-| 0 — 2,50,000 | 0% |
-| 2,50,001 — 5,00,000 | 5% |
-| 5,00,001 — 10,00,000 | 20% |
+| 0 -- 2,50,000 | 0% |
+| 2,50,001 -- 5,00,000 | 5% |
+| 5,00,001 -- 10,00,000 | 20% |
 | Above 10,00,000 | 30% |
 
-**Old regime allows:** Section 80C (up to ₹1,50,000), Section 80D (health insurance), HRA, LTA, home loan interest deduction, and other Chapter VI-A deductions. Self-employed typically compare regimes annually.
+**Section 87A Rebate (Old Regime):** If taxable income ≤ Rs. 5,00,000, rebate up to Rs. 12,500 applies.
 
-### Surcharge (on Income Tax — both regimes)
+### Surcharge (Both Regimes) [T1]
 
-| Income Range | Surcharge Rate | New Regime Cap |
-|---|---|---|
-| Below ₹50,00,000 | Nil | — |
-| ₹50,00,001 — ₹1,00,00,000 | 10% | — |
-| ₹1,00,00,001 — ₹2,00,00,000 | 15% | — |
-| ₹2,00,00,001 — ₹5,00,00,000 | 25% | 25% |
-| Above ₹5,00,00,000 | 37% (old) | 25% |
+| Total Income (INR) | Surcharge Rate |
+|---|---|
+| Up to 50,00,000 | Nil |
+| 50,00,001 -- 1,00,00,000 | 10% of income tax |
+| 1,00,00,001 -- 2,00,00,000 | 15% of income tax |
+| 2,00,00,001 -- 5,00,00,000 | 25% of income tax (new regime only 25%) |
+| Above 5,00,00,000 | 37% (old regime); 25% (new regime cap) |
 
-**Health & Education Cess:** 4% on (Income Tax + Surcharge) — both regimes.
+### Presumptive Taxation Rates [T1]
 
-### Presumptive Taxation
-
-| Scheme | Who | Threshold | Deemed Profit |
+| Section | Who | Presumptive Rate | Threshold |
 |---|---|---|---|
-| Section 44ADA | Professionals (doctors, lawyers, CAs, architects, engineers, etc.) | Gross receipts ≤ ₹75,00,000 | 50% of gross receipts |
-| Section 44AD | Business (not professionals) | Turnover ≤ ₹3,00,00,000 (if <5% cash) | 6% of digital receipts; 8% of cash |
+| 44ADA | Specified professionals (doctors, lawyers, CAs, architects, consultants, etc.) | 50% of gross receipts = deemed profit | Gross receipts ≤ Rs. 75,00,000 |
+| 44AD | Business owners (non-professionals) | 8% of turnover (6% if digital receipts) = deemed profit | Turnover ≤ Rs. 3,00,00,000 |
 
-**44ADA / 44AD:** No books of accounts required. File ITR-4 (Sugam). Cannot claim business expenses individually.
-
-**Regular taxation (ITR-3):** Maintain books per Section 44AA. Claim actual business expenses. Tax audit (u/s 44AB) required if gross receipts > ₹75L (professionals) or turnover > ₹3Cr (business with <5% cash).
-
-### Conservative Defaults
+### Conservative Defaults [T1]
 
 | Ambiguity | Default |
 |---|---|
-| Unknown regime choice | New regime (default) |
-| Unknown whether 44ADA applies | Assume yes if a listed profession and receipts ≤ ₹75L |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown TDS amount | 0 credit until Form 26AS / AIS confirms |
-| Unknown expense category | Not deductible |
-| Unknown filing status | Individual, not company or LLP |
+| Regime not specified | New tax regime |
+| Nature of income unclear (professional vs business) | Professional (44ADA) -- more conservative |
+| Digital vs cash receipt mix unknown | 100% cash (8% rate under 44AD, not 6%) |
+| Filing status unknown | Individual below 60 |
+| TDS credits not confirmed | Exclude until Form 26AS verified |
+| Advance tax paid unknown | Nil advance tax paid |
 
-### Red Flag Thresholds
+### Red Flag Thresholds [T1]
 
-| Threshold | Value |
+| Flag | Threshold |
 |---|---|
-| HIGH single credit (possible undisclosed income) | ₹10,00,000 |
-| HIGH cash transactions | ₹2,00,000 (Section 269ST limit) |
-| MEDIUM TDS mismatch vs 26AS | Any difference |
-| MEDIUM advance tax shortfall | If estimated tax > ₹10,000 and not paid |
-| Tax audit trigger | Gross receipts > ₹75L (44ADA) or Turnover > ₹3Cr (44AD) |
+| 44ADA limit exceeded | Gross receipts > Rs. 75,00,000 -- must file ITR-3 |
+| 44AD limit exceeded | Turnover > Rs. 3,00,00,000 |
+| Advance tax mandatory | Tax liability > Rs. 10,000 in the year |
+| TAN required (deductor) | If the self-employed person pays salaries or contractor fees |
+| Tax audit required (professional) | If gross receipts > Rs. 75,00,000 under 44ADA |
 
 ---
 
-## Section 2 — Required Inputs and Refusal Catalogue
+## Section 2 -- Required Inputs and Refusal Catalogue
 
 ### Required Inputs
 
-**Minimum viable** — full-year bank statements (Apr 1 — Mar 31), Form 26AS (TDS statement) or Annual Information Statement (AIS), PAN number, confirmation of profession type (doctor, CA, engineer, IT consultant, etc.).
+**Minimum viable:** Bank statement for the full financial year (1 April -- 31 March) in PDF, CSV, or pasted text. Confirmation of whether income is professional or business, and whether new or old regime applies.
 
-**Recommended** — all invoices issued to clients, Form 16A from all payers (TDS certificates), GST returns (if GST-registered), prior year ITR and Acknowledgement.
+**Recommended:** Form 26AS / Annual Information Statement (AIS) for TDS credits, advance tax challans (ITNS 280), all client invoices, Form 16A (TDS certificates from clients), PAN.
 
-**Ideal** — complete books of accounts (for ITR-3 clients), asset register, home loan certificate, Section 80C investment proofs, health insurance premium receipts (80D), foreign income details.
-
-**Soft warn:** No Form 26AS / AIS = cannot verify TDS credits. Proceed but flag all TDS entries as unconfirmed.
+**Ideal:** Complete books of accounts (if not presumptive), all receipts for deductions under 80C/80D (old regime only), GST returns (if GST-registered).
 
 ### Refusal Catalogue
 
-**R-IN-1 — Companies, LLPs, Partnerships.** "This skill covers income tax for individuals only. Corporate tax (Sections 115BA/115BAA) and partnership returns are out of scope."
+**R-IN-1 -- Non-Resident Indians (NRI) and RNOR.** "This skill covers Resident individuals only. NRI/RNOR taxation involves different income sourcing rules, DTAA analysis, and TRC requirements. Escalate."
 
-**R-IN-2 — NRI taxation.** "Non-resident Indian taxation involves DTAA analysis, different rate schedules, and TRC requirements. Escalate to a CA with NRI expertise."
+**R-IN-2 -- Firms, Companies, LLPs.** "This skill covers individuals (sole proprietors/freelancers) only. Partnership firms, private limited companies, and LLPs file separate returns with different rates. Out of scope."
 
-**R-IN-3 — Capital gains (beyond basic).** "Equity/MF capital gains (Section 111A/112A), property gains, and complex LTCG/STCG require separate computation. Escalate."
+**R-IN-3 -- Capital Gains.** "Capital gains on shares, mutual funds, property, or other assets require detailed computation under Sections 111A, 112, and 112A. Escalate."
 
-**R-IN-4 — International income / DTAA.** "Cross-border income requires Double Taxation Avoidance Agreement analysis. Out of scope."
+**R-IN-4 -- International Transactions / DTAA.** "Double taxation treaty analysis, foreign tax credits, and transfer pricing are out of scope. Escalate."
 
-**R-IN-5 — Tax audit (Section 44AB).** "Clients requiring a tax audit need a CA-certified audit report (Form 3CB/3CD) before filing. Out of scope for this skill."
+**R-IN-5 -- Tax Audit Cases (non-presumptive).** "If gross receipts exceed the presumptive threshold and a tax audit is required under Section 44AB, this skill cannot replace a statutory audit. Escalate."
 
 ---
 
-## Section 3 — Transaction Pattern Library
+## Section 3 -- Transaction Pattern Library
 
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
+This is the deterministic pre-classifier. When a bank statement line matches a pattern, apply the treatment directly. If no pattern matches, fall through to Tier 1 rules in Section 5.
 
-### 3.1 Income Patterns (Credits on Bank Statement)
+### 3.1 Income Patterns (Credits)
 
 | Pattern | Tax Line | Treatment | Notes |
 |---|---|---|---|
-| NEFT CR / RTGS CR [client name] | Business receipts (Gross Receipts) | Revenue — include in gross receipts | Under 44ADA: 50% deemed profit. Under ITR-3: add to income |
-| IMPS CR [client name] | Gross Receipts | Revenue | Same as NEFT/RTGS |
-| RAZORPAY / STRIPE / PAYPAL [payout] | Gross Receipts | Revenue — platform payout | Match to underlying invoices; may be net of platform fees |
-| UPI CR [client name] | Gross Receipts | Revenue | UPI receipts count as digital — favours 6% rate under 44AD |
-| TDS REFUND / IT REFUND | EXCLUDE | Not income | Tax refund — not business revenue |
-| INT CR / INTEREST | Income from Other Sources | Not business income | Separate schedule in ITR |
-| DIVIDEND / DIV CR | Income from Other Sources | Not business income | Dividend income — separate schedule |
-| RENT RECEIVED | Income from House Property | Not business income | Separate schedule |
-| SALARY / PAYROLL | Income from Salaries | Not self-employment income | Report under salary schedule |
-| GSTIN REFUND | EXCLUDE | Not income | GST refund — not taxable |
+| NEFT CR / RTGS CR / IMPS CR [client name] | Gross receipts (44ADA/44AD) | Business income | Professional service fee received -- add to gross receipts |
+| UPI [client name] / UPI CREDIT | Gross receipts | Business income | Digital receipt -- counts as electronic for 44AD 6% rate |
+| RAZORPAY SETTLEMENT / RAZORPAY TRANSFER | Gross receipts | Business income | Payment gateway payout -- match to invoices |
+| PAYTM PAYOUT / PAYTM SETTLEMENT | Gross receipts | Business income | Digital payment payout -- electronic for 44AD |
+| CASHFREE SETTLEMENT / CASHFREE PAYOUT | Gross receipts | Business income | Payment aggregator payout |
+| STRIPE PAYOUT INDIA / STRIPE TRANSFER | Gross receipts | Business income | International invoicing via Stripe India |
+| PAYPAL TRANSFER / PAYPAL PAYOUT | Foreign income (Gross receipts) | Business income in INR | Convert at RBI reference rate on date received |
+| SALARY CREDIT / SAL ADV [employer] | Salary income (Section 17) | NOT professional income | Employment income -- separate head, Form 16 required |
+| INTEREST CREDIT / INT CREDIT / FD INTEREST | Income from Other Sources | NOT business income | Bank interest taxable; FD interest TDS may apply |
+| DIVIDEND CREDIT / DIV [company] | Income from Other Sources | Taxable dividends | Domestic dividends taxable since FY 2020-21 |
+| REFUND FROM INCOMETAX / IT REFUND | EXCLUDE | Not income | Tax refund is not taxable |
+| LOAN DISBURSEMENT / LOAN CREDIT | EXCLUDE | Not income | Loan principal is liability, not income |
+| GST REFUND / IGST REFUND | EXCLUDE | Not income | GST refund is not taxable income |
 
-### 3.2 Expense Patterns (Debits on Bank Statement) — ITR-3 Only
+### 3.2 Expense Patterns (Debits -- for ITR-3 filers; ITR-4 presumptive filers do not itemise)
 
-*Note: Under 44ADA or 44AD presumptive schemes, individual expenses are NOT separately deductible. Patterns below apply to ITR-3 (regular accounts) clients only.*
-
-| Pattern | Tax Line | Tier | Treatment |
+| Pattern | Schedule C Category | Treatment | Notes |
 |---|---|---|---|
-| OFFICE RENT / RENT [landlord] | Rent for premises | T1 | Fully deductible — business premises |
-| HOME OFFICE [utility / landlord] | Office at home | T2 | Business portion only — % of home used for work |
-| ELECTRICITY / BESCOM / TATA POWER / MSEDCL | Utilities | T2 | Business % only if home office; 100% if dedicated office |
-| AIRTEL / JIO / BSNL / VI [mobile/internet] | Telephone/internet | T2 | Business % only — default 0% if mixed use |
-| ZOMATO / SWIGGY / RESTAURANT | Business meals | T2 | Deductible only with business purpose documented; no flat rule |
-| INDIGO / AIRINDIA / VISTARA / SPICEJET | Travel | T1 | Fully deductible if business travel — keep boarding pass |
-| IRCTC / INDIAN RAILWAYS | Travel | T1 | Fully deductible if business |
-| OLA / UBER / RAPIDO | Travel | T1 | Business trips — keep receipts |
-| AMAZON [office supplies] / FLIPKART | Office supplies | T1 | Deductible if business purpose confirmed |
-| SOFTWARE / SUBSCRIPTION [tech] | IT expenses | T1 | Deductible in year paid if revenue expense; capitalise if >3 years benefit |
-| GOOGLE / MICROSOFT / ADOBE / ZOOM | IT/SaaS | T1 | Deductible — business software |
-| PROFESSIONAL FEES / ADVOCATE / CA | Professional fees | T1 | Fully deductible |
-| INSURANCE [professional indemnity] | Insurance | T1 | Professional indemnity: deductible |
-| INSURANCE [health / life] | NOT a business expense | T1 | Health insurance: 80D deduction (max ₹25,000/₹50,000 senior); NOT business expense |
-| BANK CHARGES / NEFT CHARGES | Bank charges | T1 | Fully deductible |
-| GST PAYMENT TO GOVT | EXCLUDE from P&L | T1 | GST payments are not income tax deductible expenses |
-| INCOME TAX / TDS / ADVANCE TAX | EXCLUDE | T1 | Income tax not deductible as business expense |
-| LIC / PPFAC / ELSS | NOT business expense | T1 | Section 80C investment — deduction on personal return, not P&L |
-| VEHICLE FUEL / PETROL / DIESEL | Vehicle expense | T2 | Business % only — logbook or reasonable estimate required |
-| ATM CASH WITHDRAWAL | T2 — ask | T2 | Default exclude; ask what cash was used for |
+| OFFICE RENT / COMMERCIAL RENT [landlord] | Rent | Fully deductible | Deduct TDS at 10% if monthly rent > Rs. 50,000 |
+| ELECTRICITY [BESCOM/MSEDCL/TATA POWER/TNEB] | Utilities | Deductible (business portion) | Home office: apportion by usage |
+| BROADBAND / JIOFIBER / ACT / AIRTEL BROADBAND | Communication | Deductible (business portion) | Mixed use: apportion |
+| MOBILE RECHARGE / AIRTEL / JIO / VI | Communication | Deductible (business portion) | Business calls only |
+| SWIGGY BUSINESS / ZOMATO FOR BUSINESS | Meals/entertainment | Deductible if business | Document business purpose |
+| AMAZON BUSINESS / FLIPKART BUSINESS | Office supplies | Fully deductible | Business account purchases |
+| ZOHO SUBSCRIPTION / FRESHBOOKS / TALLY | Software | Fully deductible | Business software |
+| GOOGLE ADS / META ADS / LINKEDIN ADS | Advertising | Fully deductible | Digital marketing |
+| CA FEES / LEGAL FEES / CONSULTANT FEES | Professional charges | Fully deductible | TDS may be required (Section 194J) |
+| LIC PREMIUM / TERM INSURANCE | NOT business expense | Section 80C deduction (old regime) | Personal insurance = not a business expense |
+| HEALTH INSURANCE / MEDICLAIM [Star/HDFC Ergo/Bajaj] | NOT business expense | Section 80D deduction (old regime) | NOT deductible as business expense |
+| PPF DEPOSIT / ELSS PURCHASE / NSC | NOT business expense | Section 80C deduction (old regime) | Investment deductions |
+| ADVANCE TAX CHALLAN / ITNS 280 | EXCLUDE | Prepaid tax | Not a business expense; credit against liability |
+| TDS DEDUCTED / TDS TO GOVT | EXCLUDE | Prepaid tax (credit) | Claim as credit on Form 26AS |
+| GST PAYMENT / GST CHALLAN | EXCLUDE | Indirect tax | Not deductible as income tax expense |
+| SWIPE / POS [vendor] | Mixed -- check | Identify payee | Could be office supply, travel, entertainment |
+| PROFESSIONAL TAX [state] | Deductible | Fully deductible | State professional tax paid |
+| BANK CHARGES / ACCOUNT MAINTENANCE / NEFT CHARGES | Bank charges | Fully deductible | Business account only |
 
-### 3.3 TDS Credits
+### 3.3 UPI and Digital Platform Patterns
 
 | Pattern | Treatment | Notes |
 |---|---|---|
-| TDS DEDUCTED BY [client] | Credit against tax liability | Verify in Form 26AS / AIS — must match |
-| TDS u/s 194J (professional) | 10% TDS on professional fees | Most common for freelancers/consultants |
-| TDS u/s 194C (contract) | 1% (individual) or 2% (firm) on contract payments | For project-based work |
-| ADVANCE TAX PAID | Credit against tax liability | Verify challan reference |
+| UPI/CR/[amount]/[client name] | Gross receipts | Electronic -- qualifies for 6% deemed profit under 44AD |
+| PHONEPE CR / GPAY CREDIT / PAYTM CREDIT | Gross receipts | Digital receipt |
+| BHIM UPI / BHIM CREDIT | Gross receipts | Digital receipt |
+| NEFT/RTGS credits | Gross receipts | Electronic -- qualifies for 6% under 44AD |
+| CHEQUE DEPOSIT / CHQ DEP | Gross receipts | Digital (account payee cheque) -- qualifies for 6% |
+| CASH DEPOSIT / CASH / CDM | Gross receipts | CASH -- applies 8% under 44AD, not 6% |
 
-### 3.4 Platform Payouts and Digital Receipts
-
-| Pattern | Treatment | Notes |
-|---|---|---|
-| RAZORPAY SETTLEMENTS | Gross Receipts | Net of Razorpay fee — add back fee as expense |
-| STRIPE [USD conversion] | Gross Receipts | Convert at RBI reference rate on receipt date |
-| PAYPAL WITHDRAWAL | Gross Receipts | USD → INR conversion — FIFO or daily rate |
-| UPWORK / FIVERR / TOPTAL | Gross Receipts | Platform earnings — net of platform fee |
-
-### 3.5 Internal Transfers and Exclusions
+### 3.4 TDS Deductions (Credits on Statement = Tax Credits)
 
 | Pattern | Treatment | Notes |
 |---|---|---|
-| OWN ACCOUNT TRANSFER / SELF | EXCLUDE | Inter-account movement |
-| LOAN CREDIT / BANK LOAN | EXCLUDE | Loan proceeds — not income |
-| EMI / LOAN REPAYMENT | EXCLUDE (principal) | Principal repayment not deductible; interest on business loan: deductible |
-| FD MATURITY | EXCLUDE (principal) | FD principal return not income; interest credited separately is income |
+| TDS BY [client name] / TDS DEDUCTED | Tax credit -- do NOT reduce income | Gross up income; claim TDS as credit on Form 26AS |
+| 194J TDS / TDS 194J | Professional fee TDS at 10% | Client deducted TDS on professional fees |
+| 194C TDS | Contractor TDS at 1%/2% | Contract payment TDS |
 
 ---
 
-## Section 4 — Worked Examples
+## Section 4 -- Worked Examples
 
-### Example 1 — 44ADA Professional (IT Consultant)
+### Example 1 -- UPI Payment from Client
 
-**Input line (HDFC Bank format):**
-```
-15/04/2025  NEFT-INFD12345678-ACME TECH SOLUTIONS-CONSULTING FEB25  CR  500,000.00  1,500,000.00
-```
+**Input line (HDFC Bank statement):**
+`15-Jun-2025 | UPI/CR/250615123456/ALPHA TECH SOLUTIONS | 85,000.00 CR | Bal 3,42,500.00`
 
 **Reasoning:**
-NEFT credit from corporate client. Consulting income — IT consultant qualifies under Section 44ADA. Gross receipt: ₹5,00,000. Under 44ADA, deemed profit = 50% = ₹2,50,000. No further deductions available. File ITR-4 (Sugam).
+Credit via UPI from a business client. This is a professional fee receipt. Under Section 44ADA (professional), 50% of gross receipts = deemed profit. Under 44AD (business), 6% applies as UPI is digital/electronic. Confirm whether taxpayer is a specified professional. Receipt is electronic -- qualifies for the 6% rate if under 44AD.
 
-**Classification:** Gross receipts ₹5,00,000 → Deemed profit ₹2,50,000 (44ADA).
+**Classification:** Gross receipts Rs. 85,000. Add to annual total.
 
----
+### Example 2 -- Razorpay Settlement
 
-### Example 2 — TDS Credit Reconciliation
-
-**Input line (ICICI Bank format):**
-```
-30/04/2025  NEFT CR-TECHCORP LTD-INV 2025-001-LESS TDS 194J 50000  CR  450,000.00  2,250,000.00
-```
+**Input line (ICICI Bank statement):**
+`22-Aug-2025 | RAZORPAY SOFTWARE PVT LTD | 1,24,650.00 CR | Ref: RPY2025082211234`
 
 **Reasoning:**
-Client paid ₹4,50,000 (net of TDS u/s 194J). Gross invoice was ₹5,00,000. TDS deducted: ₹50,000 (10%). Gross receipt to include in return: ₹5,00,000. TDS credit ₹50,000 to claim in ITR against tax payable (verify in Form 26AS).
+Razorpay collects payments on behalf of the seller, deducts their fee, and pays out net amount. The gross receipts (before Razorpay fees) are the taxable income. Razorpay fee of Rs. 350 (approx.) is a business expense. Gross receipts = Rs. 1,25,000; Razorpay fees = Rs. 350 deductible (ITR-3 filers). For presumptive filers (ITR-4), no itemisation -- deemed profit handles all expenses.
 
-**Classification:** Gross receipt ₹5,00,000; TDS credit ₹50,000 (verify 26AS).
+**Classification:** Gross receipts Rs. 1,25,000. Razorpay fee Rs. 350 is deductible for non-presumptive filers only.
 
----
+### Example 3 -- LIC Premium Payment
 
-### Example 3 — Foreign Currency Receipt (Export Service)
-
-**Input line (SBI format):**
-```
-2025-06-20  INWARD REMITTANCE  STRIPE PAYMENTS  USD 5000 @ 83.45  CR  4,17,250.00  8,17,250.00
-```
+**Input line (SBI Bank statement):**
+`01-Apr-2025 | LIC PREMIUM/OTH/NEFT | 45,000.00 DR | Balance 2,85,000.00`
 
 **Reasoning:**
-USD 5,000 export payment. Convert at RBI reference rate on receipt date (₹83.45 = ₹4,17,250). Gross receipt for income tax. If GST-registered: export is zero-rated; LUT required. For 44ADA: deemed 50% profit = ₹2,08,625. Foreign inward remittance ≤ USD 10,000 typically exempt from FEMA declaration.
+Life insurance premium. This is NOT a business expense. Under the old regime, LIC premium qualifies for Section 80C deduction up to Rs. 1,50,000 combined limit. Under the new regime, 80C deductions are not available. Cannot be classified as a deductible business expense in either regime.
 
-**Classification:** Gross receipts ₹4,17,250; check FEMA/RBI requirements.
+**Classification:** EXCLUDE from business expenses. Old regime: add to 80C pool (max Rs. 1,50,000 combined). New regime: no deduction.
 
----
+### Example 4 -- TDS Deducted by Client
 
-### Example 4 — Platform Fee (Razorpay)
-
-**Input line (HDFC format):**
-```
-01/05/2025  RAZORPAY SETTLEMENTS  SETTLEMENT 2025-04  CR  196,020.00  3,196,020.00
-```
+**Input line (Axis Bank statement):**
+`10-Jul-2025 | NEFT CR/MNRVA CONSULTING/INV0042 LESS TDS | 90,000.00 CR`
 
 **Reasoning:**
-Razorpay settles net of fees. If gross collections = ₹2,00,000 and Razorpay fee = ₹3,980 (≈2%): gross receipts = ₹2,00,000; Razorpay fee = ₹3,980 (deductible under ITR-3; not separately deductible under 44ADA). Under 44ADA: include ₹2,00,000 in gross receipts.
+Client paid Rs. 90,000 after deducting 10% TDS on Rs. 1,00,000 invoice. The gross income is Rs. 1,00,000 (not Rs. 90,000). The TDS of Rs. 10,000 is a tax credit visible in Form 26AS. Report Rs. 1,00,000 as gross receipt and claim Rs. 10,000 TDS as credit.
 
-**Classification:** Gross receipts ₹2,00,000; payment gateway fee ₹3,980 (ITR-3 only).
+**Classification:** Gross receipts Rs. 1,00,000. TDS credit Rs. 10,000 (verify in Form 26AS).
 
----
+### Example 5 -- Cash Deposit
 
-### Example 5 — Health Insurance Premium (Not a Business Expense)
-
-**Input line (Axis Bank format):**
-```
-15/06/2025  SI-HDFC ERGO HEALTH INS-POL 12345678  DR  25,000.00  5,75,000.00
-```
+**Input line (Kotak Bank statement):**
+`05-Sep-2025 | CASH DEPOSIT / CDM / BRANCH | 30,000.00 CR`
 
 **Reasoning:**
-Health insurance premium ₹25,000. This is NOT a business expense deductible on P&L. It qualifies as a Section 80D deduction (max ₹25,000 for self/spouse/children if under 60; ₹50,000 for senior citizen). Under old regime: claim as 80D. Under new regime: 80D not available.
+Cash deposit. For 44AD taxpayers, cash receipts are taxed at 8% deemed profit (not the 6% digital rate). For 44ADA professionals, cash and digital are both 50% deemed -- no distinction. Cannot treat as digital receipt. Ask: was this cash collected from a client for a business service?
 
-**Classification:** EXCLUDE from business P&L. Record as 80D deduction (old regime only).
+**Classification:** Gross receipts Rs. 30,000 (cash). For 44AD: counted toward 8% deemed profit pool (not 6%).
 
----
+### Example 6 -- Advance Tax Challan Payment
 
-### Example 6 — Advance Tax Payment
-
-**Input line (Kotak Bank format):**
-```
-14/09/2025  NSDL-INCOME TAX-ADVANCE TAX-CHALLAN 280  DR  1,50,000.00  4,50,000.00
-```
+**Input line (HDFC Bank statement):**
+`14-Sep-2025 | INCOMETAX DEPT/ITNS 280/ADVANCE TAX | 25,000.00 DR`
 
 **Reasoning:**
-Advance tax instalment. Not a business expense — do NOT include in P&L. Record as advance tax paid (credit against final tax liability). September instalment should cover 45% of estimated annual tax liability. Check if adequate.
+Advance tax payment to the Income Tax Department. This is NOT a business expense -- it is a prepayment of income tax liability. Record as advance tax paid (to be credited against final liability). Self-employed persons must pay advance tax in four instalments if annual liability exceeds Rs. 10,000.
 
-**Classification:** EXCLUDE from P&L. Record advance tax credit ₹1,50,000.
+**Classification:** EXCLUDE from income/expenses. Record: Advance tax paid Rs. 25,000 (15 September instalment).
 
 ---
 
-## Section 5 — Tier 1 Rules (Compressed)
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
-### 5.1 Regime Choice
+### 5.1 Presumptive Taxation -- Section 44ADA (Professionals)
 
-**New regime (default from AY 2024-25):** Lower rates, minimal deductions (only 80CCD(2) NPS employer contribution). Standard deduction ₹75,000 for salary/pension. No 80C, 80D, HRA, home loan interest deduction.
+**Legislation:** Section 44ADA, Income Tax Act, 1961
 
-**Old regime (opt-in, deadline: ITR filing date):** Higher rates but full deductions: 80C (₹1.5L), 80D (₹25K-₹50K), HRA, home loan interest, LTA, professional tax, etc.
+Applicable to specified professionals: legal, medical, engineering, architecture, accountancy, technical consultancy, interior decoration, and any other profession notified by CBDT.
 
-**Decision rule for self-employed:** Compare (new regime tax on gross receipts less 44ADA deemed expenses) vs (old regime tax after all deductions). New regime usually wins above ₹15L income; old regime wins if 80C/80D/home loan add up to >₹3L deductions.
+- Gross receipts ≤ Rs. 75,00,000: eligible for presumptive scheme
+- Deemed profit = 50% of gross receipts (taxpayer may declare higher)
+- No need to maintain books of accounts
+- File ITR-4 (Sugam)
+- No deduction for actual expenses allowed -- 50% covers all
 
-### 5.2 Presumptive Taxation (44ADA / 44AD)
+### 5.2 Presumptive Taxation -- Section 44AD (Business)
 
-- 44ADA available to: doctors, lawyers, CAs, architects, engineers, management consultants, interior decorators, film artists, authorised representatives, and "other notified professions"
-- IT consultants / software developers: Generally covered under "technical consultancy" — confirm with CA
-- 44ADA threshold: Gross receipts ≤ ₹75,00,000 (FY 2025-26)
-- Deemed profit: 50% — client cannot separately claim any expense
-- Cannot opt out of 44ADA for 5 years after opting in
+**Legislation:** Section 44AD, Income Tax Act, 1961
 
-### 5.3 Advance Tax Schedule
+Applicable to any business (non-professional) with turnover ≤ Rs. 3,00,00,000.
 
-| Instalment | Deadline | Cumulative % |
+- Deemed profit = 8% of gross turnover (cash receipts)
+- Deemed profit = 6% of gross turnover (digital receipts: NEFT, RTGS, UPI, cheque, electronic transfer)
+- Mixed receipts: apply 6%/8% pro-rata
+- File ITR-4 (Sugam)
+
+### 5.3 Tax Computation Flow (New Regime)
+
+```
+Gross receipts / turnover
+- Presumptive expenses (44ADA: 50% of gross; 44AD: 92-94% of gross)
+= Presumptive profit (Business Income)
++ Other income (interest, dividends, salary)
+= Gross Total Income
+- Standard deduction for salaried component (if any)
+= Total Income
+Apply rate table (Section 1)
+= Income Tax
+x 1.04 (add 4% cess)
+= Total Tax Payable
+- TDS credits (from Form 26AS)
+- Advance tax paid
+= Tax due / refund
+```
+
+### 5.4 Advance Tax Schedule
+
+**Legislation:** Sections 207-219, Income Tax Act
+
+| Instalment | Due Date | Cumulative % of Liability |
 |---|---|---|
 | 1st | 15 June | 15% |
 | 2nd | 15 September | 45% |
 | 3rd | 15 December | 75% |
-| 4th | 15 March | 100% |
+| 4th (final) | 15 March | 100% |
 
-**44ADA / 44AD clients:** Entire advance tax in single instalment by 15 March.
-**Threshold:** If estimated tax liability > ₹10,000, advance tax mandatory.
-**Interest for shortfall:** Section 234B (shortfall at filing) and 234C (per-quarter shortfall).
+Advance tax is required when estimated tax liability for the year exceeds Rs. 10,000. Shortfall attracts interest under Sections 234B and 234C.
 
-### 5.4 TDS Framework
+### 5.5 Interest for Late Payment / Default
 
-| Section | Payer | Rate | Common for |
-|---|---|---|---|
-| 194J | Any person (>₹30,000/year) | 10% | Professional services, consulting |
-| 194C | Any person (>₹30,000/year) | 1% (individual) / 2% (others) | Contract work |
-| 194H | Any person | 5% | Commission |
-| 194A | Banks, financial institutions | 10% | Interest on FD if > ₹40,000/year |
+| Situation | Interest | Section |
+|---|---|---|
+| Advance tax not paid / shortfall | 1% per month on shortfall | 234C |
+| Tax not paid by March 31 | 1% per month from April 1 | 234B |
+| Late filing after July 31 | 1% per month on tax due | 234A |
 
-Always verify TDS in Form 26AS / AIS before claiming credit.
+### 5.6 Filing Deadlines
 
-### 5.5 Filing Deadlines and Penalties
-
-| Event | Date |
+| Scenario | Deadline |
 |---|---|
-| ITR-4 (non-audit) | 31 July AY |
-| ITR-3 (non-audit) | 31 July AY |
-| ITR-3 (tax audit required) | 31 October AY |
-| Belated return | 31 December AY (with penalty) |
-| Revised return | 31 December AY |
+| Non-audit cases (most freelancers) | 31 July 2026 (for FY 2025-26) |
+| Tax audit cases (Section 44AB) | 31 October 2026 |
+| Belated return | 31 December 2026 (with interest) |
+| Revised return | 31 December 2026 |
 
-| Penalty | Amount |
+### 5.7 Non-Deductible Items (Both Regimes)
+
+| Item | Reason |
 |---|---|
-| Late filing (Section 234F) | ₹5,000 (income > ₹5L); ₹1,000 (income ≤ ₹5L) |
-| Interest on unpaid tax (234A) | 1% per month |
-| Interest on advance tax shortfall (234B/C) | 1% per month |
+| Income tax itself (advance tax, self-assessment tax) | Not deductible |
+| LIC premiums, PPF, ELSS | Personal investments (80C in old regime only) |
+| Mediclaim/health insurance | Section 80D (old regime only) |
+| Personal drawings / withdrawals | Not a business expense |
+| GST paid on sales | Indirect tax, not income tax deduction |
+| Fines and penalties | Not incurred for business |
 
 ---
 
-## Section 6 — Tier 2 Catalogue (Reviewer Judgement Required)
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### 6.1 Home Office
+### 6.1 Regime Selection Optimisation
 
-Deductible under ITR-3 as actual expense apportioned by floor area. Under 44ADA/44AD: no separate home office deduction (embedded in 50%/6%/8% deemed profit).
+Old regime is better only when total deductions (80C + 80D + HRA + home loan interest + other) exceed the tax saving from wider new regime slabs. Flag for reviewer to compute both and compare. Typical breakeven: substantial 80C investments + home loan interest + HRA.
 
-**Flag for reviewer:** Is client filing ITR-3 or ITR-4? If ITR-3: what % of home used exclusively for business? Obtain landlord name and monthly rent.
+### 6.2 Mixed Professional and Business Income
 
-### 6.2 Vehicle Expenses
+If a taxpayer has both professional income (44ADA) and business income (44AD), each must be computed separately using its own presumptive rate. Combined income is then aggregated. Flag for reviewer.
 
-Under ITR-3: Deductible business % only. Methods:
-- **Logbook method:** Actual cost × (business km ÷ total km)
-- **Reasonable estimate:** Client provides business-use % — document the basis
+### 6.3 Home Office Deduction (ITR-3 filers only)
 
-Under 44ADA/44AD: No separate vehicle deduction.
+Self-employed persons maintaining regular books (ITR-3) may claim proportionate rent, electricity, and internet for a home office. Acceptable apportionment: floor area ratio or dedicated usage hours. 44ADA/44AD presumptive filers cannot claim this separately -- covered by deemed profit.
 
-**Flag for reviewer:** ITR-3 or ITR-4? If ITR-3: logbook or estimate? What % business use?
+### 6.4 PayPal / Foreign Client Receipts
 
-### 6.3 Phone / Internet
+Foreign receipts converted to INR at SBI TT buying rate on date of receipt (or RBI reference rate). If annual foreign receipts exceed Rs. 20,00,000, the taxpayer may have GST implications. Flag for reviewer.
 
-Under ITR-3: Business % deductible. Flat estimate (e.g., 50% business) accepted if reasonable. Under 44ADA/44AD: embedded in deemed profit.
+### 6.5 Clubbing of Income (Spouse / Minor)
 
-**Flag for reviewer:** ITR-3 only. Confirm business-use % or apply 50% default with reviewer note.
-
-### 6.4 Old vs New Regime Choice
-
-Cannot be determined without all deduction amounts. Compare after computing both.
-
-**Flag for reviewer:** Compute both regimes. Confirm client's deduction proofs (80C investments, health insurance, home loan certificate).
-
-### 6.5 Foreign Currency Income
-
-Convert at RBI reference rate on the date of receipt. Check FEMA compliance if remittances exceed prescribed limits. May require FIRC (Foreign Inward Remittance Certificate) from bank.
-
-**Flag for reviewer:** Confirm receipt date and RBI rate. Get FIRC if required.
+If income earned by a spouse or minor child is attributable to the taxpayer's assets or business, it may be clubbed with the taxpayer's income. Flag for reviewer if transfers to spouse or minor detected.
 
 ---
 
-## Section 7 — Excel Working Paper Template
+## Section 7 -- Excel Working Paper Template
 
 ```
-INDIA INCOME TAX — WORKING PAPER
-Financial Year: 2025-26 (AY 2026-27)
-Client: ___________  PAN: ___________  Profession: ___________
+INDIA INCOME TAX WORKING PAPER -- FY 2025-26
+Taxpayer name: _______________  PAN: ___________
+Filing form: ITR-4 (Presumptive) / ITR-3 (Regular) [circle one]
+Regime: New / Old [circle one]
 
-A. GROSS RECEIPTS
-  A1. Indian clients (NEFT/RTGS/UPI)              ___________
-  A2. Foreign remittances (at INR equivalent)      ___________
-  A3. Platform payouts (Razorpay/Stripe/PayPal)    ___________
-  A4. Total Gross Receipts (A1+A2+A3)              ___________
+A. GROSS RECEIPTS / TURNOVER
+  A1. Digital receipts (UPI, NEFT, RTGS, cheque)   ___________
+  A2. Cash receipts                                  ___________
+  A3. Total gross receipts (A1 + A2)                ___________
 
-B. REGIME COMPARISON
-  B1. NEW REGIME: Tax on (A4 - standard deduction)  ___________
-  B2. OLD REGIME: A4 less actual expenses less 80C/80D etc. ___________
-  B3. Chosen regime:  [ ] New  [ ] Old
+B. PRESUMPTIVE PROFIT (ITR-4 only)
+  B1. 44ADA: A3 x 50%                               ___________
+  B2. 44AD digital: A1 x 6%                         ___________
+  B3. 44AD cash: A2 x 8%                            ___________
+  B4. Presumptive profit (B1 or B2+B3)              ___________
 
-C. PRESUMPTIVE (44ADA) — if applicable
-  C1. Gross Receipts (must be ≤ ₹75,00,000)        ___________
-  C2. Deemed Income (50% of C1)                    ___________
-  C3. Tax on C2 (per chosen regime slabs)          ___________
-  C4. Surcharge (if applicable)                    ___________
-  C5. H&E Cess (4% of C3+C4)                       ___________
-  C6. Less: TDS Credits (per 26AS)                 ___________
-  C7. Less: Advance Tax Paid                       ___________
-  C8. Net Tax Payable / (Refund)                   ___________
+C. OTHER INCOME
+  C1. Interest income                                ___________
+  C2. Dividend income                                ___________
+  C3. Salary / pension                               ___________
+  C4. Total other income                             ___________
 
-D. TDS RECONCILIATION
-  D1. TDS per 26AS/AIS                             ___________
-  D2. TDS per invoices                             ___________
-  D3. Difference (flag if >0)                      ___________
+D. GROSS TOTAL INCOME (B4 + C4)                     ___________
+
+E. DEDUCTIONS (Old Regime only)
+  E1. Section 80C (LIC, PPF, ELSS, tuition, etc.)  ___________
+  E2. Section 80D (health insurance)                ___________
+  E3. Section 80G (donations)                       ___________
+  E4. Total deductions (max 80C: 1,50,000)          ___________
+
+F. TOTAL INCOME (D - E)                              ___________
+
+G. TAX COMPUTATION
+  G1. Income tax (per rate table)                    ___________
+  G2. Less: Section 87A rebate                       ___________
+  G3. Surcharge (if applicable)                      ___________
+  G4. Health & Education Cess (4% of G1+G3-G2)     ___________
+  G5. Total tax payable                              ___________
+
+H. TAX CREDITS
+  H1. TDS (from Form 26AS)                          ___________
+  H2. Advance tax paid                               ___________
+  H3. Total credits                                  ___________
+
+I. NET TAX DUE / REFUND (G5 - H3)                  ___________
 
 REVIEWER FLAGS:
+  [ ] Form 26AS verified against bank statement?
   [ ] Regime choice confirmed?
-  [ ] 44ADA eligibility confirmed (profession type)?
-  [ ] All TDS credits verified in 26AS/AIS?
-  [ ] Advance tax adequate (avoid 234B/234C)?
-  [ ] Foreign income FIRC obtained?
-  [ ] T2 items resolved?
+  [ ] Cash vs digital receipt split confirmed?
+  [ ] TDS certificates received for all credits?
+  [ ] Advance tax interest computed (234B/234C)?
 ```
 
 ---
 
-## Section 8 — Bank Statement Reading Guide
+## Section 8 -- Bank Statement Reading Guide
 
-### Common Indian Bank Formats
+### Indian Bank Statement Formats
 
-| Bank | Date Format | Key Fields |
+| Bank | Key Format | Key Fields |
 |---|---|---|
-| HDFC Bank | DD/MM/YYYY | Date \| Narration \| Chq./Ref.No. \| Value Dt \| Withdrawal Amt \| Deposit Amt \| Closing Balance |
-| ICICI Bank | DD/MM/YYYY | Transaction Date \| Value Date \| Reference No \| Description \| Debit \| Credit \| Balance |
-| SBI | DD/MM/YYYY | Txn Date \| Value Date \| Description \| Ref No \| Debit \| Credit \| Balance |
-| Axis Bank | DD-MM-YYYY | Date \| Transaction Details \| Chq No \| Debit \| Credit \| Balance |
-| Kotak Mahindra | DD/MM/YYYY | Date \| Description \| Chq No \| Debit \| Credit \| Balance |
+| HDFC Bank | CSV / PDF | Date, Narration, Value Date, Debit, Credit, Closing Balance |
+| ICICI Bank | CSV / Excel | S.No, Value Date, Transaction Date, Cheque/Ref No, Transaction Remarks, Withdrawal (Dr), Deposit (Cr), Balance |
+| SBI | CSV / PDF | Txn Date, Value Date, Description, Ref No/Cheque No, Debit, Credit, Balance |
+| Axis Bank | CSV | Tran Date, CHQNO, Particulars, Debit, Credit, Balance |
+| Kotak Mahindra | XLS | Date, Description, Chq/Ref No, Debit(INR), Credit(INR), Bal(INR) |
 
-### Key Banking Terms
+### Key Narration Patterns
 
-| Term | Classification Hint |
-|---|---|
-| NEFT CR / RTGS CR | Incoming wire — potential client payment |
-| IMPS CR / UPI CR | Instant payment — client receipt |
-| NEFT DR / RTGS DR | Outgoing wire — supplier payment |
-| SI- / ECS DR | Standing instruction / auto-debit — subscription or EMI |
-| ATM WDL / ATM DR | Cash withdrawal — ask purpose |
-| INT CR | Interest income — other sources, not business |
-| TDS | TDS deducted — cross-check with 26AS |
-| RETURN / BOUNCE | Failed transaction — ignore |
-| ADVANCE TAX / CHALLAN 280 | Tax payment — not an expense |
-
-### Number Format
-
-INR amounts use Indian numbering: ₹10,00,000 = ₹10 lakh = INR 1,000,000. Statements typically omit the ₹ symbol. Comma = thousands/lakh/crore separator; no decimal for whole rupees.
+| Narration | Meaning | Tax Action |
+|---|---|---|
+| NEFT/CR/[ref]/[sender] | Electronic credit via NEFT | Business income |
+| UPI/CR/[date]/[ref]/[sender] | UPI credit | Business income (digital) |
+| CASH DEP / CDM | Cash deposit | Business income (cash) |
+| TRF TO [own account] | Internal transfer | Exclude |
+| IMPS/[ref]/[name] | IMPS credit | Business income (digital) |
+| ATW/[ATM ref]/[branch] | ATM withdrawal | Investigate -- personal or business? |
+| INT PD / INTEREST CREDIT | Bank interest | Other income |
+| SALARY/SAL | Salary credit | Employment income |
+| ADVNC TAX / ITNS 280 | Advance tax payment | Tax prepayment (credit) |
 
 ---
 
-## Section 9 — Onboarding Fallback
+## Section 9 -- Onboarding Fallback
 
 If the client provides a bank statement but cannot answer onboarding questions immediately:
 
-1. Classify all credits as Gross Receipts and all debits as potential expenses
-2. Mark all T2 items "PENDING — reviewer must confirm"
-3. Apply conservative defaults (new regime; 44ADA if profession type plausible)
-4. Generate working paper with flags
+1. Classify all UPI/NEFT/RTGS/cheque credits as potential gross receipts (digital)
+2. Classify all CDM/cash deposits as potential gross receipts (cash)
+3. Apply conservative defaults: new regime, professional (44ADA), 50% presumptive profit
+4. Mark all salary credits and interest separately
+5. Flag advance tax challans as prepaid tax credits
+6. Generate working paper with clear PENDING flags
 
-**Onboarding questions:**
+Present these questions:
+
 ```
-ONBOARDING QUESTIONS — INDIA INCOME TAX
-1. What is your profession? (IT consultant, doctor, CA, lawyer, architect, etc.)
-2. Are you filing under 44ADA (presumptive) or maintaining full books (ITR-3)?
-3. New tax regime or old tax regime — any preference / prior-year choice?
-4. Total gross receipts for FY 2025-26 (approximate)?
-5. Have you paid advance tax? If yes, how much and when?
-6. Any foreign clients / remittances from abroad?
-7. Do you have any 80C investments (LIC, ELSS, PPF, etc.)?
-8. Health insurance? Home loan? (Relevant only if old regime)
-9. TDS deducted by clients — do you have Form 16A / Form 26AS access?
-10. GST registered? If yes, gross receipts for GST and income tax may differ.
+ONBOARDING QUESTIONS -- INDIA INCOME TAX
+1. Are you a specified professional (doctor, CA, lawyer, architect, etc.) or a general business?
+2. New or old tax regime? (Default: new)
+3. Total gross receipts for FY 2025-26?
+4. What % of receipts were received via UPI/NEFT/RTGS/cheque (vs cash)?
+5. TDS deducted by clients -- do you have Form 26AS / AIS downloaded?
+6. Advance tax paid -- any ITNS 280 challans this year?
+7. Old regime only: any LIC, PPF, ELSS, health insurance, home loan repayments?
+8. Is your PAN linked to your bank account?
 ```
 
 ---
 
-## Section 10 — Reference Material
+## Section 10 -- Reference Material
 
-| Topic | Reference |
+### Key Legislation
+
+| Topic | Section |
 |---|---|
-| Income computation | Income Tax Act 1961, Sections 28-44 |
-| Presumptive taxation | Section 44ADA, 44AD |
-| Tax rates (new regime) | Finance Act 2025 — First Schedule |
-| Advance tax | Section 208-219 |
-| TDS | Chapter XVII-B (Sections 192-206AA) |
-| Section 80C deductions | Chapter VI-A |
-| Section 80D health insurance | Section 80D |
-| Tax filing portal | https://www.incometax.gov.in |
-| Form 26AS / AIS | e-filing portal — My Account |
-| TDS rate chart | CBDT circular (annual) |
+| Presumptive taxation (professionals) | Section 44ADA |
+| Presumptive taxation (business) | Section 44AD |
+| New tax regime | Section 115BAC |
+| Advance tax | Sections 207-219 |
+| Interest for default | Sections 234A, 234B, 234C |
+| TDS on professional fees | Section 194J |
+| TDS on rent | Section 194I |
+| Section 80C deductions | Section 80C |
+| Health insurance deduction | Section 80D |
+
+### ITR Form Guide
+
+| Form | Who Uses It |
+|---|---|
+| ITR-4 (Sugam) | Presumptive income (44ADA/44AD), total income ≤ Rs. 50,00,000 |
+| ITR-3 | Business/professional income NOT under presumptive scheme |
+| ITR-1 (Sahaj) | Salaried individuals only, no business income |
+
+### Known Gaps / Out of Scope
+
+- Capital gains (Sections 111A, 112, 112A)
+- NRI / RNOR taxation
+- Partnership firms, companies, LLPs
+- DTAA / double taxation relief
+- Cryptocurrency taxation (VDA -- Section 115BBH)
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; transaction pattern library; local bank formats; worked examples |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] New regime applied by default unless old regime confirmed?
+- [ ] 4% cess applied after rebate?
+- [ ] Surcharge checked for income > Rs. 50,00,000?
+- [ ] Cash vs digital receipts split verified for 44AD?
+- [ ] TDS credits verified against Form 26AS, not just bank statement?
+- [ ] Advance tax interest computed if shortfall > Rs. 10,000?
 
 ---
 
 ## PROHIBITIONS
 
-- NEVER compute tax using simple multiplication on a single slab — Indian rates are progressive.
-- NEVER allow health insurance premiums, LIC, PPF, or ELSS as business (P&L) deductions — they are 80C/80D personal deductions.
-- NEVER allow income tax payments or GST payments as business expenses.
-- NEVER apply 44ADA to businesses (retail, manufacturing) — only listed professions qualify.
-- NEVER allow 44ADA deemed profit below 50% — the 50% floor is mandatory.
-- NEVER skip TDS reconciliation with Form 26AS — mismatch causes demand notice.
-- NEVER advise on regime choice without computing both regimes.
-- NEVER present tax calculations as definitive — always label as estimated and direct client to their CA.
+- NEVER apply old regime without explicit confirmation from client
+- NEVER allow LIC/PPF/health insurance premiums as business expenses (they are 80C/80D items in old regime only)
+- NEVER use net bank receipt as gross income when TDS was deducted -- always gross up
+- NEVER allow income tax (advance tax, self-assessment tax) as a business deduction
+- NEVER apply the 6% deemed profit rate to cash receipts under 44AD (8% applies)
+- NEVER advise NRI clients using this skill -- escalate
+- NEVER present tax calculations as definitive -- always label as estimated and direct client to their Chartered Accountant for confirmation
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Chartered Accountant (CA) before filing. Tax laws in India change annually with each Finance Act — verify rates and thresholds for the applicable assessment year.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Chartered Accountant or equivalent licensed practitioner in India) before filing or acting upon.
+
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
