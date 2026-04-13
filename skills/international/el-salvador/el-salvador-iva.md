@@ -1,531 +1,282 @@
 ---
 name: el-salvador-iva
-description: Use this skill whenever asked to prepare, review, or create an El Salvador IVA (Impuesto a la Transferencia de Bienes Muebles y a la Prestacion de Servicios) return for any client. Trigger on phrases like "prepare IVA return", "do the IVA", "El Salvador VAT", or any request involving El Salvador value added tax filing. ALWAYS read this skill before touching any El Salvador IVA-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for an El Salvador IVA return (F-07) for any client. Trigger on phrases like "prepare IVA return", "El Salvador VAT", "F-07", "DGII return", or any request involving El Salvador value added tax filing. This skill covers standard IVA filers only. Free-zone (Zona Franca) and maquila entities are in the refusal catalogue. ALWAYS read this skill before touching any El Salvador IVA work.
+version: 2.0
 ---
 
-# El Salvador IVA Return Preparation Skill
+# El Salvador IVA Return Skill (F-07) v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | El Salvador |
-| Jurisdiction Code | SV |
-| Primary Legislation | Ley del Impuesto a la Transferencia de Bienes Muebles y a la Prestacion de Servicios (Ley del IVA), Decreto Legislativo 296 |
-| Supporting Legislation | Reglamento de la Ley del IVA; Codigo Tributario |
-| Tax Authority | Ministerio de Hacienda (MH) / Direccion General de Impuestos Internos (DGII) |
-| Filing Portal | https://portaldgii.mh.gob.sv (Portal DGII) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return form assignment, input tax recovery, derived calculations. Tier 2: partial exemption, free zone, maquila treatments. Tier 3: complex structures, rulings. |
+|---|---|
+| Country | El Salvador |
+| Standard rate | 13% |
+| Exempt supplies | Unprocessed agricultural products, medicines, agricultural inputs, books, medical services, education, financial interest, insurance (life), residential rental, public transport, water, electricity (domestic first tier), fuel (subject to specific tax) |
+| Return form | F-07 |
+| Filing portal | https://portaldgii.mh.gob.sv |
+| Authority | Ministerio de Hacienda / DGII |
+| Currency | USD |
+| Filing frequency | Monthly |
+| Deadline | 10th business day of month following the period |
+| Contributor | Open Accountants Skills Registry |
+| Validated by | Pending |
+| Validation date | Pending |
 
----
+**Key F-07 lines:**
 
-## Confidence Tier Definitions
+| Line | Meaning |
+|---|---|
+| 1 | Domestic taxable sales (ventas internas gravadas) |
+| 2 | B2B taxable sales (ventas a contribuyentes) |
+| 3 | B2C taxable sales (ventas a consumidor final) |
+| 4 | Exports at 0% |
+| 5 | Exempt sales |
+| 6 | Total sales |
+| 7 | Debito fiscal (output IVA at 13%) |
+| 8 | Domestic taxable purchases |
+| 9 | Taxable imports |
+| 10 | Input IVA — local |
+| 11 | Input IVA — imports |
+| 12 | Total input IVA |
+| 13 | Adjustments (blocked/apportioned) |
+| 14 | Net input IVA |
+| 15 | Tax determined (7 - 14) |
+| 16 | Prior credit balance |
+| 17 | Retentions and perceptions |
+| 18 | Total payable / carry-forward |
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+**Conservative defaults:**
 
----
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 13% |
+| Unknown IVA status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic El Salvador |
+| Unknown business-use proportion | 0% recovery |
+| Unknown blocked-input status | Blocked |
+| Unknown document type | Factura (no credit) until CCF confirmed |
 
-## Step 0: Client Onboarding Questions
-
-1. **Entity name and NIT (Numero de Identificacion Tributaria)** [T1] -- 14-digit NIT
-2. **NRC (Numero de Registro de Contribuyente)** [T1] -- IVA registration number
-3. **Filing period** [T1] -- monthly (standard for all IVA filers)
-4. **Industry/sector** [T2] -- impacts classification (maquila, free zone, agriculture)
-5. **Does the business make exempt supplies?** [T2]
-6. **Does the business import goods?** [T1]
-7. **Is the business in a free trade zone (Zona Franca)?** [T2]
-8. **Credit balance brought forward** [T1]
-
-**If items 1-3 are unknown, STOP.**
-
----
-
-## Step 1: IVA Rate Structure [T1]
-
-**Legislation:** Ley del IVA, Article 54.
-
-### Standard Rate
-
-| Rate | Application |
-|------|-------------|
-| 13% | Standard rate on all taxable transfers of goods and provision of services [T1] |
-
-### Exempt Supplies [T1]
-
-**Legislation:** Ley del IVA, Articles 44, 45, 46.
-
-**Exempt goods (Article 44):**
-- Unprocessed agricultural products: grains, fresh fruits, vegetables, fresh meats, eggs, milk
-- Live animals for production
-- Medicines and pharmaceutical products
-- Agricultural inputs (fertilizers, insecticides, seeds)
-- Books, newspapers, school supplies
-- Fuel and petroleum derivatives (subject to specific fuel contribution instead)
-- Machinery for agricultural use
-
-**Exempt services (Article 46):**
-- Health/medical services
-- Educational services (authorized institutions)
-- Financial services (interest, insurance premiums)
-- Residential rental
-- Public transportation
-- Water (piped, domestic)
-- Electricity (domestic, first tier consumption)
-
-### Exports (0% -- Full Input Credit) [T1]
-- Export of goods: zero-rated with full input credit [T1]
-- Export of services: services consumed outside El Salvador by non-residents [T2]
-
----
-
-## Step 2: Transaction Classification Rules
-
-### 2a. Determine Transaction Type [T1]
-- Sale (debito fiscal -- output) or Purchase (credito fiscal -- input)
-- Salaries, ISSS (social security), AFP (pension), ISR (income tax), loans, dividends = OUT OF SCOPE
-
-### 2b. Determine Counterparty Location [T1]
-- Domestic (El Salvador)
-- Central American (Guatemala, Honduras, Nicaragua, Costa Rica)
-- International
-
-### 2c. Determine IVA Rate [T1]
-- 0% (export), 13% (standard), or exempt
-
----
-
-## Step 3: IVA Return Form Structure (F-07) [T1]
-
-**Filed monthly via Portal DGII.**
-
-### Debito Fiscal (Output)
-
-| Line | Description |
-|------|-------------|
-| 1 | Ventas internas gravadas (Domestic taxable sales) |
-| 2 | Ventas a contribuyentes (B2B taxable sales) |
-| 3 | Ventas a consumidor final (B2C taxable sales) |
-| 4 | Exportaciones (Exports at 0%) |
-| 5 | Ventas exentas (Exempt sales) |
-| 6 | Total ventas |
-| 7 | Debito fiscal (IVA on taxable sales at 13%) |
-
-### Credito Fiscal (Input)
-
-| Line | Description |
-|------|-------------|
-| 8 | Compras internas gravadas (Domestic taxable purchases) |
-| 9 | Importaciones gravadas (Taxable imports) |
-| 10 | Credito fiscal por compras (Input IVA -- local) |
-| 11 | Credito fiscal por importaciones (Input IVA -- imports) |
-| 12 | Total credito fiscal |
-| 13 | Ajustes al credito fiscal (blocked/apportioned) |
-| 14 | Credito fiscal neto |
-
-### Liquidacion
-
-| Line | Description |
-|------|-------------|
-| 15 | Impuesto determinado (Line 7 - Line 14) |
-| 16 | Remanente credito fiscal anterior (prior credit) |
-| 17 | Retenciones y percepciones |
-| 18 | Total a pagar / remanente |
-
----
-
-## Step 4: IVA Retention and Perception [T1]
-
-**Legislation:** Ley del IVA, Articles 162-162-B; Codigo Tributario, Article 162.
-
-El Salvador has an extensive retention/perception system:
-
-### Retention (Retencion) [T1]
-
-| Agent Type | Retention Rate |
-|------------|---------------|
-| Large taxpayer purchasing from small/medium taxpayers | 1% of taxable purchase price (not of IVA) [T1] |
-| Government entities | 1% of purchase price [T1] |
-
-### Perception (Percepcion) [T1]
-
-| Agent Type | Perception Rate |
-|------------|----------------|
-| Large taxpayer selling to small/medium taxpayers | 1% of taxable sale price [T1] |
-
-### Treatment on the Return [T1]
-- Retentions/perceptions credited on Line 17
-- Certificates must be obtained and retained
-- Large taxpayers designated by MH resolution
-
----
-
-## Step 5: Reverse Charge on Imported Services [T1]
-
-**Legislation:** Ley del IVA, Article 14-A.
-
-When an El Salvador registered person receives services from a non-resident:
-
-1. Self-assess IVA at 13% [T1]
-2. Report as output IVA (debito fiscal) [T1]
-3. Claim as input IVA (credito fiscal) if for taxable operations [T1]
-4. Net effect: zero for fully taxable businesses [T1]
-
----
-
-## Step 6: Deductibility Check
-
-### Blocked Input IVA (No Recovery) [T1]
-
-**Legislation:** Ley del IVA, Articles 65, 65-A.
-
-- **Entertainment** -- meals, recreation (unless hospitality business) [T1]
-- **Motor vehicles** -- passenger vehicles (exception: rental, taxi, transport businesses) [T1]
-- **Personal use** [T1]
-- **Exempt operations** -- costs attributable to exempt supplies [T1]
-- **Purchases without valid Comprobante de Credito Fiscal (CCF)** [T1]
-
-### Invoice Requirement [T1]
-- B2B: Comprobante de Credito Fiscal (CCF) -- supports input IVA credit
-- B2C: Factura de Consumidor Final -- does NOT support input credit for the buyer
-- Input IVA only deductible with valid CCF or equivalent electronic document (DTE)
-
-### Partial Exemption [T2]
-- Direct attribution + proportional method for common costs
-- `Recovery % = (Taxable Sales / Total Sales) * 100`
-- Flag for reviewer
-
----
-
-## Step 7: Key Thresholds [T1]
+**Red flag thresholds:**
 
 | Threshold | Value |
-|-----------|-------|
-| Mandatory IVA registration | Annual taxable sales exceeding USD 5,714.29 (El Salvador uses USD) [T1] |
-| Large taxpayer designation | Designated by MH resolution (typically annual revenue > USD 1,000,000) [T2] |
-| Electronic invoicing (DTE) | Mandatory phased rollout [T2] |
+|---|---|
+| HIGH single-transaction size | USD 5,000 |
+| HIGH tax-delta on a single conservative default | USD 300 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 across the return |
+| LOW absolute net IVA position | USD 5,000 |
 
 ---
 
-## Step 8: Filing Deadlines and Penalties [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-**Legislation:** Codigo Tributario, Articles 238, 246, 249.
+### Required inputs
 
-### Filing Deadlines
+**Minimum viable** — bank statement for the month. Acceptable from: Banco Agricola, Banco Cuscatlan, Davivienda, BAC Credomatic, Banco de America Central, or any other.
 
-| Period | Deadline |
-|--------|----------|
-| Monthly IVA return (F-07) | 10th business day of the month following the period [T1] |
-| IVA retention/perception return | 10th business day of following month [T1] |
+**Recommended** — Comprobantes de Credito Fiscal (CCF), Documentos Tributarios Electronicos (DTE), comprobantes de retencion.
 
-### Penalties
+**Ideal** — complete Libro de Compras y Ventas, prior F-07, DTE register.
 
-| Violation | Penalty |
-|-----------|---------|
-| Late filing | USD 8 per day (individuals) / USD 11 per day (companies), max 20 minimum wages [T1] |
-| Late payment | 2% per month on unpaid tax (max 60%) [T1] |
-| Failure to register | Fines + back-assessment [T1] |
-| Failure to issue CCF/factura | Closure of business (temporary, 5-10 days) [T1] |
-| Fraud | Criminal penalties; imprisonment 4-6 years [T1] |
+### El Salvador-specific refusal catalogue
+
+**R-SV-1 — Zona Franca entity.** *Trigger:* client operates in a free trade zone. *Message:* "Free zone companies have specific IVA exemptions under the Ley de Zonas Francas. Requires valid DPA authorization. Escalate to specialist."
+
+**R-SV-2 — Maquila operations.** *Trigger:* client operates under maquila regime. *Message:* "Maquila operations have special IVA treatment. Maquila license must be current. Escalate."
+
+**R-SV-3 — Partial exemption.** *Trigger:* mixed taxable and exempt supplies. *Message:* "Proportional method required for common costs. Flag for reviewer."
 
 ---
 
-## Step 9: Classification Matrix [T1]
+## Section 3 — Supplier pattern library
 
-### Domestic Purchases
+### 3.1 Banks (fees taxable, interest exempt)
 
-| Category | IVA Rate | Input Credit | Document |
-|----------|---------|--------------|----------|
-| Office supplies | 13% | Yes (with CCF) | CCF |
-| Commercial rent | 13% | Yes | CCF |
-| Residential rent | Exempt | No | Factura |
-| Electricity (commercial) | 13% | Yes | CCF |
-| Telephone/internet | 13% | Yes | CCF |
-| Motor car | 13% | BLOCKED | CCF |
-| Entertainment | 13% | BLOCKED | CCF |
-| Professional services | 13% | Yes | CCF |
-| Insurance | 13% | Yes | CCF |
-| Basic food | Exempt | No | N/A |
-| Medicines | Exempt | No | N/A |
-| Fuel | Exempt (specific tax) | No IVA | Factura |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BANCO AGRICOLA, BAC | 13% for fees; EXCLUDE for interest | |
+| BANCO CUSCATLAN, DAVIVIENDA | Same | |
+| INTERESES | EXCLUDE | Interest exempt |
 
-### Sales
+### 3.2 Government (exclude)
 
-| Category | IVA | Return Line |
-|----------|-----|-------------|
-| B2B domestic (standard) | 13% | Line 2, Line 7 |
-| B2C domestic | 13% | Line 3, Line 7 |
-| Export | 0% | Line 4 |
-| Exempt | Exempt | Line 5 |
+| Pattern | Treatment | Notes |
+|---|---|---|
+| MINISTERIO DE HACIENDA, MH, DGII | EXCLUDE | Tax payment |
+| ISSS | EXCLUDE | Social security |
+| AFP | EXCLUDE | Pension |
 
----
+### 3.3 Utilities
 
-## Step 10: Free Trade Zone (Zona Franca) Rules [T2]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| CAESS, CLESA, DELSUR, AES | Domestic 13% (commercial) | Electricity |
+| ANDA | Exempt (domestic water) | |
+| CTE, CLARO, TIGO, DIGICEL | Domestic 13% | Telecoms |
 
-**Legislation:** Ley de Zonas Francas Industriales y de Comercializacion.
+### 3.4 SaaS — non-resident (reverse charge)
 
-- Free zone companies: exempt from IVA on imports for export processing
-- Sales to domestic market from free zone: subject to IVA as imports
-- Maquila operations: special regime, generally exempt from IVA on inputs
-- Flag for reviewer: free zone benefits require valid DPA (Decreto de Promocion de Actividades) authorization
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | Reverse charge 13% | Self-assess output and input |
+| ZOOM, SLACK, NOTION, ANTHROPIC, OPENAI | Reverse charge 13% | Same |
 
----
+### 3.5 Food and entertainment (blocked)
 
-## Step 10a: Tax Invoice Requirements [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SUPER SELECTOS, WALMART, PRICESMART | Default BLOCK | Personal provisioning |
+| RESTAURANT, RESTAURANTE | Default BLOCK | Entertainment blocked |
 
-**Legislation:** Ley del IVA; Codigo Tributario, Article 107.
+### 3.6 Fuel
 
-### Types of Tax Documents
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PUMA, SHELL, TEXACO, UNO | Exempt (fuel subject to specific tax) | No IVA component |
 
-| Document | Code | Use | Supports IVA Credit |
-|----------|------|-----|-------------------|
-| Comprobante de Credito Fiscal (CCF) | - | B2B transactions | YES [T1] |
-| Factura de Consumidor Final | - | B2C transactions | NO [T1] |
-| Nota de Credito | - | Returns, corrections | YES (reduces IVA) [T1] |
-| Nota de Debito | - | Additional charges | YES [T1] |
-| Factura de Exportacion | - | Export sales | N/A (zero-rated) [T1] |
-| Documento Tributario Electronico (DTE) | - | Electronic equivalent of above | Same as underlying type [T1] |
+### 3.7 Professional services
 
-### Required Contents of CCF [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ABOGADO, CONTADOR, NOTARIO | Domestic 13% | Must have CCF for input credit |
 
-1. Pre-printed text "COMPROBANTE DE CREDITO FISCAL"
-2. Name, trade name, NIT, and NRC of issuer
-3. Pre-printed sequential number authorized by MH
-4. Date of issuance
-5. Name, NIT, and NRC of buyer
-6. Description of goods or services
-7. Quantity and unit price
-8. Taxable base (base imponible)
-9. IVA amount (13%)
-10. Total amount
-11. Printed terms of payment (credit/cash)
-12. Authorization resolution number from MH
+### 3.8 Internal transfers
 
-### DTE (Electronic Invoicing) [T2]
-
-El Salvador is implementing mandatory electronic invoicing (DTE):
-- Large taxpayers: already mandatory
-- Medium and small taxpayers: phased rollout
-- DTE replaces paper CCF and facturas
-- Must be authorized by MH digital system
-- Input IVA credit valid with authorized DTE
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFERENCIA PROPIA | EXCLUDE | |
+| SALARIO, PLANILLA | EXCLUDE | |
 
 ---
 
-## Step 10b: Sector-Specific Rules [T2]
+## Section 4 — Worked examples
 
-### Agriculture
+### Example 1 — Non-resident SaaS reverse charge
+**Input:** `NOTION LABS INC ; DEBIT ; USD 16.00`
+**Treatment:** Reverse charge at 13%. Output = USD 2.08. Input = USD 2.08. Net zero.
 
-- First sale of unprocessed agricultural products by the producer: exempt [T2]
-- Subsequent sales: taxable at 13% [T1]
-- Agricultural inputs (seeds, fertilizers): exempt [T1]
-- Veterinary services and supplies: exempt [T1]
-- Processing services for agricultural products: taxable at 13% [T1]
-- Flag for reviewer: "first sale by producer" exemption requires careful verification
+### Example 2 — B2B domestic sale
+**Input:** `SA CLIENTE ; CREDIT ; Invoice SV-041 ; USD 5,650`
+**Treatment:** Net = 5,000. IVA = 650. Line 2/7.
 
-### Manufacturing and Maquila
+### Example 3 — Entertainment, blocked
+**Input:** `RESTAURANTE LA PAMPA ; DEBIT ; USD 113`
+**Treatment:** Blocked. No input credit.
 
-- Maquila operations: special regime under Ley de Servicios Internacionales
-- Raw materials imported for maquila: IVA exempt [T2]
-- Finished goods re-exported: zero-rated [T1]
-- Domestic sales by maquila: standard 13% IVA [T1]
-- Flag for reviewer: maquila license must be current and valid
+### Example 4 — Export
+**Input:** `US BUYER INC ; CREDIT ; USD 50,000`
+**Treatment:** Line 4. Zero-rated. Full input credit.
 
-### Construction and Real Estate
+### Example 5 — Motor vehicle, blocked
+**Input:** `AUTOMOTRIZ SA ; DEBIT ; Sedan ; USD 20,000`
+**Treatment:** Blocked. No input credit.
 
-- Construction services: taxable at 13% [T1]
-- First transfer of new real estate: taxable at 13% [T1]
-- Subsequent transfers of used real estate: exempt [T2]
-- Construction materials: taxable at 13% [T1]
-- Architectural and engineering services: taxable at 13% [T1]
-
-### Financial Services
-
-- Interest on loans: exempt [T1]
-- Banking fees and commissions: taxable at 13% [T1]
-- Insurance premiums (life/health): exempt [T1]
-- Insurance premiums (property/casualty): taxable at 13% [T1]
-- Credit card fees: taxable at 13% [T1]
-
-### Digital Economy
-
-- Digital services from non-residents: subject to IVA at 13% via reverse charge [T2]
-- Streaming, cloud computing, digital advertising: buyer self-assesses [T2]
-- Flag for reviewer: digital services taxation rules may be evolving
+### Example 6 — Purchase with Factura (no CCF)
+**Input:** `TIENDA X ; DEBIT ; Factura Consumidor Final ; IVA USD 65`
+**Treatment:** IVA NOT deductible. No CCF = no credit. Request CCF from supplier.
 
 ---
 
-## Step 10c: Libro de Compras y Ventas [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-**Legislation:** Codigo Tributario, Article 141.
+### 5.1 Standard rate 13% (Ley del IVA Art. 54)
+Default for all taxable supplies. B2B sales: Line 2/7. B2C sales: Line 3/7.
 
-All IVA taxpayers must maintain:
+### 5.2 Exempt goods (Art. 44)
+Unprocessed agricultural products, medicines, agricultural inputs, books, fuel.
 
-- **Libro de Ventas a Contribuyentes** -- sales to registered taxpayers (CCF)
-- **Libro de Ventas a Consumidor Final** -- sales to final consumers (facturas)
-- **Libro de Compras** -- all purchases with CCF details
-- All books must be legalized by a public accountant (Contador Publico)
-- Available for MH/DGII inspection
-- Retention period: minimum 5 years
-- Summary totals reconcile to F-07 return
+### 5.3 Exempt services (Art. 46)
+Medical, education, financial interest, insurance (life), residential rental, public transport, water, electricity (domestic).
 
----
+### 5.4 Exports
+Zero-rated with full input credit. Line 4.
 
-## PROHIBITIONS [T1]
+### 5.5 Reverse charge (Art. 14-A)
+Services from non-residents: self-assess at 13%.
 
-- NEVER let AI guess IVA classification
-- NEVER allow input credit on blocked categories
-- NEVER allow input credit without valid CCF or DTE
-- NEVER allow input credit on Factura de Consumidor Final for B2B purchases
-- NEVER apply reverse charge to out-of-scope categories
-- NEVER confuse zero-rated exports with exempt supplies
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine
+### 5.6 Retention/perception system
+Large taxpayer purchasing from small/medium: retain 1% of purchase price. Government: retain 1%.
 
----
+### 5.7 Blocked input IVA (Art. 65)
+Entertainment, motor vehicles, personal use, exempt operations, purchases without CCF.
 
-## Step 11: Edge Case Registry
-
-### EC1 -- Purchase documented with Factura (not CCF) [T1]
-**Situation:** Supplier issues Factura de Consumidor Final instead of CCF to a registered taxpayer.
-**Resolution:** Input IVA NOT deductible. Factura does not support credito fiscal. Request CCF from supplier.
-
-### EC2 -- Imported software from US [T1]
-**Situation:** El Salvador company subscribes to US cloud service. No IVA.
-**Resolution:** Self-assess IVA at 13%. Output = debito fiscal. Input = credito fiscal (if taxable operations). Net = zero.
-
-### EC3 -- Retention by large taxpayer [T1]
-**Situation:** Large taxpayer client retains 1% from small supplier's invoice.
-**Resolution:** Client reports input IVA in full. Retained 1% remitted to MH. Supplier claims retention credit on Line 17.
-
-### EC4 -- Credit notes (Nota de Credito) [T1]
-**Situation:** Client issues credit note for returns.
-**Resolution:** Reduce debito fiscal. Issue proper Nota de Credito. Report net.
-
-### EC5 -- Cross-border services to Honduras [T2]
-**Situation:** El Salvador company provides IT services to Honduras company.
-**Resolution:** May qualify as export (zero-rated) if consumed outside El Salvador. Flag for reviewer.
-
-### EC6 -- Real estate sale [T2]
-**Situation:** Company sells commercial property.
-**Resolution:** Transfer of real estate is subject to IVA at 13% (first transfer of new construction). Subsequent transfers may be exempt. Flag for reviewer.
-
-### EC7 -- Bitcoin (digital currency) transactions [T2]
-**Situation:** Client receives Bitcoin as payment for goods/services.
-**Resolution:** El Salvador recognizes Bitcoin as legal tender. IVA still applies on the underlying supply of goods/services at 13%. The payment method does not affect IVA treatment. Value in USD at time of transaction. Flag for reviewer: Bitcoin accounting is evolving [T2].
-
-### EC8 -- Agricultural first sale [T2]
-**Situation:** Farmer sells unprocessed corn to wholesaler.
-**Resolution:** First sale of unprocessed agricultural products may be exempt. Confirm the product qualifies and this is indeed the first sale. Flag for reviewer.
+### 5.8 Document requirements
+B2B: CCF (supports input credit). B2C: Factura Consumidor Final (no credit for buyer). DTE replaces paper.
 
 ---
 
-## Step 12: Test Suite
+## Section 6 — Tier 2 catalogue (compressed)
 
-### Test 1 -- Standard local purchase, 13%
-**Input:** SV supplier, office supplies, gross USD 1,130, IVA USD 130, net USD 1,000. Valid CCF.
-**Expected output:** Line 10 = USD 130 input IVA. Full recovery.
+### 6.1 Agricultural first sale
+*Default:* flag. *Question:* "Confirm first sale by producer — exempt."
 
-### Test 2 -- Export, zero-rated
-**Input:** Exporter ships textiles to US, net USD 50,000.
-**Expected output:** Line 4 = USD 50,000. No output IVA. Input IVA fully recoverable.
+### 6.2 Cross-border services
+*Default:* flag. *Question:* "Consumed outside El Salvador? May qualify as export."
 
-### Test 3 -- Motor vehicle, blocked
-**Input:** Purchase sedan USD 20,000, IVA USD 2,600.
-**Expected output:** IVA USD 2,600 BLOCKED. No input credit.
+### 6.3 Bitcoin payment
+*Default:* IVA applies on underlying supply. *Question:* "Value in USD at time of transaction."
 
-### Test 4 -- Imported services, reverse charge
-**Input:** US consultant, USD 3,000. No IVA.
-**Expected output:** Self-assess output IVA = USD 390 (13%). Input = USD 390. Net = zero.
+### 6.4 Real estate
+*Default:* flag. *Question:* "First transfer of new construction (13%) or subsequent (exempt)?"
 
-### Test 5 -- Purchase with Factura (no credit)
-**Input:** Supplies purchased with Factura de Consumidor Final. IVA USD 65.
-**Expected output:** IVA USD 65 NOT deductible. No CCF.
-
-### Test 6 -- Exempt supply (medical)
-**Input:** Medical clinic earns USD 10,000.
-**Expected output:** Line 5 = USD 10,000. No output IVA. Input IVA on clinic costs NOT recoverable.
-
-### Test 7 -- Large taxpayer retention
-**Input:** Large taxpayer purchases USD 10,000 goods from small supplier. Retains 1% = USD 100.
-**Expected output:** Input IVA = USD 1,300 (full). USD 100 retention remitted to MH separately.
-
-### Test 8 -- Entertainment, blocked
-**Input:** Client dinner USD 565 inclusive of IVA USD 65.
-**Expected output:** IVA USD 65 BLOCKED. No input credit.
+### 6.5 DTE rollout
+*Default:* flag. *Question:* "Is DTE mandatory for this taxpayer category yet?"
 
 ---
 
-## Step 13: Reviewer Escalation Protocol
+## Section 7 — Excel working paper template
 
-When a [T2] situation is identified, output:
+### Sheet "Transactions"
+Columns A-L. Column H accepts F-07 line numbers.
 
+### Sheet "Return Summary"
 ```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed CPA must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed CPA. Document gap.
+Line 7 = Output IVA
+Line 14 = Net input IVA
+Line 15 = 7 - 14
+Line 18 = 15 - 16 - 17
 ```
 
 ---
 
-## Step 14: Additional Classification Rules [T1]
+## Section 8 — Bank statement reading guide
 
-### Place of Supply Rules for Services [T2]
-
-**Legislation:** Ley del IVA, Articles 16-17.
-
-- Services are generally taxable where the provider is domiciled [T1]
-- Exception: services related to real estate are taxable where the property is located [T1]
-- Exception: services consumed abroad by non-residents may qualify as export [T2]
-- Digital services: place of consumption increasingly relevant [T2]
-- Flag for reviewer: place of supply for cross-border services requires analysis
-
-### Self-Supply (Autoconsumo) [T1]
-
-**Legislation:** Ley del IVA, Article 4.
-
-- When a business withdraws goods for personal use or provides free services, this constitutes a taxable event [T1]
-- IVA must be self-assessed on the fair market value [T1]
-- Report as output IVA (debito fiscal) on the return [T1]
-
-### Barter and Non-Monetary Transactions [T1]
-
-- Barter (permuta) is treated as two simultaneous sales [T1]
-- Each party reports the fair market value as a taxable sale [T1]
-- IVA applies at 13% on each leg of the transaction [T1]
-
-### Installment Sales [T1]
-
-- IVA is fully due at the time of delivery, not at each payment [T1]
-- The full IVA is reported as debito fiscal in the period of the sale [T1]
-- Buyer can claim full credito fiscal immediately (with CCF) [T1]
+**Format:** Banco Agricola CSV with DD/MM/YYYY. USD currency.
+**Language:** Spanish.
+**Internal transfers:** "Transferencia entre cuentas". Exclude.
 
 ---
 
-## Contribution Notes
+## Section 9 — Onboarding fallback
 
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
+### 9.1 Entity type
+*Inference:* SA de CV, S de RL in name. *Fallback:* "Entity type?"
 
+### 9.2 NIT and NRC
+*Fallback:* "What is your 14-digit NIT and NRC?"
+
+### 9.3 Period
+*Inference:* from statement dates. *Fallback:* "Which month?"
+
+### 9.4 Large taxpayer status
+*Inference:* retention activity on statement. *Fallback:* "Are you designated as a large taxpayer by MH?"
+
+### 9.5 Credit balance
+Always ask: "Prior credit balance? (Line 16)"
+
+---
+
+## Section 10 — Reference material
+
+### Sources
+1. Ley del IVA, Decreto Legislativo 296 — Articles 4, 14-A, 44, 45, 46, 54, 65
+2. Reglamento de la Ley del IVA
+3. Codigo Tributario
+
+### Change log
+- **v2.0 (April 2026):** Full rewrite to 10-section architecture.
+- **v1.0:** Initial skill.
 
 ---
 

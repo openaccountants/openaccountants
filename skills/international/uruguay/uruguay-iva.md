@@ -1,128 +1,173 @@
 ---
 name: uruguay-iva
-description: Use this skill whenever asked to prepare, review, or create a Uruguay IVA (Impuesto al Valor Agregado) return for any client. Trigger on phrases like "prepare IVA return", "do the IVA", "Uruguay VAT", or any request involving Uruguay value added tax filing. ALWAYS read this skill before touching any Uruguay IVA-related work.
+description: >
+  Use this skill whenever asked to prepare, review, or create a Uruguay IVA (Impuesto al Valor Agregado) return for any client. Trigger on phrases like "prepare IVA return", "do the IVA", "Uruguay VAT", "DGI Uruguay", "tasa basica", "tasa minima", "CFE Uruguay", or any request involving Uruguay value added tax filing. Covers the 22% standard rate (tasa basica), 10% reduced rate (tasa minima), exempt supplies, monthly filing to DGI, input/output IVA computation, CFE electronic invoicing, and withholding/perception rules. ALWAYS read this skill before touching any Uruguay IVA work.
+version: 2.0
+jurisdiction: UY
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# Uruguay IVA Return Preparation Skill
+# Uruguay IVA Return -- Self-Employed Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Uruguay |
-| Jurisdiction Code | UY |
-| Primary Legislation | Titulo 10, Texto Ordenado 1996 (IVA); Ley 18.083 (Reforma Tributaria 2007) |
-| Supporting Legislation | Decreto 220/998 (Reglamento IVA); Resoluciones DGI |
-| Tax Authority | Direccion General Impositiva (DGI) |
-| Filing Portal | https://www.dgi.gub.uy (Servicios en Linea DGI) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return form, input recovery, calculations. Tier 2: partial exemption, free zone, IRAE interaction. Tier 3: complex structures, rulings. |
+|---|---|
+| Country | Uruguay (Republica Oriental del Uruguay) |
+| Tax | IVA (Impuesto al Valor Agregado) |
+| Currency | UYU only |
+| Standard rate (tasa basica) | 22% |
+| Reduced rate (tasa minima) | 10% |
+| Primary legislation | Titulo 10, Texto Ordenado 1996 (IVA); Ley 18.083 (Reforma Tributaria 2007) |
+| Supporting legislation | Decreto 220/998 (Reglamento IVA); Resoluciones DGI |
+| Tax authority | Direccion General Impositiva (DGI) |
+| Filing portal | https://www.dgi.gub.uy (Servicios en Linea DGI) |
+| Filing frequency | Monthly |
+| Filing deadline | Based on last 2 digits of RUT (16th-27th of following month) |
+| Contributor | Open Accountants Community |
+| Validated by | Deep research verification, April 2026 |
+| Skill version | 2.0 |
 
----
-
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
-
----
-
-## Step 0: Client Onboarding Questions
-
-1. **Entity name and RUT (Registro Unico Tributario)** [T1] -- 12-digit RUT
-2. **IVA taxpayer type** [T1] -- Contribuyente de IRAE (corporate), Unipersonal, Monotributo, Literal E
-3. **Filing period** [T1] -- monthly (standard)
-4. **Industry/sector** [T2]
-5. **Does the business make exempt supplies?** [T2]
-6. **Does the business import goods?** [T1]
-7. **Is the business in a Free Trade Zone (Zona Franca)?** [T2]
-8. **Credit balance brought forward** [T1]
-
-**If items 1-3 are unknown, STOP.**
-
----
-
-## Step 1: IVA Rate Structure [T1]
-
-**Legislation:** Titulo 10, Texto Ordenado, Articles 18-20.
-
-### Standard Rate
+### Rate Table
 
 | Rate | Application |
-|------|-------------|
-| 22% | Standard rate (tasa basica) on all taxable supplies not otherwise specified [T1] |
+|---|---|
+| 22% (tasa basica) | Standard rate on all taxable supplies not otherwise specified |
+| 10% (tasa minima) | Basic food, medicines, hotel accommodation, first sale of residential real estate, newspapers, cleaning products, personal hygiene |
+| 0% | Exports (full input credit recovery) |
+| Exempt (exonerado) | Financial services, education, health, residential rental, public transport, cultural activities |
 
-### Reduced Rate (Tasa Minima)
+### Key Thresholds
 
-| Rate | Application |
-|------|-------------|
-| 10% | Basic food items, medicines, hotel accommodation, first sale of certain goods [T1] |
+| Item | Value |
+|---|---|
+| Mandatory IVA registration | All entities making taxable supplies (no minimum) |
+| Monotributo | Small sole proprietors; substitutes IVA + IRAE + social security |
+| Literal E | Small enterprise with simplified IVA treatment |
+| CFE mandatory | Most taxpayers |
 
-### Items at Reduced Rate (10%) [T1]
+### Conservative Defaults
 
-**Legislation:** Titulo 10, Article 19.
-
-- Basic food: bread, pasta, rice, flour, cooking oil, sugar, salt, fresh meats, fresh fish, eggs, milk, fresh fruits and vegetables, yerba mate, tea, coffee
-- Medicines and pharmaceutical products
-- Hotel and tourist accommodation
-- First sale of real estate (residential)
-- Newspapers and periodicals (not exempt)
-- Cleaning products (basic household)
-- Personal hygiene products (basic)
-
-### Exempt Supplies (Exonerado) [T1]
-
-**Legislation:** Titulo 10, Articles 19-20; Decreto 220/998.
-
-**Exempt goods:**
-- Agricultural products in their natural state (first sale by producer) [T2]
-- Fuel (subject to IMESI -- specific internal tax)
-- Precious metals (gold, silver -- certain transactions)
-
-**Exempt services:**
-- Financial services (interest on loans, life insurance premiums)
-- Educational services (public and authorized private institutions)
-- Health services (public health system, mutual health organizations -- mutualistas)
-- Residential rental (apartments, houses)
-- Public transportation (urban)
-- Cultural activities (theater, cinema, concerts -- certain events)
-
-### Exports (0% -- Full Input Credit) [T1]
-- Export of goods: zero-rated with full input credit recovery
-- Export of services: services consumed outside Uruguay [T2]
+| Ambiguity | Default |
+|---|---|
+| Rate unknown on a sale | 22% (tasa basica) |
+| Input credit without valid CFE | Not claimable |
+| Blocked category (vehicle, entertainment) | No recovery |
+| Export of services classification unknown | Taxable at 22% until IRAE source confirmed |
 
 ---
 
-## Step 2: Transaction Classification Rules
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-### 2a. Determine Transaction Type [T1]
-- Sale (IVA devengado -- output) or Purchase (IVA deducible -- input)
-- Salaries, BPS (social security), IRPF (personal income tax), IRAE (corporate), loans = OUT OF SCOPE
+### Required Inputs
 
-### 2b. Determine Counterparty Location [T1]
-- Domestic (Uruguay)
-- MERCOSUR: Argentina, Brazil, Paraguay (+ associate members)
-- International
+**Minimum viable:** Bank statement for the month in CSV, PDF, or pasted text, plus RUT and IVA taxpayer type.
 
-### 2c. Determine IVA Rate [T1]
-- 0% (export), 10% (reduced), 22% (standard), or exempt
+**Recommended:** Sales and purchase CFEs, prior period return, credit balance brought forward.
+
+**Ideal:** Complete Libro de Compras y Ventas, IRAE return context, free zone status confirmation.
+
+### Refusal Catalogue
+
+**R-UY-1 -- Monotributo taxpayers.** "Monotributo taxpayers pay a single substitute amount and do NOT charge IVA separately. Buyers cannot claim input IVA on Monotributo purchases. This skill does not prepare Monotributo returns."
+
+**R-UY-2 -- Free Trade Zone entities.** "Zona Franca entities have special VAT exemptions that vary by user agreement. Escalate to a qualified contador publico."
+
+**R-UY-3 -- IRAE-IVA interaction on service exports.** "Zero-rating on service exports requires IRAE source determination. Escalate."
+
+**R-UY-4 -- Partial exemption complex.** "If mixed taxable/exempt supplies involve multiple apportionment methods, escalate."
 
 ---
 
-## Step 3: IVA Return Form Structure (Formulario 2176/2178) [T1]
+## Section 3 -- Transaction Pattern Library
+
+### 3.1 Income Patterns (Credits)
+
+| Pattern | Tax Line | Treatment | Notes |
+|---|---|---|---|
+| TRANSFERENCIA [client] / TRF DESDE | Taxable supply | Revenue at applicable rate | Wire transfer from client |
+| DEPOSITO EFECTIVO | Taxable supply | Revenue | Cash deposit |
+| PAGO ELECTRONICO / PAGOS ONLINE | Taxable supply | Revenue | Electronic payment receipt |
+| MERCADOPAGO LIQUIDACION | Taxable supply | Revenue | MercadoPago settlement |
+| PREX / MIDES / BPS PAGO | Verify | May be government payment | Check if business income |
+| INTERESES / INT GANADOS | Exempt | NOT taxable | Bank interest |
+| PRESTAMO / CREDITO BANCARIO | EXCLUDE | Not income | Loan proceeds |
+
+### 3.2 Expense Patterns (Debits)
+
+| Pattern | Expense Category | Treatment | Notes |
+|---|---|---|---|
+| ALQUILER OFICINA / ARRENDAMIENTO | Rent | Input IVA at 22% | Business premises |
+| UTE / ELECTRICIDAD | Utilities | Input IVA at 22% | Electricity |
+| OSE / AGUA | Utilities | Input IVA at 22% | Water |
+| ANTEL / MOVISTAR / CLARO | Communications | Business portion claimable | Mixed use: apportion |
+| UBER / TAXI / CABIFY | Travel | Input IVA if business | Keep receipts |
+| AUTOMOVIL / VEHICULO / SEDAN | Vehicle | BLOCKED | No input credit on passenger vehicles |
+| RESTAURANT / CENA / ALMUERZO | Entertainment | BLOCKED | No input credit |
+| DGI PAGO / IMPUESTOS | EXCLUDE | Tax payment | Not deductible |
+| BPS APORTE / SEGURO SOCIAL | EXCLUDE | Social security | Not IVA |
+| RETIRO PERSONAL | EXCLUDE | Drawings | Not business |
+
+### 3.3 Reduced Rate (10%) Indicators
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| HOTEL / ALOJAMIENTO / HOSPEDAJE | Tasa minima 10% | Hotel accommodation |
+| FARMACIA / MEDICAMENTO | Tasa minima 10% | Medicines |
+| ARROZ / HARINA / CARNE / YERBA MATE | Tasa minima 10% | Basic food items |
+| PERIODICO / DIARIO | Tasa minima 10% | Newspapers |
+
+---
+
+## Section 4 -- Worked Examples
+
+### Example 1 -- Standard Local Purchase at 22%
+
+**Input:** UY supplier, office equipment, gross UYU 12,200, IVA UYU 2,200, net UYU 10,000. Valid CFE (e-Factura).
+
+**Reasoning:** Standard-rated purchase at tasa basica. Valid e-Factura held. Full input credit.
+
+**Classification:** Input IVA UYU 2,200. Full recovery. Report on return Line 9.
+
+### Example 2 -- Export (Zero-Rated)
+
+**Input:** Exporter ships meat to Brazil, net UYU 500,000. Export documentation complete.
+
+**Reasoning:** Export of goods is zero-rated. No output IVA. All input IVA on related purchases fully recoverable.
+
+**Classification:** Report UYU 500,000 on Line 5. No output IVA. Input IVA fully recoverable.
+
+### Example 3 -- Motor Vehicle Purchase (Blocked)
+
+**Input:** Purchase sedan UYU 800,000, IVA UYU 176,000.
+
+**Reasoning:** Passenger vehicles are a blocked category under Titulo 10, Article 21. No input credit regardless of business use.
+
+**Classification:** IVA UYU 176,000 BLOCKED. No input credit.
+
+### Example 4 -- Imported Services (Reverse Charge)
+
+**Input:** US consulting firm, USD 3,000 (approx. UYU 120,000). No IVA charged.
+
+**Reasoning:** Self-assess IVA at 22%: UYU 26,400 output. If for taxable operations, claim UYU 26,400 input. Net = zero.
+
+**Classification:** Output IVA UYU 26,400. Input IVA UYU 26,400. Net zero.
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 IVA Return Form Structure (Formulario 2176/2178)
 
 **Filed monthly via DGI Servicios en Linea.**
 
-### IVA Devengado (Output)
-
 | Line | Description |
-|------|-------------|
+|---|---|
 | 1 | Ventas gravadas a tasa basica (22%) |
 | 2 | IVA devengado a tasa basica |
 | 3 | Ventas gravadas a tasa minima (10%) |
@@ -131,401 +176,230 @@ description: Use this skill whenever asked to prepare, review, or create a Urugu
 | 6 | Ventas exoneradas |
 | 7 | Total ventas |
 | 8 | Total IVA devengado (Line 2 + Line 4) |
-
-### IVA Deducible (Input)
-
-| Line | Description |
-|------|-------------|
 | 9 | IVA en compras gravadas a tasa basica |
 | 10 | IVA en compras gravadas a tasa minima |
 | 11 | IVA en importaciones |
 | 12 | Total IVA deducible |
 | 13 | Ajustes (blocked/proportional) |
 | 14 | IVA deducible neto |
-
-### Liquidacion
-
-| Line | Description |
-|------|-------------|
 | 15 | IVA a pagar (Line 8 - Line 14) |
 | 16 | Credito del periodo anterior |
 | 17 | Retenciones/percepciones |
 | 18 | Total a pagar / saldo a favor |
 
----
+### 5.2 Blocked Input IVA (Titulo 10, Article 21)
 
-## Step 4: IVA Withholding and Perception [T1]
+No recovery: motor vehicles (passenger), entertainment/recreation, personal use, exempt operations, purchases without valid CFE.
 
-**Legislation:** Titulo 10; DGI Resoluciones.
-
-### IVA Withholding (Retencion) [T1]
+### 5.3 IVA Withholding and Perception
 
 | Agent Type | Rate |
-|------------|------|
-| Government entities (Estado) | 100% of IVA on services, 60% on goods [T1] |
-| Designated large taxpayers | Varies by DGI resolution [T2] |
+|---|---|
+| Government entities (Estado) | 100% of IVA on services, 60% on goods |
+| Designated large taxpayers | Varies by DGI resolution |
 
-### IVA Perception (Percepcion) [T1]
+### 5.4 Reverse Charge on Imported Services (Article 5)
 
-| Agent Type | Rate |
-|------------|------|
-| Importers at customs (Aduana) | IVA paid on CIF + duties at applicable rate [T1] |
-| Designated large taxpayers on sales | Varies [T2] |
+Self-assess IVA at applicable rate. Report as output. Claim as input if for taxable operations.
 
----
+### 5.5 Filing Deadlines
 
-## Step 5: Reverse Charge on Imported Services [T1]
+Based on last 2 digits of RUT: Group 1 (16th-19th), Group 2 (20th-23rd), Group 3 (24th-27th) of following month.
 
-**Legislation:** Titulo 10, Article 5.
-
-When a Uruguay registered person receives services from a non-resident:
-
-1. Self-assess IVA at applicable rate (22% standard, 10% if service qualifies) [T1]
-2. Report as output IVA [T1]
-3. Claim as input if for taxable operations [T1]
-4. Net = zero for fully taxable businesses [T1]
-
----
-
-## Step 6: Deductibility Check
-
-### Blocked Input IVA (No Recovery) [T1]
-
-**Legislation:** Titulo 10, Article 21.
-
-- **Motor vehicles** -- passenger vehicles (exception: rental, taxi, driving school, transport) [T1]
-- **Entertainment/recreation** -- meals, hospitality (unless hospitality trade) [T1]
-- **Personal use** [T1]
-- **Exempt operations** -- costs attributable to exempt supplies [T1]
-- **Purchases without valid comprobante fiscal electronico (CFE)** [T1]
-
-### CFE (Electronic Fiscal Document) [T1]
-
-**Legislation:** DGI Resoluciones; Decreto 36/012.
-
-Uruguay has mandatory electronic invoicing (CFE) for most taxpayers:
-- e-Factura, e-Nota de Credito, e-Nota de Debito, e-Resguardo
-- All documents must be authorized by DGI
-- Input IVA only deductible with valid CFE
-
-### Partial Exemption [T2]
-- Direct attribution + proportional for common costs
-- `Recovery % = (Taxable Sales / Total Sales) * 100`
-- Flag for reviewer
-
----
-
-## Step 7: Key Thresholds [T1]
-
-| Threshold | Value |
-|-----------|-------|
-| Mandatory IVA registration | All entities making taxable supplies must register (no minimum) |
-| Monotributo | Small sole proprietors with limited activity (substitute for IVA + IRAE + social security) |
-| Literal E (small enterprise) | Annual income up to certain threshold; simplified IVA treatment [T2] |
-
----
-
-## Step 8: Filing Deadlines and Penalties [T1]
-
-**Legislation:** Codigo Tributario; DGI Resoluciones.
-
-### Filing Deadlines [T1]
-
-Filing date depends on the last digit of the RUT:
-
-| Last 2 Digits of RUT | Due Date Range (of following month) |
-|----------------------|--------------------------------------|
-| Group 1 | 16th-19th [T1] |
-| Group 2 | 20th-23rd [T1] |
-| Group 3 | 24th-27th [T1] |
-
-Exact dates published annually by DGI.
-
-### Penalties
+### 5.6 Penalties
 
 | Violation | Penalty |
-|-----------|---------|
-| Late filing | UYU multa (fine) determined by DGI [T1] |
-| Late payment | Recargos (surcharges): 5% first month + 2% per additional month [T1] |
-| Interest on late payment | Rate set by Central Bank [T1] |
-| Failure to register | Fines + back-assessment [T1] |
-| Failure to issue CFE | Fines + potential closure [T1] |
-| Fraud | Criminal penalties [T1] |
+|---|---|
+| Late filing | UYU multa (fine) determined by DGI |
+| Late payment | Recargos: 5% first month + 2% per additional month |
+| Interest | Rate set by Central Bank |
+| Failure to issue CFE | Fines + potential closure |
+| Fraud | Criminal penalties |
+
+### 5.7 CFE Electronic Invoicing
+
+| Document | Code | Supports IVA Credit |
+|---|---|---|
+| e-Factura | 111 | YES |
+| e-Ticket | 101 | NO (for buyer) |
+| e-Nota de Credito | 112 | YES (reduces IVA) |
+| e-Nota de Debito | 113 | YES |
+| e-Resguardo | 181 | N/A |
+| e-Factura Exportacion | 121 | N/A |
 
 ---
 
-## Step 9: Classification Matrix [T1]
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### Domestic Purchases
+### 6.1 Partial Exemption
 
-| Category | IVA Rate | Input Credit | Notes |
-|----------|---------|--------------|-------|
-| Office supplies | 22% | Yes | |
-| Commercial rent | 22% | Yes | |
-| Residential rent | Exempt | No | |
-| Electricity (commercial) | 22% | Yes | |
-| Telephone/internet | 22% | Yes | |
-| Motor car | 22% | BLOCKED | |
-| Entertainment | 22% | BLOCKED | |
-| Professional services | 22% | Yes | |
-| Hotel accommodation | 10% | Yes | Tasa minima |
-| Basic food items | 10% | Yes (if for resale) | Tasa minima |
-| Medicines | 10% | Yes (if for resale) | Tasa minima |
-| Insurance (general) | 22% | Yes | |
-| Insurance (life) | Exempt | No | |
+Direct attribution + proportional for common costs. Recovery % = Taxable Sales / Total Sales. Flag for reviewer.
 
-### Sales
+### 6.2 Free Trade Zone Rules (Ley 15.921)
 
-| Category | IVA | Return Line |
-|----------|-----|-------------|
-| Domestic sale (standard) | 22% | Line 1, Line 2 |
-| Domestic sale (reduced) | 10% | Line 3, Line 4 |
-| Export | 0% | Line 5 |
-| Exempt | Exempt | Line 6 |
+Zona Franca entities exempt from all national taxes including IVA. Sales from free zone to domestic market treated as imports. Flag for reviewer.
+
+### 6.3 Agricultural Sector
+
+Agricultural products in natural state (first sale by producer) may be exempt. Multiple overlapping taxes (IMEBA). Flag for reviewer.
+
+### 6.4 Export of Services
+
+Services consumed outside Uruguay may be zero-rated if IRAE treats them as foreign-source. Confirm IRAE source determination before applying zero-rating. Flag for reviewer.
+
+### 6.5 Literal E (Small Enterprise)
+
+Simplified IVA calculation based on sales volume. Confirm current thresholds and obligations. Flag for reviewer.
 
 ---
 
-## Step 10: Free Trade Zone (Zona Franca) Rules [T2]
+## Section 7 -- Working Paper Template
 
-**Legislation:** Ley 15.921 (Ley de Zonas Francas).
+```
+URUGUAY IVA WORKING PAPER
+Contribuyente: _______________  RUT: ___________
+Periodo: ___________  Mes: ___________
 
-- Free zone companies (usuarios de zona franca): exempt from ALL national taxes including IVA
-- Sales from free zone to domestic market: treated as imports, subject to IVA at applicable rate
-- Services from free zone to domestic clients: subject to IVA [T2]
-- Purchases by free zone companies: IVA exempt (supplier zero-rates the sale)
-- Flag for reviewer: free zone rules are complex; confirm specific user agreement
+A. IVA DEVENGADO (OUTPUT)
+  A1. Ventas tasa basica (22%) neto             ___________
+  A2. IVA devengado tasa basica                 ___________
+  A3. Ventas tasa minima (10%) neto             ___________
+  A4. IVA devengado tasa minima                 ___________
+  A5. Exportaciones (0%)                        ___________
+  A6. Ventas exoneradas                         ___________
+  A7. Total IVA devengado (A2 + A4)             ___________
 
----
+B. IVA DEDUCIBLE (INPUT)
+  B1. IVA compras tasa basica                   ___________
+  B2. IVA compras tasa minima                   ___________
+  B3. IVA importaciones                         ___________
+  B4. Ajustes (blocked)                         ___________
+  B5. IVA deducible neto                        ___________
 
-## Step 10a: CFE Electronic Invoicing System [T1]
+C. LIQUIDACION
+  C1. IVA a pagar (A7 - B5)                    ___________
+  C2. Credito anterior                          ___________
+  C3. Retenciones/percepciones                  ___________
+  C4. Total a pagar / saldo a favor             ___________
 
-**Legislation:** DGI Resoluciones; Decreto 36/012.
-
-Uruguay has implemented mandatory electronic invoicing (CFE -- Comprobantes Fiscales Electronicos):
-
-### Types of CFE
-
-| Document | Code | Use | Supports IVA Credit |
-|----------|------|-----|-------------------|
-| e-Factura | 111 | B2B standard sales | YES [T1] |
-| e-Ticket | 101 | B2C sales | NO (for buyer) [T1] |
-| e-Nota de Credito | 112 | Returns, corrections | YES (reduces IVA) [T1] |
-| e-Nota de Debito | 113 | Additional charges | YES [T1] |
-| e-Resguardo | 181 | Withholding certificate | N/A [T1] |
-| e-Factura Exportacion | 121 | Export sales | N/A [T1] |
-| e-Remito | 131 | Goods transport | NO [T1] |
-
-### CFE Requirements [T1]
-
-1. Most taxpayers must issue CFEs (phased mandate by DGI)
-2. CFEs are signed with digital certificate and authorized by DGI
-3. Each CFE has a unique CAE (Codigo de Autorizacion de Emision)
-4. Contingency procedures exist for system downtime
-5. Input IVA only deductible with valid e-Factura (not e-Ticket)
-
----
-
-## Step 10b: Sector-Specific Rules [T2]
-
-### Agriculture and Livestock
-
-- Agricultural products in natural state (first sale by producer): may be exempt [T2]
-- Meat processing and exports: significant sector. Exports zero-rated. Input IVA fully recoverable.
-- Agricultural inputs: IVA at applicable rate (some at tasa minima 10%)
-- IMEBA (Impuesto a la Enajenacion de Bienes Agropecuarios): separate tax on agricultural sales, not IVA [T2]
-- Flag for reviewer: agricultural taxation has multiple overlapping taxes
-
-### Tourism and Hospitality
-
-- Hotel accommodation: tasa minima 10% [T1]
-- Restaurant services: tasa basica 22% [T1]
-- Tourism packages for incoming tourists: may qualify for IVA reimbursement [T2]
-- Tax-free shopping for tourists: IVAS refund scheme at departure [T2]
-- Flag for reviewer: confirm tourism incentive applicability
-
-### Financial Services
-
-- Interest on loans between financial institutions: exempt [T1]
-- Banking commissions and fees: taxable at 22% [T1]
-- Insurance premiums (life): exempt [T1]
-- Insurance premiums (property/general): taxable at 22% [T1]
-- Credit card processing fees: taxable at 22% [T1]
-
-### Real Estate
-
-- First sale of new residential real estate: tasa minima 10% [T1]
-- Sale of used real estate: exempt [T2]
-- Construction services: tasa basica 22% [T1]
-- Commercial rental: tasa basica 22% [T1]
-- Residential rental: exempt [T1]
-
-### Software and Technology
-
-- Software licenses: taxable at 22% [T1]
-- IT consulting services: taxable at 22% [T1]
-- Software development for export: zero-rated [T2]
-- Flag for reviewer: software export classification requires review
+REVIEWER FLAGS:
+  [ ] RUT and taxpayer type confirmed?
+  [ ] All input claims supported by valid CFE (e-Factura)?
+  [ ] Blocked categories excluded (vehicles, entertainment)?
+  [ ] Tasa basica vs tasa minima correctly applied?
+  [ ] Export documentation complete for zero-rating?
+```
 
 ---
 
-## Step 10c: IRAE-IVA Interaction [T2]
+## Section 8 -- Bank Statement Reading Guide
 
-**Legislation:** Titulo 4, Texto Ordenado (IRAE).
+### Uruguayan Bank Statement Formats
 
-- IVA is independent of IRAE (corporate income tax)
-- However, IVA treatment follows IRAE source rules for certain cross-border transactions
-- Services exported to non-residents: zero-rated for IVA if IRAE treats them as foreign-source
-- Flag for reviewer: confirm IRAE source determination before applying IVA zero-rating on service exports
+| Bank | Format | Key Fields |
+|---|---|---|
+| BROU (Banco Republica) | CSV / PDF | Fecha, Concepto, Debito, Credito, Saldo |
+| Santander Uruguay | CSV | Fecha, Descripcion, Debito, Credito, Saldo |
+| Itau Uruguay | CSV | Fecha, Detalle, Debe, Haber, Saldo |
+| BBVA Uruguay | CSV | Fecha, Concepto, Cargo, Abono, Saldo |
+| Scotiabank Uruguay | CSV | Fecha, Descripcion, Retiro, Deposito, Saldo |
+| Heritage (OCA) | CSV | Fecha, Descripcion, Monto, Saldo |
 
----
+### Key Uruguayan Banking Narrations
 
-## Step 10d: Monotributo and Literal E [T2]
-
-### Monotributo [T1]
-- Very small sole proprietors with limited activities
-- Pay a single monthly amount that substitutes IVA, IRAE, and social security
-- Do NOT charge IVA separately
-- Buyers CANNOT claim input IVA credit on purchases from Monotributo taxpayers
-
-### Literal E (Small Enterprise) [T2]
-- Small enterprises below certain income threshold
-- Simplified IVA calculation based on sales volume
-- May not be required to issue CFE (simplified receipts)
-- Flag for reviewer: confirm current Literal E thresholds and obligations
-
----
-
-## Step 10e: Libro de Compras y Ventas [T1]
-
-All IVA taxpayers must maintain:
-
-- **Libro de Ventas**: all sales with CFE details, RUT of customer (B2B), date, base (by rate), IVA, total
-- **Libro de Compras**: all purchases with CFE details, RUT of supplier, date, base (by rate), IVA, total
-- Electronic format via DGI system
-- Summary totals reconcile to IVA return
-- Retention: minimum 5 years
+| Narration | Meaning | Classification Hint |
+|---|---|---|
+| TRANSFERENCIA / TRF | Wire transfer | Potential income or expense |
+| DEPOSITO | Cash deposit | Income |
+| DEBITO AUTOMATICO | Direct debit | Regular expense |
+| CHEQUE | Cheque payment | Income or expense |
+| BPS | Social security | Exclude from IVA |
+| DGI | Tax payment | Exclude |
+| INTERESES | Interest | Exempt |
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 9 -- Onboarding Fallback
 
-- NEVER let AI guess IVA classification
-- NEVER allow input credit on blocked categories
-- NEVER allow input credit without valid CFE
+If the client provides a bank statement but cannot answer onboarding questions immediately:
+
+1. Classify all business-name credits as potential taxable supplies at 22%
+2. Apply blocked category rules to vehicles and entertainment
+3. Only claim input IVA where CFE documentation is confirmed
+4. Flag all reduced-rate items for verification
+
+Present these questions:
+
+```
+ONBOARDING QUESTIONS -- URUGUAY IVA
+1. What is your RUT (Registro Unico Tributario)?
+2. What is your IVA taxpayer type (Contribuyente IRAE, Unipersonal, Monotributo, Literal E)?
+3. What types of goods or services do you sell?
+4. Do you make any exempt supplies?
+5. Do you export goods or services?
+6. Are you in a Free Trade Zone (Zona Franca)?
+7. Do you have valid CFEs (e-Facturas) for all purchase claims?
+8. Any credit balance brought forward from prior period?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Reference |
+|---|---|
+| IVA imposition | Titulo 10, Texto Ordenado 1996 |
+| Rates | Titulo 10, Articles 18-20 |
+| Exempt supplies | Titulo 10, Articles 19-20; Decreto 220/998 |
+| Blocked input | Titulo 10, Article 21 |
+| Reverse charge | Titulo 10, Article 5 |
+| CFE system | DGI Resoluciones; Decreto 36/012 |
+| Free Trade Zones | Ley 15.921 |
+| Reforma Tributaria | Ley 18.083 (2007) |
+
+### Known Gaps / Out of Scope
+
+- Monotributo returns
+- Free Trade Zone complex arrangements
+- IRAE-IVA interaction on service exports
+- IMEBA (agricultural tax)
+- Complex partial exemption
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; Uruguayan bank formats; local payment patterns; worked examples; CFE integration |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] RUT and taxpayer type confirmed?
+- [ ] Tasa basica (22%) vs tasa minima (10%) correctly applied?
+- [ ] All input claims supported by valid CFE (e-Factura, not e-Ticket)?
+- [ ] Blocked categories excluded?
+- [ ] Export documentation complete?
+- [ ] Filing deadline based on RUT last digits?
+
+---
+
+## PROHIBITIONS
+
+- NEVER allow input credit on blocked categories (vehicles, entertainment, personal use)
+- NEVER allow input credit without valid CFE (e-Factura)
 - NEVER confuse tasa basica (22%) with tasa minima (10%)
-- NEVER apply reverse charge to out-of-scope categories
 - NEVER confuse zero-rated exports with exempt supplies
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine
-
----
-
-## Step 11: Edge Case Registry
-
-### EC1 -- Hotel accommodation at reduced rate [T1]
-**Situation:** Business travel, hotel in Montevideo charges 10% IVA.
-**Resolution:** Hotel accommodation is at tasa minima (10%). Input IVA recoverable if for business purposes. Report on Line 10.
-
-### EC2 -- Imported software [T1]
-**Situation:** Uruguay company subscribes to US cloud service. No IVA.
-**Resolution:** Self-assess IVA at 22%. Output and input. Net = zero.
-
-### EC3 -- Sale of basic food at 10% [T1]
-**Situation:** Supermarket sells rice, flour, and meat.
-**Resolution:** Basic food items are at tasa minima (10%). Report on Line 3 (sales) and Line 4 (IVA at 10%).
-
-### EC4 -- Credit notes [T1]
-**Situation:** Client issues e-Nota de Credito.
-**Resolution:** Reduce output IVA. Must be valid CFE. Report net.
-
-### EC5 -- Free zone company selling to domestic market [T2]
-**Situation:** Zona Franca company sells manufactured goods to Montevideo retailer.
-**Resolution:** Treated as import. IVA at applicable rate paid by buyer at customs/upon entry. Flag for reviewer.
-
-### EC6 -- MERCOSUR trade [T1]
-**Situation:** Uruguay company imports goods from Argentina.
-**Resolution:** IVA paid at customs on CIF + duties. Input credit available. No special MERCOSUR IVA rules -- each country applies its own IVA independently.
-
-### EC7 -- Yerba mate sale (reduced rate) [T1]
-**Situation:** Wholesale company sells yerba mate.
-**Resolution:** Yerba mate is a tasa minima (10%) product. Report at 10%.
-
-### EC8 -- Mixed-rate business [T2]
-**Situation:** Grocery store sells both basic food (10%) and general merchandise (22%).
-**Resolution:** Separate reporting by rate. Output IVA split between Line 2 (22%) and Line 4 (10%). Input IVA fully recoverable (both rates support input credit).
-
----
-
-## Step 12: Test Suite
-
-### Test 1 -- Standard local purchase, 22%
-**Input:** UY supplier, office equipment, gross UYU 12,200, IVA UYU 2,200, net UYU 10,000. Valid CFE.
-**Expected output:** Line 9 = UYU 2,200 input IVA. Full recovery.
-
-### Test 2 -- Export, zero-rated
-**Input:** Exporter ships meat to Brazil, net UYU 500,000.
-**Expected output:** Line 5 = UYU 500,000. No output IVA. Input IVA fully recoverable.
-
-### Test 3 -- Motor vehicle, blocked
-**Input:** Purchase sedan UYU 800,000, IVA UYU 176,000.
-**Expected output:** IVA UYU 176,000 BLOCKED. No input credit.
-
-### Test 4 -- Hotel accommodation at 10%
-**Input:** Business hotel UYU 11,000 (UYU 10,000 + UYU 1,000 IVA at 10%).
-**Expected output:** Line 10 = UYU 1,000 input IVA at tasa minima. Full recovery.
-
-### Test 5 -- Sale of basic food at 10%
-**Input:** Supermarket sells rice for UYU 55,000 (UYU 50,000 + UYU 5,000 IVA at 10%).
-**Expected output:** Line 3 = UYU 50,000. Line 4 = UYU 5,000.
-
-### Test 6 -- Imported services, reverse charge
-**Input:** US consulting firm, USD 3,000 (~ UYU 120,000). No IVA.
-**Expected output:** Self-assess output IVA = UYU 26,400 (22%). Input = UYU 26,400. Net = zero.
-
-### Test 7 -- Exempt supply (residential rental)
-**Input:** Landlord earns UYU 30,000/month from residential rental.
-**Expected output:** Line 6 = UYU 30,000. No output IVA. Input IVA on property expenses NOT recoverable.
-
-### Test 8 -- Entertainment, blocked
-**Input:** Client dinner UYU 6,100 inclusive of IVA UYU 1,100.
-**Expected output:** IVA UYU 1,100 BLOCKED. No input credit.
-
----
-
-## Contribution Notes
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
-
----
-
-## Appendix A: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed Contador Publico must confirm before filing.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed Contador Publico. Document gap.
-```
-
+- NEVER apply reverse charge to out-of-scope categories
+- NEVER prepare returns for Monotributo taxpayers using this skill
+- NEVER zero-rate service exports without IRAE source confirmation
+- NEVER present calculations as definitive -- always label as estimated and direct client to a qualified Uruguayan contador publico
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a contador publico or equivalent licensed practitioner in Uruguay) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

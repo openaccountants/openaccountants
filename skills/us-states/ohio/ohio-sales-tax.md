@@ -1,393 +1,356 @@
 ---
 name: ohio-sales-tax
-description: Use this skill whenever asked about Ohio sales and use tax, ODT filings, Ohio CAT, Ohio exemptions, Ohio nexus, or any request involving Ohio state sales and use tax compliance. Trigger on phrases like "Ohio sales tax", "OH sales tax", "ODT", "UST-1", "Ohio exemption certificate", "Ohio resale certificate", "Streamlined Sales Tax Ohio", or any request involving Ohio sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any Ohio sales tax work.
+description: >
+  Use this skill whenever asked about Ohio sales and use tax, ODT filings, Ohio CAT, Ohio exemptions, Ohio nexus, or any request involving Ohio state sales and use tax compliance. Trigger on phrases like "Ohio sales tax", "OH sales tax", "ODT", "UST-1", "Ohio exemption certificate", "Streamlined Sales Tax Ohio", or any request involving Ohio sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any Ohio sales tax work.
+version: 2.0
+jurisdiction: US-OH
+tax_year: 2025
+category: us-states
+depends_on:
+  - us-sales-tax
 ---
 
-# Ohio Sales and Use Tax Skill
+# Ohio Sales and Use Tax Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
+
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Ohio, United States |
-| Jurisdiction Code | US-OH |
-| Tax Type | Sales and Use Tax (state + county) |
-| Primary Legislation | Ohio Revised Code (ORC), Chapter 5739 (Sales Tax) and Chapter 5741 (Use Tax) |
-| Key Statutes | ORC Sections 5739.01-5739.99; ORC Sections 5741.01-5741.99 |
-| Tax Authority | Ohio Department of Taxation (ODT) |
-| Filing Portal | https://tax.ohio.gov |
-| Federal Framework Skill | us-sales-tax (read first for Wayfair, nexus overview, and multi-state context) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Pending -- requires Ohio CPA or EA sign-off |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| SST Membership | Yes -- Ohio is a full member of the Streamlined Sales Tax (SST) |
-| Confidence Coverage | Tier 1: rate structure, basic taxability, filing mechanics, nexus thresholds, SST compliance. Tier 2: service taxability, SaaS/digital goods, CAT interaction. Tier 3: audit defense, complex bundled transactions, ODT rulings. |
-| Format | Restructured to Q1 execution format, April 2026 |
+|---|---|
+| State | Ohio |
+| Tax | Sales and Use Tax (state + county) |
+| State rate | 5.75% |
+| Local rates | County only (0.75% to 2.25%) -- no city or district taxes |
+| Maximum combined rate | Approx. 8.00% (e.g. Cuyahoga County) |
+| Sourcing | Origin-based (intrastate); destination-based (remote/SST) |
+| Primary legislation | ORC Chapters 5739 (Sales) and 5741 (Use) |
+| Tax authority | Ohio Department of Taxation (ODT) |
+| Filing portal | https://tax.ohio.gov / Ohio Business Gateway |
+| Return form | UST-1 (Universal Sales Tax Return) |
+| SST member | Yes -- full member |
+| Economic nexus | $100,000 gross receipts OR 200 transactions (effective Aug 1, 2019) |
+| Vendor license | Required; $25/location/year; renew by February 28 |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires Ohio CPA or EA sign-off |
+| Skill version | 2.0 |
 
----
-
-## Confidence Tier Definitions
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required. Claude executes, engine computes.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags the issue and presents options. A licensed CPA, EA, or tax attorney must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to a licensed tax professional and document the gap.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before proceeding with any Ohio sales tax analysis, collect the following from the client: [T1]
-
-| # | Question | Why It Matters |
-|---|----------|---------------|
-| 1 | Do you have an Ohio sales tax registration / tax ID? | Determines whether registration is needed before filing. |
-| 2 | What is your current filing frequency (monthly / quarterly / annually)? | Controls which return periods to prepare. |
-| 3 | What is your nexus type -- physical presence, economic nexus, or both? | Determines registration obligations and applicable rules. |
-| 4 | Are you a marketplace seller (selling through Amazon, Etsy, etc.)? | Marketplace facilitator may already be collecting on your behalf. |
-| 5 | What types of products or services do you sell in Ohio? | Drives taxability classification under Ohio law. |
-| 6 | Do you sell to exempt entities (government, nonprofits, resellers)? | Determines whether exemption certificates must be collected and retained. |
-| 7 | Do you have locations, employees, or inventory in Ohio? | Physical presence creates nexus independent of economic thresholds. |
-| 8 | Do you sell into multiple Ohio local jurisdictions? | Local tax rates vary; determines compliance complexity. |
-
-**If the client cannot answer questions 1-4, STOP and gather this information before proceeding.** [T1]
-
----
-
-## Step 1: Tax Rate Structure
-### 1.1 State Rate
-
-The Ohio state sales and use tax rate is **5.75%**. [T1]
-
-**Legislation:** ORC Section 5739.02(A)(1).
-
-### 1.2 County Taxes
-
-Ohio **counties** (not cities) impose additional sales taxes. There are no city or special district sales taxes -- only county permissive taxes.
-
-- County rates range from **0.75% to 2.25%** on top of the state rate. [T1]
-- Combined maximum: approximately **8.00%** (e.g., Cuyahoga County at 5.75% + 2.25% = 8.00%). [T1]
-
-**Key combined rates (examples):**
+### Key Combined Rates
 
 | County | County Rate | Combined Rate |
-|--------|-----------|---------------|
-| Cuyahoga (Cleveland) | 2.25% | **8.00%** |
-| Franklin (Columbus) | 1.75% | **7.50%** |
-| Hamilton (Cincinnati) | 1.80% | **7.55%** (approximate) |
-| Summit (Akron) | 1.50% | **7.25%** |
-| Montgomery (Dayton) | 1.50% | **7.25%** |
-| Lucas (Toledo) | 1.50% | **7.25%** |
+|---|---|---|
+| Cuyahoga (Cleveland) | 2.25% | 8.00% |
+| Franklin (Columbus) | 1.75% | 7.50% |
+| Hamilton (Cincinnati) | 1.80% | 7.55% |
+| Summit (Akron) | 1.50% | 7.25% |
+| Montgomery (Dayton) | 1.50% | 7.25% |
+| Lucas (Toledo) | 1.50% | 7.25% |
 
-**Legislation:** ORC Section 5739.021 et seq.
+### Taxability Quick Matrix
 
-### 1.3 Sourcing [T1]
+| Item | Taxable? | Notes |
+|---|---|---|
+| Tangible personal property | YES | Default taxable |
+| SaaS / cloud software | YES | Taxable as automatic data processing (ORC 5739.01(B)(3)(a)) |
+| Grocery food | NO | Exempt (but candy without flour, soft drinks, dietary supplements are taxable) |
+| Clothing | YES | Fully taxable -- no clothing exemption |
+| General services | NO | Most services exempt unless specifically enumerated |
+| Employment/staffing services | YES | ORC 5739.01(B)(3)(j) |
+| Landscaping/lawn care | YES | ORC 5739.01(B)(3)(h) |
+| Physical fitness services | YES | ORC 5739.01(B)(3)(k) |
+| Digital products (audio, video, books) | YES | ORC 5739.01(BBB) |
+| Manufacturing equipment | NO | Exempt with STEC-B certificate |
 
-Ohio uses **origin-based** sourcing for intrastate sales:
+### Conservative Defaults
 
-- If both seller and buyer are in Ohio, the rate is based on the **seller's location** (county). [T1]
-- For **remote** (out-of-state) sellers, **destination-based** sourcing applies (SST compliant). [T1]
-- As an SST member, Ohio follows SST sourcing rules for remote sales. [T1]
-
-**Legislation:** ORC Section 5739.033.
+| Ambiguity | Default |
+|---|---|
+| Product taxability unknown | Taxable |
+| Service taxability unknown | Exempt (unless enumerated) |
+| Sourcing location unknown | Seller's county (origin-based intrastate) |
+| Candy vs food unclear | Food (exempt) if contains flour |
+| CAT obligation | Escalate -- separate tax |
 
 ---
 
-## Step 3: Return Form Structure
-### 5.1 Filing Form
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-The primary return is **Form UST-1 (Universal Sales Tax Return)**. [T1]
+### Required Inputs
 
-Other forms:
-- **UST-1-X** -- Amended return
-- **UUT-1** -- Use Tax Return (for consumers)
+**Minimum viable:** Confirmation of Ohio nexus (physical or economic), vendor license status, filing frequency, and list of products/services sold.
 
-### 5.2 Filing Frequency [T1]
+**Recommended:** Sales by county, exemption certificates on file, prior period UST-1.
+
+**Ideal:** Complete transaction log with ship-to addresses, exemption certificate register, CAT filing status.
+
+### Refusal Catalogue
+
+**R-OH-1 -- CAT questions.** "The Commercial Activity Tax (CAT) is a separate tax on gross receipts. CAT compliance is outside this skill scope. Escalate."
+
+**R-OH-2 -- Audit defense.** "Responding to ODT audits or assessments requires specialist representation. Escalate."
+
+**R-OH-3 -- Complex bundled transactions.** "Mixed transactions involving taxable and exempt components require specialist analysis. Escalate."
+
+---
+
+## Section 3 -- Transaction Pattern Library
+
+### 3.1 Taxable Sales
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| Electronics / hardware sale | Taxable at combined rate | TPP |
+| SaaS subscription / cloud CRM | Taxable | Automatic data processing |
+| Staffing / temp agency | Taxable | Employment services |
+| Landscaping invoice | Taxable | ORC 5739.01(B)(3)(h) |
+| Gym membership | Taxable | Physical fitness service |
+| Digital download (movie, music, ebook) | Taxable | Specified digital products |
+| Furniture / office equipment | Taxable | TPP |
+
+### 3.2 Exempt Sales
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| Grocery food (bread, milk, produce) | Exempt | Not candy, soft drinks, supplements |
+| Manufacturing equipment with STEC-B | Exempt | Must have valid certificate |
+| Sale to government entity | Exempt | With proper documentation |
+| Resale with valid certificate | Exempt | STEC-B or SST Certificate |
+| Medical equipment (certain) | Exempt | Check specific exemption |
+
+### 3.3 Candy/Food Classification (SST Standard)
+
+| Item | Classification | Rationale |
+|---|---|---|
+| Chocolate bar (no flour) | Candy -- TAXABLE | No flour ingredient |
+| Chocolate-covered pretzels | Food -- EXEMPT | Contains flour |
+| Soft drinks | TAXABLE | Specifically enumerated |
+| Dietary supplements | TAXABLE | Specifically enumerated |
+| Fresh produce | EXEMPT | Grocery food |
+
+---
+
+## Section 4 -- Worked Examples
+
+### Example 1 -- Basic Taxable Sale in Columbus
+
+**Input:** Retailer in Columbus (Franklin County) sells electronics for $800. Combined rate: 7.50%.
+
+**Reasoning:** Electronics are TPP, taxable. Columbus is Franklin County: 5.75% state + 1.75% county = 7.50%.
+
+**Classification:** Sales tax = $60.00. Total = $860.00.
+
+### Example 2 -- SaaS Subscription in Cuyahoga County
+
+**Input:** Ohio business subscribes to cloud-based CRM. $300/month. Business in Cuyahoga County (8.00%).
+
+**Reasoning:** SaaS is taxable as automatic data processing service in Ohio.
+
+**Classification:** Sales tax = $24.00/month.
+
+### Example 3 -- Vendor Discount
+
+**Input:** Vendor timely files and pays $20,000 in Ohio sales tax.
+
+**Reasoning:** Ohio offers 0.75% vendor discount for timely filing and payment. No cap.
+
+**Classification:** Discount = $150.00. Net remittance = $19,850.00.
+
+### Example 4 -- Origin-Based Intrastate Sourcing
+
+**Input:** Columbus-based seller ships goods to customer in Cleveland (Cuyahoga County).
+
+**Reasoning:** Intrastate Ohio sales use origin-based sourcing. Seller charges Franklin County rate (7.50%), not Cuyahoga (8.00%).
+
+**Classification:** Rate = 7.50% (seller's county).
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 Rate Structure
+
+State rate: 5.75%. County permissive taxes: 0.75% to 2.25%. No city or special district taxes.
+
+### 5.2 Sourcing (ORC 5739.033)
+
+Origin-based for intrastate (both seller and buyer in Ohio). Destination-based for remote sellers (SST compliant).
+
+### 5.3 Filing (ORC 5739.12)
 
 | Frequency | Criteria | Due Date |
-|-----------|----------|----------|
-| Monthly | Tax liability > $600/month | 23rd of the following month |
-| Semi-annual | Tax liability $600 or less/month | 23rd of the month following the semi-annual period |
+|---|---|---|
+| Monthly | Tax liability > $600/month | 23rd of following month |
+| Semi-annual | Tax liability $600 or less/month | July 23 / January 23 |
 
-**Semi-annual periods:**
+### 5.4 Vendor Discount
 
-| Period | Coverage | Due Date |
-|--------|----------|----------|
-| Period 1 | January 1 -- June 30 | July 23 |
-| Period 2 | July 1 -- December 31 | January 23 |
+0.75% of tax collected for timely filing and payment. No cap. ORC 5739.12(B).
 
-**Legislation:** ORC Section 5739.12.
+### 5.5 Economic Nexus (ORC 5741.01(I)(2))
 
-### 5.3 Vendor Discount [T1]
+$100,000 gross receipts OR 200 transactions in current or preceding calendar year. Effective August 1, 2019.
 
-Ohio offers a **vendor discount** of **0.75%** of tax collected for timely filing and payment. ORC Section 5739.12(B). [T1]
+### 5.6 Marketplace Facilitator (ORC 5739.01(Q))
 
-- No cap on the discount amount. [T1]
-- Only available if the return is filed AND payment is made on time. [T1]
+Required to collect and remit. Effective January 1, 2020. Marketplace sellers relieved for facilitated sales.
 
-### 5.4 Electronic Filing [T1]
+### 5.7 Exemption Certificates
 
-- Electronic filing is available through the **Ohio Business Gateway** (https://gateway.ohio.gov). [T1]
-- Required for certain large filers. [T1]
+STEC-B (blanket), STEC-U (unit), STEC-CO (construction). Ohio accepts SST Certificate and MTC Uniform Certificate.
 
-### 5.5 Penalties and Interest [T1]
+### 5.8 Use Tax
 
-| Penalty | Rate | Citation |
-|---------|------|----------|
-| Late filing | Greater of 10% of tax due or $50 | ORC Section 5739.13 |
-| Late payment | Same | ORC Section 5739.13 |
-| Fraud | 50% of deficiency | ORC Section 5739.13(C) |
-| Interest | Federal short-term rate + 5% | ORC Section 5703.47 |
+Applies when Ohio purchaser acquires TPP/services without Ohio tax collected. Rate = combined state + county at location of use. Report on UST-1 (vendors) or IT-1040 (individuals).
+
+### 5.9 Penalties (ORC 5739.13)
+
+| Penalty | Rate |
+|---|---|
+| Late filing/payment | Greater of 10% of tax due or $50 |
+| Fraud | 50% of deficiency |
+| Interest | Federal short-term rate + 5% |
 
 ---
 
-## Step 4: Deductibility / Exemptions
-### 7.1 Ohio Exemption Certificates [T1]
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-- **Form STEC-B** -- Blanket Exemption Certificate (for ongoing purchases). [T1]
-- **Form STEC-U** -- Unit Exemption Certificate (single transaction). [T1]
-- Ohio accepts the **SST Certificate of Exemption** (Ohio is an SST member). [T1]
-- Ohio accepts the **MTC Uniform Sales Tax Certificate**. [T1]
-- Certificates must include the buyer's vendor license number and reason for exemption. [T1]
+### 6.1 Data Processing vs Consulting
 
-### 7.2 Construction Contract Exemption Certificate [T1]
+Cloud analytics may be taxable as automatic data processing. However, consulting services using technology incidentally may not qualify. Flag for reviewer.
 
-- **Form STEC-CO** -- for contractors on exempt construction projects. [T1]
+### 6.2 CAT Interaction
 
----
+Ohio imposes BOTH sales tax (customer-collected) and CAT (seller's gross receipts). They are separate. Escalate CAT questions.
 
+### 6.3 Complex Bundled Transactions
 
-### 6.1 When Use Tax Applies
-
-Use tax applies when:
-
-- An Ohio purchaser acquires TPP, taxable services, or digital goods from a seller who did not collect Ohio tax. [T1]
-- TPP is purchased tax-free and diverted to taxable use. [T1]
-- TPP is brought into Ohio for use, storage, or consumption. [T1]
-
-**Legislation:** ORC Chapter 5741.
-
-### 6.2 Use Tax Rate [T1]
-
-Use tax rate equals the combined state and county rate at the location of use. [T1]
-
-### 6.3 Reporting Use Tax [T1]
-
-- **Registered vendors:** Report on UST-1. [T1]
-- **Individuals:** Report on Ohio IT-1040 (Schedule of Adjustments). [T1]
-- **Businesses not registered:** File Form UUT-1. [T1]
-
-### 6.4 Credit for Tax Paid to Other States [T1]
-
-Ohio allows a credit for sales/use tax legally paid to another state. ORC Section 5741.02(C)(3). [T1]
+When taxable and exempt items are sold together, bundling rules determine treatment. Flag for reviewer.
 
 ---
 
-## Step 5: Key Thresholds
-### 4.1 Who Must Register
+## Section 7 -- Working Paper Template
 
-Any vendor making taxable sales in Ohio must obtain a **Vendor's License**. ORC Section 5739.17. [T1]
+```
+OHIO SALES TAX WORKING PAPER (UST-1)
+Business: _______________  Vendor License: ___________
+Period: ___________  Filing Frequency: Monthly / Semi-Annual
 
-- The license must be renewed annually (by February 28). [T1]
-- Fee: **$25** per location per year. [T1]
+A. GROSS SALES
+  A1. Total gross sales                          ___________
+  A2. Exempt sales (with certificates)           ___________
+  A3. Taxable sales (A1 - A2)                   ___________
 
-### 4.2 Economic Nexus Threshold [T1]
+B. TAX COMPUTATION
+  B1. State tax (A3 x 5.75%)                    ___________
+  B2. County tax (A3 x county rate ___%)         ___________
+  B3. Total tax collected                        ___________
 
-Ohio's economic nexus threshold:
+C. VENDOR DISCOUNT
+  C1. Discount (B3 x 0.75% if timely)           ___________
+  C2. Net remittance (B3 - C1)                  ___________
 
-- **$100,000** in gross receipts from sales into Ohio during the current or preceding calendar year, **OR** [T1]
-- **200 or more transactions** in Ohio during the same period. [T1]
-- Effective date: August 1, 2019. [T1]
+D. USE TAX
+  D1. Purchases without Ohio tax                 ___________
+  D2. Use tax due                                ___________
 
-**Legislation:** ORC Section 5741.01(I)(2).
-
-### 4.3 Marketplace Facilitator Rules [T1]
-
-Ohio requires marketplace facilitators to collect and remit sales tax:
-
-- Effective January 1, 2020. [T1]
-- Marketplace facilitators are treated as vendors. [T1]
-- Marketplace sellers are relieved for facilitated sales. [T1]
-
-**Legislation:** ORC Section 5739.01(Q); ORC Section 5741.01(R).
-
-### 4.4 Commercial Activity Tax (CAT) [T2]
-
-Ohio imposes a **Commercial Activity Tax (CAT)** on gross receipts:
-
-- This is a **separate tax** from sales tax. [T1]
-- Applies to all businesses with Ohio gross receipts over $150,000/year. [T1]
-- Rate: 0.26% of gross receipts (over $1 million). [T1]
-- The CAT replaced Ohio's corporate franchise tax and tangible personal property tax. [T1]
-- CAT compliance is outside the scope of this skill -- escalate to [T3]. [T1]
-
-**Legislation:** ORC Chapter 5751.
+REVIEWER FLAGS:
+  [ ] Vendor license current (renewed by Feb 28)?
+  [ ] Origin-based sourcing applied for intrastate?
+  [ ] SST/MTC certificates accepted?
+  [ ] Candy/food classification verified?
+  [ ] CAT obligation flagged separately?
+```
 
 ---
 
-## Step 6: Filing Deadlines and Penalties
+## Section 8 -- Bank Statement Reading Guide
 
-Refer to Step 3 for filing frequencies and due dates. [T1]
+### Common Ohio Business Narrations
+
+| Narration | Meaning | Classification Hint |
+|---|---|---|
+| ODT / OHIO DEPT OF TAXATION | Tax payment | Exclude |
+| AMAZON / ETSY / SHOPIFY | Marketplace settlement | Check if facilitator collected |
+| SQUARE / STRIPE / PAYPAL | Payment processor | Business income |
+| OHIO BWC | Workers comp | Exclude |
+
+---
+
+## Section 9 -- Onboarding Fallback
+
+Present these questions:
+
+```
+ONBOARDING QUESTIONS -- OHIO SALES TAX
+1. Do you have an Ohio vendor license? License number?
+2. What is your filing frequency (monthly / semi-annual)?
+3. What is your nexus type (physical, economic, or both)?
+4. Are you a marketplace seller?
+5. What types of products or services do you sell in Ohio?
+6. Do you sell to exempt entities?
+7. Do you have locations, employees, or inventory in Ohio?
+8. Which Ohio counties do you sell into?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Reference |
+|---|---|
+| Sales tax imposition | ORC 5739.02 |
+| Use tax | ORC Chapter 5741 |
+| Sourcing | ORC 5739.033 |
+| Vendor license | ORC 5739.17 |
+| Economic nexus | ORC 5741.01(I)(2) |
+| Marketplace facilitator | ORC 5739.01(Q) |
+| Vendor discount | ORC 5739.12(B) |
+| Penalties | ORC 5739.13 |
+| CAT (separate) | ORC Chapter 5751 |
+
+### Known Gaps / Out of Scope
+
+- Commercial Activity Tax (CAT)
+- Audit defense
+- Complex bundled transactions
+- ODT private letter rulings
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 10-section structure; taxability matrix; worked examples; origin-based sourcing detail |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] Vendor license current?
+- [ ] Correct sourcing applied (origin intrastate, destination remote)?
+- [ ] Candy/food distinction applied correctly?
+- [ ] SaaS classified as taxable?
+- [ ] Vendor discount applied if timely?
+- [ ] CAT flagged as separate obligation?
 
 ---
 
 ## PROHIBITIONS
-- **NEVER** apply a clothing exemption in Ohio -- clothing is fully taxable. [T1]
-- **NEVER** forget that Ohio's vendor license must be renewed annually ($25/location/year). [T1]
-- **NEVER** treat grocery food as taxable -- grocery food is exempt (but candy, soft drinks, and dietary supplements are taxable). [T1]
-- **NEVER** confuse the CAT with sales tax -- they are separate taxes with separate obligations. [T1]
-- **NEVER** use destination-based sourcing for intrastate Ohio sales -- Ohio is origin-based for intrastate. [T1]
-- **NEVER** forget the 0.75% vendor discount for timely filing -- it has no cap and applies to all timely returns. [T1]
-- **NEVER** treat SaaS as nontaxable in Ohio -- SaaS is taxable as automatic data processing. [T1]
-- **NEVER** refuse the SST Certificate in Ohio -- Ohio is an SST member and must accept SST certificates. [T1]
-- **NEVER** assume landscaping and physical fitness services are exempt -- both are taxable in Ohio. [T1]
-- **NEVER** apply the flour-based candy exception incorrectly -- items WITH flour are food (exempt), items WITHOUT flour (meeting other candy criteria) are candy (taxable). [T1]
 
----
-
-## Edge Case Registry
-
-### EC1 -- SST Compliance and Multi-State Registration [T1]
-
-**Situation:** An out-of-state seller wants to register in Ohio and other SST member states simultaneously.
-
-**Resolution:** Because Ohio is an SST member, the seller can register through the **SST Registration System** (SSTRS) at https://www.sstregister.org. This allows registration in all SST member states through a single application. Ohio will issue a vendor's license upon registration.
-
-### EC2 -- Vendor License Renewal [T1]
-
-**Situation:** A vendor forgets to renew the annual vendor's license by February 28.
-
-**Resolution:** The vendor must renew immediately. Operating without a valid vendor's license is a violation of ORC Section 5739.17. Penalties may apply. The renewal fee is $25 per location per year.
-
-### EC3 -- Candy Definition (SST Standard) [T1]
-
-**Situation:** A store sells chocolate-covered pretzels and asks if they are "candy."
-
-**Resolution:** Under SST definitions adopted by Ohio, "candy" means a preparation of sugar, honey, or other sweetener combined with chocolate, fruits, nuts, or other ingredients, that does NOT contain flour as an ingredient. Chocolate-covered pretzels contain flour (in the pretzel), so they are classified as FOOD (exempt), not candy (taxable). ORC Section 5739.01(AAAA).
-
-### EC4 -- Data Processing Services vs. SaaS [T2]
-
-**Situation:** A business purchases cloud-based data analytics services.
-
-**Resolution:** Ohio taxes "automatic data processing and computer services" under ORC Section 5739.01(B)(3)(a). Cloud analytics likely falls under this category and is taxable. However, certain consulting and professional services that happen to use computers may not qualify as "automatic data processing." Flag for reviewer if the service is primarily analytical/consulting in nature with technology as incidental.
-
-### EC5 -- Temporary Staffing [T1]
-
-**Situation:** A company uses a temporary staffing agency for $8,000/month.
-
-**Resolution:** Employment services and employment placement services are TAXABLE in Ohio. ORC Section 5739.01(B)(3)(j). Tax = $8,000 x combined rate (e.g., 7.50% in Columbus = $600/month).
-
-### EC6 -- CAT vs. Sales Tax [T1]
-
-**Situation:** Business owner asks about the total Ohio tax burden on a transaction.
-
-**Resolution:** Ohio imposes BOTH sales tax (collected from the customer) AND the Commercial Activity Tax (CAT, imposed on the seller's gross receipts). They are separate taxes. A sale may be subject to both. The CAT is NOT in lieu of sales tax. Escalate CAT questions to [T3].
-
-### EC7 -- Origin-Based Intrastate Anomaly [T1]
-
-**Situation:** A Columbus-based seller ships goods to a customer in Cleveland (different county, different combined rate).
-
-**Resolution:** For intrastate Ohio sales, origin-based sourcing applies. The Columbus seller charges the Franklin County rate (7.50%) even though Cleveland (Cuyahoga County) has a rate of 8.00%. The customer's county rate is irrelevant for intrastate sales from an Ohio-based seller.
-
-### EC8 -- Physical Fitness Services [T1]
-
-**Situation:** A gym charges monthly membership fees of $50.
-
-**Resolution:** Physical fitness facility services are TAXABLE in Ohio. ORC Section 5739.01(B)(3)(k). Tax applies to the $50 monthly fee at the applicable combined rate.
-
-### EC9 -- Digital Products [T1]
-
-**Situation:** Consumer purchases a digital movie download for $14.99 from an Ohio retailer.
-
-**Resolution:** Specified digital products (digital audio, video, and books) are TAXABLE in Ohio under ORC Section 5739.01(BBB). Tax applies at the combined rate at the buyer's location (destination-based for remote sellers).
-
-### EC10 -- Landscaping and Lawn Care [T1]
-
-**Situation:** A commercial property owner hires a landscaping company for $2,000/month.
-
-**Resolution:** Landscaping and lawn care services are TAXABLE in Ohio. ORC Section 5739.01(B)(3)(h). Both commercial and residential landscaping are taxable. Tax = $2,000 x combined rate.
-
----
-
-## Test Suite
-
-### Test 1 -- Basic Taxable Sale in Columbus [T1]
-
-**Input:** Retailer in Columbus (Franklin County) sells electronics for $800. Combined rate: 7.50%.
-**Expected output:** Sales tax = $60.00. Total = $860.00.
-
-### Test 2 -- Grocery Food Exempt [T1]
-
-**Input:** Customer buys $150 of groceries (bread, milk, produce) at a Cleveland supermarket.
-**Expected output:** Sales tax = $0. Grocery food exempt.
-
-### Test 3 -- Candy Taxable [T1]
-
-**Input:** Customer buys a $5 chocolate bar (no flour) at a Columbus store. Rate: 7.50%.
-**Expected output:** Sales tax = $0.38 ($5 x 7.50%). Candy (no flour) is taxable.
-
-### Test 4 -- Chocolate-Covered Pretzels (Food, Not Candy) [T1]
-
-**Input:** Customer buys $5 bag of chocolate-covered pretzels (contains flour) at a Columbus store.
-**Expected output:** Sales tax = $0. Item contains flour, classified as food (exempt), not candy.
-
-### Test 5 -- SaaS Taxable [T1]
-
-**Input:** Ohio business subscribes to a cloud-based CRM. $300/month. Business in Cuyahoga County (8.00%).
-**Expected output:** Sales tax = $24.00/month. SaaS is taxable as automatic data processing service.
-
-### Test 6 -- Economic Nexus -- Revenue [T1]
-
-**Input:** Out-of-state seller has $120,000 in Ohio sales and 50 transactions in the past year.
-**Expected output:** Seller HAS economic nexus (revenue exceeds $100,000 -- OR test).
-
-### Test 7 -- Vendor Discount [T1]
-
-**Input:** Vendor timely files and pays $20,000 in Ohio sales tax.
-**Expected output:** Vendor discount = 0.75% of $20,000 = $150.00. Net remittance = $19,850.00.
-
-### Test 8 -- Temporary Staffing [T1]
-
-**Input:** Company pays $6,000/month for temporary staffing in Hamilton County (7.55%).
-**Expected output:** Sales tax = $453.00 ($6,000 x 7.55%). Employment services are taxable.
-
-### Test 9 -- Manufacturing Equipment Exempt [T1]
-
-**Input:** Manufacturer purchases $75,000 production line equipment. Used primarily in manufacturing. Provides STEC-B.
-**Expected output:** Sales tax = $0. Manufacturing equipment exempt.
-
-### Test 10 -- Use Tax [T1]
-
-**Input:** Cleveland business purchases $4,000 office furniture from a New Hampshire retailer. No tax collected. Cuyahoga County rate: 8.00%.
-**Expected output:** Use tax = $320.00 ($4,000 x 8.00%). Report on UST-1 or IT-1040.
-
----
-
-## Reviewer Escalation Protocol
-
-| Trigger | Action |
-|---------|--------|
-| Any [T3] tagged item encountered | STOP. Do not guess. Escalate to licensed CPA, EA, or tax attorney. |
-| Client has audit notice or assessment | Escalate immediately. Do not advise on audit response. |
-| Multi-state nexus question involving 3+ states | Flag for senior reviewer with multi-state experience. |
-| Penalty abatement or voluntary disclosure | Escalate to licensed professional with state-specific experience. |
-| Ambiguous taxability of a product/service | Present both interpretations to reviewer with supporting authority. |
-
----
-
-## Contribution Notes
-
-- This skill follows the Q1 execution format (Step 0 through Step 7).
-- All rules are tagged [T1], [T2], or [T3] per the Confidence Tier Definitions.
-- Rate tables are deterministic lookup tables -- no narrative explanation of rates.
-- To update this skill, submit a pull request with the specific section, supporting statutory authority, and effective date of the change.
-- All changes require validation by a US CPA or EA before merging.
+- NEVER apply a clothing exemption in Ohio -- clothing is fully taxable
+- NEVER forget that Ohio's vendor license must be renewed annually ($25/location/year)
+- NEVER treat grocery food as taxable -- grocery food is exempt (but candy, soft drinks, dietary supplements are taxable)
+- NEVER confuse the CAT with sales tax -- they are separate taxes
+- NEVER use destination-based sourcing for intrastate Ohio sales -- Ohio is origin-based for intrastate
+- NEVER forget the 0.75% vendor discount for timely filing -- no cap
+- NEVER treat SaaS as nontaxable -- SaaS is taxable as automatic data processing
+- NEVER refuse SST Certificate -- Ohio is an SST member
+- NEVER present calculations as definitive -- always label as estimated and direct client to a qualified Ohio CPA or EA
 
 ---
 
 ## Disclaimer
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, or tax attorney) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

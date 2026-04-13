@@ -1,289 +1,317 @@
 ---
 name: br-indirect-tax
-description: Use this skill whenever asked about Brazilian indirect tax obligations (ICMS, ISS, IPI) for self-employed individuals or small businesses. Trigger on phrases like "ICMS", "ISS", "IPI", "Brazil VAT", "Brazilian indirect tax", "nota fiscal", "imposto sobre servicos", "imposto sobre circulacao de mercadorias", or any question about indirect tax computation or compliance in Brazil. Covers ISS (municipal, 2-5%), ICMS (state, variable), IPI (federal), interaction with Simples Nacional, and the upcoming IBS/CBS tax reform. ALWAYS read this skill before touching any Brazilian indirect tax work.
+description: >
+  Use this skill whenever asked about Brazilian indirect tax obligations (ICMS, ISS, IPI) for self-employed individuals or small businesses. Trigger on phrases like "ICMS", "ISS", "IPI", "Brazil VAT", "Brazilian indirect tax", "nota fiscal", "imposto sobre servicos", "imposto sobre circulacao de mercadorias", or any question about indirect tax computation or compliance in Brazil. Covers ISS (municipal, 2-5%), ICMS (state, variable), IPI (federal), interaction with Simples Nacional, and the upcoming IBS/CBS tax reform. ALWAYS read this skill before touching any Brazilian indirect tax work.
+version: 2.0
+jurisdiction: BR
+tax_year: 2025
+category: international
+depends_on:
+  - income-tax-workflow-base
 ---
 
-# Brazil Indirect Tax (ICMS/ISS/IPI) -- Self-Employed Skill
+# Brazil Indirect Tax (ICMS/ISS/IPI) -- Self-Employed Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Brazil |
-| Jurisdiction Code | BR |
-| Primary Legislation | LC 87/1996 (Lei Kandir -- ICMS); LC 116/2003 (ISS); Decreto 7.212/2010 (RIPI -- IPI) |
-| Supporting Legislation | CF/88 Art. 155-156; LC 123/2006 (Simples Nacional); EC 132/2023 (Tax Reform) |
-| Tax Authority | State SEFAZ (ICMS); Municipal prefeitura (ISS); Receita Federal (IPI) |
+|---|---|
+| Country | Brazil (Republica Federativa do Brasil) |
+| Tax | ISS (municipal, 2-5%), ICMS (state, 7-25%), IPI (federal, varies by product) |
+| Currency | BRL only |
+| Tax year | Calendar year |
+| Primary legislation | LC 87/1996 (Lei Kandir -- ICMS); LC 116/2003 (ISS); Decreto 7.212/2010 (RIPI -- IPI) |
+| Supporting legislation | CF/88 Art. 155-156; LC 123/2006 (Simples Nacional); EC 132/2023 (Tax Reform) |
+| Tax authority | State SEFAZ (ICMS); Municipal prefeitura (ISS); Receita Federal (IPI) |
+| Filing portal | State SEFAZ portals; municipal NFS-e portals; Receita Federal (e-CAC) |
+| Filing deadline | Varies by state, municipality, and regime |
 | Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a Brazilian contador (CRC-registered) |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Tax Year | 2025 |
-| Confidence Coverage | Tier 1: ISS rate range, ICMS structure, IPI basic rules, Simples interaction. Tier 2: ICMS ST, interstate rate differentials, ISS location of service rules. Tier 3: tax reform transition (IBS/CBS), tax wars (guerra fiscal), ICMS credits complex chains. |
+| Validated by | Pending -- requires sign-off by a Brazilian contador (CRC-registered) |
+| Skill version | 2.0 |
 
----
-
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified professional must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before advising on indirect tax, you MUST know:
-
-1. **Tax regime** [T1] -- Simples Nacional, Lucro Presumido, or Lucro Real
-2. **Activity type** [T1] -- services (ISS), goods (ICMS), or manufacturing (IPI)
-3. **CNAE code(s)** [T1] -- determines applicable tax and rates
-4. **State and municipality of registration** [T1] -- ICMS rates vary by state; ISS rates by municipality
-5. **Whether selling interstate** [T2] -- different ICMS rates for interstate operations
-6. **Whether importing** [T2] -- ICMS on imports, IPI on imported goods
-7. **Whether on Simples Nacional** [T1] -- indirect taxes are generally included in DAS
-
-**If on Simples Nacional and below the R$ 3,600,000 sublimit, ICMS and ISS are included in the DAS. This skill's detailed computation applies primarily to businesses OUTSIDE Simples or those exceeding the sublimit.**
-
----
-
-## Step 1: ISS (Imposto Sobre Servicos) [T1]
-
-**Legislation:** LC 116/2003; municipal legislation
-
-### Overview [T1]
-
-| Feature | Detail |
-|---------|--------|
-| Level | Municipal |
-| Applies to | Services (as listed in the LC 116/2003 service list) |
-| Rate range | **2% to 5%** (set by each municipality) |
-| Minimum rate | 2% (LC 157/2016) |
-| Base | Gross price of the service |
-
-### ISS Rate Examples [T1]
+### ISS Rate Range
 
 | Municipality | Common ISS Rate |
-|-------------|----------------|
-| Sao Paulo | 2% to 5% (varies by service type; IT services typically 2-3%) |
+|---|---|
+| Sao Paulo | 2% to 5% (IT services typically 2-3%) |
 | Rio de Janeiro | 2% to 5% |
-| Belo Horizonte | 2% to 5% |
 | Most municipalities | Default 5% unless reduced by specific municipal law |
 
-### Location of Taxation [T1/T2]
-
-| Rule | Where ISS is Due |
-|------|-----------------|
-| General rule | Municipality where the service provider is established |
-| Exceptions (LC 116/2003, Art. 3) | Certain services taxed where performed (construction, cleaning, security, events, etc.) |
-
-[T2] Flag for reviewer when services are performed in a municipality different from the provider's registration.
-
-### ISS Computation [T1]
-
-ISS = Gross service revenue x Municipal ISS rate
-
----
-
-## Step 2: ICMS (Imposto sobre Circulacao de Mercadorias e Servicos) [T1/T2]
-
-**Legislation:** LC 87/1996 (Lei Kandir); state RICMS regulations
-
-### Overview [T1]
-
-| Feature | Detail |
-|---------|--------|
-| Level | State |
-| Applies to | Sale of goods, interstate/inter-municipal transport, telecommunications |
-| Non-cumulative | Credit for ICMS paid on inputs (outside Simples) |
-| Rate | Varies by state and product |
-
-### Internal ICMS Rates (Intrastate) [T1]
+### ICMS Internal Rates (Intrastate)
 
 | State | Standard Rate |
-|-------|--------------|
+|---|---|
 | Sao Paulo | 18% |
-| Rio de Janeiro | 20% (increased from 18% + FECP 2%) |
+| Rio de Janeiro | 20% (18% + FECP 2%) |
 | Minas Gerais | 18% |
-| Parana | 19% |
-| Rio Grande do Sul | 17% |
 | Most states | 17-20% |
 
-### Interstate ICMS Rates [T1]
+### Interstate ICMS Rates
 
-| Origin / Destination | Rate |
-|---------------------|------|
+| Route | Rate |
+|---|---|
 | South/Southeast to South/Southeast | 12% |
 | South/Southeast to North/Northeast/Center-West/ES | 7% |
 | North/Northeast/Center-West/ES to any state | 12% |
-| Imported goods (any interstate) | 4% (Resolucao SF 13/2012) |
+| Imported goods (any interstate) | 4% |
 
-### DIFAL (Diferencial de Aliquota) [T2]
+### Conservative Defaults
 
-When selling to a non-taxpayer consumer in another state, DIFAL applies:
-- DIFAL = Internal rate of destination state - Interstate rate
-- Seller collects and remits DIFAL to destination state
-- [T2] Flag for reviewer on DIFAL calculations
-
-### ICMS-ST (Substituicao Tributaria) [T2]
-
-| Rule | Detail |
-|------|--------|
-| What | ICMS collected upfront by the manufacturer/importer for the entire chain |
-| When | Specific product categories (beverages, fuels, auto parts, electronics, etc.) |
-| How | MVA (Margem de Valor Agregado) applied to calculate presumed final price |
-
-[T2] Always flag ICMS-ST situations for reviewer -- computation is complex and product-specific.
+| Ambiguity | Default |
+|---|---|
+| Unknown tax regime | Outside Simples Nacional (apply normal rates) |
+| Unknown ICMS rate | Highest applicable intrastate rate |
+| Unknown ISS rate | 5% (municipal maximum) |
+| Unknown CNAE classification | Services (ISS) |
+| Unknown interstate route | 7% (most conservative for credit purposes) |
 
 ---
 
-## Step 3: IPI (Imposto sobre Produtos Industrializados) [T1]
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-**Legislation:** Decreto 7.212/2010 (RIPI); TIPI (Tabela de Incidencia do IPI)
+### Required Inputs
 
-### Overview [T1]
+**Minimum viable** -- tax regime (Simples/Lucro Presumido/Lucro Real), activity type (services/goods/manufacturing), CNAE code(s), state and municipality of registration.
 
-| Feature | Detail |
-|---------|--------|
-| Level | Federal |
-| Applies to | Industrialized products (manufacturing, transformation, assembly) |
-| Non-cumulative | Credit for IPI on inputs |
-| Rate | Varies by product (TIPI table, based on NCM code) -- 0% to 30%+ |
-| Exemptions | Products listed in TIPI with rate 0% or NT (non-taxable) |
+**Recommended** -- revenue breakdown by type, interstate sales detail, Simples Nacional DAS history, nota fiscal register.
 
-### Who Pays [T1]
+**Ideal** -- complete accounting records, ICMS credit ledger, ISS retention records, NF-e/NFS-e XML files.
 
-| Situation | IPI Obligation |
-|-----------|---------------|
-| Manufacturer | Yes -- on sale of manufactured goods |
-| Importer | Yes -- on customs clearance |
-| Service provider | No -- IPI does not apply to services |
-| Retailer | Generally no (unless performing industrialization) |
+### Refusal Catalogue
 
-### IPI for Self-Employed [T1]
+**R-BR-1 -- Tax reform transition (IBS/CBS).** "The IBS/CBS tax reform is still being finalized. Transition rules are not yet complete. Escalate all tax reform questions."
 
-Most self-employed service providers do NOT pay IPI. IPI applies only if the self-employed person manufactures or transforms products. If on Simples Nacional, IPI is included in the DAS (Anexo II for industry).
+**R-BR-2 -- ICMS-ST detailed computation.** "ICMS Substituicao Tributaria requires product-specific MVA lookup and state-specific protocols. Escalate to contador."
+
+**R-BR-3 -- Guerra fiscal disputes.** "Interstate tax incentive disputes (guerra fiscal) require specialist analysis. Escalate."
+
+**R-BR-4 -- IPI complex chains.** "IPI credit chains for multi-step manufacturing require specialist analysis. Escalate."
 
 ---
 
-## Step 4: Simples Nacional Interaction [T1]
+## Section 3 -- Transaction Pattern Library
 
-**Legislation:** LC 123/2006, Art. 13, 18
+### 3.1 Revenue Patterns
 
-| Tax | Treatment in Simples |
-|-----|---------------------|
-| ISS | Included in DAS (Anexos III, IV, V) |
-| ICMS | Included in DAS (Anexos I, II) |
-| IPI | Included in DAS (Anexo II) |
-| Exception | If revenue > R$ 3,600,000 sublimit, ICMS and ISS are paid OUTSIDE Simples at normal rates |
+| Pattern | Tax Treatment | Notes |
+|---|---|---|
+| VENDA MERCADORIA, NF-E | ICMS on goods sale | Intrastate rate applies |
+| PRESTACAO SERVICO, NFS-E | ISS on service | Municipal rate applies |
+| VENDA INTERESTADUAL | ICMS at interstate rate | 7% or 12% depending on route |
+| EXPORTACAO | Exempt/zero ICMS and ISS | Immune under CF/88 |
+| VENDA CONSUMIDOR FINAL (interstate) | DIFAL applies | Seller collects differential |
+| PLATAFORMA DIGITAL, MARKETPLACE | ISS or ICMS | Depends on goods vs services |
 
-### When Indirect Tax Applies Separately (Even in Simples) [T1]
+### 3.2 Expense / Input Patterns
 
-| Situation | Tax Treatment |
-|-----------|--------------|
-| Revenue exceeds R$ 3,600,000 sublimit | ICMS/ISS paid at normal state/municipal rates |
-| ICMS-ST products | ICMS-ST is paid separately even in Simples |
-| ICMS on imports | Paid separately at customs |
-| DIFAL on interstate B2C | May apply depending on state agreement |
+| Pattern | Tax Treatment | Notes |
+|---|---|---|
+| COMPRA MERCADORIA, NF-E ENTRADA | ICMS credit (if outside Simples) | Non-cumulative credit |
+| MATERIA PRIMA, INSUMO | ICMS + IPI credit | Manufacturing inputs |
+| SERVICO TOMADO, NFS-E | ISS may be retained at source | Check retention rules |
+| ENERGIA ELETRICA | ICMS credit (partial) | Only for industrial use in some states |
+| TELECOMUNICACOES | ICMS credit (partial) | Varies by state |
+| ALUGUEL COMERCIAL | No ICMS/ISS credit | Rent is not subject to indirect tax |
 
----
+### 3.3 Simples Nacional Patterns
 
-## Step 5: Nota Fiscal (Tax Invoice) [T1]
-
-### Types [T1]
-
-| Type | Use |
-|------|-----|
-| NF-e (Nota Fiscal Eletronica) | Sale of goods (ICMS) |
-| NFS-e (Nota Fiscal de Servicos Eletronica) | Services (ISS) |
-| NFC-e (Nota Fiscal de Consumidor Eletronica) | Retail to final consumer |
-| CT-e | Transport services |
-
-### NFS-e for Service Providers [T1]
-
-| Requirement | Detail |
-|-------------|--------|
-| Issuance | Via municipal portal (each city has its own system) |
-| Mandatory fields | Provider CNPJ, client CNPJ/CPF, service code, value, ISS rate, ISS amount |
-| Retention | ISS may be retained by the client (ISS retido na fonte) for certain services |
+| Pattern | Tax Treatment | Notes |
+|---|---|---|
+| DAS SIMPLES NACIONAL | Unified payment includes ICMS/ISS | Unless above sublimit |
+| ICMS-ST SEPARADO | Paid outside Simples even in Simples | Substitute tributario products |
+| ICMS IMPORTACAO | Paid separately at customs | Even in Simples |
 
 ---
 
-## Step 6: Tax Reform -- IBS and CBS [T3]
+## Section 4 -- Worked Examples
 
-**Legislation:** Emenda Constitucional 132/2023; LC pending (2025-2026)
+### Example 1 -- ISS Computation (Outside Simples)
 
-| Detail | Value |
-|--------|-------|
-| What | Brazil is replacing ICMS, ISS, IPI, PIS, and COFINS with two new taxes: IBS (state/municipal) and CBS (federal) |
-| Timeline | Transition period 2026-2032; full implementation by 2033 |
-| Combined rate | Expected ~26.5% (among highest globally) |
-| Current status | Implementation laws being debated/enacted through 2025-2026 |
-
-[T3] ESCALATE all tax reform transition questions. The rules are not yet finalized for full implementation.
-
----
-
-## Step 7: Edge Case Registry
-
-### EC1 -- ISS retained at source [T1]
-**Situation:** IT consulting firm invoices a large company. Client retains ISS.
-**Resolution:** Certain services are subject to ISS retention at source (ISS retido). The client deducts ISS from payment and remits to the municipality. The service provider shows ISS retido on the NFS-e and does not pay ISS separately on that invoice.
-
-### EC2 -- Simples Nacional exceeding sublimit [T2]
-**Situation:** EPP with R$ 4,000,000 revenue (above R$ 3,600,000 sublimit).
-**Resolution:** Federal taxes remain in Simples DAS. ICMS and ISS are calculated and paid OUTSIDE Simples at normal state/municipal rates. [T2] Significant complexity increase -- flag for contador.
-
-### EC3 -- Interstate sale from Simples Nacional [T1]
-**Situation:** Simples Nacional company in SP sells goods to customer in BA.
-**Resolution:** ICMS is included in Simples DAS at the Simples rate. The buyer in BA may not be able to take full ICMS credit (limited to the ICMS portion within the Simples rate). DIFAL may apply if selling to non-taxpayer consumer.
-
-### EC4 -- Service provider also sells goods [T2]
-**Situation:** IT company provides consulting (ISS) and sells software licenses (ICMS or ISS depending on classification).
-**Resolution:** Software classification is contentious. SaaS/cloud services are generally ISS. Packaged software was historically ICMS but increasingly ISS. [T2] Flag for reviewer -- must check state and municipal legislation.
-
-### EC5 -- IPI on artisanal manufacturing [T1]
-**Situation:** Self-employed person makes and sells handmade goods.
-**Resolution:** If registered as industry (CNAE indicates manufacturing), IPI applies. If on Simples Nacional (Anexo II), IPI is included in DAS. If outside Simples, must register as industrial establishment and file IPI returns (DCTF).
-
----
-
-## Step 8: Test Suite
-
-### Test 1 -- ISS computation (outside Simples)
 **Input:** Consulting firm in Sao Paulo. Monthly service revenue R$ 50,000. ISS rate 5%.
-**Expected output:**
+
+**Computation:**
 - ISS = R$ 50,000 x 5% = R$ 2,500
 
-### Test 2 -- ICMS computation (outside Simples, intrastate SP)
-**Input:** Retailer in SP selling goods worth R$ 100,000 (before ICMS). Internal rate 18%.
-**Expected output:**
+### Example 2 -- ICMS Computation (Outside Simples, Intrastate SP)
+
+**Input:** Retailer in SP selling goods worth R$ 100,000. Internal rate 18%. Purchases R$ 60,000 with 18% ICMS.
+
+**Computation:**
 - ICMS on sales: R$ 100,000 x 18% = R$ 18,000
-- Less: ICMS credits on purchases (e.g., R$ 60,000 purchases x 18% = R$ 10,800)
+- ICMS credits on purchases: R$ 60,000 x 18% = R$ 10,800
 - ICMS payable: R$ 18,000 - R$ 10,800 = R$ 7,200
 
-### Test 3 -- Simples Nacional with ISS included
-**Input:** IT services company on Simples, Anexo III, RBT12 = R$ 300,000, monthly revenue R$ 28,000.
-**Expected output:**
-- Band 2: effective rate = (300,000 x 11.20% - 9,360) / 300,000 = 8.08%
-- DAS = 28,000 x 8.08% = R$ 2,262.40 (includes ISS, IRPJ, CSLL, PIS, COFINS, CPP)
+### Example 3 -- Interstate Sale (SP to BA)
 
-### Test 4 -- Interstate sale (SP to BA)
 **Input:** SP company sells R$ 10,000 goods to BA company. Interstate rate 7%. BA internal rate 19%.
-**Expected output:**
+
+**Computation:**
 - ICMS charged: R$ 10,000 x 7% = R$ 700 (seller pays to SP SEFAZ)
-- DIFAL (if B2B, buyer is taxpayer): buyer pays DIFAL of 12% (19% - 7%) to BA
+- If B2B (buyer is taxpayer): buyer pays DIFAL of 12% (19% - 7%) to BA
 - If B2C: seller collects DIFAL of 12% and remits to BA
 
-### Test 5 -- ISS retention at source
+### Example 4 -- ISS Retention at Source
+
 **Input:** Consulting invoice R$ 20,000 to large corporate client. ISS rate 5%. Subject to retention.
-**Expected output:**
+
+**Computation:**
 - ISS = R$ 20,000 x 5% = R$ 1,000
 - Client retains R$ 1,000 and remits to municipality
 - Provider receives R$ 19,000
 - Provider does not pay ISS separately on this invoice
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 ISS Structure
+
+**Legislation:** LC 116/2003
+
+Municipal tax on services. Rate range 2% to 5%. Base: gross price of the service. General rule: taxed where the service provider is established. Exceptions under Art. 3 for services taxed where performed.
+
+### 5.2 ICMS Structure
+
+**Legislation:** LC 87/1996
+
+State tax on sale of goods, interstate/inter-municipal transport, telecommunications. Non-cumulative (credit for ICMS paid on inputs outside Simples). Rate varies by state and product.
+
+### 5.3 IPI Structure
+
+**Legislation:** Decreto 7.212/2010
+
+Federal tax on industrialized products. Applies to manufacturers and importers. Rate varies by product per TIPI table (NCM code). Non-cumulative. Most self-employed service providers do NOT pay IPI.
+
+### 5.4 Simples Nacional Interaction
+
+**Legislation:** LC 123/2006, Art. 13, 18
+
+ICMS and ISS are included in the DAS for Simples Nacional businesses below the R$ 3,600,000 sublimit. Above the sublimit, ICMS and ISS are paid outside Simples at normal rates.
+
+### 5.5 Nota Fiscal Types
+
+NF-e (goods/ICMS), NFS-e (services/ISS), NFC-e (retail consumer), CT-e (transport). NFS-e issued via municipal portal with provider CNPJ, client CNPJ/CPF, service code, value, ISS rate, ISS amount.
+
+---
+
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
+
+### 6.1 ISS Location of Taxation
+
+Flag for reviewer when services are performed in a municipality different from the provider's registration. Certain services are taxed where performed under LC 116/2003, Art. 3.
+
+### 6.2 DIFAL Computation
+
+DIFAL applies when selling to a non-taxpayer consumer in another state. DIFAL = internal rate of destination state minus interstate rate. Flag for reviewer on all DIFAL calculations.
+
+### 6.3 ICMS-ST (Substituicao Tributaria)
+
+ICMS collected upfront by manufacturer/importer for the entire chain. Applies to specific product categories. Computation requires MVA (Margem de Valor Agregado). Always flag for reviewer.
+
+### 6.4 Software Classification
+
+SaaS/cloud services are generally ISS. Packaged software was historically ICMS but increasingly ISS. Flag for reviewer -- must check state and municipal legislation.
+
+---
+
+## Section 7 -- Excel Working Paper Template
+
+```
+BRAZIL INDIRECT TAX -- Working Paper
+Period: [Month / Quarter]
+
+A. ISS
+  A1. Total service revenue                        ___________
+  A2. ISS rate                                     ___________
+  A3. ISS due                                      ___________
+  A4. ISS retained at source                       ___________
+  A5. ISS payable (A3 - A4)                        ___________
+
+B. ICMS
+  B1. Total goods revenue (intrastate)             ___________
+  B2. ICMS rate (intrastate)                       ___________
+  B3. Output ICMS                                  ___________
+  B4. Input ICMS credits                           ___________
+  B5. ICMS payable (B3 - B4)                       ___________
+  B6. Interstate sales                             ___________
+  B7. DIFAL (if B2C interstate)                    ___________
+
+C. SIMPLES NACIONAL CHECK
+  C1. Revenue in last 12 months (RBT12)            ___________
+  C2. Above R$ 3,600,000 sublimit? (Y/N)           ___________
+  C3. If yes: ICMS/ISS paid outside Simples        ___________
+
+REVIEWER FLAGS:
+  [ ] Tax regime confirmed?
+  [ ] CNAE codes verified?
+  [ ] Interstate operations flagged?
+  [ ] ICMS-ST products identified?
+  [ ] Sublimit check performed?
+```
+
+---
+
+## Section 8 -- Bank Statement Reading Guide
+
+### Brazilian Bank Statement Formats
+
+| Bank | Format | Key Fields |
+|---|---|---|
+| Banco do Brasil, Caixa, Itau | CSV, PDF, OFX | Data, Historico, Valor, Saldo |
+| Bradesco, Santander | CSV, PDF | Data, Descricao, Debito, Credito |
+| Nubank, Inter, C6 | CSV | Data, Descricao, Valor |
+
+### Key Brazilian Banking Terms
+
+| Term | Classification Hint |
+|---|---|
+| TED, DOC, PIX | Transfer -- check direction |
+| BOLETO | Bill payment -- likely expense |
+| DAS, SIMPLES | Simples Nacional tax payment |
+| SEFAZ, ICMS | State tax payment |
+| PREFEITURA, ISS | Municipal tax payment |
+| NF-E, NOTA FISCAL | Invoice-related |
+
+---
+
+## Section 9 -- Onboarding Fallback
+
+```
+ONBOARDING QUESTIONS -- BRAZIL INDIRECT TAX
+1. What is your tax regime? (Simples Nacional / Lucro Presumido / Lucro Real)
+2. What are your CNAE codes?
+3. Activity type: services, goods, or manufacturing?
+4. State and municipality of registration?
+5. Do you sell interstate? To which states?
+6. Do you import goods?
+7. If on Simples: what is your RBT12 (last 12 months revenue)?
+8. Are any of your products subject to ICMS-ST?
+9. Do you issue NFS-e, NF-e, or both?
+10. Any ISS retention at source situations?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Reference |
+|---|---|
+| ISS rates and rules | LC 116/2003 |
+| ISS minimum rate | LC 157/2016 |
+| ICMS (Lei Kandir) | LC 87/1996 |
+| Interstate rates | Resolucao SF 13/2012 (imported goods 4%) |
+| IPI | Decreto 7.212/2010 |
+| Simples Nacional | LC 123/2006 |
+| Tax reform | EC 132/2023 |
+| Nota fiscal | CONFAZ agreements |
+
+### Tax Reform (IBS/CBS) -- Status
+
+Brazil is replacing ICMS, ISS, IPI, PIS, and COFINS with IBS (state/municipal) and CBS (federal). Transition period 2026-2032; full implementation by 2033. Combined rate expected ~26.5%. Implementation laws being debated/enacted through 2025-2026. ESCALATE all tax reform transition questions.
 
 ---
 
@@ -292,11 +320,11 @@ Most self-employed service providers do NOT pay IPI. IPI applies only if the sel
 - NEVER apply ICMS to pure services -- services are subject to ISS (except telecom and interstate transport)
 - NEVER apply ISS to sale of physical goods -- goods are subject to ICMS
 - NEVER ignore the R$ 3,600,000 sublimit for Simples Nacional ICMS/ISS
-- NEVER assume ICMS rates are uniform across states -- they vary from 7% to 25%+ depending on state and product
+- NEVER assume ICMS rates are uniform across states -- they vary from 7% to 25%+
 - NEVER assume ISS rates are the same in all municipalities -- they range from 2% to 5%
 - NEVER compute IPI for pure service providers -- IPI applies only to industrialized products
-- NEVER ignore ICMS-ST obligations -- they apply even to Simples Nacional companies for listed products
-- NEVER advise on the IBS/CBS tax reform as if it is fully enacted -- transition rules are still being finalized [T3]
+- NEVER ignore ICMS-ST obligations -- they apply even to Simples Nacional companies
+- NEVER advise on the IBS/CBS tax reform as if it is fully enacted
 - NEVER present calculations as definitive -- always label as estimated and direct client to a CRC-registered contador
 
 ---

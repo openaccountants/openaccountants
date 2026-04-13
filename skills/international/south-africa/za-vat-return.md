@@ -1,288 +1,366 @@
 ---
 name: za-vat-return
-description: Use this skill whenever asked about South African VAT returns for self-employed individuals or small businesses. Trigger on phrases like "South Africa VAT", "VAT201", "SARS VAT", "15% VAT", "eFiling VAT", "zero-rated SA", "VAT vendor", or any question about VAT filing, computation, or registration for vendors in South Africa. Covers the 15% standard rate, zero-rated and exempt supplies, R1M registration threshold, VAT201 return, and bimonthly filing via SARS eFiling. ALWAYS read this skill before touching any South African VAT work.
+description: >
+  Use this skill whenever asked about South African VAT returns for self-employed individuals or small businesses. Trigger on phrases like "South Africa VAT", "VAT201", "SARS VAT", "15% VAT", "eFiling VAT", "zero-rated SA", "VAT vendor", or any question about VAT filing, computation, or registration for vendors in South Africa. Covers the 15% standard rate, zero-rated and exempt supplies, R1M registration threshold, VAT201 return, and bimonthly filing via SARS eFiling. ALWAYS read this skill before touching any South African VAT work.
+version: 2.0
+jurisdiction: ZA
+tax_year: 2025
+category: international
+depends_on:
+  - vat-workflow-base
 ---
 
-# South Africa VAT Return (VAT201) -- Self-Employed Skill
+# South Africa VAT Return (VAT201) -- Self-Employed Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | South Africa |
-| Jurisdiction Code | ZA |
-| Primary Legislation | Value-Added Tax Act 89 of 1991 (VAT Act) |
-| Supporting Legislation | Tax Administration Act 28 of 2011 (TAA); SARS interpretation notes and binding general rulings |
-| Tax Authority | South African Revenue Service (SARS) |
-| Filing Portal | SARS eFiling (efiling.sars.gov.za) |
+|---|---|
+| Country | South Africa |
+| Tax | Value-Added Tax (VAT) at 15% |
+| Currency | ZAR only |
+| Primary legislation | Value-Added Tax Act 89 of 1991 (VAT Act) |
+| Supporting legislation | Tax Administration Act 28 of 2011 (TAA); SARS interpretation notes |
+| Tax authority | South African Revenue Service (SARS) |
+| Filing portal | SARS eFiling (efiling.sars.gov.za) |
+| Default filing frequency | Bimonthly (Category A) |
+| Filing deadline | Last business day of month following period end (eFiling) |
 | Contributor | Open Accountants Community |
-| Validated By | Pending -- requires sign-off by a South African registered tax practitioner |
-| Validation Date | Pending |
-| Skill Version | 1.0 |
-| Tax Year | 2025 |
-| Confidence Coverage | Tier 1: rate application, registration threshold, VAT201 computation, filing deadlines. Tier 2: mixed supplies, deemed supplies, second-hand goods input tax. Tier 3: cross-border services, customs VAT, VAT grouping, large-value complex transactions. |
+| Validated by | Pending -- requires sign-off by a South African registered tax practitioner |
+| Skill version | 2.0 |
 
----
-
-## Confidence Tier Definitions
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified professional must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
-
----
-
-## Step 0: Client Onboarding Questions
-
-Before preparing any VAT return, you MUST know:
-
-1. **VAT registration status** [T1] -- registered vendor; VAT number
-2. **Filing category** [T1] -- Category A (bimonthly), B (monthly), C (six-monthly), D (annual), E (bimonthly aligned to tax year)
-3. **Accounting basis** [T1] -- invoice basis or payments basis
-4. **Nature of supplies** [T1] -- standard-rated (15%), zero-rated (0%), or exempt
-5. **Input tax on purchases** [T1] -- with valid tax invoices
-6. **Whether making imported services** [T2] -- reverse charge may apply
-
-**If the client's taxable supplies have not exceeded R1,000,000 in any 12-month period and they are not voluntarily registered, STOP. No VAT obligations.**
-
----
-
-## Step 1: Registration [T1]
-
-**Legislation:** VAT Act, s 23
-
-| Rule | Detail |
-|------|--------|
-| Compulsory registration | Taxable supplies exceed or expected to exceed **R1,000,000** in any 12-month period |
-| Voluntary registration | Taxable supplies exceed R50,000 in any 12-month period (lower threshold for voluntary) |
-| Effective date | From the first day of the month following when registration is required |
-| VAT number | Issued by SARS upon approval |
-
----
-
-## Step 2: Rates and Supply Classification [T1]
-
-**Legislation:** VAT Act, s 7 (standard rate), s 11 (zero-rated), s 12 (exempt)
-
-### VAT Rate [T1]
+### Rate Table
 
 | Rate | Application |
-|------|------------|
-| **15%** | Standard rate on all taxable supplies (effective 1 April 2018) |
-| **0%** | Zero-rated supplies (Schedule of zero-rated supplies) |
-| **Exempt** | Exempt supplies (s 12 list) |
+|---|---|
+| 15% | Standard rate (effective 1 April 2018) |
+| 0% | Exports, basic foodstuffs, petrol/diesel, international transport, agricultural inputs |
+| Exempt | Financial services, residential rental, public transport, educational services, childcare |
 
-### Zero-Rated Supplies (0%) [T1]
+### Tax Fraction
 
-| Category | Examples |
-|----------|---------|
-| Exports | Goods exported from SA; services to non-residents consumed outside SA |
-| Basic foodstuffs | Brown bread, maize meal, samp, mealie rice, dried beans, lentils, pilchards, milk powder, rice, vegetables, fruit, eggs, vegetable oil, milk |
-| Petrol/diesel | Fuel levy applies instead |
-| International transport | Air and sea transport |
-| Agricultural inputs | Certain farming inputs |
-| Municipal property rates | Rates charged by municipalities |
+For VAT-inclusive amounts at 15%: **15/115**.
 
-### Exempt Supplies [T1]
+### Key Thresholds
 
-| Category | Examples |
-|----------|---------|
-| Financial services | Interest, life insurance, unit trust management |
-| Residential rental | Rental of residential dwelling |
-| Public transport | Minibus taxi, municipal bus |
-| Educational services | By registered educational institutions |
-| Childcare | Creches and after-school care |
+| Item | Amount (ZAR) |
+|---|---|
+| Compulsory registration | R1,000,000 taxable supplies in any 12-month period |
+| Voluntary registration | R50,000 taxable supplies in any 12-month period |
+| Payments basis eligibility | Taxable supplies < R2,500,000 |
+| Full tax invoice threshold | R5,000 |
+| No invoice required | Supplies under R50 |
 
----
+### Conservative Defaults
 
-## Step 3: Tax Invoice Requirements [T1]
-
-**Legislation:** VAT Act, s 20
-
-### Full Tax Invoice (supplies > R5,000) [T1]
-
-| Element | Required |
-|---------|---------|
-| Words "Tax Invoice" | Yes |
-| Supplier name, address, VAT number | Yes |
-| Recipient name, address, VAT number | Yes |
-| Serial number and date | Yes |
-| Description of goods/services | Yes |
-| Quantity/volume | Yes |
-| Value excluding VAT | Yes |
-| VAT rate and VAT amount | Yes |
-| Total including VAT | Yes |
-
-### Abridged Tax Invoice (supplies R50 -- R5,000) [T1]
-
-Reduced information required -- supplier details, date, description, and total including VAT (with VAT rate shown).
-
-### No invoice required for supplies under R50.
+| Ambiguity | Default |
+|---|---|
+| Registration status unknown | STOP -- do not compute |
+| Accounting basis unknown | Invoice basis (default) |
+| Supply classification unknown | Standard-rated at 15% |
+| Private use proportion unknown | 0% recovery |
+| Second-hand goods claim | Not claimable until documentation confirmed |
 
 ---
 
-## Step 4: VAT201 Return Computation [T1]
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-**Legislation:** VAT Act, s 16, 28
+### Required Inputs
 
-| Field | Description | How to Populate |
-|-------|-------------|-----------------|
-| 1 | Standard-rated supplies | Total value of supplies at 15% (VAT exclusive) |
-| 1A | VAT on standard-rated supplies | Field 1 x 15% |
-| 2 | Zero-rated supplies | Total value of 0% supplies |
-| 3 | Exempt supplies | Total exempt supplies |
-| 4 | Total supplies | 1 + 2 + 3 |
-| 5 | Capital goods purchased (standard-rated) | VAT-exclusive value of capital goods |
-| 5A | VAT on capital goods | Field 5 x 15% |
-| 6 | Other goods/services purchased | VAT-exclusive value |
-| 6A | VAT on other purchases | Field 6 x 15% |
-| 7 | Total input tax | 5A + 6A + adjustments |
-| 8 | Output tax (1A) less input tax (7) | 1A - 7 |
-| 9 | VAT payable / (refundable) | Field 8 (positive = payable; negative = refund) |
+**Minimum viable:** Bank statement for the VAT period in CSV, PDF, or pasted text, plus confirmation of VAT registration status and vendor number.
+
+**Recommended:** Sales invoices, purchase invoices with VAT shown, prior period VAT201.
+
+**Ideal:** Complete invoice register, filing category confirmation, prior year VAT reconciliation.
+
+### Refusal Catalogue
+
+**R-ZA-1 -- Below threshold.** "If taxable supplies have not exceeded R1,000,000 in any 12-month period and client is not voluntarily registered, no VAT obligations. Stop."
+
+**R-ZA-2 -- Cross-border services (complex).** "Complex cross-border service transactions and customs VAT require specialist review. Escalate."
+
+**R-ZA-3 -- VAT grouping.** "VAT group registrations are outside this skill scope. Escalate."
+
+**R-ZA-4 -- Large-value complex transactions.** "Transactions involving property, construction, or financial instruments require specialist review. Escalate."
 
 ---
 
-## Step 5: Filing Frequency and Deadlines [T1]
+## Section 3 -- Transaction Pattern Library
 
-**Legislation:** VAT Act, s 27
+### 3.1 Income Patterns (Credits)
 
-### Filing Categories [T1]
+| Pattern | Tax Line | Treatment | Notes |
+|---|---|---|---|
+| EFT FROM [client] / EFT CREDIT | Taxable supply | Output VAT at 15% | Standard electronic transfer |
+| INSTANT MONEY / CASH DEPOSIT | Taxable supply | Revenue | Cash receipt |
+| PAYFAST PAYOUT / PAYFAST SETTLEMENT | Taxable supply | Revenue | PayFast payment gateway |
+| YOCO SETTLEMENT / YOCO PAYOUT | Taxable supply | Revenue | Yoco card machine settlement |
+| SNAPSCAN PAYOUT | Taxable supply | Revenue | SnapScan mobile payment |
+| ZAPPER SETTLEMENT | Taxable supply | Revenue | Zapper payment |
+| CAPITEC / FNB / ABSA / NEDBANK / STD BANK CREDIT | Taxable supply | Revenue | Bank transfer income |
+| INTEREST / INT EARNED | Exempt | NOT taxable | Bank interest -- financial service |
+| SARS REFUND | EXCLUDE | Not income | Tax refund |
+| LOAN DRAWDOWN | EXCLUDE | Not income | Loan proceeds |
+
+### 3.2 Expense Patterns (Debits)
+
+| Pattern | Expense Category | Treatment | Notes |
+|---|---|---|---|
+| OFFICE RENT / COMMERCIAL LEASE | Rent | Input VAT claimable | Business premises |
+| ESKOM / CITY POWER / CITY OF CAPE TOWN | Utilities | Input VAT claimable | Electricity |
+| TELKOM / VODACOM / MTN / CELL C / RAIN | Communications | Business portion claimable | Mixed use: apportion |
+| ENGEN / SHELL / CALTEX / SASOL | Fuel | Input VAT claimable | Business use only |
+| TAKEALOT / MAKRO / GAME | Office supplies | Input VAT claimable | Business purchases |
+| GOOGLE ADS / META / LINKEDIN | Advertising | Input VAT claimable | Digital advertising |
+| UBER SA / BOLT SA / TAXI | Travel | Input VAT if business | Keep receipts |
+| SARS INCOME TAX / SARS PAYE | EXCLUDE | Tax payment | Not deductible |
+| SARS VAT PAYMENT | EXCLUDE | VAT payment | Not input tax |
+| BANK CHARGES / FNB FEE / ABSA FEE | Exempt | No input VAT | Financial service exempt |
+| OWN TRANSFER / PERSONAL | EXCLUDE | Drawings | Not business |
+
+### 3.3 Zero-Rated Supply Indicators
+
+| Pattern | Treatment | Notes |
+|---|---|---|
+| EXPORT / INTERNATIONAL SHIPMENT | Zero-rated output | Goods exported from SA |
+| BROWN BREAD / MAIZE MEAL / RICE / EGGS / MILK | Zero-rated | Basic foodstuffs |
+| FUEL LEVY / PETROL / DIESEL | Zero-rated | Fuel levy applies instead |
+
+---
+
+## Section 4 -- Worked Examples
+
+### Example 1 -- Standard Bimonthly Return
+
+**Input:** Standard-rated supplies R500,000. Purchases R200,000 (all standard-rated, valid invoices).
+
+**Reasoning:**
+Output VAT: R500,000 x 15% = R75,000. Input VAT: R200,000 x 15% = R30,000. VAT payable: R75,000 - R30,000 = R45,000.
+
+**Classification:** VAT payable R45,000.
+
+### Example 2 -- Exporter in Refund Position
+
+**Input:** Zero-rated exports R800,000. Purchases R300,000 (standard-rated).
+
+**Reasoning:**
+Output VAT: R0. Input VAT: R300,000 x 15% = R45,000. Refund: R45,000.
+
+**Classification:** VAT refund R45,000.
+
+### Example 3 -- Second-Hand Goods Purchase
+
+**Input:** Vendor buys used equipment from non-vendor for R50,000 (no VAT charged).
+
+**Reasoning:**
+Notional input tax: R50,000 x 15/115 = R6,521.74. Claimable if documentation requirements are met (declaration from seller, proof of payment).
+
+**Classification:** Input tax R6,521.74. Flag for reviewer on documentation.
+
+### Example 4 -- Bad Debt Relief
+
+**Input:** Invoice for R23,000 (incl. VAT) written off after 14 months.
+
+**Reasoning:**
+Bad debt relief under s 22(1): debt outstanding over 12 months and written off. Relief: R23,000 x 15/115 = R3,000.
+
+**Classification:** Input tax deduction R3,000.
+
+---
+
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
+
+### 5.1 VAT201 Return Fields
+
+| Field | Description |
+|---|---|
+| 1 / 1A | Standard-rated supplies / VAT thereon |
+| 2 | Zero-rated supplies |
+| 3 | Exempt supplies |
+| 4 | Total supplies (1 + 2 + 3) |
+| 5 / 5A | Capital goods purchased / VAT thereon |
+| 6 / 6A | Other purchases / VAT thereon |
+| 7 | Total input tax (5A + 6A + adjustments) |
+| 8 | Output less input (1A - 7) |
+| 9 | VAT payable / refundable |
+
+### 5.2 Filing Categories
 
 | Category | Frequency | Who |
-|----------|-----------|-----|
-| A | Every 2 months (bimonthly) | Default for most vendors |
-| B | Monthly | Taxable supplies > R30M per year |
-| C | Every 6 months | Farming enterprises (by approval) |
-| D | Every 12 months | Small vendors (by approval) |
-| E | Every 2 months (aligned to tax year end) | Certain vendors by arrangement |
+|---|---|---|
+| A | Bimonthly | Default for most vendors |
+| B | Monthly | Taxable supplies > R30M/year |
+| C | Six-monthly | Farming enterprises (by approval) |
+| D | Annual | Small vendors (by approval) |
 
-### Bimonthly Periods (Category A) [T1]
-
-| Period | Months | Return Due |
-|--------|--------|-----------|
-| 1 | March -- April | Last business day of May |
-| 2 | May -- June | Last business day of July |
-| 3 | July -- August | Last business day of September |
-| 4 | September -- October | Last business day of November |
-| 5 | November -- December | Last business day of January |
-| 6 | January -- February | Last business day of March |
-
-### Filing Deadline [T1]
+### 5.3 Filing Deadlines
 
 | Method | Deadline |
-|--------|----------|
-| eFiling | Last business day of the month following the period end |
-| Manual (branch) | 25th of the month following period end |
+|---|---|
+| eFiling | Last business day of month following period end |
+| Manual (branch) | 25th of month following period end |
 
----
+### 5.4 Payments Basis (s 15)
 
-## Step 6: Payments Basis [T1]
+Eligibility: taxable supplies < R2,500,000. Account for VAT when payment is made or received. Must apply to SARS.
 
-**Legislation:** VAT Act, s 15
-
-| Rule | Detail |
-|------|--------|
-| Eligibility | Taxable supplies < R2,500,000 in any 12-month period |
-| How it works | Account for VAT when payment is made or received (not when invoice is issued) |
-| Advantage | Cash flow benefit -- no VAT owed until cash is received |
-| Application | Must apply to SARS to use payments basis |
-
----
-
-## Step 7: Input Tax on Second-Hand Goods [T2]
-
-**Legislation:** VAT Act, s 1 (definition), s 16(3)(a)(ii)
-
-| Rule | Detail |
-|------|--------|
-| What | A registered vendor can claim notional input tax on second-hand goods purchased from a non-vendor |
-| Calculation | Tax fraction (15/115) x consideration paid |
-| Documentation | Requires a declaration from the seller and proof of payment |
-| Limit | Cannot exceed the lesser of: consideration paid or open market value |
-
-[T2] Flag for reviewer -- notional input tax claims require careful documentation.
-
----
-
-## Step 8: Penalties and Interest [T1]
-
-**Legislation:** TAA, Chapter 15
+### 5.5 Penalties (TAA Chapter 15)
 
 | Offence | Penalty |
-|---------|---------|
-| Late filing | Fixed amount penalty (based on assessed loss or taxable income, escalating scale) |
-| Late payment | 10% of the amount outstanding |
-| Interest on underpayment | Prescribed rate (approximately prime rate) compounding monthly |
-| Understatement | 10-200% depending on behavior (substantial understatement, gross negligence, fraud) |
-| Non-registration | Penalties under TAA |
+|---|---|
+| Late filing | Fixed amount penalty (escalating scale) |
+| Late payment | 10% of amount outstanding |
+| Interest | Prescribed rate compounding monthly |
+| Understatement | 10-200% depending on behaviour |
 
 ---
 
-## Step 9: Edge Case Registry
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### EC1 -- Imported services (reverse charge) [T2]
-**Situation:** SA-based freelancer purchases cloud software from US provider.
-**Resolution:** If the foreign supplier is not VAT-registered in SA and the service is consumed in SA, the recipient must account for VAT under s 7(1)(c) (imported services). Output tax = 15% of the consideration. May claim corresponding input tax if the service is for making taxable supplies (net effect zero). [T2] Flag for reviewer.
+### 6.1 Mixed Supplies Apportionment
 
-### EC2 -- Mixed supplies (taxable and exempt) [T2]
-**Situation:** Business provides both taxable consulting and exempt financial services.
-**Resolution:** Input tax must be apportioned. Directly attributable input follows its supply. Residual input is apportioned using a fair and reasonable method (typically revenue-based ratio). [T2] Flag for reviewer on apportionment method.
+Input tax must be apportioned when making both taxable and exempt supplies. Directly attributable input follows its supply. Residual input apportioned using revenue-based ratio. Flag for reviewer.
 
-### EC3 -- Bad debts [T1]
-**Situation:** Vendor issued invoice, accounted for output VAT on invoice basis, but debtor has not paid for over 12 months.
-**Resolution:** May claim input tax deduction (bad debt relief) under s 22(1) if the debt is written off and has been outstanding for at least 12 months. Calculated as tax fraction (15/115) of the debt written off.
+### 6.2 Imported Services (Reverse Charge, s 7(1)(c))
 
-### EC4 -- Change from payments to invoice basis [T2]
-**Situation:** Business grows and exceeds R2,500,000 turnover threshold.
-**Resolution:** Must switch to invoice basis. Transitional adjustments required for invoices issued but not yet paid, and payments received in advance. [T2] Significant complexity -- flag for tax practitioner.
+If foreign supplier is not VAT-registered in SA and service is consumed in SA, recipient must account for VAT. May claim corresponding input tax if for taxable supplies.
 
-### EC5 -- Voluntary registration below R1M [T1]
-**Situation:** Freelancer with R200,000 turnover wants to register voluntarily.
-**Resolution:** Permitted if taxable supplies exceed R50,000. Can register and claim input tax on business purchases. Must charge 15% to all customers and file returns on schedule.
+### 6.3 Second-Hand Goods Input Tax (s 16(3)(a)(ii))
 
-### EC6 -- Zero-rated vs exempt confusion [T1]
-**Situation:** Client thinks exempt supplies allow input tax claims.
-**Resolution:** INCORRECT. Zero-rated = taxable at 0% (input tax claimable). Exempt = NOT taxable (NO input tax claimable). Critical distinction.
+Notional input tax: tax fraction (15/115) of consideration paid. Requires declaration from seller and proof of payment. Cannot exceed lesser of consideration paid or open market value. Flag for reviewer.
+
+### 6.4 Change from Payments to Invoice Basis
+
+When turnover exceeds R2,500,000. Transitional adjustments required. Flag for tax practitioner.
 
 ---
 
-## Step 10: Test Suite
+## Section 7 -- Working Paper Template
 
-### Test 1 -- Standard bimonthly return
-**Input:** Standard-rated supplies R500,000. Purchases R200,000 (all standard-rated, valid invoices).
-**Expected output:**
-- Output VAT: R500,000 x 15% = R75,000
-- Input VAT: R200,000 x 15% = R30,000
-- VAT payable: R75,000 - R30,000 = R45,000
+```
+SOUTH AFRICA VAT WORKING PAPER (VAT201)
+Vendor: _______________  VAT Number: ___________
+Period: ___________  Category: A / B / C / D
+Basis: Invoice / Payments
 
-### Test 2 -- Refund position (exporter)
-**Input:** Zero-rated exports R800,000. Purchases R300,000 (standard-rated).
-**Expected output:**
-- Output VAT: R0
-- Input VAT: R300,000 x 15% = R45,000
-- Refund: R45,000
+A. OUTPUT (SALES)
+  A1. Standard-rated supplies (excl. VAT)        ___________
+  A2. Output VAT (A1 x 15%)                     ___________
+  A3. Zero-rated supplies                        ___________
+  A4. Exempt supplies                            ___________
 
-### Test 3 -- Mixed supplies (apportionment)
-**Input:** Taxable supplies R600,000, exempt supplies R400,000. Total input VAT R90,000 (none directly attributable).
-**Expected output:**
-- Taxable ratio: 600,000 / 1,000,000 = 60%
-- Claimable input: R90,000 x 60% = R54,000
-- Output VAT: R600,000 x 15% = R90,000
-- VAT payable: R90,000 - R54,000 = R36,000
+B. INPUT (PURCHASES)
+  B1. Capital goods VAT                          ___________
+  B2. Other purchases VAT                        ___________
+  B3. Adjustments                                ___________
+  B4. Total input VAT                            ___________
 
-### Test 4 -- Second-hand goods purchase
-**Input:** Vendor buys used equipment from non-vendor for R50,000 (no VAT charged).
-**Expected output:**
-- Notional input tax: R50,000 x 15/115 = R6,521.74
-- Claimable as input tax on VAT201
+C. NET VAT
+  C1. Output less input (A2 - B4)                ___________
+  C2. VAT payable / refundable                   ___________
 
-### Test 5 -- Bad debt relief
-**Input:** Invoice for R23,000 (incl. VAT) written off after 14 months.
-**Expected output:**
-- Bad debt relief: R23,000 x 15/115 = R3,000
-- Claimed as input tax deduction on current period return
+REVIEWER FLAGS:
+  [ ] Registration and vendor number confirmed?
+  [ ] Filing category confirmed?
+  [ ] Accounting basis confirmed?
+  [ ] Tax invoices held for all input claims?
+  [ ] Second-hand goods documentation complete?
+  [ ] Zero-rated vs exempt correctly distinguished?
+```
+
+---
+
+## Section 8 -- Bank Statement Reading Guide
+
+### South African Bank Statement Formats
+
+| Bank | Format | Key Fields |
+|---|---|---|
+| FNB | CSV / PDF | Date, Description, Amount, Balance |
+| ABSA | CSV | Date, Description, Debit, Credit, Balance |
+| Standard Bank | CSV | Date, Description, Debit, Credit, Balance |
+| Nedbank | CSV | Date, Description, Debit, Credit, Balance |
+| Capitec | CSV | Date, Description, Debit, Credit, Balance |
+| Investec | CSV | Date, Description, Debit, Credit, Balance |
+
+### Key SA Banking Narrations
+
+| Narration | Meaning | Classification Hint |
+|---|---|---|
+| EFT CREDIT / INWARD PAYMENT | Bank transfer in | Potential income |
+| DEBIT ORDER / DEBI CHECK | Direct debit | Regular expense |
+| POS / CARD PURCHASE | Point of sale | Expense |
+| CASH DEPOSIT | Cash received | Income |
+| SARS / RECEIVER OF REVENUE | Tax payment or refund | Exclude |
+| BANK CHARGES / SERVICE FEE | Bank fee | Exempt -- no VAT |
+
+---
+
+## Section 9 -- Onboarding Fallback
+
+If the client provides a bank statement but cannot answer onboarding questions immediately:
+
+1. Classify all EFT credits from business sources as potential taxable supplies
+2. Apply conservative defaults: invoice basis, standard-rated, 0% private recovery
+3. Only claim input VAT where VAT is clearly evident
+4. Flag all large purchases for capital goods review
+
+Present these questions:
+
+```
+ONBOARDING QUESTIONS -- SOUTH AFRICA VAT
+1. Are you registered as a VAT vendor? What is your VAT number?
+2. What filing category are you (A bimonthly, B monthly, C six-monthly, D annual)?
+3. Are you on invoice basis or payments basis?
+4. What types of goods or services do you sell?
+5. Do you make any zero-rated supplies (exports, basic foodstuffs)?
+6. Do you make any exempt supplies (financial, residential rent, education)?
+7. Do you purchase second-hand goods from non-vendors?
+8. Do you import services from non-resident suppliers?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+### Key Legislation
+
+| Topic | Section |
+|---|---|
+| Imposition of VAT | VAT Act s 7 |
+| Zero-rated supplies | VAT Act s 11 |
+| Exempt supplies | VAT Act s 12 |
+| Registration | VAT Act s 23 |
+| Payments basis | VAT Act s 15 |
+| Input tax | VAT Act s 16 |
+| Tax invoices | VAT Act s 20 |
+| Bad debts | VAT Act s 22 |
+| Filing | VAT Act s 27, 28 |
+
+### Known Gaps / Out of Scope
+
+- Cross-border services (complex)
+- Customs VAT on imports
+- VAT grouping
+- Large-value property transactions
+
+### Changelog
+
+| Version | Date | Change |
+|---|---|---|
+| 2.0 | April 2026 | Full rewrite to v2.0 structure; SA bank formats; local payment patterns (PayFast, Yoco, SnapScan); worked examples |
+| 1.0 | 2025 | Initial version |
+
+### Self-Check
+
+- [ ] Registration and vendor number confirmed?
+- [ ] Filing category and accounting basis confirmed?
+- [ ] Tax fraction 15/115 used consistently?
+- [ ] Zero-rated vs exempt correctly distinguished?
+- [ ] Second-hand goods claims properly documented?
+- [ ] Bad debt relief only after 12 months?
 
 ---
 

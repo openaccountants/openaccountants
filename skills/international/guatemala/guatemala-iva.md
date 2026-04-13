@@ -1,519 +1,251 @@
 ---
 name: guatemala-iva
-description: Use this skill whenever asked to prepare, review, or create a Guatemala IVA (Impuesto al Valor Agregado) return for any client. Trigger on phrases like "prepare IVA return", "do the IVA", "Guatemala VAT", or any request involving Guatemala value added tax filing. Also trigger when classifying transactions for IVA purposes. This skill contains the complete Guatemala IVA classification rules, return form mappings, deductibility rules, and filing deadlines. ALWAYS read this skill before touching any Guatemala IVA-related work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Guatemala IVA return (SAT-2237) for any client. Trigger on phrases like "prepare IVA return", "Guatemala VAT", "SAT return", "IVA Guatemala", or any request involving Guatemala value added tax filing. This skill covers Regimen General IVA filers only. Small taxpayer (Pequeno Contribuyente) regime and ZOLIC free-zone entities are in the refusal catalogue. ALWAYS read this skill before touching any Guatemala IVA work.
+version: 2.0
 ---
 
-# Guatemala IVA Return Preparation Skill
+# Guatemala IVA Return Skill (SAT-2237) v2.0
 
----
-
-## Skill Metadata
+## Section 1 — Quick reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | Guatemala |
-| Jurisdiction Code | GT |
-| Primary Legislation | Decreto 27-92, Ley del Impuesto al Valor Agregado (as amended) |
-| Supporting Legislation | Acuerdo Gubernativo 5-2013 (Reglamento IVA); Decreto 10-2012 (Ley de Actualizacion Tributaria) |
-| Tax Authority | Superintendencia de Administracion Tributaria (SAT) |
-| Filing Portal | https://portal.sat.gob.gt (Agencia Virtual SAT) |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return form assignment, input tax recovery, derived calculations. Tier 2: partial exemption, small taxpayer regime, free-zone treatments. Tier 3: complex structures, rulings, transfer pricing. |
+|---|---|
+| Country | Guatemala |
+| Standard rate | 12% |
+| Small taxpayer rate | 5% flat (replaces IVA and income tax — separate regime) |
+| Exempt supplies | Unprocessed agricultural products (first sale), generic medicines, agricultural inputs (artisanal), books, medical services, education, financial interest, insurance, residential rental, public transport, electricity/water (domestic) |
+| Return form | SAT-2237 |
+| Filing portal | https://portal.sat.gob.gt (Agencia Virtual) |
+| Authority | SAT (Superintendencia de Administracion Tributaria) |
+| Currency | GTQ (Guatemalan Quetzal) |
+| Filing frequency | Monthly |
+| Deadline | Last business day of month following period |
+| Contributor | Open Accountants Skills Registry |
+| Validated by | Pending |
+| Validation date | Pending |
 
----
+**Key SAT-2237 lines:**
 
-## Confidence Tier Definitions
+| Line | Meaning |
+|---|---|
+| 1 | Taxable sales and services (ventas y servicios gravados) |
+| 2 | Output IVA (debito fiscal) = Line 1 x 12% |
+| 3 | Exports at 0% |
+| 4 | Exempt sales |
+| 5 | Total sales (1+3+4) |
+| 6 | Reverse charge on imports (auto-declared IVA) |
+| 7 | Total output IVA (2+6) |
+| 8 | Input IVA on local purchases |
+| 9 | Input IVA on imports (customs) |
+| 10 | Input IVA on expenses/services |
+| 11 | Total input IVA (8+9+10) |
+| 12 | Adjustments (blocked/apportioned) |
+| 13 | Net input IVA (11-12) |
+| 14 | IVA payable (7-13) |
+| 15 | Prior credit balance |
+| 16 | IVA retentions |
+| 17 | Total payable / carry-forward |
 
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag and present options.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess.
+**Conservative defaults:**
 
----
+| Ambiguity | Default |
+|---|---|
+| Unknown rate on a sale | 12% |
+| Unknown IVA status of a purchase | Not deductible |
+| Unknown counterparty country | Domestic Guatemala |
+| Unknown business-use proportion | 0% recovery |
+| Unknown blocked-input status | Blocked |
+| Unknown document type | No credit until valid FEL confirmed |
 
-## Step 0: Client Onboarding Questions
-
-1. **Entity name and NIT (Numero de Identificacion Tributaria)** [T1]
-2. **Tax regime** [T1] -- Regimen General (general regime with IVA) or Regimen de Pequeno Contribuyente (small taxpayer, 5% flat)
-3. **Filing period** [T1] -- monthly (standard)
-4. **Industry/sector** [T2] -- agriculture, manufacturing, services, free zone
-5. **Does the business make exempt supplies?** [T2]
-6. **Does the business import goods?** [T1]
-7. **Is the business in a free trade zone (ZOLIC)?** [T2]
-8. **Credit balance brought forward** [T1]
-
-**If items 1-3 are unknown, STOP.**
-
----
-
-## Step 1: IVA Rate Structure [T1]
-
-**Legislation:** Decreto 27-92, Articles 3, 10.
-
-### Standard Rate
-
-| Rate | Application |
-|------|-------------|
-| 12% | Standard rate on all taxable sales of goods and services [T1] |
-
-### Small Taxpayer Regime (Pequeno Contribuyente) [T1]
-
-| Rate | Application |
-|------|-------------|
-| 5% | Flat tax on gross income for small taxpayers (replaces IVA and income tax) [T1] |
-
-**Legislation:** Decreto 27-92, Article 45; Decreto 10-2012, Article 48.
-
-Small taxpayers (annual income up to GTQ 150,000):
-- Pay 5% on gross income as a simplified tax
-- Do NOT charge IVA separately on invoices
-- Do NOT claim input IVA credits
-- Issue simplified invoices (facturas de pequeno contribuyente)
-
-### Exempt Supplies [T1]
-
-**Legislation:** Decreto 27-92, Article 7.
-
-**Exempt goods:**
-- Unprocessed agricultural products sold by producers (first sale)
-- Medicines (generic, specified list)
-- Agricultural inputs (fertilizers, insecticides, seeds, tools -- artisanal level)
-- Books and educational materials
-- Live animals (for production, not pets)
-
-**Exempt services:**
-- Educational services (approved institutions)
-- Health/medical services (public and private clinics, hospitals)
-- Financial services (interest, insurance premiums)
-- Residential rental (up to certain threshold) [T2]
-- Public transportation
-- Electricity and water (domestic, first tier)
-
-### Exports (0% -- Full Input Credit) [T1]
-- Export of goods: zero-rated with full input credit recovery
-- Export of services: services benefiting non-residents may qualify [T2]
-
----
-
-## Step 2: Transaction Classification Rules
-
-### 2a. Determine Transaction Type [T1]
-- Sale (IVA debito fiscal -- output) or Purchase (IVA credito fiscal -- input)
-- Salaries, IGSS (social security), ISR (income tax), loan repayments = OUT OF SCOPE
-
-### 2b. Determine Counterparty Location [T1]
-- Domestic (Guatemala)
-- Central American (CAFTA-DR: El Salvador, Honduras, Nicaragua, Costa Rica, Dominican Republic)
-- International
-
-### 2c. Determine IVA Rate [T1]
-- 0% (export), 12% (standard), or exempt
-
-### 2d. Determine Expense Category [T1]
-- Capital goods (activos fijos)
-- Inventory (inventario para reventa)
-- Operating expenses (gastos)
-
----
-
-## Step 3: IVA Return Form Structure (SAT-2237) [T1]
-
-**Filed monthly via Agencia Virtual.**
-
-### Debito Fiscal (Output Tax)
-
-| Line | Description |
-|------|-------------|
-| 1 | Ventas y servicios gravados (Taxable sales and services) |
-| 2 | IVA debito fiscal (Line 1 x 12%) |
-| 3 | Exportaciones (Exports at 0%) |
-| 4 | Ventas exentas (Exempt sales) |
-| 5 | Total ventas (Line 1 + Line 3 + Line 4) |
-| 6 | IVA en importaciones auto-declarado (Reverse charge on imports) |
-| 7 | Total debito fiscal (Line 2 + Line 6) |
-
-### Credito Fiscal (Input Tax)
-
-| Line | Description |
-|------|-------------|
-| 8 | IVA en compras locales (IVA on local purchases) |
-| 9 | IVA en importaciones (IVA paid at customs) |
-| 10 | IVA en gastos y servicios (IVA on expenses) |
-| 11 | Total credito fiscal (Line 8 + Line 9 + Line 10) |
-| 12 | Ajustes (blocked/apportioned) |
-| 13 | Credito fiscal neto (Line 11 - Line 12) |
-
-### Liquidacion
-
-| Line | Description |
-|------|-------------|
-| 14 | IVA a pagar (Line 7 - Line 13) |
-| 15 | Credito fiscal del periodo anterior |
-| 16 | Retenciones de IVA |
-| 17 | Total a pagar / saldo a favor |
-
----
-
-## Step 4: IVA Retention Regime [T1]
-
-**Legislation:** Decreto 27-92, Article 48; Resoluciones SAT.
-
-Guatemala operates an extensive IVA retention system:
-
-### Designated Retention Agents (Agentes de Retencion)
-
-| Agent Type | Retention Rate |
-|------------|---------------|
-| Designated by SAT (large taxpayers, exporters, etc.) | Varies: 12%, 15%, 25%, 50%, 65% of IVA invoiced [T2] |
-| Exporters purchasing from small suppliers | 65% of IVA [T1] |
-| Credit/debit card processors | 15% of IVA [T1] |
-| Government entities | 25% of IVA [T1] |
-
-### Treatment on the Return [T1]
-- Supplier reports full output IVA
-- IVA retained is reported on Line 16 as credit
-- Retention certificates (constancias de retencion) must be obtained
-
-### Special: IVA Retention on Non-Resident Services [T1]
-- When paying non-residents for services, the payer retains and remits 12% IVA
-- Also subject to ISR (income tax) withholding
-
----
-
-## Step 5: Deductibility Check
-
-### Blocked Input IVA (No Recovery) [T1]
-
-**Legislation:** Decreto 27-92, Articles 16, 18.
-
-- **Entertainment** -- meals, recreation (unless hospitality business) [T1]
-- **Motor vehicles** -- passenger vehicles (exception: rental, taxi, transport businesses) [T1]
-- **Personal use** [T1]
-- **Exempt operations** -- costs attributable to exempt supplies [T1]
-- **Purchases without valid factura (DTE)** -- MUST have valid Documento Tributario Electronico [T1]
-
-### DTE (Electronic Tax Document) Requirement [T1]
-
-**Legislation:** Decreto 27-92; SAT electronic invoicing regulations.
-
-- Guatemala has implemented mandatory electronic invoicing (FEL -- Factura Electronica en Linea)
-- ALL invoices must be issued through an authorized FEL certifier
-- Input IVA is ONLY deductible with valid FEL-certified documents
-- Paper invoices are no longer accepted for most taxpayers
-
-### Partial Exemption [T2]
-- Direct attribution first
-- Common costs: `Recovery % = (Taxable Sales / Total Sales) * 100`
-- Flag for reviewer
-
----
-
-## Step 6: Key Thresholds [T1]
+**Red flag thresholds:**
 
 | Threshold | Value |
-|-----------|-------|
-| Mandatory IVA registration | All persons making taxable sales (no minimum threshold for general regime) |
-| Small taxpayer threshold | Annual income up to GTQ 150,000 [T1] |
-| FEL electronic invoicing | Mandatory for all taxpayers (phased implementation complete) |
+|---|---|
+| HIGH single-transaction size | GTQ 50,000 |
+| HIGH tax-delta on a single conservative default | GTQ 5,000 |
+| MEDIUM counterparty concentration | >40% of output OR input |
+| MEDIUM conservative-default count | >4 |
+| LOW absolute net IVA position | GTQ 100,000 |
 
 ---
 
-## Step 7: Filing Deadlines and Penalties [T1]
+## Section 2 — Required inputs and refusal catalogue
 
-**Legislation:** Codigo Tributario, Articles 89, 91, 94.
+### Required inputs
 
-### Filing Deadlines
+**Minimum viable** — bank statement for the month. Acceptable from: Banco Industrial, Banrural, BAM, G&T Continental, Banco de los Trabajadores, or any other.
 
-| Period | Deadline |
-|--------|----------|
-| Monthly IVA return | Last business day of the month following the period [T1] |
-| Small taxpayer return | Last business day of the month following the period [T1] |
+**Recommended** — FEL (Factura Electronica en Linea) documents, constancias de retencion.
 
-### Penalties
+**Ideal** — complete Libro de Compras y Ventas, prior SAT-2237, FEL register.
 
-| Violation | Penalty |
-|-----------|---------|
-| Late filing | GTQ 100 per return (minimum) + interest [T1] |
-| Late payment | Interest at rate determined by SAT (currently ~18% annual) [T1] |
-| Failure to register | Fines + back-assessment [T1] |
-| Failure to issue FEL | Closure of business (temporary) + fines [T1] |
-| Fraud | Criminal penalties; fines + imprisonment up to 6 years [T1] |
+### Refusal catalogue
+
+**R-GT-1 — Pequeno Contribuyente.** *Trigger:* client is under small taxpayer regime (income up to GTQ 150,000). *Message:* "Small taxpayers pay 5% flat tax and do NOT file IVA returns or claim input credits."
+
+**R-GT-2 — ZOLIC free zone.** *Trigger:* client in ZOLIC. *Message:* "Free zone benefits require valid authorization. Escalate."
+
+**R-GT-3 — Partial exemption.** *Trigger:* mixed taxable/exempt. *Message:* "Proportional method required. Flag for reviewer."
 
 ---
 
-## Step 8: Classification Matrix [T1]
+## Section 3 — Supplier pattern library
 
-### Domestic Purchases
+### 3.1 Banks
+| Pattern | Treatment | Notes |
+|---|---|---|
+| BANCO INDUSTRIAL, BI | 12% for fees; EXCLUDE for interest | |
+| BANRURAL, BAM, G&T | Same | |
 
-| Category | IVA Rate | Input Credit | Notes |
-|----------|---------|--------------|-------|
-| Office supplies | 12% | Yes (with FEL) | |
-| Commercial rent | 12% | Yes | |
-| Residential rent | Exempt | No | |
-| Electricity (commercial) | 12% | Yes | |
-| Telephone/internet | 12% | Yes | |
-| Motor car | 12% | BLOCKED | |
-| Entertainment | 12% | BLOCKED | |
-| Professional services | 12% | Yes | |
-| Insurance (general) | 12% | Yes | |
-| Insurance (life) | Exempt | No | |
-| Basic food (first sale) | Exempt | No | |
-| Medicines (generic) | Exempt | No | |
+### 3.2 Government (exclude)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SAT, SUPERINTENDENCIA | EXCLUDE | Tax payment |
+| IGSS | EXCLUDE | Social security |
 
-### Sales
+### 3.3 Utilities
+| Pattern | Treatment | Notes |
+|---|---|---|
+| EEGSA, ENERGUATE | Domestic 12% | Electricity |
+| TIGO, CLARO, MOVISTAR | Domestic 12% | Telecoms |
+| EMPAGUA | Exempt (domestic water) | |
 
-| Category | IVA | Return Line |
-|----------|-----|-------------|
-| Domestic sale (standard) | 12% | Line 1, Line 2 |
-| Export | 0% | Line 3 |
-| Exempt supply | Exempt | Line 4 |
+### 3.4 SaaS non-resident (reverse charge)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| GOOGLE, MICROSOFT, ADOBE, META | Reverse charge 12% | Line 6 output, Line 10 input |
+| ZOOM, SLACK, NOTION, ANTHROPIC, OPENAI | Reverse charge 12% | Same |
 
----
+### 3.5 Food and entertainment (blocked)
+| Pattern | Treatment | Notes |
+|---|---|---|
+| PAIZ, WALMART, LA TORRE | Default BLOCK | Personal provisioning |
+| RESTAURANT, RESTAURANTE | Default BLOCK | Entertainment |
 
-## Step 9: Free Trade Zone (ZOLIC) Rules [T2]
+### 3.6 Professional services
+| Pattern | Treatment | Notes |
+|---|---|---|
+| ABOGADO, NOTARIO, CONTADOR | Domestic 12% | Requires valid FEL |
 
-**Legislation:** Decreto 65-89 (Ley de Zonas Francas).
-
-- Companies in free trade zones (ZOLIC) may be exempt from IVA on imports for export processing
-- Sales to domestic market from ZOLIC: subject to IVA as imports
-- Inter-zone transfers: may be exempt
-- Flag for reviewer: ZOLIC benefits require valid authorization
-
----
-
-## Step 9a: FEL Electronic Invoicing System [T1]
-
-**Legislation:** SAT electronic invoicing regulations; Acuerdo de Directorio SAT.
-
-Guatemala has fully implemented mandatory electronic invoicing (FEL -- Factura Electronica en Linea):
-
-### Types of Electronic Documents (DTE)
-
-| Document | Code | Use | Supports IVA Credit |
-|----------|------|-----|-------------------|
-| Factura | FACT | Standard sales document | YES (with NIT) |
-| Factura Cambiaria | FCAM | Installment sales | YES |
-| Factura de Pequeno Contribuyente | FPEQ | Small taxpayer sales | NO (no IVA) |
-| Nota de Credito | NCRE | Returns, corrections | YES (reduces IVA) |
-| Nota de Debito | NDEB | Additional charges | YES |
-| Recibo | RECI | Donations, non-sales | NO |
-| Factura de Exportacion | FEXP | Export sales | N/A |
-| Factura Cambiaria de Exportacion | FCEX | Export installments | N/A |
-| Nota de Abono | NABN | Advance payments | NO |
-| Factura Especial | FESP | Purchases from unregistered suppliers | YES (buyer self-assesses) |
-
-### FEL Requirements [T1]
-
-1. All taxpayers must issue documents through a FEL certifier (certificador)
-2. Documents are authorized in real-time by SAT
-3. Each DTE receives a unique UUID authorization number
-4. Input IVA ONLY valid with SAT-authorized FEL documents
-5. Paper invoices are no longer accepted
-
-### Factura Especial [T1]
-
-**Legislation:** Decreto 27-92, Article 52.
-
-When purchasing from an unregistered person/supplier:
-- Buyer issues a Factura Especial
-- Buyer self-assesses and withholds IVA (12%) and ISR (5%) from the payment
-- IVA withheld is deductible as input IVA for the buyer
-- ISR withheld must be remitted to SAT
+### 3.7 Internal transfers
+| Pattern | Treatment | Notes |
+|---|---|---|
+| TRANSFERENCIA PROPIA | EXCLUDE | |
+| PLANILLA, SALARIO | EXCLUDE | |
 
 ---
 
-## Step 9b: Sector-Specific Rules [T2]
+## Section 4 — Worked examples
 
-### Agriculture
+### Example 1 — Non-resident reverse charge
+**Input:** `NOTION LABS INC ; DEBIT ; GTQ 245`
+**Treatment:** Reverse charge 12%. Output Line 6. Input Line 10. Net zero.
 
-- First sale of unprocessed agricultural products by the producer: exempt [T2]
-- Subsequent sales of processed agricultural products: taxable at 12% [T1]
-- Agricultural inputs (artisanal level): exempt [T1]
-- Industrial agricultural inputs: taxable at 12% [T1]
-- Coffee export: zero-rated [T1]
-- Sugar export: zero-rated [T1]
-- Flag for reviewer: "first sale" and "artisanal" definitions require interpretation
+### Example 2 — Standard domestic sale
+**Input:** `SA CLIENTE ; CREDIT ; GTQ 112,000`
+**Treatment:** Net = 100,000. IVA = 12,000. Line 1/2.
 
-### Manufacturing
+### Example 3 — Entertainment, blocked
+**Input:** `RESTAURANTE KACAO ; DEBIT ; GTQ 2,240`
+**Treatment:** Blocked. No input credit.
 
-- Manufacturing inputs: taxable at 12% (input credit available) [T1]
-- Finished goods sold domestically: taxable at 12% [T1]
-- Exports: zero-rated [T1]
-- Equipment and machinery for production: taxable at 12% (input credit available) [T1]
+### Example 4 — Coffee export
+**Input:** `US ROASTER INC ; CREDIT ; GTQ 200,000`
+**Treatment:** Line 3. Zero-rated. Full input credit.
 
-### Construction and Real Estate
+### Example 5 — Motor vehicle, blocked
+**Input:** `AUTOMOTRIZ GT ; DEBIT ; Sedan GTQ 150,000`
+**Treatment:** Blocked. No input credit.
 
-- Construction services: taxable at 12% [T1]
-- Construction materials: taxable at 12% [T1]
-- First sale of new real estate: taxable at 12% [T1]
-- Subsequent sales: taxable at 12% on improvements/added value [T2]
-- Land (bare, without construction): exempt [T2]
-- Flag for reviewer: real estate IVA is complex in Guatemala
-
-### Financial Services
-
-- Interest on loans: exempt [T1]
-- Banking commissions: taxable at 12% [T1]
-- Insurance premiums: exempt [T1]
-- Brokerage commissions: taxable at 12% [T1]
-
-### Telecommunications
-
-- All telecom services: taxable at 12% [T1]
-- Internet services: taxable at 12% [T1]
-- Prepaid cards: IVA included in face value [T1]
-
-### Tourism
-
-- Hotel accommodation: taxable at 12% [T1]
-- Restaurant services: taxable at 12% [T1]
-- Tour packages: taxable at 12% [T1]
-- INGUAT-registered tourism businesses may have specific incentives [T2]
+### Example 6 — Purchase without FEL
+**Input:** `VENDEDOR X ; handwritten receipt ; IVA GTQ 600`
+**Treatment:** NOT deductible. No valid FEL = no credit.
 
 ---
 
-## Step 9c: Libro de Compras y Ventas [T1]
+## Section 5 — Tier 1 classification rules (compressed)
 
-**Legislation:** Decreto 27-92, Article 37.
+### 5.1 Standard rate 12% (Decreto 27-92 Art. 10)
+Default for all taxable supplies.
 
-All IVA taxpayers must maintain:
+### 5.2 Small taxpayer 5% (Decreto 27-92 Art. 45)
+Flat tax. No IVA charged, no input credits. Buyers get no IVA credit from pequeno contribuyente.
 
-- **Libro de Compras y Servicios Recibidos**: all purchases with FEL details, NIT of supplier, date, base, IVA, total
-- **Libro de Ventas y Servicios Prestados**: all sales with FEL details, NIT of customer, date, base, IVA, total
-- Books may be physical (authorized by SAT) or electronic
-- Chronological order required
-- Available for SAT inspection
-- Retention: minimum 4 years from end of fiscal year
-- Summary totals reconcile to IVA return
+### 5.3 Exempt goods (Art. 7)
+Unprocessed agricultural (first sale), generic medicines, artisanal agricultural inputs, books, live animals (production).
 
----
+### 5.4 Exempt services
+Education, medical, financial interest, insurance, residential rental, public transport, domestic electricity/water.
 
-## Step 9d: IVA on Digital Services [T2]
+### 5.5 Exports
+Zero-rated. Line 3. Full input credit.
 
-Guatemala is moving toward taxing digital services provided by non-residents:
-- Streaming services, digital advertising, cloud computing from foreign providers
-- Current treatment: reverse charge by the buyer (self-assess 12% IVA)
-- Registration of non-resident digital service providers: under discussion
-- Flag for reviewer: digital taxation rules may evolve
+### 5.6 Reverse charge — non-resident services
+Self-assess 12%. Line 6 output, Line 10 input.
 
----
+### 5.7 FEL mandatory electronic invoicing
+All invoices must be FEL-certified. Input IVA only valid with FEL.
 
-## PROHIBITIONS [T1]
+### 5.8 Blocked input IVA (Art. 16, 18)
+Entertainment, motor vehicles, personal use, exempt operations, without valid FEL.
 
-- NEVER let AI guess IVA classification -- it is deterministic from facts
-- NEVER allow input credit on blocked categories
-- NEVER allow input credit without valid FEL document
-- NEVER apply reverse charge to out-of-scope categories
-- NEVER confuse general regime (12% IVA) with small taxpayer regime (5% flat)
-- NEVER allow small taxpayers to claim input IVA credits
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
+### 5.9 Factura Especial (Art. 52)
+Purchase from unregistered person: buyer issues Factura Especial, self-assesses IVA 12% and ISR 5%.
+
+### 5.10 IVA retention regime
+Designated agents retain varying percentages of IVA. Credit card processors: 15%. Government: 25%. Exporters: 65%.
 
 ---
 
-## Step 10: Edge Case Registry
+## Section 6 — Tier 2 catalogue (compressed)
 
-### EC1 -- Small taxpayer selling to general regime buyer [T1]
-**Situation:** Small taxpayer (5% regime) sells goods to a general regime company.
-**Resolution:** Small taxpayer issues factura de pequeno contribuyente. The buyer CANNOT claim input IVA credit because no IVA was charged. The 5% is a flat tax, not IVA.
+### 6.1 Agricultural first sale
+*Default:* flag. *Question:* "Confirm qualifying first sale."
 
-### EC2 -- Import of services from US company [T1]
-**Situation:** Guatemala company subscribes to US cloud software. No IVA on invoice.
-**Resolution:** Self-assess IVA at 12%. Report as output (Line 6). Claim input (Line 10) if for taxable operations. Net = zero.
+### 6.2 Real estate
+*Default:* flag. *Question:* "First sale new construction (12%) or subsequent/bare land (exempt)?"
 
-### EC3 -- Agricultural first sale exemption [T2]
-**Situation:** Farmer sells coffee beans directly to processor.
-**Resolution:** First sale of unprocessed agricultural products by the producer is exempt. However, subsequent sales (processor to roaster) are taxable at 12%. Flag for reviewer: confirm this is a qualifying first sale.
+### 6.3 Cross-border Central American services
+*Default:* flag. *Question:* "Consumed outside Guatemala? Export?"
 
-### EC4 -- Credit notes [T1]
-**Situation:** Client issues credit note (nota de credito FEL).
-**Resolution:** Reduce output IVA. Report net. Credit note must be issued through FEL system.
-
-### EC5 -- IVA retention by large taxpayer [T1]
-**Situation:** Large taxpayer client purchases goods and retains IVA from supplier.
-**Resolution:** Client reports input IVA in full. Retained portion is remitted to SAT via retention return. Supplier claims retention credit on their return (Line 16).
-
-### EC6 -- Real estate sale [T2]
-**Situation:** Company sells a commercial building.
-**Resolution:** First sale of newly constructed commercial real estate is subject to IVA at 12%. Subsequent sales of used properties may be exempt. Land is generally exempt. Flag for reviewer.
-
-### EC7 -- Cross-border services within Central America [T2]
-**Situation:** Guatemala company provides services to El Salvador company.
-**Resolution:** May qualify as export of services (zero-rated) if consumed outside Guatemala. Flag for reviewer: confirm place of consumption.
-
-### EC8 -- Vehicle purchase for transport business [T2]
-**Situation:** Transport company purchases a bus.
-**Resolution:** Vehicles for passenger or goods transport businesses may qualify for input IVA credit. Passenger vehicles for personal use are blocked. Flag for reviewer: confirm vehicle is exclusively for business transport.
+### 6.4 Transport vehicle
+*Default:* flag. *Question:* "Exclusively for goods/passenger transport business?"
 
 ---
 
-## Step 11: Test Suite
-
-### Test 1 -- Standard local purchase, 12%
-**Input:** Guatemala supplier, office supplies, gross GTQ 11,200, IVA GTQ 1,200, net GTQ 10,000. Valid FEL.
-**Expected output:** Line 8 = GTQ 1,200 input IVA. Full recovery.
-
-### Test 2 -- Export, zero-rated
-**Input:** Exporter ships coffee to US, net GTQ 200,000.
-**Expected output:** Line 3 = GTQ 200,000. No output IVA. Input IVA fully recoverable.
-
-### Test 3 -- Motor vehicle, blocked
-**Input:** Purchase sedan GTQ 150,000, IVA GTQ 18,000.
-**Expected output:** IVA GTQ 18,000 BLOCKED. No input credit.
-
-### Test 4 -- Small taxpayer sale
-**Input:** Small taxpayer sells goods GTQ 5,000. Pays 5% flat = GTQ 250.
-**Expected output:** No IVA return filed. 5% flat tax return. Buyer gets no input IVA credit.
-
-### Test 5 -- Imported services, reverse charge
-**Input:** US consulting firm, USD 2,000 (~ GTQ 15,400). No IVA.
-**Expected output:** Self-assess output IVA = GTQ 1,848 (12%). Input = GTQ 1,848. Net = zero.
-
-### Test 6 -- Exempt supply (medical services)
-**Input:** Medical clinic earns GTQ 50,000 from patient fees.
-**Expected output:** Line 4 = GTQ 50,000. No output IVA. Input IVA on clinic expenses NOT recoverable.
-
-### Test 7 -- Mixed operations apportionment
-**Input:** 60% taxable, 40% exempt. Common IVA = GTQ 5,000.
-**Expected output:** Flag T2. Input = GTQ 3,000 (60%). Blocked = GTQ 2,000 (40%).
-
-### Test 8 -- Purchase without FEL
-**Input:** Supplier provides handwritten receipt, no FEL. IVA GTQ 600.
-**Expected output:** IVA GTQ 600 NOT deductible. No valid FEL = no credit.
+## Section 7 — Excel working paper template
+Standard layout. Column H accepts SAT-2237 line numbers.
 
 ---
 
-## Contribution Notes
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
+## Section 8 — Bank statement reading guide
+**Format:** Banco Industrial CSV, DD/MM/YYYY, GTQ. **Language:** Spanish.
 
 ---
 
-## Appendix A: Reviewer Escalation Protocol
+## Section 9 — Onboarding fallback
 
-When a [T2] situation is identified, output:
+### 9.1 Tax regime
+*Inference:* if filing SAT-2237, Regimen General. *Fallback:* "Regimen General or Pequeno Contribuyente?"
 
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed CPA must confirm before filing.
-```
+### 9.2 NIT
+*Fallback:* "What is your NIT?"
 
-When a [T3] situation is identified, output:
+### 9.3 Prior credit
+Always ask: "Prior credit balance? (Line 15)"
 
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed CPA. Document gap.
-```
+---
 
+## Section 10 — Reference material
+
+### Sources
+1. Decreto 27-92, Ley del IVA — Articles 3, 7, 10, 16, 18, 37, 45, 48, 52
+2. Decreto 10-2012, Ley de Actualizacion Tributaria
+3. SAT FEL regulations
+
+### Change log
+- **v2.0 (April 2026):** Full rewrite to 10-section architecture.
+- **v1.0:** Initial skill.
 
 ---
 

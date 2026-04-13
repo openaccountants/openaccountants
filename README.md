@@ -100,7 +100,7 @@ All other jurisdictions have content skills available but need intake + assembly
 ### Claude Code
 
 ```bash
-git clone https://github.com/michaelcutajar1995/openaccountants.git ~/.claude/skills/openaccountants
+git clone https://github.com/openaccountants/openaccountants.git ~/.claude/skills/openaccountants
 ```
 
 ### Claude Desktop / Web

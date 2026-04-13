@@ -1,371 +1,253 @@
 ---
 name: bvi-tax
-description: Use this skill whenever asked about British Virgin Islands (BVI) taxation, payroll tax, or the absence of income tax and VAT. Trigger on phrases like "BVI tax", "British Virgin Islands tax", "BVI VAT", "BVI payroll tax", or any request involving BVI tax compliance. BVI does NOT have income tax, capital gains tax, or VAT. The primary tax is payroll tax. Revenue also comes from financial services fees and customs duties. ALWAYS read this skill before handling any BVI tax work.
+description: >
+  Use this skill whenever asked about British Virgin Islands (BVI) taxation, payroll tax, or the absence of income tax and VAT. Trigger on phrases like "BVI tax", "British Virgin Islands tax", "BVI VAT", "BVI payroll tax", or any request involving BVI tax compliance. BVI does NOT have income tax, capital gains tax, or VAT. The primary tax is payroll tax. ALWAYS read this skill before handling any BVI tax work.
+version: 2.0
+jurisdiction: VG
+tax_year: 2025
+category: international
 ---
 
-# British Virgin Islands (BVI) Tax Compliance Skill
+# British Virgin Islands (BVI) Tax Compliance Skill v2.0
 
 ---
 
-## Skill Metadata
+## Section 1 -- Quick Reference
 
 | Field | Value |
-|-------|-------|
-| Jurisdiction | British Virgin Islands (BVI) |
-| Jurisdiction Code | VG |
-| Primary Legislation | Payroll Taxes Act, 2004 (as amended); Customs Management and Duties Act |
-| Supporting Legislation | BVI Business Companies Act, 2004; Economic Substance (Companies and Limited Partnerships) Act, 2018 |
-| Tax Authority | Inland Revenue Department (IRD) |
-| Filing Portal | https://www.bvi.gov.vg/departments/inland-revenue-department |
-| Contributor | Open Accounting Skills Registry |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: no income tax/VAT status, payroll tax rates, customs duties. Tier 2: payroll tax exemptions, concessions. Tier 3: economic substance, international reporting, complex structures. |
+|---|---|
+| Country | British Virgin Islands (BVI) |
+| Tax | Payroll tax (primary), customs duties, property tax, social security, NHI |
+| Currency | USD |
+| Tax year | Calendar year |
+| Primary legislation | Payroll Taxes Act, 2004 (as amended); Customs Management and Duties Act |
+| Supporting legislation | BVI Business Companies Act, 2004; Economic Substance Act, 2018 |
+| Tax authority | Inland Revenue Department (IRD) |
+| Filing portal | https://www.bvi.gov.vg/departments/inland-revenue-department |
+| Filing deadline | Payroll tax monthly by 15th; annual reconciliation March 31 |
+| Contributor | Open Accountants Community |
+| Validated by | Pending -- requires sign-off by a licensed BVI practitioner |
+| Skill version | 2.0 |
 
----
-
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A licensed practitioner must confirm.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to licensed practitioner.
-
----
-
-## Step 0: Tax Landscape Overview [T1]
-
-BVI is a NO INCOME TAX, NO VAT jurisdiction:
+### Tax Landscape
 
 | Tax Type | Status |
-|----------|--------|
-| Income Tax (personal) | **None** |
-| Income Tax (corporate) | **None** |
-| Capital Gains Tax | **None** |
-| Value Added Tax (VAT) | **None** |
-| Sales Tax | **None** |
-| Withholding Tax | **None** |
-| Payroll Tax | **Yes** -- on employee remuneration |
-| Customs Duties | **Yes** -- on imports |
-| Property Tax | **Yes** -- on land and buildings |
-| Stamp Duty | **Yes** -- on certain transactions |
-| Social Security (NHI) | **Yes** -- National Health Insurance |
-| Social Security (SSB) | **Yes** -- Social Security Board contributions |
+|---|---|
+| Income Tax (personal/corporate) | None |
+| Capital Gains Tax | None |
+| VAT / Sales Tax | None |
+| Withholding Tax | None |
+| Payroll Tax | Yes |
+| Customs Duties | Yes |
+| Property Tax | Yes |
+| Social Security (SSB) | Yes -- 9% total (4.5% each) |
+| National Health Insurance (NHI) | Yes -- 7.5% total (3.75% each) |
+
+### Payroll Tax Rates
+
+**Class 1** (<=7 employees, payroll <=USD 150,000, revenue <=USD 300,000): Employer 2% + Employee 8% = 10%.
+
+**Class 2** (all others): Employer 6% + Employee 8% = 14%.
+
+Employee exemption: first USD 10,000 annual remuneration exempt.
+
+### Conservative Defaults
+
+| Ambiguity | Default |
+|---|---|
+| Unknown employer class | Class 2 |
+| Unknown duty rate | General merchandise |
+| Unknown economic substance | Assume relevant activity applies |
 
 ---
 
-## Step 1: Payroll Tax [T1]
+## Section 2 -- Required Inputs and Refusal Catalogue
 
-### Overview
+### Required Inputs
 
-Payroll tax is the primary direct tax in BVI, levied on remuneration paid to employees.
+**Minimum viable** -- payroll records, employee count, employer classification.
 
-### Rates [T1]
+**Recommended** -- remuneration breakdown by employee, BVI BC registration, prior returns.
 
-Payroll tax rates depend on employer classification:
+**Ideal** -- complete payroll export, economic substance filings, customs records.
 
-**Class 1 Employer** (7 or fewer employees, annual payroll not exceeding USD 150,000, annual revenue not exceeding USD 300,000):
+### Refusal Catalogue
 
-| Component | Rate |
-|-----------|------|
-| Employer portion | 2% |
-| Employee portion | 8% |
-| **Total** | **10%** |
+**R-VG-1 -- Income tax.** "BVI has no income tax."
 
-**Class 2 Employer** (all others):
+**R-VG-2 -- VAT/sales tax.** "BVI has no VAT or sales tax."
 
-| Component | Rate |
-|-----------|------|
-| Employer portion | 6% |
-| Employee portion | 8% |
-| **Total** | **14%** |
+**R-VG-3 -- Economic substance detail.** "Escalate to specialist."
 
-**Employee exemption:** The first USD 10,000 of each employee's annual remuneration is exempt from payroll tax.
-
-### Scope [T1]
-
-- Applies to all remuneration paid to employees for services performed in BVI [T1]
-- Includes salaries, wages, bonuses, commissions, benefits in kind [T1]
-- Applies regardless of whether employer is incorporated in BVI or overseas [T1]
-
-### Exemptions [T2]
-
-- Certain categories of employment may have reduced rates
-- Small business concessions may apply
-- Flag for practitioner: confirm current exemptions and concessions with IRD
-
-### Filing and Payment [T1]
-
-| Requirement | Detail |
-|-------------|--------|
-| Filing frequency | Monthly |
-| Deadline | 15th of the month following the payroll month |
-| Annual reconciliation | March 31 following year-end |
-| Method | Through IRD |
-| Currency | USD (BVI uses US dollar) |
-
-### Penalties [T1]
-
-| Violation | Penalty |
-|-----------|---------|
-| Late filing | USD 50 per day |
-| Late payment | 1.5% per month on unpaid amount |
-| Failure to register | Backdated assessment plus penalties |
+**R-VG-4 -- CRS/FATCA compliance.** "Escalate to specialist."
 
 ---
 
-## Step 2: No Income Tax / No VAT Confirmation [T1]
+## Section 3 -- Compliance Pattern Library
 
-### Absolute Confirmation
+### 3.1 Employer Payment Patterns
 
-- **No personal income tax** [T1]
-- **No corporate income tax** [T1]
-- **No capital gains tax** [T1]
-- **No VAT or sales tax** [T1]
-- **No withholding tax** on any payment [T1]
-- **No estate or inheritance tax** [T1]
-- **No net worth tax** [T1]
+| Pattern | Treatment | Notes |
+|---|---|---|
+| SALARY, WAGES, BONUS, COMMISSION | Payroll tax base | Include in taxable remuneration |
+| BENEFITS IN KIND | Payroll tax base | Include |
+| CONTRACTOR (independent) | Not payroll tax | Verify independence |
+| SSB CONTRIBUTION | Social security | 4.5% employer + 4.5% employee |
+| NHI CONTRIBUTION | Health insurance | 3.75% + 3.75% |
 
-### BVI Business Companies [T1]
+### 3.2 Customs Duty Categories
 
-BVI Business Companies (BVI BCs) -- the most common corporate vehicle:
-- No income tax on worldwide income [T1]
-- No capital gains tax [T1]
-- No dividends tax [T1]
-- Annual government fee payable (not a tax, but a registration/maintenance fee) [T1]
-
-### Government Fees for BVI BCs [T1]
-
-| Authorized Share Capital | Annual Fee (USD) |
-|--------------------------|-----------------|
-| Up to 50,000 shares (no par) | 450 |
-| 50,001+ shares | 1,200 |
-| Shares with par value: up to USD 50,000 | 450 |
-| Shares with par value: above USD 50,000 | 1,200 |
-
----
-
-## Step 3: Customs Duties [T1]
-
-### Overview
-
-Customs duties apply to goods imported into BVI.
-
-### Standard Rates [T1]
-
-| Category | Duty Rate |
-|----------|-----------|
-| General merchandise | 5% - 20% |
-| Food and essential goods | Lower rates or exempt |
+| Category | Rate |
+|---|---|
+| General merchandise | 5% -- 20% |
+| Food/essential goods | Lower or exempt |
 | Motor vehicles | 20% + environmental levy |
-| Alcohol | High specific rates |
-| Tobacco | High specific rates |
-| Building materials | 5% - 10% |
-| Fuel | Specific rates |
+| Building materials | 5% -- 10% |
 
-**Note [T2]:** Rates subject to revision. Confirm with BVI Customs.
+### 3.3 BVI BC Annual Fees
 
-### Environmental Levy [T1]
-
-An environmental levy applies to certain imported goods:
-- Motor vehicles (based on age and engine size) [T1]
-- Electronics and appliances [T1]
-- Tires and batteries [T1]
+| Authorized Shares | Annual Fee (USD) |
+|---|---|
+| Up to 50,000 (no par) | 450 |
+| 50,001+ | 1,200 |
 
 ---
 
-## Step 4: Social Security [T1]
+## Section 4 -- Worked Examples
 
-### Social Security Board (SSB) Contributions [T1]
+### Example 1 -- Payroll Tax (Class 2)
 
-| Component | Rate |
-|-----------|------|
-| Employer contribution | 4.5% of insurable earnings |
-| Employee contribution | 4.5% of insurable earnings |
-| **Total** | **9%** |
-| Insurable earnings ceiling | Set annually by SSB |
+**Input:** Monthly payroll USD 50,000, 10 employees.
 
-### National Health Insurance (NHI) [T1]
+**Computation:** Employer payroll tax: 6% x USD 50,000 = USD 3,000/month. Employee: 8% on remuneration above USD 10,000 annual exemption. Plus SSB 4.5% each + NHI 3.75% each.
 
-| Component | Rate |
-|-----------|------|
-| Employer contribution | 3.75% of payroll |
-| Employee contribution | 3.75% of payroll |
-| **Total** | **7.5%** |
+### Example 2 -- BVI BC Annual Obligations
 
----
+**Input:** BVI BC with 10,000 no-par shares, no employees.
 
-## Step 5: Property Tax [T1]
+**Classification:** Annual fee USD 450. No income tax. No payroll tax. Economic substance filing if conducting relevant activities.
 
-### Land and Building Tax
+### Example 3 -- Import Duty
 
-- Assessed on the annual rental value of property [T1]
-- Rates set by government [T2]
-- Applies to land and buildings in BVI [T1]
+**Input:** Office equipment USD 10,000.
+
+**Computation:** Duty ~15%: USD 1,500. No VAT. No sales tax.
 
 ---
 
-## Step 6: Stamp Duty [T1]
+## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
-| Transaction | Rate |
-|-------------|------|
-| Real estate transfers | 4% buyer + 4% seller (standard) |
-| Certain legal documents | Variable rates |
-| Mortgages | 1.5% |
+### 5.1 No Income Tax / No VAT
 
-**Note [T2]:** First-time Belonger buyers may receive concessions. Confirm with practitioner.
+No personal/corporate income tax, no capital gains tax, no VAT/sales tax, no withholding tax, no estate tax.
 
----
+### 5.2 Payroll Tax Filing
 
-## Step 7: Economic Substance [T2]
+Monthly by 15th. Annual reconciliation March 31. Late filing: USD 50/day. Late payment: 1.5%/month.
 
-The Economic Substance (Companies and Limited Partnerships) Act, 2018 requires:
+### 5.3 Social Security and NHI
 
-- Entities carrying on "relevant activities" must demonstrate adequate economic substance in BVI
-- Relevant activities: banking, distribution and service centre, financing and leasing, fund management, headquarters, holding, insurance, intellectual property, shipping
-- Requirements: directed and managed in BVI, adequate employees/expenditure, core income-generating activities conducted in BVI
-- Annual reporting to the International Tax Authority (ITA)
-
-**Flag for practitioner: economic substance compliance is [T3] -- requires specialist advice.**
+SSB: 4.5% employer + 4.5% employee. NHI: 3.75% + 3.75%.
 
 ---
 
-## Step 8: International Reporting [T2]
+## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### CRS (Common Reporting Standard)
+### 6.1 Payroll Tax Exemptions
 
-- BVI participates in OECD CRS [T1]
-- Financial institutions must report to the ITA [T1]
+Small business concessions may apply. Flag for practitioner.
 
-### FATCA
+### 6.2 Economic Substance
 
-- BVI has a Model 1 IGA with the United States [T1]
-- Financial institutions must report US account holders [T1]
+Entities conducting relevant activities must demonstrate adequate substance in BVI. Flag for specialist.
 
-### Beneficial Ownership
+### 6.3 Stamp Duty
 
-- Beneficial Ownership Secure Search System (BOSS) [T1]
-- Registered agents must maintain beneficial ownership information [T1]
+Real estate: 4% buyer + 4% seller. Belonger concessions may apply.
 
 ---
 
-## Step 9: Key Thresholds
+## Section 7 -- Excel Working Paper Template
 
-| Threshold | Value |
-|-----------|-------|
-| Payroll tax (employer) | 2% (Class 1) or 6% (Class 2) |
-| Payroll tax (employee) | 8% |
-| Payroll tax employee exemption | First USD 10,000 per year |
-| SSB contributions (total) | 9% |
-| NHI contributions (total) | 7.5% |
-| Payroll tax filing | Monthly, 15th of following month |
-| BVI BC annual fee (standard) | USD 450 |
+```
+BVI TAX -- Working Paper
+
+A. PAYROLL TAX
+  A1. Total remuneration          ___________
+  A2. Employer class              ___________
+  A3. Employer payroll tax        ___________
+  A4. Employee payroll tax        ___________
+
+B. SOCIAL SECURITY & NHI
+  B1. SSB employer (4.5%)         ___________
+  B2. NHI employer (3.75%)        ___________
+
+C. BVI BC FEES
+  C1. Annual government fee       ___________
+
+REVIEWER FLAGS:
+  [ ] Employer classification confirmed?
+  [ ] Employee exemption applied?
+  [ ] Economic substance filing required?
+```
 
 ---
 
-## PROHIBITIONS [T1]
+## Section 8 -- Bank Statement Reading Guide
 
-- NEVER state that BVI has income tax -- it does not
-- NEVER state that BVI has VAT or sales tax -- it does not
+| Bank | Format | Key Fields |
+|---|---|---|
+| VP Bank, First Caribbean | PDF, CSV | Date, Description, Debit, Credit, Balance |
+| Scotiabank BVI | CSV | Date, Narrative, Amount |
+
+---
+
+## Section 9 -- Onboarding Fallback
+
+```
+ONBOARDING QUESTIONS -- BVI TAX
+1. Do you have employees in BVI?
+2. How many employees?
+3. Total payroll?
+4. Employer class (1 or 2)?
+5. Do you import goods?
+6. BVI Business Company held?
+7. Relevant activities for economic substance?
+8. Non-Belonger employees (work permits)?
+9. Property in BVI?
+10. Prior returns available?
+```
+
+---
+
+## Section 10 -- Reference Material
+
+| Topic | Reference |
+|---|---|
+| Payroll tax | Payroll Taxes Act, 2004 |
+| Customs | Customs Management and Duties Act |
+| BVI BCs | BVI Business Companies Act, 2004 |
+| Economic substance | Economic Substance Act, 2018 |
+| Social security | Social Security Act |
+| Health insurance | National Health Insurance Act |
+
+---
+
+## PROHIBITIONS
+
+- NEVER state BVI has income tax -- it does not
+- NEVER state BVI has VAT or sales tax -- it does not
 - NEVER apply income tax or VAT calculations to BVI transactions
-- NEVER ignore payroll tax obligations (primary compliance requirement)
-- NEVER confuse government annual fees with taxes (they are registration fees)
-- NEVER ignore economic substance reporting requirements for relevant entities
-- NEVER ignore social security (SSB) and health insurance (NHI) contributions
-- NEVER assume duty rates without confirming current schedule
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not AI
-
----
-
-## Step 10: Edge Case Registry
-
-### EC1 -- BVI BC with no local employees [T1]
-**Situation:** BVI Business Company has no employees in BVI, only a registered agent.
-**Resolution:** No payroll tax obligation (no payroll). Annual government fee still payable. Economic substance requirements still apply if conducting relevant activities. CRS/FATCA obligations apply if a financial institution.
-
-### EC2 -- Employer with both Belonger and non-Belonger employees [T1]
-**Situation:** BVI company employs a mix of local and work-permit holders.
-**Resolution:** Payroll tax applies equally to all employees regardless of status. Rate is 6% employer (Class 2) + 8% employee on remuneration above the USD 10,000 annual exemption. SSB and NHI apply to all employees.
-
-### EC3 -- International service provider with BVI clients [T1]
-**Situation:** Non-BVI company provides services to BVI entity remotely.
-**Resolution:** No BVI tax implications for the service provider (no income tax, no withholding). No VAT on the service. If the provider has employees in BVI, payroll tax applies to those employees.
-
-### EC4 -- Real estate purchase by non-Belonger [T2]
-**Situation:** Non-Belonger purchases property in BVI.
-**Resolution:** Non-Belonger Land Holding Licence required. Stamp duty applies (4% buyer + 4% seller). Annual licence fees may apply. No capital gains tax on future sale. Flag for practitioner: licence requirements and additional fees.
-
-### EC5 -- Fund administrator in BVI [T2]
-**Situation:** Fund administration company operates in BVI with local staff.
-**Resolution:** No income tax on fund administration fees. Payroll tax on employee remuneration (8% + 8%). Economic substance requirements for fund management activity. Annual fees to financial services regulator. Flag for practitioner: confirm substance requirements.
-
----
-
-## Step 11: Test Suite
-
-### Test 1 -- Income tax question
-**Input:** "What income tax does a BVI company pay?"
-**Expected output:** None. BVI does not impose corporate or personal income tax.
-
-### Test 2 -- VAT question
-**Input:** "What is the VAT rate in BVI?"
-**Expected output:** BVI does not have VAT or any sales tax.
-
-### Test 3 -- Payroll tax
-**Input:** BVI employer pays monthly payroll of USD 50,000 to 5 employees. Class 2 employer.
-**Expected output:** Employer payroll tax = 6%. Employee payroll tax = 8% (on remuneration above the USD 10,000 annual exemption per employee). Plus SSB 4.5% each + NHI 3.75% each. File by 15th of following month.
-
-### Test 4 -- BVI BC annual obligations
-**Input:** BVI Business Company with 10,000 no-par-value shares, no employees.
-**Expected output:** Annual government fee USD 450. No income tax. No payroll tax (no employees). Economic substance filing required if conducting relevant activities.
-
----
-
-## Step 12: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Licensed BVI practitioner must confirm.
-```
-
-When a [T3] situation is identified, output:
-
-```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to licensed practitioner. Document gap.
-```
-
----
-
-## Contribution Notes
-
-BVI is a no-income-tax, no-VAT jurisdiction. Key compliance areas:
-1. Payroll tax (10% Class 1 or 14% Class 2 total) is the primary employer obligation
-2. Social security (SSB 9%) and health insurance (NHI 7.5%) are mandatory
-3. Annual government fees for BVI Business Companies
-4. Economic substance requirements since 2019
-5. CRS/FATCA reporting for financial institutions
-6. BVI uses the US dollar as its currency
-
-**A skill may not be published without sign-off from a licensed practitioner in the relevant jurisdiction.**
-
+- NEVER ignore payroll tax obligations
+- NEVER confuse government fees with taxes
+- NEVER ignore economic substance requirements
+- NEVER ignore SSB and NHI contributions
+- NEVER present calculations as definitive
 
 ---
 
 ## Disclaimer
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
