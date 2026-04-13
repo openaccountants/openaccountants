@@ -1,0 +1,1616 @@
+{
+  "generated": "2026-04-13",
+  "total_packages": 133,
+  "packages": [
+    {
+      "jurisdiction": "AL",
+      "name": "Albania",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "albania-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "DZ",
+      "name": "Algeria",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "algeria-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "AD",
+      "name": "Andorra",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "andorra-igi.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "AR",
+      "name": "Argentina",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ar-income-tax.md",
+        "ar-monotributo.md",
+        "ar-social-contributions.md",
+        "ar-vat-return.md",
+        "argentina-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 5
+    },
+    {
+      "jurisdiction": "AM",
+      "name": "Armenia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "armenia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "AU",
+      "name": "Australia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "au-gst-bas.md",
+        "au-individual-return.md",
+        "au-medicare-levy.md",
+        "au-payg-instalments.md",
+        "au-sole-trader-schedule.md",
+        "au-super-guarantee.md",
+        "australia-gst.md",
+        "australia-guided-intake.md",
+        "australia-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 7
+    },
+    {
+      "jurisdiction": "AT",
+      "name": "Austria",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "at-income-tax.md",
+        "at-svs-contributions.md",
+        "austria-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "AZ",
+      "name": "Azerbaijan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "azerbaijan-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BS",
+      "name": "Bahamas",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bahamas-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BH",
+      "name": "Bahrain",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bahrain-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BD",
+      "name": "Bangladesh",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bangladesh-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BB",
+      "name": "Barbados",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "barbados-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BY",
+      "name": "Belarus",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "belarus-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BE",
+      "name": "Belgium",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "be-income-tax.md",
+        "be-social-contributions.md",
+        "belgium-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "BM",
+      "name": "Bermuda",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bermuda-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BO",
+      "name": "Bolivia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bolivia-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BA",
+      "name": "Bosnia and Herzegovina",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bosnia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BR",
+      "name": "Brazil",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "br-estimated-tax.md",
+        "br-income-tax.md",
+        "br-indirect-tax.md",
+        "br-inss.md",
+        "br-simples-nacional.md",
+        "brazil-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 6
+    },
+    {
+      "jurisdiction": "BN",
+      "name": "Brunei",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "brunei-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "BG",
+      "name": "Bulgaria",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bulgaria-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "VG",
+      "name": "BVI",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "bvi-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "KH",
+      "name": "Cambodia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "cambodia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "CM",
+      "name": "Cameroon",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "cameroon-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "CA",
+      "name": "Canada",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ca-fed-cpp-ei.md",
+        "ca-fed-gst-hst.md",
+        "ca-fed-instalments.md",
+        "ca-fed-t1-return.md",
+        "ca-fed-t2125.md",
+        "canada-gst-hst.md",
+        "canada-guided-intake.md",
+        "canada-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 6
+    },
+    {
+      "jurisdiction": "KY",
+      "name": "Cayman Islands",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "cayman-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "CL",
+      "name": "Chile",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "chile-iva.md",
+        "cl-income-tax.md",
+        "cl-social-contributions.md",
+        "cl-vat-return.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "CN",
+      "name": "China",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "china-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "CO",
+      "name": "Colombia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "co-income-tax.md",
+        "co-social-contributions.md",
+        "co-vat-return.md",
+        "colombia-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "CR",
+      "name": "Costa Rica",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "costa-rica-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "HR",
+      "name": "Croatia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "croatia-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "CY",
+      "name": "Cyprus",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "cyprus-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "CZ",
+      "name": "Czech Republic",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "cz-income-tax.md",
+        "cz-social-health.md",
+        "czech-republic-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "DK",
+      "name": "Denmark",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "denmark-vat-return.md",
+        "dk-income-tax.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 2
+    },
+    {
+      "jurisdiction": "DO",
+      "name": "Dominican Republic",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "dominican-republic-itbis.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "EC",
+      "name": "Ecuador",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ecuador-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "EG",
+      "name": "Egypt",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "egypt-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "SV",
+      "name": "El Salvador",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "el-salvador-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "EE",
+      "name": "Estonia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "estonia-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "ET",
+      "name": "Ethiopia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ethiopia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "FJ",
+      "name": "Fiji",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "fiji-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "FI",
+      "name": "Finland",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "finland-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "FR",
+      "name": "France",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "fr-cfe.md",
+        "fr-income-tax.md",
+        "fr-social-contributions.md",
+        "france-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "GE",
+      "name": "Georgia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "georgia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "DE",
+      "name": "Germany",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "de-estimated-tax.md",
+        "de-income-tax.md",
+        "de-social-contributions.md",
+        "de-trade-tax.md",
+        "germany-vat-return.md",
+        "eu-vat-directive.md",
+        "germany-guided-intake.md",
+        "germany-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 5
+    },
+    {
+      "jurisdiction": "GH",
+      "name": "Ghana",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ghana-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "GR",
+      "name": "Greece",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "gr-efka.md",
+        "gr-income-tax.md",
+        "greece-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "GT",
+      "name": "Guatemala",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "guatemala-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "HN",
+      "name": "Honduras",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "honduras-isv.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "HK",
+      "name": "Hong Kong",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "hong-kong-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "HU",
+      "name": "Hungary",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "hu-income-tax.md",
+        "hu-social-contributions.md",
+        "hungary-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "IS",
+      "name": "Iceland",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "iceland-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "IN",
+      "name": "India",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "in-advance-tax.md",
+        "in-income-tax.md",
+        "in-tds-freelance.md",
+        "india-gst.md",
+        "india-guided-intake.md",
+        "india-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "ID",
+      "name": "Indonesia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "indonesia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "IR",
+      "name": "Iran",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "iran-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "IQ",
+      "name": "Iraq",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "iraq-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "IE",
+      "name": "Ireland",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ie-income-tax-form11.md",
+        "ie-preliminary-tax.md",
+        "ie-prsi-class-s.md",
+        "ie-usc.md",
+        "ireland-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 5
+    },
+    {
+      "jurisdiction": "IM",
+      "name": "Isle of Man",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "isle-of-man-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "IL",
+      "name": "Israel",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "israel-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "IT",
+      "name": "Italy",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "it-estimated-tax.md",
+        "it-income-tax.md",
+        "it-inps-contributions.md",
+        "it-irap.md",
+        "italy-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 5
+    },
+    {
+      "jurisdiction": "CI",
+      "name": "Ivory Coast",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ivory-coast-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "JM",
+      "name": "Jamaica",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "jamaica-gct.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "JP",
+      "name": "Japan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "japan-consumption-tax.md",
+        "jp-consumption-tax.md",
+        "jp-estimated-tax.md",
+        "jp-income-tax.md",
+        "jp-social-insurance.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 5
+    },
+    {
+      "jurisdiction": "JO",
+      "name": "Jordan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "jordan-gst.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "KZ",
+      "name": "Kazakhstan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "kazakhstan-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "KE",
+      "name": "Kenya",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ke-income-tax.md",
+        "ke-nhif-nssf.md",
+        "kenya-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "XK",
+      "name": "Kosovo",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "kosovo-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "KW",
+      "name": "Kuwait",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "kuwait-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "LA",
+      "name": "Laos",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "laos-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "LV",
+      "name": "Latvia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "latvia-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "LB",
+      "name": "Lebanon",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "lebanon-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "LI",
+      "name": "Liechtenstein",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "liechtenstein-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "LT",
+      "name": "Lithuania",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "lithuania-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "LU",
+      "name": "Luxembourg",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "luxembourg-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MY",
+      "name": "Malaysia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "malaysia-sst.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MV",
+      "name": "Maldives",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "maldives-gst.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MT",
+      "name": "Malta",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "malta-income-tax.md",
+        "malta-ssc.md",
+        "malta-vat-return.md",
+        "mt-estimated-tax.md",
+        "eu-vat-directive.md",
+        "malta-guided-intake.md",
+        "malta-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "MU",
+      "name": "Mauritius",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "mauritius-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MX",
+      "name": "Mexico",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "mexico-iva.md",
+        "mx-cfdi.md",
+        "mx-estimated-tax.md",
+        "mx-imss.md",
+        "mx-income-tax.md",
+        "mx-vat-return.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 6
+    },
+    {
+      "jurisdiction": "MD",
+      "name": "Moldova",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "moldova-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MC",
+      "name": "Monaco",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "monaco-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MN",
+      "name": "Mongolia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "mongolia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "ME",
+      "name": "Montenegro",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "montenegro-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MA",
+      "name": "Morocco",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "morocco-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MZ",
+      "name": "Mozambique",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "mozambique-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "MM",
+      "name": "Myanmar",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "myanmar-ct.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "NP",
+      "name": "Nepal",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "nepal-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "NL",
+      "name": "Netherlands",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "netherlands-vat-return.md",
+        "nl-income-tax.md",
+        "nl-zzp-deductions.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "NZ",
+      "name": "New Zealand",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "new-zealand-gst.md",
+        "nz-acc-levies.md",
+        "nz-gst-return.md",
+        "nz-income-tax-ir3.md",
+        "nz-provisional-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 5
+    },
+    {
+      "jurisdiction": "NI",
+      "name": "Nicaragua",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "nicaragua-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "NG",
+      "name": "Nigeria",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ng-income-tax.md",
+        "ng-vat-return.md",
+        "nigeria-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "MK",
+      "name": "North Macedonia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "north-macedonia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "NO",
+      "name": "Norway",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "no-income-tax.md",
+        "no-social-contributions.md",
+        "norway-mva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "OM",
+      "name": "Oman",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "oman-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PK",
+      "name": "Pakistan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "pakistan-sales-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PA",
+      "name": "Panama",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "panama-itbms.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PG",
+      "name": "Papua New Guinea",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "png-gst.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PY",
+      "name": "Paraguay",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "paraguay-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PE",
+      "name": "Peru",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "peru-igv.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PH",
+      "name": "Philippines",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "philippines-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "PL",
+      "name": "Poland",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "pl-income-tax.md",
+        "pl-zus-contributions.md",
+        "poland-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "PT",
+      "name": "Portugal",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "portugal-vat-return.md",
+        "pt-income-tax.md",
+        "pt-social-contributions.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "QA",
+      "name": "Qatar",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "qatar-tax.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "RO",
+      "name": "Romania",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ro-cas-cass.md",
+        "ro-income-tax.md",
+        "romania-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "RU",
+      "name": "Russia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "russia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "RW",
+      "name": "Rwanda",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "rwanda-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "SA",
+      "name": "Saudi Arabia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "saudi-arabia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "SN",
+      "name": "Senegal",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "senegal-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "RS",
+      "name": "Serbia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "serbia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "SG",
+      "name": "Singapore",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "sg-cpf-medisave.md",
+        "sg-income-tax.md",
+        "singapore-gst.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "SK",
+      "name": "Slovakia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "slovakia-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "SI",
+      "name": "Slovenia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "slovenia-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "ZA",
+      "name": "South Africa",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "south-africa-vat.md",
+        "za-income-tax.md",
+        "za-provisional-tax.md",
+        "za-vat-return.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "KR",
+      "name": "South Korea",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "kr-income-tax.md",
+        "kr-social-insurance.md",
+        "south-korea-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "ES",
+      "name": "Spain",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "es-estimated-tax.md",
+        "es-income-tax.md",
+        "es-social-contributions.md",
+        "spain-vat-return.md",
+        "eu-vat-directive.md",
+        "spain-guided-intake.md",
+        "spain-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "LK",
+      "name": "Sri Lanka",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "sri-lanka-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "SE",
+      "name": "Sweden",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "se-income-tax.md",
+        "se-social-contributions.md",
+        "sweden-vat-return.md",
+        "eu-vat-directive.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 3
+    },
+    {
+      "jurisdiction": "CH",
+      "name": "Switzerland",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ch-ahv-iv.md",
+        "ch-cantonal-tax.md",
+        "ch-federal-income-tax.md",
+        "switzerland-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 4
+    },
+    {
+      "jurisdiction": "TW",
+      "name": "Taiwan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "taiwan-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "TZ",
+      "name": "Tanzania",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "tanzania-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "TH",
+      "name": "Thailand",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "thailand-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "TT",
+      "name": "Trinidad and Tobago",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "trinidad-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "TN",
+      "name": "Tunisia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "tunisia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "TR",
+      "name": "Turkey",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "turkey-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "AE",
+      "name": "UAE",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ae-corporate-tax.md",
+        "uae-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 2
+    },
+    {
+      "jurisdiction": "UG",
+      "name": "Uganda",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "uganda-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "GB",
+      "name": "United Kingdom",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "uk-income-tax-sa100.md",
+        "uk-national-insurance.md",
+        "uk-payments-on-account.md",
+        "uk-self-employment-sa103.md",
+        "uk-student-loan-repayment.md",
+        "uk-vat-return.md",
+        "uk-guided-intake.md",
+        "uk-return-assembly.md"
+      ],
+      "has_orchestrator": true,
+      "skill_count": 6
+    },
+    {
+      "jurisdiction": "UA",
+      "name": "Ukraine",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "ukraine-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "UY",
+      "name": "Uruguay",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "uruguay-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "UZ",
+      "name": "Uzbekistan",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "uzbekistan-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "VE",
+      "name": "Venezuela",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "venezuela-iva.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "VN",
+      "name": "Vietnam",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "vietnam-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "ZM",
+      "name": "Zambia",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "zambia-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    },
+    {
+      "jurisdiction": "ZW",
+      "name": "Zimbabwe",
+      "files": [
+        "foundation.md",
+        "intake.md",
+        "zimbabwe-vat.md"
+      ],
+      "has_orchestrator": false,
+      "skill_count": 1
+    }
+  ]
+}
