@@ -1,6 +1,10 @@
 # OpenAccountants
 
-Open-source tax computation skills for AI. **371 skills across 134 countries.** Upload to Claude, ChatGPT, or any LLM with your bank statement. Get a working paper ready for your accountant to review.
+Open-source tax computation skills for AI. **371 skills across 134 countries.**
+
+Upload to Claude, ChatGPT, or any LLM with your bank statement. Get a working paper ready for your accountant — and **cut your accounting bill by 80%.**
+
+Your accountant charges by the hour. Most of that time is classifying transactions and filling forms. These skills do that work before the meeting. Your accountant reviews and signs off in 20 minutes instead of 3 hours.
 
 **Website:** [openaccountants.com](https://openaccountants.com)
 
