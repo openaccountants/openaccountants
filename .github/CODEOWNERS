@@ -1,0 +1,10 @@
+# Every PR requires review from the core team
+* @michaelcutajar1995
+
+# Skills changes require review
+/skills/ @michaelcutajar1995
+/packages/ @michaelcutajar1995
+
+# Foundation and orchestration changes are critical
+/skills/foundation/ @michaelcutajar1995
+/skills/orchestrator/ @michaelcutajar1995
