@@ -161,17 +161,33 @@ python3 scripts/build-packages.py
 
 ## Contribute
 
-### Verify a skill for your country
+### Think your country's skill is wrong? Prove it.
 
-Open any skill file, check the rates against current law, submit a PR with corrections. Your name goes on it as the verifier.
+Use Claude's deep research to verify rates against your tax authority's website. If you find an error — and you will — submit a PR. We've found errors in every single country we've verified. Yours probably has some too.
 
-### Write a skill for a new obligation
+```
+Prompt for deep research:
+"Search [your country] tax authority website for the current VAT/GST rate,
+registration threshold, and filing deadline. Compare against this skill file."
+```
 
-Most countries have VAT but no income tax skill. Adding one = following the pattern in any existing income tax skill.
+### Build a skill for your country
+
+Most countries have VAT but no income tax skill. Here's how to add one:
+
+1. Open any existing income tax skill (e.g., `skills/international/malta/malta-income-tax.md`)
+2. Follow the same structure — quick reference, transaction pattern library, tier 1/tier 2 rules
+3. Add your country's local bank patterns (how do transactions appear on YOUR bank statement?)
+4. Submit a PR — your name goes on the skill as the author
+5. An accountant verifies it → it goes live on [openaccountants.com](https://openaccountants.com)
 
 ### Improve the supplier pattern library
 
-Know how your local bank formats statements? Know what "ENERGA SA" or "COUPANG" looks like on a bank CSV? Add it to the pattern library.
+Know how your local bank formats statements? Know what "ENERGA SA" or "COUPANG" looks like on a bank CSV? That one line you add saves every user in your country from a misclassification.
+
+### Get credited
+
+Every skill you write, verify, or improve — your name is on it publicly. Contributors build a profile at [openaccountants.com/contributors](https://openaccountants.com/contributors).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
