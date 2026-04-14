@@ -629,3 +629,12 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora 
 10. No reduced rates — 25% only: explicitly stated in Section 1 and Section 5.1.
 11. Entertainment partial recovery (25% under §42(2)) documented: yes (Section 3.7, Example 3, Section 5.8).
 12. Vehicle rules documented: yes (Section 5.8, Example 6).
+
+
+---
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.

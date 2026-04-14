@@ -671,3 +671,12 @@ v2.0, rewritten April 2026. Awaiting validation by doradca podatkowy in Poland.
 12. Split payment (MPP) and white list documented: yes (Sections 5.11-5.12, 3.15).
 13. Vehicle 50% default documented: yes (Section 5.10, Example 6).
 14. GTU codes listed: yes (Section 1, Section 5.13).
+
+
+---
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
