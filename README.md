@@ -187,7 +187,7 @@ Know how your local bank formats statements? Know what "ENERGA SA" or "COUPANG" 
 
 ### Get credited
 
-Every skill you write, verify, or improve — your name is on it publicly. Contributors build a profile at [openaccountants.com/contributors](https://openaccountants.com/contributors).
+Every skill you write, verify, or improve — your name is on it publicly. Contributors build a profile at [openaccountants.com](https://openaccountants.com).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 

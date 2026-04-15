@@ -37,7 +37,7 @@ Tax rules change. Rates get updated. Thresholds move. If something in these file
 
 Know a vendor pattern we're missing? Know how your local bank formats statements? Every pattern you add saves the next user from a misclassification.
 
-**Contributors get credited at [openaccountants.com/contributors](https://openaccountants.com/contributors)**
+**Contributors get credited at [openaccountants.com](https://openaccountants.com)**
 
 ---
 
