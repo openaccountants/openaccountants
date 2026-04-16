@@ -206,7 +206,3 @@ The most up-to-date, verified version is maintained at [openaccountants.com](htt
 ## License
 
 Dual-licensed: [AGPL-3.0](LICENSE) for open-source use, [commercial license](COMMERCIAL_LICENSE.md) for proprietary products.
-
-## Built by
-
-[Glimpse Ltd](https://accora.ai) (trading as Accora) — open-source accounting tools for AI.

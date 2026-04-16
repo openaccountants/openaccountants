@@ -240,10 +240,17 @@ For each Q3 skill, an agent runs this exact process:
 │  Malta VAT Return (VAT3) v1.0               │
 │  ████████████ BATTLE-TESTED (Q1)            │
 │                                             │
+<<<<<<< HEAD
 │  Verified by: Michael Cutajar, CPA          │
 │  Tested against: Real client data           │
 │  Iterations: Multiple filing cycles         │
 │  Last updated: March 2026                   │
+=======
+│  Verified by: [Practitioner name], CPA      │
+│  Tested against: Real client data           │
+│  Iterations: Multiple filing cycles         │
+│  Last updated: [Date]                       │
+>>>>>>> 70c2582 (Update accounting project files)
 └─────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────┐
