@@ -14,6 +14,8 @@ Your accountant charges by the hour. Most of that time is classifying transactio
 
 ### 1. Find your country
 
+**Most countries (130+):** everything you need is in one place under `packages/`. Upload every file in that folder.
+
 ```
 packages/
 ├── malta/           ← 9 files (VAT + income tax + SSC + guided intake)
@@ -26,9 +28,27 @@ packages/
 ├── ... 126 more countries
 ```
 
+**United States:** there is **no** `packages/us/` folder. US tax work is split across **modular skills** under `skills/` (federal forms, orchestrators that sequence them, and per-state sales tax). That matches how US compliance layers (federal vs 50 states) rather than a single “country bundle” like Malta.
+
+| What you need | Where it lives |
+|----------------|----------------|
+| Federal workflow base (how the AI should work) | [`skills/foundation/us-tax-workflow-base.md`](skills/foundation/us-tax-workflow-base.md) |
+| Federal content (Schedule C/SE, QBI, estimated tax, bookkeeping, etc.) | [`skills/federal/`](skills/federal/) — upload **all** `.md` files here |
+| Orchestration (intake, return assembly, cross-form checks) | [`skills/orchestrator/`](skills/orchestrator/) — include the `us-*.md` files that match your situation (e.g. `us-federal-return-assembly.md`; California freelancers also use `us-ca-*.md`) |
+| State sales / use tax | [`skills/us-states/`](skills/us-states/) — pick your state folder and add those `.md` files if sales tax applies |
+| Selected states with extra local files | [`skills/florida/`](skills/florida/), [`skills/texas/`](skills/texas/), [`skills/newyork/`](skills/newyork/), [`skills/washington/`](skills/washington/) when relevant |
+
+For a typical **US freelance federal return**, start with `us-tax-workflow-base.md`, everything in `skills/federal/`, and the `us-*.md` files in `skills/orchestrator/` your case needs; add state pieces only if they apply.
+
+Contributors: international packages are generated from `skills/international/` via `scripts/build-packages.py`. US skills are edited directly under `skills/` until a single generated US package exists.
+
 ### 2. Upload to your LLM
 
-Open the folder for your country. Upload ALL `.md` files to:
+**International:** open the folder for your country under `packages/`. Upload **all** `.md` files.
+
+**United States:** collect the `.md` files from the paths in the table above (same workflow below).
+
+Upload to:
 - **Claude.ai** → Create a Project, add files as Project Knowledge
 - **ChatGPT** → Attach files to a conversation or create a Custom GPT
 - **Any other LLM** → Attach or paste the files
@@ -134,15 +154,17 @@ git clone https://github.com/openaccountants/openaccountants.git
 
 ```
 openaccountants/
-├── packages/              ← Ready-to-use jurisdiction packages (START HERE)
+├── packages/              ← Ready-to-use jurisdiction packages (START HERE for non-US)
 │   ├── malta/
 │   ├── uk/
 │   ├── germany/
 │   └── ... 130 more
-├── skills/                ← Source files (for contributors)
-│   ├── foundation/        ← Universal workflow base
-│   ├── international/     ← Country-specific content
-│   ├── orchestrator/      ← Intake + assembly skills
+├── skills/                ← Source files (for contributors); START HERE for United States
+│   ├── foundation/        ← Universal workflow base + us-tax-workflow-base.md
+│   ├── federal/           ← US federal income tax / Schedule C / SE / QBI / etc.
+│   ├── international/     ← Country-specific content (feeds build-packages.py)
+│   ├── orchestrator/      ← Intake + assembly (incl. us-federal-return-assembly, us-ca-*)
+│   ├── us-states/         ← US state sales & use tax skills
 │   ├── cross-border/      ← Reverse charge, WHT, PE risk
 │   ├── intelligence/      ← Deadlines, thresholds, optimisation
 │   └── patterns/          ← Global vendor patterns
