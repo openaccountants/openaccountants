@@ -1,5 +1,7 @@
 # OpenAccountants MCP Server
 
+<!-- mcp-name: io.github.openaccountants/openaccountants-mcp -->
+
 A read-only [Model Context Protocol](https://modelcontextprotocol.io/) server that gives Claude, Cursor, and any MCP client **on-demand access** to 134 countries of open-source tax skills — no manual file uploads.
 
 ## Why this exists
