@@ -48,9 +48,13 @@ After you submit, licensed accountants review each section of your skill on [ope
 
 ## Contributor License Agreement (CLA)
 
-By submitting a pull request, you agree to the [Contributor License Agreement](CLA.md). This grants Glimpse Ltd a license to distribute your contribution under both the AGPL-3.0 open-source license and the commercial license. You retain full copyright to your work.
+OpenAccountants is **dual-licensed** (AGPL-3.0 + commercial). The [Contributor License Agreement](CLA.md) lets Glimpse Ltd distribute your contribution under **both** tracks. You **retain copyright**; you are granting a license, not handing over ownership.
 
-This is necessary because Open Accountants is dual-licensed. Without the CLA, we couldn't offer commercial licenses for the project as a whole.
+**GitHub pull requests:** we rely on an **explicit opt-in**. When you open a PR, you must **tick the CLA checkbox** in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) (and leave it checked on updates to the same PR). That single action is how you record agreement. Maintainers should not merge PRs where the contributor has not confirmed the CLA.
+
+**Website / other channels:** follow whatever acceptance flow that channel provides, or contact **contributors@openaccountants.com** for a formal signed agreement.
+
+If anything in [CLA.md](CLA.md) is unclear, ask before contributing.
 
 ## What you get
 

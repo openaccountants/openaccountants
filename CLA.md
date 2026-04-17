@@ -14,7 +14,7 @@ This CLA does **not** take away your rights to your contribution. You retain ful
 
 ## The agreement
 
-By submitting a pull request, issue, or any other contribution ("Contribution") to the Open Accountants repository, you agree to the following:
+Once you have **accepted this CLA** as described under **[How to sign](#how-to-sign)** — including by ticking the Contributor License Agreement confirmation on a pull request that contains your work — the following terms apply to that **Contribution** (your code, documentation, or other copyrightable material submitted for inclusion in the repository):
 
 ### 1. Grant of copyright license
 
@@ -43,7 +43,9 @@ Glimpse Ltd is under no obligation to accept, merge, or use your Contribution.
 
 ## How to sign
 
-By submitting a pull request to the Open Accountants repository, you indicate your acceptance of this CLA. No separate signature is required.
+**GitHub (pull requests):** tick the **Contributor License Agreement** checkbox in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) when you open or update your PR. **Checking that box is your explicit opt-in** and confirms that you agree to this CLA for the contribution in that PR.
+
+You may instead include a clear statement in the PR description (for example: “I agree to the CLA at CLA.md”) if you cannot use the checkbox, but the checkbox is the default path maintainers will look for.
 
 If you prefer a formal signed agreement, contact **contributors@openaccountants.com** and we will provide one.
 
