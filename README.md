@@ -2,11 +2,20 @@
 
 Open-source tax computation skills for AI. **371 skills across 134 countries.**
 
-Upload to Claude, ChatGPT, or any LLM with your bank statement. Get a working paper ready for your accountant — and **cut your accounting bill by 80%.**
+Upload to Claude, ChatGPT, or any LLM with your bank statement — or connect via **[MCP](#mcp-server)** so your AI loads the right country's tax skills automatically. Get a working paper ready for your accountant and **cut your accounting bill by 80%.**
 
 Your accountant charges by the hour. Most of that time is classifying transactions and filling forms. These skills do that work before the meeting. Your accountant reviews and signs off in 20 minutes instead of 3 hours.
 
 **Website:** [openaccountants.com](https://openaccountants.com)
+
+### Two ways to use OpenAccountants
+
+| Method | How it works | Best for |
+|--------|-------------|----------|
+| **Manual upload** | Download your country's folder, drag `.md` files into Claude / ChatGPT / any LLM | Quick one-off use, any LLM |
+| **MCP server** | Install once, add one line of config — your AI discovers and fetches skills automatically, every conversation | Developers, power users, Claude Desktop / Cursor |
+
+Both methods use the same skill files. MCP just removes the manual step. See **[Quick start](#quick-start-60-seconds)** for uploads or **[MCP server](#mcp-server)** for the automated path.
 
 ## Known limitations
 
@@ -155,6 +164,60 @@ Skills are **partially** verified at best unless you confirm the tier. **Q1** me
 
 ---
 
+## MCP server
+
+Instead of uploading files by hand, connect your AI client to OpenAccountants via the [Model Context Protocol](https://modelcontextprotocol.io/). Install once, configure once — every future conversation can pull the right country's skills automatically.
+
+### How it works
+
+```
+You:    "Help me with my Malta taxes. Here's my bank statement."
+          ↓
+Claude: calls list_jurisdictions → sees "malta"
+Claude: calls list_files("malta") → foundation.md, malta-vat.md, …
+Claude: calls get_file("malta", "foundation.md") → full skill loaded
+          ↓
+Claude: processes your bank statement with the correct tax rules
+```
+
+### Install
+
+```bash
+git clone https://github.com/openaccountants/openaccountants.git
+cd openaccountants
+pip install ./mcp          # requires Python 3.10+
+```
+
+### Connect
+
+**Claude Desktop** — add to `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "openaccountants": {
+      "command": "openaccountants-mcp"
+    }
+  }
+}
+```
+
+**Cursor** — add to `.cursor/mcp.json` or via Settings > MCP:
+
+```json
+{
+  "mcpServers": {
+    "openaccountants": {
+      "command": "openaccountants-mcp"
+    }
+  }
+}
+```
+
+Full setup details, `uv` instructions, and environment variables: [`mcp/README.md`](mcp/README.md).
+
+---
+
 ## For developers
 
 ### Clone the repo
@@ -190,15 +253,6 @@ openaccountants/
 
 ```bash
 python3 scripts/build-packages.py
-```
-
-### MCP server (experimental)
-
-An MCP server lets Claude Desktop, Cursor, and other MCP clients discover and read skill files directly — no manual upload. See [`mcp/README.md`](mcp/README.md) for install and configuration.
-
-```bash
-pip install ./mcp
-openaccountants-mcp
 ```
 
 ---
