@@ -213,6 +213,8 @@ Every skill you write, verify, or improve — your name is on it publicly. Contr
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
+**Pull requests:** contributions are accepted under the [Contributor License Agreement (CLA.md)](CLA.md). You explicitly agree by ticking the CLA box in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) when you open a PR.
+
 ---
 
 ## Disclaimer
@@ -228,3 +230,5 @@ The most up-to-date, verified version is maintained at [openaccountants.com](htt
 ## License
 
 Dual-licensed: [AGPL-3.0](LICENSE) for open-source use, [commercial license](COMMERCIAL_LICENSE.md) for proprietary products.
+
+Contributions are licensed to the project under the [Contributor License Agreement](CLA.md); see [CONTRIBUTING.md](CONTRIBUTING.md) and the PR template for how you opt in.
