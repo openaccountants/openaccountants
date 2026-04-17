@@ -1,0 +1,15 @@
+[project]
+name = "openaccountants-mcp"
+version = "0.1.0"
+description = "MCP server for OpenAccountants tax skills"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-or-later"
+dependencies = ["mcp>=1.0.0"]
+
+[project.scripts]
+openaccountants-mcp = "openaccountants_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

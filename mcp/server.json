@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.openaccountants/openaccountants-mcp",
+  "description": "Read-only MCP server for 134 countries of open-source tax classification skills (VAT/GST, income tax, social contributions). Lists jurisdictions, lists skill files per country, and returns full skill text on demand.",
+  "version": "0.1.0",
+  "homepage": "https://openaccountants.com",
+  "repository": {
+    "url": "https://github.com/openaccountants/openaccountants",
+    "source": "https://github.com/openaccountants/openaccountants/tree/main/mcp"
+  },
+  "packages": [
+    {
+      "registry_type": "pypi",
+      "identifier": "openaccountants-mcp",
+      "version": "0.1.0"
+    }
+  ]
+}

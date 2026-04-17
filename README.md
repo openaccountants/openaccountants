@@ -192,6 +192,15 @@ openaccountants/
 python3 scripts/build-packages.py
 ```
 
+### MCP server (experimental)
+
+An MCP server lets Claude Desktop, Cursor, and other MCP clients discover and read skill files directly — no manual upload. See [`mcp/README.md`](mcp/README.md) for install and configuration.
+
+```bash
+pip install ./mcp
+openaccountants-mcp
+```
+
 ---
 
 ## Contribute
