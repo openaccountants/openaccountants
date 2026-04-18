@@ -111,7 +111,7 @@ Upload all files, say "help me with my taxes," and the AI walks you through ever
 
 | Country | What you get |
 |---------|-------------|
-| **Malta** | VAT3 + TA24 income tax + Class 2 SSC + provisional tax |
+| **Malta** | VAT + TA24 income tax + Class 2 SSC + provisional tax |
 | **United Kingdom** | VAT100 + SA103/SA100 + NIC + student loan |
 | **Germany** | UStVA + Einkommensteuer + Sozialversicherung |
 | **Australia** | BAS + ITR + super + Medicare levy |
@@ -258,6 +258,30 @@ python3 scripts/build-packages.py
 ---
 
 ## Contribute
+
+### Your country needs you
+
+These countries have AI-drafted skills (Q3) waiting for a human to verify the rates. No tax expertise required — if you can check your tax authority's website, you can help. Pick yours:
+
+| Country | What needs checking | Issue |
+|---------|-------------------|-------|
+| France | VAT, income tax, social contributions | [#4](https://github.com/openaccountants/openaccountants/issues/4) |
+| Italy | VAT, income tax, INPS contributions | [#5](https://github.com/openaccountants/openaccountants/issues/5) |
+| Netherlands | VAT, income tax | [#6](https://github.com/openaccountants/openaccountants/issues/6) |
+| Brazil | VAT, income tax, INSS, Simples Nacional | [#7](https://github.com/openaccountants/openaccountants/issues/7) |
+| Japan | Consumption tax | [#8](https://github.com/openaccountants/openaccountants/issues/8) |
+| Mexico | IVA | [#9](https://github.com/openaccountants/openaccountants/issues/9) |
+| South Korea | VAT | [#10](https://github.com/openaccountants/openaccountants/issues/10) |
+| Ireland | VAT, income tax, PRSI | [#11](https://github.com/openaccountants/openaccountants/issues/11) |
+| Switzerland | VAT | [#12](https://github.com/openaccountants/openaccountants/issues/12) |
+| Singapore | GST | [#13](https://github.com/openaccountants/openaccountants/issues/13) |
+| Nigeria | VAT | [#14](https://github.com/openaccountants/openaccountants/issues/14) |
+| South Africa | VAT | [#15](https://github.com/openaccountants/openaccountants/issues/15) |
+| Poland | VAT, ZUS contributions | [#16](https://github.com/openaccountants/openaccountants/issues/16) |
+| Belgium | VAT | [#17](https://github.com/openaccountants/openaccountants/issues/17) |
+| Sweden | VAT | [#18](https://github.com/openaccountants/openaccountants/issues/18) |
+
+Don't see your country? [Open an issue](https://github.com/openaccountants/openaccountants/issues/new) and we'll create one.
 
 ### Think your country's skill is wrong? Prove it.
 

@@ -186,7 +186,7 @@ If the user mentions BOTH employment AND self-employment:
 | Jurisdiction | Intake skill | What it covers |
 |-------------|-------------|----------------|
 | **US — California** | `us-ca-freelance-intake` | Federal 1040 + CA 540 + Form 568 |
-| **Malta** | `mt-freelance-intake` | TA24 + VAT3 + SSC + provisional tax |
+| **Malta** | `mt-freelance-intake` | TA24 + VAT + SSC + provisional tax |
 | **UK** | `uk-freelance-intake` | SA100 + SA103 + NIC + VAT + student loan |
 | **Germany** | `de-freelance-intake` | ESt + UStVA + SV + GewSt |
 | **Australia** | `au-freelance-intake` | ITR + BAS + super + Medicare |

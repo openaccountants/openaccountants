@@ -28,13 +28,8 @@ depends_on:
 | Filing portal | MTCA e-Services |
 | Filing deadline | 30 June of the following year (TA24 and TA22) |
 | Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-<<<<<<< HEAD
 | Validated by | Michael Cutajar |
 | Validation date | March 2026 |
-=======
-| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
-| Validation date | Pending |
->>>>>>> 70c2582 (Update accounting project files)
 | Skill version | 2.0 |
 
 ### Tax Rate Brackets (2025/2026)
@@ -129,7 +124,7 @@ depends_on:
 
 **R-MT-5 -- Arrears / enforcement.** "Client has outstanding tax arrears or is subject to MTCA enforcement action. The 1.6%/month combined late payment charges are severe and uncapped. Do not advise. Escalate to a warranted accountant immediately."
 
-**R-MT-6 -- VAT return requested.** "This skill covers income tax (TA24/TA22) only. For Malta VAT (VAT3), use the malta-vat-return skill."
+**R-MT-6 -- VAT return requested.** "This skill covers income tax (TA24/TA22) only. For Malta VAT, use the malta-vat-return skill."
 
 ---
 

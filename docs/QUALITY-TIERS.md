@@ -99,7 +99,7 @@ This requires humans and real data. Cannot be automated.
 
 | Skill | Jurisdiction | Iterations | Data |
 |-------|-------------|------------|------|
-| `malta-vat-return` | Malta | Multiple | Real VAT3 filings |
+| `malta-vat-return` | Malta | Multiple | Real Malta VAT return filings |
 | `malta-income-tax` | Malta | Multiple | Real TA24 data |
 | `malta-ssc` | Malta | Multiple | Real Class 2 SSC data |
 | `germany-vat-return` | Germany | Multiple | Real bank statements |
@@ -237,20 +237,13 @@ For each Q3 skill, an agent runs this exact process:
 
 ```
 ┌─────────────────────────────────────────────┐
-│  Malta VAT Return (VAT3) v1.0               │
+│  Malta VAT Return v1.0                      │
 │  ████████████ BATTLE-TESTED (Q1)            │
 │                                             │
-<<<<<<< HEAD
 │  Verified by: Michael Cutajar, CPA          │
 │  Tested against: Real client data           │
 │  Iterations: Multiple filing cycles         │
 │  Last updated: March 2026                   │
-=======
-│  Verified by: [Practitioner name], CPA      │
-│  Tested against: Real client data           │
-│  Iterations: Multiple filing cycles         │
-│  Last updated: [Date]                       │
->>>>>>> 70c2582 (Update accounting project files)
 └─────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────┐

@@ -48,13 +48,13 @@ depends_on:
 |---|---|---|
 | Zelfstandigenaftrek | EUR 2,470 | Must meet urencriterium (>=1,225 hours/year in business) |
 | Startersaftrek | EUR 2,123 (additional) | First 3 years of business; combined max EUR 4,593 for year 1-3 |
-| MKB-winstvrijstelling | 13.31% of profit after other deductions | No urencriterium required -- applies to ALL entrepreneurs |
+| MKB-winstvrijstelling | 12.7% of profit after other deductions | No urencriterium required -- applies to ALL entrepreneurs |
 
 **Order of computation:**
 1. Winst (profit = revenue - deductible business expenses)
 2. Less: Zelfstandigenaftrek (if urencriterium met)
 3. Less: Startersaftrek (if eligible)
-4. Less: MKB-winstvrijstelling (13.31% of result after above deductions)
+4. Less: MKB-winstvrijstelling (12.7% of result after above deductions)
 5. = Belastbaar inkomen Box 1 (from business)
 
 ### Heffingskortingen (Tax Credits -- Reduce Tax Payable) [T1]
@@ -242,7 +242,7 @@ All income tax computations use revenue and expenses exclusive of BTW (VAT). Amo
 
 **Legislation:** Art. 3.79a Wet IB 2001
 
-The 13.31% MKB-winstvrijstelling applies to ALL entrepreneurs (eenmanszaak, VOF, maatschap) regardless of whether urencriterium is met. Always apply it after other entrepreneur deductions. Never omit it.
+The 12.7% MKB-winstvrijstelling applies to ALL entrepreneurs (eenmanszaak, VOF, maatschap) regardless of whether urencriterium is met. Always apply it after other entrepreneur deductions. Never omit it.
 
 ### 5.3 Voorlopige Aanslag Is Not Deductible
 
@@ -278,7 +278,7 @@ Less: Zelfstandigenaftrek (if urencriterium met)
 Less: Startersaftrek (if eligible, years 1-3)
 Less: KIA (if qualifying investments >= EUR 2,801)
 = Subtotal
-Less: MKB-winstvrijstelling (13.31% of subtotal)
+Less: MKB-winstvrijstelling (12.7% of subtotal)
 = Belastbaar inkomen Box 1
 Apply bracket rates
 = Box 1 tax
@@ -378,7 +378,7 @@ Zelfstandigenaftrek (if uren met)      ___________
 Startersaftrek (if eligible yr 1-3)    ___________
 KIA (kleinschaligheidsinvesteringsaftrek) ________
 Subtotal after deductions              ___________
-MKB-winstvrijstelling (13.31%)         (___________)
+MKB-winstvrijstelling (12.7%)         (___________)
 BELASTBAAR INKOMEN BOX 1               ___________
 
 SECTION E -- BOX 1 TAX COMPUTATION
@@ -512,7 +512,7 @@ ONBOARDING QUESTIONS -- NETHERLANDS INCOME TAX (IB)
 
 - [ ] All amounts ex-BTW?
 - [ ] Urencriterium confirmed before applying zelfstandigenaftrek?
-- [ ] MKB-winstvrijstelling (13.31%) applied after all other deductions?
+- [ ] MKB-winstvrijstelling (12.7%) applied after all other deductions?
 - [ ] Voorlopige aanslag excluded from expenses?
 - [ ] BTW payments excluded from expenses?
 - [ ] KIA threshold (EUR 2,801 minimum) checked?

@@ -16,7 +16,7 @@
         "\n",
         "### Why composition\n",
         "\n",
-        "The discipline that prevents that failure has two parts. The first part is universal — *how* to handle ambiguity, *how* to flag positions for review, *how* to refuse out-of-scope situations. That part doesn't change between Schedule C and a UK VAT100 and a Malta VAT3 form; it's the workflow contract. The second part is jurisdiction-specific — the actual vendor pattern table, the actual conservative defaults, the actual refusal triggers, the actual form lines. That part changes for every jurisdiction.\n",
+        "The discipline that prevents that failure has two parts. The first part is universal — *how* to handle ambiguity, *how* to flag positions for review, *how* to refuse out-of-scope situations. That part doesn't change between Schedule C and a UK VAT100 and a Malta VAT return; it's the workflow contract. The second part is jurisdiction-specific — the actual vendor pattern table, the actual conservative defaults, the actual refusal triggers, the actual form lines. That part changes for every jurisdiction.\n",
         "\n",
         "We split the two parts into two skills. The workflow base is reusable. The content skill is swappable. This is the architectural move that lets the same safety pattern scale across many regulated domains."
       ]

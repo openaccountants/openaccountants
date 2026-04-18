@@ -539,7 +539,7 @@ Field 51 = Field 41 + corrections/interest (if any)
 |---------|--------------|------------|
 | Standard rate | 22% | 18% |
 | Reduced rates | 9.5%, 5% | 12%, 7%, 5% |
-| Return form | DDV-O (~25 fields + records from July 2025) | VAT3 (45 boxes) |
+| Return form | DDV-O (~25 fields + records from July 2025) | Malta periodic VAT return (~45 boxes) |
 | Filing frequency | Monthly / Quarterly | Quarterly (Art. 10), Annual (Art. 11) |
 | Filing deadline | Last business day of following month | 21st of month after quarter |
 | Payment deadline | Same as filing | Same as filing |

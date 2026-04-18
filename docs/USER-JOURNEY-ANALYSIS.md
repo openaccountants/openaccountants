@@ -6,7 +6,7 @@ No assumptions. No building. Just: what does a real user do, and where does it b
 
 ## The user
 
-Maria, 34, freelance software developer in Valletta, Malta. Self-employed, Article 10 VAT registered, invoices EU and non-EU clients. Has a BOV business bank account. Needs to file her 2025 TA24, VAT3, and SSC.
+Maria, 34, freelance software developer in Valletta, Malta. Self-employed, Article 10 VAT registered, invoices EU and non-EU clients. Has a BOV business bank account. Needs to file her 2025 TA24, VAT return, and SSC.
 
 She's heard about OpenAccountants from a developer friend or a tweet.
 
@@ -101,7 +101,7 @@ Maria has loaded the Malta skills. She attaches her BOV bank statement and says:
 **What should happen:**
 1. The intake skill asks 5-6 onboarding questions
 2. Claude reads the bank statement and classifies transactions using the supplier pattern library
-3. Claude builds the VAT3, TA24, SSC, and provisional tax outputs
+3. Claude builds the Malta VAT return, TA24, SSC, and provisional tax outputs
 4. Claude runs cross-checks
 5. Claude produces the working paper + reviewer brief
 
@@ -117,7 +117,7 @@ Maria has loaded the Malta skills. She attaches her BOV bank statement and says:
 ## Step 4: The output
 
 Claude produces the working papers. Maria gets:
-- VAT3 box values
+- VAT return box values
 - TA24 computation
 - SSC calculation
 - Provisional tax schedule

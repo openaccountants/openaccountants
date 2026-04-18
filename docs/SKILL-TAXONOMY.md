@@ -361,7 +361,7 @@ VAT layers: `vat-workflow-base` + `eu-vat-directive` + `ie-vat-return`.
 |-------|------|------|--------|------|
 | MT Income Tax (TA24) | IT | Computation + Return | **Done** | `international/malta/malta-income-tax.md` |
 | MT Social Security Contributions (Class 2) | SC | Computation | **Done** | `international/malta/malta-ssc.md` |
-| MT VAT Return (VAT3) | CT | Return | **Done** | `international/malta/malta-vat-return.md` |
+| MT VAT Return | CT | Return | **Done** | `international/malta/malta-vat-return.md` |
 | MT Estimated Tax (Provisional Tax) | ET | Computation | **Needed** | — |
 | MT Freelance Intake | infra | Intake | **Needed** | — |
 | MT Return Assembly | IT | Orchestrator | **Needed** | — |

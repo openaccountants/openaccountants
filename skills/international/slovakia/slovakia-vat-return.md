@@ -537,7 +537,7 @@ END
 |---------|--------------|------------|
 | Standard rate | 23% (from 2025; previously 20%) | 18% |
 | Reduced rates | 19%, 5% (from 2025; previously 10%) | 12%, 7%, 5% |
-| Return form | DPHv25 (~34 rows from July 2025) | VAT3 (45 boxes) |
+| Return form | DPHv25 (~34 rows from July 2025) | Malta periodic VAT return (~45 boxes) |
 | Control Statement | Kontrolny vykaz (mandatory) | No equivalent |
 | Filing frequency | Monthly / Quarterly | Quarterly (Art. 10), Annual (Art. 11) |
 | Filing deadline | 25th of following month | 21st of month after quarter |

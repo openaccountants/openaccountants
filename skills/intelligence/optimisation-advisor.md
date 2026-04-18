@@ -583,7 +583,7 @@ For each suggestion, state:
 |---|---|
 | **Category** | Elections |
 | **Trigger** | User is near the EUR 35,000 Article 11 threshold OR is Article 11 exempt with significant input VAT |
-| **Calculation** | Compare: (a) Article 11: no VAT charged, no input VAT recovered, annual declaration only. (b) Article 10: charge 18% VAT, recover input VAT, quarterly VAT3 returns. `net_benefit = input_vat_recoverable - admin_cost`. If primarily B2B: Article 10 is usually neutral (clients recover VAT). |
+| **Calculation** | Compare: (a) Article 11: no VAT charged, no input VAT recovered, annual declaration only. (b) Article 10: charge 18% VAT, recover input VAT, quarterly VAT returns. `net_benefit = input_vat_recoverable - admin_cost`. If primarily B2B: Article 10 is usually neutral (clients recover VAT). |
 | **Materiality** | > EUR 200 annual net benefit |
 | **Confidence** | T2 -- depends on client mix and input VAT |
 | **Reviewer flag** | Voluntary Article 10 registration is available even below threshold. Once registered, minimum 3-year period. B2C pricing: VAT adds 18% to price. EU supply implications: Article 10 needed for B2B reverse-charge mechanism. |

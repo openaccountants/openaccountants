@@ -359,7 +359,7 @@ Output and input both reported by recipient. Flag for reviewer — R-CY-3.
 - Motor vehicles: proportional deduction based on business use (not hard-blocked like Malta)
 
 ### 5.12 Cyprus consolidated Box structure
-Unlike Malta's 45-box VAT3, Cyprus VAT4 has only 11 boxes plus sub-boxes. All rates are aggregated into Box 1 (output) and Box 4 (input).
+Unlike Malta's ~45-box periodic VAT return, Cyprus VAT4 has only 11 boxes plus sub-boxes. All rates are aggregated into Box 1 (output) and Box 4 (input).
 
 ---
 

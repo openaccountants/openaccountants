@@ -265,7 +265,7 @@ Format per Section 5.
 | **Jurisdiction** | MT |
 | **Threshold name** | Article 11 VAT exemption (small undertaking) |
 | **Amount** | EUR 35,000 annual turnover from economic activity (+ EUR 14,000 rental income if applicable) |
-| **What happens if exceeded** | Must register under Article 10 (standard VAT). Must charge 18% VAT on taxable supplies. Must file VAT3 returns. Can recover input VAT. |
+| **What happens if exceeded** | Must register under Article 10 (standard VAT). Must charge 18% VAT on taxable supplies. Must file periodic VAT returns (via CFR). Can recover input VAT. |
 | **What happens if below** | Exempt from charging VAT under Article 11. No VAT returns required. Cannot recover input VAT. Annual declaration only. |
 | **Measurement period** | Rolling 12 months, or expected turnover in next 12 months |
 | **Action if approaching** | Compare input VAT recovery benefit vs. pricing simplicity. Article 10 registration is advantageous if selling primarily B2B (customers recover VAT). Consider timing of invoicing. |

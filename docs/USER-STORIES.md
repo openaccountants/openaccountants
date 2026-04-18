@@ -140,7 +140,7 @@ User says: "I'm a freelance developer in [country]. Help me with my taxes."
 > 2. Refusal sweep: Malta resident? Self-employed (not TA22 part-time)? Article 10 or 11 VAT?
 > 3. Maria uploads bank statements + invoices
 > 4. MT assembly runs:
->    - `malta-vat-return` (VAT3 — Q1!)
+>    - `malta-vat-return` (Malta VAT return — Q1!)
 >    - `malta-income-tax` (TA24 — Q1!)
 >    - `malta-ssc` (Class 2 — Q1!)
 >    - `mt-estimated-tax` (provisional tax — Q4 stub)

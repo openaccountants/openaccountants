@@ -1,6 +1,6 @@
 ---
 name: mt-return-assembly
-description: Final orchestrator skill that assembles the complete Malta filing package for Malta-resident self-employed individuals and sole proprietors. Consumes outputs from all Malta content skills (malta-vat-return for VAT3, malta-income-tax for TA24, malta-ssc for Class 2 contributions, mt-estimated-tax for provisional tax) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Malta content skills listed above. Malta full-year residents only. Self-employed individuals and sole proprietors only.
+description: Final orchestrator skill that assembles the complete Malta filing package for Malta-resident self-employed individuals and sole proprietors. Consumes outputs from all Malta content skills (malta-vat-return for Malta VAT, malta-income-tax for TA24, malta-ssc for Class 2 contributions, mt-estimated-tax for provisional tax) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Malta content skills listed above. Malta full-year residents only. Self-employed individuals and sole proprietors only.
 version: 0.1
 ---
 
@@ -40,7 +40,7 @@ Produces the complete Malta filing package for:
 - Full-year Malta residents
 - Self-employed individuals and sole proprietors (self-occupied)
 - Tax year 2025
-- Filing VAT3 (quarterly or Article 11 annual), TA24, Class 2 SSC reconciliation, provisional tax schedule
+- Filing Malta VAT returns (Article 10 quarterly or Article 11 annual), TA24, Class 2 SSC reconciliation, provisional tax schedule
 
 ---
 
@@ -48,11 +48,11 @@ Produces the complete Malta filing package for:
 
 The skill enforces the following execution order:
 
-1. **`malta-vat-return`** -- VAT3 return (quarterly for Article 10, annual declaration for Article 11)
+1. **`malta-vat-return`** -- Malta VAT return (quarterly for Article 10, annual declaration for Article 11)
    - Runs first because VAT turnover figures feed into the TA24
-   - For Article 10: prepare Q4 2025 VAT3 if not yet filed; verify Q1-Q3 figures
+   - For Article 10: prepare Q4 2025 VAT return if not yet filed; verify Q1-Q3 figures
    - For Article 11: prepare annual declaration; verify turnover remains under EUR 35,000
-   - Output: VAT3 box values, input VAT recovered/blocked, turnover (ex-VAT)
+   - Output: VAT return box values, input VAT recovered/blocked, turnover (ex-VAT)
 
 2. **`malta-income-tax`** -- TA24 self-employed return (annual)
    - Depends on VAT output: gross income (Box 1) must use ex-VAT turnover for Article 10 clients
@@ -79,7 +79,7 @@ If any upstream content skill fails to produce validated output, the assembly sk
 
 | VAT Output | TA24 Input | Rule |
 |-----------|-----------|------|
-| VAT3 total turnover (ex-VAT) | TA24 Box 1 (gross income) | Must match within EUR 1 |
+| VAT return total turnover (ex-VAT) | TA24 Box 1 (gross income) | Must match within EUR 1 |
 | Article 10: sum of Box 1 + Box 2 (outputs) | TA24 Box 1 | Turnover is ex-VAT |
 | Article 11: declared turnover | TA24 Box 1 | Turnover is gross (no VAT separation) |
 
@@ -108,18 +108,18 @@ If any upstream content skill fails to produce validated output, the assembly sk
 
 | Item | VAT Treatment | Income Tax Treatment |
 |------|--------------|---------------------|
-| Reclaimable input VAT (Article 10) | Claimed in VAT3 Box 34-38 | NOT a deduction in TA24 Box 2 (net amount only) |
+| Reclaimable input VAT (Article 10) | Claimed in VAT return Boxes 34-38 | NOT a deduction in TA24 Box 2 (net amount only) |
 | Blocked input VAT (Article 10) | Not claimed | IS a deduction in TA24 Box 2 (added to cost) |
 | All VAT paid (Article 11) | No recovery | IS a deduction in TA24 Box 2 (gross amount is cost) |
-| Capital goods VAT (Article 10, >= EUR 1,160) | Box 36 of VAT3 | Capital allowance in TA24 Box 15 (on net cost) |
+| Capital goods VAT (Article 10, >= EUR 1,160) | Box 36 of VAT return | Capital allowance in TA24 Box 15 (on net cost) |
 
-**If inconsistency:** An expense claimed net of VAT on the TA24 while also not claimed on the VAT3 means the VAT is lost. Flag for reviewer.
+**If inconsistency:** An expense claimed net of VAT on the TA24 while also not claimed on the VAT return means the VAT is lost. Flag for reviewer.
 
 ### Cross-check 5: Capital items consistent across VAT and income tax
 
 | System | Threshold | Treatment |
 |--------|-----------|-----------|
-| VAT Capital Goods Scheme | >= EUR 1,160 gross | VAT3 Box 30 |
+| VAT Capital Goods Scheme | >= EUR 1,160 gross | VAT return Box 30 |
 | Income Tax Capital Allowances | No threshold | TA24 Box 15, depreciated per 6th Schedule |
 
 A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in Box 15) but does NOT go to VAT Box 30. These are separate systems and must be tracked independently.
@@ -131,7 +131,7 @@ A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in B
 ### Documents
 
 1. **Executive summary** -- one-page overview: filing status, income, tax liability, VAT position, SSC, provisional tax, refund/balance due
-2. **VAT3 worksheet** -- box-by-box with formulas (Q4 2025 or annual Article 11)
+2. **VAT return worksheet** -- box-by-box with formulas (Q4 2025 or annual Article 11)
 3. **TA24 worksheet** -- Box 1 through Box 40 with formulas and supporting schedules
 4. **Capital allowances schedule** -- asset register with cost, date, rate, annual allowance, WDV
 5. **SSC reconciliation** -- category determination, amount due, payments made, shortfall/overpayment
@@ -150,7 +150,7 @@ A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in B
 - Residence: Malta (full-year)
 - Business: Self-employed / Self-occupied, sole proprietor
 - VAT registration: Article 10 / Article 11
-- VAT3 position (Q4 or annual): EUR X due / EUR X credit
+- VAT return position (Q4 or annual): EUR X due / EUR X credit
 - TA24 total tax liability (Box 35): EUR X
 - SSC Class 2 annual amount: EUR X
 - Provisional tax paid (Box 36): EUR X
@@ -235,7 +235,7 @@ A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in B
 1. Review this return package with your warranted accountant
 2. File TA24 via MTCA e-Services
 3. Pay TA24 balance due of EUR X to CFR
-4. File Q4 2025 VAT3 (if not yet filed) -- deadline was [date]
+4. File Q4 2025 Malta VAT return (if not yet filed) -- deadline was [date]
 
 ### Before 30 April 2026 (ALREADY PASSED if current date is after -- check):
 1. Pay 2026 1st provisional tax instalment of EUR X (20%)
@@ -311,7 +311,7 @@ A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in B
 
 The final output is **three files**:
 
-1. **`[client_slug]_2025_malta_master.xlsx`** -- Single master workbook containing every worksheet and form. Sheets include: Cover, VAT3 (Q4 or Annual), TA24 (Box 1-40), Capital Allowances, Expense Detail, SSC Reconciliation, Provisional Tax 2026, Cross-Check Summary. Use live formulas where possible -- e.g., TA24 Box 1 references the VAT3 turnover cell; Box 20 references the SSC sheet total; Box 36 references the provisional tax paid. Verify no `#REF!` errors. Verify computed values match the Python/computation model within EUR 1 before shipping.
+1. **`[client_slug]_2025_malta_master.xlsx`** -- Single master workbook containing every worksheet and form. Sheets include: Cover, VAT return (Q4 or Annual), TA24 (Box 1-40), Capital Allowances, Expense Detail, SSC Reconciliation, Provisional Tax 2026, Cross-Check Summary. Use live formulas where possible -- e.g., TA24 Box 1 references the VAT turnover cell; Box 20 references the SSC sheet total; Box 36 references the provisional tax paid. Verify no `#REF!` errors. Verify computed values match the Python/computation model within EUR 1 before shipping.
 
 2. **`reviewer_brief.md`** -- Single markdown file covering all sections from Section 4 above: executive summary, VAT return, TA24, SSC, provisional tax, cross-skill reconciliation, flags, positions, planning notes.
 
@@ -327,7 +327,7 @@ The final output is **three files**:
 
 **Inputs:**
 - `mt-freelance-intake` -- structured intake package (JSON)
-- `malta-vat-return` -- VAT3 box values and classification output
+- `malta-vat-return` -- VAT return box values and classification output
 - `malta-income-tax` -- TA24 box values and computation output
 - `malta-ssc` -- Class 2 reconciliation output
 - `mt-estimated-tax` -- Provisional tax schedule (or fallback computation)
@@ -349,7 +349,7 @@ The final output is **three files**:
 9. The package is complete only for the 2025 tax year; 2026 appears only as prospective planning.
 
 ### Change log
-- **v0.1 (April 2026):** Initial draft. Modelled on us-ca-return-assembly v0.2 adapted for Malta jurisdiction with four content skills (VAT3, TA24, SSC, provisional tax).
+- **v0.1 (April 2026):** Initial draft. Modelled on us-ca-return-assembly v0.2 adapted for Malta jurisdiction with four content skills (Malta VAT return, TA24, SSC, provisional tax).
 
 ## End of skill
 

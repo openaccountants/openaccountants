@@ -1,10 +1,10 @@
 ---
 name: malta-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Malta VAT return (VAT3 form) or Article 11 annual declaration for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in VAT3", "create the return", "Article 11 declaration", or any request involving Malta VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Malta only and only Article 10 (standard) and Article 11 (small enterprise) registrations. Article 12, partial exemption, capital goods scheme adjustments, margin schemes, and VAT groups are all in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Malta VAT work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Malta VAT return (Article 10 periodic return via CFR) or Article 11 annual declaration for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "periodic VAT return", "CFR VAT", "create the return", "Article 11 declaration", or any request involving Malta VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Malta only and only Article 10 (standard) and Article 11 (small enterprise) registrations. Article 12, partial exemption, capital goods scheme adjustments, margin schemes, and VAT groups are all in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Malta VAT work.
 version: 2.0
 ---
 
-# Malta VAT Return Skill (VAT3 / Article 11 Declaration) v2.0
+# Malta VAT Return Skill (Article 10 periodic / Article 11) v2.0
 
 ## Section 1 — Quick reference
 
@@ -16,7 +16,8 @@ version: 2.0
 | Standard rate | 18% |
 | Reduced rates | 7% (accommodation, minor repairs), 5% (food, pharmaceuticals, printed matter, medical devices), 12% (certain financial instruments, confectionery) |
 | Zero rate | 0% (exports, intra-EU B2B supplies, certain foodstuffs, passenger transport by sea/air) |
-| Return form | VAT3 (standard Article 10 periodic return); Article 11 Annual Declaration (4-box simplified form) |
+| Return form | Article 10 periodic VAT return (via CFR); Article 11 Annual Declaration (4-box simplified form) |
+| Local naming | In Malta this is referred to as your **VAT return** — not by a form number. |
 | Filing portal | https://cfr.gov.mt (VAT Online) |
 | Authority | Commissioner for Revenue (CFR), Malta |
 | Currency | EUR only |
@@ -25,15 +26,10 @@ version: 2.0
 | Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
 | Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-<<<<<<< HEAD
 | Validated by | Michael Cutajar, Kevin Farrugia (warranted accountants) |
 | Validation date | March 2026 |
-=======
-| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
-| Validation date | Pending |
->>>>>>> 70c2582 (Update accounting project files)
 
-**Key VAT3 boxes (the boxes you will use most):**
+**Key VAT return boxes (the boxes you will use most):**
 
 | Box | Meaning |
 |---|---|
@@ -114,15 +110,15 @@ version: 2.0
 
 **Recommended** — sales invoices for the period (especially for intra-EU B2B services and zero-rated supplies), purchase invoices for any input VAT claim above €200, the client's VAT number in writing (MT + 8 digits).
 
-**Ideal** — complete invoice register, Article 10/11 registration certificate, prior period VAT3, reconciliation of Box 44 credit brought forward.
+**Ideal** — complete invoice register, Article 10/11 registration certificate, prior period VAT returns, reconciliation of Box 44 credit brought forward.
 
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all → hard stop. If bank statement only without invoices → proceed but record in the reviewer brief: "This VAT3 was produced from bank statement alone. The reviewer must verify, before approval, that input VAT claims above €200 are supported by compliant tax invoices and that all reverse-charge classifications match the supplier's invoice."
+**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all → hard stop. If bank statement only without invoices → proceed but record in the reviewer brief: "This VAT return was produced from bank statement alone. The reviewer must verify, before approval, that input VAT claims above €200 are supported by compliant tax invoices and that all reverse-charge classifications match the supplier's invoice."
 
 ### Malta-specific refusal catalogue
 
 These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation. Refusal is a safety mechanism.
 
-**R-MT-1 — Article 11 client attempting to claim input VAT.** *Trigger:* client is Article 11 registered, or turnover is below €35,000 and client has not opted into Article 10. *Message:* "Article 11 clients are exempt from charging VAT and cannot recover input VAT. They file a simplified annual declaration only, not a VAT3. This skill can help you with the Article 11 annual declaration but cannot prepare a VAT3 or calculate input VAT recovery for an Article 11 client."
+**R-MT-1 — Article 11 client attempting to claim input VAT.** *Trigger:* client is Article 11 registered, or turnover is below €35,000 and client has not opted into Article 10. *Message:* "Article 11 clients are exempt from charging VAT and cannot recover input VAT. They file a simplified annual declaration only, not the Article 10 periodic VAT return. This skill can help you with the Article 11 annual declaration but cannot prepare an Article 10 periodic VAT return or calculate input VAT recovery for an Article 11 client."
 
 **R-MT-2 — Article 12 registration (distance selling / EU goods acquisition threshold).** *Trigger:* client is Article 12 registered (goods acquirer from EU exceeding €10,000/year threshold, monthly filer). *Message:* "Article 12 registrations have different filing frequencies and obligations. This skill covers Article 10 and Article 11 only. Please escalate to a warranted accountant familiar with Article 12 obligations."
 
@@ -136,7 +132,7 @@ These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Sectio
 
 **R-MT-7 — Fiscal representative.** *Trigger:* non-resident supplier or client with a fiscal representative in Malta. *Message:* "Non-resident registrations with fiscal representatives have specific obligations beyond this skill. Please use a warranted accountant."
 
-**R-MT-8 — Annual return (TA24 income tax) instead of VAT3.** *Trigger:* user asks about annual income tax return, not the VAT3. *Message:* "This skill only handles the VAT3 and Article 11 VAT declaration. For Malta income tax (TA24), use the malta-income-tax skill."
+**R-MT-8 — Annual return (TA24 income tax) instead of Malta VAT.** *Trigger:* user asks about annual income tax return, not the VAT return. *Message:* "This skill only handles Malta VAT returns (Article 10 periodic and Article 11). For Malta income tax (TA24), use the malta-income-tax skill."
 
 ---
 
@@ -452,7 +448,7 @@ Blocked categories override partial exemption. Check blocked status before apply
 
 ### 5.13 Article 11 annual declaration (4-box simplified form)
 
-Article 11 clients do not file VAT3. They file a 4-box annual declaration:
+Article 11 clients do not file the Article 10 periodic VAT return. They file a 4-box annual declaration:
 - Box 1: Sales of goods
 - Box 2: Provision of services
 - Box 3: Purchases of stock for resale
@@ -542,7 +538,7 @@ The base specification is in `vat-workflow-base` Section 3. This section provide
 
 ### Sheet "Transactions"
 
-Columns A–L per the base. Column H ("Box code") accepts only valid Malta VAT3 box codes from Section 1 of this skill. Use blank for excluded transactions. For reverse-charge transactions, enter both the input box (e.g. 9a) and the output box (e.g. 3) separated by a slash in column H.
+Columns A–L per the base. Column H ("Box code") accepts only valid Malta VAT return box codes from Section 1 of this skill. Use blank for excluded transactions. For reverse-charge transactions, enter both the input box (e.g. 9a) and the output box (e.g. 3) separated by a slash in column H.
 
 ### Sheet "Box Summary"
 
@@ -600,7 +596,7 @@ Local purchases:
 
 ### Sheet "Return Form"
 
-Final VAT3-ready figures. The bottom-line cell is Box 43 (payable) or Box 42 (excess credit):
+Final VAT return-ready figures. The bottom-line cell is Box 43 (payable) or Box 42 (excess credit):
 
 ```
 Box 26 = Grand total output VAT
@@ -668,7 +664,7 @@ For each question, the inference rule comes first. Only ask if inference fails.
 *Inference rule:* sole trader names often match the account holder name; company names end in "Ltd", "Limited", "Co. Ltd". *Fallback question:* "Are you a self-employed sole trader, a limited company, or a partnership?"
 
 ### 9.2 VAT registration type
-*Inference rule:* if the client is asking for a VAT3, they are Article 10. If they mention no VAT on sales and annual filing, they are Article 11. *Fallback question:* "Are you Article 10 (standard VAT, charging 18%) or Article 11 (small enterprise exemption, turnover below €35,000)?"
+*Inference rule:* if the client is asking for a periodic VAT return (Article 10), they are Article 10. If they mention no VAT on sales and annual filing, they are Article 11. *Fallback question:* "Are you Article 10 (standard VAT, charging 18%) or Article 11 (small enterprise exemption, turnover below €35,000)?"
 
 ### 9.3 VAT number
 *Inference rule:* MT-format VAT numbers sometimes appear in payment descriptions from EU customers. Search statement descriptions first. *Fallback question:* "What is your Maltese VAT number? (MT + 8 digits)"
@@ -700,11 +696,7 @@ For each question, the inference rule comes first. Only ask if inference fails.
 
 ### Validation status
 
-<<<<<<< HEAD
 This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture (vat-workflow-base + eu-vat-directive + country skill). It supersedes v1.0 (March 2026, standalone monolithic skill). The Malta-specific content (box mappings, rates, thresholds, blocked categories) has been validated against the VAT Act Chapter 406 and CFR guidance by Michael Cutajar (CPA Warrant No. 125122) and Kevin Farrugia (warranted accountant), both in Malta.
-=======
-This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture (vat-workflow-base + eu-vat-directive + country skill). It supersedes v1.0 (March 2026, standalone monolithic skill). The Malta-specific content (box mappings, rates, thresholds, blocked categories) is drawn from the VAT Act Chapter 406 and CFR guidance. Independent sign-off by a Maltese warranted accountant is pending and is a prerequisite to any reliance.
->>>>>>> 70c2582 (Update accounting project files)
 
 ### Sources
 
@@ -713,7 +705,7 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora 
 2. Value Added Tax (Amendment) Acts (subsequent amendments incorporated in consolidated text)
 
 **CFR guidance:**
-3. CFR VAT3 form and completion notes — https://cfr.gov.mt
+3. CFR VAT return forms and completion notes — https://cfr.gov.mt
 4. CFR Article 11 Annual Declaration form — https://cfr.gov.mt
 5. CFR guidance on reverse charge (intra-EU and non-EU services)
 6. CFR VAT registration thresholds notice (Article 10/11/12 boundaries)
@@ -739,11 +731,7 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora 
 ### Change log
 
 - **v2.0 (April 2026):** Full rewrite to align with three-tier Accora architecture. Quick reference moved to top (Section 1). Supplier pattern library restructured as literal lookup tables (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue restructured to compressed format (Section 6). Excel working paper specification added (Section 7). Bank statement reading guide added (Section 8). Onboarding moved to fallback role with inference rules (Section 9). Reference material moved to bottom (Section 10). Companion skill references updated to vat-workflow-base v0.1 and eu-vat-directive v0.1.
-<<<<<<< HEAD
 - **v1.0 (March 2026):** Initial skill. Standalone monolithic document covering Malta VAT Act Chapter 406, box mappings, reverse charge mechanics, blocked categories, edge case registry, and test suite. Validated by Michael Cutajar and Kevin Farrugia.
-=======
-- **v1.0 (March 2026):** Initial skill. Standalone monolithic document covering Malta VAT Act Chapter 406, box mappings, reverse charge mechanics, blocked categories, edge case registry, and test suite.
->>>>>>> 70c2582 (Update accounting project files)
 
 ### Self-check (v2.0 of this document)
 
@@ -765,7 +753,7 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora 
 
 ## End of Malta VAT Return Skill v2.0
 
-This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a VAT3 without all three files loaded.
+This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a complete Malta VAT return without all three files loaded.
 
 
 ---

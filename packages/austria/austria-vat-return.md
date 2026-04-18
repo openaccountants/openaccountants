@@ -55,7 +55,7 @@ version: 2.0
 | 095 | Net payable (Zahllast) |
 | 090 | Excess credit (Gutschrift) |
 
-**Note on Austrian UVA form:** The Austrian UVA uses Kennzahlen (KZ) rather than sequential box numbers. The mapping is less intuitive than Malta's VAT3. Key principle: every reverse charge transaction has a base KZ and a corresponding output USt KZ, plus an input Vorsteuer KZ. For a fully taxable business, the net effect of reverse charge is zero.
+**Note on Austrian UVA form:** The Austrian UVA uses Kennzahlen (KZ) rather than sequential box numbers. The mapping is less intuitive than Malta's VAT return layout. Key principle: every reverse charge transaction has a base KZ and a corresponding output USt KZ, plus an input Vorsteuer KZ. For a fully taxable business, the net effect of reverse charge is zero.
 
 **Conservative defaults — Austria-specific:**
 

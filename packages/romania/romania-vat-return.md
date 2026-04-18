@@ -494,7 +494,7 @@ Domestic reverse charge procedure:
 |---------|-------------|------------|
 | Standard rate | 21% (from Aug 2025; previously 19%) | 18% |
 | Reduced rates | 11%, 9% (transitional) | 12%, 7%, 5% |
-| Return form | D300 (~37 rows) | VAT3 (45 boxes) |
+| Return form | D300 (~37 rows) | Malta periodic VAT return (~45 boxes) |
 | Filing frequency | Monthly / Quarterly | Quarterly (Art. 10), Annual (Art. 11) |
 | Filing deadline | 25th of following month | 21st of month after quarter (e-filing) |
 | Payment deadline | 25th | Same as filing |

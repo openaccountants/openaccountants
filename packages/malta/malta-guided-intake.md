@@ -117,7 +117,7 @@ Q6: "Industry?"
 ```
 
 **Evaluate Q4:**
-- **Article 10** -> continue. Standard VAT3 quarterly returns.
+- **Article 10** -> continue. Standard quarterly VAT returns.
 - **Article 11** -> continue. Annual declaration, no input VAT recovery, turnover must be under EUR 35,000.
 - **Not VAT registered** -> continue with a flag: if turnover exceeds EUR 35,000, registration is mandatory. Will check after inference.
 - **Not sure** -> ask one follow-up: "Do you charge 18% VAT on your invoices? If yes, you're Article 10. If your invoices say 'exempt under Article 11' or show no VAT, you're Article 11 or unregistered."
@@ -144,7 +144,7 @@ Once the refusal sweep passes, immediately ask for the document dump. Single mes
 > - Sales invoices issued in 2025
 > - Purchase invoices / receipts for business expenses
 > - Prior year TA24 return (or at least last year's final tax liability)
-> - Prior VAT3 returns for 2025 (if Article 10)
+> - Prior VAT returns for 2025 (if Article 10)
 > - SSC payment receipts or DSS statements
 > - Any MTCA notices or correspondence
 > - Capital asset purchase receipts (computers, equipment, vehicles)
@@ -206,7 +206,7 @@ When documents arrive, parse each one. For each document, extract:
 - Prior year capital allowances schedule (continuing depreciation)
 - Filing status and rate table used
 
-**Prior VAT3 returns:**
+**Prior VAT returns:**
 - Quarterly turnover and VAT collected
 - Input VAT claimed
 - Any excess credit carried forward
@@ -267,15 +267,15 @@ After inference, present a single compact summary message. Use a structured form
 > - 2024 net self-employment income: EUR 28,000
 > - Expected 2025 provisional tax (based on 2024): EUR 4,200 -- matches payments
 >
-> **VAT (from prior VAT3 returns)**
+> **VAT (from prior VAT returns)**
 > - Q1-Q3 2025 filed, Q4 outstanding
 > - Excess credit b/f from Q4 2024: EUR 120
 >
 > **Flags I already see:**
 > 1. Phone / internet -- need business use percentage (T2 item)
 > 2. Motor vehicle -- need business use percentage and mileage log (T2 item)
-> 3. MacBook Pro EUR 2,100 -- capital item, goes to Box 15 not Box 2. Also exceeds EUR 1,160 VAT capital goods threshold (Box 30 on VAT3)
-> 4. Q4 2025 VAT3 not yet filed -- will prepare as part of this workflow
+> 3. MacBook Pro EUR 2,100 -- capital item, goes to Box 15 not Box 2. Also exceeds EUR 1,160 VAT capital goods threshold (Box 30 on VAT return)
+> 4. Q4 2025 VAT return not yet filed -- will prepare as part of this workflow
 > 5. If TA22 was flagged: net profit appears to exceed EUR 12,000, so TA22 flat rate is less favourable than expected
 >
 > **Is any of this wrong? Reply "looks good" or tell me what to fix.**
@@ -352,7 +352,7 @@ Once gap-filling is done, produce a final handoff message and hand off to `mt-re
 > Self-employed sole proprietor, single, Article 10 VAT, full-year Malta resident. Gross EUR 52,000, estimated net ~EUR 41,000 before capital allowances and SSC.
 >
 > I'm now going to run the full Malta return preparation. This covers:
-> 1. VAT3 return (Q4 2025 or annual if Article 11)
+> 1. VAT return (Q4 2025 or annual if Article 11)
 > 2. TA24 income tax return (2025)
 > 3. Class 2 SSC reconciliation
 > 4. Provisional tax schedule for 2026
@@ -517,7 +517,7 @@ For an unprepared user (has to go fetch documents):
 **Outputs:** Structured intake package consumed by `mt-return-assembly`.
 
 **Downstream skills triggered (via mt-return-assembly):**
-- `malta-vat-return` -- VAT3 quarterly or Article 11 annual declaration
+- `malta-vat-return` -- Quarterly VAT return (Article 10) or Article 11 annual declaration
 - `malta-income-tax` -- TA24 self-employed return
 - `malta-ssc` -- Class 2 social security contributions
 - `mt-estimated-tax` -- Provisional tax schedule

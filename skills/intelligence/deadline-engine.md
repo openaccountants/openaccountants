@@ -127,7 +127,7 @@ Always state: "Penalty estimates are approximations. Actual penalties depend on 
 | Obligation | Form | Frequency | Deadline | Notes |
 |---|---|---|---|---|
 | Income tax return | TA24 | Annual | Jun 30 | For self-employed / self-occupied |
-| VAT return | VAT3 | Quarterly | 45 days after quarter end | Quarters: Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec |
+| VAT return | Periodic return (CFR) | Quarterly | 45 days after quarter end | Quarters: Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec |
 | Social security contributions (Class 2) | SSC | Quarterly | Apr 30, Jul 31, Oct 31, Jan 31 | Self-occupied persons |
 | Provisional tax -- 1st instalment | PT | Annual | Apr 30 | 20% of prior-year liability |
 | Provisional tax -- 2nd instalment | PT | Annual | Aug 31 | 30% of prior-year liability |
