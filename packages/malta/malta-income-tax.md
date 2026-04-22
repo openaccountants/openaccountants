@@ -27,9 +27,8 @@ depends_on:
 | Tax authority | Commissioner for Revenue (CFR) / MTCA, Malta |
 | Filing portal | MTCA e-Services |
 | Filing deadline | 30 June of the following year (TA24 and TA22) |
-| Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-| Validated by | Michael Cutajar |
-| Validation date | March 2026 |
+| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
+| Validation date | Pending |
 | Skill version | 2.0 |
 
 ### Tax Rate Brackets (2025/2026)

@@ -31,9 +31,8 @@ depends_on:
 | Payment method | Direct debit or bank transfer to DSS |
 | Deadlines | Q1: 30 Apr, Q2: 31 Jul, Q3: 31 Oct, Q4: 31 Jan following year |
 | Currency | EUR only |
-| Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-| Validated by | Michael Cutajar |
-| Validation date | March 2026 |
+| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
+| Validation date | Pending |
 
 **Class overview:**
 

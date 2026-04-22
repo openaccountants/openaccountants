@@ -25,7 +25,6 @@ version: 2.0
 | Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Companion skill (EU directive) | **NOT required — Iceland is not EU** |
 | EEA status | EEA member via EFTA. No intra-community supplies. No VIES. Goods from EU treated as imports. Services from abroad subject to reverse charge. |
-| Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
 | Validated by | Deep research verification, April 2026 |
 | Validation date | April 2026 |
 

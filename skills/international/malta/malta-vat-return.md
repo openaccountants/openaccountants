@@ -25,9 +25,8 @@ version: 2.0
 | Deadline | Article 10 e-filing: 21st of month after quarter end; Article 10 paper: 14th; Article 11 annual: 15 March following year |
 | Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
-| Validated by | Michael Cutajar, Kevin Farrugia (warranted accountants) |
-| Validation date | March 2026 |
+| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
+| Validation date | Pending |
 
 **Key VAT return boxes (the boxes you will use most):**
 
@@ -696,7 +695,7 @@ For each question, the inference rule comes first. Only ask if inference fails.
 
 ### Validation status
 
-This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture (vat-workflow-base + eu-vat-directive + country skill). It supersedes v1.0 (March 2026, standalone monolithic skill). The Malta-specific content (box mappings, rates, thresholds, blocked categories) has been validated against the VAT Act Chapter 406 and CFR guidance by Michael Cutajar (CPA Warrant No. 125122) and Kevin Farrugia (warranted accountant), both in Malta.
+This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora architecture (vat-workflow-base + eu-vat-directive + country skill). It supersedes v1.0 (March 2026, standalone monolithic skill). The Malta-specific content (box mappings, rates, thresholds, blocked categories) is drawn from the VAT Act Chapter 406 and CFR guidance. Independent sign-off by a Maltese warranted accountant is pending and is a prerequisite to any reliance.
 
 ### Sources
 
@@ -731,7 +730,7 @@ This skill is v2.0, rewritten in April 2026 to align with the three-tier Accora 
 ### Change log
 
 - **v2.0 (April 2026):** Full rewrite to align with three-tier Accora architecture. Quick reference moved to top (Section 1). Supplier pattern library restructured as literal lookup tables (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue restructured to compressed format (Section 6). Excel working paper specification added (Section 7). Bank statement reading guide added (Section 8). Onboarding moved to fallback role with inference rules (Section 9). Reference material moved to bottom (Section 10). Companion skill references updated to vat-workflow-base v0.1 and eu-vat-directive v0.1.
-- **v1.0 (March 2026):** Initial skill. Standalone monolithic document covering Malta VAT Act Chapter 406, box mappings, reverse charge mechanics, blocked categories, edge case registry, and test suite. Validated by Michael Cutajar and Kevin Farrugia.
+- **v1.0 (March 2026):** Initial skill. Standalone monolithic document covering Malta VAT Act Chapter 406, box mappings, reverse charge mechanics, blocked categories, edge case registry, and test suite.
 
 ### Self-check (v2.0 of this document)
 

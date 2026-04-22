@@ -24,7 +24,6 @@ version: 2.0
 | Deadline | 20th of month following period |
 | Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
 | Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Michael Cutajar, CPA (Warrant No. 125122), ACCA |
 | Validated by | Deep research verification, April 2026 |
 | Validation date | April 2026 |
 
