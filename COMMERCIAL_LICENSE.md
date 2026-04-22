@@ -55,13 +55,13 @@ Commercial licenses are negotiated based on use case and scale. We aim to be fai
 - **Startups and small teams** — affordable flat fee
 - **Enterprise and large-scale SaaS** — usage-based or annual license
 
-Contact **licensing@openaccountants.com** to discuss your use case.
+Contact **info@openaccountants.com** to discuss your use case.
 
 ---
 
 ## How to get a commercial license
 
-1. Email **licensing@openaccountants.com** with:
+1. Email **info@openaccountants.com** with:
    - Your company name and country
    - A brief description of how you intend to use the skills
    - Approximate scale (number of users, API calls, etc.)
@@ -76,7 +76,7 @@ Commercial licenses are issued by:
 **Glimpse Ltd**
 Malta
 
-Contact: licensing@openaccountants.com
+Contact: info@openaccountants.com
 
 ---
 
