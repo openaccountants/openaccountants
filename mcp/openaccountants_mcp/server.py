@@ -18,9 +18,19 @@ checkout you point it at.
 
 Environment
 -----------
-OPENACCOUNTANTS_ROOT  Path to the repo checkout.  Defaults to two directories
-                      above this file (i.e. the repo root when this package
-                      lives at ``mcp/openaccountants_mcp/``).
+OPENACCOUNTANTS_ROOT      Path to the repo checkout.  Defaults to two directories
+                          above this file (i.e. the repo root when this package
+                          lives at ``mcp/openaccountants_mcp/``).
+MCP_TRANSPORT             ``stdio`` (default), ``streamable-http``, or ``sse``.
+                          HTTP transports let remote MCP clients connect via a
+                          reverse proxy (Caddy, nginx, ngrok…).
+MCP_HOST                  Bind host for HTTP transports.  Defaults to
+                          ``0.0.0.0`` when an HTTP transport is selected,
+                          ``127.0.0.1`` otherwise.
+MCP_PORT                  Bind port for HTTP transports.  Defaults to ``8000``.
+MCP_STREAMABLE_HTTP_PATH  Path the Streamable-HTTP endpoint is mounted at.
+                          Defaults to ``/mcp``.  Set to ``/`` when fronted by a
+                          reverse proxy that strips the upstream path prefix.
 """
 
 from __future__ import annotations
@@ -276,6 +286,21 @@ def _extract_match(body: str, query: str) -> tuple[str, str]:
 # MCP server
 # ---------------------------------------------------------------------------
 
+_TRANSPORT = os.environ.get("MCP_TRANSPORT", "stdio").lower()
+_VALID_TRANSPORTS = {"stdio", "streamable-http", "sse"}
+if _TRANSPORT not in _VALID_TRANSPORTS:
+    raise ValueError(
+        f"MCP_TRANSPORT must be one of {sorted(_VALID_TRANSPORTS)} (got {_TRANSPORT!r})"
+    )
+
+# Env-driven HTTP wiring.  For stdio these values are unused; for HTTP transports
+# they're plumbed into the FastMCP constructor so the wrapped Settings pick them
+# up (FastMCP overrides env-driven Settings with its own kwargs, so we read the
+# environment here ourselves).
+_HTTP_HOST = os.environ.get("MCP_HOST", "0.0.0.0" if _TRANSPORT != "stdio" else "127.0.0.1")
+_HTTP_PORT = int(os.environ.get("MCP_PORT", "8000"))
+_STREAMABLE_HTTP_PATH = os.environ.get("MCP_STREAMABLE_HTTP_PATH", "/mcp")
+
 mcp = FastMCP(
     "OpenAccountants",
     instructions=(
@@ -289,6 +314,9 @@ mcp = FastMCP(
         "advise the user to have output reviewed by a qualified professional before "
         "filing, and cite the skill (and its verifier where accountant-verified)."
     ),
+    host=_HTTP_HOST,
+    port=_HTTP_PORT,
+    streamable_http_path=_STREAMABLE_HTTP_PATH,
 )
 
 _READONLY = ToolAnnotations(readOnlyHint=True, openWorldHint=False)
@@ -528,8 +556,8 @@ Use only data from the skills. Do not supplement with general knowledge."""
 
 
 def main() -> None:
-    """Run the stdio MCP server."""
-    mcp.run()
+    """Run the MCP server using the transport selected by ``MCP_TRANSPORT``."""
+    mcp.run(transport=_TRANSPORT)
 
 
 if __name__ == "__main__":

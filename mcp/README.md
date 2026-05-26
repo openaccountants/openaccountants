@@ -148,11 +148,33 @@ or:
 
 The AI will call the MCP tools behind the scenes to load the right country and domain skills, then produce working papers, payslips, formation guides, or whatever output matches your request — all without you uploading a single file.
 
+## Docker (local development / self-hosting)
+
+For contributors who'd rather iterate inside a container, the repo root ships a `Dockerfile` that builds the MCP server and runs it under FastMCP's Streamable-HTTP transport:
+
+```bash
+docker build -t openaccountants-mcp .
+docker run --rm -p 8000:8000 openaccountants-mcp
+# Point an MCP client at http://localhost:8000/mcp
+```
+
+When fronted by a reverse proxy that strips an upstream path prefix (e.g. Caddy `uri strip_prefix /oamcp`), set `MCP_STREAMABLE_HTTP_PATH=/` so the endpoint mounts at the proxied root:
+
+```bash
+docker run --rm -p 8000:8000 -e MCP_STREAMABLE_HTTP_PATH=/ openaccountants-mcp
+```
+
+The default stdio transport (`pip install ./mcp && openaccountants-mcp`) is unchanged.
+
 ## Environment variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `OPENACCOUNTANTS_ROOT` | Auto-detected repo root (parent of `mcp/`) | Path to your OpenAccountants checkout. The server reads `$OPENACCOUNTANTS_ROOT/packages/`. |
+| `MCP_TRANSPORT` | `stdio` | `stdio`, `streamable-http`, or `sse`. HTTP transports let remote MCP clients connect via a reverse proxy. |
+| `MCP_HOST` | `127.0.0.1` (stdio) / `0.0.0.0` (HTTP) | Bind host for HTTP transports. |
+| `MCP_PORT` | `8000` | Bind port for HTTP transports. |
+| `MCP_STREAMABLE_HTTP_PATH` | `/mcp` | Path the Streamable-HTTP endpoint is mounted at. Set to `/` when behind a proxy that strips the upstream prefix. |
 
 ## What changes vs manual upload
 
