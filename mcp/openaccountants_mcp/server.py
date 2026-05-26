@@ -305,14 +305,20 @@ mcp = FastMCP(
     "OpenAccountants",
     instructions=(
         "OpenAccountants MCP — open-source tax & accounting skills for AI agents "
-        "across 130+ countries. Use list_skills to discover skills (optionally by "
-        "jurisdiction/category), search_skills to find a concept by keyword, "
-        "get_skill to read a skill's full markdown, and get_skill_sections to read "
-        "it section by section. Each skill reports a quality tier: research-verified "
-        "(drafted from authoritative sources, awaiting credentialed sign-off) or "
-        "accountant-verified (a named licensed practitioner has signed off). Always "
-        "advise the user to have output reviewed by a qualified professional before "
-        "filing, and cite the skill (and its verifier where accountant-verified)."
+        "across 130+ countries.\n\n"
+        "**Front door**: call `start` first whenever a user asks for help with "
+        "anything tax, accounting, payroll, formation, or VAT/GST related. It "
+        "asks the scoping questions, narrows by jurisdiction, and returns the "
+        "list of skills to load. Only fall back to `list_skills` / "
+        "`search_skills` when `start` returns an empty plan or the user's need "
+        "doesn't fit the catalogue.\n\n"
+        "After `start` returns a plan, fetch each slug with `get_skill` (full "
+        "markdown) or `get_skill_sections` (section-by-section).  Each skill "
+        "reports a quality tier: research-verified (drafted from authoritative "
+        "sources, awaiting credentialed sign-off) or accountant-verified (a "
+        "named licensed practitioner has signed off).  Always advise the user "
+        "to have output reviewed by a qualified professional before filing, "
+        "and cite the skill (and its verifier where accountant-verified)."
     ),
     host=_HTTP_HOST,
     port=_HTTP_PORT,
@@ -416,6 +422,378 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
         if len(results) >= SEARCH_LIMIT:
             break
     return {"results": results, "total": len(results)}
+
+
+# ---------------------------------------------------------------------------
+# Onboarding (`start`) — guided session entry point
+# ---------------------------------------------------------------------------
+
+
+_INTENT_CATALOGUE: dict[str, dict[str, Any]] = {
+    "taxes": {
+        "label": "Income tax return",
+        "description": "Compute income tax (personal, self-employed, or corporate) and produce a working paper.",
+        "slug_keywords": [
+            "income-tax", "tax-optimization", "self-employment", "rental",
+            "dividends", "capital-gains", "estimated-tax", "freelance-intake",
+            "return-assembly", "national-insurance", "payments-on-account",
+            "student-loan",
+        ],
+        "category_keywords": ["international", "federal", "state"],
+    },
+    "vat": {
+        "label": "VAT / GST return",
+        "description": "Classify transactions for VAT / GST and assemble the return.",
+        "slug_keywords": ["vat-return", "vat-base", "gst", "oss-digital", "reverse-charge"],
+        "category_keywords": [],
+    },
+    "payroll": {
+        "label": "Payroll",
+        "description": "Run payroll: gross-to-net, employer contributions, filings.",
+        "slug_keywords": ["payroll", "ssc", "national-insurance"],
+        "category_keywords": ["payroll"],
+    },
+    "bookkeeping": {
+        "label": "Bookkeeping",
+        "description": "Record-keeping, chart of accounts, transaction classification.",
+        "slug_keywords": ["bookkeeping"],
+        "category_keywords": ["bookkeeping"],
+    },
+    "formation": {
+        "label": "Company formation",
+        "description": "Set up / register a company in this jurisdiction.",
+        "slug_keywords": ["formation"],
+        "category_keywords": ["formation"],
+    },
+    "financial-statements": {
+        "label": "Financial statements",
+        "description": "Annual accounts, balance sheet, P&L, statutory filings.",
+        "slug_keywords": ["financial-statements"],
+        "category_keywords": ["financial-statements"],
+    },
+    "crypto": {
+        "label": "Crypto tax",
+        "description": "Tax treatment of crypto-assets and DeFi activity.",
+        "slug_keywords": ["crypto"],
+        "category_keywords": ["crypto"],
+    },
+    "transfer-pricing": {
+        "label": "Transfer pricing",
+        "description": "Inter-company pricing, documentation, country-by-country rules.",
+        "slug_keywords": ["transfer-pricing"],
+        "category_keywords": ["transfer-pricing"],
+    },
+    "tax-optimization": {
+        "label": "Tax optimization / planning",
+        "description": "Lawful tax-planning levers available in this jurisdiction.",
+        "slug_keywords": ["tax-optimization"],
+        "category_keywords": ["tax-optimization"],
+    },
+    "cross-border": {
+        "label": "Cross-border / international",
+        "description": "Multi-jurisdiction issues: treaty rates, EU directives, Pillar Two, FATCA/CRS, CBAM, DAC6.",
+        "slug_keywords": [
+            "cross-border", "treaty", "corridor", "pillar-two", "fatca", "crs",
+            "dac6", "cbam", "eu-", "oecd",
+        ],
+        "category_keywords": ["cross-border", "orchestrator"],
+    },
+}
+
+# Free-text user phrasings → catalogue key.  Lowercase keys.
+_INTENT_SYNONYMS: dict[str, str] = {
+    "tax": "taxes", "income tax": "taxes", "income-tax": "taxes",
+    "personal tax": "taxes", "corporate tax": "taxes", "self-employed": "taxes",
+    "vat return": "vat", "vat-return": "vat", "gst": "vat",
+    "sales tax": "vat", "consumption tax": "vat",
+    "salary": "payroll", "wages": "payroll", "employee": "payroll",
+    "employees": "payroll", "ssc": "payroll", "social security": "payroll",
+    "books": "bookkeeping", "accounting": "bookkeeping",
+    "incorporate": "formation", "register a company": "formation",
+    "set up a company": "formation", "company setup": "formation",
+    "company formation": "formation",
+    "accounts": "financial-statements", "annual accounts": "financial-statements",
+    "balance sheet": "financial-statements", "p&l": "financial-statements",
+    "statutory accounts": "financial-statements",
+    "cryptocurrency": "crypto", "btc": "crypto", "defi": "crypto",
+    "bitcoin": "crypto", "ethereum": "crypto",
+    "tp": "transfer-pricing", "intercompany": "transfer-pricing",
+    "tax planning": "tax-optimization", "tax optimisation": "tax-optimization",
+    "international": "cross-border", "multi-jurisdiction": "cross-border",
+    "treaty": "cross-border", "permanent establishment": "cross-border",
+    "pillar two": "cross-border",
+}
+
+# Guardrails inlined here so callers get them even though intake.md / foundation.md
+# in the packages tree aren't indexed (they carry no `name:` field by design).
+_GUARDRAILS: list[str] = [
+    "Use ONLY rates, thresholds, and rules from the loaded skills — do not compute from general knowledge.",
+    "When uncertain, default to the more conservative treatment (higher tax / stricter compliance). An over-conservative position can be softened by a reviewer; an aggressive one is harder to recover from.",
+    "Distinguish three transaction outcomes: Classified (rule applies clearly), Assumed (conservative default applied — flag for reviewer), Needs Input (ask the user).",
+    "Output is a working paper, not a return. Always advise the user to have a qualified professional review before filing.",
+]
+
+
+def _normalize_intent(raw: str | None) -> tuple[str | None, list[str]]:
+    """Resolve a free-form intent string to a catalogue key.
+
+    Returns ``(key, candidates)``.  ``key`` is non-None when matched with
+    confidence; otherwise ``candidates`` lists likely catalogue keys to
+    surface to the user for disambiguation.
+    """
+    if not raw:
+        return None, []
+    text = raw.strip().lower()
+    if not text:
+        return None, []
+    if text in _INTENT_CATALOGUE:
+        return text, []
+    if text in _INTENT_SYNONYMS:
+        return _INTENT_SYNONYMS[text], []
+    matches: list[str] = []
+    for key in _INTENT_CATALOGUE:
+        if key in text or text in key:
+            matches.append(key)
+    for syn, key in _INTENT_SYNONYMS.items():
+        if syn in text and key not in matches:
+            matches.append(key)
+    if len(matches) == 1:
+        return matches[0], []
+    return None, matches[:3]
+
+
+def _skills_for_intent(jurisdiction: str, intent_key: str) -> list[dict[str, Any]]:
+    """Score and return the jurisdiction's skills that match ``intent_key``."""
+    entry = _INTENT_CATALOGUE[intent_key]
+    jx = jurisdiction.upper()
+    scored: list[tuple[int, dict[str, Any]]] = []
+    for rec in _index().values():
+        if rec["jurisdiction"].upper() != jx:
+            continue
+        slug_lo = rec["slug"].lower()
+        score = 0
+        if any(k in slug_lo for k in entry["slug_keywords"]):
+            score = 10
+        if rec["category"] in entry["category_keywords"]:
+            score = max(score, 5)
+        # Intake skills lead the working order so the model runs them first.
+        if "intake" in slug_lo and score > 0:
+            score = 15
+        # Cross-country base files come after country-specific ones.
+        if rec["category"] == "foundation":
+            score = max(1, score - 3) if score else 0
+        if score > 0:
+            scored.append((score, rec))
+    scored.sort(key=lambda x: (-x[0], x[1]["slug"]))
+    return [{
+        "slug": r["slug"],
+        "title": r["title"],
+        "category": r["category"] or None,
+        "quality_tier": r["quality_tier"],
+        "purpose": _purpose_hint(r["slug"]),
+    } for _, r in scored]
+
+
+def _purpose_hint(slug: str) -> str:
+    """Best-effort one-line description of a skill, derived from its slug."""
+    s = slug.lower()
+    table = [
+        ("intake",               "scope-check interview to run BEFORE classification"),
+        ("return-assembly",      "assemble the final return / working paper"),
+        ("income-tax",           "income tax rates, brackets, deductions"),
+        ("vat-return",           "VAT / GST classification and return preparation"),
+        ("vat-base",             "regional VAT directive (shared across member states)"),
+        ("estimated-tax",        "provisional payment rules and deadlines"),
+        ("payments-on-account",  "timing of advance tax payments"),
+        ("tax-optimization",     "lawful tax-planning levers"),
+        ("national-insurance",   "social-security contributions"),
+        ("ssc",                  "social-security contributions"),
+        ("payroll",              "payroll: gross-to-net, employer contributions, filings"),
+        ("bookkeeping",          "record-keeping rules and chart of accounts"),
+        ("formation",            "company formation and registration"),
+        ("financial-statements", "annual accounts and statutory filings"),
+        ("transfer-pricing",     "inter-company pricing and documentation"),
+        ("crypto",               "crypto-asset / DeFi tax treatment"),
+        ("rental",               "rental income tax treatment"),
+        ("dividends",            "dividend income tax treatment"),
+        ("capital-gains",        "capital gains tax computation"),
+        ("self-employment",      "self-employment income rules"),
+        ("student-loan",         "student-loan repayment via the tax return"),
+        ("workflow-base",        "cross-country base workflow (defaults, assumptions)"),
+        ("cross-border",         "multi-jurisdiction coordination rules"),
+        ("corridor",             "country-pair treaty / withholding details"),
+    ]
+    for key, hint in table:
+        if key in s:
+            return hint
+    return ""
+
+
+def _jurisdictions_for_intent(intent_key: str) -> list[str]:
+    """Sorted jurisdiction codes that have at least one skill matching the intent."""
+    entry = _INTENT_CATALOGUE[intent_key]
+    juris: set[str] = set()
+    for rec in _index().values():
+        slug_lo = rec["slug"].lower()
+        if any(k in slug_lo for k in entry["slug_keywords"]):
+            juris.add(rec["jurisdiction"])
+            continue
+        if rec["category"] in entry["category_keywords"]:
+            juris.add(rec["jurisdiction"])
+    return sorted(juris)
+
+
+def _intents_for_jurisdiction(jurisdiction: str) -> list[str]:
+    """Catalogue keys with at least one matching skill in this jurisdiction."""
+    return [k for k in _INTENT_CATALOGUE if _skills_for_intent(jurisdiction, k)]
+
+
+def _catalogue_entries(keys: list[str] | None = None) -> list[dict[str, str]]:
+    keys = keys if keys is not None else list(_INTENT_CATALOGUE)
+    return [{
+        "key": k,
+        "label": _INTENT_CATALOGUE[k]["label"],
+        "description": _INTENT_CATALOGUE[k]["description"],
+    } for k in keys]
+
+
+@mcp.tool(annotations=_READONLY)
+def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[str, Any]:
+    """Begin a guided session.  Ask scoping questions, recommend the skills to load.
+
+    Use this as the **first** call when a user asks for help with anything tax,
+    accounting, or formation-related.  It maps the user's intent onto the
+    catalogue, narrows by jurisdiction, and returns either a clarification
+    question or a ready-to-execute plan (which skills to ``get_skill``, what
+    flow to follow, what guardrails to obey).
+
+    Args:
+        intent:       Free-form description of what the user wants
+                      (e.g. ``"taxes"``, ``"VAT return"``, ``"set up a company"``).
+        jurisdiction: ISO-style jurisdiction code (e.g. ``"MT"``, ``"GB"``, ``"US-CA"``).
+
+    Returns:
+        One of three shapes keyed by ``status``:
+
+        - ``"needs_input"``    — missing one or both inputs; ``needs`` lists which.
+        - ``"needs_clarification"`` — intent provided but ambiguous; pick from ``candidates``.
+        - ``"ready"``          — plan ready: ``skills_to_load``, ``expectations``,
+                                 ``next_action``, ``guardrails``.
+    """
+    intent_key, candidates = _normalize_intent(intent)
+    jx = jurisdiction.upper() if jurisdiction else None
+
+    # 1) Intent was given but couldn't be confidently matched.  Surface this
+    #    even when jurisdiction is also missing — disambiguating the intent
+    #    is more important than picking a country first.
+    if intent and not intent_key:
+        suggest = candidates if candidates else list(_INTENT_CATALOGUE)[:5]
+        return {
+            "status": "needs_clarification",
+            "intent_raw": intent,
+            "candidates": _catalogue_entries(suggest),
+            "message": (
+                f"Couldn't confidently match the intent {intent!r}. "
+                "Ask the user to pick one of the candidates below, then call start() again."
+            ),
+        }
+
+    # 2) Nothing provided.
+    if not intent_key and not jx:
+        return {
+            "status": "needs_input",
+            "needs": ["intent", "jurisdiction"],
+            "message": (
+                "Ask the user two questions, then call start() again with both:\n"
+                "  1. Which country or jurisdiction? (ISO code or name; e.g. Malta, UK, Germany, US-CA)\n"
+                "  2. What do you want to do? (pick from the categories below)"
+            ),
+            "available_intents": _catalogue_entries(),
+            "jurisdictions_hint": (
+                "Common codes: MT (Malta), GB (UK), DE (Germany), FR (France), "
+                "ES (Spain), NL (Netherlands), US-CA (California), CA-ON (Ontario). "
+                "Call list_skills() to enumerate every jurisdiction."
+            ),
+            "guardrails": _GUARDRAILS,
+        }
+
+    # 3) Intent only.
+    if intent_key and not jx:
+        return {
+            "status": "needs_input",
+            "needs": ["jurisdiction"],
+            "intent": intent_key,
+            "intent_label": _INTENT_CATALOGUE[intent_key]["label"],
+            "message": (
+                f"User wants help with {_INTENT_CATALOGUE[intent_key]['label']!r}. "
+                "Ask which country or jurisdiction (ISO code or name), then call start() again."
+            ),
+            "available_jurisdictions": _jurisdictions_for_intent(intent_key),
+        }
+
+    # 4) Jurisdiction only.
+    if jx and not intent_key:
+        avail = _intents_for_jurisdiction(jx)
+        if not avail:
+            return {
+                "status": "needs_input",
+                "needs": ["intent"],
+                "jurisdiction": jx,
+                "message": (
+                    f"Jurisdiction {jx!r} doesn't appear in the index (no skills found). "
+                    "Confirm the code with the user — call list_skills() to see what's available."
+                ),
+                "available_intents": _catalogue_entries(),
+            }
+        return {
+            "status": "needs_input",
+            "needs": ["intent"],
+            "jurisdiction": jx,
+            "message": (
+                f"Jurisdiction is {jx}. Ask the user what they want to do, "
+                "then call start() again with both arguments."
+            ),
+            "available_intents": _catalogue_entries(avail),
+        }
+
+    # 5) Both inputs resolved — build the plan.
+    assert intent_key and jx
+    skills = _skills_for_intent(jx, intent_key)
+    label = _INTENT_CATALOGUE[intent_key]["label"]
+    if not skills:
+        return {
+            "status": "ready",
+            "intent": intent_key,
+            "intent_label": label,
+            "jurisdiction": jx,
+            "warning": (
+                f"No skills found for intent={intent_key!r} in jurisdiction {jx!r}. "
+                "The corpus may not cover this combination yet. Call "
+                "list_skills(jurisdiction=…) or search_skills(...) to confirm."
+            ),
+            "skills_to_load": [],
+            "guardrails": _GUARDRAILS,
+        }
+    return {
+        "status": "ready",
+        "intent": intent_key,
+        "intent_label": label,
+        "jurisdiction": jx,
+        "expectations": (
+            f"I'll help the user with {label} for {jx} as a working paper for their "
+            "qualified accountant to review. I won't file anything. Flow: intake "
+            "(scope check) → load skills → classify transactions → produce a "
+            "working paper with assumptions disclosed and items flagged for review."
+        ),
+        "skills_to_load": skills,
+        "next_action": (
+            "Call get_skill on each slug above in order.  Run any *-intake skill "
+            "first to scope-check the user before classification.  If the user's "
+            "scenario falls outside the skill's scope (non-resident, unsupported "
+            "entity type, etc.), say so and stop instead of guessing."
+        ),
+        "guardrails": _GUARDRAILS,
+    }
 
 
 # ---------------------------------------------------------------------------

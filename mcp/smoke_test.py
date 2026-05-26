@@ -82,6 +82,53 @@ sec = S.get_skill_sections("malta-income-tax")
 check("sections non-empty", len(sec["sections"]) > 1, f"got {len(sec['sections'])}")
 check("section shape", all(set(s) >= {"heading", "content", "level"} for s in sec["sections"]))
 
+# --- start (onboarding) ---------------------------------------------------
+print("\nstart():")
+empty = S.start()
+check("no args → needs_input", empty["status"] == "needs_input", empty.get("status"))
+check("needs both fields", set(empty.get("needs", [])) == {"intent", "jurisdiction"},
+      str(empty.get("needs")))
+check("available_intents non-empty", len(empty.get("available_intents", [])) >= 5)
+
+print("start(intent='taxes'):")
+intent_only = S.start(intent="taxes")
+check("intent only → needs jurisdiction", intent_only["status"] == "needs_input"
+      and intent_only.get("needs") == ["jurisdiction"], intent_only.get("status"))
+check("jurisdictions list non-empty", len(intent_only.get("available_jurisdictions", [])) > 10)
+check("MT is among the available jurisdictions",
+      "MT" in intent_only.get("available_jurisdictions", []))
+
+print("start(jurisdiction='MT'):")
+jx_only = S.start(jurisdiction="MT")
+check("jurisdiction only → needs intent",
+      jx_only["status"] == "needs_input" and jx_only.get("needs") == ["intent"])
+check("MT has taxes intent available",
+      any(i["key"] == "taxes" for i in jx_only.get("available_intents", [])))
+
+print("start(intent='taxes', jurisdiction='MT'):")
+ready = S.start(intent="taxes", jurisdiction="MT")
+check("both → ready", ready["status"] == "ready", ready.get("status"))
+slugs = [s["slug"] for s in ready.get("skills_to_load", [])]
+check("skills_to_load non-empty", len(slugs) > 0, str(slugs))
+check("malta-income-tax in plan", "malta-income-tax" in slugs, str(slugs))
+check("mt-freelance-intake in plan", "mt-freelance-intake" in slugs, str(slugs))
+check("intake comes before income-tax in ordering",
+      slugs.index("mt-freelance-intake") < slugs.index("malta-income-tax"))
+check("plan has guardrails", len(ready.get("guardrails", [])) >= 3)
+
+print("start(intent='set up a company', jurisdiction='MT'):")
+synonym = S.start(intent="set up a company", jurisdiction="MT")
+check("synonym 'set up a company' → formation plan",
+      synonym["status"] == "ready" and synonym.get("intent") == "formation",
+      str(synonym.get("intent")))
+check("formation plan includes malta-formation",
+      "malta-formation" in [s["slug"] for s in synonym.get("skills_to_load", [])])
+
+print("start(intent='gibberish'):")
+gib = S.start(intent="gibberish")
+check("unmatched intent → needs_clarification",
+      gib["status"] == "needs_clarification", gib.get("status"))
+
 # --- search_skills --------------------------------------------------------
 print("\nsearch_skills('reverse charge', 'MT'):")
 sr = S.search_skills("reverse charge", "MT")
@@ -115,8 +162,9 @@ check("skill-feedback has slug + date",
 
 async def _registry() -> None:
     tools = {t.name for t in await S.mcp.list_tools()}
-    check("4 tools registered",
-          tools == {"list_skills", "get_skill", "get_skill_sections", "search_skills"}, str(tools))
+    check("5 tools registered",
+          tools == {"list_skills", "get_skill", "get_skill_sections", "search_skills", "start"},
+          str(tools))
     prompts = {p.name for p in await S.mcp.list_prompts()}
     check("6 prompts registered",
           prompts == {"skill-review", "tax-return", "vat-check", "find-deductions",

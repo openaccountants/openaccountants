@@ -45,12 +45,35 @@ This server mirrors the hosted server at `https://www.openaccountants.com/api/mc
 
 | Tool | Description |
 |------|-------------|
+| `start` | **Front door.** Call first whenever a user asks for tax/accounting help. Takes optional `intent` (free text — e.g. `"taxes"`, `"VAT return"`, `"set up a company"`) and `jurisdiction` (e.g. `"MT"`, `"GB"`, `"US-CA"`). Returns either a clarification question or a ready-to-execute plan (`skills_to_load`, `expectations`, `next_action`, `guardrails`). |
 | `list_skills` | List published skills with quality tier and verifier. Optional `jurisdiction` (ISO code, e.g. `MT`, `GB`, `US-CA`) and `category` filters. |
 | `get_skill` | Given a skill `slug`, returns the full markdown plus a provenance/attribution footer. |
 | `get_skill_sections` | Given a `slug`, returns the skill parsed into sections (`heading`, `content`, `level`) for step-by-step application. |
 | `search_skills` | Keyword search across skill markdown (`query`, optional `jurisdiction`). Returns the matched section heading and a snippet. |
 
 All access is **read-only** and **path-sandboxed** to the `packages/` directory.
+
+### The `start` flow
+
+`start` is what makes the connector self-guiding. A typical session looks like:
+
+```
+User:    "Help me with my Malta taxes."
+          ↓
+Model:   start(intent="taxes", jurisdiction="MT")
+          → { status: "ready",
+              skills_to_load: [mt-freelance-intake, malta-income-tax, …],
+              expectations: "I'll help you build a working paper for your accountant…",
+              next_action: "Run the intake skill first, then classify transactions",
+              guardrails: [...] }
+          ↓
+Model:   get_skill("mt-freelance-intake")  →  scope-check questions
+Model:   get_skill("malta-income-tax")     →  rates, brackets, deductions
+          ↓
+Model:   walks the user through the working paper using the loaded skills
+```
+
+If the user only says "help me with my taxes" (no country), call `start(intent="taxes")` — you get back the list of jurisdictions that have a tax skill so you can ask which one applies. Same if only the country is known: `start(jurisdiction="MT")` returns the available categories for Malta.
 
 ## Prompts
 
