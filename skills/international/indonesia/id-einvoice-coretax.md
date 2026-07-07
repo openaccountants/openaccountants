@@ -5,6 +5,8 @@ jurisdiction: ID
 tax_year: 2025
 reviewed_by: RILIA PUTRI
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # id-einvoice-coretax

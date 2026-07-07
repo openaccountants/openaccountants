@@ -2,6 +2,9 @@
 name: poland-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Polish VAT return (JPK_V7M / JPK_V7K) for a self-employed individual or small business in Poland. Trigger on phrases like "prepare VAT return", "do the VAT", "Polish VAT", "JPK", "deklaracja VAT", "plik JPK", or any request involving Poland VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Poland only and only standard czynny podatnik VAT registrations. VAT groups (grupa VAT), special economic zones, and fiscal representatives are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Polish VAT work.
 jurisdiction: PL
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # poland-vat-return

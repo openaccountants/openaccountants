@@ -5,6 +5,8 @@ jurisdiction: US-Federal
 domain: Tax
 role: Tax Advisor
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # US Federal Section 1031 Like-Kind Exchange

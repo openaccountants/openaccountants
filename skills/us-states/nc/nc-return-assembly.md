@@ -4,6 +4,8 @@ description: "Final capstone orchestrator that assembles the complete federal + 
 jurisdiction: US-NC
 domain: individual income tax return assembly
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # nc-return-assembly

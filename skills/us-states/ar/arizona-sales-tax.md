@@ -3,6 +3,8 @@ name: arizona-sales-tax
 description: Use this skill whenever asked about Arizona sales tax, Arizona Transaction Privilege Tax (TPT), Arizona use tax, Arizona tax nexus, or any request involving Arizona state-level consumption taxes. Trigger on phrases like "Arizona sales tax", "AZ sales tax", "TPT", "Transaction Privilege Tax", "Arizona DOR", or any request involving Arizona TPT compliance. CRITICAL -- Arizona has a Transaction Privilege Tax on the SELLER, not a traditional sales tax. ALWAYS load us-sales-tax first.
 jurisdiction: US-AZ
 tax_year: 2024
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # arizona-sales-tax

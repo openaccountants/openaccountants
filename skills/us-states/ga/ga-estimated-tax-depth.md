@@ -4,6 +4,8 @@ description: Tier 2 Georgia content skill for individual and corporate estimated
 jurisdiction: US-GA
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ga-estimated-tax-depth

@@ -2,7 +2,9 @@
 name: new-mexico-sales-tax
 description: Use this skill whenever asked about New Mexico Gross Receipts Tax (GRT). Trigger on phrases like "New Mexico GRT", "Gross Receipts Tax", "NM sales tax", "NMSA §7-9". NM has a GRT, not a traditional sales tax. ALWAYS load us-sales-tax first.
 jurisdiction: US-NM
-tax_year: 2
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # new-mexico-sales-tax

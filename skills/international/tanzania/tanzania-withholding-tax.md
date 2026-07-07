@@ -6,6 +6,8 @@ domain: withholding-tax
 tax_year: 2025
 reviewed_by: Baraka Cassian
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # tanzania-withholding-tax

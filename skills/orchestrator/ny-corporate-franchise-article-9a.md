@@ -3,6 +3,8 @@ name: ny-corporate-franchise-article-9a
 description: Tier 2 content skill for New York State Corporate Franchise Tax under Tax Law Article 9-A. Covers C-corporations and S-corporations electing federal status (NY GBC), the three alternative tax bases (business income, capital, fixed dollar minimum), the 6.5% standard rate and the 7.25% rate on business income over $5M, single-sales-factor apportionment with market-based sourcing, MTA surcharge for MCTD activity, mandatory first installment (MFI) rules, and CT-3 / CT-3-A combined filing. Tax year 2025.
 jurisdiction: US-NY
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ny-corporate-franchise-article-9a

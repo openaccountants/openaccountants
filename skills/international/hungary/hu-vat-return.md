@@ -3,6 +3,8 @@ name: hungary-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Hungary VAT return (form 2565 / AFA bevallas) for any client. Trigger on phrases like "prepare VAT return", "do the AFA", "fill in 2565", "Hungarian VAT", or any request involving Hungary VAT filing. This skill covers Hungary only and standard AFA registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Hungarian VAT work.
 jurisdiction: HU
 tax_year: 2026
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # hungary-vat-return

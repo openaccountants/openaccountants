@@ -1,8 +1,11 @@
 ---
+description: Source-cited tax guide for US-GA: ga corporate and ptet. Unverified draft, pending local-accountant review.
 name: ga-corporate-and-ptet
 jurisdiction: US-GA
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ga-corporate-and-ptet

@@ -5,6 +5,8 @@ jurisdiction: GA
 domain: income-tax
 role: reference
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # Gabon Tax Overview

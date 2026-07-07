@@ -2,6 +2,9 @@
 name: romania-vat-return
 description: Use this skill whenever asked to prepare, review, or create a Romania VAT return (Declaratia 300 / D300 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in D300", "create the return", "Romanian VAT", "TVA", or any request involving Romania VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Romania VAT classification rules, box mappings, deductibility rules, reverse charge treatment, SAF-T obligations, e-invoicing (RO e-Factura), and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any Romanian VAT-related work.
 jurisdiction: RO
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # romania-vat-return

@@ -5,6 +5,8 @@ jurisdiction: PK
 tax_year: 2025
 reviewed_by: Ibrar Ali
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # pk-sales-tax-federal

@@ -4,6 +4,8 @@ description: 在处理任何中国个人所得税（IIT）事项之前，必须�
 jurisdiction: CN
 domain: international
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # cn-iit

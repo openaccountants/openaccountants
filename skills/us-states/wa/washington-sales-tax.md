@@ -3,6 +3,8 @@ name: washington-sales-tax
 description: Use this skill whenever asked about Washington State sales and use tax, WA DOR filings, B&O tax overview, Washington digital goods tax, Washington exemptions, Washington nexus, or any request involving Washington state sales and use tax compliance. Trigger on phrases like "Washington sales tax", "WA sales tax", "Washington DOR", "B&O tax", "Washington use tax", "Washington digital goods", "Washington resale certificate", or any request involving Washington sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any Washington sales tax work.
 jurisdiction: US-WA
 tax_year: 2024
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # washington-sales-tax

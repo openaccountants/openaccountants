@@ -4,6 +4,8 @@ description: Use this skill whenever asked about Fiji payroll processing for emp
 jurisdiction: FJ
 domain: payroll
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # fiji-payroll

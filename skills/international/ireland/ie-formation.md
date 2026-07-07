@@ -4,6 +4,8 @@ description: "Use this skill whenever asked about forming, incorporating, or reg
 jurisdiction: IE
 domain: international
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ie-formation

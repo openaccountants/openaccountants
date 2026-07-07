@@ -4,6 +4,8 @@ description: Tier 2 Wyoming content skill for entity formation covering tax year
 jurisdiction: US-WY
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # wy-formation

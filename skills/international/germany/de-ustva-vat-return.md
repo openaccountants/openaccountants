@@ -2,6 +2,9 @@
 name: German UStVA (VAT Return)
 description: Prepares the Umsatzsteuervoranmeldung including Vorsteuer deductions, reverse charge for EU services, and Kleinunternehmerregelung threshold.
 jurisdiction: DE
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # German UStVA (VAT Return)

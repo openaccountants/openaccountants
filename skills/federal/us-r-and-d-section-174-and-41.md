@@ -4,6 +4,8 @@ description: Tier 2 US federal content skill for the §174 mandatory R&E capital
 jurisdiction: US
 domain: federal-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # us-r-and-d-section-174-and-41

@@ -4,6 +4,8 @@ description: Tier 2 US federal content skill for IRC §1031 like-kind exchange o
 jurisdiction: US
 domain: federal-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # us-section-1031-like-kind-exchange

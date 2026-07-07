@@ -3,6 +3,8 @@ name: mi-pension-retirement-subtraction
 description: Use this skill whenever asked about Michigan's pension/retirement income subtraction on Form MI-1040, the Form 4884 "Michigan Pension Schedule", the Lowering MI Costs Plan / Public Act 4 of 2023 phase-in, the three birth-year tiers (pre-1946 / 1946-1952 / 1953+), the all-income age 67+ Michigan Standard Deduction ($20,000 single / $40,000 MFJ), or how retired public-safety officers elect their subtraction. Trigger on phrases like "Michigan pension subtraction", "Form 4884", "MI retirement tax", "PA 4 of 2023", "Lowering MI Costs Plan", "pension tax repeal", "retirement subtraction tier", "Michigan Standard Deduction age 67", or "Section A/B/C/D of Form 4884". Federal Social Security, railroad retirement, military retirement, and Michigan National Guard retirement are addressed in passing because they interact with the Form 4884 caps, but are reported on Schedule 1 line 11 (not on Form 4884) and are fully exempt from Michigan tax regardless of tier.
 jurisdiction: US-MI
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # mi-pension-retirement-subtraction

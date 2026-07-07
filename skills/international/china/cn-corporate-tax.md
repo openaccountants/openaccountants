@@ -4,6 +4,8 @@ description: "当被问及中国企业所得税（CIT）相关事宜时使用本
 jurisdiction: CN
 domain: corporate-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # cn-corporate-tax

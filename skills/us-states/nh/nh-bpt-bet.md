@@ -1,8 +1,11 @@
 ---
+description: Source-cited tax guide for US-NH: nh bpt bet. Unverified draft, pending local-accountant review.
 name: nh-bpt-bet
 jurisdiction: US-NH
 domain: Business Profits Tax (BPT) and Business Enterprise Tax (BET)
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # nh-bpt-bet

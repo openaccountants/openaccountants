@@ -4,6 +4,8 @@ description: Use this skill whenever asked about Maldives (Maldivian) personal/i
 jurisdiction: MV
 domain: international
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # maldives-income-tax

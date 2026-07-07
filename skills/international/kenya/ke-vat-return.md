@@ -2,6 +2,9 @@
 name: ke-vat-return
 description: This skill has been consolidated. See kenya-vat.md in this directory.
 jurisdiction: KE
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ke-vat-return

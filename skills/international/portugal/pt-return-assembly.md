@@ -3,6 +3,8 @@ name: pt-return-assembly
 description: "Utilizar esta skill sempre que for solicitada a montagem, finalização ou consolidação de um pacote fiscal anual português — IRS (pessoas singulares) e/ou IRC (sociedades). Acionar com expressões como \"preparar declaração IRS final\", \"preparar Modelo 22 final\", \"pacote contabilista certificado\", \"working paper Portugal\", \"submissão Portal das Finanças\", \"consolidação fiscal Portugal\", \"fechar a declaração\", \"montar dossier fiscal\", \"review final antes de submeter no Portal das Finanças\", \"pacote OCC para revisão\", \"encerramento do ano fiscal português\", \"preparar IES\", \"preparar SAF-T anual\", \"consolidar Modelo 3 e Anexos\", \"consolidar Modelo 22 e Anexos\", ou pedidos equivalentes em inglês: \"Portugal return assembly\", \"Portugal final tax package\", \"Portugal working paper\", \"Portugal IRS/IRC submission package\", \"Portuguese tax return capstone\". Esta é a skill capstone orquestradora que consolida os outputs de pt-income-tax, pt-nhr-ifici, pt-foreign-source-treaties, pt-corporate-tax, portugal-vat-return, pt-social-contributions, portugal-payroll, portugal-bookkeeping, portugal-financial-statements e portugal-crypto-tax num único working paper unificado, com reconciliações cross-skill, instruções de pagamento via Portal das Finanças (Multibanco / MBWay / IBAN), instruções de submissão (Modelo 3 / Modelo 22 / IES / SAF-T) e lista final de ações do contribuinte. Não recalcula nada — apenas reconcilia, monta e empacota para o revisor. LER SEMPRE este skill em ÚLTIMO LUGAR — é o capstone que consolida todos os outputs upstream."
 jurisdiction: PT
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # pt-return-assembly

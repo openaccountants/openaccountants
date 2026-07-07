@@ -6,6 +6,8 @@ domain: federal-tax
 tax_year: 2025
 reviewed_by: Christopher Aryee
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # us-form-1065-partnership

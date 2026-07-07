@@ -7,6 +7,8 @@ role: reference
 tax_year: 2026
 reviewed_by: Rob Hoffman
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # Florida Transient Rental Tax (Tourist Development) — by County

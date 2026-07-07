@@ -4,6 +4,8 @@ description: Minnesota Payroll Compliance Skill (Tax Year 2025)
 jurisdiction: US-MN
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # mn-payroll

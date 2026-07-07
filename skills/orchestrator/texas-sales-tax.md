@@ -4,6 +4,8 @@ description: Use this skill whenever asked about Texas sales and use tax, Comptr
 jurisdiction: US-TX
 domain: Sales and Use Tax
 tax_year: 2024
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # texas-sales-tax

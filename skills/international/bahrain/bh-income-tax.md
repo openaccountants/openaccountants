@@ -4,6 +4,8 @@ description: "Use this skill whenever asked about Bahrain personal income tax fo
 jurisdiction: BH
 domain: international
 tax_year: 2026
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # bahrain-income-tax

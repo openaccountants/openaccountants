@@ -4,6 +4,8 @@ description: Burkina Faso Corporate Tax (IS) Skill v1.0
 jurisdiction: BF
 domain: corporate-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # bf-corporate-tax

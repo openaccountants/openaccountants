@@ -4,6 +4,8 @@ description: "Use this skill whenever asked about Quebec corporate income tax. Q
 jurisdiction: CA
 domain: corporate-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # qc-corporate-tax-co17

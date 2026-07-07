@@ -4,6 +4,8 @@ description: Tier 2 New York content skill for employer payroll compliance cover
 jurisdiction: US-NY
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ny-payroll

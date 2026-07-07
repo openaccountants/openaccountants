@@ -4,6 +4,8 @@ description: Tier 2 US federal content skill for §911 Foreign Earned Income Exc
 jurisdiction: US
 domain: federal-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # us-foreign-earned-income-2555

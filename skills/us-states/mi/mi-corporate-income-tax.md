@@ -1,8 +1,11 @@
 ---
+description: Source-cited tax guide for US-MI: mi corporate income tax. Unverified draft, pending local-accountant review.
 name: mi-corporate-income-tax
 jurisdiction: US-MI
 domain: corporate-income-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # mi-corporate-income-tax

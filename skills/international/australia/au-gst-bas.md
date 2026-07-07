@@ -3,6 +3,8 @@ name: au-gst-bas
 description: Australian Business Activity Statement (BAS) — non-GST sections. Covers PAYG withholding (labels W1-W5), PAYG income tax instalments (labels T1-T9), FBT instalments (label F1), and PAYG withholding reconciliation. Complements australia-gst.md which covers GST labels (1A-9).
 jurisdiction: AU
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # au-gst-bas

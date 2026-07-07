@@ -4,6 +4,8 @@ description: New Jersey Corporation Business Tax (CBT) and Business Alternative 
 jurisdiction: US-NJ
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # nj-cbt-and-bait

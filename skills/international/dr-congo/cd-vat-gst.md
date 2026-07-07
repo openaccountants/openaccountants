@@ -5,6 +5,8 @@ jurisdiction: CD
 domain: vat-gst
 role: compute
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # DR Congo VAT / GST

@@ -3,6 +3,9 @@ name: portugal-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Portuguese VAT return (Declaração Periódica de IVA) for a self-employed individual or small business in Portugal. Trigger on phrases like "prepare Declaração Periódica", "Portuguese VAT return", "IVA Portugal", "classify transactions for Portuguese VAT", or any request involving Portugal VAT filing. This skill covers Continental Portugal only (standard regime). Madeira/Azores reduced rates, regime de isenção, partial exemption, margin scheme (regime da margem), and VAT groups are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Portuguese VAT work.
 jurisdiction: PT
 domain: VAT
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # portugal-vat-return

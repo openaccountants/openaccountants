@@ -3,6 +3,8 @@ name: ie-payroll
 description: Use this skill whenever asked to compute, review, or advise on end-to-end Irish monthly or weekly payroll for employees — gross-to-net calculation, payslip generation, statutory deduction sequencing (pension, BIK, PAYE, USC, PRSI, LPT-at-source), real-time submission to Revenue (PSR / "payroll submission request"), and year-end Employee Detail Summary reconciliation under Revenue myAccount. Trigger on phrases like "Ireland payroll", "Irish payroll", "Irish payslip", "compute Irish payroll", "monthly payroll Ireland", "weekly payroll Ireland", "gross to net Ireland", "RPN", "Revenue Payroll Notification", "PSR submission", "Employee Detail Summary", "BrightPay", "Sage payroll Ireland", "Surf Accounts payroll", "Thesaurus payroll", "BIK Ireland", "company car BIK Ireland", or any request involving running monthly or weekly payroll for one or more employees in Ireland. This skill is the ORCHESTRATOR — it pulls PAYE bracket rules from `ie-paye`, USC bands from `ie-usc`, and PRSI Class A rates from `ie-prsi-class-s` (which also covers Class A for completeness), and sequences them into the correct computation order. ALWAYS read this skill before touching Irish payroll computation.
 jurisdiction: IE
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ie-payroll

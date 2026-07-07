@@ -4,6 +4,8 @@ description: Use this skill whenever asked about Andorra personal income tax (IR
 jurisdiction: AD
 domain: international
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # andorra-income-tax

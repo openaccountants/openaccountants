@@ -4,6 +4,8 @@ description: Colorado Retail Delivery Fee and Sales & Use Tax System (SUTS)
 jurisdiction: US-CO
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # co-retail-delivery-and-suts

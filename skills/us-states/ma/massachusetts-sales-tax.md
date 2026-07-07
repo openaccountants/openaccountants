@@ -3,6 +3,8 @@ name: massachusetts-sales-tax
 description: Use this skill whenever asked about Massachusetts sales and use tax. Trigger on phrases like "Massachusetts sales tax", "MA sales tax", "MA DOR", "ST-9", "Massachusetts clothing exemption". ALWAYS load us-sales-tax first.
 jurisdiction: US-MA
 tax_year: 2024
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # massachusetts-sales-tax

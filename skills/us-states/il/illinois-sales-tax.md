@@ -3,6 +3,8 @@ name: illinois-sales-tax
 description: Use this skill whenever asked about Illinois sales and use tax, Retailers' Occupation Tax (ROT), Illinois use tax, Service Occupation Tax, IDOR filings, Illinois exemptions, Illinois nexus, or any request involving Illinois state sales and use tax compliance. Trigger on phrases like "Illinois sales tax", "IL sales tax", "ROT", "Retailers Occupation Tax", "IDOR", "ST-1", "Illinois exemption certificate", or any request involving Illinois sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any Illinois sales tax work.
 jurisdiction: US-IL
 tax_year: 2024
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # illinois-sales-tax

@@ -4,6 +4,8 @@ description: "Use this skill whenever asked about forming, incorporating, or reg
 jurisdiction: NG
 domain: international
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ng-formation

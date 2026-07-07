@@ -2,6 +2,9 @@
 name: singapore-gst
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Singapore GST return (GST F5 form) for any client. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST F5", "create the return", "Singapore GST", "IRAS filing", or any request involving Singapore GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Singapore only and only standard GST-registered persons filing GST F5. Group registrations, partial exemption with non-de-minimis exempt supplies, Approved 3rd Party Logistics schemes, and Major Exporter Scheme applications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any Singapore GST work.
 jurisdiction: SG
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # singapore-gst

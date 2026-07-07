@@ -2,7 +2,9 @@
 name: maryland-sales-tax
 description: Use this skill whenever asked about Maryland sales and use tax. Trigger on phrases like "Maryland sales tax", "MD sales tax", "Maryland Comptroller", "digital advertising tax". ALWAYS load us-sales-tax first.
 jurisdiction: US-MA
-tax_year: 2
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # maryland-sales-tax

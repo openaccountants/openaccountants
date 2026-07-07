@@ -3,9 +3,11 @@ name: nepal-income-tax
 description: Use this skill whenever asked about Nepal income tax for natural persons (individuals and the self-employed). Trigger on phrases like "how much tax do I pay in Nepal", "Nepal income tax slabs", "D-01 return", "PAN income tax", "SSF contribution", "Social Security Fund", "presumptive tax Nepal", "turnover tax", "tax rate FY 2082/83", "natural person tax", "income tax return Nepal", "TDS Nepal", or any question about filing or computing income tax for a resident natural person, sole proprietor, or small business in Nepal. Also trigger when preparing or reviewing a D-01 return, computing the 1% Social Security Tax slab, applying the female-taxpayer rebate, or advising on advance/installment tax. This skill covers natural-person slabs (single/couple), the SST mechanism, SSF contributions, presumptive and turnover-based small-business regimes, deductions/rebates, filing deadlines, and penalties under the Income Tax Act, 2058. ALWAYS read this skill before touching any Nepal income tax work.
 jurisdiction: NP
 domain: income-tax
-tax_year: 2082
+tax_year: 2025
 reviewed_by: Ashish Bista
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # nepal-income-tax

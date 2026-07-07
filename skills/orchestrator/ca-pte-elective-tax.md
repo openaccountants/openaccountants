@@ -4,6 +4,8 @@ description: Tier 2 California content skill for the Pass-Through Entity Electiv
 jurisdiction: US-CA
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ca-pte-elective-tax

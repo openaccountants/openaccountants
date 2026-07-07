@@ -4,6 +4,8 @@ description: Minnesota Corporate Franchise Tax and Pass-Through Entity Tax
 jurisdiction: US-MN
 domain: state-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # mn-corporate-and-pte

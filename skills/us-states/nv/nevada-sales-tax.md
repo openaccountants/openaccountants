@@ -2,7 +2,9 @@
 name: nevada-sales-tax
 description: Use this skill whenever asked about Nevada sales and use tax. Trigger on phrases like "Nevada sales tax", "NV sales tax", "NRS 372". ALWAYS load us-sales-tax first.
 jurisdiction: US-NV
-tax_year: 2
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # nevada-sales-tax

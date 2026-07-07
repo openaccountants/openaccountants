@@ -4,6 +4,8 @@ description: Deep content skill for the Texas Franchise (Margin) Tax imposed und
 jurisdiction: US-TX
 domain: tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # tx-margin-tax

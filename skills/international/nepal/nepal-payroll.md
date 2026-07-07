@@ -3,9 +3,11 @@ name: nepal-payroll
 description: Use this skill whenever asked about Nepal payroll processing for employed persons. Trigger on phrases like "Nepal payroll", "PAYE Nepal", "TDS on salary Nepal", "eTDS Nepal", "salary tax Nepal", "SSF contribution", "Social Security Fund Nepal", "provident fund Nepal", "gratuity Nepal", "CIT Nepal", "EPF Nepal", "net pay Nepal", "salary calculation Nepal", "NPR payroll", "Nepalese Rupee payroll", "minimum wage Nepal", "PAN Nepal", "D-01 D-03 Nepal", "female tax credit Nepal", "remote area allowance", "married couple tax Nepal", or any question about computing employee pay, salary withholding, or social security contributions for Nepal-based employees. This skill covers monthly TDS/PAYE salary withholding on progressive resident slabs (single and married-couple), the 1% first-band Social Security Tax and its SSF interaction, retirement-fund and insurance deductions, the female tax credit, the 31% Social Security Fund contribution (20% employer / 11% employee), provident fund and gratuity for non-SSF employers, the minimum wage, filing forms (eTDS, D-01/D-02/D-03) and penalties. Nepal DOES levy a personal income tax (progressive PAYE). ALWAYS read this skill before processing any Nepal payroll.
 jurisdiction: NP
 domain: payroll
-tax_year: 2082
+tax_year: 2025
 reviewed_by: Ashish Bista
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # nepal-payroll

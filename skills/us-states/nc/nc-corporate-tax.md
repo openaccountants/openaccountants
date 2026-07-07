@@ -1,7 +1,10 @@
 ---
+description: Source-cited tax guide for US-NC: nc corporate tax. Unverified draft, pending local-accountant review.
 name: nc-corporate-tax
 jurisdiction: US-NC
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # nc-corporate-tax

@@ -4,6 +4,8 @@ description: 当用户咨询、计算、审核或申报中国预提所得税（�
 jurisdiction: CN
 domain: international
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # cn-withholding

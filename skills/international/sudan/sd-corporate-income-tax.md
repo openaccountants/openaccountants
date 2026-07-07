@@ -5,6 +5,8 @@ jurisdiction: SD
 domain: income-tax
 role: compute
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # Sudan Corporate Income Tax

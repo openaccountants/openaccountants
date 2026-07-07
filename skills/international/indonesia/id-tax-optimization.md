@@ -3,6 +3,8 @@ name: id-tax-optimization
 description: "Use this skill whenever asked about Indonesian tax planning, regime selection, or year-end optimization for self-employed individuals (Orang Pribadi) and small businesses. Trigger on phrases like \"Indonesia tax planning\", \"PPh Final vs progressive Indonesia\", \"UMKM 0.5% break-even\", \"PP 55/2022\", \"optimize Indonesian tax\", \"PTKP planning\", \"Indonesian tax savings\", \"NPPN vs pembukuan\", \"PT Perorangan vs OP\", \"perencanaan pajak Indonesia\", \"hemat pajak\", \"tarif final UMKM\". Covers regime selection (UMKM Final 0.5%, NPPN deemed-profit, pembukuan), entity choice (OP vs PT Perorangan vs PT), Pasal 6/Pasal 9 deduction planning, PTKP optimization, PPh Final Pasal 4(2) for rental and construction, BPJS wage-cap planning, year-end timing. Out of scope: aggressive avoidance, treaty shopping, transfer pricing, paper-PT structures, CFC planning, and anything caught by UU KUP substance rules or Pasal 18 UU PPh. ALWAYS read this skill before advising on Indonesian tax planning."
 jurisdiction: ID
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # id-tax-optimization

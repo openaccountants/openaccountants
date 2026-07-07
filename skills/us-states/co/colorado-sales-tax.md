@@ -2,6 +2,9 @@
 name: colorado-sales-tax
 description: Use this skill whenever asked about Colorado sales and use tax, home-rule cities, CDOR filings. Trigger on phrases like "Colorado sales tax", "CO sales tax", "CDOR", "home-rule city Colorado", "retail delivery fee". ALWAYS load us-sales-tax first.
 jurisdiction: US-CO
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # colorado-sales-tax

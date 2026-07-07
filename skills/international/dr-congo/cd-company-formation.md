@@ -5,6 +5,8 @@ jurisdiction: CD
 domain: formation
 role: reference
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # DR Congo Company Formation & Entity Choice

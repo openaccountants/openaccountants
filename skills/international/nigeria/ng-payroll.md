@@ -3,6 +3,8 @@ name: ng-payroll
 description: Use this skill whenever asked to compute, review, or advise on end-to-end Nigerian monthly payroll for employees — gross-to-net calculation, payslip generation, statutory deduction sequencing (Pension, NHF, NHIS, CRA, PAYE), employer remittance scheduling (PAYE to SIRS, Pension to PFC/PFA, NHF to FMBN, NSITF to NSITF), and year-end Form H1 reconciliation. Trigger on phrases like "Nigeria payroll", "compute Nigerian payroll", "Nigerian pay slip", "payslip Nigeria", "monthly payroll Nigeria", "payroll computation Nigeria", "PAYE and pension together", "deductions Nigeria", "gross to net Nigeria", "Lagos payroll", "LIRS payroll", "FIRS payroll", "Form H1 Nigeria", "annual payroll reconciliation Nigeria", or any request involving running monthly payroll for one or more employees in Nigeria. This skill is the ORCHESTRATOR — it pulls PAYE rules from `ng-paye` and statutory employer/employee contributions (Pension, NHF, NSITF, ITF, NHIS, EDT) from `ng-statutory-deductions` and sequences them into the correct computation order. ALWAYS read this skill before touching Nigerian payroll computation.
 jurisdiction: NG
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ng-payroll

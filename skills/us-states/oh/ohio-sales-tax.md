@@ -4,6 +4,8 @@ description: Use this skill whenever asked about Ohio sales and use tax, ODT fil
 jurisdiction: US-OH
 domain: us-states
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # ohio-sales-tax

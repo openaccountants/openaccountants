@@ -5,6 +5,9 @@ jurisdiction: TZ
 domain: tax-optimization
 reviewed_by: Baraka Cassian
 review_status: accountant-reviewed
+tax_year: 2025
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # tanzania-tax-optimization

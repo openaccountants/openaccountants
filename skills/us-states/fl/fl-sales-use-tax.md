@@ -6,6 +6,8 @@ domain: state
 tax_year: 2025
 reviewed_by: Rob Hoffman
 review_status: accountant-reviewed
+tier: 1
+last_updated: 2026-07-06
 ---
 
 # fl-sales-use-tax

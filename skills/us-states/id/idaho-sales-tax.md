@@ -2,7 +2,9 @@
 name: idaho-sales-tax
 description: Use this skill whenever asked about Idaho sales and use tax. Trigger on phrases like "Idaho sales tax", "ID sales tax", "Idaho Code §63-3619", "Idaho SST". ALWAYS load us-sales-tax first.
 jurisdiction: US-ID
-tax_year: 2
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # idaho-sales-tax

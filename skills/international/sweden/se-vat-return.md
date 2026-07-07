@@ -2,6 +2,9 @@
 name: sweden-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Swedish VAT return (momsdeklaration) for a self-employed individual or small business in Sweden. Trigger on phrases like "prepare VAT return", "do the Swedish VAT", "momsdeklaration", "moms", "skattedeklaration", or any request involving Swedish VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Sweden only and only standard-registered businesses. VAT groups, fiscal representatives, and flat-rate schemes are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Swedish VAT work.
 jurisdiction: SE
+tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # sweden-vat-return

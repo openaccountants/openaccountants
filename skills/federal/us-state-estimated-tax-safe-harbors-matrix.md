@@ -4,6 +4,8 @@ description: Tier 2 US federal-level reference skill providing the 50-state matr
 jurisdiction: US
 domain: federal-tax
 tax_year: 2025
+tier: 2
+last_updated: 2026-07-06
 ---
 
 # us-state-estimated-tax-safe-harbors-matrix
