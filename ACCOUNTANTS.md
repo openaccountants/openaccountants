@@ -2,14 +2,13 @@
 
 This file is the public roster of accountants who review OpenAccountants Tax Guides. **This roster is the product.** Agents can do the math; these are the people who stand behind the answers.
 
-**On credentials, precisely:** the credential column states what each accountant told us and, where a public register carries them, what we confirmed against it. Where a register has no public name lookup (ACCA, CIMA, ICAI and others only accept a member number), a blank means *not independently checked*, never *not qualified*. We do not claim to have verified a credential we have not actually looked up.
+**On credentials:** we check each accountant's credential against the issuing body's public register where one exists — CPA state boards via NASBA, CPA Canada provincial bodies, SAICA, and similar. Some bodies (ACCA, CIMA, ICAI among them) publish no name-searchable register at all and can only be queried with a member number, so for those the credential is as supplied by the accountant. A blank credential means we have not recorded one, never that the person is unqualified.
 
-**Scoreboard: 10 of 193 jurisdictions have an accountant on record. The other 183 are open.**
+**Scoreboard: 9 of 193 jurisdictions have an accountant on record. The other 184 are open.**
 
 | Jurisdiction | Accountant | Credential | Guides | On record since | Proof |
 |---|---|---|---|---|---|
 | United States (federal forms) | Christopher Aryee | CPA | 4 | 2026-07 | [33 OBBBA corrections, full diff](https://github.com/openaccountants/openaccountants/pull/45/files) |
-| United States | Amir Pelinkovic | CPA | 16 | 2026 | [profile](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f) |
 | United Kingdom | James Power | — | 15 | 2026 | [profile](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e) |
 | India | Mayur Deokar | CA | 13 | 2026 | [profile](https://www.openaccountants.com/network/f4cb8476-a86d-4fd9-b536-9217e82ccf99) |
 | Indonesia | Rilia Putri | CA | 10 | 2026 | [profile](https://www.openaccountants.com/network/ec70d43e-18c0-4b4e-b92c-4f8a22e10152) |

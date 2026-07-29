@@ -11,7 +11,6 @@ category: federal
 
 ## Verified rates & thresholds (accountant-reviewed)
 
-> Reviewed against the cited tax authorities by **Amir Pelinkovic** on 2026-06-03.
 > This block is generated from the verified facts database at openaccountants.com —
 > edit the facts there, not this prose. Items under clarification are excluded.
 

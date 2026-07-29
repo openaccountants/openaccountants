@@ -9,7 +9,6 @@ version: 2.0
 
 ## Verified rates & thresholds (accountant-reviewed)
 
-> Reviewed against the cited tax authorities by **Amir Pelinkovic** on 2026-06-03.
 > This block is generated from the verified facts database at openaccountants.com —
 > edit the facts there, not this prose. Items under clarification are excluded.
 
@@ -640,7 +639,6 @@ SECTION H — REVIEWER FLAGS
 | Standard mileage rate | $0.70/mile |
 | 179 expensing limit | $1,250,000 (OBBBA) |
 | Bonus depreciation | 100% (OBBBA restored) |
-
 
 ---
 

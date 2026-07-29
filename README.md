@@ -6,8 +6,8 @@ Agents can already do the math. None of them can stand behind an answer. Every o
 
 ### The scoreboard
 
-> ## 10 of 193 jurisdictions
-> have a named, licensed accountant on record. **The other 183 are open.** [Claim yours →](https://github.com/openaccountants/openaccountants/issues/46)
+> ## 9 of 193 jurisdictions
+> have a named, licensed accountant on record. **The other 184 are open.** [Claim yours →](https://github.com/openaccountants/openaccountants/issues/46)
 
 Every reviewed Guide carries its reviewer badge — name, credential, review date, public proof:
 
@@ -81,7 +81,6 @@ The canonical roster lives in [ACCOUNTANTS.md](ACCOUNTANTS.md) (adding yourself 
 | Jurisdiction | Accountant | Guides | Proof |
 |---|---|---|---|
 | United States (federal forms) | **Christopher Aryee, CPA** | 4 | [33 OBBBA corrections, full diff](https://github.com/openaccountants/openaccountants/pull/45/files) |
-| United States | Amir Pelinkovic CPA | 16 | [profile](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f) |
 | United Kingdom | James Power | 15 | [profile](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e) |
 | India | Mayur Deokar CA | 13 | [profile](https://www.openaccountants.com/network/f4cb8476-a86d-4fd9-b536-9217e82ccf99) |
 | Indonesia | Rilia Putri CA | 10 | [profile](https://www.openaccountants.com/network/ec70d43e-18c0-4b4e-b92c-4f8a22e10152) |

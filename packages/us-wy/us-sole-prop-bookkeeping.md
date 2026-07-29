@@ -8,7 +8,6 @@ version: 2.0
 
 ## Verified rates & thresholds (accountant-reviewed)
 
-> Reviewed against the cited tax authorities by **Amir Pelinkovic** on 2026-06-03.
 > This block is generated from the verified facts database at openaccountants.com —
 > edit the facts there, not this prose. Items under clarification are excluded.
 
@@ -853,7 +852,6 @@ The workflow in `us-tax-workflow-base` mandates inferring the client profile fro
 ## End of US Sole Prop Bookkeeping Skill v2.0
 
 This skill is incomplete without the companion workflow file loaded alongside it: `us-tax-workflow-base` v0.1 or later (Tier 1, workflow architecture). Do not attempt to produce a Schedule C working paper without the base loaded.
-
 
 ---
 

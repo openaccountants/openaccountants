@@ -16,7 +16,6 @@ _Last updated: 2026-06-07. The authoritative, live list is the network directory
 | 🇸🇦 Saudi Arabia | Mehran Habib | 13480 |
 | 🇿🇦 South Africa | Werner Britz | CA(SA) |
 | 🇬🇧 United Kingdom | James Power | — |
-| 🇺🇸 United States (federal + Illinois) | Amir Pelinkovic | 065.061971 |
 
 **11 credentialed practitioners across 13 jurisdiction assignments.** Most jurisdictions in this repo are still **source-cited drafts** awaiting a credentialed reviewer.
 

@@ -8,7 +8,6 @@ version: 2.0
 
 ## Verified rates & thresholds (accountant-reviewed)
 
-> Reviewed against the cited tax authorities by **Amir Pelinkovic** on 2026-06-03.
 > This block is generated from the verified facts database at openaccountants.com —
 > edit the facts there, not this prose. Items under clarification are excluded.
 
@@ -287,7 +286,6 @@ Most states offer VDAs for sellers who discover past-due nexus obligations. Bene
 ## Disclaimer
 
 This skill is provided for informational and computational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional (CPA, EA, or tax attorney) before filing.
-
 
 ---
 

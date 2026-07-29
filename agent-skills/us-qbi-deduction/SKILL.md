@@ -664,7 +664,6 @@ Taxable income cap = 20% × $425,093 = $85,019 (not binding)
 
 ## Verified rates & thresholds (accountant-reviewed)
 
-> Reviewed against the cited US federal authorities (IRC §199A, Treasury Regulations, IRS revenue procedures) by **Amir Pelinkovic** on 2026-06-03.
 > Items flagged for further clarification are tracked separately and excluded here.
 > This block is generated from verified `skill_facts` — edit the facts, not the prose.
 
