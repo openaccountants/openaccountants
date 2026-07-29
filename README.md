@@ -7,7 +7,7 @@ Agents can already do the math. None of them can stand behind an answer. Every o
 ### The scoreboard
 
 > ## 10 of 193 jurisdictions
-> have a named, licensed Partner on record. **The other 183 are open.** [Claim yours →](https://github.com/openaccountants/openaccountants/issues/46)
+> have a named, licensed accountant on record. **The other 183 are open.** [Claim yours →](https://github.com/openaccountants/openaccountants/issues/46)
 
 Every reviewed Guide carries its reviewer badge — name, credential, review date, public proof:
 
@@ -21,7 +21,7 @@ Every reviewed Guide carries its reviewer badge — name, credential, review dat
 1,000+ Guides across 190+ jurisdictions, working with **Claude, ChatGPT, Cursor, Windsurf, and any MCP-compatible agent**. Every Guide is in exactly one of two states, and the repo greps honestly:
 
 - **Source-cited draft** — written from primary legislation, every figure cited, not yet professionally reviewed
-- **Accountant-reviewed** — a named, licensed Partner checked the complete Guide; their badge is on it ([full roster](PARTNERS.md))
+- **Accountant-reviewed** — a named, licensed accountant reviewed the complete Guide; their name is on it ([full roster](ACCOUNTANTS.md))
 
 ⚠️ **General reference only, not advice.** Have a qualified professional review outputs before filing, payment, or action. <details><summary>Read the full disclaimer</summary>
 
@@ -46,7 +46,7 @@ AI:     ITR12 working paper
         [Request accountant review →]
 ```
 
-**[Add to your AI →](https://www.openaccountants.com/connect)**   |   **[Browse Guides →](https://www.openaccountants.com/skills)**   |   **[Become a Partner →](https://www.openaccountants.com/for-accountants)**
+**[Add to your AI →](https://www.openaccountants.com/connect)**   |   **[Browse Guides →](https://www.openaccountants.com/skills)**   |   **[Review a Guide →](https://www.openaccountants.com/for-accountants)**
 
 ---
 
@@ -74,11 +74,11 @@ Works in Claude Desktop (`claude_desktop_config.json`), Cursor (`.cursor/mcp.jso
 
 ---
 
-## Partners: the named professionals behind the Guides
+## The named accountants behind the Guides
 
-The canonical roster lives in [PARTNERS.md](PARTNERS.md) (and adding yourself to it is step two of Partner onboarding). These licensed practitioners have reviewed Guides for their jurisdictions. Their name appears on every answer the AI gives from a Guide they reviewed, and their reviews are public.
+The canonical roster lives in [ACCOUNTANTS.md](ACCOUNTANTS.md) (adding yourself to it is step two of onboarding). These licensed practitioners have reviewed Guides for their jurisdictions. Their name appears on every answer the AI gives from a Guide they reviewed, and their reviews are public.
 
-| Jurisdiction | Partner | Guides | Proof |
+| Jurisdiction | Accountant | Guides | Proof |
 |---|---|---|---|
 | United States (federal forms) | **Christopher Aryee, CPA** | 4 | [33 OBBBA corrections, full diff](https://github.com/openaccountants/openaccountants/pull/45/files) |
 | United States | Amir Pelinkovic CPA | 16 | [profile](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f) |
@@ -91,9 +91,9 @@ The canonical roster lives in [PARTNERS.md](PARTNERS.md) (and adding yourself to
 | South Africa | Werner Britz CA(SA) | 5 | [profile](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0) |
 | Malta | Michael Cutajar CPA (Malta) | 5 | [profile](https://www.openaccountants.com/network) |
 | Nepal | Ashish Bista CA | 5 | [profile](https://www.openaccountants.com/network/78ab67db-8f29-4746-8102-7b52d17309aa) |
-| **Your jurisdiction** | Open (130+ still unclaimed) | — | [Become a Partner →](https://www.openaccountants.com/for-accountants) |
+| **Your jurisdiction** | Open (130+ still without an accountant) | — | [Review a Guide →](https://www.openaccountants.com/for-accountants) |
 
-> Accountant-reviewed Guides (Tier 1) are served via the MCP server with the Partner's name on every output. Guides in this repo that no Partner has reviewed yet are source-cited drafts (Tier 2).
+> Accountant-reviewed Guides (Tier 1) are served via the MCP server with the accountant's name on every output. Guides in this repo that no accountant has reviewed yet are source-cited drafts (Tier 2).
 
 Licensed accountant? Review a complete Guide for your jurisdiction and your name goes on it, publicly and permanently. [Start here.](https://www.openaccountants.com/for-accountants)
 
@@ -103,7 +103,7 @@ Licensed accountant? Review a complete Guide for your jurisdiction and your name
 
 | | MCP connector *(recommended)* | Manual upload from this repo |
 |---|---|---|
-| **What you get** | Accountant-reviewed Guides, the reviewing Partner's name on every answer, AI-to-human handoff (`request_accountant_review` routes to a real accountant with your worksheet attached) | Source-cited drafts, no reviewer attribution, no handoff |
+| **What you get** | Accountant-reviewed Guides, the reviewing accountant's name on every answer, AI-to-human handoff (`request_accountant_review` routes to a real accountant with your worksheet attached) | Source-cited drafts, no reviewer attribution, no handoff |
 | **How** | [openaccountants.com/connect](https://www.openaccountants.com/connect), or the install above | Download a folder, drag `.md` files into your AI |
 | **Best for** | Anyone who wants to actually use OpenAccountants | Developers and accountants who want to audit, fork, or contribute |
 | **Clients** | Claude.ai, ChatGPT (Business+), Cursor, Windsurf, Claude Desktop, Claude Code, any MCP-aware client | Any AI that reads files |
@@ -199,7 +199,7 @@ Malta, UK, Germany, France, Australia, Canada, Israel, India, Japan, Spain, Neth
 
 Consumption tax classification with local supplier pattern libraries. From Albania to Zimbabwe.
 
-Full coverage breakdown: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md) · Machine-readable: [`index.json`](index.json)
+Full coverage breakdown: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md) · How figures are dated: [docs/TAX-YEARS.md](docs/TAX-YEARS.md) · What we certify: [docs/RESEARCH-GUARDRAILS.md](docs/RESEARCH-GUARDRAILS.md) · Machine-readable: [`index.json`](index.json)
 
 ---
 
@@ -225,7 +225,7 @@ When uncertain, the system always assumes MORE tax, never less. Your accountant 
 
 ## Are you an accountant?
 
-Most Guides are source-cited drafts: written from primary legislation but awaiting a credentialed review. Become a **Partner** for your jurisdiction, review a complete Guide, and it becomes accountant-reviewed with your name on every answer the AI gives from it. Christopher Aryee's [33-correction OBBBA review](https://github.com/openaccountants/openaccountants/pull/45/files) is what that looks like in practice.
+Most Guides are source-cited drafts: written from primary legislation but awaiting a credentialed review. Review a complete Guide for your jurisdiction and it becomes accountant-reviewed with your name on every answer the AI gives from it. Christopher Aryee's [33-correction OBBBA review](https://github.com/openaccountants/openaccountants/pull/45/files) is what that looks like in practice.
 
 **You don't need GitHub.** Just:
 
@@ -235,7 +235,7 @@ Most Guides are source-cited drafts: written from primary legislation but awaiti
 
 Or: fork, fix a rate against your tax authority's guidance, PR. **Your name on the Guide either way.**
 
-> 130+ jurisdictions are still open for a Partner. [Claim yours →](https://www.openaccountants.com/for-accountants)
+> 130+ jurisdictions still have no accountant on record. [Claim yours →](https://www.openaccountants.com/for-accountants)
 
 ---
 
@@ -301,13 +301,13 @@ python3 scripts/build-index.py      # refresh index.json
 - **LLMs hallucinate.** These files steer the model; they don't guarantee correct numbers. Always have a qualified professional review before filing.
 - **Tax law changes.** Rates and thresholds go out of date. The repo is a snapshot; [openaccountants.com](https://openaccountants.com) may be ahead of what you cloned. (When a professional catches drift, it lands here as a public correction, like [PR #45](https://github.com/openaccountants/openaccountants/pull/45).)
 - **Coverage is uneven.** 13 countries have the full accounting suite; many jurisdictions have VAT only or partial coverage. Check each country folder's README or [`index.json`](index.json).
-- **Newer domains need more eyes.** Bookkeeping, payroll, formation, and financial statements Guides are source-cited drafts with fewer Partner reviews than the core tax Guides.
+- **Newer domains need more eyes.** Bookkeeping, payroll, formation, and financial statements Guides are source-cited drafts with fewer accountant reviews than the core tax Guides.
 
 ---
 
 ## Disclaimer
 
-OpenAccountants provides general tax and accounting reference material for AI-assisted workflows. It is **not** a law firm, accounting firm, tax preparer, or return-filing service. Outputs are **not** tax, legal, accounting, or financial advice, are not reviewed for your specific facts, and must be reviewed by a qualified professional before filing, payment, or action. Using a Guide does not create a client relationship. A *source-cited draft* has not been reviewed by a credentialed accountant; only an *accountant-reviewed* Guide carries a Partner's review, and that review is of reference material, not of any specific taxpayer's situation.
+OpenAccountants provides general tax and accounting reference material for AI-assisted workflows. It is **not** a law firm, accounting firm, tax preparer, or return-filing service. Outputs are **not** tax, legal, accounting, or financial advice, are not reviewed for your specific facts, and must be reviewed by a qualified professional before filing, payment, or action. Using a Guide does not create a client relationship. A *source-cited draft* has not been reviewed by a credentialed accountant; only an *accountant-reviewed* Guide carries a named accountant's review, and that review is of reference material, not of any specific taxpayer's situation.
 
 The most up-to-date, reviewed version is maintained at [openaccountants.com](https://openaccountants.com).
 

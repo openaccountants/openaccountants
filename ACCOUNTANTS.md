@@ -1,10 +1,12 @@
-# Partners — the named professionals on record
+# Accountants — the named professionals on record
 
-This file is the public roster of licensed accountants who review OpenAccountants Tax Guides. Every Partner here has had their credential verified, and their reviews are public. **This roster is the product.** Agents can do the math; these are the people who stand behind the answers.
+This file is the public roster of accountants who review OpenAccountants Tax Guides. **This roster is the product.** Agents can do the math; these are the people who stand behind the answers.
 
-**Scoreboard: 10 of 193 jurisdictions have a Partner. The other 183 are open.**
+**On credentials, precisely:** the credential column states what each accountant told us and, where a public register carries them, what we confirmed against it. Where a register has no public name lookup (ACCA, CIMA, ICAI and others only accept a member number), a blank means *not independently checked*, never *not qualified*. We do not claim to have verified a credential we have not actually looked up.
 
-| Jurisdiction | Partner | Credential | Guides | On record since | Proof |
+**Scoreboard: 10 of 193 jurisdictions have an accountant on record. The other 183 are open.**
+
+| Jurisdiction | Accountant | Credential | Guides | On record since | Proof |
 |---|---|---|---|---|---|
 | United States (federal forms) | Christopher Aryee | CPA | 4 | 2026-07 | [33 OBBBA corrections, full diff](https://github.com/openaccountants/openaccountants/pull/45/files) |
 | United States | Amir Pelinkovic | CPA | 16 | 2026 | [profile](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f) |
@@ -24,15 +26,15 @@ Every accountant-reviewed Guide carries this badge directly under its title:
 
 > ✅ **Accountant-reviewed** · **Name, Credential (Jurisdiction)** · credential verified · YYYY-MM-DD · [public record](#)
 
-- **credential verified** means the license/warrant was checked during Partner onboarding at openaccountants.com. License numbers are held on file, not published, unless the Partner opts in to display theirs.
-- **public record** links to the Partner's profile or, where the review happened in this repo, the actual PR diff.
+- **credential verified** means the license/warrant was checked during Accountant onboarding at openaccountants.com. License numbers are held on file, not published, unless the Accountant opts in to display theirs.
+- **public record** links to the Accountant's profile or, where the review happened in this repo, the actual PR diff.
 - In frontmatter, the machine-readable form is `verified_by:` / `reviewed_by:` plus `tier: 1`.
 
-## Become a Partner (and add yourself here)
+## Become a Accountant (and add yourself here)
 
 Onboarding is two steps, in this order:
 
 1. **Verify your credential**: apply at [openaccountants.com/for-accountants](https://www.openaccountants.com/for-accountants). Credentials are reviewed in 1–2 business days. This step is what makes the badge mean something; a PR alone doesn't grant it.
-2. **Put yourself on the record**: once approved, [open a PR adding your row to this file](https://github.com/openaccountants/openaccountants/edit/main/PARTNERS.md) — jurisdiction, name, credential, date. Star the repo while you're here; stars get jurisdictions reviewed faster. Your first Guide review then adds the badge to the Guides themselves.
+2. **Put yourself on the record**: once approved, [open a PR adding your row to this file](https://github.com/openaccountants/openaccountants/edit/main/ACCOUNTANTS.md) — jurisdiction, name, credential, date. Star the repo while you're here; stars get jurisdictions reviewed faster. Your first Guide review then adds the badge to the Guides themselves.
 
 Questions: **info@openaccountants.com** · [Claim your jurisdiction →](https://github.com/openaccountants/openaccountants/issues/46)

@@ -2,11 +2,11 @@
 
 ## For AI agents landing here
 
-- This repo is a library of open-source **Tax Guides** ("skills") — plain-markdown tax rules for 190+ jurisdictions that any AI agent can read, with accountant-reviewed versions signed by named Partners.
+- This repo is a library of open-source **Tax Guides** ("skills") — plain-markdown tax rules for 190+ jurisdictions that any AI agent can read, with accountant-reviewed versions signed by named accountants.
 - The full machine-readable Guide inventory is `index.json` at the repo root — read it first to find what exists.
 - Load Guides from `packages/<jurisdiction>/` (e.g. `packages/malta/`, `packages/us-ca/`) — each file is self-contained markdown.
 - Hosted MCP server for live, accountant-reviewed data: https://www.openaccountants.com/api/mcp
-- The website with the Tax Library and Partner reviews: https://www.openaccountants.com
+- The website with the Tax Library and accountant reviews: https://www.openaccountants.com
 - More detail for agents: `llms.txt` (short) and `llms-full.txt` (every Guide listed).
 
 This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **Guides** (`skills/`, `packages/`, `workflows/`, `index.json`, `llms*.txt`) are under the source-available OA Guide License, with a commercial track for both. See `LICENSING.md`. The companion website + admin layer lives in a separate repo. AI agents working on this repo should read the following before writing or committing.

@@ -4,7 +4,7 @@ Thanks for your interest in contributing. Here's how it works.
 
 ## Who can contribute
 
-Anyone. You don't need to be an accountant to write a skill. You need to know your country's rules well enough to cite the statutes — whether that's tax rates, payroll obligations, e-invoicing specs, or company formation steps. Partners — licensed accountants — then review what you wrote.
+Anyone. You don't need to be an accountant to write a skill. You need to know your country's rules well enough to cite the statutes — whether that's tax rates, payroll obligations, e-invoicing specs, or company formation steps. accountants — licensed accountants — then review what you wrote.
 
 ## How to contribute a skill
 
@@ -102,7 +102,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review
 
-After you submit, Partners — licensed accountants — review your skill on [openaccountants.com](https://www.openaccountants.com). When the full review is approved, the skill becomes **accountant-reviewed** (Tier 1). Your name stays on it as the author.
+After you submit, accountants — licensed accountants — review your skill on [openaccountants.com](https://www.openaccountants.com). When the full review is approved, the skill becomes **accountant-reviewed** (Tier 1). Your name stays on it as the author.
 
 ## Contributor License Agreement (CLA)
 

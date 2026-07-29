@@ -2,6 +2,65 @@
 
 All notable changes to OpenAccountants will be documented in this file.
 
+## [2.4.0] — 2026-07-29
+
+### How figures know which tax year they belong to
+
+- **Every rule now carries its period.** `search_rules` renders `TY2026` for
+  calendar-year jurisdictions and `2025/26` for fiscal ones, on every figure.
+- **Mixed-year responses say so.** When one answer carries figures from more
+  than one tax year, the header names the years and forbids combining them.
+  This closes the failure where a 2025 threshold and a 2026 catch-up could be
+  summed into a total true for no year.
+- **Current year ranks first.** Year coverage now outranks text relevance, so
+  the figure for the year you asked about surfaces above older vintages, which
+  still serve, clearly labeled. Serving window is the current tax year plus the
+  prior one (people file last year all year long); older vintages serve only
+  when their year is named.
+- **Fiscal-year jurisdictions got their real windows.** ~5,000 figures across
+  GB, IN, HK, NZ, AU, PK, BD and ZA were stamped 1 Jan–31 Dec. They now carry
+  the actual tax year: UK 6 Apr–5 Apr, India/HK/NZ 1 Apr–31 Mar, AU/PK/BD
+  1 Jul–30 Jun, ZA 1 Mar–end Feb. Ireland, Singapore (calendar for
+  individuals) and Japan (calendar for individuals, April for corporates) were
+  deliberately left alone.
+- New: [`docs/TAX-YEARS.md`](docs/TAX-YEARS.md).
+
+### Search and serving correctness
+
+- **`401k` now matches `401(k)`.** Users type the compact form; the law — and
+  therefore our figures — uses parentheses. The tokenizer split on punctuation,
+  so the two spellings never met and the current-year figure was invisible to
+  the most-asked US retirement query. It looked exactly like stale data and was
+  not. Citation variants now expand both ways (401k ↔ 401(k), 403b, 402g,
+  401a17).
+- **`/skills/<slug>.md` serves the Guide, not the web app.** It previously
+  returned HTTP 200 with the HTML shell, so an AI told to fetch the markdown —
+  as our own Guides instruct — parsed markup and never knew it had failed.
+- **A Guide can no longer claim a review it did not have.** Some stored bodies
+  carried "accountant-reviewed" prose and a reviewer's name from an earlier
+  era while the verification state said source-cited draft. The state now wins
+  at serve time: the claim is neutralised, a correction leads the body, and the
+  divergence is reported in `provenance.body_review_claim_corrected`.
+
+### Research guardrails
+
+- Analysis-shaped questions now carry a research protocol: authority hierarchy,
+  citation discipline, a confidence ladder, a memo contract, and escalation to
+  a named accountant. `verify_citations` machine-checks the model's own
+  citations against the pages it cited.
+- New: [`docs/RESEARCH-GUARDRAILS.md`](docs/RESEARCH-GUARDRAILS.md), including
+  the limits — we cannot make a model obey, and we say so.
+
+### Naming
+
+- **"Partner" is retired** across the repo. The public role is **accountant**
+  (or *Open Accountant*). `PARTNERS.md` is now
+  [`ACCOUNTANTS.md`](ACCOUNTANTS.md).
+- **The roster no longer claims credentials we have not checked.** It now
+  states exactly what was self-declared and what was confirmed against a public
+  register, and says plainly that a blank means *not independently checked*,
+  never *not qualified*.
+
 ## [2.3.0] — 2026-07-16
 
 ### Mixed-licence restructure (Guides move to a source-available licence)
