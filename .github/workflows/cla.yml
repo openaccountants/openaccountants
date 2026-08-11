@@ -1,19 +1,24 @@
 # Contributor License Agreement check.
 #
-# SETUP REQUIRED before this becomes a reliable gate:
-#   1. Create a fine-grained PAT with `contents: write` on a signatures store
-#      (this repo, or a private one) and add it as the repo secret
-#      `CLA_SIGNATURES_TOKEN`.
-#   2. Point `path-to-signatures` / `remote-repository-name` below at where you
-#      want signatures recorded.
-#   3. In Settings → Branches, add a branch-protection rule on `main` that makes
-#      the "CLA Assistant" status check REQUIRED. (Not enabled automatically —
-#      that would also block direct pushes to main.)
+# Signatures are stored in THIS repository, on the `cla-signatures` branch, at
+# `signatures/cla.json`. The action creates that branch on the first signature.
+# Keep it unprotected: the action commits to it on every signature, and branch
+# protection makes the write fail.
 #
-# Until the secret is set, this workflow will fail on PRs; that is intentional,
-# so the gate is visible. Contributors accept the CLA by commenting
-# "I have read the CLA Document and I hereby sign the CLA" on their PR, or by
-# ticking the CLA box in the pull request template (see CLA.md).
+# `CLA_SIGNATURES_TOKEN` is NOT required for this setup. Per the action's
+# documentation a PAT is only needed when signatures live in a different
+# repository or organisation, which needs `remote-repository-name` to be set
+# below. It is not set, so the built-in GITHUB_TOKEN is sufficient, provided
+# this workflow grants `contents: write` (see permissions).
+#
+# Optional hardening: in Settings → Branches, add a branch-protection rule on
+# `main` making the "CLA Assistant" status check REQUIRED. Verify a signature
+# comment on an open PR turns the check green BEFORE doing that, or outside
+# contributions become unmergeable.
+#
+# Contributors accept the CLA by commenting "I have read the CLA Document and I
+# hereby sign the CLA" on their PR, or by ticking the CLA box in the pull
+# request template (see CLA.md).
 
 name: "CLA Assistant"
 
@@ -25,7 +30,7 @@ on:
 
 permissions:
   actions: write
-  contents: read
+  contents: write # the action commits signatures/cla.json to the cla-signatures branch
   pull-requests: write
   statuses: write
 
