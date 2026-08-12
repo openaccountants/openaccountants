@@ -114,7 +114,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Sonderabschreibung (Special Depreciation) -- §7g Abs. 5 EStG
 
-- **Sonderabschreibung rule** — Up to 20% additional depreciation in the year of acquisition and the following 4 years (on top of normal AfA). Combined with IAB, this allows extremely front-loaded deductions. Requirements: Business assets ≤ EUR 200,000 at end of prior year (or profits ≤ EUR 200,000 for Freiberufler).  _(§7g Abs. 5 EStG)_
+- **Sonderabschreibung rule** — Up to 40% additional depreciation (for assets acquired after 31.12.2023, previously 20%) in the year of acquisition and the following 4 years (on top of normal AfA). Combined with IAB, this allows extremely front-loaded deductions. Requirements: Business assets ≤ EUR 200,000 at end of prior year (or profits ≤ EUR 200,000 for Freiberufler).  _(§7g Abs. 5 EStG)_
 
 ## Section 5 -- Loss Utilization
 
@@ -276,7 +276,7 @@ Legislation: Sozialgesetzbuch (SGB)
 | Year | Deduction | Mechanism |
 | --- | --- | --- |
 | Year 0 (before purchase) | EUR 20,000 | IAB (50% of EUR 40,000) |
-| Year 1 (purchase year) | EUR 8,000 + EUR 3,200 | Sonderabschreibung (20%) + regular AfA (16%/6yr) |
+| Year 1 (purchase year) | EUR 8,000 + EUR 3,200 | Sonderabschreibung (40% of reduced base) + regular AfA (16%/6yr) |
 | **Total Year 0+1 deduction** | **EUR 31,200** | 78% of cost deducted within ~2 years |
 | Tax saving at 42% marginal rate | **~EUR 13,104** |  |
 
