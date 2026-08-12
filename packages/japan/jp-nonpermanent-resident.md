@@ -1,6 +1,6 @@
 ---
 name: jp-nonpermanent-resident
-description: Japan non-permanent resident regime: foreign income taxed only if remitted, 5-year cap, transition to permanent resident. Trigger on: "Japan non-permanent resident", "Japan tax resident foreign income", "Japan 5-year rule", "move to Japan taxes", "Japan remittance basis", "Japan income tax non-permanent", "working in Japan foreign income", "Japan PR tax status". ALWAYS load before advising on Japanese tax for someone resident less than 5 years.
+description: "Japan non-permanent resident regime: foreign income taxed only if remitted, 5-year cap, transition to permanent resident. Trigger on: \"Japan non-permanent resident\", \"Japan tax resident foreign income\", \"Japan 5-year rule\", \"move to Japan taxes\", \"Japan remittance basis\", \"Japan income tax non-permanent\", \"working in Japan foreign income\", \"Japan PR tax status\". ALWAYS load before advising on Japanese tax for someone resident less than 5 years."
 version: 1.0
 jurisdiction: JP
 tax_year: 2025

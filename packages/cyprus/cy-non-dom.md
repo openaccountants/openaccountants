@@ -1,6 +1,6 @@
 ---
 name: cy-non-dom
-description: Use this skill for any question about Cyprus non-domicile status. Trigger on: "Cyprus non-dom", "non-domiciled Cyprus", "Cyprus Special Defence Contribution", "SDC Cyprus", "move to Cyprus tax", "Cyprus dividends tax exempt", "Cyprus interest SDC exempt", "17 of 20 years Cyprus", "Cyprus no tax on dividends non-dom", "Cyprus tax residency non-dom". Covers non-dom eligibility, SDC exemption, Cyprus CGT position, and comparison with domiciled residents.
+description: "Use this skill for any question about Cyprus non-domicile status. Trigger on: \"Cyprus non-dom\", \"non-domiciled Cyprus\", \"Cyprus Special Defence Contribution\", \"SDC Cyprus\", \"move to Cyprus tax\", \"Cyprus dividends tax exempt\", \"Cyprus interest SDC exempt\", \"17 of 20 years Cyprus\", \"Cyprus no tax on dividends non-dom\", \"Cyprus tax residency non-dom\". Covers non-dom eligibility, SDC exemption, Cyprus CGT position, and comparison with domiciled residents."
 version: 1.0
 jurisdiction: CY
 tax_year: 2025

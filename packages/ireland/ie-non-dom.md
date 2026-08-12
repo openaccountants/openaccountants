@@ -1,6 +1,6 @@
 ---
 name: ie-non-dom
-description: Use this skill for any question about Ireland's non-dom tax rules. Trigger on: "Ireland non-dom", "Irish non-domiciled", "remittance basis Ireland", "move to Ireland tax", "Irish tax foreign income", "Ireland domicile tax", "not domiciled Ireland", "Irish resident non-dom", "Ireland foreign dividends tax", "Irish non-dom CGT". Covers non-dom eligibility, remittance basis, Irish-source income treatment, CGT for non-doms, and comparison with UK non-dom.
+description: "Use this skill for any question about Ireland's non-dom tax rules. Trigger on: \"Ireland non-dom\", \"Irish non-domiciled\", \"remittance basis Ireland\", \"move to Ireland tax\", \"Irish tax foreign income\", \"Ireland domicile tax\", \"not domiciled Ireland\", \"Irish resident non-dom\", \"Ireland foreign dividends tax\", \"Irish non-dom CGT\". Covers non-dom eligibility, remittance basis, Irish-source income treatment, CGT for non-doms, and comparison with UK non-dom."
 version: 1.0
 jurisdiction: IE
 tax_year: 2025

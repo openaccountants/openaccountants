@@ -1,6 +1,6 @@
 ---
 name: nl-30-percent-ruling
-description: Netherlands 30% ruling (tax-free allowance for inbound expats): 30% of salary tax-free, conditions, 5-year duration, partial non-resident election. Trigger on: "Netherlands 30% ruling", "30 procent regeling", "Holland expat tax ruling", "Netherlands inbound worker tax", "30% allowance Netherlands", "Dutch expat regime", "Netherlands tax ruling expatriate", "partial non-resident Netherlands".
+description: "Netherlands 30% ruling (tax-free allowance for inbound expats): 30% of salary tax-free, conditions, 5-year duration, partial non-resident election. Trigger on: \"Netherlands 30% ruling\", \"30 procent regeling\", \"Holland expat tax ruling\", \"Netherlands inbound worker tax\", \"30% allowance Netherlands\", \"Dutch expat regime\", \"Netherlands tax ruling expatriate\", \"partial non-resident Netherlands\"."
 version: 1.0
 jurisdiction: NL
 tax_year: 2025

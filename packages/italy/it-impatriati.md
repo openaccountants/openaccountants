@@ -1,6 +1,6 @@
 ---
 name: it-impatriati
-description: Italy impatriati tax regime: 50% income exclusion for qualifying inbound workers, conditions, duration, and the €100k/€200k flat tax for high-net-worth new residents. Trigger on: "Italy impatriati regime", "Italy inbound worker tax", "50% exclusion Italy", "move to Italy taxes", "Italy flat tax €100k", "Italy regime impatriati", "Italy Beckham equivalent", "Italy special tax regime new residents". ALWAYS load before advising a new Italy-based worker or HNW individual on their Italian tax.
+description: "Italy impatriati tax regime: 50% income exclusion for qualifying inbound workers, conditions, duration, and the €100k/€200k flat tax for high-net-worth new residents. Trigger on: \"Italy impatriati regime\", \"Italy inbound worker tax\", \"50% exclusion Italy\", \"move to Italy taxes\", \"Italy flat tax €100k\", \"Italy regime impatriati\", \"Italy Beckham equivalent\", \"Italy special tax regime new residents\". ALWAYS load before advising a new Italy-based worker or HNW individual on their Italian tax."
 version: 1.0
 jurisdiction: IT
 tax_year: 2025

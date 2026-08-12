@@ -1,6 +1,6 @@
 ---
 name: germany-to-switzerland-cross-border-tax
-description: The three ways Germans end up with Swiss tax lives — Grenzgänger commuting daily, Wochenaufenthalter renting a weekday flat, and full relocation — and the German rules that follow you across: the §6 AStG exit tax on shareholdings, extended limited tax liability, the five-year inheritance-tax shadow, and how the 4.5% Grenzgänger withholding actually works.
+description: "The three ways Germans end up with Swiss tax lives — Grenzgänger commuting daily, Wochenaufenthalter renting a weekday flat, and full relocation — and the German rules that follow you across: the §6 AStG exit tax on shareholdings, extended limited tax liability, the five-year inheritance-tax shadow, and how the 4.5% Grenzgänger withholding actually works."
 jurisdiction: DE
 tax_year: 2025
 last_updated: 2026-08-03

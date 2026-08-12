@@ -1,6 +1,6 @@
 ---
 name: ua-bookkeeping
-description: Ukrainian sole-proprietor (ФОП) record-keeping and bookkeeping: the income ledger and income-and-expense ledger, software cash registers (ПРРО / PRRO), primary documents that support income and expenses, fiscalisation, and document retention. Records and process, not rate computation.
+description: "Ukrainian sole-proprietor (ФОП) record-keeping and bookkeeping: the income ledger and income-and-expense ledger, software cash registers (ПРРО / PRRO), primary documents that support income and expenses, fiscalisation, and document retention. Records and process, not rate computation."
 version: 1.0
 jurisdiction: UA
 tax_year: 2026

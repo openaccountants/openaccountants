@@ -1,6 +1,6 @@
 ---
 name: uk-to-uae-relocation-tax
-description: What actually happens to your UK tax when you move to Dubai or Abu Dhabi: the Statutory Residence Test, split-year treatment, the 5-year return trap, what stays UK-taxed forever, the new residence-based IHT tail, and how UAE residency, corporate tax and the 2016 treaty work on the other end. Sequenced as a timeline with worked examples.
+description: "What actually happens to your UK tax when you move to Dubai or Abu Dhabi: the Statutory Residence Test, split-year treatment, the 5-year return trap, what stays UK-taxed forever, the new residence-based IHT tail, and how UAE residency, corporate tax and the 2016 treaty work on the other end. Sequenced as a timeline with worked examples."
 jurisdiction: GB
 tax_year: 2025
 last_updated: 2026-08-03

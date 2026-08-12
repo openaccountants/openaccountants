@@ -1,6 +1,6 @@
 ---
 name: asia-pacific-corridors
-description: version: 1.0
+description: "version: 1.0"
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025

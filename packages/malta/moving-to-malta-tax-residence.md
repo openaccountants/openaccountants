@@ -1,6 +1,6 @@
 ---
 name: moving-to-malta-tax-residence
-description: Malta is one of Europe's quietest wealth-migration destinations: EU membership, English-language administration, no wealth tax, no inheritance tax, no personal exit tax, and a remittance-basis system where foreign capital gains are never taxed even when brought in. This Guide maps the residence routes (ordinary residence, GRP/TRP 15%, MPRP, HQP, nomad permit), the mechanics of remittance-basis living, and the short list of things Malta does tax.
+description: "Malta is one of Europe's quietest wealth-migration destinations: EU membership, English-language administration, no wealth tax, no inheritance tax, no personal exit tax, and a remittance-basis system where foreign capital gains are never taxed even when brought in. This Guide maps the residence routes (ordinary residence, GRP/TRP 15%, MPRP, HQP, nomad permit), the mechanics of remittance-basis living, and the short list of things Malta does tax."
 jurisdiction: MT
 tax_year: 2025
 last_updated: 2026-08-03

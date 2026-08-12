@@ -1,6 +1,6 @@
 ---
 name: sg-tax-residency
-description: Use this skill for any question about Singapore tax residency. Trigger on: "Singapore tax resident", "SG residency 183 days", "move to Singapore tax", "Singapore non-resident tax rate", "Employment Pass Singapore tax", "Singapore PR taxes", "Singapore foreigner income tax", "SG territorial taxation". Covers residency tests, resident vs non-resident rates, territorial taxation, and foreign income exemption.
+description: "Use this skill for any question about Singapore tax residency. Trigger on: \"Singapore tax resident\", \"SG residency 183 days\", \"move to Singapore tax\", \"Singapore non-resident tax rate\", \"Employment Pass Singapore tax\", \"Singapore PR taxes\", \"Singapore foreigner income tax\", \"SG territorial taxation\". Covers residency tests, resident vs non-resident rates, territorial taxation, and foreign income exemption."
 version: 1.0
 jurisdiction: SG
 tax_year: 2025

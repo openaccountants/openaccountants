@@ -1,6 +1,6 @@
 ---
 name: uk-to-italy-flat-tax-relocation
-description: Italy has become the destination for UK leavers with wealth: the €200,000 flat tax on foreign income, the impatriati 50% exemption for workers, and the 7% regime for pensioners — stacked against the UK's departure machinery (SRT, split year, the 5-year trap, the IHT tail). Which Italian regime fits which mover, what each one actually exempts, and the sequencing that makes or breaks the move.
+description: "Italy has become the destination for UK leavers with wealth: the €200,000 flat tax on foreign income, the impatriati 50% exemption for workers, and the 7% regime for pensioners — stacked against the UK's departure machinery (SRT, split year, the 5-year trap, the IHT tail). Which Italian regime fits which mover, what each one actually exempts, and the sequencing that makes or breaks the move."
 jurisdiction: GB
 tax_year: 2025
 last_updated: 2026-08-03

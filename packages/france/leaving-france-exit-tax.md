@@ -1,6 +1,6 @@
 ---
 name: leaving-france-exit-tax
-description: France has become a net wealth-outflow country for the first time, and its departure rules are built to make leaving expensive if done casually: an exit tax on unrealised share gains (art. 167 bis), a real-estate wealth tax that never lets go of French property, succession rules that can tax your heirs on worldwide assets years after you left, and a France–Switzerland treaty clause that quietly strips treaty protection from lump-sum-taxed Swiss residents. This Guide sequences the exit.
+description: "France has become a net wealth-outflow country for the first time, and its departure rules are built to make leaving expensive if done casually: an exit tax on unrealised share gains (art. 167 bis), a real-estate wealth tax that never lets go of French property, succession rules that can tax your heirs on worldwide assets years after you left, and a France–Switzerland treaty clause that quietly strips treaty protection from lump-sum-taxed Swiss residents. This Guide sequences the exit."
 jurisdiction: FR
 tax_year: 2025
 last_updated: 2026-08-03

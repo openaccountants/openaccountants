@@ -1,6 +1,6 @@
 ---
 name: us-nonresident-cgt
-description: US capital gains tax for non-resident aliens: FIRPTA withholding on US real property, ECI rules, FDAP withholding, portfolio interest exemption. Trigger on: "FIRPTA", "non-resident alien US CGT", "sell US property non-resident", "10% FIRPTA withholding", "15% FIRPTA withholding", "ECI US non-resident", "US real property interest USRPI", "withholding certificate FIRPTA", "non-resident selling US shares". For US residents see us-capital-gains.
+description: "US capital gains tax for non-resident aliens: FIRPTA withholding on US real property, ECI rules, FDAP withholding, portfolio interest exemption. Trigger on: \"FIRPTA\", \"non-resident alien US CGT\", \"sell US property non-resident\", \"10% FIRPTA withholding\", \"15% FIRPTA withholding\", \"ECI US non-resident\", \"US real property interest USRPI\", \"withholding certificate FIRPTA\", \"non-resident selling US shares\". For US residents see us-capital-gains."
 version: 1.0
 jurisdiction: US
 tax_year: 2025

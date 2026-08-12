@@ -1,6 +1,6 @@
 ---
 name: pl-capital-gains
-description: Poland capital gains tax: 19% Belka tax on investment income, no holding period discount, real property gains. Trigger on: "Poland CGT", "capital gains Poland", "Belka tax Poland", "Poland 19% investment tax", "sell shares Poland", "podatek od zysków kapitałowych", "Poland podatek Belki".
+description: "Poland capital gains tax: 19% Belka tax on investment income, no holding period discount, real property gains. Trigger on: \"Poland CGT\", \"capital gains Poland\", \"Belka tax Poland\", \"Poland 19% investment tax\", \"sell shares Poland\", \"podatek od zysków kapitałowych\", \"Poland podatek Belki\"."
 version: 1.0
 jurisdiction: PL
 tax_year: 2025

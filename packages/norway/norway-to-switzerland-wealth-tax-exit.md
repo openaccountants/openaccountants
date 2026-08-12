@@ -1,6 +1,6 @@
 ---
 name: norway-to-switzerland-wealth-tax-exit
-description: Norway's wealth tax plus dividend tax created Europe's most visible wealth exodus, and the rules were rewritten mid-flight: the old wait-out-five-years exit tax is gone, replaced by a pay-within-12-years regime, while tax residency itself takes three full years to shed. This Guide sequences the Norwegian exit — the 3-year tail, the exit tax architecture, what stays Norwegian — and the Swiss landing, including the modified-forfait requirement Norway's treaty imposes on lump-sum residents.
+description: "Norway's wealth tax plus dividend tax created Europe's most visible wealth exodus, and the rules were rewritten mid-flight: the old wait-out-five-years exit tax is gone, replaced by a pay-within-12-years regime, while tax residency itself takes three full years to shed. This Guide sequences the Norwegian exit — the 3-year tail, the exit tax architecture, what stays Norwegian — and the Swiss landing, including the modified-forfait requirement Norway's treaty imposes on lump-sum residents."
 jurisdiction: NO
 tax_year: 2025
 last_updated: 2026-08-03

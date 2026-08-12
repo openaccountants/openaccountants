@@ -1,6 +1,6 @@
 ---
 name: ua-social-contributions
-description: Ukrainian Unified Social Contribution (ЄСВ / USC) for self-employed people (FOP and independent professionals): the 22% rate, minimum and maximum monthly base, quarterly payment, the obligation to pay even at zero income, exemptions, and 2026 reporting changes.
+description: "Ukrainian Unified Social Contribution (ЄСВ / USC) for self-employed people (FOP and independent professionals): the 22% rate, minimum and maximum monthly base, quarterly payment, the obligation to pay even at zero income, exemptions, and 2026 reporting changes."
 version: 1.0
 jurisdiction: UA
 tax_year: 2026

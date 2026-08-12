@@ -1,6 +1,6 @@
 ---
 name: de-capital-gains
-description: Use this skill for any German capital gains tax question. Trigger on: "Abgeltungsteuer", "capital gains Germany", "CGT Germany", "Kapitalertragsteuer", "Sparer-Pauschbetrag", "sell shares Germany", "German exit tax", "Wegzugsbesteuerung", "leaving Germany tax shares", "crypto Germany CGT", "German investment gains", "German shareholder 1% rule". Covers Abgeltungsteuer flat rate, annual exemption, offsetting losses, exit tax on departure.
+description: "Use this skill for any German capital gains tax question. Trigger on: \"Abgeltungsteuer\", \"capital gains Germany\", \"CGT Germany\", \"Kapitalertragsteuer\", \"Sparer-Pauschbetrag\", \"sell shares Germany\", \"German exit tax\", \"Wegzugsbesteuerung\", \"leaving Germany tax shares\", \"crypto Germany CGT\", \"German investment gains\", \"German shareholder 1% rule\". Covers Abgeltungsteuer flat rate, annual exemption, offsetting losses, exit tax on departure."
 version: 1.0
 jurisdiction: DE
 tax_year: 2025

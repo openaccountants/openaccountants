@@ -1,6 +1,6 @@
 ---
 name: non-resident-rental-income-tax-on-kenyan-property
-description: Non-resident rental income tax on Kenyan property: a guide for foreign landlords
+description: "Non-resident rental income tax on Kenyan property: a guide for foreign landlords"
 jurisdiction: KE
 tax_year: 2025
 last_updated: 2026-07-29

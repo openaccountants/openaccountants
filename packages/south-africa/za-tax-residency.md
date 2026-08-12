@@ -1,6 +1,6 @@
 ---
 name: za-tax-residency
-description: South Africa tax residency: ordinarily resident test, physical presence test, cessation of residency, exit charge on deemed disposal. Trigger on: "South Africa tax resident", "SARS residency", "leaving South Africa taxes", "ordinarily resident South Africa", "physical presence test South Africa", "SA exit tax", "cease to be SA resident", "South African tax emigration", "financial emigration SARS".
+description: "South Africa tax residency: ordinarily resident test, physical presence test, cessation of residency, exit charge on deemed disposal. Trigger on: \"South Africa tax resident\", \"SARS residency\", \"leaving South Africa taxes\", \"ordinarily resident South Africa\", \"physical presence test South Africa\", \"SA exit tax\", \"cease to be SA resident\", \"South African tax emigration\", \"financial emigration SARS\"."
 version: 1.0
 jurisdiction: ZA
 tax_year: 2025

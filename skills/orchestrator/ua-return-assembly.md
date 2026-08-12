@@ -6,8 +6,7 @@ jurisdiction: UA
 tax_year: 2026
 last_updated: 2026-07-13
 review_status: pending_review
-depends_on:
-  - ua-freelance-intake
+depends_on: - ua-freelance-intake
 category: orchestrator
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

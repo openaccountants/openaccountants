@@ -1,6 +1,6 @@
 ---
 name: ae-tax-residency
-description: Use this skill for any question about UAE tax residency. Trigger on: "UAE tax resident", "Dubai tax residency", "UAE residency certificate", "183 days UAE", "move to Dubai taxes", "UAE domicile", "tax residency certificate UAE", "centre of vital interests UAE", "leave UAE tax implications", "Emirates ID tax". Covers how to establish UAE tax residency, the conditions, and what it means for tax purposes.
+description: "Use this skill for any question about UAE tax residency. Trigger on: \"UAE tax resident\", \"Dubai tax residency\", \"UAE residency certificate\", \"183 days UAE\", \"move to Dubai taxes\", \"UAE domicile\", \"tax residency certificate UAE\", \"centre of vital interests UAE\", \"leave UAE tax implications\", \"Emirates ID tax\". Covers how to establish UAE tax residency, the conditions, and what it means for tax purposes."
 version: 1.0
 jurisdiction: AE
 tax_year: 2025

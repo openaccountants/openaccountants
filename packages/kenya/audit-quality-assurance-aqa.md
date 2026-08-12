@@ -1,6 +1,6 @@
 ---
 name: audit-quality-assurance-aqa
-description: Audit in Kenya: how I do it
+description: "Audit in Kenya: how I do it"
 jurisdiction: KE
 tax_year: 2025
 last_updated: 2026-07-22

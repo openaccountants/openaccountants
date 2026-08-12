@@ -1,6 +1,6 @@
 ---
 name: va-corporate-tax-and-bpol
-description: Source-cited tax guide for US-VA: va corporate tax and bpol. Unverified draft, pending local-accountant review.
+description: "Source-cited tax guide for US-VA: va corporate tax and bpol. Unverified draft, pending local-accountant review."
 jurisdiction: US-VA
 tax_year: 2025
 last_updated: 2026-07-13

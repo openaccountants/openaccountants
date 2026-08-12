@@ -1,6 +1,6 @@
 ---
 name: de-income-tax
-description: Delaware Individual Income Tax Return (Form PIT-RES) for sole proprietors and single-member LLCs. Covers the seven-bracket graduated system (0%–6.6%), Delaware standard deduction, modifications to federal AGI, and personal credits. Trigger: taxpayer is a Delaware resident with gross income exceeding filing thresholds.
+description: "Delaware Individual Income Tax Return (Form PIT-RES) for sole proprietors and single-member LLCs. Covers the seven-bracket graduated system (0%–6.6%), Delaware standard deduction, modifications to federal AGI, and personal credits. Trigger: taxpayer is a Delaware resident with gross income exceeding filing thresholds."
 version: "0.1"
 jurisdiction: US-DE
 tax_year: 2025

@@ -1,6 +1,6 @@
 ---
 name: cross-border-invoicing-compliance
-description: Cross-border invoicing rules — which country's requirements apply, what goes on the invoice, and how to handle e-invoicing mandates. Use when the user asks about: cross-border invoice, invoicing foreign client, reverse charge invoice, multi-currency invoice, self-billing cross-border, credit note cross-border, e-invoicing cross-border, which invoicing rules apply, Article 219a, supplier country invoicing, Italy SDI foreign, India IRN cross-border, Mexico CFDI foreign, invoice retention cross-border, archiving invoices, ECB exchange rate, VAT currency conversion, recipient-created invoice, or any question about the correct format, content, or process for invoices crossing borders.
+description: "Cross-border invoicing rules — which country's requirements apply, what goes on the invoice, and how to handle e-invoicing mandates. Use when the user asks about: cross-border invoice, invoicing foreign client, reverse charge invoice, multi-currency invoice, self-billing cross-border, credit note cross-border, e-invoicing cross-border, which invoicing rules apply, Article 219a, supplier country invoicing, Italy SDI foreign, India IRN cross-border, Mexico CFDI foreign, invoice retention cross-border, archiving invoices, ECB exchange rate, VAT currency conversion, recipient-created invoice, or any question about the correct format, content, or process for invoices crossing borders."
 version: 1.0
 jurisdiction: INTL
 tax_year: 2025

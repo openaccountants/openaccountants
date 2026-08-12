@@ -1,6 +1,6 @@
 ---
 name: mx-vat-return
-description: Mexican VAT return (IVA -- Impuesto al Valor Agregado, Declaracion Mensual) for self-employed individuals. Covers the standard 16% rate, zero rate (tasa 0%), exempt activities, monthly filing via SAT portal, DIOT informative declaration, CFDI electronic invoicing, and IVA acreditable computation. Primary source: Ley del IVA (LIVA).
+description: "Mexican VAT return (IVA -- Impuesto al Valor Agregado, Declaracion Mensual) for self-employed individuals. Covers the standard 16% rate, zero rate (tasa 0%), exempt activities, monthly filing via SAT portal, DIOT informative declaration, CFDI electronic invoicing, and IVA acreditable computation. Primary source: Ley del IVA (LIVA)."
 version: 1.0
 jurisdiction: MX
 tax_year: 2025

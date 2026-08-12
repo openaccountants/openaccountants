@@ -1,6 +1,6 @@
 ---
 name: ga-income-tax
-description: Georgia Individual Income Tax Return (Form 500) for sole proprietors and single-member LLCs.   Covers the flat 5.19% rate (tax year 2025), Georgia taxable income computation from federal AGI,   standard deduction, dependent exemption, and estimated tax. Trigger: taxpayer is a Georgia   resident or has Georgia-source income.
+description: "Georgia Individual Income Tax Return (Form 500) for sole proprietors and single-member LLCs.   Covers the flat 5.19% rate (tax year 2025), Georgia taxable income computation from federal AGI,   standard deduction, dependent exemption, and estimated tax. Trigger: taxpayer is a Georgia   resident or has Georgia-source income."
 version: "0.1"
 jurisdiction: US-GA
 tax_year: 2025

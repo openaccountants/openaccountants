@@ -1,6 +1,6 @@
 ---
 name: ca-nonresident-cgt
-description: Canada non-resident capital gains: Section 116 clearance certificate, Part XIII withholding, taxable Canadian property (TCP), notional assessment. Trigger on: "non-resident selling Canadian property", "Section 116 Canada", "clearance certificate CRA", "TCP taxable Canadian property", "withholding on sale Canada", "non-resident selling Canadian shares", "Part XIII withholding Canada", "NR4 Canada".
+description: "Canada non-resident capital gains: Section 116 clearance certificate, Part XIII withholding, taxable Canadian property (TCP), notional assessment. Trigger on: \"non-resident selling Canadian property\", \"Section 116 Canada\", \"clearance certificate CRA\", \"TCP taxable Canadian property\", \"withholding on sale Canada\", \"non-resident selling Canadian shares\", \"Part XIII withholding Canada\", \"NR4 Canada\"."
 version: 1.0
 jurisdiction: CA
 tax_year: 2025

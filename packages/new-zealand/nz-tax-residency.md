@@ -1,6 +1,6 @@
 ---
 name: nz-tax-residency
-description: New Zealand tax residency: 183-day test, permanent place of abode, ceasing residency, transitional residency exemption for new arrivals. Trigger on: "NZ tax resident", "New Zealand residency 183 days", "permanent place of abode NZ", "leaving New Zealand taxes", "transitional resident NZ", "NZ tax emigration", "move to New Zealand taxes", "cease NZ tax residency".
+description: "New Zealand tax residency: 183-day test, permanent place of abode, ceasing residency, transitional residency exemption for new arrivals. Trigger on: \"NZ tax resident\", \"New Zealand residency 183 days\", \"permanent place of abode NZ\", \"leaving New Zealand taxes\", \"transitional resident NZ\", \"NZ tax emigration\", \"move to New Zealand taxes\", \"cease NZ tax residency\"."
 version: 1.0
 jurisdiction: NZ
 tax_year: 2025

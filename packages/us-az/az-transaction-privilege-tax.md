@@ -1,6 +1,6 @@
 ---
 name: az-transaction-privilege-tax
-description: Source-cited tax guide for US-AZ: az transaction privilege tax. Unverified draft, pending local-accountant review.
+description: "Source-cited tax guide for US-AZ: az transaction privilege tax. Unverified draft, pending local-accountant review."
 jurisdiction: US-AZ
 tax_year: 2025
 last_updated: 2026-07-13

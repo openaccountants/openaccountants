@@ -1,6 +1,6 @@
 ---
 name: ch-lump-sum
-description: Switzerland lump-sum taxation (Pauschalbesteuerung / taxation selon la dépense): for non-working foreign nationals resident in Switzerland. Tax based on living expenses rather than actual income. Trigger on: "Switzerland lump sum tax", "Pauschalbesteuerung", "Switzerland forfait fiscal", "move to Switzerland taxes", "Switzerland non-working resident tax", "Switzerland 5x rent tax", "Switzerland special tax regime". ALWAYS load before advising on Switzerland tax for non-working foreign nationals.
+description: "Switzerland lump-sum taxation (Pauschalbesteuerung / taxation selon la dépense): for non-working foreign nationals resident in Switzerland. Tax based on living expenses rather than actual income. Trigger on: \"Switzerland lump sum tax\", \"Pauschalbesteuerung\", \"Switzerland forfait fiscal\", \"move to Switzerland taxes\", \"Switzerland non-working resident tax\", \"Switzerland 5x rent tax\", \"Switzerland special tax regime\". ALWAYS load before advising on Switzerland tax for non-working foreign nationals."
 version: 1.0
 jurisdiction: CH
 tax_year: 2025

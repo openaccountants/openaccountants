@@ -1,6 +1,6 @@
 ---
 name: mt-capital-gains
-description: Use this skill for any question about capital gains tax in Malta. Trigger on: "CGT Malta", "capital gains Malta", "sell shares Malta", "dispose of shares Malta", "Malta tax on investment gains", "sell company Malta", "Malta no capital gains", "crypto gains Malta", "Malta property transfer tax". Covers the absence of CGT on securities, property transfer rules, and what IS subject to gain taxation in Malta. ALWAYS load before computing Malta tax on any asset disposal.
+description: "Use this skill for any question about capital gains tax in Malta. Trigger on: \"CGT Malta\", \"capital gains Malta\", \"sell shares Malta\", \"dispose of shares Malta\", \"Malta tax on investment gains\", \"sell company Malta\", \"Malta no capital gains\", \"crypto gains Malta\", \"Malta property transfer tax\". Covers the absence of CGT on securities, property transfer rules, and what IS subject to gain taxation in Malta. ALWAYS load before computing Malta tax on any asset disposal."
 version: 1.0
 jurisdiction: MT
 tax_year: 2025

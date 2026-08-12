@@ -1,6 +1,6 @@
 ---
 name: in-tax-residency
-description: India tax residency: resident, non-resident, RNOR (Resident but Not Ordinarily Resident) status, 182-day and 120-day tests, RNOR foreign income exemption. Trigger on: "India tax resident", "RNOR India", "resident not ordinarily resident", "India 182 days rule", "India NRI tax", "NRI returning India taxes", "India 120-day rule", "India foreign income exempt RNOR", "move to India taxes".
+description: "India tax residency: resident, non-resident, RNOR (Resident but Not Ordinarily Resident) status, 182-day and 120-day tests, RNOR foreign income exemption. Trigger on: \"India tax resident\", \"RNOR India\", \"resident not ordinarily resident\", \"India 182 days rule\", \"India NRI tax\", \"NRI returning India taxes\", \"India 120-day rule\", \"India foreign income exempt RNOR\", \"move to India taxes\"."
 version: 1.0
 jurisdiction: IN
 tax_year: 2025

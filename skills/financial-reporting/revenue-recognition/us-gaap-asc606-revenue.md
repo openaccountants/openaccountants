@@ -7,8 +7,7 @@ tax_year: 2025
 last_updated: 2026-07-13
 reviewed_by: James Wallach
 review_status: current
-depends_on:
-  - financial-reporting-workflow-base
+depends_on: - financial-reporting-workflow-base
 category: financial-reporting
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

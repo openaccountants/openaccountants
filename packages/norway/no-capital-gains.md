@@ -1,6 +1,6 @@
 ---
 name: no-capital-gains
-description: Norway capital gains tax: 22% rate, shield deduction (skjermingsfradrag) on shares, shareholder model, exit tax. Trigger on: "Norway CGT", "capital gains Norway", "Norway 22% capital gains", "skjermingsfradrag", "shareholder model Norway", "sell shares Norway", "Norway aksjer skatt", "Norway exit tax shares".
+description: "Norway capital gains tax: 22% rate, shield deduction (skjermingsfradrag) on shares, shareholder model, exit tax. Trigger on: \"Norway CGT\", \"capital gains Norway\", \"Norway 22% capital gains\", \"skjermingsfradrag\", \"shareholder model Norway\", \"sell shares Norway\", \"Norway aksjer skatt\", \"Norway exit tax shares\"."
 version: 1.0
 jurisdiction: NO
 tax_year: 2025

@@ -1,6 +1,6 @@
 ---
 name: us-citizen-moving-abroad-tax
-description: The US taxes citizens wherever they live. What that actually means when you move abroad: the FEIE vs Foreign Tax Credit decision, FBAR and FATCA reporting, the PFIC and foreign-company (GILTI/5471) traps, sticky states, Social Security and totalization, and — for those who go all the way — the §877A exit tax on renouncing. Sequenced by destination type: zero-tax (UAE/Gulf) vs high-tax (EU).
+description: "The US taxes citizens wherever they live. What that actually means when you move abroad: the FEIE vs Foreign Tax Credit decision, FBAR and FATCA reporting, the PFIC and foreign-company (GILTI/5471) traps, sticky states, Social Security and totalization, and — for those who go all the way — the §877A exit tax on renouncing. Sequenced by destination type: zero-tax (UAE/Gulf) vs high-tax (EU)."
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-08-03

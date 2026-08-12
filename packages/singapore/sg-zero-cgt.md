@@ -1,6 +1,6 @@
 ---
 name: sg-zero-cgt
-description: Use this skill when asked about capital gains in Singapore. Trigger on: "CGT Singapore", "capital gains Singapore", "sell shares Singapore", "Singapore no capital gains tax", "investment gains Singapore", "crypto tax Singapore", "Singapore property gains", "dispose assets Singapore". Singapore has no capital gains tax — this skill confirms that and explains the trading income boundary.
+description: "Use this skill when asked about capital gains in Singapore. Trigger on: \"CGT Singapore\", \"capital gains Singapore\", \"sell shares Singapore\", \"Singapore no capital gains tax\", \"investment gains Singapore\", \"crypto tax Singapore\", \"Singapore property gains\", \"dispose assets Singapore\". Singapore has no capital gains tax — this skill confirms that and explains the trading income boundary."
 version: 1.0
 jurisdiction: SG
 tax_year: 2025

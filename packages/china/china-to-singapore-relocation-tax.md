@@ -1,6 +1,6 @@
 ---
 name: china-to-singapore-relocation-tax
-description: China is the world's largest source of relocating wealth and Singapore its most natural landing point — same time zone, Mandarin-friendly, no capital gains tax. But the Chinese side of this corridor is widely misunderstood: China taxes by domicile, not by where you sleep, a Chinese citizen who keeps household registration and family ties can remain worldwide-taxable years after moving, and CRS data has turned a theoretical liability into real assessment letters. This Guide maps both ends honestly.
+description: "China is the world's largest source of relocating wealth and Singapore its most natural landing point — same time zone, Mandarin-friendly, no capital gains tax. But the Chinese side of this corridor is widely misunderstood: China taxes by domicile, not by where you sleep, a Chinese citizen who keeps household registration and family ties can remain worldwide-taxable years after moving, and CRS data has turned a theoretical liability into real assessment letters. This Guide maps both ends honestly."
 jurisdiction: CN
 tax_year: 2025
 last_updated: 2026-08-03

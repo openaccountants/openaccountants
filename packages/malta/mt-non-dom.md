@@ -1,6 +1,6 @@
 ---
 name: mt-non-dom
-description: Use this skill for any Malta-resident individual who is not domiciled in Malta. Trigger on: "Malta non-dom", "non-domiciled Malta", "remittance basis Malta", "move to Malta taxes", "Malta ordinary resident", "foreign income Malta", "Malta minimum tax", "remit to Malta", "Malta global residence", "Malta non-dom status", or any question about whether foreign income is taxed in Malta. Covers non-dom eligibility, remittance basis mechanics, minimum tax obligation, foreign capital gains treatment, and comparison with full resident taxation. ALWAYS load this skill before advising a non-Maltese-domiciled resident on their Malta tax position.
+description: "Use this skill for any Malta-resident individual who is not domiciled in Malta. Trigger on: \"Malta non-dom\", \"non-domiciled Malta\", \"remittance basis Malta\", \"move to Malta taxes\", \"Malta ordinary resident\", \"foreign income Malta\", \"Malta minimum tax\", \"remit to Malta\", \"Malta global residence\", \"Malta non-dom status\", or any question about whether foreign income is taxed in Malta. Covers non-dom eligibility, remittance basis mechanics, minimum tax obligation, foreign capital gains treatment, and comparison with full resident taxation. ALWAYS load this skill before advising a non-Maltese-domiciled resident on their Malta tax position."
 version: 1.0
 jurisdiction: MT
 tax_year: 2025

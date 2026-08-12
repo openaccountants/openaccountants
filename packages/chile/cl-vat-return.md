@@ -1,6 +1,6 @@
 ---
 name: cl-vat-return
-description: Chilean VAT return (IVA -- Impuesto al Valor Agregado, Formulario 29) for self-employed individuals. Covers the standard 19% rate, monthly filing via SII portal, debito/credito fiscal, electronic invoicing (DTE/SII), remanente de credito fiscal, and withholding on services. Primary source: DL 825 (Ley de IVA), Ley 20.780 (Tax Reform 2014).
+description: "Chilean VAT return (IVA -- Impuesto al Valor Agregado, Formulario 29) for self-employed individuals. Covers the standard 19% rate, monthly filing via SII portal, debito/credito fiscal, electronic invoicing (DTE/SII), remanente de credito fiscal, and withholding on services. Primary source: DL 825 (Ley de IVA), Ley 20.780 (Tax Reform 2014)."
 version: 1.0
 jurisdiction: CL
 tax_year: 2025

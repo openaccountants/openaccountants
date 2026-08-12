@@ -1,6 +1,6 @@
 ---
 name: za-capital-gains
-description: South Africa capital gains tax: 40% inclusion rate for individuals, annual exclusion R40,000, primary residence exclusion, small business disposal relief, death exclusion. Trigger on: "South Africa CGT", "capital gains South Africa", "SARS capital gains", "CGT inclusion rate South Africa", "sell shares South Africa", "SA primary residence exemption", "R40,000 CGT exclusion", "Schedule 8 South Africa".
+description: "South Africa capital gains tax: 40% inclusion rate for individuals, annual exclusion R40,000, primary residence exclusion, small business disposal relief, death exclusion. Trigger on: \"South Africa CGT\", \"capital gains South Africa\", \"SARS capital gains\", \"CGT inclusion rate South Africa\", \"sell shares South Africa\", \"SA primary residence exemption\", \"R40,000 CGT exclusion\", \"Schedule 8 South Africa\"."
 version: 1.0
 jurisdiction: ZA
 tax_year: 2025

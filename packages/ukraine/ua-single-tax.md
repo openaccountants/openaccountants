@@ -1,6 +1,6 @@
 ---
 name: ua-single-tax
-description: Ukrainian single tax (єдиний податок) simplified regime for sole proprietors (ФОП): the three FOP groups, income limits, rates, the 1% military levy on Group 3, ЄСВ due on top, employee limits, and barred activities.
+description: "Ukrainian single tax (єдиний податок) simplified regime for sole proprietors (ФОП): the three FOP groups, income limits, rates, the 1% military levy on Group 3, ЄСВ due on top, employee limits, and barred activities."
 version: 1.0
 jurisdiction: UA
 tax_year: 2026

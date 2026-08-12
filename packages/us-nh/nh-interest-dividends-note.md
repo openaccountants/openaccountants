@@ -1,6 +1,6 @@
 ---
 name: nh-interest-dividends-note
-description: jurisdiction: US-NH
+description: "jurisdiction: US-NH"
 jurisdiction: US-NH
 tax_year: 2025
 last_updated: 2026-07-13

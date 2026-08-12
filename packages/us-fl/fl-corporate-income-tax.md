@@ -1,6 +1,6 @@
 ---
 name: fl-corporate-income-tax
-description: Source-cited tax guide for US-FL: fl corporate income tax. Unverified draft, pending local-accountant review.
+description: "Source-cited tax guide for US-FL: fl corporate income tax. Unverified draft, pending local-accountant review."
 jurisdiction: US-FL
 tax_year: 2025
 last_updated: 2026-07-13

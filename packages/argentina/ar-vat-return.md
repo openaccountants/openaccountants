@@ -1,6 +1,6 @@
 ---
 name: ar-vat-return
-description: Argentine VAT return (IVA -- Impuesto al Valor Agregado) for self-employed individuals under the regimen general. Covers the standard 21% rate, reduced 10.5%, increased 27%, monthly filing via AFIP SIAP/web, debito/credito fiscal computation, and withholding/perception regimes. Primary source: Ley 23.349 (Ley de IVA) and its regulatory decree (Decreto 692/98).
+description: "Argentine VAT return (IVA -- Impuesto al Valor Agregado) for self-employed individuals under the regimen general. Covers the standard 21% rate, reduced 10.5%, increased 27%, monthly filing via AFIP SIAP/web, debito/credito fiscal computation, and withholding/perception regimes. Primary source: Ley 23.349 (Ley de IVA) and its regulatory decree (Decreto 692/98)."
 version: 1.0
 jurisdiction: AR
 tax_year: 2025

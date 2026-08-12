@@ -1,6 +1,6 @@
 ---
 name: kz-income-tax
-description: Source-cited draft: personal income tax for Kazakhstan (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.
+description: "Source-cited draft: personal income tax for Kazakhstan (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 version: 1.0
 jurisdiction: KZ
 tax_year: 2025

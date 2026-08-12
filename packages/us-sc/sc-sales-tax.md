@@ -1,6 +1,6 @@
 ---
 name: sc-sales-tax
-description: Use this skill whenever asked about South Carolina sales tax, South Carolina use tax, SC sales tax nexus, SC sales tax returns, SC exemption certificates, taxability of goods or services in South Carolina, or any request involving South Carolina state-level consumption taxes. Trigger on phrases like "South Carolina sales tax", "SC sales tax", "SC use tax", "SC nexus", "S.C. Code 12-36", "SC DOR sales tax", or any request involving South Carolina sales and use tax filing, classification, or compliance. NOTE: SC has a max tax cap of $500 on certain items (vehicles, boats, aircraft). ALWAYS read the parent us-sales-tax skill first for federal context.
+description: "Use this skill whenever asked about South Carolina sales tax, South Carolina use tax, SC sales tax nexus, SC sales tax returns, SC exemption certificates, taxability of goods or services in South Carolina, or any request involving South Carolina state-level consumption taxes. Trigger on phrases like \"South Carolina sales tax\", \"SC sales tax\", \"SC use tax\", \"SC nexus\", \"S.C. Code 12-36\", \"SC DOR sales tax\", or any request involving South Carolina sales and use tax filing, classification, or compliance. NOTE: SC has a max tax cap of $500 on certain items (vehicles, boats, aircraft). ALWAYS read the parent us-sales-tax skill first for federal context."
 jurisdiction: US-SC
 tax_year: 2025
 last_updated: 2026-07-13

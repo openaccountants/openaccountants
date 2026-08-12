@@ -1,6 +1,6 @@
 ---
 name: dk-capital-gains
-description: Denmark capital gains tax: 27%/42% on share gains, progression threshold, inventory taxation for certain shares, real property gains. Trigger on: "Denmark CGT", "capital gains Denmark", "Denmark aktieindkomst", "sell shares Denmark", "Denmark 27% 42% capital gains", "Denmark aktieavance", "Danish share gains tax".
+description: "Denmark capital gains tax: 27%/42% on share gains, progression threshold, inventory taxation for certain shares, real property gains. Trigger on: \"Denmark CGT\", \"capital gains Denmark\", \"Denmark aktieindkomst\", \"sell shares Denmark\", \"Denmark 27% 42% capital gains\", \"Denmark aktieavance\", \"Danish share gains tax\"."
 version: 1.0
 jurisdiction: DK
 tax_year: 2025

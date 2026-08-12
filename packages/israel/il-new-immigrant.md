@@ -1,6 +1,6 @@
 ---
 name: il-new-immigrant
-description: Israel new immigrant and returning resident 10-year tax exemption on foreign income and gains. Trigger on: "Israel new immigrant tax", "aliyah tax exemption", "Israel 10-year exemption", "returning resident Israel", "Israel oleh tax", "foreign income exempt Israel", "Israel tax for new immigrants", "Israel passive income exemption oleh". ALWAYS load before advising a new immigrant or returning resident on their Israel tax position.
+description: "Israel new immigrant and returning resident 10-year tax exemption on foreign income and gains. Trigger on: \"Israel new immigrant tax\", \"aliyah tax exemption\", \"Israel 10-year exemption\", \"returning resident Israel\", \"Israel oleh tax\", \"foreign income exempt Israel\", \"Israel tax for new immigrants\", \"Israel passive income exemption oleh\". ALWAYS load before advising a new immigrant or returning resident on their Israel tax position."
 version: 1.0
 jurisdiction: IL
 tax_year: 2025

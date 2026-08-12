@@ -1,6 +1,6 @@
 ---
 name: ia-income-tax
-description: Iowa Individual Income Tax Return (Form IA 1040) for sole proprietors and single-member LLCs. Covers the flat 3.8% rate (tax year 2025/2026), Iowa net income computation from federal AGI, Iowa standard deduction, and estimated tax. Iowa completed its historic flat-tax reform in 2025. Trigger: taxpayer is an Iowa resident or has Iowa-source income.
+description: "Iowa Individual Income Tax Return (Form IA 1040) for sole proprietors and single-member LLCs. Covers the flat 3.8% rate (tax year 2025/2026), Iowa net income computation from federal AGI, Iowa standard deduction, and estimated tax. Iowa completed its historic flat-tax reform in 2025. Trigger: taxpayer is an Iowa resident or has Iowa-source income."
 version: "0.1"
 jurisdiction: US-IA
 tax_year: 2025

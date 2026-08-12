@@ -1,6 +1,6 @@
 ---
 name: tax-amnesty
-description: Tax amnesty under the Finance Act, 2026: what to do and by when
+description: "Tax amnesty under the Finance Act, 2026: what to do and by when"
 jurisdiction: KE
 tax_year: 2025
 last_updated: 2026-07-30

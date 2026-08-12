@@ -1,6 +1,6 @@
 ---
 name: nv-commerce-and-mbt
-description: Source-cited tax guide for US-NV: nv commerce and mbt. Unverified draft, pending local-accountant review.
+description: "Source-cited tax guide for US-NV: nv commerce and mbt. Unverified draft, pending local-accountant review."
 jurisdiction: US-NV
 tax_year: 2025
 last_updated: 2026-07-13

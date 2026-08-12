@@ -1,6 +1,6 @@
 ---
 name: id-income-tax
-description: Idaho Individual Income Tax Return (Form 40) for sole proprietors and single-member LLCs. Covers the flat 5.3% rate (tax year 2025), Idaho taxable income computation from federal taxable income, standard deduction, and the initial exemption amount ($4,811 single / $9,622 MFJ). Trigger: taxpayer is an Idaho resident or has Idaho-source income exceeding $2,500.
+description: "Idaho Individual Income Tax Return (Form 40) for sole proprietors and single-member LLCs. Covers the flat 5.3% rate (tax year 2025), Idaho taxable income computation from federal taxable income, standard deduction, and the initial exemption amount ($4,811 single / $9,622 MFJ). Trigger: taxpayer is an Idaho resident or has Idaho-source income exceeding $2,500."
 version: "0.1"
 jurisdiction: ID
 tax_year: 2025

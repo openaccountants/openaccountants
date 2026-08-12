@@ -6,8 +6,7 @@ jurisdiction: FR
 tax_year: 2025
 last_updated: 2026-07-13
 review_status: pending_review
-depends_on:
-  - bookkeeping-workflow-base
+depends_on: - bookkeeping-workflow-base
 category: bookkeeping
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

@@ -1,6 +1,6 @@
 ---
 name: fl-annual-report
-description: Florida Annual Report filing for LLCs and corporations registered with the Division of Corporations (Sunbiz). Covers the annual report requirement, $138.75 fee for LLCs, filing deadline, late filing penalties, and administrative dissolution risk. Primary source: Florida Statutes Chapter 605 (LLCs) and Chapter 607 (corporations).
+description: "Florida Annual Report filing for LLCs and corporations registered with the Division of Corporations (Sunbiz). Covers the annual report requirement, $138.75 fee for LLCs, filing deadline, late filing penalties, and administrative dissolution risk. Primary source: Florida Statutes Chapter 605 (LLCs) and Chapter 607 (corporations)."
 version: 1.0
 jurisdiction: US-FL
 tax_year: 2025

@@ -1,6 +1,6 @@
 ---
 name: alabama-income-tax
-description: Alabama Form 40 (full-year resident): how I do it
+description: "Alabama Form 40 (full-year resident): how I do it"
 jurisdiction: US-AL
 tax_year: 2025
 last_updated: 2026-08-06
