@@ -40,4 +40,8 @@ ENV OPENACCOUNTANTS_ROOT=/app \
 
 EXPOSE 8000
 
+# The server only reads its installed code and skill packages. A numeric
+# identity avoids adding account-management packages to the slim base image.
+USER 65532:65532
+
 CMD ["openaccountants-mcp"]
