@@ -22,7 +22,7 @@ Content revision: 2.1-draft (correction pass — unverified; frontmatter `versio
 
 ## Section 1 -- Quick Reference
 
-**Quick Reference**  _(ITA Cap. 123; ITMA Cap. 372)_
+**Quick Reference**  _([ITA Cap. 123; ITMA Cap. 372](https://legislation.mt/eli/cap/372/eng))_
 
 | Field | Value |
 | --- | --- |
@@ -40,7 +40,7 @@ Content revision: 2.1-draft (correction pass — unverified; frontmatter `versio
 
 ### What form does a self-employed person actually file?
 
-**Filing form by situation**  _(ITA Art. 31D)_
+**Filing form by situation**  _([ITA Art. 31D](https://legislation.mt/eli/cap/123/eng))_
 
 | Situation | Filing |
 | --- | --- |
@@ -148,10 +148,10 @@ Note: SSC Class 2 has NO line in the tax computation — it is not deductible (S
 - **R-MT-1 -- Marital status unknown** — "Marital status determines the applicable rate table. This skill cannot compute tax without knowing whether the client is single, married, or a parent. Please confirm before proceeding."
 - **R-MT-2 -- Group structures or partnerships** — "This skill covers sole proprietors and part-time self-employed individuals only. Group structures, partnerships, and companies file separate returns. Escalate to a warranted accountant."
 - **R-MT-3 -- Non-resident income** — "Non-resident and dual-resident taxation has different rules. Out of scope. Escalate to a warranted accountant."
-- **R-MT-4 -- Capital gains / property disposals** — "Capital gains computations under Article 5A or property transfers require specialised analysis. Escalate to a warranted accountant."  _(Article 5A)_
-- **R-MT-5 -- Arrears / enforcement** — "Client has outstanding tax arrears or is subject to MTCA enforcement action. Late payment attracts additional tax of 1% per month (no statutory cap) plus interest of 0.6% per month (capped at the amount of the tax) under ITMA Art. 44. Do not advise. Escalate to a warranted accountant immediately."  _(ITMA Art. 44)_
+- **R-MT-4 -- Capital gains / property disposals** — "Capital gains computations under Article 5A or property transfers require specialised analysis. Escalate to a warranted accountant."  _([Article 5A](https://legislation.mt/eli/cap/123/eng))_
+- **R-MT-5 -- Arrears / enforcement** — "Client has outstanding tax arrears or is subject to MTCA enforcement action. Late payment attracts additional tax of 1% per month (no statutory cap) plus interest of 0.6% per month (capped at the amount of the tax) under ITMA Art. 44. Do not advise. Escalate to a warranted accountant immediately."  _([ITMA Art. 44](https://legislation.mt/eli/cap/372/eng))_
 - **R-MT-6 -- VAT return requested** — "This skill covers income tax only. For Malta VAT, use the malta-vat-return skill."
-- **R-MT-7 -- Rental 15% final tax (TA24) computation requested** — "TA24 is the optional 15% final tax on gross rental income under ITA Art. 31D, due 30 April. This skill flags it but does not compute it -- confirm whether the 15% option or progressive rates are better for the client with a warranted accountant."  _(ITA Art. 31D)_
+- **R-MT-7 -- Rental 15% final tax (TA24) computation requested** — "TA24 is the optional 15% final tax on gross rental income under ITA Art. 31D, due 30 April. This skill flags it but does not compute it -- confirm whether the 15% option or progressive rates are better for the client with a warranted accountant."  _([ITA Art. 31D](https://legislation.mt/eli/cap/123/eng))_
 
 ## Section 3 -- Transaction Pattern Library
 
@@ -181,7 +181,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 ### 3.2 Expense Patterns (Debits on Bank Statement) -- Fully Deductible (WP2)
 
-**Fully Deductible Expense Patterns**  _(ITA Art. 14(1)(b))_
+**Fully Deductible Expense Patterns**  _([ITA Art. 14(1)(b)](https://legislation.mt/eli/cap/123/eng))_
 
 | Pattern | Category | Treatment | Notes |
 | --- | --- | --- | --- |
@@ -233,7 +233,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 ### 3.6 Expense Patterns (Debits) -- NOT Deductible
 
-**NOT Deductible Patterns**  _(ITA Art. 14(1) / Art. 26(a)-(b))_
+**NOT Deductible Patterns**  _([ITA Art. 14(1) / Art. 26(a)-(b)](https://legislation.mt/eli/cap/123/eng))_
 
 | Pattern | Category | Treatment | Notes |
 | --- | --- | --- | --- |
@@ -348,7 +348,7 @@ Transfer between own accounts. Neither income nor expense. Exclude entirely.
 
 ### 5.1 The Wholly and Exclusively Test
 
-- **Wholly and Exclusively Test** — An expense is deductible only if incurred wholly and exclusively in the production of the income (Art. 14(1)), and not disallowed by Art. 26 (domestic/private expenses, capital, recoverable amounts, voluntary payments, etc.). Mixed-use expenses must be apportioned. The apportionment method must be reasonable and documented.  _(ITA Art. 14(1) (positive test) and Art. 26 (negative test))_
+- **Wholly and Exclusively Test** — An expense is deductible only if incurred wholly and exclusively in the production of the income (Art. 14(1)), and not disallowed by Art. 26 (domestic/private expenses, capital, recoverable amounts, voluntary payments, etc.). Mixed-use expenses must be apportioned. The apportionment method must be reasonable and documented.  _([ITA Art. 14(1) (positive test) and Art. 26 (negative test)](https://legislation.mt/eli/cap/123/eng))_
 
 ### 5.2 Revenue Recognition
 
@@ -356,7 +356,7 @@ Transfer between own accounts. Neither income nor expense. Exclude entirely.
 
 ### 5.3 Capital vs Revenue
 
-- **Capital vs Revenue** — Capital items must go through WP15 (capital allowances), not WP2 (ITA Art. 26 disallows capital expenditure as a revenue deduction; Art. 14(1)(f) allows wear and tear instead). There is no de minimis threshold -- business assets are depreciated per S.L. 123.01 regardless of cost. The VAT Capital Goods Scheme threshold (EUR 1,160) is a separate VAT system and is never an income-tax capitalisation test.  _(ITA Art. 26; Art. 14(1)(f); S.L. 123.01)_
+- **Capital vs Revenue** — Capital items must go through WP15 (capital allowances), not WP2 (ITA Art. 26 disallows capital expenditure as a revenue deduction; Art. 14(1)(f) allows wear and tear instead). There is no de minimis threshold -- business assets are depreciated per S.L. 123.01 regardless of cost. The VAT Capital Goods Scheme threshold (EUR 1,160) is a separate VAT system and is never an income-tax capitalisation test.  _([ITA Art. 26; Art. 14(1)(f); S.L. 123.01](https://legislation.mt/eli/cap/123/eng))_
 
 ### 5.4 Capital Allowance Rates (S.L. 123.01 -- Deduction for Wear and Tear of Plant and Machinery Rules)
 
@@ -380,11 +380,11 @@ Depreciation is straight-line on cost, starting in the year the asset is first u
 
 ### 5.5 SSC Class 2 -- NOT Deductible
 
-- **SSC Class 2 not deductible** — SSC Class 2 (self-occupied persons' contributions, 15% of prior-year net income, paid three times a year) is **not deductible** in computing chargeable income. The ITA Art. 14 list of allowable deductions contains no provision for social security contributions, and Art. 26(a) disallows private expenses not specifically allowed by the Act. Record the amounts paid as a memo item only. > Reviewer note: this is the single highest-impact rule in this skill. It was verified against the full text of Cap. 123 (no SSC deduction provision exists) but no explicit MTCA statement was located -- warranted-accountant confirmation required before Q1 promotion.  _(ITA Art. 14; Art. 26(a); Cap. 123)_
+- **SSC Class 2 not deductible** — SSC Class 2 (self-occupied persons' contributions, 15% of prior-year net income, paid three times a year) is **not deductible** in computing chargeable income. The ITA Art. 14 list of allowable deductions contains no provision for social security contributions, and Art. 26(a) disallows private expenses not specifically allowed by the Act. Record the amounts paid as a memo item only. > Reviewer note: this is the single highest-impact rule in this skill. It was verified against the full text of Cap. 123 (no SSC deduction provision exists) but no explicit MTCA statement was located -- warranted-accountant confirmation required before Q1 promotion.  _([ITA Art. 14; Art. 26(a); Cap. 123](https://legislation.mt/eli/cap/123/eng))_
 
 ### 5.6 Non-Deductible Expenses
 
-**Non-Deductible Expenses**  _(ITA Art. 14(1); Art. 26)_
+**Non-Deductible Expenses**  _([ITA Art. 14(1); Art. 26](https://legislation.mt/eli/cap/123/eng))_
 
 | Expense | Reason |
 | --- | --- |
@@ -413,7 +413,7 @@ Depreciation is straight-line on cost, starting in the year the asset is first u
 
 **Legislation:** ITA Art. 90A (tax on part-time work) and the prescribed Part-Time Work Rules; operative rate and cap per MTCA guidance for basis year 2025.
 
-**TA22 Regime conditions**  _(ITA Art. 90A + Part-Time Work Rules; MTCA guidance basis year 2025)_
+**TA22 Regime conditions**  _([ITA Art. 90A + Part-Time Work Rules; MTCA guidance basis year 2025](https://legislation.mt/eli/cap/123/eng))_
 
 | Condition | Requirement |
 | --- | --- |
@@ -434,7 +434,7 @@ SSC: do NOT assert that "Class 1 covers all". Class 2 liability for a person who
 
 **Legislation:** Provisional Tax (P.T.) Rules, S.L. 372.18 (under ITMA, Cap. 372)
 
-**Provisional Tax instalments**  _(Provisional Tax (P.T.) Rules, S.L. 372.18)_
+**Provisional Tax instalments**  _([Provisional Tax (P.T.) Rules, S.L. 372.18](https://legislation.mt/eli/sl/372.18/eng))_
 
 | Instalment | % of PT benchmark | Deadline |
 | --- | --- | --- |
@@ -446,7 +446,7 @@ The PT benchmark is based on the latest self-assessment (last filed return), as 
 
 ### 5.10 Filing Deadlines and Penalties
 
-**Filing Deadlines and Penalties**  _(ITMA Art. 44; Schedule to ITA Art. 56(12)(c))_
+**Filing Deadlines and Penalties**  _([ITMA Art. 44; Schedule to ITA Art. 56(12)(c)](https://legislation.mt/eli/cap/372/eng))_
 
 | Item | Detail |
 | --- | --- |
@@ -460,7 +460,7 @@ The PT benchmark is based on the latest self-assessment (last filed return), as 
 
 ### 5.11 TA24 -- What It Actually Is (Out of Computation Scope)
 
-- **TA24 explanation** — TA24 is the prescribed form for the OPTIONAL 15% final tax on **gross rental income** under ITA Art. 31D, payable by 30 April of the following year. No deductions are allowed against the gross rent; the tax is final (no set-off or refund); income taxed this way is excluded from the return. If the option is not exercised, rental income is declared in the return at progressive rates (with limited deductions). Choosing between the two is a reviewer decision -- raise R-MT-7.  _(ITA Art. 31D)_
+- **TA24 explanation** — TA24 is the prescribed form for the OPTIONAL 15% final tax on **gross rental income** under ITA Art. 31D, payable by 30 April of the following year. No deductions are allowed against the gross rent; the tax is final (no set-off or refund); income taxed this way is excluded from the return. If the option is not exercised, rental income is declared in the return at progressive rates (with limited deductions). Choosing between the two is a reviewer decision -- raise R-MT-7.  _([ITA Art. 31D](https://legislation.mt/eli/cap/123/eng))_
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
@@ -649,7 +649,7 @@ ONBOARDING QUESTIONS -- MALTA INCOME TAX
 
 ### Key Legislation References
 
-**Key Legislation References**  _(ITA Cap. 123; ITMA Cap. 372)_
+**Key Legislation References**  _([ITA Cap. 123; ITMA Cap. 372](https://legislation.mt/eli/cap/372/eng))_
 
 | Topic | Reference |
 | --- | --- |

@@ -6,13 +6,17 @@ Run from the repo root (needs the MCP SDK + PyYAML, e.g. via uv):
 
     uv run --python 3.12 --with "mcp>=1.0.0" --with pyyaml python mcp/smoke_test.py
 
-If the dependencies aren't installed, the server can't be imported; the test
-then falls back to a minimal filesystem check so it still exits cleanly.
+If the dependencies aren't installed the server can't be imported. The test
+then runs a minimal filesystem check and still exits NON-ZERO, because "the
+server does not import" is a failure, not a pass. Set OA_SMOKE_ALLOW_FALLBACK=1
+to opt into the old lenient behaviour when you are deliberately running without
+the SDK.
 
 Exits 0 on success, 1 on failure.
 """
 
 import asyncio
+import os
 import sys
 from pathlib import Path
 
@@ -44,8 +48,18 @@ except ImportError as exc:
     check("packages/ has skills", any(PACKAGES_DIR.rglob("*.md")))
     check("malta-income-tax.md present", (PACKAGES_DIR / "malta" / "malta-income-tax.md").is_file())
     print()
-    print("FILESYSTEM CHECKS PASSED." if not failures else f"FAILED — {failures} check(s).")
-    sys.exit(1 if failures else 0)
+    # A server that cannot be imported is a broken server. Exiting 0 here let a
+    # dependency upgrade that removes `mcp.server.fastmcp` (mcp 2.x does exactly
+    # that) report ALL CHECKS PASSED while nothing worked.
+    lenient = os.environ.get("OA_SMOKE_ALLOW_FALLBACK") == "1"
+    if failures:
+        print(f"FAILED -- {failures} check(s).")
+    elif lenient:
+        print("FILESYSTEM CHECKS PASSED (server not importable; fallback allowed).")
+    else:
+        print("FAILED -- server could not be imported; filesystem checks alone are not a pass.")
+        print("         Install the SDK, or set OA_SMOKE_ALLOW_FALLBACK=1 to allow it.")
+    sys.exit(0 if (not failures and lenient) else 1)
 
 
 # --- list_skills ----------------------------------------------------------

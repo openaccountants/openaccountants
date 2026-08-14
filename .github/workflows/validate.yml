@@ -15,10 +15,19 @@ on:
   push:
     branches: [main]
 
+# Least privilege by default. Only the job that posts a contributor comment gets
+# write access, and only to issues. Without this the workflow inherits whatever
+# the repository default happens to be.
+permissions:
+  contents: read
+
 jobs:
   guard-derived-trees:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write # the "Explain in a comment" step below
     steps:
       - uses: actions/checkout@v4
         with:
@@ -42,9 +51,14 @@ jobs:
       - name: Explain in a comment
         if: failure() && steps.guard.outputs.generated_files_touched != ''
         uses: actions/github-script@v7
+        env:
+          # Filenames come from the PR's diff, so they are attacker-controlled.
+          # Interpolating them straight into the script body would let a crafted
+          # filename run as JavaScript. Pass through the environment instead.
+          GENERATED_FILES_TOUCHED: ${{ steps.guard.outputs.generated_files_touched }}
         with:
           script: |
-            const files = `${{ steps.guard.outputs.generated_files_touched }}`.trim();
+            const files = process.env.GENERATED_FILES_TOUCHED.trim();
             await github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,

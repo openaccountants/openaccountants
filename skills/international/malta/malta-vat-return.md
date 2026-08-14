@@ -127,11 +127,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation. Refusal is a safety mechanism.
 
 - **R-MT-1 — Article 11 client attempting to claim input VAT** — *Trigger:* client is Article 11 registered, or turnover is below €35,000 and client has not opted into Article 10. *Message:* "Article 11 clients are exempt from charging VAT and cannot recover input VAT. They file a simplified annual declaration only, not the Article 10 periodic VAT return. This skill can help you with the Article 11 annual declaration but cannot prepare an Article 10 periodic VAT return or calculate input VAT recovery for an Article 11 client."
-- **R-MT-2 — Article 12 registration (distance selling / EU goods acquisition threshold)** — *Trigger:* client is Article 12 registered (goods acquirer from EU exceeding €10,000/year threshold, monthly filer). *Message:* "Article 12 registrations have different filing frequencies and obligations. This skill covers Article 10 and Article 11 only. Please escalate to a warranted accountant familiar with Article 12 obligations."  _(Article 12)_
-- **R-MT-3 — Partial exemption (Article 22(4))** — *Trigger:* client makes both taxable supplies and exempt-without-credit supplies (financial services, residential rent, medical, education) and the exempt proportion is not de minimis. *Message:* "You make both taxable and exempt supplies. Your input VAT must be apportioned under Article 22(4), which requires a year-end pro-rata calculation that cannot be completed on a single-period basis without the annual ratio. Please use a warranted accountant to determine and confirm the pro-rata rate before input VAT is claimed."  _(Article 22(4))_
-- **R-MT-4 — Capital goods scheme adjustment (Article 24)** — *Trigger:* the period contains an adjustment to previously deducted input VAT on a capital good under Article 24 (5-year adjustment period for goods, 10-year for immovable property). *Message:* "Capital goods scheme adjustments under Article 24 are too fact-sensitive for this skill. They require tracking the original deduction, current and intended use, and computing the annual fraction. Please use a warranted accountant."  _(Article 24)_
+- **R-MT-2 — Article 12 registration (distance selling / EU goods acquisition threshold)** — *Trigger:* client is Article 12 registered (goods acquirer from EU exceeding €10,000/year threshold, monthly filer). *Message:* "Article 12 registrations have different filing frequencies and obligations. This skill covers Article 10 and Article 11 only. Please escalate to a warranted accountant familiar with Article 12 obligations."  _([Article 12](https://legislation.mt/eli/cap/406/eng))_
+- **R-MT-3 — Partial exemption (Article 22(4))** — *Trigger:* client makes both taxable supplies and exempt-without-credit supplies (financial services, residential rent, medical, education) and the exempt proportion is not de minimis. *Message:* "You make both taxable and exempt supplies. Your input VAT must be apportioned under Article 22(4), which requires a year-end pro-rata calculation that cannot be completed on a single-period basis without the annual ratio. Please use a warranted accountant to determine and confirm the pro-rata rate before input VAT is claimed."  _([Article 22(4)](https://legislation.mt/eli/cap/406/eng))_
+- **R-MT-4 — Capital goods scheme adjustment (Article 24)** — *Trigger:* the period contains an adjustment to previously deducted input VAT on a capital good under Article 24 (5-year adjustment period for goods, 10-year for immovable property). *Message:* "Capital goods scheme adjustments under Article 24 are too fact-sensitive for this skill. They require tracking the original deduction, current and intended use, and computing the annual fraction. Please use a warranted accountant."  _([Article 24](https://legislation.mt/eli/cap/406/eng))_
 - **R-MT-5 — Margin scheme** — *Trigger:* client deals in second-hand goods, art, antiques, or collectables under the margin scheme. *Message:* "Margin scheme transactions require transaction-level margin computation. Out of scope for this skill."
-- **R-MT-6 — VAT group (Article 5(2))** — *Trigger:* client is part of a VAT group or asks about group registration. *Message:* "VAT groups under Article 5(2) require consolidation across the group. Out of scope."  _(Article 5(2))_
+- **R-MT-6 — VAT group (Article 5(2))** — *Trigger:* client is part of a VAT group or asks about group registration. *Message:* "VAT groups under Article 5(2) require consolidation across the group. Out of scope."  _([Article 5(2)](https://legislation.mt/eli/cap/406/eng))_
 - **R-MT-7 — Fiscal representative** — *Trigger:* non-resident supplier or client with a fiscal representative in Malta. *Message:* "Non-resident registrations with fiscal representatives have specific obligations beyond this skill. Please use a warranted accountant."
 - **R-MT-8 — Annual return (TA24 income tax) instead of Malta VAT** — *Trigger:* user asks about annual income tax return, not the VAT return. *Message:* "This skill only handles Malta VAT returns (Article 10 periodic and Article 11). For Malta income tax (TA24), use the malta-income-tax skill."
 
@@ -414,19 +414,19 @@ Each rule states the legal source and the box mapping. Apply silently if the dat
 
 ### 5.1 Standard rate 18% (VAT Act Cap. 406, 5th Schedule Part 1)
 
-- **Standard rate** — 18% — Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales → Box 18 / Box 23. Purchases → Box 31 / Box 37. %  _(VAT Act Cap. 406, 5th Schedule Part 1)_
+- **Standard rate** — 18% — Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales → Box 18 / Box 23. Purchases → Box 31 / Box 37. %  _([VAT Act Cap. 406, 5th Schedule Part 1](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.2 Reduced rate 7% (5th Schedule Part 2)
 
-- **Reduced rate** — 7% — Applies to: short-term accommodation (hotels, guesthouses under 3 months), minor repairs to bicycles, shoes, leather goods, clothing, domestic appliances. Sales → Box 18a / Box 23a. Purchases → Box 31a / Box 37a. %  _(5th Schedule Part 2)_
+- **Reduced rate** — 7% — Applies to: short-term accommodation (hotels, guesthouses under 3 months), minor repairs to bicycles, shoes, leather goods, clothing, domestic appliances. Sales → Box 18a / Box 23a. Purchases → Box 31a / Box 37a. %  _([5th Schedule Part 2](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.3 Reduced rate 12% (5th Schedule Part 3)
 
-- **Reduced rate** — 12% — Applies to: certain financial instruments and related services, confectionery in specific circumstances. Sales → Box 18b / Box 23b. Purchases → Box 31b / Box 37b. %  _(5th Schedule Part 3)_
+- **Reduced rate** — 12% — Applies to: certain financial instruments and related services, confectionery in specific circumstances. Sales → Box 18b / Box 23b. Purchases → Box 31b / Box 37b. %  _([5th Schedule Part 3](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.4 Reduced rate 5% (5th Schedule Part 4)
 
-- **Reduced rate** — 5% — Applies to: food (with exceptions for confectionery, ice cream, alcohol), non-prescription medicines and pharmaceutical products, medical devices for disabled persons, printed books and newspapers, children's car seats, certain seeds and plants. Sales → Box 19 / Box 24. Purchases → Box 28 / Box 35 (resale) or Box 32 / Box 38 (overhead). %  _(5th Schedule Part 4)_
+- **Reduced rate** — 5% — Applies to: food (with exceptions for confectionery, ice cream, alcohol), non-prescription medicines and pharmaceutical products, medical devices for disabled persons, printed books and newspapers, children's car seats, certain seeds and plants. Sales → Box 19 / Box 24. Purchases → Box 28 / Box 35 (resale) or Box 32 / Box 38 (overhead). %  _([5th Schedule Part 4](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.5 Zero rate and exempt with credit
 
@@ -442,7 +442,7 @@ Each rule states the legal source and the box mapping. Apply silently if the dat
 
 ### 5.8 Reverse charge — EU services received (VAT Act Art. 19 equivalent)
 
-- **Reverse charge — EU services received** — When the client receives a service from an EU supplier and the supplier invoices at 0% with a reverse-charge note: net → Box 9a, input VAT → Box 13a, output base → Box 3, output VAT → Box 6. Net cash effect zero for a fully taxable Article 10 client. If the EU supplier charged their local VAT (e.g. Irish 23%), that is NOT reverse charge — treat as an overhead expense with irrecoverable foreign VAT.  _(VAT Act Art. 19 equivalent)_
+- **Reverse charge — EU services received** — When the client receives a service from an EU supplier and the supplier invoices at 0% with a reverse-charge note: net → Box 9a, input VAT → Box 13a, output base → Box 3, output VAT → Box 6. Net cash effect zero for a fully taxable Article 10 client. If the EU supplier charged their local VAT (e.g. Irish 23%), that is NOT reverse charge — treat as an overhead expense with irrecoverable foreign VAT.  _([VAT Act Art. 19 equivalent](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.9 Reverse charge — EU goods received
 
@@ -454,11 +454,11 @@ Each rule states the legal source and the box mapping. Apply silently if the dat
 
 ### 5.11 Capital goods (Article 24)
 
-- **Capital goods** — If gross invoice amount ≥ €1,160: Box 30 (net) / Box 36 (input VAT). If gross < €1,160: Box 31/37 (overhead). The gross test applies — test the invoice total before subtracting VAT. Capital goods are subject to a 5-year (or 10-year for immovable property) adjustment period. Note for §15a-equivalent tracking: if client later disposes of or changes use of the asset, an adjustment may be required — document the original classification.  _(Article 24)_
+- **Capital goods** — If gross invoice amount ≥ €1,160: Box 30 (net) / Box 36 (input VAT). If gross < €1,160: Box 31/37 (overhead). The gross test applies — test the invoice total before subtracting VAT. Capital goods are subject to a 5-year (or 10-year for immovable property) adjustment period. Note for §15a-equivalent tracking: if client later disposes of or changes use of the asset, an adjustment may be required — document the original classification.  _([Article 24](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.12 Blocked input VAT (10th Schedule)
 
-- **Blocked input VAT** — The following categories have zero VAT recovery with no exceptions unless specifically noted: - Entertainment of any kind (Item 3(1)(b)) — hard block, no Bewirtungsbeleg equivalent in Malta - Motor vehicles: purchase, lease, or fuel for cars not used exclusively for taxi/driving school/car rental/hearse (Item 3(1)(a)(iv-v)) - Tobacco products (Item 3(1)(a)(i)) - Alcohol (Item 3(1)(a)(ii)) — note: deductible for hospitality businesses where alcohol is stock in trade - Art, antiques, and collectables (Item 3(1)(a)(iii)) - Pleasure craft (Item 3(1)(a)(iv)) - Personal use items (Item 3(1)(c)) Blocked categories override partial exemption. Check blocked status before applying any recovery.  _(10th Schedule)_
+- **Blocked input VAT** — The following categories have zero VAT recovery with no exceptions unless specifically noted: - Entertainment of any kind (Item 3(1)(b)) — hard block, no Bewirtungsbeleg equivalent in Malta - Motor vehicles: purchase, lease, or fuel for cars not used exclusively for taxi/driving school/car rental/hearse (Item 3(1)(a)(iv-v)) - Tobacco products (Item 3(1)(a)(i)) - Alcohol (Item 3(1)(a)(ii)) — note: deductible for hospitality businesses where alcohol is stock in trade - Art, antiques, and collectables (Item 3(1)(a)(iii)) - Pleasure craft (Item 3(1)(a)(iv)) - Personal use items (Item 3(1)(c)) Blocked categories override partial exemption. Check blocked status before applying any recovery.  _([10th Schedule](https://legislation.mt/eli/cap/406/eng))_
 
 ### 5.13 Article 11 annual declaration (4-box simplified form)
 
