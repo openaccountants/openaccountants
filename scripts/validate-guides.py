@@ -3,9 +3,9 @@
 Validate guide files, the hand-authored us-federal set, and index.json.
 
 Checks (ERROR = exit 1, WARN = printed summary only):
-  1. Every guide file's frontmatter block parses (a file that opens `---`
-     must close it). Files without any frontmatter are treated as docs, not
-     guides, and skipped (same rule scripts/build-index.py uses).
+  1. Every guide file's frontmatter block is valid, unambiguous YAML (a file
+     that opens `---` must close it). Files without any frontmatter are treated
+     as docs, not guides, and skipped (same rule scripts/build-index.py uses).
   2. `name` and `description` are present — ERROR if missing, except for the
      frozen LEGACY_MISSING_DESCRIPTION baseline below (grandfathered; the
      list must only ever shrink).
@@ -29,7 +29,8 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      packages/manifest.json). index.json is the single canonical inventory;
      the old manifests had no consumers and were removed so they can't drift.
 
-Stdlib only. Run: python3 scripts/validate-guides.py
+Install scripts/requirements-validation.txt, then run:
+python3 scripts/validate-guides.py
 """
 
 import importlib.util
@@ -39,6 +40,8 @@ import re
 import subprocess
 import sys
 import tempfile
+
+from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
@@ -136,6 +139,11 @@ def check_guides(bi, errors, warnings, only_files=None):
                 skipped += 1  # doc file, not a guide
             continue
         guides += 1
+        try:
+            load_frontmatter(block)
+        except FrontmatterError as exc:
+            errors.append(f"{rel}: invalid YAML frontmatter: {exc}")
+            continue
         fields = bi.parse_known_keys(block)
         if not fields["name"]:
             errors.append(f"{rel}: missing required frontmatter key `name`")

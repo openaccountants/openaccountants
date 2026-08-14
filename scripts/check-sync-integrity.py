@@ -25,6 +25,8 @@ from datetime import date
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
+from frontmatter_yaml import load_frontmatter
+
 
 SYNC_BOT_NAMES = {"openaccountants-sync[bot]"}
 SYNC_BOT_EMAILS = {"sync@openaccountants.com"}
@@ -232,7 +234,7 @@ def parse_date(raw: str | None) -> date | None:
         return None
 
 
-def parse_guide(text: str) -> Guide:
+def parse_guide(text: str, *, strict_yaml: bool = True) -> Guide:
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     lines = normalized.split("\n")
     if not lines or lines[0].strip() != "---":
@@ -242,6 +244,9 @@ def parse_guide(text: str) -> Guide:
         end = next(index for index in range(1, len(lines)) if lines[index].strip() == "---")
     except StopIteration as exc:
         raise ValueError("missing closing frontmatter delimiter") from exc
+
+    if strict_yaml:
+        load_frontmatter("\n".join(lines[1:end]))
 
     fields: dict[str, str] = {}
     for line in lines[1:end]:
@@ -309,7 +314,22 @@ def compare_existing_guides(
     try:
         before = parse_guide(before_text)
     except ValueError as exc:
-        return [Finding("error", "invalid-base", path, f"base guide is invalid: {exc}")]
+        # A malformed legacy base must be repairable.  Parse its simple scalar
+        # metadata with the established tolerant reader so the normal date,
+        # version and body-change guards still apply, while requiring the
+        # candidate itself to pass strict YAML below.
+        try:
+            before = parse_guide(before_text, strict_yaml=False)
+        except ValueError:
+            return [Finding("error", "invalid-base", path, f"base guide is invalid: {exc}")]
+        findings.append(
+            Finding(
+                "notice",
+                "frontmatter-repaired",
+                path,
+                f"candidate repairs invalid base frontmatter: {exc}",
+            )
+        )
     try:
         after = parse_guide(after_text)
     except ValueError as exc:

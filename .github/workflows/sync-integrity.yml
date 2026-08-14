@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.11"
+      - name: Install validation dependencies
+        run: python3 -m pip install -r scripts/requirements-validation.txt
       - name: Run repo unit tests
         # Discover every test_*.py. A literal single-file pattern silently
         # skipped every other suite in tests/, so reverting the code they
@@ -41,6 +43,8 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.11"
+      - name: Install validation dependencies
+        run: python3 -m pip install -r scripts/requirements-validation.txt
       - name: Audit source-guide changes
         env:
           EVENT_NAME: ${{ github.event_name }}

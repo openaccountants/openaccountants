@@ -6,7 +6,8 @@ jurisdiction: CO
 tax_year: 2025
 last_updated: 2026-07-13
 review_status: pending_review
-depends_on: - vat-workflow-base
+depends_on:
+  - vat-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
