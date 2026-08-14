@@ -18,9 +18,10 @@ checkout you point it at.
 
 Environment
 -----------
-OPENACCOUNTANTS_ROOT      Path to the repo checkout.  Defaults to two directories
-                          above this file (i.e. the repo root when this package
-                          lives at ``mcp/openaccountants_mcp/``).
+OPENACCOUNTANTS_ROOT      Optional path to a repo checkout or other directory
+                          containing ``packages/``. Development installs default
+                          to the repo root; built distributions default to the
+                          skill packages bundled inside the Python package.
 MCP_TRANSPORT             ``stdio`` (default), ``streamable-http``, or ``sse``.
                           HTTP transports let remote MCP clients connect via a
                           reverse proxy (Caddy, nginx, ngrok…).
@@ -57,9 +58,19 @@ log = logging.getLogger(__name__)
 # Resolve repo root + packages directory
 # ---------------------------------------------------------------------------
 
-_DEFAULT_ROOT = Path(__file__).resolve().parents[2]  # mcp/openaccountants_mcp/ -> mcp/ -> repo
-REPO_ROOT = Path(os.environ.get("OPENACCOUNTANTS_ROOT", str(_DEFAULT_ROOT))).resolve()
-PACKAGES_DIR = REPO_ROOT / "packages"
+_MODULE_DIR = Path(__file__).resolve().parent
+_SOURCE_ROOT = _MODULE_DIR.parents[1]  # mcp/openaccountants_mcp/ -> mcp/ -> repo
+_BUNDLED_PACKAGES_DIR = _MODULE_DIR / "packages"
+
+if configured_root := os.environ.get("OPENACCOUNTANTS_ROOT"):
+    REPO_ROOT = Path(configured_root).resolve()
+    PACKAGES_DIR = REPO_ROOT / "packages"
+elif _BUNDLED_PACKAGES_DIR.is_dir():
+    REPO_ROOT = _MODULE_DIR
+    PACKAGES_DIR = _BUNDLED_PACKAGES_DIR
+else:
+    REPO_ROOT = _SOURCE_ROOT
+    PACKAGES_DIR = REPO_ROOT / "packages"
 
 MAX_FILE_BYTES = 2 * 1024 * 1024  # 2 MB safety cap
 SEARCH_LIMIT = 25

@@ -143,6 +143,10 @@ uv pip install ./mcp
 
 The server reads `packages/` from the repo root (override with `OPENACCOUNTANTS_ROOT`, see environment variables below).
 
+Published wheels and source distributions bundle the generated skill packages.
+Development installs continue to read the checkout's top-level `packages/`
+tree, so local source edits are visible without rebuilding the package.
+
 ### Connect to your AI client
 
 Pick **one** of the following.
@@ -247,7 +251,7 @@ The default stdio transport (`pip install ./mcp && openaccountants-mcp`) is unch
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `OPENACCOUNTANTS_ROOT` | Auto-detected repo root (parent of `mcp/`) | Path to your OpenAccountants checkout. The server reads `$OPENACCOUNTANTS_ROOT/packages/`. |
+| `OPENACCOUNTANTS_ROOT` | Auto-detected checkout root, or bundled package data in a distribution | Optional path to a directory containing `packages/`. Set it to override the bundled or checkout data. |
 | `MCP_TRANSPORT` | `stdio` | `stdio`, `streamable-http`, or `sse`. HTTP transports let remote MCP clients connect via a reverse proxy. |
 | `MCP_HOST` | `127.0.0.1` | Bind host for HTTP transports. Set explicitly, for example to `0.0.0.0`, only when an authenticated reverse proxy or equivalent network boundary is intentionally exposing the service. |
 | `MCP_PORT` | `8000` | Bind port for HTTP transports. |
