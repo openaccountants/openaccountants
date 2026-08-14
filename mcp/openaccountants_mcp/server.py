@@ -624,8 +624,13 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
         jurisdiction: Optional jurisdiction code to limit the search.
 
     Returns:
-        ``{"results": [...], "total": n}`` — each result has slug, title,
-        jurisdiction, matched_section and snippet.
+        ``{"results": [...], "returned": n, "total": n,
+        "truncated": bool, "limit": n}`` — each result has slug, title,
+        jurisdiction, matched_section and snippet. ``total`` is retained as a
+        backwards-compatible alias for ``returned``; it is not a corpus-wide
+        count when ``truncated`` is true. This avoids presenting the result cap
+        as an exact match count without paying the cost of reading every skill
+        body.
     """
     q = (query or "").strip()
     if not q:
@@ -633,6 +638,7 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
     jx = jurisdiction.upper() if jurisdiction else None
 
     results = []
+    truncated = False
     for rec in _index().values():
         if jx and rec["jurisdiction"].upper() != jx:
             continue
@@ -643,6 +649,9 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
         if q.lower() not in body.lower():
             continue
         section, snippet = _extract_match(body, q)
+        if len(results) >= SEARCH_LIMIT:
+            truncated = True
+            break
         results.append({
             "slug": rec["slug"],
             "title": rec["title"],
@@ -650,20 +659,33 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
             "matched_section": section,
             "snippet": snippet,
         })
-        if len(results) >= SEARCH_LIMIT:
-            break
     if results:
-        next_action = (
-            "Load the most relevant match with get_skill(slug), then apply its "
-            "rules. For a guided, scoped plan, call start(intent, jurisdiction)."
-        )
+        if truncated:
+            next_action = (
+                f"More than {SEARCH_LIMIT} skills matched. Narrow the query or "
+                "jurisdiction, or load the most relevant returned match with "
+                "get_skill(slug)."
+            )
+        else:
+            next_action = (
+                "Load the most relevant match with get_skill(slug), then apply its "
+                "rules. For a guided, scoped plan, call start(intent, jurisdiction)."
+            )
     else:
         next_action = (
             "No matches. Broaden the query or confirm the jurisdiction with "
             "list_skills(). If the corpus genuinely lacks this, call "
             "submit_feedback() to flag the gap."
         )
-    return {"results": results, "total": len(results), "next_action": next_action}
+    returned = len(results)
+    return {
+        "results": results,
+        "returned": returned,
+        "total": returned,
+        "truncated": truncated,
+        "limit": SEARCH_LIMIT,
+        "next_action": next_action,
+    }
 
 
 # ---------------------------------------------------------------------------
