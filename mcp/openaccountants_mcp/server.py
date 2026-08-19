@@ -263,15 +263,17 @@ def _catalogue() -> tuple[
     """Build the index, unresolved slug map, and duplicate inventory."""
     out: dict[str, dict[str, Any]] = {}
     if not PACKAGES_DIR.is_dir():
-        return out, {}, {
-            "skill_files": 0,
-            "slugs": 0,
-            "duplicate_slugs": 0,
-            "identical_aliases": 0,
-            "federal_precedence": 0,
-            "ambiguous_slugs": 0,
-            "rejected_paths": [],
-        }
+        # Absence is a misconfiguration, not an empty corpus. Returning an
+        # empty catalogue here answered OPENACCOUNTANTS_ROOT=/nonexistent with
+        # a confident "0 skills" and logged nothing, which is the same silent
+        # data-absence failure this package's bundling is meant to end.
+        message = (
+            f"No skill corpus at {PACKAGES_DIR}. Point OPENACCOUNTANTS_ROOT at a "
+            "directory containing packages/, or install a distribution that "
+            "bundles it."
+        )
+        log.error(message)
+        raise RuntimeError(message)
 
     # Pass 1: parse every skill file; tally each directory's declared codes.
     rows: list[dict[str, Any]] = []
