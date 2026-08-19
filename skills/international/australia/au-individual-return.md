@@ -478,6 +478,31 @@ ONBOARDING QUESTIONS -- AUSTRALIA INDIVIDUAL RETURN
 | Not registered for GST | GST paid on purchases IS part of the cost. Report gross. |
 | GST on private portion | Non-claimable GST is part of cost. |
 
+## Section 11 -- When to load another guide
+
+This guide computes the individual return. Load the guide named here when the client's facts cross into its territory; do not improvise the answer from this file.
+
+| Client fact | Load |
+| --- | --- |
+| Runs the business through a company | au-company-tax (BRE rate, franking, losses) |
+| Company has lent money to a shareholder, or there is a debit loan account | au-div7a |
+| Income comes through a family or unit trust | au-trust-distributions |
+| Income is mainly a reward for one person's skills, billed through an entity | au-psi |
+| Selling a business or business premises | au-small-business-cgt |
+| Any other CGT event | au-capital-gains |
+| Rental property | au-rental-property |
+| Crypto disposals | au-crypto-tax |
+| Foreign income, foreign tax paid, or a foreign pension | au-foreign-income |
+| Left or arrived in Australia during the year | au-tax-residency, leaving-australia-tax-residency-cgt |
+| Sold Australian property as a non-resident | au-nonresident-cgt |
+| Employer with fringe benefits | au-fbt |
+| Employer paying wages | australia-payroll, au-super-guarantee |
+| GST registered | australia-gst, au-gst-bas |
+| Not-for-profit or charity | au-not-for-profit |
+| Superannuation caps and contributions | au-super-guarantee |
+| Medicare levy, surcharge or PHI rebate | au-medicare-levy |
+| Next-year instalments | au-payg-instalments |
+
 ## PROHIBITIONS
 
 - NEVER allow private or domestic expenses as business deductions
