@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU GST Bas
 
-## Australia BAS — Non-GST Sections v1.1
+## Australia BAS — Non-GST Sections v1.2
 
 ## What this file is
 
