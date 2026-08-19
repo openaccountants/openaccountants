@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Formation
 
-## Australia Company Formation Skill v1.0
+## Australia Company Formation Skill v1.1
 
 ## Section 1 -- Quick Reference
 
@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Key legislation | Corporations Act 2001 (Cth) |
 | Typical formation time | 1--3 business days (online via BRS) |
 | Corporate tax rate | 25% (base rate entities, turnover < $50M); 30% (all others) |
-| Skill version | 1.0 |
+| Skill version | 1.1 |
 
 ## Section 2 -- Entity Types Comparison
 

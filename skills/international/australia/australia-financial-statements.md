@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Financial Statements
 
-## Australia Financial Statements Skill v1.0
+## Australia Financial Statements Skill v1.1
 
 ## Section 1 -- Quick Reference
 

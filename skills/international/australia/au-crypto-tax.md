@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Crypto Tax
 
-## Australia Crypto Tax -- CGT & Income Skill v1.0
+## Australia Crypto Tax -- CGT & Income Skill v1.1
 
 ## Section 1 -- Quick Reference
 
@@ -32,7 +32,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.0 |
+| Skill version | 1.1 |
 
 ### Core Principle
 
