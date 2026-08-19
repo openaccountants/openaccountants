@@ -299,7 +299,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Self-lodge deadline | 31 October 2025 |
 | Tax agent deadline | Varies (typically March-May 2026) |
-| Failure to lodge on time | $313 per 28-day period, up to 5 periods ($1,565 max) |
+| Failure to lodge on time | 1 penalty unit per 28-day period, up to 5 periods. Penalty unit: $364 from 1 Jul 2026; $330 for 7 Nov 2024 – 30 Jun 2026 (max $1,820 / $1,650) |
 | Shortfall penalty (reasonable care not taken) | 25% of shortfall |
 | Shortfall penalty (recklessness) | 50% of shortfall |
 | General Interest Charge (GIC) | Updated quarterly (TAA 1953 s 8AAD): 2025-26 quarters were 10.78%, 10.61%, 10.65%, 10.96%; Jul–Sep 2026 is 11.43%; calculated daily and compounded. **GIC and SIC incurred on or after 1 July 2025 are NOT tax-deductible** (Treasury Laws Amendment (Tax Incentives and Integrity) Act 2025 Sch 2); remitted post-1-July-2025 GIC is not assessable, but remitted pre-1-July-2025 GIC that was deducted IS assessable |
