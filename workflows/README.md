@@ -7,6 +7,7 @@ When a user's situation matches a trigger, fetch the relevant jurisdiction bundl
 | Workflow | File | Trigger |
 |---|---|---|
 | Cross-border / multi-jurisdiction | [cross-border-intake.md](cross-border-intake.md) | Any two-country situation, relocation, exit |
+| Australia sole trader | [australia-sole-trader.md](australia-sole-trader.md) | AU freelancer / ABN / sole trader |
 | UK self-employed | [uk-self-employed.md](uk-self-employed.md) | UK freelancer / sole trader |
 | US self-employed (Schedule C) | [us-schedule-c.md](us-schedule-c.md) | US 1099 / gig worker / sole prop |
 | South Africa income tax | [south-africa-income-tax.md](south-africa-income-tax.md) | SA taxpayer, SARS, ITR12 |
