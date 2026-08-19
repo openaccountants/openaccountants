@@ -1,10 +1,10 @@
 ---
 name: australia-gst
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Australian GST return (Business Activity Statement / BAS) for any client. Trigger on phrases like "prepare BAS", "do the GST", "fill in BAS", "create the return", "GST return", "Activity Statement", or any request involving Australian GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Australia only and covers both Simpler BAS and full BAS reporting. GST groups, margin scheme, partial exemption complex, and going concern are all in the refusal catalogue. ALWAYS read this skill before touching any GST-related work.
-version: 2.0
+version: 2.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -481,7 +481,7 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 
 - **Entitlement conditions** — A registered entity is entitled to an input tax credit if ALL conditions are met (s 11-5): 1. Acquisition is for a creditable purpose (related to taxable or GST-free supplies); 2. Supply was a taxable supply (GST in the price); 3. Entity provides consideration; 4. Entity is registered for GST; AND 5. Entity holds a valid tax invoice (or can obtain one within 4 years).  _(s 11-5)_
 - **Blocked credits** — No credit for acquisitions relating to input taxed supplies (s 11-15), private/domestic use (s 11-15), entertainment where FBT exempt (s 69-5), non-deductible fines/penalties (s 69-5).  _(s 11-15, s 69-5)_
-- **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2024-25: $69,674 / 11 = ~$6,334 maximum credit. No outright block on cars (unlike Malta).  _(s 69-10)_
+- **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2026-27: $69,883 / 11 = $6,353 maximum credit (2025-26: $69,674 / 11 = ~$6,334). No outright block on cars (unlike Malta).  _(s 69-10; ATO car thresholds)_
 
 ### 5.7 Tax invoices (Division 29)
 
@@ -643,7 +643,7 @@ Infer the client profile from the data first. Only ask questions the data could 
 
 ### Penalties
 
-- **Failure to lodge (FTL)** — 1 penalty unit per 28-day period for small entities (turnover < $1M), up to 5 periods. Penalty unit: $330 (2024-25, indexed annually).
+- **Failure to lodge (FTL)** — 1 penalty unit per 28-day period for small entities (turnover < $1M), up to 5 periods. Penalty unit: $364 from 1 July 2026; $330 for infringements 7 Nov 2024 – 30 Jun 2026 (ATO QC 71196).
 - **General Interest Charge (GIC)** — 90-day Bank Accepted Bill rate + 7% per annum. Calculated daily, compounded. Tax deductible.
 - **Shortfall penalties** — Reasonable care not taken: 25%. Recklessness: 50%. Intentional disregard: 75%. Reduced 20% for voluntary disclosure before audit.
 
@@ -679,7 +679,7 @@ Infer the client profile from the data first. Only ask questions the data could 
 | GST registration | $75,000 | s 23-5 |
 | Simpler BAS eligibility | Turnover < $10M | TAA 1953 |
 | Cash basis eligibility | Turnover < $2M (or $10M SBE) | s 29-40 |
-| Car limit (2024-25) | $69,674 | s 69-10 |
+| Car limit (2026-27) | $69,883 (2025-26: $69,674) | s 69-10 |
 | LCT threshold (2025-26, general / other vehicles) | $80,567 | LCT Act / ATO car thresholds |
 | LCT threshold (2024-25, fuel-efficient) | $91,387 | LCT Act |
 | No ABN withholding exemption | Supplies < $75 excl GST | TAA Schedule 1 |
@@ -733,7 +733,7 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 - **v2.0 (April 2026):** Full rewrite to align with Malta v2.0 structure. Ten sections: quick reference (1), inputs and refusals (2), supplier pattern library with 12 sub-tables (3), six worked examples from CBA NetBank format (4), Tier 1 rules compressed (5), Tier 2 catalogue with 7 items (6), Excel template (7), bank statement reading guide (8), onboarding fallback with inference rules (9), reference material (10). Five Australia-specific refusals (R-AU-1 through R-AU-5).
 - **v1.1 (April 2026):** Monolithic skill with classification rules, BAS labels, reverse charge, thresholds, edge cases, and test suite. Comprehensive but not aligned with v2.0 architecture.
 
-### Self-check (v2.0)
+### Self-check (v2.1)
 
 1. Quick reference at top with BAS label table and conservative defaults: yes (Section 1).
 2. Supplier library as literal lookup tables: yes (Section 3, 12 sub-tables).
@@ -751,7 +751,7 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 14. Payment processor fees as financial supply explicit: yes (Section 3.8 + Example 6).
 15. Supermarket split (GST-free food vs taxable items) explicit: yes (Section 3.6 + Example 3).
 
-## End of Australia GST Return Preparation Skill v2.0
+## End of Australia GST Return Preparation Skill v2.1
 
 ## Disclaimer
 

@@ -192,7 +192,7 @@ No income calculation needed. ATO pre-fills the amount.
 
 ### 6.2 Late BAS lodgement penalty
 
-- **Late BAS lodgement penalty** — $313 per 28-day period, up to 5 periods ($1,565 max for small entities)  _(Failure to lodge BAS)_
+- **Late BAS lodgement penalty** — 1 penalty unit per 28-day period, up to 5 periods, for small entities. Penalty unit: $364 from 1 Jul 2026; $330 for 7 Nov 2024 – 30 Jun 2026 (so max $1,820 / $1,650)  _(Failure to lodge BAS; ATO QC 71196)_
 
 ### 6.3 Safe harbour
 
