@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Sole Trader Schedule
 
-## Australia Sole Trader Business Schedule v1.0
+## Australia Sole Trader Business Schedule v1.1
 
 ## What this file is
 
