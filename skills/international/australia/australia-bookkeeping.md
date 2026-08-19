@@ -146,7 +146,7 @@ Australian software (Xero, MYOB, QuickBooks) typically uses 3–4 digit codes. T
 | 6040 | Insurance — Business | Expense |
 | 6050 | Repairs and Maintenance | Expense |
 | 6100 | Wages and Salaries | Expense |
-| 6110 | Superannuation Guarantee (11.5% from Jul 2025) | Expense |
+| 6110 | Superannuation Guarantee (12% from Jul 2025) | Expense |
 | 6120 | Workers' Compensation Insurance | Expense |
 | 6130 | Payroll Tax (state-based) | Expense |
 | 6140 | Staff Training | Expense |
@@ -510,7 +510,7 @@ TOTAL EQUITY                                          xxx
 
 ### Superannuation Guarantee
 
-- Rate: 11.5% of ordinary time earnings (from 1 Jul 2025); rising to 12% from 1 Jul 2026
+- Rate: 12% of ordinary time earnings from 1 July 2025 (terminal SG rate; 2024-25 was 11.5%). From 1 July 2026, payday super: contributions must reach the fund within 7 business days of each payday — see au-super-guarantee
 - Due: 28 days after end of quarter
 - Nominal: 6110 (expense) / 2110 (payable)
 - SG Charge: if late, lose deduction and pay additional penalties

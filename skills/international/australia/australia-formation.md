@@ -1,10 +1,10 @@
 ---
 name: australia-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Australia. Trigger on phrases like "set up a company in Australia", "Pty Ltd", "ASIC registration", "Australian company formation", "register a business Australia", "ABN", "ACN", "proprietary limited", "sole trader Australia", "partnership Australia", or any question about starting a business entity in Australia. Covers entity types (Pty Ltd, Ltd, sole trader, partnership, trust), registration process, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on Australian company formation.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
 depends_on: - company-formation-workflow-base
 category: formation
@@ -43,7 +43,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Max. shareholders | 1 | N/A | 50 (non-employee) | Unlimited | N/A |
 | Tax treatment | Personal income tax | Partners taxed individually | Company tax rate | Company tax rate | Trust distributions taxed in beneficiaries' hands |
 | Admin burden | Very low | Low | Medium | High | Medium--High |
-| ASIC registration | No | No (ABN only) | Yes ($611) | Yes | Only if trustee is a company |
+| ASIC registration | No | No (ABN only) | Yes ($636) | Yes | Only if trustee is a company |
 | Audit required | No | No | Only if large proprietary | Yes | No (unless regulated) |
 
 **Recommended default:** Proprietary company limited by shares (Pty Ltd) for most commercial purposes.
@@ -64,7 +64,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Step 4: Register via Business Registration Service (BRS)
 
-- **Register via BRS** — Go to register.business.gov.au; Can simultaneously apply for: company registration, ABN, TFN, GST, PAYG withholding; Fee: $611 (Pty Ltd, 2025--26 financial year); ASIC processes and issues ACN (Australian Company Number) typically within 1--3 days
+- **Register via BRS** — Go to register.business.gov.au; Can simultaneously apply for: company registration, ABN, TFN, GST, PAYG withholding; Fee: $636 (Pty Ltd, from 1 July 2026; 2025-26: $611); ASIC processes and issues ACN (Australian Company Number) typically within 1--3 days
 
 ### Step 5: Receive Certificate of Registration
 
@@ -99,13 +99,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Cost Component | Amount (AUD) | Notes |
 | --- | --- | --- |
-| ASIC company registration | $611 | One-time (Pty Ltd, 2025--26) |
+| ASIC company registration | $636 | One-time (Pty Ltd, from 1 Jul 2026; 2025-26: $611) |
 | Name reservation (optional) | $62 | Valid 2 months |
 | Business name registration (if different from company name) | $45/year or $104/3 years | Only if trading under a different name |
 | ABN registration | Free | Via ABR |
 | GST registration | Free | Via ATO |
-| ASIC annual review fee | $329/year | Pty Ltd (2025--26) |
-| **Total initial cost (government)** | **$611--$673** | Excluding professional fees |
+| ASIC annual review fee | $342/year | Pty Ltd (from 1 Jul 2026; 2025-26: $329) |
+| **Total initial cost (government)** | **$636--$698** | Excluding professional fees (from 1 Jul 2026) |
 | Legal / accountant setup fees | $500--$2,000 | Constitution, shareholder agreement, tax setup |
 | **Total with professional help** | **$1,100--$2,700** |  |
 
@@ -115,7 +115,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Cost (AUD) |
 | --- | --- |
-| ASIC annual review fee | $329 |
+| ASIC annual review fee | $342 |
 | Accountant / tax agent fees | $1,500--$5,000/year |
 | Business name renewal (if applicable) | $45/year |
 | Registered office service (if using) | $200--$600/year |
