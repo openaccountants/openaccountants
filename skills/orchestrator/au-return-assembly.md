@@ -187,7 +187,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 [Content from au-super-guarantee output]
 - Personal deductible contributions (s290-170 notice required)
 - Employer contributions (if also employed)
-- Total concessional: $X of $30,000 cap
+- Total concessional: $X of the year's concessional cap ($30,000 for 2025-26; $32,500 for 2026-27)
 - Excess concessional: $X / nil
 - Non-concessional contributions: $X
 - Division 293 check: income + super vs $250,000 threshold
@@ -236,9 +236,9 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 ## Positions Taken
 [List with legislation citations]
-- e.g., "Home office deduction claimed at 67c/hr for X hours -- Practical Compliance Guideline PCG 2023/1"
-- e.g., "Motor vehicle cents-per-km at 85c/km for X km -- s28-25 ITAA 1997, TD 2024/3"
-- e.g., "MacBook Pro instant asset write-off -- s328-180 ITAA 1997, Temporary Full Expensing extended"
+- e.g., "Home office deduction claimed at 70c/hr for X hours -- Practical Compliance Guideline PCG 2023/1"
+- e.g., "Motor vehicle cents-per-km at 88c/km (2025-26) for X km -- s 28-25 ITAA 1997"
+- e.g., "MacBook Pro instant asset write-off -- ITAA 1997 Div 328, $20,000 threshold" (temporary full expensing ENDED 30 June 2023 -- never cite it for a current year)
 - e.g., "Personal super contribution deduction -- s290-150 ITAA 1997, s290-170 notice lodged"
 
 ## Planning Notes for 2025-26

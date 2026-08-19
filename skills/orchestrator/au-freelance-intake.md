@@ -314,7 +314,7 @@ Q: "Home office claim method?"
 ```
 Q: "Motor vehicle method?"
    Options: [
-     "Cents-per-km (85c/km, max 5,000 business km)",
+     "Cents-per-km (88c/km for 2025-26, max 5,000 business km)",
      "Logbook method (I kept a logbook for 12+ weeks)",
      "No vehicle used for business"
    ]

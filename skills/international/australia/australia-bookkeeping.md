@@ -308,7 +308,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 ### Car Limit
 
-- **Car cost limit for depreciation (2025–26)** — $69,674 AUD (Only the business-use portion of this amount can be depreciated)
+- **Car cost limit for depreciation** — 2025-26: $69,674; 2026-27: $69,883 AUD (only the business-use portion of this amount can be depreciated)
 
 ## Section 6 -- P&L Format
 
