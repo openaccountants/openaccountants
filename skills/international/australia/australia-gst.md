@@ -481,7 +481,7 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 
 - **Entitlement conditions** — A registered entity is entitled to an input tax credit if ALL conditions are met (s 11-5): 1. Acquisition is for a creditable purpose (related to taxable or GST-free supplies); 2. Supply was a taxable supply (GST in the price); 3. Entity provides consideration; 4. Entity is registered for GST; AND 5. Entity holds a valid tax invoice (or can obtain one within 4 years).  _(s 11-5)_
 - **Blocked credits** — No credit for acquisitions relating to input taxed supplies (s 11-15), private/domestic use (s 11-15), entertainment where FBT exempt (s 69-5), non-deductible fines/penalties (s 69-5).  _(s 11-15, s 69-5)_
-- **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2024-25: $69,674 / 11 = ~$6,334 maximum credit. No outright block on cars (unlike Malta).  _(s 69-10)_
+- **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2026-27: $69,883 / 11 = ~$6,353 maximum credit (2025-26: $69,674 / 11 = ~$6,334; 2024-25: $68,108 / 11 = ~$6,191). No outright block on cars (unlike Malta).  _(s 69-10)_
 
 ### 5.7 Tax invoices (Division 29)
 
