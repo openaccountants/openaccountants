@@ -13,6 +13,7 @@ When a user's situation matches a trigger, fetch the relevant jurisdiction bundl
 | Malta freelancer | [malta-freelancer.md](malta-freelancer.md) | Malta self-employed / part-time |
 | Portugal self-employed | [portugal-self-employed.md](portugal-self-employed.md) | Portugal NHR/IFICI / recibos verdes |
 | UK capital gains | [uk-capital-gains.md](uk-capital-gains.md) | UK shares, crypto, or property sale |
+| Australia company & trust | [australia-company-trust.md](australia-company-trust.md) | AU Pty Ltd, family trust, Div 7A, franking |
 
 ## How to use via MCP
 
