@@ -253,7 +253,7 @@ After inference, present a single compact summary message. Use a structured form
 >
 > **Super Contributions (from super statement)**
 > - Personal deductible contributions: $8,000
-> - Concessional cap remaining: $22,000 (of $30,000 cap)
+> - Concessional cap remaining: $22,000 (of the $30,000 cap for 2025-26; the cap is $32,500 from 2026-27)
 >
 > **PAYG Instalments (from BAS)**
 > - Q1 instalment: $1,200

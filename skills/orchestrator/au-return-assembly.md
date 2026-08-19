@@ -64,11 +64,11 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 | BAS G1 total sales (ex-GST, annual sum) | ITR business income label | Must match within $1 |
 | Non-GST registered: gross receipts | ITR business income label | Direct match (no GST separation) |
 
-### Cross-check 2: Super contributions within concessional cap ($30,000)
+### Cross-check 2: Super contributions within the concessional cap
 
 **If excess:** Flag for reviewer. Excess concessional contributions are included in assessable income and taxed at marginal rate (plus excess concessional contributions charge). Division 293 tax applies if income + super > $250,000.
 
-**Cross-check 2 table**  _(Cross-check 2: Super contributions within concessional cap ($30,000))_
+**Cross-check 2 table**  _(Cross-check 2: Super contributions within the concessional cap -- $30,000 for 2025-26, $32,500 for 2026-27)_
 
 | Super Input | Source | Rule |
 | --- | --- | --- |
@@ -270,7 +270,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 ### Super obligations:
 - If you have employees: SG due quarterly (28 days after quarter end)
 - Personal deductible contributions: lodge s290-170 notice with super fund BEFORE lodging ITR
-- Monitor concessional cap ($30,000) across all contribution sources
+- Monitor the concessional cap for the income year being assembled ($30,000 for 2025-26; $32,500 for 2026-27) across all contribution sources
 
 ### Ongoing:
 1. Issue tax invoices for all sales (if GST registered)

@@ -340,8 +340,8 @@ Employee earning $65,000 with HELP debt. STSL repayment rate from Schedule 8 tab
 | --- | --- |
 | payroll-workflow-base | Provides generic payroll processing steps; this skill adds Australian-specific rules |
 | australia-bookkeeping | Payroll journals: salaries + super + payroll tax to P&L; PAYG liability + super liability + net pay to BS |
-| australia-bas | PAYG withholding reported on BAS/IAS; GST does not apply to wages |
-| australia-stp | STP Phase 2 reporting is the primary payroll compliance mechanism |
+| au-gst-bas | PAYG withholding (W1/W2) reported on BAS/IAS; GST does not apply to wages |
+| au-payg-instalments | Instalment obligations sit alongside withholding on the same activity statement |
 
 ## Disclaimer
 

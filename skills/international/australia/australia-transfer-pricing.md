@@ -204,7 +204,7 @@ ATO publishes Practical Compliance Guidelines indicating risk zones for various 
 | Related skill | Interaction |
 | --- | --- |
 | australia-bookkeeping | TP documentation relies on Australian accounting records |
-| australia-corporate-tax | TP adjustments directly affect taxable income |
+| au-company-tax | TP adjustments directly affect taxable income and the company return |
 | australia-gst | TP adjustments may affect customs value and GST on imports |
 | Thin capitalisation | Separate rules limit debt deductions; interact with TP for financial transactions |
 | Diverted Profits Tax (DPT) | 40% rate for diverted profits; TP documentation relevant |
