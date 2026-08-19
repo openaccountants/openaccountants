@@ -44,10 +44,10 @@ From the AU bundle:
 ## 6-phase structure
 
 ### Phase 1 — Intake
-Run `au-freelance-intake` in full. Confirm: full-year Australian tax residency, sole trader status (not company/trust/partnership), income year, GST registration status, uploaded documents (bank statements, invoices, prior return, PAYG instalment notices). Upload-first: infer before asking. Ask about HELP/study loans, private health insurance, and any employees (SG obligations) — each changes the computation.
+Run `au-freelance-intake` in full. Confirm: full-year Australian tax residency, sole trader status (not company/trust/partnership), income year, GST registration status, uploaded documents (bank statements, invoices, prior return, PAYG instalment notices). Upload-first: infer before asking. Ask about HELP/study loans, private health insurance, and any employees (SG obligations); each changes the computation.
 
 ### Phase 2 — Business income and expenses
-Work through the BPI schedule with `au-sole-trader-schedule`: assessable business income (cash vs accruals per prior-year basis), then deductions by category — materials, subcontractors, insurance, software, phone/internet business share, professional fees, bank fees. Apply the home office method comparison (fixed rate per hour vs actual cost) and the vehicle method comparison (cents-per-km capped at 5,000 business km vs logbook percentage). Flag instant asset write-off eligibility per `au-individual-return` current-year thresholds. Screen for personal services income (PSI) — if the income is mainly a reward for personal efforts or skills, flag the PSI rules before claiming business-structure deductions.
+Work through the BPI schedule with `au-sole-trader-schedule`: assessable business income (cash vs accruals per prior-year basis), then deductions by category: materials, subcontractors, insurance, software, phone/internet business share, professional fees, bank fees. Apply the home office method comparison (fixed rate per hour vs actual cost) and the vehicle method comparison (cents-per-km capped at 5,000 business km vs logbook percentage). Flag instant asset write-off eligibility per `au-individual-return` current-year thresholds. Screen for personal services income (PSI): if the income is mainly a reward for personal efforts or skills, flag the PSI rules before claiming business-structure deductions.
 
 ### Phase 3 — GST/BAS (if registered)
 With `australia-gst` + `au-gst-bas`: reconcile GST collected (1A) and credits (1B) for each quarter, confirm lodged BAS totals match the books, and check the annual GST turnover threshold if not registered ($75,000). Note: GST-registered figures in the income tax return are GST-exclusive.
@@ -63,4 +63,4 @@ Run `au-return-assembly` to produce the reviewer brief. Recommend review by a re
 
 ## Verifier
 
-Pending — Australian CPA/CA sign-off required. Drafted from primary sources (ATO, legislation.gov.au) and pending Partner review.
+Pending. Australian CPA/CA sign-off required; drafted from primary sources (ATO, legislation.gov.au) and awaiting Partner review.

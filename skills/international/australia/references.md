@@ -53,7 +53,7 @@ OpenAccountants is AGPL-3.0. MIT, Apache-2.0, GPL-3.0, and AGPL-3.0 content can 
 - License: MIT
 - Language: English
 - Scope: Builds a provenance-rich corpus of in-force Commonwealth tax legislation (ITAA 1936/1997, GST Act, TAA 1953, FBTAA and related Acts) from the Federal Register of Legislation, with exact compilation identifiers attached to every extract.
-- Why it matters: Guides in this pack cite sections of the ITAA 1997/1936 and TAA 1953 — this corpus lets a retrieval system verify each citation against the in-force compilation text rather than trusting secondary summaries.
+- Why it matters: Guides in this pack cite sections of the ITAA 1997/1936 and TAA 1953. This corpus lets a retrieval system verify each citation against the in-force compilation text rather than trusting secondary summaries.
 - Integration approach:
   - MIT permits incorporation with attribution.
   - Use as the primary-source verification layer when reviewing or updating any Australian guide's legislative citations.
@@ -65,7 +65,7 @@ OpenAccountants is AGPL-3.0. MIT, Apache-2.0, GPL-3.0, and AGPL-3.0 content can 
 - License: MIT
 - Language: English
 - Scope: Checks Australian super contributions against the payday-super deadlines (7 business days from payday, from 1 July 2026) and estimates SG charge exposure on late contributions.
-- Why it matters: Direct validation companion to `au-super-guarantee` — the payday-super regime change is the highest-stakes AU payroll change of 2026 and deadline arithmetic (business days, fund-receipt basis) is easy to get wrong.
+- Why it matters: Direct validation companion to `au-super-guarantee`. The payday-super regime change is the highest-stakes AU payroll change of 2026, and deadline arithmetic (business days, fund-receipt basis) is easy to get wrong.
 - Integration approach:
   - MIT permits incorporation with attribution.
   - Use to sanity-check worked examples in `au-super-guarantee` and `australia-payroll`.
