@@ -385,7 +385,7 @@ If the client provides only financial statements and an ABN:
 |---|---|
 | Exemption categories | ITAA 1997 Div 50; ato.gov.au Types of income tax exempt organisations (8 categories); Income tax exempt organisations |
 | Self-review return | ato.gov.au NFP self-review return reporting requirement (QC 73184); due date 31 October; first year 2023-24 |
-| Taxable NFP rates | Income Tax Rates Act 1986 s 23; ato.gov.au Taxable NFP organisations (QC 33593, updated 26 August 2025); Changes to company tax rates (NFP $416/55% bands) |
+| Taxable NFP rates | Income Tax Rates Act 1986 s 23; ato.gov.au Taxable NFP organisations (QC 33593, updated 26 August 2025); Changes to company tax rates (NFP $416/55% bands). Currency confirmed: the ATO's Changes to company tax rates page states the base-rate-entity shade-in limit of $762 applies "for the 2021-22 income year and later years", so the $762/$915 crossovers stand for 2026-27 |
 | Mutuality | ato.gov.au Mutuality and taxable income for not-for-profits (NAT 73436); Waratahs formula [(B x 75%) + C] / [(R x S x T) + A]; TD 93/194 |
 | DGR endorsement | ITAA 1997 Div 30; ato.gov.au Is my organisation eligible for DGR endorsement; ABN Lookup DGR tool |
 | Gift deductions | ato.gov.au Gifts and donations (QC 72185, updated 6 July 2026 -- $2 threshold removed from 1 Jul 2026, backdated to 1 Jul 2024) |
