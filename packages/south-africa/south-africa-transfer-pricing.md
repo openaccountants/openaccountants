@@ -7,7 +7,8 @@ tax_year: 2025
 last_updated: 2026-07-13
 reviewed_by: Werner Britz
 review_status: current
-depends_on: - transfer-pricing-workflow-base
+depends_on:
+  - transfer-pricing-workflow-base
 category: transfer-pricing
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

@@ -1,6 +1,6 @@
 ---
 name: 990-returns
-description: Form 990 (full return) in the United States: how I do it
+description: "Form 990 (full return) in the United States: how I do it"
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-08-10
