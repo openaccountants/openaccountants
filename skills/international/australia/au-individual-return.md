@@ -32,7 +32,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing deadline | 31 October 2025 (self-lodged); May 2026 (tax agent) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending -- Australian CPA/CA sign-off required |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ### Tax Rates -- Resident Individual (2024-25, Stage 3) [T1]
 

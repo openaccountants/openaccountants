@@ -22,9 +22,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia -- Payroll Skill v2.0
+# Australia -- Payroll Skill v2.1
 
-## Australia -- Payroll Skill v1.0
+## Australia -- Payroll Skill v2.1
 
 ## Section 1 -- Quick Reference
 
@@ -42,7 +42,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Pay frequency | Weekly, fortnightly, monthly (fortnightly most common) |
 | Employer registration | ABN + PAYG withholding registration via ATO |
 | Validated by | Pending -- requires sign-off by an Australian CPA, CA, or registered tax agent |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ## Section 2 -- Income Tax Withholding (PAYG)
 

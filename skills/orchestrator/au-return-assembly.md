@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Return Assembly
 
-## Australia Return Assembly Skill v0.1
+## Australia Return Assembly Skill v0.2
 
 ## CRITICAL EXECUTION DIRECTIVE -- READ FIRST
 

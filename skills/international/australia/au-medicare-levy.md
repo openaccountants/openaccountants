@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Medicare Levy
 
-## Australia Medicare Levy and Medicare Levy Surcharge Skill v2.0
+## Australia Medicare Levy and Medicare Levy Surcharge Skill v2.1
 
 ## Section 1 -- Quick reference
 
@@ -36,7 +36,7 @@ Read this whole section before computing anything.
 | Currency | AUD only |
 | Contributor | Open Accountants |
 | Validation Date | April 2026 |
-| Skill Version | 2.0 |
+| Skill Version | 2.1 |
 | Confidence Coverage | Tier 1: standard levy, low-income reduction, surcharge tiers, family thresholds. Tier 2: half-year exemptions, part-year residents, PHI rebate tier selection. Tier 3: Norfolk Island transitional, diplomatic exemptions, prescribed overseas forces. |
 
 **Low-income reduction thresholds (2025-26)**
