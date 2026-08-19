@@ -11,19 +11,19 @@ description: >
   "activity statement", "annual leave", "long service leave",
   "minimum wage Australia", or any question about running payroll in Australia.
   ALWAYS read this skill before processing any Australian payroll work.
-version: 2.0
+version: 2.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-02
+last_updated: 2026-08-20
 review_status: pending_review
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia -- Payroll Skill v2.0
+# Australia -- Payroll Skill v2.2
 
-## Australia -- Payroll Skill v1.0
+## Australia -- Payroll Skill v2.2
 
 ## Section 1 -- Quick Reference
 
@@ -41,7 +41,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Pay frequency | Weekly, fortnightly, monthly (fortnightly most common) |
 | Employer registration | ABN + PAYG withholding registration via ATO |
 | Validated by | Pending -- requires sign-off by an Australian CPA, CA, or registered tax agent |
-| Skill version | 2.0 |
+| Skill version | 2.2 |
 
 ## Section 2 -- Income Tax Withholding (PAYG)
 

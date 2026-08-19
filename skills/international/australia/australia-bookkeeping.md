@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Australian bookkeeping for sole
 version: 1.0
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
 depends_on: - bookkeeping-workflow-base
 category: bookkeeping
