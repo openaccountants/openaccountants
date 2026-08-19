@@ -1,10 +1,10 @@
 ---
 name: au-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help preparing their Australian tax returns AND mentions freelancing, self-employment, contracting, sole trading, or ABN-based work. Trigger on phrases like "help me do my taxes", "prepare my ITR", "I'm a sole trader in Australia", "I'm a freelancer in Australia", "do my taxes as a contractor", "prepare my BAS and income tax", or any similar phrasing where the user is an Australian-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Australian self-employed tax workflow -- every other skill in the stack (australia-gst, au-individual-return, au-super-guarantee, au-medicare-levy, au-payg-instalments, au-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Australian full-year residents only; sole traders only.
-version: 0.1
+version: 0.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Freelance Intake
 
-## Australia Sole Trader Intake Skill v0.1
+## Australia Sole Trader Intake Skill v0.2
 
 ## What this file is
 
@@ -74,7 +74,7 @@ Present the refusal sweep as a single `ask_user_input_v0` call with 3 questions,
 **The 3 questions to ask first**
 
 ```
-Q1: "Australian residency in 2024-25?"
+Q1: "Australian residency in 2025-26?"
     Options: ["Full year", "Part year", "Did not live in Australia"]
 
 Q2: "Business structure?"
@@ -114,16 +114,16 @@ Once the refusal sweep passes, immediately ask for the document dump. Single mes
 
 **Example:**
 
-> Scope is good. Now upload everything you have for 2024-25 -- drop it all in at once:
+> Scope is good. Now upload everything you have for 2025-26 -- drop it all in at once:
 >
-> - Business bank statement(s) for all of 2024-25 (1 July 2024 - 30 June 2025) (CSV or PDF)
-> - Sales invoices issued in 2024-25
+> - Business bank statement(s) for all of 2025-26 (1 July 2025 - 30 June 2026) (CSV or PDF)
+> - Sales invoices issued in 2025-26
 > - Purchase invoices / receipts for business expenses
 > - Prior year tax return (2023-24 ITR, or at least last year's notice of assessment)
 > - PAYG payment summary / income statement from any employer (if also employed)
 > - Private health insurance statement (from your insurer)
 > - HELP/HECS statement (if applicable)
-> - BAS lodgements for 2024-25 (if GST registered)
+> - BAS lodgements for 2025-26 (if GST registered)
 > - Superannuation statements (personal contributions)
 > - Motor vehicle logbook (if claiming vehicle expenses)
 > - Any ATO correspondence or notices
@@ -137,7 +137,7 @@ Then wait. Do not ask any other questions while waiting.
 
 **If the user says "I don't know what I have":** Switch to guided mode:
 > Check these places:
-> - Business bank: download 2024-25 statements as PDF or CSV (1 July 2024 - 30 June 2025)
+> - Business bank: download 2025-26 statements as PDF or CSV (1 July 2025 - 30 June 2026)
 > - myGov / ATO online: download income statement, prior returns, NOA
 > - Email: search for "invoice", "BAS", "ATO", "super", "health insurance"
 > - Your health insurer's portal: download the annual tax statement
@@ -170,12 +170,12 @@ Then wait. Do not ask any other questions while waiting.
 - Total turnover reconciliation against bank deposits
 - Any foreign clients (withholding tax implications)
 
-- **Instant asset write-off threshold for 2024-25** — 20000 AUD (threshold under which items eligible for instant asset write-off)
+- **Instant asset write-off threshold for 2025-26** — 20000 AUD (threshold under which items eligible for instant asset write-off)
 
 **Purchase invoices / receipts:**
 - Expense category (revenue, capital)
 - GST amount on each (claimable input tax credit for GST registered)
-- Any items eligible for instant asset write-off (under $20,000 threshold for 2024-25)
+- Any items eligible for instant asset write-off (under $20,000 threshold for 2025-26)
 - Any items that must be depreciated (above threshold or excluded assets)
 - Any blocked categories (entertainment, personal, non-deductible fines/penalties)
 
@@ -298,7 +298,7 @@ After the user confirms the summary (or corrects it), ask about things that cann
 ```
 Q: "Home office claim method?"
    Options: [
-     "Fixed rate method (67c/hr) -- I track hours worked from home",
+     "Fixed rate method (70c/hr) -- I track hours worked from home",
      "Actual cost method -- I have records of running expenses and floor area",
      "I work from a separate business premises (not home)",
      "I don't work from home",
@@ -306,8 +306,8 @@ Q: "Home office claim method?"
    ]
 ```
 
-- **Home office option handling** — If option 1 -> ask for total hours worked from home during 2024-25 (text input). If option 2 -> flag as complex: actual cost method requires detailed records of electricity, gas, internet, phone, depreciation of furniture. Ask for floor area percentage of dedicated workspace. If option 3 -> rent is already captured in expenses. No home office calculation needed. If option 4 -> skip home office entirely. If option 5 -> recommend fixed rate method (67c/hr) as simpler. Ask for hours.
-- **Fixed rate home office method rate** — 67 cents/hour (2024-25 rate, revised rate effective 1 July 2022, replaces old 52c/hr method)
+- **Home office option handling** — If option 1 -> ask for total hours worked from home during 2025-26 (text input). If option 2 -> flag as complex: actual cost method requires detailed records of electricity, gas, internet, phone, depreciation of furniture. Ask for floor area percentage of dedicated workspace. If option 3 -> rent is already captured in expenses. No home office calculation needed. If option 4 -> skip home office entirely. If option 5 -> recommend fixed rate method (70c/hr) as simpler. Ask for hours.
+- **Fixed rate home office method rate** — 70 cents/hour (2024-25 through 2026-27, PCG 2023/1; was 67c for 2022-23 and 2023-24, replacing the old 52c/hr method)
 
 **Motor vehicle gap-filling question**
 
@@ -320,13 +320,13 @@ Q: "Motor vehicle method?"
    ]
 ```
 
-- **Cents-per-km motor vehicle rate 2024-25** — 85 cents/km (maximum 5,000 business km)
-- **Motor vehicle option handling** — If option 1 -> ask for estimated business kilometres driven in 2024-25 (max 5,000). Rate is 85 cents/km for 2024-25. If option 2 -> ask for logbook business-use percentage and total car expenses. If option 3 -> skip vehicle entirely. Flag all private-use percentages as T2 -- registered tax agent must confirm the percentage is reasonable and documented.
+- **Cents-per-km motor vehicle rate 2025-26** — 88 cents/km (maximum 5,000 business km; 91c from 2026-27)
+- **Motor vehicle option handling** — If option 1 -> ask for estimated business kilometres driven in 2025-26 (max 5,000). Rate is 88 cents/km for 2025-26. If option 2 -> ask for logbook business-use percentage and total car expenses. If option 3 -> skip vehicle entirely. Flag all private-use percentages as T2 -- registered tax agent must confirm the percentage is reasonable and documented.
 
 **Other income question**
 
 ```
-Q: "Any other income in 2024-25?"
+Q: "Any other income in 2025-26?"
    Options: [
      "Interest income (bank accounts)",
      "Dividend income (shares)",
@@ -372,7 +372,7 @@ The downstream skill (`au-return-assembly`) consumes a JSON structure. It is int
 ```json
 {
   "jurisdiction": "AU",
-  "tax_year": "2024-25",
+  "tax_year": "2025-26",
   "taxpayer": {
     "name": "",
     "date_of_birth": "",
@@ -553,7 +553,7 @@ For an unprepared user (has to go fetch documents):
 
 - **v0.1 (April 2026):** Initial draft. Upload-first, inference-then-confirm pattern modelled on mt-freelance-intake v0.1.
 
-## End of Intake Skill v0.1
+## End of Intake Skill v0.2
 
 ## Disclaimer
 
