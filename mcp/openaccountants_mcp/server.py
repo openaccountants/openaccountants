@@ -624,13 +624,16 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
         jurisdiction: Optional jurisdiction code to limit the search.
 
     Returns:
-        ``{"results": [...], "returned": n, "total": n,
-        "truncated": bool, "limit": n}`` — each result has slug, title,
-        jurisdiction, matched_section and snippet. ``total`` is retained as a
-        backwards-compatible alias for ``returned``; it is not a corpus-wide
-        count when ``truncated`` is true. This avoids presenting the result cap
-        as an exact match count without paying the cost of reading every skill
-        body.
+        ``{"results": [...], "returned": n, "truncated": bool, "limit": n,
+        "unreadable_skipped": n, "unreadable_slugs": [...]}`` — each result has
+        slug, title, jurisdiction, matched_section and snippet.
+
+        ``returned`` is exactly ``len(results)``. There is no ``total``: a
+        capped count published under that name asserts an exact corpus-wide
+        figure it does not have, and counting the rest would mean reading every
+        skill body. ``truncated`` says more matches exist beyond ``limit``;
+        ``unreadable_skipped`` says how many skills could not be read at all, so
+        a caller can tell an incomplete answer from a complete one.
     """
     q = (query or "").strip()
     if not q:
@@ -638,20 +641,27 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
     jx = jurisdiction.upper() if jurisdiction else None
 
     results = []
+    unreadable: list[str] = []
     truncated = False
     for rec in _index().values():
         if jx and rec["jurisdiction"].upper() != jx:
             continue
         try:
             _, body = _read_skill(rec["slug"])
-        except (OSError, ValueError):
+        except (OSError, ValueError) as exc:
+            # An unreadable body is not a non-match. Swallowing it let an
+            # incomplete result set report itself complete, and could hide the
+            # truncation flag when every match past the cap was unreadable
+            # (26 matches used to answer returned 25, truncated false).
+            log.warning("search skipped unreadable skill %r: %s", rec["slug"], exc)
+            unreadable.append(rec["slug"])
             continue
         if q.lower() not in body.lower():
             continue
-        section, snippet = _extract_match(body, q)
         if len(results) >= SEARCH_LIMIT:
             truncated = True
             break
+        section, snippet = _extract_match(body, q)
         results.append({
             "slug": rec["slug"],
             "title": rec["title"],
@@ -677,13 +687,18 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
             "list_skills(). If the corpus genuinely lacks this, call "
             "submit_feedback() to flag the gap."
         )
-    returned = len(results)
+    if unreadable:
+        next_action = (
+            f"{len(unreadable)} matching-or-not skill(s) could not be read, so "
+            "this result set may be incomplete. " + next_action
+        )
     return {
         "results": results,
-        "returned": returned,
-        "total": returned,
+        "returned": len(results),
         "truncated": truncated,
         "limit": SEARCH_LIMIT,
+        "unreadable_skipped": len(unreadable),
+        "unreadable_slugs": unreadable[:SEARCH_LIMIT],
         "next_action": next_action,
     }
 
