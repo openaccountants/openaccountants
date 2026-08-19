@@ -133,7 +133,7 @@ EngCo Pty Ltd (a base rate entity) derives $300,000 from the engineering service
   Immediate saving/deferral                  = $35,050
 ```
 
-PCG 2025/5 higher-risk indicators present: salary not commensurate with the value of Priya's services; retention of net PSI in a lower-taxed entity without a commercial purpose; splitting to a non-working associate (Guideline Examples 10-17). Franking on eventual distribution reduces but does not erase the benefit (deferral + choice of recipient). This file computes exposure only -- restructuring advice escalates (R-AU-PSI-6). A genuine move to a low-risk arrangement (full net PSI to Priya, taxed at her marginal rate) by 30 June 2027 is inside the ATO's stated transitional compliance approach (PCG 2025/5 para 11).
+PCG 2025/5 higher-risk indicators present: salary not commensurate with the value of Priya's services; retention of net PSI in a lower-taxed entity without a commercial purpose; splitting to a non-working associate (Guideline Examples 10-17). The 25% rate assumes EngCo is a base rate entity in the year -- service fees are trading income, not base rate entity passive income, so a pure-services company under the $50m turnover limb ordinarily qualifies; if retained profits later generate passive income above 80% of assessable income, the rate flips to 30% (see au-company-tax). Franking on eventual distribution reduces but does not erase the benefit (deferral + choice of recipient). This file computes exposure only -- restructuring advice escalates (R-AU-PSI-6). A genuine move to a low-risk arrangement (full net PSI to Priya, taxed at her marginal rate) by 30 June 2027 is inside the ATO's stated transitional compliance approach (PCG 2025/5 para 11).
 
 ---
 

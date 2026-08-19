@@ -177,7 +177,7 @@ Income to which no beneficiary is presently entitled (and no valid streaming app
 
 ### Rule 5 -- Division 6AA minors' rates
 
-Applies to "eligible taxable income" (unearned income, including discretionary trust distributions) of resident minors who are not excepted persons: $0-$416 nil; $417-$1,307 taxed at 66% of the excess over $416; over $1,307 the ENTIRE amount at 45% (cliff, not marginal). Non-resident minors: 32.5%/66%/45% analogues with no tax-free band. The trustee pays under s 98(1) while the minor is under a legal disability; the minor also returns the share with a credit for the trustee's tax if they must lodge. LITO cannot offset Div 6AA tax. Excepted income (employment, testamentary trusts, compensation, inheritances) is taxed at adult rates -- verify character before assuming.
+Applies to "eligible taxable income" (unearned income, including discretionary trust distributions) of resident minors who are not excepted persons: $0-$416 nil; $417-$1,307 taxed at 66% of the excess over $416; over $1,307 the ENTIRE amount at 45% (cliff, not marginal). Non-resident minors get no tax-free band: $0-$416 at 30% of the entire amount (the non-resident first rate from 2024-25), then 66% of the excess, then 45% of the whole amount (ATO "Tax rates if you're under 18 years old"). The trustee pays under s 98(1) while the minor is under a legal disability; the minor also returns the share with a credit for the trustee's tax if they must lodge. LITO cannot offset Div 6AA tax. Excepted income (employment, testamentary trusts, compensation, inheritances) is taxed at adult rates -- verify character before assuming.
 
 ### Rule 6 -- Streaming capital gains (Subdiv 115-C)
 

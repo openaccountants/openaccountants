@@ -373,7 +373,7 @@ If the client provides only financial statements and a trial balance:
 | Lodgment program | ato.gov.au Companies and super funds -- agent lodgment program (QC 34562, updated 1 July 2026); Income tax return -- companies (28 February self-preparer) |
 | PAYG instalments | ato.gov.au PAYG instalments (entry $2m/$500; monthly > $20m); GDP adjustment 5% for 2026-27 |
 | Amendment periods | ato.gov.au Request an amendment to a business or super tax return (SMB 4 years from 2024-25) |
-| GIC/SIC deduction denial | ato.gov.au -- deductions denied for GIC/SIC incurred from 1 July 2025 |
+| GIC/SIC deduction denial | Treasury Laws Amendment (Tax Incentives and Integrity) Act 2025 (No. 29, 2025) Sch 2; ato.gov.au QC 73746 -- GIC/SIC incurred from 1 July 2025 not deductible |
 
 ### Test suite
 
