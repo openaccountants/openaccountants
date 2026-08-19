@@ -51,8 +51,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- | --- | --- | --- |
 | NSW | 31 December | $1,075,000 | $100 + 1.6% above threshold | 5% (foreign owner surcharge) |
 | VIC | 31 December | $50,000 | Tiered flat + % | 4% (absentee owner surcharge) |
-| QLD | 30 June | $600,000 (individual) / $350,000 (company/trust/absentee) | $500 + 1c per $1 above | 2% (foreign/absentee surcharge) |
-| SA | 30 June | $833,000 (general) / $25,000 (trust) | $0.50 per $100 above | None (foreign surcharge applies to duty, not land tax) |
+| QLD | 30 June | $600,000 (individual) / $350,000 (company/trust/absentee) | $500 + 1c per $1 above (individuals); absentees use a separate scale from $1,450 + 1.7c | 3% (absentee/foreign surcharge) |
+| SA | 30 June | **$936,000 (general, 2026-27, in force from 1 Jul 2026)** / $25,000 (trust). 2025-26: $833,000 | $0.50 per $100 above the threshold | None (SA's foreign surcharge applies to duty, not land tax) |
 | WA | 30 June | $300,000 | $300 flat then 0.25% above $420,000 | None |
 | TAS | 1 July | $125,000 | $50 + 0.45% above | 2% (foreign investor land tax surcharge) |
 | ACT | Quarterly (1 Jul, 1 Oct, 1 Jan, 1 Apr) | No threshold (residential only) | Fixed charge + AUV rating factor | 0.75% (foreign ownership surcharge) |
@@ -140,7 +140,7 @@ The cycle: Valuer-General determines land value (annual); revenue office issues 
 
 **QLD Companies & Trusts** -- $350,000 threshold; $1,450 + 1.7c per $1 above $350,000 to $2,249,999; then tiered up to $187,500 + 2.75c per $1 above $10,000,000.
 
-- **Foreign/absentee surcharge** — 2% of taxable value for foreign companies, trustees of foreign trusts, and absentee individuals. Applies to land valued at $350,000 or more.
+- **Absentee/foreign surcharge** — **3%** applied as (taxable value − $350,000) × 3%, in addition to land tax, for absentee individuals (foreign individuals without a permanent visa who do not usually live in Australia), foreign companies and trustees of foreign trusts. Applies from $350,000 of taxable value. Absentees are also assessed on a separate rate scale ($1,450 + 1.7c per $1 above $350,000, rising to 2.5c above $10m) and cannot claim the home or primary production exemptions.  _(QRO Land tax rates for absentees)_
 - **Trusts** — Trustees have a $350,000 threshold (same as companies). Special disability trusts use individual threshold ($600,000).
 
 ### 4.4 South Australia (SA)
@@ -149,13 +149,13 @@ The cycle: Valuer-General determines land value (annual); revenue office issues 
 
 | Total Taxable Site Value | Amount of Tax |
 | --- | --- |
-| Up to $833,000 | Nil |
-| $833,001 to $1,338,000 | $0.50 per $100 above $833,000 |
+| Up to $936,000 | Nil |
+| $936,001 to $1,504,000 | $0.50 per $100 above $936,000 |
 | $1,338,001 to $1,946,000 | $2,525 + $1.00 per $100 above $1,338,000 |
 | $1,946,001 to $3,116,000 | $8,605 + $2.00 per $100 above $1,946,000 |
 | $3,116,001 and over | $32,005 + $2.40 per $100 above $3,116,000 |
 
-**SA Land Tax Trust Rates** -- $25,000 threshold; $125 + $0.50 per $100 above $25,000 to $833,000; then tiered up to $46,415 + $2.40 per $100 above $3,116,000.
+**SA Land Tax Trust Rates (2026-27)** -- $25,000 threshold; $125 + $0.50 per $100 above $25,000 to $936,000; then $4,680 + $1.00 per $100 above $936,000 to $1,504,000, tiering up at the top band. 2025-26 general threshold was $833,000; RevenueSA indexed thresholds 12.44% for 2026-27.
 
 - **Trust threshold** — Trusts have a $25,000 threshold (no general tax-free threshold).
 - **Foreign surcharge** — SA does not levy a foreign owner land tax surcharge; foreign purchasers pay a stamp duty surcharge instead.
@@ -286,7 +286,7 @@ General land tax: $100 + (1.6% x $125,000) = $2,100. Foreign surcharge (5%): 5% 
 
 **Facts:** Individual owns a 50-hectare grazing property in SA with site value $950,000. The property is used for commercial sheep grazing.
 
-Without primary production exemption: 0.5% x ($950,000 - $833,000) = **$585**. With exemption: **$0**. Evidence of commercial farming activity (ABN, income records, stocking rates) is required.
+Without primary production exemption (2026-27 threshold $936,000): 0.5% x ($950,000 - $936,000) = **$70**. With exemption: **$0**. (Under the 2025-26 threshold of $833,000 the same land attracted $585 -- indexation matters, so always confirm the year.) Evidence of commercial farming activity (ABN, income records, stocking rates) is required.
 
 ### Example 5 -- Trust Aggregation (TAS)
 
