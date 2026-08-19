@@ -46,6 +46,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | 135,001 -- 190,000 | 37% | Max $20,350 |
 | 190,001+ | 45% |  |
 
+> **Rates apply to 2024-25 AND 2025-26 (identical).** From **1 July 2026** the 16% rate drops to **15%** (2026-27: tax on $45,000 = $4,020; on $135,000 = $31,020; on $190,000 = $51,370), and from **1 July 2027** to **14%**. _(ATO QC 73320, updated 13 Aug 2026; Treasury Laws Amendment (More Cost of Living Relief) Act 2025.)_
+
 ### Medicare Levy [T1]
 
 **Medicare Levy [T1]**
@@ -53,9 +55,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Item | Value |
 | --- | --- |
 | Rate | 2% of taxable income |
-| Low-income threshold (single) | $27,222 (no levy below; phase-in $27,223-$34,027) |
-| Low-income threshold (family) | $45,907 + $4,216 per dependent child |
-| Surcharge (no private hospital cover) | Additional 1%-1.5% if income over $93,000 (single) |
+| Low-income threshold (single, 2025-26) | $28,011 (no levy below; phase-in $28,012-$35,013). 2024-25: $27,222 / $34,027 |
+| Low-income threshold (family, 2025-26) | $47,238 + $4,338 per dependent child. 2024-25: $45,907 + $4,216 |
+| Surcharge (no private hospital cover) | Additional 1%-1.5% if income for MLS purposes over $101,000 single / $202,000 family (2025-26; 2024-25: $97,000 / $194,000) |
 
 ### Low Income Tax Offset (LITO) [T1]
 
@@ -63,9 +65,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Taxable Income (AUD) | LITO |
 | --- | --- |
-| Up to $45,000 | $700 |
-| $45,001 -- $66,667 | Reduces by 5c per $1 over $45,000 |
+| Up to $37,500 | $700 |
+| $37,501 -- $45,000 | $700 minus 5c per $1 over $37,500 |
+| $45,001 -- $66,667 | $325 minus 1.5c per $1 over $45,000 |
 | $66,668+ | $0 |
+
+_(ATO "Low income tax offset"; unchanged for 2024-25 through 2026-27.)_
 
 ### Small Business Income Tax Offset (SBITO) [T1]
 
@@ -83,8 +88,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Rate/threshold | Claim handling |
 | --- | --- | --- |
-| Home office -- fixed rate method | 70 cents per hour (2024-25 and 2025-26) | T2 -- method choice, hours, and records/substantiation required |
-| Motor vehicle -- cents per km method | 88 cents per km (max 5,000 km) | T2 -- method choice and business-km support required |
+| Home office -- fixed rate method | 70 cents per hour (2024-25 through 2026-27, PCG 2023/1) | T2 -- method choice, hours, and records/substantiation required |
+| Motor vehicle -- cents per km method | 88c/km for 2024-25 and 2025-26; **91c/km for 2026-27** (max 5,000 km) | T2 -- method choice and business-km support required |
 | Instant asset write-off (small business) | $20,000 threshold (assets under $20,000 immediately deductible) | T1 if small-business eligibility and asset cost are clear; otherwise escalate |
 | Superannuation (deductible personal contribution) | Up to $30,000 concessional cap | T1 rate-cap lookup; notice of intent must be lodged before claiming |
 
@@ -149,8 +154,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Pattern | Deduction Category | Tier | Treatment |
 | --- | --- | --- | --- |
 | RENT, OFFICE RENT, SERVICED OFFICE | Business expense -- occupancy | T1 | Fully deductible if dedicated business premises |
-| HOME OFFICE, WORK FROM HOME | Home office deduction (D5) | T2 | Fixed rate 70c/hr (2024-25 and 2025-26) OR actual cost method. See Tier 2. |
-| PETROL, FUEL, CALTEX, BP, SHELL, AMPOL | Motor vehicle (D1) | T2 | Cents/km (88c, max 5,000 km) OR logbook method |
+| HOME OFFICE, WORK FROM HOME | Home office deduction (D5) | T2 | Fixed rate 70c/hr (2024-25 through 2026-27) OR actual cost method. See Tier 2. |
+| PETROL, FUEL, CALTEX, BP, SHELL, AMPOL | Motor vehicle (D1) | T2 | Cents/km (88c 2024-25/2025-26; 91c 2026-27; max 5,000 km) OR logbook method |
 | CAR INSURANCE, REGO, SERVICE | Motor vehicle | T2 | Only under logbook method (not cents/km) |
 | TOLL, CITYLINK, LINKT | Motor vehicle or travel | T1 | Business travel tolls: deductible under either method |
 | FLIGHT, QANTAS, VIRGIN, JETSTAR | Travel (D2) | T1 | Fully deductible if business travel |
@@ -260,7 +265,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Diminishing value** — Base value x (days held / 365) x (200% / effective life)  _(ITAA 1997 Div 40)_
 - **Prime cost (straight line)** — Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
 - **Small business entity simplified depreciation** — Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
-- **Instant asset write-off** — Assets costing less than $20,000 (2024-25) can be immediately deducted by small business entities. This threshold may change each year -- confirm for current year.  _(ITAA 1997 Div 40)_
+- **Instant asset write-off** — Assets costing less than $20,000 can be immediately deducted by small business entities (aggregated turnover < $10m). The $20,000 limit is law for 2024-25 and 2025-26 (extended by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025), and the 2026-27 Budget announced it becomes **permanent from 1 July 2026** — confirm enactment before relying on it for 2026-27 purchases.  _(ITAA 1997 Div 328; ATO QC 103578)_
 
 ### 5.4 Superannuation [T1]
 
@@ -312,7 +317,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Method | What It Covers | Additional Claims |
 | --- | --- | --- |
-| Fixed rate (70c/hr, 2024-25 and 2025-26) | Electricity, gas, phone, internet, stationery, computer consumables | Separately claim: technology depreciation (computer, monitor), occupancy costs (if dedicated room), cleaning |
+| Fixed rate (70c/hr, 2024-25 through 2026-27) | Electricity, gas, phone, internet, stationery, computer consumables | Separately claim: technology depreciation (computer, monitor), occupancy costs (if dedicated room), cleaning |
 | Actual cost | Each expense claimed individually at actual business % | No fixed rate component |
 
 - **Home office record keeping and occupancy expenses** — Under either method: must have records of hours worked from home. Fixed rate: can use any reasonable record. Actual: need receipts and usage records. Occupancy expenses (rent, mortgage interest, rates, home insurance, land tax) are ONLY deductible if you have a dedicated area set aside exclusively as a place of business. These are separate from running expenses.
@@ -325,7 +330,7 @@ Confirm method, hours, and whether occupancy expenses apply.
 
 | Method | How It Works | Records |
 | --- | --- | --- |
-| Cents per km (88c) | Max 5,000 business km. No receipts needed. | Reasonable estimate of business km |
+| Cents per km (88c in 2024-25/2025-26; 91c in 2026-27) | Max 5,000 business km. No receipts needed. | Reasonable estimate of business km |
 | Logbook | Business % of actual costs including depreciation | 12-week continuous logbook, valid for 5 years |
 
 - **Cannot claim both methods** — Cannot claim both. Parking, tolls, and roadside assistance are separate and deductible under either method for business trips.

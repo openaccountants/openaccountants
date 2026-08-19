@@ -84,7 +84,7 @@ Discretionary (family) trusts allow income distribution to adult family members 
 
 | Deduction | Legislation | Notes |
 | --- | --- | --- |
-| Home office running expenses | s 8-1 ITAA 1997 | Fixed rate 67c/hour (revised method from 1 July 2022) or actual cost. Must keep contemporaneous records (timesheets, diary) |
+| Home office running expenses | s 8-1 ITAA 1997 | Fixed rate 70c/hour (PCG 2023/1, from 1 July 2024; was 67c 2022-24) or actual cost. Must keep contemporaneous records (timesheets, diary) |
 | Self-education expenses | s 8-1 | Must have sufficient connection to current employment/business. First $250 non-deductible for employees (not self-employed) |
 | Phone and internet | s 8-1 | Apportion business use %. ATO accepts a representative 4-week diary |
 | Income protection insurance | s 8-1 | Premiums for policies replacing lost income are deductible |
@@ -100,7 +100,7 @@ Discretionary (family) trusts allow income distribution to adult family members 
 
 ### Instant Asset Write-Off (2025–26)
 
-- **Instant asset write-off eligibility** — Small businesses (aggregated turnover <$10m) can immediately deduct assets costing less than $20,000 (per asset) first used or installed ready for use by 30 June 2026.  _(Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025)_
+- **Instant asset write-off eligibility** — Small businesses (aggregated turnover <$10m) can immediately deduct assets costing less than $20,000 (per asset). The $20,000 limit is law for 2024-25 and 2025-26 (Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025) and the 2026-27 Budget announced it becomes permanent from 1 July 2026 — confirm enactment before relying on it for 2026-27.  _(ITAA 1997 Div 328; ATO QC 103578)_
 - **Simplified depreciation pool** — Assets ≥$20,000 enter the small business simplified depreciation pool: 15% first year, 30% declining balance thereafter. Pool balance <$20,000 at 30 June 2026 can be written off entirely.
 
 ### General Depreciation
@@ -116,8 +116,8 @@ Discretionary (family) trusts allow income distribution to adult family members 
 
 ### Motor Vehicles
 
-- **Car cost limit for depreciation (2025–26)** — $69,674 AUD (Only the business-use portion of this amount can be depreciated)
-- **Business-use substantiation** — Business-use percentage must be substantiated via logbook (minimum continuous 12-week period, valid for 5 years) or cents-per-km method (85c/km, max 5,000 business km = $4,250).
+- **Car cost limit for depreciation** — 2025–26: $69,674; 2026–27: $69,883 AUD (only the business-use portion of this amount can be depreciated)
+- **Business-use substantiation** — Business-use percentage must be substantiated via logbook (minimum continuous 12-week period, valid for 5 years) or cents-per-km method (88c/km in 2025-26; 91c/km in 2026-27; max 5,000 business km).
 
 ## Section 5 — Loss Utilization
 
@@ -130,9 +130,9 @@ Discretionary (family) trusts allow income distribution to adult family members 
 
 - **Continuity of ownership test (COT)** — Carry forward subject to continuity of ownership test (COT) — same persons must maintain >50% voting, dividend, and capital rights (s 165-12). If COT fails, the same business test (SBT) may save losses if the company carries on the same business (s 165-13). SBT was broadened in 2015 to a "similar business test."  _(s 165-12; s 165-13)_
 
-### Loss Carry-Back (Companies)
+### Loss Carry-Back (Companies) — ENDED
 
-- **Loss carry-back eligibility** — Companies with aggregated turnover <$5bn can carry back tax losses to offset tax paid in prior income years, generating a refundable tax offset. Capped by available franking account balance.
+- **Loss carry-back has ended** — The temporary loss carry-back (aggregated turnover <$5bn, refundable offset capped by the franking account) applied only to losses of the 2019-20 to 2022-23 income years, claimable in the 2020-21 to 2022-23 returns. It is NOT available for current-year losses; companies are back to carry-forward only (subject to COT/similar business test). Do not advise clients to expect a carry-back refund.  _(former Div 160 ITAA 1997)_
 
 ## Section 6 — Timing Strategies
 
@@ -191,7 +191,7 @@ Discretionary (family) trusts allow income distribution to adult family members 
 | CGT 50% discount | Individuals and trusts — hold assets >12 months for 50% discount on net capital gain. **Ends for gains accruing from 1 July 2027** (indexation + 30% minimum rate instead — see alert at top) |
 | Negative gearing | Investment property/share portfolio borrowing costs exceed income → net loss offsets other income. Uncapped through 30 June 2027; from 1 July 2027 residential-property losses are quarantined unless the property is a new build or was acquired on or before 12 May 2026 (see alert at top) |
 | Franking credits | Australian company dividends carry franking credits. Excess credits refundable for individuals and super funds |
-| Super in pension phase | Earnings on assets supporting income streams in pension phase are tax-free (up to transfer balance cap of $1.9m, indexed) |
+| Super in pension phase | Earnings on assets supporting income streams in pension phase are tax-free (up to the general transfer balance cap — $2.1m in 2026-27; $2.0m in 2025-26) |
 | Transition to retirement (TTR) | Access super as income stream from preservation age while still working. Earnings in TTR taxed at 15% (not tax-free) |
 
 ## Section 10 — Red Lines (GAAR & Scrutiny Triggers)

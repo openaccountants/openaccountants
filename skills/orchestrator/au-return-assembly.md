@@ -1,10 +1,10 @@
 ---
 name: au-return-assembly
 description: Final orchestrator skill that assembles the complete Australian filing package for Australian-resident sole traders. Consumes outputs from all Australian content skills (australia-gst for BAS, au-individual-return for ITR, au-super-guarantee for voluntary contributions, au-medicare-levy for levy and surcharge, au-payg-instalments for instalment schedule) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Australian content skills listed above. Australian full-year residents only. Sole traders only.
-version: 0.1
+version: 0.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -87,8 +87,8 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 | --- | --- | --- |
 | Income for MLS purposes | ITR taxable income + reportable fringe benefits + total net investment loss + reportable super | Combined figure |
 | PHI status | Insurer statement | If adequate hospital cover for full year, no MLS |
-| MLS thresholds (2024-25) | Single: $93,000; Family: $186,000 | Below threshold = no MLS regardless of PHI |
-| MLS rates | Tier 1: 1%; Tier 2: 1.25%; Tier 3: 1.5% | Applied to taxable income |
+| MLS thresholds | 2025-26: Single $101,000; Family $202,000. 2024-25: Single $97,000; Family $194,000 | Below threshold = no MLS regardless of PHI |
+| MLS rates | Tier 1: 1%; Tier 2: 1.25%; Tier 3: 1.5% | Applied to income for MLS purposes |
 
 ### Cross-check 4: PAYG instalments credit against final tax
 
