@@ -1,10 +1,11 @@
 ---
 name: au-individual-return
 description: Use this skill whenever asked about Australian individual income tax for sole traders. Trigger on phrases like "how much tax do I pay in Australia", "Australian tax return", "sole trader tax", "ABN tax", "Medicare levy", "LITO", "PAYG", "tax brackets Australia", "BAS", "instant asset write-off", "home office deduction", "HELP repayment", "HECS debt", "small business income tax offset", "motor vehicle deduction", or any question about filing or computing income tax for an Australian sole trader. Covers 2024-25 Stage 3 tax rates, Medicare levy and surcharge, LITO, business income computation, allowable deductions, depreciation, instant asset write-off, small business income tax offset, HELP/HECS repayments, and final tax computation. ALWAYS read this skill before touching any Australian income tax work.
-version: 2.0
+version: 2.1
 jurisdiction: AU
 tax_year: 2024
-last_updated: 2026-07-13
+tax_year_notes: "2024-25 computation base; HELP repayment tables updated for 2025-26 and 2026-27 (marginal system)"
+last_updated: 2026-08-20
 review_status: pending_review
 depends_on: - income-tax-workflow-base
 category: international
@@ -269,16 +270,26 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **5.5 HELP/HECS Repayment [T1]**
 
-| Repayment Income (2024-25) | Rate |
-| --- | --- |
-| Below $54,435 | 0% |
-| $54,435 -- $62,850 | 1% |
-| $62,851 -- $66,620 | 2% |
-| $66,621 -- $70,618 | 2.5% |
-| ... (progressive to) | ... |
-| $151,201+ | 10% |
+> **Regime change from 1 July 2025.** Compulsory repayments moved from a percentage of TOTAL repayment income to a **marginal system** — the repayment is calculated only on income above the minimum threshold. The old sliding-scale table (1%–10% from $54,435) applies to 2024-25 and earlier returns only. _(Student loan reforms passed November 2025; ATO QC 59241)_
 
-- **Repayment income** — Repayment income = taxable income + reportable fringe benefits + net investment losses + reportable super. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003)_
+| Repayment Income (2025-26) | Repayment on this income |
+| --- | --- |
+| $0 – $67,000 | Nil |
+| $67,001 – $125,000 | 15c for each $1 over $67,000 |
+| $125,001 – $179,285 | $8,700 plus 17c for each $1 over $125,000 |
+| $179,286 and over | 10% of TOTAL repayment income |
+
+| Repayment Income (2026-27) | Repayment on this income |
+| --- | --- |
+| $0 – $69,528 | Nil |
+| $69,529 – $129,717 | 15c for each $1 over $69,528 |
+| $129,718 – $186,050 | $9,028 plus 17c for each $1 over $129,717 |
+| $186,051 and over | 10% of TOTAL repayment income |
+
+- **Repayment income** — Repayment income = taxable income (excluding assessable FHSS released amounts) + reportable fringe benefits + total net investment loss + reportable super contributions + exempt foreign employment income. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003; ATO QC 16176)_
+- **Worked check (2025-26)** — repayment income $80,000 → 15% × ($80,000 − $67,000) = **$1,950** (old system would have been $2,800 at 3.5%).
+- **One-off 20% debt reduction** — HELP/study loan balances outstanding at 1 June 2025 were automatically reduced by 20% (applied by the ATO from late 2025, processing completed by mid-2026; no action required). Confirm the client's current balance from ATO online services rather than an old statement.  _(studyassist.gov.au; ATO "Study and training loans – what's new", 30 June 2026)_
+- **Indexation** — study loan indexation is now the LOWER of CPI and Wage Price Index (backdated to 1 June 2023 by the Universities Accord (Student Support and Other Measures) Act 2024).
 
 ### 5.6 Filing and Penalties [T1]
 
@@ -291,7 +302,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Failure to lodge on time | $313 per 28-day period, up to 5 periods ($1,565 max) |
 | Shortfall penalty (reasonable care not taken) | 25% of shortfall |
 | Shortfall penalty (recklessness) | 50% of shortfall |
-| General Interest Charge (GIC) | Varies quarterly; 2025 annual rates include 11.42%, 11.17%, 10.78%, and 10.61%; calculated daily and compounded |
+| General Interest Charge (GIC) | Updated quarterly (TAA 1953 s 8AAD): 2025-26 quarters were 10.78%, 10.61%, 10.65%, 10.96%; Jul–Sep 2026 is 11.43%; calculated daily and compounded. **GIC and SIC incurred on or after 1 July 2025 are NOT tax-deductible** (Treasury Laws Amendment (Tax Incentives and Integrity) Act 2025 Sch 2); remitted post-1-July-2025 GIC is not assessable, but remitted pre-1-July-2025 GIC that was deducted IS assessable |
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 

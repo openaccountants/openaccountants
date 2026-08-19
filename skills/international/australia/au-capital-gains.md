@@ -1,10 +1,11 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian resident's capital gains tax question. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\". Covers CGT events, cost base, 50% discount, SBCGT concessions, main residence exemption. For non-residents selling Australian assets see au-nonresident-cgt."
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: "2025-26; includes 1 July 2027 CGT reform alert (Tax Reform No. 1 Act 2026)"
+last_updated: 2026-08-20
 review_status: pending_review
 depends_on: - au-individual-return
 category: international
@@ -13,6 +14,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # AU Capital Gains
+
+> **Law-change alert (passed June 2026, applies from 1 July 2027).** The *Treasury Laws Amendment (Tax Reform No. 1) Act 2026* replaces the 50% CGT discount for individuals, trusts and partnerships with **cost-base indexation plus a 30% minimum tax rate** for capital gains **accruing from 1 July 2027**. Assets held on 30 June 2027 (including pre-CGT assets) are deemed sold and re-acquired on 1 July 2027, splitting every later disposal into pre- and post-1-July-2027 gain components across four asset-based categories (residential vs non-residential × pre vs post). The 50% discount is retained for **new residential dwellings**; the small business 50% active-asset reduction is being expanded (announced: turnover test $2m → $10m). Everything below describes the law that still applies to gains accruing **up to 30 June 2027** — for disposals after that date, or timing decisions straddling it, escalate to a qualified adviser and check the current ATO guidance.
 
 ## Section 1 — Quick Reference
 
