@@ -172,7 +172,7 @@ ACT rates above are the eligible owner-occupier scale (unchanged from 1 July 202
 | VIC | Dutiable value to $600,000 | $600,001--$750,000, phased by (value − $600,000) ÷ $150,000 |
 | QLD | Established home to $700,000; **new home or vacant land — full concession, no value cap**, contracts from 1 May 2025 | Established home $700,000--$799,999.99 (concession tapers from $17,350 to nil at $800,000) |
 | WA | Home to $600,000 (from 7 May 2026); vacant land to $450,000 | Home $600,001--$800,000 at $16.15 per $100 over $600,000; land $450,001--$550,000 at $20.14 per $100 over $450,000 |
-| SA | New home, off-the-plan apartment or vacant land — relief for contracts from 15 June 2023 (value caps depend on contract date) | Per RevenueSA calculator |
+| SA | New home, off-the-plan apartment or vacant land — relief for contracts from 15 June 2023 (value caps depend on contract date) | Per RevenueSA calculator. Note: for contracts from 13 February 2025, FHB relief no longer extends to the foreign ownership surcharge — a foreign first home buyer pays the 7% surcharge even when the base duty is relieved |
 | TAS | **Expired** — the 100% established-home exemption (to $750,000) is unavailable for transfers settling after 30 June 2026 | None currently |
 | ACT | Home Buyer Concession Scheme — income-tested, full exemption to $1,020,000 property value (from 1 July 2025), maximum concession $35,238 | Above $1,020,000 |
 | NT | No general first home duty concession currently; territory home-owner grants operate separately | — |
