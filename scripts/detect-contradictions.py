@@ -362,7 +362,10 @@ CONCEPTS = {
                                 "exclude": r"bring.forward|3 year|two year|over 3|over 2",
                                 "min": 100000, "max": 160000},
         "transfer_balance_cap": {"terms": [r"transfer balance cap", r"\bTBC\b"], "kind": "money",
-                                 "exclude": r"personal|used|remaining|space",
+                                 # The disregarded-small-fund-assets trigger (s 295-387) is a FIXED
+                                 # $1.6m TSB figure that deliberately does not index with the TBC.
+                                 "exclude": r"personal|used|remaining|space|disregarded small fund|"
+                                            r"\bDSFA\b|295-387|has NOT indexed|total super balance",
                                  "min": 1500000, "max": 2500000},
         "cgt_cap": {"terms": [r"CGT cap"], "kind": "money",
                     "exclude": r"lifetime limit of the retirement", "min": 1500000, "max": 2200000},
@@ -372,7 +375,11 @@ CONCEPTS = {
                              "exclude": r"first year|new fund|518|two years", "min": 200, "max": 300},
         # --- Companies ----------------------------------------------------------
         "bre_rate": {"terms": [r"base rate entity", r"\bBRE\b"], "kind": "percent",
-                     "exclude": r"passive income|BREPI|80%|turnover", "min": 20, "max": 30},
+                     # "not a base rate entity" lines assert the 30% standard rate on purpose
+                     # (bucket companies on passive trust income), so they are not BRE claims.
+                     "exclude": r"passive income|BREPI|80%|turnover|not a base rate|"
+                                r"is not a base rate|fails the base rate",
+                     "min": 20, "max": 30},
         "standard_company_rate": {"terms": [r"standard company (?:tax )?rate",
                                             r"full company (?:tax )?rate"], "kind": "percent",
                                   "min": 25, "max": 35},
