@@ -628,12 +628,14 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
         "unreadable_skipped": n, "unreadable_slugs": [...]}`` — each result has
         slug, title, jurisdiction, matched_section and snippet.
 
-        ``returned`` is exactly ``len(results)``. There is no ``total``: a
-        capped count published under that name asserts an exact corpus-wide
-        figure it does not have, and counting the rest would mean reading every
-        skill body. ``truncated`` says more matches exist beyond ``limit``;
-        ``unreadable_skipped`` says how many skills could not be read at all, so
-        a caller can tell an incomplete answer from a complete one.
+        ``returned`` is exactly ``len(results)``. ``total`` is retained as a
+        backwards-compatible alias of ``returned`` for callers that already
+        consume it; like ``returned``, it is the count of returned matches, not
+        a corpus-wide figure, because counting the rest would mean reading
+        every skill body. ``truncated`` says more matches exist beyond
+        ``limit``; ``unreadable_skipped`` says how many skills could not be
+        read at all, so a caller can tell an incomplete answer from a complete
+        one.
     """
     q = (query or "").strip()
     if not q:
@@ -695,6 +697,7 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
     return {
         "results": results,
         "returned": len(results),
+        "total": len(results),
         "truncated": truncated,
         "limit": SEARCH_LIMIT,
         "unreadable_skipped": len(unreadable),

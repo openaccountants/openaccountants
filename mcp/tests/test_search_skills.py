@@ -28,10 +28,24 @@ class SearchSkillsTests(unittest.TestCase):
             response = server.search_skills("searchable phrase")
 
         self.assertEqual(response["returned"], 3)
-        self.assertNotIn("total", response)
+        self.assertEqual(response["total"], 3)
         self.assertFalse(response["truncated"])
         self.assertEqual(response["limit"], server.SEARCH_LIMIT)
         self.assertEqual(response["unreadable_skipped"], 0)
+
+    def test_total_aliases_returned_when_truncated(self) -> None:
+        records = {
+            f"skill-{number}": _record(number)
+            for number in range(server.SEARCH_LIMIT + 1)
+        }
+
+        with patch.object(server, "_index", return_value=records), patch.object(
+            server, "_read_skill", side_effect=_body
+        ):
+            response = server.search_skills("searchable phrase")
+
+        self.assertTrue(response["truncated"])
+        self.assertEqual(response["total"], response["returned"])
 
     def test_stops_after_one_match_beyond_limit(self) -> None:
         records = {
