@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-08-21T16:40:54+00:00",
+ "generated_at": "2026-08-21T16:27:35+00:00",
  "counts": {
-  "guides": 1954,
+  "guides": 1939,
   "jurisdictions": 244,
   "accountant_reviewed": 171
  },
@@ -2464,19 +2464,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-company-tax",
-   "path": "skills/international/australia/au-company-tax.md",
-   "name": "au-company-tax",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-crypto-tax",
@@ -2488,19 +2476,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-deceased-estates",
-   "path": "skills/international/australia/au-deceased-estates.md",
-   "name": "au-deceased-estates",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-div7a",
@@ -2515,18 +2491,6 @@
    "last_updated": "2026-08-02"
   },
   {
-   "slug": "au-fbt-year",
-   "path": "skills/international/australia/au-fbt-year.md",
-   "name": "au-fbt-year",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
    "slug": "au-fbt",
    "path": "skills/international/australia/au-fbt.md",
    "name": "au-fbt",
@@ -2539,18 +2503,6 @@
    "last_updated": "2026-08-02"
   },
   {
-   "slug": "au-foreign-income",
-   "path": "skills/international/australia/au-foreign-income.md",
-   "name": "au-foreign-income",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
    "slug": "au-gst-bas",
    "path": "skills/international/australia/au-gst-bas.md",
    "name": "au-gst-bas",
@@ -2560,19 +2512,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-gst-property",
-   "path": "skills/international/australia/au-gst-property.md",
-   "name": "au-gst-property",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-08-11"
   },
   {
    "slug": "au-individual-return",
@@ -2584,19 +2524,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2024",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-land-tax",
-   "path": "skills/international/australia/au-land-tax.md",
-   "name": "au-land-tax",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-medicare-levy",
@@ -2607,8 +2535,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-08-20"
+   "tax_year": "2024",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-nonresident-cgt",
@@ -2620,31 +2548,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-not-for-profit",
-   "path": "skills/international/australia/au-not-for-profit.md",
-   "name": "au-not-for-profit",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-partnerships",
-   "path": "skills/international/australia/au-partnerships.md",
-   "name": "au-partnerships",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-payg-instalments",
@@ -2656,43 +2560,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-psi",
-   "path": "skills/international/australia/au-psi.md",
-   "name": "au-psi",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-rates-2026-27",
-   "path": "skills/international/australia/au-rates-2026-27.md",
-   "name": "au-rates-2026-27",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-rd-incentive",
-   "path": "skills/international/australia/au-rd-incentive.md",
-   "name": "au-rd-incentive",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-rental-property",
@@ -2704,31 +2572,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-small-business-cgt",
-   "path": "skills/international/australia/au-small-business-cgt.md",
-   "name": "au-small-business-cgt",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
-   "slug": "au-smsf",
-   "path": "skills/international/australia/au-smsf.md",
-   "name": "au-smsf",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "au-sole-trader-schedule",
@@ -2743,18 +2587,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "au-stamp-duty",
-   "path": "skills/international/australia/au-stamp-duty.md",
-   "name": "au-stamp-duty",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
-  },
-  {
    "slug": "au-super-guarantee",
    "path": "skills/international/australia/au-super-guarantee.md",
    "name": "au-super-guarantee",
@@ -2763,8 +2595,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "tax_year": "2024",
+   "last_updated": "2026-08-02"
   },
   {
    "slug": "au-tax-residency",
@@ -2777,18 +2609,6 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "au-trust-distributions",
-   "path": "skills/international/australia/au-trust-distributions.md",
-   "name": "au-trust-distributions",
-   "jurisdiction": "AU",
-   "category": "international",
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
   },
   {
    "slug": "australia-bookkeeping",
@@ -2812,7 +2632,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "australia-formation",
@@ -2824,7 +2644,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "australia-gst",
@@ -2836,7 +2656,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "australia-payroll",
@@ -2847,8 +2667,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "tax_year": "2025",
+   "last_updated": "2026-08-02"
   },
   {
    "slug": "australia-tax-optimization",
@@ -2860,7 +2680,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "australia-transfer-pricing",
@@ -2896,7 +2716,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": null,
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-06-12"
   },
   {
    "slug": "at-company-formation",
@@ -20068,7 +19888,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "bd-freelance-intake",
