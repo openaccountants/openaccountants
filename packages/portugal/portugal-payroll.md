@@ -7,8 +7,7 @@ tax_year: 2025
 last_updated: 2026-07-13
 reviewed_by: Mário Jorge da costa Vale
 review_status: current
-depends_on:
-  - payroll-workflow-base
+depends_on: - payroll-workflow-base
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

@@ -6,8 +6,7 @@ jurisdiction: TH
 tax_year: 2024
 last_updated: 2026-07-13
 review_status: pending_review
-depends_on:
-  - foundation
+depends_on: - foundation
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

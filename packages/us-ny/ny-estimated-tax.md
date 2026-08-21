@@ -6,8 +6,7 @@ jurisdiction: US-NY
 tax_year: 2025
 last_updated: 2026-07-13
 review_status: pending_review
-depends_on:
-  - us-tax-workflow-base
+depends_on: - us-tax-workflow-base
 category: state
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

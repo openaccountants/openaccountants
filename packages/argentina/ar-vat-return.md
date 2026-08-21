@@ -7,8 +7,7 @@ tax_year: 2025
 last_updated: 2026-07-13
 reviewed_by: Maria Valeria Benvenuti
 review_status: current
-depends_on:
-  - vat-workflow-base
+depends_on: - vat-workflow-base
 category: international
 tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
