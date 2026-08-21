@@ -412,26 +412,6 @@ cn-freelance-intake（本技能）
 *本输出在申报或据以行动之前必须经具备资质的专业人士复核。*
 *最新已验证技能：openaccountants.com | 错误反馈：github.com/openaccountants/openaccountants*
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## 一、决策树速查
-
-0. **居民判定** — 若非税务居民则拒绝；否则继续判定主体类型
-0. **路由 cn-iit** — 个体工商户 / 个人独资 → cn-iit（经营所得）
-
 <!-- openaccountants-cta-block -->
 
 ---

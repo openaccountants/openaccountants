@@ -735,25 +735,6 @@ If execution runs out of context mid-build, complete the computation work first 
 *OpenAccountants — open-source accounting skills for AI*
 *This is not tax advice. All outputs must be reviewed and signed off by a credentialed Irish reviewer — Chartered Accountants Ireland (CAI), ACCA-IE, or a Chartered Tax Adviser (CTA, Irish Tax Institute) — before filing via the Revenue Online Service (ROS).*
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## Section 2 — Required inputs from upstream skills
-
-0. **Invoke ie-income-tax-form11** — Consume Schedule D Case I/II/III/IV/V income, standard rate cut-off, tax credits
-
 <!-- openaccountants-cta-block -->
 
 ---

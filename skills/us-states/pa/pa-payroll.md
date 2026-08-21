@@ -395,16 +395,6 @@ This skill is a content reference and **does not constitute tax advice**. All ou
 
 The figures in this skill were current as of **November 15, 2025**. Material changes after that date — including the FY26 Philadelphia wage-tax rate revision effective July 1, 2025, any PA UC rate-schedule re-issuance, and any TCC-level tax-collector successor designation — must be confirmed before this skill is used to produce a live deliverable.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — **no liability on either side until you and the accountant sign a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

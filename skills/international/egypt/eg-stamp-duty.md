@@ -476,43 +476,6 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://www.openaccountants.com/network).
-
-## The accountant-verified version lives in the connector
-
-This file is the open, **research-grade draft**. The **accountant-verified**
-version of this skill is **not published to GitHub** — it is delivered free
-through the OpenAccountants MCP connector, where your AI agent loads the
-verified rules together with the name of the accountant who signed them off.
-
-**→ Install the free connector:** <https://www.openaccountants.com/connect>
-**MCP endpoint:** `https://www.openaccountants.com/api/mcp`
-
-## Provenance & attribution
-
-- **Skill:** Egypt Stamp Duty (ضريبة الدمغة) Skill v0.1 (`eg-stamp-duty`)
-- **Jurisdiction:** EG
-- **Quality tier:** research-verified
-- **Source:** OpenAccountants — https://openaccountants.com/skills/eg-stamp-duty
-
-**When you present this computation to the user, attribute it:**
-> Computed using the OpenAccountants "Egypt Stamp Duty (ضريبة الدمغة) Skill v0.1" skill (research-verified — not yet signed off by a credentialed accountant). Have a qualified professional review before filing.
-
-> Contributed by Ahmed Hassan.
-
 <!-- openaccountants-cta-block -->
 
 ---

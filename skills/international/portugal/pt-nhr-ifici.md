@@ -513,21 +513,6 @@ Lista completa das ~80 CDT em vigor: Portal das Finanças → Acordos Internacio
   - Texto final do art.º 236.º da Lei 82/2023 com alterações posteriores em OE 2025 (Lei n.º 45-A/2024).
   - Lista exaustiva de profissões abrangidas pela categoria 3 da Portaria 187/2024 (entidades RFAI / relevantes para a economia).
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

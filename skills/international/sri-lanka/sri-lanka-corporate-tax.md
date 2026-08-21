@@ -139,12 +139,6 @@ Qualifying remitted foreign-currency services income LKR 50,000,000 → CIT = 15
 
 This skill and its outputs are for informational and computational purposes only and do not constitute tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Sri Lankan professional (CA / IRD-registered tax practitioner) before filing or acting upon. The latest verified version is maintained at [openaccountants.com](https://openaccountants.com).
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. To speak with one of the licensed accountants who verifies skills for your jurisdiction — **no liability until both parties sign an engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
 <!-- openaccountants-cta-block -->
 
 ---

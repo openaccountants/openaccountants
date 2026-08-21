@@ -194,21 +194,6 @@ EHT and WSIB use different definitions of "remuneration". EHT includes taxable b
 
 **Verification status:** pending. This skill must be reviewed and signed off by a credentialed Ontario tax practitioner (CPA Ontario member in good standing with current Ontario payroll-tax experience) before reliance for client work. Coordinate with **canada-payroll** for federal CPP/EI/income-tax-withholding obligations on the same payroll base.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

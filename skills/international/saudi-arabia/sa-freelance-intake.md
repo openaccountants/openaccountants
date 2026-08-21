@@ -463,36 +463,6 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 *This output must be reviewed by a qualified professional before filing or acting upon.*
 *Latest verified skills: openaccountants.com | Report errors: github.com/openaccountants/openaccountants*
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## Section 2 — Workflow runbook (order of operations)
-
-0. **Opening** — One-line greeting + flow summary + reviewer reminder, then launch the refusal sweep.
-0. **Refusal sweep** — Single ask_user_input_v0 call with the 5 questions in Section 5.1.
-0. **Document dump** — Ask user to upload everything at once (CR, MISA license if foreign, ZATCA certificate, VAT certificate, bank statements, sales invoices, purchase invoices, GOSI subscriber list, prior Zakat/CIT returns, prior VAT returns).
-0. **Inference pass** — Parse every document; extract turnover, ownership %, employee count, prior payments, fiscal year basis.
-0. **Regime classification** — Apply Section 4 split logic using inferred ownership + sweep answers.
-0. **Confirmation** — Show inferred summary + proposed regime split + downstream-skill list; invite corrections.
-0. **Gap filling** — ask_user_input_v0 only for items documents cannot answer (Hijri vs Gregorian election, MISA license number, Nitaqat color band).
-0. **Handoff** — Produce Section 6 summary and invoke sa-return-assembly.
-
-## Section 1 — Quick reference: regime decision tree at a glance
-
-0. **Route to sa-zakat** — 100% Saudi/GCC natural persons → ZAKAT only
-
 <!-- openaccountants-cta-block -->
 
 ---

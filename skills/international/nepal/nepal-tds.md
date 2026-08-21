@@ -130,10 +130,6 @@ Research-grade, FY 2082/83. **Secondary firm publications — re-anchor to prima
 
 For informational and computational purposes only; not tax, legal, or financial advice. All outputs must be reviewed and signed off by a qualified Nepali professional (CA / registered tax practitioner) before filing or acting upon. Latest verified version at [openaccountants.com](https://openaccountants.com).
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. **No liability until both parties sign an engagement letter** — book a free 30-minute call: **→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
 <!-- openaccountants-cta-block -->
 
 ---

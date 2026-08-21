@@ -226,44 +226,6 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## 
-
-**Exempt customer documentation and return treatment**  _([https://comptroller.texas.gov/taxes/publications/96-122.php](https://comptroller.texas.gov/taxes/publications/96-122.php))_
-
-| Buyer / sale type | Tax treatment | Documentation to retain | Return treatment |
-| --- | --- | --- | --- |
-| Federal government | Exempt on qualifying purchases | Properly completed Form 01-339 or purchase voucher in the government entity name | Include tax-free sale in Total Texas Sales; exclude from Taxable Sales |
-| Texas state/local government and public schools | Exempt on qualifying purchases | Form 01-339 or government purchase voucher; public school/government identity should be clear | Include in Total Texas Sales; exclude from Taxable Sales |
-| Private school, college, university, church, religious/charitable nonprofit | Not automatically exempt; must have Comptroller exempt status | Properly completed Form 01-339 in the exempt organization name; authorized-agent purchases must identify the exempt organization | Include in Total Texas Sales; exclude from Taxable Sales only with support |
-| Federally recognized tribal council or tribal-council-owned business | Treat as exempt federal instrumentality; individual tribe members are not exempt merely by status | Form 01-339 or comparable exemption documentation identifying the tribal entity, not an individual member | Include in Total Texas Sales; exclude from Taxable Sales only for entity purchases |
-| Farm/ranch/agricultural production | Exempt only for qualifying items used directly in commercial agricultural/timber production | Form 01-924 with Ag/Timber Number for ag/timber exemption; do not use Form 01-339 for that exemption | Include in Total Texas Sales; exclude from Taxable Sales only for qualifying documented items |
-| Resale | Exempt when purchased for resale | Properly completed resale certificate (Form 01-339 resale side) and purchaser sales tax permit / resale details | Include in Total Texas Sales; exclude from Taxable Sales |
-| Shipped or delivered out of Texas | Not subject to Texas sales tax when destination is outside Texas; check destination-state nexus separately | Shipping records, bill of lading, delivery address, customer order, and invoice showing out-of-state destination | If included in Texas outlet gross receipts, include in Total Texas Sales and exclude from Taxable Sales as a destination deduction |
-
-**Form 01-114 exempt sales reporting**  _([https://comptroller.texas.gov/taxes/audit/manuals/fundamentals/ch5.php](https://comptroller.texas.gov/taxes/audit/manuals/fundamentals/ch5.php))_
-
-| Return concept | Treatment |
-| --- | --- |
-| Form 01-114 Item 1 / Total Texas Sales | Report gross taxable and nontaxable sales for the outlet/reporting period, excluding separately collected sales tax. Tax-free sales are not omitted from total sales. |
-| Form 01-114 Item 2 / Taxable Sales | Report only sales subject to Texas tax after supported deductions and exemptions. Exempt, resale, and supported out-of-state destination sales are excluded here. |
-| Deductions / exempt-sales reconciliation | There is no separate universal deduction line in the basic return; Comptroller audit reconciles deductions as Total Sales minus Taxable Sales. Keep certificates and shipping records by transaction. |
-| Tax-free sales holidays or statutory exempt items | Include only in Total Texas Sales, not Taxable Sales, unless Comptroller instructions for a special schedule say otherwise. |
-
 <!-- openaccountants-cta-block -->
 
 ---

@@ -578,21 +578,6 @@ The skill is reviewer-oriented and assumes downstream reconciliation and self-ch
 
 A taxpayer or employer relying on this skill without credentialed review proceeds at their own risk. The skill is current as of November 15, 2025 and is subject to change with new EDD publications, FTB rate adjustments, court decisions affecting AB5, and statutory amendments.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

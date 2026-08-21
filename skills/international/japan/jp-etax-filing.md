@@ -482,27 +482,6 @@ The 確定申告書等作成コーナー screen layout and form fields are maint
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## Section 4 -- Step-by-Step Filing Workflow
-
-0. **Prerequisite step: income tax calculations** — Use jp-income-tax skill to compute all figures before starting e-Tax filing
-0. **Prerequisite step: consumption tax calculations** — Use jp-consumption-tax skill to compute consumption tax figures if applicable
-0. **Submission Method Selection** — Select submission method (My Number Card + smartphone or IC card reader)
-
 <!-- openaccountants-cta-block -->
 
 ---

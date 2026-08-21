@@ -669,42 +669,6 @@ v1.0 (May 2026): Initial release. Modelled on mt-return-assembly and us-ca-retur
 
 OpenAccountants — open-source accounting skills for AI. This is not tax advice. All outputs must be reviewed and signed off by a qualified Indonesian tax consultant (Konsultan Pajak bersertifikat) before filing via Coretax DJP.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
-### 2.1 Individual return (SPT 1770) — inputs
-
-0. **Consume id-bookkeeping output** — General ledger trial balance; income/expense detail feeding Lampiran I
-0. **Consume id-income-tax output** — Progressive PPh OP computation feeds Form 1770 Induk Part B & C
-0. **Consume id-pph-final-umkm output** — UMKM Final 0.5% computation feeds Lampiran III-A
-0. **Consume id-payroll-pph21 output** — Employment income and withheld PPh21 feed Form 1770 Induk Part A; Lampiran I Bagian B
-0. **Consume indonesia-vat output** — VAT position cross-checked against revenue figures
-0. **Consume id-withholding output** — Bukti Potong PPh 22/23/4(2) as recipient and as withholder feed Lampiran I & III
-
-### 2.2 Corporate return (SPT 1771) — inputs
-
-0. **Consume id-bookkeeping output** — Full financial statements feed Lampiran V and Lampiran I
-0. **Consume id-corporate-tax output** — Fiscal profit and PPh Badan computation feed Form 1771 Induk Part B & C
-0. **Consume id-pph-final-umkm output** — UMKM Final regime data feeds Lampiran IV
-0. **Consume id-payroll-pph21 output** — Employee payroll cost classification feeds Lampiran II
-0. **Consume indonesia-vat output** — VAT input/output reconciled; PPN Masukan cost treatment cross-checked
-0. **Consume id-withholding output** — Withholding credits and SPT Masa obligations feed Lampiran III
-
-## Section 3 — Tax computation reconciliation
-
-0. **Run all cross-checks in sequence** — Execute Cross-checks 1 through 7 across upstream outputs, flagging failures in the reviewer brief without pausing
-
-## Section 14 — Output files
-
-0. **Produce final output files** — Generate master workbook, reviewer_brief.md, and taxpayer_action_list.md and place them in /mnt/user-data/outputs/
-
 <!-- openaccountants-cta-block -->
 
 ---

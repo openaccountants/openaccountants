@@ -510,36 +510,6 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 *This output must be reviewed by a qualified professional before filing or acting upon.*
 *Latest verified skills: openaccountants.com | Report errors: github.com/openaccountants/openaccountants*
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## Section 2 — Workflow runbook (order of operations)
-
-0. **Step 1 Opening** — One-line greeting + flow summary + reviewer reminder, then launch the refusal sweep.
-0. **Step 2 Refusal sweep** — Single ask_user_input_v0 call with the 5 questions in Section 5.1.
-0. **Step 3 Document dump** — Ask user to upload everything at once (bank statements, sales invoices, purchase invoices, prior Form 11 / CT1, ROS notices of assessment, P30 / PAYE summaries, payroll registers, VAT3 returns, RCT records if construction).
-0. **Step 4 Inference pass** — Parse every document; extract turnover, expenses, PAYE withheld, prior preliminary tax, VAT collected / reclaimed.
-0. **Step 5 Regime classification** — Apply Section 4 decision tree using inferred turnover + sweep answers.
-0. **Step 6 Confirmation** — Show inferred summary + proposed regime + downstream-skill list; invite corrections.
-0. **Step 7 Gap filling** — ask_user_input_v0 only for items documents cannot answer (domicile, PPSN / TRN, marital status / joint-assessment election, ROS access).
-0. **Step 8 Handoff** — Produce Section 6 summary and invoke ie-return-assembly.
-
-## Section 10 — Final handoff to ie-return-assembly
-
-0. **Invoke ie-return-assembly** — Once gap-filling and self-checks pass, output handoff message and invoke ie-return-assembly with the Section 6.2 package.
-
 <!-- openaccountants-cta-block -->
 
 ---

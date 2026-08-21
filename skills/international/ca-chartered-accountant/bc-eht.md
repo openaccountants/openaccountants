@@ -147,16 +147,6 @@ At $2M flat-band payroll the effective rate is 1.95%. Output of $39,000 matches 
 
 Companion skills — always read alongside canada-payroll (federal T4 and source-deduction context) and, where the employer has Ontario PEs as well, the Ontario EHT skill so the two regimes are not conflated.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

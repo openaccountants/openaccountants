@@ -361,21 +361,6 @@ Last updated: 2025-11-15. Next scheduled review: prior to 2026 tax-filing season
 - **us-quarterly-estimated-tax** — Federal Form 1040-ES; parallel quarterly cadence; do NOT include MCTMT in the federal estimate base.
 - **us-self-employed-retirement** — SEP-IRA / Solo 401(k) contributions reduce Schedule C net profit but do NOT reduce the §1402 net SE earnings base used for MCTMT (retirement contributions reduce AGI but not SE tax or MCTMT base).
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

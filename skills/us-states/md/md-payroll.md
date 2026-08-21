@@ -368,21 +368,6 @@ Before delivering a Maryland payroll computation or compliance memo to a reviewe
 
 - **Refusals list** — This skill will NOT: - Provide federal income tax, FICA, or FUTA computations (refer to us-federal-payroll). - Compute Maryland income tax for the EMPLOYEE's Form 502 (refer to a future md-individual-income-tax skill). - Cover Maryland Paid Family and Medical Leave Insurance (FAMLI) premiums until the contribution schedule is finalized in regulation. - Cover Maryland household employer special rules. - Cover multi-state UI Localization-of-Work analyses where the employee works in 3+ states (refer to a credentialed cross-border payroll specialist). - Substitute for credentialed reviewer sign-off under Circular 230 or under Maryland Board of Individual Tax Preparers oversight.  _(Skill scope definition)_
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

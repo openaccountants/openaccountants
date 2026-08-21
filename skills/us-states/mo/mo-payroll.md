@@ -540,21 +540,6 @@ Before signoff on a Missouri payroll engagement, the reviewer must confirm:
 
 *End of mo-payroll.md. Verified against Missouri Department of Revenue Form 4282 (2025), MO Division of Employment Security 2025 contribution rate notice, Kansas City Revenue Division 2025 employer guidance, and City of St. Louis Collector of Revenue Earnings Tax Division 2025 employer guidance.*
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

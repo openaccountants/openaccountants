@@ -824,32 +824,6 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — **no liability on either side until you and the accountant sign a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
-## Section 5 — Skill-loading order (canonical execution sequence)
-
-0. **Step 1** — us-tax-workflow-base (workflow scaffold)
-0. **Step 2** — us-sole-prop-bookkeeping (Schedule C classification)
-0. **Step 3** — us-schedule-c-and-se-computation (C, SE, 8829)
-0. **Step 4** — us-qbi-deduction (8995 / 8995-A)
-0. **Step 5** — us-self-employed-health-insurance (§162(l), iterative w/ PTC)
-0. **Step 6** — us-self-employed-retirement (SEP / Solo 401(k))
-0. **Step 7** — us-quarterly-estimated-tax (2210, 2026 1040-ES)
-0. **Step 8** — us-federal-return-assembly (1040, Sch 1/2/3, sign-off)
-0. **Step 9** — us-1099-nec-issuance (parallel; contractor batch)
-0. **Step 10** — nc-income-tax (D-400, Sch S, Sch A, D-400TC)
-0. **Step 11** — nc-bailey-settlement-retirement (Sch S Part B — if applicable)
-0. **Step 12** — nc-estimated-tax / NC-40 (2026) (next-year vouchers)
-0. **Step 13** — nc-return-assembly ← THIS SKILL
-
 <!-- openaccountants-cta-block -->
 
 ---

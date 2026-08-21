@@ -615,34 +615,6 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-## 
-
-- **Annual compensation limit for qualified plans (§401(a)(17))** — $360,000  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **401(k) catch-up contribution limit (age 50+)** — $8,000  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **401(k) enhanced catch-up contribution limit (age 60-63, SECURE 2.0)** — $11,250  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **401(k)/403(b) employee elective deferral limit (§402(g))** — $24,500  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **Defined-contribution annual additions limit (§415(c), employee + employer, excl. catch-up)** — $72,000  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits))_
-- **IRA catch-up contribution (age 50+)** — $1,100  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-- **IRA contribution limit (traditional + Roth combined)** — $7,500  _([IRS Notice 2025-67](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits))_
-- **SIMPLE plan catch-up contribution (age 50+)** — $4,000  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-- **SIMPLE plan enhanced catch-up contribution (age 60-63, SECURE 2.0)** — $5,250  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-- **SIMPLE IRA / SIMPLE 401(k) employee elective deferral limit** — $17,000  _([IRS Notice 2025-67](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500))_
-
 <!-- openaccountants-cta-block -->
 
 ---
