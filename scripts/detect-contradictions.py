@@ -488,6 +488,23 @@ CONCEPTS = {
         "social_security_rate": {"terms": [r"[Ss]ocial [Ss]ecurity", r"OASDI"], "kind": "percent",
                                  "exclude": r"Medicare|combined|15\.3"},
     },
+    "AU": {
+        "tax_free_threshold": {"terms": [r"tax-free threshold", r"tax free threshold"], "kind": "money",
+                               "min": 10000, "max": 25000},
+        "medicare_levy_rate": {"terms": [r"Medicare levy"], "kind": "percent",
+                               "exclude": r"surcharge|MLS|exemption|phase|reduction", "min": 1.5, "max": 2.5},
+        "gst_standard_rate": {"terms": [r"\bGST\b", r"goods and services tax"], "kind": "percent",
+                              "exclude": r"threshold|registration|turnover|input.taxed|zero", "min": 8, "max": 12},
+        "gst_registration_threshold": {"terms": [r"GST registration", r"registration threshold"], "kind": "money",
+                                       "exclude": r"non-profit|taxi|ride-share|deregist", "min": 50000, "max": 100000},
+        "super_guarantee_rate": {"terms": [r"[Ss]uper(?:annuation)? [Gg]uarantee", r"super guarantee", r"\bSG rate\b"],
+                                 "kind": "percent", "min": 9.0, "max": 13.0},
+        "company_tax_rate_base": {"terms": [r"base rate entity", r"small business company tax"], "kind": "percent",
+                                  "min": 24.0, "max": 28.0},
+        "company_tax_rate_standard": {"terms": [r"standard company tax", r"corporate tax rate"], "kind": "percent",
+                                      "exclude": r"base rate|small business", "min": 28.0, "max": 32.0},
+        "fbt_rate": {"terms": [r"fringe benefits tax", r"\bFBT rate\b"], "kind": "percent", "min": 45.0, "max": 50.0},
+    },
 }
 
 # ---------------------------------------------------------------------------
@@ -1086,7 +1103,15 @@ def main(argv=None):
                   f"({stats['files_scanned']} files, {stats['claims']} claims)")
         print(f"TOTAL: {total_high} HIGH, {total_med} MEDIUM -> {args.out}")
     else:
-        sys.stdout.write(report)
+        if hasattr(sys.stdout, "reconfigure"):
+            try:
+                sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+            except Exception:
+                pass
+        try:
+            sys.stdout.write(report)
+        except UnicodeEncodeError:
+            sys.stdout.buffer.write(report.encode("utf-8", errors="replace"))
     return 0
 
 

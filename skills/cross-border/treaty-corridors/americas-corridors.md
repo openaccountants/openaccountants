@@ -1,6 +1,6 @@
 ---
 name: americas-corridors
-description: "version: 1.0"
+description: "Cross-border bilateral tax treaty withholding tax (WHT) rates and rules across the Americas region. Covers key corridors including US-CA (US-Canada 5th Protocol), US-MX, US-BR (no treaty / domestic rules), BR-AR, CA-UK, MX-ES, BR-PT, CL-ES, and CO-ES for portfolio and substantial dividends, interest, royalties, and technical service fees."
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025

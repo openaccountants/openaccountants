@@ -290,6 +290,11 @@ class RealPackagesTreeTests(unittest.TestCase):
                     scanner.is_populated_rates(payload), year in canonical
                 )
 
+    def test_jurisdiction_trees_contains_au(self) -> None:
+        self.assertIn("AU", scanner.JURISDICTION_TREES)
+        self.assertIn("AU", scanner.JURISDICTION_CODES)
+        self.assertIn("AU", scanner.CONCEPTS)
+
 
 if __name__ == "__main__":
     unittest.main()

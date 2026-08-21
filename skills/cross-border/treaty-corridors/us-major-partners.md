@@ -1,6 +1,6 @@
 ---
 name: us-major-partners
-description: "version: 1.0"
+description: "United States bilateral income tax treaty withholding tax (WHT) rates (IRS Table 1) with 14 major trading partners including UK, Germany, France, Canada, Australia, Japan, India, Netherlands, Ireland, Switzerland, Singapore, Mexico, South Korea, and Israel. Covers FDAP income, portfolio vs direct dividends, interest, royalties, Limitation on Benefits (LOB), and Forms W-8BEN/W-8BEN-E."
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025

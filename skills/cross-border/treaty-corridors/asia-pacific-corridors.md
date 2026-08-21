@@ -1,6 +1,6 @@
 ---
 name: asia-pacific-corridors
-description: "version: 1.0"
+description: "Cross-border bilateral double taxation treaty (DTA) withholding tax rates and provisions across the Asia-Pacific region. Covers 11 major trade corridors including SG-AU, SG-IN, SG-JP, SG-HK, JP-AU, JP-IN, AU-NZ, IN-UAE, KR-JP, HK-UK, and MY-SG for dividends, interest, royalties, and fees for technical services (FTS)."
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025

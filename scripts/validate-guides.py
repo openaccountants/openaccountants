@@ -49,14 +49,7 @@ BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
 # Legacy guides that predate the description requirement. Grandfathered so CI
 # can be strict for everything new. Never add to this list — remove entries as
 # the files gain descriptions.
-LEGACY_MISSING_DESCRIPTION = {
-    "skills/cross-border/treaty-corridors/americas-corridors.md",
-    "skills/cross-border/treaty-corridors/asia-pacific-corridors.md",
-    "skills/cross-border/treaty-corridors/emerging-market-corridors.md",
-    "skills/cross-border/treaty-corridors/eu-intra-rates.md",
-    "skills/cross-border/treaty-corridors/uk-major-partners.md",
-    "skills/cross-border/treaty-corridors/us-major-partners.md",
-}
+LEGACY_MISSING_DESCRIPTION = set()
 
 # Dirs whose deliberate convention is "no jurisdiction key" — the content is
 # jurisdiction-agnostic (templates, intelligence engines, treaty corridor

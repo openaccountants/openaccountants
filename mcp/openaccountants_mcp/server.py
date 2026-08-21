@@ -34,8 +34,6 @@ MCP_STREAMABLE_HTTP_PATH  Path the Streamable-HTTP endpoint is mounted at.
                           reverse proxy that strips the upstream path prefix.
 """
 
-from __future__ import annotations
-
 import logging
 import os
 import re

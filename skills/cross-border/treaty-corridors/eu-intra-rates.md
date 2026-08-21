@@ -1,6 +1,6 @@
 ---
 name: eu-intra-rates
-description: "version: 1.0"
+description: "Intra-European Union bilateral tax treaty withholding tax rates and directive fallback rules. Covers 12 major intra-EU corridors (DE-FR, DE-NL, DE-IT, DE-ES, FR-IT, FR-ES, FR-BE, NL-BE, ES-PT, IT-MT, AT-DE, Nordic Convention) when the EU Parent-Subsidiary Directive (2011/96/EU) or Interest & Royalties Directive (2003/49/EC) exemptions do not apply."
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025

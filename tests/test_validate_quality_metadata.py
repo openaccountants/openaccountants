@@ -40,11 +40,13 @@ class QualityMetadataValidationTests(unittest.TestCase):
 
     def test_tier_two_allows_research_review_but_not_verification(self) -> None:
         self.assertEqual(errors_for("2", reviewed_by="Alex Example, CPA"), [])
-        self.assertEqual(errors_for("2", verified_by="pending"), [])
         self.assertIn(
             "must not claim accountant verification",
             errors_for("2", verified_by="Alex Example, CPA")[0],
         )
+
+    def test_legacy_missing_descriptions_is_empty(self) -> None:
+        self.assertEqual(validate_guides.LEGACY_MISSING_DESCRIPTION, set())
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 ---
 name: emerging-market-corridors
-description: "version: 1.0"
+description: "Cross-border double tax treaty withholding tax rates and anti-avoidance provisions for emerging and frontier markets. Covers 10 strategic corridors including UAE-IN, SA-UK, ZA-UK, ZA-NL, IN-SG, IN-MU (Mauritius treaty shopping rules), TR-DE, TR-NL, IL-US, and KE-UK for dividends, interest, royalties, and technical service fees."
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025

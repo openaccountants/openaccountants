@@ -1,6 +1,6 @@
 ---
 name: uk-major-partners
-description: "version: 1.0"
+description: "United Kingdom bilateral double tax convention withholding tax (WHT) rates with 14 major global trading partners including US, Germany, France, Ireland, Netherlands, Spain, Italy, Australia, Canada, India, Singapore, Japan, UAE, and Switzerland. Covers UK 0% domestic dividend WHT, 20% interest/royalty rates, and treaty relief mechanisms."
 version: 1.0
 jurisdiction: GLOBAL
 tax_year: 2025
