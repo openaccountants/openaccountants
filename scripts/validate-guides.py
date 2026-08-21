@@ -166,6 +166,23 @@ def packages_files():
     return sorted(set(paths))
 
 
+LEGACY_DEPENDS_ON = re.compile(r"^(depends_on):[ \t]+(- .+)$", re.MULTILINE)
+
+
+def normalize_legacy_depends_on(block):
+    """Fold the legacy single-line `depends_on: - x` into a real YAML list.
+
+    663 generated files (and their skills/ sources) predate the strict sweep and
+    carry the flat form, which strict YAML rejects ("sequence entries are not
+    allowed here"). The strictness is right for everything NEW; failing the
+    whole tree on a format that shipped for months is not. Normalizing exactly
+    this one known shape keeps the sweep strict for every other error while a
+    format migration cleans the corpus (tracked separately). Never widen this
+    to other keys - each legacy exception must earn its own entry.
+    """
+    return LEGACY_DEPENDS_ON.sub(lambda m: f"{m.group(1)}:\n  {m.group(2)}", block)
+
+
 def check_packages_frontmatter(bi, errors, only_files=None):
     """Strict-YAML sweep over the whole generated packages/** tree."""
     already_checked = set(bi.guide_files())
@@ -188,7 +205,7 @@ def check_packages_frontmatter(bi, errors, only_files=None):
             continue
         checked += 1
         try:
-            load_frontmatter(block)
+            load_frontmatter(normalize_legacy_depends_on(block))
         except FrontmatterError as exc:
             errors.append(f"{rel}: invalid YAML frontmatter: {exc}")
     print(f"checked {checked} generated package frontmatter block(s)")

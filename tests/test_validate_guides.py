@@ -44,7 +44,12 @@ Body.
 
 #: `depends_on: - x` is the shape the tolerant regex reader accepts and PyYAML
 #: rejects, and the one 681 generated files carried.
-MALFORMED = GOOD.replace("tier: 2\n", "tier: 2\ndepends_on: - workflow-base\n")
+# The flat `depends_on: - x` is now a GRANDFATHERED legacy form (663 files carry
+# it; normalize_legacy_depends_on folds it into a real list before the strict
+# parse). Malformed-for-testing therefore uses a shape with no legacy excuse:
+# an unquoted colon inside a scalar.
+MALFORMED = GOOD.replace("tier: 2\n", 'tier: 2\nqualifier: bad: colon soup\n')
+LEGACY_FLAT_DEPENDS = GOOD.replace("tier: 2\n", "tier: 2\ndepends_on: - workflow-base\n")
 
 #: A doc that opens on a horizontal rule, not frontmatter.
 PLAIN_DOC = "# Notes\n\n---\n\nSome prose.\n"
@@ -150,6 +155,14 @@ class GeneratedPackagesTreeTests(_ValidatorCase):
 
         self.assertEqual(len(errors), 1, errors)
         self.assertIn("invalid YAML frontmatter", errors[0])
+
+    def test_legacy_flat_depends_on_is_grandfathered(self) -> None:
+        # 663 existing files predate the strict sweep with this exact shape;
+        # failing the whole tree on shipped history helps nobody. Only this one
+        # key is folded — see normalize_legacy_depends_on.
+        self.assertEqual(
+            self._check_packages({"packages/albania/albania-income-tax.md": LEGACY_FLAT_DEPENDS}), []
+        )
 
     def test_valid_generated_frontmatter_passes(self) -> None:
         self.assertEqual(

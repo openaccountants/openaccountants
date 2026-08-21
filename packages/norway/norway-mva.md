@@ -2,7 +2,7 @@
 name: norway-mva
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Norway MVA return (MVA-melding) for any client. Trigger on phrases like "prepare MVA return", "Norwegian VAT", "MVA-melding", "merverdiavgift", or any request involving Norway VAT filing. Norway is NOT an EU member but IS in the EEA. There are NO intra-community supplies. All goods from EU are imports. ALWAYS read this skill before touching any Norway MVA work.
 version: 2.0
-jurisdiction: NO
+jurisdiction: "NO"
 tax_year: 2025
 last_updated: 2026-07-13
 review_status: pending_review

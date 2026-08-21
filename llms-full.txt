@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1939 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1954 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -337,18 +337,33 @@ https://www.openaccountants.com
 - armenia-tax-optimization | AM | tier 2 | reviewed_by -
 - armenia-vat | AM | tier 2 | reviewed_by -
 - au-capital-gains | AU | tier 2 | reviewed_by -
+- au-company-tax | AU | tier 2 | reviewed_by -
 - au-crypto-tax | AU | tier 2 | reviewed_by -
+- au-deceased-estates | AU | tier 2 | reviewed_by -
 - au-div7a | AU | tier 2 | reviewed_by -
+- au-fbt-year | AU | tier 2 | reviewed_by -
 - au-fbt | AU | tier 2 | reviewed_by -
+- au-foreign-income | AU | tier 2 | reviewed_by -
 - au-gst-bas | AU | tier 2 | reviewed_by -
+- au-gst-property | AU | tier 2 | reviewed_by -
 - au-individual-return | AU | tier 2 | reviewed_by -
+- au-land-tax | AU | tier 2 | reviewed_by -
 - au-medicare-levy | AU | tier 2 | reviewed_by -
 - au-nonresident-cgt | AU | tier 2 | reviewed_by -
+- au-not-for-profit | AU | tier 2 | reviewed_by -
+- au-partnerships | AU | tier 2 | reviewed_by -
 - au-payg-instalments | AU | tier 2 | reviewed_by -
+- au-psi | AU | tier 2 | reviewed_by -
+- au-rates-2026-27 | AU | tier 2 | reviewed_by -
+- au-rd-incentive | AU | tier 2 | reviewed_by -
 - au-rental-property | AU | tier 2 | reviewed_by -
+- au-small-business-cgt | AU | tier 2 | reviewed_by -
+- au-smsf | AU | tier 2 | reviewed_by -
 - au-sole-trader-schedule | AU | tier 2 | reviewed_by -
+- au-stamp-duty | AU | tier 2 | reviewed_by -
 - au-super-guarantee | AU | tier 2 | reviewed_by -
 - au-tax-residency | AU | tier 2 | reviewed_by -
+- au-trust-distributions | AU | tier 2 | reviewed_by -
 - australia-bookkeeping | AU | tier 2 | reviewed_by -
 - australia-financial-statements | AU | tier 2 | reviewed_by -
 - australia-formation | AU | tier 2 | reviewed_by -
