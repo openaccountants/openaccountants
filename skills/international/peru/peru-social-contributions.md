@@ -7,7 +7,8 @@ tax_year: 2026
 last_updated: 2026-07-13
 reviewed_by: Maria Clemencia Valverde Rios
 review_status: current
-depends_on: - social-contributions-workflow-base
+depends_on:
+  - social-contributions-workflow-base
 category: international
 tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

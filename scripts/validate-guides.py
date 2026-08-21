@@ -3,9 +3,9 @@
 Validate guide files, the hand-authored us-federal set, and index.json.
 
 Checks (ERROR = exit 1, WARN = printed summary only):
-  1. Every guide file's frontmatter block parses (a file that opens `---`
-     must close it). Files without any frontmatter are treated as docs, not
-     guides, and skipped (same rule scripts/build-index.py uses).
+  1. Every guide file's frontmatter block is valid, unambiguous YAML (a file
+     that opens `---` must close it). Files without any frontmatter are treated
+     as docs, not guides, and skipped (same rule scripts/build-index.py uses).
   2. `name` and `description` are present — ERROR if missing, except for the
      frozen LEGACY_MISSING_DESCRIPTION baseline below (grandfathered; the
      list must only ever shrink).
@@ -29,7 +29,8 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      packages/manifest.json). index.json is the single canonical inventory;
      the old manifests had no consumers and were removed so they can't drift.
 
-Stdlib only. Run: python3 scripts/validate-guides.py
+Install scripts/requirements-validation.txt, then run:
+python3 scripts/validate-guides.py
 """
 
 import importlib.util
@@ -39,6 +40,8 @@ import re
 import subprocess
 import sys
 import tempfile
+
+from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
@@ -120,6 +123,77 @@ def changed_files_vs_main():
         return None
 
 
+#: Bytes that may precede a frontmatter opener without being part of it:
+#: a UTF-8 byte-order mark, spaces, tabs, and line breaks.
+LEADING_JUNK = "\ufeff \t\r\n"
+
+
+def misplaced_frontmatter(bi, text):
+    """Whether a file carries a frontmatter block that does not start at byte 0.
+
+    ``extract_frontmatter`` requires ``---`` in the first bytes, so a UTF-8 BOM,
+    a leading blank line, or a leading space returns None while
+    ``text.startswith("---")`` is also false: the file was counted as a doc and
+    silently skipped the strict check. Only flagged when removing the leading
+    bytes turns the file into a parseable block, so a doc opening on a `---`
+    horizontal rule is not caught by mistake.
+    """
+    stripped = text.lstrip(LEADING_JUNK)
+    if stripped == text or not stripped.startswith("---"):
+        return False
+    return bi.extract_frontmatter(stripped) is not None
+
+
+def packages_files():
+    """Repo-relative paths of generated package guides, sorted.
+
+    build-index.py's GUIDE_TREES covers skills/ and the hand-authored
+    packages/us-federal only, so the rest of the generated tree was validated by
+    nothing, while sync-mcp.yml mirrors it to the MCP repo on every push to
+    main.
+    """
+    paths = []
+    base = os.path.join(REPO_ROOT, "packages")
+    for dirpath, dirnames, filenames in os.walk(base):
+        dirnames.sort()
+        for filename in sorted(filenames):
+            if not filename.endswith(".md"):
+                continue
+            if filename.lower().startswith("readme"):
+                continue
+            full = os.path.join(dirpath, filename)
+            paths.append(os.path.relpath(full, REPO_ROOT).replace(os.sep, "/"))
+    return sorted(set(paths))
+
+
+def check_packages_frontmatter(bi, errors, only_files=None):
+    """Strict-YAML sweep over the whole generated packages/** tree."""
+    already_checked = set(bi.guide_files())
+    checked = 0
+    for rel in packages_files():
+        if rel in already_checked:
+            continue  # packages/us-federal gets the full guide contract instead
+        if only_files is not None and rel not in only_files:
+            continue
+        with open(os.path.join(REPO_ROOT, rel), encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+        block = bi.extract_frontmatter(text)
+        if block is None:
+            if text.startswith("---"):
+                errors.append(f"{rel}: frontmatter opens with --- but never closes")
+            elif misplaced_frontmatter(bi, text):
+                errors.append(
+                    f"{rel}: frontmatter `---` must be the first bytes of the file"
+                )
+            continue
+        checked += 1
+        try:
+            load_frontmatter(block)
+        except FrontmatterError as exc:
+            errors.append(f"{rel}: invalid YAML frontmatter: {exc}")
+    print(f"checked {checked} generated package frontmatter block(s)")
+
+
 def check_guides(bi, errors, warnings, only_files=None):
     warn_counts = {"jurisdiction (jurisdiction-agnostic dirs)": 0}
     guides = skipped = 0
@@ -132,10 +206,21 @@ def check_guides(bi, errors, warnings, only_files=None):
         if block is None:
             if text.startswith("---"):
                 errors.append(f"{rel}: frontmatter opens with --- but never closes")
+            elif misplaced_frontmatter(bi, text):
+                errors.append(
+                    f"{rel}: frontmatter `---` must be the first bytes of the file "
+                    "(a byte-order mark, blank line, or leading whitespace before "
+                    "it makes the file count as a doc and skip validation entirely)"
+                )
             else:
                 skipped += 1  # doc file, not a guide
             continue
         guides += 1
+        try:
+            load_frontmatter(block)
+        except FrontmatterError as exc:
+            errors.append(f"{rel}: invalid YAML frontmatter: {exc}")
+            continue
         fields = bi.parse_known_keys(block)
         if not fields["name"]:
             errors.append(f"{rel}: missing required frontmatter key `name`")
@@ -288,12 +373,13 @@ def main():
     if changed_only:
         changed = changed_files_vs_main()
         if changed is not None:
-            only = {f for f in changed if f.startswith(("skills/", "packages/us-federal/"))}
+            only = {f for f in changed if f.startswith(("skills/", "packages/"))}
             print(f"changed-only mode: validating {len(only)} changed guide file(s)")
             if not only:
                 print("no guide files changed — validation passed")
                 return
     check_guides(bi, errors, warnings, only_files=only)
+    check_packages_frontmatter(bi, errors, only_files=only)
     check_us_federal_deletions(errors)
     if not no_index_check:
         check_index_fresh(errors)

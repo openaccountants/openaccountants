@@ -34,8 +34,11 @@ Output:
 """
 
 import os
+import re
 import shutil
 import sys
+
+from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -980,6 +983,56 @@ def build_all_canada_packages():
     return results
 
 
+# Mirrors scripts/build-index.py's extract_frontmatter so the generator judges
+# its output by the same rule its consumers do.
+_FM_END_RE = re.compile(r"^(---|\.\.\.)\s*$", re.MULTILINE)
+
+
+def _frontmatter_block(text):
+    """Return the raw frontmatter block, or None when the file has none."""
+    if not text.startswith("---"):
+        return None
+    first_nl = text.find("\n")
+    if first_nl == -1 or text[:first_nl].strip() != "---":
+        return None
+    end = _FM_END_RE.search(text[first_nl + 1:])
+    if not end:
+        return None
+    return text[first_nl + 1: first_nl + 1 + end.start()]
+
+
+def validate_generated_frontmatter():
+    """Fail closed on our own output.
+
+    Nothing downstream re-checks this tree before it ships: build-index.py
+    walks skills/ and the hand-authored packages/us-federal only, and
+    sync-mcp.yml mirrors packages/** to the MCP repo on every push to main. A
+    malformed block written here used to travel the whole way unchecked.
+    """
+    failures = []
+    for dirpath, dirnames, filenames in os.walk(PACKAGES_DIR):
+        dirnames.sort()
+        for filename in sorted(filenames):
+            if not filename.endswith(".md"):
+                continue
+            if filename.lower().startswith("readme"):
+                continue
+            path = os.path.join(dirpath, filename)
+            rel = os.path.relpath(path, REPO_ROOT).replace(os.sep, "/")
+            with open(path, encoding="utf-8", errors="replace") as fh:
+                text = fh.read()
+            block = _frontmatter_block(text)
+            if block is None:
+                if text.startswith("---"):
+                    failures.append(f"{rel}: frontmatter opens with --- but never closes")
+                continue
+            try:
+                load_frontmatter(block)
+            except FrontmatterError as exc:
+                failures.append(f"{rel}: invalid YAML frontmatter: {exc}")
+    return failures
+
+
 def main():
     us_only = "--us-only" in sys.argv
 
@@ -1211,6 +1264,17 @@ def main():
 
     print(f"\nTotal packages: {len(all_results)}")
     print("packages/manifest.json is deprecated and not written — index.json is the canonical inventory.")
+
+    failures = validate_generated_frontmatter()
+    if failures:
+        print(f"\nERROR: {len(failures)} generated file(s) have invalid frontmatter:",
+              file=sys.stderr)
+        for failure in failures[:20]:
+            print(f"  {failure}", file=sys.stderr)
+        if len(failures) > 20:
+            print(f"  ... and {len(failures) - 20} more", file=sys.stderr)
+        sys.exit(1)
+    print("generated frontmatter validated")
 
 
 if __name__ == "__main__":
