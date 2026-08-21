@@ -1,0 +1,23 @@
+# Pre-commit configuration for OpenAccountants repository
+repos:
+  - repo: local
+    hooks:
+      - id: openaccountants-validate
+        name: Validate OpenAccountants Guides & Quality Tiers
+        entry: python scripts/validate-guides.py --no-index-check
+        language: system
+        pass_filenames: false
+        files: ^skills/
+
+      - id: openaccountants-contradictions
+        name: Detect Cross-Guide Contradictions
+        entry: python scripts/detect-contradictions.py --all
+        language: system
+        pass_filenames: false
+        files: ^skills/
+
+      - id: openaccountants-tests
+        name: Run Core and Benchmark Tests
+        entry: python -m pytest tests/
+        language: system
+        pass_filenames: false
