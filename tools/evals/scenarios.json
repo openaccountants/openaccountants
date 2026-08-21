@@ -1,0 +1,88 @@
+[
+  {
+    "id": "us-bonus-depreciation-2025",
+    "jurisdiction": "US",
+    "category": "federal",
+    "skill_slug": "us-state-bonus-depreciation-conformity-matrix",
+    "query": "What is the federal bonus depreciation percentage for qualified property acquired and placed in service in 2025 under current US tax law?",
+    "expected": {
+      "numeric_facts": [
+        {"concept": "bonus_depreciation_rate", "value": 100.0, "unit": "percent", "tolerance": 0.0}
+      ],
+      "required_citations": ["OBBBA", "IRC §168(k)"],
+      "quality_tier": 2
+    }
+  },
+  {
+    "id": "au-super-guarantee-2025-26",
+    "jurisdiction": "AU",
+    "category": "international",
+    "skill_slug": "au-super-guarantee",
+    "query": "What is the mandatory Australian superannuation guarantee (SG) rate for the 2025-26 financial year starting 1 July 2025?",
+    "expected": {
+      "numeric_facts": [
+        {"concept": "super_guarantee_rate", "value": 12.0, "unit": "percent", "tolerance": 0.0}
+      ],
+      "required_citations": ["Superannuation Guarantee (Administration) Act 1992", "ATO"],
+      "quality_tier": 2
+    }
+  },
+  {
+    "id": "uk-badr-lifetime-limit",
+    "jurisdiction": "GB",
+    "category": "international",
+    "skill_slug": "uk-capital-gains-sa108",
+    "query": "What is the lifetime limit and tax rate for Business Asset Disposal Relief (BADR) in the United Kingdom?",
+    "expected": {
+      "numeric_facts": [
+        {"concept": "badr_lifetime_limit", "value": 1000000.0, "unit": "currency", "tolerance": 0.0},
+        {"concept": "badr_rate", "value": 10.0, "unit": "percent", "tolerance": 0.0}
+      ],
+      "required_citations": ["TCGA 1992", "HMRC"],
+      "quality_tier": 2
+    }
+  },
+  {
+    "id": "sg-gst-standard-rate",
+    "jurisdiction": "SG",
+    "category": "international",
+    "skill_slug": "singapore-gst",
+    "query": "What is the prevailing standard GST rate in Singapore?",
+    "expected": {
+      "numeric_facts": [
+        {"concept": "gst_standard_rate", "value": 9.0, "unit": "percent", "tolerance": 0.0}
+      ],
+      "required_citations": ["Goods and Services Tax Act", "IRAS"],
+      "quality_tier": 2
+    }
+  },
+  {
+    "id": "ca-federal-bpa-2025",
+    "jurisdiction": "CA",
+    "category": "international",
+    "skill_slug": "ca-fed-t1-return",
+    "query": "What is the maximum Canadian federal basic personal amount (BPA) for individuals with net income up to $177,882 in tax year 2025?",
+    "expected": {
+      "numeric_facts": [
+        {"concept": "basic_personal_amount", "value": 16129.0, "unit": "currency", "tolerance": 0.0}
+      ],
+      "required_citations": ["Income Tax Act", "CRA"],
+      "quality_tier": 2
+    }
+  },
+  {
+    "id": "de-solz-freigrenze",
+    "jurisdiction": "DE",
+    "category": "international",
+    "skill_slug": "germany-payroll",
+    "query": "What is the standard solidarity surcharge (Solidaritätszuschlag) exemption threshold (Freigrenze) for single individuals in Germany?",
+    "expected": {
+      "numeric_facts": [
+        {"concept": "solz_freigrenze", "value": 18130.0, "unit": "currency", "tolerance": 1000.0},
+        {"concept": "solz_rate", "value": 5.5, "unit": "percent", "tolerance": 0.0}
+      ],
+      "required_citations": ["SolzG", "EStG"],
+      "quality_tier": 2
+    }
+  }
+]

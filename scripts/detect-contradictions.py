@@ -69,6 +69,8 @@ JURISDICTION_TREES = {
     "UK": {"scan": ["skills/international/uk"], "shadow": "packages/uk"},
     "DE": {"scan": ["skills/international/germany"], "shadow": "packages/germany"},
     "AU": {"scan": ["skills/international/australia"], "shadow": "packages/australia"},
+    "CA": {"scan": ["skills/international/canada"], "shadow": "packages/canada"},
+    "SG": {"scan": ["skills/international/singapore"], "shadow": "packages/singapore"},
 }
 
 US_FEDERAL_RATES_DIR = os.path.join(REPO_ROOT, "packages", "us-federal")
@@ -196,7 +198,14 @@ def resolve_tax_year(explicit=None, rates_dir=US_FEDERAL_RATES_DIR):
 # A file only contributes claims when its frontmatter jurisdiction matches the
 # scan (keeps e.g. packages/germany/eu-vat-directive.md — other member states'
 # VAT rates — out of the DE pool).
-JURISDICTION_CODES = {"US": {"US"}, "UK": {"GB", "UK"}, "DE": {"DE"}, "AU": {"AU"}}
+JURISDICTION_CODES = {
+    "US": {"US"},
+    "UK": {"GB", "UK"},
+    "DE": {"DE"},
+    "AU": {"AU"},
+    "CA": {"CA", "CA-AB", "CA-BC", "CA-MB", "CA-NB", "CA-NL", "CA-NT", "CA-NS", "CA-NU", "CA-ON", "CA-PE", "CA-QC", "CA-SK", "CA-YT"},
+    "SG": {"SG"},
+}
 
 # Values are only read within this many characters of a concept-term match, so
 # an unrelated number elsewhere on a long line can't attach to the concept.
@@ -504,6 +513,45 @@ CONCEPTS = {
         "company_tax_rate_standard": {"terms": [r"standard company tax", r"corporate tax rate"], "kind": "percent",
                                       "exclude": r"base rate|small business", "min": 28.0, "max": 32.0},
         "fbt_rate": {"terms": [r"fringe benefits tax", r"\bFBT rate\b"], "kind": "percent", "min": 45.0, "max": 50.0},
+    },
+    "CA": {
+        "basic_personal_amount": {"terms": [r"basic personal amount", r"\bBPA\b"], "kind": "money",
+                                  "exclude": r"reduction|≥|\$253|phase|minimum|credit:|assum",
+                                  "min": 12000, "max": 18000},
+        "gst_federal_rate": {"terms": [r"\bGST\b", r"goods and services tax"], "kind": "percent",
+                             "exclude": r"HST|QST|PST|threshold|registration|input tax credit|ITC|quick method|harmonized",
+                             "min": 4, "max": 6},
+        "cpp_max_earnings": {"terms": [r"maximum pensionable earnings", r"\bYMPE\b", r"first ceiling"],
+                             "kind": "money", "exclude": r"contributory|exemption",
+                             "min": 60000, "max": 78000},
+        "cpp_rate": {"terms": [r"\bCPP rate\b", r"Canada Pension Plan"], "kind": "percent",
+                     "exclude": r"CPP2|second|self-employed combined|11\.9|QPP", "min": 5.0, "max": 6.5},
+        "ei_max_insurable": {"terms": [r"maximum insurable earnings", r"\bMIE\b"], "kind": "money",
+                             "min": 58000, "max": 72000},
+        "ei_rate": {"terms": [r"\bEI rate\b", r"employment insurance rate"], "kind": "percent",
+                    "exclude": r"employer|1\.4x|2\.", "min": 1.4, "max": 2.0},
+        "small_business_rate": {"terms": [r"small business deduction", r"small business rate", r"\bSBD\b"],
+                                "kind": "percent", "min": 8.0, "max": 10.0},
+        "general_corporate_rate": {"terms": [r"general corporate (?:tax )?rate", r"net federal corporate rate"],
+                                   "kind": "percent", "exclude": r"small business|SBD|provincial|combined",
+                                   "min": 14.0, "max": 16.0},
+    },
+    "SG": {
+        "gst_standard_rate": {"terms": [r"\bGST\b", r"goods and services tax"], "kind": "percent",
+                              "exclude": r"threshold|registration|zero|exempt|8%", "min": 8.5, "max": 10.0},
+        "corporate_tax_rate": {"terms": [r"corporate (?:income )?tax rate", r"headline corporate tax"],
+                               "kind": "percent", "exclude": r"partial exemption|effective|concession",
+                               "min": 16.0, "max": 18.0},
+        "tax_free_threshold": {"terms": [r"first \$20,000", r"first S\$20,000", r"tax-free threshold"],
+                               "kind": "money", "min": 15000, "max": 25000},
+        "cpf_ordinary_wage_ceiling": {"terms": [r"ordinary wage ceiling", r"\bOW ceiling\b"], "kind": "money",
+                                      "min": 6000, "max": 9000},
+        "cpf_employee_rate": {"terms": [r"employee (?:CPF )?contribution", r"employee share"],
+                              "require": r"CPF|Central Provident Fund", "kind": "percent",
+                              "exclude": r"55|60|65|70|above", "min": 18.0, "max": 22.0},
+        "cpf_employer_rate": {"terms": [r"employer (?:CPF )?contribution", r"employer share"],
+                              "require": r"CPF|Central Provident Fund", "kind": "percent",
+                              "exclude": r"55|60|65|70|above", "min": 15.0, "max": 19.0},
     },
 }
 
