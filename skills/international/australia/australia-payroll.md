@@ -91,14 +91,14 @@ Australia does not have a separate employee social security contribution. The Me
 **Employee-Side Deductions Summary**
 
 | Deduction | Rate | Ceiling | Notes |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | PAYG income tax | Progressive (see above) | No ceiling | Includes Medicare levy in tax tables |
 | STSL repayment | 1%--10% (income-based) | No ceiling | Only if employee has HELP/STSL debt |
 | Salary sacrifice (super) | Voluntary | Concessional cap $32,500/year (2026-27) | Pre-tax; reduces PAYG withholding base |
 
 There is no employee-paid social insurance premium equivalent to NIC (UK) or social security tax (US).
 
-|--|
+|---|
 | SG rate | 12% of qualifying earnings |
 | Maximum contribution base | $270,830 per year (ANNUAL, year-to-date basis; quarterly base abolished for earnings paid from 1 Jul 2026) |
 | Minimum earnings threshold | Abolished (no $450/month threshold from 1 Jul 2022) |
