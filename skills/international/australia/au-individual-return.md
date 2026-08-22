@@ -1,12 +1,14 @@
 ---
 name: au-individual-return
 description: Use this skill whenever asked about Australian individual income tax for sole traders. Trigger on phrases like "how much tax do I pay in Australia", "Australian tax return", "sole trader tax", "ABN tax", "Medicare levy", "LITO", "PAYG", "tax brackets Australia", "BAS", "instant asset write-off", "home office deduction", "HELP repayment", "HECS debt", "small business income tax offset", "motor vehicle deduction", or any question about filing or computing income tax for an Australian sole trader. Covers 2024-25 Stage 3 tax rates, Medicare levy and surcharge, LITO, business income computation, allowable deductions, depreciation, instant asset write-off, small business income tax offset, HELP/HECS repayments, and final tax computation. ALWAYS read this skill before touching any Australian income tax work.
-version: 2.0
+version: 2.1
 jurisdiction: AU
 tax_year: 2024
-last_updated: 2026-07-13
+tax_year_notes: "2024-25 computation base; HELP repayment tables updated for 2025-26 and 2026-27 (marginal system)"
+last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - income-tax-workflow-base
+depends_on:
+  - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -31,7 +33,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing deadline | 31 October 2025 (self-lodged); May 2026 (tax agent) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending -- Australian CPA/CA sign-off required |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ### Tax Rates -- Resident Individual (2024-25, Stage 3) [T1]
 
@@ -45,6 +47,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | 135,001 -- 190,000 | 37% | Max $20,350 |
 | 190,001+ | 45% |  |
 
+> **Rates apply to 2024-25 AND 2025-26 (identical).** From **1 July 2026** the 16% rate drops to **15%** (2026-27: tax on $45,000 = $4,020; on $135,000 = $31,020; on $190,000 = $51,370), and from **1 July 2027** to **14%**. _(ATO QC 73320, updated 13 Aug 2026; Treasury Laws Amendment (More Cost of Living Relief) Act 2025.)_
+
 ### Medicare Levy [T1]
 
 **Medicare Levy [T1]**
@@ -52,9 +56,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Item | Value |
 | --- | --- |
 | Rate | 2% of taxable income |
-| Low-income threshold (single) | $27,222 (no levy below; phase-in $27,223-$34,027) |
-| Low-income threshold (family) | $45,907 + $4,216 per dependent child |
-| Surcharge (no private hospital cover) | Additional 1%-1.5% if income over $93,000 (single) |
+| Low-income threshold (single, 2025-26) | $28,011 (no levy below; phase-in $28,012-$35,013). 2024-25: $27,222 / $34,027 |
+| Low-income threshold (family, 2025-26) | $47,238 + $4,338 per dependent child. 2024-25: $45,907 + $4,216 |
+| Surcharge (no private hospital cover) | Additional 1%-1.5% if income for MLS purposes over $101,000 single / $202,000 family (2025-26; 2024-25: $97,000 / $194,000) |
 
 ### Low Income Tax Offset (LITO) [T1]
 
@@ -62,9 +66,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Taxable Income (AUD) | LITO |
 | --- | --- |
-| Up to $45,000 | $700 |
-| $45,001 -- $66,667 | Reduces by 5c per $1 over $45,000 |
+| Up to $37,500 | $700 |
+| $37,501 -- $45,000 | $700 minus 5c per $1 over $37,500 |
+| $45,001 -- $66,667 | $325 minus 1.5c per $1 over $45,000 |
 | $66,668+ | $0 |
+
+_(ATO "Low income tax offset"; unchanged for 2024-25 through 2026-27.)_
 
 ### Small Business Income Tax Offset (SBITO) [T1]
 
@@ -82,8 +89,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Rate/threshold | Claim handling |
 | --- | --- | --- |
-| Home office -- fixed rate method | 70 cents per hour (2024-25 and 2025-26) | T2 -- method choice, hours, and records/substantiation required |
-| Motor vehicle -- cents per km method | 88 cents per km (max 5,000 km) | T2 -- method choice and business-km support required |
+| Home office -- fixed rate method | 70 cents per hour (2024-25 through 2026-27, PCG 2023/1) | T2 -- method choice, hours, and records/substantiation required |
+| Motor vehicle -- cents per km method | 88c/km for 2024-25 and 2025-26; **91c/km for 2026-27** (max 5,000 km) | T2 -- method choice and business-km support required |
 | Instant asset write-off (small business) | $20,000 threshold (assets under $20,000 immediately deductible) | T1 if small-business eligibility and asset cost are clear; otherwise escalate |
 | Superannuation (deductible personal contribution) | Up to $30,000 concessional cap | T1 rate-cap lookup; notice of intent must be lodged before claiming |
 
@@ -148,8 +155,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Pattern | Deduction Category | Tier | Treatment |
 | --- | --- | --- | --- |
 | RENT, OFFICE RENT, SERVICED OFFICE | Business expense -- occupancy | T1 | Fully deductible if dedicated business premises |
-| HOME OFFICE, WORK FROM HOME | Home office deduction (D5) | T2 | Fixed rate 70c/hr (2024-25 and 2025-26) OR actual cost method. See Tier 2. |
-| PETROL, FUEL, CALTEX, BP, SHELL, AMPOL | Motor vehicle (D1) | T2 | Cents/km (88c, max 5,000 km) OR logbook method |
+| HOME OFFICE, WORK FROM HOME | Home office deduction (D5) | T2 | Fixed rate 70c/hr (2024-25 through 2026-27) OR actual cost method. See Tier 2. |
+| PETROL, FUEL, CALTEX, BP, SHELL, AMPOL | Motor vehicle (D1) | T2 | Cents/km (88c 2024-25/2025-26; 91c 2026-27; max 5,000 km) OR logbook method |
 | CAR INSURANCE, REGO, SERVICE | Motor vehicle | T2 | Only under logbook method (not cents/km) |
 | TOLL, CITYLINK, LINKT | Motor vehicle or travel | T1 | Business travel tolls: deductible under either method |
 | FLIGHT, QANTAS, VIRGIN, JETSTAR | Travel (D2) | T1 | Fully deductible if business travel |
@@ -259,7 +266,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Diminishing value** — Base value x (days held / 365) x (200% / effective life)  _(ITAA 1997 Div 40)_
 - **Prime cost (straight line)** — Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
 - **Small business entity simplified depreciation** — Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
-- **Instant asset write-off** — Assets costing less than $20,000 (2024-25) can be immediately deducted by small business entities. This threshold may change each year -- confirm for current year.  _(ITAA 1997 Div 40)_
+- **Instant asset write-off** — Assets costing less than $20,000 can be immediately deducted by small business entities (aggregated turnover < $10m). The $20,000 limit is law for 2024-25 and 2025-26 (extended by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025), and the 2026-27 Budget announced it becomes **permanent from 1 July 2026** — confirm enactment before relying on it for 2026-27 purchases.  _(ITAA 1997 Div 328; ATO QC 103578)_
 
 ### 5.4 Superannuation [T1]
 
@@ -269,16 +276,26 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **5.5 HELP/HECS Repayment [T1]**
 
-| Repayment Income (2024-25) | Rate |
-| --- | --- |
-| Below $54,435 | 0% |
-| $54,435 -- $62,850 | 1% |
-| $62,851 -- $66,620 | 2% |
-| $66,621 -- $70,618 | 2.5% |
-| ... (progressive to) | ... |
-| $151,201+ | 10% |
+> **Regime change from 1 July 2025.** Compulsory repayments moved from a percentage of TOTAL repayment income to a **marginal system** — the repayment is calculated only on income above the minimum threshold. The old sliding-scale table (1%–10% from $54,435) applies to 2024-25 and earlier returns only. _(Student loan reforms passed November 2025; ATO QC 59241)_
 
-- **Repayment income** — Repayment income = taxable income + reportable fringe benefits + net investment losses + reportable super. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003)_
+| Repayment Income (2025-26) | Repayment on this income |
+| --- | --- |
+| $0 – $67,000 | Nil |
+| $67,001 – $125,000 | 15c for each $1 over $67,000 |
+| $125,001 – $179,285 | $8,700 plus 17c for each $1 over $125,000 |
+| $179,286 and over | 10% of TOTAL repayment income |
+
+| Repayment Income (2026-27) | Repayment on this income |
+| --- | --- |
+| $0 – $69,528 | Nil |
+| $69,529 – $129,717 | 15c for each $1 over $69,528 |
+| $129,718 – $186,050 | $9,028 plus 17c for each $1 over $129,717 |
+| $186,051 and over | 10% of TOTAL repayment income |
+
+- **Repayment income** — Repayment income = taxable income (excluding assessable FHSS released amounts) + reportable fringe benefits + total net investment loss + reportable super contributions + exempt foreign employment income. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003; ATO QC 16176)_
+- **Worked check (2025-26)** — repayment income $80,000 → 15% × ($80,000 − $67,000) = **$1,950** (old system would have been $2,800 at 3.5%).
+- **One-off 20% debt reduction** — HELP/study loan balances outstanding at 1 June 2025 were automatically reduced by 20% (applied by the ATO from late 2025, processing completed by mid-2026; no action required). Confirm the client's current balance from ATO online services rather than an old statement.  _(studyassist.gov.au; ATO "Study and training loans – what's new", 30 June 2026)_
+- **Indexation** — study loan indexation is now the LOWER of CPI and Wage Price Index (backdated to 1 June 2023 by the Universities Accord (Student Support and Other Measures) Act 2024).
 
 ### 5.6 Filing and Penalties [T1]
 
@@ -288,10 +305,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Self-lodge deadline | 31 October 2025 |
 | Tax agent deadline | Varies (typically March-May 2026) |
-| Failure to lodge on time | $313 per 28-day period, up to 5 periods ($1,565 max) |
+| Failure to lodge on time | 1 penalty unit per 28-day period, up to 5 periods. Penalty unit: $364 from 1 Jul 2026; $330 for 7 Nov 2024 – 30 Jun 2026 (max $1,820 / $1,650) |
 | Shortfall penalty (reasonable care not taken) | 25% of shortfall |
 | Shortfall penalty (recklessness) | 50% of shortfall |
-| General Interest Charge (GIC) | Varies quarterly; 2025 annual rates include 11.42%, 11.17%, 10.78%, and 10.61%; calculated daily and compounded |
+| General Interest Charge (GIC) | Updated quarterly (TAA 1953 s 8AAD): 2025-26 quarters were 10.78%, 10.61%, 10.65%, 10.96%; Jul–Sep 2026 is 11.43%; calculated daily and compounded. **GIC and SIC incurred on or after 1 July 2025 are NOT tax-deductible** (Treasury Laws Amendment (Tax Incentives and Integrity) Act 2025 Sch 2); remitted post-1-July-2025 GIC is not assessable, but remitted pre-1-July-2025 GIC that was deducted IS assessable |
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
@@ -301,7 +318,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Method | What It Covers | Additional Claims |
 | --- | --- | --- |
-| Fixed rate (70c/hr, 2024-25 and 2025-26) | Electricity, gas, phone, internet, stationery, computer consumables | Separately claim: technology depreciation (computer, monitor), occupancy costs (if dedicated room), cleaning |
+| Fixed rate (70c/hr, 2024-25 through 2026-27) | Electricity, gas, phone, internet, stationery, computer consumables | Separately claim: technology depreciation (computer, monitor), occupancy costs (if dedicated room), cleaning |
 | Actual cost | Each expense claimed individually at actual business % | No fixed rate component |
 
 - **Home office record keeping and occupancy expenses** — Under either method: must have records of hours worked from home. Fixed rate: can use any reasonable record. Actual: need receipts and usage records. Occupancy expenses (rent, mortgage interest, rates, home insurance, land tax) are ONLY deductible if you have a dedicated area set aside exclusively as a place of business. These are separate from running expenses.
@@ -314,7 +331,7 @@ Confirm method, hours, and whether occupancy expenses apply.
 
 | Method | How It Works | Records |
 | --- | --- | --- |
-| Cents per km (88c) | Max 5,000 business km. No receipts needed. | Reasonable estimate of business km |
+| Cents per km (88c in 2024-25/2025-26; 91c in 2026-27) | Max 5,000 business km. No receipts needed. | Reasonable estimate of business km |
 | Logbook | Business % of actual costs including depreciation | 12-week continuous logbook, valid for 5 years |
 
 - **Cannot claim both methods** — Cannot claim both. Parking, tolls, and roadside assistance are separate and deductible under either method for business trips.
@@ -477,6 +494,31 @@ ONBOARDING QUESTIONS -- AUSTRALIA INDIVIDUAL RETURN
 | GST credits (ITC) recovered | NOT an expense. Report net of GST. |
 | Not registered for GST | GST paid on purchases IS part of the cost. Report gross. |
 | GST on private portion | Non-claimable GST is part of cost. |
+
+## Section 11 -- When to load another guide
+
+This guide computes the individual return. Load the guide named here when the client's facts cross into its territory; do not improvise the answer from this file.
+
+| Client fact | Load |
+| --- | --- |
+| Runs the business through a company | au-company-tax (BRE rate, franking, losses) |
+| Company has lent money to a shareholder, or there is a debit loan account | au-div7a |
+| Income comes through a family or unit trust | au-trust-distributions |
+| Income is mainly a reward for one person's skills, billed through an entity | au-psi |
+| Selling a business or business premises | au-small-business-cgt |
+| Any other CGT event | au-capital-gains |
+| Rental property | au-rental-property |
+| Crypto disposals | au-crypto-tax |
+| Foreign income, foreign tax paid, or a foreign pension | au-foreign-income |
+| Left or arrived in Australia during the year | au-tax-residency, leaving-australia-tax-residency-cgt |
+| Sold Australian property as a non-resident | au-nonresident-cgt |
+| Employer with fringe benefits | au-fbt |
+| Employer paying wages | australia-payroll, au-super-guarantee |
+| GST registered | australia-gst, au-gst-bas |
+| Not-for-profit or charity | au-not-for-profit |
+| Superannuation caps and contributions | au-super-guarantee |
+| Medicare levy, surcharge or PHI rebate | au-medicare-levy |
+| Next-year instalments | au-payg-instalments |
 
 ## PROHIBITIONS
 

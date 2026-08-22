@@ -1,12 +1,13 @@
 ---
 name: australia-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements for an Australian company. Trigger on phrases like "ASIC financial report", "AASB", "Australian Accounting Standards", "general purpose financial statements", "special purpose financial statements", "large proprietary company", "small proprietary company", "directors' report Australia", "audit Australia", "Form 388", "Corporations Act 2001 reporting", or any question about preparing and filing statutory accounts under the Corporations Act 2001. Covers AASB frameworks, size thresholds (large/small proprietary), required statements, formats, notes, lodgement deadlines, and audit requirements.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - financial-statements-workflow-base
+depends_on:
+  - financial-statements-workflow-base
 category: financial-statements
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -14,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Financial Statements
 
-## Australia Financial Statements Skill v1.0
+## Australia Financial Statements Skill v1.1
 
 ## Section 1 -- Quick Reference
 
@@ -237,7 +238,7 @@ Total equity
 | Documents lodged | Financial report + directors' report + auditor's report |
 | Fee | No filing fee for Form 388 |
 | Late lodgement | Civil penalty provisions; ASIC may impose administrative penalties |
-| Annual review fee | Separate from lodgement (AUD 310 for proprietary companies, 2024) |
+| Annual review fee | Separate from lodgement (AUD 342 for proprietary companies from 1 July 2026; 2025-26: AUD 329) |
 | Extension | Possible by application to ASIC under s.340 |
 
 ### Small proprietary companies — exceptions requiring lodgement

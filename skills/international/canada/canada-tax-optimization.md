@@ -7,7 +7,8 @@ tax_year: 2026
 last_updated: 2026-07-13
 reviewed_by: Edgar Lautsyus
 review_status: current
-depends_on: - bookkeeping-workflow-base
+depends_on:
+  - bookkeeping-workflow-base
 category: tax-optimization
 tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

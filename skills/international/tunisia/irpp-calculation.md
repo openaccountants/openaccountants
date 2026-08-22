@@ -1,6 +1,6 @@
 ---
 name: irpp-calculation
-description: IRPP calculation in Tunisia: how I do it
+description: "IRPP calculation in Tunisia: how I do it"
 jurisdiction: TN
 tax_year: 2025
 last_updated: 2026-08-10

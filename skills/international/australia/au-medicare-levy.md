@@ -1,10 +1,11 @@
 ---
 name: au-medicare-levy
 description: Use this skill whenever asked about the Australian Medicare Levy, Medicare Levy Surcharge (MLS), low-income reduction thresholds, family thresholds, surcharge tiers, private health insurance (PHI) rebate interaction, or Medicare levy exemptions. Trigger on phrases like "Medicare levy", "Medicare surcharge", "MLS", "do I pay Medicare levy", "low income Medicare", "Medicare levy reduction", "Medicare levy exemption", "private health insurance rebate", "PHI rebate", "M1", "M2", or any question about Medicare-related levies on an Australian tax return. ALWAYS read this skill before touching any Medicare levy work.
-version: 2.0
+version: 2.1
 jurisdiction: AU
-tax_year: 2024
-last_updated: 2026-07-13
+tax_year: 2025
+tax_year_notes: "2025-26 (current lodgment year); 2024-25 tables retained for prior-year work"
+last_updated: 2026-08-20
 review_status: pending_review
 category: international
 tier: 2
@@ -13,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Medicare Levy
 
-## Australia Medicare Levy and Medicare Levy Surcharge Skill v2.0
+## Australia Medicare Levy and Medicare Levy Surcharge Skill v2.1
 
 ## Section 1 -- Quick reference
 
@@ -28,17 +29,28 @@ Read this whole section before computing anything.
 | Primary Legislation | Medicare Levy Act 1986 (MLA 1986); A New Tax System (Medicare Levy Surcharge -- Fringe Benefits) Act 1999 |
 | Supporting Legislation | ITAA 1997 Div 61 (Medicare levy); ITAA 1997 s 8C-8G (MLS); Health Insurance Act 1973; Private Health Insurance Act 2007 |
 | Tax Authority | Australian Taxation Office (ATO) |
-| Tax Year | 2024-25 (1 July 2024 -- 30 June 2025) |
+| Tax Year | 2025-26 (1 July 2025 -- 30 June 2026, current lodgment year); 2024-25 tables retained below |
 | Standard Medicare Levy Rate | 2% of taxable income |
 | MLS Rates | 1.0% / 1.25% / 1.5% (income-dependent, for those without appropriate PHI) |
 | Return Items | Item M1 (Medicare levy reduction or exemption); Item M2 (Medicare levy surcharge) |
 | Currency | AUD only |
 | Contributor | Open Accountants |
 | Validation Date | April 2026 |
-| Skill Version | 2.0 |
+| Skill Version | 2.1 |
 | Confidence Coverage | Tier 1: standard levy, low-income reduction, surcharge tiers, family thresholds. Tier 2: half-year exemptions, part-year residents, PHI rebate tier selection. Tier 3: Norfolk Island transitional, diplomatic exemptions, prescribed overseas forces. |
 
-**Low-income reduction thresholds (2024-25)**
+**Low-income reduction thresholds (2025-26)**
+
+| Category | Lower Threshold (no levy) | Upper Threshold (full levy) | Shade-in Rate |
+| --- | --- | --- | --- |
+| Single (general) | $28,011 | $35,013 | 10 cents per $1 |
+| Single (SAPTO-entitled) | $44,268 | $55,335 | 10 cents per $1 |
+| Family (general) | $47,238 (+ $4,338 per child) | $59,047 | See Section 5 |
+| Family (SAPTO-entitled) | $61,623 (+ $4,338 per child) | $77,028 | See Section 5 |
+
+_(ATO QC 27031, updated for 2025-26.)_
+
+**Low-income reduction thresholds (2024-25, prior year)**
 
 | Category | Lower Threshold (no levy) | Upper Threshold (full levy) | Shade-in Rate |
 | --- | --- | --- | --- |
@@ -47,7 +59,25 @@ Read this whole section before computing anything.
 | Family (general) | $45,907 (+ $4,216 per child) | N/A | See Section 5 |
 | Family (SAPTO-entitled) | $63,486 (+ $4,216 per child) | N/A | See Section 5 |
 
-**MLS thresholds (2024-25) -- singles**
+**MLS thresholds (2025-26) -- singles**
+
+| Tier | Income for MLS Purposes | MLS Rate |
+| --- | --- | --- |
+| Base | $101,000 or less | 0.0% |
+| Tier 1 | $101,001 -- $118,000 | 1.0% |
+| Tier 2 | $118,001 -- $158,000 | 1.25% |
+| Tier 3 | $158,001+ | 1.5% |
+
+**MLS thresholds (2025-26) -- families**
+
+| Tier | Family Income for MLS | MLS Rate |
+| --- | --- | --- |
+| Base | $202,000 or less | 0.0% |
+| Tier 1 | $202,001 -- $236,000 | 1.0% |
+| Tier 2 | $236,001 -- $316,000 | 1.25% |
+| Tier 3 | $316,001+ | 1.5% |
+
+**MLS thresholds (2024-25, prior year) -- singles**
 
 | Tier | Income for MLS Purposes | MLS Rate |
 | --- | --- | --- |
@@ -56,7 +86,7 @@ Read this whole section before computing anything.
 | Tier 2 | $113,001 -- $151,000 | 1.25% |
 | Tier 3 | $151,001+ | 1.5% |
 
-**MLS thresholds (2024-25) -- families**
+**MLS thresholds (2024-25, prior year) -- families**
 
 | Tier | Family Income for MLS | MLS Rate |
 | --- | --- | --- |
@@ -67,14 +97,22 @@ Read this whole section before computing anything.
 
 - **Family income threshold increase per additional child** — The family income threshold increases by $1,500 for each MLS dependent child after the first child.
 
-**PHI rebate tiers (2024-25)**
+**PHI rebate tiers (2025-26 income thresholds; rebate percentages by period)**
 
-| Tier | Singles Income | Families Income | Rebate (under 65) | Rebate (65-69) | Rebate (70+) |
-| --- | --- | --- | --- | --- | --- |
-| Base | $97,000 or less | $194,000 or less | 24.608% | 28.710% | 32.812% |
-| Tier 1 | $97,001 -- $113,000 | $194,001 -- $226,000 | 16.405% | 20.507% | 24.608% |
-| Tier 2 | $113,001 -- $151,000 | $226,001 -- $302,000 | 8.202% | 12.303% | 16.405% |
-| Tier 3 | $151,001+ | $302,001+ | 0.000% | 0.000% | 0.000% |
+The income tiers follow the MLS thresholds above. Rebate percentages step down at every 1 April (rebate adjustment factor):
+
+| Period | Tier | Under 65 | 65-69 | 70+ |
+| --- | --- | --- | --- | --- |
+| 1 Jul 2025 – 31 Mar 2026 | Base | 24.288% | 28.337% | 32.385% |
+| 1 Jul 2025 – 31 Mar 2026 | Tier 1 | 16.192% | 20.240% | 24.288% |
+| 1 Jul 2025 – 31 Mar 2026 | Tier 2 | 8.095% | 12.143% | 16.192% |
+| 1 Jul 2025 – 31 Mar 2026 | Tier 3 | 0% | 0% | 0% |
+| From 1 Apr 2026 | Base | 24.118% | 28.139% | 32.158% |
+| From 1 Apr 2026 | Tier 1 | 16.079% | 20.098% | 24.118% |
+| From 1 Apr 2026 | Tier 2 | 8.038% | 12.059% | 16.079% |
+| From 1 Apr 2026 | Tier 3 | 0% | 0% | 0% |
+
+_(privatehealth.gov.au; Department of Health PHI Circular 12/26 — all cells step down by the same rebate adjustment factor each 1 April.)_
 
 **Conservative defaults**
 
@@ -147,14 +185,14 @@ This is the deterministic pre-classifier for bank statement entries related to M
 
 ### 4.2 Low-income reduction -- singles (Tier 1)
 
-- **Low-income reduction formula for singles** — If taxable_income <= $27,222: Medicare levy = $0. If $27,222 < taxable_income <= $34,027: Medicare levy = (taxable_income - $27,222) x 10%. If taxable_income > $34,027: Medicare levy = taxable_income x 2%.  _(Medicare Levy Act 1986 s 7)_
+- **Low-income reduction formula for singles (2025-26)** — If taxable_income <= $28,011: Medicare levy = $0. If $28,011 < taxable_income <= $35,013: Medicare levy = (taxable_income - $28,011) x 10%. If taxable_income > $35,013: Medicare levy = taxable_income x 2%. (2024-25 prior year: $27,222 / $34,027.)  _(Medicare Levy Act 1986 s 7)_
 - **Shade-in rate explanation** — The shade-in rate of 10% means the levy increases by 10 cents for every dollar earned above the lower threshold, until the reduced levy equals the standard 2% levy (which occurs at the upper threshold).  _(Medicare Levy Act 1986 s 7)_
-- **SAPTO substitution for singles** — For SAPTO-entitled singles: substitute $43,020 for $27,222, and $53,775 for $34,027.  _(Medicare Levy Act 1986 s 7)_
+- **SAPTO substitution for singles (2025-26)** — For SAPTO-entitled singles: substitute $44,268 for $28,011, and $55,335 for $35,013. (2024-25 prior year: $43,020 / $53,775.)  _(Medicare Levy Act 1986 s 7)_
 
 ### 4.3 Low-income reduction -- families (Tier 1)
 
-- **Family threshold formula** — Family threshold = $45,907 + ($4,216 x number_of_dependent_children)  _(Medicare Levy Act 1986 s 8)_
-- **SAPTO family threshold formula** — For SAPTO-entitled families: Family threshold = $63,486 + ($4,216 x number_of_dependent_children)  _(Medicare Levy Act 1986 s 8)_
+- **Family threshold formula (2025-26)** — Family threshold = $47,238 + ($4,338 x number_of_dependent_children). (2024-25 prior year: $45,907 + $4,216 per child.)  _(Medicare Levy Act 1986 s 8)_
+- **SAPTO family threshold formula (2025-26)** — For SAPTO-entitled families: Family threshold = $61,623 + ($4,338 x number_of_dependent_children).  _(Medicare Levy Act 1986 s 8; ATO QC 27031)_
 - **Family threshold effect** — Family income at or below the family threshold: no Medicare levy payable for either spouse. Family income above the family threshold: each spouse pays their individual share, subject to individual reduction rules.  _(Medicare Levy Act 1986 s 8)_
 - **Family income for Medicare levy purposes** — Family income for Medicare levy purposes = combined taxable income of both spouses + any exempt foreign employment income + any net financial investment loss + reportable super contributions.  _(Medicare Levy Act 1986 s 8)_
 
@@ -205,7 +243,7 @@ Planning note: For clients in Tier 1 or Tier 2 MLS, holding private hospital cov
 
 ### 6.2 Item M2 -- Medicare levy surcharge
 
-- **When to complete M2** — Complete M2 if: you (or your spouse/dependants) did not have appropriate private hospital cover for any day during the year; your income for MLS purposes exceeds the relevant threshold ($97,000 singles / $194,000 families). If the client held appropriate cover for the full year, M2 does not need to be completed (no MLS is payable).
+- **When to complete M2** — Complete M2 if: you (or your spouse/dependants) did not have appropriate private hospital cover for any day during the year; your income for MLS purposes exceeds the relevant threshold (2025-26: $101,000 singles / $202,000 families; 2024-25: $97,000 / $194,000). If the client held appropriate cover for the full year, M2 does not need to be completed (no MLS is payable).
 
 ## Section 7 -- Edge case registry
 
@@ -222,22 +260,22 @@ Resolution: The MLS applies to BOTH spouses unless ALL family members (including
 ### EC3 -- Client earns just above the low-income threshold (Tier 1)
 
 Situation: Single client with taxable income of $28,000.
-Resolution: Shade-in applies. Medicare levy = ($28,000 - $27,222) x 10% = $77.80. This is less than the full 2% levy of $560.00.
+Resolution (2025-26): Below the lower threshold of $28,011 — Medicare levy = $0. (In 2024-25, the shade-in applied: ($28,000 - $27,222) x 10% = $77.80.)
 
 ### EC4 -- Client has net investment losses inflating MLS income (Tier 2)
 
 Situation: Client's taxable income is $90,000 but has a net rental property loss of $15,000 (deducted from taxable income). Income for MLS purposes = $90,000 + $15,000 = $105,000.
-Resolution: Even though taxable income is below $97,000, income for MLS purposes exceeds $97,000 and MLS applies at 1.0% if no private hospital cover is held. Flag for reviewer -- confirm MLS income calculation.
+Resolution (2025-26): Even though taxable income is below the $101,000 base threshold, income for MLS purposes is $105,000, which exceeds $101,000 — MLS applies at 1.0% if no private hospital cover is held. Flag for reviewer -- confirm MLS income calculation.
 
 ### EC5 -- SAPTO-entitled pensioner with low income (Tier 1)
 
 Situation: Pensioner aged 68, taxable income $45,000, entitled to SAPTO.
-Resolution: SAPTO singles threshold is $43,020 (lower) and $53,775 (upper). At $45,000, the shade-in applies: ($45,000 - $43,020) x 10% = $198.00. Full 2% levy would be $900.00. The reduced amount of $198.00 applies.
+Resolution (2025-26): SAPTO singles threshold is $44,268 (lower) and $55,335 (upper). At $45,000, the shade-in applies: ($45,000 - $44,268) x 10% = $73.20. Full 2% levy would be $900.00. The reduced amount of $73.20 applies.
 
 ### EC6 -- Family with 4 dependent children (Tier 1)
 
 Situation: Family with 4 dependent children, combined family income $55,000.
-Resolution: Family threshold = $45,907 + ($4,216 x 4) = $62,771. Family income of $55,000 is below the threshold. No Medicare levy payable.
+Resolution (2025-26): Family threshold = $47,238 + ($4,338 x 4) = $64,590. Family income of $55,000 is below the threshold. No Medicare levy payable.
 
 ### EC7 -- MLS with private hospital cover held for part of year (Tier 2)
 
@@ -280,12 +318,12 @@ Expected output: Medicare levy = $80,000 x 2% = $1,600.00. No MLS (has PHI).
 ### Test 2 -- Low-income reduction (single)
 
 Input: Single, taxable income $30,000. No spouse.
-Expected output: Shade-in applies. Levy = ($30,000 - $27,222) x 10% = $277.80.
+Expected output (2025-26): Shade-in applies. Levy = ($30,000 - $28,011) x 10% = $198.90.
 
 ### Test 3 -- Below low-income threshold
 
 Input: Single, taxable income $25,000.
-Expected output: Medicare levy = $0. Below $27,222 lower threshold.
+Expected output (2025-26): Medicare levy = $0. Below $28,011 lower threshold.
 
 ### Test 4 -- MLS Tier 1 (single, no PHI)
 
@@ -300,7 +338,7 @@ Expected output: Medicare levy = $200,000 x 2% = $4,000.00. MLS = $200,000 x 1.5
 ### Test 6 -- Family below family threshold
 
 Input: Family, 2 dependent children, combined family income $50,000.
-Expected output: Family threshold = $45,907 + ($4,216 x 2) = $54,339. Family income $50,000 < $54,339. No Medicare levy payable.
+Expected output (2025-26): Family threshold = $47,238 + ($4,338 x 2) = $55,914. Family income $50,000 < $55,914. No Medicare levy payable.
 
 ### Test 7 -- Foreign resident full exemption
 
@@ -310,13 +348,13 @@ Expected output: Full Medicare levy exemption. Levy = $0. Must complete item M1.
 ### Test 8 -- MLS family threshold with children
 
 Input: Family, 3 children, combined income for MLS purposes $200,000. No PHI.
-Expected output: Family MLS threshold = $194,000 + ($1,500 x 2 children after the first) = $197,000. Income $200,000 > $197,000. MLS Tier 1 = 1.0% applies.
+Expected output (2025-26): Family MLS threshold = $202,000 + ($1,500 x 2 children after the first) = $205,000. Income $200,000 < $205,000. No MLS. (Under 2024-25 thresholds the same facts produced Tier 1 MLS — threshold year matters.)
 
 ## Section 10 -- Prohibitions and disclaimer
 
 ### Prohibitions
 
-- **Prohibitions list** — - NEVER apply the Medicare levy to a confirmed full-year foreign resident who is not enrolled in Medicare - NEVER ignore the MLS income definition -- it is NOT the same as taxable income (includes reportable fringe benefits and net investment losses) - NEVER tell a client they avoid MLS simply because their taxable income is below $97,000 -- check income for MLS purposes - NEVER apply the general low-income threshold ($27,222) to a SAPTO-entitled senior -- use the SAPTO thresholds ($43,020 / $53,775) - NEVER assume PHI eliminates MLS unless the cover is "appropriate" (private patient hospital cover with excess no more than $750 singles / $1,500 families) - NEVER present Medicare levy figures as definitive -- always label as estimated and direct client to their ATO assessment for confirmation - NEVER advise on diplomatic or prescribed overseas forces exemptions -- escalate - NEVER confuse the Medicare levy (2% on taxable income) with the Medicare Levy Surcharge (1%-1.5% on MLS income for those without PHI) -- they are separate charges
+- **Prohibitions list** — - NEVER apply the Medicare levy to a confirmed full-year foreign resident who is not enrolled in Medicare - NEVER ignore the MLS income definition -- it is NOT the same as taxable income (includes reportable fringe benefits and net investment losses) - NEVER tell a client they avoid MLS simply because their taxable income is below the base threshold ($101,000 in 2025-26) -- check income for MLS purposes - NEVER apply the general low-income threshold ($28,011 in 2025-26) to a SAPTO-entitled senior -- use the SAPTO thresholds ($44,268 / $55,335 in 2025-26) - NEVER assume PHI eliminates MLS unless the cover is "appropriate" (private patient hospital cover with excess no more than $750 singles / $1,500 families) - NEVER present Medicare levy figures as definitive -- always label as estimated and direct client to their ATO assessment for confirmation - NEVER advise on diplomatic or prescribed overseas forces exemptions -- escalate - NEVER confuse the Medicare levy (2% on taxable income) with the Medicare Levy Surcharge (1%-1.5% on MLS income for those without PHI) -- they are separate charges
 
 ### Disclaimer
 

@@ -1,12 +1,13 @@
 ---
 name: au-payg-instalments
 description: Use this skill whenever asked about Australian PAYG Instalments for sole traders. Trigger on phrases like "PAYG instalments", "BAS T1 T2 T7 T9", "instalment rate", "instalment amount", "ATO instalment", "GDP uplift", "GIC", "variation of instalments", or any question about income tax prepayments through the Business Activity Statement. Covers entry/exit thresholds, instalment rate method (T1/T2), instalment amount method (T7), GDP uplift factor, voluntary variation, GIC exposure on under-estimation, and quarterly/annual election. ALWAYS read this skill before touching any PAYG instalment work for Australia.
-version: 2.0
+version: 2.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - income-tax-workflow-base
+depends_on:
+  - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -187,10 +188,12 @@ No income calculation needed. ATO pre-fills the amount.
 ### 6.1 General Interest Charge (GIC)
 
 - **GIC rate** — base rate (90-day bank bill rate) + 7%  _(Updated quarterly. Applies from instalment due date if variation results in < 85% of correct amount.)_
+- **GIC not deductible from 1 July 2025** — GIC (and shortfall interest charge) incurred on or after 1 July 2025 is denied as an income tax deduction. GIC incurred up to 30 June 2025 remains deductible under the old law; if such deducted GIC is later remitted, the remitted amount is assessable. Post-1-July-2025 GIC that is remitted is not assessable.  _(Treasury Laws Amendment (Tax Incentives and Integrity) Act 2025 (No. 29, 2025) Sch 2; ATO QC 73746)_
+- **Quarterly GIC annual rates (recent)** — 2025-26: Jul–Sep 10.78%, Oct–Dec 10.61%, Jan–Mar 10.65%, Apr–Jun 10.96%. 2026-27: Jul–Sep 11.43%.  _(ATO GIC rates page, QC 16145)_
 
 ### 6.2 Late BAS lodgement penalty
 
-- **Late BAS lodgement penalty** — $313 per 28-day period, up to 5 periods ($1,565 max for small entities)  _(Failure to lodge BAS)_
+- **Late BAS lodgement penalty** — 1 penalty unit per 28-day period, up to 5 periods, for small entities. Penalty unit: $364 from 1 Jul 2026; $330 for 7 Nov 2024 – 30 Jun 2026 (so max $1,820 / $1,650)  _(Failure to lodge BAS; ATO QC 71196)_
 
 ### 6.3 Safe harbour
 

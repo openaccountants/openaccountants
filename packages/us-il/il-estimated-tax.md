@@ -5,7 +5,7 @@ version: 1.0
 jurisdiction: US-IL
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: Amir Pelinkovic
+reviewed_by: A licensed accountant (name withheld at their request)
 review_status: current
 depends_on: - us-tax-workflow-base
 category: state

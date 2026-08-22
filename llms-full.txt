@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1937 guides, 244 jurisdictions, 270 accountant-reviewed)
+## Guide inventory (1939 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -208,9 +208,9 @@ https://www.openaccountants.com
 - wealth-tax-matrix | GLOBAL | tier 2 | reviewed_by -
 - withholding-tax-matrix | GLOBAL | tier 2 | reviewed_by -
 - 990-returns | US | tier 2 | reviewed_by -
-- no-sales-tax-states | US | tier 1 | reviewed_by James Wallach
+- no-sales-tax-states | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by James Wallach
-- us-1099-nec-issuance | US | tier 1 | reviewed_by James Wallach
+- us-1099-nec-issuance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-citizen-moving-abroad-tax | US | tier 2 | reviewed_by -
 - us-crypto-income-events | US | tier 1 | reviewed_by Christopher Aryee
 - us-crypto-reporting | US | tier 1 | reviewed_by Christopher Aryee
@@ -235,19 +235,19 @@ https://www.openaccountants.com
 - us-nft-tax | US | tier 2 | reviewed_by James Wallach
 - us-pl-86-272-income-tax-nexus | US | tier 2 | reviewed_by James Wallach
 - us-pte-state-matrix | US | tier 2 | reviewed_by James Wallach
-- us-qbi-deduction | US | tier 1 | reviewed_by James Wallach
-- us-quarterly-estimated-tax | US | tier 1 | reviewed_by Amir Pelinkovic
+- us-qbi-deduction | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- us-quarterly-estimated-tax | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-r-and-d-section-174-and-41 | US | tier 2 | reviewed_by James Wallach
-- us-s-corp-election-decision | US | tier 1 | reviewed_by James Wallach
+- us-s-corp-election-decision | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-sales-tax-nexus-50-state-matrix | US | tier 2 | reviewed_by James Wallach
-- us-sales-tax | US | tier 1 | reviewed_by James Wallach
-- us-schedule-c-and-se-computation | US | tier 1 | reviewed_by James Wallach
+- us-sales-tax | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- us-schedule-c-and-se-computation | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-section-1031-like-kind-exchange | US | tier 2 | reviewed_by James Wallach
 - us-section-1202-qsbs | US | tier 2 | reviewed_by James Wallach
 - us-secure-2-and-retirement-updates | US | tier 2 | reviewed_by James Wallach
-- us-self-employed-health-insurance | US | tier 1 | reviewed_by James Wallach
-- us-self-employed-retirement | US | tier 1 | reviewed_by James Wallach
-- us-sole-prop-bookkeeping | US | tier 1 | reviewed_by James Wallach
+- us-self-employed-health-insurance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- us-self-employed-retirement | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- us-sole-prop-bookkeeping | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-state-bonus-depreciation-conformity-matrix | US | tier 2 | reviewed_by James Wallach
 - us-state-estimated-tax-safe-harbors-matrix | US | tier 2 | reviewed_by James Wallach
 - us-state-formation-matrix | US | tier 2 | reviewed_by James Wallach
@@ -1487,6 +1487,8 @@ https://www.openaccountants.com
 - sn-company-formation | SN | tier 2 | reviewed_by -
 - sn-corporate-income-tax | SN | tier 2 | reviewed_by -
 - sn-tax-overview | SN | tier 2 | reviewed_by -
+- can-a-foreigner-start-a-business-in-serbia | RS | tier 2 | reviewed_by -
+- how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide | RS | tier 2 | reviewed_by -
 - serbia-income-tax | RS | tier 2 | reviewed_by -
 - serbia-payroll | RS | tier 2 | reviewed_by -
 - serbia-social-contributions | RS | tier 2 | reviewed_by -
@@ -1915,11 +1917,11 @@ https://www.openaccountants.com
 - id-income-tax | ID | tier 1 | reviewed_by RILIA PUTRI
 - id-sales-tax | US-ID | tier 2 | reviewed_by -
 - idaho-sales-tax | US-ID | tier 2 | reviewed_by -
-- il-estimated-tax | US-IL | tier 1 | reviewed_by Amir Pelinkovic
-- il-income-tax | US-IL | tier 1 | reviewed_by Amir Pelinkovic
-- il-payroll | US-IL | tier 1 | reviewed_by Amir Pelinkovic
-- il-pprt | US-IL | tier 2 | reviewed_by Amir Pelinkovic
-- il-sales-tax | US-IL | tier 1 | reviewed_by Amir Pelinkovic
+- il-estimated-tax | US-IL | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- il-income-tax | US-IL | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- il-payroll | US-IL | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- il-pprt | US-IL | tier 2 | reviewed_by -
+- il-sales-tax | US-IL | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - illinois-sales-tax | US-IL | tier 2 | reviewed_by -
 - in-income-tax | IN | tier 2 | reviewed_by -
 - in-payroll | US-IN | tier 2 | reviewed_by -
@@ -2178,7 +2180,7 @@ Key rules:
 | `us-schedule-c-and-se-computation` | US Federal | Pending publication of practitioner registry |
 | `us-ca-freelance-intake` | US-CA | Pending publication of practitioner registry |
 
-This list is derived from each skill's `verified_by` frontmatter (the field name is a stored identifier and stays `verified_by`). To add a new accountant-reviewed skill, set its `verified_by:` field to the reviewer's name and credential, then regenerate the canonical inventory with `python3 scripts/build-index.py` — the tier and verifier land in `index.json`. Every accountant-reviewed skill carries the reviewer's name and license number on the skill page at openaccountants.com.
+This list is derived from each skill's explicit `tier: 1` plus its reviewer name (`reviewed_by`, or the legacy `verified_by` — a stored identifier that keeps its spelling). To add a new accountant-reviewed skill, set **both** `tier: 1` and the reviewer's name and credential, then regenerate the canonical inventory with `python3 scripts/build-index.py` — the tier and verifier land in `index.json`. Setting a reviewer name without flipping `tier` to `1` is a validation error: `tier: 2` must not claim accountant verification. Every accountant-reviewed skill carries the reviewer's name and license number on the skill page at openaccountants.com.
 
 ### Source-cited drafts (Tier 2)
 

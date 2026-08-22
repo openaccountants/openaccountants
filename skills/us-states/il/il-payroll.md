@@ -4,7 +4,7 @@ description: Tier 2 Illinois content skill for employer payroll compliance cover
 jurisdiction: US-IL
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: Amir Pelinkovic
+reviewed_by: A licensed accountant (name withheld at their request)
 review_status: current
 tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

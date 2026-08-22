@@ -87,8 +87,8 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 | --- | --- | --- |
 | Income for MLS purposes | ITR taxable income + reportable fringe benefits + total net investment loss + reportable super | Combined figure |
 | PHI status | Insurer statement | If adequate hospital cover for full year, no MLS |
-| MLS thresholds (2024-25) | Single: $93,000; Family: $186,000 | Below threshold = no MLS regardless of PHI |
-| MLS rates | Tier 1: 1%; Tier 2: 1.25%; Tier 3: 1.5% | Applied to taxable income |
+| MLS thresholds | 2025-26: Single $101,000; Family $202,000. 2024-25: Single $97,000; Family $194,000 | Below threshold = no MLS regardless of PHI |
+| MLS rates | Tier 1: 1%; Tier 2: 1.25%; Tier 3: 1.5% | Applied to income for MLS purposes |
 
 ### Cross-check 4: PAYG instalments credit against final tax
 

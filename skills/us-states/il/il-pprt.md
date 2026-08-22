@@ -4,8 +4,7 @@ description: "Illinois Personal Property Replacement Tax under 35 ILCS 5/201(c) 
 jurisdiction: US-IL
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: Amir Pelinkovic
-review_status: current
+review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

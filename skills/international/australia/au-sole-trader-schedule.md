@@ -7,7 +7,8 @@ tax_year: 2025
 tax_year_notes: "2025-26 lodgment year; 2026-27 rates noted inline where they differ"
 last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - income-tax-workflow-base
+depends_on:
+  - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

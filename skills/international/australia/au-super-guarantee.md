@@ -1,18 +1,19 @@
 ---
 name: au-super-guarantee
 description: >
-  Use this skill whenever asked about Australian Superannuation Guarantee (SG) obligations, payday super deadlines, voluntary super contributions, concessional and non-concessional caps, Division 293 tax, government co-contribution, spouse contribution tax offset, carry-forward rules, or any question about super for sole traders or employers. Trigger on phrases like "how much super do I pay", "SG rate", "super guarantee", "payday super", "7 business days super", "SG shortfall", "concessional cap", "Division 293", "salary sacrifice super", "personal super contribution deduction", "co-contribution", "BPAY super", "super clearing house", "super fund contribution", or any question about Australian superannuation. Also trigger when classifying bank statement transactions showing super fund payments, BPAY super debits, or clearing house payments. ALWAYS read this skill before touching any SG-related work.
-version: 3.0
+  Use this skill whenever asked about Australian Superannuation Guarantee (SG) obligations, payday super deadlines, voluntary super contributions, concessional and non-concessional caps, Division 293 tax, Division 296 large-balance tax, government co-contribution, spouse contribution tax offset, carry-forward rules, or any question about super for sole traders or employers. Trigger on phrases like "how much super do I pay", "SG rate", "super guarantee", "payday super", "7 business days super", "SG shortfall", "concessional cap", "Division 293", "Division 296", "$3 million super tax", "salary sacrifice super", "personal super contribution deduction", "co-contribution", "BPAY super", "super clearing house", "super fund contribution", or any question about Australian superannuation. Also trigger when classifying bank statement transactions showing super fund payments, BPAY super debits, or clearing house payments. ALWAYS read this skill before touching any SG-related work.
+version: 3.1
 jurisdiction: AU
-tax_year: 2024
-last_updated: 2026-08-02
+tax_year: 2026
+tax_year_notes: "2026-27 (payday super + Division 296 first year); quarterly-regime rules retained for pre-1-July-2026 paydays"
+last_updated: 2026-08-20
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.0
+# Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -264,6 +265,13 @@ $130,000 (2026-27; 4 x concessional cap). Bring-forward tiers by TSB at 30 June 
 - **Division 293 formula** — Div 293 income = taxable income + concessional contributions If > $250,000: Div 293 tax = 15% x lesser of (concessional contributions, excess over $250,000)  _(Rule 9)_
 
 Threshold frozen at $250,000 (not indexed).
+
+### Rule 10A -- Division 296 (large balances, from 1 July 2026)
+
+- **What it is** — An additional individual tax on a proportion of superannuation earnings when total superannuation balance (TSB) exceeds the large-balance thresholds: **extra 15%** on the earnings proportion attributable to the TSB between **$3 million and $10 million** (headline 30% with fund tax), and **extra 25%** on the proportion above **$10 million** (headline 40%). Legislated by the Treasury Laws Amendment (Building a Stronger and Fairer Super System) Act 2026; **first affected year is 2026-27** (first measurement date 30 June 2027, transitional rules apply to the first year).
+- **Key design points (final law, not the 2023 proposal)** — (1) both thresholds are **indexed** (CPI, $150,000 / $500,000 increments); (2) earnings are based on **realised** earnings concepts rather than the originally proposed unrealised-gains formula; (3) the tax is levied on the individual (payable personally or released from super), not on the fund.
+- **Who to flag** — any client whose 30 June TSB approaches $3m: contribution strategy, asset location, and pension-phase decisions all interact with Div 296. **This skill does not compute Div 296** — escalate to a qualified adviser; computation depends on ATO-calculated earnings proportions from fund reporting.
+- **Do not confuse** Division 293 (contributions tax for incomes > $250,000, unchanged) with Division 296 (large-balance earnings tax from 1 July 2026).
 
 ### Rule 11 -- Redesigned SGC (QE days from 1 July 2026)
 

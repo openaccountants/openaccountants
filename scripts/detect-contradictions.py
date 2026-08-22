@@ -68,6 +68,7 @@ JURISDICTION_TREES = {
     "US": {"scan": ["skills/federal", "packages/us-federal"], "shadow": None},
     "UK": {"scan": ["skills/international/uk"], "shadow": "packages/uk"},
     "DE": {"scan": ["skills/international/germany"], "shadow": "packages/germany"},
+    "AU": {"scan": ["skills/international/australia"], "shadow": "packages/australia"},
 }
 
 US_FEDERAL_RATES_DIR = os.path.join(REPO_ROOT, "packages", "us-federal")
@@ -195,7 +196,7 @@ def resolve_tax_year(explicit=None, rates_dir=US_FEDERAL_RATES_DIR):
 # A file only contributes claims when its frontmatter jurisdiction matches the
 # scan (keeps e.g. packages/germany/eu-vat-directive.md — other member states'
 # VAT rates — out of the DE pool).
-JURISDICTION_CODES = {"US": {"US"}, "UK": {"GB", "UK"}, "DE": {"DE"}}
+JURISDICTION_CODES = {"US": {"US"}, "UK": {"GB", "UK"}, "DE": {"DE"}, "AU": {"AU"}}
 
 # Values are only read within this many characters of a concept-term match, so
 # an unrelated number elsewhere on a long line can't attach to the concept.
@@ -329,6 +330,110 @@ CONCEPTS = {
                                           "exclude": r"80%|at source"},
         "sa_late_filing_penalty": {"terms": [r"late filing penalty"], "kind": "money",
                                    "exclude": r"daily|3 months|6 months|12 months|tax.geared"},
+    },
+    "AU": {
+        # --- Individual income tax --------------------------------------------
+        "tax_free_threshold": {"terms": [r"tax.free threshold"], "kind": "money",
+                               "exclude": r"non.resident|foreign resident|no tax.free|deceased|estate",
+                               "min": 15000, "max": 20000},
+        "lito_max": {"terms": [r"\bLITO\b", r"low income tax offset"], "kind": "money",
+                     "exclude": r"taper|reduce|withdraw|per \$1|cents per|threshold",
+                     "min": 400, "max": 1000},
+        "sbito_rate": {"terms": [r"\bSBITO\b", r"small business income tax offset"], "kind": "percent",
+                       "min": 5, "max": 20},
+        "sbito_cap": {"terms": [r"\bSBITO\b", r"small business income tax offset"], "kind": "money",
+                      "require": r"cap|capped|maximum", "min": 500, "max": 2000},
+        # --- Medicare ----------------------------------------------------------
+        "medicare_levy_rate": {"terms": [r"Medicare levy"], "kind": "percent",
+                               "exclude": r"surcharge|\bMLS\b|reduction|shade|exempt",
+                               "min": 1, "max": 3},
+        "mls_single_threshold": {"terms": [r"\bMLS\b", r"Medicare levy surcharge"], "kind": "money",
+                                 "require": r"single", "exclude": r"famil", "min": 80000, "max": 130000},
+        "mls_family_threshold": {"terms": [r"\bMLS\b", r"Medicare levy surcharge"], "kind": "money",
+                                 "require": r"famil", "min": 160000, "max": 260000},
+        # --- Superannuation -----------------------------------------------------
+        "sg_rate": {"terms": [r"\bSG rate\b", r"super guarantee rate", r"superannuation guarantee"],
+                    "kind": "percent", "exclude": r"charge|shortfall|SGC|nominal|uplift",
+                    "min": 9, "max": 15},
+        "concessional_cap": {"terms": [r"concessional (?:contributions? )?cap"], "kind": "money",
+                             "exclude": r"non.concessional|unused|carry.forward|catch.up|total of",
+                             "min": 25000, "max": 40000},
+        "nonconcessional_cap": {"terms": [r"non.concessional (?:contributions? )?cap"], "kind": "money",
+                                "exclude": r"bring.forward|3 year|two year|over 3|over 2",
+                                "min": 100000, "max": 160000},
+        "transfer_balance_cap": {"terms": [r"transfer balance cap", r"\bTBC\b"], "kind": "money",
+                                 # The disregarded-small-fund-assets trigger (s 295-387) is a FIXED
+                                 # $1.6m TSB figure that deliberately does not index with the TBC.
+                                 "exclude": r"personal|used|remaining|space|disregarded small fund|"
+                                            r"\bDSFA\b|295-387|has NOT indexed|total super balance",
+                                 "min": 1500000, "max": 2500000},
+        "cgt_cap": {"terms": [r"CGT cap"], "kind": "money",
+                    "exclude": r"lifetime limit of the retirement", "min": 1500000, "max": 2200000},
+        "div293_threshold": {"terms": [r"Division 293", r"\bDiv 293\b"], "kind": "money",
+                             "min": 200000, "max": 300000},
+        "supervisory_levy": {"terms": [r"supervisory levy"], "kind": "money",
+                             "exclude": r"first year|new fund|518|two years", "min": 200, "max": 300},
+        # --- Companies ----------------------------------------------------------
+        "bre_rate": {"terms": [r"base rate entity", r"\bBRE\b"], "kind": "percent",
+                     # "not a base rate entity" lines assert the 30% standard rate on purpose
+                     # (bucket companies on passive trust income), so they are not BRE claims.
+                     "exclude": r"passive income|BREPI|80%|turnover|not a base rate|"
+                                r"is not a base rate|fails the base rate",
+                     "min": 20, "max": 30},
+        "standard_company_rate": {"terms": [r"standard company (?:tax )?rate",
+                                            r"full company (?:tax )?rate"], "kind": "percent",
+                                  "min": 25, "max": 35},
+        "div7a_benchmark": {"terms": [r"benchmark interest rate", r"Div 7A benchmark"], "kind": "percent",
+                            "exclude": r"FBT|statutory|deemed|record.keeping", "min": 5, "max": 12},
+        "payg_gdp_uplift": {"terms": [r"GDP (?:adjustment|uplift)"], "kind": "percent",
+                            "min": 1, "max": 12},
+        # --- FBT ------------------------------------------------------------------
+        "fbt_rate": {"terms": [r"FBT rate"], "kind": "percent",
+                     "exclude": r"rebate|gross.up|statutory|benchmark", "min": 40, "max": 50},
+        "fbt_type1_grossup": {"terms": [r"Type 1 gross.?up"], "kind": "any", "min": 2.0, "max": 2.2},
+        "fbt_type2_grossup": {"terms": [r"Type 2 gross.?up"], "kind": "any", "min": 1.8, "max": 2.0},
+        "rfba_threshold": {"terms": [r"\bRFBA\b", r"reportable fringe benefits"], "kind": "money",
+                           "exclude": r"grossed.up|x 1\.8868|report ", "min": 1500, "max": 4000},
+        # --- Deductions --------------------------------------------------------------
+        "wfh_fixed_rate": {"terms": [r"fixed rate method", r"home office fixed rate",
+                                     r"working from home"], "kind": "any",
+                           "require": r"cent|c/hr|per hour", "min": 60, "max": 80},
+        "cents_per_km": {"terms": [r"cents per (?:km|kilometre)", r"c/km"], "kind": "any",
+                         "exclude": r"charging|electric|EV|5\.47", "min": 60, "max": 100},
+        "car_limit": {"terms": [r"car (?:cost )?limit", r"car depreciation limit"], "kind": "money",
+                      "exclude": r"luxury car tax|LCT", "min": 60000, "max": 80000},
+        "iawo_threshold": {"terms": [r"instant asset write.off"], "kind": "money",
+                           "require": r"threshold|limit|less than|under \$?20|costing",
+                           "exclude": r"turnover|aggregated|\$10m|10 million|deduction:|eligible|"
+                                      r"MacBook|laptop|monitor|purchase",
+                           "min": 1000, "max": 30000},
+        # --- GST ------------------------------------------------------------------------
+        "gst_rate": {"terms": [r"\bGST\b"], "kind": "percent",
+                     "exclude": r"free|input.taxed|margin|withhold|credit|1/11|registration",
+                     "min": 8, "max": 12},
+        "gst_registration_threshold": {"terms": [r"GST registration", r"registration threshold"],
+                                       "kind": "money",
+                                       "exclude": r"non.profit|NFP|not.for.profit|150,000|taxi|rideshare",
+                                       "min": 50000, "max": 100000},
+        # --- CGT ---------------------------------------------------------------------------
+        "cgt_discount": {"terms": [r"CGT discount", r"general discount"], "kind": "percent",
+                         "exclude": r"one.third|33|super fund|complying|company|minimum rate",
+                         "min": 40, "max": 60},
+        "frcgw_rate": {"terms": [r"\bFRCGW\b", r"foreign resident capital gains withholding"],
+                       "kind": "percent", "exclude": r"clearance|variation", "min": 10, "max": 20},
+        "sbcgt_retirement_exemption": {"terms": [r"retirement exemption"], "kind": "money",
+                                       "require": r"lifetime|limit|cap",
+                                       "exclude": r"elect|chose|chosen|applies \$",
+                                       "min": 400000, "max": 600000},
+        "sbcgt_mnav": {"terms": [r"maximum net asset value", r"\bMNAV\b"], "kind": "money",
+                       "min": 4000000, "max": 8000000},
+        # --- Administration --------------------------------------------------------------------
+        "penalty_unit": {"terms": [r"penalty unit"], "kind": "money",
+                         "exclude": r"per 28|multiple|60 penalty|5 penalty|units", "min": 200, "max": 500},
+        # --- Employment ------------------------------------------------------------------------
+        "national_minimum_wage_hourly": {"terms": [r"national minimum wage", r"minimum wage"],
+                                         "kind": "money", "require": r"hour|/hr",
+                                         "exclude": r"week|annual|junior|casual", "min": 20, "max": 35},
     },
     "US": {
         "standard_deduction": {"terms": [r"standard deduction"], "kind": "money",

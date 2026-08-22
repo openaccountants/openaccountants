@@ -13,6 +13,7 @@ from pathlib import Path
 
 
 SCRIPT_PATH = Path(__file__).resolve().parents[1] / "scripts" / "check-sync-integrity.py"
+sys.path.insert(0, str(SCRIPT_PATH.parent))
 SPEC = importlib.util.spec_from_file_location("check_sync_integrity", SCRIPT_PATH)
 assert SPEC is not None and SPEC.loader is not None
 sync_integrity = importlib.util.module_from_spec(SPEC)
@@ -169,6 +170,32 @@ class GuideComparisonTests(unittest.TestCase):
         )
         self.assertEqual([], findings)
 
+    def test_invalid_yaml_fails_before_metadata_comparison(self) -> None:
+        malformed = guide().replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on: - workflow-base\n",
+        )
+        findings = self.compare(guide(), malformed)
+        self.assertIn("invalid-candidate", codes(findings, "error"))
+
+    def test_invalid_legacy_base_can_be_repaired(self) -> None:
+        malformed = guide().replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on: - workflow-base\n",
+        )
+        repaired = guide().replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on:\n  - workflow-base\n",
+        )
+        findings = self.compare(malformed, repaired)
+        self.assertEqual(set(), codes(findings, "error"))
+        self.assertIn("frontmatter-repaired", codes(findings, "notice"))
+
+    def test_yaml_boolean_jurisdiction_fails_closed(self) -> None:
+        malformed = guide().replace("jurisdiction: GLOBAL", "jurisdiction: NO")
+        findings = self.compare(guide(), malformed)
+        self.assertIn("invalid-candidate", codes(findings, "error"))
+
     def test_existing_version_cannot_be_removed(self) -> None:
         findings = self.compare(
             guide(),
@@ -291,6 +318,29 @@ class GitBackedIntegrityTests(unittest.TestCase):
             self.repo, self.base, None, "sync", provenance
         )
         self.assertIn("cas-conflict", codes(findings, "error"))
+
+    def test_sync_preflight_rejects_malformed_yaml_before_publication(self) -> None:
+        malformed = guide(
+            last_updated="2026-08-07",
+            version="1.2",
+            heading_version="1.2",
+            body="Platform edit with malformed metadata.",
+        ).replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on: - workflow-base\n",
+        )
+        self.write_candidate(malformed)
+        expected_blob = sync_integrity.revision_blob(self.repo, self.base, self.path)
+        provenance = {
+            self.path: {"expected_repo_blob": expected_blob, "content_revision": 2}
+        }
+
+        findings, count = sync_integrity.run_integrity_check(
+            self.repo, self.base, None, "sync", provenance
+        )
+
+        self.assertEqual(1, count)
+        self.assertIn("invalid-candidate", codes(findings, "error"))
 
     def test_missing_provenance_fails_closed(self) -> None:
         self.write_candidate(
