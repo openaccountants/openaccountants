@@ -1,12 +1,14 @@
 ---
 name: au-sole-trader-schedule
-description: Australian sole trader business schedule (Business and Professional Items Schedule for Individuals). Covers assessable business income, allowable deductions, home office (fixed rate 67c/hour or actual), motor vehicle (logbook or cents per km at 85c/km), depreciation (instant asset write-off, simplified pooling, general pooling), prepaid expenses, and trading stock.
-version: 1.0
+description: Australian sole trader business schedule (Business and Professional Items Schedule for Individuals). Covers assessable business income, allowable deductions, home office (fixed rate 70c/hour or actual), motor vehicle (logbook or cents per km at 88c/km for 2025-26, 91c for 2026-27), depreciation (instant asset write-off, simplified pooling, general pooling), prepaid expenses, and trading stock.
+version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+tax_year_notes: "2025-26 lodgment year; 2026-27 rates noted inline where they differ"
+last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - income-tax-workflow-base
+depends_on:
+  - income-tax-workflow-base
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -14,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Sole Trader Schedule
 
-## Australia Sole Trader Business Schedule v1.0
+## Australia Sole Trader Business Schedule v1.1
 
 ## What this file is
 
@@ -68,19 +70,19 @@ This skill does NOT cover:
 
 | Item | Amount / Rate | Source |
 | --- | --- | --- |
-| Instant asset write-off threshold | $20,000 per asset (for small business entities with aggregated turnover < $10M) for assets first used or installed ready for use between 1 July 2024 and 30 June 2025 | ITAA 1997 s 328-180 (extended by Treasury Laws Amendment) |
+| Instant asset write-off threshold | $20,000 per asset (small business entities, aggregated turnover < $10M). Legislated for assets first used or installed ready for use to 30 June 2026; the 2026-27 Budget announced permanence from 1 July 2026 -- confirm enactment before relying on it for 2026-27 | ITAA 1997 Div 328; ATO QC 103578 |
 | Small business entity threshold | Aggregated turnover < $10M | ITAA 1997 s 328-110 |
-| Cents per km rate (motor vehicle) | 85 cents per km | ATO determination TD 2024/4 |
+| Cents per km rate (motor vehicle) | 88 cents per km (2024-25 and 2025-26); 91 cents (2026-27) | ATO cents per kilometre method |
 | Cents per km cap | 5,000 business km per car per year | ITAA 1997 s 28-25 |
-| Home office fixed rate | 67 cents per hour | ATO PCG 2023/1 (revised method from 1 July 2022) |
+| Home office fixed rate | 70 cents per hour (2024-25 through 2026-27; 67c applied 2022-23 and 2023-24) | ATO PCG 2023/1 |
 | Trading stock threshold (change in value) | $5,000 — if the difference between opening and closing stock is < $5,000, the taxpayer can elect not to do a stocktake | ITAA 1997 s 70-35 |
 | Prepaid expenses (SBE) | Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year | ITAA 1997 s 328-225 |
 
-- **Instant asset write-off threshold** — $20,000 per asset (for small business entities with aggregated turnover < $10M) for assets first used or installed ready for use between 1 July 2024 and 30 June 2025  _(ITAA 1997 s 328-180 (extended by Treasury Laws Amendment))_
+- **Instant asset write-off threshold** — $20,000 per asset (small business entities, aggregated turnover < $10M), legislated for assets first used or installed ready for use to 30 June 2026. The 2026-27 Budget announced permanence from 1 July 2026 -- confirm enactment before relying on it for 2026-27.  _(ITAA 1997 Div 328; ATO QC 103578)_
 - **Small business entity threshold** — Aggregated turnover < $10M  _(ITAA 1997 s 328-110)_
-- **Cents per km rate (motor vehicle)** — 85 cents per km  _(ATO determination TD 2024/4)_
+- **Cents per km rate (motor vehicle)** — 88 cents per km for 2024-25 and 2025-26; 91 cents per km from 2026-27  _(ATO cents per kilometre method)_
 - **Cents per km cap** — 5,000 business km per car per year  _(ITAA 1997 s 28-25)_
-- **Home office fixed rate** — 67 cents per hour  _(ATO PCG 2023/1 (revised method from 1 July 2022))_
+- **Home office fixed rate** — 70 cents per hour for 2024-25 through 2026-27 (67c applied for 2022-23 and 2023-24)  _(ATO PCG 2023/1)_
 - **Trading stock threshold (change in value)** — $5,000 — if the difference between opening and closing stock is < $5,000, the taxpayer can elect not to do a stocktake  _(ITAA 1997 s 70-35)_
 - **Prepaid expenses (SBE)** — Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year  _(ITAA 1997 s 328-225)_
 
@@ -122,11 +124,11 @@ Two methods available for sole traders:
 
 #### Method 1 — Cents per kilometre
 
-- **Cents per kilometre method** — Claim 85c per business km, up to 5,000 km per car per year. Maximum claim = 5,000 x $0.85 = $4,250 per car. No logbook or written evidence of individual trips required, but must be able to show how the estimate was calculated.  _(ATO determination TD 2024/4; ITAA 1997 s 28-25)_
+- **Cents per kilometre method** — Claim the current rate per business km, up to 5,000 km per car per year. 2025-26: 88c, maximum claim = 5,000 x $0.88 = $4,400 per car. 2026-27: 91c, maximum = $4,550. No logbook or written evidence of individual trips required, but must be able to show how the estimate was calculated.  _(ATO cents per kilometre method; ITAA 1997 s 28-25)_
 
 #### Method 2 — Logbook
 
-- **Logbook method** — Maintain a logbook for a continuous 12-week period (valid for 5 years unless circumstances change). Calculate business-use percentage from logbook. Apply that percentage to total car expenses: fuel, insurance, registration, repairs, lease payments, depreciation. Depreciation of the car is capped at the car limit ($68,108 for 2024-25, ATO car limit determination).  _(ATO car limit determination)_
+- **Logbook method** — Maintain a logbook for a continuous 12-week period (valid for 5 years unless circumstances change). Calculate business-use percentage from logbook. Apply that percentage to total car expenses: fuel, insurance, registration, repairs, lease payments, depreciation. Depreciation of the car is capped at the car limit: $69,674 for 2025-26 and $69,883 for 2026-27 ($68,108 was the 2024-25 limit).  _(ATO car limit determination)_
 
 ### 4.5 Depreciation
 
@@ -140,9 +142,9 @@ Two methods available for sole traders:
 
 ### 4.6 Home office expenses
 
-#### Fixed rate method (67c per hour) — PCG 2023/1
+#### Fixed rate method (70c per hour from 2024-25) — PCG 2023/1
 
-- **Fixed rate method** — Covers energy expenses (electricity, gas), phone, internet, stationery, computer consumables. Must keep a record of actual hours worked from home (e.g., timesheets, diary, roster). Separately claim occupancy expenses (rent, mortgage interest, rates, insurance) only if the home is a place of business (rare for sole traders without a dedicated area). Cannot separately claim expenses already covered by the 67c rate.  _(ATO PCG 2023/1)_
+- **Fixed rate method** — Covers energy expenses (electricity, gas), phone, internet, stationery, computer consumables. Must keep a record of actual hours worked from home (e.g., timesheets, diary, roster). Separately claim occupancy expenses (rent, mortgage interest, rates, insurance) only if the home is a place of business (rare for sole traders without a dedicated area). Cannot separately claim expenses already covered by the fixed rate (70c from 2024-25).  _(ATO PCG 2023/1)_
 
 #### Actual cost method
 
