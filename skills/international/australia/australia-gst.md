@@ -508,7 +508,7 @@ For each ambiguity type: pattern, why the bank statement is insufficient, conser
 
 ### 6.2 Home office (utilities -- 70c/hr or actual?)
 
-- **Pattern, reasoning, default, question** — Pattern: Origin Energy, AGL, Telstra on a residential address; home internet. Why insufficient: if the client works from home, a portion of home expenses may be claimable. The ATO allows either the fixed-rate method (70 cents per hour from 2024-25 under PCG 2023/1; 67c applied for 2022-23 and 2023-24) or the actual-cost method with apportionment. For GST, the actual-cost method requires splitting the taxable portion. Default: 0% credit (cannot determine business proportion). Question: "Do you work from home? How many hours per week? Is this a ready business line/service or shared personal?"
+- **Pattern, reasoning, default, question** — Pattern: Origin Energy, AGL, Telstra on a residential address; home internet. Why insufficient: if the client works from home, a portion of home expenses may be claimable. The ATO allows either the fixed-rate method (70 cents per hour from 2024-25 under PCG 2023/1; 67c applied for 2022-23 and 2023-24) or the actual-cost method with apportionment. For GST, the actual-cost method requires splitting the taxable portion. Default: 0% credit (cannot determine business proportion). Question: "Do you work from home? How many hours per week? Is this a dedicated business line/service or shared personal?"
 
 ### 6.3 Food purchases (Woolworths -- basic food GST-free or prepared?)
 
@@ -679,7 +679,7 @@ Infer the client profile from the data first. Only ask questions the data could 
 | GST registration | $75,000 | s 23-5 |
 | Simpler BAS eligibility | Turnover < $10M | TAA 1953 |
 | Cash basis eligibility | Turnover < $2M (or $10M SBE) | s 29-40 |
-| Car limit (2024-25) | $69,674 |
+| Car limit (2024-25) | $69,674 | s 69-10 |
 | LCT threshold (2025-26, general / other vehicles) | $80,567 | LCT Act / ATO car thresholds |
 | LCT threshold (2024-25, fuel-efficient) | $91,387 | LCT Act |
 | No ABN withholding exemption | Supplies < $75 excl GST | TAA Schedule 1 |
