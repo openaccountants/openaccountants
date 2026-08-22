@@ -1,12 +1,13 @@
 ---
 name: australia-transfer-pricing
 description: Use this skill whenever asked about Australia transfer pricing rules, documentation requirements, or ATO transfer pricing compliance. Trigger on phrases like "transfer pricing Australia", "Australian TP documentation", "ATO transfer pricing", "master file Australia", "local file Australia", "CbCR Australia", "APA Australia", "Subdivision 815", "International Dealings Schedule", "IDS", "significant global entity", or any question about intercompany pricing for Australian entities.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - transfer-pricing-workflow-base
+depends_on:
+  - transfer-pricing-workflow-base
 category: transfer-pricing
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -14,9 +15,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Transfer Pricing
 
-## Australia Transfer Pricing Skill v1.0
+## Australia Transfer Pricing Skill v1.1
 
-Australia Transfer Pricing Skill v1.0
+Australia Transfer Pricing Skill v1.1
 
 ## Section 1 -- Quick Reference
 
@@ -33,7 +34,7 @@ Australia Transfer Pricing Skill v1.0
 | BEPS signatory? | Yes |
 | Currency | AUD |
 | Documentation language | English |
-| Skill version | 1.0 |
+| Skill version | 1.1 |
 
 ## Section 2 -- Documentation Requirements
 
@@ -204,7 +205,7 @@ ATO publishes Practical Compliance Guidelines indicating risk zones for various 
 | Related skill | Interaction |
 | --- | --- |
 | australia-bookkeeping | TP documentation relies on Australian accounting records |
-| australia-corporate-tax | TP adjustments directly affect taxable income |
+| au-company-tax | TP adjustments directly affect taxable income and the company return |
 | australia-gst | TP adjustments may affect customs value and GST on imports |
 | Thin capitalisation | Separate rules limit debt deductions; interact with TP for financial transactions |
 | Diverted Profits Tax (DPT) | 40% rate for diverted profits; TP documentation relevant |
