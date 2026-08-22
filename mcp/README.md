@@ -91,7 +91,7 @@ Guided workflows that turn the skills into a tax engine, not just a library:
 | `skill-feedback` | `skill_slug`, `country` | Collect structured feedback on a skill after use. |
 | `skill-review` | `skillSlug`, `scenario` | Load a skill's sections and apply them to one scenario. |
 
-> Note: the on-disk server reads the open-source markdown in `packages/`. Most skill files don't carry a `jurisdiction` field, so it's inherited from the package directory (the folder name for `us-XX`/`ca-XX`, otherwise the code its siblings declare). Quality tier is derived from whether a file's `verified_by` frontmatter names a reviewing accountant.
+> Note: the on-disk server reads the open-source markdown in `packages/`. Most skill files don't carry a `jurisdiction` field, so it's inherited from the package directory (the folder name for `us-XX`/`ca-XX`, otherwise the code its siblings declare). Quality tier is derived from a file's explicit `tier` frontmatter: only `tier: 1` **plus** a named reviewer (`reviewed_by`, or the legacy `verified_by`) reports as accountant-verified. A reviewer name on its own no longer implies tier 1, and a non-tier-1 file's reviewer is not exposed as `verified_by`.
 
 > **Canadian users on a development (clone) install — important:** the `ca-XX/` provincial packages (`ca-on`, `ca-qc`, `ca-bc`, …) are **generated**, not checked in. After cloning, run `python3 scripts/build-packages.py` once to materialise them. Until you do, the MCP won't return Canadian provincial skills via `list_skills(jurisdiction="CA-ON")` — only the federal Canadian files visible under `packages/canada/`. (The PyPI wheel ships with the packages already built.)
 

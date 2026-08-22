@@ -1,8 +1,8 @@
 ---
 name: au-super-guarantee
 description: >
-  Use this skill whenever asked about Australian Superannuation Guarantee (SG) obligations, payday super deadlines, voluntary super contributions, concessional and non-concessional caps, Division 293 tax, government co-contribution, spouse contribution tax offset, carry-forward rules, or any question about super for sole traders or employers. Trigger on phrases like "how much super do I pay", "SG rate", "super guarantee", "payday super", "7 business days super", "SG shortfall", "concessional cap", "Division 293", "salary sacrifice super", "personal super contribution deduction", "co-contribution", "BPAY super", "super clearing house", "super fund contribution", or any question about Australian superannuation. Also trigger when classifying bank statement transactions showing super fund payments, BPAY super debits, or clearing house payments. ALWAYS read this skill before touching any SG-related work.
-version: 3.0
+  Use this skill whenever asked about Australian Superannuation Guarantee (SG) obligations, payday super deadlines, voluntary super contributions, concessional and non-concessional caps, Division 293 tax, Division 296 large-balance tax, government co-contribution, spouse contribution tax offset, carry-forward rules, or any question about super for sole traders or employers. Trigger on phrases like "how much super do I pay", "SG rate", "super guarantee", "payday super", "7 business days super", "SG shortfall", "concessional cap", "Division 293", "Division 296", "$3 million super tax", "salary sacrifice super", "personal super contribution deduction", "co-contribution", "BPAY super", "super clearing house", "super fund contribution", or any question about Australian superannuation. Also trigger when classifying bank statement transactions showing super fund payments, BPAY super debits, or clearing house payments. ALWAYS read this skill before touching any SG-related work.
+version: 3.1
 jurisdiction: AU
 tax_year: 2024
 last_updated: 2026-08-02

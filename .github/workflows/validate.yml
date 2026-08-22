@@ -35,9 +35,11 @@ jobs:
           persist-credentials: false
       - name: Fail if the PR edits generated files
         id: guard
+        env:
+          BASE_REF: ${{ github.base_ref }}
         run: |
-          BASE="origin/${{ github.base_ref }}"
-          git fetch origin "${{ github.base_ref }}" --depth 50
+          BASE="origin/$BASE_REF"
+          git fetch origin "$BASE_REF" --depth 50
           BAD=$(git diff --name-only "$BASE"...HEAD -- \
             'index.json' 'llms-full.txt' 'packages/**' \
             ':(exclude)packages/us-federal/**' | head -20)
@@ -80,10 +82,15 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.11"
+      - name: Install validation dependencies
+        run: python3 -m pip install -r scripts/requirements-validation.txt
       - name: Validate changed guides (PR) / all guides (main)
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            git fetch origin "${{ github.base_ref }}" --depth 50
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            git fetch origin "$BASE_REF" --depth 50
             python3 scripts/validate-guides.py --changed-only --no-index-check
           else
             python3 scripts/validate-guides.py --no-index-check

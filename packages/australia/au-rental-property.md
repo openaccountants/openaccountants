@@ -1,7 +1,7 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing, CGT on disposal, non-resident withholding, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.0"
+version: "1.1"
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-07-13

@@ -31,34 +31,85 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import date
-
-from openpyxl import Workbook
-from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
-from openpyxl.utils import get_column_letter
-from openpyxl.worksheet.datavalidation import DataValidation
 
 
 # ---------------------------------------------------------------------------
 # Args + env
 # ---------------------------------------------------------------------------
 
-ap = argparse.ArgumentParser()
-ap.add_argument("--slugs", help="Comma-separated skill slugs to include.")
-ap.add_argument("--jurisdiction", help="Jurisdiction code (e.g. US-ND, MT).")
-ap.add_argument("--verifier", required=True, help="Verifier display name (goes on cover sheet + per-skill sign-off rows).")
-ap.add_argument("--credential", default="", help="Verifier credential (e.g. 'CPA', 'CA(SA)').")
-ap.add_argument("--title", default="OpenAccountants — Skill Verification Workbook", help="Workbook title shown on the cover.")
-ap.add_argument("--output", required=True, help="Output .xlsx path.")
-args = ap.parse_args()
+SKILL_SLUG_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
+JURISDICTION_RE = re.compile(r"(?:general|[A-Z0-9]+(?:[-/][A-Z0-9]+)*)\Z")
 
-if not args.slugs and not args.jurisdiction:
-    sys.exit("Provide --slugs OR --jurisdiction.")
+args = None
+URL = ""
+HEADERS = {}
 
-URL = os.environ["NEXT_PUBLIC_SUPABASE_URL"]
-KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
-HEADERS = {"apikey": KEY, "Authorization": f"Bearer {KEY}"}
+
+def validate_skill_slug(value: str) -> str:
+    """Validate the slug grammar used by the repository inventory."""
+    if not SKILL_SLUG_RE.fullmatch(value):
+        raise ValueError(
+            f"invalid skill slug {value!r}; expected lowercase letters and digits "
+            "separated by single hyphens"
+        )
+    return value
+
+
+def parse_slug_list(value: str) -> list[str]:
+    """Parse a comma-separated list without treating commas as slug content."""
+    slugs = [part.strip() for part in value.split(",")]
+    if not slugs or any(not slug for slug in slugs):
+        raise ValueError("--slugs must contain one or more non-empty slugs")
+    return [validate_skill_slug(slug) for slug in slugs]
+
+
+def validate_jurisdiction(value: str) -> str:
+    """Validate current jurisdiction-code syntax, including grouped regions."""
+    if not JURISDICTION_RE.fullmatch(value):
+        raise ValueError(
+            f"invalid jurisdiction {value!r}; expected uppercase alphanumeric "
+            "components separated by hyphens or slashes (or 'general')"
+        )
+    return value
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser()
+    selector = parser.add_mutually_exclusive_group(required=True)
+    selector.add_argument("--slugs", help="Comma-separated skill slugs to include.")
+    selector.add_argument("--jurisdiction", help="Jurisdiction code (e.g. US-ND, MT).")
+    parser.add_argument(
+        "--verifier",
+        required=True,
+        help="Verifier display name (goes on cover sheet + per-skill sign-off rows).",
+    )
+    parser.add_argument(
+        "--credential", default="", help="Verifier credential (e.g. 'CPA', 'CA(SA)')."
+    )
+    parser.add_argument(
+        "--title",
+        default="OpenAccountants — Skill Verification Workbook",
+        help="Workbook title shown on the cover.",
+    )
+    parser.add_argument("--output", required=True, help="Output .xlsx path.")
+    return parser
+
+
+def parse_arguments(argv=None):
+    parser = build_parser()
+    parsed = parser.parse_args(argv)
+    try:
+        if parsed.slugs is not None:
+            parsed.slug_list = parse_slug_list(parsed.slugs)
+        else:
+            parsed.slug_list = None
+            parsed.jurisdiction = validate_jurisdiction(parsed.jurisdiction)
+    except ValueError as exc:
+        parser.error(str(exc))
+    return parsed
 
 
 # ---------------------------------------------------------------------------
@@ -71,25 +122,59 @@ def http_get(path: str):
         return json.load(r)
 
 
+SKILL_COLUMNS = "id,slug,name,description,tier,category,jurisdiction,tax_year"
+
+
+def rest_query_path(resource: str, **params: str) -> str:
+    """Build an encoded PostgREST path from filter values, never expressions."""
+    query = urllib.parse.urlencode(
+        params,
+        quote_via=urllib.parse.quote,
+        safe="",
+    )
+    return f"/rest/v1/{resource}?{query}"
+
+
+def skills_query_path(*, slugs=None, jurisdiction=None) -> str:
+    """Build the published-skills query after validating its one selector."""
+    if (slugs is None) == (jurisdiction is None):
+        raise ValueError("provide exactly one of slugs or jurisdiction")
+    if slugs is not None:
+        valid_slugs = [validate_skill_slug(slug) for slug in slugs]
+        if not valid_slugs:
+            raise ValueError("provide at least one slug")
+        in_clause = "(" + ",".join(f'"{slug}"' for slug in valid_slugs) + ")"
+        return rest_query_path(
+            "skills",
+            slug=f"in.{in_clause}",
+            is_published="eq.true",
+            select=SKILL_COLUMNS,
+            order="slug",
+        )
+    return rest_query_path(
+        "skills",
+        jurisdiction=f"eq.{validate_jurisdiction(jurisdiction)}",
+        is_published="eq.true",
+        select=SKILL_COLUMNS,
+        order="slug",
+    )
+
+
 def fetch_skills():
     """Return list of skill rows with markdown_content joined from current version."""
-    if args.slugs:
-        slug_list = [s.strip() for s in args.slugs.split(",") if s.strip()]
-        in_clause = "(" + ",".join(f'"{s}"' for s in slug_list) + ")"
-        skills = http_get(
-            f"/rest/v1/skills?slug=in.{in_clause}&is_published=eq.true"
-            "&select=id,slug,name,description,tier,category,jurisdiction,tax_year&order=slug"
-        )
-    else:
-        skills = http_get(
-            f"/rest/v1/skills?jurisdiction=eq.{args.jurisdiction}&is_published=eq.true"
-            "&select=id,slug,name,description,tier,category,jurisdiction,tax_year&order=slug"
-        )
+    skills = http_get(
+        skills_query_path(slugs=args.slug_list, jurisdiction=args.jurisdiction)
+    )
 
     for s in skills:
         versions = http_get(
-            f"/rest/v1/skill_versions?skill_id=eq.{s['id']}&is_current=eq.true"
-            "&select=markdown_content,version&limit=1"
+            rest_query_path(
+                "skill_versions",
+                skill_id=f"eq.{s['id']}",
+                is_current="eq.true",
+                select="markdown_content,version",
+                limit="1",
+            )
         )
         s["markdown"] = versions[0]["markdown_content"] if versions else ""
         s["version"] = versions[0]["version"] if versions else None
@@ -131,23 +216,54 @@ def parse_sections(md: str):
 # xlsx styling helpers
 # ---------------------------------------------------------------------------
 
-THICK = Side(border_style="medium", color="000000")
-THIN = Side(border_style="thin", color="999999")
-HEADER_FILL = PatternFill("solid", fgColor="047857")
-SUBHEAD_FILL = PatternFill("solid", fgColor="ECFDF5")
-SIGNOFF_FILL = PatternFill("solid", fgColor="FFF7ED")
-ZEBRA_FILL = PatternFill("solid", fgColor="F9FAFB")
-HEADER_FONT = Font(bold=True, color="FFFFFF", size=11)
-TITLE_FONT = Font(bold=True, size=18)
-H2_FONT = Font(bold=True, size=13)
-WRAP = Alignment(wrap_text=True, vertical="top")
-TOP = Alignment(vertical="top")
-
 STATUS_OPTIONS = '"correct,needs-correction,wrong,needs-context,skip"'
-STATUS_DV = DataValidation(type="list", formula1=STATUS_OPTIONS, allow_blank=True)
-STATUS_DV.error = "Pick one of: correct / needs-correction / wrong / needs-context / skip"
-STATUS_DV.prompt = "correct = fact is right • needs-correction = small fix (write it in the next column) • wrong = section is misleading • needs-context = unclear / add detail • skip = not in your scope"
-STATUS_DV.promptTitle = "Section status"
+
+
+def initialise_workbook_support():
+    """Import the optional workbook dependency after CLI validation."""
+    global Workbook, Alignment, Font, PatternFill, Side
+    global get_column_letter, DataValidation
+    global THICK, THIN, HEADER_FILL, SUBHEAD_FILL, SIGNOFF_FILL, ZEBRA_FILL
+    global HEADER_FONT, TITLE_FONT, H2_FONT, WRAP, TOP, STATUS_DV
+
+    from openpyxl import Workbook as _Workbook
+    from openpyxl.styles import Alignment as _Alignment
+    from openpyxl.styles import Font as _Font
+    from openpyxl.styles import PatternFill as _PatternFill
+    from openpyxl.styles import Side as _Side
+    from openpyxl.utils import get_column_letter as _get_column_letter
+    from openpyxl.worksheet.datavalidation import DataValidation as _DataValidation
+
+    Workbook = _Workbook
+    Alignment = _Alignment
+    Font = _Font
+    PatternFill = _PatternFill
+    Side = _Side
+    get_column_letter = _get_column_letter
+    DataValidation = _DataValidation
+
+    THICK = Side(border_style="medium", color="000000")
+    THIN = Side(border_style="thin", color="999999")
+    HEADER_FILL = PatternFill("solid", fgColor="047857")
+    SUBHEAD_FILL = PatternFill("solid", fgColor="ECFDF5")
+    SIGNOFF_FILL = PatternFill("solid", fgColor="FFF7ED")
+    ZEBRA_FILL = PatternFill("solid", fgColor="F9FAFB")
+    HEADER_FONT = Font(bold=True, color="FFFFFF", size=11)
+    TITLE_FONT = Font(bold=True, size=18)
+    H2_FONT = Font(bold=True, size=13)
+    WRAP = Alignment(wrap_text=True, vertical="top")
+    TOP = Alignment(vertical="top")
+
+    STATUS_DV = DataValidation(type="list", formula1=STATUS_OPTIONS, allow_blank=True)
+    STATUS_DV.error = (
+        "Pick one of: correct / needs-correction / wrong / needs-context / skip"
+    )
+    STATUS_DV.prompt = (
+        "correct = fact is right • needs-correction = small fix (write it in the next "
+        "column) • wrong = section is misleading • needs-context = unclear / add "
+        "detail • skip = not in your scope"
+    )
+    STATUS_DV.promptTitle = "Section status"
 
 
 def sheet_name(slug: str) -> str:
@@ -171,7 +287,15 @@ def sheet_name(slug: str) -> str:
 # Build workbook
 # ---------------------------------------------------------------------------
 
-def main():
+def main(argv=None):
+    global args, URL, HEADERS
+
+    args = parse_arguments(argv)
+    URL = os.environ["NEXT_PUBLIC_SUPABASE_URL"]
+    key = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+    HEADERS = {"apikey": key, "Authorization": f"Bearer {key}"}
+    initialise_workbook_support()
+
     skills = fetch_skills()
     if not skills:
         sys.exit("No skills returned. Check slug list or jurisdiction.")

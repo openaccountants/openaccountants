@@ -72,6 +72,12 @@ Before changing an existing `skills/**` file, the exporter fetches the current
 - Any other mismatch: abort the source-writing phase, report a conflict, and
   require ingestion or human resolution. Never use last-writer-wins.
 
+The rendered frontmatter must also pass the repository's strict YAML parser.
+The preflight rejects malformed YAML, duplicate keys, non-mapping roots,
+non-list `depends_on` values, and known string fields that YAML 1.1 would
+coerce to another type (for example, unquoted `jurisdiction: NO` becomes the
+boolean `false`).
+
 The exporter must also abort on a non-fast-forward push and retry from a fresh
 fetch. Body, frontmatter, content revision, and imported Git blob must be stored
 in one transaction so a stale body cannot be combined with newer metadata.
@@ -95,6 +101,7 @@ For a genuinely new path, `expected_repo_blob` is `null`. The private job then
 runs, before committing or pushing:
 
 ```bash
+python3 -m pip install -r scripts/requirements-validation.txt
 python3 scripts/check-sync-integrity.py \
   --base origin/main \
   --worktree \
@@ -103,10 +110,11 @@ python3 scripts/check-sync-integrity.py \
 ```
 
 Strict sync mode fails on a blob conflict, missing or malformed provenance,
-backwards `last_updated` or numeric `version`, loss of an ordered numeric
-version, a newly inconsistent body-heading version, and an unversioned body
-rewrite. It always stops on a source-guide deletion or rename; a maintainer must
-perform any approved migration through a separate controlled process.
+invalid or ambiguous YAML frontmatter, backwards `last_updated` or numeric
+`version`, loss of an ordered numeric version, a newly inconsistent body-heading
+version, and an unversioned body rewrite. It always stops on a source-guide
+deletion or rename; a maintainer must perform any approved migration through a
+separate controlled process.
 
 ### Public audit
 

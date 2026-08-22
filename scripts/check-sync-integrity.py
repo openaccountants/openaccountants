@@ -25,6 +25,8 @@ from datetime import date
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
+from frontmatter_yaml import load_frontmatter
+
 
 SYNC_BOT_NAMES = {"openaccountants-sync[bot]"}
 SYNC_BOT_EMAILS = {"sync@openaccountants.com"}
@@ -232,7 +234,7 @@ def parse_date(raw: str | None) -> date | None:
         return None
 
 
-def parse_guide(text: str) -> Guide:
+def parse_guide(text: str, *, strict_yaml: bool = True) -> Guide:
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     lines = normalized.split("\n")
     if not lines or lines[0].strip() != "---":
@@ -242,6 +244,9 @@ def parse_guide(text: str) -> Guide:
         end = next(index for index in range(1, len(lines)) if lines[index].strip() == "---")
     except StopIteration as exc:
         raise ValueError("missing closing frontmatter delimiter") from exc
+
+    if strict_yaml:
+        load_frontmatter("\n".join(lines[1:end]))
 
     fields: dict[str, str] = {}
     for line in lines[1:end]:
@@ -309,7 +314,22 @@ def compare_existing_guides(
     try:
         before = parse_guide(before_text)
     except ValueError as exc:
-        return [Finding("error", "invalid-base", path, f"base guide is invalid: {exc}")]
+        # A malformed legacy base must be repairable.  Parse its simple scalar
+        # metadata with the established tolerant reader so the normal date,
+        # version and body-change guards still apply, while requiring the
+        # candidate itself to pass strict YAML below.
+        try:
+            before = parse_guide(before_text, strict_yaml=False)
+        except ValueError:
+            return [Finding("error", "invalid-base", path, f"base guide is invalid: {exc}")]
+        findings.append(
+            Finding(
+                "notice",
+                "frontmatter-repaired",
+                path,
+                f"candidate repairs invalid base frontmatter: {exc}",
+            )
+        )
     try:
         after = parse_guide(after_text)
     except ValueError as exc:
@@ -613,6 +633,49 @@ def apply_provenance_checks(
     return findings
 
 
+
+REVIEWER_METADATA_KEYS = ("reviewed_by", "verified_by", "review_status")
+
+
+def _is_reviewer_metadata_only_change(before_text, after_text):
+    """True when the only difference between two guide revisions is the value or
+    presence of the governed reviewer-metadata frontmatter keys, with the body
+    byte-identical. Used to allow the sync bot's privacy edits (name withheld /
+    name stripped) without opening the door to unattributed content changes."""
+    if before_text is None or after_text is None:
+        return False
+
+    def split_doc(text):
+        if not text.startswith("---"):
+            return None, text
+        end = text.find("\n---", 3)
+        if end < 0:
+            return None, text
+        return text[3:end], text[end + 4 :]
+
+    fm_before, body_before = split_doc(before_text)
+    fm_after, body_after = split_doc(after_text)
+    if fm_before is None or fm_after is None:
+        return False
+    if body_before != body_after:
+        return False
+
+    def strip_governed(fm):
+        kept = []
+        for line in fm.splitlines():
+            key = line.split(":", 1)[0].strip().lower() if ":" in line else ""
+            if key in REVIEWER_METADATA_KEYS:
+                continue
+            kept.append(line)
+        return "\n".join(kept)
+
+    if strip_governed(fm_before) != strip_governed(fm_after):
+        return False
+    # The governed lines must actually differ, or this is a no-op commit that
+    # should never have been flagged in the first place (still fine to allow).
+    return True
+
+
 def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
     findings: list[Finding] = []
     commits = filter(None, git_text(repo, "rev-list", "--reverse", f"{base}..{head}").splitlines())
@@ -650,6 +713,25 @@ def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
                 else None
             )
             if not is_guide_document(before_text) and not is_guide_document(after_text):
+                continue
+            # Reviewer-privacy exemption (maintainer decision, 2026-08-21). The sync
+            # bot is ALLOWED to change the governed reviewer-metadata keys without a
+            # CAS preflight: when an accountant hides their public profile, the bot
+            # must strip or withhold their name here, and there is no human actor to
+            # attribute that edit to. The exemption is deliberately narrow — the
+            # commit's per-file change must be confined to the reviewer keys
+            # (reviewed_by / verified_by / review_status) with the BODY untouched.
+            # Anything more still requires the preflight and still goes red.
+            if _is_reviewer_metadata_only_change(before_text, after_text):
+                findings.append(
+                    Finding(
+                        "notice",
+                        "bot-reviewer-metadata-update",
+                        change.display_path,
+                        f"sync bot commit {commit[:12]} updated reviewer-privacy metadata only "
+                        "(reviewed_by/verified_by/review_status); body unchanged — allowed",
+                    )
+                )
                 continue
             findings.append(
                 Finding(

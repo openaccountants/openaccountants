@@ -1,7 +1,7 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian resident's capital gains tax question. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\". Covers CGT events, cost base, 50% discount, SBCGT concessions, main residence exemption. For non-residents selling Australian assets see au-nonresident-cgt."
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-07-13

@@ -11,7 +11,7 @@ description: >
   "activity statement", "annual leave", "long service leave",
   "minimum wage Australia", or any question about running payroll in Australia.
   ALWAYS read this skill before processing any Australian payroll work.
-version: 2.0
+version: 2.1
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-08-02

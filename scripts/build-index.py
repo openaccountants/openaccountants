@@ -154,6 +154,12 @@ def build_index():
     unreviewed_markers = {"pending", "none", "no", "false", "-", "n/a", "tbd"}
 
     def is_reviewed(guide):
+        # Same rule as the MCP server's `_quality_tier`: only an explicit
+        # `tier: 1` plus a named reviewer counts. A reviewer name alone never
+        # implies sign-off, or this inventory reports guides as
+        # accountant-reviewed that the MCP server serves as research-verified.
+        if str(guide["tier"] or "").strip() != "1":
+            return False
         for key in ("reviewed_by", "verified_by"):
             value = guide[key]
             if value and str(value).strip().lower() not in unreviewed_markers:

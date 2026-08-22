@@ -39,6 +39,7 @@ from __future__ import annotations
 import logging
 import os
 import re
+from hashlib import sha256
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from functools import lru_cache
@@ -79,11 +80,12 @@ FEEDBACK_MAX_TITLE_CHARS = 120
 
 def _safe_resolve(packages_dir: Path, *segments: str) -> Path:
     """Resolve *segments* under *packages_dir* and reject escapes."""
-    joined = packages_dir.joinpath(*segments).resolve()
+    root = packages_dir.resolve()
+    joined = root.joinpath(*segments).resolve()
     try:
-        joined.relative_to(packages_dir)
+        joined.relative_to(root)
     except ValueError:
-        raise ValueError(f"Path escapes allowed root: {joined}")
+        raise ValueError("Path escapes allowed root")
     return joined
 
 
@@ -164,7 +166,7 @@ def _first_h1(body: str) -> str | None:
 #: spelling that CONTRIBUTING.md says is being retired. Read both, newest first,
 #: or every guide reviewed under the current convention reports as unreviewed.
 _VERIFIER_KEYS = ("reviewed_by", "verified_by")
-_NOT_A_VERIFIER = {"pending", "pending_review", "none", "n/a", "-"}
+_NOT_A_VERIFIER = {"pending", "pending_review", "none", "no", "false", "n/a", "tbd", "-"}
 
 
 def _real_verifier(meta: dict[str, Any]) -> str | None:
@@ -180,8 +182,18 @@ def _real_verifier(meta: dict[str, Any]) -> str | None:
 
 
 def _quality_tier(meta: dict[str, Any]) -> str:
-    """A named verifier means accountant-verified; otherwise research-verified."""
-    return "accountant-verified" if _real_verifier(meta) else "research-verified"
+    """Map explicit frontmatter tier to the public quality identifier.
+
+    Tier 1 also requires a named reviewer. Missing or inconsistent metadata
+    fails closed as research-verified rather than inferring sign-off from a
+    reviewer field alone.
+    """
+    tier = str(meta.get("tier") or "").strip()
+    return (
+        "accountant-verified"
+        if tier == "1" and _real_verifier(meta)
+        else "research-verified"
+    )
 
 
 def _split_sections(body: str) -> list[dict[str, Any]]:
@@ -232,58 +244,180 @@ def _dir_jurisdiction(topdir: str, frontmatter_codes: Counter) -> str:
 
 
 @lru_cache(maxsize=1)
-def _index() -> dict[str, dict[str, Any]]:
-    """Map skill slug -> metadata record.
-
-    A file counts as a skill when its YAML frontmatter carries a ``name``.
-    Shared files that appear in several country bundles collapse to a single
-    entry (first one wins) so each slug is listed once.
-    """
+def _catalogue() -> tuple[
+    dict[str, dict[str, Any]],
+    dict[str, tuple[str, ...]],
+    dict[str, Any],
+]:
+    """Build the index, unresolved slug map, and duplicate inventory."""
     out: dict[str, dict[str, Any]] = {}
     if not PACKAGES_DIR.is_dir():
-        return out
+        return out, {}, {
+            "skill_files": 0,
+            "slugs": 0,
+            "duplicate_slugs": 0,
+            "identical_aliases": 0,
+            "federal_precedence": 0,
+            "ambiguous_slugs": 0,
+            "rejected_paths": [],
+        }
 
     # Pass 1: parse every skill file; tally each directory's declared codes.
     rows: list[dict[str, Any]] = []
     dir_codes: dict[str, Counter] = defaultdict(Counter)
+    rejected_paths: list[str] = []
     for path in sorted(PACKAGES_DIR.rglob("*.md")):
+        relpath = path.relative_to(PACKAGES_DIR)
         try:
-            text = path.read_text(encoding="utf-8")
+            safe_path = _safe_resolve(PACKAGES_DIR, relpath.as_posix())
+        except ValueError:
+            rejected_paths.append(relpath.as_posix())
+            continue
+        try:
+            text = safe_path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):
             continue
-        meta, body = _parse_frontmatter(text, source=path.relative_to(PACKAGES_DIR))
+        meta, body = _parse_frontmatter(text, source=relpath)
         slug = meta.get("name")
         if not slug or not isinstance(slug, str):
             continue
-        topdir = path.relative_to(PACKAGES_DIR).parts[0]
+        topdir = relpath.parts[0]
         own = str(meta.get("jurisdiction") or "").strip().upper()
         if own:
             dir_codes[topdir][own] += 1
-        mtime = datetime.fromtimestamp(path.stat().st_mtime, tz=timezone.utc)
+        quality_tier = _quality_tier(meta)
         rows.append({
             "slug": slug,
             "title": _first_h1(body) or slug,
             "own_jur": own,
             "topdir": topdir,
             "category": str(meta.get("category") or ""),
-            "quality_tier": _quality_tier(meta),
-            "verified_by": _real_verifier(meta),
-            "last_updated": mtime.date().isoformat(),
-            "relpath": str(path.relative_to(PACKAGES_DIR)),
+            "quality_tier": quality_tier,
+            "verified_by": (
+                _real_verifier(meta)
+                if quality_tier == "accountant-verified"
+                else None
+            ),
+            "last_updated": str(meta.get("last_updated") or ""),
+            "relpath": relpath.as_posix(),
+            # Hash the guidance, not the file. Over whole bytes a differing
+            # `tier`/`verified_by`/`last_updated` stamp is indistinguishable
+            # from genuinely different tax law, so metadata-only twins were
+            # dropped as if their content conflicted.
+            "content_hash": sha256(body.encode("utf-8")).digest(),
         })
 
-    # Pass 2: resolve jurisdiction (own field wins; else inherit from dir).
-    for r in rows:
-        if r["slug"] in out:
+    # Pass 2: choose only an authority supported by the repository contract.
+    # packages/us-federal is the hand-authored exception. Other byte-identical
+    # package aliases are interchangeable. Divergent generated copies have no
+    # declared precedence, so omit only that slug and fail closed when asked.
+    candidates: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        candidates[row["slug"]].append(row)
+
+    ambiguous: dict[str, tuple[str, ...]] = {}
+    duplicate_slugs = identical_aliases = federal_precedence = 0
+    for slug in sorted(candidates):
+        group = candidates[slug]
+        if len(group) > 1:
+            duplicate_slugs += 1
+        federal = [r for r in group if r["topdir"] == "us-federal"]
+        if len(federal) == 1:
+            selected = federal[0]
+            if len(group) > 1:
+                federal_precedence += 1
+        elif len({r["content_hash"] for r in group}) == 1:
+            selected = min(group, key=lambda r: r["relpath"])
+            if len(group) > 1:
+                identical_aliases += 1
+        elif len(group) == 1:
+            selected = group[0]
+        else:
+            ambiguous[slug] = tuple(sorted(r["relpath"] for r in group))
             continue
-        r["jurisdiction"] = r["own_jur"] or _dir_jurisdiction(r["topdir"], dir_codes[r["topdir"]])
-        out[r["slug"]] = r
-    return out
+
+        selected["jurisdiction"] = selected["own_jur"] or _dir_jurisdiction(
+            selected["topdir"], dir_codes[selected["topdir"]]
+        )
+        selected.pop("content_hash")
+        out[slug] = selected
+
+    for slug, paths in sorted(ambiguous.items()):
+        log.warning(
+            "skill %r omitted from the catalogue: packaged copies carry "
+            "different guidance (%s). Resolve the duplicate source names; "
+            "until then get_skill(%r) fails closed.",
+            slug, ", ".join(paths), slug,
+        )
+
+    report = {
+        "skill_files": len(rows),
+        "slugs": len(candidates),
+        "duplicate_slugs": duplicate_slugs,
+        "identical_aliases": identical_aliases,
+        "federal_precedence": federal_precedence,
+        "ambiguous_slugs": len(ambiguous),
+        "rejected_paths": rejected_paths,
+    }
+    return out, ambiguous, report
+
+
+def _index() -> dict[str, dict[str, Any]]:
+    """Map unambiguous skill slugs to metadata records."""
+    return _catalogue()[0]
+
+
+def _clear_index_cache() -> None:
+    """Clear the complete cached catalogue (keeps the former test hook)."""
+    _catalogue.cache_clear()
+
+
+_index.cache_clear = _clear_index_cache  # type: ignore[attr-defined]
+
+
+def _catalogue_warning() -> str | None:
+    """Operator-facing note that some slugs are absent from the catalogue."""
+    _, ambiguous, _ = _catalogue()
+    if not ambiguous:
+        return None
+    return (
+        f"{len(ambiguous)} skill slug(s) are absent from the catalogue because "
+        f"packaged copies carry different guidance: {', '.join(sorted(ambiguous))}. "
+        "Their jurisdictions will look thinner than the corpus really is."
+    )
+
+
+def _with_catalogue_warning(result: dict[str, Any]) -> dict[str, Any]:
+    """Attach the dropped-slug note so no status can hide it from the caller."""
+    note = _catalogue_warning()
+    if note:
+        existing = result.get("warning")
+        result["warning"] = f"{existing} {note}" if existing else note
+    return result
+
+
+def _duplicate_report() -> dict[str, Any]:
+    """Return a deterministic duplicate inventory for maintainer diagnostics."""
+    _, ambiguous, counts = _catalogue()
+    return {
+        **counts,
+        "ambiguous": [
+            {"slug": slug, "paths": list(paths)}
+            for slug, paths in sorted(ambiguous.items())
+        ],
+    }
 
 
 def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
     """Return (index record, body markdown) for a slug or raise ValueError."""
-    rec = _index().get(slug)
+    index, ambiguous, _ = _catalogue()
+    if slug in ambiguous:
+        paths = ", ".join(ambiguous[slug])
+        raise ValueError(
+            f"Skill '{slug}' is ambiguous because packaged copies differ: "
+            f"{paths}. Resolve the duplicate source names before using it."
+        )
+    rec = index.get(slug)
     if rec is None:
         raise ValueError(f"Skill '{slug}' not found")
     fpath = _safe_resolve(PACKAGES_DIR, rec["relpath"])
@@ -796,7 +930,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
     #    is more important than picking a country first.
     if intent and not intent_key:
         suggest = candidates if candidates else list(_INTENT_CATALOGUE)[:5]
-        return {
+        return _with_catalogue_warning({
             "status": "needs_clarification",
             "intent_raw": intent,
             "candidates": _catalogue_entries(suggest),
@@ -804,11 +938,11 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                 f"Couldn't confidently match the intent {intent!r}. "
                 "Ask the user to pick one of the candidates below, then call start() again."
             ),
-        }
+        })
 
     # 2) Nothing provided.
     if not intent_key and not jx:
-        return {
+        return _with_catalogue_warning({
             "status": "needs_input",
             "needs": ["intent", "jurisdiction"],
             "message": (
@@ -823,11 +957,11 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                 "Call list_skills() to enumerate every jurisdiction."
             ),
             "guardrails": _GUARDRAILS,
-        }
+        })
 
     # 3) Intent only.
     if intent_key and not jx:
-        return {
+        return _with_catalogue_warning({
             "status": "needs_input",
             "needs": ["jurisdiction"],
             "intent": intent_key,
@@ -837,13 +971,13 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                 "Ask which country or jurisdiction (ISO code or name), then call start() again."
             ),
             "available_jurisdictions": _jurisdictions_for_intent(intent_key),
-        }
+        })
 
     # 4) Jurisdiction only.
     if jx and not intent_key:
         avail = _intents_for_jurisdiction(jx)
         if not avail:
-            return {
+            return _with_catalogue_warning({
                 "status": "needs_input",
                 "needs": ["intent"],
                 "jurisdiction": jx,
@@ -852,8 +986,8 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                     "Confirm the code with the user — call list_skills() to see what's available."
                 ),
                 "available_intents": _catalogue_entries(),
-            }
-        return {
+            })
+        return _with_catalogue_warning({
             "status": "needs_input",
             "needs": ["intent"],
             "jurisdiction": jx,
@@ -862,14 +996,14 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
                 "then call start() again with both arguments."
             ),
             "available_intents": _catalogue_entries(avail),
-        }
+        })
 
     # 5) Both inputs resolved — build the plan.
     assert intent_key and jx
     skills = _skills_for_intent(jx, intent_key)
     label = _INTENT_CATALOGUE[intent_key]["label"]
     if not skills:
-        return {
+        return _with_catalogue_warning({
             "status": "ready",
             "intent": intent_key,
             "intent_label": label,
@@ -881,8 +1015,8 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
             ),
             "skills_to_load": [],
             "guardrails": _GUARDRAILS,
-        }
-    return {
+        })
+    return _with_catalogue_warning({
         "status": "ready",
         "intent": intent_key,
         "intent_label": label,
@@ -901,7 +1035,7 @@ def start(intent: str | None = None, jurisdiction: str | None = None) -> dict[st
             "entity type, etc.), say so and stop instead of guessing."
         ),
         "guardrails": _GUARDRAILS,
-    }
+    })
 
 
 # ---------------------------------------------------------------------------

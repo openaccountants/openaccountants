@@ -1,20 +1,35 @@
 from __future__ import annotations
 
+import contextlib
 import importlib.util
+import io
 import json
 import subprocess
 import sys
 import tempfile
 import unittest
+import urllib.parse
 from pathlib import Path
 
 
 SCRIPT_PATH = Path(__file__).resolve().parents[1] / "scripts" / "check-sync-integrity.py"
+sys.path.insert(0, str(SCRIPT_PATH.parent))
 SPEC = importlib.util.spec_from_file_location("check_sync_integrity", SCRIPT_PATH)
 assert SPEC is not None and SPEC.loader is not None
 sync_integrity = importlib.util.module_from_spec(SPEC)
 sys.modules[SPEC.name] = sync_integrity
 SPEC.loader.exec_module(sync_integrity)
+
+WORKBOOK_SCRIPT_PATH = (
+    Path(__file__).resolve().parents[1] / "scripts" / "build-verification-workbook.py"
+)
+WORKBOOK_SPEC = importlib.util.spec_from_file_location(
+    "build_verification_workbook", WORKBOOK_SCRIPT_PATH
+)
+assert WORKBOOK_SPEC is not None and WORKBOOK_SPEC.loader is not None
+build_workbook = importlib.util.module_from_spec(WORKBOOK_SPEC)
+sys.modules[WORKBOOK_SPEC.name] = build_workbook
+WORKBOOK_SPEC.loader.exec_module(build_workbook)
 
 
 def guide(
@@ -155,6 +170,32 @@ class GuideComparisonTests(unittest.TestCase):
         )
         self.assertEqual([], findings)
 
+    def test_invalid_yaml_fails_before_metadata_comparison(self) -> None:
+        malformed = guide().replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on: - workflow-base\n",
+        )
+        findings = self.compare(guide(), malformed)
+        self.assertIn("invalid-candidate", codes(findings, "error"))
+
+    def test_invalid_legacy_base_can_be_repaired(self) -> None:
+        malformed = guide().replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on: - workflow-base\n",
+        )
+        repaired = guide().replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on:\n  - workflow-base\n",
+        )
+        findings = self.compare(malformed, repaired)
+        self.assertEqual(set(), codes(findings, "error"))
+        self.assertIn("frontmatter-repaired", codes(findings, "notice"))
+
+    def test_yaml_boolean_jurisdiction_fails_closed(self) -> None:
+        malformed = guide().replace("jurisdiction: GLOBAL", "jurisdiction: NO")
+        findings = self.compare(guide(), malformed)
+        self.assertIn("invalid-candidate", codes(findings, "error"))
+
     def test_existing_version_cannot_be_removed(self) -> None:
         findings = self.compare(
             guide(),
@@ -277,6 +318,29 @@ class GitBackedIntegrityTests(unittest.TestCase):
             self.repo, self.base, None, "sync", provenance
         )
         self.assertIn("cas-conflict", codes(findings, "error"))
+
+    def test_sync_preflight_rejects_malformed_yaml_before_publication(self) -> None:
+        malformed = guide(
+            last_updated="2026-08-07",
+            version="1.2",
+            heading_version="1.2",
+            body="Platform edit with malformed metadata.",
+        ).replace(
+            "category: foundation\n",
+            "category: foundation\ndepends_on: - workflow-base\n",
+        )
+        self.write_candidate(malformed)
+        expected_blob = sync_integrity.revision_blob(self.repo, self.base, self.path)
+        provenance = {
+            self.path: {"expected_repo_blob": expected_blob, "content_revision": 2}
+        }
+
+        findings, count = sync_integrity.run_integrity_check(
+            self.repo, self.base, None, "sync", provenance
+        )
+
+        self.assertEqual(1, count)
+        self.assertIn("invalid-candidate", codes(findings, "error"))
 
     def test_missing_provenance_fails_closed(self) -> None:
         self.write_candidate(
@@ -501,6 +565,121 @@ class GitBackedIntegrityTests(unittest.TestCase):
             self.path: {"expected_repo_blob": expected_blob, "content_revision": 1}
         }
         self.assertEqual(payload, json.loads(json.dumps(payload)))
+
+
+class VerificationWorkbookQueryTests(unittest.TestCase):
+    base_args = ["--verifier", "Test Verifier", "--output", "test.xlsx"]
+
+    def test_repository_inventory_matches_validated_selector_grammar(self) -> None:
+        index_path = Path(__file__).resolve().parents[1] / "index.json"
+        guides = json.loads(index_path.read_text(encoding="utf-8"))["guides"]
+
+        for slug in {guide["slug"] for guide in guides}:
+            self.assertEqual(slug, build_workbook.validate_skill_slug(slug))
+        for jurisdiction in {
+            guide["jurisdiction"] for guide in guides if guide.get("jurisdiction")
+        }:
+            self.assertEqual(
+                jurisdiction,
+                build_workbook.validate_jurisdiction(jurisdiction),
+            )
+
+    def test_valid_selectors_include_grouped_and_multi_part_jurisdictions(self) -> None:
+        self.assertEqual(
+            ["us-1099-k-and-payment-processors", "ifrs15-revenue"],
+            build_workbook.parse_slug_list(
+                "us-1099-k-and-payment-processors, ifrs15-revenue"
+            ),
+        )
+        for jurisdiction in ("US-NY-NYC", "EU-27", "EU/EEA/CH/UK", "GLOBAL", "general"):
+            self.assertEqual(
+                jurisdiction,
+                build_workbook.validate_jurisdiction(jurisdiction),
+            )
+
+    def test_hostile_or_malformed_slug_components_fail_before_query_build(self) -> None:
+        for slug in (
+            "valid&select=*",
+            "valid#fragment",
+            "valid+slug",
+            "valid slug",
+            'valid"slug',
+            "valid,slug",
+            "valid/slug",
+        ):
+            with self.subTest(slug=slug), self.assertRaises(ValueError):
+                build_workbook.skills_query_path(slugs=[slug])
+
+        for slug_list in ("", "valid,", ",valid", "valid,,other"):
+            with self.subTest(slug_list=slug_list), self.assertRaises(ValueError):
+                build_workbook.parse_slug_list(slug_list)
+
+    def test_hostile_jurisdictions_fail_before_query_build(self) -> None:
+        for jurisdiction in (
+            "US-ND&select=*",
+            "US#fragment",
+            "US+CA",
+            "US CA",
+            "US,CA",
+            '"US"',
+            "General",
+        ):
+            with self.subTest(jurisdiction=jurisdiction), self.assertRaises(ValueError):
+                build_workbook.skills_query_path(jurisdiction=jurisdiction)
+
+    def test_selectors_are_mutually_exclusive_and_required(self) -> None:
+        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+            build_workbook.parse_arguments(self.base_args)
+        with contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+            build_workbook.parse_arguments(
+                [
+                    "--slugs",
+                    "ifrs15-revenue",
+                    "--jurisdiction",
+                    "US-ND",
+                    *self.base_args,
+                ]
+            )
+
+    def test_postgrest_filters_are_percent_encoded_as_single_values(self) -> None:
+        path = build_workbook.skills_query_path(
+            slugs=["ifrs15-revenue", "us-1099-k-and-payment-processors"]
+        )
+        self.assertIn("%28%22ifrs15-revenue%22%2C%22us-1099", path)
+        query = urllib.parse.parse_qs(urllib.parse.urlsplit(path).query)
+        self.assertEqual(
+            ['in.("ifrs15-revenue","us-1099-k-and-payment-processors")'],
+            query["slug"],
+        )
+        self.assertEqual(["eq.true"], query["is_published"])
+        self.assertEqual([build_workbook.SKILL_COLUMNS], query["select"])
+
+        grouped = build_workbook.skills_query_path(jurisdiction="EU/EEA/CH/UK")
+        self.assertIn("EU%2FEEA%2FCH%2FUK", grouped)
+        self.assertEqual(
+            ["eq.EU/EEA/CH/UK"],
+            urllib.parse.parse_qs(urllib.parse.urlsplit(grouped).query)["jurisdiction"],
+        )
+
+    def test_database_values_cannot_add_query_parameters(self) -> None:
+        path = build_workbook.rest_query_path(
+            "skill_versions",
+            skill_id="eq.id&select=*#fragment +space",
+            is_current="eq.true",
+            select="markdown_content,version",
+            limit="1",
+        )
+        query = urllib.parse.parse_qs(urllib.parse.urlsplit(path).query)
+        self.assertEqual(
+            {
+                "skill_id": ["eq.id&select=*#fragment +space"],
+                "is_current": ["eq.true"],
+                "select": ["markdown_content,version"],
+                "limit": ["1"],
+            },
+            query,
+        )
+        self.assertIn("%26select%3D%2A%23fragment%20%2Bspace", path)
 
 
 if __name__ == "__main__":
