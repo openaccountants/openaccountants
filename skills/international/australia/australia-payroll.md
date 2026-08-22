@@ -98,7 +98,7 @@ Australia does not have a separate employee social security contribution. The Me
 
 There is no employee-paid social insurance premium equivalent to NIC (UK) or social security tax (US).
 
-|---|
+|--|
 | SG rate | 12% of qualifying earnings |
 | Maximum contribution base | $270,830 per year (ANNUAL, year-to-date basis; quarterly base abolished for earnings paid from 1 Jul 2026) |
 | Minimum earnings threshold | Abolished (no $450/month threshold from 1 Jul 2022) |
