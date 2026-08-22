@@ -4,9 +4,10 @@ description: Use this skill whenever asked about Australian bookkeeping for sole
 version: 1.0
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-20
 review_status: pending_review
-depends_on: - bookkeeping-workflow-base
+depends_on:
+  - bookkeeping-workflow-base
 category: bookkeeping
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -308,7 +309,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 ### Car Limit
 
-- **Car cost limit for depreciation (2025–26)** — $69,674 AUD (Only the business-use portion of this amount can be depreciated)
+- **Car cost limit for depreciation** — 2025-26: $69,674; 2026-27: $69,883 AUD (only the business-use portion of this amount can be depreciated)
 
 ## Section 6 -- P&L Format
 
@@ -474,7 +475,7 @@ TOTAL EQUITY                                          xxx
 **Reporting Tiers**
 
 | Tier | Who | Standards | Required Statements |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Tier 1 (Full AASB / IFRS) | Large proprietary companies, public companies, registered schemes | Full recognition + full disclosure | All 5 statements + notes |
 | Tier 2 (AASB 1060 Simplified) | Non-publicly accountable entities electing Tier 2 | Full recognition, reduced disclosure | All 5 statements + reduced notes |
 | Special Purpose (legacy) | Non-reporting entities (winding down) | Flexible | Varies (being phased out by 30 Jun 2023 for large) |
