@@ -475,7 +475,7 @@ TOTAL EQUITY                                          xxx
 **Reporting Tiers**
 
 | Tier | Who | Standards | Required Statements |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Tier 1 (Full AASB / IFRS) | Large proprietary companies, public companies, registered schemes | Full recognition + full disclosure | All 5 statements + notes |
 | Tier 2 (AASB 1060 Simplified) | Non-publicly accountable entities electing Tier 2 | Full recognition, reduced disclosure | All 5 statements + reduced notes |
 | Special Purpose (legacy) | Non-reporting entities (winding down) | Flexible | Varies (being phased out by 30 Jun 2023 for large) |
