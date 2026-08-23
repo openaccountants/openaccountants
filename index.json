@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-08-22T05:06:40+00:00",
+ "generated_at": "2026-08-23T05:14:38+00:00",
  "counts": {
-  "guides": 1954,
+  "guides": 1961,
   "jurisdictions": 244,
   "accountant_reviewed": 171
  },
@@ -13375,6 +13375,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "ma-auto-entrepreneur-4",
+   "path": "skills/international/morocco/ma-auto-entrepreneur-4.md",
+   "name": "ma-auto-entrepreneur-4",
+   "jurisdiction": "MA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
+  },
+  {
    "slug": "ma-auto-entrepreneur",
    "path": "skills/international/morocco/ma-auto-entrepreneur.md",
    "name": "ma-auto-entrepreneur",
@@ -13591,6 +13603,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428",
+   "path": "skills/international/myanmar/check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428.md",
+   "name": "check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428",
+   "jurisdiction": "MM",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
+  },
+  {
    "slug": "mm-company-formation",
    "path": "skills/international/myanmar/mm-company-formation.md",
    "name": "mm-company-formation",
@@ -13651,6 +13675,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "myanmar-company-formation-entity-choice",
+   "path": "skills/international/myanmar/myanmar-company-formation-entity-choice.md",
+   "name": "myanmar-company-formation-entity-choice",
+   "jurisdiction": "MM",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
+  },
+  {
    "slug": "myanmar-ct",
    "path": "skills/international/myanmar/myanmar-ct.md",
    "name": "myanmar-ct",
@@ -13661,6 +13697,54 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "myanmar-personal-income-tax-2",
+   "path": "skills/international/myanmar/myanmar-personal-income-tax-2.md",
+   "name": "myanmar-personal-income-tax-2",
+   "jurisdiction": "MM",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
+  },
+  {
+   "slug": "myanmar-personal-income-tax-4",
+   "path": "skills/international/myanmar/myanmar-personal-income-tax-4.md",
+   "name": "myanmar-personal-income-tax-4",
+   "jurisdiction": "MM",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
+  },
+  {
+   "slug": "myanmar-vat-gst-2",
+   "path": "skills/international/myanmar/myanmar-vat-gst-2.md",
+   "name": "myanmar-vat-gst-2",
+   "jurisdiction": "MM",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
+  },
+  {
+   "slug": "myanmar-vat-gst",
+   "path": "skills/international/myanmar/myanmar-vat-gst.md",
+   "name": "myanmar-vat-gst",
+   "jurisdiction": "MM",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-22"
   },
   {
    "slug": "na-company-formation",

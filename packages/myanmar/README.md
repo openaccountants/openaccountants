@@ -7,14 +7,20 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `mm-company-formation.md`
-4. `mm-income-tax.md`
-5. `mm-payroll-social.md`
-6. `mm-tax-overview.md`
-7. `mm-vat-gst.md`
-8. `myanmar-ct.md`
-9. `payroll-workflow-base.md`
-10. `company-formation-workflow-base.md`
+3. `check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428.md`
+4. `mm-company-formation.md`
+5. `mm-income-tax.md`
+6. `mm-payroll-social.md`
+7. `mm-tax-overview.md`
+8. `mm-vat-gst.md`
+9. `myanmar-company-formation-entity-choice.md`
+10. `myanmar-ct.md`
+11. `myanmar-personal-income-tax-2.md`
+12. `myanmar-personal-income-tax-4.md`
+13. `myanmar-vat-gst-2.md`
+14. `myanmar-vat-gst.md`
+15. `payroll-workflow-base.md`
+16. `company-formation-workflow-base.md`
 
 ## How to use
 

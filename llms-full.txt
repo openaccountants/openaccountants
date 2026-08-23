@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1954 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1961 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1246,6 +1246,7 @@ https://www.openaccountants.com
 - montenegro-social-contributions | ME | tier 2 | reviewed_by -
 - montenegro-tax-optimization | ME | tier 2 | reviewed_by -
 - montenegro-vat | ME | tier 2 | reviewed_by -
+- ma-auto-entrepreneur-4 | MA | tier 2 | reviewed_by -
 - ma-auto-entrepreneur | MA | tier 2 | reviewed_by -
 - ma-bookkeeping | MA | tier 2 | reviewed_by -
 - ma-cpu | MA | tier 2 | reviewed_by -
@@ -1264,12 +1265,18 @@ https://www.openaccountants.com
 - mozambique-payroll | MZ | tier 2 | reviewed_by -
 - mozambique-social-contributions | MZ | tier 2 | reviewed_by -
 - mozambique-vat | MZ | tier 2 | reviewed_by -
+- check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428 | MM | tier 2 | reviewed_by -
 - mm-company-formation | MM | tier 2 | reviewed_by -
 - mm-income-tax | MM | tier 2 | reviewed_by -
 - mm-payroll-social | MM | tier 2 | reviewed_by -
 - mm-tax-overview | MM | tier 2 | reviewed_by -
 - mm-vat-gst | MM | tier 2 | reviewed_by -
+- myanmar-company-formation-entity-choice | MM | tier 2 | reviewed_by -
 - myanmar-ct | MM | tier 2 | reviewed_by -
+- myanmar-personal-income-tax-2 | MM | tier 2 | reviewed_by -
+- myanmar-personal-income-tax-4 | MM | tier 2 | reviewed_by -
+- myanmar-vat-gst-2 | MM | tier 2 | reviewed_by -
+- myanmar-vat-gst | MM | tier 2 | reviewed_by -
 - na-company-formation | NA | tier 2 | reviewed_by -
 - na-corporate-income-tax | NA | tier 2 | reviewed_by -
 - na-income-tax | NA | tier 2 | reviewed_by -
