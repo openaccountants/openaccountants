@@ -21,17 +21,17 @@ Under the Korean VAT regime for electronic services from overseas suppliers, the
 
 2. Scope of Electronic Services
 Electronic services generally include the following:
-	Digitally delivered content, including games, audio and video files, software, and other electronically processed digital products, as well as services related to the enhancement of such products;
-	Online advertising services;
-	Cloud computing services; and
-	Platform or intermediary services that facilitate the lease, use, consumption, or supply of goods and services within Korea.
+- Digitally delivered content, including games, audio and video files, software, and other electronically processed digital products, as well as services related to the enhancement of such products;
+- Online advertising services;
+- Cloud computing services; and
+- Platform or intermediary services that facilitate the lease, use, consumption, or supply of goods and services within Korea.
 
 3. Simplified VAT Registration for Foreign Service Providers
 Foreign suppliers are required to apply for simplified VAT registration through the NTS Hometax system within 20 days of commencing business activities by providing the information set out below.
-	The names of business operator or representative, telephone numbers, mail addresses, email addresses, website addresses and other contact information of the businesses and representative. In such cases, if a corporate business uses a name, other than the corporate name, in transactions, such name shall be included.
-	The country of registration, address, registration number and other information on registration of business in a country in which the place of business supplying services is located.
-	The types of electronic services supplied, the date the business commences a business supplying electronic services in Korea.
-	Tax manager’s name, resident number, tax registration number, telephone number, email address(where a tax manager is hired).
+- The names of business operator or representative, telephone numbers, mail addresses, email addresses, website addresses and other contact information of the businesses and representative. In such cases, if a corporate business uses a name, other than the corporate name, in transactions, such name shall be included.
+- The country of registration, address, registration number and other information on registration of business in a country in which the place of business supplying services is located.
+- The types of electronic services supplied, the date the business commences a business supplying electronic services in Korea.
+- Tax manager’s name, resident number, tax registration number, telephone number, email address(where a tax manager is hired).
 
 4. VAT Filing and Payment Deadlines
 
@@ -45,10 +45,10 @@ The 2nd Final Return	10.1 ~ 12.31	Next year 1.1 ~ 1.25
 
 Information Required for VAT Filing
 Taxpayers are required to file VAT returns by reporting the following information through the NTS Hometax system:
-	Business name and simplified VAT registration number;
-	Total value of electronic services supplied during the relevant filing period;
-	Input VAT eligible for deduction; and
-	Net VAT payable.
+- Business name and simplified VAT registration number;
+- Total value of electronic services supplied during the relevant filing period;
+- Input VAT eligible for deduction; and
+- Net VAT payable.
 Where consideration for electronic services supplied in Korea is received in a foreign currency, the taxable amount may be converted into Korean won using the basic exchange rate as of the last day of the relevant filing period.
 The basic exchange rate published by the Seoul Money Brokerage Services (SMBS) is used for this purpose. If the last day of the filing period falls on a Saturday or a public holiday, the exchange rate applicable on the immediately preceding business day should be used.
 
@@ -57,12 +57,12 @@ Taxpayers registered under the simplified VAT registration regime may claim only
 
 VAT Payment Procedures
 VAT payable must be remitted to a designated foreign exchange bank account prescribed by the Commissioner of the National Tax Service (NTS).
-	The designated VAT payment account number is provided to the taxpayer (or its tax agent) via email and is also available in the Basic Information of Simplified Business Operator section of the NTS Hometax system.
-	As a general rule, VAT must be paid in Korean won (KRW).
-	For payments remitted from overseas, taxpayers may pay VAT in U.S. dollars (USD) to the designated VAT account using the basic exchange rate applicable as of the last day of the relevant taxable period.
-	The basic exchange rate published by the Seoul Money Brokerage Services (SMBS) is used for this purpose.
-	If the last day of the taxable period falls on a Saturday or public holiday, the exchange rate applicable on the immediately preceding business day should be used.
-	Any bank remittance charges are borne by the taxpayer.
+- The designated VAT payment account number is provided to the taxpayer (or its tax agent) via email and is also available in the Basic Information of Simplified Business Operator section of the NTS Hometax system.
+- As a general rule, VAT must be paid in Korean won (KRW).
+- For payments remitted from overseas, taxpayers may pay VAT in U.S. dollars (USD) to the designated VAT account using the basic exchange rate applicable as of the last day of the relevant taxable period.
+- The basic exchange rate published by the Seoul Money Brokerage Services (SMBS) is used for this purpose.
+- If the last day of the taxable period falls on a Saturday or public holiday, the exchange rate applicable on the immediately preceding business day should be used.
+- Any bank remittance charges are borne by the taxpayer.
 
 > Contributed by Yeong Min Lee, 16491.
 

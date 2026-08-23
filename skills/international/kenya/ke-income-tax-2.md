@@ -25,14 +25,8 @@ CONTENT
 Act-
 PAGE
 The Finance Act, 2026 ................................. .......... .................. ........................ 349
-/(r=-
-NATIONAL COUNCIL FOR !/ LAW REPORTING
-ll usn􀀇
-0
-R􀀣 u􀀃:􀀄1
-􀀈,ve
-\.."=========£1
-PRINTED AND PUBLISHED BY THE GOVERNMENT PRJNTER, NAIROBI
+NATIONAL COUNCIL FOR LAW REPORTING
+PRINTED AND PUBLISHED BY THE GOVERNMENT PRINTER, NAIROBI
 349
 THE FINANCE ACT, 2026
 No. 19 of 2026
