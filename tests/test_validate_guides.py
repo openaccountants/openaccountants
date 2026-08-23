@@ -117,6 +117,15 @@ class StrictFrontmatterTests(_ValidatorCase):
         self.assertEqual(len(errors), 1, errors)
         self.assertIn("invalid YAML frontmatter", errors[0])
 
+    def test_legacy_flat_depends_on_is_grandfathered(self) -> None:
+        # The grandfathering landed on the packages sweep only, so the same
+        # file passed as a generated copy and failed as its skills/ source.
+        # Every pull request touching one of those sources then failed on
+        # shipped history it did not introduce.
+        self.assertEqual(
+            self._check_guides({"skills/legacy.md": LEGACY_FLAT_DEPENDS}), []
+        )
+
 
 class MisplacedFrontmatterTests(_ValidatorCase):
     """`---` must be at byte 0. Otherwise extract_frontmatter returns None and

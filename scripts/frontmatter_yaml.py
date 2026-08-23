@@ -9,6 +9,7 @@ last-key-wins result hides which value an author intended.
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
 import yaml
@@ -71,6 +72,29 @@ _STRING_FIELDS = {
     "review_status",
     "license",
 }
+
+
+LEGACY_DEPENDS_ON = re.compile(r"^(depends_on):[ \t]+(- .+)$", re.MULTILINE)
+
+
+def normalize_legacy_depends_on(block: str) -> str:
+    """Fold the legacy single-line `depends_on: - x` into a real YAML list.
+
+    663 generated files (and their skills/ sources) predate the strict sweep and
+    carry the flat form, which strict YAML rejects ("sequence entries are not
+    allowed here"). The strictness is right for everything NEW; failing the
+    whole tree on a format that shipped for months is not. Normalizing exactly
+    this one known shape keeps the sweep strict for every other error while a
+    format migration cleans the corpus (tracked separately). Never widen this
+    to other keys - each legacy exception must earn its own entry.
+
+    It sits beside `load_frontmatter` rather than inside it on purpose.
+    `load_frontmatter` stays strict, so anything validating new content still
+    rejects the flat form; only the sweeps over files that already shipped opt
+    in. Every such sweep must opt in, or the same file passes in one tree and
+    fails in another.
+    """
+    return LEGACY_DEPENDS_ON.sub(lambda m: f"{m.group(1)}:\n  {m.group(2)}", block)
 
 
 def _problem_text(exc: yaml.YAMLError) -> str:

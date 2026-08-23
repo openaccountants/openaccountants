@@ -38,7 +38,11 @@ import re
 import shutil
 import sys
 
-from frontmatter_yaml import FrontmatterError, load_frontmatter
+from frontmatter_yaml import (
+    FrontmatterError,
+    load_frontmatter,
+    normalize_legacy_depends_on,
+)
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -1027,7 +1031,7 @@ def validate_generated_frontmatter():
                     failures.append(f"{rel}: frontmatter opens with --- but never closes")
                 continue
             try:
-                load_frontmatter(block)
+                load_frontmatter(normalize_legacy_depends_on(block))
             except FrontmatterError as exc:
                 failures.append(f"{rel}: invalid YAML frontmatter: {exc}")
     return failures
