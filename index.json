@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-08-24T05:26:11+00:00",
+ "generated_at": "2026-08-25T05:10:37+00:00",
  "counts": {
-  "guides": 1961,
+  "guides": 1964,
   "jurisdictions": 244,
   "accountant_reviewed": 171
  },
@@ -13939,6 +13939,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "netherlands-owner-occupied-home-tax-scheme",
+   "path": "skills/international/netherlands/netherlands-owner-occupied-home-tax-scheme.md",
+   "name": "netherlands-owner-occupied-home-tax-scheme",
+   "jurisdiction": "NL",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-24"
+  },
+  {
    "slug": "netherlands-payroll",
    "path": "skills/international/netherlands/netherlands-payroll.md",
    "name": "netherlands-payroll",
@@ -14501,6 +14513,18 @@
    "reviewed_by": null,
    "tax_year": null,
    "last_updated": "2026-06-12"
+  },
+  {
+   "slug": "taxes-and-small-businesses-in-nigeria-a-simple-guide-2",
+   "path": "skills/international/nigeria/taxes-and-small-businesses-in-nigeria-a-simple-guide-2.md",
+   "name": "taxes-and-small-businesses-in-nigeria-a-simple-guide-2",
+   "jurisdiction": "NG",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-24"
   },
   {
    "slug": "mk-company-formation",
@@ -18845,6 +18869,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "turkey-company-formation-entity-choice-2",
+   "path": "skills/international/turkey/turkey-company-formation-entity-choice-2.md",
+   "name": "turkey-company-formation-entity-choice-2",
+   "jurisdiction": "TR",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-25"
   },
   {
    "slug": "turkey-pit",

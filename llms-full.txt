@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1961 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1964 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1293,6 +1293,7 @@ https://www.openaccountants.com
 - netherlands-crypto-tax | NL | tier 2 | reviewed_by -
 - netherlands-financial-statements | NL | tier 2 | reviewed_by -
 - netherlands-formation | NL | tier 2 | reviewed_by -
+- netherlands-owner-occupied-home-tax-scheme | NL | tier 2 | reviewed_by -
 - netherlands-payroll | NL | tier 2 | reviewed_by -
 - netherlands-tax-optimization | NL | tier 2 | reviewed_by -
 - netherlands-transfer-pricing | NL | tier 2 | reviewed_by -
@@ -1340,6 +1341,7 @@ https://www.openaccountants.com
 - ng-wht | NG | tier 1 | reviewed_by Omolola Fasasi
 - nigeria-vat | NG | tier 2 | reviewed_by -
 - references | NG | tier 2 | reviewed_by -
+- taxes-and-small-businesses-in-nigeria-a-simple-guide-2 | NG | tier 2 | reviewed_by -
 - mk-company-formation | MK | tier 2 | reviewed_by -
 - mk-corporate-income-tax | MK | tier 2 | reviewed_by -
 - mk-tax-overview | MK | tier 2 | reviewed_by -
@@ -1702,6 +1704,7 @@ https://www.openaccountants.com
 - tr-corporate-income-tax | TR | tier 2 | reviewed_by -
 - tr-payroll-social | TR | tier 2 | reviewed_by -
 - tr-tax-overview | TR | tier 2 | reviewed_by -
+- turkey-company-formation-entity-choice-2 | TR | tier 2 | reviewed_by -
 - turkey-pit | TR | tier 2 | reviewed_by -
 - turkey-vat | TR | tier 2 | reviewed_by -
 - tm-company-formation | TM | tier 2 | reviewed_by -
