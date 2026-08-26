@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1964 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1966 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1726,6 +1726,8 @@ https://www.openaccountants.com
 - ug-tax-overview | UG | tier 2 | reviewed_by -
 - uganda-vat | UG | tier 2 | reviewed_by -
 - close-the-uk-vat-quarter-from-xero | GB | tier 2 | reviewed_by -
+- property-management-2 | GB | tier 2 | reviewed_by -
+- real-estate-and-property | GB | tier 2 | reviewed_by -
 - references | GB | tier 2 | reviewed_by -
 - uk-bookkeeping | GB | tier 2 | reviewed_by -
 - uk-capital-gains-sa108 | GB | tier 1 | reviewed_by James Power

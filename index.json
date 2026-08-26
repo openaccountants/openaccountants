@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-08-25T11:07:14+00:00",
+ "generated_at": "2026-08-26T05:08:02+00:00",
  "counts": {
-  "guides": 1964,
+  "guides": 1966,
   "jurisdictions": 244,
   "accountant_reviewed": 171
  },
@@ -19133,6 +19133,30 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-27"
+  },
+  {
+   "slug": "property-management-2",
+   "path": "skills/international/uk/property-management-2.md",
+   "name": "property-management-2",
+   "jurisdiction": "GB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-25"
+  },
+  {
+   "slug": "real-estate-and-property",
+   "path": "skills/international/uk/real-estate-and-property.md",
+   "name": "real-estate-and-property",
+   "jurisdiction": "GB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2025",
+   "last_updated": "2026-08-25"
   },
   {
    "slug": "references",
