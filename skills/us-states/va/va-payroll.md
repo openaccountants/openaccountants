@@ -520,21 +520,6 @@ Before producing a reviewer-facing Virginia payroll work product, confirm:
 - **R-VA-6** — Will not provide BPOL guidance — refer-out to `va-corporate-tax-and-bpol`.  _(17. Refusal Catalogue (Virginia-specific additions to base R-US refusals))_
 - **R-VA-7** — Will not produce a Virginia individual income tax return (Form 760) — refer-out to `va-income-tax`.  _(17. Refusal Catalogue (Virginia-specific additions to base R-US refusals))_
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — no liability on either side until you and the accountant sign
-a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

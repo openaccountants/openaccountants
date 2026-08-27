@@ -372,21 +372,6 @@ When information is incomplete and a position must still be taken for planning p
 
 This skill output requires sign-off by a qualified Irish Chartered Tax Adviser (CTA, Irish Tax Institute) or a Chartered Accountant (Chartered Accountants Ireland, ACCA Ireland, or CPA Ireland) with CAT competence before being relied on by a taxpayer or filed with Revenue. The `verified_by` frontmatter remains **pending** until a credentialed reviewer signs off.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

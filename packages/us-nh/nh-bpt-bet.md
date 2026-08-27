@@ -509,21 +509,6 @@ Step-by-step for an NH-resident sole proprietor or single-member LLC freelancer 
 
 This skill must be loaded alongside `us-tax-workflow-base` v0.2 or later and any federal content skill the engagement requires (`us-sole-prop-bookkeeping`, `us-schedule-c-and-se-computation`, `us-federal-return-assembly`, etc.). NH-specific verification of indexed thresholds and current IRC reference date is required before producing a final client deliverable. Reviewer signoff under Circular 230 (CPA, EA, or attorney) is required for any return that exceeds workflow-base thresholds.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

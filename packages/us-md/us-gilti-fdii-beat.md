@@ -843,16 +843,6 @@ The following are out of scope for this skill and the assistant must refuse and 
 - **R-INTL-9** — PFIC (§1291 / §1297) analysis or QEF / mark-to-market elections — refer to PFIC specialist skill (not yet authored).  _(R-INTL-9)_
 - **R-INTL-10** — Cross-border M&A tax structuring — outside content-skill scope; full advisory engagement.  _(R-INTL-10)_
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

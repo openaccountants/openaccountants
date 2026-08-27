@@ -317,21 +317,6 @@ The big four payroll-services platforms — Gusto, ADP RUN, Paychex Flex, and Qu
 
 - **References and authorities list** — - 42 U.S.C. §653a (Social Security Act §453A) — federal new-hire reporting statute. - Pub. L. 104-193 (PRWORA), §313 (1996) — enacting legislation. - 45 C.F.R. §303.108 — federal implementing regulation. - OCSS Employer Services portal: <https://www.acf.hhs.gov/css/employers/employer-responsibilities/new-hire-reporting>. - California Unemployment Insurance Code §1088.8 — CA contractor reporting. - N.Y. Tax Law §171-h — NY contractor reporting. - N.J.S.A. 2A:17-56.61 — NJ contractor reporting. - M.G.L. c. 62E §2 — MA contractor reporting. - KRS 405.435 — KY contractor reporting. - Ohio Revised Code §3121.892 — OH contractor reporting (soft). - IRS Pub. 15 (Circular E) — referenced for employer definition (§3401(d)).
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

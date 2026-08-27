@@ -269,16 +269,6 @@ The fact that the property was acquired by inheritance does NOT carry forward an
 11. **Saudi Vision 2030 Housing Programme** documentation — policy context for the first-home exemption.
 12. **GAZT-era guidance (pre-merger)** retained in archived form for transactions in the transitional 2020–2021 window when GAZT became ZATCA.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Australia transfer pricing rule
 version: 1.0
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-27
 review_status: pending_review
 depends_on:
   - transfer-pricing-workflow-base
@@ -15,9 +15,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Transfer Pricing
 
-## Australia Transfer Pricing Skill v1.0
+## Australia Transfer Pricing
 
-Australia Transfer Pricing Skill v1.0
+## Australia Transfer Pricing Skill v1.1
+
+Australia Transfer Pricing Skill v1.1
 
 ## Section 1 -- Quick Reference
 
@@ -34,7 +36,7 @@ Australia Transfer Pricing Skill v1.0
 | BEPS signatory? | Yes |
 | Currency | AUD |
 | Documentation language | English |
-| Skill version | 1.0 |
+| Skill version | 1.1 |
 
 ## Section 2 -- Documentation Requirements
 
@@ -50,7 +52,7 @@ Australia Transfer Pricing Skill v1.0
 
 ### 2.2 Three-Tier Documentation (Significant Global Entities)
 
-Applies to entities in groups with consolidated annual global income ≥ AUD 1 billion:
+- **Significant Global Entity threshold** — Applies to entities in groups with consolidated annual global income ≥ AUD 1 billion AUD
 
 **Three-Tier Documentation (Significant Global Entities)**
 
@@ -74,7 +76,7 @@ Applies to entities in groups with consolidated annual global income ≥ AUD 1 b
 
 ### 2.4 Short Form Local File
 
-- **Short Form Local File availability** — Available for entities with lower-risk or less material international related-party dealings that still meet the AUD 1 billion threshold.  _(unsure)_
+- **Short Form Local File availability** — Available for entities with lower-risk or less material international related-party dealings that still meet the AUD 1 billion threshold. ((unsure))
 
 ## Section 3 -- Arm's Length Standard
 
@@ -97,11 +99,11 @@ Applies to entities in groups with consolidated annual global income ≥ AUD 1 b
 
 ### 3.3 Preferred Method
 
-- **Preferred method approach** — No statutory hierarchy. ATO follows OECD "most appropriate method" approach. CUP preferred where reliable comparables exist.  _(unsure)_
+- **Preferred method approach** — No statutory hierarchy. ATO follows OECD "most appropriate method" approach. CUP preferred where reliable comparables exist. ((unsure))
 
 ### 3.4 Self-Assessment
 
-- **Self-assessment system** — Australia operates a self-assessment system -- taxpayers must determine and apply arm's length conditions without prior ATO approval.  _(unsure)_
+- **Self-assessment system** — Australia operates a self-assessment system -- taxpayers must determine and apply arm's length conditions without prior ATO approval. ((unsure))
 
 ## Section 4 -- Filing Obligations
 
@@ -143,7 +145,7 @@ Applies to entities in groups with consolidated annual global income ≥ AUD 1 b
 
 ### 6.2 Documentation Impact
 
-- **Documentation impact on RAP** — Without contemporaneous TP documentation prepared before lodging the return, a taxpayer is statutorily denied a reasonably arguable position.  _(unsure)_
+- **Documentation impact on RAP** — Without contemporaneous TP documentation prepared before lodging the return, a taxpayer is statutorily denied a reasonably arguable position. ((unsure))
 
 ### 6.3 Failure to Lodge (SGEs)
 
@@ -205,7 +207,7 @@ ATO publishes Practical Compliance Guidelines indicating risk zones for various 
 | Related skill | Interaction |
 | --- | --- |
 | australia-bookkeeping | TP documentation relies on Australian accounting records |
-| australia-corporate-tax | TP adjustments directly affect taxable income |
+| au-company-tax | TP adjustments directly affect taxable income and the company return |
 | australia-gst | TP adjustments may affect customs value and GST on imports |
 | Thin capitalisation | Separate rules limit debt deductions; interact with TP for financial transactions |
 | Diverted Profits Tax (DPT) | 40% rate for diverted profits; TP documentation relevant |
@@ -214,21 +216,6 @@ ATO publishes Practical Compliance Guidelines indicating risk zones for various 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
 
 <!-- openaccountants-cta-block -->
 

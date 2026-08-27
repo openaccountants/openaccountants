@@ -4,7 +4,7 @@ description: Final orchestrator skill that assembles the complete Australian fil
 version: 0.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-27
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Return Assembly
 
-## Australia Return Assembly Skill v0.1
+## Australia Return Assembly Skill v0.3
 
 ## CRITICAL EXECUTION DIRECTIVE -- READ FIRST
 
@@ -64,11 +64,11 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 | BAS G1 total sales (ex-GST, annual sum) | ITR business income label | Must match within $1 |
 | Non-GST registered: gross receipts | ITR business income label | Direct match (no GST separation) |
 
-### Cross-check 2: Super contributions within concessional cap ($30,000)
+### Cross-check 2: Super contributions within the concessional cap
 
 **If excess:** Flag for reviewer. Excess concessional contributions are included in assessable income and taxed at marginal rate (plus excess concessional contributions charge). Division 293 tax applies if income + super > $250,000.
 
-**Cross-check 2 table**  _(Cross-check 2: Super contributions within concessional cap ($30,000))_
+**Cross-check 2 table**  _(Cross-check 2: Super contributions within the concessional cap -- $30,000 for 2025-26, $32,500 for 2026-27)_
 
 | Super Input | Source | Rule |
 | --- | --- | --- |
@@ -187,7 +187,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 [Content from au-super-guarantee output]
 - Personal deductible contributions (s290-170 notice required)
 - Employer contributions (if also employed)
-- Total concessional: $X of $30,000 cap
+- Total concessional: $X of the year's concessional cap ($30,000 for 2025-26; $32,500 for 2026-27)
 - Excess concessional: $X / nil
 - Non-concessional contributions: $X
 - Division 293 check: income + super vs $250,000 threshold
@@ -236,9 +236,9 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 ## Positions Taken
 [List with legislation citations]
-- e.g., "Home office deduction claimed at 67c/hr for X hours -- Practical Compliance Guideline PCG 2023/1"
-- e.g., "Motor vehicle cents-per-km at 85c/km for X km -- s28-25 ITAA 1997, TD 2024/3"
-- e.g., "MacBook Pro instant asset write-off -- s328-180 ITAA 1997, Temporary Full Expensing extended"
+- e.g., "Home office deduction claimed at 70c/hr for X hours -- Practical Compliance Guideline PCG 2023/1"
+- e.g., "Motor vehicle cents-per-km at 88c/km (2025-26) for X km -- s 28-25 ITAA 1997"
+- e.g., "MacBook Pro instant asset write-off -- ITAA 1997 Div 328, $20,000 threshold" (temporary full expensing ENDED 30 June 2023 -- never cite it for a current year)
 - e.g., "Personal super contribution deduction -- s290-150 ITAA 1997, s290-170 notice lodged"
 
 ## Planning Notes for 2025-26
@@ -270,7 +270,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 ### Super obligations:
 - If you have employees: SG due quarterly (28 days after quarter end)
 - Personal deductible contributions: lodge s290-170 notice with super fund BEFORE lodging ITR
-- Monitor concessional cap ($30,000) across all contribution sources
+- Monitor the concessional cap for the income year being assembled ($30,000 for 2025-26; $32,500 for 2026-27) across all contribution sources
 
 ### Ongoing:
 1. Issue tax invoices for all sales (if GST registered)
@@ -350,6 +350,8 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

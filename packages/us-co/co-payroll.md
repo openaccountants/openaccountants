@@ -449,16 +449,6 @@ Before producing reviewer output that incorporates this skill's content, verify:
 
 - **Slot satisfaction and dependencies** — This skill SATISFIES the `state-payroll` slot for jurisdiction US-CO in the us-tax-workflow-base v0.2 workflow. It DEPENDS ON: - `us-tax-workflow-base` v0.2 or later (workflow architecture). - `us-payroll-fundamentals` (federal payroll baseline; planned). It is COMPLEMENTED BY (load alongside for full Colorado payroll): - `co-income-tax` (employee/owner-side Colorado PIT — already in the package). - `co-local-opt` (Denver/Aurora/Glendale/Greenwood Village/Sheridan occupational privilege taxes; planned). - `co-securesavings` (state retirement registration mandate; planned). - `co-prevailing-wage` (HB 21-1264 prevailing wage; planned). End of co-payroll v0.1.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

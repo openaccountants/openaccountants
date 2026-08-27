@@ -434,16 +434,6 @@ This skill is marked verified_by: pending. It must be reviewed by a Circular 230
 - Watch for changes to the SMLLC pro forma 1120 filing channel (e-file may become available in future).
 - Confirm treaty rates for FDAP withholding on dividends / royalties / interest paid to foreign related parties (separate Form 1042 workstream, but informs 5472 reporting amounts).
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

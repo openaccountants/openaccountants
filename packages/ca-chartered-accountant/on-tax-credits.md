@@ -263,16 +263,6 @@ CRA — Form ON479 (2025) and Schedule ON479-A (2025)
 CRA — Form ON428 (2025) and Schedule ON428-A (2025)
 Taxation Act, 2007 (Ontario), S.O. 2007, c. 11, Schedule A — sections governing OEPTC, OSTC, NOEC, CARE, OSHPTG, Senior Care at Home
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your jurisdiction — no liability on either side until you and the accountant sign a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can also see the full list of verified accountants at [openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

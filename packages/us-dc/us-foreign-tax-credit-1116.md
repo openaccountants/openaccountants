@@ -422,21 +422,6 @@ Tax year covered: 2025
 Reviewer status: pending credentialed reviewer (Circular 230 — EA, CPA, or attorney) sign-off before any output is delivered to a taxpayer or filed with the IRS.
 Open verification items: Form 1116 line 18 qualified-dividend/LTCG rate adjustment de minimis thresholds and any post-publication IRS Form 1116 developments.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — no liability on either side until you and the accountant sign
-a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---

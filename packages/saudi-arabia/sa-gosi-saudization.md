@@ -331,41 +331,6 @@ If a Saudi senior manager earns contractual basic SAR 50,000 + housing SAR 12,00
 
 > **Verification discipline:** Before completing any Saudi employer compliance task, verify on the official portals (GOSI, Qiwa, Mudad, MHRSD) that the rates, caps, sector quotas, and size bands quoted in this skill have not been superseded by a subsequent notification. Saudi compliance changes frequently and the cost of relying on stale figures is high.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — no liability on either side until you and the accountant sign
-a formal engagement letter — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
-### 3.2 Computation order
-
-0. **Step 1: Determine GOSI contribution per employee** — Run GOSI monthly contribution computation per employee (nationality bucket, contributory wage, cohort, employer/employee rates)
-
-### 3.4 Monthly filing & remittance
-
-0. **Step 2: File and remit GOSI monthly contribution** — Upload monthly contribution file to GOSI portal and pay via SADAD by end of month following the contribution month
-
-### 4.2 How the tier is calculated
-
-0. **Step 3: Monitor Nitaqat tier** — Determine sector classification, size band, target Saudization percentage, and current tier on Qiwa; flag if quota needs verification
-
-### 5.3 WPS compliance feedback loop
-
-0. **Step 4: File WPS payroll via Mudad** — Submit monthly payroll file via Mudad before contractual pay date and reconcile against actual bank-clearing data
-
-### 3.4 Monthly filing & remittance
-
-0. **Step 5: Reconcile GOSI against WPS** — Reconcile GOSI contribution base against WPS-filed salaries (Mudad ↔ GOSI cross-check) before next month's filing
-
 <!-- openaccountants-cta-block -->
 
 ---

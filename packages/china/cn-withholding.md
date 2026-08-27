@@ -448,21 +448,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 技能版本 1.0。税年 2025。须由具备中国注册税务师（CTA）或具备执业经验的注册会计师（CPA）签署后方可正式使用。BEPS Pillar Two 在中国的本地化立法（IIR/UTPR）尚未出台 —— 在国家税务总局发布相关实施细则前，不应基于本技能对 2026 年及以后期间作出最终结论。
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — no liability on either side until you and the accountant sign
-a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 <!-- openaccountants-cta-block -->
 
 ---
