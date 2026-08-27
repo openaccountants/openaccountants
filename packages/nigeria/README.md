@@ -20,8 +20,9 @@
 13. `ng-wht.md`
 14. `nigeria-vat.md`
 15. `references.md`
-16. `payroll-workflow-base.md`
-17. `company-formation-workflow-base.md`
+16. `taxes-and-small-businesses-in-nigeria-a-simple-guide-2.md`
+17. `payroll-workflow-base.md`
+18. `company-formation-workflow-base.md`
 
 ## Also known as
 

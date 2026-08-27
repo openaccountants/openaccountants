@@ -7,7 +7,8 @@ tax_year: 2025
 last_updated: 2026-07-13
 reviewed_by: RILIA PUTRI
 review_status: current
-depends_on: - foundation
+depends_on:
+  - foundation
 category: international
 tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

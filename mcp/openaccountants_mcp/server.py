@@ -254,6 +254,41 @@ def _dir_jurisdiction(topdir: str, frontmatter_codes: Counter) -> str:
     return topdir.upper()
 
 
+def _require_readable_packages_dir() -> None:
+    """Fail loudly when the corpus is absent or unreadable.
+
+    The container drops to an unprivileged UID (see the USER line in the
+    Dockerfile), which makes EACCES newly reachable on an operator-supplied
+    packages path. Both ``Path.is_dir()`` and ``Path.rglob()`` swallow
+    PermissionError, so an unreadable corpus produced exactly the same empty
+    catalogue as a correct one -- and ``lru_cache(maxsize=1)`` then pinned that
+    empty answer for the life of the process, where the former root process had
+    returned the full corpus. Raising instead keeps nothing cached and names the
+    cause.
+    """
+    try:
+        os.stat(PACKAGES_DIR)
+    except FileNotFoundError:
+        raise RuntimeError(
+            f"No skill corpus at {PACKAGES_DIR}. Point OPENACCOUNTANTS_ROOT at a "
+            "directory containing packages/."
+        ) from None
+    except PermissionError as exc:
+        raise RuntimeError(
+            f"Skill corpus at {PACKAGES_DIR} is not accessible to this process "
+            f"({exc.strerror}). This server runs unprivileged; grant read and "
+            "traverse permission on the mounted path."
+        ) from exc
+    if not PACKAGES_DIR.is_dir():
+        raise RuntimeError(f"Skill corpus path {PACKAGES_DIR} is not a directory")
+    if not os.access(PACKAGES_DIR, os.R_OK | os.X_OK):
+        raise RuntimeError(
+            f"Skill corpus at {PACKAGES_DIR} is not readable by this process. "
+            "This server runs unprivileged; grant read and traverse permission "
+            "on the mounted path."
+        )
+
+
 @lru_cache(maxsize=1)
 def _catalogue() -> tuple[
     dict[str, dict[str, Any]],
@@ -262,23 +297,13 @@ def _catalogue() -> tuple[
 ]:
     """Build the index, unresolved slug map, and duplicate inventory."""
     out: dict[str, dict[str, Any]] = {}
-    if not PACKAGES_DIR.is_dir():
-        # Absence is a misconfiguration, not an empty corpus. Returning an
-        # empty catalogue here answered OPENACCOUNTANTS_ROOT=/nonexistent with
-        # a confident "0 skills" and logged nothing, which is the same silent
-        # data-absence failure this package's bundling is meant to end.
-        message = (
-            f"No skill corpus at {PACKAGES_DIR}. Point OPENACCOUNTANTS_ROOT at a "
-            "directory containing packages/, or install a distribution that "
-            "bundles it."
-        )
-        log.error(message)
-        raise RuntimeError(message)
+    _require_readable_packages_dir()
 
     # Pass 1: parse every skill file; tally each directory's declared codes.
     rows: list[dict[str, Any]] = []
     dir_codes: dict[str, Counter] = defaultdict(Counter)
     rejected_paths: list[str] = []
+    denied: list[str] = []
     for path in sorted(PACKAGES_DIR.rglob("*.md")):
         relpath = path.relative_to(PACKAGES_DIR)
         try:
@@ -288,7 +313,12 @@ def _catalogue() -> tuple[
             continue
         try:
             text = safe_path.read_text(encoding="utf-8")
-        except (OSError, UnicodeDecodeError):
+        except PermissionError as exc:
+            denied.append(str(path))
+            log.error("cannot read skill file %s: %s", path, exc)
+            continue
+        except (OSError, UnicodeDecodeError) as exc:
+            log.warning("skipping unreadable skill file %s: %s", path, exc)
             continue
         meta, body = _parse_frontmatter(text, source=relpath)
         slug = meta.get("name")
@@ -319,6 +349,15 @@ def _catalogue() -> tuple[
             # dropped as if their content conflicted.
             "content_hash": sha256(body.encode("utf-8")).digest(),
         })
+
+    if denied and not rows:
+        # A traversable directory whose files are all unreadable lands here.
+        # Left alone it is an empty catalogue cached for the process lifetime.
+        raise RuntimeError(
+            f"All {len(denied)} skill file(s) under {PACKAGES_DIR} were "
+            "unreadable (permission denied). This server runs unprivileged; "
+            "grant read permission on the mounted corpus."
+        )
 
     # Pass 2: choose only an authority supported by the repository contract.
     # packages/us-federal is the hand-authored exception. Other byte-identical

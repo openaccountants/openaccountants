@@ -12,10 +12,11 @@
 5. `tr-corporate-income-tax.md`
 6. `tr-payroll-social.md`
 7. `tr-tax-overview.md`
-8. `turkey-pit.md`
-9. `turkey-vat.md`
-10. `payroll-workflow-base.md`
-11. `company-formation-workflow-base.md`
+8. `turkey-company-formation-entity-choice-2.md`
+9. `turkey-pit.md`
+10. `turkey-vat.md`
+11. `payroll-workflow-base.md`
+12. `company-formation-workflow-base.md`
 
 ## Also known as
 
