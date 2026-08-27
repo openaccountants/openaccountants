@@ -1006,8 +1006,6 @@ def render_report(results):
     for jur, (claims, candidates, drift, stats) in results.items():
         highs = [(k, c) for k, c in candidates if rank_candidate(c) == "HIGH"]
         meds = [(k, c) for k, c in candidates if rank_candidate(c) == "MEDIUM"]
-        lines.append(f"## {jur}")
-        lines.append("")
         lines.append(f"## {jur} — HIGH confidence ({len(highs)})")
         lines.append("")
         if not highs:
