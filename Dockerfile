@@ -26,12 +26,14 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install the MCP server package first so the dependency layer caches well.
+# Skill content the server reads from $OPENACCOUNTANTS_ROOT/packages. It has to
+# land before the install: mcp/hatch_build.py bundles this tree into the wheel
+# and fails closed without it, so installing first aborted the whole build.
+COPY packages ./packages
+
+# Install the MCP server package.
 COPY mcp ./mcp
 RUN pip install --no-cache-dir ./mcp
-
-# Skill content the server reads from $OPENACCOUNTANTS_ROOT/packages.
-COPY packages ./packages
 
 ENV OPENACCOUNTANTS_ROOT=/app \
     MCP_TRANSPORT=streamable-http \

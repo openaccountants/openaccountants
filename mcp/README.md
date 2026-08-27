@@ -132,16 +132,18 @@ For contributors, or if you want the server to read your local, editable checkou
 ```bash
 git clone https://github.com/openaccountants/openaccountants.git
 cd openaccountants
-pip install ./mcp
+pip install -e ./mcp
 ```
 
 Or with `uv`:
 
 ```bash
-uv pip install ./mcp
+uv pip install -e ./mcp
 ```
 
-The server reads `packages/` from the repo root (override with `OPENACCOUNTANTS_ROOT`, see environment variables below).
+The `-e` matters. Without it both commands are ordinary non-editable installs: the build hook bundles a **snapshot** of `packages/` into the installed package and the server prefers that snapshot, so editing a guide in your checkout changes nothing until you reinstall. With `-e` the server resolves `packages/` from the repo root and picks up edits immediately. Either way `OPENACCOUNTANTS_ROOT` overrides the choice (see environment variables below).
+
+Published wheels and source distributions bundle the generated skill packages, which is what lets a plain `pip install openaccountants-mcp` work with no checkout at all.
 
 ### Connect to your AI client
 
@@ -241,13 +243,13 @@ docker run --rm -p 127.0.0.1:8000:8000 \
   openaccountants-mcp
 ```
 
-The default stdio transport (`pip install ./mcp && openaccountants-mcp`) is unchanged.
+The default stdio transport (`pip install -e ./mcp && openaccountants-mcp`) is unchanged.
 
 ## Environment variables
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `OPENACCOUNTANTS_ROOT` | Auto-detected repo root (parent of `mcp/`) | Path to your OpenAccountants checkout. The server reads `$OPENACCOUNTANTS_ROOT/packages/`. |
+| `OPENACCOUNTANTS_ROOT` | Auto-detected checkout root, or bundled package data in a distribution | Optional path to a directory containing `packages/`. Set it to override the bundled or checkout data. |
 | `MCP_TRANSPORT` | `stdio` | `stdio`, `streamable-http`, or `sse`. HTTP transports let remote MCP clients connect via a reverse proxy. |
 | `MCP_HOST` | `127.0.0.1` | Bind host for HTTP transports. Set explicitly, for example to `0.0.0.0`, only when an authenticated reverse proxy or equivalent network boundary is intentionally exposing the service. |
 | `MCP_PORT` | `8000` | Bind port for HTTP transports. |
