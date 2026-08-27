@@ -9,7 +9,6 @@ metadata:
   quality: source-cited draft
   openaccountants_url: "https://openaccountants.com/skills/ga-income-tax"
   obligation: IT
-  reviewed_by: "Charlie Barmore, CPA (Georgia)"
 ---
 
 # Georgia Individual Income Tax Skill — Self-Employed / Sole Proprietor
@@ -203,4 +202,4 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ---
 
-_Source: [OpenAccountants](https://openaccountants.com/skills/ga-income-tax) — open tax Guides for AI, reviewed by named CPAs/CAs/EAs. Quality: **source-cited draft**. Reviewed by Charlie Barmore, CPA (Georgia). For always-current figures and named-accountant backing, connect the OpenAccountants MCP server (`openaccountants-mcp`)._
+_Source: [OpenAccountants](https://openaccountants.com/skills/ga-income-tax) — open tax Guides for AI, reviewed by named CPAs/CAs/EAs. Quality: **source-cited draft**. For always-current figures and named-accountant backing, connect the OpenAccountants MCP server (`openaccountants-mcp`)._
