@@ -4,7 +4,7 @@ description: ALWAYS USE THIS SKILL when a user asks for help preparing their Aus
 version: 0.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-08-27
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -12,7 +12,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Freelance Intake
 
-## Australia Sole Trader Intake Skill v0.1
+## AU Freelance Intake
+
+## Australia Sole Trader Intake Skill v0.2
 
 ## What this file is
 
@@ -74,7 +76,7 @@ Present the refusal sweep as a single `ask_user_input_v0` call with 3 questions,
 **The 3 questions to ask first**
 
 ```
-Q1: "Australian residency in 2024-25?"
+Q1: "Australian residency in 2025-26?"
     Options: ["Full year", "Part year", "Did not live in Australia"]
 
 Q2: "Business structure?"
@@ -85,7 +87,7 @@ Q3: "Do you have an ABN?"
 ```
 
 - **Q1 evaluation** — Q1 = Full year -> continue. Q1 = Part year or did not live in Australia -> stop. "I'm set up for full-year Australian residents only. Part-year or non-residents have different rules around foreign income and dual residency. You need a registered tax agent who handles non-resident returns."
-- **Q2 evaluation** — Q2 = Sole trader -> continue. Q2 = Partnership -> stop. "Partnerships lodge a separate partnership return and distribute income to partners. You need a registered tax agent familiar with partnership returns." Q2 = Company (Pty Ltd) -> stop. "I don't cover company returns. Companies lodge a separate company tax return with different rules. You need a registered tax agent." Q2 = Trust -> stop. "Trust returns have separate distribution and reporting requirements. You need a registered tax agent familiar with trust returns." Q2 = Not sure -> ask one follow-up: "Do you operate under your own name (or a registered business name) with an individual ABN? Or do you have a registered company with ASIC? If you invoice under your own ABN, you're a sole trader. If you have an ACN and Pty Ltd, you're a company."
+- **Q2 evaluation** — Q2 = Sole trader -> continue. Q2 = Partnership -> stop. "Partnerships lodge a separate partnership return and distribute income to partners. The australia-company-trust workflow (workflows/australia-company-trust.md) covers partnership, company and trust engagements end to end; if it is not available, you need a registered tax agent familiar with partnership returns." Q2 = Company (Pty Ltd) -> stop. "Company returns follow different rules. The australia-company-trust workflow covers them; if it is not available, you need a registered tax agent." Q2 = Trust -> stop. "Trust returns have separate distribution and reporting requirements. The australia-company-trust workflow covers them; if it is not available, you need a registered tax agent familiar with trust returns." Q2 = Not sure -> ask one follow-up: "Do you operate under your own name (or a registered business name) with an individual ABN? Or do you have a registered company with ASIC? If you invoice under your own ABN, you're a sole trader. If you have an ACN and Pty Ltd, you're a company."
 - **Q3 evaluation** — Q3 = Yes -> continue. Q3 = No -> stop. "You need an ABN to operate as a sole trader. Apply at abr.gov.au. Once you have your ABN, come back and we can prepare your returns." Q3 = Applied but not yet received -> continue with a flag: ABN pending, will need to confirm before lodging.
 
 **Second batch of scope questions**
@@ -104,9 +106,7 @@ Q6: "Industry?"
 - **GST registration turnover threshold** — 75000 AUD (turnover above which GST registration required or voluntary registration applies)
 - **Q4 evaluation** — Yes -> continue. Standard quarterly BAS lodgement. No -> continue. No BAS required unless turnover crosses $75K threshold. Will check after inference. Not sure -> ask one follow-up: "Do you charge GST on your invoices (i.e., your prices include a 10% GST component)? If yes, you're registered. If your invoices say 'no GST' or you've never dealt with BAS, you're likely not registered. Check your ABN registration at abr.gov.au."
 - **Q5 evaluation** — All options -> note for Medicare levy surcharge and tax offset calculations. Continue.
-- **Q6 evaluation** — All options -> note for expense classification context. Continue.
-
-Total time: ~45 seconds if the user taps through.
+- **Q6 evaluation** — All options -> note for expense classification context. Continue. Total time: ~45 seconds if the user taps through.
 
 ## Section 3 -- The dump
 
@@ -114,16 +114,16 @@ Once the refusal sweep passes, immediately ask for the document dump. Single mes
 
 **Example:**
 
-> Scope is good. Now upload everything you have for 2024-25 -- drop it all in at once:
+> Scope is good. Now upload everything you have for 2025-26 -- drop it all in at once:
 >
-> - Business bank statement(s) for all of 2024-25 (1 July 2024 - 30 June 2025) (CSV or PDF)
-> - Sales invoices issued in 2024-25
+> - Business bank statement(s) for all of 2025-26 (1 July 2025 - 30 June 2026) (CSV or PDF)
+> - Sales invoices issued in 2025-26
 > - Purchase invoices / receipts for business expenses
 > - Prior year tax return (2023-24 ITR, or at least last year's notice of assessment)
 > - PAYG payment summary / income statement from any employer (if also employed)
 > - Private health insurance statement (from your insurer)
 > - HELP/HECS statement (if applicable)
-> - BAS lodgements for 2024-25 (if GST registered)
+> - BAS lodgements for 2025-26 (if GST registered)
 > - Superannuation statements (personal contributions)
 > - Motor vehicle logbook (if claiming vehicle expenses)
 > - Any ATO correspondence or notices
@@ -137,7 +137,7 @@ Then wait. Do not ask any other questions while waiting.
 
 **If the user says "I don't know what I have":** Switch to guided mode:
 > Check these places:
-> - Business bank: download 2024-25 statements as PDF or CSV (1 July 2024 - 30 June 2025)
+> - Business bank: download 2025-26 statements as PDF or CSV (1 July 2025 - 30 June 2026)
 > - myGov / ATO online: download income statement, prior returns, NOA
 > - Email: search for "invoice", "BAS", "ATO", "super", "health insurance"
 > - Your health insurer's portal: download the annual tax statement
@@ -170,12 +170,12 @@ Then wait. Do not ask any other questions while waiting.
 - Total turnover reconciliation against bank deposits
 - Any foreign clients (withholding tax implications)
 
-- **Instant asset write-off threshold for 2024-25** — 20000 AUD (threshold under which items eligible for instant asset write-off)
+- **Instant asset write-off threshold for 2025-26** — 20000 AUD (threshold under which items eligible for instant asset write-off)
 
 **Purchase invoices / receipts:**
 - Expense category (revenue, capital)
 - GST amount on each (claimable input tax credit for GST registered)
-- Any items eligible for instant asset write-off (under $20,000 threshold for 2024-25)
+- Any items eligible for instant asset write-off (under $20,000 threshold for 2025-26)
 - Any items that must be depreciated (above threshold or excluded assets)
 - Any blocked categories (entertainment, personal, non-deductible fines/penalties)
 
@@ -253,7 +253,7 @@ After inference, present a single compact summary message. Use a structured form
 >
 > **Super Contributions (from super statement)**
 > - Personal deductible contributions: $8,000
-> - Concessional cap remaining: $22,000 (of $30,000 cap)
+> - Concessional cap remaining: $22,000 (of the $30,000 cap for 2025-26; the cap is $32,500 from 2026-27)
 >
 > **PAYG Instalments (from BAS)**
 > - Q1 instalment: $1,200
@@ -298,7 +298,7 @@ After the user confirms the summary (or corrects it), ask about things that cann
 ```
 Q: "Home office claim method?"
    Options: [
-     "Fixed rate method (67c/hr) -- I track hours worked from home",
+     "Fixed rate method (70c/hr) -- I track hours worked from home",
      "Actual cost method -- I have records of running expenses and floor area",
      "I work from a separate business premises (not home)",
      "I don't work from home",
@@ -306,27 +306,27 @@ Q: "Home office claim method?"
    ]
 ```
 
-- **Home office option handling** — If option 1 -> ask for total hours worked from home during 2024-25 (text input). If option 2 -> flag as complex: actual cost method requires detailed records of electricity, gas, internet, phone, depreciation of furniture. Ask for floor area percentage of dedicated workspace. If option 3 -> rent is already captured in expenses. No home office calculation needed. If option 4 -> skip home office entirely. If option 5 -> recommend fixed rate method (67c/hr) as simpler. Ask for hours.
-- **Fixed rate home office method rate** — 67 cents/hour (2024-25 rate, revised rate effective 1 July 2022, replaces old 52c/hr method)
+- **Home office option handling** — If option 1 -> ask for total hours worked from home during 2025-26 (text input). If option 2 -> flag as complex: actual cost method requires detailed records of electricity, gas, internet, phone, depreciation of furniture. Ask for floor area percentage of dedicated workspace. If option 3 -> rent is already captured in expenses. No home office calculation needed. If option 4 -> skip home office entirely. If option 5 -> recommend fixed rate method (70c/hr) as simpler. Ask for hours.
+- **Fixed rate home office method rate** — 70 cents/hour (2024-25 through 2026-27; was 67c for 2022-23 and 2023-24, replacing the old 52c/hr method)  _(PCG 2023/1)_
 
 **Motor vehicle gap-filling question**
 
 ```
 Q: "Motor vehicle method?"
    Options: [
-     "Cents-per-km (85c/km, max 5,000 business km)",
+     "Cents-per-km (88c/km for 2025-26, max 5,000 business km)",
      "Logbook method (I kept a logbook for 12+ weeks)",
      "No vehicle used for business"
    ]
 ```
 
-- **Cents-per-km motor vehicle rate 2024-25** — 85 cents/km (maximum 5,000 business km)
-- **Motor vehicle option handling** — If option 1 -> ask for estimated business kilometres driven in 2024-25 (max 5,000). Rate is 85 cents/km for 2024-25. If option 2 -> ask for logbook business-use percentage and total car expenses. If option 3 -> skip vehicle entirely. Flag all private-use percentages as T2 -- registered tax agent must confirm the percentage is reasonable and documented.
+- **Cents-per-km motor vehicle rate 2025-26** — 88 cents/km (maximum 5,000 business km; 91c from 2026-27)
+- **Motor vehicle option handling** — If option 1 -> ask for estimated business kilometres driven in 2025-26 (max 5,000). Rate is 88 cents/km for 2025-26. If option 2 -> ask for logbook business-use percentage and total car expenses. If option 3 -> skip vehicle entirely. Flag all private-use percentages as T2 -- registered tax agent must confirm the percentage is reasonable and documented.
 
 **Other income question**
 
 ```
-Q: "Any other income in 2024-25?"
+Q: "Any other income in 2025-26?"
    Options: [
      "Interest income (bank accounts)",
      "Dividend income (shares)",
@@ -372,7 +372,7 @@ The downstream skill (`au-return-assembly`) consumes a JSON structure. It is int
 ```json
 {
   "jurisdiction": "AU",
-  "tax_year": "2024-25",
+  "tax_year": "2025-26",
   "taxpayer": {
     "name": "",
     "date_of_birth": "",
@@ -553,13 +553,15 @@ For an unprepared user (has to go fetch documents):
 
 - **v0.1 (April 2026):** Initial draft. Upload-first, inference-then-confirm pattern modelled on mt-freelance-intake v0.1.
 
-## End of Intake Skill v0.1
+## End of Intake Skill v0.2
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

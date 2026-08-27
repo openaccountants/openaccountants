@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Australian individual income ta
 version: 2.1
 jurisdiction: AU
 tax_year: 2024
-last_updated: 2026-07-13
+last_updated: 2026-08-27
 review_status: pending_review
 depends_on:
   - income-tax-workflow-base
@@ -15,6 +15,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Individual Return
 
+## AU Individual Return
+
 ## Section 1 -- Quick Reference
 
 **Section 1 -- Quick Reference**
@@ -24,19 +26,19 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Australia |
 | Tax | Income tax + Medicare levy + HELP repayments (if applicable) |
 | Currency | AUD only |
-| Tax year | 1 July 2024 -- 30 June 2025 |
+| Tax year | 1 July 2025 -- 30 June 2026 |
 | Primary legislation | Income Tax Assessment Act 1997 (ITAA 1997); Income Tax Assessment Act 1936 (ITAA 1936) |
 | Supporting legislation | Tax Administration Act 1953; Medicare Levy Act 1986; Higher Education Support Act 2003 |
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax (via myGov) or registered tax agent |
-| Filing deadline | 31 October 2025 (self-lodged); May 2026 (tax agent) |
+| Filing deadline | 31 October 2026 (self-lodged); May 2027 (tax agent) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending -- Australian CPA/CA sign-off required |
-| Skill version | 2.0 |
+| Skill version | 2.2 |
 
-### Tax Rates -- Resident Individual (2024-25, Stage 3) [T1]
+### Tax Rates -- Resident Individual (2025-26, Stage 3) [T1]
 
-**Tax Rates -- Resident Individual (2024-25, Stage 3) [T1]**
+**Tax Rates -- Resident Individual (2025-26, Stage 3) [T1]**
 
 | Taxable Income (AUD) | Rate | Tax on This Band |
 | --- | --- | --- |
@@ -53,9 +55,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Item | Value |
 | --- | --- |
 | Rate | 2% of taxable income |
-| Low-income threshold (single) | $27,222 (no levy below; phase-in $27,223-$34,027) |
-| Low-income threshold (family) | $45,907 + $4,216 per dependent child |
-| Surcharge (no private hospital cover) | Additional 1%-1.5% if income over $93,000 (single) |
+| Low-income threshold (single) | $28,011 (no levy below; phase-in to $35,013) |
+| Low-income threshold (family) | $47,238 + $4,338 per dependent child |
+| Surcharge (no private hospital cover) | Additional 1%-1.5% if income over $101,000 (single, 2025-26) |
 
 ### Low Income Tax Offset (LITO) [T1]
 
@@ -63,8 +65,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Taxable Income (AUD) | LITO |
 | --- | --- |
-| Up to $45,000 | $700 |
-| $45,001 -- $66,667 | Reduces by 5c per $1 over $45,000 |
+| Up to $37,500 | $700 |
+| $37,501 -- $45,000 | $700 less 5c per $1 over $37,500 |
+| $45,001 -- $66,667 | $325 less 1.5c per $1 over $45,000 |
 | $66,668+ | $0 |
 
 ### Small Business Income Tax Offset (SBITO) [T1]
@@ -260,7 +263,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Diminishing value** — Base value x (days held / 365) x (200% / effective life)  _(ITAA 1997 Div 40)_
 - **Prime cost (straight line)** — Cost x (days held / 365) x (100% / effective life)  _(ITAA 1997 Div 40)_
 - **Small business entity simplified depreciation** — Small business entity (turnover < $10M): can use simplified depreciation -- pool all assets over $20,000 at 15% first year, 30% thereafter.  _(ITAA 1997 Div 40)_
-- **Instant asset write-off** — Assets costing less than $20,000 (2024-25) can be immediately deducted by small business entities. This threshold may change each year -- confirm for current year.  _(ITAA 1997 Div 40)_
+- **Instant asset write-off** — Assets costing less than $20,000 (assets first used or installed ready for use 1 July 2023 to 30 June 2026; extension made law by the Treasury Laws Amendment (Strengthening Financial Systems and Other Measures) Act 2025) can be immediately deducted by small business entities. Confirm the limit for later years.  _(ITAA 1997 s 328-180)_
 
 ### 5.4 Superannuation [T1]
 
@@ -270,14 +273,14 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **5.5 HELP/HECS Repayment [T1]**
 
-| Repayment Income (2024-25) | Rate |
+| Repayment Income (2025-26, marginal system) | Rate |
 | --- | --- |
-| Below $54,435 | 0% |
-| $54,435 -- $62,850 | 1% |
-| $62,851 -- $66,620 | 2% |
-| $66,621 -- $70,618 | 2.5% |
-| ... (progressive to) | ... |
-| $151,201+ | 10% |
+| $67,000 or below | Nil |
+| $67,001 -- $125,000 | 15c per $1 over $67,000 |
+| $125,001 -- $179,285 | $8,700 plus 17c per $1 over $125,000 |
+| $179,286 and over | 10% of total repayment income |
+
+From 2025-26 compulsory repayments are calculated on a marginal basis (only the income above the minimum repayment threshold), substituted by the Universities Accord (Cutting Student Debt by 20 Per Cent) Act 2025.
 
 - **Repayment income** — Repayment income = taxable income + reportable fringe benefits + net investment losses + reportable super. HELP repayments are NOT deductible.  _(Higher Education Support Act 2003)_
 
@@ -287,12 +290,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Value |
 | --- | --- |
-| Self-lodge deadline | 31 October 2025 |
-| Tax agent deadline | Varies (typically March-May 2026) |
-| Failure to lodge on time | $313 per 28-day period, up to 5 periods ($1,565 max) |
+| Self-lodge deadline | 31 October 2026 |
+| Tax agent deadline | Varies (typically March-May 2027) |
+| Failure to lodge on time | $330 per 28-day period, up to 5 periods ($1,650 max) |
 | Shortfall penalty (reasonable care not taken) | 25% of shortfall |
 | Shortfall penalty (recklessness) | 50% of shortfall |
-| General Interest Charge (GIC) | Varies quarterly; 2025 annual rates include 11.42%, 11.17%, 10.78%, and 10.61%; calculated daily and compounded |
+| General Interest Charge (GIC) | Rate set quarterly and published on the ATO website; calculated daily and compounded |
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
@@ -324,15 +327,15 @@ Confirm method and km/logbook records.
 
 ### 6.3 Private Health Insurance (Medicare Levy Surcharge) [T2]
 
-- **MLS applicability** — If income over $93,000 (single) and no appropriate private hospital cover, Medicare levy surcharge applies:
+- **MLS applicability** — If income over $101,000 (single, 2025-26) and no appropriate private hospital cover, Medicare levy surcharge applies:
 
 **MLS Rate table**
 
 | Income | MLS Rate |
 | --- | --- |
-| $93,001 -- $108,000 | 1% |
-| $108,001 -- $144,000 | 1.25% |
-| $144,001+ | 1.5% |
+| $101,001 -- $118,000 | 1% |
+| $118,001 -- $158,000 | 1.25% |
+| $158,001+ | 1.5% |
 
 - **PHI rebate** — PHI rebate: income-tested offset that reduces PHI premiums. Claimed via reduced premiums or tax offset.
 
@@ -348,7 +351,7 @@ Confirm whether PSI rules apply (results test, unrelated clients test, employmen
 
 ```
 AUSTRALIAN INDIVIDUAL TAX RETURN -- Working Paper
-Tax Year: 2024-25
+Tax Year: 2025-26
 
 A. INCOME
   A1. Business income (ABN income)                 ___________
@@ -450,7 +453,7 @@ ONBOARDING QUESTIONS -- AUSTRALIA INDIVIDUAL RETURN
 
 ### Key Legislation
 
-**Key Legislation**
+**Key Legislation**  _(ITAA 1997; Medicare Levy Act 1986; Higher Education Support Act 2003)_
 
 | Topic | Reference |
 | --- | --- |
@@ -461,7 +464,7 @@ ONBOARDING QUESTIONS -- AUSTRALIA INDIVIDUAL RETURN
 | Small business entity | ITAA 1997 Div 328 |
 | Instant asset write-off | ITAA 1997 s328-180 |
 | Home office | ATO Practical Compliance Guideline PCG 2023/1 |
-| Motor vehicle | ITAA 1997 s28-13, s28-15 |
+| Motor vehicle | ITAA 1997 s28-13, s28-15; cents-per-km rate set by Income Tax Assessment (Cents per Kilometre Deduction Rate for Car Expenses) Determination 2024 (F2024L00697): 88c for 2024-25 and 2025-26 |
 | Superannuation deduction | ITAA 1997 Div 290 |
 | Medicare levy | Medicare Levy Act 1986 |
 | HELP repayments | Higher Education Support Act 2003 |
@@ -498,21 +501,6 @@ ONBOARDING QUESTIONS -- AUSTRALIA INDIVIDUAL RETURN
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, or registered tax agent in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
 
 <!-- openaccountants-cta-block -->
 
