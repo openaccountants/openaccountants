@@ -99,7 +99,7 @@ Cite to the O.C.G.A. section in any reviewer brief — Georgia Department of Rev
 
 - **S-corps pay net worth tax** — Yes, S-corporations pay Georgia Net Worth Tax. This is one of the most common mistakes made by out-of-state CPAs preparing Georgia returns. Federal S-corp status (an income tax election under IRC § 1362) has no effect on Georgia's net worth tax. The net worth tax is imposed on the corporate entity, not on its income. The S-corp computes net worth tax on Form 600S Part III using the same graduated schedule as a C-corp. There is no "small S-corp" exception, no "single-shareholder" exception, no "S-corp with QBI passthrough" exception.  _(IRC § 1362)_
 
-[AUDIT FLASH POINT — S-CORP OWNERS SURPRISED BY NET-WORTH TAX] The most frequent client complaint Charlie Barmore flagged is the S-corp owner who:
+[AUDIT FLASH POINT — S-CORP OWNERS SURPRISED BY NET-WORTH TAX] The most frequent client complaint a Georgia CPA flagged is the S-corp owner who:
 
 1. Forms a Georgia S-corp expecting to save self-employment tax
 2. Receives an audit-style notice from GA DOR a year later for unpaid net worth tax

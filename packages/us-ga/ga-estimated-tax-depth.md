@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Georgia Estimated Tax — Depth Skill (Tax Year 2025)
 
-> **Companion to `ga-income-tax.md`**: That skill establishes the GA personal income tax framework — the 5.19% flat rate (2025), residency rules, retirement income exclusion, and Form 500 mechanics. Charlie Barmore noted (Nov 2025 review) that the estimated-tax discussion in `ga-income-tax.md` was thin: it stated the basic $1,000 threshold but did not address the high-income 110% safe harbor, the annualized income method, the underpayment penalty mechanics, or the interaction with the PTE election under O.C.G.A. §48-7-23. This skill fills those gaps.
+> **Companion to `ga-income-tax.md`**: That skill establishes the GA personal income tax framework — the 5.19% flat rate (2025), residency rules, retirement income exclusion, and Form 500 mechanics. A Georgia CPA noted (Nov 2025 review) that the estimated-tax discussion in `ga-income-tax.md` was thin: it stated the basic $1,000 threshold but did not address the high-income 110% safe harbor, the annualized income method, the underpayment penalty mechanics, or the interaction with the PTE election under O.C.G.A. §48-7-23. This skill fills those gaps.
 >
 > **Statutory basis**: O.C.G.A. §48-7-114 through §48-7-126 (individual estimated tax and underpayment penalty); O.C.G.A. §48-7-21 (corporate estimated tax); O.C.G.A. §48-7-23 (PTE election); Georgia Department of Revenue Regulation 560-7-8-.34 (estimated tax administration); Form 500-ES instructions (TY 2025); Form 500-UET (Underpayment of Estimated Tax by Individuals); Form 600-ES (Corporate); GA-8453 (electronic filing declaration that also captures penalty computation references).
 >
@@ -379,7 +379,7 @@ Before signing off on a Georgia estimated tax plan, the reviewer must affirmativ
 
 ## End of document footer
 
-*End of ga-estimated-tax-depth.md (v0.1, 2025-11-15). Pending review by Charlie Barmore and at least one additional Georgia-credentialed contributor per the multi-accountant verification model.*
+*End of ga-estimated-tax-depth.md (v0.1, 2025-11-15). Pending review by at least two Georgia-credentialed contributors per the multi-accountant verification model.*
 
 ## Talk to a verified accountant
 
