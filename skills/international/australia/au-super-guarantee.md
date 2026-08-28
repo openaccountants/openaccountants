@@ -5,7 +5,7 @@ description: >
 version: 3.1
 jurisdiction: AU
 tax_year: 2024
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 category: international
 tier: 2
@@ -61,8 +61,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Unknown s 290-150 notice status | Assume NOT lodged; warn about deadline |
 | Unknown contractor vs employee | Flag for reviewer -- multi-factor test |
 
-## Section 2 -- Required inputs and refusal catalogue
-
 ### Required inputs
 
 **Minimum viable** -- entity structure (sole trader / company / trust / partnership), whether client has employees, pay frequency and payday dates, qualifying earnings per payday (for employers), and voluntary contribution intent (for sole traders).
@@ -78,9 +76,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **R-AU-SG-3 -- Family law splits** — *Trigger:* super splitting in divorce. *Message:* "Family law superannuation splits require legal advice. Out of scope."
 - **R-AU-SG-4 -- SGC computation** — *Trigger:* client has missed payday super deadlines and asks about the Super Guarantee Charge. *Message:* "SGC under the payday super regime is ATO-assessed per payday from STP and fund data -- it is not self-assessed and should be escalated to a qualified practitioner. Components: final SG shortfall + notional earnings (GIC rate, compounding daily) + administrative uplift + any choice loading. Note the NEW SGC (payday regime) is tax-deductible; the OLD quarterly-regime SGC remains non-deductible."
 
-### 3.1 Direct fund payments (heading missing/corrupted in source)
-
-**Super fund direct payment pattern table**
+**Direct super fund payments pattern table (source heading missing; header row truncated in source)**
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
@@ -215,27 +211,27 @@ Matches "ATO" + "IAS" (pattern 3.6). This is an Instalment Activity Statement (P
 
 ### Rule 1 -- SG formula (payday super)
 
-- **SG formula (payday super)** — remaining_base = max(0, $270,830 - YTD_qualifying_earnings_before_this_payday) SG per payday  = 12% x min(Qualifying_earnings_paid_this_payday, remaining_base) SG applies only to the first $270,830 of qualifying earnings paid in the financial year -- the payday that crosses the base attracts SG only on the portion beneath it, and later paydays attract none. Annual maximum SG per employee: exactly $32,499.60. No $450/month threshold (removed 1 July 2022). All employees eligible.
+- **SG formula (payday super)** — ``` remaining_base = max(0, $270,830 - YTD_qualifying_earnings_before_this_payday) SG per payday  = 12% x min(Qualifying_earnings_paid_this_payday, remaining_base) ``` SG applies only to the first $270,830 of qualifying earnings paid in the financial year -- the payday that crosses the base attracts SG only on the portion beneath it, and later paydays attract none. Annual maximum SG per employee: exactly $32,499.60. No $450/month threshold (removed 1 July 2022). All employees eligible.
 
 ### Rule 2 -- SG rate
 
-- **SG rate** — 2024-25: 11.5%. 2025-26 onwards: 12% (terminal rate). %
+- **SG rate** — 2024-25: 11.5%. 2025-26 onwards: 12% (terminal rate).
 
 ### Rule 3 -- Payment deadline (earnings paid from 1 July 2026)
 
-- **Payment deadline (earnings paid from 1 July 2026)** — A contribution is on time only if it is **received by the employee's super fund**, with the information needed to allocate it to the member account, **within 7 business days after payday** (the "QE day"). - **Business day** = any day except Saturday, Sunday, or a public holiday applying to the WHOLE of any Australian state or territory. A territory-wide holiday anywhere in Australia extends the deadline for ALL employers; part-of-state holidays do not. - **New employee (or new fund):** first contribution due within 20 business days of the relevant QE day; later paydays revert to 7. If the extended date overlaps the next payday's deadline, the later contribution inherits the extended date. - **Out-of-cycle payments** (e.g. bonuses, per LI 2026/20): SG rides with the next regular payday's 7-business-day deadline. - **Exceptional circumstances** (ATO class determination, e.g. natural disasters): later of 20 business days after the QE day or 20 business days after the determination. - Funds must allocate or return contributions within 3 business days (down from 20). **Legacy:** earnings paid up to 30 June 2026 keep the quarterly deadlines (28 Oct / 28 Jan / 28 Apr / 28 Jul); the final quarterly deadline was 28 July 2026.  _(LI 2026/20)_
+- **Payment deadline (earnings paid from 1 July 2026)** — A contribution is on time only if it is **received by the employee's super fund**, with the information needed to allocate it to the member account, **within 7 business days after payday** (the "QE day"). - **Business day** = any day except Saturday, Sunday, or a public holiday applying to the WHOLE of any Australian state or territory. A territory-wide holiday anywhere in Australia extends the deadline for ALL employers; part-of-state holidays do not. - **New employee (or new fund):** first contribution due within 20 business days of the relevant QE day; later paydays revert to 7. If the extended date overlaps the next payday's deadline, the later contribution inherits the extended date. - **Out-of-cycle payments** (e.g. bonuses, per LI 2026/20): SG rides with the next regular payday's 7-business-day deadline. - **Exceptional circumstances** (ATO class determination, e.g. natural disasters): later of 20 business days after the QE day or 20 business days after the determination. - Funds must allocate or return contributions within 3 business days (down from 20). **Legacy:** earnings paid up to 30 June 2026 keep the quarterly deadlines (28 Oct / 28 Jan / 28 Apr / 28 Jul); the final quarterly deadline was 28 July 2026.
 
 ### Rule 4 -- Maximum contribution base is ANNUAL from 2026-27
 
-- **Maximum contribution base (annual)** — $270,830 of qualifying earnings for 2026-27 (formula: concessional cap x 100 / 12, rounded down to nearest $10 = $32,500 x 100 / 12). Applied on a year-to-date basis per the Rule 1 formula: SG is payable on qualifying earnings up to the base, the crossing payday is prorated, and nothing is payable on earnings beyond it. Maximum SG per employee per year: $32,499.60. (Last quarterly MCB: $62,500/quarter in 2025-26.) AUD
+- **Maximum contribution base is ANNUAL from 2026-27** — $270,830 of qualifying earnings for 2026-27 (formula: concessional cap x 100 / 12, rounded down to nearest $10 = $32,500 x 100 / 12). Applied on a year-to-date basis per the Rule 1 formula: SG is payable on qualifying earnings up to the base, the crossing payday is prorated, and nothing is payable on earnings beyond it. Maximum SG per employee per year: $32,499.60. (Last quarterly MCB: $62,500/quarter in 2025-26.)
 
 ### Rule 5 -- Sole traders have NO SG obligation to themselves
 
-- **Sole trader / director SG obligation** — Drawings are not salary. Only voluntary contributions. Company directors paying themselves a salary: YES SG applies (director is employee of company).  _((Rule 4))_
+- **Sole traders have NO SG obligation to themselves** — - **Sole trader / director SG obligation** — Drawings are not salary. Only voluntary contributions. Company directors paying themselves a salary: YES SG applies (director is employee of company).  _(Rule 4)_
 
 ### Rule 6 -- Concessional contributions cap
 
-- **Concessional contributions cap** — $32,500 (2026-27; indexed up from $30,000 on 1 July 2026). Includes employer SG + salary sacrifice + personal deductible contributions (with s 290-150 notice). Excess included in assessable income at marginal rate (with 15% offset). AUD
+- **Concessional contributions cap** — $32,500 (2026-27; indexed up from $30,000 on 1 July 2026). Includes employer SG + salary sacrifice + personal deductible contributions (with s 290-150 notice). Excess included in assessable income at marginal rate (with 15% offset).
 
 ### Rule 7 -- Carry-forward unused concessional cap
 
@@ -243,49 +239,19 @@ Matches "ATO" + "IAS" (pattern 3.6). This is an Instalment Activity Statement (P
 
 ### Rule 8 -- Non-concessional cap
 
-- **Non-concessional cap** — $130,000 (2026-27; 4 x concessional cap). Bring-forward tiers by TSB at 30 June 2026: < $1.84m -> $390,000 over 3 years; $1.84m to < $1.97m -> $260,000 over 2 years; $1.97m to < $2.1m -> $130,000 (no bring-forward); >= $2.1m -> nil. AUD
+- **Non-concessional cap** — $130,000 (2026-27; 4 x concessional cap). Bring-forward tiers by TSB at 30 June 2026: < $1.84m -> $390,000 over 3 years; $1.84m to < $1.97m -> $260,000 over 2 years; $1.97m to < $2.1m -> $130,000 (no bring-forward); >= $2.1m -> nil.
 
 ### Rule 9 -- s 290-150 notice (personal contribution deduction)
 
-- **s 290-150 notice requirement** — Must lodge Notice of Intent to Claim a Deduction with the super fund AND receive acknowledgement BEFORE the earlier of: lodging the tax return, or end of following financial year. If not lodged: contribution stays non-concessional, NO deduction.  _((Rule 8))_
+- **s 290-150 notice (personal contribution deduction)** — - **s 290-150 notice requirement** — Must lodge Notice of Intent to Claim a Deduction with the super fund AND receive acknowledgement BEFORE the earlier of: lodging the tax return, or end of following financial year. If not lodged: contribution stays non-concessional, NO deduction.  _(Rule 8)_
 
 ### Rule 10 -- Division 293 (additional 15% for high earners)
 
-- **Division 293 formula** — Div 293 income = taxable income + concessional contributions. If > $250,000: Div 293 tax = 15% x lesser of (concessional contributions, excess over $250,000). Threshold frozen at $250,000 (not indexed).  _((Rule 9))_
+- **Division 293 (additional 15% for high earners)** — - **Division 293 formula** — Div 293 income = taxable income + concessional contributions If > $250,000: Div 293 tax = 15% x lesser of (concessional contributions, excess over $250,000)  _(Rule 9)_ Threshold frozen at $250,000 (not indexed).
 
 ### Rule 11 -- Redesigned SGC (QE days from 1 July 2026)
 
-- **Redesigned SGC** — ATO-assessed per payday (no SG statement is lodged; ATO matches STP against fund reporting). Components: 1. **Final SG shortfall** -- unpaid SG on qualifying earnings at 12% 2. **Notional earnings** -- GIC-rate interest on the shortfall, compounding daily from the day after the deadline 3. **Administrative uplift** -- starts at 60% of (shortfall + notional earnings); reduced 20 points for a clean 2-year history and up to 40 points for voluntary disclosure (0% if disclosed within 30 days with clean history) 4. **Choice loading** -- 25% of contributions where choice-of-fund rules breached, capped at $1,200 per notice period Payment due the day the assessment is made. Unpaid 28 days after assessment -> Notice to Pay -> late payment penalty of 25% or 50% of unpaid SGC. **The new SGC is tax-deductible** (all four components); GIC on late SGC and the late payment penalty are not, and old-regime SGC (quarters before 1 July 2026) remains non-deductible. First-year approach: PCG 2026/1.  _(PCG 2026/1)_
-
-## Section 6 -- Tier 2 catalogue
-
-### T2-1 -- Contractor vs employee for SG
-
-- **T2-1 Contractor vs employee for SG** — Trigger: Client engages a contractor who may be principally for labour (SGAA s 12(3)). Issue: Multi-factor test required. SG may be triggered. Action: Flag for reviewer.  _(SGAA s 12(3))_
-
-### T2-2 -- Multiple employers exceeding concessional cap
-
-- **T2-2 Multiple employers exceeding concessional cap** — **Trigger:** Individual has two employers both paying SG. Combined may exceed $32,500. **Issue:** Neither employer at fault. Individual bears excess contributions tax. **Action:** Flag for reviewer to assess salary sacrifice adjustment.
-
-### T2-3 -- Over-75 contributions
-
-- **T2-3 Over-75 contributions** — **Trigger:** Client aged 75+ wants to make voluntary contributions. **Issue:** From 28 days after the end of the month the client turns 75, funds cannot accept voluntary contributions (non-concessional, salary sacrifice, or personal deductible) -- downsizer contributions are the only exception (no upper age limit). The 40-hours-in-30-days work test applies at ages 67-74 and, since 1 July 2022, only as a condition for claiming a deduction on personal contributions (ITAA97 s 290-165). Mandated employer SG has no age limit. **Action:** Flag for reviewer.  _(ITAA97 s 290-165)_
-
-### T2-4 -- Carry-forward with borderline TSB
-
-- **T2-4 Carry-forward with borderline TSB** — Trigger: TSB close to $500,000 threshold. Issue: Carry-forward availability depends on exact TSB at 30 June. Action: Flag for reviewer to confirm TSB.
-
-### T2-5 -- s 290-150 notice deadline approaching
-
-- **T2-5 s 290-150 notice deadline approaching** — **Trigger:** Client made personal contributions but has not lodged notice. **Issue:** Missing the deadline is irreversible -- contribution stays non-concessional. **Action:** Urgent flag. Confirm notice status before lodging return.
-
-### T2-6 -- Straddle-period statements (2026 changeover)
-
-- **T2-6 Straddle-period statements (2026 changeover)** — **Trigger:** Bank statement spans 1 July 2026. **Issue:** Quarterly-pattern SG debits (e.g. a 28 July 2026 payment for the June quarter) and payday-pattern debits both appear and are BOTH correct for their periods. **Action:** Classify by the period the payment relates to; do not flag the final quarterly payment as late-pattern.
-
-### T2-7 -- Clearing house lag near the 7-day boundary
-
-- **T2-7 Clearing house lag near the 7-day boundary** — **Trigger:** Employer pays a clearing house 4-5 business days after payday. **Issue:** Fund receipt, not clearing house receipt, is the on-time test; processing lag can push receipt past day 7. **Action:** Flag for reviewer; recommend earlier remittance or payroll-integrated payment.
+- **Redesigned SGC (QE days from 1 July 2026)** — ATO-assessed per payday (no SG statement is lodged; ATO matches STP against fund reporting). Components: 1. **Final SG shortfall** -- unpaid SG on qualifying earnings at 12% 2. **Notional earnings** -- GIC-rate interest on the shortfall, compounding daily from the day after the deadline 3. **Administrative uplift** -- starts at 60% of (shortfall + notional earnings); reduced 20 points for a clean 2-year history and up to 40 points for voluntary disclosure (0% if disclosed within 30 days with clean history) 4. **Choice loading** -- 25% of contributions where choice-of-fund rules breached, capped at $1,200 per notice period Payment due the day the assessment is made. Unpaid 28 days after assessment -> Notice to Pay -> late payment penalty of 25% or 50% of unpaid SGC. **The new SGC is tax-deductible** (all four components); GIC on late SGC and the late payment penalty are not, and old-regime SGC (quarters before 1 July 2026) remains non-deductible. First-year approach: PCG 2026/1.
 
 ## Section 7 -- Excel working paper template
 
@@ -403,7 +369,7 @@ If the client provides only a bank statement:
 
 ### Primary sources (all figures verified 1 August 2026)
 
-**Primary sources (all figures verified 1 August 2026)**
+**Primary sources (all figures verified 1 August 2026)**  _(ato.gov.au primary sources listed in table)_
 
 | Topic | Source |
 | --- | --- |
@@ -459,6 +425,8 @@ Sole trader asks about SG to self. -> $0. No obligation. Advise voluntary contri
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
