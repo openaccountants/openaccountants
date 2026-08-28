@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Australia transfer pricing rule
 version: 1.0
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 depends_on:
   - transfer-pricing-workflow-base
@@ -14,8 +14,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia Transfer Pricing
-
-## Australia Transfer Pricing
 
 ## Australia Transfer Pricing Skill v1.1
 
@@ -52,8 +50,6 @@ Australia Transfer Pricing Skill v1.1
 
 ### 2.2 Three-Tier Documentation (Significant Global Entities)
 
-- **Significant Global Entity threshold** — Applies to entities in groups with consolidated annual global income ≥ AUD 1 billion AUD
-
 **Three-Tier Documentation (Significant Global Entities)**
 
 | Document | Detail |
@@ -63,6 +59,8 @@ Australia Transfer Pricing Skill v1.1
 | CbC Report | OECD Annex III format |
 | Filing deadline | Within 12 months of end of income year |
 | Filing method | Electronic lodgment with ATO |
+
+- **Significant Global Entity threshold** — Applies to entities in groups with consolidated annual global income ≥ AUD 1 billion AUD
 
 ### 2.3 International Dealings Schedule (IDS)
 
@@ -76,7 +74,7 @@ Australia Transfer Pricing Skill v1.1
 
 ### 2.4 Short Form Local File
 
-- **Short Form Local File availability** — Available for entities with lower-risk or less material international related-party dealings that still meet the AUD 1 billion threshold. ((unsure))
+- **Short Form Local File availability** — Available for entities with lower-risk or less material international related-party dealings that still meet the AUD 1 billion threshold.
 
 ## Section 3 -- Arm's Length Standard
 
@@ -99,11 +97,11 @@ Australia Transfer Pricing Skill v1.1
 
 ### 3.3 Preferred Method
 
-- **Preferred method approach** — No statutory hierarchy. ATO follows OECD "most appropriate method" approach. CUP preferred where reliable comparables exist. ((unsure))
+- **Preferred method approach** — No statutory hierarchy. ATO follows OECD "most appropriate method" approach. CUP preferred where reliable comparables exist.
 
 ### 3.4 Self-Assessment
 
-- **Self-assessment system** — Australia operates a self-assessment system -- taxpayers must determine and apply arm's length conditions without prior ATO approval. ((unsure))
+- **Self-assessment system** — Australia operates a self-assessment system -- taxpayers must determine and apply arm's length conditions without prior ATO approval.
 
 ## Section 4 -- Filing Obligations
 
@@ -145,7 +143,7 @@ Australia Transfer Pricing Skill v1.1
 
 ### 6.2 Documentation Impact
 
-- **Documentation impact on RAP** — Without contemporaneous TP documentation prepared before lodging the return, a taxpayer is statutorily denied a reasonably arguable position. ((unsure))
+- **Documentation impact on RAP** — Without contemporaneous TP documentation prepared before lodging the return, a taxpayer is statutorily denied a reasonably arguable position.
 
 ### 6.3 Failure to Lodge (SGEs)
 
@@ -216,6 +214,8 @@ ATO publishes Practical Compliance Guidelines indicating risk zones for various 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

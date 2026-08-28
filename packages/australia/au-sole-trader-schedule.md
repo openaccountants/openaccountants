@@ -4,7 +4,7 @@ description: Australian sole trader business schedule (Business and Professional
 version: 1.0
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 depends_on:
   - income-tax-workflow-base
@@ -15,11 +15,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Sole Trader Schedule
 
-## # AU Sole Trader Schedule
+## AU Sole Trader Schedule
 
-## ## Australia Sole Trader Business Schedule v1.1
+## Australia Sole Trader Business Schedule v1.1
 
-## ## What this file is
+## What this file is
 
 **Obligation category:** IT (Income Tax)
 **Functional role:** Bookkeeping + Computation
@@ -31,7 +31,7 @@ This file covers the Business and Professional Items (BPI) schedule that sole tr
 
 **The reviewer is the customer of this output.** This skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
 
-## ## Section 1 — Scope statement
+## Section 1 — Scope statement
 
 This skill covers:
 
@@ -46,13 +46,13 @@ This skill does NOT cover:
 - Primary production-specific items (though basic rules noted)
 - Personal services income (PSI) determinations in detail — flag for reviewer
 
-## ## Section 2 — Filing requirements
+## Section 2 — Filing requirements
 
-### ### 2.1 Who must lodge
+### 2.1 Who must lodge
 
 - **Who must lodge** — Any individual who carried on a business as a sole trader during the income year. Even if the business made a loss, the schedule must be lodged.  _(ITAA 1997 s 4-15, ATO instructions for BPI schedule)_
 
-### ### 2.2 Due dates
+### 2.2 Due dates
 
 **Due dates**
 
@@ -61,11 +61,11 @@ This skill does NOT cover:
 | Self-lodgers | 31 October 2025 |
 | Tax agent lodgement | Per the ATO tax agent lodgement programme (typically March-May 2026 depending on client category) |
 
-### ### 2.3 ABN requirement
+### 2.3 ABN requirement
 
 - **ABN requirement** — A sole trader carrying on a business must have an ABN. If they do not have one, they cannot issue valid tax invoices and may face 47% withholding from payers.  _(A New Tax System (Australian Business Number) Act 1999)_
 
-## ## Section 3 — Rates and thresholds
+## Section 3 — Rates and thresholds
 
 **Rates and thresholds**  _(ITAA 1997 Div 328; ATO QC 103578)_
 
@@ -87,17 +87,17 @@ This skill does NOT cover:
 - **Trading stock threshold (change in value)** — $5,000 — if the difference between opening and closing stock is < $5,000, the taxpayer can elect not to do a stocktake  _(ITAA 1997 s 70-35)_
 - **Prepaid expenses (SBE)** — Immediately deductible if the service period is 12 months or less and ends on or before 30 June of the following year  _(ITAA 1997 s 328-225)_
 
-## ## Section 4 — Computation rules
+## Section 4 — Computation rules
 
-### ### 4.1 Business income (P8)
+### 4.1 Business income (P8)
 
 - **Business income (P8)** — Step 1. Sum all gross business income received during the year: Sales of goods or services; Government subsidies (e.g., any remaining COVID-era grants assessable); Insurance recoveries; Commissions received. Step 2. Exclude amounts that are capital in nature (these go to the CGT schedule). Step 3. Report at P8 on the schedule.
 
-### ### 4.2 Cost of sales / Cost of goods sold
+### 4.2 Cost of sales / Cost of goods sold
 
 - **Cost of goods sold** — Step 1. Opening stock + Purchases - Closing stock = Cost of goods sold. Step 2. Trading stock can be valued at cost, market selling value, or replacement value (ITAA 1997 s 70-45). The method can differ item by item. Step 3. If the total value of trading stock at year-end differs from opening stock by less than $5,000, the taxpayer can elect to use the same value as opening stock (no stocktake required).  _(ITAA 1997 s 70-45)_
 
-### ### 4.3 Allowable deductions
+### 4.3 Allowable deductions
 
 - **General deduction provision** — Deductions must satisfy the general deduction provision: incurred in gaining or producing assessable income, or necessarily incurred in carrying on a business for that purpose. Losses and outgoings of a capital, private, or domestic nature are not deductible (subject to specific provisions).  _(ITAA 1997 s 8-1)_
 
@@ -112,72 +112,65 @@ This skill does NOT cover:
 | P13 | Rent on business premises | Not home office (see P14) |
 | P14 | Other business expenses | Includes home office, travel, subscriptions, professional fees |
 
-- **Motor vehicle expenses** — P9  _(See 4.4 below)_
-- **Depreciation expenses** — P10  _(See 4.5 below)_
-- **Repairs and maintenance** — P11  _(Must be revenue not capital)_
-- **Interest (business portion)** — P12  _(Pro-rate if mixed-use loan)_
-- **Rent on business premises** — P13  _(Not home office (see P14))_
-- **Other business expenses** — P14  _(Includes home office, travel, subscriptions, professional fees)_
-
-### ### 4.4 Motor vehicle expenses
+### 4.4 Motor vehicle expenses
 
 Two methods available for sole traders:
 
-#### #### Method 1 — Cents per kilometre
+#### Method 1 — Cents per kilometre
 
 - **Cents per kilometre method** — Claim the current rate per business km, up to 5,000 km per car per year. 2025-26: 88c, maximum claim = 5,000 x $0.88 = $4,400 per car. 2026-27: 91c, maximum = $4,550. No logbook or written evidence of individual trips required, but must be able to show how the estimate was calculated.  _(ATO cents per kilometre method; ITAA 1997 s 28-25)_
 
-#### #### Method 2 — Logbook
+#### Method 2 — Logbook
 
 - **Logbook method** — Maintain a logbook for a continuous 12-week period (valid for 5 years unless circumstances change). Calculate business-use percentage from logbook. Apply that percentage to total car expenses: fuel, insurance, registration, repairs, lease payments, depreciation. Depreciation of the car is capped at the car limit ($69,674 for 2024-25 and 2025-26; $69,883 for 2026-27).  _(ATO car limit determination)_
 
-### ### 4.5 Depreciation
+### 4.5 Depreciation
 
-#### #### Small business simplified depreciation (if SBE)
+#### Small business simplified depreciation (if SBE)
 
 - **Small business simplified depreciation** — Step 1. Check eligibility: aggregated turnover < $10M. Step 2. Instant asset write-off: assets costing less than $20,000 (excl GST if registered) first used or installed ready for use in the income year are fully deductible in that year. Step 3. Assets costing $20,000 or more go into the small business pool: Pool is depreciated at 15% in the first year and 30% each year thereafter (diminishing value). If the pool balance falls below the instant asset write-off threshold at the end of the year, the entire pool is written off.
 
-#### #### General depreciation (non-SBE or election out of simplified)
+#### General depreciation (non-SBE or election out of simplified)
 
 - **General depreciation** — Use the effective life determined by the ATO (TR 2024/3) or a self-assessed effective life. Choose diminishing value (rate = 200% / effective life) or prime cost (rate = 100% / effective life). Apply from the date the asset is first used or installed ready for use.  _(ATO TR 2024/3)_
 
-### ### 4.6 Home office expenses
+### 4.6 Home office expenses
 
-#### #### Fixed rate method (70c per hour from 2024-25) — PCG 2023/1
+#### Fixed rate method (70c per hour from 2024-25) — PCG 2023/1
 
 - **Fixed rate method** — Covers energy expenses (electricity, gas), phone, internet, stationery, computer consumables. Must keep a record of actual hours worked from home (e.g., timesheets, diary, roster). Separately claim occupancy expenses (rent, mortgage interest, rates, insurance) only if the home is a place of business (rare for sole traders without a dedicated area). Cannot separately claim expenses already covered by the fixed rate (70c from 2024-25).  _(ATO PCG 2023/1)_
 
-#### #### Actual cost method
+#### Actual cost method
 
 - **Actual cost method** — Calculate the actual costs of running the home office. Apportion based on floor area of the dedicated work area as a percentage of total home area, and the proportion of the year the area is used for work. Keep receipts and records for every expense claimed.
 
-### ### 4.7 Net business income or loss (P20)
+### 4.7 Net business income or loss (P20)
 
 - **Net business income or loss (P20)** — Step 1. P20 = P8 (income) - total deductions (P9 through P14 plus any other deductions). Step 2. If P20 is a loss, check the non-commercial business loss rules (ITAA 1997 Div 35): The loss can only be offset against other income if one of four tests is met: assessable income test ($20,000), profits test (3 of last 5 years), real property test ($500,000), or other assets test ($100,000). If no test is met, the loss is deferred to future years (quarantined). Step 3. P20 feeds into the individual tax return at "Business income or loss."  _(ITAA 1997 Div 35)_
 
-## ## Section 5 — Edge cases and special rules
+## Section 5 — Edge cases and special rules
 
-### ### 5.1 Personal services income (PSI)
+### 5.1 Personal services income (PSI)
 
 - **Personal services income (PSI)** — If more than 80% of the sole trader's income from a contract is for their personal effort or skills, and no PSI determination has been obtained, the income may be PSI. PSI rules deny certain deductions (home office, entertainment, some car expenses). **Flag for reviewer.**  _(ITAA 1997 Div 84-87)_
 
-### ### 5.2 Mixed-use assets
+### 5.2 Mixed-use assets
 
 - **Mixed-use assets** — Assets used partly for private and partly for business purposes: claim only the business-use percentage. Maintain records of the split (e.g., logbook for car, diary for home office).
 
-### ### 5.3 Prepaid expenses (SBE)
+### 5.3 Prepaid expenses (SBE)
 
 - **Prepaid expenses (SBE)** — Small business entities can immediately deduct prepaid expenses if the service period is 12 months or less and ends by 30 June of the following income year. Example: 12-month insurance premium paid in May 2025 covering May 2025 to April 2026 — fully deductible in 2024-25.
 
-### ### 5.4 Capital vs revenue
+### 5.4 Capital vs revenue
 
 - **Capital vs revenue** — Expenditure that creates a new asset or provides an enduring benefit is capital and not deductible under s 8-1. It may instead be depreciable or added to the cost base for CGT purposes. Common grey areas: website development, major software, business restructuring costs.  _(ITAA 1997 s 8-1)_
 
-### ### 5.5 Hobby vs business
+### 5.5 Hobby vs business
 
 - **Hobby vs business** — The ATO may deny deductions if the activity is a hobby, not a business. Indicators of a business: intention to make a profit, repetition and regularity, business-like organisation, size and scale, business plan.  _(ATO guidelines, TR 97/11)_
 
-## ## Section 6 — Self-checks
+## Section 6 — Self-checks
 
 Before delivering output, verify:
 
@@ -193,26 +186,11 @@ Before delivering output, verify:
 - [ ] Rates and thresholds match the 2024-25 income year
 - [ ] Output format matches the base skill spec
 
-## ## Section 7 — Disclaimer
+## Section 7 — Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-## ## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
 
 > Contributed by Ryan Duguid.
 

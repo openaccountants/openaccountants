@@ -14,7 +14,7 @@ description: >
 version: 2.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 category: payroll
 tier: 2
@@ -61,7 +61,7 @@ PAYG withholding is calculated per pay period using ATO tax tables (Schedule 1 -
 | 135,001 -- 190,000 | 37% | $31,020 plus 37c for each $1 over $135,000 |
 | 190,001+ | 45% | $51,370 plus 45c for each $1 over $190,000 |
 
-- **Rates exclude Medicare levy; rate change** — These rates **exclude** the Medicare levy (2%). From 1 July 2026 the rate on $18,201--$45,000 dropped from 16% to 15% (Treasury Laws Amendment (More Cost of Living Relief) Act 2025); it drops again to 14% from 1 July 2027.  _(Treasury Laws Amendment (More Cost of Living Relief) Act 2025)_
+- **Rates exclude Medicare levy** — These rates **exclude** the Medicare levy (2%). From 1 July 2026 the rate on $18,201--$45,000 dropped from 16% to 15% (Treasury Laws Amendment (More Cost of Living Relief) Act 2025); it drops again to 14% from 1 July 2027.  _(Treasury Laws Amendment (More Cost of Living Relief) Act 2025)_
 
 ### Medicare Levy
 
@@ -82,7 +82,7 @@ PAYG withholding is calculated per pay period using ATO tax tables (Schedule 1 -
 
 ### Study and Training Support Loans (STSL)
 
-- **STSL description** — Formerly HECS-HELP. Compulsory repayments are withheld via PAYG based on Schedule 8 thresholds. Updated STSL repayment thresholds apply from 24 September 2025, reducing compulsory repayments for most borrowers.
+- **STSL description** — Formerly HECS-HELP. Compulsory repayments are withheld via PAYG based on Schedule 8 thresholds. Updated STSL repayment thresholds apply from 24 September 2025, reducing compulsory repayments for most borrowers.  _(Schedule 8)_
 
 ## Section 3 -- Social Security: Employee Deductions
 
@@ -100,7 +100,7 @@ Australia does not have a separate employee social security contribution. The Me
 
 There is no employee-paid social insurance premium equivalent to NIC (UK) or social security tax (US).
 
-**Superannuation Guarantee details**
+**Superannuation Guarantee summary**
 
 | State/Territory | Threshold (Annual) | Rate |
 | --- | --- | --- |
@@ -113,13 +113,21 @@ There is no employee-paid social insurance premium equivalent to NIC (UK) or soc
 | ACT | $2,000,000 | 6.85% |
 | NT | $1,500,000 | 5.50% |
 
-- **Deadline exceptions** — **Deadline exceptions:** new employee / new fund -- 20 business days for the first contribution; out-of-cycle payments (bonuses) ride with the next regular payday's deadline; ATO exceptional-circumstances determinations -- 20 business days.
-- **Legacy quarterly due dates** — **Legacy:** quarterly due dates (28 Oct/28 Jan/28 Apr/28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026. The ATO Small Business Super Clearing House closed permanently on 1 July 2026 -- small employers now use payroll-software super payments or commercial clearing houses.
-- **Final SG rate** — 12% is the final scheduled SG rate (reached 1 July 2025). No further increases are planned.
+**Deadline exceptions:** new employee / new fund -- 20 business days for the first contribution; out-of-cycle payments (bonuses) ride with the next regular payday's deadline; ATO exceptional-circumstances determinations -- 20 business days.
+
+**Legacy:** quarterly due dates (28 Oct/28 Jan/28 Apr/28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026. The ATO Small Business Super Clearing House closed permanently on 1 July 2026 -- small employers now use payroll-software super payments or commercial clearing houses.
+
+12% is the final scheduled SG rate (reached 1 July 2025). No further increases are planned.
 
 ### Superannuation Guarantee Charge (SGC) -- redesigned from 1 July 2026
 
-- **SGC redesign components** — For earnings paid from 1 July 2026, SGC is **ATO-assessed per payday** (no SGC statement is lodged; the ATO matches STP data against fund reporting). Components: - The final SG shortfall (12% of qualifying earnings unpaid) - Notional earnings (GIC-rate interest, compounding daily from the day after the deadline) - An administrative uplift (starts at 60% of shortfall + notional earnings; reduced for clean history and voluntary disclosure, to 0% if disclosed within 30 days with a clean 2-year record) - Choice loading (25%, capped at $1,200 per notice period) where choice-of-fund rules were breached The redesigned SGC **is tax-deductible** (GIC on late SGC and the late payment penalty are not). Old-regime SGC for quarters before 1 July 2026 remains non-deductible. Unpaid SGC 28 days after assessment triggers a Notice to Pay, then a 25% or 50% late payment penalty. First-year ATO approach: PCG 2026/1.  _(PCG 2026/1)_
+For earnings paid from 1 July 2026, SGC is **ATO-assessed per payday** (no SGC statement is lodged; the ATO matches STP data against fund reporting). Components:
+- The final SG shortfall (12% of qualifying earnings unpaid)
+- Notional earnings (GIC-rate interest, compounding daily from the day after the deadline)
+- An administrative uplift (starts at 60% of shortfall + notional earnings; reduced for clean history and voluntary disclosure, to 0% if disclosed within 30 days with a clean 2-year record)
+- Choice loading (25%, capped at $1,200 per notice period) where choice-of-fund rules were breached
+
+The redesigned SGC **is tax-deductible** (GIC on late SGC and the late payment penalty are not). Old-regime SGC for quarters before 1 July 2026 remains non-deductible. Unpaid SGC 28 days after assessment triggers a Notice to Pay, then a 25% or 50% late payment penalty. First-year ATO approach: PCG 2026/1.
 
 ### Workers' Compensation Insurance
 
@@ -136,6 +144,8 @@ There is no employee-paid social insurance premium equivalent to NIC (UK) or soc
 | Casual loading | 25% on top of base rate (in lieu of leave entitlements) |
 
 - **Payroll tax nature** — Payroll tax is a state/territory tax on total Australian wages above the threshold. Interstate employers must register in each jurisdiction where they have employees.
+
+## Section 5 -- Minimum Wage and Overtime
 
 ### National Minimum Wage (from 1 July 2025)
 
@@ -159,11 +169,11 @@ There is no employee-paid social insurance premium equivalent to NIC (UK) or soc
 | Government Paid Parental Leave | Up to 22 weeks (increasing to 26 weeks by Jul 2026) | National minimum wage rate |
 | Unpaid parental leave | Up to 12 months (can request additional 12 months) | Nil (job-protected) |
 
-- **Overtime rate variability** — Exact rates depend on the applicable modern award or enterprise agreement. The Fair Work Act does not prescribe a single universal overtime rate.
+- **Overtime rate variability** — Exact rates depend on the applicable modern award or enterprise agreement. The Fair Work Act does not prescribe a single universal overtime rate.  _(Fair Work Act)_
 
 ### Maximum Ordinary Hours
 
-- **Maximum ordinary hours** — 38 hours/week under the NES. Can be averaged over up to 26 weeks if permitted by the award or agreement.
+- **Maximum ordinary hours** — 38 hours/week under the NES. Can be averaged over up to 26 weeks if permitted by the award or agreement.  _(NES)_
 
 ## Section 6 -- Mandatory Benefits
 
@@ -216,7 +226,7 @@ There is no employee-paid social insurance premium equivalent to NIC (UK) or soc
 | Finalisation deadline | 14 July following end of financial year |
 | Closely held payees | May report quarterly; finalise by 14 July |
 
-- **Small business exemption** — Small business employers (< 15 employees) are exempt from NES redundancy pay.
+- **Small business exemption** — Small business employers (< 15 employees) are exempt from NES redundancy pay.  _(NES)_
 
 ## Section 7 -- Payslip Requirements
 
@@ -271,7 +281,7 @@ Not strictly required on payslips but must be provided to employees on request. 
 | Workers' comp annual declaration | Per state insurer schedule |
 | Payroll tax annual reconciliation | Per state revenue office (typically July/August) |
 
-- **Legacy quarterly super due dates** — **Legacy:** quarterly due dates (28 Oct / 28 Jan / 28 Apr / 28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026.
+**Legacy:** quarterly due dates (28 Oct / 28 Jan / 28 Apr / 28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026.
 
 ### Annual Obligations
 
@@ -344,6 +354,8 @@ Employee earning $65,000 with HELP debt. STSL repayment rate from Schedule 8 tab
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

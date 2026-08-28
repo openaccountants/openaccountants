@@ -49,7 +49,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **JP employer rate** — 2.00%  _(PP 45/2015)_
 - **JP employee rate** — 1.00%  _(PP 45/2015)_
 - **JP total** — 3.00%  _(PP 45/2015)_
-- **JP wage cap (Mar 2025)** — IDR 10,547,400/month  _(BPJS TK 2025 regulation)_
+- **JP wage cap (Mar 2025)** — IDR 11,086,300/month  _([BPJS TK 2025 regulation](https://494075.fs1.hubspotusercontent-na1.net/hubfs/494075/compliance-portal/notification-number-b1226022026.pdf))_
 - **JKK Grade 1 (very low risk)** — 0.10% of monthly wage  _(PP 44/2015 jo. PP 49/2023 Art. 16A(1)(a))_
 - **JKK Grade 2 (low risk)** — 0.40% of monthly wage  _(PP 44/2015 jo. PP 49/2023 Art. 16A(1)(b))_
 - **JKK Grade 3 (medium risk)** — 0.75% of monthly wage  _(PP 44/2015 jo. PP 49/2023 Art. 16A(1)(b))_

@@ -4,15 +4,13 @@ description: ALWAYS USE THIS SKILL when a user asks for help preparing their Aus
 version: 0.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # AU Freelance Intake
-
-## AU Freelance Intake
 
 ## Australia Sole Trader Intake Skill v0.2
 
@@ -106,7 +104,9 @@ Q6: "Industry?"
 - **GST registration turnover threshold** — 75000 AUD (turnover above which GST registration required or voluntary registration applies)
 - **Q4 evaluation** — Yes -> continue. Standard quarterly BAS lodgement. No -> continue. No BAS required unless turnover crosses $75K threshold. Will check after inference. Not sure -> ask one follow-up: "Do you charge GST on your invoices (i.e., your prices include a 10% GST component)? If yes, you're registered. If your invoices say 'no GST' or you've never dealt with BAS, you're likely not registered. Check your ABN registration at abr.gov.au."
 - **Q5 evaluation** — All options -> note for Medicare levy surcharge and tax offset calculations. Continue.
-- **Q6 evaluation** — All options -> note for expense classification context. Continue. Total time: ~45 seconds if the user taps through.
+- **Q6 evaluation** — All options -> note for expense classification context. Continue.
+
+Total time: ~45 seconds if the user taps through.
 
 ## Section 3 -- The dump
 
@@ -307,7 +307,7 @@ Q: "Home office claim method?"
 ```
 
 - **Home office option handling** — If option 1 -> ask for total hours worked from home during 2025-26 (text input). If option 2 -> flag as complex: actual cost method requires detailed records of electricity, gas, internet, phone, depreciation of furniture. Ask for floor area percentage of dedicated workspace. If option 3 -> rent is already captured in expenses. No home office calculation needed. If option 4 -> skip home office entirely. If option 5 -> recommend fixed rate method (70c/hr) as simpler. Ask for hours.
-- **Fixed rate home office method rate** — 70 cents/hour (2024-25 through 2026-27; was 67c for 2022-23 and 2023-24, replacing the old 52c/hr method)  _(PCG 2023/1)_
+- **Fixed rate home office method rate** — 70 cents/hour (2024-25 through 2026-27, PCG 2023/1; was 67c for 2022-23 and 2023-24, replacing the old 52c/hr method)
 
 **Motor vehicle gap-filling question**
 
@@ -560,6 +560,8 @@ For an unprepared user (has to go fetch documents):
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

@@ -4,7 +4,7 @@ description: Use this skill whenever asked about the Australian Medicare Levy, M
 version: 2.1
 jurisdiction: AU
 tax_year: 2024
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 category: international
 tier: 2
@@ -246,7 +246,7 @@ Resolution: Even though taxable income is below $101,000, income for MLS purpose
 ### EC5 -- SAPTO-entitled pensioner with low income (Tier 1)
 
 Situation: Pensioner aged 68, taxable income $45,000, entitled to SAPTO.
-Resolution: SAPTO singles threshold is $44,268 (lower) and $55,335 (upper). At $45,000, the shade-in applies: ($45,000 - $44,268) x 10% = $73.20. Full 2% levy would be $900.00. The reduced amount of $198.00 applies.
+Resolution: SAPTO singles threshold is $44,268 (lower) and $55,335 (upper). At $45,000, the shade-in applies: ($45,000 - $44,268) x 10% = $73.20. Full 2% levy would be $900.00. The reduced amount of $73.20 applies.
 
 ### EC6 -- Family with 4 dependent children (Tier 1)
 
@@ -337,6 +337,10 @@ Expected output: Family MLS threshold = $202,000 + ($1,500 x 2 children after th
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

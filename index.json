@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-27T15:41:05+00:00",
+ "generated_at": "2026-08-28T17:03:39+00:00",
  "counts": {
   "guides": 1966,
   "jurisdictions": 244,
@@ -2584,7 +2584,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2024",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "au-land-tax",
@@ -2608,7 +2608,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2024",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "au-nonresident-cgt",
@@ -2740,7 +2740,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "au-stamp-duty",
@@ -2764,7 +2764,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2024",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "au-tax-residency",
@@ -2800,7 +2800,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "australia-financial-statements",
@@ -2836,7 +2836,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "australia-payroll",
@@ -2848,7 +2848,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "australia-tax-optimization",
@@ -2872,7 +2872,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "leaving-australia-tax-residency-cgt",
@@ -20200,7 +20200,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "au-return-assembly",
@@ -20212,7 +20212,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-27"
+   "last_updated": "2026-08-28"
   },
   {
    "slug": "bd-freelance-intake",

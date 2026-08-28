@@ -4,13 +4,15 @@ description: Final orchestrator skill that assembles the complete Australian fil
 version: 0.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # AU Return Assembly
+
+## AU Return Assembly
 
 ## Australia Return Assembly Skill v0.3
 
@@ -68,7 +70,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 **If excess:** Flag for reviewer. Excess concessional contributions are included in assessable income and taxed at marginal rate (plus excess concessional contributions charge). Division 293 tax applies if income + super > $250,000.
 
-**Cross-check 2 table**  _(Cross-check 2: Super contributions within the concessional cap -- $30,000 for 2025-26, $32,500 for 2026-27)_
+**Cross-check 2 table**  _(Cross-check 2 table -- $30,000 for 2025-26, $32,500 for 2026-27)_
 
 | Super Input | Source | Rule |
 | --- | --- | --- |
@@ -279,7 +281,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 4. Track home office hours if claiming fixed rate method
 5. Monitor turnover for GST registration threshold ($75K)
 6. Review PAYG instalment rate -- vary if income changes significantly
-```
+``` (AU10)
 
 ## Section 5 -- Refusals
 
@@ -301,8 +303,8 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 - **Check AU8 -- Instant asset write-off threshold correct** — Assets under $20,000 (on correct GST basis) claimed as immediate deduction; assets above threshold depreciated.  _(Section 6 -- Self-checks)_
 - **Check AU9 -- Personal super deduction s290-170 notice flagged** — Reviewer brief notes that the taxpayer must lodge a notice of intent to claim with the super fund before the ITR is lodged.  _(Section 6 -- Self-checks)_
 - **Check AU10 -- Tax rate table correct for residency** — Resident tax rates applied (including tax-free threshold of $18,200).  _(Section 6 -- Self-checks)_
-- **Check AU11 -- HELP compulsory repayment calculated from repayment income** — Repayment income = taxable income + net investment loss + reportable fringe benefits + reportable super. Correct rate applied from HELP repayment thresholds.  _(Section 6 -- Self-checks)_
-- **Check AU12 -- Filing calendar is complete** — All deadlines for BAS, ITR, super, and PAYG instalments are listed with specific dates and amounts.  _(Section 6 -- Self-checks)_
+- **Check AU11 -- HELP compulsory repayment calculated from repayment income** — Repayment income = taxable income + net investment loss + reportable fringe benefits + reportable super. Correct rate applied from HELP repayment thresholds.  _(Section 6 -- Self-checks; AU11)_
+- **Check AU12 -- Filing calendar is complete** — All deadlines for BAS, ITR, super, and PAYG instalments are listed with specific dates and amounts.  _(Section 6 -- Self-checks; AU12)_
 
 ## Section 7 -- Output files
 
@@ -350,6 +352,8 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

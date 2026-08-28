@@ -35,10 +35,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Faktur Pajak issuance** — Faktur Pajak generally must be issued at the time of taxable supply or in accordance with applicable VAT invoicing and electronic tax administration regulations.  _(PMK-151/PMK.03/2013, Indonesian VAT Law Article 13, PER-11/PJ/2025, and PMK 81/2024 as amended by PMK 01/2026.)_
 - **Input credit window** — Within 3 months of the tax period  _(UU PPN)_
 - **Late filing SPT Masa PPN** — IDR 500,000 per month  _(UU KUP Art. 7)_
-- **Late PPN payment** — 2% per month of unpaid tax  _(UU KUP Article 9(2a), Article 13(2))_
+- **Late PPN payment** — Floating monthly rate set by the Minister of Finance (benchmark rate + 5% uplift ÷ 12; ~0.99% for March 2025 period) — no longer a fixed 2% per month  _([UU KUP Article 9(2a), Article 13(2)](https://fiskal.kemenkeu.go.id/informasi-publik/kmk-tarif-bunga))_
 - **Late Faktur Pajak** — 1% of DPP per Faktur  _([Indonesian VAT Law Article 14(4)](https://www.pajak.go.id/en/node/101543))_
-- **Underpayment on audit** — 100% of underpaid tax  _(UU KUP Article 13(3), UU KUP as amended by UU HPP No. 7/2021.)_
-- **Basic food staples** — Basic food staples such as rice, corn, sago, soybeans, salt, fresh meat, eggs, milk, fruits, and vegetables  _(Indonesian VAT Law Article 4A as amended by UU HPP No. 7/2021)_
+- **Underpayment on audit** — Interest (MoF reference-rate-based, per Art. 13(3b)) for income tax; 75% increase for VAT/PPnBM and for income tax withheld/collected but not deposited — no '100%' sanction exists in the current Art. 13(3)  _([UU KUP Article 13(3), UU KUP as amended by UU HPP No. 7/2021.](https://www.pajak.go.id/sites/default/files/2021-12/Salinan%20UU%20Nomor%207%20Tahun%202021.pdf))_
+- **Basic food staples** — Basic food staples (rice, grain, corn, sago, soybeans, salt, meat, eggs, milk, fruits, vegetables) are NO LONGER exempted under Article 4A; UU HPP No. 7/2021 removed them from Article 4A(2)(b) and relocated the VAT-exemption facility to Article 16B(1a)(j) of the VAT Law  _([Indonesian VAT Law Article 4A as amended by UU HPP No. 7/2021](https://www.pajak.go.id/index.php/en/node/71871))_
 - **Services exempt** — Medical, education, financial, insurance, employment, water supply  _(Indonesian VAT Law Article 4A as amended by UU HPP No. 7/2021, PMK 70/PMK.03/2022 Articles 3, 5–8)_
 - **PMSE PPN rate** — 11% collected by registered foreign providers  _(Indonesian VAT Law Article 7, PMK 81/2024 Articles 332–339)_
 - **PMSE registration threshold** — >IDR 600m annual turnover from Indonesia OR >12,000 users/year  _(PMK 81/2024 Articles 332–339)_

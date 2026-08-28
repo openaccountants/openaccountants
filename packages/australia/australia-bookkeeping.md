@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Australian bookkeeping for sole
 version: 1.0
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-27
+last_updated: 2026-08-28
 review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
@@ -14,8 +14,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia Bookkeeping
-
-## Australia Bookkeeping
 
 ## Section 1 -- Quick Reference
 
@@ -311,7 +309,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 ### Car Limit
 
-- **Car cost limit for depreciation** — 2025-26: $69,674; 2026-27: $69,883 AUD (only the business-use portion of this amount can be depreciated) AUD
+- **Car cost limit for depreciation** — For 2025-26, the limit is AUD 69,674. For 2026-27, it is AUD 69,883. Only the business-use portion of the applicable limit can be depreciated. AUD  _(Car cost limit for depreciation)_
 
 ## Section 6 -- P&L Format
 
@@ -485,7 +483,7 @@ TOTAL EQUITY                                          xxx
 
 ### Large Proprietary Thresholds (must be reporting entity)
 
-- **Large Proprietary Thresholds** — Meet 2 of 3: Revenue ≥ $50m, assets ≥ $25m, employees ≥ 100.
+- **Large Proprietary Thresholds** — Meet 2 of 3: Revenue ≥ $50m, assets ≥ $25m, employees ≥ 100.  _(Large Proprietary Thresholds)_
 
 ## Section 10 -- Interaction with Tax Skills
 
@@ -528,6 +526,10 @@ TOTAL EQUITY                                          xxx
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, registered tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+> Contributed by Ryan Duguid.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

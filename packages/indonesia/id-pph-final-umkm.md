@@ -33,7 +33,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **OP tax-free band** — Individual taxpayers remain entitled to the IDR 500 million annual gross-turnover exemption before the 0.5% final tax applies.  _(UU PPh Art. 7; PP 55/2022 Art. 60; PP 20/2026.)_
 - **Orang Pribadi (sole trader)** — No time limit (revised — originally 7 years)  _(PP 20/2026 Article I items 4 and 6.)_
 - **PT Perorangan** — No time limit (revised)  _(PP 20/2026 Article I items 4 and 6.)_
-- **Koperasi, CV, Firma, BUMDes** — 4 years  _(PP 20/2026 Article I item 4.)_
+- **Koperasi, CV, Firma, BUMDes** — 4 tahun (Koperasi only); CV, Firma, BUMDes no longer eligible under PP 20/2026 (transitional period only for remaining PP 55/2022 term)  _([PP 20/2026 Article I item 4.](https://www.pajak.go.id/en/node/119954))_
 - **PT (ordinary)** — 3 years  _(PP 20/2026 Article I item 4.)_
 - **Pekerjaan bebas** — Excluded — doctors, lawyers, notaries, accountants, architects, consultants, actuaries must use progressive  _(PP 20/2026 Article I item 3.)_
 - **BUT / non-residents** — Permanent establishments (BUT) remain excluded from the UMKM final tax regime.  _(PP 55/2022 Art. 57(2)(d) as amended by PP 20/2026.)_
