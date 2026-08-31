@@ -11,10 +11,10 @@ description: >
   "activity statement", "annual leave", "long service leave",
   "minimum wage Australia", or any question about running payroll in Australia.
   ALWAYS read this skill before processing any Australian payroll work.
-version: 2.1
+version: 2.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-28
+last_updated: 2026-08-31
 review_status: pending_review
 category: payroll
 tier: 2
@@ -82,7 +82,7 @@ PAYG withholding is calculated per pay period using ATO tax tables (Schedule 1 -
 
 ### Study and Training Support Loans (STSL)
 
-- **STSL description** — Formerly HECS-HELP. Compulsory repayments are withheld via PAYG based on Schedule 8 thresholds. Updated STSL repayment thresholds apply from 24 September 2025, reducing compulsory repayments for most borrowers.  _(Schedule 8)_
+- **STSL description** — Study and training support loans (HELP, VSL, AASL and related). Compulsory repayments are withheld via PAYG using the **marginal** system from 2025-26: nil at or below the minimum repayment threshold; 15c then 17c on the excess; 10% of **total** repayment income in the top band. 2026-27 minimum threshold is $69,528. Do not use the old 1%--10% of whole-of-income Schedule 8 rates. Current bands: `au-rates-2026-27`.  _(ATO QC 16176)_
 
 ## Section 3 -- Social Security: Employee Deductions
 
@@ -95,23 +95,21 @@ Australia does not have a separate employee social security contribution. The Me
 | Deduction | Rate | Ceiling | Notes |
 | --- | --- | --- | --- |
 | PAYG income tax | Progressive (see above) | No ceiling | Includes Medicare levy in tax tables |
-| STSL repayment | 1%--10% (income-based) | No ceiling | Only if employee has HELP/STSL debt |
+| STSL repayment | Marginal (nil below threshold) | No ceiling | 2026-27: nil to $69,528; then 15c / 17c / 10% of total. See au-rates-2026-27 |
 | Salary sacrifice (super) | Voluntary | Concessional cap $32,500/year (2026-27) | Pre-tax; reduces PAYG withholding base |
 
 There is no employee-paid social insurance premium equivalent to NIC (UK) or social security tax (US).
 
-**Superannuation Guarantee summary**
+**Superannuation Guarantee summary (2026-27)**
 
-| State/Territory | Threshold (Annual) | Rate |
-| --- | --- | --- |
-| NSW | $1,200,000 | 4.85% |
-| VIC | $900,000 | 4.85% |
-| QLD | $1,300,000 | 4.75% |
-| WA | $1,000,000 | 5.50% |
-| SA | $1,500,000 | Varies (0%--4.95%) |
-| TAS | $1,250,000 | 4.00% |
-| ACT | $2,000,000 | 6.85% |
-| NT | $1,500,000 | 5.50% |
+| Item | Value |
+| --- | --- |
+| SG rate | 12% (terminal since 1 July 2025) |
+| Deadline | Fund receipt within 7 business days of payday (20 business days for a first contribution to a new fund) |
+| Maximum contribution base | $270,830 **annual** of qualifying earnings (max SG $32,499.60) |
+| Sole trader SG to self | None -- voluntary only |
+
+State **payroll tax** is not SG. NSW 2026-27: 5.45% above $1,200,000 (Revenue NSW). Other states: `au-rates-2026-27`. Full SG rules: `au-super-guarantee`.
 
 **Deadline exceptions:** new employee / new fund -- 20 business days for the first contribution; out-of-cycle payments (bonuses) ride with the next regular payday's deadline; ATO exceptional-circumstances determinations -- 20 business days.
 
@@ -336,7 +334,9 @@ Annual salary $120,000. Sacrifices $10,000/year to super.
 
 ### Pattern 4 -- STSL Repayment
 
-Employee earning $65,000 with HELP debt. STSL repayment rate from Schedule 8 tables: approximately 4.5%. Annual repayment: $65,000 × 4.5% = $2,925, withheld progressively via PAYG.
+Employee earning $65,000 with HELP debt, 2026-27. Repayment income $65,000 is below the $69,528 minimum threshold. Compulsory repayment = **nil**. PAYG should not withhold STSL. (Same result in 2025-26: threshold was $67,000.) Do not apply a 4.5% whole-of-income rate.
+
+Employee earning $90,000 with HELP debt, 2026-27. Repayment = ($90,000 - $69,528) x 0.15 = $3,070.80, withheld progressively via PAYG. _(ATO QC 16176)_
 
 ## Section 10 -- Interaction with Other Skills
 

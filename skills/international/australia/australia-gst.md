@@ -1,10 +1,10 @@
 ---
 name: australia-gst
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Australian GST return (Business Activity Statement / BAS) for any client. Trigger on phrases like "prepare BAS", "do the GST", "fill in BAS", "create the return", "GST return", "Activity Statement", or any request involving Australian GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Australia only and covers both Simpler BAS and full BAS reporting. GST groups, margin scheme, partial exemption complex, and going concern are all in the refusal catalogue. ALWAYS read this skill before touching any GST-related work.
-version: 2.1
+version: 2.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-28
+last_updated: 2026-08-31
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -41,7 +41,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Label | Meaning |
 | --- | --- |
-| G1 | Total sales (GST-exclusive for taxable sales; include GST-free and input taxed) |
+| G1 | Total sales (GST-free + input taxed + taxable). Calculation worksheet method: **GST-inclusive** (ATO requires this). Accounts method: GST-inclusive or GST-exclusive -- mark the Yes/No box under G1. G1 is not GST-exclusive by default. |
 | G2 | Export sales (GST-free, Division 38-E) |
 | G3 | Other GST-free sales (food, health, education -- Division 38-A to 38-D, 38-F+) |
 | G4 | Input taxed sales (financial supplies, residential rent -- Division 40) |
@@ -60,8 +60,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | 1A | GST on sales (output GST) |
 | 1B | GST on purchases (input tax credits) |
 
-- **Simpler BAS reporting scope** — Simpler BAS (turnover < $10M, default since 1 July 2017): Report only G1, 1A, 1B. No need for G2-G18.
-- **Full BAS reporting scope** — Full BAS: Report all G labels plus 1A, 1B, and PAYG/FBT labels as applicable.
+- **Simpler BAS reporting scope** — Simpler BAS (turnover < $10M, default since 1 July 2017): Report only G1, 1A, 1B. No need for G2-G18. At G1, mark whether the amount includes GST. Calculation worksheet / most software exports are GST-inclusive.  _(ATO -- Completing your BAS, Step 1: Sales; Simpler BAS GST bookkeeping guide)_
+- **Full BAS reporting scope** — Full BAS: Report all G labels plus 1A, 1B, and PAYG/FBT labels as applicable. G10 and G11 are GST-inclusive. G1 follows the same inclusive/exclusive choice as the method in use.
 - **GST calculation formulas** — GST = GST-inclusive price x 1/11; GST = GST-exclusive price x 10%; GST-inclusive = GST-exclusive x 1.1; GST-exclusive = GST-inclusive / 1.1
 
 **Conservative defaults -- Australian-specific**
@@ -69,6 +69,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Ambiguity | Default |
 | --- | --- |
 | Unknown GST status of a sale | Taxable at 10% |
+| Unknown G1 inclusive/exclusive method | GST-inclusive (calculation worksheet default). Flag the G1 Yes/No box for reviewer. |
 | Unknown GST status of a purchase | No input tax credit claimed |
 | Unknown business-use proportion (vehicle, phone, home office) | 0% credit |
 | Unknown whether food is basic or prepared | Taxable at 10% (prepared food) |

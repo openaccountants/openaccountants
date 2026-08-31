@@ -1,22 +1,22 @@
 ---
 name: au-rates-2026-27
 description: Use this skill whenever you need a current Australian tax rate, threshold, cap or due date for the 2026-27 or 2025-26 income year -- individual brackets, HELP repayment, Medicare levy and surcharge, super guarantee and contribution caps, Division 296, company rates, Div 7A benchmark, FBT, CGT caps and concessions, GST, PAYG instalment uplift, cents-per-km, car limits, penalty units, payroll tax, minimum wage or ASIC fees. Single-page rates card; every figure carries its source. Trigger on "what is the current rate", "2026-27 threshold", "how much is the cap", or any AU figure lookup. Load alongside the topic guide.
-version: "1.0"
+version: "1.1"
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 primary; 2025-26 retained for lodgment-season work"
-last_updated: 2026-08-20
+last_updated: 2026-08-31
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Rates Card 2026-27 (with 2025-26) v1.0
+# Australia Rates Card 2026-27 (with 2025-26) v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-Single-page lookup for the figures every other Australian guide relies on. Each row names its primary source. Verified against those sources on 20 August 2026. Deeper rules live in the topic guides named in each section; this card never overrides them.
+Single-page lookup for the figures every other Australian guide relies on. Each row names its primary source. HELP 2026-27 bands verified 31 August 2026; remaining rows verified 20 August 2026. Deeper rules live in the topic guides named in each section; this card never overrides them.
 
 ## Individual income tax
 
@@ -45,18 +45,29 @@ Tax on full bands: 2025-26 -- $4,288 at $45,000, $31,288 at $135,000, $51,638 at
 | Cents per km | 88c (2025-26); **91c (2026-27)**, cap 5,000 business km | ATO cents-per-km rates |
 | Car limit (depreciation) | $69,674 (2025-26); **$69,883 (2026-27)** | ATO car thresholds |
 
-## HELP/study loans (2025-26 onwards: marginal system)
+## HELP/study loans (marginal system from 2025-26)
 
-Repayment income = taxable income + reportable fringe benefits + reportable super + exempt foreign income + net investment losses.
+Repayment income = taxable income + reportable fringe benefits + reportable super + exempt foreign employment income + net investment losses. From 2025-26, compulsory repayments are marginal: only income above the minimum threshold is charged, except the top band which is 10% of **total** repayment income.
 
-| Repayment income (2025-26) | Marginal repayment rate |
+**2026-27** _(ATO study and training support loans rates and repayment thresholds, QC 16176)_
+
+| Repayment income | Repayment |
 | --- | --- |
-| Below $67,000 | Nil |
-| $67,001 -- $125,000 | 15% of excess over $67,000 |
-| $125,001 -- $179,285 | $8,700 + 17% of excess over $125,000 |
-| $179,286+ | 10% of repayment income (cap rule) |
+| $0 -- $69,528 | Nil |
+| $69,529 -- $129,717 | 15c for each $1 over $69,528 |
+| $129,718 -- $186,050 | $9,028 + 17c for each $1 over $129,717 |
+| $186,051+ | 10% of total repayment income |
 
-One-off 20% debt reduction applied before 1 June 2026 indexation; thresholds index for 2026-27 (confirm current-year bands at ATO study loan repayment thresholds before computing). _(Education and Other Legislation Amendment (VET Fee Protection and Other Measures) Act 2025; ATO QC 103927)_
+**2025-26** (lodgment-season prior year)
+
+| Repayment income | Repayment |
+| --- | --- |
+| $0 -- $67,000 | Nil |
+| $67,001 -- $125,000 | 15c for each $1 over $67,000 |
+| $125,001 -- $179,285 | $8,700 + 17c for each $1 over $125,000 |
+| $179,286+ | 10% of total repayment income |
+
+Do not apply the old 1%--10% of whole-of-income Schedule 8 rates to 2025-26 or 2026-27. Income at or below the minimum threshold is nil, not a small percentage. One-off 20% debt reduction applied before 1 June 2026 indexation. Keep this card in step with `au-foreign-income` (already on the 2026-27 bands) and `au-individual-return`.
 
 ## Medicare
 
@@ -146,7 +157,7 @@ This card is the single place indexed figures live outside their topic guides. W
 
 ## Provenance
 
-All figures verified 20 August 2026 directly against: ato.gov.au rate pages (QC 73320, 27031, 71196, 73746, 103578, 103927, contributions caps, key super rates, car thresholds, Div 7A rates, GDP adjustment), Department of Health PHI Circular 12/26, Revenue NSW / SRO Vic / QRO current-rates pages, FWC Annual Wage Review 2025-26 decision, ASIC fee indexation page (1 July 2026), and the amending Acts named inline.
+HELP 2026-27 and 2025-26 bands verified 31 August 2026 against ATO QC 16176 (study and training support loans rates and repayment thresholds). Remaining figures verified 20 August 2026 against: ato.gov.au rate pages (QC 73320, 27031, 71196, 73746, 103578, contributions caps, key super rates, car thresholds, Div 7A rates, GDP adjustment), Department of Health PHI Circular 12/26, Revenue NSW / SRO Vic / QRO current-rates pages, FWC Annual Wage Review 2025-26 decision, ASIC fee indexation page (1 July 2026), and the amending Acts named inline.
 
 <!-- openaccountants-cta-block -->
 
