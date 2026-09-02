@@ -4,13 +4,15 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 version: 2.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia GST
+
+## Australia GST
 
 ## Section 1 -- Quick reference
 
@@ -89,12 +91,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | MEDIUM conservative-default count | >4 across the return |
 | LOW absolute net GST position | AUD $10,000 |
 
-## Section 2 -- Required inputs and refusal catalogue
-
 ### Required inputs
 
-- **Minimum viable, recommended, ideal inputs** — Minimum viable -- bank statement for the period in CSV, PDF, or pasted text. Must cover the full BAS period. Acceptable from any Australian business bank: CBA, Westpac, ANZ, NAB, Macquarie, Bendigo, Suncorp, Bank of Queensland, Up Bank, ING, Revolut AU, Wise, or any other. Recommended -- sales invoices for the period (especially for exports and GST-free supplies), purchase invoices for any input tax credit claim above AUD $500, the client's ABN in writing (11 digits), prior period BAS. Ideal -- complete accounting software export (Xero, MYOB, QuickBooks), tax invoice register, prior period BAS with any credit carried forward.
-- **Refusal policy if minimum is missing** — SOFT WARN. If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This BAS was produced from bank statement alone. The reviewer must verify, before lodging, that input tax credit claims above AUD $500 are supported by valid tax invoices and that all GST-free and reverse-charge classifications match the supplier's invoice."
+Minimum viable -- bank statement for the period in CSV, PDF, or pasted text. Must cover the full BAS period. Acceptable from any Australian business bank: CBA, Westpac, ANZ, NAB, Macquarie, Bendigo, Suncorp, Bank of Queensland, Up Bank, ING, Revolut AU, Wise, or any other. Recommended -- sales invoices for the period (especially for exports and GST-free supplies), purchase invoices for any input tax credit claim above AUD $500, the client's ABN in writing (11 digits), prior period BAS. Ideal -- complete accounting software export (Xero, MYOB, QuickBooks), tax invoice register, prior period BAS with any credit carried forward.
+
+SOFT WARN. If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This BAS was produced from bank statement alone. The reviewer must verify, before lodging, that input tax credit claims above AUD $500 are supported by valid tax invoices and that all GST-free and reverse-charge classifications match the supplier's invoice."
 
 ### Australia-specific refusal catalogue
 
@@ -504,31 +505,31 @@ For each ambiguity type: pattern, why the bank statement is insufficient, conser
 
 ### 6.1 Vehicle costs (fuel -- business or private?)
 
-- **Pattern, reasoning, default, question** — Pattern: BP, Shell, Caltex, Ampol, 7-Eleven fuel, Viva Energy. Why insufficient: business-use proportion unknown. Unlike Malta, Australia does NOT hard-block car GST credits -- but private-use portion must be excluded. Default: 0% credit. Question: "Is this fuel for a business vehicle? What percentage is business use vs private? Do you keep a logbook?"
+Pattern: BP, Shell, Caltex, Ampol, 7-Eleven fuel, Viva Energy. Why insufficient: business-use proportion unknown. Unlike Malta, Australia does NOT hard-block car GST credits -- but private-use portion must be excluded. Default: 0% credit. Question: "Is this fuel for a business vehicle? What percentage is business use vs private? Do you keep a logbook?"
 
 ### 6.2 Home office (utilities -- 70c/hr or actual?)
 
-- **Pattern, reasoning, default, question** — Pattern: Origin Energy, AGL, Telstra on a residential address; home internet. Why insufficient: if the client works from home, a portion of home expenses may be claimable. The ATO allows either the fixed-rate method (70 cents per hour from 2024-25 under PCG 2023/1; 67c applied for 2022-23 and 2023-24) or the actual-cost method with apportionment. For GST, the actual-cost method requires splitting the taxable portion. Default: 0% credit (cannot determine business proportion). Question: "Do you work from home? How many hours per week? Is this a dedicated business line/service or shared personal?"
+Pattern: Origin Energy, AGL, Telstra on a residential address; home internet. Why insufficient: if the client works from home, a portion of home expenses may be claimable. The ATO allows either the fixed-rate method (70 cents per hour from 2024-25 under PCG 2023/1; 67c applied for 2022-23 and 2023-24) or the actual-cost method with apportionment. For GST, the actual-cost method requires splitting the taxable portion. Default: 0% credit (cannot determine business proportion). Question: "Do you work from home? How many hours per week? Is this a dedicated business line/service or shared personal?"
 
 ### 6.3 Food purchases (Woolworths -- basic food GST-free or prepared?)
 
-- **Pattern, reasoning, default, question** — Pattern: Woolworths, Coles, IGA, Aldi, any supermarket. Why insufficient: a single supermarket receipt may contain GST-free basic food and taxable prepared food, confectionery, soft drinks, and non-food items. The receipt total alone cannot determine the split. Default: no credit claimed (treat as no GST in price, G14). Question: "Could you provide the receipt? I need to split GST-free food items from taxable items to claim the correct credit."
+Pattern: Woolworths, Coles, IGA, Aldi, any supermarket. Why insufficient: a single supermarket receipt may contain GST-free basic food and taxable prepared food, confectionery, soft drinks, and non-food items. The receipt total alone cannot determine the split. Default: no credit claimed (treat as no GST in price, G14). Question: "Could you provide the receipt? I need to split GST-free food items from taxable items to claim the correct credit."
 
 ### 6.4 Cash withdrawals
 
-- **Pattern, reasoning, default, question** — Pattern: ATM, cash withdrawal, CBA cash, Westpac cash. Why insufficient: unknown what cash was spent on. Default: exclude as owner drawing. Question: "What was the cash used for? If business expenses, do you have receipts?"
+Pattern: ATM, cash withdrawal, CBA cash, Westpac cash. Why insufficient: unknown what cash was spent on. Default: exclude as owner drawing. Question: "What was the cash used for? If business expenses, do you have receipts?"
 
 ### 6.5 Insurance (some taxable, some input taxed -- which policy?)
 
-- **Pattern, reasoning, default, question** — Pattern: insurance premium, policy payment, Suncorp, QBE, AMP. Why insufficient: general insurance (business, motor, property) is taxable at 10% with GST credit. Life insurance and private health insurance are input taxed (no credit). The bank statement description rarely identifies the policy type. Default: input taxed, no credit (conservative). Question: "Is this general insurance (business/property/vehicle), life insurance, or health insurance? General insurance has GST; life and health do not."
+Pattern: insurance premium, policy payment, Suncorp, QBE, AMP. Why insufficient: general insurance (business, motor, property) is taxable at 10% with GST credit. Life insurance and private health insurance are input taxed (no credit). The bank statement description rarely identifies the policy type. Default: input taxed, no credit (conservative). Question: "Is this general insurance (business/property/vehicle), life insurance, or health insurance? General insurance has GST; life and health do not."
 
 ### 6.6 Mixed personal/business subscriptions
 
-- **Pattern, reasoning, default, question** — Pattern: Netflix, Spotify, Apple, Amazon Prime, gym membership. Why insufficient: if subscription is partly personal and partly business, only the business portion is creditable. Most streaming/entertainment subscriptions are purely personal. Default: exclude as private. Question: "Is this a business expense or personal? If mixed, what percentage is business use?"
+Pattern: Netflix, Spotify, Apple, Amazon Prime, gym membership. Why insufficient: if subscription is partly personal and partly business, only the business portion is creditable. Most streaming/entertainment subscriptions are purely personal. Default: exclude as private. Question: "Is this a business expense or personal? If mixed, what percentage is business use?"
 
 ### 6.7 Airbnb income (short-stay accommodation -- residential or commercial?)
 
-- **Pattern, reasoning, default, question** — Pattern: Airbnb payouts, Stayz payouts, short-term rental income. Why insufficient: short-stay accommodation (typically under 3 months) is treated as commercial accommodation, taxable at 10%. Long-term residential rental (over 3 months) is input taxed. The bank statement shows only an Airbnb payout amount. Also: if total Airbnb turnover is below $75,000, the host may not be required to register for GST. Default: [T2] flag for reviewer. Question: "Is this short-term rental (under 3 months per guest)? What is your total annual Airbnb income? Are you GST-registered for this activity?"
+Pattern: Airbnb payouts, Stayz payouts, short-term rental income. Why insufficient: short-stay accommodation (typically under 3 months) is treated as commercial accommodation, taxable at 10%. Long-term residential rental (over 3 months) is input taxed. The bank statement shows only an Airbnb payout amount. Also: if total Airbnb turnover is below $75,000, the host may not be required to register for GST. Default: [T2] flag for reviewer. Question: "Is this short-term rental (under 3 months per guest)? What is your total annual Airbnb income? Are you GST-registered for this activity?"
 
 ### Sheet "Transactions"
 
@@ -548,11 +549,11 @@ Columns:
 
 ### Sheet "BAS Summary" (Full BAS)
 
-- **BAS Summary formulas** — One row per BAS label. Column A is the label, column B is the description, column C is the value computed via formula. ``` Sales: | G1  | Total sales                    | =SUMIFS(Transactions!F:F, Transactions!C:C, "CREDIT") | | G2  | Export sales                   | =SUMIFS(Transactions!F:F, Transactions!H:H, "G2") | | G3  | Other GST-free sales           | =SUMIFS(Transactions!F:F, Transactions!H:H, "G3") | | G4  | Input taxed sales              | =SUMIFS(Transactions!F:F, Transactions!H:H, "G4") | | G5  | GST-free + input taxed (derived)| =G2+G3+G4 | | G6  | Taxable sales (derived)        | =G1-G5 | Purchases: | G10 | Capital purchases              | =SUMIFS(Transactions!E:E, Transactions!H:H, "G10") | | G11 | Non-capital purchases          | =SUMIFS(Transactions!E:E, Transactions!H:H, "G11") | | G12 | Total purchases (derived)      | =G10+G11 | | G13 | Purchases for input taxed      | =SUMIFS(Transactions!E:E, Transactions!H:H, "G13") | | G14 | Purchases with no GST          | =SUMIFS(Transactions!E:E, Transactions!H:H, "G14") | | G15 | Private use purchases          | =SUMIFS(Transactions!E:E, Transactions!H:H, "G15") | | G16 | Non-creditable (derived)       | =G13+G14+G15 | | G17 | Creditable purchases (derived) | =G12-G16 | Tax: | 1A  | GST on sales                   | =G6/11 | | 1B  | GST on purchases               | =G17/11 | Net: | GST payable / (refundable)      | =1A-1B | ```
+One row per BAS label. Column A is the label, column B is the description, column C is the value computed via formula. ``` Sales: | G1  | Total sales                    | =SUMIFS(Transactions!F:F, Transactions!C:C, "CREDIT") | | G2  | Export sales                   | =SUMIFS(Transactions!F:F, Transactions!H:H, "G2") | | G3  | Other GST-free sales           | =SUMIFS(Transactions!F:F, Transactions!H:H, "G3") | | G4  | Input taxed sales              | =SUMIFS(Transactions!F:F, Transactions!H:H, "G4") | | G5  | GST-free + input taxed (derived)| =G2+G3+G4 | | G6  | Taxable sales (derived)        | =G1-G5 | Purchases: | G10 | Capital purchases              | =SUMIFS(Transactions!E:E, Transactions!H:H, "G10") | | G11 | Non-capital purchases          | =SUMIFS(Transactions!E:E, Transactions!H:H, "G11") | | G12 | Total purchases (derived)      | =G10+G11 | | G13 | Purchases for input taxed      | =SUMIFS(Transactions!E:E, Transactions!H:H, "G13") | | G14 | Purchases with no GST          | =SUMIFS(Transactions!E:E, Transactions!H:H, "G14") | | G15 | Private use purchases          | =SUMIFS(Transactions!E:E, Transactions!H:H, "G15") | | G16 | Non-creditable (derived)       | =G13+G14+G15 | | G17 | Creditable purchases (derived) | =G12-G16 | Tax: | 1A  | GST on sales                   | =G6/11 | | 1B  | GST on purchases               | =G17/11 | Net: | GST payable / (refundable)      | =1A-1B | ```
 
 ### Sheet "Simpler BAS"
 
-- **Simpler BAS formulas** — For Simpler BAS clients (turnover < $10M), only three fields: ``` | G1  | Total sales    | =SUMIFS(Transactions!F:F, Transactions!C:C, "CREDIT") | | 1A  | GST on sales   | =SUM of GST from taxable sales transactions | | 1B  | GST on purchases | =SUM of GST from creditable purchase transactions | | Net | GST payable / (refundable) | =1A-1B | ```
+For Simpler BAS clients (turnover < $10M), only three fields: ``` | G1  | Total sales    | =SUMIFS(Transactions!F:F, Transactions!C:C, "CREDIT") | | 1A  | GST on sales   | =SUM of GST from taxable sales transactions | | 1B  | GST on purchases | =SUM of GST from creditable purchase transactions | | Net | GST payable / (refundable) | =1A-1B | ```
 
 ### Color and formatting conventions
 
@@ -586,43 +587,43 @@ Infer the client profile from the data first. Only ask questions the data could 
 
 ### 9.1 Entity type and trading name
 
-- **Inference rule and fallback question** — Inference rule: sole trader names match account holder; company names end in "Pty Ltd", "Ltd". Fallback question: "Are you a sole trader, partnership, company (Pty Ltd), or trust?"
+Inference rule: sole trader names match account holder; company names end in "Pty Ltd", "Ltd". Fallback question: "Are you a sole trader, partnership, company (Pty Ltd), or trust?"
 
 ### 9.2 GST registration status
 
-- **Inference rule and fallback question** — Inference rule: if asking for a BAS, they are registered. If turnover clearly below $75,000, may be voluntary. Fallback question: "Are you registered for GST? If so, since what date?"
+Inference rule: if asking for a BAS, they are registered. If turnover clearly below $75,000, may be voluntary. Fallback question: "Are you registered for GST? If so, since what date?"
 
 ### 9.3 ABN
 
-- **Inference rule and fallback question** — Inference rule: may appear on bank statement header or invoices. Search descriptions. Fallback question: "What is your ABN? (11 digits)"
+Inference rule: may appear on bank statement header or invoices. Search descriptions. Fallback question: "What is your ABN? (11 digits)"
 
 ### 9.4 Reporting period and method
 
-- **Inference rule and fallback question** — Inference rule: statement date range indicates quarter. Fallback question: "Which BAS period? Q1 (Jul-Sep), Q2 (Oct-Dec), Q3 (Jan-Mar), or Q4 (Apr-Jun)? Monthly or quarterly?"
+Inference rule: statement date range indicates quarter. Fallback question: "Which BAS period? Q1 (Jul-Sep), Q2 (Oct-Dec), Q3 (Jan-Mar), or Q4 (Apr-Jun)? Monthly or quarterly?"
 
 ### 9.5 Simpler BAS or Full BAS
 
-- **Inference rule and fallback question** — Inference rule: if turnover < $10M (likely for sole traders), Simpler BAS is default. Fallback question: "Are you on Simpler BAS (G1, 1A, 1B only) or do you report full BAS labels?"
+Inference rule: if turnover < $10M (likely for sole traders), Simpler BAS is default. Fallback question: "Are you on Simpler BAS (G1, 1A, 1B only) or do you report full BAS labels?"
 
 ### 9.6 Accounting basis
 
-- **Inference rule and fallback question** — Inference rule: not inferable from bank statement alone. Fallback question: "Are you on cash basis or accrual basis for GST?"
+Inference rule: not inferable from bank statement alone. Fallback question: "Are you on cash basis or accrual basis for GST?"
 
 ### 9.7 Industry and sector
 
-- **Inference rule and fallback question** — Inference rule: counterparty mix, sales descriptions. IT, consulting, trades, retail, hospitality are recognisable from transaction patterns. Fallback question: "In one sentence, what does the business do?"
+Inference rule: counterparty mix, sales descriptions. IT, consulting, trades, retail, hospitality are recognisable from transaction patterns. Fallback question: "In one sentence, what does the business do?"
 
 ### 9.8 Input taxed supplies
 
-- **Inference rule and fallback question** — Inference rule: presence of residential rental income, interest income from lending, financial service revenue. Fallback question: "Do you earn any income from residential property, financial services, or share trading?" If yes and non-de-minimis: R-AU-1 or R-AU-5 may fire.
+Inference rule: presence of residential rental income, interest income from lending, financial service revenue. Fallback question: "Do you earn any income from residential property, financial services, or share trading?" If yes and non-de-minimis: R-AU-1 or R-AU-5 may fire.
 
 ### 9.9 Employees
 
-- **Inference rule and fallback question** — Inference rule: PAYG withholding payments, super guarantee payments, WorkCover. Fallback question: "Do you have employees? If so, how many?"
+Inference rule: PAYG withholding payments, super guarantee payments, WorkCover. Fallback question: "Do you have employees? If so, how many?"
 
 ### 9.10 Exports
 
-- **Inference rule and fallback question** — Inference rule: foreign currency credits, overseas counterparty names. Fallback question: "Do you sell goods or services to customers outside Australia?"
+Inference rule: foreign currency credits, overseas counterparty names. Fallback question: "Do you sell goods or services to customers outside Australia?"
 
 ### Filing deadlines (quarterly)
 
@@ -645,7 +646,7 @@ Infer the client profile from the data first. Only ask questions the data could 
 
 ### Registration thresholds
 
-**Registration thresholds table**
+**Registration thresholds table**  _(GST Act, s 23-5; s 144-5; Division 83-5)_
 
 | Entity type | Threshold | Legislation |
 | --- | --- | --- |
@@ -668,7 +669,7 @@ Infer the client profile from the data first. Only ask questions the data could 
 
 ### Key thresholds summary
 
-**Key thresholds summary table**
+**Key thresholds summary table**  _(s 23-5; TAA 1953; s 29-40; s 69-10; LCT Act; TAA Schedule 1; s 31-5; s 29-70)_
 
 | Threshold | Value | Source |
 | --- | --- | --- |
@@ -754,6 +755,8 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01T09:46:50+00:00",
+ "generated_at": "2026-09-02T09:12:20+00:00",
  "counts": {
   "guides": 1966,
   "jurisdictions": 244,
@@ -2584,7 +2584,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2024",
-   "last_updated": "2026-08-28"
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "au-land-tax",
@@ -2679,8 +2679,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "tax_year": "2025",
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "au-rd-incentive",
@@ -2836,7 +2836,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-28"
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "australia-payroll",
@@ -2848,7 +2848,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-08-28"
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "australia-tax-optimization",
