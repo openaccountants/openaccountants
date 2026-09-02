@@ -14,7 +14,7 @@ description: >
 version: 2.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-28
+last_updated: 2026-09-02
 review_status: pending_review
 category: payroll
 tier: 2
@@ -22,6 +22,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia -- Payroll Skill v2.2
+
+## Australia -- Payroll Skill v2.2
 
 ## Australia -- Payroll Skill v2.2
 
@@ -113,21 +115,14 @@ There is no employee-paid social insurance premium equivalent to NIC (UK) or soc
 | ACT | $2,000,000 | 6.85% |
 | NT | $1,500,000 | 5.50% |
 
-**Deadline exceptions:** new employee / new fund -- 20 business days for the first contribution; out-of-cycle payments (bonuses) ride with the next regular payday's deadline; ATO exceptional-circumstances determinations -- 20 business days.
-
-**Legacy:** quarterly due dates (28 Oct/28 Jan/28 Apr/28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026. The ATO Small Business Super Clearing House closed permanently on 1 July 2026 -- small employers now use payroll-software super payments or commercial clearing houses.
-
-12% is the final scheduled SG rate (reached 1 July 2025). No further increases are planned.
+- **Deadline exceptions** — new employee / new fund -- 20 business days for the first contribution; out-of-cycle payments (bonuses) ride with the next regular payday's deadline; ATO exceptional-circumstances determinations -- 20 business days.
+- **Legacy** — quarterly due dates (28 Oct/28 Jan/28 Apr/28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026. The ATO Small Business Super Clearing House closed permanently on 1 July 2026 -- small employers now use payroll-software super payments or commercial clearing houses.
+- **Final scheduled SG rate** — 12% is the final scheduled SG rate (reached 1 July 2025). No further increases are planned. %
 
 ### Superannuation Guarantee Charge (SGC) -- redesigned from 1 July 2026
 
-For earnings paid from 1 July 2026, SGC is **ATO-assessed per payday** (no SGC statement is lodged; the ATO matches STP data against fund reporting). Components:
-- The final SG shortfall (12% of qualifying earnings unpaid)
-- Notional earnings (GIC-rate interest, compounding daily from the day after the deadline)
-- An administrative uplift (starts at 60% of shortfall + notional earnings; reduced for clean history and voluntary disclosure, to 0% if disclosed within 30 days with a clean 2-year record)
-- Choice loading (25%, capped at $1,200 per notice period) where choice-of-fund rules were breached
-
-The redesigned SGC **is tax-deductible** (GIC on late SGC and the late payment penalty are not). Old-regime SGC for quarters before 1 July 2026 remains non-deductible. Unpaid SGC 28 days after assessment triggers a Notice to Pay, then a 25% or 50% late payment penalty. First-year ATO approach: PCG 2026/1.
+- **SGC redesign components** — For earnings paid from 1 July 2026, SGC is **ATO-assessed per payday** (no SGC statement is lodged; the ATO matches STP data against fund reporting). Components: - The final SG shortfall (12% of qualifying earnings unpaid) - Notional earnings (GIC-rate interest, compounding daily from the day after the deadline) - An administrative uplift (starts at 60% of shortfall + notional earnings; reduced for clean history and voluntary disclosure, to 0% if disclosed within 30 days with a clean 2-year record) - Choice loading (25%, capped at $1,200 per notice period) where choice-of-fund rules were breached  _(PCG 2026/1)_
+- **SGC deductibility and penalties** — The redesigned SGC **is tax-deductible** (GIC on late SGC and the late payment penalty are not). Old-regime SGC for quarters before 1 July 2026 remains non-deductible. Unpaid SGC 28 days after assessment triggers a Notice to Pay, then a 25% or 50% late payment penalty. First-year ATO approach: PCG 2026/1.  _(PCG 2026/1)_
 
 ### Workers' Compensation Insurance
 
@@ -230,7 +225,7 @@ The redesigned SGC **is tax-deductible** (GIC on late SGC and the late payment p
 
 ## Section 7 -- Payslip Requirements
 
-- **Payslip issuance timing** — Payslips must be issued within 1 working day of payday (Fair Work Act s536, Fair Work Regulations r3.36).  _(Fair Work Act s536, Fair Work Regulations r3.36)_  _(Fair Work Act s536, Fair Work Regulations r3.36)_
+- **Payslip issuance timing** — Payslips must be issued within 1 working day of payday (Fair Work Act s536, Fair Work Regulations r3.36).  _(Fair Work Act s536, Fair Work Regulations r3.36)_
 
 ### Mandatory Payslip Contents
 
@@ -281,7 +276,7 @@ Not strictly required on payslips but must be provided to employees on request. 
 | Workers' comp annual declaration | Per state insurer schedule |
 | Payroll tax annual reconciliation | Per state revenue office (typically July/August) |
 
-**Legacy:** quarterly due dates (28 Oct / 28 Jan / 28 Apr / 28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026.
+- **Legacy** — quarterly due dates (28 Oct / 28 Jan / 28 Apr / 28 Jul) apply only to earnings paid up to 30 June 2026; the final quarterly deadline was 28 July 2026.
 
 ### Annual Obligations
 
@@ -354,6 +349,8 @@ Employee earning $65,000 with HELP debt. STSL repayment rate from Schedule 8 tab
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 
