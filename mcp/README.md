@@ -51,7 +51,7 @@ The self-hosted server exposes 6 read-only tools below. The hosted server at `ht
 | `list_skills` | List published skills with quality tier and reviewing accountant. Optional `jurisdiction` (ISO code, e.g. `MT`, `GB`, `US-CA`) and `category` filters. |
 | `get_skill` | Given a skill `slug`, returns the full markdown plus a provenance/attribution footer. |
 | `get_skill_sections` | Given a `slug`, returns the skill parsed into sections (`heading`, `content`, `level`) for step-by-step application. |
-| `search_skills` | Keyword search across skill markdown (`query`, optional `jurisdiction`). Returns the matched section heading and a snippet. |
+| `search_skills` | Keyword search across skill markdown (`query`, optional `jurisdiction`). Returns at most 25 matched section headings and snippets, with `returned`, `limit`, `truncated` and `unreadable_skipped` metadata. The backwards-compatible `total` field aliases `returned`; neither field is a corpus-wide match count when `truncated` is true. |
 | `submit_feedback` | Build a pre-filled GitHub New Issue URL the user opens to submit feedback (skill problem, missing jurisdiction, bug, etc.). Takes `summary` plus optional `title`, `skill_slug`, `jurisdiction`, `rating`. Returns `github_url`, `title`, `body`, `labels`. No server-side auth — user submits under their own account. |
 
 Skill access is **read-only** and **path-sandboxed** to the `packages/` directory; `submit_feedback` does not call GitHub itself, it only constructs a URL.

@@ -676,8 +676,18 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
         jurisdiction: Optional jurisdiction code to limit the search.
 
     Returns:
-        ``{"results": [...], "total": n}`` — each result has slug, title,
-        jurisdiction, matched_section and snippet.
+        ``{"results": [...], "returned": n, "truncated": bool, "limit": n,
+        "unreadable_skipped": n, "unreadable_slugs": [...]}`` — each result has
+        slug, title, jurisdiction, matched_section and snippet.
+
+        ``returned`` is exactly ``len(results)``. ``total`` is retained as a
+        backwards-compatible alias of ``returned`` for callers that already
+        consume it; like ``returned``, it is the count of returned matches, not
+        a corpus-wide figure, because counting the rest would mean reading
+        every skill body. ``truncated`` says more matches exist beyond
+        ``limit``; ``unreadable_skipped`` says how many skills could not be
+        read at all, so a caller can tell an incomplete answer from a complete
+        one.
     """
     q = (query or "").strip()
     if not q:
@@ -685,15 +695,26 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
     jx = jurisdiction.upper() if jurisdiction else None
 
     results = []
+    unreadable: list[str] = []
+    truncated = False
     for rec in _index().values():
         if jx and rec["jurisdiction"].upper() != jx:
             continue
         try:
             _, body = _read_skill(rec["slug"])
-        except (OSError, ValueError):
+        except (OSError, ValueError) as exc:
+            # An unreadable body is not a non-match. Swallowing it let an
+            # incomplete result set report itself complete, and could hide the
+            # truncation flag when every match past the cap was unreadable
+            # (26 matches used to answer returned 25, truncated false).
+            log.warning("search skipped unreadable skill %r: %s", rec["slug"], exc)
+            unreadable.append(rec["slug"])
             continue
         if q.lower() not in body.lower():
             continue
+        if len(results) >= SEARCH_LIMIT:
+            truncated = True
+            break
         section, snippet = _extract_match(body, q)
         results.append({
             "slug": rec["slug"],
@@ -702,20 +723,39 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
             "matched_section": section,
             "snippet": snippet,
         })
-        if len(results) >= SEARCH_LIMIT:
-            break
     if results:
-        next_action = (
-            "Load the most relevant match with get_skill(slug), then apply its "
-            "rules. For a guided, scoped plan, call start(intent, jurisdiction)."
-        )
+        if truncated:
+            next_action = (
+                f"More than {SEARCH_LIMIT} skills matched. Narrow the query or "
+                "jurisdiction, or load the most relevant returned match with "
+                "get_skill(slug)."
+            )
+        else:
+            next_action = (
+                "Load the most relevant match with get_skill(slug), then apply its "
+                "rules. For a guided, scoped plan, call start(intent, jurisdiction)."
+            )
     else:
         next_action = (
             "No matches. Broaden the query or confirm the jurisdiction with "
             "list_skills(). If the corpus genuinely lacks this, call "
             "submit_feedback() to flag the gap."
         )
-    return {"results": results, "total": len(results), "next_action": next_action}
+    if unreadable:
+        next_action = (
+            f"{len(unreadable)} matching-or-not skill(s) could not be read, so "
+            "this result set may be incomplete. " + next_action
+        )
+    return {
+        "results": results,
+        "returned": len(results),
+        "total": len(results),
+        "truncated": truncated,
+        "limit": SEARCH_LIMIT,
+        "unreadable_skipped": len(unreadable),
+        "unreadable_slugs": unreadable[:SEARCH_LIMIT],
+        "next_action": next_action,
+    }
 
 
 # ---------------------------------------------------------------------------

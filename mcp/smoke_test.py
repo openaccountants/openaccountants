@@ -198,8 +198,13 @@ check("truncation note present", "truncated" in long_fb["body"].lower())
 # --- search_skills --------------------------------------------------------
 print("\nsearch_skills('reverse charge', 'MT'):")
 sr = S.search_skills("reverse charge", "MT")
-check("returns results + total", "results" in sr and "total" in sr)
-check("has matches", sr["total"] > 0, f"got {sr['total']}")
+check("returns bounded-search metadata",
+      set(sr) >= {"results", "returned", "total", "truncated", "limit", "unreadable_skipped"})
+check("has matches", sr["returned"] > 0, f"got {sr['returned']}")
+check("returned agrees with results", sr["returned"] == len(sr["results"]))
+check("total aliases returned", sr["total"] == sr["returned"])
+check("nothing unreadable in a clean checkout", sr["unreadable_skipped"] == 0,
+      str(sr.get("unreadable_slugs")))
 if sr["results"]:
     check("result shape",
           set(sr["results"][0]) >= {"slug", "title", "jurisdiction", "matched_section", "snippet"})
