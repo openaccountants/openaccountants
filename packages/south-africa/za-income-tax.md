@@ -4,7 +4,7 @@ description: Use this skill whenever asked about South African income tax for se
 version: 2.0
 jurisdiction: ZA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-09-03
 reviewed_by: Werner Britz
 review_status: current
 tier: 1
@@ -71,7 +71,7 @@ Complete bookkeeping, prior year ITR12, IT34 (assessment), asset register
 
 - **R-ZA-1: Company/CC/Trust** — This skill covers sole proprietors only. Companies file ITR14 at 27%. Trusts file ITR12T.  _(Income Tax Act s 5 and rates schedule)_
 - **R-ZA-2: Foreign income** — Correct as refusal but reference is to s 10(1)(o)(ii) - the exemption for employment income earned outside SA for more than 183 days. Note the R1.25m cap was introduced in 2020. For sole proprietor trade income earned outside SA, residency and DTA rules apply (s 9D for CFCs). Different rule.  _(Income Tax Act s 10(1)(o)(ii); s 6quat; relevant DTAs)_
-- **R-ZA-3: Capital gains tax** — Reasonable refusal as scope decision, but CGT events on business assets are common in sole prop work (disposal of equipment, sale of practice). Even if computation is outside scope, the skill should flag CGT triggers. Annual exclusion R40,000 (R300,000 in year of death); inclusion rate 40% for individuals. Primary residence exclusion R2m (R3m from 1 March 2026).  _(Income Tax Act Eighth Schedule; SARS Budget 2026 Tax Guide)_
+- **R-ZA-3: Capital gains tax** — Reasonable refusal as scope decision, but CGT events on business assets are common in sole prop work (disposal of equipment, sale of practice). Even if computation is outside scope, the skill should flag CGT triggers. Annual exclusion R50,000 (R440,000 in year of death); inclusion rate 40% for individuals. Primary residence exclusion R3,000,000 (2026/27, up from R2m).  _(Income Tax Act Eighth Schedule; SARS Budget 2026 Tax Guide)_
 - **R-ZA-4: Age unknown** — Cannot compute without age  _(Income Tax Act s 6 and s 10(1)(i))_
 - **FNB, FIRST NATIONAL BANK - Bank charges** — Deductible. Business account fees  _(Income Tax Act s 11(a))_
 - **STANDARD BANK, SBSA** — Bank charges deductible
@@ -173,7 +173,7 @@ See critical finding #8. s 23(m) does not block entertainment for sole proprieto
 
 ### 5.10 Home office
 
-- **5.10 Home office** — Substantive position correct but list of expenses missing. s 23(b) requirements: (1) part of a residence occupied for trade; (2) specifically equipped for trade; (3) regularly and exclusively used for trade; (4) (for salaried employees only) duties are mainly performed there. Permitted expenses (apportioned): rent OR bond INTEREST (not capital repayments); rates and taxes; levies; electricity; water; cleaning; repairs to office portion; wear-and-tear on office-only equipment claimed in full. Formula: A/B x premises costs where A=area of office, B=total area of residence. CRITICAL CGT CONSEQUENCE (missing from skill): the area used for trade is "tainted" - on disposal of the residence, the primary residence exclusion (R2m / R3m from 1 March 2026) does NOT apply to the tainted portion; the gain is apportioned by area and period of trade use, and the tainted portion is fully subject to CGT with only the annual exclusion (R40k) available. Practitioners must warn clients before they first claim home office. Many clients consider claiming home office and then find on sale that they have generated CGT that exceeds the lifetime income tax savings.  _(Income Tax Act s 11(a), s 23(b); SARS IN 28 (Issue 3, March 2022); Eighth Schedule para 47)_
+- **5.10 Home office** — Substantive position correct but list of expenses missing. s 23(b) requirements: (1) part of a residence occupied for trade; (2) specifically equipped for trade; (3) regularly and exclusively used for trade; (4) (for salaried employees only) duties are mainly performed there. Permitted expenses (apportioned): rent OR bond INTEREST (not capital repayments); rates and taxes; levies; electricity; water; cleaning; repairs to office portion; wear-and-tear on office-only equipment claimed in full. Formula: A/B x premises costs where A=area of office, B=total area of residence. CRITICAL CGT CONSEQUENCE (missing from skill): the area used for trade is "tainted" - on disposal of the residence, the primary residence exclusion (R3,000,000 for 2026/27) does NOT apply to the tainted portion; the gain is apportioned by area and period of trade use, and the tainted portion is fully subject to CGT with only the annual exclusion (R50,000 for 2026/27) available. Practitioners must warn clients before they first claim home office. Many clients consider claiming home office and then find on sale that they have generated CGT that exceeds the lifetime income tax savings.  _(Income Tax Act s 11(a), s 23(b); SARS IN 28 (Issue 3, March 2022); Eighth Schedule para 47)_
 
 ### 5.11 Record keeping
 
@@ -868,6 +868,8 @@ Step-by-step per Section 5: gross income, deductions, taxable income, tax, rebat
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a registered tax practitioner, CA(SA), or equivalent licensed practitioner in South Africa) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Brandon Iverach.
 
 <!-- openaccountants-cta-block -->
 

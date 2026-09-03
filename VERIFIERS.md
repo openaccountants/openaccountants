@@ -23,10 +23,10 @@ nightly from the platform — the site is the source of truth; edits here are ov
 | Christos Thoma | — | CY | 5 |
 | Ashish Bista | — | NP | 5 |
 | Rob Hoffman | — | US-FL | 5 |
-| Werner Britz | — | ZA | 4 |
 | Maria Clemencia Valverde Rios | — | PE | 4 |
 | James Wallach | — | US | 4 |
 | Gvantsa Amiridze | ACCA | GE | 3 |
+| Werner Britz | — | ZA | 3 |
 | Yeong Min Lee | — | KR | 3 |
 | Omolola Fasasi  | — | NG | 3 |
 | Maria Valeria Benvenuti | — | AR | 3 |

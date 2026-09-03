@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1974 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1979 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1571,10 +1571,15 @@ https://www.openaccountants.com
 - south-africa-transfer-pricing | ZA | tier 2 | reviewed_by Werner Britz
 - south-africa-vat | ZA | tier 1 | reviewed_by Werner Britz
 - travel-allowance-and-logbook-rate-tables-2023-to-2027 | ZA | tier 2 | reviewed_by -
+- za-assessed-loss-ring-fencing | ZA | tier 2 | reviewed_by -
+- za-capital-gains-tables | ZA | tier 2 | reviewed_by -
 - za-capital-gains | ZA | tier 2 | reviewed_by Werner Britz
+- za-foreign-employment-exemption | ZA | tier 2 | reviewed_by -
+- za-income-tax-tables | ZA | tier 2 | reviewed_by -
 - za-income-tax | ZA | tier 1 | reviewed_by Werner Britz
 - za-provisional-tax | ZA | tier 1 | reviewed_by Werner Britz
 - za-tax-residency | ZA | tier 2 | reviewed_by Werner Britz
+- za-travel-allowance-tables | ZA | tier 2 | reviewed_by -
 - za-vat-return | ZA | tier 1 | reviewed_by Werner Britz
 - kr-income-tax | KR | tier 1 | reviewed_by Yeong Min Lee
 - kr-social-insurance | KR | tier 2 | reviewed_by -

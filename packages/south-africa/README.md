@@ -16,12 +16,17 @@
 9. `south-africa-transfer-pricing.md`
 10. `south-africa-vat.md`
 11. `travel-allowance-and-logbook-rate-tables-2023-to-2027.md`
-12. `za-capital-gains.md`
-13. `za-income-tax.md`
-14. `za-provisional-tax.md`
-15. `za-tax-residency.md`
-16. `za-vat-return.md`
-17. `transfer-pricing-workflow-base.md`
+12. `za-assessed-loss-ring-fencing.md`
+13. `za-capital-gains-tables.md`
+14. `za-capital-gains.md`
+15. `za-foreign-employment-exemption.md`
+16. `za-income-tax-tables.md`
+17. `za-income-tax.md`
+18. `za-provisional-tax.md`
+19. `za-tax-residency.md`
+20. `za-travel-allowance-tables.md`
+21. `za-vat-return.md`
+22. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

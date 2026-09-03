@@ -1,6 +1,6 @@
 ---
 name: selling-a-company-in-malta
-description: ---
+description: "---"
 jurisdiction: MT
 tax_year: 2025
 last_updated: 2026-07-22

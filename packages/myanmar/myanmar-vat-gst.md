@@ -1,6 +1,6 @@
 ---
 name: myanmar-vat-gst
-description: Source-cited draft: vat / gst for Myanmar (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.
+description: "Source-cited draft: vat / gst for Myanmar (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: MM
 tax_year: 2025
 last_updated: 2026-08-22

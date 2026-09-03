@@ -10,7 +10,7 @@ Every AI can do tax math. None of them can stand behind an answer. Here, real ac
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
 <!-- oa-stats:start -->
-**1,819 Guides** across **232 jurisdictions** · **176 accountant-reviewed** · **42 named accountants** · **9,337 questions answered** through connected AIs
+**1,824 Guides** across **231 jurisdictions** · **176 accountant-reviewed** · **42 named accountants** · **9,345 questions answered** through connected AIs
 
 <sub>Live from openaccountants.com — updated 2026-09-03 by the nightly sync.</sub>
 <!-- oa-stats:end -->

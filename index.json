@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-03T09:19:43+00:00",
+ "generated_at": "2026-09-03T11:17:45+00:00",
  "counts": {
-  "guides": 1974,
+  "guides": 1979,
   "jurisdictions": 244,
   "accountant_reviewed": 171
  },
@@ -17275,6 +17275,30 @@
    "last_updated": "2026-09-02"
   },
   {
+   "slug": "za-assessed-loss-ring-fencing",
+   "path": "skills/international/south-africa/za-assessed-loss-ring-fencing.md",
+   "name": "za-assessed-loss-ring-fencing",
+   "jurisdiction": "ZA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-03"
+  },
+  {
+   "slug": "za-capital-gains-tables",
+   "path": "skills/international/south-africa/za-capital-gains-tables.md",
+   "name": "za-capital-gains-tables",
+   "jurisdiction": "ZA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "za-capital-gains",
    "path": "skills/international/south-africa/za-capital-gains.md",
    "name": "za-capital-gains",
@@ -17287,6 +17311,30 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "za-foreign-employment-exemption",
+   "path": "skills/international/south-africa/za-foreign-employment-exemption.md",
+   "name": "za-foreign-employment-exemption",
+   "jurisdiction": "ZA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-03"
+  },
+  {
+   "slug": "za-income-tax-tables",
+   "path": "skills/international/south-africa/za-income-tax-tables.md",
+   "name": "za-income-tax-tables",
+   "jurisdiction": "ZA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "za-income-tax",
    "path": "skills/international/south-africa/za-income-tax.md",
    "name": "za-income-tax",
@@ -17296,7 +17344,7 @@
    "verified_by": null,
    "reviewed_by": "Werner Britz",
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "za-provisional-tax",
@@ -17321,6 +17369,18 @@
    "reviewed_by": "Werner Britz",
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "za-travel-allowance-tables",
+   "path": "skills/international/south-africa/za-travel-allowance-tables.md",
+   "name": "za-travel-allowance-tables",
+   "jurisdiction": "ZA",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "za-vat-return",
