@@ -2,19 +2,20 @@
 name: za-capital-gains-tables
 description: >
   Year-keyed South African capital gains tax rate tables for natural persons, covering five years of assessment (2023 to 2027). Contains the annual exclusion, the increased exclusion in the year of death, the primary residence exclusion and the inclusion rate for individuals, together with the tax-free savings account annual and lifetime contribution limits and the excess contribution penalty rate. Use for any South African CGT exclusion or inclusion rate lookup, primary residence disposal, deceased estate, or tax-free savings account limit question, current or prior year.
-jurisdiction: ZA
-category: international
-tax_year: 2023
-tax_year_notes: "2022/23 to 2026/27 — SARS years of assessment 2023 to 2027"
-tier: 2
-last_updated: 2026-09-02
 version: 0.1
+jurisdiction: ZA
+last_updated: 2026-09-03
+review_status: pending_review
 depends_on:
   - foundation
-verified_by: pending
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # South Africa — Capital Gains Tax Rate Tables (natural persons)
+
+## South Africa — Capital Gains Tax Rate Tables (natural persons)
 
 Year-keyed CGT exclusions and inclusion rates for **natural persons**, years of
 assessment 2023 to 2027, plus the tax-free savings account limits. Data only: this
@@ -40,6 +41,8 @@ SARS numbers a year of assessment by the calendar year in which it **ends**. The
 year runs 1 March to the last day of February. So the year of assessment ending
 28 February 2027 is **YoA 2027**, and it is the year commonly written "2026/27".
 
+**Year of assessment labelling**  _(SARS numbers a year of assessment by the calendar year in which it ends.)_
+
 | Year of assessment | Commonly written | Period |
 | --- | --- | --- |
 | 2023 | 2022/23 | 1 March 2022 – 28 February 2023 |
@@ -48,9 +51,10 @@ year runs 1 March to the last day of February. So the year of assessment ending
 | 2026 | 2025/26 | 1 March 2025 – 28 February 2026 |
 | 2027 | 2026/27 | 1 March 2026 – 28 February 2027 |
 
+## How South African years of assessment are labelled
+
 Getting this wrong by one year is the single most common error in South African rate
 lookups. Every table below is keyed by **year of assessment**.
-
 
 ## Section 1 — Scope
 
@@ -66,9 +70,9 @@ Not covered here: inclusion rates for companies and trusts; base cost rules;
 the small business asset exclusion under s 10(1)(zJ); roll-overs; or any
 computation rule.
 
----
-
 ## Section 2 — CGT exclusions and inclusion rate (natural persons)
+
+**CGT exclusions and inclusion rate (natural persons)**  _([Income Tax Act 58 of 1962 s 26A; Eighth Schedule paras 5, 10 and 45. YoA 2027 confirmed against SARS, Capital Gains Tax (CGT) rate tables dated 25 February 2026: <https://www.sars.gov.za/tax-rates/income-tax/capital-gains-tax-cgt/>, 2026-09-02. Earlier years not re-checked.](https://www.sars.gov.za/tax-rates/income-tax/capital-gains-tax-cgt/))_
 
 | YoA | Annual exclusion | Annual exclusion (year of death) | Primary residence exclusion | Inclusion rate |
 | --- | --- | --- | --- | --- |
@@ -78,15 +82,11 @@ computation rule.
 | 2026 (2025/26) | R40,000 | R300,000 | R2,000,000 | 40% |
 | 2027 (2026/27) | R50,000 | R440,000 | R3,000,000 | 40% |
 
-_Source: Income Tax Act 58 of 1962 s 26A; Eighth Schedule paras 5, 10 and 45. YoA 2027 confirmed against SARS, Capital Gains Tax (CGT) rate tables dated 25 February 2026: <https://www.sars.gov.za/tax-rates/income-tax/capital-gains-tax-cgt/>, 2026-09-02. Earlier years not re-checked._
-
-**Effective rate.** The inclusion rate is 40% in every year in this file, so the
-maximum effective CGT rate for a natural person is 40% of the top marginal rate of
-45%, being 18%.
-
----
+- **Effective rate** — The inclusion rate is 40% in every year in this file, so the maximum effective CGT rate for a natural person is 40% of the top marginal rate of 45%, being 18%.  _(Income Tax Act 58 of 1962 s 26A; Eighth Schedule paras 5, 10 and 45.)_
 
 ## Section 3 — Tax-free savings accounts
+
+**Tax-free savings accounts**  _(Income Tax Act 58 of 1962 s 12T.)_
 
 | YoA | Annual contribution limit | Lifetime contribution limit | Penalty on excess |
 | --- | --- | --- | --- |
@@ -95,10 +95,6 @@ maximum effective CGT rate for a natural person is 40% of the top marginal rate 
 | 2025 (2024/25) | R36,000 | R500,000 | 40% |
 | 2026 (2025/26) | R36,000 | R500,000 | 40% |
 | 2027 (2026/27) | R46,000 | R500,000 | 40% |
-
-_Source: Income Tax Act 58 of 1962 s 12T._
-
----
 
 ## Section 4 — Edge cases and traps
 
@@ -126,8 +122,26 @@ _Source: Income Tax Act 58 of 1962 s 12T._
 3. **Inclusion rate is for natural persons only.** Companies and trusts differ and
    are out of scope here.
 
----
-
 ## Disclaimer
 
 > **General reference only.** This file is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. Do not rely on it to file, pay, amend or take a tax position without review by a qualified professional in South Africa.
+
+> Contributed by Brandon Iverach.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
