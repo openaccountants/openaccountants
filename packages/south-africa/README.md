@@ -7,15 +7,21 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `leaving-south-africa-tax-emigration.md`
-4. `south-africa-transfer-pricing.md`
-5. `south-africa-vat.md`
-6. `za-capital-gains.md`
-7. `za-income-tax.md`
-8. `za-provisional-tax.md`
-9. `za-tax-residency.md`
-10. `za-vat-return.md`
-11. `transfer-pricing-workflow-base.md`
+3. `cancelling-a-vat-registration-and-the-exit-vat-charge.md`
+4. `capital-gains-tax-rate-tables-2023-to-2027.md`
+5. `foreign-employment-income-exemption-section-10-1-o-ii.md`
+6. `income-tax-rate-tables-by-year-of-assessment-2023-to-2027.md`
+7. `leaving-south-africa-tax-emigration.md`
+8. `ring-fencing-of-assessed-losses-under-section-20a.md`
+9. `south-africa-transfer-pricing.md`
+10. `south-africa-vat.md`
+11. `travel-allowance-and-logbook-rate-tables-2023-to-2027.md`
+12. `za-capital-gains.md`
+13. `za-income-tax.md`
+14. `za-provisional-tax.md`
+15. `za-tax-residency.md`
+16. `za-vat-return.md`
+17. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

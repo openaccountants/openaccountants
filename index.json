@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-02T09:12:20+00:00",
+ "generated_at": "2026-09-03T09:19:43+00:00",
  "counts": {
-  "guides": 1966,
+  "guides": 1974,
   "jurisdictions": 244,
   "accountant_reviewed": 171
  },
@@ -13879,6 +13879,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "administrative-obligations-for-employers-in-the-netherlands",
+   "path": "skills/international/netherlands/administrative-obligations-for-employers-in-the-netherlands.md",
+   "name": "administrative-obligations-for-employers-in-the-netherlands",
+   "jurisdiction": "NL",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
+  },
+  {
    "slug": "netherlands-30-percent-ruling",
    "path": "skills/international/netherlands/netherlands-30-percent-ruling.md",
    "name": "netherlands-30-percent-ruling",
@@ -17155,6 +17167,54 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "cancelling-a-vat-registration-and-the-exit-vat-charge",
+   "path": "skills/international/south-africa/cancelling-a-vat-registration-and-the-exit-vat-charge.md",
+   "name": "cancelling-a-vat-registration-and-the-exit-vat-charge",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
+  },
+  {
+   "slug": "capital-gains-tax-rate-tables-2023-to-2027",
+   "path": "skills/international/south-africa/capital-gains-tax-rate-tables-2023-to-2027.md",
+   "name": "capital-gains-tax-rate-tables-2023-to-2027",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
+  },
+  {
+   "slug": "foreign-employment-income-exemption-section-10-1-o-ii",
+   "path": "skills/international/south-africa/foreign-employment-income-exemption-section-10-1-o-ii.md",
+   "name": "foreign-employment-income-exemption-section-10-1-o-ii",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
+  },
+  {
+   "slug": "income-tax-rate-tables-by-year-of-assessment-2023-to-2027",
+   "path": "skills/international/south-africa/income-tax-rate-tables-by-year-of-assessment-2023-to-2027.md",
+   "name": "income-tax-rate-tables-by-year-of-assessment-2023-to-2027",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
+  },
+  {
    "slug": "leaving-south-africa-tax-emigration",
    "path": "skills/international/south-africa/leaving-south-africa-tax-emigration.md",
    "name": "leaving-south-africa-tax-emigration",
@@ -17165,6 +17225,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-08-03"
+  },
+  {
+   "slug": "ring-fencing-of-assessed-losses-under-section-20a",
+   "path": "skills/international/south-africa/ring-fencing-of-assessed-losses-under-section-20a.md",
+   "name": "ring-fencing-of-assessed-losses-under-section-20a",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "south-africa-transfer-pricing",
@@ -17189,6 +17261,18 @@
    "reviewed_by": "Werner Britz",
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "travel-allowance-and-logbook-rate-tables-2023-to-2027",
+   "path": "skills/international/south-africa/travel-allowance-and-logbook-rate-tables-2023-to-2027.md",
+   "name": "travel-allowance-and-logbook-rate-tables-2023-to-2027",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "za-capital-gains",
@@ -19133,6 +19217,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-27"
+  },
+  {
+   "slug": "crypto-accounting",
+   "path": "skills/international/uk/crypto-accounting.md",
+   "name": "crypto-accounting",
+   "jurisdiction": "GB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-02"
   },
   {
    "slug": "property-management-2",

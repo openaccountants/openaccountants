@@ -45,8 +45,8 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **Receiving CPP disability pension** — EXEMPT from CPP  _(Canada Pension Plan Act s.12(1)(b))_
 - **CPP retirement, age 60-64** — MUST contribute (since 2012)  _(Canada Pension Plan Act s.12; CRA Schedule 8 notes)_
 - **CPP retirement, age 65-69** — MAY elect to stop (Form CPT30)  _(Canada Pension Plan Act s.12(1)(d); Form CPT30)_
-- **Line 7** — CPP on SE = (min(earnings, YMPE) − $3,500) × 11.9% − T4 CPP  _(CRA — Schedule 8 instructions — canada.ca)_
-- **Deduction** — 50% on line 22200  _(ITA s.60(e))_
+- **Line 7** — CPP on SE (base + first-additional only) = (min(earnings, YMPE) − $3,500) × 11.9% − T4 CPP; CPP2 (8% on earnings between YMPE $71,300 and YAMPE $81,200) is computed separately on Schedule 8 (or Form RC381)  _(CRA — Schedule 8 instructions — canada.ca)_
+- **Deduction** — Not a flat 50% — line 22200 deduction = employer-equivalent half of the BASE contribution (4.95% of the 9.9%) plus ALL enhancement (first-additional and CPP2) contributions; only the employee-equivalent half of the base is the line 30800 credit  _(ITA s.60(e))_
 
 ## Section 1 -- Quick reference
 
@@ -204,8 +204,8 @@ This is the deterministic pre-classifier for bank statement entries related to C
 
 ### 4.5 Tax treatment of self-employed CPP (Tier 1)
 
-- **CPP1 split** — Employer-equivalent half (50%) is a deduction from net income (line 22200). Employee-equivalent half (50%) is a non-refundable tax credit (line 30800, 15% federal credit).  _(Income Tax Act, s. 60(e), s. 118.7)_
-- **CPP2 split** — Employer-equivalent half (50%) is a deduction from net income (line 22215). Employee-equivalent half (50%) is a non-refundable tax credit (line 30800, 15% federal credit).  _(Income Tax Act, s. 60(e), s. 118.7)_
+- **CPP1 split** — Employer-equivalent half of the BASE contribution (4.95% of the 9.9%) is a deduction from net income (line 22200), together with ALL first-additional enhancement contributions. Only the employee-equivalent half of the BASE is a non-refundable tax credit (line 30800, 15% federal credit).  _(Income Tax Act, s. 60(e), s. 118.7)_
+- **CPP2 split** — CPP2 contributions (8% between YMPE and YAMPE) are DEDUCTIBLE, not creditable — no portion of CPP2 is a line 30800 credit.  _(Income Tax Act, s. 60(e), s. 118.7)_
 
 The deduction is more valuable at higher marginal rates. The credit is worth a flat 15% regardless of income.
 
@@ -322,12 +322,12 @@ Action Required: Do not advise. Refer to licensed Canadian CPA. Document gap.
 ### Test 1 -- Standard self-employed, mid-range income
 
 Input: Born 1985, Ontario resident, net self-employment income $50,000, no T4 income, no EI opt-in.
-Expected output: CPP1 = ($50,000 - $3,500) x 11.90% = $5,533.50. CPP2 = $0 (below YMPE). EI = $0 (not opted in). Line 22200 deduction = $2,766.75. Line 30800 credit base = $2,766.75.
+Expected output: CPP1 = ($50,000 - $3,500) x 11.90% = $5,533.50. CPP2 = $0 (below YMPE). EI = $0 (not opted in). Line 22200 deduction = $3,231.75 (half of base $2,301.75 + all first-additional $930.00). Line 30800 credit base = $2,301.75 (half of base only).
 
 ### Test 2 -- High-income, both ceilings hit
 
 Input: Born 1978, Alberta resident, net self-employment income $120,000, no T4 income.
-Expected output: CPP1 = $8,068.20 (capped). CPP2 = $792.00 (capped). Total CPP = $8,860.20. Line 22200 deduction = $4,430.10. Line 30800 credit base = $4,430.10.
+Expected output: CPP1 = $8,068.20 (capped). CPP2 = $792.00 (capped). Total CPP = $8,860.20. Deductions = $5,504.10 (half of base $3,356.10 + first-additional $1,356.00 + CPP2 $792.00). Line 30800 credit base = $3,356.10 (half of base only).
 
 ### Test 3 -- Income between YMPE and YAMPE
 

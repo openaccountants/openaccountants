@@ -29,22 +29,22 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **TP provision** — Section 247, ITA  _(ITA s.247; CRA — Transfer pricing — canada.ca)_
 - **Arm's length standard** — ITA s.247(2)  _(ITA s.247(2))_
 - **Recharacterization power** — ITA s.247(2)(b)(c)(d)  _(ITA s.247(2)(b)(c)(d))_
-- **Documentation threshold** — Aggregate transactions > CAD $1M with any single non-resident related party  _(ITA s.247(4); CRA — Transfer pricing memorandum TPM-09)_
+- **Documentation threshold** — CAD $1M aggregate with a single non-resident related party is the T106 FILING threshold — it is not an exemption from contemporaneous documentation under s.247(4)  _(ITA s.247(4); CRA — Transfer pricing memorandum TPM-09)_
 - **Timing** — By documentation-due date (tax return filing deadline)  _(ITA s.247(4)(a))_
 - **Provision to CRA on request** — 3 months (30 days for years beginning after 4 Nov 2025)  _(ITA s.247(4)(b); Finance Canada draft legislation Aug 2025)_
 - **Form T106** — If aggregate NR related-party transactions > $1M  _(ITA s.233.1; Form T106 instructions)_
 - **Form T106 deadline** — 6 months after taxation year-end  _(ITA s.233.1(4))_
 - **CbCR (Form RC4649)** — EUR 750M+ consolidated group revenue  _(ITA Part XVIII; Form RC4649 instructions)_
 - **CbCR deadline** — 12 months after fiscal year-end  _(ITA s.233.8(3))_
-- **TP penalty threshold** — The skill correctly states the threshold is being updated. For taxation years beginning BEFORE November 4, 2025: lesser of $5M or 10% of gross revenue. For years beginning AFTER November 4, 2025: lesser of $10M or 10% of gross revenue.  _(ITA s.247(3); Finance Canada draft legislation Aug 2025)_
-- **Penalty rate** — 10% of TP adjustment above threshold  _(ITA s.247(3))_
+- **TP penalty threshold** — Lesser of $10M or 10% of gross revenue for taxation years beginning on or after November 4, 2025 (Budget 2025); previously the lesser of $5M or 10% of gross revenue  _(ITA s.247(3); Finance Canada draft legislation Aug 2025)_
+- **Penalty rate** — 10% of the qualifying transfer-pricing NET adjustment (capital + income) once the threshold is exceeded — the threshold is a gate, not an amount subtracted  _(ITA s.247(3))_
 - **Reasonable efforts defence** — No penalty if reasonable efforts made  _(ITA s.247(3); CRA — IC 87-2R)_
 - **Documentation failure** — Deemed NOT reasonable efforts  _(ITA s.247(3)(b))_
 - **Late T106** — $25/day, min $100, max $2,500  _(ITA s.162(7); CRA)_
 - **Types** — Unilateral, Bilateral, Multilateral  _(CRA — Advance pricing arrangement — canada.ca; IC 94-4R)_
 - **Duration** — Typically 5 years prospective; rollback up to 5 prior years  _(CRA — IC 94-4R)_
-- **Application fee** — None  _(CRA — IC 94-4R)_
-- **Processing time** — 2–4 years (bilateral longer)  _(CRA — APA program statistics)_
+- **Application fee** — None for the regular APA program, but the taxpayer bears CRA's out-of-pocket costs (e.g. travel); the small-business APA stream charges a fixed fee (IC94-4R2)  _(CRA — IC 94-4R)_
+- **Processing time** — Directional only — bilateral APAs have recently averaged several years; cite the latest CRA MAP/APA Program Report figure  _(CRA — APA program statistics)_
 - **Formal safe harbour?** — None — Canada has no statutory TP safe harbour  _(ITA s.247; CRA — IC 87-2R)_
 - **Low-value services** — No formal rule; CRA may accept 5% cost-plus in low-risk  _(CRA — IC 87-2R; OECD TP Guidelines Chapter VII)_
 - **Form T106 de minimis** — ≤ $1M aggregate: no filing required  _(ITA s.233.1)_
@@ -75,7 +75,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 | Item | Detail |
 | --- | --- |
 | Required? | Yes, for all taxpayers with non-arm's length transactions with non-residents (where Form T106 filed) |
-| Threshold | Aggregate transactions > CAD 1 million with any single non-resident related party |
+| Threshold | T106 filing: aggregate transactions > CAD 1 million with any single non-resident related party (the documentation duty is not exempted below it) |
 | Timing | Must be prepared or obtained by the "documentation-due date" (tax return filing deadline) |
 | Content | Six prescribed items per s.247(4)(a): parties, terms, method, assumptions, comparable data, adjustments |
 | Provision to CRA | Within 3 months of written request (reducing to 30 days for years beginning after 4 Nov 2025) |
@@ -166,7 +166,7 @@ No statutory hierarchy. CRA accepts most appropriate method per OECD Guidelines.
 | Item | Detail |
 | --- | --- |
 | Trigger threshold | Net TP adjustment exceeds lesser of: CAD 5 million OR 10% of gross revenue (for taxation years beginning before 4 Nov 2025); lesser of CAD 10 million OR 10% of gross revenue (for taxation years beginning after 4 Nov 2025) |
-| Penalty rate | 10% of the TP adjustment amount exceeding the threshold |
+| Penalty rate | 10% of the net TP adjustment once the threshold is exceeded (the threshold is a gate, not subtracted) |
 | Reasonable efforts defence | No penalty if taxpayer made "reasonable efforts" to determine arm's length pricing |
 | Documentation impact | Failure to meet s.247(4) requirements = deemed NOT to have made reasonable efforts |
 
@@ -191,8 +191,8 @@ No statutory hierarchy. CRA accepts most appropriate method per OECD Guidelines.
 | Governing guidance | IC 94-4R (International Circular) |
 | Application | To CRA Competent Authority Division |
 | Duration | Typically 5 years prospective; rollback for up to 5 prior years |
-| Fees | No application fee |
-| Processing time | 2-4 years (bilateral takes longer) |
+| Fees | None for the regular program (taxpayer bears CRA out-of-pocket costs); fixed fee for the small-business stream |
+| Processing time | Several years for bilateral APAs -- see the latest CRA MAP/APA Program Report |
 | Annual compliance report | Required |
 | Key benefit | Eliminates penalty exposure for covered transactions |
 

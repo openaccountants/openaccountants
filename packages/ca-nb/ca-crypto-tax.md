@@ -26,22 +26,22 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 - **CRA treatment** — Commodity (not currency)  _(CRA — Cryptocurrency and your income tax obligations — canada.ca)_
 - **Cost basis method** — Weighted average cost (mandatory under ITA s.47)  _(ITA s.47; CRA — Adjusted cost base (ACB) — canada.ca)_
-- **First $250K of net gains** — 50% inclusion  _(ITA s.38(a); CRA — Capital gains — canada.ca)_
-- **Above $250K** — The 66.67% inclusion rate above $250K was CANCELLED. PM Carney announced cancellation March 21, 2025. Budget 2025 formally confirmed. The 50% inclusion rate applies to ALL net capital gains for 2025 — no $250K threshold distinction. Change to: '50% inclusion — same rate as first $250K; the proposed 66.67% increase was cancelled March 21, 2025.'  _(PM Carney announcement March 21, 2025 (pmc.gc.ca); Budget 2025 (canada.ca); CRA — Cancellation of proposed capital gains inclusion rate increase — canada.ca)_
+- **First $250K of net gains** — 50% inclusion — applies to ALL net capital gains; there is no $250K breakpoint (the proposed 66.67% increase was cancelled March 21, 2025)  _(ITA s.38(a); CRA — Capital gains — canada.ca)_
+- **Above $250K** — 50% inclusion — same rate as below $250K; the proposed 66.67% increase was cancelled March 21, 2025 and Budget 2025 confirmed the cancellation  _(PM Carney announcement March 21, 2025 (pmc.gc.ca); Budget 2025 (canada.ca); CRA — Cancellation of proposed capital gains inclusion rate increase — canada.ca)_
 - **Corporations/trusts** — The 66.67% rate for corporations/trusts was also CANCELLED. The 50% inclusion rate applies to all capital gains for corporations and most trusts in 2025. Change to: '50% on all gains — the proposed 66.67% rate was cancelled.'  _(PM Carney announcement March 21, 2025; Budget 2025 (canada.ca); CRA capital gains cancellation notice)_
 - **Sell for fiat** — YES — disposition  _(CRA — crypto guidance; ITA s.39)_
 - **Crypto-to-crypto swap** — YES — barter transaction  _(CRA — crypto guidance; ITA s.39)_
 - **Purchase goods/services** — YES — at FMV  _(CRA — crypto guidance)_
-- **Gift crypto** — YES — deemed disposition at FMV  _(ITA s.69(1)(b))_
+- **Gift crypto** — Deemed disposition at FMV — except a transfer to a spouse/common-law partner (or qualifying spousal trust), which rolls over at ACB unless the taxpayer elects out (ITA s.73)  _(ITA s.69(1)(b))_
 - **Transfer between own wallets** — NO — same beneficial owner  _(CRA — crypto guidance)_
-- **Death** — YES — deemed disposition at FMV  _(ITA s.70(5))_
-- **Window** — 30 days before or after sale  _(ITA s.40(2)(g); ITA s.54 (definition of superficial loss))_
+- **Death** — Deemed disposition at FMV (s.70(5)) — except a rollover to a surviving spouse/common-law partner or qualifying spousal trust, which defers the gain (s.70(6))  _(ITA s.70(5))_
+- **Window** — 30 days before to 30 days after the disposition — AND you or an affiliated person must still own (or have a right to acquire) the same or identical property at the end of that period (s.54; loss denied under s.40(2)(g)(i))  _(ITA s.40(2)(g); ITA s.54 (definition of superficial loss))_
 - **Effect** — Loss denied; added to ACB of repurchased property  _(ITA s.53(1)(f))_
 - **Staking — active business** — T2125 business income at FMV  _(ITA s.9; CRA — crypto guidance)_
-- **Staking — passive** — Other income Line 13000  _(ITA s.12(1)(c); CRA — crypto guidance)_
+- **Staking — passive** — Commonly other income (line 13000) at FMV when received, but CRA has issued no definitive staking guidance — characterization and timing are facts-dependent and can be business income  _(ITA s.12(1)(c); CRA — crypto guidance)_
 - **Mining — business scale** — Business income at FMV; expenses deductible  _(ITA s.9; CRA — crypto guidance)_
 - **Mining — hobby** — $0 ACB; CGT on disposition  _(CRA — crypto guidance)_
-- **Buying/selling crypto for fiat** — No GST/HST (financial instrument)  _(ETA Schedule V Part VII (financial services); CRA — GST/HST and cryptocurrency)_
+- **Buying/selling crypto for fiat** — No GST/HST for a 'virtual payment instrument' (BTC/ETH-type; exempt financial instrument under the ETA since 2021); utility or security tokens failing the VPI definition can be taxable supplies — analyse the token type  _(ETA Schedule V Part VII (financial services); CRA — GST/HST and cryptocurrency)_
 - **Using crypto to buy taxable goods** — GST/HST applies to the goods  _(ETA s.153; CRA — GST/HST and cryptocurrency)_
 - **Period** — 6 years from end of tax year  _(ITA s.230(4))_
 
@@ -132,10 +132,10 @@ A disposition occurs when:
 | Sell crypto for CAD (or fiat) | Yes |
 | Trade crypto for another crypto | Yes -- barter transaction |
 | Use crypto to purchase goods/services | Yes -- at FMV |
-| Gift crypto | Yes -- deemed disposition at FMV |
+| Gift crypto | Yes -- FMV (spousal transfers roll over at ACB unless elected out) |
 | Donate crypto to registered charity | Yes -- but donation receipt at FMV; no capital gain if donated to qualified donee (proposed) |
 | Transfer between own wallets | No -- same beneficial owner |
-| Death of taxpayer | Yes -- deemed disposition at FMV |
+| Death of taxpayer | Yes -- FMV (spousal/spousal-trust rollover defers the gain, s.70(6)) |
 
 ### 2.3 Adjusted Cost Base (ACB) Tracking
 
@@ -255,7 +255,7 @@ A disposition occurs when:
 
 ### Step 4: Check Superficial Loss Rule
 
-- **Step 4** — Deny any loss where same crypto was reacquired within 30-day window.
+- **Step 4** — Deny any loss where you or an affiliated person reacquired the same crypto within the 30-day window and still hold it at the end of that period.
 
 ### Step 5: Apply Inclusion Rate
 
@@ -312,7 +312,7 @@ CRA requires:
 
 ### 6.6 Death
 
-- **Death** — Deemed disposition at FMV immediately before death. Capital gains included in terminal return. Beneficiary acquires at FMV as their ACB.
+- **Death** — Deemed disposition at FMV immediately before death (s.70(5)); capital gains included in the terminal return and the beneficiary acquires at FMV as their ACB. A rollover to a surviving spouse/common-law partner or qualifying spousal trust defers the gain (s.70(6)).
 
 ## Section 7 -- Prohibitions
 

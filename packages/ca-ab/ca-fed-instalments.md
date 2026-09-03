@@ -35,8 +35,8 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **No-calculation (CRA suggested)** — Q1,Q2: ¼ of 2-years-prior NTO; Q3,Q4: (prior NTO − Q1 − Q2) / 2  _(CRA — Instalment calculation methods — canada.ca; ITA s.156(1))_
 - **Prior-year method** — Each quarter = prior year NTO / 4  _(CRA — Instalment calculation methods — canada.ca)_
 - **Current-year method** — Each quarter = estimated current NTO / 4 (interest risk)  _(CRA — Instalment calculation methods — canada.ca)_
-- **Interest guarantee** — Methods 1 and 2 guarantee no interest; Method 3 carries risk  _(CRA — Instalment interest — canada.ca; ITA s.161(2))_
-- **Interest formula** — CRA prescribed rate + 2%, compounded daily  _(ITA s.161(2); CRA — Prescribed interest rates — canada.ca)_
+- **Interest guarantee** — Only the CRA no-calculation option is interest-proof (pay the amounts on the instalment reminders in full by each due date); the prior-year and current-year options avoid interest only if the amounts paid turn out high enough  _(CRA — Instalment interest — canada.ca; ITA s.161(2))_
+- **Interest formula** — Overdue-taxes prescribed rate (base rate + 4 percentage points), compounded daily  _(ITA s.161(2); CRA — Prescribed interest rates — canada.ca)_
 - **Penalty trigger** — Instalment interest > $1,000  _(ITA s.163.1)_
 - **Penalty formula** — Penalty = 50% × (instalment interest − max($1,000, 25% × interest had no payments been made)) THEN THIS AMOUNT IS DIVIDED BY 2.  _(ITA s.163.1)_
 - **Farming/fishing** — Single instalment by Dec 31 = 2/3 of estimated or prior year NTO  _(ITA s.155; CRA — Instalments for farmers and fishers — canada.ca)_
@@ -76,7 +76,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 
 | Ambiguity | Default |
 | --- | --- |
-| Method selection | Use no-calculation (CRA suggested) or prior-year -- both guarantee no interest |
+| Method selection | Use no-calculation (pay the CRA reminder amounts -- the only interest-proof option); prior-year avoids interest only if the amounts prove sufficient |
 | Quebec resident | Federal threshold $1,800 (provincial administered separately by Revenu Quebec) |
 | Farming/fishing income | Single annual instalment by December 31 may apply |
 | First year of SE | May not meet two-year threshold -- check both prior years |
@@ -167,7 +167,7 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 **Input:** 2024 net tax owing = $28,000.
 
-**Output:** Each quarter = $28,000 / 4 = $7,000. Total = $28,000. No interest guaranteed.
+**Output:** Each quarter = $28,000 / 4 = $7,000. Total = $28,000. No instalment interest only if these amounts prove sufficient — only the no-calculation option is interest-proof.
 
 ### Example 3 -- Below threshold
 
@@ -210,11 +210,11 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 - Each quarter = estimated 2025 net tax owing / 4
 - Interest risk if estimate too low
 
-Methods 1 and 2 guarantee no instalment interest. Method 3 carries risk.
+Only Method 1 (no-calculation) guarantees no instalment interest. Methods 2 and 3 avoid interest only if the amounts paid turn out high enough.
 
 ### 5.4 Instalment interest
 
-- **Instalment interest** — Interest on shortfall = CRA prescribed rate + 2%, compounded daily, from due date to payment date or April 30 balance-due date. Overpayment in one quarter offsets underpayment in another (contra interest).
+- **Instalment interest** — Interest on shortfall = overdue-taxes prescribed rate (base rate + 4 percentage points), compounded daily, from due date to payment date or April 30 balance-due date. Overpayment in one quarter offsets underpayment in another (contra interest).
 
 ### 5.5 Instalment penalty
 

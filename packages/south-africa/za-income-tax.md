@@ -31,25 +31,25 @@ Reviewed against the cited tax authorities by Werner Britz on 2026-06-12. Items 
 - **Tax year** — 1 March - 28 February  _(Income Tax Act s 1, definition)_
 - **Return form** — ITR12
 - **Provisional tax** — IRP6 (1st: 31 Aug, 2nd: last day Feb, 3rd voluntary: 30 Sep)  _(Income Tax Act Fourth Schedule)_
-- **Primary rebate** — 2026/27 year of assessment: R17,820. 2025/26 was R17,235 but we are now in YOA 2027 from 1 March 2026. All rebates and thresholds in the skill need to be updated to 2026/27.  _(SARS Budget 2026 Tax Guide)_
-- **Secondary rebate (65+)** — 2026/27: R9,768.  _(SARS Budget 2026 Tax Guide)_
-- **Tertiary rebate (75+)** — 2026/27: R3,252.  _(SARS Budget 2026 Tax Guide)_
+- **Primary rebate** — 2026/27 (YoA 2027): R17,820.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **Secondary rebate (65+)** — 2026/27: R9,765.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **Tertiary rebate (75+)** — 2026/27: R3,249.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 - **Retirement fund deduction** — Cap increased from R350,000 to R430,000 for years of assessment commencing on or after 1 March 2026 (Budget 2026). The 27.5% rate and "greater of remuneration or taxable income" base remain.  _(Income Tax Act s 11F; SARS Budget 2026 Tax Guide)_
 - **Turnover tax** — Turnover limit increased to R2,300,000 from 1 March 2026 (aligned with new VAT registration threshold). Brackets also moved - see Section 1 turnover tax row below.  _(Income Tax Act Sixth Schedule; SARS Budget 2026 Tax Guide)_
 - **Contributor** — Open Accountants Community
 
 Update after sign-off by Werner Britz CA(SA).
 
-- **R1 - R237,100 (skill)** — 2026/27: R1 - R245,200 at 18%. Brackets adjusted by approximately 3.4% for inflation.  _(SARS Budget 2026 Tax Guide)_
-- **R237,101 - R370,500 (skill)** — 2026/27: R245,201 - R383,000. Tax R44,136 + 26% of excess.  _(SARS Budget 2026 Tax Guide)_
-- **R370,501 - R512,800** — 2026/27: R383,001 - R530,200. Tax R79,884 + 31%.  _(SARS Budget 2026 Tax Guide)_
-- **R512,801 - R673,000** — 2026/27: R530,201 - R695,800. Tax R125,516 + 36%.  _(SARS Budget 2026 Tax Guide)_
-- **R673,001 - R857,900** — 2026/27: R695,801 - R887,100. Tax R185,132 + 39%.  _(SARS Budget 2026 Tax Guide)_
-- **R857,901 - R1,817,000** — 2026/27: R887,101 - R1,878,300. Tax R259,739 + 41%.  _(SARS Budget 2026 Tax Guide)_
-- **R1,817,001+** — 2026/27: R1,878,301+. Tax R666,131 + 45%.  _(SARS Budget 2026 Tax Guide)_
+- **R1 - R237,100 (skill)** — 2026/27 (YoA 2027): R1 - R245,100 at 18%.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **R237,101 - R370,500 (skill)** — 2026/27: R245,101 - R383,100. Tax R44,118 + 26% of excess above R245,100.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **R370,501 - R512,800** — 2026/27: R383,101 - R530,200. Tax R79,998 + 31% of excess above R383,100.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **R512,801 - R673,000** — 2026/27: R530,201 - R695,800. Tax R125,599 + 36% of excess above R530,200.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **R673,001 - R857,900** — 2026/27: R695,801 - R887,000. Tax R185,215 + 39% of excess above R695,800.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **R857,901 - R1,817,000** — 2026/27: R887,001 - R1,878,600. Tax R259,783 + 41% of excess above R887,000.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **R1,817,001+** — 2026/27: R1,878,601+. Tax R666,339 + 45% of excess above R1,878,600.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 - **Below 65** — 2026/27: R99,000.  _(SARS Budget 2026 Tax Guide)_
-- **65 - 74** — 2026/27: R153,278.  _(SARS Budget 2026 Tax Guide)_
-- **75+** — 2026/27: R171,355.  _(SARS Budget 2026 Tax Guide)_
+- **65 - 74** — 2026/27: R153,250.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
+- **75+** — 2026/27: R171,300.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 - **Main member monthly** — 2026/27: R376.  _(SARS Budget 2026 Tax Guide)_
 - **First dependant monthly** — 2026/27: R376.  _(SARS Budget 2026 Tax Guide)_
 - **Each additional monthly** — 2026/27: R254.  _(SARS Budget 2026 Tax Guide)_
@@ -121,7 +121,7 @@ Complete bookkeeping, prior year ITR12, IT34 (assessment), asset register
 
 ### Example 1: Mid-range
 
-Computation is logically right for 2025/26 rates but uses old brackets and rebates. Re-run on 2026/27 rates: net profit R420k; s 11F = 27.5% x R420k = R115,500 (within R430k cap); taxable R304,500; tax R44,136 + 26% x (R304,500 - R245,200) = R44,136 + R15,418 = R59,554; less rebate R17,820 = R41,734; less medical credit R9,024 (R376 x 2 x 12) = R32,710; less provisional R40,000 = refund R7,290.
+Computation re-run on 2026/27 SARS rates: net profit R420k; s 11F = 27.5% x R420k = R115,500 (within cap); taxable R304,500; tax R44,118 + 26% x (R304,500 - R245,100) = R44,118 + R15,444 = R59,562; less rebate R17,820 = R41,742; less medical credit R9,024 (R376 x 2 x 12) = R32,718; less provisional R40,000 = refund R7,282.
 
 ### Example 2: Turnover tax
 
@@ -141,7 +141,7 @@ See critical finding #8. s 23(m) does not block entertainment for sole proprieto
 
 ### 5.2 Rebates
 
-- **5.2 Rebates** — 2026/27: Primary R17,820; Secondary R9,768 (additional, total 65+ = R27,588); Tertiary R3,252 (additional, total 75+ = R30,840). Credits against tax confirmed.  _(Income Tax Act s 6; SARS Budget 2026 Tax Guide)_
+- **5.2 Rebates** — 2026/27: Primary R17,820; Secondary R9,765 (additional, total 65+ = R27,585); Tertiary R3,249 (additional, total 75+ = R30,834). Credits against tax.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 
 ### 5.3 Interest exemption
 
@@ -405,7 +405,7 @@ Standard wording.
 
 ### MISSING: s 20 - Assessed losses (and ring-fencing s 20A)
 
-- **MISSING: s 20 - Assessed losses (and ring-fencing s 20A)** — Section 20: assessed losses from a trade carry forward to subsequent years and may be set off against future income from any trade (subject to s 20(2A) requirement that the taxpayer carries on the trade in the year of set-off, OR an exception applies). For COMPANIES, the s 20 loss set-off is now limited to the greater of R1m and 80% of taxable income before set-off (effective for years commencing on or after 1 April 2022). This 80% cap does NOT apply to natural persons (sole props). Section 20A: RING-FENCING for natural persons. High-income individuals (taxable income before set-off above the top marginal rate threshold - currently R1,878,300 for 2026/27) engaged in certain "suspect trades" or trades that have shown losses in 3 of the last 5 years are subject to ring-fencing: the loss can only be set off against future profits from the same trade, not other income. Suspect trades include: farming, animal-showing, rental of residential property, sport, art, racing, gambling, dealing in collectibles, rental of vehicles, aircraft or boats. Important for high-income sole props with side activities.  _(Income Tax Act s 20 and s 20A)_
+- **MISSING: s 20 - Assessed losses (and ring-fencing s 20A)** — Section 20: assessed losses from a trade carry forward to subsequent years and may be set off against future income from any trade (subject to s 20(2A) requirement that the taxpayer carries on the trade in the year of set-off, OR an exception applies). For COMPANIES, the s 20 loss set-off is now limited to the greater of R1m and 80% of taxable income before set-off (effective for years commencing on or after 1 April 2022). This 80% cap does NOT apply to natural persons (sole props). Section 20A: RING-FENCING for natural persons. High-income individuals (taxable income before set-off above the top marginal rate threshold - currently R1,878,600 for 2026/27) engaged in certain "suspect trades" or trades that have shown losses in 3 of the last 5 years are subject to ring-fencing: the loss can only be set off against future profits from the same trade, not other income. Suspect trades include: farming, animal-showing, rental of residential property, sport, art, racing, gambling, dealing in collectibles, rental of vehicles, aircraft or boats. Important for high-income sole props with side activities.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 
 ### MISSING: Tax residence
 
@@ -469,7 +469,7 @@ Standard wording.
 
 ## Section 1 -- Quick reference
 
-**Quick reference field table**
+**Quick reference field table**  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 
 | Field | Value |
 | --- | --- |
@@ -484,33 +484,33 @@ Standard wording.
 | Return form | ITR12 |
 | Provisional tax | IRP6 (1st: 31 Aug, 2nd: last day Feb, 3rd voluntary: 30 Sep) |
 | Primary rebate | R17,820 |
-| Secondary rebate (65+) | R9,768 |
-| Tertiary rebate (75+) | R3,252 |
+| Secondary rebate (65+) | R9,765 |
+| Tertiary rebate (75+) | R3,249 |
 | Retirement fund deduction | 27.5% of greater of remuneration/taxable income, cap R430,000 |
 | Turnover tax | Available for non-professional services, turnover up to R2,300,000 |
 | Contributor | Open Accountants Community |
 | Validated by | Werner Britz CA(SA), Spurwing CFO |
 | Validation date | May 2026 |
 
-**Progressive tax table (2026/2027 year of assessment)**
+**Progressive tax table (2026/2027 year of assessment)**  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 
 | Taxable income (ZAR) | Rate |
 | --- | --- |
-| 1--245,200 | 18% |
-| 245,201--383,000 | R44,136 + 26% above R245,200 |
-| 383,001--530,200 | R79,884 + 31% above R383,000 |
-| 530,201--695,800 | R125,516 + 36% above R530,200 |
-| 695,801--887,100 | R185,132 + 39% above R695,800 |
-| 887,101--1,878,300 | R259,739 + 41% above R887,100 |
-| 1,878,301+ | R666,131 + 45% above R1,878,300 |
+| 1--245,100 | 18% |
+| 245,101--383,100 | R44,118 + 26% above R245,100 |
+| 383,101--530,200 | R79,998 + 31% above R383,100 |
+| 530,201--695,800 | R125,599 + 36% above R530,200 |
+| 695,801--887,000 | R185,215 + 39% above R695,800 |
+| 887,001--1,878,600 | R259,783 + 41% above R887,000 |
+| 1,878,601+ | R666,339 + 45% above R1,878,600 |
 
-**Tax thresholds (below = no tax)**
+**Tax thresholds (below = no tax)**  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 
 | Age | Threshold |
 | --- | --- |
 | Below 65 | R99,000 |
-| 65--74 | R153,278 |
-| 75+ | R171,355 |
+| 65--74 | R153,250 |
+| 75+ | R171,300 |
 
 **Medical tax credits (s6A, 2026/2027)**  _(s6A)_
 
@@ -682,7 +682,7 @@ Standard wording.
 ### Example 1 -- Standard self-employed, mid-range
 
 **Input:** Age 35, revenue R600,000, expenses R180,000, RA R80,000, medical R3,500/mo (main + 1 dependant), provisional paid R40,000.
-**Computation:** Net profit R420,000. s11F = 27.5% x R420,000 = R115,500 (within R430,000 cap). Taxable = R304,500. Tax = R44,136 + 26% x R59,300 = R59,554. Less rebate R17,820. Less medical credit R9,024 (R376 x 2 x 12). Net = R32,710. Less provisional R40,000. Refund R7,290.
+**Computation:** Net profit R420,000. s11F = 27.5% x R420,000 = R115,500 (within cap). Taxable = R304,500. Tax = R44,118 + 26% x R59,400 = R59,562. Less rebate R17,820. Less medical credit R9,024 (R376 x 2 x 12). Net = R32,718. Less provisional R40,000. Refund R7,282.
 
 ### Example 2 -- Turnover tax
 
@@ -706,7 +706,7 @@ Standard wording.
 
 ### 5.2 Rebates
 
-- **Rebates** — Primary R17,820 (all). Secondary R9,768 (65+). Tertiary R3,252 (75+). Credits against tax, not deductions from income.  _(s6)_
+- **Rebates** — Primary R17,820 (all). Secondary R9,765 (65+). Tertiary R3,249 (75+). Credits against tax, not deductions from income.  _([SARS — Rates of Tax for Individuals, 2027 tax year (read 2026-09-02)](https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/))_
 
 ### 5.3 Interest exemption
 

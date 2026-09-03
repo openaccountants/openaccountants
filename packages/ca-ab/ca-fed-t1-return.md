@@ -50,7 +50,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **Payment due** — April 30 (interest from May 1)  _(ITA s.156.1(1); CRA — Paying income tax — canada.ca)_
 - **Late filing penalty** — 5% + 1%/month (max 12)  _(ITA s.162(1))_
 - **Repeat offender penalty** — 10% + 2%/month (max 20)  _(ITA s.162(2))_
-- **Net tax owing threshold** — > $3,000 current year AND either of two prior years  _(ITA s.156(1); CRA — Instalments for individuals — canada.ca)_
+- **Net tax owing threshold** — > $3,000 in the current year AND either of the two prior years ($1,800 for Quebec residents)  _(ITA s.156(1); CRA — Instalments for individuals — canada.ca)_
 
 ## Section 1 -- Quick Reference
 
@@ -206,7 +206,7 @@ The T1 skill consumes outputs from the T2125 skill (net business income) and T-s
 
 ### 5.5 Instalment Requirements
 
-- **Instalment Requirements** — Required if net tax owing > $3,000 in current year AND either of two prior years. Due: March 15, June 15, September 15, December 15.
+- **Instalment Requirements** — Required if net tax owing > $3,000 ($1,800 for Quebec residents) in the current year AND either of the two prior years. Due: March 15, June 15, September 15, December 15.
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 

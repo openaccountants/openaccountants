@@ -28,8 +28,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Federal GST rate | 5% |
 | HST rates by province | ON 13%, NS 14% (effective Apr 1 2025), NB 15%, NL 15%, PE 15% |
 | GST-only provinces | AB, BC, SK, MB, QC, NT, NU, YT (5% GST; BC/SK/MB/QC have separate provincial sales taxes) |
-| Zero rate | 0% (basic groceries, prescription drugs, medical devices, exports) |
-| Exempt | Financial services, residential rent, most health/dental/legal aid, childcare |
+| Zero rate | 0% (basic groceries, prescription drugs, medical devices, qualifying exports (Schedule VI conditions)) |
+| Exempt | Financial services, long-term residential rent, most health/dental/legal aid, childcare |
 | Return form | GST34 (GST/HST Return for Registrants) |
 | Filing portal | CRA My Business Account (canada.ca) |
 | Authority | Canada Revenue Agency (CRA) |
@@ -427,7 +427,7 @@ Fuel purchase. In Canada, there is no blanket block on vehicle expenses (unlike 
 
 ### 5.5 Exempt supplies (ETA Schedule V)
 
-- **Exempt supplies** — Financial services (Part VII), residential rent (Part I), health care services (Part II — but only listed services), educational services (Part III), childcare (Part IV), legal aid (Part V), public sector (Part VI). Exempt means no GST/HST charged and NO ITC on related inputs. If exempt supplies are significant → mixed-use apportionment required.  _(ETA Schedule V)_
+- **Exempt supplies** — Financial services (Part VII; certain supplies to non-residents are zero-rated), long-term residential rent (Part I — short-term accommodation under one month and sales of new housing are taxable), health care services (Part II — but only listed services), educational services (Part III), childcare (Part IV), legal aid (Part V), public sector (Part VI). Exempt means no GST/HST charged and NO ITC on related inputs. If exempt supplies are significant → mixed-use apportionment required.  _(ETA Schedule V)_
 
 ### 5.6 Input tax credits (ETA s.169)
 
@@ -456,7 +456,7 @@ Fuel purchase. In Canada, there is no blanket block on vehicle expenses (unlike 
 
 ### 5.12 Small supplier threshold (ETA s.148)
 
-- **Small supplier threshold** — $30,000 in any single calendar quarter or in four consecutive calendar quarters  _(ETA s.148)_
+- **Small supplier threshold** — $30,000 in any single calendar quarter or over four consecutive calendar quarters — measured on the worldwide taxable supplies (before expenses) of the person AND associated persons; excludes capital property, financial services, and goodwill on the sale of a business. Small-supplier status is lost immediately on exceeding $30,000 in a single quarter  _(ETA s.148)_
 - **Small supplier registration rule** — Below threshold: no obligation to register or charge GST/HST (but may voluntarily register). Above threshold: must register within 29 days.  _(ETA s.148)_
 
 ### 5.13 Bad debts (ETA s.231)

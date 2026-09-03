@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1966 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1974 guides, 244 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1288,6 +1288,7 @@ https://www.openaccountants.com
 - nepal-payroll | NP | tier 1 | reviewed_by Ashish Bista
 - nepal-tds | NP | tier 1 | reviewed_by Ashish Bista
 - nepal-vat | NP | tier 1 | reviewed_by Ashish Bista
+- administrative-obligations-for-employers-in-the-netherlands | NL | tier 2 | reviewed_by -
 - netherlands-30-percent-ruling | NL | tier 2 | reviewed_by -
 - netherlands-bookkeeping | NL | tier 2 | reviewed_by -
 - netherlands-crypto-tax | NL | tier 2 | reviewed_by -
@@ -1561,9 +1562,15 @@ https://www.openaccountants.com
 - so-payroll-social | SO | tier 2 | reviewed_by -
 - so-tax-overview | SO | tier 2 | reviewed_by -
 - so-vat-gst | SO | tier 2 | reviewed_by -
+- cancelling-a-vat-registration-and-the-exit-vat-charge | ZA | tier 2 | reviewed_by -
+- capital-gains-tax-rate-tables-2023-to-2027 | ZA | tier 2 | reviewed_by -
+- foreign-employment-income-exemption-section-10-1-o-ii | ZA | tier 2 | reviewed_by -
+- income-tax-rate-tables-by-year-of-assessment-2023-to-2027 | ZA | tier 2 | reviewed_by -
 - leaving-south-africa-tax-emigration | ZA | tier 2 | reviewed_by -
+- ring-fencing-of-assessed-losses-under-section-20a | ZA | tier 2 | reviewed_by -
 - south-africa-transfer-pricing | ZA | tier 2 | reviewed_by Werner Britz
 - south-africa-vat | ZA | tier 1 | reviewed_by Werner Britz
+- travel-allowance-and-logbook-rate-tables-2023-to-2027 | ZA | tier 2 | reviewed_by -
 - za-capital-gains | ZA | tier 2 | reviewed_by Werner Britz
 - za-income-tax | ZA | tier 1 | reviewed_by Werner Britz
 - za-provisional-tax | ZA | tier 1 | reviewed_by Werner Britz
@@ -1726,6 +1733,7 @@ https://www.openaccountants.com
 - ug-tax-overview | UG | tier 2 | reviewed_by -
 - uganda-vat | UG | tier 2 | reviewed_by -
 - close-the-uk-vat-quarter-from-xero | GB | tier 2 | reviewed_by -
+- crypto-accounting | GB | tier 2 | reviewed_by -
 - property-management-2 | GB | tier 2 | reviewed_by -
 - real-estate-and-property | GB | tier 2 | reviewed_by -
 - references | GB | tier 2 | reviewed_by -

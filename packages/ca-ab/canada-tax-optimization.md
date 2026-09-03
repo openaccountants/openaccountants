@@ -40,12 +40,12 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **RESP CESG** — $2,500/year to maximise $500 grant  _(ITA s.146.1; Canada Education Savings Act)_
 - **Class 1** — 4% — Buildings  _(ITR Schedule II Class 1)_
 - **Class 8** — 20% — Furniture, equipment  _(ITR Schedule II Class 8)_
-- **Class 10** — 30% — Motor vehicles (Class 10.1 threshold $38,000 before tax for vehicles acquired on or after 1 Jan 2025)  _(Dept. of Finance — 2025 Automobile Deduction Limits (Jan 2025); CRA — Classes of depreciable property)_
+- **Class 10** — 30% — Motor vehicles. Passenger-vehicle Class 10.1 cost limit $38,000 + tax for 2025 acquisitions, $39,000 + tax for 2026; Class 10 itself has no per-vehicle cap  _(Dept. of Finance — 2025 Automobile Deduction Limits (Jan 2025); CRA — Classes of depreciable property)_
 - **Class 10.1** — 30% — Passenger vehicles over cost limit  _(ITR Schedule II Class 10.1; CRA — classes of depreciable property)_
 - **Class 12** — 100% — Computer software, tools <$500  _(ITR Schedule II Class 12)_
 - **Class 50** — 55% — Computer hardware  _(ITR Schedule II Class 50)_
-- **Class 54** — Class 54 is NOT '0% (expensed)' — the rate is 30% declining balance for zero-emission passenger vehicles, with enhanced first-year deductions under AIIP/RIIP rules. The $61,000 cost cap is correct. The skill's '0% (expensed)' description is misleading.  _(ITR Schedule II Class 54; CRA — classes of depreciable property — canada.ca)_
-- **Child care** — $8,000/child under 7; $5,000/child 7–16  _(ITA s.63(3))_
+- **Class 54** — 30% declining balance — zero-emission passenger vehicles (cost cap $61,000 + tax), with enhanced first-year deductions under AIIP/RIIP  _(ITR Schedule II Class 54; CRA — classes of depreciable property — canada.ca)_
+- **Child care** — $8,000/child under 7; $5,000/child 7–16; $11,000 for a child eligible for the disability tax credit  _(ITA s.63(3))_
 - **Medical expenses** — Medical expense credit rate for 2025 is 15% (NRTC). Threshold: amounts over the lesser of 3% of net income or $2,834(threshold for 2025)  _(ITA s.118.2; CRA — Medical expenses — canada.ca; Bill C-4 (14.5% credit rate for 2025))_
 - **Moving expenses** — Must move ≥ 40 km closer to new work location  _(ITA s.62)_
 - **LCGE (QSBC shares)** — $1,250,000  _(ITA s.110.6(2); Budget 2024; CRA — LCGE — canada.ca)_
@@ -79,8 +79,8 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 
 | Taxable Income (CAD) | Rate |
 | --- | --- |
-| 0 – 57,375 | 14% |
-| 57,376 – 114,750 | 20.5% |
+| 0 – 58,523 | 14% |
+| 58,524 – 117,045 | 20.5% |
 | 117,045 – 181,440 | 26% |
 | 181,440 – 258,482 | 29% |
 | 258,482+ | 33% |
@@ -133,7 +133,7 @@ Note: The lowest bracket rate was reduced to 14% (from 15%) effective 2026 via B
 | Capital cost allowance (CCA) on rental property | s 20(1)(a), Sch II | Class 1 (4%), Class 8 (20%). Accelerated Investment Incentive (triple declining balance in year 1) |
 | Apprentice mechanic tools | s 8(1)(s) | Cost exceeding $1,368 (2026 indexed) |
 | Union/professional dues | s 8(1)(i) | Full deduction |
-| Child care expenses | s 63 | $8,000/child under 7; $5,000/child 7–16. Must be claimed by lower-income spouse (exceptions apply) |
+| Child care expenses | s 63 | $8,000/child under 7; $5,000/child 7–16; $11,000 if DTC-eligible. Must be claimed by lower-income spouse (exceptions apply) |
 
 ## Section 4 — Capital Allowances Optimization
 
@@ -149,7 +149,7 @@ Note: The lowest bracket rate was reduced to 14% (from 15%) effective 2026 via B
 | --- | --- | --- |
 | 1 | 4% | Buildings acquired after 1987 |
 | 8 | 20% | Furniture, fixtures, equipment, machinery |
-| 10 | 30% | Motor vehicles (passenger vehicle Class 10.1 threshold $38,000 before tax for 2025 acquisitions) |
+| 10 | 30% | Motor vehicles (passenger vehicle Class 10.1 cost limit $38,000 + tax for 2025 acquisitions, $39,000 + tax for 2026) |
 | 10.1 | 30% | Passenger vehicles over cost limit (separate class per vehicle) |
 | 12 | 100% | Computer software, tools <$500 |
 | 50 | 55% | Computer hardware and systems software |

@@ -24,16 +24,16 @@ Reviewed against the cited tax authorities by Nathan Wiebe on 2026-06-21. Items 
 
 ### T2125 (Business)
 
-- **GST/HST registration threshold** — $30,000 in 4 consecutive quarters  _(ETA s.148; CRA — Small supplier — canada.ca)_
-- **CCA deduction** — Optional — any amount up to maximum  _(ITA s.20(1)(a); ITR Schedule II)_
-- **Business-use-of-home** — Principal place of business OR exclusively income-earning + clients  _(ITA s.18(12))_
+- **GST/HST registration threshold** — $30,000 in any single calendar quarter or over 4 consecutive quarters — measured on worldwide taxable supplies (before expenses) of the person AND associated persons; excludes capital property, financial services, and goodwill on the sale of a business  _(ETA s.148; CRA — Small supplier — canada.ca)_
+- **CCA deduction** — Discretionary — claim any amount from $0 up to the class maximum (never mandatory); unclaimed CCA stays in UCC for later years; watch recapture / terminal loss on disposition  _(ITA s.20(1)(a); ITR Schedule II)_
+- **Business-use-of-home** — Principal place of business OR used exclusively to earn business income AND on a regular and continuous basis for meeting clients, customers or patients  _(ITA s.18(12))_
 - **Meals deduction** — 50% deductible only  _(ITA s.67.1)_
-- **Vehicle expense — business-use %** — Must maintain log; default 0% if unknown  _(ITA s.18(1)(r); ITR 7307; CRA — Motor vehicle expenses — canada.ca)_
-- **Fiscal year-end (sole props)** — Must be December 31  _(ITA s.249.1)_
+- **Vehicle expense — business-use %** — Claim only the business-use portion supported by records; CRA requires a logbook of business vs total kilometres (a full logbook year can support the sample-year method)  _(ITA s.18(1)(r); ITR 7307; CRA — Motor vehicle expenses — canada.ca)_
+- **Fiscal year-end (sole props)** — Generally December 31; an eligible individual may elect a non-calendar fiscal period using Form T1139 (alternative method)  _(ITA s.249.1)_
 - **Line 8299** — Gross business revenue  _(CRA — T2125 guide (T4002) — canada.ca)_
 - **Stripe/PayPal fees** — Line 8710 (bank charges) — report gross revenue on 8299  _(CRA — T4002 guide; ITA s.9)_
 - **Line 8910** — Rent (business premises)  _(CRA — T4002 guide — canada.ca)_
-- **Line 8220** — Telephone/utilities  _(CRA — T4002 guide — canada.ca)_
+- **Line 8220** — No line 8220 on Form T2125 — telephone and utilities are both claimed on line 9220  _(CRA — T4002 guide — canada.ca)_
 - **Line 8860** — Professional fees (accounting, legal)  _(CRA — T4002 guide — canada.ca)_
 - **Line 8710** — Interest and bank charges  _(CRA — T4002 guide — canada.ca)_
 - **Line 8523** — Meals and entertainment (50%)  _(CRA — T4002 guide; ITA s.67.1)_
@@ -50,7 +50,7 @@ Reviewed against the cited tax authorities by Nathan Wiebe on 2026-06-21. Items 
 | Country | Canada -- Federal |
 | Tax | Federal income tax on business income + CPP self-employed contributions |
 | Currency | CAD only |
-| Tax year | Calendar year (sole proprietors must use December 31 fiscal year-end) |
+| Tax year | Calendar year (generally December 31; eligible individuals may elect a non-calendar fiscal period via Form T1139) |
 | Primary legislation | Income Tax Act (ITA), R.S.C. 1985, c. 1 (5th Supp.) |
 | Supporting legislation | Income Tax Regulations (ITR); Excise Tax Act (ETA) for GST/HST; CRA Guide T4002 |
 | Tax authority | Canada Revenue Agency (CRA) |
@@ -107,8 +107,8 @@ Half of CPP self-employed contributions is deductible on Line 22200.
 
 | Item | Value |
 | --- | --- |
-| GST/HST registration required | Over $30,000 in 4 consecutive quarters |
-| CCA deduction | Optional -- can claim any amount up to the maximum |
+| GST/HST registration required | Over $30,000 in a single calendar quarter or over 4 consecutive quarters (person + associated persons) |
+| CCA deduction | Discretionary -- any amount from $0 to the class maximum; unclaimed CCA stays in UCC |
 | Instant asset write-off (CEBA) | See AccII rules -- enhanced first-year deduction |
 | Business-use-of-home | Only if principal place of business OR used exclusively for income-earning and meeting clients |
 
@@ -118,12 +118,12 @@ Half of CPP self-employed contributions is deductible on Line 22200.
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown business-use % (vehicle, home, phone) | 0% deduction |
+| Unknown business-use % (vehicle, home, phone) | No claim without reasonable supporting records -- ask for the log |
 | Unknown expense category | Not deductible |
 | Unknown CCA class | Do not depreciate -- ask |
 | Unknown GST/HST status | Not registered (gross amounts are the cost) |
 | Unknown whether expense is business or personal | Personal (not deductible) |
-| Unknown vehicle km split | 0% business |
+| Unknown vehicle km split | No claim without a km log -- request it |
 
 ## Section 2 -- Required Inputs and Refusal Catalogue
 
@@ -171,9 +171,9 @@ Ideal -- complete bookkeeping records, CCA schedule from prior year, motor vehic
 | --- | --- | --- | --- |
 | RENT, OFFICE RENT, COMMERCIAL LEASE | Line 8910 (Rent) | T1 | Fully deductible if business premises |
 | PROPERTY TAX (business premises) | Line 8810 (Property taxes) | T1 | Fully deductible for business property |
-| HYDRO, ELECTRICITY, GAS, ENBRIDGE, HYDRO ONE | Line 8945 (Utilities) | T2 | If home: business-use % only. If office: fully deductible. |
-| BELL, ROGERS, TELUS, SHAW | Line 8220 (Telephone/utilities) | T2 | Business portion only |
-| INTERNET, WIFI | Line 8220 | T2 | Business portion only |
+| HYDRO, ELECTRICITY, GAS, ENBRIDGE, HYDRO ONE | Line 9220 (Utilities) | T2 | If home: business-use % only. If office: fully deductible. |
+| BELL, ROGERS, TELUS, SHAW | Line 9220 (Telephone/utilities) | T2 | Business portion only |
+| INTERNET, WIFI | Line 9220 | T2 | Business portion only |
 | INSURANCE, BUSINESS INSURANCE, LIABILITY | Line 8690 (Insurance) | T1 | Fully deductible if business insurance |
 | ACCOUNTING, BOOKKEEPER, CPA | Line 8860 (Professional fees) | T1 | Fully deductible |
 | LAWYER, LEGAL FEE | Line 8860 | T1 | Deductible if business-related |
@@ -181,7 +181,7 @@ Ideal -- complete bookkeeping records, CCA schedule from prior year, motor vehic
 | BANK FEE, MONTHLY FEE, NSF | Line 8710 (Interest and bank charges) | T1 | Fully deductible for business account |
 | STRIPE FEE, PAYPAL FEE, SQUARE FEE | Line 8710 | T1 | Payment processing fees: fully deductible |
 | INTEREST (business loan) | Line 8710 | T1 | Fully deductible |
-| ADVERTISING, GOOGLE ADS, META ADS, FACEBOOK | Line 8520 (Advertising) | T1 | Fully deductible |
+| ADVERTISING, GOOGLE ADS, META ADS, FACEBOOK | Line 8521 (Advertising) | T1 | Fully deductible |
 | MEALS (client entertainment) | Line 8523 (Meals and entertainment) | T1 | 50% deductible only. The other 50% is permanently disallowed. |
 | MEALS (business travel, alone) | Line 8523 | T1 | 50% deductible |
 | SOFTWARE, SUBSCRIPTION, SAAS | Line 8810 or 8860 | T1 | Fully deductible |
@@ -278,7 +278,7 @@ Classification: CCA Class 50 at 55%. With AccII (Accelerated Investment Incentiv
 | --- | --- | --- |
 | 1 | 4% | Buildings (non-residential after March 2007) |
 | 8 | 20% | Furniture, fixtures, equipment, photocopiers |
-| 10 | 30% | Motor vehicles (passenger, cost < $37,000 limit) |
+| 10 | 30% | Motor vehicles (passenger, Class 10.1 cost limit $38,000 + tax for 2025 acquisitions, $39,000 + tax for 2026) |
 | 10.1 | 30% | Passenger vehicles over $37,000 (cost capped at limit) |
 | 12 | 100% | Small tools, computer software, cutlery |
 | 43 | 30% | Manufacturing equipment |
@@ -353,7 +353,7 @@ A. GROSS INCOME
   A3. Net sales (A1 - A2 if applicable)            ___________
 
 B. EXPENSES
-  B1. Advertising (8520)                           ___________
+  B1. Advertising (8521)                           ___________
   B2. Meals and entertainment (8523) -- 50%        ___________
   B3. Subcontracts (8340)                          ___________
   B4. Insurance (8690)                             ___________
@@ -362,7 +362,7 @@ B. EXPENSES
   B7. Office expenses (8810)                       ___________
   B8. Professional fees (8860)                     ___________
   B9. Rent (8910)                                  ___________
-  B10. Telephone and utilities (8220)              ___________
+  B10. Telephone and utilities (9220)              ___________
   B11. Travel (8520)                               ___________
   B12. Other expenses (9270)                       ___________
   B13. Total expenses                              ___________

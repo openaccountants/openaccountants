@@ -58,7 +58,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **Federal — after 5 years** — 6% (3 weeks)  _(Canada Labour Code s.184)_
 - **T4 slips to employees** — T4 slips: last day of February following the calendar year. Next business day if falls on weekend.  _(ITA s.153(1); CRA — T4 guide)_
 - **ROE** — Within 5 calendar days of earnings interruption  _(Employment Insurance Act s.19; Service Canada)_
-- **Late T4 penalty** — Late T4 penalty: minimum $100, maximum $7,500. The daily penalty amount depends on the number of slips that are filed late. See table below.  _(ITA s.162(7.01))_
+- **Late T4 penalty** — Minimum $100, maximum $7,500 (ITA s.162(7.01)). Graduated by NUMBER of slips, per day up to 100 days: 1-50 slips $10/day (max $1,000); 51-500 $15/day (max $1,500); 501-2,500 $25/day (max $2,500); 2,501-10,000 $50/day (max $5,000); 10,001+ $75/day (max $7,500). CRA small-filer administrative policy: 1-5 slips flat $100; 6-10 slips $5/day (max $500).  _(ITA s.162(7.01))_
 
 ## Section 1 -- Quick Reference
 
@@ -325,7 +325,7 @@ Ontario requires the employer's name and address, the employee's name, and the p
 | --- | --- |
 | Late remittance | 3% (1--3 days late) to 10% (7+ days late) + arrears interest |
 | Failure to deduct | Employer liable for undeducted amounts + 10% penalty |
-| Late T4 filing | Min $100, max $7,500; daily penalty depends on number of slips filed late |
+| Late T4 filing | Min $100, max $7,500; graduated $10-$75/day by slip count up to 100 days (small filers: 1-5 slips flat $100, 6-10 slips $5/day) |
 | Failure to issue ROE | Up to $2,000 fine and/or 6 months imprisonment |
 
 ## Section 9 -- Common Payroll Patterns

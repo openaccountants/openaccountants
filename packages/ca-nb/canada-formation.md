@@ -40,7 +40,7 @@ This block is generated from verified `skill_facts` — edit the facts, not the 
 - **Fee range** — Extra-provincial registration fees range $0 (Ontario)–$520 (NFL) per province.  _(Provincial corporate registries)_
 - **CRA Business Number** — Free; online via BRO  _(CRA — Business Registration Online — canada.ca)_
 - **GST/HST registration** — If taxable supplies > $30,000  _(ETA s.148)_
-- **Corporate tax payment** — 2 months after year-end (3 months for small CCPC)  _(ITA s.157(1); CRA — Corporate payments — canada.ca)_
+- **Corporate tax payment** — 2 months after year-end; 3 months only for a corporation that was a CCPC throughout the year, claimed the small business deduction (current or prior year), and whose associated-group prior-year taxable income did not exceed the business limit  _(ITA s.157(1); CRA — Corporate payments — canada.ca)_
 - **Foreign ownership restrictions** — None generally; Investment Canada Act for large/sensitive  _(Investment Canada Act)_
 
 ## Section 1 -- Quick Reference
@@ -174,7 +174,7 @@ Canada has no minimum capital requirements for private corporation formation at 
 | Annual return (federal) | Within 60 days of anniversary date | Corporations Canada |
 | Annual return (provincial) | Varies by province | Provincial registry |
 | T2 corporate tax return | 6 months after fiscal year-end | CRA |
-| Corporate tax payment | 2 months after year-end (3 months for small CCPC) | CRA |
+| Corporate tax payment | 2 months after year-end (3 months for qualifying CCPCs claiming the SBD) | CRA |
 | GST/HST returns | Quarterly or annually | CRA |
 | Payroll remittances | Monthly or as required | CRA |
 | T4/T5 information slips | By last day of February | CRA |
