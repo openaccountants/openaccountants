@@ -44,8 +44,8 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 The skill enforces the following execution order:
 
-0. **UStVA step** — Runs first because VAT turnover figures feed into the EÜR. For Regelbesteuerung: prepare outstanding monthly/quarterly UStVA; prepare annual Umsatzsteuererklärung. For Kleinunternehmer: no UStVA required; verify turnover stays under EUR 22,000 prior year / EUR 50,000 current year thresholds. Output: UStVA line values, Vorsteuer recovered/blocked, Umsatz (netto), Sondervorauszahlung reconciliation
-0. **ESt + EÜR step** — Depends on VAT output: Betriebseinnahmen in EÜR must use netto turnover for Regelbesteuerte (USt is durchlaufender Posten). Depends on VAT output: blocked Vorsteuer becomes a Betriebsausgabe in EÜR. Includes: Anlage EÜR (Zeilen 11-90), Anlage S (Freiberufler) or Anlage G (Gewerbetreibender), Anlage Vorsorgeaufwand, AfA-Tabelle. Output: EÜR Gewinn, zu versteuerndes Einkommen, festzusetzende ESt, Solidaritätszuschlag, Kirchensteuer
+0. **UStVA step** — Runs first because VAT turnover figures feed into the EÜR. For Regelbesteuerung: prepare outstanding monthly/quarterly UStVA; prepare annual Umsatzsteuererklärung. For Kleinunternehmer: no UStVA required; verify turnover stays under EUR 25,000 prior year / EUR 100,000 current year thresholds. Output: UStVA line values, Vorsteuer recovered/blocked, Umsatz (netto), Sondervorauszahlung reconciliation
+0. **ESt + EÜR step** — Depends on VAT output: Betriebseinnahmen in EÜR must include both netto turnover and vereinnahmte Umsatzsteuer for Regelbesteuerte per § 4 Abs. 3 EStG (mapped to separate EÜR lines). Depends on VAT output: blocked Vorsteuer becomes a Betriebsausgabe in EÜR. Includes: Anlage EÜR (Zeilen 11-90), Anlage S (Freiberufler) or Anlage G (Gewerbetreibender), Anlage Vorsorgeaufwand, AfA-Tabelle. Output: EÜR Gewinn, zu versteuerndes Einkommen, festzusetzende ESt, Solidaritätszuschlag, Kirchensteuer
 0. **KV/PV/RV step** — Depends on EÜR: Gewinn determines KV/PV Beitragsbemessungsgrundlage for GKV (for following year's Beiträge). KV/PV premiums paid during 2025 enter Anlage Vorsorgeaufwand as Sonderausgaben. Output: annual KV/PV/RV amounts, Basisabsicherung for Sonderausgaben, any Nachzahlung/Erstattung from Einkommensanpassung
 0. **GewSt step** — Only if Gewerbetreibender. Depends on EÜR: Gewinn aus Gewerbebetrieb is the starting point for Gewerbeertrag. Status check: de-trade-tax is currently a Q4 stub. If the stub has substantive computation content, use it. If it is still a placeholder, compute Gewerbesteuer using: Gewerbeertrag = EÜR Gewinn + Hinzurechnungen (§8 GewStG) - Kürzungen (§9 GewStG), Freibetrag EUR 24,500, Steuermesszahl 3.5%, then apply Hebesatz. Flag in the reviewer brief that the dedicated skill was not available. GewSt Anrechnung on ESt: §35 EStG allows credit of 4.0x Steuermessbetrag against ESt (capped at actual GewSt paid). If Freiberufler: skip entirely. Freiberufler are not subject to Gewerbesteuer. Output: Gewerbeertrag, Steuermessbetrag, GewSt payable, §35 EStG Anrechnung amount
 0. **Vorauszahlungen step** — Depends on ESt: Vorauszahlungen for next year are based on current year's festgesetzte ESt. Status check: de-estimated-tax is currently a Q4 stub. If the stub has substantive computation content, use it. If it is still a placeholder, compute Vorauszahlungen using: quarterly ESt Vorauszahlung = festgesetzte ESt / 4 (adjusted for Anrechnungsbeträge), quarterly SolZ = festgesetzter SolZ / 4, quarterly KiSt = festgesetzte KiSt / 4. Due dates: 10 Mar, 10 Jun, 10 Sep, 10 Dec. Finanzamt may adjust via Vorauszahlungsbescheid. Flag in the reviewer brief that the dedicated skill was not available. Output: four quarterly instalment amounts (ESt + SolZ + KiSt) and dates for 2026
@@ -61,7 +61,7 @@ The skill enforces the following execution order:
 | VAT Output | EÜR Input | Rule |
 | --- | --- | --- |
 | UStVA total Umsatz (netto) | EÜR Zeile 11 Betriebseinnahmen | Must match within EUR 1 |
-| Regelbesteuerung: sum of Umsätze at 19% + 7% (netto) | EÜR Betriebseinnahmen (excl. USt as durchlaufender Posten) | USt collected is NOT Betriebseinnahmen in EÜR |
+| Regelbesteuerung: sum of Umsätze at 19% + 7% (netto) | EÜR Betriebseinnahmen (netto revenue line) | Vereinnahmte USt is ALSO a Betriebseinnahme but goes to a separate line (Zeile 16) |
 | Kleinunternehmer: declared Umsatz | EÜR Betriebseinnahmen (brutto = netto, no USt separation) | Turnover is gross |
 
 **If mismatch:** Flag for reviewer. Common causes: timing differences (Ist- vs Soll-Versteuerung), innergemeinschaftliche Leistungen, steuerfreie Umsätze, private Kfz-Nutzung (USt on Eigenverbrauch).
@@ -223,7 +223,7 @@ The skill enforces the following execution order:
 - AfA classification (GWG vs reguläre AfA vs Sonderabschreibung §7g)
 - Bewirtungskosten 70% limit applied correctly
 - Geschenke EUR 50 limit per recipient per year
-- Kleinunternehmer threshold monitoring (approaching EUR 22,000)
+- Kleinunternehmer threshold monitoring (approaching EUR 25,000)
 - Gewerbesteuer Freibetrag and Anrechnung computation
 - Any income approaching Progressionsstufen boundaries
 
@@ -238,7 +238,7 @@ The skill enforces the following execution order:
 ## Planning Notes for 2026
 - Vorauszahlungen schedule (four quarterly amounts and dates)
 - GKV Beitrag adjustment based on 2025 Steuerbescheid
-- Kleinunternehmer threshold monitoring (if approaching EUR 22,000)
+- Kleinunternehmer threshold monitoring (if approaching EUR 25,000)
 - AfA continuing into 2026 (Restwert schedule)
 - Any legislative changes affecting 2026 (Wachstumschancengesetz, rate changes)
 - GewSt Vorauszahlungen (if Gewerbetreibender)
@@ -292,8 +292,8 @@ The skill enforces the following execution order:
 - **Check DE2** — UStVA Umsatz matches EÜR Betriebseinnahmen. Within EUR 1 tolerance (netto for Regelbesteuerung, brutto for Kleinunternehmer).  _(Section 6, Check DE2)_
 - **Check DE3** — SV uses correct Gewinn figure. EÜR Gewinn matches the figure used for KV/PV Beitragsbemessungsgrundlage information.  _(Section 6, Check DE3)_
 - **Check DE4** — Vorauszahlungen match prior-year ESt. Quarterly amounts x 4 = prior year festgesetzte ESt (approximately, Finanzamt may round).  _(Section 6, Check DE4)_
-- **Check DE5** — Regelbesteuerung USt treatment correct. Ausgangs-USt excluded from EÜR Betriebseinnahmen (durchlaufender Posten); reclaimable Vorsteuer excluded from Betriebsausgaben; blocked Vorsteuer included in Betriebsausgaben.  _(Section 6, Check DE5)_
-- **Check DE6** — Kleinunternehmer treatment correct. No Ausgangs-USt charged; all Vorsteuer included in Betriebsausgaben (brutto = Aufwand); turnover under EUR 22,000 prior year confirmed.  _(Section 6, Check DE6)_
+- **Check DE5** — Regelbesteuerung USt treatment correct. Ausgangs-USt included in EÜR as a separate Betriebseinnahme; reclaimable Vorsteuer excluded from Betriebsausgaben; blocked Vorsteuer included in Betriebsausgaben.  _(Section 6, Check DE5)_
+- **Check DE6** — Kleinunternehmer treatment correct. No Ausgangs-USt charged; all Vorsteuer included in Betriebsausgaben (brutto = Aufwand); turnover under EUR 25,000 prior year confirmed.  _(Section 6, Check DE6)_
 - **Check DE7** — AfA correctly classified. Items <= EUR 800 netto as GWG (sofort abgeschrieben); items EUR 250-800 netto as GWG or Pool; items > EUR 800 netto per AfA-Tabelle Nutzungsdauer.  _(Section 6, Check DE7)_
 - **Check DE8** — KV/PV Basisabsicherung entered in Anlage Vorsorgeaufwand. Amount from Beitragsbescheinigung, not total premium.  _(Section 6, Check DE8)_
 - **Check DE9** — Grundtabelle or Splittingtabelle correctly applied. Single = Grundtabelle; married Zusammenveranlagung = Splittingtabelle.  _(Section 6, Check DE9)_
