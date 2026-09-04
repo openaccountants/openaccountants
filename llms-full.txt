@@ -130,7 +130,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (1979 guides, 244 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (1998 guides, 245 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -211,14 +211,18 @@ https://www.openaccountants.com
 - no-sales-tax-states | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by James Wallach
 - us-1099-nec-issuance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
+- us-amended-return-form-1040-including-capital | US | tier 2 | reviewed_by -
 - us-citizen-moving-abroad-tax | US | tier 2 | reviewed_by -
+- us-corporate-extension-form-7004-and-the | US | tier 2 | reviewed_by -
 - us-crypto-income-events | US | tier 1 | reviewed_by Christopher Aryee
 - us-crypto-reporting | US | tier 1 | reviewed_by Christopher Aryee
 - us-crypto-tax | US | tier 1 | reviewed_by James Wallach
 - us-education-credits-8863 | US | tier 2 | reviewed_by James Wallach
+- us-equity-compensation-restricted-stock-units-and | US | tier 2 | reviewed_by -
 - us-estate-gift-706-709 | US | tier 1 | reviewed_by Christopher Aryee
 - us-fbar-and-fatca-8938 | US | tier 2 | reviewed_by James Wallach
 - us-federal-cost-segregation | US | tier 2 | reviewed_by James Wallach
+- us-federal-income-tax-return-1040 | US | tier 2 | reviewed_by -
 - us-federal-section-1031-like-kind-exchange | US | tier 2 | reviewed_by James Wallach
 - us-foreign-earned-income-2555 | US | tier 2 | reviewed_by James Wallach
 - us-foreign-tax-credit-1116 | US | tier 2 | reviewed_by James Wallach
@@ -303,6 +307,8 @@ https://www.openaccountants.com
 - albania-social-contributions | AL | tier 2 | reviewed_by -
 - albania-tax-optimization | AL | tier 2 | reviewed_by -
 - albania-vat | AL | tier 2 | reviewed_by -
+- ca-ab-deductions-for-self-employed-independent-contractor | CA-AB | tier 2 | reviewed_by -
+- ca-ab-departure-tax-t1244-security-election-defer | CA-AB | tier 2 | reviewed_by -
 - algeria-income-tax | DZ | tier 2 | reviewed_by -
 - algeria-payroll | DZ | tier 2 | reviewed_by -
 - algeria-social-contributions | DZ | tier 2 | reviewed_by -
@@ -336,6 +342,7 @@ https://www.openaccountants.com
 - armenia-social-contributions | AM | tier 2 | reviewed_by -
 - armenia-tax-optimization | AM | tier 2 | reviewed_by -
 - armenia-vat | AM | tier 2 | reviewed_by -
+- au-amending-individual-income-tax-return-period | AU | tier 2 | reviewed_by -
 - au-capital-gains | AU | tier 2 | reviewed_by -
 - au-company-tax | AU | tier 2 | reviewed_by -
 - au-crypto-tax | AU | tier 2 | reviewed_by -
@@ -343,6 +350,7 @@ https://www.openaccountants.com
 - au-div7a | AU | tier 2 | reviewed_by -
 - au-fbt-year | AU | tier 2 | reviewed_by -
 - au-fbt | AU | tier 2 | reviewed_by -
+- au-foreign-currency-forex-realisation-gains-and | AU | tier 2 | reviewed_by -
 - au-foreign-income | AU | tier 2 | reviewed_by -
 - au-gst-bas | AU | tier 2 | reviewed_by -
 - au-gst-property | AU | tier 2 | reviewed_by -
@@ -484,6 +492,7 @@ https://www.openaccountants.com
 - bw-payroll-social | BW | tier 2 | reviewed_by -
 - bw-tax-overview | BW | tier 2 | reviewed_by -
 - bw-vat-gst | BW | tier 2 | reviewed_by -
+- br-carn-monthly-income-tax-rental-income | BR | tier 2 | reviewed_by -
 - br-estimated-tax | BR | tier 1 | reviewed_by Ariane Marrocos
 - br-income-tax | BR | tier 1 | reviewed_by Ariane Marrocos
 - br-indirect-tax | BR | tier 2 | reviewed_by -
@@ -926,6 +935,7 @@ https://www.openaccountants.com
 - im-income-tax | IM | tier 2 | reviewed_by -
 - im-payroll-social | IM | tier 2 | reviewed_by -
 - im-tax-overview | IM | tier 2 | reviewed_by -
+- ca-prompt-library-and-tax-updates | IN | tier 2 | reviewed_by -
 - in-advance-tax | IN | tier 1 | reviewed_by Mayur Deokar
 - in-gst-return | IN | tier 2 | reviewed_by -
 - in-income-tax | IN | tier 2 | reviewed_by -
@@ -1195,7 +1205,10 @@ https://www.openaccountants.com
 - mt-crypto-tax | MT | tier 2 | reviewed_by -
 - mt-estimated-tax | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
 - mt-non-dom | MT | tier 2 | reviewed_by -
+- mt-property-transfer-tax-the-sale-immovable | MT | tier 2 | reviewed_by -
 - mt-rental-income | MT | tier 2 | reviewed_by -
+- mt-reverse-charge-acquisition-intra | MT | tier 2 | reviewed_by -
+- mt-reverse-charge-vat-services-received-from | MT | tier 2 | reviewed_by -
 - selling-a-company-in-malta | MT | tier 2 | reviewed_by -
 - mr-company-formation | MR | tier 2 | reviewed_by -
 - mr-corporate-income-tax | MR | tier 2 | reviewed_by -
@@ -1314,8 +1327,10 @@ https://www.openaccountants.com
 - nz-capital-gains | NZ | tier 2 | reviewed_by -
 - nz-gst-return | NZ | tier 2 | reviewed_by -
 - nz-income-tax-ir3 | NZ | tier 2 | reviewed_by -
+- nz-motor-vehicle-expenses-logbook-business-use | NZ | tier 2 | reviewed_by -
 - nz-provisional-tax | NZ | tier 2 | reviewed_by -
 - nz-tax-residency | NZ | tier 2 | reviewed_by -
+- nz-timing-deductions-when-expense-incurred | NZ | tier 2 | reviewed_by -
 - references | NZ | tier 2 | reviewed_by -
 - ni-company-formation | NI | tier 2 | reviewed_by -
 - ni-corporate-income-tax | NI | tier 2 | reviewed_by -
@@ -1574,6 +1589,7 @@ https://www.openaccountants.com
 - za-assessed-loss-ring-fencing | ZA | tier 2 | reviewed_by -
 - za-capital-gains-tables | ZA | tier 2 | reviewed_by -
 - za-capital-gains | ZA | tier 2 | reviewed_by Werner Britz
+- za-emp501-reconciliation-and-irp5-corrections-syfile | ZA | tier 2 | reviewed_by -
 - za-foreign-employment-exemption | ZA | tier 2 | reviewed_by -
 - za-income-tax-tables | ZA | tier 2 | reviewed_by -
 - za-income-tax | ZA | tier 1 | reviewed_by Werner Britz
@@ -1601,6 +1617,7 @@ https://www.openaccountants.com
 - es-income-tax | ES | tier 2 | reviewed_by -
 - es-irpf-deductions | ES | tier 2 | reviewed_by -
 - es-modelo-111 | ES | tier 2 | reviewed_by -
+- es-non-resident-income-tax-irnr-and | ES | tier 2 | reviewed_by -
 - es-rental-income | ES | tier 2 | reviewed_by -
 - es-social-contributions | ES | tier 2 | reviewed_by -
 - es-vat-return | ES | tier 2 | reviewed_by -
@@ -1652,6 +1669,7 @@ https://www.openaccountants.com
 - ch-federal-income-tax | CH | tier 2 | reviewed_by -
 - ch-lump-sum | CH | tier 2 | reviewed_by -
 - ch-tax-overview | CH | tier 2 | reviewed_by -
+- ch-taxation-employee-stock-options-and-employee | CH | tier 2 | reviewed_by -
 - ch-vat-return | CH | tier 2 | reviewed_by -
 - switzerland-crypto-tax | CH | tier 2 | reviewed_by -
 - switzerland-vat | CH | tier 2 | reviewed_by -
@@ -1739,6 +1757,7 @@ https://www.openaccountants.com
 - uganda-vat | UG | tier 2 | reviewed_by -
 - close-the-uk-vat-quarter-from-xero | GB | tier 2 | reviewed_by -
 - crypto-accounting | GB | tier 2 | reviewed_by -
+- gb-tax-relief-under-the-merged-scheme | GB | tier 2 | reviewed_by -
 - property-management-2 | GB | tier 2 | reviewed_by -
 - real-estate-and-property | GB | tier 2 | reviewed_by -
 - references | GB | tier 2 | reviewed_by -

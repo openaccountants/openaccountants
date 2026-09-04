@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-09-03T11:17:45+00:00",
+ "generated_at": "2026-09-04T09:15:25+00:00",
  "counts": {
-  "guides": 1979,
-  "jurisdictions": 244,
+  "guides": 1998,
+  "jurisdictions": 245,
   "accountant_reviewed": 171
  },
  "guides": [
@@ -955,6 +955,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "us-amended-return-form-1040-including-capital",
+   "path": "skills/federal/us-amended-return-form-1040-including-capital.md",
+   "name": "us-amended-return-form-1040-including-capital",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "us-citizen-moving-abroad-tax",
    "path": "skills/federal/us-citizen-moving-abroad-tax.md",
    "name": "us-citizen-moving-abroad-tax",
@@ -965,6 +977,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-08-03"
+  },
+  {
+   "slug": "us-corporate-extension-form-7004-and-the",
+   "path": "skills/federal/us-corporate-extension-form-7004-and-the.md",
+   "name": "us-corporate-extension-form-7004-and-the",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "us-crypto-income-events",
@@ -1015,6 +1039,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "us-equity-compensation-restricted-stock-units-and",
+   "path": "skills/federal/us-equity-compensation-restricted-stock-units-and.md",
+   "name": "us-equity-compensation-restricted-stock-units-and",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "us-estate-gift-706-709",
    "path": "skills/federal/us-estate-gift-706-709.md",
    "name": "us-estate-gift-706-709",
@@ -1049,6 +1085,18 @@
    "reviewed_by": "James Wallach",
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "us-federal-income-tax-return-1040",
+   "path": "skills/federal/us-federal-income-tax-return-1040.md",
+   "name": "us-federal-income-tax-return-1040",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "us-federal-section-1031-like-kind-exchange",
@@ -2059,6 +2107,30 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "ca-ab-deductions-for-self-employed-independent-contractor",
+   "path": "skills/international/alberta/ca-ab-deductions-for-self-employed-independent-contractor.md",
+   "name": "ca-ab-deductions-for-self-employed-independent-contractor",
+   "jurisdiction": "CA-AB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
+   "slug": "ca-ab-departure-tax-t1244-security-election-defer",
+   "path": "skills/international/alberta/ca-ab-departure-tax-t1244-security-election-defer.md",
+   "name": "ca-ab-departure-tax-t1244-security-election-defer",
+   "jurisdiction": "CA-AB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "algeria-income-tax",
    "path": "skills/international/algeria/algeria-income-tax.md",
    "name": "algeria-income-tax",
@@ -2455,6 +2527,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "au-amending-individual-income-tax-return-period",
+   "path": "skills/international/australia/au-amending-individual-income-tax-return-period.md",
+   "name": "au-amending-individual-income-tax-return-period",
+   "jurisdiction": "AU",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "au-capital-gains",
    "path": "skills/international/australia/au-capital-gains.md",
    "name": "au-capital-gains",
@@ -2537,6 +2621,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-08-02"
+  },
+  {
+   "slug": "au-foreign-currency-forex-realisation-gains-and",
+   "path": "skills/international/australia/au-foreign-currency-forex-realisation-gains-and.md",
+   "name": "au-foreign-currency-forex-realisation-gains-and",
+   "jurisdiction": "AU",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "au-foreign-income",
@@ -4229,6 +4325,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "br-carn-monthly-income-tax-rental-income",
+   "path": "skills/international/brazil/br-carn-monthly-income-tax-rental-income.md",
+   "name": "br-carn-monthly-income-tax-rental-income",
+   "jurisdiction": "BR",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "br-estimated-tax",
@@ -9535,6 +9643,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "ca-prompt-library-and-tax-updates",
+   "path": "skills/international/india/ca-prompt-library-and-tax-updates.md",
+   "name": "ca-prompt-library-and-tax-updates",
+   "jurisdiction": "IN",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": null,
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "in-advance-tax",
    "path": "skills/international/india/in-advance-tax.md",
    "name": "in-advance-tax",
@@ -12763,6 +12883,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "mt-property-transfer-tax-the-sale-immovable",
+   "path": "skills/international/malta/mt-property-transfer-tax-the-sale-immovable.md",
+   "name": "mt-property-transfer-tax-the-sale-immovable",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "mt-rental-income",
    "path": "skills/international/malta/mt-rental-income.md",
    "name": "mt-rental-income",
@@ -12773,6 +12905,30 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "mt-reverse-charge-acquisition-intra",
+   "path": "skills/international/malta/mt-reverse-charge-acquisition-intra.md",
+   "name": "mt-reverse-charge-acquisition-intra",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
+   "slug": "mt-reverse-charge-vat-services-received-from",
+   "path": "skills/international/malta/mt-reverse-charge-vat-services-received-from.md",
+   "name": "mt-reverse-charge-vat-services-received-from",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "selling-a-company-in-malta",
@@ -14191,6 +14347,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "nz-motor-vehicle-expenses-logbook-business-use",
+   "path": "skills/international/new-zealand/nz-motor-vehicle-expenses-logbook-business-use.md",
+   "name": "nz-motor-vehicle-expenses-logbook-business-use",
+   "jurisdiction": "NZ",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "nz-provisional-tax",
    "path": "skills/international/new-zealand/nz-provisional-tax.md",
    "name": "nz-provisional-tax",
@@ -14213,6 +14381,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "nz-timing-deductions-when-expense-incurred",
+   "path": "skills/international/new-zealand/nz-timing-deductions-when-expense-incurred.md",
+   "name": "nz-timing-deductions-when-expense-incurred",
+   "jurisdiction": "NZ",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "references",
@@ -17311,6 +17491,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "za-emp501-reconciliation-and-irp5-corrections-syfile",
+   "path": "skills/international/south-africa/za-emp501-reconciliation-and-irp5-corrections-syfile.md",
+   "name": "za-emp501-reconciliation-and-irp5-corrections-syfile",
+   "jurisdiction": "ZA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
+  },
+  {
    "slug": "za-foreign-employment-exemption",
    "path": "skills/international/south-africa/za-foreign-employment-exemption.md",
    "name": "za-foreign-employment-exemption",
@@ -17633,6 +17825,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "es-non-resident-income-tax-irnr-and",
+   "path": "skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+   "name": "es-non-resident-income-tax-irnr-and",
+   "jurisdiction": "ES",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "es-rental-income",
@@ -18245,6 +18449,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "ch-taxation-employee-stock-options-and-employee",
+   "path": "skills/international/switzerland/ch-taxation-employee-stock-options-and-employee.md",
+   "name": "ch-taxation-employee-stock-options-and-employee",
+   "jurisdiction": "CH",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "ch-vat-return",
@@ -19289,6 +19505,18 @@
    "reviewed_by": null,
    "tax_year": null,
    "last_updated": "2026-09-02"
+  },
+  {
+   "slug": "gb-tax-relief-under-the-merged-scheme",
+   "path": "skills/international/uk/gb-tax-relief-under-the-merged-scheme.md",
+   "name": "gb-tax-relief-under-the-merged-scheme",
+   "jurisdiction": "GB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-03"
   },
   {
    "slug": "property-management-2",

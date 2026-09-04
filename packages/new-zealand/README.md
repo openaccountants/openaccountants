@@ -13,10 +13,12 @@
 6. `nz-capital-gains.md`
 7. `nz-gst-return.md`
 8. `nz-income-tax-ir3.md`
-9. `nz-provisional-tax.md`
-10. `nz-tax-residency.md`
-11. `references.md`
-12. `crypto-tax-workflow-base.md`
+9. `nz-motor-vehicle-expenses-logbook-business-use.md`
+10. `nz-provisional-tax.md`
+11. `nz-tax-residency.md`
+12. `nz-timing-deductions-when-expense-incurred.md`
+13. `references.md`
+14. `crypto-tax-workflow-base.md`
 
 ## Also known as
 

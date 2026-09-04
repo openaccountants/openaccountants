@@ -19,14 +19,15 @@
 12. `za-assessed-loss-ring-fencing.md`
 13. `za-capital-gains-tables.md`
 14. `za-capital-gains.md`
-15. `za-foreign-employment-exemption.md`
-16. `za-income-tax-tables.md`
-17. `za-income-tax.md`
-18. `za-provisional-tax.md`
-19. `za-tax-residency.md`
-20. `za-travel-allowance-tables.md`
-21. `za-vat-return.md`
-22. `transfer-pricing-workflow-base.md`
+15. `za-emp501-reconciliation-and-irp5-corrections-syfile.md`
+16. `za-foreign-employment-exemption.md`
+17. `za-income-tax-tables.md`
+18. `za-income-tax.md`
+19. `za-provisional-tax.md`
+20. `za-tax-residency.md`
+21. `za-travel-allowance-tables.md`
+22. `za-vat-return.md`
+23. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

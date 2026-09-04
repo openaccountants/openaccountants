@@ -14,11 +14,12 @@
 7. `ch-federal-income-tax.md`
 8. `ch-lump-sum.md`
 9. `ch-tax-overview.md`
-10. `ch-vat-return.md`
-11. `switzerland-crypto-tax.md`
-12. `switzerland-vat.md`
-13. `company-formation-workflow-base.md`
-14. `crypto-tax-workflow-base.md`
+10. `ch-taxation-employee-stock-options-and-employee.md`
+11. `ch-vat-return.md`
+12. `switzerland-crypto-tax.md`
+13. `switzerland-vat.md`
+14. `company-formation-workflow-base.md`
+15. `crypto-tax-workflow-base.md`
 
 ## Also known as
 
