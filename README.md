@@ -102,6 +102,19 @@ API and platform integrations: [openaccountants.com/for-developers](https://www.
 
 ---
 
+## Related open-source projects
+
+Independent, open-source review aids and calculation tools that complement the OpenAccountants guide library:
+
+- **[payday-super-checker](https://github.com/ryanduguid/payday-super-checker)** (MIT) — Verifies superannuation contributions against Australian Payday Super deadlines (in force since 1 July 2026) and estimates SG charge exposure on late payments, with all workings and statutory assumptions disclosed.
+- **[div7a-loan-review](https://github.com/ryanduguid/div7a-loan-review)** (MIT) — Reviews Division 7A loan terms and minimum yearly repayments against the ATO benchmark interest rate, with fabricated inputs and explicit refusal boundaries.
+- **[xero-trial-balance-export](https://github.com/ryanduguid/xero-trial-balance-export)** (MIT) — Exports a Xero trial balance to CSV only when month-movement and YTD column pairs both balance exactly.
+- **[ato-benchmark-compare](https://github.com/ryanduguid/ato-benchmark-compare)** (MIT) — Evaluates business P&L statements locally against the Australian Taxation Office (ATO) small business performance benchmarks, surfacing variance flags and ratio analyses.
+
+*(External tools provide computational review assistance and do not constitute tax or legal advice.)*
+
+---
+
 ## License
 
 - **Code** (mcp/, scripts/, tools/): [AGPL-3.0](LICENSE)
