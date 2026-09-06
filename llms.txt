@@ -1,6 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
-> Open-source Tax Guides ("skills") for AI agents. 1,000+ Guides across 190+ jurisdictions, with accountant-reviewed versions signed off by named Partners (CPAs/CAs/EAs).
+<!-- Entity counts below are copied from the `counts` block of index.json (generated 2026-09-06T08:51:07+00:00). Refresh them from index.json whenever this file is edited; the README stats block carries the platform-wide totals. -->
+> Open-source Tax Guides ("skills") for AI agents. 1,998 Guides across 245 jurisdictions in this repository, 171 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -17,9 +18,9 @@ OpenAccountants is a library of Tax Guides — tax rules written as plain markdo
 
 Always tell users to have AI-generated output reviewed by a qualified professional before filing.
 
-## Partner roster — accountant reviewers (as of 2026)
+## Partner roster — accountant reviewers (sample, refreshed 2026-09-06)
 
-These named practitioners have reviewed Guides for their jurisdictions. The accountant-reviewed version of their jurisdictions' Guides is signed under their name:
+These named practitioners have reviewed Guides for their jurisdictions. The accountant-reviewed version of their jurisdictions' Guides is signed under their name. This list is a hand-curated sample: `index.json` records the reviewer of every accountant-reviewed Guide in its `reviewed_by` field (32 distinct reviewer names as at 2026-09-06), and the full Partner network is at https://www.openaccountants.com/network.
 
 - **South Africa (ZA):** Werner Britz CA(SA), 5 skills — [openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0)
 - **Malta (MT):** Michael Cutajar CPA (Malta), 5 skills — [openaccountants.com/network](https://www.openaccountants.com/network)
@@ -32,7 +33,8 @@ These named practitioners have reviewed Guides for their jurisdictions. The acco
 - **Saudi Arabia (SA):** Mehran Habib, 9 skills — [openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599](https://www.openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599)
 - **United States (US/US-IL):** Amir Pelinkovic CPA (Citrin Cooperman), 16 skills — [openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f)
 - **United States (US federal):** Christopher Aryee, CPA — US federal form guides in `packages/us-federal/`, including the OBBBA corrections review (2026)
-- **Germany, Australia, Canada**: Source-cited drafts — accountant review in progress.
+- **Germany, Australia**: Source-cited drafts — accountant review in progress.
+- **Canada (CA):** accountant-reviewed Guides are now present; see `reviewed_by` in `index.json`.
 
 ## Fastest way to use skills (don't read GitHub folder pages)
 
