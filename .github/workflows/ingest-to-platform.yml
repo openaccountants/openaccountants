@@ -1,0 +1,53 @@
+# The doorbell: after a human's guide edit merges to main, tell the platform so
+# it ingests the change into the database (drafts apply automatically; a Guide
+# with an accountant's byline waits for that accountant's one-click approval).
+#
+# Deliberately a DOORBELL, not a payload: we send paths + the SHA, and the
+# platform re-fetches the content itself from raw.githubusercontent.com at that
+# SHA. Loop guard: sync-bot pushes (the nightly DB->repo render) never ring.
+#
+# Inert until the PLATFORM_INGEST_SECRET repo secret is set.
+name: Ingest to platform
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "skills/**"
+
+jobs:
+  ring:
+    runs-on: ubuntu-latest
+    if: github.event.head_commit.author.email != 'sync@openaccountants.com'
+    steps:
+      - name: Collect changed guide files and ring the platform
+        env:
+          SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
+          PAYLOAD: ${{ toJson(github.event.commits) }}
+          HEAD_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if [ -z "$SECRET" ]; then
+            echo "PLATFORM_INGEST_SECRET not set — doorbell inert."; exit 0
+          fi
+          BODY=$(jq -cn --arg sha "$HEAD_SHA" --argjson commits "$PAYLOAD" '
+            {
+              headSha: $sha,
+              paths: ([ $commits[] | select(.author.email != "sync@openaccountants.com")
+                        | (.added + .modified)[] ]
+                      | map(select(startswith("skills/") and endswith(".md")))
+                      | unique),
+              authors: ([ $commits[] | {name: .author.name, email: .author.email,
+                                        login: (.author.username // null)} ]
+                        | unique)
+            }')
+          COUNT=$(echo "$BODY" | jq '.paths | length')
+          if [ "$COUNT" = "0" ]; then
+            echo "No human-edited guide files in this push."; exit 0
+          fi
+          echo "Ringing platform for $COUNT file(s)."
+          curl -sf -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
+            -H "Authorization: Bearer $SECRET" \
+            -H "Content-Type: application/json" \
+            -d "$BODY" \
+            | head -c 200
