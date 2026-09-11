@@ -34,7 +34,7 @@ jobs:
             {
               headSha: $sha,
               paths: ([ $commits[] | select(.author.email != "sync@openaccountants.com")
-                        | (.added + .modified)[] ]
+                        | ((.added // []) + (.modified // []))[] ]
                       | map(select(startswith("skills/") and endswith(".md")))
                       | unique),
               authors: ([ $commits[] | {name: .author.name, email: .author.email,
