@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س).
+> **Currency note:** All figures are in Sudanese Pounds, ISO code SDG (ج.س).
 > **YMYL — verify before relying.** Sudan's VAT Act was originally enacted in 1999/2001 (post-regime VAT replacing earlier sales tax); the task body references a 2021 VAT Act but the actual law in force is the **Value Added Tax Act 2001** with **2017 Regulations** and ongoing ministerial amendments. The standard 17% rate is confirmed by Sudanese sources, but special rates apply to telecommunications and cigarettes. Verify current rates and registration threshold with the Sudan Taxation Chamber before filing.
 
 ## Section 1 — Scope statement
