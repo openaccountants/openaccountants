@@ -1,10 +1,10 @@
 ---
 name: australia-gst
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Australian GST return (Business Activity Statement / BAS) for any client. Trigger on phrases like "prepare BAS", "do the GST", "fill in BAS", "create the return", "GST return", "Activity Statement", or any request involving Australian GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Australia only and covers both Simpler BAS and full BAS reporting. GST groups, margin scheme, partial exemption complex, and going concern are all in the refusal catalogue. ALWAYS read this skill before touching any GST-related work.
-version: 2.2
+version: 2.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-09-16
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -35,7 +35,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Supporting legislation | Taxation Administration Act 1953 (Schedule 1); GST Regulations 2019; LCT Act 1999; WET Act 1999 |
 | Contributor | Open Accounting Skills Registry |
 | Validation date | April 2026 |
-| Skill version | 2.2 |
+| Skill version | 2.3 |
 
 **Read this whole section before classifying anything.**
 
@@ -90,6 +90,16 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | MEDIUM counterparty concentration | >40% of output OR input |
 | MEDIUM conservative-default count | >4 across the return |
 | LOW absolute net GST position | AUD $10,000 |
+
+### Related guides
+
+| Question | Guide |
+| --- | --- |
+| The end-to-end BAS preparation sequence, reconciliation, label mapping and corrections | `au-bas-preparation.md` |
+| PAYG withholding, PAYG instalment and FBT instalment labels | `au-gst-bas.md` |
+| Property supplies, the margin scheme and GST at settlement | `au-gst-property.md` |
+| Due dates, penalties, interest and remission | `au-lodgment-deadlines-penalties.md` |
+| Account coding, evidence and reconciliation controls | `australia-bookkeeping.md` |
 
 ### Required inputs
 
@@ -493,6 +503,60 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 
 - **No ABN withholding:** Where required, withhold 47% and report at W4, subject to the entity’s withholding reporting class. Apply exceptions, including payments of $75 or less excluding GST and valid supplier statements where relevant. [ATO PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding).
 
+### 5.8 Adjustments (Divisions 19, 21 and 129)
+
+An adjustment is not an error. It arises because something changed after the original supply or
+acquisition was correctly reported. Errors are dealt with under the correction rules; see
+`au-bas-preparation.md` Section 7 for the credit error and debit error time and value limits and
+for when a revision is required instead.
+
+**The two directions**
+
+| Direction | Effect | Where it goes |
+| --- | --- | --- |
+| Increasing adjustment | Increases net GST, either more GST on sales or less credit on purchases | 1A if it relates to a supply, 1B if it reduces a credit |
+| Decreasing adjustment | Decreases net GST, either less GST on sales or more credit on purchases | 1A if it relates to a supply, 1B if it increases a credit |
+
+**Common adjustment events**
+
+| Event | Division | Treatment |
+| --- | --- | --- |
+| Price increase or decrease after the supply | Div 19 | Adjustment in the period the adjustment event is accounted for |
+| Supply cancelled, or goods returned | Div 19 | As above |
+| Bad debt written off by the supplier, or a debt overdue 12 months | Div 21 | Decreasing adjustment for the supplier, increasing adjustment for the recipient who claimed the credit |
+| Bad debt later recovered | Div 21 | Reverses the earlier adjustment to the extent recovered |
+| Change in the extent of creditable purpose | Div 129 | Compared over prescribed adjustment periods, with thresholds that can remove the need to adjust |
+| Goods applied solely to private or domestic use | Div 130 | Increasing adjustment |
+| Cancellation of registration, with assets on hand | Div 138 | Increasing adjustment |
+| Becoming registered, with assets on hand acquired earlier | Div 129 | Can give rise to a decreasing adjustment |
+
+**Adjustment notes.** A decreasing adjustment arising from an adjustment event on a supply
+generally cannot be claimed until an adjustment note is held, subject to the minor adjustment
+exemption and the Commissioner's determinations. The supplier issues the adjustment note.
+[GST Act ss 29-20, 29-75](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-75)
+
+**Attribution.** An adjustment is attributed to the tax period in which the entity becomes aware
+of the adjustment event, not to the period of the original supply. Reopening the original period
+is the wrong treatment.
+
+**Bad debts, the two-sided rule.** A supplier accounting on a non-cash basis who writes off a
+debt as bad, or holds a debt overdue 12 months or more, gets a decreasing adjustment. The
+recipient who claimed the credit and has not paid has a matching increasing adjustment. Both sides
+must be considered; a client who has not paid a supplier for over 12 months may owe GST back.
+
+**Division 129 in practice.** The most common trigger is a property or asset whose actual use
+turns out to differ from the planned use, for example a development intended for sale that is
+rented out instead. Division 129 compares planned and actual use over set adjustment periods, and
+the number of adjustment periods depends on the value of the acquisition. This is fact-sensitive;
+escalate rather than estimate.
+
+**What is not an adjustment**
+
+- A mistake in the original reporting. That is an error.
+- A delay in attributing a credit, where the entity simply claims it in a later period under the
+  attribution rules.
+- A change in the GST rate or law. There is none to date; the rate has been 10% since 1 July 2000.
+
 ## Section 6 -- Tier 2 catalogue
 
 For each ambiguity type: pattern, why the bank statement is insufficient, conservative default, question for the client.
@@ -743,7 +807,7 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 - **v2.0 (April 2026):** Full rewrite to align with Malta v2.0 structure. Ten sections: quick reference (1), inputs and refusals (2), supplier pattern library with 12 sub-tables (3), six worked examples from CBA NetBank format (4), Tier 1 rules compressed (5), Tier 2 catalogue with 7 items (6), Excel template (7), bank statement reading guide (8), onboarding fallback with inference rules (9), reference material (10). Five Australia-specific refusals (R-AU-1 through R-AU-5).
 - **v1.1 (April 2026):** Monolithic skill with classification rules, BAS labels, reverse charge, thresholds, edge cases, and test suite. Comprehensive but not aligned with v2.0 architecture.
 
-### Self-check (v2.2)
+### Self-check (v2.3)
 
 1. Quick reference at top with BAS label table and conservative defaults: yes (Section 1).
 2. Supplier library as literal lookup tables: yes (Section 3, 12 sub-tables).
@@ -761,7 +825,7 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 14. Payment processor fees as financial supply explicit: yes (Section 3.8 + Example 6).
 15. Supermarket split (GST-free food vs taxable items) explicit: yes (Section 3.6 + Example 3).
 
-## End of Australia GST Return Preparation Skill v2.2
+## End of Australia GST Return Preparation Skill v2.3
 
 ## Disclaimer
 

@@ -1,10 +1,10 @@
 ---
 name: deadline-engine
 description: Intelligence skill that generates a personalised filing calendar based on the user's jurisdiction and obligations. Looks up deadlines from a master table covering 15 jurisdictions, produces a sorted 12-month calendar, flags approaching deadlines with amber (30 days) and red (7 days) urgency, and calculates late-filing penalties by referencing each jurisdiction's penalty rules.
-version: 0.1
+version: 0.2
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-09-16
 review_status: pending_review
 depends_on:
   - workflow-base
@@ -247,7 +247,7 @@ These are simplified penalty rules for estimation purposes. Always flag as T2 an
 
 ### Australia
 
-- **Failure to lodge on time** — AUD 313 per 28-day period, max AUD 1,565 (individual).  _(Australia)_
+- **Failure to lodge on time** — one penalty unit per 28-day period or part period, capped at 5 units, multiplied by the entity size factor. The penalty unit is AUD 364 for infringements on or after 1 July 2026, so an individual or small withholder faces a maximum of AUD 1,820. Look up the penalty unit for the date of the infringement. See au-lodgment-deadlines-penalties.  _(Australia)_
 - **General interest charge (GIC)** — Base rate + 7 percentage points, compounded daily.  _(Australia)_
 
 ### Canada
