@@ -10,11 +10,11 @@ description: >
   "franking credits refund", "substantiation", "do I need a receipt", "capital or revenue",
   "apportion private use", "small business concessions". It routes to the specialist guides
   rather than restating their rules.
-version: 0.1
+version: 0.2
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027), with 2025-26 differences noted"
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 review_status: pending_review
 depends_on:
   - au-individual-return
@@ -23,7 +23,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Deductions, Offsets and Concessions v0.1
+# Australia Deductions, Offsets and Concessions v0.2
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -55,8 +55,9 @@ rate plus the 2% Medicare levy, and $470 for someone on the top rate. An offset 
 $1,000 for both, but only if there is $1,000 of tax to reduce.
 
 **Refundable and non-refundable offsets.** Most offsets are non-refundable: they can reduce tax
-payable to zero but no further, and the unused amount is lost. Some are refundable, so the excess
-is paid out. Franking credits attached to franked dividends and the private health insurance
+payable to zero but do not pay out an unused offset. The treatment of any unused amount depends
+on the offset: some can transfer, carry forward or reduce other liabilities. Some offsets are
+refundable, so the excess is paid out. Franking credits attached to franked dividends and the private health insurance
 rebate are refundable. Check this before telling a taxpayer an offset is worth anything to them.
 [ATO, About tax offsets](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/about-tax-offsets)
 
@@ -101,16 +102,19 @@ This skill does NOT cover:
 
 ## Section 3 - The order of operations
 
-Apply in this order. Reversing steps 4 and 5 is a common source of wrong answers.
+Apply the statutory offset priorities, including the rules for any unused amount.
 
 1. Work out assessable income, including net capital gains.
 2. Subtract allowable deductions to get taxable income.
-3. Apply the rates for the income year to taxable income, giving gross tax.
-4. Subtract non-refundable offsets, stopping at zero.
-5. Subtract refundable offsets and credits, which can produce a refund.
-6. Add the Medicare levy and any Medicare levy surcharge, which are separate from the offsets in
-   step 4.
+3. Apply the rates for the income year to taxable income, giving basic income tax liability.
+4. Calculate the Medicare levy and any Medicare levy surcharge separately.
+5. Apply offsets to basic income tax liability in the order in section 63-10. For each unused
+   amount, follow its statutory treatment: application to another liability, transfer,
+   carry-forward, refund or loss. See Section 8.2 for the Medicare levy exceptions.
+6. Add the remaining income tax and levy liabilities, then subtract any refundable excess offsets.
 7. Subtract amounts already paid: PAYG withholding and PAYG instalments.
+
+[ITAA 1997 (Cth) s 63-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10)
 
 A tax loss arises where deductions exceed assessable income. A loss is carried forward, not
 converted to a refund, and its use is restricted for individuals by the non-commercial loss rules
@@ -120,7 +124,12 @@ and for companies by the continuity of ownership and business continuity tests.
 
 ## Section 4 - Deductions: the decision steps
 
-Run every proposed deduction through these steps in order. Stop at the first step that denies it.
+Identify the provision that allows the deduction before applying these steps. Steps 1 and 2
+test general deductions under section 8-1. A specific deduction, such as a qualifying gift under
+Division 30, follows its own eligibility rules; failure of the section 8-1 test does not decide
+that claim. For specific deductions, apply steps 3 to 6 using the relevant provision's limits,
+apportionment, timing and evidence requirements.
+[ITAA 1997 (Cth) s 8-5](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/8-5)
 
 ### Step 1 - Is there a nexus with assessable income?
 
@@ -139,9 +148,9 @@ An employer instruction to buy something does not by itself make it deductible.
 Section 8-1 denies a deduction to the extent the outgoing is private or domestic, or capital or of
 a capital nature. Ordinary travel between home and work and daily lunches are private.
 
-Capital expenditure is not lost, it moves to a different regime: Division 40 decline in value,
-Division 43 capital works, the CGT cost base, or a specific write-off provision such as
-Division 40-880 for certain business-related capital expenditure.
+If section 8-1 excludes capital expenditure, check whether it qualifies under another regime:
+Division 40 decline in value, Division 43 capital works, the CGT cost base, or a specific
+write-off provision such as section 40-880 for certain business-related capital expenditure.
 
 ### Step 3 - Does a specific provision deny or limit it?
 
@@ -161,6 +170,9 @@ guessed at year end is not a method.
 "Incurred" is not the same as "paid". Prepayment rules can spread a deduction over the period the
 benefit covers, with a 12 month exception available to individuals for non-business expenditure
 and to small business entities.
+
+For a specific deduction, use its own timing rule. For example, a qualifying gift of money under
+Division 30 is generally deducted in the income year the gift is made.
 
 ### Step 6 - Is there evidence?
 
@@ -263,13 +275,21 @@ for 2026-27 must be confirmed on the ATO instant asset write-off page before it 
 [ATO, Low income tax offset](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/low-income-tax-offset);
 [ATO, Seniors and pensioners tax offset](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/seniors-and-pensioners-tax-offset)
 
-### 8.2 What an offset cannot do
+### 8.2 Unused offsets and other liabilities
 
-- A non-refundable offset cannot create or increase a refund.
-- An offset does not reduce the Medicare levy, which is calculated separately. SAPTO affects the
-  Medicare levy indirectly, through the low income threshold, not by reducing the levy directly.
+- An unused non-refundable offset is not paid out as an offset refund. Reducing income tax can
+  still create or increase a refund of PAYG withholding or instalments already paid.
+- Most offsets do not reduce Medicare levy. However, section 63-10 table items 21 and 22 apply
+  remaining veterans' superannuation (invalidity pension) tax offset and foreign income tax
+  offset to Medicare levy, then Medicare levy (fringe benefits) surcharge. The remaining excess
+  cannot be refunded, transferred or carried forward. See `au-foreign-income.md` for FITO limits.
+- SAPTO affects the Medicare levy indirectly through the low income threshold; it does not
+  reduce the levy directly.
 - An offset does not reduce a HELP or other study and training support loan repayment, which is
   calculated on repayment income, not on tax payable.
+
+[ITAA 1997 (Cth) s 63-10(1), table items 21 and 22](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/63-10);
+[ATO, About tax offsets](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/about-tax-offsets)
 
 ---
 
@@ -404,13 +424,13 @@ is outside the standard deduction, so each still reduces tax in full.
 - [ ] The income year is identified, and the rules used are those for that year.
 - [ ] Each item is classified as a deduction, capital allowance, offset or concession.
 - [ ] Each offset is identified as refundable or non-refundable.
-- [ ] Every deduction passes the nexus test, is not denied by a specific provision, and is
-      apportioned where private use exists.
-- [ ] Substantiation exists for every claim, and the method of apportionment is documented.
-- [ ] Capital items are in the correct regime rather than claimed outright.
+- [ ] Every deduction meets its governing provision's eligibility rules, limits and apportionment requirements; section 8-1 claims pass the nexus test.
+- [ ] Each claim meets its applicable evidence requirements, and any apportionment method is documented.
+- [ ] Capital items use the correct regime, including the eligibility rules for any immediate write-off.
 - [ ] Amounts reimbursed or salary packaged are excluded.
 - [ ] The offsets are applied to tax payable, not to taxable income.
-- [ ] The Medicare levy is calculated separately from the offsets.
+- [ ] Offsets follow section 63-10 priorities, including any application to Medicare levy or surcharge and the treatment of unused amounts.
+- [ ] Refunds of excess PAYG payments are distinguished from refunds of unused offsets.
 - [ ] Rates, thresholds and limits are confirmed against the ATO page for the income year.
 
 ---
