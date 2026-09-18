@@ -1,10 +1,10 @@
 ---
 name: deadline-engine
 description: Intelligence skill that generates a personalised filing calendar based on the user's jurisdiction and obligations. Looks up deadlines from a master table covering 15 jurisdictions, produces a sorted 12-month calendar, flags approaching deadlines with amber (30 days) and red (7 days) urgency, and calculates late-filing penalties by referencing each jurisdiction's penalty rules.
-version: 0.2
+version: 0.3
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 review_status: pending_review
 depends_on:
   - workflow-base
@@ -247,7 +247,7 @@ These are simplified penalty rules for estimation purposes. Always flag as T2 an
 
 ### Australia
 
-- **Failure to lodge on time** — one penalty unit per 28-day period or part period, capped at 5 units, multiplied by the entity size factor. The penalty unit is AUD 364 for infringements on or after 1 July 2026, so an individual or small withholder faces a maximum of AUD 1,820. Look up the penalty unit for the date of the infringement. See au-lodgment-deadlines-penalties.  _(Australia)_
+- **Failure to lodge on time**: one penalty unit per 28-day period or part period, capped at 5 units before the applicable multiplier. At AUD 364 per unit for infringements on or after 1 July 2026, the base cap is AUD 1,820. Individuals and small withholders can still meet the income or current GST turnover tests for a higher multiplier. Verify the penalty unit for the infringement date and apply the alternative tests and special rules in [au-lodgment-deadlines-penalties](../international/australia/au-lodgment-deadlines-penalties.md#section-6---failure-to-lodge-on-time-penalty). [TAA 1953 (Cth) sch 1 s 286-80](https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-286-80). _(Australia)_
 - **General interest charge (GIC)** — Base rate + 7 percentage points, compounded daily.  _(Australia)_
 
 ### Canada

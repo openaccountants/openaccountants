@@ -1,7 +1,7 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian capital gains tax question, for any entity type. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"capital loss\", \"carry forward capital losses\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\", \"CGT indexation from 2027\". Covers the calculation workflow from CGT event and cost base through losses, discounts and concessions, entity and residency differences, and the enacted 1 July 2027 changes. Routes to au-small-business-cgt, au-nonresident-cgt, au-rental-property and au-crypto-tax for their specialist rules."
-version: 1.3
+version: 1.4
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027), with the enacted 1 July 2027 changes flagged"
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Capital Gains
 
-## Australia Capital Gains Tax v1.3
+## Australia Capital Gains Tax v1.4
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -123,9 +123,14 @@ passes, the market value substitution rule replaces the actual proceeds with mar
 | 4 | Capital expenditure to increase or preserve the asset's value, or to install or move it |
 | 5 | Capital expenditure to establish, preserve or defend title to the asset |
 
-**The reduced cost base** is used to work out a capital loss. It contains elements 1, 2, 4 and 5
-but not element 3, and it is reduced by amounts such as balancing adjustments and recouped
-expenditure.
+**The reduced cost base** is used to work out a capital loss and has five elements. Elements
+1, 2, 4 and 5 match the cost base. Its third element replaces ownership costs with the assessable
+balancing-adjustment amounts specified in section 110-55(3), including its statutory relief
+cases. Apply the section's exclusions separately: subsection (4) excludes deductible amounts,
+including deductible balancing adjustments, and subsection (6) excludes recouped expenditure
+unless the recoupment is assessable. Do not subtract an assessable balancing adjustment merely
+because a deductible balancing adjustment is excluded.
+[ITAA 1997 (Cth) s 110-55](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/110-55)
 
 **Deductions reduce the cost base.** Amounts claimed as capital works deductions under Division 43
 reduce the cost base, and element 3 excludes anything that was deductible. This is the most common
