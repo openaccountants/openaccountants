@@ -1,11 +1,11 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian capital gains tax question, for any entity type. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"capital loss\", \"carry forward capital losses\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\", \"CGT indexation from 2027\". Covers the calculation workflow from CGT event and cost base through losses, discounts and concessions, entity and residency differences, and the enacted 1 July 2027 changes. Routes to au-small-business-cgt, au-nonresident-cgt, au-rental-property and au-crypto-tax for their specialist rules."
-version: 1.2
+version: 1.3
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027), with the enacted 1 July 2027 changes flagged"
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 review_status: pending_review
 depends_on:
   - au-individual-return
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Capital Gains
 
-## Australia Capital Gains Tax v1.2
+## Australia Capital Gains Tax v1.3
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -141,8 +141,11 @@ cost base error on a rental property disposal. See `au-rental-property.md`.
   because a discounted gain loses only half its value to a loss offset.
 - Net capital losses carry forward indefinitely for individuals. Company and trust loss use is
   restricted by the continuity of ownership, business continuity and trust loss rules.
-- A loss on a personal use asset or a collectable is quarantined. A collectable loss can only be
-  used against collectable gains.
+- Disregard losses on personal use assets. They cannot offset capital gains or carry forward.
+  [ITAA 1997 (Cth) s 108-20(1)](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/108-20)
+- A collectable loss can offset only collectable gains. Carry any unused amount forward for
+  future collectable gains, subject to the collectable exemption rules.
+  [ITAA 1997 (Cth) s 108-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/108-10)
 - Wash sale arrangements, where an asset is sold and substantially repurchased to crystallise a
   loss, attract Part IVA attention.
 

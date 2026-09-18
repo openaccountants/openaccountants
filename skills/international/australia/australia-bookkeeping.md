@@ -1,10 +1,10 @@
 ---
 name: australia-bookkeeping
 description: Use this skill whenever asked about Australian bookkeeping for sole traders, partnerships, or small companies. Trigger on phrases like "chart of accounts", "BAS", "GST codes", "bookkeeping", "profit and loss", "balance sheet", "AASB", "simplified disclosures", "Tier 2", "bank reconciliation", "expense categories", "revenue recognition", "depreciation", "instant asset write-off", "small business pool", "ABN", "ATO reporting", "activity statement", "accrual basis", "cash basis", "general ledger", "how do I classify this transaction", "what evidence do I need", "capital or revenue", "private use apportionment", "fix a bookkeeping error", "accounting versus tax treatment", or any question about day-to-day transaction recording, financial statement preparation, or account coding for an Australian business.
-version: 1.2
+version: 1.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
@@ -591,7 +591,7 @@ keep the reconciliation between them.
 | Item | Accounting treatment | Tax treatment |
 | --- | --- | --- |
 | Depreciation | Useful life and residual value under AASB 116 | Effective life under Division 40, the small business pool, or the instant asset write-off |
-| Buildings and structural improvements | Depreciated or held at cost under AASB 116 | Division 43 capital works at a fixed rate, and the deduction reduces the CGT cost base |
+| Buildings and structural improvements | Cost or revaluation model under AASB 116, with depreciation and impairment where required under either model | Division 43 capital works at a fixed rate, and the deduction reduces the CGT cost base |
 | Employee leave provisions | Recognised when the obligation arises | Deductible when the leave is paid |
 | Doubtful debts allowance | An impairment estimate | Not deductible. Only a debt actually written off as bad is deductible |
 | Entertainment | An expense in the profit and loss | Commonly non-deductible, and may instead be a fringe benefit |
@@ -602,6 +602,10 @@ keep the reconciliation between them.
 | Borrowing costs | AASB 123 | Deductible over five years or the term of the loan, whichever is shorter |
 | Unrealised foreign exchange movements | Revalued at reporting date | Taxed on a realisation event under Division 775 |
 | Leases | Right-of-use asset and lease liability under AASB 16 | Depends on whether the arrangement is a lease or a hire purchase for tax |
+
+Choosing the cost model does not remove depreciation: allocate the depreciable amount over
+the asset's useful life. Account for land separately from buildings.
+[AASB 116 paras 29–31, 50, 58](https://standards.aasb.gov.au/aasb-116-dec-2022#measurement_after_recognition)
 
 Record permanent and temporary differences in a tax reconciliation working paper. A company also
 needs deferred tax balances where it reports under the full recognition requirements.

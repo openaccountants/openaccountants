@@ -11,11 +11,11 @@ description: >
   "1A 1B W1 W2 T7 5A", "net amount on BAS", "fix a BAS", "BAS due date". For the GST
   classification rules behind the labels see australia-gst; for the label-level PAYG detail see
   au-gst-bas.
-version: 0.1
+version: 0.2
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 review_status: pending_review
 depends_on:
   - australia-gst
@@ -25,7 +25,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia BAS Preparation v0.1
+# Australia BAS Preparation v0.2
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -221,16 +221,27 @@ recurring conceptual error, and it changes both the amount payable and who bears
 
 | Label | Content |
 | --- | --- |
-| W1 | Total salary, wages and other payments from which amounts were withheld |
+| W1 | Gross salary, wages and other payments subject to withholding, including payments with no amount withheld; exclusions below |
 | W2 | Amounts withheld from the payments shown at W1 |
-| W3 | Amounts withheld from investment distributions where no TFN was quoted |
+| W3 | Other amounts withheld that do not belong at W2 or W4 |
 | W4 | Amounts withheld from invoices where no ABN was quoted |
 | W5 | Total amounts withheld, being W2 plus W3 plus W4 |
 | 4 | The W5 total, transferred to the summary |
 
-W1 is a gross payments figure, not a headcount or a cost figure. Superannuation contributions
-are not included at W1. Reconcile W1 and W2 to the payroll register and to the Single Touch
-Payroll figures reported for the period, and investigate any difference before lodging.
+W1 is a gross payments figure. Exclude salary sacrifice amounts, superannuation contributions
+and payments whose withholding belongs at W3 or W4. Include wages below the withholding
+threshold even when no tax was withheld.
+
+W3 includes withholding from investment distributions where no TFN was quoted, interest,
+dividends and royalties paid to foreign residents, departing Australia superannuation payments,
+and payments to foreign residents for entertainment, sports, construction and casino gaming
+junket activities.
+
+**Large withholders:** complete only W1, and omit W1 as well if reporting through Single Touch
+Payroll (STP). Leave W2, W3, W4, W5 and label 4 blank; remit withheld amounts electronically.
+For other withholders, reconcile W1 and W2 to the payroll register and relevant STP figures
+for the period, and investigate any difference before lodging.
+[ATO, PAYG withholding: activity statement labels and large withholders](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding)
 
 ### 6.2 PAYG instalment labels
 
@@ -486,8 +497,8 @@ Before lodging, confirm:
 - [ ] G1 agrees with total sales per the profit and loss, after basis and exclusion differences.
 - [ ] The G1 GST-inclusive or GST-exclusive choice is indicated and matches the figure entered.
 - [ ] 1A and 1B include every adjustment for the period and no corrections that are out of time.
-- [ ] W1 and W2 agree with the payroll register and with the STP figures for the period.
-- [ ] W5 equals W2 plus W3 plus W4, and label 4 equals W5.
+- [ ] Where W1 and W2 reporting is required, the amounts reconcile to the payroll register and relevant STP figures for the period.
+- [ ] Where these labels apply, W5 equals W2 plus W3 plus W4, and label 4 equals W5. Large withholders follow Section 6.1 instead.
 - [ ] 5A comes from T7, or from T9 if the amount was varied, or from T1 multiplied by T2.
 - [ ] 8A less 8B equals label 9, recalculated independently.
 - [ ] Any correction of a prior period error is within its time and value limits.

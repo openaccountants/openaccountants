@@ -10,18 +10,18 @@ description: >
   charge", "GIC rate", "shortfall interest charge", "remission of interest", "ATO payment plan",
   "how long do I have to amend", "period of review", "voluntary disclosure", "tax agent lodgment
   program". Covers federal obligations administered by the ATO only.
-version: 0.1
+version: 0.2
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
-last_updated: 2026-09-16
+last_updated: 2026-09-18
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Lodgment Deadlines, Penalties and Interest v0.1
+# Australia Lodgment Deadlines, Penalties and Interest v0.2
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -161,17 +161,24 @@ overdue, to a maximum of five penalty units.
 
 **Entity size multiplier.**
 
-| Entity | Multiplier | Maximum base penalty at $364 per unit |
+| Applicable test | Multiplier | Maximum base penalty at $364 per unit |
 | --- | --- | --- |
-| Individual or small withholder | 1 | $1,820 |
-| Medium withholder | 2 | $3,640 |
-| Large withholder | 5 | $9,100 |
-| Significant global entity | 500 | $910,000 |
+| No increased multiplier applies | 1 | $1,820 |
+| Medium withholder, or assessable income or current GST turnover above $1 million but below $20 million | 2 | $3,640 |
+| Large withholder, or assessable income or current GST turnover of $20 million or more | 5 | $9,100 |
+| Special rule under s 286-80(4A) or (4C) | 500 | $910,000 |
 
-A medium withholder withholds more than $25,000 but less than $1 million in an income year, and
-had assessable income for the year, or GST turnover for the month the document was due, of between
-$1 million and $20 million. A large withholder withholds more than $1 million in the previous
-income year, or had assessable income or GST turnover of $20 million or more.
+The withholder, assessable income and current GST turnover tests are alternatives. A small
+withholder can still attract a higher multiplier through either income or turnover. Use
+withholder status for the month the document was due, assessable income for the income year
+containing that due date, and current GST turnover worked out at a time in that month. The
+turnover test is not limited to that month's sales. Apply 5 if both the 2 and 5 tests are met.
+
+Check the special 500 multiplier separately: s 286-80(4A) covers significant global entities
+subject to its prior assessment, determination or reporting conditions and the exception in
+s 286-80(4B); s 286-80(4C) covers specified global minimum tax obligations. Where 500 applies,
+it replaces the 2 and 5 multipliers.
+[TAA 1953 (Cth) sch 1 s 286-80(3)–(4C)](https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-286-80)
 
 FTL penalty applies to activity statements, tax returns, FBT returns, PAYG withholding annual
 reports, Single Touch Payroll reports, annual GST returns and information reports, and taxable
@@ -328,7 +335,9 @@ matters: agreeing with a shortfall the ATO has already identified is not a volun
 ## Section 11 - Worked example
 
 **Facts.** Harbourline Freight Pty Ltd is a monthly activity statement lodger and a small
-withholder. Its June 2026 activity statement was due on 21 July 2026 with a net amount of $24,000.
+withholder. Its assessable income for the income year containing the due date and its current
+GST turnover for the relevant test are each no more than $1 million. Neither special 500
+multiplier applies. Its June 2026 activity statement was due on 21 July 2026 with a net amount of $24,000.
 It lodged and paid on 21 September 2026. It has no prior penalty relief and no agent safe harbour
 issue. All figures are synthetic.
 
@@ -346,7 +355,7 @@ Days overdue                 62
 28-day periods, counting part periods   62 / 28 = 2.21, rounded up to 3
 Maximum is 5 periods, so 3 applies
 Penalty unit, infringement after 1 July 2026     $364
-Entity multiplier, small withholder              x 1
+Entity multiplier, no increased multiplier       x 1
 FTL penalty                 3 x $364 x 1       = $1,092
 ```
 
@@ -406,7 +415,7 @@ in this example.
 - [ ] The entity type, balance date and agent status are confirmed before any date is quoted.
 - [ ] Prior year lodgment status has been checked, because it can pull the current date forward.
 - [ ] The correct penalty unit amount for the date of the infringement has been used.
-- [ ] The entity size multiplier has been applied, or explicitly confirmed as 1.
+- [ ] The multiplier reflects all alternative withholder, income and turnover tests and any special 500 rule; 1 is used only if no increased multiplier applies.
 - [ ] GIC has been calculated with each quarter's own daily rate, compounded daily.
 - [ ] GIC and SIC incurred on or after 1 July 2025 are not treated as deductible.
 - [ ] The correction pathway matches the situation and is within its time limit.
