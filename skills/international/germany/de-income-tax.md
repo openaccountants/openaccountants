@@ -78,7 +78,7 @@ verified_by: pending
 
 | Line | Description |
 |---|---|
-| Betriebseinnahmen | Gross business revenue (net of USt if registered) |
+| Betriebseinnahmen | Gross business revenue (including collected USt per § 4 Abs. 3 EStG) |
 | Raumkosten | Office costs (rent, utilities, home office) |
 | Fahrzeugkosten | Vehicle costs (business portion) |
 | Reisekosten | Travel expenses |
@@ -135,7 +135,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 | Pattern | Tax Line | Treatment | Notes |
 |---|---|---|---|
-| KUNDENUEBERWEISUNG, KUNDENUBERWEISUNG, UBERWEISUNG [client name] | Betriebseinnahmen | Gross revenue on Anlage EUR | If USt-registered, extract net (excl. 19% USt) |
+| KUNDENUEBERWEISUNG, KUNDENUBERWEISUNG, UBERWEISUNG [client name] | Betriebseinnahmen | Gross revenue on Anlage EUR | Collected USt must be included in Betriebseinnahmen for EÜR, but reported in a separate line on the form |
 | HONORAR, HONORARNOTE, VERGUETUNG | Betriebseinnahmen | Revenue | Professional fees -- typical Freiberufler |
 | PAYPAL PAYOUT, STRIPE PAYOUT, STRIPE TRANSFER | Betriebseinnahmen | Revenue | Platform payout -- match to underlying invoices |
 | GEHALT, LOHN, ARBEITGEBER [name] | Einkuenfte aus nichtselbstaendiger Arbeit (Anlage N) | NOT self-employment income | Employment income -- separate Anlage N |
@@ -177,7 +177,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | RENTENVERSICHERUNG, DRV | Sonderausgabe (Altersvorsorge) | NOT a business expense |
 | KUENSTLERSOZIALKASSE, KSK | Sonderausgabe | NOT a business expense |
 | FINANZAMT, EINKOMMENSTEUER, VORAUSZAHLUNG ESt | EXCLUDE | Income tax not deductible |
-| GEWERBESTEUER, GewSt | Betriebsausgabe | Deductible since 2008 (for Gewerbetreibende) |
+| GEWERBESTEUER, GewSt | Keine Betriebsausgabe | Not deductible (§ 4 Abs. 5b EStG). Subject to separate tax reduction under § 35 EStG. |
 | PRIVATENTNAHME, EIGENBELEG PRIVAT | EXCLUDE | Drawings |
 | UMSATZSTEUER ZAHLUNG, USt VORAUSZAHLUNG | EXCLUDE from P&L | USt is balance sheet for Regelbesteuerung |
 | SPENDE, DONATION | Sonderausgabe | NOT a business expense |
@@ -225,7 +225,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 `15.03.2025 ; KUNDENUEBERWEISUNG STUDIO KREBS GMBH ; CREDIT ; Honorar Maerz 2025 ; +4,500.00 ; EUR`
 
 **Reasoning:**
-Client payment for professional services. Freiberufler income. If USt-registered (Regelbesteuerung), EUR 4,500 may include 19% USt. Check invoice: if EUR 4,500 gross, net = EUR 3,781.51 (Betriebseinnahme) + EUR 718.49 (USt liability). If Kleinunternehmer (s19 UStG), full EUR 4,500 is income.
+Client payment for professional services. Freiberufler income. If USt-registered (Regelbesteuerung), EUR 4,500 may include 19% USt. Both the net revenue (EUR 3,781.51) and the collected USt (EUR 718.49) are Betriebseinnahmen under § 4 Abs. 3 EStG, but are reported on separate lines in the Anlage EÜR. If Kleinunternehmer (s19 UStG), full EUR 4,500 is income.
 
 **Classification:** Betriebseinnahmen on Anlage EUR / Anlage S.
 
@@ -290,7 +290,7 @@ Health insurance is a Sonderausgabe on the main return, NOT a Betriebsausgabe on
 
 **Legislation:** EStG s4 Abs.1, s15 (Gewerbebetrieb), s18 (freiberufliche Tatigkeit)
 
-All business income is Betriebseinnahmen. For USt-registered, report net of USt on Anlage EUR. For Kleinunternehmer (s19 UStG), report gross.
+All business income is Betriebseinnahmen. For EÜR (§ 4 Abs. 3 EStG), collected USt (vereinnahmte Umsatzsteuer) MUST be included in Betriebseinnahmen. Do NOT simply report net revenue. The EÜR form has specific lines for net revenue and collected USt. For Kleinunternehmer (§ 19 UStG), report gross without separating USt.
 
 ### 5.2 Betriebsausgaben (Business Expenses)
 
