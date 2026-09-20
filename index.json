@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-20T08:30:12+00:00",
+ "generated_at": "2026-09-20T14:31:30+00:00",
  "counts": {
-  "guides": 2018,
+  "guides": 2017,
   "jurisdictions": 245,
   "accountant_reviewed": 171
  },
@@ -1984,7 +1984,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-18"
   },
   {
    "slug": "optimisation-advisor",
@@ -2596,7 +2596,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-18"
   },
   {
    "slug": "au-capital-gains-2",
@@ -2620,7 +2620,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-18"
   },
   {
    "slug": "au-company-tax",
@@ -2680,7 +2680,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-18"
   },
   {
    "slug": "au-div7a",
@@ -2800,7 +2800,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-18"
   },
   {
    "slug": "au-medicare-levy",
@@ -3052,7 +3052,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-18"
   },
   {
    "slug": "australia-financial-statements-2",
@@ -8860,18 +8860,6 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-19"
-  },
-  {
-   "slug": "de-ustva-vat-return",
-   "path": "skills/international/germany/de-ustva-vat-return.md",
-   "name": "de-ustva-vat-return",
-   "jurisdiction": "DE",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2025",
    "last_updated": "2026-09-19"
   },
   {

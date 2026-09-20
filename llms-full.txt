@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2018 guides, 245 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (2017 guides, 245 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -872,7 +872,6 @@ https://www.openaccountants.com
 - de-rental-income | DE | tier 2 | reviewed_by -
 - de-social-contributions | DE | tier 2 | reviewed_by -
 - de-trade-tax | DE | tier 2 | reviewed_by -
-- de-ustva-vat-return | DE | tier 2 | reviewed_by -
 - germany-bookkeeping | DE | tier 2 | reviewed_by -
 - germany-einvoice | DE | tier 2 | reviewed_by -
 - germany-financial-statements | DE | tier 2 | reviewed_by -
