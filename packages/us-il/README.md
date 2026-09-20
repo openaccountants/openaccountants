@@ -61,14 +61,15 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `il-estimated-tax.md`
-57. `il-income-tax.md`
-58. `il-payroll.md`
-59. `il-pprt.md`
-60. `il-sales-tax.md`
-61. `illinois-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `il-estimated-tax.md`
+58. `il-income-tax.md`
+59. `il-payroll.md`
+60. `il-pprt.md`
+61. `il-sales-tax.md`
+62. `illinois-sales-tax.md`
 
 ## How to use
 

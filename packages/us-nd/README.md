@@ -61,14 +61,15 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `nd-corporate-tax.md`
-57. `nd-estimated-tax.md`
-58. `nd-income-tax.md`
-59. `nd-payroll.md`
-60. `nd-return-assembly.md`
-61. `nd-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `nd-corporate-tax.md`
+58. `nd-estimated-tax.md`
+59. `nd-income-tax.md`
+60. `nd-payroll.md`
+61. `nd-return-assembly.md`
+62. `nd-sales-tax.md`
 
 ## How to use
 

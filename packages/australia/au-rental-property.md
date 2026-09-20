@@ -1,10 +1,10 @@
 ---
 name: au-rental-property
-description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing, CGT on disposal, non-resident withholding, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.1"
+description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
+version: "1.2"
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-09-17
 review_status: pending_review
 category: international
 tier: 2
@@ -13,7 +13,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.0
+## AU Rental Property
+
+## Australia Rental Property -- Income & Deductions Skill v1.2
 
 ## Section 1 -- Quick Reference
 
@@ -30,7 +32,18 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.0 |
+| Skill version | 1.2 |
+
+### Select the income year before calculating
+
+The rate and threshold tables immediately below are for **2024-25** and are retained for prior
+year work. They are not current. Ask which income year is being prepared, then look up that year's
+rates, thresholds and asset limits on ato.gov.au before calculating anything. The resident rate
+scale changed for 2026-27, when the second bracket became 15 cents. [ATO, Tax rates: Australian
+resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents)
+
+The classification, deduction, depreciation and CGT rules in Sections 2 to 8 do not depend on the
+income year, except where a section says otherwise.
 
 ### Key Thresholds (2024-25)
 
@@ -75,7 +88,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### 2.1 Rental Income
 
-- **All gross rental income** — All gross rental income is assessable. Report at Item 21 (Rent) on the Individual Tax Return.
+- **All gross rental income** — All gross rental income is assessable. Report at Item 21 (Rent) on the Individual Tax Return.  _(Report at Item 21 (Rent) on the Individual Tax Return)_
 
 **Rental Income Types**
 
@@ -89,7 +102,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### 2.2 Negative Gearing
 
-- **Negative gearing** — Where total deductions exceed gross rental income, the net rental loss reduces other assessable income (salary, business income). There is no cap on negative gearing for existing or new properties (as of 2025 law).
+- **Negative gearing** — Where total deductions exceed gross rental income, the net rental loss reduces other assessable income (salary, business income). This remains the position for income years up to and including 2026-27.
+- **Enacted limit from 1 July 2027** — Negative gearing for residential property investments is limited to new builds from 1 July 2027. Properties held at 7:30 pm AEST on 12 May 2026 are exempt from the limit. The measure was announced in the 2026-27 Federal Budget and the ATO states it is now law. Establish the acquisition date and whether the property is a new build before projecting a rental loss into 2027-28 or later.  _([ATO, Reforming negative gearing and capital gains tax](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax); [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/latest))_
 
 ### 2.3 Deductible Expenses (Immediate)
 
@@ -112,7 +126,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### 2.4 Repairs vs Improvements (TR 97/23)
 
-**Repairs vs Improvements (TR 97/23)**
+**Repairs vs Improvements (TR 97/23)**  _(TR 97/23)_
 
 | Characteristic | Repair (immediate deduction) | Improvement (capitalise) |
 | --- | --- | --- |
@@ -126,8 +140,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Example: full kitchen renovation | -- | Improvement |
 
 ### 2.5 Division 40 -- Plant & Equipment Depreciation
-
-Applies to removable/mechanical assets within the property.
 
 **Division 40 Effective Lives**
 
@@ -147,8 +159,6 @@ Applies to removable/mechanical assets within the property.
 - **Limitation (from 1 Jul 2017)** — For residential rental properties, only the first owner (or entity that had the asset newly installed) can claim Div 40 deductions. Subsequent owners cannot claim plant & equipment depreciation on existing assets -- they inherit zero depreciable value for previously used items (unless an exception applies, e.g., refurbishment by new owner).
 
 ### 2.6 Division 43 -- Capital Works Deduction
-
-Applies to the structural elements (building itself, fixed improvements).
 
 **Division 43 Capital Works Deduction Rates**
 
@@ -200,8 +210,9 @@ Applies to the structural elements (building itself, fixed improvements).
 | --- | --- |
 | Applies to | Non-resident landlords receiving Australian rental income |
 | Rate | Payer (tenant/agent) must withhold amounts as directed by ATO |
-| FRCGW (foreign resident CGT withholding) | 12.5% of sale price if property value ≥ $750,000 (buyer withholds) |
-| Clearance certificate | Resident vendor obtains to avoid FRCGW at settlement |
+| FRCGW (foreign resident CGT withholding) | For contracts signed from 1 January 2025, 15% of the sale price on all Australian real property, with no value threshold. For contracts from 1 July 2017 to 31 December 2024, 12.5% where the value was $750,000 or more. [ATO, FRCGW](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding) |
+| Clearance certificate | An Australian resident vendor obtains one and gives it to the purchaser before settlement to avoid FRCGW. Apply for it early; processing is not immediate |
+| Variation | A foreign resident vendor can apply for a variation where 15% exceeds the expected Australian tax on the sale |
 
 ## Section 3 -- Transaction Pattern Library
 
@@ -324,11 +335,90 @@ Applies to the structural elements (building itself, fixed improvements).
 
 - **Prohibitions** — NEVER claim travel to a residential rental property as a deduction (removed from 1 July 2017 for non-business landlords); NEVER claim Div 40 plant depreciation for a subsequent owner of residential property (post-2017 rule) unless the asset was newly installed by that owner; NEVER claim Div 43 without evidence of construction cost (quantity surveyor report or original builder records); NEVER deduct loan principal repayments; NEVER deduct expenses relating to periods of genuine private use without apportionment; NEVER claim the CGT 50% discount for a non-resident individual; NEVER omit prior Div 43 deductions from the cost base on disposal (reduces cost base); NEVER present tax calculations as definitive -- always label as estimated
 
+## Section 8 -- Which tax applies, and where its rules live
+
+A property transaction can touch four separate regimes at once. Work out which apply before
+calculating anything, because the answer to one changes the inputs to another.
+
+### 8.1 Decision table by event
+
+**Decision table by event**
+
+| Event | Income tax | GST | CGT | State or territory |
+| --- | --- | --- | --- | --- |
+| Buying a residential investment property | Borrowing costs, and holding costs once available for rent | Generally input taxed on an existing residential premises, so no credit on the purchase. New residential premises may be taxable and may trigger GST at settlement | Establishes the cost base | Transfer duty, and possibly foreign purchaser surcharge duty |
+| Holding and renting it out | Rental income assessable, deductions under Section 2, Div 40 and Div 43 | Residential rent is input taxed, so no GST on rent and no credits on expenses | Deductions claimed under Div 43 reduce the cost base | Land tax, and possibly a foreign owner or vacancy surcharge |
+| Renovating | Repair deductible, improvement capital | Credits depend on whether the premises remain input taxed | Capital work enters the cost base or Div 43 | Nil, unless it changes the land tax position |
+| Short-stay or holiday letting | Apportionment for private use and periods not genuinely available | Commercial residential premises can be taxable rather than input taxed. Test this, do not assume | Main residence exemption can be lost or reduced | Some jurisdictions apply short-stay levies |
+| Buying or holding a commercial property | Rent assessable, deductions available | Generally taxable, so GST on rent and credits on expenses, subject to registration. A going concern or margin scheme may apply on sale | Cost base as normal | Transfer duty and land tax |
+| Selling | Balancing adjustments on Div 40 assets | See `au-gst-property.md`. GST at settlement can require the purchaser to withhold | The CGT calculation. See `au-capital-gains.md` | Duty is payable by the purchaser, not the vendor |
+| Selling as a foreign resident | Rental income to the date of sale | As above | No full 50% discount, and the main residence exemption is generally unavailable | As above |
+
+### 8.2 The GST decision path
+
+1. **Is the supply residential premises?** Existing residential premises are input taxed: no GST
+   on the sale or the rent, and no credits on related acquisitions.
+2. **Are they new residential premises?** New residential premises are generally taxable, which
+   changes both the GST on sale and the purchaser's withholding obligation at settlement.
+3. **Are they commercial residential premises?** Hotels, motels and similar are taxable, not input
+   taxed. Short-stay accommodation sits near this boundary and needs the actual facts.
+4. **Is it commercial property?** Generally taxable, subject to registration and turnover.
+5. **Does an entity-level test change the answer?** Registration, the $75,000 threshold, and
+   whether the activity amounts to an enterprise all sit upstream of the supply classification.
+6. **Does a special rule apply on sale?** The margin scheme, the going concern exemption and GST
+   at settlement each have their own conditions.
+
+The full rules are in `au-gst-property.md` and `australia-gst.md`. Do not decide a property GST
+question from this file alone.
+
+### 8.3 State and territory taxes are not federal, and are not uniform
+
+Land tax, transfer duty, foreign purchaser and foreign owner surcharges, and vacancy or short-stay
+levies are imposed by each state and territory under its own Act. Thresholds, rates, exemptions,
+aggregation rules, trust surcharges and the definition of a principal place of residence all
+differ. A rule from one jurisdiction must never be applied to another.
+
+Establish the jurisdiction first, then read that jurisdiction's own guidance:
+
+**Jurisdiction revenue authorities**
+
+| Jurisdiction | Revenue authority |
+| --- | --- |
+| New South Wales | Revenue NSW, https://www.revenue.nsw.gov.au/ |
+| Victoria | State Revenue Office Victoria, https://www.sro.vic.gov.au/ |
+| Queensland | Queensland Revenue Office, https://qro.qld.gov.au/ |
+| Western Australia | RevenueWA, https://www.wa.gov.au/organisation/department-of-finance/revenuewa |
+| South Australia | RevenueSA, https://www.revenuesa.sa.gov.au/ |
+| Tasmania | State Revenue Office Tasmania, https://www.sro.tas.gov.au/ |
+| Australian Capital Territory | ACT Revenue Office, https://www.revenue.act.gov.au/ |
+| Northern Territory | Territory Revenue Office, https://treasury.nt.gov.au/dtf/territory-revenue-office |
+
+Land tax paid on an income-producing property is generally deductible in the year it is incurred.
+Transfer duty on the purchase is not deductible; it is a cost base element. See `au-land-tax.md`
+and `au-stamp-duty.md` for the jurisdiction-specific detail.
+
+### 8.4 Related guides
+
+**Related guides**
+
+| Question | Guide |
+| --- | --- |
+| GST on a property sale, margin scheme, GST at settlement | `au-gst-property.md` |
+| CGT calculation, losses, discount, the 1 July 2027 changes | `au-capital-gains.md` |
+| Land tax by jurisdiction | `au-land-tax.md` |
+| Transfer duty by jurisdiction | `au-stamp-duty.md` |
+| Reporting the rental schedule in the return | `au-individual-return.md` |
+| Deductions and offsets generally | `au-deductions-offsets.md` |
+| Foreign resident disposals | `au-nonresident-cgt.md` |
+| Property held in a trust or SMSF | `au-trust-distributions.md`, `au-smsf.md` |
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, registered tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -61,13 +61,14 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `new-jersey-sales-tax.md`
-57. `nj-cbt-and-bait.md`
-58. `nj-income-tax.md`
-59. `nj-payroll.md`
-60. `nj-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `new-jersey-sales-tax.md`
+58. `nj-cbt-and-bait.md`
+59. `nj-income-tax.md`
+60. `nj-payroll.md`
+61. `nj-sales-tax.md`
 
 ## How to use
 

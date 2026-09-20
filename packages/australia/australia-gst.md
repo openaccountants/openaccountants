@@ -1,10 +1,10 @@
 ---
 name: australia-gst
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Australian GST return (Business Activity Statement / BAS) for any client. Trigger on phrases like "prepare BAS", "do the GST", "fill in BAS", "create the return", "GST return", "Activity Statement", or any request involving Australian GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Australia only and covers both Simpler BAS and full BAS reporting. GST groups, margin scheme, partial exemption complex, and going concern are all in the refusal catalogue. ALWAYS read this skill before touching any GST-related work.
-version: 2.2
+version: 2.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-09-17
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -35,7 +35,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Supporting legislation | Taxation Administration Act 1953 (Schedule 1); GST Regulations 2019; LCT Act 1999; WET Act 1999 |
 | Contributor | Open Accounting Skills Registry |
 | Validation date | April 2026 |
-| Skill version | 2.2 |
+| Skill version | 2.3 |
 
 **Read this whole section before classifying anything.**
 
@@ -62,9 +62,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | 1A | GST on sales (output GST) |
 | 1B | GST on purchases (input tax credits) |
 
-- **Simpler BAS reporting scope** — Simpler BAS (turnover < $10M, default since 1 July 2017): Report only G1, 1A, 1B. No need for G2-G18.
-- **Full BAS reporting scope:** Complete the labels required by the issued BAS. G4–G9 and G12–G19 are calculation-worksheet items, not a requirement to lodge every G label. Use G1, G2, G3, G10, G11, 1A and 1B where required, plus other tax labels that apply. [ATO GST reporting](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst).
-- **GST calculation formulas** — GST = GST-inclusive price x 1/11; GST = GST-exclusive price x 10%; GST-inclusive = GST-exclusive x 1.1; GST-exclusive = GST-inclusive / 1.1
+- **Simpler BAS reporting scope** — Simpler BAS (turnover < $10M, default since 1 July 2017): Report only G1, 1A, 1B. No need for G2-G18.  _(ATO GST reporting)_
+- **Full BAS reporting scope** — Complete the labels required by the issued BAS. G4–G9 and G12–G19 are calculation-worksheet items, not a requirement to lodge every G label. Use G1, G2, G3, G10, G11, 1A and 1B where required, plus other tax labels that apply.  _([ATO GST reporting](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst))_
+- **GST calculation formulas** — GST = GST-inclusive price x 1/11; GST = GST-exclusive price x 10%; GST-inclusive = GST-exclusive x 1.1; GST-exclusive = GST-inclusive / 1.1  _(Section 1 -- Quick reference)_
 
 **Conservative defaults -- Australian-specific**
 
@@ -90,6 +90,18 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | MEDIUM counterparty concentration | >40% of output OR input |
 | MEDIUM conservative-default count | >4 across the return |
 | LOW absolute net GST position | AUD $10,000 |
+
+### Related guides
+
+**Related guides**
+
+| Question | Guide |
+| --- | --- |
+| The end-to-end BAS preparation sequence, reconciliation, label mapping and corrections | `au-bas-preparation.md` |
+| PAYG withholding, PAYG instalment and FBT instalment labels | `au-gst-bas.md` |
+| Property supplies, the margin scheme and GST at settlement | `au-gst-property.md` |
+| Due dates, penalties, interest and remission | `au-lodgment-deadlines-penalties.md` |
+| Account coding, evidence and reconciliation controls | `australia-bookkeeping.md` |
 
 ### Required inputs
 
@@ -228,7 +240,7 @@ Use merchant patterns to identify candidate treatments. Confirm the actual suppl
 | DROPBOX | Dropbox (IE or US) | Non-resident supply | Check invoice |
 | AWS, AMAZON WEB SERVICES | Amazon Web Services Inc (US) or AWS Australia Pty Ltd | Check invoice | If AU entity: domestic 10%. If US entity: non-resident. |
 
-- **Non-resident digital supplies note** — Since 1 July 2017, many non-resident digital suppliers (Netflix, Spotify, Google, etc.) have registered for Australian GST and charge 10% on B2C supplies. For B2B supplies where the recipient provides an ABN, the supplier may not charge GST -- reverse charge may apply on the recipient if the acquisition is not fully creditable. Always check the actual invoice.
+- **Non-resident digital supplies note** — Since 1 July 2017, many non-resident digital suppliers (Netflix, Spotify, Google, etc.) have registered for Australian GST and charge 10% on B2C supplies. For B2B supplies where the recipient provides an ABN, the supplier may not charge GST -- reverse charge may apply on the recipient if the acquisition is not fully creditable. Always check the actual invoice.  _(3.7 SaaS (reverse charge from non-resident suppliers))_
 
 ### 3.8 Payment processors (classify the actual service)
 
@@ -266,8 +278,8 @@ Use merchant patterns to identify candidate treatments. Confirm the actual suppl
 | RETAIL LEASE, SHOP RENT, INDUSTRIAL RENT | Domestic 10% | Commercial lease -- taxable |
 | RESIDENTIAL RENT, HOME RENT, APARTMENT RENT | EXCLUDE | Residential rent -- input taxed (Division 40). No GST, no credit on related costs. |
 | REAL ESTATE AGENT (rental management fee) | TIER 2 | If managing commercial property: 10% taxable, credit claimable. If managing residential property: 10% taxable, but NO credit (cost relates to input taxed supply). |
-| STRATA, BODY CORPORATE, OWNERS CORP | Review supply and registration | G11 | A registered body corporate’s supplies to members can be taxable. Residential accommodation being input taxed does not make the levy automatically input taxed. GSTR 2015/3 |
-| AIRBNB, STAYZ, BOOKING.COM (income) | Review premises and supply | G1 or G4 as applicable | Residential premises may remain input taxed for short stays; commercial residential premises require their own test. GST Act ss 40-35 and 195-1; GSTR 2012/5 |
+| STRATA, BODY CORPORATE, OWNERS CORP | Review supply and registration | G11 |
+| AIRBNB, STAYZ, BOOKING.COM (income) | Review premises and supply | G1 or G4 as applicable |
 
 ### 3.11 Superannuation (not a supply -- exclude)
 
@@ -451,7 +463,7 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 | Sale of existing residential premises | Input taxed |
 | Sale of NEW residential premises | Taxable 10% (first sale after construction/substantial renovation) |
 | Commercial rent (office, retail, warehouse) | Taxable 10% |
-| Short-stay accommodation | Classify the premises and supply | Hotels may be commercial residential premises; an ordinary residential Airbnb stay does not become taxable because it lasts under three months |
+| Short-stay accommodation | Classify the premises and supply |
 
 ### 5.4 Out-of-scope transactions (not on BAS)
 
@@ -474,7 +486,7 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 
 ### 5.6 Input tax credit entitlement (Division 11)
 
-- **Entitlement conditions:** Establish the s 11-5 creditable acquisition conditions, including taxable supply, consideration, registration and creditable purpose. Apply the attribution rules: generally hold a valid tax invoice before claiming, subject to the $82.50 including-GST exception and other lawful exceptions/discretion. The four-year claim limit is not permission to claim before obtaining required evidence. [GST Act ss 11-5, 29-10, 29-80 and 93-5](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-10).
+- **Entitlement conditions** — Establish the s 11-5 creditable acquisition conditions, including taxable supply, consideration, registration and creditable purpose. Apply the attribution rules: generally hold a valid tax invoice before claiming, subject to the $82.50 including-GST exception and other lawful exceptions/discretion. The four-year claim limit is not permission to claim before obtaining required evidence.  _([GST Act ss 11-5, 29-10, 29-80 and 93-5](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-10))_
 - **Blocked credits** — No credit for acquisitions relating to input taxed supplies (s 11-15), private/domestic use (s 11-15), entertainment where FBT exempt (s 69-5), non-deductible fines/penalties (s 69-5).  _(s 11-15, s 69-5)_
 - **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2024-25 and 2025-26: $69,674 / 11 = ~$6,334 maximum credit; for 2026-27: $69,883 / 11 = ~$6,353. No outright block on cars (unlike Malta).  _(s 69-10)_
 
@@ -491,7 +503,61 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 | GST amount (or "price includes GST") | Yes | Yes |
 | Recipient identity (name, ABN) | No | Yes |
 
-- **No ABN withholding:** Where required, withhold 47% and report at W4, subject to the entity’s withholding reporting class. Apply exceptions, including payments of $75 or less excluding GST and valid supplier statements where relevant. [ATO PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding).
+- **No ABN withholding** — Where required, withhold 47% and report at W4, subject to the entity’s withholding reporting class. Apply exceptions, including payments of $75 or less excluding GST and valid supplier statements where relevant.  _([ATO PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding))_
+
+### 5.8 Adjustments (Divisions 19, 21 and 129)
+
+An adjustment is not an error. It arises because something changed after the original supply or
+acquisition was correctly reported. Errors are dealt with under the correction rules; see
+`au-bas-preparation.md` Section 7 for the credit error and debit error time and value limits and
+for when a revision is required instead.
+
+**The two directions**
+
+| Direction | Effect | Where it goes |
+| --- | --- | --- |
+| Increasing adjustment | Increases net GST, either more GST on sales or less credit on purchases | 1A if it relates to a supply, 1B if it reduces a credit |
+| Decreasing adjustment | Decreases net GST, either less GST on sales or more credit on purchases | 1A if it relates to a supply, 1B if it increases a credit |
+
+**Common adjustment events**
+
+| Event | Division | Treatment |
+| --- | --- | --- |
+| Price increase or decrease after the supply | Div 19 | Adjustment in the period the adjustment event is accounted for |
+| Supply cancelled, or goods returned | Div 19 | As above |
+| Bad debt written off by the supplier, or a debt overdue 12 months | Div 21 | Decreasing adjustment for the supplier, increasing adjustment for the recipient who claimed the credit |
+| Bad debt later recovered | Div 21 | Reverses the earlier adjustment to the extent recovered |
+| Change in the extent of creditable purpose | Div 129 | Compared over prescribed adjustment periods, with thresholds that can remove the need to adjust |
+| Goods applied solely to private or domestic use | Div 130 | Increasing adjustment |
+| Cancellation of registration, with assets on hand | Div 138 | Increasing adjustment |
+| Becoming registered, with assets on hand acquired earlier | Div 129 | Can give rise to a decreasing adjustment |
+
+**Adjustment notes.** A decreasing adjustment arising from an adjustment event on a supply
+generally cannot be claimed until an adjustment note is held, subject to the minor adjustment
+exemption and the Commissioner's determinations. The supplier issues the adjustment note.
+[GST Act ss 29-20, 29-75](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-75)
+
+**Attribution.** An adjustment is attributed to the tax period in which the entity becomes aware
+of the adjustment event, not to the period of the original supply. Reopening the original period
+is the wrong treatment.
+
+**Bad debts, the two-sided rule.** A supplier accounting on a non-cash basis who writes off a
+debt as bad, or holds a debt overdue 12 months or more, gets a decreasing adjustment. The
+recipient who claimed the credit and has not paid has a matching increasing adjustment. Both sides
+must be considered; a client who has not paid a supplier for over 12 months may owe GST back.
+
+**Division 129 in practice.** The most common trigger is a property or asset whose actual use
+turns out to differ from the planned use, for example a development intended for sale that is
+rented out instead. Division 129 compares planned and actual use over set adjustment periods, and
+the number of adjustment periods depends on the value of the acquisition. This is fact-sensitive;
+escalate rather than estimate.
+
+**What is not an adjustment**
+
+- A mistake in the original reporting. That is an error.
+- A delay in attributing a credit, where the entity simply claims it in a later period under the
+  attribution rules.
+- A change in the GST rate or law. There is none to date; the rate has been 10% since 1 July 2000.
 
 ## Section 6 -- Tier 2 catalogue
 
@@ -541,7 +607,7 @@ For H, use the primary categories above. Earlier G13/G14/G15 references describe
 
 ### Sheet "BAS Summary" (Full BAS)
 
-Use GST-inclusive reporting amounts consistently. Populate named cells with:
+**BAS Summary formulas table**
 
 | Label | Formula / rule |
 | --- | --- |
@@ -551,6 +617,8 @@ Use GST-inclusive reporting amounts consistently. Populate named cells with:
 | 1A | Sum G for sales categories, plus supported GST adjustments |
 | 1B | Sum G for G10 and G11, plus supported credit adjustments |
 | Net GST | 1A - 1B |
+
+Use GST-inclusive reporting amounts consistently. Populate named cells with:
 
 For example, G10 = SUMIFS(Transactions!N:N,Transactions!H:H,"G10"). G1 combines four such SUMIFS for its sales categories. 1B sums the verified credits in G for G10 and G11. Do not subtract non-creditable purchases again from a total of credits. G4–G9 and G12–G19 may support a separate calculation worksheet but are not all lodged BAS labels.
 
@@ -640,7 +708,7 @@ Inference rule: foreign currency credits, overseas counterparty names. Fallback 
 
 ### Filing deadlines (quarterly)
 
-**Filing deadlines table**
+**Filing deadlines table**  _(Filing deadlines table)_
 
 | Quarter | Period | Due date |
 | --- | --- | --- |
@@ -649,13 +717,13 @@ Inference rule: foreign currency credits, overseas counterparty names. Fallback 
 | Q3 | 1 January -- 31 March | 28 April |
 | Q4 | 1 April -- 30 June | 28 July |
 
-- **Other deadline notes:** Monthly GST is generally due on the 21st of the next month. Annual GST is generally due with the income-tax return, or 28 February after the year where no return is required. Check the actual statement, extensions and next-business-day rule. [ATO annual GST](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas-or-annual-gst-return).
+- **Other deadline notes** — Monthly GST is generally due on the 21st of the next month. Annual GST is generally due with the income-tax return, or 28 February after the year where no return is required. Check the actual statement, extensions and next-business-day rule.  _(ATO annual GST — https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas-or-annual-gst-return)_
 
 ### Penalties
 
-- **Failure to lodge (FTL):** The base penalty is one unit per 28-day period or part, capped at five units. Apply the relevant entity multipliers, dates and remission rules. The penalty unit is $364 from 1 July 2026. [Crimes (Amount of a Penalty Unit) Instrument 2026](https://www.legislation.gov.au/F2026N00424/asmade/text).
-- **General Interest Charge (GIC):** Use the published quarterly ATO rate and applicable daily compounding. GIC and SIC incurred on or after 1 July 2025 are not deductible; preserve the earlier rule only for earlier-incurred interest. [ATO interest](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/cost-of-managing-tax-affairs/interest-charged-by-the-ato).
-- **Shortfall penalties:** Base rates can be 25%, 50% or 75% according to the conduct. A qualifying pre-notification voluntary disclosure generally reduces the penalty by 80% where the shortfall is at least $1,000 and 100% below that amount. The qualifying post-notification reduction is 20%. Apply the statutory conditions and any other adjustments. [TAA Schedule 1 s 284-225](https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-284-225).
+- **Failure to lodge (FTL)** — The base penalty is one unit per 28-day period or part, capped at five units. Apply the relevant entity multipliers, dates and remission rules. The penalty unit is $364 from 1 July 2026.  _(Crimes (Amount of a Penalty Unit) Instrument 2026 — https://www.legislation.gov.au/F2026N00424/asmade/text)_
+- **General Interest Charge (GIC)** — Use the published quarterly ATO rate and applicable daily compounding. GIC and SIC incurred on or after 1 July 2025 are not deductible; preserve the earlier rule only for earlier-incurred interest.  _(ATO interest — https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/cost-of-managing-tax-affairs/interest-charged-by-the-ato)_
+- **Shortfall penalties** — Base rates can be 25%, 50% or 75% according to the conduct. A qualifying pre-notification voluntary disclosure generally reduces the penalty by 80% where the shortfall is at least $1,000 and 100% below that amount. The qualifying post-notification reduction is 20%. Apply the statutory conditions and any other adjustments.  _(TAA Schedule 1 s 284-225 — https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-284-225)_
 
 ### Registration thresholds
 
@@ -668,11 +736,11 @@ Inference rule: foreign currency credits, overseas counterparty names. Fallback 
 | Taxi/rideshare | Registration regardless of turnover | GST Act, s 144-5 |
 | Non-resident digital supplier (B2C) | $75,000 Australian turnover | Division 83-5 |
 
-- **GST turnover composition** — GST turnover includes taxable + GST-free supplies. Excludes input taxed, not connected with Australia, capital asset sales (unless regularly dealing).
+- **GST turnover composition** — GST turnover includes taxable + GST-free supplies. Excludes input taxed, not connected with Australia, capital asset sales (unless regularly dealing).  _(GST turnover composition)_
 
 ### Cash vs accrual basis
 
-**Cash vs accrual basis table**
+**Cash vs accrual basis table**  _(Cash vs accrual basis table)_
 
 | Feature | Cash | Accrual |
 | --- | --- | --- |
@@ -698,7 +766,7 @@ Inference rule: foreign currency credits, overseas counterparty names. Fallback 
 
 ### Comparison with EU VAT (for practitioners familiar with EU systems)
 
-**Comparison table**
+**Comparison table**  _(Comparison table)_
 
 | Feature | Australian GST | EU VAT |
 | --- | --- | --- |
@@ -743,7 +811,7 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 - **v2.0 (April 2026):** Full rewrite to align with Malta v2.0 structure. Ten sections: quick reference (1), inputs and refusals (2), supplier pattern library with 12 sub-tables (3), six worked examples from CBA NetBank format (4), Tier 1 rules compressed (5), Tier 2 catalogue with 7 items (6), Excel template (7), bank statement reading guide (8), onboarding fallback with inference rules (9), reference material (10). Five Australia-specific refusals (R-AU-1 through R-AU-5).
 - **v1.1 (April 2026):** Monolithic skill with classification rules, BAS labels, reverse charge, thresholds, edge cases, and test suite. Comprehensive but not aligned with v2.0 architecture.
 
-### Self-check (v2.2)
+### Self-check (v2.3)
 
 1. Quick reference at top with BAS label table and conservative defaults: yes (Section 1).
 2. Supplier library as literal lookup tables: yes (Section 3, 12 sub-tables).
@@ -761,13 +829,15 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 14. Payment processor fees as financial supply explicit: yes (Section 3.8 + Example 6).
 15. Supermarket split (GST-free food vs taxable items) explicit: yes (Section 3.6 + Example 3).
 
-## End of Australia GST Return Preparation Skill v2.2
+## End of Australia GST Return Preparation Skill v2.3
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-16T09:40:53+00:00",
+ "generated_at": "2026-09-19T08:22:04+00:00",
  "counts": {
-  "guides": 2014,
+  "guides": 2018,
   "jurisdictions": 245,
   "accountant_reviewed": 171
  },
@@ -1531,6 +1531,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "us-tax-return-review-supporting-documents-findings",
+   "path": "skills/federal/us-tax-return-review-supporting-documents-findings.md",
+   "name": "us-tax-return-review-supporting-documents-findings",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-16"
+  },
+  {
    "slug": "ifrs3-business-combinations",
    "path": "skills/financial-reporting/business-combinations/ifrs3-business-combinations.md",
    "name": "ifrs3-business-combinations",
@@ -1972,7 +1984,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "optimisation-advisor",
@@ -2575,6 +2587,18 @@
    "last_updated": "2026-09-03"
   },
   {
+   "slug": "au-bas-preparation",
+   "path": "skills/international/australia/au-bas-preparation.md",
+   "name": "au-bas-preparation",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-17"
+  },
+  {
    "slug": "au-capital-gains-2",
    "path": "skills/international/australia/au-capital-gains-2.md",
    "name": "au-capital-gains-2",
@@ -2595,8 +2619,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "au-company-tax",
@@ -2645,6 +2669,18 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-08-20"
+  },
+  {
+   "slug": "au-deductions-offsets",
+   "path": "skills/international/australia/au-deductions-offsets.md",
+   "name": "au-deductions-offsets",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "au-div7a",
@@ -2755,6 +2791,18 @@
    "last_updated": "2026-08-20"
   },
   {
+   "slug": "au-lodgment-deadlines-penalties",
+   "path": "skills/international/australia/au-lodgment-deadlines-penalties.md",
+   "name": "au-lodgment-deadlines-penalties",
+   "jurisdiction": "AU",
+   "category": "international",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-17"
+  },
+  {
    "slug": "au-medicare-levy",
    "path": "skills/international/australia/au-medicare-levy.md",
    "name": "au-medicare-levy",
@@ -2788,7 +2836,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "au-not-for-profit",
@@ -2896,7 +2944,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "au-small-business-cgt",
@@ -3004,7 +3052,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-10"
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "australia-financial-statements-2",
@@ -3064,7 +3112,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-10"
+   "last_updated": "2026-09-17"
   },
   {
    "slug": "australia-payroll",

@@ -1,10 +1,10 @@
 ---
 name: australia-bookkeeping
-description: Use this skill whenever asked about Australian bookkeeping for sole traders, partnerships, or small companies. Trigger on phrases like "chart of accounts", "BAS", "GST codes", "bookkeeping", "profit and loss", "balance sheet", "AASB", "simplified disclosures", "Tier 2", "bank reconciliation", "expense categories", "revenue recognition", "depreciation", "instant asset write-off", "small business pool", "ABN", "ATO reporting", "activity statement", "accrual basis", "cash basis", "general ledger", or any question about day-to-day transaction recording, financial statement preparation, or account coding for an Australian business.
-version: 1.1
+description: Use this skill whenever asked about Australian bookkeeping for sole traders, partnerships, or small companies. Trigger on phrases like "chart of accounts", "BAS", "GST codes", "bookkeeping", "profit and loss", "balance sheet", "AASB", "simplified disclosures", "Tier 2", "bank reconciliation", "expense categories", "revenue recognition", "depreciation", "instant asset write-off", "small business pool", "ABN", "ATO reporting", "activity statement", "accrual basis", "cash basis", "general ledger", "how do I classify this transaction", "what evidence do I need", "capital or revenue", "private use apportionment", "fix a bookkeeping error", "accounting versus tax treatment", or any question about day-to-day transaction recording, financial statement preparation, or account coding for an Australian business.
+version: 1.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-09-17
 review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
@@ -14,6 +14,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia Bookkeeping
+
+## Australia Bookkeeping
 
 ## Section 1 -- Quick Reference
 
@@ -201,7 +203,7 @@ Australian software (Xero, MYOB, QuickBooks) typically uses 3–4 digit codes. T
 
 ### Cash vs Accrual Rules
 
-**Cash vs Accrual Rules**
+**Cash vs Accrual Rules**  _(TR 98/1; s 328-285; ITAA 1936 ss 82KZL and 82KZM)_
 
 | Criterion | Cash Basis (Sole Traders / Small Business) | Accruals Basis |
 | --- | --- | --- |
@@ -267,7 +269,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 ### Instant Asset Write-Off (IAWO)
 
-**Instant Asset Write-Off (IAWO)**
+**Instant Asset Write-Off (IAWO)**  _(Tax Reform No. 2 Act 2026, schedules 1–2 (https://www.legislation.gov.au/C2026A00071/asmade/text))_
 
 | Period | Threshold | Eligibility |
 | --- | --- | --- |
@@ -295,7 +297,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 ### Common effective lives (2025 determination, asset-specific)
 
-**Common effective lives (2025 determination, asset-specific)**  ([Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Table B](https://www.legislation.gov.au/F2025L01097/asmade/text)). Choose the determination applicable under s 40-95; the 2025 instrument commenced on 16 September 2025.
+**Common effective lives (2025 determination, asset-specific)**  _(Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Table B (https://www.legislation.gov.au/F2025L01097/asmade/text). Choose the determination applicable under s 40-95; the 2025 instrument commenced on 16 September 2025.)_
 
 | Asset | Effective Life | DV Rate | PC Rate |
 | --- | --- | --- | --- |
@@ -310,7 +312,7 @@ Small businesses using simplified reporting typically recognise on delivery/comp
 
 ### Car Limit
 
-- **Car cost limit for depreciation** — For 2025-26, the limit is AUD 69,674. For 2026-27, it is AUD 69,883. Only the business-use portion of the applicable limit can be depreciated. AUD  _(Car cost limit for depreciation)_
+- **Car cost limit for depreciation** — For 2025-26, the limit is AUD 69,674. For 2026-27, it is AUD 69,883. Only the business-use portion of the applicable limit can be depreciated. AUD  _(Car cost limit for depreciation)_ AUD
 
 ## Section 6 -- P&L Format
 
@@ -524,9 +526,122 @@ TOTAL EQUITY                                          xxx
 - Common items: car fringe benefit, entertainment, loan fringe benefit
 - Meals/entertainment: establish whether an available 50/50 valuation election was made and its scope before applying it. Otherwise use the applicable actual-benefit and deduction rules. Do not default every meal to a 50% deduction. [ATO FBT entertainment](https://www.ato.gov.au/law/view/document?docid=SAV/FBTGEMP/00001).
 
+## Section 11 -- Classification, Evidence and Corrections
+
+### 11.1 The classification decision
+
+Every transaction needs four decisions, not one. Answer them in this order, because a later
+answer can change an earlier one.
+
+1. **Is it a business transaction at all?** Owner drawings, private spending on a business card
+   and internal transfers between the entity's own accounts are not income or expenses. Code them
+   to equity or to the relevant balance sheet account.
+2. **Revenue or capital?** A cost that acquires, upgrades or extends the life of an asset is
+   capital. A cost that restores it to its prior condition is a repair. See Section 5 for the
+   thresholds and `au-rental-property.md` for the repairs and improvements tests.
+3. **Which account?** Use the chart of accounts in Section 2. Consistency between periods matters
+   more than finding a perfect label; a category that changes each year destroys comparatives.
+4. **Which GST code?** Only after the first three. See the table in Section 4. A transaction coded
+   to the wrong account often carries the wrong GST code with it.
+
+**Private use.** Where an expense serves both business and private purposes, record the full
+amount and apportion, rather than guessing a net figure. The apportionment basis must be
+documented and consistent: a logbook for a vehicle, a floor area or hours record for a home
+office, an itemised bill for a phone. A percentage with no supporting method fails on review.
+
+**Unknown transactions.** Post to a clearing or suspense account and list them for the client.
+Never guess a classification to close a period. An unresolved suspense balance at period end means
+the BAS and the accounts are both unreliable. See `au-bas-preparation.md` Section 4.
+
+### 11.2 Evidence to hold
+
+**11.2 Evidence to hold**
+
+| Transaction | Evidence required |
+| --- | --- |
+| Sale | Invoice or point-of-sale record. A tax invoice where GST is charged |
+| Purchase where a GST credit is claimed | A valid tax invoice, unless the acquisition is $82.50 including GST or less |
+| Purchase with no GST credit | Sufficient record to show the expense was incurred and its purpose |
+| Asset acquisition | Invoice, plus the date first used or installed ready for use |
+| Asset disposal | Sale document, plus the written down value and any balancing adjustment |
+| Vehicle expenses | Logbook for a continuous 12-week period, valid five years, plus odometer readings, or kilometre records for the cents per kilometre method |
+| Home office | Hours record and evidence that the expenses were incurred |
+| Payroll | Payroll register, timesheets, the employment record and STP submissions |
+| Adjustment to a sale or purchase | Adjustment note or credit note |
+| Bad debt written off | The board minute or file note recording the write-off and its date |
+
+### 11.3 Reconciliation as a control, not a chore
+
+A reconciliation is what makes the ledger evidence rather than assertion. At minimum, each period:
+
+- Every bank, credit card and loan account reconciled to the statement.
+- GST collected and GST paid control accounts agreed to the transaction listing.
+- PAYG withholding payable agreed to the payroll register less amounts remitted.
+- Accounts receivable and accounts payable subledgers agreed to their control accounts.
+- Inventory agreed to a count or a supported roll-forward.
+- Loan accounts agreed to the lender statement, with interest and principal split correctly.
+- Clearing and suspense accounts at nil or fully explained.
+
+### 11.4 Accounting treatment is not tax treatment
+
+The ledger produces the financial statements. The tax return starts from those statements and then
+adjusts. Recording the tax answer in the ledger destroys the financial statements; recording only
+the accounting answer and forgetting the adjustment understates or overstates tax. Keep both, and
+keep the reconciliation between them.
+
+**11.4 Accounting treatment is not tax treatment**
+
+| Item | Accounting treatment | Tax treatment |
+| --- | --- | --- |
+| Depreciation | Useful life and residual value under AASB 116 | Effective life under Division 40, the small business pool, or the instant asset write-off |
+| Buildings and structural improvements | Depreciated or held at cost under AASB 116 | Division 43 capital works at a fixed rate, and the deduction reduces the CGT cost base |
+| Employee leave provisions | Recognised when the obligation arises | Deductible when the leave is paid |
+| Doubtful debts allowance | An impairment estimate | Not deductible. Only a debt actually written off as bad is deductible |
+| Entertainment | An expense in the profit and loss | Commonly non-deductible, and may instead be a fringe benefit |
+| Fines and penalties | An expense | Not deductible |
+| General interest charge on a tax debt | An expense | Not deductible where incurred on or after 1 July 2025 |
+| Revenue | AASB 15 performance obligations | Derived when earned or received, depending on the accounting basis and the taxpayer |
+| Prepayments | An asset, expensed over the period | Prepayment rules can spread the deduction, with a 12-month exception for some taxpayers |
+| Borrowing costs | AASB 123 | Deductible over five years or the term of the loan, whichever is shorter |
+| Unrealised foreign exchange movements | Revalued at reporting date | Taxed on a realisation event under Division 775 |
+| Leases | Right-of-use asset and lease liability under AASB 16 | Depends on whether the arrangement is a lease or a hire purchase for tax |
+
+Record permanent and temporary differences in a tax reconciliation working paper. A company also
+needs deferred tax balances where it reports under the full recognition requirements.
+
+### 11.5 Correcting an error
+
+**11.5 Correcting an error**
+
+| Where the error is | What to do |
+| --- | --- |
+| In the current open period, nothing lodged | Fix the transaction. No further action |
+| In a closed period, but no BAS or return lodged | Post a dated correcting journal with a narration explaining it. Do not backdate into a locked period without a record |
+| In a lodged BAS, GST affected | Apply the GST error correction rules. See `au-bas-preparation.md` Section 7 |
+| In a lodged BAS, PAYG withholding affected | Correct through the PAYG withholding correction process, and check whether STP needs updating |
+| In a lodged income tax return | Request an amendment. See `au-lodgment-deadlines-penalties.md` Section 10 |
+| Circumstances changed after correct reporting | This is an adjustment, not an error. Record it in the current period |
+
+### 11.6 Common bookkeeping errors
+
+- Coding a transaction by the payee name rather than by what was supplied. The same supplier can
+  produce taxable, GST-free and input taxed transactions.
+- Claiming a GST credit on wages, superannuation, bank fees, most government charges or stamp duty.
+- Coding a director loan drawing to wages, or a wage to a drawing.
+- Capitalising a repair, or expensing an improvement.
+- Recording a net amount for a transaction that had both a gross figure and a deduction, which
+  hides the deduction from both the accounts and the BAS.
+- Leaving a suspense balance and lodging anyway.
+- Changing the chart of accounts mid-year without restating comparatives.
+- Recording the tax depreciation figure in the ledger and calling it the accounting figure.
+- Treating an impairment allowance as a deductible bad debt.
+- Reconciling the bank but not the GST or PAYG withholding control accounts.
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, registered tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

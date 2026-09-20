@@ -61,15 +61,16 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `nc-bailey-settlement-retirement.md`
-57. `nc-corporate-tax.md`
-58. `nc-estimated-tax.md`
-59. `nc-income-tax.md`
-60. `nc-payroll.md`
-61. `nc-return-assembly.md`
-62. `nc-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `nc-bailey-settlement-retirement.md`
+58. `nc-corporate-tax.md`
+59. `nc-estimated-tax.md`
+60. `nc-income-tax.md`
+61. `nc-payroll.md`
+62. `nc-return-assembly.md`
+63. `nc-sales-tax.md`
 
 ## How to use
 

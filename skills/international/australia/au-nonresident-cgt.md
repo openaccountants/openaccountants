@@ -4,7 +4,7 @@ description: "Use this skill for any non-resident selling Australian assets. Tri
 version: 1.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-16
+last_updated: 2026-09-17
 review_status: pending_review
 category: international
 tier: 2
@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 1 — Quick Reference
 
-**Section 1 Quick Reference table**
+**Section 1 Quick Reference table**  _(ITAA 1997 Div 855; TAA 1953 Sch 1 Subdiv 14-D; [ATO, Tax rates: foreign resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-foreign-residents))_
 
 | Field | Value |
 | --- | --- |
@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 2 — The Core Rule
 
-Non-residents are only subject to Australian CGT on **Taxable Australian Property (TAP)**. Non-TAP assets sold by non-residents: **no Australian CGT**.
+- **Core rule for non-resident CGT** — Non-residents are only subject to Australian CGT on **Taxable Australian Property (TAP)**. Non-TAP assets sold by non-residents: **no Australian CGT**.
 
 ## Section 3 — The TAP Test: What Qualifies as TAP
 
@@ -47,7 +47,7 @@ Non-residents are only subject to Australian CGT on **Taxable Australian Propert
 | Shares in an Australian company where assets are predominantly operating business, IP, goodwill, cash | **NOT TAP** |
 | Portfolio shares (<10% interest in a listed company) | Generally NOT TAP regardless of asset composition |
 
-- **Critical question for company shares** — Look through to the company's balance sheet. If >50% of the market value of the company's assets consists of Australian real property interests → TAP. If the company is an operating business with IP, goodwill, equipment, receivables → likely NOT TAP.
+- **Critical question for company shares** — **Critical question for company shares** — Look through to the company's balance sheet. If >50% of the market value of the company's assets consists of Australian real property interests → TAP. If the company is an operating business with IP, goodwill, equipment, receivables → likely NOT TAP.
 
 ## Section 4 — CGT Rate for Non-Residents
 
@@ -63,8 +63,8 @@ Non-residents are only subject to Australian CGT on **Taxable Australian Propert
 
 ## Section 5 — Foreign Resident Capital Gains Withholding (FRCGW)
 
-- **FRCGW obligation** — For contracts signed from 1 January 2025, the purchaser must withhold 15% of the sale price on Australian real property, with no value threshold. Contracts from 1 July 2017 to 31 December 2024 attracted 12.5% where the value was $750,000 or more. [ATO, Foreign residents capital gains withholding variations](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-residents-and-variations).
-- **FRCGW nature** — This is a payment on account (not a final tax). Actual tax liability is computed in the non-resident's Australian tax return.
+- **FRCGW obligation** — **FRCGW obligation** — For contracts signed from 1 January 2025, the purchaser must withhold 15% of the sale price on Australian real property, with no value threshold. Contracts from 1 July 2017 to 31 December 2024 attracted 12.5% where the value was $750,000 or more. [ATO, Foreign residents capital gains withholding variations](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-residents-and-variations).  _([ATO, Foreign residents capital gains withholding variations](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-residents-and-variations))_
+- **FRCGW nature** — **FRCGW nature** — This is a payment on account (not a final tax). Actual tax liability is computed in the non-resident's Australian tax return.
 
 **FRCGW threshold table**
 
@@ -78,20 +78,20 @@ Non-residents are only subject to Australian CGT on **Taxable Australian Propert
 
 ## Section 6 — Clearance Certificate
 
-- **Clearance certificate for resident sellers** — If the seller is an Australian resident (not a foreign resident), the seller can apply for a clearance certificate from the ATO to confirm residency, relieving the buyer of the withholding obligation.
-- **Variation for non-resident sellers** — If the seller IS a non-resident but believes no tax is payable (e.g. asset is not TAP, or gain is nil due to losses), the seller can apply for a variation to reduce the withholding amount.
+- **Clearance certificate for resident sellers** — **Clearance certificate for resident sellers** — If the seller is an Australian resident (not a foreign resident), the seller can apply for a clearance certificate from the ATO to confirm residency, relieving the buyer of the withholding obligation.
+- **Variation for non-resident sellers** — **Variation for non-resident sellers** — If the seller IS a non-resident but believes no tax is payable (e.g. asset is not TAP, or gain is nil due to losses), the seller can apply for a variation to reduce the withholding amount.
 
 Applications: via ATO online portal (myGov / Tax Agent portal). Processing time: 14-28 days typically.
 
 ## Section 7 — Filing Obligations for Non-Residents
 
-- **Filing requirement** — A non-resident who sells TAP must lodge an Australian non-resident individual tax return for the year of disposal (even if no tax is payable after losses/concessions). Due date: 31 October following the end of the financial year (or later with a tax agent).
-- **TFN requirement** — Australian Tax File Number (TFN) is required. Non-residents can apply via ATO.
+- **Filing requirement** — **Filing requirement** — A non-resident who sells TAP must lodge an Australian non-resident individual tax return for the year of disposal (even if no tax is payable after losses/concessions). Due date: 31 October following the end of the financial year (or later with a tax agent).
+- **TFN requirement** — **TFN requirement** — Australian Tax File Number (TFN) is required. Non-residents can apply via ATO.
 
 ## Section 8 — Interaction with Tax Treaties
 
-- **DTA coverage and Article 13** — Australia has double tax agreements (DTAs) with 45+ countries. Article 13 of most DTAs follows the OECD Model — gains on shares may be taxed by the country of residence of the seller UNLESS the shares derive principally from Australian real property (aligns with the TAP domestic test).
-- **Treaty outcome mirrors domestic TAP rules** — Under most treaties, the outcome mirrors the domestic TAP rules: if TAP → Australia taxes; if not TAP → Australia does not tax (residence country taxes).
+- **DTA coverage and Article 13** — **DTA coverage and Article 13** — Australia has double tax agreements (DTAs) with 45+ countries. Article 13 of most DTAs follows the OECD Model — gains on shares may be taxed by the country of residence of the seller UNLESS the shares derive principally from Australian real property (aligns with the TAP domestic test).
+- **Treaty outcome mirrors domestic TAP rules** — **Treaty outcome mirrors domestic TAP rules** — Under most treaties, the outcome mirrors the domestic TAP rules: if TAP → Australia taxes; if not TAP → Australia does not tax (residence country taxes).
 
 Always check the saving clause and specific treaty wording.
 
@@ -103,6 +103,8 @@ Always check the saving clause and specific treaty wording.
 - ATO: Foreign resident capital gains withholding (ato.gov.au/FRCGW)
 
 > **Working paper only.** The TAP classification requires analysis of the company's asset composition by market value — not book value. Engage a qualified Australian tax adviser for transaction-specific advice.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

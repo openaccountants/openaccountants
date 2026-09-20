@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Australian rental property inco
 version: "1.2"
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-16
+last_updated: 2026-09-17
 review_status: pending_review
 category: international
 tier: 2
@@ -12,6 +12,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # AU Rental Property
+
+## AU Rental Property
 
 ## Australia Rental Property -- Income & Deductions Skill v1.2
 
@@ -86,7 +88,7 @@ income year, except where a section says otherwise.
 
 ### 2.1 Rental Income
 
-- **All gross rental income** — All gross rental income is assessable. Report at Item 21 (Rent) on the Individual Tax Return.
+- **All gross rental income** — All gross rental income is assessable. Report at Item 21 (Rent) on the Individual Tax Return.  _(Report at Item 21 (Rent) on the Individual Tax Return)_
 
 **Rental Income Types**
 
@@ -101,8 +103,7 @@ income year, except where a section says otherwise.
 ### 2.2 Negative Gearing
 
 - **Negative gearing** — Where total deductions exceed gross rental income, the net rental loss reduces other assessable income (salary, business income). This remains the position for income years up to and including 2026-27.
-
-- **Enacted limit from 1 July 2027:** Negative gearing for residential property investments is limited to new builds from 1 July 2027. Properties held at 7:30 pm AEST on 12 May 2026 are exempt from the limit. The measure was announced in the 2026-27 Federal Budget and the ATO states it is now law. Establish the acquisition date and whether the property is a new build before projecting a rental loss into 2027-28 or later. [ATO, Reforming negative gearing and capital gains tax](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax); [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/latest)
+- **Enacted limit from 1 July 2027** — Negative gearing for residential property investments is limited to new builds from 1 July 2027. Properties held at 7:30 pm AEST on 12 May 2026 are exempt from the limit. The measure was announced in the 2026-27 Federal Budget and the ATO states it is now law. Establish the acquisition date and whether the property is a new build before projecting a rental loss into 2027-28 or later.  _([ATO, Reforming negative gearing and capital gains tax](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax); [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/latest))_
 
 ### 2.3 Deductible Expenses (Immediate)
 
@@ -125,7 +126,7 @@ income year, except where a section says otherwise.
 
 ### 2.4 Repairs vs Improvements (TR 97/23)
 
-**Repairs vs Improvements (TR 97/23)**
+**Repairs vs Improvements (TR 97/23)**  _(TR 97/23)_
 
 | Characteristic | Repair (immediate deduction) | Improvement (capitalise) |
 | --- | --- | --- |
@@ -139,8 +140,6 @@ income year, except where a section says otherwise.
 | Example: full kitchen renovation | -- | Improvement |
 
 ### 2.5 Division 40 -- Plant & Equipment Depreciation
-
-Applies to removable/mechanical assets within the property.
 
 **Division 40 Effective Lives**
 
@@ -160,8 +159,6 @@ Applies to removable/mechanical assets within the property.
 - **Limitation (from 1 Jul 2017)** — For residential rental properties, only the first owner (or entity that had the asset newly installed) can claim Div 40 deductions. Subsequent owners cannot claim plant & equipment depreciation on existing assets -- they inherit zero depreciable value for previously used items (unless an exception applies, e.g., refurbishment by new owner).
 
 ### 2.6 Division 43 -- Capital Works Deduction
-
-Applies to the structural elements (building itself, fixed improvements).
 
 **Division 43 Capital Works Deduction Rates**
 
@@ -345,6 +342,8 @@ calculating anything, because the answer to one changes the inputs to another.
 
 ### 8.1 Decision table by event
 
+**Decision table by event**
+
 | Event | Income tax | GST | CGT | State or territory |
 | --- | --- | --- | --- | --- |
 | Buying a residential investment property | Borrowing costs, and holding costs once available for rent | Generally input taxed on an existing residential premises, so no credit on the purchase. New residential premises may be taxable and may trigger GST at settlement | Establishes the cost base | Transfer duty, and possibly foreign purchaser surcharge duty |
@@ -381,6 +380,8 @@ differ. A rule from one jurisdiction must never be applied to another.
 
 Establish the jurisdiction first, then read that jurisdiction's own guidance:
 
+**Jurisdiction revenue authorities**
+
 | Jurisdiction | Revenue authority |
 | --- | --- |
 | New South Wales | Revenue NSW, https://www.revenue.nsw.gov.au/ |
@@ -398,6 +399,8 @@ and `au-stamp-duty.md` for the jurisdiction-specific detail.
 
 ### 8.4 Related guides
 
+**Related guides**
+
 | Question | Guide |
 | --- | --- |
 | GST on a property sale, margin scheme, GST at settlement | `au-gst-property.md` |
@@ -414,6 +417,8 @@ and `au-stamp-duty.md` for the jurisdiction-specific detail.
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, registered tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

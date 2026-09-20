@@ -61,13 +61,14 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `wa-b-and-o-tax.md`
-57. `wa-bo-tax.md`
-58. `wa-business-occupation-tax.md`
-59. `wa-sales-tax.md`
-60. `washington-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `wa-b-and-o-tax.md`
+58. `wa-bo-tax.md`
+59. `wa-business-occupation-tax.md`
+60. `wa-sales-tax.md`
+61. `washington-sales-tax.md`
 
 ## How to use
 

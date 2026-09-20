@@ -61,14 +61,15 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `fl-annual-report.md`
-57. `fl-corporate-income-tax.md`
-58. `fl-sales-tax.md`
-59. `fl-sales-use-tax-surtax.md`
-60. `fl-sales-use-tax.md`
-61. `fl-transient-rental-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `fl-annual-report.md`
+58. `fl-corporate-income-tax.md`
+59. `fl-sales-tax.md`
+60. `fl-sales-use-tax-surtax.md`
+61. `fl-sales-use-tax.md`
+62. `fl-transient-rental-tax.md`
 
 ## How to use
 

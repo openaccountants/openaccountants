@@ -61,18 +61,19 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `ga-corporate-and-ptet.md`
-57. `ga-estimated-tax-depth.md`
-58. `ga-formation.md`
-59. `ga-income-tax.md`
-60. `ga-net-worth-tax.md`
-61. `ga-payroll.md`
-62. `ga-sales-tax.md`
-63. `georgia-corporate-income-tax-returns-form-600.md`
-64. `georgia-individual-tax-return-form-500.md`
-65. `georgia-pass-through-entity-returns-form-700-partnership-and-form-600s-s-corporation.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `ga-corporate-and-ptet.md`
+58. `ga-estimated-tax-depth.md`
+59. `ga-formation.md`
+60. `ga-income-tax.md`
+61. `ga-net-worth-tax.md`
+62. `ga-payroll.md`
+63. `ga-sales-tax.md`
+64. `georgia-corporate-income-tax-returns-form-600.md`
+65. `georgia-individual-tax-return-form-500.md`
+66. `georgia-pass-through-entity-returns-form-700-partnership-and-form-600s-s-corporation.md`
 
 ## How to use
 

@@ -61,12 +61,13 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `az-income-tax.md`
-57. `az-payroll.md`
-58. `az-sales-tax.md`
-59. `az-transaction-privilege-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `az-income-tax.md`
+58. `az-payroll.md`
+59. `az-sales-tax.md`
+60. `az-transaction-privilege-tax.md`
 
 ## How to use
 

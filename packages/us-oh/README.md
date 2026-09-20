@@ -61,14 +61,15 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `oh-cat-tax.md`
-57. `oh-cat.md`
-58. `oh-income-tax.md`
-59. `oh-payroll.md`
-60. `oh-sales-tax.md`
-61. `ohio-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `oh-cat-tax.md`
+58. `oh-cat.md`
+59. `oh-income-tax.md`
+60. `oh-payroll.md`
+61. `oh-sales-tax.md`
+62. `ohio-sales-tax.md`
 
 ## How to use
 

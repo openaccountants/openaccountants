@@ -61,18 +61,19 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `us-ny-freelance-intake.md`
-57. `us-ny-return-assembly.md`
-58. `new-york-sales-tax.md`
-59. `ny-estimated-tax.md`
-60. `ny-formation.md`
-61. `ny-income-tax.md`
-62. `ny-llc-filing-fee.md`
-63. `ny-mctmt.md`
-64. `ny-sales-tax.md`
-65. `nyc-ubt.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `us-ny-freelance-intake.md`
+58. `us-ny-return-assembly.md`
+59. `new-york-sales-tax.md`
+60. `ny-estimated-tax.md`
+61. `ny-formation.md`
+62. `ny-income-tax.md`
+63. `ny-llc-filing-fee.md`
+64. `ny-mctmt.md`
+65. `ny-sales-tax.md`
+66. `nyc-ubt.md`
 
 ## How to use
 

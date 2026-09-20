@@ -61,17 +61,18 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `mi-corporate-income-tax.md`
-57. `mi-detroit-individual-return.md`
-58. `mi-estimated-tax.md`
-59. `mi-homestead-credit.md`
-60. `mi-income-tax.md`
-61. `mi-payroll.md`
-62. `mi-pension-retirement-subtraction.md`
-63. `mi-return-assembly.md`
-64. `mi-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `mi-corporate-income-tax.md`
+58. `mi-detroit-individual-return.md`
+59. `mi-estimated-tax.md`
+60. `mi-homestead-credit.md`
+61. `mi-income-tax.md`
+62. `mi-payroll.md`
+63. `mi-pension-retirement-subtraction.md`
+64. `mi-return-assembly.md`
+65. `mi-sales-tax.md`
 
 ## How to use
 

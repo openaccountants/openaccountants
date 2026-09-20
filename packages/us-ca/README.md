@@ -61,17 +61,18 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `us-ca-freelance-intake.md`
-57. `us-ca-return-assembly.md`
-58. `ca-540-es-estimated-tax.md`
-59. `ca-form-3853-coverage.md`
-60. `ca-formation.md`
-61. `ca-income-tax.md`
-62. `ca-payroll.md`
-63. `ca-sales-use-tax.md`
-64. `ca-smllc-form-568.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `us-ca-freelance-intake.md`
+58. `us-ca-return-assembly.md`
+59. `ca-540-es-estimated-tax.md`
+60. `ca-form-3853-coverage.md`
+61. `ca-formation.md`
+62. `ca-income-tax.md`
+63. `ca-payroll.md`
+64. `ca-sales-use-tax.md`
+65. `ca-smllc-form-568.md`
 
 ## How to use
 

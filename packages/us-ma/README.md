@@ -61,14 +61,15 @@ This package contains **federal** tax skills (which apply to all US states) plus
 51. `us-state-formation-matrix.md`
 52. `us-state-new-hire-reporting-matrix.md`
 53. `us-state-payroll-matrix.md`
-54. `us-federal-return-assembly.md`
-55. `global-router.md`
-56. `ma-corporate-excise.md`
-57. `ma-income-tax.md`
-58. `ma-sales-tax.md`
-59. `maine-sales-tax.md`
-60. `maryland-sales-tax.md`
-61. `massachusetts-sales-tax.md`
+54. `us-tax-return-review-supporting-documents-findings.md`
+55. `us-federal-return-assembly.md`
+56. `global-router.md`
+57. `ma-corporate-excise.md`
+58. `ma-income-tax.md`
+59. `ma-sales-tax.md`
+60. `maine-sales-tax.md`
+61. `maryland-sales-tax.md`
+62. `massachusetts-sales-tax.md`
 
 ## How to use
 

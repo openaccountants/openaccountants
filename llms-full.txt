@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2014 guides, 245 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (2018 guides, 245 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -261,6 +261,7 @@ https://www.openaccountants.com
 - us-state-formation-matrix | US | tier 2 | reviewed_by James Wallach
 - us-state-new-hire-reporting-matrix | US | tier 2 | reviewed_by James Wallach
 - us-state-payroll-matrix | US | tier 2 | reviewed_by James Wallach
+- us-tax-return-review-supporting-documents-findings | US | tier 2 | reviewed_by -
 - ifrs3-business-combinations | GLOBAL | tier 2 | reviewed_by -
 - us-gaap-asc805-business-combinations | US | tier 2 | reviewed_by James Wallach
 - ias32-debt-vs-equity | GLOBAL | tier 2 | reviewed_by -
@@ -348,12 +349,14 @@ https://www.openaccountants.com
 - armenia-vat | AM | tier 2 | reviewed_by -
 - amending-an-individual-income-tax-return-in-australia | AU | tier 2 | reviewed_by -
 - au-amending-individual-income-tax-return-period | AU | tier 2 | reviewed_by -
+- au-bas-preparation | AU | tier 2 | reviewed_by -
 - au-capital-gains-2 | AU | tier 2 | reviewed_by -
 - au-capital-gains | AU | tier 2 | reviewed_by -
 - au-company-tax | AU | tier 2 | reviewed_by -
 - au-crypto-tax-2 | AU | tier 2 | reviewed_by -
 - au-crypto-tax | AU | tier 2 | reviewed_by -
 - au-deceased-estates | AU | tier 2 | reviewed_by -
+- au-deductions-offsets | AU | tier 2 | reviewed_by -
 - au-div7a | AU | tier 2 | reviewed_by -
 - au-fbt-year | AU | tier 2 | reviewed_by -
 - au-fbt | AU | tier 2 | reviewed_by -
@@ -363,6 +366,7 @@ https://www.openaccountants.com
 - au-gst-property | AU | tier 2 | reviewed_by -
 - au-individual-return | AU | tier 2 | reviewed_by -
 - au-land-tax | AU | tier 2 | reviewed_by -
+- au-lodgment-deadlines-penalties | AU | tier 2 | reviewed_by -
 - au-medicare-levy | AU | tier 2 | reviewed_by -
 - au-nonresident-cgt-2 | AU | tier 2 | reviewed_by -
 - au-nonresident-cgt | AU | tier 2 | reviewed_by -
