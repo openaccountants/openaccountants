@@ -1,10 +1,10 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian capital gains tax question, for any entity type. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"capital loss\", \"carry forward capital losses\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\", \"CGT indexation from 2027\". Covers the calculation workflow from CGT event and cost base through losses, discounts and concessions, entity and residency differences, and the enacted 1 July 2027 changes. Routes to au-small-business-cgt, au-nonresident-cgt, au-rental-property and au-crypto-tax for their specialist rules."
-version: 1.4
+version: 1.5
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 review_status: pending_review
 depends_on:
   - au-individual-return
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Capital Gains
 
-## Australia Capital Gains Tax v1.4
+## Australia Capital Gains Tax v1.5
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -188,7 +188,7 @@ interests.
 
 - **Australian residents** — Australian residents are taxed on worldwide capital gains. A foreign income tax offset may be available for foreign tax paid on the same gain, limited to the Australian tax on that income. See `au-foreign-income.md`.
 - **Foreign residents** — Foreign residents are taxed only on taxable Australian property, principally Australian real property, an indirect interest in Australian real property, and assets used in an Australian permanent establishment. See `au-nonresident-cgt.md`.
-- **Ceasing residency** — Ceasing residency triggers CGT events I1 and I2: a deemed disposal at market value of most CGT assets, with an election available to defer the gain until actual disposal, at the cost of remaining within the Australian CGT net. Taxable Australian property is excluded from the deemed disposal. See `leaving-australia-tax-residency-cgt.md`.
+- **Ceasing residency**: CGT event I1 generally brings unrealised gains and losses to account at market value when an individual or company ceases Australian residency. Section 104-160(3) excludes taxable Australian real property, Australian permanent-establishment assets, and options or rights over those latter two categories (section 855-15 items 1 and 3). Section 104-160(5) separately disregards gains and losses on assets acquired before 20 September 1985. The event does not exclude all taxable Australian property: indirect Australian real-property interests can remain within I1. An individual may choose under section 104-165 to disregard all I1 gains and losses, with affected assets remaining in the Australian CGT net. Event I2 concerns a trust ceasing to be a resident trust. See [ITAA 1997 sections 104-160 to 104-175](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-160) and `leaving-australia-tax-residency-cgt.md`.
 - **Main residence exemption for foreign residents** — A foreign resident at the time of disposal cannot claim the main residence exemption for property sold after 30 June 2020 unless the life events test is satisfied. There is no partial or apportioned exemption in that case, and the home first used to produce income rule is also unavailable. The life events test requires a continuous period of foreign residency of six years or less, plus a terminal medical condition of the taxpayer, spouse or child under 18, the death of a spouse or child under 18, or a CGT event arising from a formal relationship breakdown agreement.  _([ATO, Main residence exemption for foreign residents](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents))_
 - **Foreign resident capital gains withholding** — For contracts signed from 1 January 2025, the purchaser must withhold 15% of the sale price for all Australian real property, with no value threshold. An Australian resident vendor avoids withholding by giving the purchaser a clearance certificate before settlement. A foreign resident can apply for a variation. The withheld amount is credited against the vendor's assessment.  _([ATO, Foreign resident capital gains withholding](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding))_
 - **Foreign resident CGT regime changes from 1 October 2026** — The ATO states that enacted changes broaden the meaning of taxable Australian real property, apply the principal asset test over the 365 days before a CGT event rather than only at the event, introduce a notification requirement for certain foreign resident vendor declarations, and provide a transitional 50% discount for eligible foreign residents disposing of certain Australian renewable energy assets. Confirm the amending Act before relying on the detail.  _([ATO, Strengthening the foreign resident CGT regime](https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/strengthening-the-foreign-resident-cgt-regime))_

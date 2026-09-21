@@ -9,22 +9,22 @@ description: >
   PAYG instalments, or bucket companies receiving trust distributions. Trigger on phrases like
   "company tax rate", "base rate entity", "franking credits", "franking account", or "company
   losses". ALWAYS read this skill before touching any company tax work.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-08-20
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Company Income Tax -- Private SME Company Skill v1.0
+# Australia Company Income Tax -- Private SME Company Skill v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Law-change context.** (1) General interest charge (GIC) and shortfall interest charge (SIC) incurred on or after 1 July 2025 are NO LONGER deductible -- 2025-26 returns (this lodgment season) are the first affected; add back any GIC/SIC in the ledger. (2) The temporary loss carry-back offset is **ENDED** -- it was claimable only in the 2020-21 to 2022-23 returns for losses of 2019-20 to 2022-23; carry-forward is the only mechanism for current losses. (3) Small/medium business amendment periods extended from 2 to 4 years for assessments for 2024-25 and later income years.
+> **Law-change context.** (1) General interest charge (GIC) and shortfall interest charge (SIC) incurred on or after 1 July 2025 are NO LONGER deductible -- 2025-26 returns (this lodgment season) are the first affected; add back any GIC/SIC in the ledger. (2) The former temporary loss carry-back ended with 2022-23 claims. A replacement was enacted on 26 August 2026, commences on 1 October 2026 and applies to income years starting on or after 1 July 2026: see Rule 8. (3) For eligible small/medium businesses, the additional amendment window for 2024-25 and later assessments requires a taxpayer application in the approved form; it is not an unrestricted extension of ATO review: see Rule 11.
 
 ## Section 1 -- Quick reference
 
@@ -45,11 +45,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Franking deficit tax (FDT) | Deficit at year end -> franking account tax return + FDT by 31 July (30 June balancers) |
 | Distribution statement (private company) | Within 4 months of the end of the income year of the distribution |
 | Loss carry-forward | COT (s 165-12) or business continuity test (s 165-13: same business s 165-210; similar business s 165-211 for losses of years starting on/after 1 July 2015) |
-| Loss carry-back | **ENDED** -- last claim year 2022-23; do not claim |
+| Loss carry-back | Replacement enacted for income years starting on or after 1 July 2026; commencement 1 October 2026. Test Rule 8 conditions. |
 | Return due (2025-26, typical agent client) | 15 May 2027 lodge and pay (31 March 2027 if 2024-25 total income > $2m) |
 | Return due (self-preparer small company) | Generally 28 February 2027 lodge and pay (31 October 2026 if prior years outstanding) |
 | PAYG instalment GDP uplift | 5% for 2026-27 (4% for 2025-26) |
-| Amendment period (SMB, aggregated turnover < $50m) | 4 years for 2024-25 onwards (2 years for 2023-24 and earlier); others 4 years |
+| Amendment period (SMB, aggregated turnover < $50m) | Generally 2 years, subject to statutory exceptions. For 2024-25 and later assessments, an approved-form taxpayer application can use the additional 2-year window, limited to giving effect to that application. Other companies generally have 4 years. |
 | Contributor | Open Accountants |
 | Validated by | Pending |
 
@@ -224,9 +224,22 @@ Deficit at year end (or on ceasing to be a franking entity) -> FDT equal to the 
 
 Tax losses carry forward indefinitely but are deductible only if the company satisfies the continuity of ownership test -- persons holding more than 50% of voting power, dividend rights AND capital rights at all times from the start of the loss year to the end of the claim year (s 165-12; trace through interposed entities; same-share rule s 165-165) -- or, failing COT, the business continuity test at s 165-13: same business (s 165-210) or, for losses of income years starting on/after 1 July 2015, similar business (s 165-211; LCR 2019/1). Net capital losses follow parallel rules (s 165-96). Deduct in order incurred; s 36-17 choice as to amount (Example 6). Anti-injection rules (s 165-15) and Subdiv 165-CC escalate (R-AU-CT-5).
 
-### Rule 8 -- Loss carry-back: ENDED
+### Rule 8 -- Loss carry-back: former and replacement schemes
 
-The refundable loss carry-back offset applied to losses of 2019-20 to 2022-23, claimable ONLY in the 2020-21 to 2022-23 returns (against tax paid for 2018-19 onwards, capped at the franking account surplus). It has sunset. Any current-year claim is wrong; historical claims surface only via amendment questions -- escalate those (amendment periods have largely closed).
+The former temporary offset covered losses of 2019-20 to 2022-23, claimed in 2020-21 to 2022-23 returns. Historical amendments require their own time-limit check.
+
+The replacement Division 160 was enacted on 26 August 2026. As at 22 September 2026, it has not commenced: commencement is 1 October 2026, with application to assessments for income years starting on or after 1 July 2026. [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text).
+
+For a replacement-scheme claim:
+
+1. Confirm the entity is a corporate tax entity throughout the current loss year, disregarding periods before it existed, and is not a significant global entity that year.
+2. Identify either or both of the 2 preceding income years with an income tax liability and corporate-tax-entity status throughout, disregarding periods before existence.
+3. Check return lodgment for the current year and each of the 5 preceding years. Each year must have a lodged return, no lodgment requirement or an assessment made by the Commissioner.
+4. Make the approved-form choice by lodgment of the current-year return, or a later day allowed by the Commissioner. Allocate the current-year tax loss between eligible years without reusing losses. Apply the transferred-loss, excess-franking-offset and scheme integrity restrictions in sections 160-25 and 160-30.
+5. For each carry-back year, reduce the chosen loss by that year's net exempt income not already used. Multiply the remaining amount by the corporate tax rate for the loss year. Cap the component at that earlier year's income tax liability not already used for a carry-back offset.
+6. Sum the components and cap the refundable offset at the current year-end franking account balance. Check the specific foreign-resident exception in section 160-10(3) before omitting that cap.
+
+For example, a qualifying 25% company chooses to carry a $100,000 loss for 2026-27 against 2025-26. With no net exempt income, at least $25,000 unused prior-year tax liability and a $20,000 year-end franking balance, the offset is $20,000. The company must also meet the choice, lodgment and integrity conditions above.
 
 ### Rule 9 -- Lodgment and payment (2025-26 returns, 30 June balancers)
 
@@ -238,7 +251,7 @@ Companies enter automatically with instalment income >= $2m in the latest return
 
 ### Rule 11 -- Return mechanics and add-backs
 
-Reconcile accounting profit to taxable income on the return: add back non-deductibles (GIC/SIC from 1 July 2025, fines and penalties, entertainment not subject to FBT, accounting depreciation) and adjust for tax timing (tax depreciation, prepayments, provisions -- deductible when incurred, not provided). Franked dividends received: gross up and offset (Rule 4). Distribution statements to shareholders within 4 months of year end (private companies). Amendment periods: SMB 4 years for 2024-25 onwards (2 years for 2023-24 and earlier); other taxpayers 4 years. Keep the losses schedule and flag it where losses > $100,000 are claimed or carried.
+Reconcile accounting profit to taxable income on the return: add back non-deductibles (GIC/SIC from 1 July 2025, fines and penalties, entertainment not subject to FBT, accounting depreciation) and adjust for tax timing (tax depreciation, prepayments, provisions -- deductible when incurred, not provided). Franked dividends received: gross up and offset (Rule 4). Distribution statements to shareholders within 4 months of year end (private companies). Amendment periods: eligible SMB assessments generally retain a 2-year ordinary period, subject to statutory exceptions. For 2024-25 and later assessments, table item 3A allows an additional 2-year window where the taxpayer applies in the approved form. The amendment must give effect to the decision on that application. Other companies generally have 4 years. See [ITAA 1936, section 170(1), table items 1-3A](https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170). Keep the losses schedule and flag it where losses > $100,000 are claimed or carried.
 
 ### Rule 12 -- Div 7A boundary (cross-reference, do not duplicate)
 
@@ -356,7 +369,7 @@ If the client provides only financial statements and a trial balance:
 | PAYG GDP uplift | 4% | 5% |
 | Div 7A benchmark rate (see au-div7a) | 8.37% | 8.77% |
 | GIC/SIC deductibility | Not deductible (from 1 Jul 2025) | Not deductible |
-| Loss carry-back | ENDED | ENDED |
+| Loss carry-back | Former scheme ended; no replacement for this loss year | Replacement applies, subject to Rule 8; commencement 1 October 2026 |
 
 ### Primary sources (verified 20 August 2026)
 
@@ -369,10 +382,10 @@ If the client provides only financial statements and a trial balance:
 | Benchmark rule / franking periods | ITAA 1997 Div 203, s 204-75; ato.gov.au Benchmark rule and Franking period pages |
 | Distribution statements | ITAA 1997 Subdiv 202-E; ato.gov.au Issuing distribution statements (4-month private company rule) |
 | Losses | ITAA 1997 Div 36 (ss 36-17, 36-55), Div 165 (ss 165-12, 165-13, 165-96, 165-210, 165-211); LCR 2019/1 |
-| Loss carry-back (ENDED) | Former Div 160 ITAA 1997; ato.gov.au Loss carry back tax offset (2019-20 to 2022-23 only) |
+| Loss carry-back | Replacement Division 160: [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text) |
 | Lodgment program | ato.gov.au Companies and super funds -- agent lodgment program (QC 34562, updated 1 July 2026); Income tax return -- companies (28 February self-preparer) |
 | PAYG instalments | ato.gov.au PAYG instalments (entry $2m/$500; monthly > $20m); GDP adjustment 5% for 2026-27 |
-| Amendment periods | ato.gov.au Request an amendment to a business or super tax return (SMB 4 years from 2024-25) |
+| Amendment periods | [ITAA 1936, section 170(1), table items 1-3A](https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170); additional taxpayer-request window is conditional |
 | GIC/SIC deduction denial | Treasury Laws Amendment (Tax Incentives and Integrity) Act 2025 (No. 29, 2025) Sch 2; ato.gov.au QC 73746 -- GIC/SIC incurred from 1 July 2025 not deductible |
 
 ### Test suite
@@ -395,7 +408,7 @@ If the client provides only financial statements and a trial balance:
 
 **Test 9:** $300,000 loss from 2023-24; 60% share sale Feb 2026. -> COT fails; similar business test available (loss year starts post-1 July 2015); escalate the SBT judgement.
 
-**Test 10:** Client asks to carry back a 2026-27 loss against 2025-26 tax. -> Refuse: carry-back ENDED (last claim year 2022-23); carry forward instead.
+**Test 10:** Client asks to carry back a 2026-27 loss against 2025-26 tax. -> Test the replacement Division 160 conditions in Rule 8. Do not reject the claim solely because the former scheme ended. Distinguish 1 October 2026 commencement from income-year application.
 
 ### Prohibitions
 
@@ -403,7 +416,7 @@ If the client provides only financial statements and a trial balance:
 - NEVER set the franking rate from current-year status -- the imputation rate uses PRIOR-year figures
 - NEVER frank above the maximum credit or away from the period's benchmark percentage
 - NEVER treat a trust distribution as active income without the trust's workings
-- NEVER claim loss carry-back -- the measure has ENDED
+- For loss carry-back, identify the applicable scheme and loss year, then test every Rule 8 condition before calculating an offset.
 - NEVER deduct GIC or SIC incurred on or after 1 July 2025
 - NEVER deduct carried-forward losses across an ownership change without COT/BCT analysis on the share register
 - NEVER issue distribution statements while the franking account balance is unverified

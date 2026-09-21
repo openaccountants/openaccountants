@@ -2,18 +2,18 @@
 name: au-trust-distributions
 description: >
   Use this skill whenever asked about Australian discretionary or family trust distributions -- trustee resolutions, present entitlement, section 95 net income versus trust income, streaming capital gains or franked distributions, minors' penalty rates under Division 6AA, section 99A trustee assessments, family trust elections, interposed entity elections, family trust distribution tax, section 100A reimbursement agreements, unpaid present entitlements after Bendel, TFN withholding for closely held trusts, or trust losses. Trigger on phrases like "trust distribution", "trustee resolution", "distribution minute", "streaming", "FTE", "FTDT", "s 100A", "bucket company", "UPE", or "30 June deadline". ALWAYS read this skill before touching any trust distribution work.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-08-20
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Trust Distributions -- Discretionary & Family Trusts Skill v1.0
+# Australia Trust Distributions -- Discretionary & Family Trusts Skill v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -177,7 +177,7 @@ Income to which no beneficiary is presently entitled (and no valid streaming app
 
 ### Rule 5 -- Division 6AA minors' rates
 
-Applies to "eligible taxable income" (unearned income, including discretionary trust distributions) of resident minors who are not excepted persons: $0-$416 nil; $417-$1,307 taxed at 66% of the excess over $416; over $1,307 the ENTIRE amount at 45% (cliff, not marginal). Non-resident minors get no tax-free band: $0-$416 at 30% of the entire amount (the non-resident first rate from 2024-25), then 66% of the excess, then 45% of the whole amount (ATO "Tax rates if you're under 18 years old"). The trustee pays under s 98(1) while the minor is under a legal disability; the minor also returns the share with a credit for the trustee's tax if they must lodge. LITO cannot offset Div 6AA tax. Excepted income (employment, testamentary trusts, compensation, inheritances) is taxed at adult rates -- verify character before assuming.
+Applies to "eligible taxable income" (unearned income, including discretionary trust distributions) of resident minors who are not excepted persons: $0-$416 nil; $417-$1,307 taxed at 66% of the excess over $416; over $1,307 the ENTIRE amount at 45% (cliff, not marginal). Non-resident minors get no tax-free band. For 2025-26, eligible income of $0-$416 is taxed at 30%; $417-$713 at $124.80 plus 66% of the excess over $416; and over $713 at 45% of the whole amount. For example, $600 of eligible income with no other income gives $124.80 + 66% x $184 = $246.24. For the $417-$713 band, apply the table calculation or, if greater, the tax on eligible income as the top slice of total taxable income at general rates. This matters where the minor also has excepted income. See [ATO under-18 tax rates](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-if-you-re-under-18-years-old) and confirm the applicable income year. The trustee pays under s 98(1) while the minor is under a legal disability; the minor also returns the share with a credit for the trustee's tax if they must lodge. LITO cannot offset Div 6AA tax. Excepted income (employment, testamentary trusts, compensation, inheritances) is taxed at adult rates -- verify character before assuming.
 
 ### Rule 6 -- Streaming capital gains (Subdiv 115-C)
 

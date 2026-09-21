@@ -10,10 +10,10 @@ description: >
   charge", "GIC rate", "shortfall interest charge", "remission of interest", "ATO payment plan",
   "how long do I have to amend", "period of review", "voluntary disclosure", "tax agent lodgment
   program". Covers federal obligations administered by the ATO only.
-version: 0.2
+version: 0.3
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
@@ -22,7 +22,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Lodgment Deadlines, Penalties and Interest
 
-## Australia Lodgment Deadlines, Penalties and Interest v0.2
+## Australia Lodgment Deadlines, Penalties and Interest v0.3
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -229,7 +229,7 @@ Any of these is a signal to involve a registered tax agent or a lawyer immediate
 | --- | --- |
 | Individual | 2 years from the day after the notice of assessment is sent |
 | Sole trader, 2023-24 and earlier income years | 2 years |
-| Sole trader, 2024-25 and later income years | 4 years |
+| Eligible sole trader, 2024-25 and later income years | Ordinary period generally 2 years, subject to exceptions. Additional 2-year window only on an approved-form taxpayer application and only to give effect to that application: [ITAA 1936, section 170(1), table items 1-3A](https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170) |
 | Other taxpayers | Generally 4 years, subject to the specific provision |
 
 - **Period of review for indirect taxes** — Four years and one day from the day the activity statement is lodged. A GST credit is separately subject to a four-year credit time limit, which cannot be extended by an amendment.  _([ATO, Time limits on tax return amendments](https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments))_
