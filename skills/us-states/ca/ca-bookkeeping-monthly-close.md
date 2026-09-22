@@ -12,20 +12,21 @@ description: >
   bookkeeping, monthly close, trial balance, payroll-tax reconciliation,
   sales-tax clearing, or agency-control questions. It does not prepare returns
   or give legal advice.
-jurisdiction: US-CA
-category: bookkeeping
-tax_year: 2026
-tax_year_notes: "2026 calendar-year controls; fiscal-year entities use their own year-end and the current agency calendar"
-tier: 2
-last_updated: 2026-09-20
 version: 0.1
+jurisdiction: US-CA
+tax_year: 2026
+last_updated: 2026-09-21
 review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
+category: bookkeeping
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # California Bookkeeping and Monthly Close v0.1
+
+## California Bookkeeping and Monthly Close v0.1
 
 > **Source-cited draft — not reviewed by an accountant.** This guide is
 > general bookkeeping reference material for AI-assisted workflows. A
@@ -111,8 +112,10 @@ The following sources are primary agency sources for this guide. They describe
 filings and control evidence; they do not authorize this guide to file
 anything.
 
+**California agency map and source register**  _([FTB business e-file forms](https://www.ftb.ca.gov/tax-pros/efile/business-entity-efile-forms.html) and other agency sources cited in the table cells)_
+
 | Area | Primary source | Bookkeeping use |
-|---|---|---|
+| --- | --- | --- |
 | FTB forms and entity returns | [FTB business e-file forms](https://www.ftb.ca.gov/tax-pros/efile/business-entity-efile-forms.html), [business due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html), and [FTB forms](https://www.ftb.ca.gov/forms/) | Map the entity, return, payment, extension, withholding, and handoff balances. |
 | FTB LLC tax and fee | [FTB business due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html) and [Form 568 materials](https://www.ftb.ca.gov/forms/) | Keep the annual LLC tax, LLC fee, estimated fee, payments, and return balance separate. |
 | FTB PTE elective tax | [FTB PTE elective tax](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/) and [PTE help](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/help.html) | Track the June payment, return payment, credit support, and payment-to-year mapping. |
@@ -133,8 +136,10 @@ control. Agency due dates are external obligations and are copied from the
 current agency calendar only after the entity, filing frequency, and tax year
 are confirmed.
 
+**Close cadence**
+
 | Frequency | Close action | Evidence |
-|---|---|---|
+| --- | --- | --- |
 | Every month | Lock the source-data period, reconcile every bank and card, reconstruct processor and marketplace activity, post payroll-provider journals, update agency controls, and review suspense. | Bank reconciliations, processor roll-forward, payroll register tie-out, control-account roll-forward. |
 | Each payroll | Post gross-to-net and employer-tax journals supplied by the payroll provider; reconcile the cash withdrawal to the payroll clearing account. | Payroll register, provider journal, funding report, deposit confirmation. |
 | Each CDTFA period | Reconcile sales, exemptions, district allocation, use-tax purchases, marketplace evidence, prepayments, return, and payment. | CDTFA workpaper and filed-return copy supplied by the reviewer. |
@@ -147,8 +152,10 @@ The dates below are control-calendar inputs, not filing instructions. If a due
 date falls on a weekend or legal holiday, use the agency's next-business-day
 rule and preserve the source page in the calendar.
 
+**2026 California events**  _(Sources for this calendar are the [FTB business due-date page](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html), [FTB Form 592 instructions](https://www.ftb.ca.gov/forms/2026/2026-592-instructions.html), [FTB PTE guidance](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/help.html), [EDD 2026 calendar](https://edd.ca.gov/en/Payroll_Taxes/Due_Dates_Calendar), [CDTFA filing-frequency guidance](https://www.cdtfa.ca.gov/formspubs/pub51/tax-and-fee-rates-and-filing-frequencies.htm), [SOS filing guidance](https://www.sos.ca.gov/business-programs/business-entities/statements), and the [IRS employment-tax calendar](https://www.irs.gov/businesses/small-businesses-self-employed/employment-tax-due-dates).)_
+
 | Obligation | 2026 control rule | Bookkeeping action |
-|---|---|---|
+| --- | --- | --- |
 | EDD DE 9 and DE 9C, Q1 | Due April 1, 2026; the EDD calendar shows April 30 as the delinquent date. | Close March payroll, tie the wage file, and attach the filed reports and payment evidence. |
 | EDD DE 9 and DE 9C, Q2 | Due July 1, 2026; the EDD calendar shows July 31 as the delinquent date. | Same tie-out for April–June. |
 | EDD DE 9 and DE 9C, Q3 | Due October 1, 2026; the EDD calendar shows November 2 as the delinquent date. | Same tie-out for July–September. |
@@ -178,8 +185,10 @@ These facts are used to set up reconciliations. They are not a return
 calculation. If a tax skill or the current official source gives a different
 year-specific value, stop and escalate the difference.
 
+**2026 rates, thresholds, and control facts**  _(Citations embedded in table cells (CDTFA Publication 51, CDTFA MPFAct guide, FTB Form 568, FTB PTE, EDD rates and withholding, DE 44, EDD taxable wages, Form 592 instructions, CDTFA Publication 116, FTB record keeping))_
+
 | Control fact | 2026 value or rule | Source and treatment |
-|---|---|---|
+| --- | --- | --- |
 | California statewide sales/use tax base | 7.25%; district taxes vary by location. | [CDTFA Publication 51](https://www.cdtfa.ca.gov/formspubs/pub51/tax-and-fee-rates-and-filing-frequencies.htm). Use the current CDTFA rate lookup in the sales-tax workpaper; do not apply 7.25% to every transaction. |
 | Marketplace economic-nexus test | Combined sales of tangible personal property for California delivery by the retailer and related persons exceeding $500,000 in the preceding or current calendar year is an important registration test. | [CDTFA Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm). The guide does not decide nexus or taxability; it flags the threshold for reviewer review. |
 | California LLC annual tax | $800 for an LLC doing business in California or registered with the Secretary of State. | [FTB Form 568 materials](https://www.ftb.ca.gov/forms/) and [FTB business due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-business.html). Post the payment against the FTB LLC-tax control, not automatically to expense. |
@@ -199,8 +208,10 @@ chart. Map them to the client's existing ledger before posting. Do not invent
 codes in a transaction register: if the client's chart differs, show the
 client code and this guide's suggested mapping side by side.
 
+**California chart of accounts**
+
 | Code | Account | Type | Normal balance | California use |
-|---:|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 1000 | Operating bank | Asset | Debit | Primary operating account. |
 | 1001 | Payroll bank | Asset | Debit | Separate payroll funding account. |
 | 1002 | Savings or tax reserve bank | Asset | Debit | Reserve account; reconcile like any bank. |
@@ -340,8 +351,10 @@ Apply the bookkeeping base's three states: Tier 1 (confident), Tier 2
 exactly once in the transaction register, either posted or excluded with a
 reason.
 
+**Classification rules**
+
 | # | Pattern | Debit | Credit | Control or handoff |
-|---:|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | 1 | Direct customer payment with a matching invoice or sales report | Bank or A/R | Service or product revenue | Separate any tax amount only when the reviewer or tax skill supplies the treatment. |
 | 2 | Stripe, PayPal, Square, or other processor settlement | Processor clearing | Bank | The payout is not revenue; reconstruct gross receipts, fees, refunds, and tax. |
 | 3 | Processor fee on a settlement | Merchant-processor fees | Processor clearing | Tie to the processor fee report. |
@@ -417,8 +430,10 @@ group sundry transactions, and do not suppress a Tier 2 or Tier 3 flag.
 These are recognition patterns, not proof of tax treatment. Confirm the
 account, period, and source report before applying a recurring pattern.
 
+**Supplier and payee pattern library**
+
 | Payee or description pattern | Default mapping | Required evidence or flag |
-|---|---|---|
+| --- | --- | --- |
 | Stripe, Stripe Payments | Stripe clearing and merchant-processor fees | Stripe balance and payout reports. |
 | PayPal, Venmo Business | PayPal clearing and merchant-processor fees | PayPal transaction and fee reports. |
 | Square, Block | PayPal/Square clearing and merchant-processor fees | Square deposit and fee report. |
@@ -496,8 +511,10 @@ as gross revenue merely because its description says “payout.”
 
 These are workflow defaults, not entity-classification advice.
 
+**Entity-type defaults**
+
 | Entity | Default ledger approach | Equity and handoff controls |
-|---|---|---|
+| --- | --- | --- |
 | Sole proprietor | Cash basis unless the client or reviewer confirms accrual; simple chart with owner capital and draws. | Owner draws are equity; federal Schedule C and California Form 540 handoff are separate. |
 | Disregarded SMLLC | Separate entity books; cash basis only when confirmed; maintain owner-equity and FTB LLC controls. | Form 568, Form 3522, Form 3536, and owner return handoff; do not collapse the LLC's $800 payment into owner tax. |
 | Multi-member LLC or partnership | Accrual management books unless confirmed otherwise; track member capital, distributions, guaranteed payments, and loans separately. | Form 565 or 568 and K-1 support; PTE and withholding controls require reviewer instructions. |
@@ -515,8 +532,10 @@ not to the month in which the books happen to be closed.
 
 Maintain a roll-forward for each entity and tax year:
 
+**FTB roll-forward**
+
 | Roll-forward line | Evidence |
-|---|---|
+| --- | --- |
 | Opening FTB payable or prepayment | Prior-year trial balance and FTB account statement. |
 | Form 3522 annual LLC tax | Voucher, confirmation, and entity year. |
 | Form 3536 estimated LLC fee | Voucher, confirmation, and fee workpaper. |
@@ -656,8 +675,10 @@ excluded with a reason, or unresolved.
 
 ### Output 6 — California agency-control reconciliation
 
+**Output 6 — California agency-control reconciliation**
+
 | Agency | Opening balance | Current-period charges or withholdings | Payments/refunds | Adjustments | Closing GL | Agency evidence | Difference | Action |
-|---|---:|---:|---:|---:|---:|---|---:|---|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | FTB |  |  |  |  |  | Voucher, return, statement |  |  |
 | CDTFA |  |  |  |  |  | Return, prepayment, statement |  |  |
 | EDD |  |  |  |  |  | DE 88, DE 9, DE 9C, statement |  |  |
@@ -686,8 +707,10 @@ action. Separate recurring agency filings from internal close dates.
 
 ### Output 10 — Tax-return handoff worksheet
 
+**Output 10 — Tax-return handoff worksheet**
+
 | Return or form | Ledger package | Reviewer input required | Filing owner |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | FTB 100, 100S, 100W | Final TB, P&L, BS, fixed assets, estimates, payments | Tax adjustments, apportionment, credits, tax provision | Tax preparer |
 | FTB 565 or 568 | Final TB, member/partner capital, distributions, loans, FTB payments | Classification, K-1, fee, withholding, PTE decisions | Tax preparer |
 | FTB 199 or 109 | Final TB, support revenue, program expenses, investments | Exemption and unrelated-business analysis | Tax preparer |
@@ -718,8 +741,10 @@ tax thresholds, rate claims, or client advice.
 Suppose a settlement report shows gross customer receipts of 1,000.00, a
 processor fee of 30.00, and a bank payout of 970.00. The close posts:
 
+**Journal entries — Example A**
+
 | Debit | Credit | Amount |
-|---|---|---:|
+| --- | --- | --- |
 | Stripe clearing | Service or product revenue | 1,000.00 |
 | Merchant-processor fees | Stripe clearing | 30.00 |
 | Operating bank | Stripe clearing | 970.00 |
@@ -735,8 +760,10 @@ deductibility opinion is made.
 An owner deposits 2,000.00 to fund the business and later withdraws 500.00.
 The entries are:
 
+**Journal entries — Example B**
+
 | Debit | Credit | Amount |
-|---|---|---:|
+| --- | --- | --- |
 | Operating bank | Member contributions | 2,000.00 |
 | Member distributions | Operating bank | 500.00 |
 
@@ -749,8 +776,10 @@ source facts meet the reporting description; it does not classify the worker.
 The settlement report shows 1,200.00 of product sales, 120.00 of marketplace
 fees, and an 1,080.00 payout. The entries are:
 
+**Journal entries — Example C**
+
 | Debit | Credit | Amount |
-|---|---|---:|
+| --- | --- | --- |
 | Marketplace clearing | Marketplace product revenue | 1,200.00 |
 | Merchant-processor fees | Marketplace clearing | 120.00 |
 | Operating bank | Marketplace clearing | 1,080.00 |
@@ -849,3 +878,23 @@ taking a tax position.
   draft. Added the chart of accounts, entity defaults, classification and
   supplier patterns, California agency controls, 2026 calendar inputs,
   handoff schedules, worked examples, and validation tests.
+
+> Contributed by DeFiAccountant21.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
