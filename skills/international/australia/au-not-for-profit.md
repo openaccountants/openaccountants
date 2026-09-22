@@ -2,18 +2,18 @@
 name: au-not-for-profit
 description: >
   Use this skill whenever asked about Australian not-for-profit (NFP) tax compliance -- income tax exemption self-assessment, the annual NFP self-review return, ACNC charity registration and ATO endorsement, the mutuality principle for licensed clubs and member associations, taxable NFP shade-in rates, deductible gift recipient (DGR) endorsement and gift/contribution deductibility, FBT rebate and exemption caps for NFP employers, GST concessions for NFPs, PAYG withholding for NFP employees, or NFP salary packaging. Trigger on phrases like "NFP tax", "charity tax concession", "DGR", "deductible gift", "mutuality", "self-review return", "FBT rebate", "club taxable income". ALWAYS read this skill before touching any NFP tax work.
-version: 1.0
+version: 1.1
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27 (NFP self-review return season: by 31 Oct 2026)"
-last_updated: 2026-08-20
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.0
+# Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -224,7 +224,7 @@ Receipts from mutual dealings with members are NOT assessable income (mutual rec
 
 ### Rule 5 -- DGR endorsement and gift deductibility
 
-Only gifts to organisations with DGR status are deductible. DGR status comes from ATO endorsement (Item 1 -- the entity itself falls within a DGR category in Div 30 ITAA 1997, e.g. public benevolent institutions, public universities, public hospitals, public ancillary funds) or from being listed by name in the law (Item 2 / specific listing -- particular organisations named in the Div 30 tables or by legislative instrument). Most charities are NOT automatically DGRs -- ACNC registration is necessary but not sufficient except for PBIs and HPCs (which generally access DGR endorsement). Check ABN Lookup's DGR tool before advising any donor.
+Only gifts to organisations with DGR status are deductible. DGR status can arise through ATO endorsement or specific listing in the law. That distinction is separate from the gift categories in [ITAA 1997 section 30-15](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/30-15): Item 1 covers eligible recipients such as public benevolent institutions, public universities and public hospitals; Item 2 covers ancillary funds, including public and private ancillary funds. Most charities are NOT automatically DGRs -- ACNC registration is necessary but not sufficient except for PBIs and HPCs (which generally access DGR endorsement). Check ABN Lookup's DGR tool before advising any donor.
 
 Gift conditions: voluntary transfer of money or property, no material benefit to the donor, and any special conditions on the DGR category (gift funds, overseas aid etc.). From 1 July 2026 the $2 minimum is removed, backdated to gifts from 1 July 2024. Issued receipts must show the fund name, ABN, that it is for a gift, and (community charities and ancillary funds) the donor's name.
 
@@ -238,7 +238,7 @@ Two regimes, never mixed:
 
 **FBT rebate (s 65J FBTAA):** rebatable employers -- charity institutions (not PBIs), religious institutions, certain scientific and public educational institutions, trade unions, employer associations, and NFPs established for community service, cultural, sporting, or resource-development purposes. Rebate = 47% of gross FBT payable, but only on the first $30,000 grossed-up per employee; excess attracts full FBT with no rebate. The rebate is claimed in the FBT return; the employer still lodges an FBT return and pays the net amount.
 
-**Capping exclusions (both regimes):** car parking fringe benefits, meal entertainment NOT provided under a salary packaging arrangement, and entertainment facility leasing expenses do NOT count toward the $30,000 cap. Salary-packaged meal entertainment DOES count toward the cap (separately grossed-up). FBT year is 1 April - 31 March. NFP status does NOT exempt an employer from FBT registration where benefits are provided -- register, compute, claim the concession in the return.
+**Entertainment caps:** salary-packaged meal entertainment and entertainment-facility leasing share a separate $5,000 grossed-up cap per employee per FBT year. Add any excess to benefits tested against the relevant general cap: $17,000 or $30,000 for exempt employers, or $30,000 for rebatable employers. Car parking and non-salary-packaged meal entertainment or entertainment-facility leasing are excluded from these capping calculations; exclusion from a cap does not itself establish exemption from FBT. See the [ATO employer guide, chapter 6](https://www.ato.gov.au/law/view/document?DocID=SAV%2FFBTGEMP%2F00007). The FBT year is 1 April to 31 March. Register, calculate and report as required for the applicable concession.
 
 ### Rule 7 -- GST concessions for NFPs
 
@@ -246,7 +246,7 @@ Available concessions (GST Act 1999): the $150,000 GST registration threshold (a
 
 ### Rule 8 -- PAYG withholding and payroll obligations
 
-NFP status -- exempt, endorsed, or taxable -- does NOT relieve an employer of PAYG withholding. Withhold from employee wages from the first dollar, report via Single Touch Payroll, pay super guarantee (12% from 1 July 2026 -- see au-super-guarantee), and meet workers compensation and state payroll tax obligations unless a state exemption applies. Volunteers are not employees; genuine reimbursements of volunteer expenses are not wages, but allowances and honoraria can be -- characterise before assuming no withholding. Contractors: check the employee/contractor boundary the same as for any employer.
+NFP status -- exempt, endorsed, or taxable -- does NOT relieve an employer of PAYG withholding. Withhold from employee wages from the first dollar, report via Single Touch Payroll, pay super guarantee (12% from 1 July 2025; the 1 July 2026 Payday Super change concerns payment timing, not the start of the 12% rate. See [ATO super guarantee rates](https://www.ato.gov.au/tax-rates-and-codes/key-superannuation-rates-and-thresholds/super-guarantee) and au-super-guarantee), and meet workers compensation and state payroll tax obligations unless a state exemption applies. Volunteers are not employees; genuine reimbursements of volunteer expenses are not wages, but allowances and honoraria can be -- characterise before assuming no withholding. Contractors: check the employee/contractor boundary the same as for any employer.
 
 ### Rule 9 -- Salary packaging in the NFP sector
 

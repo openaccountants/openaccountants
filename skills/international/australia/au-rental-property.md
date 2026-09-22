@@ -1,10 +1,10 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.2"
+version: "1.3"
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-17
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.2
+## Australia Rental Property -- Income & Deductions Skill v1.3
 
 ## Section 1 -- Quick Reference
 
@@ -114,7 +114,7 @@ income year, except where a section says otherwise.
 | Interest on investment loan | Deductible | Must trace loan purpose to rental property |
 | Council rates | Deductible | Apportioned if part-private |
 | Water rates / charges | Deductible |  |
-| Body corporate / strata fees | Deductible | Includes admin fund and sinking fund contributions |
+| Body corporate / strata fees | Ordinary administration and general maintenance contributions may be deductible | Special levies funding a particular capital improvement are not immediately deductible. Check capital-works eligibility and timing after work is completed and charged to the fund. [ATO common property expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/common-property-expenses) |
 | Land tax | Deductible |  |
 | Property management fees | Deductible | Agent commissions, letting fees |
 | Insurance (landlord, building, contents) | Deductible |  |
@@ -133,7 +133,7 @@ income year, except where a section says otherwise.
 | Restores to original condition | Yes | No |
 | Replaces with substantially same materials | Yes | No -- better quality/different character |
 | Initial repair on acquisition | NOT deductible (capital) | Capital -- add to cost base |
-| Replaces entire structure (e.g. full roof) | Capital (replacement) | Capital |
+| Replaces a roof | Can be a repair where it restores part of the building without an improvement; the roof is not automatically the relevant entirety | Initial repairs, improvements and replacement of the relevant entirety are capital; apply [TR 97/23](https://www.ato.gov.au/law/view/document?docid=TXR/TR9723/NAT/ATO/00001) to the facts |
 | Example: patching cracked tiles | Repair | -- |
 | Example: replacing all tiles with stone | -- | Improvement |
 | Example: replacing broken tap with same model | Repair | -- |
@@ -143,16 +143,20 @@ income year, except where a section says otherwise.
 
 **Division 40 Effective Lives**
 
+The table follows Table A, Residential property operators (67110), in the *Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025*. Choose the applicable determination under section 40-95, including its contract-date and start-time rules, or a valid self-assessed life; do not automatically reset an existing asset register. See [2025 determination, Schedule 2 Table A](https://www.legislation.gov.au/F2025L01097/asmade).
+
 | Asset | Effective Life (ATO) | Decline Method |
 | --- | --- | --- |
-| Hot water system | 12 years | Diminishing value or prime cost |
+| Hot water system (gas or electric) | 12 years | Diminishing value or prime cost |
+| Hot water system (solar) | 15 years | Either |
 | Carpet | 8 years | Either |
-| Blinds / curtains | 8 years | Either |
+| Internal blinds | 10 years | Either |
+| Curtains | 6 years | Either |
 | Oven / cooktop | 12 years | Either |
 | Air conditioning (split system) | 10 years | Either |
 | Dishwasher | 8 years | Either |
 | Smoke alarm | 6 years | Either |
-| Ceiling fan | 10 years | Either |
+| Ceiling fan | 5 years | Either |
 
 - **Diminishing value rate** — 200% ÷ effective life
 - **Prime cost rate** — 100% ÷ effective life

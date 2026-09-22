@@ -1,10 +1,10 @@
 ---
 name: au-nonresident-cgt
 description: "Use this skill for any non-resident selling Australian assets. Trigger on: \"non-resident CGT Australia\", \"TAP test Australia\", \"taxable Australian property\", \"FRCGW\", \"foreign resident capital gains withholding\", \"15% withholding Australia\", \"12.5% withholding Australia\", \"clearance certificate ATO\", \"sell Australian shares non-resident\", \"sell Australian property non-resident\", \"Australian CGT non-resident seller\", \"no CGT discount non-resident Australia\". Covers the TAP test, the foreign resident rate scale, FRCGW withholding (15%, no threshold, from 1 January 2025), clearance certificates. For Australian residents see au-capital-gains."
-version: 1.2
+version: 1.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-17
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
@@ -21,7 +21,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Country | Australia |
 | Applies to | Non-residents of Australia disposing of Australian assets |
-| CGT rate (non-resident individual) | The foreign resident rate scale applies to the net gain: 30c to $135,000, then 37c to $190,000, then 45c. No 50% discount, and no Medicare levy. Confirm the scale for the income year at [ATO, Tax rates: foreign resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-foreign-residents) |
+| CGT rate (non-resident individual) | The foreign resident rate scale applies to the net gain: 30c to $135,000, then 37c to $190,000, then 45c. No Medicare levy. Test any retained CGT discount under section 115-115 (see the discount row below). Confirm the scale for the income year at [ATO, Tax rates: foreign resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-foreign-residents) |
 | Key test | Taxable Australian Property (TAP) test |
 | Withholding | 15% of the sale price for contracts signed from 1 January 2025, with no value threshold. 12.5% and a $750,000 threshold applied to contracts from 1 July 2017 to 31 December 2024 |
 | Primary legislation | ITAA 1997 Div 855; TAA 1953 Sch 1 Subdiv 14-D |
@@ -55,10 +55,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Item | Non-resident treatment |
 | --- | --- |
-| CGT rate | 30% (top individual rate, not graduated) |
-| 50% general discount | **NOT available** to non-residents (removed 8 May 2012) |
+| CGT rate (individual, 2025-26 and 2026-27) | Progressive foreign-resident rates: 30% to $135,000; $40,500 plus 37% over $135,000 to $190,000; $60,850 plus 45% over $190,000. Apply to total taxable income, including the net capital gain. No Medicare levy. [ATO foreign-resident rates](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-foreign-residents) |
+| General CGT discount | Do not automatically set the discount to zero. For otherwise eligible gains, apply the acquisition-date, residency-period and 8 May 2012 market-value rules in [ITAA 1997 section 115-115](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-115). Eligible Australian-resident periods and pre-8 May 2012 gains can preserve a partial discount. |
 | SBCGT concessions | Available if all basic conditions met (including active asset test) |
-| Main residence exemption | Generally not available to non-residents (unless Australian citizen/PR in specific circumstances) |
+| Main residence exemption | Generally unavailable if a foreign resident at disposal. The life-events exception requires a continuous foreign-residence period of 6 years or less and a qualifying terminal illness, death or relationship breakdown, together with the other exemption conditions. Citizenship or permanent residence alone does not qualify. [ITAA 1997 section 118-110](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-110) |
 | Cost base calculation | Same as residents |
 
 ## Section 5 — Foreign Resident Capital Gains Withholding (FRCGW)
@@ -74,7 +74,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Who withholds | The buyer (purchaser) |
 | Remittance deadline | Day of settlement |
 
-**Example** (synthetic): a foreign resident individual sells taxable Australian property for AUD $10M under a contract signed after 1 January 2025. The purchaser withholds 15%, being AUD $1.5M, unless a clearance certificate or variation applies. Suppose the net gain is AUD $8M. Australian tax on the foreign resident scale is $60,850 plus 45c for each dollar above $190,000, giving $60,850 + 0.45 x $7,810,000 = AUD $3,575,350. Crediting the $1.5M withheld leaves AUD $2,075,350 payable through the Australian tax return. Do not apply a flat 30% to a gain of this size.
+**Example** (synthetic): a foreign resident individual sells taxable Australian property for AUD $10M under a contract signed after 1 January 2025. The purchaser withholds 15%, being AUD $1.5M, unless a clearance certificate or variation applies. Suppose the net capital gain after any available discount is AUD $8M, with no other taxable income or offsets. Australian tax on the foreign resident scale is $60,850 plus 45c for each dollar above $190,000, giving $60,850 + 0.45 x $7,810,000 = AUD $3,575,350. Crediting the $1.5M withheld leaves AUD $2,075,350 payable through the Australian tax return. Do not apply a flat 30% to a gain of this size.
 
 ## Section 6 — Clearance Certificate
 

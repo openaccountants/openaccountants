@@ -2,19 +2,19 @@
 name: au-rd-incentive
 description: >
   Use this skill whenever asked about the Australian R&D Tax Incentive (R&DTI) -- the Division 355 tax offset for eligible research and development, who can claim (incorporated R&D entities only), the refundable offset for companies under $20m aggregated turnover, the non-refundable offset with intensity tiers for larger companies, core vs supporting R&D activities, excluded activities, registration with AusIndustry/DISR within 10 months of year end, the $20,000 expenditure threshold, the $150 million cap, feedstock and clawback adjustments, aggregated turnover grouping, and record-keeping. Trigger on phrases like "R&D tax incentive", "R&DTI", "R&D offset", "research and development tax", "43.5% offset", "refundable R&D", "Division 355", "AusIndustry registration", "core R&D activities", "feedstock adjustment", or "R&D intensity". ALWAYS read this skill before touching any R&D tax offset work.
-version: 1.1
+version: 1.2
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-12
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia R&D Tax Incentive Skill v1.1
+# Australia R&D Tax Incentive Skill v1.2
 
-## Australia R&D Tax Incentive Skill v1.1
+## Australia R&D Tax Incentive Skill v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -214,7 +214,7 @@ $6,660 is added to assessable income. The clawback recovers only the 18.5% incen
 
 ### Rule 13 -- Interaction with the instant asset write-off and small business concessions
 
-- **Interaction with the instant asset write-off and small business concessions** — An R&D entity can be a small business entity and use the instant asset write-off ($20,000 for 2025-26; announced permanent from 1 July 2026) for assets used in the business. But the R&DTI and IAWO interact at the asset-cost level: expenditure included in the cost of a depreciating asset is NOT a notional deduction, so an amount immediately written off under the IAWO is not also claimable as R&D expenditure. Instead, the R&DTI gives a notional deduction for the asset's **decline in value** to the extent of R&D use. Do not double-count an asset's cost across both concessions. The aggregated-turnover grouping rules are shared with the small business concessions, but the R&DTI has its own $20m threshold and exempt-entity-control test, which are not the same as the small business entity tests.
+- **Interaction with the instant asset write-off and small business concessions** — An R&D entity can be a small business entity and use the instant asset write-off ($20,000 for 2025-26; permanent threshold enacted with 1 October 2026 commencement and specified application from 1 July 2026 under [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text)) for assets used in the business. But the R&DTI and IAWO interact at the asset-cost level: expenditure included in the cost of a depreciating asset is NOT a notional deduction, so an amount immediately written off under the IAWO is not also claimable as R&D expenditure. Instead, the R&DTI gives a notional deduction for the asset's **decline in value** to the extent of R&D use. Do not double-count an asset's cost across both concessions. The aggregated-turnover grouping rules are shared with the small business concessions, but the R&DTI has its own $20m threshold and exempt-entity-control test, which are not the same as the small business entity tests.
 
 ## Section 6 -- Tier 2 catalogue
 
