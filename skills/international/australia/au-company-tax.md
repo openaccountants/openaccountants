@@ -12,7 +12,6 @@ description: >
 version: 1.1
 jurisdiction: AU
 tax_year: 2026
-tax_year_notes: "2026-27"
 last_updated: 2026-09-22
 review_status: pending_review
 category: international
@@ -20,7 +19,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Company Income Tax -- Private SME Company Skill v1.1
+# Australia Company Income Tax -- Private SME Company Skill
+
+## Australia Company Income Tax -- Private SME Company Skill v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,8 +31,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Read this whole section before computing or classifying anything.**
 
+**Quick reference**
+
 | Field | Value |
-|---|---|
+| --- | --- |
 | Country | Australia |
 | Primary Legislation | ITAA 1997; ITAA 1936; Income Tax Rates Act 1986 (rates: s 23(2); BRE: ss 23AA, 23AB) |
 | Tax Authority | Australian Taxation Office (ATO) |
@@ -55,8 +58,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Conservative defaults:**
 
+**Conservative defaults**
+
 | Ambiguity | Default |
-|---|---|
+| --- | --- |
 | BREPI composition unknown | Compute tax at BOTH 25% and 30%; flag -- never assume 25% |
 | Trust distribution received, trust workings not sighted | Assume 100% BREPI (30% rate candidate) until the trust's income is traced |
 | Prior-year figures unknown (imputation rate) | Do NOT issue distribution statements; establish the prior-year test first -- wrong-rate franking creates over/under-franking |
@@ -71,8 +76,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Compute nothing in these areas; document the trigger and escalate to a specialist reviewer.
 
+**Refusal catalogue**
+
 | Code | Trigger | Action |
-|---|---|---|
+| --- | --- | --- |
 | R-AU-CT-1 | Tax consolidation: forming/joining/leaving a group, ACA calculations, single-entity questions, MEC groups | Refuse; escalate. Membership changes also shift return due dates (28 February for exits) |
 | R-AU-CT-2 | Thin capitalisation / debt deduction creation rules (Div 820): foreign-controlled entity, overseas borrowings, debt deductions > $2m group-wide | Refuse; escalate |
 | R-AU-CT-3 | International dealings: transfer pricing, related-party cross-border transactions, CFCs, hybrid mismatches, DPT, Pillar Two, International Dealings Schedule | Refuse; escalate |
@@ -84,8 +91,10 @@ Compute nothing in these areas; document the trigger and escalate to a specialis
 
 Signs a company return needs attention. Sweep the trial balance before touching the return.
 
+**GL sweep library**
+
 | GL pattern | Likely issue | Action |
-|---|---|---|
+| --- | --- | --- |
 | Dividends paid / retained earnings fall with no franking working papers | Franking account never maintained | Rebuild register; check 4-month distribution statement deadline; benchmark rule |
 | Interest, rent or dividend income material relative to turnover | BREPI creeping toward 80% | Run the two-limb BRE test with actual numbers (Rule 1) |
 | Trust distribution receivable / income from a related trust | Rate risk: distribution may be 100% BREPI (Rule 2); UPE questions | Trace character in the TRUST's books; UPE/loan questions -> au-div7a |
@@ -98,8 +107,6 @@ Signs a company return needs attention. Sweep the trial balance before touching 
 | Government grants / R&D offset receivable in P&L | R&D incentive in play | R-AU-CT-4 -- escalate |
 | Foreign exchange accounts, royalties paid offshore, overseas loans | International dealings | R-AU-CT-3 -- escalate; check IDS thresholds |
 | Legal/consulting fees around a share sale or restructure | Possible consolidation, rollovers, loss trigger events | R-AU-CT-1 / R-AU-CT-5 |
-
----
 
 ## Section 4 -- Worked examples
 
@@ -192,72 +199,55 @@ Taxable income $150,000 x 25% = $37,500
 
 The SBT conclusion is a judgement call -- document the four LCR 2019/1 factors and escalate (R-AU-CT-5). Losses are deducted in the order incurred, and a company may CHOOSE how much loss to deduct (s 36-17) -- e.g. leaving income taxable to absorb franking offsets rather than wasting them.
 
----
-
 ## Section 5 -- Tier 1 rules
 
 ### Rule 1 -- The rate: two limbs, tested every year (ITRA ss 23AA-23AB)
 
-25% applies for an income year only if BOTH: (1) aggregated turnover for THAT year (company + connected entities + affiliates, worked out at year end) < $50m; and (2) BREPI <= 80% of the company's own assessable income. Otherwise 30%. BREPI (s 23AB): corporate distributions and their franking credits; royalties and rent; interest (limited exceptions); gains on qualifying securities; net capital gains; and trust/partnership amounts traceable to any of those. No Commissioner discretion exists. Limb 2 tests the company's OWN income only; limb 1 is the grouped test. Companies taxed at special rates (NFP shade-in, life insurance, PDFs) are outside this skill.
+- **Rule 1 -- The rate: two limbs, tested every year** — 25% applies for an income year only if BOTH: (1) aggregated turnover for THAT year (company + connected entities + affiliates, worked out at year end) < $50m; and (2) BREPI <= 80% of the company's own assessable income. Otherwise 30%. BREPI (s 23AB): corporate distributions and their franking credits; royalties and rent; interest (limited exceptions); gains on qualifying securities; net capital gains; and trust/partnership amounts traceable to any of those. No Commissioner discretion exists. Limb 2 tests the company's OWN income only; limb 1 is the grouped test. Companies taxed at special rates (NFP shade-in, life insurance, PDFs) are outside this skill.  _(ITRA ss 23AA-23AB; s 23AB)_
 
 ### Rule 2 -- Trust and partnership distributions keep their character
 
-A distribution is BREPI to the extent traceable, directly or through a chain, to BREPI at the source level (LCR 2019/5): apply the test at each tier, apportion expenses reasonably, and treat streamed franked dividends as retaining dividend character. A dividend paid through a trust is never a "non-portfolio dividend" (the 10% voting exception cannot apply -- the dividend is not paid to a company). Practical effect: passive-investment bucket companies are almost always 30% companies (Example 3).
+- **Rule 2 -- Trust and partnership distributions keep their character** — A distribution is BREPI to the extent traceable, directly or through a chain, to BREPI at the source level (LCR 2019/5): apply the test at each tier, apportion expenses reasonably, and treat streamed franked dividends as retaining dividend character. A dividend paid through a trust is never a "non-portfolio dividend" (the 10% voting exception cannot apply -- the dividend is not paid to a company). Practical effect: passive-investment bucket companies are almost always 30% companies (Example 3).  _(LCR 2019/5)_
 
 ### Rule 3 -- Corporate tax rate for imputation purposes (prior-year test)
 
-To set the franking rate for year Y, assume turnover, assessable income and BREPI equal year Y-1 actuals: if those pass the BRE test (against year Y's $50m threshold), frank at 25%; if not, 30%. An entity that did not exist in Y-1 franks at 25%. Maximum franking credit = distribution x (1 / applicable gross-up rate), gross-up rate = (100% - imputation rate) / imputation rate -> divide by 3 at 25%; multiply by 3/7 at 30%. Attaching more than the maximum: the account is debited only the maximum and the shareholder only gets the maximum. The tax rate and the imputation rate regularly diverge (Example 4) -- compute both, every year.
+- **Rule 3 -- Corporate tax rate for imputation purposes (prior-year test)** — To set the franking rate for year Y, assume turnover, assessable income and BREPI equal year Y-1 actuals: if those pass the BRE test (against year Y's $50m threshold), frank at 25%; if not, 30%. An entity that did not exist in Y-1 franks at 25%. Maximum franking credit = distribution x (1 / applicable gross-up rate), gross-up rate = (100% - imputation rate) / imputation rate -> divide by 3 at 25%; multiply by 3/7 at 30%. Attaching more than the maximum: the account is debited only the maximum and the shareholder only gets the maximum. The tax rate and the imputation rate regularly diverge (Example 4) -- compute both, every year.
 
 ### Rule 4 -- The franking account
 
-A rolling ledger, not a year-end invention. CREDITS: income tax and PAYG instalments paid (to the extent they relate to taxed profits), franking credits on distributions received (directly or through trusts/partnerships), FDT liability incurred. DEBITS: franking credits on distributions paid, income tax refunds received, over/under-franking adjustments, ceasing to be a franking entity. Only tax actually PAID supports credits -- accrued tax expense is irrelevant. Companies receiving franked dividends gross up and claim a NON-REFUNDABLE offset; excess franking offsets convert into a tax loss (s 36-55) rather than a refund.
+- **Rule 4 -- The franking account** — A rolling ledger, not a year-end invention. CREDITS: income tax and PAYG instalments paid (to the extent they relate to taxed profits), franking credits on distributions received (directly or through trusts/partnerships), FDT liability incurred. DEBITS: franking credits on distributions paid, income tax refunds received, over/under-franking adjustments, ceasing to be a franking entity. Only tax actually PAID supports credits -- accrued tax expense is irrelevant. Companies receiving franked dividends gross up and claim a NON-REFUNDABLE offset; excess franking offsets convert into a tax loss (s 36-55) rather than a refund.  _(s 36-55)_
 
 ### Rule 5 -- Benchmark rule (private companies: one percentage per year)
 
-A private company's franking period is its whole income year. The franking percentage on the FIRST frankable distribution in the period sets the benchmark; every later frankable distribution in the period must be franked to the same percentage. Franking above benchmark = over-franking tax (equal to the excess credits, not creditable to anyone); below benchmark = under-franking debit (credits wasted -- debited as if fully franked at benchmark without reaching shareholders). Disclose to the ATO where the benchmark moves by more than 20 percentage points (x intervening periods) between successive franking periods with frankable distributions. Plan the year's dividends BEFORE the first statement is issued.
+- **Rule 5 -- Benchmark rule (private companies: one percentage per year)** — A private company's franking period is its whole income year. The franking percentage on the FIRST frankable distribution in the period sets the benchmark; every later frankable distribution in the period must be franked to the same percentage. Franking above benchmark = over-franking tax (equal to the excess credits, not creditable to anyone); below benchmark = under-franking debit (credits wasted -- debited as if fully franked at benchmark without reaching shareholders). Disclose to the ATO where the benchmark moves by more than 20 percentage points (x intervening periods) between successive franking periods with frankable distributions. Plan the year's dividends BEFORE the first statement is issued.
 
 ### Rule 6 -- Franking deficit tax
 
-Deficit at year end (or on ceasing to be a franking entity) -> FDT equal to the deficit; lodge a franking account tax return and pay by the last day of the month after year end (31 July for 30 June balancers). FDT liability credits the account back to nil. FDT offsets future income tax, reduced 30% where the deficit exceeds 10% of the year's franking credits (exclusions and a discretion exist -- escalate). Refunds received within 3 months of year end count as pre-year-end for the deficit calculation (14-day lodge-and-pay window). Never frank against anticipated credits without modelling the year-end balance.
+- **Rule 6 -- Franking deficit tax** — Deficit at year end (or on ceasing to be a franking entity) -> FDT equal to the deficit; lodge a franking account tax return and pay by the last day of the month after year end (31 July for 30 June balancers). FDT liability credits the account back to nil. FDT offsets future income tax, reduced 30% where the deficit exceeds 10% of the year's franking credits (exclusions and a discretion exist -- escalate). Refunds received within 3 months of year end count as pre-year-end for the deficit calculation (14-day lodge-and-pay window). Never frank against anticipated credits without modelling the year-end balance.
 
 ### Rule 7 -- Loss carry-forward: COT then business continuity
 
-Tax losses carry forward indefinitely but are deductible only if the company satisfies the continuity of ownership test -- persons holding more than 50% of voting power, dividend rights AND capital rights at all times from the start of the loss year to the end of the claim year (s 165-12; trace through interposed entities; same-share rule s 165-165) -- or, failing COT, the business continuity test at s 165-13: same business (s 165-210) or, for losses of income years starting on/after 1 July 2015, similar business (s 165-211; LCR 2019/1). Net capital losses follow parallel rules (s 165-96). Deduct in order incurred; s 36-17 choice as to amount (Example 6). Anti-injection rules (s 165-15) and Subdiv 165-CC escalate (R-AU-CT-5).
+- **Rule 7 -- Loss carry-forward: COT then business continuity** — Tax losses carry forward indefinitely but are deductible only if the company satisfies the continuity of ownership test -- persons holding more than 50% of voting power, dividend rights AND capital rights at all times from the start of the loss year to the end of the claim year (s 165-12; trace through interposed entities; same-share rule s 165-165) -- or, failing COT, the business continuity test at s 165-13: same business (s 165-210) or, for losses of income years starting on/after 1 July 2015, similar business (s 165-211; LCR 2019/1). Net capital losses follow parallel rules (s 165-96). Deduct in order incurred; s 36-17 choice as to amount (Example 6). Anti-injection rules (s 165-15) and Subdiv 165-CC escalate (R-AU-CT-5).  _(ss 165-12, 165-13, 165-96, 165-165, 165-210, 165-211; s 36-17; LCR 2019/1)_
 
 ### Rule 8 -- Loss carry-back: former and replacement schemes
 
-The former temporary offset covered losses of 2019-20 to 2022-23, claimed in 2020-21 to 2022-23 returns. Historical amendments require their own time-limit check.
-
-The replacement Division 160 was enacted on 26 August 2026. As at 22 September 2026, it has not commenced: commencement is 1 October 2026, with application to assessments for income years starting on or after 1 July 2026. [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text).
-
-For a replacement-scheme claim:
-
-1. Confirm the entity is a corporate tax entity throughout the current loss year, disregarding periods before it existed, and is not a significant global entity that year.
-2. Identify either or both of the 2 preceding income years with an income tax liability and corporate-tax-entity status throughout, disregarding periods before existence.
-3. Check return lodgment for the current year and each of the 5 preceding years. Each year must have a lodged return, no lodgment requirement or an assessment made by the Commissioner.
-4. Make the approved-form choice by lodgment of the current-year return, or a later day allowed by the Commissioner. Allocate the current-year tax loss between eligible years without reusing losses. Apply the transferred-loss, excess-franking-offset and scheme integrity restrictions in sections 160-25 and 160-30.
-5. For each carry-back year, reduce the chosen loss by that year's net exempt income not already used. Multiply the remaining amount by the corporate tax rate for the loss year. Cap the component at that earlier year's income tax liability not already used for a carry-back offset.
-6. Sum the components and cap the refundable offset at the current year-end franking account balance. Check the specific foreign-resident exception in section 160-10(3) before omitting that cap.
-
-For example, a qualifying 25% company chooses to carry a $100,000 loss for 2026-27 against 2025-26. With no net exempt income, at least $25,000 unused prior-year tax liability and a $20,000 year-end franking balance, the offset is $20,000. The company must also meet the choice, lodgment and integrity conditions above.
+- **Rule 8 -- Loss carry-back: former and replacement schemes** — The former temporary offset covered losses of 2019-20 to 2022-23, claimed in 2020-21 to 2022-23 returns. Historical amendments require their own time-limit check. The replacement Division 160 was enacted on 26 August 2026. As at 22 September 2026, it has not commenced: commencement is 1 October 2026, with application to assessments for income years starting on or after 1 July 2026. [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text). For a replacement-scheme claim: 1. Confirm the entity is a corporate tax entity throughout the current loss year, disregarding periods before it existed, and is not a significant global entity that year. 2. Identify either or both of the 2 preceding income years with an income tax liability and corporate-tax-entity status throughout, disregarding periods before existence. 3. Check return lodgment for the current year and each of the 5 preceding years. Each year must have a lodged return, no lodgment requirement or an assessment made by the Commissioner. 4. Make the approved-form choice by lodgment of the current-year return, or a later day allowed by the Commissioner. Allocate the current-year tax loss between eligible years without reusing losses. Apply the transferred-loss, excess-franking-offset and scheme integrity restrictions in sections 160-25 and 160-30. 5. For each carry-back year, reduce the chosen loss by that year's net exempt income not already used. Multiply the remaining amount by the corporate tax rate for the loss year. Cap the component at that earlier year's income tax liability not already used for a carry-back offset. 6. Sum the components and cap the refundable offset at the current year-end franking account balance. Check the specific foreign-resident exception in section 160-10(3) before omitting that cap. For example, a qualifying 25% company chooses to carry a $100,000 loss for 2026-27 against 2025-26. With no net exempt income, at least $25,000 unused prior-year tax liability and a $20,000 year-end franking balance, the offset is $20,000. The company must also meet the choice, lodgment and integrity conditions above.  _(Tax Reform No. 2 Act 2026, section 2 and schedules 1-2 (https://www.legislation.gov.au/C2026A00071/asmade/text); Division 160 (ss 160-10(3), 160-25, 160-30))_
 
 ### Rule 9 -- Lodgment and payment (2025-26 returns, 30 June balancers)
 
-Company income tax is full self-assessment: payment is due with lodgment per the program, not on a notice. Registered agent program: 31 October 2026 lodge / 1 December 2026 pay where prior-year returns were outstanding at 30 June 2026; 31 January 2027 lodge / 1 December 2026 pay for large-medium taxpayers taxable in 2024-25; 28 February 2027 for large-medium non-taxable and new registrant large-medium; 31 March 2027 where 2024-25 total income > $2m; **15 May 2027** for the rest; 5 June 2027 concession where both years are non-taxable/refund. Self-preparer small companies: generally 28 February 2027. Late lodgment risks FTL penalties and GIC -- and GIC from 1 July 2025 is non-deductible, so late payment now costs pre-tax dollars.
+- **Rule 9 -- Lodgment and payment (2025-26 returns, 30 June balancers)** — Company income tax is full self-assessment: payment is due with lodgment per the program, not on a notice. Registered agent program: 31 October 2026 lodge / 1 December 2026 pay where prior-year returns were outstanding at 30 June 2026; 31 January 2027 lodge / 1 December 2026 pay for large-medium taxpayers taxable in 2024-25; 28 February 2027 for large-medium non-taxable and new registrant large-medium; 31 March 2027 where 2024-25 total income > $2m; **15 May 2027** for the rest; 5 June 2027 concession where both years are non-taxable/refund. Self-preparer small companies: generally 28 February 2027. Late lodgment risks FTL penalties and GIC -- and GIC from 1 July 2025 is non-deductible, so late payment now costs pre-tax dollars.
 
 ### Rule 10 -- PAYG instalments interaction
 
-Companies enter automatically with instalment income >= $2m in the latest return, notional tax >= $500, or as head of a consolidated group. Default quarterly (typically 28 October / 28 February / 28 April / 28 July); instalment income > $20m -> monthly (21st of the following month); notional tax < $8,000 -> annual option (conditions apply). Amount method instalments are uplifted by the GDP factor: **5% for 2026-27** (4% for 2025-26). Variation is allowed but a variation below 85% of the actual liability attracts GIC on the shortfall. Instalments are credited against the assessed tax in the calculation statement -- reconcile the ICA before finalising; the 2026-27 instalments raised after the 2025-26 assessment are based on that return.
+- **Rule 10 -- PAYG instalments interaction** — Companies enter automatically with instalment income >= $2m in the latest return, notional tax >= $500, or as head of a consolidated group. Default quarterly (typically 28 October / 28 February / 28 April / 28 July); instalment income > $20m -> monthly (21st of the following month); notional tax < $8,000 -> annual option (conditions apply). Amount method instalments are uplifted by the GDP factor: **5% for 2026-27** (4% for 2025-26). Variation is allowed but a variation below 85% of the actual liability attracts GIC on the shortfall. Instalments are credited against the assessed tax in the calculation statement -- reconcile the ICA before finalising; the 2026-27 instalments raised after the 2025-26 assessment are based on that return.
 
 ### Rule 11 -- Return mechanics and add-backs
 
-Reconcile accounting profit to taxable income on the return: add back non-deductibles (GIC/SIC from 1 July 2025, fines and penalties, entertainment not subject to FBT, accounting depreciation) and adjust for tax timing (tax depreciation, prepayments, provisions -- deductible when incurred, not provided). Franked dividends received: gross up and offset (Rule 4). Distribution statements to shareholders within 4 months of year end (private companies). Amendment periods: eligible SMB assessments generally retain a 2-year ordinary period, subject to statutory exceptions. For 2024-25 and later assessments, table item 3A allows an additional 2-year window where the taxpayer applies in the approved form. The amendment must give effect to the decision on that application. Other companies generally have 4 years. See [ITAA 1936, section 170(1), table items 1-3A](https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170). Keep the losses schedule and flag it where losses > $100,000 are claimed or carried.
+- **Rule 11 -- Return mechanics and add-backs** — Reconcile accounting profit to taxable income on the return: add back non-deductibles (GIC/SIC from 1 July 2025, fines and penalties, entertainment not subject to FBT, accounting depreciation) and adjust for tax timing (tax depreciation, prepayments, provisions -- deductible when incurred, not provided). Franked dividends received: gross up and offset (Rule 4). Distribution statements to shareholders within 4 months of year end (private companies). Amendment periods: eligible SMB assessments generally retain a 2-year ordinary period, subject to statutory exceptions. For 2024-25 and later assessments, table item 3A allows an additional 2-year window where the taxpayer applies in the approved form. The amendment must give effect to the decision on that application. Other companies generally have 4 years. See [ITAA 1936, section 170(1), table items 1-3A](https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170). Keep the losses schedule and flag it where losses > $100,000 are claimed or carried.  _(ITAA 1936, section 170(1), table items 1-3A (https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170))_
 
 ### Rule 12 -- Div 7A boundary (cross-reference, do not duplicate)
 
-Any payment, loan, debt forgiveness or private asset use flowing from the company to shareholders/associates, any debit loan account, and any UPE question (including post-*Bendel* treatment) is **au-div7a** territory -- run that skill before this return is signed off. The only company-return touchpoints here: deemed dividends are generally unfrankable, Div 7A loan interest is assessable income, and the 2026-27 benchmark interest rate is 8.77%.
-
----
+- **Rule 12 -- Div 7A boundary (cross-reference, do not duplicate)** — Any payment, loan, debt forgiveness or private asset use flowing from the company to shareholders/associates, any debit loan account, and any UPE question (including post-*Bendel* treatment) is **au-div7a** territory -- run that skill before this return is signed off. The only company-return touchpoints here: deemed dividends are generally unfrankable, Div 7A loan interest is assessable income, and the 2026-27 benchmark interest rate is 8.77%.
 
 ## Section 6 -- Tier 2 catalogue
 
@@ -284,8 +274,6 @@ Any payment, loan, debt forgiveness or private asset use flowing from the compan
 ### T2-6 -- Instalment variations in a falling year
 
 **Trigger:** client wants instalments varied down mid-year. **Issue:** variation below 85% of actual attracts GIC -- now non-deductible. **Action:** model the full-year estimate before varying; document the basis.
-
----
 
 ## Section 7 -- Excel working paper template
 
@@ -331,8 +319,6 @@ FLAGS
   Refusal triggers hit (R-AU-CT-1..6): [____]
 ```
 
----
-
 ## Section 8 -- Reading guide
 
 1. Rate first, return second: run both limbs of the BRE test on real numbers before any tax computation -- and run the SEPARATE prior-year test before any dividend is franked.
@@ -340,8 +326,6 @@ FLAGS
 3. The franking account is continuous. Every instalment, refund and dividend moves it; the year-end balance decides FDT, not intentions.
 4. Losses: the share register is the evidence, not the client's memory. Any transfer, issue or redemption inside the ownership test period reopens the analysis.
 5. Payment dates are lodgment-linked for most SMEs (full self-assessment) -- lodging early does not delay payment beyond the program date, and lodging late compounds FTL penalties with non-deductible GIC.
-
----
 
 ## Section 9 -- Onboarding fallback
 
@@ -353,14 +337,14 @@ If the client provides only financial statements and a trial balance:
 4. Rebuild the franking account from the ICA and any dividend statements sighted
 5. **Flag:** "Computed from financial statements only. Aggregated turnover grouping, trust distribution character, share register continuity, franking history and instalment reconciliation not verified. Reviewer must confirm before lodgment or any distribution statement is issued."
 
----
-
 ## Section 10 -- Reference material
 
 ### Key figures (2025-26 and 2026-27)
 
+**Key figures (2025-26 and 2026-27)**
+
 | Item | 2025-26 | 2026-27 |
-|---|---|---|
+| --- | --- | --- |
 | BRE rate / standard rate | 25% / 30% | 25% / 30% |
 | Aggregated turnover threshold | $50m | $50m |
 | BREPI limb | <= 80% of assessable income | <= 80% |
@@ -373,8 +357,10 @@ If the client provides only financial statements and a trial balance:
 
 ### Primary sources (verified 20 August 2026)
 
+**Primary sources (verified 20 August 2026)**  _(Primary sources (verified 20 August 2026))_
+
 | Topic | Source |
-|---|---|
+| --- | --- |
 | Rates and BRE definition | Income Tax Rates Act 1986 ss 23(2), 23AA, 23AB; ato.gov.au Changes to company tax rates (QC 54063, updated 27 May 2026) |
 | BREPI and trust tracing | LCR 2019/5 Base rate entities and base rate entity passive income; TR 2019/1 |
 | Imputation rate and max credit | ato.gov.au Allocating franking credits (QC 47305); ITAA 1997 Div 202, s 995-1 (corporate tax rate for imputation purposes) |
@@ -423,13 +409,13 @@ If the client provides only financial statements and a trial balance:
 - NEVER compute consolidation, thin cap, transfer pricing or R&D claims -- escalate (Section 2)
 - NEVER present figures as definitive
 
----
-
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

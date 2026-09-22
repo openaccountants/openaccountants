@@ -16,6 +16,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Australia R&D Tax Incentive Skill v1.2
 
+## Australia R&D Tax Incentive Skill v1.2
+
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 > **Law-change context.** The R&DTI was reformed for income years starting on or after 1 July 2021 (Treasury Laws Amendment (A Tax Plan for the COVID-19 Economic Recovery) Act 2020): the old flat 43.5% refundable and 38.5% non-refundable rates were replaced with company-tax-rate-plus-premium rates and a two-tier R&D intensity test; the expenditure cap rose from $100m to $150m; a uniform clawback rule and Part IVA were extended to the offset. From income years starting on or after 1 July 2025, R&D activities relating to tobacco or gambling are ineligible unless conducted for the sole purpose of harm minimisation. The statutory four-year amendment period applies to R&D claims. Verify all rates before relying.
@@ -214,7 +216,7 @@ $6,660 is added to assessable income. The clawback recovers only the 18.5% incen
 
 ### Rule 13 -- Interaction with the instant asset write-off and small business concessions
 
-- **Interaction with the instant asset write-off and small business concessions** — An R&D entity can be a small business entity and use the instant asset write-off ($20,000 for 2025-26; permanent threshold enacted with 1 October 2026 commencement and specified application from 1 July 2026 under [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text)) for assets used in the business. But the R&DTI and IAWO interact at the asset-cost level: expenditure included in the cost of a depreciating asset is NOT a notional deduction, so an amount immediately written off under the IAWO is not also claimable as R&D expenditure. Instead, the R&DTI gives a notional deduction for the asset's **decline in value** to the extent of R&D use. Do not double-count an asset's cost across both concessions. The aggregated-turnover grouping rules are shared with the small business concessions, but the R&DTI has its own $20m threshold and exempt-entity-control test, which are not the same as the small business entity tests.
+- **Interaction with the instant asset write-off and small business concessions** — An R&D entity can be a small business entity and use the instant asset write-off ($20,000 for 2025-26; permanent threshold enacted with 1 October 2026 commencement and specified application from 1 July 2026 under [Tax Reform No. 2 Act 2026, section 2 and schedules 1-2](https://www.legislation.gov.au/C2026A00071/asmade/text)) for assets used in the business. But the R&DTI and IAWO interact at the asset-cost level: expenditure included in the cost of a depreciating asset is NOT a notional deduction, so an amount immediately written off under the IAWO is not also claimable as R&D expenditure. Instead, the R&DTI gives a notional deduction for the asset's **decline in value** to the extent of R&D use. Do not double-count an asset's cost across both concessions. The aggregated-turnover grouping rules are shared with the small business concessions, but the R&DTI has its own $20m threshold and exempt-entity-control test, which are not the same as the small business entity tests.  _(Tax Reform No. 2 Act 2026, section 2 and schedules 1-2)_
 
 ## Section 6 -- Tier 2 catalogue
 
@@ -246,11 +248,11 @@ $6,660 is added to assessable income. The clawback recovers only the 18.5% incen
 
 These are deliberate refusal-and-escalate zones. Do NOT answer them from this skill.
 
-- **R-AU-RD-1** — Whether a specific activity qualifies as a core or supporting R&D activity  _("Whether an activity is R&D is a technical/engineering judgement about scientific uncertainty and the knowledge threshold under s 355-25, not an accounting judgement. This needs a competent professional in the field and, for certainty, an AusIndustry/DISR advance finding. I can help organise the project documentation but cannot classify the activity.")_
-- **R-AU-RD-2** — Preparing or lodging the DISR registration application  _("Registration is a self-assessed application to AusIndustry/DISR describing the activities against the legislative criteria. I can't draft or lodge it. Refer to AusIndustry (13 28 46) or a registered R&D tax adviser. The normal deadline is 10 months after year end; assess the Rule 7 extension route if late.")_
-- **R-AU-RD-3** — Advance findings, overseas findings, or binding certainty on eligibility  _("Only DISR can make an advance finding (activity eligibility) or an overseas finding (s 28D IR&D Act). These are binding decisions for your specific facts. Refer to AusIndustry; I can help assemble the supporting records.")_
-- **R-AU-RD-4** — Overseas R&D activities  _("Activities conducted overseas are claimable only with a positive DISR overseas finding, and only where conducted for the claimant (not a foreign related entity). This needs the finding in place before claiming. Refer to AusIndustry.")_
-- **R-AU-RD-5** — Aggregated expenditure/turnover across connected or affiliated groups  _("Aggregated turnover across connected and affiliated entities (including foreign ones) determines refundable vs non-refundable, and group structuring can attract Part IVA. Compute the group position with the client's adviser; I can prepare the underlying turnover figures per entity.")_
+- **R-AU-RD-1** — Whether a specific activity qualifies as a core or supporting R&D activity  ("Whether an activity is R&D is a technical/engineering judgement about scientific uncertainty and the knowledge threshold under s 355-25, not an accounting judgement. This needs a competent professional in the field and, for certainty, an AusIndustry/DISR advance finding. I can help organise the project documentation but cannot classify the activity.")  _(s 355-25)_
+- **R-AU-RD-2** — Preparing or lodging the DISR registration application  ("Registration is a self-assessed application to AusIndustry/DISR describing the activities against the legislative criteria. I can't draft or lodge it. Refer to AusIndustry (13 28 46) or a registered R&D tax adviser. The normal deadline is 10 months after year end; assess the Rule 7 extension route if late.")
+- **R-AU-RD-3** — Advance findings, overseas findings, or binding certainty on eligibility  ("Only DISR can make an advance finding (activity eligibility) or an overseas finding (s 28D IR&D Act). These are binding decisions for your specific facts. Refer to AusIndustry; I can help assemble the supporting records.")  _(s 28D IR&D Act)_
+- **R-AU-RD-4** — Overseas R&D activities  ("Activities conducted overseas are claimable only with a positive DISR overseas finding, and only where conducted for the claimant (not a foreign related entity). This needs the finding in place before claiming. Refer to AusIndustry.")
+- **R-AU-RD-5** — Aggregated expenditure/turnover across connected or affiliated groups  ("Aggregated turnover across connected and affiliated entities (including foreign ones) determines refundable vs non-refundable, and group structuring can attract Part IVA. Compute the group position with the client's adviser; I can prepare the underlying turnover figures per entity.")
 
 ## Section 8 -- Reading guide
 
@@ -344,6 +346,8 @@ If the client provides only financial statements:
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

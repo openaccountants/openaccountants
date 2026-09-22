@@ -17,6 +17,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Australia Rates Card 2026-27 (with 2025-26) v1.2
 
+## Australia Rates Card 2026-27 (with 2025-26) v1.2
+
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 Single-page lookup for the figures every other Australian guide relies on. Each row names its primary source. Verified against those sources on 20 August 2026. Deeper rules live in the topic guides named in each section; this card never overrides them.
@@ -169,6 +171,8 @@ This card is the single place indexed figures live outside their topic guides. W
 ## Provenance
 
 All figures verified 20 August 2026 directly against: ato.gov.au rate pages (QC 73320, 27031, 71196, 73746, 103578, 103927, contributions caps, key super rates, car thresholds, Div 7A rates, GDP adjustment), Department of Health PHI Circular 12/26, Revenue NSW / SRO Vic / QRO current-rates pages, FWC Annual Wage Review 2025-26 decision, ASIC fee indexation page (1 July 2026), and the amending Acts named inline.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

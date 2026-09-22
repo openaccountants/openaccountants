@@ -22,6 +22,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Lodgment Deadlines, Penalties and Interest
 
+## Australia Lodgment Deadlines, Penalties and Interest
+
 ## Australia Lodgment Deadlines, Penalties and Interest v0.3
 
 > **General reference only.** This skill is general tax and accounting reference material for
@@ -121,18 +123,7 @@ engages an agent in April cannot assume the May date.
 
 ## Section 5 - Deferrals, extensions and disaster support
 
-1. **Electronic lodgment concession.** Quarterly BAS lodgers may receive an extra two weeks for
-   quarters 1, 3 and 4 when lodging online. Quarter 2 is excluded because its due date already
-   carries a one month extension.
-2. **Agent deferral.** A registered agent can request a deferral for a client, or a bulk deferral
-   where a practice-level event prevents lodgment.
-3. **Individual deferral.** A taxpayer can request more time. Apply before the due date; a request
-   made after the due date does not undo a penalty that has already accrued.
-4. **Disaster support.** Taxpayers in areas affected by a declared natural disaster may receive
-   automatic deferrals of lodgment and payment, and in some cases faster processing of refunds.
-5. **Payment arrangements.** An inability to pay is not a reason to delay lodgment. Lodge on time
-   and negotiate a payment arrangement. General interest charge continues to accrue under a
-   payment arrangement unless the ATO remits it.
+- **Deferrals, extensions and disaster support** — 1. **Electronic lodgment concession.** Quarterly BAS lodgers may receive an extra two weeks for quarters 1, 3 and 4 when lodging online. Quarter 2 is excluded because its due date already carries a one month extension. 2. **Agent deferral.** A registered agent can request a deferral for a client, or a bulk deferral where a practice-level event prevents lodgment. 3. **Individual deferral.** A taxpayer can request more time. Apply before the due date; a request made after the due date does not undo a penalty that has already accrued. 4. **Disaster support.** Taxpayers in areas affected by a declared natural disaster may receive automatic deferrals of lodgment and payment, and in some cases faster processing of refunds. 5. **Payment arrangements.** An inability to pay is not a reason to delay lodgment. Lodge on time and negotiate a payment arrangement. General interest charge continues to accrue under a payment arrangement unless the ATO remits it.
 
 ## Section 6 - Failure to lodge on time penalty
 
@@ -363,6 +354,8 @@ lodging or acting upon them.
 
 The most up-to-date version of this skill is maintained at
 [openaccountants.com](https://www.openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

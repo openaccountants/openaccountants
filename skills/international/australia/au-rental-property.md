@@ -15,7 +15,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Rental Property
 
+## AU Rental Property
+
 ## Australia Rental Property -- Income & Deductions Skill v1.3
+
+Australia Rental Property -- Income & Deductions Skill v1.3
 
 ## Section 1 -- Quick Reference
 
@@ -126,7 +130,7 @@ income year, except where a section says otherwise.
 
 ### 2.4 Repairs vs Improvements (TR 97/23)
 
-**Repairs vs Improvements (TR 97/23)**  _(TR 97/23)_
+**Repairs vs Improvements (TR 97/23)**  _([TR 97/23](https://www.ato.gov.au/law/view/document?docid=TXR/TR9723/NAT/ATO/00001))_
 
 | Characteristic | Repair (immediate deduction) | Improvement (capitalise) |
 | --- | --- | --- |
@@ -141,9 +145,7 @@ income year, except where a section says otherwise.
 
 ### 2.5 Division 40 -- Plant & Equipment Depreciation
 
-**Division 40 Effective Lives**
-
-The table follows Table A, Residential property operators (67110), in the *Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025*. Choose the applicable determination under section 40-95, including its contract-date and start-time rules, or a valid self-assessed life; do not automatically reset an existing asset register. See [2025 determination, Schedule 2 Table A](https://www.legislation.gov.au/F2025L01097/asmade).
+**Division 40 Effective Lives**  _(Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025, Table A, Residential property operators (67110). [2025 determination, Schedule 2 Table A](https://www.legislation.gov.au/F2025L01097/asmade))_
 
 | Asset | Effective Life (ATO) | Decline Method |
 | --- | --- | --- |
@@ -157,6 +159,8 @@ The table follows Table A, Residential property operators (67110), in the *Incom
 | Dishwasher | 8 years | Either |
 | Smoke alarm | 6 years | Either |
 | Ceiling fan | 5 years | Either |
+
+The table follows Table A, Residential property operators (67110), in the *Income Tax Assessment (Effective Life of Depreciating Assets) Determination 2025*. Choose the applicable determination under section 40-95, including its contract-date and start-time rules, or a valid self-assessed life; do not automatically reset an existing asset register. See [2025 determination, Schedule 2 Table A](https://www.legislation.gov.au/F2025L01097/asmade).
 
 - **Diminishing value rate** — 200% ÷ effective life
 - **Prime cost rate** — 100% ÷ effective life
@@ -208,7 +212,7 @@ The table follows Table A, Residential property operators (67110), in the *Incom
 
 ### 2.9 Non-Resident Rental Withholding
 
-**Non-Resident Rental Withholding Rules**
+**Non-Resident Rental Withholding Rules**  _([ATO, FRCGW](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding))_
 
 | Rule | Detail |
 | --- | --- |
@@ -421,6 +425,8 @@ and `au-stamp-duty.md` for the jurisdiction-specific detail.
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, registered tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

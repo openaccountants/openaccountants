@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 2 — The Core Rule
 
-- **Core rule for non-resident CGT** — Non-residents are only subject to Australian CGT on **Taxable Australian Property (TAP)**. Non-TAP assets sold by non-residents: **no Australian CGT**.
+- **Core rule for non-resident CGT** — Non-residents are only subject to Australian CGT on **Taxable Australian Property (TAP)**. Non-TAP assets sold by non-residents: **no Australian CGT**.  _(ITAA 1997 Div 855)_
 
 ## Section 3 — The TAP Test: What Qualifies as TAP
 
@@ -103,6 +103,8 @@ Always check the saving clause and specific treaty wording.
 - ATO: Foreign resident capital gains withholding (ato.gov.au/FRCGW)
 
 > **Working paper only.** The TAP classification requires analysis of the company's asset composition by market value — not book value. Engage a qualified Australian tax adviser for transaction-specific advice.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 
