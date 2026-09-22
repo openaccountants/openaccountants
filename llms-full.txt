@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2017 guides, 245 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (2019 guides, 245 jurisdictions, 171 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1229,6 +1229,7 @@ https://www.openaccountants.com
 - mt-rental-income | MT | tier 2 | reviewed_by -
 - mt-reverse-charge-acquisition-intra | MT | tier 2 | reviewed_by -
 - mt-reverse-charge-vat-services-received-from | MT | tier 2 | reviewed_by -
+- mt-vat3-quarterly-return-malta | MT | tier 2 | reviewed_by -
 - selling-a-company-in-malta | MT | tier 2 | reviewed_by -
 - mr-company-formation | MR | tier 2 | reviewed_by -
 - mr-corporate-income-tax | MR | tier 2 | reviewed_by -
@@ -1953,6 +1954,7 @@ https://www.openaccountants.com
 - az-sales-tax | US-AZ | tier 2 | reviewed_by -
 - az-transaction-privilege-tax | US-AZ | tier 2 | reviewed_by -
 - ca-540-es-estimated-tax | US-CA | tier 2 | reviewed_by -
+- ca-bookkeeping-monthly-close | US-CA | tier 2 | reviewed_by -
 - ca-form-3853-coverage | US-CA | tier 2 | reviewed_by -
 - ca-formation | US-CA | tier 2 | reviewed_by -
 - ca-income-tax | US-CA | tier 2 | reviewed_by -

@@ -1,21 +1,23 @@
 ---
 name: au-rates-2026-27
 description: Use this skill whenever you need a current Australian tax rate, threshold, cap or due date for the 2026-27 or 2025-26 income year -- individual brackets, HELP repayment, Medicare levy and surcharge, super guarantee and contribution caps, Division 296, company rates, Div 7A benchmark, FBT, CGT caps and concessions, GST, PAYG instalment uplift, cents-per-km, car limits, penalty units, payroll tax, minimum wage or ASIC fees. Single-page rates card; every figure carries its source. Trigger on "what is the current rate", "2026-27 threshold", "how much is the cap", or any AU figure lookup. Load alongside the topic guide.
-version: 1.1
+version: 1.2
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-10
+last_updated: 2026-09-22
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Rates Card 2026-27 (with 2025-26) v1.1
+# Australia Rates Card 2026-27 (with 2025-26) v1.2
 
-## Australia Rates Card 2026-27 (with 2025-26) v1.1
+## Australia Rates Card 2026-27 (with 2025-26) v1.2
 
-## Australia Rates Card 2026-27 (with 2025-26) v1.1
+## Australia Rates Card 2026-27 (with 2025-26) v1.2
+
+## Australia Rates Card 2026-27 (with 2025-26) v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -111,7 +113,7 @@ Single-page lookup for the figures every other Australian guide relies on. Each 
 | Loss carry-back | New enacted rules apply to income years starting on or after 1 July 2026 for eligible corporate tax entities; test SGE status, earlier tax liabilities, franking balance and other conditions | [Tax Reform No. 2 Act 2026, schedules 1–2](https://www.legislation.gov.au/C2026A00071/asmade/text); commencement 1 October 2026 |
 | Div 7A benchmark | 8.37% (2025-26); **8.77% (2026-27)** | ATO Div 7A rates |
 | PAYG GDP uplift | 4% (2025-26); **5% (2026-27)** | ATO GDP adjustment |
-| Amendment period (SMB) | 4 years for 2024-25+ assessments | ATO amendment periods |
+| Amendment period (SMB) | Generally 2 years, subject to exceptions. For 2024-25 and later assessments, the additional 2-year window requires an approved-form taxpayer application and is limited to giving effect to it. | [ITAA 1936, section 170(1), table items 1-3A](https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170) |
 
 ## FBT (year ending 31 March 2027)
 
@@ -169,6 +171,8 @@ This card is the single place indexed figures live outside their topic guides. W
 ## Provenance
 
 All figures verified 20 August 2026 directly against: ato.gov.au rate pages (QC 73320, 27031, 71196, 73746, 103578, 103927, contributions caps, key super rates, car thresholds, Div 7A rates, GDP adjustment), Department of Health PHI Circular 12/26, Revenue NSW / SRO Vic / QRO current-rates pages, FWC Annual Wage Review 2025-26 decision, ASIC fee indexation page (1 July 2026), and the amending Acts named inline.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

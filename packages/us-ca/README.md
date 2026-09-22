@@ -67,12 +67,13 @@ This package contains **federal** tax skills (which apply to all US states) plus
 57. `us-ca-freelance-intake.md`
 58. `us-ca-return-assembly.md`
 59. `ca-540-es-estimated-tax.md`
-60. `ca-form-3853-coverage.md`
-61. `ca-formation.md`
-62. `ca-income-tax.md`
-63. `ca-payroll.md`
-64. `ca-sales-use-tax.md`
-65. `ca-smllc-form-568.md`
+60. `ca-bookkeeping-monthly-close.md`
+61. `ca-form-3853-coverage.md`
+62. `ca-formation.md`
+63. `ca-income-tax.md`
+64. `ca-payroll.md`
+65. `ca-sales-use-tax.md`
+66. `ca-smllc-form-568.md`
 
 ## How to use
 

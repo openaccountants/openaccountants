@@ -1,16 +1,18 @@
 ---
 name: australia-gst
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Australian GST return (Business Activity Statement / BAS) for any client. Trigger on phrases like "prepare BAS", "do the GST", "fill in BAS", "create the return", "GST return", "Activity Statement", or any request involving Australian GST filing. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. This skill covers Australia only and covers both Simpler BAS and full BAS reporting. GST groups, margin scheme, partial exemption complex, and going concern are all in the refusal catalogue. ALWAYS read this skill before touching any GST-related work.
-version: 2.3
+version: 2.4
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-17
+last_updated: 2026-09-22
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Australia GST
+
+## Australia GST
 
 ## Australia GST
 
@@ -23,7 +25,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Australia (Commonwealth of Australia) |
 | Standard rate | 10% (single rate -- no reduced rates) |
 | GST-free (zero rate equivalent) | 0% -- input tax credits retained (Division 38) |
-| Input taxed (exempt equivalent) | No GST -- no input tax credits (Division 40) |
+| Input taxed (exempt equivalent) | No GST; related credits generally blocked, subject to financial-supply exceptions in section 5.3 (Division 40; s 11-15; Division 70) |
 | Return form | BAS (Business Activity Statement) -- Simpler BAS or Full BAS |
 | Filing portal | ATO Business Portal (https://bp.ato.gov.au) / myGov (https://my.gov.au) |
 | Authority | Australian Taxation Office (ATO) |
@@ -62,9 +64,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | 1A | GST on sales (output GST) |
 | 1B | GST on purchases (input tax credits) |
 
-- **Simpler BAS reporting scope** — Simpler BAS (turnover < $10M, default since 1 July 2017): Report only G1, 1A, 1B. No need for G2-G18.  _(ATO GST reporting)_
-- **Full BAS reporting scope** — Complete the labels required by the issued BAS. G4–G9 and G12–G19 are calculation-worksheet items, not a requirement to lodge every G label. Use G1, G2, G3, G10, G11, 1A and 1B where required, plus other tax labels that apply.  _([ATO GST reporting](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst))_
-- **GST calculation formulas** — GST = GST-inclusive price x 1/11; GST = GST-exclusive price x 10%; GST-inclusive = GST-exclusive x 1.1; GST-exclusive = GST-inclusive / 1.1  _(Section 1 -- Quick reference)_
+- **Simpler BAS reporting scope** — Simpler BAS (turnover < $10M, default since 1 July 2017): Report only G1, 1A, 1B. No need for G2-G18.  _((ATO GST reporting))_
+- **Full BAS reporting scope** — Complete the labels required by the issued BAS. G4–G9 and G12–G19 are calculation-worksheet items, not a requirement to lodge every G label. Use G1, G2, G3, G10, G11, 1A and 1B where required, plus other tax labels that apply.  _(([ATO GST reporting](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/goods-and-services-tax-gst)))_
+- **GST calculation formulas** — GST = GST-inclusive price x 1/11; GST = GST-exclusive price x 10%; GST-inclusive = GST-exclusive x 1.1; GST-exclusive = GST-inclusive / 1.1  _((Section 1 -- Quick reference))_
 
 **Conservative defaults -- Australian-specific**
 
@@ -113,11 +115,11 @@ If source evidence is incomplete, prepare a provisional transaction list. Withho
 
 If any trigger fires, stop, output the refusal message verbatim, end the conversation. Refusal is a safety mechanism.
 
-- **R-AU-1 -- Partial exemption complex** — Trigger: client makes both taxable/GST-free supplies AND input taxed supplies, and the input taxed proportion is not de minimis (financial acquisitions threshold exceeded). Message: "You make both taxable and input taxed supplies. Your input tax credits must be apportioned under Division 11 (s 11-30), which requires determining the extent of creditable purpose for each acquisition. This cannot be completed without a documented apportionment methodology confirmed by a registered tax agent. Please escalate."  _(Division 11, s 11-30)_
-- **R-AU-2 -- GST groups** — Trigger: client is part of a GST group under Division 48 or asks about group registration. Message: "GST groups under Division 48 require consolidation across the group with a representative member lodging a single BAS. Intra-group supplies are disregarded. This is out of scope for this skill. Please use a registered tax agent."  _(Division 48)_
-- **R-AU-3 -- Margin scheme** — Trigger: client sells property using the margin scheme under Division 75. Message: "Margin scheme transactions under Division 75 require computing GST on the margin (sale price minus acquisition cost) and confirming eligibility based on the original acquisition. This is too fact-sensitive for this skill. Please use a registered tax agent."  _(Division 75)_
-- **R-AU-4 -- Going concern** — Trigger: client sells or buys a business as a going concern under s 38-325. Message: "Going concern supplies under s 38-325 require verification that all three conditions are met (going concern, both parties registered, written agreement). Incorrect classification results in either 10% GST on the full sale price or a missed GST-free entitlement. Please use a registered tax agent to confirm eligibility before proceeding."  _(s 38-325)_
-- **R-AU-5 -- Financial supply complex (financial institution)** — Trigger: client is a financial institution (bank, insurer, super fund) whose primary supplies are input taxed financial supplies, or client asks about Reduced Input Tax Credits (RITC). Message: "Financial institutions making predominantly input taxed supplies require specialist apportionment, RITC calculations (75%/55%), and the financial acquisitions threshold test. This is out of scope. Please use a registered tax agent specialising in financial services GST."  _(RITC 75%/55%)_
+- **R-AU-1 -- Partial exemption complex** — Trigger: client makes both taxable/GST-free supplies AND input taxed supplies, and the input taxed proportion is not de minimis (financial acquisitions threshold exceeded). Message: "You make both taxable and input taxed supplies. Your input tax credits must be apportioned under Division 11 (s 11-30), which requires determining the extent of creditable purpose for each acquisition. This cannot be completed without a documented apportionment methodology confirmed by a registered tax agent. Please escalate."  _((Division 11, s 11-30))_
+- **R-AU-2 -- GST groups** — Trigger: client is part of a GST group under Division 48 or asks about group registration. Message: "GST groups under Division 48 require consolidation across the group with a representative member lodging a single BAS. Intra-group supplies are disregarded. This is out of scope for this skill. Please use a registered tax agent."  _((Division 48))_
+- **R-AU-3 -- Margin scheme** — Trigger: client sells property using the margin scheme under Division 75. Message: "Margin scheme transactions under Division 75 require computing GST on the margin (sale price minus acquisition cost) and confirming eligibility based on the original acquisition. This is too fact-sensitive for this skill. Please use a registered tax agent."  _((Division 75))_
+- **R-AU-4 -- Going concern** — Trigger: client sells or buys a business as a going concern under s 38-325. Message: "Going concern supplies under s 38-325 require verification that all three conditions are met (going concern, both parties registered, written agreement). Incorrect classification results in either 10% GST on the full sale price or a missed GST-free entitlement. Please use a registered tax agent to confirm eligibility before proceeding."  _((s 38-325))_
+- **R-AU-5 -- Financial supply complex (financial institution)** — Trigger: client is a financial institution (bank, insurer, super fund) whose primary supplies are input taxed financial supplies, or client asks about Reduced Input Tax Credits (RITC). Message: "Financial institutions making predominantly input taxed supplies require specialist apportionment, RITC calculations (75%/55%), and the financial acquisitions threshold test. This is out of scope. Please use a registered tax agent specialising in financial services GST."  _((RITC 75%/55%))_
 
 ## Section 3 -- Supplier pattern library (Australian vendors)
 
@@ -160,7 +162,7 @@ Use merchant patterns to identify candidate treatments. Confirm the actual suppl
 
 ### 3.3 Australian utilities (taxable 10%)
 
-**Australian utilities table**
+**Australian utilities table**  _(GST Act ss 38-285 and 38-290; GSTR 2000/25)_
 
 | Pattern | Treatment | BAS Label | Notes |
 | --- | --- | --- | --- |
@@ -240,11 +242,11 @@ Use merchant patterns to identify candidate treatments. Confirm the actual suppl
 | DROPBOX | Dropbox (IE or US) | Non-resident supply | Check invoice |
 | AWS, AMAZON WEB SERVICES | Amazon Web Services Inc (US) or AWS Australia Pty Ltd | Check invoice | If AU entity: domestic 10%. If US entity: non-resident. |
 
-- **Non-resident digital supplies note** — Since 1 July 2017, many non-resident digital suppliers (Netflix, Spotify, Google, etc.) have registered for Australian GST and charge 10% on B2C supplies. For B2B supplies where the recipient provides an ABN, the supplier may not charge GST -- reverse charge may apply on the recipient if the acquisition is not fully creditable. Always check the actual invoice.  _(3.7 SaaS (reverse charge from non-resident suppliers))_
+- **Non-resident digital supplies note** — Since 1 July 2017, many non-resident digital suppliers (Netflix, Spotify, Google, etc.) have registered for Australian GST and charge 10% on B2C supplies. For B2B supplies where the recipient provides an ABN, the supplier may not charge GST -- reverse charge may apply on the recipient if the acquisition is not fully creditable. Always check the actual invoice.  _((3.7 SaaS (reverse charge from non-resident suppliers)))_
 
 ### 3.8 Payment processors (classify the actual service)
 
-**Payment processors table**
+**Payment processors table**  _([GSTR 2019/2](https://www.ato.gov.au/law/view/document?docid=GST/GSTR20192/NAT/ATO/00001))_
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
@@ -385,6 +387,8 @@ Input: `25.04.2026 ; STRIPE PAYMENTS AU ; DEBIT ; Transaction fees April ; AUD 1
 
 The name does not settle the GST treatment. In this example a valid Australian tax invoice establishes a taxable processing service with $13.20 GST, wholly for creditable business use. The cash debit is $145.20, net expense $132.00 and positive GST credit $13.20. If that evidence is absent, show a pending treatment and no verified credit until resolved. A supply of credit or a different cross-border arrangement may have a different result. [GSTR 2019/2](https://www.ato.gov.au/law/view/document?docid=GST/GSTR20192/NAT/ATO/00001).
 
+**Example 6 output**
+
 | Date | Counterparty | Bank amount | Net expense | GST credit | Label | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | 25.04.2026 | STRIPE PAYMENTS AU | -145.20 | 132.00 | 13.20 | G11 | Valid tax invoice and wholly creditable use |
@@ -395,13 +399,13 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 
 ### 5.1 Taxable supplies (10%)
 
-- **Taxable supply conditions and mapping** — Legislation: GST Act, s 9-5 (meaning of taxable supply), s 9-70 (rate). Default rate for any supply connected with Australia by a GST-registered entity in the course of an enterprise, unless the supply is GST-free (Division 38) or input taxed (Division 40). Australia has a single 10% rate -- no reduced rates, no multiple rate tiers. A supply is taxable if ALL conditions are met (s 9-5): 1. Made for consideration; 2. In the course or furtherance of an enterprise; 3. Connected with the indirect tax zone (Australia); 4. Supplier is registered or required to be registered; AND 5. NOT GST-free and NOT input taxed. Sales: G1 (and G6 derived). Purchases: G10 (capital) or G11 (non-capital). GST on sales: 1A. GST credits on purchases: 1B. Common taxable supplies: professional services (legal, accounting, consulting), commercial rent, construction, telecommunications, general insurance premiums, software licences, motor vehicle sales, restaurant/cafe meals, domestic transport, office supplies, equipment purchases.  _(GST Act, s 9-5, s 9-70)_
+- **Taxable supply conditions and mapping** — Legislation: GST Act, s 9-5 (meaning of taxable supply), s 9-70 (rate). Default rate for any supply connected with Australia by a GST-registered entity in the course of an enterprise, unless the supply is GST-free (Division 38) or input taxed (Division 40). Australia has a single 10% rate -- no reduced rates, no multiple rate tiers. A supply is taxable if ALL conditions are met (s 9-5): 1. Made for consideration; 2. In the course or furtherance of an enterprise; 3. Connected with the indirect tax zone (Australia); 4. Supplier is registered or required to be registered; AND 5. NOT GST-free and NOT input taxed. Sales: G1 (and G6 derived). Purchases: G10 (capital) or G11 (non-capital). GST on sales: 1A. GST credits on purchases: 1B. Common taxable supplies: professional services (legal, accounting, consulting), commercial rent, construction, telecommunications, general insurance premiums, software licences, motor vehicle sales, restaurant/cafe meals, domestic transport, office supplies, equipment purchases.  _((GST Act, s 9-5, s 9-70))_
 
 ### 5.2 GST-free supplies (0%, credits retained)
 
-- **GST-free supplies overview** — GST-free supplies attract 0% GST but the supplier retains full input tax credit entitlements on related costs. This mirrors the EU concept of zero-rated supplies. Sales: G1 and G2 (exports) or G3 (other GST-free). On Simpler BAS, include in G1 only.  _(GST Act, Division 38)_
+- **GST-free supplies overview** — GST-free supplies attract 0% GST but the supplier retains full input tax credit entitlements on related costs. This mirrors the EU concept of zero-rated supplies. Sales: G1 and G2 (exports) or G3 (other GST-free). On Simpler BAS, include in G1 only.  _((GST Act, Division 38))_
 
-**Critical categories table**  _(GST Act, Division 38)_
+**Critical categories table**  _((GST Act, Division 38))_
 
 | Category | Subdivision | Key items |
 | --- | --- | --- |
@@ -409,13 +413,13 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 | Health services | 38-B | GP, specialist, hospital, dental, physiotherapy, chiropractic, ambulance. Must be Medicare-eligible or registered health practitioner. EXCLUDES cosmetic/elective surgery, veterinary. |
 | Education | 38-C | School fees (primary/secondary), university tuition, TAFE/RTO vocational training. EXCLUDES commercial training, private tutoring. |
 | Childcare | 38-D | Approved long day care, family day care, before/after school care. |
-| Exports of goods | 38-E | Goods physically exported within 60 days of supply. |
+| Exports of goods | 38-E | Under section 38-185 item 1, export before or within 60 days after the earlier of receiving any consideration or issuing an invoice. Item 2 has a separate final-instalment trigger for qualifying instalment contracts. The Commissioner may allow further time. [GST Act section 38-185](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/38-185) |
 | Exports of services | 38-E | Services to non-resident consumed outside Australia. |
 | Religious services | 38-F | By religious institution as part of religious practice. |
 | Water and sewerage | 38-G | Supply of water by government/utility (basic supply). |
 | Going concern | 38-J | Sale of business as going concern (both registered, written agreement) -- but R-AU-4 fires. |
 
-**GST-free food rules (Subdivision 38-A) table**  _(Subdivision 38-A)_
+**GST-free food rules (Subdivision 38-A) table**  _((Subdivision 38-A))_
 
 | Food item | Treatment | Reasoning |
 | --- | --- | --- |
@@ -442,11 +446,11 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 | Muesli bars | Taxable 10% | Snack food |
 | Honey-roasted/flavoured nuts | Taxable 10% | Snack food |
 
-### 5.3 Input taxed supplies (no GST, no credits)
+### 5.3 Input taxed supplies and credit restrictions
 
-- **Input taxed supplies overview** — Input taxed supplies have NO GST charged and the supplier gets NO input tax credits on related costs. This mirrors the EU concept of exempt-without-credit supplies. Sales: G4 (input taxed sales). Purchases related to input taxed supplies: G13 (no credit). Critical distinction: GST-free and input taxed are NOT the same. GST-free suppliers retain input tax credit entitlements; input taxed suppliers do not. Confusing them produces opposite outcomes.  _(GST Act, Division 40)_
+- **Input taxed supplies overview** — Input taxed supplies overview: no GST is charged, and related acquisitions generally do not have a creditable purpose. Sales go to G4. Check financial-supply exceptions before treating every related purchase as a blocked G13 credit. Under section 11-15(4) and Division 189, acquisitions relating to financial supplies may remain creditable where the financial acquisitions threshold is not exceeded. Test both the $150,000 and 10% limbs over the required periods. Also check the borrowing exception in section 11-15(5) and reduced input tax credits for eligible acquisitions under Division 70. These are specific exceptions, not a general credit entitlement for residential rental costs. See [GSTR 2003/9](https://www.ato.gov.au/law/view/document?docid=GST/GSTR20039/NAT/ATO/00001). GST-free supplies, by contrast, generally preserve credit entitlement.  _([GSTR 2003/9](https://www.ato.gov.au/law/view/document?docid=GST/GSTR20039/NAT/ATO/00001))_
 
-**Critical categories table**  _(GST Act, Division 40)_
+**Critical categories table**  _((GST Act, Division 40))_
 
 | Category | Section | Key items |
 | --- | --- | --- |
@@ -481,18 +485,18 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 
 ### 5.5 Reverse charge (Division 84)
 
-- **Australian reverse charge distinction from EU** — Key Australian distinction from EU: In Australia, reverse charge on offshore supplies to registered recipients applies ONLY when the acquisition is NOT fully creditable. If the recipient would claim 100% input tax credit anyway, no reverse charge -- no revenue leakage. When reverse charge applies: - Output GST (self-assessed): include in 1A - Input tax credit (if any): include in 1B - NOT reported in G1 (total sales) - Both sides appear on BAS  _(Division 84)_
-- **Netflix tax** — "Netflix tax" (Division 83-5, since 1 July 2017): Non-resident digital suppliers must register for GST if Australian turnover exceeds $75,000 and charge 10% on B2C supplies. For B2B where recipient provides ABN, supplier does NOT charge GST.  _(Division 83-5)_
+- **Australian reverse charge distinction from EU** — Key Australian distinction from EU: In Australia, reverse charge on offshore supplies to registered recipients applies ONLY when the acquisition is NOT fully creditable. If the recipient would claim 100% input tax credit anyway, no reverse charge -- no revenue leakage. When reverse charge applies: - Output GST (self-assessed): include in 1A - Input tax credit (if any): include in 1B - NOT reported in G1 (total sales) - Both sides appear on BAS  _((Division 84))_
+- **Offshore digital supplies** — Offshore digital supplies: section 9-25(5)(d) connects relevant supplies to Australian consumers with Australia. The usual registration threshold is at least $75,000 GST turnover. An ABN alone does not establish that a recipient is outside the Australian-consumer definition: the recipient must be GST-registered and acquire the supply wholly or partly for an enterprise. Suppliers must meet the evidence or reasonable-belief rules, including the ABN and registration declaration where applicable. Check other connection rules and any Division 84 reverse charge, particularly where the acquisition is not fully creditable. See [GSTR 2017/1](https://www.ato.gov.au/law/view/document?docid=GST/GSTR20171/NAT/ATO/00001) and GST Act sections 9-25(7), 84-100.  _([GSTR 2017/1] and GST Act sections 9-25(7), 84-100)_
 
 ### 5.6 Input tax credit entitlement (Division 11)
 
-- **Entitlement conditions** — Establish the s 11-5 creditable acquisition conditions, including taxable supply, consideration, registration and creditable purpose. Apply the attribution rules: generally hold a valid tax invoice before claiming, subject to the $82.50 including-GST exception and other lawful exceptions/discretion. The four-year claim limit is not permission to claim before obtaining required evidence.  _([GST Act ss 11-5, 29-10, 29-80 and 93-5](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-10))_
-- **Blocked credits** — No credit for acquisitions relating to input taxed supplies (s 11-15), private/domestic use (s 11-15), entertainment where FBT exempt (s 69-5), non-deductible fines/penalties (s 69-5).  _(s 11-15, s 69-5)_
-- **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2024-25 and 2025-26: $69,674 / 11 = ~$6,334 maximum credit; for 2026-27: $69,883 / 11 = ~$6,353. No outright block on cars (unlike Malta).  _(s 69-10)_
+- **Entitlement conditions** — Establish the s 11-5 creditable acquisition conditions, including taxable supply, consideration, registration and creditable purpose. Apply the attribution rules: generally hold a valid tax invoice before claiming, subject to the $82.50 including-GST exception and other lawful exceptions/discretion. The four-year claim limit is not permission to claim before obtaining required evidence.  _(([GST Act ss 11-5, 29-10, 29-80 and 93-5](https://www.ato.gov.au/law/view/document?docid=PAC/19990055/29-10)))_
+- **Blocked credits** — Generally no credit for acquisitions relating to input taxed supplies, subject to the financial-supply exceptions in section 5.3 (s 11-15 and Division 70); no credit for private/domestic use (s 11-15), entertainment where FBT exempt (s 69-5), non-deductible fines/penalties (s 69-5).  _((s 11-15, s 69-5))_
+- **Car limit** — Input tax credit for a car is capped at car limit / 11. For 2024-25 and 2025-26: $69,674 / 11 = ~$6,334 maximum credit; for 2026-27: $69,883 / 11 = ~$6,353. No outright block on cars (unlike Malta).  _((s 69-10))_
 
 ### 5.7 Tax invoices (Division 29)
 
-**Tax invoice requirements table**  _(Division 29)_
+**Tax invoice requirements table**  _((Division 29))_
 
 | Requirement | Supplies < $1,000 | Supplies >= $1,000 |
 | --- | --- | --- |
@@ -503,7 +507,7 @@ Each rule states the legal source and the BAS label mapping. Apply silently if t
 | GST amount (or "price includes GST") | Yes | Yes |
 | Recipient identity (name, ABN) | No | Yes |
 
-- **No ABN withholding** — Where required, withhold 47% and report at W4, subject to the entity’s withholding reporting class. Apply exceptions, including payments of $75 or less excluding GST and valid supplier statements where relevant.  _([ATO PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding))_
+- **No ABN withholding** — Where required, withhold 47% and report at W4, subject to the entity’s withholding reporting class. Apply exceptions, including payments of $75 or less excluding GST and valid supplier statements where relevant.  _(([ATO PAYG withholding](https://www.ato.gov.au/businesses-and-organisations/preparing-lodging-and-paying/business-activity-statements-bas/pay-as-you-go-payg-withholding)))_
 
 ### 5.8 Adjustments (Divisions 19, 21 and 129)
 
@@ -668,43 +672,43 @@ Infer the client profile from the data first. Only ask questions the data could 
 
 ### 9.1 Entity type and trading name
 
-Inference rule: sole trader names match account holder; company names end in "Pty Ltd", "Ltd". Fallback question: "Are you a sole trader, partnership, company (Pty Ltd), or trust?"
+- **Entity type inference and fallback** — Inference rule: sole trader names match account holder; company names end in "Pty Ltd", "Ltd". Fallback question: "Are you a sole trader, partnership, company (Pty Ltd), or trust?"  _(9.1 Entity type and trading name)_
 
 ### 9.2 GST registration status
 
-Verify GST registration and its effective date on the ABR, supported by the ATO account. A request for a BAS does not establish registration. Check PAYG activity statements separately.
+- **GST registration status inference** — Verify GST registration and its effective date on the ABR, supported by the ATO account. A request for a BAS does not establish registration. Check PAYG activity statements separately.  _(9.2 GST registration status)_
 
 ### 9.3 ABN
 
-Inference rule: may appear on bank statement header or invoices. Search descriptions. Fallback question: "What is your ABN? (11 digits)"
+- **ABN inference and fallback** — Inference rule: may appear on bank statement header or invoices. Search descriptions. Fallback question: "What is your ABN? (11 digits)"  _(9.3 ABN)_
 
 ### 9.4 Reporting period and method
 
-Inference rule: statement date range indicates quarter. Fallback question: "Which BAS period? Q1 (Jul-Sep), Q2 (Oct-Dec), Q3 (Jan-Mar), or Q4 (Apr-Jun)? Monthly or quarterly?"
+- **Reporting period inference and fallback** — Inference rule: statement date range indicates quarter. Fallback question: "Which BAS period? Q1 (Jul-Sep), Q2 (Oct-Dec), Q3 (Jan-Mar), or Q4 (Apr-Jun)? Monthly or quarterly?"  _(9.4 Reporting period and method)_
 
 ### 9.5 Simpler BAS or Full BAS
 
-Inference rule: if turnover < $10M (likely for sole traders), Simpler BAS is default. Fallback question: "Are you on Simpler BAS (G1, 1A, 1B only) or do you report full BAS labels?"
+- **Simpler BAS vs Full BAS inference and fallback** — Inference rule: if turnover < $10M (likely for sole traders), Simpler BAS is default. Fallback question: "Are you on Simpler BAS (G1, 1A, 1B only) or do you report full BAS labels?"  _(9.5 Simpler BAS or Full BAS)_
 
 ### 9.6 Accounting basis
 
-Inference rule: not inferable from bank statement alone. Fallback question: "Are you on cash basis or accrual basis for GST?"
+- **Accounting basis inference and fallback** — Inference rule: not inferable from bank statement alone. Fallback question: "Are you on cash basis or accrual basis for GST?"  _(9.6 Accounting basis)_
 
 ### 9.7 Industry and sector
 
-Inference rule: counterparty mix, sales descriptions. IT, consulting, trades, retail, hospitality are recognisable from transaction patterns. Fallback question: "In one sentence, what does the business do?"
+- **Industry and sector inference and fallback** — Inference rule: counterparty mix, sales descriptions. IT, consulting, trades, retail, hospitality are recognisable from transaction patterns. Fallback question: "In one sentence, what does the business do?"  _(9.7 Industry and sector)_
 
 ### 9.8 Input taxed supplies
 
-Inference rule: presence of residential rental income, interest income from lending, financial service revenue. Fallback question: "Do you earn any income from residential property, financial services, or share trading?" If yes and non-de-minimis: R-AU-1 or R-AU-5 may fire.
+- **Input taxed supplies inference and fallback** — Inference rule: presence of residential rental income, interest income from lending, financial service revenue. Fallback question: "Do you earn any income from residential property, financial services, or share trading?" If yes and non-de-minimis: R-AU-1 or R-AU-5 may fire.  _(9.8 Input taxed supplies)_
 
 ### 9.9 Employees
 
-Inference rule: PAYG withholding payments, super guarantee payments, WorkCover. Fallback question: "Do you have employees? If so, how many?"
+- **Employees inference and fallback** — Inference rule: PAYG withholding payments, super guarantee payments, WorkCover. Fallback question: "Do you have employees? If so, how many?"  _(9.9 Employees)_
 
 ### 9.10 Exports
 
-Inference rule: foreign currency credits, overseas counterparty names. Fallback question: "Do you sell goods or services to customers outside Australia?"
+- **Exports inference and fallback** — Inference rule: foreign currency credits, overseas counterparty names. Fallback question: "Do you sell goods or services to customers outside Australia?"  _(9.10 Exports)_
 
 ### Filing deadlines (quarterly)
 
@@ -717,24 +721,24 @@ Inference rule: foreign currency credits, overseas counterparty names. Fallback 
 | Q3 | 1 January -- 31 March | 28 April |
 | Q4 | 1 April -- 30 June | 28 July |
 
-- **Other deadline notes** — Monthly GST is generally due on the 21st of the next month. Annual GST is generally due with the income-tax return, or 28 February after the year where no return is required. Check the actual statement, extensions and next-business-day rule.  _(ATO annual GST — https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas-or-annual-gst-return)_
+- **Other deadline notes** — Monthly GST is generally due on the 21st of the next month. Annual GST is generally due with the income-tax return, or 28 February after the year where no return is required. Check the actual statement, extensions and next-business-day rule.  _([ATO annual GST — https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas-or-annual-gst-return](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/lodging-your-bas-or-annual-gst-return))_
 
 ### Penalties
 
-- **Failure to lodge (FTL)** — The base penalty is one unit per 28-day period or part, capped at five units. Apply the relevant entity multipliers, dates and remission rules. The penalty unit is $364 from 1 July 2026.  _(Crimes (Amount of a Penalty Unit) Instrument 2026 — https://www.legislation.gov.au/F2026N00424/asmade/text)_
-- **General Interest Charge (GIC)** — Use the published quarterly ATO rate and applicable daily compounding. GIC and SIC incurred on or after 1 July 2025 are not deductible; preserve the earlier rule only for earlier-incurred interest.  _(ATO interest — https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/cost-of-managing-tax-affairs/interest-charged-by-the-ato)_
-- **Shortfall penalties** — Base rates can be 25%, 50% or 75% according to the conduct. A qualifying pre-notification voluntary disclosure generally reduces the penalty by 80% where the shortfall is at least $1,000 and 100% below that amount. The qualifying post-notification reduction is 20%. Apply the statutory conditions and any other adjustments.  _(TAA Schedule 1 s 284-225 — https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-284-225)_
+- **Failure to lodge (FTL)** — The base penalty is one unit per 28-day period or part, capped at five units. Apply the relevant entity multipliers, dates and remission rules. The penalty unit is $364 from 1 July 2026.  _([Crimes (Amount of a Penalty Unit) Instrument 2026 — https://www.legislation.gov.au/F2026N00424/asmade/text](https://www.legislation.gov.au/F2026N00424/asmade/text))_
+- **General Interest Charge (GIC)** — Use the published quarterly ATO rate and applicable daily compounding. GIC and SIC incurred on or after 1 July 2025 are not deductible; preserve the earlier rule only for earlier-incurred interest.  _([ATO interest — https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/cost-of-managing-tax-affairs/interest-charged-by-the-ato](https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/cost-of-managing-tax-affairs/interest-charged-by-the-ato))_
+- **Shortfall penalties** — Base rates can be 25%, 50% or 75% according to the conduct. A qualifying pre-notification voluntary disclosure generally reduces the penalty by 80% where the shortfall is at least $1,000 and 100% below that amount. The qualifying post-notification reduction is 20%. Apply the statutory conditions and any other adjustments.  _([TAA Schedule 1 s 284-225 — https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-284-225](https://www.ato.gov.au/law/view/document?docid=PAC/19530001/SCH1-284-225))_
 
 ### Registration thresholds
 
-**Registration thresholds table**  _(GST Act, s 23-5; s 144-5; Division 83-5)_
+**Registration thresholds table**  _(GST Act, s 23-5; s 144-5; s 9-25(5)(d), s 9-25(7) and Div 84)_
 
 | Entity type | Threshold | Legislation |
 | --- | --- | --- |
 | General business | $75,000/year | GST Act, s 23-5 |
 | Non-profit | $150,000/year | GST Act, s 23-5 |
 | Taxi/rideshare | Registration regardless of turnover | GST Act, s 144-5 |
-| Non-resident digital supplier (B2C) | $75,000 Australian turnover | Division 83-5 |
+| Non-resident digital supplier (B2C) | $75,000 Australian turnover | s 9-25(5)(d), s 9-25(7) and Div 84 |
 
 - **GST turnover composition** — GST turnover includes taxable + GST-free supplies. Excludes input taxed, not connected with Australia, capital asset sales (unless regularly dealing).  _(GST turnover composition)_
 
@@ -811,7 +815,7 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 - **v2.0 (April 2026):** Full rewrite to align with Malta v2.0 structure. Ten sections: quick reference (1), inputs and refusals (2), supplier pattern library with 12 sub-tables (3), six worked examples from CBA NetBank format (4), Tier 1 rules compressed (5), Tier 2 catalogue with 7 items (6), Excel template (7), bank statement reading guide (8), onboarding fallback with inference rules (9), reference material (10). Five Australia-specific refusals (R-AU-1 through R-AU-5).
 - **v1.1 (April 2026):** Monolithic skill with classification rules, BAS labels, reverse charge, thresholds, edge cases, and test suite. Comprehensive but not aligned with v2.0 architecture.
 
-### Self-check (v2.3)
+### Self-check (v2.4)
 
 1. Quick reference at top with BAS label table and conservative defaults: yes (Section 1).
 2. Supplier library as literal lookup tables: yes (Section 3, 12 sub-tables).
@@ -829,13 +833,15 @@ This skill is v2.0, rewritten in April 2026 to align with the Malta v2.0 structu
 14. Payment processor fees as financial supply explicit: yes (Section 3.8 + Example 6).
 15. Supermarket split (GST-free food vs taxable items) explicit: yes (Section 3.6 + Example 3).
 
-## End of Australia GST Return Preparation Skill v2.3
+## End of Australia GST Return Preparation Skill v2.4
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

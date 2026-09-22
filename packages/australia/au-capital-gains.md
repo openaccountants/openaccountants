@@ -1,10 +1,10 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian capital gains tax question, for any entity type. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"capital loss\", \"carry forward capital losses\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\", \"CGT indexation from 2027\". Covers the calculation workflow from CGT event and cost base through losses, discounts and concessions, entity and residency differences, and the enacted 1 July 2027 changes. Routes to au-small-business-cgt, au-nonresident-cgt, au-rental-property and au-crypto-tax for their specialist rules."
-version: 1.4
+version: 1.5
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-20
+last_updated: 2026-09-22
 review_status: pending_review
 depends_on:
   - au-individual-return
@@ -17,7 +17,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Capital Gains
 
-## Australia Capital Gains Tax v1.4
+## AU Capital Gains
+
+## Australia Capital Gains Tax v1.5
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -103,14 +105,9 @@ reduce other income; it is carried forward indefinitely and used against future 
 | I1 and I2 | Ceasing to be an Australian resident |
 | K6 | Pre-CGT shares or trust interests where post-CGT property dominates |
 
-More than one event can apply to the same transaction. Where that happens, the most specific event
-generally prevails.
-
-**CGT assets** include land and buildings, shares and units, goodwill, contractual rights,
-options, crypto assets, foreign currency and leases.
-
-**A gift is a disposal.** Where parties are not dealing at arm's length, or where no consideration
-passes, the market value substitution rule replaces the actual proceeds with market value.
+- **Multiple events** — More than one event can apply to the same transaction. Where that happens, the most specific event generally prevails.
+- **CGT assets** — CGT assets include land and buildings, shares and units, goodwill, contractual rights, options, crypto assets, foreign currency and leases.
+- **A gift is a disposal** — A gift is a disposal. Where parties are not dealing at arm's length, or where no consideration passes, the market value substitution rule replaces the actual proceeds with market value.
 
 ## Section 4 - Cost base and reduced cost base
 
@@ -151,27 +148,12 @@ passes, the market value substitution rule replaces the actual proceeds with mar
 | Foreign or temporary resident | Apportioned | No discount for the part of the gain accruing after 8 May 2012 while a foreign or temporary resident. A period of Australian residency during ownership can support an apportioned discount |
 
 - **The 12-month test** — The asset must be owned for at least 12 months before the CGT event, excluding the day of acquisition and the day of the event. Previous ownership can count where the asset was acquired through a deceased estate, through a relationship breakdown rollover, or as a replacement asset under a rollover for a lost, destroyed or compulsorily acquired asset.
-
-**Exclusions from the discount**
-
-- A home first used for rental or business less than 12 months before disposal.
-- Where the indexation method is chosen for an asset acquired before 21 September 1999.
-- A CGT event that creates a new asset, such as granting a lease or a restrictive covenant,
-  because the asset was not held for 12 months.
-- Certain disposals of interests in companies and trusts with fewer than 300 members.
-- An income asset converted into a capital asset to access the discount, under Part IVA.
-
-- **Additional affordable housing discount** — An additional discount of up to 10% can apply to individuals who provide eligible affordable rental housing.  _([ATO, CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount))_
+- **Exclusions from the discount** — - A home first used for rental or business less than 12 months before disposal. - Where the indexation method is chosen for an asset acquired before 21 September 1999. - A CGT event that creates a new asset, such as granting a lease or a restrictive covenant, because the asset was not held for 12 months. - Certain disposals of interests in companies and trusts with fewer than 300 members. - An income asset converted into a capital asset to access the discount, under Part IVA.
+- **Additional affordable housing discount** — An additional discount of up to 10% can apply to individuals who provide eligible affordable rental housing. %  _([ATO, CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount))_
 
 ## Section 7 - Small business CGT concessions
 
-These sit on top of the discount and can reduce a gain to nil. Full rules are in
-`au-small-business-cgt.md`. In outline:
-
-**Basic conditions.** A CGT event happens to an asset that would otherwise produce a gain, the
-taxpayer is a small business entity or satisfies the $6 million maximum net asset value test, and
-the asset satisfies the active asset test. Additional conditions apply to shares and trust
-interests.
+- **Overview and basic conditions** — These sit on top of the discount and can reduce a gain to nil. Full rules are in `au-small-business-cgt.md`. In outline: **Basic conditions.** A CGT event happens to an asset that would otherwise produce a gain, the taxpayer is a small business entity or satisfies the $6 million maximum net asset value test, and the asset satisfies the active asset test. Additional conditions apply to shares and trust interests.
 
 **The four concessions**
 
@@ -188,51 +170,16 @@ interests.
 
 - **Australian residents** — Australian residents are taxed on worldwide capital gains. A foreign income tax offset may be available for foreign tax paid on the same gain, limited to the Australian tax on that income. See `au-foreign-income.md`.
 - **Foreign residents** — Foreign residents are taxed only on taxable Australian property, principally Australian real property, an indirect interest in Australian real property, and assets used in an Australian permanent establishment. See `au-nonresident-cgt.md`.
-- **Ceasing residency** — Ceasing residency triggers CGT events I1 and I2: a deemed disposal at market value of most CGT assets, with an election available to defer the gain until actual disposal, at the cost of remaining within the Australian CGT net. Taxable Australian property is excluded from the deemed disposal. See `leaving-australia-tax-residency-cgt.md`.
+- **Ceasing residency** — CGT event I1 generally brings unrealised gains and losses to account at market value when an individual or company ceases Australian residency. Section 104-160(3) excludes taxable Australian real property, Australian permanent-establishment assets, and options or rights over those latter two categories (section 855-15 items 1 and 3). Section 104-160(5) separately disregards gains and losses on assets acquired before 20 September 1985. The event does not exclude all taxable Australian property: indirect Australian real-property interests can remain within I1. An individual may choose under section 104-165 to disregard all I1 gains and losses, with affected assets remaining in the Australian CGT net. Event I2 concerns a trust ceasing to be a resident trust. See ITAA 1997 sections 104-160 to 104-175 and `leaving-australia-tax-residency-cgt.md`.  _([ITAA 1997 sections 104-160 to 104-175](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-160))_
 - **Main residence exemption for foreign residents** — A foreign resident at the time of disposal cannot claim the main residence exemption for property sold after 30 June 2020 unless the life events test is satisfied. There is no partial or apportioned exemption in that case, and the home first used to produce income rule is also unavailable. The life events test requires a continuous period of foreign residency of six years or less, plus a terminal medical condition of the taxpayer, spouse or child under 18, the death of a spouse or child under 18, or a CGT event arising from a formal relationship breakdown agreement.  _([ATO, Main residence exemption for foreign residents](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents))_
-- **Foreign resident capital gains withholding** — For contracts signed from 1 January 2025, the purchaser must withhold 15% of the sale price for all Australian real property, with no value threshold. An Australian resident vendor avoids withholding by giving the purchaser a clearance certificate before settlement. A foreign resident can apply for a variation. The withheld amount is credited against the vendor's assessment.  _([ATO, Foreign resident capital gains withholding](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding))_
+- **Foreign resident capital gains withholding** — For contracts signed from 1 January 2025, the purchaser must withhold 15% of the sale price for all Australian real property, with no value threshold. An Australian resident vendor avoids withholding by giving the purchaser a clearance certificate before settlement. A foreign resident can apply for a variation. The withheld amount is credited against the vendor's assessment. %  _([ATO, Foreign resident capital gains withholding](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding))_
 - **Foreign resident CGT regime changes from 1 October 2026** — The ATO states that enacted changes broaden the meaning of taxable Australian real property, apply the principal asset test over the 365 days before a CGT event rather than only at the event, introduce a notification requirement for certain foreign resident vendor declarations, and provide a transitional 50% discount for eligible foreign residents disposing of certain Australian renewable energy assets. Confirm the amending Act before relying on the detail.  _([ATO, Strengthening the foreign resident CGT regime](https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/strengthening-the-foreign-resident-cgt-regime))_
 
 ## Section 9 - The changes taking effect on 1 July 2027
 
-**AUDIT FLASH POINT.** Advice on a disposal straddling 1 July 2027, and on timing a disposal to
-sit either side of that date, will be examined closely. Part IVA applies to arrangements entered
-into for the dominant purpose of obtaining a tax benefit.
-
-On 12 May 2026, as part of the 2026-27 Federal Budget, the Government announced reforms to
-negative gearing and capital gains tax. The ATO states the measures are now law, enacted by the
-Treasury Laws Amendment (Tax Reform No. 1) Act 2026 and the Income Tax Rates Amendment
-(Tax Reform No. 1) Act 2026, and that they apply from 1 July 2027:
-
-- Negative gearing for residential property investments is limited to new builds. Properties held
-  at 7:30 pm AEST on 12 May 2026 are exempt from the negative gearing change.
-- The 50% CGT discount for individuals, trusts and partnerships is replaced by cost base
-  indexation together with a 30% minimum tax rate on capital gains. The CGT reform applies only to
-  gains that accrue after 1 July 2027.
-
-**What this means in practice.** Until 30 June 2027 the existing 50% discount continues to apply
-on the current tests. From 1 July 2027 the mechanism changes from a flat halving of the gain to an
-inflation adjustment of the cost base, with a floor on the rate applied to the gain. The two
-produce different answers: indexation helps a long-held asset in a high-inflation period and helps
-much less over a short holding period, and the 30% floor removes the benefit of a low marginal
-rate.
-
-**Do not apply the new mechanism to a 2026-27 disposal**, and do not apply the 50% discount to a
-gain accruing after 1 July 2027. The apportionment of a gain that accrues across the change date
-is the detail to confirm against the enacted provisions and the ATO's guidance before advising.
-
-This guide states the measures as the ATO summarised them on 29 June 2026. The detailed
-transitional provisions, including how a gain is apportioned across 1 July 2027 and how the 30%
-minimum rate interacts with the Medicare levy and with trust distributions, must be read in the
-Acts before use.
-[ATO, Reforming negative gearing and capital gains tax](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax);
-[Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/latest);
-[Income Tax Rates Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00050/latest)
+- **Changes taking effect on 1 July 2027** — **AUDIT FLASH POINT.** Advice on a disposal straddling 1 July 2027, and on timing a disposal to sit either side of that date, will be examined closely. Part IVA applies to arrangements entered into for the dominant purpose of obtaining a tax benefit. On 12 May 2026, as part of the 2026-27 Federal Budget, the Government announced reforms to negative gearing and capital gains tax. The ATO states the measures are now law, enacted by the Treasury Laws Amendment (Tax Reform No. 1) Act 2026 and the Income Tax Rates Amendment (Tax Reform No. 1) Act 2026, and that they apply from 1 July 2027: - Negative gearing for residential property investments is limited to new builds. Properties held at 7:30 pm AEST on 12 May 2026 are exempt from the negative gearing change. - The 50% CGT discount for individuals, trusts and partnerships is replaced by cost base indexation together with a 30% minimum tax rate on capital gains. The CGT reform applies only to gains that accrue after 1 July 2027. **What this means in practice.** Until 30 June 2027 the existing 50% discount continues to apply on the current tests. From 1 July 2027 the mechanism changes from a flat halving of the gain to an inflation adjustment of the cost base, with a floor on the rate applied to the gain. The two produce different answers: indexation helps a long-held asset in a high-inflation period and helps much less over a short holding period, and the 30% floor removes the benefit of a low marginal rate. **Do not apply the new mechanism to a 2026-27 disposal**, and do not apply the 50% discount to a gain accruing after 1 July 2027. The apportionment of a gain that accrues across the change date is the detail to confirm against the enacted provisions and the ATO's guidance before advising. This guide states the measures as the ATO summarised them on 29 June 2026. The detailed transitional provisions, including how a gain is apportioned across 1 July 2027 and how the 30% minimum rate interacts with the Medicare levy and with trust distributions, must be read in the Acts before use.  _([ATO, Reforming negative gearing and capital gains tax; Treasury Laws Amendment (Tax Reform No. 1) Act 2026; Income Tax Rates Amendment (Tax Reform No. 1) Act 2026](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax))_
 
 ## Section 10 - Worked example
-
-**Facts.** Priya is an Australian resident individual for the whole of the 2026-27 income year.
-All figures are synthetic.
 
 **Worked example facts**
 
@@ -244,8 +191,9 @@ All figures are synthetic.
 | Other current year disposal | A second parcel sold at a capital loss of $1,500 |
 | Carried forward | Net capital loss of $3,200 from 2024-25 |
 
-**Step 1, CGT event and date.** CGT event A1 happens at the contract date, 14 March 2027, so the
-gain falls in the 2026-27 income year.
+**Facts.** Priya is an Australian resident individual for the whole of the 2026-27 income year. All figures are synthetic.
+
+**Step 1, CGT event and date.** CGT event A1 happens at the contract date, 14 March 2027, so the gain falls in the 2026-27 income year.
 
 **Step 2, exemptions.** None apply. Shares are not personal use assets.
 
@@ -276,9 +224,7 @@ Less prior year net capital loss                  3,200
 Gain remaining after losses                      13,095
 ```
 
-**Step 6, discount.** Priya held the shares from 2 September 2022 to 14 March 2027, which is more
-than 12 months, and she is an Australian resident. The disposal is before 1 July 2027, so the 50%
-discount applies.
+**Step 6, discount.** Priya held the shares from 2 September 2022 to 14 March 2027, which is more than 12 months, and she is an Australian resident. The disposal is before 1 July 2027, so the 50% discount applies.
 
 ```
 Gain after losses                                13,095
@@ -286,28 +232,21 @@ CGT discount at 50%                               6,547.50
 Net capital gain included in assessable income    6,547.50
 ```
 
-**Step 7, report.** $6,547.50 is included in Priya's assessable income for 2026-27 and taxed at
-her marginal rate plus the Medicare levy.
+**Step 7, report.** $6,547.50 is included in Priya's assessable income for 2026-27 and taxed at her marginal rate plus the Medicare levy.
 
-**Why the order matters.** Applying the 50% discount before the losses would give
-($17,795 x 50%) less $4,700, or $4,197.50, understating the net capital gain by $2,350. The losses
-must come first.
+**Why the order matters.** Applying the 50% discount before the losses would give ($17,795 x 50%) less $4,700, or $4,197.50, understating the net capital gain by $2,350. The losses must come first.
 
 ## Section 11 - Common errors
 
 - Using the settlement date instead of the contract date for a property or share disposal.
 - Applying the discount before capital losses.
 - Offsetting a capital loss against salary or business income.
-- Including element 3 ownership costs in the reduced cost base, or including costs that were
-  deductible.
+- Including element 3 ownership costs in the reduced cost base, or including costs that were deductible.
 - Failing to reduce the cost base by capital works deductions claimed on a rental property.
 - Claiming the 50% discount for a company, or the full 50% for a complying super fund.
-- Claiming the main residence exemption for a foreign resident vendor without testing the life
-  events test.
-- Assuming an Australian resident vendor is outside foreign resident capital gains withholding
-  without obtaining a clearance certificate before settlement.
-- Treating the 15-year exemption as available on age alone, without the 15 years of continuous
-  ownership and the retirement or incapacity condition.
+- Claiming the main residence exemption for a foreign resident vendor without testing the life events test.
+- Assuming an Australian resident vendor is outside foreign resident capital gains withholding without obtaining a clearance certificate before settlement.
+- Treating the 15-year exemption as available on age alone, without the 15 years of continuous ownership and the retirement or incapacity condition.
 - Applying the 2027-28 rules to a 2026-27 disposal, or the reverse.
 
 ## Section 12 - Self-checks
@@ -325,29 +264,20 @@ must come first.
 
 ## Section 13 - Sources
 
-- Income Tax Assessment Act 1997, Part 3-1 (CGT events, cost base, exemptions), Part 3-3 (CGT
-  concessions), Division 115 (discount capital gains), Division 152 (small business concessions),
-  Subdivision 118-B (main residence).
-- Treasury Laws Amendment (Tax Reform No. 1) Act 2026,
-  https://www.legislation.gov.au/C2026A00049/latest
-- Income Tax Rates Amendment (Tax Reform No. 1) Act 2026,
-  https://www.legislation.gov.au/C2026A00050/latest
-- ATO, CGT discount,
-  https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount
-- ATO, Main residence exemption for foreign residents,
-  https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents
-- ATO, Foreign resident capital gains withholding,
-  https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding
-- ATO, Reforming negative gearing and capital gains tax,
-  https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax
-- ATO, Strengthening the foreign resident CGT regime,
-  https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/strengthening-the-foreign-resident-cgt-regime
+- Income Tax Assessment Act 1997, Part 3-1 (CGT events, cost base, exemptions), Part 3-3 (CGT concessions), Division 115 (discount capital gains), Division 152 (small business concessions), Subdivision 118-B (main residence).
+- Treasury Laws Amendment (Tax Reform No. 1) Act 2026, https://www.legislation.gov.au/C2026A00049/latest
+- Income Tax Rates Amendment (Tax Reform No. 1) Act 2026, https://www.legislation.gov.au/C2026A00050/latest
+- ATO, CGT discount, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount
+- ATO, Main residence exemption for foreign residents, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/main-residence-exemption-for-foreign-residents
+- ATO, Foreign resident capital gains withholding, https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding
+- ATO, Reforming negative gearing and capital gains tax, https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax
+- ATO, Strengthening the foreign resident CGT regime, https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/strengthening-the-foreign-resident-cgt-regime
 
 Sources were checked on 16 September 2026.
 
-> **Working paper only, not a lodged return.** Have a qualified Australian CPA or CA review this
-> before lodging. Small business CGT eligibility requires detailed analysis of the active asset
-> test, the aggregation rules and the maximum net asset value test.
+> **Working paper only, not a lodged return.** Have a qualified Australian CPA or CA review this before lodging. Small business CGT eligibility requires detailed analysis of the active asset test, the aggregation rules and the maximum net asset value test.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-09-21T09:00:12+00:00",
+ "generated_at": "2026-09-22T08:43:48+00:00",
  "counts": {
-  "guides": 2017,
+  "guides": 2019,
   "jurisdictions": 245,
   "accountant_reviewed": 171
  },
@@ -2620,7 +2620,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-20"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-company-tax",
@@ -2632,7 +2632,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-crypto-tax-2",
@@ -2800,7 +2800,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-20"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-medicare-levy",
@@ -2836,7 +2836,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-not-for-profit",
@@ -2848,7 +2848,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-partnerships",
@@ -2860,7 +2860,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-payg-instalments-2",
@@ -2908,7 +2908,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-10"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-rd-incentive",
@@ -2920,7 +2920,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-12"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-rental-property-2",
@@ -2944,7 +2944,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "au-small-business-cgt",
@@ -3040,7 +3040,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-08-20"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "australia-bookkeeping",
@@ -3112,7 +3112,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2025",
-   "last_updated": "2026-09-17"
+   "last_updated": "2026-09-22"
   },
   {
    "slug": "australia-payroll",
@@ -13147,6 +13147,18 @@
    "last_updated": "2026-09-03"
   },
   {
+   "slug": "mt-vat3-quarterly-return-malta",
+   "path": "skills/international/malta/mt-vat3-quarterly-return-malta.md",
+   "name": "mt-vat3-quarterly-return-malta",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-21"
+  },
+  {
    "slug": "selling-a-company-in-malta",
    "path": "skills/international/malta/selling-a-company-in-malta.md",
    "name": "selling-a-company-in-malta",
@@ -21833,6 +21845,18 @@
    "reviewed_by": null,
    "tax_year": null,
    "last_updated": "2026-06-12"
+  },
+  {
+   "slug": "ca-bookkeeping-monthly-close",
+   "path": "skills/us-states/ca/ca-bookkeeping-monthly-close.md",
+   "name": "ca-bookkeeping-monthly-close",
+   "jurisdiction": "US-CA",
+   "category": "bookkeeping",
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-21"
   },
   {
    "slug": "ca-form-3853-coverage",

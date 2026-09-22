@@ -198,7 +198,7 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 | COMPANIES HOUSE, COMPANIES HSE | EXCLUDE | Statutory fee, not a supply |
 | COUNCIL TAX, BUSINESS RATES | EXCLUDE | Local authority levy, outside scope |
 | DVLA | EXCLUDE | Road tax, statutory fee |
-| ICO, INFORMATION COMMISSIONER | Domestic 20% | Data protection fee — taxable supply, input VAT recoverable |
+| ICO, INFORMATION COMMISSIONER | EXCLUDE | Statutory data protection fee, outside the scope of VAT (ICO: "Statutory fees are outside the scope of VAT, so no VAT is charged on it") |
 | TV LICENSING, BBC | EXCLUDE | Broadcasting licence, outside scope |
 | LAND REGISTRY, HM LAND REGISTRY | EXCLUDE | Statutory fee |
 
