@@ -3,8 +3,9 @@ name: sweden-crypto-tax
 description: Use this skill whenever asked about Sweden cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax Sweden", "Bitcoin Sweden", "kryptovaluta skatt", "cryptocurrency gains Sweden", "crypto income Sweden", "staking Sweden", "mining income Sweden", "NFT tax Sweden", "K4 form crypto", "Skatteverket crypto", "genomsnittsmetoden", "average cost method Sweden", "DeFi tax Sweden", "Inkomstdeklaration crypto", "kapitalvinst krypto", or any question about the income tax, capital gains, or reporting treatment of cryptocurrency, tokens, or digital assets for Swedish tax residents. Covers Skatteverket guidance on crypto as "andra tillgångar", the mandatory average cost method, K4 reporting, mining/staking income treatment, and DAC8/CARF reporting from 2026. ALWAYS read this skill before touching any Sweden crypto work.
 version: 1.0
 jurisdiction: SE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-24
+authored_by: OpenAccountants team
 review_status: pending_review
 depends_on:
   - sweden-income-tax
@@ -13,407 +14,121 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Sweden Crypto Tax
+# Sweden cryptoasset tax: calculate, reconcile and report
 
-## Sweden Crypto / Digital Assets Tax Skill v1.0
+## Scope and period
 
-## Section 1 -- Quick Reference
+Use this method for a Swedish resident individual holding Bitcoin and comparable fungible cryptoassets as private capital investments during income year 2026. It also covers acquired NFTs within the private capital category and the ordinary income/disposal split for compensation, mining and the specified staking and lending arrangements. Establish residence and the legal nature of each token first: a token representing a share, debt, derivative or another underlying asset does not automatically take Bitcoin's treatment. The statutory home for other assets is Chapter 52 of the Income Tax Act, with general capital-gain rules in Chapter 44; Chapter 52 imports average-cost rules for a pooled holding of assets with uniform value. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-**Quick Reference table**
+This is an annual ledger and filing method, not a complete business return, payroll computation, company-tax method or determination of cross-border residence. The ordinary filing deadline for income year 2025 was 4 May 2026 without an extension. For income year 2026, use the forthcoming annual return and actual deadline shown by Skatteverket; do not reuse a historical calendar date or mistake a provider-reporting deadline for your filing deadline. [Official guidance](https://www.skatteverket.se/deklarera)
 
-| Field | Value |
-| --- | --- |
-| Country | Sweden (Konungariket Sverige) |
-| Tax | Capital income tax on cryptocurrency (kapitalinkomstskatt) |
-| Currency | SEK (all values must be converted to SEK at transaction date) |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary authority | Inkomstskattelagen (1999:1229) — Income Tax Act, Chapter 44 (capital gains), Chapter 48 (other assets) |
-| Administrative guidance | Skatteverket ställningstaganden on kryptovalutor (multiple, updated periodically) |
-| Tax authority | Skatteverket (Swedish Tax Agency) |
-| Filing portal | Skatteverket e-tjänst — Inkomstdeklaration 1 |
-| Filing deadline | 2 May of the following year (e.g. 2 May 2026 for income year 2025) |
-| EU reporting | DAC8 / CARF — crypto service providers report to Skatteverket from 2026 (Riksdag decision 26 November 2025) |
-| Capital gains rate | 30% flat on gains |
-| Loss deduction | 70% of capital losses deductible (30% lost permanently) |
-| Cost basis method | Genomsnittsmetoden (average cost method) — mandatory |
-| Reporting form | Bilaga K4, Avsnitt D (Övriga tillgångar) |
-| Validated by | Pending — requires sign-off by a Swedish auktoriserad revisor or skattejurist |
-| Skill version | 1.0 |
+## Ask the client first
 
-### Conservative Defaults
+- Who owned each asset, during which dates, and was the owner Swedish tax resident throughout the period? Obtain residence changes, foreign tax paid and any entity ownership before selecting this private method.
+- Obtain complete exchange exports, wallet addresses, opening units and pooled cost, bank statements, purchases, swaps, sales, payments, fees, gifts, inherited assets and transfers. Identify duplicate import rows and transactions across all platforms.
+- For every reward, identify the activity, entitlement and when it could be controlled, quantity and SEK value. Obtain staking, lending, custody, collateral and pool contracts as they stood at the transaction date.
+- For NFTs, obtain the underlying rights, purpose and actual use, creation status and specific purchase cost. For disputed ownership, hacks or insolvency, obtain administrator statements, distributions and legal documents.
+- Ask which tax returns were already submitted, whether a final assessment exists, and what other capital income, deductions and available tax the person has. A crypto-only result is not the whole tax bill. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-**Conservative Defaults table**
+## The method, step by step
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown whether hobby mining or business | Treat as hobby (inkomst av tjänst) unless clear business indicators |
-| Unknown cost basis | STOP — cannot compute gain without omkostnadsbelopp |
-| Unknown whether personal NFT or investment NFT | Treat as kapitalplacering (K4 avsnitt D — taxable at 30%) |
-| Unknown residency status | STOP — affects worldwide taxation obligation |
-| Crypto-to-crypto swap classification | Treat as taxable disposal (avyttring) |
+1. Freeze an evidence copy of every exchange and wallet history. Reconcile opening units plus receipts less outgoing units to closing units per asset. Match both sides of own-wallet movements and keep any fee leg separately. A wallet balance or exchange profit report alone is insufficient. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
+2. Classify each event before doing arithmetic. Sales for fiat, token swaps, purchases paid in crypto and relevant lending transfers are disposals. An unchanged holding is not taxed merely because its price changes. A genuine own-wallet transfer preserving ownership and custody is not a disposal of the transferred principal. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
+3. Value each acquisition, income event and disposal in SEK, retaining the timestamp, quantity, price source and conversion evidence. A swap's disposal consideration is the SEK market value of what is received, which also starts the new asset's cost. A purchase of goods or services uses their market value. Keep a separate fiat-currency ledger where needed. For disposal consideration received in foreign currency and exchanged into SEK within thirty days of the disposal, apply the special exchange-date rule in Chapter 44 section 16 rather than an indiscriminate transaction-date FX default. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
+4. Maintain one chronological pool per kind of fungible crypto across all exchanges and wallets. On acquisition add units and acquisition expenditure; on disposal allocate the pre-disposal average cost to units disposed and reduce both units and pooled cost. Recalculate after the next acquisition. Do not include future purchases in an earlier disposal's average. Do not use FIFO, chosen lots or the securities standard-cost shortcut. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
+5. Subtract directly attributable disposal expenses from gross consideration; include qualifying acquisition expenses in acquisition cost. Retain the invoice and allocation. Never double count the same fee. Crypto used to pay a fee is itself a payment with crypto: record the fee-token disposal as well as assessing the expense. Own-wallet transfer gas is not automatically an acquisition or sale expense; do not deduct it against an unrelated disposal without a supported connection. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
+6. Compute every gain and loss before aggregation. Group profitable and loss-making disposals separately for each asset and year. Report the full loss, not a self-reduced amount, in K4 section D. The authority applies the loss fraction; netting winning and losing trades in full first gives the wrong result. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
+7. Add income rewards to their appropriate income category separately from later disposal gains. Include their recognised acquisition value in the relevant asset pool so the same receipt is not taxed twice. Apply the specific branches below and retain their supporting classification. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
+8. Populate the annual return, reconcile its totals back to the ledger and bank evidence, submit, and retain the acknowledgement. Check the final assessment and payment instructions. Correct prior years in the proper year rather than moving the discrepancy into the current return. [Official guidance](https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html)
 
-## Section 2 -- Classification Rules
+## Rates, loss limitation and final tax
 
-### 2.1 Crypto as "Andra Tillgångar" (Other Assets)
+| Item | Treatment | Source |
+|---|---|---|
+| Private crypto capital gains | Full gain taxable; capital surplus rate 30% | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| Private crypto capital losses | 70% deductible; enter the unreduced loss in K4 D | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| Ordinary capital deficit, after all relevant capital items | Tax reduction 30% up to SEK 100,000, then 21% of the excess | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html) |
+| Personal-use NFT under other-assets rules | Aggregate personal-asset gains exemption SEK 50,000 per owner and year; losses not deductible | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html) |
+| Personal-asset alternative cost | 25% of proceeds after selling expenses | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html) |
 
-- **Crypto classification** — Skatteverket classifies all cryptocurrency (kryptovalutor/kryptotillgångar) as "andra tillgångar" (other assets) for capital gains purposes. They are not classified as currency, securities, or financial instruments under Swedish tax law.
+Special components, including investor deductions and the deduction for tax-free capital-insurance/PEPP savings, have their own reduction rules; apply those separately before calculating the whole-return reduction. [Official reduction guidance](https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html)
 
-Key legislative references:
-- Inkomstskattelagen (IL) Chapter 44 — general capital gains provisions
-- IL Chapter 48 — specific rules for "andra tillgångar"
-- IL Chapter 41 § 1–2 — income from capital (inkomst av kapital)
+A capital-deficit reduction is limited by available taxes against which it may be used; it is not an unconditional refund of a crypto loss. Do not carry an unused private capital loss forward as though it were a business loss. The gain/loss recognition year and capital-deficit rules operate for the relevant tax year. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-### 2.2 Taxable Events
+## Worked calculations and ledger checks
 
-**Taxable Events table**
+All cases below are hypothetical in SEK, with no other holdings, fees or capital items unless specified. They illustrate the method rather than statutory prices or a personalised final assessment. Preserve full precision in the ledger and follow the year's return-entry instructions. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-| Event | Taxable? | Treatment |
-| --- | --- | --- |
-| Selling crypto for SEK/fiat | Yes | Capital gain/loss, K4 avsnitt D |
-| Crypto-to-crypto swap (e.g. BTC → ETH) | Yes | Disposal of first crypto; acquisition of second |
-| Paying for goods/services with crypto | Yes | Disposal at market value in SEK at payment date |
-| Receiving salary in crypto | Yes | Employment income (inkomst av tjänst) at FMV when received |
-| Mining rewards | Yes | Income at FMV when received (see Section 5) |
-| Staking rewards | Yes | Interest income (ränteinkomst) at FMV when received |
-| Lending crypto (e.g. DeFi lending) | Yes | Transfer to lending protocol is likely a disposal |
-| Receiving airdrop | Depends | Taxable if received for a service; gratuitous may not be taxable until sold |
-| Transfer between own wallets | No | Not a disposal — no tax event |
-| HODLing (holding without selling) | No | No tax event until disposal |
+| Case | Inputs and calculation | Output and return treatment | Source |
+|---|---|---|---|
+| A — sequential average cost | Buy two units for SEK 20,000, then two for SEK 40,000. Four units cost SEK 60,000: average SEK 15,000. Sell one for SEK 18,000. Buy one more for SEK 25,000. | First gain SEK 3,000; remaining pool SEK 45,000 for three units. New pool SEK 70,000 for four, average SEK 17,500. Future purchase never changes the earlier gain. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| B — swap and spending | One outgoing token has allocated cost SEK 10,000 and is swapped for another asset worth SEK 16,000. | Gain SEK 6,000; incoming asset cost SEK 16,000. Spending it immediately on goods worth SEK 16,000 is another disposal, with no further gain if there are no fees or other holdings. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| C — gains and losses | Total profitable trades gain SEK 20,000; losing trades lose SEK 20,000. | Deductible loss SEK 14,000; capital surplus SEK 6,000; tax SEK 1,800. Report gains and full losses separately, even though economic profit before tax is nil. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| D — deficit boundary | A realised private crypto loss of SEK 150,000, with no other capital items. | Deductible loss SEK 105,000. Potential reduction SEK 31,050: SEK 30,000 on the first SEK 100,000 and SEK 1,050 on the excess, subject to available tax. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/deklareraaktierochovrigavardepapper/kvittningochkvotering.4.7be5268414bea0646945a21.html) |
+| E — purchase and selling fees | Asset price SEK 10,000 plus acquisition commission SEK 100; gross sale SEK 15,000 less sale commission SEK 200. Fees paid in SEK. | Cost SEK 10,100; net proceeds SEK 14,800; gain SEK 4,700. Each fee is used once. | [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html) |
+| F — reward then disposal | Mining or qualifying staking receipt recognised at SEK 3,000; later sold for SEK 4,000, no other pool holdings. | Receipt income SEK 3,000 in its correct income category; later capital gain SEK 1,000. The income tax on a mining hobby is not the private capital rate. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| G — lending claim | Transfer crypto with allocated cost SEK 10,000 to a lender free to relend it when worth SEK 16,000; claim reward worth SEK 1,000; settle the whole claim for crypto worth SEK 18,000. | Initial crypto gain SEK 6,000; separate income SEK 1,000; claim cost SEK 17,000 and settlement gain SEK 1,000; recovered crypto starts with cost SEK 18,000. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) |
+| H — personal-use NFT | Proven personal-use game NFT sold for net SEK 80,000; choose permitted alternative cost SEK 20,000; no other personal-asset gains. | Gain SEK 60,000; taxable excess SEK 10,000 after the annual exemption; tax SEK 3,000. No personal-asset loss offset is allowed. | [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html) |
+| I — gift continuity | Genuine gift of one token whose donor's allocated tax cost is SEK 10,000, market value SEK 16,000; recipient later sells for SEK 18,000 and has no other holdings. | Receipt does not reset cost to market value: recipient gain SEK 8,000 using inherited cost SEK 10,000. | [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html) |
 
-### 2.3 No Trading vs Investment Distinction
+## Lending, pools, borrowing and staking
 
-- **No trading vs investment distinction** — Unlike Malta and some other jurisdictions, Sweden does not distinguish between trading and investment for crypto taxation purposes. All crypto capital gains are taxed at the flat 30% rate regardless of holding period or trading frequency. There is no "investor exemption" for long-term holders.
+Read actual ownership and use rights, not the platform's marketing label. A transfer under terms allowing the recipient to sell, exchange or relend the crypto is a disposal and acquisition of the repayment claim. On settlement, separately calculate the claim disposal and the new crypto acquisition. Periodic additional crypto/claim units are capital income when allocated under the authority's lending examples, reported at point 7.2; their recognised value increases acquisition cost. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-## Section 3 -- Rate Tables
+For a DEX liquidity pool matching Skatteverket's example, exchanging underlying assets for pool tokens is a disposal of the underlying assets at deposit-time market value. The pool tokens acquire that value as cost. Burning them to withdraw is a disposal at the value of the assets received; those assets enter their respective pools at that value. An increase in pool-token value is reflected at disposal, while separately allocated reward tokens require their own income classification. Do not add a separate 'impermanent loss' deduction to an already calculated disposal loss. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-### 3.1 Capital Income Tax (Inkomst av Kapital)
+A security pledge or custody transfer is not a disposal when ownership remains with the client and the recipient cannot freely dispose of the property. For the decentralised borrowing example, borrowed tokens start at market value, subsequent spending/swapping is a disposal, and repayment with tokens is another disposal; reconcile the debt separately. The authority's technical ETH-to-WETH exception concerns wrapping automatically within a longer transaction chain. It is not a blanket exemption for every bridge, wrapper or liquid-staking token. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-**Capital Income Tax table**
+The published Ethereum staking position treats depositing ether to participate as a network node as a deposit without a capital-gain event, and accessible ether rewards as capital income at market value, point 7.2. Record that value for later disposal. Do not extend that conclusion automatically to another protocol, receipt-token swap or a custodial lender labelled 'staking'. Confirm rights and classify the actual event using the transfer rules above. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-| Type | Rate | Citation |
-| --- | --- | --- |
-| Capital gains on crypto | 30% flat | IL Chapter 65 § 7 |
-| Loss deduction on crypto | 70% of loss deductible | IL Chapter 48 § 24, Chapter 44 |
-| Interest income (staking/lending) | 30% flat | IL Chapter 42 |
+Do not copy an old protocol example's interest-deduction instruction into a current return without checking the current borrowing rules and lender/security conditions. This guide's capital-gain calculations do not determine deductibility of a borrowing or stability fee. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-### 3.2 Capital Loss Offset Rules
+## Mining, work receipts and business boundary
 
-**Capital Loss Offset Rules table**  _(IL Chapter 67 § 10; Skatteverket "Belopp och procent — inkomstår 2025")_
+Mining by an individual is normally hobby/service income but may be business income; assess the facts rather than defaulting when facts are missing. Recognise the mined asset's SEK market value at allocation as income and as the asset's acquisition value. For a hobby, compile receipts, allowable activity expenses and any equipment deductions under the hobby method, report the surplus on T2, and calculate applicable social contributions and earned-income tax separately. A hobby deficit is not a K4 capital loss or an automatic deduction from salary. Use the official hobby instructions for same-hobby future deficit use and contribution reconciliation. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) [Official guidance](https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/hobby)
 
-| Scenario | Deduction Rate |
-| --- | --- |
-| Crypto loss against crypto gain (same category — andra tillgångar) | 100% offset within category |
-| Net loss in andra tillgångar against other capital income | 70% deductible |
-| Net capital income deficit ≤ SEK 100,000 | 30% skattereduktion (tax credit against municipal tax) |
-| Net capital income deficit > SEK 100,000 | 30% on first SEK 100,000 + 21% on excess |
+Employment payment in crypto is employment income; the market value recognised on receipt is the later crypto cost. Reconcile to payroll so receipt income is not duplicated. Ordinary payment for goods or services in a sole trader's business is booked in SEK with any applicable VAT; subsequent crypto value changes are normally capital income where the crypto is not inventory. An outward-facing exchange business and other qualifying inventory cases need the business method. Do not apply a claim that all trading is private capital regardless of facts. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-### 3.3 Earned Income Tax (Mining/Business Activity)
+## NFTs, gifts, airdrops and forks
 
-If mining or other crypto activity is classified as earned income (inkomst av tjänst or inkomst av näringsverksamhet):
+For an acquired NFT, identify the underlying asset and rights first. Where it is an 'other asset', document whether actual purpose/use makes it personal property or a capital investment. A unique NFT normally has individual cost rather than a fungible-token average. A speculative acquired NFT within the capital-investment branch goes to K4 D, with the gain and loss rules in the table. A proven personal-use NFT follows the personal-assets branch: actual cost or the permitted alternative, aggregate gains across all personal assets of that owner, apply the annual exemption, enter taxable gain at point 7.5, and do not deduct losses. A profile-picture label alone does not prove personal use. Self-created NFTs and NFTs representing another legal category require that activity/asset's method. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/beskattningavnftnonfungibletoken.4.77f3e230191ef88bf1d1457.html)
 
-**Earned Income Tax table**  _(Skatteverket "Belopp och procent — inkomstår 2025"; SCB kommunalskatter 2025)_
+For a genuine gift or inheritance, receipt is exempt and the recipient takes over the prior owner's tax position and allocated cost; obtain donor/estate records and add the received units and carryover cost to the recipient's pool. Compensation disguised as a gift is not covered. A token distribution labelled 'airdrop' or 'fork' does not establish a genuine gift, earned receipt or cost basis by itself. Retain protocol terms, consideration/services provided, legal rights and acquisition evidence; resolve that classification before entering income or a zero-cost assumption. The ordinary sale calculation still follows this guide after the receipt's correct basis is established. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-| Component | Rate (Income Year 2025) |
-| --- | --- |
-| Municipal tax (kommunalskatt) | Average 32.41% (varies 28.98%–35.30% by municipality) |
-| State income tax (statlig inkomstskatt) | 20% on taxable income above SEK 625,800 |
-| Maximum marginal rate | ~52.41% (32.41% + 20%) |
-| General pension contribution (allmän pensionsavgift) | 7% on earned income (capped; offset by tax credit) |
+## Loss of access, insolvency and artificial losses
 
-## Section 4 -- Cost Basis Methods
+Lost keys, an exchange hack, or an unrealised fall in value do not by themselves create a deductible disposal loss. Preserve the asset or claim record and evidence. If holdings became a repayment claim, do not simply write off the original crypto a second time. A deductible capital loss must be real and definitive and satisfy the applicable disposal requirements. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor) [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-### 4.1 Genomsnittsmetoden (Average Cost Method) — MANDATORY
+For an insolvent platform, identify the exact claim, terms, legal procedure, plan approval/effective dates, extinguishment and distributions. The authority's Celsius example is specific and contains dated updates; it is not permission to apply the same result to FTX or another platform. Reconcile partial distributions and claim cost before claiming a final loss. Refer unresolved claim characterisation or legal extinguishment. A sale below market value intended to enrich the purchaser is not automatically a deductible loss; do not promise a wash-sale safe harbour or fabricate a disposal with self-transfers. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
-- **Mandatory method** — Skatteverket requires the average cost method for cryptocurrency. FIFO and specific identification are not permitted for crypto. How it works: 1. Add up all acquisition costs (inkl. fees) for the same cryptocurrency 2. Divide by total number of coins/units purchased 3. This gives the average omkostnadsbelopp (cost basis) per unit 4. On each disposal, the cost basis per unit × number sold = deductible amount Critical rules: - Calculated separately for each type of cryptocurrency (BTC separate from ETH separate from SOL, etc.) - All acquisitions across all exchanges and wallets are pooled together for the same cryptocurrency - Mining/staking rewards enter the pool at FMV on the date received - Exchange fees and transaction fees are included in the acquisition cost
+For the specific FTX plan described by Skatteverket, the original crypto was exchanged for a USD claim on 3 January 2025. For income year 2025, the crypto disposal goes in K4 D using the USD compensation paid during that year attributable to crypto, converted at the authority's specified SEK 11.10 per USD. Payment of the USD claim then creates a separate exchange-rate gain or loss, reported in K4 C; separately received interest belongs at point 7.2. This historical rule is specific to that plan: later or unusual distributions need the plan documents and relevant current guidance, not a repeated disposal of the same original coins. [Official FTX guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-### 4.2 Cost Basis Formula
+## Complete the return and archive evidence
 
-- **Cost Basis Formula** — Total omkostnadsbelopp = Σ (acquisition cost per purchase + fees) Average cost per unit  = Total omkostnadsbelopp ÷ Total units acquired Gain/Loss per disposal = Sale proceeds − (Average cost per unit × Units sold)
+In Inkomstdeklaration 1, add K4 and choose section D for other securities/other capital-investment assets. Enter asset designation, quantity, proceeds and cost. The e-service calculates the result; on paper enter and total gain or loss as the relevant form instructs. The simplified route allows separate aggregated profitable and loss-making rows for each cryptoasset, supported by the full ledger. Never offset gain rows and loss rows first or reduce the loss before entry. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-### 4.3 Example: Average Cost Calculation
+The e-service quantity field allows twelve digits before and eight after the decimal separator. Use a comma as the decimal separator, round quantity to eight decimal places where needed, and for a quantity above the field maximum enter zero in that field and disclose the full quantity in Other information. Keep original precision in your supporting records; a display limit is not permission to discard small disposals. Use the form for the actual income year. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-Purchase 1:  2.0 BTC at SEK 250,000 each = SEK 500,000 + SEK 1,000 fee
-Purchase 2:  1.0 BTC at SEK 400,000      = SEK 400,000 + SEK 500 fee
-Staking:     0.1 BTC received, FMV        = SEK 35,000
+Provider reporting under DAC8/CARF starts with calendar year 2026, with first provider reports due 1 April 2027. This does not remove the individual's duty to calculate and declare their transactions. Reconcile provider statements rather than assuming they contain a correct cross-wallet cost basis. [Official guidance](https://www.skatteverket.se/foretag/drivaforetag/startaochregistrera/kryptotillgangarrapporteringochinformationsutbyte.4.4a4da2a918795e864c3859.html)
 
-Total cost:  SEK 500,000 + 1,000 + 400,000 + 500 + 35,000 = SEK 936,500
-Total units: 2.0 + 1.0 + 0.1 = 3.1 BTC
-Average:     SEK 936,500 ÷ 3.1 = SEK 302,096.77 per BTC
+Before a final assessment, amend and resubmit the complete return and attachments; the latest submission applies. After an assessment, request reconsideration for the relevant year with the corrected calculations and supporting explanation. A reconsideration request does not itself suspend payment of the assessed tax. Retain both original and corrected returns and acknowledgements. [Official guidance](https://www.skatteverket.se/privat/deklaration/sahardeklarerardu/andraomprovaelleroverklagadindeklaration.4.5dc1d8b31903014b1bfdf4.html)
 
-Sale of 1.5 BTC at SEK 450,000 each:
-  Proceeds: 1.5 × SEK 450,000 = SEK 675,000
-  Cost:     1.5 × SEK 302,096.77 = SEK 453,145.16
-  Gain:     SEK 221,854.84
-  Tax:      SEK 221,854.84 × 30% = SEK 66,556.45
+Keep bank and exchange records, wallet ownership evidence, transaction hashes, valuation evidence, fee allocations, protocol terms, annual pools and return reconciliations. General individual-return guidance says to keep supporting documents for six years; hobby records have a seven-year rule. Keep historical acquisition and gift-cost evidence while assets remain held and through the disposal return's applicable retention period; do not destroy the only evidence of a continuing pool merely because the acquisition is old. [Official guidance](https://www.skatteverket.se/privat/etjansterochblanketter/svarpavanligafragor/deklaration/efterattduhardeklarerat/behoverjagsparanagraunderlagnarjaghardeklarerat.5.48cfd212185efbb440b8988.html) [Official guidance](https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/hobby) [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-## Section 5 -- DeFi, Staking, Mining, and Airdrop Treatment
+## Self-check before finalising
 
-### 5.1 Mining
+- Every outgoing asset, including payment and fee tokens, is classified and reconciled; custody movements are not double counted.
+- Opening pools agree with the prior year; acquisitions are chronological; closing units and cost reconcile across all wallets.
+- Every swap records both legs at supported SEK values; income receipts and later disposal cost agree.
+- K4 gains and full losses stay separate per asset; NFT personal-asset gains are separately aggregated; other capital items and available tax are included before stating final tax.
+- The submission uses the correct year, source documents and acknowledgement, with unresolved protocol, ownership or valuation issues clearly withheld from a definitive computation. [Official guidance](https://www.skatteverket.se/privat/skatter/vardepapper/andratillgangar/kryptovalutor)
 
-**Mining table**
+## When to refuse or refer
 
-| Scale | Classification | Tax Treatment | Citation |
-| --- | --- | --- | --- |
-| Private/hobby scale | Inkomst av tjänst (hobby) | Taxed at FMV when mined; municipal + state income tax rates | Skatteverket guidance on mining (kryptovalutor) |
-| Commercial/business scale | Inkomst av näringsverksamhet | Business income; deduct hardware, electricity, and operating costs; social contributions apply | IL Chapter 13 |
-
-- **Determining hobby vs business** — Determining hobby vs business: Skatteverket considers continuity, scale, profit motive, and organisation. Most individual miners are classified as hobby.
-- **Cost basis of mined coins** — Cost basis of mined coins: The amount declared as income becomes the cost basis (omkostnadsbelopp) for future capital gains calculations.
-
-### 5.2 Staking
-
-Skatteverket treats staking rewards as ränteinkomst (interest income) within inkomst av kapital, taxed at 30% when received.
-
-**Staking table**
-
-| Aspect | Treatment |
-| --- | --- |
-| Tax point | When rewards are received/accessible |
-| Valuation | FMV in SEK at receipt date |
-| Tax rate | 30% (capital income) |
-| Cost basis for future sale | FMV at receipt date |
-| Reporting | Inkomstdeklaration 1, punkt 7.2 (Ränteinkomster) |
-
-### 5.3 DeFi Lending
-
-**DeFi Lending table**
-
-| Activity | Treatment |
-| --- | --- |
-| Depositing crypto into lending protocol | Likely a **disposal** (avyttring) — capital gain/loss triggered |
-| Interest received from lending | Interest income (ränteinkomst) at 30% |
-| Withdrawing from lending protocol | New acquisition at FMV |
-
-Warning: Skatteverket's position is that transferring crypto to a lending platform (e.g. Celsius, Aave) where the lender receives the right to use/lend the crypto constitutes a disposal. This was confirmed in guidance related to the Celsius bankruptcy (2025).
-
-### 5.4 Liquidity Providing (LP)
-
-**Liquidity Providing table**
-
-| Activity | Treatment |
-| --- | --- |
-| Adding crypto to LP | Likely disposal of underlying assets; LP tokens acquired at FMV |
-| LP token received | New asset — cost basis = FMV of assets deposited |
-| Withdrawing from LP | Disposal of LP tokens; reacquired underlying assets at FMV |
-| Impermanent loss | Not separately deductible — reflected in gain/loss on LP token disposal |
-
-Flag for reviewer: LP treatment remains uncertain. Skatteverket has not issued comprehensive LP-specific guidance.
-
-### 5.5 Airdrops
-
-**Airdrops table**
-
-| Type | Treatment |
-| --- | --- |
-| Gratuitous airdrop (no action required) | Cost basis = SEK 0; taxed as capital gain only when sold |
-| Airdrop received for a service/action (e.g. testnet participation, governance vote) | Income at FMV when received; cost basis = income amount declared |
-
-### 5.6 Hard Forks
-
-**Hard Forks table**
-
-| Aspect | Treatment |
-| --- | --- |
-| Original coin | Cost basis unchanged |
-| New forked coin | Cost basis = SEK 0 |
-| Sale of forked coin | Full proceeds = capital gain |
-
-## Section 6 -- NFT Treatment
-
-Skatteverket has published specific NFT guidance (Beskattning av NFT, Non fungible token). Two possible classifications:
-
-### 6.1 NFT as Capital Placement (Kapitalplacering)
-
-Applies when the NFT is purchased as a speculative investment.
-
-**NFT Capital Placement table**
-
-| Aspect | Treatment |
-| --- | --- |
-| Reporting | K4 avsnitt D (samma som kryptovalutor) |
-| Gain | Taxed at 30% |
-| Loss | 70% deductible |
-| Cost basis | Acquisition price in SEK + fees |
-
-### 6.2 NFT as Personal Property (Personlig tillgång)
-
-Applies when the NFT is purchased for personal enjoyment (e.g. profile picture, digital art for personal use).
-
-**NFT Personal Property table**  _(Skatteverket — "Beskattning av NFT, Non fungible token" (SKV guidance))_
-
-| Aspect | Treatment |
-| --- | --- |
-| Reporting | Punkt 7.5 in Inkomstdeklaration, using hjälpblankett SKV 2192 |
-| Gain exemption | First SEK 50,000 of aggregate personal property gains per year is tax-free |
-| Loss | NOT deductible |
-| Alternative cost basis | 25% of sale price (schablonavdrag) may be used |
-
-### 6.3 NFT Creation and Sale
-
-- **NFT creation and sale** — If the taxpayer creates and sells NFTs as a regular activity, income may be classified as inkomst av näringsverksamhet (business income) subject to full marginal rates and social contributions.
-
-## Section 7 -- Reporting Requirements
-
-### 7.1 Forms and Filing
-
-**Forms and Filing table**
-
-| Form | Purpose | Section |
-| --- | --- | --- |
-| Inkomstdeklaration 1 | Main personal tax return | Filed annually |
-| Bilaga K4 — Avsnitt D | Cryptocurrency gains/losses (övriga tillgångar) | Aggregate gains and losses per crypto type |
-| Punkt 7.2 | Interest income (staking/lending income) | In main declaration |
-| Bilaga T2 | Hobby income (mining as hobby) | If mining income declared |
-| Bilaga NE | Business income (commercial mining) | If mining classified as business |
-
-### 7.2 K4 Avsnitt D Filing Details
-
-- **K4 Avsnitt D filing details** — - Report total gain and total loss separately per cryptocurrency type - Not necessary to report each individual trade — aggregate allowed - Each cryptocurrency (e.g. Bitcoin, Ethereum) must be reported on a separate line - E-filing via Skatteverket's e-tjänst automatically calculates totals
-
-### 7.3 Filing Deadlines
-
-**Filing Deadlines table**
-
-| Deadline | Description |
-| --- | --- |
-| 2 May 2026 | E-filing deadline for income year 2025 |
-| March 2026 | Paper filing deadline (earlier than e-filing) |
-| 30 June 2026 | Extended deadline if granted anstånd (extension) |
-
-### 7.4 DAC8 / CARF Reporting (From 2026)
-
-- **DAC8/CARF reporting** — The Swedish Riksdag adopted DAC8/CARF implementation on 26 November 2025: - Crypto service providers report user transaction data to Skatteverket - Applies to reporting periods beginning after 31 December 2025 - Does not change how crypto is taxed — only enhances information exchange - Skatteverket will cross-reference reported data with individual declarations
-
-### 7.5 Record-Keeping
-
-**Record-Keeping table**
-
-| Requirement | Detail |
-| --- | --- |
-| Retention period | 7 years from end of relevant tax year |
-| Records to maintain | Full transaction logs, cost basis calculations, exchange CSVs, wallet addresses, staking/mining logs |
-| Format | CSV exports preferred; on-chain records (block explorer links) recommended |
-| Burden of proof | On taxpayer — Skatteverket can request full documentation |
-
-## Section 8 -- Loss Offset and Carry-Forward
-
-### 8.1 Loss Offset Rules
-
-**Loss Offset Rules table**
-
-| Rule | Detail |
-| --- | --- |
-| Loss within andra tillgångar | 100% offset against gains in same category |
-| Net loss from andra tillgångar | 70% deductible against other capital income (e.g. dividends, interest) |
-| Net capital deficit (all capital income) | Skattereduktion: 30% of deficit up to SEK 100,000; 21% on excess |
-| Carry-forward of capital losses | **NOT permitted** — losses must be used in the year they arise |
-
-### 8.2 Stolen or Lost Crypto
-
-**Stolen or Lost Crypto table**
-
-| Scenario | Treatment |
-| --- | --- |
-| Crypto stolen (hacked exchange/wallet) | Generally **not** deductible — Skatteverket requires a genuine avyttring (disposal) |
-| Exchange bankruptcy (e.g. FTX) | May qualify as avyttring if a court-approved restructuring plan converts holdings to a claim (as in FTX — Skatteverket guidance 2025) |
-| Lost private keys | Not deductible — no avyttring has occurred |
-
-## Section 9 -- Anti-Avoidance Rules
-
-### 9.1 General Anti-Avoidance
-
-- **General anti-avoidance rule** — Sweden has a general anti-avoidance rule (skatteflyktslagen, 1995:575) that can be invoked to disregard artificial tax-driven arrangements.  _(skatteflyktslagen, 1995:575)_
-
-### 9.2 Wash Sales
-
-- **Wash sales** — Sweden does not have a specific wash-sale rule for crypto. A taxpayer could theoretically sell at a loss and immediately repurchase to harvest the loss. However: - The new purchase resets the average cost basis (genomsnittsmetoden) - Skatteverket may challenge if the arrangement lacks business substance under the general anti-avoidance rule
-
-### 9.3 Controlled Foreign Company (CFC) Rules
-
-- **CFC rules** — If crypto is held through a foreign entity in a low-tax jurisdiction, Swedish CFC rules (IL Chapter 39a) may attribute income to the Swedish resident shareholder.  _(IL Chapter 39a)_
-
-### 9.4 Exit Taxation
-
-- **Exit taxation** — Sweden imposes a 10-year trailing tax on capital gains for individuals who emigrate. If an individual was resident in Sweden for at least 10 of the 15 years preceding emigration, capital gains on certain assets (including securities) may still be taxable in Sweden. Crypto's classification as "andra tillgångar" (not securities) means it may not fall within the exit tax scope — flag for specialist review.
-
-## Section 10 -- Worked Examples
-
-### Example 1 -- Simple Buy and Sell
-
-Input: Swedish resident. Bought 0.5 BTC on 15 January 2025 at SEK 500,000 per BTC (total SEK 250,000). Exchange fee SEK 500. Sold 0.5 BTC on 20 October 2025 at SEK 700,000 per BTC (total SEK 350,000). Exchange fee SEK 700.
-
-Computation:
-Acquisition cost:      0.5 × SEK 500,000 + SEK 500 fee = SEK 250,500
-Disposal proceeds:     0.5 × SEK 700,000 = SEK 350,000
-Disposal costs:        SEK 700
-Net proceeds:          SEK 350,000 - SEK 700 = SEK 349,300
-Gain:                  SEK 349,300 - SEK 250,500 = SEK 98,800
-Tax (30%):             SEK 98,800 × 0.30 = SEK 29,640
-
-Reporting: K4 avsnitt D — Bitcoin — Gain SEK 98,800
-
-### Example 2 -- Loss Scenario with 70% Deduction
-
-Input: Swedish resident. Bought 10 ETH at average cost of SEK 30,000 each. Sold all 10 ETH at SEK 15,000 each. No other capital income in 2025.
-
-Computation:
-Acquisition cost:      10 × SEK 30,000 = SEK 300,000
-Disposal proceeds:     10 × SEK 15,000 = SEK 150,000
-Loss:                  SEK 150,000 - SEK 300,000 = SEK -150,000
-
-Deductible loss (70%): SEK 150,000 × 0.70 = SEK 105,000
-Capital deficit:       SEK 105,000
-Skattereduktion:
-  On first SEK 100,000: SEK 100,000 × 30% = SEK 30,000
-  On excess SEK 5,000:  SEK 5,000 × 21%   = SEK 1,050
-  Total tax credit:     SEK 31,050
-
-Reporting: K4 avsnitt D — Ethereum — Loss SEK 150,000
-The SEK 31,050 skattereduktion reduces municipal/state tax owed.
-
-### Example 3 -- Mining Hobby Income + Subsequent Sale
-
-Input: Swedish resident. Mined 0.2 BTC throughout 2025 (hobby scale). FMV at time of each mining reward totalled SEK 120,000. Later sold 0.2 BTC for SEK 140,000.
-
-Computation:
-Step 1 — Mining income:
-  Income of hobby (inkomst av tjänst): SEK 120,000
-  Taxed at marginal earned income rates (municipal + possibly state tax)
-  Reporting: Bilaga T2
-
-Step 2 — Sale of mined BTC:
-  Cost basis: SEK 120,000 (= income declared)
-  Proceeds: SEK 140,000
-  Gain: SEK 20,000
-  Tax (30%): SEK 6,000
-  Reporting: K4 avsnitt D
-
-## Self-Checks
-
-Before finalising any Sweden crypto computation, verify:
-
-- [ ] All amounts converted to SEK at the exchange rate on the transaction date
-- [ ] Genomsnittsmetoden (average cost) used — NOT FIFO or specific identification
-- [ ] Average cost calculated separately per cryptocurrency type
-- [ ] All exchanges and wallets pooled together for the same cryptocurrency
-- [ ] Mining/staking income declared separately from capital gains
-- [ ] Staking reported as ränteinkomst (punkt 7.2) at 30%
-- [ ] Mining reported as hobby income (T2) or business income (NE)
-- [ ] Losses reported at 70% deduction rate in K4 avsnitt D
-- [ ] Crypto-to-crypto swaps treated as disposals
-- [ ] NFTs classified correctly (kapitalplacering vs personlig tillgång)
-- [ ] Filing deadline: 2 May of following year for e-filing
-- [ ] Record retention: 7 years
-
-## PROHIBITIONS
-
-- **Prohibitions list** — - NEVER use FIFO or specific identification for crypto cost basis — genomsnittsmetoden is mandatory in Sweden - NEVER treat crypto-to-crypto swaps as non-taxable events - NEVER ignore the 70% limitation on capital loss deductions - NEVER assume losses can be carried forward — they cannot - NEVER classify all mining as business income — most individuals are classified as hobby - NEVER treat transfers between own wallets as disposals - NEVER compute gains without verified cost basis and average cost calculations - NEVER ignore DeFi lending as a potential disposal event - NEVER present crypto tax positions as definitive — always label as estimated and flag for professional review
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an auktoriserad revisor, skattejurist, or equivalent licensed practitioner in Sweden) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+- Missing opening basis, incomplete wallet records or unsupported prices: identify the missing evidence and reconstruct it before issuing a filing-ready gain or loss.
+- Unclear NFT underlying rights or use; self-created assets; compensation/airdrop/fork characterisation; wrappers or staking arrangements outside the sourced facts: resolve the specific legal classification before finalising those transactions.
+- Entity holdings, business inventory, disputed residency, foreign-entity/CFC structures and emigration: use the relevant taxpayer and treaty method. Do not apply a general crypto exit-tax rule or an invented residence-duration test; the Income Tax Act's limited-taxpayer asset scope and treaties require separate analysis.
+- Unresolved insolvency, fictitious/related-party loss, missing entitlement, or material uncertain deduction: obtain a reasoned decision from an appropriately qualified Swedish adviser before claiming it. [Official guidance](https://data.riksdagen.se/dokument/sfs-1999-1229.html)
 
 <!-- openaccountants-cta-block -->
 

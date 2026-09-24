@@ -4,7 +4,7 @@ description: Use this skill when advising on LEGAL tax minimization strategies f
 version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-09-24
 review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
@@ -115,7 +115,7 @@ Discretionary (family) trusts allow income distribution to adult family members 
 ### Motor Vehicles
 
 - **Car cost limit for depreciation (2025–26)** — $69,674 AUD (Only the business-use portion of this amount can be depreciated)
-- **Business-use substantiation** — Business-use percentage must be substantiated via logbook (minimum continuous 12-week period, valid for 5 years) or cents-per-km method (85c/km, max 5,000 business km = $4,250).
+- **Business-use substantiation** — Business-use percentage must be substantiated via logbook (minimum continuous 12-week period, valid for 5 years) or cents-per-km method (88c/km for 2025–26, max 5,000 business km = $4,400; 91c/km from 2026–27).
 
 ## Section 5 — Loss Utilization
 
