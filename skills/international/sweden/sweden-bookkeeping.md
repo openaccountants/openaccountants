@@ -3,8 +3,9 @@ name: sweden-bookkeeping
 description: Use this skill whenever asked about Swedish bookkeeping, chart of accounts, BAS kontoplan, financial statements, or accounting standards in Sweden. Trigger on phrases like "Swedish bookkeeping", "bokföring Sverige", "BAS kontoplan", "kontoplan", "årsredovisning", "K2", "K3", "BFL", "ÅRL", "resultaträkning", "balansräkning", "enskild firma bokföring", "årsbokslut", "Bokföringsnämnden", "BFN", "avskrivning", "förenklat årsbokslut", or any question about recording transactions, financial reporting, or accounting standards for Swedish entities.
 version: 1.0
 jurisdiction: SE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-24
+authored_by: OpenAccountants team
 review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
@@ -13,559 +14,182 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Sweden Bookkeeping
+# Sweden: bookkeeping — 2026 editorial draft
 
-## Section 1 -- Quick Reference
+Use for tax year 2026 and the entity’s actual financial year. This method covers recording, vouchers, reconciliation, correction, archiving and an ordinary K1/K2 annual close. Official BFN sources were retrieved for this update.
 
-**Quick Reference**
 
-| Field | Value |
+## Ask the client first
+
+The Book-keeping Act and Annual Accounts Act are the framework for Swedish accounting; BFN issues the guidance that expresses generally accepted accounting principles. All business activity must maintain accounting records, and limited companies, partnerships and co-operatives are generally book-keeping entities even without business activity. [BFN source](https://www.bfn.se/english/regulations/)
+
+Use this method for the legal entity’s own Swedish activity. It does not select tax treatment, a BAS account number, VAT result, payroll calculation or specialised accounting policies outside the ordinary K1/K2 branches below. A BAS chart can be a useful internal mapping but is not a statutory substitute for a system that can show the required journal and ledger information.
+
+Before processing entries, record:
+
+- Legal form, registration date, financial year, group/branch facts and whether the entity is a book-keeping entity.
+- The required closing output: simplified annual accounts, annual financial statements or annual report; the applicable K framework and any elected policy.
+- Bank/cash accounts, sales channels, VAT/PAYE registrations, payment providers, credit facilities, fixed assets, inventory and every source system that creates accounting information.
+- The chosen accounting system, who can post/approve/export, voucher-number series, chart/account mapping, accounting periods, backup/location and access plan.
+- Whether the entity normally has annual net turnover of no more than SEK 3 million and qualifies to defer recording until payment. Do not use this simplification until the statutory conditions and year-end conversion are met. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+
+## 2. Build a compliant record for every business event
+
+A business event includes changes to the size or composition of assets caused by economic dealings with outsiders, including payments, receivables, liabilities and owner contributions/withdrawals. An order alone is not necessarily a business event. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+
+For each event, create or retain a voucher that establishes:
+
+| Required record | Control |
 | --- | --- |
-| Country | Sweden (Konungariket Sverige) |
-| Currency | SEK (Swedish Krona) |
-| Financial year | Flexible; calendar year most common. Split year allowed for non-AB entities. |
-| Accounting standards | K2 (BFNAR 2016:10) for smaller companies; K3 (BFNAR 2012:1) for larger/default; K1 for simplified annual accounts |
-| Standard chart of accounts | BAS-kontoplanen (voluntary but used by >95% of businesses) |
-| Governing body | BFN (Bokföringsnämnden -- Swedish Accounting Standards Board) |
-| Key legislation | BFL (Bokföringslagen 1999:1078); ÅRL (Årsredovisningslagen 1995:1554) |
-| Filing obligation | Bolagsverket (Swedish Companies Registration Office) -- within 7 months of year-end for AB |
-| Tax authority | Skatteverket (Swedish Tax Agency) |
-| Archival requirement | 7 years (bokföringslagen ch. 7) |
+| When the voucher was compiled and when the event occurred | Keep document and transaction dates separately if they differ. |
+| What happened, amount and counterparty | Invoice, receipt, agreement, bank support and explanation must tell a reviewer what was booked. |
+| Voucher number or other unique identifier | Link the identifier from source document to journal and ledger. |
+| Account coding and accounting period | The continuous record must show registration order, period, voucher identifier, coding and booked amount. |
+| VAT/payroll/tax classification evidence where relevant | Retain the tax evidence separately; a ledger account cannot establish tax treatment by itself. |
 
-## Section 2 -- Standard Chart of Accounts (BAS-kontoplanen)
+The BFN guide requires the core voucher information to be durable and not erased or made illegible. If an externally received voucher is incomplete, add missing information without changing the received content; record when, by whom and how it was supplemented. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-The BAS chart is a four-digit decimal classification system aligned with ÅRL income statement and balance sheet formats. Classes 1-8 cover financial accounting.
+## 3. Record on time and present the complete accounting trail
 
-### Class 1 -- Tillgångar (Assets)
+Maintain both:
 
-**Class 1 -- Tillgångar (Assets)**
+* a **registration-order** presentation (journal) that shows when postings were added; and
+* a **systematic** presentation (ledger) that groups transactions by their nature and supports a running view of financial position/result and the year-end statements.
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 1010 | Utvecklingsutgifter | Development expenditure (K3 only) |
-| 1020 | Koncessioner | Concessions |
-| 1030 | Patent | Patents |
-| 1050 | Goodwill | Goodwill |
-| 1110 | Byggnader | Buildings |
-| 1120 | Förbättringsutgifter (annans fastighet) | Improvements to leased property |
-| 1130 | Mark | Land |
-| 1210 | Maskiner och inventarier | Machinery and equipment |
-| 1220 | Inventarier och verktyg | Tools and fixtures |
-| 1230 | Datorer | Computers |
-| 1240 | Bilar och andra transportmedel | Vehicles |
-| 1250 | Kontorsinventarier | Office furniture |
-| 1290 | Övriga materiella anläggningstillgångar | Other tangible fixed assets |
-| 1310 | Aktier i dotterföretag | Shares in subsidiaries |
-| 1380 | Andra långfristiga fordringar | Other long-term receivables |
-| 1400 | Varulager | Inventory (goods for resale) |
-| 1410 | Lager av råvaror | Raw materials |
-| 1420 | Lager av varor under tillverkning | Work in progress |
-| 1460 | Lager av handelsvaror | Trading goods |
-| 1510 | Kundfordringar | Trade receivables |
-| 1610 | Fordringar hos anställda | Receivables from employees |
-| 1630 | Skattefordringar | Tax receivables |
-| 1710 | Förutbetalda hyreskostnader | Prepaid rent |
-| 1790 | Övriga förutbetalda kostnader | Other prepaid expenses |
-| 1910 | Kassa | Cash |
-| 1920 | PlusGiro | PlusGiro account |
-| 1930 | Företagskonto/checkkonto | Business bank account |
-| 1940 | Övriga bankkonton | Other bank accounts |
+For each posting, those presentations must make available registration order, accounting period, voucher identifier, account coding and amount. Separate sales, purchase, payroll, cash and bank systems must feed one systematic accounting record; isolated ledgers are not enough. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-### Class 2 -- Eget Kapital och Skulder (Equity and Liabilities)
+### Timing decision
 
-**Class 2 -- Eget Kapital och Skulder (Equity and Liabilities)**
+1. Record cash receipts and cash payments no later than the next working day. The next working day means the next day work is performed; where that delay would exceed a few days, record by the day after the event. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+2. Record other business events as soon as possible.
+3. An ordinary non-financial business normally having annual net turnover of **SEK 3 million or less** may defer recording business events until payment, but must record all unpaid receivables and liabilities at financial year-end. This does not remove source-document, cash-record or closing obligations. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+4. Complete each accounting period by reconciling relevant balances and posting corrections found in the reconciliation. Do not silently reopen a completed period.
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 2010 | Eget kapital (enskild firma) | Owner's equity (sole trader) |
-| 2013 | Privata uttag | Owner's drawings |
-| 2018 | Egna insättningar | Owner's contributions |
-| 2020-2040 | Eget kapital delägare 2-4 | Partner equity (handelsbolag) |
-| 2081 | Aktiekapital | Share capital (AB) |
-| 2085 | Uppskrivningsfond | Revaluation reserve |
-| 2086 | Reservfond | Legal reserve |
-| 2091 | Balanserad vinst/förlust | Retained earnings |
-| 2099 | Årets resultat | Current year result |
-| 2110-2139 | Periodiseringsfonder | Tax allocation reserves |
-| 2150 | Ackumulerade överavskrivningar | Accumulated excess depreciation |
-| 2310 | Banklån (långfristiga) | Long-term bank loans |
-| 2350 | Andra skulder till kreditinstitut | Other credit institution debts |
-| 2390 | Övriga långfristiga skulder | Other long-term liabilities |
-| 2440 | Leverantörsskulder | Trade payables (suppliers) |
-| 2510 | Skatteskulder | Tax liabilities |
-| 2610 | Utgående moms (25%) | Output VAT 25% |
-| 2620 | Utgående moms (12%) | Output VAT 12% |
-| 2630 | Utgående moms (6%) | Output VAT 6% |
-| 2640 | Ingående moms | Input VAT (deductible) |
-| 2650 | Redovisning av moms | VAT settlement account |
-| 2710 | Personalens källskatt | Employee tax withheld (PAYE) |
-| 2730 | Lagstadgade sociala avgifter | Statutory social charges payable |
-| 2731 | Avräkning arbetsgivaravgifter | Employer contributions settlement |
-| 2790 | Övriga kortfristiga skulder | Other current liabilities |
-| 2900 | Upplupna kostnader | Accrued expenses |
-| 2910 | Upplupna löner | Accrued wages |
-| 2920 | Upplupna semesterlöner | Accrued holiday pay |
-| 2940 | Upplupna sociala avgifter | Accrued social contributions |
-| 2990 | Övriga upplupna kostnader | Other accrued expenses |
+## The method, step by step
 
-### Class 3 -- Rörelseintäkter (Operating Revenue)
+1. **Collect and index source documents.** Download sales invoices, supplier invoices/receipts, bank and card statements, payment-provider reports, cash records, payroll reports, asset documentation, loan notices and VAT/PAYE evidence. Give each voucher a unique identifier.
+2. **Validate the voucher.** Confirm counterparty, date, amount, business explanation, currency and whether required VAT/payroll evidence is present. Create an internal voucher for a legitimate event with no external document, such as an owner withdrawal or year-end adjustment; it needs the same statutory facts and evidence trail. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+3. **Post the event.** Enter debit and credit using the entity’s documented account mapping, period and voucher identifier. Keep principal, interest, VAT, cash movement and owner/equity movements distinguishable where they differ. Do not treat a bank feed’s auto-categorisation as a completed posting without voucher review.
+4. **Reconcile.** Match every bank/card/payment-provider movement to a voucher and ledger posting; reconcile cash, accounts receivable, accounts payable, payroll liabilities, VAT/PAYE control balances, loans and intercompany/owner accounts as applicable. Investigate duplicate, missing or unmatched items.
+5. **Review completeness.** Compare the journal count to source-document count, review unusual manual journals and zero/negative control-account balances, and preserve the system export and reconciliation evidence.
 
-**Class 3 -- Rörelseintäkter (Operating Revenue)**
+## 5. Correct, do not erase
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 3010 | Försäljning varor (25% moms) | Sales of goods (25% VAT) |
-| 3040 | Försäljning varor (12% moms) | Sales of goods (12% VAT) |
-| 3050 | Försäljning varor (6% moms) | Sales of goods (6% VAT) |
-| 3100 | Försäljning tjänster (25% moms) | Sales of services (25% VAT) |
-| 3200 | Försäljning tjänster momsfri | Sales of services (VAT-exempt) |
-| 3300 | EU-intäkter | EU intra-community sales |
-| 3400 | Exportintäkter | Export revenue |
-| 3900 | Övriga rörelseintäkter | Other operating income |
+Do not delete or make an original booked record illegible. In computerised bookkeeping, correct a booked posting with a separate correction posting. It is a new posting with its own voucher and must make the original and correction traceable. A manual record can only be struck through where it has not affected totals; otherwise use a correction posting. If the earlier period is completed, the correction belongs in the discovery period. If an error is found while reconciling an unfinished period, correct that unfinished period; do not confuse reconciliation performed the following month with a completed-period error. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-### Class 4 -- Kostnader för varor/material (COGS)
+When correcting a voucher, preserve the original information and record when and by whom the correction was made. If a correction changes VAT, PAYE, tax return or filed financial-statement results, follow the separate return/amendment process as well; changing the ledger alone does not amend a filed tax return. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-**Class 4 -- Kostnader för varor/material (COGS)**
+## 6. Close the financial year
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 4010 | Inköp av varor (inom Sverige) | Purchases of goods (domestic) |
-| 4100 | Inköp av råvaror | Raw material purchases |
-| 4500 | Övriga inköp av varor/material | Other purchases |
-| 4600 | Legoarbete och underentreprenader | Subcontract work |
-| 4900 | Förändring av varulager | Inventory change |
+1. Freeze the operational source list and reconcile bank, cash, receivables, payables, loans, payroll, VAT/PAYE, inventory and fixed-asset records to supporting evidence.
+2. Post closing transactions needed to determine the year’s income, expenses and financial position, such as accruals and depreciation, by the time continuous bookkeeping is closed. The ongoing record is not required to be fully accrued throughout the year, but closing postings must complete the financial-year result. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+3. Select the required closing form based on entity and size:
+   * a sole trader normally at or below SEK 3 million turnover may use K1 simplified annual accounts; [BFN threshold](https://www.bfn.se/redovisningsregler/vad-galler-for/enskilda-naringsidkare/)
+   * a sole trader outside/declining that route prepares annual financial statements under the BFN annual-accounts framework, with specified K2/K3 possibilities;
+   * a sole trader that is a larger entity must prepare an annual report under K3;
+   * a limited company prepares an annual report every financial year. Only eligible smaller limited companies may choose K2; smaller entities excluded from K2, entities declining K2 and larger entities use K3. Check the current framework eligibility before selecting policies. [BFN source](https://www.bfn.se/redovisningsregler/vad-galler-for/aktiebolag/) [BFN source](https://www.bfn.se/redovisningsregler/vad-galler-for/enskilda-naringsidkare/)
+4. Tie the closing statements back to final journal/ledger balances and reconcile their tax-return inputs separately. A published/filing deadline is entity- and filing-specific; obtain it from the relevant authority notice rather than using an old generic deadline.
 
-### Class 5 -- Övriga Externa Kostnader (Other External Expenses)
+## 7. Archive, access and system controls
 
-**Class 5 -- Övriga Externa Kostnader (Other External Expenses)**
+Keep accounting information orderly, secure, accessible and in Sweden through the end of the seventh year after the calendar year in which the financial year ended, subject to the statutory conditions for permitted foreign electronic storage. Keep the systems/equipment needed to present the information available. [BFN source](https://www.bfn.se/redovisningsregler/vad-galler-for/aktiebolag/) [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 5010 | Lokalhyra | Premises rent |
-| 5020 | El för belysning | Electricity |
-| 5060 | Städning och renhållning | Cleaning |
-| 5090 | Övriga lokalkostnader | Other premises costs |
-| 5100 | Fastighetskostnader | Property expenses (owned premises) |
-| 5200 | Hyra av anläggningstillgångar | Leased assets |
-| 5210 | Hyra av maskiner | Machine leases |
-| 5250 | Hyra av datorer | Computer leases |
-| 5300-5399 | Energikostnader | Energy costs (heating, fuel) |
-| 5400 | Förbrukningsinventarier | Consumable equipment (< SEK 25,000) |
-| 5410 | Förbruknings­material | Consumable materials |
-| 5420 | Programvaror (avskrivning/abonnemang) | Software (subscription/depreciation) |
-| 5500 | Reparation och underhåll | Repairs and maintenance |
-| 5600 | Transportkostnader | Transport/freight |
-| 5610 | Frakter | Freight costs |
-| 5700 | Frakter och transporter (utgående) | Outbound freight |
-| 5800 | Resekostnader | Travel expenses |
-| 5810 | Biljetter | Tickets (flights, trains) |
-| 5820 | Hyrbil | Car rental |
-| 5830 | Kost och logi | Meals and accommodation |
-| 5900 | Reklam och PR | Advertising and PR |
-| 5910 | Annonsering | Advertising |
-| 5930 | Reklamtrycksaker | Printed materials |
-| 6000 | Övriga försäljningskostnader | Other selling costs |
-| 6100 | Kontorsmaterial | Office supplies |
-| 6200 | Tele och post | Telecoms and postage |
-| 6210 | Telekommunikation | Telephone/internet |
-| 6230 | Datakommunikation | Data services |
-| 6300 | Företagsförsäkringar | Business insurance |
-| 6400 | Förvaltningskostnader | Administration costs |
-| 6500 | Övriga externa tjänster | Other external services |
-| 6530 | Redovisningstjänster | Accounting services |
-| 6540 | IT-tjänster | IT services |
-| 6550 | Konsultarvode | Consulting fees |
-| 6570 | Bankkostnader | Bank charges |
-| 6900 | Övriga externa kostnader | Other miscellaneous external costs |
+For electronic records, make regular backups suited to the business’s volume and keep a backup separate from the copied records. Maintain an archive plan where needed that says what is stored, where it is stored and how the archive is structured. A cloud provider or accountant may hold data, but the book-keeping entity must retain access during the full archive period, including after a software/provider change. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-### Class 7 -- Personalkostnader m.m. (Staff Costs etc.)
+Maintain system documentation and processing history sufficient for an external reviewer to understand the chart/account mapping, voucher identification, data flows, automated posting rules and how electronic records can be produced. A spreadsheet whose entries can be changed afterwards, such as Excel, is not an acceptable bookkeeping system for a sole trader. [BFN source](https://www.bfn.se/redovisningsregler/vad-galler-for/enskilda-naringsidkare/) [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-**Class 7 -- Personalkostnader m.m. (Staff Costs etc.)**
+## Choose the ordinary annual-close branch
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 7010 | Löner till kollektivanställda | Wages -- collectively agreed |
-| 7210 | Löner till tjänstemän | Salaries -- employees |
-| 7220 | Löner till företagsledare | Directors' salaries |
-| 7310 | Kontanta extraförmåner | Cash fringe benefits |
-| 7380 | Kostnader för förmåner | Benefit costs |
-| 7410 | Pensionsförsäkringspremier | Pension insurance premiums |
-| 7510 | Arbetsgivaravgifter | Employer social contributions (31.42%) |
-| 7570 | Egenavgifter | Self-employed social contributions |
-| 7610 | Utbildning | Training costs |
-| 7690 | Övriga personalkostnader | Other staff costs |
-| 7820 | Avskrivningar maskiner/inventarier | Depreciation machinery/equipment |
-| 7830 | Avskrivningar byggnader | Depreciation buildings |
-| 7840 | Avskrivningar bilar | Depreciation vehicles |
+Use the whole selected framework consistently. This section covers a normal sole trader using K1 and an eligible smaller private limited company using K2. A different legal form, K3 or a regulated financial entity needs its own framework. The linked consolidated K1 and K2 editions contain the current changes; select by the financial year’s start date rather than assuming that the filing year alone selects the rules. [BFN current guide catalogue](https://www.bfn.se/informationsmaterial/vagledningar/)
 
-### Class 8 -- Finansiella poster, Skatt, Resultat (Financial Items, Tax, Result)
+### K1 sole trader
 
-**Class 8 -- Finansiella poster, Skatt, Resultat (Financial Items, Tax, Result)**
+A sole trader with normal net turnover no more than SEK 3 million may choose simplified annual accounts. Use the K1 balance-sheet and income-statement layout, with its own recognition rules rather than borrowing K2 accrual simplifications. [K1](https://www.bfn.se/wp-content/uploads/vl06-1-k1enskilda-kons2025.pdf)
 
-| Code | Account | Description |
-| --- | --- | --- |
-| 8310 | Ränteintäkter | Interest income |
-| 8410 | Räntekostnader | Interest expense |
-| 8420 | Räntekostnader banklån | Interest on bank loans |
-| 8490 | Övriga finansiella kostnader | Other financial costs |
-| 8910 | Skatt på årets resultat | Current year income tax |
-| 8990 | Resultat | Net profit/loss |
+- Revenue: start with customer payments, add the change in unpaid customer receivables that were invoiced or commercially should have been invoiced, and adjust for opening versus closing customer advances. Exclude VAT from revenue. A customer advance for work/delivery not started is a liability where it exceeds SEK 5,000; test each payment/invoice and clearly separable unstarted part under the K1 rule. An invoice is not automatically earned revenue. [K1, revenue and customer advances](https://www.bfn.se/wp-content/uploads/vl06-1-k1enskilda-kons2025.pdf)
+- Costs and liabilities: reconcile payments and unpaid supplier invoices; distinguish expense from inventory, equipment, advances and private withdrawals. Include unpaid trade receivables and liabilities in the close even when current posting uses the payment method. Use the K1 closing schedule rather than assuming cash payments equal profit. [K1](https://www.bfn.se/wp-content/uploads/vl06-1-k1enskilda-kons2025.pdf)
+- Inventory: count goods the business owns and has received, remove sold/dispatched goods, and document quantities and unit costs. The normal latest purchase invoice may support cost where its price is normal; otherwise use FIFO, weighted average or a comparable permitted method. Screen impairment and the K1 low-total-inventory simplification separately. [K1, inventory](https://www.bfn.se/wp-content/uploads/vl06-1-k1enskilda-kons2025.pdf)
+- Machinery/equipment: retain the acquisition schedule and group naturally connected purchases. An item with expected economic life at most three years may be expensed immediately. Otherwise apply K1 acquisition/valuation rules: equipment is collectively carried at its tax value, capped as prescribed by opening value plus acquisitions; the depreciation posting bridges the pre-depreciation book amount to that supported tax value. Do not invent a fixed currency low-value limit: the rule depends on the applicable price-base amount and grouping. Obtain the actual tax-value calculation before finalising that schedule. [K1, equipment](https://www.bfn.se/wp-content/uploads/vl06-1-k1enskilda-kons2025.pdf)
 
-## Section 3 -- Revenue Recognition
+### K2 eligibility for a financial year starting after December 2025
 
-### Cash vs Accrual Basis
+First establish that the entity is smaller under the Annual Accounts Act. A larger entity exceeds more than one of: average employees 50, balance sheet SEK 40 million, net turnover SEK 80 million, with the relevant criterion exceeded in each of the two preceding years. Listed entities are also larger. [BFN framework selection](https://www.bfn.se/om-bokforingsnamnden/k-projektet/)
 
-**Cash vs Accrual Basis**
+K2 excludes public limited companies; parents of larger groups; parents preparing consolidated accounts; individuals/estates; housing associations; businesses with foreign branches during the year; acquisitions of goods/services for share-based consideration; issued convertible or similar compound financial instruments; and crypto holdings during the year other than occasional use/receipt as payment. [K2 scope](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
 
-| Entity Type | Basis | Notes |
-| --- | --- | --- |
-| AB (Aktiebolag) | Accrual (mandatory) | BFL/ÅRL require accrual basis |
-| Enskild firma (sole trader) | Accrual | BFL requires current recording; may use simplified annual accounts |
-| Handelsbolag (partnership) | Accrual | Same as AB |
-| K1 entity (simplified) | Cash-like | Förenklat årsbokslut allows near-cash treatment |
+It also excludes material deferred-tax-liability cases and buildings generating at least 75% of turnover, subject to the specific small-entity and temporary-condition exceptions. Assess these additional exclusions using the latest financial year for which a completed annual report exists. The small-entity exception applies where no more than one of these is exceeded in each of the two preceding years: employees 3, balance sheet SEK 1.5 million, net turnover SEK 3 million. The other exception requires K2 in the preceding year and conditions not normally falling within those additional exclusions. These exceptions do not override the preceding exclusion list. Document the screen and source financial statements. [K2 scope](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
 
-### Key Rules
+A new business starting after June 2025 with an extended first financial year ending December 2026 or later also uses the new edition. A business failing the screen uses the appropriate K3 route; do not apply the following K2 policies to it. [BFN edition dates](https://www.bfn.se/informationsmaterial/vagledningar/)
 
-- **Revenue recognition timing** — Revenue recognised when performance obligation is satisfied (goods: delivery; services: over time or at completion)
-- **K2 recognition** — K2: simpler recognition -- revenue at point of invoicing for most service companies; construction contracts on completion
-- **K3 recognition** — K3: percentage-of-completion required for long-term contracts where outcome can be estimated
-- **Subscription income** — Subscription income: recognised over the period of service
+### Ordinary K2 recognition and close
 
-### Förenklat Årsbokslut (K1 -- Simplified Annual Accounts)
+- Goods revenue: recognise when material risks/rewards have passed, the amount is reliably measurable and economic benefits are probable; determine transfer using the delivery arrangement. Separate customer advances from earned revenue. Time-and-material services earn revenue as work/materials are performed/delivered at agreed prices; record earned unbilled revenue at close. Fixed-price contracts require the framework’s consistent main/alternative contract method and loss review. [K2 revenue](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
+- Expenses and accruals: assign income/cost to the financial year it concerns. Record unpaid earned costs as accrued liabilities and future-period payments as prepaid assets. K2 permits specified small-item simplifications; using full accrual for these ordinary cases avoids relying on an untested threshold. Do not net unrelated items merely to fall below a simplification limit. [K2 basic principles and operating expenses](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
+- Equipment: capitalise qualifying acquisition cost, record the asset’s in-use date and useful-life evidence, and depreciate systematically from the year it enters use. Connected parts form one depreciation unit. K2 permits a five-year useful-life simplification for machinery/equipment; select/document it or support the actual useful life. Straight-line is a common choice, not the only permissible K2 method. Keep book depreciation separate from the tax depreciation/untaxed-reserve calculation. [K2 equipment](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
+- Inventory: perform count and ownership cut-off, establish acquisition cost and compare with net realisable value under the applicable individual-item/grouping rules. Record a supported write-down rather than assume all stock sells at cost. Reconcile opening stock, purchases, cost consumed and closing stock to the ledger. [K2 inventory](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
+- Statements: prepare the K2 management report, income statement, balance sheet and notes, using its layouts and required comparisons. Map net turnover, operating costs, depreciation, financial items, appropriations and tax to the income statement; reconcile assets, equity, untaxed reserves, provisions and liabilities to balance-sheet schedules. Carry current profit into equity once; verify total assets equal equity plus untaxed reserves/provisions/liabilities. The ledger is not itself the completed annual report. [K2 annual-report form and layouts](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf)
 
-- **Turnover threshold for K1 availability** — SEK 3,000,000 SEK (Net turnover limit for sole traders (enskild firma))
-- **Revenue recognition** — Revenue recognised at invoice date (near-cash basis)
-- **Accruals threshold for recurring items** — SEK 5,000 SEK (No accruals required for recurring items below this amount)
-- **Inventory valuation** — Simplified inventory valuation
+## Worked debit/credit close
 
-## Section 4 -- Expense Classification
+The following are hypothetical SEK amounts with no VAT unless explicitly stated; VAT status/amounts are assumed already resolved by the separate VAT method. Account names are illustrative classifications, not prescribed BAS codes. [BFN bookkeeping](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-### Deductible Operating Expenses
-
-**Deductible Operating Expenses**
-
-| Category | BAS Code | Deductibility |
-| --- | --- | --- |
-| Premises rent | 5010 | 100% deductible |
-| Electricity/utilities | 5020 | 100% deductible |
-| Accounting services | 6530 | 100% deductible |
-| Insurance (business) | 6300 | 100% deductible |
-| Advertising | 5900 | 100% deductible |
-| Office supplies | 6100 | 100% deductible |
-| Telecoms (business) | 6210 | 100% deductible |
-| Bank charges | 6570 | 100% deductible |
-| Software subscriptions | 5420 | 100% deductible |
-| Travel (business) | 5800 | 100% deductible |
-| Training/education | 7610 | 100% deductible |
-| Repairs and maintenance | 5500 | 100% deductible |
-
-### Limited/Non-Deductible Expenses
-
-**Limited/Non-Deductible Expenses**
-
-| Category | Limitation |
+| Case | Journal and control |
 | --- | --- |
-| Representation (extern) -- food/drink | Deductible up to SEK 350/person (excl. VAT) for income tax; VAT deduction limited to SEK 300/person |
-| Internal representation | Deductible up to SEK 600/person for 2 events/year |
-| Gifts to clients | Deductible if < SEK 300 (excl. VAT) per gift |
-| Fines and penalties (böter) | 0% -- never deductible |
-| Personal expenses | 0% -- never deductible |
-| Income tax | 0% -- never deductible |
-| Private portion of mixed assets | Must be excluded (förmånsbeskattning) |
+| Invoice and payment | Supported K2 operating-service invoice SEK 12,000 for this year: debit service expense 12,000; credit supplier payable 12,000. On payment debit supplier payable 12,000; credit bank 12,000. Expense is booked once and payable clears. [K2](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf) |
+| Wrong expense coding | The same invoice was wrongly debited to travel. Separate correction: debit service expense 12,000; credit travel expense 12,000; link original and correction vouchers. Bank/payable do not change. Use the completed/unfinished-period rule above. [BFN corrections](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf) |
+| Unpaid K2 cost | December services received SEK 12,000; invoice arrives January. At close debit service expense 12,000; credit accrued liability 12,000. When invoice is recorded, debit that accrual and credit payable; resolve any estimate difference without duplicating the expense. [K2](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf) |
+| K2 prepaid service | Pay SEK 24,000 for an even service covering December and January; initially debit prepayment 24,000/credit bank 24,000. At December close debit expense 12,000/credit prepayment 12,000, leaving asset 12,000 for January. [K2](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf) |
+| K2 equipment | Eligible equipment costs SEK 100,000, enters use at start of a normal full financial year, supported straight-line useful life five years and no residual value. Debit equipment 100,000/credit bank 100,000. Annual debit depreciation 20,000/credit accumulated depreciation 20,000; carrying amount 80,000. Assumptions are illustrative, not a mandatory life or tax method. [K2](https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf) |
+| K1 unpaid sale | Customer paid 100,000 during year; closing unpaid earned invoice 20,000; no opening receivable or advances. Revenue 120,000. Add year-end debit receivable 20,000/credit revenue 20,000; subsequent payment debits bank and clears receivable, not new revenue. [K1](https://www.bfn.se/wp-content/uploads/vl06-1-k1enskilda-kons2025.pdf) |
+| Archive expiry | A financial year ends in June 2026. Retain its accounting information through December 2033: count seven calendar years after the calendar year in which it ended. An agreement spanning later financial years can have a later expiry. [BFN archive](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf) |
 
-### Vehicle (Bil) Rules
+## Deliverables and closing decisions
 
-- **Company car private-use** — Company car private-use: taxed as benefit-in-kind (bilförmån) on employee; deductible for company
-- **Sole trader vehicle log** — Sole trader: log required for business km; private km not deductible
-- **Mileage allowance** — 25 SEK/km (Mileage allowance (if using private car for business): SEK 25/km (tax-free for employment; for self-employed: actual costs))
+Produce a journal, ledger, trial balance, supporting-voucher index, balance reconciliations, open-item list, corrections log and a closing checklist identifying the selected framework and the still-needed accounting policies. Map ledger balances to the applicable framework’s income-statement and balance-sheet headings; check that each closing figure reconciles to the ledger and its supporting schedule. Use the entity’s approved chart of accounts; no account number establishes VAT liability, deductibility or revenue recognition by itself.
 
-## Section 5 -- Asset vs Expense Thresholds
+For revenue, obtain the contract, delivery/performance evidence, invoice and any deferred-income schedule. For inventory, obtain count, ownership and cost/valuation evidence. For fixed assets, obtain acquisition documents, commissioning date, useful-life assessment, chosen depreciation policy and disposal records. For tax, payroll and VAT controls, use the separately supported computation and reconcile its liability to postings/payments. When those inputs or a framework decision are missing, mark the relevant closing entry unresolved. Do not fill the gap with an old generic capitalization threshold, tax rate or merchant classification.
 
-### Capitalization Rules
+These working-paper controls operationalize the requirement to record closing entries establishing the period’s income, expenses and financial position. [BFN bookkeeping guide](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-**Capitalization Rules**
+## Worked checks
 
-| Rule | Detail |
-| --- | --- |
-| Low-value asset threshold (K2/tax) | SEK 25,000 (excl. VAT) -- items below may be expensed directly (account 5400) |
-| Grouping | Items forming a unit may be grouped and capitalised together even if individual cost < threshold |
-| K3 component approach | Required to separate significant components with different useful lives |
-| K2 simplified | No component approach; entire asset depreciated as one unit |
+## Case 1 — ordinary supplier invoice and bank payment
 
-### Depreciation Methods
+**Facts:** A limited company receives a supplier invoice for a business purchase and pays it by bank transfer. The VAT treatment is already separately established.
 
-**Depreciation Methods**
+**Method:** Retain the invoice as voucher, assign voucher identifier, record the liability/event as soon as possible with documented account coding and period, then post/reconcile the bank payment to the same supplier liability and support. The journal and ledger must expose the voucher identifier, period, coding and amount. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
 
-| Framework | Method | Notes |
-| --- | --- | --- |
-| K2 | Straight-line only | No other method permitted |
-| K3 | Straight-line, diminishing balance, or units-of-production | Must reflect consumption pattern |
-| Tax (Räkenskapsenlig) | 30% declining balance (main rule) or 20% straight-line (5-year rule) | See below |
-| Tax (Restvärdesavskrivning) | 25% declining balance | Alternative without book-tax alignment |
-
-### Tax Depreciation -- Machinery and Equipment (Inventarier)
-
-**Tax Depreciation -- Machinery and Equipment (Inventarier)**
-
-| Method | Rate | Notes |
-| --- | --- | --- |
-| Huvudregeln (30% rule) | 30% of net book value per year | Declining balance; never fully written off |
-| Kompletteringsregeln (20% rule) | 20% of acquisition cost per year | Straight-line; fully written off in 5 years |
-| Immediate write-off | 100% (if < SEK 25,000 excl. VAT) | Or if expected useful life ≤ 3 years |
+## Case 2 — cash sale timing boundary
 
-### Tax Depreciation -- Buildings
-
-**Tax Depreciation -- Buildings**
-
-| Building Type | Annual Rate |
-| --- | --- |
-| Industrial buildings | 4% |
-| Commercial buildings | 2% |
-| Office buildings | 2% |
-| Residential buildings (rental) | 2% |
-| Warehouse/logistics | 4% |
-| Light structures (barracks, sheds) | 5% |
-
-### Tax Depreciation -- Land Improvements
-
-- **Land improvements depreciation rate** — 5 % per year (Rate: 5% per year of acquisition cost)
-
-### Överavskrivningar (Excess Depreciation)
-
-- **Excess depreciation treatment** — The difference between tax depreciation (typically higher via 30% rule) and book depreciation (straight-line per plan) is recorded in account 2150 (accumulated excess depreciation) as an untaxed reserve (obeskattad reserv).
-
-## Section 6 -- P&L Format (Resultaträkning)
-
-Sweden uses the "kostnadsslagsindelning" (by nature) format as standard per ÅRL. BAS is aligned to this.
-
-### Format (Kostnadsslagsindelad -- By Nature)
-
-```
-Nettoomsättning (Net turnover)                                 xxx
-Förändring av varulager (Change in inventory)                  xxx
-Aktiverat arbete för egen räkning                              xxx
-Övriga rörelseintäkter (Other operating income)                xxx
-                                                            -------
-Summa rörelseintäkter                                          xxx
-
-Råvaror och förnödenheter (Raw materials/consumables)         (xxx)
-Övriga externa kostnader (Other external expenses)            (xxx)
-Personalkostnader (Staff costs)                               (xxx)
-Avskrivningar (Depreciation)                                  (xxx)
-Nedskrivningar (Impairment)                                   (xxx)
-Övriga rörelsekostnader (Other operating expenses)            (xxx)
-                                                            -------
-Rörelseresultat (Operating profit/loss)                        xxx
-
-Finansiella intäkter (Financial income)                        xxx
-Finansiella kostnader (Financial costs)                       (xxx)
-                                                            -------
-Resultat efter finansiella poster                              xxx
-
-Bokslutsdispositioner (Appropriations)*                       (xxx)
-  - Förändring periodiseringsfond                             (xxx)
-  - Förändring överavskrivningar                              (xxx)
-                                                            -------
-Resultat före skatt (Profit before tax)                        xxx
-
-Skatt på årets resultat (Income tax)                          (xxx)
-                                                            -------
-Årets resultat (Net profit/loss)                               xxx
-```
-
-*Bokslutsdispositioner (appropriations) are a uniquely Swedish feature -- transfers to/from untaxed reserves.
-
-## Section 7 -- Balance Sheet Format (Balansräkning)
-
-Sweden uses the vertical format per ÅRL.
-
-### Format
-
-```
-TILLGÅNGAR (Assets)
-
-Anläggningstillgångar (Fixed assets)
-  Immateriella anläggningstillgångar
-    Goodwill                                                  xxx
-    Patent och licenser                                       xxx
-  Materiella anläggningstillgångar
-    Byggnader och mark                                        xxx
-    Maskiner och inventarier                                  xxx
-  Finansiella anläggningstillgångar
-    Aktier i dotterföretag                                    xxx
-    Långfristiga fordringar                                   xxx
-                                                           -------
-  Summa anläggningstillgångar                                  xxx
-
-Omsättningstillgångar (Current assets)
-  Varulager                                                   xxx
-  Kundfordringar                                              xxx
-  Övriga fordringar                                           xxx
-  Förutbetalda kostnader                                      xxx
-  Kassa och bank                                              xxx
-                                                           -------
-  Summa omsättningstillgångar                                  xxx
-
-SUMMA TILLGÅNGAR                                               xxx
-                                                           =======
-
-EGET KAPITAL OCH SKULDER (Equity and Liabilities)
-
-Eget kapital (Equity)
-  Aktiekapital                                                xxx
-  Uppskrivningsfond                                           xxx
-  Reservfond                                                  xxx
-  Balanserat resultat                                         xxx
-  Årets resultat                                              xxx
-                                                           -------
-  Summa eget kapital                                           xxx
-
-Obeskattade reserver (Untaxed reserves)*
-  Periodiseringsfonder                                        xxx
-  Ackumulerade överavskrivningar                              xxx
-                                                           -------
-  Summa obeskattade reserver                                   xxx
-
-Avsättningar (Provisions)                                     xxx
-
-Långfristiga skulder (Long-term liabilities)
-  Skulder till kreditinstitut                                 xxx
-                                                           -------
-  Summa långfristiga skulder                                   xxx
-
-Kortfristiga skulder (Current liabilities)
-  Leverantörsskulder                                          xxx
-  Skatteskulder                                               xxx
-  Övriga skulder                                              xxx
-  Upplupna kostnader                                          xxx
-                                                           -------
-  Summa kortfristiga skulder                                   xxx
-
-SUMMA EGET KAPITAL OCH SKULDER                                 xxx
-                                                           =======
-```
-
-*Obeskattade reserver (untaxed reserves) is unique to Swedish accounting -- the portion deferred from taxation (78.4% equity, 21.6% deferred tax at current rate).
-
-## Section 8 -- Bank Reconciliation Patterns
-
-### Swedish Bank Statement Formats
-
-**Swedish Bank Statement Formats**
-
-| Bank | Format | Key Fields |
-| --- | --- | --- |
-| Swedbank | CSV, SIE | Datum, Text, Belopp, Saldo |
-| SEB | CSV, SIE | Bokföringsdag, Text, Belopp, Saldo |
-| Nordea | CSV | Datum, Transaktion, Belopp, Saldo |
-| Handelsbanken | CSV | Datum, Text/Referens, Belopp, Disponibelt saldo |
-| Danske Bank | CSV | Date, Description, Amount, Balance |
-| Länsförsäkringar | CSV | Datum, Text, Belopp |
-
-### SIE Format
-
-- **SIE** — SIE (Standard Import/Export) is the Swedish standard for transferring accounting data between systems. SIE4 files contain complete bookkeeping data and can be imported by all Swedish accounting software (Fortnox, Visma, Björn Lundén, etc.).
-
-### Common Transaction Descriptions
-
-**Common Transaction Descriptions**
-
-| Pattern | Classification |
-| --- | --- |
-| BG (Bankgiro), PG (Plusgiro) | Transfer (check direction) |
-| AUTOGIRO | Direct debit (recurring expense) |
-| SWISH | Mobile payment (check direction) |
-| SKATTEVERKET, SKATTEKONTO | Tax payment |
-| ARBETSGIVARAVG | Employer contribution payment |
-| KORTKÖP, KORTTRANSAKTION | Card purchase (expense) |
-| INSÄTTNING | Deposit (potential income or transfer) |
-| LÖN, LÖNEUTBETALNING | Salary payment |
-| HYRA, LOKALHYRA | Rent payment |
-| RÄNTA | Interest (check debit/credit) |
-| AVGIFT, SERVICEAVGIFT | Bank/service charges |
-| FAKTURA, FAKT NR | Invoice payment (check context) |
-
-## Section 9 -- Micro-Entity / Small Business Simplifications
-
-### Size Categories (ÅRL Chapter 1, Section 3)
-
-- **Smaller company definition** — A company is a "smaller company" (mindre företag) if it does NOT exceed more than one of the listed thresholds for two consecutive financial years. All others are "larger companies" (större företag).  _(ÅRL Chapter 1, Section 3)_
-
-**Size Categories (ÅRL Chapter 1, Section 3)**  _(ÅRL Chapter 1, Section 3)_
-
-| Criterion | Threshold |
-| --- | --- |
-| Average employees | 50 |
-| Balance sheet total | SEK 40,000,000 |
-| Net turnover | SEK 80,000,000 |
-
-### K-Regulation Hierarchy
-
-**K-Regulation Hierarchy**
-
-| Category | Regulation | Who Can Use |
-| --- | --- | --- |
-| K1 | BFNAR 2006:1 (enskild firma) / 2010:1 (ideell) | Sole traders with turnover ≤ SEK 3M; simplified annual accounts |
-| K2 | BFNAR 2016:10 | Smaller companies (AB, HB, EF) that choose simplification |
-| K3 | BFNAR 2012:1 | Default for all companies preparing årsredovisning; mandatory for larger companies |
-| K4 | RFR 2 (IFRS-based) | Listed companies and groups with consolidated reporting |
-
-### K1 Simplifications (Förenklat Årsbokslut)
-
-- **No accruals for small recurring items** — No accruals needed for recurring items < SEK 5,000
-- **Revenue at invoice date** — Revenue at invoice date
-- **Inventory simplified valuation** — Inventory: simplified valuation (latest purchase price × quantity)
-- **Fixed asset immediate write-off threshold** — SEK 25,000 SEK (Fixed assets: immediate write-off if < SEK 25,000 (half a prisbasbelopp))
-- **No formal balance sheet filing** — No formal balance sheet filing (only part of tax return NE)
-
-### K2 Simplifications
-
-- **Straight-line depreciation only** — Straight-line depreciation only
-- **No component approach** — No component approach for assets
-- **No revaluation of assets** — No revaluation of assets
-- **Limited disclosures** — Limited disclosures in notes
-- **No deferred tax** — No deferred tax in balance sheet
-- **Intangible assets capitalisation** — Intangible assets: only acquired intangibles may be capitalised (no internally generated)
-- **Accrual threshold for expenses** — SEK 7,000 SEK (Accrual threshold for expenses (from 2025 K2 update))
-
-## Section 10 -- Interaction with Tax Skills
-
-### Income Tax (Inkomstskatt)
-
-- **Corporate tax rate (bolagsskatt)** — 20.6 % (For AB: corporate tax rate 20.6% (bolagsskatt))
-- **Taxable income basis** — Taxable income starts from accounting result + tax adjustments
-- **Key adjustments** — Key adjustments: excess depreciation (överavskrivning), allocation to periodiseringsfond (tax allocation reserve -- defer up to 25% of profit for 6 years)
-- **Sole trader taxation** — For sole traders: progressive income tax on business profit (after social contributions)
-- **Egenavgifter rate** — approximately 28.97 % (Egenavgifter (self-employed social contributions): approximately 28.97% of profit)
-- **Schablonavdrag home office deduction** — SEK 2,000/year SEK/year (Schablonavdrag (standard deduction) available for home office: SEK 2,000/year)
-- **Cross-reference** — Use the se-income-tax skill for detailed computation
-
-### VAT (Moms)
-
-- **VAT accounts** — VAT accounts: 2610-2650 in BAS
-- **Standard and reduced VAT rates** — 25% standard; 12% (food, hotels); 6% (books, newspapers, public transport) (Standard rate: 25%; Reduced: 12% (food, hotels); 6% (books, newspapers, public transport))
-- **VAT filing frequency** — Monthly filing if turnover > SEK 40M; quarterly if > SEK 1M; annual if ≤ SEK 1M
-- **Cross-reference** — Use the sweden-vat-return skill for filing details
-
-### Employer Contributions (Arbetsgivaravgifter)
-
-- **Employer contributions rate** — 31.42 % (Rate: 31.42% of gross salary (2025))
-- **Declaration and payment** — Declared and paid monthly to Skatteverket via arbetsgivardeklaration
-- **Accounts used** — Recorded in accounts 7510/2731
-- **Reduced contributions** — Reduced contributions for employees born 1938-2006 (different rules apply)
-- **Cross-reference** — Use the se-social-contributions skill for details
-
-### Periodiseringsfond (Tax Allocation Reserve)
-
-- **Deferral limit** — Companies may defer up to 25% of taxable profit to a tax allocation reserve
-- **Reversal period** — Must be reversed within 6 years (FIFO)
-- **Accounting treatment** — Recorded as obeskattad reserv in accounts 2120-2139
-- **Eligible entities** — Available for AB, enskild firma, and handelsbolag
-- **Enskild firma interest charge** — Enskild firma: standard interest charge (schablonintäkt) on fund balance
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+**Facts:** A shop takes cash on Saturday and is closed Sunday; the next day work is performed is Monday.
+
+**Method:** Record the cash receipt no later than Monday. Preserve the cash-report/voucher trail and reconcile the cash balance. A cash movement cannot wait for the ordinary supplier-invoice workflow. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+
+## Case 3 — small-business payment deferral and year end
+
+**Facts:** A sole trader normally has annual net turnover below SEK 3 million, meets the conditions for payment-based deferral, and has an unpaid customer invoice at year end. [BFN threshold](https://www.bfn.se/redovisningsregler/vad-galler-for/enskilda-naringsidkare/)
+
+**Method:** The business may defer ordinary event recording until payment, but must include all unpaid receivables and liabilities at year end before closing. Preserve invoice/voucher information throughout; this is not permission to omit bookkeeping. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+
+## Case 4 — discovered coding error in computerised records
+
+**Facts:** A March posting was coded to the wrong expense category and discovered in April after March was reconciled.
+
+**Method:** Do not overwrite/delete it. Post a separate correction in April with its own voucher and clear link to the original, keeping both records readable. Assess VAT/PAYE/return amendment separately if the error affected a filed result. [BFN source](https://www.bfn.se/wp-content/uploads/vl13-2-bokforing.pdf)
+
+## Case 5 — framework route
+
+**Facts:** A sole trader normally has turnover below SEK 3 million and chooses a simplified annual close. [BFN threshold](https://www.bfn.se/redovisningsregler/vad-galler-for/enskilda-naringsidkare/)
+
+**Method:** Confirm K1 eligibility and prepare simplified annual accounts under the K1 framework. A sole trader not using that route follows the annual-financial-statement/annual-report route applicable to its circumstances; a limited company prepares an annual report and selects K2 only if currently eligible, otherwise K3. [BFN source](https://www.bfn.se/redovisningsregler/vad-galler-for/aktiebolag/) [BFN source](https://www.bfn.se/redovisningsregler/vad-galler-for/enskilda-naringsidkare/)
+
+## When to refuse or refer
+
+- Missing legal-entity identity, financial year, source vouchers, access to original records or a reliable ledger: list missing evidence and do not present a complete close.
+- Unselected framework or uncertain K2 eligibility: obtain the entity-specific BFN route before applying recognition or measurement.
+- Specialised transactions outside the ordinary branches above, including complex revenue contracts, foreign currency, consolidation, audit, insolvency or filing questions: obtain the specific authoritative policy before posting the close.
+- A software migration or foreign archive that cannot preserve readable access and a complete audit trail: resolve the archive conditions before retiring the old system.
+- Missing VAT, payroll or income-tax analysis: keep the accounting working paper separate from the return decision; a ledger correction alone does not amend a filed return.
 
 <!-- openaccountants-cta-block -->
 
