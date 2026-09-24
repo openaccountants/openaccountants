@@ -61,7 +61,7 @@ OpenAccountants is AGPL-3.0. MIT, Apache-2.0, GPL-3.0, and AGPL-3.0 content can 
 
 ## Payday Super Checker
 
-- Repository: [ryanduguid/payday-super-checker](https://github.com/ryanduguid/payday-super-checker)
+- Repository: [ryanduguid/australian-accounting: payday-super-checker](https://github.com/ryanduguid/australian-accounting/tree/main/packages/payday-super-checker)
 - License: MIT
 - Language: English
 - Scope: Checks Australian super contributions against the payday-super deadlines (7 business days from payday, from 1 July 2026) and estimates SG charge exposure on late contributions.
@@ -73,7 +73,7 @@ OpenAccountants is AGPL-3.0. MIT, Apache-2.0, GPL-3.0, and AGPL-3.0 content can 
 
 ## ATO Benchmark Compare
 
-- Repository: [ryanduguid/ato-benchmark-compare](https://github.com/ryanduguid/ato-benchmark-compare)
+- Repository: [ryanduguid/australian-accounting: ato-benchmark-compare](https://github.com/ryanduguid/australian-accounting/tree/main/packages/ato-benchmark-compare)
 - License: MIT
 - Language: English
 - Scope: Compares profit and loss figures against the ATO small business benchmarks locally, with the working shown.
