@@ -3,276 +3,93 @@ name: norway-mva
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Norway MVA return (MVA-melding) for any client. Trigger on phrases like "prepare MVA return", "Norwegian VAT", "MVA-melding", "merverdiavgift", or any request involving Norway VAT filing. Norway is NOT an EU member but IS in the EEA. There are NO intra-community supplies. All goods from EU are imports. ALWAYS read this skill before touching any Norway MVA work.
 version: 2.0
 jurisdiction: "NO"
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-24
+authored_by: OpenAccountants team
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Norway Mva
-
-## Section 1 — Quick reference
-
-**Quick reference fields**
-
-| Field | Value |
-| --- | --- |
-| Country | Norway (Norge) |
-| Tax name | MVA (Merverdiavgift) |
-| Standard rate | 25% |
-| Reduced rates | 15% (food and non-alcoholic beverages), 12% (passenger transport, accommodation, cinema, broadcasting, sports events, amusement parks) |
-| Zero rate | Exports, international transport, newspapers, electric vehicles (until phase-out), certain services to foreign ships/aircraft |
-| Exempt supplies | Financial services, insurance, medical, education, residential rental, cultural events (selected), immovable property (with option to tax) |
-| Return form | MVA-melding |
-| Filing portal | https://www.altinn.no |
-| Authority | Skatteetaten (Norwegian Tax Administration) |
-| Currency | NOK |
-| Filing frequency | Bi-monthly (standard: Jan-Feb, Mar-Apr, etc.), annual (turnover < NOK 1M), weekly (primary industries) |
-| Deadline | 1 month 10 days after period end (e.g., Jan-Feb due 10 April) |
-| Registration threshold | NOK 50,000 in 12 months |
-| Contributor | Open Accountants Skills Registry |
-| Validated by | Pending |
+# Norway VAT return: registration to reconciliation
 
-**Key jurisdictional note:** Norway is NOT in the EU. No intra-community supplies. No VIES. All goods from EU/non-EU are imports. Services from abroad are reverse-charged.
-
-**MVA-melding post codes**
+Figures are for tax year 2026 and guidance was retrieved on 24 September 2026. This Guide is for an ordinary business registered in Norway’s VAT Register. It covers registration, classification control, return preparation, payment and evidence. It does not decide a transaction’s place of supply, a zero-rate/exemption provision, partial deduction, joint registration, VAT compensation, VOEC, customs duty or a foreign-business refund.
 
-| Post | Meaning |
-| --- | --- |
-| 1 | Domestic sales and withdrawals at 25% |
-| 2 | Domestic sales and withdrawals at 15% |
-| 3 | Domestic sales and withdrawals at 12% |
-| 4 | Zero-rated domestic sales |
-| 5 | Exempt sales |
-| 6 | Export sales |
-| 7 | Purchases from abroad (reverse charge) — basis |
-| 8 | Purchases from abroad (reverse charge) — MVA |
-| 9 | Import of goods — basis |
-| 10 | Import of goods — MVA |
-| 11 | Domestic purchases at 25% — deductible input MVA |
-| 12 | Domestic purchases at 15% — deductible input MVA |
-| 13 | Domestic purchases at 12% — deductible input MVA |
-| 14 | Input MVA on imports (post 10 deductible amount) |
+## Rates, threshold and annual-period figures
 
-**Conservative defaults**
+| Item | Current published figure | Use | Source |
+| --- | --- | --- | --- |
+| Registration threshold | NOK 50,000 taxable sales turnover, excluding VAT, in 12 months | Test before ordinary registration. | [Registration](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/) |
+| Normal VAT rate | 25% | Use only after confirming normal-rated Norwegian treatment. | [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/) |
+| Reduced VAT rates | 15% and 12% | Confirm that the actual food/water-wastewater or listed transport/cinema/room category applies. | [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/) |
+| Cash-payment control | NOK 10,000 | A cash purchase at or above this amount can prevent expense and input-VAT deduction. | [Cash purchases](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/best-practices-for-daily-operations/expenses/) |
+| Non-registered foreign-service route | quarterly VAT basis **at least** NOK 2,000 | Apply only after the remotely-deliverable-service conditions are met; use the reverse-tax-liability return. | [Foreign services](https://www.skatteetaten.no/en/rates/vat-rates-for-purchases-of-services-from-abroad-svalbard-and-jan-mayen/) |
+| Ordinary two-month return and payment deadlines | 10 April; 10 June; 31 August; 10 October; 10 December; 10 February | The payment deadline is the same as the filing deadline; check the current calendar where a date falls on a non-working day. | [Statutory deadline guidance (Norwegian)](https://www.skatteetaten.no/rettskilder/type/handboker/skattebetalingshandboken/gjeldende/kapittel-10.-forfall/ID-10-13.001/ID-10-13.005/) |
+| Annual small-enterprise cap | NOK 1 million excluding VAT | Application route: taxable supplies and withdrawals in the calendar year, 12 months' registration and timely prior returns/payments are all required. | [Annual route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) |
+| Annual filing deadlines | 10 March; 10 April for primary industry | Apply only to the matching approved/primary-industry route. | [Annual route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) |
+| Primary-industry other VATable revenue notice | NOK 30,000 | Inform Skatteetaten if the stated condition is met. | [Annual route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/) |
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate | 25% |
-| Unknown purchase status | Not deductible |
-| Unknown counterparty | Domestic Norway |
-| Unknown business-use | 0% |
-| Unknown blocked status | Blocked |
+Official sources and exact locators are in the evidence ledger. A rate table supplies examples, not a legal classification for every supply.
 
-**Red flag thresholds**
+## The method, step by step
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction | NOK 50,000 |
-| HIGH tax-delta | NOK 5,000 |
-| MEDIUM concentration | >40% |
-| MEDIUM defaults | >4 |
-| LOW net position | NOK 100,000 |
+1. **Confirm entity, period and authority.** Record the organisation number, VAT registration effective date, settlement period, prior return and the person preparing the return. Access to complete a return is different from authority to submit it. Check the business’s actual Altinn access package and the submitter’s signing/delegated authority before submission; some roles can complete but not submit. [VAT return access](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/)
+2. **Test registration and retain the transition evidence.** Maintain a rolling schedule of taxable sales turnover, excluding VAT. When registration follows threshold crossing, retain the registration confirmation and the invoice trail. If an invoice was issued before registration, use the source-described credit and replacement-invoice sequence rather than adding VAT informally. [Registration](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/register-change-delete/) and [registration transition](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/new-as-a-business/new-enk/)
+3. **Classify each sale before applying a rate.** Retain contract/order, invoice, supplier/customer identity and location, description, date, VAT-exclusive amount, and the rule supporting taxable, zero-rated, exempt or outside-scope treatment. Zero-rated supplies count toward registration and are reported; exempt supplies have a different deduction consequence. Do not merge both into a generic zero-percent ledger code. [Rates](https://www.skatteetaten.no/en/rates/value-added-tax/) and [zero-rating/exemption](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/how-vat-works/difference-between-exemptions-and-exceptions-from-vat?pageid=197)
+4. **Test input VAT line by line.** Record supplier invoice, business use, VAT amount, deduction conclusion and any mixed-use allocation. A registered business generally deducts input VAT paid on business purchases, subject to the actual use and restriction. Reconcile every claimed line to invoice/import evidence and retain electronic-payment evidence where the cash-payment rule is relevant. [Output/input VAT](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/how-vat-works/) and [cash purchases](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/best-practices-accounting-and-cash-register-systems/best-practices-for-daily-operations/expenses/)
+5. **Treat imports separately.** Do not calculate import VAT from a purchase invoice alone. Check that declaration information on value, transport costs and insurance matches supplier/forwarder evidence. Use the confirmed customs-declaration base: Skatteetaten’s published method adds statistical value to customs duty and other taxes, then applies the supported VAT rate. The purchase invoice date controls accounting-period posting; Norwegian Customs’ shipping date controls the VAT-return period for import VAT. [Imported goods](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/calculating-and-reporting-vat-on-goods-imports/)
+6. **Test foreign services before reverse charging.** This is not a goods-import rule. Establish buyer connection to Norway, remotely deliverable service, Norwegian taxable treatment and stated exceptions. A registered buyer reports the self-assessed output VAT in the ordinary return without a lower threshold. A non-registered buyer uses the reverse-tax-liability VAT return only when that quarter’s VAT basis is **at least NOK 2,000**; retain the quarter calculation and pay/report through that route. A reverse charge does not itself establish full input recovery. [Services from abroad](https://www.skatteetaten.no/en/rates/vat-rates-for-purchases-of-services-from-abroad-svalbard-and-jan-mayen/)
+7. **Reconcile, file and pay.** Calculate the ordinary net position as **output VAT on sales + self-assessed VAT − eligible input VAT**. Reconcile each element to the rate/classification schedule, invoices, customs declaration or foreign-service workpaper; investigate a negative outcome as a refund position rather than silently netting it away. Registered enterprises submit a return even with no VAT activity. Ordinary reporting is generally every other month, with filing and payment due on 10 April, 10 June, 31 August, 10 October, 10 December and 10 February; use the current Tax Administration calendar if the nominal date is a non-working day. Submit using the current service or a compatible accounting system only after the authorised submitter check, then pay from the Altinn payment information at the same deadline. [Ordinary deadline and payment guidance (Norwegian)](https://www.skatteetaten.no/rettskilder/type/handboker/skattebetalingshandboken/gjeldende/kapittel-10.-forfall/ID-10-13.001/ID-10-13.005/), [return service](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/) and [payment route](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/paying-vat/)
+8. **Pay, retain and correct.** Pay using the Altinn payment information at submission. Retain the submitted return, confirmation, KID/payment reference and bank evidence. For an ordinary current return error, preserve the original, calculate the corrected amounts from the reconciled records, then submit a new VAT return for the affected term through the logged-in return service or a compatible accounting system. The most recently submitted return applies; the correction must be submitted within three years of the original filing deadline. For an import declaration error, correct the declaration with the shipping agent or Norwegian Customs before relying on it in the return. Historic general and primary-industry periods before 1 January 2022, and reverse-charge or VAT-compensation periods before 1 January 2023, use the separately documented contact-form routes. [Current ordinary correction method (Norwegian)](https://www.skatteetaten.no/om-skatteetaten/om-oss/serviceerklaring/), [import declaration corrections](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/how-to-correct-errors-in-a-vat-return/) and [historic correction routes](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/)
 
-## Section 2 — Required inputs and refusal catalogue
+## Ask the client first
 
-### Required inputs
+- What is the entity’s registration effective date, settlement period, current Altinn access package and named authorised submitter?
+- What is the rolling taxable-sales-turnover total, excluding VAT, and which invoices make it up?
+- For each unusual sale, what was supplied, where, to whom and under which rate/zero/exemption provision?
+- Are there imported goods, customs declarations and shipping dates that differ from invoice dates?
+- Are there services bought from abroad, Svalbard or Jan Mayen, and what establishes buyer connection, service type and place of supply?
+- Is any input used for exempt, private or mixed activity, or paid in cash at the relevant level?
+- Does the enterprise seek an annual small-enterprise period? Confirm calendar-year taxable supplies and withdrawals are no more than NOK 1 million excluding VAT, at least 12 months’ VAT registration, timely prior returns/payments, the 10 December–1 February application window and actual approval.
 
-**Minimum viable** — bank statement. Banks: DNB, Nordea, SpareBank 1, Handelsbanken, Danske Bank.
+## Worked preparation cases
 
-### Refusal catalogue
+The four cases below are illustrative only. Amounts in equations are assumed NOK amounts and are intentionally shown as bare decimal numerals. They show arithmetic and workflow; they do not decide the rate, deduction or classification of an actual transaction.
 
-- **R-NO-1 — Below threshold** — Trigger: turnover < NOK 50,000. Message: "Below registration threshold."  _(R-NO-1)_
-- **R-NO-2 — Partial deduction** — Trigger: mixed taxable/exempt. Message: "Apportionment required per mval. § 8-2. Flag."  _(mval. § 8-2)_
-- **R-NO-3 — Fellesregistrering (group registration)** — Trigger: VAT group. Message: "Group registration requires specialist. Escalate."  _(R-NO-3)_
-- **R-NO-4 — Svalbard supplies** — Trigger: supplies to/from Svalbard. Message: "Svalbard is outside MVA territory. Specialist rules."  _(R-NO-4)_
+### 1. Threshold-crossing invoice
 
-## Section 3 — Supplier pattern library
+**Facts.** The rolling taxable-sales schedule totals 48000 excluding VAT. A further normal-rated sale is 5000 excluding VAT. Registration follows the threshold crossing.
 
-### 3.1 Banks
+**Method and result.** The schedule becomes 48000 + 5000 = 53000. After registration, preserve the registration confirmation and issue the source-described credit/replacement invoice sequence if the 5000 invoice was originally issued without VAT. At the published 25% normal rate, output VAT is 5000 × 25 ÷ 100 = 1250 and the replacement invoice total is 5000 + 1250 = 6250. This case assumes the normal-rate classification. [Registration transition](https://www.skatteetaten.no/en/business-and-organisation/start-and-run/new-as-a-business/new-enk/) and [rates](https://www.skatteetaten.no/en/rates/value-added-tax/)
 
-**Banks pattern table**
+### 2. Import: confirmed customs base and different dates
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DNB, NORDEA, SPAREBANK 1, HANDELSBANKEN | EXCLUDE | Financial service exempt |
-| RENTER, GEBYRER | EXCLUDE | Interest/fees exempt |
+**Facts.** The purchase invoice is dated 28 February and Norwegian Customs’ shipping date is 3 March. The confirmed customs declaration has statistical value 3000 and customs duty/other taxes 1700; the business has a supported 25% rate and full deduction in this example.
 
-### 3.2 Government
+**Method and result.** Post the purchase using the invoice date, but report import VAT in the period containing the 3 March shipping date. The confirmed import base is 3000 + 1700 = 4700; import VAT is 4700 × 25 ÷ 100 = 1175. Report both the self-assessed import output VAT and the supported input side. The customs declaration, not this example, controls the real base and any deduction restriction. [Imported goods](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/foreign/import/calculating-and-reporting-vat-on-goods-imports/)
 
-**Government pattern table**
+### 3. Completion access without submission authority
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SKATTEETATEN | EXCLUDE | Tax payment |
-| NAV | EXCLUDE | Social security |
-| BRØNNØYSUNDREGISTRENE | EXCLUDE | Company registry |
+**Facts.** A bookkeeper can complete the VAT return in Altinn but lacks signing/delegated authority to submit it.
 
-### 3.3 Utilities
+**Method and result.** Complete and reconcile the draft, but stop before submission. An authorised person or a valid delegation must submit. Save the access check with the return workpaper. [VAT-return access](https://www.skatteetaten.no/en/business-and-organisation/vat-and-duties/vat/vat-return/)
 
-**Utilities pattern table**
+### 4. Ordinary-return correction
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| HAFSLUND, STATKRAFT, FJORDKRAFT | Domestic 25% | Electricity |
-| TELENOR, TELIA, ICE | Domestic 25% | Telecoms |
+**Facts.** A submitted ordinary return omitted 1000 of output VAT. Reconciled records support the correction and the original filing deadline was less than three years ago.
 
-### 3.4 SaaS from abroad (reverse charge — all foreign suppliers, EU and non-EU alike)
+**Method and result.** Preserve the submitted return and correction workpaper. Recalculate the affected term and submit a new return through the logged-in service or a compatible accounting system. The latest return applies. Recompute the whole payment/refund position; 1000 is the assumed omitted output amount, not a standalone payment instruction. [Current ordinary correction method (Norwegian)](https://www.skatteetaten.no/om-skatteetaten/om-oss/serviceerklaring/)
 
-**SaaS from abroad pattern table**
+## When to refuse or refer
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META | Reverse charge 25% (post 7/8) | Norway treats EU same as non-EU |
-| ZOOM, SLACK, NOTION, ANTHROPIC, OPENAI | Reverse charge 25% (post 7/8) | Same |
-| AWS, STRIPE, ATLASSIAN | Reverse charge 25% (post 7/8) | Even if billed from EU |
+- The return needs a transaction-specific place-of-supply, exemption, zero-rating or partial-deduction conclusion.
+- The matter concerns property adjustments, financial services, joint registration, VAT compensation, VOEC, customs duty or a foreign-business refund.
+- The business has no authorised Altinn submitter, has an estimated assessment, or needs an historic correction route not available in the live service.
+- Customs/import evidence, foreign-service facts, supplier invoices or VAT-registration status is incomplete.
 
-### 3.5 Food
+## Sources
 
-**Food pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| REMA 1000, KIWI, MENY, COOP, BUNNPRIS | Domestic 15% for food | Default BLOCK as personal provisioning |
-| RESTAURANT | Domestic 25% (restaurant service) | Entertainment: limited deductibility |
-
-### 3.6 Internal transfers
-
-**Internal transfers pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OVERFØRING EGEN KONTO | EXCLUDE |  |
-| LØNN, SALARY | EXCLUDE |  |
-
-## Section 4 — Worked examples
-
-### Example 1 — Foreign SaaS reverse charge (treats EU and non-EU same)
-
-**Input:** `GOOGLE IRELAND ; DEBIT ; NOK 8,500`
-**Treatment:** Reverse charge at 25%. Post 7 = NOK 8,500. Post 8 = NOK 2,125. Input deductible. Net zero.
-
-### Example 2 — Food purchase at 15%
-
-**Input:** `REMA 1000 ; DEBIT ; NOK 1,150`
-**Treatment:** Food at 15%. Default BLOCK as personal unless business (hospitality).
-
-### Example 3 — Export
-
-**Input:** `UK BUYER LTD ; CREDIT ; NOK 100,000`
-**Treatment:** Post 6. Zero-rated. Full input recovery.
-
-### Example 4 — Accommodation at 12%
-
-**Input:** `HOTEL BRISTOL ; DEBIT ; NOK 2,240`
-**Treatment:** Accommodation 12%. Net = 2,000. MVA = 240. Post 13 for input.
-
-### Example 5 — Entertainment
-
-**Input:** `RESTAURANT MAAEMO ; DEBIT ; NOK 5,000`
-**Treatment:** Entertainment. Limited deductibility. Conservative default: 0%.
-
-### Example 6 — Import of goods
-
-**Input:** `CUSTOMS — import machinery ; DEBIT ; NOK 500,000 + MVA NOK 125,000`
-**Treatment:** Post 9 = 500,000. Post 10 = 125,000. Post 14 = 125,000 (deductible).
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 25% (mval. § 5-1)
-
-- **Standard rate 25%** — Standard rate 25% (mval. § 5-1)  _(mval. § 5-1)_
-
-### 5.2 Reduced rate 15% — food and non-alcoholic beverages (§ 5-2)
-
-- **Reduced rate 15% — food and non-alcoholic beverages** — Reduced rate 15% — food and non-alcoholic beverages (§ 5-2)  _(§ 5-2)_
-
-### 5.3 Reduced rate 12% — transport, accommodation, cinema, broadcasting, sports (§ 5-3)
-
-- **Reduced rate 12% — transport, accommodation, cinema, broadcasting, sports** — Reduced rate 12% — transport, accommodation, cinema, broadcasting, sports (§ 5-3)  _(§ 5-3)_
-
-### 5.4 Zero rate — exports, international transport, newspapers, electric vehicles
-
-- **Zero rate categories** — Zero rate — exports, international transport, newspapers, electric vehicles
-
-### 5.5 Exempt — financial, insurance, medical, education, residential rental, cultural (selected)
-
-- **Exempt categories** — Exempt — financial, insurance, medical, education, residential rental, cultural (selected)
-
-### 5.6 Reverse charge — ALL services from abroad (EU and non-EU alike, mval. § 3-30, § 11-3)
-
-- **Reverse charge — all services from abroad** — Reverse charge — ALL services from abroad (EU and non-EU alike, mval. § 3-30, § 11-3)  _(mval. § 3-30, § 11-3)_
-
-### 5.7 Import of goods — MVA at customs or via postponed accounting
-
-- **Import of goods treatment** — Import of goods — MVA at customs or via postponed accounting
-
-### 5.8 Blocked — entertainment, personal use, vehicle (limited)
-
-- **Blocked categories** — Blocked — entertainment, personal use, vehicle (limited)
-
-### 5.9 Norway-EU: no intra-community. EU goods = imports.
-
-- **Norway-EU treatment** — Norway-EU: no intra-community. EU goods = imports.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Vehicle costs — limited recovery, flag
-
-- **Vehicle costs** — Vehicle costs — limited recovery, flag
-
-### 6.2 Voluntary registration — for otherwise exempt activities (property), flag
-
-- **Voluntary registration** — Voluntary registration — for otherwise exempt activities (property), flag
-
-### 6.3 Mixed-use — apportionment, flag
-
-- **Mixed-use** — Mixed-use — apportionment, flag
-
-### 6.4 Primary industries — weekly filing, flag
-
-- **Primary industries** — Primary industries — weekly filing, flag
-
-## Section 7 — Excel working paper template
-
-Standard layout. Column H accepts MVA-melding post codes.
-
-## Section 8 — Bank statement reading guide
-
-**Format:** DNB/Nordea CSV, DD.MM.YYYY, NOK. **Language:** Norwegian (Bokmal/Nynorsk).
-**All foreign suppliers:** Reverse charge regardless of EU/non-EU origin.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 MVA number — "Norwegian org.nr. + MVA suffix?"
-
-MVA number — "Norwegian org.nr. + MVA suffix?"
-
-### 9.2 Filing frequency — bi-monthly (standard)
-
-Filing frequency — bi-monthly (standard)
-
-### 9.3 Prior credit — always ask
-
-Prior credit — always ask
-
-## Section 10 — Reference material
-
-### Sources
-
-- **Sources list** — 1. Merverdiavgiftsloven (mval.) LOV-2009-06-19-58 2. Merverdiavgiftsforskriften (fmva.) 3. Altinn — https://www.altinn.no  _(LOV-2009-06-19-58)_
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to 10-section architecture.
-- **v1.0:** Initial skill.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The exact captured official pages, locators and claim-level coverage are in `quality-evidence.json` and `sources.json`.
 
 <!-- openaccountants-cta-block -->
 
