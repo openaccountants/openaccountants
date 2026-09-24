@@ -5,7 +5,7 @@ description: >
 version: 1.1
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-09-24
 review_status: pending_review
 category: international
 tier: 2
@@ -362,7 +362,7 @@ If the client provides only financial statements and an ABN:
 | GST registration threshold (NFP) | $150,000 | $150,000 |
 | DGR gift minimum | $2 (removed from 1 Jul 2026, backdated to 1 Jul 2024) | none |
 | Contribution minor benefit test | > $150 contribution; benefit < lesser of 20% and $150 | same |
-| Super guarantee rate (see au-super-guarantee) | 11.5% | 12% |
+| Super guarantee rate (see au-super-guarantee) | 12% | 12% |
 
 ### Primary sources (verified 20 August 2026)
 
