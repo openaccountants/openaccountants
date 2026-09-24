@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T09:14:33+00:00",
+ "generated_at": "2026-09-24T08:37:47+00:00",
  "counts": {
   "guides": 2019,
   "jurisdictions": 245,
@@ -17991,8 +17991,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-23"
   },
   {
    "slug": "es-corporate-tax",
@@ -18075,8 +18075,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-23"
   },
   {
    "slug": "es-social-contributions",
@@ -18159,8 +18159,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-23"
   },
   {
    "slug": "spain-formation",
