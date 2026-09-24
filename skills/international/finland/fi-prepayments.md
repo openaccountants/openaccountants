@@ -3,8 +3,9 @@ name: fi-prepayments
 description: Use this skill whenever asked about Finland prepayment tax (ennakkovero) for self-employed individuals. Trigger on phrases like "ennakkovero", "ennakkoverot", "prepayment tax Finland", "Finnish tax prepayments", "residual tax Finland", "jäännösvero", "tax instalments Finland", "OmaVero prepayment", "prepayment certificate", "ennakkoperintä", or any question about paying tax during the year as a Finnish self-employed person. Covers prepayment calculation, payment schedules, adjustment requests, residual tax, and penalties. ALWAYS read this skill before advising on Finnish tax prepayments.
 version: 1.0
 jurisdiction: FI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-24
+authored_by: OpenAccountants team
 review_status: pending_review
 depends_on:
   - fi-income-tax
@@ -13,251 +14,78 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# FI Prepayments
+# Finland prepayments — 2026 operational method
 
-## Section 1 -- Quick Reference
+**Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation. Sources were retrieved from the Finnish Tax Administration (Vero) for this editorial update.
 
-**Section 1 -- Quick Reference**
+Use this method for tax year 2026 for ordinary Finnish income-tax prepayments of an individual, self-employed person or partnership partner. It turns a complete tax-year forecast and a MyTax decision into a controlled request, payment and monitoring process. It does not calculate final income tax, decide foreign income, allocate partnership profit, amend a completed assessment or calculate a company’s tax liability.
 
-| Field | Value |
+## Key routes
+
+| Fact | Operational route |
 | --- | --- |
-| Country | Finland (Republic of Finland / Suomen tasavalta) |
-| Tax | Prepayment Tax (ennakkovero / förskottsskatt) |
-| Currency | EUR only |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Act on Tax Prepayments (ennakkoperintälaki 1118/1996); Income Tax Act (tuloverolaki 1535/1992) |
-| Tax authority | Finnish Tax Administration (Verohallinto / Vero) |
-| Portal | OmaVero (https://www.vero.fi/omavero) |
-| Applies to | Self-employed (elinkeinonharjoittaja / ammatinharjoittaja), rental income, capital gains, other income not subject to withholding |
-| Validated by | Pending |
-| Validation date | Pending |
-| Skill version | 1.0 |
+| Small-scale business income can be included correctly on a wage tax card | Change the tax-card details; do not duplicate it as a separate prepayment. |
+| Business, rental, asset-sale or other income needs advance collection | Request or adjust prepayment in MyTax using forecast income and related deductions. |
+| New business | Submit an estimate of income, expenses and operating profit in MyTax or with the start-up notification. |
+| Existing forecast differs | Request a change. The old decision and instalments remain payable until a new decision is issued. |
+| Tax year has ended and advances are short | Request additional prepayment before paying it, or the shortfall is back tax after assessment. |
 
-### Key Terms
+[Tax prepayment — Vero](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/) and [instructions for making prepayments](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/)
 
-**Key Terms**
+## Ask the client first
 
-| Finnish Term | English | Meaning |
+- Latest MyTax prepayment decision, tax year, instalments, due dates, bank reference and payment history.
+- Full-year forecast, clearly separating actual year-to-date results from remaining assumptions.
+- Business revenue, deductible costs, wages, start-up grants and other income that affects the taxpayer’s prepayment.
+- Rental, asset-sale or investment records where those items belong in the forecast; do not calculate their tax treatment from this method.
+- Whether the taxpayer has a current tax card route, a prepayment-register entry, a filed tax return or a completed assessment.
+
+## The method, step by step
+
+1. **Identify the taxpayer and payment route.** A prepayment-register entry does not create the prepayment decision. An entrepreneur on that register must request the decision and pay current-year instalments. The register normally means a customer can pay the work invoice without withholding; it does not replace the entrepreneur’s own prepayment duty. [Vero: prepayment register](https://vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/)
+2. **Build the full-year forecast.** Reconcile ledgers, invoices, withholding certificates and deduction evidence. For self-employed people, include taxable business income and other income such as wages and start-up grants. For partnership partners, include the profit share and other income. Record each forecast assumption and preserve the source record. [Vero: instructions for making prepayments](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/)
+3. **Request or change the decision.** Submit the forecast income and deductions in MyTax. A new entrepreneur supplies estimated income, expenses and operating profit. MyTax issues the prepayment decision showing instalments, due dates and payment instructions. Compare actual results with the forecast during the year and request a change when they diverge; more than one change may be requested. [Vero: tax prepayment](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/)
+4. **Pay the decision, not a self-selected amount.** The normal due date is the 23rd of the month, moving to the next business day if it falls on a weekend or public holiday. Use the MyTax precompleted payment details or the decision’s correct reference in online banking. Until a new decision arrives, pay the instalment in the previous decision. [Vero: instructions for making prepayments](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/)
+5. **Control changes and records.** Archive the submitted request, decision, payment confirmation, forecast version and supporting evidence. At each review, compare actual income against the forecast and test whether a tax-card change, prepayment change or no action is appropriate. Do not reduce or skip an imposed instalment while waiting for MyTax’s replacement decision.
+6. **Handle a year-end shortfall through the right route.** Before assessment, request additional prepayment separately and use the payment information in that decision. If advances do not cover the year and no additional prepayment is made, Vero assesses back tax and interest under the applicable rules. Check MyTax and the current Vero path for the taxpayer’s tax year before choosing any tax-year-specific additional-payment due date. [Vero: instructions for making prepayments](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/)
+7. **Complete the annual reconciliation.** For an individual, review the pre-completed tax return, correct supported omissions, and reconcile final assessment with advance payments. Excess advances become a tax refund; an assessed shortage is back tax. [Vero: individual prepayments](https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/)
+
+## Request in MyTax
+
+Under Individual income tax, open Tax cards and prepayments, choose the relevant tax year, and select Request tax prepayment or Change the prepayment. Review basic details and pre-completed income/deductions. Enter new business, rental or capital-gain income under Other income, add supported other deductions, and select payment preferences. Preview the request, submit it and save the acknowledgement; an unfinished saved request is not submitted. Seasonal businesses can request instalments during their active months; monthly payment can also be selected. [Vero request instructions](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-to-request-prepayment-entrepreneurs-and-individual-taxpayers/)
+
+## Instalment control
+
+For individuals and self-employed people, the ordinary total minimum is €170. Below that amount it is collected through final assessment. The default schedule is below; the actual decision, timing of changes and any selected monthly or seasonal arrangement control. [Vero schedule](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/)
+
+| Annual amount | Default instalments | Months |
 | --- | --- | --- |
-| Ennakkovero | Prepayment tax | Tax paid in advance during the tax year |
-| Ennakkoperintä | Tax prepayment / withholding | The system of collecting tax before final assessment |
-| Jäännösvero | Residual tax | Tax still owed after prepayments are applied to the final assessment |
-| Veronpalautus | Tax refund | Refund if prepayments exceed final tax liability |
-| Ennakkoverolippu | Prepayment tax slip | The notice showing prepayment amounts and due dates |
-| Huojennus | Reduction / relief | Applying for reduced prepayments |
+| €170–€500 | 2 | March and September  [Vero schedule](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
+| More than €500 to €1,700 | 3 | February, July and November  [Vero schedule](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
+| More than €1,700 to €10,000 | 6 | February, April, June, August, October and December  [Vero schedule](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
+| Above €10,000 | 12 | January through December  [Vero schedule](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) |
 
-## Section 2 -- Who Must Pay Ennakkovero
+[Vero instalment rules](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/). Companies have different minimums and accounting-period rules; obtain the corporate instructions rather than use this table.
 
-### 2.1 Mandatory
+## Additional prepayment
 
-**2.1 Mandatory**
+An individual or self-employed person can either request an exact additional amount or report corrected full-year income and deductions for MyTax to calculate it. The minimum is €170; smaller shortfalls are back tax after assessment. Submit the request before sending money, then use the decision’s amount, reference and due date. MyTax online payment debits immediately. The retrieved additional-prepayment walkthrough still illustrates the previous tax year: select the actual year concerned and confirm its offered due date and interest in MyTax. Do not transpose that example’s January dates or interest assumptions to a future tax year. [Vero additional-prepayment instructions](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/faq/the-self-employed-and-other-individual-taxpayers-requests-in-mytax/)
 
-| Category | Obligation |
-| --- | --- |
-| Self-employed sole traders (toiminimiyrittäjä) | Must pay ennakkovero on estimated business income |
-| Freelancers (ammatinharjoittaja) | Must pay ennakkovero on estimated professional income |
-| Rental income recipients | Must pay if rental income not covered by employer withholding adjustment |
-| Capital gains recipients | Must pay on estimated gains if significant |
-| Partners in partnerships (Ay/Ky) | Must pay on estimated share of partnership income |
+## Worked decision cases
 
-### 2.2 Not Required
-
-**2.2 Not Required**
-
-| Category | Reason |
-| --- | --- |
-| Employees (only wage income) | Employer withholding (ennakonpidätys) covers tax |
-| First-year entrepreneurs with no prior estimate | Verohallinto cannot assess; must request prepayment registration |
-
-## Section 3 -- How Ennakkovero Is Calculated
-
-### 3.1 Basis of Calculation
-
-- **Prior year final assessment** — If you filed a tax return for the prior year, Verohallinto uses that as the baseline and adjusts for inflation and any known changes.  _(Section 3.1)_
-- **Estimated income** — For new entrepreneurs, you provide an estimate of expected annual income and expenses to Verohallinto via OmaVero.  _(Section 3.1)_
-- **Taxpayer request** — You can request a change at any time during the year if your income projection changes.  _(Section 3.1)_
-
-### 3.2 Components Included
-
-**3.2 Components Included**
-
-| Component | Included |
-| --- | --- |
-| State income tax (progressive rates) | Yes |
-| Municipal tax (kunnallisvero) | Yes |
-| Church tax (if applicable) | Yes |
-| Health insurance contributions | Yes |
-| Capital income tax (30%/34%) | Yes, on estimated capital income portion |
-| YEL pension contributions | No -- paid separately to pension insurance company |
-| VAT | No -- separate system |
-
-### 3.3 New Entrepreneurs
-
-- Register for prepayment via OmaVero or contact Verohallinto
-- Provide estimated annual revenue and expenses
-- Verohallinto issues a prepayment decision (ennakkoveropäätös) with amounts and due dates
-- If no estimate provided, Verohallinto may set prepayments based on industry averages
-
-## Section 4 -- Payment Schedule
-
-### 4.1 Standard Schedule
-
-**4.1 Standard Schedule**
-
-| Total Annual Ennakkovero | Number of Instalments | Typical Due Dates |
+| Case | Facts | Expected result |
 | --- | --- | --- |
-| Under €170 | 1 instalment | March |
-| €170 -- €500 | 2 instalments | March and September |
-| Over €500 | Up to 12 monthly instalments | 23rd of each month (or next business day) |
+| New sole trader | Forecast revenue €60,000, supported costs €20,000, operating profit €40,000 and wages €10,000. | Submit the business forecast and other income in MyTax. Use the issued decision; this guide does not calculate final tax.  [Vero payment rules](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/) |
+| Profit forecast falls | Current decision requires €600 on the 23rd. Forecast profit falls before the due date. | Request a change. Pay €600 until a replacement decision is issued; do not substitute €400 unilaterally.  [Vero payment rules](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/) |
+| Register is mistaken for a decision | Consultant in the prepayment register invoices €2,000 for work. | Customer normally pays without withholding, but consultant still requests and pays own prepayments.  [Vero payment rules](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/) |
+| Shortfall after year end | Individual identifies an estimated €600 shortage before assessment. | Request additional prepayment, then pay the amount and reference in the decision.  [Vero payment rules](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/) |
+| Seasonal income | Business expects income only in June–August. | Request a decision reflecting the forecast; follow its issued instalments rather than assuming twelve equal payments. |
 
-Prepayments are divided into instalments across the tax year. The number of instalments depends on the total amount:
+## When to refuse or refer
 
-Most self-employed with meaningful income pay monthly instalments, typically due on the 23rd of each month.
+- Refer a corporate or cross-border calculation, partnership allocation, rental or capital-gain computation, a completed assessment appeal, payment difficulty, imminent due date where a new decision is not yet available, or any discrepancy between MyTax and the documented forecast. Preserve the decision and supporting records while the specific route is resolved.
 
-### 4.2 Payment Methods
-
-**4.2 Payment Methods**
-
-| Method | Detail |
-| --- | --- |
-| OmaVero | View amounts, due dates, and pay directly |
-| Bank transfer | Using the reference number from OmaVero / prepayment decision |
-| Direct debit (suoramaksu) | Can be set up via OmaVero for automatic monthly payments |
-| e-Invoice | Available through some banks |
-
-## Section 5 -- Adjusting Prepayments During the Year
-
-### 5.1 When to Adjust
-
-- Income significantly higher or lower than estimated
-- Business started or ceased mid-year
-- Major deductible expense occurred (e.g., large equipment purchase)
-- Change in municipality or church membership
-- YEL income changed significantly
-
-### 5.2 How to Adjust
-
-1. Log in to OmaVero
-2. Navigate to "Prepayment tax" (Ennakkovero)
-3. Submit a new estimate of annual income and expenses
-4. Verohallinto recalculates and issues a revised prepayment decision
-5. Remaining instalments are adjusted; already-paid amounts are credited
-6. No fee or penalty for requesting an adjustment
-
-### 5.3 Important Notes
-
-- Adjustments can be made multiple times during the year
-- Reducing prepayments too aggressively may result in residual tax + interest
-- Increasing prepayments voluntarily is always possible
-- Changes typically take effect within a few business days
-
-## Section 6 -- Residual Tax and Refunds
-
-### 6.1 After Filing
-
-After the annual tax return is filed and assessed (typically by October-November):
-
-**6.1 After Filing**
-
-| Scenario | Outcome |
-| --- | --- |
-| Prepayments < final tax liability | Residual tax (jäännösvero) is due |
-| Prepayments > final tax liability | Tax refund (veronpalautus) is issued |
-| Prepayments = final tax liability | No further action |
-
-### 6.2 Residual Tax (Jäännösvero)
-
-**6.2 Residual Tax (Jäännösvero)**
-
-| Item | Detail |
-| --- | --- |
-| Notification | Via OmaVero and/or mail |
-| Payment deadline | Typically December of the assessment year or February of the following year (in two instalments if >€170) |
-| Interest | Late payment interest at base rate + 7 percentage points (Verohallinto publishes the annual rate) |
-| Penalty-free threshold | Minor residual tax (under certain limits) may not incur interest |
-
-### 6.3 Tax Refund (Veronpalautus)
-
-**6.3 Tax Refund (Veronpalautus)**
-
-| Item | Detail |
-| --- | --- |
-| Timing | Typically paid in August-December of the year following the tax year |
-| Method | Direct deposit to bank account registered in OmaVero |
-| Interest on refund | Verohallinto pays a small credit interest on overpaid amounts |
-
-## Section 7 -- Penalties for Underpayment
-
-**Section 7 -- Penalties for Underpayment**
-
-| Situation | Consequence |
-| --- | --- |
-| Insufficient prepayments (honest estimate) | Residual tax + interest at prescribed rate |
-| No prepayment registration at all | Verohallinto may impose prepayments retrospectively; penalty interest applies |
-| Deliberate underestimation | Tax increase (veronkorotus) of 2-10% on additional tax may apply |
-| Late payment of instalment | Interest accrues from due date; persistent non-payment may lead to enforcement (ulosotto) |
-
-## Section 8 -- Worked Examples
-
-### Example 1 -- Standard Annual Cycle
-
-**Situation:** Freelance designer, second year of business. Prior year final tax was €12,000.
-
-1. **January:** Verohallinto issues 2025 prepayment decision based on 2024 final tax. Monthly instalments of ~€1,000, due 23rd of each month.
-2. **June:** Business is slower than expected. Designer estimates 2025 income will be 30% lower. Submits adjustment via OmaVero.
-3. **July:** Revised decision: remaining monthly instalments reduced to ~€583.
-4. **April 2026:** Files 2025 tax return showing final tax of €9,500.
-5. **Assessment:** Total prepayments made = €8,498 (6 × €1,000 + 6 × €583). Residual tax = €1,002, due in two instalments.
-
-### Example 2 -- First-Year Entrepreneur
-
-**Situation:** Software consultant starts business in March 2025. Estimates €50,000 gross revenue, €10,000 expenses.
-
-1. **March:** Registers for ennakkovero via OmaVero. Provides estimate: net income €40,000.
-2. **March:** Verohallinto issues prepayment decision: approximately €10,000-€12,000 total for the year, payable in 10 monthly instalments (March-December).
-3. **Filing 2026:** Actual net income was €45,000. Small residual tax due.
-
-## Section 9 -- Interaction with Other Taxes
-
-**Section 9 -- Interaction with Other Taxes**
-
-| System | Interaction |
-| --- | --- |
-| Employer withholding (ennakonpidätys) | If self-employed person also has employment income, employer withholding reduces the amount of ennakkovero needed |
-| YEL pension insurance | Paid separately; not included in ennakkovero but is tax-deductible |
-| VAT (ALV) | Completely separate system; VAT payments and refunds do not affect ennakkovero |
-| Municipal tax | Included in ennakkovero calculation |
-
-## Section 10 -- OmaVero Quick Guide
-
-### Key Actions in OmaVero for Prepayments
-
-**Key Actions in OmaVero for Prepayments**
-
-| Action | Path |
-| --- | --- |
-| View prepayment decision | OmaVero → Ennakkovero → Current year |
-| Request adjustment | OmaVero → Ennakkovero → Muuta ennakkoveroa (Change prepayment) |
-| View payment schedule | OmaVero → Ennakkovero → Maksuerät (Instalments) |
-| Pay ennakkovero | OmaVero → Maksaminen (Payments) |
-| Set up direct debit | OmaVero → Maksaminen → Suoramaksu |
-| View residual tax | OmaVero → Verotuspäätös (Tax assessment decision) |
-| Check refund status | OmaVero → Veronpalautus (Tax refund) |
-
-## Prohibitions
-
-- NEVER treat ennakkovero payments as a deductible expense -- they are a credit against final tax liability
-- NEVER advise skipping prepayment registration -- penalties and interest will apply
-- NEVER assume prior year amounts are correct for current year without checking
-- NEVER ignore the possibility of adjusting prepayments when income changes significantly
-- NEVER present calculations as definitive -- always label as estimated
-- NEVER advise on corporate (Oy) or partnership (Ky/Ay) prepayment tax -- different rules apply
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Official sources: [Vero tax prepayment](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/); [Vero instructions for making prepayments](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/); [Vero prepayment register](https://vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/).
 
 <!-- openaccountants-cta-block -->
 
