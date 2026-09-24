@@ -2,659 +2,105 @@
 name: se-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Swedish VAT return (momsdeklaration) for a self-employed individual or small business in Sweden. Trigger on phrases like "prepare VAT return", "do the Swedish VAT", "momsdeklaration", "moms", "skattedeklaration", or any request involving Swedish VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Sweden only and only standard-registered businesses. VAT groups, fiscal representatives, and flat-rate schemes are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Swedish VAT work.
 jurisdiction: SE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-24
+authored_by: OpenAccountants team
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# sweden-vat-return
+# Sweden VAT return (`momsdeklaration`) — 2026 editorial draft
 
-## Sweden VAT Return Skill (Momsdeklaration) v2.0
+**Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation.
 
-## Section 1 — Quick reference
+Figures are for tax year 2026. This Guide is an operational method for an ordinary business registered for Swedish VAT. It prepares a supported VAT return; it does not decide a transaction-specific exemption, place of supply, partial-deduction calculation, VAT group, margin scheme, property option, IOSS/OSS election or deemed-supplier analysis.
 
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
+## Key figures and return fields
 
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Sweden (Konungariket Sverige) |
-| Standard rate | 25% |
-| Reduced rates | 12% (food, restaurant/catering, hotel accommodation), 6% (books, newspapers, cultural events, passenger transport, sporting events) |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods, prescribed medicines, certain medical aids) |
-| Return form | Skattedeklaration / Momsdeklaration (ruta 05–49) |
-| Filing portal | https://www.skatteverket.se (Mina sidor) |
-| Authority | Skatteverket (Swedish Tax Agency) |
-| Currency | SEK only |
-| Filing frequencies | Monthly (turnover > SEK 40M); Quarterly (SEK 1M–40M); Annual (< SEK 1M) |
-| Deadline | Monthly: 12th of second month after period (26th for Dec); Quarterly: 12th of second month after quarter; Annual: part of the income tax return |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Open Accountants |
-| Validated by | Pending — requires auktoriserad revisor validation |
-| Validation date | Pending |
-
-**Key momsdeklaration ruta (boxes)**
-
-| Ruta | Meaning |
-| --- | --- |
-| 05 | Taxable sales excl. VAT (momspliktig försäljning) — total |
-| 06 | Taxable sales excl. VAT at 25% |
-| 07 | Taxable sales excl. VAT at 12% |
-| 08 | Taxable sales excl. VAT at 6% |
-| 10 | Output VAT at 25% |
-| 11 | Output VAT at 12% |
-| 12 | Output VAT at 6% |
-| 20 | EU goods acquisitions excl. VAT (gemenskapsinternt förvärv) |
-| 21 | EU services purchased excl. VAT (where buyer accounts for VAT) |
-| 22 | Purchases of goods from outside EU excl. VAT |
-| 23 | Purchases of services from outside EU excl. VAT |
-| 24 | Domestic purchases where buyer accounts for VAT (construction reverse charge) |
-| 30 | Output VAT on acquisitions (ruta 20–24) at 25% |
-| 31 | Output VAT on acquisitions at 12% |
-| 32 | Output VAT on acquisitions at 6% |
-| 35 | EU supplies of goods excl. VAT (gemenskapsintern leverans) |
-| 36 | EU supplies of services excl. VAT (where buyer accounts for VAT) |
-| 37 | Exports excl. VAT |
-| 38 | Intermediary acquisitions (mellanman) |
-| 39 | Other supplies exempt or outside scope |
-| 40 | Exempt turnover (momsfri omsättning) |
-| 48 | Input VAT (ingående moms) — total deductible |
-| 49 | Net VAT payable / refundable (derived: output − input) |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 25% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Sweden |
-| Unknown B2B vs B2C status for EU customer | B2C, charge 25% |
-| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU (ruta 23/30) |
-| Unknown blocked-input status (representation, personal use) | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | SEK 30,000 |
-| HIGH tax-delta on a single conservative default | SEK 2,000 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | SEK 50,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Swedish or international business bank: Handelsbanken, SEB, Swedbank, Nordea SE, Danske Bank SE, Länsförsäkringar, Revolut Business, Wise Business, or any other.
-
-**Recommended** — sales invoices for the period (especially intra-EU B2B supplies and exports), purchase invoices for any input VAT claim above SEK 2,000, the client's organisationsnummer and momsregistreringsnummer.
-
-**Ideal** — complete invoice register, prior period momsdeklaration, reconciliation of any carry-forward.
-
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available → hard stop. If bank statement only → proceed but record in the reviewer brief: "This momsdeklaration was produced from bank statement alone. The reviewer must verify input VAT claims above SEK 2,000 are supported by compliant invoices and reverse-charge classifications match."
-
-### Sweden-specific refusal catalogue
-
-These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13. If any trigger fires, stop, output the refusal message verbatim, end the conversation.
-
-- **R-SE-1 — VAT group (mervärdesskattegrupp)** — VAT groups require consolidation across all group members. Out of scope. (Trigger: client is part of a VAT group.)
-- **R-SE-2 — Fiscal representative** — Non-resident registrations with fiscal representatives have specific obligations beyond this skill. (Trigger: non-resident supplier with a fiscal representative in Sweden.)
-- **R-SE-3 — Partial exemption (proportionell avdragsrätt)** — You make both taxable and exempt supplies. Input VAT must be apportioned under ML kapitel 13 §29-30. Please use an auktoriserad revisor to confirm the pro-rata rate. (Trigger: client makes both taxable and exempt supplies (financial services, medical, education, residential rent) and exempt proportion is non-de-minimis.)
-- **R-SE-4 — Flat-rate scheme (schablonavdrag)** — Flat-rate schemes require sector-specific calculations beyond this skill. (Trigger: client uses a flat-rate deduction scheme (e.g. forestry/agriculture).)
-- **R-SE-5 — Real estate option to tax (frivillig skattskyldighet)** — Frivillig skattskyldighet transitions for real estate require complex capital goods scheme adjustments. Please use an auktoriserad revisor. (Trigger: client is a property owner transitioning into or out of the optional VAT registration for commercial property.)
-- **R-SE-6 — Margin scheme (VMB vinstmarginalbeskattning)** — Margin scheme transactions require transaction-level margin computation. Out of scope. (Trigger: client deals in second-hand goods, art, antiques, or travel agent packages under the margin scheme.)
-- **R-SE-7 — Income tax instead of moms** — This skill handles momsdeklaration only. For Swedish income tax, use the appropriate income tax skill. (Trigger: user asks about income tax return, not momsdeklaration.)
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-This is the deterministic pre-classifier. Match by case-insensitive substring. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Swedish banks (fees exempt — exclude)
-
-**Swedish banks table**
-
-| Pattern | Treatment | Notes |
+| Item | Current value or route | Official source |
 | --- | --- | --- |
-| HANDELSBANKEN, SHB | EXCLUDE for bank charges/fees | Financial service, exempt under ML kap 10 §33 |
-| SEB, SKANDINAVISKA ENSKILDA | EXCLUDE for bank charges/fees | Same |
-| SWEDBANK, SPARBANKEN | EXCLUDE for bank charges/fees | Same |
-| NORDEA, NORDEA SE | EXCLUDE for bank charges/fees | Same |
-| DANSKE BANK SE, LÄNSFÖRSÄKRINGAR BANK | EXCLUDE for bank charges/fees | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for fees | Check for separate taxable subscription invoices |
-| RÄNTA, INTEREST | EXCLUDE | Interest income/expense, out of scope |
-| LÅN, LOAN | EXCLUDE | Loan principal, out of scope |
+| Swedish small-business turnover limit | SEK 120,000 under the stated Swedish-seat, current-year and prior-two-year conditions | [Skatteverket: low-turnover exemption](https://www.skatteverket.se/foretag/moms/momsregistrering/momsbefrielseforarsomsattningpahogst80000kronor.4.3152d9ac158968eb8fd1efe.html) |
+| EU-goods acquisition registration screen | SEK 90,000 under the stated conditions | [Skatteverket: VAT registration](https://www.skatteverket.se/foretag/moms/momsregistrering/registreradigformoms.4.deeebd105a602bfe38000256.html) |
+| Swedish VAT rates | 25%, 12% and 6%; classify the supply before choosing a rate | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
+| Temporary food rate | 6% from 1 April 2026 for qualifying food; restaurant/café service has its own classification | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
+| Ordinary sales base | Field 05; fields 06, 07 and 08 are withdrawals, margin-scheme base and voluntarily taxed rent | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
+| Output VAT on sales/purchases | Fields 10, 11, 12 and 30, 31, 32 by the applicable rate | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
+| Buyer-accounted purchase bases | Fields 20, 21, 22, 23 and 24 for the distinct EU-goods, EU-service, non-EU-service and domestic reverse-charge routes | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
+| Imports and deductible input VAT | Import base 50, import VAT 60, 61 or 62, qualifying input VAT 48 | [Skatteverket: complete the VAT return](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html) |
+| EU consumer-sales threshold | EUR 10,000, stated as SEK 99,680 by the authority, subject to current/prior-year and establishment conditions | [Skatteverket: EU consumer-sales threshold](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/handelmedandralander/troskelvardevidforsaljningtillickebeskattningsbarapersoneriandraeulander.4.18e1b10334ebe8bc80005545.html) |
+| Representation deduction base | SEK 300 excluding VAT per person and occasion for meals/drinks, under the stated conditions | [Skatteverket: representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html) |
+| Passenger-car hire route | 50% deduction may apply when taxable use exceeds 100 Swedish miles, 1,000 km, in a year; a separate short-term-hire route exists | [Skatteverket: cars and VAT](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html) |
+| Hypothetical Case A values | SEK 100,000 and SEK 25,000 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
+| Hypothetical Case B values | SEK 100,000, SEK 12,000 and SEK 6,000 are assumptions or derived results, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
+| Hypothetical Case C values | SEK 20,000 and SEK 5,000 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
+| Hypothetical Case D values | SEK 40,000 and SEK 10,000 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
+| Hypothetical Case E values | SEK 10,000 and SEK 2,500 are an assumption and a derived result, not authority figures | [Skatteverket: VAT rates](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) |
 
-### 3.2 Swedish government, regulators, and statutory bodies (exclude entirely)
+Amounts in the worked cases are labelled assumptions. They demonstrate arithmetic and return workflow; they are not published statutory figures.
 
-**Government bodies table**
+## The method, step by step
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SKATTEVERKET | EXCLUDE | Tax payment, not a supply |
-| MOMS (as payment to Skatteverket) | EXCLUDE | VAT payment |
-| TULLVERKET | EXCLUDE | Customs duty (but see import VAT on customs declaration) |
-| BOLAGSVERKET | EXCLUDE | Company registry fees, sovereign acts |
-| FÖRSÄKRINGSKASSAN | EXCLUDE | Social insurance payments |
-| KRONOFOGDEMYNDIGHETEN | EXCLUDE | Enforcement authority |
+1. **Confirm registration, period and reporting method.** Obtain the Swedish VAT number, registration decision, assigned period, accounting method and prior filed return. Do not create an ordinary return before resolving whether registration applies. A business with its seat in Sweden can use the automatic low-turnover exemption only when all threshold-period conditions hold. A business seated in another EU state needs the stated identification decision and EU turnover conditions; a non-EU-seat business cannot use that Swedish exemption. A threshold crossing, voluntary registration, qualifying EU acquisition, qualifying cross-border service or covered domestic reverse-charge event can change the result. [Low-turnover exemption](https://www.skatteverket.se/foretag/moms/momsregistrering/momsbefrielseforarsomsattningpahogst80000kronor.4.3152d9ac158968eb8fd1efe.html) and [registration](https://www.skatteverket.se/foretag/moms/momsregistrering/registreradigformoms.4.deeebd105a602bfe38000256.html)
+2. **Build a transaction record before putting an amount in a field.** For every sale, purchase, import, withdrawal, rent or adjustment retain the invoice or equivalent evidence; legal supplier/customer identity; VAT number where relevant; goods or services description; origin/destination; supply date; accounting date; taxable base; rate; VAT shown; business purpose; customs/transport evidence; and document identifier. A bank payment confirms payment, not tax treatment or a deduction. Reconcile the record to sales ledger, purchase ledger, bank, customs information and prior corrections.
+3. **Classify each sale before calculating VAT.** Establish the Swedish place of taxation and whether the item is taxable, exempt, outside scope or subject to a special scheme. For ordinary taxable domestic sales, report the base in field 05 and output VAT in 10, 11 or 12 at the actual rate. Do not use fields 06 to 08 as alternative ordinary-sales rates. Use a special field only after the specific rule and evidence are established. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
+4. **Apply the food transition to supported ordinary deliveries, then preserve corrections.** Qualifying food delivered before 1 April 2026 uses the former rate; qualifying food delivered from that date uses 6%. A credit or return needs an amendment invoice that identifies the original invoice and is reported under the taxpayer’s accounting method. Preserve the original invoice, amendment invoice, delivery evidence and rate calculation. This packet does not decide food-rate timing for an advance payment, EU acquisition or a disputed credit: retain those facts for a current legal-guidance review. [Food rate guidance](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html) and [amendment invoices](https://www.skatteverket.se/foretagochorganisationer/moms/saljavarorochtjanster/fakturering.4.58d555751259e4d66168000403.html)
+5. **Test input VAT independently.** Put only deductible Swedish input VAT in field 48. Confirm taxable-business use, purchaser/seller and invoice evidence, then test restrictions and mixed/private/exempt allocation. Do not place foreign VAT in field 48. Passenger cars, representation, property adjustments and mixed use require their own evidence screen. [Business purchases](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkoptillforetaget.4.7459477810df5bccdd480005156.html), [invoicing](https://www.skatteverket.se/foretagochorganisationer/moms/saljavarorochtjanster/fakturering.4.58d555751259e4d66168000403.html), [cars](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/bilarochmoms.4.58d555751259e4d6616800010628.html), and [representation](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/representation.4.15532c7b1442f256baec84b.html)
+6. **Route buyer-accounted purchases and imports separately.** Use 20 for EU goods, 21 for qualifying general-rule EU business services, 22 for qualifying general-rule non-EU services, 23 for covered domestic reverse-charge goods and 24 for covered domestic reverse-charge services. Calculate buyer-accounted VAT in 30, 31 or 32 at the rate that actually applies, then assess field-48 deduction separately. For imports, use customs evidence for 50 and calculate import VAT in 60, 61 or 62. A construction invoice belongs in 41 for the seller and 24 for the buyer only after the listed service, buyer condition and the route-specific place test are documented. [EU service purchases](https://www.skatteverket.se/foretag/moms/kopavarorochtjanster/inkopfranandraeulander/kopatjansterfranandraeulander.4.361dc8c15312eff6fd1d011.html), [construction reverse charge](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/byggverksamhet/omvandbetalningsskyldighetinombyggsektorn), and [return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
+7. **Route sales outside ordinary domestic treatment.** A qualifying EU goods sale belongs in 35, export goods in 36, qualifying general-rule EU business services in 39, other foreign services in 40, domestic buyer-accounted sales in 41 and specified exempt/non-consideration items in 42. Confirm customer VAT status, transport, place of supply and any EC Sales List obligation. Consumer EU distance/digital sales require the threshold/OSS test before they are included as Swedish domestic VAT. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html), [EC Sales List](https://www.skatteverket.se/foretag/moms/deklareramoms/periodisksammanstallningforvarorochtjanster.4.58d555751259e4d661680001093.html), [EU consumer-sales threshold](https://www.skatteverket.se/foretag/moms/sarskildamomsregler/handelmedandralander/troskelvardevidforsaljningtillickebeskattningsbarapersoneriandraeulander.4.18e1b10334ebe8bc80005545.html), and [OSS](https://www.skatteverket.se/foretag/moms/deklareramoms/ossredovisningavmomsenligtdesarskildaordningarna.4.5b35a6251761e691420b58e.html)
+8. **Reconcile, file, pay and correct.** Recalculate field 49 from output VAT on sales, buyer-accounted purchases and imports less supported field-48 input VAT. Reconcile every field to schedules and the tax-control account. File each assigned period; when there is no VAT to report, use the e-service zero-return route or field 49 = 0 on paper, without inventing values elsewhere. Use the registration decision/current deadline calendar. A correction is a complete replacement return for the affected period, with original return, reason, changed records and calculation retained. [When to file](https://www.skatteverket.se/foretag/moms/deklareramoms/narskajagdeklareramoms.4.6d02084411db6e252fe80008988.html), [return fields](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html), and [corrections](https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html)
 
-### 3.3 Swedish utilities
+## Ask the client first
 
-**Utilities table**
+- What does the registration decision say about Swedish VAT registration, accounting method and this return period?
+- For each cross-border item, what was supplied, where did goods move or service occur, and what proves the counterparty’s legal/VAT status?
+- What documents establish the supply date, delivery/acquisition/import date, advance receipt and any credit/return?
+- Which purchases support taxable activity, which have invoices, and which have private, exempt, car, representation or property restrictions?
+- Are there imports, construction services, margin transactions, voluntarily taxed rent, VAT groups, OSS/IOSS transactions or EU consumer sales?
+- Has an earlier return been filed, and is the task a complete correction rather than an original return?
 
-| Pattern | Treatment | Ruta | Notes |
-| --- | --- | --- | --- |
-| VATTENFALL | Domestic 25% | 48 (input) | Electricity/gas — overhead |
-| ELLEVIO, EON, FORTUM | Domestic 25% | 48 (input) | Regional electricity suppliers |
-| TELIA, TELIA COMPANY | Domestic 25% | 48 (input) | Telecoms/broadband — overhead |
-| TELENOR SE, TRE (3), COMVIQ | Domestic 25% | 48 (input) | Mobile telecoms |
-| COMHEM, BREDBAND2 | Domestic 25% | 48 (input) | Broadband |
+## Worked preparation cases
 
-### 3.4 Insurance (exempt — exclude)
+### Case A — ordinary domestic sale
 
-**Insurance table**
+**Assumptions.** A VAT-registered seller makes a supported ordinary 25% domestic sale with a SEK 100,000 VAT-exclusive base.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRYGG-HANSA, IF, FOLKSAM | EXCLUDE | Insurance, exempt under ML kap 10 §35 |
-| LÄNSFÖRSÄKRINGAR (insurance) | EXCLUDE | Same |
-| FÖRSÄKRING, INSURANCE | EXCLUDE | All exempt |
+**Calculation and route.** SEK 100,000 × 25 ÷ 100 = SEK 25,000 output VAT. Report 100,000 in 05 and 25,000 in 10, subject to the stated classification assumptions. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
 
-### 3.5 Post and logistics
+### Case B — food transition at ordinary delivery
 
-**Post and logistics table**
+**Assumptions.** A supported eligible-food delivery of SEK 100,000 occurs on 31 March 2026. A separate supported eligible-food delivery of SEK 100,000 occurs on 1 April. The facts establish food rather than a restaurant/café service.
 
-| Pattern | Treatment | Ruta | Notes |
-| --- | --- | --- | --- |
-| POSTNORD, POSTEN | EXCLUDE for standard postage |  | Universal postal service, exempt |
-| POSTNORD | Domestic 25% for parcel/courier | 48 | Non-universal services taxable |
-| DHL, DB SCHENKER, BRING | Domestic 25% | 48 | Courier, taxable |
+**Calculation and route.** The March delivery VAT is 100,000 × 12 ÷ 100 = 12,000. The April delivery VAT is 100,000 × 6 ÷ 100 = 6,000. Record the deliveries separately. Hold an advance, EU acquisition or disputed cross-transition credit for the evidence review identified in step 4. [Food rate guidance](https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momssatspavarorochtjanster.4.58d555751259e4d66168000409.html)
 
-### 3.6 Transport (Sweden domestic)
+### Case C — EU goods purchase with supported deduction
 
-**Transport table**
+**Assumptions.** A registered Swedish buyer acquires qualifying EU goods for SEK 20,000. The transaction is taxable at 25% and wholly for supported taxable activity.
 
-| Pattern | Treatment | Ruta | Notes |
-| --- | --- | --- | --- |
-| SJ, SJ AB | Domestic 6% | 48 | Passenger rail at reduced rate |
-| SL, SKÅNETRAFIKEN, VÄSTTRAFIK | Domestic 6% | 48 | Local/regional public transport at 6% |
-| TAXI, TAXI STOCKHOLM, TAXI KURIR | Domestic 6% | 48 | Taxi at 6% (passenger transport) |
-| SAS, NORWEGIAN, RYANAIR (international) | EXCLUDE / 0% |  | International flights zero rated |
-| SAS, NORWEGIAN (domestic) | Domestic 6% | 48 | Domestic flights at 6% |
+**Calculation and route.** Report 20,000 in 20. Buyer-accounted VAT is 20,000 × 25 ÷ 100 = 5,000 in 30. Report the same 5,000 in 48 only if the deduction screen is satisfied, giving zero net effect from this one item. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
 
-### 3.7 Food retail and entertainment
+### Case D — import
 
-**Food retail and entertainment table**
+**Assumptions.** Customs evidence establishes a SEK 40,000 import base; goods are 25%; full taxable-business use and deduction evidence are established.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ICA, ICA MAXI, ICA KVANTUM | Default BLOCK input VAT | Supermarket — personal provisioning unless resale |
-| COOP, COOP FORUM, STORA COOP | Default BLOCK input VAT | Same |
-| HEMKÖP, WILLYS, LIDL SE | Default BLOCK input VAT | Same |
-| RESTAURANTS, CAFES, BARS | Default BLOCK | Representation — limited deductibility |
+**Calculation and route.** Report 40,000 in 50 and 40,000 × 25 ÷ 100 = 10,000 in 60. Field 48 is 10,000 only if the ordinary deduction test is met. A freight payment is not the import base. [Return field instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/fyllaimomsdeklarationen.4.3a2a542410ab40a421c80004214.html)
 
-- **Note on Swedish representation (representationsavdrag)** — Sweden allows VAT recovery on business entertainment up to a meal cost of SEK 300 per person excl. VAT. The VAT on that amount is deductible. Above SEK 300/person, no additional VAT recovery. Alcohol is never deductible. Default: block fully. [T2] flag if client claims business entertainment with proper documentation.  _(IL 16 kap. §2)_
+### Case E — ordinary correction
 
-### 3.8 SaaS — EU suppliers (reverse charge, ruta 21/30)
+**Assumptions.** A previously filed return omitted a supported SEK 10,000 ordinary standard-rated sale.
 
-**SaaS EU suppliers table**
+**Calculation and route.** Omitted VAT is 10,000 × 25 ÷ 100 = 2,500. Rebuild the complete return for that period and submit the replacement return; do not file a delta-only 2,500 entry. [Skatteverket correction instructions](https://www.skatteverket.se/foretag/moms/deklareramoms/rattaenmomsdeklaration.4.3684199413c956649b552c4.html)
 
-| Pattern | Billing entity | Ruta | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 21/30/48 | EU service reverse charge |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 21/30/48 | Reverse charge |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 21/30/48 | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 21/30/48 | Reverse charge |
-| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 21/30/48 | Reverse charge |
-| SPOTIFY TECHNOLOGY | Spotify AB (SE) — DOMESTIC | 48 only | Swedish entity — domestic 25%, NOT reverse charge |
-| DROPBOX | Dropbox International Unlimited (IE) | 21/30/48 | Reverse charge |
-| SLACK | Slack Technologies Ireland Ltd (IE) | 21/30/48 | Reverse charge |
-| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 21/30/48 | EU reverse charge |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 21/30/48 | Reverse charge |
-| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | 21/30/48 | Transaction fees may be exempt — see 3.10 |
+## When to refuse or refer
 
-- **Note on Spotify** — Spotify AB is a Swedish company. Purchases from Spotify are domestic Swedish transactions at 25%, NOT reverse charge. This is a common mistake.
+- The evidence cannot establish the tax point, place of supply, buyer/seller status, goods movement, rate classification or deductible business use.
+- The return needs a partial-exemption allocation, VAT-group analysis, property adjustment, margin scheme, voluntary-tax rent calculation, triangulation, IOSS/OSS election or platform/deemed-supplier conclusion.
+- A construction reverse-charge condition, car exception, representation calculation, food exclusion, voucher or amendment-invoice timing is disputed or incomplete.
+- The taxpayer has no registration decision/assigned period, Customs documentation or complete correction records.
 
-### 3.9 SaaS — non-EU suppliers (reverse charge, ruta 23/30)
+## Official sources
 
-**SaaS non-EU suppliers table**
-
-| Pattern | Billing entity | Ruta | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — check | 21/30/48 | LU entity → EU reverse charge via ruta 21 |
-| NOTION | Notion Labs Inc (US) | 23/30/48 | Non-EU service reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 23/30/48 | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 23/30/48 | Non-EU reverse charge |
-| GITHUB (standard plans) | GitHub Inc (US) | 23/30/48 | Check if billed by IE entity |
-| FIGMA | Figma Inc (US) | 23/30/48 | Non-EU reverse charge |
-| CANVA | Canva Pty Ltd (AU) | 23/30/48 | Non-EU reverse charge |
-| HUBSPOT | HubSpot Inc (US) or IE — check | 23/30/48 or 21/30/48 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 23/30/48 | Non-EU reverse charge |
-
-### 3.10 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| STRIPE (monthly subscription) | EU reverse charge ruta 21/30/48 | Stripe IE entity |
-| KLARNA, SWISH (merchant fees) | Check invoice | Exempt financial service fees vs taxable platform fees |
-
-### 3.11 Professional services (Sweden)
-
-**Professional services table**
-
-| Pattern | Treatment | Ruta | Notes |
-| --- | --- | --- | --- |
-| ADVOKAT, ADVOKATBYRÅ | Domestic 25% | 48 | Legal, deductible if business purpose |
-| REVISOR, REVISIONSBOLAG, AUKTORISERAD | Domestic 25% | 48 | Accountant/auditor — always deductible |
-| BOLAGSVERKET | EXCLUDE | Government fee, not a supply |  |
-
-### 3.12 Payroll and social security (exclude entirely)
-
-**Payroll and social security table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ARBETSGIVARAVGIFTER, SOCIALA AVGIFTER | EXCLUDE | Employer contributions |
-| LÖN, SALARY, WAGES (outgoing) | EXCLUDE | Wages — outside VAT scope |
-| PRELIMINÄRSKATT, F-SKATT | EXCLUDE | Preliminary tax payment |
-| A-KASSA, FACKFÖRBUND | EXCLUDE | Unemployment insurance, union fees |
-
-### 3.13 Property and rent
-
-**Property and rent table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| HYRA, LOKALHYRA (commercial, with VAT) | Domestic 25% | Commercial lease where landlord has frivillig skattskyldighet |
-| HYRA (residential, no VAT) | EXCLUDE | Residential lease, exempt |
-| BOSTADSRÄTT | EXCLUDE | Housing cooperative fees, exempt |
-
-### 3.14 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ÖVERFÖRING, INTERN, EGET KONTO | EXCLUDE | Internal movement |
-| UTDELNING, DIVIDEND | EXCLUDE | Dividend, out of scope |
-| LÅN, AMORTERING | EXCLUDE | Loan repayment, out of scope |
-| UTTAG, BANKOMAT, ATM | TIER 2 — ask | Default exclude; ask what cash was spent on |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Swedish self-employed IT consultant.
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; SEK 166.88`
-
-**Reasoning:**
-Notion Labs Inc is a US entity (Section 3.9). Non-EU service — reverse charge. Report net SEK 166.88 in ruta 23, output VAT (25% = SEK 41.72) in ruta 30, and same SEK 41.72 as input VAT in ruta 48. Net effect zero.
-
-**Output:**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ruta (output) | Ruta (input) | Default? | Question? | Excluded? |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 03.04.2026 | NOTION LABS INC | -166.88 | -166.88 | 41.72 | 25% | 23/30 | 48 | N | — | — |
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April ; -9,500.00 ; SEK`
-
-**Reasoning:**
-Google Ireland Limited (IE). EU service reverse charge. Net SEK 9,500 in ruta 21, output VAT (25% = SEK 2,375) in ruta 30, input VAT SEK 2,375 in ruta 48.
-
-**Output:**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ruta (output) | Ruta (input) | Default? | Question? | Excluded? |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -9,500.00 | -9,500.00 | 2,375.00 | 25% | 21/30 | 48 | N | — | — |
-
-### Example 3 — Entertainment, limited deduction
-
-**Input line:**
-`15.04.2026 ; RESTAURANG OPERAKÄLLAREN ; DEBIT ; Client dinner 4 persons ; -4,800.00 ; SEK`
-
-**Reasoning:**
-Restaurant transaction. Business entertainment (representation) with 4 persons. Swedish rule: VAT deductible on meal cost up to SEK 300/person excl. VAT. Maximum deductible base = 4 x SEK 300 = SEK 1,200 excl. VAT. VAT on that = SEK 300. But documentation is required (business purpose, attendees, date). Default: block fully. [T2] flag.
-
-**Output:**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ruta | Default? | Question? | Excluded? |
-|---|---|---|---|---|---|---|---|---|---|
-| 15.04.2026 | RESTAURANG OPERAKÄLLAREN | -4,800.00 | -4,800.00 | 0 | — | — | Y | Q1 | "Representation: blocked — partial recovery possible up to SEK 300/person excl. VAT if documented" |
-
-### Example 4 — Domestic purchase at reduced rate (passenger rail)
-
-**Input line:**
-`18.04.2026 ; SJ AB ; DEBIT ; Stockholm–Gothenburg return ; -1,200.00 ; SEK`
-
-**Reasoning:**
-SJ AB is the Swedish state railway. Domestic passenger transport is at 6% VAT. Net = SEK 1,200 / 1.06 = SEK 1,132.08. VAT = SEK 67.92. Input VAT deductible in ruta 48 if business travel.
-
-**Output:**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ruta | Default? | Question? | Excluded? |
-|---|---|---|---|---|---|---|---|---|---|
-| 18.04.2026 | SJ AB | -1,200.00 | -1,132.08 | -67.92 | 6% | 48 | N | — | — |
-
-### Example 5 — EU B2B service sale (inbound receipt)
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice SE-2026-018 IT consultancy March ; +35,000.00 ; SEK`
-
-**Reasoning:**
-Incoming from a German company. B2B IT consulting services — place of supply is Germany. Invoice at 0%, German customer accounts for reverse charge. Report net in ruta 36 (EU services supplied). No output VAT. Verify German USt-IdNr on VIES.
-
-**Output:**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ruta | Default? | Question? | Excluded? |
-|---|---|---|---|---|---|---|---|---|---|
-| 22.04.2026 | STUDIO KREBS GMBH | +35,000.00 | +35,000.00 | 0 | 0% | 36 | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-### Example 6 — Vehicle, mixed-use passenger car
-
-**Input line:**
-`28.04.2026 ; VOLVO FINANS ; DEBIT ; Car lease May ; -5,500.00 ; SEK`
-
-**Reasoning:**
-Car lease payment. In Sweden, passenger cars used for mixed business/private purposes have limited VAT recovery. If the car is used exclusively for business (not available for private use), 100% recovery. For mixed use, recovery is restricted. Default: block fully. [T2] flag — reviewer must determine vehicle classification and business-use proportion.
-
-**Output:**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Ruta | Default? | Question? | Excluded? |
-|---|---|---|---|---|---|---|---|---|---|
-| 28.04.2026 | VOLVO FINANS | -5,500.00 | -5,500.00 | 0 | — | — | Y | Q3 | "Vehicle: blocked — full recovery requires exclusive business use" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 25% (ML kap 9 §2)
-
-- **Standard rate rule** — Default rate for any taxable supply unless reduced rate, zero rate, or exemption applies. Sales → ruta 06 (net), ruta 10 (output VAT). Purchases → ruta 48 (input VAT).  _(ML kap 9 §2)_
-
-### 5.2 Reduced rate 12% (ML kap 9 §3)
-
-- **Reduced rate 12% rule** — Applies to: food and non-alcoholic beverages, restaurant and catering services (excl. alcohol), hotel accommodation (from 2024). Sales → ruta 07 (net), ruta 11 (output VAT). Purchases → ruta 48 (input VAT at 12%).  _(ML kap 9 §3)_
-
-### 5.3 Reduced rate 6% (ML kap 9 §4)
-
-- **Reduced rate 6% rule** — Applies to: books, newspapers, periodicals, cultural events (cinema, theatre, concerts), sporting events (spectator), domestic passenger transport (bus, rail, taxi, domestic flights). Sales → ruta 08 (net), ruta 12 (output VAT). Purchases → ruta 48 (input VAT at 6%).  _(ML kap 9 §4)_
-
-### 5.4 Zero rate / exempt with credit
-
-- **Zero rate rule** — Exports → ruta 37 (net). Intra-EU B2B goods → ruta 35 (net, requires VIES-verified VAT number, transport proof). Intra-EU B2B services → ruta 36 (net). Prescribed medicines, certain medical aids → zero rated.
-
-### 5.5 Exempt without credit (ML kap 10)
-
-- **Exempt without credit rule** — Medical/dental care, social services, education, financial services, insurance, postal universal service, residential rent. Excluded from the momsdeklaration. If significant → **R-SE-3 refuses**.  _(ML kap 10)_
-
-### 5.6 Local standard purchases
-
-- **Local standard purchases rule** — Input VAT at applicable rate from a Swedish supplier. Deductible in ruta 48. Subject to blocked-input rules (5.10).
-
-### 5.7 Reverse charge — EU services received (ML kap 6 §33-34)
-
-- **Reverse charge EU services rule** — EU supplier invoices at 0%: net → ruta 21, output VAT → ruta 30 (at applicable rate, usually 25%), input VAT → ruta 48. Net cash effect zero.  _(ML kap 6 §33-34)_
-
-### 5.8 Reverse charge — EU goods acquisitions
-
-- **Reverse charge EU goods rule** — Physical goods from EU supplier: net → ruta 20, output VAT → ruta 30, input VAT → ruta 48.
-
-### 5.9 Reverse charge — non-EU services (ML kap 6 §34)
-
-- **Reverse charge non-EU services rule** — Services from outside EU: net → ruta 23, output VAT → ruta 30, input VAT → ruta 48.  _(ML kap 6 §34)_
-
-### 5.10 Blocked input VAT
-
-- **Blocked input VAT rules** — - Entertainment/representation: VAT deductible only up to SEK 300/person excl. VAT on meals; alcohol never deductible (IL 16 kap §2) - Passenger cars: mixed-use → restricted; exclusive business use → full deduction; requires evidence - Private use: fully blocked - Staff gifts above SEK 500 excl. VAT: blocked (trivial gifts up to SEK 500 deductible) - Real property for residential use: blocked  _(IL 16 kap §2)_
-
-### 5.11 Capital goods scheme (ML kap 15)
-
-- **Capital goods scheme rule** — Capital goods with acquisition cost excl. VAT ≥ SEK 200,000 for movable property (machinery, equipment) are subject to 5-year adjustment. Immovable property (real estate): 10-year adjustment with threshold SEK 100,000 per cost item. Below thresholds: treat as normal overhead in ruta 48.  _(ML kap 15)_
-
-### 5.12 Construction reverse charge (ML kap 6 §34a)
-
-- **Construction reverse charge rule** — Construction and building services between VAT-registered businesses in the construction sector: the buyer accounts for VAT. Net → ruta 24, output VAT → ruta 30, input VAT → ruta 48. [T2] — requires determining both parties are in construction.  _(ML kap 6 §34a)_
-
-### 5.13 Sales — local domestic
-
-- **Sales local domestic rule** — Charge 25%, 12%, or 6% as applicable. Map to ruta 06/07/08 (net) and ruta 10/11/12 (output VAT). Ruta 05 = total = sum of 06+07+08.
-
-### 5.14 Sales — cross-border B2C
-
-- **Sales cross-border B2C rule** — EU consumers above €10,000 threshold → **R-EU-5 (OSS refusal)**. Below threshold → Swedish VAT at applicable rate.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs rule** — *Pattern:* OKQ8, Circle K, Preem, Shell SE, Ingo. *Default:* 0% recovery. *Question:* "Is this a passenger car for mixed use, or a commercial vehicle used exclusively for business?"
-
-### 6.2 Restaurants and entertainment (representation)
-
-- **Restaurants and entertainment rule** — *Pattern:* any restaurant, café, bar. *Default:* block. *Question:* "Was this business representation with documented purpose and attendees? How many persons? (VAT deductible up to SEK 300/person excl. VAT.)"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing entities rule** — *Pattern:* Google, Microsoft, etc. where legal entity not visible. *Default:* non-EU reverse charge ruta 23/30/48. *Question:* "Could you check the invoice for the legal entity name and country?"
-
-### 6.4 Round-number incoming transfers from owner-named counterparties
-
-- **Round-number transfers rule** — *Default:* exclude as owner injection. *Question:* "Is this a customer payment, capital injection, or loan?"
-
-### 6.5 Incoming transfers from individual names
-
-- **Incoming transfers from individuals rule** — *Default:* domestic B2C sale at 25%, ruta 06/10. *Question:* "Was this a sale? Country?"
-
-### 6.6 Incoming transfers from foreign counterparties
-
-- **Incoming transfers from foreign counterparties rule** — *Default:* domestic 25%. *Question:* "B2B with VAT number, B2C, goods or services, which country?"
-
-### 6.7 Large one-off purchases (capital goods threshold)
-
-- **Large one-off purchases rule** — *Default:* if net ≥ SEK 200,000 → capital goods scheme; otherwise normal overhead. *Question:* "Confirm total invoice amount excluding VAT."
-
-### 6.8 Mixed-use phone, internet, home office
-
-- **Mixed-use phone/internet/home office rule** — *Pattern:* Telia, Telenor personal lines; home electricity. *Default:* 0% if mixed. *Question:* "Dedicated business line or mixed-use? Business percentage?"
-
-### 6.9 Outgoing transfers to individuals
-
-- **Outgoing transfers to individuals rule** — *Default:* exclude as drawings. *Question:* "Contractor with invoice, wages, refund, or personal?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals rule** — *Pattern:* UTTAG, BANKOMAT, ATM. *Default:* exclude. *Question:* "What was the cash used for?"
-
-### 6.11 Rent payments
-
-- **Rent payments rule** — *Pattern:* HYRA, LOKALHYRA. *Default:* no VAT (residential). *Question:* "Commercial property? Does landlord charge moms (frivillig skattskyldighet)?"
-
-### 6.12 Foreign hotel and accommodation
-
-- **Foreign hotel and accommodation rule** — *Default:* exclude from input VAT. *Question:* "Was this a business trip?"
-
-### 6.13 Construction services received
-
-- **Construction services received rule** — *Pattern:* byggtjänster, snickare, målare, VVS. *Default:* domestic 25% ruta 48. *Question:* "Are you in the construction sector? Is this a subcontractor?"
-
-### 6.14 ROT/RUT deductions
-
-- **ROT/RUT deductions rule** — *Pattern:* ROT-avdrag, RUT-avdrag on invoices. *Why insufficient:* ROT/RUT is an income tax deduction, not a VAT concept. The VAT on the full invoice is still applicable. *Default:* treat as normal domestic purchase at 25% for VAT. *Question:* "Confirm the total invoice amount including VAT (before ROT/RUT reduction)."
-
-## Section 7 — Excel working paper template (Sweden-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This section provides the Sweden-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A–L per the base. Column H ("Ruta code") accepts only valid momsdeklaration ruta codes from Section 1. For reverse-charge transactions, enter output ruta and input ruta separated by a slash (e.g. "21/30/48").
-
-### Sheet "Box Summary"
-
-```
-Output:
-| 05 | Total taxable sales excl. VAT | =C[06]+C[07]+C[08] |
-| 06 | Sales 25% excl. VAT | =SUMIFS(Transactions!E:E, Transactions!H:H, "06") |
-| 07 | Sales 12% excl. VAT | =SUMIFS(Transactions!E:E, Transactions!H:H, "07") |
-| 08 | Sales 6% excl. VAT | =SUMIFS(Transactions!E:E, Transactions!H:H, "08") |
-| 10 | Output VAT 25% | =C[06]*0.25 |
-| 11 | Output VAT 12% | =C[07]*0.12 |
-| 12 | Output VAT 6% | =C[08]*0.06 |
-
-Acquisitions (reverse charge):
-| 20 | EU goods acquisitions | =SUMIFS(...) |
-| 21 | EU services acquisitions | =SUMIFS(...) |
-| 22 | Non-EU goods acquisitions | =SUMIFS(...) |
-| 23 | Non-EU services acquisitions | =SUMIFS(...) |
-| 24 | Domestic reverse charge (construction) | =SUMIFS(...) |
-| 30 | Output VAT on acquisitions 25% | =(C[20]+C[21]+C[22]+C[23]+C[24])*0.25 |
-| 31 | Output VAT on acquisitions 12% | ... |
-| 32 | Output VAT on acquisitions 6% | ... |
-
-Exempt/zero-rated supplies:
-| 35 | EU goods supplies | =SUMIFS(...) |
-| 36 | EU services supplies | =SUMIFS(...) |
-| 37 | Exports | =SUMIFS(...) |
-
-Input:
-| 48 | Total input VAT | =SUMIFS(Transactions!F:F, Transactions!H:H, "48") |
-| 49 | Net VAT payable/refundable | =(C[10]+C[11]+C[12]+C[30]+C[31]+C[32])-C[48] |
-```
-
-### Sheet "Return Form"
-
-```
-Positive ruta 49 → payable to Skatteverket.
-Negative ruta 49 → refund to the business.
-```
-
-### Mandatory recalc step
-
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/sweden-vat-<period>-working-paper.xlsx
-```
-
-## Section 8 — Sweden bank statement reading guide
-
-**CSV format conventions.** Handelsbanken exports use semicolon delimiters with YYYY-MM-DD dates. SEB uses tab-separated. Swedbank typically semicolons. Common columns: Datum, Text, Belopp, Saldo.
-
-**Swedish language variants.** Hyra (rent), lön (salary), ränta (interest), överföring (transfer), uttag (withdrawal), insättning (deposit). Treat as English equivalents.
-
-**Internal transfers.** Own-account transfers labelled "överföring", "eget konto", "intern". Always exclude.
-
-**Owner draws.** Enskild firma (sole trader) transfers to personal account are drawings — exclude.
-
-**Refunds.** Identify by "återbetalning", "kreditnota", "retur". Book as negative in same ruta.
-
-**Foreign currency.** Convert to SEK at transaction date rate. Use Riksbanken cross rates.
-
-**IBAN prefix.** SE = Sweden. DK, FI, NO = Nordic (EU/EEA). IE, DE, FR = EU. US, GB, CH = non-EU.
-
-## Section 9 — Onboarding fallback (only when inference fails)
-
-### 9.1 Entity type
-
-- **Entity type fallback** — *Inference rule:* enskild firma (sole trader) vs AB (aktiebolag) vs HB (handelsbolag). *Fallback:* "Are you enskild firma, AB, HB, or other?"
-
-### 9.2 VAT registration status
-
-- **VAT registration status fallback** — *Inference rule:* if asking for momsdeklaration, they are momsregistrerad. *Fallback:* "Are you momsregistrerad?"
-
-### 9.3 Organisationsnummer and VAT number
-
-- **Organisationsnummer and VAT number fallback** — *Fallback:* "What is your organisationsnummer and momsregistreringsnummer? (SE + 12 digits)"
-
-### 9.4 Filing period
-
-- **Filing period fallback** — *Inference rule:* transaction dates. *Fallback:* "Monthly, quarterly, or annual filing? Which period?"
-
-### 9.5 Industry
-
-- **Industry fallback** — *Inference rule:* counterparty mix. *Fallback:* "What does the business do?"
-
-### 9.6 Employees
-
-- **Employees fallback** — *Inference rule:* arbetsgivaravgifter, lön outgoing. *Fallback:* "Do you have employees?"
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies fallback** — *Fallback:* "Do you make VAT-exempt sales?" *If yes → R-SE-3 may fire.*
-
-### 9.8 Credit brought forward
-
-- **Credit brought forward fallback** — *Always ask:* "Do you have any excess credit from the previous period?"
-
-### 9.9 Cross-border customers
-
-- **Cross-border customers fallback** — *Fallback:* "Customers outside Sweden? EU or non-EU? B2B or B2C?"
-
-### 9.10 Vehicle type
-
-- **Vehicle type fallback** — *Fallback:* "Do you use a vehicle for business? Passenger car or commercial vehicle? Mixed or exclusive business use?"
-
-## Section 10 — Reference material
-
-### Validation status
-
-v2.0, rewritten April 2026. Awaiting validation by auktoriserad revisor or godkänd revisor in Sweden.
-
-### Sources
-
-1. Mervärdesskattelagen (ML) 2023:200 — https://www.riksdagen.se
-2. Skatteförfarandelagen (SFL) 2011:1244
-3. Inkomstskattelagen (IL) 1999:1229 (representation limits)
-4. Skatteverket guidance — https://www.skatteverket.se
-5. Council Directive 2006/112/EC — via eu-vat-directive companion skill
-6. VIES — https://ec.europa.eu/taxation_customs/vies/
-7. Riksbanken exchange rates
-
-### Known gaps
-
-1. Supplier pattern library does not cover every Swedish business.
-2. Construction reverse charge (ruta 24) is Tier 2 — future version should add detailed rules.
-3. ROT/RUT interaction is noted but not fully specified for VAT purposes.
-4. Capital goods thresholds (SEK 200,000 movable / SEK 100,000 immovable) to be verified annually.
-5. Representation limits (SEK 300/person) to be verified against current IL 16 kap.
-6. Spotify domestic treatment must be verified — entity may change billing country.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to three-tier OpenAccountants architecture.
-- **v1.0 (April 2026):** Initial draft. Standalone monolithic document.
-
-### Self-check (v2.0)
-
-1. Quick reference with ruta table and conservative defaults: yes (Section 1).
-2. Supplier library as lookup tables: yes (Section 3, 14 sub-tables).
-3. Worked examples: yes (Section 4, 6 examples).
-4. Tier 1 rules compressed: yes (Section 5, 14 rules).
-5. Tier 2 catalogue: yes (Section 6, 14 items).
-6. Excel template with recalc: yes (Section 7).
-7. Onboarding as fallback: yes (Section 9, 10 items).
-8. All 7 Sweden-specific refusals: yes (Section 2, R-SE-1 through R-SE-7).
-9. Reference material at bottom: yes (Section 10).
-10. Three rates (25%/12%/6%) correctly mapped to ruta 06-08/10-12: yes.
-11. Spotify domestic exception documented: yes (Section 3.8).
-12. Representation limits (SEK 300/person) documented: yes.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The captured source text and claim-level locators are retained in this packet's `sources.json` and `quality-evidence.json`. Retrieval date: 24 September 2026.
 
 <!-- openaccountants-cta-block -->
 
