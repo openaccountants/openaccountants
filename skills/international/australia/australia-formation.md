@@ -4,7 +4,7 @@ description: Use this skill whenever asked about forming, incorporating, or regi
 version: 1.1
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-09-24
 review_status: pending_review
 depends_on:
   - company-formation-workflow-base
