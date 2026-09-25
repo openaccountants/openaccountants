@@ -16,6 +16,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.1
 
+## Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.1
+
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 > **Law-change context.** (1) From 1 July 2026 the $2 minimum threshold for DGR gift deductions is REMOVED -- backdated to gifts made from 1 July 2024 (all amounts deductible regardless of size; political donations excluded). (2) The NFP self-review return is an ANNUAL obligation from the 2023-24 income year -- non-charitable NFPs with an active ABN self-assessing as income-tax-exempt must lodge by 31 October each year; the 2023-24 return deadline was extended to 31 March 2025, but 31 October applies from 2024-25 onwards. (3) GIC and SIC incurred on or after 1 July 2025 are non-deductible for taxable NFPs.
@@ -61,8 +63,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 2 -- Refusal catalogue
 
-Compute nothing in these areas; document the trigger and escalate to a specialist reviewer.
-
 **Refusal catalogue**
 
 | Code | Trigger | Action |
@@ -77,8 +77,6 @@ Compute nothing in these areas; document the trigger and escalate to a specialis
 | R-AU-NFP-8 | Ancillary funds (private or public): establishment, winding up, distribution rules, trustee obligations | Refuse; escalate. Ancillary funds carry special DGR conditions and ACNC/ATO dual oversight |
 
 ## Section 3 -- GL sweep library
-
-Signs an NFP's books need attention before any compliance position is taken.
 
 **GL sweep library**
 
@@ -423,6 +421,8 @@ If the client provides only financial statements and an ABN:
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, CA, tax agent, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

@@ -15,7 +15,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Australia Formation
 
+## Australia Formation
+
 ## Australia Company Formation Skill v1.0
+
+Australia Company Formation Skill v1.0
 
 ## Section 1 -- Quick Reference
 
@@ -53,7 +57,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Step 1: Choose Company Name
 
-- **Choose Company Name** — Check availability on ASIC's company name check tool; Must include "Pty Ltd" or "Proprietary Limited"; Can reserve name for 2 months ($62 fee) or register directly; Identical or near-identical names will be rejected
+- **Choose Company Name** — Check availability on ASIC's company name check tool; Must include "Pty Ltd" or "Proprietary Limited"; Can reserve name for 2 months ($62 fee) or register directly; Identical or near-identical names will be rejected  _(ASIC)_
 
 ### Step 2: Obtain Consent from Officeholders
 
@@ -65,7 +69,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Step 4: Register via Business Registration Service (BRS)
 
-- **Register via BRS** — Go to register.business.gov.au; Can simultaneously apply for: company registration, ABN, TFN, GST, PAYG withholding; Fee: $611 (Pty Ltd, 2025--26 financial year); ASIC processes and issues ACN (Australian Company Number) typically within 1--3 days
+- **Register via BRS** — Go to register.business.gov.au; Can simultaneously apply for: company registration, ABN, TFN, GST, PAYG withholding; Fee: $611 (Pty Ltd, 2025--26 financial year); ASIC processes and issues ACN (Australian Company Number) typically within 1--3 days  _(BRS / ASIC)_
 
 ### Step 5: Receive Certificate of Registration
 
@@ -73,7 +77,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Step 6: Apply for ABN (Australian Business Number)
 
-- **Apply for ABN** — Free via Australian Business Register (ABR); Required for tax invoices, GST, and dealing with other businesses; Can be applied for during BRS registration
+- **Apply for ABN** — Free via Australian Business Register (ABR); Required for tax invoices, GST, and dealing with other businesses; Can be applied for during BRS registration  _(ABR)_
 
 ### Step 7: Register for GST (if applicable)
 
@@ -81,7 +85,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Step 8: Register for PAYG Withholding (if employing)
 
-- **Register for PAYG Withholding** — Required before paying employees or directors; Register via BRS or ATO
+- **Register for PAYG Withholding** — Required before paying employees or directors; Register via BRS or ATO  _(BRS / ATO)_
 
 ## Section 4 -- Capital Requirements
 
@@ -167,11 +171,11 @@ Commonwealth Bank (CBA), Westpac, ANZ, NAB (Big 4); Macquarie, Bendigo (mid-tier
 
 ## Section 9 -- Common Mistakes and Refusals
 
-- **R-AU-F1 -- No Australian-resident director** — Every Pty Ltd must have at least one director who ordinarily resides in Australia. A company cannot be registered without this. Advise the client to appoint a local director or use a resident director service (with proper governance).  _(R-AU-F1)_
-- **R-AU-F2 -- Failing to pay ASIC annual review fee** — ASIC charges $329/year. If the annual review is not completed and fee is not paid, ASIC will deregister the company. Late fees apply: $98 within 1 month, $411 after 1 month.  _(R-AU-F2)_
-- **R-AU-F3 -- GST threshold ignorance** — If annual turnover reaches $75,000, GST registration is mandatory. Failing to register when required results in penalties and backdated GST assessments.  _(R-AU-F3)_
-- **R-AU-F4 -- Superannuation non-compliance** — Employers must pay at least 12% (2025--26 onwards) superannuation guarantee on top of ordinary time earnings. Non-payment results in the Superannuation Guarantee Charge (SGC), which is not tax-deductible.  _(R-AU-F4)_
-- **R-AU-F5 -- Shell company without substance** — This skill will not assist in forming a company with no genuine business activity in Australia. ASIC and the ATO actively pursue sham structures.  _(R-AU-F5)_
+- **R-AU-F1 -- No Australian-resident director** — Every Pty Ltd must have at least one director who ordinarily resides in Australia. A company cannot be registered without this. Advise the client to appoint a local director or use a resident director service (with proper governance).  _((R-AU-F1))_
+- **R-AU-F2 -- Failing to pay ASIC annual review fee** — ASIC charges $329/year. If the annual review is not completed and fee is not paid, ASIC will deregister the company. Late fees apply: $98 within 1 month, $411 after 1 month.  _((R-AU-F2))_
+- **R-AU-F3 -- GST threshold ignorance** — If annual turnover reaches $75,000, GST registration is mandatory. Failing to register when required results in penalties and backdated GST assessments.  _((R-AU-F3))_
+- **R-AU-F4 -- Superannuation non-compliance** — Employers must pay at least 12% (2025--26 onwards) superannuation guarantee on top of ordinary time earnings. Non-payment results in the Superannuation Guarantee Charge (SGC), which is not tax-deductible.  _((R-AU-F4))_
+- **R-AU-F5 -- Shell company without substance** — This skill will not assist in forming a company with no genuine business activity in Australia. ASIC and the ATO actively pursue sham structures.  _((R-AU-F5))_
 
 ## Section 10 -- Timeline
 
@@ -191,6 +195,8 @@ Commonwealth Bank (CBA), Westpac, ANZ, NAB (Big 4); Macquarie, Bendigo (mid-tier
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
