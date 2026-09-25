@@ -20,6 +20,11 @@ permissions:
 
 jobs:
   ring:
+    # Secrets live in the `production` environment, which only the default
+    # branch may use. Any branch can run workflows, and repo-level secrets would
+    # be readable from a workflow edited on an unmerged branch; environment
+    # secrets are not.
+    environment: production
     runs-on: ubuntu-latest
     if: github.event.head_commit.author.email != 'sync@openaccountants.com'
     steps:
