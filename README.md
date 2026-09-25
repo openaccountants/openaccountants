@@ -140,6 +140,6 @@ Independent, open-source review aids and calculation tools that complement the O
 ## License
 
 - **Code** (mcp/, scripts/, tools/): [AGPL-3.0](LICENSE)
-- **Guide content**: OpenAccountants Guide License v1.0 — see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
+- **Guide content**: [OpenAccountants Guide License v1.0](LICENSES/LicenseRef-OA-Guide-License-1.0.txt) — what applies to what in [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
 
 **Contact:** info@openaccountants.com · [Security policy](SECURITY.md) · [Cite this repo](CITATION.cff)
