@@ -1,16 +1,13 @@
-# Core-team review is requested for every PR
-* @michaelcutajar1995
+# Only the files where a mistake is expensive need the founder's review.
+# Everything else can be merged by maintainers without waiting on one person.
 
-# Skills changes require review
-/skills/ @michaelcutajar1995
-/packages/ @michaelcutajar1995
+# Workflows, CI and this file: they hold deploy keys and decide what runs.
+/.github/ @michaelcutajar1995
 
-# Foundation and orchestration changes are critical
-/skills/foundation/ @michaelcutajar1995
-/skills/orchestrator/ @michaelcutajar1995
-
-# Sync-integrity controls are owned by the core team
-/scripts/check-sync-integrity.py @michaelcutajar1995
-/tests/test_sync_integrity.py @michaelcutajar1995
-/.github/workflows/sync-integrity.yml @michaelcutajar1995
-/docs/WEBSITE-SYNC.md @michaelcutajar1995
+# Licence and legal terms: changes here change what we can sell.
+/LICENSE @michaelcutajar1995
+/LICENSES/ @michaelcutajar1995
+/LICENSING.md @michaelcutajar1995
+/REUSE.toml @michaelcutajar1995
+/CLA.md @michaelcutajar1995
+/COMMERCIAL-LICENSING.md @michaelcutajar1995
