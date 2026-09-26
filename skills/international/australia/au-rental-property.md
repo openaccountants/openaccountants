@@ -1,10 +1,10 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.3"
+version: "1.4"
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-22
+last_updated: 2026-09-26
 review_status: pending_review
 category: international
 tier: 2
@@ -17,9 +17,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.3
+## Australia Rental Property -- Income & Deductions Skill v1.4
 
-Australia Rental Property -- Income & Deductions Skill v1.3
+Australia Rental Property -- Income & Deductions Skill v1.4
 
 ## Section 1 -- Quick Reference
 
@@ -36,7 +36,7 @@ Australia Rental Property -- Income & Deductions Skill v1.3
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.2 |
+| Skill version | 1.4 |
 
 ### Select the income year before calculating
 
@@ -128,6 +128,8 @@ income year, except where a section says otherwise.
 | Tax agent fee (rental schedule portion) | Deductible |  |
 | Travel to property (removed from 1 Jul 2017) | NOT deductible | Unless carrying on a rental property business |
 
+- **Borrowing expenses** — Loan establishment fees, lenders mortgage insurance, valuation fees and stamp duty on the mortgage are borrowing expenses, not interest. If they total more than $100, spread them over five years or the loan term, whichever is shorter; $100 or less is deductible in the year incurred.  _([ITAA 1997 (Cth) s 25-25](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/25-25); [ATO, Common property expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/common-property-expenses))_
+
 ### 2.4 Repairs vs Improvements (TR 97/23)
 
 **Repairs vs Improvements (TR 97/23)**  _([TR 97/23](https://www.ato.gov.au/law/view/document?docid=TXR/TR9723/NAT/ATO/00001))_
@@ -142,6 +144,8 @@ income year, except where a section says otherwise.
 | Example: replacing all tiles with stone | -- | Improvement |
 | Example: replacing broken tap with same model | Repair | -- |
 | Example: full kitchen renovation | -- | Improvement |
+
+- **Identify the entirety and the cause** — For each repair, identify the asset or entirety repaired, its condition when acquired, the cause of the deterioration and what the work changed. Modern materials can restore an asset without making every job an improvement, and an itemised invoice that separates repair from capital work supports the split.  _([ATO, Repair and maintenance expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/repair-and-maintenance-expenses))_
 
 ### 2.5 Division 40 -- Plant & Equipment Depreciation
 
@@ -165,6 +169,7 @@ The table follows Table A, Residential property operators (67110), in the *Incom
 - **Diminishing value rate** — 200% ÷ effective life
 - **Prime cost rate** — 100% ÷ effective life
 - **Limitation (from 1 Jul 2017)** — For residential rental properties, only the first owner (or entity that had the asset newly installed) can claim Div 40 deductions. Subsequent owners cannot claim plant & equipment depreciation on existing assets -- they inherit zero depreciable value for previously used items (unless an exception applies, e.g., refurbishment by new owner).
+- **Exceptions to the second-hand asset limit** — The limit has commencement and transitional rules and exceptions, including qualifying new residential premises, substantially renovated premises and specified entities or businesses. A new appliance bought by the owner is not denied because the building is old; the test is whether the asset was previously used.  _([ATO, Second-hand depreciating assets](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/depreciating-assets-in-rental-properties/second-hand-depreciating-assets))_
 
 ### 2.6 Division 43 -- Capital Works Deduction
 
@@ -183,6 +188,7 @@ The table follows Table A, Residential property operators (67110), in the *Incom
 ### 2.7 Interest Deductibility
 
 - **Nexus requirement** — The loan must have a clear nexus to producing rental income. Key rules follow in the table.
+- **Mixed-purpose loans and redraws** — A private redraw creates a private component of the loan, and later repayments reduce the rental and private components proportionately; the owner cannot direct every repayment to the private debt. Interest follows the use of the borrowed money, so trace each drawdown and keep the split current.  _([ATO, Interest expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/interest-expenses); [TR 2000/2](https://www.ato.gov.au/law/view/document?docid=TXR/TR20002/NAT/ATO/00001))_
 
 **Interest Deductibility Scenarios**
 
@@ -326,10 +332,12 @@ The table follows Table A, Residential property operators (67110), in the *Incom
 ### 6.2 Part-Year Rental / Part-Private Use
 
 - **Apportionment rule** — Apportion all expenses on a time basis (days rented or available ÷ 365). Interest remains fully deductible if the property was available for the full year even if vacant.
+- **Co-owners and domestic arrangements** — Co-owners allocate income and expenses by their legal interests; one owner paying the bills does not change the split. A partnership carrying on a rental business needs separate analysis, and sharing household costs with a family member is not automatically a commercial rental arrangement.  _([ATO, Rental income you must declare](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-income-you-must-declare))_
 
 ### 6.3 Holiday Homes
 
 - **Holiday home deduction limitation** — If the property is available for rent at below-market rates, or restricted to holiday periods only, or rented to relatives at reduced rates -- deductions are limited to income received (no negative gearing). ATO scrutinises holiday letting closely.
+- **Section 26-50 leisure facilities** — Section 26-50 denies expenses associated with owning or using a leisure facility unless it is used or held mainly to produce assessable income. Offering a holiday home for a few rental weeks does not meet that requirement; keep advertisements, agent agreements, booking records and evidence of commercially realistic rent and tenant access.  _([ITAA 1997 (Cth) s 26-50](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/26-50); [ATO, How to claim rental expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses))_
 
 ### 6.4 Subdivision and Development
 

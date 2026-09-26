@@ -3,7 +3,7 @@ name: leaving-australia-tax-residency-cgt
 description: Ceasing Australian tax residency triggers one of tax's strangest decisions — CGT event I1 deems you to sell your entire share portfolio the day you leave, unless you elect otherwise. Add the loss of the main-residence exemption for non-residents, the death of the tax-free threshold, HECS repayments that chase worldwide income, and super you cannot touch, and 'moving overseas' becomes a sequencing problem. This Guide sequences it.
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-08-03
+last_updated: 2026-09-26
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -163,6 +163,63 @@ collide). Two destination-specific notes our corridor data keeps surfacing:
 
 ---
 
+## Part 7 — Details that change the answer
+
+The Parts above give the shape of the decision. These points, checked against the primary
+sources on 8 September 2026, are the ones that most often change the number.
+
+- **The residency date comes from the facts.** Apply all four tests in TR 2023/1 and record
+  homes, family, employment, travel, conduct and intentions. An overseas lease or job does not
+  end residency by itself, and the cessation date cannot be chosen for a preferred tax result.
+  [TR 2023/1](https://www.ato.gov.au/law/view/document?docid=TXR/TR20231/NAT/ATO/00001)
+- **I1 excludes less than "all TAP".** Section 104-160 excludes Australian real property,
+  permanent-establishment assets and rights or options over them; an indirect Australian real
+  property interest can remain inside the event. Prepare a cessation-date schedule of ownership,
+  acquisition dates, cost bases, reduced cost bases and supported market values. [ITAA 1997 (Cth) s 104-160](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-160)
+- **The choice is all or nothing.** The section 104-165 choice covers every affected asset, not
+  selected winners or losers, and paying I1 does not guarantee that all future gains escape
+  Australian tax. Compare the immediate tax and cash requirement with later Australian and
+  destination-country tax, including losses, likely disposal dates, the foreign-resident discount
+  restriction, treaty effects and foreign tax relief. [ITAA 1997 (Cth) s 104-165](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/104-165)
+- **Events from 1 July 2027.** Apply the enacted CGT changes and their transitional rules before
+  extending any comparison past that date. [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/text)
+- **The home, precisely.** The life-events exception needs a continuous foreign-resident period
+  of six years or less plus a specified terminal illness, death or relationship breakdown; the
+  ordinary six-year absence rule does not overcome the foreign-resident restriction. If the home
+  is rented, keep occupation and rental dates and establish whether the first-income-use market
+  value rule applies; not every conversion to rental resets the cost base. [ITAA 1997 (Cth) s 118-110](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-110)
+- **Withholding is a credit.** For contracts from 1 January 2025 the purchaser withholds 15%
+  with no value threshold; the amount is credited in the return, and a variation is applied
+  for before settlement. [ATO, FRCGW overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview)
+- **Study loans: seven days.** HELP, VSL and AASL borrowers who intend to live overseas for 183
+  days or more in any 12-month period must submit the overseas travel notification and update
+  contact details within seven days of leaving, then report worldwide income or lodge the
+  non-lodgment advice each year. [ATO, Overseas repayments](https://www.ato.gov.au/overseasrepayments)
+- **DASP excludes more than citizens.** Departure alone releases nothing. DASP needs its temporary
+  visa, departure and eligibility conditions, and Australian and New Zealand citizens and
+  Australian permanent residents are excluded. Check the ordinary conditions of release and the
+  fund's insurance terms separately. [ATO, DASP](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp)
+- **SMSF: three conditions, and the two years are a limit.** Review establishment or Australian
+  assets, central management and control ordinarily in Australia, and the active member test.
+  The temporary-absence treatment does not authorise managing the fund overseas for two years,
+  and appointing a nominee does not settle where decisions are made. Resolve the arrangements
+  before departure. [ATO, Check your fund is an Australian super fund](https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/self-managed-super-funds-smsf/setting-up-an-smsf/check-your-fund-is-an-australian-super-fund)
+- **Income in the departure year.** Apply the part-year tax-free threshold and classify each
+  receipt by timing, source and treaty. A bonus paid after departure is not automatically taxed at
+  a flat 30%, an overseas employer does not by itself make salary foreign-source, rental income can
+  remain assessable with eligible deductions rather than losses that must be carried forward, and
+  investment income may fall under withholding rather than assessment. Tell banks, registries and
+  payers when residency changes.
+- **Coming back.** Section 855-45 resets the first cost base element to market value for relevant
+  assets when an individual becomes resident, but it excludes taxable Australian property and
+  pre-CGT assets and has further qualifications; assets kept inside TAP through the departure
+  choice get no universal reset. Employee share scheme interests have their own rules. [ITAA 1997 (Cth) s 855-45](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/855-45)
+- **The destination.** Determine the destination's residency, employment, investment and pension
+  rules directly. Singapore, for one, taxes employment exercised there for an overseas employer;
+  do not assume the salary is exempt.
+
+---
+
 ## Sources (primary, verify current figures)
 
 ITAA 1997 s.104-160 (CGT event I1) and the TAP definition (s.855); ATO guidance on residency
@@ -173,6 +230,10 @@ ITAA 1997 s.104-160 (CGT event I1) and the TAP definition (s.855); ATO guidance 
 levy); DASP rules (temporary residents only); SMSF residency conditions; franking/withholding
 treatment of non-resident investors; Australia's treaty network (and the absence of an
 AU–UAE income-tax treaty); UK FIG regime for the AU→UK leg.
+
+Part 7 cites ITAA 1997 sections 104-160, 104-165, 118-110 and 855-45 on the ATO legal database,
+TR 2023/1, the ATO pages on foreign resident capital gains withholding, overseas study loan
+repayments, DASP and SMSF residency, and the Treasury Laws Amendment (Tax Reform No. 1) Act 2026.
 
 ---
 
