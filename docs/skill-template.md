@@ -24,6 +24,19 @@
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change when present. Keep any body-heading version in step |
 
+## Platform-written keys
+
+The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md)) writes these keys when it renders a Guide. Do not add or edit them in a PR: the platform owns their values and rewrites them on the next export. Leave them in place when you edit a Guide that already carries them. None of them is a quality state; `tier` remains the only quality field, and `review_status` records where the accountant review stands. `scripts/validate-guides.py` ignores keys it does not know, so a key outside this document is undefined, not validated.
+
+| Key | Values seen | Notes |
+|-----|-------------|-------|
+| `review_status` | `current` or `pending_review` | Whether the current text carries a professional review. A substantive edit sets the Guide back to `pending_review` until it is reviewed again |
+| `license` | `AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)` | Written verbatim by the export. [LICENSING.md](../LICENSING.md) is the licence reference |
+| `authored_by` | `OpenAccountants team` | Present when the platform team, not a named accountant or GitHub contributor, authored the current revision |
+| `trust_label` | `By OpenAccountants` | Display attribution for the website. Not a review claim |
+
+The export has also written `drafted_by` and `approved_by` (90 Guides, values `OpenAccountants` and `pending`), `validation_status` (5) and `validated` (4). Treat them the same way: leave them alone and do not add them to new files.
+
 ## Sync integrity rules
 
 `last_updated` and a numeric `version` are monotonic content metadata: an edit
