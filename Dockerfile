@@ -1,5 +1,5 @@
 # OpenAccountants MCP server — container image for local development and
-# self-hosting.  Builds the Python MCP package and runs it under FastMCP's
+# self-hosting.  Builds the Python MCP package and runs it under the MCP SDK's
 # Streamable-HTTP transport so remote MCP clients (Claude Desktop custom
 # connectors, ChatGPT, agents behind a reverse proxy, etc.) can connect over
 # HTTP instead of stdio.

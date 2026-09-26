@@ -49,10 +49,22 @@ from typing import Any
 from urllib.parse import urlencode
 
 import yaml
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
+from mcp.server.mcpserver.exceptions import ToolError
 from mcp.types import ToolAnnotations
 
 log = logging.getLogger(__name__)
+
+
+class ToolInputError(ToolError, ValueError):
+    """Bad input to a tool, with a message the client is meant to see.
+
+    The 2.x SDK forwards a ``ToolError``'s text to the model as an ``isError``
+    result but hides every other exception behind "Error executing tool";
+    subclassing ``ValueError`` too keeps the plain-Python contract for direct
+    callers and the existing tests.
+    """
+
 
 # ---------------------------------------------------------------------------
 # Resolve repo root + packages directory
@@ -96,7 +108,7 @@ def _safe_resolve(packages_dir: Path, *segments: str) -> Path:
     try:
         joined.relative_to(root)
     except ValueError:
-        raise ValueError("Path escapes allowed root")
+        raise ToolInputError("Path escapes allowed root")
     return joined
 
 
@@ -465,17 +477,17 @@ def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
     index, ambiguous, _ = _catalogue()
     if slug in ambiguous:
         paths = ", ".join(ambiguous[slug])
-        raise ValueError(
+        raise ToolInputError(
             f"Skill '{slug}' is ambiguous because packaged copies differ: "
             f"{paths}. Resolve the duplicate source names before using it."
         )
     rec = index.get(slug)
     if rec is None:
-        raise ValueError(f"Skill '{slug}' not found")
+        raise ToolInputError(f"Skill '{slug}' not found")
     fpath = _safe_resolve(PACKAGES_DIR, rec["relpath"])
     size = fpath.stat().st_size
     if size > MAX_FILE_BYTES:
-        raise ValueError(f"File too large ({size:,} bytes, limit {MAX_FILE_BYTES:,})")
+        raise ToolInputError(f"File too large ({size:,} bytes, limit {MAX_FILE_BYTES:,})")
     _, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
     return rec, body
 
@@ -544,15 +556,15 @@ if _TRANSPORT not in _VALID_TRANSPORTS:
     )
 
 # Env-driven HTTP wiring.  For stdio these values are unused; for HTTP transports
-# they're plumbed into the FastMCP constructor so the wrapped Settings pick them
-# up (FastMCP overrides env-driven Settings with its own kwargs, so we read the
-# environment here ourselves).  HTTP is loopback-only unless an operator
+# ``main()`` passes them to ``MCPServer.run()``, which is where the 2.x SDK takes
+# transport settings (the constructor no longer accepts them, and the SDK does
+# not read ``MCP_*`` variables itself).  HTTP is loopback-only unless an operator
 # deliberately sets MCP_HOST for a reverse-proxy or other controlled deployment.
 _HTTP_HOST = os.environ.get("MCP_HOST") or "127.0.0.1"
 _HTTP_PORT = int(os.environ.get("MCP_PORT", "8000"))
 _STREAMABLE_HTTP_PATH = os.environ.get("MCP_STREAMABLE_HTTP_PATH", "/mcp")
 
-mcp = FastMCP(
+mcp = MCPServer(
     "OpenAccountants",
     instructions=(
         "OpenAccountants MCP — open-source tax & accounting skills for AI agents "
@@ -576,12 +588,9 @@ mcp = FastMCP(
         "submit under their own account.  The `skill-feedback` prompt drives "
         "the structured interview for skill-specific feedback."
     ),
-    host=_HTTP_HOST,
-    port=_HTTP_PORT,
-    streamable_http_path=_STREAMABLE_HTTP_PATH,
 )
 
-_READONLY = ToolAnnotations(readOnlyHint=True, openWorldHint=False)
+_READONLY = ToolAnnotations(read_only_hint=True, open_world_hint=False)
 
 
 @mcp.tool(annotations=_READONLY)
@@ -691,7 +700,7 @@ def search_skills(query: str, jurisdiction: str | None = None) -> dict[str, Any]
     """
     q = (query or "").strip()
     if not q:
-        raise ValueError("query is required")
+        raise ToolInputError("query is required")
     jx = jurisdiction.upper() if jurisdiction else None
 
     results = []
@@ -1202,9 +1211,9 @@ def submit_feedback(
     """
     s = (summary or "").strip()
     if not s:
-        raise ValueError("summary is required")
+        raise ToolInputError("summary is required")
     if rating is not None and not (1 <= rating <= 5):
-        raise ValueError("rating must be between 1 and 5")
+        raise ToolInputError("rating must be between 1 and 5")
 
     if title:
         issue_title = title.strip()
@@ -1384,7 +1393,19 @@ Use only data from the skills. Do not supplement with general knowledge."""
 
 def main() -> None:
     """Run the MCP server using the transport selected by ``MCP_TRANSPORT``."""
-    mcp.run(transport=_TRANSPORT)
+    # ``run()`` accepts only the keywords its transport understands, so the
+    # HTTP settings are passed per transport rather than unconditionally.
+    if _TRANSPORT == "stdio":
+        mcp.run(transport="stdio")
+    elif _TRANSPORT == "sse":
+        mcp.run(transport="sse", host=_HTTP_HOST, port=_HTTP_PORT)
+    else:
+        mcp.run(
+            transport="streamable-http",
+            host=_HTTP_HOST,
+            port=_HTTP_PORT,
+            streamable_http_path=_STREAMABLE_HTTP_PATH,
+        )
 
 
 if __name__ == "__main__":

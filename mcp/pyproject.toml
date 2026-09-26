@@ -5,10 +5,9 @@ description = "MCP server giving AI assistants on-demand access to open-source a
 readme = "README.md"
 requires-python = ">=3.10"
 license = "AGPL-3.0-only"
-# mcp is capped below 2.0: 2.x removes `mcp.server.fastmcp`, which server.py
-# imports, so the server cannot start. Lift the cap only with a reviewed
-# migration to the 2.x HTTP stack.
-dependencies = ["mcp>=1.0.0,<2", "pyyaml>=6.0.3"]
+# server.py targets the 2.x SDK (`mcp.server.mcpserver.MCPServer`, transport
+# settings on `run()`); 1.x has neither, so the floor is a hard requirement.
+dependencies = ["mcp>=2,<3", "pyyaml>=6.0.3"]
 keywords = [
     "tax", "accounting", "mcp", "ai", "accountant", "vat", "gst",
     "income-tax", "open-source", "self-employed", "freelancer",
