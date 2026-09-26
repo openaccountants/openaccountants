@@ -2,21 +2,21 @@
 name: au-not-for-profit
 description: >
   Use this skill whenever asked about Australian not-for-profit (NFP) tax compliance -- income tax exemption self-assessment, the annual NFP self-review return, ACNC charity registration and ATO endorsement, the mutuality principle for licensed clubs and member associations, taxable NFP shade-in rates, deductible gift recipient (DGR) endorsement and gift/contribution deductibility, FBT rebate and exemption caps for NFP employers, GST concessions for NFPs, PAYG withholding for NFP employees, or NFP salary packaging. Trigger on phrases like "NFP tax", "charity tax concession", "DGR", "deductible gift", "mutuality", "self-review return", "FBT rebate", "club taxable income". ALWAYS read this skill before touching any NFP tax work.
-version: 1.1
+version: 1.2
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-24
+last_updated: 2026-09-27
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.1
+# Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.2
 
-## Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.1
+## Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.2
 
-## Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.1
+## Australia Not-for-Profit -- NFP/DGR Tax Compliance Skill v1.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -316,7 +316,7 @@ GST
 
 PAYROLL
   PAYG withholding registered and withheld: [Y/N]   STP current: [Y/N]
-  Super guarantee 12% (from 1 Jul 2026): [Y/N]
+  Super guarantee 12% (from 1 Jul 2025): [Y/N]
   State payroll tax exemption claimed: [Y/N -- state: ____]
 
 FLAGS
