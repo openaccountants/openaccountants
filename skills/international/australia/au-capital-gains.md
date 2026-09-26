@@ -1,10 +1,10 @@
 ---
 name: au-capital-gains
 description: "Use this skill for any Australian capital gains tax question, for any entity type. Trigger on: \"CGT Australia\", \"capital gains Australia\", \"sell shares Australia\", \"50% CGT discount\", \"cost base Australia\", \"capital loss\", \"carry forward capital losses\", \"small business CGT concessions\", \"SBCGT\", \"active asset test\", \"15-year exemption\", \"retirement exemption CGT\", \"CGT rollover\", \"CGT event A1\", \"main residence exemption\", \"Australian CGT\", \"sell my Australian company\", \"dispose of property Australia\", \"CGT indexation from 2027\". Covers the calculation workflow from CGT event and cost base through losses, discounts and concessions, entity and residency differences, and the enacted 1 July 2027 changes. Routes to au-small-business-cgt, au-nonresident-cgt, au-rental-property and au-crypto-tax for their specialist rules."
-version: 1.5
+version: 1.6
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-09-26
 review_status: pending_review
 depends_on:
   - au-individual-return
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Capital Gains
 
-## Australia Capital Gains Tax v1.5
+## Australia Capital Gains Tax v1.6
 
 > **General reference only.** This skill is general tax and accounting reference material for
 > AI-assisted workflows. It has not been reviewed for any specific person's facts, documents,
@@ -108,6 +108,8 @@ reduce other income; it is carried forward indefinitely and used against future 
 - **Multiple events** — More than one event can apply to the same transaction. Where that happens, the most specific event generally prevails.
 - **CGT assets** — CGT assets include land and buildings, shares and units, goodwill, contractual rights, options, crypto assets, foreign currency and leases.
 - **A gift is a disposal** — A gift is a disposal. Where parties are not dealing at arm's length, or where no consideration passes, the market value substitution rule replaces the actual proceeds with market value.
+- **Capital versus revenue** — Establish whether the profit is on capital or revenue account before applying CGT. A trading business or an isolated profit-making transaction produces ordinary income, and section 118-20 reduces a capital gain to the extent the amount is otherwise assessable, so the same profit is not taxed twice. Holding an asset for more than a year does not by itself make it a capital investment.  _([ITAA 1997 (Cth) s 118-20](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-20))_
+- **Main residence conditions** — The main residence exemption depends on the dwelling being the taxpayer's home, land of two hectares or less, the extent of any income-producing use, the absence rule and residency at the CGT event. A property bought as an investment is not exempt because the owner later moves in: the exemption is apportioned to the days it was the main residence. Check occupation, absences and use before applying it.  _([ITAA 1997 (Cth) s 118-110](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-110); [s 118-185](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-185))_
 
 ## Section 4 - Cost base and reduced cost base
 
@@ -123,6 +125,7 @@ reduce other income; it is carried forward indefinitely and used against future 
 
 - **The reduced cost base** — The reduced cost base is used to work out a capital loss and has five elements. Elements 1, 2, 4 and 5 match the cost base. Its third element replaces ownership costs with the assessable balancing-adjustment amounts specified in section 110-55(3), including its statutory relief cases. Apply the section's exclusions separately: subsection (4) excludes deductible amounts, including deductible balancing adjustments, and subsection (6) excludes recouped expenditure unless the recoupment is assessable. Do not subtract an assessable balancing adjustment merely because a deductible balancing adjustment is excluded.  _([ITAA 1997 (Cth) s 110-55](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/110-55))_
 - **Deductions reduce the cost base** — Amounts claimed as capital works deductions under Division 43 reduce the cost base, and element 3 excludes anything that was deductible. This is the most common cost base error on a rental property disposal. See `au-rental-property.md`.
+- **Selling costs belong in the cost base, not the proceeds** — Capital proceeds are the money and the market value of property received for the event. Agent commission, legal fees and other disposal costs are second-element cost base amounts. Reconcile proceeds to the contract before adding selling costs to the cost base, otherwise they are counted twice.  _([ITAA 1997 (Cth) s 116-20](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/116-20); [s 110-25](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/110-25))_
 
 ## Section 5 - Capital losses
 
@@ -150,6 +153,7 @@ reduce other income; it is carried forward indefinitely and used against future 
 - **The 12-month test** — The asset must be owned for at least 12 months before the CGT event, excluding the day of acquisition and the day of the event. Previous ownership can count where the asset was acquired through a deceased estate, through a relationship breakdown rollover, or as a replacement asset under a rollover for a lost, destroyed or compulsorily acquired asset.
 - **Exclusions from the discount** — - A home first used for rental or business less than 12 months before disposal. - Where the indexation method is chosen for an asset acquired before 21 September 1999. - A CGT event that creates a new asset, such as granting a lease or a restrictive covenant, because the asset was not held for 12 months. - Certain disposals of interests in companies and trusts with fewer than 300 members. - An income asset converted into a capital asset to access the discount, under Part IVA.
 - **Additional affordable housing discount** — An additional discount of up to 10% can apply to individuals who provide eligible affordable rental housing. %  _([ATO, CGT discount](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/cgt-discount))_
+- **Trust capital gains in a beneficiary's hands** — A beneficiary specifically entitled to a trust capital gain grosses up any discounted or reduced amount under Subdivision 115-C, then applies their own capital losses, discount percentage and concessions. The trust's discount does not settle the beneficiary's net capital gain. See `au-trust-distributions.md`.  _([ITAA 1997 (Cth) s 115-215](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/115-215))_
 
 ## Section 7 - Small business CGT concessions
 
@@ -165,6 +169,7 @@ reduce other income; it is carried forward indefinitely and used against future 
 | Rollover | Defers the gain | A replacement asset must be acquired, or capital improvement incurred, within the replacement asset period |
 
 - **Order of application** — Capital losses, then the general discount, then the 50% active asset reduction, then the retirement exemption or rollover on what remains. Applied in that order the effective rate on an eligible gain can approach nil, which is why the ATO scrutinises the active asset test and the aggregation rules closely.
+- **Gateways and the active asset test period** — The basic conditions are met through a CGT small business entity with aggregated turnover below $2 million, the $6 million maximum net asset value test, or the partnership and passively held asset pathways, counting connected entities and affiliates. The asset must be active for at least half the test period, or 7.5 years where it was owned for more than 15 years. Shares and trust interests carry additional conditions.  _([ITAA 1997 (Cth) s 152-10](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/152-10); [s 152-35](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/152-35))_
 
 ## Section 8 - Residency, foreign assets and withholding
 
@@ -261,6 +266,7 @@ Net capital gain included in assessable income    6,547.50
 - [ ] Small business concession conditions have been tested individually, not assumed as a set.
 - [ ] Withholding and clearance certificate obligations are addressed before settlement.
 - [ ] For a disposal in 2027-28 or later, Section 9 has been applied and the Acts have been read.
+- [ ] The workpapers hold the event date, proceeds, each cost base element, the loss and discount calculations, valuations, and any concession choice or rollover election.
 
 ## Section 13 - Sources
 
