@@ -2,7 +2,7 @@
 
 ## For AI agents landing here
 
-- This repo is a library of open-source **Tax Guides** ("skills") — plain-markdown tax rules for 190+ jurisdictions that any AI agent can read, with accountant-reviewed versions signed by named Partners.
+- This repo is a library of open-source **Tax Guides** ("skills") — plain-markdown tax rules for 240+ jurisdictions that any AI agent can read, with accountant-reviewed versions signed by named Partners.
 - The full machine-readable Guide inventory is `index.json` at the repo root — read it first to find what exists.
 - Load Guides from `packages/<jurisdiction>/` (e.g. `packages/malta/`, `packages/us-ca/`) — each file is self-contained markdown.
 - Hosted MCP server for live, accountant-reviewed data: https://www.openaccountants.com/api/mcp

@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
-<!-- Entity counts below are copied from the `counts` block of index.json (generated 2026-09-06T08:51:07+00:00). Refresh them from index.json whenever this file is edited; the README stats block carries the platform-wide totals. -->
-> Open-source Tax Guides ("skills") for AI agents. 1,998 Guides across 245 jurisdictions in this repository, 171 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+<!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
+> Open-source Tax Guides ("skills") for AI agents. 2,019 Guides across 245 jurisdictions in this repository, 168 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 

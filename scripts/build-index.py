@@ -17,7 +17,7 @@ Dependency-free (stdlib only). Frontmatter is parsed with a simple ---block
 line scanner; malformed YAML is tolerated by regex-extracting the known keys.
 
 Usage:
-    python3 scripts/build-index.py            # write index.json at repo root
+    python3 scripts/build-index.py            # write index.json and restamp the llms.txt counts
     python3 scripts/build-index.py --out PATH # write elsewhere (used by CI)
 """
 
@@ -177,15 +177,52 @@ def build_index():
     }
 
 
+# The counts sentence in llms.txt. A default build restamps it from the same
+# counts that go into index.json, so the two never disagree; llms-full.txt
+# embeds llms.txt and picks the figures up on its next build.
+LLMS_COUNTS_RE = re.compile(
+    r"[\d,]+ Guides across [\d,]+ jurisdictions in this repository, "
+    r"[\d,]+ of them accountant-reviewed"
+)
+
+
+def stamp_llms_counts(counts, path=None):
+    """Rewrite the counts sentence in llms.txt; return True when it changed."""
+    path = path or os.path.join(REPO_ROOT, "llms.txt")
+    # newline="" keeps the file's own line endings on both read and write.
+    with open(path, encoding="utf-8", newline="") as fh:
+        text = fh.read()
+    stamped, n = LLMS_COUNTS_RE.subn(
+        f"{counts['guides']:,} Guides across {counts['jurisdictions']:,} "
+        f"jurisdictions in this repository, {counts['accountant_reviewed']:,} "
+        "of them accountant-reviewed",
+        text,
+    )
+    if n != 1:
+        # A missing or duplicated sentence is a docs defect, not a reason to
+        # fail the build that the nightly export depends on.
+        print(f"warning: llms.txt counts sentence found {n} times, expected 1; not restamped", file=sys.stderr)
+        return False
+    if stamped == text:
+        return False
+    with open(path, "w", encoding="utf-8", newline="") as fh:
+        fh.write(stamped)
+    return True
+
+
 def main():
     out_path = os.path.join(REPO_ROOT, "index.json")
-    if "--out" in sys.argv:
+    custom_out = "--out" in sys.argv
+    if custom_out:
         out_path = sys.argv[sys.argv.index("--out") + 1]
     index = build_index()
     with open(out_path, "w", encoding="utf-8") as fh:
         json.dump(index, fh, indent=1, ensure_ascii=False)
         fh.write("\n")
     counts = index["counts"]
+    # --out is CI's freshness check; it must not touch tracked files.
+    if not custom_out and stamp_llms_counts(counts):
+        print("llms.txt counts restamped")
     print(f"index written to {out_path}")
     print(f"  guides: {counts['guides']}")
     print(f"  jurisdictions: {counts['jurisdictions']}")

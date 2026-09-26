@@ -97,7 +97,7 @@ This list is derived from each skill's explicit `tier: 1` plus its reviewer name
 
 ### Source-cited drafts (Tier 2)
 
-Everything else in this repo. ~700+ skills covering 134 countries and 51 US states. Each one's frontmatter shows the research date and the authoritative sources cross-checked.
+Everything else in this repo; the `counts` block of `index.json` gives the current total. Each one's frontmatter shows the research date and the authoritative sources cross-checked.
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.openaccountants/openaccountants-mcp",
-  "description": "Open-source accounting skills for AI — tax, bookkeeping, payroll, e-invoicing, formation, financial statements, cross-border (Pillar Two, CBAM, FATCA/CRS, DST), and sector verticals (banking, insurance, funds, SaaS, shipping). 134 countries + 51 US states + 13 Canadian provinces/territories. Upload to Claude/ChatGPT or connect via MCP.",
+  "description": "Open-source accounting skills for AI — tax, bookkeeping, payroll, e-invoicing, formation, financial statements, cross-border (Pillar Two, CBAM, FATCA/CRS, DST), and sector verticals (banking, insurance, funds, SaaS, shipping). 180+ countries + 51 US states + 13 Canadian provinces/territories. Upload to Claude/ChatGPT or connect via MCP.",
   "version": "0.3.0",
   "homepage": "https://openaccountants.com",
   "repository": {
