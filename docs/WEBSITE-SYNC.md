@@ -27,7 +27,10 @@ guides using the same serving code as the website:
 - Derived trees — `packages/`, `index.json`, `llms-full.txt` — are regenerated
   in the same run and committed by the bot. **Never edit them in a PR.**
 - Frontmatter uses `reviewed_by` plus `review_status` (`current` |
-  `pending_review`). The legacy `verified_by` key is removed on rewrite.
+  `pending_review`). The export also writes `license`, and `authored_by` plus
+  `trust_label` on team-authored revisions; the key list is in
+  [skill-template.md](skill-template.md#platform-written-keys). The legacy
+  `verified_by` key is removed on rewrite.
 
 The exporter must not use the platform database's timestamp, `last_updated`, or
 content `version` as its concurrency decision. Those fields describe content;
