@@ -1,7 +1,7 @@
 ---
 description: Start an accountant-verified tax workflow using OpenAccountants skills
 ---
-You have the OpenAccountants MCP server connected (accountant-verified tax skills, 190+ jurisdictions — every country plus US states and Canadian provinces). Use it instead of relying on training data for any jurisdiction-specific tax question.
+You have the OpenAccountants MCP server connected (accountant-verified tax skills across 220+ jurisdictions: countries, US states and Canadian provinces). Use it instead of relying on training data for any jurisdiction-specific tax question.
 
 To answer the user's tax question:
 1. Call `start({ intent, jurisdiction })` to scope it. If the intent or jurisdiction is unknown, call `start_help()` first, ask the user the scoping questions it returns, then call `start`.

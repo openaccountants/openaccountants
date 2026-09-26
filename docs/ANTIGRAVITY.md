@@ -16,7 +16,7 @@ In your Antigravity MCP settings or workspace configuration, add the OpenAccount
     "openaccountants": {
       "url": "https://www.openaccountants.com/api/mcp",
       "transport": "streamable-http",
-      "description": "Open-source Tax & Accounting Guides reviewed by licensed CPAs/CAs/EAs across 230+ jurisdictions."
+      "description": "Open-source Tax & Accounting Guides reviewed by licensed CPAs/CAs/EAs across 220+ jurisdictions."
     }
   }
 }
