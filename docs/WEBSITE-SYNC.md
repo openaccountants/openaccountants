@@ -1,5 +1,9 @@
 # Website ↔ repo sync
 
+For the proposed change-driven replacement and contributor-visible publication
+receipts, see [SYNC-DESIGN.md](SYNC-DESIGN.md). That design is not deployed;
+the current implementation and required integrity contract are described here.
+
 The platform database (openaccountants.com) is the operational source for
 website guide content. This repository is its public projection, and merged
 external changes to `skills/**` must be ingested back into the platform before
