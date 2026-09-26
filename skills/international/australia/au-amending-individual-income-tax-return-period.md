@@ -3,7 +3,7 @@ name: au-amending-individual-income-tax-return-period
 description: How an Australian individual requests or receives an amendment to an income tax assessment, the time limit that applies, and how shortfall penalties and the reasonably arguable position test work — for tax agents and accountants advising individual clients.
 jurisdiction: AU
 tax_year: 2026
-last_updated: 2026-09-03
+last_updated: 2026-09-26
 review_status: pending_review
 drafted_by: OpenAccountants
 approved_by: pending
@@ -68,6 +68,16 @@ Individuals, including sole traders, who need to correct an already-assessed inc
 | Source | all figures below | https://www.ato.gov.au/Business/Privately-owned-and-wealthy-groups/What-you-should-know/Tailored-engagement/Assessments-and-amendment-periods/ |
 | Standard ATO amendment period for most businesses in privately owned and wealthy groups | Four years | Page states the exception is where evidence of fraud or evasion is found, in which case there is no time limit; it also notes different amendment-period rules can apply in some transfer pricing, research and development and capital gains tax cases |
 
+**Sole trader four-year amendment period table**  _(https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments; https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170)_
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments and https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 |
+| Sole traders, 2024-25 and later income years | 4 years | Taxpayer-requested amendment under item 3A of subsection 170(1) ITAA 1936: an application in the approved form within four years, after the ordinary two-year period has ended; applies to assessments issued after 1 January 2025 for income years starting on or after 1 July 2024. It is not an unrestricted four-year ATO review period |
+| Sole traders, 2023-24 and earlier income years | 2 years | The ordinary individual period |
+| Start of the period | The date the ATO gave notice of the assessment | Not the end of the income year and not the lodgement date |
+| Further amendments after an amended assessment | Restricted | Subsections 170(2) to (4) limit later amendments and allow particular matters to be revisited only in specified circumstances; business, partnership, trust and avoidance circumstances can take an individual outside the two-year category |
+
 ## The method, step by step
 
 1. Identify what the correct assessment should be and quantify the difference between the correct tax liability or credit entitlement and the amount calculated on the information already given — this difference is the "shortfall amount" as defined on the ATO false or misleading statements page (https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements).
@@ -80,6 +90,10 @@ Individuals, including sole traders, who need to correct an already-assessed inc
 8. Make the disclosure voluntarily rather than waiting for ATO contact, because the false or misleading statements page states the BPA will generally be reduced if the taxpayer voluntarily tells the ATO about the error, with the reduction depending on timing and the shortfall amount (https://www.ato.gov.au/individuals-and-families/paying-the-ato/interest-and-penalties/penalties/penalties-for-making-false-or-misleading-statements).
 9. On receipt of a penalty, check the notice. MT 2008/2 states the Commissioner is required under section 298-10 to give written notice of any liability for an administrative penalty and the reasons for it, except where a decision is made to remit all of the penalty (https://www.ato.gov.au/law/view/document?docid=MXR%2FMT20082%2FNAT%2FATO%2F00001).
 10. If the client is out of time to amend, or is dissatisfied with a penalty assessment, use the objection route: the individuals time-limit page directs out-of-time taxpayers to lodge an objection (https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/time-limits-on-amendments), and MT 2008/2 notes that under subsection 298-30(2) an entity dissatisfied with an assessment of penalty may object in the manner set out in Part IVC of the TAA (https://www.ato.gov.au/law/view/document?docid=MXR%2FMT20082%2FNAT%2FATO%2F00001).
+11. Recalculate every related item before submitting: taxable income, offsets, capital losses, Medicare levy and study loan repayment income can all move. A deduction added to a return does not produce a refund equal to the deduction multiplied by one marginal rate.
+12. Separate a favourable correction from a tax shortfall. An understated liability or overstated entitlement can create a shortfall amount; a correction that reduces tax is not a shortfall. Do not invent missing expenses, dates or valuations; mark incomplete items for resolution before submission.
+13. Choose the channel: ATO online services (in myGov linked to the ATO, select Manage tax returns, then Amend beside the income year), a registered tax agent, the paper amendment form, or a letter containing the required information. Enter the correct totals for the affected labels rather than replacing a total with the adjustment. A paper request must be signed by the taxpayer, the ATO charges no fee, and processing times are estimates, not a guarantee that a request completes before a deadline. Retain the submitted request and its acknowledgement (https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/how-to-request-an-amendment-to-your-tax-return).
+14. When the amended assessment issues, compare it with the reconciliation prepared at step 1: the tax difference, interest, penalties, credits, payment date and any effect on later returns. Retain the assessment and the evidence behind each corrected figure.
 
 ## Ask the client first
 
@@ -108,6 +122,8 @@ Individuals, including sole traders, who need to correct an already-assessed inc
 - https://www.ato.gov.au/law/view/document?docid=MXR%2FMT20082%2FNAT%2FATO%2F00001 (MT 2008/2 base penalty amount and threshold example table)
 - https://www.ato.gov.au/Business/Privately-owned-and-wealthy-groups/What-you-should-know/Tailored-engagement/Assessments-and-amendment-periods/ (four-year business amendment period table)
 - https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return (amendment process entry point, cited in the method)
+- https://www.ato.gov.au/individuals-and-families/your-tax-return/amend-your-tax-return/how-to-request-an-amendment-to-your-tax-return (channels, signature and fee rules, cited at step 13)
+- https://www.ato.gov.au/law/view/document?docid=PAC/19360027/170 (section 170 ITAA 1936: amendment periods, item 3A four-year sole trader period, subsections 170(2) to (4))
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 

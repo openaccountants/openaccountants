@@ -1,10 +1,10 @@
 ---
 name: au-nonresident-cgt
 description: "Use this skill for any non-resident selling Australian assets. Trigger on: \"non-resident CGT Australia\", \"TAP test Australia\", \"taxable Australian property\", \"FRCGW\", \"foreign resident capital gains withholding\", \"15% withholding Australia\", \"12.5% withholding Australia\", \"clearance certificate ATO\", \"sell Australian shares non-resident\", \"sell Australian property non-resident\", \"Australian CGT non-resident seller\", \"no CGT discount non-resident Australia\". Covers the TAP test, the foreign resident rate scale, FRCGW withholding (15%, no threshold, from 1 January 2025), clearance certificates. For Australian residents see au-capital-gains."
-version: 1.3
+version: 1.4
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-22
+last_updated: 2026-09-26
 review_status: pending_review
 category: international
 tier: 2
@@ -48,6 +48,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Portfolio shares (<10% interest in a listed company) | Generally NOT TAP regardless of asset composition |
 
 - **Critical question for company shares** — **Critical question for company shares** — Look through to the company's balance sheet. If >50% of the market value of the company's assets consists of Australian real property interests → TAP. If the company is an operating business with IP, goodwill, equipment, receivables → likely NOT TAP.
+- **Indirect interests: both tests** — A share or unit is an indirect Australian real property interest only if the non-portfolio interest test and the principal asset test are both met. The non-portfolio test counts the holder and associates, generally requires 10% or more, and can be met through a 12-month holding within the preceding 24 months. The principal asset test compares market values, not book values or the entity's business description.  _([ITAA 1997 (Cth) s 855-25](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/855-25); [s 855-30](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/855-30))_
 
 ## Section 4 — CGT Rate for Non-Residents
 
@@ -60,6 +61,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | SBCGT concessions | Available if all basic conditions met (including active asset test) |
 | Main residence exemption | Generally unavailable if a foreign resident at disposal. The life-events exception requires a continuous foreign-residence period of 6 years or less and a qualifying terminal illness, death or relationship breakdown, together with the other exemption conditions. Citizenship or permanent residence alone does not qualify. [ITAA 1997 section 118-110](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/118-110) |
 | Cost base calculation | Same as residents |
+
+- **Gains, losses and the order of steps** — Calculate each gain from capital proceeds and the adjusted cost base, and each loss from the reduced cost base, then apply capital losses and concessions in the statutory order. An asset that is not TAP produces a disregarded loss as well as a disregarded gain.  _([ITAA 1997 Div 855](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/855-15))_
+- **Changes from 1 July 2027** — The Treasury Laws Amendment (Tax Reform No. 1) Act 2026 changes CGT arrangements for events from 1 July 2027. This guide's discount and rate treatment covers events before that date; apply the enacted transitional rules to later transactions. See `au-capital-gains.md`.  _([Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade/text))_
 
 ## Section 5 — Foreign Resident Capital Gains Withholding (FRCGW)
 
@@ -80,6 +84,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 - **Clearance certificate for resident sellers** — **Clearance certificate for resident sellers** — If the seller is an Australian resident (not a foreign resident), the seller can apply for a clearance certificate from the ATO to confirm residency, relieving the buyer of the withholding obligation.
 - **Variation for non-resident sellers** — **Variation for non-resident sellers** — If the seller IS a non-resident but believes no tax is payable (e.g. asset is not TAP, or gain is nil due to losses), the seller can apply for a variation to reduce the withholding amount.
+- **Vendor declarations and excluded transactions** — Other TAP interests and options use the vendor declaration rules rather than a clearance certificate, and qualifying transactions on an approved stock exchange are excluded from withholding. Obtain the right document before settlement and arrange payment of the withheld amount to the ATO.  _([ATO, Foreign resident capital gains withholding overview](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/foreign-residents-and-capital-gains-tax/foreign-resident-capital-gains-withholding/foreign-resident-capital-gains-withholding-overview))_
 
 Applications: via ATO online portal (myGov / Tax Agent portal). Processing time: 14-28 days typically.
 
@@ -87,6 +92,7 @@ Applications: via ATO online portal (myGov / Tax Agent portal). Processing time:
 
 - **Filing requirement** — **Filing requirement** — A non-resident who sells TAP must lodge an Australian non-resident individual tax return for the year of disposal (even if no tax is payable after losses/concessions). Due date: 31 October following the end of the financial year (or later with a tax agent).
 - **TFN requirement** — **TFN requirement** — Australian Tax File Number (TFN) is required. Non-residents can apply via ATO.
+- **Reconcile the withholding credit** — The withheld amount is a credit in the vendor's assessment, not the final tax. Reconcile it in the Australian return, retain the purchaser's payment evidence and confirm the lodgement deadline for the entity.
 
 ## Section 8 — Interaction with Tax Treaties
 
