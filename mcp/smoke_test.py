@@ -4,7 +4,7 @@ Smoke test for the OpenAccountants MCP server.
 
 Run from the repo root (needs the MCP SDK + PyYAML, e.g. via uv):
 
-    uv run --python 3.12 --with "mcp>=1.0.0" --with pyyaml python mcp/smoke_test.py
+    uv run --python 3.12 --with "mcp>=2,<3" --with pyyaml python mcp/smoke_test.py
 
 If the dependencies aren't installed the server can't be imported. The test
 then runs a minimal filesystem check and still exits NON-ZERO, because "the
@@ -52,8 +52,8 @@ except ImportError as exc:
     check("malta-income-tax.md present", (PACKAGES_DIR / "malta" / "malta-income-tax.md").is_file())
     print()
     # A server that cannot be imported is a broken server. Exiting 0 here let a
-    # dependency upgrade that removes `mcp.server.fastmcp` (mcp 2.x does exactly
-    # that) report ALL CHECKS PASSED while nothing worked.
+    # dependency change that removed the server's SDK import path (the 1.x to
+    # 2.x rename did exactly that) report ALL CHECKS PASSED while nothing worked.
     lenient = os.environ.get("OA_SMOKE_ALLOW_FALLBACK") == "1"
     if failures:
         print(f"FAILED -- {failures} check(s).")

@@ -210,7 +210,7 @@ The AI will call the MCP tools behind the scenes to load the right country and d
 
 ## Docker (local development / self-hosting)
 
-For contributors who'd rather iterate inside a container, the repo root ships a `Dockerfile` that builds the MCP server and runs it under FastMCP's Streamable-HTTP transport:
+For contributors who'd rather iterate inside a container, the repo root ships a `Dockerfile` that builds the MCP server and runs it under the MCP SDK's Streamable-HTTP transport:
 
 ```bash
 docker build -t openaccountants-mcp .
