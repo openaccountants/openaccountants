@@ -11,10 +11,10 @@ description: >
   "activity statement", "annual leave", "long service leave",
   "minimum wage Australia", or any question about running payroll in Australia.
   ALWAYS read this skill before processing any Australian payroll work.
-version: 2.4
+version: 2.5
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-12
+last_updated: 2026-09-27
 review_status: pending_review
 category: payroll
 tier: 2
@@ -128,14 +128,15 @@ An under-18 employee must work more than 30 actual hours in the week to qualify 
 | --- | --- | --- |
 | NSW | $1,200,000 | 5.45% |
 | VIC | $1,000,000 maximum annual deduction | 4.85%; regional rate, phase-out and surcharges can apply |
-| QLD | $1,300,000 | 4.75% |
-| WA | $1,000,000 | 5.50% |
+| QLD | $1,300,000 deduction, reducing to nil at $10.4m | 4.75%; 4.95% above $6.5m Australian wages; mental health levy above $10m |
+| WA | $1,000,000, diminishing to nil at $7.5m | 5.50% |
 | SA | $1,500,000 | Varies (0%--4.95%) |
-| TAS | $1,250,000 | 4.00% |
-| ACT | $2,000,000 | 6.85% |
-| NT | $1,500,000 | 5.50% |
+| TAS | $1,250,000 | 4.00% to $2,000,000, then 6.1% |
+| ACT | $1,750,000 | 6.75% where Australia-wide wages are $20m or less, rising in tiers to 8.75% above $150m |
+| NT | $2,500,000 | 5.50%; 6.5% where Australia-wide wages are $100m or more |
 
-- **Payroll tax nature** — Payroll tax is a state/territory tax on total Australian wages above the threshold. Interstate employers must register in each jurisdiction where they have employees.
+- **Payroll tax nature** — Payroll tax is a state/territory tax on total Australian wages above the threshold. Interstate employers must register in each jurisdiction where they have employees. Deduction formulas, grouping, contractor and nexus rules are in `au-payroll-tax.md`.
+- **Payroll tax figures** — The table carries the 2026-27 thresholds and rates published by Payroll Tax Australia on 2 September 2026 and by each revenue office. The ACT moved to a $1.75m threshold with tiered rates from 1 July 2026, and the NT threshold rose to $2.5m from 1 July 2025.  _([Payroll Tax Australia, Rates and thresholds](https://www.payrolltax.gov.au/harmonisation/payroll-tax-rates-and-thresholds))_
 
 ### National Minimum Wage (from the first full pay period on or after 1 July 2026)
 

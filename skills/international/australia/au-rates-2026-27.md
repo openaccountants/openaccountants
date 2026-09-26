@@ -1,23 +1,23 @@
 ---
 name: au-rates-2026-27
 description: Use this skill whenever you need a current Australian tax rate, threshold, cap or due date for the 2026-27 or 2025-26 income year -- individual brackets, HELP repayment, Medicare levy and surcharge, super guarantee and contribution caps, Division 296, company rates, Div 7A benchmark, FBT, CGT caps and concessions, GST, PAYG instalment uplift, cents-per-km, car limits, penalty units, payroll tax, minimum wage or ASIC fees. Single-page rates card; every figure carries its source. Trigger on "what is the current rate", "2026-27 threshold", "how much is the cap", or any AU figure lookup. Load alongside the topic guide.
-version: 1.2
+version: 1.3
 jurisdiction: AU
 tax_year: 2025
-last_updated: 2026-09-22
+last_updated: 2026-09-27
 review_status: pending_review
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Australia Rates Card 2026-27 (with 2025-26) v1.2
+# Australia Rates Card 2026-27 (with 2025-26) v1.3
 
-## Australia Rates Card 2026-27 (with 2025-26) v1.2
+## Australia Rates Card 2026-27 (with 2025-26) v1.3
 
-## Australia Rates Card 2026-27 (with 2025-26) v1.2
+## Australia Rates Card 2026-27 (with 2025-26) v1.3
 
-## Australia Rates Card 2026-27 (with 2025-26) v1.2
+## Australia Rates Card 2026-27 (with 2025-26) v1.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -161,7 +161,7 @@ Single-page lookup for the figures every other Australian guide relies on. Each 
 | Payroll tax NSW | 5.45%, $1.2m threshold | Revenue NSW |
 | Payroll tax VIC | 4.85% (regional 1.2125%), $1.0m; surcharges >$10m | SRO Vic |
 | Payroll tax QLD | 4.75% <=$6.5m / 4.95% above; $1.3m deduction phasing to $10.4m | QRO |
-| Other states | WA 5.5%/$1m; SA 0-4.95%/$1.5m; TAS 4%+6.1%/$1.25m; ACT 6.85%/$2m; NT 5.5%/$1.5m | state revenue offices |
+| Other states | WA 5.5%/$1m; SA 0-4.95%/$1.5m; TAS 4%+6.1%/$1.25m; ACT 6.75% to 8.75% tiered/$1.75m; NT 5.5% (6.5% at $100m+)/$2.5m | state revenue offices |
 | ASIC annual review (Pty Ltd) | **$342 from 1 Jul 2026** ($329 prior); registration $636; SMSF special purpose $70 | ASIC fee indexation |
 
 ## Maintenance rule
