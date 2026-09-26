@@ -4,9 +4,10 @@ description: "Denmark capital gains tax: 27%/42% on share gains, progression thr
 version: 1.0
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

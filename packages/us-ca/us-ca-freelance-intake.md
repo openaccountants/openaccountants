@@ -3,248 +3,232 @@ name: us-ca-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help preparing their US federal or California state tax return AND mentions freelancing, self-employment, software development, contracting, sole proprietorship, or a single-member LLC. Trigger on phrases like "help me do my taxes", "prepare my 2025 return", "I'm a freelance developer", "I have an LLC in California", "I'm self-employed", "do my taxes as a contractor", or any similar phrasing where the user is a California-resident freelancer needing tax return preparation. This is the REQUIRED entry point for the Accora freelance developer tax workflow — every other skill in the stack (us-sole-prop-bookkeeping, us-schedule-c-and-se-computation, us-qbi-deduction, us-self-employed-retirement, us-self-employed-health-insurance, us-quarterly-estimated-tax, us-federal-return-assembly, ca-540-individual-return, ca-estimated-tax-540es, ca-smllc-form-568, ca-form-3853-coverage, us-1099-nec-issuance, us-ca-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow — the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured refusal sweep and profile questions instead of one-at-a-time prose. Built for speed — freelance software developers expect concise, direct interaction. California full-year residents only; sole proprietors and single-member LLCs disregarded for federal tax only.
 version: 0.2
 jurisdiction: US-CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# US Ca Freelance Intake
-
-## What changed from v0.1
-
-v0.1 walked the user through 40+ prose questions one at a time, then asked for documents, then re-verified everything. Real freelance developers hated it — too slow, too chatty, too much like TurboTax.
-
-v0.2 flips the model:
-
-1. **Compact refusal sweep** using `ask_user_input_v0` — 3 interactive questions, ~30 seconds.
-2. **Upload-first workflow** — after the refusal check, the user dumps everything they have. No structured upload zones. Bank statements, 1099s, 1095-A, prior year return, receipts, whatever.
-3. **Inference pass** — Claude parses every document and extracts as much as possible. Most of the intake data lives IN the documents, not in separate answers.
-4. **Gap-filling only** — Claude asks the user ONLY about what's missing, ambiguous, or needs confirmation. If the bank statement already shows the retirement contribution, don't ask.
-5. **Single confirmation pass** at the end — show the full picture, let the user correct anything wrong, hand off to downstream skills.
-
-Target: intake completes in 5 minutes for a prepared user, 15 minutes for a user who has to go fetch documents.
-
-## Critical operating principles
-
-- **Do not narrate the workflow** — Do not say "Phase 1," "Phase 2," "Now I'll ask you about retirement." Just do the work.
-- **Do not ask questions that have already been answered** — If the refusal check established the user has a single-member LLC, do not later ask "do you have an LLC." Track what's known.
-- **Do not ask about things visible in uploaded documents** — If the bank statement shows $4,000 quarterly payments to the IRS, do not ask "did you make estimated tax payments." You already know. Confirm what you see, don't re-ask.
-- **Use ask_user_input_v0 for any multiple-choice question** — It renders as tappable buttons, which is faster than typing. Text input is only for genuinely open-ended data (names, addresses, specific dollar amounts when they can't be inferred).
-- **Prefer batching** — Ask 3 related questions in a single message when they don't depend on each other's answers, rather than waiting for each answer.
-- **Be terse but complete** — No hedging, no "let me know if you have questions," no "I hope this helps." Developers recognize chattiness and discount it.
-- **Exception for blocking decisions** — If a single question determines whether the user is in-scope or out-of-scope, ask it standalone. Don't bury it in a batch.
-
-## Section 1 — The opening
-
-0. **Opening message** — When triggered, respond with ONE message that: 1. One-line greeting (no paragraph of expectation-setting) 2. One-line summary of the flow (refusal check → upload → gaps → handoff to review package) 3. One-line reviewer reminder (must be reviewed by EA/CPA before filing) 4. Launch the refusal sweep immediately using `ask_user_input_v0`
-
-Let's get your 2025 return ready. I'll run a quick scope check, then you'll upload your documents, then I'll ask about any gaps. Target time: 10 minutes.
-
-One reminder: whatever I produce needs to be reviewed and signed off by a credentialed tax professional (EA, CPA, or tax attorney) before you file. I'm not a substitute for review.
-
-Scope check:
-
-Then immediately call `ask_user_input_v0` with the refusal questions.
-
-**Do NOT:**
-- Write a welcome paragraph
-- Explain the phases
-- Ask "are you ready to start"
-- List what documents you'll eventually need
-- Give a disclaimer beyond the one reviewer line
-
-## Section 2 — Refusal sweep (compact)
-
-0. **Refusal sweep batch 1** — Present the refusal sweep as a single `ask_user_input_v0` call with 3 questions, all single-select with short option labels. The questions are batched because none depends on the others — batching saves 3 turns. **The 3 questions to ask first:** ``` Q1: "California residency in 2025?" Options: ["Full year", "Part year", "Didn't live in CA"] Q2: "Business structure?" Options: ["Sole prop (no LLC)", "Single-member LLC", "Multi-member LLC", "S-corp", "C-corp", "Not sure"] Q3: "Primary work in 2025?" Options: ["Software / tech contracting", "Design / creative", "Writing / marketing", "Consulting (non-tech)", "Other"] ```
-
-- **Q1 evaluation** — Q1 = Full year → continue. Q1 = Part year or didn't live in CA → stop. "I'm set up for full-year California residents only. Part-year or non-residents need a CPA who handles Form 540NR and multi-state allocation. I can't help with that — I'd rather tell you now than waste your time."
-- **Q2 evaluation** — Q2 = Sole prop or Single-member LLC → continue. Q2 = Multi-member LLC → stop. "Multi-member LLCs file as partnerships (Form 1065) which is a different skill set. You need a CPA familiar with partnership returns." Q2 = S-corp or C-corp → stop. "I don't cover corporate returns. S-corp (Form 1120-S) and C-corp (Form 1120) require different skills. You need a CPA." Q2 = Not sure → ask one follow-up: "Did you file Form 2553 (S-corp election) or have you been getting a W-2 from your own business? If yes to either, you're an S-corp. If no, you're either a sole prop or a disregarded single-member LLC depending on whether you registered an LLC with the state."
-- **Q3 evaluation** — Q3 = Software / tech contracting → continue (clean path, non-SSTB). Q3 = Consulting (non-tech) → continue with a flag: possible SSTB under §199A, will flag for reviewer. Q3 = Design / Writing / Marketing → stop. "I'm specifically built for technical contracting work. Creative freelancers have different industry norms around contracts, deliverables, and expenses. I can't be confident in my positions for your type of work. A CPA familiar with creative freelancers is a better fit." Q3 = Other → ask one follow-up to determine if it's in scope or out.
-
-0. **Refusal sweep batch 2** — After Q1-Q3 pass, ask the second batch of scope questions (also batched): ``` Q4: "Did you have any of these in 2025?" (multi-select) Options: [ "Rental property income", "Day trading / investment partnership / active crypto trading", "Foreign bank account with more than $10K", "W-2 employees you paid through payroll", "None of the above" ] Q5: "Did you file a 2024 return normally?" Options: ["Yes", "No (skipped year)", "Yes but amended / under IRS notice"] Q6: "Marital / dependent status?" Options: ["Single, no dependents", "Single with dependents (HoH)", "Married filing jointly", "Married filing separately", "Qualified surviving spouse"] ```
-
-- **Q4-Q6 evaluation** — Evaluate Q4: Any of the first four options → stop and refuse with the appropriate explanation. "None of the above" → continue. Evaluate Q5: Yes → continue. No or amended / under notice → stop and recommend CPA. Evaluate Q6: Single, no dependents → clean path. Any other → note filing status and continue (all are in scope). **Total time:** ~45 seconds if the user taps through.
-
-## Section 3 — The dump
-
-0. **Document dump request** — Once the refusal sweep passes, immediately ask for the document dump. Single message. No preamble. **Example:** Scope is good. Now upload everything you have for 2025 — just drop it all in at once: - Business bank statement(s) for all of 2025 (CSV or PDF) - Personal bank statement if you mix personal and business (less important) - Any tax forms that arrived in January/February 2026 (1099-NEC from clients, 1095-A from Covered California, etc.) - Year-end statements from retirement accounts (Fidelity, Vanguard, etc.) - W-9 forms from anyone you paid - Your 2024 tax return or at least last year's total tax and AGI numbers - LLC documents if you have an LLC (formation certificate, any FTB notices) - Anything else tax-related you have lying around Don't worry about labeling or organizing — I'll figure out what each file is. Drag and drop when ready. Then wait. Do not ask any other questions while waiting. Do not proactively request specific documents by name yet.
-
-- **Partial dump handling** — If the user uploads a partial dump and says "that's what I have": move to inference. Don't demand more. You can request specific missing items during gap-filling.
-
-If the user says "I don't know what I have": Switch to guided mode. Provide a compact list of sources:
-
-Check these places:
-- Business bank: download 2025 statements as PDF or CSV
-- Email: search for "1099", "1095", "tax form"
-- Covered California account if you had marketplace coverage
-- Fidelity / Vanguard / Schwab if you have a retirement account
-- Your prior CPA if you had one last year
-
-Come back when you have something to upload. I'll work with whatever you bring.
-
-## Section 4 — The inference pass
-
-0. **Document parsing** — When documents arrive, parse each one. Claude reads PDFs and CSVs natively. For each document, extract: **Bank statement:** - Total deposits (candidate gross receipts) - Recurring inflows (client retainers with names) - Outflows to IRS / FTB (estimated tax payments with dates) - Outflows to Fidelity / Vanguard / Schwab (retirement contributions with dates) - Outflows to Covered California / insurance carriers (health premiums) - Outflows to named individuals via Zelle / ACH / check (potential contractor payments) - Outflows to SaaS / AWS / software vendors (business expenses) - Outflows to Apple / Best Buy / equipment vendors (capex) - Transfers to personal account (owner draws) - LLC tax payments (FTB, $800 franchise tax) - LLC fee payments (FTB, Form 3536) - Anything crypto-related (Coinbase, Kraken, etc. — flag for refusal check) **1095-A:** - Coverage start and end months - Monthly enrollment premium - Monthly benchmark (SLCSP) - Monthly advance PTC - Net monthly cost **1099-NEC received:** - Payer name and TIN - Box 1 amount - Flag that this must appear in gross receipts **Retirement account statement:** - Plan type (Solo 401(k), SEP, SIMPLE, etc.) - Plan establishment date — critical for §401(k) December 31 rule - All contributions with dates and amounts - Split between employee deferral and employer contribution - Pre-tax vs Roth **W-9 forms:** - Contractor name - Entity type (individual, sole prop, partnership, C-corp, S-corp, LLC + classification) - TIN type (SSN or EIN) - Address **Prior year return:** - Federal total tax (1040 Line 24) - Federal AGI (1040 Line 11) - California total tax (540 Line 64) - California AGI (540 Line 14 or 13) After parsing everything, build an internal inference object. Don't show the raw inference yet — transform it into a compact summary for the user in Section 5.
-
-## Section 5 — The confirmation
-
-0. **Confirmation summary display** — After inference, present a single compact summary message showing what was extracted. Use a structured format that's fast to scan, not a prose paragraph. Invite the user to correct anything wrong.
-
-Here's what I pulled from your documents. Skim and tell me what's wrong.
-
-**Identity**
-- Alex Chen, single, no dependents
-- Full-year California resident (Oakland)
-- SMLLC: Chen Development LLC, formed Mar 2024
-
-**Income (from bank statement + 1099-NEC)**
-- Gross receipts: ~$382,350
-  - Northwind Logistics: $102,000 (retainer)
-  - Brightwave Analytics: $150,000 (retainer)
-  - Kestrel AI Labs: $93,600 (monthly invoices)
-  - Polaris Fintech: $34,250 (project work)
-  - DevConf Austin: $2,500 (speaking fee, 1099-NEC received)
-
-**Expenses (from bank statement)**
-- AWS / software / SaaS: ~$15,000
-- Equipment (Apple Feb $4,523, Fully desk + monitor Jul $2,800): ~$7,324
-- Home office: TBD (need to ask)
-- Travel (Austin conference): ~$1,146
-- Contractor payments: Jamie Rodriguez $3,500 (Zelle), Sarah Park $800 (PayPal), Amanda Torres $1,200 (check)
-
-**Retirement (from Fidelity statement)**
-- Solo 401(k) plan established Oct 14, 2024 ✓ (before Dec 31)
-- Employee deferrals: $23,500.12 across 24 contributions in 2025
-- Employer contribution: $47,000 on Jan 10, 2026 (for 2025)
-- **Total: $70,500.12 — this is $500.12 OVER the 2025 §415(c) limit of $70,000. We'll need to address this.**
-
-**Health insurance (from 1095-A + bank statement)**
-- COBRA Jan-Mar: $612/month ($1,836 total)
-- Covered California Apr-Dec: 9 months, $720.15 enrollment premium, $173.12 advance PTC, net $547.03 to you
-- No coverage gaps
-
-**Prior year (from 2024 return summary)**
-- Federal 2024 total tax: $41,115
-- Federal 2024 AGI: $168,382 (above $150K → 110% safe harbor multiplier applies)
-- California 2024 total tax: $11,343
-- California 2024 AGI: $168,507
-
-**Estimated taxes paid (from bank statement)**
-- Federal: $4,000 in April, $4,000 in June, $0 in Sept (missed), $4,000 in January 2026 = $12,000 total
-- California: $1,500 in April, $2,000 in June, $0 in Sept (correct — CA Q3 is zero), $1,500 in January 2026 = $5,000 total
-
-**LLC obligations**
-- $800 annual franchise tax paid January 2025 ✓
-- $900 LLC fee paid June 2025 ✓ (you're in the $250K-$500K gross receipts bracket — correct amount)
-
-**Flags I already see (will discuss with reviewer):**
-1. Solo 401(k) excess contribution of $500.12 — needs correction
-2. Federal estimated tax underpayment — safe harbor required $45,227 (110% × $41,115), you paid $12,000 → Form 2210 penalty likely
-3. California estimated tax underpayment — safe harbor required $12,477, you paid $5,000 → Form 5805 penalty likely
-4. Coinbase transactions in bank statement — I need to ask about these (crypto may be out of scope)
-5. Sarah Park paid via PayPal (S-corp per W-9) — no 1099-NEC needed (double exempt)
-6. Amanda Torres paid by check, LLC disregarded (sole prop) — 1099-NEC required but likely missed the January 31 deadline
-7. Jamie Rodriguez paid via Zelle, sole prop individual — 1099-NEC required but likely missed the January 31 deadline
-
-**Is any of this wrong? Reply "looks good" or tell me what to fix.**
-
-## Section 6 — Gap filling
-
-0. **Gap filling** — After the user confirms the summary (or corrects it), there will still be a small number of things that can't be inferred from documents. Ask about those specifically. Use `ask_user_input_v0` where possible. **Things that usually can't be inferred:** 1. **Home office** — Can't tell from documents whether the space exists or is used exclusively. Must ask. 2. **Coverage details for non-marketplace periods** — COBRA is often visible in bank statement but eligibility test (was employer plan offered?) must be asked. 3. **Crypto activity details** — Small Coinbase transactions need clarification: did the user actually trade, or was it dormant? 4. **Business use percentage of vehicle, phone, internet** — rare for freelance developers but ask if relevant 5. **Employee vs contractor classification** — if any payment looks suspicious (large regular payments to one person), ask probing questions 6. **Gross receipts reconciliation** — if bank deposits don't match 1099-NEC totals, ask about it
-
-- **Home office gap-filling example** — Call `ask_user_input_v0` with: ``` Q: "Home office?" Options: [ "Dedicated room, used ONLY for work", "Dedicated corner/desk, used ONLY for work", "Shared space (living room, bedroom corner that doubles as something else)", "No home office — I work from cafes/coworking" ] ``` If the user picks option 3 (shared space), flag it immediately: "§280A(c) requires exclusive use. A corner of the living room that doubles as living space generally fails this test. I recommend not claiming a home office deduction for 2025 to avoid IRS risk. You can discuss with your reviewer." If the user picks option 1 or 2, ask for square footage and total home square footage. If the user picks option 4, skip home office entirely.  _(§280A(c))_
-- **R-US-CRYPTO** — Call `ask_user_input_v0` with: ``` Q: "Coinbase activity in 2025?" Options: [ "I bought/sold crypto (made trades)", "I held crypto, no trades", "I transferred in/out but didn't trade" ] ``` - "Bought/sold" → refuse with R-US-CRYPTO: "Crypto trading is out of scope. Even small amounts require Form 8949 and specific basis tracking. You need a CPA who handles crypto. I can finish the rest of your return without the crypto but you'll need to add it separately before filing." - "Held, no trades" → allowed, no action needed - "Transferred only" → allowed, flag for reviewer  _(Form 8949)_
-
-## Section 7 — The final handoff
-
-0. **Final handoff to us-ca-return-assembly** — Once gap-filling is done, produce a final handoff message and hand off to `us-ca-return-assembly`. **Example handoff message:** Intake complete. Here's what's going to the downstream workflow: [one-line summary of the scope] I'm now going to run the full federal and California return preparation. This takes a couple minutes. You'll get back: 1. An Excel working paper with every line of the return 2. A reviewer brief summarizing the positions, citations, and flags for your CPA 3. Form packages (1040, 540, 568, and supporting schedules) 4. 2026 quarterly estimated tax vouchers 5. A list of action items with deadlines Starting now. Then internally invoke the downstream orchestrator by explicitly naming the skill and passing the structured intake package.
-
-## Section 8 — Structured intake package (internal format)
-
-The downstream skill (`us-ca-return-assembly`) consumes this JSON structure. It is internal and not shown to the user unless they ask to see it. Same format as v0.1 Section 9 — unchanged.
-
-[Full JSON schema unchanged from v0.1 — see that file for the complete structure.]
-
-## Section 9 — Refusal handling
-
-- **Refusal handling procedure** — Refusals fire from either the refusal sweep (Section 2) or during inference (e.g., crypto trading discovered in bank statement). When a refusal fires: 1. Stop the workflow 2. State the specific reason in one sentence 3. Recommend the path forward (specific CPA type) 4. Offer to continue with partial help ONLY if the out-of-scope item is cleanly separable (rare) **Do not:** - Apologize profusely - Try to work around the refusal - Suggest the user "might be able to" fit into scope if they answer differently - Continue silently
-
-Stop — you're a multi-member LLC. I'm set up for single-owner freelancers only. Multi-member LLCs file as partnerships on Form 1065, which is a different skill set I don't have. You need a CPA familiar with partnership returns. Expect $1,500-$3,000 for a typical small partnership return.
-
-I can't help with this one. Sorry for the false start.
-
-## Section 10 — Plain-English translation reference
-
-Same translation table as v0.1 Section 4. When talking to the user, use left column. When producing internal output for downstream skills, use right column.
-
-(Unchanged from v0.1 — see that file.)
-
-## Section 11 — Document discovery heuristics
-
-Same as v0.1 Section 5 — reference for where documents live. Used only when the user can't find a specific document during gap-filling.
-
-(Unchanged from v0.1 — see that file.)
-
-## Section 12 — Self-checks
-
-- **Check IN1** — No one-question-at-a-time prose in the refusal sweep. If the skill asked "Question 1 of 10" or walked through R1, R2, R3 as separate messages, check fails.
-- **Check IN2** — Refusal sweep used ask_user_input_v0. The first substantive interaction used the interactive tool, not prose questions.
-- **Check IN3** — No form numbers used with the user during the conversation (in messages sent to the user). Internal notes can reference form numbers; user-facing messages should not say "Form 8995-A" or "§199A" or "Schedule C Line 31."
-- **Check IN4** — Upload-first flow honored. After refusal sweep, the skill asked for a document dump before asking any content questions.
-- **Check IN5** — Documents were parsed and inferred before asking questions. The inference summary (Section 5) was shown before gap-filling questions (Section 6).
-- **Check IN6** — Gap-filling only asked about things NOT visible in documents. If the skill asked "did you make estimated tax payments" after the bank statement showed IRS EFTPS entries, check fails.
-- **Check IN7** — Open flags captured. Anything ambiguous, risky, or attention-worthy during inference is in the `open_flags` list in the handoff package.
-- **Check IN8** — Handoff to `us-ca-return-assembly` is explicit. The user was told "I'm now going to run the return preparation," and the downstream orchestrator was explicitly invoked with the intake package.
-- **Check IN9** — Reviewer step was stated upfront and reiterated before filing. The opening message mentioned reviewer signoff. The final handoff message also reinforces it.
-- **Check IN10** — Refusals were clean. No "you might be able to" hedging. No working-around. Stop means stop.
-- **Check IN11** — No meta-commentary about workflow phases. The skill did not say "Phase 1," "Phase 2," "Now I'm in the inference phase," etc.
-- **Check IN12** — Total user-facing turn count is low. Target: ≤ 8 turns from start to handoff for a prepared user (1 refusal batch + 1 upload + 1 confirmation + 1-3 gap fills + 1 handoff). If the skill used more than 12 turns for a normal intake, check fails.
-
-## Section 13 — Performance targets
-
-- **Performance targets — prepared user** — Refusal sweep: ≤ 45 seconds (1 interactive turn). Document upload: ≤ 2 minutes (1 upload turn). Inference and confirmation display: ≤ 1 minute Claude processing + 1 turn for user confirmation. Gap filling: ≤ 2 minutes (2-3 interactive turns). Handoff: immediate. Total: ~6 minutes.
-- **Performance targets — unprepared user** — Refusal sweep: same. Document discovery: 10-20 minutes offline. Rest: same. Total: 15-25 minutes.
-
-If the skill takes longer than these targets without cause, the interaction pattern is wrong and the skill needs another revision.
-
-### Why v0.2 exists
-
-v0.1 failed the first test. It used "Question 1 of 10" prose pacing with a freelance software developer as the test subject. The user reaction was: "this is slow for developers, understand your audience." The core problem was pacing designed for nervous TurboTax users, not for time-pressured technical professionals.
-
-### Design principles locked in v0.2
-
-- **Speed over hand-holding** — The audience is technical. Don't over-explain.
-- **Batch when possible** — Multiple independent questions in one turn, not one per turn.
-- **Use interactive tools** — `ask_user_input_v0` beats prose questions for structured data.
-- **Inference over interrogation** — Extract from documents first, ask the user only about gaps.
-- **Terse confirmations** — A compact bullet summary beats a conversation retracing every answer.
-- **No workflow narration** — The user doesn't need to know about phases; just do the work.
-- **Refusals are cliffs, not slopes** — Stop immediately on refusal triggers. Don't try to salvage.
-
-### Known gaps remaining in v0.2
-
-If the browser closes mid-intake, state is lost.
-
-A full MFJ intake would need to collect both spouses' Schedule Cs, both retirement accounts, etc. v0.2 handles single-income MFJ but not dual-income.
-
-relies on Claude's native image understanding. Usually works but can fail.
-
-Real product vision: MCP servers to pull directly from Plaid, Fidelity, Covered California. v1.0+ concern.
-
-### Change log
-
-- **v0.1 (April 2026):** Initial draft. Prose-question-at-a-time workflow. Failed first test on pacing.
-- **v0.2 (April 2026):** Rewrite for upload-first flow, ask_user_input_v0 for structured questions, inference-then-confirm pattern, terse pacing for technical audience.
-
-## End of Intake Skill v0.2
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+# California freelancer intake: scoping a sole proprietor or single-member LLC before the federal and California returns
+
+## Scope and who it is for
+
+This Guide is the intake step for a **full-year California resident** who works for themselves as a sole proprietor, or through a **single-member LLC that is disregarded** for federal tax. It is written for tax year 2026, with a dated section for 2025 returns that are still being finished on extension.
+
+Intake does not compute the return. It decides three things:
+
+- whether the client is in scope;
+- which documents are needed;
+- which later work each answer routes to.
+
+The computation lives in two other Guides:
+
+- `us-federal-return-assembly` covers Schedule C, Schedule SE, the self-employed deductions, QBI and Form 2210;
+- `ca-540-individual-return` covers Form 540, Schedule CA (540) and California estimated tax.
+
+The LLC's own California charges are covered in `ca-llc-fee-and-tax`. Figures were checked on 25 September 2026.
+
+A single-member domestic LLC files Schedule C "unless you have elected to treat the domestic LLC as a corporation" ([Schedule C instructions](https://www.irs.gov/instructions/i1040sc)). California requires the same classification as the federal one: "An LLC must have the same classification for both California and federal tax purposes" ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html)).
+
+## Ask the client first
+
+Ask the scope questions first. Any answer that points out of scope ends the intake for that item (see "When to refuse or refer").
+
+- **Residency.** Did the client live in California for the whole tax year? A part-year resident or nonresident files Form 540NR, which is out of scope.
+- **Entity.** Is it a sole proprietorship with no LLC, a single-member LLC, or something else? Has the client ever filed Form 8832 or Form 2553 (a corporation or S corporation election), or received a W-2 from their own business? Is the business owned with a spouse?
+- **Tax year.** Which year is being prepared: 2025 (on extension) or 2026? Keep the two years' figures apart.
+- **Filing status and dependents.** What is the filing status for the year, and who are the dependents? Several thresholds below are lower for married filing separately.
+- **What the business does.** Does it provide services only, or does it also sell or lease physical goods? The answer decides whether a seller's permit is needed.
+- **Who the client paid.** Did the client pay anyone for work in the year? For each person, get the name, entity type (from the person's Form W-9), the amount, how it was paid (check, bank transfer, card or payment app), and how the work was controlled.
+- **Other income and assets.** Ask about wages, rental property, K-1s, capital gains, and digital assets. For foreign financial accounts, list every account and get **each account's highest balance** during the year. If those highest balances add up to more than $10,000, treat the FBAR test as met and route to `us-fbar-fatca-reporting`.
+- **Prior year.** Get the prior-year federal and California returns, or at least federal AGI, federal total tax, California AGI and California total tax. These set the safe harbours for estimated tax.
+- **Payments made.** List federal and California estimated payments with dates and amounts. For an LLC, list what was paid on FTB forms 3522 and 3536.
+- **Health coverage by month.** Who was covered, by what kind of plan, and was Covered California coverage paid with an advance premium tax credit (Form 1095-A)?
+- **Home office and vehicle.** Is part of the home used **regularly and exclusively** for the business? Is a vehicle used for business, and is there a mileage log?
+- **Retirement plan.** What plan type (SEP, solo 401(k), SIMPLE or IRA), when was it set up, when was the deferral election made, and what was contributed and when? Test the timing like this ([Pub. 560](https://www.irs.gov/publications/p560)):
+  - **New solo 401(k) adopted after year end.** "a sole proprietor with no employees can adopt a section 401(k) plan after the end of the tax year, provided the plan is adopted by the tax filing deadline (without regard to extensions)". This relief applies only when **all** of these hold: it is a **new** plan, it is the plan's **first plan year**, the owner is the **only participant**, and the elective deferrals are **paid to the plan** by the return due date **without extensions**.
+  - **Existing 401(k) plan.** The deferral election for a year must be made by **31 December** of that year (the last day of the tax year for a calendar-year sole proprietor). The regulation says "a self-employed individual may not make a cash or deferred election with respect to compensation for a partnership or sole proprietorship taxable year after the last day of that year" ([Treas. Reg. §1.401(k)-1(a)(6)(iii)](https://www.law.cornell.edu/cfr/text/26/1.401%28k%29-1)). Only the deposit can follow later.
+  - **Employer (profit-sharing) and SEP contributions.** These can be made up to the due date **including extensions** of the return. A SEP can also be set up as late as that date.
+  - Route the timing rules to `us-secure-2-and-retirement-updates`, and the limits and deduction to `us-federal-return-assembly`.
+- **Location.** Which city and county is the business in? This is needed for local permits.
+
+## Documents to collect
+
+- Business bank and card statements for the full year. For a disregarded LLC, include any personal account used for the business.
+- Every Form 1099-NEC, 1099-MISC and 1099-K received, plus client invoices or a sales ledger. Income is reportable whether or not a form arrived (see step 2 below).
+- Forms W-9 from everyone the client paid, and any contracts with them.
+- Prior-year federal and California returns.
+- Proof of estimated payments. Use the IRS online account and the client's MyFTB account; bank lines alone are not enough.
+- Form 1095-A (Covered California) or other coverage records for each month.
+- Retirement plan statements and the plan adoption document.
+- A fixed-asset list with purchase dates and costs. California depreciation differs from federal, so both records are needed.
+- For an LLC: the Secretary of State filing date, and FTB notices. For a seller: the CDTFA permit number.
+
+## The method, step by step
+
+1. **Confirm scope.** Check full-year residency, the entity and its classification, and the tax year. Stop and refer on any out-of-scope answer.
+2. **Reconcile gross receipts.** Build receipts from the bank and the invoices, then tie them to the forms. The IRS says: "Whether or not you receive a Form 1099-K, you must still report any income on your tax return" ([IRS: Understanding your Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k)). If the total in box 1 of the Forms 1099-NEC is more than the receipts reported, the Schedule C instructions require an explanation ([Schedule C instructions, line 1](https://www.irs.gov/instructions/i1040sc)). A payment app or online marketplace must issue Form 1099-K when a client's payments total over $20,000 in more than 200 transactions, but it may also issue one below that level. Personal transfers on a 1099-K are not income; record why each was excluded.
+3. **Self-employment tax.** Schedule SE is needed if net earnings from self-employment are $400 or more ([IRS: Self-employment tax](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes)). The computation is done in `us-federal-return-assembly`.
+4. **Home office.** A deduction needs **regular and exclusive** use of part of the home for business, and that part must be the principal place of business (or meet one of the other tests on the IRS page) ([IRS: Home office deduction](https://www.irs.gov/businesses/small-businesses-self-employed/home-office-deduction)). A desk in a room that is also used for living fails the exclusive-use test. Record the square footage of the office and of the whole home only if the tests are met.
+5. **Digital assets.** Every federal return must answer "Yes" or "No" to the digital asset question. It asks whether, at any time in the year, the client received a digital asset "as a reward, award or payment for property or services" or sold, exchanged or otherwise disposed of one ([IRS: Digital assets](https://www.irs.gov/filing/digital-assets)). Holding only, with no receipt or disposal, is generally a "No". Buying with real currency without selling, and moving assets between the client's own wallets, are also "No", unless a transfer fee was paid in digital assets. Any disposal or crypto payment routes to capital-gains work.
+6. **People the client paid (worker classification).** Classify each person before looking at information returns.
+   - California uses the **ABC test**. A worker is an employee "unless the hiring entity satisfies all three" conditions: (A) the worker is free from the hiring entity's control and direction, both under the contract and in fact; (B) the work is outside the usual course of the hiring entity's business; and (C) the worker is customarily engaged in an independently established trade or business of the same kind ([LWDA: ABC test](https://www.labor.ca.gov/employmentstatus/abctest/)).
+   - The EDD notes that some workers fall under exceptions where the Borello multifactor test applies instead. It also notes that employee wages are subject to California payroll taxes and payments to independent contractors are not ([EDD: Employee or independent contractor](https://edd.ca.gov/en/payroll_taxes/ab-5/)).
+   - Anyone who is an employee means payroll registration and payroll returns. That is out of scope here; refer it.
+7. **Information returns the client must file (as a payer).**
+   - **Federal Form 1099-NEC.** File it for nonemployee compensation paid for services in the course of the trade or business, to someone who is not an employee.
+     - The threshold is **$2,000 or more** for payments in 2026. For tax years beginning after 2025, "the minimum threshold amount ... increased to $2,000" ([Instructions for Forms 1099-MISC and 1099-NEC (2026)](https://www.irs.gov/instructions/i1099mec)).
+     - For 2025 payments it was **$600 or more** ([2025 instructions](https://www.irs.gov/pub/irs-prior/i1099mec--2025.pdf)).
+     - Payments to a corporation, including an LLC taxed as a C or S corporation, are generally not reported. Attorneys' fees are the exception.
+     - Card payments, and payments settled through a **third party settlement organization** (TPSO: a payment app or online marketplace that settles the payment), are reported by the payment settlement entity on Form 1099-K, and "are not subject to reporting on Form 1099-MISC or Form 1099-NEC". The TPSO files a 1099-K only when the payee's total "exceeds $20,000 in more than 200 transactions" ([IRS: Understanding your Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k)); below that, the client still files no 1099-NEC for it.
+     - A transfer straight from one bank account to another (for example Zelle, or a transfer from the client's banking app) moves money between the two banks; it is **not** a card payment and is not settled by a TPSO. The Form 1099-K instructions also say "automated clearing houses do not qualify as TPSOs" ([Instructions for Form 1099-K](https://www.irs.gov/instructions/i1099k)). Treat it like a check: 1099-NEC if the $2,000 threshold is met.
+     - Form 1099-NEC must be filed "on or before January 31" of the following year.
+   - **California DE 542 (Report of Independent Contractors).** A payer must report to the EDD when **all** of these apply: (a) it must file a federal 1099-NEC or 1099-MISC for the services; (b) it pays **$600 or more**, or enters into a contract for **$600 or more**; and (c) the contractor is an individual, sole proprietor or single-member LLC. The report is due within 20 calendar days of paying $600, or of entering into a $600 contract, whichever is earlier. The penalty is **$24** per failure without good cause, and **$490** if the failure is intentional or the report is false ([EDD: Independent contractor reporting](https://edd.ca.gov/en/payroll_taxes/independent_contractor_reporting/)).
+     - Condition (a) depends on the federal filing requirement, which rose to $2,000 for 2026. The EDD page still states $600 (checked 25 September 2026). For a 2026 payment between $600 and $2,000, confirm with the EDD before deciding that no DE 542 is due.
+8. **Seller's permit.** The CDTFA says: "If you are doing business in California and intend to sell or lease tangible personal property subject to sales tax sold at retail, you are required to have a seller's permit" ([CDTFA: Permits and licenses](https://www.cdtfa.ca.gov/services/permits-licenses.htm)). A services-only freelancer does not meet that trigger. If the client sells hardware, prints or other goods, route to sales-tax work. Whether a particular digital product or bundle is taxable is a question for the CDTFA's own guidance; do not decide it at intake.
+9. **Local permits and business tax.** A city or county business licence or business tax is set locally, so check the client's city and county. The CDTFA points to **CalGold** for "other federal, state, or local government permits that may be required for your business" (same CDTFA page). Record the city and the licence or account number.
+10. **Single-member LLC charges (California).** An LLC that is organized in California, registered there, or doing business there must:
+    - pay the **$800** annual tax by the 15th day of the 4th month of its tax year, on FTB form 3522;
+    - estimate and pay the LLC fee by the 15th day of the 6th month, on FTB form 3536;
+    - file Form 568 by the original due date ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html)).
+
+    The fee is owed when California total income is **$250,000** or more. It is **$900** from $250,000 up to, but not including, **$500,000**, and it rises in bands above that ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.)). The fee base is gross income **plus** cost of goods sold, assigned to California. It is not the bank-deposit total and not profit.
+
+    The first-year exemption from the annual tax applied only to tax years beginning from 2021 through 2023 (FTB page above), so an LLC formed in 2024, 2025 or 2026 owes $800 for its first year. For a first taxable year beginning in 2027 to 2029, the annual tax is **$400** ([SB 180](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB180)). Route all of this to `ca-llc-fee-and-tax`. A sole proprietor with no LLC owes none of these charges.
+11. **California differences to flag for the state return.** "In general, California R&TC does not conform to the OBBBA" ([Schedule CA (540) instructions](https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html)). At intake, flag the following for `ca-540-individual-return`:
+    - any asset expensed federally under bonus depreciation or §179, which needs a separate California depreciation record ([FTB Pub. 1001](https://www.ftb.ca.gov/forms/2025/2025-1001-publication.pdf));
+    - HSA contributions;
+    - the QBI deduction, which does not carry to California.
+12. **Health coverage.** California has its own individual mandate. A return that cannot confirm full-year coverage for everyone in the household goes to FTB form 3853 to test for the individual shared responsibility penalty ([2025 Form 540 instructions, line 92](https://www.ftb.ca.gov/forms/2025/2025-540-instructions.html)). Covered California coverage with an advance premium tax credit also needs federal Form 8962. That is handled in `us-federal-return-assembly`.
+13. **Estimated tax, both governments.** Test next year's (and the current year's) payments with the rules below, and record any shortfall for Form 2210 (federal) and FTB form 5805 (California).
+14. **Hand off.** Pass on the scope answers, the reconciled receipts, the list of people paid and their filings, open flags, and the payment history.
+
+## Thresholds and figures, with years
+
+| Item | Year | Figure | Source |
+|---|---|---|---|
+| Schedule SE required | 2026 and 2025 | Net SE earnings of $400 or more | [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) |
+| Form 1099-NEC filing threshold (payer) | Payments in 2026 | $2,000 or more | [i1099mec (2026)](https://www.irs.gov/instructions/i1099mec) |
+| Form 1099-NEC filing threshold (payer) | Payments in 2025 | $600 or more | [i1099mec (2025)](https://www.irs.gov/pub/irs-prior/i1099mec--2025.pdf) |
+| Form 1099-K from a payment app or marketplace | Current IRS page | Over $20,000 in more than 200 transactions | [IRS](https://www.irs.gov/businesses/understanding-your-form-1099-k) |
+| DE 542 contractor report | Current EDD page | $600 or more paid or contracted | [EDD](https://edd.ca.gov/en/payroll_taxes/independent_contractor_reporting/) |
+| FBAR | Every year | Aggregate value of foreign accounts over $10,000 at any time (add each account's highest balance) | [FinCEN](https://www.fincen.gov/report-foreign-bank-and-financial-accounts) |
+| Federal estimated tax required | 2026 | Expected to owe at least $1,000 after withholding and credits | [Pub. 505](https://www.irs.gov/publications/p505) |
+| California estimated tax required | 2026 | Expected to owe at least $500 ($250 MFS) | [2026 Form 540-ES instructions](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html) |
+| California LLC annual tax | 2026 | $800 | [FTB](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| California LLC fee starts | 2026 | California total income of $250,000 or more | [R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.) |
+| Safe harbours, federal and California | 2026 | Smaller of 90% of 2026 tax or 100% of 2025 tax; 110% if 2025 AGI over $150,000 | [Pub. 505](https://www.irs.gov/publications/p505); [540-ES](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html) |
+
+### Estimated tax for 2026
+
+**Federal** ([Pub. 505](https://www.irs.gov/publications/p505)).
+
+- Payments are required if the client expects to owe at least $1,000 **and** expects withholding and credits to be less than the smaller of:
+  - 90% of the 2026 tax; or
+  - 100% of the 2025 tax. The 2025 return must cover 12 months.
+- Use 110% in place of 100% if 2025 AGI was **more than** $150,000 ($75,000 if the 2026 filing status is married filing separately), unless at least two-thirds of gross income is from farming or fishing.
+- Due dates: April 15, 2026; June 15, 2026; Sept. 15, 2026; Jan. 15, 2027.
+
+**California** ([2026 Form 540-ES instructions](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html)).
+
+- Payments are required if the client expects to owe at least $500 ($250 married/RDP filing separately) **and** expects withholding and credits to be less than the smaller of:
+  - 90% of the 2026 tax; or
+  - 100% of the 2025 tax, including AMT.
+- Use 110% of the 2025 tax if 2025 California AGI was **more than** $150,000 ($75,000 MFS).
+- If 2026 California AGI is **equal to or greater than** $1,000,000 ($500,000 MFS), the prior-year option is not available and the estimate must be based on the 2026 tax.
+- Installments are 30% of the required annual payment by April 15, 2026, 40% by June 15, 2026, **nothing** for September 15, 2026, and 30% by January 15, 2027.
+- Filing the 2026 return by January 31, 2027 and paying the whole balance replaces the fourth installment.
+- The federal September payment still falls due even though California has none. Do not copy the California pattern to the IRS, or the other way round.
+
+## Boundary and exception table
+
+| Situation | Treatment | Source |
+|---|---|---|
+| 2025 AGI exactly $150,000 | Not "more than" $150,000, so the 100% prior-year test applies (federal and California) | [Pub. 505](https://www.irs.gov/publications/p505); [540-ES](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html) |
+| 2026 California AGI exactly $1,000,000 | "Equal to or greater than", so there is no prior-year safe harbour for California | [540-ES](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html) |
+| LLC with California total income exactly $250,000 | In the $900 band ("$250,000 or more") | [R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.) |
+| Contractor paid $2,000 in 2026 by Zelle or another bank-to-bank transfer | Not a TPSO payment, so 1099-NEC is due ($2,000 or more) | [i1099k](https://www.irs.gov/instructions/i1099k); [i1099mec](https://www.irs.gov/instructions/i1099mec) |
+| Contractor paid $1,999 in 2026 | Below the $2,000 federal 1099-NEC threshold; check the EDD position on DE 542 | [i1099mec](https://www.irs.gov/instructions/i1099mec) |
+| Contractor paid by card, or through a payment app or marketplace that settles the payment (a TPSO) | No 1099-NEC from the client; the payment entity reports on 1099-K if its own threshold is met | [i1099mec](https://www.irs.gov/instructions/i1099mec) |
+| Contractor is an S corporation (per W-9), paid by check | Generally no 1099-NEC (corporation exception), unless it is for legal services | [i1099mec](https://www.irs.gov/instructions/i1099mec) |
+| Contractor is a single-member LLC owned by an individual | Not a corporation: 1099-NEC if paid $2,000 or more (2026 payments), and the DE 542 test applies | [EDD](https://edd.ca.gov/en/payroll_taxes/independent_contractor_reporting/) |
+| Net SE earnings just under $400 | No SE tax, but Schedule C is still filed | [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/self-employment-tax-social-security-and-medicare-taxes) |
+| Two foreign accounts with highest balances of $6,000 and $5,000 in the year | Together over $10,000, so treat the FBAR test as met; refer to `us-fbar-fatca-reporting` | [FinCEN](https://www.fincen.gov/report-foreign-bank-and-financial-accounts) |
+| Desk in a shared living room | Fails exclusive use; no home office deduction | [IRS](https://www.irs.gov/businesses/small-businesses-self-employed/home-office-deduction) |
+| Business owned by spouses as community property | May be treated as a sole proprietorship or as a partnership; the choice is a reporting position, so refer it | [Schedule C instructions](https://www.irs.gov/instructions/i1040sc) |
+
+## Worked cases
+
+**Case 1: ordinary 2026 intake, single-member LLC.** A single software contractor lived in Oakland all year. Her LLC was organized in 2023 and is disregarded. She sells services only.
+
+- 2025 federal AGI was $140,000 and California AGI was $140,000. 2025 California tax was $8,000. She expects to owe more than $500 to California ([540-ES](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html)).
+- AGI was not over $150,000, so California's prior-year test is 100%: a required annual payment of up to $8,000. The installments are $2,400 by April 15, 2026, $3,200 by June 15, 2026, nothing in September, and $2,400 by January 15, 2027.
+- The LLC's 2026 California total income is $180,000. That is below $250,000, so there is no LLC fee, but the $800 annual tax and Form 568 are due ([FTB](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html); [R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.)).
+- No seller's permit is needed, because she sells no tangible goods. Record the city business licence.
+
+**Case 2: boundary, LLC fee.** Same facts, but California total income is exactly $250,000. The LLC fee is $900, estimated on FTB form 3536 by June 15, 2026.
+
+**Case 3: exclusion, payments to others in 2026.**
+
+- **$2,500 by bank transfer to an individual designer** who is free from control and runs her own business. File a 1099-NEC by January 31, 2027, and a DE 542 within 20 days of paying $600 ([i1099mec](https://www.irs.gov/instructions/i1099mec); [EDD](https://edd.ca.gov/en/payroll_taxes/independent_contractor_reporting/)).
+- **$2,500 by check to a web-hosting S corporation.** No 1099-NEC under the corporation exception, and no DE 542 because the payee is not an individual, sole proprietor or single-member LLC ([i1099mec](https://www.irs.gov/instructions/i1099mec)).
+- **$1,500 through a payment app (a TPSO) to an individual.** It is not reportable by the client on Form 1099-NEC. The TPSO reports it on Form 1099-K only if the payee's total from that platform exceeds $20,000 in more than 200 transactions ([i1099mec](https://www.irs.gov/instructions/i1099mec); [IRS: Understanding your Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k)).
+- **$2,500 by Zelle to another individual contractor.** A bank-to-bank transfer is not a TPSO payment, so the client files a 1099-NEC by January 31, 2027, and the DE 542 test applies as above ([i1099k](https://www.irs.gov/instructions/i1099k)).
+
+**Case 4: the 2026 threshold change.** A contractor was paid $1,200 in 2025 and $1,200 in 2026 ([2025 instructions](https://www.irs.gov/pub/irs-prior/i1099mec--2025.pdf); [2026 instructions](https://www.irs.gov/instructions/i1099mec)).
+
+- **2025:** a 1099-NEC was due by January 31, 2026, because $1,200 is $600 or more ([2025 instructions](https://www.irs.gov/pub/irs-prior/i1099mec--2025.pdf)).
+- **2026:** no 1099-NEC is required, because $1,200 is below $2,000. The DE 542 answer for 2026 needs EDD confirmation (step 7; [EDD](https://edd.ca.gov/en/payroll_taxes/independent_contractor_reporting/)).
+
+**Case 5: refer.** A client moved from Oregon to California in July. This is a part-year resident, so Form 540NR is needed. Stop the intake and refer.
+
+## When to refuse or refer
+
+- The client was a part-year resident or a nonresident (Form 540NR), or has income taxed by another state.
+- A multi-member LLC or partnership (Form 1065), an S corporation or C corporation election, or a spouse-owned business where the partnership or community-property choice is open.
+- Employees, or any worker who fails the ABC test: payroll registration and returns are needed.
+- Foreign accounts whose highest balances add up to more than $10,000 (FBAR), foreign income, or rental property.
+- Disposals of digital assets or crypto received as payment, beyond simple reporting.
+- Sales of tangible goods where the sales-tax treatment is unclear, or an existing CDTFA account with unfiled returns.
+- Unfiled prior years, IRS or FTB notices, or amended returns.
+- Any figure that cannot be traced to a document or an official page. Flag it; do not estimate it.
+
+## Filing and payment steps with deadlines
+
+| What | 2026 tax year | Source |
+|---|---|---|
+| Federal estimated payments | April 15, June 15 and Sept. 15, 2026; Jan. 15, 2027 | [Pub. 505](https://www.irs.gov/publications/p505) |
+| California estimated payments | 30% April 15, 2026; 40% June 15, 2026; none September 15; 30% January 15, 2027 | [540-ES](https://www.ftb.ca.gov/forms/2026/2026-540-es-instructions.html) |
+| LLC annual tax (FTB form 3522) | 15th day of the 4th month of the tax year | [FTB](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| LLC fee estimate (FTB form 3536) | 15th day of the 6th month of the tax year | [FTB](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html) |
+| Form 1099-NEC for 2026 payments | January 31, 2027 | [i1099mec](https://www.irs.gov/instructions/i1099mec) |
+| DE 542 | Within 20 calendar days of reaching $600 paid or contracted | [EDD](https://edd.ca.gov/en/payroll_taxes/independent_contractor_reporting/) |
+| Federal and California returns | Due in April 2027; see the two return Guides for extension rules | `us-federal-return-assembly`, `ca-540-individual-return` |
+
+### 2025 returns still open (dated section)
+
+- **Federal.** A Form 4868 extension moves the filing date to October 15, 2026, for most calendar-year taxpayers ([Form 4868](https://www.irs.gov/pub/irs-pdf/f4868.pdf)). It does not extend the time to pay.
+- **California.** "California grants an automatic extension until October 15, 2026 to file your return, although your payment is still due by April 15, 2026" ([FTB due dates](https://www.ftb.ca.gov/file/when-to-file/due-dates-personal.html)).
+- **Figures for 2025.** Use the 2025 figures in both return Guides. The 1099-NEC threshold for 2025 payments was $600 or more ([2025 instructions](https://www.irs.gov/pub/irs-prior/i1099mec--2025.pdf)), and those forms were due January 31, 2026. If they were missed, file late and flag the penalty exposure for review.
+- **Estimated tax for 2025.** Test the 2025 payments against the 2024 tax with the same 90%, 100% and 110% rules, using the 2025 versions of Pub. 505 and form 540-ES ([Pub. 505](https://www.irs.gov/publications/p505)).
+
+## Completion checklist
+
+- [ ] Full-year California residency confirmed; entity and federal/California classification recorded.
+- [ ] Tax year fixed; 2025 and 2026 figures kept apart.
+- [ ] Gross receipts reconciled to bank deposits, invoices and every 1099-NEC, 1099-MISC and 1099-K. Excluded deposits explained.
+- [ ] Digital asset question answered from the facts, not assumed.
+- [ ] Every person paid classified under the ABC test. The 1099-NEC ($2,000 for 2026, $600 for 2025) and DE 542 obligations listed, with dates.
+- [ ] Seller's permit trigger tested; city and county permits noted.
+- [ ] LLC: $800 annual tax, fee band on California total income, form 3536 estimate and Form 568 routed to `ca-llc-fee-and-tax`.
+- [ ] Home office tested for regular and exclusive use; vehicle records requested if used.
+- [ ] Health coverage recorded by month; FTB form 3853 and Form 8962 flagged where needed.
+- [ ] Federal and California safe harbours tested, and the next year's schedule set (federal four dates; California 30%, 40%, nothing, 30%).
+- [ ] California non-conformity items (depreciation, HSA, QBI) flagged for `ca-540-individual-return`.
+- [ ] Out-of-scope items referred; a credentialed preparer reviews before filing.
 
 <!-- openaccountants-cta-block -->
 

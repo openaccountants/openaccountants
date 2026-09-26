@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-09-25T09:12:53+00:00",
+ "generated_at": "2026-09-26T08:46:52+00:00",
  "counts": {
   "guides": 2019,
   "jurisdictions": 245,
-  "accountant_reviewed": 171
+  "accountant_reviewed": 168
  },
  "guides": [
   {
@@ -818,9 +818,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-expatriation-exit-tax",
@@ -830,9 +830,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-fbar-fatca-reporting",
@@ -842,9 +842,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-feie-ftc",
@@ -854,9 +854,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-foreign-trust-reporting",
@@ -866,9 +866,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "vat-place-of-supply-master",
@@ -938,9 +938,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-1099-nec-issuance",
@@ -1046,9 +1046,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-equity-compensation-restricted-stock-units-and",
@@ -1094,9 +1094,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-federal-income-tax-return-1040",
@@ -1142,9 +1142,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-form-1040-individual-income-tax-return",
@@ -1262,9 +1262,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-multi-state-residency-and-allocation",
@@ -1274,9 +1274,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-nft-tax",
@@ -1298,9 +1298,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-pte-state-matrix",
@@ -1310,9 +1310,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-qbi-deduction",
@@ -1346,9 +1346,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-s-corp-election-decision",
@@ -1370,9 +1370,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-sales-tax",
@@ -1406,9 +1406,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-section-1202-qsbs",
@@ -1418,9 +1418,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-secure-2-and-retirement-updates",
@@ -1430,9 +1430,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-self-employed-health-insurance",
@@ -1478,9 +1478,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-state-estimated-tax-safe-harbors-matrix",
@@ -1490,9 +1490,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-state-formation-matrix",
@@ -1814,9 +1814,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "vat-workflow-base",
@@ -6928,7 +6928,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "dk-capital-gains",
@@ -6940,7 +6940,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "dk-income-tax",
@@ -6952,7 +6952,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "dk-vat-return",
@@ -6964,7 +6964,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "references",
@@ -8260,7 +8260,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "fi-tax-overview",
@@ -8284,7 +8284,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "finland-vat-return",
@@ -8296,7 +8296,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "fr-business-accounting",
@@ -9700,7 +9700,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "iceland-payroll",
@@ -9712,7 +9712,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "iceland-social-contributions",
@@ -9748,7 +9748,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "is-company-formation",
@@ -10539,8 +10539,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "isle-of-man-vat",
@@ -12974,9 +12974,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Michael Cutajar, CPA (Malta)",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "malta-payroll",
@@ -13034,9 +13034,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Michael Cutajar, CPA (Malta)",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "moving-to-malta-tax-residence",
@@ -14415,8 +14415,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "nl-deductions",
@@ -14524,7 +14524,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-22"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "nz-acc-levies",
@@ -15052,7 +15052,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "no-company-formation",
@@ -15100,7 +15100,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "no-tax-overview",
@@ -15124,7 +15124,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "norway-mva",
@@ -15136,7 +15136,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "norway-to-switzerland-wealth-tax-exit",
@@ -18532,7 +18532,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "se-vat-return",
@@ -18544,7 +18544,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "sweden-bookkeeping",
@@ -18556,7 +18556,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "sweden-crypto-tax",
@@ -18568,7 +18568,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "sweden-payroll",
@@ -18580,7 +18580,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "sweden-vat-return",
@@ -18592,7 +18592,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-24"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ch-ahv-iv",
@@ -19572,11 +19572,11 @@
    "name": "ae-corporate-tax",
    "jurisdiction": "AE",
    "category": null,
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Mehran Habib",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ae-income-tax",
@@ -19804,7 +19804,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-22"
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "uk-capital-gains-sa108",
@@ -19932,11 +19932,11 @@
    "name": "uk-rental-sa105",
    "jurisdiction": "GB",
    "category": "international",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Power",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "uk-self-employment-sa103",
@@ -20028,11 +20028,11 @@
    "name": "uk-vat-return",
    "jurisdiction": "GB",
    "category": null,
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Power",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "vat-returns-for-small-businesses-in-the-uk",
@@ -20330,9 +20330,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-nonresident-cgt",
@@ -20342,9 +20342,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-tax-residency",
@@ -20354,9 +20354,9 @@
    "category": "international",
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "uz-company-formation",
@@ -20895,8 +20895,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ca-estimated-tax-540es",
@@ -20931,8 +20931,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ca-pte-elective-tax",
@@ -20967,8 +20967,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "de-freelance-intake",
@@ -21255,8 +21255,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ny-it-201-resident-return",
@@ -21267,8 +21267,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ny-llc-filing-fee-it-204-ll",
@@ -21291,8 +21291,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ny-pte-tax-ptet",
@@ -21363,8 +21363,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "tx-margin-tax",
@@ -21435,8 +21435,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-ca-return-assembly",
@@ -21458,9 +21458,9 @@
    "category": null,
    "tier": 2,
    "verified_by": null,
-   "reviewed_by": "James Wallach",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "us-ny-freelance-intake",
@@ -21747,8 +21747,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ar-sales-tax",
@@ -21879,8 +21879,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ca-income-tax",
@@ -21927,8 +21927,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "co-income-tax",
@@ -21939,8 +21939,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "co-payroll",
@@ -22011,8 +22011,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ct-payroll",
@@ -22047,8 +22047,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "dc-sales-tax",
@@ -22071,8 +22071,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "de-franchise-tax-and-llc",
@@ -22083,8 +22083,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "de-gross-receipts-tax",
@@ -22107,8 +22107,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "fl-annual-report",
@@ -22191,8 +22191,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ga-estimated-tax-depth",
@@ -22227,8 +22227,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ga-net-worth-tax",
@@ -22263,8 +22263,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "georgia-corporate-income-tax-returns-form-600",
@@ -22455,8 +22455,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "in-income-tax",
@@ -22539,8 +22539,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ky-payroll",
@@ -22671,8 +22671,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "md-payroll",
@@ -22983,8 +22983,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "nc-bailey-settlement-retirement",
@@ -23211,8 +23211,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "nj-income-tax",
@@ -23223,8 +23223,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "nj-payroll",
@@ -23235,8 +23235,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "nj-sales-tax",
@@ -23367,8 +23367,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ny-estimated-tax",
@@ -23463,8 +23463,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "oh-cat",
@@ -23475,8 +23475,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "oh-income-tax",
@@ -23487,8 +23487,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "oh-payroll",
@@ -23523,8 +23523,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "ok-income-tax",
@@ -23607,8 +23607,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "pa-local-eit",
@@ -23631,8 +23631,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "pa-sales-tax",
@@ -23643,8 +23643,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "pennsylvania-sales-tax",
@@ -23847,8 +23847,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "va-payroll",
@@ -23919,8 +23919,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "wa-business-occupation-tax",
@@ -23931,8 +23931,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "wa-sales-tax",
@@ -23943,8 +23943,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "washington-sales-tax",
@@ -23955,8 +23955,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-09-25"
   },
   {
    "slug": "wi-income-tax",

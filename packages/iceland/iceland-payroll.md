@@ -4,9 +4,10 @@ description: Use this skill whenever asked about Iceland payroll processing for 
 version: 0.1
 jurisdiction: IS
 tax_year: 2026
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 depends_on:
   - payroll-workflow-base
 category: payroll

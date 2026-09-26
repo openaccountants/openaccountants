@@ -2,403 +2,187 @@
 name: us-pte-state-matrix
 description: Tier 2 US federal-level reference skill providing the comprehensive state-by-state matrix of Pass-Through Entity Tax (PTET) elections under the SALT-cap workaround blessed by IRS Notice 2020-75 and codified state-by-state from 2021 onward. Covers election deadlines, rates, eligibility, owner-credit refundability, estimated-tax requirements, and resident-credit interactions for the 35+ states that have enacted PTET regimes. Includes a 5-step decision framework for electing PTET and common-trap callouts for CA, NY, GA, NC, IL, MN, VA. Tax year 2025 under OBBBA.
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: James Wallach
-review_status: current
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
+review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# US PTE State Matrix
+# State pass-through entity elective taxes (PTET): a state-by-state table for tax year 2026, with 2025 return notes
 
-## 1. Scope
+Figures are for tax year 2026 unless a line says 2025. The federal figures come from 26 U.S.C. §164(b) as amended by the One Big Beautiful Bill Act (P.L. 119-21). The state rows come from each state's revenue department or legislature, checked on 25 September 2026. A row marked **check** is one we could not confirm from an official source. Do not rely on it until you have read that state's own guidance.
 
-This is a **reference skill**, not a procedural skill. Practitioners consult it to answer questions of the form:
+## Scope and who this is for
 
-- "Does state X have a PTET regime?"
-- "What is the PTET rate in state X, and is it flat or graduated?"
-- "When is the election deadline?"
-- "Is electing PTET worth it for my client?"
-- "If my client's home state is A and the PTE files PTET in state B, will A grant a resident credit?"
+- **Covers:** partnerships (including LLCs taxed as partnerships) and S corporations that are deciding whether to elect a state's pass-through entity tax, and the owners who receive the credit, exclusion or deduction. It gives, for each state that has one, how and when to elect, the rate, who may elect, what the owner gets, what nonresident owners must still file, and whether the tax is available for 2026.
+- **Federal side:** the SALT deduction cap for individuals and why an entity-level state tax falls outside it ([IRS Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf); [26 U.S.C. §164](https://www.law.cornell.edu/uscode/text/26/164)).
+- **Does not cover:** preparing the entity's PTET return line by line, a C corporation's own state tax, composite returns where no PTET exists, trusts and estates as electing entities, and the US territories.
+- **State detail lives elsewhere.** For one state in depth, use that state's own Guide (for example `ca-540-individual-return`, `ga-corporate-and-ptet`, `nj-cbt-and-bait`) and the state's instructions linked in the table. State rules change most years; read the current-year instructions before filing.
 
-It does **not** itself execute a PTET filing — actual return preparation is delegated to the appropriate state-specific skill (e.g., `us-ca-540-individual-return`, `us-ny-it-204-pte`, etc., where they exist) or handled by the credentialed reviewer.
+## Ask the client first
 
-**In scope:**
-- The 35 US states (plus DC) that have enacted PTET regimes through tax year 2025.
-- Federal SALT-cap interaction under IRC §164(b)(6) as modified by OBBBA (P.L. 119-21, July 4, 2025).
-- Owner-level credit treatment, refundability, and resident-credit interaction.
-- Decision framework for whether to elect.
-- Common traps that void elections or destroy the federal benefit.
+- Which tax year is being decided: 2026 (elections still open in some states) or 2025 (a few states still accept an election on an extended 2025 return)?
+- What is the entity for federal tax: a partnership, an LLC taxed as a partnership, an S corporation, or a disregarded single-member LLC? Most states refuse a disregarded entity.
+- Who are the owners? For each owner, get the type (individual, trust, estate, corporation, partnership, tax-exempt body), the state of residence, and the share. Several states refuse the election outright if even one owner is the wrong type.
+- In which states does the entity have income, and how much is apportioned to each?
+- For each individual owner: filing status, expected modified adjusted gross income (MAGI), and other state and local taxes (property tax, tax on wages). These decide how much the federal cap is really costing them.
+- Has anyone already missed a date? Ask about New York (15 March of the tax year) and California (15 June payment) first.
+- Can the entity fund estimated payments during the year? Most states want them.
+- Does the entity have a net operating loss or large credits? Some states warn against electing then.
 
-**Out of scope:**
-- Detailed line-by-line PTET return preparation (see state-specific skills).
-- Composite return vs. PTET trade-off analysis where PTET is unavailable (separate skill).
-- C-corp state tax (PTET is by definition a pass-through regime).
-- Trust and estate PTET treatment (most states limit PTET to S-corps and partnerships; trust treatment varies and is reviewer-driven).
-- US territories (PR, GU, VI, MP, AS).
+## The method, step by step
 
-**Assumes:** a human reviewer credentialed under Circular 230 (EA, CPA, or attorney) reviews and signs off on any election recommendation before it reaches the taxpayer.
+1. **Check the federal cap first.** For 2026 an individual's deduction for state and local taxes is capped at $40,400 ($20,200 married filing separately). The cap is cut by 30% of MAGI above $505,000 ($252,500 separate), but never below $10,000 ($5,000 separate) ([26 U.S.C. §164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)). If the owner's state and local taxes already fit under their cap, the election saves little federally.
+2. **Confirm the tax falls outside the cap.** A state income tax imposed on and paid by the partnership or S corporation is deducted by the entity in computing non-separately stated income. It is not counted against any owner's SALT cap. This holds whether the tax is elective and whatever credit, exclusion or deduction the owner gets ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)).
+3. **Find the state row in the table below.** Confirm the state has a PTET for the year and that it has not expired. Then check the election method and deadline, and whether the entity and every owner are allowed.
+4. **Test each owner.** Work out what each owner gets: a credit, an exclusion or a deduction. Check whether it is refundable, and whether the owner's home state gives a credit for another state's PTET. Owners who get no credit, often corporate or partnership partners, may just bear the cost.
+5. **Model cash and dates.** Put the election deadline, any prepayment, the estimated payments and the entity return date on the calendar.
+6. **Make the election the way the state requires.** That might be online, on a separate form or on the return. Some states only let an authorised person inside the business make it, not the tax preparer.
+7. **Follow through on the owner returns.** Owners often add back the entity's state tax deduction and then claim the credit or exclusion. Nonresident owners may still have to file (see the table).
 
-## 2. Background — The SALT Cap and Notice 2020-75
+## Federal figures, with years
 
-### 2.1 The §164(b)(6) cap
+| Item | 2025 | 2026 | Source |
+| --- | --- | --- | --- |
+| SALT cap (single, joint, head of household) | $40,000 | $40,400 | [§164(b)(7)(A)](https://www.law.cornell.edu/uscode/text/26/164) |
+| SALT cap, married filing separately (half) | $20,000 | $20,200 | [§164(b)(6)](https://www.law.cornell.edu/uscode/text/26/164) |
+| MAGI threshold for the phase-down (half if filing separately: $250,000 / $252,500) | $500,000 | $505,000 | [§164(b)(7)(B)](https://www.law.cornell.edu/uscode/text/26/164) |
+| Phase-down rate | 30% of MAGI over the threshold | 30% of MAGI over the threshold | [§164(b)(7)(B)](https://www.law.cornell.edu/uscode/text/26/164) |
+| Floor after the phase-down (half if filing separately: $5,000) | $10,000 | $10,000 | [§164(b)(7)(B)(iii)](https://www.law.cornell.edu/uscode/text/26/164) |
 
-- **TCJA SALT cap under §164(b)(6)** — The Tax Cuts and Jobs Act of 2017 added IRC §164(b)(6), which limits an individual's federal itemized deduction for state and local taxes (income, property, sales) to $10,000 per return ($5,000 MFS) for tax years 2018 through 2025.  _(IRC §164(b)(6))_
-- **SALT cap amount pre-OBBBA** — $10,000 USD (per return, 2018-2025; $5,000 MFS)  _(IRC §164(b)(6))_
-- **OBBBA SALT cap increase** — The One Big Beautiful Bill Act (P.L. 119-21, enacted July 4, 2025) raised the cap to $40,000 for tax years 2025 through 2029, with a phase-down for high-income taxpayers (MAGI above $500,000, phasing back to $10,000 over a $100,000 range), and a 1% annual inflation adjustment. The cap returns to $10,000 in 2030 absent further legislation.  _(P.L. 119-21 (OBBBA), enacted July 4, 2025)_
-- **PTET relevance under OBBBA** — For 2025, OBBBA's $40,000 cap means a typical owner with $250,000 of personal state income tax exposure still leaves $210,000+ of state tax outside the deduction. PTET remains highly relevant under OBBBA — it is not obsolete.  _(P.L. 119-21 (OBBBA))_
+- **2027 to 2029:** the cap and the threshold each rise to 101 percent of the prior year's figure. The phase-down applies only to tax years beginning before 1 January 2030 ([§164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)).
+- **From 2030:** the cap reverts to $10,000 for tax years beginning after 2029 ([§164(b)(7)(A)(iv)](https://www.law.cornell.edu/uscode/text/26/164)).
+- **Married filing separately:** the cap and the threshold are both halved ([§164(b)(6)–(7)](https://www.law.cornell.edu/uscode/text/26/164)).
+- **The PTET route was not restricted by P.L. 119-21.** The Act changed the cap in §164(b) and added paragraph (7). The enacted text contains no limit on entity-level state taxes ([§164, amendments note](https://www.law.cornell.edu/uscode/text/26/164)).
+- **Notice 2020-75 is still guidance, not a regulation.** It announced proposed regulations and says taxpayers may rely on it until they are issued ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)). Check irs.gov for any later guidance before filing.
 
-### 2.2 IRS Notice 2020-75
+## The state table (tax year 2026)
 
-- **IRS Notice 2020-75 blessing of PTET workaround** — On November 9, 2020, the IRS released Notice 2020-75, in which Treasury announced its intent to issue proposed regulations confirming that: - A state-imposed income tax assessed on, and paid by, a partnership or S-corporation is deductible by the entity in computing non-separately-stated income. - The deduction is not subject to the §164(b)(6) SALT cap because the cap applies only to individuals. - This treatment applies whether the state tax is mandatory or elective, provided the entity is the legal taxpayer. This blessed what had been a contested workaround pioneered by Connecticut (effective 2018) and Wisconsin (effective 2018), and triggered a wave of state enactments. 35 states plus DC had enacted PTET regimes by 2025.  _(IRS Notice 2020-75)_
-- **Structural mechanic of PTET workaround** — 1. The PTE elects PTET. The state taxes the PTE's apportioned income at the PTET rate. 2. The PTE deducts the PTET as a §162 business expense (state income tax of the entity, not §164 individual SALT). 3. Owners receive a credit on their state personal return for their share of PTET paid (most states), or an exclusion of PTET-taxed income from their state personal return (a few states, e.g., LA pre-2024). 4. Federal AGI is reduced by the PTET deduction at the entity level, flowing through K-1 Line 1. 5. Federal SALT cap is bypassed for the portion of state tax converted to PTET.  _(IRS Notice 2020-75)_
+How to read it:
 
-### 2.3 OBBBA technical changes
+- **Owner gets** is one of three things. A *credit* is set against the owner's own state tax. An *exclusion* means the income taxed at the entity drops out of the owner's state return. A *refundable* credit is paid out if it exceeds the owner's tax.
+- **Nonresident owners** says whether the election relieves a nonresident owner of filing that state's return. "Not stated" means the state's guidance does not say either way.
+- **Rates** are labelled with their year. Several states set the PTET rate equal to the top individual rate, so the rate moves when that rate moves.
 
-- **OBBBA changes relevant to PTET planning** — OBBBA made three changes relevant to PTET planning: 1. SALT cap raised to $40,000 (2025-2029) with phase-down above $500k MAGI. 2. §199A QBI made permanent at 20%, rising to 20% in 2026. PTET reduces QBI (because PTET reduces ordinary income flowing through K-1 Line 1), so the QBI deduction is reduced by 20% (or 20% in 2026) of the PTET deduction — netting the PTET federal benefit. 3. No direct PTET changes — Treasury has not retracted Notice 2020-75, and OBBBA did not codify or restrict the workaround. PTET remains an administrative blessing, not a statutory one.  _(P.L. 119-21 (OBBBA))_
+| State | 2026 status | Rate | How and when to elect | Who may elect, and exclusions | Owner gets | Nonresident owners | Source |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Alabama** | In force; no end date found | 5% | Tick the Electing PTE box on the timely filed Form 65 or 20S (including extensions), every year the election applies. Needs consent of the governing body and owners holding more than 50% of voting control. | S corporations and Subchapter K entities. The tax covers all owners' shares; tax-exempt owners' income cannot be excluded. No NOLs. | Refundable credit | Not relieved if they want the credit: they must file to claim it. No composite return needed. | [ALDOR](https://www.revenue.alabama.gov/individual-corporate/electing-pass-through-entities/); [rate FAQ](https://www.revenue.alabama.gov/faq-categories/electing-pass-through-entity-2/) |
+| **Arizona** | In force; no end date in the statute | Top individual rate: 2.5% (2023 onward). 2026: **check** | Made by filing the entity's return. First, notify every individual, estate and trust owner of the right to opt out and allow at least sixty days. | Partnerships and S corporations. Excluded: owners that are not individuals, estates or trusts, and owners who opt out. | Credit, nonrefundable; carry forward up to 5 years | Not stated | [A.R.S. 43-1014](https://www.azleg.gov/ars/43/01014.htm); [43-1077](https://www.azleg.gov/ars/43/01077.htm); [2.5% rate](https://www.azleg.gov/legtext/57leg/1R/summary/S.1318FIN_REVISED.DOCX.htm) |
+| **Arkansas** | In force | Top individual rate. 2025: 3.9% (capital gains 1.95%). 2026: the top individual rate is 3.7% from 1 Jan 2026; confirm that the tax follows it in DFA's 2026 instructions | Owners holding more than 50% of the voting power elect on Form AR362-E, in ATAP or on the return, before the extended due date. | Partnerships, S corporations and LLCs. Not C corporations, QSubs, trusts or sole proprietors. Owners cannot opt out. | Exclusion | Relieved if all their Arkansas income comes from entities paying the tax | [DFA instructions (2025)](https://www.dfa.arkansas.gov/wp-content/uploads/AR1100PET_Instructions_2025_1.pdf); [Act 2 of 2026](https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2026S1%2FPublic%2FACT2.pdf) |
+| **California** | In force; extended by SB 132 to tax years beginning before 1 Jan 2031 | 9.3% | Annual, on a timely filed **original** return, never an amended one. Irrevocable. Payment 1 is due 15 June of the election year: $1,000 or 50% of the prior year's PTE tax, whichever is greater. The balance is due by the original due date, without extensions. For 2026 to 2030, a short June payment no longer voids the election. Instead, each owner's credit is cut by 12.5% of their share of the unpaid amount. | Partnerships and S corporations. Not publicly traded partnerships or entities in a combined reporting group. Only consenting individual, fiduciary, estate and trust owners (and SMLLCs they own) are included. | Credit, nonrefundable; carry over up to 5 years; entity adds the deduction back | Not relieved: the credit can only be claimed on the owner's own return, not on a group return. 7% withholding still applies. | [FTB](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html); [FTB help](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/help.html) |
+| **Colorado** | In force; DOR has issued a 2026 election form | Individual rate: 4.4% (2025). 2026: **check** | Annual and irrevocable. Tick the box on the DR 0106, or file DR 1705 in advance. | Partnerships and S corporations. A C corporation partner unitary with the partnership is left out. Guaranteed payments are excluded. | Credit, excess refunded. Owners add back the state tax deduction **and** any federal QBI deduction. | Relieved if all their Colorado income is in the entity's return. No composite return allowed. | [DOR SALT Parity Act](https://tax.colorado.gov/income-tax-topics-salt-parity-act); [DR 1705 (2026)](https://tax.colorado.gov/sites/tax/files/documents/DR1705_2026.pdf); [DR 0106K instructions (2025)](https://tax.colorado.gov/sites/tax/files/documents/DR0106K-I_2025.pdf) |
+| **Connecticut** | In force; elective from 2024 (it was mandatory from 2018 to 2023) | 6.99% | Annual and irrevocable. Tick the box on a timely filed CT-1065/CT-1120SI, up to the extended due date. The CT-PET return is due 15 March for calendar-year entities. | Partnerships and S corporations. Not publicly traded partnerships. From 2024 no tax is required on C corporation and tax-exempt members. | Credit of **87.5%** of the member's share, refundable | **Check**: the old rule was repealed in 2023 | [DRS](https://portal.ct.gov/drs/taxes/pass-through-entity/tax-information); [Ch. 228z](https://www.cga.ct.gov/current/pub/chap_228z.htm); [CT-PET instructions (2025)](https://portal.ct.gov/-/media/drs/forms/2025/pass-through/ct-pet-instructions_1225.pdf?rev=eebfb4ef8af8449e91daef1e6548c758) |
+| **Georgia** | In force; no end date found | Individual rate: 5.19% (2025). 2026: the individual rate is 4.99%, and the tax follows it | Annual. Tick the box on the Form 600S or 700, up to the extended due date. Irrevocable once that date passes. | S corporations and partnerships (all partnerships from 2023). Not SMLLCs. | **Exclusion** (PTEDED). No credit. | Not stated. Do not file a composite return. | [DOR FAQ](https://dor.georgia.gov/hb-149-pass-through-entity-tax-faq); [IT-711 (2025)](https://dor.georgia.gov/document/document/2025-it-711-partnership-income-tax-booklet/download); [4.99% rate](https://dor.georgia.gov/taxes/important-tax-updates) |
+| **Hawaii** | In force; no end date | 9% (2024 onward) | Annual. File Form N-362E by the 20th day of the 4th month after year end, or the 20th day of the 10th month if extended. The extension is automatic only if the properly estimated tax is paid. Signed by every member, or by one authorised member. Irrevocable. Must e-file and e-pay or the election is cancelled. | Partnerships (not publicly traded) and S corporations. Not SMLLCs. Only individual, trust and estate members' shares are taxed. | Credit, nonrefundable; carry forward. Add-back from 2025. | Relieved if their only Hawaii income is from electing entities | [DOTAX](https://tax.hawaii.gov/pte/) |
+| **Idaho** | **Check**: Idaho's official sites could not be reached when this Guide was checked | **Check** | **Check** | **Check** | **Check** | **Check** | Idaho State Tax Commission |
+| **Illinois** | In force; the end date was removed (P.A. 104-0453) | 4.95% | Annual, on Form IL-1065 or IL-1120-ST. Irrevocable after the extended due date. | Partnerships (not publicly traded) and S corporations. From tax years ending on or after 31 Dec 2026, a partnership may choose its tax base. Replacement tax is separate and still due. | Credit, reported as a payment | Relieved if their only income is from electing entities and the credit covers the tax | [IDOR](https://tax.illinois.gov/research/publications/pubs/pass-through-information.html); [FY 2026-15](https://tax.illinois.gov/research/publications/bulletins/fy-2026-15.html); [FY 2027-01](https://tax.illinois.gov/research/publications/bulletins/fy-2027-01.html) |
+| **Indiana** | In force | Individual rate: 3.00% (2025), 2.95% (2026) | Annual. Made during the year, or on the timely filed IT-65/IT-20S including extensions. Not after the original return is filed, and not by amendment. Binds all owners. | Partnerships, S corporations and LLCs taxed as either. Not SMLLCs or QSubs. | Refundable credit | Not stated. The tax replaces the composite tax, but not county tax. | [DOR FAQ](https://www.in.gov/dor/tax-forms/other-forms/ptet/faq/); [2026 rate](https://www.in.gov/dor/resources/tax-rates-and-reports/rates-fees-and-penalties/) |
+| **Iowa** | In force while the federal cap applies. One IDR FAQ page still says it ends in 2025; that page is out of date | Individual rate: 3.8% (2025). 2026: **check** | Annual, on the IA 1065/IA 1120S or GovConnectIowa. Irrevocable. Deadline: six months after the original return due date. | Partnerships (not publicly traded) and S corporations. Not SMLLCs. | Refundable credit, cut by the tax rate: 96.2% of the tax for 2025 | Relieved if their only Iowa income is from electing entities and the credit covers the tax | [IDR guidance](https://revenue.iowa.gov/taxes/tax-guidance/business-income-tax/pass-through-entity-tax-ptet); [Iowa Code 422.16C](https://www.legis.iowa.gov/docs/code/2026/422.16C.pdf); [IDR deadline](https://revenue.iowa.gov/news/2024-12-23/idr-modifies-pass-through-entity-tax-election-deadline); [2025 rates](https://revenue.iowa.gov/media/4367/download?inline=) |
+| **Kansas** | In force; no end date in the statute | Top individual rate: 5.58% (2024 onward). A revenue trigger can lower it; 2026: **check** | Annual, on the entity's return; binds all owners | S corporations and partnerships. C corporation partners are excluded. | Credit; the excess is refundable | **Check** | [K.S.A. 79-32,286](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0286_section/079_032_0286_k/); [79-32,287](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0287_section/079_032_0287_k/); [79-32,110](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0110_section/079_032_0110_k/); [79-32,288](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_032_0000_article/079_032_0288_section/079_032_0288_k/) |
+| **Kentucky** | **Check** (statute not read; DOR forms continue) | Individual rate: 4.0% (2025), 3.5% (2026) | Annual. File Form 740-PTET-ELECT or tick the box on the 740-PTET, by the 15th day of the 4th month after year end (or the extended due date). Irrevocable. The tax is due by the original due date. | Pass-through entities. C corporation owners are excluded. | Refundable credit (PTET-CR) | Not stated; the credit is claimed on Form 740-NP | [DOR instructions](https://revenue.ky.gov/Forms/Form%20PTET%20Instructions.pdf); [740-PTET (2024)](https://revenue.ky.gov/Forms/Form%20740-PTET%202024.pdf); [2026 rate](https://revenue.ky.gov/Forms/INSTR-41APTE%28I%29%20%282025%29.pdf) |
+| **Louisiana** | In force; no end date found | 3% flat, for periods beginning on or after 1 Jan 2025 | Form R-6980, which needs LDR acceptance. Due by the 15th day of the 4th month after the first year it applies. **Not annual:** it continues until terminated on R-6983. | S corporations and entities taxed as partnerships | **Exclusion** | Not stated | [LDR FAQ](https://revenue.louisiana.gov/tax-education-and-faqs/faqs/corporation-income-franchise-taxes/does-a-corporation-taxed-as-an-s-corporation-federally-have-to-make-the-pass-through-entity-tax-election/); [3% rate](https://revenue.louisiana.gov/tax-education-and-faqs/faqs/income-tax-reform/what-are-the-income-tax-rates-for-s-corps-and-other-pass-through-entities-making-the-pte-election/) |
+| **Maine** | **New for 2026**: tax years beginning on or after 1 Jan 2026 | Top individual rate, currently 7.15% | Annual election. Form and deadline: **check** Maine Revenue Services guidance | Qualified members only; **check** the definition | Refundable credit of **90%** of the member's share | **Check** | [Maine Revenue law changes for 2026](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/legischange26.pdf) |
+| **Maryland** | In force; no end date in the statute | 8.75% on individual and fiduciary members' shares, 8.25% on entity members' shares (periods beginning after 31 Dec 2024) | Annual and irrevocable. Made with the **first** filing or payment of the year. A first payment sent without the form locks in a *non*-election. Cannot be changed on an amended return. | S corporations, partnerships, and LLCs not taxed as corporations. Tax-exempt members' shares are left out. | Credit, excess refunded. Members add the credit back to federal AGI. | **Not relieved**: file Form 505. No composite return allowed. | [Tax alert](https://www.marylandtaxes.gov/content/dam/mdcomp/tax/legal-publications/alerts/tax-alert-changes-to-standard-and-itemized-deductions-and-to-state-and-local-income-tax-rates-from-the-2025-legislative-session.pdf); [TB IT-6](https://www.marylandtaxes.gov/legal-pubs/tech-bulletins/income-estate-tax/tb-it6.pdf); [nonelection alert](https://www.marylandtaxes.gov/forms/Tax_Publications/Tax_Alerts/Income-Tax-Alert-Process-Change-Instructions-for-Electing-and-Nonelecting-PTEs.pdf) |
+| **Massachusetts** | In force while the federal cap is in effect | 5% | Annual. Irrevocable. Binds all members. The excise is due with the original, timely filed return. | S corporations, partnerships and LLCs taxed as either. Only natural persons, and trusts and estates taxed under ch. 62, are counted. | Refundable credit of **90%** of the excise (the 2021 text). **Check** current law and any 2026 change. | **Not relieved**: filing requirements are unchanged | [Ch. 63D as enacted](https://budget.digital.mass.gov/summary/fy22/outside-section/section-39-taxation-of-pass-through-entities) |
+| **Michigan** | In force while the federal cap is in effect | Individual rate: 4.25% (2024) | Made by an electronic payment. **Binding for 3 years** (the year of payment and the next two). Deadline: **check** Treasury's current rule. | S corporations and partnerships with Michigan business activity. Not publicly traded partnerships or disregarded entities. C corporation members' shares are excluded. | Credit against the member's income tax (**check** whether refundable) | Not stated | [Senate Fiscal Agency](https://sfa.senate.michigan.gov/Publications/Notes/2023Notes/NotesFal23dzel.pdf); [rate table](https://sfa.senate.michigan.gov/publications/budupdates/statebudgetoverview_mostrecent.pdf) |
+| **Minnesota** | Re-enacted by the 2026 tax bill (Laws 2026, ch. 128), with the end date moved to the end of tax year 2027 | 9.85% | Annual, by the due date or extended due date of the PTE return. Made by qualifying owners holding more than 50% of the qualifying owners' interests; binds all qualifying owners; irrevocable for the year. | Partnerships, S corporations and LLCs with at least one qualifying owner; not publicly traded partnerships. Qualifying owners: individuals and estates, trusts only as S corporation shareholders, and disregarded entities owned by them. Other owners are left out. | Refundable credit of 100% of the owner's share | Certain nonresidents can have their filing requirement met by the entity's return | [2026 bill analysis](https://www.revenue.state.mn.us/sites/default/files/2026-05/hf2438sf2082-enacted-otb.pdf); [Minn. Stat. 289A.08](https://www.revisor.mn.gov/statutes/cite/289A.08) |
+| **Mississippi** | **Check** (no end date found) | 2025: 0% on the first $5,000, 4% on the next $5,000, 5% above. 2026: **check** | Separate Form 84-381, filed during the year or by the (extended) due date. It cannot be made by filing or amending a return. **Continues until revoked.** | Partnerships and S corporations; not fiduciaries | Credit; excess refunded or carried forward | Relieved if they have no other Mississippi income | [DOR FAQ](https://www.dor.ms.gov/sites/default/files/business/Updated%20EPTE%20FAQ.pdf); [2025 instructions](https://www.dor.ms.gov/sites/default/files/tax-forms/business/2025%20PTE%20INSTRUCTIONS%2084-100%20-%20Final%20%2001.14.2026.pdf) |
+| **Missouri** | **Check** (statute text not read) | Top individual rate: 4.7% (2025) | Annual, on a timely filed Form MO-PTE, including extension. Needs a designated representative first. Members may opt out by the original due date. | Partnerships and S corporations | Credit, **nonrefundable**; unlimited carryforward | Relieved if their only Missouri income is from the entity | [DOR FAQ](https://dor.mo.gov/faq/taxation/business/entity-tax.html); [MO-PTE instructions (2025)](https://dor.mo.gov/forms/MO-PTE%20Instructions_2025.pdf); [Missouri SALT Parity rule](https://dor.mo.gov/resources/official-final-rules/documents/12_CSR_10-2_436_SALT_Parity_Act_Implementation-_Law_9-30-2025.pdf); [credit FAQ](https://dor.mo.gov/faq/taxation/business/salt-parity-act.html) |
+| **Montana** | In force; no end date found | Top individual rate. DOR says 5.9%; the 2026 top rate in Montana Code 15-30-2103 is 5.65%. **Check** DOR's 2026 figure. | Annual, on the timely filed Form PTE including extensions. Irrevocable. | Partnerships and S corporations. C corporation and tax-exempt owners' shares are excluded. | Refundable credit | Relieved if all their Montana income is taxed at the entity | [DOR](https://revenue.mt.gov/taxes/pass-through-entities/pass-through-entity-tax); [Montana Code 15-30-3327](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0330/section_0270/0150-0300-0330-0270.html); [Montana Code 15-30-2103](https://leg.mt.gov/bills/mca/title_0150/chapter_0300/part_0210/section_0030/0150-0300-0210-0030.html) |
+| **Nebraska** | In force; DOR says it is not tied to the federal cap | 5.20% (2025), 4.55% (2026), 3.99% (2027 onward) | Annual. File Form PTET-E or tick Box 5 on the return, by the extended due date. Irrevocable. | Partnerships (not publicly traded) and S corporations. Not disregarded LLCs. | Refundable credit | Not stated | [DOR FAQ](https://revenue.nebraska.gov/about/frequently-asked-questions/pass-through-entity-tax-faqs); [DOR](https://revenue.nebraska.gov/tax-credits/nebraska-pass-through-entity-tax-ptet) |
+| **New Jersey (BAIT)** | In force | 2026: 5.675% up to $250,000; 6.52% up to $1,000,000; 10.9% above | Separate online election each year, by the **original** due date of the PTE-100. Extensions do not extend it. It must be made before any payment is accepted. | Partnerships, S corporations and LLCs with at least one member liable for NJ gross income tax. Not SMLLCs or sole proprietors. | Refundable credit | **Not relieved** if they meet the filing threshold | [Division of Taxation](https://www.nj.gov/treasury/taxation/baitpte/index.shtml); [FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml); [PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf) |
+| **New Mexico** | In force (no end date found) | Higher of the top personal and corporate rates, currently 5.9% | Annual, by filing the entity return and completing the entity-level tax section. Binds all owners. | Pass-through entities. The tax cannot be paid for government, tribal or 501(c)(3) owners, for unitary corporate partners, or for PTE owners. | Credit | Withholding is not needed for owners the entity paid for | [TRD](https://www.tax.newmexico.gov/businesses/corporate-income-franchise-tax-overview/pass-through-entity/) |
+| **New York (State)** | In force | 6.85% up to $2 million, rising to 10.90% above $25 million | Online, between 1 Jan and **15 March of the tax year itself**, by an authorised person (not the preparer). Irrevocable after the first estimate date. | Partnerships (not publicly traded) and NY S corporations. Not SMLLCs unless treated as S corporations. Corporate and partnership partners get no credit. | Refundable credit | **Not relieved**: they cannot claim it on a group return and must file IT-203 | [PTET](https://www.tax.ny.gov/bus/ptet/); [rates](https://www.tax.ny.gov/e-services/ptet/calculations.htm); [FAQ](https://www.tax.ny.gov/bus/ptet/faq.htm) |
+| **New York City** | In force | 3.876% | Same window (by 15 March). Only for entities that also elected the State PTET. | City partnerships with at least one city taxpayer partner; city resident S corporations whose shareholders are all city taxpayers | Credit against city tax | Not stated | [NYC PTET](https://www.tax.ny.gov/bus/ptet/city.htm); [calculation](https://www.tax.ny.gov/e-services/ptet/calculations-city.htm) |
+| **North Carolina** | In force; a 2026 estimate voucher has been issued | Individual rate: 4.25% (2025), 3.99% (2026) | On the timely filed return, by the due date including extensions. An election on a late return is invalid. | S corporations and partnerships. Not publicly traded partnerships, or partnerships with any partner other than an individual, estate, §1361(c)(2) trust or §1361(c)(6) organisation. | **Exclusion** (the owner deducts their share) | Relieved if their only NC income is from the entity and it complies | [NCDOR notice](https://www.ncdor.gov/taxes-forms/information-tax-professionals/tax-bulletins-directives-and-other-important-notices/important-notices-and-frequently-asked-questions-personal-taxes/important-notice-regarding-north-carolinas-recently-enacted-pass-through-entity-tax); [rates](https://www.ncdor.gov/taxes-forms/individual-income-tax/tax-rate-schedules); [2026 voucher](https://www.ncdor.gov/taxes-forms/partnership-tax/partnership-tax-forms-and-instructions/2026-nc-40-pte-taxed-partnership-estimated-income-tax) |
+| **Ohio** | In force; 2026 estimate dates are published | 3% (2023 onward, per the 2025 instructions) | For one year at a time. File the IT 4738, or the EPTE-ELEC, by the deadline including extensions. Irrevocable once the IT 4738 is filed. | Qualifying PTEs. Not disregarded entities, 501(c) bodies, publicly traded partnerships, trusts or estates. | Refundable credit | Relieved if they have no other Ohio income | [ODT](https://tax.ohio.gov/business/pass-through-entity-and-fiduciary-income-tax/it-4738); [2025 instructions](https://dam.assets.ohio.gov/image/upload/v1769121383/tax.ohio.gov/forms/pass-through_entities/2025/it4738-instructions.pdf) |
+| **Oklahoma** | In force; 2026 rate **check** | 4.75% on individual, trust and estate members; 4% on corporate and partnership members | Form 586, filed during the prior year or within 2 months and 15 days of the year's start; or on the return (from 2024) by the extended due date. **Binding until revoked.** | Entities that file an Oklahoma partnership or S corporation return | **Exclusion** | Not stated | [Form 586](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/businesses/corporate-income-tax/current/586.pdf); [Form 587-PTE](https://oklahoma.gov/content/dam/ok/en/tax/documents/forms/businesses/corporate-income-tax/current/587-PTE.pdf) |
+| **Oregon** | Extended by SB 1510 (2026) to tax years beginning before 1 Jan 2028 | 9% on the first $250,000 of distributive proceeds, 9.9% above | Annual, by filing Form OR-21 by the due date **including extensions**. Late returns are not accepted. Revocable until then. | Partnerships and S corporations whose owners are all individuals, or PTEs owned entirely by individuals | Refundable credit, with add-back | A composite return is still needed for nonresidents in it | [ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx) |
+| **Rhode Island** | **Check**: official site blocked our fetch | **Check** | **Check** | **Check** | **Check** | **Check** | RI Division of Taxation |
+| **South Carolina** | In force; no end date | 3% on active trade or business income | Annual. Tick the box on the SC1065/SC1120S, up to the extended due date. Owners cannot opt out. | Only if **every** owner is a qualified owner, and any partnership owner is itself owned by qualified owners. Owners taxed or exempted under §§12-6-530 to 12-6-540 and 12-6-550 (for example a C corporation), and any other SC-exempt owner, disqualify the entity. Covers active trade or business income only. | **Exclusion**. No credit, and generally no other-state credit. | Not stated. Withholding relief applies up to the tax paid. | [S.C. Code 12-6-545](https://www.scstatehouse.gov/code/t12c006.php); [RR 21-15](https://dor.sc.gov/resources-site/lawandpolicy/Advisory%20Opinions/RR%2021-15.pdf) |
+| **Utah** | **Check**: we could not confirm the election exists for 2026 | Individual rate: 4.5% (from 1 Jan 2025) | **Check** the Utah State Tax Commission's current SALT election guidance | **Check** | Credit, nonrefundable; carry forward 10 years; add-back required | Not stated | [Owner credit](https://incometax.utah.gov/credits/pass-through-entity-credit); [rates](https://incometax.utah.gov/paying/tax-rates) |
+| **Virginia** | Made permanent in 2026 (previously ending 1 Jan 2027) | 5.75% | Annual, on a timely filed Form 502PTET including extensions. An estimated or extension payment also counts as electing. | Separate entities for federal tax. Only eligible owners' shares are taxed: individuals, estates and trusts subject to Virginia tax. Not disregarded SMLLCs. | Refundable credit; add back the deduction | Not stated. No Form 765 composite return allowed. | [§58.1-390.3](https://law.lis.virginia.gov/vacode/title58.1/chapter3/section58.1-390.3/); [2026 summary](https://www.tax.virginia.gov/sites/default/files/inline-files/2026-legislative-summary.pdf); [502PTET instructions](https://www.tax.virginia.gov/sites/default/files/taxforms/corporation-and-pass-through-entity-tax/2025/502ptet-instruction-package-2025.pdf) |
+| **West Virginia** | In force; no end date | Top individual rate: 4.82% (2025). 2026: **check** | Annual and irrevocable, by filing the EPT-100. The Tax Division says by 15 March for calendar-year filers; the statute allows the extended due date. Use 15 March. | Partnerships and S corporations; not disregarded entities; tiered partnerships may elect | Credit, nonrefundable; 5-year carryforward; individuals only | Relieved if all their WV income is through an electing entity that paid in full | [Tax Division](https://tax.wv.gov/Business/ElectivePassThroughEntityTax/Pages/ElectivePassThroughEntityTax.aspx); [EPT-100 instructions (2025)](https://tax.wv.gov/Documents/PTE/2025/ept100.Instructions.2025.pdf) |
+| **Wisconsin** | In force; no end date found | 7.9% | Annual. Box I on Form 3, or box 7 on Form 5S, by the extended due date. Needs consent from owners with more than 50%. Revocable by amended return by the same date. | Partnerships and S corporations; no residence or owner-type limit | **Exclusion**. Losses do not pass through. | Not stated; no pass-through withholding | [DOR FAQ](https://www.revenue.wi.gov/Pages/FAQS/ise-passthrough-general.aspx); [Schedule 3-ET](https://www.revenue.wi.gov/TaxForms2025/2025-Schedule3-ET-Inst.pdf); [Schedule 5S-ET](https://www.revenue.wi.gov/TaxForms2025/2025-Schedule5S-ET-Inst.pdf) |
 
-## 3. PTET State Matrix
+**No PTET found.** Delaware ([HB 489](https://legis.delaware.gov/BillDetail/129844) died in 2022) and Vermont ([S.45](https://legislature.vermont.gov/bill/status/2024/S.45) stalled in 2023) had not enacted one when we checked. We found no enacted PTET for North Dakota, Pennsylvania or the District of Columbia either, but no official page confirms that. **Check** each of these before advising.
 
-**PTET State Matrix**  _(See per-state statute citations within table)_
+## Boundaries and exceptions
 
-| State | Statute | Eff Yr | Entities | Rate | Election Deadline | NR Benefit | Refundable | Est. Tax | RC Interaction | Notable Quirks |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **AL** | Code §40-18-24.4 | 2021 | B | 5.0% flat | By the original due date of the return (Mar 15 / Apr 15) | Y | C (5-yr) | Y — 4/15, 6/15, 9/15, 12/15 | Y (post-2022 AL DOR ruling) | Election is irrevocable for the year once made. Estimates required if PTET liability > $500. |
-| **AR** | Act 362 of 2021, Ark. Code §26-65 | 2022 | B | 4.4% (2025, reduced from 4.7% in 2024) | Due date of return incl. extensions | Y | Y | Y — same as corp | Y | Rate ties to top individual rate, which is phasing down toward 3.9%. |
-| **AZ** | A.R.S. §43-1014 | 2022 | B | 2.5% flat (post-2023 flat-tax conversion) | Due date of return | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | Pre-2023 rate was 4.5%; 2023+ rate matches the AZ flat individual rate. |
-| **CA** | R&TC §§17052.10, 19900-19906 | 2021 | B (S-corp + partnership; **NOT** SMLLC disregarded entities — must be multi-member) | 9.3% flat | **Two-prong: (1) prepayment by June 15 of the election year, equal to the GREATER of $1,000 or 50% of prior-year PTET; (2) final election by the original return due date (Mar 15).** Miss June 15 prepayment = election VOID. | N (NR partners get no CA credit) | C (5-yr carryforward, then refundable per AB 150 amendment) | N (the June 15 prepayment IS the estimate) | Y, but **CA does not grant a resident credit for PTET paid to other states** under R&TC §18001 unless the other state grants reciprocal credit (see Common Trap #1) | Owner must affirmatively consent on a per-owner basis (Form 3804 attaches owner list). Owner-by-owner election. Sunsets after 2025 — must be reauthorized; AB 150 was scheduled to sunset 12/31/2025 and 2024 extender legislation pushed it to 12/31/2026. |
-| **CO** | C.R.S. §39-22-340 | 2022 (retroactive to 2018 — unique) | B | 4.40% (2024+ rate; was 4.55% in 2022-23) | Due date of return | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | CO uniquely allows **retroactive election back to 2018** under the 2022 enactment — practitioners filed amended PTE returns for 2018-2021 to claim refunds. Retroactive window closed in 2023. |
-| **CT** | Conn. Gen. Stat. §12-699 | **2018** (first in the nation) | B | 6.99% flat | **MANDATORY through 2023; ELECTIVE starting 2024** | Y | Y (resident); C (NR) | Y — 4/15, 6/15, 9/15, 1/15 | Y | CT was the only state with a **mandatory** PTET (2018-2023). Switched to elective for 2024+. Owner credit = 87.5% of PTET paid (reduced from 93.01% in pre-2024 mandatory regime). |
-| **DC** | D.C. Code §47-1808.10 | Proposed — **NOT YET ENACTED as of 2025** | — | — | — | — | — | — | — | DC has discussed PTET but has not enacted. DC residents cannot use DC PTET; they remain subject to the SALT cap on DC income tax. |
-| **GA** | O.C.G.A. §48-7-23 | 2022 | B | **5.39% (2024); 5.19% (2025); phasing to 4.99% by 2028** | Due date of return | Y | C | Y (above $500 threshold) | Y | Rate phase-down tracks GA individual rate reduction (HB 1437 of 2022). Election applies to all owners — no opt-out. |
-| **HI** | HRS §235-51.5 | 2023 | B | 11.0% (top rate) graduated | Due date of return | Y | Y | Y | Y | HI uses the top individual rate. Graduated brackets from 1.4% to 11.0%, but most PTET payers hit 11%. |
-| **ID** | Idaho Code §63-3026B | 2021 | B | 5.695% flat (2024+; was 5.8% 2022-23) | Due date of return incl. extensions | Y | Y | Y | Y | Rate ties to ID flat individual rate (post-2023). |
-| **IL** | 35 ILCS 5/201(p) | 2021 | B | 4.95% flat | Due date of return incl. extensions | Y | Y | Y — 4/15, 6/15, 9/15, 12/15 | Y | **PTET does NOT exempt the PTE from the 1.5% Personal Property Replacement Tax (PPRT) for partnerships or the 2.5% PPRT for S-corps** — these are still owed and not creditable at owner level. PPRT is a separate, parallel tax. |
-| **IN** | Ind. Code §6-3-2.1 | 2022 (retroactive to 2022 under SEA 2 of 2023) | B | 3.0% flat (2025; was 3.15% in 2023-24) | Due date of return | Y | Y | Y | Y | Rate ties to IN flat individual rate; phasing down to 2.9% by 2027. |
-| **IA** | Iowa Code §422.16C | 2022 (retroactive — election available for 2022 by Apr 30, 2023 only) | B | **6.0% flat (2025); phasing to 3.9% flat by 2026** | Due date of return | Y | Y | Y | Y | Rate phase-down tracks IA individual rate consolidation. |
-| **KS** | K.S.A. §79-32,287 | 2022 | B | 5.7% flat (top KS individual rate) | Due date of return | Y | C (10-yr) | Y | Y | Election binds all owners; no individual opt-out. |
-| **KY** | KRS §141.209 | 2022 (retroactive to 2022 under HB 360 of 2023) | B | 4.0% flat (2025; was 4.5% in 2024, 5.0% in 2023) | Due date of return incl. extensions | Y | Y | Y | Y | Rate phase-down tracks KY individual rate (HB 8 of 2022). |
-| **LA** | La. R.S. §47:287.732.2 | 2019 (one of the earliest) | B | **Graduated: 1.85% / 3.5% / 4.25%** — matches LA individual brackets | Due date of return | N (pre-2024); Y (post-2024 under Act 413 of 2023) | N — owner **excludes** PTET-taxed income rather than taking a credit | Y | N/A — exclusion model | LA uses an **exclusion model**, not a credit model — owners exclude the income from their LA personal return rather than claiming a credit. Federal benefit identical; state mechanics different. |
-| **MD** | Md. Tax-Gen. §10-102.1 | 2020 | B | 8.0% flat (resident-allocable portion); 5.75% (NR-allocable portion + corporate-owner portion at 8.25%) | Due date of return | Y | Y | Y — 4/15, 6/15, 9/15, 12/15 | Y | MD splits the rate by owner type. Originally mandatory for some entities pre-2021; now fully elective. |
-| **MA** | M.G.L. ch. 63D | 2021 | B | 5.0% flat | Due date of return incl. extensions | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | Owner credit = 90% of PTET (10% haircut — a quirk of the MA design). |
-| **MI** | MCL 206.815 | 2021 (retroactive to 2021 under PA 135 of 2021) | B | 4.25% flat | Due date of return; **irrevocable for 3 years once made** | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | **3-year binding election** — once elected, cannot revoke for 3 tax years. Unusual lock-in. |
-| **MN** | Minn. Stat. §289A.08 subd. 7a | 2021 | B | **9.85% flat (top MN individual rate)** | Due date of return | Y | Y | Y | Y | **Tax-haven inclusion** — MN's combined-reporting rules include tax-haven jurisdictions, which can complicate PTET base computation for multistate PTEs with foreign operations (see Common Trap #5). |
-| **MS** | Miss. Code §27-7-26 | 2022 (retroactive) | B | 4.4% flat (2025; was 5.0% in 2022, 4.7% in 2023, 4.4% in 2024) | Due date of return | Y | Y | Y | Y | Rate phase-down tracks MS individual rate (HB 531 of 2022). |
-| **MO** | RSMo §143.436 | 2022 | B | 4.7% flat (2025; was 4.95% in 2023, 4.8% in 2024) | Due date of return | Y | Y | Y | Y | Rate phase-down tracks MO individual rate. |
-| **MT** | MCA §15-30-3312 | 2023 | B | 6.75% flat (2024+; was higher pre-2024 individual top rate consolidation) | Due date of return | Y | Y | Y | Y | Late-adopter — first effective year was 2023. |
-| **NE** | Neb. Rev. Stat. §77-2734.03 | **2018 (retroactive — enacted 2023, election available for 2018-2022 by filing amended)** | B | 5.84% flat (2024+; phasing down) | Due date of return | Y | Y | Y | Y | NE allowed retroactive elections for 2018-2022 under LB 754 (2023) — practitioners filed amended PTE returns to claim refunds for those years. Window closed in 2024. |
-| **NJ** | N.J.S.A. §54A:12-1 et seq. (BAIT — Business Alternative Income Tax) | 2020 | B | **Graduated: 5.675% / 6.52% / 9.12% / 10.9%** | Due date of return — **but election made via filing PTE-100, not a separate form** | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | Known as **"BAIT"** rather than PTET in NJ-speak. Top rate is **10.9%** — highest in the nation among PTET states. Owner credit refundable but **not transferable** to other returns. |
-| **NM** | NMSA §7-3A-9 | 2022 (retroactive to 2022) | B | 5.9% flat (top NM individual rate) | Due date of return | Y | Y | Y | Y | Late adopter; straightforward design. |
-| **NY** | N.Y. Tax Law Art. 24-A (§§860-866) | 2021 | B | **Graduated: 6.85% / 9.65% / 10.30% / 10.90%** (NYS); plus **separate NYC PTET at 3.876%** for NYC residents | **March 15** for both NYS and NYC PTET (election due 6 weeks earlier than CA) — **separate forms, separate elections** | N (NR partners get no NY credit — see quirks) | Y | Y — 3/15, 6/15, 9/15, 12/15 | Y | **TWO separate PTETs**: NYS PTET and NYC PTET. Both elections due March 15 of the **tax year being elected** (not the return year — so election for 2025 was due March 15, 2025). **Quarterly estimates due 3/15, 6/15, 9/15, 12/15** (note the March, not April, first estimate). NR partners do NOT get a NY resident credit, so PTET for NR partners is wasted unless NR partner's home state grants RC for NY PTET. |
-| **NC** | N.C.G.S. §105-154.1 | 2022 | B | **4.5% (2025); phasing to 3.99% by 2026, then to 2.49% by 2030** | Due date of return | Y | C | Y | Y | Rate phase-down tracks NC individual rate consolidation (the most aggressive in the country). |
-| **OH** | ORC §5747.38 | 2022 (retroactive to 2022) | B | **3.0% (2025); phasing from 5.0% in 2022, 3.0% in 2023+** | Due date of return incl. extensions | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | Rate dropped sharply post-2022. OH PTET is generally beneficial because OH individual top rate is also low (3.5% in 2025). |
-| **OK** | 68 O.S. §2355.1P-4 | 2019 (one of the earliest) | B | 4.75% flat | Due date of return | Y | C | Y | Y | OK was an early adopter (2019, alongside RI and CT). Election binds owners. |
-| **OR** | ORS §316.043 | 2022 | B | **9.0% (first $250k of distributive share) / 9.9% (above)** | **April 15** of the tax year — **election due before the year ends, not at return time** (this is the unusual prepay model) | Y | Y | Y — 4/15, 6/15, 9/15, 1/15 | Y | OR is the only state where the election is due **April 15 of the tax year itself** (so election for 2025 was due April 15, 2025) — earlier than NY's March 15 of the year. Combined with the prepay requirement, OR is administratively the most demanding. |
-| **RI** | R.I. Gen. Laws §44-11-2.3 | 2019 | B | 5.99% flat | Due date of return incl. extensions | Y | Y | Y | Y | Early adopter; rate matches RI top individual rate. |
-| **SC** | S.C. Code §12-6-545 | 2021 | B | **3.0% (2025); phasing from 7.0% in 2021, 6.4% in 2024, 6.2% in 2025 individual rate, but PTET rate matches the SC "active trade or business" income rate at 3.0% currently** | Due date of return | Y | Y | Y | Y | SC PTET uses the **3.0% "active trade or business" rate** rather than the regular individual top rate — quirky and beneficial. Phase-down tracks ATB income rate reductions. |
-| **UT** | Utah Code §59-10-1402.5 | 2022 | B | 4.55% flat (2025; was 4.65% in 2024, 4.85% in 2022-23) | Due date of return | Y | Y | Y | Y | Rate phase-down tracks UT flat individual rate. |
-| **VA** | Va. Code §58.1-390.1 et seq. | 2021 (retroactive to 2021 under HB 1121 of 2022) | B (**but only "qualifying PTEs" — see quirks**) | 5.75% flat | Due date of return incl. extensions | Y | Y | Y | Y | **VA PTET is only available to "qualifying PTEs"** — entities where **100% of owners are natural persons (or other PTEs whose ultimate owners are natural persons) eligible to claim the VA owner credit**. A single C-corp owner or ineligible owner disqualifies the entire PTE. See Common Trap #4. |
-| **WI** | Wis. Stat. §71.21(6) | **2018** (S-corp only initially; partnerships added 2019 under Wis. Stat. §71.21(7)) | B (S-corp 2018+, partnership 2019+) | 7.9% flat (S-corp); 7.9% (partnership) | Due date of return incl. extensions; **all shareholders must consent in writing** | Y | Y | Y | Y | One of the first two PTET states (alongside CT). 100% shareholder consent required. |
-| **WV** | W. Va. Code §11-21-3a | 2022 | B | 6.5% flat (matches WV top individual rate pre-2023; rate has changed with WV individual rate reductions) | Due date of return | Y | Y | Y | Y | Late adopter; rate tracks WV individual rate phase-down. |
-
-### 3.1 Summary statistics
-
-- **35 states + DC considered, 35 states with active PTET** as of tax year 2025 (DC has not enacted).
-- **Earliest adopters (2018):** CT (mandatory), WI.
-- **Latest adopters (2023):** HI, MT.
-- **Highest top rate:** NJ at 10.9%.
-- **Lowest rate:** IN, OH at 3.0%; AZ at 2.5%.
-- **Most administratively demanding:** CA (June 15 prepayment trap) and OR (April 15 election deadline within the tax year itself).
-
-## 4. States WITHOUT PTET
-
-**States WITHOUT PTET**  _(See per-state reasons within table)_
-
-| State | Reason | PTET planning impact |
+| Situation | Rule | Source |
 | --- | --- | --- |
-| **AK** | No state personal income tax (PIT) | PTET moot — no SALT cap exposure on AK income. |
-| **DE** | Has PIT but no PTET enacted | DE residents/PTEs cannot bypass SALT cap on DE income; rely on the $40k SALT cap. |
-| **FL** | No PIT | PTET moot. |
-| **ME** | Has PIT but no PTET enacted | ME residents/PTEs cannot bypass SALT cap on ME income. |
-| **NV** | No PIT | PTET moot. |
-| **NH** | No PIT on wages/SE income (only interest/dividends, which are not PTET-eligible) | PTET moot for most owners. |
-| **ND** | Has PIT (low rate) but no PTET enacted | ND PIT top rate is 2.5% (post-2023) — low enough that PTET workaround offers minimal benefit even if enacted. |
-| **PA** | Has 3.07% flat PIT but no PTET enacted (despite repeated proposals — PA has historically resisted) | PA owners face full SALT cap on PA tax. PA-resident owners in other-state PTEs **do not get a PA resident credit for PTET paid to other states** under most readings (state-level dispute ongoing). See Common Trap #6. |
-| **SD** | No PIT | PTET moot. |
-| **TN** | No PIT (Hall income tax repealed 2021) | PTET moot. |
-| **TX** | No PIT (but Texas Franchise Tax exists at entity level — separately, not a PTET) | PTET moot at state level; TX-resident owners in other-state PTEs may still benefit federally (see Worked Example 3). |
-| **VT** | Has PIT but no PTET enacted as of 2025 (VT considered legislation in 2023-24 but did not pass) | VT residents/PTEs cannot bypass SALT cap on VT income. |
-| **WA** | No PIT on wages (but capital gains tax at 7% post-2022 — narrow base) | PTET moot for most owners. |
-| **WY** | No PIT | PTET moot. |
-
-## 4. States WITHOUT PTET
-
-**Note:** Eight states have no broad-based PIT (AK, FL, NV, NH, SD, TN, TX, WA, WY — nine including WA's narrow CG tax). For these, PTET planning is moot **at the state level** but may still be relevant for owners who are non-residents of these states earning income in PTET states (see Worked Example 3).
-
-## 5. Decision Framework — Should the PTE Elect PTET?
-
-A five-step go/no-go analysis. The reviewer answers each question; a "no" at any step may kill the election but does not always — proceed to the next step to confirm.
-
-### Step 1 — Is the owner over the $10k/$40k SALT cap before considering state income tax on PTE income?
-
-- **Step 1 SALT cap test** — **Test:** Compute the owner's other SALT (property tax + state PIT on W-2 wages + sales tax if elected) **before** layering on the state PIT attributable to the PTE share. If the owner's other SALT already exceeds $40,000 (for 2025-2029) or $10,000 (for 2030+), then **100% of the PTET-eligible state tax is cap-bypassed by election**. - **YES, over cap** → PTET adds incremental federal benefit. Proceed to Step 2. - **NO, under cap** → Marginal benefit only. Quantify the marginal benefit before recommending. PTET still saves the SALT cap difference but the cost-benefit may be marginal.
-
-### Step 2 — Does the entity have predictable, taxable, state-tax-paying owners?
-
-- **Step 2 owner mix test** — PTET works at the entity level but the federal benefit accrues to owners. If the owner mix includes: - C-corps (no individual SALT cap exposure — C-corp PTET share generally wasted) - Tax-exempt entities (no tax at owner level — PTET share wasted unless refundable) - Trusts with low distribution income (trust SALT cap is also $10k/$40k but trust marginal rates differ) - Foreign owners (state credit may be unusable) then the entity-level PTET benefit may be partially wasted. **Rule of thumb:** if >20% of distributive share goes to non-individual or non-cap-affected owners, model the wasted portion explicitly.
-
-### Step 3 — Will the home state grant a resident credit for PTET paid to other state(s)?
-
-- **Step 3 resident credit test** — If owner is a resident of state A and PTE files PTET in state B, owner needs state A to grant a resident credit (RC) for the share of PTET paid to state B. Without RC, the owner pays state A tax on the income twice (once via PTET to B, once via personal tax to A). - **Most states grant RC.** The matrix's "RC Interaction" column is the quick reference. - **CA is the major exception** — CA generally does NOT grant a resident credit to CA residents for PTET paid to other states under R&TC §18001, unless the other state grants reciprocal credit to non-resident CA owners. This makes CA residents who are partners in other-state PTEs **particularly vulnerable to double taxation** if the other state doesn't reciprocate. - **PA is also problematic** — PA's RC rules under 61 Pa. Code §111.5 have been read narrowly; PA-resident owners in NY PTET-paying PTEs have litigated this and lost. Get state-specific guidance.  _(R&TC §18001; 61 Pa. Code §111.5)_
-
-### Step 4 — Does the entity have non-resident owners who'd otherwise face composite-return or NR withholding requirements?
-
-- **Step 4 NR withholding test** — Some states (e.g., NY, NJ, MA, CA) require PTEs to either: - File a composite return on behalf of NR owners, or - Withhold tax from distributions to NR owners. PTET can **replace** the composite/withholding mechanism, simplifying state administration for NR owners. In some states (CO, MD), the PTET is administratively a successor to the older composite/withholding regime. - **Many NR owners** → PTET is administratively beneficial regardless of federal SALT consideration. - **Few NR owners** → No administrative benefit; focus on federal SALT cap math.
-
-### Step 5 — Are the estimated-tax cash flows manageable?
-
-- **Step 5 cash flow test** — Most PTET states require quarterly estimates. Cash flow at the entity level shifts: the entity now pays state tax that previously the owners paid individually. The entity needs cash on the quarterly estimate dates. **Owner-level cash flow:** owners receive a credit (or exclusion) but pay no individual state tax on PTET-taxed income. Net cash impact at owner level is small; net cash impact at entity level is large. If the entity lacks working capital to fund quarterly state estimates, PTET becomes a financing problem, not a tax problem.
-
-### Output of decision framework
-
-- **Elect / Decline / Marginal output rules** — **ELECT** if Steps 1, 3, 5 are favorable AND Step 2 shows >80% of share goes to cap-affected individuals. **DECLINE** if Step 1 is no AND no Step 4 administrative benefit; OR if Step 3 fails (home state denies RC) AND owner mix is heavily home-state residents. **MARGINAL — REVIEWER JUDGMENT** otherwise.
-
-## 6. Common Traps by State
-
-### 6.1 CA — The June 15 Prepayment Trap
-
-- **CA June 15 prepayment requirement and void-on-miss rule** — **Trap:** California requires a prepayment by **June 15 of the election year** equal to the greater of: - $1,000, OR - 50% of the prior-year PTET liability. **If the prepayment is missed or short by even $1, the election is VOID for the entire year.** No cure provision. The FTB has been strict on this. **Practitioner action:** - Calendar June 15 every year for every CA PTET client. - For first-year PTE elections (no prior-year PTET), the $1,000 minimum prepayment applies. - Pay via Form FTB 3893 — separate voucher. - Document the wire/check date carefully; FTB has voided elections for payments dated June 16.
-
-### 6.2 NY — Two Separate PTETs and the March 15 Deadline Within the Tax Year
-
-- **NY dual PTET regimes and March 15 deadline** — **Trap:** NY has **two separate PTET regimes**: 1. **NYS PTET** (state-level) — election due March 15 of the tax year being elected (so election for 2026 is due March 15, 2026). 2. **NYC PTET** (city-level, for NYC residents) — election also due March 15 of the tax year, but on a different form. Both are made via the NY Tax Department's online portal. **Missing either deadline is fatal** — no cure provision. Owners of NYC-resident PTEs who only file NYS election miss the NYC benefit entirely. **Practitioner action:** - Calendar **two** March 15 deadlines for NY clients (the year of election, not the return year). - For NYC-resident owners in PTEs, file BOTH elections. - Quarterly estimates due **March 15, June 15, September 15, December 15** (note: March, not April, first estimate).
-
-### 6.3 GA, NC, SC — Phase-Down Rates
-
-- **GA/NC/SC phase-down rates shrinking PTET benefit** — **Trap:** GA, NC, and SC are aggressively phasing down individual income tax rates. The PTET rate generally tracks the top individual rate (except SC, which uses the special "active trade or business" rate). As individual rates fall, the PTET federal benefit shrinks. - GA: 5.39% (2024) → 4.99% (2028) - NC: 4.5% (2025) → 2.49% (2030) - SC: PTET at 3.0% (matches ATB income rate) **Practitioner action:** - Quantify break-even: at what PTET rate does the federal SALT benefit equal the administrative cost (form fees, return prep, quarterly estimates)? - For NC particularly, by 2028-2030 the federal benefit may be marginal — re-run the decision framework annually.
-
-### 6.4 IL — PPRT Carve-Out
-
-- **IL PPRT not bypassed by PTET** — **Trap:** Illinois has both: 1. **Personal Income Tax (PIT)** at 4.95%, which PTET bypasses, AND 2. **Personal Property Replacement Tax (PPRT)** at 1.5% for partnerships and 2.5% for S-corps, which is a **separate entity-level tax that is NOT bypassed by PTET** and is **not creditable at the owner level**. PPRT is owed regardless of PTET election. It is a federally deductible §164 entity tax (so deducts at entity level) but does not flow through as a credit. **Practitioner action:** - Model both: PTET (4.95%) + PPRT (1.5% or 2.5%) for total IL entity-level tax of 6.45% (partnership) or 7.45% (S-corp). - Owners get credit only for the 4.95% PTET portion.
-
-### 6.5 MN — Tax-Haven Inclusion in Combined Return
-
-- **MN tax-haven inclusion complicating PTET base** — **Trap:** Minnesota's worldwide combined-reporting framework includes tax-haven jurisdictions in the combined group. For multistate or multinational PTEs electing MN PTET, the PTET base may include income apportioned from tax-haven entities, increasing the PTET liability beyond what a separate-entity analysis would suggest. **Practitioner action:** - For PTEs with foreign or tax-haven operations, model MN PTET base including the tax-haven inclusion. - Consider whether the increased PTET base offsets the federal benefit.
-
-### 6.6 VA — "Qualifying PTE" Requirement
-
-- **VA qualifying PTE ownership requirement** — **Trap:** Virginia PTET is only available to **"qualifying PTEs"** — defined as entities where **100% of owners are natural persons or other qualifying PTEs whose ultimate owners are natural persons**. A single C-corp owner, single-member LLC disregarded entity owned by a C-corp, or any ineligible owner **disqualifies the entire PTE**. There is no partial-PTET regime for qualifying portion only. **Practitioner action:** - Audit the owner schedule before electing. - For PTEs with mixed individual + C-corp owners, VA PTET is unavailable — consider restructuring (e.g., C-corp owner sells to individuals).
-
-### 6.7 PA — No Resident Credit for Other-State PTET (Disputed)
-
-- **PA denial of resident credit for other-state PTET** — **Trap:** Pennsylvania does not grant a resident credit to PA-resident individuals for PTET paid by a PTE to another state. PA has historically taken the position that PTET is an entity tax, not an individual tax, and is therefore not creditable under PA's RC framework (61 Pa. Code §111.5). PA-resident owners of out-of-state PTEs that elect PTET may face **double taxation** at the state level (PTET to the other state + PA personal tax on the same income with no credit). **Practitioner action:** - For PA-resident owners in NY, NJ, MD, or other PTET states, **decline the PTET election** unless the federal benefit clearly outweighs the lost PA RC. - This issue has been litigated (no resolution as of 2025); track legislative developments.  _(61 Pa. Code §111.5)_
-
-## 7. Worked Examples
-
-### 7.1 Example 1 — CA-resident S-corp owner with $500,000 distributive share
-
-**Facts:**
-- Owner: CA resident, MFJ, $500,000 net S-corp income, $50,000 W-2 from another job, $20,000 property tax, $0 sales tax election.
-- S-corp: 100% owned by individual, in CA only.
-- CA PTET rate: 9.3% flat.
-- CA individual top rate (post-MHST): 13.3% (above $1M); 9.3% in the $349k-$418k bracket; 10.3% above.
-
-**Without PTET (2025, OBBBA $40k SALT cap):**
-- CA state tax on $500k: approx. $42,000 (after standard deductions and using actual brackets).
-- Other SALT: $20k property + $4,500 CA tax on $50k wages = $24,500 already counted in CA tax of $42k? No — wait, CA tax on TOTAL CA AGI of $550k = approximately $50,500 (top brackets engaged).
-- Federal SALT deduction: capped at $40,000.
-- Federal deduction lost: $50,500 + $20,000 = $70,500 actual SALT, capped at $40,000 → **$30,500 of SALT is non-deductible**.
-
-**With PTET (S-corp elects):**
-- S-corp pays CA PTET on $500k at 9.3% = $46,500.
-- S-corp deducts $46,500 as §162 entity tax → owner's K-1 Line 1 is reduced by $46,500.
-- Owner's federal AGI is $46,500 lower.
-- Owner gets CA credit of $46,500 against CA personal tax, so CA personal tax on the $500k is wiped out.
-- Owner still owes CA tax on $50k W-2 (approximately $3,000-$4,000) + property tax $20,000 = approx. $24,000 SALT.
-- Federal SALT cap of $40,000 now covers all $24,000 of remaining SALT → no SALT loss.
-- Plus federal AGI reduction of $46,500 saves federal tax at owner's marginal federal rate (approx. 35% in 2025 for $500k income MFJ) = **$16,275 federal tax savings**.
-- Minus QBI deduction reduction: $46,500 × 20% = $9,300 less QBI deduction; federal cost = $9,300 × 35% = $3,255.
-- **Net federal benefit: $16,275 − $3,255 = $13,020.**
-
-Compare to without-PTET scenario: $30,500 of SALT non-deductible × 35% federal rate = $10,675 federal cost. By electing PTET, owner saves the $10,675 SALT-cap loss plus gains an additional $2,345 from AGI reduction beyond the cap — total economic benefit roughly $13,020.
-
-**Decision:** ELECT, and calendar June 15 prepayment of greater of $1,000 or 50% of 2024 PTET liability.
-
-### 7.2 Example 2 — NY-resident partners in a multi-state partnership (NY, NJ, CT)
-
-**Facts:**
-- Partnership: 60% activity in NY, 25% in NJ, 15% in CT. All four partners are NY residents.
-- Partnership net income: $1,000,000.
-- Each partner: 25% share = $250,000.
-
-**Analysis:**
-- NY PTET: rate up to 10.90% on the $600k NY-source income → $65,400 NYS PTET.
-- NJ BAIT: rate up to 10.9% on the $250k NJ-source income → approx. $25,500 (at 10.9% top rate).
-- CT PTET: 6.99% flat on the $150k CT-source income → $10,485.
-- Total PTET paid: $101,385.
-- Each partner's K-1 reduced by $25,346.
-- Federal AGI reduction × 37% federal rate (top bracket for $250k+ MFJ on a millionaire household) = $9,378 federal tax savings per partner.
-- Each partner gets:
-  - NYS resident credit for NJ + CT PTET portion (since NY grants RC for other-state PTET — see matrix).
-  - NYS PTET credit on NY personal return for the NYS PTET share.
-- Net federal benefit per partner: approx. $9,000-$10,000 after QBI haircut.
-
-**Election deadlines:**
-- NYS PTET: March 15 of the tax year (e.g., March 15, 2026 for 2026 tax year).
-- NJ BAIT: due date of PTE return.
-- CT PTET: due date of return (CT is elective post-2024).
-
-**Trap:** All three quarterly estimate schedules differ slightly. NY uses 3/15, 6/15, 9/15, 12/15. NJ uses 4/15, 6/15, 9/15, 1/15. CT uses 4/15, 6/15, 9/15, 1/15. The first NY estimate is **March 15**, easy to miss.
-
-**Decision:** ELECT all three. Significant federal benefit. Calendar all three election deadlines and four × three = twelve estimate dates per year.
-
-### 7.3 Example 3 — TX-resident partner in IL S-corp
-
-**Facts:**
-- TX-resident individual owns 50% of an IL S-corp.
-- IL S-corp net income: $400,000. 100% IL-source.
-- TX has no PIT. IL has 4.95% PIT.
-
-**Without PTET:**
-- IL S-corp's IL income tax: 0% at entity (S-corps pay only PPRT in IL, no IL income tax at entity level; income passes to shareholders).
-- TX shareholder owes IL non-resident PIT on $200k share at 4.95% = $9,900.
-- TX shareholder cannot deduct $9,900 of IL tax on TX return (no TX PIT).
-- Federal SALT deduction: limited to $40k cap (2025) — counts the $9,900 of IL tax + property tax + sales tax (TX has high sales tax). Likely already over the $40k cap from sales tax + property tax + IL nonres tax.
-- **$9,900 of IL nonres tax is fully SALT-capped at federal level — minimal deduction.**
-
-**With PTET (IL S-corp elects):**
-- IL S-corp pays IL PTET at 4.95% on $400k = $19,800.
-- IL S-corp deducts $19,800 as §162 entity expense.
-- Each shareholder's K-1 Line 1 reduced by $9,900.
-- TX shareholder gets:
-  - IL credit on IL non-resident return for $9,900 of PTET share → IL nonres tax owed = $0.
-  - **TX has no PIT, so no TX resident credit needed.**
-  - Federal AGI reduced by $9,900 → federal tax savings at 35% marginal rate = $3,465.
-  - Minus QBI reduction at 20% × $9,900 × 35% = $693.
-  - **Net federal benefit: $3,465 − $693 = $2,772.**
-
-**Plus the IL PPRT** (2.5% for S-corp partnerships) of $400k × 2.5% = $10,000 is still owed and is a separate IL entity tax (not PTET, not bypassed).
-
-**Decision:** ELECT. TX shareholder benefits federally from PTET even though no home-state RC is needed (because TX has no PIT). This is the classic "no-PIT home state" pattern — PTET in the source state always works federally regardless of home-state RC mechanics, because the SALT cap bypass operates at federal level.
-
-**Key insight:** Practitioners sometimes assume PTET only benefits residents of high-tax states. The federal SALT bypass works for ANY US owner of a PTE in a PTET state, regardless of the owner's home-state tax regime. The home-state RC analysis is about avoiding double **state** tax, not about federal benefit.
-
-## 8. Filing Deadline Calendar (Chronological)
-
-This is a calendar of PTET-related dates throughout a typical year, for a PTE on calendar tax year. **Actual dates shift to next business day if on a weekend/holiday.**
-
-### January
-
-- **Jan 15** — Q4 prior-year estimates due: AZ, CO, MA, MI, NJ, OH, OR (all state PTET Q4).
-- **Jan 15** — Form 1099-NEC/1096 due to recipients and IRS for prior-year contractor payments (not PTET-specific but federal calendar item).
-- **Jan 31** — W-2/W-3 due. State withholding annual reconciliations begin to fall due.
-
-### February
-
-No major PTET deadlines.
-
-### March
-
-- **March 15** — Federal Form 1065 / 1120-S due (calendar-year PTEs).
-- **March 15** — **NYS PTET election due** for the tax year now starting (e.g., March 15, 2026 = election for 2026 tax year).
-- **March 15** — **NYC PTET election due** for the tax year.
-- **March 15** — NYS PTET Q1 estimate due.
-- **March 15** — CA Form 100S (S-corp) or Form 565/568 (partnership) due — also the deadline to make CA PTET election for the prior tax year (along with required June 15 prepayment that was already made).
-
-### April
-
-- **April 15** — Federal Form 1040 due.
-- **April 15** — **OR PTET election due** for the tax year being elected (so April 15, 2026 = election for 2026 tax year).
-- **April 15** — Q1 estimates due: AL, AZ, CO, IL, MA, MD, MI, NJ, OH, OR (Q1 PTET estimates for the current tax year).
-- **April 15** — Many states' annual income tax returns due (individual and PTE alike).
-
-### May
-
-No major PTET deadlines.
-
-### June
-
-- **June 15** — **CA PTET prepayment deadline** (greater of $1,000 or 50% of prior-year PTET) — **missing this voids the CA election**.
-- **June 15** — Q2 estimates due: AL, AZ, CO, IL, MA, MD, MI, NJ, NY (NYS and NYC), OH, OR.
-
-### July
-
-No major PTET deadlines.
-
-### August
-
-No major PTET deadlines.
-
-### September
-
-- **Sept 15** — Federal Form 1065 / 1120-S due (with extension) for calendar-year PTEs.
-- **Sept 15** — Q3 estimates due: AL, AZ, CO, IL, MA, MD, MI, NJ, NY (NYS and NYC), OH, OR.
-- **Sept 15** — Final NY PTET prior-year return (if extended).
-
-### October
-
-- **Oct 15** — Federal Form 1040 due (with extension).
-- **Oct 15** — Final CA PTET return (Form 3804) for prior tax year if extended.
-
-### November
-
-No major PTET deadlines.
-
-### December
-
-- **Dec 15** — Q4 estimates due: AL, IL, MD, NY (NYS and NYC).
-
-### Year-end alerts to set for clients
-
-- Calendar reminder for CA: **June 15 prepayment** (high consequence if missed).
-- Calendar reminder for NY: **March 15 PTET election** (high consequence if missed; election can't be made retroactively).
-- Calendar reminder for OR: **April 15 election within the tax year** (highest-consequence in terms of how early it falls).
-- Calendar reminder for all states with Q4 in January (AZ, CO, MA, MI, NJ, OH, OR): year-end cash needs to be ready.
-
-## 9. Provenance
-
-This skill is compiled from:
-
-1. **Federal authority:**
-   - IRC §164(b)(6) as amended by the Tax Cuts and Jobs Act (P.L. 115-97, 2017).
-   - IRC §164(b)(6) as further amended by the One Big Beautiful Bill Act (P.L. 119-21, July 4, 2025).
-   - IRS Notice 2020-75 (Nov. 9, 2020) — Treasury intent to issue proposed regs blessing PTET deductibility at the entity level.
-   - IRC §199A (QBI deduction) as made permanent by OBBBA, relevant to net federal benefit calculation.
-
-2. **State authority** — each row of the matrix in Section 3 includes the state statute citation. These were current as of November 2025 based on enacted state legislation and DOR guidance. Rates and phase-down schedules are checked against:
-   - State revenue department PTET guidance pages.
-   - State tax notice/bulletin publications.
-   - State legislative session summaries (2024 and 2025 sessions).
-
-3. **Practitioner sources** — the common-trap callouts (Section 6) reflect issues documented in:
-   - AICPA Tax Section's "State PTE Tax" comparison chart (updated quarterly).
-   - State CPA society publications (especially CalCPA on the June 15 trap, NYSSCPA on the dual NYS/NYC elections, VSCPA on the qualifying-PTE rule).
-   - Published guidance from major accounting firms tracking state PTET enactments.
-
-### Reviewer responsibilities
-
-This skill is a **reference**, not a substitute for credentialed review. Before relying on any matrix entry:
-- Confirm the state's current-year rate (rates are phasing down in many states — check the DOR website).
-- Confirm the election deadline against the current-year calendar (deadlines shift for weekends/holidays).
-- Confirm the owner-mix qualifies (VA "qualifying PTE" rule, owner consent requirements in WI, irrevocability lock-in in MI).
-- Run the full decision framework (Section 5) for each client; do not rely on the matrix alone.
-- For multi-state PTEs, coordinate the analysis across all source states AND each owner's home state.
-
-### Update cadence
-
-This skill should be reviewed:
-- **Annually** after each state's spring legislative session (typically July-September of each year), to catch rate changes and new enactments.
-- **In real time** when OBBBA-related federal guidance is issued (e.g., if Treasury issues final §164 regs that affect PTET treatment).
-- **Before each March 15 / April 15 / June 15** to confirm no client-specific deadlines are missed.
-
-### Confidence
-
-- **High confidence:** existence of PTET in each state listed, base statutory rate, basic election mechanics.
-- **Medium confidence:** exact 2025 rate after phase-downs (rates change frequently in GA, NC, SC, IA, KY, MO, OH, MS, NE, IN, UT).
-- **Lower confidence:** edge-case mechanics like MN tax-haven inclusion, IL PPRT interaction with PTET base, PA non-recognition of other-state PTET for resident credit (litigated, unsettled).
-
-Where confidence is low, the matrix flags it explicitly. For low-confidence determinations, the reviewer should consult the relevant state DOR directly and document the position taken in the client file.
+| Owner's own state and local taxes are already under the federal cap | The election still moves the state tax to the entity, but the federal saving is small. Model it before electing. | [§164(b)](https://www.law.cornell.edu/uscode/text/26/164) |
+| Owner's MAGI is above the threshold | The cap shrinks by 30% of the excess, down to $10,000. At that point the entity-level deduction is worth the most. | [§164(b)(7)(B)](https://www.law.cornell.edu/uscode/text/26/164) |
+| Corporate, partnership or tax-exempt owners | Many states leave their shares out of the base or give them no credit (NY, MN, VA, HI, MT). In North Carolina and South Carolina, one such owner can block the election for everyone. | State rows above |
+| Disregarded single-member LLC | It cannot elect in most states (NY unless it is an S corporation, OH, IN, IA, NE, WV, VA). | State rows above |
+| Election method is not "on the return" | NY, NJ and MS need a separate election. Maryland treats the first payment or filing of the year as the election. Michigan's is made by payment. | State rows above |
+| Election carries over to later years | Louisiana, Oklahoma and Mississippi elections run until revoked. Michigan's binds for 3 years. Everywhere else it is year by year. | State rows above |
+| Owner's home state and a second state's PTET | Whether the home state gives a credit for another state's PTET depends on the home state. For example, Connecticut and Maine give residents a credit for a substantially similar tax paid to another state. When a South Carolina entity makes the SC election, its owners are generally not entitled to South Carolina's credit for tax paid to other states. Check the home state's credit form. | [Ch. 228z](https://www.cga.ct.gov/current/pub/chap_228z.htm); [Maine Revenue law changes for 2026](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/legischange26.pdf); [SC policy manual ch. 3](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/SCTIED-2025-Chapter%203.pdf) |
+| Credit worth less than the tax paid | Connecticut gives 87.5%, Massachusetts 90% (2021 text) and Maine 90%. Iowa's credit is cut by the tax rate. The owner bears the difference. | State rows above |
+| Nonrefundable credit | Arizona, California, Hawaii, Missouri, Utah and West Virginia credits are not refunded. Excess credit only carries forward. | State rows above |
+
+## Worked cases
+
+**Case 1: 2026 federal cap with the phase-down.** A married couple filing jointly has 2026 MAGI of $555,000. The excess over $505,000 is $50,000. The reduction is 30% × $50,000 = $15,000, so their 2026 cap is $40,400 − $15,000 = $25,400. That is still above the $10,000 floor ([§164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)).
+
+**Case 2: the floor.** The same couple with 2026 MAGI of $650,000. The excess is $145,000, and 30% of that is $43,500. That is more than the $30,400 that sits above the floor ($40,400 − $10,000), so the cap is $10,000 ([§164(b)(7)(B)(iii)](https://www.law.cornell.edu/uscode/text/26/164)). State tax moved into the entity is then worth the most federally, because the entity deducts it and it is outside the cap ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)).
+
+**Case 3: Oregon 2026.** An electing S corporation has $400,000 of distributive proceeds. The tax is 9% × $250,000 = $22,500, plus 9.9% × $150,000 = $14,850, a total of $37,350. The election needs an OR-21 filed by the due date including extensions. For 2026 only, the first two estimates are both due 15 June ([ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx)).
+
+**Case 4: New York State 2026.** A partnership with $3,000,000 of PTE taxable income owes $137,000 plus 9.65% × $1,000,000 = $96,500, a total of $233,500 ([rates](https://www.tax.ny.gov/e-services/ptet/calculations.htm)). This only works if the election was made online by 15 March 2026. After that date, 2026 is closed ([PTET](https://www.tax.ny.gov/bus/ptet/)).
+
+**Case 5: California 2026 short June payment.** The prior year's PTE tax was $60,000, so the 15 June 2026 payment must be the greater of $1,000 or 50% × $60,000 = $30,000. The entity pays only $20,000, leaving $10,000 unpaid. An owner with a 50% share has a $5,000 share of the unpaid amount. That owner's credit is reduced by 12.5% × $5,000 = $625. The election itself survives for 2026 ([FTB](https://www.ftb.ca.gov/file/business/credits/pass-through-entity-elective-tax/index.html)).
+
+**Case 6: North Carolina 2026 exclusion.** A taxed partnership with $500,000 of NC income owes 3.99% × $500,000 = $19,950. Each owner deducts their share of that income on their NC return; there is no credit. The partnership cannot elect at all if any partner is, for example, a corporation ([NCDOR notice](https://www.ncdor.gov/taxes-forms/information-tax-professionals/tax-bulletins-directives-and-other-important-notices/important-notices-and-frequently-asked-questions-personal-taxes/important-notice-regarding-north-carolinas-recently-enacted-pass-through-entity-tax); [rates](https://www.ncdor.gov/taxes-forms/individual-income-tax/tax-rate-schedules)).
+
+## When to refuse or refer
+
+- The state row says **check** (Idaho, Rhode Island, Utah for 2026, the Maine election mechanics, and the unverified items in other rows). Do not advise from this Guide; read the state's current instructions first.
+- A deadline has passed and the client wants to elect late. The state pages checked for this Guide describe no general late-election relief (Oregon and North Carolina say outright that a late return cannot carry the election). Refer to a state tax specialist rather than filing.
+- Tiered entities (a PTE owning a PTE), trusts or estates as owners, or entities with corporate owners in states that restrict them.
+- Owners who are residents of a state whose credit for other-state PTETs is unclear, where the double-tax risk is material.
+- Entities with net operating losses in states that disallow them against the tax (for example Alabama, Iowa, and New Mexico, which advises such entities not to elect for now).
+- Any question on how the entity-level deduction interacts with the owner's federal QBI deduction, or with basis and at-risk limits. Refer to the federal preparer.
+
+## Filing and payment
+
+- **Estimated payments are required** in most states once the election is expected. Examples from the sources:
+  - New York State and City: 15 March, 15 June, 15 September and 15 December of the tax year.
+  - Oregon: 15 April, 15 June, 15 September and 15 January; in 2026 only, the first two are both due 15 June.
+  - Indiana (2026 onward): 20 April, 20 June, 20 September and 20 December.
+  - Hawaii: the 20th of April, June, September and January.
+  - Ohio (2026 onward): 15 April, 15 June, 15 September and 15 January.
+  - Missouri requires no estimates. See each state's page in the table.
+- **Returns:** the entity files the state's PTET return or schedule; Hawaii cancels an election that is not filed and paid electronically, and Oregon accepts only electronic returns ([DOTAX](https://tax.hawaii.gov/pte/); [ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx)).
+- **Owners:** give each owner their share of tax paid on the state's owner statement (for example NY IT-653 support, CA 3804-CR support, NM RPD-41359). Issue Oregon's OR-21-K-1 only after the entity return is filed, or the credit can be disallowed ([ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx)).
+- **Federal reporting:** the entity deducts the state tax in computing its non-separately stated income; it is not a separately stated SALT item for owners ([Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)).
+
+## 2025 returns (dated section)
+
+- **2025 federal cap:** $40,000 ($20,000 married filing separately), reduced by 30% of MAGI over $500,000 ($250,000 separate), but not below $10,000 ($5,000 separate) ([§164(b)(7)](https://www.law.cornell.edu/uscode/text/26/164)). Extended 2025 individual returns are due 15 October 2026.
+- **Late 2025 elections that may still be open on 25 September 2026:** only where the state ties the election to an extended due date that has not yet passed. For example:
+  - Oregon's OR-21 is due 15 October with an extension ([ODR](https://www.oregon.gov/dor/programs/businesses/pages/pass-through-entity-elective-tax.aspx)).
+  - Hawaii's N-362E is due by the 20th day of the 10th month if extended ([DOTAX](https://tax.hawaii.gov/pte/)).
+  - Iowa's deadline is six months after the original return due date ([IDR](https://revenue.iowa.gov/news/2024-12-23/idr-modifies-pass-through-entity-tax-election-deadline)).
+  - New York, New Jersey and California 2025 elections closed long ago; do not attempt them.
+- **2025 rates differ** in several rows (for example Indiana 3.00%, Georgia 5.19%, Kentucky 4.0%, Nebraska 5.20%, North Carolina 4.25%). Use the 2025 figure for a 2025 return.
+- **Minnesota** re-enacted its tax for 2026 after it had lapsed at the end of 2025 ([2026 bill analysis](https://www.revenue.state.mn.us/sites/default/files/2026-05/hf2438sf2082-enacted-otb.pdf)). A 2025 Minnesota election had to be made by the due date or extended due date of the 2025 PTE return ([Minn. Stat. 289A.08](https://www.revisor.mn.gov/statutes/cite/289A.08)).
+
+## Completion checklist
+
+- [ ] Tax year confirmed (2026, or a still-open 2025 election).
+- [ ] Owner-level federal cap computed for each individual owner, with the 2026 threshold and floor.
+- [ ] State row read; any **check** item resolved from the state's own current guidance.
+- [ ] Entity type and every owner's type tested against the state's eligibility rules.
+- [ ] Election method and deadline diarised (NY 15 March; CA 15 June payment; MD first payment with the form; NJ original due date).
+- [ ] Rate for the correct year applied; credit haircut or nonrefundable status noted for each owner.
+- [ ] Home-state credit for other-state PTET confirmed for each resident owner.
+- [ ] Nonresident owners told whether they must still file.
+- [ ] Estimated payments scheduled and funded.
+- [ ] Owner statements issued after the entity return (Oregon) and add-backs flagged on owner returns.
 
 <!-- openaccountants-cta-block -->
 

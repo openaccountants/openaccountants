@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2019 guides, 245 jurisdictions, 171 accountant-reviewed)
+## Guide inventory (2019 guides, 245 jurisdictions, 168 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -201,17 +201,17 @@ https://www.openaccountants.com
 - eu-intra-rates | GLOBAL | tier 2 | reviewed_by -
 - uk-major-partners | GLOBAL | tier 2 | reviewed_by -
 - us-major-partners | GLOBAL | tier 2 | reviewed_by -
-- us-cfc-gilti | US | tier 2 | reviewed_by James Wallach
-- us-expatriation-exit-tax | US | tier 2 | reviewed_by James Wallach
-- us-fbar-fatca-reporting | US | tier 2 | reviewed_by James Wallach
-- us-feie-ftc | US | tier 2 | reviewed_by James Wallach
-- us-foreign-trust-reporting | US | tier 2 | reviewed_by James Wallach
+- us-cfc-gilti | US | tier 2 | reviewed_by -
+- us-expatriation-exit-tax | US | tier 2 | reviewed_by -
+- us-fbar-fatca-reporting | US | tier 2 | reviewed_by -
+- us-feie-ftc | US | tier 2 | reviewed_by -
+- us-foreign-trust-reporting | US | tier 2 | reviewed_by -
 - vat-place-of-supply-master | INTL | tier 2 | reviewed_by -
 - wealth-tax-matrix | GLOBAL | tier 2 | reviewed_by -
 - withholding-tax-matrix | GLOBAL | tier 2 | reviewed_by -
 - 990-returns | US | tier 2 | reviewed_by -
 - no-sales-tax-states | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
-- us-1099-k-and-payment-processors | US | tier 2 | reviewed_by James Wallach
+- us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-1099-nec-issuance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-1120-corporation-return-schedule-ordinary-business | US | tier 2 | reviewed_by -
 - us-amended-return-form-1040-including-capital | US | tier 2 | reviewed_by -
@@ -220,15 +220,15 @@ https://www.openaccountants.com
 - us-crypto-income-events | US | tier 1 | reviewed_by Christopher Aryee
 - us-crypto-reporting | US | tier 1 | reviewed_by Christopher Aryee
 - us-crypto-tax | US | tier 1 | reviewed_by James Wallach
-- us-education-credits-8863 | US | tier 2 | reviewed_by James Wallach
+- us-education-credits-8863 | US | tier 2 | reviewed_by -
 - us-equity-compensation-restricted-stock-units-and | US | tier 2 | reviewed_by -
 - us-estate-gift-706-709 | US | tier 1 | reviewed_by Christopher Aryee
 - us-fbar-and-fatca-8938 | US | tier 2 | reviewed_by James Wallach
-- us-federal-cost-segregation | US | tier 2 | reviewed_by James Wallach
+- us-federal-cost-segregation | US | tier 2 | reviewed_by -
 - us-federal-income-tax-return-1040 | US | tier 2 | reviewed_by -
 - us-federal-section-1031-like-kind-exchange | US | tier 2 | reviewed_by James Wallach
 - us-foreign-earned-income-2555 | US | tier 2 | reviewed_by James Wallach
-- us-foreign-tax-credit-1116 | US | tier 2 | reviewed_by James Wallach
+- us-foreign-tax-credit-1116 | US | tier 2 | reviewed_by -
 - us-form-1040-individual-income-tax-return | US | tier 2 | reviewed_by -
 - us-form-1040-individual-return | US | tier 1 | reviewed_by Christopher Aryee
 - us-form-1041-trust-and-estate-income | US | tier 1 | reviewed_by Christopher Aryee
@@ -238,26 +238,26 @@ https://www.openaccountants.com
 - us-form-5472-foreign-owned-us | US | tier 1 | reviewed_by Christopher Aryee
 - us-form-941-940-payroll | US | tier 2 | reviewed_by James Wallach
 - us-gilti-fdii-beat | US | tier 2 | reviewed_by James Wallach
-- us-irs-collections-and-controversy | US | tier 2 | reviewed_by James Wallach
-- us-multi-state-residency-and-allocation | US | tier 2 | reviewed_by James Wallach
+- us-irs-collections-and-controversy | US | tier 2 | reviewed_by -
+- us-multi-state-residency-and-allocation | US | tier 2 | reviewed_by -
 - us-nft-tax | US | tier 2 | reviewed_by James Wallach
-- us-pl-86-272-income-tax-nexus | US | tier 2 | reviewed_by James Wallach
-- us-pte-state-matrix | US | tier 2 | reviewed_by James Wallach
+- us-pl-86-272-income-tax-nexus | US | tier 2 | reviewed_by -
+- us-pte-state-matrix | US | tier 2 | reviewed_by -
 - us-qbi-deduction | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-quarterly-estimated-tax | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
-- us-r-and-d-section-174-and-41 | US | tier 2 | reviewed_by James Wallach
+- us-r-and-d-section-174-and-41 | US | tier 2 | reviewed_by -
 - us-s-corp-election-decision | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
-- us-sales-tax-nexus-50-state-matrix | US | tier 2 | reviewed_by James Wallach
+- us-sales-tax-nexus-50-state-matrix | US | tier 2 | reviewed_by -
 - us-sales-tax | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-schedule-c-and-se-computation | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
-- us-section-1031-like-kind-exchange | US | tier 2 | reviewed_by James Wallach
-- us-section-1202-qsbs | US | tier 2 | reviewed_by James Wallach
-- us-secure-2-and-retirement-updates | US | tier 2 | reviewed_by James Wallach
+- us-section-1031-like-kind-exchange | US | tier 2 | reviewed_by -
+- us-section-1202-qsbs | US | tier 2 | reviewed_by -
+- us-secure-2-and-retirement-updates | US | tier 2 | reviewed_by -
 - us-self-employed-health-insurance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-self-employed-retirement | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-sole-prop-bookkeeping | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
-- us-state-bonus-depreciation-conformity-matrix | US | tier 2 | reviewed_by James Wallach
-- us-state-estimated-tax-safe-harbors-matrix | US | tier 2 | reviewed_by James Wallach
+- us-state-bonus-depreciation-conformity-matrix | US | tier 2 | reviewed_by -
+- us-state-estimated-tax-safe-harbors-matrix | US | tier 2 | reviewed_by -
 - us-state-formation-matrix | US | tier 2 | reviewed_by James Wallach
 - us-state-new-hire-reporting-matrix | US | tier 2 | reviewed_by James Wallach
 - us-state-payroll-matrix | US | tier 2 | reviewed_by James Wallach
@@ -284,7 +284,7 @@ https://www.openaccountants.com
 - payroll-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - statutory-audit-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - transfer-pricing-workflow-base | GLOBAL | tier 2 | reviewed_by -
-- us-tax-workflow-base | US | tier 2 | reviewed_by James Wallach
+- us-tax-workflow-base | US | tier 2 | reviewed_by -
 - vat-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - wealth-estate-tax-workflow-base | GLOBAL | tier 2 | reviewed_by -
 - workflow-base | GLOBAL | tier 2 | reviewed_by -
@@ -1214,12 +1214,12 @@ https://www.openaccountants.com
 - malta-bookkeeping | MT | tier 2 | reviewed_by -
 - malta-financial-statements | MT | tier 2 | reviewed_by -
 - malta-formation | MT | tier 2 | reviewed_by -
-- malta-income-tax | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
+- malta-income-tax | MT | tier 2 | reviewed_by -
 - malta-payroll | MT | tier 2 | reviewed_by -
 - malta-ssc | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
 - malta-tax-optimization | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
 - malta-transfer-pricing | MT | tier 2 | reviewed_by -
-- malta-vat-return | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
+- malta-vat-return | MT | tier 2 | reviewed_by -
 - moving-to-malta-tax-residence | MT | tier 2 | reviewed_by -
 - mt-capital-gains | MT | tier 2 | reviewed_by -
 - mt-crypto-tax | MT | tier 2 | reviewed_by -
@@ -1764,7 +1764,7 @@ https://www.openaccountants.com
 - tm-payroll-social | TM | tier 2 | reviewed_by -
 - tm-tax-overview | TM | tier 2 | reviewed_by -
 - tm-vat-gst | TM | tier 2 | reviewed_by -
-- ae-corporate-tax | AE | tier 1 | reviewed_by Mehran Habib
+- ae-corporate-tax | AE | tier 2 | reviewed_by -
 - ae-income-tax | AE | tier 2 | reviewed_by -
 - ae-payroll-social | AE | tier 2 | reviewed_by -
 - ae-tax-overview | AE | tier 2 | reviewed_by -
@@ -1794,7 +1794,7 @@ https://www.openaccountants.com
 - uk-non-dom | GB | tier 2 | reviewed_by -
 - uk-payments-on-account | GB | tier 1 | reviewed_by James Power
 - uk-payroll | GB | tier 1 | reviewed_by James Power
-- uk-rental-sa105 | GB | tier 1 | reviewed_by James Power
+- uk-rental-sa105 | GB | tier 2 | reviewed_by -
 - uk-self-employment-sa103 | GB | tier 1 | reviewed_by James Power
 - uk-statutory-residence-test | GB | tier 2 | reviewed_by -
 - uk-student-loan-repayment | GB | tier 1 | reviewed_by James Power
@@ -1802,7 +1802,7 @@ https://www.openaccountants.com
 - uk-to-italy-flat-tax-relocation | GB | tier 2 | reviewed_by -
 - uk-to-uae-relocation-tax | GB | tier 2 | reviewed_by -
 - uk-transfer-pricing | GB | tier 1 | reviewed_by James Power
-- uk-vat-return | GB | tier 1 | reviewed_by James Power
+- uk-vat-return | GB | tier 2 | reviewed_by -
 - vat-returns-for-small-businesses-in-the-uk | GB | tier 2 | reviewed_by -
 - xero-uk-vat-close | GB | tier 2 | reviewed_by -
 - ua-bookkeeping | UA | tier 2 | reviewed_by -
@@ -1827,9 +1827,9 @@ https://www.openaccountants.com
 - uy-company-formation | UY | tier 2 | reviewed_by -
 - uy-corporate-income-tax | UY | tier 2 | reviewed_by -
 - uy-tax-overview | UY | tier 2 | reviewed_by -
-- us-capital-gains | US | tier 2 | reviewed_by James Wallach
-- us-nonresident-cgt | US | tier 2 | reviewed_by James Wallach
-- us-tax-residency | US | tier 2 | reviewed_by James Wallach
+- us-capital-gains | US | tier 2 | reviewed_by -
+- us-nonresident-cgt | US | tier 2 | reviewed_by -
+- us-tax-residency | US | tier 2 | reviewed_by -
 - uz-company-formation | UZ | tier 2 | reviewed_by -
 - uz-corporate-income-tax | UZ | tier 2 | reviewed_by -
 - uz-tax-overview | UZ | tier 2 | reviewed_by -
@@ -1921,7 +1921,7 @@ https://www.openaccountants.com
 - uk-return-assembly | GB | tier 2 | reviewed_by -
 - us-ca-freelance-intake | US-CA | tier 2 | reviewed_by -
 - us-ca-return-assembly | US-CA | tier 2 | reviewed_by -
-- us-federal-return-assembly | US | tier 2 | reviewed_by James Wallach
+- us-federal-return-assembly | US | tier 2 | reviewed_by -
 - us-ny-freelance-intake | US-NY | tier 2 | reviewed_by -
 - us-ny-return-assembly | US-NY | tier 2 | reviewed_by -
 - us-tx-freelance-intake | US-TX | tier 2 | reviewed_by -

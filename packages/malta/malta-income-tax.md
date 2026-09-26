@@ -3,10 +3,11 @@ name: malta-income-tax
 description: "Use this skill whenever asked about Malta income tax for self-employed individuals. Trigger on phrases like \"how much tax do I pay\", \"income tax return\", \"self-assessment\", \"allowable deductions\", \"capital allowances\", \"provisional tax\", \"TA22 regime\", \"TA24\", \"chargeable income\", \"tax credits\", \"self-employed tax Malta\", or any question about filing or computing income tax for a self-employed or part-time self-employed client. Also trigger when preparing or reviewing the annual income tax return or a TA22, computing deductible expenses, or advising on provisional tax instalments. NOTE: TA24 is the 15% final tax form for RENTAL income (ITA Art. 31D) — if the user means rental income, see Section 5.11; the self-employed annual filing is the personal Income Tax Return. This skill covers tax rates (single/married/parent), the return working-paper structure, allowable deductions, capital allowances, provisional tax, the TA22 part-time regime, penalties, and interaction with VAT and SSC. ALWAYS read this skill before touching any income tax work."
 version: 2.0
 jurisdiction: MT
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: Michael Cutajar, CPA (Malta)
-review_status: current
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
+review_status: pending_review
+trust_label: By OpenAccountants
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,730 +15,345 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Malta Income Tax
+# Malta personal income tax: rates, residence, final taxes, provisional tax and filing
 
-## malta-income-tax
+## Scope ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-Depends on: income-tax-workflow-base.
-Content revision: 2.1-draft (correction pass — unverified; frontmatter `version` is the platform revision counter).
+This Guide covers Malta income tax for **individuals**: employees, the self-employed, part-time workers, landlords and people selling Maltese property. Malta taxes a calendar **basis year**, and the tax is charged for the following **year of assessment**.
 
-## Section 1 -- Quick Reference
+- **Basis year 2026 = year of assessment 2027.** This is the primary year of this Guide. Its return is due by 30 June 2027.
+- **Basis year 2025 = year of assessment 2026.** The dated section "2025 income (year of assessment 2026)" covers the returns being filed now. Their statutory date was 30 June 2026, so a return not filed yet is late (see "Filing and payment").
 
-**Quick Reference**  _([ITA Cap. 123; ITMA Cap. 372](https://legislation.mt/eli/cap/372/eng))_
+Marital and family status is tested "in the year immediately preceding the year of assessment", which means the basis year itself.
 
-| Field | Value |
-| --- | --- |
-| Country | Malta (Republic of Malta) |
-| Tax | Income Tax (Taxxa fuq id-Dħul) |
-| Currency | EUR only |
-| Tax year | Calendar year (1 January -- 31 December); "basis year" precedes the "year of assessment" |
-| Primary legislation | Income Tax Act, Chapter 123 (ITA) |
-| Supporting legislation | Income Tax Management Act, Chapter 372 (ITMA); ITA Art. 90A + Part-Time Work Rules (TA22 regime); ITA Arts. 14 and 26 (allowed / disallowed deductions); ITA Art. 14(1)(f) and (j), Art. 24 and S.L. 123.01 (capital allowances); ITA Art. 31D (15% rental final tax, form TA24); ITMA Art. 44 and the Schedule to ITA Art. 56(12)(c) (interest, additional tax); S.L. 372.18 (Provisional Tax Rules) |
-| Tax authority | Malta Tax and Customs Administration (MTCA), formerly Commissioner for Revenue (CFR) |
-| Filing portal | MTCA online services (myTax) |
-| Filing deadlines | Personal Income Tax Return: **30 June** of the following year (online filing routinely extended by MTCA notice — e.g. 31 July 2026 for basis 2025). TA22 (part-time self-employed): **30 April**. TA24 (rental 15%): **30 April** |
-| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
-| Validation date | Pending |
+**Sources.** Every figure here comes from the Laws of Malta (legislation.mt): the Income Tax Act (Cap. 123), the Income Tax Management Act (Cap. 372), their subsidiary rules, and the Budget Measures Implementation Acts (Act IX of 2025 and Act III of 2026). The MTCA website (mtca.gov.mt) refused our automated source checks on 25 September 2026. So items that live only on MTCA's site are marked "check on mtca.gov.mt". These are form names (TA22, TA24, FS3, FS4), any online-filing extension, and the Class 2 contribution tables.
 
-### What form does a self-employed person actually file?
+**Not covered:** companies and partnerships, a full non-resident computation, the special residence programmes (Global Residence Programme, Residents Scheme, highly qualified persons), double tax relief, VAT (see the Malta VAT Guide) and the detail of social security contributions.
 
-**Filing form by situation**  _([ITA Art. 31D](https://legislation.mt/eli/cap/123/eng))_
+## Ask the client first
 
-| Situation | Filing |
-| --- | --- |
-| Fully self-employed (trade, business, profession, vocation) | **Personal Income Tax Return with self-assessment** (electronic via myTax), including the self-employment profit-and-loss section. There is no form called "TA24" for this. |
-| Part-time self-employed alongside full-time employment / pension / full-time studies | Optional **TA22** (10% final-style computation on first EUR 12,000 of net profit) by 30 April — see Section 5.8 |
-| Rental income, optional 15% final tax on gross rents | **TA24** (ITA Art. 31D) by 30 April — out of this skill's computation scope, see Section 5.11 |
+- Which basis year? 2026 income (year of assessment 2027) uses the Act III of 2026 tables, which add four child categories. 2025 income (year of assessment 2026) uses only the three Act IX of 2025 tables.
+- Residence: were you resident in Malta in that year? Domicile: are you domiciled in Malta, and are you ordinarily resident here? If not domiciled, how much foreign income arose, and how much of it was brought into Malta?
+- Were you married and living together in that year? Do you file jointly (the default), separately (article 49A), or with a separate computation (article 50)?
+- Children: how many, and how old? Each must be under 18, or under 23 and in full-time education. Did you have custody, or did you pay maintenance under article 12(1)(t)? Is either spouse an EU/EEA national or a long-term resident? If not, was each child born in Malta and resident in Malta?
+- Single parent: did you have sole custody, receive the children's allowance as sole beneficiary, get no maintenance from the other parent, and live apart from them?
+- What kinds of income: employment (FSS), self-employment (full-time or part-time), rent, dividends or interest, foreign income, or a property sale?
+- Part-time work: were you in full-time employment registered with Jobsplus, a pensioner taxed in Malta, or a full-time student or apprentice? Is the part-time work registered with Jobsplus and done for a different employer?
+- Rent: is the property residential or a garage, or commercial? Is the tenant related to you? Is the lease registered as a long private residential lease?
+- Provisional tax: what does your provisional tax statement show, and what have you paid?
+- Were any returns or payments late?
 
-### Tax Rate Brackets — basis year 2025 (Budget 2025 widened bands, effective 1 January 2025)
+## The method, step by step
 
-Tax = (chargeable income x rate) - subtract amount for the band containing the chargeable income.
+1. **Fix the year.** Take the basis year of the income and add one to get the year of assessment. Status, custody and residence are all tested in the basis year.
+2. **Decide residence and domicile.** A resident individual is taxed under article 56(1)(a) or (b). A non-resident uses the article 56(1)(c) scale unless an EU/EEA proviso applies. A resident who is not domiciled, or not ordinarily resident, is taxed on foreign income only when it is received in Malta, and is not taxed on foreign capital gains. Then test the €5,000 minimum tax for non-doms (article 56(27)). ([ITA art. 4 and 56](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+3. **Take out income taxed at a final rate.** This means part-time work (10%), rent where the 15% option is chosen, property transfers under article 5A, and final-withholding investment income. Keep this income out of the progressive computation unless the person opts to declare it. ([ITA art. 90A, 31D, 5A](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+4. **Compute business profit.** Deduct outgoings "wholly and exclusively incurred in the production of the income" (article 14(1)). Remove anything barred by article 26: private or domestic spending, capital spending, improvements, recoverable amounts and voluntary payments. Add capital allowances under the Wear and Tear Rules (S.L. 123.01).
+5. **Add the other income taxed at progressive rates.** This is employment income, rent where the 15% option is not taken (net of the S.L. 123.26 deductions), and any part-time income over its cap. The total is chargeable income. ([ITA art. 90A](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+6. **Pick the rate table** for the basis year and status, then apply: chargeable income × rate − subtraction. A table does not apply unless every one of its conditions is met.
+7. **Credit tax already paid.** This means FSS tax deducted by employers, provisional tax, and part-time tax paid on income the person opted to declare. The balance is due on the tax settlement date, which is the return date.
+8. **File the return** by 30 June of the year of assessment. Pay the final taxes and file their statements by their own dates, most of them 30 April.
+9. **Add interest and additional tax** for anything late. Interest is 0.6% a month, capped at the tax. Late-return additional tax follows Table A. ([ITMA art. 44](https://legislation.mt/getpdf/69c65a5c7da36921dcc4f04b))
+10. **Set up next year's provisional tax.** The benchmark comes from the last return. Pay 20%, 30% and 50% on 30 April, 31 August and 21 December. File a reduction form if this year's liability will be lower. ([P.T. Rules](https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4))
 
-**Single Rates**  _(Budget 2025, effective 1 January 2025)_
+Order matters. If you apply the rate table before removing final-tax income, that income is taxed twice. If you pick a table without checking nationality and custody, the tax can be understated.
 
-| Taxable Income (EUR) | Rate | Subtract (EUR) | Cumulative Tax at Top |
-| --- | --- | --- | --- |
-| 0 -- 12,000 | 0% | 0 | EUR 0 |
-| 12,001 -- 16,000 | 15% | 1,800 | EUR 600 |
-| 16,001 -- 60,000 | 25% | 3,400 | EUR 11,600 |
-| 60,001+ | 35% | 9,400 | -- |
+## Resident rate tables, basis year 2026 (year of assessment 2027) ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
 
-**Married Rates (joint computation)**  _(Budget 2025, effective 1 January 2025)_
+Tax = chargeable income × rate − subtraction. Act III of 2026, article 19, replaced article 56(1)(a) and (b). Its article 13(2)(b) makes the change "applicable from the year of assessment 2027".
 
-| Taxable Income (EUR) | Rate | Subtract (EUR) | Cumulative Tax at Top |
-| --- | --- | --- | --- |
-| 0 -- 15,000 | 0% | 0 | EUR 0 |
-| 15,001 -- 23,000 | 15% | 2,250 | EUR 1,200 |
-| 23,001 -- 60,000 | 25% | 4,550 | EUR 10,450 |
-| 60,001+ | 35% | 10,550 | -- |
-
-**Parent Rates (maintaining a child / paying maintenance)**  _(Budget 2025, effective 1 January 2025)_
-
-| Taxable Income (EUR) | Rate | Subtract (EUR) | Cumulative Tax at Top |
-| --- | --- | --- | --- |
-| 0 -- 13,000 | 0% | 0 | EUR 0 |
-| 13,001 -- 17,500 | 15% | 1,950 | EUR 675 |
-| 17,501 -- 60,000 | 25% | 3,700 | EUR 11,300 |
-| 60,001+ | 35% | 9,700 | -- |
-
-Malta does not have a separate personal allowance -- the 0% band IS the personal allowance.
-
-**2026 note (Budget 2026, announced 27 October 2025, effective 1 January 2026).** The base single/married/parent bands above are unchanged for basis year 2026, but four NEW categories were added for taxpayers with qualifying children (child under 18, or 18–23 in full-time education):
-
-**2026 new qualifying-children categories**  _(Budget 2026, announced 27 October 2025, effective 1 January 2026)_
-
-| Category | 0% band | 15% band (subtract) | 25% band (subtract) | 35% (subtract) |
+| Status in the basis year | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract) |
 | --- | --- | --- | --- | --- |
-| Married, 1 qualifying child | 0 -- 17,500 | 17,501 -- 26,500 (2,625) | 26,501 -- 60,000 (5,275) | 60,001+ (11,275) |
-| Married, 2+ qualifying children | 0 -- 22,500 | 22,501 -- 32,000 (3,375) | 32,001 -- 60,000 (6,575) | 60,001+ (12,575) |
-| Parent, 1 qualifying child | 0 -- 14,500 | 14,501 -- 21,000 (2,175) | 21,001 -- 60,000 (4,275) | 60,001+ (10,275) |
-| Parent, 2+ qualifying children | 0 -- 18,500 | 18,501 -- 25,500 (2,775) | 25,501 -- 60,000 (5,325) | 60,001+ (11,325) |
+| Single (other individual), art. 56(1)(b)(i) | €12,000 | over €12,000 and under €16,000 (€1,800) | over €16,000 and under €60,000 (€3,400) | over €60,000 (€9,400) |
+| Married, joint, no qualifying child, art. 56(1)(a)(i) | €15,000 | over €15,000 and under €23,000 (€2,250) | over €23,000 and under €60,000 (€4,550) | over €60,000 (€10,550) |
+| Parent, art. 56(1)(b)(ii) | €13,000 | over €13,000 and under €17,500 (€1,950) | over €17,500 and under €60,000 (€3,700) | over €60,000 (€9,700) |
+| Married, 1 qualifying child, art. 56(1)(a)(ii) | €17,500 | over €17,500 and under €26,500 (€2,625) | over €26,500 and under €60,000 (€5,275) | over €60,000 (€11,275) |
+| Married, 2 or more qualifying children, art. 56(1)(a)(iii) | €22,500 | over €22,500 and under €32,000 (€3,375) | over €32,000 and under €60,000 (€6,575) | over €60,000 (€12,575) |
+| Parent, 1 qualifying child, art. 56(1)(b)(iv) | €14,500 | over €14,500 and under €21,000 (€2,175) | over €21,000 and under €60,000 (€4,275) | over €60,000 (€10,270, as enacted) |
+| Parent, 2 or more qualifying children, art. 56(1)(b)(v) | €18,500 | over €18,500 and under €25,500 (€2,775) | over €25,500 and under €60,000 (€5,325) | over €60,000 (€11,325) |
 
-Further widenings were announced for 2027 and 2028. For basis year 2025 computations, use ONLY the three base tables.
+**Note on €10,270.** The enacted text of Act III of 2026 and the consolidated Act both say "subtracting €10,270". That leaves a €5 step at €60,000: the 25% formula gives €10,725, but the 35% formula gives €10,730. A continuous table would subtract €10,275. Use the enacted €10,270. If the difference matters, check with MTCA whether it has been corrected.
 
-### Working-Paper Lines (WP)
+### Who gets which table ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-The MTCA electronic return's own field numbering changes between years and is not reproduced here — map these working-paper lines to the live return at filing time (reviewer task).
+- **Married tables** (article 56(1)(a)) apply to a married couple resident in Malta and taxed jointly under article 49. If either spouse elected a separate return (article 49A), or the responsible spouse opted for a separate computation (article 50), each spouse uses the article 56(1)(b) tables instead. An EU/EEA national whose spouse is not resident can still use the married tables if the Commissioner is satisfied that at least 90% of the couple's worldwide income is from Malta.
+- **Parent table** (article 56(1)(b)(ii)): the individual was a parent who kept a child in custody, or paid maintenance for the child under article 12(1)(t). The child must be not over 18, or not over 23 if in full-time education.
+- **Qualifying-child tables** (married (ii) and (iii), parent (iv) and (v)) need **all** of the following:
+  - custody of the child, or maintenance under article 12(1)(t). For the parent tables, custody can also cover a spouse's child or a certified cohabitant's child;
+  - the same age test;
+  - a spouse, the individual, or the individual's spouse must be an EU/EEA national or hold long-term resident status;
+  - if nobody is an EU/EEA national, the child (or each of the two children) must have been born in Malta and be resident in Malta.
+  
+  If any condition fails, fall back to the married (i) or parent (ii) table.
+- **Single parent with sole custody** (article 56(1)(b)(iii)) is taxed on the **married** table (a)(i), unless table (iv) or (v) gives a better result. The person must have been unmarried, widowed, separated or divorced, and must have met all four conditions:
+  - wholly maintained, in sole custody, a child whose own income was not over €3,400. The child must be not over 18; or not over 23 and in full-time education or serving an apprenticeship; or incapacitated by infirmity. This rule has no nationality or born-in-Malta test;
+  - sole beneficiary of the children's allowance;
+  - no maintenance from the other parent;
+  - not living with the other parent.
 
-**Working-Paper Lines**  _(S.L. 123.01)_
+### 2025 income (year of assessment 2026) ([Act IX of 2025](https://legislation.mt/getpdf/6811d803cf7b7f36a4f360f5))
 
-| Line | Description |
-| --- | --- |
-| WP1 | Gross income from self-employment |
-| WP2 | Less: Allowable deductions (revenue expenses) |
-| WP3 | Net profit/loss (WP1 - WP2) |
-| WP4 | Other income (employment, rental at progressive rates, dividends, interest) |
-| WP5 | Total income (WP3 + WP4) |
-| WP15 | Capital allowances (wear and tear per S.L. 123.01; initial allowance where due) |
-| WP25 | Total statutory deductions (WP15 + any other statutory deductions) |
-| WP30 | Chargeable income (WP5 - WP25) |
-| WP35 | Tax liability (rate table applied to WP30 — deterministic engine only) |
-| WP36 | Less: Provisional tax paid |
-| WP37 | Less: Tax credits |
-| WP40 | Tax due / refund (WP35 - WP36 - WP37) |
+Act IX of 2025, article 15, set these tables. Its article 10(2)(a) makes them "applicable as from the year of assessment 2026". The four qualifying-child tables do **not** apply to 2025 income.
 
-Note: SSC Class 2 has NO line in the tax computation — it is not deductible (Section 5.5). Record it memo-only for the reviewer.
+| Status (basis year 2025) | 0% up to | 15% band (subtract) | 25% band (subtract) | 35% above (subtract) |
+| --- | --- | --- | --- | --- |
+| Single | €12,000 | €12,000 to €16,000 (€1,800) | €16,000 to €60,000 (€3,400) | over €60,000 (€9,400) |
+| Married, joint | €15,000 | €15,000 to €23,000 (€2,250) | €23,000 to €60,000 (€4,550) | over €60,000 (€10,550) |
+| Parent | €13,000 | €13,000 to €17,500 (€1,950) | €17,500 to €60,000 (€3,700) | over €60,000 (€9,700) |
 
-### Conservative Defaults
+The sole-custody single-parent rule quoted above is taken from the text that applies from year of assessment 2027. For 2025 income, check its wording on mtca.gov.mt.
 
-**Conservative Defaults**
+### Non-residents ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown marital status | STOP -- do not apply a rate table without marital status |
-| Unknown filing status (full return vs TA22) | Full Income Tax Return (fully self-employed) |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown VAT registration type | Article 10 (standard) |
-| Unknown asset useful life | Use S.L. 123.01 minimum-years rates |
-| Unknown whether expense is entertainment | Treat as entertainment (blocked -- conservative default, Section 5.6) |
+An individual not resident in Malta in the basis year pays tax under article 56(1)(c):
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+- 0% on the first €700;
+- 20% on the next €2,400;
+- 30% on the next €4,700;
+- 35% on the remainder.
 
-### Required Inputs
+An EU/EEA national gets the resident tables if at least 90% of their worldwide income is from Malta. Other EU/EEA nationals have a cap based on their worldwide income. Refer non-resident cases (see "When to refuse or refer").
 
-**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of marital status (single/married/parent) and employment status (fully self-employed full return, or part-time TA22).
+## Residence, domicile and the remittance basis ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-**Recommended** -- all sales invoices, purchase invoices/receipts, SSC Class 2 payment records (memo only), prior year return or tax statement, VAT registration type (Article 10 or Article 11).
+- **Resident** (article 2): "an individual who resides in Malta except for such temporary absences as to the Commissioner may seem reasonable". There is no day count in the Act. The Act does not define domicile or ordinary residence.
+- **Remittance basis** (article 4(1), provisos (i) and (ii)): a person who is not ordinarily resident **or** not domiciled in Malta is taxed on foreign income only "on the amount received in Malta". Foreign capital gains are not taxed at all.
+- **Exceptions:** provisos (i) and (ii) do not apply to a long-term resident or to a holder of a permanent residence certificate or card. Nor do they apply to an individual "whose spouse is ordinarily resident and domiciled in Malta".
+- **Minimum tax for non-doms** (article 56(27)) applies to an individual who meets all of these:
+  - ordinarily resident but not domiciled, and taxed on the remittance basis;
+  - not under a minimum-tax scheme;
+  - foreign income **not less than €35,000** (a married couple taxed under article 49 counts both spouses' foreign income), not received, or not fully received, in Malta.
 
-**Ideal** -- complete income and expenditure account, asset register with capital allowances schedule, provisional tax payment confirmations, employment income details (if TA22).
+  Their tax is "not less than €5,000" a year. Tax paid under the Act counts towards the minimum, except tax on article 5A property transfers. If the person proves that tax on their worldwide income would be lower than the minimum, it is capped at that lower amount.
 
-**Refusal if minimum is missing -- SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This return was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid documentation and that the wholly-and-exclusively test is met."
+## Part-time work final tax ([Income Tax Act art. 90A](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-### Refusal Catalogue
+- **Who qualifies** (Part-time Work Rules, S.L. 123.39, rule 2): a person resident in Malta who has one of these:
+  - full-time employment registered with Jobsplus;
+  - a pension taxable in Malta;
+  - full-time education or an apprenticeship.
 
-- **R-MT-1 -- Marital status unknown** — "Marital status determines the applicable rate table. This skill cannot compute tax without knowing whether the client is single, married, or a parent. Please confirm before proceeding."
-- **R-MT-2 -- Group structures or partnerships** — "This skill covers sole proprietors and part-time self-employed individuals only. Group structures, partnerships, and companies file separate returns. Escalate to a warranted accountant."
-- **R-MT-3 -- Non-resident income** — "Non-resident and dual-resident taxation has different rules. Out of scope. Escalate to a warranted accountant."
-- **R-MT-4 -- Capital gains / property disposals** — "Capital gains computations under Article 5A or property transfers require specialised analysis. Escalate to a warranted accountant."  _([Article 5A](https://legislation.mt/eli/cap/123/eng))_
-- **R-MT-5 -- Arrears / enforcement** — "Client has outstanding tax arrears or is subject to MTCA enforcement action. Late payment attracts additional tax of 1% per month (no statutory cap) plus interest of 0.6% per month (capped at the amount of the tax) under ITMA Art. 44. Do not advise. Escalate to a warranted accountant immediately."  _([ITMA Art. 44](https://legislation.mt/eli/cap/372/eng))_
-- **R-MT-6 -- VAT return requested** — "This skill covers income tax only. For Malta VAT, use the malta-vat-return skill."
-- **R-MT-7 -- Rental 15% final tax (TA24) computation requested** — "TA24 is the optional 15% final tax on gross rental income under ITA Art. 31D, due 30 April. This skill flags it but does not compute it -- confirm whether the 15% option or progressive rates are better for the client with a warranted accountant."  _([ITA Art. 31D](https://legislation.mt/eli/cap/123/eng))_
+  Article 90A(9) extends this to a spouse living with a qualifying spouse. The extension does not cover income from the spouses' relatives or their companies.
+- **Rate:** 10% from year of assessment 2023 (article 90A(11)). Before that it was 15%. The tax is final, and the income is not declared in the return.
+- **Caps** (rule 3(2)): the rate covers self-employed profit (article 4(1)(a)) up to €12,000, and part-time employment income (article 4(1)(b)) up to €10,000. Any **excess** is declared in the return at normal rates.
+- **Conditions for the self-employed** (rule 4). All of these are required:
+  - the part-time work is registered with Jobsplus;
+  - no more than two employees, both part-time;
+  - proper books are kept;
+  - the work is done for someone other than the full-time employer;
+  - the person is registered for VAT, unless not required to register or exempt.
+- **Part-time employment:** the work must be registered with Jobsplus, done for a different employer, and not more than 30 hours a week (rule 5). The employer deducts the tax (article 90A(7)(a)).
+- **Paying as a self-employed part-timer:** pay the tax by **30 April** of the year after the income was earned. Include a statement of accounts showing taxable net profit (ITMA article 42(4)(a)). The form is commonly called TA22; check on mtca.gov.mt.
+- **Opting out:** the person may declare all part-time income in the return at progressive rates. Any final tax already paid is then credited or refunded (article 90A(2)).
+- **Risks:** if the tax is unpaid by the due date and the Commissioner sends a notice, **all** the part-time income is taxed at progressive rates (article 90A(8)). The Commissioner can also refuse the regime if the work is really the person's normal activity (article 90A(10)).
 
-## Section 3 -- Transaction Pattern Library
+## Rental income: the 15% option ([Income Tax Act art. 31D](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
+- **What qualifies:** rent from a "tenement". This means a dwelling, or part of one, occupied as a home, or a garage. A commercial tenement or club qualifies only if it is not let to or from a related body of persons (article 31D(8)).
+- **Tax:** 15% of **gross** rent received, with no deductions. It is final, with no set-off or refund, and the rent stays out of the return (article 31D(2)-(3)).
+- **All tenements together:** if the option is taken for a year, it covers the rent from **all** the person's tenements (article 31D(4)).
+- **Undeclared rent:** if an enquiry finds rent that was not declared, it is taxed at 35% of the gross, plus interest and additional tax. This applies whether or not the option was taken (article 31D(5)).
+- **Payment:** by **30 April** of the following year, with the prescribed form (ITMA article 42(4)(c)). The form is commonly called TA24; check on mtca.gov.mt.
+- **Long-let rebate** (S.L. 372.30): available with the 15% option on a private residential lease of two years or more, registered as a long private residential lease. The rebate by lease length and number of bedrooms:
+  - at least two years but under three: €200 (one bedroom), €300 (two), €400 (three or more);
+  - three years or more: €300 (one bedroom), €400 (two), €500 (three or more).
 
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
+  The rebate is pro-rated in the first and last year of the lease, and cannot exceed 15% of that lease's rent.
+- **Without the option**, the rent goes into the return at progressive rates. The S.L. 123.26 deductions are then:
+  - interest;
+  - ground rent or similar burdens;
+  - any tourism licence fee;
+  - 20% of what is left after ground rent and the licence fee. This 20% is not given on income from an emphyteutical concession.
 
-### 3.1 Income Patterns (Credits on Bank Statement)
+  Rule 3 applies to income under ITA article 4(1)(f), which was "Repealed by Act XX of 1996"; rent is now charged under article 4(1)(e). Check with MTCA whether the rules still apply before you rely on them.
 
-**Income Patterns**
+## Selling property in Malta: the article 5A final tax ([Income Tax Act art. 5A](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-| Pattern | WP Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + TRANSFER, DEPOSIT, PAYMENT RECEIVED | WP1 (gross revenue) | Business income | If Article 10 VAT-registered, extract net (excl. 18% VAT) |
-| HONORARJU, FEES, PROFESSIONAL FEES, CONSULTANCY | WP1 | Business income | Professional fees -- typical for self-employed |
-| STRIPE PAYOUT, STRIPE TRANSFER | WP1 | Business income | Platform payout -- match to underlying invoices |
-| PAYPAL PAYOUT, PAYPAL TRANSFER | WP1 | Business income | Platform payout -- verify against invoices |
-| WISE PAYOUT, WISE TRANSFER | WP1 | Business income | International platform payout |
-| REVOLUT PAYOUT | WP1 | Business income | Check if business or personal Revolut |
-| UPWORK, FIVERR, TOPTAL | WP1 | Business income | Freelance platform -- net of platform commission |
-| PAGA, SALARY, STIPENDJU, EMPLOYER [name] | WP4 (other income) | Employment income | NOT self-employment -- goes to WP4 |
-| KIRI, RENT RECEIVED | WP4 or TA24 | Rental income | Not self-employment income; if the client opts for the 15% Art. 31D final tax it goes on TA24 and stays OUT of this computation (Section 5.11) |
-| INTERESSI, INTEREST RECEIVED | WP4 | Investment income | Interest income (investment-income withholding rules may apply -- reviewer) |
-| DIVIDENDI, DIVIDEND | WP4 | Investment income | Dividend income |
-| CFR REFUND, TAX REFUND, RISTORN | EXCLUDE | Not income | Tax refund from prior year |
-| BONUS GVERN, GOVERNMENT GRANT, MALTA ENTERPRISE | EXCLUDE unless revenue grant | Check nature | Capital grants EXCLUDE; revenue grants = WP1 |
+The tax is charged on the **transfer value**, not the gain, except in the inherited-property case. It is paid through the notary on the deed and is final.
 
-### 3.2 Expense Patterns (Debits on Bank Statement) -- Fully Deductible (WP2)
-
-**Fully Deductible Expense Patterns**  _([ITA Art. 14(1)(b)](https://legislation.mt/eli/cap/123/eng))_
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| KIRI UFFICCJU, OFFICE RENT, RENT [commercial address] | Office rent | WP2 -- fully deductible | Dedicated business premises (ITA Art. 14(1)(b)) |
-| PROFESSIONAL INDEMNITY, PI INSURANCE | Professional insurance | WP2 -- fully deductible |  |
-| ACCOUNTANT, AUDITOR, BOOKKEEP, CPA, ACCA FEES | Accountancy fees | WP2 -- fully deductible |  |
-| AVUKAT, LAWYER, LEGAL, NOTARY (business) | Legal fees | WP2 -- fully deductible | Must be business-related |
-| STATIONERY, OFFICE SUPPLIES, VIKING | Office supplies | WP2 -- fully deductible |  |
-| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing/advertising | WP2 -- fully deductible |  |
-| TRAINING, CPD, COURSE, SEMINAR, CONFERENCE | Training/CPD | WP2 -- fully deductible | Must relate to current business |
-| MIA, ACCA SUBSCRIPTION, PROFESSIONAL BODY | Professional subscriptions | WP2 -- fully deductible |  |
-| BOV CHARGE, HSBC CHARGE, BANK FEE, MAINTENANCE FEE | Bank charges | WP2 -- fully deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | WP2 -- fully deductible |  |
-| POSTAGE, MALTAPOST (business) | Postage | WP2 -- fully deductible | Business correspondence |
-| DOMAIN, HOSTING, CLOUDFLARE, AWS, DIGITALOCEAN | IT infrastructure (services) | WP2 -- fully deductible | Recurring services = revenue expense; purchased HARDWARE = capital (WP15), no de minimis |
-
-### 3.3 Expense Patterns (Debits) -- SaaS and Software
-
-**SaaS and Software Patterns**  _(S.L. 123.01)_
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | WP2 -- fully deductible | Recurring subscription = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | WP2 -- fully deductible |  |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | WP2 -- fully deductible |  |
-| SOFTWARE LICENCE (perpetual) | Capital item | WP15 -- capitalise at 25%/year (4-year minimum, S.L. 123.01) | Capital by nature regardless of amount -- no de minimis |
-
-### 3.4 Expense Patterns (Debits) -- Utilities (WP2, may need apportionment)
-
-**Utilities Patterns**
-
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| ARMS, ARMS LTD, ENEMALTA | Electricity/water | T2 if home office | 100% if dedicated office; proportional if home |
-| MELITA, GO PLC, EPIC | Telecoms/broadband | T2 | Business use portion only; default 0% if mixed |
-| VODAFONE, MOBILE, GO MOBILE | Phone | T2 | Business use portion only |
-
-### 3.5 Expense Patterns (Debits) -- Travel
-
-**Travel Patterns**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| AIR MALTA, RYANAIR, WIZZ AIR, EASYJET | Flights | WP2 if business travel | Must be wholly business purpose |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | WP2 if business travel |  |
-| BOLT, UBER, ECABS, TAXI | Local transport | WP2 if business purpose |  |
-| FUEL, ENEMED, PETROL | Vehicle fuel | T2 -- business % only | Requires mileage log |
-| PARKING, CVA, MCP PARKING | Parking | T2 -- business % only |  |
-
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
-
-**NOT Deductible Patterns**  _([ITA Art. 14(1) / Art. 26(a)-(b)](https://legislation.mt/eli/cap/123/eng))_
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANT, DINNER, LUNCH, ENTERTAINMENT, CLIENT MEAL | Entertainment | NOT deductible (conservative default) | Fails wholly-and-exclusively, ITA Art. 14(1) / Art. 26(a)-(b); no statutory partial deduction. Reviewer may allow substantiated genuine business entertainment -- flag, never auto-allow |
-| PERSONAL, GROCERIES, SUPERMARKET, LIDL, PAVI | Personal expenses | NOT deductible | Domestic/private (ITA Art. 26(a)) |
-| FINE, PENALTY, MULTA, PARKING FINE | Fines/penalties | NOT deductible | Public policy |
-| CFR PAYMENT, MTCA PAYMENT, INCOME TAX, TAX PAYMENT | Tax payments | NOT deductible | Income tax cannot reduce income |
-| SSC, CLASS 2, SOCIAL SECURITY | SSC Class 2 | NOT deductible -- memo only | No deduction in Cap. 123 for SSC (Section 5.5). Record the annual total for the reviewer |
-| DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | Drawings | NOT deductible | Not an expense |
-
-### 3.7 Expense Patterns (Debits) -- Capital Items (WP15)
-
-Rates are the straight-line maximum implied by the S.L. 123.01 minimum-years schedule.
-
-**Capital Items Patterns**  _(S.L. 123.01)_
-
-| Pattern | Category | Min years / Annual Rate | Notes |
-| --- | --- | --- | --- |
-| LAPTOP, COMPUTER, MACBOOK, IMAC, DESKTOP | Computers and electronic equipment | 4 years / 25% | WP15 |
-| PRINTER, SCANNER, COPIER | Computers and electronic equipment | 4 years / 25% | WP15 (classification as electronic equipment -- reviewer confirm) |
-| FURNITURE, DESK, CHAIR, FILING CABINET | Furniture, fixtures, fittings | 10 years / 10% | WP15 |
-| VEHICLE, CAR (business) | Motor vehicle | 5 years / 20% | WP15, business % only; non-commercial cars: allowances computed on max cost EUR 14,000 |
-| AIR CONDITIONING, AC UNIT | Air conditioners | 6 years / 16.67% | WP15 |
-
-### 3.8 Exclusions (Neither Income nor Expense)
-
-**Exclusions**
-
-| Pattern | Treatment | Notes |
+| Transfer (made on or after 1 January 2015) | Rate | Provision |
 | --- | --- | --- |
-| INTERNAL TRANSFER, OWN ACCOUNT, BETWEEN ACCOUNTS | EXCLUDE | Own-account transfer |
-| LOAN REPAYMENT, SELF-EMPLOYED LOAN, PERSONAL LOAN | EXCLUDE | Loan principal movement |
-| SSC, CLASS 2, SOCIAL SECURITY | EXCLUDE from computation -- memo total for reviewer | NOT deductible against income tax (Section 5.5) |
-| VAT PAYMENT, CFR VAT, MTCA VAT | EXCLUDE | VAT liability payment, not expense |
-| PROVISIONAL TAX, PT INSTALMENT | WP36 (provisional tax paid) | Not an expense -- credit against liability |
+| General rule | 8% of transfer value | 5A(5)(a), proviso |
+| Property acquired before 1 January 2004 (no promise of sale notified before 17 November 2014) | 10% of transfer value | 5A(5)(f) |
+| Not part of a project, sold within five years of acquisition | 5% of transfer value | 5A(5)(e) |
+| An individual (or two co-owners) declared in the deed of acquisition that it was bought as their sole ordinary residence; the transfer is within three years of acquisition; and at the transfer they own no other residential property (declared to the notary) | 2% of transfer value | 5A(5)(g) |
+| Inherited after 24 November 1992, or donated more than five years before | 12% of (transfer value − acquisition value), unless the transferor elects otherwise | 5A(5)(b) |
+| Inherited before 25 November 1992 | 7% of transfer value | 5A(5)(c) |
 
-### 3.9 Maltese Banks -- Statement Format Reference
+The 5% rate is lost in two cases. The first is where a related person owned the property as part of a project in the previous five years. The second is where works needing a development permit were done in those five years, unless the owner had declared it as their sole ordinary residence.
 
-**Statement Format Reference**
+**No tax** is due (article 5A(4)) in these cases, among others:
 
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| BOV (Bank of Valletta) | TRANSFER, DD, SO, CHQ, CHARGES | PDF/CSV; booking date format DD/MM/YYYY |
-| HSBC Malta | PAYMENT, TRF, D/D, FEE | PDF/CSV; counterparty in description field |
-| APS Bank | TRANSFER, DIRECT DEBIT, CHARGE | PDF; less common CSV export |
-| Revolut Business | PAYMENT, TRANSFER, CARD PAYMENT | CSV; clean counterparty names |
-| Wise Business | TRANSFER, CONVERSION, FEE | CSV; multi-currency -- use EUR amounts |
+- **Own residence:** a dwelling house, not part of a project, that meets all of these:
+  - owned and occupied as the transferor's own residence for at least three consecutive years immediately before the transfer;
+  - sold within 12 months of vacating it;
+  - declared as the main residence.
 
-## Section 4 -- Worked Examples
+  Periods of ownership by a spouse, or by a direct ascendant, from whom the property was inherited count towards the three years. On divorce or separation, the house counts as vacated only when the other spouse also leaves.
+- **Donations** to a spouse, a descendant or ascendant (or their spouse), or, where there are no descendants, to a sibling or a sibling's descendant.
+- **Transfers between spouses** on separation or divorce, or when the community of acquests is dissolved.
 
-### Example 1 -- Client Payment (Article 10, VAT-registered, Maltese B2B client)
+Refer projects, companies, trusts and special designated areas.
 
-**Input line:**
-`15/03/2025 ; BOV TRANSFER IN ; BORG & VELLA ADVOCATES ; PAYMENT INV-2025-003 ; +1,180.00 ; EUR`
+## Deductions and capital allowances for the self-employed ([Income Tax Act art. 14 and 26](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-**Reasoning:**
-Client payment for services to a Maltese business client. The taxpayer is Article 10 VAT-registered, so EUR 1,180 includes 18% Malta VAT. Net = 1,180 / 1.18 = EUR 1,000 (WP1). EUR 180 is VAT collected (excluded from income -- it is a liability to MTCA). NOTE: if the client were a foreign EU business, the supply would typically be reverse-charge (no Malta VAT in the price) -- do not blindly extract 18% from cross-border B2B receipts.
+- **Test:** deduct only outgoings "wholly and exclusively incurred in the production of the income" (article 14(1)). Examples in article 14 include borrowing costs, business rent, repairs and bad debts.
+- **Barred by article 26:**
+  - private or domestic expenses;
+  - capital spending, except as allowed under article 14;
+  - improvements;
+  - losses or expenses that are recoverable;
+  - rent not paid to produce the income;
+  - voluntary payments;
+  - payments that are criminal offences.
+- **Mixed use:** apportion the cost. Default to 0% until the business share is documented, for example for a home office, car or phone.
+- **Entertainment:** the Act has no specific rule. Treat it as private unless the wholly and exclusively test is clearly met, and flag it.
+- **Social security Class 2:** Part IV of the Act (articles 14 to 26) contains no deduction for social security contributions. Leave them out of the computation and record them as a memo.
+- **Capital allowances** (article 14(1)(f), S.L. 123.01):
+  - straight line, over at least the minimum number of years;
+  - a full year's allowance in the year of acquisition, none in the year of disposal;
+  - only where proper records of cost are kept;
+  - reduced to the business-use share;
+  - unused allowances carry forward;
+  - total allowances cannot exceed original cost;
+  - industrial buildings or structures get at most 2% of cost a year, excluding land. They also get an initial deduction of one-tenth (10%) of the capital expenditure in the year they are first used (article 14(1)(j));
+  - cars and other vehicles for transporting people (S.L. 123.07 rule 3, [Income Tax (Deductions) Rules](https://legislation.mt/getpdf/66f65d8f3b56613c3cae68d9)): if the car cost more than €14,000, compute wear and tear, any initial deduction and the article 24 balancing allowance or charge as if it cost €14,000. For a leased car with a listed price over €14,000, the deductible lease payments are capped at lease payments × €14,000 ÷ listed price. Apply the business-use share after the cap. The rule does not cover vehicles not commonly used as private vehicles;
+  - a sale or scrapping triggers a balancing statement (article 24).
 
-**Classification:** WP1 = EUR 1,000. VAT EUR 180 excluded.
-
-### Example 2 -- SaaS Subscription (Fully Deductible)
-
-**Input line:**
-`01/04/2025 ; HSBC DD ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD APR ; -29.99 ; EUR`
-
-**Reasoning:**
-Monthly recurring SaaS subscription = operating expense by nature (not a capital acquisition). Fully deductible. For Article 10 clients, the net amount (excl. recoverable VAT) is the expense. If Article 11, gross amount is the cost.
-
-**Classification:** WP2 = EUR 29.99 (or net if Article 10 with recoverable input VAT).
-
-### Example 3 -- Entertainment (Blocked)
-
-**Input line:**
-`22/04/2025 ; BOV CARD ; WATERBISCUIT RESTAURANT ; CLIENT DINNER ; -85.00 ; EUR`
-
-**Reasoning:**
-Client entertainment. Conservative default: blocked -- fails the wholly-and-exclusively test (ITA Art. 14(1)) and the negative test (Art. 26(a)/(b)). Malta has no statutory partial-deduction regime for entertainment. Flag for reviewer: a warranted accountant may allow genuinely business-purposed, substantiated entertainment -- never auto-allow.
-
-**Classification:** NOT deductible. Remove from WP2 entirely. Reviewer flag.
-
-### Example 4 -- SSC Class 2 Payment
-
-**Input line:**
-`10/01/2025 ; BOV DD ; CFR SSC CLASS 2 ; Q4 2024 ; -1,090.50 ; EUR`
-
-**Reasoning:**
-SSC Class 2 payment. NOT deductible against income tax -- the ITA Art. 14 positive list contains no deduction for social security contributions and Art. 26(a) disallows private expenses not specifically allowed. Exclude from the tax computation; record the annual total as a memo item for the reviewer and for cash-flow planning.
-
-**Classification:** EXCLUDE from computation. Memo: SSC paid EUR 1,090.50.
-
-### Example 5 -- Laptop Purchase (Capital Item)
-
-**Input line:**
-`03/06/2025 ; HSBC CARD ; APPLE STORE MALTA ; MACBOOK PRO ; -1,899.00 ; EUR`
-
-**Reasoning:**
-Capital asset. Computers and electronic equipment: minimum 4 years per S.L. 123.01, i.e. max 25% straight-line. EUR 1,899 x 25% = EUR 474.75 per year in WP15. Do NOT put in WP2.
-
-**Classification:** WP15 = EUR 474.75/year. NOT WP2.
-
-### Example 6 -- Internal Transfer (Exclude)
-
-**Input line:**
-`15/05/2025 ; BOV TRANSFER ; OWN ACCOUNT - SAVINGS ; ; -2,000.00 ; EUR`
-
-**Reasoning:**
-Transfer between own accounts. Neither income nor expense. Exclude entirely.
-
-**Classification:** EXCLUDE.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 The Wholly and Exclusively Test
-
-- **Wholly and Exclusively Test** — An expense is deductible only if incurred wholly and exclusively in the production of the income (Art. 14(1)), and not disallowed by Art. 26 (domestic/private expenses, capital, recoverable amounts, voluntary payments, etc.). Mixed-use expenses must be apportioned. The apportionment method must be reasonable and documented.  _([ITA Art. 14(1) (positive test) and Art. 26 (negative test)](https://legislation.mt/eli/cap/123/eng))_
-
-### 5.2 Revenue Recognition
-
-- **Revenue Recognition** — All business income goes to WP1. For Article 10 clients, report net of VAT. For Article 11 clients, report gross (no VAT charged). VAT collected on sales is NOT income.
-
-### 5.3 Capital vs Revenue
-
-- **Capital vs Revenue** — Capital items must go through WP15 (capital allowances), not WP2 (ITA Art. 26 disallows capital expenditure as a revenue deduction; Art. 14(1)(f) allows wear and tear instead). There is no de minimis threshold -- business assets are depreciated per S.L. 123.01 regardless of cost. The VAT Capital Goods Scheme threshold (EUR 1,160) is a separate VAT system and is never an income-tax capitalisation test.  _([ITA Art. 26; Art. 14(1)(f); S.L. 123.01](https://legislation.mt/eli/cap/123/eng))_
-
-### 5.4 Capital Allowance Rates (S.L. 123.01 -- Deduction for Wear and Tear of Plant and Machinery Rules)
-
-S.L. 123.01 prescribes MINIMUM depreciation periods; the rates below are the straight-line maxima they imply.
-
-**Capital Allowance Rates**  _(S.L. 123.01 -- Deduction for Wear and Tear of Plant and Machinery Rules)_
-
-| Asset Type | Min Years | Max Annual Rate |
-| --- | --- | --- |
-| Computers and electronic equipment | 4 | 25% |
-| Computer software | 4 | 25% |
-| Motor vehicles (non-commercial: cost capped at EUR 14,000) | 5 | 20% |
-| Other machinery | 5 | 20% |
-| Air conditioners | 6 | 16.67% |
-| Catering equipment | 6 | 16.67% |
-| Furniture, fixtures, fittings and soft furnishings | 10 | 10% |
-| Other plant | 10 | 10% |
-| Industrial buildings and structures (incl. hotels; prescribed car parks and offices per S.L. 123.173) | -- | 2% p.a. + 10% initial allowance in year of first use (ITA Art. 14(1)(j), new or first used in Malta) |
-
-Depreciation is straight-line on cost, starting in the year the asset is first used in the business. Total allowances may never exceed cost. Unclaimed allowances may be carried forward. Legal basis: ITA Art. 14(1)(f) and (j); balancing statements on disposal under ITA Art. 24. Ordinary commercial buildings that do not meet the industrial-buildings/S.L. 123.173 definitions get NO buildings allowance -- reviewer decision.
-
-### 5.5 SSC Class 2 -- NOT Deductible
-
-- **SSC Class 2 not deductible** — SSC Class 2 (self-occupied persons' contributions, 15% of prior-year net income, paid three times a year) is **not deductible** in computing chargeable income. The ITA Art. 14 list of allowable deductions contains no provision for social security contributions, and Art. 26(a) disallows private expenses not specifically allowed by the Act. Record the amounts paid as a memo item only. > Reviewer note: this is the single highest-impact rule in this skill. It was verified against the full text of Cap. 123 (no SSC deduction provision exists) but no explicit MTCA statement was located -- warranted-accountant confirmation required before Q1 promotion.  _([ITA Art. 14; Art. 26(a); Cap. 123](https://legislation.mt/eli/cap/123/eng))_
-
-### 5.6 Non-Deductible Expenses
-
-**Non-Deductible Expenses**  _([ITA Art. 14(1); Art. 26](https://legislation.mt/eli/cap/123/eng))_
-
-| Expense | Reason |
+| Asset (S.L. 123.01 Schedule) | Minimum years |
 | --- | --- |
-| Entertainment (client meals, events) | Conservative block -- fails wholly-and-exclusively (Art. 14(1)); Art. 26(a)/(b); no statutory partial deduction. Reviewer may allow substantiated business cases |
-| Personal living expenses | Domestic/private -- Art. 26(a) |
-| Fines and penalties | Public policy |
-| Income tax itself | Tax on income |
-| SSC Class 2 | No deduction provision in Cap. 123 (Section 5.5) |
-| Capital expenditure | Goes through WP15 -- Art. 26 |
-| Drawings / personal withdrawals | Not an expense |
-| Personal car insurance (unapportioned) | Personal |
+| Computers and electronic equipment; computer software | 4 |
+| Motor vehicles; other machinery | 5 |
+| Catering equipment; air-conditioners; medical equipment | 6 |
+| Furniture, fixtures, fittings and soft furnishings; other plant | 10 |
+| Electrical and plumbing installations and sanitary fittings | 15 |
 
-### 5.7 VAT Interaction
+## Provisional tax for the self-employed ([Payment of Provisional Tax Rules, S.L. 372.18](https://legislation.mt/getpdf/62220f5fe3d8c541c4ac85d4))
 
-**VAT Interaction**
+- **Who pays:** an individual who was liable to tax in the benchmark year. This excludes anyone eligible for the article 12 election not to file, typically an employee whose income was all under FSS.
+- **Benchmark:** the tax payable in the self-assessment for the benchmark year, adding back any provisional tax. The benchmark year is the last year of assessment whose return was due before the calendar year of the first payment. The benchmark is never this year's projected income. If there is no self-assessment and no Commissioner determination, the benchmark is nil (rule 7(1)(c)).
+- **Due dates** (rule 4) and amounts (rule 5), all in the basis year:
+  - at least 20% of the benchmark by 30 April;
+  - a further 30% by 31 August;
+  - a further 50% by 21 December.
+- **Reduction** (rule 10): if this year's liability will be lower than the benchmark, file the P.T. reduction form. Payments can then be limited to the estimated liability.
+- **Late provisional tax** (rule 14): additional tax of 0.6% for each month or part month, for periods from 1 June 2022. If the final self-assessment tax is below the benchmark, the additional tax on the difference is cut by 90%. The charge stops at the tax settlement date.
 
-| Scenario | Income Tax Treatment |
+## Employees: the Final Settlement System ([FSS Rules, S.L. 372.14](https://legislation.mt/getpdf/6a6c4d3b52fe3f25d8b039d3))
+
+- The employer deducts tax each pay period from the Main Tax Deduction Tables. The table depends on the employee's tax status declaration (form FS4) and the length of the pay period. A year-end adjustment in the final pay period applies the article 56(1)(a) or (b) rates.
+- The employer gives the employee the Payee Statement of Earnings (commonly FS3) by **31 January** of the following year, or within seven days if the employment ends. The employer files its annual reconciliation statement by **15 February** (rules 21 and 22).
+- **No return needed** (ITMA article 12) in either of these cases:
+  - a resident individual whose income was **all** taxed at source under FSS and fully reported in the statements of earnings;
+  - a resident individual with no business income whose total income did not exceed the 0% band.
+
+  The Commissioner then makes a determination. If you disagree, file an adjustment form within ten years.
+- From 1 January 2025, tax paid through FSS on income left out of a return does not count as "endangered tax" for the omission penalty (Schedule, item 1, as amended by Act IX of 2025).
+
+## Social security Class 2 (summary only) ([Social Security Act, Cap. 318](https://legislation.mt/eli/cap/318/eng))
+
+Self-occupied persons pay Class 2 contributions under the Social Security Act, Cap. 318, not the Income Tax Act. They are not deducted in the income tax computation (see above). For rates, caps, and the position of someone who is both employed and self-occupied, use the Malta social security Guide or check on mtca.gov.mt.
+
+## Boundary and exception table ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+
+| Situation | Treatment |
 | --- | --- |
-| VAT collected on sales (Article 10) | NOT income -- exclude from WP1 |
-| Input VAT recovered (Article 10) | NOT an expense -- exclude from WP2 |
-| Input VAT blocked/non-deductible (Article 10) | IS an expense -- include in WP2 |
-| Article 11 client -- all VAT paid on purchases | IS an expense -- gross amount is cost |
-| Foreign VAT (non-reclaimable) | IS an expense -- full gross is cost |
+| Chargeable income exactly at a band edge (e.g. €16,000 single) | The Act says "exceeds ... but is less than". Both formulas give the same tax at the edge (single: €600) |
+| Married couple, no EU/EEA national, child born abroad | Married (a)(i) table, not (a)(ii) |
+| Child aged 22 in full-time university study | Qualifies (not over 23 and in full-time education) |
+| Child aged 20, working full-time | Does not qualify (over 18 and not in education) |
+| Part-time self-employed profit of exactly €12,000 | All at 10%. Nothing is over the cap |
+| Part-time work for a company owned more than 50% by the same shareholders as the full-time employer | Counts as the same employer, so the 10% regime is not available (rule 6(1)(a)) |
+| Rent from a commercial tenement let to a related company | Not a tenement, so the 15% option is not available |
+| Non-dom with €34,000 of foreign income not remitted | Below €35,000, so no minimum tax |
+| Own home sold 13 months after moving out | Outside the 12-month window: 8% (5% if within five years of acquisition, 10% if acquired before 2004) |
+| Provisional tax paid on 1 May | Late: 0.6% additional tax for that month |
 
-### 5.8 TA22 Regime (Part-Time Self-Employment)
+## Worked cases ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
 
-**Legislation:** ITA Art. 90A (tax on part-time work) and the prescribed Part-Time Work Rules; operative rate and cap per MTCA guidance for basis year 2025.
+The amounts in these cases are invented. The rates come from the sources linked in the sections above.
 
-**TA22 Regime conditions**  _([ITA Art. 90A + Part-Time Work Rules; MTCA guidance basis year 2025](https://legislation.mt/eli/cap/123/eng))_
+**Case 1: single, self-employed, basis year 2026.**
+- Facts: gross fees €45,000; allowable expenses €13,000; a laptop costing €1,500, written off over 4 years at €375 a year; Class 2 paid €3,000 (memo only); provisional tax paid €3,500.
+- Net profit is €32,000. Less €375, chargeable income is €31,625.
+- Tax: €31,625 × 25% − €3,400 = €4,506.25.
+- Balance due by 30 June 2027: €4,506.25 − €3,500 = €1,006.25.
 
-| Condition | Requirement |
-| --- | --- |
-| Status | Full-time employed, OR pensioner, OR full-time student/apprentice |
-| Registration | Part-time activity registered with Jobsplus; VAT-registered if obliged to register |
-| Employees | Not more than 2 employees, and only on a part-time basis |
-| Records | Proper books of account |
-| Independence | Part-time work performed for someone other than the full-time employer |
-| Net self-employment profit | Flat **10%** on the first **EUR 12,000** of net profit (revenue less directly incurred expenses) |
-| Excess over EUR 12,000 | Declare the excess in the Income Tax Return at progressive rates |
-| Form / deadline | TA22, filed and paid electronically by **30 April** of the following year |
+**Case 2: married couple with two children, basis year 2026 compared with 2025.**
+- Facts: both spouses are EU nationals and file jointly. Their children, aged 10 and 14, live with them. Chargeable income is €40,000.
+- 2026, table (a)(iii): €40,000 × 25% − €6,575 = €3,425.
+- The same income in 2025, married table: €40,000 × 25% − €4,550 = €5,450.
 
-The TA22 election is optional -- the taxpayer may instead declare everything in the return at progressive rates (ITA Art. 90A(2)), with any part-time tax paid available as a credit/refund.
+**Case 3: part-time self-employed.**
+- Facts: a full-time employee, registered with Jobsplus, also does part-time design work for other clients. The work is registered and has no employees. Net profit in 2026 is €15,000.
+- Final tax: €12,000 × 10% = €1,200, paid by 30 April 2027 with the statement of accounts.
+- The excess €3,000 goes into the 2026 return at progressive rates.
 
-SSC: do NOT assert that "Class 1 covers all". Class 2 liability for a person who is simultaneously employed and self-occupied is governed by the Social Security Act (Cap. 318) and depends on the person's contribution status -- flag for the reviewer in every TA22 case.
+**Case 4: residential let on the 15% option.**
+- Facts: a two-bedroom flat is let for all of 2026 on a registered five-year long private residential lease, at €18,000 a year.
+- Tax: €18,000 × 15% = €2,700, less the €400 rebate = €2,300, due by 30 April 2027.
+- The rebate is within its cap (15% of rent = €2,700).
 
-### 5.9 Provisional Tax
+**Case 5: property sale.**
+- Facts: a flat bought in 2010 and never the seller's residence is sold in 2026 for €300,000.
+- Tax: 8% × €300,000 = €24,000, withheld through the notary.
+- If it had been bought in 2002: 10% × €300,000 = €30,000.
+- If it had been the seller's own residence for three years and sold within 12 months of vacating: no tax.
 
-**Legislation:** Provisional Tax (P.T.) Rules, S.L. 372.18 (under ITMA, Cap. 372)
+**Case 6: provisional tax.**
+- Facts: the self-assessment for year of assessment 2025 (the last return due before 2026) shows €5,000 of tax payable after adding back provisional tax.
+- 2026 instalments: €1,000 by 30 April (20%), €1,500 by 31 August (30%) and €2,500 by 21 December (50%).
 
-**Provisional Tax instalments**  _([Provisional Tax (P.T.) Rules, S.L. 372.18](https://legislation.mt/eli/sl/372.18/eng))_
+**Case 7: non-dom minimum tax.**
+- Facts: an ordinarily resident, non-domiciled individual, taxed on the remittance basis and not in a minimum-tax scheme, has €50,000 of foreign income, none of it remitted, and €1,200 of Malta tax on Malta income.
+- Foreign income is at least €35,000, so total tax must reach €5,000.
+- Shortfall: €5,000 − €1,200 = €3,800, unless the person proves that tax on their worldwide income would be lower.
 
-| Instalment | % of PT benchmark | Deadline |
+**Case 8: late return and late payment.**
+- Filing: the return for year of assessment 2026 is filed eight months after 30 June 2026. Additional tax is €50 (later than 6 but within 12 months).
+- Payment: if €2,000 of tax is paid five months late, interest is €2,000 × 0.6% × 5 = €60, capped at the tax.
+
+## When to refuse or refer
+
+- Refuse to pick a rate table without marital status, children's ages, custody or maintenance, and nationality or long-term resident status.
+- Refer non-residents, part-year residents and dual residents, and all double tax relief claims.
+- Refer the special schemes (Global Residence Programme, Residents Scheme, returning migrants, highly qualified persons) and anyone taxed at the article 56(11) flat rate.
+- Refer disputed domicile or ordinary residence.
+- Refer property transfers involving projects, companies, trusts, special designated areas, intra-group transfers or share transfers.
+- Refer companies, partnerships and group structures.
+- Refer arrears, enquiries, assessments and objections, and any omission already under enquiry.
+- Refer the €10,270 table where the €5 difference matters, until MTCA confirms it. ([Act III of 2026](https://legislation.mt/getpdf/69d8ed326fe5fd3994d17430))
+- Refer any question that turns on an MTCA notice you cannot see, such as an online-filing extension.
+
+## Filing and payment ([Income Tax (Statutory Dates) Rules, S.L. 372.16](https://legislation.mt/getpdf/6022595cbc8272018c0f2ad2))
+
+| Item | Date or rule | Source |
 | --- | --- | --- |
-| 1st | 20% | 30 April |
-| 2nd | 30% | 31 August |
-| 3rd | 50% | 21 December |
-
-The PT benchmark is based on the latest self-assessment (last filed return), as adjusted by any PT reduction claim accepted by MTCA -- never the current year's projected income. In practice a newly registered self-employed person receives no PT demand in the first year (no benchmark exists) and settles the first year's tax in full with the return -- reviewer to confirm against the client's PT statement.
-
-### 5.10 Filing Deadlines and Penalties
-
-**Filing Deadlines and Penalties**  _([ITMA Art. 44; Schedule to ITA Art. 56(12)(c)](https://legislation.mt/eli/cap/372/eng))_
-
-| Item | Detail |
-| --- | --- |
-| Income Tax Return deadline | **30 June** of the following year; online filing routinely extended by MTCA notice (basis 2024: electronic extended to 8 Aug 2025; basis 2025: manual AND electronic extended to 31 July 2026) |
-| TA22 deadline | **30 April** of the following year (tax paid with the form) |
-| TA24 (rental 15%) deadline | **30 April** of the following year |
-| Late return -- additional tax (individuals) | Fixed banded scale, Table A, Schedule to ITA Art. 56(12)(c): EUR 10 (within 6 months) / 50 (6-12m) / 100 (12-18m) / 150 (18-24m) / 200 (24-36m) / 300 (36-48m) / 400 (48-60m) / 500 (over 60m). Remittable for reasonable excuse (insufficiency of funds and reliance on an agent do NOT count) |
-| Late payment -- additional tax | 1% of the unpaid tax per month or part month (ITMA Art. 44(1)(a)); no cap stated in the statute; remittable at the Commissioner's discretion in limited cases |
-| Late payment -- interest | 0.6% per month or part month for tax payable on/after 31 Aug 2022 (ITMA Art. 44(2A)); "the total interest shall not exceed the amount of the said tax" |
-| Omission from a return | Additional tax of 1.5% per month of the endangered tax, max 60 months (items 5 and 7, Schedule to Art. 56(12)(c)); reduced to nil (rectified within 12 months, pre-enquiry), 0.1%/month (pre-enquiry, later), or 0.75%/month (post-enquiry-notice, pre-assessment) on voluntary rectification; no interest runs on this additional tax |
-
-### 5.11 TA24 -- What It Actually Is (Out of Computation Scope)
-
-- **TA24 explanation** — TA24 is the prescribed form for the OPTIONAL 15% final tax on **gross rental income** under ITA Art. 31D, payable by 30 April of the following year. No deductions are allowed against the gross rent; the tax is final (no set-off or refund); income taxed this way is excluded from the return. If the option is not exercised, rental income is declared in the return at progressive rates (with limited deductions). Choosing between the two is a reviewer decision -- raise R-MT-7.  _([ITA Art. 31D](https://legislation.mt/eli/cap/123/eng))_
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Deduction
-
-**Legislation:** ITA Art. 14(1)
-
-- Calculate proportion of home used for business: dedicated room(s) as percentage of total rooms or floor area
-- Apply that percentage to: rent or mortgage interest, electricity, water, internet, maintenance
-- Must be a dedicated workspace -- a dual-use room (kitchen table, living room) does NOT qualify
-- Client must document the calculation and retain for 6 years
-
-**Conservative default:** 0% deduction until reviewer confirms room arrangement.
-
-**Flag for reviewer:** Confirm room count, floor area basis, and that workspace is genuinely dedicated.
-
-### 6.2 Motor Vehicle Business Use
-
-- Only the business-use percentage of fuel, insurance, maintenance, and depreciation is deductible
-- Client must maintain a mileage log (business trips vs total mileage)
-- Capital allowance on vehicle: 20% straight-line (5-year minimum), multiplied by business %; non-commercial vehicles computed on a maximum cost of EUR 14,000
-
-**Conservative default:** 0% business use until mileage log provided.
-
-**Flag for reviewer:** Confirm business percentage is documented and reasonable.
-
-### 6.3 Phone / Internet Mixed Use
-
-- Business use portion only
-- Client must provide reasonable estimate of business vs personal use
-
-**Conservative default:** 0% deduction until business percentage confirmed.
-
-### 6.4 Bad Debt Write-Off
-
-**Legislation:** ITA Art. 14(1)(d) and the Commissioner's Bad Debt Guidelines
-
-- Deductible only if: (1) income was previously declared in WP1, (2) the debt is proved to the Commissioner's satisfaction to have become bad in the basis year (insolvency, untraceable debtor, statute-barred, all legal steps exhausted, etc.), (3) any later recovery is taxed as a receipt
-- Flag for reviewer to confirm the conditions
-
-### 6.5 Software Capitalisation vs Expensing
-
-- Recurring subscriptions (monthly/annual): expense in WP2 fully
-- Perpetual licence: capital -- WP15 at 25%/year (4-year minimum), regardless of amount
-- Flag for reviewer if nature of licence is unclear
-
-### 6.6 Low-Value Asset Treatment
-
-- Strictly there is NO statutory de minimis: all business assets are depreciated per S.L. 123.01
-- Some practitioners expense trivial-value assets immediately as a practical simplification; this has no statutory basis
-- Flag for reviewer to confirm the firm's policy before expensing any asset
-
-### 6.7 Asset Disposal (Balancing Statements)
-
-**Legislation:** ITA Art. 24
-
-- On disposal/scrapping, submit a balancing statement with the return: cost, allowances claimed, proceeds
-- Proceeds above tax written-down value = balancing charge (taxable, capped at allowances claimed); below = balancing allowance (deductible)
-- Rollover relief may defer a balancing charge against a replacement asset
-- Flag for reviewer to confirm disposal proceeds and written-down value
-
-## Section 7 -- Excel Working Paper Template
-
-```
-MALTA INCOME TAX -- SELF-EMPLOYED WORKING PAPER (maps to the MTCA Income Tax Return)
-Tax Year (basis): 2025
-Client: ___________________________
-Marital Status: Single / Married / Parent
-
-A. WP1 -- GROSS SELF-EMPLOYMENT INCOME
-  A1. Client payments (net of VAT if Art.10)    ___________
-  A2. Platform payouts (Stripe, PayPal, etc.)   ___________
-  A3. Other business income                      ___________
-  A4. TOTAL WP1                                  ___________
-
-B. WP2 -- ALLOWABLE DEDUCTIONS
-  B1. Office rent                                ___________
-  B2. Professional insurance                     ___________
-  B3. Accountancy / legal fees                   ___________
-  B4. Office supplies / stationery               ___________
-  B5. Software subscriptions                     ___________
-  B6. Marketing / advertising                    ___________
-  B7. Bank charges / payment processing fees     ___________
-  B8. Training / CPD / professional subs         ___________
-  B9. Travel (flights, hotels, transport)        ___________
-  B10. Telecoms (business % of phone/internet)   ___________
-  B11. Home office (% of utilities/rent)         ___________
-  B12. Vehicle expenses (business %)             ___________
-  B13. Other allowable expenses                  ___________
-  B14. TOTAL WP2                                 ___________
-
-C. WP3 -- NET PROFIT (A4 - B14)                 ___________
-
-D. WP4 -- OTHER INCOME
-  D1. Employment income                          ___________
-  D2. Rental income (progressive option only --
-      15% Art.31D rents go on TA24, NOT here)    ___________
-  D3. Investment income                          ___________
-  D4. TOTAL WP4                                  ___________
-
-E. WP5 -- TOTAL INCOME (C + D4)                 ___________
-
-F. STATUTORY DEDUCTIONS
-  F1. WP15 -- Capital allowances                 ___________
-  F2. WP25 -- Total deductions (F1)              ___________
-
-G. WP30 -- CHARGEABLE INCOME (E - F2)           ___________
-
-H. TAX COMPUTATION (pass to deterministic engine)
-  H1. WP35 -- Tax liability                      ___________
-  H2. WP36 -- Provisional tax paid               ___________
-  H3. WP37 -- Tax credits                        ___________
-  H4. WP40 -- Tax due / refund                   ___________
-
-MEMO (not in computation):
-  M1. SSC Class 2 paid in year (NOT deductible)  ___________
-
-REVIEWER FLAGS:
-  [ ] Marital status confirmed?
-  [ ] VAT registration type confirmed (Art.10/11)?
-  [ ] Home office arrangement confirmed?
-  [ ] Vehicle business % confirmed with mileage log?
-  [ ] Phone/internet business % confirmed?
-  [ ] All T2 items flagged for review?
-  [ ] Entertainment expenses excluded (or reviewer-approved)?
-  [ ] Capital items in WP15 (not WP2)?
-  [ ] SSC excluded from deductions (memo only)?
-  [ ] WP lines mapped to the current MTCA return fields?
-```
-
-## Section 8 -- Bank Statement Reading Guide
-
-### Maltese Bank Statement Formats
-
-**Maltese Bank Statement Formats**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BOV (Bank of Valletta) | PDF, CSV | Date, Description, Debit, Credit, Balance | Most common; description contains counterparty + reference |
-| HSBC Malta | PDF, CSV | Value Date, Description, Amount, Balance | Card transactions show merchant name |
-| APS Bank | PDF | Date, Particulars, Withdrawals, Deposits | Less common CSV; shorter descriptions |
-| Revolut Business | CSV | Date, Counterparty, Amount, Currency, Reference | Clean data; multi-currency possible |
-| Wise Business | CSV | Date, Description, Amount, Currency, Running Balance | Multi-currency; conversion fees separate line |
-
-### Key Maltese Banking Terms
-
-**Key Maltese Banking Terms**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| TRASFERIMENT / TRF | Transfer | Check direction for income/expense |
-| DEBIT DIRETT / DD | Direct debit | Regular expense (utility, subscription) |
-| STANDING ORDER / SO | Standing order | Regular expense (rent, loan) |
-| KARTA / CARD | Card payment | Expense -- check merchant |
-| HLAS / DEPOSIT | Deposit | Potential income |
-| SPEJJEZ / CHARGES | Bank charges | Deductible (WP2) |
-| INTERESSI | Interest | Interest income (WP4) or bank charge |
-| SELF-SERVICE / ATM | Cash withdrawal | Ask what cash was spent on |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm"
-3. Apply conservative defaults (Section 1)
-4. Generate the working paper (Section 7) with clear flags
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- MALTA INCOME TAX
-1. Marital status: single, married, or parent (maintaining a child)?
-2. Employment status: fully self-employed (full return) or employed/pensioner/student
-   with side income (TA22 option)?
-3. VAT registration: Article 10 or Article 11?
-4. Home office: dedicated room or shared space? If dedicated, what % of floor area?
-5. Vehicle: do you use a car for business? If yes, what % is business use? Do you keep a mileage log?
-6. Phone/internet: what % is business use?
-7. SSC Class 2: total amount paid in the tax year? (memo only -- not deductible)
-8. Provisional tax: total amount paid in the tax year?
-9. Any other income (employment, rental, dividends, interest)? If rental: 15% TA24 option or progressive?
-10. Any capital assets purchased during the year?
-```
-
-## Section 10 -- Reference Material
-
-### Key Legislation References
-
-**Key Legislation References**  _([ITA Cap. 123; ITMA Cap. 372](https://legislation.mt/eli/cap/372/eng))_
-
-| Topic | Reference |
-| --- | --- |
-| Income tax rates | ITA Cap. 123, Art. 56(1); annual rate amendments via Budget Measures Implementation Acts; MTCA published rate tables |
-| Allowable deductions | ITA Art. 14 (positive test) |
-| Disallowed deductions | ITA Art. 26 (negative test: domestic/private, capital, recoverable, voluntary) |
-| Capital allowances | ITA Art. 14(1)(f) and (j); S.L. 123.01 (Wear and Tear Rules); S.L. 123.173 (Industrial Buildings -- offices definition); ITA Art. 24 (balancing statements) |
-| Part-time regime (TA22) | ITA Art. 90A + Part-Time Work Rules; MTCA guidance (10% / EUR 12,000, basis 2025) |
-| Rental 15% final tax (TA24) | ITA Art. 31D |
-| Provisional tax | Provisional Tax (P.T.) Rules, S.L. 372.18 |
-| Filing deadlines | ITMA Cap. 372; MTCA Tax Return Cycle and annual extension notices |
-| Penalties / interest | ITMA Art. 44(1)(a) and (2A); Schedule to ITA Art. 56(12)(c) (Tables A/B, items 5-9) |
-| Record keeping | ITA / ITMA (6-year retention) |
-
-### Capital Allowances vs VAT Capital Goods -- Important Distinction
-
-**Capital Allowances vs VAT Capital Goods**
-
-| System | Threshold | Purpose |
-| --- | --- | --- |
-| VAT Capital Goods Scheme | EUR 1,160 gross | VAT capital-goods reporting only |
-| Income Tax Capital Allowances | No threshold | ALL business assets depreciated via WP15 |
-
-A EUR 500 printer: depreciated for income tax (25% x EUR 500 = EUR 125/year in WP15, electronic equipment, 4-year minimum) but does NOT enter the VAT capital goods reporting (below EUR 1,160). These are entirely separate systems.
-
-### Test Suite
-
-Expected tax figures are engine-derived reference outputs computed from the Section 1 tables (formula: chargeable x rate - subtract). Regenerate from the deterministic engine whenever the rate tables change; never hand-edit them.
-
-**Test 1 -- Standard single, mid-range income.**
-Input: Single, gross revenue EUR 45,000, allowable expenses EUR 13,000, capital allowances EUR 375, SSC paid EUR 3,000, provisional tax EUR 3,500.
-Derivation:
-- WP3 = 45,000 - 13,000 = 32,000
-- WP15 = 375; SSC 3,000 = memo only (NOT deductible)
-- WP30 = 32,000 - 375 = **31,625**
-- WP35 (single, 2025): 31,625 falls in 16,001-60,000 band: 31,625 x 0.25 - 3,400 = 7,906.25 - 3,400 = **4,506.25**
-  (bracket check: 12,000 @ 0% = 0; 4,000 @ 15% = 600; 15,625 @ 25% = 3,906.25; total 4,506.25)
-- WP40 = 4,506.25 - 3,500 = **1,006.25 due**
-
-**Test 2 -- Married, higher income.**
-Input: Married, gross EUR 80,000, expenses EUR 20,000, SSC paid EUR 4,362, no provisional tax (first year).
-Derivation:
-- WP3 = 80,000 - 20,000 = 60,000; SSC 4,362 = memo only
-- WP30 = **60,000**
-- WP35 (married, 2025): 60,000 x 0.25 - 4,550 = 15,000 - 4,550 = **10,450**
-  (bracket check: 15,000 @ 0% = 0; 8,000 @ 15% = 1,200; 37,000 @ 25% = 9,250; total 10,450)
-- WP40 = **10,450 due**
-
-**Test 3 -- TA22 eligible.**
-Input: Full-time employed, side net profit EUR 8,000, registered with Jobsplus.
-Expected: TA22 at 10% = 8,000 x 0.10 = **EUR 800**, paid by 30 April. SSC Class 2 position NOT asserted -- flag to reviewer (Cap. 318 question).
-
-**Test 4 -- Entertainment blocked.**
-Input: EUR 2,000 client entertainment in WP2.
-Expected: Remove from WP2 (conservative default). Reviewer flag raised; no partial deduction applied.
-
-**Test 5 -- Capital item in wrong line.**
-Input: Laptop EUR 1,500 in WP2.
-Expected: Remove from WP2. Add 1,500 x 25% = **EUR 375** to WP15 (computers, 4-year minimum).
-
-**Test 6 -- Article 11 VAT as expense.**
-Input: Article 11 client. Invoice EUR 236 gross (EUR 200 + EUR 36 VAT at 18%).
-Expected: WP2 = **EUR 236** (full gross). Cannot reclaim VAT.
-
-**Test 7 -- SSC misclassified as deduction (regression for the 2025-10 correction).**
-Input: SSC Class 2 EUR 3,000 placed in a deduction line.
-Expected: Remove from all deduction lines; memo only. Chargeable income unchanged by SSC.
-
-## PROHIBITIONS
-
-- NEVER apply a rate table without knowing marital status
-- NEVER compute WP35 tax figures directly -- pass chargeable income to the deterministic engine
-- NEVER deduct SSC Class 2 (or any social security contribution) anywhere in the computation
-- NEVER allow entertainment expenses in WP2 without an explicit reviewer override
-- NEVER allow income tax itself as a deduction
-- NEVER allow fines or penalties as a deduction
-- NEVER include VAT collected on sales in WP1 for Article 10 clients
-- NEVER allow a capital item in WP2 -- it must go through WP15 (no de minimis)
-- NEVER call TA24 the self-employed return -- TA24 is the Art. 31D rental 15% form
-- NEVER use current year income for provisional tax -- always the latest self-assessment benchmark
-- NEVER present tax calculations as definitive -- always label as estimated
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+| Individual return and self-assessment | 30 June of the year of assessment (30 June 2027 for 2026 income) | S.L. 372.16 rule 2(c)(ii) |
+| Balance of tax (tax settlement date) | Same date as the return | S.L. 372.16 rule 5(b) |
+| 2025 income (year of assessment 2026) | Was due 30 June 2026. MTCA usually announces a later date for online filing; check the notice on mtca.gov.mt | S.L. 372.16 |
+| Article 12 election (no return) | 30 April of the year of assessment | S.L. 372.16 rule 4(b) |
+| Part-time self-employed tax | 30 April after the basis year | ITMA art. 42(4)(a) |
+| 15% rental tax | 30 April after the basis year | ITMA art. 42(4)(c) |
+| Provisional tax | 30 April, 31 August and 21 December of the basis year | S.L. 372.18 rule 4 |
+| Interest on late tax | 0.6% for each month or part month, where the tax was payable on or after 31 August 2022; capped at the tax | ITMA art. 44(2A) |
+| Late return, individuals (Table A) | €10 within 6 months; €50 within 12; €100 within 18; €150 within 24; €200 within 36; €300 within 48; €400 within 60; €500 after 60 months | ITA Schedule, item 2 |
+| Omission from a return | 1.5% a month of endangered tax, for at most 60 months. Fully remitted if corrected within 12 months of the return date and before an enquiry notice. Otherwise 0.1% a month if corrected before an enquiry notice, or 0.75% a month after the notice but before assessment. No interest runs on this additional tax | ITA Schedule, items 5-9 |
+
+Late-return additional tax can be remitted for a reasonable excuse. Insufficient funds and reliance on another person do not count (Schedule, item 4). Omission additional tax can be remitted in two cases: written advice from a tax professional was submitted with the return, or there was no fraud or gross neglect (item 8).
+
+## Completion checklist ([Income Tax Act, Cap. 123](https://legislation.mt/getpdf/69d8a9187da37f0580d5140c))
+
+- The basis year and year of assessment are stated, with the rate table for that year (Act IX of 2025 or Act III of 2026).
+- Residence, domicile and ordinary residence are recorded. For a non-dom, the remittance basis and the €35,000 / €5,000 minimum tax test are applied.
+- Every condition of the chosen table is checked, including nationality or Malta-born children for the child tables.
+- Final-tax income (part-time work, 15% rent, property transfers) is kept out of the progressive computation, or the opt-out is recorded.
+- Expenses meet article 14(1) and are not barred by article 26. Capital items go through S.L. 123.01 allowances, not expenses. Class 2 is a memo only.
+- FSS tax, provisional tax and final-tax credits are reconciled to the statements of earnings and payment records.
+- Next year's provisional tax is set from the benchmark, with a reduction form filed if the liability will fall.
+- Dates are checked: 30 April items, the 30 June return, and the 31 August and 21 December instalments. Any MTCA extension is confirmed on mtca.gov.mt.
+- Interest and additional tax are computed for anything late.
+- The output is labelled as an estimate until reviewed.
 
 <!-- openaccountants-cta-block -->
 

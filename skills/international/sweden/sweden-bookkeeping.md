@@ -4,9 +4,10 @@ description: Use this skill whenever asked about Swedish bookkeeping, chart of a
 version: 1.0
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping

@@ -2,397 +2,204 @@
 name: us-sales-tax-nexus-50-state-matrix
 description: Tier 2 US federal-level reference skill providing the post-Wayfair economic-nexus threshold table for every US state plus DC and Puerto Rico. Covers sales/transaction thresholds, effective dates, lookback periods, marketplace facilitator laws, the SaaS-taxability list (HI/MA/NY/OH/PA/RI/SC/TN/TX/UT/WA/WV), the no-sales-tax NOMAD states (NH/OR/MT/AK/DE), Amazon FBA physical-presence nexus through inventory in 3PL warehouses, the difference between sales-tax and income-tax nexus, voluntary disclosure agreement (VDA) lookback limits, and home-rule states (CO/AL/LA/AK) requiring separate local registrations. Tax year 2025.
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: James Wallach
-review_status: current
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
+review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# US Sales Tax Nexus 50 State Matrix
+# US sales tax economic nexus: state-by-state thresholds for 2026
 
-## 1. Scope
+Figures are for tax year 2026: the thresholds below are the ones the states' own pages showed on 25 September 2026. Each row names its source. Where a state's page could not be read for this review, the row says **check** and gives no rule of its own.
 
-This reference skill is the single lookup table for **economic sales tax nexus** thresholds in every US jurisdiction with a sales-and-use tax (SUT), gross receipts tax (GRT), or transaction privilege tax (TPT) regime: all 45 states with statewide sales tax, the District of Columbia, Puerto Rico, plus notes on the 5 "NOMAD" states (NH, OR, MT, AK, DE) and the home-rule local-only nexus that exists in Alaska despite the absence of a state-level tax.
+## Scope
 
-**This skill covers:**
-- Wayfair-era economic nexus thresholds (dollar + transaction count, AND/OR logic, lookback windows)
-- Marketplace facilitator laws (Amazon, eBay, Etsy, Walmart Marketplace, Shopify, Patreon, OnlyFans)
-- Physical-presence nexus traps — especially **Amazon FBA inventory** in third-party 3PL warehouses (the single most common audit-flash point for small e-commerce sellers)
-- SaaS / digital-product taxability list at the state level (HI, MA, NY, OH, PA, RI, SC, TN, TX, UT, WA, WV — the "SaaS-taxable twelve")
-- Home-rule states (CO, AL, LA, AK) requiring separate local registrations
-- Streamlined Sales Tax (SST) member-state program and Certified Service Provider (CSP) free-filing option
-- Voluntary Disclosure Agreement (VDA) lookback limits and audit exposure
-- P.L. 86-272 distinction (income tax nexus only — does NOT shield from sales tax nexus)
+This Guide answers one question for a seller with no physical presence in a state: has it crossed that state's economic nexus threshold, so that it must register, collect and file sales tax (or Hawaii general excise tax, or New Mexico gross receipts tax)?
 
-**This skill does NOT cover:**
-- State income tax nexus — see `us-pl-86-272-income-tax-nexus`
-- Income tax for businesses generally — see `us-form-1120-c-corp`, `us-form-1065-partnership`, `us-sole-prop-bookkeeping`
-- Arizona TPT mechanics — see `az-tpt`
-- Colorado SUTS portal — see `co-suts`
-- Washington B&O — see `wa-bo-tax`
-- California sales tax line-level preparation — see `california-sales-use-tax`
-- Texas sales tax line-level preparation — see `tx-sales-tax`
-- US federal income tax — see other Tier 2 skills in this package
-- Use tax on consumer purchases (these are 50 separate compliance projects for individual taxpayers)
+It covers the 45 states with a statewide sales tax and the District of Columbia (threshold, transaction test, "more than" or "at least", period, which sales count, marketplace facilitator start date), the five states with no general sales tax, and how physical presence overrides the thresholds.
 
-## 2. Background — South Dakota v. Wayfair, Inc. (2018)
+It does not cover taxability, rates or sourcing; income or franchise tax nexus (except the P.L. 86-272 point below); Puerto Rico and the territories; local home-rule registrations; or voluntary disclosure and back-tax exposure (see "When to refuse or refer").
 
-### 2.1. Pre-Wayfair: Quill physical-presence rule
+The Washington and Pennsylvania rows match the separate Washington and Pennsylvania sales tax Guides.
 
-- **Quill physical-presence rule** — For decades, *Quill Corp. v. North Dakota*, 504 U.S. 298 (1992) held that the Commerce Clause's "dormant" component prohibited states from compelling a remote seller to collect sales tax unless the seller had **physical presence** in the state (employees, offices, inventory, agents, real estate). Mail-order and early e-commerce sellers exploited this to sell into 49 states while only collecting in their home state, costing states an estimated $20–30 billion/year in uncollected revenue by 2017.  _(Quill Corp. v. North Dakota, 504 U.S. 298 (1992))_
+## Ask the client first
 
-### 2.2. Wayfair holding (June 21, 2018)
+- Which states did you ship goods to, or deliver services or digital products into, in 2025 and so far in 2026?
+- For each state: total sales in dollars and number of separate transactions, split by calendar year **and** by month (several states use a rolling 12 months or four quarters, not calendar years).
+- How much of that went through a marketplace (Amazon, eBay, Etsy, Walmart and similar) and how much was direct (own website, wholesale, phone)?
+- Of the direct sales, how much was exempt, for resale, or wholesale?
+- Do you, or any company related to you, have anything in any state: employees, contractors, an office, a warehouse, or inventory in a marketplace's fulfilment centre?
+- Are you already registered anywhere? Since when?
+- Do related companies also sell into these states? (Arizona and California add their sales.)
 
-- **Wayfair holding** — In South Dakota v. Wayfair, Inc., the Supreme Court (5-4, Kennedy writing for the majority) overruled Quill and held that physical presence is no longer required for Commerce Clause nexus. The Court approved South Dakota's economic-nexus statute (SB 106, 2016), which imposed collection obligations on remote sellers with either $100,000+ in gross sales into South Dakota in the current or prior calendar year, OR 200+ separate transactions into South Dakota in the current or prior calendar year. The Court emphasized four features as constitutionally adequate safe harbors: 1) A safe-harbor threshold below which small sellers are exempt; 2) No retroactive application of the obligation; 3) Streamlined Sales Tax (SST) membership reducing compliance burden; 4) Free or low-cost filing software (Certified Service Providers — CSPs).  _(South Dakota v. Wayfair, Inc., 138 S. Ct. 2080 (2018))_
+## The method, step by step
 
-### 2.3. Aftermath — the 18-month stampede
+1. **Check physical presence first.** Any physical presence in a state means you register there whatever your sales. Inventory counts: Connecticut says an out-of-state retailer with goods "on the premises of a marketplace facilitator" must register "even if it is under the thresholds" ([Connecticut DRS](https://portal.ct.gov/drs/businesses/new-business-resource-center/registering-with-drs)). If you skip this step, the threshold analysis gives false comfort.
+2. **Build the sales data the way each state measures it.** Use the table below to see which sales count (gross or retail or taxable; marketplace sales in or out) and over which period (previous year, current year, rolling 12 months, four quarters, 12 months to 30 September). Do not reuse one national total.
+3. **Apply each state's test literally.** Note whether it is "more than" or "at least", and whether a transaction count still exists and whether it is an OR test or an AND test (Connecticut and New York need both).
+4. **Find the start date.** Crossing the threshold does not always mean collecting from the next sale. Most states give a lead time (first day of a month at least 30 days later; 90 days in Colorado; the fourth month in Texas; 1 April of the next year in Pennsylvania). Use the start rule in the "Filing and payment" section.
+5. **Handle marketplace sales.** A facilitator collects on the sales it facilitates. Some states still require the seller to register if its total, including marketplace sales, crosses the threshold (for example South Dakota, Washington, Nebraska, Maryland). Others let the seller leave facilitated sales out (for example Georgia, Arizona, Oklahoma, and Pennsylvania where the facilitator collects).
+6. **Mark every "check" state for follow-up.** Confirm those on the state's site before advising; do not fill the gap from memory or a vendor chart.
+7. **Re-test on the state's own cycle.** Monthly for Vermont, quarterly for Illinois, Missouri and New York, and yearly for calendar-year states. A seller under the threshold in January can be over it in June.
 
-Within 18 months of Wayfair, every state with a sales tax enacted some form of economic nexus statute. The "Wayfair standard" of $100,000 / 200 transactions became the de facto template, though many states have since dropped the transaction count, raised the dollar threshold, or modified the AND/OR logic.
+## Background
 
-- **First wave (July 2018 – Dec 2018):** ~25 states activated economic nexus the week after Wayfair (some via existing statutes triggered by the ruling). KY, IA, IN, MI, ND, MS, MN, ME, OK, SD, VT, WA, WI.
-- **Second wave (Jan 2019 – Dec 2019):** Remaining ~20 states phased in.
-- **Stragglers:** FL (effective July 1, 2021) and MO (effective Jan 1, 2023) were the last two to adopt economic nexus. MO closed the final gap.
+- **Wayfair.** In *South Dakota v. Wayfair* (2018) the Supreme Court overruled the physical-presence rule of *Quill*. It upheld a law covering sellers that "deliver more than $100,000 of goods or services into the State or engage in 200 or more separate transactions" ([Wayfair opinion](https://www.law.cornell.edu/supremecourt/text/17-494)). Every state with a sales tax now has an economic nexus rule, but most have since changed the details. Many have dropped the 200-transaction test.
+- **P.L. 86-272 does not protect you from sales tax.** It limits state **income** taxes where your only in-state activity is "the solicitation of orders" for tangible personal property filled from outside the state ([15 U.S.C. 381](https://www.law.cornell.edu/uscode/text/15/381)). It says nothing about sales tax collection.
 
-### 2.4. Three nexus types coexist
+## State threshold table for 2026
 
-- **Three nexus types** — Wayfair did NOT replace physical-presence nexus — it added economic nexus as an additional trigger. The full taxonomy is: 1. Physical-presence nexus (still alive) — inventory, employees, offices, real property, sales reps, contractors providing services, attending trade shows (some states), affiliates (clickthrough nexus in some states). 2. Economic nexus (post-Wayfair) — sales-volume or transaction-count thresholds. 3. Marketplace facilitator nexus (post-2018) — Amazon, eBay, Etsy, Walmart Marketplace, etc. collect and remit on behalf of third-party sellers in nearly every state.
+Read "Sales test" literally: "more than" means exactly the threshold does **not** trigger; "at least" or "or more" means it does. "Prev or current" means the test is met if either the previous calendar year or the current calendar year crosses it. "MPF" is the marketplace facilitator collection start date; "check" means the source reviewed did not give it.
 
-## 3. The NOMAD states — no statewide sales tax
+| State | Sales test | Transaction test | Period | Which sales count | MPF start | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| Alabama | Over $250,000 | None | Previous calendar year | Retail sales made directly by the seller, taxable and nontaxable; leave out wholesale sales backed by an Alabama resale licence and sales through a marketplace collecting under the Simplified Sellers Use Tax (SSUT) programme | 1 Jan 2019 | [ALDOR FAQ](https://www.revenue.alabama.gov/faqs/are-all-remote-sellers-required-to-register-in-alabama/), [SSUT](https://www.revenue.alabama.gov/sales-use/simplified-sellers-use-tax-ssut/) |
+| Arizona (TPT) | More than $100,000 (2021 onward) | None | Prev or current | Gross proceeds from direct business with Arizona customers **not** facilitated by a marketplace facilitator; affiliated persons' sales added | check | [A.R.S. 42-5044](https://www.azleg.gov/ars/42/05044.htm) |
+| Arkansas | Exceeded $100,000 | Or "exceeded ... two hundred (200) taxable transactions"; exactly 200: check | Prev or current | Tangible goods, taxable services, digital codes and specified digital products delivered into Arkansas | 1 Jul 2019 | [DFA remote sellers](https://www.dfa.arkansas.gov/office/taxes/excise-tax-administration/sales-use-tax/remote-sellers/) |
+| California | Exceeds $500,000 | None | Preceding or current calendar year | All sales of tangible goods for delivery in California by the retailer **and all related persons**, including nontaxable sales such as sales for resale, and including sales facilitated through a marketplace | 1 Oct 2019 | [CDTFA Wayfair guide](https://www.cdtfa.ca.gov/industry/wayfair.htm), [Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm), [Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm) |
+| Colorado | Exceeds $100,000 | None | Prev or current | Retail sales of goods, commodities and services into Colorado | check | [CDOR out-of-state businesses](https://tax.colorado.gov/out-of-state-businesses) |
+| Connecticut | At least $100,000 **and** | 200 or more retail sales (both needed) | 12 months ending 30 September before the filing period | Gross receipts from sales into Connecticut | 1 Dec 2018 | [DRS registering](https://portal.ct.gov/drs/businesses/new-business-resource-center/registering-with-drs), [OCG-8](https://portal.ct.gov/-/media/DRS/Publications/OCG/OCG-8.pdf?la=en) |
+| District of Columbia | More than $100,000 | Or more than 200 separate retail sales | Prev or current | Gross receipts from retail sales delivered into DC | 1 Apr 2019 | [OTR FAQ](https://otr.cfo.dc.gov/page/sales-and-use-tax-faqs) |
+| Florida | Taxable remote sales exceeding $100,000 | None | Previous calendar year | **Taxable** remote sales only | 1 Jul 2021 | [FDOR sales tax](https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx), [FDOR notice 21A01-03](https://floridarevenue.com/taxes/tips/Documents/TIP_21A01-03.pdf) |
+| Georgia | Exceeding $100,000 | Or 200 or more separate retail sales | Prev or current | Retail sales of tangible goods delivered into Georgia; a remote seller may leave out facilitated sales | 1 Apr 2020 | [SUT-2019-02](https://dor.georgia.gov/media/35301/download), [SUT-2020-01](https://dor.georgia.gov/media/35306/download) |
+| Hawaii (GET) | $100,000 or more | Or 200 or more separate transactions | Current or immediately preceding calendar year | Gross income from goods delivered, services used and intangibles used in Hawaii | 1 Jan 2020 | [Haw. Rev. Stat. 237-2.5](https://files.hawaii.gov/tax/legal/hrs/hrs_237.pdf), [Hawaii release 2019-03](https://files.hawaii.gov/tax/legal/tir/tir19-03_rev2.pdf) |
+| Idaho | check | check | check | check | check | Tax Commission site could not be read for this review |
+| Illinois | $100,000 or more | None from 1 Jan 2026 (200 or more before) | 12-month lookback, re-tested each quarter | Cumulative gross receipts from sales of tangible goods to Illinois purchasers | check | [IDOR FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html) |
+| Indiana | More than $100,000 | None from 1 Jan 2024 | Current or preceding calendar year | Gross revenue from goods, electronically transferred products and services, taxable or not | 1 Jul 2019 | [DOR FAQ](https://www.in.gov/dor/i-am-a/business-corp/business-faq/remote-seller-faqs/), [facilitators](https://secure.in.gov/dor/business-tax/remote-seller-information/marketplace-facilitators) |
+| Iowa | $100,000 or more (the same page also says a seller "exceeds the sales threshold": check exactly $100,000) | None | Prior calendar year, or current year once crossed | All Iowa sales revenue, including exempt, wholesale, resale and facilitator-collected sales | check | [IDR remote sellers](https://revenue.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/remote-sellers-marketplace-facilitators) |
+| Kansas | In excess of $100,000 | None | Current or immediately preceding calendar year | Cumulative gross receipts from sales to Kansas customers | check | [K.S.A. 79-3702](https://www.kslegislature.gov/li/b2025_26/statute/079_000_0000_chapter/079_037_0000_article/079_037_0002_section/079_037_0002_k/) |
+| Kentucky | $100,000 or more | Or 200 or more sales | Prev or current | Gross receipts from sales into Kentucky | check | [DOR notice](https://revenue.ky.gov/News/Pages/Kentucky-Sales-and-Use-Tax-Collections-by-Remote-Retailers-U.S.-Supreme-Court-Ruling.aspx) |
+| Louisiana | check | check | check | check | check | Remote Sellers Commission site could not be read for this review |
+| Maine | Exceed $100,000 | None in Instructional Bulletin 43 (revised 2 Feb 2022) | Prev or current | Total gross sales of tangible goods or taxable services in Maine | check | [IB 43](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/IB43RegistrationofSellers02_2022.pdf) |
+| Maryland | Exceeds $100,000 | Or 200 or more separate transactions | Prev or current | Goods or taxable services delivered in Maryland; direct and facilitated sales both counted | 1 Oct 2019 | [Tax Alert 09-19](https://marylandtaxes.gov/forms/Tax_Publications/Tax_Alerts/SUT_Tax_Alert_Sept2019.pdf) |
+| Massachusetts | check | check | check | check | check | Mass.gov could not be read for this review |
+| Michigan | check | check | check | check | check | Michigan.gov could not be read for this review |
+| Minnesota | More than $100,000 | Or 200 or more retail sales | Prior 12-month period | Retail sales made or facilitated from outside Minnesota to Minnesota destinations | check | [Minn. Stat. 297A.66](https://www.revisor.mn.gov/statutes/cite/297a.66) |
+| Mississippi | Exceed $250,000 | None | Any twelve-month period | Sales into Mississippi | Act of 2020 (HB 379); exact date check | [DOR FAQ](https://www.dor.ms.gov/business/business-tax-frequently-asked-questions), [MPF notice](https://www.dor.ms.gov/news/notice-marketplace-facilitators) |
+| Missouri | Exceed $100,000 (DOR FAQ wording) | None | Preceding 12 months, tested at each quarter end | Sales of tangible goods shipped into Missouri, including marketplace sales | check | [DOR FAQ](https://dor.mo.gov/faq/taxation/business/remote-seller-and-marketplace-facilitator.html) |
+| Nebraska | More than $100,000 | Or 200 or more transactions | Prior or current calendar year | Retail sales (all except resale), including through a marketplace | 1 Apr 2019 | [DOR FAQ](https://revenue.nebraska.gov/about/frequently-asked-questions/remote-seller-and-marketplace-facilitator-faqs) |
+| Nevada | Exceed $100,000 | Or 200 transactions; the page says both "more than 200" and "reach 200": check | Prev or current | All Nevada sales, direct and through marketplaces | 1 Oct 2019 | [Tax FAQ](https://tax.nv.gov/faqs/marketplace-facilitator-seller-faqs/) |
+| New Jersey | Exceeds $100,000 | Or 200 or more separate transactions | Current or prior calendar year | Goods, digital products and taxable services delivered into NJ, including nontaxable retail sales | 1 Nov 2018 | [Taxation FAQ](https://www.nj.gov/treasury/taxation/remotesellersfaq.shtml) |
+| New Mexico (GRT) | At least $100,000 | None | Previous calendar year | **Taxable** gross receipts sourced to New Mexico | 1 Jul 2019 | [TRD nexus](https://www.tax.newmexico.gov/businesses/determining-nexus/) |
+| New York | Exceeded $500,000 **and** | More than 100 sales (both needed) | Immediately preceding four sales tax quarters | Gross receipts from tangible goods delivered into NY | 1 Jun 2019 | [TB-ST-175](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm), [TSB-M-19(2.1)S](https://www.tax.ny.gov/pdf/memos/sales/m19-2-1s.pdf) |
+| North Carolina | In excess of $100,000 | None from 1 Jul 2024 | Prev or current | Gross remote sales sourced to NC, including sales as a marketplace seller | check | [Directive 24-1](https://www.ncdor.gov/taxes-forms/sales-and-use-tax/other-sales-and-use-tax-resources/sales-and-use-tax-division-directives/sales-and-use-tax-directive-24-1) |
+| North Dakota | Exceed $100,000 | None | Current or previous calendar year | **Taxable** sales into ND | check | [Tax Commissioner](https://www.nd.gov/tax/remoteseller) |
+| Ohio | Over $100,000 | Or 200 or more separate sales | Current or previous calendar year | Total sales to Ohio customers | 1 Sep 2019 | [Ohio FAQ](https://tax.ohio.gov/help-center/faqs/sales-and-use-tax-substantial-nexus-and-marketplace-facilitator) |
+| Oklahoma | Small-seller exception rose to $100,000 on 1 Nov 2019; current wording check | None | Previous 12 months in the June 2020 FAQ; check | **Taxable** sales; sales through a facilitator that collects are left out | check | [OTC FAQ](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/streamlines-sales-tax/WayfairFAQs-06152020.pdf) |
+| Pennsylvania | More than $100,000 (one DOR web sentence says "at least": check exactly $100,000) | None | Previous calendar year; collect from 1 April following | All channels, taxable and nontaxable; a marketplace seller leaves out sales on which the facilitator collects | 1 Jul 2019 | [DOR online retailers](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers), [Bulletin 2019-01](https://www.pa.gov/content/dam/copapwp-pagov/en/revenue/documents/taxlawpoliciesbulletinsnotices/taxbulletins/sut/documents/st_bulletin_2019-01.pdf) |
+| Rhode Island | check | check | check | check | check | Division of Taxation site could not be read for this review |
+| South Carolina | Exceeds $100,000 | None | Prev or current | Gross revenue from goods, electronic products and services, including exempt and wholesale sales and the seller's own goods sold on a marketplace | check | [SCDOR remote sellers](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers), [Policy Manual ch. 13](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2013%20-%20Nexus.pdf) |
+| South Dakota | More than $100,000 | None from 1 Jul 2023 | Prev or current | Gross sales into SD, including marketplace sales | 1 Mar 2019 | [2023 updates](https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates/), [MP bulletin](https://dor.sd.gov/media/e0ajtwlg/marketplace-provider-bulletin.pdf) |
+| Tennessee | $100,000 or more (out-of-state dealers) | None | Previous 12-month period stated for facilitators; check for dealers | All retail sales including exempt sales; not sales for resale | 1 Oct 2020 at the $100,000 level | [TDOR](https://www.tn.gov/revenue/taxes/sales-and-use-tax/out-of-state-dealers-marketplace-facilitators.html) |
+| Texas | Safe harbor below $500,000; "greater than" in another publication: check exactly $500,000 | None | Preceding 12 calendar months | All taxable and nontaxable sales into Texas, including resale, exempt and (from 1 Apr 2020) marketplace sales | check | [Remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php), [FAQ](https://comptroller.texas.gov/taxes/sales/remote-sellers-marketplace-faq.php), [94-108](https://comptroller.texas.gov/taxes/publications/94-108.php) |
+| Utah | check | check | check | check | check | Tax Commission site could not be read for this review |
+| Vermont | At least $100,000 | Or at least 200 transactions | 12 months before the monthly period; review at each quarter end | Sales into Vermont, taxable and nontaxable | 1 Jun 2019 | [Wayfair FAQ](https://tax.vermont.gov/business-and-corp/sales-and-use-tax/wayfair/faqs), [marketplace](https://tax.vermont.gov/business-and-corp/sales-and-use-tax/marketplace) |
+| Virginia | More than $100,000 | Or 200 or more separate retail transactions | Prev or current | Gross retail sales; a seller also using a marketplace counts only its direct sales | check | [Virginia Tax](https://www.tax.virginia.gov/remote-sellers-marketplace-facilitators-economic-nexus) |
+| Washington | More than $100,000, **or** organized or commercially domiciled in Washington (either test) | None | Current or prior calendar year | Combined gross receipts sourced or attributed to WA: retail, wholesale, services, exempt and marketplace sales | check | [DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers) |
+| West Virginia | More than $100,000 | Or 200 or more separate transactions | Preceding calendar year, or the current year from the day crossed | Taxable and nontaxable sales delivered into WV | 1 Jul 2019 | [Tax Division](https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx), [TSD-442](https://tax.wv.gov/Documents/TSD/tsd442.pdf) |
+| Wisconsin | Exceed $100,000 | None from 20 Feb 2021 | Prev or current | Gross sales into Wisconsin | check | [DOR remote sellers](https://www.revenue.wi.gov/Pages/TaxPro/2018/Registration-and-Collection-Dates-for-Remote-Sellers.aspx) |
+| Wyoming | Exceeds $100,000 | None; repealed by Laws 2024, ch. 67 | Current or immediately preceding calendar year | Gross revenue from goods, admissions or services delivered into WY | check | [Wyo. Stat. 39-15-501](https://wyoleg.gov/statutes/compress/title39.pdf) |
 
-**NOMAD states table**
+### Notes on individual rows
 
-| State | Status | Notes |
+- **California.** The test adds the sales of "all persons related to the retailer", defined by reference to 26 U.S.C. 267(b) ([CDTFA](https://www.cdtfa.ca.gov/industry/wayfair.htm)). The $500,000 is based on total sales of tangible personal property, "which may include nontaxable sales, such as sales for resale" ([CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm)). A seller must also include sales "facilitated through" a marketplace. It need not register if all of its California sales are facilitated by a registered marketplace facilitator, but must register once it makes any direct sale while over the threshold ([CDTFA Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm)). The test is "exceed", so exactly $500,000 does not trigger it.
+- **Colorado.** A retailer is exempt only if its sales are "less than $100,000" in **both** the current and previous years, and must collect once current-year sales "exceed $100,000" ([CDOR](https://tax.colorado.gov/out-of-state-businesses)). Sales of exactly $100,000 fall between the two sentences: check. Colorado home-rule cities run their own sales taxes; this Guide does not cover them.
+- **Georgia.** The remote seller bulletin is from 2019 and the marketplace bulletin from 2020 ([SUT-2019-02](https://dor.georgia.gov/media/35301/download)). They are still listed on the Department's bulletin page, but check for later law changes before relying on the 200-sale test.
+- **Maine.** Instructional Bulletin 43 states the test as sales that "exceed $100,000" with no transaction count. The older Maine remote-sellers web page still quotes a 200-transaction test ([MRS page](https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax/guidance-documents/remote-sellers)). Follow the bulletin, which is the later text, and confirm with Maine Revenue Services if a seller is relying on it.
+- **Missouri.** The DOR FAQ uses "exceed $100,000" and, in different answers, both "taxable sales" and "all sales of tangible personal property" ([DOR FAQ](https://dor.mo.gov/faq/taxation/business/remote-seller-and-marketplace-facilitator.html)). Check the statute before advising a seller close to $100,000.
+- **Tennessee.** The Department's page says "$100,000 or more" for out-of-state dealers but "more than $100,000" for facilitators ([TDOR](https://www.tn.gov/revenue/taxes/sales-and-use-tax/out-of-state-dealers-marketplace-facilitators.html)). Treat exactly $100,000 as triggering for a dealer.
+- **Texas.** The safe harbor applies when Texas revenue is "less than $500,000" in the previous 12 calendar months ([Comptroller FAQ](https://comptroller.texas.gov/taxes/sales/remote-sellers-marketplace-faq.php)); publication 94-108 says "greater than $500,000" ([94-108](https://comptroller.texas.gov/taxes/publications/94-108.php)). Exactly $500,000 is unclear: check.
+- **Check rows (Idaho, Louisiana, Massachusetts, Michigan, Rhode Island, Utah).** These revenue sites refused or timed out when read for this review, so no rule is stated here. Read the state's own remote-seller page before advising, and do not rely on older third-party charts for them.
+
+## States with no general statewide sales tax
+
+| State | Position | Source |
 | --- | --- | --- |
-| **N**ew Hampshire | No SUT | Has 8.5% meals & rooms tax; no broader SUT. No economic nexus issues. |
-| **O**regon | No SUT | Has Corporate Activity Tax (CAT) — gross-receipts-based, not retail sales — at $1M threshold. No retail SUT obligation. |
-| **M**ontana | No SUT | Has limited local resort taxes in tourist towns (e.g. Whitefish, West Yellowstone) but no statewide SUT. |
-| **A**laska | No state SUT | **BUT** numerous localities impose sales tax and have organized the **Alaska Remote Seller Sales Tax Commission (ARSSTC)** with statewide economic nexus thresholds — see §4 below. **Audit flash point.** |
-| **D**elaware | No SUT | Has Gross Receipts Tax on businesses (not consumer-facing); no retail SUT. |
+| Alaska | No statewide sales tax, but local sales taxes exist. Confirm with the Alaska Remote Seller Sales Tax Commission (ARSSTC) which local jurisdictions it administers, its current remote-seller threshold and how to register; confirm separately with any municipality that is not a member. No state source was read for this row | check |
+| Delaware | Confirm with the Delaware Division of Revenue that no sales tax applies. Its gross receipts tax is levied on the business and should be assessed separately | [Delaware gross receipts tax](https://revenue.delaware.gov/business-tax-forms/gross-receipts-tax/) |
+| Montana | Confirm with the Montana Department of Revenue that no general sales tax applies, and check any local resort taxes. No state source was read for this row | check |
+| New Hampshire | Confirm with the New Hampshire Department of Revenue Administration that no general sales tax applies, and check its meals and rentals tax if the client sells meals, rooms or car rentals. No state source was read for this row | check |
+| Oregon | No sales tax. The Corporate Activity Tax "is not a transactional tax, such as a retail sales tax" and has its own filing thresholds | [Oregon CAT](https://www.oregon.gov/dor/programs/businesses/pages/corporate-activity-tax.aspx) |
 
-> **AUDIT FLASH POINT — Alaska is NOT a free zone.** Sellers routinely overlook that ~100 Alaska municipalities and boroughs (Juneau, Anchorage Borough excepted, Ketchikan Gateway Borough, Sitka, Wasilla, Kodiak, Bethel, Cordova, Nome, etc.) have local SUT. ARSSTC was formed in 2020 to administer economic-nexus collection across member jurisdictions. The collective threshold is **$100,000 of statewide gross sales** in the prior calendar year (the 200-transaction prong was repealed effective Jan 1, 2025). Remote sellers register **once** with ARSSTC and file a single consolidated return covering all member munis.
+## Boundary and exception table
 
-## 4. The 50-State + DC + PR Economic Nexus Matrix
-
-- **Matrix definitions** — - **Sales threshold** — gross sales of tangible personal property + taxable services into the state. Most states include exempt/wholesale sales in the threshold computation but a few (e.g. CA, NY) measure on retail sales only. See "Wholesale included?" column. - **Transaction threshold** — number of separate sales transactions into the state. - **AND / OR** — whether both thresholds must be crossed (AND) or either one triggers nexus (OR). - **Lookback** — measurement period. "PY" = prior calendar year; "CY" = current calendar year; "PY or CY" = the more common "either" formulation; "rolling 12" = trailing 12 months. - **MPF date** — Marketplace Facilitator law effective date. - **State rate** — statewide rate only; combined rate with local averages much higher in most states. - **Wholesale included?** — whether wholesale/exempt/resale sales count toward the threshold.
-
-### 4.1. Alphabetical matrix — economic nexus rules
-
-**Alphabetical matrix — economic nexus rules**
-
-| # | State | Effective | Sales $ Threshold | Trans # | AND/OR | Lookback | MPF date | State rate | Wholesale incl.? | Notable |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | **Alabama** | 1 Oct 2018 | $250,000 | — | — (sales only) | PY | 1 Jan 2019 | 4.00% | Retail only | Home-rule munis; SSUT program; 50+ self-administered locals |
-| 2 | **Alaska** (ARSSTC) | 1 Jan 2020 (varies by muni) | $100,000 | — (200 prong repealed 2025) | — (sales only) | PY | varies by muni | 0% state; 1–7.5% local | Yes | No state SUT; muni-level via ARSSTC |
-| 3 | **Arizona** (TPT) | 1 Oct 2019 | $100,000 | — | — (sales only) | PY or CY | 1 Oct 2019 | 5.60% (TPT) | Retail only | TPT is on seller, passed to buyer; see `az-tpt` |
-| 4 | **Arkansas** | 1 Jul 2019 | $100,000 | 200 | OR | PY or CY | 1 Jul 2019 | 6.50% | Yes | Standard SST template |
-| 5 | **California** | 1 Apr 2019 | $500,000 | — (200 prong eliminated Apr 2019) | — (sales only) | PY or CY | 1 Oct 2019 | 7.25% (highest base) | Retail only | District tax separately measured at $500k statewide |
-| 6 | **Colorado** | 1 Jun 2019 | $100,000 | — (200 prong dropped Apr 2020) | — (sales only) | PY or CY | 1 Oct 2019 | 2.90% (lowest state base) | Yes | 70+ home-rule cities via SUTS portal; see `co-suts` |
-| 7 | **Connecticut** | 1 Dec 2018 | $100,000 | 200 | AND | PY (12 mo. ending 9/30) | 1 Dec 2018 | 6.35% | Retail | **AND** logic is uncommon — both must be met |
-| 8 | **Delaware** | — | — | — | — | — | — | 0% (no SUT) | — | NOMAD; gross-receipts tax on businesses only |
-| 9 | **District of Columbia** | 1 Apr 2019 | $100,000 | 200 | OR | PY or CY | 1 Apr 2019 | 6.00% | Retail | Standard Wayfair template |
-| 10 | **Florida** | 1 Jul 2021 | $100,000 | — | — (sales only) | PY | 1 Jul 2021 | 6.00% | Retail only | Late adopter; no transaction count prong |
-| 11 | **Georgia** | 1 Jan 2019 (lowered Jan 2020) | $100,000 | 200 | OR | PY or CY | 1 Apr 2020 | 4.00% | Retail | Reduced from $250k to $100k in 2020 |
-| 12 | **Hawaii** (GET) | 1 Jul 2018 | $100,000 | 200 | OR | PY or CY | 1 Jan 2020 | 4.00% (GET) | Yes (gross receipts) | GET not SUT — taxes seller on gross income; passed through to buyer |
-| 13 | **Idaho** | 1 Jun 2019 | $100,000 | — | — (sales only) | PY or CY | 1 Jun 2019 | 6.00% | Yes | No transaction count |
-| 14 | **Illinois** | 1 Oct 2018 | $100,000 | 200 | OR | PY (rolling 12) | 1 Jan 2020 | 6.25% (ROT) | Retail | ROT vs UT distinction; destination-sourcing reforms 2025 |
-| 15 | **Indiana** | 1 Oct 2018 | $100,000 | — (200 prong repealed Jan 2024) | — (sales only) | PY or CY | 1 Jul 2019 | 7.00% | Yes | Transaction count repealed effective 2024 |
-| 16 | **Iowa** | 1 Jan 2019 | $100,000 | — (200 prong repealed Jul 2019) | — (sales only) | PY or CY | 1 Jan 2019 | 6.00% | Yes | Transaction count repealed |
-| 17 | **Kansas** | 1 Jul 2021 (clarified) | $100,000 | — | — (sales only) | PY or CY | 1 Jul 2021 | 6.50% | Yes | **Was $0 threshold 2019-2021** — now $100k post-SB 50 (effective Jul 2021) |
-| 18 | **Kentucky** | 1 Oct 2018 | $100,000 | 200 | OR | PY or CY | 1 Jul 2019 | 6.00% | Retail | Standard template |
-| 19 | **Louisiana** | 1 Jul 2020 | $100,000 | 200 | OR | PY or CY | 1 Jul 2020 | 4.45% | Retail | 64 parishes file separately (limited LSST progress) |
-| 20 | **Maine** | 1 Jul 2018 | $100,000 | — (200 prong repealed Jan 2022) | — (sales only) | PY or CY | 1 Oct 2019 | 5.50% | Retail | Transaction count repealed |
-| 21 | **Maryland** | 1 Oct 2018 | $100,000 | 200 | OR | PY or CY | 1 Oct 2019 | 6.00% | Retail | Digital products taxable since 2021 |
-| 22 | **Massachusetts** | 1 Oct 2017 ("cookie nexus") / 1 Oct 2019 (Wayfair) | $100,000 | — (no transaction count) | — (sales only) | PY | 1 Oct 2019 | 6.25% | Retail | Cookie-nexus regs predated Wayfair; SaaS taxable |
-| 23 | **Michigan** | 1 Oct 2018 | $100,000 | 200 | OR | PY | 1 Jan 2020 | 6.00% | Yes | Standard template |
-| 24 | **Minnesota** | 1 Oct 2018 (small-seller exception expanded Oct 2019) | $100,000 | 200 | OR | PY (12 mo) | 1 Oct 2018 | 6.875% | Retail | SST member |
-| 25 | **Mississippi** | 1 Sep 2018 | $250,000 | — | — (sales only) | PY (12 mo) | 1 Jul 2020 | 7.00% (highest base) | Yes | Higher dollar threshold |
-| 26 | **Missouri** | 1 Jan 2023 | $100,000 | — | — (sales only) | PY (12 mo rolling, measured quarterly) | 1 Jan 2023 | 4.225% | Retail | **Final state to adopt** economic nexus |
-| 27 | **Nebraska** | 1 Apr 2019 | $100,000 | 200 | OR | PY or CY | 1 Apr 2019 | 5.50% | Yes | SST member |
-| 28 | **Nevada** | 1 Oct 2018 | $100,000 | 200 | OR | PY or CY | 1 Oct 2019 | 6.85% | Retail | SST member |
-| 29 | **New Hampshire** | — | — | — | — | — | — | 0% (no SUT) | — | NOMAD |
-| 30 | **New Jersey** | 1 Nov 2018 | $100,000 | 200 | OR | PY or CY | 1 Nov 2018 | 6.625% | Retail | SST member |
-| 31 | **New Mexico** (GRT) | 1 Jul 2019 | $100,000 | — | — (sales only) | PY (12 mo) | 1 Jul 2019 | 4.875% (GRT) | Yes | GRT regime — tax on seller, passed through |
-| 32 | **New York** | 21 Jun 2018 (immediately on Wayfair) | $500,000 AND 100 | 100 | AND | Prior 4 quarters | 1 Jun 2019 | 4.00% (state) | Retail | **AND** logic; lower transaction count than most |
-| 33 | **North Carolina** | 1 Nov 2018 | $100,000 | — (200 prong repealed Jul 2024) | — (sales only) | PY or CY | 1 Feb 2020 | 4.75% | Yes | Transaction count repealed 2024 |
-| 34 | **North Dakota** | 1 Oct 2018 | $100,000 | — (200 prong repealed Jul 2019) | — (sales only) | PY or CY | 1 Oct 2019 | 5.00% | Retail | SST member |
-| 35 | **Ohio** | 1 Aug 2019 | $100,000 | 200 | OR | PY or CY | 1 Sep 2019 | 5.75% (CAT base — SUT is separate) | Yes | Plus Commercial Activity Tax (CAT) at $150k bright-line |
-| 36 | **Oklahoma** | 1 Jul 2018 (notice-or-collect) / 1 Nov 2019 | $100,000 | — | — (sales only) | PY (12 mo) | 1 Nov 2019 | 4.50% | Retail | Early notice-and-report law |
-| 37 | **Oregon** | — | — | — | — | — | — | 0% (no SUT) | — | NOMAD; CAT applies at $1M for income |
-| 38 | **Pennsylvania** | 1 Apr 2018 (Marketplace Sales Act) / 1 Jul 2019 (economic) | $100,000 | — | — (sales only) | PY (12 mo) | 1 Apr 2018 | 6.00% | Yes | Cookie-nexus precursor; Wayfair-era $100k threshold |
-| 39 | **Puerto Rico** (IVU) | 1 Jan 2021 | $100,000 | 200 | OR | PY or CY | 1 Jan 2021 | 11.50% (IVU) | Retail | Highest combined rate in US territories |
-| 40 | **Rhode Island** | 1 Jul 2019 | $100,000 | 200 | OR | PY | 1 Jul 2019 | 7.00% | Retail | SST member |
-| 41 | **South Carolina** | 1 Nov 2018 | $100,000 | — | — (sales only) | PY or CY | 1 Apr 2019 | 6.00% | Yes | Casual sales rule limits |
-| 42 | **South Dakota** | 1 Nov 2018 (Wayfair home) | $100,000 | — (200 prong repealed Jul 2023) | — (sales only) | PY or CY | 1 Mar 2019 | 4.20% (reduced from 4.5% Jul 2023) | Yes | **Wayfair home state**; transaction count removed |
-| 43 | **Tennessee** | 1 Oct 2019 (lowered from $500k to $100k Oct 2020) | $100,000 | — | — (sales only) | PY (12 mo) | 1 Oct 2020 | 7.00% | Retail | Lowered threshold 2020 |
-| 44 | **Texas** | 1 Oct 2019 | $500,000 | — | — (sales only) | Prior 12 months | 1 Oct 2019 | 6.25% | Yes | Higher dollar threshold; see `tx-sales-tax` |
-| 45 | **Utah** | 1 Jan 2019 | $100,000 | 200 | OR | PY or CY | 1 Oct 2019 | 4.85% | Retail | SST member |
-| 46 | **Vermont** | 1 Jul 2018 | $100,000 | 200 | OR | PY (12 mo) | 1 Jun 2019 | 6.00% | Retail | SST member |
-| 47 | **Virginia** | 1 Jul 2019 | $100,000 | 200 | OR | PY or CY | 1 Jul 2019 | 5.30% (combined state) | Retail | Includes 1% local in state base |
-| 48 | **Washington** | 1 Oct 2018 | $100,000 | — (200 prong repealed Mar 2020) | — (sales only) | PY or CY | 1 Jan 2018 | 6.50% | Yes | Plus B&O; see `wa-bo-tax`; first major MPF law |
-| 49 | **West Virginia** | 1 Jan 2019 | $100,000 | 200 | OR | PY or CY | 1 Jul 2019 | 6.00% | Yes | SST member |
-| 50 | **Wisconsin** | 1 Oct 2018 | $100,000 | — (200 prong repealed Feb 2021) | — (sales only) | PY or CY | 1 Jan 2020 | 5.00% | Yes | SST member |
-| 51 | **Wyoming** | 1 Feb 2019 | $100,000 | — (200 prong repealed Jul 2024) | — (sales only) | PY or CY | 1 Jul 2019 | 4.00% | Yes | SST member |
-
-### 4.2. Summary by threshold tier
-
-**$100,000 sales OR 200 transactions (Wayfair template, ~12 states still use both prongs):**
-- AR, GA, KY, MD, MI, NE, NJ, NV, OH, RI, UT, VT, VA, WV, DC, PR
-
-**$100,000 sales only (no transaction count) — ~28 states:**
-- AL ($250k), AZ, CO, FL, ID, IN (2024), IA, KS (2021), ME (2022), MA, MN, MS ($250k), MO, NC (2024), ND, OK, PA, SC, SD (2023), TN, WA, WI (2021), WY (2024), AK (ARSSTC, 2025), HI (still 200 prong), NM, IL
-
-**$500,000 sales (high-threshold states):**
-- CA, NY (plus 100 transaction AND), TX
-
-**$250,000 sales:**
-- AL, MS
-
-**AND logic (both prongs required):**
-- CT ($100k AND 200), NY ($500k AND 100)
-
-### 4.3. Marketplace facilitator law summary
-
-- **Marketplace facilitator law summary** — Every state with sales tax has now enacted marketplace facilitator (MPF) laws. The general rule: if a third-party marketplace (Amazon Marketplace, eBay, Etsy, Walmart Marketplace, Reverb, Mercari, Poshmark, StockX, Patreon, OnlyFans, Whatnot, Faire, Houzz, etc.) facilitates a sale, the marketplace (not the individual seller) is the statutorily designated collector and remitter. For pure marketplace sellers (no direct sales): you generally do NOT need to register in any customer state on those marketplace sales. BUT see §4.4 for traps.
-
-### 4.4. AUDIT FLASH POINT — when marketplace-only sellers still must register
-
-- **Marketplace-only sellers still must register in some states** — Several states require marketplace sellers to register and file zero-returns even when 100% of sales are through facilitators: Washington — must register if Washington sales (incl. marketplace) cross $100k; file zero returns. Massachusetts — register required if marketplace + direct combined exceed $100k. Pennsylvania — register if MPF + direct combined. New Mexico — GRT regime; register if any taxable activity. California — CDTFA permit required for direct sales irrespective of MPF coverage. Best practice: any seller crossing $100k combined (direct + marketplace) into a state should register defensively. The cost of registration is trivial vs. the audit exposure.
-
-## 5. Physical-presence nexus — still alive, still dangerous
-
-Wayfair did not eliminate physical-presence nexus — it supplemented it. Any physical presence in a state creates nexus regardless of sales volume, with no de minimis safe harbor in most jurisdictions.
-
-### 5.1. Physical-presence triggers
-
-**Physical-presence triggers table**
-
-| Trigger | Typical states triggered | Notes |
+| Situation | Rule | Source |
 | --- | --- | --- |
-| Employees working in state | All | Even one remote employee triggers nexus |
-| Office or warehouse owned/leased | All | Including coworking memberships in some states |
-| **Inventory stored in state (3PL / FBA)** | All | **Single biggest audit risk** — see §5.2 |
-| Independent contractors providing service to in-state customers | Most | TX, CA aggressive |
-| Sales reps physically visiting in-state customers | All | Even occasional visits |
-| Affiliate clickthrough nexus | NY, NC, RI, others | "Amazon laws"; mostly moot post-Wayfair but still on books |
-| Trade show attendance | Varies; SST states have de minimis exception (typically 14 days) | Non-SST states more aggressive |
-| Drop-shipper with in-state inventory | All | Drop-shipper's nexus is separate from yours |
+| Sales of exactly $100,000 in a "more than" or "exceed" state (for example Washington, Indiana, New Jersey, South Carolina) | Not over the threshold; no nexus from the sales test alone | [DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers), [SCDOR](https://dor.sc.gov/sales-use-tax-index/sales-tax/remote-sellers) |
+| Sales of exactly $100,000 in an "at least" or "or more" state (Illinois, Kentucky, Hawaii, Vermont, New Mexico, Connecticut) | Threshold met (Iowa uses both wordings: check) | [IDOR FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html), [Vermont FAQ](https://tax.vermont.gov/business-and-corp/sales-and-use-tax/wayfair/faqs) |
+| AND tests | Connecticut needs both 200 or more retail sales and at least $100,000; New York needs both more than $500,000 and more than 100 sales. Meeting one prong only is not enough | [Connecticut DRS](https://portal.ct.gov/drs/businesses/new-business-resource-center/registering-with-drs), [TB-ST-175](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm) |
+| Transaction tests removed | Indiana from 1 Jan 2024; North Carolina from 1 Jul 2024; Wyoming (Laws 2024, ch. 67); South Dakota from 1 Jul 2023; Wisconsin from 20 Feb 2021; Illinois from 1 Jan 2026 | Row sources in the state table |
+| Previous year only | Alabama, Florida, New Mexico, and Pennsylvania (collection from 1 April of the following year). A seller crossing mid-year does not start collecting that year under the sales test | [ALDOR FAQ](https://www.revenue.alabama.gov/faqs/are-all-remote-sellers-required-to-register-in-alabama/), [FDOR notice 21A01-03](https://floridarevenue.com/taxes/tips/Documents/TIP_21A01-03.pdf) |
+| Rolling periods | Illinois 12-month lookback re-tested quarterly; Minnesota prior 12 months; Missouri preceding 12 months at each quarter end; Texas preceding 12 calendar months; Vermont 12 months, reviewed each quarter; New York four sales tax quarters; Connecticut 12 months to 30 September; Mississippi any twelve months | Row sources in the state table |
+| Taxable sales only | Florida, New Mexico, North Dakota, Oklahoma count taxable sales; a seller of mostly exempt goods can stay under | [FDOR notice 21A01-03](https://floridarevenue.com/taxes/tips/Documents/TIP_21A01-03.pdf), [Tax Commissioner](https://www.nd.gov/tax/remoteseller) |
+| Exempt and wholesale sales included | Iowa, South Carolina, Texas, Washington, Indiana, California (nontaxable sales such as sales for resale), New Jersey (nontaxable retail) count them | [IDR](https://revenue.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/remote-sellers-marketplace-facilitators), [SC Policy Manual](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2013%20-%20Nexus.pdf), [CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm) |
+| Marketplace sales left out of the seller's own test | Arizona (not facilitated), Georgia (may exclude), Oklahoma (if facilitator collects), Pennsylvania (if facilitator collects), Virginia (direct sales only for a seller also using a marketplace), Alabama (SSUT marketplace) | [A.R.S. 42-5044](https://www.azleg.gov/ars/42/05044.htm), [SUT-2020-01](https://dor.georgia.gov/media/35306/download) |
+| Marketplace-only seller over the threshold | Must still register: South Dakota (may get non-filing status); New Jersey (may ask for a non-reporting basis); New York (register and file periodic returns even though the provider remits); Washington (B&O filing continues). No registration needed if every sale goes through a facilitator that collects: Ohio, Oklahoma, Tennessee, Missouri, and California (registered facilitator; facilitated sales still count toward the $500,000 test). Other states: check | [CDTFA Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm), [SD 2023 updates](https://dor.sd.gov/businesses/taxes/sales-use-tax/2023-legislative-updates/), [NJ FAQ](https://www.nj.gov/treasury/taxation/remotesellersfaq.shtml), [TB-ST-175](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm), [DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers), [Ohio FAQ](https://tax.ohio.gov/help-center/faqs/sales-and-use-tax-substantial-nexus-and-marketplace-facilitator), [OTC FAQ](https://oklahoma.gov/content/dam/ok/en/tax/documents/resources/publications/streamlines-sales-tax/WayfairFAQs-06152020.pdf), [TDOR](https://www.tn.gov/revenue/taxes/sales-and-use-tax/out-of-state-dealers-marketplace-facilitators.html), [MO FAQ](https://dor.mo.gov/faq/taxation/business/remote-seller-and-marketplace-facilitator.html) |
+| Sellers with no taxable retail sales | New Jersey: remote sellers making only sales for resale, or only nontaxable retail sales, need not register. South Carolina: a remote seller making only wholesale sales needs no retail licence | [NJ FAQ](https://www.nj.gov/treasury/taxation/remotesellersfaq.shtml), [SC Policy Manual](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2013%20-%20Nexus.pdf) |
+| Inventory in a marketplace warehouse | Physical presence. Connecticut requires registration "even if it is under the thresholds". Texas: below $500,000 no permit is needed if the provider has certified it will assume the seller's duties; above it, register | [Connecticut DRS](https://portal.ct.gov/drs/businesses/new-business-resource-center/registering-with-drs), [Comptroller FAQ](https://comptroller.texas.gov/taxes/sales/remote-sellers-marketplace-faq.php) |
+| Related companies | Arizona aggregates affiliated persons; California adds related persons' sales | [A.R.S. 42-5044](https://www.azleg.gov/ars/42/05044.htm), [CDTFA](https://www.cdtfa.ca.gov/industry/wayfair.htm) |
 
-### 5.2. AUDIT FLASH POINT — Amazon FBA inventory nexus
+## Worked cases
 
-- **Amazon FBA inventory nexus** — This is the single most common audit trap for small e-commerce sellers in 2025. When a seller enrolls in Amazon FBA (Fulfilled by Amazon), Amazon distributes the seller's inventory across its ~110+ fulfillment centers in the US. Amazon decides where the inventory is stored — the seller does not. Sellers can pull inventory placement reports via Amazon's Seller Central > Reports > Fulfillment > Inventory Event Detail to identify exactly which states held inventory. **Common Amazon FBA inventory states (high-risk for retroactive nexus):** - **California** (Multiple facilities — Tracy, Stockton, Moreno Valley, San Bernardino, Eastvale) - **Texas** (Dallas, Houston, San Antonio, Schertz, Coppell) - **New Jersey** (Robbinsville, Avenel, Carteret, Edison) — covers tri-state shipping - **Pennsylvania** (Carlisle, Hazle Township, Breinigsville) - **Illinois** (Joliet, Romeoville, Aurora) - **Florida** (Lakeland, Jacksonville, Ruskin) - **Georgia** (Braselton, Macon, Stone Mountain) - **New York** (Staten Island, Bethpage) - **Virginia** (Sterling, Petersburg) - **Arizona** (Phoenix, Goodyear) - **Tennessee** (Chattanooga, Lebanon, Charleston) - **Washington** (Kent, DuPont, Sumner) - **Indiana** (Whitestown, Plainfield, Indianapolis) - **Ohio** (Etna, Monroe, Obetz) - **Massachusetts** (Fall River, Stoughton) - **Colorado, Connecticut, Kentucky, Maryland, Michigan, Minnesota, Missouri, Nevada, North Carolina, Oregon (no SUT), South Carolina, Utah, Wisconsin** — varying numbers of facilities. **The legal position:** every state with sales tax treats inventory in an in-state warehouse as physical-presence nexus. The fact that Amazon owns/operates the warehouse does NOT shield the seller — the inventory is the seller's property. **Litigation note:** Some sellers have argued (successfully in PA — Online Merchants Guild v. Hassell, 2022; partially in CA via FTB litigation) that FBA inventory placement doesn't constitute "doing business" because the seller has no control over location. **Do not rely on this.** Most states reject the argument, and prevailing in court costs $50k–$200k+. Best practice: register prospectively in any FBA inventory state and consider VDA for prior periods. **Practical workflow when discovered:** 1. Pull FBA Inventory Event Detail report covering all periods (Amazon retains 18 months online; older via support request). 2. Identify all states ever holding inventory. 3. For states where Amazon Marketplace is the only sales channel and MPF law is in effect for the inventory period — MPF protects you for marketplace sales BUT physical-presence nexus is still triggered. State could demand registration and zero returns; some states will assert backup income tax nexus. 4. For states with direct sales in addition to FBA — calculate exposure; pursue VDA. 5. For seller with both FBA and own-warehouse drop-shipping arrangements — even higher complexity.  _(Online Merchants Guild v. Hassell, 2022 (PA))_
+These are illustrations with invented numbers. Each assumes no physical presence unless stated.
 
-## 6. SaaS and digital-product taxability
+1. **Illinois after the transaction test ended** ([IDOR FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)). A seller made 450 sales of goods totalling $80,000 to Illinois buyers in the 12 months to 31 March 2026. Under the old rules, 200 or more transactions would have been enough. From 1 January 2026 the only test is $100,000 or more in the lookback period. $80,000 is below $100,000, so the seller has no Illinois duty from the sales test. It must keep re-testing each quarter.
+2. **New York AND test** ([TB-ST-175](https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/do_i_need_to_register_for_sales_tax.htm)). In the four sales tax quarters just ended, a seller of furniture delivered 90 orders into New York worth $520,000. Receipts exceed $500,000, but 90 sales is not more than 100. Both conditions are needed, so no registration is required from the economic test. With a 101st sale in a later four-quarter window, it would be.
+3. **Connecticut AND test, and inventory** ([Connecticut DRS](https://portal.ct.gov/drs/businesses/new-business-resource-center/registering-with-drs)). In the 12 months to 30 September 2025, a seller made 150 retail sales into Connecticut worth $150,000. It has at least $100,000 but not 200 or more sales, so the threshold is not met. If any of its stock sits in a marketplace facilitator's Connecticut warehouse, it must register anyway, because that rule applies "even if it is under the thresholds".
+4. **Same sales, opposite results: Georgia and South Carolina** ([SUT-2020-01](https://dor.georgia.gov/media/35306/download), [SC Policy Manual](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2013%20-%20Nexus.pdf)). In 2025 a seller sold $120,000 of its own goods into each state, of which $110,000 went through a facilitator that collects and $10,000 was direct. Georgia lets a remote seller exclude facilitated sales, so its figure is $120,000 minus $110,000, which is $10,000. That is under $100,000, and at 50 direct orders it is under 200 sales too, so there is no Georgia duty. South Carolina counts the seller's own goods sold via a marketplace, so its figure is $120,000. That exceeds $100,000, so the seller needs a South Carolina retail licence and remits on its own direct sales; in the Department's own example the seller remits on its website sales only.
+5. **Arizona exactly at the line** ([A.R.S. 42-5044](https://www.azleg.gov/ars/42/05044.htm)). A seller's 2025 direct (non-facilitated) Arizona sales were exactly $100,000. The statute requires "more than" $100,000, so the threshold is not met for 2025. Each calendar year is tested on its own: 2025 sales do not carry into 2026. If its 2026 direct Arizona sales go over $100,000, for example on 20 August 2026, it must get a licence then and start remitting on 1 October 2026 (the first month starting at least thirty days later), for the rest of 2026 and all of 2027.
 
-- **Nexus vs taxability distinction** — Nexus (whether you must collect) is separate from taxability (whether the product is subject to tax). Even when you have nexus, sales of an exempt product don't trigger collection — but the threshold still counts the sales in some states.
+## When to refuse or refer
 
-### 6.1. The SaaS-taxable twelve
+- The client has, or may have, physical presence (staff, contractors, stock in a fulfilment centre) in states where it has never registered: refer for a back-exposure and voluntary disclosure review. This Guide does not cover look-back periods, penalties or disclosure programmes.
+- The state is marked **check** and the client needs an answer now: do not fill the gap from a vendor chart. Confirm on the state's own site or with the state.
+- Sales sit within a few thousand dollars of a threshold in a state whose wording conflicts (Colorado, Iowa, Missouri, Pennsylvania, Tennessee, Texas, and the transaction counts in Arkansas and Nevada): get written confirmation from the state.
+- The question is about taxability, rates, local home-rule registration (Colorado, Alabama, Louisiana, Alaska local jurisdictions) or income tax nexus: refer to the relevant state Guide or a state-tax specialist.
+- Sales into Puerto Rico or other territories: out of scope.
+- The client has already received a nexus questionnaire or audit letter from a state: refer; voluntary routes may be closed.
 
-**SaaS-taxable twelve table**
+## Filing and payment
 
-| State | SaaS treatment | Notes |
+Start dates after crossing a threshold, where the reviewed source gives them:
+
+| State | When to register and start collecting | Source |
 | --- | --- | --- |
-| **HI** | Taxable (GET) | All services taxable under GET |
-| **MA** | Taxable | Pre-written software access |
-| **NY** | Taxable | Treated as taxable "pre-written software" |
-| **OH** | Taxable | Business-use only since 2003; consumer-use taxable too |
-| **PA** | Taxable | Software-as-a-service treated as taxable digital good |
-| **RI** | Taxable | Vendor-hosted software |
-| **SC** | Taxable | "Communications" or "computer services" |
-| **TN** | Taxable | Computer software access |
-| **TX** | Taxable (80% rule) | Treated as "data processing service" — 80% of charge taxable, 20% exempt |
-| **UT** | Taxable | Pre-written software |
-| **WA** | Taxable | DOR ruling — SaaS = retail sale of digital automated service |
-| **WV** | Taxable | Vendor-hosted software |
-
-Also taxable in some structures: Connecticut (1% reduced rate for business-use SaaS), DC (taxable as "digital good"), New Mexico (taxable under GRT), Iowa (taxable since 2019), Mississippi (taxable since 2023).
-
-### 6.2. SaaS-exempt states (majority)
-
-- **SaaS-exempt states** — Most states do not tax SaaS as of 2025: CA, FL, GA, IL, MD, MI, MN, MO, NC, ND, NE, NJ, NV, OK, OR (no SUT), VA, WI, KY (consumer SaaS exempt; business-use grey area), AR, KS, LA, ME, VT, AL, AK, ID, IN, AZ (consumer-use grey), CO. **Trend:** states are gradually expanding SaaS taxability. MD added digital products tax 2021 (carve-out for SaaS). VT, NE have considered SaaS bills. Expect 3–5 more states to add SaaS taxability by 2027.
-
-### 6.3. Digital downloads, streaming, ebooks
-
-- **Digital downloads, streaming, ebooks taxability** — Digital product taxability is much more state-specific: Digital downloads (music, ebooks, software downloads): taxable in ~28 states; exempt in ~17. Streaming services (Netflix, Spotify): taxable in ~20 states; specific carve-outs in many. NFTs and digital art: emerging issue — PA, WA have published guidance; most states silent. For a transaction-by-transaction taxability determination, sellers should consult state-specific guidance or a CSP (Avalara TaxJar Vertex Sovos) automation.
-
-## 7. Home-rule states
-
-Four states allow localities to administer their own sales tax independently of the state revenue department. This creates registration obligations beyond the state.
-
-### 7.1. Colorado
-
-- **Colorado home-rule** — 70+ self-administered "home-rule" cities (Denver, Boulder, Colorado Springs, Aurora, Fort Collins, Lakewood, Pueblo, Greeley, Centennial, Longmont, etc.). State threshold $100k applies for state + state-collected localities. Sales & Use Tax System (SUTS) portal launched 2020 — single online filing for state + ~70 participating home-rule cities. Not all home-rule cities participate; some still require direct registration. See `co-suts` for mechanics.
-
-### 7.2. Alabama
-
-- **Alabama home-rule** — ~200 localities with self-administered SUT, of which ~50 are "non-program" (don't go through ADOR). Simplified Sellers Use Tax (SSUT) program — voluntary flat 8% rate on remote sellers; remits collected tax to ADOR, which distributes. Sellers who opt into SSUT are insulated from local audit risk. SSUT is the recommended approach for remote sellers.
-
-### 7.3. Louisiana
-
-- **Louisiana home-rule** — 64 parishes + numerous municipalities, each with separate sales tax administration. Threshold of $100,000 or 200 transactions enacted 2020. Louisiana Sales and Use Tax Commission for Remote Sellers (Remote Sellers Commission) provides centralized filing for remote sellers — file one return covering all parishes. Local Single Sales Tax (LSST) initiative ongoing but incomplete.
-
-### 7.4. Alaska (no state SUT but local)
-
-- **Alaska home-rule** — ~100 municipalities/boroughs with local SUT. Alaska Remote Seller Sales Tax Commission (ARSSTC) centralized administration for member munis. $100k statewide threshold; 200-transaction prong repealed effective Jan 1, 2025.
-
-## 8. Streamlined Sales Tax (SST) program
-
-- **Streamlined Sales Tax program** — The Streamlined Sales and Use Tax Agreement (effective 2005) is a multistate cooperative to reduce compliance burden on remote sellers. 24 states are full members in 2025.
-
-### 8.1. SST member states (2025)
-
-- **SST member states list** — AR, GA, IN, IA, KS, KY, MI, MN, NE, NV, NJ, NC, ND, OH, OK, RI, SD, TN (associate), UT, VT, WA, WV, WI, WY — plus DC.
-
-### 8.2. SST benefits
-
-- **SST benefits** — Certified Service Provider (CSP) free filing: SST states fund free use of an approved CSP (Avalara, TaxJar, Sovos, Vertex) for volunteer sellers (those without physical presence). The CSP handles registration, calculation, filing, and audit defense across all 24 SST states for $0 cost. Uniform definitions of taxable products and exemptions across member states. Single online registration via SSTRS (Streamlined Sales Tax Registration System). No registration fees in member states.
-
-### 8.3. Non-SST states
-
-- **Non-SST states list** — Non-SST states (CA, TX, FL, NY, IL, MA, VA, PA, AZ, AL, LA, CO, MD, CT, MS, MO, ME, NM, NH, SC, ID, AK, HI, OR, MT, DE) require direct registration and don't subsidize CSP services. Seller pays for any third-party automation.
-
-## 9. Registration mechanics
-
-### 9.1. Online registration portals
-
-- **Online registration portals** — SST: SSTRS at sstregister.org — covers 24 states in one application. Non-SST: each state's DOR website — typically 30 minutes per state. Avalara / TaxJar / Sovos / Vertex: paid services that handle multi-state registration ($100–$300 per state, faster turnaround). MPF-only sellers: many states have a separate marketplace-seller registration with reduced reporting (CA's CDTFA "marketplace seller" designation, for example).
-
-### 9.2. Filing frequency
-
-**Filing frequency table**
-
-| Annual liability | Typical frequency |
-| --- | --- |
-| < $1,000 | Annual |
-| $1,000 – $4,000 | Quarterly |
-| $4,000 – $50,000 | Monthly |
-| > $50,000 | Monthly with prepayments or accelerated remittance |
-
-Larger sellers (>$1M annual liability) may be required to make prepayments (CA, IL, NY) or file weekly (extreme cases).
-
-### 9.3. Return due dates
-
-- **Return due dates** — Most states: 20th of the month following the period. Variations: CA — last day of the month following the period (monthly); 25th for quarter prepays. NY — 20th of the month. TX — 20th of the month. FL — 20th of the month (collect-and-remit timely discount if filed by 20th). AL — 20th of the month. LA — 20th of the month. IL — 20th of the month.
-
-### 9.4. Vendor compensation / timely-filing discount
-
-- **Vendor compensation discounts** — IL — 1.75% of collected tax (capped); AL — 5% on first $100 / 2% above; LA — 0.935%; FL — 2.5% (capped at $30); TN — 1.6% (capped); TX — 0.5% timely discount + 1.25% prepayment discount. percent  _(State-specific vendor compensation rules (IL, AL, LA, FL, TN, TX))_
-
-These add up — multi-state sellers commonly capture $1,000s annually in vendor compensation.
-
-## 10. Voluntary Disclosure Agreement (VDA) process
-
-- **VDA process intro** — When a seller discovers historical nexus exposure (e.g., FBA inventory back to 2018), the Voluntary Disclosure Agreement process limits damage.
-
-### 10.1. Standard VDA terms
-
-- **Standard VDA terms** — Most states offer: Lookback period limited to 3-4 years (in lieu of the typical 7-year audit lookback when discovered by the state); Penalties waived (failure-to-file, failure-to-pay); Interest still owed (rarely waived); Anonymity during negotiation — applicant identified by counsel/representative as "Taxpayer A"; No criminal referral.
-
-### 10.2. State-specific VDA notes
-
-- **State-specific VDA notes** — MTC (Multistate Tax Commission) Multistate VDA — single application covers up to 40+ states. Good for sellers with broad exposure. CA VDA — 3-year lookback if registered through CDTFA's Settlement and Compliance Program; income tax separately through FTB. TX — 4-year lookback; aggressive on FBA cases. NY — 36-month lookback for sales tax; favorable to remote sellers. FL — 3-year lookback; recent FBA enforcement push.
-
-### 10.3. When VDA is NOT available
-
-- **When VDA is not available** — Seller already contacted by state DOR (audit notice, nexus questionnaire received) — too late. Seller already registered — pay back due returns and request penalty abatement separately. Some states limit VDA to certain tax types or have funding caps.
-
-## 11. P.L. 86-272 distinction — sales tax vs income tax
-
-- **P.L. 86-272** — Public Law 86-272 (15 U.S.C. §§ 381–384, enacted 1959) prohibits state income tax on out-of-state sellers whose only in-state activity is solicitation of orders for tangible personal property approved/fulfilled from outside the state. It does NOT protect against sales tax obligations. A remote seller with $100k+ sales into State X: Has sales tax nexus (must register, collect, remit) — Wayfair. May still claim P.L. 86-272 protection from income tax if sales are tangible personal property only and in-state activities limited to solicitation. But P.L. 86-272 is narrowing rapidly: MTC's 2021 Revised Statement treats much internet activity (post-sale customer service via chat, app cookies tracking visitors, providing in-state non-sales support) as exceeding mere solicitation. CA, NY, NJ, OR (income tax via CAT), have adopted MTC's interpretation in regulations. See `us-pl-86-272-income-tax-nexus` for full treatment. **Practical implication:** sales tax registration in a state does not by itself create income tax nexus, but states increasingly take the position that economic-nexus-level activity exceeds P.L. 86-272.  _(Public Law 86-272, 15 U.S.C. §§ 381–384; MTC Revised Statement on P.L. 86-272 (Aug 2021))_
-
-## 12. Worked examples
-
-### 12.1. Example 1 — Shopify seller hitting NY threshold
-
-**Facts:** Sarah operates a direct-to-consumer apparel brand on Shopify. She is a CA resident. Her NY sales for 2024 totaled $510,000 across 850 transactions. She has no physical presence in NY.
-
-**Analysis:**
-- NY threshold: $500,000 AND 100 transactions (in trailing 4 quarters). Sarah crosses both prongs → economic nexus.
-- Shopify is NOT a "marketplace facilitator" for Shopify-hosted stores (Shopify Payments processes payment but doesn't list the goods). Sarah is the seller of record. **No MPF protection.**
-- Sarah must:
-  - Register for NY Sales Tax (DTF Certificate of Authority) — Form DTF-17.
-  - Begin collecting NY state (4%) + local (4–4.875%) sales tax on shipments to NY addresses.
-  - File NY sales tax returns (quarterly initially based on volume; monthly if >$300k/quarter).
-- If apparel under $110 per item — exempt under NY clothing exemption (still collect threshold purposes).
-- Income tax: Sarah may have NY corporate franchise tax nexus separately (NY economic nexus for corporate tax is $1M).
-
-### 12.2. Example 2 — Amazon FBA seller with multi-state inventory
-
-**Facts:** Mike sells home goods exclusively on Amazon Marketplace as an FBA seller. 2024 gross sales $850,000 across all states. Amazon's inventory placement reports show his goods were stored in fulfillment centers in CA, TX, NJ, PA, IL, GA, FL, AZ at various points during 2021-2024. He has never registered for sales tax anywhere outside his home state (Idaho).
-
-**Analysis:**
-- **Marketplace facilitator protection:** Amazon collects and remits in all states with MPF laws (every state with sales tax). Mike is not liable for collection on Amazon sales.
-- **Physical-presence nexus from FBA inventory:** Mike has physical-presence nexus in CA, TX, NJ, PA, IL, GA, FL, AZ from 2021 onward (or whenever inventory was first placed).
-- **State-by-state obligations:**
-  - **CA** — must register with CDTFA; file zero returns (or report sales subject to FTB income tax). Likely back franchise tax exposure for SMLLC.
-  - **TX** — register for sales tax permit; potential franchise tax filings (PIR + EZ computation if revenue >$2.47M).
-  - **NJ, PA, IL, GA, FL, AZ** — register; mostly zero returns since Amazon collects.
-- **Audit risk:** very high. Several states (PA, CA) actively cross-reference Amazon's seller data with their registration databases.
-- **Recommended action:**
-  1. Pull complete FBA inventory history from Amazon Seller Central.
-  2. Initiate MTC Multistate VDA covering states with material exposure.
-  3. Register prospectively in all FBA states.
-  4. Set up nexus monitoring (Avalara / TaxJar) for the future.
-- **Cost estimate:** $5,000–$15,000 in professional fees + back taxes/interest (much lower than the 7-year audit alternative).
-
-### 12.3. Example 3 — SaaS company crossing thresholds in NY, TX, WA
-
-**Facts:** Acme SaaS Inc. is a Delaware C-corp HQ'd in California selling a subscription SaaS product to businesses nationwide. 2024 ARR $4M. State breakdown: NY $800k, TX $700k, WA $300k, CA $1.5M (home state), rest of US $700k across 30+ states.
-
-**Analysis:**
-- **Taxability:** SaaS is taxable in NY, TX (80% of charge), WA. Taxability matters because economic nexus thresholds in some states count only taxable receipts; in others, all receipts.
-- **NY** — SaaS taxable as pre-written software. $800k exceeds $500k AND 100 transactions threshold. **Register, collect 4% state + local 4–4.875%.** B2B customers may provide resale certificates (rare for SaaS) or direct-pay permits.
-- **TX** — SaaS = "data processing service" — 80% taxable, 20% exempt. $700k exceeds $500k. **Register for sales tax permit; collect 6.25% state + up to 2% local on 80% of charge.** Note many TX customers can claim manufacturing exemption — collect resale/exemption certificates.
-- **WA** — SaaS taxable as "digital automated service." $300k exceeds $100k. **Register; collect 6.5% state + local.** Plus B&O tax (separate filing) at 0.471% Service rate or 0.484% Retailing rate.
-- **CA** — SaaS NOT taxable. No collection obligation regardless of threshold. But may have franchise tax / CDTFA permit obligation if any tangible sales.
-- **Other states** — SaaS exempt in most. Threshold not relevant for taxability. But Acme should monitor:
-  - PA ($100k threshold; SaaS taxable since 2016)
-  - OH ($100k threshold; SaaS taxable for business use)
-  - MA ($100k threshold; SaaS taxable)
-  - HI ($100k threshold; GET taxable)
-  - SC, TN, UT, RI, WV (SaaS taxable)
-  - Other states monitoring for taxability changes.
-
-**Action plan:**
-1. Register in NY, TX, WA immediately.
-2. Collect resale/exemption certificates from B2B customers (critical for cost recovery).
-3. Implement Avalara or TaxJar for ongoing nexus monitoring.
-4. Re-evaluate annually as ARR grows and additional states' thresholds are crossed.
-5. Track P.L. 86-272 protection for income tax separately (SaaS revenue is not tangible personal property so P.L. 86-272 likely doesn't apply — separate state income tax nexus analysis required).
-
-## 13. AUDIT FLASH POINTS — summary
-
-> **AUDIT FLASH POINT 1: Amazon FBA inventory creates physical-presence nexus in every state where Amazon stores your inventory.** Even when 100% of sales go through Amazon Marketplace (and Amazon collects sales tax under MPF laws), you have a registration obligation due to physical presence. Pull FBA inventory placement reports and assess every state ever holding goods.
-
-> **AUDIT FLASH POINT 2: Missed Wayfair registration in a state where you crossed threshold leads to a 7-year (or unlimited, for non-filers) audit lookback.** VDAs limit lookback to 3-4 years and waive penalties — but ONLY if seller initiates before state contact. Monitor thresholds quarterly.
-
-> **AUDIT FLASH POINT 3: Marketplace-only sellers in WA, MA, PA, NM may still need to register and file zero returns.** Don't assume MPF coverage equals no registration. Check state rules.
-
-> **AUDIT FLASH POINT 4: Sales tax nexus and income tax nexus are separate analyses.** Having sales tax nexus does not automatically create income tax nexus, but states increasingly assert both. P.L. 86-272 protects only against income tax and is narrowing.
-
-> **AUDIT FLASH POINT 5: Home-rule states (CO, AL, LA, AK) require local registrations in addition to state.** Failing to register in Denver or Boulder is a separate violation from Colorado state failure. SSUT (AL), SUTS (CO), Remote Sellers Commission (LA), ARSSTC (AK) simplify but don't eliminate the local obligation.
-
-> **AUDIT FLASH POINT 6: Kansas threshold was $0 from 2019-2021.** A seller making $5,000 of KS sales during that window had registration obligation. KS has not enforced retroactively but VDAs frequently surface this.
-
-> **AUDIT FLASH POINT 7: New York's $500k AND 100 transactions test is measured on the trailing 4 quarters,** not the calendar year. A seller could trigger mid-year and owe collection from the next quarter. Monitor quarterly.
-
-## 14. Provenance and authority
-
-This skill compiles publicly available state DOR guidance, the Sales Tax Institute's nexus reference tables, and the AICPA's State Nexus Comparison Tables as of November 2025. Key primary sources:
-
-- **South Dakota v. Wayfair, Inc.**, 138 S. Ct. 2080 (2018)
-- **Quill Corp. v. North Dakota**, 504 U.S. 298 (1992) (overruled)
-- **Public Law 86-272**, 15 U.S.C. §§ 381–384
-- **Streamlined Sales and Use Tax Agreement** (current version, sstgovboard.org)
-- State DOR websites for every state covered (current as of November 2025)
-- **Multistate Tax Commission**, Revised Statement on P.L. 86-272 (Aug 2021)
-- **MTC National Nexus Program** Multistate VDA materials
-- **Alaska Remote Seller Sales Tax Commission** code and resolutions (effective Jan 2025 amendment removing 200-transaction prong)
-
-**Thresholds and effective dates change frequently.** This matrix reflects rules in force for tax year 2025 as of November 15, 2025. Verify against state DOR primary source for any specific compliance decision. The annual update runbook (see `ANNUAL-UPDATE-RUNBOOK.md` in this package) prompts re-verification of every threshold each November.
-
-**Verified-by status: pending.** This skill awaits country-level sign-off review per the verification model. Multiple US-credentialed accountants (CPA, EA, or attorney admitted in a US jurisdiction) should review before deployment to production.
+| Arizona | Licence once the threshold is met; remit from the first day of the month that starts at least thirty days later, for the rest of that year and the next | [A.R.S. 42-5044](https://www.azleg.gov/ars/42/05044.htm) |
+| Colorado | By the first day of the first month starting at least 90 days after current-year sales exceed $100,000; the whole year if the previous year exceeded it | [CDOR](https://tax.colorado.gov/out-of-state-businesses) |
+| Iowa | First day of the next month that starts at least 30 days after crossing; through that year and the whole next year | [IDR](https://revenue.iowa.gov/taxes/tax-guidance/sales-use-excise-tax/remote-sellers-marketplace-facilitators) |
+| Maine | On or before the first day of the first month starting at least thirty days after crossing; may cancel after two calendar years under the threshold | [IB 43](https://www.maine.gov/revenue/sites/maine.gov.revenue/files/inline-files/IB43RegistrationofSellers02_2022.pdf) |
+| Missouri | No later than three months after the close of the quarter in which the 12-month total exceeds $100,000 | [DOR FAQ](https://dor.mo.gov/faq/taxation/business/remote-seller-and-marketplace-facilitator.html) |
+| North Dakota | From the following calendar year, or 60 days after crossing, whichever is earlier | [Tax Commissioner](https://www.nd.gov/tax/remoteseller) |
+| New Jersey | On taxable transactions after the threshold is met (not the one that meets it), with a grace period of up to 30 calendar days to register and begin collecting | [Taxation FAQ](https://www.nj.gov/treasury/taxation/remotesellersfaq.shtml) |
+| Pennsylvania | Collection year runs 1 April to 31 March, based on the previous calendar year | [DOR online retailers](https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax/online-retailers) |
+| South Carolina | Retail licence and remittance from the first day of the second calendar month after nexus | [SC Policy Manual](https://dor.sc.gov/sites/dor/files/Documents/Policy%20Manuals/Chapter%2013%20-%20Nexus.pdf) |
+| South Dakota | By the first day of the month that starts at least thirty days after crossing | [SD MP bulletin](https://dor.sd.gov/media/e0ajtwlg/marketplace-provider-bulletin.pdf) |
+| Texas | No later than the first day of the fourth month after the month the $500,000 safe harbor is exceeded | [Remote sellers](https://comptroller.texas.gov/taxes/sales/remote-sellers.php) |
+| Washington | First day of the month starting at least 30 days after crossing, if not met the prior year | [DOR remote sellers](https://dor.wa.gov/taxes-rates/retail-sales-tax/marketplace-fairness-leveling-playing-field/remote-sellers) |
+| West Virginia | On sales made after the day a threshold is reached in the current year | [Tax Division](https://tax.wv.gov/Business/SalesAndUseTax/ECommerce/RemoteSellers/Pages/RemoteSellersAndWestVirginiaTax.aspx) |
+
+For other states, read the start rule on the row's source. Filing frequencies and due dates are set by each state after registration and are not covered here.
+
+## Periods in 2025 (for returns and reviews of 2025 activity)
+
+- **Illinois:** for lookback periods ending on or before 31 December 2025, the 200-transaction test still applied alongside $100,000. A seller registered only under the 200 test had to review its 12 months ending 31 December 2025 and stop remitting if it was under $100,000 ([IDOR FY 2026-12](https://tax.illinois.gov/research/publications/bulletins/fy-2026-12.html)).
+- **Utah, Louisiana and Alaska (ARSSTC):** their sources could not be read for this review. Check each one's test separately for 2025 periods and for 2026.
+- **Other rows:** the reviewed sources show no change taking effect during 2025 or 2026 apart from the Illinois change above. Still confirm the test for the exact period you are reviewing.
+
+## Completion checklist
+
+- [ ] Physical presence checked in every state, including marketplace inventory locations.
+- [ ] Sales data built per state: calendar years 2025 and 2026, rolling 12 months, New York quarters, Connecticut 12 months to 30 September.
+- [ ] Each state's sales basis applied (gross, retail or taxable; exempt and wholesale in or out; marketplace in or out; related parties added in Arizona and California).
+- [ ] "More than" versus "at least" applied; AND tests (Connecticut, New York) applied as AND.
+- [ ] Transaction tests applied only where the table shows one still exists.
+- [ ] Start date worked out from the state's start rule.
+- [ ] Every **check** state confirmed on the state's own site, with the page and date noted in the file.
+- [ ] Alaska local jurisdictions and home-rule localities flagged separately.
+- [ ] Next re-test date diarised on each state's cycle.
 
 <!-- openaccountants-cta-block -->
 

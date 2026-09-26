@@ -2,650 +2,319 @@
 name: nj-payroll
 description: Tier 2 New Jersey content skill for employer payroll compliance covering tax year 2025. Includes the 10.75% Gross Income Tax top rate, supplemental wage rate 11.8%, NJ-927 single quarterly combined return for withholding/UI/TDI/FLI/WD, TDI rates split between employee (0.23%) and employer (0.93%), FLI 0.06% employee-only (post-2024 reduction), SUI wage base $43,300, ABC test contractor classification under NJ Wage and Hour Law, Earned Sick Leave Law 40-hour minimum, and the BAIT estimated payment schedule for PTE-electing pass-throughs.
 jurisdiction: US-NJ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# NJ Payroll
-
-## New Jersey Payroll Compliance — Tax Year 2025
-
-## 1. Scope
-
-This skill covers New Jersey state-level payroll compliance for employers operating in NJ during the 2025 tax year. It is designed for use alongside `us-federal-payroll` (federal withholding, FICA, FUTA, Form 941, W-2/W-3) and any additional state skills for employees working across state lines (most commonly `us-ny-payroll` and `us-pa-payroll` given commuting patterns).
-
-**In scope:**
-- New Jersey Gross Income Tax (GIT) withholding under N.J.S.A. 54A:7-1 et seq.
-- Form NJ-W4 (Employee's Withholding Allowance Certificate)
-- Form NJ-927 / NJ-927-W (Quarterly Combined Withholding, UI, DI, FLI, WF Return)
-- Temporary Disability Insurance (TDI / SDI) — employee + employer split
-- Family Leave Insurance (FLI) — employee-only
-- State Unemployment Insurance (SUI/UI) — employer-only (mostly)
-- Workforce Development Partnership (WD/WF) — employee + employer
-- Supplemental Workforce Fund (SWF) — employee + employer
-- New hire reporting to NJ Department of Labor (NJDOL) and the federal NDNH
-- Worker classification under the New Jersey ABC test (N.J.S.A. 43:21-19(i)(6))
-- Earned Sick Leave Law (N.J.S.A. 34:11D)
-- Wage Payment Law / pay frequency (N.J.S.A. 34:11-4.2)
-- NJ–NY reverse credit and source-of-income interaction for cross-border commuters (high-level — full NY mechanics live in `us-ny-payroll`)
-- BAIT (Pass-Through Business Alternative Income Tax) quarterly estimate schedule (deeper coverage in `nj-cbt-and-bait`)
-
-**Out of scope:**
-- Federal income tax withholding, FICA, FUTA, Form 941 — see `us-federal-payroll`.
-- NJ Corporation Business Tax (CBT) and full BAIT mechanics — see `nj-cbt-and-bait`.
-- Multi-state apportionment for income tax purposes — see `_cross-border/multistate-payroll`.
-- Public sector / civil service payroll, agricultural labor, domestic service, and clergy compensation (NJ has special carve-outs not covered here).
-- Workers' Compensation insurance (privately insured, not run through NJ-927).
-- New Jersey Secure Choice mandatory retirement program implementation details (only flagged briefly).
-
-> **AUDIT FLASH POINT — ABC test misclassification.** New Jersey is among the most aggressive jurisdictions in the United States for reclassifying 1099 contractors as W-2 employees. NJDOL audits routinely target staffing, construction, trucking, last-mile delivery, IT consulting, real estate brokerages, salons and barbershops, and gig platforms. The prong B "outside the usual course of business" test is the most commonly failed prong, and failing any one of A, B, or C triggers reclassification with retroactive liability for withholding, UI/TDI/FLI contributions, interest, and penalties — plus exposure under the NJ Insurance Fraud Prevention Act for any 1099 the employer issued knowingly to a misclassified worker. Construction has its own statute (Construction Industry Independent Contractor Act, N.J.S.A. 34:20-1) that layers on top of the ABC test and presumes employee status. Treat any 1099 issued in NJ as a presumptive misclassification risk and document the ABC analysis contemporaneously.
-
-## 2. NJ Gross Income Tax (GIT) — Withholding Brackets 2025
-
-### 2.1 Statutory framework
-
-- **NJ GIT statutory basis** — NJ GIT is imposed under N.J.S.A. 54A:2-1. Employer withholding obligations sit at N.J.S.A. 54A:7-1 ("Requirement of withholding tax from wages"). The Division of Taxation publishes the rate tables in the NJ-WT booklet, which is reissued annually. For 2025 the rates below are drawn from the NJ-WT booklet effective January 1 2025 (Publication NJ-WT, January 2025 revision). NJ uses **separate** withholding tables by filing status (single, married/civil union joint, married/civil union separate, head of household, qualifying surviving spouse) and by payroll frequency (weekly, biweekly, semimonthly, monthly, daily/miscellaneous). Unlike federal withholding post-TCJA, NJ still operates on **allowances** rather than a dollar-based withholding mechanism, so the NJ-W4 is meaningfully different from the federal W-4 (see Section 6).  _(N.J.S.A. 54A:2-1; N.J.S.A. 54A:7-1; Publication NJ-WT, January 2025 revision)_
-
-### 2.2 2025 GIT brackets — Single / married filing separately
-
-**2025 GIT brackets — Single / married filing separately**
-
-| Taxable income (annualized) | Marginal rate |
-| --- | --- |
-| $0 – $20,000 | 1.4% |
-| $20,000 – $35,000 | 1.75% |
-| $35,000 – $40,000 | 3.5% |
-| $40,000 – $75,000 | 5.525% |
-| $75,000 – $500,000 | 6.37% |
-| $500,000 – $1,000,000 | 8.97% |
-| Over $1,000,000 | **10.75%** (the millionaire surtax bracket) |
-
-### 2.3 2025 GIT brackets — Married/CU filing jointly, head of household, qualifying surviving spouse
-
-**2025 GIT brackets — Married/CU filing jointly, head of household, qualifying surviving spouse**
-
-| Taxable income (annualized) | Marginal rate |
-| --- | --- |
-| $0 – $20,000 | 1.4% |
-| $20,000 – $50,000 | 1.75% |
-| $50,000 – $70,000 | 2.45% |
-| $70,000 – $80,000 | 3.5% |
-| $80,000 – $150,000 | 5.525% |
-| $150,000 – $500,000 | 6.37% |
-| $500,000 – $1,000,000 | 8.97% |
-| Over $1,000,000 | **10.75%** |
-
-### 2.3 2025 GIT brackets — Married/CU filing jointly, head of household, qualifying surviving spouse
-
-> Verify: rates above mirror the 2024 brackets; the brackets are not indexed for inflation under current NJ law (P.L. 1976, c. 47, as amended through P.L. 2020, c. 95 which created the over-$1M bracket at 10.75%). The 10.75% top rate has been at $1M for joint filers since the 2020 expansion of the millionaire surtax (previously this rate kicked in at $5M from P.L. 2018, c. 45).
-
-### 2.4 Supplemental wage rate
-
-- **NJ supplemental wage withholding rate (YTD wages > $1,000,000)** — 11.8% percent (Supplemental payments to employees whose YTD wages exceed $1,000,000)  _(NJ-WT booklet)_
-
-### 2.4 Supplemental wage rate
-
-- **Supplemental wage rate mechanics** — Supplemental wages (bonuses, commissions, retroactive pay increases, severance, awards, accumulated sick/vacation payouts, taxable fringes paid in a lump) are withheld at the flat NJ supplemental rate when the employer chooses not to aggregate with the most recent regular pay. The 11.8% rate is set to capture the 10.75% rate plus the average uplift from non-uniform allowance treatment, and is the published rate in the NJ-WT booklet for high-earner supplemental wages. For supplemental payments below the $1,000,000 YTD threshold, the otherwise-applicable top bracket rate (typically the marginal rate from the regular tables) applies. For supplemental wages paid to employees whose YTD wages have not yet exceeded $1M, the employer may use either (a) aggregation with the most recent regular pay period (more accurate) or (b) the rate implied by the employee's marginal bracket on the regular tables.  _(NJ-WT booklet)_
-
-### 2.4 Supplemental wage rate
-
-> Verify against the NJ-WT 2025 booklet, "Supplemental Wage Payments" instructions, which historically print at the back of the booklet under "Method II" alternative.
-
-### 2.5 Mechanics
-
-- **Withholding computation steps** — Withholding is computed each pay period by: 1. Annualizing the gross taxable NJ wages for the pay period (multiply by 52 for weekly, 26 for biweekly, 24 for semimonthly, 12 for monthly). 2. Subtracting the value of the allowances claimed on the NJ-W4 (each allowance is worth $1,000 of withholding-exempt income — this has not changed since 1996 and is not indexed). 3. Applying the appropriate bracket table to compute annualized tax. 4. Dividing back by the number of pay periods in the year. Note that NJ does NOT use a standard deduction in the withholding mechanic — the bracket tables effectively bake in the $0 starting point. The personal exemption ($1,000 per exemption) shows up only as the per-allowance adjustment in step 2.
-
-### 2.6 Common NJ-specific quirks
-
-- **401(k), HSA, cafeteria plan, civil union conformity quirks** — **Pension and 401(k) interaction:** NJ does NOT conform to federal §401(k) elective-deferral exclusion. 401(k) contributions are NOT excluded from NJ taxable wages, so Box 16 (state wages) on the W-2 will typically exceed Box 1 (federal wages) by the amount of 401(k) deferrals. NJ DOES allow §125 cafeteria-plan exclusions (premiums for health, dental, vision, and HSA contributions through a §125 plan) and §403(b) employee deferrals are also excluded. §457(b) deferrals are excluded. - **Section 125 dependent care:** NJ does conform on dependent care FSA exclusions up to the same federal limit. - **HSA employer contributions:** NJ does NOT exclude HSA contributions from state taxable wages even when excluded federally. Box 16 includes HSA contributions; this is a common W-2 reconciliation issue. - **Domestic Partnership Act and Civil Union Act:** NJ withholding tables for "married/civil union" apply to civil union partners; NJ does not separately track domestic partnerships for withholding tables but the credit/exemption structure on the NJ-1040 differs.
-
-## 3. Form NJ-927 — Quarterly Combined Return
-
-### 3.1 What NJ-927 covers
-
-- **NJ-927 combined return contents** — NJ-927 is one of the few truly combined state payroll returns in the United States. A single quarterly filing reports and remits: 1. NJ Gross Income Tax withheld (employee). 2. UI (Unemployment Insurance) contributions — employer share + employee share. 3. DI (Disability Insurance / TDI) — employer share + employee share. 4. FLI (Family Leave Insurance) — employee share only. 5. WF (Workforce Development Partnership) — employer share + employee share. 6. SWF (Supplemental Workforce Fund) — employer share + employee share. This contrasts with the federal model where Form 941 (federal income tax + FICA) is separate from Form 940 (FUTA). NJ merges the analogue of both — plus state-specific TDI and FLI — into NJ-927.
-
-### 3.2 Filing variants
-
-- **NJ-927 filing variants** — - **Form NJ-927** — standard quarterly version, used by employers that remit withholding quarterly or monthly. - **Form NJ-927-W** — weekly version, required for employers whose prior-year aggregate withholding exceeded $10,000 (these employers must remit withholding on a weekly basis via EFT but still file NJ-927-W quarterly with the weekly totals). - **Form NJ-927-H** — household employer annual version (one annual return rather than four quarterly). - **Form WR-30** — quarterly wage report (separate from NJ-927, lists each employee with quarterly wages and weeks worked). Required from every NJ-927 filer.
-
-### 3.3 Filing schedule (2025 calendar)
-
-All NJ-927 returns must be filed electronically through the NJ Employer Access portal at [myleavebenefits.nj.gov/labor/myleavebenefits/employer/ or business.nj.gov]. Paper returns are not accepted for any employer with more than zero employees.
-
-### 3.3 Filing schedule (2025 calendar)
-
-**Filing schedule (2025 calendar)**
-
-| Quarter | Period | Filing due date | Notes |
-| --- | --- | --- | --- |
-| Q1 2025 | Jan 1 – Mar 31 | April 30 2025 |  |
-| Q2 2025 | Apr 1 – Jun 30 | July 30 2025 | NJ uses the 30th of the month following quarter end, NOT the federal 31st. |
-| Q3 2025 | Jul 1 – Sep 30 | October 30 2025 |  |
-| Q4 2025 | Oct 1 – Dec 31 | February 2 2026 | Q4 is the only quarter where the due date moves to the federal-aligned end-of-January-equivalent (last day of the month following quarter close, adjusted for weekends). |
-
-### 3.3 Filing schedule (2025 calendar)
-
-> Verify the Q4 due date against the published NJ-927 instructions for 2025; historical practice has been the last business day of January. For 2025, January 31 is a Saturday, so the deadline moves to Monday February 2 2026.
-
-### 3.4 Payment frequency for withholding remittance
-
-**Payment frequency for withholding remittance**
-
-| Prior-year withholding | Remittance frequency |
-| --- | --- |
-| Less than $500 | Quarterly (with NJ-927) |
-| $500 – $10,000 | Monthly (Form NJ-500 or via EFT by the 15th of the following month) |
-| More than $10,000 | Weekly (EFT only, by the Wednesday following the payroll Friday for Fri-Tue payrolls, or the Friday following the payroll Sat-Wed for Wed-Fri payrolls) |
-
-### 3.4 Payment frequency for withholding remittance
-
-- **Remittance vs filing schedule distinction** — This thresholding mirrors but is NOT identical to the federal Form 941 lookback / semiweekly mechanics. An employer can be a federal semiweekly depositor but a NJ monthly remitter, or vice versa.
-
-### 3.5 Penalties
-
-- **NJ-927 penalties** — - **Late filing of NJ-927:** 5% per month or fraction (capped at 25%) plus $100 per month per N.J.S.A. 54:49-4. - **Late payment:** 5% of underpayment + interest at prime + 3% (2025 rate approximately 11.5% per annum). - **Late WR-30:** $5 per employee not reported, up to $25,000 per quarter. - **Failure to file electronically:** the Division has authority to assess a flat $50 per return. - **Insufficient funds:** $50 per dishonored payment.  _(N.J.S.A. 54:49-4)_
-
-## 4. TDI (Temporary Disability Insurance) and FLI (Family Leave Insurance)
-
-### 4.1 Statutory framework
-
-- **TDI and FLI statutory basis** — TDI is established under the Temporary Disability Benefits Law (TDBL), N.J.S.A. 43:21-25 et seq. (originally enacted 1948). FLI is established under N.J.S.A. 43:21-39.1 et seq. (enacted 2008). Both are administered by NJDOL's Division of Temporary Disability and Family Leave Insurance.  _(N.J.S.A. 43:21-25 et seq.; N.J.S.A. 43:21-39.1 et seq.)_
-
-### 4.2 2025 contribution rates
-
-**2025 contribution rates**
-
-| Component | Employee rate | Employer rate | Taxable wage base |
-| --- | --- | --- | --- |
-| TDI (state plan) | **0.23%** | **0.93%** (experience-rated, this is the new-employer benchmark) | **$165,400** for employee; **$43,300** for employer (the SUI base) |
-| FLI | **0.06%** | None | **$165,400** |
-
-### 4.2 2025 contribution rates
-
-> Verify against the NJDOL "2025 Rate Information" notice typically published in late November / early December 2024. The 0.23% employee TDI rate and 0.06% FLI rate represent significant reductions from peak 2020-2021 levels (TDI was 0.47% and FLI was 0.28% in 2021). FLI dropped from 0.14% in 2023 to 0.06% in 2024 and has held at 0.06% for 2025. These rates are recalculated annually based on the actuarial fund balance.
-
-### 4.3 Wage base mechanics — the dual base trap
-
-- **Dual TDI wage base mechanics** — NJ uses two different taxable wage bases for TDI: 1. **Employee TDI wage base:** $165,400 in 2025. The employee 0.23% withholding stops once an individual's YTD wages cross this number. 2. **Employer TDI wage base:** $43,300 in 2025 (this is the SAME as the SUI base). The employer 0.93% (or experience-rated) contribution stops at $43,300 per employee per year. This split is unusual and frequently mis-handled by out-of-state payroll software vendors. The result is that the employer TDI maxes out at $402.69 per employee per year (43,300 × 0.93%) while the employee maxes out at $380.42 (165,400 × 0.23%). FLI uses the $165,400 wage base for the employee side (no employer side).
-
-### 4.4 Private plan alternative
-
-- **Private plan opt-out for TDI/FLI** — Employers may opt out of the state TDI plan or state FLI plan and offer a "private plan" providing at least equivalent benefits, approved by NJDOL. If approved: - Employer pays for plan administration (no 0.93% state contribution). - Employees may still be subject to employee contribution (up to the state rate, if the plan permits). - Employer still files NJ-927 but reports the private plan number in the appropriate field. - Plan must be approved using Form DP-1 (TDI) or Form FL-1 (FLI). Private plans were historically common in NJ for unionized workforces and large employers; many smaller employers stay on the state plan because the administrative burden of a private plan exceeds the saving.
-
-### 4.5 WD/WF and SWF — the forgotten components
-
-**WD/WF and SWF rates**
-
-| Component | Employee rate | Employer rate | Wage base |
-| --- | --- | --- | --- |
-| Workforce Development Partnership (WF/WD) | **0.0425%** | **0.1175%** | $43,300 (the SUI base) |
-| Supplemental Workforce Fund for Basic Skills (SWF) | **0.0175%** | **0.0250%** | $43,300 |
-
-### 4.5 WD/WF and SWF — the forgotten components
-
-- **Combined WD/SWF totals and burden** — > Verify: the combined employee WD+SWF is 0.0600% (often shown as a single line on pay stubs as "WF/SWF" or just "WF"). Combined employer WD+SWF is 0.1425%. The total non-UI, non-TDI/FLI payroll tax burden is therefore: - **Employee:** 0.0600% on first $43,300 = max $25.98/year. - **Employer:** 0.1425% on first $43,300 = max $61.70/year. These small amounts get reported on NJ-927 in the same UI/WF section.
-
-## 5. SUI (State Unemployment Insurance)
-
-### 5.1 2025 SUI parameters
-
-- **2025 SUI parameters** — - **Taxable wage base:** $43,300 (employer); $43,300 (employee). Yes — NJ is one of the few states where employees ALSO pay UI directly out of wages. The employee UI contribution is currently **0.3825%** on the first $43,300, for a max of $165.62/year. - **New-employer rate (employer share):** **2.8%** plus the 0.1175% WD plus 0.0250% SWF = effective 2.9425%. - **Experience-rated employers:** rates range from a statutory minimum of 0.4% to a statutory maximum of 5.4% (plus the WF/SWF add-ons), determined annually by NJDOL based on Schedule A through E. NJ has been on Schedule C for 2024 and 2025 based on the trust fund balance. - **Rate notices:** NJDOL issues Form UI-1 to each experience-rated employer in August for the rate year starting July 1 (NJ uses a July-to-June rate year for SUI, NOT the calendar year — another quirk).
-
-### 5.1 2025 SUI parameters
-
-> Verify against the 2024-2025 and 2025-2026 NJ Employer Contribution Rate Notice.
-
-### 5.2 Employee SUI quirk
-
-- **Employee-funded UI states and W-2 reporting** — Most US states fund UI exclusively through employer contributions. NJ, PA, and AK are exceptions where employees contribute too. In NJ: - Employee UI rate: 0.3825% on first $43,300 (= $165.62 max/year). - This is withheld from paychecks and remitted with NJ-927. - On the W-2, employee UI/WF/SWF contributions show in Box 14 with the label "UI/WF/SWF" — these are deductible on Schedule A as state and local taxes (subject to the federal $10,000 SALT cap), though for most W-2 employees the standard deduction will swallow this.
-
-### 5.3 Voluntary contributions
-
-- **Voluntary contribution to buy down experience rate** — Like several states, NJ permits employers to make a "voluntary contribution" to buy down their experience rate before the rate year begins. The window is typically 30 days from the date of the UI-1 rate notice. This is rarely cost-effective except for employers whose rate jumped a full schedule (e.g., from 1.2% to 3.5% due to claims).
-
-## 6. Form NJ-W4 — State W-4
-
-### 6.1 Why a separate state W-4
-
-- **Reasons NJ has separate state W-4** — Unlike states that piggy-back on the federal W-4 (e.g., NM, CO pre-2022), NJ has its own Form NJ-W4 because: 1. NJ uses allowances ($1,000 per allowance), while the post-2020 federal W-4 abolished allowances. 2. NJ has separate filing statuses for civil union partners. 3. NJ permits the employee to elect a specific withholding "Rate Table" (A through E), letting two-earner couples avoid joint-rate under-withholding.
-
-### 6.2 The five rate tables
-
-- **NJ-W4 rate table selection feature** — The NJ-W4 has a unique feature: lines 3 and 4 let the employee select one of five rate tables (A, B, C, D, or E) without changing their actual filing status on the eventual NJ-1040. This is designed to fix the historical under-withholding for two-earner married couples where one spouse claims "married joint" but the other spouse's income pushes the joint return into a higher bracket.
-
-### 6.2 The five rate tables
-
-**The five rate tables**
-
-| Table | Use case |
-| --- | --- |
-| A | Single, or married filing separately |
-| B | Married/CU joint where employee is sole wage earner |
-| C | Married/CU joint where employee is the higher wage earner and spouse also works |
-| D | Married/CU joint where employee is the lower wage earner |
-| E | Head of household |
-
-### 6.2 The five rate tables
-
-In practice, table C is the most commonly mis-selected — many employees pick B (joint, sole earner) when both spouses work, leading to a balance due at NJ-1040 time.
-
-### 6.3 Mandatory completion
-
-- **NJ-W4 default and retention rule** — Employers must obtain a completed NJ-W4 from every new hire. If an employee fails to submit one, NJ default treatment is single with zero allowances, table A. NJ-W4 must be retained for at least four years after the date of the last payment of wages to the employee (N.J.A.C. 18:35-7.1).  _(N.J.A.C. 18:35-7.1)_
-
-### 6.4 NJ-W4 vs. federal W-4 interaction
-
-- **Misconception about federal W-4 satisfying NJ requirements** — A common misconception is that the federal W-4 satisfies NJ requirements. It does not. Even if the employer's HRIS only collects a federal W-4, NJ default rules apply (single/zero/Table A) until a separate NJ-W4 is filed. Many payroll systems offer a NJ-W4 e-signature step; verify this is enabled.
-
-## 7. New hire reporting
-
-### 7.1 Statutory basis
-
-- **New hire reporting statutory basis** — Federal PRWORA 1996 requires every employer to report new hires within 20 days. NJ implements this under N.J.S.A. 2A:17-56.61 with administration by the NJ Office of Child Support Services within the Department of Human Services.  _(N.J.S.A. 2A:17-56.61)_
-
-### 7.2 Mechanics
-
-- **New hire reporting mechanics** — - **Deadline:** 20 calendar days from the date of hire (= first day work is performed for pay). - **Where to file:** NJ New Hire Reporting Center at nj-newhire.com (operated under contract). Filing methods include online portal, secure FTP for large employers, mail (Form NJ-W4 + cover sheet), or fax. - **Required data points:** Employee name, address, SSN, date of hire (or rehire if 60+ day gap); employer name, address, FEIN. - **Rehires:** Must be re-reported if there has been a 60-day separation. - **Independent contractors:** NJ DOES require new hire reporting for contractors expected to be paid $2,500 or more in a calendar year (this is broader than federal, which is silent on contractors). The rule is at N.J.S.A. 2A:17-56.61(b).  _(N.J.S.A. 2A:17-56.61(b))_
-
-### 7.3 Penalties
-
-- **New hire reporting penalties** — $25 per unreported new hire; $500 if the failure is the result of a conspiracy between employer and employee to avoid the report (intended to catch arrangements to evade child support enforcement).
-
-## 8. Worker classification — the NJ ABC test
-
-### 8.1 Statutory basis
-
-- **ABC test statutory basis and case law** — The ABC test for unemployment compensation purposes is at N.J.S.A. 43:21-19(i)(6). The same test has been applied by the NJ Supreme Court to Wage and Hour Law cases (Hargrove v. Sleepy's, LLC, 220 N.J. 289 (2015)) and to wage payment law cases. As a practical matter the ABC test governs essentially every employment-vs-contractor question in New Jersey other than federal tax (which uses the IRS common law test).  _(N.J.S.A. 43:21-19(i)(6); Hargrove v. Sleepy's, LLC, 220 N.J. 289 (2015))_
-
-### 8.2 The three prongs
-
-- **ABC test three prongs** — A worker is presumed to be an EMPLOYEE unless the putative employer can show ALL THREE of: - **A — Freedom from control or direction over the performance of the service**, both under the contract of service and in fact. - **B — The service is either outside the usual course of business for which it is performed, OR the service is performed outside of all the places of business of the enterprise for which it is performed.** - **C — The individual is customarily engaged in an independently established trade, occupation, profession, or business.** All three must be satisfied. Failing any one prong = employee.  _(N.J.S.A. 43:21-19(i)(6))_
-
-### 8.3 Prong B is the killer
-
-- **Prong B examples in NJ case law** — In practice the prong that catches NJ businesses is B. The "usual course of business" inquiry asks whether the work performed by the contractor IS the business — a courier company hiring couriers, a cleaning company hiring cleaners, a coding consultancy hiring coders. The "outside of all the places of business" alternative is rarely satisfied either, because "place of business" is read broadly to include sites where the company conducts work. Examples that have failed prong B in NJ case law: - Sleepy's mattress delivery drivers (Hargrove). - Uber drivers (multiple NJDOL audits resulting in seven-figure assessments). - Construction subcontractors building the GC's projects. - Coding contractors working on the consultancy's billable client projects. - Adjuncts at private colleges. Examples that have passed prong B: - Outside counsel law firm hired by a non-law-firm business. - HVAC contractor servicing the building of a non-HVAC business. - Bookkeeper providing accounting services to a non-accounting business.
-
-### 8.4 Construction Industry Independent Contractor Act
-
-- **Construction Industry Independent Contractor Act requirements** — For construction (broadly defined to include building, structural alteration, demolition, repair, painting, decorating, roofing, electrical, plumbing, HVAC, masonry, excavation, drilling, paving, and related work), N.J.S.A. 34:20-1 et seq. ADDS additional requirements on top of the ABC test: 1. The ABC test must be satisfied; AND 2. The contractor must have its own business name, federal EIN, business address separate from the GC, and registration with appropriate state agencies (Division of Revenue, NJDOL). Misclassification in construction carries enhanced penalties — fines up to $2,500 first offense, $5,000 subsequent offenses, plus stop-work orders.  _(N.J.S.A. 34:20-1 et seq.)_
-
-### 8.5 NJ Insurance Fraud Prevention Act exposure
-
-- **Insurance fraud exposure for misclassification** — Issuing a 1099-NEC to a worker who should be a W-2 employee can constitute insurance fraud under N.J.S.A. 17:33A (if it reduces the workers' comp premium) — exposing the employer to civil penalties of up to $5,000 per misclassification plus treble damages. > **AUDIT FLASH POINT — ABC test, prong B, prong C.** NJDOL Wage and Hour Compliance ramped up cross-agency audits with the Division of Taxation starting 2020 under Executive Order 125. Audits typically pull 3-4 years of records. Document the ABC analysis contemporaneously for EVERY contractor, including: (1) the written contract showing freedom from control, (2) evidence the work is not the company's core business, (3) the contractor's separate business registration, EIN, marketing, other clients, and business insurance. Without this documentation, the burden of proof is on the employer and is almost always lost.  _(N.J.S.A. 17:33A)_
-
-### 8.6 What does NOT make someone a contractor
-
-These are common myths in NJ:
-- "We have a written contract calling them a contractor." — irrelevant if the ABC test fails.
-- "They wanted to be 1099." — irrelevant; the ABC test is non-waivable.
-- "They have their own LLC." — necessary but not sufficient.
-- "They invoice us." — necessary but not sufficient.
-- "They work part-time." — irrelevant.
-- "They work from home." — only relevant to prong B's secondary leg.
-
-## 9. Earned Sick Leave Law
-
-### 9.1 Statutory framework
-
-- **ESLL statutory basis and effective date** — The NJ Earned Sick Leave Law (ESLL), N.J.S.A. 34:11D-1 et seq., took effect October 29 2018. It is among the most expansive in the US — broader than NY's, broader than CT's, comparable to CA's.  _(N.J.S.A. 34:11D-1 et seq.)_
-
-### 9.2 Core entitlement
-
-- **ESLL core entitlement terms** — - **Accrual:** 1 hour of sick leave per 30 hours worked. - **Annual cap:** Employer may cap accrual and use at 40 hours per benefit year. - **Eligibility:** Effectively all NJ workers — full-time, part-time, temporary, seasonal. Limited exclusions: construction workers covered by a CBA, per-diem healthcare employees, public employees with other sick leave entitlements. - **Carryover:** Up to 40 hours of unused leave must carry over to the next year, OR the employer may pay out unused leave at year-end at the employee's regular rate. - **Front-loading alternative:** Employer may front-load 40 hours at the start of the year instead of accruing. - **Permissible uses:** Employee's own illness, family member's illness, school closure, domestic violence/sexual assault, public health emergency, school meeting attendance.  _(N.J.S.A. 34:11D-1 et seq.)_
-
-### 9.3 Documentation and payment
-
-- **ESLL documentation and payment rules** — - Pay rate during sick leave = the employee's normal hourly rate (not minimum wage). - Employer may require notice up to 7 days for foreseeable use, no advance notice for unforeseeable. - Employer may require documentation only if 3+ consecutive days are taken. - Sick leave is NOT a wage for purposes of the Wage Payment Law — unused balances need not be paid out on termination unless the employer's policy or CBA so provides.
-
-### 9.4 Recordkeeping
-
-- **ESLL recordkeeping requirement** — Five-year retention requirement for all accrual, use, and payment records. Failure to maintain records creates a presumption that the employee's allegation of accrued leave is correct (N.J.S.A. 34:11D-6).  _(N.J.S.A. 34:11D-6)_
-
-### 9.5 Penalties
-
-- **ESLL penalties** — Up to $250 first violation, $500 subsequent, plus treble damages on unpaid sick leave, plus attorney's fees. NJDOL Wage and Hour can also order reinstatement and back pay for retaliation.
-
-## 10. Wage Payment Law — pay frequency and method
-
-### 10.1 Frequency
-
-- **Minimum pay frequency requirement** — N.J.S.A. 34:11-4.2: "Every employer shall pay the full amount of wages due to his employees at least twice during each calendar month, on regular paydays designated in advance by the employer." This is the bi-weekly minimum. Exceptions: - **Bona fide executive, supervisory, or other special classification** workers (FLSA exempt under federal regs) — may be paid monthly. - **Sales reps on commission** — commissions may be paid monthly even if base salary is bi-weekly. Weekly pay is permissible and common for hourly workers. Semimonthly (15th and last day) is also permissible.  _(N.J.S.A. 34:11-4.2)_
-
-### 10.2 Pay day timing
-
-- **Payday timing after pay period end** — Wages must be paid within 10 working days after the end of the pay period (N.J.S.A. 34:11-4.2). So a pay period ending Friday Jan 3 2025 must be paid by Friday Jan 17 2025 at the latest.  _(N.J.S.A. 34:11-4.2)_
-
-### 10.3 Payment method
-
-- **Permitted wage payment methods** — Permitted methods: - Cash. - Check (must be on a NJ bank or capable of clearing without a fee to the employee). - Direct deposit (only with employee written authorization, never as a condition of employment). - Payroll card (subject to consumer protections under the NJ Wage and Hour Law amendments at N.J.A.C. 12:55-2.4).  _(N.J.A.C. 12:55-2.4)_
-
-### 10.4 Wage statements
-
-- **Itemized wage statement requirements** — The Wage Theft Act amendments of 2019 (P.L. 2019, c. 212) require itemized wage statements showing gross wages, deductions itemized, net wages, rate of pay, hours worked (for hourly), and pay period dates. NJ does NOT require the printed paystub to identify the employer's FEIN, unlike CA.  _(P.L. 2019, c. 212)_
-
-### 10.5 Final wages
-
-- **Final wage payment timing on termination** — Final wages on termination must be paid by the next regular payday (N.J.S.A. 34:11-4.3). NJ does NOT require immediate final pay on termination — distinguishing it from CA, where same-day final pay is required for involuntary termination.  _(N.J.S.A. 34:11-4.3)_
-
-### 10.6 Wage Theft Act (2019)
-
-- **Wage Theft Act penalty expansion** — P.L. 2019, c. 212 substantially expanded penalties: - Treble damages and attorney's fees on unpaid wages. - 6-year statute of limitations (was 2 years). - Personal liability for owners, directors, officers, and managing agents. - Criminal liability for willful violations.  _(P.L. 2019, c. 212)_
-
-## 11. NY–NJ cross-border issues
-
-### 11.1 No reciprocity for residents
-
-- **NJ-NY reciprocity absence and credit mechanics** — NJ does NOT have a reciprocal income tax agreement with New York. (NJ does have reciprocity with Pennsylvania under the 1977 Reciprocal Personal Income Tax Agreement, which is a different matter — see Section 11.4.) For an NJ resident commuting to a NY employer: - NY taxes the wage income at NY rates as NY-source income, withheld via NY IT-2104. - NJ taxes the same wage income as resident income of an NJ resident. - NJ grants a credit for taxes paid to NY under N.J.S.A. 54A:4-1 ("credit for income tax of another state"). - The credit is limited to the LESSER of NY tax actually paid on the wages OR the NJ tax that would have been imposed on those same wages. In practice the NJ credit fully offsets the NJ tax for most NJ-resident NYC commuters because NY's rates (4% to 10.9% state plus NYC's 3.876% top for residents but NOT for non-residents) typically exceed NJ's. For NJ residents working in NYC the relevant comparison is NY state only (NYC personal income tax does NOT apply to non-NYC-residents), so the credit math is essentially NY state vs. NJ.  _(N.J.S.A. 54A:4-1)_
-
-### 11.2 New York's "convenience of the employer" rule
-
-- **NY convenience of the employer rule and NJ interaction** — NY applies a convenience of the employer rule (NY Tax Law §601, 20 NYCRR 132.18) under which a day worked at the employee's home OUTSIDE NY for the convenience of the employee (rather than the necessity of the employer) is treated as a NY workday, sourced to NY. This rule has been highly contested and was largely upheld by NY courts (most recently in Zelinsky v. NY Tax Appeals Tribunal). For NJ residents who work some days at home in NJ and some days in NY, this means: - NY claims the NJ work-from-home days as NY-source. - NJ credits the NY tax on those days under the §54A:4-1 mechanic. NJ does not apply a reverse convenience rule. NJ taxes its residents on worldwide income but treats wages earned actually in NJ (whether for an NJ or NY employer) as NJ-source.  _(NY Tax Law §601; 20 NYCRR 132.18)_
-
-### 11.3 NJ employer with NY-resident employee
-
-- **NY resident working in NJ tax treatment** — This is the cleaner case. NY resident working in NJ: - NJ withholds GIT on NJ-source wages. - NY resident is taxed by NY on worldwide income. - NY grants a credit for the NJ tax paid (NY Tax Law §620). - No "convenience" issue because NY does not apply the rule to NJ-source income (the rule runs the other direction).  _(NY Tax Law §620)_
-
-### 11.4 PA–NJ reciprocity
-
-- **PA-NJ reciprocity agreement and forms** — NJ and PA have a full reciprocity agreement: a PA resident working in NJ pays only PA tax (NJ does not withhold) and an NJ resident working in PA pays only NJ tax (PA does not withhold). To use the reciprocity, the employee files: - **Form NJ-165** — Employee's Certificate of Non-Residence in NJ (used by a PA resident telling an NJ employer to withhold PA, not NJ). - **Form REV-419** — used in the reverse direction (PA employer with NJ resident). The reciprocity covers WAGES ONLY. It does not cover self-employment, partnership, S-corp K-1, rental, or investment income.  _(1977 Reciprocal Personal Income Tax Agreement)_
-
-### 11.5 Worked example deferral
-
-See worked example 12.1 (NJ resident commuting to NYC) and example 12.3 (multi-state with NY commuters).
-
-> **AUDIT FLASH POINT — NY/NJ residency and source allocation.** The NY Department of Taxation and Finance aggressively audits NJ residents claiming reduced NY workday counts post-COVID. Maintain daily contemporaneous workday logs (location-stamped calendar entries, badge swipes, expense receipts) for at least 6 years. Conversely NJ Division of Taxation audits NJ residents who claim large credits for NY tax to verify the NY return was actually filed and the credit is computed correctly under N.J.A.C. 18:35-4.1. Mismatches between the W-2 Box 16 (NJ wages) and the NY Form IT-203 non-resident allocation are the single most common trigger.
-
-## 12. BAIT — Pass-Through Business Alternative Income Tax
-
-### 12.1 What BAIT is
-
-- **BAIT overview and statutory basis** — BAIT is NJ's response to the federal SALT cap. P.L. 2019, c. 320 (enacted January 2020), as amended by P.L. 2021, c. 419 (effective 2022), permits a pass-through entity (partnership, S-corp, LLC taxed as either) to elect to pay an entity-level tax at NJ rates, with the partners/members claiming a refundable credit on their NJ-1040 for their share of the BAIT paid. The federal benefit is that the BAIT is a deductible business expense at the entity level, bypassing the $10,000 SALT cap at the individual level.  _(P.L. 2019, c. 320; P.L. 2021, c. 419)_
-
-### 12.2 BAIT rates 2025
-
-**BAIT rates 2025**
-
-| Entity distributive share | Rate |
-| --- | --- |
-| First $250,000 | 5.675% |
-| Next $750,000 (250K–1M) | 6.52% |
-| Next $4M (1M–5M) | 9.12% |
-| Over $5M | 10.9% |
-
-### 12.2 BAIT rates 2025
-
-> Verify against PTE-100 instructions for 2025.
-
-The rates approximate but do not exactly track the GIT rates. The 10.9% top BAIT rate is slightly above the 10.75% top GIT rate.
-
-### 12.3 BAIT estimated payments
-
-**BAIT estimated payments schedule**
-
-| Quarter | Period | Due date 2025 |
+# New Jersey employer payroll: withholding, NJ-927, UI, TDI, FLI, workforce funds, NJ-W-3 and minimum wage (2026, with 2025 notes)
+
+Figures are for 2026 unless a line says 2025. Worker contribution rates and wage bases run by calendar year. Employer unemployment rates run by fiscal rate year, July 1 to June 30 ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)). Income tax withholding uses the rate tables in the Division of Taxation's NJ-WT booklet (September 2025 revision) and on Form NJ-W4 ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)). This Guide points to those tables and does not reproduce them. A dated section near the end covers 2025 payrolls.
+
+## Scope and who this is for
+
+- **Covers:** private employers with employees working in New Jersey. It covers:
+  - New Jersey Gross Income Tax withholding, Form NJ-W4 and the NJ-WT rate tables;
+  - deposits (Form NJ-500), the quarterly Form NJ-927 or NJ-927-W, and the WR-30 wage report;
+  - worker and employer contributions for unemployment insurance (UI), temporary disability insurance (TDI, shown as "DI" on NJDOL tables), family leave insurance (FLI), and the Workforce Development Partnership and Supplemental Workforce funds (WF/SWF);
+  - the annual reconciliation, Form NJ-W-3, and Form W-2 dates;
+  - new hire reporting;
+  - the minimum wage for 2025 and 2026;
+  - Pennsylvania and New York residents, in summary;
+  - the ABC test for UI, in summary.
+- **Does not cover:**
+  - federal payroll taxes (Forms 941, 940, W-2 federal rules);
+  - the employee's own NJ-1040 or NJ-1040NR return;
+  - the pass-through business alternative income tax (BAIT) and the Corporation Business Tax;
+  - earned sick leave, pay frequency, final pay and other wage-and-hour rules apart from the minimum wage;
+  - public employers, reimbursable nonprofits, agricultural employers, and household (domestic) employers beyond one boundary row;
+  - private TDI or FLI plan design;
+  - UI coverage of workers who work in more than one state.
+- **Cross-border workers.** Where an employee lives or works outside New Jersey, residency, day allocation and the convenience rule are covered in the Guide **us-multi-state-residency-and-allocation**. Use it for any employee who is not a New Jersey resident working only in New Jersey.
+
+## Ask the client first
+
+- Is the business registered with New Jersey as an employer? It needs a federal employer identification number (FEIN) to withhold New Jersey tax ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- Is it a new employer? When did it first become liable? It keeps new employer rates until it has three consecutive full or partial years of contribution experience ([NJDOL Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+- What rates are on its "Notice of Employer Contribution Rates" for July 2025 to June 2026, and for July 2026 to June 2027? NJDOL no longer mails individual rate notices. The employer downloads them from Employer Access ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- Is TDI or FLI covered by the State Plan or by an approved private plan?
+- Where does each employee live, and where do they work, on how many days? Has every Pennsylvania resident signed Form NJ-165?
+- Does every employee have a signed Form NJ-W4? Has anyone written "EXEMPT" on line 6, and in which year?
+- How much New Jersey income tax did the employer withhold in the prior year? How much does it withhold each month now?
+- Are any workers paid on Form 1099? Who decided they were contractors, and on what evidence?
+- How many employees does it have? Is it a seasonal business? Both change the minimum wage.
+
+## The method, step by step
+
+1. **Register** online as a New Jersey employer. You need an FEIN. A corporate entity also needs its 10-digit New Jersey corporate ID from the Division of Revenue and Enterprise Services ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+   - **When an employer becomes liable:** it may be subject to the Unemployment Compensation Law once it employs one or more people and pays wages of $1,000 or more in a calendar year ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+   - An employer subject to the federal unemployment tax (FUTA) is automatically subject, unless New Jersey law excludes the services.
+   - A business that acquires a subject employer's business, or substantially all its assets, becomes subject at once.
+2. **Report each new hire.** Report each newly hired or rehired employee, and each employee who returns to work after a separation. Send the employee's name, address and Social Security number, and the employer's name, payroll address and FEIN, to the New Hire Operations Center run by the Department of Human Services ([Employer Handbook, UI](https://www.nj.gov/labor/ea/help/employer_handbook/ui.shtml)). Federal law requires the report no later than 20 days after the hire date. An employer that reports electronically may instead send 2 monthly transmissions, not less than 12 days nor more than 16 days apart. A state may set a shorter time ([42 U.S.C. 653a](https://www.law.cornell.edu/uscode/text/42/653a)).
+3. **Collect Form NJ-W4** from each employee. Do not use the federal Form W-4 to work out New Jersey withholding: employees cannot claim personal exemptions on the federal form. Keep the NJ-W4 and send it to the Division only if asked ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)). Read the form this way ([Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf)):
+   - Box 1 (single) or box 3 (married/civil union partner separate) means Rate A.
+   - Box 2, 4 or 5 with line 3 blank means Rate B.
+   - If the employee enters a letter on line 3 from the wage chart, use the rate the employee chose (A to E). The chart is meant for joint filers, heads of household and qualifying widow(er)s where the spouse or civil union partner works, or the employee has more than one job or more than one source of income, and the combined total of all wages is greater than $50,000 ([Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf)).
+   - Line 4 gives the number of allowances. Line 5 gives any extra amount to withhold each pay.
+   - **"EXEMPT" on line 6** is allowed only in these cases:
+     - single, or married/civil union partner filing separately, with wages plus taxable nonwage income of $10,000 or less ([Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf));
+     - married/civil union couple filing jointly, with the couple's combined wages plus taxable nonwage income of $20,000 or less ([Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf));
+     - head of household or qualifying widow(er), with $20,000 or less ([Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf)).
+   - An exemption is good for one year only. The employee must file a new form each year.
+4. **Work out whose wages are subject** ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+   - **New Jersey residents working in New Jersey:** withhold on all wages.
+   - **New Jersey residents working in another state:** you need not withhold New Jersey tax only if all three of these apply:
+     - the employee works totally outside New Jersey;
+     - the employee is subject to the other state's withholding tax; and
+     - that state's withholding equals or exceeds New Jersey's.
+     If any one fails (for example, the employee works part of the time in New Jersey, or the other state's rate is lower), withhold New Jersey tax as well. Reduce it by the tax you withhold for the other state.
+   - **Nonresidents:** withhold on pay for work done in New Jersey. If you do not have exact records of New Jersey earnings, allocate: days worked in New Jersey ÷ total days worked all year × total wages. If you use neither method, withhold on all pay, wherever earned.
+   - **Pennsylvania residents:** do not withhold New Jersey tax if the employee gives you Form NJ-165. Otherwise, withhold (see step 5).
+   - **Residents of Delaware, Nebraska, New York and similar states** who work from home for a New Jersey employer: see the convenience rule in the boundary table.
+5. **Pennsylvania residents: take Form NJ-165.** New Jersey and Pennsylvania have a reciprocal agreement.
+   - Keep the signed form on file. Do not send it to the Division. If the employee does not complete it, withhold New Jersey tax ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+   - By signing, the employee authorizes you to withhold Pennsylvania personal income tax instead. An employee who moves out of Pennsylvania must tell you within 10 days ([Form NJ-165](https://www.nj.gov/treasury/taxation/pdf/current/nj165.pdf)).
+   - **Military spouses:** no New Jersey withholding only if both apply: the employee's spouse is a member of the armed forces present in New Jersey on military orders, and the employee files Form NJ-165 with a copy of the spousal military ID. Without both, withhold ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+6. **Compute withholding** from the NJ-WT rate tables or the percentage method, using the rate letter, allowances and any extra amount from the NJ-W4 ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)). See "Figures" for the allowance values and supplemental wages.
+7. **Deduct worker contributions** each pay: UI, WF/SWF, TDI and FLI, at the calendar-year rates, up to each wage base. Stop each one when the employee's wages from you reach its base. TDI and FLI worker deductions apply only under the State Plan. Under an approved private plan, the worker's cost cannot be more than under the State Plan ([Employer Handbook, TDI and FLI](https://www.nj.gov/labor/ea/help/employer_handbook/tdi-fli.shtml)).
+8. **Deposit withholding** under the monthly or weekly rules (see "Filing and payment"), using Form NJ-500.
+9. **File Form NJ-927** (or NJ-927-W for weekly payers) and the **WR-30** each quarter, electronically, even for a quarter with no tax withheld. The NJ-927 reports income tax withheld and UI, SWF, WF, FLI and DI wages and contributions together ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)). The WR-30 lists each employee's Social Security number, name, gross wages paid and base weeks, for services in New Jersey only ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+10. **At year end:** give Forms W-2 to employees by the federal date, file Form NJ-W-3 with the W-2s electronically, and send New Jersey copies of 1099s where required (see "Filing and payment").
+11. **Check the minimum wage** for the employer's size and type, and **test any contractor** against the ABC test.
+
+## Figures for 2026 (and 2025 where they differ)
+
+### Worker (employee) contributions, by calendar year ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/))
+
+| Item | 2025 | 2026 |
 | --- | --- | --- |
-| Q1 | Jan 1 – Mar 31 | April 15 2025 |
-| Q2 | Apr 1 – May 31 | June 16 2025 (June 15 is Sunday) |
-| Q3 | Jun 1 – Aug 31 | September 15 2025 |
-| Q4 | Sep 1 – Dec 31 | January 15 2026 |
+| UI | 0.3825% | 0.3825% |
+| WF/SWF (combined) | 0.0425% | 0.0425% |
+| TDI (DI) | 0.23% | 0.19% |
+| FLI | 0.33% | 0.23% |
+| Wage base for UI and WF/SWF | $43,300 | $44,800 |
+| Wage base for worker TDI and FLI | $165,400 | $171,100 |
 
-### 12.3 BAIT estimated payments
+- UI and WF/SWF together are 0.425% of wages up to the UI base.
+- Of the worker's 0.0425%, 0.0175% goes to the Supplemental Workforce Fund ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+- **Two bases.** Worker TDI and FLI use the higher base. Since January 1, 2020, the UI and employer DI base has been 28 times the statewide average weekly wage. The worker DI and FLI base has been 107 times that wage ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+- **2027 is already published:** $46,400 for UI, WF/SWF and employer TDI, and $177,100 for worker TDI and FLI. The 2027 worker rates are not yet published ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- **Two employers.** Each employer deducts up to the maximum on its own payroll. A worker whose deductions from two or more employers exceed the annual maximum claims the excess on the New Jersey income tax return with Form NJ-2450 ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
 
-- **BAIT estimated payment mechanics and safe harbor** — This is the payroll-adjacent piece relevant to this skill. A BAIT-electing entity must make estimated payments as scheduled. Note the quirky NJ estimated tax quarters (3-2-3-4 split) match the federal individual estimate schedule but differ from the corporate schedule. Estimates are paid via Form PTE-150 (online through the Division of Taxation portal). Safe harbor is 80% of current-year liability or 100% of prior-year (110% if prior AGI > $150K).
+### Employer contributions, by fiscal rate year ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/); [Table C, July 2026 to June 2027](https://www.nj.gov/labor/ea/assets/PDFs/FY20262027%20TABLE%20C.pdf))
 
-### 12.4 BAIT election deadline
+| New employer | July 2024 to June 2025 | July 2025 to June 2026 | July 2026 to June 2027 |
+| --- | --- | --- | --- |
+| UI | 2.9825% | 2.6825% | 2.6825% |
+| WF/SWF | 0.1175% | 0.1175% | 0.1175% |
+| Total UI plus WF/SWF | 3.1% | 2.8% | 2.8% |
 
-- **PTE-100 election deadline** — The PTE-100 election must be filed by March 15 of the year following the tax year (so the 2025 election is due by March 15 2026). The election is annual — must be re-filed each year. Once filed, it is irrevocable for that year. > **AUDIT FLASH POINT — BAIT estimated payment quarterly deadlines.** Missing a BAIT estimate triggers underpayment penalty under N.J.S.A. 54:9-1 (interest at prime + 3%, currently ~11.5%) AND raises the risk that the IRS challenges the federal deduction as not "paid" in the year claimed. Federal Notice 2020-75 specifies that the SALT cap workaround requires the state tax to be PAID by the entity in the tax year; aggressive IRS auditors have argued that late estimates push the deduction to the following year. Schedule estimates calendar-locked at entity formation and run a year-end true-up by December 15 to ensure the full liability is paid in-year.  _(N.J.S.A. 54:9-1; Federal Notice 2020-75)_
+- **New employer TDI (DI):** 0.5% in each of these three rate years ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- **The employer pays no FLI.** FLI is funded by workers ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- **Employer wage base:** employer UI, WF/SWF and TDI stop at $44,800 per employee for 2026 ($43,300 for 2025).
+- **WF/SWF is carved out of the UI rate, not added to it.** Table C shows a total rate, of which 0.1000% goes to the Workforce Development fund and 0.0175% to the Supplemental Workforce fund. The rest is UI. So the 2.8% new employer rate for July 2026 to June 2027 is 2.6825% UI plus 0.1175% WF/SWF ([Table C](https://www.nj.gov/labor/ea/assets/PDFs/FY20262027%20TABLE%20C.pdf)).
+- **Experience-rated employers.** From July 1 of the fourth year of liability, the UI rate depends on the employer's own reserve ratio ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)). NJDOL is using Table C for July 2026 to June 2027. On Table C, total rates for positive reserve ratios run from 0.5% (17.00% and over) to 3.6%. Deficit reserve ratios run from 5.1% to 5.8%. There is also a specially assigned rate of 5.4% (positive) or 5.8% (negative) ([Table C](https://www.nj.gov/labor/ea/assets/PDFs/FY20262027%20TABLE%20C.pdf)). Use the rate on the employer's notice.
+- **Experience-rated TDI.** The employer's TDI rate is also experience-rated and shown on its notice.
+- **Voluntary contribution.** An experience-rated employer may lower its UI rate by paying a voluntary contribution. NJDOL must receive it within 30 days of the date of the "Notice of Employer Contribution Rates" (Form UC-45 is the voluntary contribution report). Notices are now issued through Employer Access rather than mailed, so confirm the deadline with NJDOL. It lowers only the employer UI rate.
+- **Rate years straddle calendar years.** A calendar-year payroll uses the old rate from January to June and the new rate from July to December. The wage base runs by calendar year.
 
-### 12.5 Coordination with NJ-1040 / NJ-927
+### Withholding ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf); [Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf))
 
-- **BAIT reporting separation from payroll filings** — BAIT is NOT reported on NJ-927. NJ-927 is exclusively for payroll items (withholding, UI, TDI, FLI, WF). BAIT is reported on the PTE-100 (annual) and PTE-150 (estimates) — a separate filing track entirely. The owner-level mechanics: 1. Entity pays BAIT. 2. Entity issues NJ K-1 reporting each owner's share of BAIT paid. 3. Owner claims refundable credit on NJ-1040 line for "BAIT credit." 4. If owner is also a wage-earner of the entity, the W-2 wages flow through NJ-927 unchanged; the BAIT credit only offsets the K-1 share.
-
-## 13. Worked examples
-
-### 13.1 Example: NJ-resident commuting to NYC employer (5-day in-office)
-
-**Facts:** Maria is an NJ resident living in Hoboken. She works for Acme Bank Inc., a NY corporation headquartered in Manhattan. She works in the NYC office 5 days a week, no work-from-home days. Annual salary: $180,000. Maria is single, claims 1 NJ allowance.
-
-**NY withholding (computed by Acme's NY-side payroll):**
-- NY treats Maria as a NY non-resident.
-- NY IT-2104 controls NY withholding.
-- NYC tax does NOT apply (Maria is not a NYC resident).
-- NY state tax on $180K for a single non-resident ≈ approximately $10,500 per the 2025 NY non-resident tables (subject to verification with the `us-ny-payroll` skill).
-
-**NJ withholding:**
-- Maria is an NJ resident, so NJ requires NJ-resident withholding.
-- BUT NJ allows the employer to NOT withhold NJ tax if (a) the employer is NOT registered to do business in NJ AND (b) the employee's NJ tax would be fully offset by the credit for NY tax under §54A:4-1.
-- Acme is a NY corporation not registered in NJ. Acme could choose to NOT withhold NJ tax. Many large NY employers DO withhold NJ tax as a courtesy to their NJ-resident employees, but they are not legally required to.
-
-**On NJ-1040 (Maria's annual return):**
-- NJ tax on $180,000 wages (single, after the standard $1,000 personal exemption) ≈ approximately $9,500.
-- Credit for NY tax paid (~$10,500), capped at the lesser of NY tax or NJ tax = $9,500.
-- Net NJ liability = $0.
-- Maria gets no NJ refund of NY tax — the credit only goes up to NJ liability.
-
-**Practical recommendation:** Acme should NOT withhold NJ. Maria will get a small NY refund / owe nothing in NJ. If Acme withholds NJ, Maria has to file NJ-1040 and get the full withholding back as refund — administrative drag with no benefit.
-
-**TDI/FLI/UI implications:**
-- Maria's wages are NY-source for income tax but NJ generally would NOT impose TDI/FLI/UI on Maria because Acme has no NJ nexus. Maria has no NJ UI coverage either — this is a real coverage gap. If she's terminated she may have a UI claim against NY only.
-
-### 13.2 Example: NJ employer with all NJ employees
-
-**Facts:** Garden State Bagels LLC is an NJ LLC with 12 employees all working at a single retail location in Princeton NJ. Owner-employee Sara receives a $90K salary (single, claims 2 allowances). Counter staff are paid $18/hr, average 30 hrs/week. Quarterly wages Q1 2025 total $180,000 across the 12 employees.
-
-**Q1 2025 NJ-927 computation:**
-
-GIT withholding on Sara ($90K, single, 2 allowances, Table A):
-- Annualized taxable wages: $90,000 − $2,000 allowances = $88,000.
-- NJ tax on $88,000 single: approximately $3,600 (per Table A brackets).
-- Per-pay-period withholding (biweekly, 26 periods): ~$138.46 per check.
-- Q1 (6 pay periods): ~$831 withheld from Sara.
-
-GIT withholding on counter staff: averaging ~$3-8 per check; estimated Q1 aggregate ~$1,200.
-
-Total GIT withholding Q1 ≈ $2,031.
-
-UI/TDI/FLI/WF for Q1 (assume Q1 wages well under wage bases for all employees):
-- Employer UI (new-employer rate 2.8%): 2.8% × $180,000 = $5,040.
-- Employer TDI (0.93%): 0.93% × min($180K, 12 × $43,300) = 0.93% × $180,000 = $1,674 (assumes no individual employee crossed $43,300 in Q1).
-- Employer WF (0.1175%): $211.50.
-- Employer SWF (0.0250%): $45.
-- Employee UI (0.3825%): $688.50.
-- Employee TDI (0.23%): $414.
-- Employee FLI (0.06%): $108.
-- Employee WF (0.0425%): $76.50.
-- Employee SWF (0.0175%): $31.50.
-
-**Q1 NJ-927 total remittance:** GIT $2,031 + employer payroll taxes $6,970.50 + employee payroll taxes $1,318.50 ≈ $10,320.
-
-**Remittance schedule:** Because Garden State Bagels' prior-year withholding was likely below $10K, they remit GIT monthly with NJ-500. UI/TDI etc. remit quarterly with NJ-927 itself.
-
-**WR-30 filing:** Lists each of the 12 employees with their Q1 wages and number of base weeks worked.
-
-### 13.3 Example: Multi-state employer with NY commuters AND NJ residents
-
-**Facts:** Acme SaaS Inc. is a Delaware corp with offices in Manhattan (HQ, 50 employees) and Jersey City NJ (regional, 20 employees). It has employees in five states (NY, NJ, CT, PA, FL remote). For this example we focus on three specific employees:
-- **Pat** — NY resident, works in Jersey City office 5 days/week (NJ-source income, NY resident).
-- **Quinn** — NJ resident, works in Manhattan office 3 days, Jersey City 2 days (mixed source, NJ resident).
-- **Rory** — NJ resident, works in Manhattan office 5 days (NY-source, NJ resident — like example 13.1).
-
-**Pat (NY resident, NJ work):**
-- NJ withholds GIT on Pat's full wages (NJ-source under NJ rules).
-- NJ TDI/FLI/UI/WF apply (employer NJ nexus, Pat is NJ worker).
-- NY withholds NY tax (Pat is NY resident, NY taxes worldwide).
-- On Pat's NY IT-201 (resident return), Pat claims NY's credit for NJ tax paid under NY Tax Law §620.
-
-**Quinn (NJ resident, mixed work):**
-- NJ withholds GIT (Quinn is NJ resident; NJ source on Jersey City days; on NY days, NJ either does NOT withhold OR withholds and Quinn claims credit on NJ-1040).
-- NY withholds NY tax on the Manhattan days as NY-source.
-- BUT — convenience rule. If Acme has classified Quinn's 2 Jersey City days as "for the employer's necessity" (e.g., Acme operates the JC office and Quinn's role requires JC presence), the days are NJ-source. If Quinn is just choosing to work from JC for convenience, NY claims the days as NY-source under the convenience rule.
-- Best practice: Acme documents the necessity of the JC days (e.g., Quinn manages the JC team).
-- NJ TDI/FLI/UI/WF: Apply to the NJ-source portion. Allocation by day-count is the common approach.
-
-**Rory (NJ resident, NY work):**
-- See example 13.1.
-- Acme has an NJ nexus through the JC office, so unlike a pure NY employer Acme is registered in NJ and likely withholds NJ tax. Rory will get NJ refund and claim NY credit on NJ-1040.
-
-**NJ-927 for Acme:**
-- Acme files ONE NJ-927 for all NJ-source wages aggregated (Pat full, Quinn allocated, Rory allocated based on actual NJ days if any).
-- WR-30 lists Pat, Quinn, Rory (and other employees with any NJ-source wages) with NJ-allocated wages.
-
-**Audit risk:** Acme should expect a NJDOL audit if (a) WR-30 wages diverge substantially from W-2 Box 16 NJ wages, (b) employees with NJ addresses do not appear on WR-30, or (c) the day-count allocation for Quinn is not documented with calendar evidence.
-
-> **AUDIT FLASH POINT — NY-resident commuter vs NJ-resident commuter source rules.** The day-count allocation is the highest-risk area in multi-state payroll. Maintain (a) a written work-location policy, (b) per-employee day-count logs (calendar, badge, VPN, or time-tracking app), (c) a year-end reconciliation between payroll records and W-2 boxes 1, 15, 16, 17, and 20. Mismatches between Box 16 NJ and Box 16 NY (which can both exist on the same W-2) often trigger dual audits. Build the workpaper before issuing W-2s, not after.
-
-### 13.4 Example: Contractor misclassification reclassified — assessment math
-
-**Facts:** Lakeshore Construction LLC is an NJ GC. In 2023 it paid 8 "subcontractors" $50,000 each ($400,000 aggregate) on 1099-NEC. NJDOL audits in 2025 and concludes all 8 fail prong B (they performed the same construction work Lakeshore performs) and prong C (no separate business entities, EINs, or other clients). Reclassification to W-2.
-
-**Retroactive liabilities (2023 amounts):**
-- Employer UI (assume 5.4% × $43,300 wage base × 8 = $18,706).
-- Employer TDI (0.93% × $43,300 × 8 = $3,222).
-- Employer WF/SWF (0.1425% × $43,300 × 8 = $494).
-- Total employer payroll taxes: ~$22,422.
-- Employer share of GIT withholding NOT remitted: theoretically the workers' own GIT, but NJDOL pursues the employer for the unwithheld amount as a separate liability. At 5.525% bracket × $400K = $22,100. (NJDOL may abate if it can show the workers paid their own GIT on their 1099-NEC; often pursued as a holding lever.)
-- Employee UI/TDI/WF that should have been withheld: ~$5,400 (employer becomes liable as collector).
-- Penalties: 15% to 25% of taxes assessed.
-- Interest: prime + 3% from each missed quarter (~11.5%/year), running 2+ years.
-- Construction Industry Independent Contractor Act civil penalty: $2,500 first offense per worker = $20,000.
-- NJ Insurance Fraud Prevention Act exposure: up to $5,000/worker = $40,000 + treble damages on saved workers' comp premium.
-- Workers' Compensation Bureau retroactive audit: workers comp premiums on $400K wages (construction code 5403 ≈ $20/$100 = $80,000 premium).
-
-**Range of total exposure: $150K – $250K on $400K of payments** — a 40-60% effective penalty. The construction industry premium reflects the additional CIICA layer; non-construction misclassifications typically run at the 20-30% effective rate level.
-
-This example illustrates why the ABC test analysis must be done CONTEMPORANEOUSLY and DOCUMENTED. Once a 1099 is issued, the burden falls on the employer to defend, and in NJ defense is very difficult.
-
-## 14. Year-end and recordkeeping
-
-### 14.1 W-2 issuance
-
-- **W-2 issuance and NJ-W-3 reconciliation** — - **Federal W-2 Copy 1** is filed with the NJ Division of Taxation via the NJ-W-3 reconciliation by February 15 of the following year (note: this is earlier than the federal January 31 deadline for SSA filing, AND earlier than most states). - NJ uses MMRRF format for electronic W-2 reporting (an extension of the federal EFW2 format). - **NJ-W-3** (Annual Reconciliation) reconciles total NJ withholding for the year against the four NJ-927 returns + monthly NJ-500 remittances. Filed with the W-2 batch.
-
-### 14.2 1099 issuance
-
-- **1099 filing requirements with NJ** — - NJ requires 1099-NEC, 1099-MISC, 1099-K filings to be transmitted to NJ Division of Taxation via the IRS Combined Federal/State Filing program for NJ-source payments. - Issuers may also file directly via the NJ MMRRF process if not using CF/SF. - Deadline: same as federal (January 31 for NEC, February 28/March 31 for others depending on form).
-
-### 14.3 Record retention
-
-**Record retention**
-
-| Record | Minimum retention |
+| Payroll period | Value of one allowance |
 | --- | --- |
-| Payroll records (timesheets, wages, deductions) | 6 years (Wage Theft Act 2019) |
-| NJ-W4 forms | 4 years after last payment of wages |
-| NJ-927 and supporting workpapers | 4 years |
-| Earned Sick Leave records | 5 years |
-| ABC test documentation | 4 years (UI audit lookback) |
-| BAIT workpapers | 4 years (income tax SOL) |
+| Weekly | $19.20 |
+| Biweekly | $38.40 |
+| Semimonthly | $41.60 |
+| Monthly | $83.30 |
+| Annual | $1,000 |
 
-## 15. Provenance and citations
+- **The method.** Multiply the allowance value by the number of exemptions claimed, subtract the result from the wages for the period, and apply the rate table.
+- **Rates.** The tables on Form NJ-W4 (1-21) start at 1.5%. The top rate is 11.8% on taxable wages over $1,000,000 a year. That top withholding rate is not the same as the income tax rate on the return.
+- **Supplemental wages** (bonuses, commissions, overtime, tips, and payouts of unused sick or vacation time):
+  - paid **at the same time** as regular wages: total the two and withhold on the combined payment;
+  - paid **at a different time**: withhold without any of the employee's allowances.
+  - NJ-WT sets no flat supplemental rate.
+- **What is and is not in New Jersey wages** ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)):
+  - 401(k) contributions up to the federal limit are excluded. Any excess over the federal limit is included.
+  - Employee contributions to other retirement plans are included in the year they are made.
+  - State Plan and private plan TDI benefits are not subject to withholding.
 
-### 15.1 Statutory citations used
+### Minimum wage ([NJDOL minimum wage chart, MW-571 (1/26)](https://www.nj.gov/labor/wageandhour/assets/PDFs/MW-571%20%281-26%29%20MinWageFlier.pdf))
 
-- **N.J.S.A. 54A:2-1 et seq.** — NJ Gross Income Tax Act.  _(N.J.S.A. 54A:2-1 et seq.)_
-- **N.J.S.A. 54A:4-1** — Credit for tax paid to another jurisdiction.  _(N.J.S.A. 54A:4-1)_
-- **N.J.S.A. 54A:7-1** — Requirement of withholding from wages.  _(N.J.S.A. 54A:7-1)_
-- **N.J.S.A. 43:21-19(i)(6)** — ABC test for UI purposes.  _(N.J.S.A. 43:21-19(i)(6))_
-- **N.J.S.A. 43:21-25 et seq.** — Temporary Disability Benefits Law.  _(N.J.S.A. 43:21-25 et seq.)_
-- **N.J.S.A. 43:21-39.1 et seq.** — Family Leave Insurance.  _(N.J.S.A. 43:21-39.1 et seq.)_
-- **N.J.S.A. 34:11-4.2** — Wage Payment Law (pay frequency).  _(N.J.S.A. 34:11-4.2)_
-- **N.J.S.A. 34:11D-1 et seq.** — Earned Sick Leave Law.  _(N.J.S.A. 34:11D-1 et seq.)_
-- **N.J.S.A. 34:20-1 et seq.** — Construction Industry Independent Contractor Act.  _(N.J.S.A. 34:20-1 et seq.)_
-- **N.J.S.A. 2A:17-56.61** — New hire reporting.  _(N.J.S.A. 2A:17-56.61)_
-- **N.J.S.A. 17:33A** — Insurance Fraud Prevention Act.  _(N.J.S.A. 17:33A)_
-- **P.L. 2019, c. 212** — Wage Theft Act.  _(P.L. 2019, c. 212)_
-- **P.L. 2019, c. 320 (as amended by P.L. 2021, c. 419)** — BAIT.  _(P.L. 2019, c. 320 (as amended by P.L. 2021, c. 419))_
-- **P.L. 2020, c. 95** — 10.75% millionaire surtax expansion.  _(P.L. 2020, c. 95)_
+| Employer or worker | From January 1, 2025 | From January 1, 2026 |
+| --- | --- | --- |
+| Most employers | $15.49 | $15.92 |
+| Seasonal employers and small employers (fewer than 6 employees) | $14.53 | $15.23 |
+| Agricultural employers | $13.40 | $14.20 |
+| Cash wage for tipped employees | $5.62 | $6.05 |
+| Long-term care facility direct care staff | $18.49 | $18.92 |
 
-### 15.2 Administrative guidance
+- "Small" means **fewer than 6** employees. An employer with 6 or more pays the general rate.
+- The minimum wage may continue to rise each January 1 with inflation.
+- **2027:** the Department's worker FAQ already says the minimum wage is $16.48 per hour for most workers from January 1, 2027, with a tipped cash wage of at least $6.61 ([Wage and Hour FAQ](https://www.nj.gov/labor/wageandhour/support/faqs/wageandhourworkerfaqs.shtml)). The chart for 2027 is not yet out, so check it before January 2027.
+- **Tipped workers:** hourly pay plus tips must reach the full minimum wage. If they do not, the employer makes up the difference.
+- Some workers are excluded, such as automobile salespersons and outside salespersons. Minors under 18 are also excluded, except in retail, food service and certain other listed occupations ([Wage and Hour FAQ](https://www.nj.gov/labor/wageandhour/support/faqs/wageandhourworkerfaqs.shtml)).
+- **Base week (for WR-30):** a week in which the employee earned at least $310 in 2026 ($303 in 2025) ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
 
-- **Publication NJ-WT** — NJ Income Tax Withholding Instructions, January 2025 revision.  _(Publication NJ-WT, January 2025 revision)_
-- **NJ-927 Instructions** — 2025 edition.  _(NJ-927 Instructions, 2025 edition)_
-- **NJDOL "2025 Rate Information" notice** — TDI/FLI/UI rate schedule.  _(NJDOL "2025 Rate Information" notice)_
-- **NJ Division of Taxation Technical Bulletin TB-86** — Cross-jurisdiction credit.  _(NJ Division of Taxation Technical Bulletin TB-86)_
-- **N.J.A.C. 18:35-7.1** — Recordkeeping for NJ-W4.  _(N.J.A.C. 18:35-7.1)_
-- **N.J.A.C. 12:55-2.4** — Payroll cards.  _(N.J.A.C. 12:55-2.4)_
-- **N.J.A.C. 18:35-4.1** — Credit for tax paid to another state — computation rules.  _(N.J.A.C. 18:35-4.1)_
+## Boundaries and exceptions
 
-### 15.3 Key case law
+| Rule | Condition that decides it | Source |
+| --- | --- | --- |
+| Monthly deposit (NJ-500) | Only for the first or second month of a quarter in which tax withheld was **more than $500**. The third month is always paid with the quarterly return | [NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf) |
+| Weekly payer (NJ-927-W) | Prior-year income tax withheld of **$10,000 or more**. Pay by the Wednesday after the pay week, on your own payroll cycle | [NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf) |
+| NJ resident working elsewhere | No New Jersey withholding only if **all three** apply: works totally outside New Jersey, subject to the other state's withholding, and that withholding is at least New Jersey's | [NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf) |
+| Pennsylvania resident | No New Jersey withholding only with a signed NJ-165 on file. The agreement covers wage income tax. It does not excuse a Pennsylvania employer from Pennsylvania local wage taxes | [NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf); [Form NJ-165](https://www.nj.gov/treasury/taxation/pdf/current/nj165.pdf) |
+| Convenience rule (from tax year 2023) | Applies only to residents of states with a similar test, such as Delaware, Nebraska and New York. It uses the other state's test. It reaches only an employee whose primary or assigned office is in New Jersey: a New York resident with a New Jersey office who works from home for their own convenience is taxed as working in New Jersey. If the employee performs no services in New Jersey in the year, the wages are not New Jersey-source, even with a New Jersey employer. It does not apply to Pennsylvania residents. It does not apply to a Connecticut home worker | [Convenience rule](https://www.nj.gov/treasury/taxation/conveniencerule.shtml); [Convenience rule FAQ](https://www.nj.gov/treasury/taxation/conveniencerulefaq.shtml) |
+| NJ-W4 "EXEMPT" | $10,000 or less (single or separate), or $20,000 or less (joint, head of household, qualifying widow(er)), including taxable nonwage income. Valid one year only | [Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf) |
+| TDI/FLI private plan | Must be approved. While it is in force, the employer and workers pay no State Plan TDI contributions. The worker's cost cannot exceed the State Plan | [Employer Handbook, TDI and FLI](https://www.nj.gov/labor/ea/help/employer_handbook/tdi-fli.shtml) |
+| Household (domestic) employer | Subject to UI once it pays **$1,000 or more** in cash to domestic labor in a calendar quarter. It files once a year: NJ-WT gives January 31 for Form NJ-927-H, while NJDOL gives January 30 for the domestic NJ-927 and four WR-30s, so file by January 30 (by Friday, January 29, 2027 for 2026, as January 30 is a Saturday). Income tax withholding for a household worker is required where federal withholding is required; otherwise the employee may choose it. With regular employees as well, it files NJ-927 quarterly | [NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf); [Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml) |
+| Unregistered construction contractor | Anyone paying an unregistered, unincorporated contractor for construction services must get its Business Registration Certificate or withhold 7% of the payment. Exempt: government agencies, homeowners and tenants for their principal residence, and incorporated contractors | [NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf) |
+| Worker vs contractor (UI) | An **employee** unless **all three** ABC prongs are met. See the ABC section below | [ABC test](https://www.nj.gov/labor/ea/audit/independent-contractor-vs-employees) |
 
-- **Hargrove v. Sleepy's, LLC** — 220 N.J. 289 (2015) — adopted ABC test for Wage and Hour purposes.  _(Hargrove v. Sleepy's, LLC, 220 N.J. 289 (2015))_
-- **Carpet Remnant Warehouse, Inc. v. NJDOL** — 125 N.J. 567 (1991) — foundational ABC test interpretation.  _(Carpet Remnant Warehouse, Inc. v. NJDOL, 125 N.J. 567 (1991))_
-- **Zelinsky v. NY Tax Appeals Tribunal** — 1 N.Y.3d 85 (2003), reaffirmed 2024 — NY convenience-of-employer rule constitutional.  _(Zelinsky v. NY Tax Appeals Tribunal, 1 N.Y.3d 85 (2003), reaffirmed 2024)_
+### Worker classification: the ABC test for UI ([NJDOL, independent contractors vs employees](https://www.nj.gov/labor/ea/audit/independent-contractor-vs-employees))
 
-### 15.4 Verification flags
+A worker who is paid for services is an employee under the Unemployment Compensation Law unless **all** of these apply:
 
-All 2025 rate and threshold figures in this skill must be re-verified against:
-1. The NJ-WT booklet posted to nj.gov/treasury/taxation/ in late 2024 / early 2025.
-2. The NJDOL Annual Rate Notice (typically issued in November 2024 for calendar year 2025).
-3. The NJ-927 instructions for 2025.
-4. The PTE-100 / PTE-150 instructions for 2025.
+- **A:** the worker has been and will stay free from control or direction over the work, both under the contract and in fact;
+- **B:** the work is outside the usual course of the business, or it is done outside all of the business's places of business; and
+- **C:** the worker is customarily engaged in an independently established trade, occupation, profession or business.
 
-In particular, the following figures are flagged for primary-source verification at the time of use:
+Failing any one prong makes the worker an employee. The law is remedial and read liberally, so a worker can be an employee even where the common-law test would say otherwise. For prong C, the business must be one that will survive the end of this relationship. NJDOL auditors use the Worker Classification Questionnaire. This Guide gives a summary only: refer any real classification decision. Refer also where the question is worker status for wage-and-hour or wage payment purposes (including the minimum wage), or construction work, which has its own Construction Industry Independent Contractor Act.
 
-- **TDI employee rate 0.23%** — published estimate; confirm against NJDOL rate notice.  _(NJDOL "2025 Rate Information" notice)_
-- **TDI employer rate 0.93%** — new-employer benchmark; experience-rated employers must use their UI-1 rate.  _(NJDOL "2025 Rate Information" notice)_
-- **FLI employee rate 0.06%** — published estimate.  _(NJDOL "2025 Rate Information" notice)_
-- **SDI/FLI wage base $165,400 (employee)** — confirm against 2025 NJDOL notice; the figure is indexed to NJ statewide average weekly wage.  _(NJDOL "2025 Rate Information" notice)_
-- **SUI/employer TDI wage base $43,300** — confirm against 2025 UI-1 schedule.  _(2025 UI-1 schedule)_
-- **Supplemental wage rate 11.8%** — confirm in 2025 NJ-WT booklet.  _(2025 NJ-WT booklet)_
-- **BAIT brackets** — confirm against PTE-100 instructions; the brackets were updated by P.L. 2021, c. 419 effective for tax years beginning in 2022 and have been stable since.  _(PTE-100 instructions; P.L. 2021, c. 419)_
+## Worked cases
 
-## 16. Cross-references
+The dollar amounts in these cases are made up for illustration. The rates and bases come from the sources linked in each heading.
 
-- `us-federal-payroll` — Form 941, FICA, FUTA, federal W-4, Form W-2/W-3 federal mechanics.
-- `us-ny-payroll` — NY IT-2104, NY convenience rule mechanics, NYC personal income tax.
-- `us-pa-payroll` — PA Local Services Tax, PA-NJ reciprocity from the PA side.
-- `nj-cbt-and-bait` — Full BAIT mechanics, NJ Corporation Business Tax, PTE-100 detailed line-by-line.
-- `_cross-border/multistate-payroll` — Multi-state apportionment frameworks, day-count methodologies.
-- `us-federal-tx-return-assembly` (reference only) — for the federal interaction with state PTE elections.
+### Case 1: 2026 worker deductions ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/))
 
-## 17. Quick reference card
+- **Employee paid $60,000 in 2026, State Plan:**
+  - UI and WF/SWF: 0.425% × $44,800 = $190.40 (wages above the base carry no UI deduction);
+  - TDI: 0.19% × $60,000 = $114.00;
+  - FLI: 0.23% × $60,000 = $138.00.
+- **Employee paid $200,000 in 2026:**
+  - UI and WF/SWF: $190.40;
+  - TDI: 0.19% × $171,100 = $325.09;
+  - FLI: 0.23% × $171,100 = $393.53;
+  - total $909.02. Stop each deduction once its base is reached.
+- **The same employee in 2025:**
+  - UI and WF/SWF: 0.425% × $43,300 = $184.03;
+  - TDI: 0.23% × $165,400 = $380.42;
+  - FLI: 0.33% × $165,400 = $545.82.
 
-**NJ Payroll 2025 — Quick Reference**
+### Case 2: new employer contributions in 2026 ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/); [Table C](https://www.nj.gov/labor/ea/assets/PDFs/FY20262027%20TABLE%20C.pdf))
 
-```
-NJ Payroll 2025 — Quick Reference
+- **Facts:** a new employer pays one employee $5,000 a month in 2026.
+- The new employer rates are the same in both rate years that touch 2026, so one rate applies all year:
+  - UI and WF/SWF: 2.8% × $44,800 = $1,254.40;
+  - TDI: 0.5% × $44,800 = $224.00;
+  - FLI: nothing for the employer.
+- **By quarter:** taxable wages are $15,000 in Q1 and $15,000 in Q2. In Q3, only $14,800 is taxable, because $44,800 minus the $30,000 already paid leaves $14,800. Q4 has no taxable wages. The WR-30 still reports all gross wages each quarter.
+- **2025 variation:** the rate was 3.1% for January to June 2025 and 2.8% from July 2025, so split the year's taxable wages by rate year.
 
-GIT brackets (single): 1.4% / 1.75% / 3.5% / 5.525% / 6.37% / 8.97% / 10.75%
-GIT brackets (MFJ):    1.4% / 1.75% / 2.45% / 3.5% / 5.525% / 6.37% / 8.97% / 10.75%
-Supplemental wage rate: 11.8% (high earners) / marginal rate (others)
-NJ-W4 allowance value: $1,000 per allowance
+### Case 3: deposit timing ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf))
 
-TDI employee: 0.23% on first $165,400 (max $380.42)
-TDI employer: 0.93% on first $43,300  (max $402.69)
-FLI employee: 0.06% on first $165,400 (max $99.24)
-FLI employer: none
+- **Facts:** the employer withheld less than $10,000 in 2025, so it is not a weekly payer in 2026. In Q1 2026 it withholds $650 in January and $400 in February.
+- **January:** $650 is more than $500, so pay it on Form NJ-500 by February 15.
+- **February:** $400 is not more than $500, so no monthly payment is due. It is paid with the Q1 NJ-927, together with March, by April 30.
+- **Variation:** had the employer withheld $10,000 or more in 2025, it would be a weekly payer in 2026. It would pay by the Wednesday after each pay week and file Form NJ-927-W.
 
-UI employee: 0.3825% on first $43,300 (max $165.62)
-UI employer: 2.8% new / 0.4-5.4% experience-rated
-WF employee: 0.0425% on first $43,300 (max $18.40)
-WF employer: 0.1175% on first $43,300 (max $50.88)
-SWF employee: 0.0175% on first $43,300 (max $7.58)
-SWF employer: 0.0250% on first $43,300 (max $10.83)
+### Case 4: Pennsylvania resident working in New Jersey ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf); [Form NJ-165](https://www.nj.gov/treasury/taxation/pdf/current/nj165.pdf))
 
-NJ-927: Q1 Apr 30 | Q2 Jul 30 | Q3 Oct 30 | Q4 Feb 2 (2026)
-NJ-500: 15th of month following (monthly remitters)
-Weekly remitters: EFT, by Wed (Fri-Tue) / Fri (Wed-Fri)
+- A Pennsylvania resident works full time at a Camden office.
+- **With a signed NJ-165:** withhold no New Jersey income tax, and withhold Pennsylvania personal income tax instead.
+- **Without the form:** withhold New Jersey tax.
+- **Contributions still apply.** The agreement is about income tax. The employee still works in New Jersey, so New Jersey UI, WF/SWF, TDI and FLI apply, and the wages go on the WR-30. The WR-30 covers services in New Jersey ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+- **If the employee moves** to New Jersey or elsewhere, they must tell the employer within 10 days, and the NJ-165 no longer applies.
 
-W-2 to NJ: Feb 15 (NJ-W-3 reconciliation)
-1099 to NJ: Jan 31 (NEC) / Feb 28 (others) via CF/SF or MMRRF
+### Case 5: New York residents and New Jersey residents working in New York ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf); [Convenience rule](https://www.nj.gov/treasury/taxation/conveniencerule.shtml))
 
-BAIT estimates 2025: Apr 15 | Jun 16 | Sep 15 | Jan 15 2026
-BAIT election: PTE-100 by March 15 (annual, irrevocable)
+- **New York resident, New Jersey employer.** The employee's assigned office is in Newark. They work there three days a week and two days at home in New York, by choice.
+  - New Jersey applies New York's convenience test, so the home days are New Jersey-source.
+  - Withhold New Jersey tax on the full wages, unless the home days are for the employer's necessity.
+  - **Variation:** a fully remote New York resident who performs no services in New Jersey in the year has no New Jersey-source wages, even with a New Jersey employer ([Convenience rule FAQ](https://www.nj.gov/treasury/taxation/conveniencerulefaq.shtml)).
+- **New Jersey resident working only in Manhattan**, subject to New York withholding.
+  - New Jersey withholding is not needed only if New York withholding is at least equal to New Jersey's.
+  - If the employee also works some days in New Jersey, withhold New Jersey tax as well, reduced by the New York tax withheld.
+- Use the Guide us-multi-state-residency-and-allocation for day counts and credits.
 
-New hire reporting: 20 days (employees + contractors > $2,500)
-Pay frequency: bi-weekly minimum, paid within 10 working days
-Earned Sick Leave: 1 hr per 30 hrs worked, 40 hrs/year cap
-```
+### Case 6: minimum wage by employer size ([MW-571 (1/26)](https://www.nj.gov/labor/wageandhour/assets/PDFs/MW-571%20%281-26%29%20MinWageFlier.pdf))
 
-## End of skill
+- A year-round shop with 4 employees has fewer than 6 employees, so it pays at least $15.23 in 2026 ($14.53 in 2025).
+- If it hires a sixth employee, it pays the general rate: $15.92 in 2026 ($15.49 in 2025).
 
-*End of skill. Total approximate length: 45 KB.*
+## 2025 payrolls: corrections and late filings
+
+- **Worker rates for 2025** ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)):
+  - UI 0.3825%, WF/SWF 0.0425%, TDI 0.23% and FLI 0.33% ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/));
+  - bases $43,300 and $165,400 ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+  - Check any 2025 payroll run that used a different FLI or TDI rate, and correct the affected quarters.
+- **Employer new rates for 2025:** 3.1% total UI plus WF/SWF to June 30, 2025, then 2.8%. TDI 0.5%. Employer wage base $43,300 ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- **Minimum wage for 2025:** $15.49, or $14.53 for seasonal and small employers ([MW-571 (1/26)](https://www.nj.gov/labor/wageandhour/assets/PDFs/MW-571%20%281-26%29%20MinWageFlier.pdf)).
+- **Corrections:** correct Forms NJ-927 online; the correction replaces the original. A prior-year refund needs an amended NJ-927 for the quarter and an amended NJ-W-3. An NJ-W-3 correction that changes the tax requires amending each affected quarter ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- Amend a WR-30 online or by SFTP ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+
+## When to refuse or refer
+
+- **Refer** any employee who lives or works outside New Jersey, works from home in another state, or moved during the year. Use the Guide us-multi-state-residency-and-allocation. Do not guess an allocation percentage.
+- **Refer** which state's UI covers a worker who works in more than one state. The WR-30 includes only pay for services in New Jersey, and wages for services elsewhere go to those states.
+- **Refer** every real worker classification question, including construction. Refer any NJDOL audit to an employment or tax lawyer. This Guide gives the ABC test in summary only.
+- **Refer** private TDI or FLI plan approval, successor employer transfers, rate disputes and penalty abatement to NJDOL.
+- **Refuse** to compute New Jersey withholding from return rate schedules or a federal W-4. Use NJ-WT and the NJ-W4.
+- **Say so** when a figure is not yet set: the 2027 worker contribution rates, and the 2027 minimum wage chart.
+
+## Filing and payment
+
+- **Form NJ-927 / NJ-927-W:** due quarterly, electronically, even with nothing withheld. Seasonal businesses file all four quarters. All locations under one FEIN file one combined return ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+
+| Quarter (2026) | Due date |
+| --- | --- |
+| Q1, January to March | April 30, 2026 |
+| Q2, April to June | July 30, 2026 |
+| Q3, July to September | October 30, 2026 |
+| Q4, October to December | January 30, 2027 |
+
+- **Weekend due dates: the two agencies conflict.** The Division of Taxation says a due date on a weekend or holiday moves to the next business day ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)). NJDOL says the NJ-927, the WR-30 and any payment must be received by the 30th, even on a weekend or holiday, with no extension ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)). As a rule, when the 30th falls on a weekend or holiday, file and pay by the last business day before it. April 30, July 30 and October 30, 2026 are weekdays. January 30, 2027 is a Saturday, so file and pay the Q4 2026 return by Friday, January 29, 2027.
+- **NJ-500 monthly payments:** due by the 15th of the next month, for the first and second months of a quarter with more than $500 withheld ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- **Weekly payments:** due by 11:59 p.m. on the Wednesday after the pay week. Weekly payers still file quarterly.
+- **Payment:** NJDOL contributions are paid by electronic funds transfer, credit card or e-check ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+- **Form W-2 to employees:**
+  - federal law requires employees' copies by February 1, 2027 for 2026 wages ([IRS W-2 and W-3 instructions](https://www.irs.gov/instructions/iw2w3)). NJ-WT gives February 15, so in practice the federal date governs;
+  - NJ-WT also requires a W-2 within 30 days after the last wage payment to an employee who leaves and is not expected to return. Do not wait beyond the federal date.
+  - Show a combined UI/WF/SWF amount, and separate TDI and FLI amounts. Show the private plan number where there is one ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- **Form NJ-W-3 (annual reconciliation):** file electronically with all W-2s by February 15 of the next year. If that falls on a weekend or holiday, file by the next business day. An employer that stops paying wages files within 30 days after the last month wages were paid ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- **Penalties, income tax side** ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)):
+  - late filing: 5% per month or part month of the tax due, up to 25%, plus $100 per month or part month ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf));
+  - late payment: 5% of the tax paid late ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf));
+  - interest: 3% above the prime rate ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+  - Owners, partners and officers can be held personally liable for tax they should have withheld.
+- **Penalties, contributions side** ([NJDOL interest and penalties](https://www.nj.gov/labor/ea/bill-notice/interest-penalties/)):
+  - late NJ-927: $10 a day for the first five days. After that, $10 a day or 25% of the contributions due, whichever is less ([NJDOL interest and penalties](https://www.nj.gov/labor/ea/bill-notice/interest-penalties/));
+  - a late "no liability" report: up to $50 ([NJDOL interest and penalties](https://www.nj.gov/labor/ea/bill-notice/interest-penalties/));
+  - interest on unpaid contributions: 1.25% a month, which cannot be waived ([NJDOL interest and penalties](https://www.nj.gov/labor/ea/bill-notice/interest-penalties/));
+  - late or wrong WR-30: $5 per employee for the first failure, $10 for the second and $25 for the third or later failure within eight consecutive quarters ([NJDOL interest and penalties](https://www.nj.gov/labor/ea/bill-notice/interest-penalties/)).
+  - WR-30 penalties apply to failures without reasonable cause.
+  - Penalty abatement is for good cause. Request it in writing within one year of the penalty notice, with a notarized affidavit showing why, and a statement that there was no fraud or intentional disregard of the law. All NJ-927 and WR-30 reports must be filed, and all other liability paid, before abatement is considered. Interest cannot be abated ([NJDOL interest and penalties](https://www.nj.gov/labor/ea/bill-notice/interest-penalties/)).
+- **Form 1099 copies to New Jersey:** send copies where $1,000 or more was paid or credited in the calendar year, or where any New Jersey tax was withheld. File them electronically by February 15 of the next year, or the next business day if that falls on a weekend or holiday ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- **New hire reports:** a state may set a penalty of up to $25 per unreported new hire, or $500 where employer and employee conspired not to report ([42 U.S.C. 653a](https://www.law.cornell.edu/uscode/text/42/653a)).
+- **Records:** keep UI and wage records for the current calendar year and the four before it ([Employer Handbook, taxes and wages](https://www.nj.gov/labor/ea/help/employer_handbook/taxes_wages.shtml)).
+
+## Completion checklist
+
+- Registered as an employer. New hires reported within 20 days, or by the two monthly electronic transmissions ([42 U.S.C. 653a](https://www.law.cornell.edu/uscode/text/42/653a)).
+- Every employee has an NJ-W4. Any "EXEMPT" claims are for the current year and within the income limits ([Form NJ-W4](https://www.nj.gov/treasury/taxation/pdf/current/njw4.pdf)).
+- Pennsylvania residents have a signed NJ-165 on file, or New Jersey tax is withheld.
+- Out-of-state and remote employees were checked against the Guide us-multi-state-residency-and-allocation.
+- Worker deductions used the 2026 rates: UI 0.3825%, WF/SWF 0.0425%, TDI 0.19% and FLI 0.23%, stopping at $44,800 and $171,100 ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- Employer UI, WF/SWF and TDI used the rate for each fiscal rate year, stopping at $44,800 for 2026 ([NJDOL rate information](https://www.nj.gov/labor/ea/employer-services/rate-info/)).
+- NJ-500 and weekly payments follow the $500 and $10,000 rules. NJ-927 and WR-30 are filed by the 30th after each quarter ([NJ-WT](https://www.nj.gov/treasury/taxation/pdf/current/njwt.pdf)).
+- W-2s were given to employees by the federal date (February 1, 2027 for 2026) ([IRS W-2 and W-3 instructions](https://www.irs.gov/instructions/iw2w3)).
+- NJ-W-3 was filed with the W-2s, and any required 1099 copies were sent, by February 15.
+- Pay rates meet the 2026 minimum wage for the employer's size and type.
+- Every 1099 worker has a documented ABC analysis, or has been referred.
 
 <!-- openaccountants-cta-block -->
 

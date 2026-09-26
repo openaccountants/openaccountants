@@ -3,9 +3,10 @@ name: dk-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Danish VAT return (Momsangivelse) for a self-employed individual or small business in Denmark. Trigger on phrases like "prepare VAT return", "do the VAT", "Danish VAT", "moms", "momsangivelse", or any request involving Denmark VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Denmark only and only standard-registered businesses. Loensumsafgift-only entities, VAT groups, and fiscal representatives are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Danish VAT work.
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-09-24
+last_updated: 2026-09-25
 authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

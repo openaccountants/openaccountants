@@ -3,386 +3,306 @@ name: ca-smllc-form-568
 description: Tier 2 California content skill for preparing California Form 568 (Limited Liability Company Return of Income) for single-member LLCs disregarded for federal tax purposes but treated as separate entities by California for the $800 annual franchise tax and the gross receipts-based LLC fee. Covers tax year 2025 including the $800 minimum franchise tax (R&TC section 17941), the tiered LLC fee schedule (R&TC section 17942), first-year exemption rules, Form 3522 (LLC Tax Voucher), Form 3536 (Estimated Fee), Schedule B balance sheet requirements, and penalty and interest computations. Defers individual income tax to ca-540-individual-return and estimated personal tax to ca-estimated-tax-540es. MUST be loaded alongside us-tax-workflow-base v0.1 or later. California SMLLCs only.
 version: 0.2
 jurisdiction: US-CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# CA SMLLC Form 568
+# California single-member LLCs: Form 568, the annual tax and the LLC fee (tax year 2026)
 
-## What this file is, and what it is not
+Figures are for tax year 2026 unless a line says otherwise. A dated section near the end covers 2025 returns filed on extension. Researched on 25 September 2026 from the Revenue and Taxation Code (R&TC) and Franchise Tax Board (FTB) pages and instructions.
 
-**This file is a content skill that loads on top of `us-tax-workflow-base` v0.1.** It provides the California Form 568 filing rules for single-member LLCs (SMLLCs) that are disregarded for federal income tax purposes but are treated as separate entities by California for the annual franchise tax and LLC fee. This skill does NOT compute the owner's personal California income tax (handled by `ca-540-individual-return`) or California estimated personal income tax payments (handled by `ca-estimated-tax-540es`).
+## Scope and who it is for ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
 
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date (April 2026). It reflects California Revenue and Taxation Code sections 17941 and 17942 as in force for 2025.
+This Guide covers the California return of a **single-member LLC (SMLLC) that is disregarded for federal tax**. Federal law disregards an eligible entity with a single owner as "an entity separate from its owner" unless it elects to be a corporation ([26 CFR 301.7701-3](https://www.law.cornell.edu/cfr/text/26/301.7701-3)). California follows the federal classification. The FTB says: "If an eligible entity is disregarded for federal tax purposes, it is also disregarded for state tax purposes, except that an SMLLC must still pay a tax and fee, file a return, and limit tax credits."
 
-**Key concept.** A single-member LLC is disregarded for federal tax (activity reported on Schedule C). But California treats the LLC as a separate entity subject to: (1) an $800 annual franchise tax, and (2) a gross receipts-based LLC fee if total income exceeds $250,000. The SMLLC must file Form 568 with the FTB.
+So the SMLLC's income is reported on the **owner's** return, but the SMLLC itself:
 
-## Section 1 -- Scope statement
+- files **Form 568**;
+- pays the **annual LLC tax** (form FTB 3522); and
+- pays the **LLC fee** if its California total income reaches the first band (estimated on form FTB 3536).
 
-- **Entities covered** — Single-member LLCs organized in California OR doing business in California; disregarded for federal income tax purposes (activity flows to owner's Schedule C)
+The annual tax and fee rules, fee bands and the full doing-business tests are set out in the companion Guide **ca-llc-fee-and-tax**. This Guide applies them to a single owner and adds what is special to an SMLLC: the owner's consent, Schedule IW, the owner-based due dates, nonresident and corporate owners, and cancellation.
 
-This skill covers California Form 568 for tax year 2025 for entities that are:
+It does **not** cover multi-member LLCs, LLCs taxed as corporations (they file Form 100 or 100S), the owner's own income tax computation (for a California resident individual, see **ca-540-individual-return**), estimated personal tax, nonresident withholding, or the pass-through entity elective tax.
 
-- Single-member LLCs organized in California OR doing business in California
-- Disregarded for federal income tax purposes (activity flows to owner's Schedule C)
+## Ask the client first
 
-For the following kinds of work:
+- Is the LLC organized in California, registered with the Secretary of State (SOS) as a foreign LLC, or neither? Get the exact SOS filing date.
+- Has it elected to be taxed as a corporation (federal Form 8832 or 2553)? If so, it is out of scope.
+- Who is the single owner? An individual, a trust or estate, a C corporation, an S corporation, a partnership, or an LLC classified as a partnership? What is the owner's taxable year?
+- If the owner is an individual: is the owner a California resident, a part-year resident or a nonresident?
+- Will the owner sign the Single Member LLC Information and Consent on Form 568?
+- What are the SMLLC's gross receipts, cost of goods sold and other income for the year, and how much is assigned to California customers?
+- If it is neither organized nor registered in California: what are its California sales, property and payroll, and its totals?
+- What LLC fee was owed for the **preceding** taxable year, and what was paid on forms 3522 and 3536, and when?
+- Has it stopped doing business? Has it filed a final Form 568 or any SOS cancellation form, and on what dates?
+- Was the owner a deployed member of the US Armed Forces during the year?
 
-- Determining the $800 annual franchise tax obligation
-- Computing the LLC fee based on total California income
-- Preparing Form 568 (LLC Return of Income)
-- Preparing Form 3522 (LLC Tax Voucher) for the $800 payment
-- Preparing Form 3536 (Estimated Fee for LLCs) for the LLC fee
-- Determining that the temporary first-year exemption is expired for 2025 and checking the separate 15-day exception
-- Identifying Schedule B (Balance Sheet) requirements
-- Computing penalties and interest for late filing or late payment
+## The method, step by step
 
-This skill does NOT cover:
+1. **Confirm the classification.** One owner, disregarded for federal tax. If it elected corporate status, stop and use the corporation rules.
+2. **Test whether it must file and pay.** Organized in California, registered with the SOS, or doing business under R&TC §23101: any one is enough. Then check the exceptions: the 15-day short year, the deployed-military exemption, and short form cancellation.
+3. **Fix the taxable year.** For a disregarded SMLLC, the owner's taxable year replaces "taxable year" in §17941 and §17942 ([R&TC §18633.5(i)(4)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)). In the first year, the year starts on the SOS filing date.
+4. **Annual tax.** Pay it on form 3522 by the 15th day of the 4th month of the taxable year. In the first year, count the SOS filing month as month 1.
+5. **Total income on Schedule IW.** Take the California amounts from the owner's federal schedules (Schedule C, D, E, F and so on). Total income is gross income **plus** cost of goods sold, so neither cost of goods sold nor operating expenses reduce it. Carry Schedule IW line 17 to Form 568 line 1 and read the fee from the table in **ca-llc-fee-and-tax**.
+6. **Estimated fee.** If a fee will be owed, pay the estimate on form 3536 by the 15th day of the 6th month. Test the 10% penalty against the prior-year fee ([R&TC §17942(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.)).
+7. **Consent.** Have the owner sign the Single Member LLC Information and Consent on Form 568. If a nonresident owner does not sign, complete Schedule T and pay the owner's tax.
+8. **Return.** File Form 568 by the due date for the owner's type. Pay any fee balance and Schedule T tax by the **original** due date. The extension is automatic, but it covers filing only.
+9. **Owner's return.** Report the SMLLC's income, deductions and credits on the owner's own return: Form 540 for a resident, Form 540NR for a nonresident or part-year resident, Form 100 or 100S for a corporation. Limit credits from the SMLLC.
+10. **Stopping.** If the business has ended, file a timely final Form 568 and the SOS cancellation within the time limits below.
 
-- Multi-member LLCs (Form 568 for partnerships -- out of scope)
-- LLCs taxed as corporations (Form 100 -- out of scope)
-- The owner's personal California income tax -- handled by `ca-540-individual-return`
-- California estimated personal income tax -- handled by `ca-estimated-tax-540es`
-- Federal SMLLC treatment -- handled by federal skills
+## Who must file Form 568 ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
 
-## Section 2 -- Year coverage and currency
+A disregarded SMLLC files Form 568 and pays the annual tax if **any** of these is true ([R&TC §17941](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.)):
 
-- **Tax year covered and due date** — 2025 (Form 568 due March 15, 2026 for calendar-year filers, or the 15th day of the 3rd month after the close of the fiscal year; extended to September 15, 2026 with Form 7004).
+- **Organized in California.** The SOS has accepted its articles of organization.
+- **Registered in California.** The SOS has issued it a certificate of registration as a foreign LLC. Registration alone is enough, even with no California business.
+- **Doing business in California**, as defined in R&TC §23101, even if it never registered.
 
-**Currency date:** April 2026.
+An organized or registered LLC owes the tax for each taxable year, or part of one, until a certificate of cancellation is filed with the SOS. It is owed whether or not the LLC is active or profitable. The FTB's LLC page says: "This yearly tax will be due, even if you are not conducting business, until you cancel your LLC" ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html)).
 
-**Legislation reflected:**
-- R&TC section 17941 -- $800 annual franchise tax
-- R&TC section 17942 -- LLC fee schedule
-- R&TC section 17941(g)(3) / AB 85 -- temporary first-year exemption (expired for tax years beginning on or after January 1, 2024)
-- R&TC section 19131 -- late filing penalty
-- R&TC section 19132 -- late payment penalty
-- AB 85 (2020) -- temporary first-year exemption for 2021-2023; not extended to 2025
-- FTB Form 568 Instructions (2025)
-- FTB Form 3522 Instructions (2025)
-- FTB Form 3536 Instructions (2025)
+**Foreign SMLLC with only California-source income.** A nonregistered foreign LLC classified as disregarded "which is not doing business in California, need not file Form 565 or Form 568". Its owner still reports any California-source income on the owner's own return.
 
-### Annual franchise tax
+**Doing business, in short** ([R&TC §23101](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=23101.)). An LLC is doing business if **any** one of these is met:
 
-**Annual franchise tax figures table**  _(R&TC section 17941(a); R&TC section 17941; FTB instructions; FTB)_
+- it actively engages in any transaction for financial gain in California;
+- it is organized or commercially domiciled in California; or
+- its California sales, property or payroll **exceed** the lesser of the indexed amount or 25% of its total sales, property or payroll.
 
-| Figure | Value | Source |
-| --- | --- | --- |
-| Annual franchise tax (minimum) | $800 | R&TC section 17941(a) |
-| Due date for $800 tax | April 15 of the tax year (i.e., April 15, 2025 for TY2025) | R&TC section 17941; FTB instructions |
-| Payment method | Form 3522 (LLC Tax Voucher) or Web Pay | FTB |
+"Exceed" means more than. The 2025 indexed amounts are $757,070 (sales), $75,707 (property) and $75,707 (payroll). The FTB had not published the 2026 amounts at 25 September 2026, so label any use of these as 2025 ([FTB: Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html)). The full tests are in **ca-llc-fee-and-tax**.
 
-- **LLC minimum franchise tax** — $800  _(California Revenue and Taxation Code §17941)_
-- **Due date for $800 tax** — April 15 of the tax year (i.e., April 15, 2025 for TY2025)  _(R&TC section 17941; FTB instructions)_
-- **Payment method** — Form 3522 (LLC Tax Voucher) or Web Pay  _(FTB)_
+## Figures and deadlines, tax year 2026 ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html))
 
-**Critical timing note:** The $800 franchise tax for tax year 2025 is due on April 15, 2025 -- the BEGINNING of the tax year, not the end. This is a prepayment, not a year-end obligation. Form 3522 is used for this payment.
+### Annual LLC tax: form FTB 3522 ([2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf))
 
-### LLC fee schedule (based on total income) (verify 2025)
+- **Amount.** $800. There is no proration for a short year, and it is owed even when there is no fee and no income.
+- **Due date.** The 15th day of the 4th month of the taxable year ([R&TC §17941(c)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.)). For an SMLLC whose owner uses the calendar year, that is 15 April 2026 for 2026. It is a payment at the **start** of the year, not with the return. The FTB says "do not send the $800 annual tax with Form 568".
+- **First year.** "You have until the 15th day of the 4th month from the date you file with the SOS to pay your first-year annual tax." The FTB's example: an LLC that registers on 18 June has its tax due on 15 September. So the filing month counts as month 1.
+- **When the first year starts.** Under the 2026 form 3522 instructions, an LLC's first taxable year begins when it files its articles of organization with the SOS. A foreign LLC's first taxable year begins when it was organized in its home state, not when it registers in California. A foreign LLC that registers or starts California business after the 15th day of its 4th month pays at once.
 
-**LLC fee schedule (based on total income)**  _(R&TC section 17942)_
+### First-year rules ([R&TC §17941(g)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17941.))
 
-| Total income from California sources | LLC fee |
-| --- | --- |
-| Less than $250,000 | $0 |
-| $250,000 -- $499,999 | $900 |
-| $500,000 -- $999,999 | $2,500 |
-| $1,000,000 -- $4,999,999 | $6,000 |
-| $5,000,000 and above | $11,790 |
+| First taxable year began | First-year annual tax |
+|---|---|
+| On or after 1 January 2021 and before 1 January 2024 | Exempt for the first taxable year (expired) |
+| In 2024, 2025 or 2026 | Full $800. No first-year relief |
+| On or after 1 January 2027 and before 1 January 2030 | $400 for the first taxable year only (added by SB 180, 2026) |
 
-- **Total income definition** — Total income means gross income plus cost of goods sold. For an SMLLC, this is generally the total revenue of the business (not net profit). This is a critical distinction -- a business with $300,000 gross revenue and $280,000 expenses (net profit $20,000) still owes the $900 LLC fee because total income is $300,000.
+An SMLLC formed in 2026 pays $800 for 2026 (unless the 15-day rule in the boundary table applies) and $800 for 2027. The $400 rate, its foreign-LLC trap and an unsettled point about a 15-day year just before 2027 are covered in **ca-llc-fee-and-tax**. Check the 2027 form 3522 instructions before relying on $400.
 
-### LLC fee payment timing
+### LLC fee and Schedule IW ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
-**LLC fee payment timing table**  _(Form 3536; Form 568)_
+- **Bands.** The fee is a flat amount per band of California total income: nothing below $250,000, then $900, $2,500, $6,000 and $11,790 from $5,000,000. Income of exactly $250,000 is in the $900 band. Use the band table in **ca-llc-fee-and-tax**. Do not interpolate.
+- **The base.** "Total income" means "gross income, plus the cost of goods sold that are paid or incurred in connection with the trade or business of the taxpayer attributed to California" ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)). Gross income already has cost of goods sold taken out, and it is added back. For an SMLLC reporting on Schedule C, the base is therefore close to California gross receipts. Operating expenses never reduce it.
+- **California only.** Only income "derived from or attributable to this state" counts. Services are assigned to California to the extent the customer receives the benefit there. Goods are assigned to California when delivered to a California buyer. If the business is wholly within California, all of its total income is California income.
+- **Where the numbers come from.** SMLLCs below the $3,000,000 Schedule B and K tests "should prepare Schedule IW by entering the California amounts attributable to the disregarded entity from the member's federal Schedule B, C, D, E, F (Form 1040), or additional schedules". Gains go in too: for example, IRC section 1231 gains go on Schedule IW line 14.
+- **Result.** Schedule IW line 17 is "Total California Income". It goes to Form 568 Side 1, line 1.
+- **Due.** The fee is due by the **original** due date of the return. An extension does not move it.
 
-| Item | Due date | Form |
-| --- | --- | --- |
-| Estimated LLC fee | June 15, 2025 (for calendar year) | Form 3536 |
-| Final LLC fee (balance due) | March 15, 2026 (with Form 568) | Form 568 |
+### Estimated fee: form FTB 3536 ([2026 FTB 3536 instructions](https://www.ftb.ca.gov/forms/2026/2026-3536.pdf))
 
-- **Estimated LLC fee** — June 15, 2025 (for calendar year)  _(Form 3536)_
-- **Final LLC fee (balance due)** — March 15, 2026 (with Form 568)  _(Form 568)_
+- **Estimate.** Pay the estimated fee by the 15th day of the 6th month of the taxable year. For a calendar-year owner that is 15 June 2026. "If the LLC does not owe a fee, do not complete or mail form FTB 3536."
+- **Short first year.** "If the taxable year of the LLC ends prior to the 15th day of the 6th month of the taxable year, no estimated fee payment is due" (2025 Form 568 booklet, repeated in the 2026 form 3536 instructions). The fee is then due with the return.
+- **10% penalty.** If the estimate is short, a penalty of 10% of the underpayment is added. The underpayment is the fee for the year minus the amount paid by the estimate due date ([R&TC §17942(d)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.)).
+- **Safe harbor.** No penalty applies if the amount paid by that date is **equal to or greater than** the total fee for the **preceding** taxable year. A new SMLLC has no preceding year, so it has no safe harbor and must estimate.
+- **Balance.** Pay the rest of the fee by the original due date of the return, on form 3536, or on form FTB 3537 if the return will be filed on extension.
 
-### First-year exemption (verify 2025)
+### Form 568: due dates and extensions ([R&TC §18633.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.))
 
-**First-year exemption table**  _([AB 85; FTB Publication 3556; AB 85; FTB Publication 3556](https://www.ftb.ca.gov/forms/misc/3556.html))_
+| Owner of the SMLLC | Original due date | Automatic extension |
+|---|---|---|
+| Individual, trust, estate or C corporation | 15th day of the 4th month after the close of the **owner's** taxable year (15 April 2027 for calendar 2026) | Six months (15 October 2027) |
+| S corporation | 15th day of the 3rd month after the close of the taxable year (15 March 2027) | Six months (15 September 2027) |
+| Partnership, or an LLC classified as a partnership | 15th day of the 3rd month after the close of the taxable year (15 March 2027) | Seven months (15 October 2027) |
 
-| Figure | Value | Source |
-| --- | --- | --- |
-| First-year $800 tax exemption | Not available for LLCs formed or registered in 2025; temporary exemption applied only to tax years beginning on or after January 1, 2021 and before January 1, 2024 | AB 85 (2020); R&TC section 17941(g)(3) |
-| First-year LLC fee exemption | No 2025 first-year exemption; LLC fee applies in the first year if total California income is $250,000 or more | R&TC section 17941(g)(3); FTB guidance |
-| Sunset of first-year exemption | Expired for tax years beginning on or after January 1, 2024; no extension applies to 2025-formed LLCs | AB 85 / FTB Publication 3556 |
+- **No form is needed for the extension.** "California does not require the filing of written applications for extensions" ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)). Federal Form 7004 plays no part in the California extension. A suspended or forfeited LLC gets no extension.
+- **Filing only.** An extension "is not an extension of time for payment of tax required to be paid on or before the due date of the return without regard to extension" ([R&TC §18567](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18567.)).
+- **Weekends and holidays.** A due date that falls on a weekend or holiday moves to the next business day.
 
-- **First-year $800 tax exemption** — Not available for LLCs formed or registered in 2025; temporary exemption applied only to tax years beginning on or after January 1, 2021 and before January 1, 2024  _([AB 85; FTB Publication 3556](https://www.ftb.ca.gov/forms/misc/3556.html))_
-- **First-year LLC fee exemption** — No 2025 first-year exemption; LLC fee applies in the first year if total California income is $250,000 or more  _([2025 Form 568 instructions](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))_
-- **Sunset of first-year exemption** — Expired for tax years beginning on or after January 1, 2024; no extension applies to 2025-formed LLCs  _([AB 85; FTB Publication 3556](https://www.ftb.ca.gov/forms/misc/3556.html))_
+## What goes on Form 568, and the owner's return ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
 
-**Resolved 2025 rule:** The temporary first-year $800 exemption applied only to tax years beginning on or after January 1, 2021 and before January 1, 2024. Do not apply it to a 2025-formed or 2025-registered LLC. Separately, the 15-day exception can still eliminate the return, annual tax, and LLC fee for a short taxable year if the LLC's taxable year is 15 days or less and it conducts no business in California during that period.
+### The SMLLC's Form 568 ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
 
-### Penalties
+- **Always.** "An SMLLC is required to complete Form 568, Side 1, Side 2, Side 3, Side 7 (Schedule IW), and pay the annual tax and LLC fee (if applicable)."
+- **Schedules B and K.** Complete these only if either test is met: the income or loss on Schedule B line 1, or lines 3 to 11, is $3,000,000 or more; or Schedule K line 21a (total distributive income/payment items) is $3,000,000 or more, or minus $3,000,000 or less. Take the amounts from the owner's federal return. SMLLCs do not complete Schedule K-1 (568) or form FTB 3832.
+- **Consent.** Side 3 carries the Single Member LLC Information and Consent. It gives the owner's name and identification number and the owner's type. The law requires the SMLLC's return to include "the consent of the owner to California tax jurisdiction" ([R&TC §18633.5(i)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.)).
+- **Identification.** The vouchers ask for the SMLLC's SOS file number and FEIN ([2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf)).
+- **Separate payments.** Pay the annual tax on form 3522 and the fee on form 3536 (or 3537). Do not send the annual tax with Form 568.
 
-**Penalties table**  _(R&TC section 19172; R&TC section 19132; R&TC section 19132.5; R&TC section 19142; R&TC section 19521)_
+### Resident individual owner: Form 540
 
-| Penalty | Amount | Source |
-| --- | --- | --- |
-| Late filing penalty | $18/month (per member, per month, up to 12 months). For SMLLC: $18/month x 1 member = $18/month, max $216. | R&TC section 19172 |
-| Late payment penalty (franchise tax) | 5% + 0.5%/month (up to 25%) of unpaid tax | R&TC section 19132 |
-| Late payment penalty (LLC fee) | 10% of unpaid fee | R&TC section 19132.5 |
-| Underpayment of estimated fee penalty | Interest on underpayment from June 15 to payment date | R&TC section 19142 |
-| Interest rate | Varies; set by FTB quarterly (verify 2025 rate) | R&TC section 19521 |
+The FTB tells an owner: "If you are a single member limited liability company, that is organized or doing business in California, or registered with the California Secretary of State (SOS), you are required to file Form 568, Limited Liability Company Return of Income, pay the annual tax and LLC Fee (if applicable), in addition to filing your tax return" ([2025 Schedule CA (540) instructions](https://www.ftb.ca.gov/forms/2025/2025-540-ca-instructions.html)). The SMLLC's business income is reported through the owner's federal Schedule C and California Schedule CA (540), like a sole proprietorship. The resident owner's computation is in **ca-540-individual-return**. Form 568 does not replace the owner's Form 540.
 
-- **Late filing penalty** — $18/month (per member, per month, up to 12 months). For SMLLC: $18/month x 1 member = $18/month, max $216.  _(R&TC section 19172)_
-- **Late payment penalty (franchise tax)** — 5% + 0.5%/month (up to 25%) of unpaid tax  _(R&TC section 19132)_
-- **Late payment penalty (LLC fee)** — 10% of unpaid fee  _(R&TC section 19132.5)_
-- **Underpayment of estimated fee penalty** — Interest on underpayment from June 15 to payment date  _(R&TC section 19142)_
-- **Interest rate** — Varies; set by FTB quarterly (verify 2025 rate)  _(R&TC section 19521)_
+### Nonresident or part-year resident owner: Form 540NR ([2025 Schedule CA (540NR) instructions](https://www.ftb.ca.gov/forms/2025/2025-540nr-ca-instructions.html))
 
-## Section 4 -- Primary source library
+- **Owner's return.** The owner files Form 540NR. Business income goes on Schedule CA (540NR). In column E, the nonresident owner enters "the total amount of profits or losses (including losses allowed from passive activities) from all businesses sourced to California while a nonresident of California".
+- **Part in, part out.** If the business was conducted partly inside and partly outside California, "only income from the part conducted within California is considered California source income that you must report in column E." But "If there is any business relationship between the parts within and outside California (flow of goods, etc.), apportion the gross income or loss from the entire business", using the Schedule R formula.
+- **Consent does not replace the return.** Filing the single member's consent, or Schedule T, "does not satisfy the member's California filing requirement" ([FTB Pub. 3556](https://www.ftb.ca.gov/forms/misc/3556.html)).
 
-**Primary source library table**  _(https://www.ftb.ca.gov/forms/misc/3556.html)_
+### Nonresident owner who does not sign the consent: Schedule T ([R&TC §18633.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.))
 
-| Source | Use |
-| --- | --- |
-| R&TC section 17941 | $800 annual franchise tax for LLCs |
-| R&TC section 17942 | LLC fee based on total income |
-| R&TC section 17946 | Definition of "doing business" in California |
-| R&TC section 17941(g)(3) | Temporary first-year exemption from $800 tax, expired after 2023 |
-| R&TC section 17941(b)(2) | $800 not deductible against LLC fee |
-| FTB Form 568 Instructions (2025) | Line-by-line filing instructions |
-| FTB Form 3522 (2025) | LLC Tax Voucher |
-| FTB Form 3536 (2025) | Estimated Fee for LLCs |
-| FTB Publication 3556 | LLC Filing Information |
-| IRC section 301.7701-3 | Check-the-box: SMLLC as disregarded entity |
+- **The rule.** "If a nonresident has not signed the single member LLC consent on Side 3, then the SMLLC is required to complete Schedule T on Side 4." The SMLLC then pays tax on the owner's behalf. The law treats the missing consent like a nonresident member's missing agreement (§18633.5(i)(2)).
+- **The amount.** The payment is the highest marginal rate multiplied by the owner's share of the California-source income on the return. It is reduced by any nonresident withholding the LLC has already paid for the owner.
+- **Rates (2025 Form 568 booklet).** These are the rates for 2025. Check the 2026 booklet when it is published.
 
-- **$800 annual franchise tax for LLCs** — $800 annual franchise tax for LLCs  _(R&TC section 17941)_
-- **LLC fee based on total income** — LLC fee based on total income  _(R&TC section 17942)_
-- **Definition of "doing business" in California** — Definition of "doing business" in California  _(R&TC section 17946)_
-- **Temporary first-year exemption from $800 tax, expired after 2023** — Temporary first-year exemption from $800 tax expired after 2023; it is not available for LLCs formed or registered in 2025.  _([AB 85; FTB Publication 3556](https://www.ftb.ca.gov/forms/misc/3556.html))_
-- **$800 not deductible against LLC fee** — $800 not deductible against LLC fee  _(R&TC section 17941(b)(2))_
-- **Line-by-line filing instructions** — Line-by-line filing instructions  _(FTB Form 568 Instructions (2025))_
-- **LLC Tax Voucher** — LLC Tax Voucher  _(FTB Form 3522 (2025))_
-- **Estimated Fee for LLCs** — Estimated Fee for LLCs  _(FTB Form 3536 (2025))_
-- **LLC Filing Information** — LLC Filing Information  _(FTB Publication 3556)_
-- **Check-the-box: SMLLC as disregarded entity** — Check-the-box: SMLLC as disregarded entity  _(IRC section 301.7701-3)_
+| Owner type | Schedule T rate, 2025 ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)) |
+|---|---|
+| Individual, partnership, LLC, estate or trust | 12.3% |
+| C corporation | 8.84% |
+| S corporation | 1.5% |
 
-### 5.1 -- Who must file
+- **When it is due.** The Schedule T tax is due by the **original** due date of Form 568. If it is not paid on time, it is treated as the LLC's tax for the late-payment penalty and interest. No penalty or interest is imposed on the LLC for this if the owner files and pays all California tax on the LLC's income on time (§18633.5(e)(3)).
+- **Credit to the owner.** The payment counts as a payment by the owner on account of the owner's California income tax for the year (§18633.5(g)). The owner still files Form 540NR.
 
-- **Who must file Form 568** — An SMLLC must file Form 568 if ANY of the following apply: the LLC is organized in California, registered to do business in California, doing business in California, or has California-source income. For the 2025 R&TC §23101 bright-line test, California sales exceed the lesser of $757,070 or 25% of total sales, California property exceeds the lesser of $75,707 or 25% of total property, or California payroll exceeds the lesser of $75,707 or 25% of total payroll.  _([R&TC section 17946](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))_
+### Corporate owner: Form 100 or 100S ([2025 Form 100 booklet](https://www.ftb.ca.gov/forms/2025/2025-100-booklet.html))
 
-### 5.2 -- Key Form 568 components
+- **Where the income goes.** Form 100 Question CC asks whether the corporation owns an SMLLC. The FTB says: "an SMLLC reports its income, deductions, and credits on Form 100. However, the SMLLC is required to file a Form 568 regardless of its inclusion on this form."
+- **Due date.** An SMLLC owned by a C corporation files by the 15th day of the 4th month after the close of the owner's year. One owned by an S corporation files by the 15th day of the 3rd month (see the table above).
+- **Credit limit.** The corporation applies the credit limit below on Schedule P (100).
+- **Nonresident corporate owner.** A foreign corporation that owns the SMLLC signs the consent or faces Schedule T at the corporate rate in the table above.
 
-**Key Form 568 components table**
+### Credit limit, for every owner
 
-| Component | Description |
-| --- | --- |
-| Side 1 | General information: LLC name, EIN/FEIN, SOS number, business activity codes |
-| Side 2 | Income and deductions (mirrors Schedule C but for CA purposes) |
-| Side 3 | Schedule B (Balance Sheet) -- required if total assets or total liabilities ≥ specified threshold (verify) |
-| Side 4 | Schedule K (Members' Shares) -- for SMLLC, 100% to single member |
-| Schedule IW | LLC Income Worksheet -- used to compute total income for the LLC fee |
+"Utilization of credits attributable to the SMLLC is limited to the regular tax liability on the income attributable to the activities of the SMLLC" (2025 Form 568 booklet). The owner computes its tax with and without the SMLLC's items. The difference is the most the SMLLC's credits can offset.
 
-- **General information: LLC name, EIN/FEIN, SOS number, business activity codes** — Side 1
-- **Income and deductions (mirrors Schedule C but for CA purposes)** — Side 2
-- **Schedule B (Balance Sheet) -- required if total assets or total liabilities ≥ specified threshold (verify)** — Side 3
-- **Schedule K (Members' Shares) -- for SMLLC, 100% to single member** — Side 4
-- **LLC Income Worksheet -- used to compute total income for the LLC fee** — Schedule IW
+## Penalties ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
 
-### 5.3 -- Schedule IW (LLC fee computation)
+- **Late annual tax.** If the $800 is not paid by the 15th day of the 4th month, a late-payment penalty and interest run from that date ([2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf)). Pay a late prior-year tax on that year's form 3522, not the current one.
+- **Late payment** (R&TC §19132). This starts at 5% and rises by 0.5% for each month or part of a month unpaid, up to 25%. For the fee balance and the Schedule T tax, it runs from the original due date of the return.
+- **Late filing** (R&TC §19131). This is 5% of the unpaid tax, which includes the LLC fee and the Schedule T tax, for each month or part of a month the return is late, up to 25%. If Form 568 is filed after the extended due date, the extension falls away and the penalty runs from the **original** due date. Together, the late-filing and late-payment penalties may not exceed 25% of the unpaid tax. The FTB presumes reasonable cause for the late-payment penalty when 90% of the tax is paid by the original due date.
+- **Estimated fee.** 10% of the underpayment, with the prior-year safe harbor above.
+- **Per-member penalty.** The Form 568 booklet describes a penalty for filing late (including extensions) or filing an incomplete return: $18 times the number of members, for each month or part of a month, up to 12 months. For one member, the most is $216. The statute it cites, R&TC §19172, is written for a "partnership" ([R&TC §19172](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19172.)). Whether the FTB charges it to a disregarded SMLLC is not clear from these texts. Warn the client it may be charged, and ask for abatement for reasonable cause if it is.
+- **Unregistered foreign or suspended SMLLC** (R&TC §19135). If it is doing business in California and does not file within 60 days after an FTB notice and demand, it is charged $2,000 per taxable year, unless it has reasonable cause ([R&TC §19135](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=19135.)).
+- **Interest** runs on unpaid amounts from the original due date. Use the FTB's current rate. This Guide does not quote one.
+
+## Boundary and exception table ([R&TC §17946](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17946.))
+
+| Situation | Result |
+|---|---|
+| Taxable year of **15 days or less**, and **no business** done in California in that period | No Form 568, no annual tax and no fee for that year (§17946). For a calendar-year owner, that means an SOS filing on 17 December or later |
+| SOS filing on 16 December (a 16-day year), or any business done in a short year | §17946 not met. $800 is owed for that year, due by 15 March (December is month 1) |
+| Sole owner a deployed member of the US Armed Forces; California total income $250,000 or less; the SMLLC operates at a loss or ceases operation that year | No annual tax for that year (§17941(f)), for taxable years beginning before 1 January 2030. Enter zero on Form 568 lines 2 and 3, and print "Deployed Military" in the top margin of the return |
+| Domestic LLC files the short form cancellation (SOS form LLC-4/8) within 12 months of filing its articles and meets every condition below | Not subject to the annual tax for its first taxable year |
+| Foreign disregarded SMLLC, not registered and not doing business in California | No Form 568. The owner reports any California-source income |
+| California sales exactly equal to the lesser §23101 amount | "Exceed" is not met. Check the other tests |
+| LLC elected to be taxed as a corporation | Outside Form 568. It files Form 100 or 100S |
+| California total income just below the first fee band | No fee. Check that interest, gains and other income have all been included on Schedule IW before relying on it |
 
-- **Schedule IW computation steps** — 1. Start with total income from all sources (gross receipts or sales, minus returns/allowances, plus other income). 2. For SMLLCs, this generally matches Schedule C gross income (Line 7 of Schedule C) plus any other income items. 3. Apply the fee schedule from Section 3. 4. **Total income is NOT net income.** Cost of goods sold is subtracted, but operating expenses are NOT. 5. If the LLC has income from both California and non-California sources, only California-source income is used for the fee (but see apportionment rules for multi-state LLCs).
+## Worked cases ([R&TC §17942](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=17942.))
 
-### 5.4 -- $800 franchise tax treatment
+### Case A: resident consultant, under the fee threshold (2026) ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html))
 
-- **$800 franchise tax treatment rules** — - The $800 franchise tax is NOT deductible against the LLC fee (they are separate obligations). - The $800 franchise tax IS deductible as a business expense on the owner's Schedule C (federal) and on the CA return. - The $800 is due on the 15th day of the 4th month of the taxable year (April 15 for calendar year). - If the LLC existed at any point during the year, the $800 is owed for that year (pro-ration is not available).
-
-### 5.5 -- Cancellation / dissolution
-
-- **Cancellation / dissolution rules** — - If the LLC was cancelled or dissolved during the year, Form 568 is still required for the short period. - The $800 franchise tax is still owed for the year of cancellation. - File the final Form 568, check the "final return" box, and include Form 3522 for the final year. - To avoid the $800 for the FOLLOWING year, cancel before the end of the current year.
-
-## Section 6 -- PROHIBITIONS
-
-- **P-568-1** — NEVER confuse the $800 franchise tax with the LLC fee. They are separate obligations under different R&TC sections (17941 and 17942). Both may be owed.  _(R&TC section 17941; R&TC section 17942)_
-- **P-568-2** — NEVER compute the LLC fee using net income. The fee is based on TOTAL income (gross receipts less cost of goods sold, NOT less operating expenses).
-- **P-568-3** — NEVER skip Form 568 because the LLC had no income. If the LLC existed and was organized in CA or doing business in CA, Form 568 and the $800 franchise tax are owed regardless of income.
-- **P-568-4** — NEVER apply the temporary first-year $800 exemption to a 2025-formed or 2025-registered LLC. It expired for tax years beginning on or after January 1, 2024. Check the separate 15-day exception if the LLC was formed in the last 15 days of the year and conducted no business.  _(https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)_
-- **P-568-5** — NEVER file Form 568 using the individual owner's SSN as the primary identifier. The LLC should have its own EIN. If it does not, obtain one before filing.
-- **P-568-6** — NEVER report the LLC fee payment as due on April 15. The estimated LLC fee is due on June 15 (Form 3536). Only the $800 franchise tax is due April 15 (Form 3522).
-- **P-568-7** — NEVER advise the taxpayer that dissolving the LLC mid-year eliminates the $800 for that year. The $800 is owed for any year the LLC existed, even for one day.
-- **P-568-8** — NEVER double-count the $800 franchise tax and LLC fee as a single payment. They are paid on different forms (3522 and 3536/568) at different times.
-
-### EC-568-1 -- New LLC formed in 2025, first-year exemption expired
-
-**Situation:** Sole proprietor forms a California SMLLC on February 1, 2025. The first-year $800 exemption has expired (was for 2021-2023 only).
-
-**Resolution:**
-- The $800 franchise tax is owed for 2025. Due May 15, 2025 (the 15th day of the 4th month after the February 1 SOS filing date; Form 3522).
-- If the LLC has total income exceeding $250,000, the LLC fee is also owed.
-- Form 568 is due March 15, 2026.
-- No extension applies for 2025-formed LLCs; do not apply the expired first-year exemption.
-
-### EC-568-2 -- LLC with high gross revenue but low net profit
-
-**Situation:** SMLLC has $600,000 in gross receipts, $550,000 in operating expenses. Net profit is $50,000.
-
-**Resolution:**
-- Total income for LLC fee purposes = $600,000 (gross receipts, not net profit). If no COGS, total income = $600,000.
-- LLC fee = $2,500 (income in $500K-$999K bracket).
-- The $2,500 fee is owed despite the business earning only $50,000 in net profit.
-- Plus $800 franchise tax.
-- Total California entity-level cost: $3,300.
-- **Flag for reviewer:** If the LLC has COGS, subtract COGS from gross receipts for the Schedule IW computation. Operating expenses are NOT subtracted.
-
-### EC-568-3 -- LLC cancelled mid-year
-
-**Situation:** SMLLC cancels with the Secretary of State on June 30, 2025.
-
-**Resolution:**
-- File a final Form 568 for the short period January 1 -- June 30, 2025.
-- $800 franchise tax is owed for 2025 (the year of cancellation).
-- LLC fee is computed on total income for the short period.
-- To avoid the $800 for 2026, the cancellation must be effective before December 31, 2025. In this case it is, so no 2026 $800 is owed.
-- Check the "final return" box on Form 568.
-
-### EC-568-4 -- Out-of-state LLC doing business in California
-
-**Situation:** Delaware-organized SMLLC has California customers generating $400,000 in California-source income. The LLC is not registered in California.
-
-**Resolution:**
-- The LLC is "doing business" in California under R&TC section 17946 (CA-source income exceeds the threshold).
-- Must register with the CA Secretary of State (if not already), file Form 568, pay $800 franchise tax, and pay the LLC fee based on CA-source total income.
-- LLC fee: $900 (income $250K-$499K range).
-- Failure to register and file subjects the LLC to penalties and back taxes.
-- **Flag for reviewer:** Out-of-state LLCs "doing business" in CA face the same obligations as CA-organized LLCs.
-
-### EC-568-5 -- Estimated fee underpayment
-
-**Situation:** LLC estimated total income of $200,000 in June 2025 and did not file Form 3536 (no fee estimated since under $250K). Actual total income was $300,000.
-
-**Resolution:**
-- Actual LLC fee owed = $900 (income $250K-$499K).
-- No Form 3536 was filed by June 15. The $900 is now due with Form 568 on March 15, 2026.
-- Underpayment penalty: interest on $900 from June 15, 2025 to payment date.
-- **Flag for reviewer:** Calculate interest at the FTB's quarterly rate.
-
-### EC-568-6 -- SMLLC with both W-2 payroll and Schedule C income
-
-**Situation:** SMLLC pays the owner a salary (improperly -- disregarded entities typically do not pay W-2 to the owner for federal purposes). LLC also has Schedule C income.
-
-**Resolution:**
-- For federal purposes, a disregarded SMLLC owned by an individual cannot pay the owner a W-2 salary. This may indicate a classification error.
-- For California Form 568, report all LLC income and deductions.
-- The LLC fee is based on total income regardless of how compensation is structured.
-- **Flag for reviewer:** Investigate whether the entity should be classified differently (e.g., S-corp election was intended).
-
-### EC-568-7 -- LLC fee threshold boundary
-
-**Situation:** SMLLC has gross receipts of $249,500. After subtracting COGS of $0, total income is $249,500.
-
-**Resolution:**
-- Total income is below $250,000. LLC fee = $0.
-- Only the $800 franchise tax is owed.
-- If income had been $500 higher, the fee would jump to $900.
-- **Flag for reviewer:** Verify total income computation. Income items that are easy to overlook (interest, other income) could push total income over the threshold.
-
-### EC-568-8 -- Late-formed LLC (December formation)
-
-**Situation:** Sole proprietor forms a California SMLLC on December 1, 2025.
-
-**Resolution:**
-- $800 franchise tax is owed for 2025, even though the LLC existed for only one month.
-- For a first-year domestic LLC, FTB Publication 3556 measures the annual-tax due date from the SOS filing date: the 15th day of the 4th month after formation. For a December 1, 2025 filing, pay by April 15, 2026.
-- Form 568 is due for the short period December 1-31, 2025.
-- $800 franchise tax is ALSO owed for 2026 (due April 15, 2026).
-- **Flag for reviewer:** Two $800 payments due within months of each other. Advise client of the cost of late-year formation.
-
-### Test 568-1 -- Basic SMLLC, income under $250K
-
-**Input:** California SMLLC, calendar year, total income $180,000. No first-year exemption.
-**Expected:** $800 franchise tax (Form 3522, due April 15, 2025). LLC fee = $0 (under $250K). Form 568 due March 15, 2026. Total CA entity-level cost: $800.
-
-### Test 568-2 -- SMLLC with LLC fee in $500K-$999K bracket
-
-**Input:** California SMLLC, total income (gross receipts less COGS) = $750,000. No first-year exemption.
-**Expected:** $800 franchise tax. LLC fee = $2,500. Estimated fee of $2,500 due June 15, 2025 (Form 3536). Total CA entity-level cost: $3,300.
-
-### Test 568-3 -- High-income SMLLC
-
-**Input:** California SMLLC, total income = $6,000,000.
-**Expected:** $800 franchise tax. LLC fee = $11,790. Estimated fee due June 15 (Form 3536). Total CA entity-level cost: $12,590.
-
-### Test 568-4 -- First-year LLC (exemption expired)
-
-**Input:** New California SMLLC formed March 15, 2025. Total income = $100,000. First-year exemption expired after 2023.
-**Expected:** $800 franchise tax owed (no exemption). LLC fee = $0 (under $250K). Total: $800. Form 568 due March 15, 2026.
-
-### Test 568-5 -- LLC fee vs. net profit mismatch
-
-**Input:** SMLLC with gross receipts $400,000, COGS $50,000, operating expenses $320,000. Net profit = $30,000.
-**Expected:** Total income for LLC fee = $400,000 - $50,000 = $350,000. LLC fee = $900 (income $250K-$499K). The $30,000 net profit is irrelevant for fee computation. Total entity-level: $800 + $900 = $1,700.
-
-### Test 568-6 -- Mid-year cancellation
-
-**Input:** SMLLC cancels June 30, 2025. Total income for short period = $100,000.
-**Expected:** $800 franchise tax owed for 2025. LLC fee = $0 (under $250K). Final Form 568 for short period. No 2026 $800 owed (cancellation effective before Dec 31).
-
-### Test 568-7 -- Late filing penalty
-
-**Input:** SMLLC files Form 568 four months late (July 15, 2026 instead of March 15, 2026). $800 paid on time.
-**Expected:** Late filing penalty: $18/month x 1 member x 4 months = $72. No late payment penalty (tax was paid on time).
-
-## Section 9 -- Self-checks
-
-**Check 220 -- Form 568 filed for every SMLLC.** If the taxpayer operates through a California SMLLC, verify Form 568 is prepared.
-
-**Check 221 -- $800 franchise tax accounted for.** Verify Form 3522 payment of $800 is documented. Verify due date (April 15, 2025 for TY2025).
-
-**Check 222 -- LLC fee computed from total income, not net income.** Verify Schedule IW uses gross receipts less COGS, NOT net profit.
-
-**Check 223 -- LLC fee bracket is correct.** Cross-check total income against fee schedule. Verify no income items were omitted (interest, other income).
-
-**Check 224 -- Form 3536 estimated fee filed if applicable.** If total income was expected to exceed $250,000, verify Form 3536 was filed by June 15.
-
-**Check 225 -- First-year exemption not applied for 2025.** If the LLC was formed or registered in 2025, verify the expired first-year exemption was not applied; separately check the 15-day exception for late-December no-business formations.
-
-**Check 226 -- $800 deducted on federal Schedule C.** The $800 franchise tax is a deductible business expense. Verify it appears on the federal return.
-
-**Check 227 -- Late filing/payment penalties computed if applicable.** If Form 568 or payments were late, compute penalties per Section 3.
-
-**Check 228 -- EIN used on Form 568.** Verify the LLC files with its own EIN, not the owner's SSN.
-
-## Section 10 -- Cross-skill references
-
-**Inputs from:**
-- `us-sole-prop-bookkeeping` -- gross receipts, COGS, business income for Schedule IW
-- `us-schedule-c-and-se-computation` -- Schedule C net profit (for context, not for fee computation)
-
-**Outputs to:**
-- `ca-540-individual-return` -- $800 and LLC fee as deductible expenses
-- `us-ca-return-assembly` -- Form 568, Form 3522, Form 3536 for final package
-
-## Section 11 -- Known gaps
-
-1. Multi-member LLC Form 568 is not supported (this skill is SMLLC only).
-2. LLCs taxed as S-corps or C-corps use different forms (Form 100S, Form 100).
-4. Multi-state apportionment for LLCs with income from multiple states is not fully detailed.
-5. FTB interest rates for underpayment penalties change quarterly and must be looked up at filing time.
-
-### Change log
-
-- **v0.1 (April 2026):** Stub.
-- **v0.2 (April 2026):** Full content skill with $800 franchise tax, LLC fee schedule, Form 568 preparation, edge cases, and test suite.
-
-## End of skill
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+- **Facts.** A California SMLLC formed in 2023, owned by a resident individual who uses the calendar year. 2026 consulting fees are $180,000, all from California clients, with no other income.
+- **Annual tax.** $800, due 15 April 2026 on form 3522.
+- **Fee.** California total income is $180,000, below $250,000, so there is no fee and no form 3536.
+- **Return.** Form 568 (Sides 1, 2, 3 and 7) is due 15 April 2027. The owner reports the business on Form 540. The total 2026 entity-level charge is $800.
+
+### Case B: reseller, cost of goods sold added back (2026) ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+
+- **Facts.** A California SMLLC, individual owner, calendar year. It sells goods delivered only to California buyers. 2026 gross receipts are $620,000 and cost of goods sold is $400,000, so gross income is $220,000. Its 2025 fee was $900, and it paid $900 on form 3536 by 15 June 2026.
+- **Base.** Gross income $220,000 plus cost of goods sold $400,000 gives $620,000.
+- **Fee.** $620,000 is in the $500,000 to $1,000,000 band, so the fee is $2,500. Subtracting cost of goods sold would have given $220,000 and a nil fee. That is the error to avoid.
+- **Estimate.** $900 was paid by 15 June, which equals the 2025 fee, so there is no 10% penalty. The balance of $2,500 − $900 = $1,600 is due by 15 April 2027 with form 3536 (or 3537).
+- **Total entity-level charge for 2026:** $800 + $2,500 = $3,300.
+
+### Case C: new SMLLC formed in September 2026 (first year) ([2026 FTB 3522 instructions](https://www.ftb.ca.gov/forms/2026/2026-3522.pdf))
+
+- **Facts.** An individual with a calendar year files articles for a California SMLLC on 10 September 2026 and starts trading at once.
+- **First-year tax.** Count September as month 1. The 4th month is December, so $800 is due by 15 December 2026. No first-year relief applies to a first year beginning in 2026.
+- **Estimated fee.** The 6th month is February 2027. The 2026 taxable year ends on 31 December 2026, before then, so no estimated fee is due for 2026. Any 2026 fee is due with the return on 15 April 2027.
+- **Second year.** Another $800 is due on 15 April 2027 for 2027. It is $800, not $400, because the first taxable year began in 2026.
+
+### Case D: nonresident owner, 2025 return filed on extension ([R&TC §18633.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=18633.5.))
+
+- **Facts.** A Nevada resident individual owns a California SMLLC, calendar year. In 2025 its California total income was $300,000 and its California-source net income was $120,000. The $800 for 2025 was paid on 15 April 2025.
+- **Entity charges.** Fee $900 (the $250,000 to $500,000 band). The estimate was due on form 3536 by 15 June 2025. Any unpaid balance was due 15 April 2026, even though the return is extended to 15 October 2026.
+- **Consent signed.** The owner signs the consent on Side 3 and reports the $120,000 on Form 540NR, Schedule CA (540NR) column E.
+- **Consent not signed.** The SMLLC completes Schedule T and pays 12.3% × $120,000 = $14,760 by 15 April 2026, less any nonresident withholding already paid for the owner. That payment is credited to the owner, who must still file Form 540NR.
+
+### Case E: 2025 return filed after the extended date (penalty) ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+
+- **Facts.** An SMLLC owned by a resident individual, calendar year. The 2025 fee is $900 and the 2024 fee was nil. The $800 was paid on time, but nothing was paid toward the fee. Form 568 is filed on 20 November 2026, after the extended date of 15 October 2026.
+- **Estimate penalty.** None. The prior-year fee was nil, so the safe harbor is met.
+- **Late filing.** Filing after the extended date means the penalty runs from 15 April 2026. That is eight months or parts of months, so 5% × 8 = 40%, capped at 25%. The penalty is 25% × $900 = $225.
+- **Late payment.** Combined with late filing, the two may not exceed 25% of the unpaid tax, so the two together are $225 at most.
+- **Per-member penalty (if charged).** Filing after the extended date loses the extension, so this also counts from 15 April 2026: eight months or parts of months, so $18 × 8 = $144. Whether it applies to an SMLLC at all is the open point under Penalties.
+- **Interest** runs on the $900 from 15 April 2026.
+
+### Case F: cancelling a calendar-year SMLLC (2026) ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+
+- **Facts.** A California SMLLC, individual owner, stops all business on 30 June 2026. The $800 for 2026 was paid on 15 April 2026.
+- **2026.** The $800 for 2026 is not prorated. The 2026 fee is still computed on the total income for the final year, here January to June. File a final 2026 Form 568, final return box checked, by 15 April 2027 (15 October 2027 on extension).
+- **SOS filings.** Form LLC-3 (dissolution) and form LLC-4/7 (cancellation).
+- **Stopping the 2027 tax.** No 2027 tax is assessed only if all three conditions under Cancelling the SMLLC are met. The safest course is to file the SOS cancellation before 31 December 2026. If it is filed later, "a subsequent year return and an additional $800 tax may be required."
+
+## When to refuse or refer
+
+- **Classification is unclear.** This includes an SMLLC that elected corporate status, a pre-1997 foreign SMLLC still classified as a corporation for California, or a second member admitted during the year. Refer.
+- **Nexus is disputed.** This includes an out-of-state SMLLC that is near the §23101 thresholds, has agents or staff in California, or relies on Public Law 86-272 (which does not remove the annual tax or fee; see ca-llc-fee-and-tax). Refer to a California multistate specialist.
+- **Back years unfiled or suspended.** Refer voluntary disclosure, revivor and penalty abatement to a specialist.
+- **Multistate apportionment** for the owner or for the Schedule IW assignment of services, intangibles or real property.
+- **Nonresident withholding** (forms 592 and 592-B) and the pass-through entity elective tax. These use other rules.
+- **Corporate owner in a combined report** or with a non-unitary SMLLC.
+- **Tiered structures.** An SMLLC that owns other LLCs (amounts already subject to the fee are excluded), or one owned by a partnership.
+- **Commonly controlled LLCs** that the FTB may aggregate for the fee (§17942(b)(2)). See **ca-llc-fee-and-tax**.
+
+## Filing and payment ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+
+| Step | Form | Due (calendar-year individual owner, tax year 2026) |
+|---|---|---|
+| Annual tax | FTB 3522 | 15 April 2026. First year: 15th day of the 4th month counting the SOS filing month as month 1 |
+| Estimated fee | FTB 3536 | 15 June 2026, if a fee is expected |
+| Return | Form 568 | 15 April 2027 (other owners: see the due-date table) |
+| Fee balance and any Schedule T tax | FTB 3536, or FTB 3537 if filing on extension | 15 April 2027, the original due date |
+| Extended return | Form 568 | 15 October 2027, with no extension form |
+| Owner's return | Form 540, 540NR, 100 or 100S | The owner's own due date |
+
+- **Paying.** Pay by Web Pay, electronic funds withdrawal, credit card, or by mail with the voucher. If paying by Web Pay or credit card, do not also mail the voucher.
+
+### Cancelling the SMLLC ([FTB: Limited liability company](https://www.ftb.ca.gov/file/business/types/limited-liability-company/index.html))
+
+- **Steps.** File a timely final Form 568 and pay the $800 for the final year. File form LLC-4/7, Certificate of Cancellation, with the SOS. A domestic LLC also files form LLC-3, Certificate of Dissolution. The effective date of form LLC-4/7 stops the $800 for future years. A "final" return alone does not stop it.
+- **No tax for the following year** only if **all** of these are met ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html)):
+  - the final return for the preceding year is filed on time, including any extension;
+  - the SMLLC does no business in California after the final taxable year; and
+  - the SOS cancellation is filed within 12 months of that timely final return.
+- **Short form cancellation** (form LLC-4/8). This is available only to a domestic LLC, and only if **all** of these are true:
+  - it is filed within 12 months of the date the articles were filed;
+  - the LLC has no debts or liabilities other than tax;
+  - its known assets have been distributed, or none were acquired;
+  - the final return has been or will be filed with the FTB;
+  - it has done no business since filing its articles;
+  - a majority of managers or members (or of the organizers, if there are none) voted to dissolve; and
+  - any investor payments have been returned.
+
+  If all are met, "Your LLC will not be subject to the annual $800 tax for its first tax year."
+
+### 2025 returns, including those filed on extension ([FTB: Doing business in California](https://www.ftb.ca.gov/file/business/doing-business-in-california.html))
+
+- **Same rates.** The $800 annual tax, the fee bands and the 10% estimate penalty were the same for 2025.
+- **Deadlines for a calendar-year individual owner.** The 2025 annual tax was due 15 April 2025, the estimated fee 15 June 2025, and Form 568 15 April 2026. The automatic six-month extension runs to 15 October 2026.
+- **Paying late.** Any fee or Schedule T tax paid with an extended return is late. Penalty and interest run from 15 April 2026.
+- **First-year relief.** An SMLLC formed in 2024 or 2025 had none.
+- **Thresholds and rates.** The doing-business amounts and Schedule T rates quoted above are the 2025 figures.
+
+## Completion checklist ([2025 Form 568 booklet](https://www.ftb.ca.gov/forms/2025/2025-568-booklet.html))
+
+- [ ] Single owner and disregarded status confirmed. No corporate election.
+- [ ] Trigger recorded: organized, registered, or doing business under §23101, with each test run against the lesser of 25% and that year's indexed amount.
+- [ ] Exceptions checked: 15-day year, deployed-military exemption, short form cancellation.
+- [ ] Owner's taxable year used. Form 3522 paid by the 15th day of the 4th month (first year: SOS filing month is month 1), separately from Form 568.
+- [ ] Schedule IW built from the owner's federal schedules: gross income plus cost of goods sold, assigned to California, with no operating expenses deducted.
+- [ ] Fee read from the band table in ca-llc-fee-and-tax. Form 3536 payment compared with the prior-year fee.
+- [ ] Form 568 Sides 1, 2, 3 and 7 completed. Schedules B and K added if the $3,000,000 tests are met.
+- [ ] Owner's consent signed on Side 3, or Schedule T computed and paid by the original due date.
+- [ ] Due date matched to the owner type. Fee balance paid by the original due date, whatever the extension.
+- [ ] SMLLC income, deductions and credits reported on the owner's Form 540, 540NR, 100 or 100S, with credits limited.
+- [ ] If closing: timely final return, SOS cancellation within 12 months of it, and no business afterwards.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,428 +2,270 @@
 name: wa-bo-tax
 description: Tier 2 content skill for Washington State Business & Occupation tax under RCW Title 82.04.
 jurisdiction: US-WA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# WA Bo Tax
+# Washington Business and Occupation (B&O) tax
 
-## Washington State Business & Occupation (B&O) Tax
+## Scope and who this is for
 
-Tier 2 content skill for Washington State Business & Occupation tax under RCW Title 82.04. Washington imposes a gross-receipts tax (NOT an income tax) on the privilege of doing business in the state. There is no personal income tax and no corporate net-income tax in Washington. The B&O tax is multi-rate by activity classification — Retailing 0.471%, Wholesaling 0.484%, Manufacturing 0.484%, Service & Other Activities 1.5% baseline rising to 1.75% on receipts above $1,000,000 (and 2.1% for select financial-services taxpayers). The Multiple Activities Tax Credit (MATC) prevents the same dollar from being taxed twice across in-state classifications. A small-business B&O credit zeroes liability for very small filers. Bright-line nexus is established at $100,000 of Washington-sourced receipts (Wayfair-compliant). The Combined Excise Tax Return covers B&O, retail sales tax, and use tax in one filing, due the 25th of the month after the period. Washington also imposes a separate 7% long-term capital gains tax on individual gains above the indexed threshold (RCW 82.87) — covered briefly with a refer-out. Tax year 2025.
+Washington has no personal income tax on business profit. Instead it imposes the business and occupation (B&O) tax, a tax on gross receipts, on almost every person engaging in business in the state ([RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)). This Guide covers the **state** B&O tax for sole proprietors, freelancers and small companies, for **2026** reporting periods, with a short section for 2025 periods still being filed or amended. Figures are for 2026 reporting periods unless a line says otherwise.
 
-## 1. Scope
+**Covered:**
+- who must register, who must file and who has nexus;
+- the main classifications (Retailing, Wholesaling, Manufacturing, Service and Other Activities) and their rates;
+- the Service and Other Activities rate tiers and the affiliated-group rule;
+- the small business B&O tax credit (SBC);
+- apportionment of service income for businesses also taxable in another state;
+- the multiple activities tax credit (MATC) in outline;
+- filing frequency, due dates and late-payment penalties.
 
-### 1.1 In scope
+**Not covered (refer or use another Guide):**
+- retail sales tax and use tax, including which services became retail sales on 1 Oct 2025: use the **wa-sales-tax** Guide. This Guide only covers the B&O side of those sales.
+- city B&O taxes (administered by each city, not the Department of Revenue (DOR));
+- public utility tax, insurance premiums tax, real estate excise tax, capital gains tax;
+- specialized B&O classifications other than the four main ones (DOR lists more than 50);
+- financial institutions, select advanced computing businesses, hospitals and the high-grossing business surcharge (see "When to refuse or refer").
 
-This skill covers, for tax year 2025 unless otherwise stated:
+## Ask the client first
 
-- Washington State B&O tax under RCW 82.04 for sole proprietors, single-member LLCs disregarded for federal tax, partnerships, S corporations, and C corporations doing business in Washington.
-- Rate classification across the four primary activities: Retailing, Wholesaling, Manufacturing, and Service & Other Activities.
-- The 2025 rate landscape including the Service & Other Activities $1,000,000 threshold and the surcharge tiers introduced by recent Washington legislative action (verify against the final enacted bill text — see §13 Provenance for the citation discipline).
-- The Workforce Education Investment surcharge on advanced-computing businesses with affiliated-group worldwide gross revenue greater than $25,000,000,000 (Amazon, Microsoft).
-- The Multiple Activities Tax Credit (MATC) under RCW 82.04.440 — used to prevent the same dollar of in-state receipts from being taxed twice when a single Washington business engages in two or more of Manufacturing, Wholesaling, Retailing, or Extracting on the same product or activity.
-- The Small Business B&O Tax Credit under RCW 82.04.4451 — a filing-frequency-based sliding-scale credit that zeroes B&O liability for very small filers.
-- Apportionment of "apportionable income" using the single market-based receipts factor under RCW 82.04.460 and WAC 458-20-19402.
-- Bright-line economic nexus under RCW 82.04.067 — $100,000 of Washington-sourced cumulative gross receipts in the current or immediately preceding calendar year, or organization in Washington, or physical presence.
-- Filing frequencies (monthly, quarterly, or annual) assigned by the Washington Department of Revenue (DOR) based on estimated tax liability, the 25th-of-the-following-month due date, and the Combined Excise Tax Return as the universal vehicle.
+- What does the business do, activity by activity? (Sells goods to end users, sells goods for resale, makes goods, provides services, licenses intangibles.)
+- Since 1 Oct 2025, does any service fall into the new retail-sale list (IT services, custom software, website development, advertising, temporary staffing, security, live presentations)? If yes, that income moves to Retailing B&O and sales tax applies. The list is narrower than it looks. One-on-one instruction such as tutoring, consulting or music lessons is not a live presentation ([DOR live presentations](https://dor.wa.gov/taxes-rates/live-presentations)). From 1 July 2026 ESSB 6346 also excludes music lessons whatever the number of participants, presentations by 501(c) nonprofits, before- and after-school care provided on site by elementary schools, and instruction incidental to an excluded performance ([DOR special notice](https://dor.wa.gov/forms-publications/publications-subject/special-notices/live-presentations-new-exclusions-retail-sales)). From the same date, staffing is not temporary staffing if it is used by hospital-based clinical providers to supplement their fulfillment of hospital contracts for professional services **and** is used for limited periods of time to supplement hospital staffing; both conditions must hold ([DOR special notice](https://dor.wa.gov/forms-publications/publications-subject/special-notices/temporary-staffing-services-modification-exclusion-retail-sales-staff-provided-hospitals)). Excluded services stay in Service and Other Activities (before- and after-school care: the Child Care classification; a nonprofit presentation that is an exempt fundraising activity is not taxed at all). The wa-sales-tax Guide has the full lists.
+- Is the business based in Washington? If not, what were its Washington-sourced gross receipts and any physical presence (property, employees, agents) in the current and the previous calendar year? If it first passed the test this year, on what date?
+- What was the Service and Other Activities gross income in the **previous calendar year**, for the business and for every affiliate under common control?
+- What filing frequency did DOR assign (monthly, quarterly, annual, or active non-reporting)?
+- Is income also earned from customers outside Washington (apportionment), or are goods delivered outside Washington?
+- Does the business both manufacture and sell the same goods (MATC)?
+- Which cities does it operate in (possible city B&O tax)?
 
-### 1.2 Out of scope — refer out
+## The method, step by step
 
-The following are mentioned where they intersect with B&O but are NOT exhaustively covered here. Refer to a Washington-credentialed CPA or the appropriate sibling skill:
+1. **Check the obligation to register.** Anyone engaging in a taxable business must hold a DOR registration certificate ([RCW 82.32.030](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.030)(1)). Unless the person is a firearms dealer as defined in RCW 9.41.010 (a dealer must always register), registration is not required only if **all** of these hold: B&O gross income from all activities is under $12,000 per year; public utility tax income is under $12,000 per year; the person does not have to collect or pay any other tax or fee to DOR (for example retail sales tax); and the person does not otherwise need a business license under chapter 19.02 RCW ([RCW 82.32.030](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.030)(2); [WAC 458-20-101](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-101)). A seller that must collect retail sales tax must register whatever its income.
 
-- **Retail sales tax (RCW 82.08) and use tax (RCW 82.12).** Reported on the same Combined Excise Tax Return but governed by separate rules.
-- **Local (municipal) B&O taxes** — Seattle, Tacoma, Bellevue, Bellingham, Everett, and roughly 40 other Washington cities impose their own B&O. These are NOT administered by the Department of Revenue. See §10 below for an orientation and refer-out.
-- **Public Utility Tax (RCW 82.16).** A separate gross-receipts tax on utility activities (electrical power, gas distribution, water distribution, motor and urban transportation, telegraph, etc.) at different rates. Not B&O.
-- **Insurance Premium Tax (RCW 48.14).** Insurers do not pay B&O on insurance premium income — they pay the separate premium tax administered by the Office of the Insurance Commissioner.
-- **Washington Long-Term Capital Gains Tax (RCW 82.87).** A 7% excise tax on individuals' long-term capital gains above the indexed standard deduction (approximately $270,000 for tax year 2025 — confirm with DOR before filing). Upheld by the Washington Supreme Court in *Quinn v. State* (March 2023) and by the U.S. Supreme Court declining certiorari (January 2024). See §11 for orientation only; the capital gains return (Form WA-CG) is its own filing.
-- **Estate Tax (RCW 83.100).** Separate.
-- **Real Estate Excise Tax (REET, RCW 82.45).** Separate.
-- **Combined reporting / unitary business** issues beyond a single filer's classification — refer out.
+2. **Check nexus (out-of-state businesses).** A non-Washington individual or business has substantial nexus, and is subject to B&O tax, if in the **current or immediately preceding** calendar year it had **more than** $100,000 of cumulative gross receipts sourced or attributed to Washington, or physical presence in Washington ([RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1)). A Washington resident individual, or an entity organized or commercially domiciled in Washington, always has nexus. Receipts from all classifications count toward the $100,000 test.
+   - **Which part of the year is taxable.** If the business met the test in the prior calendar year, the whole current year is taxable. If it first meets the test during the current year, and did not meet it in the prior year, B&O tax for the current year applies only to business activity on and after the date nexus arose ([RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2); [WAC 458-20-19401](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-19401)(3)(c)). Activity earlier in that year is not taxed, even though its receipts count toward the $100,000. The next calendar year is then taxable in full.
 
-### 1.3 Reviewer assumption
+3. **Classify every income stream.** Each activity is taxed under its own classification; one business can owe under several ([RCW 82.04.440](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.440)(1)). Use the classification table in the rates section. Any business activity not taxed explicitly elsewhere in chapter 82.04 RCW falls into Service and Other Activities ([RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)). Sales to consumers of prewritten computer software (however delivered), digital goods and digital automated services, including software as a service, are retail sales and go under Retailing ([RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050)(6)(a) and (8)(a); [DOR digital products](https://dor.wa.gov/forms-publications/publications-subject/tax-topics/digital-products-including-digital-goods)). This was already the rule before 1 Oct 2025. Long-standing retail services to consumers are Retailing too, not Service and Other ([RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050)(2)(a)-(f)). They include:
+   - installing, repairing, cleaning, altering, imprinting or improving consumers' tangible personal property;
+   - constructing, repairing, decorating or improving buildings and other structures for consumers;
+   - cleaning, fumigating, razing or moving existing buildings, but **not** janitorial services (wall and window washing, floor cleaning and waxing, cleaning rugs, drapes and upholstery in place);
+   - automobile towing, unless the business pays public utility tax on it;
+   - lodging and other services by a hotel, motel, rooming house or similar, as distinct from renting real property.
 
-- **Reviewer assumption** — This skill assumes that the output is reviewed by a credentialed Washington practitioner (CPA licensed in Washington or an attorney with Washington tax practice) before any return is filed or any position is communicated to a taxpayer. Conservative defaults govern: when in doubt about classification, use the highest applicable rate and flag the ambiguity for the reviewer.  _(§1.3)_
+   So a repair shop, a contractor building for consumers or a motel pays Retailing B&O (0.471% for 2026) and collects retail sales tax.
+   - **Wholesaling needs proof.** A sale for resale is Wholesaling only if the seller can prove it. "The burden of proving that a sale is a wholesale sale rather than a retail sale is on the seller." The normal proof is a copy of the buyer's reseller permit, taken at the time of sale or within a reasonable time after it. An approved exemption certificate can stand in only if it carries the buyer's reseller permit number ([RCW 82.04.470](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.470)(1), (2)). The statute also allows a few narrower routes, such as proving the facts and circumstances under DOR rules ((3) to (5)). Without that proof, the sale is a retail sale: Retailing B&O plus retail sales tax.
 
-## 2. Why Washington is unique
+4. **Measure gross income for each classification.** The base is gross income, gross proceeds of sales or value of products, "without any deduction on account of the cost of tangible property sold, the cost of materials used, labor costs, interest, discount, delivery costs, taxes, or any other expense" ([RCW 82.04.080](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.080)). Only deductions the law specifically allows are taken, and they are itemized on the return. B&O is not collected from customers; the business pays it.
 
-Washington is one of a small handful of U.S. states with **no personal income tax and no corporate net-income tax**. Article VII of the Washington Constitution and a long line of Supreme Court decisions (*Culliton v. Chase*, 1933, and progeny) have been interpreted to bar a graduated income tax on individuals absent a constitutional amendment.
+5. **Source and apportion.**
+- **Goods:** a sale takes place in Washington when the buyer (or the buyer's agent or donee) receives the goods in Washington ([WAC 458-20-193](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-193)). Goods received by the buyer outside Washington are not Washington sales. Possession by a separate shipping company is not receipt by the buyer.
+- **Services and royalties (apportionable income):** if the business is also taxable in another state, it apportions using a single receipts factor: Washington receipts over worldwide receipts from that activity, computed separately for each classification ([RCW 82.04.460](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.460), 82.04.462). Receipts are attributed first to where the customer received the benefit of the service, then down a fixed cascade (where primarily received, where ordered, billing address, payment address, customer address, commercial domicile). "Taxable in another state" includes a state that could tax the business under Washington's own nexus standards, even if it does not. A business may use the prior year's factor but must correct the current year once complete data exist, and not later than 31 October of the following year; penalties apply only if that correction is not made and paid by that date ([RCW 82.04.462](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.462)(4)).
 
-In place of an income tax, Washington funds its general fund largely through:
+6. **Apply the rate for each classification** (the rates section). For Service and Other Activities pick the tier from the **prior calendar year** income in that classification, aggregated across affiliates.
 
-- The **retail sales tax** (6.5% state rate plus local rates, RCW 82.08);
-- The **B&O tax** (RCW 82.04) — a gross-receipts tax on the privilege of doing business;
-- The **public utility tax** (RCW 82.16) for utilities; and
-- A patchwork of selective excise taxes including, since 2022, the long-term capital gains tax (RCW 82.87).
+7. **Apply the small business credit** to the total B&O tax for the period (the SBC section).
 
-The practical implications for a freelancer or small business operating in Washington are profound and frequently misunderstood:
+8. **Apply any MATC** where the same goods were manufactured and sold (the MATC section).
 
-1. **There is no deduction for expenses against the B&O base.** The tax applies to gross receipts (with a few statutory deductions for specific items like bad debts, interstate sales, and certain exemptions), not net income. A consulting business with $200,000 of gross receipts and $190,000 of expenses still owes B&O on $200,000.
-2. **Cost of goods sold is not deducted from the B&O base for Retailing or Wholesaling.** Margin compression at low-margin resellers (electronics, groceries, fuel) is a real concern, which is why those classifications carry the lowest rates (0.471% and 0.484%) — the legislature calibrated rates to industry margins.
-3. **The federal Schedule C "net profit" number is irrelevant to B&O.** Owners often confuse the two. Be explicit with clients that B&O starts from gross receipts.
-4. **B&O is owed even in a loss year.** A business that breaks even or loses money still owes B&O on every dollar of gross receipts above the small-business credit threshold.
-5. **No PIT means no personal Form 540 / 1040-equivalent at the state level.** Owners of pass-through entities have no personal Washington return for the business income. The entity itself pays B&O.
+9. **File and pay** on the excise tax return in My DOR by the due date for the assigned frequency ("Filing and payment").
 
-## 3. Rate classifications — the 2025 table
+## [Rates and thresholds for 2026](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)
 
-**2025 B&O rate classifications table**  _(RCW 82.04.250, RCW 82.04.270, RCW 82.04.240, RCW 82.04.290)_
+### [Main classifications](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.250)
 
-| Classification (RCW) | 2025 base rate | Notes |
-| --- | --- | --- |
-| Retailing — RCW 82.04.250 | **0.471%** | Sales of tangible personal property to consumers; certain enumerated services to consumers. |
-| Wholesaling — RCW 82.04.270 | **0.484%** | Sales for resale; requires reseller permit from the buyer. |
-| Manufacturing — RCW 82.04.240 | **0.484%** | Manufacturing activity in Washington; measured by value of products manufactured. |
-| Service & Other Activities — RCW 82.04.290 | **1.5%** baseline | Catch-all for personal and professional services, royalties, and items not otherwise classified. |
-| Service & Other Activities — receipts > $1,000,000 | **1.75%** | Workforce-Education-Investment-era step-up; applies to gross income in the tier above $1M. |
-| Specified financial institutions | **~2.1%** | Surcharge tier for the largest financial-services taxpayers; verify final rate against current DOR table. |
-
-- **Narrower classifications and conservative default** — In addition there are many narrower classifications with their own rates — extracting, processing for hire, printing and publishing, warehousing, gambling contests, travel agents, insurance producers, royalties, child care, and dozens more. When a client's activity does not obviously fit one of the four primaries, look it up in WAC 458-20 (the DOR's "ETA" series and rules) before assigning a rate. **Conservative default:** when an activity could plausibly be Service & Other Activities at 1.5% / 1.75% or a lower-rate specialty classification, the reviewer must verify the specialty applies before the lower rate is used. The DOR's audit posture is that Service is the residual catch-all.  _(WAC 458-20)_
-
-### 3.1 What is "Retailing"?
-
-- **Retailing definition** — Retailing under RCW 82.04.050 includes: - Sales of tangible personal property to consumers (not for resale); - Charges for installing, repairing, cleaning, altering, imprinting, or improving tangible personal property of consumers; - Charges for constructing, repairing, decorating, or improving real or personal property of consumers (with carve-outs for prime contractors and speculative builders); - Lodging for fewer than 30 days; - Specified digital products sold to consumers; - Specified personal services (tanning, tattooing, escort, dating, physical fitness, etc., enumerated in RCW 82.04.050(3)(g)). The classification is critical because most "retail" activities **also** trigger retail sales tax collection — the same transaction generates both the 0.471% Retailing B&O and the 6.5%+ state-and-local retail sales tax. The B&O is the seller's burden; the sales tax is the buyer's burden collected by the seller.  _(RCW 82.04.050)_
-
-### 3.2 What is "Wholesaling"?
-
-- **Wholesaling definition** — Wholesaling under RCW 82.04.060 is a sale of tangible personal property or specified services to a buyer who will resell the item in the regular course of business. The seller must obtain and retain a **reseller permit** from the buyer to avoid the transaction defaulting to Retailing. Reseller permits are issued by the DOR to qualifying buyers (not by the seller). The seller's duty is to verify the permit's validity on the DOR's "Reseller Permit Verification" page and retain proof.  _(RCW 82.04.060)_
-
-### 3.3 What is "Manufacturing"?
-
-- **Manufacturing definition** — Manufacturing under RCW 82.04.110 is the production, fabrication, or processing of articles for sale or commercial use. The measure is the **value of products manufactured** — generally the selling price when the manufactured product is sold in Washington, or the fair market value at the time of first commercial use when the manufacturer also uses or transfers the product. A common trap: a Washington manufacturer that **also sells** the manufactured product owes Manufacturing B&O AND Retailing or Wholesaling B&O on the same product. This is the canonical MATC fact pattern — see §5 below.  _(RCW 82.04.110)_
-
-### 3.4 What is "Service & Other Activities"?
-
-- **Service & Other Activities definition** — Service & Other Activities under RCW 82.04.290 is the residual catch-all for activities not classified elsewhere. It covers, among many other things: - Professional services (accounting, legal, consulting, engineering, architecture, IT services, software development to business customers, marketing, advertising); - Royalties from licensing intangibles; - Investment management; - Personal services not enumerated in the Retailing list; - Most freelance software development for business customers (sale of custom software, SaaS subscriptions to business customers, development hours billed to business clients — though see WAC 458-20-15502 for digital products edge cases). The freelance software developer fact pattern almost always lands here at the 1.5% / 1.75% rate. There is no lower "professional services" or "small business" classification — Washington does not treat services preferentially the way it treats Manufacturing.  _(RCW 82.04.290; WAC 458-20-15502)_
-
-## 4. The 2025 rate changes — Service tier step-up and surcharge layers
-
-Washington has, since 2019, layered surcharges and tier step-ups on top of the historical 1.5% Service & Other Activities rate. The 2025 landscape, as of the version date of this skill, is:
-
-### 4.1 The $1,000,000 Service & Other Activities threshold
-
-- **Service & Other Activities $1,000,000 threshold** — 1.5% on the first $1,000,000 of annual gross income; 1.75% on receipts above $1,000,000 USD (The $1,000,000 threshold is measured on an annual calendar-year basis; on a monthly or quarterly return, the taxpayer prorates or — in practice — applies the higher rate prospectively once the threshold is crossed and reconciles on the annual return. The reviewer must check the DOR's published rate table for the year of the return; the threshold has been the subject of multiple legislative iterations and the 2025/2026 SB 5814 changes may have modified the threshold dollar amount, the tier rate, or both. Do not rely on a remembered figure — pull the current DOR rate table for every engagement.)  _(RCW 82.04.290)_
-
-### 4.2 Specified financial institutions
-
-- **Specified financial institutions surcharge tier** — historically 2.1% (This catches the largest banks and certain bank holding companies. It is not a freelance-developer concern but the practitioner should be aware that a fintech client with depository activity may trigger it.)  _(RCW 82.04.29004)_
-
-### 4.3 Workforce Education Investment surcharge on advanced computing
-
-- **Advanced computing surcharge** — additional 1.22% percent (Applies to 'advanced computing businesses' — broadly, businesses primarily engaged in providing advanced computing services (cloud computing, operating systems, hardware design at scale) that are members of an affiliated group with worldwide gross revenue greater than $25,000,000,000. The surcharge has an annual cap (historically $9,000,000) and is paid in addition to the base Service & Other Activities rate. In practice this catches Amazon (AWS) and Microsoft (Azure) and essentially no one else. Mention only if the client is part of such a group.)  _(RCW 82.04.299)_
-
-### 4.4 Other surcharges
-
-Several narrower surcharges exist (e.g., the long-standing 0.2% surcharge on certain financial services, the Aerospace surcharge adjustments, the timber preferential rates). These are out of scope for a generalist engagement; refer out if encountered.
-
-## 5. Multiple Activities Tax Credit (MATC)
-
-### 5.1 The problem MATC solves
-
-- **MATC problem statement** — A Washington manufacturer that also sells its product in Washington engages in two B&O-taxable activities on the same dollar of value: 1. **Manufacturing** — measured by the value of products manufactured (typically the selling price), 0.484%. 2. **Wholesaling** or **Retailing** — measured by the selling price, 0.484% or 0.471%. Without relief, the same $1 of value would be taxed twice. The Multiple Activities Tax Credit under RCW 82.04.440 prevents that double-taxation when the activities all occur in Washington (or when either the manufacturing or the selling activity occurs in another state that imposes a gross-receipts tax on the same dollar).  _(RCW 82.04.440)_
-
-### 5.2 How MATC is computed
-
-- **MATC computation and worked examples** — The taxpayer reports gross income under each applicable classification separately, computes B&O on each, and then claims a credit equal to the **smaller** of the two B&O amounts on the overlapping dollars. Worked example — Washington manufacturer who wholesales its product: - Manufacturing gross: $1,000,000 × 0.484% = $4,840 - Wholesaling gross: $1,000,000 × 0.484% = $4,840 - MATC = $4,840 (the smaller — they happen to be equal) - Net B&O before any other credit = $4,840 (not $9,680) For a Washington manufacturer who retails the product: - Manufacturing gross: $1,000,000 × 0.484% = $4,840 - Retailing gross: $1,000,000 × 0.471% = $4,710 - MATC = $4,710 (the smaller) - Net B&O before any other credit = $4,840  _(RCW 82.04.440)_
-
-### 5.3 MATC and out-of-state activity
-
-- **MATC and out-of-state activity** — If the manufacturing happens in Washington and the product is sold to a buyer in another state that imposes a gross-receipts tax on the seller's receipts (e.g., another state with a B&O-style tax), the taxpayer is entitled to a MATC against the Washington Manufacturing B&O equal to the lesser of the Washington Manufacturing B&O or the other state's gross-receipts tax on the same dollars. This avoids double taxation across state lines and was specifically upheld in *Tyler Pipe Industries v. Washington* (483 U.S. 232, 1987) and subsequent statutory amendments. The reverse — manufacturing outside Washington, selling into Washington — also gets a MATC against the Washington Wholesaling or Retailing B&O for the out-of-state manufacturing tax on the same dollar.  _(Tyler Pipe Industries, Inc. v. Washington Dep't of Revenue, 483 U.S. 232 (1987))_
-
-### 5.4 Reporting mechanics
-
-- **MATC reporting mechanics** — MATC is claimed on Schedule C of the Combined Excise Tax Return. The classifications and the credit must be reported separately — the taxpayer cannot net the two classifications first and report only the larger.  _(Combined Excise Tax Return, Schedule C)_
-
-## 6. Small Business B&O Tax Credit
-
-### 6.1 The structure
-
-- **Small Business B&O Tax Credit structure** — The Small Business B&O Tax Credit under RCW 82.04.4451 provides a sliding-scale credit that fully or partially zeroes B&O liability for very small filers. The credit's mechanics depend on **filing frequency** (assigned by DOR): - **Monthly filers.** A maximum credit of $35 per month, phased out as the monthly B&O liability rises above $35 such that the credit fully offsets liability at the floor and tapers to zero by approximately $71/month of B&O tax. This translates roughly to zero B&O for monthly filers with around $1,500–$2,500 of gross Service receipts per month (depending on classification mix). - **Quarterly filers.** A maximum credit of $105 per quarter, similar taper. - **Annual filers.** A maximum credit of $420 per year. The figures above are the long-standing structural amounts and the reviewer must confirm the current DOR figures for the tax year of the return. The DOR publishes a "Small Business B&O Tax Credit Table" that gives the exact credit for each band of monthly liability.  _(RCW 82.04.4451)_
-
-### 6.2 Interaction with filing thresholds
-
-- **Small Business Credit vs filing threshold** — Note that the Small Business Credit is distinct from the **filing threshold**. Washington requires every business with $100,000 or more of Washington-sourced gross income (or otherwise nexused) to register and file even if no B&O is ultimately owed because the Small Business Credit zeroes the liability. The credit reduces **tax**, not the duty to file. Failure to file generates penalties even on a $0 return.  _(RCW 82.04.4451)_
-
-### 6.3 Application
-
-- **Small Business Credit application mechanics** — The credit is computed automatically by the DOR's online MyDOR filing system. On a paper return it is computed using the DOR's published Small Business Credit Table. The credit applies to B&O only — it does NOT reduce retail sales tax, use tax, or any of the local B&O taxes.  _(DOR Small Business B&O Tax Credit Table)_
-
-## 7. Apportionment and sourcing
-
-### 7.1 When apportionment applies
-
-- **When apportionment applies** — Apportionment under RCW 82.04.460 applies to "apportionable income" — principally Service & Other Activities income and a defined list of other classifications enumerated in the statute. Retailing, Wholesaling, Manufacturing, and most specialty classifications are **not** apportioned — they are sourced based on where the underlying activity occurs (location of delivery for retail, location of buyer for wholesale, location of manufacturing for manufacturing).  _(RCW 82.04.460)_
-
-### 7.2 The single market-based receipts factor
-
-- **Single receipts factor and sourcing hierarchy** — For apportionable income, Washington uses a **single receipts factor** (no property or payroll factor) under RCW 82.04.462. The factor is the ratio of Washington-sourced gross income from apportionable activities to total worldwide gross income from apportionable activities. Receipts are sourced under a multi-tier "market" hierarchy implemented in WAC 458-20-19402: 1. **Where the customer received the benefit of the service.** If that can be determined. 2. **Where the customer ordered the service.** If receipt-of-benefit cannot be determined. 3. **Where the customer's billing address is.** If the prior tiers fail. 4. **Where the customer's commercial domicile is.** If all prior tiers fail. 5. **Where the taxpayer earns at least 15% of its total apportionable income.** Reasonable-method fallback. The reviewer must document which tier was used for each customer or each meaningful revenue stream. For a freelance software developer with a handful of business clients, Tier 1 (where the customer received the benefit) is typically determinable and used.  _(RCW 82.04.462; WAC 458-20-19402)_
-
-### 7.3 Software, SaaS, and digital products sourcing
-
-- **Software/SaaS/digital products sourcing** — For Service-classified digital deliverables (custom software development, ongoing development hours, etc.), Washington's position is generally that the benefit is received where the customer's principal use occurs. For SaaS subscriptions sold to business customers, the benefit is the customer's commercial use location. Note the interaction with the Digital Products statutes (RCW 82.04.192, RCW 82.04.257): "digital automated services" and "digital goods" delivered to consumers may be retailing rather than service-classified. The DOR has issued multiple ETAs (Excise Tax Advisories) on this — verify the current ETA before assigning a classification.  _(RCW 82.04.192; RCW 82.04.257)_
-
-## 8. Nexus
-
-### 8.1 The bright-line test
-
-- **Bright-line nexus threshold** — more than $100,000 of cumulative gross receipts sourced to Washington USD (Under RCW 82.04.067, a person has substantial nexus with Washington for B&O purposes if any of the following is true for the current or immediately preceding calendar year: (1) organized or commercially domiciled in Washington; (2) a non-resident individual who is a resident or domiciliary of Washington at any time during the year; (3) physical presence in Washington (employees, inventory, leased real property, etc.) for more than one day; OR (4) more than $100,000 of cumulative gross receipts sourced to Washington. The $100,000 receipts threshold is Wayfair-compliant (post South Dakota v. Wayfair, 138 S. Ct. 2080 (2018)) and applies to remote sellers, marketplace facilitators, and service providers with no physical presence in the state.)  _(RCW 82.04.067)_
-
-### 8.2 Apportionable vs non-apportionable activities and nexus
-
-- **Apportionable vs non-apportionable nexus prongs** — The receipts threshold for the apportionable-activities nexus test counts the taxpayer's Washington-sourced apportionable receipts. For Retailing/Wholesaling/Manufacturing, the "physical presence" or "in-Washington-activity" test is the dominant nexus prong — a remote retailer with no Washington activity beyond making sales into Washington is nexused on the $100,000 economic threshold under the Wayfair-aligned RCW 82.04.067(1)(d).  _(RCW 82.04.067(1)(d))_
-
-### 8.3 Trailing nexus
-
-- **Trailing nexus rule** — Washington applies trailing nexus: once a person is nexused, nexus continues for the remainder of the current year and the full following calendar year. A remote business that drops below $100,000 in year 2 still has nexus through the end of year 2 and all of year 3.  _(RCW 82.04.067)_
-
-### 8.4 Marketplace facilitators
-
-- **Marketplace facilitator B&O rule** — Under RCW 82.08.0531 and parallel B&O provisions, a marketplace facilitator is required to collect retail sales tax and report B&O on the third-party sales it facilitates into Washington. The marketplace seller (the underlying merchant) generally does not re-report the same receipts; the facilitator's filing satisfies the B&O on those receipts. The seller still must register and file if nexused for its own direct sales.  _(RCW 82.08.0531)_
-
-## 9. Filing — frequency, due dates, the Combined Excise Tax Return
-
-### 9.1 The Combined Excise Tax Return
-
-- **Combined Excise Tax Return** — Washington uses one return — the Combined Excise Tax Return — to report B&O, retail sales tax, use tax, and most of the specialty excises in one document. The return is filed electronically via the DOR's "MyDOR" portal for substantially all filers (paper filing is permitted only on hardship waiver).  _(DOR Combined Excise Tax Return)_
-
-### 9.2 Filing frequencies
-
-**Filing frequencies table**  _(DOR filing frequency assignment rules)_
-
-| Frequency | Tax-liability range (approximate) | Period | Due date |
+| Classification | Periods in 2026 | From 1 Jan 2027 | Source |
 | --- | --- | --- | --- |
-| Monthly | > ~$4,800 / year | Calendar month | 25th of next month |
-| Quarterly | ~$1,050 – ~$4,800 / year | Calendar quarter | End of next month |
-| Annual | < ~$1,050 / year | Calendar year | April 15 of next yr |
+| Retailing (includes the services made retail sales on 1 Oct 2025) | 0.471% | 0.5% | [RCW 82.04.250](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.250) |
+| Wholesaling | 0.484% | 0.5% | [RCW 82.04.270](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.270) |
+| Manufacturing (measured on value of products) | 0.484% | 0.5% | [RCW 82.04.240](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.240) |
+| Service and Other Activities | tiered, below | tiered, below | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2) |
+
+The 2027 rates are already enacted by chapter 420, Laws of 2025 and appear in the published RCW as the versions "effective January 1, 2027".
+
+### [Service and Other Activities tiers (periods from 1 Oct 2025)](https://dor.wa.gov/forms-publications/publications-subject/special-notices/service-and-other-activities-rate-changes)
+
+The tier depends on gross income subject to Service and Other Activities in the **immediately preceding calendar year**:
+
+| Prior-year Service and Other income | Rate |
+| --- | --- |
+| Less than $1,000,000 | 1.5% |
+| $1,000,000 to $4,999,999.99 (at least $1,000,000 and less than $5,000,000) | 1.75% |
+| $5,000,000 or more | 2.1% |
+
+Conditions:
+- **Affiliates are aggregated.** A business below a threshold on its own is pushed up if the aggregate prior-year Service and Other income of all its affiliates reaches the threshold. "Affiliate" means control, or common control, of more than 80% of the power to direct management and policies ([RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(f)).
+- DOR may ask in writing for a list of affiliates. Failing to answer fully within 30 days, with intent to evade, can cost the lower rate for the current year and the next four years ([RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(d)).
+- Hospitals and select advanced computing businesses stay at 1.5% (DOR special notice, July 2025).
+- Royalties ([RCW 82.04.2907](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.2907)) and real estate commissions are separate classifications taxed at 1.5%; check DOR's classification list for any activity outside the main four.
+
+### [Other thresholds](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)
 
-### 9.3 The 25th-of-the-month due date
+| Item | Figure | Source |
+| --- | --- | --- |
+| Registration not required below (all conditions in Step 1) | $12,000 per year of B&O gross income | [RCW 82.32.030](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.030)(2); [WAC 458-20-101](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-101) |
+| Economic nexus (out-of-state) | more than $100,000 of Washington receipts, current or prior year | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067); DOR |
+| Return filing relief (active non-reporting), until 31 Dec 2028 | under $125,000 per year of B&O gross income, **and** under $24,000 per year of public utility tax income, **and** no other tax or fee payable to DOR (see note) | [RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5) |
+| Return filing relief from 1 Jan 2029 | B&O limit rises to under $250,000 per year; the other two conditions are unchanged | [RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5), version effective January 1, 2029 |
+| High-grossing business surcharge (1 Jan 2026 to 31 Dec 2029) | 0.5% of certain Washington taxable income over $250,000,000 | [RCW 82.04.288](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.288); DOR special notice |
 
-- **25th-of-month due date rule** — Monthly returns are due on the 25th of the month following the reporting period. (Note this is unusual — most state filing systems use end-of-month or 20th-of-month due dates. Washington's 25th is a frequent source of late-filing penalties.) If the 25th falls on a weekend or holiday, the due date moves to the next business day. Quarterly returns are due at the end of the month following the quarter (April 30, July 31, October 31, January 31). Annual returns are due April 15 of the year following the calendar year.  _(§9.3)_
+**Active non-reporting is a relief DOR may grant, not an automatic right.** All three conditions must hold: B&O gross income under the limit; public utility tax income under $24,000; and the person is not required to collect or pay DOR any other tax or fee it administers, such as retail sales tax or use tax ([RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5)). A business with an assigned monthly, quarterly or annual frequency that thinks it qualifies must contact DOR and ask ([DOR active non-reporting](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates/active-non-reporting)). Until DOR changes the status, the business files as assigned.
 
-### 9.4 Penalties
+## [Small business B&O tax credit (SBC)](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.4451)
 
-- **Late filing/payment/assessment penalties** — - Late filing. 9% of tax due if 1–30 days late, 19% if 31–60 days late, 29% if more than 60 days late. Minimum penalty $5. - Late payment. Same tiers as late filing (combined). - Assessment penalty (audit). Additional 5% under-reporting penalty if the underpayment was material. - Failure to file penalty on a zero return. Yes — even a zero return carries a minimum $5 / late-period penalty if not filed. Interest accrues at the federal short-term rate + 2%, set annually.  _(WAC 458-20-100)_
+The SBC is one credit per taxpayer per return, computed on the **total** B&O tax for the reporting period, not per classification ([RCW 82.04.4451](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.4451)).
+
+**Maximum credit per month in the reporting period** (periods through 31 Dec 2028):
+- $160 per month if the taxpayer reports **at least 50%** of its taxable amount under Service and Other Activities ([RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a)) and the other classifications listed in [RCW 82.04.4451](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.4451)(1);
+- $55 per month for everyone else.
+
+Multiply by the months in the period: 1 (monthly), 3 (quarterly) or 12 (annual).
 
-### 9.5 Registration
-
-- **Business registration requirements** — Every business with Washington nexus must register with the DOR via the Business Licensing Service before commencing activity. The Business License application also handles UBI (Unified Business Identifier) assignment, city endorsements (which determine which local B&O jurisdictions apply — see §10), L&I (Labor & Industries) workers' comp, and Employment Security registration in one form.  _(§9.5)_
-
-## 10. Local (municipal) B&O — orientation
-
-### 10.1 The structure
-
-Washington allows municipalities to impose their own B&O taxes. The DOR does NOT administer these — each city administers its own. Roughly 40+ cities impose B&O; the major ones include:
-
-- **Seattle** — Seattle Business License Tax under SMC 5.45. Approximate 2025 rates: Retailing 0.222%, Wholesaling 0.222%, Manufacturing 0.222%, Services 0.427%. Significant taxpayer-level surcharges (the "JumpStart" payroll expense tax under SMC 5.38 is separate from B&O but commonly confused; check Seattle FAS current rate schedule). $100,000 small-business deduction threshold (below which no Seattle B&O is owed).
-- **Bellevue** — Bellevue B&O under BCC 4.09. Approximate 2025 rates: Retailing 0.1496%, Services 0.1496%, with a $190,000 small-business deduction.
-- **Tacoma** — Tacoma B&O under TMC 6A.30. Approximate 2025 rates: Services 0.40%, others lower. $250,000 threshold.
-- **Everett, Bellingham, Bremerton, Renton, Burien, Lake Forest Park, Kent, Issaquah, Olympia, Tumwater, Auburn, etc.** — variable rates and thresholds.
-
-### 10.2 What this skill does NOT do
-
-This skill does NOT compute local B&O. Local B&O is its own specialty:
-
-- Each city has its own apportionment rules (most use the Washington Cities Model B&O Ordinance — RCW 35.102 — but with variations);
-- Each has its own forms, due dates, and electronic-filing portals;
-- Each has its own small-business thresholds and credits;
-- Many cities require a separate City Business License in addition to DOR registration.
-
-The reviewer must independently address local B&O for any client with physical presence or apportionable receipts sourced to a B&O-taxing city. The standard practice is to confirm the client's city of residence/office and whether they have customers in any other B&O-taxing city.
-
-### 10.3 RCW 35.102 — Model Ordinance and apportionment harmonization
-
-- **Model Ordinance harmonization** — Since 2008, RCW 35.102 has required the larger B&O-taxing cities to use a common apportionment methodology (Two-Factor: payroll and service-income factors for services; single-factor sourcing for non-services). This reduced — but did not eliminate — variance.  _(RCW 35.102)_
-
-## 11. Washington Long-Term Capital Gains Tax (refer-out)
-
-Washington enacted a 7% excise tax on individuals' long-term capital gains under RCW 82.87, effective for sales and exchanges on or after January 1, 2022. Key parameters for tax year 2025:
-
-- **Rate.** 7% of the Washington-allocated long-term capital gain in excess of the standard deduction.
-- **Standard deduction.** Approximately $270,000 for tax year 2025 (indexed annually for inflation — verify with the DOR's published amount).
-- **Filing.** Form WA-CG (Washington Capital Gains Tax Return) filed with the DOR; due April 15 of the year following the year of the gain.
-- **Allocation.** Gains are allocated to Washington if (a) the taxpayer was a Washington resident at the time of the sale, or (b) tangible personal property was located in Washington at the time of the sale, or (c) tangible personal property was located in Washington at any time during the year of the sale or the prior year and the seller is a non-resident at the time of the sale (with conditions).
-- **Exemptions.** Real estate, retirement-account assets, certain livestock and timber, certain qualified family-owned business interests below an asset threshold, charitable deductions up to a cap, and certain other enumerated items.
-- **Constitutionality.** Upheld by the Washington Supreme Court in *Quinn v. State*, 526 P.3d 1 (Wash. 2023) on the ground that the tax is an excise on the privilege of selling, not an income tax prohibited by Article VII. The U.S. Supreme Court denied certiorari in January 2024.
-
-**This skill does NOT compute the WA capital gains tax.** Refer out to a separate WA-CGT skill or a Washington CPA. Note however that the capital gains tax is distinct from B&O — B&O applies to business gross receipts; the capital gains tax applies to individual investment realizations.
-
-## 12. Worked examples
-
-### 12.1 Example A — Seattle SaaS company, $2M Service receipts
-
-**Facts.** Acme Cloud LLC is a Washington LLC headquartered in Seattle, taxed federally as a partnership. In 2025 it earns $2,000,000 of subscription revenue from business customers, of which $1,200,000 is sourced to Washington under the market-based hierarchy (Tier 1 — customers' principal-use locations) and $800,000 is sourced to other states. Activity: Service & Other Activities (SaaS to business customers). No Retailing or Wholesaling. Monthly filer.
-
-**Step 1 — apportionment.**
-Apportionable gross income from Service: $2,000,000.
-Washington receipts: $1,200,000. Receipts factor = 60%.
-Washington-apportioned Service income = $1,200,000.
-
-**Step 2 — Service & Other Activities B&O.**
-- First $1,000,000 at 1.5% = $15,000.
-- Next $200,000 at 1.75% = $3,500.
-- Subtotal B&O = $18,500.
-
-**Step 3 — Small Business Credit.**
-Annual B&O liability is $18,500. The Small Business Credit phases out well below this level. Credit = $0.
-
-**Step 4 — MATC.**
-Single classification (Service). No MATC available.
-
-**Step 5 — Advanced Computing surcharge.**
-Acme is not part of a $25B+ affiliated group. No surcharge.
-
-**Step 6 — State B&O owed.**
-$18,500 for the year, paid in 12 monthly installments via the Combined Excise Tax Return.
-
-**Step 7 — Local B&O (Seattle).**
-Seattle Business License Tax at the Services rate of ~0.427% applies to receipts sourced to Seattle. If Seattle-sourced is $900,000, Seattle B&O = ~$3,843 (subject to the Seattle $100,000 small-business deduction — Acme is over the threshold so no deduction applies). **Refer out to a Seattle-FAS-aware practitioner for the actual Seattle filing.**
-
-**Step 8 — Retail Sales Tax.**
-SaaS to business customers is generally treated under Washington rules as a Service for B&O AND as a digital automated service that is subject to retail sales tax if delivered to a Washington consumer. **Business-to-business sales** with a valid Washington reseller permit or the buyer's MTC may be exempt; otherwise sales tax must be collected. This is a separate analysis — refer to the WA sales tax skill.
-
-**Total Washington tax (B&O only):** $18,500.
-
-### 12.2 Example B — Spokane manufacturer who wholesales, with MATC
-
-**Facts.** Cascade Widgets LLC is a Washington single-member LLC headquartered in Spokane (no city B&O at this filing date in the Spokane city limits, but verify with City of Spokane Treasury). In 2025 it manufactures $3,000,000 of widgets at its Spokane plant and sells all $3,000,000 to a Boise wholesale distributor for resale. The Boise buyer holds a valid Washington reseller permit, so the sale is classified as Wholesaling (not Retailing).
-
-**Step 1 — Manufacturing B&O.**
-Value of products manufactured = $3,000,000 (selling price proxy).
-$3,000,000 × 0.484% = **$14,520**.
-
-**Step 2 — Wholesaling B&O.**
-Wholesale sales = $3,000,000.
-$3,000,000 × 0.484% = **$14,520**.
-
-**Step 3 — MATC.**
-The same $3,000,000 produces both Manufacturing and Wholesaling B&O. MATC = the smaller of the two = $14,520. Net B&O = $14,520 (not $29,040).
-
-**Step 4 — Out-of-state buyer consideration.**
-The sale is to a Boise (Idaho) buyer. If delivery occurs in Idaho, the Wholesaling B&O is sourced to Idaho (under the place-of-delivery rule for tangible personal property) and is NOT a Washington taxable receipt. In that scenario:
-
-- Manufacturing B&O (sourced to Washington because manufacturing occurred in Spokane) = $14,520. Owed.
-- Wholesaling B&O (sourced to Idaho where the buyer takes delivery) = $0 in Washington.
-- MATC = $0 in Washington (no overlapping Washington-taxed activity), but the manufacturer may claim a MATC against the Washington Manufacturing B&O for any Idaho gross-receipts tax on the same dollars — Idaho does not impose a gross-receipts tax, so MATC remains $0.
-- **Net Washington B&O = $14,520.**
-
-If, alternatively, delivery occurs in Spokane (the buyer picks up in Washington and transports the widgets to Idaho), the Wholesaling B&O is Washington-sourced, and the full MATC analysis in Steps 1–3 applies — net Washington B&O is $14,520 (after MATC).
-
-**Step 5 — Sales tax.**
-Wholesale sales with a valid reseller permit are exempt from retail sales tax. The seller retains the reseller permit copy.
-
-**Step 6 — Small Business Credit.**
-Liability of $14,520 is far above the credit phase-out. Credit = $0.
-
-**Total Washington B&O:** $14,520 (or $14,520 under either delivery scenario in this example — the MATC interlock makes it the same).
-
-### 12.3 Example C — Tacoma retail bakery, small-business-credit-zeroed
-
-**Facts.** Lina's Bakery LLC operates a single retail bakery in Tacoma. 2025 gross receipts:
-
-- $24,000 of retail sales of bread and pastries to walk-in customers (Retailing classification);
-- $6,000 of cake-decorating workshops sold to consumers (Retailing under RCW 82.04.050 — personal services list); and
-- $0 of any other activity.
-
-Total annual gross income = $30,000. Monthly filer (because Tacoma DOR registration defaults to monthly for businesses without a volume estimate). Lina's monthly average gross is $2,500.
-
-**Step 1 — Retailing B&O.**
-$30,000 × 0.471% = **$141.30 per year**, or $11.78 per month.
-
-**Step 2 — Small Business Credit.**
-Lina is a monthly filer. The maximum monthly Small Business Credit is $35; with B&O liability of $11.78/month, the credit equals the liability and reduces B&O to **$0**.
-
-**Step 3 — Filing is still required.**
-Lina must still file her monthly Combined Excise Tax Return on the 25th of each following month, reporting:
-
-- Retailing gross of $2,500;
-- Retailing B&O of $11.78;
-- Small Business Credit of $11.78;
-- Net B&O of $0.
-
-Failure to file the $0 return generates a $5 minimum penalty per late period.
-
-**Step 4 — Retail Sales Tax.**
-Retail sales of food: Washington exempts most grocery food from sales tax (RCW 82.08.0293) but prepared food is taxable. Bread and pastries sold for off-premises consumption are generally exempt as "food for human consumption." Cake-decorating workshops are a taxable service. Lina must collect Tacoma's combined state + local sales tax (~10.3%) on the workshop fees and remit on the same Combined Excise Tax Return.
-
-**Step 5 — Tacoma local B&O.**
-Tacoma imposes its own B&O. The retail rate is low and Tacoma has its own small-business threshold. Refer to the City of Tacoma Tax & License Division for the local filing — typically annual at this gross level. **Refer out for actual Tacoma return preparation.**
-
-**Total state B&O owed:** $0 (zeroed by Small Business Credit).
-**Filing duty:** Yes — monthly Combined Excise Tax Return must be filed even at $0 B&O.
-
-## 13. Provenance
-
-The rates, thresholds, and statutory citations in this skill are based on the following primary sources. The reviewer must verify each before relying on it for a current engagement, as Washington's tax statutes are amended frequently.
-
-### 13.1 Statutes (RCW)
-
-- **RCW Title 82 — Excise Taxes** — the master title.
-- **RCW 82.04** — Business and Occupation Tax (the B&O chapter).
-- **RCW 82.04.050** — definition of "sale at retail."
-- **RCW 82.04.060** — definition of "sale at wholesale."
-- **RCW 82.04.067** — substantial nexus (the $100,000 receipts threshold and physical-presence / organization tests).
-- **RCW 82.04.110** — definition of "to manufacture."
-- **RCW 82.04.240** — Manufacturing tax (rate).
-- **RCW 82.04.250** — Retailing tax (rate).
-- **RCW 82.04.270** — Wholesaling tax (rate).
-- **RCW 82.04.290** — Service and Other Activities (rate, with the $1M threshold step-up).
-- **RCW 82.04.299** — Workforce Education Investment surcharge on advanced computing businesses.
-- **RCW 82.04.4451** — Small Business B&O Tax Credit.
-- **RCW 82.04.440** — Multiple Activities Tax Credit.
-- **RCW 82.04.460** — Apportionment of apportionable income.
-- **RCW 82.04.462** — Single receipts factor methodology.
-- **RCW 82.08** — Retail Sales Tax (referred out).
-- **RCW 82.12** — Use Tax (referred out).
-- **RCW 82.16** — Public Utility Tax (referred out).
-- **RCW 82.87** — Capital Gains Tax (referred out, §11).
-- **RCW 35.102** — Municipal B&O Model Ordinance (referred out, §10).
-
-### 13.2 Regulations (WAC)
-
-- **WAC 458-20** — DOR rules on B&O and excise taxes (the "Rules Index"). Specific rules referenced:
-- **WAC 458-20-19401** — Minimum nexus thresholds.
-- **WAC 458-20-19402** — Single factor receipts apportionment.
-- **WAC 458-20-19403** — Apportionment for periods before 2010 (legacy).
-- **WAC 458-20-15502** — Computer hardware, computer software, and digital products.
-- **WAC 458-20-145** — Local sales and use tax.
-- **WAC 458-20-100** — Interest and penalties.
-
-### 13.3 Cases
-
-- *Quinn v. State*, 526 P.3d 1 (Wash. 2023) — Washington Supreme Court upholding the capital gains tax under Article VII.
-- *Tyler Pipe Industries, Inc. v. Washington Dep't of Revenue*, 483 U.S. 232 (1987) — Commerce Clause limits on the Manufacturing B&O / MATC structure.
-- *South Dakota v. Wayfair, Inc.*, 138 S. Ct. 2080 (2018) — basis for the $100,000 economic nexus threshold.
-- *Avnet, Inc. v. Dep't of Revenue*, 187 Wash. 2d 44 (2016) — apportionment and sourcing of receipts.
-
-### 13.4 DOR materials
-
-- Washington Department of Revenue, "Combined Excise Tax Return Instructions" (most recent edition).
-- Washington Department of Revenue, "Tax Rate Lookup Tool" and the published "B&O Rate Schedule" — verify each filing year.
-- Washington Department of Revenue, "Small Business B&O Tax Credit Table".
-- Washington Department of Revenue, Excise Tax Advisories (ETAs) — particularly the ETAs on digital products, SaaS classification, and apportionment sourcing.
-- Washington Department of Revenue, "Reseller Permit Verification" online tool.
-
-### 13.5 Legislation to verify for 2025/2026 effective dates
-
-- **SB 5814 (2025 session, if enacted)** — Service & Other Activities rate / threshold modifications. Confirm the enacted final text against the DOR's published rate table for the year of the engagement before relying on the rates in §3 and §4 above.
-- Any 2025-session bill modifying the Workforce Education Investment surcharge, the advanced-computing surcharge cap, or the Small Business Credit thresholds.
-
-### 13.6 Self-check at engagement start
-
-For every Washington engagement the reviewer must:
-
-1. Pull the current-year DOR rate table and compare against the rates in this skill.
-2. Confirm the current Small Business Credit table.
-3. Confirm the current $100,000 nexus threshold has not been amended.
-4. Confirm filing-frequency thresholds.
-5. Confirm the current capital gains tax standard deduction (for the §11 mention).
-6. Confirm any local B&O city rates and thresholds for the client's nexus footprint.
-
-## End of skill
-
-End of skill. Tax year 2025.
+**How the credit works:**
+- If B&O tax due is **equal to or less than** the maximum credit, the credit equals the tax, so no B&O tax is due.
+- If B&O tax due **exceeds** the maximum credit, the credit is twice the maximum credit minus the tax due, but not less than zero. So the credit reaches zero once tax due is twice the maximum.
+- The credit never exceeds the B&O tax due.
+- The return must use DOR's SBC table for the filing frequency (monthly, quarterly or annual). The table is built so no one owes more than the formula result, so a table figure can differ by a few dollars. My DOR applies it automatically for electronic filers.
+
+**From 1 Jan 2029** the maximums rise to $125 per month (general) and $375 per month (the 50% service group), under chapter 238, Laws of 2026. Do not use these for 2026 to 2028 periods.
+
+**Old rule to discard:** the SBC is not phased out by gross income bands. It phases out by **tax due** against the maximum credit.
+
+## [Multiple activities tax credit (MATC), in outline](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.440)
+
+Each activity is taxed, but the MATC stops the same goods being taxed twice:
+- a retailer or wholesaler selling goods in Washington gets a credit for manufacturing (or extracting) tax paid on making those same goods, up to the B&O tax on the sale ([RCW 82.04.440](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.440)(2));
+- a Washington manufacturer can get credit for certain gross receipts taxes paid to other states on the sale of the same products ([RCW 82.04.440](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.440)(4)).
+
+The credit is claimed on the return's MATC schedule. Anything beyond a simple "make and sell in Washington" case: refer ([WAC 458-20-19301](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-19301)).
+
+## [Boundary and exception table](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)
+
+| Situation | Treatment | Source |
+| --- | --- | --- |
+| Expenses, cost of goods, wages, losses | Never deducted | [RCW 82.04.080](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.080) |
+| Prior-year Service and Other income exactly $1,000,000 | 1.75% tier ("equal to or greater than") | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a)(i) |
+| Prior-year Service and Other income exactly $5,000,000 | 2.1% tier | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a) |
+| Own income under $1,000,000 but affiliates' aggregate at least $1,000,000 | Not the 1.5% tier | [RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)(2)(a)(ii)(B) |
+| Out-of-state business with exactly $100,000 of Washington receipts, no physical presence | No economic nexus ("more than") | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1)(c)(i) |
+| Receipts over $100,000 in the prior year but not this year | Nexus continues through the current year | [RCW 82.04.067](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.067)(1) |
+| Out-of-state business first passes $100,000 partway through this year, not met last year | Taxable only on activity on and after the date nexus arose; earlier activity this year is not taxed; next year fully taxable | [RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2); [WAC 458-20-19401](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-19401)(3)(c) |
+| Out-of-state business passed the test last year | Whole current year taxable, from 1 January | [RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2)(b) |
+| Custom software, IT support or website development for a Washington customer from 1 Oct 2025 | Retailing B&O plus retail sales tax, not Service and Other (contracts signed before 1 Oct 2025: see the transition rule in the wa-sales-tax Guide) | DOR special notice, July 2025 (ESSB 5814) |
+| Goods shipped to and received by the buyer outside Washington | Not a Washington sale | [WAC 458-20-193](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-193) |
+| Gross income under $125,000, but owes any other tax or fee to DOR (for example retail sales tax or use tax) | Not eligible for active non-reporting; must file | [RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5)(c); DOR |
+| Gross income under $125,000 and no other DOR tax | DOR may relieve the business of filing on request; until then it files as assigned | [RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045)(5); DOR active non-reporting page |
+| Repair, installation or cleaning of a consumer's goods; construction or repair of a building for a consumer; towing; hotel or motel lodging | Retailing (plus retail sales tax), not Service and Other | [RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050)(2)(a)-(f) |
+| Janitorial services (wall and window washing, floor cleaning and waxing, cleaning rugs and upholstery in place) | Not a retail sale; Service and Other | [RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050)(2)(d) |
+| Sale for resale without the buyer's reseller permit (or a certificate showing its number) | Treated as a retail sale: Retailing B&O and sales tax, not Wholesaling | [RCW 82.04.470](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.470) |
+| Prewritten software, digital goods or SaaS sold to consumers | Retailing, not Service and Other | [RCW 82.04.050](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.050)(6)(a), (8)(a) |
+| Music lessons, 501(c) nonprofit presentations, hospital staffing (both hospital conditions met), from 1 July 2026 | Not retail sales; Service and Other Activities (nonprofit presentations: unless an exempt fundraising activity) | DOR special notices, April 2026 (ESSB 6346) |
+| Active non-reporter whose income passes the threshold | Must tell DOR, file and pay; late filing brings penalties and interest | DOR active non-reporting page |
+| Tax due exactly equal to the SBC maximum | Full credit, zero tax | [RCW 82.04.4451](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.4451)(2) |
+| Tax due twice the SBC maximum or more | No credit | [RCW 82.04.4451](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.4451)(3) |
+| City B&O tax | Separate, not administered by DOR; not on the state return | DOR city B&O tax page |
+
+## When to refuse or refer
+
+Refer to a Washington tax professional, or ask DOR for a ruling, when:
+- the business belongs to an affiliated group near the $1,000,000 or $5,000,000 tier lines ([RCW 82.04.290](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.290)), or DOR has asked for an affiliate list;
+- Washington taxable income could reach $250,000,000 (high-grossing surcharge, [RCW 82.04.288](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.288)), or the group may be a select advanced computing business (workforce education surcharge, [RCW 82.04.299](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.299));
+- the business is a financial institution, hospital, insurer, or in a specialized classification;
+- apportionment involves several states and the benefit location is unclear;
+- MATC involves out-of-state taxes;
+- the business was unregistered for past periods;
+- the question is about city B&O tax: send the client to the city, or to the Municipal Research and Services Center list that [DOR links to](https://dor.wa.gov/forms-publications/publications-subject/tax-topics/city-bo-tax).
+
+Do not state a 2026 rate for a service moved to Retailing on 1 Oct 2025 without also sending the client to the **wa-sales-tax** Guide for the sales tax side.
+
+## [Filing and payment](https://dor.wa.gov/file-pay-taxes/filing-frequencies-due-dates)
+
+**Frequency.** DOR assigns a frequency when the business registers, based on estimated annual tax liability for all excise taxes on the return, including retail sales tax collected, not B&O alone ([WAC 458-20-22801](https://app.leg.wa.gov/WAC/default.aspx?cite=458-20-22801); DOR):
+
+| Annual tax liability | Frequency |
+| --- | --- |
+| $1,050 or less | Annual |
+| $1,051 to $4,800 | Quarterly |
+| $4,801 or more | Monthly |
+
+A business can ask DOR to change its frequency.
+
+**Due dates** ([RCW 82.32.045](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.045); DOR):
+- monthly: the 25th of the following month (June is due 25 July);
+- quarterly: the last day of the month after the quarter (Q1 is due 30 April);
+- annual: 15 April of the following year (the 2026 annual return is due 15 April 2027).
+
+A due date on a weekend or legal holiday moves to the next business day. DOR may grant a filing extension only if asked before the due date. File and pay electronically through My DOR.
+
+**Late-payment penalties** ([RCW 82.32.090](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.090)(1)): 9% of the tax if not paid by the due date; 19% in total if not paid by the last day of the following month; 29% in total if not paid by the last day of the second month after the due date. The minimum penalty is $5. Interest is charged as well.
+
+**Other penalties** ([RCW 82.32.090](https://app.leg.wa.gov/RCW/default.aspx?cite=82.32.090)):
+- 5% of the tax due for periods when a business that had to register did not. This is not imposed if the business registers before DOR tells it to.
+- 5% for a substantial underpayment found by DOR, rising if the assessment is not paid on time.
+- A further 50% where any part of a deficiency came from intent to evade.
+
+DOR can waive late-return penalties only in qualifying circumstances, on request.
+
+## [Worked cases (2026 periods)](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.4451)
+
+**Case A: service business, quarterly filer.** A Washington sole proprietor provides bookkeeping services (Service and Other Activities; not in the 1 Oct 2025 retail list). 2025 Service and Other income was well under $1,000,000, so the rate is 1.5%. 2026 gross income is $150,000, earned evenly: $37,500 per quarter. Expected annual tax of $2,250 puts it in the quarterly band.
+- Quarterly B&O before credit: $37,500 × 1.5% = $562.50.
+- SBC maximum (all income is Service and Other, so $160 a month): $160 × 3 = $480.
+- Tax exceeds the maximum, so credit = 2 × $480 − $562.50 = $397.50.
+- B&O due per quarter: $562.50 − $397.50 = $165. For the year: $660.
+- Gross income is over $125,000, so active non-reporting is not available.
+
+**Case B: tier boundary, monthly filer.** A consulting company's 2025 Service and Other income was exactly $1,000,000, and it has no affiliates. In January 2026 it earns $90,000 of consulting income.
+- Rate: 1.75% ($1,000,000 is "equal to or greater than" the threshold).
+- January B&O: $90,000 × 1.75% = $1,575.
+- SBC: the monthly maximum is $160. Tax due is more than twice the maximum ($320), so there is no credit. Due 25 February 2026: $1,575.
+
+**Case C: reclassified IT service, monthly filer.** A Washington freelancer builds custom websites for Washington clients. From 1 Oct 2025 this is a retail sale. She bills $10,000 a month, about $120,000 a year.
+- Frequency: the retail sales tax she collects counts toward the frequency test. At the state rate alone (six and five-tenths percent, [RCW 82.08.020](https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020)(1)) that is more than $4,800 a year, so DOR would normally assign her a monthly frequency.
+- Retailing B&O for January 2026: $10,000 × 0.471% = $47.10.
+- SBC: none of her taxable amount is Service and Other, so the maximum is $55 for a monthly period. Tax is below the maximum, so the credit is $47.10 and B&O is zero. The B&O result would be the same on a quarterly return.
+- She must still register, collect and remit retail sales tax (wa-sales-tax Guide) and file every month. Collecting sales tax rules out active non-reporting.
+
+**Case D: out-of-state consultant with prior-year nexus.** An Oregon-based consultant with no Washington property, staff or agents had $110,000 of Washington-sourced receipts in 2025 and has $120,000 in 2026, out of $400,000 total, all Service and Other. It is taxable in Oregon.
+- Nexus: more than $100,000 of Washington receipts in 2025, so all of 2026 is taxable from 1 January ([RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2)(b)). 2026 receipts also pass the test, so 2027 is covered too. It must register and file.
+- Apportioned Washington income: $400,000 × ($120,000 / $400,000) = $120,000.
+- Tax before credit for 2026: $120,000 × 1.5% = $1,800, which puts it in the quarterly band.
+- If earned evenly, each quarter's tax is $450, below the $480 quarterly maximum, so the SBC removes it. It still files every quarter.
+
+**Case E: out-of-state consultant crossing the threshold mid-year.** Same consultant, but its 2025 Washington receipts were $80,000 (no nexus in 2025). In 2026 it earns $10,000 of Washington receipts each month.
+- Cumulative 2026 receipts reach exactly $100,000 at the end of October. That is not "more than" $100,000, so there is no nexus yet.
+- Nexus arises in November, on the date cumulative receipts first exceed $100,000.
+- Only activity on and after that date is taxable for 2026 ([RCW 82.04.220](https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220)(2)(a)). January to October activity is not taxed, and no returns were due for those months. It registers and reports from the nexus date.
+- 2027 is taxable in full, because the test was met in 2026.
+
+**Case F: wholesaler across the 2027 rate change.** A distributor makes $200,000 of wholesale sales in December 2026 and the same in January 2027 (monthly filer; the tax is far above twice the $55 monthly maximum, so no SBC).
+- December 2026: $200,000 × 0.484% = $968.
+- January 2027: $200,000 × 0.5% = $1,000.
+
+## [2025 periods (late or amended returns)](https://dor.wa.gov/forms-publications/publications-subject/special-notices/service-and-other-activities-rate-changes)
+
+- **Service and Other Activities:** through 30 Sep 2025 there were two tiers: 1.5% (prior-year income under $1,000,000) and 1.75% ($1,000,000 or more). From 1 Oct 2025 the three tiers in the rates section apply, with 2.1% at $5,000,000 or more.
+- **Services made retail sales by ESSB 5814:** Service and Other Activities until 30 Sep 2025; Retailing (and retail sales tax) from 1 Oct 2025. A 2025 annual or quarterly return may need both. Contracts signed before 1 Oct 2025 had a DOR transition rule, so billings under them may stay on the old treatment for a time: check the existing-contracts section of the wa-sales-tax Guide before reclassifying.
+- Retailing 0.471%, Wholesaling and Manufacturing 0.484%, and SBC maximums of $55 and $160 per month applied throughout 2025.
+- The 2025 annual return was due 15 April 2026. Late payment brings the penalties in "Filing and payment".
+
+## Completion checklist
+
+- [ ] Registration requirement and nexus checked for the current and prior year; if nexus arose mid-year, only activity from that date taxed
+- [ ] Each income stream classified; ESSB 5814 services moved to Retailing from 1 Oct 2025; RCW 82.04.050(2) retail services treated as Retailing; reseller permits on file for every wholesale sale
+- [ ] Gross income used, with no expense deductions
+- [ ] Goods sourced by place of receipt; service income apportioned if taxable elsewhere
+- [ ] Service and Other tier from prior-year income, affiliates aggregated
+- [ ] Correct rate for the period (2027 rate changes noted)
+- [ ] SBC computed once on total B&O tax, with the right monthly maximum and period length
+- [ ] MATC considered for make-and-sell businesses
+- [ ] Return filed by the due date for the assigned frequency
+- [ ] City B&O and retail sales tax obligations flagged to the right place
 
 <!-- openaccountants-cta-block -->
 

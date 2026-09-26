@@ -2,558 +2,192 @@
 name: us-1099-k-and-payment-processors
 description: "Tier 2 US federal content skill for Form 1099-K reporting under IRC §6050W for tax year 2025. Covers the current federal TPSO threshold restored by OBBBA: more than $20,000 and more than 200 transactions, reconciliation between gross 1099-K amounts and Schedule C / Schedule 1 / Schedule D reporting, IRS-recommended treatment of personal items sold at loss (Schedule 1 Lines 8z + 24z offset), hobby vs business §183 determination, PayPal/Venmo Friends-and-Family vs Goods-and-Services categorization, marketplace facilitator sales-tax exclusion under Wayfair, ride-share and content-creator double-form scenarios (1099-K + 1099-NEC), the 2025 1099-DA digital asset transition, and IRS CP2000 matching defense."
 jurisdiction: US
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: James Wallach
-review_status: current
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
+review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# US 1099 K And Payment Processors
+# US Form 1099-K: payment cards, payment apps and marketplaces (tax year 2026)
+
+Figures are for tax year 2026 (Forms 1099-K for calendar 2026, furnished in early 2027). A short dated section below covers **2025 returns**, which are still being filed on extension until 15 October 2026. This Guide is written from the payee's side: an individual, sole proprietor or single-member LLC who received a Form 1099-K and must reconcile it to Form 1040. It does not cover an issuer's own filing duties, entity returns (Forms 1065, 1120, 1120-S), or which Schedule C deductions are allowed.
 
-## US 1099-K and Payment Processors (Tax Year 2025)
+## Scope and who it's for
 
-## 1. Scope
+- Anyone who received a Form 1099-K from a card processor, a payment app or an online marketplace, or who expects one, for 2026 or 2025.
+- Anyone who got a Form 1099-K they believe is wrong: gifts, reimbursements, personal items sold at a loss, a duplicate, or the wrong taxpayer ID.
+- Anyone who received a CP2000 notice proposing tax on Form 1099-K amounts.
+- The rule that drives everything: the form reports **gross payments**, not income. "Just because a payment is reported on Form 1099-K doesn't mean it's taxable", and income is reportable even without a form. [What to do with Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k)
 
-This skill covers the preparation, reconciliation, and defense of US federal tax returns that include one or more Form 1099-K information returns received by a taxpayer for the 2025 tax year (filing season 2026). It addresses:
+## Ask the client first
 
-- The legal architecture of §6050W and the role of Third-Party Settlement Organizations (TPSOs) versus Payment Card Companies
-- The current federal TPSO reporting threshold restored by OBBBA/P.L. 119-21 §70432: more than $20,000 and more than 200 third-party network transactions, plus the matching CP2000 risk when platforms voluntarily or state-law-report below the federal floor
-- How to reconcile a gross 1099-K box-1a amount to the correct line of the taxpayer's return — Schedule C, Schedule 1 Line 8j or 8z, Schedule D, or nothing at all
-- The IRS-recommended "two-line wash" for personal items sold at a loss (Schedule 1 Line 8z plus Schedule 1 Line 24z negative offset)
-- Platform-specific reporting patterns and traps: PayPal Friends-and-Family vs Goods-and-Services, Venmo, Cash App for Business, Airbnb/VRBO, Uber/Lyft, DoorDash, Etsy, eBay, Mercari, Poshmark, Patreon, OnlyFans, StubHub, Vinted
-- The double-counting problem when the same gross receipts appear on both a 1099-K (from the processor) and a 1099-NEC (from the customer)
-- Marketplace facilitator sales-tax mechanics under Wayfair (South Dakota v. Wayfair, 138 S. Ct. 2080 (2018)) and the resulting state-law collection regimes
-- The 2025 transition from 1099-K to Form 1099-DA for digital-asset brokers under the §6045 broker regulations finalized by T.D. 10000 (June 28, 2024)
-- IRS CP2000 underreporter notice defense, with a sample reconciliation worksheet and explanation-statement language
+- Every Form 1099-K received for the year, **whatever the amount**, plus each platform's annual earnings or transaction statement. Also every Form 1099-NEC, 1099-MISC and 1099-DA.
+- What each account was used for: selling goods, providing services, renting property, selling personal belongings, or receiving gifts and shared-cost repayments.
+- For personal items sold: the item, what the client paid, and the sale price, item by item. A mix of gains and losses cannot be netted.
+- Whether the activity is a business run for profit or a hobby: books, a separate account, time spent, profit history.
+- Refunds, returns, chargebacks, platform and processor fees, shipping charged, cash back given, and sales tax collected. For sales tax, also who the tax is imposed on under state law.
+- Whether the client gave the platform a correct SSN, ITIN or EIN, and whether Box 4 shows federal tax withheld.
+- Whether any card terminal or account was shared with another person, or changed owner or entity during the year.
+- Any CP2000 or other IRS notice for this or an earlier year that relates to Form 1099-K.
 
-This skill does NOT cover:
+## The method, step by step
 
-- Substantive Schedule C deduction classification (see `us-sole-prop-bookkeeping`)
-- The Schedule C bottom-line and Schedule SE computation (see `us-schedule-c-and-se-computation`)
-- The §199A QBI deduction (see `us-qbi-deduction`)
-- The retailer's own duty to issue 1099-K as a TPSO — this skill is written from the payee's side. Issuer obligations under §6050W(b) are summarized only to the extent the practitioner needs them to evaluate a "wrong 1099-K" complaint
-- State income-tax conformity to the federal threshold — many states (e.g., Maryland, Massachusetts, Vermont, Virginia, Illinois, New Jersey, District of Columbia) have lower or differently-timed thresholds; consult the relevant state skill
+1. **Collect and check each form.** Check the payee name and TIN, the filer, Box 1a, and Box 4. If the TIN or the Box 1a amount is wrong, ask the filer (not the IRS) for a corrected form. Do not wait for it before filing. [Correcting a Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k)
+2. **Split Box 1a by what each payment was.** The categories are: business or rental receipts; hobby receipts; personal items sold at a gain; personal items sold at a loss; and amounts that are not the client's income at all (gifts, reimbursements, a duplicate, someone else's sales). Use the platform statement and the client's records. The form itself does not show this split.
+3. **Report each slice in its own place.** Use the table in "Where each slice goes" below. Business gross receipts go on Schedule C line 1, gross before fees. Returns and allowances go on line 2. Fees and other costs go in expenses.
+4. **Bridge the forms to the return.** Total every information return (1099-K, 1099-NEC, 1099-MISC). Then show, line by line, where each dollar went and why any amount is excluded (a duplicate, sales tax imposed on the buyer, a personal loss item, an error). Add income that no form reported. Keep the bridge in the file, and attach a short statement to the return when the forms total more than what the return shows.
+5. **Claim any backup withholding** shown in Box 4 as federal income tax withheld.
+6. **File and keep the evidence.** Keep the forms, the platform statements, the correspondence asking for corrected forms, and the purchase records for personal items. If a CP2000 arrives, answer by the date on the notice using the same bridge.
 
-This skill MUST be loaded alongside `us-tax-workflow-base` v0.2 or later. It pairs naturally with `us-sole-prop-bookkeeping`, `us-schedule-c-and-se-computation`, and `us-1099-nec-issuance`.
+## Thresholds and figures by year
 
-## 2. Legal basis: IRC §6050W
+| Point | Rule | Years and source |
+|---|---|---|
+| Payment cards (credit, debit, gift cards) | No threshold. A payment card processor reports whatever the volume, "if you received $0.01 of payments from a payment card transaction". | All years. [FAQ Q2](https://www.irs.gov/newsroom/form-1099-k-faqs-general-information) |
+| Payment apps and online marketplaces (TPSOs) | Reporting is required only if gross payments for goods or services exceed $20,000 **and** the number of transactions exceeds 200. Both tests must be met, and both are "more than". | Calendar 2022 onward. [26 U.S.C. §6050W(e)](https://www.law.cornell.edu/uscode/text/26/6050W) |
+| Why 2022 onward | P.L. 119-21 §70432 (signed 4 July 2025) rewrote §6050W(e) "as if included in" ARPA §9674, which applied to returns for calendar years beginning after 31 December 2021. So the ARPA figure of $600 never took effect. The IRS's administrative transition thresholds for 2022-2026 no longer set the rule. | Retroactive to 2022. [§6050W effective-date notes](https://www.law.cornell.edu/uscode/text/26/6050W) |
+| Voluntary and state forms | A TPSO may still send a form below the federal threshold, and "your state may have a lower reporting threshold". | All years. [FAQ Q2, Q5](https://www.irs.gov/newsroom/form-1099-k-faqs-general-information) |
+| Box 1a | "Gross amount" is taken "without regard to any adjustments for credits, cash equivalents, discount amounts, fees, refunded amounts, shipping amounts, or any other amounts." | All years. [Form 1099-K instructions](https://www.irs.gov/instructions/i1099k) |
+| New Boxes 1c and 1d | Cash tips included in Box 1a, and the tipped occupation code, as required by P.L. 119-21 §70201. | 2026 forms. [Form 1099-K instructions (12/2026)](https://www.irs.gov/instructions/i1099k) |
+| Backup withholding | 24% on reportable payments when the payee's TIN is missing or incorrect. For TPSO payments, this applies only once the year's threshold is exceeded (see "Backup withholding"). | TPSO rule from calendar 2025. [Backup withholding](https://www.irs.gov/businesses/small-businesses-self-employed/backup-withholding) |
 
-### 2.1 What §6050W says
+"Below the threshold" does **not** mean "no form" and does not mean "not taxable". A client under $20,000 may still hold a card-processor form, a voluntary TPSO form or a state-driven form, and must report the income regardless. [Understanding your Form 1099-K](https://www.irs.gov/businesses/understanding-your-form-1099-k)
 
-- **IRC §6050W reporting entities** — IRC §6050W, enacted by the Housing Assistance Tax Act of 2008 (P.L. 110-289, §3091) and effective for calendar years beginning after December 31, 2010, requires two distinct classes of reporting entities to file an information return with the IRS reporting "reportable payment transactions": 1. Payment Settlement Entities (PSEs) — split into two sub-classes: Payment Card Companies under §6050W(b)(1)(A): a "merchant acquiring entity" that contracts with merchants to settle payment-card transactions. This includes Visa, Mastercard, American Express, Discover, and their merchant-acquirer agents (Stripe, Square, Adyen, Worldpay, Fiserv/First Data, Heartland, etc.). Third-Party Settlement Organizations (TPSOs) under §6050W(b)(1)(B) and (d)(3): a "third party payment network" that contracts with a substantial number of "providers of goods or services" to settle transactions between those providers and their customers. This includes PayPal, Venmo (operated by PayPal), Cash App for Business (Block), Zelle is debated — Treasury position is that bank-direct Zelle transfers are NOT a TPSO because the bank is acting as a payment agent rather than a third-party settlement intermediary; see IRS FAQ 1099-K Q-3, 2024 — eBay, Etsy, Amazon, Airbnb, VRBO, DoorDash, Uber Eats, Mercari, Poshmark, StubHub, Vinted, Patreon, OnlyFans, Substack, Ticketmaster resale, and similar platforms. 2. Reportable Payment Transaction is defined at §6050W(c) as any payment-card transaction or third-party network transaction. The reporting is on Form 1099-K, Payment Card and Third Party Network Transactions, with Box 1a showing gross amount of reportable payment transactions for the calendar year and Box 1b showing card-not-present amount.  _(§6050W; P.L. 110-289 §3091; IRS FAQ 1099-K Q-3, 2024)_
+A caution about the IRS's own wording: the 2025 Form 1040 instructions say "payment card companies, payment apps, and online marketplaces" need send a form only above the threshold. The statute and FAQ Q2 limit the threshold to TPSOs, and card processors have none. Follow the statute. [2025 Form 1040 instructions](https://www.irs.gov/instructions/i1040gi); [FAQ Q2](https://www.irs.gov/newsroom/form-1099-k-faqs-general-information)
 
-### 2.2 The two thresholds — and why they matter
+## Where each slice goes
 
-- **Payment Card Companies have no de minimis threshold; TPSOs subject to §6050W(e) threshold** — Payment Card Companies under §6050W(b)(1)(A) have no de minimis threshold. Every merchant-card transaction is reportable, so a merchant who runs a single $10 swipe through Square in calendar year 2025 may receive a Form 1099-K for that card volume. TPSOs under §6050W(b)(1)(B) are subject to the de minimis threshold at §6050W(e), restored by P.L. 119-21 §70432 to more than $20,000 and more than 200 third-party network transactions. That asymmetry — payment-card processors with no threshold versus TPSOs with a threshold — is the structural reason why a hobby seller on Etsy may or may not get a 1099-K, but a tiny coffee cart on Square can get one every year regardless.  _([§6050W(b)(1)(A); §6050W(b)(1)(B); §6050W(e); P.L. 119-21 §70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
+| Slice of Box 1a | Where it goes | Condition or boundary |
+|---|---|---|
+| Sales of goods or services in a trade or business (gig work, freelance, online shop) | Schedule C line 1, gross. Returns and allowances go on line 2. Platform and processor fees are expenses. | A partnership or corporation reports on its own return. A form in the owner's name and SSN for an entity's income needs to be corrected. |
+| Rental receipts | Schedule E or Schedule C, depending on the activity | One terminal serving two businesses: report each business's receipts on its own schedule. |
+| Hobby receipts (not engaged in for profit) | Schedule 1 line 8j | No expense deduction (see "Hobby or business"). Not self-employment income. |
+| Personal item sold at a **gain** | Form 8949 and Schedule D | The gain is sale price minus what the client paid. Short or long term depends on holding period. |
+| Personal item sold at a **loss** | Entry space at the top of Schedule 1, or Form 8949 with code "L" | The loss is not deductible. The entry only zeroes out the reported amount. |
+| Gifts, repayments of shared costs, someone else's payments, a duplicate form | Entry space at the top of Schedule 1, as an amount "included in error" | Ask the filer for a corrected form first, and file anyway. |
+| Cash back given at a card terminal | Not gross receipts and not an expense | Keep the cash-back records. |
+| Sales tax **imposed on the buyer** that the seller collected and paid over | Not in gross receipts and not deductible | If the state lets the seller keep part of it, that part is Schedule C line 6 income. |
+| Sales tax **imposed on the seller** | In gross receipts on line 1, and deductible on line 23 | Check the state law. The platform label does not decide it. |
 
-### 2.3 §6050W(e) as originally drafted vs. as amended by ARPA
+Sources: [What to do with Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k); [Schedule C instructions (2025), lines 1, 2, 6 and 23](https://www.irs.gov/instructions/i1040sc); [Form 1040 instructions (2025), Schedule 1](https://www.irs.gov/instructions/i1040gi).
 
-- **§6050W(e) threshold after OBBBA restoration** — As originally enacted in 2008, §6050W(e) required TPSO reporting only if a participating payee received more than $20,000 in gross third-party network payments AND more than 200 separate transactions in the calendar year. ARPA §9674 attempted to replace that rule with a $600/no-transaction-count threshold, and the IRS delayed and phased in that change through Notices 2023-10, 2023-74, and 2024-85. OBBBA/P.L. 119-21 §70432 repealed the ARPA revision and reinstated the prior federal TPSO floor as if included in ARPA: more than $20,000 and more than 200 transactions. For 2025 federal returns, use the restored $20K-and-200 threshold for TPSO reporting, while remembering platforms may issue voluntary or state-law forms below the federal floor.  _([§6050W(e); ARPA §9674(a), P.L. 117-2; P.L. 119-21 §70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
+## Reconciling Box 1a to Schedule C
 
-### 2.4 The delay-and-phase-in history (Notices 2023-10, 2023-74, 2024-85)
+- **Start from gross.** Put gross receipts on line 1, and include amounts no form reported (cash, checks, bank transfers). Refunds on goods returned go on line 2. Processor and platform fees are deducted as expenses, not netted out of line 1. Box 1a already includes fees, refunds and shipping, so netting them before line 1 makes line 1 look short of the form. [Schedule C instructions](https://www.irs.gov/instructions/i1040sc); [Form 1099-K Box 1a](https://www.irs.gov/instructions/i1099k)
+- **Duplicates with Form 1099-NEC.** Card and third-party-network payments "must be reported on Form 1099-K ... and are not subject to reporting on Form 1099-MISC or Form 1099-NEC". A client paid by card who also receives a 1099-NEC from the customer has been reported twice. Report the income **once** and explain the duplicate in the bridge statement. If the 1099-NEC totals exceed line 1, the Schedule C instructions require a statement explaining the difference. [Forms 1099-MISC/NEC instructions](https://www.irs.gov/instructions/i1099mec); [Schedule C line 1](https://www.irs.gov/instructions/i1040sc)
+- **Multiple forms.** Use every form together with the client's records. A client can receive several forms for different platforms. [FAQ Q11](https://www.irs.gov/newsroom/form-1099-k-faqs-what-to-do-if-you-receive-a-form-1099-k)
+- **Shared terminal, business sold, entity change.** Box 1a may include receipts that belong to someone else, or to another period or entity. Where required, file and furnish information returns for the other party's share, or get a corrected form from the filer. Keep the agreements and dated records. [What to do with Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k)
 
-- **ARPA delay and phase-in notices now superseded for current federal threshold** — Notice 2023-10 treated 2022 as a transition year; Notice 2023-74 treated 2023 as a transition year and discussed 1099-K/1099-NEC duplication; Notice 2024-85 announced temporary lower phase-in targets for 2024-2026. OBBBA/P.L. 119-21 §70432 later restored the federal §6050W(e) TPSO threshold to more than $20,000 and more than 200 transactions, and the IRS public Form 1099-K guidance now states that TPSOs report when goods-or-services payments exceed $20,000 in more than 200 transactions. Use the notices only as historical context and for their non-threshold guidance, not as the current 2025 federal threshold.  _([Notice 2023-10; Notice 2023-74; Notice 2024-85; P.L. 119-21 §70432; IRS Form 1099-K guidance](https://www.irs.gov/businesses/understanding-your-form-1099-k))_
+## Personal items: loss versus gain
 
-### 2.5 Threshold phase-in table
-
-**Federal TPSO threshold table**  _([P.L. 119-21 §70432; §6050W(e); IRS Form 1099-K guidance](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
-
-| Calendar year | Federal TPSO 1099-K threshold | Authority | Status |
-| --- | --- | --- | --- |
-| 2021 and prior | More than $20,000 AND more than 200 transactions | §6050W(e) as originally enacted | Closed |
-| 2022 | More than $20,000 AND more than 200 transactions | Notice 2023-10 transition relief | Closed |
-| 2023 | More than $20,000 AND more than 200 transactions | Notice 2023-74 transition relief | Closed |
-| 2024 | $5,000 transition threshold announced by IRS | Notice 2024-85 | Closed; superseded prospectively by P.L. 119-21 §70432 |
-| 2025 | More than $20,000 AND more than 200 transactions | P.L. 119-21 §70432; §6050W(e) | Current federal rule; 1099-Ks issued Jan 2026 |
-| 2026+ | More than $20,000 AND more than 200 transactions | §6050W(e), as restored by P.L. 119-21 §70432 | Current law unless amended |
-
-### 2.5 Threshold phase-in table
-
-> **AUDIT FLASH POINT — the threshold cliff is asymmetric.** Issuers are not penalized for issuing 1099-K voluntarily below the threshold. Many TPSOs — particularly PayPal, eBay, and Etsy — issue 1099-Ks at $600 or even $0 in states with lower state thresholds (Maryland $600, Massachusetts $600, Vermont $600, Virginia $600, Illinois $1,000 OR 4+ transactions, New Jersey $1,000, DC $600). A 2025 client may show up with a 1099-K below the federal $20,000-and-200 floor because they live in Massachusetts or because the platform voluntarily issued below the federal threshold. Do not assume "below threshold = no form." Always ask for ALL 1099-Ks the client received regardless of amount.
-
-### 2.6 What goes in Box 1a — gross payments before adjustments
-
-- **Box 1a gross amount definition** — §6050W(a)(2) requires the PSE to report the gross amount of reportable payment transactions. The Treasury regulations at Treas. Reg. §1.6050W-1(a)(5) clarify that "gross amount" means: The total dollar amount of aggregate reportable payment transactions for each participating payee, without regard to any adjustments for credits, cash equivalents, discount amounts, fees, refunded amounts, or any other amounts. This is the single most important sentence in the regulation. The Box 1a figure is not the payee's net revenue and is not the payee's income. It includes: Sales tax that the platform collected from buyers and remitted to the seller (where platform is not a marketplace facilitator); Shipping and handling charged to buyers; Refunds that were later issued (the refund is NOT netted from Box 1a); Returns and allowances (not netted); Chargebacks (not netted); Processor fees that the platform deducted before remitting to the seller (NOT netted — the gross is the buyer-side gross, not the seller-side net); Tips collected through the processor and remitted to the seller. A taxpayer's actual Schedule C Line 1 gross receipts will almost always be lower than Box 1a for these reasons. The difference is reconciled, not ignored.  _(§6050W(a)(2); Treas. Reg. §1.6050W-1(a)(5))_
-
-## 3. Who issues 1099-K, and what it looks like in the wild
-
-### 3.1 Payment Card Companies (no threshold)
-
-- **Payment card processor issuance rule** — Any merchant-card processor issues 1099-K for the entire calendar-year card volume. The Box 1a figure equals gross card volume before processor fees. The payee is the merchant of record on the processor account.
-
-**Payment Card Companies table**
-
-| Processor | Type | Threshold | Typical recipient |
-| --- | --- | --- | --- |
-| Stripe | Card processor (merchant acquirer) | None | Every Stripe-account holder with any card volume in the year |
-| Square | Card processor + small TPSO features | None | Every Square-account holder |
-| PayPal Commerce / PayPal Checkout | Card processor (for card-funded transactions) | None for card | Merchant accepting cards via PayPal |
-| Shopify Payments (powered by Stripe) | Card processor | None | Shopify merchant |
-| Adyen | Card processor | None | Enterprise merchant |
-| Toast / Clover / Lightspeed | Card processor (POS) | None | Restaurants, retail |
-| Authorize.Net (Visa) | Card processor | None | Web merchant |
-
-### 3.1 Payment Card Companies (no threshold)
-
-**Practical note:** Stripe issues a separate 1099-K for each connected account. A user with three Stripe accounts (e.g., a freelancer with a personal Stripe, a Shopify store using Shopify Payments, and a SaaS using Stripe Billing) gets three 1099-Ks. The TIN on each must match the taxpayer's records or the IRS will mismatch.
-
-### 3.2 Third-Party Settlement Organizations (subject to restored federal threshold)
-
-**TPSO table**  _(https://www.irs.gov/businesses/understanding-your-form-1099-k)_
-
-| TPSO | What triggers reporting | Notes |
-| --- | --- | --- |
-| PayPal (Goods & Services balance) | Federal threshold is more than $20,000 and more than 200 transactions; lower state or voluntary platform thresholds may apply | F&F transactions excluded (see §7.1) |
-| Venmo (Business profile or G&S tag) | Aggregate G&S receipts above threshold | F&F excluded; Venmo "Business Profile" introduced 2021 is per-se G&S |
-| Cash App for Business | Aggregate business receipts above threshold | Personal Cash App accounts not reportable; Business is separate |
-| eBay | Aggregate sales above threshold | eBay handles payment processing in-house since 2021 (Managed Payments) |
-| Etsy | Aggregate sales above threshold | Etsy Payments processes; Etsy Direct Checkout is the TPSO |
-| Amazon (third-party seller) | Aggregate sales above threshold | Amazon Pay also issues |
-| Mercari, Poshmark, Depop, Vinted, ThredUp | Aggregate sales above threshold | Re-commerce platforms; many casual sellers will receive 1099-Ks |
-| Airbnb | Aggregate host receipts above threshold | Includes cleaning fees, occupancy taxes (see §7.4) |
-| VRBO (Vrbo / HomeAway) | Aggregate host receipts above threshold | Owned by Expedia |
-| Uber (drivers) | Trip earnings above threshold | Plus 1099-NEC for incentive bonuses (see §7.5) |
-| Lyft | Trip earnings above threshold | Same pattern as Uber |
-| DoorDash, Grubhub, Uber Eats, Instacart (Shoppers) | Delivery earnings above threshold | 1099-NEC also issued for IC drivers (double-form) |
-| Patreon | Creator payouts above threshold | Stripe is the underlying processor; 1099-K from Patreon, not Stripe |
-| OnlyFans | Creator payouts above threshold | Issued via OFTV LLC or Fenix International |
-| Substack | Writer payouts above threshold | Stripe-backed |
-| Twitch / YouTube | Mixed — see §7.7 | Some payouts are 1099-NEC (AdSense), others 1099-K (bits, Super Chat via processor) |
-| StubHub, SeatGeek, Vivid Seats, Ticketmaster Fan-to-Fan | Resale receipts above threshold | Includes face value plus markup |
-| GoFundMe (charitable) | Generally NOT 1099-K — see §7.8 | Personal fundraising treated as gifts, not goods/services |
-
-### 3.3 Crypto exchanges — transitioning from 1099-K to 1099-DA in 2025
-
-- **1099-K to 1099-DA transition for digital asset brokers** — Historically, US-resident crypto exchanges (Coinbase, Kraken, Gemini, Binance.US) used Form 1099-K to report fiat-equivalent gross flows on the theory that the exchange was acting as a TPSO. This was always an imperfect fit: 1099-K reports gross gross — not gain — and crypto users were getting 1099-Ks for $200,000 of trading volume that produced $400 of net gain. T.D. 10000 (June 28, 2024) finalized Treas. Reg. §1.6045-1 to designate custodial digital-asset brokers as §6045 brokers and require them to file new Form 1099-DA, Digital Asset Proceeds From Broker Transactions, beginning with the 2025 calendar year. 2025 (first reporting year): 1099-DA required for gross proceeds of digital-asset sales. Cost basis is optional. Wallet-by-wallet basis tracking begins January 1, 2025 (Rev. Proc. 2024-28 safe harbor). Most exchanges will NOT report cost basis on the 2025 1099-DA. 2026 and later: 1099-DA must also include cost basis for "covered" digital assets acquired on or after January 1, 2026. Decentralized brokers (DeFi) — the original final regulations included DeFi front-ends as brokers; this was repealed by joint resolution signed April 10, 2025 (P.L. 119-3). DeFi brokers do not file 1099-DA. For the 2025 tax year, a client who used a centralized US exchange will likely receive both a 1099-DA (gross proceeds, no basis) and possibly a legacy 1099-K (covering fiat-to-crypto on-ramp payments). The two forms can double-count. Reconciliation requires the client's full transaction history, not the forms. See `us-digital-assets-reporting` (forthcoming) for details.  _(T.D. 10000 (June 28, 2024); Treas. Reg. §1.6045-1; Rev. Proc. 2024-28; P.L. 119-3)_
-
-## 4. Who receives 1099-K — and what to do about it
-
-The §6050W reporting regime is a payee regime. A 1099-K is issued to a person who received payments through a card or third-party network. The IRS does not care, at the issuer level, whether the payee was running a business, selling personal items, splitting a vacation with friends, or operating a hobby. The IRS expects the payee — through their tax preparer — to make that determination on the return.
-
-There are five canonical recipient categories:
-
-### 4.1 Schedule C business operator
-
-- **Schedule C business operator category** — A sole proprietor or single-member LLC disregarded for federal tax purposes who runs a trade or business and accepts payments through card or TPSO networks. The 1099-K is input to Schedule C Line 1 (gross receipts), after reconciliation for the items in §2.6. This is the simplest case.
-
-### 4.2 Hobbyist with sustained sales
-
-- **Hobbyist recipient category** — A person whose activity does not rise to the level of a §162 trade or business under the §183 nine-factor test (Treas. Reg. §1.183-2(b)). Typical examples: occasional Etsy shop selling handmade items at break-even or below; small-scale eBay flipping of collectibles without profit motive; occasional StubHub ticket resale. Income is reported on Schedule 1, Line 8j ("Activity not engaged in for profit income"). After TCJA (P.L. 115-97, §11045), hobby expenses are NOT deductible — they were Schedule A miscellaneous 2% itemized deductions and that deduction was suspended through 2025 by §67(g) and made permanent by OBBBA (P.L. 119-21, July 4, 2025). See §6 for the §183 framework.  _(§162; §183; Treas. Reg. §1.183-2(b); TCJA P.L. 115-97 §11045; §67(g); OBBBA P.L. 119-21)_
-
-### 4.3 Casual seller of personal items at a loss
-
-- **Casual seller at loss category** — A taxpayer who sells personal-use property — used clothing, household goods, books, a single piece of used furniture — for less than the original purchase price. Loss on sale of personal-use property is not deductible under §165(c) (only business, investment, and casualty losses are deductible for individuals). But the gross receipts are not taxable income either, because the taxpayer recovered less than basis. The IRS-recommended treatment is the "two-line wash" described in §5.3.  _(§165(c))_
-
-### 4.4 Casual seller of personal items at a gain
-
-- **Casual seller at gain category** — Most relevant for collectibles (jewelry, watches, baseball cards, art, vintage clothing where it appreciated). Gain on sale of personal-use property IS taxable — as capital gain. Holding period determines short-term vs. long-term. Collectibles long-term are taxed at the §1(h)(4) 28% rate cap. Reported on Form 8949 and Schedule D. See §5.4.  _(§1(h)(4))_
-
-### 4.5 Recipient of personal reimbursements that were mistagged G&S
-
-- **Mistagged reimbursement category** — A roommate splits rent through Venmo and the payer accidentally selected "Goods and Services" instead of "Friends and Family," generating a year-end 1099-K. This is not income at all — it is a non-taxable reimbursement. IRS guidance (FAQ Q-9, 2024) directs the recipient to attempt a corrected 1099-K from the issuer; if denied, report the gross on Schedule 1 Line 8z and back it out on Line 24z with the description "Form 1099-K received in error." See §5.3.  _(IRS FAQ Q-9, 2024)_
-
-### 4.6 Decision tree
-
-```
-Did you receive a Form 1099-K for 2025?
-├── YES → Is the activity a trade or business under §162 / §183?
-│   ├── YES (regular, continuous, profit-motive) → Schedule C
-│   │   └── Reconcile Box 1a to actual gross receipts; document refunds, fees, sales tax, double-counts
-│   ├── NO, hobby (sporadic, no profit motive) → Schedule 1 Line 8j
-│   │   └── No expense deduction available (TCJA §67(g), made permanent by OBBBA)
-│   └── NO, personal property sale → was there a gain?
-│       ├── GAIN → Form 8949 → Schedule D (collectibles 28%)
-│       ├── LOSS → Schedule 1 Line 8z gross, Line 24z negative offset (IRS two-line wash)
-│       └── REIMBURSEMENT (no sale at all) → Schedule 1 Line 8z gross, Line 24z negative offset, "Received in error"
-└── NO → Do you have business income that should have been on 1099-K?
-    └── Yes, report on Schedule C as you would any unreported gross receipts
-```
-
-## 5. Reconciliation — making the return match (and explain) the 1099-K
-
-### 5.1 The mismatch problem
-
-- **AUR matching and CP2000 risk** — The IRS Automated Underreporter program runs every individual return through a matching routine against the AUR/IRP file (the warehouse of W-2s, 1099s, K-1s, and other information returns). When the sum of information-return amounts attributable to a particular line of the return exceeds what the taxpayer reported, the system flags the return for a CP2000 notice. 1099-K matching is one of the most aggressive AUR matches because: The form is gross, but Schedule C is net of returns and discounts; The form may double-count with 1099-NEC; Issuers may include sales tax that the taxpayer doesn't treat as income; Multiple 1099-Ks may overlap (e.g., Stripe + the Patreon 1099-K that includes Stripe-processed payments). The cure is proactive reconciliation on the return, not waiting for the CP2000 to arrive.
-
-### 5.2 Schedule C reconciliation worksheet
-
-For a business taxpayer, prepare an internal worksheet (not filed, but retained):
-
-```
-SCHEDULE C 1099-K RECONCILIATION — TAX YEAR 2025
-
-1099-K(s) received:
-  Stripe (TIN 47-XXXXXXX)                          $  82,400.00
-  Square (TIN 81-XXXXXXX)                          $   4,150.00
-  PayPal G&S (TIN 77-XXXXXXX)                      $  11,250.00
-  Etsy (TIN 20-XXXXXXX)                            $   3,805.00
-  Total 1099-K gross                               $ 101,605.00
-
-Add: cash and check receipts (not 1099-K)          $   2,800.00
-Add: ACH receipts via Plaid (not 1099-K)           $   6,400.00
-Subtotal: gross receipts before adjustments        $ 110,805.00
-
-Less: refunds and chargebacks issued in 2025       $  (3,200.00)
-Less: sales tax collected and remitted             $  (4,150.00)
-Less: 1099-K amounts also reported on 1099-NEC
-      (double-count from Client X $12,000)         $ (12,000.00)
-Less: processor fees included in Box 1a
-      (Stripe fees $2,950 — separately on Sch C
-       Line 17/18 as fees expense, not netted)     $       0.00
-                                                   ___________
-Schedule C Line 1 — Gross receipts                 $  91,455.00
-```
-
-The worksheet must answer: for every dollar of 1099-K, where did it go? Either it's in Line 1, it's a refund/chargeback that doesn't belong there, it's sales tax remitted, or it's a double-count with a 1099-NEC.
-
-> **AUDIT FLASH POINT — large 1099-K with no Schedule C.** A taxpayer who receives a substantial 1099-K and files no Schedule C (or other visible reconciliation line) is a high-priority AUR pull. Always file Schedule C even if the activity is a hobby — actually, **especially** if the activity is a hobby — to give the auditor a paper trail. Even better: if Schedule 1 Line 8j is used for hobby income, attach a statement reconciling the 1099-K to the Line 8j figure.
-
-### 5.3 Personal items sold at a loss — the IRS two-line wash
-
-- **IRS two-line wash procedure** — IRS Form 1040 Schedule 1 Instructions (2024 version) and the 2024 "Understanding Your Form 1099-K" FAQ Q-13 instruct taxpayers who received a 1099-K for personal items sold at a loss to: 1. Report the gross 1099-K amount on Schedule 1, Line 8z, "Other Income," with the description "Form 1099-K Personal items sold at a loss" 2. Report the same amount as a negative on Schedule 1, Line 24z, "Other Adjustments," with the description "Form 1099-K Personal items sold at a loss" The net effect on AGI is zero, but the 1099-K is acknowledged on the return and matched by the AUR system. This is the IRS-blessed method and avoids CP2000 generation.  _(IRS Form 1040 Schedule 1 Instructions (2024); Understanding Your Form 1099-K FAQ Q-13 (2024))_
-
-### 5.3 Personal items sold at a loss — the IRS two-line wash
-
-**Example.** A taxpayer cleared out a closet on Poshmark and received $1,850 across 47 sales of used clothing. Original cost of those items, if anyone could find the receipts, was well above $1,850. There is no taxable gain (each item sold for less than basis) and no deductible loss (personal-use property, §165(c)).
-
-```
-Schedule 1, Line 8z:    "Form 1099-K Personal items sold at a loss"     $ 1,850
-Schedule 1, Line 24z:   "Form 1099-K Personal items sold at a loss"     $(1,850)
-Net to Line 10 (Total Other Income) from this entry:                    $     0
-```
-
-The same two-line wash applies to:
-
-- A roommate-reimbursement Venmo G&S 1099-K issued in error
-- A Friends-and-Family payment misclassified by the sender
-- Gift money sent through PayPal G&S (e.g., wedding gifts collected via a registry payment link)
-
-For any of these the description should be specific: "Form 1099-K received in error — non-business reimbursement" or "Form 1099-K personal gift, not income."
-
-### 5.4 Personal items sold at a gain — Schedule D
-
-- **Personal property sold at a gain treatment** — If a taxpayer sells personal-use property at a gain — e.g., a Hermès Birkin bag purchased for $8,000 in 2018 and sold via The RealReal in 2025 for $14,000 — the gain is taxable as capital gain. The 1099-K cannot be washed; it represents real income. Long-term gain on collectibles (defined at §408(m): art, rugs, antiques, metals, gems, stamps, coins, alcoholic beverages, and "any other tangible personal property" the IRS specifies) is capped at 28% under §1(h)(4) — actually taxed at the lesser of 28% or the taxpayer's ordinary rate. Long-term holding is >1 year. Short-term gain is taxed at ordinary rates. Report on Form 8949 with box C checked (basis not reported to IRS). Carry to Schedule D Part I or II depending on holding period. Basis = original purchase price plus any improvements; if basis can't be substantiated, IRS will assert zero basis. If the taxpayer made many small sales of personal property where most are at a loss and a few are at a gain, the practitioner needs to disaggregate transaction-level: each loss is washed (§5.3) and each gain is reported (§5.4). This is tedious but it's the correct treatment.  _(§408(m); §1(h)(4); Form 8949; Schedule D)_
-
-### 5.5 Hobby income — Schedule 1 Line 8j
-
-- **Hobby income and COGS treatment** — After TCJA suspended miscellaneous 2% itemized deductions through 2025 and OBBBA made the suspension permanent, hobby losses are non-deductible at the federal level. Hobby gross receipts go on Schedule 1 Line 8j. No expense offset is allowed. Cost of goods sold (COGS) is a special case. The Tax Court has historically allowed COGS as a return-of-capital adjustment even for hobbies (see Welch v. Helvering, 290 U.S. 111 (1933), distinguishing return of capital from deductions). The IRS position is mixed; FAQ Q-14 (2024) appears to disallow COGS for hobby activity but is not authoritative. Conservative practice: do not net COGS against Line 8j unless the taxpayer is prepared to defend the §61 versus §162 distinction with substantial authority. For inventory-based hobbies (a vintage-watch flipper who isn't yet a business), consider whether the activity has actually crossed the §183 line into a trade or business — see §6.  _(Welch v. Helvering, 290 U.S. 111 (1933); FAQ Q-14 (2024); §61; §162; §183)_
-
-## 6. Hobby vs. business — the §183 nine-factor test
-
-When a taxpayer receives a 1099-K for activity that may or may not be a trade or business, the practitioner must determine where on the spectrum the activity falls. The classification controls whether Schedule C or Schedule 1 Line 8j is the right reporting line.
-
-## 6. Hobby vs. business — the §183 nine-factor test
-
-- **§183(d) presumption** — an activity is presumed to be engaged in for profit if it produces gross income in excess of deductions in 3 of the past 5 consecutive years (2 of 7 for horse activities). The presumption can be rebutted by the IRS but it shifts the burden.  _(§183(d))_
-
-## 6. Hobby vs. business — the §183 nine-factor test
-
-- **Treas. Reg. §1.183-2(b) nine factors** — 1. Manner in which the activity is carried on (businesslike books, separate bank account, etc.) 2. Expertise of the taxpayer or advisors 3. Time and effort expended 4. Expectation that assets will appreciate 5. Success in carrying on other similar or dissimilar activities 6. History of income or losses 7. Amount of occasional profits, if any 8. Financial status of the taxpayer (does the taxpayer need the income?) 9. Elements of personal pleasure or recreation. No factor is decisive; all are considered.  _(Treas. Reg. §1.183-2(b))_
-
-## 6. Hobby vs. business — the §183 nine-factor test
-
-**Practical screening questions for a 1099-K activity:**
-
-- Is there a separate bank or processor account?
-- Does the taxpayer keep books?
-- Has the activity generated a profit in any year?
-- How many hours per week?
-- Is the activity advertised? Does the taxpayer have business cards, a website, a tax ID, a Schedule C or LLC?
-- Does the taxpayer depend on the income?
-
-A taxpayer who sold $7,000 of crocheted blankets on Etsy in 2025, spent $4,500 on yarn, worked 5 hours a week, has no separate bank account, has never made a profit in three years of selling, and considers crocheting a relaxing pastime is a hobbyist. A taxpayer who sold the same $7,000, has an LLC, a separate Stripe account, advertises on Instagram, treats it as a side income source, and is on year one of building it is a business.
-
-> **AUDIT FLASH POINT — §183 challenges where Schedule C losses are claimed.** The pattern that draws IRS attention is **multi-year losses on a Schedule C that doesn't look like a business**. An "Etsy crochet shop" Schedule C with $7,000 gross, $9,000 in expenses (yarn, equipment depreciation, home office, the loom), and a $2,000 loss — claimed year after year against W-2 wages — is the textbook §183 audit trigger. If the activity has a profit motive and proper records, defend it. If it's truly a hobby, do not file Schedule C; use Line 8j and accept that the gross is taxable without offset.
-
-## 7. Platform-specific patterns
-
-### 7.1 PayPal — Friends & Family vs. Goods & Services
-
-- **PayPal F&F vs G&S rules** — PayPal allows the sender to designate a payment as either "Friends and Family" (F&F) or "Goods and Services" (G&S). F&F: PayPal does not charge a transaction fee (from a US bank-funded source), does not offer buyer protection, and does NOT report on 1099-K. The transaction is treated as a personal transfer outside §6050W. G&S: PayPal charges 2.99% + $0.49 (US domestic, as of 2025), offers buyer protection, and DOES report on 1099-K subject to the threshold. The seller cannot unilaterally change a payment from F&F to G&S after the fact; the sender controls the designation at the moment of payment. **Mistagging risks** in both directions: - **Buyer mistags G&S as F&F**: seller has no fee, no protection, but income is unreported. Business taxpayers should refuse F&F payments for business transactions; the gross is still gross income on Schedule C regardless of how it was tagged. - **Buyer mistags F&F as G&S**: PayPal collects fee and issues 1099-K to recipient. This is the "wedding gift via PayPal G&S" scenario. Use the §5.3 two-line wash and document.  _(§6050W)_
-
-### 7.2 Venmo — F&F vs. G&S vs. Business Profile
-
-- **Venmo three flows** — Venmo (owned by PayPal) followed PayPal in introducing a G&S toggle in mid-2021. In 2021 Venmo also introduced "Venmo Business Profile" — a separate profile that is per se G&S for all incoming payments. Any payment to a Business Profile is reportable. For 1099-K reconciliation, the practitioner must distinguish three Venmo flows: 1. **Personal Venmo, F&F transactions** — not reported, not income, no action 2. **Personal Venmo, G&S transactions** — reported on 1099-K if over threshold; could be business, hobby, or personal-property sale 3. **Business Profile** — always reported on 1099-K (no F&F option); per-se business if profile was opened intentionally
-
-### 7.3 Cash App — Personal vs. Cash App for Business
-
-- **Cash App personal vs business account rule** — Cash App offers two account types. A personal Cash App account is not a TPSO for §6050W purposes; transfers between personal accounts are treated like Zelle (bank-direct rails). Cash App for Business is a separate account opened intentionally by a merchant; it IS a TPSO. Form 1099-K is issued for Cash App for Business activity only. This means a taxpayer can receive a payment for a side business through their personal Cash App account, never get a 1099-K, and still owe tax on it. The reverse pattern — a Cash App for Business 1099-K — almost always indicates a deliberate business account, so it almost always lands on Schedule C.  _(§6050W)_
-
-### 7.4 Airbnb and VRBO — short-term rental
-
-- **Airbnb/VRBO occupancy tax treatment** — A 1099-K from Airbnb reports the host payout, which is the gross nightly rate plus cleaning fees, minus the host service fee. Whether occupancy taxes are included depends on the state and the platform: - Where Airbnb has a tax-collection agreement with the state/locality (about 30 states plus DC and many cities), Airbnb collects occupancy/transient lodging tax from the guest and remits directly to the taxing authority. This amount is excluded from the host's 1099-K. - Where Airbnb does not have a tax-collection agreement, Airbnb collects occupancy tax from the guest and passes it through to the host, who is then responsible for remitting. The pass-through amount IS included in the host's 1099-K. The host then deducts the remitted tax as an expense. **Schedule C vs. Schedule E for short-term rentals** is a separate question outside this skill's scope. The general rule (Treas. Reg. §1.469-1T(e)(3)(ii)(A)): if average stay is 7 days or less, the activity is a §469(c)(7)-type business and may be Schedule C if "substantial services" are provided; otherwise Schedule E. See `us-short-term-rental` (forthcoming).  _(Treas. Reg. §1.469-1T(e)(3)(ii)(A); §469(c)(7))_
-
-### 7.5 Uber and Lyft — drivers receive BOTH 1099-K and 1099-NEC
-
-- **Uber/Lyft double-form treatment** — A typical ride-share driver in 2025 receives: Form 1099-K from Uber Technologies or Lyft, Inc. reporting gross rider payments processed through the app — this is the rider-paid fare PLUS Uber/Lyft's commission, tolls, surge pricing, and tips. Form 1099-NEC from the same entity reporting non-fare incentive payments (referral bonuses, quest completion bonuses, guaranteed earnings, etc.). The 1099-K Box 1a figure is NOT the driver's gross income. It includes Uber's commission, which the driver never receives. The driver's gross income on Schedule C Line 1 is the 1099-K Box 1a plus the 1099-NEC, and then on Schedule C Line 39 ("Other costs" within Part III COGS, or on Line 10 as a commission) the driver deducts Uber's commission, the booking fee, the marketplace fee, and any other amounts that were on the 1099-K but never reached the driver's bank account. The driver's annual tax summary from Uber/Lyft will reconcile: gross fares, tips, tolls, taxes, Uber service fee, booking fee, etc. The practitioner uses the tax summary, not the 1099-K alone, to build Schedule C.
-
-### 7.5 Uber and Lyft — drivers receive BOTH 1099-K and 1099-NEC
-
-> **AUDIT FLASH POINT — ride-share Schedule C with no commission deduction.** AUR will see 1099-K of $35,000 + 1099-NEC of $2,000 = $37,000 information returns. If Schedule C Line 1 shows $24,000 and there's no line item deducting "Uber service fee" or "platform commission," the AUR system pulls the return. Always show the gross on Line 1 and break out the commission on Line 10 (commissions and fees) — make the reconciliation visible.
-
-### 7.6 DoorDash, Grubhub, Uber Eats, Instacart Shopper — delivery gig
-
-- **Delivery gig double-form pattern** — Same pattern as ride-share for drivers/shoppers classified as ICs: 1099-K for processed earnings; 1099-NEC for incentive bonuses; Tax summary from the platform reconciles gross. DoorDash and Uber Eats currently issue both forms; Grubhub historically issued only 1099-NEC (treating the entire payout as non-employee compensation rather than a settled payment). Practitioner should check what the client actually received.
-
-### 7.7 Content creators — Patreon, OnlyFans, Twitch, YouTube, Substack
-
-Content creators commonly receive multiple forms reflecting different revenue streams:
-
-**Content creators platform/form table**
-
-| Platform | Form issued | Why |
-| --- | --- | --- |
-| Patreon | 1099-K | Patreon is a TPSO; payments to creators are settled |
-| OnlyFans | 1099-K (via Fenix International / OFTV LLC) | TPSO |
-| Substack | 1099-K | Stripe-backed TPSO |
-| YouTube AdSense | 1099-NEC (from Google LLC) | Direct contractor relationship, not a settled payment |
-| YouTube Super Chat / Super Thanks | 1099-K (from Google Payments) | Settled through Google's payment network |
-| Twitch subs & bits | 1099-K (from Amazon Payments) | TPSO |
-| Twitch ad revenue | 1099-NEC (from Twitch Interactive) | Contractor relationship |
-| TikTok Creator Fund | 1099-NEC | Direct relationship |
-| Meta (Reels Play Bonus) | 1099-NEC | Direct relationship |
-| Instagram subscriptions | 1099-K | Settled via Meta Pay |
-
-### 7.7 Content creators — Patreon, OnlyFans, Twitch, YouTube, Substack
-
-A working creator can easily receive 5+ forms across these categories. Reconciliation needs to itemize: each form, what's in it, what platform it covers, and how it lands on Schedule C.
-
-### 7.8 GoFundMe and crowdfunding — generally not 1099-K
-
-- **Crowdfunding tax treatment** — GoFundMe Personal Fundraising (the "charitable" use case) is treated as receipt of gifts to the beneficiary; gifts are excluded from gross income under §102 and are not reported on 1099-K. GoFundMe does not issue 1099-Ks to personal-fundraising beneficiaries. Kickstarter, Indiegogo, and similar reward-based crowdfunding are different — these are pre-orders or contributions in exchange for a reward, treated as gross income to the project owner. Stripe is the underlying processor and may issue 1099-K to the project owner. GoFundMe Charity (now Classy) — donations to qualified 501(c)(3)s — flow to the charity directly; the donor gets a charitable contribution deduction, and the charity receives the funds tax-free under §501. No 1099-K to anyone.  _(§102; §501)_
-
-### 7.9 Marketplace facilitators and sales tax — Wayfair
-
-- **Marketplace facilitator sales tax exclusion rule** — Under South Dakota v. Wayfair, Inc., 138 S. Ct. 2080 (2018), states may require remote sellers and marketplace facilitators with economic nexus to collect and remit state sales tax. By 2024, all 45 states with a sales tax plus DC have marketplace facilitator laws. For 1099-K purposes the practical consequence is: Marketplace facilitator platforms (Amazon, Etsy, eBay, Walmart Marketplace, Mercari, Poshmark, StubHub) collect sales tax from buyers and remit directly to the state. They EXCLUDE collected sales tax from the seller's 1099-K. The seller never receives the sales tax. Non-marketplace platforms (Stripe, Square, Shopify Payments when not used through Shopify's tax-handling service) pass collected sales tax through to the seller. They INCLUDE it in 1099-K Box 1a. The seller is responsible for remitting. This means the same $100,000 of gross sales can produce a $100,000 1099-K (Stripe, sales tax included) or a $93,000 1099-K (Etsy, sales tax excluded), depending on platform. Schedule C Line 1 should be the gross excluding sales tax in both cases; on the Stripe scenario, the practitioner backs out remitted sales tax from Box 1a in the reconciliation.  _(South Dakota v. Wayfair, Inc., 138 S. Ct. 2080 (2018))_
-
-## 8. Double-counting with 1099-NEC
-
-### 8.1 The classic pattern
-
-A consultant invoices Client X $12,000 in 2025. Client X pays the invoice through Stripe Invoicing. Stripe processes the payment and remits $11,652.40 to the consultant ($12,000 less Stripe's 2.9% + $0.30 fee per transaction). At year-end:
-
-- Stripe issues a **1099-K** for $12,000 (gross of fee) covering the year's total processed receipts
-- Client X — whose accountant runs a year-end 1099-NEC report — issues a **1099-NEC** for $12,000 to the consultant
-
-The IRS now has $24,000 of information returns for a single $12,000 transaction. If the consultant reports $12,000 on Schedule C, AUR matches $24,000 of information returns to $12,000 of reported income and proposes a $12,000 underreporter adjustment.
-
-### 8.2 IRS Notice 2023-74 acknowledgment
-
-- **Notice 2023-74 §V acknowledgment of duplication** — Notice 2023-74 §V states that where a payment is reportable on both Form 1099-K (by the PSE) and Form 1099-NEC (by the payor), the payee should report the income once. The notice does not provide a mechanical fix; it just acknowledges the problem.  _(Notice 2023-74 §V)_
-
-### 8.3 Treas. Reg. §1.6041-1(a)(1)(iv) — the payor's escape
-
-- **Payor exemption from issuing 1099-NEC when paid via PSE** — Under Treas. Reg. §1.6041-1(a)(1)(iv), a payor who pays a contractor through a payment card or third-party network is not required to issue 1099-NEC because the PSE is already reporting on 1099-K. The payor can rely on §6050W reporting and skip 1099-NEC for that contractor. Many payors don't know this. They issue 1099-NEC anyway, "to be safe." The duplicate report ends up in AUR.  _(Treas. Reg. §1.6041-1(a)(1)(iv))_
-
-### 8.4 Reconciliation method
-
-- **CP2000 response for duplicate 1099-K/1099-NEC** — On Schedule C Line 1, report gross receipts ONCE. In the §5.2 reconciliation worksheet, identify the duplicate 1099-NEC amounts and back them out. If a CP2000 arrives, respond with: 1. The reconciliation worksheet 2. Copies of both 1099-K and 1099-NEC showing same payor / same amount 3. Citation to Treas. Reg. §1.6041-1(a)(1)(iv) and Notice 2023-74. If the payor is the practitioner's client (because the practitioner also prepares Client X's return), advise Client X to STOP issuing 1099-NEC for contractors paid through Stripe/PayPal/credit card — that is the structural fix. See `us-1099-nec-issuance`.  _(Treas. Reg. §1.6041-1(a)(1)(iv); Notice 2023-74)_
-
-## 9. IRS CP2000 defense
-
-### 9.1 What a CP2000 looks like
-
-- **CP2000 notice** — A CP2000 notice is generated by the AUR system when reported income on Form 1040 plus Schedules doesn't match the IRP file. It proposes an adjustment, with associated tax, penalty, and interest. The taxpayer has 30 days from the notice date to respond.
-- **1099-K-driven CP2000s** — For 1099-K-driven CP2000s, the notice will list each unmatched 1099-K and propose to add the gross amount to Schedule 1 Line 8a or to Schedule C Line 1, whichever the system chooses.
-
-### 9.2 Response packaging
-
-A complete CP2000 response for a 1099-K issue includes:
-
-1. **The CP2000 response form** signed by the taxpayer (or POA)
-2. **Box "I disagree"** checked, with explanation
-3. **Reconciliation worksheet** — the §5.2 worksheet built proactively
-4. **Copies of all 1099-Ks and 1099-NECs** referenced in the worksheet
-5. **Platform tax summaries** (Uber Annual Tax Summary, Airbnb Earnings Summary, PayPal Activity Statement, etc.)
-6. **Bank/processor account statements** showing actual deposits (helpful where fees, refunds, or sales tax are in dispute)
-7. **For personal-items-at-loss claims**: documentation that the items were personal-use (e.g., purchase receipts, original photographs, listing descriptions that say "used")
-8. **For F&F mistag claims**: screenshots showing the relationship between sender and recipient, any text-message context, or a written statement from the sender clarifying the intended designation
-9. **Citation block**: Treas. Reg. §1.6050W-1(a)(5) (gross definition), Notice 2024-85 (threshold phase-in), Notice 2023-74 (double-count acknowledgment), Treas. Reg. §1.6041-1(a)(1)(iv) (payor escape), IRS FAQ "Understanding Your Form 1099-K" Q-13 (two-line wash)
-
-### 9.3 Sample explanation statement (attach to return proactively)
-
-> **Statement Regarding Form 1099-K Reconciliation — Tax Year 2025**
->
-> Taxpayer received the following Forms 1099-K in 2025:
->
-> 1. Stripe, Inc. — $82,400 — included in Schedule C Line 1 after backing out $1,200 of refunds (separately deducted on Schedule C Line 28 as bad debt) and $2,800 of processor fees (separately deducted on Schedule C Line 10).
-> 2. PayPal, Inc. (Goods and Services) — $11,250 — included in Schedule C Line 1. Of this amount, $1,850 represents personal Friends-and-Family transfers from family members for shared travel costs that were inadvertently designated as Goods and Services by the senders. Taxpayer attempted to obtain corrected Forms 1099-K from PayPal but the request was denied; per IRS FAQ "Understanding Your Form 1099-K" Q-13, taxpayer has reported the gross 1099-K amount in Schedule C and included a compensating expense entry of $1,850 on Schedule C Line 27a (Other expenses) described as "1099-K Personal F&F received in error."
-> 3. Poshmark, Inc. — $1,640 — represents proceeds from sale of personal-use clothing items at a loss. Per IRS guidance, gross amount of $1,640 is reported on Schedule 1 Line 8z ("Form 1099-K Personal items sold at a loss") with an offsetting negative entry of $1,640 on Schedule 1 Line 24z. No taxable income results from these sales because each item was sold for less than original cost; the loss is non-deductible under §165(c).
->
-> Total Form 1099-K amount on file: $95,290. Reconciled to Schedule C Line 1 of $91,640 and Schedule 1 Line 8z (offset by Line 24z) of $1,640, with the remaining $2,010 representing refunds, processor fees, and sales tax that are separately accounted for. No income has been omitted from the return.
-
-A statement of this form, filed with the original return, generally precludes CP2000 generation entirely.
-
-## 10. Worked examples
-
-### 10.1 Example — Etsy closet-cleaner, $7,000 at a loss
-
-Sarah, a marketing manager with W-2 wages of $85,000, opened an Etsy shop in 2023 to sell handmade enamel pins as a hobby. In 2025 she also listed some used personal items — vintage band T-shirts, an old camera, books. Total 2025 Etsy Payments gross: $7,140. Of that, $3,800 was new enamel pins (cost: $4,200, so a $400 loss on the hobby activity, but hobby losses are non-deductible). $3,340 was personal items sold at a loss (each item sold below original purchase price).
-
-She received a Form 1099-K from Etsy for $7,140.
-
-- **Treatment** — Hobby activity ($3,800 enamel pins) → Schedule 1 Line 8j, hobby income. No expense deduction. Even though the activity ran at a loss in real economic terms, $3,800 is reportable as Line 8j and the $4,200 of materials is non-deductible (TCJA §67(g) made permanent by OBBBA). Personal items at a loss ($3,340) → Schedule 1 Line 8z (gross) and Line 24z (negative offset). Net zero.  _(TCJA §67(g); OBBBA)_
-
-```
-Schedule 1, Line 8j (Activity not engaged in for profit income):       $ 3,800
-Schedule 1, Line 8z (Form 1099-K Personal items sold at a loss):       $ 3,340
-Schedule 1, Line 24z (Form 1099-K Personal items sold at a loss):      $(3,340)
-Schedule 1, Line 10 contribution to total Other income:                $ 3,800
-```
-
-Net taxable contribution from the 1099-K: $3,800 to AGI. The full $7,140 is acknowledged and matched.
-
-Statement disaggregating the $7,140 into the $3,800 hobby component and the $3,340 personal-property loss component. Without disaggregation, AUR may try to push the entire $7,140 to Schedule C.
-
-- **§183 analysis** — Three years of Etsy losses on enamel pins, no separate bank account, no advertising, no profit motive on a businesslike basis → hobby. Do NOT file Schedule C for this activity. Doing so would invite §183 challenge AND would deny the personal-property-loss treatment for the other half of the 1099-K.  _(IRC §183)_
-
-### 10.2 Example — Ride-share driver, $35,000 1099-K + $2,000 1099-NEC
-
-Marcus drives full-time for Uber in 2025. His Uber Annual Tax Summary shows:
-
-**Uber Annual Tax Summary line items**
-
-| Line item | Amount |
-| --- | --- |
-| Gross fares (including Uber commission) | $32,800 |
-| Tolls collected | $1,150 |
-| Tips collected | $1,050 |
-| **Total 1099-K (Box 1a)** | **$35,000** |
-| Quest bonuses (incentive payments) | $2,000 |
-| **Total 1099-NEC** | **$2,000** |
-| Uber service fee (commission) | $(8,200) |
-| Booking fee (passed to taxpayer's expense) | $(950) |
-| Net deposited to Marcus's bank | $26,850 |
-
-- **Mileage facts** — Marcus drove 28,500 business miles in 2025 (logged via MileIQ). He uses the standard mileage rate of $0.70/mile (Notice 2025-XX hypothetical 2025 rate).  _(Notice 2025-XX (hypothetical))_
-
-```
-SCHEDULE C — Marcus, Tax Year 2025
-
-Part I:
-Line 1   Gross receipts (1099-K + 1099-NEC + cash tips not on 1099)   $ 37,000
-Line 7   Gross income                                                  $ 37,000
-
-Part II:
-Line 10  Commissions and fees (Uber service fee + booking fee)         $  9,150
-Line 9   Car and truck expenses (28,500 mi × $0.70)                    $ 19,950
-Line 22  Supplies (phone mount, water for passengers, car wash)        $    420
-Line 25  Utilities (business portion of cell phone)                    $    480
-Line 28  Total expenses                                                $ 30,000
-
-Line 31  Net profit                                                    $  7,000
-```
-
-Schedule SE on $7,000 of net profit: $7,000 × 0.9235 = $6,465 × 15.3% = $988 of SE tax. Half of SE tax deductible ($494) on Schedule 1 Line 15.
-
-- **Reconciliation** — Information returns total $37,000 ($35,000 + $2,000). Schedule C Line 1 = $37,000. AUR match clears. The critical structural choice: gross-on-Line-1, commission-on-Line-10. Some preparers net the commission and put $26,800 on Line 1 — that generates an AUR mismatch every time, because AUR sees $37,000 of info returns and $26,800 of reported gross.
-
-### 10.3 Example — Content creator with Stripe + Patreon 1099-Ks
-
-Jade is a full-time YouTube creator and podcaster. In 2025 she received the items below. She also receives 4 sponsored-content payments totaling $22,000 from various brands, all paid via Stripe, none of which sent her a 1099-NEC (relying on Treas. Reg. §1.6041-1(a)(1)(iv)).
-
-**2025 information returns received**
-
-| Source | Form | Amount |
-| --- | --- | --- |
-| Patreon (monthly memberships) | 1099-K | $94,200 |
-| Stripe (direct merch sales via Shopify) | 1099-K | $18,400 |
-| Google AdSense (YouTube ad revenue) | 1099-NEC | $42,000 |
-| Spotify for Podcasters (ad revenue) | 1099-NEC | $6,800 |
-| Sponsorship from Brand X (paid direct via Stripe) | 1099-NEC from Brand X for $15,000, ALSO in Stripe 1099-K | duplicated |
-
-```
-Total information returns received:
-  1099-K (Patreon)          $  94,200
-  1099-K (Stripe)           $  18,400      ← includes Brand X $15,000 AND the $22,000 of un-1099-NEC'd sponsorships AND merch sales
-  1099-NEC (Google)         $  42,000
-  1099-NEC (Spotify)        $   6,800
-  1099-NEC (Brand X)        $  15,000      ← DUPLICATES the Stripe 1099-K
-  TOTAL on AUR              $ 176,400
-
-True gross business receipts:
-  Patreon memberships         $  94,200
-  Merch sales (Stripe)        $   3,000    ← (Stripe 1099-K of $18,400 less $15,000 Brand X less... wait, see below)
-  Brand X sponsorship         $  15,000    ← reported on Stripe AND 1099-NEC; report once
-  Other sponsorships          $  22,000    ← in Stripe 1099-K only
-  YouTube AdSense              $  42,000
-  Podcast ads (Spotify)       $   6,800
-  Subtotal                    $ 183,000
-  Less Patreon platform fee   $  (8,478)   ← Patreon takes ~9%; backed out on Sched C Line 10
-  Less Stripe processing fees $  (1,710)   ← backed out on Sched C Line 17
-  
-Schedule C Line 1 = $ 183,000 (gross before fees; fees are below the line)
-```
-
-Stripe's $18,400 includes the $15,000 Brand X sponsorship (which also generated a 1099-NEC) AND the $22,000 of other-sponsorship payments... but wait — $15,000 + $22,000 = $37,000, which exceeds Stripe's $18,400. Recompute: in the worked facts, the $22,000 of "other sponsorships" must actually be partly on Stripe and partly elsewhere. In a real engagement the practitioner pulls the Stripe payouts CSV and reconciles transaction-by-transaction to identify which sponsors paid through Stripe. This is normal — 1099-K reconciliation for a content creator typically requires a transaction-level extract from the processor dashboard, not just the form.
-
-- **CP2000 risk** — AUR sees $176,400 of information returns. Schedule C Line 1 = $183,000 (higher than info returns, because $22,000 of un-1099-NEC'd sponsorships are properly on Schedule C but not on any info return). No CP2000 risk if Jade's reported gross exceeds info returns. The Brand X $15,000 double-count is absorbed because Schedule C exceeds the larger of the two.
-
-Attach reconciliation statement explaining: Brand X $15,000 appears on both Stripe 1099-K and 1099-NEC; reported once on Schedule C. Patreon fees and Stripe fees deducted below the line. Gross figures match platform dashboards available on request.
-
-## 11. Quick reference — what to ask the client during intake
-
-1. List **every** processor account you had open in 2025: Stripe, Square, PayPal, Venmo, Cash App for Business, Shopify, Toast, Clover, etc. Provide year-end Form 1099-K and the platform's annual transaction summary for each.
-2. List **every** marketplace or platform account you sold through in 2025: eBay, Etsy, Amazon, Mercari, Poshmark, Depop, Vinted, Airbnb, VRBO, Uber, Lyft, DoorDash, Patreon, OnlyFans, Substack, Twitch, etc. Provide year-end Form 1099-K (whether or not you exceeded the threshold — many platforms issue at lower state thresholds) and platform tax summary.
-3. Did you receive any **personal** payments via PayPal G&S or Venmo G&S in 2025 (sender mistagged, wedding gift, rent split, dinner split)?
-4. Did you sell any **personal items** through any platform in 2025 (closet cleanout, garage-sale-equivalent listings)?
-5. Did any of your clients/customers also issue you a **Form 1099-NEC** for amounts that you also received via processor (Stripe, PayPal, credit card)?
-6. Do you use crypto exchanges? If yes, list each (Coinbase, Kraken, Gemini, etc.) and provide year-end Form 1099-DA and full transaction history.
-
-## 12. Self-check
-
-Before signing off on a return that includes any 1099-K, verify:
-
-- [ ] Every 1099-K received by the client is accounted for somewhere on the return (Schedule C, Schedule 1 Line 8j, Schedule 1 Lines 8z+24z, or Schedule D).
-- [ ] The sum of "1099-K gross amounts attributable to Schedule C" matches or is less than Schedule C Line 1, with a reconciliation worksheet identifying any difference.
-- [ ] No 1099-K Box 1a amount has been **netted** against fees, refunds, or sales tax in computing Line 1; those items are below the line.
-- [ ] Any 1099-NEC duplicating a 1099-K has been identified and not double-counted.
-- [ ] If a 1099-K relates to personal-item losses, the §5.3 two-line wash is on Schedule 1 with clear descriptions.
-- [ ] If a 1099-K relates to a hobby activity, Schedule 1 Line 8j is used and no Schedule C is filed for that activity.
-- [ ] If a 1099-K relates to a personal item sold at a gain, Form 8949 and Schedule D are filed with substantiated basis.
-- [ ] If the activity is on the §183 borderline, a contemporaneous file note documents the practitioner's analysis under the nine-factor test.
-- [ ] If client received a CP2000 in a prior year on 1099-K matching, a proactive explanation statement is attached to this year's return.
-- [ ] For ride-share/delivery drivers, Schedule C Line 1 includes the gross 1099-K (with platform commission) and Line 10 separately deducts the platform commission.
-- [ ] For Airbnb/VRBO hosts, occupancy-tax treatment is verified against platform-specific tax-collection agreements for the relevant state/city.
-- [ ] If client received Form 1099-DA from a crypto exchange, the reporting is reconciled to actual gain/loss computed from transaction history; 1099-DA gross proceeds are NOT income, only the gain is.
-- [ ] The reviewer has reviewed and signed off on the 1099-K reconciliation worksheet, which is retained in the engagement file for the §6501 statute-of-limitations period (generally 3 years; 6 if more than 25% of gross income is omitted).
-
-## 13. Citations
-
-- **IRC §6050W** — Returns relating to payments made in settlement of payment card and third party network transactions  _(IRC §6050W)_
-- **IRC §6050W(e)** — De minimis exception for third party settlement organizations  _(IRC §6050W(e))_
-- **Treas. Reg. §1.6050W-1** — Information reporting for payments made in settlement of payment card and third party network transactions  _(Treas. Reg. §1.6050W-1)_
-- **Treas. Reg. §1.6050W-1(a)(5)** — Definition of "gross amount" (without regard to fees, refunds, etc.)  _(Treas. Reg. §1.6050W-1(a)(5))_
-- **Treas. Reg. §1.6041-1(a)(1)(iv)** — Payor relieved of 1099-NEC duty for credit-card / TPSO payments  _(Treas. Reg. §1.6041-1(a)(1)(iv))_
-- **IRC §61** — Gross income defined  _(IRC §61)_
-- **IRC §102** — Gifts and inheritances (exclusion)  _(IRC §102)_
-- **IRC §162** — Trade or business expenses  _(IRC §162)_
-- **IRC §165(c)** — Losses limited to business, investment, casualty (no personal-use losses)  _(IRC §165(c))_
-- **IRC §183** — Activities not engaged in for profit  _(IRC §183)_
-- **Treas. Reg. §1.183-2(b)** — Nine factors  _(Treas. Reg. §1.183-2(b))_
-- **IRC §408(m)** — Collectibles defined  _(IRC §408(m))_
-- **IRC §1(h)(4)** — 28% rate cap on collectibles long-term gains  _(IRC §1(h)(4))_
-- **IRC §67(g)** — Suspension of miscellaneous 2% itemized deductions (TCJA; made permanent by OBBBA P.L. 119-21)  _(IRC §67(g))_
-- **IRC §6045** — Returns of brokers (basis for 1099-DA)  _(IRC §6045)_
-- **IRC §6501** — Statute of limitations  _(IRC §6501)_
-- **IRC §6721, §6722** — Failure-to-file / failure-to-furnish penalties (for issuer side)  _(IRC §6721, §6722)_
-- **ARPA, P.L. 117-2 §9674** — Attempted to reduce the TPSO threshold to $600; OBBBA/P.L. 119-21 §70432 repealed the revision and restored §6050W(e) to more than $20,000 and more than 200 transactions.  _([ARPA, P.L. 117-2 §9674; P.L. 119-21 §70432](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
-- **Housing Assistance Tax Act of 2008, P.L. 110-289 §3091** — Enactment of §6050W  _(Housing Assistance Tax Act of 2008, P.L. 110-289 §3091)_
-- **Notice 2023-10** — 2022 transition year for ARPA threshold  _(Notice 2023-10)_
-- **Notice 2023-74** — 2023 transition year, plus 1099-K/1099-NEC duplication acknowledgment  _(Notice 2023-74)_
-- **P.L. 119-21 §70432 restoration** — P.L. 119-21 §70432 restored the federal TPSO threshold to more than $20,000 and more than 200 transactions, superseding the Notice 2024-85 $5,000 / $2,500 / $600 phase-in for current federal threshold purposes.  _([P.L. 119-21 §70432; §6050W(e); Notice 2024-85](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm))_
-- **T.D. 10000 (June 28, 2024)** — Final regulations under §6045 finalizing 1099-DA for custodial digital-asset brokers  _(T.D. 10000 (June 28, 2024))_
-- **Rev. Proc. 2024-28** — Wallet-by-wallet basis tracking safe harbor for digital assets  _(Rev. Proc. 2024-28)_
-- **P.L. 119-3 (April 10, 2025)** — Joint resolution repealing DeFi-broker portion of T.D. 10000  _(P.L. 119-3 (April 10, 2025))_
-- **P.L. 119-21 (OBBBA, July 4, 2025)** — Made TCJA §67(g) suspension of misc. 2% deductions permanent  _(P.L. 119-21 (OBBBA, July 4, 2025))_
-- **South Dakota v. Wayfair, Inc., 138 S. Ct. 2080 (2018)** — Marketplace facilitator economic nexus  _(South Dakota v. Wayfair, Inc., 138 S. Ct. 2080 (2018))_
-- **Welch v. Helvering, 290 U.S. 111 (1933)** — Return of capital vs. deductions  _(Welch v. Helvering, 290 U.S. 111 (1933))_
-- **IRS, "Understanding Your Form 1099-K," IRS.gov FAQ (updated 2024)** — Q-1 through Q-15 — including Q-9 (received in error), Q-13 (two-line wash for personal items at loss), Q-14 (hobby income)  _(IRS, "Understanding Your Form 1099-K," IRS.gov FAQ (updated 2024))_
-- **IRS Schedule 1 (Form 1040) Instructions, 2024 version** — Line 8z and Line 24z guidance  _(IRS Schedule 1 (Form 1040) Instructions, 2024 version)_
-- **Form 1099-K Instructions, 2025 version** — Form 1099-K Instructions, 2025 version  _(Form 1099-K Instructions, 2025 version)_
-- **Form 1099-DA Instructions, 2025 version** — issued draft August 2024, final pending  _(Form 1099-DA Instructions, 2025 version)_
+- A personal item is something owned for personal use (a car, furniture, clothing, jewelry, tickets). Treat each item separately. A gain is taxable. A loss is not deductible, and gains cannot be offset by losses. [What to do with Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k)
+- **Loss items.** Enter the loss items' share of Box 1a in the entry space at the top of Schedule 1. If Forms 8949 and Schedule D are being filed anyway, the loss can instead go on Form 8949: proceeds, basis, code "L" in column (f), and the nondeductible loss as a positive amount in column (g), giving zero. [FAQ Q6](https://www.irs.gov/newsroom/form-1099-k-faqs-what-to-do-if-you-receive-a-form-1099-k)
+- **Gain items.** Report on Form 8949 and Schedule D, not in the Schedule 1 entry space. [Form 1040 instructions (2025)](https://www.irs.gov/instructions/i1040gi)
+- **Basis records.** If the purchase price is not remembered, reconstruct it from card or bank statements or the seller's records. Examiners may accept reconstructed records or oral testimony when records are lost. [FAQ Q7](https://www.irs.gov/newsroom/form-1099-k-faqs-what-to-do-if-you-receive-a-form-1099-k)
+- **Older years.** The Schedule 1 line 8z plus line 24z pair is the 2022-2023 method. From tax years beginning in 2024, use the entry space at the top of Schedule 1. [FAQ Q7, common situations](https://www.irs.gov/newsroom/form-1099-k-faqs-common-situations)
+
+## Hobby or business
+
+- An activity run with the intention of making a profit is a business (Schedule C). An activity not engaged in for profit goes on Schedule 1 line 8j. [Pub. 525](https://www.irs.gov/publications/p525)
+- Weigh all facts and circumstances, and no single factor decides. The regulation lists nine factors, including: how businesslike the activity is; expertise; time and effort; expected appreciation of assets; success in other activities; history of income or losses; occasional profits; the taxpayer's financial status; and personal pleasure. [Treas. Reg. §1.183-2(b)](https://www.law.cornell.edu/cfr/text/26/1.183-2)
+- **Presumption:** if gross income exceeds deductions in 3 or more of 5 consecutive years ending with the current year (2 of 7 for horse breeding, training, showing or racing), the activity is presumed to be for profit unless the IRS shows otherwise. [26 U.S.C. §183(d)](https://www.law.cornell.edu/uscode/text/26/183)
+- **Hobby expenses:** these are miscellaneous itemized deductions. §67(h) allows none for any tax year beginning after 2017, and P.L. 119-21 §70110 made that permanent. Pub. 525 (2025) still says they are deductible up to the hobby income if the taxpayer itemizes. That conflicts with the statute, so do not rely on it. Whether cost of goods sold may reduce hobby gross receipts is a refer point. [26 U.S.C. §67](https://www.law.cornell.edu/uscode/text/26/67)
+
+## Backup withholding
+
+- If the payee has not given a correct TIN, the payer must withhold 24% from reportable payments. [Backup withholding](https://www.irs.gov/businesses/small-businesses-self-employed/backup-withholding)
+- **Card payments:** no threshold, so withholding can apply from the first payment when the TIN is missing. Box 4 reports withholding on payments "required to be aggregately reported in box 1a". [Form 1099-K instructions, Box 4](https://www.irs.gov/instructions/i1099k)
+- **TPSO payments, calendar 2025 onward:** a payment counts as a reportable payment for backup withholding **only if**, at that point in the year, the payee's transactions exceed 200 **and** the amount exceeds the §6050W(e) dollar figure. The exception: if any of the payor's TPSO payments to that payee in the **prior** year were reportable, withholding can apply from the start of the year. [26 U.S.C. §3406(b)(8) and effective-date note](https://www.law.cornell.edu/uscode/text/26/3406)
+- A TPSO that performed backup withholding for a payee must file Form 945 and a Form 1099-K for that payee, even below the threshold. [FAQ Q5](https://www.irs.gov/newsroom/form-1099-k-faqs-general-information)
+- **The client's side:** give the platform a correct SSN, ITIN or EIN. An ITIN is acceptable. Claim any Box 4 amount as federal income tax withheld on the return for the year the income was received. [FAQ Q9-Q10](https://www.irs.gov/newsroom/form-1099-k-faqs-what-to-do-if-you-receive-a-form-1099-k); [Backup withholding](https://www.irs.gov/businesses/small-businesses-self-employed/backup-withholding)
+
+## Digital assets: Form 1099-DA
+
+- Brokers that take possession of the digital assets they sell for customers file Form 1099-DA. The brokers covered are custodial platforms, certain hosted wallets, kiosks and certain processors of digital asset payments. Gross proceeds are reported for transactions on or after 1 January 2025. Basis is reported for certain transactions on or after 1 January 2026. Non-custodial ("decentralized") brokers are outside these regulations. [Digital assets](https://www.irs.gov/filing/digital-assets)
+- **Basis is reported only for covered securities.** A covered security is a digital asset acquired **after 2025** in a custodial account with the broker and held there until the sale. For 2026 sales of noncovered assets (for example, coins bought before 2026 or transferred in), basis is not required, and the client must supply basis from their own records. [Instructions for Form 1099-DA (2026)](https://www.irs.gov/instructions/i1099da)
+- **Relief for brokers:** for 2025 transactions, the IRS will not impose filing or furnishing penalties on brokers who make good-faith efforts. There is also backup-withholding relief for all transactions in 2025 and 2026. [Digital assets](https://www.irs.gov/filing/digital-assets)
+- Proceeds are not income. Compute gain or loss from the transaction history on Form 8949. If a Form 1099-K and a Form 1099-DA appear to report the same digital-asset activity, report each sale once and document why. Refer when the history is incomplete.
+
+## State reporting
+
+States may require Forms 1099-K below the federal threshold. The IRS says so, but a state threshold must be read on that state's own revenue site, not on a secondary list. A state-driven form carries the same federal consequence as any other form: every amount on it must be reconciled on the federal return. [FAQ Q2 and Q5](https://www.irs.gov/newsroom/form-1099-k-faqs-general-information)
+
+## CP2000 response
+
+- A CP2000 means third-party information did not match the return. It proposes changes and is not a bill. Reply **by the date on the notice**: sign the response form, say whether you agree or disagree, and attach support. If you do not reply, the IRS may send another notice and a bill. [Understanding your CP2000](https://www.irs.gov/individuals/understanding-your-cp2000-series-notice)
+- **If you disagree,** send the bridge showing where each Box 1a dollar was reported or why it is excluded. Include copies of the 1099-K and any duplicate 1099-NEC, the platform annual statements, bank or processor statements for fees and refunds, purchase evidence for personal items, and correspondence with the filer about a corrected form.
+- **If the notice is right and there is other income or deductions to report,** file Form 1040-X marked "CP2000" with the response. If other years have the same issue, amend them too. [Understanding your CP2000](https://www.irs.gov/individuals/understanding-your-cp2000-series-notice)
+- **Penalty exposure:** an accuracy-related penalty of 20% of the underpayment can apply for negligence or a substantial understatement. It is not automatic, so address it in the reply where facts support reasonable cause. [26 U.S.C. §6662](https://www.law.cornell.edu/uscode/text/26/6662)
+- Correct reporting with an attached bridge statement reduces mismatch risk. It does not guarantee that no notice is issued.
+
+## Worked cases
+
+**Case A: personal items, loss and gain on one form (IRS example).** A client bought a couch for $1,000 and sold it for $700, and bought a handbag for $800 and sold it for $1,200. The Form 1099-K shows $1,900 in Box 1a. Enter $700 in the entry space at the top of Schedule 1 (the couch loss is not deductible). Report the handbag on Form 8949 and Schedule D: a $400 gain. [Form 1040 instructions (2025), Schedule 1](https://www.irs.gov/instructions/i1040gi)
+
+**Case B: online seller with a duplicate 1099-NEC (hypothetical figures).**
+The facts:
+- A card-processor Form 1099-K shows $48,000. It includes $6,000 that one business customer paid by card, and that customer also issued a Form 1099-NEC for $6,000. Card payments are reported on Form 1099-K only. [Forms 1099-MISC/NEC instructions](https://www.irs.gov/instructions/i1099mec)
+- Box 1a also includes $2,000 of state sales tax imposed on buyers that the client collected and paid over. There were $1,500 of refunds for returned goods and $1,400 of processor fees. [Schedule C instructions](https://www.irs.gov/instructions/i1040sc)
+- The client also had $3,000 of cash sales that no form reported. Those still go on line 1. [Schedule C instructions](https://www.irs.gov/instructions/i1040sc)
+
+The reconciliation:
+
+| Line | Amount |
+|---|---|
+| Information returns: 1099-K plus 1099-NEC ([bridge rule](https://www.irs.gov/instructions/i1040sc)) | $54,000 |
+| Less: duplicate 1099-NEC | $6,000 |
+| Less: sales tax imposed on buyers | $2,000 |
+| Add: cash sales not on any form | $3,000 |
+| Schedule C line 1, gross receipts | $49,000 |
+| Schedule C line 2, returns and allowances | $1,500 |
+| Processor fees, deducted as an expense, not netted | $1,400 |
+
+Attach a short statement giving this bridge. [Schedule C line 1 statement](https://www.irs.gov/instructions/i1040sc)
+
+**Case C: roommate rent through a payment app.** A roommate's share of rent reached the client through a goods-and-services payment, and a Form 1099-K was issued. Ask the filer for a corrected form showing zero. If none arrives in time, file anyway and enter the amount in the entry space at the top of Schedule 1 as an amount included in error. It is not income. [What to do with Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k); [Form 1040 instructions (2025)](https://www.irs.gov/instructions/i1040gi)
+
+**Case D: under the TPSO threshold.** A client sold goods through a marketplace for more than $20,000 but in only 150 transactions. The marketplace has no federal duty to file, because both tests must be exceeded. The receipts are still reportable, and a voluntary or state form may arrive anyway. [26 U.S.C. §6050W(e)](https://www.law.cornell.edu/uscode/text/26/6050W)
+
+## When to refuse or refer
+
+- Refer if the client insists on leaving out receipts because "no form was issued" or because a form was below a threshold. Income is reportable regardless, so do not prepare a return that omits it.
+- Refer if a Form 1099-K is in an individual's name but the income belongs to a partnership, corporation or S corporation. The form needs correcting and the entity return is out of scope.
+- Refer a hobby-versus-business decision with multi-year Schedule C losses against other income, or any question on hobby cost of goods sold.
+- Refer digital-asset histories that cannot be rebuilt, where basis is missing for noncovered assets, or where Forms 1099-K and 1099-DA overlap.
+- Refer a CP2000 that has already moved to a bill, a statutory notice of deficiency, or proposed penalties the client wants to contest. Refer too when the tax at stake is large.
+- Refer where a state threshold or state reporting duty matters and the rule cannot be confirmed on the state's own site.
+
+## Filing and payment steps with deadlines
+
+- **Forms to the payee:** the filer must furnish Form 1099-K by 31 January of the following year: 31 January 2027 for 2026 activity. [26 U.S.C. §6050W(f)](https://www.law.cornell.edu/uscode/text/26/6050W)
+- **Wrong form:** contact the filer shown at the top left of the form, or the payment settlement entity shown at the bottom left. The IRS cannot correct a Form 1099-K. Do not delay filing waiting for a correction. [What to do with Form 1099-K](https://www.irs.gov/businesses/what-to-do-with-form-1099-k)
+- **2026 return:** file Form 1040 with Schedule C, Schedule 1, Form 8949 and Schedule D as needed. The 2026 Form 1040 and Schedule 1 instructions were not yet published when this Guide was written (September 2026). Confirm that the top-of-Schedule-1 entry space is unchanged and confirm the April 2027 due date when they appear. [Form 1040 instructions](https://www.irs.gov/instructions/i1040gi)
+- **Extension:** Form 4868 gives an automatic 6-month extension to file. It does not extend the time to pay, and interest runs on unpaid tax from the original due date. [Form 1040 instructions (2025)](https://www.irs.gov/instructions/i1040gi)
+- **CP2000:** reply by the date printed on the notice, by upload, fax or mail as the notice says. [Understanding your CP2000](https://www.irs.gov/individuals/understanding-your-cp2000-series-notice)
+
+## 2025 returns (still open until 15 October 2026 on extension)
+
+- The 2025 return was due 15 April 2026. With Form 4868 filed by then, the filing deadline is 15 October 2026, but tax was due in April. [Form 1040 instructions (2025)](https://www.irs.gov/instructions/i1040gi)
+- **TPSO threshold for 2025:** more than $20,000 and more than 200 transactions, the same as 2026. [Form 1040 instructions (2025)](https://www.irs.gov/instructions/i1040gi)
+- **Personal-item losses and erroneous amounts:** use the entry space at the top of the 2025 Schedule 1. Several forms may be combined into one amount. [FAQ Q6, common situations](https://www.irs.gov/newsroom/form-1099-k-faqs-common-situations)
+- **Tips:** 2025 Forms 1099-K do not separate tips. For the 2025 qualified-tips deduction (Schedule 1-A), a non-employee may use tip amounts included in a 1099-K total if they are substantiated. Platform earnings statements or daily tip logs qualify. Cash tips that do not appear on any Form 1099 cannot be included. From 2026, Box 1c shows cash tips separately. [Form 1040 instructions (2025), Schedule 1-A](https://www.irs.gov/instructions/i1040gi); [Form 1099-K instructions](https://www.irs.gov/instructions/i1099k)
+- **1099-DA:** 2025 forms report gross proceeds. Basis reporting starts with 2026 transactions in covered assets. [Digital assets](https://www.irs.gov/filing/digital-assets)
+
+## Completion checklist
+
+- [ ] Every Form 1099-K, 1099-NEC, 1099-MISC and 1099-DA received is on the bridge, whatever its amount.
+- [ ] Box 1a has been split into business, rental, hobby, personal gain, personal loss and not-income slices, from records rather than guesses.
+- [ ] Schedule C line 1 is gross. Returns are on line 2. Fees are expenses. Sales tax is treated according to who it is imposed on.
+- [ ] Any 1099-NEC that duplicates a card or app payment is reported once and explained.
+- [ ] Personal losses and errors are in the top-of-Schedule 1 entry space (or on Form 8949 with code "L"). Gains are on Form 8949 and Schedule D.
+- [ ] Hobby income is on Schedule 1 line 8j with no expenses deducted. The for-profit analysis is documented.
+- [ ] Box 4 backup withholding is claimed. The client's TIN has been fixed with the platform.
+- [ ] Digital-asset gain or loss is computed from the transaction history, with basis supplied for noncovered assets.
+- [ ] Requests for corrected forms, platform statements and basis evidence are kept in the file.
+- [ ] Any CP2000 reply is sent before the date on the notice.
 
 <!-- openaccountants-cta-block -->
 

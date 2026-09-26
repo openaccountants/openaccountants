@@ -3,820 +3,255 @@ name: malta-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Malta VAT return (Article 10 periodic return via CFR) or Article 11 annual declaration for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "periodic VAT return", "CFR VAT", "create the return", "Article 11 declaration", or any request involving Malta VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Malta only and only Article 10 (standard) and Article 11 (small enterprise) registrations. Article 12, partial exemption, capital goods scheme adjustments, margin schemes, and VAT groups are all in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Malta VAT work.
 version: 2.0
 jurisdiction: MT
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: Michael Cutajar, CPA (Malta)
-review_status: current
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
+review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Malta VAT Return
+# Malta VAT returns: Article 10, Article 11 and Article 12
 
-## Malta VAT Return Skill (Article 10 periodic / Article 11) v2.0
+## Scope
 
-## Section 1 — Quick reference
+This Guide covers preparing and checking Maltese VAT filings for a business established in Malta: the Article 10 periodic return, the Article 11 small-enterprise declaration and the Article 12 obligations. It covers registration type, rates, input VAT, cross-border reverse charge, recapitulative statements, the One Stop Shop (OSS), penalties, interest and records.
 
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
+Figures are for tax year 2026. The law is the VAT Act, Chapter 406 of the Laws of Malta, as consolidated on 27 March 2026 (amendments up to Act III of 2026 and Legal Notice 75 of 2026), plus its subsidiary legislation. VAT in Malta is charged per transaction and per tax period, so "tax year 2026" means periods falling in calendar 2026. A short section near the end covers 2025 periods still being filed.
 
-**Quick reference fields**
+The authority is the Malta Tax and Customs Administration (MTCA); the Act calls the office-holder the Commissioner for Tax and Customs. Returns, registrations and statements go through MTCA's online services. This Guide does not reproduce the box numbers of the return form. Take them from the live form on the MTCA site, and check MTCA's published filing calendar against the statutory dates below.
 
-| Field | Value |
+Main sources, all on legislation.mt:
+
+- VAT Act, Cap. 406, current consolidated text: https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20
+- VAT Act, Cap. 406, as in force on 13 September 2024 (for the pre-2025 Article 11 rules): https://legislation.mt/getpdf/67691cdeb52f1d38d8a4103f
+- S.L. 406.19, VAT (Rate of Interest) Regulations: https://legislation.mt/getpdf/632835ddda6f862638d03ac1
+- S.L. 406.12, VAT (Adjustments relating to Input Tax on Capital Goods) Regulations: https://legislation.mt/getpdf/60225988bc8272018c0f72fb
+- S.L. 406.14, VAT (Recapitulative Statement of Intra-Community Transactions) Regulations: https://legislation.mt/getpdf/678a0da50dba9f0950780cb6
+
+## Ask the client first
+
+- Which article are you registered under: 10, 11, 11A or 12, or more than one? Send the registration certificate. It states the article, the effective date and the registration number. An MT prefix means Article 10 or 12. An Article 11 number has no MT prefix and is not a VAT identification number.
+- What are the start and end dates of your tax period? Do not assume calendar quarters. The Commissioner sets your first period, and each later period runs three months from the end of the one before.
+- What was your turnover, excluding VAT, in calendar 2025, and so far in 2026? If you are a company, does anyone who owns or controls more than 10% of you also trade? ([Act, Sixth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+- What do you sell, and to whom? Split sales into: Malta sales by rate, exempt sales, exports outside the EU, EU business customers (goods or services), and EU consumers.
+- Do you buy goods or services from suppliers outside Malta, and do their invoices show foreign VAT, Maltese VAT or no VAT?
+- Do you make any exempt-without-credit supplies (residential letting, insurance, financial services, medical care, education)?
+- Did you buy any car, boat or aircraft, or pay for fuel, repairs, entertainment, alcohol or tobacco in the period?
+- Did you buy equipment, tools or office furniture costing €1,160 or more, or any property? ([S.L. 406.12](https://legislation.mt/getpdf/60225988bc8272018c0f72fb))
+- Is there an excess credit from the previous period, and has any of it been refunded or set off?
+- Have you filed every earlier VAT return and income tax return? A refund is withheld while a return is missing.
+
+## The method, step by step
+
+1. Confirm the registration type from the certificate before anything else ([Act, arts 10-13](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). Article 10 files periodic returns and recovers input VAT. Article 11 charges no VAT, recovers none and files a declaration. Article 12 only pays VAT on its EU acquisitions and reverse-charge services. If you prepare the wrong filing, every later step is wrong.
+2. Fix the period from the certificate or the MTCA account (art. 17). Sort every invoice by the date VAT became chargeable, not by bank date.
+3. Split sales into ([Act, Eighth and Fifth Schedules](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)): taxable at 18%, 12%, 7% or 5%; exempt with credit (exports, intra-EU goods to a valid VAT number, food, medicines, international passenger transport); exempt without credit; and outside the scope (for example B2B services supplied to a customer established abroad). Use the rate table below.
+4. For each foreign purchase, decide whether the supplier charged VAT. No VAT and the supplier is not established in Malta: you, as an Article 10 person, owe the Maltese VAT under art. 20(2) and put it in both output and input tax. Foreign VAT charged: that is not Maltese input tax; do not put it on the return.
+5. Remove blocked input VAT (Tenth Schedule item 3), then apportion anything partly private (item 4). If you also make exempt-without-credit supplies, stop and refer (partial exemption).
+6. Flag capital goods ([S.L. 406.12](https://legislation.mt/getpdf/60225988bc8272018c0f72fb)): equipment, tools or office furniture at €1,160 or more, and all immovable property. Record the date of first use, because later changes of use are adjusted over 5 or 20 years.
+7. Net output against input tax, deduct any excess credit brought forward that has not been refunded or set off (art. 21(1)), and read the balance: payable, or an excess credit to carry forward or claim.
+8. File and pay by the due date. Then file the recapitulative statement if you supplied goods or services to EU business customers, and the OSS return if you use OSS.
+9. Keep the VAT account and working papers with the records listed below, for at least six years. For capital goods, the six years start only when the 5-year or 20-year adjustment period ends.
+
+## Registration types ([Act, arts 10-12 and Sixth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+| Type | Who | Key rules |
+| --- | --- | --- |
+| Article 10 (standard) | A taxable person established in Malta who makes supplies in Malta other than exempt-without-credit supplies, or who supplies services in another Member State where the customer pays the VAT | Apply within thirty days of the first such supply. Charges VAT, recovers input VAT, files periodic returns. Apply to cancel within fifteen days of ceasing to qualify. |
+| Article 11 (small enterprise, domestic) | A taxable person established in Malta whose turnover in the preceding calendar year was not more than the domestic threshold of €35,000 | Optional: the person applies. Charges no VAT and recovers none. Loses status on the date turnover passes €35,000 within a calendar year and must apply to cancel within fifteen days. An Article 10 registrant cannot switch in the first whole 12 calendar months, and the Commissioner may accept an earlier switch only if no input tax was claimed. |
+| Article 11A | A small enterprise established in Malta using another Member State's small-enterprise exemption | EU-wide turnover must stay below the Union threshold of €100,000. Quarterly declaration by the last day of the month after the quarter. Number carries the suffix EX. |
+| Article 11B | A small enterprise established in another Member State using Malta's exemption | Needs Malta turnover not above €35,000 and EU turnover below €100,000 in the preceding year. |
+| Article 12 | A person not registered under Article 10 who: buys goods from other Member States above the acquisitions threshold of €10,000 in a calendar year; or receives services on which it must pay Maltese VAT under art. 20(2); or supplies services in another Member State where the customer pays | Register by the date of the acquisition, the service received or the service supplied. Pays the VAT; no input VAT recovery. An Article 11 person who does any of these must also register under Article 12. |
+
+Turnover for Article 11 excludes VAT and disposals of capital assets. For a company, add the proportionate turnover of any person who owns or controls it, directly or indirectly, by more than 10%.
+
+### What changed on 1 January 2025 ([2024 text of the Act](https://legislation.mt/getpdf/67691cdeb52f1d38d8a4103f))
+
+Before 2025, Article 11 used two activity-based thresholds, tested on a rolling twelve months. They no longer apply. Use them only to understand pre-2025 files.
+
+| Category (pre-2025) | Entry threshold | Exit threshold |
+| --- | --- | --- |
+| Economic activities consisting principally in the supply of goods | €35,000 | €28,000 |
+| Other economic activities | €30,000 | €24,000 |
+
+From 2025 there is one domestic threshold of €35,000 for all activities, measured on the preceding calendar year, with a Union threshold of €100,000 for the cross-border schemes. The current text, after Act IX of 2025 and Act III of 2026, still states €35,000.
+
+## Rates for 2026 ([Act, art. 19, Eighth Schedule and Fifth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+| Rate | What it covers (summary of the statutory items) |
 | --- | --- |
-| Country | Malta (Republic of Malta) |
-| Standard rate | 18% |
-| Reduced rates | 7% (accommodation, minor repairs), 5% (food, pharmaceuticals, printed matter, medical devices), 12% (certain financial instruments, confectionery) |
-| Zero rate | 0% (exports, intra-EU B2B supplies, certain foodstuffs, passenger transport by sea/air) |
-| Return form | Article 10 periodic VAT return (via CFR); Article 11 Annual Declaration (4-box simplified form) |
-| Local naming | In Malta this is referred to as your **VAT return** — not by a form number. |
-| Filing portal | https://cfr.gov.mt (VAT Online) |
-| Authority | Commissioner for Revenue (CFR), Malta |
-| Currency | EUR only |
-| Filing frequencies | Quarterly (Article 10, standard); Monthly (Article 12 only); Annual (Article 11 small enterprise) |
-| Deadline | Article 10 e-filing: 21st of month after quarter end; Article 10 paper: 14th; Article 11 annual: 15 March following year |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Validated by | Pending — requires sign-off by a Maltese warranted accountant |
-| Validation date | Pending |
+| 18% | Every taxable supply not listed below, and imports (art. 19(1) and (4)) |
+| 12% | Custody and management of securities; management of credit and credit guarantees by someone other than the person who granted the credit; hire of a pleasure boat for a term that, with earlier hires to the same person in the previous twelve months, does not exceed five weeks; care of the human body by a profession regulated by the Health Care Professions Act, including health studios, other than exempt medical care |
+| 7% | Accommodation in premises that must be licensed under the Malta Travel and Tourism Services Act; use of sporting facilities |
+| 5% | Electricity; listed confectionery and similar goods by CN code; listed medical accessories; printed matter, including books and audio books on physical media or supplied electronically (not publications mainly advertising, video or music); listed items for the exclusive use of disabled persons; imports of works of art, collectors' items and antiques; minor repairs of bicycles, shoes and leather goods, clothing and household linen; domestic care services; admission to museums, art exhibitions, concerts and theatres |
+| Exempt with credit (zero-rated) | Exports; intra-EU goods to a customer with a valid and active VAT number of another Member State; food for human consumption, excluding catering; pharmaceutical goods; international passenger transport; scheduled bus services; listed sea vessel and aircraft supplies |
+| Exempt without credit | Most lettings of immovable property; transfers of immovable property; insurance; most credit, banking and securities dealing; medical care; education; public postal services; supplies by Article 11, 11A and 11B persons |
 
-**Key VAT return boxes (the boxes you will use most)**
+Accommodation priced with other goods or services: 80% of the price is treated as accommodation and 20% as the other supplies. The goods lists at 5% are by CN code, so check the code, not the product name.
 
-| Box | Meaning |
+## Input VAT: recovery and blocked items ([Act, arts 22-24 and Tenth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+Only an Article 10 person recovers input VAT. It is recoverable to the extent the purchase is used for taxable supplies, exempt-with-credit supplies, or supplies made outside Malta that would be taxable here.
+
+Evidence: a tax invoice in your name (or an import document naming you as importer), held and producible. For reverse-charge purchases and intra-EU acquisitions, the VAT must also be declared as due on the same return. Under cash accounting, deduction arises when you pay the supplier.
+
+| Blocked (item 3(1)) | Exception (item 3(2) and (1)(c)) |
 | --- | --- |
-| 1 | Intra-EU B2B supplies of services (net, 0% VAT) |
-| 2 | Exports and supplies outside EU (net, 0% VAT) |
-| 3 | Output base for reverse-charge acquisitions from EU |
-| 4 | Output base for reverse-charge acquisitions from non-EU |
-| 5 | Total output value (derived: 1+2+3+4) |
-| 6 | Output VAT on EU reverse-charge acquisitions |
-| 7 | Output VAT on non-EU reverse-charge acquisitions |
-| 8 | Total output VAT (derived: 6+7) |
-| 9 / 9a | EU goods / EU services acquisitions (net) |
-| 10 | EU capital goods acquisitions (net) |
-| 11 | Non-EU goods/services acquisitions (net) |
-| 12 | Total acquisition values (derived: 9+9a+10+11) |
-| 13 / 13a | Input VAT on EU goods / EU services |
-| 14 | Input VAT on EU capital goods |
-| 15 | Input VAT on non-EU acquisitions |
-| 16 | Total input VAT on acquisitions (derived: 13+13a+14+15) |
-| 17 | Net output VAT on acquisitions (derived: 8−16) |
-| 18 / 18a / 18b | Local sales 18% / 7% / 12% (net) |
-| 19 | Local sales 5% (net) |
-| 20 | Zero-rated sales (net) |
-| 21 | Exempt sales (net) |
-| 22 | Total local sales (derived: 18+18a+18b+19+20+21) |
-| 23 / 23a / 23b | Output VAT on local sales 18% / 7% / 12% |
-| 24 | Output VAT on local sales 5% |
-| 25 | Total output VAT on local sales (derived: 23+23a+23b+24) |
-| 26 | Total output VAT (derived: 17+25) |
-| 27 / 28 | Local purchases for resale 18% / 5% (net) |
-| 29 | Zero-rated local purchases for resale (net) |
-| 30 | Capital goods (net) |
-| 31 / 31a / 31b | Local overhead purchases 18% / 7% / 12% (net) |
-| 32 | Local overhead purchases 5% (net) |
-| 33 | Total local purchase values (derived: 27+28+29+30+31+31a+31b+32) |
-| 34 / 35 | Input VAT on local resale purchases 18% / 5% |
-| 36 | Input VAT on capital goods |
-| 37 / 37a / 37b | Input VAT on local overhead 18% / 7% / 12% |
-| 38 | Input VAT on local overhead 5% |
-| 39 | Total input VAT on local purchases (derived: 34+35+36+37+37a+37b+38) |
-| 40 | Excess credit from prior adjustments |
-| 41 | Other credits / adjustments |
-| 42 | Excess credit carried forward (if 39 > 26) |
-| 43 | VAT payable (if 26 > 39) |
-| 44 | Credit brought forward from prior period |
-| 45 | Net payable after B/F credit (43 − 44) |
+| Tobacco and tobacco products; alcoholic beverages; works of art, collectors' items and antiques | Bought for resale in the normal course of business |
+| Motor vehicles, vessels and aircraft, including hire and leasing, and their repair, maintenance and fuel | Resale; carriage of goods or passengers for a consideration; hire with a driver or self-drive hire (self-drive fuel stays blocked); driving instruction; vehicles designed for goods with seats next to the driver, or with seats for nine or more; listed vessel and aircraft charter and commercial uses |
+| Receptions, entertainment and hospitality | Where you provide them for consideration in the normal course of your business |
+| Transport or entertainment for employees or officers | Transport on vehicles with a seating capacity of not less than seven |
 
-**Conservative defaults — Malta-specific values for the universal categories in vat-workflow-base Section 2**
+Partly private use: only the business proportion is input tax.
 
-| Ambiguity | Default |
+Partial exemption: if input tax relates to both deductible and exempt-without-credit supplies, the credit uses last year's ratio provisionally and this year's ratio definitively, with the difference in the first return of the next year. A non-deductible amount under €20 multiplied by the months in the period is allowed in full. Refer this work (see "When to refuse or refer").
+
+Capital goods ([S.L. 406.12](https://legislation.mt/getpdf/60225988bc8272018c0f72fb)): small equipment, working tools and office furniture below €1,160 are outside the scheme. Deductions on capital goods are adjusted by one-fifth a year over 5 years, and on immovable property by one-twentieth a year over 20 years, when the deductible use changes. The regulation says "price, or open market value" and does not say whether VAT is included. Check with MTCA before relying on a VAT-inclusive test. Keep a list of the capital goods subject to adjustment, showing the input tax deducted and each adjustment. For these goods, the six-year retention period in art. 48(4) starts from the end of the adjustment period (regs 6 and 7).
+
+Credit notes and price reductions ([Act, Tenth Schedule item 11](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)): if the taxable value of a supply or intra-EU acquisition is reduced after it takes place, the output tax on the reduction is deducted in the period in which the cause of the reduction occurs. You do not amend the original period. The condition is that the output tax on the original value was properly accounted for.
+
+Foreign currency ([Act, Seventh Schedule item 8](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)): convert to euro at the latest selling rate applied by commercial banks in Malta at the time the tax becomes chargeable. The latest European Central Bank rate at that time is also accepted. Imports follow the customs valuation rules.
+
+Excess credit ([Act, art. 24](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)): if deductions exceed output tax, the excess is carried forward or refunded. A refund is due not later than 5 months after the later of the return's due date or its filing date. The Commissioner can extend this by up to twelve months to verify it, and withholds it while any VAT or income tax return is missing.
+
+## Cross-border: reverse charge, recapitulative statements and OSS
+
+### Reverse charge ([Act, art. 20 and Third Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+- Services bought by a business: taxed where the customer is established (Third Schedule Part Two item 2(a)). When the supplier is not established in Malta and not registered under Article 10, the Maltese customer pays the VAT (art. 20(2)). For B2B services taxed in Malta under the general rule, this means any taxable person, including an Article 11 person, and any VAT-identified non-taxable legal person (art. 20(2)(b)). For other goods and services it means an Article 10 or Article 12 person, or a VAT-identified non-taxable legal person (art. 20(2)(c)).
+- Article 10 customer: declare the VAT as output tax and deduct it as input tax on the same return, subject to the blocks above. For a fully taxable business the net is nil.
+- Article 12 customer (including an Article 11 person that registered under Article 12): pays the VAT by the 15th of the second month after the invoice date or the month of receipt, whichever is earlier (art. 21(3)), with a notice of payment (art. 30A). No deduction.
+- Goods bought from another Member State by an Article 10 person are an intra-EU acquisition, taxed at the rate for the same goods in Malta. Declare and deduct as above.
+- A foreign supplier that charged its own VAT has not used the reverse charge. That VAT is not Maltese input tax. Any recovery goes through that State's refund procedure.
+
+### Sales to other EU countries
+
+- Services to a business established in another Member State: taxed there. No Maltese VAT; the customer accounts for it. You must be registered under Article 10 or 12 for these supplies.
+- Goods to a business in another Member State: exempt with credit only if the customer's valid and active VAT number of another Member State is on the invoice, the goods leave Malta, and you file a correct recapitulative statement. Article 11 and 11B persons cannot use this exemption.
+
+### Recapitulative statements ([S.L. 406.14](https://legislation.mt/getpdf/678a0da50dba9f0950780cb6))
+
+Article 10 persons file one for intra-EU supplies of goods, triangulation onward supplies, and services to EU customers who pay the VAT (Act, art. 30(2)).
+
+| Filer | Period | Due |
+| --- | --- | --- |
+| Default | Each calendar month | 15th of the following month |
+| Goods: quarterly total, excluding VAT, not over €50,000 in the quarter or in any of the previous four quarters | Each calendar quarter | 15th of the month after the quarter |
+| Goods: quarterly total passes €50,000 during the quarter | Monthly, from the end of the month in which it is passed; a statement is due for each month already elapsed in the quarter | 15th of the month after the last month covered |
+| Services only | Each calendar quarter | 15th of the month after the quarter |
+| Both goods and services | Follow the goods rules | As for goods |
+
+### OSS for sales to EU consumers ([Act, Third Schedule and Fourteenth Schedule Part Seven](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+- Intra-EU distance sales of goods, together with telecommunications, broadcasting and electronically supplied services to consumers in other Member States, stay taxed in Malta while their total, excluding VAT, does not exceed €10,000 in the current calendar year and did not in the previous one. This applies only to a supplier established in one Member State. Above that total, from the moment it is passed, they are taxed in the customer's State. You may also opt in below the threshold; the option lasts at least two calendar years.
+- The Union OSS scheme lets you declare that foreign VAT on one quarterly return filed through MTCA, due by the end of the month after the quarter, even if nothing was sold. OSS records must be kept for ten years from 31 December of the year of the transaction.
+
+## Boundary and exception table ([Act, Fifth, Eighth and Tenth Schedules](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+| Situation | Treatment |
 | --- | --- |
-| Unknown rate on a sale | 18% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Malta |
-| Unknown B2B vs B2C status for EU customer | B2C, charge 18% |
-| Unknown business-use proportion (vehicle, phone, home office) | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU (Box 11/15) |
-| Unknown blocked-input status (entertainment, personal use) | Blocked |
-| Unknown whether transaction is in scope | In scope |
+| 2025 turnover €35,000 exactly | Qualifies for Article 11: the test is "not more than" the threshold |
+| Article 11 person passes €35,000 during 2026 | Stops qualifying on that date; apply to cancel within fifteen days. After the person applies, cancellation takes effect from the first day of the next calendar month (art. 11(7)), and the Article 10 registration, if liable, runs from that same date (art. 10(6)(c), (7a)). If the Commissioner cancels instead (art. 11(8)), both take effect from the date the person stopped qualifying |
+| Company with a shareholder who owns more than 10% and trades | Add that person's proportionate turnover before testing €35,000 |
+| Food sold in a shop | Exempt with credit |
+| Food served in the course of catering | Not in the food exemption; 18% unless another item applies |
+| Confectionery or similar goods | 5% only for the CN codes listed in item 3 of the Eighth Schedule; otherwise 18% |
+| Holiday let in premises licensed under the Malta Travel and Tourism Services Act | 7% |
+| Residential letting in premises that need no such licence | Exempt without credit, including lets of thirty days or less |
+| Other letting of immovable property for thirty days or less by a taxable person in business | Taxable (18%). This does not apply to: licensed accommodation (7%), designated parking, letting of installed equipment and machinery or safes, and a company's letting to an Article 10 person (each taxed under its own rule); nor to space for artistic and cultural activities, unlicensed residential lets, garages and stores, or rooms lawfully designated for poker (these stay exempt) |
+| Letting by a limited liability company to an Article 10 person for its business | Taxable (18%) |
+| Van designed for goods with seats next to the driver | Not blocked; fuel and repairs deductible |
+| Company car used only for business | Blocked, including lease, fuel and repairs |
+| Restaurant bill for a client meeting | Blocked |
+| Restaurant's own food purchases for meals it sells | Not blocked (provided for consideration in the normal course of business) |
+| Laptop at €1,160 or more | Capital good: input VAT recoverable now, adjustable over 5 years if use changes |
+| Office furniture below €1,160 | Outside the capital goods scheme |
+| Error of no more than 5% of the output tax (or input tax) declared | May be corrected in the VAT account and in the return for the period in which the error is discovered. That period must start no later than six months after the end of the period with the error |
+| Larger error | Correct with the prescribed form (art. 28(1)); 10% penalty if done before a provisional assessment, otherwise 20% |
+| Excess credit | Carry forward, or refund within 5 months of the later of due date and filing date |
 
-**Red flag thresholds — country slot values for the reviewer brief in vat-workflow-base Section 3**
+## Worked cases
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | €3,000 |
-| HIGH tax-delta on a single conservative default | €200 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | €5,000 |
+Hypothetical figures, for tax year 2026 periods.
 
-## Section 2 — Required inputs and refusal catalogue
+**Case 1: deadline for a March quarter.** An Article 10 person's tax period is January to March 2026. The period ends in March; the second month after March is May, so the return and payment are due by 15 May 2026 ([art. 27(1) and art. 21(1)](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). If the return is filed electronically by 22 May 2026, no late-filing penalty is due (art. 42(1)(d)), and no interest is due if the payment is made with it (art. 21(4A)).
 
-### Required inputs
+**Case 2: a simple Article 10 return.** Malta sales of €10,000 at 18% give output tax of €1,800 ([Act, art. 19](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). Purchases for the business of €2,000 at 18% give input tax of €360. A car lease invoice in the same period is blocked, so its VAT is left out. Payable: €1,800 minus €360 = €1,440.
 
-**Minimum viable** — bank statement for the quarter in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Maltese or international business bank: BOV, HSBC Malta, APS, Lombard Bank, Banif, Revolut Business, Wise Business, N26 Business, or any other.
+**Case 3: an Article 11 consultant buys software from an Irish company.** The consultant is registered under Article 11. On 10 March 2026 an Irish supplier invoices €1,000 for a software subscription, with no VAT. The consultant receives a service on which it must pay the VAT under art. 20(2), so it must also register under Article 12 (art. 11(10), art. 12(3)) ([Act](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). VAT due: €1,000 at 18% = €180, payable by 15 May 2026 (the 15th of the second month after March). It cannot deduct the €180, and it still charges no VAT on its own sales.
 
-**Recommended** — sales invoices for the period (especially for intra-EU B2B services and zero-rated supplies), purchase invoices for any input VAT claim above €200, the client's VAT number in writing (MT + 8 digits).
+**Case 4: a late return.** An Article 10 return for January to March 2026 shows net tax of €5,000. It was due on 15 May 2026 but filed and paid on 20 July 2026: three months or part months late, so the seven-day relief does not apply ([art. 38(1) and art. 21(4)](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). Penalty per month: the higher of 1% of €5,000 (€50) and €20, so €50. Three months: €150. On the Act's wording the proviso caps this at €250, so €150 stands. Interest ([S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1)): 0.6% of €5,000 = €30 a month, three months = €90.
 
-**Ideal** — complete invoice register, Article 10/11 registration certificate, prior period VAT returns, reconciliation of Box 44 credit brought forward.
+**Case 5: leaving Article 11.** A shop registered under Article 11 had 2025 turnover of €31,000, so it qualified at the start of 2026 ([Act, Sixth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)). Its 2026 turnover passes €35,000 on 10 September 2026. It stops qualifying on that date and must apply to cancel by 25 September 2026 (fifteen days, art. 11(5)(b)). If it applies, the cancellation takes effect on 1 October 2026 (art. 11(7)). Because it makes taxable supplies, it is registered under Article 10 from that same date (art. 10(6)(c), (7a)), and charges VAT on sales from then. If the Commissioner cancels under art. 11(8) instead, both dates are 10 September 2026. Missing the cancellation deadline costs the higher of 10% of the first period's net tax and €100 for each month or part month, capped at €500 (art. 40).
 
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement is available at all → hard stop. If bank statement only without invoices → proceed but record in the reviewer brief: "This VAT return was produced from bank statement alone. The reviewer must verify, before approval, that input VAT claims above €200 are supported by compliant tax invoices and that all reverse-charge classifications match the supplier's invoice."
+## When to refuse or refer
 
-### Malta-specific refusal catalogue
+- Partial exemption: the business makes both deductible supplies and exempt-without-credit supplies (for example lettings, insurance, finance, medical or education) and the non-deductible share is more than €20 multiplied by the months in the period. The annual ratio needs a year-end calculation ([Act, Tenth Schedule items 6 and 9](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)).
+- Capital goods adjustments: a change of use, sale or cessation within the 5-year or 20-year period.
+- Margin schemes for second-hand goods, works of art, collectors' items and antiques, and travel agents.
+- Several persons registered as a single taxable person (VAT group).
+- A supplier not established in Malta, with or without a representative.
+- Preparing an OSS or import-scheme return, or Article 11A and 11B cases.
+- Immovable property transfers or developments, investment gold, new means of transport, excise goods, call-off stock.
+- An assessment, provisional assessment, investigation or appeal to the Administrative Review Tribunal (thirty days from service to appeal).
+- Anything the client cannot evidence with invoices.
+- A request about Maltese income tax: this Guide covers VAT only.
 
-These refusals apply on top of the EU-wide refusals in `eu-vat-directive` Section 13 (R-EU-1 through R-EU-12). If any trigger fires, stop, output the refusal message verbatim, end the conversation. Refusal is a safety mechanism.
+## Filing and payment
 
-- **R-MT-1 — Article 11 client attempting to claim input VAT** — *Trigger:* client is Article 11 registered, or turnover is below €35,000 and client has not opted into Article 10. *Message:* "Article 11 clients are exempt from charging VAT and cannot recover input VAT. They file a simplified annual declaration only, not the Article 10 periodic VAT return. This skill can help you with the Article 11 annual declaration but cannot prepare an Article 10 periodic VAT return or calculate input VAT recovery for an Article 11 client."
-- **R-MT-2 — Article 12 registration (distance selling / EU goods acquisition threshold)** — *Trigger:* client is Article 12 registered (goods acquirer from EU exceeding €10,000/year threshold, monthly filer). *Message:* "Article 12 registrations have different filing frequencies and obligations. This skill covers Article 10 and Article 11 only. Please escalate to a warranted accountant familiar with Article 12 obligations."  _([Article 12](https://legislation.mt/eli/cap/406/eng))_
-- **R-MT-3 — Partial exemption (Article 22(4))** — *Trigger:* client makes both taxable supplies and exempt-without-credit supplies (financial services, residential rent, medical, education) and the exempt proportion is not de minimis. *Message:* "You make both taxable and exempt supplies. Your input VAT must be apportioned under Article 22(4), which requires a year-end pro-rata calculation that cannot be completed on a single-period basis without the annual ratio. Please use a warranted accountant to determine and confirm the pro-rata rate before input VAT is claimed."  _([Article 22(4)](https://legislation.mt/eli/cap/406/eng))_
-- **R-MT-4 — Capital goods scheme adjustment (Article 24)** — *Trigger:* the period contains an adjustment to previously deducted input VAT on a capital good under Article 24 (5-year adjustment period for goods, 10-year for immovable property). *Message:* "Capital goods scheme adjustments under Article 24 are too fact-sensitive for this skill. They require tracking the original deduction, current and intended use, and computing the annual fraction. Please use a warranted accountant."  _([Article 24](https://legislation.mt/eli/cap/406/eng))_
-- **R-MT-5 — Margin scheme** — *Trigger:* client deals in second-hand goods, art, antiques, or collectables under the margin scheme. *Message:* "Margin scheme transactions require transaction-level margin computation. Out of scope for this skill."
-- **R-MT-6 — VAT group (Article 5(2))** — *Trigger:* client is part of a VAT group or asks about group registration. *Message:* "VAT groups under Article 5(2) require consolidation across the group. Out of scope."  _([Article 5(2)](https://legislation.mt/eli/cap/406/eng))_
-- **R-MT-7 — Fiscal representative** — *Trigger:* non-resident supplier or client with a fiscal representative in Malta. *Message:* "Non-resident registrations with fiscal representatives have specific obligations beyond this skill. Please use a warranted accountant."
-- **R-MT-8 — Annual return (TA24 income tax) instead of Malta VAT** — *Trigger:* user asks about annual income tax return, not the VAT return. *Message:* "This skill only handles Malta VAT returns (Article 10 periodic and Article 11). For Malta income tax (TA24), use the malta-income-tax skill."
+### Due dates and penalties ([Act, arts 21, 27, 30, 37-42 and Sixth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
 
-## Section 3 — Supplier pattern library (the lookup table)
-
-This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment from the table directly. Do not second-guess. Do not consult Tier 1 rules — the table is authoritative for patterns it covers.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Maltese banks (fees exempt — exclude)
-
-**Maltese banks**
-
-| Pattern | Treatment | Notes |
+| Filing | Due | Late or wrong |
 | --- | --- | --- |
-| BOV, BANK OF VALLETTA | EXCLUDE for bank charges/fees | §4 Nr 8 equivalent: financial service, exempt |
-| HSBC MALTA | EXCLUDE for bank charges/fees | Same |
-| APS BANK, LOMBARD BANK, BANIF | EXCLUDE for bank charges/fees | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE for transaction/maintenance fees | Check for separate taxable subscription invoices |
-| INTERESSI, INTEREST, MGĦAX | EXCLUDE | Interest income/expense, out of scope |
-| LOAN, SELF-EMPLOYED LOAN, PERSONAL LOAN | EXCLUDE | Loan principal movement, out of scope |
-
-### 3.2 Maltese government, regulators, and statutory bodies (exclude entirely)
-
-**Maltese government, regulators, and statutory bodies**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CFR, COMMISSIONER FOR REVENUE, INLAND REVENUE | EXCLUDE | Tax payment, not a supply |
-| VAT DEPARTMENT | EXCLUDE | VAT payment |
-| CUSTOMS, DIPARTIMENT TAD-DWANA | EXCLUDE | Customs duty (but see EC8 for import VAT C88) |
-| MFSA, LOTTERIES AND GAMING, MGA | EXCLUDE | Licence fees, sovereign acts |
-| MALTA ENTERPRISE, MCAST, UNIVERSITY OF MALTA | EXCLUDE | Government grants/fees, sovereign acts |
-| PBS, TVM, NET TV | EXCLUDE | Broadcasting levy, not a VATable supply |
-| ARMS (water/electricity bills from enemy.com.mt) | Domestic 18% | ARMS Ltd is taxable; electricity at 18% |
-| ENEMALTA | Domestic 18% | Standard rated utility |
-
-### 3.3 Maltese utilities
-
-**Maltese utilities**
-
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| ARMS LTD, ARMS LIMITED, ENEMY | Domestic 18% | 31/37 | Electricity, water, gas — overhead |
-| ENEMALTA | Domestic 18% | 31/37 | Same |
-| MELITA, GO PLC, EPIC | Domestic 18% | 31/37 | Telecoms/broadband — overhead |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MIDDLESEA, MSV, LAFERLA, GasanMamo | EXCLUDE | §4 Nr 10 equivalent, exempt |
-| MAPFRE, AXA MALTA, GLOBALCAP | EXCLUDE | Same |
-| INSURANCE, ASSIGURAZZJONI, INSURANCE PREMIUM | EXCLUDE | All exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics**
-
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| MALTA POST, MALTAPOST | EXCLUDE for standard postage stamps |  | Universal service, exempt |
-| MALTA POST | Domestic 18% for parcel services, tracked, courier | 31/37 | Non-universal services are taxable |
-| DHL EXPRESS MALTA, TNT MALTA, FedEx Malta | Domestic 18% | 31/37 | Express courier, taxable |
-| DHL INTERNATIONAL | EU reverse charge (IE entity) | 9a/13a | Check invoice — European billing entity |
-
-### 3.6 Transport (Malta domestic)
-
-**Transport (Malta domestic)**
-
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| TALLINJA, MALTA PUBLIC TRANSPORT | EXCLUDE or 0% |  | Public bus — zero rated passenger transport |
-| BOLT MALTA, UBER MALTA | Domestic 18% (platform fee reverse charge EU) | 31/37 or 9a/13a | Underlying ride 18%; platform fee via IE — check |
-| TRANSFER, TAXI | Domestic 18% | 31/37 | Local taxi |
-| AIR MALTA, RYANAIR, WIZZ AIR (international) | EXCLUDE / 0% |  | International flights zero rated |
-
-### 3.7 Food retail (blocked unless hospitality business)
-
-**Food retail**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| LIDL MALTA, PAVI, ARKADIA, PARK TOWERS, SCOTTS | Default BLOCK input VAT | Personal provisioning. Deductible only if hospitality/catering business. |
-| SUPERMARKET, ĦANUT | Default BLOCK | Same |
-| RESTAURANTS, CAFES, BARS (any named restaurant) | Default BLOCK | Entertainment blocked under 10th Schedule Item 3(1)(b) — see EC4 |
-
-### 3.8 SaaS — EU suppliers (reverse charge, Box 9a / 13a)
-
-**SaaS — EU suppliers**
-
-| Pattern | Billing entity | Box | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 9a/13a | Reverse charge services |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 9a/13a | Reverse charge |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 9a/13a | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 9a/13a | Reverse charge |
-| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 9a/13a | Reverse charge |
-| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 9a/13a | EU, reverse charge |
-| DROPBOX | Dropbox International Unlimited (IE) | 9a/13a | Reverse charge |
-| SLACK | Slack Technologies Ireland Ltd (IE) | 9a/13a | Reverse charge |
-| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 9a/13a | EU, reverse charge |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 9a/13a | Reverse charge |
-| STRIPE (subscription fees) | Stripe Technology Europe Ltd (IE) | 9a/13a | Transaction fees may be exempt — see 3.11 |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge, Box 11 / 15)
-
-**SaaS — non-EU suppliers**
-
-| Pattern | Billing entity | Box | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — BUT check | 9a/13a | LU entity → EU reverse charge. Unlike Germany, no domestic branch exception in Malta |
-| NOTION | Notion Labs Inc (US) | 11/15 | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 11/15 | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 11/15 | Non-EU reverse charge |
-| GITHUB (standard plans) | GitHub Inc (US) | 11/15 | Check if billed by IE entity |
-| FIGMA | Figma Inc (US) | 11/15 | Non-EU reverse charge |
-| CANVA | Canva Pty Ltd (AU) | 11/15 | Non-EU reverse charge |
-| HUBSPOT | HubSpot Inc (US) or HubSpot Ireland Ltd (IE) — check invoice | 11/15 or 9a/13a | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 11/15 | Non-EU reverse charge |
-
-### 3.10 SaaS — the exception (NOT reverse charge)
-
-**SaaS — the exception**
-
-| Pattern | Treatment | Why |
-| --- | --- | --- |
-| AWS EMEA SARL | EU reverse charge Box 9a/13a (Luxembourg entity) | Malta has no AWS domestic branch equivalent to the German exception. Standard EU reverse charge applies. If invoice shows MT VAT charged, treat as local 18%. |
-
-### 3.11 Payment processors
-
-**Payment processors**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees are exempt financial services |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| STRIPE (monthly subscription) | EU reverse charge Box 9a/13a | Stripe IE entity — separate line item from transaction fees |
-| SUMUP, SQUARE, ZETTLE | Check invoice | If Maltese entity: domestic 18%; if IE/EU entity: reverse charge |
-
-### 3.12 Professional services (Malta)
-
-**Professional services (Malta)**
-
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| Notary names (NUTAR, DR [name] NOTARY) | Domestic 18% | 31/37 | Deductible if business purpose |
-| Accountant / auditor names (CPA, ACCA, AUDIT) | Domestic 18% | 31/37 | Always deductible |
-| Solicitor / advocate (ADV, AVV, LAWYER) | Domestic 18% | 31/37 | Deductible if business legal matter |
-| Malta Business Registry, MBR | EXCLUDE | Government fee, not a supply |  |
-| MFSA fees | EXCLUDE | Regulatory fee, not a supply |  |
-
-### 3.13 Payroll and social security (exclude entirely)
-
-**Payroll and social security**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ĊESOP, SSC, SOCIAL SECURITY | EXCLUDE | Statutory SSC payment |
-| FSS, INCOME TAX, PAYER TAX | EXCLUDE | PAYE/FSS tax remittance |
-| SALARY, PAGA, WAGES (outgoing) | EXCLUDE | Wages — outside VAT scope |
-| NI, NATIONAL INSURANCE | EXCLUDE | If referencing UK obligations |
-
-### 3.14 Property and rent
-
-**Property and rent**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KIRJA, RENT (commercial, invoiced with VAT) | Domestic 18% | Commercial lease where landlord opted to charge VAT |
-| KIRJA, RENT (residential, no VAT) | EXCLUDE | Residential lease exempt without credit |
-| GROUND RENT, ĊENS | EXCLUDE | Ground rent, sovereign/feudal in nature, out of scope |
-| MALTA FREEPORT, MALTA ENTERPRISE PARK | Domestic 18% | Industrial/commercial let, usually taxable |
-
-### 3.15 Internal transfers and exclusions
-
-**Internal transfers and exclusions**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| OWN TRANSFER, INTERNAL, ACCOUNT TRANSFER | EXCLUDE | Internal movement |
-| DIVIDEND, DIVIDENT | EXCLUDE | Dividend payment, out of scope |
-| LOAN REPAYMENT, REPAYMENT | EXCLUDE | Loan principal, out of scope |
-| CASH WITHDRAWAL, ATM | TIER 2 — ask | Default exclude; ask what cash was spent on |
-| DIRECTOR FEE (received) | EXCLUDE | Director fees are outside VAT scope in Malta — see EC10 |
-
-## Section 4 — Worked examples
-
-These are six fully worked classifications drawn from a hypothetical bank statement of a Malta-based self-employed IT consultant. They illustrate the trickiest cases. Pattern-match against these when you encounter similar lines in any real statement.
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
-
-**Reasoning:**
-Notion Labs Inc is a US entity (Section 3.9). No VAT on the invoice. This is a service received from a non-EU supplier. Article 10 client applies reverse charge under the equivalent of Article 19/20 of the Malta VAT Act. Both sides of the reverse charge must be reported: output VAT in Box 4/7, input VAT in Box 11/15. Net effect zero for a fully taxable client.
-
-**Output**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box (input) | Box (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 2.64 | 18% | 11 / 15 | 4 / 7 | N | — | — |
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
-
-**Reasoning:**
-Google Ireland Limited is an IE entity — standard EU reverse charge. Google Ads is a service (not physical goods). Box 9a for the net, Box 13a for input VAT, Box 3 for output base, Box 6 for output VAT. The gross amount is treated as the net (Google invoices net of VAT to VAT-registered EU clients). Both sides must appear on the return.
-
-**Output**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box (input) | Box (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 153.00 | 18% | 9a / 13a | 3 / 6 | N | — | — |
-
-### Example 3 — Entertainment, fully blocked
-
-**Input line:**
-`15.04.2026 ; SCIORTINO'S RESTAURANT VALLETTA ; DEBIT ; Business dinner ; -220.00 ; EUR`
-
-**Reasoning:**
-Restaurant transaction. Entertainment is fully blocked under the Malta VAT Act 10th Schedule Item 3(1)(b). Unlike Germany (where Bewirtung can be recovered with the right documentation), Malta has a hard block on entertainment — no exceptions for business purpose, no partial recovery, no receipt exception. The input VAT is irrecoverable regardless of whether the dinner was a genuine client meeting. Default: full block. No input VAT entry.
-
-**Output**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | SCIORTINO'S RESTAURANT | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Entertainment: blocked" |
-
-### Example 4 — Capital goods threshold
-
-**Input line:**
-`18.04.2026 ; DELL TECHNOLOGIES MALTA ; DEBIT ; Invoice DEL2026-0041 Laptop XPS 15 ; -1,595.00 ; EUR`
-
-**Reasoning:**
-The gross amount is €1,595. The Article 24 capital goods threshold is €1,160 gross. €1,595 ≥ €1,160, so this is a capital goods purchase. It goes to Box 30 (net) and Box 36 (input VAT), not Box 31/37. If the gross had been €980, it would go to Box 31/37 as an overhead. The gross test applies — do not net out the VAT first before testing against the threshold.
-
-**Output**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | DELL TECHNOLOGIES MALTA | -1,595.00 | -1,351.69 | -243.31 | 18% | 30 / 36 | N | — | — |
-
-### Example 5 — EU B2B service sale (inbound receipt)
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice MT-2026-018 IT consultancy March ; +3,500.00 ; EUR`
-
-**Reasoning:**
-Incoming €3,500 from a German company (DE IBAN). The client is providing IT consulting services. B2B place of supply for services is the customer's country (Germany) under the general rule. The client invoices at 0%, the German customer accounts for reverse charge in Germany. Report net amount in Box 1 (EU B2B services). No output VAT. Confirm: (a) customer is a VAT-registered business — ask for the German USt-IdNr; (b) the invoice shows no Maltese VAT with a note that the customer accounts for VAT. If the customer cannot provide a valid USt-IdNr, reclassify as B2C and charge Maltese 18%.
-
-**Output**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | 1 | Y | Q2 (HIGH) | "Verify German USt-IdNr" |
-
-### Example 6 — Motor vehicle, hard block
-
-**Input line:**
-`28.04.2026 ; AUTOSALES MALTA LTD ; DEBIT ; Invoice AUT-1189 Hyundai Tucson lease payment ; -650.00 ; EUR`
-
-**Reasoning:**
-Car lease payment. Input VAT on motor vehicles (and therefore leased vehicles) is hard-blocked under the Malta VAT Act 10th Schedule Item 3(1)(a)(iv-v). This block applies regardless of whether the vehicle is used exclusively for business. The only exceptions are: taxi services, driving instruction, car rental as the primary business activity, or hearse services. An IT consultant does not fall within any exception. Default: full block, no input VAT recovery. If client later claims this is a qualifying business vehicle, [T2] flag for reviewer — do not unblock without warranted accountant sign-off.
-
-**Output**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | AUTOSALES MALTA LTD | -650.00 | -650.00 | 0 | — | — | Y | Q3 | "Motor vehicle: blocked" |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-Each rule states the legal source and the box mapping. Apply silently if the data is unambiguous. For full doctrinal context, see the source citations in Section 10.
-
-### 5.1 Standard rate 18% (VAT Act Cap. 406, 5th Schedule Part 1)
-
-- **Standard rate** — 18% — Default rate for any taxable supply unless a reduced rate, zero rate, or exemption applies. Sales → Box 18 / Box 23. Purchases → Box 31 / Box 37. %  _([VAT Act Cap. 406, 5th Schedule Part 1](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.2 Reduced rate 7% (5th Schedule Part 2)
-
-- **Reduced rate** — 7% — Applies to: short-term accommodation (hotels, guesthouses under 3 months), minor repairs to bicycles, shoes, leather goods, clothing, domestic appliances. Sales → Box 18a / Box 23a. Purchases → Box 31a / Box 37a. %  _([5th Schedule Part 2](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.3 Reduced rate 12% (5th Schedule Part 3)
-
-- **Reduced rate** — 12% — Applies to: certain financial instruments and related services, confectionery in specific circumstances. Sales → Box 18b / Box 23b. Purchases → Box 31b / Box 37b. %  _([5th Schedule Part 3](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.4 Reduced rate 5% (5th Schedule Part 4)
-
-- **Reduced rate** — 5% — Applies to: food (with exceptions for confectionery, ice cream, alcohol), non-prescription medicines and pharmaceutical products, medical devices for disabled persons, printed books and newspapers, children's car seats, certain seeds and plants. Sales → Box 19 / Box 24. Purchases → Box 28 / Box 35 (resale) or Box 32 / Box 38 (overhead). %  _([5th Schedule Part 4](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.5 Zero rate and exempt with credit
-
-- **Zero rate and exempt with credit** — Exports outside EU → Box 2 (zero-rated, requires export evidence). Intra-EU B2B supplies of goods → Box 2 (zero-rated, requires customer VAT number verified on VIES, transport proof, compliant invoice). Intra-EU B2B services → Box 1 (place of supply is customer's country, no Maltese VAT, requires customer VAT number). International passenger transport (sea/air) → Box 20.
-
-### 5.6 Exempt without credit
-
-- **Exempt without credit** — Residential rent, certain medical services, insurance, financial services, postal universal service, education. These supplies are excluded from the VAT return — no output VAT, no input VAT deduction on related costs. If these are significant, partial exemption rules apply — **R-MT-3 refuses** if non-de-minimis.
-
-### 5.7 Local standard purchases
-
-- **Local standard purchases** — Input VAT on a compliant tax invoice from a Malta supplier is deductible for purchases used in taxable business activity. Subject to blocked-input rules (5.12) and the capital goods threshold (5.9). Map overhead to Box 31/37. Map resale goods to Box 27/34.
-
-### 5.8 Reverse charge — EU services received (VAT Act Art. 19 equivalent)
-
-- **Reverse charge — EU services received** — When the client receives a service from an EU supplier and the supplier invoices at 0% with a reverse-charge note: net → Box 9a, input VAT → Box 13a, output base → Box 3, output VAT → Box 6. Net cash effect zero for a fully taxable Article 10 client. If the EU supplier charged their local VAT (e.g. Irish 23%), that is NOT reverse charge — treat as an overhead expense with irrecoverable foreign VAT.  _([VAT Act Art. 19 equivalent](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.9 Reverse charge — EU goods received
-
-- **Reverse charge — EU goods received** — Physical goods from an EU supplier: net → Box 9, input VAT → Box 13, output base → Box 3, output VAT → Box 6.
-
-### 5.10 Reverse charge — non-EU services and goods received
-
-- **Reverse charge — non-EU services and goods received** — For all services and goods received from outside the EU where no VAT was charged: net → Box 11, input VAT → Box 15, output base → Box 4, output VAT → Box 7. Net cash effect zero for a fully taxable client.
-
-### 5.11 Capital goods (Article 24)
-
-- **Capital goods** — If gross invoice amount ≥ €1,160: Box 30 (net) / Box 36 (input VAT). If gross < €1,160: Box 31/37 (overhead). The gross test applies — test the invoice total before subtracting VAT. Capital goods are subject to a 5-year (or 10-year for immovable property) adjustment period. Note for §15a-equivalent tracking: if client later disposes of or changes use of the asset, an adjustment may be required — document the original classification.  _([Article 24](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.12 Blocked input VAT (10th Schedule)
-
-- **Blocked input VAT** — The following categories have zero VAT recovery with no exceptions unless specifically noted: - Entertainment of any kind (Item 3(1)(b)) — hard block, no Bewirtungsbeleg equivalent in Malta - Motor vehicles: purchase, lease, or fuel for cars not used exclusively for taxi/driving school/car rental/hearse (Item 3(1)(a)(iv-v)) - Tobacco products (Item 3(1)(a)(i)) - Alcohol (Item 3(1)(a)(ii)) — note: deductible for hospitality businesses where alcohol is stock in trade - Art, antiques, and collectables (Item 3(1)(a)(iii)) - Pleasure craft (Item 3(1)(a)(iv)) - Personal use items (Item 3(1)(c)) Blocked categories override partial exemption. Check blocked status before applying any recovery.  _([10th Schedule](https://legislation.mt/eli/cap/406/eng))_
-
-### 5.13 Article 11 annual declaration (4-box simplified form)
-
-- **Article 11 annual declaration** — Article 11 clients do not file the Article 10 periodic VAT return. They file a 4-box annual declaration: - Box 1: Sales of goods - Box 2: Provision of services - Box 3: Purchases of stock for resale - Box 4: Purchases of capital assets General overhead expenses do not appear on the declaration. No input VAT recovery. No reverse-charge boxes. This skill processes Article 11 declarations in simplified mode — Steps 5.7 through 5.12 do not apply.
-
-### 5.14 Sales — local domestic (any rate)
-
-- **Sales — local domestic (any rate)** — Charge 18%, 7%, 12%, or 5% as applicable. No B2B/B2C distinction for domestic Malta supplies. Map to Box 18/18a/18b/19 as appropriate.
-
-### 5.15 Sales — cross-border B2C
-
-- **Sales — cross-border B2C** — Goods to EU consumers above €10,000 EU-wide threshold → **R-EU-5 (OSS refusal) from eu-vat-directive fires**. Digital services to EU consumers above €10,000 → same. Below threshold → Maltese VAT at applicable rate, Box 18.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-For each ambiguity type: pattern, why the bank statement is insufficient, conservative default, question for the structured form.
-
-### 6.1 Fuel and vehicle costs
-
-*Pattern:* Agip, Enemed, Shell Malta, BP Malta, fuel receipts. *Why insufficient:* vehicle type and business-use proportion unknown. If vehicle is a car → blocked regardless of use. If van, truck, motorbike for business delivery → deductible. *Default:* 0% recovery. *Question:* "Is this a car (blocked) or a commercial vehicle used exclusively for business?"
-
-### 6.2 Restaurants and entertainment
-
-*Pattern:* any named restaurant, café, bar, catering. *Why insufficient:* entertainment is hard blocked under 10th Schedule. Business meals do not have a recoverable exception in Malta. *Default:* block. *Question:* "Was this a client entertainment meal or a staff meal? (Note: both are blocked — this is for income tax records only.)"
-
-### 6.3 Ambiguous SaaS billing entities
-
-*Pattern:* Google, Microsoft, Adobe, Meta, Slack, Zoom, LinkedIn, Apple, Amazon, Dropbox, Atlassian, Stripe, PayPal where the legal entity is not visible. *Why insufficient:* same brand can bill from Ireland (EU reverse charge Box 9a/13a), US (non-EU reverse charge Box 11/15), or Malta (domestic 18%). *Default:* non-EU reverse charge Box 11/15 (most conservative — if the supplier is EU and the client provided their VAT number, the invoice will show 0% anyway). *Question:* "Could you check the most recent invoice from each? I need the legal entity name and whether it shows a reverse-charge note or Maltese VAT."
-
-### 6.4 Round-number incoming transfers from owner-named counterparties
-
-*Pattern:* large round credit from a name matching the client's name. *Why insufficient:* could be a customer sale, owner injection, or family loan. *Default:* exclude as owner injection. *Question:* "The €X transfer from [name] — is this a customer payment, your own money going in, or a loan?"
-
-### 6.5 Incoming transfers from individual names (not owner)
-
-*Pattern:* incoming from private-looking counterparties. *Why insufficient:* could be B2C sale, B2B sale paid from personal account, refund. *Default:* domestic B2C sale at 18%, Box 18/23. *Question:* "For each: was it a sale? Business or consumer customer? Country?"
-
-### 6.6 Incoming transfers from foreign counterparties
-
-*Pattern:* foreign IBAN or foreign currency. *Why insufficient:* could be B2B (zero-rated with VAT number), B2C (potentially OSS), goods, services, refund. *Default:* domestic 18%. *Question:* "What was this — B2B with a VAT number, B2C, goods or services, and which country?"
-
-### 6.7 Large one-off purchases (potential capital goods)
-
-*Pattern:* single invoice €800–€1,160 range (near threshold), or labelled "laptop", "equipment", "machinery". *Why insufficient:* gross amount determines classification, and €1,160 gross is the threshold. *Default:* if gross ≥ €1,160 → Box 30/36; if gross < €1,160 → Box 31/37. *Question:* "Could you confirm the total invoice amount including VAT?" (Needed to apply the gross test correctly.)
-
-### 6.8 Mixed-use phone, internet, home office
-
-*Pattern:* Melita, GO, EPIC personal lines; home electricity. *Why insufficient:* business proportion unknown. *Default:* 0% if mixed without declared %, 100% if confirmed pure business. *Question:* "Is this a dedicated business line or mixed-use? What business percentage would you estimate?"
-
-### 6.9 Outgoing transfers to individuals
-
-*Pattern:* outgoing to private-looking names. *Why insufficient:* could be contractor with invoice, wages, refund, drawings. *Default:* exclude as drawings. *Question:* "Was this a contractor you paid with an invoice, wages, a refund to a customer, or a personal transfer?"
-
-### 6.10 Cash withdrawals
-
-*Pattern:* ATM, cash withdrawal, BOV cash. *Why insufficient:* unknown what cash was spent on. *Default:* exclude as owner drawing. *Question:* "What was the cash used for?"
-
-### 6.11 Rent payments
-
-*Pattern:* monthly "kirja", "rent", "lease" to a landlord-sounding counterparty. *Why insufficient:* commercial vs residential, whether landlord opted to charge VAT. *Default:* no VAT, no deduction (residential default). *Question:* "Is this a commercial property? Does the landlord charge VAT on the rent?"
-
-### 6.12 Foreign hotel and accommodation (non-Malta)
-
-*Pattern:* hotel or accommodation charged abroad. *Why insufficient:* place of supply is the location of the property — non-Malta VAT paid at source, not recoverable. *Default:* exclude from input VAT. *Question:* "Was this a business trip?" (For income tax records, the expense may still be deductible.)
-
-### 6.13 Airbnb income
-
-*Pattern:* Airbnb payouts, short-term rental income. *Why insufficient:* duration determines VAT treatment; below-threshold Article 11 status affects whether output VAT is due. *Default:* [T2] flag for reviewer — confirm rental duration and Article registration. *Question:* "Is this rental for under 3 months (short-term, 7% output VAT if Article 10) or over 3 months (long-term, exempt)? Confirm with reviewer."
-
-### 6.14 Director fee payments (outgoing)
-
-*Pattern:* monthly payment to a director name, described as "director fee" or "management fee". *Why insufficient:* payments to a director as a director are outside VAT scope; but if the director also provides separate consultancy services with an invoice, that is a VATable supply. *Default:* exclude as out-of-scope. *Question:* "Is this a director fee (out of scope) or a consultancy invoice from the director for separately agreed professional services?"
-
-### 6.15 Platform sales (Amazon, eBay, Etsy)
-
-*Pattern:* incoming from Amazon Payments EU, Etsy Payments, PayPal, Stripe. *Why insufficient:* aggregated settlement may include multi-country buyer mix. *Default:* if client sells to EU consumers across multiple countries above €10,000, R-EU-5 OSS refusal fires. For Malta-only or below-threshold: treat gross as Box 18/23 base at 18%; platform fees as separate reverse charge Box 9a/13a (IE entity). *Question:* "Do you sell to buyers outside Malta? Total EU cross-border sales for the year?"
-
-## Section 7 — Excel working paper template (Malta-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This section provides the Malta-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A–L per the base. Column H ("Box code") accepts only valid Malta VAT return box codes from Section 1 of this skill. Use blank for excluded transactions. For reverse-charge transactions, enter both the input box (e.g. 9a) and the output box (e.g. 3) separated by a slash in column H.
-
-### Sheet "Box Summary"
-
-One row per box. Column A is the box number, column B is the description, column C is the value computed via formula. Mandatory rows in this exact order:
-
-```
-Output (acquisitions):
-| 3  | Output base EU reverse charge | =SUMIFS(Transactions!E:E, Transactions!H:H, "3") |
-| 4  | Output base non-EU reverse charge | =SUMIFS(Transactions!E:E, Transactions!H:H, "4") |
-| 6  | Output VAT EU reverse charge | =Box_Summary!C[3_row]*0.18 |
-| 7  | Output VAT non-EU reverse charge | =Box_Summary!C[4_row]*0.18 |
-| 8  | Total output VAT on acquisitions | =Box_Summary!C[6_row]+Box_Summary!C[7_row] |
-
-Acquisitions (input):
-| 9  | EU goods acquisitions net | =SUMIFS(Transactions!E:E, Transactions!H:H, "9") |
-| 9a | EU services acquisitions net | =SUMIFS(Transactions!E:E, Transactions!H:H, "9a") |
-| 10 | EU capital goods acquisitions net | =SUMIFS(Transactions!E:E, Transactions!H:H, "10") |
-| 11 | Non-EU acquisitions net | =SUMIFS(Transactions!E:E, Transactions!H:H, "11") |
-| 13 | Input VAT EU goods | =Box_Summary!C[9_row]*0.18 |
-| 13a| Input VAT EU services | =Box_Summary!C[9a_row]*0.18 |
-| 14 | Input VAT EU capital goods | =Box_Summary!C[10_row]*0.18 |
-| 15 | Input VAT non-EU | =Box_Summary!C[11_row]*0.18 |
-| 16 | Total input VAT acquisitions | =SUM(C[13_row]:C[15_row]) |
-| 17 | Net output VAT acquisitions | =C[8_row]-C[16_row] |
-
-Local sales:
-| 18 | Local sales 18% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "18") |
-| 18a| Local sales 7% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "18a") |
-| 18b| Local sales 12% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "18b") |
-| 19 | Local sales 5% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "19") |
-| 23 | Output VAT 18% | =C[18_row]*0.18 |
-| 23a| Output VAT 7% | =C[18a_row]*0.07 |
-| 23b| Output VAT 12% | =C[18b_row]*0.12 |
-| 24 | Output VAT 5% | =C[19_row]*0.05 |
-| 25 | Total local output VAT | =SUM(C[23_row]:C[24_row]) |
-| 26 | Grand total output VAT | =C[17_row]+C[25_row] |
-
-Local purchases:
-| 27 | Resale 18% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "27") |
-| 28 | Resale 5% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "28") |
-| 30 | Capital goods net | =SUMIFS(Transactions!E:E, Transactions!H:H, "30") |
-| 31 | Overhead 18% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "31") |
-| 31a| Overhead 7% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "31a") |
-| 31b| Overhead 12% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "31b") |
-| 32 | Overhead 5% net | =SUMIFS(Transactions!E:E, Transactions!H:H, "32") |
-| 34 | Input VAT resale 18% | =C[27_row]*0.18 |
-| 35 | Input VAT resale 5% | =C[28_row]*0.05 |
-| 36 | Input VAT capital goods | =C[30_row]*0.18 |
-| 37 | Input VAT overhead 18% | =C[31_row]*0.18 |
-| 37a| Input VAT overhead 7% | =C[31a_row]*0.07 |
-| 37b| Input VAT overhead 12% | =C[31b_row]*0.12 |
-| 38 | Input VAT overhead 5% | =C[32_row]*0.05 |
-| 39 | Total local input VAT | =SUM(C[34_row]:C[38_row]) |
-```
-
-### Sheet "Return Form"
-
-Final VAT return-ready figures. The bottom-line cell is Box 43 (payable) or Box 42 (excess credit):
-
-```
-Box 26 = Grand total output VAT
-Box 39 = Total local input VAT
-
-IF Box 39 > Box 26:
-  Box 42 = (Box 39 - Box 26) + (Box 41 - Box 40)   [excess credit]
-  Box 43 = 0
-ELSE:
-  Box 42 = 0
-  Box 43 = (Box 26 - Box 39) + (Box 40 - Box 41)   [tax payable]
-
-Box 45 = Box 43 - Box 44   [net after B/F credit]
-```
-
-Positive Box 45 → payable to CFR. Negative → request refund or carry forward as Box 44 in next period.
-
-### Color and formatting conventions
-
-Per the xlsx skill: blue for hardcoded values from the bank statement (column D of Transactions), black for formulas (everything in Box Summary and Return Form), green for cross-sheet references (Return Form referencing Box Summary), yellow background for any row in Sheet "Transactions" where Default? = "Y".
-
-### Mandatory recalc step
-
-After building the workbook, run:
-
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/malta-vat-<period>-working-paper.xlsx
-```
-
-Check the JSON output. If `status` is `errors_found`, fix the formulas and re-run. If `status` is `success`, present via `present_files`.
-
-### Machine-readable worksheet (JSON) — emit alongside the Excel
-
-In **addition** to the Excel working paper (never instead of it), emit the return as a single fenced ```` ```json ```` block so a reviewer's tooling — and the automated checks — can re-foot the figures without parsing prose. Emit exactly one worksheet object per period, using the values already computed in the "Return Form" sheet above.
-
-Shape (omit boxes that are zero/not applicable, but always include 26, 39, and either 43 or 42, plus 44 and 45). Give each **aggregated** box a `sources` breakdown listing the transactions that compose it, and emit the **derived subtotal** boxes so the worksheet is a complete return, not just the bottom line:
-
-```json
-{
-  "jurisdiction": "MT",
-  "tax_type": "vat",
-  "regime": "article_10_periodic",
-  "period": { "start": "2025-01-01", "end": "2025-03-31", "frequency": "quarterly" },
-  "currency": "EUR",
-  "lines": [
-    { "net_box": "18", "vat_box": "23", "net": 10000.00, "rate": 0.18, "vat": 1800.00 },
-    { "net_box": "31", "vat_box": "37", "net": 2000.00,  "rate": 0.18, "vat": 360.00 }
-  ],
-  "boxes": [
-    { "box": "18", "label": "Local sales 18% (net)",             "amount": 10000.00 },
-    { "box": "23", "label": "Output VAT on local sales 18%",     "amount": 1800.00 },
-    { "box": "26", "label": "Total output VAT",                  "amount": 1800.00 },
-    { "box": "31", "label": "Local overhead purchases 18% (net)","amount": 2000.00,
-      "sources": [
-        { "label": "Office rent (commercial, VAT)", "amount": 1500.00 },
-        { "label": "Enemalta electricity",          "amount": 500.00 }
-      ] },
-    { "box": "37", "label": "Input VAT on local overhead 18%",   "amount": 360.00 },
-    { "box": "39", "label": "Total input VAT on local purchases","amount": 360.00 },
-    { "box": "43", "label": "VAT payable",                       "amount": 1440.00 },
-    { "box": "44", "label": "Credit brought forward",            "amount": 0.00 },
-    { "box": "45", "label": "Net payable after B/F credit",      "amount": 1440.00 }
-  ],
-  "result": { "type": "payable", "amount": 1440.00 }
-}
-```
-
-Rules (these mirror the Return Form logic above):
-
-- `result` MUST be exactly `{ "type": …, "amount": <number> }` — `type` is **exactly one** of `"payable"` or `"credit"` (never both), and `amount` is a plain number equal to Box 45 (payable) or Box 42 (credit). Do **not** rename `amount` or add extra keys to `result`.
-- If Box 26 > Box 39: `result.type = "payable"`, Box 43 = Box 26 − Box 39, Box 42 = 0.
-- If Box 39 > Box 26: `result.type = "credit"`, Box 42 = Box 39 − Box 26, Box 43 = 0.
-- Always: **Box 45 = Box 43 − Box 44**.
-- For every `lines[]` entry: `vat = round(net × rate, 2)`, and `vat` must equal the named `vat_box` amount.
-- **Aggregated boxes carry `sources`** — each `{ label, amount }` — listing the transactions that compose the box; `sum(sources) = box amount`. This makes the return auditable (a reviewer sees Box 31 = rent 1,500 + electricity 500 without re-reading prose).
-- **Emit the derived subtotal boxes** when their components exist: 5 (3+4), 8 (6+7), 12 (9+9a+10+11), 16 (13+13a+14+15), 17 (8−16), 22 (local sales), 25 (local output VAT), 26 (17+25), 33 (local purchases), 39 (local input VAT).
-- Numbers are plain JSON numbers — no `€`, no thousands separators.
-- The worksheet is a working paper, not a filed return. The prose must still carry the disclaimer and the provenance footer; the JSON does not replace them.
-- **When you hand off for review, pass this worksheet object as the `worksheet` argument to `request_accountant_review`** (in addition to the prose `working_paper`) — OpenAccountants turns it into the reviewer's spreadsheet (a downloadable .xlsx) and foot-checks it. Don't hand off a computed return without it.
-
-## Section 8 — Malta bank statement reading guide
-
-Follow the universal exclusion rules in `vat-workflow-base` Step 6, plus these Malta-specific patterns.
-
-**CSV format conventions.** BOV and HSBC Malta exports typically use comma delimiters with DD/MM/YYYY dates. Revolut Business exports use ISO dates. Common columns: Date, Description, Debit, Credit, Balance. Wise exports include currency columns. Always confirm which account currency applies before converting.
-
-**Maltese language variants.** Some descriptions appear in Maltese: kirja (rent), paga/salarju (salary), interessi (interest), ħanut (shop), flus kontanti (cash), ittrasferit (transferred). Treat as the English equivalent.
-
-**Internal transfers and exclusions.** Own-account transfers between the client's BOV, HSBC, Revolut accounts. Labelled "own transfer", "transfer to savings", "internal". Always exclude.
-
-**Director draws.** A self-employed sole trader cannot pay themselves wages — any transfer to their personal account is a drawing. Exclude. A single-director company paying a director fee: exclude from VAT (out of scope) but flag for income tax records.
-
-**Refunds and reversals.** Identify by "refund", "reversal", "chargeback", "storno". Book as a negative in the same box as the original transaction. Correction is in the period the refund is booked, not by amending the original period.
-
-**Airbnb and short-term rental income.** Airbnb Malta payouts appear as "AIRBNB PAYMENTS", "AIRBNB *, AIRBNB IRELAND" from an IE IBAN. These are an aggregated settlement of rental income. The rental income itself is a Maltese 7% output VAT supply (if Article 10, short-term under 3 months). The Airbnb platform service fee is an EU reverse charge (Box 9a/13a). Both must be separated. [T2] flag: confirm duration and Article registration.
-
-**Foreign currency transactions.** Convert to EUR at the transaction date rate. Use the ECB reference rate for non-USD/GBP currencies, or the rate shown on the bank statement. Note the rate used in the Transactions sheet column L (Notes).
-
-**IBAN country prefix.** MT = Malta. IE, LU, NL, FR, DE = EU (relevant for EU reverse charge). US, GB, AU, CH = non-EU. A Maltese IBAN from the counterparty does not automatically mean a Maltese VAT registration — always cross-check the supplier name against Section 3.
-
-**Cryptic descriptions.** Card purchases with only a merchant terminal code; SEPA direct debits with only a mandate reference. If the counterparty cannot be identified from the description, ask the client. Do not classify unidentified transactions.
-
-## Section 9 — Onboarding fallback (only when inference fails)
-
-The workflow in `vat-workflow-base` Section 1 mandates inferring the client profile from the data first (Step 3) and only confirming with the client in Step 4. The questionnaire below is a fallback — ask only the questions the data could not answer.
-
-For each question, the inference rule comes first. Only ask if inference fails.
-
-### 9.1 Entity type and trading name
-
-*Inference rule:* sole trader names often match the account holder name; company names end in "Ltd", "Limited", "Co. Ltd". *Fallback question:* "Are you a self-employed sole trader, a limited company, or a partnership?"
-
-### 9.2 VAT registration type
-
-*Inference rule:* if the client is asking for a periodic VAT return (Article 10), they are Article 10. If they mention no VAT on sales and annual filing, they are Article 11. *Fallback question:* "Are you Article 10 (standard VAT, charging 18%) or Article 11 (small enterprise exemption, turnover below €35,000)?"
-
-### 9.3 VAT number
-
-*Inference rule:* MT-format VAT numbers sometimes appear in payment descriptions from EU customers. Search statement descriptions first. *Fallback question:* "What is your Maltese VAT number? (MT + 8 digits)"
-
-### 9.4 Filing period
-
-*Inference rule:* first and last transaction dates on the bank statement. Article 10 is quarterly. *Fallback question:* "Which quarter does this cover? Q1 (Jan–Mar), Q2 (Apr–Jun), Q3 (Jul–Sep), or Q4 (Oct–Dec)?"
-
-### 9.5 Industry and sector
-
-*Inference rule:* counterparty mix, sales description patterns, invoice descriptions. IT, consultancy, hospitality, retail, construction are recognisable. *Fallback question:* "In one sentence, what does the business do?"
-
-### 9.6 Employees
-
-*Inference rule:* SSC, FS3, PAYE outgoing transfers to non-owner names. *Fallback question:* "Do you have employees? If so, how many?"
-
-### 9.7 Exempt supplies
-
-*Inference rule:* presence of medical/financial/educational/residential rental income. *Fallback question:* "Do you make any VAT-exempt sales (medical, education, insurance, financial services, residential lettings)?" *If yes and non-de-minimis → R-MT-3 refuses.*
-
-### 9.8 Rental income
-
-*Inference rule:* Airbnb payouts, "kirja" credits, property management names. *Conditional fallback — only if rental income is suspected:* "Is this short-term rental (under 3 months) or long-term? Is the property used for Airbnb?"
-
-### 9.9 Credit brought forward
-
-*Inference rule:* not inferable from a single period statement. Always ask. *Question:* "Do you have any excess credit from the previous quarter carried forward? (Box 44)"
-
-### 9.10 Cross-border customers
-
-*Inference rule:* foreign IBANs on incoming, foreign currency, foreign-name customers. *Fallback question:* "Do you have customers outside Malta? In EU countries or outside the EU? Are they businesses (B2B with VAT numbers) or consumers?"
-
-## Section 10 — Reference material
-
-### Validation status
-
-This skill is v2.0, rewritten in April 2026 to align with the three-tier OpenAccountants architecture (vat-workflow-base + eu-vat-directive + country skill). It supersedes v1.0 (March 2026, standalone monolithic skill). The Malta-specific content (box mappings, rates, thresholds, blocked categories) is drawn from the VAT Act Chapter 406 and CFR guidance. Independent sign-off by a Maltese warranted accountant is pending and is a prerequisite to any reliance.
-
-### Sources
-
-**Primary legislation:**
-1. VAT Act, Chapter 406, Laws of Malta — https://legislation.mt — Articles 2, 5, 10, 11, 12, 19, 20, 21, 22, 24, 10th Schedule, 5th Schedule
-2. Value Added Tax (Amendment) Acts (subsequent amendments incorporated in consolidated text)
-
-**CFR guidance:**
-3. CFR VAT return forms and completion notes — https://cfr.gov.mt
-4. CFR Article 11 Annual Declaration form — https://cfr.gov.mt
-5. CFR guidance on reverse charge (intra-EU and non-EU services)
-6. CFR VAT registration thresholds notice (Article 10/11/12 boundaries)
-
-**EU directive (loaded via companion skill):**
-7. Council Directive 2006/112/EC (Principal VAT Directive) — implemented via eu-vat-directive companion skill
-8. Council Implementing Regulation 282/2011
-
-**Other:**
-9. VIES validation — https://ec.europa.eu/taxation_customs/vies/
-10. ECB euro reference rates — https://www.ecb.europa.eu/stats/eurofxref/
-
-### Known gaps
-
-1. The supplier pattern library in Section 3 covers the most common Maltese and international counterparties but does not cover every local SME or regional brand. Add patterns as they emerge.
-2. The worked examples are drawn from a hypothetical IT consultant in Malta. They do not cover hospitality, retail, e-commerce, or construction specifically. A v2.1 should add sector-specific worked examples.
-3. The reduced rate table (7%, 12%, 5%) covers the most common items but the 5th Schedule is detailed — edge cases (e.g. specific food items near the confectionery boundary) should be flagged [T2] for reviewer.
-4. The capital goods threshold (€1,160 gross) is the statutory amount as of March 2026. Verify this has not been amended by Ministerial notice before each tax year.
-5. The Article 11 threshold (€35,000) is as of the current year. Verify annually.
-6. Red flag thresholds (€3,000 single transaction, €200 tax-delta, €5,000 absolute position) are conservative starting values for Malta's typical self-employed client profile — not empirically calibrated.
-7. Airbnb and short-term rental classification (EC5 in v1.0) is Tier 2 in all cases due to duration uncertainty. A future version should add an inference rule based on payment frequency patterns.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to align with three-tier OpenAccountants architecture. Quick reference moved to top (Section 1). Supplier pattern library restructured as literal lookup tables (Section 3). Six worked examples added (Section 4). Tier 1 rules compressed (Section 5). Tier 2 catalogue restructured to compressed format (Section 6). Excel working paper specification added (Section 7). Bank statement reading guide added (Section 8). Onboarding moved to fallback role with inference rules (Section 9). Reference material moved to bottom (Section 10). Companion skill references updated to vat-workflow-base v0.1 and eu-vat-directive v0.1.
-- **v1.0 (March 2026):** Initial skill. Standalone monolithic document covering Malta VAT Act Chapter 406, box mappings, reverse charge mechanics, blocked categories, edge case registry, and test suite.
-
-### Self-check (v2.0 of this document)
-
-1. Quick reference at top with box table and conservative defaults: yes (Section 1).
-2. Supplier library as literal lookup tables: yes (Section 3, 15 sub-tables).
-3. Worked examples drawn from non-test data (hypothetical IT consultant): yes (Section 4, 6 examples).
-4. Tier 1 rules compressed: yes (Section 5, 15 rules).
-5. Tier 2 catalogue compressed with inference rules: yes (Section 6, 15 items).
-6. Excel template specification with mandatory recalc: yes (Section 7).
-7. Onboarding as fallback only, inference rules first: yes (Section 9, 10 items).
-8. All 8 Malta-specific refusals present: yes (Section 2, R-MT-1 through R-MT-8).
-9. Reference material at bottom: yes (Section 10).
-10. Entertainment hard-block (no Bewirtung exception) explicit: yes (Section 5.12 + Example 3).
-11. Motor vehicle hard-block explicit: yes (Section 5.12 + Example 6).
-12. Capital goods gross threshold test explicit: yes (Section 5.11 + Example 4).
-13. EU B2B service sale (Box 1) and USt-IdNr verification explicit: yes (Example 5).
-14. Non-EU SaaS reverse charge (Box 11/15) explicit: yes (Example 1 + Section 3.9).
-15. Article 11 simplified mode explicit: yes (Section 5.13).
-
-## End of Malta VAT Return Skill v2.0
-
-This skill is incomplete without BOTH companion files loaded alongside it: `vat-workflow-base` v0.1 or later (Tier 1, workflow architecture) AND `eu-vat-directive` v0.1 or later (Tier 2, EU directive content). Do not attempt to produce a complete Malta VAT return without all three files loaded.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+| Article 10 return and payment | 15th of the second month after the month the period ends; filed electronically, no late-filing penalty up to seven days after, and no interest if paid with it | Late return: the higher of 1% of the net tax declared (before any credit brought forward) and €20, for each month or part month. Where the tax payable is less than €250, the penalty does not exceed that tax or €50, whichever is greater; on the Act's wording it does not exceed €250 in all other cases. The Act does not make clear whether "for every month" multiplies only the €20 limb or the 1% limb too; below the €250 cap the difference rarely matters |
+| Incorrect Article 10 return | Correct by later return or form | 20% of the understated tax or overstated deductions; 10% if corrected under art. 28(1) before a provisional assessment; €150 flat for a person supplying only exempt-with-credit items, unless a higher penalty applies; 10% of the tax due if settled during an investigation and paid within one month of the agreement |
+| Last return after Article 10 cancellation | Within thirty days of the cancellation notice | As above |
+| Article 11 declaration | Calendar-year declaration by 15 February of the next year (15th of the second month after the period ends); a shorter period may be chosen. Filed electronically within seven days after the due date, no late penalty is due (art. 42(1)(d)) | €10 a month or part month, maximum €120 per declaration |
+| Article 11A declaration | Last day of the month after each quarter | As for Article 11 |
+| Article 12 VAT and notice of payment | 15th of the second month after the invoice date or month of receipt, whichever is earlier | 20% of understated or assessed tax; late notice €10 a month, maximum €120 |
+| Recapitulative statement | See the table in the cross-border section | €50 a month or part month, maximum €600 per statement |
+| Registration under Article 10 | Within thirty days of the first supply | The higher of 1% of the first period's net tax and €20 a month; capped at €250 if that net tax is €2,000 or less, otherwise at 20% of it |
+| Registration under Article 12 | By the date of the acquisition or service | The higher of 1% of the VAT on those transactions and €20 a month; the same €250 or 20% caps around €2,000 |
+| Notices of change (art. 13) | Within fifteen days of the change | €20 a month, maximum €250 per notice |
+| Article 11 cancellation | Within fifteen days of ceasing to qualify | The higher of 10% of the first period's net tax and €100 a month, maximum €500 |
+
+No administrative penalty is due where there is a reasonable excuse. Lack of funds, or relying on someone else, is not a reasonable excuse. The Commissioner may remit part of a penalty or, for a genuine mistake, all of it (art. 42).
+
+### Interest ([S.L. 406.19](https://legislation.mt/getpdf/632835ddda6f862638d03ac1))
+
+Unpaid VAT carries interest of 0.6% for each month or part month from the due date (Act, art. 21(4)). Balances that became payable before 1 September 2022 stay at 0.33%. The same rate is paid to the taxpayer on refunds paid late (art. 24(3)).
+
+### Records ([Act, art. 48 and Eleventh Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20))
+
+- Keep full records of every transaction for at least six years from the end of the year they relate to. For a late return or a correction, the six years run from the date of filing or of the correction request. For capital goods, they run from the end of the 5-year or 20-year adjustment period, and the list of capital goods is part of the records ([S.L. 406.12, regs 6-7](https://legislation.mt/getpdf/60225988bc8272018c0f72fb)).
+- An Article 10 person keeps: proper accounts; a VAT account for each period that ties to every figure on the return; an annual VAT account; copies of invoices issued; all invoices received; customs documents; fiscal receipts issued; credit and debit notes; registers for goods sent to other Member States, goods received for work, and call-off stock.
+- Store invoices in the form they were sent or received, paper or electronic. If stored electronically, MTCA must be able to access and download them online.
+- An Article 11 or 11A person keeps: proper accounts, fiscal receipts issued, fiscal receipts and tax invoices received, credit and debit notes, and other documents given to customers.
+- A person not registered under Article 10 keeps records of its intra-EU acquisitions and reverse-charge purchases.
+- If records requested by written notice are not produced within thirty days without reasonable excuse, they cannot be relied on later in an assessment or appeal.
+
+## Returns being filed now for 2025
+
+The version of the Act in force from 1 January 2025 ([Act as at 1 January 2025](https://legislation.mt/getpdf/6811d40a495e132a18426aea)) already had the €35,000 domestic threshold, the €100,000 Union threshold, the 12-month bar on switching from Article 10, and the Article 11 declaration date (15th of the second month after the period ends). So the calendar-2025 Article 11 declaration was due by 15 February 2026. Late 2025 returns carry the penalties and the 0.6% interest shown above. Use the pre-2025 thresholds only for periods up to 31 December 2024; they were tested on a rolling twelve months, not a calendar year.
+
+## Completion checklist
+
+- Registration article, number and tax period confirmed from the certificate.
+- Every sale placed in one of ([Act, Eighth Schedule](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)): 18%, 12%, 7%, 5%, exempt with credit, exempt without credit, outside the scope.
+- Rates checked against the Eighth Schedule item (CN code for goods).
+- Customer VAT numbers valid and on the invoice for every intra-EU supply of goods and B2B service.
+- Reverse-charge purchases in both output and input tax (Article 10), or paid under Article 12.
+- Blocked input VAT removed; private use apportioned; partial exemption referred if present.
+- Capital goods of €1,160 or more, and all property, listed with the date of first use ([S.L. 406.12](https://legislation.mt/getpdf/60225988bc8272018c0f72fb)).
+- Excess credit brought forward matches the last return and any refund or set-off.
+- Errors from earlier periods: 5% rule applied, or the art. 28(1) form prepared ([Act, Eleventh Schedule item 4](https://legislation.mt/getpdf/6a7d667d73ff6d305c833d20)).
+- Box numbers taken from the live MTCA return form.
+- Return filed and paid by the 15th of the second month after the period (or within the seven-day electronic window).
+- Recapitulative statement and OSS return filed where required.
+- Credit notes and price reductions deducted in the period they occur; foreign-currency amounts converted at the Maltese bank selling rate or the ECB rate when the tax became chargeable.
+- VAT account and supporting documents kept for at least six years (capital goods: six years from the end of the adjustment period, plus the capital goods list).
 
 <!-- openaccountants-cta-block -->
 

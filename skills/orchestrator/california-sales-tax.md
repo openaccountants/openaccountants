@@ -2,453 +2,300 @@
 name: california-sales-tax
 description: Use this skill whenever asked about California sales and use tax, CDTFA filings, California district taxes, California exemptions, California nexus, or any request involving California state sales and use tax compliance. Trigger on phrases like "California sales tax", "CA sales tax", "CDTFA", "CDTFA-401", "district tax", "California use tax", "California resale certificate", or any request involving California sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any California sales tax work.
 jurisdiction: US-CA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# California Sales Tax
+# California sales and use tax: 2026 rates, permits, nexus and filing
 
-## Section 1 -- Quick reference
+Figures are for tax year 2026, as they stand on 25 September 2026. They come from the California Department of Tax and Fee Administration (CDTFA) at cdtfa.ca.gov, the Revenue and Taxation Code (R&TC) on leginfo.legislature.ca.gov, and the Franchise Tax Board (FTB) at ftb.ca.gov. The statewide base rate has been the same since 1 January 2017, so the core rules are the same for 2025 and 2026. A short section at the end covers 2025 periods and 2025 income tax returns.
 
-**Quick reference**  _(https://cdtfa.ca.gov/industry/local-and-district-retailer-taxes/district-tax.htm)_
+## Scope and who this is for
 
-| Field | Value |
+- Businesses selling goods in California or shipping to California customers: permits, rates, filing.
+- Out-of-state and marketplace sellers testing California's economic nexus rule.
+- Businesses and individuals who owe use tax, and sellers handling resale certificates (CDTFA-230).
+- Out of scope: vehicles, vessels and aircraft; cannabis, fuel, tobacco and other special taxes and fees; construction contracts; leasing; local taxes that are not sales and use taxes.
+
+## Ask the client first
+
+- Does the business have anything in California: an office, agents who sell, deliver or install, a warehouse, fulfillment-center inventory, leased equipment or a server?
+- If it is outside California: what were its sales of goods for delivery into California in 2025 and so far in 2026, adding related companies and marketplace sales? The test is more than $500,000 ([CDTFA Wayfair guide](https://www.cdtfa.ca.gov/industry/wayfair.htm)).
+- Does it sell through a registered marketplace, directly, or both?
+- Which permit or registration does it hold, and which filing frequency has CDTFA assigned?
+- What does it sell: goods, food, drinks, supplements, software on media or by download, custom or hosted software, digital downloads, repairs, fabrication?
+- How does each customer receive the goods (counter, common carrier, own truck), and in which city and county?
+- Does it hold a timely resale certificate from each business buyer?
+- Did it use anything in California without paying California tax, including goods from resale stock?
+- Has CDTFA written to require prepayments? Were any returns or payments late?
+
+## The method, step by step
+
+1. **Decide whether the business must register.** A business that sells goods in California needs a seller's permit for each place of business where it negotiates sales ([Regulation 1699](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1699.html)). A business outside California must register and collect use tax if it has a physical presence here or if its combined sales of goods for delivery into California, with related persons, exceed $500,000 in the current or preceding calendar year ([CDTFA Wayfair guide](https://www.cdtfa.ca.gov/industry/wayfair.htm)).
+2. **Classify each sale.** Sales tax applies to retail sales of tangible personal property unless an exemption applies. Services are not taxed unless they are part of a sale of property ([CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm)). Check food, software and digital products, repair and fabrication, resale and other exemptions in the tables below.
+3. **Find the rate for the place of sale or delivery.** The base rate is 7.25% everywhere ([CDTFA district taxes](https://www.cdtfa.ca.gov/industry/local-and-district-retailer-taxes/district-tax.htm)). Add district tax where the sale takes place, or where the goods are delivered if the seller is engaged in business in that district. Use CDTFA's address lookup for the transaction date: [CDTFA rates](https://www.cdtfa.ca.gov/taxes-and-fees/rates.aspx).
+4. **Keep proof** (certificates, marketplace and delivery records) for at least four years, and accrue use tax on untaxed goods you use, including goods taken from resale stock.
+5. **File by the due date for your assigned frequency,** even with no sales, allocating local and district tax on the return schedules, and prepay if CDTFA has told you to ([CDTFA filing dates](https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-returns-filing-dates.htm)).
+
+## Rates for 2026
+
+### The statewide base rate ([CDTFA detailed description of the rate](https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm))
+
+| Component | Rate | Where it goes |
+| --- | --- | --- |
+| State | 3.6875% | State General Fund |
+| State | 0.25% | State General Fund |
+| State | 0.50% | Local Public Safety Fund |
+| State | 0.50% | Local Revenue Fund (1991 realignment) |
+| State | 1.0625% | Local Revenue Fund 2011 |
+| Local (Bradley-Burns) | 0.25% | County transportation funds |
+| Local (Bradley-Burns) | 1.00% | City or county operations |
+| **Total statewide base rate** | **7.25%** | |
+
+- The state share is 6.00% and the local share is 1.25%, in effect from 1 January 2017 to date ([CDTFA rate history](https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates-history.htm)).
+- The same rates apply to sales tax and use tax. The rates printed on the return differ from these components because of a 2004 funding change; use the return's rates.
+
+### District taxes ([CDTFA detailed description of the rate](https://www.cdtfa.ca.gov/taxes-and-fees/sut-rates-description.htm); [CDTFA district taxes](https://www.cdtfa.ca.gov/industry/local-and-district-retailer-taxes/district-tax.htm))
+
+- Cities, counties and other districts add voter-approved district taxes. Each district tax is between 0.10% and 2.00%, and more than one can apply at one address.
+- Do not keep a list of local rates; they change. Look up the rate for the exact address and date: [CDTFA rates](https://www.cdtfa.ca.gov/taxes-and-fees/rates.aspx) (it also links to the address map).
+- A city or county whose total rate is above 7.25% is in a district ([Publication 105](https://www.cdtfa.ca.gov/formspubs/pub105/)). Unincorporated areas use the county rate.
+
+## Who must register
+
+### Seller's permit ([Regulation 1699](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1699.html); [Publication 107](https://www.cdtfa.ca.gov/formspubs/pub107/))
+
+- **Who needs one.** A person in the business of selling taxable goods needs a permit for each California place of business where sales are customarily negotiated, even a sales office with no stock.
+- **Warehouses.** A storage-only warehouse supporting a permitted location needs no extra permit. Anyone holding stock in California for sale needs at least one permit, and a warehouse fulfilling sales negotiated out of state needs its own.
+- **Temporary sellers.** Selling in California even temporarily generally needs a permit.
+- **Occasional sales.** A person not otherwise required to hold a permit who makes no more than two sales in a 12-month period generally does not need one. A third sale in 12 months, or selling on a business scale, changes that.
+- **Not needed.** A seller whose sales are all in interstate or foreign commerce, with no sales in California, needs no seller's permit but may need a use tax account.
+
+### Out-of-state sellers: physical presence and economic nexus ([CDTFA Wayfair guide](https://www.cdtfa.ca.gov/industry/wayfair.htm); [CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm))
+
+- **Physical presence.** A retailer is engaged in business in California, and must register, if it has an office, warehouse or other place of business here, representatives who sell, take orders, deliver or install here, leased property here, or inventory here (including in a fulfillment center).
+- **Economic nexus, the test.** From 1 April 2019, a retailer must register with CDTFA and collect California use tax if, "during the preceding or current calendar year, the total combined sales of tangible personal property for delivery in California by the retailer and all persons related to the retailer exceed $500,000."
+  - **More than, not at least.** Sales of exactly $500,000 do not meet the test.
+  - **Either year.** Test 2025 and 2026 separately. Crossing in either year is enough.
+  - **Related persons.** Add the sales of every person related to the retailer under Internal Revenue Code section 267(b).
+  - **What counts.** Total sales of goods for delivery in California, which "may include nontaxable sales, such as sales for resale". Marketplace sales count too (see the next section). Services and electronically delivered products are not sales of tangible personal property.
+  - **No transaction count.** California has no 200-transaction test.
+- **When collection starts.** A seller who crosses $500,000 during the year must register and collect from the next sale. The sale that takes it over the line is not one it must collect on. In CDTFA's example, a seller reached $500,200 on 7 July 2019 and was not liable for use tax on sales before 7 July 2019, "including the $400 transaction that put you over the $500,000 threshold."
+- **District use tax.** A retailer over the threshold is engaged in business in every district and must collect district use tax on all taxable sales delivered into any district ([CDTFA district taxes](https://www.cdtfa.ca.gov/industry/local-and-district-retailer-taxes/district-tax.htm)). The district test counts sales "in this state or for delivery in the state" ([R&TC section 7262](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=7262)), so over-the-counter California sales count for a California retailer. The obligation lasts "at least, through the end of the next calendar year".
+- **Wholesale only.** A distributor making only sales for resale into California need not register. Once over $500,000 with any retail sale, it must.
+
+### Marketplace facilitators and marketplace sellers ([CDTFA Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm); [R&TC section 6041](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6041))
+
+- **Facilitator.** From 1 October 2019, a marketplace facilitator that is registered or required to be registered is the retailer for sales it facilitates, and generally pays the sales tax or collects the use tax on them. It counts those sales as its own when deciding whether it must register. A facilitator contracts with sellers to facilitate their sales for consideration, **and** both runs the marketplace (for example transmits offers or owns the platform) **and** provides at least one listed service such as payment processing, fulfillment, listing, pricing, order taking or customer service.
+- **Seller, threshold.** Unlike some states, California makes a marketplace seller **include** its facilitated sales when testing the $500,000 threshold.
+- **Seller, registration.** A marketplace seller does not need to register if **all** its retail sales are facilitated by a registered facilitator. It must register if it makes any direct sales to California customers (for example on its own website) and is engaged in business here through physical presence or economic nexus.
+- **Seller, reporting.** A registered marketplace seller reports all its sales, including facilitated ones, and deducts the facilitated sales as "other" on the return. It should keep proof that the facilitator is registered and collecting, such as the facilitator's permit number.
+- **Relief.** CDTFA will not hold a marketplace seller liable on a facilitated sale if CDTFA can verify that the facilitator collected and paid the correct tax.
+
+## What is taxable: boundary and exception table
+
+### General rule and services ([CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm); [Regulation 1501](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1501.html))
+
+| Item | Treatment | Condition that decides it |
+| --- | --- | --- |
+| Goods (furniture, electronics, clothing, shoes, books, tools, toys) | Taxable | No general clothing exemption |
+| Services (professional, advisory, consulting, payroll, tax) | Not taxable | Unless the service is part of a sale of goods |
+| Mixed contract, service and property | Depends on the "true object" | If the buyer wants the service itself, not taxable even though some property is handed over; if the buyer wants the property, tax applies to the whole price with no deduction for labor or skill |
+| Admissions, finance charges, real property, securities, transportation tickets | Not taxable | Not sales of tangible personal property |
+| Prescription medicines | Exempt | Sold under the conditions in [Regulation 1591](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1591.html); over-the-counter drugs and medicines are taxable |
+| Goods shipped out of California | Exempt | Only if the contract of sale requires shipment to a point outside California **and** the retailer ships it, in its own vehicles or by delivery to a carrier, customs broker or forwarding agent (even one hired by the buyer). Customer pickup in California does not qualify ([R&TC section 6396](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6396)) |
+| Sales to the United States, its unincorporated agencies and instrumentalities, and the American National Red Cross | Exempt | [R&TC section 6381](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6381) |
+| Farm equipment and machinery used primarily to produce and harvest agricultural products | Partly exempt | Buyer must be a qualified person (SIC codes 0111 to 0291, or someone assisting them). Local and district taxes and certain state components still apply ([R&TC section 6356.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6356.5)) |
+
+### Repair, installation and fabrication ([Regulation 1546](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1546.html); [Regulation 1526](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1526.html))
+
+| Item | Treatment | Condition |
+| --- | --- | --- |
+| Installation labor for goods sold | Not taxable | Does not cover fabrication of property in place |
+| Repair labor | Not taxable | |
+| Parts in a repair job | Repairer is the retailer and charges tax on the parts | If the retail value of parts is more than 10% of the total charge, **or** the parts are charged separately; the repairer must then show parts separately on the invoice |
+| Parts in a repair job | Repairer is the consumer and pays tax on its purchase of the parts | If parts are 10% or less of the total charge **and** not charged separately |
+| Fabrication, processing or printing on the customer's own materials | Taxable | Any operation that creates new tangible property, or is a step in doing so |
+
+### Food and drink ([Regulation 1602](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1602.html); [Regulation 1603](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1603.html))
+
+| Item | Treatment | Condition |
+| --- | --- | --- |
+| Food products (groceries, bakery goods, snacks) | Exempt | Unless sold as hot prepared food (but see the hot bakery and hot drink exception below), as a meal, or for eating at the seller's facilities |
+| Candy, confectionery, chewing gum | Exempt | They are food products |
+| Fruit and vegetable juices; noncarbonated, noneffervescent bottled water | Exempt | |
+| Carbonated drinks, carbonated or effervescent water, beer, wine and spirits | Taxable | Not food products |
+| Ice | Taxable | Not a food product |
+| Dietary and food supplements (vitamin pills, protein supplements) | Taxable | Labelled as a supplement or designed to add vitamins, proteins, minerals or calories; exempt only as prescription medicine or a complete dietary food |
+| Hot prepared food | Taxable | Sold hotter than the room; a single price for a meal with any hot item is taxable in full |
+| Hot bakery goods and hot drinks such as coffee, sold for a separate price | Exempt | Unless taxable under Regulation 1603(b), (c), (d) or (f) (meals, the 80-80 rule, admission places, seller's facilities). A hot drink sold with a bakery item or cold food for a single price is taxable |
+| Meals and food served for eating at the seller's tables, at restaurants, or inside places charging admission | Taxable | Regulation 1603(a), (d), (f) |
+| Cold food "to go" from a restaurant-type seller | Taxable only under the 80-80 rule | **Both**: more than 80% of gross receipts are from food, **and** more than 80% of retail food sales are taxable; the food must also be suitable for eating on the premises. The seller may elect to account separately and exempt these sales |
+
+### Software, hosted software and digital products ([Regulation 1502](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1502.html); [CDTFA Wayfair general information](https://www.cdtfa.ca.gov/industry/wayfair/general-information.htm))
+
+| Item | Treatment | Condition |
+| --- | --- | --- |
+| Prewritten (canned) program on storage media (disk, USB drive) | Taxable | Tax applies to the entire amount, including licence fees |
+| Prewritten program transferred electronically | Not taxable | Only if the buyer does not obtain any tangible property, such as storage media, in the transaction |
+| Custom program | Not taxable | In any form, except a basic operational program; separately stated custom changes to a prewritten program are also not taxable |
+| Digital music, video, books and other digital products delivered electronically | Not taxable | Only if no tangible storage media is transferred |
+| Hosted software (SaaS) used remotely | Not a sale of tangible property | CDTFA has no SaaS-specific regulation; the basis is that no program copy or media is transferred. If anything is downloaded or shipped, apply the rows above. Get written advice for large contracts |
+
+**Mixed tangible and intangible sales.** Three rules decide most cases:
+
+- **Software and media.** A transfer of storage media makes a prewritten program taxable on the whole charge ([Regulation 1502](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1502.html)). To keep a download non-taxable, the seller must not also hand over a disk or drive.
+- **Technology transfer agreements.** When a written patent or copyright licence to reproduce and sell, or to make and sell, comes with tangible property, tax applies only to the property. Use its separately stated fair price; otherwise its prior price to an unrelated party; otherwise 200% of the cost of materials and labor ([Regulation 1507](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1507.html)).
+- **Service with incidental property.** Use the true object test in the general table above ([Regulation 1501](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1501.html)).
+
+### Manufacturing and research equipment ([CDTFA partial exemption: sellers](https://www.cdtfa.ca.gov/industry/manufacturing-and-research-and-development-equipment-exemption/sellers.htm))
+
+- Equipment used primarily in manufacturing, research and development, or electric power generation, storage or distribution may get a partial exemption (R&TC section 6377.1) if all three conditions are met: qualified person, qualified property, qualified use ([CDTFA partial exemption guide](https://www.cdtfa.ca.gov/industry/manufacturing-and-research-and-development-equipment-exemption/)).
+- The partial exemption rate is 3.9375%, so a qualifying sale is taxed at 3.3125% plus any district tax. The seller needs a timely CDTFA-230-M. The exemption runs to 30 June 2030.
+
+## District tax: which district, and how it is allocated
+
+### Sourcing rules ([CDTFA district taxes](https://www.cdtfa.ca.gov/industry/local-and-district-retailer-taxes/district-tax.htm))
+
+| Situation | District tax that applies |
 | --- | --- |
-| Jurisdiction | California, United States |
-| Jurisdiction code | US-CA |
-| Tax type | Sales and Use Tax + District Taxes |
-| State base rate | 7.25% (minimum statewide) |
-| District tax range | District taxes generally add 0.10% to 2.00% per district; multiple districts may stack and some areas exceed the general county cap by statute |
-| Maximum combined rate | Do not hardcode; use CDTFA address lookup. Some 2025 locations exceeded 10.75% (for example Lancaster/Palmdale at 11.250%) |
-| Sourcing | Statewide rate applies generally; district tax usually follows delivery/use location for shipped goods and seller location for counter sales |
-| Economic nexus | $500,000 in total sales (revenue only, no transaction count) |
-| Nexus test type | Revenue only -- highest threshold tied with Texas |
-| Primary legislation | California Revenue and Taxation Code (R&TC), Division 2, Part 1 |
-| Tax authority | California Department of Tax and Fee Administration (CDTFA) |
-| Filing portal | https://onlineservices.cdtfa.ca.gov |
-| SST member | No |
-| Return form | CDTFA-401-A (quarterly/monthly); CDTFA-401-EZ (small sellers) |
-| Filing frequencies | Monthly, quarterly, annual (assigned by CDTFA) |
-| Quarterly deadlines | Last day of month following quarter (Apr 30, Jul 31, Oct 31, Jan 31) |
-| Prepayment | Required if average monthly tax liability exceeds $17,000 |
-| Vendor discount | None -- California does not offer a vendor collection allowance |
-| Federal framework skill | us-sales-tax (read first for Wayfair, nexus overview, multi-state context) |
-| Skill version | 2.0 |
+| Over-the-counter sale at a location in a district | The district sales tax where the sale takes place |
+| Goods shipped (by the seller, its agent or a common carrier) out of the seller's district for use there | No district sales tax of the seller's district |
+| Seller engaged in business in the delivery district | Collect that district's use tax at the delivery address rate |
+| Seller not engaged in business there | Not required to collect; the customer owes it, and the seller may collect it as a courtesy |
+| Retailer over $500,000 (with related persons) | Engaged in business in every district |
+| Retailer under $500,000 | Engaged in business only where it has a presence, such as stored inventory or deliveries in its own vehicle |
 
-## Section 2 -- Required inputs and refusal catalogue
+### Allocating local and district tax on the return ([CDTFA online filing instructions](https://www.cdtfa.ca.gov/cros/online-filing-instructions.htm))
 
-### Required inputs
+- **Schedule A (district tax, CDTFA-531-A2).** Report every sale or purchase subject to district tax, by county and city, to the district where you are engaged in business and the tax applies.
+- **Schedule C (local tax).** Allocate the 1.25% local tax (1% Local Jurisdiction Fund and 0.25% Local Transportation Fund) to your registered California selling locations, where sales are made, negotiated or fulfilled.
+- **Schedule B (local tax by county).** Use it for construction jobsites, goods shipped from outside California with title passing outside the state, itinerant sales and vending machines.
 
-**Required inputs**
+## Resale certificates: CDTFA-230 ([Regulation 1668](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1668.html); [Publication 103](https://www.cdtfa.ca.gov/formspubs/pub103/))
 
-| # | Question | Why it matters |
+- **What it does.** The seller must prove a sale is not at retail, unless it takes a certificate **timely**, in **proper form** and in **good faith** from a person selling goods who holds a seller's permit (or explains why none is needed).
+- **Timely.** Before you bill the buyer, within your normal billing and payment cycle, or at or before delivery. A later certificate is not retroactive.
+- **Proper form.** Any document (CDTFA-230, a letter, a purchase order) works if it has all the essential elements:
+  - the buyer's signature (or an employee's or agent's);
+  - the buyer's name and address;
+  - the buyer's seller's permit number, or the reason no permit is needed;
+  - the words "for resale" (not "exempt" or "non-taxable"), with an itemized list or general description of the goods;
+  - the date (an undated certificate is still valid).
+- **Good faith.** It is presumed if the certificate has the essential elements and looks valid on its face. If the buyer claims to be buying for resale something it does not normally sell, get a certificate that names that specific property as bought for resale in the regular course of business.
+- **Blanket certificates** stay in effect until revoked in writing. With a "see purchase order" certificate, each order must mark the goods as for resale ("for resale", "resale = yes", "nontaxable", "taxable = no" or similar); a blank or zero tax amount alone is not enough.
+- **Late or missing certificate.** The seller is relieved only if it proves the goods were resold, are held for resale, or the buyer paid the tax to CDTFA.
+- **Misuse.** A buyer who gives a certificate for goods it knows it will not resell owes the tax plus a penalty of 10% of the tax or $500, whichever is greater, for each purchase made for personal gain or to evade tax. It may also face the 10% negligence or 25% fraud penalty. Knowing misuse to evade tax is a misdemeanor.
+- **Drop shipments.** A supplier that sells goods to a retailer not engaged in business in California, and delivers them to a California consumer on that retailer's instructions, is presumed to be the drop shipper. It is treated as the retailer and owes tax on the retail sale ([R&TC section 6007](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6007)). In most cases it escapes only by taking a timely, valid resale certificate showing the buyer's California seller's permit number. A certificate without that number generally does not work, except from an unregistered marketplace seller whose goods are resold through a registered facilitator ([CDTFA Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm)).
+- **Marketplace sellers** that need not register may still give resale certificates, explaining that all their sales go through a registered facilitator ([CDTFA Marketplace Facilitator Act guide](https://www.cdtfa.ca.gov/industry/MPFAct.htm)).
+
+## Use tax
+
+### Businesses ([Publication 110](https://www.cdtfa.ca.gov/formspubs/pub110/); [CDTFA qualified purchaser rules](https://www.cdtfa.ca.gov/taxes-and-fees/qualified-purchaser/qualifications.htm))
+
+- **When it applies.** Use tax applies to goods bought for use, storage or consumption in California when no California tax was paid: purchases from out-of-state or foreign sellers who did not collect, and goods bought on a resale certificate and then used (other than for display or demonstration while held for sale). The rate is the sales tax rate where the goods are used.
+- **Permit holders** report use tax on their sales and use tax return.
+- **Qualified purchasers.** A business with no seller's permit or use tax registration must register as a "qualified purchaser" and file a yearly use tax return if, from 1 January 2024 to 31 December 2028, it makes more than $10,000 in purchases subject to use tax in a calendar year on which the tax was not paid to a retailer. Before 2024, and again from 1 January 2029, the test is at least $100,000 of gross receipts from business operations.
+
+### Individuals: the income tax return ([FTB Form 540 booklet for 2025](https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html))
+
+- **Where to report.** Individuals report use tax on line 91 of Form 540. A number must be entered; if nothing is due, tick the box saying no use tax is owed or it was paid to CDTFA.
+- **Who may not use line 91 for business purchases.** Anyone who has or must hold a seller's permit, is otherwise registered with CDTFA for use tax, or makes more than $10,000 of purchases subject to use tax (excluding vehicles, vessels and aircraft) in the calendar year without paying the tax to a retailer. These report to CDTFA instead.
+- **Worksheet or table.** Items bought for $1,000 or more each, and business purchases, go on the Use Tax Worksheet at the rate for the place of use. Non-business items under $1,000 each may be estimated with the Estimated Use Tax Lookup Table, which is based on California AGI. Using the table means no further use tax is assessed on those small items.
+- **Credit.** Tax paid to another state on the same item is a credit, up to the California use tax on it.
+- **Year.** The 2026 Form 540 booklet is not yet published. The rules above are from the 2025 booklet; check the 2026 booklet before filing 2026 returns.
+
+## Worked cases
+
+These cases use invented businesses. Where a rate is "assumed", it stands for the result of a CDTFA address lookup; always look up the real address and date.
+
+1. **Remote seller crosses the line mid-year** ([CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm)). An Oregon seller with no California presence sold goods for delivery into California of $410,000 in 2025. By 31 August 2026 it has sold $300,000 on its own website and $190,000 through a registered marketplace: $490,000 in total. On 12 September 2026 a $15,000 website order takes the 2026 total to $505,000, which exceeds $500,000. It is not liable for use tax on that order or earlier ones, but must register and collect state, local and district use tax on its direct sales from the next order. The marketplace keeps collecting on the facilitated sales. Its district obligation runs at least to 31 December 2027. Had the 2026 total stopped at exactly $500,000, the test would not be met.
+2. **Counter sale, shipped sale and district tax** ([CDTFA district taxes](https://www.cdtfa.ca.gov/industry/local-and-district-retailer-taxes/district-tax.htm)). A retailer's store is at an address where the lookup shows an assumed 9.50%. A customer buys a $2,000 table at the counter: tax is 2,000 x 9.50% = $190.00. Another $2,000 table goes by common carrier to an address with an assumed 7.75%. The retailer's sales exceed $500,000, so it is engaged in business in every district: 2,000 x 7.75% = $155.00, with the 0.50% district part ($10.00) on Schedule A. Were it under $500,000 with no presence in the customer's district, it would charge 2,000 x 7.25% = $145.00; its own district tax does not apply to goods shipped out for use elsewhere, and the customer owes the district use tax unless the retailer collects it as a courtesy.
+3. **Software: download, disk, custom and hosted** ([Regulation 1502](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1502.html)). A business at an address with the 7.25% base rate buys a $1,200 prewritten program by download with no media: no tax. If the same program came on a USB drive, tax would be 1,200 x 7.25% = $87.00 on the whole price. A $40,000 program written to its order: no tax. A $600 monthly subscription to hosted software it uses in a browser, with nothing downloaded or shipped: no transfer of tangible property, so no sales or use tax; the business should get written advice if the contract is large or includes any download.
+4. **Grocery basket** ([Regulation 1602](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1602.html)). A supermarket that does not meet the 80-80 rule, at an address with the 7.25% base rate, sells a cold sandwich for $8, hot soup for $6, a soda for $2, a candy bar for $3, vitamins for $20 and a bag of ice for $4. Exempt: sandwich and candy. Taxable: 6 + 2 + 20 + 4 = $32. Tax: 32 x 7.25% = $2.32.
+5. **Quarterly prepayments** ([CDTFA prepayments](https://www.cdtfa.ca.gov/services/make-a-prepayment.htm)). CDTFA has notified a retailer that it must prepay. Its January state and local liability is $30,000, so it prepays at least 30,000 x 90% = $27,000 by 24 February. In the second quarter, the prepayment due 24 June covers 1 May to 15 June: either at least 90% of that period's liability ($35,000 x 90% = $31,500) or 135% of the May liability ($22,000 x 135% = $29,700). If it had missed the January prepayment but filed the quarterly return on time, the penalty would be 6% of 90% of the liability: 30,000 x 90% x 6% = $1,620.
+6. **Late quarterly return** ([R&TC section 6591](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6591)). A quarterly filer owes $10,000 for April to June 2026, due 31 July 2026. It files and pays on 20 August 2026. The late filing and late payment penalties are each 10%, but together they are capped at 10% per return: $1,000, not $2,000. Interest runs for one month or fraction. Relief is possible for reasonable cause (see below).
+7. **Individual use tax on a 2025 return** ([FTB Form 540 booklet for 2025](https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html)). A resident with California AGI of $85,000 bought a $1,500 television and $500 of small items from out-of-state sellers that charged no tax. The television is $1,000 or more, so it goes on the worksheet at the assumed home rate of 9.50%: 1,500 x 9.50% = $142.50, entered as $143 because the worksheet uses whole dollars. The small items may be estimated from the lookup table: $8 for AGI of $80,000 to $89,999. Line 91: 143 + 8 = $151.
+
+## When to refuse or refer
+
+- Refer cannabis, fuel, tobacco and other special taxes and fees, and vehicle, vessel and aircraft use tax.
+- Refer partial exemption claims that are not plainly within the rules, construction contracts, leases, and material technology transfer agreements.
+- Refer a seller with unfiled past years to the Voluntary Disclosure Program before CDTFA contacts it. Unfiled years can be assessed for eight years, and the program may cut that to three ([CDTFA Wayfair FAQ](https://www.cdtfa.ca.gov/industry/wayfair/frequently-asked-questions.htm)).
+- Refer notices of determination, appeals, fraud, and 40% penalty cases to a practitioner who handles CDTFA disputes ([R&TC section 6597](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6597)).
+- For hosted software, mixed bundles or any close call, get CDTFA's written advice: reasonable reliance on it can relieve tax, penalty and interest ([Regulation 1705](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1705.html)).
+- Do not state a local rate from memory; use the address lookup for the transaction date.
+
+## Filing and payment
+
+### Filing frequency and due dates ([CDTFA filing dates](https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-returns-filing-dates.htm))
+
+| Basis | Period | Due date |
 | --- | --- | --- |
-| 1 | California Seller's Permit number? | Required for filing; confirms registration with CDTFA |
-| 2 | Assigned filing frequency (monthly, quarterly, annual)? | Determines return due dates and prepayment requirements |
-| 3 | Nexus type (physical, economic, both)? | $500,000 threshold for economic nexus |
-| 4 | Sell through marketplace facilitators (Amazon, eBay, Etsy)? | Marketplace facilitators collect on facilitated sales |
-| 5 | Primary business address / point of sale location? | Needed for district tax rate determination on counter sales |
-| 6 | Ship goods to California customers? From where? | Destination-based sourcing for district taxes |
-| 7 | Sell food, software/SaaS, or manufacturing equipment? | Special exemption or taxability rules |
-| 8 | Average monthly tax liability exceed $17,000? | Prepayments due 24th of first and second month of quarter |
+| Quarterly | January-March / April-June / July-September / October-December | 30 April / 31 July / 31 October / 31 January |
+| Quarterly prepay | Two monthly prepayments, then the quarterly return | Prepayments on the 24th (see below); return as for quarterly |
+| Monthly | Each month | Last day of the following month |
+| Yearly (sales tax accounts) | January-December | 31 January |
+| Yearly (qualified purchasers and consumer use tax accounts) | January-December | 15 April |
+| Fiscal yearly | July-June | 31 July |
 
-- **Stop condition** — If the client cannot answer questions 1-3, STOP and gather this information before proceeding.
+- CDTFA assigns the frequency from reported or expected taxable sales. A return is due even with no sales.
+- A due date on a weekend or state holiday moves to the next business day.
+- A payment started on the due date must be completed before midnight Pacific time (earlier for EFT accounts).
 
-### Refusal catalogue
+### Prepayments ([R&TC section 6471](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6471); [CDTFA prepayments](https://www.cdtfa.ca.gov/services/make-a-prepayment.htm))
 
-- **R-CA-1** — Cannabis taxation. Cannabis excise tax and cultivation tax have separate compliance requirements outside this skill. Escalate to a licensed tax professional.
-- **R-CA-2** — Fuel and motor vehicle tax. Fuel excise taxes and motor vehicle fee-for-service are administered separately. Outside scope.
-- **R-CA-3** — Timber yield tax. Separate tax regime. Outside scope.
+- **Who.** A person whose estimated measure of tax liability averages $17,000 or more per month, **and** who has been notified in writing by CDTFA. Without the notice, there is no prepayment duty.
+- **Quarters 1, 3 and 4.** Prepay at least 90% of the state and local liability for each of the first two months, by the 24th of the following month (for example, January by 24 February).
+- **Quarter 2.** First prepayment: 90% of April, by 24 May. Second, by 24 June: 90% of the liability for 1 May to 15 June, or 135% of May.
+- **Prior-year option.** A business operating throughout the same quarter last year may prepay one-third of that quarter's reported measure (one-half for the second quarter-2 prepayment), times the current rate.
+- **Penalty.** A prepayment made late, but before the last day of the month after the quarter, costs 6% of the prepayment (R&TC section 6476). A prepayment not made by then, where the quarterly return and payment are timely, costs 6% of 90% of that month's liability (R&TC section 6477).
 
-## Section 3 -- Transaction pattern library
+### Penalties and interest ([R&TC section 6591](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6591); [R&TC section 6591.5](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6591.5))
 
-This is the deterministic taxability lookup. When a transaction matches a pattern below, apply the listed treatment. Do not second-guess.
-
-### 3.1 Tangible personal property (TPP)
-
-**Tangible personal property (TPP)**  _(R&TC Section 6051)_
-
-| Pattern | Taxable? | Rate | Notes |
-| --- | --- | --- | --- |
-| General TPP (electronics, furniture, appliances, equipment, jewelry, sporting goods, office supplies) | TAXABLE | 7.25% + district | R&TC Section 6051 |
-| Building materials | TAXABLE | 7.25% + district |  |
-| Vehicles (private party) | TAXABLE | 7.25% + district | Separate use tax filing via DMV |
-
-### 3.2 Food and beverages
-
-**Food and beverages**  _(R&TC Section 6359)_
-
-| Pattern | Taxable? | Citation |
+| Charge | Amount | Condition |
 | --- | --- | --- |
-| Grocery food (cold, unheated, for off-premises consumption) | EXEMPT | R&TC Section 6359 |
-| Hot prepared food | TAXABLE | R&TC Section 6359(d)(2) |
-| Food sold with eating utensils by vendor | TAXABLE | R&TC Section 6359(d)(1) |
-| Food sold at restaurants (dine-in or to-go if heated) | TAXABLE | R&TC Section 6359 |
-| Carbonated beverages / soft drinks | TAXABLE | R&TC Section 6359(c) |
-| Candy | TAXABLE | R&TC Section 6359(c) |
-| Bottled water (non-carbonated, non-flavored) | EXEMPT |  |
-| Alcoholic beverages | TAXABLE |  |
-| Snack foods (chips, crackers -- cold, unheated) | EXEMPT | Treated as grocery food |
-| Dietary supplements | EXEMPT | R&TC Section 6359(c) |
-| Ice | EXEMPT |  |
-
-### 3.3 Clothing and footwear
-
-**Clothing and footwear**
-
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| All clothing and footwear | TAXABLE | California has NO clothing exemption |
-| No sales tax holiday | N/A | California does not hold sales tax holidays |
-
-### 3.4 SaaS and digital goods
-
-**SaaS and digital goods**
-
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| Canned software (physical media) | TAXABLE | TPP -- R&TC Section 6010.9 |
-| Canned software (electronic download with permanent right) | TAXABLE | Regulation 1502.1 |
-| Custom software (delivered electronically) | EXEMPT | Not TPP per Regulation 1502.1(a)(3) |
-| SaaS (cloud-hosted, no download, no transfer of TPP) | NOT TAXABLE | No transfer of TPP; CDTFA has not taxed pure SaaS |
-| Streaming services (no download) | NOT TAXABLE | No transfer of TPP |
-| Digital music/movies/books (permanent download) | TAXABLE | Transfer of TPP equivalent |
-| Digital music/movies/books (streaming only) | NOT TAXABLE |  |
-
-### 3.5 Services
-
-**Services**
-
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| Professional services (legal, accounting, consulting, medical, engineering) | NOT TAXABLE | Not a sale of TPP |
-| Repair labor (separately stated from parts) | NOT TAXABLE | Labor separately stated is exempt |
-| Repair parts | TAXABLE | TPP |
-| Fabrication labor (producing a new product to customer spec) | TAXABLE | Fabrication labor is taxable; R&TC Section 6006(b) |
-| Installation labor (after sale of TPP, separately stated) | NOT TAXABLE | If separately stated |
-| Telecommunications | Separate taxes | Subject to utility users tax, not standard sales tax |
-
-### 3.6 Manufacturing and industrial
-
-**Manufacturing and industrial**
-
-| Pattern | Taxable? | Notes |
-| --- | --- | --- |
-| Manufacturing equipment (used directly in manufacturing) | PARTIAL EXEMPTION | R&TC Section 6377.1 -- state rate reduced; district tax may still apply |
-| R&D equipment | PARTIAL EXEMPTION | Same partial exemption program |
-| Utilities for manufacturing | PARTIAL EXEMPTION | Same program |
-| Farm equipment and machinery | PARTIAL EXEMPTION | R&TC Section 6356.5 |
-| Raw materials/ingredients for manufactured products | EXEMPT (resale) | Purchased for resale as component of finished product |
-
-### 3.7 Common exemptions
-
-**Common exemptions**
-
-| Pattern | Exempt? | Citation |
-| --- | --- | --- |
-| Resale (valid resale certificate) | EXEMPT | R&TC Section 6091 |
-| Interstate commerce (shipped out of state) | EXEMPT | R&TC Section 6396 |
-| US government purchases | EXEMPT | R&TC Section 6381 |
-| California state/local government | EXEMPT | R&TC Section 6381.5 |
-| Prescription medicine | EXEMPT | R&TC Section 6369 |
-| OTC drugs and medicine | TAXABLE | No OTC exemption in California |
-| Newspapers and periodicals | EXEMPT | R&TC Section 6362 |
-| Containers and packaging (for resale goods) | EXEMPT | R&TC Section 6364 |
-
-## Section 4 -- Rate lookup
-
-### 4.1 State rate components
-
-**State rate components**
-
-| Component | Rate |
-| --- | --- |
-| State General Fund | 3.9375% |
-| State Fiscal Recovery Fund | 0.25% |
-| Local Revenue Fund (county) | 1.0625% |
-| Local Public Safety Fund | 0.50% |
-| County Transportation Fund | 0.25% |
-| State Education Protection Account | 0.25% |
-| Proposition 30/55 Fund | 1.00% |
-| **Total statewide minimum** | **7.25%** |
-
-### 4.2 Key combined rates
-
-**Key combined rates**  _(https://cdtfa.ca.gov/taxes-and-fees/ArchivesRates-07-01-2025-09-30-2025.pdf)_
-
-| Jurisdiction | Combined rate | Breakdown |
-| --- | --- | --- |
-| Los Angeles (City) | 9.750% (July-Sept. 2025 CDTFA city table) | Address lookup controls; rate changed from stale 10.25% example |
-| San Francisco | 8.625% (July-Sept. 2025 CDTFA city table) | Address lookup controls |
-| San Jose | 9.375% (July-Sept. 2025 CDTFA city table; later current tables may differ) | Address lookup controls |
-| San Diego (City) | 7.750% (July-Sept. 2025 CDTFA city table) | Address lookup controls |
-| Sacramento (City) | 8.750% (July-Sept. 2025 CDTFA city table) | Address lookup controls |
-| Oakland | 10.250% July-Sept. 2025 / 10.750% Oct-Dec. 2025 | Rate changed during 2025; use address lookup for transaction date |
-| Fresno | 8.350% (July-Sept. 2025 CDTFA city table) | Address lookup controls; nearby Fresno County cities differ |
-
-### 4.3 District tax sourcing
-
-**District tax sourcing**  _(https://cdtfa.ca.gov/taxes-and-fees/ArchivesRates-07-01-2025-09-30-2025.pdf)_
-
-| Scenario | Rate applied |
-| --- | --- |
-| Shipped goods | District tax at delivery/use address when the retailer is engaged in that district |
-| Counter sales / customer pickup | Rate at seller's location |
-| Out-of-state seller shipping to CA | District tax at delivery address |
-
-**Always use the CDTFA address-based rate lookup for the exact transaction date and address: https://www.cdtfa.ca.gov/taxes-and-fees/rates.aspx. City/county examples are snapshots and can change mid-year.**
-
-## Section 5 -- Classification rules
-
-### 5.1 General rule
-
-- **General taxability rule** — California imposes sales tax on the retail sale of tangible personal property unless a specific exemption applies. Services are generally NOT taxable unless they involve fabrication of a new product or transfer of TPP.  _(R&TC Section 6051)_
-
-### 5.2 Partial exemption for manufacturing (M&E)
-
-**Partial exemption for manufacturing (M&E)**  _(R&TC Section 6377.1)_
-
-| Parameter | Detail |
-| --- | --- |
-| Scope | Machinery, equipment, and parts used primarily (50%+) in manufacturing, R&D, or electric power generation |
-| Benefit | State portion partially exempted; buyer pays reduced state rate + full district tax |
-| Certificate | CDTFA-230-M (Partial Exemption Certificate for Manufacturing) |
-| Authority | R&TC Section 6377.1 |
-
-### 5.3 Resale exemption
-
-**Resale exemption**
-
-| Parameter | Detail |
-| --- | --- |
-| Certificate | CDTFA-230 (Resale Certificate) |
-| Requirement | Buyer must hold California Seller's Permit or be an out-of-state retailer |
-| MTC certificate | Accepted |
-| SST certificate | California is NOT an SST member |
-| Blanket certificates | Permitted for ongoing purchases |
-
-### 5.4 Use tax
-
-**Use tax**
-
-| Rule | Detail |
-| --- | --- |
-| When applies | TPP purchased from out-of-state seller without CA tax; TPP purchased tax-free and diverted to taxable use |
-| Rate | Same as sales tax rate at location of use |
-| Credit | Credit for tax paid to other states (R&TC Section 6406) |
-| Individual reporting | Schedule G on Form 540 (income tax return) |
-
-## Section 6 -- Return form and filing
-
-### 6.1 Filing forms
-
-**Filing forms**
-
-| Form | Name | Use |
-| --- | --- | --- |
-| CDTFA-401-A | Sales and Use Tax Return | Standard return |
-| CDTFA-401-EZ | Short Form | Small sellers with no adjustments |
-| CDTFA-531 | Schedule of District Taxes | District tax detail (auto-populated online) |
-
-### 6.2 Filing frequency
-
-**Filing frequency**
-
-| Frequency | Criteria | Due date |
-| --- | --- | --- |
-| Quarterly | Most sellers | Last day of month following quarter |
-| Monthly | Tax liability > assigned threshold | Last day of following month |
-| Annual | Very small sellers | January 31 |
-
-### 6.3 Quarterly due dates
-
-**Quarterly due dates**
-
-| Quarter | Period | Due date |
-| --- | --- | --- |
-| Q1 | January 1 -- March 31 | April 30 |
-| Q2 | April 1 -- June 30 | July 31 |
-| Q3 | July 1 -- September 30 | October 31 |
-| Q4 | October 1 -- December 31 | January 31 |
-
-### 6.4 Prepayment requirements
-
-**Prepayment requirements**
-
-| Parameter | Value |
-| --- | --- |
-| Threshold | Average monthly tax liability exceeds $17,000 |
-| Due dates | 24th of first and second month of each quarter |
-| Amount | At least 90% of actual liability for the month |
-
-## Section 7 -- Thresholds, penalties, and deadlines
-
-### 7.1 Economic nexus
-
-**Economic nexus**  _([R&TC Section 6203(c)(4)](https://cdtfa.ca.gov/industry/MPFAct.htm))_
-
-| Parameter | Value |
-| --- | --- |
-| Revenue threshold | $500,000 in total sales delivered to California |
-| Transaction threshold | None -- revenue only |
-| Measurement period | Preceding or current calendar year |
-| Effective date | April 1, 2019 |
-| Sales included | Total California-delivery tangible merchandise sales, including exempt sales and related-person sales |
-| Marketplace sales | Include marketplace-facilitated sales when testing the $500,000 economic nexus threshold; registered sellers may deduct facilitated sales reported/remitted by a registered marketplace facilitator |
-| Authority | R&TC Section 6203(c)(4); CDTFA Marketplace Facilitator Act guide |
-
-### 7.2 Marketplace facilitator rules
-
-**Marketplace facilitator rules**  _([R&TC Section 6042](https://cdtfa.ca.gov/industry/MPFAct.htm))_
-
-| Rule | Detail |
-| --- | --- |
-| Effective date | October 1, 2019 |
-| Obligation | Registered or required-to-register marketplace facilitators generally collect, report, and pay tax on facilitated California retail sales |
-| Seller relief | Marketplace sellers are generally relieved from collection on facilitated sales handled by a registered facilitator, but must include facilitated sales in the $500,000 threshold and may need to register for direct sales |
-| Authority | R&TC Sections 6042-6045; CDTFA Marketplace Facilitator Act guide |
-
-### 7.3 Penalties and interest
-
-**Penalties and interest**
-
-| Penalty | Rate | Citation |
-| --- | --- | --- |
-| Late filing (1-30 days) | 10% of tax due | R&TC Section 6591 |
-| Late payment | 10% of tax due | R&TC Section 6591 |
-| Negligence | 10% of deficiency | R&TC Section 6484 |
-| Fraud | 25% of deficiency | R&TC Section 6485 |
-| Interest | Adjusted quarterly by CDTFA | R&TC Section 6591.5 |
-
-### 7.4 Record retention
-
-**Record retention**
-
-| Parameter | Value |
-| --- | --- |
-| Period | Minimum 4 years from filing date or due date (whichever is later) |
-| Records | Sales invoices, purchase records, exemption certificates, bank statements, POS data, shipping records |
-
-### 7.5 Statute of limitations
-
-**Statute of limitations**
-
-| Scenario | Period |
-| --- | --- |
-| Standard assessment | 3 years from filing or due date |
-| Substantial understatement (25%+) | 8 years |
-| No return filed | No limitation |
-| Fraud | No limitation |
-
-## Section 8 -- Edge cases
-
-### EC1 -- SaaS vs. downloaded software
-
-**Situation:** Business purchases software that is partly cloud-based and partly downloaded.
-
-**Resolution:** If the software requires a download or local installation, the downloaded component is taxable as TPP. If purely accessed through a browser with no download, it is not taxable. Hybrid products require analysis of the primary function.
-
-### EC2 -- Fabrication labor vs. repair labor
-
-**Situation:** A shop builds a custom metal part for a customer.
-
-**Resolution:** Fabrication labor (creating a new product to customer specifications) is TAXABLE under R&TC Section 6006(b). Repair labor (fixing an existing item) is NOT taxable if separately stated from parts. The distinction is whether a new product is being created.
-
-### EC3 -- Manufacturing partial exemption
-
-**Situation:** Manufacturer purchases a $100,000 machine used 60% for manufacturing, 40% for administration.
-
-**Resolution:** Qualifies for partial exemption because manufacturing use exceeds 50%. The state portion is partially exempted. Full district tax still applies at the delivery location rate.
-
-### EC4 -- Food: grocery vs. prepared
-
-**Situation:** Bakery sells cold sandwiches and hot soup from the same counter.
-
-**Resolution:** Cold sandwiches sold without eating utensils provided by the seller are EXEMPT as grocery food. Hot soup is TAXABLE as prepared food. Each item classified separately. If the seller provides eating utensils, all food becomes taxable.
-
-### EC5 -- Drop shipments
-
-**Situation:** Out-of-state retailer directs a California manufacturer to ship to a California customer.
-
-**Resolution:** The California manufacturer must collect tax unless the retailer provides a valid resale certificate. If the retailer is not registered in California, the manufacturer should collect tax on the retail price. Complex area requiring careful certificate management.
-
-## Section 9 -- Test suite
-
-### Test 1 -- Basic taxable sale in Los Angeles
-
-**Input:** Retailer sells a $1,000 TV in Los Angeles using a July-Sept. 2025 CDTFA city-table example rate of 9.750% (confirm exact address/date).
-**Expected:** Tax = $97.50. Total = $1,097.50.
-
-### Test 2 -- Grocery food exempt
-
-**Input:** Customer purchases $200 of cold groceries (produce, dairy, bread) at a supermarket.
-**Expected:** Tax = $0. Grocery food is exempt.
-
-### Test 3 -- SaaS not taxable
-
-**Input:** San Francisco business subscribes to cloud-based project management tool. $150/month. No download.
-**Expected:** Not taxable. Pure SaaS without download is not TPP in California.
-
-### Test 4 -- Economic nexus
-
-**Input:** Oregon-based online seller has $600,000 in California-delivery tangible merchandise sales in the current calendar year. No physical presence. 50 transactions.
-**Expected:** Exceeds the $500,000 revenue threshold. Must register with CDTFA and collect California use tax/statewide rate plus applicable district taxes for California deliveries.
-
-### Test 5 -- Clothing fully taxable
-
-**Input:** Customer buys a $300 jacket in San Francisco. Rate: 8.625%.
-**Expected:** Tax = $25.88. No clothing exemption in California.
-
-### Test 6 -- Resale certificate
-
-**Input:** Retailer purchases $15,000 of inventory from a CA wholesaler. Provides valid CDTFA-230.
-**Expected:** No tax. Retailer collects tax at point of resale.
-
-### Test 7 -- Use tax on out-of-state purchase
-
-**Input:** Los Angeles business purchases $5,000 of office furniture from an Oregon retailer. No tax collected. Use the July-Sept. 2025 Los Angeles city-table example rate of 9.750% unless the exact address/date lookup says otherwise.
-**Expected:** Use tax = $487.50 ($5,000 x 9.750%).
-
-### Test 8 -- Hot prepared food
-
-**Input:** Customer buys a $12 hot meal from a deli counter in Sacramento. Rate: 8.75%.
-**Expected:** Tax = $1.05. Hot prepared food is taxable.
-
-### Test 9 -- Manufacturing equipment partial exemption
-
-**Input:** Manufacturer purchases a $200,000 production machine in San Jose. Used 100% in manufacturing.
-**Expected:** Partial exemption applies to state portion. District tax still applies. Effective tax rate is reduced compared to full combined rate.
-
-### Test 10 -- Canned software download
-
-**Input:** Business purchases a $500 canned software license via electronic download in San Diego. Rate: 7.75%.
-**Expected:** Tax = $38.75. Downloaded canned software is taxable as TPP.
-
-## Section 10 -- Prohibitions
-
-- NEVER apply a clothing exemption in California -- clothing is fully taxable at all times.
-- NEVER treat pure SaaS (cloud-only, no download) as taxable -- California has not extended sales tax to pure SaaS.
-- NEVER confuse fabrication labor (taxable) with repair labor (not taxable if separately stated).
-- NEVER forget district taxes -- the 7.25% statewide rate is only the minimum; use the CDTFA address lookup because local rates can change during the year.
-- NEVER use origin-based sourcing for district taxes -- California is destination-based for district taxes.
-- NEVER assume the manufacturing partial exemption fully eliminates tax -- it reduces the state portion but district taxes still apply.
-- NEVER accept SST certificates in California -- CA is not an SST member.
-- NEVER forget the prepayment requirement for sellers with average monthly liability over $17,000.
-- NEVER treat OTC drugs as exempt -- only prescription medicine is exempt in California.
-- NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude.
-
-## Disclaimer
-
-This skill is provided for informational and computational purposes only and does not constitute tax, legal, or financial advice. All outputs must be reviewed by a qualified professional (CPA, EA, or tax attorney) before filing.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+| Late payment | 10% of the tax | Tax not paid by the due date |
+| Late return | 10% of the tax, excluding prepayments | Return not filed by the due date |
+| Cap | 10% of the tax per return | Late payment and late return penalties together cannot exceed 10% for any one return |
+| Negligence | 10% of the deficiency determination | Any part of the deficiency due to negligence or intentional disregard (R&TC section 6484) |
+| Fraud | 25% of the determination | Any part due to fraud or intent to evade (R&TC section 6485) |
+| Tax collected but not remitted | 40% of the amount not remitted | Knowingly collected and not timely remitted; does not apply if the unremitted amount averages $1,500 or less per month or does not exceed 25% of the tax for the period, whichever is greater, or with reasonable cause (R&TC section 6597) |
+| Resale certificate misuse | 10% of the tax or $500, whichever is greater | Per purchase (Regulation 1668) |
+| Missed prepayment | 6% | See prepayments above |
+
+- **Interest.** Simple interest for each month or fraction that tax is late, at the federal underpayment rate (IRC section 6621) plus three percentage points, reset every six months (the January rate applies July to December; the July rate January to June). Read the current rate on [CDTFA interest rates](https://www.cdtfa.ca.gov/taxes-and-fees/interest-rates.htm).
+- **Relief.** Penalties are relieved where the failure was due to reasonable cause and circumstances beyond the person's control, with ordinary care and no willful neglect; the request is a statement under penalty of perjury ([R&TC section 6592](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6592)). Tax, penalty and interest can be relieved for reasonable reliance on CDTFA's written advice ([Regulation 1705](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1705.html)).
+
+### Assessment periods and records ([R&TC section 6487](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=RTC&sectionNum=6487); [Regulation 1698](https://www.cdtfa.ca.gov/lawguides/vol1/sutr/1698.html))
+
+- **Return filed.** Three years from the end of the month following the period, or three years from the date the return was filed, whichever ends later.
+- **No return filed.** Eight years from the end of the month following the period.
+- **Fraud or intent to evade.** The three-year and eight-year limits in section 6487 do not apply.
+- **Records.** Keep sales and purchase records, certificates and supporting documents for at least four years, unless CDTFA authorizes a shorter period in writing. Keep them longer while an audit or appeal is open.
+
+## 2025 periods and 2025 returns ([CDTFA rate history](https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-rates-history.htm); [FTB Form 540 booklet for 2025](https://www.ftb.ca.gov/forms/2025/2025-540-booklet.html))
+
+- The 7.25% base rate, the $500,000 test and the filing rules applied throughout 2025. Check a 2025 period against the district rate for that date, not today's.
+- Individuals report 2025 use tax on line 91 of the 2025 Form 540. The tax was due 15 April 2026. The automatic extension to 15 October 2026 is for filing: a return filed by then avoids the late filing penalty, but interest runs from 15 April 2026.
+- A qualified purchaser's yearly use tax return for 2025 was due 15 April 2026 ([CDTFA filing dates](https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-returns-filing-dates.htm)).
+
+## Completion checklist ([CDTFA filing dates](https://www.cdtfa.ca.gov/taxes-and-fees/sales-use-tax-returns-filing-dates.htm))
+
+- [ ] Physical presence checked, including fulfillment-center inventory.
+- [ ] 2025 and 2026 California sales totalled with related persons and marketplace sales; "more than $500,000" applied.
+- [ ] Permits held for each place where sales are negotiated.
+- [ ] Facilitator registration proved; facilitated sales deducted.
+- [ ] Each product classified (food, supplements, software, repair parts, fabrication).
+- [ ] Rate looked up by address and date; Schedules A and C or B completed.
+- [ ] Resale certificates timely, complete and taken in good faith.
+- [ ] Use tax accrued on untaxed purchases and resale stock used.
+- [ ] Frequency, prepayment notice and due dates confirmed; records kept four years.
 
 <!-- openaccountants-cta-block -->
 

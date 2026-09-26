@@ -2,431 +2,296 @@
 name: nj-cbt-and-bait
 description: New Jersey Corporation Business Tax (CBT) and Business Alternative Income Tax (BAIT)
 jurisdiction: US-NJ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-09-25
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# NJ Cbt And Bait
+# New Jersey Corporation Business Tax (CBT) and Pass-Through Business Alternative Income Tax (BAIT)
 
-## New Jersey Corporation Business Tax (CBT) and Business Alternative Income Tax (BAIT)
+## Scope and who this is for
 
-CBT 9% on net income (graduated 6.5%/7.5%/9% by bracket) plus the 2.5% Corporate Transit Fee surtax on entities with allocated net income above $10M (effective tax periods ending on or after July 1, 2024 and running five years), producing an 11.5% top marginal rate, the highest C-corp rate in the United States. Single sales factor with market-based sourcing of services to the customer's NJ location, mandatory water's-edge unitary combined returns over 50% common ownership, 95% GILTI deduction, 20-year PNOL pool. BAIT PTET election graduated 5.675% to 10.9%, Form CBT-100 and Form PTE-K1 owner credit. Tax year 2025.
+This Guide covers two New Jersey taxes that are often planned together:
 
-## 1. Scope and overview
+- the **Corporation Business Tax (CBT)** on C corporations and combined groups (Forms CBT-100 and CBT-100U), including the rates, the minimum tax, the Corporate Transit Fee, mandatory unitary combined reporting, single sales factor apportionment, economic nexus, the NOL and PNOL rules, estimated tax, extensions and penalties;
+- the elective **Pass-Through Business Alternative Income Tax (BAIT, also called PTE)** paid by partnerships, New Jersey S corporations and LLCs taxed as either (Form PTE-100), and the owner's refundable credit.
 
-- **Corporation Business Tax (CBT)** — Imposed on every domestic corporation and every foreign corporation deriving receipts from sources in New Jersey, exercising its corporate franchise in New Jersey, or doing business, employing or owning capital or property, or maintaining an office in New Jersey. Applies to C-corporations and to S-corporations electing to be treated as C-corps for New Jersey purposes (since 2022, federal S election is automatically respected for NJ unless the entity affirmatively elects otherwise).  _(N.J.S.A. 54:10A-1 et seq.; N.J.S.A. 54:10A-5.22)_
-- **Business Alternative Income Tax (BAIT)** — An elective pass-through entity tax ("PTET") at the entity level that generates a refundable credit at the owner level, designed as a workaround to the federal $10,000 SALT cap under IRC §164(b)(6).  _(P.L. 2019 c. 320 (Pass-Through Business Alternative Income Tax Act), substantially amended by P.L. 2021 c. 419 (effective tax years beginning on or after January 1, 2022))_
-- **In-scope taxpayers** — New Jersey C-corporations and their multistate groups filing CBT-100 or CBT-100U; New Jersey partnerships, LLCs taxed as partnerships, and federal S-corporations considering or making the BAIT election on Form PTE-100; Owners of pass-through entities that have elected BAIT, claiming the refundable credit on Form NJ-BUS-1 / PTE-K1.
-- **Out of scope items** — NJ Gross Income Tax (GIT) individual returns — covered by a separate nj-gross-income-tax skill (referenced only where it interacts with BAIT); Insurance Premiums Tax, Banking and Financial Business Tax under N.J.S.A. 54:10A-34 et seq. (different rate structure), Public Utility Franchise Tax, Petroleum Products Gross Receipts Tax; NJ Sales and Use Tax — separate skill; Pre-2018 CBT periods (pre-federal-tax-reform, pre-combined-reporting era); CBT-100S (S-corporation specific form, pre-2022 mechanics) — post-2022 S-corps generally do not file CBT-100S since the federal S election is automatically respected unless reversed.  _(N.J.S.A. 54:10A-34 et seq.)_
+Figures are for **tax year 2026** where published. The latest CBT instructions are the 2025 set, used for accounting periods ending 31 July 2025 through 30 June 2026. The 2026 CBT-150 estimated tax instructions and the 2026 PTE-100 instructions are published. Each figure carries its year. A dated section covers **2025 returns**.
 
-## 2. CBT rates and brackets (tax year 2025)
+Not covered: the individual NJ-1040 and NJ-1040NR themselves (see the **nj-income-tax** Guide, which shows where the BAIT credit goes on the return), banking and financial corporations' special rules, insurance premiums tax, public utility taxes, tax credit programs, and New Jersey sales tax.
 
-New Jersey is one of the few states that imposes a graduated corporate income tax rate structure. Per N.J.S.A. 54:10A-5(c):
+## Ask the client first
 
-**CBT rates and brackets (tax year 2025)**  _(N.J.S.A. 54:10A-5(c))_
+- What is the entity for federal tax purposes (C corporation, S corporation, partnership, disregarded entity)? If a federal S corporation, does it file as a **New Jersey S corporation** (Form CBT-100S) or as a New Jersey C corporation?
+- What does it have or do in New Jersey: office, employees, property, inventory (including in a marketplace warehouse), and New Jersey receipts? How many separate transactions are delivered to New Jersey customers?
+- Does it sell only tangible goods, and is soliciting orders its only New Jersey activity? What does its website or app do after the sale?
+- Is it more than 50% commonly owned with other corporations, and are they in a unitary business? Which filing method is the group using (water's-edge, world-wide or affiliated group), and when was it elected? ([CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf))
+- What is the allocated taxable net income (after allocation and NOLs)? Is it near $50,000, $100,000 or $10 million? ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf))
+- New Jersey gross receipts, and the **total payroll of the whole affiliated or controlled group** (is it $5,000,000 or more)? ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf))
+- Loss history: PNOLs from periods ending before 31 July 2019, post-allocation NOLs, and which of those arose in periods beginning after 31 July 2023?
+- Last year's total CBT liability and the prior year's gross receipts (for estimated tax).
+- For a pass-through entity: who the owners are (resident or nonresident individuals, estates, trusts, corporations, partnerships, tax-exempt owners), each owner's share of distributive proceeds, whether it files NJ-1065 or CBT-100S, whether BAIT has been elected for the year, and whether it files a composite return (NJ-1080-C).
+- For owners: do they also pay another state's pass-through entity tax, and do they have other income that BAIT will not cover?
 
-| Allocated NJ entire net income | Marginal CBT rate |
-| --- | --- |
-| $0 – $50,000 | 6.5% |
-| $50,001 – $100,000 | 7.5% |
-| Over $100,000 | 9.0% |
+## The method, step by step
 
-- **Cliff structure** — This is a "cliff" structure operationalized through the form. The 6.5% and 7.5% reduced rates apply only when the taxpayer's entire net income (allocated to NJ — i.e., post-apportionment, post-NOL) is at or below the bracket ceiling. A taxpayer with $100,001 in allocated entire net income pays 9% on all $100,001, not just the dollar above $100,000. There is no rate "smoothing" through marginal calculation: the brackets work like an alternative minimum-tax-style step function. For multistate groups, the determination is made at the entity / member level on allocated NJ net income, not on worldwide income.  _(Form CBT-100 line instructions)_
-- **S-corp minimum tax note** — S-corporations that have not affirmatively elected to be taxed as C-corps for NJ purposes (post-P.L. 2022 c. 133) flow through to shareholders for GIT purposes, but the S-corp itself still files an informational CBT-100S in some cases and pays a minimum tax (see §4).  _(P.L. 2022 c. 133)_
+### Step 1: does the corporation have nexus? ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [TB-108(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf))
 
-## 3. Corporate Transit Fee — the 2.5% surtax (critical 2024–2029 issue)
+- Every domestic (New Jersey) corporation files. A foreign corporation files if it holds New Jersey authority to do business, does business, employs or owns capital or property, maintains an office, derives receipts, engages in contacts, or keeps a stock of goods in New Jersey.
+- **Bright-line economic nexus** (privilege periods ending on and after 31 July 2023): a corporation has nexus if, in its tax year, New Jersey receipts are **more than $100,000**, or **200 or more** separate transactions are delivered to New Jersey customers. For a service, "delivered" means where the benefit is received. A corporation meeting neither threshold, with no other nexus, does not have nexus on receipts alone.
+- **Public Law 86-272** protects only the solicitation of orders for tangible goods. TB-108(R) lists internet activities that go beyond it, for example post-sale chat or email support through the website, placing cookies to gather data that is sold, and warranty or upgrade services delivered over the internet. A corporation claiming P.L. 86-272 checks the box on page 1, still pays the minimum tax, and is not subject to the Corporate Transit Fee.
+- Inventory held in a New Jersey marketplace warehouse is property in New Jersey, so it creates nexus ([Division nexus page](https://www.nj.gov/treasury/taxation/organization/audit-taxtype-nexus.shtml)).
 
-### 3.1 History — the original temporary surtax (2018–2023)
+### Step 2: separate return or combined return? ([CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf); [TB-109](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb109.pdf); [TB-86(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb86r.pdf))
 
-- **Original temporary CBT surtax history** — The "temporary CBT surtax" was enacted by P.L. 2018 c. 48 at 2.5% on allocated entire net income above $1 million for privilege periods ending July 31, 2018 through December 31, 2019, then reduced to 1.5% for periods ending in 2020–2021, then partially extended at 2.5% under P.L. 2020 c. 95 through privilege periods ending December 31, 2023. The original surtax expired for privilege periods ending on or after January 1, 2024, reducing the top NJ effective rate temporarily back to 9%.  _(P.L. 2018 c. 48; P.L. 2020 c. 95)_
+- **Mandatory combined reporting** applies for group privilege periods ending on and after 31 July 2019. A combined group is all companies with **common ownership** (more than 50% of voting control owned directly or indirectly by a common owner) that are engaged in a **unitary business**, where at least one is subject to CBT. Combined returns are mandatory, not elective. The group files one Form CBT-100U through its **managerial member**.
+- **Filing methods:** the default is **water's-edge** (entities with significant business operations in the United States, with inclusions and exceptions). The group may instead elect **world-wide** or **affiliated group** on a timely filed original return. The election binds the year of election plus five later years (usually six tax years). It can be revoked early only prospectively, for reasonable cause, by written request to the Director. It cannot be made by amending a filed return.
+- **Who is in and out:** New Jersey S corporations only if they elect in. Partnerships and disregarded entities are not members; their income flows to the corporate owner. REITs, RICs and investment companies file separately unless captive.
+- **Allocation:** for privilege periods ending on and after 31 July 2023 the group uses the **Finnigan method**. All members' New Jersey receipts go into the numerator, and the tax rate is set at group level.
+- **P.L. 86-272 in a group:** for privilege periods ending on and after 31 July 2023 the group is one taxpayer. A member's own P.L. 86-272 protection does not protect the group if another member exceeds P.L. 86-272 or has New Jersey activity it does not protect ([CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf)). The member-by-member test applied only to periods ending before 31 July 2023 ([Division notice](https://www.nj.gov/treasury/taxation/cbt/combinedgroupsrevision.shtml)).
 
-### 3.2 The Corporate Transit Fee — reinstated under the FY2025 budget (P.L. 2024 c. 22)
+### Step 3: entire net income ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [TB-110(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb110.pdf); [OBBBA renaming notice](https://www.nj.gov/treasury/taxation/cbt/obbba-gilti-fdii-renaming.shtml))
 
-- **Corporate Transit Fee key parameters** — Rate: 2.5%. Base: allocated taxable net income exceeding $10 million (the higher $10M threshold replaces the prior $1M threshold of the expired temporary surtax — this is the legislative compromise that targets only the very largest filers). Effective dates: privilege periods ending on or after July 1, 2024, through privilege periods ending before January 1, 2029 (a five-year sunset, though prior NJ history suggests possible extension). Combined groups: applied at the combined group level on allocated NJ taxable net income of the group, then allocated proportionally among taxable members per N.J.S.A. 54:10A-4.6 ordering rules. Calculation base: taxable net income after apportionment but before application of net operating loss carryovers (PNOLs) and before dividend exclusions — this is the distinction from the regular CBT rate base. The Division of Taxation has been explicit that the Transit Fee base does not benefit from PNOLs in the way the regular rate base does, but it does come after apportionment. Dedication: revenues are statutorily dedicated to NJ Transit operations (hence "Corporate Transit Fee" branding rather than "surtax").  _(P.L. 2024 c. 22; N.J.S.A. 54:10A-5.41; N.J.S.A. 54:10A-4.6)_
-- **Corporate Transit Fee rate** — 2.5%  _(N.J.S.A. 54:10A-5.41)_
-- **Corporate Transit Fee income threshold** — $10,000,000 USD  _(N.J.S.A. 54:10A-5.41)_
+- Start from federal taxable income (the federal return is attached) and make New Jersey modifications on Schedule A.
+- **NCTI (formerly GILTI)** is treated as a dividend. The dividend exclusion is **100%** for dividends from qualified subsidiaries (at least **80%** owned by vote and by shares) and **50%** for other dividends where at least **50%** is owned; nothing below that. (TB-110(R) says "more than 50%" for the 50% band, while the CBT-100 instructions say "at least 50%"; at exactly 50% ownership, check with the Division.) The whole exclusion is then reduced by a clawback of **5%** of all dividends and deemed dividends. The clawback does not apply to intercompany dividends eliminated in a combined group; those are not eligible for the exclusion either. The federal section 250 deductions are not allowed, and FDDEI is included gross.
+- For tax years beginning after 31 December 2025 the federal law renamed GILTI as NCTI and FDII as FDDEI. New Jersey's treatment is unchanged.
 
-### 3.3 Effective top rate
+### Step 4: allocate with the single sales factor ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf); [TB-108(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf))
 
-- **Combined effective top rate calculation** — For a calendar-year filer in 2025 with NJ allocated entire net income above $10M: Regular CBT: 9.0%; Corporate Transit Fee: 2.5%; Combined effective rate: 11.5%. This is the highest corporate income tax rate in the United States for tax year 2025, exceeding Minnesota (9.8%), Illinois (9.5% incl. PPRT), and Pennsylvania (which is on a declining schedule). Reviewer must remember that this rate applies only to the portion of allocated taxable net income above $10M; the first $10M is taxed at the regular 9% (or graduated bracket if income is in the lower bands, which by definition it is not if the $10M threshold is crossed).
+- Business income is allocated by a **single sales (receipts) factor** on Schedule J: New Jersey receipts over receipts everywhere, carried to six decimal places. Goods are New Jersey receipts if shipped to points in New Jersey, or if possession passes to the customer in New Jersey. Services are sourced where the benefit is received.
+- Exclusions and adjustments come before the factor is computed. Nonoperational income is dealt with on Schedule O and nonunitary partnership income separately.
+- The result (allocated entire net income before NOLs) is Schedule A, Part II, line 19.
 
-### 3.4 Short-period and fiscal-year issues
+### Step 5: NOLs, and the PNOL conversion ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [Worksheet 500-P](https://www.nj.gov/treasury/taxation/pdf/current/cbt/500-p.pdf))
 
-- **Fiscal year catch tests** — For non-calendar-year filers, the "tax period ending on or after July 1, 2024" test catches: Fiscal years ending July 31, 2024 → full Transit Fee year (caught the first time); Fiscal years ending June 30, 2024 → not caught (period ended before July 1, 2024); Calendar year 2024 (12/31/2024) → caught (full year despite the law passing mid-year — there is no proration). Reviewer caution: for the first affected fiscal year, ALL income above $10M for the full 12 months is subject to the Fee, not just the post-July 2024 portion.  _(Division's TB-103 guidance)_
+- **PNOLs** are losses from tax years ending **before 31 July 2019**. To use them, convert the unused, unexpired amounts to a post-allocation basis on Worksheet 500-P: multiply each carryover by the allocation factor from the **last tax period ending before 31 July 2019**. PNOLs are deducted before any NOL.
+- **Post-allocation NOLs** are losses from tax years ending on or after 31 July 2019, already on an allocated basis.
+- Both carry forward **20 privilege periods** after the loss period. There is **no carryback**.
+- **80% limit:** for tax years ending on or after 31 July 2023, NOLs are limited to **80%** of taxable net income (the federal section 172(a)(2) limit, with New Jersey dates). On Form 500 the limit applies to NOLs from periods beginning after 31 July 2023; NOLs from periods ending on or after 31 July 2019 and beginning before 1 August 2023 are not limited.
+- Federal rules on consolidated NOLs, ownership changes and reorganisations generally apply where consistent with the CBT Act. Losses excluded from income under section 108 reduce PNOLs first, then NOLs, after allocation.
+- In a combined group, NOLs are also limited to **80%** of the group's taxable net income ([CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf); see TB-95(R) for members joining or leaving).
+- Allocated entire net income minus the PNOL and NOL deductions is **taxable net income** (Schedule A, Part II, line 21).
 
-## 4. Minimum tax
+### Step 6: tax at the graduated rate, compare with the minimum tax ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf))
 
-Under N.J.S.A. 54:10A-5(e), every CBT taxpayer (including loss filers and S-corps) owes at least the minimum tax based on New Jersey gross receipts for the privilege period (not net income):
+- One rate (6.5%, 7.5% or 9%, table below) applies to the **whole** tax base (page 1, line 1), not in slices.
+- Short periods: the 7.5% rate applies only if prorated net income is not more than **$8,333** a month, and the 6.5% rate only if it is not more than **$4,166** a month.
+- For a combined group the rate is imposed at group level on the group's base.
+- The tax is the **greater** of the rate tax and the minimum tax (table below), less credits. Most credits cannot take the tax below the minimum tax (there are rare exceptions); follow each credit form. In a combined group the minimum is $2,000 times the number of taxable members.
 
-**Minimum tax by NJ gross receipts**  _(N.J.S.A. 54:10A-5(e))_
+### Step 7: add the Corporate Transit Fee ([Division notice](https://www.nj.gov/treasury/taxation/cbt/corporatetransitfee.shtml); [CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf))
 
-| NJ gross receipts | Minimum tax |
-| --- | --- |
+- **Who:** any taxpayer whose taxable net income (Schedule A, Part III, line 2a, 2b or 2c) is **over $10 million**, for privilege periods **beginning on and after 1 January 2024 through 31 December 2028** (P.L. 2024, c.20). So it applies to 2025 and 2026, and to periods beginning up to 31 December 2028.
+- **How much:** **2.5%** of the whole line 2 amount, not only the excess over $10 million. The base is taxable net income, so it is measured **after** allocation and after the PNOL and NOL deductions.
+- **Credits:** tax credits cannot be used against the fee. Only payments (installments, extension payments, prior overpayments) reduce it ([New laws summary](https://www.nj.gov/treasury/taxation/newlegislation.shtml)).
+- **Exempt:** public utilities, New Jersey S corporations filing CBT-100S, and P.L. 86-272 filers.
+- **Combined groups:** the group is the taxpayer and the fee is imposed at group level on the group's taxable net income. Income of a member that is a public utility or S corporation is not excluded when testing or computing it.
+- **Extension beyond 2028:** the Division's list of new laws shows no change to the end date as of 25 September 2026. Check the list and the Division notice before relying on a year after 2028.
+
+### Step 8: BAIT for a pass-through entity ([Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml); [BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml); [2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf))
+
+1. **Eligibility.** Partnerships, **New Jersey** S corporations, and LLCs classified as a partnership or S corporation, with **at least one member who is an individual, estate or trust** liable for New Jersey gross income tax on their share. Single-member LLCs and sole proprietorships cannot elect. A federal S corporation filing in New Jersey as a C corporation is not a New Jersey S corporation.
+2. **Election.** Register with the Division of Revenue and Enterprise Services, then elect **electronically, every year**, by the **original due date** of Form PTE-100 (15 March for a calendar year) and before filing the return. An extension of the return does not extend the election; if it is not made by the original due date, the PTE-100 will not be accepted. It cannot be made retroactively, and it must be in place **before any payment**, including estimated payments, is accepted. Elections do not carry forward. The entity can revoke electronically by the same original due date.
+3. **Base.** Tax is on the **sum of every member's share of distributive proceeds**, including tax-exempt members:
+   - partnership: resident individual, estate and trust members on **all** their income; all other members (nonresidents, corporations, other entities) on New Jersey source income only;
+   - S corporation: shareholders on New Jersey source income only.
+   - Shares follow the entity's NJ-1065 or CBT-100S, including the add-back of the BAIT deducted federally. If the entity has an overall loss, no BAIT is due, but the PTE-100 is still filed.
+4. **Rate.** Apply the brackets (table below) to the **aggregate** base, not member by member. No credits reduce BAIT.
+5. **Share out.** Each member with a positive share gets tax in proportion to their share of the total (negative shares are added back first for this step). Report it on Schedule PTE-K-1.
+
+### Step 9: the owner's side ([Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml); [BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+
+- **Individuals, estates, trusts:** the share of BAIT is a **refundable** credit on NJ-1040, NJ-1040NR or NJ-1041. On the 2025 NJ-1040 it goes on line 63 through Schedule NJ-BUS-1, with Schedule PTE-K-1 enclosed. Residents of an S corporation still owe tax on its non-New Jersey income, and owners may still need NJ-1040-ES payments for other income.
+- **Nonresident owners** still file a nonresident return if they meet the gross income tax filing threshold. From 2022 a partnership need not remit nonresident partner tax for a partner who reasonably expects a full refund of it from their BAIT credit.
+- **Composite returns:** electing BAIT **does not prevent** a composite return (NJ-1080-C) for qualifying nonresident members who elect in. The composite return has a line for their share of BAIT. Composite payments cannot be moved to the BAIT account, or the reverse.
+- **C corporation members:** the share stays in entire net income. The BAIT credit (N.J.S.A. 54:10A-5.43) is refundable from 2022 but cannot reduce CBT below the minimum tax; tax credits cannot be used against the Corporate Transit Fee.
+- **S corporation members:** refundable credit against regular and minimum tax. **Exempt corporations** (N.J.S.A. 54:10A-3) claim a refund on Form A-3730.
+- **Tiered entities:** an upper-tier partnership or S corporation can claim the credit on its own return, pass it to its individual, estate or trust owners, or use it on its own PTE-100. The Division's BAIT page allows a partnership to pass it through only if its partners are all individuals, estates or trusts. Tax remitted for it by a lower tier that did **not** elect BAIT cannot be credited against its BAIT.
+- **Resident credit for another state's PTET:** a resident may take the Schedule NJ-COJ credit for a pass-through entity tax paid by a partnership or New Jersey S corporation to another state, D.C. or a political subdivision, if it is **substantially similar** to BAIT and is on income derived there that New Jersey also taxes. The credit cannot exceed what would have been allowed had the income been taxed to the individual. The Division's list includes New York's (Tax Law §862) and New York City's. Keep the entity's statement of the owner's share of income and tax.
+- **Federal effect:** a state income tax imposed on and paid by the partnership or S corporation is deducted at entity level, outside the owner's SALT cap ([IRS Notice 2020-75](https://www.irs.gov/pub/irs-drop/n-20-75.pdf)). The **us-pte-state-matrix** Guide has the cap figures.
+
+## Figures with years
+
+### CBT ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [CBT-100S instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100sins.pdf); [Corporate Transit Fee notice](https://www.nj.gov/treasury/taxation/cbt/corporatetransitfee.shtml))
+
+The 2025 instructions are the latest published. The statutory rates, the minimum tax and the fee have no change announced for 2026 ([New laws summary](https://www.nj.gov/treasury/taxation/newlegislation.shtml)), so the same figures apply to 2026 unless the 2026 instructions say otherwise.
+
+| Item | 2025 and 2026 |
+|---|---|
+| Tax base $50,000 or less | 6.5% of the whole base |
+| More than $50,000, not more than $100,000 | 7.5% of the whole base |
+| More than $100,000 | 9% of the whole base |
+| Corporate Transit Fee (periods beginning 2024 through 2028) | 2.5% of all taxable net income, if it is over $10 million |
+
+**Minimum tax, separate filers (C corporations)**
+
+| New Jersey gross receipts | Minimum tax |
+|---|---|
 | Less than $100,000 | $500 |
-| $100,000 to under $250,000 | $750 |
-| $250,000 to under $500,000 | $1,000 |
-| $500,000 to under $1,000,000 | $1,500 |
+| $100,000 or more but less than $250,000 | $750 |
+| $250,000 or more but less than $500,000 | $1,000 |
+| $500,000 or more but less than $1,000,000 | $1,500 |
 | $1,000,000 or more | $2,000 |
+| Member of an affiliated or controlled group (IRC §1504 or §1563) with total group payroll of $5,000,000 or more | $2,000, whatever its receipts |
 
-- **Affiliated group minimum tax floor** — For members of an affiliated or controlled group with total payroll of $5,000,000 or more, the minimum tax is $2,000 regardless of the individual member's NJ gross receipts. This catches small NJ subsidiaries of large multinationals.  _(N.J.S.A. 54:10A-5(e))_
-- **Combined group minimum tax computation** — Each taxable member computes its own minimum tax based on its NJ gross receipts; the combined group's total minimum tax is the sum of member minimum taxes, subject to the $2,000 floor per member where the $5M affiliated group test is met.
-- **Foreign corporations minimum tax** — Foreign corporations not otherwise subject to CBT but registered to do business in NJ are still liable for the minimum tax.
+**Minimum tax, New Jersey S corporations (CBT-100S)**
 
-## 5. Apportionment — single sales factor, market-based sourcing
+| New Jersey gross receipts | Minimum tax |
+|---|---|
+| Less than $100,000 | $375 |
+| $100,000 or more but less than $250,000 | $562 |
+| $250,000 or more but less than $500,000 | $750 |
+| $500,000 or more but less than $1,000,000 | $1,125 |
+| $1,000,000 or more | $1,500 |
+| Member of an affiliated or controlled group with total payroll of $5,000,000 or more | $2,000 |
 
-### 5.1 Single sales factor (effective since 2014, fully phased in 2019)
+- Payroll means the whole affiliated or controlled group's payroll, not New Jersey payroll. For a period shorter than 12 months, the higher minimum applies if prorated payroll exceeds **$416,667** a month. The minimum tax itself is not prorated.
+- **Combined groups:** each member **with nexus** pays a **$2,000** minimum tax, whatever its receipts. Members without nexus, disregarded entities and partnerships pay none as members ([TB-86(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb86r.pdf); [CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf)).
+- **New Jersey S corporations** pay tax at the CBT rates only on income subject to federal corporate income tax; otherwise only the minimum tax applies. For privilege periods beginning on or after 22 December 2022 a federal S corporation can file as a New Jersey S corporation without a prior New Jersey election, by submitting the shareholder jurisdictional consent and proof of federal S status ([CBT-100S instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100sins.pdf)).
 
-- **NJ sales factor formula** — NJ sales factor = NJ receipts / total receipts everywhere  _(N.J.S.A. 54:10A-6)_
-- **Single sales factor adoption** — NJ uses a 100% single sales factor under N.J.S.A. 54:10A-6. Property and payroll factors were phased out and are no longer in the apportionment formula.  _(N.J.S.A. 54:10A-6)_
+### BAIT ([2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf); [2025 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2025/pte100instr.pdf); [2021 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2021/pte100instr.pdf))
 
-### 5.2 Market-based sourcing of services and intangibles
+The brackets are the same for 2025 and 2026. Tax = distributive proceeds × rate − subtraction.
 
-- **Market-based sourcing rules** — P.L. 2018 c. 48 moved NJ from cost-of-performance sourcing to market-based sourcing for service receipts and intangible-property receipts, effective for privilege periods beginning on or after January 1, 2019. Services are sourced to where the customer receives the benefit of the service: B2B services: typically the customer's office or operating location that benefits from the service. Where the benefit is received in multiple states, allocate based on the customer's use of the service (records of customer locations, contractually agreed delivery points, etc.). B2C services: customer's billing or residential address. Intangible receipts (royalties, licenses, franchise fees) are sourced to where the intangible is used by the customer. Tangible personal property sales: continue to be sourced to the destination state under N.J.S.A. 54:10A-6(B)(1) (the traditional UDITPA destination test).  _(P.L. 2018 c. 48; N.J.S.A. 54:10A-6(B)(1))_
+| Distributive proceeds (line 1) | Rate | Subtract |
+|---|---|---|
+| Over $0, not over $250,000 | 5.675% | $0 |
+| Over $250,000, not over $1,000,000 | 6.52% | $2,112.50 |
+| $1,000,000 and over | 10.9% | $45,912.50 |
 
-### 5.3 Throwout repealed; no throwback
-
-- **Throwout repeal and no throwback rule** — NJ's controversial "throwout" rule (which excluded from the denominator receipts assigned to states where the taxpayer was not taxable) was repealed effective for periods ending after June 30, 2010. NJ has no throwback rule. Receipts sourced to states where the taxpayer has no nexus simply remain in the denominator but not the numerator, reducing the NJ factor.
-
-### 5.4 P.L. 86-272 — narrowed by NJ TB-108 (2023)
-
-- **TB-108 P.L. 86-272 immunity narrowing** — NJ adopted the MTC's 2021 P.L. 86-272 reinterpretation through Technical Bulletin TB-108 (December 2022, revised 2023). Out-of-state sellers with NJ customers who engage in any of the following on the seller's website lose P.L. 86-272 immunity and become subject to CBT: Post-sale chat or customer support to NJ customers (beyond solicitation); Cookies that track NJ customer behavior for non-solicitation purposes; Online application portals, account login pages, and similar non-solicitation interactions; Streaming content delivery to NJ users. This is litigation-prone and the reviewer should flag any out-of-state e-commerce or digital-services taxpayer claiming P.L. 86-272 protection for further factual development.  _(NJ Technical Bulletin TB-108)_
-
-## 6. Mandatory water's-edge unitary combined returns
-
-### 6.1 Combined reporting requirement (since 2019)
-
-- **Combined reporting requirement details** — P.L. 2018 c. 48 introduced mandatory combined reporting for privilege periods ending on and after July 31, 2019. NJ moved from separate-entity reporting to water's-edge unitary combined as the default. Under N.J.S.A. 54:10A-4.6 through 4.11: Common ownership test: more than 50% direct or indirect ownership (by vote OR value) of the voting stock by a common owner. Unitary business test: the businesses must be engaged in a unitary business (functional integration, centralized management, economies of scale — the classic Mobil Oil factors as adopted by NJ). Combined group: all entities meeting both tests must file as a combined group on Form CBT-100U with a single "managerial member" designated to file on behalf of the group.  _(P.L. 2018 c. 48; N.J.S.A. 54:10A-4.6 through 4.11)_
-
-### 6.2 Water's-edge default
-
-- **Water's-edge default composition** — The default combined group includes: All US members of the unitary business (domestic corps and entities treated as corps). Non-US members only to the extent they have 20% or more of their property, payroll, and sales factors sourced to the US (the "20% effectively connected" inclusion test), or if they are tax-haven domiciliaries listed by the Division. All members are included regardless of whether each individually has NJ nexus — the combined group is the taxable unit.
-
-### 6.3 Alternative elections
-
-- **Managerial member election options** — The managerial member may elect (binding for 6 years): World-wide combined election: include all foreign affiliates regardless of US factor presence. Affiliated group election: include all federal §1504 affiliates (broader than unitary, narrower than worldwide). Each election locks the group in for 6 privilege periods; the choice is fact-driven and depends on the global effective rate profile.
-
-### 6.4 Mechanics
-
-- **Combined return mechanics** — Each member computes its own ENI on a separate-company basis using federal taxable income as the starting point, then NJ modifications. Intercompany transactions between combined group members are eliminated in the combined return. The combined group's total ENI is apportioned using a single-sales factor computed at the group level (the so-called "Finnigan" approach — all members' NJ receipts flow into the numerator regardless of whether the individual member has nexus). Each taxable member is then allocated its share of the combined NJ tax based on its proportion of group factors. The Corporate Transit Fee (§3) is computed at the group level then allocated.
-
-### 6.5 PNOLs (Prior Net Operating Losses) — see §8
-
-- **PNOLs as member-specific assets** — PNOLs are member-specific assets that survive the transition to combined reporting; they cannot generally be shared across members of the group (with limited exceptions for true successor entities under §381-type events).
-
-## 7. GILTI treatment
-
-NJ partially conforms to the federal GILTI inclusion under IRC §951A, with significant decoupling.
-
-### 7.1 The 95% deduction position
-
-- **NJ GILTI 95% deduction treatment** — Following P.L. 2020 c. 118 (signed November 4, 2020) and the Division's subsequent guidance (TB-92, TB-93), NJ treats GILTI as follows: GILTI is included in NJ entire net income through federal taxable income (the federal starting point). NJ allows a 95% deduction of the GILTI inclusion (gross GILTI, not net of the §250 deduction), treating GILTI as a dividend received from a foreign subsidiary for purposes of N.J.S.A. 54:10A-4(k)(5). The remaining 5% of GILTI is taxable at NJ rates (the deemed-expense disallowance representing direct and indirect expenses associated with producing the dividend, applied at the statutory 5% rate). The federal IRC §250(a) GILTI deduction (50% for 2018–2025) is not separately allowed because NJ has its own 95% mechanism.  _(P.L. 2020 c. 118; TB-92, TB-93; N.J.S.A. 54:10A-4(k)(5))_
-- **NJ GILTI deduction percentage** — 95%  _(N.J.S.A. 54:10A-4(k)(5))_
-
-### 7.2 §250 FDII deduction
-
-- **FDII deduction conformity** — NJ allows the federal §250 FDII deduction because it flows through federal taxable income and NJ has not separately decoupled. Reviewer should confirm — there is recurring legislative pressure to decouple FDII, and budget proposals occasionally include a decoupling provision.
-
-### 7.3 Apportionment of GILTI
-
-- **GILTI apportionment method** — Per TB-92, GILTI included at 5% is apportioned using the regular single-sales factor of the including US member — it does not get a special "GILTI factor" treatment as in some other states (e.g., the failed Maryland approach). The CFC's foreign receipts are not added to the denominator.  _(TB-92)_
-
-### 7.4 Subpart F
-
-- **Subpart F income treatment** — Subpart F income receives the same 95% dividend deduction treatment under N.J.S.A. 54:10A-4(k)(5), so 5% is taxable. This long predates GILTI and applies the same conceptual deemed-expense disallowance.  _(N.J.S.A. 54:10A-4(k)(5))_
-
-### 7.5 §163(j) interest limitation
-
-- **§163(j) separate-company computation** — NJ conforms to federal §163(j) at the entity level (separate-company computation for combined group members). The Division has confirmed that the combined group does not get to compute §163(j) on a consolidated basis even though it files a combined return — each member's §163(j) limit is separately computed.
-
-## 8. Net operating losses (PNOL pool)
-
-### 8.1 Pre-2019 PNOLs frozen and converted
-
-- **PNOL conversion** — When NJ moved to combined reporting and made other base changes effective 2019, all pre-2019 net operating losses were converted to "Prior Net Operating Loss conversion carryovers" (PNOLs) under N.J.S.A. 54:10A-4(k)(6)(D). This mirrors the New York PNOL conversion of 2015. The conversion preserves the dollar value of the loss but ties it to the new combined-reporting and single-sales framework.  _(N.J.S.A. 54:10A-4(k)(6)(D))_
-
-### 8.2 Carryforward period
-
-- **NOL/PNOL carryforward rules** — PNOLs: 20-year carryforward from the year the loss was incurred. Post-2019 NOLs: 20-year carryforward. No carryback is permitted under NJ law (NJ did not adopt the federal CARES Act 5-year carryback). NOL/PNOL deduction is per-member in a combined return — no sharing across the group (subject to §381-type exceptions).
-
-### 8.3 Order of application
-
-- **Order of application for combined group member** — For a combined group member with both PNOLs and post-2019 NOLs: 1. Apply current year deductions and exclusions (including GILTI 95% deduction). 2. Apply PNOLs first (oldest first, FIFO). 3. Apply post-2019 NOLs next (oldest first, FIFO). 4. Compute regular CBT. 5. Corporate Transit Fee is applied to the base BEFORE NOL/PNOL absorption. (TB-103 specifically addresses this — the Transit Fee does not benefit from NOL/PNOL deduction; this is a critical reviewer point that can swing seven-figure tax bills.)  _(TB-103)_
-
-### 8.4 §382 limitations
-
-- **§382 ownership-change loss limitations** — NJ generally follows federal §382 ownership-change loss limitations, with the limitation computed on a state-specific basis tied to NJ entire net income, not federal taxable income. The Division's audit position is that the §382 base limitation amount (value of the loss corporation × long-term tax-exempt rate) is the same as federal, but the application is to NJ ENI.
-
-## 9. Filing, payment, and estimated tax
-
-### 9.1 Form CBT-100 / CBT-100U
-
-- **CBT filing forms** — Form CBT-100 — separate-entity filer (rare post-2019; usually only for entities not in a combined group). Form CBT-100U — mandatory unitary combined return (the standard filing form for almost all multi-entity NJ taxpayers). Form CBT-100S — S-corporation (rarely used post-P.L. 2022 c. 133; only for the small population of entities that affirmatively opted out of NJ S treatment). Form BFC-1 — banking and financial corporations (out of scope of this skill).  _(P.L. 2022 c. 133)_
-
-### 9.2 Due dates
-
-- **CBT due dates** — Original return: 15th day of the 4th month following the close of the privilege period. For calendar-year filers: April 15. Extension: automatic 6-month extension via Form CBT-200-T (file by original due date, must pay 90% of tax to avoid extension penalty). Extended due date for calendar year: October 15. Combined returns: managerial member files on behalf of the group; only one return per group.
-
-### 9.3 Estimated payments
-
-CBT estimated tax is required when total CBT (after credits) exceeds $500. Quarterly installment due dates:
-
-**CBT estimated tax installments**
-
-| Installment | Calendar-year due | Required percentage of prior-year tax (110% if prior-year tax ≥ $50K) |
-| --- | --- | --- |
-| 1st | April 15 | 25% |
-| 2nd | June 15 | 50% cumulative |
-| 3rd | September 15 | 75% cumulative |
-| 4th | December 15 | 100% cumulative |
-
-- **Estimated tax voucher and safe harbor** — Estimated tax voucher: Form CBT-150. For new corporations, the safe harbor in the first year is generally the minimum tax. For corporations with prior-year tax under $50,000, the standard 100% prior-year safe harbor applies; for $50,000 and over, 110% of prior-year is required. The Corporate Transit Fee liability is included in the estimated tax computation.
-
-### 9.4 Payment mechanics
-
-- **Electronic filing mandate** — Electronic filing and payment are mandatory for corporations with prior-year tax of $10,000 or more (NJ Division of Taxation electronic-filing mandate). Combined groups file electronically regardless of size.  _(NJ Division of Taxation electronic-filing mandate)_
-
-### 9.5 Statute of limitations
-
-- **CBT statute of limitations** — General: 4 years from filing date (longer of return filed date or due date). 25% omission: 6 years. Fraud / no return: unlimited. Federal RAR (revenue agent's report) adjustments: must be reported to NJ within 90 days.  _(N.J.S.A. 54:49-6(b))_
-
-## 10. BAIT — overview and eligibility
-
-### 10.1 What BAIT is
-
-- **BAIT definition and purpose** — The Business Alternative Income Tax (BAIT) is an elective entity-level tax under P.L. 2019 c. 320 (effective tax years beginning on or after January 1, 2020) that creates a refundable credit at the owner level. Its purpose: allow pass-through entity owners to effectively deduct the NJ income tax on their entity income above the federal $10,000 SALT cap, because the entity-level tax is deductible at the federal level under IRS Notice 2020-75.  _(P.L. 2019 c. 320; IRS Notice 2020-75)_
-
-### 10.2 Who is eligible to elect
-
-- **BAIT eligibility criteria** — Eligible entities are pass-through entities with at least one member subject to NJ Gross Income Tax (i.e., at least one individual, estate, or trust owner). Eligible entity types: Partnerships (general, limited, LLP). LLCs taxed as partnerships for federal purposes. Federal S-corporations. Single-member LLCs are NOT eligible (they are disregarded for federal tax, so no entity exists to make the election; the owner pays GIT directly). C-corporations are NOT eligible (they pay CBT, not GIT).
-
-### 10.3 Annual election
-
-- **Annual election mechanics** — The BAIT election is annual (not perpetual). It must be made for each tax year separately. Election mechanics: File a separate election form (electronically via the NJ Division of Taxation's online portal) on or before the original due date of the entity's return (no extensions for the election itself, though estimated payments can sometimes substitute as a constructive election under Division guidance). All members at the time of election must consent (or the entity's operating agreement must authorize the election). Election cannot be revoked once made for that year.
-
-### 10.4 P.L. 2021 c. 419 expansion (effective 2022)
-
-- **Major BAIT changes effective 2022** — Tax base expanded to include the share of all distributive proceeds (not just the share attributable to NJ-source income). This eliminates the prior "double tax" issue for resident owners of out-of-state PTEs. Guaranteed payments to partners now included in the BAIT base (previously excluded). Resident/non-resident split repealed: under the post-2022 regime, the entity computes BAIT on the entirety of its income attributable to NJ resident partners (worldwide) plus its NJ-source income attributable to non-resident partners. Excess BAIT credits (where credit exceeds owner's GIT liability) became refundable to the owner.  _(P.L. 2021 c. 419)_
-
-## 11. BAIT rates and computation (2025)
-
-### 11.1 Graduated rate structure
-
-The BAIT applies graduated brackets that mirror the NJ Gross Income Tax brackets (which is what makes BAIT economically neutral for owners — the credit roughly equals what GIT would have been). For tax year 2025:
-
-**BAIT graduated rate structure (2025)**
-
-| Sum of each member's share of distributive proceeds | BAIT marginal rate |
-| --- | --- |
-| $0 – $250,000 | 5.675% |
-| $250,001 – $1,000,000 | 6.52% |
-| $1,000,001 – $5,000,000 | 6.99% |
-| Over $5,000,000 | 10.9% |
-
-(The top 10.9% rate reflects the post-2020 "millionaire's tax" on NJ GIT, which was raised from 8.97% to 10.75% for individuals above $1M and 10.9% applied for BAIT to recognize the entity-level economic equivalence for very high-income owners. Reviewer note: the task brief mentions 9.12% for >$5M, which was the 2020–2021 rate before the millionaire's tax was incorporated into BAIT brackets via P.L. 2021 c. 419 — the current top rate is 10.9%, matching the GIT millionaire bracket. Verify against current Division publication GIT-DEP and BAIT instructions before sign-off.)
-
-### 11.2 Computation steps
-
-- **BAIT computation steps** — 1. Compute the entity's federal taxable income or partnership ordinary income, adjusted for NJ modifications. 2. Determine each member's distributive share of those proceeds (post-2022: include guaranteed payments). 3. Resident members: include 100% of their distributive share (NJ-source plus other-state). 4. Non-resident members: include only the NJ-source portion (post-apportionment). 5. Sum across all members to arrive at the aggregate BAIT base. 6. Apply the graduated brackets to the aggregate base — the brackets are NOT applied per-member, they are applied to the entity-level aggregate (this is a critical and counterintuitive point that catches preparers).
-
-### 11.3 Aggregation point
-
-- **Regressivity at member level** — Because brackets apply at the aggregate level, BAIT is regressive at the member level — a partner with $200K of distributive proceeds in a $10M-base entity has their share taxed at the marginal 10.9% rate, not at the 5.675% rate that would apply if computed individually. The owner credit (§13) recovers this at the GIT level, so the BAIT/credit interaction is generally neutral for NJ residents.
-
-## 12. BAIT estimated payments and filing
-
-### 12.1 Estimated payments
-
-Quarterly estimated BAIT payments are required if the entity expects BAIT liability over $500. Due dates (calendar-year entities):
-
-**BAIT estimated payment installments**
-
-| Installment | Due date | Cumulative percentage |
-| --- | --- | --- |
-| Q1 | April 15 | 25% |
-| Q2 | June 15 | 50% |
-| Q3 | September 15 | 75% |
-| Q4 | January 15 (of the following year) | 100% |
-
-- **BAIT Q4 due date quirk** — Note that the Q4 due date is January 15 of the following year (a quirk relative to CBT which has a December 15 Q4) — this matches the GIT calendar so the credit timing works for owners. Form PTE-150 is the voucher. Underpayment exposes the entity to penalty and interest.  _(N.J.S.A. 54:53-15)_
-
-### 12.2 Annual return — Form PTE-100
-
-- **PTE-100 filing deadline** — The annual return is Form PTE-100, due on or before the 15th day of the 3rd month following the close of the tax year. For calendar-year entities: March 15 — same as the federal partnership / S-corp return deadline. Extension via Form PTE-200-T extends to September 15.
-
-### 12.3 PTE-K1 — owner schedules
-
-- **Schedule PTE-K1 contents** — Each member receives a Schedule PTE-K1 from the entity reporting: The member's distributive share of BAIT-base income. The member's share of BAIT paid by the entity. The member's share of any non-resident withholding (which is separate from BAIT). The owner uses the PTE-K1 to claim the BAIT credit on their own return.
-
-## 13. Owner credit and federal/state interaction
-
-### 13.1 Credit at the owner level
-
-- **BAIT credit claim mechanics** — Individuals: Form NJ-1040 / NJ-1040-NR, Schedule NJ-BUS-1 and Schedule NJ-BUS-2. The credit is refundable — to the extent the credit exceeds GIT liability, it is refunded. Corporate owners (upper-tier C-corps): the credit flows through but generally cannot be refunded at the C-corp level; it offsets CBT liability. Pass-through owners (tiered structures): the upper-tier PTE either claims the credit against its own BAIT (if it elected) or passes it through to its own members on its PTE-K1.
-
-### 13.2 Federal deductibility — the whole point
-
-- **Federal deductibility of BAIT** — IRS Notice 2020-75 confirms that BAIT (and similar state PTET regimes) is deductible at the entity level as a business expense, reducing the entity's federal ordinary income that flows to owners. This deduction is not subject to the §164(b)(6) $10K SALT cap because it is a business tax, not an itemized state and local tax on the individual. Effect: a NJ resident partner in a $1M-income partnership who would otherwise have paid roughly $89,700 of NJ GIT personally (capped at $10K federal deduction) instead has the partnership pay $66,000 BAIT (deductible federally, saving $24,420 federal tax at 37% rate), then claims a $66,000 NJ refundable credit against the GIT that would have been due. Net federal tax savings: roughly $24K per $1M of NJ-resident-attributable income.  _(IRS Notice 2020-75; IRC §164(b)(6))_
-
-### 13.3 Resident credit for taxes paid to other states — interaction
-
-- **Resident credit / other-state PTET trap** — Under N.J.S.A. 54A:4-1, a NJ resident gets a credit on Form NJ-1040 Schedule NJ-COJ for income taxes paid to other states on income also taxed by NJ. If a NJ resident is a partner in a NY partnership that elects NY PTET, the NY PTET payment is a business expense at the entity level for federal purposes, reducing the partner's federal K-1 income. But for NJ resident-credit purposes, the NJ Division of Taxation's position (TB-86R / TB-100) is that the NJ resident CANNOT claim a Schedule NJ-COJ credit for NY PTET paid by the partnership — because the tax was paid by the entity, not by the resident. The resident can only claim a NJ-COJ credit if the resident also pays NY non-resident GIT on the same income. This creates a planning issue where NJ residents may be worse off when NY PTET is elected at the entity level — they lose the NJ resident credit. Many NJ residents instead want the NY partnership not to elect PTET, or want a carve-out. Conversely, NJ's BAIT does not create the reverse problem for non-NJ residents claiming credits in their home state — most states honor BAIT as a creditable state tax. Reviewer must flag any multi-state PTE engagement for this trap.  _(N.J.S.A. 54A:4-1; TB-86R / TB-100)_
-
-### 13.4 Form NJ-1080-C / composite returns
-
-- **Composite return limitations** — Composite return Form NJ-1080-C remains available for non-resident partners. A non-resident partner CANNOT be on both a composite return and claim a BAIT credit on a separately filed NJ-1040-NR — the partner must choose. The composite is generally inferior post-BAIT because it does not capture the federal SALT cap workaround.
-
-## 14. BAIT vs CBT — interaction and entity-choice planning
-
-For a NJ accounting practice, the key entity-choice questions in 2025: C-corp under CBT: 11.5% top rate (with Transit Fee), but no shareholder-level NJ tax on retained earnings; dividends to shareholders bear separate GIT. Combined effective top rate on distributed earnings: roughly 21% (NJ-only) — uncompetitive. S-corp / partnership with BAIT election: 10.9% top rate at entity (paid by the entity), then the owner gets a refundable credit equal to BAIT paid; net NJ tax on the owner is the GIT rate (1.4%–10.75%) with the BAIT credit offsetting it. Effective NJ tax: approximately equal to GIT, but with the federal SALT-cap workaround saving ~37% × NJ tax amount in federal tax. S-corp / partnership WITHOUT BAIT election: owners pay full NJ GIT, federal deduction capped at $10K, no benefit. Strictly inferior to BAIT election for any entity with NJ resident owners and material income. The default reviewer recommendation in 2025: elect BAIT for any qualifying entity with NJ resident or NJ-source-income partners above ~$100K, unless tier-structure or partner-mix considerations create offsetting drawbacks (e.g., tax-exempt or out-of-state-resident partners who don't benefit from the credit).
-
-## 15. Worked examples
-
-### Example 1 — Small NJ-only C-corp
-
-**Facts:** ABC Widgets Inc., a NJ-domiciled C-corp with all operations in NJ. 2025 federal taxable income $80,000, no apportionment issues (100% NJ). No GILTI, no NOLs, no special adjustments. NJ gross receipts $1,200,000.
-
-**Computation:**
-
-1. NJ entire net income (ENI): $80,000.
-2. Apportionment: 100% NJ (single-state filer).
-3. Allocated NJ ENI: $80,000.
-4. Bracket: $80,000 is in the $50,001–$100,000 band → 7.5% rate.
-5. Regular CBT: $80,000 × 7.5% = $6,000.
-6. Corporate Transit Fee: $80,000 is below the $10M threshold → $0.
-7. Minimum tax: NJ gross receipts of $1.2M is in the $1M+ band → $2,000, but minimum tax applies only if the regular tax is below the minimum; since $6,000 > $2,000, minimum tax is not the controlling amount.
-8. Total CBT: $6,000.
-9. Estimated tax: assuming 2024 tax was $5,500, the prior-year safe harbor is $5,500 (under $50K so 100%). Quarterly installments of $1,375.
-10. Filing: Form CBT-100, due April 15, 2026.
-
-**Reviewer note:** the graduated bracket is highly beneficial here — at 9% the tax would have been $7,200. Always ensure the form picks up the lower bracket band when ENI ≤ $100K.
-
-### Example 2 — Large multistate C-corp hitting the Corporate Transit Fee
-
-**Facts:** MegaCo Inc., Delaware-domiciled, files combined return CBT-100U as managerial member of a group with 12 unitary members. 2025 combined federal taxable income $200,000,000. NJ apportionment factor (single-sales, market-based) = 8%. Pre-2019 PNOL pool of $40,000,000 still available. GILTI inclusion $20,000,000.
-
-**Computation:**
-
-1. Combined ENI before NJ modifications: $200,000,000 (federal).
-2. GILTI adjustment: include $20M federally, allow 95% NJ deduction = ($19,000,000) → net taxable GILTI $1,000,000. So $20M federal becomes $1M for NJ — net subtraction of $19,000,000.
-3. Combined ENI (NJ): $200,000,000 − $19,000,000 = $181,000,000.
-4. Apportion: $181M × 8% = $14,480,000 allocated NJ ENI.
-5. Corporate Transit Fee base (BEFORE NOL): $14,480,000 − $10,000,000 = $4,480,000 above threshold.
-6. Corporate Transit Fee: $4,480,000 × 2.5% = $112,000.
-7. PNOL absorption: $14,480,000 − $14,480,000 (cap; cannot exceed allocated ENI; $40M available, $14.48M used) = $0 ENI for regular CBT.
-
-   Wait — PNOL absorption is capped to taxable income; using $14.48M of PNOL.
-8. Regular CBT base after PNOL: $0.
-9. Regular CBT (9% rate band): $0.
-10. Minimum tax: 12 members × $2,000 (large-affiliated-group floor) = $24,000 minimum tax, but since the regular tax is $0 and Transit Fee is $112,000, total tax exceeds minimum. Each member must still meet its minimum — reviewer must verify the Transit Fee allocation per member plus minimum tax floor per member.
-11. Total CBT: $112,000 (Corporate Transit Fee) + $24,000 (minimum tax floor) = $136,000.
-12. PNOL remaining for carryforward: $40M − $14.48M = $25.52M.
-
-**Reviewer notes:**
-- The Corporate Transit Fee is the entire substantive tax this year, because PNOLs wipe out the regular CBT base but do not reduce the Transit Fee base.
-- This is the policy choice that makes the Fee so painful for loss-carryforward taxpayers — it functions as a quasi-minimum tax on large filers.
-- If the group's effective NJ apportionment factor had been higher (say 25%), the Fee would have been roughly $1.13M.
-
-### Example 3 — Partnership BAIT election with $3M income, mixed-residence partners
-
-**Facts:** XYZ Consulting LLP, NJ-domiciled professional services partnership. 2025 distributive proceeds (after guaranteed payments): $3,000,000. Three equal partners: Alice (NJ resident), Bob (NJ resident), Carol (NY resident). Apportionment factor for NJ-source income: 60% (some out-of-state engagements). Guaranteed payments: $150,000 to each partner ($450,000 total), already included in distributive proceeds for BAIT.
-
-**Computation:**
-
-1. BAIT base determination (post-2022 rules):
-   - Alice (NJ resident): 100% of her $1,000,000 share = $1,000,000 in BAIT base.
-   - Bob (NJ resident): 100% of his $1,000,000 share = $1,000,000 in BAIT base.
-   - Carol (NY resident): NJ-source portion only = $1,000,000 × 60% = $600,000 in BAIT base.
-   - Total BAIT base: $2,600,000.
-
-2. Apply graduated brackets to the aggregate $2,600,000:
-   - $0 – $250,000 @ 5.675% = $14,187.50
-   - $250,001 – $1,000,000 ($750,000) @ 6.52% = $48,900
-   - $1,000,001 – $2,600,000 ($1,600,000) @ 6.99% = $111,840
-   - Total BAIT: $174,927.50.
-
-3. Allocate BAIT among members in proportion to each member's share of the BAIT base:
-   - Alice: $1,000,000 / $2,600,000 × $174,927.50 = $67,280 credit on PTE-K1.
-   - Bob: same as Alice = $67,280.
-   - Carol: $600,000 / $2,600,000 × $174,927.50 = $40,368 credit on PTE-K1.
-
-4. Quarterly estimated BAIT: $174,927.50 / 4 = $43,732 each quarter (or use annualized method per N.J.S.A. 54:53-7). Due April 15, June 15, Sep 15, Jan 15 2026.
-
-5. Annual return Form PTE-100: due March 15, 2026.
-
-6. Federal effect: the $174,927.50 BAIT is deductible at the LLP level as a state business tax, reducing federal ordinary income on partners' K-1s by $174,927.50 in proportion to their share of the deduction. Assuming a 37% federal marginal rate, this saves roughly $64,723 in aggregate federal tax across partners.
-
-7. NJ resident credit interaction for Alice and Bob:
-   - On their NJ-1040s, they claim the BAIT credit ($67,280 each) as a refundable credit.
-   - Their NJ GIT on $1M each at the 10.75% millionaire's rate (above $1M) is approximately $89,170. The $67,280 credit offsets it; net NJ GIT owed: ~$21,890 each.
-   - (If the BAIT had not been elected, they would have owed the full $89,170 each with only a $10,000 federal deduction. With BAIT, they save federal tax via the entity-level deduction and pay only ~$21,890 NJ at the GIT level.)
-
-8. Carol (NY resident): files NJ-1040-NR. Claims $40,368 BAIT credit (refundable). Her NJ GIT on the $600K NJ-source portion at 8.97% (non-resident) is roughly $35,000–$54,000 depending on full income — exact computation depends on her total NJ-source income from all sources and the GIT non-resident formula. The credit will be refundable to the extent it exceeds her NJ tax. She then needs to address NY treatment: NY may grant a resident credit for NJ tax paid (treating BAIT as NJ tax paid by Carol via the credit mechanism — NY's TSB-M-21(1)C aligns reasonably with this). Reviewer note: this is the kind of cross-border item to verify in NY tax-credit guidance before sign-off.
-
-**Reviewer notes:**
-- Failure to make the election by March 15 is irrevocable for the year. The election cannot be made on an amended return or with the extended return.
-- If any partner is a tax-exempt entity (e.g., a charitable trust or pension partner), the credit is wasted (cannot offset their tax) — modeling required before electing.
-- If any partner is a non-resident in a state that doesn't honor the NJ BAIT credit (a small minority), the federal SALT-cap saving may be partially offset by lost home-state resident credit — modeling required.
-
-## 16. Self-checks for the reviewer
-
-- [ ] CBT bracket: confirm the correct bracket (6.5% / 7.5% / 9%) based on allocated NJ ENI, post-apportionment, post-NOL. Re-check if ENI is near a bracket boundary ($50K, $100K).
-- [ ] Corporate Transit Fee: confirm period ends on or after July 1, 2024 and before January 1, 2029. Confirm allocated ENI > $10M. Compute the Fee on the post-apportionment, pre-NOL base.
-- [ ] Minimum tax: applied per member in combined returns; floor of $2,000 if affiliated group payroll ≥ $5M.
-- [ ] Apportionment: single sales factor, market-based for services and intangibles. Confirm customer-location records for service receipts.
-- [ ] Combined return: confirm common-ownership (>50%) and unitary business tests. CBT-100U filed by managerial member. Intercompany eliminations performed.
-- [ ] GILTI: 95% deduction applied (5% taxable). Subpart F: same treatment. §250 FDII deduction not separately decoupled (as of 2025 — verify).
-- [ ] PNOL/NOL: 20-year carryforward, no carryback. PNOLs applied before post-2019 NOLs. Neither applied to the Corporate Transit Fee base.
-- [ ] Filing: CBT-100/100U due April 15 for calendar year, extension to October 15. Electronic filing mandate for prior-year tax ≥ $10K.
-- [ ] BAIT election: made by March 15 of the tax year, not retroactive, not revocable. All members consent.
-- [ ] BAIT base: post-2022 rules — 100% of NJ residents' distributive proceeds (including guaranteed payments), NJ-source portion of non-residents.
-- [ ] BAIT rate: graduated 5.675% / 6.52% / 6.99% / 10.9% applied to aggregate base (not per-member).
-- [ ] BAIT credit: refundable; flagged on PTE-K1; flows to NJ-1040 Schedule NJ-BUS-1.
-- [ ] Resident credit for taxes paid to other states: NJ does NOT allow NJ-COJ credit for other-state PTET paid by entity; confirm partner-level non-resident filing in other states.
-- [ ] Tiered structures: PTE-K1 from lower-tier flows to upper-tier entity (which can claim or pass through); model carefully.
-
-## 17. Provenance and authorities
-
-- **N.J.S.A. 54:10A-1 et seq.** — Corporation Business Tax Act (the statutory base of CBT).  _(N.J.S.A. 54:10A-1 et seq.)_
-- **N.J.S.A. 54:10A-5(c)** — graduated CBT rates 6.5% / 7.5% / 9%  _(N.J.S.A. 54:10A-5(c))_
-- **N.J.S.A. 54:10A-5(e)** — minimum tax brackets  _(N.J.S.A. 54:10A-5(e))_
-- **N.J.S.A. 54:10A-5.41** — Corporate Transit Fee (enacted by P.L. 2024 c. 22).  _(N.J.S.A. 54:10A-5.41)_
-- **N.J.S.A. 54:10A-6** — apportionment, single sales factor and market-based sourcing.  _(N.J.S.A. 54:10A-6)_
-- **N.J.S.A. 54:10A-4.6 through 4.11** — mandatory unitary combined reporting.  _(N.J.S.A. 54:10A-4.6 through 4.11)_
-- **N.J.S.A. 54:10A-4(k)** — entire net income modifications, including the dividend deduction used for the 95% GILTI/Subpart F treatment.  _(N.J.S.A. 54:10A-4(k))_
-- **P.L. 2018 c. 48** — tax reform: single sales factor, combined reporting, original temporary surtax, market sourcing.  _(P.L. 2018 c. 48)_
-- **P.L. 2020 c. 95** — surtax extension to 2023.  _(P.L. 2020 c. 95)_
-- **P.L. 2020 c. 118** — GILTI 95% deduction.  _(P.L. 2020 c. 118)_
-- **P.L. 2022 c. 133** — automatic NJ S-corp conformity to federal S election.  _(P.L. 2022 c. 133)_
-- **P.L. 2024 c. 22** — FY2025 budget enacting the Corporate Transit Fee.  _(P.L. 2024 c. 22)_
-- **P.L. 2019 c. 320** — original BAIT Act (Pass-Through Business Alternative Income Tax Act).  _(P.L. 2019 c. 320)_
-- **P.L. 2021 c. 419** — BAIT 2022 expansion (resident/non-resident, guaranteed payments, refundability).  _(P.L. 2021 c. 419)_
-- **N.J.S.A. 54A:4-1** — resident credit for taxes paid to other jurisdictions (GIT statute referenced for resident-credit issues).  _(N.J.S.A. 54A:4-1)_
-- **N.J. Division of Taxation Technical Bulletin TB-86R** — Pass-Through Business Alternative Income Tax Act (overview).  _(TB-86R)_
-- **TB-92** — GILTI and FDII for CBT.  _(TB-92)_
-- **TB-93** — Combined Group Filing.  _(TB-93)_
-- **TB-100** — BAIT (revised guidance post-2022 amendments).  _(TB-100)_
-- **TB-103** — Corporate Transit Fee (issued late 2024 by NJ Division of Taxation explaining computation, no proration, Fee not reduced by NOL/PNOL).  _(TB-103)_
-- **TB-108** — P.L. 86-272 reinterpretation post-MTC 2021 statement.  _(TB-108)_
-- **IRS Notice 2020-75** — federal recognition of PTET entity-level deductibility.  _(IRS Notice 2020-75)_
-- **CBT-100** — separate-entity CBT return.  _(Forms)_
-- **CBT-100U** — combined unitary CBT return.  _(Forms)_
-- **CBT-100S** — S-corporation CBT return (legacy use).  _(Forms)_
-- **CBT-150** — CBT estimated tax voucher.  _(Forms)_
-- **CBT-200-T** — CBT extension.  _(Forms)_
-- **PTE-100** — BAIT annual return.  _(Forms)_
-- **PTE-150** — BAIT estimated tax voucher.  _(Forms)_
-- **PTE-200-T** — BAIT extension.  _(Forms)_
-- **Schedule PTE-K1** — owner-level credit / share schedule.  _(Forms)_
-- **NJ-1040 Schedule NJ-BUS-1 and Schedule NJ-BUS-2** — owner-level BAIT credit claim.  _(Forms)_
-- **NJ-1040 Schedule NJ-COJ** — resident credit for taxes paid to other states.  _(Forms)_
-- **NJ-1080-C** — composite return (legacy).  _(Forms)_
-
-Reviewer must confirm each rate, bracket, and form name against the current-year Division of Taxation publications and the GIT-DEP / CBT-200 instruction booklets before signing off. The Corporate Transit Fee is particularly liable to legislative change (renewal, threshold change, sunset adjustment) — verify 2025 and 2026 status separately.
-
-End of skill. Tax year 2025.
+- The subtraction amounts make the table work like marginal brackets: 5.675% on the first $250,000, 6.52% on the next $750,000, and 10.9% above $1,000,000.
+- **Before 2022** (2020 and 2021) there were four bands: 9.12% from $1,000,000 to $5,000,000 and 10.9% only above $5,000,000. Do not use the 9.12% band for 2022 or later.
+- **Estimated BAIT** is required if the entity expects to owe more than **$400**. Four payments of **25%** each ([2025 PTE-150 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2025/pte150instr.pdf); [Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml)).
+
+## Boundary and exception table
+
+| Situation | Rule | Source |
+|---|---|---|
+| Tax base exactly $100,000 | 7.5% on all of it; 9% needs **more than** $100,000 | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
+| Tax base $100,001 | 9% on the whole base: the rates are not marginal | same |
+| Taxable net income exactly $10,000,000 | No Corporate Transit Fee: it must be **over** $10 million | [Transit Fee notice](https://www.nj.gov/treasury/taxation/cbt/corporatetransitfee.shtml) |
+| Taxable net income $10,000,001 | Fee is 2.5% of the whole amount | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
+| Allocated income $14,000,000, NOLs bring taxable net income to $8,000,000 | No fee: the test is after NOLs | same |
+| Remote seller with $100,000 of New Jersey receipts and 150 transactions | No bright-line nexus: neither test is met (receipts must be **more than** $100,000, **or** transactions 200 or more) | [TB-108(R)](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb108.pdf) |
+| Prior-year CBT liability exactly $1,500 | Installments not required; may instead pay 50% of that liability with the prior-year return | [CBT-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf) |
+| Extension paid at 85% of the final tax | Extension denied retroactively; penalties and interest from the original due date | [CBT-200-T instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt-200-t.pdf) |
+| BAIT election attempted with the extended PTE-100 | Too late: the original due date is the deadline | [2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf) |
+| Estimated BAIT paid before the election is filed | Not accepted: elect first | [Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml) |
+| Partnership with an overall loss but some profitable partners | No BAIT; cannot pay for some partners only; still file PTE-100 | [BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml) |
+| Nonresident member in the composite return | Allowed; BAIT credited on the composite return | [Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml) |
+| First year of BAIT, all tax paid with the PTE-100 | No estimated tax penalty under the safe harbor; members get credit as if paid evenly | [BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml) |
+| Group elected world-wide in 2023, wants water's-edge for 2026 | Bound through 2028 unless the Director allows a prospective revocation for reasonable cause | [TB-109](https://www.nj.gov/treasury/taxation/pdf/pubs/tb/tb109.pdf) |
+
+## Worked cases
+
+All amounts are hypothetical. Rates and thresholds come from the tables above.
+
+### Case 1: a small New Jersey-only C corporation, 2026 ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [CBT-150 instructions (2026)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt150ins.pdf))
+
+- Facts: calendar 2026, all receipts in New Jersey, tax base $80,000, New Jersey gross receipts $1,200,000, not in an affiliated or controlled group. Its 2025 total liability was $5,000.
+- Rate: $80,000 is more than $50,000 and not more than $100,000, so 7.5% × $80,000 = **$6,000**.
+- Minimum tax: receipts of $1,000,000 or more give $2,000. The tax is the greater: **$6,000**. No fee (far below $10 million).
+- Estimated tax for 2026: the 2025 liability of $5,000 is more than $1,500, so four 25% installments were due 15 April, 15 June, 15 September and 15 December 2026. Paying $1,250 each (100% of the 2025 liability) avoids underpayment interest, because a taxpayer is underpaid only if payments are less than 90% of the current year's liability **and** less than 100% of the prior year's.
+- Return: 15 May 2027 falls on a Saturday, so it is due Monday 17 May 2027.
+
+### Case 2: the $100,000 line ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf))
+
+- Tax base $100,000: 7.5% × $100,000 = $7,500.
+- Tax base $100,001: 9% × $100,001 = $9,000.09. One more dollar of income adds $1,500.09 of tax. Check year-end accruals near the line.
+
+### Case 3: a combined group over $10 million, 2026 ([CBT-100U instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100uins.pdf); [Transit Fee notice](https://www.nj.gov/treasury/taxation/cbt/corporatetransitfee.shtml))
+
+- Facts: water's-edge group, three members with New Jersey nexus. Group taxable net income (after allocation and NOLs) $12,000,000. A $100,000 tax credit is available.
+- CBT: 9% × $12,000,000 = $1,080,000. Minimum tax: 3 × $2,000 = $6,000, which is lower. CBT after the credit: $1,080,000 − $100,000 = $980,000.
+- Fee: $12,000,000 is over $10 million, so 2.5% × $12,000,000 = **$300,000**, on the whole amount. The credit cannot be used against it.
+- Total: $980,000 + $300,000 = **$1,280,000**.
+- If NOLs had brought taxable net income down to $10,000,000, there would be no fee.
+
+### Case 4: PNOLs, NOLs and the 80% limit, 2026 ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [Worksheet 500-P](https://www.nj.gov/treasury/taxation/pdf/current/cbt/500-p.pdf))
+
+- Facts: separate filer. Allocated entire net income before NOLs (line 19) $5,000,000. Converted PNOL $1,000,000 (a pre-2019 carryover of $4,000,000 × a 2018 allocation factor of 25%). Post-allocation NOL of $6,000,000 from a period beginning after 31 July 2023.
+- PNOL first: $5,000,000 − $1,000,000 = $4,000,000.
+- NOL limited to 80% × $4,000,000 = $3,200,000.
+- Taxable net income: $4,000,000 − $3,200,000 = **$800,000**; tax at 9% × $800,000 = **$72,000**. NOL carried forward: $6,000,000 − $3,200,000 = $2,800,000.
+
+### Case 5: a BAIT partnership with mixed owners, 2026 ([2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf); [BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml))
+
+- Facts: calendar 2026 partnership, elected BAIT before its first 2026 estimated payment (15 April 2026), and in any case no later than 15 March 2027. Partner A, a New Jersey resident individual: share of all income $700,000. Partner B, a New York resident individual: New Jersey source share $400,000. Partner C, a corporation: New Jersey source share $100,000.
+- Base: $700,000 + $400,000 + $100,000 = $1,200,000.
+- Tax: $1,000,000 and over, so 10.9% × $1,200,000 − $45,912.50 = $130,800 − $45,912.50 = **$84,887.50**.
+- Shares: A 7/12 = $49,517.71; B 1/3 = $28,295.83; C 1/12 = $7,073.96.
+- A claims $49,517.71 as a refundable credit on the NJ-1040. B files an NJ-1040NR (or joins a composite return) and claims $28,295.83; the partnership need not remit nonresident tax for B if B reasonably expects a full refund of it. C claims $7,073.96 against CBT, but not below its minimum tax.
+- Estimated BAIT: 25% of $84,887.50 = $21,221.88 (rounded) on 15 April, 15 June and 15 September 2026 and 15 January 2027. Return PTE-100 due 15 March 2027.
+
+### Case 6: a New Jersey resident in a New York PTET partnership ([BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml); [2025 NJ-1040 instructions](https://www.nj.gov/treasury/taxation/pdf/current/1040i.pdf))
+
+- A New Jersey resident's New York partnership elects the New York pass-through entity tax (Tax Law §862), which is on the Division's list of taxes substantially similar to BAIT.
+- The resident claims the Schedule NJ-COJ credit for their share of that tax on New York-derived income that New Jersey also taxes, capped at what would have been allowed had the income been taxed to them, with the usual NJ-COJ limit. Keep the partnership's statement of their share of the income and the tax.
+
+### Case 7: election timing ([2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf); [2025 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2025/pte100instr.pdf))
+
+- In September 2026 a calendar-year S corporation asks to elect BAIT for 2025. It is too late: the 2025 election had to be made electronically before the original due date of the 2025 PTE-100 (16 March 2026). It cannot be made retroactively or with an extension.
+- It can still elect for 2026 (by 15 March 2027), and must elect before making any 2026 estimated payment. It must be a New Jersey S corporation (files CBT-100S), and the base is New Jersey source income only.
+
+## 2025 returns ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [2025 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2025/pte100instr.pdf))
+
+- **CBT:** use the 2025 forms for accounting periods ending 31 July 2025 through 30 June 2026. A calendar 2025 return was due **15 May 2026**. With a valid CBT-200-T (filed on time with at least 90% of the tax paid), it is due six months later: 15 November 2026 is a Sunday, so file by Monday 16 November 2026. The rates, minimum tax and fee are as in the tables; the fee applies because 2025 periods begin on or after 1 January 2024.
+- **Estimated tax for 2026** depended on the 2025 total liability (more than $1,500: installments; $1,500 or less: installments or 50% of the 2025 liability with the 2025 return).
+- **BAIT:** the calendar 2025 PTE-100 was due **16 March 2026**. With a timely PTE-200-T (at least 80% of the tax paid) the return may be filed within six months. The 2025 election window has closed.
+
+## When to refuse or refer
+
+- Banking or financial business corporations, insurers, public utilities, REITs, RICs, investment companies, casino licensees (TB-117) and cannabis licensees.
+- Group composition (unitary status, foreign members, captives, members joining or leaving; TB-95(R), TB-102(R)), and choosing or revoking a world-wide or affiliated group election.
+- Rebuilding a PNOL pool or disputing a 500-P conversion; ownership changes and section 382; debt cancellation adjustments.
+- P.L. 86-272 positions resting on website or app activity; nexus questionnaires and voluntary disclosure.
+- Multi-tier NCTI and dividend exclusion computations.
+- BAIT for tiered structures, part-year residents, hedge fund status or consolidated PTE returns (N.J.S.A. 54A:12-3(c)), and whether to elect when many owners are tax-exempt or corporate.
+- The Corporate Transit Fee for any period beginning after 31 December 2028, until the law is confirmed.
+
+## Filing and payment
+
+### CBT ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [CBT-150 instructions (2026)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt150ins.pdf); [CBT-200-T instructions](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt-200-t.pdf))
+
+- **Electronic filing and payment are mandatory** for all CBT returns, estimated payments, extensions and vouchers.
+- **Return due date:** the 15th day of the month **after** the month the federal corporate return is originally due. For a calendar year, 15 May. If that is a weekend or legal holiday, the next business day. Combined groups file one CBT-100U through the managerial member.
+- **Extension (CBT-200-T):** six months to file, not to pay. File it by the original due date and pay at least **90%** of the tax shown on the return when filed. If either test fails, or the return is not filed by the extended date, the extension is retroactively denied and penalties and interest run from the original due date.
+- **Estimated tax (CBT-150), 2026:**
+  - Required if the prior year's total tax liability is **more than $1,500**. For a combined group the test is $1,500 multiplied by the number of members on the combined return, and the managerial member pays. Total tax liability includes the Corporate Transit Fee (CBT-100 line 6 is line 4 plus line 5). Four installments of **25%** on the 15th day of the 4th, 6th, 9th and 12th months (for a calendar year: 15 April, 15 June, 15 September, 15 December).
+  - Taxpayers with prior-period gross receipts of **$50,000,000 or more** pay **25%** in the 4th month, **50%** in the 6th month and **25%** in the 12th month.
+  - Prior year liability of **$1,500 or less** (for a group, not more than $1,500 per member): installments, or instead one payment of **50%** of the prior year's liability, made with the prior year's return by its original due date (entered on the return's installment line).
+  - Underpaid if total estimates are less than **90%** of the current year's liability **and** less than **100%** of the prior year's. Interest on the underpayment is computed on Form CBT-160-A or CBT-160-B.
+- **Penalties and interest:**
+  - Late filing: **5%** a month or part month, up to **25%** of the underpayment; if no return is filed within 30 days of the first delinquency notice, 5% a month of the total liability up to 25%. A **$100** penalty for each month the return is late may also apply.
+  - Late payment: **5%** of the balance paid after the due date.
+  - Extension insufficiency: 5% a month up to 25% of the shortfall.
+  - Interest: **3%** above the average predominant prime rate, for each month or part month, compounded annually.
+- **Federal changes** to taxable income must be reported to the Division within 90 days.
+
+### BAIT ([2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf); [Division BAIT page](https://www.nj.gov/treasury/taxation/baitpte/index.shtml))
+
+- **Election:** electronic, annual, by the original due date of the PTE-100 and before any payment. Revocation by the same date.
+- **Estimated payments (PTE-150):** required if the entity expects to owe more than **$400**. Four payments of **25%** on the 15th day of the 4th, 6th and 9th months of the year and the 1st month of the next year (calendar year: 15 April, 15 June, 15 September, 15 January). Underpaid if estimates are less than **80%** of the current year's tax or less than **100%** of the prior year's; interest on Form PTE-160 ([2025 PTE-150 instructions](https://www.nj.gov/treasury/taxation/pdf/other_forms/pte/2025/pte150instr.pdf)). That is the PTE-150 wording ("or"). The CBT test uses "and", and the BAIT FAQ points to the safe harbor in N.J.S.A. 54A:9-6, which the **nj-income-tax** Guide describes as the lesser of the two amounts. Until the Division confirms which applies, pay at least the larger of **80%** of this year's BAIT and **100%** of last year's ([BAIT FAQ](https://www.nj.gov/treasury/taxation/baitpte/baitpte-faq.shtml)). BAIT estimates cannot be moved to another tax account.
+- **Return:** Form PTE-100 with Schedule PTE-K-1 for every member, due the 15th day of the 3rd month after year end (calendar 2026: 15 March 2027). All filings and payments are electronic; paper is not accepted.
+- **Extension (PTE-200-T):** six months to file, if filed by the original due date and at least **80%** of the tax is paid by then. No extension to pay.
+- **Penalties:** late filing **5%** a month up to **25%**, and a penalty of **$100** for each month or part month may be imposed; late payment **5%**; interest **3%** above prime, compounded annually. The Division has three years from the later of filing and the original due date to assess, with no limit if no return or a fraudulent one was filed.
+- **Members** must be given Schedule PTE-K-1. An amended PTE-K-1 cannot report less than the original.
+
+## Completion checklist ([CBT-100 instructions (2025)](https://www.nj.gov/treasury/taxation/pdf/current/cbt/cbt100ins.pdf); [2026 PTE-100 instructions](https://www.nj.gov/treasury/taxation/pdf/current/pte-bait/pte100instr.pdf))
+
+- [ ] Nexus tested: physical presence, receipts more than $100,000 or 200 or more transactions, and P.L. 86-272 (box checked if claimed).
+- [ ] Combined group decided: more than 50% common ownership, unitary, filing method and binding period recorded, managerial member registered.
+- [ ] Entire net income built; NCTI and dividend exclusion with the 5% clawback; single sales factor to six decimals.
+- [ ] PNOLs converted on 500-P and used before NOLs; 80% limit applied to post-July 2023 NOLs; 20-period expiry tracked.
+- [ ] Rate set on the whole base (6.5% / 7.5% / 9%); short-period proration checked; minimum tax compared (per member with nexus in a group).
+- [ ] Corporate Transit Fee: taxable net income over $10 million tested after NOLs, 2.5% on the whole amount, no credits against it.
+- [ ] Estimated tax pattern chosen ($1,500 test, per member for a group, fee included; $50,000,000 receipts test); extension with 90% paid; return by the 15th of the month after the federal due date; all electronic.
+- [ ] BAIT: eligibility (at least one individual, estate or trust member; New Jersey S status), election made by the original due date before any payment, base built by member type, brackets applied to the aggregate, estimates if more than $400, PTE-K-1s issued.
+- [ ] Owners: BAIT credit on NJ-BUS-1 and line 63; nonresident filing and composite decided; Schedule NJ-COJ for substantially similar other-state PTET with the entity's statement.
 
 <!-- openaccountants-cta-block -->
 
