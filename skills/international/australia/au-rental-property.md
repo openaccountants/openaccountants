@@ -1,10 +1,10 @@
 ---
 name: au-rental-property
 description: Use this skill whenever asked about Australian rental property income and deductions. Trigger on phrases like "rental income Australia", "negative gearing", "rental deductions", "investment property tax", "Division 40", "Division 43", "capital works deduction", "depreciation schedule", "rental property CGT", "rental withholding", "body corporate fees", "strata levy deduction", "repairs vs improvements", "TR 97/23", "GST on property", "land tax on an investment property", "stamp duty on a rental", or any question about completing the rental property schedule in an Australian individual tax return. This skill covers rental income reporting, deductible expenses, depreciation (Div 40 plant and Div 43 building), negative gearing including the enacted 1 July 2027 limit, CGT on disposal, foreign resident withholding, the GST decision path, the state and territory taxes that attach to property, and common transaction classifications. ALWAYS read this skill before touching any Australian rental property work.
-version: "1.4"
+version: "1.5"
 jurisdiction: AU
-tax_year: 2025
-last_updated: 2026-09-26
+tax_year: 2026
+last_updated: 2026-09-27
 review_status: pending_review
 category: international
 tier: 2
@@ -17,9 +17,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## AU Rental Property
 
-## Australia Rental Property -- Income & Deductions Skill v1.4
+## Australia Rental Property -- Income & Deductions Skill v1.5
 
-Australia Rental Property -- Income & Deductions Skill v1.4
+Australia Rental Property -- Income & Deductions Skill v1.5
 
 ## Section 1 -- Quick Reference
 
@@ -30,50 +30,50 @@ Australia Rental Property -- Income & Deductions Skill v1.4
 | Country | Australia (Commonwealth of Australia) |
 | Tax | Income Tax -- Rental Property Schedule |
 | Currency | AUD only |
-| Tax year | 1 July 2024 -- 30 June 2025 |
+| Tax year | 2026-27 (1 July 2026 -- 30 June 2027) |
 | Primary legislation | Income Tax Assessment Act 1997 (ITAA 1997) |
-| Supporting legislation | ITAA 1936; Tax Ruling TR 97/23 (repairs vs improvements); TD 2024/3 (car expenses); PS LA 2008/4 (non-commercial losses) |
+| Supporting legislation | ITAA 1936; TR 97/23 (repairs vs improvements); TR 2026/1 (rental income and deductions for individuals not in business); PCG 2026/2 (apportionment); PCG 2026/3 (holiday homes and section 26-50); [ATO, Rental properties guide 2026](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026) |
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement (Online Services for Agents) |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.4 |
+| Skill version | 1.5 |
 
 ### Select the income year before calculating
 
-The rate and threshold tables immediately below are for **2024-25** and are retained for prior
-year work. They are not current. Ask which income year is being prepared, then look up that year's
-rates, thresholds and asset limits on ato.gov.au before calculating anything. The resident rate
-scale changed for 2026-27, when the second bracket became 15 cents. [ATO, Tax rates: Australian
+The rate and threshold tables immediately below are for **2026-27**. Ask which income year is being
+prepared before calculating anything: the second resident bracket was 16 cents in 2024-25 and
+2025-26 and is 15 cents from 1 July 2026, and the Medicare levy surcharge thresholds move each
+year. For a prior year, use that year's tables on ato.gov.au. [ATO, Tax rates: Australian
 resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents)
 
 The classification, deduction, depreciation and CGT rules in Sections 2 to 8 do not depend on the
 income year, except where a section says otherwise.
 
-### Key Thresholds (2024-25)
+### Key Thresholds (2026-27)
 
-**Key Thresholds (2024-25)**
+**Key Thresholds (2026-27)**
 
 | Item | Value |
 | --- | --- |
 | Tax-free threshold | $18,200 |
 | Medicare levy | 2% of taxable income |
-| Medicare levy surcharge (no PHI) | 1% -- 1.5% above $93,000 (single) |
+| Medicare levy surcharge (no PHI) | 1%, 1.25% or 1.5% where income for MLS purposes exceeds $105,000 single or $210,000 family in 2026-27 ($101,000 and $202,000 in 2025-26) |
 | CGT discount (individuals, 12+ months) | 50% |
 | Div 43 rate (post-Sep 1987 residential) | 2.5% of construction cost |
 | Div 43 rate (post-Feb 1992 short-term traveller) | 4% |
 | Low-value asset pool threshold | $1,000 (Div 40) |
 | Immediate deduction threshold (Div 40) | $300 |
 
-### Individual Marginal Tax Rates (2024-25)
+### Individual Marginal Tax Rates (2026-27)
 
-**Individual Marginal Tax Rates (2024-25)**
+**Individual Marginal Tax Rates (2026-27)**
 
 | Taxable Income (AUD) | Rate | Cumulative Tax at Top |
 | --- | --- | --- |
 | 0 -- 18,200 | 0% | $0 |
-| 18,201 -- 45,000 | 16% | $4,288 |
-| 45,001 -- 135,000 | 30% | $31,288 |
-| 135,001 -- 190,000 | 37% | $51,638 |
+| 18,201 -- 45,000 | 15% | $4,020 |
+| 45,001 -- 135,000 | 30% | $31,020 |
+| 135,001 -- 190,000 | 37% | $51,370 |
 | 190,001+ | 45% | -- |
 
 ### Conservative Defaults
@@ -337,7 +337,8 @@ The table follows Table A, Residential property operators (67110), in the *Incom
 ### 6.3 Holiday Homes
 
 - **Holiday home deduction limitation** — If the property is available for rent at below-market rates, or restricted to holiday periods only, or rented to relatives at reduced rates -- deductions are limited to income received (no negative gearing). ATO scrutinises holiday letting closely.
-- **Section 26-50 leisure facilities** — Section 26-50 denies expenses associated with owning or using a leisure facility unless it is used or held mainly to produce assessable income. Offering a holiday home for a few rental weeks does not meet that requirement; keep advertisements, agent agreements, booking records and evidence of commercially realistic rent and tenant access.  _([ITAA 1997 (Cth) s 26-50](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/26-50); [ATO, How to claim rental expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses))_
+- **Section 26-50 leisure facilities** — Section 26-50 denies expenses associated with owning or using a leisure facility unless it is used or held mainly to produce assessable income. Offering a holiday home for a few rental weeks does not meet that requirement; keep advertisements, agent agreements, booking records and evidence of commercially realistic rent and tenant access.
+- **TR 2026/1 and the 2026 compliance guidelines** — TR 2026/1 sets out when rental receipts are assessable, when outgoings are deductible and how to apportion mixed use for individuals not in business. PCG 2026/2 gives the apportionment methods the ATO accepts, and PCG 2026/3 its compliance approach to section 26-50 for holiday homes that are also let. Read them before claiming a loss on a property with any private use.  _([ATO, What's new in the rental properties guide 2026](https://www.ato.gov.au/forms-and-instructions/rental-properties-2026/whats-new-in-the-rental-properties-guide))_  _([ITAA 1997 (Cth) s 26-50](https://www.ato.gov.au/law/view/document?docid=PAC/19970038/26-50); [ATO, How to claim rental expenses](https://www.ato.gov.au/individuals-and-families/investments-and-assets/property-and-land/residential-rental-properties/rental-expenses/how-to-claim-rental-expenses))_
 
 ### 6.4 Subdivision and Development
 
@@ -403,7 +404,7 @@ Establish the jurisdiction first, then read that jurisdiction's own guidance:
 | New South Wales | Revenue NSW, https://www.revenue.nsw.gov.au/ |
 | Victoria | State Revenue Office Victoria, https://www.sro.vic.gov.au/ |
 | Queensland | Queensland Revenue Office, https://qro.qld.gov.au/ |
-| Western Australia | RevenueWA, https://www.wa.gov.au/organisation/department-of-finance/revenuewa |
+| Western Australia | RevenueWA (Department of Treasury and Finance), https://www.wa.gov.au/organisation/department-of-treasury-and-finance |
 | South Australia | RevenueSA, https://www.revenuesa.sa.gov.au/ |
 | Tasmania | State Revenue Office Tasmania, https://www.sro.tas.gov.au/ |
 | Australian Capital Territory | ACT Revenue Office, https://www.revenue.act.gov.au/ |

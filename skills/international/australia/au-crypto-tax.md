@@ -1,10 +1,10 @@
 ---
 name: au-crypto-tax
 description: Use this skill whenever asked about Australian cryptocurrency taxation. Trigger on phrases like "crypto tax Australia", "Bitcoin CGT", "ATO crypto", "crypto capital gains", "personal use asset crypto", "staking income", "airdrop tax", "DeFi tax Australia", "crypto cost base", "crypto trading tax", "Coinbase tax", "Swyftx tax", "CoinSpot tax", "NFT tax Australia", or any question about how cryptocurrency is taxed by the ATO. This skill covers CGT treatment of crypto assets, the personal use asset exemption, trading vs investing distinction, staking and airdrop income, DeFi events, record-keeping requirements, and exchange-specific transaction patterns. ALWAYS read this skill before touching any Australian crypto tax work.
-version: "1.2"
+version: "1.3"
 jurisdiction: AU
-tax_year: 2025
-last_updated: 2026-09-26
+tax_year: 2026
+last_updated: 2026-09-27
 review_status: pending_review
 category: international
 tier: 2
@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # AU Crypto Tax
 
-## Australia Crypto Tax -- CGT & Income Skill v1.2
+## Australia Crypto Tax -- CGT & Income Skill v1.3
 
 ## Section 1 -- Quick Reference
 
@@ -26,29 +26,31 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Australia (Commonwealth of Australia) |
 | Tax | Income Tax -- Cryptocurrency / Digital Assets |
 | Currency | AUD (all gains/income must be reported in AUD) |
-| Tax year | 1 July 2024 -- 30 June 2025 |
+| Tax year | 2026-27 (1 July 2026 -- 30 June 2027) |
 | Primary legislation | Income Tax Assessment Act 1997, Div 104 (CGT events), Div 118 (exemptions) |
-| Supporting guidance | ATO Cryptocurrency guidance (updated 2024); TD 2014/26 (Bitcoin as CGT asset); PCG 2023/1 (DeFi) |
+| Supporting guidance | ATO crypto asset investments guidance; TD 2014/26 (Bitcoin as a CGT asset); TR 2026/D1 (airdrops, draft); TD 2026/D2 (wrapping, draft); ATO DeFi and wrapping guidance |
 | Tax authority | Australian Taxation Office (ATO) |
 | Filing portal | myTax / tax agent lodgement |
 | Filing deadline | 31 October (self-lodgement); agent-managed deadlines vary |
-| Skill version | 1.2 |
+| Skill version | 1.3 |
 
 ### Core Principle
 
 The ATO treats cryptocurrency (including Bitcoin, Ethereum, stablecoins, NFTs, and DeFi tokens) as a **CGT asset**, not as foreign currency. Each disposal triggers a CGT event.
 
-### Individual Marginal Tax Rates (2024-25)
+### Individual Marginal Tax Rates (2026-27)
 
-**Individual Marginal Tax Rates (2024-25)**
+**Individual Marginal Tax Rates (2026-27)**
 
 | Taxable Income (AUD) | Rate |
 | --- | --- |
 | 0 -- 18,200 | 0% |
-| 18,201 -- 45,000 | 16% |
+| 18,201 -- 45,000 | 15% |
 | 45,001 -- 135,000 | 30% |
 | 135,001 -- 190,000 | 37% |
 | 190,001+ | 45% |
+
+- **Rate scale by year** — The second resident bracket is 15 cents from 1 July 2026 and was 16 cents in 2024-25 and 2025-26; add the 2% Medicare levy. Non-residents have no tax-free threshold and no discount. From 1 July 2027 the 50% discount gives way to cost base indexation with a 30% minimum rate on gains accruing after that date (see 2.3).  _([ATO, Tax rates: Australian resident](https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents))_
 
 ### Key Thresholds
 
