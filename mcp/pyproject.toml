@@ -7,7 +7,7 @@ requires-python = ">=3.10"
 license = "AGPL-3.0-only"
 # server.py targets the 2.x SDK (`mcp.server.mcpserver.MCPServer`, transport
 # settings on `run()`); 1.x has neither, so the floor is a hard requirement.
-dependencies = ["mcp>=2,<3", "pyyaml>=6.0.3"]
+dependencies = ["mcp>=2.2.0,<3", "pyyaml>=6.0.3"]
 keywords = [
     "tax", "accounting", "mcp", "ai", "accountant", "vat", "gst",
     "income-tax", "open-source", "self-employed", "freelancer",
