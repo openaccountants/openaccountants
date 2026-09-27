@@ -29,7 +29,7 @@ Rules:
 |---|---|
 | Country codes | 185 |
 | US codes (states, DC and federal) | 52 |
-| Canada (federal code plus province directories under `packages/ca-*`) | 1 code, 13 directories |
+| Canada (federal code plus the province and territory directories under `packages/ca-*`, not counting the Canada-wide `packages/ca-chartered-accountant` bundle) | 1 code, 13 directories |
 | Cross-border and regional codes (`GLOBAL`, `INTL`, `EU-27`, `EG-AE`, `EG-SA`, `US`, `CA`) | 7 |
 | **Total distinct jurisdiction codes** | **245** |
 
