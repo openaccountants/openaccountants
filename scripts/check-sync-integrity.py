@@ -676,6 +676,96 @@ def _is_reviewer_metadata_only_change(before_text, after_text):
     return True
 
 
+# Share of unseen human work a bot render must keep to count as an echo.  The
+# platform re-renders ingested edits, so a few lines come back reflowed; a stale
+# overwrite keeps next to none (the 2026-08-08 au-gst-bas revert kept 0 of 32).
+ECHO_MIN_KEPT = 0.8
+ECHO_MIN_LINE_CHARS = 8
+
+
+def _is_platform_identity(name: str, email: str) -> bool:
+    return name in SYNC_BOT_NAMES or email in SYNC_BOT_EMAILS
+
+
+def _guide_body(text: str) -> str:
+    if text.startswith("---"):
+        end = text.find("\n---", 3)
+        if end >= 0:
+            return text[end + 4 :]
+    return text
+
+
+def _normalize_line(line: str) -> str:
+    """Loose enough that the exporter's re-render of the same words (dash
+    style, spacing, table padding, line wrapping) still matches."""
+    return re.sub(r"[^a-z0-9%$.]", "", line.lower())
+
+
+def _body_lines(text: str | None) -> set[str]:
+    if not text:
+        return set()
+    lines = (_normalize_line(line) for line in _guide_body(text).splitlines())
+    return {line for line in lines if len(line) >= ECHO_MIN_LINE_CHARS}
+
+
+def unseen_human_state(repo: Path, commit: str, path: str) -> tuple[list[str], str | None] | None:
+    """Human commits to ``path`` that no platform render has seen yet.
+
+    Walks back from ``commit^`` until the most recent commit authored or
+    committed by the sync identity.  Returns the human commits found, plus the
+    file text they started from, or None when there are none — in which case
+    the bot is rendering the database over its own previous output and no
+    GitHub-only work can be lost.
+    """
+    log = git_text(
+        repo,
+        "log",
+        "--format=%H%x00%an%x00%ae%x00%cn%x00%ce",
+        f"{commit}^",
+        "--",
+        path,
+        allow_failure=True,
+    )
+    humans: list[str] = []
+    for row in filter(None, log.splitlines()):
+        sha, author, author_email, committer, committer_email = row.split("\0")
+        if _is_platform_identity(author, author_email) or _is_platform_identity(
+            committer, committer_email
+        ):
+            break
+        humans.append(sha)
+    if not humans:
+        return None
+    return humans, read_revision_file(repo, f"{humans[-1]}^", path)
+
+
+def _only_platform_commits(repo: Path, base: str, head: str, path: str) -> bool:
+    log = git_text(
+        repo, "log", "--format=%an%x00%ae", f"{base}..{head}", "--", path, allow_failure=True
+    )
+    rows = [row.split("\0") for row in filter(None, log.splitlines())]
+    return bool(rows) and all(_is_platform_identity(name, email) for name, email in rows)
+
+
+def human_work_kept(
+    starting_text: str | None, human_text: str | None, bot_text: str | None
+) -> tuple[int, int]:
+    """(kept, at_risk) for the human edits between ``starting_text`` and
+    ``human_text``: lines they added that ``bot_text`` still has, plus lines
+    they removed that ``bot_text`` did not bring back."""
+    start, human, bot = (
+        _body_lines(starting_text),
+        _body_lines(human_text),
+        _body_lines(bot_text),
+    )
+    bot_flat = _normalize_line(_guide_body(bot_text or ""))
+    added = human - start
+    removed = start - human
+    kept = sum(1 for line in added if line in bot_flat)
+    kept += sum(1 for line in removed if line not in bot)
+    return kept, len(added) + len(removed)
+
+
 def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
     findings: list[Finding] = []
     commits = filter(None, git_text(repo, "rev-list", "--reverse", f"{base}..{head}").splitlines())
@@ -733,13 +823,47 @@ def bot_authorship_findings(repo: Path, base: str, head: str) -> list[Finding]:
                     )
                 )
                 continue
+            # Since 2026-09-11 a push to main rings the platform, which ingests the
+            # edit into the database; the next export then writes it back here
+            # under the bot. That echo is expected. What must stay red is a bot
+            # render that drops human work the platform never saw (the 2026-08
+            # stale-sync reverts), so judge the bot by what it does to the human
+            # edits made since it last rendered this file.
+            path = change.before_path or change.after_path
+            assert path is not None
+            unseen = unseen_human_state(repo, commit, path)
+            if unseen is None:
+                findings.append(
+                    Finding(
+                        "notice",
+                        "bot-platform-render",
+                        change.display_path,
+                        f"sync bot commit {commit[:12]} re-rendered a guide with no human edit "
+                        "since its last render",
+                    )
+                )
+                continue
+            humans, starting_text = unseen
+            kept, at_risk = human_work_kept(starting_text, before_text, after_text)
+            if at_risk == 0 or kept / at_risk >= ECHO_MIN_KEPT:
+                findings.append(
+                    Finding(
+                        "notice",
+                        "bot-echo-of-human-edit",
+                        change.display_path,
+                        f"sync bot commit {commit[:12]} kept {kept}/{at_risk} changed lines of "
+                        f"human commit(s) {', '.join(sha[:12] for sha in humans)}",
+                    )
+                )
+                continue
             findings.append(
                 Finding(
                     "error",
                     "aggregate-bot-source-write",
                     change.display_path,
-                    f"aggregate sync bot authored commit {commit[:12]} that changed an existing "
-                    "source guide; accountant-attributed edits require a successful CAS preflight",
+                    f"sync bot commit {commit[:12]} kept only {kept}/{at_risk} changed lines of "
+                    f"human commit(s) {', '.join(sha[:12] for sha in humans)}; the platform "
+                    "likely overwrote a GitHub edit it never ingested",
                 )
             )
     return findings
@@ -822,7 +946,30 @@ def run_integrity_check(
         else:
             findings.extend(apply_provenance_checks(repo, base, guide_changes, provenance))
     elif head is not None:
-        findings.extend(bot_authorship_findings(repo, base, head))
+        bot_findings = bot_authorship_findings(repo, base, head)
+        findings.extend(bot_findings)
+        # A render the bot check has cleared carries the database's last_updated
+        # and version, not the author's; re-rendering the same content in the
+        # exporter's formatting is not an unversioned edit.  Human commits in the
+        # range still have to advance the metadata themselves.
+        cleared = {
+            item.path
+            for item in bot_findings
+            if item.code in {"bot-echo-of-human-edit", "bot-platform-render"}
+        }
+        blocked = {item.path for item in bot_findings if item.severity == "error"}
+        for index, item in enumerate(findings):
+            if (
+                item.code == "unversioned-body-change"
+                and item.path in cleared - blocked
+                and _only_platform_commits(repo, base, head, item.path)
+            ):
+                findings[index] = Finding(
+                    "notice",
+                    item.code,
+                    item.path,
+                    item.message + "; platform render, metadata owned by the database",
+                )
 
     order = {"error": 0, "warning": 1, "notice": 2}
     findings.sort(key=lambda item: (order.get(item.severity, 9), item.path, item.code))

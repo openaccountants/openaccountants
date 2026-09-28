@@ -461,6 +461,76 @@ class GitBackedIntegrityTests(unittest.TestCase):
         self.assertIn("aggregate-bot-source-write", codes(findings, "error"))
         self.assertIn("date-regression", codes(findings, "error"))
 
+    def commit_as(self, name: str, email: str, content: str, message: str) -> str:
+        self.git("config", "user.name", name)
+        self.git("config", "user.email", email)
+        self.write_candidate(content)
+        self.git("add", self.path)
+        self.git("commit", "-m", message)
+        return self.git("rev-parse", "HEAD").strip()
+
+    def bot_render_then_human_edit(self) -> tuple[str, str]:
+        bot = ("openaccountants-sync[bot]", "sync@openaccountants.com")
+        rendered = guide(body="Platform line about the filing deadline.")
+        self.commit_as(*bot, rendered, "sync: render")
+        start = self.git("rev-parse", "HEAD").strip()
+        edited = guide(
+            last_updated="2026-08-07",
+            version="1.2",
+            heading_version="1.2",
+            body="Platform line about the filing deadline.\n\n"
+            "W5 = W2 + W3 + W4, including no-ABN withholding at 47%.",
+        )
+        self.commit_as("Synthetic Accountant", "accountant@example.test", edited, "fix W5")
+        return bot, start
+
+    def test_bot_echo_of_ingested_human_edit_is_a_notice(self) -> None:
+        bot, start = self.bot_render_then_human_edit()
+        echoed = guide(
+            last_updated="2026-08-07",
+            version="1.2",
+            heading_version="1.2",
+            body="Platform line about the filing deadline.\n\n"
+            "W5 = W2 + W3 + W4 — including no-ABN withholding at 47%.\n\n"
+            "A later platform edit.",
+        )
+        head = self.commit_as(*bot, echoed, "sync: echo")
+
+        findings, _ = sync_integrity.run_integrity_check(self.repo, start, head, "audit")
+        self.assertNotIn("aggregate-bot-source-write", codes(findings))
+        self.assertIn("bot-echo-of-human-edit", codes(findings, "notice"))
+
+        echo_only = self.git("rev-parse", "HEAD^").strip()
+        findings, _ = sync_integrity.run_integrity_check(
+            self.repo, echo_only, head, "audit", strict_metadata=True
+        )
+        self.assertEqual(set(), codes(findings, "error"))
+
+    def test_bot_overwrite_of_unseen_human_edit_still_fails(self) -> None:
+        bot, start = self.bot_render_then_human_edit()
+        stale = guide(
+            last_updated="2026-08-07",
+            version="1.2",
+            heading_version="1.2",
+            body="Platform line about the filing deadline.\n\nW5 = W2 + W4.",
+        )
+        head = self.commit_as(*bot, stale, "sync: stale")
+
+        findings, _ = sync_integrity.run_integrity_check(self.repo, start, head, "audit")
+        self.assertIn("aggregate-bot-source-write", codes(findings, "error"))
+
+    def test_bot_rerender_without_human_edit_is_a_notice(self) -> None:
+        bot = ("openaccountants-sync[bot]", "sync@openaccountants.com")
+        self.commit_as(*bot, guide(body="First render."), "sync: render")
+        start = self.git("rev-parse", "HEAD").strip()
+        head = self.commit_as(
+            *bot, guide(last_updated="2026-08-07", body="Second render."), "sync: render"
+        )
+
+        findings, _ = sync_integrity.run_integrity_check(self.repo, start, head, "audit")
+        self.assertNotIn("aggregate-bot-source-write", codes(findings))
+        self.assertIn("bot-platform-render", codes(findings, "notice"))
+
     def test_human_authored_unversioned_main_rewrite_fails_strict_audit(self) -> None:
         self.write_candidate(guide(body="Unversioned main rewrite."))
         self.git("add", self.path)
