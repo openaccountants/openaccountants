@@ -23,14 +23,14 @@ Rules:
 - Do not collapse the tiers. Most Guides are source-cited drafts; each file states its tier in frontmatter (see [QUALITY-TIERS.md](QUALITY-TIERS.md)), and the website shows the Partner's name on reviewed ones.
 - Do not copy an exact figure into a document by hand. It is stale within a day; use the rounded claim or point at the live source.
 
-## Jurisdiction breakdown (repository, 26 September 2026)
+## Jurisdiction breakdown (repository, 30 September 2026)
 
 | Level | Count |
 |---|---|
-| Country codes | 185 |
-| US codes (states, DC and federal) | 52 |
-| Canada (federal code plus the province and territory directories under `packages/ca-*`, not counting the Canada-wide `packages/ca-chartered-accountant` bundle) | 1 code, 13 directories |
-| Cross-border and regional codes (`GLOBAL`, `INTL`, `EU-27`, `EG-AE`, `EG-SA`, `US`, `CA`) | 7 |
+| Country codes (including the national `US` and `CA` codes) | 185 |
+| US sub-national codes (the 50 states, `US-DC` and `US-NY-NYC`) | 52 |
+| Canada (the provincial code `CA-AB` plus the province and territory directories under `packages/ca-*`, not counting the Canada-wide `packages/ca-chartered-accountant` bundle) | 1 code, 13 directories |
+| Cross-border, regional and general codes (`GLOBAL`, `INTL`, `EU-27`, `EU/EEA/CH/UK`, `EG-AE`, `EG-SA`, `general`) | 7 |
 | **Total distinct jurisdiction codes** | **245** |
 
 ## How to update
