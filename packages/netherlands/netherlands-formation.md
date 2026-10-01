@@ -4,7 +4,7 @@ description: Use this skill whenever asked about forming, incorporating, or regi
 version: 1.0
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-09-27
+last_updated: 2026-10-01
 authored_by: OpenAccountants team
 review_status: pending_review
 trust_label: By OpenAccountants
@@ -38,7 +38,7 @@ It does not compute the corporate tax bill, VAT returns or payroll. Route those 
 - **netherlands-payroll**: running payroll, the expat scheme (known as the thirty-percent ruling)
   and employer contributions.
 
-Sources are belastingdienst.nl and wetten.overheid.nl (Burgerlijk Wetboek Book 2, Handelsregisterwet
+The current law was checked on 28 September 2026. This guide does not approve a filing, notarial transaction or bank application. Sources are belastingdienst.nl and wetten.overheid.nl (Burgerlijk Wetboek Book 2, Handelsregisterwet
 2007, Wet inkomstenbelasting 2001, Wet op de omzetbelasting 1968). KVK's own site is not used as a
 source here, so **KVK fees, portal steps and processing times are marked "check at KVK"**.
 
@@ -71,6 +71,8 @@ source here, so **KVK fees, portal steps and processing times are marked "check 
 
 ## The method, step by step
 
+1. **Pick the legal form.**
+
 ### Step 1: Pick the legal form ([source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting))
 
 | Point | Eenmanszaak | VOF | BV |
@@ -100,6 +102,8 @@ from 2025). The owner then takes a salary and/or dividends. Whether a BV saves t
 the customary salary and dividend taxation; work that out with **nl-corporate-tax** rather than with a
 rule of thumb.
 
+2. **Register the business.**
+
 ### Step 2: Register the business (KVK Handelsregister)
 
 - **Who must register.** An enterprise established in the Netherlands and owned by a natural person, a
@@ -112,10 +116,10 @@ rule of thumb.
   copy of the deed (BW 2:180 lid 1).
 - **Later changes.** Other required filings, including changes, are made at the latest one week after the
   event (art. 20 lid 2).
-- **KVK passes the data to the Belastingdienst.** You do not register separately for tax. A sole trader
+- **KVK passes the data to the Belastingdienst.** This supplies the ordinary starting-business information; employer registration in Step 6 remains a separate required action. A sole trader
   is registered with their citizen service number (BSN); other forms get an RSIN from KVK. The
-  Belastingdienst uses the BSN or RSIN to issue the VAT (OB) number and any payroll tax number. **Its
-  registration takes at most 10 working days**, after which it writes about the taxes that apply.
+  Belastingdienst uses the BSN or RSIN to issue the VAT (OB) number and any payroll tax number. **Its published
+  registration target is at most 10 working days**, after which it writes about the taxes that apply.
 - **When KVK registration is not possible** (for example a sole trader whose activity does not count as
   an enterprise for the Handelsregister, or a foreign legal form with no establishment in the
   Netherlands), register with the Belastingdienst on the form "Opgaaf startende onderneming (niet
@@ -125,6 +129,8 @@ rule of thumb.
 Sources: [Handelsregisterwet 2007](https://wetten.overheid.nl/BWBR0021777/2025-07-16);
 [Belastingdienst: schrijf uw onderneming in](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/ondernemen/onderneming_starten/schrijf-uw-onderneming-in/schrijf-uw-onderneming-in).
 
+3. **Execute the BV formation process.**
+
 ### Step 3: For a BV, the notarial deed
 
 - **Deed.** A BV is incorporated by one or more persons by notarial deed, signed by every founder and
@@ -132,7 +138,7 @@ Sources: [Handelsregisterwet 2007](https://wetten.overheid.nl/BWBR0021777/2025-0
 - **Online formation.** A BV can be incorporated by electronic notarial deed by one or more **nationals
   of an EU member state** (BW 2:175a lid 1). If only natural persons use the model deed, the notary
   completes the formation within five working days, otherwise within ten, counted from the later of
-  meeting all formal requirements and paying up the shares (lid 3).
+  meeting all formal requirements and paying up the shares (lid 3). Electronic notarial incorporation permits only monetary contributions: a contribution in kind cannot be agreed through this route (BW 2:191a lid 4). For assets or an existing business contributed in kind, arrange the ordinary notarial route and the required description below.
 - **Content.** The articles state the nominal value of the shares; the deed states the issued and paid-up
   capital and who takes which shares (BW 2:178 lid 1). On taking a share, its nominal amount must be paid,
   unless it is agreed that payment is due later or on call (BW 2:191 lid 1).
@@ -151,7 +157,7 @@ Sources: [Handelsregisterwet 2007](https://wetten.overheid.nl/BWBR0021777/2025-0
   bankrupt within one year of incorporation (BW 2:203 lid 3).
 - **Directors, residence and foreign documents: check with the notary.** Whether non-resident directors,
   signing the deed by power of attorney, and apostilled or translated foreign documents are acceptable is a
-  notarial and anti-money-laundering matter; this Guide has no allowed source for it.
+  notarial and anti-money-laundering matter; confirm the actual requirements with the notary before proceeding.
 - **Acts before registration.** Directors are jointly and severally liable, alongside the BV, for every
   act binding the BV done before the first registration in the Handelsregister, with the copies of the
   deed, has been made (BW 2:180 lid 2). Register quickly.
@@ -191,7 +197,7 @@ the first return(s) for those periods must be filed on paper
 ([Belastingdienst: eerste btw-aangifte](https://www.belastingdienst.nl/wps/wcm/connect/nl/startende-ondernemer/content/btw-aangifte-startende-ondernemer)).
 
 **KOR (kleineondernemersregeling), 2026.**
-- **Who:** a business **established in the Netherlands** with turnover in the Netherlands of **not more
+- **Who:** a business **established in the Netherlands** with relevant turnover in the Netherlands of **not more
   than €20,000** in a calendar year (Wet OB art. 25a lid 1). Open to sole traders, partnerships such as a
   VOF, and legal persons such as a BV.
 - **Both years:** the €20,000 limit applies to the calendar year of joining **and** the year before
@@ -210,8 +216,8 @@ the first return(s) for those periods must be filed on paper
   processing: to start on 1 January 2027 the application must arrive by 4 December 2026. Keep filing VAT
   returns until the Belastingdienst confirms the start date
   ([aanmelden KOR](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor)).
-- **Leaving:** you may leave at any time, effective the first day of the next quarter. **If turnover
-  passes €20,000 in a calendar year you must deregister at once**, with immediate effect
+- **Leaving:** you may give notice without the former multi-year lock-in; voluntary exit takes effect on the first day of the next calendar quarter beginning at least four weeks after receipt of notice. Re-entry is barred for the remainder of the exit year and the following calendar year (Wet OB art. 25a lid 7). **If turnover
+  passes €20,000 in a calendar year you must deregister at once**, from the supply causing the excess; exclusion continues for the rest of that year and the next calendar year
   ([wat betekent meedoen](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/wat-betekent-meedoen-met-de-kleineondernemersregeling)).
 - **Never under the KOR:** supplies of real estate used in the business, and new means of transport
   shipped to another EU country. Also: no opted-taxable letting while in the KOR.
@@ -224,11 +230,13 @@ the first return(s) for those periods must be filed on paper
   Refer to **nl-vat-return**.
 
 **Registration threshold (registratiedrempel), 2026.** A business with annual turnover of **at most
-€2,200** that is **not required to register with KVK** does not need to register for VAT at all. It does
-not apply if the business must register with KVK or is already registered for VAT. Once a supply takes
+€2,200** that is **not required to register with KVK** can use the ordinary domestic VAT registration relief. This does not remove incidental obligations for reverse-charged supplies or services received and relevant intra-EU acquisitions: apply Wet OB art. 25b lid 3 and refer these transactions to the VAT Guide before assuming no reporting or payment is needed. It does
+not apply if the business must register with KVK or is already registered for VAT, or applies the small-business exemption in another EU member state (Wet OB art. 25b). Once a supply takes
 turnover above €2,200 in a calendar year, normal VAT applies **from that supply** and the business must
 register
 ([registratiedrempel](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/registratiedrempel-voor-kleine-ondernemers)).
+
+Confirm the statutory start, exit and cross-border conditions in [Wet OB arts. 25a–25e](https://wetten.overheid.nl/BWBR0002629). Domestic KOR and EU-KOR cannot be combined with the import scheme; EU-KOR also requires quarterly turnover reports and country-specific eligibility checks.
 
 **Deciding on the KOR.** It usually suits a business selling to private customers with low costs. It
 usually does not suit a business that sells to VAT-registered customers, or expects large investments
@@ -252,8 +260,8 @@ shareholder like any employee
 So a BV whose owner works in it normally needs employer registration from the start.
 
 **Customary salary (gebruikelijk loon), 2026.** It applies to an employee of a company in which they hold
-a substantial interest, meaning at least 5% of the issued capital (with a partner, direct or indirect)
-(Wet IB 2001 art. 4.6). The customary salary is at least the **highest** of:
+a substantial interest, normally including at least 5% of issued capital (with a partner, direct or indirect), but share classes, rights and statutory deemed interests also need checking
+(Wet IB 2001 arts. 4.6–4.11). The customary salary is at least the **highest** of:
 1. the salary for the most comparable employment;
 2. the salary of the best-paid employee of the company or of a related company;
 3. **€58,000 in 2026** (€56,000 in 2025 and 2024).
@@ -280,8 +288,7 @@ income tax. Wet IB 2001 art. 3.4 defines the ondernemer as the taxpayer for whos
 run and who is directly bound for its obligations. The Belastingdienst looks at, among other things:
 whether profit is made (and how much), independence, capital, time spent, **number of clients**, visibility
 to the market, entrepreneurial risk, and liability for debts. Activity in the hobby or family sphere is
-not an enterprise. If the person is not an ondernemer, the income is "resultaat uit overig werk": profit is
-computed the same way, but **no zelfstandigenaftrek or investment deduction**
+not an enterprise. If there is a taxable income source but no entrepreneurship, distinguish employment income from "resultaat uit overig werk"; a hobby without an income source is not automatically taxable other work. For taxable other work, profit principles apply but **no zelfstandigenaftrek or investment deduction**
 ([wanneer bent u ondernemer](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/wanneer_bent_u_ondernemer_voor_de_inkomstenbelasting)).
 
 **Urencriterium (Wet IB art. 3.6).**
@@ -308,7 +315,7 @@ computed the same way, but **no zelfstandigenaftrek or investment deduction**
 - It cannot exceed the profit before ondernemersaftrek, **unless** the person qualifies for the
   startersaftrek.
 - Unused zelfstandigenaftrek can be carried forward for the next 9 years, set by a decision (beschikking),
-  but only set off in a year in which profit is higher than that year's zelfstandigenaftrek.
+  only where the taxpayer is entitled to the current-year zelfstandigenaftrek and has profit exceeding that current-year deduction. Use the oldest eligible unused amount first, within the remaining profit limit. Retain the assessment decisions and expiry schedule (Wet IB art. 3.76 lid 7).
 - Not available on profit earned as a co-entitled person (medegerechtigde).
 ([zelfstandigenaftrek 2026](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026);
 [zelfstandigenaftrek 2025](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025))
@@ -316,7 +323,7 @@ computed the same way, but **no zelfstandigenaftrek or investment deduction**
 **Startersaftrek (Wet IB art. 3.76 lid 3).**
 - Adds **€2,123** to the zelfstandigenaftrek (2026 and 2025) if the person was not an ondernemer in one or
   more of the five previous calendar years **and** claimed the zelfstandigenaftrek no more than twice in
-  that period. In practice: at most 3 times in the first 5 years.
+  that period. A previous year whose deduction was reduced to nil by the profit cap still counts as a year in which the zelfstandigenaftrek was applied (Wet IB art. 3.76 lid 5). Do not infer the count from cash tax benefit or assume every newly registered person qualifies.
 - Requires entitlement to the zelfstandigenaftrek (so the urencriterium must be met).
 - Not available after a "silent return" from a BV (geruisloze terugkeer) in the year or the five years
   before.
@@ -335,6 +342,10 @@ co-entitled person
 
 **Order of calculation:** profit → minus ondernemersaftrek (zelfstandigenaftrek incl. startersaftrek, and
 other items) → minus 12.7% MKB-winstvrijstelling → taxable profit in box 1.
+
+Do not finalize the legal-form recommendation or relief calculation while ownership, work pattern, residency, turnover or prior assessment history is missing. Record the missing input and refer to the corresponding specialist or calculation Guide. A salary reference amount is not a universal profit threshold for choosing a BV.
+
+For banking, working capital and professional costs, obtain current written requirements and quotes from the selected bank and notary. Budget operating cash, payroll, accounting and any required audit separately; do not promise approval or a completion date from generic bank examples.
 
 ## Figures, with years
 
@@ -369,13 +380,13 @@ the 2027 amounts when they are published.
 | Started mid-year | Still needs 1,225 hours; no pro-rating |
 | New starter who also has a job | Only the 1,225 hours test applies if not an ondernemer in one of the 5 previous years; the "more than half" test is dropped |
 | Starter with profit lower than the deductions | Startersaftrek case: full zelfstandigenaftrek allowed, creating a loss |
-| Not a starter, low profit | Zelfstandigenaftrek capped at profit; the rest carries forward 9 years, usable only in years when profit exceeds that year's zelfstandigenaftrek |
+| Not a starter, low profit | Zelfstandigenaftrek capped at profit; the rest carries forward 9 years, usable only with current-year entitlement and profit exceeding that year's deduction; oldest unused amount first |
 | Partner in family VOF doing mostly support work | 70% or more support work in an unusual partnership: hours do not count |
 | Turnover this year at most €20,000 but last year above | KOR not available this year |
 | Turnover passes €20,000 while in KOR | Must leave the KOR at once |
 | Turnover at most €2,200, KVK registration required | Registration threshold does not apply; KOR may |
 | Sale of a used business asset | Not counted toward the KOR limit |
-| DGA with no substantial interest under Wet IB art. 4.6 (below 5% of shares, and also below 5% in rights to acquire shares, profit-sharing rights and votes, counting a partner and indirect holdings) | Customary salary rule does not apply |
+| Working shareholder with a holding below 5% | Do not conclude from that percentage alone: check direct/indirect holdings, partner holdings, share classes, options and applicable statutory deemed-interest rules; refer uncertain cases |
 | DGA can prove comparable work pays less | Customary salary set at the lower amount |
 | BV contract signed before the deed | Signers jointly and severally liable until the BV ratifies it, unless expressly agreed otherwise; after ratification still liable for loss if they knew or should have foreseen the BV could not perform (presumed if bankrupt within one year of incorporation) |
 | BV trading before first KVK registration | Directors jointly and severally liable with the BV |
@@ -385,7 +396,7 @@ the 2027 amounts when they are published.
 
 ## Worked cases ([source](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026))
 
-**Case 1: first-year sole trader (2026).** Sanne starts an eenmanszaak on 1 February 2026. She was never an
+**Case 1: first-year sole trader (2026).** Sanne starts an eenmanszaak on 1 February 2026. She is below AOW age at the start of the year, was never an
 ondernemer before, works 1,400 hours, and has no other job. Profit before deductions: €40,000.
 - Urencriterium met (at least 1,225 hours; as a starter, the "more than half" test does not apply).
 - Zelfstandigenaftrek €1,200 + startersaftrek €2,123 = €3,323.
@@ -398,7 +409,7 @@ Profit €10,000. He fails the urencriterium (hours are not pro-rated), so no ze
 startersaftrek. He is still an ondernemer, so he gets the MKB-winstvrijstelling: 12.7% × €10,000 = €1,270.
 Taxable profit: €8,730.
 
-**Case 3: starter with low profit (2026).** Eva qualifies for the startersaftrek and has profit of €2,000.
+**Case 3: starter with low profit (2026).** Eva is below AOW age at the start of the year, qualifies for the startersaftrek and has profit of €2,000.
 Because she qualifies for the startersaftrek, the zelfstandigenaftrek is not capped at profit. Deduction
 €3,323, so a loss of €1,323. The MKB-winstvrijstelling reduces the loss by 12.7% × €1,323 = €168.02, leaving
 a loss of €1,154.98, which she can set off against other box 1 income or carry to other years.
@@ -416,8 +427,15 @@ must register as a VAT entrepreneur (and may then consider the KOR).
 
 **Case 6: DGA customary salary (2026).** Mila owns all the shares in a new BV. Its best-paid employee earns €64,000.
 The customary salary is at least the highest of the comparable-job salary, €64,000 and €58,000, so at least
-€64,000, unless the BV can make a lower comparable salary plausible. Payroll registration is needed before
-her salary is paid.
+€64,000, unless the BV can make a lower comparable salary plausible. Employer registration is required at the latest on the first working day of the first employee, including the working DGA; do not wait for the salary payment date.
+
+**Case 7: unused deduction but no current entitlement.** A profitable former entrepreneur has an unused-deduction assessment but does not satisfy the current-year hours criterion. Do not offset the old deduction merely because there is sufficient profit; current-year entitlement is required. If entitled in a later year within the carry period, use eligible amounts oldest first.
+
+**Case 8: nil-cap starter lookback.** A previous ordinary zelfstandigenaftrek was reduced to nil by the profit cap. Count that year as an application for the starter lookback, even though no cash deduction was obtained. Check the complete previous five-year record.
+
+**Case 9: electronic formation with assets.** EU founders propose an electronic deed and contribution of equipment. The electronic route cannot accept that in-kind contribution; obtain the ordinary notarial route and required description. Cash-only formation may use the electronic route if all its other conditions are met (BW 2:191a lid 4).
+
+**Case 10: first-year audit classification.** A new ordinary BV meets the applicable small-company size criteria at the end of its first financial year. Do not demand two historical balance dates before considering the exemption: article 398 lid 1 applies to the first and second years. Still check group aggregation, assembly decisions and statutory exclusions before confirming the exemption.
 
 ## When to refuse or refer
 
@@ -443,11 +461,11 @@ her salary is paid.
 | --- | --- | --- |
 | VAT return and payment | VAT entrepreneurs not in the KOR | By the last day of the month after the period. Quarterly 2026: Q3 by 31 October 2026, Q4 by 31 January 2027. Annual filers: the 2026 return by 31 March 2027. Businesses established abroad have other dates ([dates](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/uiterste-aangifte-en-betaaldatums)) |
 | Payroll tax return | Employers, including a BV paying its DGA | Periods set in the Aangiftebrief loonheffingen; see netherlands-payroll |
-| Income tax return | Eenmanszaak owner, each VOF partner | By the date in the letter, usually 1 May; with an extension, usually 1 September |
+| Income tax return | Eenmanszaak owner, each VOF partner | By the date in the letter, usually 1 May; with an extension, use the actual granted date |
 | VPB return | BV | Calendar-year BV: before 1 June of the next year; otherwise within 5 months of year-end; a short year ending on 31 December: by 1 June of the next year, ending in another month: before 1 April of the next calendar year; extension can be requested ([aangifte vpb](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/aangifte-vennootschapsbelasting-doen)) |
 | Annual accounts prepared | BV board | Within five months of year-end, extendable by the general meeting by up to five months for special reasons (BW 2:210 lid 1) |
 | Annual accounts published | BV | Within eight days of adoption; if not adopted within two months after the preparation deadline, publish the prepared accounts at once marked "not yet adopted"; at the latest twelve months after year-end (BW 2:394 lid 1, 2 and 3) |
-| Statutory audit | BV | The accounts must be audited by a registeraccountant or other qualified auditor (BW 2:393 lid 1), unless the small-company exemption applies (BW 2:396 lid 7 disapplies 2:393 lid 1 for companies meeting the size criteria in 2:396 lid 1 on two consecutive balance sheet dates; check the criteria) |
+| Statutory audit | BV | The accounts must be audited by a registeraccountant or other qualified auditor (BW 2:393 lid 1), unless the small-company exemption applies (BW 2:396 lid 7 disapplies 2:393 lid 1 for companies meeting the size criteria in 2:396 lid 1 on two consecutive balance sheet dates; for the first and second financial years, article 398 lid 1 permits the exemption where the first-year balance date meets the relevant criteria. Check group aggregation under article 396 lid 2, assembly decisions and exclusions under article 398, including public-interest entities; refer the size classification to the financial-statements method) |
 | Shareholders' register | BV board | Kept by the board with names and addresses of all shareholders, date of acquisition, class of shares and amount paid on each share (BW 2:194 lid 1); keep it updated on every transfer |
 | Handelsregister changes, including UBO | Obliged persons | At the latest one week after the change (Handelsregisterwet art. 20 lid 2) |
 
@@ -471,7 +489,7 @@ Distributions need board approval, which must be refused if the BV would then be
 due debts (BW 2:216 lid 2).
 
 **Returns being filed now for 2025.** A 2025 income tax return for a sole trader or VOF partner was due by
-the date in the letter (usually 1 May 2026), or by the extended date (usually 1 September 2026). It uses the
+the date in the letter (usually 1 May 2026), or by the actual granted extended date. It uses the
 2025 figures: zelfstandigenaftrek €2,470, startersaftrek €2,123, MKB-winstvrijstelling 12.7%, deduction benefit
 capped at 37.48%. A calendar-year BV's 2025 VPB return was due before 1 June 2026 unless extended. The 2025
 customary salary floor was €56,000.
@@ -483,12 +501,12 @@ customary salary floor was €56,000.
       signed by all founders; new description if value fell considerably); pre-incorporation contracts ratified,
       and the BV able to perform them.
 - [ ] Shareholders' register set up by the board; audit requirement checked against the size criteria.
-- [ ] Accounts calendar set: prepared within five months, adopted within two months after that (or published
+- [ ] Accounts calendar set: prepared within five months, adopted within two months after the statutory preparation deadline, including a valid extension (or published
       at once as "not yet adopted"), published within eight days of adoption.
 - [ ] Handelsregister entry filed in time: business within one week before or after the start; BV within one
       week of incorporation (check KVK fee and steps).
 - [ ] UBO details filed and kept up to date; changes within one week.
-- [ ] Belastingdienst letters received (within at most 10 working days): VAT ID and OB number, or confirmation
+- [ ] Belastingdienst letters received (using the published processing target, with delayed letters followed up): VAT ID and OB number, or confirmation
       that the business is not a VAT entrepreneur.
 - [ ] KOR decision made: turnover this year and last year at most €20,000; application only after receiving
       the numbers; VAT returns filed until the start date is confirmed.
