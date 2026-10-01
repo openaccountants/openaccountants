@@ -2,165 +2,98 @@
 name: netherlands-owner-occupied-home-tax-scheme
 description: The Dutch owner-occupied home scheme
 jurisdiction: NL
-tax_year: 2025
-last_updated: 2026-08-24
+tax_year: 2026
+last_updated: 2026-10-01
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Netherlands — Owner-Occupied Home Tax Scheme
 
-## Netherlands — Owner-Occupied Home Tax Scheme
+Use this method for Dutch income-tax classification of a private main home, qualifying home debt and legacy home-saving products in 2026. Establish the applicable year before calculating: a return filed during 2026 may concern 2025. Use the separate [2025 home instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere) for that return; the figures below are 2026 figures. This is a calculation and evidence workflow, not authority to file or change a mortgage contract.
 
-The Dutch owner-occupied home scheme
+## Ask the client first
 
-This article explains the legal requirements that a property must meet to qualify as an owner-occupied home for Dutch income tax purposes. It also discusses qualifying home acquisition debt and explains how the owner-occupied home scheme operates.
+- Obtain the tax year and residence/treaty position; all owners, beneficial interests and fiscal-partner dates; purchase/sale and succession deeds; actual occupation and BRP dates; the correct year's WOZ decision; all loan contracts, annual statements, repayment schedules and refinancing history; renovation invoices and payments; prior home sales, equity reserves and loan repayment-period records; rent receipts and occupancy agreements; and any KEW, SEW or BEW contracts, premiums, previous exemptions and planned payouts. For divorce, care admission or temporary absence, obtain exact dates, remaining occupants, payment arrangements and evidence of intended return. Missing material information means an explicit calculation hold, not an assumed entitlement.
 
-## The owner-occupied home scheme
+## The method, step by step
 
-An owner-occupied home forms part of taxable income from work and home in box 1. For most taxpayers, taxable income from the home consists only of the deemed owner-occupied home benefit. Taxable income may also include a taxable payment from a qualifying endowment insurance policy linked to the home (KEW), a qualifying home savings account (SEW), or a qualifying home investment account (BEW), as well as 70% of the net rental income received when the home is let temporarily.
+1. **Classify the property and each relevant period.** A qualifying home is normally the taxpayer's or household's main residence, held through legal/economic ownership or a qualifying cooperative right, with benefits, burdens and predominantly the value-change risk borne by the taxpayer or partner. An inherited usufruct, use or residence right can also qualify subject to its conditions. A qualifying fixed houseboat/caravan and appurtenances can fall within the definition. Registration or a mortgage alone does not establish main-residence status. Business premises, investment homes and independent rented portions need separate classification. Fiscal partners generally choose one main home; statutory temporary exceptions can allow additional qualifying properties. Record the facts and legal basis, not just the address. [Wet IB, article 3.111](https://wetten.overheid.nl/BWBR0011353); [annual instructions, 10.2](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 
-Deductible expenses are set off against this taxable income. These include interest and costs relating to qualifying home acquisition debt, ground rent payments, and interest and costs relating to certain residual debts.
+2. **Apply temporary-home exceptions before moving the property to Box 3.** Keep a dated property schedule and stop each exception when its conditions cease. [Wet IB, article 3.111](https://wetten.overheid.nl/BWBR0011353); [annual instructions, 10.2.2–10.2.6](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 
-## Meaning of an owner-occupied home
-
-A property falls within box 1 if it is available, other than temporarily, as the main residence of the taxpayer or a member of the taxpayer’s household. The taxpayer must also be the legal or economic owner. A property may also qualify when the taxpayer has acquired a right of usufruct, residence, or use under the law of succession.
-
-The general rule is that a property qualifies only if it serves as the taxpayer’s main residence. The Dutch Income Tax Act 2001 provides the following exceptions:
-
-- **Relocation scheme 1** — A former main residence that is vacant and intended for sale continues to qualify. This exception applies during the calendar year in which the property is vacated and the following three calendar years (relocation scheme 1).  _(The Dutch Income Tax Act 2001 provides the following exceptions)_
-- **Relocation scheme 2** — A vacant property or a property under construction qualifies if it is intended to become the taxpayer’s main residence during the current calendar year or one of the following three calendar years (relocation scheme 2).  _(The Dutch Income Tax Act 2001 provides the following exceptions)_
-- **Divorce scheme** — If the taxpayer leaves the property but it remains available to a former partner as that person’s main residence, it continues to qualify for no more than 24 months. This is commonly known as the divorce scheme.  _(The Dutch Income Tax Act 2001 provides the following exceptions)_
-- **Nursing or residential care home** — When a person moves into a nursing or residential care home for medical reasons or because of old age, the former home may continue to qualify for up to two years.  _(The Dutch Income Tax Act 2001 provides the following exceptions)_
-- **Expatriate assignment scheme** — A home that has served as the taxpayer’s main residence for at least one year may continue to qualify if it is subsequently available only temporarily as a main residence. It may not be made available to other people, subject to a few family-related exceptions, and the taxpayer may not have another qualifying owner-occupied home. This is known as the expatriate assignment scheme because it is especially relevant to employees who are posted elsewhere by their employer for a fixed period. Unlike the other schemes described above, this scheme applies only if the taxpayer claims it in the income tax return. Without such a claim, the property falls within box 3.  _(The Dutch Income Tax Act 2001 provides the following exceptions)_
-
-## Deemed owner-occupied home benefit
-
-The benefit derived from an owner-occupied home is determined on a deemed basis. It is calculated as a fixed percentage of the property’s value for purposes of the Valuation of Immovable Property Act (the WOZ value).
-
-For 2026, the annual benefit is calculated as follows:
-
-**2026 annual deemed benefit by owner-occupied home value**
-
-| Owner-occupied home value | Annual deemed benefit |
+| Situation | Decision and evidence |
 | --- | --- |
-| Up to and including €12,500 | Nil |
-| More than €12,500, up to and including €25,000 | 0.10% of the value |
-| More than €25,000, up to and including €50,000 | 0.20% of the value |
-| More than €50,000, up to and including €75,000 | 0.25% of the value |
-| More than €75,000, up to and including €1,350,000 | 0.35% of the value |
-| More than €1,350,000 | €4,725 plus 2.35% of the part of the value exceeding €1,350,000 |
+| Former main home vacant and genuinely for sale | Departure calendar year plus the next three calendar years; retain sale instructions and vacancy evidence. Letting interrupts ordinary Box 1 treatment; qualifying return to vacancy within the remaining sale period can restore it only if the home remained offered for sale throughout the letting period. |
+| Empty or under-construction future home | Demonstrate exclusive intended main-home use in the current calendar year or one of the next three; construction status needs concrete evidence. |
+| Departure after separation | Up to two years from departure while the former fiscal partner remains there as main resident, for the departing taxpayer's qualifying share. Check ownership, actual interest payments and separate maintenance obligations. |
+| Admission to nursing/residential care | Up to two years under the care exception; if a continuing fiscal partner remains, the ordinary main-home rule may continue beyond that period. |
+| Temporary assignment or other temporary absence | Request treatment in the return; the home must previously have been a qualifying main home for at least one year, be intended for return, and the taxpayer and partner must not have taxable income from another home under the own-home scheme. No third-party availability, subject to the statutory free-occupancy exceptions below. |
 
-- **Relocation scheme and expatriate assignment scheme benefit** — No deemed benefit is calculated for a property covered by either relocation scheme. If the expatriate assignment scheme applies, the deemed benefit is 0.55% on a value of up to €1,350,000. The rate on the value above that amount is 2.35%.
-- **Temporary availability to third parties** — If the home is made temporarily available to third parties, the deemed benefit is increased by 70% of the benefit obtained from doing so.
-- **Room-rental exemption (2026)** — A separate exemption applies to the letting of a room. If annual room-rental receipts do not exceed €6,633 in 2026, the rented space remains part of the owner-occupied home and the rental benefit is disregarded. The space must not constitute an independent dwelling. Whether it is furnished is irrelevant. Both the tenant and the landlord must be registered at the property’s address in the Personal Records Database. EUR
+For temporary absence, current article 3.111(7) excludes from “third parties,” when occupation is free: descendants by blood or affinity of the taxpayer, partner or immediately preceding partner; the partner or immediately preceding partner; and someone who belonged to the household for at least twelve consecutive months immediately before the absence. Check the exact relationship and timing. The annual information page still describes a narrower child-age condition; apply the current operative statute to this 2026 decision, and refer disputed or cross-border circumstances. Do not confuse this assignment exception with ordinary short holiday letting. [Current statute](https://wetten.overheid.nl/BWBR0011353); [start-of-2026 statute](https://wetten.overheid.nl/BWBR0011353/2026-01-01).
 
-## Qualifying home acquisition debt
+3. **Calculate the eigenwoningforfait for the eligible period.** For 2026 use the WOZ decision for 2026, normally valuation date 1 January 2025, including qualifying appurtenances. Use the official substitute valuation method where no WOZ decision exists. For ordinary main-home periods, use the statutory BRP start/end dates, with the statutory exceptions where registration is impossible or partner choice applies. Record any allocation or time apportionment. [Annual instructions, 10.3.1](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [article 3.112](https://wetten.overheid.nl/BWBR0011353).
 
-Interest and costs relating to qualifying home acquisition debt are deductible from the benefits derived from the owner-occupied home. A debt can qualify only if it was incurred in connection with such a home. It must have been taken out to acquire, improve, or renovate the home, or to pay the costs of obtaining that debt.
+| 2026 WOZ value | Annual ordinary benefit |
+| --- | --- |
+| Up to €12,500 | Nil |
+| Above €12,500 through €25,000 | 0.10% of value |
+| Above €25,000 through €50,000 | 0.20% of value |
+| Above €50,000 through €75,000 | 0.25% of value |
+| Above €75,000 through €1,350,000 | 0.35% of value |
+| Above €1,350,000 | €4,725 plus 2.35% of the excess |
+| Source | [2026 annual table and article 3.112](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere) |
 
-Debts arising from 2013 onwards must meet additional conditions:
+The vacant sale/future-home exceptions have no deemed benefit. The temporary-assignment exception uses 0.55% through €1,350,000 and, above that, €7,425 plus 2.35% of the excess. Do not apply that higher schedule to every absence. [Article 3.112(4)–(5)](https://wetten.overheid.nl/BWBR0011353).
 
-- **Tax repayment requirement** — The tax repayment requirement applies to these debts under the current rules. The full debt must be repaid at least on an annuity basis within no more than 30 years.
-- **Repayment obligation in agreement** — The repayment obligation must be included in the agreement with the lender.
-- **Information obligation for non-administrative lenders** — If the loan was agreed with a person or entity that has no statutory administrative obligation, the taxpayer must provide information about it to the Dutch Tax and Customs Administration. This may concern an individual, such as a parent, but also the taxpayer’s own private limited company or a foreign bank that has no administrative obligation in the Netherlands. The information is supplied in the income tax return.
-- **Consequence of not meeting conditions** — If the conditions are not met, the loan falls within box 3. If they are met, or if the loan is qualifying home acquisition debt dating from before 2013, the loan falls within box 1. The taxpayer cannot elect to allocate a box 1 debt to box 3.
-- **Temporary repayment shortfall** — The Income Tax Act 2001 contains arrangements for a temporary repayment shortfall relating to debt governed by the current rules. The shortfall may be made up or, subject to conditions, spread over the remaining period of entitlement to interest relief. In that case, the loan remains in box 1.  _(The Income Tax Act 2001)_
-- **Bridging loans** — The tax repayment requirement does not apply to bridging loans. Section 3.119f of the Income Tax Act 2001 defines what is treated as a bridging loan.  _(Section 3.119f of the Income Tax Act 2001)_
+4. **Classify letting separately.** Ordinary temporary letting of the main home retains its home classification and adds 70% of rental receipts after only the permitted directly related letting costs. Mortgage costs remain in their own deduction calculation; maintenance, depreciation and fixed ownership charges are not deductible from rental receipts. A former home held for sale and then rented follows the separate sale-home/Box 3 rules above. [Annual instructions, 10.3.2](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [temporary letting guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigen-woning/u-hebt-een-woning/tijdelijk-verhuren/).
 
-## Additional borrowing restriction
+For ordinary room letting in 2026, the exemption requires total annual receipts, including furniture/energy charges, no more than €6,633; a non-independent part of the home; landlord and tenant registered there throughout the letting; and letting other than short stays. If eligible, the room remains within the own home and its rental benefit is disregarded. If the ordinary room exemption fails, apportion the rented part and corresponding debt to Box 3; short holiday letting needs its own analysis rather than automatically following this room route. [Annual instructions, 10.2.1](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [articles 3.113–3.114](https://wetten.overheid.nl/BWBR0011353).
 
-When a taxpayer disposes of an owner-occupied home, the disposal balance is added to the owner-occupied home reserve. This balance equals the sale proceeds less the qualifying home acquisition debt and the costs of sale.
+5. **Trace every debt tranche to qualifying expenditure.** Establish acquisition, maintenance/improvement or eligible financing costs and actual use of borrowed funds. Keep written renovation evidence; a charge over the house does not turn a car or consumption loan into home debt. Distinguish deductible interest/eligible loan costs and periodic ground rent from non-deductible principal, purchase taxes, acquisition conveyancing and building expenditure itself. Check family/partner lending, renovation deposits and prepaid interest under the specific rules before claiming. [Annual instructions, 10.4](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [articles 3.119a, 3.120 and 3.123](https://wetten.overheid.nl/BWBR0011353).
 
-When the taxpayer acquires a new home, qualifying home acquisition debt cannot be obtained for the amount held in the reserve. The taxpayer is treated as investing that amount in the new property. If the taxpayer nevertheless borrows more than the permitted qualifying amount, the excess is a box 3 debt. The owner-occupied home reserve expires no later than three years after it arises.
+For new post-2012 debt, verify a contractual obligation and actual repayment at least on an annuity basis within no more than 360 months; linear repayment can qualify. Carry forward the applicable remaining period rather than restarting it on refinancing. Obtain mandatory return information for loans not reported by an obliged institution, including private, own-company and relevant foreign lenders. A temporary arrears event needs the statutory cure rules: year-end arrears may be caught up in the following year; continued payment difficulty requires timely qualifying revised arrangements; an unintended calculation/payment error has its own correction deadline. Other test moments include disposal, interest changes and refinancing. Record the exact trigger and applicable article 3.119e condition; do not grant an automatic grace period to every default. [Annual instructions, 10.5](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [articles 3.119a–3.119e](https://wetten.overheid.nl/BWBR0011353).
 
-## Residual debt
+For debt qualifying under the pre-2013 transition, preserve the historical eligible balance, repayments, refinancing/replacement dates and remaining interest-relief period. A move or refinance does not automatically restart or preserve unlimited relief. Reborrowing generally must occur by the end of the following calendar year for the relevant transition, within the eligible amount; new extra borrowing needs its own analysis. The narrow bridging exemption covers prefinancing expected home-sale equity while the specified two-home rules apply, not any loan called a bridge. [Article 10bis.1 and article 3.119f](https://wetten.overheid.nl/BWBR0011353); [10.5.2](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 
-A residual debt arises if a taxpayer sells a home at a loss, meaning that the sale proceeds are lower than the qualifying home acquisition debt. If that residual debt arose between 29 October 2012 and 31 December 2017, it is treated as a box 1 debt. Its interest and costs are deductible in box 1 for no more than 15 years, and the tax repayment requirement does not apply.
+6. **Apply the home-equity reserve and residual-debt rules.** Reconcile sale consideration less sale costs and qualifying debt, including statutory adjustments, to the eigenwoningreserve. The reserve restricts qualifying new-home debt; excess actual borrowing does not receive Box 1 interest relief merely because secured on the new home. Track each reserve component's three-year expiry and reductions; examine partner allocations, non-sale disposals and successive homes separately. [Articles 3.119a and 3.119aa](https://wetten.overheid.nl/BWBR0011353).
 
-Residual debts arising before 29 October 2012 or after 31 December 2017 fall within box 3.
+Interest on qualifying residual debt arising from a home sale between 29 October 2012 and 31 December 2017 can be deductible for at most fifteen years without the ordinary annuity obligation. A later loss-making sale does not create this relief. Confirm the original transaction, remaining period and repayments before deducting; other residual debts generally belong in Box 3, subject to its debt rules. [Annual instructions, 10.6](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 
-## Hillen deduction
+7. **Complete the home balance and rate adjustment.** Combine deemed benefit, relevant rental income and taxable legacy-product interest, then deduct eligible costs. Hillen relief in 2026 is 71.867% of the positive difference between the deemed home benefit and costs attributable to it. Allocate prepaid/late-paid interest to the period to which it relates for this test; zero cash interest this year does not by itself create full Hillen relief. Partner allocation follows the home-balance allocation. The highest-bracket rate is 49.50%, but qualifying home-cost relief is limited to 37.56% through the statutory rate adjustment; calculate the actual adjustment using taxable income and deducted costs, including Hillen interactions, not by multiplying the whole home balance by a single percentage. Send the reconciled result to the [income-tax method](/skills/nl-income-tax). [Hillen and rate-adjustment guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld); [annual instructions, 10.4](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
 
-A taxpayer may claim the deduction for having no or only a small qualifying home acquisition debt, commonly known as the Hillen deduction, when the deemed owner-occupied home benefit exceeds the related deductible interest and costs. In principle, the deduction is based on the positive difference.
+8. **Review KEW, SEW and BEW before any payout or contract change.** These are legacy home endowment, blocked savings and investment products. New arrangements have generally been closed since 2013, except qualifying continuation/conversion. Verify provider, contractual destination, continuing own-home connection, annual contributions and the maximum ten-to-one ratio between highest and lowest annual contributions. For that ratio, use insurance/contract years rather than casually using calendar years. Conversion, partial surrender, death, emigration, sale or loss of own-home status can trigger special or deemed-payout rules and require specialist review before changing the product. [2026 product instructions, 11.1–11.5](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing); [product guidance](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/uw_hypotheek_of_lening/sparen_voor_de_aflossing_van_uw_hypotheek).
 
-The Hillen deduction has been gradually reduced since 2019 and will eventually be abolished. In 2026, it amounts to 71.867% of the positive difference.
+The ordinary 2026 lifetime exemption is €207,500 per person across these products, reduced by previous use; it is capped by qualifying debt at payout and debt actually repaid from the payout. The corresponding 2025 amount is €204,000. Check the actual payout year, any legacy additions, beneficiary/partner conditions and prior exemptions. The former minimum premium-payment period has been removed, but annual contributions and other conditions still matter. Ordinarily the whole payout must repay qualifying home debt; spending it on renovation is not the required repayment. Payment via the taxpayer can qualify if the taxpayer actually repays the debt and documents the flow. Do not automatically double the exemption merely because someone is married. [Payout conditions](https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/belasting-betalen-over-uitkering-kapitaalverzekering-eigen-woning); [annual product instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 
-- **Hillen deduction rate (2026)** — 71.867% of the positive difference %
+When only part of a qualifying payout is exempt, taxable interest is `(payout − available exemption) / payout × (payout − qualifying premiums/contributions)`. If no exemption applies, the interest component is normally taxable, rather than the entire gross payout. Refer exceptional sale, death, pre-existing policy and deemed-payout cases for their specific provisions; do not override them with the ordinary formula. [2026 product instructions, 11.3–11.5](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 
-## Rate adjustment
+9. **Keep lending decisions and future policy separate from current tax classification.** The ordinary lending ceiling is 100% of home value, but government guidance expressly permits exceptions including additional borrowing for eligible energy-saving measures; income affordability and lender conditions also apply. Do not present lender interest-only limits as a universal tax rule or promise a loan amount. Obtain regulated mortgage advice for a binding offer. [Government borrowing rules](https://www.rijksoverheid.nl/vraag-en-antwoord/huis-kopen/maximaal-bedrag-lenen-koopwoning); [energy-saving exception](https://www.rijksoverheid.nl/vraag-en-antwoord/huis-kopen/hogere-hypotheek-energiebesparende-maatregelen).
 
-If deductible owner-occupied home expenses are taken into account in the highest income tax bracket, which is 49.50% in 2026, a rate adjustment applies. This limits the tax benefit of the deduction to the basic rate of 37.56%.
+There is no free election to put qualifying home debt into Box 3. Deliberately changing repayment terms can affect tax eligibility, cure provisions, the contract and total tax; do not recommend a breach from a simple Box 1/Box 3 rate comparison. Use the actual statutory classification and refer before restructuring. Describe enacted law as of the review date; do not promise that a government will leave the regime unchanged. [Current home-debt provisions](https://wetten.overheid.nl/BWBR0011353).
 
-- **Highest income tax bracket (2026)** — 49.50% %
-- **Basic rate for deduction (2026)** — 37.56% %
+## Worked decision checks
 
-## KEW, SEW, and BEW products
+- **Sale vacancy:** a former home is vacated during 2023 and remains genuinely vacant for sale throughout 2026. The sale-home period can extend through the end of 2026; it does not restart when the price is reduced. Letting during that period changes the classification for the letting period. [10.2.2](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
+- **Room threshold:** ordinary non-independent room receipts are exactly €6,633 in 2026 and all registration/duration conditions hold: exemption possible. A receipt above that ceiling fails this exemption; do not deduct only the excess. [10.2.1](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
+- **Energy mortgage:** a proposed mortgage exceeds the ordinary 100% value ceiling because of qualifying energy-saving work. Do not reject it as universally prohibited; require lender eligibility and affordability confirmation. Tax debt classification still follows use and repayment conditions. [Government rule](https://www.rijksoverheid.nl/vraag-en-antwoord/huis-kopen/maximaal-bedrag-lenen-koopwoning).
+- **Free family occupancy:** a descendant older than the child-age limit still shown in the annual guidance occupies for free during a qualifying temporary absence. Evaluate current article 3.111(7), not an obsolete age-only refusal; retain all other assignment conditions. [Statute](https://wetten.overheid.nl/BWBR0011353).
+- **Missed repayment:** one year-end repayment is short. Obtain the cause, dates and schedule and apply the statutory cure rule before moving debt to Box 3; do not automatically preserve relief indefinitely. [10.5.3](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere).
+- **Refinancing:** an old qualifying tranche is replaced and increased. Preserve only the evidenced transitional tranche within applicable timing and amount limits; independently classify the additional borrowing. [Article 10bis.1](https://wetten.overheid.nl/BWBR0011353).
+- **Payout destination:** a legacy policy payout is spent on renovation without repaying debt. It does not satisfy the ordinary repayment condition; examine whether a specific exception applies before final tax treatment. [Product instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
+- **Wrong return year:** a 2025 return is prepared in 2026. Hold any calculation using the 2026 benefit table, Hillen percentage or payout exemption until the 2025 source and assessment data are used. [2025 instructions](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere).
 
-The introduction of the Income Tax Act 2001 also introduced the tax-favoured qualifying endowment insurance policy linked to the home (KEW). The qualifying home savings account (SEW) and qualifying home investment account (BEW) followed in 2008.
+- **Ordinary home and Hillen (2026):** assume a qualifying full-year main home with WOZ €300,000, no deductible costs, no other home adjustments and no partner allocation. Deemed benefit is €300,000 × 0.35% = €1,050. Hillen is €1,050 × 71.867% = €754.60, leaving €295.40 of home income before the return's rounding and the wider income-tax calculation. [Home table](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere); [Hillen](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/woning/eigenwoningforfait/geen_of_een_kleine_eigenwoningschuld/geen_of_een_kleine_eigenwoningschuld).
+- **Partial KEW exemption (2026):** assume an eligible payout of €250,000, qualifying total premiums of €100,000, no prior exemption use, debt and actual repayment sufficient for the ordinary exemption, and no exceptional additions. Available exemption is €207,500. Taxable interest is (€250,000 − €207,500) / €250,000 × (€250,000 − €100,000) = €25,500. This is taxable income, not the tax bill. [Payout calculation](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/verzekeren_of_sparen_voor_de_aflossing).
 
-These products allowed taxpayers to save towards repayment of qualifying home acquisition debt without being taxed on the interest component reflected in the eventual payment. The exemption is capped. Over a lifetime, a taxpayer may receive no more than €207,500 tax-free from KEW, SEW, and BEW products combined, based on the 2026 amount.
+## When to refuse or refer
 
-The tax-favoured treatment for new KEW, SEW, and BEW products was abolished from 2013. Transitional rules apply to existing products. A payment is tax-free only if the following conditions are met:
+- Do not calculate a final filing amount without ownership, occupation periods, correct-year valuation, debt history and supporting payments. Refer disputed economic ownership, cross-border treaty/residence, inheritance rights, divorce/maintenance allocations, mixed business property, complex arrears or transitions, disputed equity reserves, and legacy-product events. Refer disputed main-residence facts before relying on a judicial precedent.
 
-- **Lifetime tax-free exemption cap (2026)** — Over a lifetime, a taxpayer may receive no more than €207,500 tax-free from KEW, SEW, and BEW products combined, based on the 2026 amount. EUR
-- **Annual contribution condition** — Contributions must have been made to the product annually. The former minimum contribution period, known as the time lock, no longer applies.
-- **Contribution ratio condition** — The highest annual contribution may not exceed ten times the lowest annual contribution.
-- **Use of payment condition** — The entire payment must be used to repay qualifying home acquisition debt.
-- **Consequence of not meeting conditions** — If one or more of these conditions are not met, the interest component of the payment is taxable in box 1.
-
-## Evaluation of the scheme
-
-The owner-occupied home scheme was most recently evaluated in 2019. The evaluation concluded that the scheme had become excessively complex and difficult to enforce. At the time, reform was left to a future government. No reform has yet taken place, and the current Jetten government will also leave the scheme unchanged.
-
-## Important points to consider
-
-A taxpayer who takes out a loan to improve or maintain the home may deduct the related interest and costs. This is possible only to the extent that the improvement or maintenance expenditure can be supported by written evidence. Receipts should therefore be retained carefully.
-
-The tax repayment requirement does not apply to qualifying home acquisition debt from before 2013, which is referred to as existing qualifying home acquisition debt. If such debt is refinanced, the transitional rules continue to apply and no tax repayment requirement is imposed. The same applies when the taxpayer moves to a new home.
-
-Refinancing qualifying home acquisition debt is governed by non-tax rules as well. Under the Code of Conduct for Mortgage Financing, a bank may provide no more than 50% of the property’s value on an interest-only basis. A bank may also never provide mortgage credit exceeding 100% of the property’s value.
-
-Qualifying home acquisition debts arising from 2013 onwards are generally subject to the tax repayment requirement. If the box 3 advantage exceeds the benefit of interest relief in box 1, the taxpayer can place the loan in box 3 by ensuring that it no longer meets the tax repayment requirement. A qualifying home acquisition debt dating from before 2013 cannot be moved to box 3 in this way.
-
-To qualify for the exemption on a KEW, SEW, or BEW payment, the taxpayer must use the payment to repay qualifying home acquisition debt. Using it to renovate the property does not meet this condition.
-
-If the provider of a KEW, SEW, or BEW pays the amount to the taxpayer, the taxpayer must use the funds to repay qualifying home acquisition debt in order to obtain the exemption. The provider does not have to transfer the money directly to the lender.
-
-## Documents relating to this subject
-
-### Legislation
-
-#### Section 3.111 of the Income Tax Act 2001
-
-- **Section 3.111 of the Income Tax Act 2001** — This section defines the term “owner-occupied home”.  _(Section 3.111 of the Income Tax Act 2001)_
-
-#### Section 3.112 of the Income Tax Act 2001
-
-- **Section 3.112 of the Income Tax Act 2001** — This section sets out the deemed benefit derived from an owner-occupied home.  _(Section 3.112 of the Income Tax Act 2001)_
-
-#### Section 3.119a of the Income Tax Act 2001
-
-- **Section 3.119a of the Income Tax Act 2001** — This section contains the definition of qualifying home acquisition debt that has applied since 2013.  _(Section 3.119a of the Income Tax Act 2001)_
-
-#### Section 3.119aa of the Income Tax Act 2001
-
-- **Section 3.119aa of the Income Tax Act 2001** — This section sets out the additional borrowing restriction.  _(Section 3.119aa of the Income Tax Act 2001)_
-
-#### Section 10bis.1 of the Income Tax Act 2001
-
-- **Section 10bis.1 of the Income Tax Act 2001** — This section defines existing qualifying home acquisition debt for purposes of the transitional rules.  _(Section 10bis.1 of the Income Tax Act 2001)_
-
-### Leading judgment
-
-Supreme Court of the Netherlands, 13 March 2015, no. 14/02588, ECLI:NL:HR:2015:561, V-N 2015/19.1.8
-
-## Contributed by
-
-> Contributed by Vincent hanegraaf, nvt.
-
-> Contributed by Vincent hanegraaf, nvt.
+Deliver a property-period schedule, debt-tranche reconciliation, source/year register, home-income calculation, partner allocation and unresolved-input list. Keep supporting documents and client approval; the guide itself does not authorize submission.
 
 <!-- openaccountants-cta-block -->
 
