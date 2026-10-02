@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T13:10:36+00:00",
+ "generated_at": "2026-10-02T10:03:20+00:00",
  "counts": {
   "guides": 2023,
   "jurisdictions": 245,
@@ -10443,8 +10443,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-corporation-tax",
@@ -10503,8 +10503,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-payroll",
@@ -10515,8 +10515,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-preliminary-tax",
@@ -10527,8 +10527,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-prsi-class-s",
@@ -10539,8 +10539,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-return-assembly",
@@ -10563,8 +10563,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-vat-return",

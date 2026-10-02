@@ -2,482 +2,428 @@
 name: ie-payroll
 description: Use this skill whenever asked to compute, review, or advise on end-to-end Irish monthly or weekly payroll for employees — gross-to-net calculation, payslip generation, statutory deduction sequencing (pension, BIK, PAYE, USC, PRSI, LPT-at-source), real-time submission to Revenue (PSR / "payroll submission request"), and year-end Employee Detail Summary reconciliation under Revenue myAccount. Trigger on phrases like "Ireland payroll", "Irish payroll", "Irish payslip", "compute Irish payroll", "monthly payroll Ireland", "weekly payroll Ireland", "gross to net Ireland", "RPN", "Revenue Payroll Notification", "PSR submission", "Employee Detail Summary", "BrightPay", "Sage payroll Ireland", "Surf Accounts payroll", "Thesaurus payroll", "BIK Ireland", "company car BIK Ireland", or any request involving running monthly or weekly payroll for one or more employees in Ireland. This skill is the ORCHESTRATOR — it pulls PAYE bracket rules from `ie-paye`, USC bands from `ie-usc`, and PRSI Class A rates from `ie-prsi-class-s` (which also covers Class A for completeness), and sequences them into the correct computation order. ALWAYS read this skill before touching Irish payroll computation.
 jurisdiction: IE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-02
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# IE Payroll
+# Ireland payroll: gross to net for employees
 
-## Ireland — Payroll Computation (End-to-End) — Skill v1.0
+This Guide runs an ordinary Irish weekly, fortnightly or monthly payroll for employees: the order of deductions, Income Tax under the Revenue Payroll Notification (RPN), USC, PRSI Class A, benefit in kind, the payroll submission to Revenue on or before pay day, the monthly statement and payment, and the year end. Figures are for tax year 2026. PRSI changed during 2026: one set of rates applies up to 30 September 2026 and another from 1 October 2026, and every PRSI rate below names its period. This is a source-cited draft. No accountant has reviewed it yet.
 
-> **Scope note:** This skill is the **end-to-end weekly / monthly payroll orchestrator** for Irish employments. It does NOT redefine PAYE bands, USC bands, or PRSI rates — those live in the dependency skills (`ie-paye`, `ie-usc`, `ie-prsi-class-s`). This skill defines the **sequence**, the **payslip layout**, the **PSR (Payroll Submission Request) real-time submission workflow**, and the **year-end reconciliation** that replaced the legacy P60.
->
-> **2025 context (v1.0):** Ireland operates **PAYE Modernisation** (live since 1 January 2019), under which every payroll run must be reported to Revenue **on or before the pay date** via a Payroll Submission Request (PSR). The legacy P30, P35, P45, and P60 forms have been **abolished**. Year-end reconciliation is now via the **Employee Detail Summary** available to employees through Revenue **myAccount**. See Section 5 for the PSR workflow and Section 6 for year-end activities.
+Companion Guides: `ie-usc` (USC in depth), `ie-prsi-class-s` (PRSI for the self-employed), `ie-income-tax-form11` (proprietary directors and others who file Form 11).
 
-## Section 1 — Quick reference: payroll component order
+## Section 1: Quick reference, the order of payroll components
 
-**Payroll component order**  _(—)_
-
-| Step | Component | Effect on bases | Paid by |
+| Step | Component | Effect | Official page |
 | --- | --- | --- | --- |
-| 1 | **Gross pay** (basic + commission + overtime + cash allowances) | Starting point | — |
-| 2 | + **Notional pay for BIK** (company car, medical insurance, preferential loan, share awards subject to PAYE) | **Added** — becomes part of taxable + USC + PRSI pay | Employer values it |
-| 3 | = **Total gross** (for PRSI) | PRSI base = this figure | — |
-| 4 | − **Employee pension / PRSA / AVC contribution** (subject to age-related % limits, earnings cap €115,000) | **Reduces** PAYE base and USC base; does NOT reduce PRSI base | Employee |
-| 5 | = **Taxable pay** | PAYE base + USC base = this figure | — |
-| 6 | Apply **RPN** — standard rate cut-off point (SRCOP) for the period, and weekly/monthly tax credits | Determines PAYE bracket and credit | Revenue notifies via RPN |
-| 7 | Compute **PAYE** — 20% up to SRCOP, 40% above; then subtract tax credits | → PAYE for the period | Employee (withheld) |
-| 8 | Compute **USC** — bands applied on taxable pay (after pension); standard 2025 bands (see `ie-usc`) | → USC for the period | Employee (withheld) |
-| 9 | Compute **PRSI Class A** — employee 4.1% on full gross (before pension), employer 8.9% (≤ €496/week) or 11.15% (> €496/week) on full gross | → PRSI employee + employer | Both |
-| 10 | − **LPT at source** if Revenue has issued an instruction (Local Property Tax mandatory deduction order) | Deducted from net pay | Employee |
-| 11 | **Net pay** = Total gross − Pension − PAYE − USC − Employee PRSI − LPT − any voluntary deductions | — | — |
+| 1 | Gross pay: basic, overtime, commission, bonus, taxable cash allowances | Starting point | [What are gross pay and taxable pay](https://www.revenue.ie/en/employing-people/what-constitutes-pay/what-are-gross-and-taxable-pay/index.aspx) |
+| 2 | Add notional pay (benefit in kind) | Part of gross pay for Income Tax, USC and PRSI | [USC for employers](https://www.revenue.ie/en/employing-people/paying-an-employee/usc/index.aspx), [SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf) |
+| 3 | Subtract employee contributions to a Revenue approved pension scheme, PRSA, RAC or PEPP deducted by the employer, an approved income continuance scheme, or a salary sacrifice arrangement | Gives taxable pay for Income Tax only | [What are gross pay and taxable pay](https://www.revenue.ie/en/employing-people/what-constitutes-pay/what-are-gross-and-taxable-pay/index.aspx) |
+| 4 | Income Tax on taxable pay using the cut-off point and tax credits on the RPN | Standard rate to the cut-off point, higher rate above, less tax credits | [Rule for calculating tax](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/calculating-tax-rules.aspx) |
+| 5 | USC on gross pay, NOT reduced by employee pension contributions, using the USC cut-off points on the RPN | Withheld from the employee | [Employee's pension contributions](https://www.revenue.ie/en/employing-people/what-constitutes-pay/employees-pension-payments/index.aspx) |
+| 6 | PRSI on reckonable pay (gross pay plus notional pay), NOT reduced by employee pension contributions | Employee share withheld; employer share paid on top | [Employee's pension contributions](https://www.revenue.ie/en/employing-people/what-constitutes-pay/employees-pension-payments/index.aspx), [SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf) |
+| 7 | Local Property Tax (LPT) only where it is shown on the RPN | Spread equally over the year | [Deduction of LPT](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/deduction-of-lpt.aspx) |
+| 8 | Net pay = gross cash pay less pension, Income Tax, USC, employee PRSI, LPT and voluntary deductions | Notional pay is not cash, so tax on it comes out of cash pay | |
+| 9 | Payroll submission to Revenue on or before the pay date | Every pay run | [Payroll submissions](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/payroll-submissions.aspx) |
 
-- **Deduction order rationale** — The order of deductions matters because **employee pension contributions reduce the PAYE and USC base** (but NOT the PRSI base — PRSI is computed on gross including pension), while **BIK is added to gross before all withholdings**. The cumulative tax credit / standard rate cut-off framework operates from the RPN (Revenue Payroll Notification) downloaded from ROS before each pay run.  _(—)_
-- **Conservative default — uncertain pension deductibility** — When in doubt whether a contribution is pension-deductible for PAYE purposes (e.g. employer matching above statutory %, or unapproved schemes), treat it as **non-deductible** and compute PAYE on the higher figure. Under-withholding triggers Revenue interest at 0.0219% per day (~8% per annum) plus penalties; over-withholding is recoverable by the employee via their Employee Detail Summary in myAccount.  _(—)_
+- **The base differs by deduction.** Revenue says of employee pension contributions: "You should not deduct these contributions from your employee's gross pay when you are calculating the following: Universal Social Charge (USC) and Pay Related Social Insurance (PRSI)." So pension relief at source reduces the Income Tax base only. The USC page also says "There is no relief from USC for employee pension contributions." ([Employee's pension contributions](https://www.revenue.ie/en/employing-people/what-constitutes-pay/employees-pension-payments/index.aspx), [USC overview](https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx))
+- **For private sector employees, PRSI is charged on pension contributions.** SW14 says "PRSI is fully chargeable on payments by private sector employees in respect of" superannuation contributions and PRSA contributions. Public sector pension deductions are outside this Guide. ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf))
+- **Salary sacrifice.** Revenue lists a salary sacrifice arrangement among the deductions that reduce taxable pay for Income Tax. The pages read for this Guide do not say how salary sacrifice affects USC or PRSI; do not assume it reduces them. ([What are gross pay and taxable pay](https://www.revenue.ie/en/employing-people/what-constitutes-pay/what-are-gross-and-taxable-pay/index.aspx))
+- **Conservative default, uncertain pension deductibility.** If you cannot confirm a contribution is to a Revenue approved scheme, or it exceeds the limits below, do not deduct it for Income Tax. Over-deduction of tax can be refunded to the employee through Revenue; late payment by the employer costs interest at the rate in the payment table in Section 5.
 
-### 2025 rates at a glance (cross-reference dependency skills for full bracket detail)
+### Income Tax rates, bands and credits for 2026
 
-**2025 rates at a glance**  _(see table cells)_
-
-| Item | 2025 figure | Source |
+| Item | Figure | Note (verbatim from the page) |
 | --- | --- | --- |
-| PAYE standard rate | 20% | `ie-paye` |
-| PAYE higher rate | 40% | `ie-paye` |
-| Single SRCOP (annual) | €44,000 | `ie-paye` |
-| Married one-earner SRCOP | €53,000 | `ie-paye` |
-| Personal tax credit (single) | €2,000 | `ie-paye` |
-| PAYE / employee credit | €2,000 | `ie-paye` |
-| USC band 1 (0 – €12,012) | 0.5% | `ie-usc` |
-| USC band 2 (€12,013 – €27,382) | 2% | `ie-usc` |
-| USC band 3 (€27,383 – €70,044) | 3% (reduced from 4% — Finance Act 2024) | `ie-usc` |
-| USC band 4 (> €70,044) | 8% | `ie-usc` |
-| USC surcharge — self-employed > €100k | +3% | `ie-usc` (not applicable to Class A payroll) |
-| PRSI Class A employee | 4.1% (rate raised from 4.0% on 1 Oct 2024) | `ie-prsi-class-s` |
-| PRSI Class A employer (≤ €496/wk) | 8.9% | `ie-prsi-class-s` |
-| PRSI Class A employer (> €496/wk) | 11.15% | `ie-prsi-class-s` |
-| Earnings cap for pension tax relief | €115,000 | Revenue, Pensions Manual |
+| Source | all figures below | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx |
+| Standard rate | 20% | "Single or widowed or surviving civil partner, without qualifying children €44,000 @ 20%, balance @ 40%" |
+| Higher rate, on the balance above the band | 40% | Same row |
+| Standard rate band, single, widowed or surviving civil partner without qualifying children | EUR 44,000 | Same row |
+| Standard rate band, single, widowed or surviving civil partner qualifying for the Single Person Child Carer Credit | EUR 48,000 | "qualifying for Single Person Child Carer Credit €48,000 @ 20%" |
+| Standard rate band, married or civil partners, one with income | EUR 53,000 | "(one spouse or civil partner with income) €53,000 @ 20%" |
+| Maximum increase in the band where both spouses or civil partners have income | EUR 35,000 | "The increase in the rate band is capped at the lower of €35,000 or the income of the lower earner." |
+| Single Person Tax Credit | EUR 2,000 | "Single Person 2,000 2,000 1,875" (2026 column first) |
+| Married Person or Civil Partner Tax Credit | EUR 4,000 | "Married Person or Civil Partner 4,000 4,000 3,750" |
+| Employee (PAYE) Tax Credit | EUR 2,000 | "Employee PAYE Tax Credit 2,000 2,000 1,875" |
 
-### Age-related pension contribution limits (% of net relevant earnings, capped at €115,000)
+The employer does not choose the band or the credits. The RPN gives each employee's yearly tax credits and cut-off point, and the employer divides them by 52 (weekly), 26 (fortnightly) or 12 (monthly) ([Cumulative basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/cumulative-basis.aspx)). Use the table above only to sense-check an RPN.
 
-**Age-related pension contribution limits**
+### USC for 2026
 
-| Age | Max % deductible for PAYE/USC relief |
-| --- | --- |
-| Under 30 | 15% |
-| 30 – 39 | 20% |
-| 40 – 49 | 25% |
-| 50 – 54 | 30% |
-| 55 – 59 | 35% |
-| 60 and over | 40% |
-
-### BIK on company cars — 2025 categories (post Finance Act 2022 reforms)
-
-**BIK on company cars — 2025 categories**
-
-| Category | CO₂ g/km | BIK % (lowest mileage band, ≤ 26,000 km) |
+| Item | Figure | Note (verbatim from the page) |
 | --- | --- | --- |
-| A | 0 – 59 | **9%** |
-| B | 60 – 99 | **13.5%** |
-| C | 100 – 139 | **15%** |
-| D | 140 – 179 | **22%** |
-| E | 180+ | **26.5%** |
+| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx |
+| First band | EUR 12,012 | "Standard rates and thresholds of USC for 2026 Threshold for 2026 Rate First €12,012 0.5%" |
+| Rate on the first band | 0.5% | Same quote |
+| Next band (a band width, not a cumulative threshold) | EUR 16,688 | "Threshold for 2026 Rate First €12,012 0.5% Next €16,688 2%" |
+| Rate on that band | 2% | Same quote |
+| Next band (band width) | EUR 41,344 | "Next €16,688 2% Next €41,344 3% Balance 8%" |
+| Rate on that band | 3% | Same quote |
+| Rate on the balance | 8% | Same quote |
 
-The 2025 BIK percentage on company cars is determined by **CO₂ emissions category** and **annual business mileage**. The simplified high-mileage table below.
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx |
+| Exemption threshold, a cliff: income above it pays USC on all of it | EUR 13,000 | "If your total income exceeds €13,000, you pay USC on your full income." |
 
-> **EV BIK relief (taper):** For battery electric vehicles, the **OMV is reduced by €10,000** in 2025 (extension of the relief that began in 2023 at €35,000 and tapers down annually). For 2026 the relief is scheduled to fall to €5,000 and to nil from 2027, **subject to Finance Bill confirmation each year**. Flag any EV BIK case for reviewer confirmation of the applicable taper figure for the relevant year.
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx |
+| Income limit for reduced rates (income at or below it, AND aged 70 or older OR holding a full Medical Card) | EUR 60,000 | "Reduced rates of USC will apply if your income is €60,000 or less and: you are aged 70 or older or hold a full Medical Card" |
+| Reduced rate on the first EUR 12,012 | 0.5% | "The reduced rates for 2026 are: 0.5% on the first €12,012 and 2% on the balance." |
+| Reduced rate on the balance | 2% | Same quote |
 
-## Section 2 — Required inputs & refusal catalogue
+The RPN tells the employer which USC rates and cut-off points to apply, including any exemption ([USC for employers](https://www.revenue.ie/en/employing-people/paying-an-employee/usc/index.aspx), [RPN](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/revenue-payroll-notification.aspx)). Follow the RPN; do not apply the exemption or the reduced rates yourself.
+
+### Emergency basis figures for 2026
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/documents/emergency-rates.pdf |
+| Weekly cut-off point, employee has given a PPSN, weeks 1 to 4 (nil from week 5) | EUR 846.16 | "Weeks 1 to 4 €846.16 €0.00 Week 5 onwards €0.00 €0.00" |
+| Monthly cut-off point, employee has given a PPSN, month 1 only (nil from month 2) | EUR 3,666.67 | "Month 1 €3,666.67 €0.00 Month 2 onwards €0.00 €0.00" |
+| Tax credit under the emergency basis, every case, with or without a PPSN | EUR 0.00 | "Where employee does not provide a Personal Public Service Number (PPSN) Week / Month / Etc Cut-Off Point Tax Credit All €0.00 €0.00" |
+| Emergency USC rate, on all pay, no USC cut-off point | 8% | "Emergency Basis of USC Deduction 2026 Week / Month / Etc USC Cut-Off Point USC Rate All €0.00 8%" |
+
+### PRSI Class A for 2026: two periods
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/ |
+| Class A applies where reckonable pay is this amount or more a week, from all employments | EUR 38 | "reckonable pay of €38 or more per week from all employments" |
+| Top of weekly band A0 (employee nil, employer lower rate), both periods | EUR 352 | "€38 - €352 A0 All Nil 9.00" |
+| Top of weekly band AX (PRSI Credit band), both periods | EUR 424 | "€352.01 - €424 (**) AX All 4.20 9.00" |
+| Weekly pay above which the employer higher rate applies (subclass A1, on all of that week's pay), both periods | EUR 552 | "€424.01 - €552 AL All 4.20 9.00 More than €552 A1" |
+| Employee rate, weekly pay above EUR 352, period 1 January to 30 September 2026 | 4.2% | "€352.01 - €424 (**) AX All 4.20 9.00" |
+| Employee rate, weekly pay above EUR 352, period from 1 October 2026 | 4.35% | "€352.01 - €424 (**) AX All 4.35" |
+| Employer lower rate, weekly pay EUR 38 to EUR 552, period 1 January to 30 September 2026 | 9% | "€38 - €352 A0 All Nil 9.00" |
+| Employer higher rate, weekly pay above EUR 552, period 1 January to 30 September 2026 | 11.25% | "More than €552 A1 All 4.20 11.25" |
+| Employer lower rate, weekly pay EUR 38 to EUR 552, period from 1 October 2026 | 9.15% | "€38 - €352 A0 All Nil 9.15" |
+| Employer higher rate, weekly pay above EUR 552, period from 1 October 2026 | 11.40% | "More than €552 A1 All 4.35 11.40" |
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
+| Maximum weekly PRSI Credit (subclass AX), both periods | EUR 12 | "At gross weekly earnings of €352.01 the maximum PRSI Credit of €12 per week applies." |
+| Bottom of the PRSI Credit earnings range, weekly | EUR 352.01 | "employees earning between €352.01 and €424 a week" |
+| Monthly pay band for subclass A1 (employer higher rate) | EUR 2,392 | "More than €1,104 More than €2,392" (weekly, fortnightly, monthly columns) |
+
+- **Which period.** Pay in the period 1 January to 30 September 2026 uses the first set of rates; pay from 1 October 2026 uses the second. The pages print the two periods but do not say whether the pay date or the week worked decides the rate for a pay period that straddles 1 October 2026. Check the payroll software's handling, and ask the Department of Social Protection if in doubt.
+- **The bands are cliffs, not slices.** The column "How much of weekly income" reads "All": once weekly pay is above EUR 552, the employer higher rate applies to the whole week's pay, not only the excess. SW14 also prints fortnightly and monthly equivalents of each band (for example the monthly A1 band in the table above). ([PRSI Class A rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/), [SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf))
+- **PRSI Credit.** It applies only in subclass AX. SW14 says the credit is reduced by one sixth of earnings in excess of EUR 352.01, and SW14's worked example deducts the reduced credit from the PRSI charge at the employee rate. Above EUR 424 a week there is no credit. ([SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf))
+- **Lump sums on leaving.** SW14 says lump sum payments on leaving (redundancy, gratuities, ex-gratia) "are not regarded as reckonable pay for PRSI purposes and should be recorded under Class M".
+
+### Pension contributions: limits on tax relief
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx |
+| Under 30 | 15% | "Age Percentage limit Under 30 15% 30-39 20% 40-49 25% 50-54 30% 55-59 35% 60 or over 40%" |
+| 30 to 39 | 20% | Same quote |
+| 40 to 49 | 25% | Same quote |
+| 50 to 54 | 30% | Same quote |
+| 55 to 59 | 35% | Same quote |
+| 60 or over | 40% | Same quote |
+| Earnings limit for relief, per year | EUR 115,000 | "The maximum amount of earnings taken into account for calculating tax relief is €115,000 per year." |
+
+The percentage limit and the earnings limit work together: relief is on contributions up to the age percentage of earnings, with earnings counted up to the yearly limit. Total contributions include ordinary contributions, AVCs and special contributions ([Employee's pension contributions](https://www.revenue.ie/en/employing-people/what-constitutes-pay/employees-pension-payments/index.aspx)). Employer contributions are not counted when calculating the employee's earnings threshold ([Tax relief limits](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)).
+
+### Company car benefit in kind for 2026
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx |
+| Reduction to Original Market Value for 2026, categories A1, A, B, C and D only (not category E) | EUR 10,000 | "For 2023, 2024, 2025 and 2026, a reduction of €10,000 can be applied to the Original Market Value of cars in categories A1, A, B, C and D." |
+| The same reduction for 2027 (not 2026) | EUR 5,000 | "2027 - reduction of €5,000." |
+| Category A1 (0g/km, new from 1 January 2026), business km 0 to 26,000 | 15% | "0 26,000 15% 22.5% 26.25% 30% 33.75% 37.5%" |
+| Category A (more than 0 up to and including 59g/km), business km 0 to 26,000 | 22.5% | Same row |
+| Category B (more than 59 up to and including 99g/km), business km 0 to 26,000 | 26.25% | Same row |
+| Category C (more than 99 up to and including 139g/km), business km 0 to 26,000 | 30% | Same row |
+| Category D (more than 139 up to and including 179g/km), business km 0 to 26,000 | 33.75% | Same row |
+| Category E (more than 179g/km), business km 0 to 26,000 | 37.5% | Same row |
+| Lower limit of the highest business mileage band (made permanent from 1 January 2026) | 48,001 km | "the lower limit in the highest mileage band is reduced by 4,000 km to 48,001 km." |
+| Category A1, business km 48,001 and above | 6% | "48,001* And above 6% 9% 10.5% 12% 13.5% 15%" |
+
+The cash equivalent for 2026 is the Original Market Value (list price before first registration, including VAT and VRT), less the reduction where the category qualifies, times the percentage for the car's CO2 category and the year's business kilometres. Revenue says the Original Market Value reduction "is in addition to the relief for electric vehicles"; that EV relief is not covered here. Any contribution the employee makes directly to the employer towards running costs reduces the cash equivalent. Review notional pay at least quarterly. The middle mileage bands are on the same page.
+
+### Small Benefit Exemption
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/valuation-of-benefits/small-benefit-exemption.aspx |
+| Combined value of up to five non-cash benefits a year, from 1 January 2025 | EUR 1,500 | "These benefits must not be in cash and the combined value of the five benefits cannot exceed €1,500." |
+
+This is a cliff for a single benefit: "If a single benefit exceeds €1,500 in value, the full value of that benefit is subject to tax." Only the first five benefits in a year can qualify, unused allowance is not carried over, and a voucher that can be redeemed in whole or in part for cash does not qualify. The employer must report the date paid and the value to Revenue. ([Small Benefit Exemption](https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/valuation-of-benefits/small-benefit-exemption.aspx))
+
+### National minimum wage from 1 January 2026
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/ |
+| Aged 20 and over, per hour | EUR 14.15 | "The national minimum hourly rate will become €14.15 on 1 January 2026." |
+| Aged 19, per hour | EUR 12.74 | "Aged 19 €12.74" |
+| Aged 18, per hour | EUR 11.32 | "Aged 18 €11.32" |
+| Aged under 18, per hour | EUR 9.91 | "Aged under 18 €9.91" |
+
+The page address says 2025 but the page prints the 1 January 2026 rates. Check gross pay for hours worked against these rates before running the payroll.
+
+## Section 2: Required inputs and refusal catalogue
 
 ### 2.1 Inputs required to run a payroll
 
-**Inputs required to run a payroll**
-
 | Input | Source | Notes |
 | --- | --- | --- |
-| PPS Number | Employee record / new starter form | Required for RPN retrieval; if missing, employee is taxed at the **emergency basis** (no credits, week 1 / month 1) per Revenue rules |
-| RPN (Revenue Payroll Notification) | ROS — must be downloaded **before each pay run** | Contains SRCOP, tax credits, USC bands, PAYE basis (cumulative, week 1, emergency) |
-| Date of commencement / cessation | HR | Determines week 1 / cumulative basis and final PSR |
-| Gross pay breakdown | Contract / HR | Basic, overtime, commission, bonuses, allowances |
-| BIK details | HR / fleet manager | Company car CO₂ + OMV + annual business mileage; medical insurance premium; preferential loan balances; share awards |
-| Pension scheme details | Provider / HR | Scheme type (occupational, PRSA, AVC), employee %, employer %, age band |
-| LPT deduction-at-source instruction | Revenue ROS | Only deduct if Revenue has issued an instruction; do NOT deduct based on employee request alone |
-| Court orders / attachment of earnings | Court / Department of Social Protection | Apply per the order — usually after statutory deductions but before voluntary |
-| Cycle-to-Work / TaxSaver Commuter Ticket salary sacrifice | HR | Reduces gross before PAYE/USC/PRSI; flag scheme caps |
+| PPSN | Employee | Without a PPSN no RPN is available and the employer must tax all pay at the higher rate with no tax credits; even with a PPSN, the emergency basis gives no tax credits (emergency table in Section 1) ([Emergency basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/emergency-basis.aspx)) |
+| RPN | Requested from Revenue through payroll software or ROS before each payroll | Gives tax credits, cut-off points for Income Tax and USC, pay, tax and USC from any earlier employment since 1 January (unless week 1 or month 1 basis), exemptions, and LPT ([RPN](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/revenue-payroll-notification.aspx)) |
+| Start date and leaving date | HR | A new employee is registered by an RPN request with the correct start date; a leaver's date of leaving goes on the final payroll submission ([Commencing and ceasing employees](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/commencing-and-ceasing-employees.aspx)) |
+| Gross pay breakdown | Contract, timesheets | Basic, overtime, commission, bonuses, allowances; hours for the minimum wage check |
+| Benefit in kind details | HR, fleet | Company car Original Market Value, CO2 category and business kilometres; other benefits; small benefits given so far this year |
+| Pension details | Scheme provider | Scheme type (approved occupational scheme, PRSA, RAC, PEPP), employee and employer contributions, employee's age |
+| PRSI class | HR, SW14 | Class A for most private sector employees aged 16 to 66 (or under 70 without a State Pension (Contributory)) |
+| LPT | RPN | Deduct only where it is shown on the RPN |
+| Attachment orders and other deductions | Court or employee | Apply as the order or authority says |
 
-For each employee, the following must be confirmed before the first PSR of the year and re-checked on every pay run:
-
-### 2.2 Refusal catalogue — out of scope for this skill
-
-**Refusal catalogue**
+### 2.2 Refusal catalogue: out of scope for this Guide
 
 | Scenario | Action |
 | --- | --- |
-| Cross-border employees (Republic-of-Ireland employer, Northern Ireland or UK resident) | Refer to a qualified Irish payroll specialist — PAYE Exclusion Order or trans-border worker relief may apply |
-| Posted workers from another EU state under A1 certificate | Refer to specialist — PRSI exemption depends on A1 validity and duration |
-| Multiple concurrent employments with the same employee | Out of scope — apportionment of SRCOP and credits across employments must be done via RPN; flag any case where the RPN looks inconsistent with the employee's other employment |
-| Employee share schemes (RSUs, ESOP, KEEP, APSS, SAYE) | Out of scope — bespoke valuation and RTSO/PSR interaction; refer to specialist |
-| Pension lump sums on retirement | Out of scope — interaction with the Standard Fund Threshold and CGT treatment |
-| Termination payments / ex-gratia above the statutory exemption (€10,160 + €765/year service basic, with SCSB top-up) | Refer to specialist — exemption interaction with PAYE is fact-specific |
-| Directors paid via fees only, no PAYE employment | Refer to `ie-income-tax-form11` for proprietary directors; non-proprietary directors are normal Class A payroll |
-| Salary sacrifice into pension above age-related limit | Permitted but excess does NOT attract PAYE/USC relief — flag and compute relief on the cap only |
-| Backdated pay covering > 1 tax year | Refer to specialist — re-opening of prior-year Employee Detail Summary may be required via Revenue MyEnquiries |
-| Insolvency / Redundancy Payments Scheme claims | Out of scope — Department of Social Protection process |
+| Cross-border employees, or Irish employment exercised outside the State | Refer to an Irish payroll specialist; a PAYE exclusion order or other relief may apply |
+| Posted workers from another EU state with an A1 certificate | Refer; PRSI depends on the certificate |
+| Multiple employments with the same employee | Follow the RPN for each employment; refer if the RPNs look inconsistent |
+| Share schemes and share-based remuneration | Refer; SW14 says employer PRSI is not chargeable on share-based remuneration but employee PRSI may be |
+| Pension lump sums on retirement | Out of scope |
+| Termination payments above the basic exemption (see the table below) | Refer; the increased exemption and SCSB are fact-specific |
+| Proprietary directors | Refer to `ie-income-tax-form11`; their PRSI class may not be Class A |
+| Public sector employees (PRSI Classes B, C, D or public sector Class A rules) | Out of scope |
+| Classes H, J, K, M and Community Employment | Out of scope; see SW14 |
+| Backdated pay covering more than one tax year | Refer |
+| Insolvency and Redundancy Payments Scheme claims | Out of scope |
 
-## Section 3 — Step-by-step weekly / monthly computation
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx |
+| Basic exemption for a termination payment | EUR 10,160 | "The basic exemption is €10,160, plus €765 for each full year you were working for your employer." |
+| Added for each full year of service | EUR 765 | Same quote |
+| Lifetime limit where the basic exemption is used more than once (payments from different, unconnected employers) | EUR 200,000 | "you do not exceed a life-time limit of €200,000" |
 
-The procedure below is the **canonical pay run**. Apply per employee. Periodicity options are weekly, fortnightly, four-weekly, or monthly — Ireland does **not** require uniform periodicity across employees.
+A termination payment is tax free if it does not exceed the basic exemption; above it the increased exemption or SCSB may apply, which this Guide does not compute (refer). A career break does not count towards a full year's work.
 
-### Step 1 — Download RPN from ROS
+## The method, step by step
 
-0. **Download RPN from ROS** — Before computing **any** pay, log into ROS, navigate to "PAYE Services → Manage employees" and download the latest RPN for each employee. The RPN tells you: - **Tax credit** for the period (annual ÷ frequency) - **SRCOP** for the period (annual ÷ frequency) - **USC bands** for the period - **Basis of tax** — cumulative, week 1 / month 1, or emergency - Any **LPT deduction-at-source** instruction If no RPN is available for the employee (new hire whose PPS number has not yet been confirmed by Revenue), apply the **emergency tax basis**: no credits, week 1 / month 1, full PAYE at 40%, USC at the highest band, until the RPN arrives.
+1. **Get the latest RPN for each employee before running payroll.** Revenue: "Before running payroll, you must request the latest RPN for each employee." Payroll software retrieves it; without software, request it in ROS. Always use the latest RPN. If no RPN can be retrieved, operate the emergency basis ([RPN](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/revenue-payroll-notification.aspx)).
+2. **Pick the tax basis the RPN shows.** Cumulative basis is the norm: tax due on total income from 1 January to date, less tax already deducted in the year ([Cumulative basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/cumulative-basis.aspx)). Week 1 or month 1 basis taxes each pay day on its own and never refunds unused credits within the period; use it only if the RPN instructs it ([Week 1 basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/week1-basis.aspx)). Emergency basis applies only where no RPN is available. If the employee has given a PPSN, tax at the standard rate up to the emergency cut-off point in the emergency table in Section 1 for weeks 1 to 4 of weekly pay, or month 1 of monthly pay, with no tax credits; from week 5 or month 2 the cut-off point is nil and all pay is taxed at the higher rate. If no PPSN, tax all pay at the higher rate with no tax credits from the first pay day. USC under the emergency basis is charged at the emergency USC rate in that table on all pay, with no USC cut-off point. Emergency weeks count from the start date even in weeks not worked ([Emergency basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/emergency-basis.aspx)).
+3. **Build gross pay, including notional pay.** Gross pay is total pay before any deductions, including notional pay, share-based remuneration and pay before pension or salary sacrifice deductions ([What are gross pay and taxable pay](https://www.revenue.ie/en/employing-people/what-constitutes-pay/what-are-gross-and-taxable-pay/index.aspx)). Value a company car with the BIK table in Section 1; apply the Small Benefit Exemption only within its conditions. Notional pay is not cash, so the tax on it comes out of the cash pay.
+4. **Work out taxable pay for Income Tax.** Subtract the employee's approved pension, PRSA, RAC or PEPP contributions deducted by the employer, approved income continuance contributions and salary sacrifice amounts ([What are gross pay and taxable pay](https://www.revenue.ie/en/employing-people/what-constitutes-pay/what-are-gross-and-taxable-pay/index.aspx)). Cap pension relief at the age percentage and earnings limit in the pension table ([Tax relief limits](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)).
+5. **Calculate Income Tax.** Apply the standard rate up to the period cut-off point, the higher rate on the balance, add the two, and subtract the period tax credits ([Rule for calculating tax](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/calculating-tax-rules.aspx)). The rates are in the Income Tax table in Section 1.
+6. **Calculate USC on gross pay, not on taxable pay.** Do not subtract employee pension contributions ([Employee's pension contributions](https://www.revenue.ie/en/employing-people/what-constitutes-pay/employees-pension-payments/index.aspx)). Apply the USC rates and cut-off points on the RPN, cumulatively where the RPN is cumulative ([USC for employers](https://www.revenue.ie/en/employing-people/paying-an-employee/usc/index.aspx)).
+7. **Calculate PRSI on reckonable pay.** Reckonable pay is gross pay plus notional pay; employee pension contributions are not deducted. Pick the subclass from the week's pay (or the fortnightly or monthly band in SW14), and use the rates for the period, 1 January to 30 September 2026 or from 1 October 2026, from the PRSI tables in Section 1. In subclass AX, deduct the PRSI Credit ([PRSI Class A rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/), [SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf)).
+8. **Deduct LPT only if the RPN shows it.** Revenue: "LPT may be deducted at source from employees' wages where it is shown on the employee's Revenue Payroll Notification (RPN)." It is spread equally over the year. An employee's request alone is not enough ([Deduction of LPT](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/deduction-of-lpt.aspx)).
+9. **Net pay** = gross cash pay less employee pension, Income Tax, USC, employee PRSI, LPT and voluntary deductions.
+10. **Report the payroll to Revenue on or before the pay date.** Revenue: "You must report the payroll information to Revenue on, or before, the day you make a payment to your employee." Each submission gives, per employee, the pay date, the pay, and the Income Tax, USC, PRSI and LPT deductions. The employer is responsible for compliance whether it uses software, a payroll company, an agency or ROS ([Payroll submissions](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/payroll-submissions.aspx)). For PRSI, report the class and the weeks in the period paid (one week for a weekly payroll, two for fortnightly), never a cumulative number of weeks ([PRSI for employers](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/prsi.aspx)).
+11. **Review the monthly statement and pay.** See Section 5 for the dates and the interest rate ([Paying tax to Revenue](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/paying-tax-to-revenue.aspx)).
+12. **Give the employee a payslip** stating the gross wages and the nature and amount of every deduction (Payment of Wages Act 1991, section 4; see Section 4).
 
-### Step 2 — Build the gross pay
+## Ask the client first
 
-0. **Build the gross pay** — ``` Basic salary                          B + Overtime / commission               O + Cash allowances (taxable)           A + Cash bonus paid in period           X + Notional pay for BIK                K   (company car, medical insurance, etc.) = Total gross                         G = B + O + A + X + K ``` > **BIK note:** The BIK value is **notional pay** — it is added to gross for PAYE, USC, and PRSI but is NOT cash paid to the employee. The employer therefore withholds tax on the BIK from the **cash element** of the pay packet.
+- Is there a current RPN for every employee, and on what basis (cumulative, week 1 or month 1, emergency)? Has any employee no PPSN?
+- What is each employee's pay frequency and pay date, and does any pay period straddle 1 October 2026?
+- Is any employee outside ordinary private sector Class A (under 16, aged 66 or over, public sector, a proprietary director, Community Employment, a posted worker)?
+- Which pension contributions are deducted, to what kind of scheme, and what is each employee's age and yearly earnings?
+- What benefits are provided: company car (Original Market Value, CO2 category, business kilometres, any employee contribution), vouchers, other non-cash benefits, and how many small benefits so far this year?
+- Is the employer a monthly, quarterly or annual remitter, and does it file and pay on ROS?
 
-### Step 3 — Deduct pension / PRSA / AVC contribution
+## When to refuse or refer
 
-- **Pension deduction / taxable pay formula** — Pension contribution = min(employee chosen %, age-related cap %) × min(annualised earnings, €115,000) ÷ periods per year Taxable pay (for PAYE and USC) = G − pension contribution  _(Section 3 Step 3)_
-- **Pension does not reduce PRSI base** — Pension does **not** reduce the PRSI base.  _(Section 3 Step 3)_
+- Any case in the refusal catalogue in Section 2.2.
+- No RPN can be obtained and the employee disputes emergency tax: run the emergency basis as Revenue requires and send the employee to myAccount; do not guess credits.
+- A pay period straddles 1 October 2026 and the software does not show how it split the PRSI rates: refer before paying.
+- The employer has paid the monthly liability late, or wants to correct a prior year: refer, since interest and correction rules apply.
+- Termination payments, share awards, pension lump sums and any payment where you cannot tell whether it is pay: refer.
+- Everything in this Guide is a source-cited draft. A qualified Irish payroll professional should review a payroll before any payslip, submission or payment.
 
-### Step 4 — Apply RPN credits and SRCOP to compute PAYE
+## Section 3: Worked example (hypothetical)
 
-- **PAYE formula** — PAYE_gross = min(Taxable pay, SRCOP_period) × 20% + max(0, Taxable pay − SRCOP_period) × 40% PAYE = max(0, PAYE_gross − Tax credit_period)  _(Section 3 Step 4)_
-- **Cumulative basis** — Each pay period uses YTD figures — `PAYE_period = PAYE_YTD_new − PAYE_YTD_old`. This is the default and smooths out variable income.  _(Section 3 Step 4)_
-- **Week 1 / month 1 basis** — Each period is computed in isolation — used after material changes (new employment, marriage, etc.) until RPN re-issues on cumulative.  _(Section 3 Step 4)_
-- **Emergency basis** — No credits; week 1 / month 1; SRCOP set to a low default. Triggered by missing RPN.  _(Section 3 Step 4)_
+A hypothetical monthly-paid employee: single, age 32, private sector Class A, cumulative RPN with the single person credit and the employee credit and the single standard rate band, same pay every month, no benefits, no LPT. The amounts below are hypothetical; the rates come from the tables in Section 1.
 
-### Step 5 — Compute USC on taxable pay (after pension)
+| Line | Amount | How it is worked out |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/cumulative-basis.aspx |
+| Monthly gross salary (hypothetical) | EUR 5,000.00 | Assumption |
+| Employee pension contribution to an approved scheme (hypothetical) | EUR 250.00 | Assumption; well inside the 20% limit for age 30 to 39 |
+| Taxable pay for Income Tax | EUR 4,750.00 | Gross less pension |
+| Monthly cut-off point | EUR 3,666.67 | EUR 44,000 divided by 12 |
+| Monthly tax credits | EUR 333.33 | (EUR 2,000 plus EUR 2,000) divided by 12 |
+| Income Tax for the month | EUR 833.33 | 20% of the cut-off point, plus 40% of taxable pay above it, less the monthly credits |
+| USC for the month, on gross pay (pension not deducted) | EUR 111.07 | 0.5% of one twelfth of EUR 12,012, plus 2% of one twelfth of EUR 16,688, plus 3% of the rest of the EUR 5,000.00 |
+| Employee PRSI, a month paid in the period to 30 September 2026 (monthly pay above the A1 band of EUR 2,392) | EUR 210.00 | 4.2% of EUR 5,000.00 |
+| Employer PRSI, a month paid in the period to 30 September 2026 | EUR 562.50 | 11.25% of EUR 5,000.00 |
+| Net pay, a month paid in the period to 30 September 2026 | EUR 3,595.60 | Gross less pension, Income Tax, USC and employee PRSI |
+| Employee PRSI, a month paid in the period from 1 October 2026 | EUR 217.50 | 4.35% of EUR 5,000.00 |
+| Employer PRSI, a month paid in the period from 1 October 2026 | EUR 570.00 | 11.40% of EUR 5,000.00 |
+| Net pay, a month paid in the period from 1 October 2026 | EUR 3,588.10 | Gross less pension, Income Tax, USC and employee PRSI |
 
-- **USC formula** — USC = Σ (band slice × band rate)  _(see `ie-usc` for the canonical breakdown)_
-- **USC total exemption** — Apply the period-equivalent USC bands from the RPN (see `ie-usc` for the canonical breakdown). Total exemption applies if **annualised** taxable pay ≤ €13,000.
+The live version of this Guide reduced the USC base by the pension contribution; that is wrong, and it understates USC. Real payroll software rounds at each step; small differences of a cent are expected.
 
-### Step 6 — Compute PRSI Class A on GROSS (before pension)
+## Section 4: Payslip components
 
-- **PRSI Class A formula** — PRSI employee = 4.1% × G                  (from 1 Oct 2024; was 4.0%) PRSI employer = 8.9%  × G  if G ≤ €496 per week = 11.15% × G  if G > €496 per week  _(Section 3 Step 6)_
-- **PRSI credit taper** — For employees earning €352.01 – €424 per week (Class A1), a tapering PRSI credit reduces the employee PRSI. The credit is `€12 − (gross − €352.01) ÷ 6`, applied per week. The RPN does NOT compute this — the payroll software does. See `ie-prsi-class-s` for the full taper table.  _(`ie-prsi-class-s`)_
+The legal minimum comes from the Payment of Wages Act 1991, section 4. The enacted text says: "An employer shall give or cause to be given to an employee a statement in writing specifying clearly the gross amount of the wages payable to the employee and the nature and amount of any deduction therefrom" and requires the employer to treat the statement confidentially ([Payment of Wages Act 1991, section 4, enacted text](https://www.irishstatutebook.ie/eli/1991/act/25/section/4/enacted/en/html); [section 2, enacted text](https://www.irishstatutebook.ie/eli/1991/act/25/section/2/enacted/en/html)). Where wages are paid by credit transfer or another mode whereby an amount is credited to an account specified by the employee (section 2(1)(f) of the Act), the statement is given as soon as may be after the payment; where paid by any other mode, including cheque or cash, at the time of the payment, unless regulations under section 2(1)(h) set another time.
 
-### Step 7 — Apply LPT-at-source (if RPN-instructed)
+Recommended layout (good practice beyond the statutory minimum):
 
-- **LPT-at-source rule** — If the RPN contains an LPT deduction instruction, deduct the period-equivalent LPT amount from net pay. The annual LPT is spread over the remaining pay periods of the year. Do NOT apply LPT based on an employee request alone — Revenue must instruct it.
-
-### Step 8 — Net pay
-
-- **Net pay formula** — Net pay = G − Pension − PAYE − USC − Employee PRSI − LPT − Voluntary deductions (court orders, union dues, salary sacrifice repayments, etc.)
-
-### Step 9 — Submit PSR to Revenue on or before pay date
-
-- **PSR submission rule** — For every pay run, submit a **Payroll Submission Request (PSR)** via ROS or via the payroll software's direct ROS integration **before or on the pay date**. The PSR lists each employee, gross pay, PAYE, USC, employee PRSI, employer PRSI, LPT, pension, and BIK breakdown. See Section 5.
-
-## Section 4 — Payslip components & sample
-
-- **Minimum payslip content** — A **conforming Irish payslip** must show, at minimum, under the Payment of Wages Act 1991 §4: 1. Employer name, address, employer registration number 2. Employee name, PPS number 3. Pay period and pay date 4. Gross pay breakdown (basic, overtime, allowances, BIK notional pay) 5. Statutory deductions, **itemized** (Pension, PAYE, USC, employee PRSI, LPT) 6. Voluntary deductions (court orders, union dues, salary sacrifice) 7. Net pay 8. YTD totals (cumulative gross, cumulative PAYE, cumulative USC, cumulative PRSI) 9. PRSI class (e.g. A1, AX) and number of insurable weeks in the period 10. Tax basis used (cumulative / week 1 / emergency)  _(Payment of Wages Act 1991 §4)_
-
-### Sample payslip — Dublin employee, €70,000 gross annual, monthly pay
-
-> Full worked numbers are in Section 7. The layout below is the recommended template.
-
-```
+~~~
 +-----------------------------------------------------------------+
-|  ACME IRELAND LTD                       PAYSLIP — MAY 2025      |
-|  10 Hatch Street, Dublin 2, D02 X285                            |
-|  Employer Registration No.: 1234567A                            |
+|  EMPLOYER NAME                          PAYSLIP: MONTH YEAR     |
+|  Address                                                        |
+|  Employer registration number                                   |
 +-----------------------------------------------------------------+
-|  Employee: Aoife O'Sullivan       PPS: 1234567A                 |
-|  Tax basis: Cumulative            PRSI class: A1                |
-|  Pay date: 28 May 2025            Period: 01-31 May 2025        |
-|  Insurable weeks this period: 4                                 |
+|  Employee name                    PPSN                          |
+|  Tax basis (cumulative / week 1 / emergency)    PRSI class      |
+|  Pay date                         Pay period                    |
+|  PRSI weeks this period                                         |
 +-----------------------------------------------------------------+
-|  EARNINGS                              EUR                      |
-|    Basic salary                        5,833.33                 |
-|    BIK — medical insurance               100.00                 |
-|    Gross pay (for PRSI)                5,933.33                 |
+|  EARNINGS: basic, overtime, allowances, notional pay (BIK)      |
+|  Gross pay                                                      |
 +-----------------------------------------------------------------+
-|  PRE-TAX DEDUCTIONS                     EUR                     |
-|    Employee pension (6%)                 350.00                 |
-|    Taxable pay (for PAYE & USC)        5,583.33                 |
+|  DEDUCTIONS: employee pension, Income Tax, USC, employee PRSI,  |
+|  LPT (only if on the RPN), voluntary deductions                 |
 +-----------------------------------------------------------------+
-|  STATUTORY DEDUCTIONS                   EUR                     |
-|    PAYE                                  938.33                 |
-|    USC                                   139.81                 |
-|    Employee PRSI (4.1% × Gross)          243.27                 |
-|    LPT at source                           0.00                 |
-|    Total statutory                     1,321.41                 |
+|  NET PAY                                                        |
 +-----------------------------------------------------------------+
-|  NET PAY                               EUR 4,261.92             |
+|  Employer contributions (information): pension, employer PRSI   |
+|  Year-to-date totals: gross, Income Tax, USC, PRSI, pension     |
 +-----------------------------------------------------------------+
-|  EMPLOYER CONTRIBUTIONS (info only)     EUR                     |
-|    Employer pension (6%)                 350.00                 |
-|    Employer PRSI (11.15% × Gross)        661.57                 |
-+-----------------------------------------------------------------+
-|  YTD TOTALS (Jan–May 2025)              EUR                     |
-|    Gross YTD                          29,666.65                 |
-|    PAYE YTD                            4,691.65                 |
-|    USC YTD                               699.05                 |
-|    Employee PRSI YTD                   1,216.35                 |
-|    Pension YTD (employee)              1,750.00                 |
-+-----------------------------------------------------------------+
-```
+~~~
 
-### 5.1 What is a PSR?
+## Section 5: Payroll submissions, statements and payment
 
-- **Payroll Submission Request (PSR)** — A **Payroll Submission Request (PSR)** is the real-time XML / JSON file submitted to Revenue via ROS for every pay run, listing each employee's pay, deductions, and pension. Under PAYE Modernisation (in force since 1 Jan 2019), a PSR must be filed **on or before the pay date** — late PSRs trigger Revenue compliance attention even if no tax is underpaid.
+### 5.1 What a payroll submission is
+
+Since 1 January 2019 the employer reports each payroll to Revenue in real time, on or before the pay date ([Employer payroll obligations](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/index.aspx)). Pages on obligations before 1 January 2019 belong to the old regime.
 
 ### 5.2 Submission channels
 
-**Submission channels**
-
 | Channel | Use case |
 | --- | --- |
-| **ROS direct entry** | Small employers (< 10 staff) without payroll software — manual entry in Revenue's online payroll module |
-| **Payroll software direct integration** | BrightPay, Sage Payroll, Surf Accounts, Thesaurus Payroll, CollSoft, etc. — software submits PSR via ROS API |
-| **CSV upload to ROS** | Mid-size employers running spreadsheet-based payroll — upload to ROS PAYE Services |
+| Direct payroll reporting from payroll software | Software sends payroll information to ROS automatically |
+| ROS payroll file upload | Software generates a file and the employer uploads it to ROS |
+| ROS "Submit payroll by online form" | Employers without payroll software |
+| Customised stationery | Only employers excluded from mandatory electronic filing |
 
-- **Conservative default — software choice** — Use a Revenue-certified payroll software product (BrightPay, Sage, Surf Accounts, Thesaurus, CollSoft) with direct ROS integration. Manual ROS entry is error-prone for anything above ~5 employees.
+Source: [Payroll submissions](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/payroll-submissions.aspx). Common Irish payroll packages include BrightPay, Sage, Surf Accounts, Thesaurus and CollSoft; whatever the tool, the employer stays responsible.
 
-### 5.3 What goes into a PSR — per employee
-
-**PSR fields per employee**
+### 5.3 What goes into a payroll submission, per employee
 
 | Field | Source |
 | --- | --- |
-| Employer Registration Number | Revenue-issued |
-| PPS Number | Employee record |
-| Period start, period end, pay date | Pay run |
-| Gross pay | Step 2 (incl. BIK notional pay) |
-| Pension contribution (employee) | Step 3 |
-| Taxable pay | Step 3 (gross − pension) |
-| PAYE | Step 4 |
-| USC | Step 5 |
-| Employee PRSI + insurable weeks | Step 6 |
-| Employer PRSI | Step 6 |
-| LPT deducted at source | Step 7 |
-| Notional pay (BIK) total | Step 2 |
-| PRSI class | RPN |
-| Tax basis (cumulative / week 1 / emergency) | RPN |
-| Date of leaving (if cessation) | HR |
+| Pay date | Pay run |
+| Amount of pay (gross, notional pay, taxable pay) | Steps 3 and 4 |
+| Income Tax, USC, PRSI and LPT deducted | Steps 5 to 8 |
+| PRSI class and number of weeks in this pay period | RPN, HR |
+| Employer PRSI | Step 7 |
+| Start date for a new employee; date of leaving on the final submission | HR |
+| Small benefits: date paid and value | Benefit records |
 
-### 5.4 Monthly P30-replacement — Statement and Payment
+Sources: [Payroll submissions](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/payroll-submissions.aspx), [PRSI for employers](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/prsi.aspx), [Commencing and ceasing employees](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/commencing-and-ceasing-employees.aspx).
 
-- **Monthly Statement of Liability process** — Revenue automatically generates a **monthly Statement of Liability** for the employer from the aggregated PSRs of that month. The employer must: 1. **Review** the statement in ROS by the **14th of the following month**. 2. Accept or correct it (corrections are made via amended PSRs, not by amending the statement directly). 3. **Pay** the net PAYE + USC + employee PRSI + employer PRSI by the **23rd of the following month** via ROS Direct Debit, single direct debit, or ROS payment. If no action is taken by the 14th, the statement is **deemed accepted**. Mid-quarter and quarterly remitters exist for some smaller employers (< €50,000 annual PAYE+PRSI) — flag for reviewer.
+### 5.4 Monthly statement and payment
 
-### 5.5 PSR amendments and corrections
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/paying-tax-to-revenue.aspx |
+| Yearly Income Tax, PRSI and USC at or below which an employer may apply to pay quarterly | EUR 28,800 | "If the employer's total Income Tax, PRSI and USC payments for the year are €28,800 or less, they can apply to make their payments quarterly." |
+| Interest on late payment of the employer's monthly liability (Income Tax, PRSI, USC and LPT deducted from employees), per day | 0.0274% | "The rate of interest is 0.0274% for every day the payment is late." |
 
-- **PSR amendment types** — - **Pre-pay-date corrections:** Re-submit the PSR before pay date. - **Post-pay-date corrections (same year):** Submit an amended PSR via ROS; Revenue automatically updates the Statement of Liability. - **Prior-year corrections:** Submit via the ROS "Amend Submission" workflow; may require Revenue MyEnquiries for material adjustments.
+- Revenue makes the monthly statement available by the 5th of the next month. The employer can accept it by the 14th; if not accepted by the 14th, it is deemed the monthly return on that day. Errors are fixed by amending the payroll submission, not the statement ([Paying tax to Revenue](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/paying-tax-to-revenue.aspx), [Statements from Revenue](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/statements-from-revenue.aspx)).
+- Payment: monthly remitters pay 14 days after the end of the month, or 23 days where the employer files and pays on ROS. Quarterly remitters still get a monthly statement and return but pay 14 days after the end of each quarter (23 days on ROS). Annual remitters pay 14 days after the end of the year (23 days on ROS) ([Returns and payment due dates](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/returns-and-payment-due-dates.aspx)).
+- To pay quarterly, the employer must apply to the Collector-General, have been registered as an employer for at least 12 months, and have filed all returns and payments.
+- Late payment: Revenue charges interest "from the 14th of the month" at the daily rate in the table above.
+- The statement and payment cover Income Tax, PRSI, USC and LPT. Keep PRSI separate from Income Tax and USC in the books, because the Collector-General's Division passes PRSI to the Department of Social Protection ([PRSI for employers](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/prsi.aspx)).
 
-### 5.6 Late-submission consequences
+### 5.5 Corrections
 
-**Late-submission consequences**  _(Taxes Consolidation Act 1997 §1080; TCA 1997 §1078)_
+If the statement is wrong, amend the payroll submission. Before the return due date a revised statement issues; after it, an amended return applies ([Statements from Revenue](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/statements-from-revenue.aspx)). Correct PRSI errors as soon as you find them, because errors can affect the employee's social welfare entitlements ([PRSI for employers](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/prsi.aspx)).
 
-| Issue | Consequence |
-| --- | --- |
-| Late PSR (after pay date) | Revenue compliance attention; repeat offenders may face audit; no fixed penalty for a single late PSR but interest applies if it causes late payment |
-| Late payment of monthly statement (after 23rd) | Interest at **0.0219% per day** (≈ 8% p.a.) — Taxes Consolidation Act 1997 §1080 |
-| Underpayment discovered later | Self-correction via amended PSR avoids surcharge if filed promptly; otherwise Revenue audit can impose penalty up to 100% of the tax |
-| Wilful failure | Criminal sanction under TCA 1997 §1078 |
+### 5.6 Late payment and late reporting
 
-## Section 6 — Year-end activities
+Late payment of the monthly liability costs interest at the daily rate in the table in 5.4. The pages read for this Guide print no fixed penalty for a late payroll submission; refer any penalty question.
 
-- **Abolished forms** — The **P30 (monthly), P35 (annual), P45 (leaver), and P60 (year-end employee certificate) forms have all been ABOLISHED** since the introduction of PAYE Modernisation on 1 Jan 2019.
+## Section 6: Year-end activities
 
-### 6.1 Employer year-end — no separate annual return
+There is no separate employer year-end return: the monthly returns built from payroll submissions are the record. The old P30, P35, P45 and P60 forms belong to the regime before 1 January 2019.
 
-**Employer year-end steps**
+### 6.1 Employer year-end steps
 
 | Step | Action | Deadline |
 | --- | --- | --- |
-| 1 | Reconcile total PSR gross, PAYE, USC, PRSI to the payroll software and to the general ledger | By 31 December |
-| 2 | File any final PSR for December (including final BIK valuations for the year) | On or before the final pay date |
-| 3 | Review the December Statement of Liability in ROS | By 14 January |
-| 4 | Settle the December liability | By 23 January |
-| 5 | Issue **Employment Detail Summary access notification** to employees (some employers issue a courtesy PDF; not statutory) | By end of January |
+| 1 | Reconcile payroll submissions to the payroll records and the general ledger | Before the December statement becomes the return |
+| 2 | Make the final December payroll submission, including final notional pay | On or before the pay date |
+| 3 | Review and accept or correct the December statement | 14 January |
+| 4 | Pay the December liability (monthly remitter) | 14 January, or 23 January if filed and paid on ROS |
 
-- **No separate P35 filing** — The cumulative PSRs filed during the year **constitute the annual return**. There is no separate P35-equivalent to file.
+### 6.2 Employee year-end: the Employment Detail Summary
 
-### 6.2 Employee year-end — the Employee Detail Summary
+Revenue's name is the Employment Detail Summary (EDS), not "Employee Detail Summary". It "will contain income and deduction details from each of your employments or pensions for the relevant year" and is available in January in myAccount, under PAYE Services. If the employer submits a financial change later, a new EDS can be created and the latest one is the corrected version ([Employment Detail Summary](https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/employment-detail-summary.aspx)).
 
-- **Employee Detail Summary (EDS)** — The legacy P60 is replaced by the **Employee Detail Summary (EDS)**, which each employee accesses via Revenue **myAccount**. The EDS shows, for the tax year: - Total gross pay, total PAYE, total USC, total employee PRSI, total LPT - Insurable weeks - BIK total - Pension contributions - Employer name(s) and registration number(s) The EDS is auto-generated from the PSRs filed by the employer(s). Employees can also file their annual **Form 12** (for normal PAYE workers with side income, claiming reliefs, etc.) within myAccount.
+### 6.3 Leavers
 
-### 6.3 Leavers — no P45 anymore
-
-- **Leaver process** — When an employee leaves, the employer files the **final PSR** with a **date of cessation**. The employee can access their final EDS through myAccount; the new employer downloads a fresh RPN.
+Put the date of leaving on the final payroll submission when an employee leaves, starts a career break or dies in service. Delay can give the next employer a nil RPN and push the employee onto emergency tax ([Commencing and ceasing employees](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/commencing-and-ceasing-employees.aspx)). If the old employer does not cease the job, the employee can do it in myAccount ([When you leave your job](https://www.revenue.ie/en/jobs-and-pensions/changing-jobs/leave-your-job.aspx)).
 
 ### 6.4 Reconciliation checklist
 
-**Reconciliation checklist**
-
 | Check | Pass criterion |
 | --- | --- |
-| Sum of monthly Statements of Liability paid = sum of (PAYE+USC+employee PRSI+employer PRSI+LPT) per PSRs | Match within €1 rounding |
-| Pension contributions (employee) per PSRs = pension scheme provider's bordereau | Match |
-| BIK valuations consistent across months (esp. company car mileage band) | Year-end true-up filed if mileage band changed |
-| Any retro pay or bonus → captured in PSR for the actual pay date | ✓ |
-| All leavers have a final PSR with cessation date | ✓ |
-| Total employer PRSI rate transitions (8.9% ↔ 11.15%) properly reflected when weekly pay crosses €496 | ✓ |
-| PRSI rate change on 1 Oct 2024 (4.0% → 4.1%) correctly applied across the year | ✓ for 2024 reconciliation; not applicable to 2025 (whole-year 4.1%) |
+| Statements paid equal Income Tax, USC, employee and employer PRSI and LPT on the payroll submissions | Match |
+| Employee pension contributions on the submissions equal the provider's records | Match |
+| Company car notional pay reviewed at least quarterly and the year's business kilometres band applied | Done |
+| Small benefits: no more than five, combined value inside the limit, each reported | Done |
+| Every leaver has a final submission with a date of leaving | Done |
+| Employer PRSI switches between the lower and higher rate when weekly pay crosses EUR 552 | Done |
+| PRSI rates switch from the period to 30 September 2026 to the period from 1 October 2026 | Done |
+| USC calculated on gross pay, not reduced by employee pension contributions | Done |
 
-## Section 7 — Worked example
-
-**Scenario:** Software developer, **Dublin resident**, **€70,000 gross annual** salary, paid monthly, single. Employer-provided medical insurance (BIK = €1,200/year = €100/month). Employee contributes **6% to occupational pension**, employer matches 6%. No company car. No LPT instruction. Age 32 (so pension % cap is 20% — well above 6% chosen rate). Cumulative tax basis. PRSI Class A1.
-
-### A — Gross pay breakdown (monthly)
-
-**Gross pay breakdown**
-
-| Component | EUR |
-| --- | --- |
-| Basic (70,000 / 12) | 5,833.33 |
-| BIK — medical insurance (1,200 / 12) | 100.00 |
-| **Total gross (G) — PRSI base** | **5,933.33** |
-
-Annualised gross for PRSI purposes = €71,200.
-
-### B — Pension contribution
-
-- **Pension contribution calc** — Employee pension = 6% × 5,833.33 = 350.00     (BIK does not attract pension; pension % applies to cash salary only by scheme rule) Earnings cap check: 6% well below 20% age-30-39 cap; 70,000 ≤ 115,000 → no cap binding
-
-### C — Taxable pay (PAYE / USC base)
-
-- **Taxable pay calc** — Taxable pay = G − Pension = 5,933.33 − 350.00 = 5,583.33
-
-### D — PAYE (cumulative basis, single, 2025 RPN)
-
-**PAYE RPN items**
-
-| RPN item | Annual | Monthly |
-| --- | --- | --- |
-| SRCOP (single) | €44,000 | €3,666.67 |
-| Personal credit | €2,000 | €166.67 |
-| PAYE credit | €2,000 | €166.67 |
-| Total credit | €4,000 | €333.33 |
-
-- **PAYE calc** — PAYE gross = min(5,583.33, 3,666.67) × 20% + max(0, 5,583.33 − 3,666.67) × 40% = 3,666.67 × 20%   + 1,916.66 × 40% = 733.33           + 766.66 = 1,499.99 PAYE = 1,499.99 − 333.33 = 1,166.66
-
-> Note: The Section 4 sample payslip used a slightly different monthly figure (€938.33) to keep that illustration round. The number here (€1,166.66) is the correct full computation for this scenario.
-
-### E — USC (2025 bands, monthly)
-
-Annualised taxable = €66,999.96. Below €70,044 → never enters the 8% band.
-
-**USC band calc**
-
-| Band (annual) | Monthly slice | Rate | USC monthly |
-| --- | --- | --- | --- |
-| 0 – 12,012 | 1,001.00 | 0.5% | 5.01 |
-| 12,013 – 27,382 | 1,280.83 | 2% | 25.62 |
-| 27,383 – 66,999.96 | 3,301.50 | 3% | 99.05 |
-| **Monthly USC** |  |  | **129.68** |
-
-### F — PRSI Class A1 employee
-
-- **PRSI employee calc** — Employee PRSI = 4.1% × 5,933.33 = 243.27
-
-Earnings well above €424/wk equivalent → no PRSI credit taper.
-
-### G — Net pay
-
-**Net pay**
-
-| Item | EUR |
-| --- | --- |
-| Total gross | 5,933.33 |
-| − Pension (employee) | (350.00) |
-| − PAYE | (1,166.66) |
-| − USC | (129.68) |
-| − Employee PRSI | (243.27) |
-| − LPT | (0.00) |
-| **Net pay** | **4,043.72** |
-
-### H — Employer cost ledger (monthly)
-
-**Employer cost ledger**
-
-| Item | EUR |
-| --- | --- |
-| Gross pay (cash + BIK) | 5,933.33 |
-| Employer pension (6%) | 350.00 |
-| Employer PRSI (11.15% × 5,933.33; weekly equivalent ≈ €1,370 > €496) | 661.57 |
-| **Total employer cost** | **6,944.90** |
-
-### I — Remittances arising from this payslip
-
-**Remittances**
-
-| Recipient | Amount EUR | Deadline |
-| --- | --- | --- |
-| Revenue (PAYE + USC + Employee PRSI + Employer PRSI = 1,166.66 + 129.68 + 243.27 + 661.57) | 2,201.18 | 23 Jun 2025 (via ROS, after accepting May Statement of Liability) |
-| Pension scheme (employee 350.00 + employer 350.00) | 700.00 | Per scheme rules — typically by 21 Jun 2025 |
-| PSR submission | n/a | **On or before 28 May 2025 (pay date)** |
-
-### J — Annual reconciliation snapshot
-
-**Annual reconciliation snapshot**
-
-| Item | Annual EUR |
-| --- | --- |
-| Gross (cash) | 70,000 |
-| BIK | 1,200 |
-| Total gross | 71,200 |
-| Pension (employee) | 4,200 |
-| Taxable | 67,000 |
-| PAYE | ≈ 13,999.92 |
-| USC | ≈ 1,556.16 |
-| Employee PRSI | ≈ 2,919.24 |
-| Net | ≈ 48,524.68 |
-
-(Annual figures are the monthly figures × 12; small rounding differences will appear in the EDS.)
-
-## Section 8 — Conservative defaults
-
-**Conservative defaults**
+## Section 7: Conservative defaults
 
 | Situation | Conservative position |
 | --- | --- |
-| RPN not yet downloaded for a new starter | Apply **emergency basis** (no credits, week 1, full 40% PAYE, max USC) until RPN arrives — never guess credits |
-| BIK value uncertain (company car CO₂ unknown) | Default to **Category E (26.5%)** until manufacturer's CO₂ data confirmed |
-| EV BIK — uncertain whether OMV relief applies | Apply the **lower** OMV relief in the taper table for the year (€10,000 in 2025) and flag |
-| Pension contribution above age-related cap | Apply relief on the cap only; excess flows through PAYE/USC at full rates |
-| Employer matching pension above scheme rules | Treat employer contribution as fully tax-free for the employee per Revenue Pensions Manual; but flag if scheme is unapproved |
-| PRSI class uncertain | Apply Class A1 (employee 4.1%, employer 11.15%) — most common; flag for HR to confirm AX, J, etc. cases |
-| LPT requested by employee but no RPN instruction | Do NOT deduct — Revenue must instruct; tell employee to amend their LPT in myAccount |
-| Mid-month joiner | Apply pro-rated gross; cumulative basis from RPN will smooth credits/SRCOP across remaining months |
-| Mid-month leaver | Apply final PSR with cessation date; do NOT issue any P45-equivalent — employee uses myAccount EDS |
-| Pay in foreign currency | Convert to EUR at the Revenue / Central Bank rate on the pay date; document the rate used |
-| Late hire — backdated salary spanning months | Tax in the month of actual payment per the cumulative basis; do NOT re-open prior PSRs unless reviewer instructs |
-| Bonus / 13th-month payment | Tax in the period actually paid; cumulative basis will smooth the PAYE/USC impact if SRCOP head-room available |
-| Employee on PUP / Illness Benefit during the month | Adjust gross to actual pay; Illness Benefit is taxable but paid by DSP — coordinate with RPN |
-| Court order / attachment of earnings | Apply per court order — usually after statutory deductions; document priority |
+| No RPN for a new starter | Emergency basis as Revenue describes it; never guess credits |
+| Company car CO2 category unknown | Use category E (no Original Market Value reduction, highest percentages) until the CO2 figure is confirmed |
+| Pension contribution above the age limit or earnings limit | Relief on the limit only; the excess goes through Income Tax |
+| Pension contribution to a scheme not shown to be Revenue approved | No Income Tax relief until confirmed |
+| PRSI class uncertain | Class A for a private sector employee aged 16 to 66; confirm anything else with SW14 |
+| Pay period straddling 1 October 2026 | Refer before paying (see Section 1) |
+| Employee asks for LPT deduction but it is not on the RPN | Do not deduct; the employee deals with LPT through Revenue |
+| Mid-month joiner or leaver | Pay actual pay; start date or date of leaving on the payroll submission |
+| Pay in a foreign currency | Convert to EUR and record the rate used; refer the rate choice |
+| Bonus or backdated pay | Tax in the period paid under the cumulative basis; do not reopen earlier submissions without advice |
+| Illness Benefit or other Department of Social Protection payments | Follow the RPN; refer |
+| Attachment of earnings order | Apply as the order says and record the priority |
 
-## Section 9 — Sources
+## Sources
 
-**Sources table**
-
-| Source | Reference |
+| Source | Used for |
 | --- | --- |
-| Taxes Consolidation Act 1997 (TCA 1997), as amended | Irish Statute Book |
-| Finance Act 2024 (PAYE / USC / PRSI 2025 changes) | Irish Statute Book |
-| Social Welfare Consolidation Act 2005 (PRSI Class A) | Department of Social Protection |
-| Revenue Employer's Guide to PAYE | https://www.revenue.ie/en/employing-people/index.aspx |
-| PAYE Modernisation — Real-time payroll reporting | https://www.revenue.ie/en/employing-people/paye-modernisation/index.aspx |
-| Revenue Online Service (ROS) | https://www.ros.ie |
-| Employee myAccount — Employee Detail Summary | https://www.revenue.ie/en/online-services/services/paye/employee-detail-summary.aspx |
-| Revenue Pensions Manual | https://www.revenue.ie/en/tax-professionals/tdm/pensions/ |
-| BIK on company cars — Tax and Duty Manual 05-01-01b | Revenue eBrief / TDM |
-| Payment of Wages Act 1991 §4 (payslip content) | Irish Statute Book |
-| Local Property Tax (Deduction at Source) — LPT TDM | Revenue |
-| Companion skill — PAYE bands and credits | `ie-paye` |
-| Companion skill — Universal Social Charge | `ie-usc` |
-| Companion skill — PRSI (Class S self-employed; Class A reference) | `ie-prsi-class-s` |
-| Companion skill — Self-employed income tax (Form 11) | `ie-income-tax-form11` |
-| Revenue-certified payroll software list | https://www.revenue.ie/en/employing-people/payroll-software-providers.aspx |
+| [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) | Income Tax rates, bands and credits |
+| [Revenue: standard rates and thresholds of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx), [USC overview](https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx), [reduced rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/reduced-rates.aspx) | USC |
+| [Department of Social Protection: PRSI Class A rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/) | PRSI Class A, both 2026 periods |
+| [SW14: the 2026 PRSI Contribution Rates and User Guide](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf) | PRSI Credit, bands, reckonable pay, pension contributions, lump sums |
+| [Revenue: tax relief limits on pension contributions](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx), [employee's pension contributions](https://www.revenue.ie/en/employing-people/what-constitutes-pay/employees-pension-payments/index.aspx), [gross pay and taxable pay](https://www.revenue.ie/en/employing-people/what-constitutes-pay/what-are-gross-and-taxable-pay/index.aspx) | Pension relief and the deduction bases |
+| [Revenue: RPN](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/revenue-payroll-notification.aspx), [cumulative basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/cumulative-basis.aspx), [week 1 basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/week1-basis.aspx), [emergency basis](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/emergency-basis.aspx), [Emergency Basis of Tax and USC Deduction 2026 (PDF)](https://www.revenue.ie/en/jobs-and-pensions/documents/emergency-rates.pdf), [rule for calculating tax](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/calculating-tax-rules.aspx) | Tax bases and calculation |
+| [Revenue: payroll submissions](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/payroll-submissions.aspx), [commencing and ceasing employees](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/commencing-and-ceasing-employees.aspx), [statements](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/statements-from-revenue.aspx), [return and payment due dates](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/employer-obligations-from-01-01-2019/returns-and-payment-due-dates.aspx), [paying tax to Revenue](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/paying-tax-to-revenue.aspx), [PRSI for employers](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/prsi.aspx), [deduction of LPT](https://www.revenue.ie/en/employing-people/paying-your-employees-tax-to-revenue/deduction-of-lpt.aspx) | Reporting, statements, payment, LPT |
+| [Revenue: company car BIK](https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/private-use-company-cars/calculate-value-benefit.aspx), [Small Benefit Exemption](https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/valuation-of-benefits/small-benefit-exemption.aspx), [USC for employers](https://www.revenue.ie/en/employing-people/paying-an-employee/usc/index.aspx) | Benefit in kind |
+| [Revenue: basic exemption for termination payments](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/basic-exemption.aspx) | Termination payments |
+| [Revenue: Employment Detail Summary](https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/employment-detail-summary.aspx), [when you leave your job](https://www.revenue.ie/en/jobs-and-pensions/changing-jobs/leave-your-job.aspx) | Year end and leavers |
+| [Department of Enterprise: national minimum wage from 1 January 2026](https://www.gov.ie/en/department-of-enterprise-tourism-and-employment/publications/national-minimum-wage-increase-on-1-january-2025/) | Minimum wage |
+| [Payment of Wages Act 1991, section 4, enacted text](https://www.irishstatutebook.ie/eli/1991/act/25/section/4/enacted/en/html), [section 2, enacted text](https://www.irishstatutebook.ie/eli/1991/act/25/section/2/enacted/en/html) | Payslip |
 
 ## Footer disclaimer
 
-*OpenAccountants — open-source accounting skills for AI*
-*This is not tax advice. All outputs must be reviewed by a qualified Irish payroll professional or tax adviser before any payslip is issued, any PSR is submitted, or any remittance is made.*
+*OpenAccountants: open-source accounting Guides for AI.*
+*This is not tax advice. All outputs must be reviewed by a qualified Irish payroll professional or tax adviser before any payslip is issued, any payroll submission is made, or any payment is made.*
 
 <!-- openaccountants-cta-block -->
 

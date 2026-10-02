@@ -2,53 +2,155 @@
 name: ie-cgt
 description: ALWAYS read this skill before touching any Irish Capital Gains Tax work. Trigger on phrases like "Ireland CGT", "33% capital gains Ireland", "PPR exemption Ireland", "Entrepreneur Relief Ireland", "CG50 clearance", "Irish Capital Gains Tax", "Form CG1", "preliminary CGT Ireland", "Retirement Relief Ireland", "Section 597AA", "Section 598", "Section 599", "Revenue Online Service CGT", "ROS CGT", "Irish share disposal tax", "Euronext Dublin share sale CGT", "Irish property gain", "non-resident CGT Ireland", "Irish-situs CGT", "crypto CGT Ireland", or any question about computing, filing, or reporting capital gains on Irish chargeable assets. Scope covers CGT computation for chargeable assets (real property, shares, business assets, crypto, intangibles), the Principal Private Residence relief, Entrepreneur Relief (Section 597AA), Retirement Relief (Sections 598/599), the annual exemption, the CG50 clearance regime for high-value land disposals, loss relief, and the preliminary-CGT / final-return mechanics under Form CG1 via ROS. ALWAYS read this skill before producing any Irish CGT figure.
 jurisdiction: IE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-02
+authored_by: OpenAccountants team
 review_status: pending_review
+trust_label: By OpenAccountants
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# IE Cgt
+# Ireland Capital Gains Tax (CGT) for individuals
 
-## Section 1 — Quick reference
+This Guide is a source-cited draft by the OpenAccountants team. No accountant has reviewed it. It sets out how to compute, pay and report Irish Capital Gains Tax on a disposal by an individual: the chargeable gain, the personal exemption, the rates, the main reliefs, losses, share identification, the CG50A clearance and the payment and return dates. Figures are for tax year 2026. The Irish tax year is the calendar year. Every figure below sits in a table that names the Revenue page it comes from. Check the Revenue pages for any change announced after 2 October 2026.
 
-**Section 1 — Quick reference table**
+## Section 1: Quick reference
+
+**Section 1: Quick reference table**
 
 | Field | Value |
 | --- | --- |
 | Country | Republic of Ireland |
 | Tax | Capital Gains Tax (CGT) |
-| Currency | EUR (€) |
+| Currency | EUR |
 | Tax year | 1 January to 31 December (calendar year) |
-| Primary legislation | Taxes Consolidation Act (TCA) 1997, Parts 19–21 |
-| Headline rate | **33%** on chargeable gains (raised from 30% in Budget 2013; previously 25%, 20%, 22%) |
-| Entrepreneur Relief rate | **10%** on first €1,000,000 lifetime of qualifying business asset disposals (TCA 1997 s. 597AA) |
-| Annual exemption | **€1,270** per individual per tax year (non-transferable between spouses) |
+| Primary legislation | Taxes Consolidation Act 1997 (Revenue cites, among others, sections 546, 552, 556, 573, 597AA, 598, 599, 601, 603A, 604 and 980) |
+| Standard rate | 33% for most gains (see the "How to calculate CGT" table) |
+| Revised Entrepreneur Relief rate | 10% on gains from chargeable business assets, up to a lifetime limit of gains (see the Entrepreneur Relief table) |
+| Personal exemption | EUR 1,270 of gains each tax year, per individual, not transferable to a spouse or civil partner |
 | Tax authority | Office of the Revenue Commissioners ("Revenue") |
-| Filing | Form **CG1** (CGT-only filers) or **Form 11 / Form 11S** self-assessment return for self-employed |
-| E-filing | Revenue Online Service (**ROS**) — mandatory for most filers |
-| Validated by | Pending — requires sign-off by an Irish chartered tax adviser (CTA, AITI) or chartered accountant (CAI / ACCA / CPA Ireland) |
-| Skill version | 1.0 |
+| Returns | Form CG1 (paper), Form 12 (paper), Form 11 or Form 1, depending on who files (see Section 6.1) |
+| Payment | By disposal date: 1 January to 30 November pays by 15 December of the same year; 1 December to 31 December pays by 31 January of the next year |
+| Status | Source-cited draft by the OpenAccountants team. No accountant has reviewed it |
+| Guide version | 2.0 |
+
+### Figures by official source
+
+**How to calculate CGT (Revenue)**
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
+| Rate for most gains, disposals on or after 6 December 2012 | 33% | "The rate of CGT is 33% for most gains." |
+| Gains from foreign life policies and foreign investment products | 40% | "40% for gains from foreign life policies and foreign investment products." |
+| Gains from venture capital funds, individuals and partnerships | 15% | "15% for gains from venture capital funds for individuals and partnerships." |
+| Gains from venture capital funds, companies | 12.5% | "12.5% for gains from venture capital funds for companies." |
+| Historic rate, disposals 7 December 2011 to 5 December 2012 | 30% | "5 December 2012 30%" |
+| Historic rate, disposals 8 April 2009 to 6 December 2011 | 25% | "6 December 2011 25%" |
+| Historic rate, disposals 15 October 2008 to 7 April 2009 | 22% | "7 April 2009 22%" |
+| Historic rate, disposals up to and including 14 October 2008 | 20% | "Up to, and including, 14 October 2008 20%" |
+
+**What is exempt from CGT (Revenue)**
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx |
+| Personal exemption, each tax year, after losses | EUR 1,270 | "Each tax year, the first €1,270 of your gain or gains (after deducting losses) are exempt from CGT." |
+| Moveable property such as furniture: exempt where the gain does not exceed | EUR 2,540 | "moveable property (such as furniture), where the gain does not exceed €2,540" |
+
+**Revised Entrepreneur Relief (Revenue)**
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx |
+| Rate on gains from chargeable business assets | 10% | "This relief gives a CGT rate of 10% on gains from the disposal of chargeable business assets." |
+| Rate for disposals 1 January to 31 December 2016 | 20% | "The rate is 20% for disposals from 1 January to 31 December 2016." |
+| Lifetime limit, gains arising 1 January 2016 to 31 December 2025 | EUR 1,000,000 | "You can claim the relief on the first €1,000,000 of gains arising between 1 January 2016 and 31 December 2025." |
+| Lifetime limit, gains arising on or after 1 January 2026 | EUR 1,500,000 | "For gains arising on or after 1 January 2026, the lifetime limit increases to €1,500,000." |
+| Shares: minimum holding of the ordinary shares, for a continuous three years | 5% | "you must have owned at least 5% of the ordinary shares for a continuous period of three years." |
+| Director or employee: minimum share of time in a managerial or technical capacity | 50% | "spent no less than 50% of your time in the service of the company" |
+| Group: subsidiaries of the holding company that must each operate a qualifying business | 51% | "It must hold shares in other companies, all of which are its 51% subsidiaries." |
+
+**Disposal of a business or farm (Retirement Relief) (Revenue)**
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx |
+| Transfer to a child on or after 1 January 2025, owner aged 55 to 69: relief restricted to | EUR 10 million | "between 55 and 69, the relief is restricted to €10 million" |
+| Transfer to a child on or after 1 January 2025, owner aged 70 or older: relief restricted to | EUR 3 million | "70 or older, the relief is restricted to €3 million." |
+| Disposal outside the family on or after 1 January 2025, owner aged 55 to 69: lifetime threshold for full relief | EUR 750,000 | "€750,000 for disposals made: from 1 January 2014 to 31 December 2024 (inclusive) and you are between 55 and 65 or on, or after, 1 January 2025 and you are between 55 and 69." |
+| Disposal outside the family on or after 1 January 2025, owner aged at least 70: lifetime threshold for full relief | EUR 500,000 | "€500,000 for disposals made from 1 January 2014 to 31 December 2024 (inclusive) and you are at least 66 or on, or after, 1 January 2025 and you are at least 70 years old." |
+
+**Transfer of a site from a parent to a child (Revenue)**
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/transfer-of-a-site-from-a-parent-to-a-child.aspx |
+| Maximum value of the site (the site must also be one acre or less) | EUR 500,000 | "be one acre or less and have a value of €500,000 or less." |
+
+**Tax and Duty Manual Part 42-03-01, section 980 (Revenue)**
+
+| Item | Figure | Note (verbatim from the page) |
+| --- | --- | --- |
+| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf |
+| Purchaser deducts this share of the consideration if no certificate is produced | 15% | "the purchaser is required to deduct 15% from the consideration and remit that amount to Revenue." |
+| Section 980 applies where the consideration for a specified asset exceeds | EUR 500,000 | "where the consideration exceeds €500,000, or €1,000,000 if the asset disposed of is a house." |
+| Threshold where the asset is a house | EUR 1,000,000 | "where the consideration exceeds €500,000, or €1,000,000 if the asset disposed of is a house." "A house includes an apartment for the purpose of the definition." |
 
 ### CGT rate at a glance
 
 **CGT rate at a glance table**
 
-| Asset class / scenario | Rate | Notes |
+| Asset class or scenario | Rate or treatment | Notes |
 | --- | --- | --- |
-| Standard chargeable gains (property, shares, crypto, intangibles) | **33%** | Single headline rate since 6 December 2012 |
-| Qualifying business asset disposal — Entrepreneur Relief | **10%** | First €1M lifetime cap (TCA s. 597AA) |
-| Foreign life policies, certain offshore funds | 40% | Higher rate under TCA Part 27 — out of scope of this skill |
-| Principal Private Residence (PPR) — fully occupied throughout ownership | 0% | TCA s. 604 — full exemption |
-| Disposal of land/buildings/minerals > €500,000 — no CG50 | Buyer withholds 15% on account | Refunded once seller's CGT liability assessed |
-| Non-resident disposing of Irish-situs land, mineral rights, or unquoted shares deriving value from Irish land | 33% | Limited Irish CGT scope for non-residents (TCA s. 29) |
+| Most chargeable gains (land, buildings, shares, crypto-assets, goodwill and other intangibles) | 33% | Rate since 6 December 2012. Revenue's crypto-asset manual lists crypto-assets among the assets on which CGT arises ([Tax and Duty Manual Part 02-01-03](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf)) |
+| Qualifying gains under Revised Entrepreneur Relief | 10% | Up to the lifetime limit for the period the gain arises in (see the Entrepreneur Relief table). Gains above the limit go at 33% |
+| Foreign life policies and foreign investment products | 40% | Out of scope of this Guide. Refer |
+| Venture capital funds | 15% (individuals and partnerships) or 12.5% (companies) | Out of scope of this Guide. Refer |
+| Principal Private Residence, owned and fully occupied as the main home throughout ownership | Exempt | Restricted where not fully occupied, partly used for business, or sold with development value (Section 4.1) |
+| Specified asset sold for more than EUR 500,000 (EUR 1,000,000 for a house or apartment) with no CG50A | Purchaser deducts 15% | The vendor reclaims it using Form CG50B (Section 4.7) |
+| Non-resident disposing of Irish land, buildings, minerals, continental shelf rights, certain unquoted shares, or assets of a trade carried on in Ireland | 33% | Section 3.1 |
 
-## Section 2 — Required inputs & refusal catalogue
+## Ask the client first
+
+- When was the contract signed, and was it a written contract? The time of disposal is usually the contract date, and it decides both the payment date and the tax year ([pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)).
+- Are you resident in Ireland, and what is the asset and where is it? A non-resident pays Irish CGT only on the assets listed in Section 3.1 ([CGT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx)).
+- How did you acquire the asset, when, and for how much? A gift or inheritance, or a purchase before 6 April 1974, changes the base cost to market value, and costs paid up to 31 December 2002 can be indexed ([how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx), [indexation](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/inflation-relief.aspx)).
+- Who is the buyer or recipient? A spouse or civil partner, a child, or an unconnected third party each lead to a different rule ([exemptions](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx), [Retirement Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx)).
+- If it is your home: which months did you live in it, was any part used for a business, was it let, and does the price include development value ([PPR Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/principal-private-residence-ppr-relief.aspx))?
+- If it is a business or shares in your company: your age at the disposal, how long you have owned the assets and worked in the business, your shareholding, and every earlier claim to Entrepreneur Relief or Retirement Relief ([Entrepreneur Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx), [Retirement Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx)).
+
+## The method, step by step
+
+1. **Fix the disposal and its date.** A sale, gift, exchange, or receipt of compensation or insurance money for an asset is a disposal. Under a written contract the time of disposal is usually the contract date. The date puts the disposal in a tax year and in a payment period. [CGT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx) and [pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)
+2. **Check the person is chargeable on this asset.** A non-resident individual is chargeable only on the assets listed in Section 3.1. A company normally includes its gains in Corporation Tax, except gains on development land, which go to CGT. Refer companies. [CGT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx)
+3. **Remove exempt disposals.** Betting, lottery wins, prize bonds, government stocks, certain life assurance policies, animals, private motor cars and moveable property where the gain does not exceed the amount in the "What is exempt" table are exempt. A transfer to a spouse or civil partner is usually exempt, with the exceptions in Section 3.5. There is generally no CGT on an asset transferred on death. [What is exempt](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx)
+4. **Compute the chargeable gain on each disposal.** Proceeds (or market value where Section 3.5 requires it) less the purchase price and allowable expenses: enhancement expenditure, and fees such as solicitor's and auctioneer's fees on acquisition and disposal. For costs paid up to 31 December 2002, apply the indexation multiplier for the year the cost was paid (Section 4.4). For shares, identify the shares sold under Section 3.7. [How to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) (Taxes Consolidation Act 1997, section 552)
+5. **Apply reliefs that remove or reduce the gain.** Principal Private Residence Relief (section 604), Retirement Relief (sections 598 and 599), the site to a child relief (section 603A), each as set out in Section 4. [CGT reliefs](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/index.aspx)
+6. **Add the year's gains and deduct allowable losses.** Deduct current-year losses, then losses brought forward. Development land losses and gains have their own ring-fence (Section 3.6). [If you make a loss](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx) (section 546)
+7. **Deduct the personal exemption.** An individual deducts the EUR 1,270 personal exemption from the year's gains after losses. It is per individual, whether resident or non-resident, and cannot be transferred to a spouse or civil partner, or used by a company or trust. [What is exempt](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx) (section 601)
+8. **Apply the rate.** 33% for most gains. 10% on qualifying gains under Revised Entrepreneur Relief, up to the lifetime limit for the period the gain arises in; the excess goes at 33%. Other rates in the "How to calculate CGT" table are out of scope. A credit for foreign CGT paid may be claimed on the return. [How to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) and [Entrepreneur Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx) (section 597AA)
+9. **Check the CG50A clearance before completion.** On a sale of a specified asset for more than EUR 500,000 (more than EUR 1,000,000 for a house or apartment), the vendor needs a CG50A or the purchaser deducts 15% (Section 4.7). [CG50A](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/cgt-clearance-certificate-cg50a.aspx) and [Tax and Duty Manual Part 42-03-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf)
+10. **Pay by the date for the disposal's period, then file.** Disposals 1 January to 30 November: pay by 15 December of the same year. Disposals 1 December to 31 December: pay by 31 January of the next year. File the return on or before 31 October of the year after the disposal, even if no tax is due because of reliefs or losses (Section 6). [Pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)
+
+## Section 2: Required inputs and refusal catalogue
 
 ### Required inputs
 
-- **Required inputs before computing Irish CGT** — Before computing any Irish CGT position, obtain: 1. Identity & residency — taxpayer name, PPSN (or tax reference), residency status (Irish resident, ordinarily resident, domiciled / non-domiciled, non-resident). 2. Asset description — class (real property, shares, business asset, crypto, intangible, chattel) and whether Irish-situs. 3. Acquisition data — acquisition date, acquisition cost (with documentary support), incidental costs of acquisition (legal, stamp duty, survey). 4. Disposal data — disposal date, disposal proceeds (gross), incidental costs of disposal (solicitor, agent's commission, advertising). 5. Connection — whether the parties are connected persons (market value rule applies under TCA s. 549). 6. For PPR claims — full timeline of occupation, any periods of letting or non-residential use, whether the property exceeded one acre, whether business use occurred. 7. For Entrepreneur Relief — proof of working director / employee role, 5%+ ordinary share capital, continuous holding for ≥ 3 years, qualifying trading activity. 8. For Retirement Relief — taxpayer age (≥ 55), ownership period (≥ 10 years), nature of disposal (third party vs family), aggregate prior Retirement Relief claims. 9. For shares — pooling / FIFO treatment under TCA s. 581 (Irish identification rules); rights issues, bonus issues, and corporate-action history. 10. Indexation — for assets acquired on or before 31 December 2002, the year of acquisition (indexation factor frozen at 2003 levels). 11. Prior-year losses — capital losses brought forward (capital losses ring-fenced from income). 12. CG50 status — for disposals > €500,000 of land/buildings/minerals, whether a CG50 clearance certificate has been obtained.  _(TCA s. 549)_
+- **Required inputs before computing Irish CGT.** Obtain:
+  1. Identity and residence: name, PPSN or tax reference, and whether the person is resident in Ireland.
+  2. Asset: its type (land, buildings, shares, business asset, crypto-asset, intangible, moveable property) and where it is.
+  3. Acquisition: date, price or market value, and the incidental costs (solicitor, auctioneer), with documents. For an inherited asset, the market value at the date of death.
+  4. Disposal: contract date, gross proceeds, and the incidental costs of disposal.
+  5. Recipient: spouse or civil partner, child, other relative, or unconnected buyer; whether it was a gift or a sale below value to help the buyer.
+  6. For a home: the full timeline of occupation, any letting, any business use, the land area, and whether the price includes development value.
+  7. For Entrepreneur Relief: the shareholding, ownership dates, the role and time spent in the company, the trading activity of the company and its group, and earlier qualifying gains since 1 January 2016.
+  8. For Retirement Relief: age at the disposal, ownership and working periods, whether the recipient is a child (as defined in Section 4.3), and earlier disposals that count towards the lifetime thresholds.
+  9. For shares: every purchase and sale date and quantity, including purchases in the four weeks before a sale and repurchases in the four weeks after.
+  10. For costs paid up to 31 December 2002: the year each cost was paid, for the indexation multiplier.
+  11. Losses brought forward, and for married couples or civil partners whether they are jointly assessed.
+  12. For a specified asset sold for more than the section 980 threshold: whether a CG50A has been obtained.
 
 ### Refusal catalogue
 
@@ -56,187 +158,266 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Trigger | Reason |
 | --- | --- |
-| Acquisition cost unknown or undocumented | Cannot compute chargeable gain; do not estimate without reviewer sign-off |
-| Asset acquired by gift / inheritance with no probate / CAT valuation | Need market-value documentation for base cost (TCA s. 547) |
-| Non-domiciled resident on remittance basis with foreign-asset gains | Remittance-basis CGT mechanics require specialist review |
-| Disposal of partnership interests | Partnership-CGT mechanics under TCA s. 1008 require specialist input |
-| Trust / settlement disposals | Specialist trust-CGT regime (TCA Part 19 Ch. 5) — out of scope |
-| Disposal of foreign life policies / offshore funds (taxable at 40%) | Specialist gross-roll-up regime — out of scope |
-| Reorganisations, mergers, or s. 615/s. 631 reconstructions | Specialist corporate-restructuring CGT reliefs — out of scope |
-| Cross-border disposal where double-tax-treaty relief may apply | Requires bilateral treaty analysis — out of scope |
-| Development land disposals (TCA s. 648 et seq.) | Specialist development-land CGT rules — out of scope |
-| PPR claimed but property was let, used as office, or exceeded 1 acre with garden | Apportionment required — escalate to reviewer |
-| Entrepreneur Relief claimed without complete 3-year holding evidence | Cannot confirm s. 597AA eligibility |
-| Retirement Relief where prior claims may exceed lifetime threshold | Aggregate threshold check required |
-| Disposal > €500,000 of land/buildings without CG50 clearance | Confirm 15% withholding mechanics before completing |
+| Acquisition cost unknown or undocumented | Cannot compute the chargeable gain. Do not estimate |
+| Asset acquired by gift or inheritance with no market value evidence | Base cost is market value; obtain a valuation first ([how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx)) |
+| Resident but not domiciled in Ireland, with gains on foreign assets | The remittance rules are not covered by this Guide. Refer |
+| Disposal of a partnership interest | Not covered. Refer |
+| Trust or estate disposals (Form 1) | Not covered. Refer |
+| Foreign life policies, foreign investment products, venture capital funds | Different rates and regimes. Refer |
+| Company reorganisations, mergers, reconstructions, share-for-share exchanges | Not covered. Refer |
+| Cross-border disposal where a double tax treaty or a foreign tax credit may apply | Treaty analysis needed. Refer |
+| Development land | Separate loss ring-fence and indexation rules. Refer |
+| Home claimed as PPR but let, partly used for business, more than one acre, or sold with development value | Apportionment required. Prepare it, then refer for sign-off |
+| Entrepreneur Relief claimed without evidence of the ownership and working periods | Cannot confirm section 597AA eligibility |
+| Retirement Relief where earlier disposals may have used the lifetime threshold | Aggregate the earlier disposals first |
+| Specified asset sold for more than the section 980 threshold with no CG50A | Confirm the 15% deduction before completion |
 
-## Section 3 — Tier 1 — chargeable persons, chargeable assets, computation
+## Section 3: Chargeable persons, chargeable assets, computation
 
-### 3.1 Chargeable persons (TCA s. 28, s. 29)
+### 3.1 Chargeable persons
 
-- **Chargeable persons** — CGT is charged on the chargeable gains accruing to: A resident or ordinarily resident individual — on worldwide chargeable assets, subject to the remittance basis where non-domiciled (gains on foreign assets taxed only on remittance to Ireland). A resident company — generally within the corporation tax framework, but disposals of certain assets (notably development land) remain within CGT. A non-resident person — on Irish-specified assets only: land and buildings in Ireland, mineral rights and exploration rights in the Irish State or Continental Shelf, unquoted shares deriving the greater part of their value from Irish land or mineral rights, and assets used for the purposes of a trade carried on in Ireland through a branch or agency.  _(TCA s. 28, s. 29)_
+- **Chargeable persons.** CGT is payable by the person making the disposal. Irish resident individuals are generally subject to CGT on gains arising on the disposal of assets ([Tax and Duty Manual Part 02-01-03](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf)). A non-resident individual pays CGT on gains on: land, buildings and minerals in Ireland; exploration or exploitation rights in the Irish continental shelf; unquoted shares deriving the greater part of their value from land, buildings or minerals in Ireland or from exploitation rights in the Irish continental shelf; and assets used for the purpose of a trade carried on in Ireland. A company normally includes its capital gains in its profits for Corporation Tax; a company's gain on development land is charged to CGT instead. Source: [CGT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx).
 
-### 3.2 Chargeable assets (TCA s. 532)
+### 3.2 Chargeable assets
 
-- **Chargeable assets** — All forms of property are chargeable assets, including: Land and buildings (Irish and foreign, for residents). Shares and securities of any company. Goodwill and other intangible business assets. Options, debts (subject to TCA s. 541), and incorporeal property. Currency other than the euro. Crypto-assets — Revenue treats crypto as a chargeable asset for CGT (no specific carve-out). Chattels — but with exemptions for tangible movable property sold for ≤ €2,540 (TCA s. 602) and for wasting chattels under TCA s. 603.  _(TCA s. 532)_
+- **Chargeable assets.** CGT is due on gains from the sale, gift or exchange of assets such as land (including development land), buildings, shares in Irish-resident or non-resident companies, goodwill, patents and copyright, currency other than Irish currency, assets of a trade, foreign life insurance policies and offshore funds, and capital payments in certain situations. Antiques, paintings and jewellery can also be chargeable. Compensation and insurance money for damage, destruction or loss of an asset may be a disposal; where the money is used to repair or replace the asset, the person may claim to defer the CGT (the claim is not automatic). Crypto-assets are listed by Revenue among the assets on which CGT arises. A jointly owned asset is taxed on the owner's share of the gain. Sources: [what do you pay CGT on](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-do-you-pay-cgt-on.aspx), [Tax and Duty Manual Part 02-01-03](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf).
+- **Exempt.** Betting, lottery wins, prize bonds, sweepstakes, bonuses under the National Instalments Savings Scheme, government stocks, certain life assurance policies, animals and private motor cars. Section 603 of the Taxes Consolidation Act 1997 as enacted provides that no chargeable gain accrues on tangible movable property that is a wasting asset, except an asset used solely for a trade or profession on which capital allowances were or could have been claimed ([section 603 as enacted](https://www.irishstatutebook.ie/eli/1997/act/39/section/603/enacted/en/html)). And moveable property (such as furniture) where the gain does not exceed EUR 2,540. Source: [what is exempt](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx). Revenue's page states this test as the gain. Section 602 of the Taxes Consolidation Act 1997 as enacted states it as the amount or value of the consideration for the disposal, and excludes a wasting asset ([section 602 as enacted](https://www.irishstatutebook.ie/eli/1997/act/39/section/602/enacted/en/html); the enacted text prints the 1997 amount in punts and does not prove the current figure). Where the sale price is above the figure in the table, refer.
 
 ### 3.3 Computation formula
 
-- **Chargeable gain computation formula** — Chargeable gain = Disposal proceeds − Incidental costs of disposal − (Allowable acquisition cost + Incidental costs of acquisition + Enhancement expenditure). Where indexation applies (pre-2003 acquisitions only), the acquisition cost and enhancement expenditure incurred up to 31 December 2002 are multiplied by the relevant statutory indexation factor frozen at 2003 levels. Annual CGT computation: 1. Compute the chargeable gain on each disposal in the tax year. 2. Aggregate gains; deduct allowable losses (current-year first, then losses brought forward). 3. Deduct the annual exemption of €1,270 (non-transferable between spouses). 4. Apply the 33% rate (or 10% Entrepreneur Relief rate on qualifying portion).
+- **Chargeable gain computation formula.** Chargeable gain = proceeds (or market value) less the purchase price (or market value at acquisition) less allowable expenses. Where indexation applies, each cost paid up to 31 December 2002 is multiplied by the multiplier for the year it was paid. Annual computation, per [how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx):
+  1. Compute the chargeable gain on each disposal in the tax year.
+  2. Add the gains together and deduct allowable losses.
+  3. Deduct the personal exemption of EUR 1,270 (individuals only) and any other exemptions or reliefs.
+  4. Multiply the taxable gain by the rate: 33%, or 10% on the part that qualifies for Revised Entrepreneur Relief.
 
-### 3.4 Allowable deductions (TCA s. 552)
+### 3.4 Allowable deductions (section 552)
 
-- **Allowable deductions** — Original acquisition cost. Incidental costs of acquisition (solicitor's fees, stamp duty, surveyor, auctioneer). Enhancement expenditure reflected in the state of the asset at disposal — routine repairs and revenue expenditure are NOT allowable. Incidental costs of disposal (solicitor, auctioneer, advertising, valuation). Costs of establishing, preserving, or defending title to the asset.  _(TCA s. 552)_
+- **Allowable deductions.** The purchase price; money spent that adds value to the asset (enhancement expenditure); and costs such as solicitor's or auctioneer's fees paid when acquiring and disposing of the asset. Source: [how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx). Routine repairs that do not add value are not enhancement expenditure; treat them as not deductible (Section 7).
 
-### 3.5 Connected persons rule (TCA s. 549)
+### 3.5 Market value, spouses and death
 
-- **Connected persons market value rule** — Where the disposal is between connected persons (spouses, relatives, group companies, partners), the transaction is deemed to be at market value, regardless of the stated consideration. Spousal transfers in particular are normally on a no-gain/no-loss basis (TCA s. 1028) provided both spouses are resident.  _(TCA s. 549; TCA s. 1028)_
+- **When market value replaces the price.** Use market value where the asset was a gift to someone other than a spouse or civil partner; where it was sold for less than its worth to help the buyer; where it was inherited and is now being disposed of; or where it was bought before 6 April 1974. Source: [how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx).
+- **Spouses and civil partners.** A gain on a transfer between spouses or civil partners is usually exempt, including divorced spouses and separated or former civil partners. The exemption does not apply to: trading stock of the transferor's business; a transfer to a spouse or civil partner who is non-resident and not liable to CGT; or a transfer to a former spouse or civil partner that is not covered by a court order. Source: [what is exempt](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx).
+- **Inherited assets.** In general there is no CGT on an asset transferred on death. A person who inherits an asset is treated as owning it from the date of death, at a cost equal to the market value at that date. A personal representative who sells during the administration period may owe CGT. Source: [CGT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx).
 
-### 3.6 Capital losses (TCA s. 31, s. 546)
+### 3.6 Capital losses (section 546)
 
-- **Capital losses treatment** — Capital losses are ring-fenced — they may be set against current-year capital gains only, not against income. Losses unused in the current year may be carried forward indefinitely against future capital gains of the same person. Losses on disposals to connected persons are clogged — usable only against future gains on disposals to that same connected person. Losses cannot be carried back, except on death (TCA s. 573).  _(TCA s. 31, s. 546, s. 573)_
+- **Capital losses treatment.** An allowable loss is deducted from chargeable gains of the same tax year, subject to certain exceptions. Losses that cannot be used are carried forward against the next available gains in later years. Losses cannot be set against gains of earlier years, except losses made in the year of death, which can be deducted from the deceased's gains for the previous three years. A development land loss can be deducted from any chargeable gain, but a gain on development land can be reduced only by development land losses. Source: [if you make a loss](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx).
+- **Spouses and civil partners.** Where a couple is jointly assessed for CGT, one partner's allowable losses are automatically set against the other's chargeable gains, unless the partner applies to keep their own loss on or before 1 April of the following year. Source: [if you make a loss](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx).
 
-## Section 4 — Tier 2 — PPR exemption, Entrepreneur Relief, Retirement Relief, indexation, losses
+### 3.7 Shares: which shares were sold
 
-### 4.1 Principal Private Residence (PPR) relief (TCA s. 604)
+- **Share identification.** Where only some shares of a holding are sold, the oldest shares are treated as sold first (first in, first out). Where shares are sold within four weeks of a purchase, the shares sold are treated as those bought in the four weeks before (last in, first out); any excess over those purchases follows first in, first out. Where shares are sold and repurchased within four weeks, a loss on the sale can only be set against a gain on a later disposal of the repurchased shares. Source: [selling or disposing of shares](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/selling-or-disposing-of-shares.aspx).
 
-- **PPR relief full exemption and apportionment** — Full CGT exemption on the disposal of an individual's sole or main residence (including a garden / grounds up to one acre, excluding the site of the house) where the property has been occupied as the only or main residence throughout the period of ownership. Apportionment. Where the property was not occupied as the PPR throughout ownership, the gain is apportioned as follows: Exempt gain = Total gain × (Period of qualifying occupation + Final 12 months) / Total period of ownership. The last 12 months of ownership are always treated as qualifying occupation, provided the property has been the PPR at some point. Permitted absences that count as qualifying occupation: Any period(s) of absence totalling up to 3 years for any reason. Any period(s) of employment abroad (no time limit). Any period(s) of absence up to 4 years due to work elsewhere in Ireland. Restrictions to PPR: Garden / grounds in excess of one acre — apportionment required. Periods where the property was let (other than rent-a-room qualifying letting) — non-qualifying. Business use of part of the property — apportionment required. Acquired or developed wholly or partly for the purpose of realising a gain — relief may be denied.  _(TCA s. 604)_
+## Section 4: Reliefs: PPR, Entrepreneur Relief, Retirement Relief, indexation, losses
 
-### 4.2 Entrepreneur Relief — Section 597AA TCA 1997
+### 4.1 Principal Private Residence (PPR) relief (section 604)
 
-- **Entrepreneur Relief rate and conditions** — A reduced CGT rate of 10% applies on qualifying disposals of business assets, subject to a lifetime limit of €1,000,000 (raised from €500,000 by Finance Act 2016, effective 1 January 2017). Qualifying conditions: Individual disposing of chargeable business assets. For shares: must own ≥ 5% of the ordinary share capital of the qualifying company. Held for a continuous period of at least 3 years ending on the disposal date. Individual must have been a working director or employee (devoting ≥ 50% of working time) for the 3 years. Qualifying business must be a trading company (not investment, dealing in shares, dealing in land/development, certain professional services). Mechanics: Gain on the qualifying disposal is charged at 10% up to the cumulative €1M lifetime cap; the excess (and any non-qualifying disposals) is charged at the standard 33% rate.  _(TCA 1997 s. 597AA)_
+- **PPR relief, full exemption and restrictions.** A house or apartment owned and occupied as the only or main residence is exempt from CGT if, for the entire period of ownership, the owner lived in it as the main residence AND used all of it as the home. The exemption also covers land up to one acre (0.405 hectares) around the house, not counting the site of the house. The last 12 months of ownership count as occupation. Source: [PPR Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/principal-private-residence-ppr-relief.aspx).
+  - **Part business use.** Relief applies only to the part used as the home. Rent a Room Relief does not affect a claim for full exemption.
+  - **Not always lived in.** Relief applies only to the time the owner lived in the property, plus the last 12 months. Revenue's example apportions the gain by the years of qualifying occupation (including the last 12 months) over the whole period of ownership; Example B below uses months in the same way.
+  - **Absences treated as living there.** Only these: the employer required the owner to live elsewhere (up to a four-year maximum); the owner had a job all of whose duties were performed outside the State; or the property stayed unoccupied while the owner was receiving care in a hospital, nursing home or convalescent home, or was resident in a fee-paying retirement home.
+  - **Development value.** Relief applies only to the value without development value; Revenue computes a notional gain on current use value first. Refer these cases.
 
-### 4.3 Retirement Relief — Sections 598 & 599 TCA 1997
+### 4.2 Revised Entrepreneur Relief (section 597AA)
 
-- **Retirement Relief conditions and strands** — Despite the name, the taxpayer does not need to retire — the relief applies on disposals of qualifying business or farming assets by individuals aged 55 or over. Common conditions: Individual aged ≥ 55 at the date of disposal. Disposal of qualifying business assets or shares in a qualifying family company where the individual was a working director for ≥ 10 years (and full-time working director for ≥ 5 years). The assets / shares must have been owned for ≥ 10 years. For farms, the land must have been owned and farmed for ≥ 10 years. Two strands: TCA s. 598 — disposals to third parties (outside the family): Full relief where aggregate consideration ≤ €750,000 (reduced to €500,000 if the individual is aged 66 or over). Marginal relief tapered above the threshold. TCA s. 599 — disposals to a child (or qualifying nephew/niece): Full relief on transfers to a child where the disponer is aged 55–65, with no upper consideration limit historically, BUT a cap of €3M applies where the disponer is aged 66 or over (Finance Act 2014). "Child" includes a foster child meeting statutory conditions, and certain nephews/nieces working in the business. Clawback of relief may arise where the child disposes of the asset within 6 years.  _(TCA 1997 s. 598, s. 599; Finance Act 2014)_
+- **Entrepreneur Relief rate and conditions.** The rate on gains from chargeable business assets is 10% instead of 33%, up to a lifetime limit of gains. The limit is EUR 1,000,000 for gains arising from 1 January 2016 to 31 December 2025, and EUR 1,500,000 for gains arising on or after 1 January 2026. To test the limit, add together all earlier gains on qualifying disposals made on or after 1 January 2016. Gains above the limit are charged at 33%. Source: [Revised Entrepreneur Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx).
+  - **Qualifying assets.** Shares held by an individual in a trading company or in a holding company of a qualifying group, OR assets owned by a sole trader and used in their trade.
+  - **Qualifying business.** Any business other than holding securities or other assets as investments, holding development land, or developing or letting land. Where the business is in a group, every 51% subsidiary must operate a qualifying business; a dormant company or a non-trading subsidiary in the group stops the relief.
+  - **Ownership.** The business assets must have been owned for a continuous three years within the five years immediately before the disposal. For shares, the individual must have owned at least 5% of the ordinary shares for a continuous three years, which can be at any time before the disposal.
+  - **Work.** Where the business is operated by a company, the individual must have been a director or employee who spent no less than 50% of their time in the service of the company (or group companies) in a managerial or technical capacity, for a continuous three years within the five years immediately before the disposal.
+  - **Excluded disposals.** Shares, securities or other assets held as investments; development land; assets on which no chargeable gain would arise; assets personally owned outside the company even if the company uses them; goodwill disposed of to a connected company; and shares where the individual remains connected with the company after the disposal. For the last two, the relief may still apply if the disposal is for genuine commercial reasons and not for tax avoidance.
 
-### 4.4 Indexation relief (TCA s. 556) — largely abolished
+### 4.3 Retirement Relief (sections 598 and 599)
 
-- **Indexation relief mechanics** — Indexation relief allows the acquisition cost (and pre-2003 enhancement expenditure) of an asset to be uplifted by reference to inflation between the year of acquisition and the year of disposal. Key restrictions: Indexation is frozen at 2003 values. No indexation factor accrues for any period after 31 December 2002. For assets acquired on or after 1 January 2003, no indexation is available. For assets acquired on or before 31 December 2002, the indexation factor is the statutory multiplier published by Revenue for the year of acquisition, applied to the cost and to any enhancement expenditure incurred up to 31 December 2002. Practical consequence: indexation is encountered only on legacy holdings (typically pre-2003 property or shares).  _(TCA s. 556)_
+- **Retirement Relief conditions and strands.** The owner does not need to retire. The relief is available to an individual aged 55 or older disposing of any part of their business or farming assets. Someone younger than 55 can qualify only if ALL of these hold: they cannot continue the business or farm because of ill health (with medical evidence), they reach 55 within 12 months of the disposal, and every other condition is met. Source: [Retirement Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx).
+  - **Ownership and work periods.** Qualifying assets include chargeable business assets (other than tangible movable property) owned for at least 10 years ending on the date of disposal, and shares in the individual's family company held for at least 10 years ending with the disposal where the individual has been a working director for at least 10 years, of which at least 5 years as a full-time working director. Farm land has its own letting conditions. Source: [Tax and Duty Manual Part 19-06-03](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-19/19-06-03.pdf).
+  - **Who is a "child".** A son or daughter, stepchild or child of a civil partner, an adopted child, a child of a deceased child, a niece or nephew who has worked full time in the business or farm for at least five years up to the disposal, or a foster child maintained for at least five years before age 18 (with testimony of more than one witness).
+  - **Transfer to a child (section 599), on or after 1 January 2025.** Aged 55 to 69: relief is restricted to EUR 10 million. Aged 70 or older: relief is restricted to EUR 3 million. The value transferred to a child is aggregated across transfers (Revenue's example aggregates two transfers to the same son). For transfers from 1 January 2014 to 31 December 2024 the split was at 66, with EUR 3 million for those aged 66 or older.
+  - **Clawback and deferral (child).** If the child disposes of the asset within six years, the relief is clawed back: the child pays the CGT on the parent's disposal as well as on their own. Where a transfer to a child on or after 1 January 2025 by someone aged 55 or older exceeds the EUR 10 million limit, the parent may defer the CGT on the excess by claiming deferral on the return for the year of transfer. The deferred CGT crystallises if the child disposes of the assets within 12 years of the transfer.
+  - **Disposal outside the family (section 598), on or after 1 January 2025.** Full relief where the market value at the time of disposal does not exceed EUR 750,000 (aged 55 to 69) or EUR 500,000 (aged at least 70). These are lifetime limits: earlier disposals of the business or farm count. Above the threshold, marginal relief may limit the CGT to half the difference between the sale price or market value and the threshold. For disposals from 1 January 2014 to 31 December 2024 the age split was at 66.
 
-### 4.5 Losses (TCA s. 31, s. 546, s. 573)
+### 4.4 Indexation relief (section 556)
 
-- **Losses treatment detail** — Current-year losses set against current-year gains before the annual exemption. Unused losses carried forward indefinitely. Losses on disposals to connected persons clogged. Losses on the disposal of development land restricted (development-land regime). Losses on death — unused losses cannot be transferred to the estate, but losses incurred in the year of death may be carried back up to 3 years (TCA s. 573).  _(TCA s. 31, s. 546, s. 573)_
+- **Indexation relief mechanics.** Indexation applies only to costs paid up to 31 December 2002, while the person owned the asset. Each such cost (the purchase price or market value on acquisition, acquisition costs, enhancement costs) is multiplied by the multiplier for the year it was paid. Costs paid in 2003 or later are not indexed. For a date before 6 April 1974, use the multiplier for 1974/5. For development land, only the current use value at acquisition is indexed; the development value is allowable but not indexed. Source: [Indexation Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/inflation-relief.aspx). Take the multipliers from Revenue's published CGT multiplier table.
+
+### 4.5 Losses
+
+- **Losses treatment detail.** See Section 3.6 for same-year use, carry-forward, the year-of-death carry-back, the development land ring-fence and spouse transfers, and Section 3.7 for the four-week repurchase restriction on shares. A loss with no gains in the same year does not need to go on that year's return; deduct it on the return for the next year with a chargeable gain. Source: [if you make a loss](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx).
 
 ### 4.6 Other reliefs in scope
 
-- **Other reliefs list** — Annual exemption — €1,270 per individual per tax year, non-transferable between spouses. Spousal transfer — no gain / no loss (TCA s. 1028). Disposal of a site to a child for the construction of the child's PPR — exempt up to market value of €500,000 (TCA s. 603A). Wasting chattels (life ≤ 50 years) — exempt under TCA s. 603 (subject to business-use carve-out). Government securities, certain life policies, certain pension lump sums — exempt.  _(TCA s. 1028, s. 603A, s. 603)_
+- **Other reliefs list.**
+  - Personal exemption: EUR 1,270 per individual per tax year, not transferable to a spouse or civil partner (Section 3.3).
+  - Spouses and civil partners: transfers usually exempt, with the exceptions in Section 3.5.
+  - Site to a child (section 603A): no CGT on a transfer of land to a child to build the child's only or main residence, where the land is one acre or less AND worth EUR 500,000 or less. A transfer includes a joint transfer by the parent and their spouse or civil partner to the child. The child may have to pay the CGT if they dispose of the land without building a house on it, or without living in the house as their only or main residence for at least three years; this clawback does not apply to a disposal to the child's spouse or civil partner. Source: [site to a child](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/transfer-of-a-site-from-a-parent-to-a-child.aspx).
+  - Exempt assets: Section 3.2.
 
-### 4.7 CG50 clearance — TCA s. 980
+### 4.7 CG50A clearance (section 980)
 
-- **CG50 withholding mechanics** — Where the consideration on a disposal exceeds €500,000 for land, buildings, mineral rights, exploration rights, unquoted shares deriving the greater part of their value from Irish land/minerals, or goodwill of a trade in Ireland, the purchaser is obliged to withhold 15% of the consideration and remit it to Revenue on account of the vendor's CGT liability — UNLESS the vendor produces a CG50A clearance certificate. For disposals of residential property, the threshold is €1,000,000 (TCA s. 980(8)). A CG50A is issued by Revenue on application (Form CG50) by the vendor where the vendor is either Irish-resident, has no outstanding CGT liability, or has paid (or made arrangements to pay) the CGT on the disposal. Without the CG50A, the buyer's withheld 15% is credited against the vendor's final CGT bill — but creates a cashflow drag and reflects poorly on conveyancing practice.  _(TCA s. 980, s. 980(8))_
+- **CG50A withholding mechanics.** Section 980 applies where the consideration for a specified asset exceeds EUR 500,000, or EUR 1,000,000 if the asset is a house or apartment. A house includes an apartment. The specified assets are: land in the State; minerals in the State and related rights; exploration or exploitation rights in the Continental Shelf; shares (other than shares quoted on a stock exchange) deriving their value or the greater part of it from those assets; shares received in exchange for such shares; and goodwill of a trade carried on in the State. Source: [Tax and Duty Manual Part 42-03-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf).
+  - To get a CG50A the vendor must meet at least one of these: be resident in Ireland, OR have paid the CGT on the disposal (if it is due). Apply online in myAccount or ROS through the Capital Gains Clearance (eCG50) facility; a paper Form CG50 is still accepted from people who cannot apply online.
+  - Without a CG50A, the purchaser must withhold 15% of the purchase price and gives the vendor a Form CG50B, which lets the vendor reclaim the amount from Revenue later.
+  - Source: [CG50A](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/cgt-clearance-certificate-cg50a.aspx).
 
-## Section 5 — Worked examples
+## Section 5: Worked examples
 
-### Example A — Disposal of Euronext Dublin (ISEQ) listed shares
+All amounts in these examples are hypothetical and in EUR. The rates and exemption come from the tables in Section 1.
 
-Facts. Mr Ó Briain, an Irish resident individual, disposed of 5,000 shares in an Irish PLC listed on Euronext Dublin on 12 May 2025. He had acquired them in two tranches: 3,000 shares in June 2018 for €18,000 and 2,000 shares in February 2021 for €22,000. Proceeds on disposal were €75,000 (broker net of commission). No other share disposals during 2025. No capital losses brought forward. FIFO identification (TCA s. 581): the 3,000 June 2018 shares are deemed disposed of first, then 2,000 of the February 2021 holding. No indexation (post-2003 acquisitions). Mr Ó Briain reports the disposal on Form CG1 (or via Form 11 if otherwise self-assessed).
+### Example A: Disposal of shares listed on Euronext Dublin
+
+Facts (hypothetical). Mr Ó Briain, an Irish resident individual, sells 5,000 shares in an Irish listed company on 12 May 2026. He bought 3,000 in June 2018 for 18,000 and 2,000 in February 2021 for 22,000. Proceeds after broker commission are 75,000. He has no other disposals in 2026, no purchases in the four weeks before the sale, and no losses brought forward. First in, first out identifies the 3,000 June 2018 shares first, then the 2,000 February 2021 shares ([selling shares](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/selling-or-disposing-of-shares.aspx)). No indexation (costs paid after 2002). The disposal is in the initial period, so he pays by 15 December 2026 and files by 31 October 2027.
 
 **Example A computation table**
 
-| Line item | Amount (€) |
+| Line item | Amount (hypothetical, EUR) |
 | --- | --- |
 | Disposal proceeds | 75,000 |
-| Less: Cost of 3,000 shares (June 2018) | (18,000) |
-| Less: Cost of 2,000 shares (Feb 2021) | (22,000) |
-| **Chargeable gain (gross)** | **35,000** |
-| Less: Annual exemption | (1,270) |
-| **Taxable amount** | **33,730** |
-| CGT at 33% | **11,131** |
+| Less: cost of 3,000 shares (June 2018) | (18,000) |
+| Less: cost of 2,000 shares (February 2021) | (22,000) |
+| **Chargeable gain** | **35,000** |
+| Less: personal exemption | (1,270) |
+| **Taxable gain** | **33,730** |
+| CGT at 33% | **11,130.90** |
 
-### Example B — Sale of family home with periods of letting (PPR partial)
+### Example B: Sale of a former home that was later let (PPR partial)
 
-Facts. Ms Ní Mhurchú purchased her family home in Galway in January 2008 for €280,000 (plus €5,000 incidental costs). She lived there as her PPR until December 2018. From January 2019 to December 2023 she let the property while working in Dublin (she rented a flat there). She moved back to the Galway property in January 2024 and sold it on 30 November 2025 for €490,000 (€10,000 incidental costs of disposal). Apportionment of qualifying months: PPR occupation: 132 + 23 = 155 months. Plus permitted absence (work elsewhere in Ireland, up to 4 years): 48 months. Plus final 12 months (already included within the qualifying-occupation count for the closing period — DO NOT double count). Total qualifying months: 155 + 48 = 203 months. Non-qualifying months: 215 − 203 = 12 months. The disposal of €490,000 is below the €1,000,000 CG50 threshold for residential property, so no CG50 clearance / 15% withholding applies.
-
-**Example B period table**
-
-| Period | Months | Treatment |
-| --- | --- | --- |
-| Jan 2008 – Dec 2018 | 132 | PPR — qualifying |
-| Jan 2019 – Dec 2023 | 60 | Let — non-qualifying (4-year work-elsewhere-in-Ireland absence relief covers 48 months; final 12 months count as final-period; net non-qualifying = 60 − 48 = 12 months, then offset by the always-qualifying final-12-months at the end of ownership — but the final-12-months rule applies only to the LAST 12 months of ownership) |
-| Jan 2024 – Nov 2025 | 23 | PPR — qualifying |
-| **Total ownership** | **215** |  |
+Facts (hypothetical). Ms Ní Mhurchú bought a house in Galway in January 2012 for 300,000 including purchase costs. She lived in it as her only home until December 2021 (120 months). From January 2022 she let it and lived elsewhere by choice, with no absence that Revenue treats as living there. She signed the sale contract in December 2026 for 520,000, with 8,000 of sale costs. Ownership is 180 months. Qualifying months are 120 of occupation plus the last 12 months of ownership, so 132 of 180 are exempt and 48 of 180 are chargeable ([PPR Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/principal-private-residence-ppr-relief.aspx)). The contract date is in December, the later period, so she pays by 31 January 2027 and files by 31 October 2027. The price is below the section 980 threshold for a house, so no CG50A is needed.
 
 **Example B computation table**
 
-| Line item | Amount (€) |
+| Line item | Amount (hypothetical, EUR) |
 | --- | --- |
-| Disposal proceeds | 490,000 |
-| Less: Incidental costs of disposal | (10,000) |
-| Less: Acquisition cost + incidental | (285,000) |
-| **Total gain** | **195,000** |
-| Apportioned non-qualifying (195,000 × 12/215) | 10,884 |
-| Less: Annual exemption | (1,270) |
-| **Taxable amount** | **9,614** |
-| CGT at 33% | **3,173** |
+| Disposal proceeds | 520,000 |
+| Less: incidental costs of disposal | (8,000) |
+| Less: purchase price and costs | (300,000) |
+| **Total gain** | **212,000** |
+| Chargeable part (212,000 × 48 ÷ 180) | 56,533.33 |
+| Less: personal exemption | (1,270) |
+| **Taxable gain** | **55,263.33** |
+| CGT at 33% | **18,236.90** |
 
-### Example C — Entrepreneur disposal of trading company shares
+### Example C: Entrepreneur disposal of trading company shares in 2026
 
-Facts. Ms de Paor, aged 47, founded an Irish trading company in 2018 and held 100% of the ordinary share capital. She was a full-time working director throughout. On 1 October 2025 she sold 100% of the shares to an unrelated third party for €1,400,000. Her acquisition cost (initial subscription) was €10,000. She has not previously claimed Entrepreneur Relief. Eligibility check (TCA s. 597AA): Holding period > 3 years ✔. ≥ 5% ordinary share capital ✔. Working director devoting ≥ 50% of working time for ≥ 3 years ✔. Qualifying trading company (not investment / dealing in land) ✔. Lifetime cap not previously used ✔. The disposal exceeds €500,000 (and the asset is unquoted shares of an Irish company deriving value other than primarily from Irish land — confirm whether s. 980 catches this transaction). In practice, where shares derive their value primarily from a Nigerian or other non-land asset, the CG50 regime may not apply. Where the value derives substantially from Irish land/minerals, a CG50A clearance certificate should be obtained.
+Facts (hypothetical). Ms de Paor founded an Irish trading company in 2018 and has held all of its ordinary shares since then. She has worked full time as a director throughout, and the company has no subsidiaries. On 1 October 2026 she sells all the shares to an unrelated buyer for 2,010,000, keeps no connection with the company, and has made no earlier qualifying disposals. Her cost was 10,000. The gain arises in 2026, so the lifetime limit is the 2026 figure in the Entrepreneur Relief table ([Revised Entrepreneur Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx)). The shares are unquoted; section 980 catches them only if they derive the greater part of their value from Irish land, minerals or Continental Shelf rights, so confirm what the company owns before completion.
 
 **Example C computation table**
 
-| Line item | Amount (€) |
+| Line item | Amount (hypothetical, EUR) |
 | --- | --- |
-| Disposal proceeds | 1,400,000 |
-| Less: Acquisition cost | (10,000) |
-| **Chargeable gain (gross)** | **1,390,000** |
-| Less: Annual exemption | (1,270) |
-| **Net chargeable gain** | **1,388,730** |
-| Qualifying portion (within €1M Entrepreneur Relief lifetime cap) | 1,000,000 |
-| CGT at 10% on qualifying portion | **100,000** |
-| Excess portion (over €1M cap) | 388,730 |
-| CGT at 33% on excess | **128,281** |
-| **Total CGT** | **228,281** |
+| Disposal proceeds | 2,010,000 |
+| Less: acquisition cost | (10,000) |
+| **Chargeable gain** | **2,000,000** |
+| Qualifying part, within the 2026 lifetime limit | 1,500,000 |
+| CGT at 10% on the qualifying part | **150,000** |
+| Excess over the lifetime limit | 500,000 |
+| Less: personal exemption, set against the excess | (1,270) |
+| Excess after exemption | 498,730 |
+| CGT at 33% on the excess | **164,580.90** |
+| **Total CGT** | **314,580.90** |
 
-## Section 6 — Filing & payment
+The Revenue page does not say which part of the gain the personal exemption reduces. This Guide's choice, not Revenue's: this example sets it against the part taxed at 33%. Confirm with the adopting accountant.
 
-### 6.1 Returns — Form CG1 vs Form 11 / 11S
+### Example D: Retirement Relief, sale outside the family with marginal relief
 
-- **Return form usage and filing deadline** — Form CG1 is the standalone CGT return used by taxpayers who are NOT otherwise within the self-assessment ("chargeable persons") regime. It is filed annually for each tax year in which a disposal arose. Form 11 / Form 11S — self-employed individuals (sole traders, professionals, company directors filing as chargeable persons) include their CGT computation within the annual Form 11 self-assessment return. Both forms are filed via the Revenue Online Service (ROS) under the mandatory e-filing regime. Filing deadline for the annual return: 31 October following the end of the tax year (with the ROS pay-and-file extension typically to mid-November for ROS users — confirm Revenue's published extended date each year).
+Facts (hypothetical). Mr Ó Sé, aged 60, has owned and run his business for more than 10 years. In March 2026 he sells it to an unrelated buyer for its market value of 900,000. His cost was 200,000 and he has made no earlier disposals of the business. The market value exceeds the threshold for his age in the Retirement Relief table, so full relief is not available, but marginal relief may limit the CGT to half the excess over the threshold ([Retirement Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx)).
 
-### 6.2 Preliminary CGT — pay-and-file under TCA s. 959AO
+**Example D computation table**
 
-- **Two-stage preliminary CGT payment model** — CGT operates a unique two-stage payment model: Initial period — disposals between 1 January and 30 November of the tax year: preliminary CGT is due by 15 December of the same tax year. Later period — disposals between 1 December and 31 December of the tax year: preliminary CGT is due by 31 January of the following year. Any balance of CGT (after preliminary payments) is due with the annual return by 31 October of the year following the tax year. This is unusual relative to other Irish taxes: CGT must be paid largely within the tax year itself, even before the annual return is filed.  _(TCA s. 959AO)_
+| Line item | Amount (hypothetical, EUR) |
+| --- | --- |
+| Chargeable gain (900,000 less 200,000) | 700,000 |
+| Less: personal exemption | (1,270) |
+| CGT at 33% without relief | 230,580.90 |
+| Marginal relief limit: half of (900,000 less 750,000) | **75,000** |
+| **CGT due (the lower amount)** | **75,000** |
 
-### 6.3 ROS filing & PPSN
+## Section 6: Filing and payment
 
-- **ROS filing and payment methods** — All Irish-resident individual taxpayers should have a PPSN and a ROS account. Form CG1 and Form 11 are filed electronically via ROS (myAccount route for PAYE-only taxpayers with simple disposals; ROS for full self-assessment). Payment via ROS Debit Instruction (RDI), credit card, or single-debit authority.
+### 6.1 Returns
 
-### 6.4 CG50 / CG50A mechanics
+- **Return form usage and filing deadline.** File the CGT return on or before 31 October of the year that follows the date of disposal, even if no tax is due because of reliefs or allowable losses. For 2026 disposals that is 31 October 2027. The return depends on the person ([pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)):
+  - Form CG1: for someone who does not usually submit annual tax returns or use the online Form 12. It is available only on paper.
+  - Form 12 (paper): for a PAYE taxpayer who must submit a tax return. CGT cannot be reported on the online eForm 12.
+  - Form 11: for someone self-employed or with income not taxed under PAYE. File it on ROS.
+  - Form 1 for a trust or estate, and Form CT1 for a company. Out of scope.
+  - The return shows the assets disposed of, the amount received, reliefs claimed, losses brought forward, the chargeable gain or loss, the taxable gain and rate, and the CGT already paid.
+- **ROS extension.** Revenue eBrief 034/26 extends the ROS date to 18 November 2026 for 2025 Form 11 returns, for the income tax balance for 2025 and preliminary tax for 2026, and for certain CAT returns. It does not mention CGT. The extension applies only where both the return and the payment go through ROS. Do not move a CGT payment date on the strength of it. [eBrief 034/26](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx)
 
-- **CG50/CG50A process detail** — On any in-scope disposal > €500,000 (land/buildings/mineral rights/relevant shares/goodwill) — or > €1,000,000 for residential property: Vendor applies for CG50A clearance via Form CG50, lodged with Revenue's CGT clearance unit before completion. If granted, no 15% withholding is required from the buyer. If not produced, the buyer must withhold 15% of the consideration and remit it to Revenue using Form CG50B; the withholding is credited against the vendor's eventual CGT liability.
+### 6.2 Payment dates by disposal date
 
-### 6.5 Records & retention
+- **Two payment periods.** For disposals made 1 January to 30 November (the initial period), pay the CGT by 15 December of the same year. For disposals made 1 December to 31 December (the later period), pay by 31 January of the next year. The tax is paid before the return is filed; the return then shows the amount already paid. A late payment incurs interest and a late return incurs a penalty. Source: [pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx).
 
-- **Record retention requirements** — Retain acquisition contracts, valuation evidence, brokerage notes, disposal contracts, and CG50 documentation for 6 years from the end of the relevant tax year (general Revenue record-retention rule — TCA s. 886). For PPR claims, retain evidence of dates of occupation (utility bills, register of electors, correspondence) for the full ownership period.  _(TCA s. 886)_
+### 6.3 Registration and payment channels
 
-## Section 7 — Conservative defaults
+- **ROS and myAccount.** Someone not registered for CGT must register (in myAccount or ROS, using the tax registration number or PPSN) and pay online through ROS or myAccount. Someone exempt from mandatory e-filing can instead email the Collector-General's Payment Accounting section or send payment with CGT Payslip A (initial period) or CGT Payslip B (later period). Source: [pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx).
+
+### 6.4 CG50A mechanics
+
+- **CG50A process detail.** See Section 4.7. Apply through the eCG50 facility in myAccount or ROS before completion. If no CG50A is produced, the purchaser withholds 15% and issues Form CG50B; the vendor reclaims the amount from Revenue. Source: [CG50A](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/cgt-clearance-certificate-cg50a.aspx).
+
+### 6.5 Records
+
+- **Record keeping.** Keep the purchase and sale contracts, valuations, broker notes, cost invoices, CG50A or CG50B documents, and for a PPR claim the evidence of the dates of occupation for the whole period of ownership. This Guide does not state a retention period; confirm it with the adopting accountant.
+
+## Section 7: Conservative defaults
 
 **Conservative defaults table**
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown acquisition cost | STOP — cannot compute gain |
-| Acquisition by gift or inheritance with no probate / CAT valuation | Obtain probate / market valuation; if unavailable, STOP |
-| PPR claimed but property had periods of letting beyond rent-a-room | Apportion conservatively; assume non-qualifying for the let period |
-| Garden / grounds > 1 acre | Apportion proportionally; restrict PPR to one-acre site |
-| Unclear whether Entrepreneur Relief 5% / 3-year / working-director conditions are met | Assume conditions not met → 33% standard rate |
-| Unknown whether prior Retirement Relief lifetime threshold breached | Assume threshold partly used → restrict relief conservatively, request prior claim history |
-| Indexation factor for pre-2003 acquisition unclear | Use Revenue's published indexation table for the year of acquisition; if year unclear, STOP |
-| Unknown whether parties are connected | Treat as connected → apply market value rule |
-| Routine repair vs enhancement expenditure ambiguous | Treat as routine repair → NOT deductible |
-| Crypto disposal with multiple lots and pooling unclear | Apply FIFO under TCA s. 581 pooling rules; document the share-identification trail |
-| Disposal > €500,000 land/buildings without CG50A | Assume buyer must withhold 15%; advise vendor to apply for CG50A immediately |
-| Preliminary CGT payment date borderline (e.g. completion late November vs early December) | Confirm exact disposal date (date of unconditional contract, not completion, under TCA s. 542); err toward earlier payment window |
-| Non-resident disposing of an Irish-situs asset | Confirm whether asset falls within s. 29 specified assets; if not specified, assume out of charge but flag for review |
-| Cross-border disposal with possible treaty relief | STOP — refer to specialist treaty review |
-| Spousal transfer where one spouse is non-resident | Spousal no-gain/no-loss rule may not apply; refer to specialist |
-| Loss on disposal to connected person | Treat as clogged; usable only against future gains on disposal to same person |
+| Unknown acquisition cost | STOP. Cannot compute the gain |
+| Acquired by gift or inheritance with no market valuation | Obtain a market valuation; if none is available, STOP |
+| Home let for part of the ownership | Treat the let months as not qualifying unless an absence in Section 4.1 covers them |
+| Land around the home over one acre | Restrict PPR to one acre and refer the apportionment |
+| Unclear whether Entrepreneur Relief ownership, holding or working-time conditions are met | Assume not met; use 33% |
+| Unknown earlier Entrepreneur Relief or Retirement Relief claims | Assume the limit is partly used; request the history before claiming |
+| Indexation year unclear for a cost paid before 2003 | Use Revenue's multiplier table for the year of payment; if the year is unknown, STOP |
+| Unknown whether the buyer is connected or paid full value | Use market value and refer |
+| Repair or enhancement expenditure unclear | Treat as a repair, not deductible |
+| Crypto-asset or share disposals with many lots | Identify shares first in, first out with the four-week rule in Section 3.7; for crypto-assets, document the lot trail and refer the identification method |
+| Specified asset sold above the section 980 threshold with no CG50A | Assume the buyer withholds 15%; advise the vendor to apply for a CG50A at once |
+| Disposal near the 30 November or 31 December boundary | Confirm the contract date; err toward the earlier payment date |
+| Non-resident disposing of an asset in Ireland | Check it is on the Section 3.1 list; if it is not, flag for review rather than assume no charge |
+| Possible treaty relief or foreign CGT credit | STOP. Refer |
+| Transfer to a spouse or civil partner who is non-resident | The exemption does not apply if they are not liable to CGT; refer |
+| Loss on a disposal to a connected person | Refer before using the loss |
+| Moveable property sold for more than the chattels figure in the table while the gain is below it | Refer. Revenue's page and the statute state the test differently |
 
-## Section 8 — Sources
+## When to refuse or refer
 
-1. Taxes Consolidation Act 1997 (TCA 1997) — primary statute, in particular: Part 19 (Principal Provisions Relating to Taxation of Chargeable Gains). Part 20 (Companies' Chargeable Gains). Part 21 (Mergers, Divisions, Transfers of Assets and Exchanges of Shares Concerning Companies of Different Member States). s. 28 (charge to capital gains tax); s. 29 (persons chargeable and territorial scope); s. 532 (assets); s. 542 (date of disposal); s. 547 (acquisition by way of gift); s. 549 (connected persons); s. 552 (allowable deductions); s. 556 (indexation); s. 573 (death); s. 581 (share identification); s. 597AA (Entrepreneur Relief); s. 598 & s. 599 (Retirement Relief); s. 602 (chattels); s. 603 (wasting chattels); s. 603A (site to child); s. 604 (PPR); s. 980 (CG50 / withholding); s. 1028 (spousal transfers). 2. Finance Act 2012 — increased headline CGT rate to 30% (effective 7 December 2011). 3. Finance Act 2013 (Budget 2013 measures) — increased headline CGT rate to 33% (effective 6 December 2012). 4. Finance Act 2013 — introduced Entrepreneur Relief at the original 20% rate. 5. Finance Act 2015 — replaced the original Entrepreneur Relief with the current TCA s. 597AA regime at 20%, capped €1M lifetime. 6. Finance Act 2016 — reduced the Entrepreneur Relief rate to 10% (effective 1 January 2017). 7. Finance Act 2014 — introduced the €3M cap on s. 599 Retirement Relief for disponers aged 66+ on transfers to a child. 8. Finance Act 2024 / Budget 2025 measures — confirm any current-year changes to thresholds, lifetime caps, or rate via published Revenue guidance. 9. Revenue Tax and Duty Manuals (TDMs) — Part 19 series, including the PPR TDM, the Entrepreneur Relief TDM, the Retirement Relief TDM, and the CG50 TDM. 10. Revenue Form CG1 and accompanying guidance notes for the relevant tax year. 11. Revenue Form 11 / Form 11S self-assessment return and accompanying guidance. 12. Revenue Online Service (ROS) guidance — e-filing instructions for CG1 and Form 11. 13. Irish Tax Institute (ITI) Capital Tax materials — practitioner-level commentary on CGT, PPR, Entrepreneur Relief, Retirement Relief, and CG50. 14. Chartered Accountants Ireland — Taxation reference materials — current-year CGT updates and worked guidance.
+- Refuse to compute without documented acquisition cost and disposal date.
+- Refer: companies, trusts and estates; partnerships; development land; foreign life policies, foreign investment products and venture capital funds; company reorganisations and share exchanges; treaty claims and foreign CGT credits; resident individuals not domiciled in Ireland with foreign gains.
+- Refer: PPR claims with development value, business use, letting, or more than one acre, after preparing the apportionment.
+- Refer: Retirement Relief deferral claims on transfers to a child above the EUR 10 million limit, and any clawback computation.
+- Refer: property acquired between 7 December 2011 and 31 December 2014 (Revenue lists a separate relief for it, not covered here), Farm Restructuring Relief, and compensation or insurance deferral claims ([CGT reliefs](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/index.aspx)).
+- Refer: anything where the client's facts do not match the conditions above word for word.
+
+## Sources
+
+All sources are official Revenue pages, read on 2 October 2026.
+
+1. CGT overview: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx
+2. What do you pay CGT on: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-do-you-pay-cgt-on.aspx
+3. What is exempt from CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx
+4. How to calculate CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
+5. When and how do you pay and file CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx
+6. If you make a loss: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx
+7. Selling or disposing of shares: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/selling-or-disposing-of-shares.aspx
+8. CGT Clearance Certificate (CG50A): https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/cgt-clearance-certificate-cg50a.aspx
+9. CGT reliefs overview: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/index.aspx
+10. Principal Private Residence (PPR) Relief: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/principal-private-residence-ppr-relief.aspx
+11. Revised Entrepreneur Relief: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx
+12. Disposal of a business or farm (Retirement Relief): https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/disposal-of-a-business-or-farm.aspx
+13. Indexation Relief: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/inflation-relief.aspx
+14. Transfer of a site from a parent to a child: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/transfer-of-a-site-from-a-parent-to-a-child.aspx
+15. Tax and Duty Manual Part 19-06-03 (Retirement Relief): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-19/19-06-03.pdf
+16. Tax and Duty Manual Part 42-03-01 (section 980): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf
+17. Tax and Duty Manual Part 02-01-03 (crypto-assets): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf
+18. Revenue eBrief 034/26 (ROS pay and file extension 2026): https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx
+19. Section 602 of the Taxes Consolidation Act 1997, as enacted (chattels): https://www.irishstatutebook.ie/eli/1997/act/39/section/602/enacted/en/html
+20. Section 603 of the Taxes Consolidation Act 1997, as enacted (wasting assets): https://www.irishstatutebook.ie/eli/1997/act/39/section/603/enacted/en/html
 
 <!-- openaccountants-cta-block -->
 
