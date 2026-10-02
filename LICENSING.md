@@ -26,6 +26,9 @@ licence is available if AGPL does not fit ([COMMERCIAL-LICENSING.md](COMMERCIAL-
 
 **Guides (OA Guide License).** Free to read, use for your own taxes, use as a
 professional reference for client work, quote, teach from, and contribute back.
+A company using the Guides internally for its own books and tax affairs, including
+through an AI tool or an internal retrieval workflow its own staff use, has the same
+permission as an individual: no commercial licence is needed.
 A **separate commercial licence is required** to embed the Guides in a
 commercial AI product, index them for commercial RAG, train models on them,
 bulk-extract or redistribute the collection, or run a competing hosted Guide
