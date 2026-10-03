@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-10-02T10:03:20+00:00",
+ "generated_at": "2026-10-03T09:15:33+00:00",
  "counts": {
   "guides": 2023,
   "jurisdictions": 245,
-  "accountant_reviewed": 161
+  "accountant_reviewed": 156
  },
  "guides": [
   {
@@ -6807,8 +6807,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "cyprus-income-tax",
@@ -6816,11 +6816,11 @@
    "name": "cyprus-income-tax",
    "jurisdiction": "CY",
    "category": "international",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Christos Thoma",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "cyprus-payroll",
@@ -6828,11 +6828,11 @@
    "name": "cyprus-payroll",
    "jurisdiction": "CY",
    "category": "payroll",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Christos Thoma",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "cyprus-social-contributions",
@@ -6840,11 +6840,11 @@
    "name": "cyprus-social-contributions",
    "jurisdiction": "CY",
    "category": "international",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Christos Thoma",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "cyprus-tax-optimization",
@@ -6852,11 +6852,11 @@
    "name": "cyprus-tax-optimization",
    "jurisdiction": "CY",
    "category": "tax-optimization",
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Christos Thoma",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "cyprus-vat-return",
@@ -6864,11 +6864,11 @@
    "name": "cyprus-vat-return",
    "jurisdiction": "CY",
    "category": null,
-   "tier": 1,
+   "tier": 2,
    "verified_by": null,
-   "reviewed_by": "Christos Thoma",
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "cz-company-formation",
@@ -10479,8 +10479,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-02"
   },
   {
    "slug": "ie-income-tax-form11",

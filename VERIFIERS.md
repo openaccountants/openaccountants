@@ -20,7 +20,6 @@ nightly from the platform — the site is the source of truth; edits here are ov
 | James Power | — | GB | 6 |
 | Jose Padilla | — | VE | 5 |
 | Baraka Cassian | — | TZ | 5 |
-| Christos Thoma | — | CY | 5 |
 | Ashish Bista | — | NP | 5 |
 | Rob Hoffman | — | US-FL | 5 |
 | Maria Clemencia Valverde Rios | — | PE | 4 |
@@ -36,4 +35,4 @@ nightly from the platform — the site is the source of truth; edits here are ov
 | MUHAMMAD HANIS MAT HUSSIN | CA-53636 | MY | 1 |
 | firas masmoudi | — | TN | 1 |
 
-<sub>Updated 2026-10-02. Become one: https://www.openaccountants.com/for-accountants</sub>
+<sub>Updated 2026-10-03. Become one: https://www.openaccountants.com/for-accountants</sub>

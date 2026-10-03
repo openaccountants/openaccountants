@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source Tax Guides ("skills") for AI agents. 2,023 Guides across 245 jurisdictions in this repository, 161 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source Tax Guides ("skills") for AI agents. 2,023 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2023 guides, 245 jurisdictions, 161 accountant-reviewed)
+## Guide inventory (2023 guides, 245 jurisdictions, 156 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -701,11 +701,11 @@ https://www.openaccountants.com
 - cw-tax-overview | CW | tier 2 | reviewed_by -
 - cw-vat-gst | CW | tier 2 | reviewed_by -
 - cy-non-dom | CY | tier 2 | reviewed_by -
-- cyprus-income-tax | CY | tier 1 | reviewed_by Christos Thoma
-- cyprus-payroll | CY | tier 1 | reviewed_by Christos Thoma
-- cyprus-social-contributions | CY | tier 1 | reviewed_by Christos Thoma
-- cyprus-tax-optimization | CY | tier 1 | reviewed_by Christos Thoma
-- cyprus-vat-return | CY | tier 1 | reviewed_by Christos Thoma
+- cyprus-income-tax | CY | tier 2 | reviewed_by -
+- cyprus-payroll | CY | tier 2 | reviewed_by -
+- cyprus-social-contributions | CY | tier 2 | reviewed_by -
+- cyprus-tax-optimization | CY | tier 2 | reviewed_by -
+- cyprus-vat-return | CY | tier 2 | reviewed_by -
 - cz-company-formation | CZ | tier 2 | reviewed_by -
 - cz-corporate-income-tax | CZ | tier 2 | reviewed_by -
 - cz-income-tax | CZ | tier 2 | reviewed_by -
