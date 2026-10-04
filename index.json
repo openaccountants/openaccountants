@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-03T09:15:33+00:00",
+ "generated_at": "2026-10-04T08:26:24+00:00",
  "counts": {
-  "guides": 2023,
+  "guides": 2024,
   "jurisdictions": 245,
   "accountant_reviewed": 156
  },
@@ -19805,6 +19805,18 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-09-03"
+  },
+  {
+   "slug": "gb-vat-eu-goods-sellers",
+   "path": "skills/international/uk/gb-vat-eu-goods-sellers.md",
+   "name": "gb-vat-eu-goods-sellers",
+   "jurisdiction": "GB",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-04"
   },
   {
    "slug": "property-management-2",
