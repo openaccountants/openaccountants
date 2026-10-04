@@ -7,7 +7,7 @@ tax_year: 2025
 last_updated: 2026-09-28
 authored_by: OpenAccountants team
 review_status: pending_review
-trust_label: By OpenAccountants
+trust_label: Written by the OpenAccountants team
 category: orchestrator
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-04T08:26:24+00:00",
+ "generated_at": "2026-10-04T09:51:30+00:00",
  "counts": {
-  "guides": 2024,
+  "guides": 2034,
   "jurisdictions": 245,
   "accountant_reviewed": 156
  },
@@ -964,7 +964,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-14"
+   "last_updated": "2026-10-03"
+  },
+  {
+   "slug": "us-2026-federal-tax-changes",
+   "path": "skills/federal/us-2026-federal-tax-changes.md",
+   "name": "us-2026-federal-tax-changes",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "us-amended-return-form-1040-including-capital",
@@ -977,6 +989,30 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-09-03"
+  },
+  {
+   "slug": "us-augusta-rule-home-rental-to-your-business",
+   "path": "skills/federal/us-augusta-rule-home-rental-to-your-business.md",
+   "name": "us-augusta-rule-home-rental-to-your-business",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
+  },
+  {
+   "slug": "us-charitable-giving-strategies",
+   "path": "skills/federal/us-charitable-giving-strategies.md",
+   "name": "us-charitable-giving-strategies",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "us-citizen-moving-abroad-tax",
@@ -1060,7 +1096,7 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-09-03"
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "us-estate-gift-706-709",
@@ -1255,6 +1291,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "us-hiring-your-children-and-accountable-plans",
+   "path": "skills/federal/us-hiring-your-children-and-accountable-plans.md",
+   "name": "us-hiring-your-children-and-accountable-plans",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
+  },
+  {
    "slug": "us-irs-collections-and-controversy",
    "path": "skills/federal/us-irs-collections-and-controversy.md",
    "name": "us-irs-collections-and-controversy",
@@ -1289,6 +1337,18 @@
    "reviewed_by": "James Wallach",
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "us-opportunity-zones",
+   "path": "skills/federal/us-opportunity-zones.md",
+   "name": "us-opportunity-zones",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "us-pl-86-272-income-tax-nexus",
@@ -1349,6 +1409,18 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-09-25"
+  },
+  {
+   "slug": "us-real-estate-professional-and-short-term-rentals",
+   "path": "skills/federal/us-real-estate-professional-and-short-term-rentals.md",
+   "name": "us-real-estate-professional-and-short-term-rentals",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "us-s-corp-election-decision",
@@ -1421,6 +1493,18 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-09-25"
+  },
+  {
+   "slug": "us-section-179-and-bonus-depreciation",
+   "path": "skills/federal/us-section-179-and-bonus-depreciation.md",
+   "name": "us-section-179-and-bonus-depreciation",
+   "jurisdiction": "US",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "us-secure-2-and-retirement-updates",
@@ -21363,8 +21447,8 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "pk-freelance-intake",
@@ -21963,8 +22047,20 @@
    "tier": 2,
    "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2025",
-   "last_updated": "2026-07-13"
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
+  },
+  {
+   "slug": "ca-residency-leaving-california",
+   "path": "skills/us-states/ca/ca-residency-leaving-california.md",
+   "name": "ca-residency-leaving-california",
+   "jurisdiction": "US-CA",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "ca-sales-use-tax",
@@ -22193,6 +22289,18 @@
    "reviewed_by": "Rob Hoffman",
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "fl-moving-to-florida-domicile",
+   "path": "skills/us-states/fl/fl-moving-to-florida-domicile.md",
+   "name": "fl-moving-to-florida-domicile",
+   "jurisdiction": "US-FL",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "fl-sales-tax",
@@ -23489,6 +23597,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "ny-residency-leaving-new-york",
+   "path": "skills/us-states/ny/ny-residency-leaving-new-york.md",
+   "name": "ny-residency-leaving-new-york",
+   "jurisdiction": "US-NY",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-03"
   },
   {
    "slug": "ny-sales-tax",

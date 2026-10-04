@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source Tax Guides ("skills") for AI agents. 2,024 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source Tax Guides ("skills") for AI agents. 2,034 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2024 guides, 245 jurisdictions, 156 accountant-reviewed)
+## Guide inventory (2034 guides, 245 jurisdictions, 156 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -214,7 +214,10 @@ https://www.openaccountants.com
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-1099-nec-issuance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-1120-corporation-return-schedule-ordinary-business | US | tier 2 | reviewed_by -
+- us-2026-federal-tax-changes | US | tier 2 | reviewed_by -
 - us-amended-return-form-1040-including-capital | US | tier 2 | reviewed_by -
+- us-augusta-rule-home-rental-to-your-business | US | tier 2 | reviewed_by -
+- us-charitable-giving-strategies | US | tier 2 | reviewed_by -
 - us-citizen-moving-abroad-tax | US | tier 2 | reviewed_by -
 - us-corporate-extension-form-7004-and-the | US | tier 2 | reviewed_by -
 - us-crypto-income-events | US | tier 1 | reviewed_by Christopher Aryee
@@ -238,20 +241,24 @@ https://www.openaccountants.com
 - us-form-5472-foreign-owned-us | US | tier 1 | reviewed_by Christopher Aryee
 - us-form-941-940-payroll | US | tier 2 | reviewed_by James Wallach
 - us-gilti-fdii-beat | US | tier 2 | reviewed_by James Wallach
+- us-hiring-your-children-and-accountable-plans | US | tier 2 | reviewed_by -
 - us-irs-collections-and-controversy | US | tier 2 | reviewed_by -
 - us-multi-state-residency-and-allocation | US | tier 2 | reviewed_by -
 - us-nft-tax | US | tier 2 | reviewed_by James Wallach
+- us-opportunity-zones | US | tier 2 | reviewed_by -
 - us-pl-86-272-income-tax-nexus | US | tier 2 | reviewed_by -
 - us-pte-state-matrix | US | tier 2 | reviewed_by -
 - us-qbi-deduction | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-quarterly-estimated-tax | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-r-and-d-section-174-and-41 | US | tier 2 | reviewed_by -
+- us-real-estate-professional-and-short-term-rentals | US | tier 2 | reviewed_by -
 - us-s-corp-election-decision | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-sales-tax-nexus-50-state-matrix | US | tier 2 | reviewed_by -
 - us-sales-tax | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-schedule-c-and-se-computation | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-section-1031-like-kind-exchange | US | tier 2 | reviewed_by -
 - us-section-1202-qsbs | US | tier 2 | reviewed_by -
+- us-section-179-and-bonus-depreciation | US | tier 2 | reviewed_by -
 - us-secure-2-and-retirement-updates | US | tier 2 | reviewed_by -
 - us-self-employed-health-insurance | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
 - us-self-employed-retirement | US | tier 1 | reviewed_by A licensed accountant (name withheld at their request)
@@ -1964,6 +1971,7 @@ https://www.openaccountants.com
 - ca-formation | US-CA | tier 2 | reviewed_by -
 - ca-income-tax | US-CA | tier 2 | reviewed_by -
 - ca-payroll | US-CA | tier 2 | reviewed_by -
+- ca-residency-leaving-california | US-CA | tier 2 | reviewed_by -
 - ca-sales-use-tax | US-CA | tier 2 | reviewed_by -
 - ca-smllc-form-568 | US-CA | tier 2 | reviewed_by -
 - co-income-tax | US-CO | tier 2 | reviewed_by -
@@ -1983,6 +1991,7 @@ https://www.openaccountants.com
 - de-income-tax | US-DE | tier 2 | reviewed_by -
 - fl-annual-report | US-FL | tier 1 | reviewed_by Rob Hoffman
 - fl-corporate-income-tax | US-FL | tier 1 | reviewed_by Rob Hoffman
+- fl-moving-to-florida-domicile | US-FL | tier 2 | reviewed_by -
 - fl-sales-tax | US-FL | tier 2 | reviewed_by -
 - fl-sales-use-tax-surtax | US-FL | tier 1 | reviewed_by Rob Hoffman
 - fl-sales-use-tax | US-FL | tier 1 | reviewed_by Rob Hoffman
@@ -2091,6 +2100,7 @@ https://www.openaccountants.com
 - ny-income-tax | US-NY | tier 2 | reviewed_by -
 - ny-llc-filing-fee | US-NY | tier 2 | reviewed_by -
 - ny-mctmt | US-NY | tier 2 | reviewed_by -
+- ny-residency-leaving-new-york | US-NY | tier 2 | reviewed_by -
 - ny-sales-tax | US-NY | tier 2 | reviewed_by -
 - nyc-ubt | US-NY | tier 2 | reviewed_by -
 - oh-cat-tax | US-OH | tier 2 | reviewed_by -
