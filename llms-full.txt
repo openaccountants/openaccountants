@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source Tax Guides ("skills") for AI agents. 2,034 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source Tax Guides ("skills") for AI agents. 2,035 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2034 guides, 245 jurisdictions, 156 accountant-reviewed)
+## Guide inventory (2035 guides, 245 jurisdictions, 156 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -883,6 +883,7 @@ https://www.openaccountants.com
 - de-rental-income | DE | tier 2 | reviewed_by -
 - de-social-contributions | DE | tier 2 | reviewed_by -
 - de-trade-tax | DE | tier 2 | reviewed_by -
+- de-uk-employer-first-hire | DE | tier 2 | reviewed_by -
 - germany-bookkeeping | DE | tier 2 | reviewed_by -
 - germany-einvoice | DE | tier 2 | reviewed_by -
 - germany-financial-statements | DE | tier 2 | reviewed_by -

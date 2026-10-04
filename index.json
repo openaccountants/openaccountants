@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-04T11:22:55+00:00",
+ "generated_at": "2026-10-04T11:24:09+00:00",
  "counts": {
-  "guides": 2034,
+  "guides": 2035,
   "jurisdictions": 245,
   "accountant_reviewed": 156
  },
@@ -8993,6 +8993,18 @@
    "reviewed_by": null,
    "tax_year": "2026",
    "last_updated": "2026-09-27"
+  },
+  {
+   "slug": "de-uk-employer-first-hire",
+   "path": "skills/international/germany/de-uk-employer-first-hire.md",
+   "name": "de-uk-employer-first-hire",
+   "jurisdiction": "DE",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-04"
   },
   {
    "slug": "germany-bookkeeping",
