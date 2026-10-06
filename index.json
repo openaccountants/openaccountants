@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-05T10:38:07+00:00",
+ "generated_at": "2026-10-06T10:34:05+00:00",
  "counts": {
-  "guides": 2036,
+  "guides": 2043,
   "jurisdictions": 245,
   "accountant_reviewed": 156
  },
@@ -487,6 +487,18 @@
    "last_updated": "2026-07-13"
   },
   {
+   "slug": "family-holding-company-location-compared",
+   "path": "skills/cross-border/family-holding-company-location-compared.md",
+   "name": "family-holding-company-location-compared",
+   "jurisdiction": "general",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
+  },
+  {
    "slug": "fatca-crs-automatic-exchange",
    "path": "skills/cross-border/fatca-crs-automatic-exchange.md",
    "name": "fatca-crs-automatic-exchange",
@@ -809,6 +821,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "trusts-vs-foundations-by-country",
+   "path": "skills/cross-border/trusts-vs-foundations-by-country.md",
+   "name": "trusts-vs-foundations-by-country",
+   "jurisdiction": "general",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
   },
   {
    "slug": "us-cfc-gilti",
@@ -13219,6 +13243,18 @@
    "last_updated": "2026-09-27"
   },
   {
+   "slug": "mt-company-residence-and-substance",
+   "path": "skills/international/malta/mt-company-residence-and-substance.md",
+   "name": "mt-company-residence-and-substance",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
+  },
+  {
    "slug": "mt-crypto-tax",
    "path": "skills/international/malta/mt-crypto-tax.md",
    "name": "mt-crypto-tax",
@@ -13241,6 +13277,42 @@
    "reviewed_by": "Michael Cutajar, CPA (Malta)",
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "mt-foundations-and-trusts",
+   "path": "skills/international/malta/mt-foundations-and-trusts.md",
+   "name": "mt-foundations-and-trusts",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
+  },
+  {
+   "slug": "mt-holding-company-participation-exemption",
+   "path": "skills/international/malta/mt-holding-company-participation-exemption.md",
+   "name": "mt-holding-company-participation-exemption",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
+  },
+  {
+   "slug": "mt-inheritance-and-succession",
+   "path": "skills/international/malta/mt-inheritance-and-succession.md",
+   "name": "mt-inheritance-and-succession",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
   },
   {
    "slug": "mt-non-dom",
@@ -13277,6 +13349,18 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
+  },
+  {
+   "slug": "mt-residence-programmes-for-wealthy-families",
+   "path": "skills/international/malta/mt-residence-programmes-for-wealthy-families.md",
+   "name": "mt-residence-programmes-for-wealthy-families",
+   "jurisdiction": "MT",
+   "category": null,
+   "tier": 2,
+   "verified_by": null,
+   "reviewed_by": null,
+   "tax_year": "2026",
+   "last_updated": "2026-10-05"
   },
   {
    "slug": "mt-reverse-charge-acquisition-intra",

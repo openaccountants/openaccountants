@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source Tax Guides ("skills") for AI agents. 2,036 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source Tax Guides ("skills") for AI agents. 2,043 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -132,7 +132,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Guide inventory (2036 guides, 245 jurisdictions, 156 accountant-reviewed)
+## Guide inventory (2043 guides, 245 jurisdictions, 156 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -174,6 +174,7 @@ https://www.openaccountants.com
 - eu-oss-digital | GLOBAL | tier 2 | reviewed_by -
 - eu-reverse-charge | GLOBAL | tier 2 | reviewed_by -
 - eu-social-security-coordination | EU/EEA/CH/UK | tier 2 | reviewed_by -
+- family-holding-company-location-compared | general | tier 2 | reviewed_by -
 - fatca-crs-automatic-exchange | GLOBAL | tier 2 | reviewed_by -
 - forex-controls | INTL | tier 2 | reviewed_by -
 - free-zones-sez-matrix | GLOBAL | tier 2 | reviewed_by -
@@ -201,6 +202,7 @@ https://www.openaccountants.com
 - eu-intra-rates | GLOBAL | tier 2 | reviewed_by -
 - uk-major-partners | GLOBAL | tier 2 | reviewed_by -
 - us-major-partners | GLOBAL | tier 2 | reviewed_by -
+- trusts-vs-foundations-by-country | general | tier 2 | reviewed_by -
 - us-cfc-gilti | US | tier 2 | reviewed_by -
 - us-expatriation-exit-tax | US | tier 2 | reviewed_by -
 - us-fbar-fatca-reporting | US | tier 2 | reviewed_by -
@@ -1235,11 +1237,16 @@ https://www.openaccountants.com
 - malta-vat-return | MT | tier 2 | reviewed_by -
 - moving-to-malta-tax-residence | MT | tier 2 | reviewed_by -
 - mt-capital-gains | MT | tier 2 | reviewed_by -
+- mt-company-residence-and-substance | MT | tier 2 | reviewed_by -
 - mt-crypto-tax | MT | tier 2 | reviewed_by -
 - mt-estimated-tax | MT | tier 2 | reviewed_by Michael Cutajar, CPA (Malta)
+- mt-foundations-and-trusts | MT | tier 2 | reviewed_by -
+- mt-holding-company-participation-exemption | MT | tier 2 | reviewed_by -
+- mt-inheritance-and-succession | MT | tier 2 | reviewed_by -
 - mt-non-dom | MT | tier 2 | reviewed_by -
 - mt-property-transfer-tax-the-sale-immovable | MT | tier 2 | reviewed_by -
 - mt-rental-income | MT | tier 2 | reviewed_by -
+- mt-residence-programmes-for-wealthy-families | MT | tier 2 | reviewed_by -
 - mt-reverse-charge-acquisition-intra | MT | tier 2 | reviewed_by -
 - mt-reverse-charge-vat-services-received-from | MT | tier 2 | reviewed_by -
 - mt-vat3-quarterly-return-malta | MT | tier 2 | reviewed_by -

@@ -20,24 +20,29 @@
 13. `malta-vat-return.md`
 14. `moving-to-malta-tax-residence.md`
 15. `mt-capital-gains.md`
-16. `mt-crypto-tax.md`
-17. `mt-estimated-tax.md`
-18. `mt-non-dom.md`
-19. `mt-property-transfer-tax-the-sale-immovable.md`
-20. `mt-rental-income.md`
-21. `mt-reverse-charge-acquisition-intra.md`
-22. `mt-reverse-charge-vat-services-received-from.md`
-23. `mt-vat3-quarterly-return-malta.md`
-24. `selling-a-company-in-malta.md`
-25. `eu-vat-directive.md`
-26. `bookkeeping-workflow-base.md`
-27. `payroll-workflow-base.md`
-28. `company-formation-workflow-base.md`
-29. `financial-statements-workflow-base.md`
-30. `transfer-pricing-workflow-base.md`
-31. `crypto-tax-workflow-base.md`
-32. `malta-guided-intake.md`
-33. `malta-return-assembly.md`
+16. `mt-company-residence-and-substance.md`
+17. `mt-crypto-tax.md`
+18. `mt-estimated-tax.md`
+19. `mt-foundations-and-trusts.md`
+20. `mt-holding-company-participation-exemption.md`
+21. `mt-inheritance-and-succession.md`
+22. `mt-non-dom.md`
+23. `mt-property-transfer-tax-the-sale-immovable.md`
+24. `mt-rental-income.md`
+25. `mt-residence-programmes-for-wealthy-families.md`
+26. `mt-reverse-charge-acquisition-intra.md`
+27. `mt-reverse-charge-vat-services-received-from.md`
+28. `mt-vat3-quarterly-return-malta.md`
+29. `selling-a-company-in-malta.md`
+30. `eu-vat-directive.md`
+31. `bookkeeping-workflow-base.md`
+32. `payroll-workflow-base.md`
+33. `company-formation-workflow-base.md`
+34. `financial-statements-workflow-base.md`
+35. `transfer-pricing-workflow-base.md`
+36. `crypto-tax-workflow-base.md`
+37. `malta-guided-intake.md`
+38. `malta-return-assembly.md`
 
 ## Also known as
 
