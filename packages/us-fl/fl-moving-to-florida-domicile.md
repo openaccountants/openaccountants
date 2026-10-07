@@ -4,9 +4,9 @@ description: "Moving to Florida from another state: Florida's lack of a personal
 jurisdiction: US-FL
 tax_year: 2026
 last_updated: 2026-10-03
-authored_by: OpenAccountants team
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Written by the OpenAccountants team
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

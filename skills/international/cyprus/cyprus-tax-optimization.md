@@ -5,9 +5,9 @@ version: 0.1
 jurisdiction: CY
 tax_year: 2026
 last_updated: 2026-10-02
-authored_by: OpenAccountants team
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Written by the OpenAccountants team
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
