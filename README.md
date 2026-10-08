@@ -1,8 +1,17 @@
 # OpenAccountants
 
-**Open-source Tax Guides your AI can cite — reviewed by named, licensed accountants.**
+**Free accounting and tax Guides for people and AI, with sources and review status.**
 
-Every AI can do tax math. None of them can stand behind an answer. Here, real accountants put their **name, credential and review date** on the Guides your AI reads — publicly, on the record, in this repo.
+Read the Guides, use them in your AI, or build on them. Each Guide shows its sources and review information; accountant-authored and attested Guides name the professionals behind that work.
+
+## Need someone to do the accounting?
+
+OpenAccountants also helps business owners get bookkeeping and tax work done through partner accountants. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
+
+**[Book a free 30-minute call](https://www.openaccountants.com/tax-help?source=github_readme#book)** · [Explore our accounting services](https://www.openaccountants.com/tax-help?source=github_readme)
+
+The Guides and AI connection remain free.
+
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
@@ -30,7 +39,7 @@ Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
 
-Without OpenAccountants, models answer from training data. With it, the answer cites the current Guide — and names the accountant who reviewed it.
+OpenAccountants gives your AI a Guide to cite, with sources and review information. Where an accountant has written or attested to the Guide, their name is shown.
 
 ```
 You:    "I'm a freelancer in South Africa. What do I owe?"
@@ -51,14 +60,9 @@ AI:     ITR12 working paper · IRP6 provisional schedule
 
 ---
 
-## Two states, greppable honesty
+## Check each Guide's review status
 
-Every Guide is in exactly one state — and the repo greps honestly:
-
-| State | Meaning |
-|---|---|
-| **Accountant-reviewed** | A named, licensed accountant reviewed the complete Guide. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from primary legislation, every figure cited to its source — not yet professionally reviewed |
+Guides show their sources and review information. Some are team-written reference material; others name the accountant who wrote or attested to them. Check the Guide's label and applicable period before relying on it. The [website](https://www.openaccountants.com/skills) shows the current public status, and [VERIFIERS.md](VERIFIERS.md) lists recorded reviews.
 
 ⚠️ **General reference, not advice.** Guides may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 
