@@ -1,6 +1,6 @@
 # Frontmatter spec — the canonical reference
 
-**This section is THE frontmatter spec for every skill/Guide file in this repo.** Other docs (`CLAUDE.md`, `CONTRIBUTING.md`) link here rather than restating it. CI enforces it: `scripts/validate-guides.py` hard-fails on malformed frontmatter, a missing `name`/`description`, a non-integer `tax_year`, a missing or invalid `tier` (must be 1 or 2), a missing or malformed `last_updated` (YYYY-MM-DD), and a missing `jurisdiction` (except in a small allowlist of jurisdiction-agnostic directories, where it warns).
+**This section is THE frontmatter spec for every skill/Guide file in this repo.** Other docs (`CLAUDE.md`, `CONTRIBUTING.md`) link here rather than restating it. CI enforces it: `scripts/validate-guides.py` hard-fails on malformed frontmatter, a missing `name`/`description`, a non-integer `tax_year`, a missing `publisher` on new files (valid historical `tier` metadata remains accepted), a missing or malformed `last_updated` (YYYY-MM-DD), and a missing `jurisdiction` (except in a small allowlist of jurisdiction-agnostic directories, where it warns).
 
 ## Required keys
 
@@ -11,7 +11,7 @@
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
 | `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in `tax_year_notes`, never here. CI errors on anything that is not an integer 2015-2035 |
-| `tier` | `1` or `2` | `1` = **accountant-reviewed** (a named licensed accountant fully reviewed and signed off); `2` = **source-cited draft** (drafted from primary sources, awaiting review). These are the only two quality states |
+| `publisher` | string | `OpenAccountants`; identifies the publisher without a review or attestation claim |
 | `last_updated` | `YYYY-MM-DD` | Date the content was last checked/edited. It must never move backwards |
 
 ## Optional keys
@@ -19,23 +19,16 @@
 | Key | Format | Notes |
 |-----|--------|-------|
 | `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"` |
-| `verified_by` | `pending` or `Name, Credential` | e.g. `Michael Cutajar, CPA (Malta)`. Stored identifier — the field name stays `verified_by` even though the display language is "reviewed". A real name here does **not** imply `tier: 1`; set `tier: 1` explicitly as well. CI errors if `tier: 2` carries a real `verified_by` |
-| `reviewed_by` | `Name, Credential` | Used on the hand-authored `packages/us-federal/` guides (e.g. `Christopher Aryee, CPA`) |
+| `authored_by` | name | Actual author, only when explicitly known; never inferred from a reviewer |
+| `author_profile` | URL | Public profile for the named author |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change when present. Keep any body-heading version in step |
 
 ## Platform-written keys
 
-The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md)) writes these keys when it renders a Guide. Do not add or edit them in a PR: the platform owns their values and rewrites them on the next export. Leave them in place when you edit a Guide that already carries them. None of them is a quality state; `tier` remains the only quality field, and `review_status` records where the accountant review stands. `scripts/validate-guides.py` ignores keys it does not know, so a key outside this document is undefined, not validated.
+The daily export writes `publisher`, `founder_credit` and `founder_profile`, plus `authored_by` and `author_profile` when actual authorship is known and public. `content_origin: automated-draft` marks automated material. The export also preserves license and machine source-check metadata where available.
 
-| Key | Values seen | Notes |
-|-----|-------------|-------|
-| `review_status` | `current` or `pending_review` | Whether the current text carries a professional review. A substantive edit sets the Guide back to `pending_review` until it is reviewed again |
-| `license` | `AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)` | Written verbatim by the export. [LICENSING.md](../LICENSING.md) is the licence reference |
-| `authored_by` | `OpenAccountants team` | Present when the platform team, not a named accountant or GitHub contributor, authored the current revision |
-| `trust_label` | `By OpenAccountants` | Display attribution for the website. Not a review claim |
-
-The export has also written `drafted_by` and `approved_by` (90 Guides, values `OpenAccountants` and `pending`), `validation_status` (5) and `validated` (4). Treat them the same way: leave them alone and do not add them to new files.
+Historical `tier`, `reviewed_by`, `verified_by`, `review_status` and related fields remain accepted on older source files for compatibility. They are not public endorsements and must not be added to new files. Current generated indexes and MCP outputs omit these fields. See [Guide attribution and evidence](QUALITY-TIERS.md).
 
 ## Sync integrity rules
 
@@ -88,12 +81,11 @@ jurisdiction: XX   # REQUIRED — MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-27, et
 category: international   # see the category vocabulary above
 tax_year: 2025             # bare integer = coverage start year
 tax_year_notes: "2025-26"  # optional — only when a bare year can't express it
-tier: 2                    # 1 = accountant-reviewed | 2 = source-cited draft
+publisher: OpenAccountants
 last_updated: 2026-07-04   # YYYY-MM-DD
 version: 0.1
 depends_on:
   - [workflow-base-or-country-skill]
-verified_by: pending       # or "Name, Credential" — stored field name stays verified_by
 ---
 ```
 

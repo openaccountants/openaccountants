@@ -95,12 +95,13 @@ def real_reviewer(value):
 
 
 def check_quality_metadata(rel, fields, errors):
-    """Enforce the fail-closed quality-tier contract for canonical sources."""
+    """Accept publisher attribution and validate historical tier metadata."""
     tier = fields["tier"]
     reviewed_by = real_reviewer(fields["reviewed_by"])
     verified_by = real_reviewer(fields["verified_by"])
     if not tier:
-        errors.append(f"{rel}: missing required frontmatter key `tier`")
+        if not str(fields.get("publisher") or "").strip():
+            errors.append(f"{rel}: missing required frontmatter key `publisher` (or historical `tier`)")
     elif tier not in ("1", "2"):
         errors.append(f"{rel}: `tier` must be 1 or 2 (got {tier!r})")
     elif tier == "1" and not (reviewed_by or verified_by):

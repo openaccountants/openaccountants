@@ -6,7 +6,7 @@ Concatenates, in order:
   1. The current llms.txt (must exist; run after any llms.txt rewrite)
   2. A divider
   3. A compact one-line-per-guide inventory from index.json
-     ("- <slug> | <jurisdiction> | tier <tier> | reviewed_by <reviewed_by or ->")
+     ("- <slug> | <jurisdiction> | tax year <year> | author <author or publisher>")
   4. A divider
   5. The full text of START-HERE.md and docs/QUALITY-TIERS.md
 
@@ -35,15 +35,13 @@ def guide_inventory():
     index = json.loads(read_text("index.json"))
     lines = ["## Guide inventory "
              f"({index['counts']['guides']} guides, "
-             f"{index['counts']['jurisdictions']} jurisdictions, "
-             f"{index['counts']['accountant_reviewed']} accountant-reviewed)", ""]
+             f"{index['counts']['jurisdictions']} jurisdictions)", ""]
     for guide in index["guides"]:
         jurisdiction = guide.get("jurisdiction") or "-"
-        tier = guide.get("tier")
-        tier = "-" if tier is None else tier
-        reviewed_by = guide.get("reviewed_by") or "-"
+        tax_year = guide.get("tax_year") or "unspecified"
+        author = guide.get("authored_by") or "OpenAccountants"
         lines.append(
-            f"- {guide['slug']} | {jurisdiction} | tier {tier} | reviewed_by {reviewed_by}"
+            f"- {guide['slug']} | {jurisdiction} | tax year {tax_year} | author {author}"
         )
     return "\n".join(lines)
 

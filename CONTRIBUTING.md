@@ -36,7 +36,7 @@ Every skill in `skills/` that should appear on [openaccountants.com](https://www
 1. Live in a **recognized country folder** (`skills/international/<country>/`, `skills/federal/`, `skills/us-states/<code>/`), **or**
 2. Include **`jurisdiction:` in YAML frontmatter** (e.g. `MT`, `GB`, `US`, `US-CA`, `GLOBAL`, `INTL`)
 
-Guide changes made on openaccountants.com land here through the scheduled sync, committed under the responsible accountant's name. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. Frontmatter uses `reviewed_by` + `review_status` (the legacy `verified_by` key is being retired automatically). Want your platform edits credited to your GitHub account? Set your GitHub username in your accountant profile on openaccountants.com.
+Guide changes made on openaccountants.com land here through the scheduled sync, committed under the responsible accountant's name. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. New frontmatter uses `publisher` and explicit `authored_by` where known. Historical reviewer fields never imply authorship or a current endorsement. Want your platform edits credited to your GitHub account? Set your GitHub username in your accountant profile on openaccountants.com.
 
 Full details: [docs/WEBSITE-SYNC.md](docs/WEBSITE-SYNC.md)
 
@@ -102,7 +102,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review
 
-After you submit, Partners — licensed accountants — review your skill on [openaccountants.com](https://www.openaccountants.com). When the full review is approved, the skill becomes **accountant-reviewed** (Tier 1). Your name stays on it as the author.
+Accepted contributions receive authorship credit for the work contributed. Publication does not certify a Guide as correct or current; its scope, method, applicable period and official sources remain the evidence to assess.
 
 ## Contributor License Agreement (CLA)
 
