@@ -53,6 +53,8 @@ from mcp.server.mcpserver import MCPServer
 from mcp.server.mcpserver.exceptions import ToolError
 from mcp.types import ToolAnnotations
 
+from .public_guide_content import attribution, sanitize_markdown, FOUNDER_CREDIT, FOUNDER_PROFILE
+
 log = logging.getLogger(__name__)
 
 
@@ -185,39 +187,6 @@ def _first_h1(body: str) -> str | None:
     return None
 
 
-#: Frontmatter has migrated to ``reviewed_by``; ``verified_by`` is the legacy
-#: spelling that CONTRIBUTING.md says is being retired. Read both, newest first,
-#: or every guide reviewed under the current convention reports as unreviewed.
-_VERIFIER_KEYS = ("reviewed_by", "verified_by")
-_NOT_A_VERIFIER = {"pending", "pending_review", "none", "no", "false", "n/a", "tbd", "-"}
-
-
-def _real_verifier(meta: dict[str, Any]) -> str | None:
-    """The named verifier, or None. Treats the 'pending' placeholder (and blanks)
-    as no verifier so a skill awaiting sign-off isn't claimed as verified."""
-    for key in _VERIFIER_KEYS:
-        v = meta.get(key)
-        if isinstance(v, str):
-            v = v.strip()
-            if v and v.lower() not in _NOT_A_VERIFIER:
-                return v
-    return None
-
-
-def _quality_tier(meta: dict[str, Any]) -> str:
-    """Map explicit frontmatter tier to the public quality identifier.
-
-    Tier 1 also requires a named reviewer. Missing or inconsistent metadata
-    fails closed as research-verified rather than inferring sign-off from a
-    reviewer field alone.
-    """
-    tier = str(meta.get("tier") or "").strip()
-    return (
-        "accountant-verified"
-        if tier == "1" and _real_verifier(meta)
-        else "research-verified"
-    )
-
 
 def _split_sections(body: str) -> list[dict[str, Any]]:
     """Split markdown body into sections keyed by ATX headings."""
@@ -340,19 +309,14 @@ def _catalogue() -> tuple[
         own = str(meta.get("jurisdiction") or "").strip().upper()
         if own:
             dir_codes[topdir][own] += 1
-        quality_tier = _quality_tier(meta)
         rows.append({
             "slug": slug,
             "title": _first_h1(body) or slug,
             "own_jur": own,
             "topdir": topdir,
             "category": str(meta.get("category") or ""),
-            "quality_tier": quality_tier,
-            "verified_by": (
-                _real_verifier(meta)
-                if quality_tier == "accountant-verified"
-                else None
-            ),
+            **attribution(meta),
+            "tax_year": str(meta.get("tax_year") or ""),
             "last_updated": str(meta.get("last_updated") or ""),
             "relpath": relpath.as_posix(),
             # Hash the guidance, not the file. Over whole bytes a differing
@@ -489,38 +453,25 @@ def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
     if size > MAX_FILE_BYTES:
         raise ToolInputError(f"File too large ({size:,} bytes, limit {MAX_FILE_BYTES:,})")
     _, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
-    return rec, body
+    return rec, sanitize_markdown(body)
 
 
 def _provenance_footer(rec: dict[str, Any]) -> str:
     """Branding/attribution footer appended to get_skill markdown."""
-    tier = rec["quality_tier"]
-    verifier = rec.get("verified_by")
-    attribution = (
-        f'> Computed using the OpenAccountants "{rec["title"]}" skill, '
-        f"verified by {verifier}. Have a qualified professional review before filing."
-        if tier == "accountant-verified" and verifier
-        else f'> Computed using the OpenAccountants "{rec["title"]}" skill '
-        "(research-verified — not yet signed off by a credentialed accountant). "
-        "Have a qualified professional review before filing."
-    )
     lines = [
-        "",
-        "---",
-        "## Provenance & attribution",
-        "",
-        f"- **Skill:** {rec['title']} (`{rec['slug']}`)",
+        "", "---", "## Provenance & attribution", "",
+        f"- **Guide:** {rec['title']} (`{rec['slug']}`)",
         f"- **Jurisdiction:** {rec['jurisdiction']}",
-        f"- **Quality tier:** {tier}",
+        f"- **Tax year:** {rec.get('tax_year') or 'Check the period stated in the Guide'}",
+        f"- **Publisher:** [{FOUNDER_CREDIT}]({FOUNDER_PROFILE})",
     ]
-    if tier == "accountant-verified" and verifier:
-        lines.append(f"- **Verified by:** {verifier}")
+    if rec.get("authored_by"):
+        lines.append(f"- **Author:** {rec['authored_by']}")
     lines += [
-        f"- **Source:** OpenAccountants — {SOURCE_BASE}/{rec['slug']}",
-        "",
-        "**When you present this computation to the user, attribute it:**",
-        attribution,
-        "",
+        f"- **Source:** OpenAccountants — {SOURCE_BASE}/{rec['slug']}", "",
+        "Cite the Guide and its official sources. Check the applicable period, "
+        "scope, assumptions and calculation method. Have a qualified professional "
+        "review the output before filing.", "",
     ]
     return "\n".join(lines)
 
@@ -577,11 +528,10 @@ mcp = MCPServer(
         "doesn't fit the catalogue.\n\n"
         "After `start` returns a plan, fetch each slug with `get_skill` (full "
         "markdown) or `get_skill_sections` (section-by-section).  Each skill "
-        "reports a quality tier: research-verified (drafted from authoritative "
-        "sources, awaiting credentialed sign-off) or accountant-verified (a "
-        "named licensed practitioner has signed off).  Always advise the user "
-        "to have output reviewed by a qualified professional before filing, "
-        "and cite the skill (and its verifier where accountant-verified).\n\n"
+        "reports its publisher, explicit author where available, and tax year. "
+        "Check its scope, method, applicable period and official sources. "
+        "Always advise professional review of outputs before filing, "
+        "and cite the Guide. Founder credit is not authorship or jurisdictional expertise.\n\n"
         "**Feedback**: when a user reports a problem with a skill, a missing "
         "jurisdiction, or anything else worth capturing, call `submit_feedback` "
         "— it returns a pre-filled GitHub New Issue URL the user opens to "
@@ -595,7 +545,7 @@ _READONLY = ToolAnnotations(read_only_hint=True, open_world_hint=False)
 
 @mcp.tool(annotations=_READONLY)
 def list_skills(jurisdiction: str | None = None, category: str | None = None) -> dict[str, Any]:
-    """List published skills with their quality tier and verifier.
+    """List published Guides with publisher, author and applicable tax year.
 
     Args:
         jurisdiction: Optional jurisdiction code filter, e.g. "MT", "GB", "US-CA".
@@ -613,7 +563,7 @@ def list_skills(jurisdiction: str | None = None, category: str | None = None) ->
             continue
         skills.append({k: rec[k] for k in (
             "slug", "title", "jurisdiction", "category",
-            "quality_tier", "verified_by", "last_updated",
+            "publisher", "authored_by", "tax_year", "last_updated",
         )})
     skills.sort(key=lambda s: (s["jurisdiction"], s["slug"]))
     if skills:
@@ -641,8 +591,8 @@ def get_skill(slug: str) -> dict[str, Any]:
         "slug": rec["slug"],
         "title": rec["title"],
         "jurisdiction": rec["jurisdiction"],
-        "quality_tier": rec["quality_tier"],
-        "verified_by": rec["verified_by"],
+        **attribution(rec),
+        "tax_year": rec.get("tax_year"),
         "markdown": body + "\n" + _provenance_footer(rec),
         "last_updated": rec["last_updated"],
         "next_action": (
@@ -932,7 +882,6 @@ def _skills_for_intent(jurisdiction: str, intent_key: str) -> list[dict[str, Any
         "slug": r["slug"],
         "title": r["title"],
         "category": r["category"] or None,
-        "quality_tier": r["quality_tier"],
         "purpose": _purpose_hint(r["slug"]),
     } for _, r in scored]
 
@@ -1280,7 +1229,7 @@ Step 4: Produce a working paper with:
   - All assumptions disclosed
   - Items flagged for accountant review
   - Filing deadlines and payment dates
-Step 5: End with: "This working paper was prepared using skills verified by [verifier name] at openaccountants.com. Have your accountant review before filing."
+Step 5: End with: "This working paper uses OpenAccountants Guides. Cite the applicable period and official sources, and have your accountant review before filing."
 
 Conservative defaults: when uncertain, assume MORE tax, never less.
 No LLM computes tax amounts — use only the rates and thresholds from the skills."""

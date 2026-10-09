@@ -8,9 +8,10 @@ the repo root:
 
 {
   "generated_at": "<UTC ISO>",
-  "counts": { "guides": N, "jurisdictions": N, "accountant_reviewed": N },
-  "guides": [ { "slug", "path", "name", "jurisdiction", "category", "tier",
-                "verified_by", "reviewed_by", "tax_year", "last_updated" }, ... ]
+  "schema_version": 2,
+  "counts": { "guides": N, "jurisdictions": N },
+  "guides": [ { "slug", "path", "name", "jurisdiction", "category", "publisher",
+                "authored_by", "founder_credit", "tax_year", "last_updated" }, ... ]
 }
 
 Dependency-free (stdlib only). Frontmatter is parsed with a simple ---block
@@ -26,6 +27,9 @@ import os
 import re
 import sys
 from datetime import datetime, timezone
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "mcp"))
+from openaccountants_mcp.public_guide_content import attribution
+
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -40,6 +44,10 @@ KNOWN_KEYS = [
     "name",
     "jurisdiction",
     "category",
+    "publisher",
+    "authored_by",
+    "author_profile",
+    "content_origin",
     "tier",
     "verified_by",
     "reviewed_by",
@@ -131,19 +139,13 @@ def build_index():
         if jurisdiction and CODE_RE.match(jurisdiction):
             jurisdiction = jurisdiction.upper()
 
-        tier = fields["tier"]
-        if isinstance(tier, str) and tier.isdigit():
-            tier = int(tier)
-
         guides.append({
             "slug": os.path.splitext(os.path.basename(rel_path))[0],
             "path": rel_path,
             "name": fields["name"],
             "jurisdiction": jurisdiction,
             "category": fields["category"],
-            "tier": tier,
-            "verified_by": fields["verified_by"],
-            "reviewed_by": fields["reviewed_by"],
+            **attribution(fields),
             "tax_year": fields["tax_year"],
             "last_updated": fields["last_updated"],
         })
@@ -151,27 +153,12 @@ def build_index():
     guides.sort(key=lambda g: g["path"])
 
     jurisdictions = {g["jurisdiction"] for g in guides if g["jurisdiction"]}
-    unreviewed_markers = {"pending", "none", "no", "false", "-", "n/a", "tbd"}
-
-    def is_reviewed(guide):
-        # Same rule as the MCP server's `_quality_tier`: only an explicit
-        # `tier: 1` plus a named reviewer counts. A reviewer name alone never
-        # implies sign-off, or this inventory reports guides as
-        # accountant-reviewed that the MCP server serves as research-verified.
-        if str(guide["tier"] or "").strip() != "1":
-            return False
-        for key in ("reviewed_by", "verified_by"):
-            value = guide[key]
-            if value and str(value).strip().lower() not in unreviewed_markers:
-                return True
-        return False
-
     return {
+        "schema_version": 2,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "counts": {
             "guides": len(guides),
             "jurisdictions": len(jurisdictions),
-            "accountant_reviewed": sum(1 for g in guides if is_reviewed(g)),
         },
         "guides": guides,
     }
@@ -181,8 +168,8 @@ def build_index():
 # counts that go into index.json, so the two never disagree; llms-full.txt
 # embeds llms.txt and picks the figures up on its next build.
 LLMS_COUNTS_RE = re.compile(
-    r"[\d,]+ Guides across [\d,]+ jurisdictions in this repository, "
-    r"[\d,]+ of them accountant-reviewed"
+    r"[\d,]+ Guides across [\d,]+ jurisdictions in this repository"
+    r"(?:, [\d,]+ of them accountant-reviewed(?: and signed off by named Partners(?: \(CPAs/CAs/EAs\))?)?)?"
 )
 
 
@@ -194,8 +181,7 @@ def stamp_llms_counts(counts, path=None):
         text = fh.read()
     stamped, n = LLMS_COUNTS_RE.subn(
         f"{counts['guides']:,} Guides across {counts['jurisdictions']:,} "
-        f"jurisdictions in this repository, {counts['accountant_reviewed']:,} "
-        "of them accountant-reviewed",
+        "jurisdictions in this repository",
         text,
     )
     if n != 1:
@@ -226,7 +212,6 @@ def main():
     print(f"index written to {out_path}")
     print(f"  guides: {counts['guides']}")
     print(f"  jurisdictions: {counts['jurisdictions']}")
-    print(f"  accountant_reviewed: {counts['accountant_reviewed']}")
 
 
 if __name__ == "__main__":

@@ -24,7 +24,7 @@ def _load(name: str, filename: str):
 
 build_index = _load("build_index_for_counts_tests", "build-index.py")
 
-COUNTS = {"guides": 2019, "jurisdictions": 245, "accountant_reviewed": 168}
+COUNTS = {"guides": 2019, "jurisdictions": 245, "unused_legacy_count": 168}
 SENTENCE = (
     "> Tax Guides. 1,998 Guides across 245 jurisdictions in this repository, "
     "171 of them accountant-reviewed and signed off by named Partners."
@@ -43,12 +43,14 @@ class StampLlmsCountsTests(unittest.TestCase):
         path = self._write("# llms\r\n\r\n" + SENTENCE + "\r\n")
         self.assertTrue(build_index.stamp_llms_counts(COUNTS, path=path))
         text = path.read_bytes().decode("utf-8")
-        self.assertIn("2,019 Guides across 245 jurisdictions in this repository, 168 of them accountant-reviewed", text)
+        self.assertIn("2,019 Guides across 245 jurisdictions in this repository.", text)
+        self.assertNotIn("accountant-reviewed", text)
+        self.assertNotIn("signed off", text)
         self.assertNotIn("1,998", text)
         self.assertEqual(text.count("\r\n"), 3)
 
     def test_unchanged_figures_do_not_rewrite(self) -> None:
-        path = self._write(SENTENCE + "\n")
+        path = self._write("> Tax Guides. 1,998 Guides across 245 jurisdictions in this repository.\n")
         before = path.stat().st_mtime_ns
         self.assertFalse(build_index.stamp_llms_counts({"guides": 1998, "jurisdictions": 245, "accountant_reviewed": 171}, path=path))
         self.assertEqual(path.stat().st_mtime_ns, before)

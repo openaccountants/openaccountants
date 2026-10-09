@@ -81,7 +81,7 @@ check("US-CA filter works (sub-national dir)", len(usca["skills"]) > 0, f"got {l
 sample = mt["skills"][0]
 check("skill has required fields",
       all(k in sample for k in ("slug", "title", "jurisdiction", "category",
-                                "quality_tier", "verified_by", "last_updated")),
+                                "publisher", "authored_by", "tax_year", "last_updated")),
       str(sample))
 
 # --- get_skill ------------------------------------------------------------
@@ -89,10 +89,8 @@ print("\nget_skill('malta-income-tax'):")
 gs = S.get_skill("malta-income-tax")
 check("has markdown", len(gs["markdown"]) > 500)
 check("has provenance footer", "Provenance & attribution" in gs["markdown"])
-check("explicit tier 2 stays research-verified",
-      gs["quality_tier"] == "research-verified", gs["quality_tier"])
-check("tier 2 does not expose a reviewer as verified", gs["verified_by"] is None,
-      str(gs["verified_by"]))
+check("publisher is explicit", gs["publisher"] == "OpenAccountants")
+check("historical endorsements omitted", "quality_tier" not in gs and "verified_by" not in gs)
 
 # --- get_skill_sections ---------------------------------------------------
 print("\nget_skill_sections('malta-income-tax'):")

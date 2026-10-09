@@ -1,40 +1,19 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source Tax Guides ("skills") for AI agents. 2,043 Guides across 245 jurisdictions in this repository, 156 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source Tax Guides ("skills") for AI agents. 2,043 Guides across 245 jurisdictions in this repository. Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
 OpenAccountants is a library of Tax Guides — tax rules written as plain markdown files ("skills" in technical contexts). Any AI agent that reads markdown can use them. Each Guide covers a specific tax task — income tax, VAT, payroll, deductions, crypto, cross-border — for a specific jurisdiction. Every figure cites a primary source (statute, tax-authority guidance, or official rate table).
 
-**Important:** This repo contains source-cited drafts. The accountant-reviewed versions — signed off by named licensed practitioners — are served via the live platform. See quality states below.
+## Attribution and evidence
 
-**Not advice — review required.** These Guides are general reference material for AI-assisted workflows, not tax, legal, accounting, or financial advice. They may be incomplete, outdated, or wrong, and are not reviewed for any specific person's facts. Any output you produce from them is a draft for professional review — do not file, pay, amend, or take a tax position based on it without review by a qualified professional in the relevant jurisdiction.
+Published by OpenAccountants, founded by [Michael Cutajar](https://www.openaccountants.com/network/ecd6fe97-c3ed-4337-8e12-d1e7456201a9). Founder credit identifies the founder; it is not Guide authorship, a review, or a claim of professional expertise in the Guide's jurisdiction. Credit a named author only when the Guide explicitly records authorship. Never turn a historical reviewer field into an author.
 
-## Quality states
+Use each Guide's scope, method, applicable period and official sources to assess whether it fits the question. Confirm time-sensitive figures against the cited authority. Automated checks are not professional approval. Legacy review fields in source files or Git history are historical metadata, not a current endorsement.
 
-- **Accountant-reviewed**: a named, licensed practitioner (CPA, CA, EA, Steuerberater, or local equivalent) has reviewed and signed off the Guide. Served via the MCP/website.
-- **Source-cited draft**: drafted from primary legislation and official tax-authority publications. Lives in this repo. Awaiting accountant review.
-
-Always tell users to have AI-generated output reviewed by a qualified professional before filing.
-
-## Partner roster — accountant reviewers (sample, refreshed 2026-09-06)
-
-These named practitioners have reviewed Guides for their jurisdictions. The accountant-reviewed version of their jurisdictions' Guides is signed under their name. This list is a hand-curated sample: `index.json` records the reviewer of every accountant-reviewed Guide in its `reviewed_by` field (32 distinct reviewer names as at 2026-09-06), and the full Partner network is at https://www.openaccountants.com/network.
-
-- **South Africa (ZA):** Werner Britz CA(SA), 5 skills — [openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0)
-- **Malta (MT):** Michael Cutajar CPA (Malta), 5 skills — [openaccountants.com/network](https://www.openaccountants.com/network)
-- **Brazil (BR):** Ariane Marrocos CRC/SP, 9 skills — [openaccountants.com/network/366f5c0f-1afb-4332-b87b-9b6f912821aa](https://www.openaccountants.com/network/366f5c0f-1afb-4332-b87b-9b6f912821aa)
-- **United Kingdom (GB):** James Power, 15 skills — [openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e)
-- **India (IN):** Mayur Deokar CA, 13 skills — [openaccountants.com/network/f4cb8476-a86d-4fd9-b536-9217e82ccf99](https://www.openaccountants.com/network/f4cb8476-a86d-4fd9-b536-9217e82ccf99)
-- **Indonesia (ID):** Rilia Putri CA, 10 skills — [openaccountants.com/network/ec70d43e-18c0-4b4e-b92c-4f8a22e10152](https://www.openaccountants.com/network/ec70d43e-18c0-4b4e-b92c-4f8a22e10152)
-- **Nepal (NP):** Ashish Bista CA, 5 skills — [openaccountants.com/network/78ab67db-8f29-4746-8102-7b52d17309aa](https://www.openaccountants.com/network/78ab67db-8f29-4746-8102-7b52d17309aa)
-- **Portugal (PT):** Mário Vale CA, 9 skills — [openaccountants.com/network/a26a63b7-343c-451b-8266-bb9d28bd7089](https://www.openaccountants.com/network/a26a63b7-343c-451b-8266-bb9d28bd7089)
-- **Saudi Arabia (SA):** Mehran Habib, 9 skills — [openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599](https://www.openaccountants.com/network/f9dbab51-2b89-451b-98f2-414b48fb4599)
-- **United States (US/US-IL):** Amir Pelinkovic CPA (Citrin Cooperman), 16 skills — [openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f](https://www.openaccountants.com/network/752ee18a-3843-434d-8426-457d3fa9706f)
-- **United States (US federal):** Christopher Aryee, CPA — US federal form guides in `packages/us-federal/`, including the OBBBA corrections review (2026)
-- **Germany, Australia**: Source-cited drafts — accountant review in progress.
-- **Canada (CA):** accountant-reviewed Guides are now present; see `reviewed_by` in `index.json`.
+Guides are general reference material and may be incomplete, outdated or unsuitable for a person's facts. Have a qualified professional in the relevant jurisdiction review outputs before filing or acting.
 
 ## Fastest way to use skills (don't read GitHub folder pages)
 
@@ -98,12 +77,10 @@ Trigger phrases: "I'm a freelancer in the US", "Schedule C", "1099 taxes", "self
 ### South Africa income tax → `workflows/south-africa-income-tax.md`
 Trigger: South African taxpayer — personal income tax, provisional tax, or ITR12.
 Trigger phrases: "income tax South Africa", "SARS return", "ITR12", "provisional tax SA".
-Reviewed by: Werner Britz CA(SA).
 
 ### Malta freelancer / self-employed → `workflows/malta-freelancer.md`
 Trigger: Malta-based freelancer, sole trader, or part-time self-employed person.
 Trigger phrases: "self-employed Malta", "freelancer Malta", "FS5 Malta", "SSC Malta", "Malta VAT registration".
-Reviewed by: Michael Cutajar CPA (Malta).
 
 ### Portugal self-employed → `workflows/portugal-self-employed.md`
 Trigger: Portugal-based self-employed person, digital nomad, NHR/IFICI holder, or freelancer.
@@ -115,7 +92,7 @@ Trigger phrases: "capital gains UK", "sold shares UK", "crypto tax UK", "SA108",
 
 ## For accountants
 
-Licensed practitioners can review Guides for their jurisdiction, put their name on each output, and earn from professional reviews.
+Practitioners can author and improve Guides for the work they know. Accepted contributions receive accurate authorship credit.
 Visit: https://www.openaccountants.com/for-accountants
 
 ## Live platform
