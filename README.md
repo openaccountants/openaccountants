@@ -1,8 +1,8 @@
 # OpenAccountants
 
-**Open-source Tax Guides your AI can cite — reviewed by named, licensed accountants.**
+**Tax Guides your AI can cite, with sources and published review status.**
 
-Every AI can do tax math. None of them can stand behind an answer. Here, real accountants put their **name, credential and review date** on the Guides your AI reads — publicly, on the record, in this repo.
+This library includes accountant-reviewed Guides and source-cited drafts. Check each Guide version's review record before relying on it; a named author is distinct from a professional reviewer. Guide content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
@@ -30,7 +30,7 @@ Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
 
-Without OpenAccountants, models answer from training data. With it, the answer cites the current Guide — and names the accountant who reviewed it.
+Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched Guide and its review status. Name a professional reviewer only when that Guide version has a published review record.
 
 ```
 You:    "I'm a freelancer in South Africa. What do I owe?"
