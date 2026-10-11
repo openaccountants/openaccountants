@@ -3,8 +3,8 @@ name: au-medicare-levy
 description: Use this skill whenever asked about the Australian Medicare Levy, Medicare Levy Surcharge (MLS), low-income reduction thresholds, family thresholds, surcharge tiers, private health insurance (PHI) rebate interaction, or Medicare levy exemptions. Trigger on phrases like "Medicare levy", "Medicare surcharge", "MLS", "do I pay Medicare levy", "low income Medicare", "Medicare levy reduction", "Medicare levy exemption", "private health insurance rebate", "PHI rebate", "M1", "M2", or any question about Medicare-related levies on an Australian tax return. ALWAYS read this skill before touching any Medicare levy work.
 version: 2.3
 jurisdiction: AU
-tax_year: 2024
-last_updated: 2026-09-10
+tax_year: 2025
+last_updated: 2026-10-12
 review_status: pending_review
 category: international
 tier: 2

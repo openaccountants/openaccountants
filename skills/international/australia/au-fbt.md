@@ -4,8 +4,8 @@ description: >
   Use this skill whenever asked about Australian Fringe Benefits Tax -- identifying fringe benefits in a general ledger, car fringe benefits (statutory formula or operating cost), the electric vehicle exemption, meal entertainment, minor benefits, expense payments and the otherwise-deductible rule, LAFHA, loan benefits, employee contributions, reportable fringe benefits amounts (RFBA), FBT gross-up and return preparation. Trigger on phrases like "FBT", "fringe benefits tax", "car fringe benefit", "novated lease FBT", "EV FBT exemption", "entertainment FBT", "minor benefit", "50/50 method", "LAFHA", "living away from home", "gross-up", "Type 1 Type 2", "RFBA", "reportable fringe benefits", or when sweeping a GL for FBT exposure. The FBT year runs 1 April to 31 March. ALWAYS read this skill before touching any FBT work.
 version: 1.1
 jurisdiction: AU
-tax_year: 2025
-last_updated: 2026-09-10
+tax_year: 2026
+last_updated: 2026-10-12
 review_status: pending_review
 category: international
 tier: 2

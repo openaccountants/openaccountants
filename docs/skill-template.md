@@ -10,7 +10,7 @@
 | `description` | 80-100 words | What it covers, entity types, jurisdiction, tax year, plus trigger phrases the AI should match |
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
-| `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in `tax_year_notes`, never here. CI errors on anything that is not an integer 2015-2035 |
+| `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in the body text, never here. CI errors on anything that is not an integer 2015-2035 |
 | `tier` | `1` or `2` | `1` = **accountant-reviewed** (a named licensed accountant fully reviewed and signed off); `2` = **source-cited draft** (drafted from primary sources, awaiting review). These are the only two quality states |
 | `last_updated` | `YYYY-MM-DD` | Date the content was last checked/edited. It must never move backwards |
 
@@ -18,7 +18,7 @@
 
 | Key | Format | Notes |
 |-----|--------|-------|
-| `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"` |
+| `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"`. The platform does not store this key, so the daily export drops it when it re-renders a Guide. Put the year label in the body text, such as a "Tax year" row in the quick-reference table, so it survives |
 | `verified_by` | `pending` or `Name, Credential` | e.g. `Michael Cutajar, CPA (Malta)`. Stored identifier — the field name stays `verified_by` even though the display language is "reviewed". A real name here does **not** imply `tier: 1`; set `tier: 1` explicitly as well. CI errors if `tier: 2` carries a real `verified_by` |
 | `reviewed_by` | `Name, Credential` | Used on the hand-authored `packages/us-federal/` guides (e.g. `Christopher Aryee, CPA`) |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |

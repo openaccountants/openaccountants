@@ -4,8 +4,8 @@ description: >
   Use this skill whenever asked about Division 7A of the ITAA 1936 -- private company loans, payments or debt forgiveness to shareholders or their associates, complying loan agreements, minimum yearly repayments, the benchmark interest rate, distributable surplus, unpaid present entitlements (UPEs) to corporate beneficiaries after Bendel, use of company assets by shareholders, or deemed dividends. Trigger on phrases like "Div 7A", "Division 7A", "shareholder loan", "director loan account", "debit loan", "minimum yearly repayment", "benchmark interest rate", "complying loan", "deemed dividend", "distributable surplus", "UPE", "bucket company", "unpaid present entitlement", or when a GL shows debit balances in shareholder/director accounts. ALWAYS read this skill before touching any Div 7A work.
 version: 1.1
 jurisdiction: AU
-tax_year: 2025
-last_updated: 2026-09-10
+tax_year: 2026
+last_updated: 2026-10-12
 review_status: pending_review
 category: international
 tier: 2

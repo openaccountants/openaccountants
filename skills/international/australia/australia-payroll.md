@@ -13,8 +13,8 @@ description: >
   ALWAYS read this skill before processing any Australian payroll work.
 version: 2.5
 jurisdiction: AU
-tax_year: 2025
-last_updated: 2026-09-27
+tax_year: 2026
+last_updated: 2026-10-12
 review_status: pending_review
 category: payroll
 tier: 2
