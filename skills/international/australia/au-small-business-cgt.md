@@ -6,7 +6,7 @@ version: 1.0
 jurisdiction: AU
 tax_year: 2026
 tax_year_notes: "2026-27"
-last_updated: 2026-08-20
+last_updated: 2026-10-12
 review_status: pending_review
 category: international
 tier: 2
