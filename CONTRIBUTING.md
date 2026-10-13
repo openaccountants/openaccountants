@@ -4,7 +4,16 @@ Thanks for your interest in contributing. Here's how it works.
 
 ## Who can contribute
 
-Anyone. You don't need to be an accountant to write a skill. You need to know your country's rules well enough to cite the statutes — whether that's tax rates, payroll obligations, e-invoicing specs, or company formation steps. Partners — licensed accountants — then review what you wrote.
+Guides are written by **verified accountants**: people whose professional licence or registration number we have checked. Pull requests that add or change Guides (`skills/**`) are merged only from verified accountants.
+
+To get verified: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence or registration number, and set your GitHub username in your profile so we can match your pull requests to you.
+
+Not an accountant? You are still welcome to:
+
+- **Report an error** in a Guide by opening an issue with the source that shows it. A verified accountant or the OpenAccountants team will fix it.
+- **Contribute code** (`mcp/`, `scripts/`, `.github/`). Code changes do not need an accountant licence.
+
+There are no fees and no minimum contribution. Contributions of any kind need the [CLA](#contributor-license-agreement-cla).
 
 ## How to contribute a skill
 
@@ -102,7 +111,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review
 
-After you submit, Partners — licensed accountants — review your skill on [openaccountants.com](https://www.openaccountants.com). When the full review is approved, the skill becomes **accountant-reviewed** (Tier 1). Your name stays on it as the author.
+A verified accountant's Guide publishes credited to them as **Accountant-authored**. Another verified accountant can then attest to it, and their name and review date go on it too.
 
 ## Contributor License Agreement (CLA)
 
@@ -118,5 +127,5 @@ If anything in [CLA.md](CLA.md) is unclear, ask before contributing.
 
 - Your name on the skill, linked to your contributor profile
 - Public contributor profile showing all your contributions
-- Accountant review — real professionals review your work
+- Attestation from other verified accountants, named on the Guide
 - The knowledge that thousands of freelancers and small businesses are using your skill to manage their accounting
