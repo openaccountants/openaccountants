@@ -4,9 +4,9 @@ Thanks for your interest in contributing. Here's how it works.
 
 ## Who can contribute
 
-Guides are written by **verified accountants**: people whose professional licence or registration number we have checked. Pull requests that add or change Guides (`skills/**`) are merged only from verified accountants.
+Guides are written by **verified accountants**: people whose professional licence or registration number we have checked. Provisional or student members of a professional body (for example a CA ANZ provisional member) count too, once we have checked their membership. Pull requests that add or change Guides (`skills/**`) are merged only from verified accountants.
 
-To get verified: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence or registration number, and set your GitHub username in your profile so we can match your pull requests to you.
+To get verified: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number, and set your GitHub username in your profile so we can match your pull requests to you.
 
 Not an accountant? You are still welcome to:
 
