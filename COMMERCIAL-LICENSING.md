@@ -29,6 +29,11 @@ A commercial licence from Glimpse Ltd covers the use you need across both tracks
 ## When you DO NOT need a commercial licence
 
 - An individual preparing your own tax return with the Guides in any AI tool.
+- A company or organisation using the Guides for **its own** bookkeeping,
+  accounting review, tax affairs, or staff training. This includes loading them
+  into Claude Code or any MCP client, and indexing them for an internal retrieval
+  workflow that only your own people use for your own affairs. Internal use is
+  not Commercial Use. The line is offering the result to third parties.
 - An accountant or tax professional using the Guides as a reference for client
   work (your accounting software and workpapers are not, by that use alone, a
   derivative of the Guides).
