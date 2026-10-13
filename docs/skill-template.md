@@ -87,7 +87,7 @@ description: >
 jurisdiction: XX   # REQUIRED — MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-27, etc.
 category: international   # see the category vocabulary above
 tax_year: 2025             # bare integer = coverage start year
-tax_year_notes: "2025-26"  # optional — only when a bare year can't express it
+tax_year_notes: "2025-26"  # optional; the export drops it, so repeat the label in the body
 tier: 2                    # 1 = accountant-reviewed | 2 = source-cited draft
 last_updated: 2026-07-04   # YYYY-MM-DD
 version: 0.1
@@ -110,7 +110,7 @@ verified_by: pending       # or "Name, Credential" — stored field name stays v
 [Describe: what it computes, where it fits in the pipeline, what it does NOT cover.
 Reference the upstream skills it depends on and the downstream skills that consume its output.]
 
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+**Tax year coverage.** This skill is current for **tax year 2025-26** as of its currency date.
 
 **The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
 
