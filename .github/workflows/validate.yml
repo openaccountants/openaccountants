@@ -42,12 +42,14 @@ jobs:
           git fetch origin "$BASE_REF" --depth 50
           BAD=$(git diff --name-only "$BASE"...HEAD -- \
             'index.json' 'llms-full.txt' 'packages/**' \
+            'agent-skills/*/SKILL.md' 'agent-skills/index.json' \
+            'plugins/openaccountants/skills/**' \
             ':(exclude)packages/us-federal/**' | head -20)
           if [ -n "$BAD" ]; then
             echo "generated_files_touched<<EOM" >> "$GITHUB_OUTPUT"
             echo "$BAD" >> "$GITHUB_OUTPUT"
             echo "EOM" >> "$GITHUB_OUTPUT"
-            echo "::error::This PR edits generated files. Edit skills/** only — index.json, llms-full.txt and packages/ are rebuilt by the scheduled platform sync after confirmed source ingestion."
+            echo "::error::This PR edits generated files. Edit skills/** only — index.json, llms-full.txt, packages/, agent-skills/<slug>/SKILL.md, agent-skills/index.json and plugins/openaccountants/skills/ are rebuilt by the scheduled platform sync after confirmed source ingestion."
             exit 1
           fi
           echo "clean"
