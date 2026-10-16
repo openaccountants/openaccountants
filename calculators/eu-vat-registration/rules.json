@@ -1,0 +1,42 @@
+{
+  "calculator": "eu-vat-registration",
+  "question": "I sell to customers in other EU countries. Do I have to register for VAT elsewhere, and whose VAT do I charge?",
+  "as_of": "2026-10-16",
+  "skills": ["eu-oss-digital", "cross-border-vat-gst", "eu-reverse-charge"],
+  "figures": {
+    "eu_b2c_threshold_eur": {
+      "value": 10000,
+      "label": "EU-wide threshold for cross-border B2C sales of goods and digital services by EU-established sellers",
+      "basis": "Council Directive 2006/112/EC, Article 59c (inserted by Directive (EU) 2017/2455), in force since 1 July 2021. Counted across all other member states together, for the current and the previous calendar year.",
+      "source": "https://eur-lex.europa.eu/eli/dir/2006/112/oj"
+    },
+    "ioss_consignment_limit_eur": {
+      "value": 150,
+      "label": "Intrinsic value limit per consignment for the Import One Stop Shop (goods shipped from outside the EU to EU consumers)",
+      "basis": "Council Directive 2006/112/EC, Articles 369l to 369x (import scheme).",
+      "source": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-e-commerce/one-stop-shop_en"
+    },
+    "oss_return_deadline": {
+      "value": "end of the month following each calendar quarter",
+      "label": "Union and non-Union OSS quarterly return and payment deadline",
+      "basis": "Council Directive 2006/112/EC, Article 369f (non-Union) and Article 369g/369i (Union scheme): quarterly return by the end of the month following the quarter.",
+      "source": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-e-commerce/one-stop-shop_en"
+    },
+    "uk_vat_registration_threshold_gbp": {
+      "value": 90000,
+      "label": "UK VAT registration threshold for UK-established businesses (non-UK sellers of B2C digital services to UK consumers must register from the first sale)",
+      "basis": "Value Added Tax Act 1994 Schedule 1 as amended; threshold GBP 90,000 from 1 April 2024.",
+      "source": "https://www.gov.uk/vat-registration/when-to-register"
+    }
+  },
+  "sources": [
+    "https://eur-lex.europa.eu/eli/dir/2006/112/oj",
+    "https://taxation-customs.ec.europa.eu/taxation/vat/vat-e-commerce/one-stop-shop_en",
+    "https://www.gov.uk/vat-registration/when-to-register"
+  ],
+  "limits": [
+    "An estimate from the rules above, not advice on your situation. Member states apply the directive through national law and procedure.",
+    "Excluded: excise goods, new means of transport, margin-scheme goods, services connected to land, admission to events, passenger transport, restaurant and catering, and sellers established in more than one member state.",
+    "Figures are checked against the official pages on the as_of date. Confirm them there before you register or file."
+  ]
+}
