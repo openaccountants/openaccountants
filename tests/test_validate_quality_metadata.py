@@ -14,17 +14,21 @@ assert SPEC.loader is not None
 SPEC.loader.exec_module(validate_guides)
 
 
-def errors_for(tier=None, reviewed_by=None, verified_by=None):
+def errors_for(tier=None, reviewed_by=None, verified_by=None, publisher=None):
     errors = []
     validate_guides.check_quality_metadata(
         "skills/example.md",
-        {"tier": tier, "reviewed_by": reviewed_by, "verified_by": verified_by},
+        {"tier": tier, "reviewed_by": reviewed_by, "verified_by": verified_by, "publisher": publisher},
         errors,
     )
     return errors
 
 
 class QualityMetadataValidationTests(unittest.TestCase):
+    def test_new_publisher_metadata_needs_no_reviewer_or_tier(self) -> None:
+        self.assertEqual(errors_for(publisher="OpenAccountants"), [])
+        self.assertIn("publisher", errors_for(publisher="   ")[0])
+
     def test_rejects_missing_or_invalid_tier(self) -> None:
         self.assertIn("missing required", errors_for()[0])
         self.assertIn("must be 1 or 2", errors_for("3")[0])

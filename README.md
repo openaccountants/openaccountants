@@ -1,15 +1,15 @@
 # OpenAccountants
 
-**Free AI skills (tax rules your AI follows) your AI can cite, with sources and published review status.**
+**Free AI skills (tax rules your AI follows) your AI can cite, with sources, methods and applicable periods.**
 
-This library includes accountant-reviewed skills and source-cited drafts. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
+Published by **OpenAccountants**, founded by [Michael Cutajar](https://www.openaccountants.com/network/ecd6fe97-c3ed-4337-8e12-d1e7456201a9). Each Guide explains a tax task for a particular jurisdiction. Named authors receive credit for their work; founder credit does not imply authorship or professional expertise in every jurisdiction.
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
 <!-- oa-stats:start -->
-**1,903 AI skills** across **230 jurisdictions** · **51 accountant-reviewed** · **44 named accountants** · **19,965 questions answered** through connected AIs
+**1,903 AI skills** across **230 jurisdictions** · **44 named accountants** · **19,965 questions answered** through connected AIs
 
 <sub>Live from openaccountants.com — updated 2026-10-17 by the nightly sync.</sub>
 <!-- oa-stats:end -->
@@ -30,7 +30,7 @@ Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
 
-Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched skill and its review status. Name a professional reviewer only when that skill version has a published review record.
+Without OpenAccountants, models answer from training data. With it, the answer can cite a Guide, its applicable period and its official sources.
 
 ```
 You:    "I'm moving to Malta and selling my company next year. What tax do I face?"
@@ -38,7 +38,7 @@ You:    "I'm moving to Malta and selling my company next year. What tax do I fac
 AI:     Residence and domicile · Remittance basis on foreign income
         Gain on the share sale · Participation exemption check
         ─────────────────────────────────────────
-        Authored by Michael Cutajar CPA, ACCA (Malta)
+        Source: OpenAccountants · applicable tax year
 ```
 
 <details>
@@ -51,14 +51,11 @@ AI:     Residence and domicile · Remittance basis on foreign income
 
 ---
 
-## Two states, greppable honesty
+## How to assess a Guide
 
-Every skill is in exactly one state — and the repo greps honestly:
+Read its jurisdiction, applicable tax year, scope, assumptions, calculation method and official sources. Publisher and author credit identify who supplied material; they do not certify it as correct or current. Automated source checks describe a check, not professional sign-off.
 
-| State | Meaning |
-|---|---|
-| **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from primary legislation, every figure cited to its source — not yet professionally reviewed |
+Historical review fields may remain in older source files and Git history. Current generated indexes and MCP responses do not present them as endorsements. See [Guide attribution and evidence](docs/QUALITY-TIERS.md).
 
 ⚠️ **General reference, not advice.** skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 
@@ -68,11 +65,11 @@ Every skill is in exactly one state — and the repo greps honestly:
 
 Your name on the tax knowledge AI actually uses — with attribution built in:
 
-1. **Build a skill** for the work you know cold: [openaccountants.com/skills/new](https://www.openaccountants.com/skills/new). It publishes credited to you, and lands in this repo under your name.
-2. **Review a skill** in your jurisdiction — your name, credential and review date go on it, here and on every AI answer that cites it.
+1. **Build a Guide** for the work you know cold: [openaccountants.com/skills/new](https://www.openaccountants.com/skills/new). It publishes credited to you, and lands in this repo under your name.
+2. **Improve a Guide** in your jurisdiction with a correction, method or official source. Authorship credit reflects the work you contribute.
 3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile) and your platform edits are committed to this repo as *you* — your contribution graph reflects your work.
 
-The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the platform).
+Find practitioners in the **[accountant directory](https://www.openaccountants.com/network)**. A directory listing is not a Guide endorsement.
 
 ---
 

@@ -53,7 +53,7 @@ class SkillFileTests(unittest.TestCase):
         self.assertTrue(out.startswith("---\nname: mt-rental\n"))
         self.assertIn('  jurisdiction: "MT"', out)
         self.assertIn("# Malta rental income", out)
-        self.assertIn("## Today's figures and who stands behind this skill", out)
+        self.assertIn("## Today's figures and source attribution", out)
         self.assertIn("`get_skill` with slug `mt-rental`", out)
         self.assertIn("https://www.openaccountants.com/skills/mt-rental", out)
 
@@ -62,12 +62,25 @@ class SkillFileTests(unittest.TestCase):
             "a": {"authored_by": "Michael Cutajar and the OpenAccountants team", "reviewed_by": None},
             "b": {"authored_by": None, "reviewed_by": "Jane Doe, CPA"},
             "c": {"authored_by": None, "reviewed_by": None},
+            "d": {"authored_by": "Actual Author"},
         }
         text = "intro\n<!-- oa-skills-stats:start -->\nold\n<!-- oa-skills-stats:end -->\nrest"
         out = build.stamp_readme(text, built, ["MT", "NL"])
-        self.assertIn("**3 skills** across **2 jurisdictions**", out)
-        self.assertIn("1 have a named accountant behind them (author or reviewer, in `metadata`), 1 were built by the OpenAccountants team, and 1 are source-cited drafts", out)
+        self.assertIn("**4 skills** across **2 jurisdictions**", out)
+        self.assertIn("Explicit authors: 1; no named author: 3", out)
+        self.assertNotIn("reviewer", out)
         self.assertTrue(out.startswith("intro\n") and out.endswith("\nrest"))
+
+    def test_skill_exports_preserve_cautions_without_reviewer_endorsements(self) -> None:
+        meta = {"reviewed_by": "Reviewer CPA", "review_status": "current", "trust_label": "accountant-reviewed"}
+        body = "# Sample (Tier 2 — research-verified, reviewer sign-off pending)\n\nReviewed by: Reviewer CPA\nVerification status: Recheck the applicable period before filing.\n"
+        out = build.skill_md("sample", meta, body)
+        self.assertNotIn("Reviewer CPA", out)
+        self.assertNotIn("review_status:", out)
+        self.assertNotIn("trust_label:", out)
+        self.assertNotIn("research-verified", out)
+        self.assertIn("Recheck the applicable period before filing.", out)
+        self.assertIn('publisher: "OpenAccountants"', out)
 
 
 class TreeTests(unittest.TestCase):

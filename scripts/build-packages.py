@@ -37,10 +37,22 @@ import os
 import re
 import shutil
 import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "mcp"))
+from openaccountants_mcp.public_guide_content import sanitize_markdown
+
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def copy_public_guide(source, destination):
+    with open(source, encoding="utf-8") as fh:
+        content = sanitize_markdown(fh.read())
+    with open(destination, "w", encoding="utf-8") as fh:
+        fh.write(content)
+
+
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
 PACKAGES_DIR = os.path.join(REPO_ROOT, "packages")
 
@@ -293,7 +305,7 @@ At the END of every output, include:
 > ---
 > OpenAccountants — open-source accounting skills for AI
 > This output must be reviewed by a qualified professional before filing or acting upon.
-> Latest verified skills: **openaccountants.com** | Report errors: **github.com/openaccountants/openaccountants**
+> Latest Guides: **openaccountants.com** | Report errors: **github.com/openaccountants/openaccountants**
 
 **Do NOT skip these notices. They are mandatory on every output.**
 """
@@ -445,7 +457,7 @@ The AI will:
 
 **This is not tax, legal, or financial advice.** Everything produced must be reviewed and signed off by a qualified {practitioner_title} before filing or acting upon.
 
-The most up-to-date, verified version of these skills is maintained at [openaccountants.com](https://www.openaccountants.com).
+The latest published version of these skills is maintained at [openaccountants.com](https://www.openaccountants.com).
 
 ---
 
@@ -459,7 +471,7 @@ These {country_name} tax skills need your eye. Every rate, threshold, and form r
 2. Check the rates against {tax_authority}'s website
 3. Email your corrections to **info@openaccountants.com** — Word doc, Excel, PDF, tracked changes, whatever works
 
-We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
+We attribute accepted contributions to their authors at [openaccountants.com](https://www.openaccountants.com).
 
 Or if you're comfortable with GitHub: fork the repo, fix the source file under `skills/`, and submit a PR.
 
@@ -561,14 +573,14 @@ def build_package(country_dir_name, country_dir):
     copied_files = ["foundation.md", "intake.md"]
     for filename, filepath in content_skills:
         dest = os.path.join(pkg_dir, filename)
-        shutil.copy2(filepath, dest)
+        copy_public_guide(filepath, dest)
         copied_files.append(filename)
 
     # Copy EU VAT base if EU member
     if code in EU_MEMBERS:
         eu_vat = os.path.join(SKILLS_DIR, "international", "eu", "eu-vat-base.md")
         if os.path.exists(eu_vat):
-            shutil.copy2(eu_vat, os.path.join(pkg_dir, "eu-vat-directive.md"))
+            copy_public_guide(eu_vat, os.path.join(pkg_dir, "eu-vat-directive.md"))
             copied_files.append("eu-vat-directive.md")
 
     # Copy domain-specific workflow bases when matching skills exist
@@ -586,16 +598,16 @@ def build_package(country_dir_name, country_dir):
         if base_file and any(keyword in f for f, _ in content_skills):
             base_path = os.path.join(SKILLS_DIR, "foundation", base_file)
             if os.path.exists(base_path):
-                shutil.copy2(base_path, os.path.join(pkg_dir, base_file))
+                copy_public_guide(base_path, os.path.join(pkg_dir, base_file))
                 copied_files.append(base_file)
 
     # Copy orchestrator files if they exist
     intake_file, assembly_file = find_orchestrator_files(country_dir_name)
     if intake_file and os.path.exists(intake_file):
-        shutil.copy2(intake_file, os.path.join(pkg_dir, f"{country_dir_name}-guided-intake.md"))
+        copy_public_guide(intake_file, os.path.join(pkg_dir, f"{country_dir_name}-guided-intake.md"))
         copied_files.append(f"{country_dir_name}-guided-intake.md")
     if assembly_file and os.path.exists(assembly_file):
-        shutil.copy2(assembly_file, os.path.join(pkg_dir, f"{country_dir_name}-return-assembly.md"))
+        copy_public_guide(assembly_file, os.path.join(pkg_dir, f"{country_dir_name}-return-assembly.md"))
         copied_files.append(f"{country_dir_name}-return-assembly.md")
 
     # Write README
@@ -668,7 +680,7 @@ def build_us_state_readme(state_name, state_code, files):
     return f"""# {state_name} ({state_code.upper()}) — AI Tax Assistant | OpenAccountants
 
 > Open-source federal + {state_name} state tax skills for AI.
-> Upload to Claude, ChatGPT, or any AI assistant. Verified by accountants.
+> Upload to Claude, ChatGPT, or any AI assistant. Published by OpenAccountants.
 
 ## What's in this folder
 
@@ -694,7 +706,7 @@ The AI will:
 **This is not tax advice.** Everything produced must be reviewed and signed off by a
 qualified CPA, EA, or tax attorney before filing.
 
-The most up-to-date, verified version of these skills is maintained at
+The latest published version of these skills is maintained at
 [openaccountants.com](https://www.openaccountants.com).
 
 ---
@@ -709,7 +721,7 @@ These {state_name} tax skills need your eye. Every rate, threshold, and form ref
 2. Check the rates against your state tax authority's website and the IRS
 3. Email your corrections to **info@openaccountants.com** — Word doc, Excel, PDF, tracked changes, whatever works
 
-We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
+We attribute accepted contributions to their authors at [openaccountants.com](https://www.openaccountants.com).
 
 Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us-states/{state_code}/` or `skills/federal/`, and submit a PR.
 
@@ -738,7 +750,7 @@ def build_us_state_package(state_code):
     # 1. US workflow base (foundation equivalent)
     us_base = os.path.join(SKILLS_DIR, "foundation", "us-tax-workflow-base.md")
     if os.path.isfile(us_base):
-        shutil.copy2(us_base, os.path.join(pkg_dir, "us-tax-workflow-base.md"))
+        copy_public_guide(us_base, os.path.join(pkg_dir, "us-tax-workflow-base.md"))
         copied_files.append("us-tax-workflow-base.md")
 
     # 2. All federal skills
@@ -746,7 +758,7 @@ def build_us_state_package(state_code):
     if os.path.isdir(federal_dir):
         for f in sorted(os.listdir(federal_dir)):
             if f.endswith(".md"):
-                shutil.copy2(os.path.join(federal_dir, f), os.path.join(pkg_dir, f))
+                copy_public_guide(os.path.join(federal_dir, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
 
     # 3. Core US orchestrator files
@@ -755,7 +767,7 @@ def build_us_state_package(state_code):
     for f in core_orch:
         src = os.path.join(orch_dir, f)
         if os.path.isfile(src):
-            shutil.copy2(src, os.path.join(pkg_dir, f))
+            copy_public_guide(src, os.path.join(pkg_dir, f))
             copied_files.append(f)
 
     # 4. State-specific orchestrator files (CA, NY, TX)
@@ -767,7 +779,7 @@ def build_us_state_package(state_code):
     for f in state_orch_map.get(state_code, []):
         src = os.path.join(orch_dir, f)
         if os.path.isfile(src):
-            shutil.copy2(src, os.path.join(pkg_dir, f))
+            copy_public_guide(src, os.path.join(pkg_dir, f))
             copied_files.append(f)
 
     # 5. State-specific skill files (everything except README.md)
@@ -776,7 +788,7 @@ def build_us_state_package(state_code):
     if os.path.isdir(state_dir):
         for f in sorted(os.listdir(state_dir)):
             if f.endswith(".md") and f != "README.md":
-                shutil.copy2(os.path.join(state_dir, f), os.path.join(pkg_dir, f))
+                copy_public_guide(os.path.join(state_dir, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
                 state_skill_count += 1
 
@@ -836,7 +848,7 @@ def build_canada_province_readme(province_name, province_code, files):
     return f"""# {province_name} ({province_code.upper()}) — AI Tax Assistant | OpenAccountants
 
 > Open-source federal + {province_name} provincial/territorial tax skills for AI.
-> Upload to Claude, ChatGPT, or any AI assistant. Verified by accountants.
+> Upload to Claude, ChatGPT, or any AI assistant. Published by OpenAccountants.
 
 ## What's in this folder
 
@@ -864,7 +876,7 @@ The AI will:
 **This is not tax advice.** Everything produced must be reviewed and signed off by a
 qualified Canadian CPA before filing.
 
-The most up-to-date, verified version of these skills is maintained at
+The latest published version of these skills is maintained at
 [openaccountants.com](https://www.openaccountants.com).
 
 ---
@@ -879,7 +891,7 @@ These {province_name} tax skills need your eye. Every rate, threshold, and form 
 2. Check the rates against the CRA and your provincial/territorial finance department
 3. Email your corrections to **info@openaccountants.com** — Word doc, Excel, PDF, tracked changes, whatever works
 
-We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
+We attribute accepted contributions to their authors at [openaccountants.com](https://www.openaccountants.com).
 
 Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/international/canada/{CA_PROVINCE_DIRS.get(province_code, province_code)}/`, and submit a PR.
 
@@ -922,7 +934,7 @@ def build_canada_province_package(province_code):
         for f in sorted(os.listdir(canada_root)):
             full = os.path.join(canada_root, f)
             if os.path.isfile(full) and f.endswith(".md"):
-                shutil.copy2(full, os.path.join(pkg_dir, f))
+                copy_public_guide(full, os.path.join(pkg_dir, f))
                 copied_files.append(f)
 
     # 4. Domain workflow bases for any domains present in the federal pool
@@ -938,7 +950,7 @@ def build_canada_province_package(province_code):
         if any(keyword in f for f in copied_files):
             base_path = os.path.join(SKILLS_DIR, "foundation", base_file)
             if os.path.isfile(base_path) and base_file not in copied_files:
-                shutil.copy2(base_path, os.path.join(pkg_dir, base_file))
+                copy_public_guide(base_path, os.path.join(pkg_dir, base_file))
                 copied_files.append(base_file)
 
     # 5. Province-specific skill files
@@ -947,7 +959,7 @@ def build_canada_province_package(province_code):
     if os.path.isdir(province_source):
         for f in sorted(os.listdir(province_source)):
             if f.endswith(".md") and f != "README.md":
-                shutil.copy2(os.path.join(province_source, f), os.path.join(pkg_dir, f))
+                copy_public_guide(os.path.join(province_source, f), os.path.join(pkg_dir, f))
                 copied_files.append(f)
                 province_skill_count += 1
 
@@ -956,7 +968,7 @@ def build_canada_province_package(province_code):
     for orch_file in ("ca-freelance-intake.md", "ca-return-assembly.md", "global-router.md"):
         src = os.path.join(orch_dir, orch_file)
         if os.path.isfile(src):
-            shutil.copy2(src, os.path.join(pkg_dir, orch_file))
+            copy_public_guide(src, os.path.join(pkg_dir, orch_file))
             copied_files.append(orch_file)
 
     # 7. Generate README
@@ -1112,19 +1124,19 @@ def main():
             # Copy top-level cross-border skills
             for f in sorted(os.listdir(xb_dir)):
                 if f.endswith(".md"):
-                    shutil.copy2(os.path.join(xb_dir, f), os.path.join(xb_pkg, f))
+                    copy_public_guide(os.path.join(xb_dir, f), os.path.join(xb_pkg, f))
                     xb_files.append(f)
             # Copy treaty corridor files from subdirectory
             corridors_dir = os.path.join(xb_dir, "treaty-corridors")
             if os.path.isdir(corridors_dir):
                 for f in sorted(os.listdir(corridors_dir)):
                     if f.endswith(".md"):
-                        shutil.copy2(os.path.join(corridors_dir, f), os.path.join(xb_pkg, f))
+                        copy_public_guide(os.path.join(corridors_dir, f), os.path.join(xb_pkg, f))
                         xb_files.append(f)
             # Copy cross-border workflow base from foundation
             xb_base = os.path.join(SKILLS_DIR, "foundation", "cross-border-workflow-base.md")
             if os.path.isfile(xb_base):
-                shutil.copy2(xb_base, os.path.join(xb_pkg, "cross-border-workflow-base.md"))
+                copy_public_guide(xb_base, os.path.join(xb_pkg, "cross-border-workflow-base.md"))
                 xb_files.append("cross-border-workflow-base.md")
             if xb_files:
                 with open(os.path.join(xb_pkg, "README.md"), "w") as fh:
@@ -1156,7 +1168,7 @@ def main():
             vert_files = []
             for f in sorted(os.listdir(vert_dir)):
                 if f.endswith(".md"):
-                    shutil.copy2(os.path.join(vert_dir, f), os.path.join(vert_pkg, f))
+                    copy_public_guide(os.path.join(vert_dir, f), os.path.join(vert_pkg, f))
                     vert_files.append(f)
             if vert_files:
                 with open(os.path.join(vert_pkg, "README.md"), "w") as fh:
@@ -1184,7 +1196,7 @@ def main():
             integ_files = []
             for f in sorted(os.listdir(integ_dir)):
                 if f.endswith(".md"):
-                    shutil.copy2(os.path.join(integ_dir, f), os.path.join(integ_pkg, f))
+                    copy_public_guide(os.path.join(integ_dir, f), os.path.join(integ_pkg, f))
                     integ_files.append(f)
             if integ_files:
                 with open(os.path.join(integ_pkg, "README.md"), "w") as fh:

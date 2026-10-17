@@ -33,6 +33,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from frontmatter_yaml import FrontmatterError, load_frontmatter  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "mcp"))
+from openaccountants_mcp.public_guide_content import attribution, sanitize_markdown  # noqa: E402
+
 SKILLS_DIR = REPO_ROOT / "skills"
 OUT_DIR = REPO_ROOT / "agent-skills"
 PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants" / "skills"
@@ -112,14 +115,11 @@ def yaml_quote(s: str) -> str:
 
 
 def skill_md(slug: str, meta: dict, body: str) -> str:
+    body = sanitize_markdown(body, meta)
     desc = derive_description(meta, body, slug)
     jurisdiction = str(meta.get("jurisdiction") or "").strip()
-    trust = str(meta.get("trust_label") or "").strip()
-    review = str(meta.get("review_status") or "").strip()
     tax_year = meta.get("tax_year")
     updated = str(meta.get("last_updated") or "").strip()
-    authored = str(meta.get("authored_by") or "").strip()
-    reviewed = str(meta.get("reviewed_by") or "").strip()
     lines = [
         "---",
         f"name: {slug}",
@@ -135,46 +135,28 @@ def skill_md(slug: str, meta: dict, body: str) -> str:
         lines.append(f"  tax_year: {yaml_quote(str(tax_year))}")
     if updated:
         lines.append(f"  last_updated: {yaml_quote(updated)}")
-    if authored:
-        lines.append(f"  authored_by: {yaml_quote(authored)}")
-    if reviewed:
-        lines.append(f"  reviewed_by: {yaml_quote(reviewed)}")
-    if trust:
-        lines.append(f"  trust_label: {yaml_quote(trust)}")
-    if review:
-        lines.append(f"  review_status: {yaml_quote(review)}")
+    for key, value in attribution(meta).items():
+        if value:
+            lines.append(f"  {key}: {yaml_quote(value)}")
     lines.append("---")
     live = (
-        "\n\n## Today's figures and who stands behind this skill\n\n"
+        "\n\n## Today's figures and source attribution\n\n"
         f"This file is an AI skill ({GLOSS}) from OpenAccountants, copied on {updated or 'the date in last_updated'}. "
         "Rates, thresholds and deadlines change. For the current version of this skill, its official sources and "
-        "the named accountant (if any) who stands behind it, call `get_skill` with slug `" + slug + "` on the "
+        "its publisher and any explicitly named author, call `get_skill` with slug `" + slug + "` on the "
         f"OpenAccountants connector ({SITE}/connect), or read {SITE}/skills/{slug}. "
         "If neither is available, confirm every figure against the official source pages cited above before relying on it.\n"
     )
     return "\n".join(lines) + "\n\n" + body.strip() + live
 
 
-TEAM = "OpenAccountants team"
-
-
 def stamp_readme(text: str, built: dict, jurisdictions: list[str]) -> str:
     """Rewrite the counts block between the oa-skills-stats markers; the rest is hand-written."""
-    def is_team(v: dict) -> bool:
-        return bool(v.get("authored_by")) and TEAM in v["authored_by"]
-
-    def is_named(v: dict) -> bool:
-        a = v.get("authored_by") or ""
-        return bool(v.get("reviewed_by")) or (bool(a) and TEAM not in a)
-
-    named = sum(1 for v in built.values() if is_named(v))
-    team = sum(1 for v in built.values() if is_team(v) and not is_named(v))
-    drafts = len(built) - team - named
+    named = sum(bool(attribution(v)["authored_by"]) for v in built.values())
     block = (
         "<!-- oa-skills-stats:start -->\n"
         f"**{len(built):,} skills** across **{len(jurisdictions)} jurisdictions**. "
-        f"{named} have a named accountant behind them (author or reviewer, in `metadata`), "
-        f"{team} were built by the OpenAccountants team, and {drafts} are source-cited drafts with no name yet.\n"
+        f"Explicit authors: {named}; no named author: {len(built) - named}.\n"
         "<!-- oa-skills-stats:end -->"
     )
     return re.sub(r"<!-- oa-skills-stats:start -->.*?<!-- oa-skills-stats:end -->", block, text, flags=re.S)
@@ -208,9 +190,7 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
         built[slug] = {
             "jurisdiction": j,
             "path": str(src.relative_to(REPO_ROOT)),
-            "trust_label": str(meta.get("trust_label") or "").strip() or None,
-            "authored_by": str(meta.get("authored_by") or "").strip() or None,
-            "reviewed_by": str(meta.get("reviewed_by") or "").strip() or None,
+            **attribution(meta),
             "tax_year": meta.get("tax_year"),
         }
         if j.split("-")[0] in plugin_countries:
@@ -250,13 +230,8 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
         p.write_text(c, encoding="utf-8")
     for d in stale:
         shutil.rmtree(d)
-    trust_counts: dict[str, int] = {}
-    for v in built.values():
-        trust_counts[v["trust_label"] or "unlabelled"] = trust_counts.get(v["trust_label"] or "unlabelled", 0) + 1
     print(f"agent-skills: {len(built)} skills, {len(index['jurisdictions'])} jurisdictions, "
           f"{len(changed)} written, {len(stale)} removed; plugin countries {sorted(plugin_countries) or '-'}")
-    for k, n in sorted(trust_counts.items(), key=lambda kv: -kv[1]):
-        print(f"  {n:5d}  {k}")
     return 0
 
 
