@@ -1,0 +1,169 @@
+# Who opened this pull request?
+#
+# Skill pull requests (skills/**) are merged only from verified accountants.
+# This check asks openaccountants.com whether the PR author's GitHub login is
+# on a verified accountant's profile, labels the PR, leaves one sticky comment
+# saying what it found and what to do next, and fails when a skills/** PR comes
+# from a login we cannot match. Code-only PRs pass whatever the answer.
+#
+# Why pull_request_target: a PR from a fork gets a read-only token under
+# `pull_request`, so it could not label or comment. pull_request_target runs
+# with write access, which is only safe because this workflow NEVER checks out
+# or runs anything from the PR. It reads the PR's file list through the API and
+# calls one public endpoint. No secrets are used. Keep it that way.
+#
+# Make it bite: add `contributor-status` to the required checks on the main
+# ruleset (Settings -> Rules). Until then the red check is advisory.
+
+name: contributor-status
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  checks: write
+  contents: read
+
+jobs:
+  contributor-status:
+    name: contributor-status
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }} # no checkout, so gh needs to be told the repo
+      REPO: ${{ github.repository }}
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      PR_LOGIN: ${{ github.event.pull_request.user.login }}
+      STATUS_URL: https://www.openaccountants.com/api/public/contributor-status
+      MARKER: "<!-- contributor-status -->"
+    steps:
+      - name: Does the PR touch skills/**?
+        id: files
+        run: |
+          set -euo pipefail
+          files=$(gh api "repos/$REPO/pulls/$PR_NUMBER/files" --paginate --jq '.[].filename')
+          touches=false
+          if printf '%s\n' "$files" | grep -q '^skills/'; then
+            touches=true
+          fi
+          echo "touches_skills=$touches" >> "$GITHUB_OUTPUT"
+          echo "touches skills/**: $touches"
+
+      - name: Look up the author on openaccountants.com
+        id: lookup
+        run: |
+          set -uo pipefail
+          status=unknown
+          name=""
+          jurisdiction=""
+          credential=""
+          lookup_failed=false
+          body=$(curl -sS --fail --max-time 10 --get --data-urlencode "login=$PR_LOGIN" "$STATUS_URL") || lookup_failed=true
+          if [ "$lookup_failed" = false ] && printf '%s' "$body" | jq -e . >/dev/null 2>&1; then
+            status=$(printf '%s' "$body" | jq -r '.status // "unknown"')
+            name=$(printf '%s' "$body" | jq -r '.name // ""')
+            jurisdiction=$(printf '%s' "$body" | jq -r '.jurisdiction // ""')
+            credential=$(printf '%s' "$body" | jq -r '.credential // ""')
+          else
+            lookup_failed=true
+            status=unknown
+          fi
+          if [ "$status" != "verified" ]; then
+            status=unknown
+          fi
+          {
+            echo "status=$status"
+            echo "name=$name"
+            echo "jurisdiction=$jurisdiction"
+            echo "credential=$credential"
+            echo "lookup_failed=$lookup_failed"
+          } >> "$GITHUB_OUTPUT"
+          echo "login=$PR_LOGIN status=$status lookup_failed=$lookup_failed"
+
+      - name: Label the PR
+        env:
+          STATUS: ${{ steps.lookup.outputs.status }}
+        run: |
+          set -euo pipefail
+          gh label create verified-accountant --color 0E8A16 \
+            --description "PR author is a verified accountant on openaccountants.com" 2>/dev/null || true
+          gh label create unverified --color BFBFBF \
+            --description "PR author is not matched to a verified accountant on openaccountants.com" 2>/dev/null || true
+          if [ "$STATUS" = "verified" ]; then
+            add=verified-accountant; remove=unverified
+          else
+            add=unverified; remove=verified-accountant
+          fi
+          gh api -X DELETE "repos/$REPO/issues/$PR_NUMBER/labels/$remove" >/dev/null 2>&1 || true
+          gh api -X POST "repos/$REPO/issues/$PR_NUMBER/labels" -f "labels[]=$add" >/dev/null
+          echo "label: $add"
+
+      - name: Post or update the sticky comment
+        env:
+          STATUS: ${{ steps.lookup.outputs.status }}
+          NAME: ${{ steps.lookup.outputs.name }}
+          JURISDICTION: ${{ steps.lookup.outputs.jurisdiction }}
+          CREDENTIAL: ${{ steps.lookup.outputs.credential }}
+          LOOKUP_FAILED: ${{ steps.lookup.outputs.lookup_failed }}
+          TOUCHES_SKILLS: ${{ steps.files.outputs.touches_skills }}
+        run: |
+          set -euo pipefail
+          body="$RUNNER_TEMP/comment.md"
+          {
+            echo "$MARKER"
+            if [ "$STATUS" = "verified" ]; then
+              who="$NAME"
+              [ -n "$JURISDICTION" ] && who="$who ($JURISDICTION)"
+              [ -n "$CREDENTIAL" ] && who="$who, $CREDENTIAL"
+              echo "**Verified accountant:** $who, GitHub login \`$PR_LOGIN\`."
+              echo
+              if [ "$TOUCHES_SKILLS" = true ]; then
+                echo "This pull request changes skills. A maintainer (Michael or Ryan) will read the method and merge. After the merge the platform ingests it within minutes and the skill is live on openaccountants.com and in every connected AI, credited to you."
+              else
+                echo "This pull request does not change skills, so no licence is needed. A maintainer will review and merge."
+              fi
+            else
+              if [ "$LOOKUP_FAILED" = true ]; then
+                echo "**Lookup failed.** openaccountants.com did not answer when we asked whether \`$PR_LOGIN\` is a verified accountant. This is on our side, not yours. A maintainer will re-run the check; pushing a new commit also re-runs it."
+              else
+                echo "**Not on file.** The GitHub login \`$PR_LOGIN\` is not on any verified accountant's profile at openaccountants.com."
+              fi
+              echo
+              if [ "$TOUCHES_SKILLS" = true ]; then
+                echo "Skill pull requests (\`skills/**\`) are merged only from verified accountants, so this check fails until the login is matched. To fix it:"
+                echo
+                echo "1. Sign up at https://www.openaccountants.com and finish the accountant application with your licence, registration or membership number."
+                echo "2. Add your GitHub username (\`$PR_LOGIN\`) to your profile at https://www.openaccountants.com/profile."
+                echo "3. Push a new commit to this pull request, or ask a maintainer to re-run the check."
+                echo
+                echo "Not an accountant? Thank you for the work. Please open an issue with the correction and its official source instead, and a verified accountant will carry it in."
+              else
+                echo "This pull request does not change skills, so no licence is needed and this check passes. A maintainer will review and merge."
+              fi
+            fi
+            echo
+            echo "<sub>How this works: [CONTRIBUTING.md](https://github.com/$REPO/blob/main/CONTRIBUTING.md)</sub>"
+          } > "$body"
+
+          existing=$(gh api "repos/$REPO/issues/$PR_NUMBER/comments" --paginate \
+            --jq ".[] | select(.body | contains(\"$MARKER\")) | .id" | head -n 1)
+          if [ -n "$existing" ]; then
+            gh api -X PATCH "repos/$REPO/issues/comments/$existing" -F body=@"$body" >/dev/null
+            echo "updated comment $existing"
+          else
+            gh api -X POST "repos/$REPO/issues/$PR_NUMBER/comments" -F body=@"$body" >/dev/null
+            echo "created comment"
+          fi
+
+      - name: Decide
+        env:
+          STATUS: ${{ steps.lookup.outputs.status }}
+          TOUCHES_SKILLS: ${{ steps.files.outputs.touches_skills }}
+        run: |
+          if [ "$TOUCHES_SKILLS" = true ] && [ "$STATUS" != "verified" ]; then
+            echo "::error::Skill pull requests are merged only from verified accountants. See the contributor-status comment on the PR."
+            exit 1
+          fi
+          echo "ok: touches_skills=$TOUCHES_SKILLS status=$STATUS"

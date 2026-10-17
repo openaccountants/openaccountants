@@ -106,7 +106,7 @@ def check_quality_metadata(rel, fields, errors):
     elif tier == "1" and not (reviewed_by or verified_by):
         errors.append(f"{rel}: tier 1 requires a real `reviewed_by` or `verified_by` value")
     elif tier == "2" and verified_by:
-        errors.append(f"{rel}: tier 2 must not claim accountant verification in `verified_by`")
+        errors.append(f"{rel}: tier 2 must not carry a named accountant in the retired `verified_by` key")
 
 
 def changed_files_vs_main():

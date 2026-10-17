@@ -2,11 +2,25 @@
 
 Thanks for your interest in contributing. Here's how it works.
 
+**GitHub is the only door.** Every new skill and every change to a skill comes in as a pull request to this repository. The website no longer accepts skill submissions.
+
+## Contribute with your AI in 15 minutes
+
+1. **Get verified.** Sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number, and add your **GitHub username** in [your profile](https://www.openaccountants.com/profile). The username is how we match a pull request to you.
+2. **Let your AI write the file.** Copy the prompt in [docs/CONTRIBUTE-PROMPT.md](docs/CONTRIBUTE-PROMPT.md) into Claude, ChatGPT or Cursor, tell it the country and the job (for example "Malta, VAT registration for a freelancer"), and let it write one skill file from [docs/skill-template.md](docs/skill-template.md) into the right folder under `skills/`.
+3. **Open a pull request** and tick the CLA box in the template.
+4. **The `contributor-status` check looks you up.** It reads your GitHub login, asks openaccountants.com whether that login belongs to a verified accountant, and labels the PR `verified-accountant` with your name and country, or `unverified` with a comment telling you what to do.
+5. **Michael or Ryan review the method and merge.** The platform ingests the merge within minutes. Your skill is live on openaccountants.com and in every connected AI, credited to you by name.
+
+**The rule, plainly:** pull requests that add or change skills (`skills/**`) are merged only from verified accountants. An unverified login gets a comment, not a merge. Code pull requests (`mcp/`, `scripts/`, `.github/`) do not need a licence.
+
+**Cannot use GitHub?** If you are already verified but GitHub is not an option for you, email a draft to **info@openaccountants.com**. The team opens the pull request under your name as co-author. This fallback is for verified accountants only.
+
 ## Who can contribute
 
 Skills are written by **verified accountants**: people whose professional licence or registration number we have checked. Provisional or student members of a professional body (for example a CA ANZ provisional member) count too, once we have checked their membership. Pull requests that add or change skills (`skills/**`) are merged only from verified accountants.
 
-To get verified: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number, and set your GitHub username in your profile so we can match your pull requests to you.
+To get verified: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number, and set your GitHub username in your profile so the `contributor-status` check can match your pull requests to you.
 
 Not an accountant? You are still welcome to:
 
@@ -17,20 +31,14 @@ There are no fees and no minimum contribution. Contributions of any kind need th
 
 ## How to contribute a skill
 
-### Option 1: Via the website
-
-1. Go to [openaccountants.com](https://www.openaccountants.com)
-2. Sign up for an account
-3. Use the submission form to upload your skill
-4. It goes live immediately as a **source-cited draft**
-
-### Option 2: Via GitHub PR
+There is one path: a GitHub pull request.
 
 1. Fork this repo
 2. Create your skill in the appropriate **source** directory (`skills/federal/`, `skills/us-states/[code]/`, `skills/international/[country]/`, etc.)
-3. Follow the [skill template](docs/skill-template.md)
-4. Do **not** run any generator scripts — `index.json`, `llms-full.txt` and `packages/` rebuild in the scheduled platform sync after the source change is ingested
-5. Open a PR with a description of what tax forms/schedules the skill covers
+3. Follow the [skill template](docs/skill-template.md), or let your AI do it with [docs/CONTRIBUTE-PROMPT.md](docs/CONTRIBUTE-PROMPT.md)
+4. Do **not** run any generator scripts: `index.json`, `llms-full.txt` and `packages/` rebuild in the scheduled platform sync after the source change is ingested
+5. Open a PR with a description of what tax forms/schedules the skill covers, and tick the CLA box
+6. Wait for the checks: `validate` (frontmatter and template), `CLA Assistant`, and `contributor-status` (who you are). A maintainer reviews the method and merges.
 
 > **Important:** edit `skills/**` only. `packages/`, `index.json` and `llms-full.txt` are generated — CI will ask you to revert any changes to them, and the scheduled platform sync regenerates them after confirmed source ingestion. One exception for now: **`packages/us-federal/`** is hand-authored and may be edited directly.
 
@@ -45,7 +53,7 @@ Every skill in `skills/` that should appear on [openaccountants.com](https://www
 1. Live in a **recognized country folder** (`skills/international/<country>/`, `skills/federal/`, `skills/us-states/<code>/`), **or**
 2. Include **`jurisdiction:` in YAML frontmatter** (e.g. `MT`, `GB`, `US`, `US-CA`, `GLOBAL`, `INTL`)
 
-Skill changes made on openaccountants.com land here through the scheduled sync, committed under the responsible accountant's name. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. Frontmatter uses `reviewed_by` + `review_status` (the legacy `verified_by` key is being retired automatically). Want your platform edits credited to your GitHub account? Set your GitHub username in your accountant profile on openaccountants.com.
+The scheduled outbound sync carries team edits and platform metadata only, committed by the sync bot. Accountants' changes arrive here as their own pull requests. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. Frontmatter uses `reviewed_by` + `review_status` (the legacy `verified_by` key is being retired automatically). Set your GitHub username in your accountant profile on openaccountants.com so your ingested pull requests are credited to you on the platform.
 
 Full details: [docs/WEBSITE-SYNC.md](docs/WEBSITE-SYNC.md)
 
@@ -111,7 +119,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review
 
-A verified accountant's skill publishes credited to them as **Accountant-authored**. Another verified accountant can then attest to it, and their name and review date go on it too.
+A verified accountant's skill publishes credited to its author as **Accountant-authored**. When a maintainer reviewed it before merging, "Checked by" names that maintainer on the skill.
 
 ## Contributor License Agreement (CLA)
 
@@ -119,7 +127,7 @@ OpenAccountants is a **mixed-licence** project: software is **AGPL-3.0-only** an
 
 **GitHub pull requests:** we rely on an **explicit opt-in**. When you open a PR, you must **tick the CLA checkbox** in the [pull request template](.github/PULL_REQUEST_TEMPLATE.md) (and leave it checked on updates to the same PR). That single action is how you record agreement. Maintainers should not merge PRs where the contributor has not confirmed the CLA.
 
-**Website / other channels:** follow whatever acceptance flow that channel provides, or contact **info@openaccountants.com** for a formal signed agreement.
+**Website / other channels:** the website no longer accepts skills, so there is no separate acceptance flow there. If you contribute by emailing a draft (verified accountants only, see above), reply to our confirmation email with the words "I have read the CLA Document and I agree to the CLA", or contact **info@openaccountants.com** for a formal signed agreement.
 
 If anything in [CLA.md](CLA.md) is unclear, ask before contributing.
 
@@ -127,5 +135,4 @@ If anything in [CLA.md](CLA.md) is unclear, ask before contributing.
 
 - Your name on the skill, linked to your contributor profile
 - Public contributor profile showing all your contributions
-- Attestation from other verified accountants, named on the skill
 - The knowledge that thousands of freelancers and small businesses are using your skill to manage their accounting

@@ -21,9 +21,9 @@ A scheduled job in the separate, private platform repository renders published
 guides using the same serving code as the website:
 
 - `skills/**` is rendered per guide (`skills.github_path` in the platform DB).
-- An existing guide edited by an accountant is committed under that
-  accountant's name (git author); the committer is
-  `openaccountants-sync[bot]`.
+- The export carries team edits and platform metadata only, committed by
+  `openaccountants-sync[bot]`. Accountants' changes arrive as their own pull
+  requests, not through this export.
 - Derived trees — `packages/`, `index.json`, `llms-full.txt` — are regenerated
   in the same run and committed by the bot. **Never edit them in a PR.**
 - Frontmatter uses `reviewed_by` plus `review_status` (`current` |
@@ -151,8 +151,8 @@ Maintainers should deploy the remaining controls in this order:
 2. Change the exporter to push a sync branch and open a pull request instead of
    writing directly to `main`.
 3. Add a `main` ruleset that requires pull requests, code-owner review, and the
-   exact job contexts `guard-derived-trees`, `validate`, `unit-tests`, and
-   `compare`; block force pushes and branch deletion. GitHub's UI may display
+   exact job contexts `guard-derived-trees`, `validate`, `unit-tests`,
+   `compare`, and `contributor-status`; block force pushes and branch deletion. GitHub's UI may display
    these as `Workflow name / job name`. Retain the repository's operational CLA
    check as a separate required context, confirming its exact name in Settings.
 4. Do not grant the sync bot a broad bypass. Keep any emergency bypass limited,
@@ -165,6 +165,8 @@ scheduled job. Leaving the direct-push bot exempt would preserve the stale-write
 path this contract is intended to close.
 
 ## What this means for contributors
+
+Contributors add and change skills through GitHub pull requests only; the website no longer accepts skill submissions, so the outbound export carries team edits and platform metadata, not new contributor skills.
 
 1. Edit `skills/**` only; generated files are rebuilt by the platform sync.
 2. A merge accepts the repository contribution. Platform publication is

@@ -22,7 +22,7 @@ If you cannot agree, do not open this PR — contact **info@openaccountants.com*
 - [ ] Jurisdiction is clear (folder path or `jurisdiction:` in frontmatter)
 - [ ] I only edited files under `skills/**` (generated trees rebuild automatically)
 - [ ] **Name for attribution** (as it should appear on the guide): ______
-- [ ] My OpenAccountants profile GitHub username matches this account (optional — set it at openaccountants.com/profile for full credit)
+- [ ] I am a verified accountant on openaccountants.com and my GitHub username is on my profile (required for `skills/**` changes; set it at openaccountants.com/profile)
 
 ### Content quality
 

@@ -80,4 +80,4 @@ If you need a machine-readable listing, read `index.json` or run `python3 script
 - **The MCP server:** `mcp/`.
 - **Anything under `packages/` other than `us-federal/`:** don't — edit the source in `skills/` and rebuild.
 
-Contribution process, frontmatter conventions, and the website-sync rule: [CONTRIBUTING.md](../CONTRIBUTING.md) and [WEBSITE-SYNC.md](WEBSITE-SYNC.md).
+Skills are added and changed through GitHub pull requests only; the website no longer accepts skill submissions. Contribution process, frontmatter conventions, and the website-sync rule: [CONTRIBUTING.md](../CONTRIBUTING.md) and [WEBSITE-SYNC.md](WEBSITE-SYNC.md).

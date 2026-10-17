@@ -1,40 +1,45 @@
 # OpenAccountants — Skill Quality Tiers
 
-How we measure whether a skill is ready for production use.
+How we say who stands behind a skill.
 
-We use **two tiers**. No drafts, no stubs — every published skill is one of these:
-
----
-
-## The two tiers
-
-| Tier | Label | What it means | Legacy identifier |
-|------|-------|--------------|-------------------|
-| **1** | **Accountant-reviewed** | A licensed practitioner has reviewed the skill, run it against real (or representative) data, and signed off. Errors found during use have been corrected. The skill is current with the latest tax-year rates and filing forms. | `accountant-verified` |
-| **2** | **Source-cited draft** | Every rate, threshold, form number, and deadline has been drafted from authoritative sources — tax-authority publications and the relevant statutes. Format matches the accountant-reviewed standard. Awaiting a full review by an accountant. | `research-verified` |
-
-That's it. If a skill is published, it is one of those two.
-
-> **Display label vs. stored identifier.** The machine identifiers do not change: frontmatter still uses `tier: 1|2` and `verified_by:`, and legacy badges/enums still say `accountant-verified` / `research-verified`. What changed is the **display language**: Tier 1 is written as **"accountant-reviewed"** and Tier 2 as **"source-cited draft"** everywhere a human reads it. This doc is the mapping between the two.
+Every published skill is in exactly one of **three attribution states**:
 
 ---
 
-## What each tier guarantees
+## The three states
 
-### Accountant-reviewed (Tier 1)
+| State | Frontmatter | What it means | Legacy `tier` |
+|------|-------------|--------------|---------------|
+| **Built by Michael Cutajar and the OpenAccountants team** | `trust_label: Built by Michael Cutajar and the OpenAccountants team` (team rewrites also carry `authored_by: Michael Cutajar and the OpenAccountants team`) | Written by the team from primary sources: every rate, threshold, form number and deadline cites the tax authority or statute. No named accountant stands behind it. | `2` |
+| **Accountant-authored** | `authored_by: <Name[, credential]>` and `trust_label: Accountant-authored` | A named accountant, approved on openaccountants.com, wrote the skill. Nobody else has checked it yet. | `2` |
+| **Checked by <name>** | `reviewed_by: <Name[, credential]>`, `review_status: current`, `trust_label: Checked by <Name>` | An accountant other than the author checked the complete skill. Their name is on the skill and on [VERIFIERS.md](../VERIFIERS.md). | `1` |
 
-- A real licensed practitioner (CPA, EA, CA, Steuerberater, expert-comptable, commercialista, asesor fiscal, or equivalent for the jurisdiction) has put their name and license number on it.
-- The skill has been used against real client data and refined through filing cycles.
-- The contributor is publicly credited on the skill and at [openaccountants.com](https://www.openaccountants.com).
-- The skill is reviewed at least annually for rate / threshold / form changes.
+That's it. If a skill is published, it is one of those three.
 
-### Source-cited draft (Tier 2)
+> **Display label vs. stored identifier.** `tier` stays as the machine field: `1` = checked by a second accountant, `2` = not independently checked. The `verified_by` key is retired; the export removes it. Legacy enums in scripts (`accountant-verified` / `research-verified`) keep their spelling as identifiers only. Everywhere a human reads it, the three labels above are the words.
 
-- The skill follows the accountant-reviewed format (Step 0 onboarding → Step N output).
+---
+
+## What each state guarantees
+
+### Built by Michael Cutajar and the OpenAccountants team
+
 - Every figure carries a primary-source citation (statute, regulation, tax authority notice).
 - Deep research against the tax authority's published guidance has been completed.
-- It is **not** a substitute for accountant review of an actual filing. The reviewer brief always says so.
-- It is the right tier to use *as a starting point* — your accountant reviews and signs off before you file.
+- The machine checks in the README ("How it stays accurate") run against it every night.
+- It is **not** a substitute for an accountant's check of an actual filing. The reviewer brief always says so.
+
+### Accountant-authored
+
+- A real accountant (CPA, EA, CA, Steuerberater, expert-comptable, commercialista, asesor fiscal, or equivalent for the jurisdiction) whose licence or registration number we have checked wrote it and is named on it.
+- The author is publicly credited on the skill and at [openaccountants.com](https://www.openaccountants.com).
+- No second accountant has checked it yet.
+
+### Checked by <name>
+
+- An accountant other than the author has checked the complete skill and put their name on it.
+- The checking accountant is publicly credited on the skill, on the roster and at [openaccountants.com](https://www.openaccountants.com).
+- A substantive edit sets `review_status` back to `pending_review` until the skill is checked again.
 
 ---
 
@@ -75,7 +80,7 @@ Key rules:
 
 ## Current inventory
 
-### Accountant-reviewed (Tier 1)
+### Checked by a second accountant (tier 1)
 
 | Skill | Jurisdiction | Reviewed by |
 |-------|-------------|-------------|
@@ -93,11 +98,11 @@ Key rules:
 | `us-schedule-c-and-se-computation` | US Federal | Pending publication of practitioner registry |
 | `us-ca-freelance-intake` | US-CA | Pending publication of practitioner registry |
 
-This list is derived from each skill's explicit `tier: 1` plus its reviewer name (`reviewed_by`, or the legacy `verified_by` — a stored identifier that keeps its spelling). To add a new accountant-reviewed skill, set **both** `tier: 1` and the reviewer's name and credential, then regenerate the canonical inventory with `python3 scripts/build-index.py` — the tier and verifier land in `index.json`. Setting a reviewer name without flipping `tier` to `1` is a validation error: `tier: 2` must not claim accountant verification. Every accountant-reviewed skill carries the reviewer's name and license number on the skill page at openaccountants.com.
+This list is a hand-curated sample; the generated [VERIFIERS.md](../VERIFIERS.md) at the repo root is the current roster. A skill is in this state when it carries `tier: 1` plus the checking accountant's name in `reviewed_by`. To add one, set **both** `tier: 1` and `reviewed_by`, then regenerate the canonical inventory with `python3 scripts/build-index.py` so the tier and name land in `index.json`.
 
-### Source-cited drafts (Tier 2)
+### Not independently checked (tier 2)
 
-Everything else in this repo; the `counts` block of `index.json` gives the current total. Each one's frontmatter shows the research date and the authoritative sources cross-checked.
+Everything else in this repo, either team-built or Accountant-authored; the `counts` block of `index.json` gives the current total. Each one's frontmatter shows the research date and the authoritative sources cross-checked.
 
 ---
 
@@ -106,42 +111,42 @@ Everything else in this repo; the `counts` block of `index.json` gives the curre
 ```
 ┌─────────────────────────────────────────────┐
 │  Malta VAT Return v1.0                      │
-│  ████████████ ACCOUNTANT-REVIEWED           │
+│  ████████████ CHECKED BY [NAME]             │
 │                                             │
-│  Reviewed by: [Practitioner name + license] │
+│  Checked by: [Accountant name + license]    │
 │  Tested against: Real client data           │
 │  Last updated: [Date]                       │
 └─────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────┐
 │  France VAT Return (CA3) v0.1               │
-│  ▓▓▓▓▓▓▓▓░░░░ SOURCE-CITED DRAFT            │
+│  ▓▓▓▓▓▓▓▓░░░░ BUILT BY THE OA TEAM          │
 │                                             │
 │  Sources: impots.gouv.fr, PWC, EU TEDB      │
 │  Research date: April 2026                  │
-│  Awaiting accountant review                 │
-│  Help review: openaccountants.com/verify    │
+│  Not independently checked                  │
+│  Check it: openaccountants.com/verify       │
 └─────────────────────────────────────────────┘
 ```
 
 ---
 
-## How a skill moves from source-cited draft to accountant-reviewed
+## How a skill becomes Checked by a second accountant
 
 1. A credentialed practitioner in the jurisdiction picks up the skill.
 2. They review the rates, thresholds, forms, and deadlines against current law.
 3. They run the skill against representative or real client data.
 4. They submit corrections (web form at openaccountants.com or GitHub PR).
 5. A skill maintainer merges the corrections; the skill is tagged with the practitioner's name and license number.
-6. The skill is bumped to **accountant-reviewed** in the next release.
+6. The skill becomes **Checked by <name>** in the next release.
 
-The practitioner is credited publicly. Their profile lists all the skills they've signed off.
+The practitioner is credited publicly. Their profile lists all the skills they have checked.
 
 ---
 
 ## Authoritative research sources
 
-These are the sources a source-cited draft must be drafted and cross-checked against. The same sources are recommended to practitioners reviewing their jurisdiction.
+These are the sources a team-built skill must be drafted and cross-checked against. The same sources are recommended to accountants checking their jurisdiction.
 
 ### Global / multi-jurisdiction
 
@@ -205,4 +210,4 @@ Each state has an online portal. Search "[State] department of revenue" for the 
 
 ## Disclaimer
 
-Quality tiers describe the review status of a skill, not a guarantee that any specific output is correct. LLMs hallucinate, tax law changes, and individual circumstances vary. Every output must be reviewed by a qualified professional before filing.
+Attribution states describe who stands behind a skill, not a guarantee that any specific output is correct. LLMs hallucinate, tax law changes, and individual circumstances vary. Every output must be reviewed by a qualified professional before filing.

@@ -207,9 +207,10 @@ def _real_verifier(meta: dict[str, Any]) -> str | None:
 def _quality_tier(meta: dict[str, Any]) -> str:
     """Map explicit frontmatter tier to the public quality identifier.
 
-    Tier 1 also requires a named reviewer. Missing or inconsistent metadata
-    fails closed as research-verified rather than inferring sign-off from a
-    reviewer field alone.
+    Tier 1 also requires a named checking accountant. Missing or inconsistent
+    metadata fails closed as research-verified (the legacy identifier for "not
+    independently checked by a second accountant") rather than inferring a
+    check from a reviewer field alone.
     """
     tier = str(meta.get("tier") or "").strip()
     return (
@@ -498,10 +499,10 @@ def _provenance_footer(rec: dict[str, Any]) -> str:
     verifier = rec.get("verified_by")
     attribution = (
         f'> Computed using the OpenAccountants "{rec["title"]}" skill, '
-        f"verified by {verifier}. Have a qualified professional review before filing."
+        f"checked by {verifier}. Have a qualified professional review before filing."
         if tier == "accountant-verified" and verifier
         else f'> Computed using the OpenAccountants "{rec["title"]}" skill '
-        "(research-verified — not yet signed off by a credentialed accountant). "
+        "(not independently checked by a second accountant). "
         "Have a qualified professional review before filing."
     )
     lines = [
@@ -514,7 +515,7 @@ def _provenance_footer(rec: dict[str, Any]) -> str:
         f"- **Quality tier:** {tier}",
     ]
     if tier == "accountant-verified" and verifier:
-        lines.append(f"- **Verified by:** {verifier}")
+        lines.append(f"- **Checked by:** {verifier}")
     lines += [
         f"- **Source:** OpenAccountants — {SOURCE_BASE}/{rec['slug']}",
         "",
@@ -577,11 +578,11 @@ mcp = MCPServer(
         "doesn't fit the catalogue.\n\n"
         "After `start` returns a plan, fetch each slug with `get_skill` (full "
         "markdown) or `get_skill_sections` (section-by-section).  Each skill "
-        "reports a quality tier: research-verified (drafted from authoritative "
-        "sources, awaiting credentialed sign-off) or accountant-verified (a "
-        "named licensed practitioner has signed off).  Always advise the user "
+        "reports a quality tier: research-verified (not independently checked "
+        "by a second accountant) or accountant-verified (checked by a named "
+        "accountant other than the author).  Always advise the user "
         "to have output reviewed by a qualified professional before filing, "
-        "and cite the skill (and its verifier where accountant-verified).\n\n"
+        "and cite the skill (and the checking accountant where named).\n\n"
         "**Feedback**: when a user reports a problem with a skill, a missing "
         "jurisdiction, or anything else worth capturing, call `submit_feedback` "
         "— it returns a pre-filled GitHub New Issue URL the user opens to "
@@ -1280,7 +1281,7 @@ Step 4: Produce a working paper with:
   - All assumptions disclosed
   - Items flagged for accountant review
   - Filing deadlines and payment dates
-Step 5: End with: "This working paper was prepared using skills verified by [verifier name] at openaccountants.com. Have your accountant review before filing."
+Step 5: End with: "This working paper was prepared using skills checked by [verifier name] at openaccountants.com. Have your accountant review before filing."
 
 Conservative defaults: when uncertain, assume MORE tax, never less.
 No LLM computes tax amounts — use only the rates and thresholds from the skills."""

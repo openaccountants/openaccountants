@@ -11,7 +11,7 @@
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
 | `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in the body text, never here. CI errors on anything that is not an integer 2015-2035 |
-| `tier` | `1` or `2` | `1` = **accountant-reviewed** (a named licensed accountant fully reviewed and signed off); `2` = **source-cited draft** (drafted from primary sources, awaiting review). These are the only two quality states |
+| `tier` | `1` or `2` | Legacy machine field. `1` = checked by an accountant other than the author (`reviewed_by:` names them); `2` = not independently checked (team-built or Accountant-authored). The three attribution states are described under `trust_label` below |
 | `last_updated` | `YYYY-MM-DD` | Date the content was last checked/edited. It must never move backwards |
 
 ## Optional keys
@@ -19,23 +19,25 @@
 | Key | Format | Notes |
 |-----|--------|-------|
 | `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"`. The platform does not store this key, so the daily export drops it when it re-renders a skill. Put the year label in the body text, such as a "Tax year" row in the quick-reference table, so it survives |
-| `verified_by` | `pending` or `Name, Credential` | e.g. `Michael Cutajar, CPA (Malta)`. Stored identifier — the field name stays `verified_by` even though the display language is "reviewed". A real name here does **not** imply `tier: 1`; set `tier: 1` explicitly as well. CI errors if `tier: 2` carries a real `verified_by` |
-| `reviewed_by` | `Name, Credential` | Used on the hand-authored `packages/us-federal/` guides (e.g. `Christopher Aryee, CPA`) |
+| `authored_by` | `Name` or `Name, Credential` | The named accountant who wrote the skill (Accountant-authored state). Team rewrites carry `Michael Cutajar and the OpenAccountants team`. Pair it with the matching `trust_label` |
+| `trust_label` | one of three values | `Built by Michael Cutajar and the OpenAccountants team` (team-built, source-cited, no named accountant); `Accountant-authored` (a named accountant approved on openaccountants.com wrote it, not yet independently checked); `Checked by <Name>` (an accountant other than the author checked the complete skill). Every skill is in exactly one state |
+| `reviewed_by` | `Name` or `Name, Credential` | The accountant other than the author who checked the complete skill, e.g. `Christopher Aryee, CPA`. Goes with `review_status: current`, `trust_label: Checked by <Name>` and `tier: 1` |
+| `verified_by` | retired | Do not add; the export removes it. Three legacy files still carry `verified_by: pending` until their next export |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change when present. Keep any body-heading version in step |
 
 ## Platform-written keys
 
-The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md)) writes these keys when it renders a skill. Do not add or edit them in a PR: the platform owns their values and rewrites them on the next export. Leave them in place when you edit a skill that already carries them. None of them is a quality state; `tier` remains the only quality field, and `review_status` records where the accountant review stands. `scripts/validate-guides.py` ignores keys it does not know, so a key outside this document is undefined, not validated.
+The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md)) writes these keys when it renders a skill. Do not add or edit them in a PR: the platform owns their values and rewrites them on the next export. Leave them in place when you edit a skill that already carries them. `trust_label` is the attribution state the website shows; `tier` is the legacy machine field; `review_status` records whether the current text still carries its check. `scripts/validate-guides.py` ignores keys it does not know, so a key outside this document is undefined, not validated.
 
 | Key | Values seen | Notes |
 |-----|-------------|-------|
-| `review_status` | `current` or `pending_review` | Whether the current text carries a professional review. A substantive edit sets the skill back to `pending_review` until it is reviewed again |
+| `review_status` | `current` or `pending_review` | `current` means the text as it stands was checked by the accountant in `reviewed_by`. A substantive edit sets the skill back to `pending_review` until it is checked again |
 | `license` | `AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)` | Written verbatim by the export. [LICENSING.md](../LICENSING.md) is the licence reference |
-| `authored_by` | `OpenAccountants team` | Present when the platform team, not a named accountant or GitHub contributor, authored the current revision |
-| `trust_label` | `By OpenAccountants` | Display attribution for the website. Not a review claim |
+| `authored_by` | see Optional keys | The export writes `Michael Cutajar and the OpenAccountants team` on team rewrites, or the accountant's name on Accountant-authored skills |
+| `trust_label` | see Optional keys | The export writes the state it computes from the platform: `Built by Michael Cutajar and the OpenAccountants team`, `Accountant-authored`, or `Checked by <Name>` |
 
-The export has also written `drafted_by` and `approved_by` (90 skills, values `OpenAccountants` and `pending`), `validation_status` (5) and `validated` (4). Treat them the same way: leave them alone and do not add them to new files.
+The export has also written `drafted_by` and `approved_by` (61 skills, values `OpenAccountants` and `pending`), `validation_status` (5) and `validated` (4). Treat them the same way: leave them alone and do not add them to new files.
 
 ## Sync integrity rules
 
@@ -88,12 +90,13 @@ jurisdiction: XX   # REQUIRED — MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-27, et
 category: international   # see the category vocabulary above
 tax_year: 2025             # bare integer = coverage start year
 tax_year_notes: "2025-26"  # optional; the export drops it, so repeat the label in the body
-tier: 2                    # 1 = accountant-reviewed | 2 = source-cited draft
+tier: 2                    # legacy: 1 = checked by a second accountant | 2 = not independently checked
 last_updated: 2026-07-04   # YYYY-MM-DD
 version: 0.1
 depends_on:
   - [workflow-base-or-country-skill]
-verified_by: pending       # or "Name, Credential" — stored field name stays verified_by
+# Do not add verified_by (retired). authored_by, trust_label, reviewed_by and
+# review_status are written by the platform export; see Platform-written keys.
 ---
 ```
 
@@ -185,4 +188,4 @@ Before delivering output, verify:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
