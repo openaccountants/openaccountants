@@ -1,22 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.openaccountants/openaccountants-mcp",
-  "description": "Open-source accounting skills for AI — tax, bookkeeping, payroll, e-invoicing, formation, financial statements, cross-border (Pillar Two, CBAM, FATCA/CRS, DST), and sector verticals (banking, insurance, funds, SaaS, shipping). 180+ countries + 51 US states + 13 Canadian provinces/territories. Upload to Claude/ChatGPT or connect via MCP.",
-  "version": "0.3.0",
-  "homepage": "https://openaccountants.com",
+  "name": "io.github.openaccountants/openaccountants",
+  "title": "OpenAccountants",
+  "description": "Read-only tax and accounting Guides for 190+ jurisdictions, from Malta CPA firm OpenAccountants.",
+  "version": "1.4.0",
+  "websiteUrl": "https://www.openaccountants.com",
   "repository": {
-    "url": "https://github.com/openaccountants/openaccountants.git",
+    "url": "https://github.com/openaccountants/openaccountants",
     "source": "github"
   },
-  "packages": [
+  "remotes": [
     {
-      "registryType": "pypi",
-      "identifier": "openaccountants-mcp",
-      "version": "0.3.0",
-      "runtimeHint": "python",
-      "transport": {
-        "type": "stdio"
-      }
+      "type": "streamable-http",
+      "url": "https://www.openaccountants.com/api/mcp"
     }
   ]
 }

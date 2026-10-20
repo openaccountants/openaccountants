@@ -13,9 +13,11 @@ The repository is larger than the platform because it also holds skills that are
 
 | Surface | Source | Rounded claim |
 |---|---|---|
-| Website copy, plugin and connector descriptions, Smithery and other directories | Platform | **1,800+ skills across 220+ jurisdictions** |
-| Repository documents (`CLAUDE.md`, `CITATION.cff`, `docs/`, the `llms.txt` prose) | Repository | **2,000+ skills across 240+ jurisdictions** |
-| The bundled `openaccountants-mcp` package | The `packages/` tree | **180+ countries, every US state plus DC, and 13 Canadian provinces and territories** |
+| Website copy, plugin and connector descriptions, Smithery, the MCP Registry, Glama and other directories | Platform | **190+ jurisdictions** |
+| Repository documents (`CLAUDE.md`, `CITATION.cff`, `docs/`, the `llms.txt` prose) | Repository | **190+ jurisdictions** |
+| The bundled `openaccountants-mcp` package | The `packages/` tree | **190+ jurisdictions** |
+
+Every surface uses the same words: "190+ jurisdictions". It is a floor that all three sources clear. Do not add a rounded skill count to listing text. Point at the live figures above instead.
 
 Rules:
 

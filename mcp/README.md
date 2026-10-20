@@ -2,9 +2,9 @@
 
 <!-- mcp-name: io.github.openaccountants/openaccountants-mcp -->
 
-A read-only [Model Context Protocol](https://modelcontextprotocol.io/) server that gives Claude, Cursor, and any MCP client **on-demand access** to 180+ countries + 51 US state packages + 13 Canadian provinces/territories of open-source accounting skills across 10 domains (tax, bookkeeping, payroll, e-invoicing, formation, financial statements, transfer pricing, tax optimization, cross-border, and more) — no manual file uploads.
+A read-only [Model Context Protocol](https://modelcontextprotocol.io/) server that gives Claude, Cursor and any MCP client **on-demand access** to open-source accounting skills for 190+ jurisdictions. The skills cover tax, bookkeeping, payroll, e-invoicing, formation, financial statements, transfer pricing, tax optimization, cross-border work and more. No manual file uploads.
 
-> **Two MCPs, different surfaces.** This **self-hosted server** reads the open-source markdown bundled with the package (or in your local checkout). The **hosted server** at `https://www.openaccountants.com/api/mcp` reads the production database and exposes a larger surface that includes the **accountant-reviewed** tier, the `request_accountant_review` handoff (routes to a named licensed CPA/CA/EA with your working paper attached), `get_rates`, `list_verifiers`, `compare_jurisdictions`, and `plan_cross_border`. The hosted server is the product; this self-hosted one is the open research base.
+> **Two MCPs, different surfaces.** This **self-hosted server** reads the open-source markdown bundled with the package (or in your local checkout). The **hosted server** at `https://www.openaccountants.com/api/mcp` reads the production database. It shows each skill's review status and has more tools, including `search_rules`, `get_deadlines`, `list_verifiers` and the `share_with_openaccountants` handoff to a person. The hosted server is the product. This self-hosted one is the open research base.
 
 ## Why this exists
 
@@ -43,7 +43,11 @@ Special packages are also available:
 
 ## Tools
 
-The self-hosted server exposes 6 read-only tools below. The hosted server at `https://www.openaccountants.com/api/mcp` is a superset — it adds `get_rates`, `list_jurisdictions`, `list_verifiers`, `compare_jurisdictions`, `plan_cross_border`, and the `request_accountant_review` handoff. Install the hosted MCP if you want the AI-to-human routing; install this one if you want the open research base.
+The self-hosted server exposes the 6 read-only tools below. The hosted server at `https://www.openaccountants.com/api/mcp` has its own list of 15 tools:
+
+`start`, `start_help`, `search_skills`, `get_skill`, `get_skill_sections`, `search_rules`, `list_rule_facets`, `list_skills`, `list_jurisdictions`, `list_verifiers`, `get_deadlines`, `get_quote`, `validate_vat_number`, `check_audit_exemption` and `share_with_openaccountants`.
+
+`share_with_openaccountants` sends the user's feedback, or their request for a person to check or do the work, to OpenAccountants. It runs only when the user asks. The current hosted list is at [openaccountants.com/docs/mcp](https://www.openaccountants.com/docs/mcp). Install the hosted server if you want the handoff to a person. Install this one if you want the open research base.
 
 | Tool | Description |
 |------|-------------|
@@ -107,7 +111,7 @@ Point any remote-capable MCP client at:
 https://www.openaccountants.com/api/mcp
 ```
 
-That's it. The hosted server is the full product surface (live database, accountant-reviewed tier, `request_accountant_review`, `get_rates`, and more — see the note at the top).
+That's it. The hosted server is the full product surface: the live database, review status per skill, `search_rules`, `get_deadlines` and the `share_with_openaccountants` handoff. See the note at the top.
 
 ### Option 2 — Install from PyPI (no clone needed)
 

@@ -26,6 +26,8 @@ https://www.openaccountants.com/api/mcp
 
 Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/connect)**
 
+Listed on [Smithery](https://smithery.ai/server/info-ood9/openaccountants) and the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants).
+
 Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
