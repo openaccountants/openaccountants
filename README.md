@@ -4,6 +4,14 @@
 
 This library includes accountant-reviewed skills and source-cited drafts. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
+## Need someone to do the accounting?
+
+OpenAccountants also helps business owners get bookkeeping and tax work done through partner accountants. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
+
+**[Book a free 30-minute call](https://www.openaccountants.com/tax-help?source=github_readme#book)** · [Explore our accounting services](https://www.openaccountants.com/tax-help?source=github_readme)
+
+The skills and AI connection remain free.
+
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
