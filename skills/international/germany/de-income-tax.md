@@ -2,18 +2,19 @@
 name: de-income-tax
 description: >
   Use this skill whenever asked about German income tax (Einkommensteuer) for self-employed individuals (Freiberufler or Gewerbetreibende). Trigger on phrases like "how much tax do I pay in Germany", "Einkommensteuer", "Einkommensteuererklarung", "Anlage S", "Anlage G", "Anlage EUR", "Freiberufler tax", "Gewerbetreibende", "Solidaritatszuschlag", "Kirchensteuer", "Vorauszahlungen", "Betriebsausgaben", "AfA", "Abschreibung", "hausliches Arbeitszimmer", "Fahrtkosten", "Bewirtungskosten", "Grundfreibetrag", or any question about filing or computing income tax for a self-employed client in Germany. Covers Einkommensteuer progressive rates, Solidaritatszuschlag, Kirchensteuer, Anlage S/G/EUR structure, allowable Betriebsausgaben, AfA depreciation, home office, vehicle expenses, quarterly Vorauszahlungen, Gewerbesteuer credit, and interaction with Umsatzsteuer. ALWAYS read this skill before touching any German income tax work.
-version: 2.0
+version: 2.1
 jurisdiction: DE
 tax_year: 2025
 tier: 2
-last_updated: 2026-06-12
+last_updated: 2026-10-21
+review_status: pending_review
 category: international
 depends_on:
   - income-tax-workflow-base
 verified_by: pending
 ---
 
-# Germany Income Tax (Einkommensteuer) -- Self-Employed Skill v2.0
+# Germany Income Tax (Einkommensteuer) -- Self-Employed Skill v2.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -35,7 +36,7 @@ verified_by: pending
 | Contributor | Open Accountants Community |
 | Validated by | Pending -- requires sign-off by a German Steuerberater |
 | Validation date | Pending |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ### Tax Rate Brackets (2025)
 
@@ -78,7 +79,7 @@ verified_by: pending
 
 | Line | Description |
 |---|---|
-| Betriebseinnahmen | Gross business revenue (net of USt if registered) |
+| Betriebseinnahmen | Gross business revenue (including collected USt per § 4 Abs. 3 EStG) |
 | Raumkosten | Office costs (rent, utilities, home office) |
 | Fahrzeugkosten | Vehicle costs (business portion) |
 | Reisekosten | Travel expenses |
@@ -135,14 +136,14 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 | Pattern | Tax Line | Treatment | Notes |
 |---|---|---|---|
-| KUNDENUEBERWEISUNG, KUNDENUBERWEISUNG, UBERWEISUNG [client name] | Betriebseinnahmen | Gross revenue on Anlage EUR | If USt-registered, extract net (excl. 19% USt) |
+| KUNDENUEBERWEISUNG, KUNDENUBERWEISUNG, UBERWEISUNG [client name] | Betriebseinnahmen | Gross revenue on Anlage EUR | Collected USt must be included in Betriebseinnahmen for EÜR, but reported in a separate line on the form |
 | HONORAR, HONORARNOTE, VERGUETUNG | Betriebseinnahmen | Revenue | Professional fees -- typical Freiberufler |
 | PAYPAL PAYOUT, STRIPE PAYOUT, STRIPE TRANSFER | Betriebseinnahmen | Revenue | Platform payout -- match to underlying invoices |
 | GEHALT, LOHN, ARBEITGEBER [name] | Einkuenfte aus nichtselbstaendiger Arbeit (Anlage N) | NOT self-employment income | Employment income -- separate Anlage N |
 | MIETEINNAHME, MIETE ERHALTEN | Einkuenfte aus Vermietung (Anlage V) | NOT self-employment income | Rental income -- separate |
 | ZINSEN, ZINSERTRAG, KAPITALERTRAG | Einkuenfte aus Kapitalvermogen (Anlage KAP) | NOT self-employment income | Capital income -- Abgeltungsteuer 25% |
 | DIVIDENDE | Einkuenfte aus Kapitalvermogen | NOT self-employment income | Dividend |
-| ERSTATTUNG FINANZAMT, STEUERERSTATTUNG | EXCLUDE | Not income | Tax refund |
+| ERSTATTUNG FINANZAMT, STEUERERSTATTUNG | Identify the tax before classifying | VAT refund: EÜR receipt (2025 line 18); income tax or non-deductible trade tax refund: excluded | If the tax type is unknown, flag for reviewer classification. |
 | GUTSCHRIFT [supplier name] | Check context | Could be credit note or refund | If refund of expense: reduce expense. If revenue: add to income |
 
 ### 3.2 Expense Patterns (Debits on Bank Statement)
@@ -177,9 +178,9 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | RENTENVERSICHERUNG, DRV | Sonderausgabe (Altersvorsorge) | NOT a business expense |
 | KUENSTLERSOZIALKASSE, KSK | Sonderausgabe | NOT a business expense |
 | FINANZAMT, EINKOMMENSTEUER, VORAUSZAHLUNG ESt | EXCLUDE | Income tax not deductible |
-| GEWERBESTEUER, GewSt | Betriebsausgabe | Deductible since 2008 (for Gewerbetreibende) |
+| GEWERBESTEUER, GewSt | Keine Betriebsausgabe | Not deductible (§ 4 Abs. 5b EStG). Subject to separate tax reduction under § 35 EStG. |
 | PRIVATENTNAHME, EIGENBELEG PRIVAT | EXCLUDE | Drawings |
-| UMSATZSTEUER ZAHLUNG, USt VORAUSZAHLUNG | EXCLUDE from P&L | USt is balance sheet for Regelbesteuerung |
+| UMSATZSTEUER ZAHLUNG, USt VORAUSZAHLUNG | Betriebsausgabe in EÜR | VAT paid to the Finanzamt is recorded separately; apply the cash-basis timing rules, including the ten-day rule where applicable. |
 | SPENDE, DONATION | Sonderausgabe | NOT a business expense |
 
 ### 3.4 SaaS -- EU Suppliers (Reverse Charge for USt; fully deductible for ESt)
@@ -225,7 +226,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 `15.03.2025 ; KUNDENUEBERWEISUNG STUDIO KREBS GMBH ; CREDIT ; Honorar Maerz 2025 ; +4,500.00 ; EUR`
 
 **Reasoning:**
-Client payment for professional services. Freiberufler income. If USt-registered (Regelbesteuerung), EUR 4,500 may include 19% USt. Check invoice: if EUR 4,500 gross, net = EUR 3,781.51 (Betriebseinnahme) + EUR 718.49 (USt liability). If Kleinunternehmer (s19 UStG), full EUR 4,500 is income.
+Client payment for professional services. Freiberufler income. If USt-registered (Regelbesteuerung), EUR 4,500 may include 19% USt. Both the net revenue (EUR 3,781.51) and the collected USt (EUR 718.49) are Betriebseinnahmen under § 4 Abs. 3 EStG, but are reported on separate lines in the Anlage EÜR. If Kleinunternehmer (s19 UStG), full EUR 4,500 is income.
 
 **Classification:** Betriebseinnahmen on Anlage EUR / Anlage S.
 
@@ -290,13 +291,15 @@ Health insurance is a Sonderausgabe on the main return, NOT a Betriebsausgabe on
 
 **Legislation:** EStG s4 Abs.1, s15 (Gewerbebetrieb), s18 (freiberufliche Tatigkeit)
 
-All business income is Betriebseinnahmen. For USt-registered, report net of USt on Anlage EUR. For Kleinunternehmer (s19 UStG), report gross.
+All business income is Betriebseinnahmen. For cash-basis EÜR under [§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html), report net taxable receipts and VAT actually received separately. On the **2025** Anlage EÜR, these are lines 15 and 17; VAT refunded or set off by the Finanzamt goes to line 18. For Kleinunternehmer (§ 19 UStG), report gross receipts without separating USt. Use the form for the selected year, not a later year's line numbers. [ELSTER, 2025 EÜR instructions](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_euer_ufa_77_2025).
 
 ### 5.2 Betriebsausgaben (Business Expenses)
 
 **Legislation:** EStG s4 Abs.4
 
 Expenses are deductible if caused by the business (betrieblich veranlasst). Germany allows apportionment of mixed-use expenses where business and private portions can be objectively separated.
+
+For EÜR, deductible input VAT actually paid is a separate business expense (2025 line 57), as is VAT paid to the Finanzamt (2025 line 58). Enter the underlying expense net when its VAT is deductible, so the VAT is counted once. Non-recoverable VAT forms part of that item's cost and follows its deduction or depreciation rules. Apply [§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html), including the ten-day rule for qualifying recurring payments. [ELSTER, 2025 EÜR instructions](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_euer_ufa_77_2025).
 
 ### 5.3 Geringwertige Wirtschaftsguter (GWG / Low-Value Assets)
 
@@ -306,6 +309,8 @@ Expenses are deductible if caused by the business (betrieblich veranlasst). Germ
 | EUR 250.01 -- EUR 800 | Immediate full deduction OR Sammelposten. Asset register required. |
 | EUR 800.01 -- EUR 1,000 | Sammelposten option: pool, depreciate 5 years (20%/year) |
 | Over EUR 1,000 | Normal AfA over useful life per AfA-Tabelle |
+
+For the threshold test, subtract the VAT included in the acquisition cost even if the taxpayer cannot recover it. Non-recoverable VAT remains part of the amount deducted. A separately usable, qualifying office chair costing EUR 800 plus EUR 152 VAT can therefore meet the EUR 800 threshold and give a Kleinunternehmer a EUR 952 immediate deduction. This is not an EUR 800 gross ceiling. [§ 6(2) EStG](https://www.gesetze-im-internet.de/estg/__6.html).
 
 ### 5.4 AfA (Depreciation)
 
@@ -368,9 +373,11 @@ Based on most recent Steuerbescheid. First year: Finanzamt estimates.
 
 | Scenario | Income Tax Treatment |
 |---|---|
-| USt collected (Regelbesteuerung) | NOT income -- report net on Anlage EUR |
-| Vorsteuer recovered | NOT an expense -- report net on Anlage EUR |
-| Vorsteuer blocked (e.g., 30% Bewirtung for ESt, 100% for USt) | ESt and USt have DIFFERENT rules |
+| USt actually collected (Regelbesteuerung) | Separate business receipt; 2025 EÜR line 17, in addition to net taxable receipts in line 15 |
+| Deductible Vorsteuer actually paid | Separate business expense; 2025 EÜR line 57, with the underlying expense entered net |
+| USt paid to the Finanzamt | Separate business expense; 2025 EÜR line 58, subject to cash-basis timing rules |
+| USt refunded or set off by the Finanzamt | Separate business receipt; 2025 EÜR line 18 |
+| Vorsteuer blocked | Part of the item's cost; follow that item's deduction or depreciation rules. The ESt entertainment limit does not itself block the same proportion of input VAT. |
 | Kleinunternehmer (s19 UStG) | No USt charged; all costs gross including USt paid |
 | Reverse-charge on imports | Net effect zero for USt; net cost deductible for ESt |
 
@@ -551,6 +558,18 @@ Expected: Over EUR 50 limit. Entire EUR 80 non-deductible.
 **Test 6 -- Kleinunternehmer gross reporting.**
 Input: Kleinunternehmer, invoice EUR 1,000 (no USt charged).
 Expected: Full EUR 1,000 is Betriebseinnahme. All purchase costs at gross.
+
+**Test 7 -- VAT reconciles in cash-basis EÜR.**
+Input: In the same year, EUR 10,000 net fees plus EUR 1,900 VAT received; EUR 2,000 deductible net expenses plus EUR 380 deductible input VAT paid; EUR 1,520 VAT paid to the Finanzamt. No year-end timing adjustment or other items.
+Expected: Receipts EUR 11,900; expenses EUR 3,900 (EUR 2,000 + EUR 380 + EUR 1,520); profit EUR 8,000. Excluding either input VAT or the remittance would overstate profit. For payments near year end, test § 11 EStG before assigning the year.
+
+**Test 8 -- GWG threshold differs from deduction amount.**
+Input: A Kleinunternehmer buys a separately usable office chair for EUR 800 plus EUR 152 VAT and elects immediate deduction under § 6(2) EStG; all other conditions are met.
+Expected: Threshold-test cost EUR 800; immediate deduction EUR 952 because the VAT cannot be recovered. A price of EUR 800.01 before included VAT exceeds the immediate-deduction threshold.
+
+**Test 9 -- Tax refund classification follows the tax type.**
+Input: A bank credit labelled STEUERERSTATTUNG for EUR 500.
+Expected: If the notice identifies VAT, enter a separate EÜR receipt (2025 line 18), subject to the timing rules. If it identifies income tax, exclude it from business receipts. Without the notice or another reliable tax-type match, flag the amount for review rather than excluding it automatically.
 
 ---
 
