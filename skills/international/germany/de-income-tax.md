@@ -236,9 +236,9 @@ Client payment for professional services. Freiberufler income. If USt-registered
 `22.04.2025 ; RESTAURANT GOLDENER HIRSCH ; DEBIT ; Bewirtung Kundentreffen ; -180.00 ; EUR`
 
 **Reasoning:**
-Bewirtungskosten are 70% deductible for ESt (s4 Abs.5 Nr.2 EStG). The full Vorsteuer (19% USt) is recoverable for USt purposes if a proper Bewirtungsbeleg exists. Without Bewirtungsbeleg: 0% deductible.
+For this example, the EUR 180 bill includes 19% USt, is reasonable and fully business-related, and meets the invoice and entertainment-record requirements. Deduct 70% of the net entertainment cost for ESt (§ 4(5) no. 2 EStG); record the deductible input VAT separately. [ELSTER, 2025 EÜR instructions, lines 57 and 63](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_euer_ufa_77_2025). Without the required supporting records, flag the deduction for review rather than claiming it.
 
-**Classification:** ESt: EUR 180.00 x 70% = EUR 126.00 deductible. EUR 54.00 not deductible. USt: EUR 28.74 Vorsteuer 100% recoverable with proper Beleg.
+**Classification:** Net cost EUR 151.26; ESt entertainment deduction EUR 105.88 (70%), with EUR 45.38 not deductible. Deductible input VAT EUR 28.74 is a separate EÜR expense, not part of the 70% base. If VAT is not recoverable, use the EUR 180 gross cost instead: EUR 126 deductible entertainment expense, EUR 54 not deductible and no separate input-VAT deduction.
 
 ### Example 3 -- Home Office (Arbeitszimmer)
 
@@ -421,6 +421,8 @@ Default: 0% deduction. Options:
 
 ## Section 7 -- Excel Working Paper Template
 
+For a VAT-registered taxpayer, enter underlying costs net of separately deductible input VAT. Include non-recoverable VAT in the relevant cost and apply that cost's deduction or depreciation rules. Kleinunternehmer use gross receipts and costs without separate VAT rows. Apply the § 11 timing rules before assigning VAT payments or refunds to this year. The row labels below are working-paper labels, not official form line numbers.
+
 ```
 EINNAHMEN-UBERSCHUSS-RECHNUNG (EUR) -- Working Paper
 Tax Year: 2025
@@ -430,7 +432,9 @@ Status: Freiberufler / Gewerbetreibende
 A. BETRIEBSEINNAHMEN
   A1. Umsatzerlose (net of USt if registered)    ___________
   A2. Sonstige Betriebseinnahmen                  ___________
-  A3. Total Betriebseinnahmen (A1 + A2)           ___________
+  A3. Vereinnahmte USt (2025 EÜR line 17)         ___________
+  A4. USt-Erstattungen Finanzamt (line 18)        ___________
+  A5. Total Betriebseinnahmen (A1 + A2 + A3 + A4) ___________
 
 B. BETRIEBSAUSGABEN
   B1. Wareneinsatz / Fremdleistungen              ___________
@@ -439,7 +443,7 @@ B. BETRIEBSAUSGABEN
   B4. Versicherungen (business only)              ___________
   B5. Fahrzeugkosten                              ___________
   B6. Reisekosten                                 ___________
-  B7. Bewirtungskosten (70% of gross)             ___________
+  B7. Bewirtungskosten (70% of eligible cost)     ___________
   B8. Werbekosten                                 ___________
   B9. Buro- und Verwaltungskosten                 ___________
   B10. Telekommunikation (business %)             ___________
@@ -448,9 +452,11 @@ B. BETRIEBSAUSGABEN
   B13. Abschreibungen (AfA)                       ___________
   B14. Nebenkosten Geldverkehr (bank fees)        ___________
   B15. Sonstige Betriebsausgaben                  ___________
-  B16. Total Betriebsausgaben (B1-B15)            ___________
+  B16. Abziehbare Vorsteuer paid (line 57)        ___________
+  B17. USt paid to Finanzamt (line 58)            ___________
+  B18. Total Betriebsausgaben (sum B1 through B17) ___________
 
-C. GEWINN / VERLUST (A3 - B16)                    ___________
+C. GEWINN / VERLUST (A5 - B18)                    ___________
 
 REVIEWER FLAGS:
   [ ] Freiberufler or Gewerbetreibende confirmed?
@@ -459,6 +465,9 @@ REVIEWER FLAGS:
   [ ] Home office method confirmed?
   [ ] Vehicle method confirmed?
   [ ] Bewirtungsbelege available?
+  [ ] B7 uses net cost if VAT is separately deductible?
+  [ ] VAT receipts, refunds and payments reconciled without duplication?
+  [ ] Year-end VAT timing checked under section 11 EStG?
   [ ] All T2 items flagged for review?
 ```
 
@@ -540,8 +549,8 @@ Input: Single, no church, Freiberufler, Betriebseinnahmen EUR 60,000, Betriebsau
 Expected: Apply formula-based progressive rate to EUR 45,000. SolZ likely below exemption threshold. No GewSt.
 
 **Test 2 -- Bewirtung correctly limited.**
-Input: EUR 500 Bewirtungskosten claimed.
-Expected: EUR 350 deductible (70%). EUR 150 not deductible.
+Input: EUR 500 net Bewirtungskosten plus EUR 95 recoverable VAT, with all business-purpose and documentation requirements met.
+Expected: EUR 350 entertainment deduction (70% of net); EUR 150 not deductible; EUR 95 input VAT separately deductible. For a taxpayer who cannot recover VAT, the same EUR 595 gross bill gives EUR 416.50 entertainment deduction and EUR 178.50 not deductible, with no separate input-VAT deduction.
 
 **Test 3 -- Computer hardware full write-off.**
 Input: Laptop EUR 2,500 purchased.
@@ -561,7 +570,7 @@ Expected: Full EUR 1,000 is Betriebseinnahme. All purchase costs at gross.
 
 **Test 7 -- VAT reconciles in cash-basis EÜR.**
 Input: In the same year, EUR 10,000 net fees plus EUR 1,900 VAT received; EUR 2,000 deductible net expenses plus EUR 380 deductible input VAT paid; EUR 1,520 VAT paid to the Finanzamt. No year-end timing adjustment or other items.
-Expected: Receipts EUR 11,900; expenses EUR 3,900 (EUR 2,000 + EUR 380 + EUR 1,520); profit EUR 8,000. Excluding either input VAT or the remittance would overstate profit. For payments near year end, test § 11 EStG before assigning the year.
+Expected: Section 7 A1 EUR 10,000, A3 EUR 1,900 and A5 EUR 11,900; underlying B1-B15 costs EUR 2,000, B16 EUR 380, B17 EUR 1,520 and B18 EUR 3,900; C profit EUR 8,000. Excluding either input VAT or the remittance would overstate profit. For payments near year end, test § 11 EStG before assigning the year.
 
 **Test 8 -- GWG threshold differs from deduction amount.**
 Input: A Kleinunternehmer buys a separately usable office chair for EUR 800 plus EUR 152 VAT and elects immediate deduction under § 6(2) EStG; all other conditions are met.
@@ -570,6 +579,14 @@ Expected: Threshold-test cost EUR 800; immediate deduction EUR 952 because the V
 **Test 9 -- Tax refund classification follows the tax type.**
 Input: A bank credit labelled STEUERERSTATTUNG for EUR 500.
 Expected: If the notice identifies VAT, enter a separate EÜR receipt (2025 line 18), subject to the timing rules. If it identifies income tax, exclude it from business receipts. Without the notice or another reliable tax-type match, flag the amount for review rather than excluding it automatically.
+
+**Test 10 -- VAT refund has no offsetting current-year payment.**
+Input: EUR 10,000 net fees and EUR 1,900 VAT collected; EUR 2,000 net expenses and EUR 380 deductible input VAT paid; EUR 500 VAT refund received from a prior period; no VAT remittance or timing adjustment in the year.
+Expected: Section 7 A1 EUR 10,000, A3 EUR 1,900, A4 EUR 500 and A5 EUR 12,400; B1-B15 EUR 2,000, B16 EUR 380, B17 zero and B18 EUR 2,380; C profit EUR 10,020. Omitting VAT rows would incorrectly produce EUR 8,000.
+
+**Test 11 -- Restaurant bill uses net cost once.**
+Input: Example 2's eligible EUR 180 gross restaurant bill, including EUR 28.74 recoverable VAT, paid in the year.
+Expected: B7 EUR 105.88, B16 EUR 28.74, total deductible expenses EUR 134.62 and non-deductible net entertainment cost EUR 45.38. If VAT cannot be recovered, B7 EUR 126, B16 zero and non-deductible cost EUR 54. Do not combine the gross entertainment deduction with a separate VAT deduction.
 
 ---
 
