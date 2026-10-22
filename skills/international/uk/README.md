@@ -16,7 +16,7 @@ Tax year 6 April to 5 April for individuals; companies use their own accounting 
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | uk-income-tax-sa100, uk-self-employment-sa103, uk-capital-gains-sa108, uk-dividends, uk-rental-sa105, uk-payments-on-account | source-cited draft |
-| IT-CORP, corporate income tax | (missing: corporation tax rates, marginal relief, CT600, payment dates) | |
+| IT-CORP, corporate income tax | uk-corporation-tax | source-cited draft |
 | VAT | uk-vat-return, vat-returns-for-small-businesses-in-the-uk, gb-vat-eu-goods-sellers | source-cited draft |
 | SC, social contributions | uk-national-insurance | source-cited draft |
 | PR, payroll withholding | uk-payroll, uk-student-loan-repayment | source-cited draft |
