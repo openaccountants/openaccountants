@@ -23,7 +23,7 @@ All figures are for the 2026 calendar year unless a row says otherwise. Statute 
 - **Unlimited liability (worldwide income).** A person has unlimited liability if they have a home (Wohnsitz) or their habitual abode (gewöhnlicher Aufenthalt) in Austria (EStG § 1(2)).
 - **Home.** A person has a home where they hold a dwelling in circumstances that show they will keep and use it (BAO § 26(1)). Citizenship does not decide it.
 - **Habitual abode and the six-month rule.** A person has a habitual abode where they stay in circumstances showing the stay is not just temporary. A stay in Austria of more than six months always creates unlimited liability, and the liability then also covers the first six months (BAO § 26(2)).
-- **Second homes of people living abroad.** If a person's centre of vital interests has been abroad for more than five calendar years, an Austrian dwelling counts as a home only in years when it (alone or with other Austrian dwellings) is used on more than 70 days. This applies only if the person keeps a record of the days of use (Zweitwohnsitzverordnung §§ 1 and 2). A dwelling of a spouse or partner who has unlimited liability and not permanently separated always counts as a home (§ 3).
+- **Second homes of people living abroad.** If a person's centre of vital interests has been abroad for more than five calendar years, an Austrian dwelling counts as a home only in years when it (alone or with other Austrian dwellings) is used on more than 70 days. This applies only if the person keeps a record of the days of use (Zweitwohnsitzverordnung § 1(1) and (2)). The rule first applies in the calendar year after the centre of vital interests moves abroad, and last applies in the year before it moves back (§ 2). A dwelling of a spouse or partner who has unlimited liability and not permanently separated always counts as a home (§ 3).
 - **Limited liability (Austrian income only).** A person with neither a home nor a habitual abode in Austria is taxed only on the Austrian income listed in EStG § 98 (EStG § 1(3)).
 - **Option for EU/EEA nationals.** A national of an EU or EEA state without a home or habitual abode in Austria can apply to be treated as having unlimited liability if at least 90% of their income is subject to Austrian tax, or their income not subject to Austrian tax is not more than EUR 13,539 (2026). Proof is a certificate from the foreign tax authority (EStG § 1(4)). The claim is made on form L 1i with the E 1 or L 1 return (BMF, E 7 guide for 2025).
 - **Part-year.** There is no separate split-year statute. Liability follows the facts: unlimited from the day a home is set up or the habitual abode begins, limited after it ends. For the year of arrival or departure, refer the tariff mechanics (foreign income in the progression) to `at-income-tax`.
@@ -51,9 +51,9 @@ All figures are for the 2026 calendar year unless a row says otherwise. Statute 
 | Exit tax instalments (business assets, EU/EEA moves): fixed assets | 5 equal yearly instalments | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=6 |
 | Exit tax instalments (business assets, EU/EEA moves): current assets | 2 equal yearly instalments | 2026 | same |
 | § 99 EStG withholding, gross (artists, authors, sportspeople, royalties, board fees, consulting, labour hire) | 20% | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=100 |
-| § 99 EStG withholding on income under § 99(1) no. 6 and 7 | 27.5% | 2026 | same |
+| § 99 EStG withholding on income under § 99(1) no. 6 (property income of non-public real estate funds) and no. 7 (silent partnerships) | 27.5% | 2026 | same |
 | § 99 EStG net taxation (EU/EEA recipients): up to EUR 20,000 a year / above | 20% / 25% | 2026 | same |
-| § 99 EStG net taxation where the recipient is a company | 23% (from 2024) | 2026 | same |
+| § 99 EStG net taxation where the recipient is a company; a company may also have 23% withheld on § 99(1) no. 6 and 7 income | 23% (from 2024) | 2026 | same |
 | Refund example in BMF guidance: treaty rate on dividends to an individual | 15% (refund of 12.5 points of the 27.5%) | 2026 | https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/rueckerstattung/rueckerstattung-oesterreichischer-abzugsteuer.html |
 
 The tariff bands and the amounts in EStG §§ 1(4) and 102(3) are indexed every year (EStG § 33(1a)). Never reuse one year's figures for another. The 2025 add-on was EUR 10,888 and the 2025 EU/EEA cap EUR 13,308 (BMF, E 7 guide for 2025).
@@ -76,7 +76,7 @@ The tariff bands and the amounts in EStG §§ 1(4) and 102(3) are indexed every 
 
 - *Zuzugsfreibetrag (§ 103(1a)).* For a person whose move from abroad serves science or research in the public interest, the Finanzamt Österreich can grant an allowance of 30% of the income from scientific activity taxed at the tariff, for five years from arrival. If granted, no other moving-related expenses can be deducted.
 - *Removal of extra burden (§ 103(1)).* For moves serving science, research, art or sport, the Finanzamt can remove the extra tax caused by becoming resident on income not covered by § 98, for example by applying a flat average rate based on the burden before the move. That rate cannot be below 15% (§ 103(3)).
-- *Gap rule.* A person who moved their centre of vital interests out of Austria qualifies again only after more than ten years abroad (§ 103(1)), or more than five years for the 30% allowance (§ 103(2)).
+- *Gap rule.* A person who moved their centre of vital interests out of Austria qualifies again only after more than ten years abroad, or more than five years for the 30% allowance (§ 103(2)).
 - *Who qualifies.* The regulation sets the conditions: mainly scientific activity, in Austria's public interest, documented high qualification (Zuzugsbegünstigungsverordnung 2016 § 2(1)). Some cases count in any event, such as a university professor appointment under § 94(2) no. 1 UG, or work at a listed research institution with pay at least the EU Blue Card gross salary (§ 2(2)).
 
 **Exit tax: individuals (Wegzugsbesteuerung, EStG § 27(6) no. 1).** Any event that restricts Austria's right to tax a capital asset, a derivative or a cryptocurrency counts as a sale. The typical event is moving abroad so that a treaty gives the new state the right to tax the gain. The gain is the fair value less acquisition cost, taxed at 27.5%.
@@ -99,7 +99,7 @@ The tariff bands and the amounts in EStG §§ 1(4) and 102(3) are indexed every 
 | Exit tax proof duty (deferred gains above EUR 100,000) | every year, by the end of the following year | EStG § 27(6) no. 1 lit. f |
 | Exit tax instalments (EU/EEA business assets) | first: 1 month after the notice; then 30 June each year | EStG § 6 Z 6 lit. d and e |
 | § 99 withholding paid over by the Austrian payer | 15th day after the end of the month of withholding | EStG § 101(1) |
-| Refund of Austrian withholding tax for non-residents | only after the end of the year of withholding; by the end of the fifth calendar year after that year | BAO § 240a(1) (BMF refund page); BAO § 240(3) |
+| Refund of Austrian withholding tax for non-residents | only after the end of the year of withholding; by the end of the fifth calendar year after that year | BAO § 240a(1) (BMF refund page); BAO § 240(3) (tax withheld wrongly) and § 240(4) (refund under a treaty) |
 
 **Refund route.** Since 1 January 2019 a non-resident must first file an electronic pre-notification (Vorausmeldung) through the BMF web form. The applicant prints it, signs it, has the foreign tax authority confirm residence on it, and posts it to the Finanzamt für Großbetriebe. Fax is not accepted. Each income type needs its own application, for example DIAG for dividends and ZISP for savings interest. The first application gives the applicant an ABZ number to quote in all later ones (BMF refund page). Relief at source instead of refund, and the dividend rules for companies, are in `at-corporate-income-tax`.
 
@@ -111,7 +111,7 @@ The tariff bands and the amounts in EStG §§ 1(4) and 102(3) are indexed every 
 | First late-payment surcharge (Säumniszuschlag) | 2% of the tax not paid by the due date | BAO § 217(2) |
 | Second and third late-payment surcharges | 1% each, if still unpaid 3 months after enforceability and 3 months after that | BAO § 217(3) |
 | Interest on income tax and corporate tax differences (Anspruchszinsen) | 2% above the base rate a year, from 1 October of the following year, for at most 48 months; not set below EUR 50 | BAO § 205(1) and (2) |
-| Anspruchszinsen rate from 16 September 2026 | 4.03% (base rate 2.03%) | BMF-AV Nr. 171/2026 |
+| Anspruchszinsen rate from 16 September 2026 | 4.03% (base rate 2.03%); 3.53% from 11 June 2025 to 15 September 2026 | BMF-AV Nr. 171/2026 |
 
 Anspruchszinsen do not apply to deferred exit tax or exit tax instalments (EStG § 27(6) no. 1 lit. c; § 6 Z 6 lit. d). The payer of § 99 income is liable for tax it fails to withhold (EStG § 100(2)).
 
@@ -127,7 +127,7 @@ Anspruchszinsen do not apply to deferred exit tax or exit tax instalments (EStG 
 
 ### Example 1: researcher moving to Vienna in 2026 with the Zuzugsfreibetrag
 
-A researcher moves from abroad in January 2026 to a professorship at an Austrian university and applies within six months. The Finanzamt grants the 30% Zuzugsfreibetrag. Their only income is EUR 90,000 from scientific activity, taxed at the tariff (after social insurance and expenses). Credits are left out to show the tariff effect.
+A researcher moves from abroad in January 2026 to a professorship at an Austrian university and applies within six months. The Finanzamt grants the 30% Zuzugsfreibetrag. Their only income is EUR 90,000 from scientific activity, taxed at the tariff (after social insurance and expenses). The allowance is deducted from that income before the tariff is applied (§ 103(1a)). Fixed credits such as the Verkehrsabsetzbetrag reduce the tax by the same amount with or without the allowance, so they are left out of both figures and the saving is unchanged.
 
 1. Allowance: 30% of EUR 90,000 = EUR 27,000. Taxable income EUR 63,000.
 2. Tariff 2026 on EUR 63,000: EUR 8,453 at 20% = EUR 1,690.60; EUR 14,466 at 30% = EUR 4,339.80; EUR 26,542 at 40% = EUR 10,616.80. Total EUR 16,647.20.
@@ -162,10 +162,10 @@ expected:
 
 An Austrian resident moves permanently to London on 1 March 2026 and gives up the Austrian home. They privately hold 20% of an Austrian GmbH, bought for EUR 40,000 and worth EUR 240,000 on the day of departure. The UK is not an EU/EEA state.
 
-1. The move restricts Austria's right to tax the gain, so it counts as a sale (EStG § 27(6) no. 1).
+1. Under the Austria-UK treaty, gains on shares are taxable only in the seller's state of residence (Art. 13(5)), unless more than 50% of the company's value comes from Austrian real property (Art. 13(2)). This GmbH is not property-rich, so the move restricts Austria's right to tax the gain and counts as a sale (EStG § 27(6) no. 1).
 2. Gain: EUR 240,000 less EUR 40,000 = EUR 200,000.
 3. Tax at the 27.5% special rate: EUR 55,000.
-4. No deferral (that is only for EU/EEA moves) and no instalments (also EU/EEA only). The EUR 55,000 is assessed with the 2026 return and paid on the notice. If it is paid late, the first late-payment surcharge is 2%, EUR 1,100.
+4. No deferral and no instalments: § 27(6) no. 1 lit. a and § 6 Z 6 lit. c name only EU/EEA states, and there is no route for a third country with a mutual assistance agreement. The UK has been a third country since Brexit. The EUR 55,000 is assessed with the 2026 return and paid on the notice. If it is paid late, the first late-payment surcharge is 2%, EUR 1,100.
 5. Had the person moved to Germany instead, they could apply for the tax to be assessed but not collected until a sale. Because the deferred gain exceeds EUR 100,000, they would have to confirm every year that no sale or further move has happened.
 
 ```oa-check
@@ -218,6 +218,7 @@ All read on 2026-10-22.
 - BAO § 217 (late payment surcharges): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=217
 - BAO § 240 (refund of tax withheld, five-year limit): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940&Paragraf=240
 - MeldeG §§ 3 and 4 (registration and deregistration): https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005799&Paragraf=4
+- Austria-UK double tax treaty (BGBl. III Nr. 32/2019), Art. 13: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20010606
 - BMF, refund of Austrian withholding tax: https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/rueckerstattung/rueckerstattung-oesterreichischer-abzugsteuer.html
 - BMF, double tax treaties, general: https://www.bmf.gv.at/themen/steuern/internationales-steuerrecht/doppelbesteuerungsabkommen/dba-allgemeines.html
 - BMF, press release on the Austria-Switzerland protocol, 30 July 2026: https://www.bmf.gv.at/presse/pressemeldungen/2026/juli-2026/dba-schweiz.html

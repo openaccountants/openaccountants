@@ -3,7 +3,6 @@ jurisdiction: AT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  SC: at-svs-contributions
   XB: at-cross-border
 ---
 
@@ -18,12 +17,14 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 | IT-IND, individual income tax | at-income-tax | source-cited draft |
 | IT-CORP, corporate income tax | at-corporate-income-tax | source-cited draft |
 | VAT | at-vat-return, austria-vat-return | source-cited draft |
-| SC, social contributions | at-svs-contributions (self-employed only; employee ASVG contributions not covered) | source-cited draft |
+| SC, social contributions | (missing: employee and employer contributions under the ASVG; at-svs-contributions covers only the self-employed under the GSVG and FSVG) | |
 | PR, payroll withholding | (missing: Lohnsteuer and the employer's payroll duties) | |
 | TP, transfer pricing | (missing: Verrechnungspreisdokumentationsgesetz and arm's-length rules) | |
 | XB, cross-border | at-cross-border | source-cited draft |
 
-Also in the pack: at-tax-overview (a map of the system) and at-company-formation (entity choice).
+SC is marked missing although at-svs-contributions exists: it covers only the self-employed, not employees or their employers. A partial skill does not count as coverage.
+
+Also in the pack: at-svs-contributions (self-employed social insurance), at-tax-overview (a map of the system) and at-company-formation (entity choice).
 
 ## Official sources
 
