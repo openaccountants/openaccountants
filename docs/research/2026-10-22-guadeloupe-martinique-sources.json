@@ -1,0 +1,33 @@
+{
+  "jurisdictions": [
+    "GP",
+    "MQ"
+  ],
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.douane.gouv.fr/sites/default/files/2025-07/16/Circulaire-octroi-de-mer10072025.pdf",
+      "sha256": "b49d539c44f19b7bdd2e6c20c4d229975e0baa44c0c05333d9b9acbff2faaf0c",
+      "bytes": 690074,
+      "read": "Paragraphs 16\u201320, 101\u2013113; reproduced law article 2 and decree article 7. Full PDF downloaded, relevant passages extracted."
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000253374/LEGISCTA000006099294/",
+      "retrieval": "Official search retrieval returned article 2 wording updated 21 February 2026; direct article fetch returned 403. Not a full consolidated-law audit."
+    }
+  ],
+  "allocation": {
+    "ryan_tree": "2d2e198012cfd827357eee3ef0a4e65316692fa6",
+    "truncated": false,
+    "matching_paths": [],
+    "shared_main_matching_country_paths": []
+  },
+  "gaps": [
+    "Independent source review",
+    "Post-circular procedural amendments",
+    "Current submission channel and exact form version",
+    "Product rates and exemptions",
+    "VAT recodification and broader country topics"
+  ],
+  "status": "Two source-cited drafts; no attestation or complete-country claim"
+}
