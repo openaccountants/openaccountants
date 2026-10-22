@@ -74,7 +74,7 @@ The AOW age variant: from the first day of the month in which a person reaches A
 
 **What is outside the base.**
 - WKR items designated as final-levy wage, and other final-levy items: outside the employee insurance and Zvw base (Wfsv art. 16(2)(b); Zvw art. 43(2)(a)).
-- The expat scheme (30% ruling) allowance: it is a targeted-exempt allowance, so no employee insurance premiums are due on it (Handboek Loonheffingen 2026, §19.4.8). It is also outside taxable wage, so it is outside the national insurance base.
+- The expat scheme (30% ruling) allowance: it is a targeted exemption for extraterritorial costs (Wet LB art. 31a(2)(e)), which the employer designates as final-levy wage under Wet LB art. 31(1)(f) (Handboek Loonheffingen 2026, §22.1). The Handboek states that no employee insurance premiums are due on it (§19.4.8). For the national insurance premiums and the Zvw no Belastingdienst text says so in terms; the result follows from the statutes, which take art. 31(1)(f) items out of the national insurance premium income (Wfsv art. 8(2)) and out of the Zvw contribution income (Zvw art. 43(2)(a), 2°). So the allowance is outside all three bases.
 - Employer Zvw levy: an employer cost, not taxable wage for the employee (Handboek Loonheffingen 2026, chapter 8).
 
 **Zvw contribution, self-employed.** The contribution income includes taxable profit from a business under section 3.2 of the Income Tax Act and taxable results from other work (Zvw art. 43(2)(b) and (c)). Taxable profit is profit after the entrepreneur deductions and the MKB profit exemption (Wet IB art. 3.2). Personal deductions such as mortgage interest do not reduce it. If wages already carry the employer levy, the 4.85% applies only to the other income, up to what is left of the EUR 79,409 maximum (Belastingdienst, Zvw 2026, §28.2.4).
@@ -97,15 +97,15 @@ The AOW age variant: from the first day of the month in which a person reaches A
 
 **Interest.**
 - Collection interest (invorderingsrente) on late-paid tax debts: 4.3% from 1 January 2026.
-- Tax interest (belastingrente) on assessments for past years, including payroll top-up assessments and income tax: 5% from 1 January 2026 for all taxes except corporate tax and allowances.
+- Tax interest (belastingrente) on assessments for past years, including payroll top-up assessments and income tax: 5% from 1 January 2026. Allowances (toeslagen) have their own rate.
 
 ## Cross-border points
 
 **Which country.** Within the EU, EEA and Switzerland the person is insured in one country only, under Regulations 883/2004 and 987/2009 (Handboek Loonheffingen 2026, §20.1.1). The main rules for employees:
 - Working only in the Netherlands: insured in the Netherlands, wherever they live. This covers most frontier workers living in Belgium or Germany and working here.
-- Working in the Netherlands and in the country of residence: insured in the country of residence if they do at least 25% of their working time there, or earn at least 25% of their pay there. Below 25%, insured where the employer is established.
+- Working in the Netherlands and in the country of residence: insured in the country of residence if they do at least 25% of their working time there, or earn at least 25% of their pay there. Below 25% and with one employer, insured where the employer is established.
 - Secondment: an employee sent temporarily to another regulation country stays insured in the Netherlands for up to 24 months, with an A1 certificate from the SVB, if the conditions in §20.2.1 are met.
-- Telework: under the EU framework agreement in force for the Netherlands since 1 July 2023, an employee can telework from the country of residence for up to 50% of total working time without a change of country, on application to the SVB (§20.4).
+- Telework: under the multilateral framework agreement in force for the Netherlands since 1 July 2023, an employee can telework from the country of residence for up to 50% of total working time without a change of country, if the residence country has also signed the agreement, on application to the SVB (§20.4).
 
 **Self-employed in more than one EU country.** Insured in the country of residence if they do at least 25% of their working time or services there, or earn 25% of their income there. Otherwise insured where the centre of interest of the business is (SVB, zelfstandige in meerdere EU-landen).
 
@@ -113,7 +113,7 @@ The AOW age variant: from the first day of the month in which a person reaches A
 
 **Insured abroad.** If an employee is insured in another country, the Dutch employer pays that country's contributions there and registers with its institution (§20.2.2). An employee who pays income tax here but no Dutch national insurance premiums gets only the tax part of the credits (Belastingdienst heffingskortingen 2026, §21.9).
 
-**Expat scheme.** The 30% allowance reduces the employee insurance base (see "The taxable base"). It does not change the country of insurance.
+**Expat scheme.** The 30% allowance is outside the national insurance, employee insurance and Zvw bases (see "The taxable base"). It does not change the country of insurance.
 
 ## Worked examples
 
@@ -220,9 +220,10 @@ These are annual checks before the Belastingdienst's own rounding on the assessm
 | Algemene Ouderdomswet, art. 6 | https://wetten.overheid.nl/BWBR0002221/ | 2026-10-22 |
 | Wet langdurige zorg, art. 2.1.1 | https://wetten.overheid.nl/BWBR0035917/2026-01-01 | 2026-10-22 |
 | Werkloosheidswet, art. 3 | https://wetten.overheid.nl/BWBR0004045/2026-01-01 | 2026-10-22 |
+| Wet op de loonbelasting 1964, arts. 31(1)(f), 31a(2)(e) | https://wetten.overheid.nl/BWBR0002471/2026-01-01 | 2026-10-22 |
 | Wet inkomstenbelasting 2001, art. 3.2 | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-22 |
 | Belastingdienst, Tarieven, bedragen en percentages loonheffingen 2026 (4th edition, 25 June 2026), tables 1, 9, 10, 11, 12 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-22 |
-| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §§7.6.9, 13.1, 13.4, 13.5, 19.4.3, 19.4.8, 20.1, 20.2, 20.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-22 |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §§4.1, 7.5, 7.6.9, 13.1, 13.4, 13.5, 19.4.3, 19.4.8, 20.1, 20.2, 20.4, 22.1 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-22 |
 | Belastingdienst, Aangifte loonheffingen 2026: tijdvakcodes, aangifte- en betaaldatums | https://download.belastingdienst.nl/belastingdienst/docs/tijdvakcodes-aangiftedatums-betaaldatums-lh2101t62fd.pdf | 2026-10-22 |
 | Belastingdienst, Inkomensafhankelijke bijdrage Zorgverzekeringswet 2026, §§28.2.3, 28.2.4 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/inkomensafhankelijke_bijdrage_zorgverzekeringswet | 2026-10-22 |
 | Belastingdienst, Heffingskortingen 2026, §§21.2, 21.3, 21.9 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/heffingskortingen | 2026-10-22 |

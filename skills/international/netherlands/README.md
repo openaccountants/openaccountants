@@ -3,7 +3,7 @@ jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  IT-IND: box 2 (substantial interest) income is screened but not computed; no skill applies the box 2 rates to a shareholder's dividends and gains
+  IT-IND: box 2 (substantial interest) income is screened in nl-income-tax but not computed; no skill computes box 2 tax on a resident shareholder's dividends and disposal gains (nl-cross-border applies the 2026 box 2 rates only to the emigration exit charge)
 ---
 
 # Netherlands: tax pack
