@@ -8,8 +8,11 @@
   "visually_checked_pages": [
     12,
     13,
+    28,
+    30,
     37,
     45,
+    46,
     49,
     169
   ],
@@ -19,14 +22,21 @@
     "125\u2013126",
     "132\u2013133",
     "152",
-    "540\u2013543"
+    "540\u2013543",
+    "69\u201370",
+    "76",
+    "81",
+    "134\u2013142"
   ],
   "review_status": "independent source and accountant review pending",
   "gaps": [
     "Ministerial implementation decisions under article 540",
     "Occupational circulars under article 103(2)",
     "Cross-transition remuneration and first new-code TMS filing period",
-    "Social insurance and remaining country topics"
+    "Social insurance and remaining country topics",
+    "Corporate transition and nonstandard-year filing implementation",
+    "Article 76 audit-threshold amending orders and current corporate forms",
+    "Complete corporate taxable-profit reconciliation and special-sector regimes"
   ],
   "allocation_check": {
     "shared_main": "no Haiti source paths",

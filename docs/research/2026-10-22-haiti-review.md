@@ -1,6 +1,6 @@
 # Haiti first topic batch
 
-Three source-cited drafts: payroll, personal income and business patente. This is not comprehensive country coverage. No independent review, accountant attestation or live-system publication.
+Four source-cited drafts: payroll, personal income, business patente and company tax/advances. This is not comprehensive country coverage. No independent review, accountant attestation or live-system publication.
 
 ## Evidence and corrections
 
@@ -15,3 +15,7 @@ Decimal assertions checked band boundaries 360,000 and 540,000, income examples 
 ## Remaining work
 
 Retrieve applicable implementation decisions, confirm operational forms and transition cases, independently review translations and scope. Expand social insurance, corporate taxation, indirect taxes, residence, cross-border, property and procedural topics. Green repository checks establish formatting/integrity only.
+
+## Company-tax addition
+
+Read articles 69–70, 76, 81 and 134–142. Visually checked pages 28, 30 and 46 against the ministry PDF, verifying rates, turnover threshold, filing wording and historical advance base. Web PDF open failed again; the previously downloaded official enactment with the recorded hash remains the evidence. Corporate calculations take already reconciled taxable profit, not book profit or turnover. The 60% advance is split into two equal payments based on the year before last. The literal before-31-December wording and audited through-31-January exception are preserved. Transition, nonstandard years, implementation decisions and any threshold amendments remain unresolved. No independent review is claimed. Decimal checks passed for ordinary and cooperative rates, the two instalments, balance and excess-credit examples.
