@@ -1,0 +1,35 @@
+{
+  "jurisdiction": "YT",
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.cssm.fr/actualite/reduction-generale-degressive-unique-rgdu-et-exoneration-lodeom",
+      "retrieval": "Full web open returned paragraphs on commencement, no cumulation, endpoints and DSN guide; shell fetch failed."
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053467212/",
+      "retrieval": "Official search retrieval returned full June 2026 article, formula, annual parameter changes and commencement note."
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000053465499",
+      "retrieval": "Official search retrieval returned commencement article 3 and amendment references."
+    },
+    {
+      "url": "https://www.douane.gouv.fr/fiche/vos-echanges-commerciaux-avec-mayotte",
+      "retrieval": "Full web open; updated 7 October 2025."
+    }
+  ],
+  "hashes": "No downloaded-byte hashes claimed for web retrievals.",
+  "allocation": {
+    "ryan_tree": "2d2e198012cfd827357eee3ef0a4e65316692fa6",
+    "matching_paths": []
+  },
+  "status": "source-cited drafts; independent review pending",
+  "gaps": [
+    "Full current VAT recodification chain",
+    "LODEOM detailed eligibility and full formula",
+    "DSN operational guide unavailable",
+    "Complete payroll contribution bases",
+    "Product tariff and exemption decisions"
+  ]
+}
