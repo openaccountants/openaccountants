@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by:
   XB: it-cross-border
 partial:
-  IT-IND: it-income-tax does not print the 2026 detrazioni for self-employed income (TUIR art. 13(5))
   SC: it-inps-contributions covers the gestione separata only; artigiani and commercianti and the professional funds (casse) are not covered; employee INPS is in italy-payroll
 ---
 
@@ -17,7 +16,7 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft; partial (self-employed detrazioni) |
+| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
 | VAT | italy-vat-return | source-cited draft |
 | SC, social contributions | it-inps-contributions (gestione separata); employee INPS in italy-payroll | source-cited draft; partial (artigiani, commercianti, casse) |

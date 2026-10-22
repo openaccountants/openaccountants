@@ -38,7 +38,7 @@ Related skills, not repeated here:
 - (c) people who sell, only or mainly, buildings, building land or new means of transport;
 - (d) people who at the same time hold a stake in a partnership, professional association or family business, or who control, directly or indirectly, an S.r.l. or an associazione in partecipazione whose activity is directly or indirectly linked to their own. A partnership stake must be disposed of by the end of the previous year. The S.r.l. test is run in the year itself and, if failed, ends the regime from the next year (Fascicolo 3, citing Circolare 9/E of 10 April 2019);
 - (d-bis) people who work mainly for a current employer, or one from the two previous tax years, or for parties linked to that employer. This does not apply to someone starting after the compulsory professional traineeship (pratica). Prevalence is tested at the end of each year and bites the next year;
-- (d-ter) people whose employment and similar income (TUIR arts. 49 and 50) in the previous year was above EUR 30,000, raised to EUR 35,000 for 2025 and 2026 (L. 207/2024, art. 1, c. 12, as amended by L. 199/2025, art. 1, c. 27). The test does not apply if the job ended. The Agenzia adds that it still applies if, in the year the job ended, the person had pension income or income from another job (Agenzia, "Che cos'e").
+- (d-ter) people whose employment and similar income (TUIR arts. 49 and 50) in the previous year was above EUR 30,000. For the regime years 2025 and 2026 the limit is EUR 35,000 (L. 207/2024, art. 1, c. 12, as amended by L. 199/2025, art. 1, c. 27). "2025 and 2026" are the years the regime is applied, not the years tested: the law raises the comma 57(d-ter) limit for those years, and the Redditi PF 2026 instructions (Fascicolo 3, Quadro LM, for 2025 income) apply EUR 35,000 to someone entering the regime in 2025, which tests 2024 income. So for 2026, employment income received in 2025 must not exceed EUR 35,000. For 2027, the EUR 30,000 limit applies to 2026 employment income unless a new law raises it. The test does not apply if the job ended. The Agenzia adds that it still applies if, in the year the job ended, the person had pension income or income from another job (Agenzia, "Che cos'e").
 
 **When the regime stops (comma 71).**
 - A condition in comma 54 fails, or an exclusion in comma 57 applies: the regime ends from the FOLLOWING year.
@@ -56,7 +56,7 @@ Related skills, not repeated here:
 | Entry: previous-year gross staff and collaborator costs | not above EUR 20,000 | 2026 | c. 54(b), same URL |
 | Same-year exit: receipts in the year above | EUR 100,000 | 2026 | c. 71, same URL |
 | Exclusion: previous-year employment income above (standing figure) | EUR 30,000 | standing | c. 57(d-ter), same URL |
-| The same limit, for 2025 and 2026 | EUR 35,000 | 2025, 2026 | L. 207/2024 art. 1 c. 12, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1 ; extended to 2026 by L. 199/2025 art. 1 c. 27, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 |
+| The same limit, regime years 2025 and 2026 (tested on 2024 and 2025 employment income) | EUR 35,000 | 2025, 2026 | L. 207/2024 art. 1 c. 12, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1 ; extended to 2026 by L. 199/2025 art. 1 c. 27, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1 |
 | Non-resident EU/EEA: share of total income earned in Italy | at least 75% | 2026 | c. 57(b), L. 190/2014 URL above |
 | Substitute tax (replaces IRPEF, regional and municipal surcharges, IRAP) | 15% | 2026 | c. 64, L. 190/2014 URL above |
 | Start-up rate, year activity starts and the next four | 5% | 2026 | c. 65, L. 190/2014 URL above |
@@ -113,7 +113,7 @@ The person confirms these by ticking LM21 column 3. If one year's income has to 
 
 **INPS for artigiani and commercianti (commi 76 to 84).** Forfettari who run a business may ask INPS to compute the artigiani or commercianti contributions on the forfettario income, cut by 35% (comma 77). Someone already in business must apply by 28 February of the year; someone starting applies online when they start. A late application works from the following year (comma 83). The cut ends from the year after the regime ends, and once someone is back on the ordinary INPS regime they can never use the cut again (comma 82). The cut does not apply to professionals in the gestione separata. Contribution rates and the minimum income base are not in this skill. `it-inps-contributions` covers the gestione separata only, so artigiani and commercianti rates are a gap in the pack.
 
-**VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. On reverse-charge purchases, and other operations where they are the debtor, they self-charge VAT and pay it by the 16th of the following month (comma 60). A forfettario may issue a simplified invoice whatever the amount (comma 59).
+**VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. On reverse-charge purchases, and other operations where they are the debtor, they self-charge VAT and pay it by the 16th of the following month (comma 60). A forfettario may issue a simplified invoice whatever the amount (comma 59). The Agenzia's "Semplificazioni e adempimenti" page still gives the older deadline for this self-charged VAT (the 16th of the second month after each quarter); comma 60 as in force sets the 16th of the following month.
 
 **Invoice wording** (Agenzia, "Fattura elettronica per i forfettari"):
 - Tax regime field: "Regime forfettario (art.1, c.54-89, L. 190/2014)" (RF19).
@@ -155,7 +155,7 @@ The forecast method, the minimum below which no acconto is due, the instalment p
 
 Interest on late payment and voluntary correction (ravvedimento operoso) follow the general rules. They are not set out here.
 
-A forfettario whose receipts are all e-invoiced gets one year less in which the Agenzia can assess them: four years instead of five (Agenzia, "Semplificazioni e adempimenti").
+No shorter assessment period. Comma 74 used to cut the Agenzia's assessment period by one year for a forfettario whose receipts were all e-invoiced. D.Lgs. 148/2026, art. 21(1), removed that sentence with effect from tax year 2026, so 2026 income has the ordinary assessment period. The Agenzia's "Semplificazioni e adempimenti" page still describes the old reduction; the law governs.
 
 ## Cross-border points
 
@@ -277,6 +277,7 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | Agenzia, Conseguenze della fuoriuscita | https://www.agenziaentrate.gov.it/portale/conseguenze-della-fuoriuscita | 2026-10-22 |
 | Agenzia, Fattura elettronica per i forfettari | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari | 2026-10-22 |
 | Agenzia, stamp duty on e-invoices (June 2026) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 | 2026-10-22 |
+| D.Lgs. 148/2026, art. 21 (removes the one-year cut to the assessment period from tax year 2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-08-07;148~art21 | 2026-10-22 |
 | D.L. 36/2022, art. 18 (e-invoicing for forfettari) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-10-22 | 2026-10-22 |
 | Agenzia, Come si paga l'Irpef (updated 12 March 2026) | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef | 2026-10-22 |
 | D.P.R. 322/1998, art. 2 (filing dates) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-22 | 2026-10-22 |
@@ -286,4 +287,4 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | TUIR, art. 13 (detrazioni) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22 | 2026-10-22 |
 | Agenzia, IRPEF rates (updated 13 January 2026; 2026 middle rate in its note) | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-10-22 |
 
-Not yet confirmed: (1) whether "for the years 2025 and 2026" in L. 207/2024 c. 12 refers to the regime years (testing 2024 and 2025 employment income) or the test years; this skill reads them as regime years, so for the 2027 regime the EUR 30,000 limit applies to 2026 employment income unless a new law extends it; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) the INPS artigiani and commercianti 2026 rates and minimum base (no official INPS page read); (5) whether the impatriati regime can be combined with the forfettario.
+Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) the INPS artigiani and commercianti 2026 rates and minimum base (no official INPS page read); (5) whether the impatriati regime can be combined with the forfettario.

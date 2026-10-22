@@ -1,10 +1,10 @@
 ---
 name: it-income-tax
-description: Use this skill whenever asked about Italian income tax for self-employed individuals (lavoratori autonomi, liberi professionisti) under regime ordinario. Trigger on phrases like "Modello Redditi PF", "Quadro RE", "IRPEF", "redditi di lavoro autonomo", "imposta sul reddito Italy", "deduzioni", "detrazioni", "addizionale regionale", "addizionale comunale", "regime ordinario", "acconti IRPEF", "no tax area", "INPS Gestione Separata", "rivalsa INPS", or any question about filing or computing income tax for an Italian freelancer or professional. Also trigger when preparing or reviewing a Modello Redditi PF, computing deductions, or advising on regime ordinario tax obligations. This skill covers progressive IRPEF brackets, deduzioni, detrazioni, addizionali, acconti, Quadro RE structure, rivalsa INPS, and penalties. ALWAYS read this skill before touching any Italian income tax work. Does NOT cover regime forfettario -- see it-regime-forfettario.md.
+description: Use this skill whenever asked about Italian income tax for self-employed individuals (lavoratori autonomi, liberi professionisti) under regime ordinario. Trigger on phrases like "Modello Redditi PF", "Quadro RE", "IRPEF", "redditi di lavoro autonomo", "imposta sul reddito Italy", "deduzioni", "detrazioni", "addizionale regionale", "addizionale comunale", "regime ordinario", "acconti IRPEF", "no tax area", "INPS Gestione Separata", "rivalsa INPS", or any question about filing or computing income tax for an Italian freelancer or professional. Also trigger when preparing or reviewing a Modello Redditi PF, computing deductions, or advising on regime ordinario tax obligations. This skill covers progressive IRPEF brackets, deduzioni, detrazioni, addizionali, acconti, Quadro RE structure, rivalsa INPS, and penalties. ALWAYS read this skill before touching any Italian income tax work. Does NOT cover the regime forfettario, which is in it-regime-forfettario.
 version: 2.0
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-22
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Italian income tax (IRPEF) for the self-employed: regime ordinario, with the forfettario test
 
-How Italy taxes one self-employed professional under IRPEF: rates, surcharges, expense rules, INPS gestione separata, acconti, the return and penalties, plus the test for the forfettario (flat-rate) regime that replaces all of this when it applies. Figures are for tax year 2026. Italy's tax year is the calendar year: 2026 income is declared in 2027. For 2026 income the old TUIR (D.P.R. 917/1986) applies. The new TUIR (D.Lgs. 117/2026) applies only from 1° gennaio 2027 (art. 377), so Normattiva can show old articles as repealed; statutes here were read as in force on 30 June 2026. Two sources carry another year: the Agenzia rate page (13 January 2026) gives the 2026 change only in a note; the 730 pages are the 2026 edition, for 2025 income. The 2026 detrazioni for self-employed income are not printed here (no allowed page read proves them); the cuneo fiscale applies to employees only and is in `italy-payroll`.
+How Italy taxes one self-employed professional under IRPEF: rates, surcharges, expense rules, INPS gestione separata, acconti, the return and penalties, plus the test for the forfettario (flat-rate) regime that replaces all of this when it applies. Figures are for tax year 2026. Italy's tax year is the calendar year: 2026 income is declared in 2027. For 2026 income the old TUIR (D.P.R. 917/1986) applies. The new TUIR (D.Lgs. 117/2026) applies only from 1° gennaio 2027 (art. 377), so Normattiva can show old articles as repealed; statutes here were read as in force on 30 June 2026. Two sources carry another year: the Agenzia rate page (13 January 2026) gives the 2026 change only in a note; the 730 pages are the 2026 edition, for 2025 income. The 2026 detrazioni for self-employed income are in Section 1, from TUIR art. 13(5); the cuneo fiscale applies to employees only and is in `italy-payroll`.
 
 ## Section 1: Quick Reference
 
@@ -66,7 +66,7 @@ The 2025 table is replaced. For 2026 the bracket limits are unchanged and the mi
 
 - **Tax formula.** Each rate applies only to income inside its bracket. Above the second limit: the Agenzia amount in the table plus the top rate on the excess. Taxable income = total income less oneri deducibili.
 - **The offset** is a flat cut to the detrazioni for the oneri the law lists (mainly the 19 per cento items, not medical costs). It is not a surcharge.
-- **No-tax area.** The live Guide's income level with no IRPEF comes from the detrazioni, which could not be proven for 2026. Removed.
+- **No-tax area.** For self-employed income the detrazione of EUR 1,265 equals 23% of EUR 5,500, so with no other income or oneri no IRPEF is due up to EUR 5,500 of total income (TUIR art. 13(5)(a); table below).
 
 **Cap on detrazioni for oneri (TUIR art. 16-ter, L. 207/2024 art. 1 comma 10)**
 
@@ -96,7 +96,21 @@ The 2025 table is replaced. For 2026 the bracket limits are unchanged and the mi
 
 ### Detrazioni per Lavoro Autonomo (Reduce Tax Payable) [T1]
 
-**No allowed page read prints the 2026 detrazioni amounts**, so none are given. The Agenzia IRPEF page (link above) says detrazioni are subtracted from gross tax, not income, capped at tax due, with no refund; non-residents get only some unless "Schumacker" conditions are met. Take the 2026 amounts from TUIR art. 13 and the 2027 Redditi instructions.
+**Detrazione for self-employed income, 2026 (TUIR art. 13(5) and (5-ter))**
+
+| What | Value | Note |
+| --- | --- | --- |
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22 (text in force 1 January 2025 to 31 December 2026, read 2026-10-22) |
+| Total income not above EUR 5,500 | EUR 1,265 | "a) 1.265 euro, se il reddito complessivo non supera 5.500 euro" |
+| Total income above EUR 5,500, not above EUR 28,000 | EUR 500 + 765 x (28,000 - total income) / 22,500 | "b) 500 euro, aumentata del prodotto fra 765 euro e ... 22.500 euro" |
+| Total income above EUR 28,000, not above EUR 50,000 | EUR 500 x (50,000 - total income) / 22,000 | "b-bis) 500 euro ... 22.000 euro" |
+| Total income above EUR 50,000 | nil | no band in art. 13(5) |
+| Extra amount, total income above EUR 11,000 and not above EUR 17,000 | EUR 50 | "aumentata di un importo pari a 50 euro" (comma 5-ter) |
+
+- **Who gets it.** Anyone whose total income includes self-employed income (art. 53), business income of an impresa minore (art. 66) or the other items listed in comma 5. It cannot be combined with the employee or pension detrazione in commi 1 to 4: take one.
+- **How.** The ratio is taken to four decimal places (comma 6). Total income here excludes the main home and its appurtenances (comma 6-bis). The detrazione is not apportioned for part of the year.
+- **Example.** Total income EUR 40,000: 500 x (50,000 - 40,000) / 22,000 = 500 x 0.4545 = EUR 227.25.
+- The Agenzia IRPEF page (link above) says detrazioni are subtracted from gross tax, not income, capped at tax due, with no refund; non-residents get only some unless "Schumacker" conditions are met.
 
 ### INPS Gestione Separata (Social Contributions) [T1]
 
@@ -577,12 +591,13 @@ ONBOARDING QUESTIONS: ITALY IRPEF, REGIME ORDINARIO
 
 ### Known Gaps / Out of Scope
 
-- Forfettario beyond the test in Section 1; IRES and IRAP (`it-irap`); non-residents; capital gains; crypto (`italy-crypto-tax`); rental income; impatriati (`it-impatriati`); the 2026 detrazioni for self-employed income (not proven); employee payroll and the cuneo fiscale (`italy-payroll`)
+- Forfettario beyond the test in Section 1; IRES and IRAP (`it-irap`); non-residents; capital gains; crypto (`italy-crypto-tax`); rental income; impatriati (`it-impatriati`); employee payroll and the cuneo fiscale (`italy-payroll`)
 
 ### Changelog
 
 | Version | Date | Change |
 | --- | --- | --- |
+| 3.1 | October 2026 | 2026 self-employed detrazioni added from TUIR art. 13(5); forfettario pointer now it-regime-forfettario |
 | 3.0 | September 2026 | Tax year 2026 refresh against official pages; detrazioni table removed as unproven |
 | 2.0 | April 2026 | Full rewrite: bank formats, pattern library, worked examples |
 | 1.0 | 2025 | Initial version |
@@ -622,7 +637,7 @@ ONBOARDING QUESTIONS: ITALY IRPEF, REGIME ORDINARIO
 
 - Forfettario applies, or the same-year exit limit was crossed: refer for the forfettario return and the VAT.
 - Business income (goods, e-commerce, trade), not a profession: Quadro RF or RG, outside this Guide.
-- The 2026 detrazioni for self-employed income are needed: not carried here. Refer. Employee income and the cuneo fiscale: see `italy-payroll`.
+- Employee income and the cuneo fiscale: see `italy-payroll`.
 - Non-residents, "Schumacker" claims, impatriati (`it-impatriati`), foreign income, treaties.
 - Cassa rates, rivalsa disputes, penalties and ravvedimento.
 - Anything to be filed: every computation here is an estimate for a commercialista to confirm.
@@ -631,6 +646,7 @@ ONBOARDING QUESTIONS: ITALY IRPEF, REGIME ORDINARIO
 
 - Agenzia, amounts subject to withholding: https://www.agenziaentrate.gov.it/portale/schede/pagamenti/versamento-modello-f24-ritenute-su-reddito-di-lavoro-autonomo-f24_rit_red_lav_aut/importi-su-cui-si-applica-la-ritenuta-f24_rit_red_lav_aut
 - TUIR art. 11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=
+- TUIR art. 13: https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22
 - TUIR art. 54: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30
 - TUIR art. 54-quinquies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54quinquies!vig=2026-06-30
 - TUIR art. 54-septies: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54septies!vig=2026-06-30
