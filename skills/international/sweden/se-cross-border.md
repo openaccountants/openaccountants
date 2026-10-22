@@ -14,7 +14,7 @@ verified_by: pending
 
 This skill is the hub for what changes when a person or a company comes into or leaves Sweden. It summarises the rules and points to the detailed skills in this pack. The Swedish income year is the calendar year. The authority is Skatteverket (the Swedish Tax Agency). The main laws are the Income Tax Act (inkomstskattelagen 1999:1229, IL), the Act on Special Income Tax for Non-Residents (lag 1991:586 om särskild inkomstskatt för utomlands bosatta, SINK), the Withholding Tax on Dividends Act (kupongskattelagen 1970:624) and the Tax Procedure Act (skatteförfarandelagen 2011:1244, SFL).
 
-Detail lives elsewhere. Read [se-income-tax](se-income-tax.md) for income tax on a sole trader, [se-capital-gains](se-capital-gains.md) for gains, [sweden-payroll](sweden-payroll.md) for withholding on pay, and [se-social-contributions](se-social-contributions.md) for self-employed contributions. The company side (corporate income tax) is not yet in this pack on main.
+Detail lives elsewhere. Read [se-income-tax](se-income-tax.md) for income tax on a sole trader, [se-capital-gains](se-capital-gains.md) for gains, [sweden-payroll](sweden-payroll.md) for withholding on pay, [se-social-contributions](se-social-contributions.md) for self-employed contributions, and [se-corporate-tax](se-corporate-tax.md) for corporate income tax.
 
 ## Who this applies to
 
@@ -42,8 +42,8 @@ A legal person is unlimited taxable if it counts as Swedish by registration or, 
 
 | Item | Amount | Tax year | Source |
 |---|---|---|---|
-| SINK on pay, pensions and board fees of non-residents | 22.5% of gross taxable income | 2026 (income received after 31 Dec 2025) | [SINK 7 §](https://data.riksdagen.se/dokument/sfs-1991-586.text); [Skatteverket: SINK](https://www.skatteverket.se/privat/internationellt/bosattutomlands/sinksarskildinkomstskattforutomlandsbosatta.4.6fdde64a12cc4eee23080002583.html) |
-| SINK from 2027 | 20% (Lag 2025:1356, in force 1 Jan 2027) | 2027 | [SINK 7 §](https://data.riksdagen.se/dokument/sfs-1991-586.text) |
+| SINK on pay, pensions and board fees of non-residents | 22.5% of gross taxable income (Lag 2025:1355) | 2026 (income received after 31 Dec 2025) | [SINK 7 §](https://data.riksdagen.se/dokument/sfs-1991-586.text); [Skatteverket: SINK](https://www.skatteverket.se/privat/internationellt/bosattutomlands/sinksarskildinkomstskattforutomlandsbosatta.4.6fdde64a12cc4eee23080002583.html) |
+| SINK from 2027 | 20% (Lag 2025:1356, in force 1 Jan 2027, for income received after 31 Dec 2026) | 2027 | [SINK 7 §](https://data.riksdagen.se/dokument/sfs-1991-586.text) |
 | SINK on seamen's income | 15% | 2026 | [SINK 7 §](https://data.riksdagen.se/dokument/sfs-1991-586.text) |
 | SINK monthly allowance on social insurance pensions | SEK 3,799 a month (1/12 of 0.77 price base amount) | 2026 | [Skatteverket: belopp och procent 2026](https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html) |
 | Non-resident opting to be taxed under IL: municipal tax | 32.38% (average municipal rate) | 2026 | [Skatteverket: belopp och procent 2026](https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html) |
@@ -70,7 +70,7 @@ Sweden has no separate exit tax on individuals. The departure rule for individua
 - current income from, and gains on, Swedish private housing and tenant-owner flats (capital income);
 - dividends from Swedish companies: through kupongskatt, not SINK.
 
-**SINK exemptions (SINK 6 and 6 a §§).** Pay is exempt where the person is in Sweden no more than 183 days in a 12-month period, the employer is not resident here, and the pay is not borne by a Swedish permanent establishment. This does not apply to hired-out labour, except work of up to 15 days in a row and 45 days a year. Employer reimbursement of travel to and from Sweden and lodging on a temporary posting is also exempt, as is income a treaty exempts.
+**SINK exemptions (SINK 6 and 6 a §§).** Pay from an employer other than the Swedish state, a municipality or a region is exempt where the person is in Sweden no more than 183 days in a 12-month period, the employer is not resident here, and the pay is not borne by a Swedish permanent establishment. This does not apply to hired-out labour, except work of up to 15 days in a row and 45 days a year. On a temporary employment in Sweden, employer reimbursement of travel to Sweden at the start and home at the end, and of lodging while working here, is also exempt, as is income a treaty exempts.
 
 **Choosing IL instead of SINK (SINK 4 §).** A non-resident can ask to be taxed under IL for the year. They then pay the average municipal rate (32.38% for 2026) and state tax. If at least 90% of their earned income for the year comes from Sweden, they get the basic deduction and the job tax credit. ([Skatteverket: belopp och procent 2026](https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html))
 
@@ -95,7 +95,7 @@ Conditions: the employer is Swedish or a foreign company with a permanent establ
 - **Expert tax relief:** the application (forms FSN 1220 or FSN 1226) must reach Forskarskattenämnden within three months after work in Sweden starts. A late application is rejected, even by one day. Either the employee or the employer may apply. A change of employer needs a new application. ([Forskarskattenämnden: apply](https://forskarskattenamnden.se/andra-sprak/taxation-of-research-workers-board/apply-for-tax-relief))
 - **Departure, population register:** a registered person who will live abroad for a year or more notifies Skatteverket of the move, at least one week before, through the e-service or form SKV 7665. ([Skatteverket: moving away from Sweden](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/individualsandemployees/movingfromsweden/movingawayfromsweden.4.6bef7d451695d90def41857.html)) Leaving the register does not end tax liability by itself.
 - **Income tax return (individuals, including limited taxpayers with Swedish income outside SINK):** by 2 May the year after the income year (SFL 32 kap. 1 §). An unlimited taxpayer reports all income, Swedish and foreign.
-- **Company exit tax:** the gain is reported in the company's income return for the year of the exit. The payment deferral (anstånd) is granted only on application (SFL 63 kap. 2 §); see Penalties and interest and Cross-border points for how it runs.
+- **Company exit tax:** the gain is reported in the company's income return for the year of the exit. That return is due by 1 July after a financial year ending 31 December, 1 November after one ending 30 April, 15 December after one ending 30 June, and 1 March after one ending 31 August; a return filed electronically may come in one month later (SFL 32 kap. 2 §). See [se-corporate-tax](se-corporate-tax.md). The payment deferral (anstånd) is granted only on application (SFL 63 kap. 2 §); see Penalties and interest and Cross-border points for how it runs.
 
 ## Penalties and interest
 
@@ -103,8 +103,8 @@ Conditions: the employer is Swedish or a foreign company with a permanent establ
 
 - **Late income tax return (förseningsavgift):** individuals and others SEK 1,250, then a further SEK 2,500 after three months and SEK 3,750 after five months. Companies (aktiebolag and economic associations) SEK 6,250, then SEK 12,500 and SEK 18,750.
 - **Tax surcharge (skattetillägg) for an incorrect statement:** 40% of the tax that would have been withheld on final tax; 20% on other taxes (for example VAT and employer contributions); 10% for a timing error on final tax (5% or 2% on other taxes). The same 40% and 20% apply on a discretionary assessment. Where tax should have been withheld and was not, the surcharge is 5% of the amount that should have been withheld.
-- **Interest on the tax account (kostnadsränta):** low rate 2.5% and high rate 17.5%, both in force from 1 December 2024 and still shown as current by Skatteverket on 22 October 2026. The base rate is 2.5%. The low rate applies to deferred tax (anstånd) and to final tax up to the due date; the high rate to amounts unpaid after the due date. The interest is not deductible. ([Skatteverket: ränta på skattekontot](https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html))
-- **Deferred company exit tax:** carries the low cost interest while deferred. Skatteverket may withdraw or reduce the deferral if circumstances change materially (SFL 63 kap. 22 §).
+- **Interest on the tax account (kostnadsränta):** both rates follow the base rate (basränta), which is 125% of the six-month Treasury bill rate with a floor of 1.25% (SFL 65 kap. 3 §). The low rate equals the base rate (65 kap. 4 §); the high rate is the base rate plus 15 percentage points (65 kap. 13 §). The base rate has been 2.5% since 1 December 2024, so the low rate is 2.5% and the high rate 17.5%; Skatteverket still showed these as current on 22 October 2026. The low rate applies to deferred tax (anstånd) and to final tax up to the due date; the high rate to amounts unpaid after the due date. The interest is not deductible. ([Skatteverket: ränta på skattekontot](https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html))
+- **Deferred company exit tax:** carries the low cost interest while deferred; on a renewed deferral, interest runs from the day after it is granted (SFL 65 kap. 7 §). Skatteverket may withdraw or reduce the deferral if circumstances change materially (SFL 63 kap. 22 §).
 
 ## Cross-border points
 
@@ -118,20 +118,20 @@ Conditions: the employer is Swedish or a foreign company with a permanent establ
 
 **EU social security.** Under Regulation (EC) 883/2004, a person is covered by one country's social security at a time. An employee posted from Sweden to another EU or EEA state, Switzerland or the UK stays in Swedish social insurance for up to 24 months if they were covered in Sweden at least one month before, do not replace another posted worker, and the employer keeps its business in Sweden. The employer and employee notify Försäkringskassan before the work starts, and Försäkringskassan issues certificate A1 (forms 6220 and 6221). An extension to 24 months must be applied for before the first period ends; after a posting ends, a new posting to the same country needs a two-month gap. Someone living in Sweden and working in two or more states is covered where they live if they do at least 25% of their work (or earn 25% of pay) there. ([Försäkringskassan: employee who will work abroad](https://www.forsakringskassan.se/english/for-employers/employee-who-will-work-abroad); [Försäkringskassan: jobba i flera länder](https://www.forsakringskassan.se/privatperson/flytta-jobba-studera-eller-fa-vard-utomlands/jobba-utomlands/jobba-i-flera-lander-inom-eu-ees-eller-i-schweiz-och-storbritannien))
 
-**Other skills.** Withholding on pay, SINK decisions in payroll and A1 records are in [sweden-payroll](sweden-payroll.md). Gains on Swedish property and shares are in [se-capital-gains](se-capital-gains.md). Self-employed contributions are in [se-social-contributions](se-social-contributions.md).
+**Other skills.** Withholding on pay, SINK decisions in payroll and A1 records are in [sweden-payroll](sweden-payroll.md). Gains on Swedish property and shares are in [se-capital-gains](se-capital-gains.md). Self-employed contributions are in [se-social-contributions](se-social-contributions.md). Company exit and the corporate return are in [se-corporate-tax](se-corporate-tax.md).
 
 ## Worked examples
 
 ### Example 1: an expert moves to Stockholm in 2026
 
-Lena is a German software architect with no earlier link to Sweden. A Swedish company hires her from 1 February 2026 for four years at SEK 100,000 a month. Her pay is above the SEK 88,801 floor, so Forskarskattenämnden grants the expert relief on an application made within three months of her start. She becomes resident in February. She earns SEK 1,100,000 from the Swedish job in 2026 and has no other income. She is under 66.
+Lena is a German software architect with no earlier link to Sweden. A Swedish company hires her from 1 February 2026 for four years at SEK 100,000 a month. She had no job in January. Her pay is above the SEK 88,801 floor, so Forskarskattenämnden grants the expert relief on an application made within three months of her start. She becomes resident in February. She earns SEK 1,100,000 from the Swedish job in 2026 and has no other income. She is under 66.
 
 - Exempt part: 25% of 1,100,000 = SEK 275,000.
-- Taxable pay: SEK 825,000. Basic deduction at this level: SEK 17,400. Taxable earned income: SEK 807,600.
+- Taxable pay: SEK 825,000. She is unlimited taxable for only part of 2026, but all her earned income is Swedish, so the full-year basic deduction applies (63 kap. 4 § second paragraph IL): SEK 17,400 at this level. Taxable earned income: SEK 807,600.
 - State income tax: 20% of (807,600 minus 643,000) = SEK 32,920.
 - Municipal tax at the 2026 average rate of 32.38%: SEK 261,500.88. Her actual municipality's rate applies, and the job tax credit and other credits come off; see [se-income-tax](se-income-tax.md).
 - Without the relief, taxable earned income would be SEK 1,082,600 and state tax SEK 87,920. The relief cuts state tax by SEK 55,000 and the municipal tax base by SEK 275,000.
-- Her January pay, earned before she arrived, is outside Swedish tax.
+- Had she earned substantial pay abroad in January, her basic deduction would instead be one twelfth of 0.293 price base amount for each month of unlimited liability (63 kap. 4 § first paragraph IL), and the foreign pay itself would be outside Swedish tax.
 
 ```oa-check
 name: Expert relief, SEK 100,000 a month from 1 February 2026
@@ -160,7 +160,7 @@ expected:
 
 ### Example 2: a non-resident works four months in Sweden under SINK
 
-Tomasz lives in Poland and keeps his home and family there. A Swedish company employs him on a project in Gothenburg from March to June 2026 at SEK 60,000 a month. He stays in Sweden for four months, so he has no lasting stay and is limited taxable. The employer is Swedish, so the 183-day exemption does not apply. Skatteverket issues a SINK decision. The employer also pays his flights and lodging, which are exempt under SINK 6 § 1.
+Tomasz lives in Poland and keeps his home and family there. A Swedish company employs him on a project in Gothenburg from March to June 2026 at SEK 60,000 a month. He stays in Sweden for four months, so he has no lasting stay and is limited taxable. The employer is Swedish, so the 183-day exemption does not apply. Skatteverket issues a SINK decision. The employer also pays his flight to Sweden in March, his flight home in June and his lodging, which are exempt under SINK 6 § 1.
 
 - Taxable pay: 4 x 60,000 = SEK 240,000.
 - SINK at 22.5%: SEK 54,000, withheld by the employer. He files no Swedish return for this pay.
@@ -197,10 +197,10 @@ expected:
 
 Read on 2026-10-22:
 
-- Inkomstskattelag (1999:1229), as amended to SFS 2026:1393 (3 kap. 3-23 §§, 6 kap. 3-18 §§, 6 a kap., 11 kap. 22-23 a §§, 22 kap. 5 and 7 §§, 65 kap. 10 §): https://data.riksdagen.se/dokument/sfs-1999-1229.text
-- Lag (1991:586) om särskild inkomstskatt för utomlands bosatta, as amended to SFS 2025:1356: https://data.riksdagen.se/dokument/sfs-1991-586.text
+- Inkomstskattelag (1999:1229), as amended to SFS 2026:1393 (3 kap. 3-23 §§, 6 kap. 3-18 §§, 6 a kap., 11 kap. 22-23 a §§, 22 kap. 5 and 7 §§, 63 kap. 3-4 §§, 65 kap. 10 §): https://data.riksdagen.se/dokument/sfs-1999-1229.text
+- Lag (1991:586) om särskild inkomstskatt för utomlands bosatta, as amended to SFS 2025:1356 (4, 5, 6, 6 a, 6 b and 7 §§, and the transitional rules of 2025:1355 and 2025:1356): https://data.riksdagen.se/dokument/sfs-1991-586.text
 - Kupongskattelag (1970:624): https://data.riksdagen.se/dokument/sfs-1970-624.text
-- Skatteförfarandelag (2011:1244) (32 kap. 1 §, 63 kap. 2, 14, 17 and 22 §§): https://data.riksdagen.se/dokument/sfs-2011-1244.text
+- Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305 (32 kap. 1-2 §§, 63 kap. 2, 14, 17 and 22 §§, 65 kap. 3, 4, 7 and 13 §§): https://data.riksdagen.se/dokument/sfs-2011-1244.text
 - Lag (1986:468) om avräkning av utländsk skatt: https://data.riksdagen.se/dokument/sfs-1986-468.text
 - Folkbokföringslag (1991:481), 3 §: https://data.riksdagen.se/dokument/sfs-1991-481.text
 - Skatteverket, belopp och procent inkomstår 2026: https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html
@@ -216,4 +216,4 @@ Read on 2026-10-22:
 - Försäkringskassan, employee who will work abroad: https://www.forsakringskassan.se/english/for-employers/employee-who-will-work-abroad
 - Försäkringskassan, jobba i flera länder inom EU/EES eller i Schweiz och Storbritannien: https://www.forsakringskassan.se/privatperson/flytta-jobba-studera-eller-fa-vard-utomlands/jobba-utomlands/jobba-i-flera-lander-inom-eu-ees-eller-i-schweiz-och-storbritannien
 
-Not yet confirmed: the 25% SINK rate named in the brief is out of date (SINK 7 § sets 22.5% for 2026 and 20% from 2027), so 25% is not used; treaty rates on dividends for specific countries (read the treaty); the treaty tie-breaker order, which is the OECD model wording and must be read in each treaty; the company income return deadlines for the year of an exit (in the corporate skill, not yet on main); the events that end a company exit deferral beyond SFL 63 kap. 17 and 22 §§; whether the 2 May return date moves when it falls on a weekend (Skatteverket's 2026 interest page uses 4 May 2026 for payment of residual tax, but the filing-date rule was not read on an official page).
+Not yet confirmed: treaty rates on dividends for specific countries (read the treaty); the treaty tie-breaker order, which is the OECD model wording and must be read in each treaty; the events that end a company exit deferral beyond SFL 63 kap. 17 and 22 §§; whether the 2 May return date moves when it falls on a weekend (Skatteverket's 2026 interest page uses 4 May 2026 for payment of residual tax, but the filing-date rule was not read on an official page).
