@@ -97,3 +97,13 @@ jobs:
           else
             python3 scripts/validate-guides.py --no-index-check
           fi
+      - name: Recompute worked examples (oa-check blocks)
+        env:
+          BASE_REF: ${{ github.base_ref }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            python3 scripts/check-examples.py --changed-only
+          else
+            python3 scripts/check-examples.py
+          fi

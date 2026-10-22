@@ -197,7 +197,22 @@ Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) has these sections, in th
 4. **Deadlines and filing.** Registration, returns, payments, instalments, what form, where it is filed.
 5. **Penalties and interest.** Late filing, late payment, under-declaration; the figures, sourced.
 6. **Cross-border points.** Non-residents, treaties, withholding, exit rules that touch this domain.
-7. **Two worked examples that recompute.** One simple, one with an edge case, each in an `oa-check` block (inputs, steps, expected) that `scripts/check-examples.py` can run.
+7. **Two worked examples that recompute.** One simple, one with an edge case. Each has the prose walk-through for the reader and, under it, an `oa-check` block that CI recomputes with `scripts/check-examples.py`:
+
+   ```oa-check
+   name: Sole trader, profit EUR 40,000 (2026 bands)
+   inputs:
+     profit: 40000
+   steps:
+     - band_15: (min(profit, 14500) - 9100) * 0.15
+     - band_25: (min(profit, 19500) - 14500) * 0.25
+     - band_35: (profit - 19500) * 0.35
+     - tax: band_15 + band_25 + band_35
+   expected:
+     tax: 9235.00
+   ```
+
+   Arithmetic only: inputs, named steps, `+ - * /`, and `min max abs round floor ceil pct clamp`. Decimal maths; a value matches within `tolerance` (default 0.01). A wrong expected value fails the PR.
 8. **Ask the client first.** The three to six facts that change the answer.
 9. **Sources.** Every URL used, each with the date it was read (`as_of`), matching `sources:` in frontmatter.
 
