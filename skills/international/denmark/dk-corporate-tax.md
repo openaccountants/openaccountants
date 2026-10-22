@@ -35,24 +35,26 @@ See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (i
 
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
-| Corporate income tax (selskabsskat) | 22% of taxable income | 2026 | SEL § 17, stk. 1; https://skm.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
-| Financial companies (banks, mortgage credit, insurers, investment firms and others listed in § 17 A, stk. 3) | Taxable income multiplied by 26/22, so an effective 26% | 2026 | SEL § 17 A; skm.dk table (above) |
+| Corporate income tax (selskabsskat) | 22% of taxable income | 2026 | SEL § 17, stk. 1; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven |
+| Financial companies (banks, mortgage credit, insurers, investment firms and others listed in § 17 A, stk. 3) | Taxable income multiplied by 26/22, so an effective 26% | 2026 | SEL § 17 A; svmn.dk table (above) |
 | Taxable income rounded down | To the nearest DKK 100 before tax is computed | 2026 | SEL § 22; https://www.retsinformation.dk/eli/lta/2025/279 |
-| Local or trade tax on profit | None. 14.24% of the corporate tax collected is passed to the municipalities, but the company pays only the 22% | 2026 | SEL § 23, stk. 1; skm.dk table |
-| Loss carry-forward: full offset up to | DKK 21,830,700 (2010 base DKK 15.9m, indexed) | 2026 | SEL § 12, stk. 2; skm.dk table |
-| Loss carry-forward: offset above that amount | 60% of income above DKK 21,830,700 | 2026 | SEL § 12, stk. 2; skm.dk table |
+| Local or trade tax on profit | None. 14.24% of the corporate tax collected is passed to the municipalities, but the company pays only the 22% | 2026 | SEL § 23, stk. 1; svmn.dk table |
+| Loss carry-forward: full offset up to | DKK 21,830,700 (2010 base DKK 15.9m, indexed) | 2026 | SEL § 12, stk. 2; svmn.dk table |
+| Loss carry-forward: offset above that amount | 60% of income above DKK 21,830,700 | 2026 | SEL § 12, stk. 2; svmn.dk table |
 | Thin capitalisation (§ 11) | Applies only if controlled debt exceeds DKK 10m; debt to equity 4:1 | 2026 | SEL § 11; https://www.retsinformation.dk/eli/lta/2025/279 |
-| Asset test (§ 11 B): net financing expenses not restricted below | DKK 21.3m | 2026 | SEL § 11 B, stk. 1; skm.dk table |
-| Standard rate for the § 11 B asset test | 4.2% | 2026 | SEL § 11 B, stk. 2; skm.dk table |
-| EBITDA rule (§ 11 C): cap on net borrowing costs | 30% of taxable EBITDA; costs up to DKK 22,313,400 always deductible | 2026 | SEL § 11 C, stk. 1-2; skm.dk table |
-| Acontoskat (on-account tax), ordinary | 50% of the average of the last three years' tax, in two equal instalments; amounts in whole DKK 1,000; not charged below DKK 2,000 | 2026 | SEL § 29 A, stk. 2; skm.dk table |
+| Asset test (§ 11 B): net financing expenses not restricted below | DKK 21.3m | 2026 | SEL § 11 B, stk. 1; svmn.dk table |
+| Standard rate for the § 11 B asset test | 4.2% | 2026 | SEL § 11 B, stk. 2; svmn.dk table |
+| EBITDA rule (§ 11 C): cap on net borrowing costs | 30% of taxable EBITDA; costs up to DKK 22,313,400 always deductible | 2026 | SEL § 11 C, stk. 1-2; svmn.dk table |
+| Acontoskat (on-account tax), ordinary | 50% of the average of the last three years' tax, in two equal instalments; amounts in whole DKK 1,000; not charged below DKK 2,000 | 2026 | SEL § 29 A, stk. 2; svmn.dk table |
 | Restskattetillæg (surcharge on residual tax) | 6.6% for income year 2025. The 2026 rate is published by 15 December 2026 and is capped at 10% | 2025 (2026 not yet set) | SEL § 29 B, stk. 10 and 12; https://info.skat.dk/data.aspx?oid=2459998 |
 | Credit (godtgørelse) on overpaid tax | 2.8% for income year 2025 (cap 5%) | 2025 (2026 not yet set) | SEL § 29 B, stk. 8; https://info.skat.dk/data.aspx?oid=2459998 |
 | Surcharge on voluntary acontoskat paid after 20 March and by 20 November | 0.7% for 2025 | 2025 (2026 not yet set) | SEL § 29 B, stk. 9; https://info.skat.dk/data.aspx?oid=2459998 |
 | Surcharge on voluntary acontoskat paid after 20 November and by 1 February | 1.3% for 2025 | 2025 (2026 not yet set) | SEL § 29 B, stk. 11; https://info.skat.dk/data.aspx?oid=2459998 |
-| Tax depreciation, plant and machinery (driftsmidler) | Up to 25% a year on the declining pool balance | 2026 | Afskrivningsloven § 5; https://skm.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven |
-| Small assets written off at once (småaktiver) | Cost up to DKK 36,000 | 2026 | Afskrivningsloven § 6; skm.dk afskrivningsloven table |
-| Buildings and installations | Up to 3% a year straight line (4% if acquired before 1 January 2023) | 2026 | Afskrivningsloven § 17, stk. 1; skm.dk afskrivningsloven table |
+| Tax depreciation, plant and machinery (driftsmidler) | Up to 25% a year on the declining pool balance | 2026 | Afskrivningsloven § 5; https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven |
+| Small assets written off at once (småaktiver) | Cost up to DKK 36,000 | 2026 | Afskrivningsloven § 6; svmn.dk afskrivningsloven table |
+| Buildings and installations | Up to 3% a year straight line (4% if acquired before 1 January 2023) | 2026 | Afskrivningsloven § 17, stk. 1; svmn.dk afskrivningsloven table |
+| Late filing skattetillæg (oplysningsskema) | DKK 400 per day, at most DKK 10,000 | 2026 | Skattekontrolloven § 73, stk. 1, as amended by lov nr. 16 of 14 January 2025; https://www.retsinformation.dk/eli/lta/2025/16 |
+| Late payment interest (Opkrævningsloven § 7) | Basis rate 0.1% plus 0.85 percentage points, so 0.95% a month, calculated daily | 2026 | Opkrævningsloven § 7, stk. 1, as amended by lov nr. 1694 of 30 December 2024; https://info.skat.dk/data.aspx?oid=2459995 |
 | Pillar Two | In force: 15% global minimum tax for groups with revenue of at least EUR 750m in two of the four prior years (minimumsbeskatningsloven) | 2026 | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/global-minimumsskat-for-store-koncerner-globe |
 
 There is no reduced small-company rate and no separate minimum tax outside Pillar Two.
@@ -70,7 +72,7 @@ There is no reduced small-company rate and no separate minimum tax outside Pilla
 
 **Participation exemption on dividends (SEL § 13, stk. 1).**
 - Dividends on **subsidiary shares** (datterselskabsaktier: at least 10% of the share capital, Aktieavancebeskatningsloven (ABL) § 4 A) and **group shares** (koncernselskabsaktier: companies that are or can be jointly taxed, ABL § 4 B) are exempt (§ 13, stk. 1, nr. 2). Not exempt to the extent the paying company deducted the distribution.
-- Dividends on **tax-free portfolio shares** (unlisted, under 10%, ABL § 4 C) are exempt for distributions from 1 January 2025 (§ 13, stk. 1, nr. 3, inserted by lov nr. 1691 of 30 December 2024). Where nr. 3 does not apply, § 13, stk. 2 taxes 70% of such dividends.
+- Dividends on **tax-free portfolio shares** (unlisted, under 10%, ABL § 4 C) are exempt for distributions from 1 January 2025 (§ 13, stk. 1, nr. 3, inserted by lov nr. 1691 of 30 December 2024). The exemption does not cover a dividend the paying company deducted, or shares covered by ABL §§ 17 or 19 A; those dividends are taxable at 22%. The former rule that taxed 70% of these dividends was repealed by the same law (lov nr. 1691/2024 § 1, nr. 10, which rewrote § 13, stk. 2).
 - Dividends on **listed portfolio shares** (under 10%) are fully taxable at 22%.
 
 **Participation exemption on gains (ABL § 8).** Gains and losses on subsidiary shares, group shares and tax-free portfolio shares are ignored. Gains and losses on other shares (taxable portfolio shares, mainly listed holdings under 10%) are taxable (ABL § 9), and for companies they are generally computed on the mark-to-market basis, year-end value less opening value (lagerprincippet, ABL § 23, stk. 5). Unlisted taxable shares may be put on the realisation basis instead (§ 23, stk. 6).
@@ -101,17 +103,17 @@ There is no reduced small-company rate and no separate minimum tax outside Pilla
 
 ## Penalties and interest
 
-- **Late filing.** A company that files the oplysningsskema late pays a **skattetillæg of DKK 400 per day**, up to **DKK 10,000** (Skattekontrolloven § 73, stk. 1). The amount is per company, including each late company in a joint taxation group. The consolidated act LBK nr. 12 of 8 January 2024 still prints DKK 200 and DKK 5,000; Skattestyrelsen's guidance (Den juridiske vejledning A.C.2.1.4.3.1) and the skat.dk return page give DKK 400 and DKK 10,000. Skattestyrelsen may also assess the income by estimate (§ 74).
+- **Late filing.** A company that files the oplysningsskema late pays a **skattetillæg of DKK 400 per day**, up to **DKK 10,000** (Skattekontrolloven § 73, stk. 1, as amended by lov nr. 16 of 14 January 2025, § 2, nr. 1, in force 15 January 2025). The amount is per company, including each late company in a joint taxation group. The consolidated act LBK nr. 12 of 8 January 2024 predates that law and still prints the old DKK 200 and DKK 5,000; do not use those figures. Skattestyrelsen's guidance (Den juridiske vejledning 2026-2, A.C.2.1.4.3.1) confirms the doubled rates from 15 January 2025. From 1 January 2026 the skattetillæg for a company is collected through the tax account (opkrævningsloven § 16, nr. 10, inserted by lov nr. 1783/2025). Skattestyrelsen may also assess the income by estimate (§ 74).
 - **Late loss reporting.** DKK 5,000 if remaining losses are not reported on time (SEL § 35).
 - **Residual tax surcharge.** Residual tax carries the restskattetillæg (6.6% for income year 2025; the 2026 rate is set by 15 December 2026). The rate is the Nationalbank overdraft rate for non-financial companies (January to September), less 22%, times 480/360, plus 2 percentage points, capped at 10% (SEL § 29 B, stk. 10). Voluntary acontoskat paid by 20 March earns a small credit; later voluntary payments carry a smaller surcharge (0.7% or 1.3% for 2025), so paying early is cheaper.
-- **Late payment interest.** Tax paid after the last on-time payment date carries interest under Opkrævningsloven § 7: a monthly basis rate plus a fixed addition, calculated daily and not deductible. For 2026 the Ministry's rate table shows a basis rate of 0.1% and an addition of 0.85 percentage points a month. The consolidated Opkrævningsloven (LBK nr. 1040 of 13 September 2024) still prints an addition of 0.7 percentage points.
-- **2026 change.** Lov nr. 1783 of 29 December 2025 changed the interest rules in SEL § 30 for companies that file late, from 1 January 2026. Read the current text of § 30 before computing interest on a late filer's residual tax.
+- **Late payment interest.** Tax paid after the last on-time payment date carries interest under Opkrævningsloven § 7, stk. 1: a monthly basis rate plus a fixed addition, calculated daily and not deductible. The addition is **0.85 percentage points**: lov nr. 1694 of 30 December 2024, § 1, nr. 6, changed "0,7" to "0,85" in § 7, stk. 1. The consolidated act LBK nr. 1040 of 13 September 2024 predates that law and still prints 0.7; do not use it. The basis rate for 2026 is **0.1%** (SKM2025.720.SKTST), so the 2026 rate is 0.95% a month. The Ministry's rate table gives the addition as 0.7% for 2025 and 0.85% for 2026.
+- **2026 change for late filers.** Before 2026, a company that filed late paid monthly interest under Opkrævningsloven § 7 on its residual tax from 1 November until the bill was issued (old SEL § 30, stk. 1, 2. pkt.). Lov nr. 1783 of 29 December 2025, § 3, nr. 1, repealed that rule from 1 January 2026: a late filer's residual tax now falls due on the same date as everyone else's (1 November, on time by 20 November), and tax paid after that carries Opkrævningsloven § 7 interest (lov nr. 1783/2025, § 6, stk. 7).
 
 ## Cross-border points
 
 **Withholding on outbound dividends.**
-- A Danish company withholds **27%** on dividends (Kildeskatteloven (KSL) § 65, stk. 1). Dividends paid to Danish companies, foundations and similar may be paid with **22%** withheld (KSL § 65, stk. 6).
-- A foreign corporate shareholder's Danish tax on the dividend is **22%** (SEL § 2, stk. 1, litra c; § 2, stk. 8). It falls to **15%** for holdings under 10% where the shareholder's state exchanges tax information with Denmark, and to 0% on tax-free portfolio shares. It rises to **44%** on subsidiary or group shares held by an owner in a state on the ligningsloven § 5 H list. Any excess withheld above the final rate (or the treaty rate) is reclaimed from Skattestyrelsen.
+- A Danish company withholds **27%** on dividends (Kildeskatteloven (KSL) § 65, stk. 1). Dividends paid to Danish companies, foundations and similar may be paid with **22%** withheld (KSL § 65, stk. 6, 1. pkt.). No dividend tax is withheld on dividends exempt for a Danish company as tax-free portfolio shares (KSL § 65, stk. 6, 2. pkt., as amended by lov nr. 1691/2024, § 6, nr. 3; this replaced the former 15.4% rate).
+- A foreign corporate shareholder's Danish tax on the dividend is **22%** (SEL § 2, stk. 1, litra c; § 2, stk. 8). It falls to **15%** for holdings under 10% where the shareholder's state exchanges tax information with Denmark, and to **0%** on tax-free portfolio shares (unlisted, under 10%) for dividends distributed from 1 January 2025 (SEL § 2, stk. 8, 4. pkt., as amended by lov nr. 1691 of 30 December 2024). The 15% and 0% rates require that the beneficial owner does not control the paying company, unless the owner is resident in the EU or a tax treaty reduces the tax (§ 2, stk. 8). It rises to **44%** on subsidiary or group shares held by an owner in a state on the ligningsloven § 5 H list. Any excess withheld above the final rate (or the treaty rate) is reclaimed from Skattestyrelsen.
 - **Subsidiary shares:** no Danish tax and no withholding where the parent holds at least 10% and tax must be waived or reduced under the Parent-Subsidiary Directive (2011/96/EU) or a tax treaty with the parent's state (SEL § 2, stk. 1, litra c, 4. pkt.; KSL § 65, stk. 4). The same applies to group shares held by an EU/EEA company where the Directive or treaty would have applied.
 
 **Interest.** Interest on controlled debt paid to a foreign related company is taxed at **22%** by withholding (SEL § 2, stk. 1, litra d; KSL § 65 D). There is no tax where the Interest and Royalties Directive (2003/49/EC) or a treaty reduces or waives it (with a one-year association test), or in several other cases listed in litra d, for example where the recipient's foreign tax on the interest is at least three quarters of the Danish tax. Interest paid to unrelated lenders is not taxed.
@@ -199,18 +201,22 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Selskabsskatteloven, LBK nr. 279 of 13 March 2025 (in force; the printout lists later amendments by lov nr. 562/2025, 750/2025, 1755/2025, 1783/2025 and 763/2026) | https://www.retsinformation.dk/eli/lta/2025/279 | 2026-10-22 |
-| Lov nr. 1783 of 29 December 2025 (amends SEL § 30 interest rules from 1 January 2026) | https://www.retsinformation.dk/eli/lta/2025/1783 | 2026-10-22 |
+| Lov nr. 1783 of 29 December 2025 (amends SEL § 30 and Opkrævningsloven § 16 from 1 January 2026) | https://www.retsinformation.dk/eli/lta/2025/1783 | 2026-10-22 |
 | Lov nr. 750 of 20 June 2025 (amends SEL § 2 C and § 31 A) | https://www.retsinformation.dk/eli/lta/2025/750 | 2026-10-22 |
 | Lov nr. 763 of 8 September 2026 (amends SEL §§ 24 and 30; no rate changes) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-10-22 |
-| Skattekontrolloven, LBK nr. 12 of 8 January 2024 (§§ 12-14 filing deadline; § 73 late filing) | https://www.retsinformation.dk/eli/lta/2024/12 | 2026-10-22 |
+| Skattekontrolloven, LBK nr. 12 of 8 January 2024 (§§ 12-14 filing deadline; § 73 late filing, as amended) | https://www.retsinformation.dk/eli/lta/2024/12 | 2026-10-22 |
+| Lov nr. 16 of 14 January 2025, § 2, nr. 1 (SKL § 73, stk. 1: DKK 200 to 400 a day, cap DKK 5,000 to 10,000, in force 15 January 2025) | https://www.retsinformation.dk/eli/lta/2025/16 | 2026-10-22 |
 | Aktieavancebeskatningsloven, LBK nr. 849 of 21 September 2026 (§§ 4 A-4 C, 8, 9, 23) | https://www.retsinformation.dk/eli/lta/2026/849 | 2026-10-22 |
-| Kildeskatteloven, LBK nr. 460 of 3 May 2024 (§§ 65, 65 C, 65 D) | https://www.retsinformation.dk/eli/lta/2024/460 | 2026-10-22 |
-| Opkrævningsloven, LBK nr. 1040 of 13 September 2024 (§ 7 interest) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-22 |
+| Kildeskatteloven, LBK nr. 460 of 3 May 2024, as amended by lov nr. 1691/2024 (§§ 65, 65 C, 65 D) | https://www.retsinformation.dk/eli/lta/2024/460 | 2026-10-22 |
+| Opkrævningsloven, LBK nr. 1040 of 13 September 2024 (§ 7 interest, as amended) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-22 |
+| Lov nr. 1694 of 30 December 2024, § 1, nr. 6 (Opkrævningsloven § 7, stk. 1: addition 0.7 to 0.85 percentage points) | https://www.retsinformation.dk/eli/lta/2024/1694 | 2026-10-22 |
+| Lov nr. 1691 of 30 December 2024 (SEL § 13, stk. 1, nr. 3 and § 2, stk. 8; KSL § 65, stk. 6; § 12, stk. 2 base DKK 15.9m) | https://www.retsinformation.dk/eli/lta/2024/1691 | 2026-10-22 |
+| Skattestyrelsen: basis rate under Opkrævningsloven § 7, stk. 2, for 2026 (SKM2025.720.SKTST) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-22 |
 | Minimumsbeskatningsloven, LBK nr. 1089 of 2 September 2025 | https://www.retsinformation.dk/eli/lta/2025/1089 | 2026-10-22 |
-| Skatteministeriet: rates and thresholds in Selskabsskatteloven, 2026 and 2027 (page dated 2 September 2026) | https://skm.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven | 2026-10-22 |
-| Skatteministeriet: rates in Kildeskatteloven, 2026 and 2027 (page dated 14 September 2026) | https://skm.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/kildeskatteloven | 2026-10-22 |
-| Skatteministeriet: rates in Opkrævningsloven, 2025 and 2026 (page dated 17 March 2026) | https://skm.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/opkraevningsloven | 2026-10-22 |
-| Skatteministeriet: rates in Afskrivningsloven, 2026 and 2027 (page dated 27 August 2026) | https://skm.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven | 2026-10-22 |
+| Skatte- og Vækstministeriet: rates and thresholds in Selskabsskatteloven, 2026 and 2027 (page dated 2 September 2026) | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/selskabsskatteloven | 2026-10-22 |
+| Skatte- og Vækstministeriet: rates in Kildeskatteloven, 2026 and 2027 (page dated 14 September 2026) | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/kildeskatteloven | 2026-10-22 |
+| Skatte- og Vækstministeriet: rates in Opkrævningsloven, 2025 and 2026 (page dated 17 March 2026) | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/opkraevningsloven | 2026-10-22 |
+| Skatte- og Vækstministeriet: rates in Afskrivningsloven, 2026 and 2027 (page dated 27 August 2026) | https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen/afskrivningsloven | 2026-10-22 |
 | Skattestyrelsen: rates under SEL § 29 B, stk. 8-11 for 2025 (SKM2025.718.SKTST) | https://info.skat.dk/data.aspx?oid=2459998 | 2026-10-22 |
 | Skattestyrelsen, Den juridiske vejledning A.C.2.1.4.3.1: skattetillæg under SKL § 73 | https://info.skat.dk/data.aspx?oid=2284578 | 2026-10-22 |
 | skat.dk: paying acontoskat and corporate tax | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/betal-acontoskat-og-selskabsskat | 2026-10-22 |
@@ -218,4 +224,4 @@ expected:
 | skat.dk: oplysningsskema 2025 deadlines | https://skat.dk/erhverv/oplys-aarets-resultat | 2026-10-22 |
 | skat.dk: global minimum tax for large groups (GloBE) | https://skat.dk/erhverv/selskaber-fonde-og-foreninger/selskaber-og-fonde/global-minimumsskat-for-store-koncerner-globe | 2026-10-22 |
 
-Not yet confirmed: the 2026 restskattetillæg, godtgørelse and voluntary acontoskat surcharge rates (Skattestyrelsen publishes them by 15 December 2026; the 2025 rates are shown above); the effective dates of the individual Pillar Two charging rules (income inclusion rule, undertaxed profits rule, Danish top-up tax); the R&D enhanced deduction percentages for 2026; how the 1 January 2026 changes to SEL § 30 by lov nr. 1783/2025 work out for interest on a late filer's residual tax.
+Not yet confirmed: the 2026 restskattetillæg, godtgørelse and voluntary acontoskat surcharge rates (Skattestyrelsen publishes them by 15 December 2026; the 2025 rates are shown above); the effective dates of the individual Pillar Two charging rules (income inclusion rule, undertaxed profits rule, Danish top-up tax); the R&D enhanced deduction percentages for 2026; the commencement order the Minister issued under lov nr. 1694/2024, § 18, stk. 2, for the 0.85-point addition (the Ministry table and Den juridiske vejledning apply 0.85 for 2026, but the order itself was not located).
