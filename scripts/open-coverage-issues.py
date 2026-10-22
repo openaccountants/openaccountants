@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Open one "[XX] Complete the pack" issue per real jurisdiction, from the
+Open (or with --update, rewrite) one "[XX] Complete the pack" issue per real jurisdiction, from the
 coverage report. Idempotent: a jurisdiction that already has an open issue
 with that title is skipped. Needs the gh CLI, logged in.
 
@@ -22,9 +22,9 @@ MILESTONE = "Cover the world"
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DOMAIN_LABELS = {
-    "TAX-VAT": "VAT / GST / sales tax", "TAX-IT": "income tax", "TAX-SC": "social contributions",
-    "BK": "bookkeeping", "EI": "e-invoicing", "PR": "payroll", "CF": "company formation",
-    "FS": "financial statements", "TP": "transfer pricing", "TO": "tax optimisation",
+    "IT-IND": "individual income tax", "IT-CORP": "corporate income tax", "VAT": "VAT / GST / sales tax",
+    "SC": "social contributions", "PR": "payroll withholding", "TP": "transfer pricing",
+    "XB": "cross-border: exit, treaties, non-residents",
 }
 
 
@@ -35,12 +35,12 @@ def report(owner=None):
     return json.loads(subprocess.check_output(cmd))
 
 
-def existing_titles():
+def existing_issues():
     out = subprocess.check_output([
         "gh", "issue", "list", "-R", REPO, "--state", "open", "--label", "coverage",
-        "--limit", "1000", "--json", "title",
+        "--limit", "1000", "--json", "title,number",
     ])
-    return {row["title"] for row in json.loads(out)}
+    return {row["title"]: row["number"] for row in json.loads(out)}
 
 
 def fmt(codes):
@@ -60,7 +60,7 @@ Skills now: {row['skills']}  Reviewed: {row['reviewed']}  Stale (>365 days): {ro
 
 Done when:
 - [ ] `{row['dir']}/README.md` declares `applicable:` and `not_applicable:` (with reasons)
-- [ ] one skill per applicable domain, each with `sources:` in frontmatter and a recomputable worked example
+- [ ] one skill per applicable tax domain, in the deep-tax shape from docs/skill-template.md (rules, figures with sources, deadlines, penalties, two worked examples that recompute)
 - [ ] `python3 scripts/validate-guides.py --changed-only` passes
 - [ ] `python3 scripts/coverage-report.py --owner {row['owner']}` shows this code with no missing domains
 - [ ] PR merged by a maintainer, closing this issue
@@ -73,15 +73,26 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--owner")
+    ap.add_argument("--update", action="store_true", help="rewrite the body of issues that already exist")
     args = ap.parse_args(argv)
 
     rows = report(args.owner)["rows"]
-    have = existing_titles()
-    opened = skipped = 0
+    have = existing_issues()
+    opened = skipped = updated = 0
     for row in rows:
         title = f"[{row['code']}] Complete the pack"
         if title in have:
-            skipped += 1
+            if args.update and not args.dry_run:
+                for attempt in range(4):
+                    r = subprocess.run(["gh", "issue", "edit", "-R", REPO, str(have[title]), "--body", body_for(row)],
+                                       stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
+                    if r.returncode == 0:
+                        break
+                    time.sleep(5 * (attempt + 1))
+                updated += 1
+                time.sleep(1)
+            else:
+                skipped += 1
             continue
         labels = f"coverage,owner:{row['owner']}"
         if args.dry_run:
@@ -104,7 +115,7 @@ def main(argv=None):
         print("opened:", title)
         opened += 1
         time.sleep(1)
-    print(f"{'would open' if args.dry_run else 'opened'} {opened}, skipped {skipped} already open")
+    print(f"{'would open' if args.dry_run else 'opened'} {opened}, updated {updated}, skipped {skipped} already open")
     return 0
 
 

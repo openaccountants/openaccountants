@@ -6,26 +6,26 @@ Set 22 October 2026 by Michael Cutajar, Ryan Duguid and Jeff Watts. Milestone **
 
 Every jurisdiction in the catalogue has a **complete, verified, reviewed pack**, and nobody else has that. Three tests; all three must pass before a jurisdiction counts:
 
-1. **Complete.** The pack has one skill for each applicable domain in [docs/SKILL-TAXONOMY.md](docs/SKILL-TAXONOMY.md): TAX-VAT, TAX-IT, TAX-SC, BK (bookkeeping), EI (e-invoicing), PR (payroll), CF (company formation), FS (financial statements), TP (transfer pricing), TO (tax optimisation), plus the cross-border corridors that matter to it. "Applicable" is decided per jurisdiction and written in the pack's `README.md` (`applicable:` and `not_applicable:` with a reason). A territory with no VAT has no VAT skill, and says so.
-2. **Verified.** Every figure is tied to an official source that resolves, worked examples recompute, and the pack passes `scripts/validate-guides.py` and CI. A guide being present is not coverage. Source preparation is not coverage.
+1. **Complete.** We go deep on tax first. The pack has one skill, in the deep-tax shape, for each applicable tax domain: IT-IND (individual income tax), IT-CORP (corporate income tax), VAT (VAT, GST or sales tax), SC (social contributions), PR (payroll withholding), TP (transfer pricing) and XB (cross-border: exit tax, treaties, non-residents). "Applicable" is decided per jurisdiction and written in the pack's `README.md` (`applicable:` and `not_applicable:` with a reason). A territory with no VAT has no VAT skill, and says so. Bookkeeping, e-invoicing, financial statements and tax optimisation are the second milestone, **Accounting packs**, and never count as missing here.
+2. **Verified.** Every figure is tied to an official source that resolves, the two worked examples in every skill recompute, and the pack passes `scripts/validate-guides.py` and CI. A guide being present is not coverage. Source preparation is not coverage.
 3. **Reviewed.** A named accountant has reviewed the pack (`tier: 1` with `reviewed_by` and `reviewed_on`). This is the last step and the slowest: we build and verify first, then bring accountants in per jurisdiction.
 
 There are exactly two quality states: **Accountant-reviewed** (`tier: 1`) and **Source-cited draft** (`tier: 2`). See [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](docs/COVERAGE.md)); the exact figures come from the report below, never from a hand count.
 
 ## Where we are
 
-`python3 scripts/coverage-report.py --summary`, run on 2026-10-22:
+`python3 scripts/coverage-report.py --summary`, run on 2026-10-22 (tax domains only):
 
 | Measure | Now |
 |---|---|
 | Skills | 2,134 |
 | Jurisdictions (real codes; pseudo-codes such as GLOBAL and INTL excluded) | 266 |
 | Jurisdictions with 7 skills or fewer | 193 |
-| Complete packs (no applicable domain missing) | 4 |
+| Complete tax packs (no applicable tax domain missing) | 4 |
 | Packs with a README declaring applicability | 0 |
 | Skills with a named reviewer (`tier: 1`) | 33 |
 
-So the work is not "add countries". It is turning 266 thin or partial packs into complete, verified ones, then getting them reviewed.
+So the work is not "add countries". It is going deep on tax: turning 266 thin or partial packs into complete, verified ones, then getting them reviewed.
 
 ## Workstreams
 

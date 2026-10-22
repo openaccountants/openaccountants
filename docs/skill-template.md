@@ -186,3 +186,19 @@ Before delivering output, verify:
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+## The deep-tax shape (GOAL.md, 22 October 2026)
+
+Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) has these sections, in this order, so an AI reading any two jurisdictions finds the same things in the same places:
+
+1. **Who this applies to.** Residence and scope rules; who is in and who is out.
+2. **Rates, bands and thresholds.** A table: item, amount, tax year, official source URL. No figure without a source.
+3. **The base.** What is taxed, what is deductible or exempt, how losses work.
+4. **Deadlines and filing.** Registration, returns, payments, instalments, what form, where it is filed.
+5. **Penalties and interest.** Late filing, late payment, under-declaration; the figures, sourced.
+6. **Cross-border points.** Non-residents, treaties, withholding, exit rules that touch this domain.
+7. **Two worked examples that recompute.** One simple, one with an edge case, each in an `oa-check` block (inputs, steps, expected) that `scripts/check-examples.py` can run.
+8. **Ask the client first.** The three to six facts that change the answer.
+9. **Sources.** Every URL used, each with the date it was read (`as_of`), matching `sources:` in frontmatter.
+
+Bookkeeping, e-invoicing, financial statements and tax optimisation skills keep the general template and belong to the Accounting packs milestone.
