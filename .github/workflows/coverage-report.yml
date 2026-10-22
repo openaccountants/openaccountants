@@ -1,0 +1,30 @@
+name: Weekly coverage report
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the report
+        run: python3 scripts/coverage-report.py --markdown > report.md
+      - name: Post it on the pinned issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list -R "$GITHUB_REPOSITORY" --search '"Weekly coverage report" in:title' --state open --json number --jq '.[0].number')
+          if [ -z "$n" ]; then
+            n=$(gh issue create -R "$GITHUB_REPOSITORY" --title "Weekly coverage report" --label coverage --body "Posted every Monday by .github/workflows/coverage-report.yml. Latest report is the last comment." | grep -o '[0-9]*$')
+          fi
+          gh issue comment -R "$GITHUB_REPOSITORY" "$n" --body-file report.md

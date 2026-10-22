@@ -1,0 +1,37 @@
+name: Complete the pack
+description: Take a jurisdiction to a complete, verified pack (see GOAL.md)
+title: "[XX] Complete the pack"
+labels: ["coverage", "owner:open"]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Jurisdiction code
+      description: As in index.json, e.g. MT, GB, US-TX, CA-ON
+    validations:
+      required: true
+  - type: checkboxes
+    id: missing
+    attributes:
+      label: Domains missing (docs/SKILL-TAXONOMY.md)
+      options:
+        - label: TAX-VAT (VAT / GST / sales tax)
+        - label: TAX-IT (income tax, individual and corporate)
+        - label: TAX-SC (social contributions)
+        - label: BK (bookkeeping)
+        - label: EI (e-invoicing)
+        - label: PR (payroll)
+        - label: CF (company formation)
+        - label: FS (financial statements)
+        - label: TP (transfer pricing)
+        - label: TO (tax optimisation)
+  - type: textarea
+    id: applicability
+    attributes:
+      label: Not applicable, with the reason
+      description: Domains this jurisdiction does not have (for example no VAT), one per line. Goes into the pack README.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Official sources known
+      description: Tax authority pages, statutes, gazettes. One per line.
