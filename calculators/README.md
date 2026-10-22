@@ -15,4 +15,4 @@ Each calculator is a folder with:
 
 Results are estimates from the rules in `rules.json`, not advice on anyone's situation. The nightly source watch on openaccountants.com checks the official pages each calculator cites; when a figure moves, `rules.json` is updated here and the hosted page follows.
 
-Licence: the code is AGPL-3.0-or-later; the figures and wording in `rules.json` are under the OpenAccountants Guide License v1.0, like the skills.
+Licence: the code is AGPL-3.0-only; the figures and wording in `rules.json` are under the OpenAccountants Guide License v1.0, like the skills.

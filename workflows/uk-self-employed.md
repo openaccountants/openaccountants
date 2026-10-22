@@ -26,11 +26,11 @@
 ## Skills to load
 
 From the GB bundle:
-- `uk-income-tax` — income tax rates, bands, personal allowance
-- `uk-self-employed` — SA103, allowable expenses, basis period reform
-- `uk-nic` — Class 2 and Class 4 NIC thresholds and rates
+- `uk-income-tax-sa100` — income tax rates, bands, personal allowance
+- `uk-self-employment-sa103` — SA103, allowable expenses, basis period reform
+- `uk-national-insurance` — Class 2 and Class 4 NIC thresholds and rates
 - `uk-payments-on-account` — due dates, reduction rules
-- `uk-vat` — VAT registration threshold, Making Tax Digital
+- `uk-vat-return` — VAT registration threshold, Making Tax Digital
 
 ## 6-phase structure
 
@@ -54,4 +54,4 @@ Recommend review by a UK-qualified accountant (ACA/ACCA/CIOT). Route to: https:/
 
 ## Verifier
 
-Verified by James Power — [openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e)
+Reviewed by James Power — [openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e)

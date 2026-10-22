@@ -12,8 +12,8 @@ depending on whether a file is *software* or an *AI skill* (tax rules your AI fo
 
 | Files | Licence | Text |
 |-------|---------|------|
-| Software, tooling, docs, and project metadata — `mcp/`, `scripts/`, `tools/`, `plugins/`, `.claude-plugin/`, `docs/`, `.github/`, `Dockerfile`, and root config/meta files | **AGPL-3.0-only** | [`LICENSE`](LICENSE) / [`LICENSES/AGPL-3.0-only.txt`](LICENSES/AGPL-3.0-only.txt) |
-| Tax Guides and their machine-readable exports — `skills/`, `packages/`, `workflows/`, `index.json`, `llms.txt`, `llms-full.txt` | **OA Guide License** (source-available) | [`LICENSES/LicenseRef-OA-Guide-License-1.0.txt`](LICENSES/LicenseRef-OA-Guide-License-1.0.txt) |
+| Software, tooling, docs, and project metadata: `mcp/`, `scripts/`, `tools/`, `tests/`, `plugins/` (except the skill content below), `.claude-plugin/`, `docs/`, `.github/`, `Dockerfile`, `calculators/**/*.mjs`, `agent-skills/install.sh`, and root config/meta files | **AGPL-3.0-only** | [`LICENSE`](LICENSE) / [`LICENSES/AGPL-3.0-only.txt`](LICENSES/AGPL-3.0-only.txt) |
+| Skills and their machine-readable exports: `skills/`, `packages/`, `workflows/`, `agent-skills/**/SKILL.md`, `agent-skills/index.json`, `plugins/openaccountants/skills/`, `calculators/**/rules.json`, `index.json`, `llms.txt`, `llms-full.txt` | **OA Guide License** (source-available) | [`LICENSES/LicenseRef-OA-Guide-License-1.0.txt`](LICENSES/LicenseRef-OA-Guide-License-1.0.txt) |
 
 The machine-readable exports (`index.json`, `llms.txt`, `llms-full.txt`)
 reproduce the Guides, so they carry the **Guide License** — otherwise the Guide

@@ -53,6 +53,6 @@ Recommend review by a Malta-qualified CPA or warranted accountant. Route to: htt
 
 ## Verifier
 
-Verified by **Michael Cutajar CPA (Malta)** — [openaccountants.com/network](https://www.openaccountants.com/network)
+Reviewed by **Michael Cutajar CPA (Malta)** — [openaccountants.com/network](https://www.openaccountants.com/network)
 
-Skills signed off by Michael are Tier 1 (accountant-verified). Use the MCP server or bundle API to access the verified versions.
+Skills reviewed by Michael are accountant-reviewed (`tier: 1`). Use the MCP server or bundle API to access the current versions.

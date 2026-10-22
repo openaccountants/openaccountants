@@ -57,17 +57,19 @@ class SkillFileTests(unittest.TestCase):
         self.assertIn("`get_skill` with slug `mt-rental`", out)
         self.assertIn("https://www.openaccountants.com/skills/mt-rental", out)
 
-    def test_readme_stats_block_counts_by_author_kind(self) -> None:
+    def test_readme_stats_block_has_two_states(self) -> None:
         built = {
             "a": {"authored_by": "Michael Cutajar and the OpenAccountants team", "reviewed_by": None},
             "b": {"authored_by": None, "reviewed_by": "Jane Doe, CPA"},
             "c": {"authored_by": None, "reviewed_by": None},
         }
         text = "intro\n<!-- oa-skills-stats:start -->\nold\n<!-- oa-skills-stats:end -->\nrest"
-        out = build.stamp_readme(text, built, ["MT", "NL"])
+        out = build.stamp_readme(text, built, ["MT", "NL"], reviewed=1)
         self.assertIn("**3 skills** across **2 jurisdictions**", out)
-        self.assertIn("1 have a named accountant behind them (author or reviewer, in `metadata`), 1 were built by the OpenAccountants team, and 1 are source-cited drafts", out)
+        self.assertIn("1 are accountant-reviewed (a named accountant in `metadata.reviewed_by`); the other 2 are source-cited drafts.", out)
         self.assertTrue(out.startswith("intro\n") and out.endswith("\nrest"))
+        # Without the tier count, a named reviewer is the fallback signal.
+        self.assertIn("1 are accountant-reviewed", build.stamp_readme(text, built, ["MT"]))
 
 
 class TreeTests(unittest.TestCase):
