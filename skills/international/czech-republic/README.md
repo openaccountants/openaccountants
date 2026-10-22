@@ -1,0 +1,33 @@
+---
+jurisdiction: CZ
+applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
+not_applicable: {}
+covered_by:
+  SC: cz-social-health
+---
+
+# Czech Republic: tax pack
+
+Calendar tax year. Authority: the Financial Administration (Finanční správa) and its tax offices; social insurance by ČSSZ, health insurance by the health insurers. Czech koruna (CZK). Individual income tax at 15% and 23% above 36 times the average wage; corporate income tax at 21%; VAT under EU rules; social and health insurance for employees and the self-employed. The law is the Income Taxes Act (586/1992 Coll.), the Tax Code (280/2009 Coll.) and the VAT Act (235/2004 Coll.).
+
+## Domains
+
+| Domain | Skill | Status |
+|---|---|---|
+| IT-IND, individual income tax | cz-income-tax (self-employed focus) | source-cited draft |
+| IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
+| VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
+| SC, social contributions | cz-social-health | source-cited draft |
+| PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
+| TP, transfer pricing | (missing: arm's length rule in ITA § 23(7), documentation, advance pricing agreements) | |
+| XB, cross-border | cz-cross-border | source-cited draft |
+
+Also in the pack: cz-tax-overview, cz-company-formation, references.md.
+
+## Official sources
+
+- Income Taxes Act (586/1992 Coll.): https://www.zakonyprolidi.cz/cs/1992-586 (read 2026-10-22)
+- Tax Code (280/2009 Coll.): https://www.zakonyprolidi.cz/cs/2009-280 (read 2026-10-22)
+- VAT Act (235/2004 Coll.): https://www.zakonyprolidi.cz/cs/2004-235
+- Finanční správa: https://financnisprava.gov.cz (read 2026-10-22)
+- ČSSZ: https://www.cssz.gov.cz (read 2026-10-22)
