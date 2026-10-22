@@ -4,6 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: at-cross-border
+partial:
+  SC: at-svs-contributions covers the self-employed (GSVG and FSVG) only, not employee or employer contributions
 ---
 
 # Austria: tax pack
