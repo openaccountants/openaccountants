@@ -2,6 +2,10 @@
 jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  IT-CORP: nl-corporate-tax has no dividend withholding tax or conditional withholding tax method and refers out non-resident companies with a Dutch permanent establishment
+  TP: netherlands-transfer-pricing does not quantify penalties (no CbC fine amount under art. 29h, no consequence of missing art. 8b or 29g documentation)
+  VAT: no VAT registration method, OSS and non-established businesses are referred out, and nl-vat-return gives 4 December instead of 3 December 2026 for joining the KOR
 ---
 
 # Netherlands: tax pack
