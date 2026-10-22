@@ -214,6 +214,17 @@ Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) has these sections, in th
 
    Arithmetic only: inputs, named steps, `+ - * /`, and `min max abs round floor ceil pct clamp`. Decimal maths; a value matches within `tolerance` (default 0.01). A wrong expected value fails the PR.
 8. **Ask the client first.** The three to six facts that change the answer.
-9. **Sources.** Every URL used, each with the date it was read (`as_of`), matching `sources:` in frontmatter.
+9. **Sources.** A `## Sources` section, last in the file, listing every official page the figures came from, with the date it was read:
+
+   ```markdown
+   ## Sources
+
+   | Source | URL | Read on |
+   |---|---|---|
+   | Income Tax Act, Cap. 123, art. 56 | https://legislation.mt/eli/cap/123/eng | 2026-10-22 |
+   | MTCA, 2026 tax rates | https://mtca.gov.mt/... | 2026-10-22 |
+   ```
+
+   `scripts/validate-guides.py` warns when a tax skill has no `## Sources` section with a URL, and when `last_updated` is over a year old or `tax_year` is two or more years behind. Both become errors once the backlog is cleared. Sources live in the body, not in a frontmatter key, because the platform export re-renders frontmatter and drops keys it does not store.
 
 Bookkeeping, e-invoicing, financial statements and tax optimisation skills keep the general template and belong to the Accounting packs milestone.
