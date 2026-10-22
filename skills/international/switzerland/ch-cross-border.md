@@ -15,7 +15,7 @@ verified_by: pending
 This skill is the cross-border hub for the Switzerland pack. It summarises what changes when a person or company crosses the Swiss border and links to the skills that hold the detail:
 
 - Ordinary federal income tax: `ch-federal-income-tax`. Cantonal and communal tax: `ch-cantonal-tax`. Corporate profit tax: `ch-corporate-income-tax`.
-- Lump-sum taxation in depth: `ch-lump-sum`. Note: that skill's federal minimum figure is out of date; the 2026 figure is in the table below.
+- Lump-sum taxation in depth: `ch-lump-sum`. Note: that skill's federal minimum (CHF 451,200) does not appear in the law; the DBG figure was CHF 421,700 for 2023 to 2025 and is CHF 435,000 from 2026 (table below).
 - AHV/IV social contributions: `ch-ahv-iv`. Employee shares and options across borders: `ch-taxation-employee-stock-options-and-employee`.
 - The German corridor (Grenzgänger, weekly stayers, German exit tax): `germany-to-switzerland-cross-border-tax` in the Germany pack.
 
@@ -33,7 +33,7 @@ There is no split-year concept in the UK sense. Liability starts on the day domi
 
 **Individuals: limited liability (DBG art. 4 and 5).** A non-resident is taxed only on Swiss-source items: a Swiss business or permanent establishment, Swiss real estate, work done in Switzerland, board fees from Swiss companies, interest on loans secured on Swiss real estate, Swiss public-sector and occupational pensions, and wages for work in international transport paid by a Swiss employer. Since 1 January 2025, a non-resident employee of a Swiss employer can also be taxable on telework done abroad, where an agreement with the neighbouring state gives Switzerland that right (DBG art. 5 para. 1 let. a-bis).
 
-**Companies (DBG art. 50 to 52).** A company is resident if its **seat or effective management** is in Switzerland, and is then taxed on worldwide profit except foreign permanent establishments and foreign real estate. A foreign company is taxed only on Swiss business participations, permanent establishments and real estate. A permanent establishment is a fixed place of business; a building or assembly site counts if it lasts at least 12 months.
+**Companies (DBG art. 50 to 52).** A company is resident if its **seat or effective management** is in Switzerland, and is then taxed on worldwide profit except foreign permanent establishments and foreign real estate. A foreign company is taxed only on Swiss business participations, permanent establishments, real estate, loans secured on Swiss real estate, and dealing in Swiss real estate (DBG art. 51). A permanent establishment is a fixed place of business; a building or assembly site counts if it lasts at least 12 months.
 
 **Treaty override.** Where a person is resident in Switzerland and in a treaty state under both domestic laws, the treaty tie-breaker decides (see Cross-border points).
 
@@ -60,7 +60,7 @@ There is no split-year concept in the UK sense. Liability starts on the day domi
 | Royalties and service fees paid abroad | No Swiss withholding tax: not in the VStG list of taxable income | 2026 | [VStG art. 4](https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de) |
 | Exit tax on individuals | None: private capital gains are tax free | 2026 | [DBG art. 16 para. 3](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
 | Company leaving: untaxed hidden reserves | Taxed at the ordinary profit tax rate (federal 8.5% of net profit) | 2026 | [DBG art. 61b, 68, 80](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
-| Late payment interest, federal taxes and Verrechnungssteuer | 4.0% | 2026 (unchanged for 2027) | [ESTV announcement](https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI) |
+| Late payment interest, federal taxes and Verrechnungssteuer | 4.0% | 2026 (unchanged for 2027) | [ESTV 2026](https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI); [ESTV 2027](https://www.estv.admin.ch/de/newnsb/bCxrY5LSQCuF) |
 
 Cantonal and communal tax at source is added to the federal rates above, using the tariff of the competent canton. The ESTV publishes the cantonal tariffs as files for payroll software; readable tariffs are on each canton's site ([ESTV: Quellensteuer](https://www.estv.admin.ch/estv/de/home/direkte-bundessteuer/dbst-quellensteuer.html)).
 
@@ -76,7 +76,7 @@ Cantonal and communal tax at source is added to the federal rates above, using t
 2. unlimited Swiss tax liability for the first time, or after at least 10 years away;
 3. no gainful activity in Switzerland.
 
-Married spouses living together must both qualify. The base is the higher of actual worldwide living costs and the minimums: CHF 435,000 federal for 2026; 7 times the annual rent or rental value for a person with their own household (3 times the board and lodging price otherwise); and the "control calculation", the gross Swiss-source income plus foreign income on which treaty relief is claimed. The ordinary tariff then applies. The CHF 435,000 is indexed by the Federal Department of Finance; it was raised from 1 January 2026 (DBG art. 14 footnote: EFD ordinance of 10 September 2025). Cantons set their own minimums and some have abolished the regime: Zurich abolished it by popular vote in 2009, effective January 2010, and Schaffhausen, Appenzell Ausserrhoden, Basel-Landschaft and Basel-Stadt followed ([EFD](https://www.efd.admin.ch/de/besteuerung-aufwand)). A Zurich resident therefore cannot use lump-sum taxation. Detail: `ch-lump-sum`.
+Married spouses living together must both qualify. The base is the higher of actual worldwide living costs and the minimums: CHF 435,000 federal for 2026; 7 times the annual rent or rental value for a person with their own household (3 times the board and lodging price otherwise); and the "control calculation", the gross Swiss-source income plus foreign income on which treaty relief is claimed. The ordinary tariff then applies. The CHF 435,000 is indexed to consumer prices by the Federal Department of Finance (DBG art. 14 para. 6). It was CHF 421,700 for 2023 to 2025 and rose to CHF 435,000 from 1 January 2026 (art. 3 of the EFD ordinance of 10 September 2025 on cold progression, AS 2025 579). Cantons set their own minimums and some have abolished the regime: Zurich abolished it by popular vote in 2009, effective January 2010, and Schaffhausen, Appenzell Ausserrhoden, Basel-Landschaft and Basel-Stadt followed ([EFD](https://www.efd.admin.ch/de/besteuerung-aufwand)). A Zurich resident therefore cannot use lump-sum taxation. Appenzell Innerrhoden keeps the regime (its tax office publishes a lump-sum notice under art. 17 StG AI); the canton that abolished it is Appenzell Ausserrhoden. Detail: `ch-lump-sum`.
 
 **Tax at source for foreign employees (Quellensteuer, DBG art. 83 to 90).** A resident employee without a settlement permit (C permit) or Swiss citizenship has tax deducted from gross salary by the employer. The deduction includes flat allowances for work expenses, insurance premiums and family. Spouses are not taxed at source if either is Swiss or holds a C permit.
 
@@ -85,15 +85,15 @@ Since 1 January 2021 the system has two routes:
 - **Mandatory subsequent ordinary assessment (NOV, DBG art. 89).** Applies if gross employment income in a tax year is at least CHF 120,000 (QStV art. 9), or the person has income not taxed at source. Zurich adds triggers for wealth and other income (table above). Once in the NOV, the person stays in it until source taxation ends, even if income later falls. The tax withheld is credited without interest. For a part year, the CHF 120,000 is tested on income converted to 12 months (QStV art. 9 para. 5, pointing to DBG art. 40 para. 3).
 - **NOV on request (DBG art. 89a).** Anyone below the triggers can ask for one by 31 March of the following year, or by the date of deregistration if leaving Switzerland. The request cannot be withdrawn (QStV art. 10). Without it, tax at source is final for employment income and no extra deductions are given later (DBG art. 89a para. 4).
 
-Zurich applies "more than CHF 120,000" in its 2026 notice, while the federal ordinance says "at least". The federal text governs; flag a client at exactly CHF 120,000.
+Zurich's filing notice (ZStB 133.1) says "more than CHF 120,000", while the federal ordinance and Zurich's own tax-at-source page say "at least". The federal text governs; flag a client at exactly CHF 120,000.
 
-**Non-resident employees (DBG art. 91 and 99a).** Non-residents working for a Swiss employer are taxed at source, and the tax is final (DBG art. 99). They can request an NOV by 31 March of the following year if most of their worldwide income is taxed in Switzerland, their situation is comparable to a resident's, or a treaty deduction needs it. QStV art. 14 fixes the "quasi-resident" test at 90% of worldwide gross income.
+**Non-resident employees (DBG art. 91 and 99a).** Non-residents working for a Swiss employer are taxed at source, and the tax is final (DBG art. 99). They can request an NOV by 31 March of the following year if most of their worldwide income is taxed in Switzerland, their situation is comparable to a resident's, or a treaty deduction needs it. QStV art. 14 fixes the "quasi-resident" test: as a rule at least 90% of worldwide gross income, including the spouse's, taxed in Switzerland. The request is made for each tax year.
 
 **No exit tax for individuals.** Private capital gains are tax free (DBG art. 16 para. 3), and the DBG has no deemed disposal on departure. Leaving ends unlimited liability on the day of departure (DBG art. 8). Gains on Swiss real estate stay taxable by the canton. Pillar 2 and pillar 3a capital paid to someone who has left is taxed at source (DBG art. 95 and 96).
 
 **Companies moving in.** A company that moves its seat or effective management to Switzerland, or transfers assets or functions here, may disclose hidden reserves, including self-created goodwill, tax free. Disclosed reserves are then depreciated; goodwill over 10 years (DBG art. 61a).
 
-**Companies moving out.** Untaxed hidden reserves, including self-created goodwill, are taxed when the seat or effective management moves abroad or assets, businesses or functions are moved to a foreign business or permanent establishment (DBG art. 61b and 80 para. 3). The move of the seat abroad is also treated as a liquidation for Verrechnungssteuer (VStG art. 4 para. 2): the liquidation surplus beyond nominal capital and confirmed capital contribution reserves bears 35%, refundable to the shareholders under a treaty.
+**Companies moving out.** Untaxed hidden reserves, including self-created goodwill, are taxed when the seat or effective management moves abroad or assets, businesses or functions are moved to a foreign business or permanent establishment (DBG art. 61b and 80 para. 2). The move of the seat abroad is also treated as a liquidation for Verrechnungssteuer (VStG art. 4 para. 2): the liquidation surplus beyond nominal capital and confirmed capital contribution reserves bears 35%, refundable to the shareholders under a treaty.
 
 ## Deadlines and filing
 
@@ -103,7 +103,7 @@ Zurich applies "more than CHF 120,000" in its 2026 notice, while the federal ord
 
 **NOV on request.** By 31 March of the following year, or by deregistration if leaving (DBG art. 89a para. 3; QStV art. 10; for non-residents DBG art. 99a and QStV art. 14).
 
-**Departure.** Deregister with the commune. In Zurich, a source-taxed person who moves abroad must file a return for the year of departure in all cases, at the earliest one month before leaving; other persons who leave file within 30 days of receiving the forms. A person leaving must appoint a Swiss representative for service of assessment and collection documents ([ZStB 133.1](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html)).
+**Departure.** Deregister with the commune. In Zurich, a source-taxed person in the NOV who moves abroad must file a return for the year of departure in all cases, at the earliest one month before leaving, and must appoint a person in Switzerland to receive assessment and collection documents. Other persons who leave file within 30 days of receiving the forms ([ZStB 133.1](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html)).
 
 **Payment.** Federal tax is payable within 30 days of falling due (DBG art. 163). The cantons publish due dates.
 
@@ -122,7 +122,7 @@ Cantonal penalties follow the cantonal tax law and are broadly parallel.
 
 ## Cross-border points
 
-**Treaty tie-breaker.** Switzerland's treaties follow the OECD order: permanent home, centre of vital interests, habitual abode, nationality. Under the German treaty (art. 4 para. 2), a German who moves to Switzerland after at least five years of unlimited German liability remains taxable in Germany on German-source income for the year of departure and five years after, with credit for Swiss tax (art. 4 para. 4). See `germany-to-switzerland-cross-border-tax`.
+**Treaty tie-breaker.** Switzerland's treaties follow the OECD order: permanent home, centre of vital interests, habitual abode, nationality. Under the German treaty (art. 4 para. 2), a Swiss resident without Swiss nationality who was unlimited taxable in Germany for at least five years in total remains taxable in Germany on German-source income for the year of departure and the five following years, with credit for Swiss tax (art. 4 para. 4). This does not apply to a person who moved to Switzerland to take up genuine employment with an employer in which they have no substantial interest. See `germany-to-switzerland-cross-border-tax`.
 
 **How Switzerland relieves double tax.** Under domestic law, foreign businesses, permanent establishments and real estate of a resident are exempt and count only for the rate (DBG art. 6 and 7). For other foreign income, relief comes from the treaty with the source state; where the source state keeps a limited tax on dividends, interest or royalties, Switzerland gives a credit on request. This skill does not compute that credit.
 
@@ -204,16 +204,19 @@ If he were a German company holding 10% or more for 365 days, the Swiss tax on t
 Read on 2026-10-22:
 
 - Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, version in force 2 September 2026, art. 3 to 8, 14, 16, 40, 50 to 52, 61a, 61b, 68, 80, 83 to 101, 107, 163, 164, 174, 175, 187: https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de
-- Quellensteuerverordnung (QStV), SR 642.118.2, art. 9, 10, 12, 14: https://www.fedlex.admin.ch/eli/cc/2018/274/de
+- DBG, version in force 1 January 2025 (art. 14 para. 3 let. a: CHF 421,700 under the EFD ordinance of 16 September 2022): https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/20250101/de
+- Quellensteuerverordnung (QStV), SR 642.118.2, version of 10 January 2025 (still current for 2026), art. 9, 10, 12, 14: https://www.fedlex.admin.ch/eli/cc/2018/274/de
 - Bundesgesetz über die Verrechnungssteuer (VStG), SR 642.21, art. 4, 13, 22, 23, 32: https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de
-- Abkommen Schweiz-Deutschland zur Vermeidung der Doppelbesteuerung (DBA CH-DE), SR 0.672.913.62, art. 4, 10, 11, 16: https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de
+- Abkommen Schweiz-Deutschland zur Vermeidung der Doppelbesteuerung (DBA CH-DE), SR 0.672.913.62, version of 27 November 2025, art. 4, 10, 11, 16: https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de
 - ESTV, Verzugs- und Vergütungszinssätze ab 2026: https://www.estv.admin.ch/de/newnsb/58uetWbVftSvrQqxHgivI
+- ESTV, no change to the interest rates for 2027 (22 September 2026): https://www.estv.admin.ch/de/newnsb/bCxrY5LSQCuF
 - ESTV, Schweizerische Quellensteuer: https://www.estv.admin.ch/estv/de/home/direkte-bundessteuer/dbst-quellensteuer.html
 - ESTV, Germany (Verrechnungssteuer refund, form 85): https://www.estv.admin.ch/en/germany
 - EFD, Besteuerung nach dem Aufwand: https://www.efd.admin.ch/de/besteuerung-aufwand
 - BSV, Social security agreements: https://www.bsv.admin.ch/en/social-security-agreements
+- Kantonale Steuerverwaltung Appenzell Innerrhoden, Merkblatt Besteuerung nach dem Aufwand (valid from 2024): https://ai.ch/themen/steuern/publikationen/merkblaetter-gueltig-ab-2024/besteuerung-nach-dem-aufwand/download
 - BSV, Merkblatt Entsendung Schweiz-EU: https://www.bsv.admin.ch/dam/de/sd-web/nj5pRW599A3W/entsendungsmerkblatt-ch-eu.pdf
 - Kantonales Steueramt Zürich, Quellensteuerpflichtige Personen: https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/Quellensteuerpflichtige-Personen.html
 - Kantonales Steueramt Zürich, Zürcher Steuerbuch Nr. 133.1 (filing notice): https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html
 
-Not yet confirmed: the Zurich cantonal and communal tax-at-source rate for non-resident board members; the deadline for a treaty refund claim of Verrechnungssteuer by a German resident; the period for registering with the commune on arrival (cantonal law); whether Appenzell Innerrhoden has abolished lump-sum taxation (listed in `ch-lump-sum` but not in the EFD list); the capped rates in the French, Italian and Austrian frontier-worker arrangements.
+Not yet confirmed: the Zurich cantonal and communal tax-at-source rate for non-resident board members; the deadline for a treaty refund claim of Verrechnungssteuer by a German resident; the period for registering with the commune on arrival (cantonal law); the capped rates in the French, Italian and Austrian frontier-worker arrangements.
