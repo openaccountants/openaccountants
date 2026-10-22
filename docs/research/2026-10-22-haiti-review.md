@@ -1,6 +1,6 @@
 # Haiti first topic batch
 
-Four source-cited drafts: payroll, personal income, business patente and company tax/advances. This is not comprehensive country coverage. No independent review, accountant attestation or live-system publication.
+Five source-cited drafts: payroll, personal income, business patente, company tax/advances and TCA. This is not comprehensive country coverage. No independent review, accountant attestation or live-system publication.
 
 ## Evidence and corrections
 
@@ -19,3 +19,7 @@ Retrieve applicable implementation decisions, confirm operational forms and tran
 ## Company-tax addition
 
 Read articles 69–70, 76, 81 and 134–142. Visually checked pages 28, 30 and 46 against the ministry PDF, verifying rates, turnover threshold, filing wording and historical advance base. Web PDF open failed again; the previously downloaded official enactment with the recorded hash remains the evidence. Corporate calculations take already reconciled taxable profit, not book profit or turnover. The 60% advance is split into two equal payments based on the year before last. The literal before-31-December wording and audited through-31-January exception are preserved. Transition, nonstandard years, implementation decisions and any threshold amendments remain unresolved. No independent review is claimed. Decimal checks passed for ordinary and cooperative rates, the two instalments, balance and excess-credit examples.
+
+## TCA addition
+
+Read articles 174–193 from the recorded ministry enactment. Visually checked pages 57, 59 and 60 for the rate, deduction exclusions, refund prohibition, declaration versus payment distinction, invoice rules and franchise. Article 193 does not specify the threshold measurement period or crossing mechanics; these are explicit gaps, not invented annual-registration rules. Equipment is excluded; reseller deductions follow units actually sold. The monthly return is due days 1–15, but payment follows the bordereau due date. Examples checked with Decimal: sold stock, tax-inclusive service advance, import base additions and credit carry-forward. No independent review or operational filing certification.

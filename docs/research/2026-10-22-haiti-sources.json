@@ -14,6 +14,9 @@
     45,
     46,
     49,
+    57,
+    59,
+    60,
     169
   ],
   "text_checked_articles": [
@@ -26,7 +29,8 @@
     "69\u201370",
     "76",
     "81",
-    "134\u2013142"
+    "134\u2013142",
+    "174\u2013193"
   ],
   "review_status": "independent source and accountant review pending",
   "gaps": [
@@ -36,7 +40,9 @@
     "Social insurance and remaining country topics",
     "Corporate transition and nonstandard-year filing implementation",
     "Article 76 audit-threshold amending orders and current corporate forms",
-    "Complete corporate taxable-profit reconciliation and special-sector regimes"
+    "Complete corporate taxable-profit reconciliation and special-sector regimes",
+    "TCA franchise turnover period, aggregation and crossing-date implementation",
+    "Current TCA form and bordereau payment procedure; foreign-provider collection"
   ],
   "allocation_check": {
     "shared_main": "no Haiti source paths",
