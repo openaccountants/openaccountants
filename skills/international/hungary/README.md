@@ -26,4 +26,4 @@ hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accountin
 ## Official sources
 
 - Nemzeti Adó- és Vámhivatal, information sheets 2026: https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026 (read 2026-10-22)
-- Tao. tv., Act LXXXI of 1996 (corporate tax): https://njt.hu/jogszabaly/1996-81-00-00 (could not be fetched on 2026-10-22)
+- Tao. tv., Act LXXXI of 1996 (corporate tax): https://njt.hu/jogszabaly/1996-81-00-00 (refused connections on 2026-10-22; consolidated text read at https://net.jogtar.hu/jogszabaly?docid=99600081.tv)
