@@ -1,6 +1,6 @@
 # Haiti first topic batch
 
-Five source-cited drafts: payroll, personal income, business patente, company tax/advances and TCA. This is not comprehensive country coverage. No independent review, accountant attestation or live-system publication.
+Six source-cited drafts: payroll, personal income, business patente, company tax/advances, TCA and service withholding/payment reporting. This is not comprehensive country coverage. No independent review, accountant attestation or live-system publication.
 
 ## Evidence and corrections
 
@@ -23,3 +23,7 @@ Read articles 69–70, 76, 81 and 134–142. Visually checked pages 28, 30 and 4
 ## TCA addition
 
 Read articles 174–193 from the recorded ministry enactment. Visually checked pages 57, 59 and 60 for the rate, deduction exclusions, refund prohibition, declaration versus payment distinction, invoice rules and franchise. Article 193 does not specify the threshold measurement period or crossing mechanics; these are explicit gaps, not invented annual-registration rules. Equipment is excluded; reseller deductions follow units actually sold. The monthly return is due days 1–15, but payment follows the bordereau due date. Examples checked with Decimal: sold stock, tax-inclusive service advance, import base additions and credit carry-forward. No independent review or operational filing certification.
+
+## Service withholding and reporting addition
+
+Ryan public HEAD rechecked at 2d2e198012cfd827357eee3ef0a4e65316692fa6; the corresponding cached complete tree contains no Haiti paths. Read articles 75(p), 76(7), 95–97, 137, 142 and 175; visually checked pages 35 and 54. Article 97 literally points to 175(3), which concerns self-supplies, rather than the general service definition in 175(2). No authoritative correction was retrieved; the Guide states the enacted rate and expressly withholds a settled transaction-scope conclusion. Article 96 excludes financial-statements taxpayers from its resident-service rule; its credit/finality paragraphs expressly refer to paragraph 1. Annual reporting is not treated as a blanket withholding list. Current form, tax-inclusive base and transition remain gaps. Search also surfaced secondary reports of a July 2026 deferral of a 15% supplementary-remuneration measure; no primary notice was retrieved and it is not used to override the replacement Code or to classify service contracts. Decimal checks passed for conditional resident-service withholding, specified-right withholding and credit arithmetic. Independent review pending.

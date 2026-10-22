@@ -10,10 +10,12 @@
     13,
     28,
     30,
+    35,
     37,
     45,
     46,
     49,
+    54,
     57,
     59,
     60,
@@ -30,7 +32,10 @@
     "76",
     "81",
     "134\u2013142",
-    "174\u2013193"
+    "174\u2013193",
+    "75(p), 76(7)",
+    "95\u201397",
+    "175"
   ],
   "review_status": "independent source and accountant review pending",
   "gaps": [
@@ -42,7 +47,10 @@
     "Article 76 audit-threshold amending orders and current corporate forms",
     "Complete corporate taxable-profit reconciliation and special-sector regimes",
     "TCA franchise turnover period, aggregation and crossing-date implementation",
-    "Current TCA form and bordereau payment procedure; foreign-provider collection"
+    "Current TCA form and bordereau payment procedure; foreign-provider collection",
+    "Article 97 reference to article 175(3): authoritative correction/interpretation absent",
+    "Service withholding tax-inclusive base, forms and transition reporting",
+    "Treaty inventory and relief procedure not established"
   ],
   "allocation_check": {
     "shared_main": "no Haiti source paths",
