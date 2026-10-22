@@ -8,7 +8,7 @@ Concatenates, in order:
   3. A compact one-line-per-guide inventory from index.json
      ("- <slug> | <jurisdiction> | tier <tier> | reviewed_by <reviewed_by or ->")
   4. A divider
-  5. The full text of START-HERE.md and docs/QUALITY-TIERS.md
+  5. The full text of GOAL.md and docs/QUALITY-TIERS.md
 
 Stdlib only. index.json must be up to date first:
     python3 scripts/build-index.py && python3 scripts/build-llms-full.py
@@ -52,7 +52,7 @@ def build_text():
     parts = [
         read_text("llms.txt").rstrip("\n"),
         guide_inventory(),
-        read_text("START-HERE.md").rstrip("\n"),
+        read_text("GOAL.md").rstrip("\n"),
         read_text(os.path.join("docs", "QUALITY-TIERS.md")).rstrip("\n"),
     ]
     return DIVIDER.join(parts) + "\n"

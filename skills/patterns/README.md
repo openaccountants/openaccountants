@@ -24,4 +24,4 @@ Pattern files are loaded automatically by country packages. They make classifica
 
 If you find a vendor missing or misclassified, that's the easiest contribution to make — submit a PR with the vendor name, the bank-statement variations you've seen, and the correct default classification.
 
-See [START-HERE.md](../../START-HERE.md) for persona-based routing.
+See the [README](../../README.md) for how to load skills into your AI.

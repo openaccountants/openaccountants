@@ -339,7 +339,7 @@ def check_no_deprecated_manifests(errors):
 
 
 def check_llms_full_fresh(errors):
-    """llms-full.txt embeds llms.txt, the index inventory, START-HERE, and
+    """llms-full.txt embeds llms.txt, the index inventory, GOAL.md, and
     QUALITY-TIERS — it drifts silently when any of those change. Regenerate to
     a temp file and compare, mirroring the index.json staleness check."""
     import subprocess
