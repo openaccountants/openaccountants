@@ -2,6 +2,9 @@
 jurisdiction: PT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  IT-IND: pt-income-tax covers self-employed (Category B) income only; no employee IRS return or capital, rental and gains income
+  XB: pt-foreign-source-treaties and pt-nhr-ifici cover residents' foreign income only; no non-residents or residence rules on arrival and departure
 ---
 
 # Portugal: tax pack
