@@ -32,7 +32,7 @@ Every skill is a single Markdown file with YAML frontmatter. **The canonical fro
 
 After the frontmatter, a tax skill follows the deep-tax shape in `docs/skill-template.md`, in this order: who this applies to; rates, bands and thresholds (a table with an official source URL per figure); the base; deadlines and filing; penalties and interest; cross-border points; two worked examples that recompute (each in an `oa-check` block); ask the client first; sources with read dates. US skills add a Circular 230 §10.37 disclosure. Accounting-pack skills (bookkeeping, e-invoicing, financial statements, tax optimisation) keep the general template.
 
-Every published skill ends with the `<!-- openaccountants-cta-block -->` marker followed by a "Talk to an accountant" CTA. The marker makes the stamp idempotent — bulk re-stamps skip files that already have it.
+Every published skill ends with the `<!-- openaccountants-cta-block -->` marker followed by a "Talk to an accountant" CTA. The marker makes the stamp idempotent; bulk re-stamps skip files that already have it.
 
 ## AUDIT FLASH POINT convention
 

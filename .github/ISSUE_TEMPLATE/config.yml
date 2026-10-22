@@ -2,7 +2,7 @@ blank_issues_enabled: true
 contact_links:
   - name: 🌍 Review skills for your jurisdiction (licensed accountants)
     url: https://www.openaccountants.com/for-accountants
-    about: Review Tax skills for your jurisdiction — your name goes on every answer. Most of our 190+ jurisdictions still need a reviewer. No GitHub needed.
+    about: Review tax skills for your jurisdiction: your name goes on every answer. Most of our 190+ jurisdictions still need a reviewer. No GitHub needed.
   - name: 💬 Ask a question
     url: https://github.com/openaccountants/openaccountants/discussions
     about: Usage questions, jurisdiction requests, and general discussion.

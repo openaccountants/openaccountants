@@ -68,7 +68,7 @@ Every skill is in exactly one state — and the repo greps honestly:
 | State | Meaning |
 |---|---|
 | **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from official sources, every figure cited to its source — not yet professionally reviewed |
+| **Source-cited draft** | Written from official sources, every figure cited to its source; not yet professionally reviewed |
 
 The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md). Which number to quote and where it is measured: [docs/COVERAGE.md](docs/COVERAGE.md).
 
@@ -116,7 +116,7 @@ The goal is one complete, verified, reviewed tax pack per jurisdiction: **[GOAL.
 
 Edit **`skills/**` only** — everything else regenerates automatically:
 
-- `packages/`, `agent-skills/<slug>/`, `index.json`, `llms-full.txt` — generated nightly; never edit in a PR
+- `packages/`, `agent-skills/<slug>/`, `index.json`, `llms-full.txt`: generated nightly; never edit in a PR
 - Merged source PRs are credited to you and must be confirmed as ingested before the next platform export
 - Full instructions: [CONTRIBUTING.md](CONTRIBUTING.md) · Layout: [docs/REPO-LAYOUT.md](docs/REPO-LAYOUT.md)
 
