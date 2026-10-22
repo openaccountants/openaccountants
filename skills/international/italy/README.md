@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: it-cross-border
 partial:
-  SC: it-inps-contributions covers the gestione separata only; artigiani and commercianti and the professional funds (casse) are not covered; employee INPS is in italy-payroll
+  SC: "2026 rates are confirmed for Cassa Forense and CNPADC only; Inarcassa and ENPAM rates on 2026 income and the other professional funds are not yet confirmed"
 ---
 
 # Italy: tax pack
@@ -19,7 +19,7 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 | IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
 | VAT | italy-vat-return | source-cited draft |
-| SC, social contributions | it-inps-contributions (gestione separata); employee INPS in italy-payroll | source-cited draft; partial (artigiani, commercianti, casse) |
+| SC, social contributions | it-inps-contributions (gestione separata), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee INPS in italy-payroll | source-cited draft; partial (rates of most professional funds) |
 | PR, payroll withholding | italy-payroll | source-cited draft |
 | TP, transfer pricing | italy-transfer-pricing | source-cited draft |
 | XB, cross-border | it-cross-border (hub), it-impatriati | source-cited draft |
@@ -31,4 +31,5 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 - D.Lgs. 446/1997 (IRAP): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446 (read 2026-06-30, see it-irap)
 - D.P.R. 600/1973 (assessment and withholding): https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600 (read 2026-10-22)
 - L. 190/2014, art. 1, commi 54-89 (regime forfettario, to 31 December 2026): https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-22 (read 2026-10-22)
+- INPS Circolare n. 14 of 9 February 2026 (artigiani and commercianti, 2026): https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf (read 2026-10-22)
 - Agenzia delle Entrate, returns and instructions: https://www.agenziaentrate.gov.it (read 2026-10-22)
