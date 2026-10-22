@@ -87,19 +87,29 @@ def domains_of(guide):
 
 
 def read_pack_readme(pack_dir):
-    """Return (applicable, not_applicable) from a pack README frontmatter, or (None, {})."""
+    """Return (applicable, not_applicable, covered_by) from a pack README frontmatter.
+
+    covered_by maps a domain code to the slug that covers it when the slug
+    tokens would not say so (for example IT-CORP: mt-company-tax)."""
     if not pack_dir:
-        return None, {}
+        return None, {}, {}
     path = os.path.join(REPO_ROOT, pack_dir, "README.md")
     if not os.path.isfile(path):
-        return None, {}
+        return None, {}, {}
     with open(path, encoding="utf-8", errors="replace") as fh:
         text = fh.read()
     if not text.startswith("---"):
-        return None, {}
+        return None, {}, {}
     block = text.split("---", 2)[1] if text.count("---") >= 2 else ""
     applicable = None
     not_applicable = {}
+    covered_by = {}
+    m = re.search(r"^covered_by:\s*\n((?:[ \t]+.*\n?)+)", block, re.MULTILINE)
+    if m:
+        for line in m.group(1).splitlines():
+            km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
+            if km:
+                covered_by[km.group(1)] = km.group(2).strip().strip("'\"")
     m = re.search(r"^applicable:\s*\[([^\]]*)\]", block, re.MULTILINE)
     if m:
         applicable = [x.strip().strip("'\"") for x in m.group(1).split(",") if x.strip()]
@@ -109,7 +119,7 @@ def read_pack_readme(pack_dir):
             km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
             if km:
                 not_applicable[km.group(1)] = km.group(2).strip().strip("'\"")
-    return applicable, not_applicable
+    return applicable, not_applicable, covered_by
 
 
 def is_stale(guide, today):
@@ -146,7 +156,9 @@ def build_report(today=None):
         present = set()
         for g in guides:
             present |= domains_of(g)
-        applicable, not_applicable = read_pack_readme(pack_dir)
+        applicable, not_applicable, covered_by = read_pack_readme(pack_dir)
+        slugs = {g["slug"] for g in guides}
+        present |= {code for code, slug in covered_by.items() if slug in slugs}
         required = set(applicable) if applicable is not None else set(DOMAIN_CODES)
         required -= set(not_applicable)
         missing = sorted(required - present, key=DOMAIN_CODES.index)
