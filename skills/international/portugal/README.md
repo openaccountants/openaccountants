@@ -12,13 +12,15 @@ Calendar tax year for individuals; companies use the calendar year unless they a
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | pt-income-tax (self-employed, Category B); portugal-crypto-tax | source-cited draft |
+| IT-IND, individual income tax | pt-income-tax (self-employed, Category B only, tax year 2025); portugal-crypto-tax. Missing: the employee's annual IRS return (Category A) and investment income (Categories E, F and G other than crypto) | partial: self-employed only |
 | IT-CORP, corporate income tax | pt-corporate-tax | source-cited draft |
 | VAT | pt-vat-return, portugal-vat-return | source-cited draft |
-| SC, social contributions | pt-social-contributions (self-employed) | source-cited draft |
-| PR, payroll withholding | portugal-payroll | source-cited draft |
+| SC, social contributions | pt-social-contributions (self-employed, tax year 2025); employee and employer rates only inside portugal-payroll (tax year 2025) | source-cited draft, 2025 figures |
+| PR, payroll withholding | portugal-payroll (tax year 2025) | source-cited draft, 2025 figures |
 | TP, transfer pricing | pt-transfer-pricing | source-cited draft |
-| XB, cross-border | pt-foreign-source-treaties, pt-nhr-ifici | source-cited draft |
+| XB, cross-border | pt-foreign-source-treaties (foreign income of residents, tax year 2025), pt-nhr-ifici. Missing: non-residents with Portuguese income, and the residence rules for moving to or leaving Portugal | partial: residents only |
+
+The coverage report counts a domain as present when a skill's slug matches it. It does not check scope or tax year, so it shows this pack as complete. It is not: IT-IND and XB have the gaps named above, and SC and PR carry 2025 figures.
 
 Other skills in this folder (bookkeeping, e-invoicing, financial statements, formation, tax optimisation, return assembly) belong to the accounting milestone and are not counted here.
 

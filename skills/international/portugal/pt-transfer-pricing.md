@@ -12,7 +12,7 @@ verified_by: pending
 
 # Portugal transfer pricing (preços de transferência), 2026
 
-This skill sets out how Portugal taxes dealings between related parties: who is related, the arm's length rule, the methods, the documentation a company must hold, the country-by-country report, advance pricing agreements, the penalties, and how double taxation is removed. Figures are for tax periods in 2026. The rules sit in article 63 of the IRC Code (CIRC), in Portaria 268/2021 (the transfer pricing regulation, in force since 27 November 2021) and in Portaria 267/2021 (advance pricing agreements).
+This skill sets out how Portugal taxes dealings between related parties: who is related, the arm's length rule, the methods, the documentation a company must hold, the country-by-country report, advance pricing agreements, the penalties, and how double taxation is removed. Figures are for tax periods in 2026. The rules sit in article 63 of the IRC Code (CIRC), in Portaria 268/2021 (the transfer pricing regulation, in force since 27 November 2021, with its documentation chapter applying to tax periods starting on or after 1 January 2021 under its art. 28; the AT's copy lists no amendments) and in Portaria 267/2021 (advance pricing agreements).
 
 For the IRC rate, the surcharges, losses and the Modelo 22 itself, see pt-corporate-tax. For treaty relief on foreign income of individuals, see pt-foreign-source-treaties.
 
@@ -46,10 +46,10 @@ Indirect holdings are measured under article 483(2) of the Commercial Companies 
 | Related-party holding test | at least 20% of capital or voting rights, direct or indirect | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc63.aspx |
 | Exemption from the transfer pricing documentation file: total annual income (rendimentos) in the period below | EUR 10,000,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_268_2021.pdf (art. 17(3)) |
 | Start-up year: the EUR 10,000,000 test uses the annualised estimated income in the start-of-activity declaration | annualised | 2026 | Portaria 268/2021 art. 17(4) |
-| Exemption for small related dealings even above EUR 10,000,000: value per counterparty not above | EUR 100,000 | 2026 | Portaria 268/2021 art. 17(5) |
+| Exemption for small related dealings even above EUR 10,000,000: value per counterparty, measured at market value, not above | EUR 100,000 | 2026 | Portaria 268/2021 art. 17(5) |
 | Same exemption: value in aggregate not above | EUR 500,000 | 2026 | Portaria 268/2021 art. 17(5) |
 | Exemptions do not cover dealings with residents of listed preferential tax regimes (art. 63-D(1) or (5) LGT) | no exemption | 2026 | Portaria 268/2021 art. 17(6) |
-| SME not exempt and not followed by the Large Taxpayers Unit | simplified file (Dossier simplificado) | 2026 | Portaria 268/2021 art. 19 |
+| SME not exempt and not followed by the Large Taxpayers Unit | simplified file (Dossier simplificado); it must also hold full arm's length evidence for any dealing with a listed preferential regime, business transfers, unlisted shares, restructurings, real estate or intangibles | 2026 | Portaria 268/2021 art. 19(1) and (2) |
 | Comparability studies stay valid, if facts have not changed substantially (financial data updated each year) | 3 years | 2026 | Portaria 268/2021 art. 17(12) |
 | Disclosure of related-party dealings in the annual return (IES) | every IRC taxpayer, yes or no, with detail if yes | 2026 | art. 63(7) CIRC |
 | Country-by-country report: group consolidated revenue in the previous period at or above | EUR 750,000,000 | 2026 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121a.aspx |
@@ -82,9 +82,9 @@ There is no fixed order among the five methods. The taxpayer must use the most a
 
 **Correction by the AT.** The AT may correct taxable profit to what it would have been under market conditions (art. 63(9)).
 
-**Corresponding adjustment.** Where the AT corrects one Portuguese taxpayer, it must make the matching adjustment at the other Portuguese related taxpayer (art. 63(13); Portaria art. 20(1)), within 180 days of the correction becoming final (Portaria art. 23(2)). Where a foreign authority corrects, a matching Portuguese adjustment comes only through a treaty mutual agreement procedure or Lei 120/2019 (art. 63(14); Portaria arts. 20(2) and 21). The AT then adjusts within 120 days of the taxpayer accepting the outcome and refunds within 90 days of the adjustment (Portaria arts. 23(3) and 25).
+**Corresponding adjustment.** Where the AT corrects one Portuguese taxpayer, it must make the matching adjustment at the other Portuguese related taxpayer (art. 63(13); Portaria art. 20(1)), within 180 days of the correction becoming final (Portaria art. 23(2)). Where a foreign authority corrects, art. 63(14) lets the AT make the matching adjustment where a treaty signed by Portugal provides for it; Portaria art. 20(2) adds the dispute procedures of Lei 120/2019. Either way it comes through a mutual agreement procedure (Portaria art. 21). The AT then adjusts within 120 days of the taxpayer accepting the outcome and refunds within 90 days of the adjustment (Portaria arts. 23(3) and 25).
 
-**Advance pricing agreements (art. 138 CIRC; Portaria 267/2021).** A taxpayer may ask the AT to agree in advance the method for its related-party dealings, including services, cost-sharing and head office to PE dealings. It can be unilateral, or bilateral or multilateral through the mutual agreement procedure with a treaty partner (art. 138(2)). The agreement lasts at most 4 years (art. 138(6)), binds the AT while law and facts do not change (art. 138(7)), and cannot be appealed by the taxpayer (art. 138(8)). The AT has 180 days to evaluate a unilateral proposal and 360 days for a bilateral or multilateral one, counted from formal acceptance (Portaria 267/2021 art. 11). The fee is paid within 30 days of acceptance of the proposal (Portaria 267/2021 art. 18(3)).
+**Advance pricing agreements (art. 138 CIRC; Portaria 267/2021).** A taxpayer may ask the AT to agree in advance the method for its related-party dealings, including services, cost-sharing and head office to PE dealings. It can be unilateral, or bilateral or multilateral through the mutual agreement procedure with a treaty partner (art. 138(2)). The agreement lasts at most 4 years (art. 138(6)), binds the AT while law and facts do not change (art. 138(7)), and cannot be appealed by the taxpayer (art. 138(8)). The AT has 180 days to evaluate a unilateral proposal and 360 days for a bilateral or multilateral one, counted from formal acceptance (Portaria 267/2021 art. 11). The fee is paid within 30 days of the notice that the proposal is accepted (Portaria 267/2021 art. 18(3)).
 
 ## Deadlines and filing
 
@@ -107,8 +107,8 @@ A Portuguese entity that is not the ultimate parent must file the country-by-cou
 
 | Failure | Fine | Source |
 |---|---|---|
-| Not presenting the transfer pricing documentation; not filing on time the country-by-country notification or the country-by-country report | EUR 500 to EUR 10,000, plus 5% for each day of delay | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx (RGIT art. 117(6)) |
-| Omissions or inaccuracies in returns or other tax documents that do not amount to fraud | EUR 375 to EUR 22,500; one quarter of those limits where no tax is due | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx (RGIT art. 119(1) and (2)) |
+| Not presenting the transfer pricing documentation; not filing on time the country-by-country notification or the country-by-country report | EUR 500 to EUR 10,000, plus 5% for each day of delay; EUR 1,000 to EUR 20,000 for a company after the doubling in RGIT art. 26(4) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit117.aspx (RGIT art. 117(6)) |
+| Omissions or inaccuracies in returns or other tax documents that do not amount to fraud | EUR 375 to EUR 22,500 (EUR 750 to EUR 45,000 for a company after the doubling in RGIT art. 26(4)); one quarter of those limits where no tax is due | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx (RGIT art. 119(1) and (2)) |
 | Fine limits for a company | the minimum and maximum of each fine are doubled for a legal person | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx (RGIT art. 26(4)) |
 | Compensatory interest on tax assessed late through the taxpayer's fault | counted daily from the return deadline; rate equal to the legal interest rate under art. 559(1) of the Civil Code | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx (LGT art. 35) |
 
@@ -134,8 +134,8 @@ A Portuguese company (calendar-year IRC period starting 1 January 2026) pays its
 
 1. Excess fee: 600,000 minus 420,000 = EUR 180,000. The company adds this to taxable profit in the Modelo 22 (art. 63(8) CIRC).
 2. Taxable profit before the correction is EUR 2,000,000; after, EUR 2,180,000. No losses are brought forward, so taxable income is the same.
-3. Extra IRC at 19%: EUR 34,200. The company is not an SME, so the 15% band does not apply. The correction sits at the top of its profit in any case.
-4. Extra derrama estadual: profit before and after the correction lies between EUR 1,500,000 and EUR 7,500,000, so the whole EUR 180,000 falls in the 3% slice: EUR 5,400.
+3. Extra IRC at 19%: EUR 34,200. The company is not an SME or small mid cap, so the 15% band on the first EUR 50,000 (art. 87(2)) does not apply. The correction sits at the top of its profit in any case.
+4. Extra derrama estadual. The derrama on the correction depends on the company's total taxable profit, because the bands in art. 87-A apply to the part of the whole profit above each threshold. This example assumes taxable profit of EUR 2,000,000 before the correction, so profit before and after lies between EUR 1,500,000 and EUR 7,500,000 and the whole EUR 180,000 falls in the 3% slice: EUR 5,400. With profit of EUR 1,000,000 before the correction, the profit after (EUR 1,180,000) would stay below EUR 1,500,000 and the extra derrama would be nil; with profit of EUR 7,400,000, EUR 100,000 would fall at 3% and EUR 80,000 at 5%.
 5. Total extra tax: EUR 39,600, before derrama municipal, which depends on the municipality.
 
 ```oa-check
@@ -226,4 +226,4 @@ Both headroom figures are zero or more, so the exemption applies. A negative fig
 | RGIT art. 26, fine limits for companies | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit26.aspx | 2026-10-22 |
 | LGT art. 35, compensatory interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-22 |
 
-Not yet confirmed: the APA fee amounts in Portaria 923/99 (not read); which IES annex and table carries the art. 63(7) disclosure for 2026 filings (the current IES instructions were not read); the legal interest rate under art. 559 of the Civil Code that sets compensatory interest; the base of the "5% for each day of delay" in RGIT art. 117(6) (the text does not say 5% of what); the SME size tests in the annex to Decree-Law 372/2007; and the Madeira and Azores rates, which are outside this skill.
+Not yet confirmed: whether the 2026 State Budget law (Orçamento do Estado 2026) touched any rule here (its text was not read; the consolidated CIRC pages read on 2026-10-22 show no 2025 or 2026 change to arts. 63, 87-A, 121-A, 130 or 138, and art. 87 shows Lei 64/2025 as the last change); the APA fee amounts in Portaria 923/99 (not read); which IES annex and table carries the art. 63(7) disclosure for 2026 filings (the current IES instructions were not read); the legal interest rate under art. 559 of the Civil Code that sets compensatory interest; the base of the "5% for each day of delay" in RGIT art. 117(6) (the text does not say 5% of what); the SME size tests in the annex to Decree-Law 372/2007; and the Madeira and Azores rates, which are outside this skill.
