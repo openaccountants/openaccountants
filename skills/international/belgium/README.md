@@ -19,7 +19,7 @@ Calendar income year, named after the following assessment year (income 2026 is 
 | SC, social contributions | be-social-contributions | source-cited draft |
 | PR, payroll withholding | belgium-payroll | source-cited draft |
 | TP, transfer pricing | (missing) | |
-| XB, cross-border | (missing: non-residents, treaties, exit rules for individuals; company exit tax and outbound withholding are in be-corporate-tax) | |
+| XB, cross-border | be-cross-border (hub: residence, inbound regime, individual exit tax from 2026, non-residents); company exit tax also in be-corporate-tax | source-cited draft |
 
 ## Official sources
 
