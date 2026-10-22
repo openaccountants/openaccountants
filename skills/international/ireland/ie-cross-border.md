@@ -29,7 +29,7 @@ A person here for 30 days or less in a tax year is not resident for that year, a
 
 Ireland has no "home" or "centre of interests" test in its domestic rules. Those ideas come in only through a tax treaty tie-breaker (see Cross-border points).
 
-**Election in the year of arrival.** A person who is not resident on days can elect, in writing, to be resident for the year they arrive, if they come intending to be resident the next year and, barring unforeseen circumstances, are. There is no way to withdraw the election (TDM Part 34-00-01).
+**Election in the year of arrival.** A person who is not resident on days can elect, in writing, to be resident for the year they arrive, if they satisfy Revenue that they are here with the intention, and in circumstances, that they will be resident the next year (section 819(3)). There is no way to withdraw the election (TDM Part 34-00-01).
 
 **Ordinary residence.** After three consecutive tax years of residence, a person becomes ordinarily resident from the start of the fourth. After leaving, they stay ordinarily resident for three more tax years. ([Revenue: ordinarily resident](https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx))
 
@@ -57,14 +57,15 @@ Finance Act 2024 changed how it is claimed. For arrivals and departures from 1 J
 |---|---|---|---|
 | Income tax, single person | 20% on the first EUR 44,000, 40% on the balance | 2026 | [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) |
 | Single person tax credit / Employee (PAYE) tax credit | EUR 2,000 each | 2026 | [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) |
-| Non-resident tax credits | Full credits if at least 75% of worldwide income is taxable in Ireland (EU citizens); otherwise a share by ratio of Irish to total income; most others get none | 2026 | [Revenue: non-residents](https://www.revenue.ie/en/jobs-and-pensions/tax-residence/non-residents.aspx) |
+| Non-resident tax credits | EU citizens: full credits if at least 75% of worldwide income is taxable in Ireland, otherwise a share by the ratio of Irish to total income. Citizens of a treaty country: full credits if their only income is Irish, otherwise a share. All others: none | 2026 | [Revenue: non-residents](https://www.revenue.ie/en/jobs-and-pensions/tax-residence/non-residents.aspx) |
 | Ordinarily resident, not resident: other foreign income limit | EUR 3,810 (a cliff: above it, all of it is taxable) | 2026 | [Revenue: ordinarily resident](https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx) |
-| SARP relief | 30% of employment income between the lower threshold and EUR 1,000,000 is disregarded for income tax | Arrivals 2026 to 2030 | [TDM Part 34-00-10](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf) |
-| SARP lower threshold and minimum base salary | EUR 125,000 (EUR 100,000 for 2023 to 2025 arrivals) | Arrivals 2026 to 2030 | [TDM Part 34-00-10](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf) |
+| SARP relief | 30% of employment income between the lower threshold and EUR 1,000,000 is disregarded for income tax | Arrivals 2012 to 2030 | [Finance Act 2025, section 23](https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0023.html); [TDM Part 34-00-10](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf) |
+| SARP lower threshold ("B") and minimum annualised relevant income for each year of claim | EUR 125,000 for 2026 to 2030 arrivals; EUR 100,000 for 2023 to 2025 arrivals; EUR 75,000 for earlier arrivals. In the year of arrival or departure, B is reduced in proportion to the months employed | By year of arrival | [Finance Act 2025, section 23](https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0023.html); [TDM Part 34-00-10](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf), paragraphs 7 and 11 |
+| SARP minimum base salary in the year of arrival | Annualised EUR 125,000, excluding bonuses, commissions, benefits and share-based pay | Arrivals 2026 to 2030 only | [Finance Act 2025, section 23](https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0023.html) (new section 825C(2AB)(d)) |
 | SARP school fees paid tax-free | Up to EUR 5,000 per child per year | 2026 | [TDM Part 34-00-10](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf) |
-| CGT rate, most gains | 33% | 2026 | [Revenue: how to calculate CGT](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) |
+| CGT rate, most gains | 33% for disposals to 6 October 2026; 31% for disposals from 7 October 2026 (development land stays at 33%) | 2026 | [Revenue: how to calculate CGT](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) |
 | CGT annual personal exemption | EUR 1,270 | 2026 | [Revenue: how to calculate CGT](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) |
-| Company exit tax (section 627) | 12.5%; 33% if the exit is part of a transaction to avoid the CGT rate on an actual disposal | Events from 10 October 2018 | [TDM Part 20-02-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-20/20-02-01.pdf); [Revenue: exit tax](https://www.revenue.ie/en/companies-and-charities/anti-beps-measures/exit-tax-provisions.aspx) |
+| Company exit tax (section 627) | 12.5%; the general CGT rate (see the row above) if the exit is part of a transaction to dispose of the asset and its purpose is to get the lower rate | Events from 10 October 2018 | [TDM Part 20-02-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-20/20-02-01.pdf); [Revenue: exit tax](https://www.revenue.ie/en/companies-and-charities/anti-beps-measures/exit-tax-provisions.aspx) |
 | Temporary non-resident CGT (section 29A) | Shareholdings of 5% or more of a company's issued share capital, or worth more than EUR 500,000; non-residence of 5 years of assessment or less | 2026 | [TDM Part 02-03-02](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-03-02.pdf) |
 | Dividend withholding tax (DWT) | 25% | 2026 | [Revenue: DWT](https://www.revenue.ie/en/companies-and-charities/dividend-withholding-tax/index.aspx) |
 | Yearly interest (section 246) | Standard rate of income tax (20% for 2026) | 2026 | [TDM Part 08-03-06](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-08/08-03-06.pdf) |
@@ -93,7 +94,8 @@ Ireland has no exit tax on individuals who leave. The only departure charge on i
 - Worked for that employer abroad for at least six months immediately before.
 - Works in Ireland for at least 12 consecutive months from arrival.
 - Not resident in Ireland in the five tax years before the year of arrival, and resident for each year the relief is claimed.
-- Base salary of at least EUR 125,000 a year for 2026 arrivals. Bonuses, commissions, benefits and share-based pay do not count towards the floor, but they do count in the income the 30% applies to.
+- For 2026 to 2030 arrivals, an annualised base salary of at least EUR 125,000 in the year of arrival. Bonuses, commissions, benefits and share-based pay do not count towards this floor, but they do count in the income the 30% applies to. Arrivals from 2023 to 2025 have no base-salary test; they need annualised relevant income of at least EUR 100,000 in each year of claim.
+- In the year of arrival or departure, the lower threshold is reduced in proportion to the months employed in that year (TDM Part 34-00-10, paragraph 11).
 - Relief runs for up to five consecutive years from the first year of entitlement.
 - The relief is from income tax only. USC and PRSI are charged on the full salary, unless PRSI is relieved under an EU Regulation or a bilateral agreement.
 - SARP cannot be combined with the remittance basis for that employment income, the Foreign Earnings Deduction or Transborder Workers' Relief.
@@ -105,7 +107,7 @@ Ireland has no exit tax on individuals who leave. The only departure charge on i
 
 ## Deadlines and filing
 
-- **Income tax return (Form 11):** 31 October after the tax year. For returns filed through ROS in 2026 (the 2025 return), the date was extended to 18 November 2026. ([Revenue: pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx))
+- **Income tax return (Form 11):** 31 October after the tax year. For the 2025 return, the date is extended to 18 November 2026 where the person both pays and files through ROS. ([Revenue: pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx))
 - **SARP:** the employer certifies the employee on Form SARP 1A within 90 days of arrival. For arrivals from 1 January 2026, a late certification within 180 days is accepted, but then the first year is lost and relief runs for the next four years. A SARP claimant is a chargeable person and must file an annual return. ([TDM Part 34-00-10](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf))
 - **Split-year treatment:** claimed in the income tax return for the year of arrival or departure, or by writing to Revenue through MyEnquiries where the benefit is wanted during the year.
 - **Election to be resident in the year of arrival:** in writing to Revenue.
@@ -117,9 +119,9 @@ Ireland has no exit tax on individuals who leave. The only departure charge on i
 ## Penalties and interest
 
 - **Late income tax return:** a surcharge of 5% of the tax due, up to EUR 12,695, if filed within two months of the deadline; 10%, up to EUR 63,485, after that. ([Revenue: pay and file](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx))
-- **Late corporation tax:** interest at 0.0219% a day on late or short payments. ([Revenue: CT payment and filing](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx))
-- **Deferred exit tax:** simple interest on tax outstanding, payable at the same time as the tax. Deferral ends early if the assets are sold, the company moves outside the EU or EEA, or it misses an instalment. ([TDM Part 20-02-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-20/20-02-01.pdf))
-- **SARP:** an employer who misses the certification deadline costs the employee the relief (arrivals to 2025) or its first year (arrivals from 2026).
+- **Late income tax, corporation tax and CGT:** interest at 0.0219% a day (section 1080 TCA 1997), for each day or part of a day the tax is unpaid. ([Revenue: guidelines for charging interest on late payment](https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf), paragraph 4.2; [Revenue: CT payment and filing](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx))
+- **Deferred exit tax:** simple interest on tax outstanding, payable at the same time as the tax. The rest of the tax and interest falls due at once if the assets are sold, the assets or the company move to a country outside the EU and qualifying EEA states, the company becomes insolvent or goes into liquidation, or an instalment is missed and not paid within 12 months. ([TDM Part 20-02-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-20/20-02-01.pdf))
+- **SARP:** an employer who misses the 90-day certification deadline costs the employee the relief (arrivals to 2025). For arrivals from 2026, certification between 90 and 180 days costs the first year; after 180 days the relief is lost.
 
 ## Cross-border points
 
@@ -141,46 +143,50 @@ Ireland has no exit tax on individuals who leave. The only departure charge on i
 
 ### Example 1: an assignee moves to Dublin in 2026 under SARP
 
-Anna has worked for a US group for three years. It sends her to its Irish subsidiary on 1 February 2026 for three years. She has never been resident in Ireland. Her base salary is EUR 200,000, with no bonus or pension contribution. She is single. The employer certifies Form SARP 1A within 90 days.
+Anna has worked for a US group for three years. It sends her to its Irish subsidiary on 1 February 2026 for three years. She has never been resident in Ireland. Her annual base salary is EUR 240,000, so she earns EUR 220,000 from the Irish employment in the 11 months from February to December 2026, with no bonus or pension contribution. She is single. The employer certifies Form SARP 1A within 90 days.
 
-- She is resident for 2026 (more than 183 days) and meets the SARP conditions. Base salary is above EUR 125,000.
-- Specified amount: (200,000 minus 125,000) times 30% = EUR 22,500. This is disregarded for income tax.
-- Taxable for income tax: 200,000 minus 22,500 = EUR 177,500.
-- Tax: 20% of 44,000 = 8,800. 40% of 133,500 = 53,400. Total 62,200.
-- Less the single person and employee credits of EUR 2,000 each: income tax EUR 58,200.
-- Without SARP the income tax would be EUR 67,200, so SARP saves EUR 9,000 (40% of the 22,500).
-- USC and PRSI are on the full EUR 200,000 (see [ie-usc](ie-usc.md) and [ie-payroll](ie-payroll.md)); they are not computed here.
-- Her pre-arrival employment income for January is ignored under split-year treatment, which she claims in her 2026 return. Simplification: the example treats EUR 200,000 as her Irish employment income for 2026.
+- She is resident for 2026 (more than 183 days) and meets the SARP conditions. Her annual base salary is above EUR 125,000.
+- She is employed for 11 months of 2026, so the lower threshold is reduced: 125,000 times 11/12 = EUR 114,583.33 (TDM Part 34-00-10, paragraph 11).
+- Specified amount: (220,000 minus 114,583.33) times 30% = EUR 31,625. This is disregarded for income tax.
+- Taxable for income tax: 220,000 minus 31,625 = EUR 188,375.
+- Tax: 20% of 44,000 = 8,800. 40% of 144,375 = 57,750. Total 66,550.
+- Less the single person and employee credits of EUR 2,000 each: income tax EUR 62,550.
+- Without SARP the income tax would be EUR 75,200, so SARP saves EUR 12,650 (40% of the 31,625).
+- USC and PRSI are on the full EUR 220,000 (see [ie-usc](ie-usc.md) and [ie-payroll](ie-payroll.md)); they are not computed here.
+- Her January salary, earned abroad before arrival, is outside Irish tax under split-year treatment, which she claims in her 2026 return.
 
 ```oa-check
-name: SARP 2026 arrival, salary EUR 200,000, single
+name: SARP 2026 arrival on 1 February, annual salary EUR 240,000, single
 inputs:
-  salary: 200000
+  irish_income: 220000
   lower_threshold: 125000
+  months: 11
   upper_threshold: 1000000
   band: 44000
   credits: 4000
 steps:
-  - specified_amount: (min(salary, upper_threshold) - lower_threshold) * 0.30
-  - taxable: salary - specified_amount
+  - threshold_apportioned: lower_threshold * months / 12
+  - specified_amount: (min(irish_income, upper_threshold) - threshold_apportioned) * 0.30
+  - taxable: irish_income - specified_amount
   - tax_with_sarp: band * 0.20 + (taxable - band) * 0.40 - credits
-  - tax_without_sarp: band * 0.20 + (salary - band) * 0.40 - credits
+  - tax_without_sarp: band * 0.20 + (irish_income - band) * 0.40 - credits
   - saving: tax_without_sarp - tax_with_sarp
 expected:
-  specified_amount: 22500.00
-  taxable: 177500.00
-  tax_with_sarp: 58200.00
-  tax_without_sarp: 67200.00
-  saving: 9000.00
+  threshold_apportioned: 114583.33
+  specified_amount: 31625.00
+  taxable: 188375.00
+  tax_with_sarp: 62550.00
+  tax_without_sarp: 75200.00
+  saving: 12650.00
 ```
 
 ### Example 2: an Irish company moves its residence to the Netherlands
 
-An Irish-resident trading company moves its central management to the Netherlands and becomes Dutch resident under the treaty. On the day before it ceases to be resident it holds software and a brand. The deemed disposal at market value gives a gain of EUR 1,900,000 on one asset and a loss of EUR 400,000 on another, a net gain of EUR 1,500,000 (figures from the example in TDM Part 20-02-01). No anti-avoidance purpose applies, so the rate is 12.5%.
+An Irish-resident trading company moves its central management to the Netherlands and becomes Dutch resident under the treaty. On the day before it ceases to be resident it holds software and a brand. The deemed disposal at market value gives a gain of EUR 1,900,000 on one asset and a loss of EUR 400,000 on another, a net gain of EUR 1,500,000 (figures adapted from Example 1 in TDM Part 20-02-01, where the same net gain arises on a branch transfer). No anti-avoidance purpose applies, so the rate is 12.5%.
 
 - Exit tax: 1,500,000 times 12.5% = EUR 187,500.
 - The assets go to an EU state, so the company can elect in its return to pay in five equal instalments: EUR 37,500 a year, the first due with the corporation tax for the period (day 23 of the ninth month after the exit), plus simple interest on the deferred tax.
-- It files an annual statement within 21 days of the end of each of the next five calendar years. If it sells the assets or moves outside the EU or EEA, the rest falls due at once.
+- It files an annual statement within 21 days of the end of each of the next five calendar years. If it sells the assets, moves them or itself outside the EU and qualifying EEA states, becomes insolvent, or misses an instalment for more than 12 months, the rest falls due at once.
 
 ```oa-check
 name: Company migration, net gain EUR 1,500,000, 12.5% exit tax over five instalments
@@ -220,6 +226,7 @@ Read on 2026-10-22:
 - Revenue, split-year treatment, departure: https://www.revenue.ie/en/life-events-and-personal-circumstances/moving-to-or-from-ireland/leaving-ireland/split-year-treatment-in-your-year-of-departure.aspx
 - TDM Part 34-00-01, residence (last updated February 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf
 - TDM Part 34-00-11, split year residence (reviewed September 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-11.pdf
+- Finance Act 2025, section 23 (amends section 825C for 2026 to 2030 arrivals): https://www.irishstatutebook.ie/2025/en/act/pub/0018/sec0023.html
 - TDM Part 34-00-10, SARP (last updated March 2026): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-10.pdf
 - Revenue, SARP conditions: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/special-assignee-relief-programme/what-are-the-conditions-to-qualify.aspx
 - Revenue, tax rates, bands and reliefs: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx
@@ -236,7 +243,8 @@ Read on 2026-10-22:
 - TDM Part 45-01-04a, non-resident landlord withholding tax (updated October 2025): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-45/45-01-04a.pdf
 - TDM Part 42-04-01, PAYE Exclusion Order (last updated July 2026): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-01.pdf
 - Revenue, pay and file: https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx
+- Revenue, guidelines for charging interest on late payment (updated July 2024): https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf
 - Revenue, CT payment and filing: https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx
 - Department of Social Protection, PRSI for those working abroad (updated 7 January 2026): https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-prsi-for-those-working-abroad-and-the-special-prsi-collection-system/
 
-Not yet confirmed: the daily interest rate on late income tax and on deferred exit tax (the Revenue pages read state only that interest is charged; the 0.0219% figure above is confirmed for corporation tax only); the treaty tie-breaker order, which is the OECD model wording and must be read in the specific treaty; Revenue's tax rates page notes Budget 2027 changes announced in October 2026, which do not affect 2026 figures but will change 2027 bands and credits.
+Not yet confirmed: the interest rate on deferred exit tax (TDM Part 20-02-01 says only that simple interest is charged); the 31% CGT rate from 7 October 2026 is stated by Revenue but comes from Budget 2027 and the Finance Bill 2026 was not yet enacted when read, so the exit tax anti-avoidance rate for events from that date follows whatever is enacted; the treaty tie-breaker order, which is the OECD model wording and must be read in the specific treaty; Revenue's tax rates page notes Budget 2027 changes announced on 6 October 2026, which do not affect 2026 bands and credits.
