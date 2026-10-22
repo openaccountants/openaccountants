@@ -61,14 +61,14 @@ Diplomats and other Belgian state officials posted abroad are residents by speci
 | Personal income tax scale (residents, and non-residents via art. 243 and 243/1) | 25% to EUR 16,720; 40% to EUR 29,510; 45% to EUR 51,070; 50% above | Income 2026 | [Art. 130 WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96) |
 | Non-resident surcharge instead of municipal tax | 7 additional centimes (7% of the federal tax). The statute says 6, raised to 7 by royal decree | Income 2026 | [Art. 245 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182fc9a7-f7c6-46ef-8da9-239fd2378423); [art. 80 KB/WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/ff25ff26-ce91-4678-bdb5-5a1dee98e899) |
 | 75% rule for non-residents | Belgian taxable professional income at least 75% of total worldwide professional income gives resident-style allowances and deductions | Income 2026 | [Art. 243/1 WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a32b08a8-163e-4d48-b76f-fc6b40a89daf) |
-| Exit tax on financial assets (individuals leaving) | 10% of the latent gain since 31 December 2025; 1.25% to 10% if a substantial interest | Departures from 1 January 2026 | [Circular 2026/C/74, nos. 153 to 156](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
-| Capital gains basic exemption | EUR 10,000 a year (indexed amount for assessment year 2027); EUR 1 million once for a substantial interest | Income 2026 | [Circular 2026/C/74, nos. 92 and 155](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
+| Exit tax on financial assets (individuals leaving) | 10% of the latent gain since 31 December 2025; 1.25% to 10% if a substantial interest (at least 20% of the rights in the company, held directly) | Departures from 1 January 2026 | [Circular 2026/C/74, nos. 153 to 156](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
+| Capital gains basic exemption | EUR 10,000 a year (indexed amount for assessment year 2027), reduced pro rata by months when the taxable period is not a full calendar year, as in the year of departure; EUR 1 million for a substantial interest, available over 5 consecutive taxable periods and also reduced pro rata | Income 2026 | [Art. 129/1 WIB 92; Circular 2026/C/74, nos. 51, 92, 99 and 155](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
 | Company moving its seat or main establishment abroad | Treated as a liquidation (art. 208 and 209 apply); corporate tax at 25% (20% on the first EUR 100,000 for small companies) | Income 2026 | [Art. 210, §1, 4° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a3d38979-9797-4133-b830-bf716b9625de); [art. 215 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/3fd24be9-c978-47d0-ad39-5157070d42b1) |
 | Company exit charge, EU/EEA move: spread payment | One fifth within two months of the assessment notice, the rest in four equal yearly instalments | Income 2026 | [Art. 413/1, §2 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/baa69120-644c-46a1-aaab-697645ea9501) |
 | Withholding tax (roerende voorheffing) on dividends, interest, royalties | 30% general rate | Income 2026 | [Art. 269, §1, 1° WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
 | Withholding: copyright income | 15% on the first band (EUR 77,220 indexed) | Income 2026 | [Art. 269, §1, 4° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
-| Withholding: dividends of small companies on new shares (VVPR-bis) | 20% or 18% depending on the financial year | Income 2026 | [Art. 269, §2 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
-| Withholding: capital gains on financial assets (art. 90, 9°, c)) | 10% | From 1 January 2026 | [Art. 269, §1, 5° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
+| Withholding: dividends of small companies on new shares (VVPR-bis) | 20% for the second financial year after a contribution made by 31 December 2025; 18% for the third and later financial years (the 18% rate applies to dividends allocated or paid from 1 July 2026, programme law of 30 May 2026) | Income 2026 | [Art. 269, §2 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
+| Withholding: capital gains on financial assets (art. 90, 9°, c)) | 10%, withheld only when the recipient is a Belgian resident; never on the exit tax gain. The capital gains tax does not apply in the non-resident tax (Circular 2026/C/94) | From 1 January 2026 | [Art. 269, §1, 5° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
 
 ## The taxable base
 
@@ -87,9 +87,9 @@ Diplomats and other Belgian state officials posted abroad are residents by speci
 4. Directors who founded the company or own 30% or more of its capital cannot use BBIB.
 5. The tax administration must approve the employer's application.
 
-**Exit tax on financial assets (from 1 January 2026).** When a resident who owns financial assets stops being a Belgian resident by moving their home and seat of wealth abroad, the latent gain on those assets is taxed as if they had been sold (art. 92, §2, 2° WIB 92). The "price" is the value of each asset on the day the person leaves. Gains that arose before 1 January 2026 are exempt: for assets bought before that date, the gain is measured from the value on 31 December 2025 (the "snapshot"). The rate is 10%, or the substantial-interest rate of 1.25% to 10% if the person held a substantial interest (art. 90, 9°, b)). The basic exemption of EUR 10,000 (or the EUR 1 million substantial-interest exemption) applies. A usufructuary who leaves does not trigger a gain for the bare owner. A person who becomes resident takes the assets at their value on the first day of residence (art. 102, §3 WIB 92), so pre-arrival gains are not taxed.
+**Exit tax on financial assets (from 1 January 2026).** When a resident who owns financial assets stops being a Belgian resident by moving their home and seat of wealth abroad, the latent gain on those assets is taxed as if they had been sold (art. 92, §2, 2° WIB 92). The "price" is the value of each asset on the day the person leaves. Gains that arose before 1 January 2026 are exempt: for assets bought before that date, the gain is measured from the value on 31 December 2025 (the "snapshot"). The rate is 10%, or the substantial-interest rate of 1.25% to 10% if the person held a substantial interest of at least 20% (art. 90, 9°, b)). The basic exemption of EUR 10,000 (or the EUR 1 million substantial-interest exemption) applies, reduced pro rata by months because the resident taxable period ends on departure (art. 129/1 WIB 92; Circular 2026/C/74, nos. 99 and 155). Each calendar month whose 15th day falls in the resident period counts as a full month. No withholding tax is due on the exit gain, so it must be reported on the resident return for the year of departure (Circular 2026/C/74, no. 120). A usufructuary who leaves does not trigger a gain for the bare owner. A person who becomes resident takes the assets at their value on the first day of residence (art. 102, §3 WIB 92), so pre-arrival gains are not taxed. Exception: a person who returns within 24 months of leaving, so that the deferred exit tax lapses, keeps the original acquisition value (Circular 2026/C/74, nos. 150 and 151).
 
-**Company exit.** Moving a Belgian company's main establishment or seat of management abroad is treated as a liquidation (art. 210, §1, 4° WIB 92). Latent gains and untaxed reserves become taxable, and the part of the net assets treated as a distributed dividend falls under art. 208 and 209. A Belgian establishment of a foreign company that moves assets out is taxed on the gain (art. 228, §2, 3°bis). The 25% corporate rate applies (art. 215). For a move to an EU or EEA state with a recovery assistance agreement, the tax on those gains can be paid in five yearly parts (art. 413/1). See `be-corporate-tax` once merged for the computation.
+**Company exit.** Moving a Belgian company's main establishment or seat of management abroad is treated as a liquidation (art. 210, §1, 4° WIB 92). Latent gains and untaxed reserves become taxable, and the part of the net assets treated as a distributed dividend falls under art. 208 and 209. For operations from 29 July 2025, that deemed dividend is also a taxable dividend for the shareholders, to the extent it relates to assets no longer used or kept in Belgium (art. 18, first paragraph, 2°quater WIB 92, programme law of 18 July 2025). If the company does not support it with individual forms (fiches), the separate assessment of art. 219 applies. For operations from 29 July 2025 to 31 December 2025, the administration does not require the forms and does not apply art. 219, but the dividend stays taxable for the shareholder (Circular 2026/C/70). A Belgian establishment of a foreign company that moves assets out is taxed on the gain (art. 228, §2, 3°bis). The 25% corporate rate applies (art. 215). For a move to an EU or EEA state with a recovery assistance agreement, the tax on those gains can be paid in five yearly parts (art. 413/1). See `be-corporate-tax` once merged for the computation.
 
 ## Deadlines and filing
 
@@ -102,9 +102,9 @@ Diplomats and other Belgian state officials posted abroad are residents by speci
 | Change of employer under the regime | New employer files a new application | Within three months of the new start | Art. 32/1, §9 WIB 92 |
 | Employer reporting | Gross pay and the two kinds of cost reimbursements on the 281.10 form | With the annual tax forms | Art. 32/1, §10 WIB 92 |
 | Leaving | Deregister at the commune; file the resident return for the resident part of the year and, if there is Belgian income after departure, a BNI return | In the normal filing season for the income year | Art. 227 to 248 WIB 92 |
-| Non-resident return (BNI) for income 2025 | File through MyMinfin | See "Not yet confirmed" in Sources | |
+| Non-resident return (BNI) for income 2025 | File through MyMinfin or on the paper form | Within the period printed on the form, which must be at least one month from sending the form or making the electronic return available. The date for income 2025 is under "Not yet confirmed" in Sources | [Art. 308, §1, second paragraph WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182821e5-122a-4948-867e-297c16371fe1) |
 | Exit tax on financial assets, move to EU/EEA or a treaty state with information exchange and recovery assistance | Automatic payment deferral. Send a yearly attestation confirming the assets were not sold or pledged | Yearly; the deferral and the tax lapse 24 months after departure if the assets are not sold in that time or the person returns within 24 months | [Art. 413/1, §6 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/baa69120-644c-46a1-aaab-697645ea9501) |
-| Exit tax, move elsewhere | Deferral only on request and only with adequate security | Request with the assessment | Art. 413/1, §6, third paragraph |
+| Exit tax, move elsewhere | Deferral only on request and only with adequate security. It ends if the assets are sold or pledged | Art. 413/1, §6 sets no time limit for the request | Art. 413/1, §6, third and fourth paragraphs |
 | Company exit charge, EU/EEA | Choose spread payment by express request to the collector, using the official form | Within two months of the assessment notice; then a signed form each year by each due date | [Art. 413/1, §§2 and 4](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/baa69120-644c-46a1-aaab-697645ea9501) |
 
 **When the spread payment ends early (company).** The balance falls due at the end of the month after: a move of tax residence outside the EU/EEA, a sale or a move outside the EU/EEA of all or part of the assets, dissolution (except tax-neutral mergers and divisions), insolvency, a missed instalment, a missing yearly form, or failure to provide security when asked (art. 413/1, §3).
@@ -112,9 +112,9 @@ Diplomats and other Belgian state officials posted abroad are residents by speci
 ## Penalties and interest
 
 - **Tax increase (art. 444 WIB 92).** Not filing, filing late, or filing an incomplete or wrong return adds 10% to 200% of the tax on the undeclared or late income, on a scale set by royal decree. No increase is charged for a first offence in good faith, and good faith is presumed for a first offence. The increase applies only if the undeclared or late income reaches EUR 2,500, and tax plus increase cannot exceed the undeclared income itself. ([Art. 444 WIB 92, income 2026](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0))
-- **Inbound regime abuse.** A wrong statement on the 281.10 form or a regime used after the conditions stopped (for example pay falling under the threshold) ends the regime (art. 32/1, §4). The excess allowance becomes taxable pay, with interest and possible increases.
-- **Late payment interest (art. 414 WIB 92)** runs on tax paid late. The 2026 rate is listed under "Not yet confirmed".
-- **Administrative fines (art. 445 WIB 92)** also exist for late or missing returns. The amounts are listed under "Not yet confirmed".
+- **Inbound regime ends.** If, during the regime, the employer conditions or the pay threshold are no longer met, the regime ends (art. 32/1, §4 WIB 92). Only reimbursements within the limits of art. 32/1, §§5 and 6 are the employer's own costs; anything above them is not covered by the regime.
+- **Late payment interest (art. 414 WIB 92)** runs on tax paid late, per calendar month, on the amount still due rounded down to a multiple of EUR 10. It is not charged if it is less than EUR 5 a month. The rate for calendar year 2026 is 4% (art. 2, §2/1 of the law of 5 May 1865; notice in the Belgian Official Gazette of 1 July 2025, [Numac 2025004733](https://www.ejustice.just.fgov.be/cgi/article.pl?language=nl&sum_date=2025-07-01&lg_txt=n&numac_search=2025004733)). The notice of 2 July 2026 also sets 4% for 2027.
+- **Administrative fines (art. 445, §1 WIB 92).** EUR 50 to EUR 1,250 for each breach of the Code, including late or missing returns, on a scale set by royal decree. ([Art. 445 WIB 92, income 2026](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f))
 
 ## Cross-border points
 
@@ -168,29 +168,33 @@ He is a Belgian resident from 1 March 2026 and taxed on worldwide income from th
 Facts: a Belgian resident moves her home and seat of wealth to Lisbon, Portugal, on 30 September 2026. She owns a listed share portfolio (no substantial interest) bought years ago. It was worth EUR 400,000 on 31 December 2025 and EUR 460,000 on the day she leaves. She realised no other capital gains in 2026.
 
 1. Deemed gain: EUR 460,000 - EUR 400,000 = EUR 60,000. The gain before 2026 is exempt by the 31 December 2025 snapshot.
-2. Basic exemption: EUR 10,000 (assessment year 2027 amount).
-3. Taxable gain: EUR 50,000.
-4. Exit tax at 10%: EUR 5,000.
-5. Portugal is an EU member state, so payment is deferred automatically (art. 413/1, §6). She must send the yearly attestation. If she does not sell or pledge the shares in the 24 months after 30 September 2026, or returns to Belgium within 24 months, the obligation lapses. If she sells some of them within the 24 months, the deferral ends for the tax on those shares.
+2. Months as a resident in 2026: January to September = 9 (15 September falls in the resident period, so September counts).
+3. Basic exemption: EUR 10,000 x 9 / 12 = EUR 7,500 (art. 129/1 WIB 92; Circular 2026/C/74, no. 99).
+4. Taxable gain: EUR 60,000 - EUR 7,500 = EUR 52,500.
+5. Exit tax at 10%: EUR 5,250. It goes on her 2026 resident return; no withholding tax is deducted from it.
+6. Portugal is an EU member state, so payment is deferred automatically (art. 413/1, §6). She must send the yearly attestation. If she does not sell or pledge the shares in the 24 months after 30 September 2026, or returns to Belgium within 24 months, the obligation lapses. If she sells some of them within the 24 months, the deferral ends for the tax on those shares.
 
 ```oa-check
 name: Exit tax on financial assets, departure 30 September 2026
 inputs:
   value_at_departure: 460000
   value_31_dec_2025: 400000
-  basic_exemption: 10000
+  full_year_exemption: 10000
+  resident_months: 9
   rate: 0.10
 steps:
   - deemed_gain: value_at_departure - value_31_dec_2025
+  - basic_exemption: full_year_exemption * resident_months / 12
   - taxable_gain: max(deemed_gain - basic_exemption, 0)
   - exit_tax: taxable_gain * rate
 expected:
   deemed_gain: 60000
-  taxable_gain: 50000
-  exit_tax: 5000
+  basic_exemption: 7500
+  taxable_gain: 52500
+  exit_tax: 5250
 ```
 
-Edge cases to check: Circular 2026/C/74 (no. 51) has a rule for a taxable period that is not a full calendar year. Read it before using the full EUR 10,000 in a year of departure. If she had a substantial interest, the 1.25% to 10% scale and the EUR 1 million exemption would apply instead.
+Edge cases to check: the pro rata rounds down to the lower multiple of EUR 10 where the result is not a round figure (Circular 2026/C/74, no. 100, example 5). If she had a substantial interest, the 1.25% to 10% scale and the EUR 1 million exemption, also reduced pro rata, would apply instead (no. 51).
 
 ## Ask the client first
 
@@ -220,7 +224,13 @@ All read on 2026-10-22.
 - Fisconetplus, art. 215 WIB 92 (income 2026), corporate tax rate: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/3fd24be9-c978-47d0-ad39-5157070d42b1
 - Fisconetplus, art. 269 WIB 92 (income 2026), withholding tax rates: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac
 - Fisconetplus, art. 444 WIB 92 (income 2026), tax increases: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0
+- Fisconetplus, art. 445 WIB 92 (income 2026), administrative fines: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f
+- Fisconetplus, art. 308 WIB 92 (income 2026), return filing periods: https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182821e5-122a-4948-867e-297c16371fe1
+- Fisconetplus, law of 5 May 1865 on interest-bearing loans, art. 2, §2/1, with the yearly rates (4% for 2026 and 2027): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/da7e0caf-3428-43aa-ab80-30410a15beca
+- Belgian Official Gazette, notice of 1 July 2025 setting the 2026 rate at 4% (Numac 2025004733): https://www.ejustice.just.fgov.be/cgi/article.pl?language=nl&sum_date=2025-07-01&lg_txt=n&numac_search=2025004733
+- FPS Finance, Circular 2026/C/70 on the separate assessment for the exit tax dividend of art. 18, first paragraph, 2°quater WIB 92 (30 June 2026): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/09089595-7dba-4d67-9ea6-2a65554e5efc
+- FPS Finance, Circular 2026/C/94 on withholding tax on capital gains on financial assets (20 October 2026): https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a64fb047-7cc0-4c60-81ca-35a4ab745e55
 - Regulation (EC) No 883/2004, consolidated text, art. 12 and 13: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731
 - Justel, list of 2025 and 2026 laws amending the WIB 92: https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=nl&la=N&cn=1992041032&table_name=wet
 
-Not yet confirmed: the filing deadline for the 2026 non-resident return for income 2025 (FPS Finance pages at fin.belgium.be were behind a human-verification check and could not be read; secondary references give 20 November 2026); the 2026 late payment interest rate under art. 414 WIB 92; the art. 445 administrative fine amounts; the tax-free amount under art. 131 for income 2026 used for qualifying non-residents; the conditions of the domestic withholding exemptions for EU parent companies and associated companies (KB/WIB 92); whether the EUR 10,000 exit tax exemption is reduced in a year of departure (Circular 2026/C/74, no. 51); whether municipal surcharges apply to the exit tax in the year of departure; the RSZ/ONSS treatment of the 35% inbound cost allowance.
+Not yet confirmed: the filing date printed on the 2026 non-resident return for income 2025 (art. 308 WIB 92 leaves the date to the form; FPS Finance pages at fin.belgium.be were behind a human-verification check and could not be read, and the form model in the royal decree of 22 June 2026 does not print it; secondary references give 20 November 2026); the tax-free amount under art. 131 for income 2026 used for qualifying non-residents; the conditions of the domestic withholding exemptions for EU parent companies and associated companies (KB/WIB 92); whether municipal surcharges apply to the exit tax in the year of departure; the RSZ/ONSS treatment of the 35% inbound cost allowance.
