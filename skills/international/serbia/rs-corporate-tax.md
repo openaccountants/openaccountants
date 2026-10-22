@@ -16,7 +16,7 @@ Source-cited draft: not reviewed by an accountant, not for filing.
 
 The statute is the Zakon o porezu na dobit pravnih lica (ZPDPL), Službeni glasnik RS 25/2001 with amendments up to 80/2026. The Ministry of Finance publishes the Official Gazette's unofficial consolidated text. Article numbers below refer to it.
 
-**Read this first: the 2026 amendment.** Law 80/2026 entered into force on 8 September 2026. Most of it applies only from the day Serbia joins the EU. A few articles apply from 1 January 2027 and others from 1 January 2028 (Article 23 of the amending law). None of it changes tax year 2026. This skill uses the text in force before 80/2026 (the version with amendments up to 94/2024) for 2026. It notes where the newer text differs.
+**Read this first: the 2026 amendment.** Law 80/2026 entered into force on 8 September 2026. Most of it applies only from the day Serbia joins the EU. A few articles apply from 1 January 2027 and others from 1 January 2028 (Article 23 of the amending law). None of it changes the rates, rules or deadlines for tax year 2026. The articles that apply from 1 January 2027 repeal the 1% withholding on secondary raw materials and waste (amending law Art. 5), the concession-related exemptions in ZPDPL Articles 25a(3) and 30a (Arts. 2 and 3) and the Article 50j start-up credit (Art. 16). The law does not say in so many words whether the repeal of Articles 25a(3) and 30a also reaches a 2026 tax balance filed in 2027; check if a concession transfer arises. This skill uses the text in force before 80/2026 (the version with amendments up to 94/2024) for 2026. It notes where the newer text differs.
 
 See also: [serbia-income-tax](serbia-income-tax.md) (individuals, entrepreneurs, paušalci), [serbia-vat](serbia-vat.md), [serbia-payroll](serbia-payroll.md), [serbia-social-contributions](serbia-social-contributions.md), [how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide](how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md).
 
@@ -43,13 +43,13 @@ See also: [serbia-income-tax](serbia-income-tax.md) (individuals, entrepreneurs,
 | Withholding on payments for secondary raw materials and waste | 1% | 2026 only; repealed from 1 January 2027 | ZPDPL Art. 40 (2024 text); amending law 80/2026 Arts. 5 and 23 |
 | Loss carry-forward | 5 years | 2026 | ZPDPL Art. 32 |
 | Tax consolidation ownership test | at least 75% direct or indirect control, all members resident | 2026 | ZPDPL Art. 55 |
-| Thin capitalisation: related-party debt | 4 × equity (10 × for banks and financial leasing companies) | 2026 | ZPDPL Art. 62 (2024 text) |
+| Thin capitalisation: related-party debt | interest deductible on related-party debt up to 4 × equity (10 × for banks and financial leasing companies) | 2026 | ZPDPL Art. 62 (2024 text) |
 | Non-profit exemption threshold | surplus up to RSD 400,000 | 2026 | ZPDPL Art. 44 |
 | Large investment tax holiday | 10 years, investment over RSD 1 billion and at least 100 new permanent employees | 2026 (repealed from 2028; see Article 22 grandfathering) | ZPDPL Art. 50a (2024 text); 80/2026 Arts. 22 and 23 |
 | IP income exemption | 80% of qualifying income | 2026 | ZPDPL Art. 25b |
 | Country-by-country report threshold | consolidated group revenue at least EUR 750 million | 2026 | ZPDPL Art. 61v |
 | Surcharges, local or trade tax on profit, small-company rate, minimum tax | None in the ZPDPL. Article 39 sets one rate. | 2026 | ZPDPL Art. 39 |
-| Pillar Two | No global minimum tax rules found in the ZPDPL text read on 2026-10-22. See "Not yet confirmed". | 2026 | ZPDPL consolidated text |
+| Pillar Two | No global minimum tax rules in the ZPDPL. A separate draft Law on Global Minimum Tax on Profit went to public consultation from 1 to 21 June 2026 (Government conclusion of 28 May 2026); adoption not confirmed. | 2026 | ZPDPL consolidated text |
 
 ## The taxable base
 
@@ -58,6 +58,7 @@ See also: [serbia-income-tax](serbia-income-tax.md) (individuals, entrepreneurs,
 **Main add-backs.** Article 7a lists costs that are never deductible:
 
 - costs that cannot be documented;
+- write-downs of a receivable from a person the company also owes money to, up to that debt;
 - gifts to political organisations, and gifts to related parties;
 - interest on late payment of taxes, contributions and other public levies;
 - enforcement and misdemeanour procedure costs;
@@ -97,7 +98,7 @@ Declining balance uses cost in year one and the written-down value after that. I
 - A gain on selling real estate, IP rights, shares and securities, and units in investment funds is part of taxable profit.
 - A capital loss can only be set off against capital gains. A loss left over carries forward against future capital gains for 5 years (Article 30).
 
-**Interest limitation in 2026.** The 2026 rule is thin capitalisation (Article 62, 2024 text). Interest and related costs on a loan from a related party are deductible only up to four times the company's equity. For banks and financial leasing companies the limit is ten times equity. Equity is the assets that earn income, less the debts linked to them, averaged over 1 January and 31 December. The interest must also be at arm's length (Articles 60 and 61). The Ministry publishes an annual rulebook of interest rates treated as arm's length.
+**Interest limitation in 2026.** The 2026 rule is thin capitalisation (Article 62, 2024 text). Interest and related costs on loans from related parties are deductible only on the part of the related-party debt that does not exceed four times the company's equity. For banks and financial leasing companies the limit is ten times equity. Equity is the assets that earn income, less the debts linked to them, averaged over 1 January and 31 December. The interest must also be at arm's length (Articles 60 and 61). The Ministry publishes an annual rulebook of interest rates treated as arm's length.
 
 The 80/2026 law replaces thin capitalisation with a 30% of EBITDA cap (EUR 3 million safe harbour, 3-year carry-forward; Article 62a). That rule applies only from EU accession.
 
@@ -139,7 +140,7 @@ The 80/2026 law replaces thin capitalisation with a 30% of EBITDA cap (EUR 3 mil
 
 The penalties and interest come from the Zakon o poreskom postupku i poreskoj administraciji (ZPPPA, Tax Procedure and Tax Administration Law). The penalties below are the amounts for legal entities.
 
-- **Late-payment interest (ZPPPA Article 75).** The rate is the National Bank of Serbia's annual reference rate plus 10 percentage points. It is simple interest on actual days over a 365 or 366 day year, running from the day after the due date. Unpaid monthly advances attract the same interest (ZPDPL Article 67). Interest on late tax is not deductible (ZPDPL Article 7a).
+- **Late-payment interest (ZPPPA Article 75).** The rate is the National Bank of Serbia's annual reference (key policy) rate plus 10 percentage points. The key policy rate was 5.75% when read on 2026-10-22 (held at 5.75% on 10 September 2026 and again on 8 October 2026), so late-payment interest is 15.75% a year until the NBS changes its rate. Each change of rate starts a new calculation period. It is simple interest on actual days over a 365 or 366 day year, running from the day after the due date. Unpaid monthly advances attract the same interest (ZPDPL Article 67). Interest on late tax is not deductible (ZPDPL Article 7a).
 - **Return not filed and tax not calculated or paid.** The fine is 30% to 100% of the tax due, and at least RSD 500,000 (ZPPPA Article 177(1)).
 - **Return not filed but tax paid on time.** The fine is RSD 100,000 to 2,000,000 (Article 177(5)).
 - **Return filed late and tax not paid on time.** Fixed fines depend on the tax due:
@@ -154,6 +155,7 @@ The penalties and interest come from the Zakon o poreskom postupku i poreskoj ad
   If the return is filed late but the tax is paid on time, the fine is RSD 100,000 (Article 177(8) and (9)).
 - **Return filed on time and tax not paid on time.** The fine is RSD 20,000 to 250,000 on the same scale (Article 177(10)).
 - **Under-declaration or incorrect data.** The fine is 30% to 40% of the tax difference, and at least RSD 200,000. If the difference is up to 5% of the correct tax, the fine is RSD 100,000 (ZPPPA Article 178).
+- **Other cases found in a tax audit (Article 177(2) to (4)).** Return not filed and tax not calculated: 20% to 65%, at least RSD 300,000. Return not filed, tax calculated but not paid: 20% to 75%, at least RSD 400,000. Return filed but tax not paid: 10% to 50%, at least RSD 250,000.
 - **Responsible person.** The responsible person in the company is fined separately, usually RSD 10,000 to 100,000.
 
 ## Cross-border points
@@ -163,7 +165,7 @@ The penalties and interest come from the Zakon o poreskom postupku i poreskoj ad
 - dividends and profit shares;
 - royalties;
 - interest;
-- rent for property in Serbia;
+- rent for immovable and movable property in Serbia;
 - market research, accounting, audit, legal and business consulting services, wherever they are performed.
 
 Performers' and sportsmen's fees are also covered if they are not taxed as an individual's income.
@@ -282,6 +284,8 @@ expected:
 | Tax Administration: corporate income tax law page (lists amendments up to 80/26) | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/zakon-pdp/306/zakon-o-porezu-na-dobit-pravnih-lica.html | 2026-10-22 |
 | Tax Administration: Rulebook on the content of the corporate income tax return (Sl. glasnik 30/15 to 21/25) | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/6861/pravilnik-o-sadrzaju-poreske-prijave-za-obracun-poreza-na-dobit-pravnih-lica.html | 2026-10-22 |
 | Tax Administration: corporate income tax secondary legislation list (arm's length interest rate rulebooks, preferential jurisdictions list, transfer pricing rulebook) | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp.html | 2026-10-22 |
+| National Bank of Serbia: key policy rate (home page rate panel and the 10 September 2026 decision) | https://www.nbs.rs/en/indeks/ ; https://nbs.rs/en/scripts/showcontent/index.html?id=21715 | 2026-10-22 |
+| Government of Serbia conclusion of 28 May 2026 opening public consultation on the draft Law on Global Minimum Tax on Profit (hosted by the Ministry of Finance) | https://www.mfin.gov.rs//upload/media/thb1x7_6a198d07e3278.pdf | 2026-10-22 |
 | Pravno-informacioni sistem RS: ELI record of the ZPDPL. The ELI resolves, but the text sits behind a login and could not be read, so no figure here relies on it. | https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2001/25/1/reg | 2026-10-22 |
 
-Not yet confirmed: whether Serbia has adopted Pillar Two (global minimum tax) rules in a separate law (none appear in the ZPDPL); the current National Bank of Serbia reference rate used for late-payment interest; the arm's length interest rate rulebook for 2026 (the Tax Administration lists rulebooks up to 2025); the exact form codes of the return and tax balance under the 21/25 rulebook (the Tax Administration labels the return "PDP"); the asset-to-group classification in the depreciation rulebook.
+Not yet confirmed: whether the draft Law on Global Minimum Tax on Profit (consultation June 2026) has been adopted, and from when it applies; whether the 1 January 2027 repeal of ZPDPL Articles 25a(3) and 30a applies to the 2026 tax balance; the arm's length interest rate rulebook for 2026 (the Tax Administration lists rulebooks up to 2025); the exact form codes of the return and tax balance under the 21/25 rulebook (the Tax Administration labels the return "PDP"); the asset-to-group classification in the depreciation rulebook.
