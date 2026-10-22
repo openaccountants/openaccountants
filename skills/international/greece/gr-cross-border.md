@@ -53,13 +53,17 @@ Place of effective management is judged on the facts, in particular: where day-t
 | EUR 30,000.01 to 40,000 | 34% | 2026 | same |
 | EUR 40,000.01 to 60,000 | 39% | 2026 | same |
 | Over EUR 60,000 | 44% | 2026 | same |
-| Lower rates on the 2nd and 3rd bands for taxpayers with dependent children, and 0% or 9% on the first EUR 20,000 for taxpayers up to 25 or aged 26 to 30 | see art. 15(1)(b) to (e) | 2026 | same |
+| Taxpayers with dependent children: 2nd band 18%, 16% or 9% (1, 2 or 3 children); 3rd band 24%, 22%, 20% or 18% (1 to 4 children, 2 points less for each child over 4); 0% on the first two bands with 4 or more children | see art. 15(1)(b) to (d) | 2026 | same |
+| Young taxpayers, first EUR 20,000: 0% up to age 25; 9% aged 26 to 30 | art. 15(1)(e) | 2026 | same |
+| Tax reduction on employment and pension income (art. 16), no dependent children | EUR 777, reduced by EUR 20 per EUR 1,000 of taxable employment and pension income over EUR 12,000 (so nil at about EUR 50,850) | 2024 onwards, so 2026 | ΚΦΕ art. 16(1) and (2), as amended by ν. 5045/2023 art. 43, same |
+| Electronic payment spending requirement for residents | 30% of real employment, pension and business income, capped at EUR 20,000 of spending; 22% tax on any shortfall. Does not apply to non-residents filing in Greece | 2026 | ΚΦΕ art. 15(6)(b) and (c)(iv), same |
 | Rental income from Greek property: EUR 0 to 12,000 | 15% | 2026 | ΚΦΕ art. 40(4), as amended by ν. 5246/2025 art. 8, same |
 | Rental income: EUR 12,000.01 to 24,000 | 25% | 2026 | same |
 | Rental income: EUR 24,000.01 to 36,000 | 35% | 2026 | same |
 | Rental income: over EUR 36,000 | 45% | 2026 | same |
+| Deduction from gross rent for an individual landlord (repairs, maintenance and other property costs) | 5% | 2026 | ΚΦΕ art. 39(3)(a), same |
 | Art. 5A lump-sum tax on all foreign income (high-net-worth movers) | EUR 100,000 a year, for up to 15 tax years | 2026 | ΚΦΕ art. 5A(2) and (4), same; [AADE guide, 12.11.2025](https://aade.gr/sites/default/files/2025-11/forologika_kinitra.pdf) |
-| Art. 5A extension to each relative (spouse or civil partner, ascendants, descendants) | EUR 20,000 a year per relative | 2026 | ΚΦΕ art. 5A(2), same |
+| Art. 5A extension to each relative (spouse, ascendants and descendants in the direct line; AADE treats civil partners as spouses) | EUR 20,000 a year per relative | 2026 | ΚΦΕ art. 5A(2) and art. 2(στ), same; AADE guide, section 1.3 |
 | Art. 5A minimum Greek investment (not needed if the person holds an investor residence permit under art. 16 ν. 4251/2014) | EUR 500,000, completed within 3 years of the application | 2026 | ΚΦΕ art. 5A(1)(b), same |
 | Art. 5B flat tax on all foreign income of a pensioner | 7% a year, for up to 15 tax years | 2026 | ΚΦΕ art. 5B(2) and (4), same |
 | Art. 5C exemption on Greek employment or business income | 50% of that income exempt from income tax, for 7 tax years | 2026 | ΚΦΕ art. 5C(2), (4) and (7), same |
@@ -93,7 +97,7 @@ The lump sum covers all foreign income, whatever its amount. Foreign income unde
 3. working in Greece for a Greek entity or a Greek permanent establishment of a foreign business, or starting an individual business in Greece (art. 5C(7)); and
 4. declaring an intention to stay in Greece for at least 2 years.
 
-Half of the Greek employment or business income is exempt from income tax and from the special solidarity contribution of art. 43A, for 7 tax years in total. The regime cannot be extended beyond 7 years. If conditions 3 or 4 fail in any year, the regime ends from that year (art. 5C(5)). AADE adds that the person is also exempt from presumptive (deemed) living-expense income based on homes and cars for the 7 years. The regime also ends if employment or the business stops for more than 12 months, or the person moves residence abroad (AADE guide, section 3.3).
+Half of the Greek employment or business income is exempt from income tax for 7 tax years in total. The article also exempts that half from the special solidarity contribution of art. 43A, but that contribution was abolished for all income from 1.1.2023 (art. 72(74) ΚΦΕ), so it no longer matters. The regime cannot be extended beyond 7 years. If conditions 3 or 4 fail in any year, the regime ends from that year (art. 5C(5)). AADE adds that the person is also exempt from presumptive (deemed) living-expense income based on homes and cars for the 7 years. The regime also ends if employment or the business stops for more than 12 months, or the person moves residence abroad (AADE guide, section 3.3).
 
 **Companies leaving: exit tax (art. 66A ΚΦΕ).** This applies only to Greek-resident legal persons and entities, and to permanent establishments in Greece. It does not apply to individuals; we found no exit charge for individuals in the consolidated Code. The charge is on market value minus tax value of assets when any of these happens:
 
@@ -102,7 +106,7 @@ Half of the Greek employment or business income is exempt from income tax and fr
 3. the company moves its tax residence out of Greece (except assets that stay effectively connected with a Greek permanent establishment); or
 4. the business of a Greek permanent establishment moves abroad.
 
-In each case the charge applies only where Greece loses the right to tax the assets. It is taxed at the art. 58 rate for the year of exit (22%). Art. 66A implements art. 5 of the Anti-Tax Avoidance Directive (2016/1164/EU) and applies to transfers from 1.1.2020.
+In each case the charge applies only where Greece loses the right to tax the assets. It is taxed at the art. 58 rate for the year of exit (22%). Instalments (see "Deadlines and filing") end, and the unpaid tax falls due at once, if the assets or the business are sold, the assets or residence later move to a non-EU/EEA state, the company goes bankrupt or into liquidation, or an instalment is more than 3 months late (art. 66A(5) and (6)). Art. 66A implements art. 5 of the Anti-Tax Avoidance Directive (2016/1164/EU) and applies to transfers from 1.1.2020.
 
 **Withholding scope (arts. 62 and 64).** Withholding applies to dividends, interest and royalties. It applies to fees for technical, management, consulting and similar services when the recipient is an individual, or a legal person resident outside Greece and outside the EU and EEA (art. 62(1)(d) and (3)). A legal person resident in Greece or in another EU or EEA state receiving those fees is not subject to withholding (art. 62(2)). A non-EU/EEA recipient of royalties or of those fees can elect to be taxed as Greek residents are and credit the tax withheld (art. 62(3)). Treaty rates override the domestic rate when the recipient gives a residence certificate.
 
@@ -111,12 +115,12 @@ In each case the charge applies only where Greece loses the right to tax the ass
 | Event | Deadline | Source |
 |---|---|---|
 | Get a Greek tax number (AFM) as a non-resident, appointing a tax representative where required | Before the first Greek income or transaction; online via myAADE "TIN & Authentication Key" | [AADE: TIN for non-residents](https://aade.gr/en/greeks-abroad-non-residents/registration-tax-register/issuance-tax-identification-number-and-authentication-key-and-appointment) |
-| Art. 5A application | By 31 March of the tax year (also open to people who moved in the previous tax year). AADE decides by the last working day of June | ΚΦΕ art. 5A(3) |
+| Art. 5A application | By 31 March of the tax year (also open to people who moved in the previous tax year), with proof that the EUR 500,000 minimum investment has been transferred to an account with a bank in Greece. AADE decides by the last working day of June | ΚΦΕ art. 5A(3) |
 | Art. 5A lump sum | One payment by the last working day of July each year; first year within 30 days of approval | ΚΦΕ art. 5A(2) |
 | Art. 5B application | By 31 March of the tax year (also open to people who moved in the previous tax year). The regime starts from the following tax year; AADE decides within 60 days | ΚΦΕ art. 5B(3) and (4) |
 | Art. 5B tax | One payment by the last working day of July each year | ΚΦΕ art. 5B(2)(b) |
 | Art. 5C application (online in myAADE) | Start of work by 2 July: apply by the end of that year, or during the following year, which then counts as the first year. Start after 2 July: apply for the following year, by the end of that year. AADE decides within 60 days | ΚΦΕ art. 5C(3); AADE guide, section 3.2 |
-| Individual income tax return (residents, and non-residents with Greek-source income) | 15 March to 15 July of the year after the tax year; for 2026 income, in 2027 | ΚΦΕ art. 67(3); [AADE: filing obligations](https://aade.gr/en/greeks-abroad-non-residents/income-taxation/fulfillment-tax-obligations) |
+| Individual income tax return (residents, and non-residents with Greek-source income) | 15 March to 15 July of the year after the tax year; for 2026 income, in 2027. A person who moves residence abroad may file at any time during the year | ΚΦΕ art. 67(3); [AADE: filing obligations](https://aade.gr/en/greeks-abroad-non-residents/income-taxation/fulfillment-tax-obligations) |
 | Move of tax residence out of Greece | Application by the last business day of the first ten days of March of the year after departure; supporting documents by the last business day of the first ten days of September; applications accepted until 31 December of that year | [AADE: transferring tax residency abroad](https://aade.gr/en/greeks-abroad-non-residents/income-taxation/transferring-tax-residency-greece-abroad) |
 | Company exit tax return | 3 working days before the exit event. The tax is paid in one sum with the return, or in 5 equal annual interest-free instalments where the move is to an EU state or an EEA state with a tax-debt recovery assistance agreement. The first instalment is paid with the return and the rest by the last working day of each of the next 4 years | ΚΦΕ art. 66A(3) and (4) |
 
@@ -139,7 +143,7 @@ From the Tax Procedure Code (ν. 5104/2024), in the [AADE codification Ε.2109/2
 | Inaccurate withholding tax return | 50% of the difference | ΚΦΔ art. 54(2) |
 | Late payment | Interest from the day after the payment deadline. There is no interest on interest | ΚΦΔ art. 52(1) and (5) |
 
-The late-payment interest rate is not set in art. 52. We did not read it on an official page today. See "Not yet confirmed".
+The late-payment interest rate is not set in art. 52. It is set by ministerial decision under ΚΦΔ art. 83(47): decision ΔΠΕΙΣ 1198598 ΕΞ 2013 (Β' 19/2014), as kept in force by decision [Α.1120/2025](https://www.aade.gr/sites/default/files/2025-08/a_1120_2025.pdf) (Β' 4367/08.08.2025, in force from 10.08.2025). Α.1120/2025 freezes that rate for two years unless the ECB main refinancing rate moves by a cumulative 5 percentage points from its 1.1.2014 level. We did not read the percentage itself on an official page. See "Not yet confirmed".
 
 For the inbound regimes, the sanction is losing the regime. Under 5A and 5B, failing to pay the full annual tax ends the regime from that year. Under 5A, an investment not completed within 3 years withdraws the regime from the first year.
 
@@ -159,9 +163,11 @@ For the inbound regimes, the sanction is losing the regime. Under 5A and 5B, fai
 
 Eleni is a German-resident engineer, aged 35, with no children. She has not been Greek tax resident in the last 6 years. She starts work for a Greek company in Athens on 1 March 2026 and declares she will stay for at least 2 years. She starts before 2 July, so she applies for 5C in myAADE by 31 December 2026, and 2026 is her first 5C year. Her 2026 Greek employment income, after employee social contributions, is EUR 70,000.
 
-Under 5C, half (EUR 35,000) is exempt. The other EUR 35,000 is taxed on the 2026 scale: 9% on 10,000 (900), 20% on 10,000 (2,000), 26% on 10,000 (2,600) and 34% on 5,000 (1,700). Tax before the art. 16 reduction is EUR 7,200. Without 5C, tax on EUR 70,000 before the art. 16 reduction would be EUR 21,100. The regime saves EUR 13,900 in 2026 and can run for 7 tax years (2026 to 2032).
+Under 5C, half (EUR 35,000) is exempt. The other EUR 35,000 is taxed on the 2026 scale: 9% on 10,000 (900), 20% on 10,000 (2,000), 26% on 10,000 (2,600) and 34% on 5,000 (1,700). Tax before the art. 16 reduction is EUR 7,200. Without 5C, tax on EUR 70,000 would be EUR 21,100. Without 5C the art. 16 reduction is nil, because EUR 777 is fully phased out above about EUR 50,850 of taxable salary. The regime saves at least EUR 13,900 in 2026 and can run for 7 tax years (2026 to 2032).
 
-This example does not compute the art. 16 employment tax reduction, the employee EFKA contributions, or whether the special solidarity contribution applies in 2026.
+With 5C, the art. 16 reduction depends on which salary figure the art. 16(2) phase-out uses. On the taxable EUR 35,000 it would be EUR 777 minus EUR 460 (EUR 20 x 23), so EUR 317, and tax would be EUR 6,883. If the exempt half also counts, the reduction is nil. We have not found a ruling on this. See "Not yet confirmed".
+
+As she is aged 31 or over with no children, no reduced rate of art. 15(1)(b) to (e) applies. As a Greek resident she must also spend 30% of her real income (capped at EUR 20,000) by card or other electronic means, or pay 22% on the shortfall (art. 15(6)). This example assumes she meets that requirement. It does not compute her employee EFKA contributions. There is no special solidarity contribution: it was abolished from 2023.
 
 ```oa-check
 name: Art. 5C mover, Greek salary EUR 70,000, 2026 scale, before art. 16 reduction
@@ -185,18 +191,24 @@ steps:
   - f6: max(salary - 60000, 0) * 0.44
   - tax_normal: f1 + f2 + f3 + f4 + f5 + f6
   - saving: tax_normal - tax_5c
+  - red_normal: max(777 - max(salary - 12000, 0) / 1000 * 20, 0)
+  - red_5c_on_half: max(777 - max(taxable - 12000, 0) / 1000 * 20, 0)
+  - tax_5c_if_half: tax_5c - red_5c_on_half
 expected:
   taxable: 35000
   tax_5c: 7200.00
   tax_normal: 21100.00
   saving: 13900.00
+  red_normal: 0.00
+  red_5c_on_half: 317.00
+  tax_5c_if_half: 6883.00
 ```
 
 ### Example 2: non-resident with a rented flat in Athens
 
-Klaus lives in Munich and is not Greek tax resident. He owns a flat in Athens. His 2026 taxable rental income from it is EUR 30,000. Rent from Greek property is Greek-source income (art. 5(1)), so he files a Greek return between 15 March and 15 July 2027. The rent is taxed separately on the art. 40(4) scale for 2026: 15% on 12,000 (1,800), 25% on 12,000 (3,000) and 35% on 6,000 (2,100). Greek tax is EUR 6,900.
+Klaus lives in Munich and is not Greek tax resident. He owns a flat in Athens. His 2026 taxable rental income from it, after the 5% deduction for property costs (art. 39(3)(a)), is EUR 30,000. Rent from Greek property is Greek-source income (art. 5(1)), so he files a Greek return between 15 March and 15 July 2027. The rent is taxed separately on the art. 40(4) scale for 2026: 15% on 12,000 (1,800), 25% on 12,000 (3,000) and 35% on 6,000 (2,100). Greek tax is EUR 6,900.
 
-As a non-resident he gets the art. 16 to 19 reductions only under the art. 20 EU/EEA test. Those reductions are tax reductions on other income and do not change this separate rental tax. How Germany treats the rent and relieves the Greek tax depends on the Greece-Germany treaty and German law; check both before advising.
+As a non-resident he gets the art. 16 to 19 reductions only under the art. 20 EU/EEA test. Even if he met it, the art. 16 reduction applies only to tax under the art. 15 scale (art. 16(1)), so it does not reduce this separate rental tax. The electronic spending requirement of art. 15(6) does not apply to him as a non-resident (art. 15(6)(c)(iv)). How Germany treats the rent and relieves the Greek tax depends on the Greece-Germany treaty and German law; check both before advising.
 
 ```oa-check
 name: Non-resident, Greek rental income EUR 30,000, 2026 rental scale
@@ -236,9 +248,10 @@ All read on 2026-10-22.
 - AADE, fulfilment of tax obligations (who files): https://aade.gr/en/greeks-abroad-non-residents/income-taxation/fulfillment-tax-obligations
 - AADE, forms for applying double taxation agreements: https://aade.gr/en/greeks-abroad-non-residents/income-taxation/forms-application-double-taxation-agreements
 - AADE, TIN and tax representative for non-residents: https://aade.gr/en/greeks-abroad-non-residents/registration-tax-register/issuance-tax-identification-number-and-authentication-key-and-appointment
-- Tax Procedure Code (ν. 5104/2024), AADE codification circular Ε.2109/30-12-2025, amendments up to ν. 5259/2025: arts. 52, 53, 54. https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf
+- Tax Procedure Code (ν. 5104/2024), AADE codification circular Ε.2109/30-12-2025, amendments up to ν. 5259/2025: arts. 52, 53, 54, 83(47). https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf
+- Ministerial decision Α.1120/2025 (Β' 4367/08.08.2025) on the interest rates of ΚΦΔ art. 52: https://www.aade.gr/sites/default/files/2025-08/a_1120_2025.pdf
 - Regulation (EC) No 883/2004, consolidated text, arts. 11 and 12: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731
 
 Note: AADE's English page "Income categories and income taxation in Greece" still shows the pre-2026 scale (9/22/28/36/44%). The 2026 scale in this skill is from the law text (art. 15 as replaced by ν. 5246/2025, applying from tax year 2026).
 
-Not yet confirmed: the late-payment interest rate under ΚΦΔ art. 52 (set outside the Code; not read on an official page today); any amendments to the Income Tax Code after ν. 5264/2025 or to the Tax Procedure Code after ν. 5259/2025 made during 2026; the 2026 amounts of the art. 16 employment and pension tax reduction; whether the special solidarity contribution of art. 43A is charged for 2026; the deductions from gross rent that give taxable rental income; the A1 certificate rules in Regulation (EC) 987/2009; the list of states with an administrative cooperation agreement on tax with Greece; the Greece-Germany treaty treatment of rent in Example 2.
+Not yet confirmed: the percentage of the late-payment interest rate in decision ΔΠΕΙΣ 1198598 ΕΞ 2013 (Β' 19/2014), which Α.1120/2025 keeps in force (the decision itself was not read on an official page); any amendments to the Income Tax Code after ν. 5264/2025 or to the Tax Procedure Code after ν. 5259/2025 made during 2026; whether the art. 16(2) phase-out for a 5C taxpayer is measured on the taxable half or on the whole salary; the A1 certificate rules in Regulation (EC) 987/2009; the list of states with an administrative cooperation agreement on tax with Greece; the Greece-Germany treaty treatment of rent in Example 2.
