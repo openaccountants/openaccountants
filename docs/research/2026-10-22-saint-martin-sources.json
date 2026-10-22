@@ -1,0 +1,27 @@
+{
+  "jurisdiction": "MF",
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.impots-saint-martin.fr/files/file/News/CGI_SM_au_05_06_2026.pdf",
+      "sha256": "0e7ed0d696106f659023c5c16f54b93ce319f3c74d3f1738757316d7e111b88c",
+      "bytes": 3654410,
+      "retrieval": "Complete PDF downloaded; pdftotext layout extraction; relevant articles read in full for claims included. Repeat web open failed; downloaded PDF remained available.",
+      "locators": "Articles 250\u2013264, printed pages 305\u2013314; cover consolidation and authority notice"
+    }
+  ],
+  "allocation": {
+    "ryan_tree": "2d2e198012cfd827357eee3ef0a4e65316692fa6",
+    "matching_paths": [],
+    "current_shared_country_issues": "Search Saint-Martin returned no open matching issues; no ownership acceptance claimed."
+  },
+  "status": "Source-cited draft; independent review pending",
+  "gaps": [
+    "Post-5-June amendment reconciliation",
+    "Underlying authoritative deliberations",
+    "Full sector exemption analysis",
+    "Affordable housing eligibility regulation",
+    "Detailed invoice controls and filing implementation",
+    "Other country topics"
+  ]
+}
