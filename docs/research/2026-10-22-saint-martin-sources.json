@@ -8,6 +8,20 @@
       "bytes": 3654410,
       "retrieval": "Complete PDF downloaded; pdftotext layout extraction; relevant articles read in full for claims included. Repeat web open failed; downloaded PDF remained available.",
       "locators": "Articles 250\u2013264, printed pages 305\u2013314; cover consolidation and authority notice; company-tax articles 209, 219, 223 and 1668"
+    },
+    {
+      "url": "https://www.impots-saint-martin.fr/files/file/News/20%20PAGES%20LIVRET%20FISCAL%20COLLECTIVITE.pdf",
+      "bytes": 657446,
+      "sha256": "17600fb482b0c47690df25d540969b0e450c163f0e9b246a727a2d86ff8fac6b",
+      "locators": "Pages 6, 8, 11; current filing channel, nil returns, TGCA input treatment and corporate-rate corroboration",
+      "retrieval": "Downloaded complete source; relevant text read. Homepage web open timed out; curl succeeded."
+    },
+    {
+      "url": "https://www.impots-saint-martin.fr/",
+      "bytes": 43679,
+      "sha256": "2b722a67e3951a4633a183073aa9fce10096daac57c05bc4b879875c70ffcf3d",
+      "locators": "January 2026 digital filing notice and October 2026 download notice",
+      "retrieval": "Downloaded complete source; relevant text read. Homepage web open timed out; curl succeeded."
     }
   ],
   "allocation": {

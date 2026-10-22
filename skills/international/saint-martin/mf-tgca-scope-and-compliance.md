@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -53,10 +53,18 @@ The written debit election covers all operations from the first day of the follo
 1. Classify goods/services, territorial scope and any evidenced exclusion or exemption.
 2. Determine the appropriate ordinary or special base; separate payments by applicable rate and period. Do not mechanically use gross invoice value for commissions or travel-agency transactions with special article 255 bases.
 3. Apply collection timing or the effective debit election, then the statutory base-rounding rule.
-4. Multiply the eligible base by the applicable rate and reconcile to invoices and receipts. This Guide supplies no general purchase-tax recovery entitlement.
+4. Multiply the eligible base by the applicable rate and reconcile to invoices and receipts. The official 2026 handbook states that TGCA paid on purchased services and fixed assets cannot be offset against TGCA collected. It describes expense accounting inclusive of TGCA and deduction in computing taxable results; ordinary expense deductibility still requires the appropriate income-tax analysis. [Business handbook, page 8](https://www.impots-saint-martin.fr/files/file/News/20%20PAGES%20LIVRET%20FISCAL%20COLLECTIVITE.pdf).
 5. Declare and pay monthly. Quarterly calendar-period filing is allowed where **annual tax due is strictly below €2,000**. The deadline is the **15th of the month after the relevant period**. Register existence within **15 days of starting operations**; this applies to foreign-established persons with in-scope operations too. File the cessation/disposal return within **30 days**. [CGI arts. 255–258, 262–263](https://www.impots-saint-martin.fr/files/file/News/CGI_SM_au_05_06_2026.pdf).
 
 Illustrative calculations, assuming ordinary taxable receipts with no exclusion: €10,000 base × 4% = **€400**. A fully evidenced eligible housing base of €10,000 × 2% = **€200**. Annual tax of €1,999 satisfies the quarterly threshold; €2,000 does not. A calendar Q1 return is due 15 April under the code's rule. These examples do not establish any particular taxpayer's eligibility or a special extension.
+
+## Nil returns and submission
+
+The 2026 handbook requires TGCA returns even without taxable turnover. Do not drop a period from the filing schedule simply because no sales occurred. [Business handbook, page 8](https://www.impots-saint-martin.fr/files/file/News/20%20PAGES%20LIVRET%20FISCAL%20COLLECTIVITE.pdf).
+
+From January 2026, the official notice directs TGCA PDFs to `cfip.sxm.declarations-professionnels@dgfip.finances.gouv.fr`, with bank-transfer proof. Use one PDF per return and one recipient. Match email subject, PDF name and transfer reference using NIF, tax, year and TGCA month. The notice permits paper at Concordia for people without internet or unable to transmit a scan. [Official filing notice](https://www.impots-saint-martin.fr/).
+
+Retain the completed return, calculation, transmission and payment evidence. Confirm current bank instructions directly from the authority before payment; this Guide does not reproduce account credentials.
 
 ## Foreign suppliers and invoice controls
 
@@ -68,6 +76,6 @@ The supplier owes TGCA on taxable supplies. A taxable customer receiving goods/s
 - Retain the inventory commitment and accounting treatment; an ordinary business customer is not enough.
 - Reconcile deposits and receipts to the period, and keep any debit election and effective date.
 - Test annual tax, not turnover, against the strict quarterly threshold.
-- Complete article 253 sector-exemption and article 264 invoice checks before operational use. Check the current official filing channel and any post-June amendments.
+- Complete article 253 sector-exemption and article 264 invoice checks before operational use. Recheck the cited filing notice for changes and reconcile any post-June amendments.
 
 Source-cited draft awaiting independent source and professional review. This Guide does not cover all local taxes, import duties, housing eligibility, penalties or appeals and is not individualized filing advice.

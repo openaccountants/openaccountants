@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -63,6 +63,14 @@ Article 223(1) requires the profit/loss declaration within **three months of yea
 Article 1668 specifies quarterly instalment dates of **15 March, 15 June, 15 September and 15 December** and exempts newly created or newly subject companies for the first financial year/first tax period described there. Its balance rule is the **15th of the fourth month after year-end**, or 15 May of the following year if no financial year closes during the year. [CGI article 1668, pages 472–473](https://www.impots-saint-martin.fr/files/file/News/CGI_SM_au_05_06_2026.pdf).
 
 **Unresolved instalment issue:** article 1668(1) refers to the third paragraph of article 219(I), while the consolidation places the older 22.22% rate there and the later 20% rate in the following paragraph. Obtain the operative payment guidance or underlying amending text before computing instalments. The final-tax examples above apply the explicit later article 219 ordinary rate; they do not settle this cross-reference.
+
+## Filing channel and nil results
+
+The 2026 handbook confirms annual result reporting and requires results returns even without turnover. Its company-tax section corroborates the 10%/20% rates and balance timing, but supplies no calculation resolving the instalment cross-reference above. [Business handbook, pages 8 and 11](https://www.impots-saint-martin.fr/files/file/News/20%20PAGES%20LIVRET%20FISCAL%20COLLECTIVITE.pdf).
+
+The January 2026 notice routes results-return PDFs to `cfip.sxm-pole.fiscal@dgfip.finances.gouv.fr`; IS instalment declarations go to `cfip.sxm.declarations-professionnels@dgfip.finances.gouv.fr`. It requires bank transfers, payment evidence and matching NIF/tax/year references. Use a single recipient without copying other tax offices or agents. The October notice says forms must be downloaded; deadlines remain unchanged. [Official notices](https://www.impots-saint-martin.fr/).
+
+Reconcile the result package, payment reference and supporting computation before submission. Obtain the current prescribed forms and bank instructions from the official site; do not send a result return to the instalment mailbox merely because both concern IS.
 
 ## Self-checks and scope limits
 
