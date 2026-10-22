@@ -4,6 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: it-cross-border
+partial:
+  IT-IND: it-income-tax covers the self-employed (regime ordinario) only, not employees' IRPEF
 ---
 
 # Italy: tax pack
