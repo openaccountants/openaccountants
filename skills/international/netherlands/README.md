@@ -3,8 +3,11 @@ jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
+  IT-IND: no 2026 box 1 rates or labour credit for people at AOW age, no tax-part-only credits for non-residents, and the box 3 actual-return route is outlined only, with complex cases referred
   IT-CORP: nl-corporate-tax has no dividend withholding tax or conditional withholding tax method and refers out non-resident companies with a Dutch permanent establishment
   TP: netherlands-transfer-pricing does not quantify penalties (no CbC fine amount under art. 29h, no consequence of missing art. 8b or 29g documentation)
+  PR: no company car benefit method (22% addition, 2026 electric discount up to the EUR 30,000 cap, own contribution, 500 km rule) in nl-payroll-tax or netherlands-payroll
+  XB: no treaty relief method (Besluit voorkoming dubbele belasting 2001, treaty dividend rates), and the M-return, non-resident return and dividend tax return deadlines are not confirmed
   VAT: no VAT registration method, OSS and non-established businesses are referred out, and nl-vat-return gives 4 December instead of 3 December 2026 for joining the KOR
 ---
 
