@@ -17,7 +17,7 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 | IT-IND, individual income tax | ie-income-tax-form11, ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
 | IT-CORP, corporate income tax | ie-corporation-tax | source-cited draft |
 | VAT | ireland-vat-return, ie-vat-return | source-cited draft |
-| SC, social contributions | ie-prsi-class-s | source-cited draft |
+| SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI) | source-cited draft |
 | PR, payroll withholding | ie-payroll | source-cited draft |
 | TP, transfer pricing | (missing: Part 35A TCA 1997 transfer pricing rules and documentation) | |
 | XB, cross-border | ie-cross-border, ie-non-dom | source-cited draft |
