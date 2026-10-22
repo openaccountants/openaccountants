@@ -3,8 +3,10 @@ jurisdiction: IT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: it-irpef-employees
   XB: it-cross-border
+partial:
+  IT-IND: the forfettario is covered only as the entry test, the 15% and 5% rates and two of the profitability coefficients (it-income-tax); no full coefficient table or forfettario computation, and no 2026 detrazioni for self-employed income
+  SC: it-inps-contributions covers the gestione separata only; artigiani and commercianti and the professional funds (casse) are not covered; employee INPS is in italy-payroll
 ---
 
 # Italy: tax pack
@@ -15,10 +17,10 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
+| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario, forfettario entry test only), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft; partial (forfettario) |
 | IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
 | VAT | italy-vat-return | source-cited draft |
-| SC, social contributions | it-inps-contributions | source-cited draft |
+| SC, social contributions | it-inps-contributions (gestione separata); employee INPS in italy-payroll | source-cited draft; partial (artigiani, commercianti, casse) |
 | PR, payroll withholding | italy-payroll | source-cited draft |
 | TP, transfer pricing | italy-transfer-pricing | source-cited draft |
 | XB, cross-border | it-cross-border (hub), it-impatriati | source-cited draft |

@@ -58,29 +58,31 @@ Out of scope here: anyone with business or self-employment income (see `it-incom
 | Cuneo fiscale: extra detrazione, total income over EUR 20,000 up to 32,000 | EUR 1,000 | 2026 | L. 207/2024 art. 1 comma 6 |
 | Cuneo fiscale: extra detrazione, over EUR 32,000 up to 40,000 | EUR 1,000 x (40,000 - income) / 8,000; nil above 40,000 | 2026 | L. 207/2024 art. 1 comma 6 |
 | Trattamento integrativo (cash supplement), total income up to EUR 15,000 | EUR 1,200 a year, if gross tax on employment income exceeds the art. 13 detrazione less EUR 75 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-06-30 |
+| Trattamento integrativo, total income over EUR 15,000 up to 28,000 | Only if the family and art. 13 detrazioni, plus mortgage interest on loans taken out up to 2021 and instalments of medical and building-works detrazioni for spending up to 2021, exceed gross tax; the excess, capped at EUR 1,200 | 2026 | D.L. 3/2020 art. 1 comma 1, same URL |
 | Dependent spouse | EUR 800 - 110 x income / 15,000 up to 15,000; EUR 690 from 15,000 to 40,000; EUR 690 x (80,000 - income) / 40,000 from 40,000 to 80,000; small extras between EUR 29,000 and 35,200 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art12!vig=2026-06-30 |
 | Dependent child aged 21 to 29 (or 30+ with disability) | EUR 950 x (95,000 - income) / 95,000; EUR 95,000 rises by 15,000 per child after the first; split 50/50 between parents unless agreed | 2026 | TUIR art. 12 comma 1 lett. c |
 | Other dependant: ascendant living with the taxpayer | EUR 750 x (80,000 - income) / 80,000 | 2026 | TUIR art. 12 comma 1 lett. d |
 | Dependant's own income limit | EUR 2,840.51; EUR 4,000 for children up to age 24 | 2026 | TUIR art. 12 comma 2 |
-| Oneri detraibili: credit rate | 19% (art. 15 still prints 22%; art. 16-ter comma 5-bis refers to items "detraibili nella misura del 19 per cento") | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art16ter!vig=2026-06-30 |
+| Oneri detraibili: credit rate | 19%, fixed by D.Lgs. 446/1997 art. 49 for oneri paid from 1998 and never amended. Normattiva's consolidated art. 15 still prints "22 per cento" because art. 49 changed the rate without rewriting art. 15 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-06-30 |
 | Medical expenses | 19% of the part above EUR 129.11 (art. 15 prints 250,000 lire) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 |
 | Mortgage interest on the main home | 19% of up to EUR 4,000 a year | 2026 | TUIR art. 15 comma 1 lett. b |
 | School fees (infant to upper secondary) | 19% of up to EUR 1,000 per pupil | 2026 | TUIR art. 15 comma 1 lett. e-bis |
 | Funeral costs | 19% of up to EUR 1,550 per death | 2026 | TUIR art. 15 comma 1 lett. d |
-| Phase-out of 19% credits | full up to total income EUR 120,000; then x (240,000 - income) / 120,000; mortgage interest is kept in full | 2026 | TUIR art. 15 commi 3-bis and 3-quater |
-| Overall cap on detraibili oneri, total income over EUR 75,000 | base EUR 14,000 (over 100,000: EUR 8,000) x 0.50 / 0.70 / 0.85 / 1 by number of dependent children; medical costs outside the cap | 2026 | TUIR art. 16-ter |
+| Phase-out of 19% credits | full up to total income EUR 120,000; then x (240,000 - income) / 120,000; mortgage interest (art. 15 comma 1 lett. a and b, comma 1-ter) and medical costs (lett. c) are kept in full | 2026 | TUIR art. 15 commi 3-bis and 3-quater |
+| Overall cap on the spending that qualifies for detrazioni, total income over EUR 75,000 | base EUR 14,000 (over 100,000: EUR 8,000) x 0.50 / 0.70 / 0.85 / 1 by number of dependent children (1 also with one disabled child). Outside the cap: medical costs, start-up and innovative SME investments, mortgage interest and insurance premiums on contracts made up to 31 December 2024, and yearly instalments of spending made up to 31 December 2024 | 2026 | TUIR art. 16-ter commi 1 to 5 |
 | Cut for total income over EUR 200,000 | 19% credits reduced by EUR 440 (medical costs excluded) | 2026 | TUIR art. 16-ter comma 5-bis (L. 199/2025 art. 1 comma 4) |
-| Supplementary pension contributions (deductible) | up to EUR 5,300 from tax year 2026 (EUR 5,164.57 before) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |
+| Supplementary pension contributions (deductible) | up to EUR 5,300 "a decorrere dal periodo d'imposta 2026" (EUR 5,164.57 before); added by L. 199/2025 art. 1 comma 201, which comma 202 brings into effect on 1 July 2026 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |
 | Contributions to registered supplementary health funds (deductible) | up to EUR 3,615.20 | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art10!vig=2026-06-30 |
 | Regional surcharge (addizionale regionale) | base 1.23%; each region may raise it by up to 2.1 points or lower it | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-06-30 |
 | Municipal surcharge (addizionale comunale) | set by each comune, variation up to 0.8 points in total; the comune may set an exemption threshold | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-06-30 |
-| Interest, dividends and gains (substitute tax or final withholding) | 26% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 |
+| Interest, dividends and gains (substitute tax or final withholding) | 26%. Gains on qualifying holdings (art. 67 comma 1 lett. c) realised from 2019 fall under the same substitute tax (D.Lgs. 461/1997 art. 5 comma 2 as amended by L. 205/2017 art. 1 comma 1000) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-06-30 |
 | Italian government bonds and bonds of white-list states | 12.5% on interest; gains counted at 48.08% of the amount, so 26% x 48.08% = 12.5% | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1996-04-01;239~art2!vig=2026-06-30 ; D.L. 66/2014 art. 3 commi 2 and 5 |
 | Cedolare secca, long-term residential lets | 21% of the yearly rent | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-03-14;23~art3!vig=2026-06-30 |
 | Cedolare secca, agreed-rent contracts (canone concordato) in high-demand comuni | 10% | 2026 | D.Lgs. 23/2011 art. 3 comma 2 |
 | Cedolare secca, short lets (up to 30 days) | 26%; 21% for one unit the taxpayer picks in the return | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2017-04-24;50~art4!vig=2026-06-30 |
+| Short lets presumed to be a business | more than two flats let short in the tax year (four before 2026); the short-let regime then does not apply | 2026 | L. 178/2020 art. 1 comma 595 as amended by L. 199/2025 art. 1 comma 17, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30 |
 | Rent taxed under IRPEF | rent less a flat 5% (if higher than the cadastral income) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art37!vig=2026-06-30 (comma 4-bis) |
-| IVIE (foreign real estate) | 1.06% of value; not due if EUR 200 or less | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art19!vig=2026-06-30 (comma 15) |
+| IVIE (foreign real estate) | 1.06% of value; not due if EUR 200 or less; a main home abroad is exempt unless it would be a luxury category (A/1, A/8, A/9) in Italy, which pays 0.4% less EUR 200 (comma 15-bis) | 2026 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-12-06;201~art19!vig=2026-06-30 (comma 15) |
 | IVAFE (foreign financial assets) | 0.2% of value; 0.4% for assets in listed tax havens (from 2024); bank accounts a flat EUR 34.20 | 2026 | D.L. 201/2011 art. 19 comma 20, same URL |
 
 ## The taxable base
@@ -155,7 +157,7 @@ Out of scope here: anyone with business or self-employment income (see `it-incom
 - one eighth by the return deadline for the year of the error;
 - one seventh after that.
 
-Interest on the late tax is paid as well. The new consolidated penalty and payment codes apply from 1 January 2027; this table is the 2026 law.
+Interest on the late tax is paid as well. The penalty rates above are those set by D.Lgs. 87/2024 for violations committed from 1 September 2024 (art. 5 comma 1). The new consolidated penalty and payment codes apply from 1 January 2027; this table is the 2026 law.
 
 ## Cross-border points
 
@@ -171,7 +173,7 @@ Interest on the late tax is paid as well. The new consolidated penalty and payme
 
 Facts. Giulia, a private-sector employee resident in Bologna, earns EUR 45,000 gross in 2026 on a permanent contract. She lives in her own home, has no other income, no dependants and no deductible or 19% expenses.
 
-1. **Employment income.** Her employee INPS share is 9.19% (INPS circolare 40/2011): EUR 4,135.50. Employment income: EUR 40,864.50. This is also her total income.
+1. **Employment income.** Her employee INPS pension share is 9.19% (8.89% plus 0.30%, INPS circolare 40/2011): EUR 4,135.50. We assume no sector add-ons (such as the CIGS share in larger industrial firms). The extra 1% on pay above the first pensionable band (D.L. 384/1992 art. 3-ter) does not reach her: the band is above EUR 45,000 (see Not yet confirmed for the 2026 figure). Employment income: EUR 40,864.50. This is also her total income.
 2. **Gross tax.** EUR 28,000 at 23% = EUR 6,440.00; EUR 12,864.50 at 33% = EUR 4,245.29. Gross IRPEF: EUR 10,685.29.
 3. **Employee detrazione** (art. 13 comma 1 lett. c). (50,000 - 40,864.50) / 22,000 = 0.4152 (four decimals). EUR 1,910 x 0.4152 = EUR 793.03. No EUR 65 extra: her income is above EUR 35,000.
 4. **Cuneo fiscale.** Her total income is above EUR 40,000, so the extra detrazione is nil. Had she earned a little less, so that total income were EUR 36,000, she would get EUR 1,000 x 4,000 / 8,000 = EUR 500.
@@ -260,9 +262,11 @@ expected:
 | TUIR art. 15 (oneri detraibili) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art15!vig=2026-06-30 | 2026-10-22 |
 | TUIR art. 16-ter (cap on detrazioni; EUR 440 cut over EUR 200,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art16ter!vig=2026-06-30 | 2026-10-22 |
 | TUIR art. 37 (rent less 5%) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art37!vig=2026-06-30 | 2026-10-22 |
-| L. 199/2025 (Budget law 2026) art. 1 commi 3 and 4 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30 | 2026-10-22 |
+| L. 199/2025 (Budget law 2026) art. 1 commi 3, 4, 17, 201 and 202 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199~art1!vig=2026-06-30 | 2026-10-22 |
 | L. 207/2024 (Budget law 2025) art. 1 commi 4 to 9 (cuneo fiscale) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-06-30 | 2026-10-22 |
 | D.L. 3/2020 art. 1 (trattamento integrativo) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2020-02-05;3~art1!vig=2026-06-30 | 2026-10-22 |
+| D.Lgs. 446/1997 art. 49 (19% rate for oneri detraibili) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-06-30 | 2026-10-22 |
+| L. 205/2017 art. 1 comma 1000 (qualifying holdings under the substitute tax) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-12-27;205~art1!vig=2026-06-30 | 2026-10-22 |
 | D.Lgs. 252/2005 art. 8 (supplementary pension cap) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 | 2026-10-22 |
 | D.Lgs. 68/2011 art. 6 (regional surcharge) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-06-30 | 2026-10-22 |
 | D.Lgs. 360/1998 art. 1 (municipal surcharge) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-06-30 | 2026-10-22 |
@@ -284,10 +288,11 @@ expected:
 
 Not yet confirmed:
 
-- **Supplementary pension cap timing.** D.Lgs. 252/2005 art. 8 comma 4 says EUR 5,300 "from tax year 2026", but Normattiva's note on the change (L. 199/2025 art. 1 commi 202 and 205) says the amended provisions apply from 1 July 2026. Confirm in the 2027 return instructions whether the full EUR 5,300 applies to 2026.
+- **Supplementary pension cap timing.** The amended text says EUR 5,300 "a decorrere dal periodo d'imposta 2026", and L. 199/2025 art. 1 comma 202 brings comma 201 into effect on 1 July 2026. We read the cap as EUR 5,300 for the whole of 2026; no Agenzia instruction confirms it yet (the 730/2027 and Redditi PF 2027 instructions will).
 - **School fee cap.** The text in force on 30 June 2026 shows EUR 1,000 per pupil in double brackets (a recent amendment); we did not read the amending act or its start date.
-- **Gains on qualifying holdings** (over 2% voting rights or 5% capital in listed companies): this skill assumes the same 26% as other gains; we did not read the act that aligned them.
-- **Short-let business presumption**: how many units make short lets a business in 2026 (L. 178/2020 art. 1 comma 595, possibly changed by L. 199/2025) was not read.
+- **Rate on gains from qualifying holdings.** L. 205/2017 comma 1000 brought them into the art. 5 substitute tax from 2019, but the 26% in D.L. 66/2014 art. 3 comma 1 names only lett. c-bis to c-quinquies. The 26% for lett. c rests on Agenzia practice we did not read.
 - **Payment traceability** for 19% credits (L. 160/2019) and the IVAFE exemption for small bank balances: not read.
 - **Legal interest rate for 2026** used in ravvedimento: not read.
+- **First pensionable band for 2026** (above which the employee pays an extra 1% INPS): EUR 56,224 in secondary sources citing INPS circolare 6/2026, not read on inps.it.
+- **Consolidated codes from 2027.** Balances, acconti and any penalties for 2026 income fall in 2027, when D.Lgs. 33/2025 (payments) and D.Lgs. 173/2024 (penalties) apply with new article numbers. We did not read whether they change any figure above.
 - Whether the 730/2027 has the sections for capital gains (RT), foreign income and RW: check the 730/2027 instructions when published.
