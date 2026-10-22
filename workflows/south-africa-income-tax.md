@@ -54,6 +54,6 @@ Recommend review by a SAICA/SAIPA member. Route to: https://www.openaccountants.
 
 ## Verifier
 
-Verified by **Werner Britz CA(SA)** — [openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0)
+Reviewed by **Werner Britz CA(SA)** — [openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0)
 
-Skills signed off by Werner are Tier 1 (accountant-verified). Use the MCP server or bundle API to access the verified versions.
+Skills reviewed by Werner are accountant-reviewed (`tier: 1`). Use the MCP server or bundle API to access the current versions.
