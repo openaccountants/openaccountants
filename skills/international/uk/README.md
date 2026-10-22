@@ -6,9 +6,9 @@ covered_by:
   SC: uk-national-insurance
   XB: uk-statutory-residence-test
 partial:
-  IT-IND: Scottish taxpayers are referred out of the SA100 method (no Scottish non-savings bands applied on the return), and uk-student-loan-repayment still shows the 2026/27 thresholds as TBC
-  TP: uk-transfer-pricing is on 2025 with no 2026 update: the Finance Act 2026 reform (diverted profits tax abolished and replaced by the unassessed transfer pricing profits charge, the UK-to-UK exemption, international controlled transactions reporting) is missing, the SME exemption limits are given in pounds, and there are no arm's-length method or benchmarking steps
-  XB: no method for non-resident individuals with UK income (SA109 computation, personal allowance entitlement, disregarded-income limit; SA100 and SA108 refer non-residents out), no foreign tax credit relief method beyond dividends, no treaty withholding-rate table
+  IT-IND: "Scottish taxpayers are referred out of the SA100 method (no Scottish non-savings bands applied on the return), and uk-student-loan-repayment still shows the 2026/27 thresholds as TBC"
+  TP: "uk-transfer-pricing is on 2025 with no 2026 update: the Finance Act 2026 reform (diverted profits tax abolished and replaced by the unassessed transfer pricing profits charge, the UK-to-UK exemption, international controlled transactions reporting) is missing, the SME exemption limits are given in pounds, and there are no arm's-length method or benchmarking steps"
+  XB: "no method for non-resident individuals with UK income (SA109 computation, personal allowance entitlement, disregarded-income limit; SA100 and SA108 refer non-residents out), no foreign tax credit relief method beyond dividends, no treaty withholding-rate table"
 ---
 
 # United Kingdom: tax pack

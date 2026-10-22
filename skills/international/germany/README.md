@@ -5,9 +5,9 @@ not_applicable: {}
 covered_by:
   XB: leaving-germany-exit-tax
 partial:
-  IT-IND: self-employed, investment, rental and prepayment income only; no method for an employee's annual return (wages, Werbungskosten, Anlage N), non-resident individuals are refused, and de-income-tax is still on 2025 figures that disagree with the rest of the pack
-  VAT: advance returns (UStVA) under standard taxation only; no method for the annual VAT return, and cash-basis (Ist-Versteuerung), small-business (s.19 UStG), partial-exemption and one-stop-shop cases are refused
-  XB: no method for non-resident individuals or companies on German income, no treaty withholding-rate table and no foreign tax credit mechanics (s.34c EStG); germany-to-switzerland-cross-border-tax is on 2025 and is missing its commuter (Grenzgaenger) part
+  IT-IND: "self-employed, investment, rental and prepayment income only; no method for an employee's annual return (wages, Werbungskosten, Anlage N), non-resident individuals are refused, and de-income-tax is still on 2025 figures that disagree with the rest of the pack"
+  VAT: "advance returns (UStVA) under standard taxation only; no method for the annual VAT return, and cash-basis (Ist-Versteuerung), small-business (s.19 UStG), partial-exemption and one-stop-shop cases are refused"
+  XB: "no method for non-resident individuals or companies on German income, no treaty withholding-rate table and no foreign tax credit mechanics (s.34c EStG); germany-to-switzerland-cross-border-tax is on 2025 and is missing its commuter (Grenzgaenger) part"
 ---
 
 # Germany: tax pack

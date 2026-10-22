@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: leaving-france-exit-tax
 partial:
-  XB: leaving-france-exit-tax covers departing individuals only, on 2025 figures (social levies on securities gains given as 17.2%, now 18.6%); no method for non-residents with French income (salary and fee withholding, non-resident property gains, rental), no impatriate regime (art. 155 B CGI), no foreign tax credit or treaty relief mechanics
+  XB: "leaving-france-exit-tax covers departing individuals only, on 2025 figures (social levies on securities gains given as 17.2%, now 18.6%); no method for non-residents with French income (salary and fee withholding, non-resident property gains, rental), no impatriate regime (art. 155 B CGI), no foreign tax credit or treaty relief mechanics"
 ---
 
 # France: tax pack
