@@ -1,8 +1,8 @@
 # License
 
-OpenAccountants Agent Skills is dual-licensed:
+OpenAccountants Agent Skills follows the main repository's mixed-licence model (see [LICENSING.md](../LICENSING.md)):
 
-- **Tooling / code:** AGPL-3.0-or-later
+- **Tooling / code:** AGPL-3.0-only
 - **Skill content (the `SKILL.md` files):** OpenAccountants Guide License v1.0
 
 Full license texts live in the main repository:

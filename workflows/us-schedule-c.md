@@ -28,9 +28,9 @@
 ## Skills to load
 
 From the US bundle:
-- `us-income-tax` — federal income tax rates, brackets, standard deduction
-- `us-self-employed` — Schedule C, SE tax, QBI deduction
-- `us-estimated-tax` — quarterly payment schedule, safe harbors
+- `us-federal-income-tax-return-1040` — federal income tax rates, brackets, standard deduction
+- `us-schedule-c-and-se-computation` — Schedule C and SE tax; `us-qbi-deduction` for the §199A deduction
+- `us-quarterly-estimated-tax` — quarterly payment schedule, safe harbors
 - State-specific skill if relevant
 
 ## 6-phase structure

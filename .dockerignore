@@ -17,7 +17,8 @@ LICENSES
 LICENSING.md
 REUSE.toml
 README.md
-START-HERE.md
+GOAL.md
+OWNERS.md
 glama.json
 Dockerfile
 .dockerignore

@@ -109,6 +109,61 @@ def check_quality_metadata(rel, fields, errors):
         errors.append(f"{rel}: tier 2 must not claim accountant verification in `verified_by`")
 
 
+#: Slug tokens that mark a tax skill (the GOAL.md tax domains). These skills
+#: must show where their figures come from.
+TAX_SLUG_TOKENS = (
+    "income-tax", "corporate", "vat", "gst", "sales-tax", "payroll", "social", "ssc",
+    "withholding", "transfer-pricing", "exit", "departure", "treaty",
+)
+SOURCES_HEADING_RE = re.compile(r"^##+\s+Sources\b", re.MULTILINE | re.IGNORECASE)
+URL_RE = re.compile(r"https?://[^\s)>\]]+")
+STALE_DAYS = 365
+
+
+def is_tax_skill(rel):
+    slug = os.path.splitext(os.path.basename(rel))[0].lower()
+    return rel.startswith("skills/") and any(token in slug for token in TAX_SLUG_TOKENS)
+
+
+def check_sources(rel, text):
+    """A tax skill needs a `## Sources` section with at least one URL.
+
+    Returns a problem string or None. Provenance lives in the body, not in a
+    frontmatter key, because the platform export re-renders frontmatter and
+    drops keys it does not store (see docs/skill-template.md).
+    """
+    if not is_tax_skill(rel):
+        return None
+    match = SOURCES_HEADING_RE.search(text)
+    if not match:
+        return "no `## Sources` section"
+    section = text[match.end():]
+    next_heading = re.search(r"^##\s", section, re.MULTILINE)
+    if next_heading:
+        section = section[: next_heading.start()]
+    if not URL_RE.search(section):
+        return "`## Sources` section has no URL"
+    return None
+
+
+def check_staleness(fields, today):
+    """Return a problem string when the figures are probably out of date."""
+    from datetime import datetime
+    problems = []
+    last_updated = fields.get("last_updated")
+    if last_updated and LAST_UPDATED_FMT.fullmatch(str(last_updated)):
+        try:
+            age = (today - datetime.strptime(str(last_updated), "%Y-%m-%d").date()).days
+            if age > STALE_DAYS:
+                problems.append(f"last_updated {last_updated} is {age} days old")
+        except ValueError:
+            pass
+    tax_year = fields.get("tax_year")
+    if tax_year and str(tax_year).isdigit() and int(tax_year) < today.year - 1:
+        problems.append(f"tax_year {tax_year} is two or more years behind")
+    return "; ".join(problems) or None
+
+
 def changed_files_vs_main():
     """Files changed vs origin/main (PR mode). Empty list = nothing relevant."""
     import subprocess
@@ -212,7 +267,11 @@ def check_packages_frontmatter(bi, errors, only_files=None):
 
 
 def check_guides(bi, errors, warnings, only_files=None):
-    warn_counts = {"jurisdiction (jurisdiction-agnostic dirs)": 0}
+    from collections import Counter
+    from datetime import date
+    warn_counts = Counter({"jurisdiction (jurisdiction-agnostic dirs)": 0})
+    per_file_warnings = []
+    today = date.today()
     guides = skipped = 0
     for rel in bi.guide_files():
         if only_files is not None and rel not in only_files:
@@ -266,9 +325,22 @@ def check_guides(bi, errors, warnings, only_files=None):
                 warn_counts["jurisdiction (jurisdiction-agnostic dirs)"] += 1
             else:
                 errors.append(f"{rel}: missing required frontmatter key `jurisdiction`")
+        # Provenance and freshness (GOAL.md): warnings for now, so the
+        # backlog is visible before the rule becomes an error.
+        problem = check_sources(rel, text)
+        if problem:
+            warn_counts["a `## Sources` section with a URL (tax skills)"] += 1
+            if only_files is not None:
+                per_file_warnings.append(f"{rel}: {problem}")
+        problem = check_staleness(fields, today)
+        if problem:
+            warn_counts["fresh figures (last_updated within a year, tax_year current)"] += 1
+            if only_files is not None:
+                per_file_warnings.append(f"{rel}: {problem}")
     for key, count in sorted(warn_counts.items()):
         if count:
             warnings.append(f"{count} guides missing `{key}`")
+    warnings.extend(per_file_warnings)
     print(f"checked {guides} guides ({skipped} non-guide .md files skipped)")
 
 
@@ -339,7 +411,7 @@ def check_no_deprecated_manifests(errors):
 
 
 def check_llms_full_fresh(errors):
-    """llms-full.txt embeds llms.txt, the index inventory, START-HERE, and
+    """llms-full.txt embeds llms.txt, the index inventory, GOAL.md, and
     QUALITY-TIERS — it drifts silently when any of those change. Regenerate to
     a temp file and compare, mirroring the index.json staleness check."""
     import subprocess

@@ -4,7 +4,7 @@ description: "Switzerland lump-sum taxation (Pauschalbesteuerung / taxation selo
 version: 1.0
 jurisdiction: CH
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-22
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -24,7 +24,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Available to | Foreign nationals who are NOT gainfully employed in Switzerland |
 | Tax base | Annual living expenses (not actual income) |
 | Minimum tax base | 7× annual rent or rental value of Swiss residence |
-| Cantons | Available in most cantons (a few abolished it: ZH, SH, AR, AI, BL, BS) |
+| Cantons | Available in most cantons (abolished in ZH, SH, AR, BL and BS; Appenzell Innerrhoden keeps it, StG AI art. 17) |
 | Legislation | DBG Art. 14; StHG Art. 6 |
 
 ## Who can use lump-sum taxation
@@ -37,9 +37,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## How the tax base is calculated
 
-- **Tax base calculation** — Tax base = MAX of: (a) 7 × annual rent (or rental value if owner-occupied) (b) Actual living expenses (worldwide) if higher (c) Cantonal minimum amounts (vary by canton — e.g. CHF 400,000 in some)
+- **Tax base calculation** — Tax base = MAX of: (a) 7 × annual rent (or rental value if owner-occupied) (b) Actual living expenses (worldwide) if higher (c) the federal minimum (DBG art. 14(3)(a), below) and, for cantonal tax, the canton's own minimum, which varies by canton
 - **Cantonal minimum tax bases (examples)** — Some cantons have set explicit minimum tax bases (e.g. Valais: CHF 250,000; Vaud: CHF 250,000; Geneva: CHF 400,000; Ticino: CHF 500,000).
-- **Federal minimum tax base** — CHF 451,200 CHF (2025, indexed annually)
+- **Federal minimum tax base** — CHF 435,000 from 1 January 2026 (CHF 421,700 for 2023 to 2025). Indexed to consumer prices under DBG art. 14(6); the 2026 figure comes from the Federal Department of Finance ordinance of 10 September 2025 (AS 2025 579). Source: DBG art. 14, https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de
 
 ## Tax rates applied
 

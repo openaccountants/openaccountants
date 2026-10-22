@@ -6,7 +6,7 @@ This library includes accountant-reviewed skills and source-cited drafts. Check 
 
 ## Need someone to do the accounting?
 
-OpenAccountants also helps business owners get bookkeeping and tax work done through partner accountants. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
+OpenAccountants also helps business owners get bookkeeping and tax work done through accountants in our network. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
 
 **[Book a free 30-minute call](https://www.openaccountants.com/tax-help?source=github_readme#book)** · [Explore our accounting services](https://www.openaccountants.com/tax-help?source=github_readme)
 
@@ -68,9 +68,11 @@ Every skill is in exactly one state — and the repo greps honestly:
 | State | Meaning |
 |---|---|
 | **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from primary legislation, every figure cited to its source — not yet professionally reviewed |
+| **Source-cited draft** | Written from official sources, every figure cited to its source; not yet professionally reviewed |
 
-⚠️ **General reference, not advice.** skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
+The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md). Which number to quote and where it is measured: [docs/COVERAGE.md](docs/COVERAGE.md).
+
+⚠️ **General reference, not advice.** Skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 
 ---
 
@@ -91,17 +93,17 @@ The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the
 A tax library is only as good as its worst stale number, so machines re-check this one
 every night:
 
-- **The maths check** re-reads every guide and flags sums that do not add up, tax bands
+- **The maths check** re-reads every skill and flags sums that do not add up, tax bands
   with gaps, totals that do not total, and years that disagree.
 - **The source watch** visits the official pages the figures came from and raises a hand
   when a page changes.
-- **The refresh engine** re-derives the stalest guides from official sources on a fixed
+- **The refresh engine** re-derives the stalest skills from official sources on a fixed
   monthly budget, refusing to publish any figure without a link.
-- **The nightly exam** tests whether AIs actually said what the guides say that day, or
+- **The nightly exam** tests whether AIs actually said what the skills say that day, or
   improvised. Improvisation gets caught, counted and fixed at the source.
 
 The sync runs both ways: platform edits land here as commits under the author's own name,
-and merged PRs here flow back into what every AI serves, credited to you. A guide with an
+and merged PRs here flow back into what every AI serves, credited to you. A skill with an
 accountant's byline never changes without that accountant's one-click approval.
 
 The whole story, in plain words: [openaccountants.com/how-it-works](https://www.openaccountants.com/how-it-works)
@@ -110,11 +112,13 @@ The whole story, in plain words: [openaccountants.com/how-it-works](https://www.
 
 ## Contributing
 
+The goal is one complete, verified, reviewed tax pack per jurisdiction: **[GOAL.md](GOAL.md)**. Who owns which jurisdiction: **[OWNERS.md](OWNERS.md)**. Take an open `[XX] Complete the pack` issue and open a PR with `Closes #N`.
+
 Edit **`skills/**` only** — everything else regenerates automatically:
 
-- `packages/`, `index.json`, `llms-full.txt` — generated nightly; never edit in a PR
+- `packages/`, `agent-skills/<slug>/`, `index.json`, `llms-full.txt`: generated nightly; never edit in a PR
 - Merged source PRs are credited to you and must be confirmed as ingested before the next platform export
-- Full guide: [CONTRIBUTING.md](CONTRIBUTING.md) · Layout: [docs/REPO-LAYOUT.md](docs/REPO-LAYOUT.md)
+- Full instructions: [CONTRIBUTING.md](CONTRIBUTING.md) · Layout: [docs/REPO-LAYOUT.md](docs/REPO-LAYOUT.md)
 
 ---
 
@@ -135,7 +139,7 @@ API and platform integrations: [openaccountants.com/for-developers](https://www.
 
 ## Related open-source projects
 
-Independent, open-source review aids and calculation tools that complement the OpenAccountants guide library:
+Independent, open-source review aids and calculation tools that complement the OpenAccountants skill library:
 
 - **[payday-super-checker](https://github.com/ryanduguid/australian-accounting/tree/main/packages/payday-super-checker)** (MIT) — Verifies superannuation contributions against Australian Payday Super deadlines (in force since 1 July 2026) and estimates SG charge exposure on late payments, with all workings and statutory assumptions disclosed.
 - **[div7a-loan-review](https://github.com/ryanduguid/australian-accounting/tree/main/packages/div7a-loan-review)** (MIT) — Reviews Division 7A loan terms and minimum yearly repayments against the ATO benchmark interest rate, with fabricated inputs and explicit refusal boundaries.
@@ -148,7 +152,7 @@ Independent, open-source review aids and calculation tools that complement the O
 
 ## License
 
-- **Code** (mcp/, scripts/, tools/): [AGPL-3.0](LICENSE)
-- **skill content**: OpenAccountants Guide License v1.0 — see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
+- **Code** (mcp/, scripts/, tools/, calculators/): [AGPL-3.0-only](LICENSE)
+- **Skill content**: OpenAccountants Guide License v1.0 — see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
 
 **Contact:** info@openaccountants.com · [Security policy](SECURITY.md) · [Cite this repo](CITATION.cff)
