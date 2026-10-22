@@ -43,7 +43,7 @@ verified_by: pending
 |---|---|---|---|
 | IRES standard rate | 24% of total net income | 2026 | [TUIR art. 77](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art77!vig=2026-10-22) |
 | IRES premiale (reduced rate) | 24% cut by 4 points to 20%, on conditions | 2025 only (the period after the one in progress at 31 Dec 2024). Not available for 2026 | [L. 207/2024, art. 1(436)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1-com436!vig=2026-10-22); [Redditi SC 2026 instructions](https://www.agenziaentrate.gov.it/portale/documents/20143/9962362/SC_istr_2026.pdf/7c2fd2b6-6264-88eb-5c92-9d9ecf81e2c4?t=1779895444801) |
-| IRES surcharge, credit and financial intermediaries and Banca d'Italia | +3.5 percentage points on the art. 77 rate | 2026 | L. 208/2015, art. 1(65), printed as notes 181 and 192 to [TUIR art. 77](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art77!vig=2026-10-22) |
+| IRES surcharge, financial intermediaries (fund management companies and SIMs excluded) and Banca d'Italia | +3.5 percentage points on the art. 77 rate | 2026 | L. 208/2015, art. 1(65), printed as notes 181 and 192 to [TUIR art. 77](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art77!vig=2026-10-22) |
 | IRAP standard rate (separate regional tax, regions may vary it) | 3.9% of net value of production | 2026 (rate printed in the 2026 IRAP instructions) | [it-irap](it-irap.md); [IRAP 2026 instructions](https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414) |
 | Participation exemption on gains (PEX) | 95% of the gain exempt | 2026 | [TUIR art. 87](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art87!vig=2026-10-22) |
 | Dividends received from resident companies | 95% excluded, 5% taxed | 2026 | [TUIR art. 89(2)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art89!vig=2026-10-22) |
@@ -54,7 +54,7 @@ verified_by: pending
 | Telephone and electronic communication devices | 80% of costs deductible | 2026 | [TUIR art. 102(9)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art102!vig=2026-10-22) |
 | Assets costing up to EUR 516.46 each | Deductible in full in the year of purchase | 2026 | [TUIR art. 102(5)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art102!vig=2026-10-22) |
 | Entertainment (spese di rappresentanza) cap | 1.5% of revenue to EUR 10m; 0.6% from EUR 10m to 50m; 0.4% above EUR 50m | 2026 | [TUIR art. 108(2)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art108!vig=2026-10-22) |
-| Acconto (advance) on IRES | 100% of prior-year tax, 40% first instalment and 60% second (50% and 50% for ISA taxpayers) | 2026 | [Redditi 2026 general instructions, 4.2](https://www.agenziaentrate.gov.it/portale/documents/20143/9771542/Parte_Generale_istr_2026.pdf/2ad66f68-6f28-a982-8570-c130cdcdddfa?t=1772195389363) |
+| Acconto (advance) on IRES | 100% of prior-year tax, 40% first instalment and 60% second (50% and 50% for businesses in an activity with approved ISA indices whose revenue is not above the limit set in that ISA's approval decree, D.L. 124/2019 art. 58(1)) | 2026 | [Redditi 2026 general instructions, 4.2](https://www.agenziaentrate.gov.it/portale/documents/20143/9771542/Parte_Generale_istr_2026.pdf/2ad66f68-6f28-a982-8570-c130cdcdddfa?t=1772195389363) |
 | Acconto not due if prior-year tax is not above | EUR 20.66 | 2026 | Same, 4.2 |
 | Single acconto instalment if the first instalment would not exceed | EUR 103 | 2026 | Same, 4.2 (DPR 435/2001 art. 17(3)) |
 | Interest for paying within 30 days after the deadline | 0.40% | 2026 | Same, 4.1 (DPR 435/2001 art. 17(2)) |
@@ -64,7 +64,9 @@ verified_by: pending
 - **Clawback.** The benefit is lost if the reserve is distributed by the end of the second financial year after 2024, that is during 2026 for a calendar-year company, or if the assets are disposed of or moved abroad within five tax periods after the investment (art. 1(438)).
 - **Acconti for 2026.** The 2026 acconti are computed on the 2025 tax as if the reduced rate had not been used (art. 1(443); general instructions 4.2).
 
-The 2026 budget law (L. 199/2025) did not renew the reduced rate. A read of all its commi on 2026-10-22 found no IRES rate change for 2026.
+The 2026 budget law (L. 199/2025) did not renew the reduced rate. A read of all its commi on 2026-10-22 found no IRES rate change for 2026. It did change the base: from the 2026 tax period, gains on business assets other than PEX shareholdings are taxed in full in the year realised, and spreading over up to five years survives only for the sale of a business or business unit held for at least three years (TUIR [art. 86(4)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art86!vig=2026-10-22) as replaced by L. 199/2025 art. 1(42) and (43)). The super-depreciation of L. 199/2025 art. 1(427)-(436) is outside this skill.
+
+**Recomputing the 2025 tax for the 2026 acconti.** On top of the IRES premiale adjustment above, the 2025 tax used for the 2026 acconti is recomputed as if the new art. 86(4) had applied in 2025 (so a 2025 gain spread over five years counts in full), and without the super-depreciation of L. 199/2025 art. 1(427)-(436) (L. 199/2025 art. 1(43) and (434); general instructions 4.2). The instructions also list commi 51, 56 and 57: comma 51 was repealed by D.L. 38/2026, and commi 56 and 57 concern banks' credit write-downs.
 
 **What the 2026 budget law tried, and what is now in force.** L. 199/2025 art. 1(51)-(55) narrowed the 95% dividend exclusion and the PEX to holdings meeting new minimum requirements, from 1 January 2026. D.L. 38/2026 art. 11 repealed those commi and restored the previous regime, with effect from 1 January 2026 ([D.L. 38/2026 art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2026-03-27;38~art11!vig=2026-10-22)). For 2026 the 95% rules apply as they did in 2025.
 
@@ -114,7 +116,7 @@ The 2026 budget law (L. 199/2025) did not renew the reduced rate. A read of all 
 - **Weekend rule.** A payment deadline falling on a Saturday or public holiday moves to the next working day (general instructions 4.1).
 - **Form and channel.** Modello Redditi SC, filed electronically, usually through an authorised intermediary. Payment by F24, which VAT-registered businesses must make online (general instructions 4.1). The return can be filed from 15 April after a calendar year ends (general instructions 3.1).
 - **90-day grace.** A return filed within 90 days after the deadline is valid but penalised. After 90 days it counts as not filed, although the tax shown on it can still be collected (general instructions 3.1).
-- **Amounts below EUR 12** for each tax are not paid (general instructions 4.1).
+- **Amounts of EUR 12 or less** for each tax are not paid (general instructions 4.1).
 
 ## Penalties and interest
 
@@ -127,9 +129,9 @@ These are the rules of D.Lgs. 471/1997 and D.Lgs. 472/1997 as revised by D.Lgs. 
 | Understated income or tax (dichiarazione infedele) | 70% of the extra tax, minimum EUR 150 | art. 1(2) |
 | Late or missing payment of acconti or balance | 25% of the unpaid amount; 12.5% if paid within 90 days; within 15 days, 1/15 of the 12.5% per day late | [D.Lgs. 471/1997 art. 13(1)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-22) |
 
-**Ravvedimento operoso (voluntary correction, D.Lgs. 472/1997 art. 13).** Before the company has formal notice of an audit or assessment, the penalty is cut to a fraction of the minimum: 1/10 if a missed payment is made within 30 days; 1/9 within 90 days; 1/8 by the return deadline for the year of the violation; 1/7 after that; 1/10 of the minimum for a return filed up to 90 days late. The tax, the reduced penalty and interest at the legal rate, accruing day by day, are paid together ([D.Lgs. 472/1997 art. 13](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-22)).
+**Ravvedimento operoso (voluntary correction, D.Lgs. 472/1997 art. 13).** For taxes administered by the Agenzia delle Entrate, such as IRES, the correction stays open until an assessment or a liquidation notice (DPR 600/1973 arts. 36-bis and 36-ter) is served, even if an audit has started (art. 13(1-ter)); later fractions (1/6, 1/5, 1/4) apply once a verbale or a draft assessment (schema di atto) has been issued. Otherwise the penalty is cut to a fraction of the minimum: 1/10 if a missed payment is made within 30 days; 1/9 within 90 days; 1/8 by the return deadline for the year of the violation; 1/7 after that; 1/10 of the minimum for a return filed up to 90 days late. The tax, the reduced penalty and interest at the legal rate, accruing day by day, are paid together ([D.Lgs. 472/1997 art. 13(2)](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-22)). The legal rate (civil code art. 1284) is 1.60% a year from 1 January 2026, down from 2% in 2025, so days in 2025 accrue at 2% and days in 2026 at 1.60% ([MEF decree 10 December 2025, GU n. 289 of 13 December 2025](https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg)).
 
-Interest on tax assessed after audit, and the legal interest rate for 2026, were not fetched for this skill; see "Not yet confirmed".
+The interest rate on tax assessed after an audit was not fetched for this skill; see "Not yet confirmed".
 
 ## Cross-border points
 
@@ -239,7 +241,7 @@ expected:
 ## Ask the client first
 
 1. **Tax period and status.** Calendar year or not; ISA taxpayer or not (it decides 40/60 or 50/50 acconti); in a tax group (consolidato) or transparency option; any biennial arrangement (concordato preventivo biennale).
-2. **2025 return.** The 2025 IRES actually due, and whether the 20% IRES premiale was claimed. If it was, check the reserve has not been distributed during 2026 and the assets are still held, and recompute the 2026 acconti at 24%.
+2. **2025 return.** The 2025 IRES actually due, and whether the 20% IRES premiale was claimed. If it was, check the reserve has not been distributed during 2026 and the assets are still held, and recompute the 2026 acconti at 24%. Ask also whether any 2025 gain on business assets was spread over five years, because the 2026 acconti treat it as taxed in full.
 3. **Losses.** The loss schedule by year, which losses arose in the first three tax periods, and any transfer of control or change of main activity, including at parent level.
 4. **Financing.** Net interest expense, tax ROL, and ROL and interest carried forward.
 5. **Shareholdings.** Dividends received and shares sold in 2026, with holding dates, balance sheet classification and the subsidiaries' countries and activity, to test the 95% rules and the CFC rules.
@@ -254,6 +256,7 @@ expected:
 | TUIR art. 77 in the version from 1 January 2027 (repealed by D.Lgs. 117/2026) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art77!vig=2027-01-02 | 2026-10-22 |
 | TUIR art. 83, from accounts to taxable income | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art83!vig=2026-10-22 | 2026-10-22 |
 | TUIR art. 84, losses | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art84!vig=2026-10-22 | 2026-10-22 |
+| TUIR art. 86(4), gains on business assets, as replaced by L. 199/2025 art. 1(42) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art86!vig=2026-10-22 | 2026-10-22 |
 | TUIR art. 87, participation exemption | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art87!vig=2026-10-22 | 2026-10-22 |
 | TUIR art. 89, dividends (and its January to March 2026 version) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art89!vig=2026-10-22 | 2026-10-22 |
 | TUIR art. 95, directors' fees | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art95!vig=2026-10-22 | 2026-10-22 |
@@ -272,6 +275,7 @@ expected:
 | D.Lgs. 117/2026, new income tax code (arts. 310, 334, 376, 377) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117 | 2026-10-22 |
 | D.Lgs. 33/2025, payments code, art. 243 (applies from 1 January 2027) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2025-03-24;33 | 2026-10-22 |
 | D.Lgs. 471/1997 arts. 1 and 13, penalties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-22 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-22 | 2026-10-22 |
+| MEF decree 10 December 2025, legal interest rate 1.60% from 1 January 2026 (GU n. 289, 13 December 2025) | https://www.gazzettaufficiale.it/eli/id/2025/12/13/25A06705/sg | 2026-10-22 |
 | D.Lgs. 472/1997 art. 13, ravvedimento operoso | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-22 | 2026-10-22 |
 | DPR 600/1973 arts. 25, 26, 26-quater, 27, 27-bis, withholding | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973-09-29;600~art27!vig=2026-10-22 (and ~art25, ~art26, ~art26quater, ~art27bis) | 2026-10-22 |
 | D.L. 66/2014 art. 3(1), 26% rate | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2014-04-24;66~art3!vig=2026-10-22 | 2026-10-22 |
@@ -279,4 +283,4 @@ expected:
 | Agenzia delle Entrate, Redditi SC 2026 instructions (IRES premiale, quadro RN) | https://www.agenziaentrate.gov.it/portale/documents/20143/9962362/SC_istr_2026.pdf/7c2fd2b6-6264-88eb-5c92-9d9ecf81e2c4?t=1779895444801 | 2026-10-22 |
 | Agenzia delle Entrate, IRAP 2026 instructions (3.9% rate) | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 | 2026-10-22 |
 
-Not yet confirmed: the exact filing date for the 2026 return (Modello Redditi SC 2027 and its instructions are not yet published; 2 November 2027 is inferred from the weekend and holiday rule); how D.Lgs. 117/2026, D.Lgs. 33/2025 and D.Lgs. 173/2024 (all applying from 1 January 2027) affect the 2026 return, payments and penalties made in 2027; the legal interest rate for 2026 used in ravvedimento and the interest on assessed tax; the ISA revenue threshold that decides 50/50 acconti; the "taxable part" of royalties under DPR 600/1973 art. 25(4); treaty withholding rates; the super-depreciation measure in L. 199/2025 art. 1(427)-(436).
+Not yet confirmed: the exact filing date for the 2026 return (Modello Redditi SC 2027 and its instructions are not yet published; 2 November 2027 is inferred from the weekend and holiday rule); how D.Lgs. 117/2026, D.Lgs. 33/2025 and D.Lgs. 173/2024 (all applying from 1 January 2027) affect the 2026 return, payments and penalties made in 2027; the interest rate on assessed tax; the euro figure of the ISA revenue limit that decides 50/50 acconti (the general instructions 4.2 say only that each ISA approval decree sets it); the "taxable part" of royalties under DPR 600/1973 art. 25(4); treaty withholding rates; the super-depreciation measure in L. 199/2025 art. 1(427)-(436).
