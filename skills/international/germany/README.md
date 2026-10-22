@@ -15,7 +15,7 @@ Calendar tax year. Authorities: the Bundeszentralamt für Steuern and the local 
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax | source-cited draft |
-| IT-CORP, corporate income tax | (missing: Körperschaftsteuer rate and base, loss rules, dividend withholding; de-trade-tax covers Gewerbesteuer only) | |
+| IT-CORP, corporate income tax | de-corporate-tax (trade tax detail in de-trade-tax) | source-cited draft |
 | VAT | germany-vat-return | source-cited draft |
 | SC, social contributions | de-social-contributions | source-cited draft |
 | PR, payroll withholding | de-payroll, germany-payroll | source-cited draft |

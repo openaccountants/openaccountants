@@ -6,7 +6,7 @@ Version 1.0 — Effective April 2026
 
 ## Why we need a CLA
 
-Open Accountants is a mixed-licence project: software is AGPL-3.0-only, the Guides are under the source-available OA Guide License, and Glimpse Ltd also offers a commercial licence (see [LICENSING.md](LICENSING.md)). To maintain the ability to offer all of these, we need to ensure that every contribution can be distributed under each of them.
+Open Accountants is a mixed-licence project: software is AGPL-3.0-only, the skills (called Guides in the licence text) are under the source-available OpenAccountants Guide License v1.0, and Glimpse Ltd also offers a commercial licence for both (see [LICENSING.md](LICENSING.md)). To maintain the ability to offer all of these, we need to ensure that every contribution can be distributed under each of them.
 
 This CLA does **not** take away your rights to your contribution. You retain full copyright. You are granting Glimpse Ltd a license to use your contribution under the open-source, source-available, and commercial license tracks.
 
@@ -18,7 +18,7 @@ Once you have **accepted this CLA** as described under **[How to sign](#how-to-s
 
 ### 1. Grant of copyright license
 
-You grant Glimpse Ltd a perpetual, worldwide, non-exclusive, royalty-free, irrevocable license to use, reproduce, modify, distribute, sublicense, and otherwise exploit your Contribution, in whole or in part, under any license — including the AGPL-3.0 and any commercial license Glimpse Ltd may offer.
+You grant Glimpse Ltd a perpetual, worldwide, non-exclusive, royalty-free, irrevocable license to use, reproduce, modify, distribute, sublicense, and otherwise exploit your Contribution, in whole or in part, under any license, including the AGPL-3.0-only, the OpenAccountants Guide License v1.0 and any commercial license Glimpse Ltd may offer.
 
 ### 2. Grant of patent license
 
@@ -68,4 +68,4 @@ Contact: info@openaccountants.com
 
 ---
 
-*This CLA is modelled on the Apache Individual Contributor License Agreement v2.0 and adapted for the dual-licensing model used by Open Accountants.*
+*This CLA is modelled on the Apache Individual Contributor License Agreement v2.0 and adapted for the mixed-licence model used by Open Accountants.*

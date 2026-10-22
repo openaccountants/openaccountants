@@ -18,9 +18,9 @@ OpenAccountants is a library of Tax skills — tax rules written as plain markdo
 
 Always tell users to have AI-generated output reviewed by a qualified professional before filing.
 
-## Partner roster — accountant reviewers (sample, refreshed 2026-09-06)
+## Reviewing accountants (sample, refreshed 2026-09-06)
 
-These named practitioners have reviewed skills for their jurisdictions. The accountant-reviewed version of their jurisdictions' skills is signed under their name. This list is a hand-curated sample: `index.json` records the reviewer of every accountant-reviewed skill in its `reviewed_by` field (32 distinct reviewer names as at 2026-09-06), and the full Partner network is at https://www.openaccountants.com/network.
+These named practitioners have reviewed skills for their jurisdictions. The accountant-reviewed version of their jurisdictions' skills is signed under their name. This list is a hand-curated sample: `index.json` records the reviewer of every accountant-reviewed skill in its `reviewed_by` field (32 distinct reviewer names as at 2026-09-06), and the full accountant network is at https://www.openaccountants.com/network.
 
 - **South Africa (ZA):** Werner Britz CA(SA), 5 skills — [openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0](https://www.openaccountants.com/network/28a3ec1b-d699-4c5d-bb60-3114eedc59d0)
 - **Malta (MT):** Michael Cutajar CPA (Malta), 5 skills — [openaccountants.com/network](https://www.openaccountants.com/network)
@@ -87,6 +87,10 @@ When a user's situation matches one of these workflows, fetch the bundle and fol
 Trigger: any situation involving more than one country — relocation, exit, dual residency, foreign trust, company sale while moving.
 Trigger phrases: "I'm moving to [country]", "I'm a US citizen in [country]", "I'm relocating from A to B", "How do I structure my exit?", any mention of two or more countries.
 
+### Australia sole trader → `workflows/australia-sole-trader.md`
+Trigger: Australian freelancer, ABN holder or sole trader asking about their income tax, GST or BAS.
+Trigger phrases: "sole trader Australia", "ABN tax", "BAS", "PAYG instalments", "Australian freelancer tax".
+
 ### UK self-employed / sole trader → `workflows/uk-self-employed.md`
 Trigger: UK freelancer, contractor, sole trader, or self-employed person asking about their taxes.
 Trigger phrases: "I'm self-employed in the UK", "sole trader UK", "SA103", "Making Tax Digital", "UK freelancer taxes".
@@ -113,6 +117,10 @@ Trigger phrases: "self-employed in Portugal", "NHR Portugal", "IFICI", "IRS Port
 Trigger: UK taxpayer who has sold shares, crypto, residential property, or other chargeable assets.
 Trigger phrases: "capital gains UK", "sold shares UK", "crypto tax UK", "SA108", "CGT UK".
 
+### Australia company and trust → `workflows/australia-company-trust.md`
+Trigger: Australian Pty Ltd company or family trust: company tax, trust distributions, Division 7A, franking.
+Trigger phrases: "Pty Ltd tax", "family trust distribution", "Div 7A", "franking credits", "company tax return Australia".
+
 ## For accountants
 
 Licensed practitioners can review skills for their jurisdiction, put their name on each output, and earn from professional reviews.
@@ -121,7 +129,7 @@ Visit: https://www.openaccountants.com/for-accountants
 ## Live platform
 
 - Skill Library: https://www.openaccountants.com/skills
-- Partner network: https://www.openaccountants.com/network
+- Accountant network: https://www.openaccountants.com/network
 - MCP server: https://www.openaccountants.com/api/mcp
 - Bundle API: https://www.openaccountants.com/api/bundle/<CODE>
 

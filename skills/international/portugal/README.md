@@ -1,0 +1,31 @@
+---
+jurisdiction: PT
+applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
+not_applicable: {}
+---
+
+# Portugal: tax pack
+
+Calendar tax year for individuals; companies use the calendar year unless they adopt another period. Authority: the Autoridade Tributária e Aduaneira (AT), through the Portal das Finanças; social security through the Segurança Social. Euro. Individuals pay IRS, companies pay IRC (19% for periods starting in 2026, falling to 17% from 2028) with the derrama estadual and municipal surcharges; VAT (IVA) under EU rules.
+
+## Domains
+
+| Domain | Skill | Status |
+|---|---|---|
+| IT-IND, individual income tax | pt-income-tax (self-employed, Category B only, tax year 2025); portugal-crypto-tax. Missing: the employee's annual IRS return (Category A) and investment income (Categories E, F and G other than crypto) | partial: self-employed only |
+| IT-CORP, corporate income tax | pt-corporate-tax | source-cited draft |
+| VAT | pt-vat-return, portugal-vat-return | source-cited draft |
+| SC, social contributions | pt-social-contributions (self-employed, tax year 2025); employee and employer rates only inside portugal-payroll (tax year 2025) | source-cited draft, 2025 figures |
+| PR, payroll withholding | portugal-payroll (tax year 2025) | source-cited draft, 2025 figures |
+| TP, transfer pricing | pt-transfer-pricing | source-cited draft |
+| XB, cross-border | pt-foreign-source-treaties (foreign income of residents, tax year 2025), pt-nhr-ifici. Missing: non-residents with Portuguese income, and the residence rules for moving to or leaving Portugal | partial: residents only |
+
+The coverage report counts a domain as present when a skill's slug matches it. It does not check scope or tax year, so it shows this pack as complete. It is not: IT-IND and XB have the gaps named above, and SC and PR carry 2025 figures.
+
+Other skills in this folder (bookkeeping, e-invoicing, financial statements, formation, tax optimisation, return assembly) belong to the accounting milestone and are not counted here.
+
+## Official sources
+
+- Portal das Finanças, tax codes (CIRC, CIRS, CIVA, RGIT, LGT): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/ (read 2026-10-22)
+- Diário da República: https://diariodarepublica.pt (read 2026-10-22)
+- Segurança Social: https://www.seg-social.pt

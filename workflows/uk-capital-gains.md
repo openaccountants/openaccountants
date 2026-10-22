@@ -29,8 +29,8 @@
 ## Skills to load
 
 From the GB bundle:
-- `uk-capital-gains` — CGT rates, annual exempt amount, identification rules, BADR
-- `uk-income-tax` — income tax bands (needed for rate-band split)
+- `uk-capital-gains-sa108` — CGT rates, annual exempt amount, identification rules, BADR
+- `uk-income-tax-sa100` — income tax bands (needed for rate-band split)
 - `uk-crypto-tax` — if crypto is involved (section 104 pool for tokens)
 
 ## 6-phase structure
@@ -58,4 +58,4 @@ CGT, especially for property and business assets, is highly fact-specific. Recom
 
 ## Verifier
 
-Verified by James Power — [openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e)
+Reviewed by James Power — [openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e](https://www.openaccountants.com/network/30b2f478-3a97-40c4-b435-0678829b487e)

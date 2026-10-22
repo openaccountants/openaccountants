@@ -41,4 +41,4 @@ Sector-specific overlays. Load alongside your country / state package when your 
 
 For multi-sided businesses (e.g., e-commerce + content creator), load multiple verticals — they overlay rather than conflict.
 
-See [START-HERE.md](../../START-HERE.md) for persona-based routing.
+See the [README](../../README.md) for how to load skills into your AI.

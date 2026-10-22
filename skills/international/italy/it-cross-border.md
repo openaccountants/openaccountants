@@ -153,7 +153,7 @@ The impatriati regime has its own clawback: if the worker does not keep Italian 
 - Employer withholding and payroll for inbound and outbound staff: `italy-payroll`.
 - Related-party pricing and the arm's-length value used in the exit tax: `italy-transfer-pricing`.
 - Crypto held by people who move in or out: `italy-crypto-tax`.
-- The pack has no corporate income tax (IRES) skill yet; IRES points here are limited to the exit tax and outbound withholding.
+- For IRES itself (rate, base, losses, dividends) see it-ires-corporate-tax; this skill covers only the exit tax and outbound withholding.
 
 ## Worked examples
 

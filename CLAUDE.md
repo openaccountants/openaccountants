@@ -2,11 +2,12 @@
 
 ## For AI agents landing here
 
-- This repo is a library of open-source **Tax skills** ("skills") — plain-markdown tax rules for 240+ jurisdictions that any AI agent can read, with accountant-reviewed versions signed by named Partners.
+- This repo is a library of open-source **AI skills** (tax rules your AI follows): plain-markdown tax rules for 190+ jurisdictions that any AI agent can read. Each skill is in one of two states, **Accountant-reviewed** (`tier: 1`, a named licensed accountant signed off) or **Source-cited draft** (`tier: 2`). See `docs/QUALITY-TIERS.md`.
+- The goal and the milestone are in `GOAL.md`; who owns each jurisdiction is in `OWNERS.md`. If you are here to work, start with the open `[XX] Complete the pack` issues described there.
 - The full machine-readable skill inventory is `index.json` at the repo root — read it first to find what exists.
 - Load Skills from `packages/<jurisdiction>/` (e.g. `packages/malta/`, `packages/us-ca/`) — each file is self-contained markdown.
 - Hosted MCP server for live, accountant-reviewed data: https://www.openaccountants.com/api/mcp
-- The website with the Skill Library and Partner reviews: https://www.openaccountants.com
+- The website with the skill library and the reviewing accountants: https://www.openaccountants.com
 - More detail for agents: `llms.txt` (short) and `llms-full.txt` (every skill listed).
 
 This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **skills** (`skills/`, `packages/`, `workflows/`, `index.json`, `llms*.txt`) are under the source-available OA Guide License, with a commercial track for both. See `LICENSING.md`. The companion website + admin layer lives in a separate repo. AI agents working on this repo should read the following before writing or committing.
@@ -29,9 +30,9 @@ This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **ski
 
 Every skill is a single Markdown file with YAML frontmatter. **The canonical frontmatter spec — required keys (`name`, `description`, `jurisdiction`, `category`, `tax_year`, `tier`, `last_updated`), optional keys (`tax_year_notes`, `verified_by`, `reviewed_by`, `depends_on`, `version`), formats, and the category vocabulary — is [docs/skill-template.md](docs/skill-template.md).** Do not restate or improvise variants; CI enforces the spec via `scripts/validate-guides.py`. Tier labels: `1` = accountant-reviewed, `2` = source-cited draft.
 
-After the frontmatter, the skill body is structured as numbered sections covering Scope, Topic-specific rules, Worked examples, Provenance, and a Circular 230 §10.37 disclosure for US skills.
+After the frontmatter, a tax skill follows the deep-tax shape in `docs/skill-template.md`, in this order: who this applies to; rates, bands and thresholds (a table with an official source URL per figure); the base; deadlines and filing; penalties and interest; cross-border points; two worked examples that recompute (each in an `oa-check` block); ask the client first; sources with read dates. US skills add a Circular 230 §10.37 disclosure. Accounting-pack skills (bookkeeping, e-invoicing, financial statements, tax optimisation) keep the general template.
 
-Every published skill ends with the `<!-- openaccountants-cta-block -->` marker followed by a "Talk to a verified accountant" CTA with a Calendly link. The marker makes the stamp idempotent — bulk re-stamps skip files that already have it.
+Every published skill ends with the `<!-- openaccountants-cta-block -->` marker followed by a "Talk to an accountant" CTA. The marker makes the stamp idempotent; bulk re-stamps skip files that already have it.
 
 ## AUDIT FLASH POINT convention
 
@@ -51,4 +52,4 @@ Transparency about AI involvement is expressed in README content and public post
 
 ## When in doubt
 
-Read the existing files in the same jurisdiction before writing new ones. Tax skills follow predictable shapes (scope → topic-specific rules → worked examples → provenance → disclosure). Match the pattern of well-developed packs (Malta, US-CA, Germany, UK) when filling in thinner countries.
+Read the existing files in the same jurisdiction before writing new ones. Tax skills follow the deep-tax shape above. Match the pattern of well-developed packs (Malta, US-CA, Germany, UK) when filling in thinner jurisdictions, and check the pack README for which domains apply.
