@@ -2,8 +2,6 @@
 jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  IT-IND: box 2 (substantial interest) income is screened in nl-income-tax but not computed; no skill computes box 2 tax on a resident shareholder's dividends and disposal gains (nl-cross-border applies the 2026 box 2 rates only to the emigration exit charge)
 ---
 
 # Netherlands: tax pack
@@ -14,7 +12,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | nl-income-tax, nl-deductions, nl-zzp-deductions | source-cited draft |
+| IT-IND, individual income tax | nl-income-tax, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | source-cited draft |
 | IT-CORP, corporate income tax | nl-corporate-tax | source-cited draft |
 | VAT | nl-vat-return, netherlands-vat-return | source-cited draft |
 | SC, social contributions | nl-social-contributions | source-cited draft |
