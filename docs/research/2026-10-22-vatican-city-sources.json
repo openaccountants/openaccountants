@@ -1,0 +1,37 @@
+{
+  "jurisdiction": "VA",
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.vatican.va/roman_curia/secretariat_state/2015/documents/rc-seg-st-20150401_convenzione-materia-fiscale-italia-testo-definitivo.pdf",
+      "bytes": 33018,
+      "sha256": "11f1844b8f41cef1c92cc0471c637719cfce61fc632e356578728d3d58b139c1",
+      "read": "Articles 1, 2, 3 application window, 5, 8, 13\u201314; full PDF downloaded."
+    },
+    {
+      "url": "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "retrieval": "Full official web text; treaty article 17 read."
+    },
+    {
+      "url": "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2016/10/17/0743/01656.html",
+      "retrieval": "Full implementation text read."
+    },
+    {
+      "url": "https://www.ior.va/en/transparency/",
+      "retrieval": "Official current institutional page; operating convention mechanism."
+    }
+  ],
+  "allocation": {
+    "ryan_tree": "2d2e198012cfd827357eee3ef0a4e65316692fa6",
+    "truncated": false,
+    "matching_paths": []
+  },
+  "status": "Source-cited draft; review pending",
+  "gaps": [
+    "Current asset-specific Italian tax rates",
+    "Residence and payer-status determinations",
+    "Full amendment and current election/form audit",
+    "Pension and social-security treatment",
+    "Other domestic and cross-border topics"
+  ]
+}
