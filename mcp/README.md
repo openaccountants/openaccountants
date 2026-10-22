@@ -37,9 +37,11 @@ Special packages are also available:
 
 | Package | What's inside |
 |---------|--------------|
-| `_cross-border` | 37 skills — multi-jurisdiction orchestrator, EU rules, OECD treaty defaults, 70+ treaty corridor WHT rates |
-| `_verticals` | 14 industry-specific skills — banking, charity / nonprofit, construction, consultant, content creator, e-commerce, freelance developer, insurance, investment funds / REITs, medical, oil & gas, property investor, SaaS, shipping / aviation |
-| `_integrations` | 10 platform export formats — Xero, QuickBooks, Stripe, Wise, PayPal, Revolut, Amazon, Shopify, FreeAgent, Sage |
+| `_cross-border` | Multi-jurisdiction orchestrator, EU rules, OECD treaty defaults, treaty corridor WHT rates |
+| `_verticals` | Industry-specific skills (e-commerce, freelance developer, property investor, SaaS, and more) |
+| `_integrations` | Platform export formats (Xero, QuickBooks, Stripe, Wise, PayPal, Shopify, and more) |
+
+Counts per package come from `index.json` at the repo root, never from this file.
 
 ## Tools
 
@@ -95,7 +97,7 @@ Guided workflows that turn the skills into a tax engine, not just a library:
 | `skill-feedback` | `skill_slug`, `country` | Collect structured feedback on a skill after use. |
 | `skill-review` | `skillSlug`, `scenario` | Load a skill's sections and apply them to one scenario. |
 
-> Note: the on-disk server reads the open-source markdown in `packages/`. Most skill files don't carry a `jurisdiction` field, so it's inherited from the package directory (the folder name for `us-XX`/`ca-XX`, otherwise the code its siblings declare). Quality tier is derived from a file's explicit `tier` frontmatter: only `tier: 1` **plus** a named reviewer (`reviewed_by`, or the legacy `verified_by`) reports as accountant-verified. A reviewer name on its own no longer implies tier 1, and a non-tier-1 file's reviewer is not exposed as `verified_by`.
+> Note: the on-disk server reads the open-source markdown in `packages/`. Most skill files don't carry a `jurisdiction` field, so it's inherited from the package directory (the folder name for `us-XX`/`ca-XX`, otherwise the code its siblings declare). Quality tier is derived from a file's explicit `tier` frontmatter: only `tier: 1` **plus** a named reviewer (`reviewed_by`, or the legacy `verified_by`) reports as accountant-reviewed. A reviewer name on its own no longer implies tier 1, and a non-tier-1 file's reviewer is not exposed as `verified_by`.
 
 > **Canadian users on a development (clone) install — important:** the `ca-XX/` provincial packages (`ca-on`, `ca-qc`, `ca-bc`, …) are **generated**, not checked in. After cloning, run `python3 scripts/build-packages.py` once to materialise them. Until you do, the MCP won't return Canadian provincial skills via `list_skills(jurisdiction="CA-ON")` — only the federal Canadian files visible under `packages/canada/`. (The PyPI wheel ships with the packages already built.)
 

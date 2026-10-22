@@ -2,7 +2,7 @@
 
 ## Our commitment
 
-OpenAccountants brings together developers and licensed accounting professionals from 190+ jurisdictions. We are committed to a harassment-free, professional experience for everyone, regardless of background, identity, credential, or country.
+OpenAccountants brings together developers and licensed accounting professionals from many countries. We are committed to a harassment-free, professional experience for everyone, regardless of background, identity, credential, or country.
 
 ## Standards
 
