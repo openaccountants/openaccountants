@@ -58,7 +58,7 @@ See also: `albania-income-tax` (individuals, self-employed, sole traders), `alba
 
 ## The taxable base
 
-**Starting point.** Taxable profit is all income in the tax year less deductible expenses, determined from the financial statements prepared under the accounting law and adjusted by Law 29/2023 (art. 43). All activities of an entity are business activities and all its income is business income (art. 40(1)). Expenses are deductible if they are actually incurred to earn profit, are in the business interest, are documented and are not restricted (art. 48). The supporting document is the invoice under the invoice and fiscalisation law (art. 62(2)).
+**Starting point.** Taxable profit is all income in the tax year less deductible expenses, determined from the financial statements prepared under the accounting law and adjusted by Law 29/2023 (art. 43). All activities of an entity are business activities and all its income is business income (art. 40(1)). From the Law 81/2025 amendment, sponsorship received is not taxable income of the recipient up to the limits in art. 50(1)(p) (art. 40(1/1)). Expenses are deductible if they are actually incurred to earn profit, are in the business interest, are documented and are not restricted (art. 48). The supporting document is the invoice under the invoice and fiscalisation law (art. 62(2)).
 
 **Main add-backs** (art. 50(1)):
 - Purchase and improvement of land; cost of depreciable assets (relieved through tax depreciation instead).
@@ -99,7 +99,7 @@ See also: `albania-income-tax` (individuals, self-employed, sole traders), `alba
 
 **Group relief or fiscal unity.** Law 29/2023 has no group relief or fiscal unity. Each entity files and pays on its own.
 
-**Reorganisations** (art. 46). Mergers, divisions, share exchanges and branch transfers between Albanian residents are tax neutral, except for cash consideration above 10% of the nominal value of shares issued.
+**Reorganisations** (art. 46). Mergers, divisions, share exchanges and transfers of a branch of activity do not trigger tax on gains on the assets transferred, except for any cash payment beyond the "qualifying cash payment" (cash of up to 10% in total of the nominal value of the shares or quotas issued or transferred) (art. 46(2), (3)(dh)). The receiving company takes over the transferor's book values, depreciation and reserves (art. 46(4)). A branch transfer qualifies only if the branch is in Albania and both companies are Albanian residents (art. 46(7)).
 
 **Foreign tax credit** (art. 42). Foreign tax on foreign-source income is credited, limited to the Albanian tax on that income, country by country.
 
