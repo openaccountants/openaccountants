@@ -1,0 +1,36 @@
+{
+  "jurisdiction": "HT",
+  "retrieved_at": "2026-10-22",
+  "source": "https://mef.gouv.ht/storage/app/uploads/public/6ac/fb4/9bc/6acfb49bca658143176190.pdf",
+  "sha256": "9b00c3196dab63be29fae182c726e25628c4fd2455fd97b2c84f965c5b3d04fe",
+  "enactment": "Le Moniteur Special 48-A, 30 September 2026",
+  "effective_date": "2026-10-01",
+  "visually_checked_pages": [
+    12,
+    13,
+    37,
+    45,
+    49,
+    169
+  ],
+  "text_checked_articles": [
+    "13\u201328",
+    "98\u2013104",
+    "125\u2013126",
+    "132\u2013133",
+    "152",
+    "540\u2013543"
+  ],
+  "review_status": "independent source and accountant review pending",
+  "gaps": [
+    "Ministerial implementation decisions under article 540",
+    "Occupational circulars under article 103(2)",
+    "Cross-transition remuneration and first new-code TMS filing period",
+    "Social insurance and remaining country topics"
+  ],
+  "allocation_check": {
+    "shared_main": "no Haiti source paths",
+    "ryan_tree": "2d2e198012cfd827357eee3ef0a4e65316692fa6",
+    "ryan_matching_paths": []
+  }
+}
