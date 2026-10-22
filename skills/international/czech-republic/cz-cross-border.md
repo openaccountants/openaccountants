@@ -46,16 +46,17 @@ A resident is taxed on worldwide income. A non-resident is taxed only on Czech-s
 |---|---|---|
 | Individual income tax, base up to 36 times the average wage | 15% | [ITA § 16(1)](https://www.zakonyprolidi.cz/cs/1992-586) |
 | Individual income tax, base above 36 times the average wage | 23% | ITA § 16(1) |
-| Average wage for 2026 (tax purposes use the social insurance figure, ITA § 21g(2)) | CZK 48,967 (general assessment base 2024 of CZK 46,278 × coefficient 1.0581, rounded up) | [Act 589/1992 § 15a(4)](https://www.zakonyprolidi.cz/cs/1992-589); [Government Regulation 365/2025 § 1](https://www.zakonyprolidi.cz/cs/2025-365) |
+| Average wage for 2026 (tax purposes use the social insurance figure, ITA § 21g(2)) | CZK 48,967 (general assessment base 2024 of CZK 46,278 × coefficient 1.0581, rounded up) | [Act 589/1992 § 23b(4)](https://www.zakonyprolidi.cz/cs/1992-589); [Government Regulation 365/2025 § 1](https://www.zakonyprolidi.cz/cs/2025-365) |
 | 23% threshold for 2026 | CZK 1,762,812 (36 × 48,967) | computed from the two rows above |
 | Basic taxpayer credit (sleva na poplatníka), residents and non-residents | CZK 30,840 a year | ITA § 35ba(1)(a) and (2); [Finanční správa](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace) |
-| Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident | Only if resident in the EU or EEA and at least 90% of world income is Czech-source | ITA § 35ba(2); Finanční správa |
+| Spouse credit, disability credits, ZTP/P credit and child benefit for a non-resident | Only if resident in the EU or EEA and at least 90% of world income is Czech-source | ITA § 35ba(2) (credits), § 35c(5) (child benefit); Finanční správa |
 | Special inbound regime for new arrivals | None in the ITA; arrivals are taxed under the normal rules | ITA (no such provision) |
 | Exit tax, individuals | None | ITA § 23g applies to corporate taxpayers only |
 | Corporate income tax rate (also applies to the corporate exit charge) | 21% | [ITA § 21(1)](https://www.zakonyprolidi.cz/cs/1992-586) |
 | Withholding tax on dividends and other profit shares paid to a non-resident | 15% | ITA § 36(1)(b) and (2) |
 | Withholding tax on interest paid to a non-resident | 15% | ITA § 36(1)(b) |
-| Withholding tax on royalties, services in Czechia, independent professional fees, board fees | 15% | ITA § 36(1)(a) |
+| Withholding tax on royalties, services in Czechia, independent professional and artists' fees, board fees paid to a company | 15% | ITA § 36(1)(a)(1), with § 22(1)(c), (f) and (g)(1), (2), (6) |
+| Board fees paid to a non-resident individual | Not under § 36: taxed as employment income through payroll; a return is required if they exceed 36 times the average wage | ITA § 22(1)(g)(15), § 38g(6) |
 | Withholding on the above to a resident of a state outside the EU and EEA with no tax treaty and no tax information exchange agreement in force | 35% | ITA § 36(1)(c) |
 | Withholding on finance lease payments | 5% | ITA § 36(1)(d) |
 | Tax security (zajištění daně) on other Czech-source income of non-EU and non-EEA residents | 10% of the payment | ITA § 38e(1)(c) and (2)(c) |
@@ -80,7 +81,7 @@ The tax is computed on the base after deductions, rounded down to whole hundreds
 
 How the tax is collected depends on the income:
 
-- **Final withholding at 15% or 35%** applies to the § 36 items (dividends, interest, royalties, service fees, board fees). The base is the gross payment with no deductions (ITA § 36(3)). The withholding is final unless the rules below allow a return.
+- **Final withholding at 15% or 35%** applies to the § 36 items (dividends, interest, royalties, service fees, board fees paid to a company). The base is the gross payment with no deductions (ITA § 36(3)). The withholding is final unless the rules below allow a return.
 - **Return with a tax security.** Other Czech-source income of a non-resident from outside the EU and EEA (for example rent from a business tenant, or the sale of a share in a Czech s.r.o.) is taxed on a return at normal rates. The payer withholds a 10% security (1% for bonds, investment instruments and assigned receivables) as an advance (ITA § 38e). There is no security on retail sales or on rent paid by individuals for a home to live in (ITA § 38e(4)).
 - **Employment income** is taxed through payroll advances like a resident's.
 - **EU and EEA residents** can include most withheld-income items (not dividends) in a Czech return; the withholding is then credited and any excess refunded (ITA § 36(7)).
@@ -202,9 +203,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 586/1992 Coll., Income Taxes Act, version in force 1 August to 31 December 2026: §§ 2, 9, 16, 16b, 17, 19, 21, 21g, 22, 23g, 35ba, 36, 38d, 38e, 38f, 38fa, 38g, 38zg | https://www.zakonyprolidi.cz/cs/1992-586 | 2026-10-22 |
+| Act No. 586/1992 Coll., Income Taxes Act, version in force 1 August to 31 December 2026: §§ 2, 9, 16, 16b, 17, 19, 21, 21g, 22, 23g, 35ba, 35c, 36, 38d, 38e, 38f, 38fa, 38g, 38zg | https://www.zakonyprolidi.cz/cs/1992-586 | 2026-10-22 |
 | Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 136, 137, 250, 251, 251a, 252, 253 | https://www.zakonyprolidi.cz/cs/2009-280 | 2026-10-22 |
-| Act No. 589/1992 Coll., social security premiums, § 15a(4) (average wage) | https://www.zakonyprolidi.cz/cs/1992-589 | 2026-10-22 |
+| Act No. 589/1992 Coll., social security premiums, § 23b(4) (average wage) | https://www.zakonyprolidi.cz/cs/1992-589 | 2026-10-22 |
 | Government Regulation No. 365/2025 Coll., § 1 (general assessment base 2024 and coefficient) | https://www.zakonyprolidi.cz/cs/2025-365 | 2026-10-22 |
 | Government Regulation No. 351/2013 Coll., § 2 (late payment interest: repo plus 8 points) | https://www.zakonyprolidi.cz/cs/2013-351 | 2026-10-22 |
 | Finanční správa, Fyzické osoby: obecné informace (residence, filing dates, credits for non-residents) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace | 2026-10-22 |

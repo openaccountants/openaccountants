@@ -2,8 +2,7 @@
 jurisdiction: CZ
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by:
-  SC: cz-social-health
+covered_by: {}
 ---
 
 # Czech Republic: tax pack
@@ -14,10 +13,10 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cz-income-tax (self-employed focus) | source-cited draft |
+| IT-IND, individual income tax | cz-income-tax (self-employed only, tax year 2025; employment income under ITA § 6 is not covered) | partial, source-cited draft |
 | IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
-| SC, social contributions | cz-social-health | source-cited draft |
+| SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
 | PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
 | TP, transfer pricing | (missing: arm's length rule in ITA § 23(7), documentation, advance pricing agreements) | |
 | XB, cross-border | cz-cross-border | source-cited draft |
