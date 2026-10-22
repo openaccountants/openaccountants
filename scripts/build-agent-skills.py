@@ -155,26 +155,21 @@ def skill_md(slug: str, meta: dict, body: str) -> str:
     return "\n".join(lines) + "\n\n" + body.strip() + live
 
 
-TEAM = "OpenAccountants team"
 
+def stamp_readme(text: str, built: dict, jurisdictions: list[str], reviewed: int | None = None) -> str:
+    """Rewrite the counts block between the oa-skills-stats markers; the rest is hand-written.
 
-def stamp_readme(text: str, built: dict, jurisdictions: list[str]) -> str:
-    """Rewrite the counts block between the oa-skills-stats markers; the rest is hand-written."""
-    def is_team(v: dict) -> bool:
-        return bool(v.get("authored_by")) and TEAM in v["authored_by"]
-
-    def is_named(v: dict) -> bool:
-        a = v.get("authored_by") or ""
-        return bool(v.get("reviewed_by")) or (bool(a) and TEAM not in a)
-
-    named = sum(1 for v in built.values() if is_named(v))
-    team = sum(1 for v in built.values() if is_team(v) and not is_named(v))
-    drafts = len(built) - team - named
+    Two quality states only: accountant-reviewed (tier 1 with a named reviewer) and
+    source-cited draft. `reviewed` is the tier-1 count from build(); when it is not
+    given, a named reviewer in metadata is the fallback signal."""
+    if reviewed is None:
+        reviewed = sum(1 for v in built.values() if v.get("reviewed_by"))
+    drafts = len(built) - reviewed
     block = (
         "<!-- oa-skills-stats:start -->\n"
         f"**{len(built):,} skills** across **{len(jurisdictions)} jurisdictions**. "
-        f"{named} have a named accountant behind them (author or reviewer, in `metadata`), "
-        f"{team} were built by the OpenAccountants team, and {drafts} are source-cited drafts with no name yet.\n"
+        f"{reviewed} are accountant-reviewed (a named accountant in `metadata.reviewed_by`); "
+        f"the other {drafts:,} are source-cited drafts.\n"
         "<!-- oa-skills-stats:end -->"
     )
     return re.sub(r"<!-- oa-skills-stats:start -->.*?<!-- oa-skills-stats:end -->", block, text, flags=re.S)
@@ -194,6 +189,7 @@ def iter_source_files():
 def build(plugin_countries: set[str], check_only: bool) -> int:
     built: dict[str, dict] = {}
     staged: dict[Path, str] = {}
+    reviewed = 0  # tier 1 with a named reviewer: the only accountant-reviewed state
     for src in iter_source_files():
         text = src.read_text(encoding="utf-8")
         meta, body = split_frontmatter(text)
@@ -213,6 +209,8 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
             "reviewed_by": str(meta.get("reviewed_by") or "").strip() or None,
             "tax_year": meta.get("tax_year"),
         }
+        if str(meta.get("tier")).strip() == "1" and built[slug]["reviewed_by"]:
+            reviewed += 1
         if j.split("-")[0] in plugin_countries:
             staged[PLUGIN_SKILLS_DIR / slug / "SKILL.md"] = content
 
@@ -225,7 +223,7 @@ def build(plugin_countries: set[str], check_only: bool) -> int:
     staged[OUT_DIR / "index.json"] = json.dumps(index, indent=1, ensure_ascii=False) + "\n"
     readme = OUT_DIR / "README.md"
     if readme.exists():
-        staged[readme] = stamp_readme(readme.read_text(encoding="utf-8"), built, index["jurisdictions"])
+        staged[readme] = stamp_readme(readme.read_text(encoding="utf-8"), built, index["jurisdictions"], reviewed)
 
     # Stale folders (skills retired or renamed since the last build) go away.
     stale: list[Path] = []

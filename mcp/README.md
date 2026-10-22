@@ -198,6 +198,23 @@ Add to `.cursor/mcp.json` in the project (or via Cursor Settings > MCP):
 
 Run `openaccountants-mcp` (or `python -m openaccountants_mcp`) as a **stdio** transport server.
 
+#### Other clients
+
+Any client that reads an `mcpServers` map works the same way. Google Antigravity, for example, takes either the hosted endpoint or the local package in its MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "openaccountants": {
+      "url": "https://www.openaccountants.com/api/mcp",
+      "transport": "streamable-http"
+    }
+  }
+}
+```
+
+For a local install, `pip install openaccountants-mcp` and use `"command": "python", "args": ["-m", "openaccountants_mcp.server"]` with `"env": {"MCP_TRANSPORT": "stdio"}` instead of `url`. Tell the agent to compute only from the rates and thresholds in the loaded skills, never from memory, and to flag anything it assumed for an accountant to check.
+
 ### Start chatting
 
 > Help me with my 2025 taxes. Here's my bank statement.
