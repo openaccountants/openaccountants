@@ -19,3 +19,9 @@ Material unresolved point: article 1668 references the third paragraph of 219(I)
 Added nil-return obligations, TGCA service/fixed-asset input non-offset rule and differentiated results/instalments mailbox routing to existing Guides; versions advanced to 0.2. Hashed the 2026 business handbook and current homepage. Handbook pages 6, 8, 11 read. January homepage notice includes a paper exception for no internet/inability to scan even though another sentence rejects paper generally; Guide preserves the express exception. No email was sent and no payment made.
 
 Handbook page 8 loosely describes TGCA periodicity by turnover and omits the qualifying 2% housing rate. Neither simplification replaces articles 263 and 259 in the existing Guide. Handbook later payment advice also mentions cash/cheques, conflicting with its own January-2026 page 6 and the homepage; the dated current digital instruction is used. The handbook confirms corporate final rates but does not settle article 1668's instalment cross-reference. Independent review and amendment reconciliation remain open.
+
+## Licence and patente boundary pass
+
+Read articles 1447-0 through 1447-0L, with detailed focus on B, D, H, J bis and K. Added licence calculation and filing Guide. Article B caps only area component at 2,500; handbook page 9 appears to cap the overall licence. Used code, flagged discrepancy. Examples 40/40.9/100/600 m² yield 300/300/600/2,800 before other taxes. Creation fixed-fee relief depends on declaration; 1 January takeover exception preserved.
+
+Unresolved: article K does not assign exactly 1 June start to its before/after limbs; article J bis still names Regulation 1407/2013, requiring current aid-law reconciliation. No automatic 2026 abatement claimed. Patente rate and additional levies not verified from operative rate deliberations, so no total business-tax bill presented. Independent review remains outstanding.

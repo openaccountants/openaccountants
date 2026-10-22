@@ -7,7 +7,7 @@
       "sha256": "0e7ed0d696106f659023c5c16f54b93ce319f3c74d3f1738757316d7e111b88c",
       "bytes": 3654410,
       "retrieval": "Complete PDF downloaded; pdftotext layout extraction; relevant articles read in full for claims included. Repeat web open failed; downloaded PDF remained available.",
-      "locators": "Articles 250\u2013264, printed pages 305\u2013314; cover consolidation and authority notice; company-tax articles 209, 219, 223 and 1668"
+      "locators": "Articles 250\u2013264, printed pages 305\u2013314; cover consolidation and authority notice; company-tax articles 209, 219, 223 and 1668; articles 1447-0 through 1447-0L"
     },
     {
       "url": "https://www.impots-saint-martin.fr/files/file/News/20%20PAGES%20LIVRET%20FISCAL%20COLLECTIVITE.pdf",
@@ -37,6 +37,10 @@
     "Affordable housing eligibility regulation",
     "Detailed invoice controls and filing implementation",
     "Other country topics",
-    "Article 1668 instalment cross-reference to older article 219 paragraph"
+    "Article 1668 instalment cross-reference to older article 219 paragraph",
+    "Licence area-component cap discrepancy with handbook",
+    "Exact 1 June start declaration boundary",
+    "Current de minimis law for patente start-up abatements",
+    "Operative patente and additional-levy rate deliberations"
   ]
 }
