@@ -86,40 +86,44 @@ def domains_of(guide):
     return found
 
 
+def _domain_map(block, key):
+    """Read an indented `KEY:\n  CODE: value` block from README frontmatter."""
+    out = {}
+    m = re.search(rf"^{key}:\s*\n((?:[ \t]+.*\n?)+)", block, re.MULTILINE)
+    if m:
+        for line in m.group(1).splitlines():
+            km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
+            if km:
+                out[km.group(1)] = km.group(2).strip().strip("'\"")
+    return out
+
+
 def read_pack_readme(pack_dir):
-    """Return (applicable, not_applicable, covered_by) from a pack README frontmatter.
+    """Return (applicable, not_applicable, covered_by, partial) from a pack README frontmatter.
 
     covered_by maps a domain code to the slug that covers it when the slug
-    tokens would not say so (for example IT-CORP: mt-company-tax)."""
+    tokens would not say so (for example IT-CORP: mt-company-tax).
+    partial maps a domain code to what its skills leave out (for example
+    SC: self-employed only); such a domain counts as missing until the gap
+    is closed, because a skill's presence is not coverage."""
     if not pack_dir:
-        return None, {}, {}
+        return None, {}, {}, {}
     path = os.path.join(REPO_ROOT, pack_dir, "README.md")
     if not os.path.isfile(path):
-        return None, {}, {}
+        return None, {}, {}, {}
     with open(path, encoding="utf-8", errors="replace") as fh:
         text = fh.read()
     if not text.startswith("---"):
-        return None, {}, {}
+        return None, {}, {}, {}
     block = text.split("---", 2)[1] if text.count("---") >= 2 else ""
     applicable = None
-    not_applicable = {}
-    covered_by = {}
-    m = re.search(r"^covered_by:\s*\n((?:[ \t]+.*\n?)+)", block, re.MULTILINE)
-    if m:
-        for line in m.group(1).splitlines():
-            km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
-            if km:
-                covered_by[km.group(1)] = km.group(2).strip().strip("'\"")
+    covered_by = _domain_map(block, "covered_by")
+    partial = _domain_map(block, "partial")
     m = re.search(r"^applicable:\s*\[([^\]]*)\]", block, re.MULTILINE)
     if m:
         applicable = [x.strip().strip("'\"") for x in m.group(1).split(",") if x.strip()]
-    m = re.search(r"^not_applicable:\s*\n((?:[ \t]+.*\n?)+)", block, re.MULTILINE)
-    if m:
-        for line in m.group(1).splitlines():
-            km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
-            if km:
-                not_applicable[km.group(1)] = km.group(2).strip().strip("'\"")
-    return applicable, not_applicable, covered_by
+    not_applicable = _domain_map(block, "not_applicable")
+    return applicable, not_applicable, covered_by, partial
 
 
 def is_stale(guide, today):
@@ -156,9 +160,10 @@ def build_report(today=None):
         present = set()
         for g in guides:
             present |= domains_of(g)
-        applicable, not_applicable, covered_by = read_pack_readme(pack_dir)
+        applicable, not_applicable, covered_by, partial = read_pack_readme(pack_dir)
         slugs = {g["slug"] for g in guides}
         present |= {code for code, slug in covered_by.items() if slug in slugs}
+        present -= set(partial)
         required = set(applicable) if applicable is not None else set(DOMAIN_CODES)
         required -= set(not_applicable)
         missing = sorted(required - present, key=DOMAIN_CODES.index)
@@ -174,6 +179,7 @@ def build_report(today=None):
             "present": sorted(present, key=DOMAIN_CODES.index),
             "missing": missing,
             "not_applicable": not_applicable,
+            "partial": partial,
             "has_readme": applicable is not None or bool(not_applicable),
             "complete": not missing,
         })
@@ -183,7 +189,7 @@ def build_report(today=None):
             rows.append({
                 "code": code, "name": info.get("name") or code, "region": info.get("region") or "unassigned",
                 "owner": info.get("owner") or "open", "dir": info.get("dir") or "", "skills": 0, "reviewed": 0,
-                "stale": 0, "present": [], "missing": list(DOMAIN_CODES), "not_applicable": {},
+                "stale": 0, "present": [], "missing": list(DOMAIN_CODES), "not_applicable": {}, "partial": {},
                 "has_readme": False, "complete": False,
             })
     rows.sort(key=lambda r: (r["owner"], r["region"], r["code"]))
