@@ -1,0 +1,27 @@
+{
+  "jurisdiction": "RE",
+  "retrieved_at": "2026-10-22",
+  "status": "source-cited draft; independent review pending",
+  "sources": [
+    {
+      "url": "https://www.douane.gouv.fr/sites/default/files/2025-07/16/Circulaire-octroi-de-mer10072025.pdf",
+      "sha256": "b49d539c44f19b7bdd2e6c20c4d229975e0baa44c0c05333d9b9acbff2faaf0c",
+      "retrieval": "Downloaded official PDF; pdftotext extraction read; sections 16\u201322, 102\u2013107 and statutory annex article 2 checked."
+    },
+    {
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053545622/2026-06-23",
+      "retrieval": "Web search returned article 2 text and 21 February 2026 effective date; direct current-date open failed; no downloaded-byte hash claimed."
+    }
+  ],
+  "gaps": [
+    "Full consolidated-law audit through 22 October 2026, including recodification effects",
+    "Current regional tariff and exemption decisions",
+    "Current identification and filing channel",
+    "Independent source/accountant review"
+  ],
+  "arithmetic": {
+    "six_month_threshold": 275000.0,
+    "exact_threshold_is_inclusive": true,
+    "production_300000_services_400000": true
+  }
+}
