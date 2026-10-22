@@ -7,7 +7,7 @@
       "sha256": "0e7ed0d696106f659023c5c16f54b93ce319f3c74d3f1738757316d7e111b88c",
       "bytes": 3654410,
       "retrieval": "Complete PDF downloaded; pdftotext layout extraction; relevant articles read in full for claims included. Repeat web open failed; downloaded PDF remained available.",
-      "locators": "Articles 250\u2013264, printed pages 305\u2013314; cover consolidation and authority notice"
+      "locators": "Articles 250\u2013264, printed pages 305\u2013314; cover consolidation and authority notice; company-tax articles 209, 219, 223 and 1668"
     }
   ],
   "allocation": {
@@ -22,6 +22,7 @@
     "Full sector exemption analysis",
     "Affordable housing eligibility regulation",
     "Detailed invoice controls and filing implementation",
-    "Other country topics"
+    "Other country topics",
+    "Article 1668 instalment cross-reference to older article 219 paragraph"
   ]
 }
