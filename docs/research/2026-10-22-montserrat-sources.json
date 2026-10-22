@@ -1,0 +1,26 @@
+{
+  "jurisdiction": "MS",
+  "sources": [
+    {
+      "url": "https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf",
+      "retrieved": "2026-10-22",
+      "status": "official PDF downloaded and text read",
+      "sha256": "12d5c099049b0c596cb3365c00c995e26b9a67332d8c5cf2dea34c0199918364",
+      "scope": "Sections 13\u201316, 36, 39, 43, 50, 52 and Schedule 1; personal-tax drafting gap also reviewed"
+    },
+    {
+      "url": "https://parliament.ms/wp-content/uploads/2026/05/18.09-Social-Security-Act.pdf",
+      "retrieved": "2026-10-22",
+      "status": "official PDF downloaded and text read",
+      "sha256": "331b7369afa29908456deb7907418f0efde9610231b5b2afe68f98c7d19089b7",
+      "scope": "Contribution regulations 2,4,5,12 and Schedule; section 2 pensionable age"
+    },
+    {
+      "url": "https://socialsecurity.ms/wp-content/uploads/2025/12/Monthly-Rates-2026.pdf",
+      "retrieved": "2026-10-22",
+      "status": "official PDF downloaded and text read",
+      "sha256": "fbbc2762da85514bd1b1788b7438e9664a4f7beca5767bf6365afa45a2f61d17",
+      "scope": "2026 employee and employer table; first numeric page visually inspected"
+    }
+  ]
+}

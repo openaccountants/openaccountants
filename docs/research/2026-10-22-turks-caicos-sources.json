@@ -1,0 +1,56 @@
+{
+  "jurisdiction": "TC",
+  "sources": [
+    {
+      "url": "https://tcinhip.tc/wp-content/uploads/08.10-National-Health-Insurance-Ordinance-1.pdf",
+      "status": "Downloaded official 2021 consolidation; contribution regulations 3\u201310 read; printed page 43 visually checked",
+      "retrieved": "2026-10-22",
+      "sha256": "92c6e354150eb84c3458ef84c16339feb7b3ca74a6c8e8ce2cc7c806d26de29c"
+    },
+    {
+      "url": "https://www.tcinib.tc/contribution-rates/",
+      "status": "Browser-readable official administrative rates; self-employed conflict unresolved",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://www.tcinib.tc/about-us/",
+      "status": "Private-sector scope and effective date; self-employed rate differs",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://www.tcinib.tc/faq/",
+      "status": "Employer duties and portal",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://tcinhip.tc/billing/",
+      "status": "Administrative submission and payment dates",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://www.gov.tc/revenue/htt",
+      "status": "Browser-readable official guidance; direct curl returned 404",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://www.gov.tc/revenue/faqs",
+      "status": "Payment calendar; retention conflict",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://gov.tc/revenue/streams",
+      "status": "Rate corroboration",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://www.gov.tc/revenue/news/inland-revenue-department-introduces-automated-monthly-remittance-forms",
+      "status": "July 2026 change to automatic remittance forms",
+      "retrieved": "2026-10-22"
+    },
+    {
+      "url": "https://www.parliament.gov.tc/hansard/view_hansard?id=2ce31f36-8513-11f1-8f87-32e8d4bf15ba",
+      "status": "Rate review discussed; not enacted replacement",
+      "retrieved": "2026-10-22"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "checked_on": "2026-10-22",
+  "review_status": "independent review and later-amendment audit pending",
+  "sources": [
+    {
+      "id": "nic-employers",
+      "url": "https://www.stlucianic.org/employers",
+      "retrieval": "direct web text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "nic-faq",
+      "url": "https://www.stlucianic.org/faq",
+      "retrieval": "direct web text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "nic-employees",
+      "url": "https://www.stlucianic.org/employees",
+      "retrieval": "official indexed text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "vat-9",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-9",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-10",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-10",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-12",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-12",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-26",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-26",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-28",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-37",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-37",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-3-01",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-3-01",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "income-act2-2026",
+      "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwV3hnRmd5R0lYY1crUTlXU0pTZ1Rrd0dWZTlvdmdwK3lVYk1zYUlwcVNnT3NqYk9Pc09icmd0Vks5RDVLeVFXdG9JMFc1alI4NTNLRjRiWDJuV29sQVk9",
+      "kind": "enacted statute",
+      "retrieval": "download via HTTP/1.1; pdftotext; key page visually inspected",
+      "sha256": "18e5bad8a0ff719f457b7317699ab4d0d6e92144df5dbcacb88cd0c3a1cbc0bc"
+    },
+    {
+      "id": "income-act10-2026",
+      "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=",
+      "kind": "enacted statute",
+      "retrieval": "download via HTTP/1.1; pdftotext; key page visually inspected",
+      "sha256": "04c6bd68e7651937b1764377cff098b3d797d4ac8c77b8fc5577ecb4876ad620"
+    },
+    {
+      "id": "income-base-44",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-44",
+      "kind": "Revised Laws 2023; read with 2026 amendments",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "income-base-48",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-48",
+      "kind": "Revised Laws 2023; read with 2026 amendments",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "income-base-52",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-52",
+      "kind": "Revised Laws 2023; read with 2026 amendments",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "income-base-54",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-54",
+      "kind": "Revised Laws 2023; read with 2026 amendments",
+      "retrieval": "direct web text"
+    }
+  ]
+}

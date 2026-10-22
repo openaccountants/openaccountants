@@ -1,0 +1,31 @@
+{
+  "jurisdiction": "KM",
+  "checked_at": "2026-10-22",
+  "status": "source-cited drafts; amendment/commencement reconciliation and independent review pending",
+  "sources": [
+    {
+      "url": "https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf",
+      "note": "Finance Law 2026; pages 9\u201314 visually inspected, OCR corrected against scan.",
+      "bytes": 38416536,
+      "sha256": "376cab19ec145f6f8509e96fc8f3877c33913b40c9561a1e2371aea37b2db2db"
+    },
+    {
+      "url": "https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf",
+      "note": "Official 2023 base code; not a 2026 consolidation.",
+      "bytes": 1328181,
+      "sha256": "782515b181d62194f81ea4450130c5edfa05f07c0728c3a032ae0a8900924546"
+    },
+    {
+      "url": "https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf",
+      "note": "2025 law, image-only; pages 8\u201315 OCR-read, incomplete amendment audit.",
+      "bytes": 39204636,
+      "sha256": "d79889bf3d5f72da2f5c9591e6e2a6ffbcc93f7444fb458b655d24b4408f7c10"
+    },
+    {
+      "url": "https://munganyo.km/storage/O3Ve1ZmfxkfYRmgqIpOCRB5jaX6V7v-metaQ0FSVEUucGRm-.pdf",
+      "note": "Reproduction of enacted 2024 law on Munganyo; cover and page 9 visually checked; pages 9\u201315 OCR-read. Not an official ministry host.",
+      "bytes": 43496131,
+      "sha256": "2fb54c61fef9314c2f88ee530ba22574449c0add8d2bf801cf6afbb9ef6eccc1"
+    }
+  ]
+}

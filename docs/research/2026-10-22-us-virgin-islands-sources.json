@@ -1,0 +1,69 @@
+{
+  "jurisdiction": "VI",
+  "sources": [
+    {
+      "url": "https://uscode.house.gov/us/usc/119-121/t26/s932/",
+      "kind": "official statute",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "60beaafbbe7b0e9ac9f8c341807da0dfd7cb93077a985d3866fc9d21a6d1f596",
+      "notes": "Current through Public Law 119-121; web fetch failed but direct download succeeded and text read"
+    },
+    {
+      "url": "https://uscode.house.gov/us/usc/119-121/t26/s937/",
+      "kind": "official statute",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "70170558e13f31bcbf582b7608e73d977b61cdf26adc33e0f9a6a4bbc0e69b15",
+      "notes": "Current through Public Law 119-121; official web and direct retrieval"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p570.pdf",
+      "kind": "IRS publication",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "062cf0a2fbe713396661a82dbbdc4c3a2933a8714d29eec39ee44c73c29f75bd",
+      "notes": "2025 edition; relevant residence and USVI sections read; credit line references conflict with Form 8689"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/i8898.pdf",
+      "kind": "IRS instructions",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "03f8632465be2a6210fd02dcfdcbf5b61c78babf461f47fb974012b694c5d483",
+      "notes": "October 2024 revision; change triggers and move-year conditions read"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f8689.pdf",
+      "kind": "IRS form and instructions",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "efd82acbe9f38e4c97e389d68b869ad818ebbf422cb420898a290a9f09fe01cf",
+      "notes": "2025 edition; pages 3 and 4 visually checked; credit lines 41 plus 46 to Schedule 3"
+    },
+    {
+      "url": "https://bir.vi.gov/content/form/54318eff-3ff8-4a04-ac40-9b51edc8bc18/index.pdf",
+      "kind": "BIR current form",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "76d171c029ee828cda40564b4e529154504d566dde6fa0e20b3dcf93217b1db9",
+      "notes": "August 2026 revision; page 2 visually checked; exemption vs filing boundary recorded"
+    },
+    {
+      "url": "https://bir.vi.gov/content/form/a04ea26e-6aab-477c-9fb7-6274198a3be1/index.pdf",
+      "kind": "BIR annual form",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "7d8403cf874e95ea459168be01c15ef74f23cdf6920655561804620fa63778b2",
+      "notes": "September 2013 revision still linked; annual rows and deadline read"
+    },
+    {
+      "url": "https://bir.vi.gov/form",
+      "kind": "BIR forms directory",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "0f99cdbc4e9f327aa9de1b085b737e091e43e82309d364b60817893f7f8627b9",
+      "notes": "HTML embedded form data supplies current monthly download and 2026-08-27 revision date"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-10-22",
+  "status": "direct verification and independent review pending",
+  "sources": [
+    {
+      "id": "nis-contributors",
+      "url": "https://nisgrenada.org/contributors/",
+      "retrieval": "indexed official text; direct retrieval failed",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "nis-reforms",
+      "url": "https://nisgrenada.org/2023-adjustments/",
+      "retrieval": "indexed official text; direct retrieval failed",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "nis-self-employed",
+      "url": "https://nisgrenada.org/",
+      "retrieval": "indexed official text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "vat",
+      "url": "https://www.ird.gd/taxes/value-added-tax",
+      "retrieval": "indexed official text; direct HTTP 500",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "gtax",
+      "url": "https://www.ird.gd/gtax/index.html",
+      "retrieval": "indexed official text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "stamp",
+      "url": "https://www.ird.gd/taxes/annual-stamp-tax",
+      "retrieval": "indexed official text; direct HTTP 500",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "extension",
+      "url": "https://www.finance.gd/docs/2026/PRESS_RELEASE-IRD_Extension.pdf",
+      "retrieval": "direct web PDF text",
+      "kind": "official administrative guidance"
+    }
+  ]
+}

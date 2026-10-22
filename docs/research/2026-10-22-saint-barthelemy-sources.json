@@ -1,0 +1,55 @@
+{
+  "jurisdiction": "BL",
+  "checked_at": "2026-10-22",
+  "status": "source-cited drafts; full amendment reconciliation and independent review pending",
+  "sources": [
+    {
+      "url": "https://www.comstbarth.fr/in/rest/annotationSVC/Attachment/attach_cmsUpload_a687c0be-3095-4dfc-8921-f4a19be57d68",
+      "note": "Base Code; amendment list ends 6 August 2021. Not a 2026 consolidation.",
+      "bytes": 1108383,
+      "sha256": "9160db8aa0c5e1500d1ca9c078600024c77eb21c432067893ff61acca8951fad"
+    },
+    {
+      "url": "https://actes.eservices-comstbarth.fr/PJ/Deliberation%20CT/Deliberation%20CT_2024/2024_038_ct_annexe.pdf",
+      "note": "2024 amendment annex, marked insertions/deletions; pages 5\u20137 and 23\u201324 visually inspected.",
+      "bytes": 1491326,
+      "sha256": "03900b6b0231f4388269808137cd93420e1048a31e2a5a53e65015144a4bf479"
+    },
+    {
+      "url": "https://comstbarth.taxesejour.fr/",
+      "note": "Current collection portal, including local exemptions and registration.",
+      "bytes": 53682,
+      "sha256": "6e250290537edce262dd9ab30466591ae1aa646c82a52d7689d60afaf0252426"
+    },
+    {
+      "url": "https://comstbarth.taxesejour.fr/portail/document/2444864/download",
+      "note": "Billing guide linked from current portal.",
+      "bytes": 4276310,
+      "sha256": "b8561fa7c0ff0cad5d5894b098d7f819dd49c091f2f0523e9e0d456a2cfa1c6c"
+    },
+    {
+      "url": "https://comstbarth.taxesejour.fr/portail/document/51946751/download",
+      "note": "Operational host guide linked from current portal; not a consolidated statute.",
+      "bytes": 2712347,
+      "sha256": "d5c9e16ca3d98d93d774796e1af8316bda6b064e554d816476d87c631f7d06ae"
+    },
+    {
+      "url": "https://www.comstbarth.fr/in/rest/public/Attachment/attach_cmsUpload_34215943-1a4c-4fa5-b62e-45887b937b3b",
+      "note": "2025 specimen only; old DSN heading conflicts with amended evidence rule.",
+      "bytes": 183162,
+      "sha256": "a82ed07b9fa4e92940f8e82598b25c30e741b160c9340da5532f3f82c87f9ab2"
+    },
+    {
+      "url": "https://www.cemstbarth.com/fr/faq.php",
+      "note": "CEM FAQ corroborates CFAE rates and new-business treatment.",
+      "bytes": 60135,
+      "sha256": "d389f2b66afe96667f447ab846806717b7cbd9108b59018ef199d47fdc104573"
+    },
+    {
+      "url": "https://saint-barthelemy.kiosk.qualigraf.fr/vji/public/agenda/agendaview/action=showdoc/pdc=0aaa200a28a0202008aa08095b29b55c/Deliberation.pdf",
+      "note": "23 October 2025 amendment to 171 bis: specified dock-duty exemptions, not a general CFAE rate change. OCR inspected.",
+      "bytes": 5310439,
+      "sha256": "40c4fad0b8f94793ed714e0b1f61f40fbf2ad98188e6773b44391614a26785cb"
+    }
+  ]
+}

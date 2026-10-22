@@ -1,0 +1,65 @@
+{
+  "sources": [
+    {
+      "url": "https://laws.gov.ag/wp-content/uploads/2025/01/No.-1-of-2024-Antigua-and-Barbuda-Sales-Tax-Amendment-Act-2024.pdf",
+      "accessed_on": "2026-10-22",
+      "sha256": "f4cae460965dfd5ba19f60cbc117a001eff9d1ef8dfa3bd07425a0949272f9c3",
+      "locator": "Sections 1 and 3, pp4-5; extracted text read"
+    },
+    {
+      "url": "https://socialsecurity.gov.ag/wp-content/uploads/2021/03/no-60-of-2016-collection-of-contributions-amendment.pdf",
+      "accessed_on": "2026-10-22",
+      "sha256": "134a7049e2d91011613ccb53a057f4d793c6cb89f4d9ec2f8ca7b0bacac19212",
+      "locator": "Printed pp4-6; PDF pages 3-4 visually read"
+    },
+    {
+      "url": "https://socialsecurity.gov.ag/wp-content/uploads/2021/03/no-15-of-2013-collection-of-contributions-regulations.pdf",
+      "accessed_on": "2026-10-22",
+      "sha256": "ee099231ca4de8fa94c142bf54b061c57a66dbc00fd33a1c9d5213626c1e4804",
+      "locator": "Printed pp4-8; PDF pages 3-7 visually read"
+    },
+    {
+      "url": "https://laws.gov.ag/wp-content/uploads/2024/02/No.-13-of-2023-Revenue-Miscellaneous-Provision-Act-2023.pdf",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "web reader",
+      "locator": "s2, pp4-5",
+      "note": "No local checksum asserted"
+    },
+    {
+      "url": "https://consumeraffairs.gov.ag/question_of_the_week_2024.php",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "web reader",
+      "locator": "Standard rate effective date",
+      "note": "No local checksum asserted"
+    },
+    {
+      "url": "https://ird.gov.ag/wp-content/uploads/2020/06/Frequently_asked_questions_ABST.pdf",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "web reader",
+      "locator": "Older rate/deadline conflict; not used as current authority",
+      "note": "No local checksum asserted"
+    },
+    {
+      "url": "https://socialsecurity.gov.ag/media-release-pension-contribution-rate-adjustments/",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "web reader",
+      "locator": "2025 maximum rates and pension age",
+      "note": "No local checksum asserted"
+    },
+    {
+      "url": "https://www.mbs.gov.ag/v2/contribution-rates/",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "web reader",
+      "locator": "Rate categories; undated guidance",
+      "note": "No local checksum asserted"
+    },
+    {
+      "url": "https://www.mbs.gov.ag/v2/services/business-account-services/",
+      "accessed_on": "2026-10-22",
+      "retrieval_method": "web reader",
+      "locator": "R3A and payment channels",
+      "note": "No local checksum asserted"
+    }
+  ],
+  "note": "Retrieval receipts are not independent legal verification; full source copies remain local."
+}

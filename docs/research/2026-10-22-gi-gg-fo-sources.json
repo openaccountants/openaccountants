@@ -1,0 +1,268 @@
+{
+  "accessed_on": "2026-10-22",
+  "purpose": "Source version receipts; retrieval success is not legal verification. Full captures kept locally, not republished.",
+  "sources": [
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=102818&p=0",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "13a281fd677cf34db87d0c6782e047d9ad1ca7639f3bd5cb007acb4a9dde94bb"
+    },
+    {
+      "url": "https://gov.gg/RStax-rates-and-allowances",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "871527c43e94c333fffd521432e324300df88e20440d2e60ad9f2c80995f862a"
+    },
+    {
+      "url": "https://gov.gg/RevenueService/Companies",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "260a59b2af849de307c54f32a6d4343662b92af46b33dd72d318d5f6c0ee34d3"
+    },
+    {
+      "url": "https://gov.gg/SScontributions",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "2513ce27a88068ee94d6a37b53b7842b7ff9ddc2c0fae9fdb557a3c14b9dedde"
+    },
+    {
+      "url": "https://gov.gg/economicsubstance",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "40182477284ecd512b7638e6cc3bf8c55e7d92eb64a1e497e8bcb820200775f6"
+    },
+    {
+      "url": "https://gov.gg/employers",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "ba3aec3bdae4b4f5d0a99775c41517c84a8e323868ccb5daa172a01042dccc04"
+    },
+    {
+      "url": "https://gov.gg/residency",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "55a3f506286f91390da1d6ff1952c39d41104f7c8435981a1b91189c7c0b7ac2"
+    },
+    {
+      "url": "https://gov.gg/revenue-service/personal-tax-returns",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "fa66b42bdbe66cbd08bde85f1a3ef0ef31a1e108c14fe72c4607a916cb62e7bd"
+    },
+    {
+      "url": "https://gov.gg/taxreform",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "c779da4d83a3eac207568f6ec7661c1a1b8cd87c477c6b7ea83f28e6bdf8ce24"
+    },
+    {
+      "url": "https://gov.gg/wopa",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "d00a8bf5d95e9d74da8b0b8bdcabfb607a36501fc0dad83017f28d15419c2d16"
+    },
+    {
+      "url": "https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "acbfc3da32fefa65db5a0d8fdce40153a10710615904762b49568904a13e1241"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "f2d99bb7723101c4e4ae3a7c096f478a7d0a7ec88eea6990f7f2b914282a8251"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "5e6de07b3e80a1104dc0fd9664036d1a102731645715bddc1b6d6e740caa7def"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "66af219b93e663884496e014e8b8ef892998196d0d25532a6b2716fde7ba08b6"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/paye",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "bfdc5589a8c7e3f3196a3e5f9e4cf7b3ed75e36de9d0cdab7912686099869ff6"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "c6e26734bbc8cede24b23f659e82a1ed78ab1ba50285836dde40268df7635ab8"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/press-releases/government-corrects-transaction-tax-misinformation-2012026-11816",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "14cdcaec5a255bb4b0ed0d11f8f24278e333fc38b2d7c633ae24360f2d0e6b0a"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "1d7e9b0c902f49f227ea9933b44fdcf97442974a05d4eb2be28ac49724064d73"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "1f5a10e8d178e4023270e38b0a96a6fe97a6ce40f224778adc4c44da006aa81d"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627/download",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/transaction-tax-deductions-rules-2026-8890",
+      "http_status": "200",
+      "download_ok": true,
+      "sha256": "7b3b464e08878d3ca20a086a6539dbfc4b1aa4b8b4e0169133adf25baecbbe82"
+    },
+    {
+      "url": "https://www.skraseting.fo/en/companies/annual-accounts",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.skraseting.fo/fo/kunning/tidindi/tann-15-september-2026-fer-skraseting-foeroya-at-senda-feloeg-id-ikki-hava-latid-arsfrasoegn-fyri-2025-inn-i-skiftiraettin-til-tvingsilavtoeku",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/starting-a-business/starting-a-business",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/tax/dividend-tax-refunds",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/tax/tax-and-royalties",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/vat/general-about-vat",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/vat/how-to-register-for-vat",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/vat/quarterly-vat-returns",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/vinnuskrain/different-kinds-of-businesses",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/business/vinnuskrain/foreign-companies-in-the-faroe-islands",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/individuals/tax/tax-return",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/en/individuals/tax/taxation-in-the-faroe-islands",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/fo/vinna/eftirloen/arbeidsmarknadareftirloen",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://www.taks.fo/fo/vinna/studul/almenn-gjoeld-hja-arbeidsgevarum",
+      "http_status": "403",
+      "download_ok": false,
+      "sha256": null,
+      "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24",
+      "retrieval_method": "web reader",
+      "download_ok": false,
+      "note": "Official consolidation amended 15 May 2026; ss4,5,19,20,28 read. No local checksum recorded in this pass."
+    },
+    {
+      "url": "https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd",
+      "retrieval_method": "web reader",
+      "download_ok": false,
+      "note": "Faroese guidance expressly confirms Q2 exception. No local checksum recorded in this pass."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/stamp-duties-act-2005-1262/download",
+      "retrieval_method": "web reader",
+      "download_ok": false,
+      "note": "Schedule 1 pp28-29; consolidation lists 23 December 2024 amendment. No local checksum recorded in this pass."
+    }
+  ]
+}

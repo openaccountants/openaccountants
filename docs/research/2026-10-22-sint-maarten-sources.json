@@ -1,0 +1,79 @@
+{
+  "jurisdiction": "SX",
+  "sources": [
+    {
+      "url": "https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Regeling%20vaststelling%20inkomsten-%20en%20loonbelastingtabellen%202026.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "de997fa059b02f965bde90e8c1d3ae286269618636c27f78218722d3a7dcc00a",
+      "notes": "Enacted instrument, 4 pages; annexes published separately",
+      "transport_note": "Expired government certificate; certificate verification bypassed only for this public download; official indexed title/content cross-checked"
+    },
+    {
+      "url": "https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20I%20TABEL%20INKOMSTENBELASTING%202026.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "e0455f883919cb390ceb1c175b7fa10c6da2a24ccf45bd2f348a4f2d6c7a8a38",
+      "notes": "Annex I downloaded/text read; page 2 visually checked; low-income rule and embedded credit",
+      "transport_note": "Expired government certificate; certificate verification bypassed only for this public download; official indexed title/content cross-checked"
+    },
+    {
+      "url": "https://www.sintmaartengov.org/Documents/Income%20Tax%20Forms/AB%202026%2C%20no.%2011%20Bijlage%20II%20TABEL%20LOONBELASTING%202026.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "6a77cd66ec3f9e18f14efc20231fd584e01a5cccc1132903b280d5410f53d36c",
+      "notes": "Annex II downloaded/text read; page 3 visually checked; AOV/AWW example explicitly conditional",
+      "transport_note": "Expired government certificate; certificate verification bypassed only for this public download; official indexed title/content cross-checked"
+    },
+    {
+      "url": "https://www.sintmaartengov.org/Documents/Forms%20for%20Businesses/List%20TURNOVERTAX%20ORDINANCE%20Codes%20for%20Non-taxable%20turnover%20November%202021.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "bd9799c737374b92321c311ef23fc78f835670aeba38fee84750c50463ff5813",
+      "notes": "2021 exemption list, not complete later law",
+      "transport_note": "Expired government certificate; certificate verification bypassed only for this public download; official indexed title/content cross-checked"
+    },
+    {
+      "url": "https://lokaleregelgeving.overheid.nl/CVDR697488",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "b90fdce54bce8d6e8938c756cc2ceccfe5ca2babf843f73d79a663b75b9e3b74",
+      "notes": "Official consolidated law displayed from 12 April 2023 to present; articles 1\u201312 inspected",
+      "transport_note": "Standard retrieval"
+    },
+    {
+      "url": "https://www.tax.sx/",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "607df29d37ffbe915d81fd7b513f4347b5ce6dfd717a65a8fbbee79e3be5efdb",
+      "notes": "Current administrative calendar; official government announcement confirms this domain",
+      "transport_note": "Standard retrieval"
+    },
+    {
+      "url": "https://www.szv.sx/publicfiles/868/documents/2026%20SZV%20AOV%20AWW%20Amounts.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "downloaded and inspected",
+      "sha256": "2c1a3c2106d260740fe560352f86780b09365eac4c2f2048cb3c752cb2e1fcb6",
+      "notes": "Research only: 2026 indexed AOV/AWW amounts; does not itself establish current premium percentages",
+      "transport_note": "Standard retrieval"
+    },
+    {
+      "url": "https://lokaleregelgeving.overheid.nl/CVDR671742",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "official web text fetched; articles 8 and 14 inspected",
+      "notes": "Organisation confirmed Sint Maarten; Cura\u00e7ao CVDR144191 rejected as wrong jurisdiction"
+    },
+    {
+      "url": "https://www.szv.sx/publicfiles/868/documents/Check-Lists/SZV%20-%20Wage%20Limits%20%26%20Premium_2024_April.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "official web PDF text fetched",
+      "notes": "Research only; premium shares in an April 2024 sheet. Not independently established as complete current 2026 payroll regime"
+    },
+    {
+      "url": "https://www.szv.sx/publicfiles/868/documents/General-Old-Age-Insurance.pdf",
+      "retrieved_on": "2026-10-22",
+      "retrieval": "official web PDF text fetched",
+      "notes": "Historical official translation has old amounts/ages; not used for current age eligibility"
+    }
+  ]
+}

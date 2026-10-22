@@ -1,0 +1,64 @@
+{
+  "jurisdiction": "SJ",
+  "scope": "Svalbard only; excludes Jan Mayen",
+  "checked_at": "2026-10-22",
+  "status": "source-cited drafts; independent review pending",
+  "sources": [
+    {
+      "url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "note": "Consolidated Svalbard Tax Act; latest displayed amendment effective 1 January 2026",
+      "sha256": "f62dc64d644eb3c4f457b0dcb62b987ab792d267bd7eec7c24481ce2ec41283f",
+      "bytes": 101264,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+      "note": "Enacted annual decision for 2026",
+      "sha256": "ac306207e50a548aaf8a098ad6da4882e1fe27a10d5b632793796204a526344f",
+      "bytes": 38906,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/skatt-lonn/",
+      "note": "Tax Administration wage and youth allowance guidance",
+      "sha256": "114f8a5e0d6e6f13e1c5681e2e3572012da28cba68e90401aa1e9055d7c6c75c",
+      "bytes": 80139,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/naring-pa-svalbard/",
+      "note": "Tax Administration business guidance; duration wording inconsistent, statute used",
+      "sha256": "7695ad935bc355b319b3504c2bef35bc521406158591185232bb3408a65ab3fd",
+      "bytes": 79762,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/hvem-er-skattemessig-bosatt-pa-svalbard/",
+      "note": "Residence guidance",
+      "sha256": "1d4ec8441aa7f40d7df20217e7f52599a684f1454dd04ff80b7e43f0f5828003",
+      "bytes": 73006,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://www.skatteetaten.no/en/rates/tax-rates-on-svalbard",
+      "note": "2026 income and insurance rates",
+      "sha256": "9cb1aaed20871cdb6d641054edf98bdbc1afc5efc9ecba4822c2774d8435cc7d",
+      "bytes": 71762,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://www.nav.no/grunnbelopet",
+      "note": "Current G and annual-average distinction",
+      "sha256": "d5e67e9907be686ff7727cb2590ce5e13217469c6a58bcd0e20417cc9e047d38",
+      "bytes": 276876,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    },
+    {
+      "url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+      "note": "Tax Payment Act sections 10-10 and 10-11",
+      "sha256": "7e7c130b37dc6c63d0451d574b7949d97c60122006959946a77340161cc7cb23",
+      "bytes": 535668,
+      "retrieval": "HTTPS curl succeeded; full HTML inspected"
+    }
+  ]
+}

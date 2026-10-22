@@ -1,0 +1,60 @@
+{
+  "checked_on": "2026-10-22",
+  "jurisdiction": "SH",
+  "scope": "Saint Helena island only",
+  "sources": [
+    {
+      "url": "https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021",
+      "kind": "official consolidated law and regulations",
+      "retrieval": "PDF downloaded, text extracted; printed page 7 visually checked",
+      "sha256": "a0e25dbe5e8a1da1f58e29d8f0980d30a238fbf6f8edcd7fa8720d52fbaa0514",
+      "scope": "Sections 2, 7\u201310, 37\u201345, Schedule 1; Regulations 4\u201315 and 21",
+      "limitation": "Authoritative at 1 October 2021; later-instrument reconciliation incomplete"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/public-services/income-tax/",
+      "kind": "tax authority guidance",
+      "retrieval": "full page fetched",
+      "scope": "Rates and ordinary filing calendar; P6/P7 forms"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/reminder-filing-of-tax-returns/",
+      "kind": "2026 official filing notice",
+      "retrieval": "full page fetched",
+      "scope": "2025/26 business filing and PAYE refund deadlines"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/category/press-releases/page/14/",
+      "kind": "official government announcement",
+      "retrieval": "full archive page fetched",
+      "scope": "2026 personal allowance bill did not pass",
+      "limitation": "Direct article URL timed out; archive page supplied full announcement"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/app/uploads/2026/03/20260303_Income-Tax-Amendment-Ordinance-2026_FINAL.pdf",
+      "kind": "unpassed bill",
+      "retrieval": "official search text inspected",
+      "scope": "Proposed 7150 allowance, NOT law"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-1-Residency-in-St-Helena",
+      "kind": "official guidance with conflicts",
+      "retrieval": "PDF text fetched by web",
+      "scope": "Compared against statutory residence and allowance rules",
+      "limitation": "At-least-90-day wording and blanket nonresident no-allowance statement conflict with statute"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/gazette/",
+      "kind": "official legislation index",
+      "retrieval": "page fetched; income-tax entries searched",
+      "scope": "Later-instrument discovery",
+      "limitation": "Index search is not a complete audit of every Gazette document or resolution"
+    },
+    {
+      "url": "https://www.sainthelena.gov.sh/st-helena/government/legislation/laws-of-st-helena/",
+      "kind": "official jurisdiction introduction",
+      "retrieval": "full page fetched",
+      "scope": "Separate island laws"
+    }
+  ]
+}

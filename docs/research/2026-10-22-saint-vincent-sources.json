@@ -1,0 +1,37 @@
+{
+  "jurisdiction": "VC",
+  "sources": [
+    {
+      "url": "https://ird.gov.vc/index.php/taxes",
+      "retrieved": "2026-10-22",
+      "scope": "Current rates, scope and filing guidance"
+    },
+    {
+      "url": "https://www.nissvg.org/employers-guide/",
+      "retrieved": "2026-10-22",
+      "scope": "Current contribution rates, ceilings and employer administration"
+    },
+    {
+      "url": "https://ird.gov.vc/images/pdf/Cap435.pdf",
+      "retrieved": "2026-10-22",
+      "scope": "Sections 70\u201371 instalments; old compilation"
+    },
+    {
+      "url": "https://finance.gov.vc/finance/images/PDF/Acts/Finance_Act_No_10_of_2023_30_to_28_tax_rate_001.pdf",
+      "retrieved": "2026-10-22",
+      "scope": "Schedule item 8(b)(ii) company rate; downloaded, OCR and visually checked",
+      "sha256": "2f63942e2d3fc8c3522b53c83c31e85efca103b2dc1d80f68617529954f10504"
+    },
+    {
+      "url": "https://www.nissvg.org/?download_id=6002&sdm_process_download=1",
+      "retrieved": "2026-10-22",
+      "scope": "Historical contribution regulation 4; current rates not taken from old schedule"
+    },
+    {
+      "url": "https://ird.gov.vc/images/pdf/VAT_Act_Cap_445.pdf",
+      "retrieved": "2026-10-22",
+      "scope": "Downloaded historical VAT law; opening pages OCR; full amendment review outstanding",
+      "sha256": "e160c888e1e8fc13e73e907971ff93aa9c80e3958700a8c0e37af1b1852a9c5c"
+    }
+  ]
+}

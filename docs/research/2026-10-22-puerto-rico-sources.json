@@ -1,0 +1,49 @@
+{
+  "jurisdiction": "PR",
+  "checked_at": "2026-10-22",
+  "status": "source-cited drafts; later local amendment audit and independent review pending",
+  "sources": [
+    {
+      "url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/C%C3%B3digos/1-2011/1-2011.pdf",
+      "note": "Government legislative-library code, revision 28 May 2026; page 48 visually inspected.",
+      "bytes": 9237051,
+      "sha256": "2551d6c4e94648cac7a1e53e21c1ac20c949dbf362a23b4855049c1560fe686f"
+    },
+    {
+      "url": "https://www.irs.gov/publications/p570",
+      "note": "2025 IRS territory guide; residence, sourcing, federal/local distinction.",
+      "bytes": 518188,
+      "sha256": "8e5c0a999bbf1b182954667679cf0924ffc76d7aab28e201ccd1ccacd67ad9f1"
+    },
+    {
+      "url": "https://uscode.house.gov/us/usc/119-121/t26/s933/",
+      "note": "Actual statutory text; current House route, not failed legacy view.",
+      "bytes": 9617,
+      "sha256": "5f9bd23c83f8841d941683d86c62512fd8ec4799b6119c739e3df59a74636afb"
+    },
+    {
+      "url": "https://uscode.house.gov/us/usc/119-121/t26/s937/",
+      "note": "Actual statutory text; current House route.",
+      "bytes": 12014,
+      "sha256": "70170558e13f31bcbf582b7608e73d977b61cdf26adc33e0f9a6a4bbc0e69b15"
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040ss",
+      "note": "2025 return instructions.",
+      "bytes": 316123,
+      "sha256": "0ff3c3f864b080e4af2b25e3c9a4bb29d675f99d863c4944a76752cf011d9b40"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040sse.pdf",
+      "note": "2025 form; page 1 visually inspected.",
+      "bytes": 80290,
+      "sha256": "05bc2b3e1dfca65d8c6fc6d652af4fa3736e953c6575d6e9f82590484677d347"
+    },
+    {
+      "url": "https://www.irs.gov/instructions/i1040sse",
+      "note": "2025 Schedule SE instructions, including Additional Medicare.",
+      "bytes": 149616,
+      "sha256": "6a96b02ac7e3c79a65dc33ad2dc2d3bdb5cf45339e5a8a61f57b5066a0f77a79"
+    }
+  ]
+}

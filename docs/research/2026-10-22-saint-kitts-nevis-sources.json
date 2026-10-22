@@ -1,0 +1,55 @@
+{
+  "jurisdiction": "KN",
+  "sources": [
+    {
+      "url": "https://socialsecurity.kn/contributions-2/",
+      "purpose": "Board ordinary rates and wage components",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete"
+    },
+    {
+      "url": "https://lawcommission.gov.kn/wp-content/documents/Act17TOC/Ch-22_10-Social-Security-Act.pdf",
+      "purpose": "2017 revised legislation: Tenth Schedule regulations 5, 6, 10\u201314 and Schedules 1\u20132",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete",
+      "sha256": "5cd805fb3fce5518c7d63d633d493c09d2d88221c8e3674707b7a7df2abf22ca"
+    },
+    {
+      "url": "https://socialsecurity.kn/press/change-of-levy-deduction-threshold/",
+      "purpose": "July 2025 superseding levy notice",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete"
+    },
+    {
+      "url": "https://socialsecurity.kn/press/treatment-of-bonus-paid-in-december-2/",
+      "purpose": "December 2025 relief only",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete"
+    },
+    {
+      "url": "https://socialsecurity.kn/wp-content/uploads/2018/05/Employers-Guide-2018.pdf",
+      "purpose": "2018 employer booklet; obsolete levy threshold expressly excluded",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete"
+    },
+    {
+      "url": "https://socialsecurity.kn/employers-2/",
+      "purpose": "Employer registration and records",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete"
+    },
+    {
+      "url": "https://socialsecurity.kn/housing-levy/",
+      "purpose": "Levy collection responsibility",
+      "retrieved": "2026-10-22",
+      "status": "readable official source",
+      "current_law_audit": "incomplete"
+    }
+  ]
+}

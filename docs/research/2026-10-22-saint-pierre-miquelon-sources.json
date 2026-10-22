@@ -1,0 +1,37 @@
+{
+  "jurisdiction": "PM",
+  "checked_at": "2026-10-22",
+  "status": "source-cited drafts; full amendment reconciliation and independent review pending",
+  "sources": [
+    {
+      "url": "https://www.services-fiscaux975.fr/files/file/Documentation/2026/CLI_2026-CLI_AU%2004-05-2026.pdf",
+      "note": "Current index download; cover/filename date mismatch. Articles individually read; page 88 visually inspected.",
+      "bytes": 975832,
+      "sha256": "98e3f1caf74f74fe80450c94433b7c8f417d34bbd511c22c71b6e603efe06144"
+    },
+    {
+      "url": "https://www.services-fiscaux975.fr/files/file/Documentation/2026/Notice%20IR%202025-1.pdf",
+      "note": "2025 income/2026 filing; page 4 visually inspected. Departure deadline discrepancy recorded.",
+      "bytes": 1165668,
+      "sha256": "ec6d4dc7939b74bef9578c9566b84acfded90199f8a44d136e6e66ed9663ce28"
+    },
+    {
+      "url": "https://www.services-fiscaux975.fr/files/file/DELIB/D%C3%A9lib%202025/DELIB2025-0228-%20article%20103%20octies-RI%20jeunes.pdf",
+      "note": "Enacted 228/2025, published 19 December 2025; effective 1 January 2026.",
+      "bytes": 115286,
+      "sha256": "0a657ecb87b948b2da3ae989eb7cbc539e75bd0dd32f93b2dde3427c053c755b"
+    },
+    {
+      "url": "https://www.services-fiscaux975.fr/files/collection/19/fr.json",
+      "note": "Public code index supporting current download selection.",
+      "bytes": 16476,
+      "sha256": "083968430db9e4a1baae86285a06e6eae992be2afa83a65f224430ea953e3a15"
+    },
+    {
+      "url": "https://www.services-fiscaux975.fr/files/collection/21/fr.json",
+      "note": "Public amendment listing; not proof every amendment has been reconciled.",
+      "bytes": 60012,
+      "sha256": "02d18aa72194a9fdce88d92b3f8bfea6856a4ddba522a2cd46e26b90302d5398"
+    }
+  ]
+}

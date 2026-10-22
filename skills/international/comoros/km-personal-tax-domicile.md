@@ -1,0 +1,49 @@
+---
+name: km-personal-tax-domicile
+description: >
+  Comoros personal tax domicile reference linking the new 2026 definition to the earlier income-tax framework. Sets out the permanent-home and economic-interests alternatives, identifies the unresolved relationship with the older broader residence tests, and distinguishes domestic domicile from treaty allocation. Describes the baseline arrival and departure provisions with explicit amendment-review limits and points to new tax-clearance requirements for permanent departure. Does not invent a day-count safe harbour or certify historic rate tables as current. Full intervening amendments, treaty applications, numerical liability calculations and independent accountant review remain outstanding.
+jurisdiction: KM
+category: international
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-22
+version: 0.1
+verified_by: pending
+---
+
+# Comoros: personal tax domicile and moves
+
+## The new 2026 definition
+
+Article 14 of [Finance Law 2026](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf) inserts CGI article **50 bis**. It says an individual is fiscally domiciled in Comoros when **either** of these conditions is met:
+
+- A permanent home is available in Comoros.
+- The centre of the individual's economic interests is in Comoros.
+
+The two conditions are alternatives, not a requirement to meet both. The enacted wording on PDF page 14 contains no 183-day threshold. This provision therefore does not support a claim that staying fewer than 183 days automatically prevents Comorian tax domicile. [2026 law, new article 50 bis](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf).
+
+## Relationship with the older code needs reconciliation
+
+The [official 2023 code, article 45](https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf) used a broader set of criteria: home or principal stay, local professional activity unless merely ancillary, and centre of economic interests. It also addressed certain state officials serving abroad. The 2026 law **adds article 50 bis**; the text inspected does not expressly rewrite article 45 in the same passage.
+
+Consequently, this draft does not assert that every older criterion has been repealed, or that a person failing the two new criteria is necessarily nonresident. A legible consolidated text, intervening amendments and authoritative interpretation are needed for that boundary. This is a specific unresolved legal interaction, not a reason to substitute a mainland French residence rule.
+
+Practical evidence includes the availability and use of a permanent home, business and investment locations, and the economic facts supporting the claimed centre of interests. Travel records can help establish facts, but they do not create a statutory day-count exemption absent a rule providing one.
+
+## Residence, source and treaties are separate questions
+
+Article 44 of the 2023 code defines global net income by reference to salary/pension, investment, property, business and professional categories. Article 45 subjects fiscally domiciled individuals to IRPP, and nonresidents to Comorian-source income, subject to its treaty and exemption qualifications. It also addresses income allocated to Comoros by a double-tax agreement. These are the baseline provisions to reconcile with the 2026 definition, not proof that every receipt is taxable at one rate. [2023 code, articles 44–49](https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf).
+
+Determine the income category and source separately from domicile. A domestic residence finding does not itself decide the outcome under a particular treaty. No treaty tie-breaker or treaty exemption has been verified in this initial Guide.
+
+## Arrival and departure: baseline rules requiring amendment confirmation
+
+Article 123 of the 2023 code starts income brought into charge by the move to Comoros from the date domicile is established. It extends the same rule to acquiring a habitual residence where none existed previously. It does not say all income for the entire arrival year is automatically included. [2023 code, article 123](https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf).
+
+Article 124's departure framework covers income available before departure, business profits since the last taxed period and specified accrued income. It calls for a provisional declaration **at least thirty days before expected departure**, absent force majeure, and permits completion within the first three months of the following year. These older procedural provisions still need a complete 2024–2026 amendment check before a departure filing is finalised. [2023 code, article 124](https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf).
+
+The 2026 addition to LPF L.4 ter expressly lists a tax-regularity attestation for immigration services before the boarding authorisation of a fiscally domiciled person leaving permanently. L.4 bis and L.4 ter distinguish one-month quitus and three-month attestation validity. Their application and substitution need to be checked with current instructions; do not assume an expired certificate remains usable simply because tax was previously paid. [2026 law, page 13](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf).
+
+## Remaining work
+
+Checked 22 October 2026. Resolve article 45 versus new article 50 bis, complete the intervening amendment audit, establish treaty outcomes and obtain current departure forms and clearance instructions. Historic personal-tax bands are deliberately not certified as 2026 rates here. No independent accountant review has occurred. This is a source-cited domicile topic, not full personal-tax or comprehensive country coverage.

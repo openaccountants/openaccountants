@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-10-22",
+  "review_status": "independent review pending",
+  "sources": [
+    {
+      "id": "rates",
+      "url": "https://www.ird.gov.dm/customer-service/current-income-tax-rates",
+      "retrieval": "official indexed text"
+    },
+    {
+      "id": "paye",
+      "url": "https://ird.gov.dm/tax-laws/pay-as-you-earn-p-a-y-e",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "personal",
+      "url": "https://ird.gov.dm/tax-laws/personal-income-tax",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "corporate",
+      "url": "https://ird.gov.dm/tax-laws/corporate-income-tax",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "dates",
+      "url": "https://ird.gov.dm/customer-service/tax-due-dates",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "vat",
+      "url": "https://ird.gov.dm/tax-laws/value-added-tax",
+      "retrieval": "direct web text"
+    },
+    {
+      "id": "vat-guide",
+      "url": "https://ird.gov.dm/phocadownload/guides/VAT%20-%20Registration%20Guide%202018.pdf",
+      "retrieval": "web PDF text"
+    },
+    {
+      "id": "vat-regulations",
+      "url": "https://www.dominica.gov.dm/laws/2006/sro9-2006.pdf",
+      "retrieval": "web PDF text, regulation 6"
+    },
+    {
+      "id": "vat-amendment",
+      "url": "https://www.dominica.gov.dm/laws/2016/Value%20Added%20Tax%20%28Amendment%29%20Regulations%2C%202016%2C%20SRO%2049%20of%202016.pdf",
+      "retrieval": "download and pdftotext",
+      "sha256": "9e3b32d541c7a616ea710cde1a56c4238910da2bd3d974f42764ce66c39b3763"
+    },
+    {
+      "id": "dss-notice",
+      "url": "https://dss.dm/wp-content/uploads/2026/01/Changes-to-Contributions-provisions-2026.png",
+      "retrieval": "download and visual inspection",
+      "sha256": "b5cb130ec5af7bfd548fdd21242cd007d8e45c8a9fa79cf5c4ef031de2f3ba93"
+    },
+    {
+      "id": "dss-rates",
+      "url": "https://dss.dm/wp-content/uploads/2024/12/Table-of-EE-ER-Contribution-Rates-2012-2031.pdf",
+      "retrieval": "web PDF text"
+    },
+    {
+      "id": "dss-faq",
+      "url": "https://dss.dm/faq/",
+      "retrieval": "official indexed text"
+    },
+    {
+      "id": "dss-self-employed",
+      "url": "https://dss.dm/contributors/definition-se/pmt-contrib-se/",
+      "retrieval": "official indexed text"
+    },
+    {
+      "id": "ird-faq",
+      "url": "https://ird.gov.dm/f-a-q",
+      "retrieval": "official indexed text"
+    }
+  ]
+}

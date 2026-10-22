@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-10-22",
+  "status": "pending direct source verification and independent review",
+  "sources": [
+    {
+      "id": "income-table",
+      "url": "https://www.impuesto.aw/tarief-inkomstenbelasting-en-loonbelasting",
+      "retrieval": "indexed official text; direct page unavailable",
+      "type": "official administrative guidance"
+    },
+    {
+      "id": "svb-2026",
+      "url": "https://www.svbaruba.org/employer/summary-of-tariffs/summary-of-tariffs-2026/?lang=en",
+      "retrieval": "direct web retrieval",
+      "type": "official administrative guidance"
+    },
+    {
+      "id": "azv-2026",
+      "url": "https://www.impuesto.aw/premiegrenzen-azv",
+      "retrieval": "indexed official text",
+      "type": "official administrative guidance"
+    },
+    {
+      "id": "pensioner-change",
+      "url": "https://www.gobierno.aw/nl/vanaf-1-januari-2026-betalen-gepensioneerden-minder-azv-premies",
+      "retrieval": "direct web retrieval",
+      "type": "official administrative guidance"
+    },
+    {
+      "id": "turnover-plan",
+      "url": "https://www.impuesto.aw/belastingplan_2023",
+      "retrieval": "indexed official text",
+      "type": "official administrative guidance"
+    },
+    {
+      "id": "small-business",
+      "url": "https://www.impuesto.aw/u-bent-kleine-ondernemer?origin=%2Fu-bent-een-kleine-ondernemer",
+      "retrieval": "indexed official text",
+      "type": "official administrative guidance"
+    },
+    {
+      "id": "october-calendar",
+      "url": "https://www.impuesto.aw/kalender-digitale-aangifte-oktober-2026",
+      "retrieval": "direct web retrieval",
+      "type": "official administrative guidance"
+    }
+  ]
+}
