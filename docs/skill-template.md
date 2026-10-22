@@ -35,7 +35,7 @@ The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md
 | `authored_by` | `OpenAccountants team` | Present when the platform team, not a named accountant or GitHub contributor, authored the current revision |
 | `trust_label` | `By OpenAccountants` | Display attribution for the website. Not a review claim |
 
-The export has also written `drafted_by` and `approved_by` (90 skills, values `OpenAccountants` and `pending`), `validation_status` (5) and `validated` (4). Treat them the same way: leave them alone and do not add them to new files.
+The export has also written `drafted_by`, `approved_by`, `validation_status` and `validated` on some skills (`grep -rl "^drafted_by:" skills/` lists them). Treat them the same way: leave them alone and do not add them to new files.
 
 ## Sync integrity rules
 

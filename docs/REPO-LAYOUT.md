@@ -33,10 +33,13 @@ packages/                  # GENERATED per-jurisdiction bundles — do not edit 
                            #   rates.2025.json / rates.2026.json (OBBBA corrections
                            #   reviewed by Christopher Aryee, CPA). Never regenerated.
 
+agent-skills/              # GENERATED Agent Skills format (one folder per skill, SKILL.md) + install.sh
+calculators/               # Open decision checks (rules.json + one pure function + tests)
 workflows/                 # Guided 6-phase advisor workflows (cross-border intake, UK CGT, ...)
 mcp/                       # Python MCP server source (openaccountants-mcp on PyPI)
-scripts/                   # Build + maintenance scripts (build-packages.py, build-index.py, ...)
-docs/                      # Repo documentation (this file, quality tiers, website sync, ...)
+scripts/                   # Build + maintenance scripts (build-index.py, coverage-report.py, validate-guides.py, ...)
+tests/                     # unittest suite: python3 -m unittest discover -s tests
+docs/                      # Repo documentation (this file, quality states, coverage, website sync, ...)
 tools/workbooks/           # Verification-workbook generator (out/ is gitignored build output)
 plugins/ + .claude-plugin/ # Claude Code plugin marketplace manifest + commands
 .github/                   # CI: validation, MCP sync (sync-mcp.yml mirrors packages/ to the MCP repo)
@@ -57,7 +60,8 @@ VERIFIERS.md               # Reviewing accountants on record (generated nightly)
 | `packages/**` (except `us-federal/`) | Generated | `python3 scripts/build-packages.py` |
 | `packages/us-federal/**` | **Hand-authored** — form guides + rates JSONs | — (see `ANNUAL-UPDATE-RUNBOOK.md` there) |
 | `index.json` | Generated | `python3 scripts/build-index.py` |
-| `workflows/`, `mcp/`, `docs/`, `scripts/` | Hand-maintained | — |
+| `agent-skills/<slug>/SKILL.md`, `agent-skills/index.json` | Generated | `python3 scripts/build-agent-skills.py` (the README there is hand-maintained; its stats block is restamped) |
+| `workflows/`, `mcp/`, `docs/`, `scripts/`, `calculators/`, `tests/` | Hand-maintained | — |
 | `tools/workbooks/out/` | Build output, gitignored | `python3 tools/workbooks/generate_workbook.py` |
 
 ## Inventories — index.json is the only one
@@ -73,13 +77,14 @@ If you need a machine-readable listing, read `index.json` or run `python3 script
 
 ## Which file do I edit?
 
-- **Fix a rate or rule for a country (Malta VAT, Germany payroll, ...):** `skills/international/<country>/`, then run `python3 scripts/build-packages.py`.
-- **Fix a US state skill:** `skills/us-states/<code>/`, then rebuild (or `--us-only`).
-- **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/federal/` for these — the us-federal package is the source.
-- **Add a US federal source skill (non-form-guide):** `skills/federal/`, then rebuild.
-- **Cross-border / treaty rules:** `skills/cross-border/`, then rebuild.
+- **Fix a rate or rule for a country (Malta VAT, Germany payroll, ...):** `skills/international/<country>/`.
+- **Fix a US state skill:** `skills/us-states/<code>/`.
+- **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/federal/` for these; the us-federal package is the source.
+- **Add a US federal source skill (non-form-guide):** `skills/federal/`.
+- **Cross-border / treaty rules:** `skills/cross-border/`.
 - **A guided workflow:** `workflows/`.
+- **A calculator:** `calculators/<name>/`.
 - **The MCP server:** `mcp/`.
-- **Anything under `packages/` other than `us-federal/`:** don't — edit the source in `skills/` and rebuild.
+- **Anything under `packages/`, `agent-skills/<slug>/` or `plugins/openaccountants/skills/`:** do not. Edit the source in `skills/`; the nightly sync regenerates the derived trees after the change is ingested. Do not run the generators in a PR.
 
 Contribution process, frontmatter conventions, and the website-sync rule: [CONTRIBUTING.md](../CONTRIBUTING.md) and [WEBSITE-SYNC.md](WEBSITE-SYNC.md).
