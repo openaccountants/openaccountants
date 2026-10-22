@@ -4,6 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: leaving-france-exit-tax
+partial:
+  XB: leaving-france-exit-tax covers departing individuals only, on 2025 figures (social levies on securities gains given as 17.2%, now 18.6%); no method for non-residents with French income (salary and fee withholding, non-resident property gains, rental), no impatriate regime (art. 155 B CGI), no foreign tax credit or treaty relief mechanics
 ---
 
 # France: tax pack
@@ -17,10 +19,10 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 | IT-IND, individual income tax | fr-personal-income-tax, fr-income-tax, fr-capital-gains, fr-rental-income, fr-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | fr-corporate-tax (local business taxes in fr-cfe) | source-cited draft |
 | VAT | france-vat-return | source-cited draft |
-| SC, social contributions | fr-social-contributions | source-cited draft |
+| SC, social contributions | fr-social-contributions (self-employed), france-payroll (employee and employer contributions) | source-cited draft |
 | PR, payroll withholding | france-payroll | source-cited draft |
 | TP, transfer pricing | france-transfer-pricing | source-cited draft |
-| XB, cross-border | leaving-france-exit-tax | source-cited draft |
+| XB, cross-border | leaving-france-exit-tax (individuals leaving France), fr-corporate-tax (withholding on payments abroad, CFC rules). Missing: non-residents with French income, the impatriate regime and foreign tax credit | source-cited draft; partial: departures and outbound withholding only |
 
 ## Official sources
 
