@@ -2,6 +2,10 @@
 jurisdiction: RO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  IT-IND: self-employed (PFA) only
+  IT-CORP: short rate list on secondary sources; base, losses and filing not covered
+  PR: rates and the D112 deadline only; no computation method or worked examples
 ---
 
 # Romania: tax pack
