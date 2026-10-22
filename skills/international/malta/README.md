@@ -15,7 +15,7 @@ Calendar tax year (basis year), assessed the following year. Authority: Malta Ta
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | malta-income-tax, mt-capital-gains, mt-non-dom, mt-rental-income | source-cited draft |
-| IT-CORP, corporate income tax | (missing: the 35% rate, imputation and refunds, and tax accounts; mt-holding-company-participation-exemption covers only the exemption) | |
+| IT-CORP, corporate income tax | mt-corporate-tax, mt-holding-company-participation-exemption | source-cited draft |
 | VAT | malta-vat-return, mt-vat3-quarterly-return-malta, reverse-charge skills | source-cited draft |
 | SC, social contributions | malta-ssc | source-cited draft |
 | PR, payroll withholding | malta-payroll | source-cited draft |
