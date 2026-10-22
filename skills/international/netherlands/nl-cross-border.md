@@ -55,7 +55,7 @@ Tax year: the calendar year. 2026 figures apply to 1 January to 31 December 2026
 | Corporate tax (Vpb) | 19% to €200,000; 25.8% above | [Wet Vpb 1969 art. 22](https://wetten.overheid.nl/BWBR0002672/) |
 | Dividend tax (dividendbelasting) | 15% of the distribution | [Wet DB 1965 art. 5](https://wetten.overheid.nl/BWBR0002515/) |
 | Conditional withholding tax on interest, royalties and dividends to affiliates in low-tax jurisdictions | Top Vpb rate: 25.8% in 2024, 2025 and 2026 | [Wet bronbelasting 2021 art. 4.1](https://wetten.overheid.nl/BWBR0042952/); [Belastingdienst bronbelasting](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/bronbelasting-op-renten-en-royalty) |
-| Low-tax jurisdiction test | Profit tax rate below 9%, or on the EU list of non-cooperative jurisdictions | Wet bronbelasting 2021 art. 1.2; Belastingdienst bronbelasting |
+| Low-tax jurisdiction test | A state designated by ministerial regulation that, on 1 October of the preceding year, has no profit tax or a rate below 9%, or is on the EU list of non-cooperative jurisdictions | [Wet bronbelasting 2021 art. 1.2(1)(e)](https://wetten.overheid.nl/BWBR0042952/); Belastingdienst bronbelasting |
 | Ordinary withholding on interest, royalties and service fees | None outside the conditional withholding tax | [Belastingdienst bronbelasting](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/bronbelasting-op-renten-en-royalty) |
 | Exit charge on emigration | No separate rate: the deemed box 2 gain is taxed at box 2 rates; pensions and annuities at the box 1 top rate, in a protective assessment | [Belastingdienst conserverende aanslag](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/conserverende-aanslag-bij-emigratie) |
 
@@ -76,7 +76,7 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 - 2024: the law cut the maximum to 30% for the first 20 months, 20% for the next 20 and 10% for the last 20.
 - 2025: that 30/20/10 path was largely reversed. The maximum is 30% in 2025 and 2026 for every incoming employee.
 - From 1 January 2027: the maximum falls to 27% for the whole remaining term, except for employees whose ruling was applied by the last pay period of 2023 (they keep 30%). Rulings started from 2025 also face the new, higher salary norm in 2027.
-- Partial non-resident status (treating box 2 and box 3 as if non-resident) is closed from the 2025 return, except under a transitional rule for rulings applied before 2024, which ends with the 2026 return (Belastingdienst expat scheme page).
+- Partial non-resident status (treating box 2 and box 3 as if non-resident) is closed from the 2025 return, except under a transitional rule for employees whose ruling was applied over the last pay period of 2023 and who have not become a new incoming employee after a break; it ends with the 2026 return (Handboek Loonheffingen 2026 §19.4; Belastingdienst expat scheme page).
 
 **Leaving: deemed disposal of a substantial interest.** Ceasing to be resident, otherwise than by death, is a deemed disposal of shares that form a substantial interest (Wet IB 2001 art. 4.16(1)(h)). This includes becoming treaty-resident elsewhere. The gain is market value at emigration less the acquisition price. If the person later sells, the acquisition price for Dutch non-resident tax is that market value (art. 7.6).
 
@@ -99,8 +99,8 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 
 - **Late or missing income tax return (assessment taxes):** an administrative penalty of up to €6,709 (AWR art. 67a). If a year has both a normal and a protective assessment, the penalty is imposed with the normal one; if only a protective assessment, with that.
 - **Late or short payment of a tax paid on a return** (dividend tax, conditional withholding tax): up to €6,709 (AWR art. 67c).
-- **Intentional or grossly negligent errors:** up to 100% of the tax involved (AWR arts. 67d and 67f).
-- **Tax interest (belastingrente):** 5% from 1 January 2026 for income tax and all taxes except corporate tax and benefits ([Belastingdienst belastingrente](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente)).
+- **Intentional or grossly negligent errors:** up to 100% of the tax involved. For assessment taxes: art. 67d (return not filed or incorrect, intent) and art. 67e (assessment too low through intent or gross negligence). For taxes paid on a return: art. 67f (intent or gross negligence).
+- **Tax interest (belastingrente):** 5% from 1 January 2026 (6.5% in 2025). Corporate tax now uses the same rate: the higher corporate tax percentage was dropped after the Hoge Raad ruling of 16 January 2026. Benefits (toeslagen) are not covered by this rate ([Belastingdienst belastingrente](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente)).
 - **Collection interest (invorderingsrente)** on late payment of an assessment: 4.3% from 1 January 2026 ([Belastingdienst invorderingsrente](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente)). It does not run during an approved deferral of a protective assessment.
 - **Expat scheme failure:** if the wage falls to or below the salary norm, the ruling lapses back to 1 January of that year and the payroll returns must be corrected; see [netherlands-30-percent-ruling](netherlands-30-percent-ruling.md).
 
@@ -185,22 +185,23 @@ expected:
 
 ## Sources
 
-All read on 2026-10-22.
-
-- Algemene wet inzake rijksbelastingen (AWR), arts. 4, 19, 67a, 67c, 67d, 67f: https://wetten.overheid.nl/BWBR0002320/
-- Wet op de vennootschapsbelasting 1969, arts. 2(5), 17, 22: https://wetten.overheid.nl/BWBR0002672/
-- Wet inkomstenbelasting 2001, arts. 2.10, 2.12, 2.13, 4.16, 5.5, 7.1, 7.2, 7.6, 7.7, 7.8: https://wetten.overheid.nl/BWBR0011353/
-- Wet op de dividendbelasting 1965, arts. 4, 5, 7: https://wetten.overheid.nl/BWBR0002515/
-- Wet bronbelasting 2021, arts. 1.2, 2.1, 4.1, 5.1, 5.2: https://wetten.overheid.nl/BWBR0042952/
-- Invorderingswet 1990 (conserverende aanslag deferral, art. 25): https://wetten.overheid.nl/BWBR0004770/
-- Belastingdienst, Conserverende aanslag bij emigratie: https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/conserverende-aanslag-bij-emigratie
-- Belastingdienst, Aangifte doen over het jaar van emigratie of immigratie (M return): https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/deels-niet-in-nederland-wonen-m-aangifte-doen
-- Belastingdienst, Inkomensverklaring voor kwalificerend buitenlands belastingplichtigen: https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/inkomensverklaring-aangifte-inkomstenbelasting-buitenlandse-belastingplichtigen
-- Belastingdienst, Box 1 uitleg en tarieven: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1
-- Belastingdienst, Expat Scheme (30% facility): https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility
-- Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4: https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf
-- Belastingdienst, Bronbelasting op renten, royalty's en dividenden: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/bronbelasting-op-renten-en-royalty
-- Belastingdienst, Overzicht percentages belastingrente: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente
-- Belastingdienst, Invorderingsrente: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente
+| Source | URL | Read on |
+|---|---|---|
+| Algemene wet inzake rijksbelastingen (AWR), arts. 4, 19, 67a, 67c, 67d, 67e, 67f | https://wetten.overheid.nl/BWBR0002320/ | 2026-10-22 |
+| Wet op de vennootschapsbelasting 1969, arts. 2(5), 17, 22 | https://wetten.overheid.nl/BWBR0002672/ | 2026-10-22 |
+| Wet inkomstenbelasting 2001, arts. 2.10, 2.12, 2.13, 4.16, 5.5, 7.1, 7.2, 7.6, 7.7, 7.8 | https://wetten.overheid.nl/BWBR0011353/ | 2026-10-22 |
+| Wet op de loonbelasting 1964, art. 31a(8): expat scheme at up to 30% of the designated wage, capped at 30% of the WNT maximum (text valid from 1 January 2026; the cut to 27% from 2027 was made by the Belastingplan 2025 and is set out in Handboek §19.4) | https://wetten.overheid.nl/BWBR0002471/ | 2026-10-22 |
+| Wet op de dividendbelasting 1965, arts. 4, 5, 7 | https://wetten.overheid.nl/BWBR0002515/ | 2026-10-22 |
+| Wet bronbelasting 2021, arts. 1.2, 2.1, 4.1, 5.1, 5.2 | https://wetten.overheid.nl/BWBR0042952/ | 2026-10-22 |
+| Invorderingswet 1990 (conserverende aanslag deferral, art. 25) | https://wetten.overheid.nl/BWBR0004770/ | 2026-10-22 |
+| Belastingdienst, Conserverende aanslag bij emigratie | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/conserverende-aanslag-bij-emigratie | 2026-10-22 |
+| Belastingdienst, Aangifte doen over het jaar van emigratie of immigratie (M return) | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/deels-niet-in-nederland-wonen-m-aangifte-doen | 2026-10-22 |
+| Belastingdienst, Inkomensverklaring voor kwalificerend buitenlands belastingplichtigen | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/inkomensverklaring-aangifte-inkomstenbelasting-buitenlandse-belastingplichtigen | 2026-10-22 |
+| Belastingdienst, Box 1 uitleg en tarieven | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-22 |
+| Belastingdienst, Expat Scheme (30% facility) | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility | 2026-10-22 |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-22 |
+| Belastingdienst, Bronbelasting op renten, royalty's en dividenden | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/bronbelasting-op-renten-en-royalty | 2026-10-22 |
+| Belastingdienst, Overzicht percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-22 |
+| Belastingdienst, Invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
 
 Not yet confirmed: the filing deadline for the 2026 M return and for the non-resident return (not stated on the pages read); the return period for dividend tax and conditional withholding tax (the one-month payment rule in AWR art. 19(1) runs from the end of a period set by ministerial regulation, not read); whether non-qualifying non-residents get the box 3 tax-free allowance; the final 2027 expat salary norm and 2027 WNT cap; the relief method under the Besluit voorkoming dubbele belasting 2001 and individual treaties.
