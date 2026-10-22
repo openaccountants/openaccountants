@@ -3,9 +3,8 @@ jurisdiction: IT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-IND: it-irpef-employees
   XB: it-cross-border
-partial:
-  IT-IND: it-income-tax covers the self-employed (regime ordinario) only, not employees' IRPEF
 ---
 
 # Italy: tax pack
@@ -16,7 +15,7 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | it-income-tax (self-employed, regime ordinario), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
+| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
 | VAT | italy-vat-return | source-cited draft |
 | SC, social contributions | it-inps-contributions | source-cited draft |
