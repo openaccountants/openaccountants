@@ -1,0 +1,59 @@
+{
+  "jurisdiction": "GF",
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-47-modif-tgom-2026-complet.pdf",
+      "bytes": 2818428,
+      "sha256": "68e07d3af13bf3a7b664fadde50fd865335c583e7356d06d5792cb4492c3b1cf",
+      "review": "Relevant cited provisions or sample rows inspected; no full tariff classification audit claimed."
+    },
+    {
+      "url": "https://www.ctguyane.fr/www/wp-content/uploads/2023/04/delib-cadre-ctg-ap-2023-33-mj-exo-ome-activite-eco.pdf",
+      "bytes": 83289,
+      "sha256": "542317a157a607d304cf7d75c290cdfdaf7a2e0ec21b3c3b0d52b12d315a3318",
+      "review": "Relevant operative provisions read; annex sample rows visually inspected. AP-2023-33 extraction corrupt: not relied on for detailed operative claims."
+    },
+    {
+      "url": "https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-56-fixation-tx-om-reduit-activites-spatiales-1.pdf",
+      "bytes": 223233,
+      "sha256": "22fe4718d7a5f2ae2fcd6926d5501958b3aa3266c7d08c01abfcf5087add8f54",
+      "review": "Relevant cited provisions or sample rows inspected; no full tariff classification audit claimed."
+    },
+    {
+      "url": "https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-57-regime-exo-partielle-activites-spatiales.pdf",
+      "bytes": 219295,
+      "sha256": "58216af81683de540a115a518f5e77aaf43132a1e3cadddda328a8d8b821a82b",
+      "review": "Relevant cited provisions or sample rows inspected; no full tariff classification audit claimed."
+    },
+    {
+      "url": "https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-57-annexe-1.pdf",
+      "bytes": 2322469,
+      "sha256": "df3e060a2ef4883cf56bee955ecaba34b1afcf3528881225d254bba2ebf12a94",
+      "review": "Relevant cited provisions or sample rows inspected; no full tariff classification audit claimed."
+    },
+    {
+      "url": "https://www.douane.gouv.fr/demarche/importer-un-bien-dans-un-drom",
+      "retrieval": "Full web page opened 2026-10-22; no downloaded-byte hash claimed."
+    },
+    {
+      "url": "https://www.ctguyane.fr/octroi-de-mer-tarif-exoneration/",
+      "retrieval": "Full web page opened 2026-10-22; no downloaded-byte hash claimed."
+    }
+  ],
+  "allocation": {
+    "ryan_tree": "2d2e198012cfd827357eee3ef0a4e65316692fa6",
+    "truncated": false,
+    "matching_guiana_or_guyane_paths": [],
+    "shared_main_country_paths": [],
+    "open_country_issue_search": []
+  },
+  "status": "Two source-cited drafts; independent review pending",
+  "gaps": [
+    "Complete amendments after cited enactments",
+    "All product classification and exemption claims beyond illustrative rows",
+    "Customs filing codes and detailed relief procedures",
+    "VAT recodification chain",
+    "Income tax, payroll, social, formation, reporting, property and cross-border coverage"
+  ]
+}
