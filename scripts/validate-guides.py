@@ -39,7 +39,6 @@ import os
 import re
 import subprocess
 import sys
-import tempfile
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
@@ -297,17 +296,17 @@ def check_index_fresh(errors):
     if not os.path.isfile(index_path):
         errors.append("index.json missing — run: python3 scripts/build-index.py")
         return
-    with tempfile.TemporaryDirectory() as tmp:
-        fresh_path = os.path.join(tmp, "index.json")
-        result = subprocess.run(
-            [sys.executable, BUILD_INDEX, "--out", fresh_path],
-            cwd=REPO_ROOT, capture_output=True, text=True,
-        )
-        if result.returncode != 0:
-            errors.append(f"build-index.py failed while checking freshness: {result.stderr.strip()}")
-            return
-        with open(fresh_path, encoding="utf-8") as fh:
-            fresh = json.load(fh)
+    try:
+        spec = importlib.util.spec_from_file_location("build_index_module", BUILD_INDEX)
+        if spec is None or spec.loader is None:
+            raise ImportError("Could not load spec for build-index.py")
+        bi_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bi_module)
+        fresh = bi_module.build_index()
+    except Exception as exc:
+        errors.append(f"build-index.py failed while checking freshness: {exc}")
+        return
+
     with open(index_path, encoding="utf-8") as fh:
         committed = json.load(fh)
     for section in ("counts", "guides"):

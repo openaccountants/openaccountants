@@ -752,6 +752,10 @@ def extract_claims(rel_path, text, jurisdiction, compiled, stats, default_tax_ye
         if EXAMPLE_LINE_RE.match(stripped):
             continue
 
+        cached_pct = None
+        cached_money = None
+        cached_years = None
+
         for cid, spec in concepts.items():
             if not any(rx.search(line) for rx in spec["terms"]):
                 continue
@@ -760,14 +764,21 @@ def extract_claims(rel_path, text, jurisdiction, compiled, stats, default_tax_ye
             if spec["exclude"] and spec["exclude"].search(line):
                 continue
 
-            pct_values, pct_spans = extract_percent_values(line)
+            if cached_pct is None:
+                cached_pct = extract_percent_values(line)
+            pct_values, pct_spans = cached_pct
+
             kinds = []
             if spec["kind"] in ("money", "any"):
-                kinds.append(("money", extract_money_values(line, pct_spans)))
+                if cached_money is None:
+                    cached_money = extract_money_values(line, pct_spans)
+                kinds.append(("money", cached_money))
             if spec["kind"] in ("percent", "any"):
                 kinds.append(("percent", pct_values))
 
-            years = sentence_years(line, binding)
+            if cached_years is None:
+                cached_years = sentence_years(line, binding)
+            years = cached_years
             for kind, values in kinds:
                 # 0 is never a normative value for these concepts — it's
                 # always example output ("SolZ = 0%"). Plausibility bounds
@@ -1003,7 +1014,7 @@ def render_report(results):
         "never used as claim sources.",
         "",
     ]
-    for jur, (claims, candidates, drift, stats) in results.items():
+    for jur, (_claims, candidates, drift, stats) in results.items():
         highs = [(k, c) for k, c in candidates if rank_candidate(c) == "HIGH"]
         meds = [(k, c) for k, c in candidates if rank_candidate(c) == "MEDIUM"]
         lines.append(f"## {jur} — HIGH confidence ({len(highs)})")
