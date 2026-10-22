@@ -2,8 +2,7 @@
 jurisdiction: CY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by:
-  XB: cy-non-dom
+covered_by: {}
 ---
 
 # Cyprus: tax pack
@@ -20,7 +19,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
 | PR, payroll withholding | cyprus-payroll | source-cited draft |
 | TP, transfer pricing | (missing: article 33 arm's length rule and local file thresholds are summarised in cy-corporate-tax only) | |
-| XB, cross-border | cy-non-dom | source-cited draft |
+| XB, cross-border | (missing: cy-non-dom covers arrivals only) | |
 
 ## Official sources
 
