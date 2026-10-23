@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Slovakia VAT registration (§4, §7, §7a): how I handle it
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team. Checked against the VAT Act version in force from 1 January 2026 on 23 October 2026: the § 4, § 7, § 7a, § 77, § 78(3) and § 81 rules below match that version. Rates, the return, the control statement and penalties for late returns are in [slovakia-vat-return](slovakia-vat-return.md).
+Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team. Checked against the VAT Act version in force from 1 January 2026 on 23 October 2026: the § 4, § 7, § 7a, § 73, § 77, § 78(3) and § 81 rules below match that version. Rates, the return, the control statement and penalties for late returns are in [slovakia-vat-return](slovakia-vat-return.md).
 
 Slovakia has three different VAT registrations and only one of them makes you a VAT payer. §4 is the real thing (you charge VAT, you deduct input VAT). §7 and §7a are administrative registrations that give you a VAT number and an obligation to self-assess tax, with **no right of deduction**. Getting this wrong in either direction is expensive: register under §4 too early and you add 23% to prices your clients cannot reclaim; miss a §7a registration and you have been under-declaring reverse-charge VAT on every Google Ireland or Meta Ireland invoice since your first ad. The rules changed materially on 1 January 2025, so anything written before then is unsafe.
 
@@ -137,12 +137,12 @@ Ongoing obligations for a §7 or §7a registrant: return and payment within 25 d
 | §7 / §7a return and payment | 25 days after the end of the month in which the liability arose. No nil returns. | FS SR §7a information sheet |
 | Minimum tax payable | No obligation where the tax due is not more than 5 eur | FS SR §7a information sheet |
 | EC Sales List for §7a services supplied | Quarterly, within 25 days of quarter end. No nil listing. | FS SR §7a information sheet |
-| Invoice deadline, §15(1) services to another member state | Within 15 days of month end, marked "prenesenie daňovej povinnosti" | FS SR §7a information sheet |
+| Invoice deadline, §15(1) services to another member state | Within 15 days from the end of the month of supply (or of an advance payment), marked "prenesenie daňovej povinnosti" | VAT Act § 72(2), § 73(1)(d), § 74(1)(k) |
 | Invoice retention | 10 years | FS SR §7 information sheet |
 | §7 deregistration test | Below 14 000 eur in the current year **and** the preceding year | FS SR §7 information sheet |
 | Registration form version | Confirm before filing (guidance cites ver. 2015) | FS SR §7a information sheet |
 | Tax period for a new §4 payer | Calendar month. Quarterly only after more than 12 months from the end of the month of registration, with turnover under 100 000 eur in the preceding 12 months | VAT Act § 77(1), (2) |
-| Public-holiday interaction with "five working days" | Not yet confirmed | Tax Procedure Code not read on this point |
+| Deadline ending on a Saturday, Sunday or public holiday | Moves to the next working day | Tax Procedure Code § 27(4) |
 | Late-registration fine | 100 to 30 000 eur; not imposed for a first breach. Every missed return and control statement must then be filed in date order | Tax Procedure Code § 155(1)(c), (4); VAT Act § 78(9), § 78a(14) |
 | Deregistration on request | After at least one calendar year as a payer, if turnover in the previous calendar year did not exceed 50 000 eur | VAT Act § 81(1)(a) |
 
@@ -179,8 +179,8 @@ She exceeds 50 000 eur on 10 December 2026. Trigger A applies (54 000 is over 50
 
 ## Sources
 
-- Act No. 222/2004 Coll. on VAT, version in force 1 January 2026 to 31 December 2026 (§ 4, 7, 7a, 27, 77, 78, 78a, 81, 85kn), read 2026-10-23: https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html
-- Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026 (§ 154, 155), read 2026-10-23: https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html
+- Act No. 222/2004 Coll. on VAT, version in force 1 January 2026 to 31 December 2026 (§ 4, 7, 7a, 27, 72, 73, 74, 77, 78, 78a, 81, 85kn), read 2026-10-23: https://static.slov-lex.sk/static/SK/ZZ/2004/222/20260101.html
+- Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026 (§ 27, 154, 155), read 2026-10-23: https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html
 - Finančné riaditeľstvo SR, 2/DPH/2025/MP - Metodický pokyn k registrácii platiteľa DPH podľa § 4 a § 5 zákona č. 222/2004 Z. z. (22 September 2025): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Metodicke_pokyny/Nepriame_dane/2025/2025.09.22_002_DPH_2025_MP.pdf
 - Finančné riaditeľstvo SR, Úplné znenie zákona č. 222/2004 Z. z. o DPH (consolidated to 28 January 2025): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Sprievodca/Sprievodca_danami/2025/2025.01.28_zakon_DPH.pdf
 - Finančná správa SR, Sadzby dane: https://www.financnasprava.sk/sk/podnikatelia/dane/dan-z-pridanej-hodnoty/sadzby-dane
@@ -190,4 +190,4 @@ She exceeds 50 000 eur on 10 December 2026. Trigger A applies (54 000 is over 50
 
 **Caution on the two 2018 information sheets.** They remain published by the tax authority and are the clearest official statements of the §7 and §7a *procedural* obligations and of the no-deduction rule, which is why they are cited. They are **out of date on two points**: they state a 20% tax rate (now 23%) and a 7-day registration decision period (now 10 days from 1 January 2025). Where they conflict with the statute, the statute governs.
 
-Not yet confirmed: how a public holiday affects the five-working-day deadlines; the current version of the registration form; the 15-day invoice deadline for § 15(1) services, which comes from the 2018 information sheet and was not re-read in the statute.
+Not yet confirmed: the current version of the registration form.
