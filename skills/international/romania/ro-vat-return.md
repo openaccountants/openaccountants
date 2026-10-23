@@ -42,17 +42,17 @@ Sort the client first:
 |---|---|---|---|
 | Standard rate (art. 291(1), as rewritten by Legea 141/2025 art. II pt. 42, in force 1 August 2025) | 21% | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Reduced rate (art. 291(2)) | 11% | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Transitional rate for one home bought by an individual (up to 120 sq m and 600,000 lei excluding VAT) with an advance contract signed by 1 August 2025 and delivery by 31 July 2026 (Legea 141/2025 art. III(1)) | 9% | to 31 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf |
+| Transitional rate for one home bought by an individual (up to 120 sq m and 600,000 lei excluding VAT, no other reduced-rate home bought since 1 January 2023) with an advance contract signed by 1 August 2025 and delivery by 31 July 2026; for contracts signed 3 to 31 July 2025, a 20% advance paid by 31 July 2025 (Legea 141/2025 art. III(1) and (2)) | 9% | to 31 July 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf |
 | In force date of the rate change (Legea 141/2025 art. VII(1)) | 1 August 2025 | 2025 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf |
 | Small-enterprise exemption threshold, annual turnover (art. 310(1)) | 395,000 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | EU cross-border small-enterprise scheme, EU-wide turnover cap (art. 310^1(1)(a)) | EUR 100,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Quarterly return allowed if prior-year turnover did not exceed this, and no intra-EU acquisitions (art. 322(2)) | EUR 100,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Quarterly return allowed if prior-year turnover did not exceed this, and no intra-EU acquisitions (art. 322(2)); lei value at the BNR rate for 31 December of the prior year (HG 1/2016 norms, pt. 103(2)) | EUR 100,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | VAT cash accounting ceiling, 1 March to 31 December 2026 (art. 282(3)(a), set by OUG 8/2026) | 5,000,000 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf |
 | VAT cash accounting ceiling from 1 January 2027 (art. 282(3)(b)) | 5,500,000 lei | 2027 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | EU distance sales and e-services threshold (art. 278^1(1)(c)) | EUR 10,000 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Domestic reverse charge on mobile phones, chips, consoles, tablets, laptops: minimum per invoice, excluding VAT (art. 331(7)) | 22,500 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | Input VAT on road vehicles not used only for business (art. 298(1)) | 50% deductible | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
-| Export to a non-EU traveller, minimum invoice value including VAT (art. 294(1)(b)) | EUR 175 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
+| Export to a non-EU traveller: the supply plus VAT must be above (art. 294(1)(b)(iii)) | EUR 175 | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm |
 | RO e-TVA significant difference, both tests (OUG 70/2024 art. 5(1), as amended by OUG 87/2024) | 20% and 5,000 lei | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_87_2024.pdf |
 | Late payment interest (Procedure Code art. 174(5)) | 0.02% per day | 2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
 | Late payment penalty (Procedure Code art. 176(2)) | 0.01% per day | 2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm |
@@ -96,7 +96,7 @@ Anything not on that list, and not exempt, is at 21%. Since 1 August 2025 there 
 
 **Registration** (art. 316). A Romanian business registers before it starts if it expects turnover above 395,000 lei, or if it opts in. A small enterprise that crosses the threshold during the year must apply at the latest on the date it crosses. The normal regime applies from that date, starting with the transaction that crosses it (art. 310(6)). If it registers late, ANAF registers it from the crossing date and collects the VAT it should have charged minus the VAT it could have deducted (art. 310(6^1)).
 
-**Return period** (art. 322). The calendar month is the default. A business whose prior-year turnover did not exceed EUR 100,000 and that made no intra-EU acquisitions files quarterly, and confirms this by a declaration of changes by 25 January (art. 322(6)). A quarterly filer that makes a taxable intra-EU acquisition becomes monthly from the month set by art. 322(7), for the rest of that year and the next.
+**Return period** (art. 322). The calendar month is the default. A business whose prior-year turnover did not exceed EUR 100,000 and that made no intra-EU acquisitions files quarterly, and confirms this by a declaration of changes by 25 January (art. 322(6)). A quarterly filer that makes a taxable intra-EU acquisition becomes monthly from the month set by art. 322(7), for the rest of that year and the next (art. 322(8)). A business that registers during the year declares its expected turnover for the rest of the year and files quarterly if that stays under the limit scaled to the months left (art. 322(3)). A small enterprise that registers after crossing 395,000 lei annualises its turnover for the year: above EUR 100,000 it files monthly, otherwise quarterly unless it made an intra-EU acquisition (art. 322(4)). A business registered by ANAF of its own motion files monthly in the year of registration (HG 1/2016 norms, pt. 103(1)).
 
 | Return | Who | Due | Source |
 |---|---|---|---|
@@ -124,7 +124,7 @@ The annual small-enterprise notices in art. 324(4) to (6) are suspended from 1 J
 **RO e-TVA pre-filled return** (OUG 70/2024, as amended by OUG 87/2024 and OUG 89/2025):
 - ANAF puts a pre-filled D300 in the taxpayer's electronic account by the 5th of the month after the D300 deadline (art. 3(2)). It is not a tax assessment (art. 3(5)).
 - Where a row of the filed D300 differs from it by at least 20% and at least 5,000 lei, ANAF sends a "Notificarea de conformare RO e-TVA" by the same 5th day (art. 5(1) and (5)). It may also send one below the threshold on risk grounds (art. 5(6)). Regularisation rows are not compared (art. 5(3)).
-- From 1 January 2026, OUG 89/2025 art. XII repealed art. 5(8) (the duty to answer within 20 days), art. 7 (the fine for not answering) and art. 8(1) and (3) (the risk indicators tied to the answer). For businesses on cash accounting, art. 5 and 8 are suspended until 30 September 2026 (OUG 89/2025 art. XIII).
+- From 1 January 2026, OUG 89/2025 art. XII repealed art. 5(8) (the duty to answer within 20 days), art. 7 (the fine for not answering) and art. 8(1) and (3) (the risk indicators tied to the answer). For businesses on cash accounting, art. 5 and 8 were suspended until 30 September 2026 (OUG 89/2025 art. XIII), so from 1 October 2026 they receive compliance notices too.
 - In practice: reconcile the D300 to e-Factura before filing. A difference ANAF flags still feeds its risk analysis and can lead to an inspection.
 
 **RO e-Factura.** From 1 January 2026, invoices must be sent to RO e-Factura within 5 working days of issue, and no later than 5 working days after the latest issue date in art. 319(16) (OUG 120/2021 art. 10(7), as rewritten by OUG 89/2025 art. X pt. 2). From the same date this also covers supplies with place in Romania to customers that are not established but are VAT-registered in Romania, except intra-EU supplies to a customer with another member state's VAT number (art. 10(1^1)). Format, B2C and penalties: [romania-einvoice](romania-einvoice.md).
@@ -155,14 +155,14 @@ The annual small-enterprise notices in art. 324(4) to (6) are suspended from 1 J
 
 ## Worked examples
 
-### Example 1: monthly filer, March 2026 return, paid 30 days late
+### Example 1: monthly filer, February 2026 return, paid 30 days late
 
-A Bucharest SRL files monthly. In March 2026 it sells goods at 21% for 100,000 lei and catering at 11% for 20,000 lei, both excluding VAT. It buys stock at 21% for 40,000 lei. It also pays 10,000 lei plus VAT to run a car the director also uses privately, so only 50% of that VAT is deductible (art. 298(1)). The D300 is due on 25 April 2026 (art. 323(1)). The company files on time but pays on 25 May 2026, 30 days late.
+A Bucharest SRL files monthly. In February 2026 it sells goods at 21% for 100,000 lei and catering at 11% for 20,000 lei, both excluding VAT. It buys stock at 21% for 40,000 lei. It also pays 10,000 lei plus VAT to run a car the director also uses privately, so only 50% of that VAT is deductible (art. 298(1)). The D300 is due on Wednesday 25 March 2026 (art. 323(1)). The company files on time but pays on 24 April 2026, 30 days late (26 March to 24 April inclusive, Procedure Code art. 174(1)).
 
 Collected VAT is 21,000 lei (row 9) plus 2,200 lei (row 10), so 23,200 lei. Deductible VAT is 8,400 lei on stock plus half of the 2,100 lei car VAT, so 9,450 lei. VAT payable is 13,750 lei. Interest at 0.02% a day for 30 days is 82.50 lei, and the late penalty at 0.01% a day is 41.25 lei. The return was filed on time, so no fine applies.
 
 ```oa-check
-name: Romania March 2026 D300, monthly SRL, paid 30 days late
+name: Romania February 2026 D300, monthly SRL, paid 30 days late
 inputs:
   sales_21: 100000
   sales_11: 20000
@@ -190,7 +190,7 @@ expected:
 
 ### Example 2: small enterprise crosses 395,000 lei in September 2026
 
-A consultancy PFA in Cluj uses the small-enterprise exemption. Its turnover from January to 14 September 2026 is 372,000 lei. On 15 September it invoices a business client 40,000 lei. That takes its 2026 turnover to 412,000 lei, above the 395,000 lei threshold (art. 310(1)). It must apply to register by 15 September, and the normal regime applies from that invoice onwards (art. 310(6)). So the crossing invoice carries VAT at 21%, as does the 15,000 lei it invoices later in September. Input VAT on its purchases from 15 September is 1,200 lei and is deductible.
+A consultancy PFA in Cluj uses the small-enterprise exemption. Its prices are agreed excluding VAT. Its turnover from January to 14 September 2026 is 372,000 lei. On 15 September it invoices a business client 40,000 lei. That takes its 2026 turnover to 412,000 lei, above the 395,000 lei threshold (art. 310(1)). It must apply to register by 15 September, and the normal regime applies from that invoice onwards (art. 310(6)). So the crossing invoice carries VAT at 21%, as does the 15,000 lei it invoices later in September. Input VAT on its purchases from 15 September is 1,200 lei and is deductible.
 
 The crossing invoice carries 8,400 lei of VAT and the later work 3,150 lei, so 11,550 lei is collected. After deducting 1,200 lei, 10,350 lei is payable. Turnover above the threshold on the crossing day is 17,000 lei. That figure is a check only: the whole crossing invoice is taxed, not just the excess. Had the PFA not registered, ANAF would register it from 15 September anyway and assess the same 10,350 lei, plus interest (art. 310(6^1)).
 
@@ -230,8 +230,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Fiscal Code, Legea 227/2015, Title VII (art. 265 to 334), ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Fiscal Procedure Code, Legea 207/2015 (art. 77, 174, 176, 181, 336, 337), ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
+| Fiscal Code, Legea 227/2015, Title VII (art. 265 to 334), with the HG 1/2016 methodological norms (pt. 103) printed in the same page, ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
+| Fiscal Procedure Code, Legea 207/2015 (art. 75, 77, 174, 176, 181, 336, 337), ANAF consolidated text last updated by Legea 170/2026 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
 | Legea 141/2025, art. II pt. 42 (art. 291 rates), art. III (9% transitional rate), art. VII(1) (in force 1 August 2025), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
 | OUG 8/2026 (cash accounting ceiling), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_8_2026.pdf | 2026-10-23 |
 | OUG 89/2025, art. X (RO e-Factura 5 working days, non-established VAT-registered customers), art. XII to XIV (RO e-TVA changes from 1 January 2026), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
@@ -244,4 +244,4 @@ expected:
 | OPANAF 705/2020, D390 VIES form and deadline, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_705_2020.pdf | 2026-10-23 |
 | OUG 115/2023, art. LXVIII pt. 15 (OUG 120/2021 art. 13^2, 15% fine), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_115_2023.pdf | 2026-10-23 |
 
-Not yet confirmed: legislatie.just.ro did not load on 2026-10-23, so OUG 70/2024 and OUG 120/2021 were read as their original texts plus the amending acts listed, not as consolidated texts; an amendment made after OUG 89/2025 would not show here. The lei value of the EUR 100,000 quarterly limit and the first return period of a business that registers mid-year are set by the methodological norms (HG 1/2016), which were not read for this skill. Example 2 assumes the PFA's prices were agreed excluding VAT; if they were VAT-inclusive, the VAT is extracted from the price instead.
+Not yet confirmed: legislatie.just.ro did not load on 2026-10-23, so OUG 70/2024 and OUG 120/2021 were read as their original texts plus the amending acts listed, not as consolidated texts; an amendment made after OUG 89/2025 would not show here. When the 25th falls on a weekend or public holiday, Procedure Code art. 75 sends the computation to the Civil Procedure Code, which was not read for this skill, so the roll-over to the next working day is not stated here; Example 1 uses a period whose deadline is a working day. The cash accounting ceiling for 1 January to 28 February 2026, before OUG 8/2026 took effect, was not checked.

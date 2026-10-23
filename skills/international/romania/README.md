@@ -2,8 +2,7 @@
 jurisdiction: RO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  VAT: "romania-einvoice still gives 19%, 9% and 5% as the 2026 rates (21% and 11% since 1 August 2025, Legea 141/2025); ro-vat-return and romania-vat-return credit the change to OUG 59/2025 instead of Legea 141/2025 and are not in the deep-tax shape"
+partial: {}
 ---
 
 # Romania: tax pack
