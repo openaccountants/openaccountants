@@ -3,7 +3,7 @@ name: at-corporate-income-tax
 description: "Source-cited draft: corporate income tax for Austria (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -141,7 +141,7 @@ Where each item goes in the return: https://formulare.bmf.gv.at/service/formular
 | Special rate for interest on savings and current accounts | 25% | "mit einem besonderen Steuersatz von 25 Prozent (für Zinsen aus Sparbüchern und Girokonten)" |
 | Special rate for all other capital income | 27.5% | "einem besonderen Steuersatz von 27,5 Prozent" |
 
-Where the recipient is a company under § 1(1) KStG, § 93(1a) EStG lets the payer withhold a lower rate than the special rate for other capital income. The USP page still prints an older rate for this case, so check the current wording of § 93(1a) EStG before applying it. If a company suffered the higher rate, it can use the regular assessment option to get the difference back.
+Where the recipient is a company under § 1(1) KStG, § 93(1a) EStG lets the payer withhold KESt at 23% on income received from 2024 onwards, instead of 27.5% ("in Höhe von 23% für ab dem Kalenderjahr 2024 zugeflossene Einkünfte": https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=93, read 2026-10-23). The USP page still prints an older rate for this case. If a company suffered the higher rate, it can use the regular assessment option to get the difference back.
 
 **Dividends and royalties paid abroad: refund of Austrian withholding tax**
 
