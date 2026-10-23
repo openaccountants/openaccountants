@@ -4,8 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: se-cross-border
-partial:
-  PR: "sweden-payroll does not value taxable benefits (car benefit, 2026 meal benefit SEK 62/124/310) or apply the 2026 tax-free travel allowances (traktamente SEK 300 a day, mileage SEK 25 a mil); it stops whenever a benefit value is needed"
 ---
 
 # Sweden: tax pack
@@ -20,7 +18,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 | IT-CORP, corporate income tax | se-corporate-tax | source-cited draft |
 | VAT | se-vat-return, sweden-vat-return | source-cited draft |
 | SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
-| PR, payroll withholding | sweden-payroll | source-cited draft |
+| PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | source-cited draft |
 | TP, transfer pricing | se-transfer-pricing | source-cited draft |
 | XB, cross-border | se-cross-border | source-cited draft |
 
