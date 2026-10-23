@@ -2,9 +2,7 @@
 jurisdiction: RO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  IT-IND: self-employed (PFA) only
-  PR: rates and the D112 deadline only; no computation method or worked examples
+partial: {}
 ---
 
 # Romania: tax pack
@@ -15,22 +13,28 @@ Individuals pay a flat 10% income tax plus employee pension (CAS, 25%) and healt
 
 ## Domains
 
-A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and only ro-cross-border and ro-corporate-income-tax follow the deep-tax shape so far.
+A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and only ro-cross-border, ro-corporate-income-tax, ro-employee-income-tax, ro-income-tax, ro-cas-cass, ro-transfer-pricing and ro-payroll-social follow the deep-tax shape so far.
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ro-income-tax (partial: self-employed PFA only; employment, investment and rental income for individuals are not covered) | source-cited draft |
+| IT-IND, individual income tax | ro-income-tax (self-employed PFA, II, IF and liberal professions, 2026); ro-employee-income-tax (employees, rent and investment income, 2026) | source-cited draft |
 | IT-CORP, corporate income tax | ro-corporate-income-tax (2026: profit tax at 16%, micro-enterprise tax at 1%, minimum turnover tax, base, losses, interest limit, filing and penalties, from the Fiscal Code) | source-cited draft |
 | VAT | ro-vat-return, romania-vat-return | source-cited draft |
-| SC, social contributions | ro-cas-cass (self-employed CAS and CASS), ro-payroll-social (employee CAS and CASS, employer CAM; a short list citing secondary sources) | source-cited draft |
-| PR, payroll withholding | ro-payroll-social (partial: rates and the monthly D112 deadline only; no computation method or worked examples) | source-cited draft |
-| TP, transfer pricing | (missing: Romania has transfer pricing rules and documentation duties; no skill yet) | |
+| SC, social contributions | ro-cas-cass (self-employed CAS and CASS, 2026); ro-payroll-social (employee CAS and CASS, employer CAM, the minimum CAS and CASS on part-time contracts, 2026) | source-cited draft |
+| PR, payroll withholding | ro-payroll-social (2026 gross-to-net, minimum-wage relief, benefits, REGES ONLINE, D112, penalties, two worked examples) | source-cited draft |
+| TP, transfer pricing | ro-transfer-pricing | source-cited draft |
 | XB, cross-border | ro-cross-border | source-cited draft |
 
 ## Official sources
 
-Read on 2026-10-22:
+Read on 2026-10-22 (payroll sources read on 2026-10-23):
 
 - Fiscal Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm
 - Fiscal Procedure Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm
+- OUG 89/2025, ANAF copy: https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf
+- HG 146/2026 (minimum wage from 1 July 2026), ANAF copy: https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf
+- Inspecția Muncii, REGES ONLINE: https://www.inspectiamuncii.ro/reges
+- ANAF, D112 technical structure from July 2026: https://static.anaf.ro/static/10/Anaf/Declaratii_R/AplicatiiDec/structura_D112_0726_070926.pdf
+- Legea 201/2025 (meal voucher cap), Chamber of Deputies text: https://www.cdep.ro/ords/pls/proiecte/docs?2023/pl342_pr342_23.pdf
+- ANAF Order 828/2026 (transfer pricing file, replaces Order 442/2016 for 2026 transactions), ANAF copy, read on 2026-10-23: https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf
 - ANAF: https://www.anaf.ro
