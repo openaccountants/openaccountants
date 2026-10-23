@@ -23,6 +23,7 @@ All statute text was read on the Nemzeti Jogszabálytár at njt.jog.gov.hu on 20
 - A new exemption for mothers of two children applies from 1 January 2026, in 2026 only to mothers who turn 40 after 31 December 2025 (Act XIV of 2025, 4. § a)). Mothers of three children have been exempt since 1 October 2025 (Act XV of 2025, 3.-4. §).
 - The under-30 mothers' exemption has no cap from 2026 and now covers mothers whose entitlement began before 2023 (Act XIII of 2025; NAV information sheet 73).
 - The minimum wage is HUF 322,800 and the guaranteed minimum wage HUF 373,200 a month from 1 January 2026 (Government Decree 426/2025. (XII. 23.), 2. §).
+- New employees are registered on form 08E from 1 January 2026; it replaced form T1041 (NAV form page for 08E).
 
 ## Who this applies to
 
@@ -36,7 +37,7 @@ All statute text was read on the Nemzeti Jogszabálytár at njt.jog.gov.hu on 20
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Personal income tax (szja), flat | 15% of the tax base | 2026 | [Szja tv. 8. § (1)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
-| Employee social security contribution (TB járulék) | 18.5% of gross, no ceiling; of which pension 10% | 2026 | [Tbj. 25. § (1)-(2)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
+| Employee social security contribution (TB járulék) | 18.5% of gross, no ceiling (NAV splits it 54% pension, 37.9% health, 8.1% labour market) | 2026 | [Tbj. 25. § (1), 26. § (1)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
 | Employer social contribution tax (szocho) | 13% of the same base as the TB contribution | 2026 | [Szocho tv. 1. § (10), 2. § (1)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00) |
 | Vocational training contribution (szakképzési hozzájárulás) | Abolished. Act CLV of 2011 repealed from 1 January 2021; payments made to that tax heading from 1 February 2022 are booked as szocho | 2026 | [Act CLV of 2011, closing note](https://njt.jog.gov.hu/jogszabaly/2011-155-00-00); [Szocho tv. 36/E. §](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00) |
 | Minimum wage (minimálbér), full time, monthly | HUF 322,800 (weekly 74,210; daily 14,850; hourly 1,856) | from 2026-01-01 | [426/2025. (XII. 23.) Korm. rendelet 2. § (1)](https://njt.jog.gov.hu/jogszabaly/2025-426-20-22) |
@@ -46,13 +47,14 @@ All statute text was read on the Nemzeti Jogszabálytár at njt.jog.gov.hu on 20
 | Extra family allowance for a long-term ill or severely disabled child | HUF 133,340 per child per month on top | from 2026-01-01 | [Szja tv. 29/A. § (2a)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | Family contribution allowance (családi járulékkedvezmény) | 15% of the family allowance the tax base could not absorb, up to the employee's TB (or pension) contribution | 2026 | [Tbj. 79. § (2)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
 | Under-25 exemption (25 év alatti fiatalok kedvezménye) | Wage income exempt up to the July 2025 national average gross wage: HUF 715,765 a month (tax saved up to HUF 107,365) | 2026 | [Szja tv. 29/F. § (2)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00); [NAV information sheet 73](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19) |
-| Mothers under 30 (30 év alatti anyák kedvezménye) | Wage income fully exempt from szja, no cap | from 2026-01-01 | [Act XIII of 2025, 1.-2. §, 5. §](https://njt.jog.gov.hu/jogszabaly/2025-13-00-00); [NAV sheet 73, 2.2](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19) |
+| Mothers under 30 (30 év alatti anyák kedvezménye) | Wage income fully exempt from szja, no cap. In 2026: a mother who turns 30 in 2026 or later and is entitled to the family allowance for her own or adopted child, or for a pregnancy from day 91; it runs to the end of the year she turns 30 | from 2026-01-01 | [Act XIII of 2025, 1.-2. §, 5. §](https://njt.jog.gov.hu/jogszabaly/2025-13-00-00); [NAV sheet 73, 2.2](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/73.-Szja-adoalap-kedvezmenyek-2026.-03.19) |
 | Mothers of two children | Wage income fully exempt from szja. In 2026 only if she turns 40 after 2025-12-31 (born 1986 or later); widens in 2027, 2028 and 2029 | from 2026-01-01 | [Act XIV of 2025, 1. §, 4. §](https://njt.jog.gov.hu/jogszabaly/2025-14-00-00) |
 | Mothers of three children | Wage income fully exempt from szja, no age limit | from 2025-10-01 | [Act XV of 2025, 1. §, 3.-4. §](https://njt.jog.gov.hu/jogszabaly/2025-15-00-00) |
 | Mothers of four or more children | Wage income fully exempt from szja | 2026 | [Szja tv. 29/D. §](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | First marriage allowance (első házasok kedvezménye) | HUF 33,335 a month off the couple's tax base, for up to 24 months | 2026 | [Szja tv. 29/C. § (3)-(4)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
-| Szocho reduction, labour market entrants | Up to 13% of the minimum wage a month in year one, then 6.5% for six months (18 months in all) | 2026 | [Szocho tv. 11. § (as amended by Act LV of 2024); NAV information sheet 49, 3.2](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16) |
-| Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 percentage points, divided by 365, per day | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00) |
+| Szocho reduction, labour market entrants | For a Hungarian citizen insured for no more than 92 days in the 365 days before the job starts: up to 13% of the minimum wage a month in year one, then 6.5% for six months (18 months in all) | 2026 | [Szocho tv. 11. § (2)-(3)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00); [NAV information sheet 49, 3.2](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16) |
+| Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 percentage points, divided by 365, per day. The base rate is 5.50% (held on 20 October 2026), so 10.50% a year | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00); [MNB, Monetary Council statement of 20 October 2026](https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol) |
+| Self-revision surcharge (önellenőrzési pótlék) | Central bank base rate divided by 365, per day; 1.5 times that on a repeat self-revision of the same return | 2026 | [Art. 212. § (1)-(1a)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00) |
 
 ## The taxable base
 
@@ -69,22 +71,22 @@ All statute text was read on the Nemzeti Jogszabálytár at njt.jog.gov.hu on 20
 - In the year the employee claims it monthly through a written advance tax declaration (adóelőleg-nyilatkozat) to the employer (Szja tv. 48. § (2) c)).
 - **Family contribution allowance (Tbj. 79. §).** If the family allowance is bigger than the month's tax base, the employer reduces the employee's 18.5% contribution by 15% of the unused part, up to the contribution itself. The employer simply withholds and pays that much less TB (79. § (3)). The employee can opt out (79. § (4)).
 
-**Minimum wage floors.** An employer cannot pay a full-time employee less than HUF 322,800 a month, or HUF 373,200 where the job needs at least secondary education (426/2025. Korm. rendelet 2. §). Part-time pay is reduced in proportion (2. § (5)). Separately, the TB base of an employee is at least HUF 96,840 a month (30% of the minimum wage), with the employer paying the difference (Tbj. 27. § (2), 23. § (3)); most part-time and childcare cases are carved out (27. § (3)).
+**Minimum wage floors.** An employer cannot pay a full-time employee less than HUF 322,800 a month, or HUF 373,200 where the job needs at least secondary education (426/2025. Korm. rendelet 2. §). Part-time pay is reduced in proportion (2. § (5)). Separately, the TB base of an employee is at least HUF 96,840 a month (30% of the minimum wage), with the employer paying the difference (Tbj. 27. § (2), 23. § (3)); the floor does not apply to employees receiving childcare or nursing benefits (such as CSED, GYED, GYES) or to full-time students (27. § (3)).
 
-**Szocho reductions.** The employer may cut its szocho for labour market entrants, mothers of three or more entering the labour market, staff with reduced work capacity, unskilled and farm jobs, researchers and some trainees (Szocho tv. 10.-17. §; NAV sheet 49). The unskilled and farm jobs reduction is 50% of the 13% on the gross wage, up to the minimum wage (NAV sheet 49, 3.1).
+**Szocho reductions.** The employer may cut its szocho for labour market entrants, mothers of three or more entering the labour market, staff with reduced work capacity, unskilled and farm jobs, researchers and some trainees (Szocho tv. 10.-17. §; NAV sheet 49). The unskilled and farm jobs reduction is 50% of the 13% on the gross wage, up to the minimum wage (Szocho tv. 10. § (2); NAV sheet 49, 3.1).
 
 ## Deadlines and filing
 
 | What | When | Where |
 |---|---|---|
-| Register the employee (biztosítotti bejelentés) | Before work starts | NAV, T1041 form |
+| Register the employee (biztosítotti bejelentés) | Before work starts, at the latest on the first day of the insurance; end of employment within 8 days | NAV, form 08E (named T1041 until 2025; T1041INT for a foreign employer filing itself) |
 | Withhold the szja advance and TB, compute the szocho | Each payroll | Employer's payroll |
 | Monthly return on payments to individuals (the '08 return, form 2608 for 2026) | By the 12th of the month after the month the wage is accounted for | NAV, electronically (Art. 50. § (1)) |
 | Pay the szja advance, TB and szocho | Same day as the return | NAV accounts |
 | Foreign employer filing directly or through the employee | By the 12th of the following month (form 2608INT) | NAV (Tbj. 87. § (6)) |
 | Employee's annual szja return | 20 May 2027 for tax year 2026; NAV prepares a draft that becomes the return if not changed | NAV eSZJA |
 
-Sources: Art. 50. § (1); NAV information sheet 24, 2.1 ("by the 12th of the month after the accounted month"); NAV form page for 2608 ("Havi bevallás a kifizetésekkel, juttatásokkal összefüggő adóról, járulékokról és egyéb adatokról"). The registration form name T1041 is not read in a source today; see the end of Sources.
+Sources: Art. 50. § (1); NAV information sheet 24, 2.1 ("by the 12th of the month after the accounted month"); NAV form page for 2608 ("Havi bevallás a kifizetésekkel, juttatásokkal összefüggő adóról, járulékokról és egyéb adatokról"). Registration: Art. 1. melléklet 3. pont, as set out in NAV's 08E filling guide, section 5 ("A foglalkoztatás megkezdése előtt kell bejelenteni ... legkésőbb a biztosítási jogviszony első napján").
 
 ## Penalties and interest
 
@@ -92,12 +94,13 @@ Sources: Art. 50. § (1); NAV information sheet 24, 2.1 ("by the 12th of the mon
 - **Tax penalty (adóbírság, Art. 215. § (3)-(4)).** 50% of the shortfall found on audit; 200% where income was hidden or records falsified.
 - **Default fine (mulasztási bírság, Art. 220. § (1)).** Up to HUF 1,000,000 for a company and HUF 400,000 for an individual for a late, missing or wrong return.
 - **Missed return: the warning ladder (Art. 221. §).** NAV first sends a 15-day notice. If the return is still missing, a fixed fine of HUF 200,000 for a company (HUF 50,000 for an individual) and a second notice; then HUF 500,000 (HUF 200,000).
-- **Unregistered employee (Art. 225. § (1)).** Fine up to HUF 2,000,000. A late registration made before an audit starts is fined only for lateness, and the fine can be waived (225. § (2)).
-- **Self-correction (önellenőrzés).** Correcting a return before NAV finds the error carries a self-revision surcharge (önellenőrzési pótlék, Art. 211. §).
+- **Tax not withheld or not paid over (Art. 232. §).** An employer that fails to withhold, or withholds and does not pay, owes late payment interest plus a default fine of up to 50% of the amount.
+- **Unregistered employee (Art. 225. § (1)).** Fine up to HUF 2,000,000 per employee. A late registration made before an audit starts is fined only for lateness, and the fine can be waived (225. § (2)). A wrong or incomplete registration: up to HUF 500,000 (225. § (3)).
+- **Self-correction (önellenőrzés).** Correcting a return before NAV finds the error carries a self-revision surcharge (Art. 211. §) of the central bank base rate divided by 365 per day (Art. 212. § (1)). No surcharge is due when the employer corrects the '08 return because the employee's declaration was wrong (Art. 211. § (3) b)).
 
 ## Cross-border points
 
-- **Who is insured where.** Inside the EU/EEA and Switzerland, Regulation (EC) 883/2004 decides which country's social security applies. A worker posted into Hungary with an A1 certificate from another state does not pay Hungarian TB. No szocho is due on the income of a person insured in another member state under the coordination regulations; the exemption is proven with the foreign authority's certificate (Szocho tv. 5. §; NAV sheet 49). A Hungarian worker sent abroad stays insured in Hungary if the Regulation or a bilateral agreement says so (Tbj. 6. § (3)).
+- **Who is insured where.** Inside the EU/EEA and Switzerland, Regulation (EC) 883/2004 decides which country's social security applies. A worker posted into Hungary with an A1 certificate from another state does not pay Hungarian TB. No szocho is due on the income of a person insured in another member state under the coordination regulations; the exemption is proven with the foreign authority's certificate (Szocho tv. 5. § (4); for bilateral social security agreements 5. § (4a)). A Hungarian worker sent abroad stays insured in Hungary if the Regulation or a bilateral agreement says so (Tbj. 6. § (3)).
 - **Foreign employer.** A foreign employer with no Hungarian registration still owes Hungarian contributions for insured staff working in Hungary (Tbj. 87. §). For a posting where the Hungarian host pays the wage, or for agency work, the Hungarian host or user carries the duty (87. § (5)).
 - **Income tax.** A non-resident employee working in Hungary is taxed on the Hungarian-sourced wage unless a tax treaty gives the right to the other state (for example under the 183-day rule). Treaty relief and residence are left to the cross-border skill, which is not written yet.
 - **Family allowance for EEA families.** The allowance also applies to families entitled to an equivalent family benefit in another EEA state or a neighbouring non-EEA state (Szja tv. 29/B. § (5)).
@@ -189,7 +192,7 @@ If the same household's mother were the employee, born in 1986 or later, her who
 | Szja tv., Act CXVII of 1995 (personal income tax), 3. § 21., 8. §, 29.-29/H. §, 35. §, 46.-49. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
 | Tbj., Act CXXII of 2019 (social security), 6. §, 23.-27. §, 79.-81. §, 87. § | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-10-23 |
 | Szocho tv., Act LII of 2018 (social contribution tax), 1.-2. §, 36/E. § | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-10-23 |
-| Art., Act CL of 2017 (tax procedure), 50. §, 209. §, 215. §, 220.-221. §, 225. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
+| Art., Act CL of 2017 (tax procedure), 50. §, 209. §, 211.-212. §, 215. §, 220.-221. §, 225. §, 232. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
 | Act LV of 2024, 4. § and 217. § (family allowance amounts and their start dates) | https://njt.jog.gov.hu/jogszabaly/2024-55-00-00 | 2026-10-23 |
 | Act XIII of 2025 (mothers under 30) | https://njt.jog.gov.hu/jogszabaly/2025-13-00-00 | 2026-10-23 |
 | Act XIV of 2025 (mothers of two children) | https://njt.jog.gov.hu/jogszabaly/2025-14-00-00 | 2026-10-23 |
@@ -200,5 +203,7 @@ If the same household's mother were the employee, born in 1986 or later, her who
 | NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-10-23 |
 | NAV information sheet 24, Bevallási, adófizetési információk (2026-01-26) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26 | 2026-10-23 |
 | NAV form 2608, monthly return on payments to individuals | https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2608 | 2026-10-23 |
+| NAV form 08E (registration of insured employees, replaced T1041 from 2026-01-01) and its filling guide, section 5 | https://nav.gov.hu/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/08E | 2026-10-23 |
+| MNB, Monetary Council statement of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
 
-Not yet confirmed: the employee registration form name (T1041) and its exact timing rule; the current central bank base rate for the late payment interest; the self-revision surcharge rate under Art. 211. §; the conditions of each szocho reduction other than the labour market entrants (taken from NAV sheet 49, not read in the Act section by section); the exact paragraph of Szocho tv. 5. § that holds the exemption for people insured abroad; the employer's year-end tax assessment rules; the rules for fringe benefits, simplified employment and the rehabilitation contribution.
+Not yet confirmed: the text of Art. 1. melléklet 3. pont itself (the registration timing is taken from NAV's 08E filling guide; the annex did not load on njt.jog.gov.hu); the conditions of each szocho reduction other than the labour market entrants and the unskilled and farm jobs (read in Szocho tv. 10.-11. §); the employer's year-end tax assessment rules; the rules for fringe benefits, simplified employment and the rehabilitation contribution.
