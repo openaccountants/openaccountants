@@ -151,7 +151,12 @@ def parse_name_status(raw: str) -> list[Change]:
             )
         else:
             raise IntegrityError(f"unsupported git change status: {status_token!r}")
-    return changes
+    return [change for change in changes if not is_pack_readme(change.display_path)]
+
+
+def is_pack_readme(path: str) -> bool:
+    """Pack READMEs carry frontmatter but are not guides (build-index.py skips them)."""
+    return PurePosixPath(path).name.lower().startswith("readme")
 
 
 def changed_guides(repo: Path, base: str, head: str | None) -> list[Change]:
@@ -175,7 +180,7 @@ def changed_guides(repo: Path, base: str, head: str | None) -> list[Change]:
         )
         for path in filter(None, untracked.split("\0")):
             normalized = validate_source_path(path)
-            if normalized not in tracked:
+            if normalized not in tracked and not is_pack_readme(normalized):
                 changes.append(Change("A", None, normalized))
 
     return sorted(changes, key=lambda change: change.display_path)

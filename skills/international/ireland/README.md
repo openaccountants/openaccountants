@@ -8,7 +8,6 @@ partial:
   IT-IND: no non-resident or PAYE-only (Form 12) method, no Case V rental method, and ie-cgt and ie-non-dom still give CGT at 33% after the 31% rate from 7 October 2026
   IT-CORP: ie-corporation-tax has no rules for a non-resident company's Irish branch (s.25), its description contradicts its body (R&D 30%, KDB 6.25%), and gains are grossed up at 33% after 7 October 2026
   SC: posted and cross-border workers (A1 and bilateral certificates) and Class K are referred out
-  XB: no treaty withholding-rate table, no foreign tax credit (Schedule 24) mechanics, no method for non-resident companies on Irish income
 ---
 
 # Ireland: tax pack
@@ -25,7 +24,7 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 | SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI) | source-cited draft |
 | PR, payroll withholding | ie-payroll | source-cited draft |
 | TP, transfer pricing | ie-transfer-pricing | source-cited draft |
-| XB, cross-border | ie-cross-border, ie-non-dom | source-cited draft |
+| XB, cross-border | ie-cross-border, ie-non-dom, ie-foreign-tax-and-withholding | source-cited draft |
 
 ## Official sources
 
