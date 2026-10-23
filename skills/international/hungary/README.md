@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: "hu-income-tax covers sole traders (egyéni vállalkozó) only: flat-rate, real-cost and KATA. No skill yet for a resident's capital income (interest, dividends, capital gains), rental income, agricultural producers (őstermelő), other independent-activity income, or an employee's annual return"
+  IT-IND: "No skill yet for agricultural producers (őstermelő), other independent-activity income outside sole-trader status (for example fees under a civil-law contract), crypto-asset gains (Szja tv. 67/C. §), or short-term private accommodation under the itemised flat tax (Szja tv. 57/A. §)"
 ---
 
 # Hungary: tax pack
@@ -15,7 +15,7 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | hu-income-tax (sole traders: flat-rate, real-cost, KATA; 2026) | source-cited draft, partial |
+| IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026) | source-cited draft, partial |
 | IT-CORP, corporate income tax | hu-corporate-tax | source-cited draft |
 | VAT | hungary-vat-return, hu-vat-return | source-cited draft |
 | SC, social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | source-cited draft |
