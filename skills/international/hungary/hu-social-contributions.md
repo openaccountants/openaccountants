@@ -26,19 +26,19 @@ Law used: the Tbj. (Act CXXII of 2019 on social security entitlements and contri
 
 **What changed for 2026.**
 - The floors moved with the minimum wage: HUF 322,800 a month, or HUF 373,200 (guaranteed minimum wage) where the sole trader's main personal activity needs at least secondary education or a secondary vocational qualification (Government Decree 426/2025. (XII. 23.), 2. §; Tbj. 4. § 14.; Szocho tv. 34. § 11.).
-- The szocho floor for a sole trader is the minimum wage itself. The 112.5% multiplier no longer applies from 1 January 2026 (NAV sheet 3, part III.2; NAV sheet 100, part 6.1).
+- The szocho floor for a sole trader is the minimum wage itself. The 112.5% multiplier no longer applies from 1 January 2026 (Szocho tv. 8. § (3) as amended by Act LXXXIV of 2025, 28. §, in force 1 January 2026 under 35. § (3) of that Act; NAV sheet 3, part III.2; NAV sheet 100, part 6.1).
 - The tax-free part of flat-rate income, which is outside the TB and szocho base, is HUF 1,936,800.
 - The health service contribution is HUF 12,300 a month (NAV sheet 91, part 5).
 
 ## Who this applies to
 
-- **Sole traders** for social security purposes: people in the NAV sole trader register, practising vets and private pharmacists, lawyers, individual patent attorneys, and notaries and bailiffs working outside a firm (Tbj. 4. § 2.; NAV sheet 3, part II.2). Insurance runs from registration to deletion, whether or not the person works (Tbj. 10. §).
+- **Sole traders** for social security purposes: people in the register of sole traders (egyéni vállalkozói nyilvántartás), practising vets and private pharmacists, lawyers, individual patent attorneys, and notaries and bailiffs working outside a firm (Tbj. 4. § 2.; NAV sheet 3, part II.2). Insurance runs from registration to deletion, whether or not the person works (Tbj. 10. §).
 - **Three statuses** decide the contributions (NAV sheet 3, part II.3; NAV sheet 100, part 6):
   - **Full-time (főfoglalkozású):** the default. Pays on actual income, with a monthly floor.
   - **Second job (másodfoglalkozású):** also has a job of at least 36 hours a week (hours across jobs are added), or is a full-time student. Pays on actual income only, no floor (Tbj. 42. § (2)-(3)).
-  - **Supplementary (kiegészítő tevékenységet folytató):** an own-right pensioner, or a widow's pensioner over pension age. Pays no TB and no szocho (NAV sheet 3, part II.4.5, III.1.2).
+  - **Supplementary (kiegészítő tevékenységet folytató):** an own-right pensioner, or a widow's pensioner over pension age. Pays no TB, and no szocho on the draw or flat-rate income (Szocho tv. 5. § (1) a); NAV sheet 3, part II.4.5, III.1.2; NAV sheet 100, part 6.3). Szocho on the business dividend base is still due (Szocho tv. 19. § (1)).
 - **KATA taxpayers** pay neither: the HUF 50,000 monthly fixed tax replaces them (Tbj. 38. § (2); Kata tv. 8. §). See [hu-income-tax](hu-income-tax.md).
-- **Company members (társas vállalkozó)** who work personally in a Kft., Bt. or similar pay TB on what the company pays them for personal work, at least the minimum wage a month (Tbj. 39. § (1)); the company pays szocho on at least the minimum wage (Szocho tv. 8. § (1)). NAV sheet 12 has the details.
+- **Company members (társas vállalkozó)** who work personally in a Kft., Bt. or similar pay TB on what the company pays them for personal work, at least the minimum wage a month (Tbj. 39. § (1)); the company pays szocho on at least the minimum wage (Szocho tv. 8. § (1)). In both, the guaranteed minimum wage applies where the member's main activity needs at least secondary education (Tbj. 4. § 14.2.; Szocho tv. 34. § 11.). NAV sheet 12 has the details.
 - **Employees** are in [hu-payroll](hu-payroll.md).
 
 ## Rates, bands and thresholds
@@ -50,13 +50,13 @@ Law used: the Tbj. (Act CXXII of 2019 on social security entitlements and contri
 | Pension contribution (nyugdíjjárulék), a separate charge only for certain benefit recipients and insured persons named in Tbj. 23. § (1) c), not the sole trader's TB | 10% | 2026 | [Tbj. 25. § (2), 23. § (1) c)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
 | Social contribution tax (szocho) | 13% | 2026 | [Szocho tv. 2. § (1)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00) |
 | Monthly floor for TB and szocho, full-time sole trader | Minimum wage HUF 322,800; HUF 373,200 if the main personal activity needs at least secondary education or qualification | from 2026-01-01 | [Tbj. 40. § (3), 4. § 14.](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00); [Szocho tv. 8. § (3), 34. § 11.](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00); [426/2025. Korm. rendelet 2. §](https://njt.jog.gov.hu/jogszabaly/2025-426-20-22) |
-| Tax-free flat-rate income, outside the TB and szocho base | HUF 1,936,800 a year | 2026 | [NAV sheet 100, part 6](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
+| Tax-free flat-rate income, outside the TB and szocho base | HUF 1,936,800 a year | 2026 | [Tbj. 40. § (2)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00); [Szocho tv. 6. § (2)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00); [NAV sheet 100, part 6](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
 | Szocho on the business dividend base (vállalkozói osztalékalap): stops when the year's income reaches 24 times the minimum wage | Cap HUF 7,747,200 | 2026 | [Szocho tv. 2. § (2)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00); [NAV sheet 3, part III.1.1](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.) |
 | Family contribution allowance (családi járulékkedvezmény) | 15% of the family allowance the tax base could not absorb, up to the TB | 2026 | [Tbj. 34. § (3), (6)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
-| Szocho credit for a sole trader with health impairment of 60% or less, or on disability benefits | Up to 13% of twice the minimum wage a month | 2026 | [NAV sheet 3, part III.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.) |
-| Pensioner using a mothers' allowance: szocho on flat-rate income above four times the annual average wage | Above HUF 34,356,720 | from 2026-01-01 | [NAV sheet 100, part 6.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
+| Szocho credit for a sole trader with health impairment of 60% or less, or on disability benefits | Up to 13% of twice the minimum wage a month | 2026 | [Szocho tv. 13. § (3)-(4)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00); [NAV sheet 3, part III.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31.) |
+| Pensioner using a mothers' allowance: szocho on flat-rate income above four times the annual average wage | Above HUF 34,356,720 | from 2026-01-01 | [Szocho tv. 5. § (1a) b)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00); [NAV sheet 100, part 6.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
 | Health service contribution (egészségügyi szolgáltatási járulék), for an uninsured person, for example during suspension | HUF 12,300 a month (HUF 410 a day) | 2026 | [Tbj. 25. § (3)](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00); [NAV sheet 91, part 5](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/91.-informacios-fuzet---az-egeszsegugyi-szolgaltatasi-jarulek-2026.01.09) |
-| Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 points, per day /365. Base rate 5.50% (20 October 2026), so 10.50% a year | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00); [MNB, 20 October 2026](https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol) |
+| Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 points, per day /365. Base rate 5.50% from 26 August 2026, held on 20 October 2026, so 10.50% a year | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00); [NAV, base rate notice of 25 August 2026](https://nav.gov.hu/ugyfeliranytu/jegybank); [MNB, 20 October 2026](https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol) |
 
 ## The taxable base
 
@@ -83,18 +83,18 @@ While flat-rate income for the year stays under HUF 1,936,800, a full-time sole 
 - **Benefit months.** No TB or szocho on the floor for days on sick pay, maternity and childcare benefits (CSED, GYED, and GYES or nursing benefits unless the person keeps working), military reserve service or detention. For part months, the floor is cut by one thirtieth per day (Tbj. 40. § (4)-(5); Szocho tv. 9. §).
 - **Suspension (szünetelés).** A whole month of suspension carries no TB or szocho. A part month is not pro-rated: the full monthly floor is due (NAV sheet 3, part II.4.3). During suspension the person is uninsured. If not insured or entitled to health care on another ground, they owe the HUF 12,300 monthly health service contribution (NAV sheet 3, part II.4.3).
 - **36-hour job or full-time study:** no floor (Tbj. 42. § (2); NAV sheet 3, part III.2).
-- **Sole trader and company member at once:** pays the floor in only one of the two, as chosen by a statement to the company by 31 January (Tbj. 42. § (8); NAV sheet 3, part II.4.4.2).
+- **Sole trader and company member at once:** pays the floor only as a sole trader, unless a statement to the company by 31 January moves the floor to the company for the whole year (Tbj. 42. § (8); Szocho tv. 9. § (10); NAV sheet 3, part II.4.4.2).
 
 ### Family contribution allowance (Tbj. 34. §, 80. §)
 
-A sole trader entitled to the family allowance can cut their TB by 15% of the family allowance the tax base could not use, up to the TB. Monthly, it is 15% of the gap between the month's family allowance and the month's draw or flat-rate income advance base. For a full-time flat-rate sole trader paying on the floor, the allowance works against the TB on the floor up to that month's flat-rate income, even if tax-free; in a month with no income it cannot be used (NAV sheet 100, part 6.1). It is reported on the quarterly 2658 return and settled in the annual return. Claiming it without entitlement means repaying it plus a 12% penalty if above HUF 10,000.
+A sole trader entitled to the family allowance can cut their TB by 15% of the family allowance the tax base could not use, up to the TB. Monthly, it is 15% of the gap between the month's family allowance and the month's draw or flat-rate income advance base. For a full-time flat-rate sole trader paying on the floor, the allowance works against the TB on the floor up to that month's flat-rate income, even if tax-free; in a month with no income it cannot be used (NAV sheet 100, part 6.1). It is reported on the quarterly 2658 return and settled in the annual return. Claiming it without entitlement means repaying it plus a 12% penalty if the repayment is above HUF 10,000 (Tbj. 81. § (3)).
 
 ## Deadlines and filing
 
 | What | When | Where |
 |---|---|---|
-| Insurance registration | Done by NAV from the sole trader register; changes within 15 days on form 08E (T1041 in ÁNYK). Lawyers, notaries, bailiffs, patent attorneys and vets still file 08E themselves | NAV (Art. 1. melléklet 3.10.; NAV sheet 3, part II.6) |
-| TB and szocho return (2658, the '58 return) with the three months shown separately | By the 12th of the month after the quarter, even if nothing is due | NAV, electronically (Art. 50. § (1a); Szocho tv. 19. § (2)) |
+| Insurance registration | Done by NAV from the sole trader register; changes within 15 days on form 08E (T1041 in ÁNYK). Lawyers, notaries, bailiffs, patent attorneys, vets and private pharmacists still file 08E themselves | NAV (Art. 1. melléklet 3.10., 44. §; NAV sheet 3, part II.6) |
+| TB and szocho return (2658, the '58 return) with the three months shown separately | By the 12th of the month after the quarter, even if nothing is due | NAV, electronically (Art. 50. § (1a); Tbj. 77. § (2); Szocho tv. 19. § (1)-(2)) |
 | Pay the TB and szocho for the quarter | Same day | TB: NAV account 10032000-06055802; szocho: 10032000-06055912 (Tbj. 77. §; NAV sheet 3) |
 | Szocho on the dividend base | With the annual szja return, 20 May 2027 for 2026 | NAV (Szocho tv. 19. § (1)) |
 | Out-of-cycle return | When the sole trader stops trading, loses the right to trade, or claims an old-age pension (within 30 days of the claim) | NAV (Art. 52. §; NAV sheet 3, part II.5) |
@@ -103,10 +103,10 @@ A sole trader entitled to the family allowance can cut their TB by 15% of the fa
 
 ## Penalties and interest
 
-- **Late payment interest (Art. 209. § (1)).** Central bank base rate plus 5 points /365 per day: 10.50% a year at the 5.50% base rate.
+- **Late payment interest (Art. 209. § (1)).** Central bank base rate plus 5 points /365 per day: 10.50% a year at the 5.50% base rate in force from 26 August 2026 (held on 20 October 2026).
 - **Tax penalty (Art. 215. § (3)-(4)).** 50% of a shortfall found on audit; 200% where income was hidden or records falsified.
 - **Default fine (Art. 220. § (1)).** Up to HUF 400,000 for an individual for a late, missing or wrong return.
-- **Missed quarterly return (Art. 221. §).** A 15-day notice first, then a fixed HUF 50,000 fine for an individual.
+- **Missed quarterly return (Art. 221. §).** A 15-day notice first, then a fixed HUF 50,000 fine for an individual and a second notice; after that, HUF 200,000.
 - **Self-correction (Art. 212. § (1)).** Base rate /365 per day; 1.5 times on a repeat correction.
 - **Family contribution allowance claimed without entitlement.** Repay by the annual return deadline plus a 12% difference penalty when the repayment exceeds HUF 10,000 (NAV sheet 100, part 6.1).
 
@@ -194,8 +194,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tbj., Act CXXII of 2019 (social security), 4. §, 10. §, 23.-27. §, 34. §, 38.-40. §, 42. §, 77. §, 80. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-10-23 |
-| Szocho tv., Act LII of 2018 (social contribution tax), 2. §, 5. §, 6. §, 8.-9. §, 19. §, 34. § | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-10-23 |
+| Tbj., Act CXXII of 2019 (social security), 4. §, 10. §, 23.-27. §, 34. §, 38.-40. §, 42. §, 77. §, 80.-81. §, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/2019-122-00-00 | 2026-10-23 |
+| Szocho tv., Act LII of 2018 (social contribution tax), 1. §, 2. §, 5. §, 6. §, 8.-9. §, 13. §, 19. §, 34. §; 8. § (1) and (3) as amended by Act LXXXIV of 2025, 28. § (no 112.5% multiplier from 2026-01-01) | https://njt.jog.gov.hu/jogszabaly/2018-52-00-00 | 2026-10-23 |
 | Szja tv., Act CXVII of 1995 (personal income tax), 1. számú melléklet 4.48. | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
 | Kata tv., Act XIII of 2022, 8. § | https://njt.jog.gov.hu/jogszabaly/2022-13-00-00 | 2026-10-23 |
 | Art., Act CL of 2017 (tax procedure), 50. §, 52. §, 209. §, 212. §, 215. §, 220.-221. § | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
@@ -204,6 +204,7 @@ expected:
 | NAV information sheet 100, Az egyéni vállalkozók átalányadózásának alapvető szabályai (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20 | 2026-10-23 |
 | NAV information sheet 99, Kisadózó vállalkozók tételes adója (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20 | 2026-10-23 |
 | NAV information sheet 91, Az egészségügyi szolgáltatási járulék (2026-01-09) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/91.-informacios-fuzet---az-egeszsegugyi-szolgaltatasi-jarulek-2026.01.09 | 2026-10-23 |
-| MNB, Monetary Council statement of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
+| NAV, notice on the central bank base rate (25 August 2026: 5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
+| MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
 
-Not yet confirmed: NAV information sheet 12 on company members (társas vállalkozó) was not read, so their part-month, multiple-company and suspension rules are left out; the szocho credit for impaired sole traders was read only in NAV sheet 3, not in Szocho tv. 13. §; voluntary pension top-ups and agreements for extra insurance (megállapodás) are not covered.
+Not yet confirmed: NAV information sheet 12 on company members (társas vállalkozó) was not read, so their part-month, multiple-company and suspension rules are left out; voluntary pension top-ups and agreements for extra insurance (megállapodás) are not covered.

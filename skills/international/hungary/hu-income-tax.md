@@ -29,11 +29,11 @@ Law used: the Szja tv. (Act CXVII of 1995 on personal income tax) and the Kata t
 - The general flat-rate cost ratio rose from 40% to 45% on 1 January 2026 (Szja tv. 53. § (1) a), as amended by Act LXXXIV of 2025, 3. § a), in force 1 January 2026 under 35. § (3) of that Act).
 - The minimum wage is HUF 322,800 a month (Government Decree 426/2025. (XII. 23.), 2. § (1)). Every threshold tied to the annual minimum wage moved with it: the flat-rate ceilings are HUF 38,736,000 and 193,680,000, and the tax-free part of flat-rate income is HUF 1,936,800.
 - The family allowance is HUF 133,340, 266,660 and 440,000 per child a month (Szja tv. 29/A. § (2)).
-- The mothers of two children allowance (Act XIV of 2025) applies from 1 January 2026; the mothers of three children allowance (Act XV of 2025) from 1 October 2025. Both cover a sole trader's draw and flat-rate income.
+- The mothers under 30 allowance (Act XIII of 2025) and the mothers of two children allowance (Act XIV of 2025) apply from 1 January 2026; the mothers of three children allowance (Act XV of 2025) from 1 October 2025. Both cover a sole trader's draw and flat-rate income.
 
 ## Who this applies to
 
-- **Sole traders (egyéni vállalkozó)** in the NAV register of sole traders, for the activities registered there (Szja tv. 3. § 17.). The Szja tv. also treats as sole traders: lawyers, notaries and independent court bailiffs working outside a firm, individual patent attorneys and practising vets (NAV sheet 3, part I).
+- **Sole traders (egyéni vállalkozó)** in the register of sole traders (egyéni vállalkozói nyilvántartás), for the activities registered there (Szja tv. 3. § 17.). The Szja tv. also treats as sole traders: lawyers, notaries and independent court bailiffs working outside a firm, individual patent attorneys and practising vets (NAV sheet 3, part I).
 - Hungarian tax residents are taxed on worldwide income; non-residents on Hungarian-source income. Residence is in [hu-cross-border](hu-cross-border.md).
 - **Each sole trader is in one of three regimes for the whole year:**
   - **Flat-rate taxation (átalányadózás).** Income is revenue minus a fixed cost ratio. No actual costs (Szja tv. 50.-56. §).
@@ -52,7 +52,7 @@ Law used: the Szja tv. (Act CXVII of 1995 on personal income tax) and the Kata t
 | Flat-rate revenue ceiling, general (10 times annual minimum wage) | HUF 38,736,000 | 2026 | [Szja tv. 52. § (1) a)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00); [NAV sheet 100, part 2](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
 | Flat-rate revenue ceiling, retail only (50 times annual minimum wage) | HUF 193,680,000 | 2026 | [Szja tv. 52. § (1) b)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | Flat-rate cost ratio, any activity not listed below | 45% | from 2026-01-01 | [Szja tv. 53. § (1) a)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00); [Act LXXXIV of 2025, 35. § (3)](https://njt.jog.gov.hu/jogszabaly/2025-84-00-00) |
-| Flat-rate cost ratio, activities listed in 53. § (2) (building, manufacturing, repairs, hairdressing and beauty, taxi and road haulage, catering, driving schools, photography and others, by ÖVTJ'24 code) | 80% | 2026 | [Szja tv. 53. § (1) b), (2)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
+| Flat-rate cost ratio, activities listed in 53. § (2) (building, manufacturing, repairs, hairdressing and beauty, taxi and road haulage, catering, driving schools, photography and others, by ÖVTJ'24 code), only if all the year's revenue comes from these activities (or these plus retail) | 80% | 2026 | [Szja tv. 53. § (1) b), (2)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | Flat-rate cost ratio, retail only all year (catering excluded) | 90% | 2026 | [Szja tv. 53. § (1) c)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | Tax-free part of flat-rate income (half the annual minimum wage) | HUF 1,936,800 | 2026 | [Szja tv. 1. számú melléklet 4.48.](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00); [NAV sheet 100, part 3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
 | Real-cost regime: business profit tax (vállalkozói személyi jövedelemadó) | 9% of the business tax base | 2026 | [Szja tv. 49/B. § (9)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
@@ -65,7 +65,7 @@ Law used: the Szja tv. (Act CXVII of 1995 on personal income tax) and the Kata t
 | First marriage allowance (első házasok kedvezménye) | HUF 33,335 a month off the base, for up to 24 months | 2026 | [Szja tv. 29/C. § (3)-(4)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | Under-25 allowance (25 év alatti fiatalok kedvezménye) | Eligible income up to the July 2025 average gross wage, HUF 715,765 a month | 2026 | [Szja tv. 29/F. § (2)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00); [NAV sheet 100, note 27](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20) |
 | Mothers under 30; mothers of two children (in 2026 only if she turns 40 after 2025-12-31); mothers of three children; mothers of four or more | The draw (kivét) or the taxable flat-rate income is free of szja | 2026 | [Act XIII of 2025, 1. §](https://njt.jog.gov.hu/jogszabaly/2025-13-00-00); [Act XIV of 2025, 1. §, 4. §](https://njt.jog.gov.hu/jogszabaly/2025-14-00-00); [Act XV of 2025, 1. §, 4. §](https://njt.jog.gov.hu/jogszabaly/2025-15-00-00); [Szja tv. 29/D. §](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
-| Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 points, per day /365. Base rate 5.50% (20 October 2026), so 10.50% a year | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00); [MNB, 20 October 2026](https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol) |
+| Late payment interest (késedelmi pótlék) | Central bank base rate plus 5 points, per day /365. Base rate 5.50% from 26 August 2026, held on 20 October 2026, so 10.50% a year | 2026 | [Art. 209. § (1)](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00); [NAV, base rate notice of 25 August 2026](https://nav.gov.hu/ugyfeliranytu/jegybank); [MNB, 20 October 2026](https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol) |
 
 ## The taxable base
 
@@ -86,7 +86,7 @@ Two layers. The owner's own pay is taxed like a wage; the profit left in the bus
 2. **Business income = revenue - allowable costs.** Costs follow Szja tv. 4. and 11. számú melléklet: they must be paid in the year, documented, and incurred to earn the revenue. Costs include the draw and the sole trader's own szocho. Costs exclude the szja itself, the KATA tax and the sole trader's own 18.5% TB contribution (NAV sheet 3, part I.1.2.1). Revenue reducing items include the small-business investment allowance (kisvállalkozói kedvezmény) and the development reserve (49/B. § (6)).
 3. **Business tax base.** Business income minus losses brought forward. If it is below 2% of revenue (the income minimum), tax is due on 2% of revenue unless the sole trader files the statement allowed instead. The income minimum does not apply in the year of starting and the next year if there was no sole trader activity in the 36 months before, or after a natural disaster (49/B. § (20), (23); NAV sheet 3, part I.1.3).
 4. **Business profit tax: 9% of the business tax base** (49/B. § (9)), less the small business interest credit (up to 70% of the tax) and foreign tax relief.
-5. **Business dividend base (vállalkozói osztalékalap).** Business tax base minus the 9% tax, adjusted under 49/C. § (for example, reduced by investment spending in the year). Taxed at 15%, paid with the annual return. Szocho at 13% is also due on it until the person's income for the year reaches 24 times the minimum wage, HUF 7,747,200 (see [hu-social-contributions](hu-social-contributions.md)).
+5. **Business dividend base (vállalkozói osztalékalap).** Business tax base plus any small-business investment allowance taken, minus the 9% tax (49/B. § (18)), adjusted under 49/C. § (for example, reduced by investment spending in the year). Taxed at 15%, paid with the annual return. Szocho at 13% is also due on it until the person's income for the year reaches 24 times the minimum wage, HUF 7,747,200 (see [hu-social-contributions](hu-social-contributions.md)).
 
 ### KATA
 
@@ -99,26 +99,26 @@ The HUF 50,000 a month replaces the szja, the TB and the szocho on the sole trad
 | Choose flat-rate taxation, existing sole trader | In the statement attached to the previous year's szja return, by its deadline (20 May 2026 for 2026). The choice stays until withdrawn | NAV, annual szja return (Szja tv. 8. számú melléklet 1.; NAV sheet 100, part 1) |
 | Choose flat-rate taxation, new sole trader | When registering | NAV Vállalkozói Ügysegéd (NAV sheet 100, part 1) |
 | Choose KATA | Any time in the year; status starts on the first day of the next month (new sole trader: from registration) | Form T101E or at registration (NAV sheet 99, part 2) |
-| Szja advance (flat-rate income above HUF 1,936,800, or the draw) | Quarterly, by the 12th of the month after the quarter | NAV account 10032000-06056353 (Szja tv. 8. számú melléklet 9.; NAV sheet 3, part I.1.6) |
+| Szja advance (flat-rate income above HUF 1,936,800; under the real-cost regime the 15% on the draw and the 9% on the business advance base) | Quarterly, by the 12th of the month after the quarter | NAV account 10032000-06056353 (Szja tv. 46. § (1), (9), 49. § (4), 8. számú melléklet 9.; NAV sheet 3, part I.1.6) |
 | KATA fixed tax | Monthly, by the 12th of the next month; no return, NAV posts it | NAV account 10032000-01076349 (Kata tv. 7. § (3)) |
 | Annual szja return for 2026 (business income, 9% tax, dividend base tax and its szocho) | 20 May 2027. NAV prepares a draft that the sole trader must complete with the business figures | NAV eSZJA (NAV sheet 3, part I.1.6) |
 | KATA revenue statement and 40% surtax | 25 February 2027; within 30 days if status ends during the year | NAV, KATA form (Kata tv. 10. § (1), 7. § (6)) |
-| Report a KATA revenue from a business payer or from letting property | Within 15 days of receiving it | NAV (NAV sheet 99, part 3) |
+| Report a KATA revenue from a business payer or from letting property | Within 15 days of receiving it | NAV (Kata tv. 5. § (2)-(3); NAV sheet 99, part 3) |
 
 If the sole trader writes their sole-trader registration number on the invoice, a Hungarian payer does not withhold an advance (Szja tv. 46. § (4) b); NAV sheet 100, note 18).
 
 ## Penalties and interest
 
-- **Late payment interest (Art. 209. § (1)).** Central bank base rate plus 5 points, divided by 365, per day late. The base rate is 5.50% from 21 October 2026, so 10.50% a year.
+- **Late payment interest (Art. 209. § (1)).** Central bank base rate plus 5 points, divided by 365, per day late. The base rate is 5.50% from 26 August 2026 (held on 20 October 2026), so 10.50% a year.
 - **Tax penalty (adóbírság, Art. 215. § (3)-(4)).** 50% of the tax shortfall found on audit; 200% where revenue was hidden or records falsified.
 - **Default fine (mulasztási bírság, Art. 220. § (1)).** Up to HUF 400,000 for an individual for a late, missing or wrong return or registration.
-- **Missed return (Art. 221. §).** NAV first sends a 15-day notice. If the return is still missing, a fixed fine of HUF 50,000 for an individual.
+- **Missed return (Art. 221. §).** NAV first sends a 15-day notice. If the return is still missing, a fixed fine of HUF 50,000 for an individual and a second 15-day notice; after that, HUF 200,000 (Art. 221. § (2)-(3)).
 - **Self-correction (önellenőrzés, Art. 212. § (1)).** A surcharge of the base rate /365 per day; 1.5 times that on a repeat self-correction of the same return.
 - **Regime loss.** A final default fine for not issuing invoices or receipts ends flat-rate taxation from the day the decision becomes final (Szja tv. 55. §) and ends KATA status (NAV sheet 99, part 3). Under KATA, an enforceable tax debt above HUF 100,000 on 31 December also ends the status unless paid before the decision becomes final.
 
 ## Cross-border points
 
-- **Foreign clients and KATA.** Revenue from a foreign company or other foreign organisation counts as revenue from a payer and ends KATA status the day before (Kata tv. 2. § 7., 5. § (1); NAV sheet 99, part 3). A KATA taxpayer can only sell to private individuals, wherever they live.
+- **Foreign clients and KATA.** Revenue from a foreign company or other foreign organisation counts as revenue from a payer and ends KATA status the day before (Kata tv. 2. § 7., 5. § (1) g); NAV sheet 99, part 3). Under KATA, revenue can come only from private individuals who are not business payers, in Hungary or abroad; taxi transport is the one exception.
 - **Insured abroad.** A sole trader insured in another state under the EU coordination regulations (A1 certificate) or a bilateral agreement is not full-time for KATA and cannot use it (NAV sheet 99, part 1). Contributions are in [hu-social-contributions](hu-social-contributions.md).
 - **Foreign permanent establishment.** Under the real-cost regime, business income that a treaty lets a foreign permanent establishment's state tax is taken out of the Hungarian base. Without a treaty, 90% of the foreign tax is credited, up to the average Hungarian tax on that income (Szja tv. 49/B. § (9) a); NAV sheet 3, part I.1.3).
 - **Residence, non-residents and treaties** are in [hu-cross-border](hu-cross-border.md).
@@ -157,7 +157,7 @@ Gábor registered as a sole trader on 1 January 2026, with no sole trader activi
 - **Draw.** Szja 15% of HUF 6,000,000 is HUF 900,000, paid in quarterly advances. He also owes 18.5% TB (HUF 1,110,000) and 13% szocho (HUF 780,000) on the draw.
 - **Costs paid in 2026.** The draw is a cost. His own szocho is a cost when paid. The szocho for the first three quarters (HUF 585,000) is paid in 2026; the fourth quarter's is paid by 12 January 2027 and is a 2027 cost. His own TB is not a cost.
 - **Business income** is HUF 20,000,000 - 8,015,000 - 6,000,000 - 585,000 = HUF 5,400,000. The income minimum (2% of revenue, HUF 400,000) does not apply in his first year, and his income is above it anyway.
-- **9% business tax:** HUF 486,000. **Dividend base:** HUF 4,914,000, taxed at 15%: HUF 737,100.
+- **9% business tax:** HUF 486,000, paid in quarterly advances during the year and settled in the return. **Dividend base:** HUF 4,914,000, taxed at 15%: HUF 737,100.
 - **Szocho on the dividend base** stops when his income for the year reaches HUF 7,747,200. His draw already uses HUF 6,000,000, so only HUF 1,747,200 of the dividend base bears 13% szocho: HUF 227,136.
 
 ```oa-check
@@ -208,7 +208,7 @@ The edge case: from his third year, if business income ever fell below 2% of rev
 
 | Source | URL | Read on |
 |---|---|---|
-| Szja tv., Act CXVII of 1995 (personal income tax), 3. §, 8. §, 29.-29/F. §, 46. §, 47. §, 49/B.-49/C. §, 50.-56. §, 1., 8., 10., 11. and 13. számú melléklet, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
+| Szja tv., Act CXVII of 1995 (personal income tax), 3. §, 8. §, 29.-29/F. §, 46. §, 47. §, 49. §, 49/B.-49/C. §, 50.-56. §, 1., 8., 10., 11. and 13. számú melléklet, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 | 2026-10-23 |
 | Act LXXXIV of 2025, 35. § (entry into force of the 45% cost ratio) | https://njt.jog.gov.hu/jogszabaly/2025-84-00-00 | 2026-10-23 |
 | Kata tv., Act XIII of 2022 (small-taxpayer fixed tax), 2. §, 5. §, 7.-8. §, 10. § | https://njt.jog.gov.hu/jogszabaly/2022-13-00-00 | 2026-10-23 |
 | Act XIII of 2025 (mothers under 30) | https://njt.jog.gov.hu/jogszabaly/2025-13-00-00 | 2026-10-23 |
@@ -219,6 +219,7 @@ The edge case: from his third year, if business income ever fell below 2% of rev
 | NAV information sheet 3, Egyéni vállalkozók szja- és járulékkötelezettsége (2026-08-31) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/03.-Az-egyeni-vallalkozok-szja--es-jarulekkotelezettsege-2026.-08.-31. | 2026-10-23 |
 | NAV information sheet 100, Az egyéni vállalkozók átalányadózásának alapvető szabályai (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/100.-Az-egyeni-vallalkozok-atalanyadozasanak-alapveto-szabalyai-2026.-02.-20 | 2026-10-23 |
 | NAV information sheet 99, Kisadózó vállalkozók tételes adója (2026-02-20) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/99.-Kisadozo-vallalkozok-teteles-adoja-kata-2026.-02.-20 | 2026-10-23 |
-| MNB, Monetary Council statement of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
+| NAV, notice on the central bank base rate (25 August 2026: 5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
+| MNB, Monetary Council statement of 20 October 2026 (base rate held at 5.50%) | https://www.mnb.hu/monetaris-politika/a-monetaris-tanacs/kozlemenyek/2026/kozlemeny-a-monetaris-tanacs-2026-oktober-20-i-uleserol | 2026-10-23 |
 
 Not yet confirmed: the form number of the 2026 annual szja return (NAV had not published the 2026 form when read); the full list of revenue-reducing items and the small-business investment allowance conditions (read only in NAV sheet 3, not each paragraph of 49/B. § (6)); the 49/C. § adjustments to the dividend base other than investment spending; the treatment of a sole trader who switches regime during the year; local business tax (helyi iparűzési adó), which is not covered here.
