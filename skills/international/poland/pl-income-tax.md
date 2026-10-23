@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Poland: personal income tax for individuals and the self-employed (2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing. Built by the OpenAccountants team.
+Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill covers the annual PIT for an individual resident in Poland, and the choice of tax form for a sole trader (jednoosobowa działalność gospodarcza). It links to the other Poland skills and does not repeat them:
 
@@ -67,7 +67,7 @@ This skill covers the annual PIT for an individual resident in Poland, and the c
 
 **Choosing the form.** The flat tax or ryczałt is chosen by written notice to the tax office by the 20th of the month after the month of the first revenue in the year, or by the end of the year if that revenue comes in December (PIT Act art. 9a ust. 2; Ryczałt Act art. 9 ust. 1). The choice carries over to later years unless it is changed by the same deadline. Without a choice the scale applies.
 
-**Joint filing.** Married couples in community of property for the whole year (or from the wedding) can be taxed jointly: tax is twice the tax on half their combined income (art. 6 ust. 2). A single parent can file the same way with a child (art. 6 ust. 4c). Joint filing is not allowed if either spouse uses the flat tax or ryczałt in the year, except ryczałt on private rental (art. 6 ust. 8). It needs scale income only.
+**Joint filing.** Married couples in community of property for the whole year (or from the wedding) can be taxed jointly: tax is twice the tax on half their combined income (art. 6 ust. 2). A single parent bringing up a child alone pays twice the tax on half of their own income (art. 6 ust. 4c-4d). Joint filing is not allowed if either spouse uses the flat tax or ryczałt in the year, except ryczałt on private rental (art. 6 ust. 8). It needs scale income only.
 
 **Solidarity levy.** The base is the excess over PLN 1,000,000 of income taxed on the scale, the flat tax, capital income (art. 30b) and CFC income (art. 30f), after deducting social contributions and the flat-tax health deduction (art. 30h ust. 2). Ryczałt revenue is not in the base.
 
@@ -81,13 +81,12 @@ This skill covers the annual PIT for an individual resident in Poland, and the c
 | Advance for December 2026 or Q4 2026 | 20 January 2027 | PIT Act art. 44 ust. 6 |
 | Annual return for 2026: PIT-36 (scale with business), PIT-36L (flat tax), PIT-28 (ryczałt), PIT-37 (income only through payers) | 15 February to 30 April 2027; tax due by the same date | PIT Act art. 45 ust. 1 and 1a; Ryczałt Act art. 21 ust. 2 |
 | Solidarity levy return (DSF-1) and payment | 30 April 2027 | PIT Act art. 30h ust. 4 |
-| KPiR and fixed-asset register kept with software and sent to the tax office | by the return deadline | PIT Act art. 24a ust. 1e (Dz.U. 2026 poz. 779, from 1 July 2026) |
 
 Under monthly or quarterly advances on the scale, each advance is the tax on income from the start of the year minus advances already due (art. 44 ust. 3). A first-time business owner is exempt from advances in the year after the start year if conditions are met (art. 44 ust. 7a). Returns are filed through e-Urząd Skarbowy (Twój e-PIT).
 
 ## Penalties and interest
 
-- **Late payment interest.** 200% of the NBP lombard rate plus 2 points, at least 8% (Tax Ordinance art. 56 § 1): 10.50% a year from 5 March 2026 (M.P. 2026 poz. 269). The reduced rate of 5.25% applies if a correction is filed within 6 months of the return deadline and the tax is paid within 7 days of it (Tax Ordinance art. 56a).
+- **Late payment interest.** 200% of the NBP lombard rate plus 2 points, at least 8% (Tax Ordinance art. 56 § 1): 10.50% a year from 5 March 2026 (M.P. 2026 poz. 269). The reduced rate of 5.25% applies if a correction is filed within 6 months of the return deadline and the tax is paid within 7 days of filing the correction (Tax Ordinance art. 56a § 1).
 - **Fiscal Penal Code.** Not filing a return and so understating tax, or filing a false return, is a fiscal offence or petty offence depending on the amount (Fiscal Penal Code art. 54, 56). Persistent late payment is a petty offence (art. 57). A petty-offence fine is 1/10 to 20 times the minimum wage (art. 48 § 1). Filing a valid correction (art. 16a) or a voluntary disclosure (czynny żal, art. 16) and paying the tax removes liability if done before the authority acts.
 
 ## Cross-border points
@@ -159,7 +158,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 3, 5a, 6, 9, 9a, 21, 23, 24a, 26, 27, 27f, 30c, 30ca, 30h, 44, 45) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-10-23 |
-| PIT Act amendments after consolidation (none change the articles used; poz. 779 adds art. 24a ust. 1e) | https://api.sejm.gov.pl/eli/acts/DU/2026/779/text.pdf | 2026-10-23 |
+| PIT Act amendments after consolidation (none change the articles used; poz. 779 rewords art. 24a ust. 1e on sending books electronically) | https://api.sejm.gov.pl/eli/acts/DU/2026/779/text.pdf | 2026-10-23 |
 | Ryczałt Act, consolidated text Dz.U. 2025 poz. 843 (art. 4, 6, 9, 11, 12, 21) | https://api.sejm.gov.pl/eli/acts/DU/2025/843/text.pdf | 2026-10-23 |
 | Minister of Finance notice: flat-tax health deduction limit for 2026, M.P. 2025 poz. 1274 | https://api.sejm.gov.pl/eli/acts/MP/2025/1274/text.pdf | 2026-10-23 |
 | NBP EUR mid rate, table 190/A/NBP/2025 of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
@@ -169,4 +168,4 @@ expected:
 | Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
 | Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16, 16a, 48, 54, 56, 57) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
 
-Not yet confirmed: the podatki.gov.pl limits page prints the 1 October 2025 EUR rate as 4.2846 (the 2024 rate) while its PLN 851,720 figure uses 4.2586, the NBP rate; the PLN 8,517,200 ryczałt limit is computed here from the NBP rate, not published by the Ministry. The first tax year to which the electronic KPiR filing rule in art. 24a ust. 1e applies was not checked against the transitional provisions. The ryczałt rate list above names the main groups only; the full lists in Ryczałt Act art. 12 decide each activity. The art. 27 ust. 8 and 9 treaty methods and art. 44 ust. 7a conditions were taken from the article headings and not worked through in an example.
+Not yet confirmed: the podatki.gov.pl limits page prints the 1 October 2025 EUR rate as 4.2846 (the 2024 rate) while its PLN 851,720 figure uses 4.2586, the NBP rate; the PLN 8,517,200 ryczałt limit is computed here from the NBP rate, not published by the Ministry. PIT Act art. 24a ust. 1e (as reworded by Dz.U. 2026 poz. 779 from 1 July 2026) requires the KPiR and fixed-asset register to be kept with software and sent to the tax office by the return deadline; the first tax year it applies to was not found in the transitional provisions, so it is left out of the deadlines table. The ryczałt rate list above names the main groups only; the full lists in Ryczałt Act art. 12 decide each activity. The art. 27 ust. 8 and 9 treaty methods and art. 44 ust. 7a conditions were taken from the article headings and not worked through in an example.
