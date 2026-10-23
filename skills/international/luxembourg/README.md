@@ -4,7 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
   IT-IND: "luxembourg-income-tax has the 2026 scale, surcharge, classes, tax credits and CCSS rates from the LIR and the CCSS, but has no depreciation rates or representation-cost rule, its transaction patterns, Form 163 and advance-payment dates are not checked against an official source, its VAT threshold and rates cite a secondary source, and the dependency abatement from 1 June 2026 is not stated"
-  PR: "luxembourg-payroll is on 2026 figures (CCSS notice of 16 January 2026, ACD monthly scales for classes 1, 1a and 2) but does not give the withholding rate for non-periodic pay (bonuses, 13th month), which sits in the Mémorial scales, and its 1 June 2026 dependency abatement (EUR 692.83) is derived from the SSM, not read on a CCSS notice"
 covered_by: {}
 ---
 
@@ -37,3 +36,5 @@ luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the 
 - CCSS, social parameters (2026 rates, SSM and ceiling), read 2026-10-23: https://ccss.public.lu/fr/parametres-sociaux.html
 - CCSS, notice to employers, contribution rates at 1 January 2026, read 2026-10-23: https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf
 - ACD, monthly withholding formulas for the 2025 scales (still in force in 2026), read 2026-10-23: https://impotsdirects.public.lu/dam-assets/fr/baremes/bareme-2025-format-excel.xlsx
+- Règlement grand-ducal of 20 December 2024 publishing the withholding scales (Mémorial A 590), read 2026-10-23: https://legilux.public.lu/eli/etat/leg/rgd/2024/12/20/a590/jo
+- CCSS, notice to employers, contribution minima and maximum at 1 June 2026, read 2026-10-23: https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf
