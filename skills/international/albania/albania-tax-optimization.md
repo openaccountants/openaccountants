@@ -4,7 +4,7 @@ description: Use this skill whenever asked about reducing tax in Albania, tax pl
 version: 0.2
 jurisdiction: AL
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
@@ -14,9 +14,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Albania Tax Optimization
 
-## Albania Tax Optimization Skill v0.1
+## Albania Tax Optimization Skill v0.2
 
-Albania Tax Optimization Skill v0.1
+Albania Tax Optimization Skill v0.2
 
 **Tier 2, source-cited draft. Sources: Law No. 29/2023 on income tax, consolidated to Law No. 81/2025, as published by the General Directorate of Taxes ([tatime.gov.al](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf), read 2026-10-23). Figures must agree with `albania-income-tax.md` / `albania-social-contributions.md`. NOT yet signed off by an Albanian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
 
@@ -28,7 +28,7 @@ Albania Tax Optimization Skill v0.1
 | --- | --- |
 | Country | Republic of Albania |
 | Currency | ALL (lek) |
-| Headline lever | **0% PIT** for self-employed / small business with gross income ≤ **ALL 14,000,000** — until 31 Dec 2029 |
+| Headline lever | **0% PIT** for self-employed / small business with gross income ≤ **ALL 14,000,000**, until 31 Dec 2029 |
 | VAT threshold | ALL 5,000,000 (~€40k) |
 | Self-employed contributions | ~24.4% combined |
 | Anti-avoidance | Freelancer single-client reclassification rule |
@@ -39,32 +39,33 @@ Albania Tax Optimization Skill v0.1
 
 - **0% rate**: individual traders, the self-employed and entities with gross income up to ALL 14,000,000 a year pay 0% on the whole business profit until 31 Dec 2029. The test is gross income, not profit.  _(Law 29/2023 art. 69(1)(dh); see `albania-income-tax`)_
 - **Old simplified profit tax**: repealed. It sat in Chapter III of Law No. 9632/2006 on local taxes, which Law 29/2023 art. 71(2) repealed; the art. 69(1)(dh) 0% rate is the small-business regime now.  _(Law 29/2023 arts. 69(1)(e), 71(2))_
-- **Above ALL 14,000,000 of gross income**: individual traders and the self-employed pay 15% on taxable profit up to ALL 14,000,000 and 23% on the rest, on the whole profit. Entities pay corporate income tax at 15% (see `al-corporate-tax`).  _(Law 29/2023 arts. 24(2), 41)_
+- **Above ALL 14,000,000 of gross income**: individual traders and the self-employed pay 15% on taxable profit up to ALL 14,000,000 and 23% on taxable profit above it, with no part of the profit at 0%. Entities pay corporate income tax at 15% (see `al-corporate-tax`).  _(Law 29/2023 arts. 24(2), 41)_
 
-This makes Albania extremely efficient for profitable solo/micro service businesses under the cap — but social contributions (~24.4%) and VAT (above ALL 5m) still apply.
+This makes Albania extremely efficient for profitable solo/micro service businesses under the cap, but social contributions (~24.4%) and VAT (above ALL 5m) still apply.
 
 ## Section 3 -- The Freelancer Single-Client Rule (key constraint)
 
-- **Recharacterisation threshold - single client** — Self-employment income can be recharacterised (toward employment-style treatment) if ≥ 80% of earnings come, directly or indirectly, from one client. percent
-- **Recharacterisation threshold - few clients** — Self-employment income can be recharacterised (toward employment-style treatment) if ≥ 90% of revenue comes from fewer than three clients. percent
-- **Non-resident exception** — Exception: this does not apply where the self-employed person supplies services exclusively to non-resident individuals/entities without an Albanian permanent establishment.
+- **Single client**: income of a self-employed individual is employment income if 80% or more of it comes, directly or indirectly, from one client.  _(Law 29/2023 art. 12(1)(ç)(i))_
+- **Few clients**: the same applies if 90% or more of total income comes from fewer than three clients.  _(Law 29/2023 art. 12(1)(ç)(ii))_
+- **Self-declaration exception**: the rule does not apply if the person declares, on the self-employed status declaration (model in Annex 1 to the law), filed with the regional tax directorate together with the annual business income return within March, that they are not in an employment situation. The declaration is an assessment tool: the tax administration can still reclassify the income under the tax procedures law if it finds tax avoidance.  _(Law 29/2023 art. 12(1)(ç), paragraph added by Law 81/2025; see `albania-income-tax`)_
+- **Non-resident exception**: the rule does not apply where the self-employed person supplies services only to non-residents of Albania or only to entities without an Albanian permanent establishment. The income is then business income.  _(Law 29/2023 art. 12(1)(ç), last paragraph)_
 
-> **AUDIT FLASH POINT.** A single-client "freelancer" is the primary reclassification target. Diversify clients, or fall within the non-resident exception, and document it.
+> **AUDIT FLASH POINT.** A single-client "freelancer" is the primary reclassification target. If the 80% or 90% test is met and neither exception applies, the income is taxed as employment income at 13% and 23%, not at the 0% business rate. File the status declaration in March only where the facts support it (own equipment, own hours, own financial risk), and keep the evidence.
 
 ## Section 4 -- Red Lines (do not cross)
 
-- **Single-client / few-client reclassification** — Single-client / few-client reclassification (Section 3) — the main risk.
-- **Mandatory VAT registration** — VAT registration is mandatory above ALL 5m turnover — don't ignore it.
-- **Time-limited regime** — The 0% regime is time-limited (to 2029) and income-capped — model the cliff at ALL 14m and the 2030 reversion.
-- **No fragmentation without substance** — Don't fragment one business across entities to stay under the cap without substance.
+- **Single-client / few-client reclassification**: Single-client / few-client reclassification (Section 3) is the main risk.
+- **Mandatory VAT registration**: VAT registration is mandatory above ALL 5m turnover; don't ignore it.
+- **Time-limited regime**: The 0% regime is time-limited (to 2029) and income-capped; model the cliff at ALL 14m and the 2030 reversion.
+- **No fragmentation without substance**: Don't fragment one business across entities to stay under the cap without substance.
 
 ## PROHIBITIONS
 
-- **Prohibition 1** — NEVER present the 0% regime without the ALL 14m cap and the 2029 sunset.
-- **Prohibition 2** — NEVER present single-client freelancing as safe self-employment (unless the non-resident exception genuinely applies).
-- **Prohibition 3** — NEVER ignore the ALL 5m VAT threshold or the ~24.4% contributions.
-- **Prohibition 4** — NEVER contradict the rates in `albania-income-tax.md` / `albania-social-contributions.md`.
-- **Prohibition 5** — NEVER present [RESEARCH GAP] figures as confirmed, nor optimisation as definitive advice — route to a licensed Albanian tax adviser.
+- **Prohibition 1**: NEVER present the 0% regime without the ALL 14m cap and the 2029 sunset.
+- **Prohibition 2**: NEVER present single-client freelancing as safe self-employment (unless the non-resident exception applies, or the person files a self-employed status declaration that the facts support, art. 12(1)(ç)).
+- **Prohibition 3**: NEVER ignore the ALL 5m VAT threshold or the ~24.4% contributions.
+- **Prohibition 4**: NEVER contradict the rates in `albania-income-tax.md` / `albania-social-contributions.md`.
+- **Prohibition 5**: NEVER present [RESEARCH GAP] figures as confirmed, nor optimisation as definitive advice. Route to a licensed Albanian tax adviser.
 
 ## Disclaimer
 
