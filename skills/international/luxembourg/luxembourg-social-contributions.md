@@ -1,10 +1,10 @@
 ---
 name: luxembourg-social-contributions
 description: Use this skill whenever asked about Luxembourg social security contributions (cotisations sociales) for employees, employers, or the self-employed (independants). Trigger on phrases like "how much social security in Luxembourg", "CCSS contributions", "Luxembourg payroll deductions", "pension contribution Luxembourg 2026", "assurance dependance", "dependency insurance", "Mutualite des employeurs", "accident insurance Luxembourg", "CNS health contribution", "CNAP pension", "social parameters 2026", "contribution ceiling 5x SSM", "declaration d'entree", "decompte CCSS", or any question about Luxembourg social-security obligations for a payroll, employer registration, or self-employed client. Also trigger when classifying bank statement transactions that relate to CCSS debits, social-security direct debits, or government contribution payments from BCEE, BGL BNP Paribas, Banque de Luxembourg, Spuerkeess, or other Luxembourg banks. This skill covers the 2026 contribution rates (including the pension reform of 18 Dec 2025), employee/employer/self-employed splits, the SSM floor and 5x-SSM ceiling, the dependency abatement, registration and wage-declaration forms, payment deadlines, penalties, and bank statement classification patterns. Personal income tax (PIT) is administered separately by the ACD and is documented here only for context. ALWAYS read this skill before touching any Luxembourg social-contribution work.
-version: 0.1
+version: 0.2
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Luxembourg Social Security Contributions (Cotisations Sociales)
 
-## Luxembourg Social Security Contributions (Cotisations Sociales) Skill v0.1
+## Luxembourg Social Security Contributions (Cotisations Sociales) Skill v0.2
 
 **Tier 2 — research-verified.** Figures are corroborated from multiple authoritative sources (CCSS/IGSS social-parameter notices, FEDIL, PwC Worldwide Tax Summaries, CLEISS, Orbitax, Securex, salary.lu) and the Ministry of Health and Social Security pension-reform page. Several primary CCSS/IGSS/MDE/AAA rate-notice pages returned HTTP 403 on direct fetch, so the exact official "avis aux employeurs" rate-notice values should be confirmed on the official PDF before filing. Where a figure is uncertain or period-dependent it is marked **[RESEARCH GAP — reviewer to confirm]**.
 
@@ -44,7 +44,7 @@ Read this whole section before computing or classifying anything.
 | Accident insurance | 0.65% base (2026, was 0.70% in 2025) x bonus-malus factor, employer only -- orbitax.com / fedil.lu |
 | Mutualite des employeurs (MDE) | 2026: approx 0.23%-2.66% by absenteeism class, employer only -- pixie.lu |
 | Contribution ceiling (5x SSM), in force 1 Jan 2026 | EUR 13,518.68/month (index 968.04, set 1 May 2025) -- fedil.lu / igss.gouvernement.lu |
-| Contribution ceiling, from 1 June 2026 | EUR 13,856.65/month (index 992.24) -- salary.lu |
+| Contribution ceiling, from 1 June 2026 | EUR 13,856.63/month (index 992.24) -- CCSS notice of 14 August 2026 |
 | Contribution floor (SSM), in force 1 Jan 2026 | EUR 2,703.74/month (unqualified) -- fedil.lu |
 | Payment | Employer remits both shares to CCSS; consolidated monthly invoice (decompte) -- ccss.public.lu |
 | Validated by | Pending -- requires sign-off by a Luxembourg payroll/tax professional |
@@ -77,7 +77,7 @@ Health in-kind 2.80 + 2.80 = 5.60 ✓. Cash surcharge 0.25 + 0.25 = 0.50 ✓. Pe
 | Health rate on ambiguous remuneration | Use 3.05% each side for ordinary periodic cash; 2.80% for pure benefits-in-kind/bonuses (cleiss.fr) |
 | Period within 2026 unknown | Default to the index-968.04 parameters in force at 1 Jan 2026; flag if pay date is on/after 1 June 2026 (fedil.lu / salary.lu) |
 | Employment status unknown | Ask -- self-employed pay BOTH shares; do not assume employee-only split (cleiss.fr) |
-| Dependency abatement period unknown | Use EUR 675.94/month but recompute as 1/4 of the prevailing SSM for the period (fedil.lu) |
+| Dependency abatement period unknown | Use EUR 675.93/month from 1 January 2026 and EUR 692.83/month from 1 June 2026 (CCSS notice of 16 January 2026; CCSS notice of 14 August 2026) |
 
 ## Section 2 -- Required inputs and refusal catalogue
 
@@ -170,7 +170,7 @@ Six bank statement / payroll classifications for a hypothetical Luxembourg-resid
 Gross EUR 5,000 is below the ceiling of EUR 13,518.68 in force at 1 Jan 2026 (fedil.lu), so the full gross is the base for capped branches.
 - Health 3.05% = 5,000.00 x 0.0305 = EUR 152.50 (fedil.lu)
 - Pension 8.50% = 5,000.00 x 0.085 = EUR 425.00 (fedil.lu / taxsummaries.pwc.com)
-- Dependency 1.40% on (5,000.00 - 675.94 abatement) = 4,324.06 x 0.014 = EUR 60.54 (taxsummaries.pwc.com)
+- Dependency 1.40% on (5,000.00 - 675.93 abatement) = 4,324.07 x 0.014 = EUR 60.54 (CCSS notice of 16 January 2026)
 
 Total employee SSC = 152.50 + 425.00 + 60.54 = **EUR 638.04**. Net of SSC (before PIT) = 5,000.00 - 638.04 = **EUR 4,361.96**. The credit line reconciles to the cent (PIT is withheld separately by the ACD and is not modelled here).
 
@@ -203,7 +203,7 @@ Employer share = 152.50 + 425.00 + 7.00 + 32.50 + 11.50 = EUR 628.50. The CCSS d
 Gross EUR 15,000 exceeds the ceiling EUR 13,518.68 in force at 1 Jan 2026, so capped branches use the ceiling; dependency uses uncapped income.
 - Health 3.05% on 13,518.68 = EUR 412.32 (fedil.lu)
 - Pension 8.50% on 13,518.68 = EUR 1,149.09 (fedil.lu / taxsummaries.pwc.com)
-- Dependency 1.40% on (15,000.00 - 675.94) = 14,324.06 x 0.014 = EUR 200.54 -- **no ceiling** (taxsummaries.pwc.com)
+- Dependency 1.40% on (15,000.00 - 675.93) = 14,324.07 x 0.014 = EUR 200.54 -- **no ceiling** (CCSS notice of 16 January 2026)
 
 Total employee SSC = 412.32 + 1,149.09 + 200.54 = **EUR 1,761.95**. Net of SSC = 15,000.00 - 1,761.95 = **EUR 13,238.05**. Reconciles to the cent. Note the dependency base (14,324.06) exceeds the contribution ceiling because dependency has no ceiling.
 
@@ -228,7 +228,7 @@ Matches "ADMINISTRATION DES CONTRIBUTIONS" (pattern 3.3). This is the withheld w
 A first-year self-employed person is provisionally based on the SSM (cleiss.fr). The self-employed pay BOTH shares. On the SSM EUR 2,703.74/month (in force 1 Jan 2026, fedil.lu):
 - Pension 17.00% (8.50% + 8.50%) = 2,703.74 x 0.17 = EUR 459.64 (cleiss.fr / fedil.lu)
 - Health 6.10% (in-kind 5.60% + cash 0.50%, both shares) = 2,703.74 x 0.061 = EUR 164.93 (cleiss.fr) **[RESEARCH GAP — whether the 0.50% cash surcharge applies to the independant depends on benefit entitlement; reviewer to confirm]**
-- Dependency 1.40% on (2,703.74 - 675.94) = 2,027.80 x 0.014 = EUR 28.39 (taxsummaries.pwc.com)
+- Dependency 1.40% on (2,703.74 - 675.93) = 2,027.81 x 0.014 = EUR 28.39 (CCSS notice of 16 January 2026)
 - Accident 0.65% x 1.0 = 2,703.74 x 0.0065 = EUR 17.57 (orbitax.com / cleiss.fr)
 
 Monthly total = 459.64 + 164.93 + 28.39 + 17.57 = **EUR 670.53**. The State adds a further 8.50% to the self-employed pension (cleiss.fr); that is not debited from the contributor. Reconcile against the CCSS provisional assessment.
@@ -241,7 +241,7 @@ Monthly total = 459.64 + 164.93 + 28.39 + 17.57 = **EUR 670.53**. The State adds
 `20.12.2026 ; PRIME DE FIN D'ANNEE ; CREDIT ; BONUS NON-PERIODIQUE ; +3,000.00 ; EUR`
 
 **Reasoning:**
-A non-periodic bonus is treated as benefits/non-periodic remuneration: the 0.25% cash-benefit surcharge does NOT apply, so health is 2.80% (not 3.05%) on this component (cleiss.fr). Assume the year-to-date base is below the ceiling. (Note: from 1 June 2026 the index-992.24 parameters apply; this December 2026 example still uses the post-1-June ceiling of EUR 13,856.65 for the cap test, but the EUR 3,000 bonus is below either ceiling.)
+A non-periodic bonus is treated as benefits/non-periodic remuneration: the 0.25% cash-benefit surcharge does NOT apply, so health is 2.80% (not 3.05%) on this component (cleiss.fr). Assume the year-to-date base is below the ceiling. (Note: from 1 June 2026 the index-992.24 parameters apply; this December 2026 example still uses the post-1-June ceiling of EUR 13,856.63 for the cap test, but the EUR 3,000 bonus is below either ceiling.)
 - Health 2.80% = 3,000.00 x 0.028 = EUR 84.00
 - Pension 8.50% = 3,000.00 x 0.085 = EUR 255.00 (fedil.lu / taxsummaries.pwc.com)
 - Dependency 1.40% = 3,000.00 x 0.014 = EUR 42.00, subject to the abatement note below (taxsummaries.pwc.com)
@@ -256,7 +256,7 @@ These rules apply when the pay period, gross remuneration, and remuneration type
 
 ### Rule 1 -- Contribution formula (employee, ordinary cash salary)
 
-- **employee_SSC formula** — employee_SSC = health_3.05% x min(gross, ceiling) + pension_8.50% x min(gross, ceiling) + dependency_1.40% x max(0, gross - 675.94)   // dependency has NO ceiling Health 3.05% = 2.80% in-kind + 0.25% cash surcharge (fedil.lu); pension 8.50% (fedil.lu / taxsummaries.pwc.com); dependency 1.40% with the EUR 675.94/month abatement and no ceiling (taxsummaries.pwc.com).  _(fedil.lu / taxsummaries.pwc.com)_
+- **employee_SSC formula** — employee_SSC = health_3.05% x min(gross, ceiling) + pension_8.50% x min(gross, ceiling) + dependency_1.40% x max(0, gross - 675.93)   // dependency has NO ceiling Health 3.05% = 2.80% in-kind + 0.25% cash surcharge (fedil.lu); pension 8.50% (fedil.lu / taxsummaries.pwc.com); dependency 1.40% with the EUR 675.93/month abatement (EUR 692.83 from 1 June 2026) and no ceiling (CCSS notice of 16 January 2026; CCSS notice of 14 August 2026).  _(fedil.lu / taxsummaries.pwc.com)_
 
 ### Rule 2 -- Contribution formula (employer)
 
@@ -272,7 +272,7 @@ These rules apply when the pay period, gross remuneration, and remuneration type
 
 ### Rule 5 -- Dependency insurance: 1.40%, employee only, no ceiling, with abatement
 
-- **Dependency insurance rule** — Levied on professional income (and, for residents, certain net portfolio income/capital gains) reduced by EUR 675.94/month (= 1/4 of the SSM; the official notice rounds 2,703.74 / 4 to EUR 675.93 -- a 1-cent difference; reconcile to the value on the prevailing CCSS notice). No employer share and NO upper ceiling. The abatement rises with each SSM indexation.  _(taxsummaries.pwc.com)_
+- **Dependency insurance rule** — Levied on professional income (and, for residents, certain net portfolio income/capital gains) reduced by EUR 675.93/month from 1 January 2026 and EUR 692.83/month from 1 June 2026 (1/4 of the SSM, as published by the CCSS). No employer share and NO upper ceiling. The abatement rises with each SSM indexation.  _(CCSS notice of 16 January 2026; CCSS notice of 14 August 2026; taxsummaries.pwc.com for the portfolio-income point)_
 
 ### Rule 6 -- The 5x-SSM ceiling caps all branches except dependency
 
@@ -283,7 +283,7 @@ These rules apply when the pay period, gross remuneration, and remuneration type
 | Effective | Ceiling (5x SSM) | Index | Source |
 | --- | --- | --- | --- |
 | In force at 1 Jan 2026 (index set 1 May 2025) | EUR 13,518.68/month (approx EUR 162,224/year) | 968.04 | fedil.lu / igss.gouvernement.lu |
-| From 1 June 2026 | EUR 13,856.65/month (EUR 166,279.80/year) | 992.24 | salary.lu |
+| From 1 June 2026 | EUR 13,856.63/month (EUR 166,279.56/year) | 992.24 | CCSS notice of 14 August 2026 |
 
 ### Rule 7 -- The SSM is the contribution floor
 
@@ -336,7 +336,7 @@ When data is ambiguous or circumstances are unclear, flag these for reviewer con
 
 **Trigger:** The salary period or pay date is near 1 June 2026 and it is unclear which index applies.
 
-**Issue:** From 1 June 2026 the SSM, ceiling (EUR 13,856.65) and the dependency abatement all change (salary.lu). Using the wrong parameter set mis-states both employee and employer contributions for high earners and the abatement.
+**Issue:** From 1 June 2026 the SSM, ceiling (EUR 13,856.63) and the dependency abatement (EUR 692.83) all change (CCSS notice of 14 August 2026). Using the wrong parameter set mis-states both employee and employer contributions for high earners and the abatement.
 
 **Action:** Confirm the exact period; apply the index-968.04 set (in force at 1 Jan 2026) before 1 June, the index-992.24 values on/after.
 
@@ -408,9 +408,9 @@ INPUT DATA
   MDE absenteeism class / rate:    [Class __ / ____%]   (FLAG if unknown)
 
 PARAMETERS (pick by period)
-  Ceiling (5x SSM):                EUR [13,518.68 (1 Jan) / 13,856.65 (1 Jun)]
+  Ceiling (5x SSM):                EUR [13,518.68 (1 Jan) / 13,856.63 (1 Jun)]
   SSM floor (unqualified):         EUR [2,703.74 (1 Jan) / 2,771.33 (1 Jun)]
-  Dependency abatement (1/4 SSM):  EUR [675.94 -> recompute for period]
+  Dependency abatement (1/4 SSM):  EUR [675.93 (1 Jan) / 692.83 (1 Jun)]
 
 EMPLOYEE SHARE
   Capped base (min(gross,ceiling)):  EUR [____]
@@ -502,15 +502,15 @@ placeholder
 | Item | Value | Source |
 | --- | --- | --- |
 | Ceiling (5x SSM), in force 1 Jan 2026 | EUR 13,518.68/month (approx EUR 162,224/year), index 968.04 (set 1 May 2025) | fedil.lu / igss.gouvernement.lu |
-| Ceiling (5x SSM), from 1 June 2026 | EUR 13,856.65/month (EUR 166,279.80/year), index 992.24 | salary.lu |
+| Ceiling (5x SSM), from 1 June 2026 | EUR 13,856.63/month (EUR 166,279.56/year), index 992.24 | CCSS notice of 14 August 2026 |
 | SSM unqualified, in force 1 Jan 2026 | EUR 2,703.74/month | fedil.lu |
 | SSM qualified (+20%), in force 1 Jan 2026 | EUR 3,244.48/month | fedil.lu |
 | SSM unqualified, from 1 June 2026 | EUR 2,771.33/month | salary.lu |
 | SSM qualified (+20%), from 1 June 2026 | EUR 3,325.59/month | salary.lu |
-| Dependency abatement (in force 1 Jan 2026) | EUR 675.94/month (1/4 SSM; official notice rounds to EUR 675.93); recompute per period | fedil.lu / taxsummaries.pwc.com |
+| Dependency abatement | EUR 675.93/month from 1 January 2026; EUR 692.83/month from 1 June 2026 (1/4 SSM) | CCSS notice of 16 January 2026; CCSS notice of 14 August 2026 |
 | 2025 baseline (1 Jan 2025) | SSM EUR 2,637.79/month, ceiling EUR 13,188.96/month (index 944.43) | orbitax.com |
 
-Arithmetic check: 5 x 2,703.74 = 13,518.70 (the official ceiling EUR 13,518.68 differs by rounding at the index; use the cited official figure). 5 x 2,771.33 = 13,856.65 ✓. Abatement 2,703.74 / 4 = 675.935 ≈ 675.94 (official notice rounds to 675.93). From 1 June 2026: 2,771.33 / 4 = 692.83.
+Arithmetic check: the CCSS computes the ceiling as five times the unrounded SSM (279.30 x 9.6804 x 5 = 13,518.68; 279.30 x 9.9224 x 5 = 13,856.63). Five times the rounded SSM (13,518.70 and 13,856.65) is not the CCSS figure; use the published figures. The CCSS publishes the abatement as EUR 675.93 (1 January 2026) and EUR 692.83 (1 June 2026).
 
 ### Approximate total burden (2026)
 
@@ -545,17 +545,17 @@ Arithmetic check: 5 x 2,703.74 = 13,518.70 (the official ceiling EUR 13,518.68 d
 
 ### Test suite
 
-Test 1: Employee, gross EUR 5,000/month, in force 1 Jan 2026, ordinary cash. -> Health 152.50 + pension 425.00 + dependency 60.54 = employee SSC EUR 638.04; net of SSC EUR 4,361.96. (5,000 x 0.0305 = 152.50; 5,000 x 0.085 = 425.00; (5,000 - 675.94) x 0.014 = 60.54.)
+Test 1: Employee, gross EUR 5,000/month, in force 1 Jan 2026, ordinary cash. -> Health 152.50 + pension 425.00 + dependency 60.54 = employee SSC EUR 638.04; net of SSC EUR 4,361.96. (5,000 x 0.0305 = 152.50; 5,000 x 0.085 = 425.00; (5,000 - 675.93) x 0.014 = 60.54.)
 
 Test 2: Employer share for Test 1 (private sector, factor 1.0, MDE Class 1 = 0.23%). -> 152.50 + 425.00 + 7.00 + 32.50 + 11.50 = employer SSC EUR 628.50. CCSS decompte total = 638.04 + 628.50 = EUR 1,266.54. (MDE rate flagged; family benefits 0% in private sector.)
 
-Test 3: Employee, gross EUR 15,000/month, in force 1 Jan 2026 (above ceiling). -> Health 412.32 + pension 1,149.09 + dependency 200.54 = EUR 1,761.95; net EUR 13,238.05. (Capped base 13,518.68 for health/pension; dependency base 14,324.06 uncapped.)
+Test 3: Employee, gross EUR 15,000/month, in force 1 Jan 2026 (above ceiling). -> Health 412.32 + pension 1,149.09 + dependency 200.54 = EUR 1,761.95; net EUR 13,238.05. (Capped base 13,518.68 for health/pension; dependency base 14,324.07 uncapped.)
 
 Test 4: Bonus EUR 3,000 (non-periodic), employee. -> Health at 2.80% = 84.00; pension 8.50% = 255.00. Health + pension = EUR 339.00; dependency up to 42.00 depends on whether the monthly abatement was already consumed [RESEARCH GAP].
 
-Test 5: Self-employed, first year, provisional on SSM EUR 2,703.74, in force 1 Jan 2026. -> Pension 17% = 459.64; health 6.10% = 164.93 (flagged); dependency 1.40% on (2,703.74 - 675.94) = 28.39; accident 0.65% = 17.57. Total = EUR 670.53.
+Test 5: Self-employed, first year, provisional on SSM EUR 2,703.74, in force 1 Jan 2026. -> Pension 17% = 459.64; health 6.10% = 164.93 (flagged); dependency 1.40% on (2,703.74 - 675.93) = 28.39; accident 0.65% = 17.57. Total = EUR 670.53.
 
-Test 6: Pay period from 1 June 2026, ceiling test, gross EUR 14,000. -> Capped base = ceiling EUR 13,856.65; pension 8.50% = 1,177.82; health 3.05% = 422.63; dependency on (14,000 - 692.83 abatement) = 13,307.17 x 0.014 = 186.30 uncapped. (5 x 2,771.33 = 13,856.65 ✓; abatement = 2,771.33 / 4 = 692.83 for this period.)
+Test 6: Pay period from 1 June 2026, ceiling test, gross EUR 14,000. -> Capped base = ceiling EUR 13,856.63; pension 8.50% = 1,177.81; health 3.05% = 422.63; dependency on (14,000 - 692.83 abatement) = 13,307.17 x 0.014 = 186.30 uncapped. (Ceiling and abatement from the CCSS notice of 14 August 2026.)
 
 Test 7: ACD debit "RETENUE D'IMPOT". -> NOT social security; income tax remittance; exclude from SSC.
 
