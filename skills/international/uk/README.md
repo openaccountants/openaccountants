@@ -5,6 +5,8 @@ not_applicable: {}
 covered_by:
   SC: uk-national-insurance
   XB: uk-foreign-tax-and-withholding
+partial:
+  XB: "uk-to-uae-relocation-tax and uk-to-italy-flat-tax-relocation are still written for tax year 2025 and have not been checked against the law in force for 2026/27"
 ---
 
 # United Kingdom: tax pack
