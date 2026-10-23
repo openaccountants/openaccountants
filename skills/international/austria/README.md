@@ -19,7 +19,7 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 |---|---|---|
 | IT-IND, individual income tax | at-income-tax | source-cited draft |
 | IT-CORP, corporate income tax | at-corporate-income-tax | source-cited draft |
-| VAT | at-vat-return, austria-vat-return | source-cited draft |
+| VAT | at-vat-return (U 30 box method), austria-vat-return (rates, limits, deadlines and penalties, 2026) | source-cited draft |
 | SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG) | source-cited draft |
 | PR, payroll withholding | at-payroll-and-social-insurance | source-cited draft |
 | TP, transfer pricing | at-transfer-pricing | source-cited draft |
@@ -31,7 +31,8 @@ Also in the pack: at-tax-overview (a map of the system) and at-company-formation
 
 - Einkommensteuergesetz 1988 (EStG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570 (read 2026-10-22)
 - Körperschaftsteuergesetz 1988 (KStG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004569 (read 2026-10-22)
-- Bundesabgabenordnung (BAO), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 (read 2026-10-22)
+- Bundesabgabenordnung (BAO), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 (read 2026-10-23)
+- Umsatzsteuergesetz 1994 (UStG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 (read 2026-10-23)
 - Federal Ministry of Finance: https://www.bmf.gv.at (read 2026-10-22)
 - Unternehmensserviceportal (USP): https://www.usp.gv.at (read 2026-10-22)
 - Familienlastenausgleichsgesetz 1967 (FLAG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008220 (read 2026-10-23)
