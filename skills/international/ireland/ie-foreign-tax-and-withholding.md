@@ -16,7 +16,7 @@ This skill answers three questions. How much credit does an Irish resident get f
 
 Residence, SARP, split-year treatment and the company exit tax are in [ie-cross-border](ie-cross-border.md). The remittance basis is in [ie-non-dom](ie-non-dom.md). Corporation tax rates and the participation exemption are in [ie-corporation-tax](ie-corporation-tax.md). Branch profit attribution between related parties is in [ie-transfer-pricing](ie-transfer-pricing.md).
 
-The law is the Taxes Consolidation Act 1997 (TCA 1997) as amended to Finance Act 2025. The figures below are read from Revenue's Notes for Guidance, Finance Act 2025 edition (December 2025), from Revenue's Tax and Duty Manuals, and from the treaty texts Revenue publishes.
+The law is the Taxes Consolidation Act 1997 (TCA 1997) as amended to Finance Act 2025. Finance Act 2026 (No. 24 of 2026, signed 15 July 2026) changes only excise. The Budget 2027 bill, Finance (No. 2) Bill 2026 (Bill 98 of 2026, initiated 19 October 2026), is not law; as initiated it does not amend Schedule 24, section 172D, section 242A or section 246(3)(h). The figures below are read from Revenue's Notes for Guidance, Finance Act 2025 edition (December 2025), from Revenue's Tax and Duty Manuals, and from the treaty texts Revenue publishes.
 
 ## Who this applies to
 
@@ -38,7 +38,7 @@ Company residence is decided under section 23A (see [ie-cross-border](ie-cross-b
 | Single person tax credit; employee (PAYE) tax credit | EUR 2,000 each | 2026 | [Revenue: tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) |
 | Foreign tax credit cap, individual (Schedule 24, paragraph 5) | Foreign income times the Irish effective rate on total income | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
 | Foreign tax credit cap, company (Schedule 24, paragraph 4) | Irish corporation tax attributable to that income; 25% of the income where it is taxed at 25% | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
-| Surplus foreign tax on a 5% or more foreign dividend taxed at 25%, usable against other dividends (Schedule 24, paragraph 9E) | 75% of the surplus (the other 25% is relieved by reducing the income) | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
+| Surplus foreign tax on a 5% or more foreign dividend, usable against other foreign dividends (Schedule 24, paragraph 9E) | 75% of the surplus on a dividend taxed at 25%; 87.5% of the surplus on a dividend taxed at 12.5% (the rest is relieved by reducing the income) | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
 | Unilateral relief on non-treaty trading interest, royalties or leasing income (paragraphs 9D, 9DB, 9DC) | 87.5% of the foreign tax, capped at the Irish corporation tax on that income (12.5% is already relieved as a deduction) | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
 | Time limit to claim a foreign tax credit (Schedule 24, paragraph 12(2)) | 6 years after the end of the year of assessment or accounting period | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
 | Minimum holding for unilateral credit and pooling on foreign dividends (paragraphs 9B, 9E) | 5% | 2026 | [Notes for Guidance, Schedules](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/schedules.pdf) |
@@ -75,21 +75,21 @@ Revenue lists these as the unilateral reliefs and names no general unilateral cr
 
 **Pooling of surplus credit (companies).** Where foreign tax exceeds the Irish tax on one item, the surplus can go against Irish tax on similar items in the same accounting period:
 
-- foreign dividends from 5% holdings, kept in separate pools for 12.5% and 25% dividends, with any balance carried forward (paragraph 9E);
+- foreign dividends from 5% holdings: surplus on a dividend taxed at 25% goes against corporation tax on other foreign dividends of the period, and surplus on a dividend taxed at 12.5% goes only against tax on other 12.5% dividends, with any balance carried forward (paragraph 9E(2) and (3));
 - foreign branch income (paragraph 9FA);
 - interest from associated (25%) companies in treaty countries received in a financial trade (paragraph 9F);
-- foreign trading royalties (paragraph 9DB(4) to (6));
+- foreign trading royalties: here the unrelieved foreign tax reduces other foreign royalty income of the period, allocated as the company chooses, rather than being credited (paragraph 9DB(4) to (6));
 - leasing income, carried forward against the same stream (paragraph 9DC).
 
 Revenue also allows a carry-back of branch foreign tax that arises only from timing differences, at 87.5% of the stranded tax ([TDM Part 35-02-06](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-35/35-02-06.pdf)).
 
-**Capital gains.** Schedule 24 applies to CGT through section 828. Foreign tax on a gain is credited only against Irish CGT. Foreign tax that cannot be credited under a treaty is deductible in computing the gain (section 828(4)).
+**Capital gains.** Schedule 24 applies to CGT through section 828. Foreign tax on a gain is credited only against Irish CGT. Foreign tax that cannot be credited under a treaty is deductible in computing the gain (section 828(4)). Where an older treaty does not cover capital gains, paragraph 9FB gives unilateral credit for foreign tax on the gain; it names Belgium, Cyprus, France, Italy, Japan, Luxembourg, the Netherlands, Pakistan and Zambia.
 
 **Tax sparing.** Foreign tax given up under a foreign incentive counts as paid only where the treaty says so (section 829).
 
 ### Section 826: how treaties take effect
 
-A treaty has force of law once the Government makes an order approved by Dáil Éireann and the order is listed in Part 1 of Schedule 24A. The Multilateral Instrument (MLI) has force of law the same way (section 826(1E)). Schedule 24 gives the credit mechanics. ([Notes for Guidance, Part 35](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part35.pdf))
+A treaty has force of law once the Government makes an order approved by Dáil Éireann and the order is listed in Part 1 of Schedule 24A. The Multilateral Instrument (MLI) has force of law the same way, through an order listed in Part 5 of Schedule 24A (section 826(1E)). Schedule 24 gives the credit mechanics. ([Notes for Guidance, Part 35](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part35.pdf))
 
 ### Non-resident companies (section 25, section 1034)
 
@@ -123,7 +123,7 @@ Companies self-certify. Forms and the five-year validity are in [ie-cross-border
 
 - **Foreign tax credit:** claimed in the income tax return (Form 11) or the corporation tax return (CT1), within 6 years after the end of the year or accounting period (Schedule 24, paragraph 12(2)). Where the foreign or Irish liability is only finalised later, the claim or amendment can be made within 6 years of the final figures (paragraph 13).
 - **Interest and patent royalty withholding by an Irish company (section 239):** returned for each accounting period within 9 months of its end, by day 23 of that month when filed on ROS. The tax is due with the corporation tax for the period and is treated as corporation tax. Income tax suffered on payments received can be set off.
-- **Treaty rate on royalties at source:** the payer applies the treaty rate instead of 20% on receipt of Form 8-3-6 certified by the payee's tax authority (or uncertified with a residence certificate, or a US Form 6166), and reports the payments in its CT1. The self-certification lasts 5 years ([TDM Part 08-03-06](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-08/08-03-06.pdf), section 9).
+- **Treaty rate at source on interest and patent royalties:** where no domestic exemption applies, the payer may withhold at the treaty rate instead of 20% on receipt of a self-certification from the payee: Form 8-3-6 Interest (section 9.1) or Form 8-3-6 Patent Royalties for an individual payee (section 9.2), certified by the payee's tax authority, or uncertified with a residence certificate (a US Form 6166 for US residents). The payer returns details of the payments to Revenue (royalties: in its CT1). The self-certification expires after 5 years or on a material change in the payee's facts. For patent royalties paid to non-resident companies Revenue applies a similar practice under TDM Part 08-01-04 ([TDM Part 08-03-06](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-08/08-03-06.pdf), section 9 and footnote 8).
 - **DWT:** return and payment by day 14 of the month after the distribution (see [ie-cross-border](ie-cross-border.md)).
 - **Non-resident company:** a branch or Case V landlord files CT1 like a resident company (see [ie-corporation-tax](ie-corporation-tax.md)).
 
@@ -138,7 +138,7 @@ Companies self-certify. Forms and the five-year validity are in [ie-cross-border
 
 ### Treaty withholding rates
 
-Maximum rate the source country may charge under each treaty, for a beneficial owner resident in the other country. The older treaties with France, Luxembourg and Japan limit only the partner country's tax on dividends; Ireland's own DWT is then removed by the domestic exemption in section 172D. Rates on Irish payments rarely matter in practice where the domestic exemptions in sections 172D, 242A and 246(3)(h) apply, and they do apply to most treaty residents.
+Maximum rate the source country may charge under each treaty, for a beneficial owner resident in the other country. The older treaties with France, Italy, Luxembourg and Japan exempt Irish dividends only from "Irish sur-tax"; Ireland's own DWT is then removed by the domestic exemption in section 172D. Rates on Irish payments rarely matter in practice where the domestic exemptions in sections 172D, 242A and 246(3)(h) apply, and they do apply to most treaty residents.
 
 | Partner | Dividends | Interest | Royalties | Source (Revenue treaty text) |
 |---|---|---|---|---|
@@ -147,9 +147,9 @@ Maximum rate the source country may charge under each treaty, for a beneficial o
 | Germany | 15%; 5% to a company holding directly 10% or more of the capital for 365 days | 0% | 0% | [2011 Convention](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-2011.pdf), Articles 10 to 12; [2021 Protocol](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-protocol-2021.pdf) |
 | France | French dividends to Irish residents: 15%; 10% to an Irish company holding 50% or more of the capital for 365 days | 0% | 0% | [Synthesised text with MLI](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/f/synthesised-text-mli-ireland-france-dtc.pdf), Articles 9 to 11 |
 | Netherlands | 15%; 0% to a company holding directly 10% or more of the capital for 365 days, or a pension fund | 0% | 0% | [2019 Convention](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/n/netherlands-2.pdf), Articles 10 to 12 |
-| Luxembourg | Luxembourg dividends to Irish residents: 15%; 5% to a company controlling 25% or more of the votes | 0% | 0% | [Synthesised text with MLI](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/l/synthesised-text-mli-ireland-luxembourg-dtc.pdf), Articles 9 to 11 |
-| Spain | Irish dividends: exempt from Irish tax on dividends. Spanish dividends: 15%; 0% to a company controlling 25% or more of the votes for 365 days, under the Spanish Parent-Subsidiary rules | 0%, but Spain may charge up to 10% if its domestic law taxes the interest (Protocol) | 5% copyright of literary, dramatic, musical or artistic work; 8% film and broadcasting rights; 10% all other | [Synthesised text with MLI](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/synthesised-text-mli-ireland-spain-dtc.pdf), Articles 10 to 12 and Protocol |
-| Italy | 15% | 10% | 0% | [Convention](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/italy.pdf), Articles 9 to 11 |
+| Luxembourg | Luxembourg dividends to Irish residents: 15%; 5% to a company (not a partnership) controlling directly 25% or more of the votes | 0% | 0% | [Synthesised text with MLI](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/l/synthesised-text-mli-ireland-luxembourg-dtc.pdf), Articles 9 to 11 |
+| Spain | Irish dividends: exempt from Irish tax on dividends. Spanish dividends: 15%; 0% to a company controlling directly 25% or more of the votes for 365 days, under the Spanish Parent-Subsidiary rules | 0%, but Spain may charge up to 10% if its domestic law taxes the interest (Protocol) | 5% copyright of literary, dramatic, musical or artistic work; 8% films, tapes and other image or sound media, industrial, commercial or scientific equipment, and copyright of scientific work; 10% all other | [Synthesised text with MLI](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/synthesised-text-mli-ireland-spain-dtc.pdf), Articles 10 to 12 and Protocol |
+| Italy | Italian dividends to Irish residents: 15% | 10% | 0% | [Convention](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/italy.pdf), Articles 9 to 11 |
 | Switzerland | 15%; 0% to a company holding directly 10% or more of the capital, a pension scheme or the central bank | 0% | 0% | [Convention](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland.pdf), Articles 10 and 11; [2012 Protocol](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland-protocol-2.pdf), new Article 9 |
 | Japan | Japanese dividends to Irish residents: 15%; 10% to an Irish company owning 25% or more of the voting shares for 6 months | 10% | 10% | [Synthesised text with MLI](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/j/synthesised-text-of-the-mli-and-the-ireland-japan-double-taxation-convention.pdf), Articles 11 to 13 |
 | China | 10%; 5% to a company holding directly 25% or more of the votes | 10% | 10%; for equipment rentals, 10% of 60% of the gross | [Agreement](https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/c/china.pdf), Articles 10 to 12 |
@@ -158,7 +158,9 @@ Maximum rate the source country may charge under each treaty, for a beneficial o
 Read on 2026-10-23. Notes:
 
 - The Netherlands convention signed on 13 June 2019 entered into force on 29 February 2020 and has effect in Ireland from 1 January 2021 (Article 30). It replaced the 1969 convention. ([Dutch treaty database](https://verdragenbank.overheid.nl/en/Treaty/Details/012626))
-- France, Luxembourg and Japan: the Irish side of these older treaties only exempts the dividend from "Irish sur-tax". Irish DWT is relieved under section 172D.
+- France, Italy, Luxembourg and Japan: the Irish side of these older treaties only exempts the dividend from "Irish sur-tax" (France: only for individuals). Irish DWT is relieved under section 172D.
+- Germany: the 365-day holding condition for the 5% rate comes from the Protocol signed on 19 January 2021 (S.I. No. 508 of 2021). Revenue's dates-of-effect table gives it effect in Ireland from 1 January 2022 for income tax, corporation tax and CGT, so it applies throughout 2026. ([Revenue: dates of effect of Ireland's tax treaties](https://www.revenue.ie/en/tax-professionals/tax-agreements/dates-of-effect/index.aspx))
+- MLI: in the six synthesised texts above (UK, France, Luxembourg, Spain, Japan, India) the MLI adds the principal purpose test and, for France and Spain only, the 365-day holding period on dividends. It changes no rate in the table.
 - The US treaty has its own credit rule for a US citizen resident in Ireland (Article 24(3)). Ireland then credits only the US tax a non-citizen would pay.
 - Each rate is a ceiling for the beneficial owner. Treaty anti-abuse rules apply on top: the MLI principal purpose test where the synthesised text shows it, Spain's Protocol rule denying relief to holding companies more than 50% owned by non-residents, and the "special relationship" rule limiting the rate to an arm's length amount.
 
@@ -218,6 +220,7 @@ An Irish trading company borrows from its German parent, which owns all of it an
 - Default rule: a company paying yearly interest deducts 20% (section 246(2)). That would be EUR 20,000.
 - Domestic exemption: the interest is paid in the course of the Irish company's business to a company resident in an EU state that taxes foreign interest generally, so section 246(3)(h) applies. No withholding. The German parent receives EUR 100,000.
 - The treaty gives the same answer: Article 11(1) of the 2011 Germany convention taxes the interest only in Germany.
+- The interest is not recharacterised as a distribution: section 130(2)(d)(iv) would treat interest to a non-resident 75% parent as a distribution, but section 130(2B) excludes a parent resident in another EU state. ([Notes for Guidance, Part 6](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part06.pdf))
 - Germany is not a specified territory, so the outbound payments defensive measures do not switch the exemption off.
 - The edge case: had the lender been an associated company in a zero-tax territory, the exemption would be switched off. The company would withhold EUR 20,000, return it in its section 239 return within 9 months of the year end, and pay it with its corporation tax. Whether the interest is deductible for the payer is a separate question (see [ie-corporation-tax](ie-corporation-tax.md) and [ie-transfer-pricing](ie-transfer-pricing.md)).
 
@@ -270,15 +273,20 @@ expected:
 | Ireland-US convention 1997 | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/u/usa-1997.pdf | 2026-10-23 |
 | Ireland-Germany convention 2011 and 2021 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-2011.pdf | 2026-10-23 |
 | Ireland-Germany 2021 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/g/germany-protocol-2021.pdf | 2026-10-23 |
+| Revenue, dates of effect of Ireland's tax treaties | https://www.revenue.ie/en/tax-professionals/tax-agreements/dates-of-effect/index.aspx | 2026-10-23 |
+| S.I. No. 508 of 2021, Double Taxation Relief (Federal Republic of Germany) Order 2021 | https://www.irishstatutebook.ie/eli/2021/si/508/made/en/print | 2026-10-23 |
+| Finance Act 2026 (No. 24 of 2026) | https://www.irishstatutebook.ie/eli/2026/act/24/enacted/en/html | 2026-10-23 |
+| Finance (No. 2) Bill 2026, as initiated | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-10-23 |
 | Ireland-France convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/f/synthesised-text-mli-ireland-france-dtc.pdf | 2026-10-23 |
 | Ireland-Netherlands convention 2019 | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/n/netherlands-2.pdf | 2026-10-23 |
 | Netherlands treaty database, Ireland convention 2019 (entry into force) | https://verdragenbank.overheid.nl/en/Treaty/Details/012626 | 2026-10-23 |
 | Ireland-Luxembourg convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/l/synthesised-text-mli-ireland-luxembourg-dtc.pdf | 2026-10-23 |
 | Ireland-Spain convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/synthesised-text-mli-ireland-spain-dtc.pdf | 2026-10-23 |
 | Ireland-Italy convention | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/italy.pdf | 2026-10-23 |
-| Ireland-Switzerland convention and 2012 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland-protocol-2.pdf | 2026-10-23 |
+| Ireland-Switzerland convention | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland.pdf | 2026-10-23 |
+| Ireland-Switzerland 2012 Protocol | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/s/switzerland-protocol-2.pdf | 2026-10-23 |
 | Ireland-Japan convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/j/synthesised-text-of-the-mli-and-the-ireland-japan-double-taxation-convention.pdf | 2026-10-23 |
 | Ireland-China agreement | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/c/china.pdf | 2026-10-23 |
 | Ireland-India convention, synthesised text with MLI | https://www.revenue.ie/en/tax-professionals/documents/double-taxation-treaties/i/synthesised-text-mli-ireland-india-dtc.pdf | 2026-10-23 |
 
-Not yet confirmed: the date the 2021 Ireland-Germany Protocol (365-day holding for the 5% dividend rate) took effect; whether the MLI changes any rate in the table beyond the holding periods shown (read the synthesised text for the effective date of each MLI change); how an individual's foreign tax on income from a country with no treaty is relieved (Revenue's unilateral relief list covers companies and CGT only, and Notes for Guidance say Revenue extends a practice to individuals without stating its terms); the 2026 changes in Finance Bill 2026 (Budget 2027, announced 6 October 2026), which was not enacted when read, so any change to Schedule 24 or the withholding sections for 2026 is not reflected; the Irish treaty rates for Irish-source dividends to France, Luxembourg and Japan, where the treaty names only "Irish sur-tax" and relief comes from section 172D.
+Not yet confirmed: how an individual's foreign tax on income from a country with no treaty is relieved (Revenue's unilateral relief list covers companies and CGT only, and Notes for Guidance say Revenue extends a practice to individuals without stating its terms); the Irish treaty rates for Irish-source dividends to France, Italy, Luxembourg and Japan, where the treaty names only "Irish sur-tax" and relief comes from section 172D; whether Finance (No. 2) Bill 2026 is enacted as initiated.
