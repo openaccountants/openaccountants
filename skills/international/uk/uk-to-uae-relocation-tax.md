@@ -1,361 +1,250 @@
 ---
 name: uk-to-uae-relocation-tax
-description: "What actually happens to your UK tax when you move to Dubai or Abu Dhabi: the Statutory Residence Test, split-year treatment, the 5-year return trap, what stays UK-taxed forever, the new residence-based IHT tail, and how UAE residency, corporate tax and the 2016 treaty work on the other end. Sequenced as a timeline with worked examples."
+description: "What happens to UK tax when a UK resident moves to Dubai or Abu Dhabi, for tax year 2026/27 (6 April 2026 to 5 April 2027). Covers the Statutory Residence Test for leavers, split-year Cases 1 to 3, the 5-year temporary non-residence rule (including the 2026 change that catches the full amount of close-company distributions to material participators), what stays UK-taxed (rent, UK property gains, UK work, government pensions), the UK-UAE treaty pension article, the residence-based inheritance tax tail from 6 April 2025, voluntary National Insurance after the April 2026 changes, and a departure checklist. Trigger phrases: moving to Dubai, UK to UAE tax, leave UK for Dubai, 5-year rule Dubai, IHT tail UAE, UK pension in Dubai, split year Dubai. Out of scope, see siblings: the residence test in full (uk-statutory-residence-test), filing as a non-resident (uk-non-resident-sa109), foreign tax credit and withholding (uk-foreign-tax-and-withholding), the FIG regime (uk-non-dom), UAE corporate tax and VAT."
+version: 1.1
 jurisdiction: GB
-tax_year: 2025
-last_updated: 2026-08-03
-authored_by: Michael Cutajar, CPA, ACCA
+category: international
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+verified_by: pending
+source_checked: 2026-10-23
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moving from the UK to the UAE: the complete tax corridor
+# Moving from the UK to the UAE: the tax corridor (2026/27)
 
-**The corridor in one paragraph.** The UK→UAE move is the largest private wealth-migration
-corridor in the world right now, and almost every question it raises is a *UK* question. The UAE
-side is genuinely simple — no personal income tax, no CGT, no IHT — which is exactly why the
-planning lives on the departure side: *when* you break UK residence, *what* stays UK-taxed
-anyway, *how long* the UK's inheritance-tax tail follows you, and *what happens if you come
-back too soon*. Get the UK sequencing right and the UAE side is mostly paperwork. Get it wrong
-and you can be taxed as if you never left.
+> Source-cited draft: not reviewed by an accountant.
 
-**Who this Guide is for.** UK-resident individuals — employees, company owners, landlords,
-retirees — planning a genuine move to the UAE. It is a map of the rules and the traps, not
-advice on your facts. Cross-border departures are one of the highest-stakes areas in personal
-tax; have an accountant who knows both ends check your specific plan before you act.
+Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): figures moved to 2026/27; temporary non-residence updated for the Finance Act 2026 change to close-company distributions; voluntary National Insurance abroad updated for the April 2026 changes; IHT tail table taken from IHTA 1984 s.6A; UAE section cut back to the one fact this skill relies on; unsourced figures removed; Sources table added. Review fixes (2026-10-23): close-company charge limited to material participators and their associates; the next-year non-residence condition added to the split-year cases.
 
-|---|
-| First automatic overseas test | Fewer than **16 days** in the UK in the tax year |
-| Second automatic overseas test | You were non-resident in all 3 prior years and spend fewer than 46 days (rarely relevant to fresh leavers) |
-| Third automatic overseas test — **full-time work abroad** | You work **sufficient hours overseas** (roughly an average 35+ hours/week across the year), with **no significant breaks**, fewer than **91 days** in the UK, and fewer than **31 UK workdays** (a workday = more than 3 hours of work) |
+**The corridor in one paragraph.** The UAE does not impose personal income tax (UAE Ministry of Finance). So almost every question on this move is a UK question: when you stop being UK resident, what the UK keeps taxing anyway, how long the UK inheritance tax tail follows you, and what happens if you come back within 5 years. Get the UK sequence right and the UAE end is mostly immigration and paperwork.
 
-The third test is the workhorse of this corridor: take a genuine full-time role in the UAE
-(employment or your own operating business), keep UK visits under 91 days and UK workdays under
-31, and you are non-resident by rule, regardless of your ties.
+**Who this skill is for.** UK residents (employees, company owners, landlords, retirees) planning a genuine move to the UAE. It maps the rules and the traps. It is not advice on one person's facts.
 
-### 1.2 If no automatic test applies: the sufficient-ties table
+## Part 1: Breaking UK residence
 
-Failing an automatic test, residence depends on how many **UK ties** you keep versus days spent
-in the UK. As a **leaver**, five ties count:
+The full test is in `uk-statutory-residence-test`. The points that decide this corridor:
 
-1. **Family tie** — spouse/partner or minor children resident in the UK
-2. **Accommodation tie** — a place to live in the UK available for a continuous 91+ days and used at least one night (a spare room at a relative's counts if you use it 16+ nights)
-3. **Work tie** — 40 or more UK workdays (3+ hours each)
-4. **90-day tie** — more than 90 days in the UK in either of the two prior tax years (every fresh leaver has this)
-5. **Country tie** — the UK is the country you were present in at midnight most often (leavers only)
+### 1.1 The automatic overseas tests (FA 2013 Sch 45)
 
-**Days in the UK you can spend as a leaver without becoming resident:**
-
-| UK days in the tax year | You are resident if you have… |
+| Test | Condition |
 |---|---|
-| Under 16 | Never resident |
-| 16 – 45 | 4+ ties |
-| 46 – 90 | 3+ ties |
-| 91 – 120 | 2+ ties |
-| 121 – 182 | 1+ tie |
-| 183+ | Always resident, no table needed |
+| First automatic overseas test | Fewer than **16 days** in the UK in the tax year (for someone UK resident in one or more of the previous 3 years) |
+| Second automatic overseas test | Non-resident in all 3 previous years and fewer than 46 days in the UK (rarely relevant to a fresh leaver) |
+| Third automatic overseas test: **full-time work abroad** | Overseas work averaging **35 hours a week** or more over the year, no significant break from overseas work, fewer than **91 days** in the UK and fewer than **31 days** with more than 3 hours of UK work |
 
-**The practical read for this corridor:** in your first year or two out, you almost certainly
-carry the **90-day tie**, and if your family or an available home stays behind, you are at 2–3
-ties before counting anything else — which caps safe UK presence at **45–90 days**. A leaver
-who plans "I'll do 120 days back home" is usually planning to remain UK-resident without
-realising it. Count midnights, keep a log, and treat 90 as a ceiling, not a target.
+The third test does the work on this corridor. Take a genuine full-time role in the UAE, keep UK days under 91 and UK work days under 31, and you are non-resident whatever your ties.
 
-*(A day = present at midnight, with narrow exceptions for transit and exceptional
-circumstances, capped at 60 days.)*
+### 1.2 If no automatic test applies: the sufficient ties test
 
-### 1.3 Split-year treatment: not taxed to the moment you fly
+As a leaver (UK resident in one or more of the previous 3 tax years), five ties count:
 
-If you leave partway through a tax year, you are resident for the *whole* year by default. The
-SRT's **split-year rules** carve the year in two — a UK part and an overseas part — if you fit
-one of the leaver cases:
+1. **Family tie:** a spouse or partner, or a minor child, who is UK resident.
+2. **Accommodation tie:** a place to live in the UK available for a continuous 91 days or more in the year, where you spend at least one night. At a close relative's home, you need 16 nights.
+3. **Work tie:** 40 or more days with more than 3 hours of UK work.
+4. **90-day tie:** more than 90 days in the UK in either or both of the previous two tax years. Every fresh leaver has it.
+5. **Country tie:** the UK is the country where you were present at midnight most often in the year.
 
-- **Case 1 — starting full-time work overseas**: the split runs from when your overseas
-  full-time work begins (the same 35-hour / <91 days / <31 UK workdays limits apply pro-rata
-  for the rest of the year).
-- **Case 2 — partner of a Case 1 leaver**: you join or accompany a partner who qualifies under
-  Case 1.
-- **Case 3 — ceasing to have any UK home**: you stop having any home in the UK, spend fewer
-  than 16 UK days in the remainder of the year, and establish tax residence abroad (for the
-  UAE, becoming resident there under its own rules — see Part 4) within 6 months.
+| UK days in the tax year | You are UK resident if you have |
+|---|---|
+| Fewer than 16 | Never (first automatic overseas test) |
+| 16 to 45 | 4 or more ties |
+| 46 to 90 | 3 or more ties |
+| 91 to 120 | 2 or more ties |
+| 121 to 182 | 1 or more ties |
+| 183 or more | Always resident (first automatic UK test) |
 
-From the split date, foreign income (your UAE salary, for instance) falls outside UK tax. UK
-employment income earned before the split stays taxed normally through PAYE.
+**The practical read.** In the first years out you carry the 90-day tie. If your family or an available home stays in the UK, you are at 2 or 3 ties before anything else, which caps safe UK presence at 45 to 90 days. Count midnights and keep a log. Days spent in the UK because of exceptional circumstances beyond your control can be left out, up to 60 days a year (Sch 45 para 22).
 
-**Sequencing point most people miss:** the split-year cases are precise about *order of
-events*. Case 3 wants the UK home gone *first*, then minimal UK days. Case 1 keys everything to
-the overseas start date. Pick which case you are relying on **before** you book flights and
-exchange contracts, and make the diary match the case.
+### 1.3 Split-year treatment
 
----
+You are resident for the whole year by default. Split-year treatment cuts the departure year into a UK part and an overseas part if you fit a leaver case. Every leaver case needs you to have been UK resident in the previous tax year and to be non-resident in the next one (Sch 45 paras 44 to 46):
 
-## Part 2 — The 5-year trap: temporary non-residence
+- **Case 1, starting full-time work overseas.** The split runs from the day overseas full-time work starts. The UK day limit (90) and UK work-day limit (30) for the rest of the year are reduced in proportion to the whole months before the work starts. The next tax year must be non-resident because you meet the third automatic overseas test for it.
+- **Case 2, partner of a Case 1 leaver.** You go with a partner who qualifies under Case 1.
+- **Case 3, ceasing to have any UK home.** You stop having any UK home, spend fewer than 16 days in the UK in the rest of the year, and within 6 months you are resident in the new country under its law, present there every day, or your only home is there.
 
-The single most expensive mistake on this corridor. If you return to UK residence within **5
-years** of leaving, the "temporary non-residence" rules tax you, **in the year you return**, on
-things you did while away:
+From the split date, foreign income such as a UAE salary is outside UK tax. UK salary before the split stays taxed through PAYE. Decide which case you rely on before you book flights or exchange contracts, and make the diary match it.
 
-- **Capital gains** on assets you owned before departure and sold while non-resident — the
-  entire gain becomes chargeable on return, at the rates then in force.
-- **Close-company dividends** paid to you while away out of profits that arose before or during
-  your absence (the classic: paying yourself your company's retained profits "tax-free in
-  Dubai", then moving home in year 4 — HMRC taxes the lot on your return).
-- Certain **pension** payments, remitted **loans**, and other listed income categories.
+## Part 2: The 5-year trap (temporary non-residence)
 
-The 5 years run from the start of your non-residence (measured across the split-year boundary
-under the sole-UK-residence rules). The rules apply if you were UK resident in at least 4 of
-the 7 tax years before departure — which is nearly everyone using this Guide.
+You are temporarily non-resident if you had sole UK residence in **4 or more of the 7 tax years** before the year you leave and your non-residence lasts **5 years or less** (FA 2013 Sch 45 para 110; RDR3). If so, these are taxed **in the year you return**:
 
-**The honest planning statement:** selling your business or emptying your company's reserves
-while in the UAE only produces a permanent UK tax saving if your non-residence lasts **more
-than 5 full years**. If there is a realistic chance you return sooner, price the deferred UK
-bill into every decision. And note what the trap does *not* cover: income that simply *arises*
-while you are away — your UAE salary — is never pulled back.
+- **Capital gains** on assets you owned before you left and sold while away (TCGA 1992 s.10A; HMRC helpsheet HS278).
+- **Close-company dividends and distributions** received while away, where at any time in the departure tax year (its UK part, if split) or the 3 tax years before it you were a material participator in the company or an associate of one. Overseas companies that would be close if UK resident count too. For individuals returning on or after 6 April 2026, the charge applies to the **full amount** of every such distribution: the old exclusion for post-departure trade profits is gone (ITTOIA 2005 ss.401C, 408A and 413A as amended by Finance Act 2026 Sch 3 Part 3, paras 19 to 21; HMRC manual RFIG21600). Paying out company reserves "tax-free in Dubai" and coming home in year 4 is now caught in full.
+- Some other listed income (see RDR3 and the RFIG manual).
 
----
+Foreign tax paid on a caught distribution can now be credited against the UK charge (FA 2026 Sch 3 Part 3). Income that simply arises while you are away, such as a UAE salary, is not pulled back.
 
-## Part 3 — What stays UK-taxed no matter where you live
+**The planning statement.** Selling a business or emptying company reserves while in the UAE gives a permanent UK saving only if non-residence lasts **more than 5 years**. If a return within 5 years is realistic, price the deferred UK bill into every decision.
 
-Non-residence removes UK tax on your *worldwide* income and gains. It does **not** touch
-UK-source items. As a UAE resident you remain in the UK net for:
+**Coming back after a long absence.** Someone who returns after at least 10 consecutive tax years of non-residence can claim the 4-year foreign income and gains (FIG) regime that replaced the remittance basis from 6 April 2025. It cannot be claimed for a year in which you are temporarily non-resident. See `uk-non-dom`.
+
+## Part 3: What stays UK-taxed wherever you live
+
+Non-residence ends UK tax on foreign income and gains. It does not end UK tax on UK-source items. Filing detail is in `uk-non-resident-sa109`.
 
 ### 3.1 UK rental property
-- Rental profits stay UK-taxable forever. You file Self Assessment as a non-resident landlord.
-- The **Non-resident Landlord Scheme (NRLS)**: your letting agent (or tenant, if rent exceeds
-  £100/week with no agent) must withhold basic-rate tax from rent **unless** you register with
-  HMRC (form NRL1) to receive rent gross and settle through your return. Register before the
-  first non-resident rent payment; undoing withholding later is painful.
-- The personal allowance generally remains available to UK/EEA nationals filing as
-  non-residents, so modest rental profits often produce little or no tax — but the *filing*
-  obligation stands regardless.
+- Rental profits stay UK-taxable. You file Self Assessment as a non-resident landlord.
+- **Non-resident Landlord Scheme:** a letting agent, or a tenant paying more than **£100 a week** with no agent, must deduct basic rate tax from the rent unless HMRC has approved you to receive it gross. Individuals apply on form **NRL1**. Apply before the first rent you receive as a non-resident.
+- A non-resident who is a UK national can claim the Personal Allowance (£12,570 for 2026/27), so a modest rental profit often produces little or no tax. The filing obligation stays.
 
 ### 3.2 UK land and property gains
-- Since 2015/2019, non-residents are chargeable on gains on **UK residential and commercial
-  property, and on "property-rich" companies** (broadly, companies deriving 75%+ of value from
-  UK land in which you hold 25%+).
-- Every disposal triggers a **60-day** non-resident CGT return and payment on account — even
-  when no tax is due. Rebasing rules (to April 2015 for residential, April 2019 for commercial)
-  can reduce the chargeable gain for long-held assets.
-- Current CGT rates on residential property gains: **18% / 24%** depending on your band.
+- Non-residents are taxed on gains on all UK land and property, and on indirect disposals of "property-rich" entities (75% or more of gross value from UK land, where you hold 25% or more).
+- Every disposal needs a UK property return and payment within **60 days** of completion, even when no tax is due or there is a loss.
+- CGT rates for 2026/27: **18%** on gains within the basic rate band, **24%** above it. Annual exempt amount £3,000.
 
-### 3.3 UK dividends, interest and investment income
-- For a non-resident, UK dividends and savings interest fall under the **"disregarded income"**
-  rules: broadly, HMRC limits your UK liability to tax deducted at source (typically nil) —
-  provided you accept losing the personal allowance against other income in that computation.
-  Your Self Assessment software or accountant runs both computations and takes the better one.
-  Net effect for most UAE-resident portfolio investors: little or no ongoing UK tax on UK
-  shares — but see the close-company dividend trap in Part 2.
+### 3.3 UK dividends and interest
+Limited to tax deducted at source for most non-residents under the disregarded income rule (ITA 2007 s.811), at the price of the Personal Allowance in that computation. See `uk-non-resident-sa109` for the comparison. The close-company dividend trap in Part 2 still applies.
 
-### 3.4 UK pensions — the corridor's quiet superpower
-- **Private and workplace pensions**: under **Article 17 of the 2016 UK–UAE double tax
-  treaty**, pensions "paid in consideration of past employment" are taxable **only in your
-  state of residence** — the UAE, which levies nothing. With the treaty properly claimed, UK
-  pension drawdown can be paid **gross** of UK tax.
-- The claim is not automatic: you apply to HMRC on the **DT-Individual** form with a **UAE Tax
-  Residency Certificate** (Part 4.3) attached, and HMRC issues an NT (no tax) code to your
-  pension provider. Until then, PAYE applies and you reclaim.
-- **Caveats that bite:** government-service pensions stay UK-taxed under the treaty's separate
-  article; the 25% tax-free lump sum interacts oddly (it is UK-tax-free anyway); very large
-  one-off drawdowns deserve advice on treaty-abuse and temporary-non-residence pension rules
-  (Part 2); and if you return to the UK, ordinary UK taxation resumes.
-- **State pension**: payable in the UAE, but the UAE has no social-security agreement with the
-  UK, so your state pension is **frozen** — it will not receive annual uprating while you live
-  there. Factor that into long-horizon plans.
+### 3.4 UK pensions
+- **Private and workplace pensions:** Article 17 of the 2016 UK-UAE Double Taxation Convention says pensions paid to a resident of one state are **taxable only in that state**. A UAE resident's UK private pension is therefore taxable only in the UAE, which has no personal income tax.
+- The relief is not automatic. You claim on form **DT-Individual**, and HMRC then tells the pension payer to stop deducting tax. Until then PAYE applies and you reclaim.
+- **Government service pensions** (Article 18(2)) stay taxable only in the UK unless you are both resident in and a national of the UAE.
+- **State Pension:** paid abroad, but it only rises each year in the EEA, Gibraltar, Switzerland or a country with a UK social security agreement. The UAE is none of these, so a UAE resident's State Pension is frozen at the rate when they left or first claimed.
 
 ### 3.5 UK work
-- Days physically worked in the UK produce UK-taxable employment/self-employment income even as
-  a non-resident (subject to treaty relief for short stints). Keep UK workdays below the SRT
-  limits *and* understand they may carry their own tax cost.
+Days physically worked in the UK give UK-taxable earnings even for a non-resident, subject to treaty relief. Keep UK work days below the SRT limits and expect them to carry their own tax.
 
----
+## Part 4: The UAE end
 
-## Part 4 — The UAE side: simple, but not zero admin
+The UAE does not impose personal income tax (UAE Ministry of Finance). That is the only UAE rule this skill relies on. UAE corporate tax for anyone running a business, UAE VAT, UAE tax residence and the UAE tax residency certificate are outside this skill: ask a UAE adviser. The UK-UAE convention's residence article (Article 4) decides whether you count as a UAE resident for the treaty claims in Part 3.4.
 
-### 4.1 What the UAE does not tax
-No personal income tax. No capital gains tax on individuals. No inheritance or estate tax. No
-wealth tax. Your UAE salary, your investment gains as an individual, your crypto disposals —
-outside the corporate context, the UAE takes nothing and requires no personal income tax
-return. This is why the entire planning burden of the corridor sits in Parts 1–3.
+## Part 5: Inheritance tax: the tail
 
-### 4.2 What it does tax
-- **Corporate tax — 9%** (Federal Decree-Law 47 of 2022), on business profits above **AED
-  375,000**; 0% below. Applies to companies and to individuals **conducting business** with
-  turnover above AED 1m/year (passive personal investment and employment income are excluded).
-- **Free zones**: a Qualifying Free Zone Person can keep a **0%** rate on *qualifying income*
-  (broadly, dealings with other free-zone persons and foreign markets; mainland UAE revenue is
-  taxed at 9%). The qualifying conditions — substance, audited accounts, de-minimis limits —
-  are real; a free-zone licence alone is not a 0% guarantee.
-- **Small business relief**: elective relief treating you as having no taxable income while
-  revenue stays ≤ **AED 3m** — available for tax periods through **31 December 2026** (check
-  for extension beyond that).
-- **VAT — 5%**, mandatory registration at **AED 375,000** taxable turnover (voluntary from AED
-  187,500). If you run a business, this arrives long before corporate tax does.
-- **The 15% domestic minimum top-up tax (Pillar Two)** applies from 2025 only to members of
-  multinational groups with €750m+ global revenue — irrelevant to almost everyone reading this,
-  decisive for executives structuring inside large groups.
+Since **6 April 2025**, UK inheritance tax follows residence, not domicile (IHTA 1984 s.6A).
 
-### 4.3 Becoming a UAE tax resident — and proving it
-UAE **domestic** tax residency (Cabinet Decision 85 of 2022, effective March 2023) is met by
-any of:
-- **183+ days** physically in the UAE in a rolling 12 months, or
-- **90+ days** (for UAE/GCC nationals or UAE residence-visa holders) **plus** either a
-  permanent place of residence in the UAE or employment/business there, or
-- Your **usual or primary place of residence and centre of financial and personal interests**
-  is in the UAE.
+- You are a **long-term UK resident**, with your worldwide estate in UK IHT, if you were UK resident in at least **10 of the previous 20 tax years**.
+- After you leave, that status continues for a tail that depends on how many of the last 20 years you were resident:
 
-Residency matters for one document above all: the **Tax Residency Certificate (TRC)**, applied
-for through the Federal Tax Authority's EmaraTax portal, per treaty and per year. The TRC is
-what unlocks the UK treaty claims in Part 3.4 — treat obtaining it as a standing annual task,
-not a one-off.
+| UK-resident years out of the last 20 | Tail after leaving (tax years) |
+|---|---|
+| 13 or fewer | 3 |
+| 14 | 4 |
+| 15 | 5 |
+| 16 | 6 |
+| 17 | 7 |
+| 18 | 8 |
+| 19 | 9 |
+| 20 | 10 |
 
-**Visa first, residency second.** You need a residence visa to accumulate qualifying presence:
-employment visa through your employer or your own company; **Golden Visa** (10 years) routes
-including AED 2m+ in UAE property; freelance and remote-work permits. Choose the visa for
-immigration reasons; the *tax* results flow from days and substance, not the visa category.
+- UK-situated assets (UK property, most UK accounts and shares) stay in UK IHT whatever your residence.
 
-### 4.4 UAE admin that surprises UK arrivals
-- Free-zone company ≠ no obligations: corporate tax **registration** is required even at 0%,
-  audited financials are commonly required, and Economic Substance-style expectations apply to
-  qualifying status.
-- **Wills and succession**: with no IHT comes a different problem — forced-heirship default
-  regimes. Non-Muslim expatriates typically register a **DIFC or Abu Dhabi will** so UK-style
-  testamentary freedom applies to UAE assets. This is succession law, not tax, and it is
-  routinely missed.
+**On this corridor:** a lifelong UK resident who moves to Dubai at 45 stays in UK IHT on their worldwide estate for 10 tax years. The UAE position changes nothing during the tail. The SRT day log from Part 1 is also the IHT evidence.
 
----
-
-## Part 5 — Inheritance tax: the goodbye that takes a decade
-
-Since **6 April 2025**, UK IHT is based on **residence, not domicile**. The rules that matter
-for leavers:
-
-- You are a **long-term resident** (worldwide estate within UK IHT) if you were UK resident in
-  **10 or more of the previous 20 tax years**.
-- After leaving, long-term-resident status — and with it, worldwide IHT exposure — continues
-  for a **tail of 3 to 10 years**: broadly 3 years if you had 10–13 years of residence,
-  lengthening by one year for each additional year of residence up to the full 10-year tail for
-  someone resident 20 of the last 20 years.
-- **UK-situs assets** (UK property, UK company shares, most UK accounts) remain within UK IHT
-  **forever**, tail or no tail.
-
-**What this means on this corridor:** a lifelong UK resident who moves to Dubai at 45 remains
-exposed to UK IHT on their *worldwide* estate until roughly 55 — the UAE's 0% changes nothing
-during the tail. Estate planning for this corridor is therefore a sequencing exercise: survive
-the tail, restructure UK-situs holdings, and paper the change of residence meticulously
-(the SRT log from Part 1 is also your IHT evidence). Life cover written for the tail years is
-the pragmatic hedge many advisers recommend.
-
----
-
-## Part 6 — The departure checklist, in order
+## Part 6: The departure checklist
 
 **The tax year before you leave**
-1. Decide which SRT route you are relying on (third automatic test vs ties table) and which
-   split-year case fits. Write it down; build the diary around it.
-2. Model the 5-year rule against every planned disposal or dividend (Part 2). If a company sale
-   is coming, decide now whether it happens before departure (UK CGT at known rates, Business
-   Asset Disposal Relief at **18%** on the first £1m if it qualifies) or safely beyond the
-   5-year horizon.
-3. Landlords: appoint/notify your agent, prepare the **NRL1**.
-4. Start the visa process — UAE presence can only start counting once you can lawfully reside.
+1. Decide which SRT route (third automatic overseas test or the ties table) and which split-year case you rely on. Write it down and build the diary around it.
+2. Model the 5-year rule against every planned disposal or dividend. If a company sale is coming, decide whether it happens before departure (CGT with Business Asset Disposal Relief at **18%** for 2026/27 on up to £1 million of lifetime gains, 24% above) or after more than 5 full years away.
+3. Landlords: tell the agent and file **NRL1**.
+4. Start the visa process.
 
 **Departure year**
-5. Leave, and log every UK midnight from day one.
-6. File **P85** (or note departure in your Self Assessment) — this triggers HMRC's records,
-   any PAYE refund for the split year, and the NT-code conversation for pensions.
-7. Complete the **SA109** residence pages with your split-year claim in the departure year's
-   return.
-8. Decide on **voluntary National Insurance** (Class 2 if working abroad, otherwise Class 3, at
-   a cost of very roughly £900/year — check current rates) to keep state-pension qualifying
-   years accruing. Usually excellent value; you can also pay gaps retroactively within
-   deadlines.
-9. Tell your **student loan** provider — repayments continue abroad against UAE income under
-   overseas thresholds; silence triggers penalty rates.
-10. **ISAs**: keep them (existing holdings stay UK tax-sheltered), but no new contributions
-    while non-resident. Reassess whether the wrapper still earns its fees when your marginal
-    rate is 0%.
+5. Log every UK midnight from day one.
+6. File **P85** (or report the departure on your Self Assessment return).
+7. Complete the **SA109** residence pages with the split-year claim.
+8. **Voluntary National Insurance.** From 2026/27, voluntary Class 2 for periods abroad is no longer available to most people. Class 3 costs **£18.40 a week** for 2026/27. New applications to pay Class 3 for periods abroad need 10 continuous years of UK residence or 10 qualifying years on the record. Existing Class 2 payers abroad who apply to switch to Class 3 before 6 April 2027 keep the old 3-year test.
+9. Tell the Student Loans Company. Repayments continue abroad.
+10. **ISAs:** existing ISAs keep their tax treatment, but you cannot pay in while non-resident (unless a Crown employee or their spouse).
 
 **First UAE year**
-11. Hit the UAE residency thresholds (Part 4.3), then obtain your **TRC**.
-12. File **DT-Individual** with HMRC for pension/other treaty relief; chase the NT code.
-13. Register any UAE business for corporate tax (and VAT if turnover warrants).
-14. Register a **DIFC/ADJD will**.
-15. Diarise the annual rhythm: TRC renewal, UK Self Assessment (if UK-source income remains),
-    day-count review each 5 April, and the 5-year-rule anniversary.
+11. File **DT-Individual** for pension treaty relief and follow up until the payer stops deducting tax.
+12. Diarise each year: UK Self Assessment (if UK income remains), a day-count review each 5 April, the 5-year anniversary and the IHT tail end-date.
 
----
+## Part 7: Worked examples
 
-## Part 7 — Worked examples
+**7.1 The employee (Case 1).** Priya, a London employee, starts a full-time Dubai role on 1 September 2026. Under Case 1 the split runs from 1 September: her UK salary from 6 April to 31 August 2026 is taxed through PAYE, and her UAE salary from 1 September is outside UK tax, provided she keeps within the reduced UK day and work-day limits for the rest of 2026/27 and meets the third automatic overseas test for 2027/28. UAE personal income tax: none. UK filings: P85 and a 2026/27 return with SA109. If she keeps her London flat available rather than letting it, she carries the accommodation tie into later years. That is fine while the third automatic overseas test holds and risky the year it fails.
 
-**7.1 The employee (clean Case 1).** Priya, London employee, accepts a Dubai role starting 1
-September 2026 at AED 60,000/month. Split year under Case 1 from 1 September: UK salary
-January–August taxed through PAYE as normal; UAE salary from September outside UK tax
-entirely, provided she keeps UK visits under the pro-rated limits for the rest of 2026/27 and
-works her UAE role full-time. Her UAE tax on salary: **zero**. Her only UK filings: P85 and a
-final return with SA109. If she keeps her London flat *available* rather than letting it, she
-carries the accommodation tie into future years — fine while the third automatic test holds,
-risky the year she changes jobs and the 35-hour pattern breaks.
+**7.2 The company owner (the 5-year rule, priced).** Dan, a higher-rate taxpayer, owns all of a trading company and expects to sell it for a £2,000,000 gain. If he sells while UK resident in 2026/27, the first £1,000,000 qualifies for BADR at 18%. The annual exempt amount (£3,000) goes against the gain taxed at 24%. UK CGT is £419,280. If he moves to Dubai first, sells in year 2 and stays away more than 5 full years, there is no UK CGT (the shares are not UK land) and no UAE personal tax. If he returns in year 4, the whole gain is taxed in the year he comes back, at the rates then in force. The same applies to paying out reserves as dividends while away: from 6 April 2026 every such distribution is caught if he returns within 5 years.
 
-**7.2 The company owner (the 5-year rule, priced).** Dan owns 100% of a UK consultancy with
-£800k retained profits and expects a £2m sale in a few years. If he sells while UK-resident:
-CGT with BADR at 18% on the first £1m, 24% above — roughly **£420k** on £2m of gain. If he
-moves to Dubai first, sells in year 2, and stays out 5+ full years: UK CGT **nil** (the shares
-are not UK land), UAE CGT **nil** — but if anything brings him home in year 4, the whole gain
-lands in his return-year Self Assessment at the rates then in force. Same logic applies to
-paying out the £800k as dividends from Dubai: 0% only if the 5 years hold; 39.35% territory
-if they don't. His plan should treat the 5-year horizon as a hard covenant — insurance-grade
-certainty, not intention.
+```oa-check
+name: CGT on a GBP 2,000,000 company sale while UK resident (2026/27)
+inputs:
+  gain: 2000000
+  badr_limit: 1000000
+  badr_rate_pct: 18
+  main_rate_pct: 24
+  annual_exempt: 3000
+steps:
+  - badr_tax: badr_limit * badr_rate_pct / 100
+  - other_gain: gain - badr_limit - annual_exempt
+  - other_tax: other_gain * main_rate_pct / 100
+  - total_cgt: badr_tax + other_tax
+expected:
+  badr_tax: 180000.00
+  other_gain: 997000.00
+  other_tax: 239280.00
+  total_cgt: 419280.00
+```
 
-**7.3 The landlord-retiree (treaty in action).** Margaret, 62, moves to Abu Dhabi, keeping a
-Manchester buy-to-let (£12k profit) and drawing £40k/year from her SIPP. The rental profit
-stays UK-taxable — but sits mostly within her personal allowance, leaving a small annual bill
-and an ongoing Self Assessment. The SIPP drawdown: once she has her TRC and HMRC processes her
-DT-Individual claim, Article 17 assigns taxing rights to the UAE alone — her provider pays
-**gross**. Combined UK+UAE tax on £52k of income: roughly **£3–4k**, versus ~£9k had she
-stayed. Her watch-items: the frozen state pension when it starts, the IHT tail on her worldwide
-estate for several years, and the 60-day CGT return whenever she eventually sells Manchester.
+**7.3 The landlord-retiree (the treaty at work).** Margaret, a UK national aged 62, moves to Abu Dhabi. She keeps a Manchester flat (£12,000 profit) and draws £40,000 a year of taxable income from her personal pension. Once her DT-Individual claim is processed, Article 17 makes the pension taxable only in the UAE, so it is paid gross. The rental profit stays UK-taxable, but as a UK national she keeps the £12,570 Personal Allowance, so her 2026/27 UK tax is nil. Had she stayed in the UK, the £52,000 would have cost £8,232 of income tax at 2026/27 rates. Her watch items: the frozen State Pension, the IHT tail, and the 60-day return when she sells the flat.
 
----
+```oa-check
+name: UK tax on GBP 52,000 if she stayed, versus rent only as a UAE resident (2026/27)
+inputs:
+  pension: 40000
+  rent_profit: 12000
+  personal_allowance: 12570
+  basic_band: 37700
+steps:
+  - total_income: pension + rent_profit
+  - taxable_if_stayed: total_income - personal_allowance
+  - basic_tax: min(taxable_if_stayed, basic_band) * 0.20
+  - higher_tax: max(taxable_if_stayed - basic_band, 0) * 0.40
+  - tax_if_stayed: basic_tax + higher_tax
+  - taxable_as_uae_resident: max(rent_profit - personal_allowance, 0)
+  - tax_as_uae_resident: taxable_as_uae_resident * 0.20
+expected:
+  total_income: 52000.00
+  tax_if_stayed: 8232.00
+  tax_as_uae_resident: 0.00
+```
 
-## Part 8 — The trap list (what actually goes wrong)
+## Part 8: The trap list
 
 | Trap | Why it bites |
 |---|---|
-| Counting days like a tourist | The SRT counts **midnights**, and leavers' thresholds are much lower than 183. The 90-day tie means last year's habits raise this year's bar. |
-| Keeping a home "just in case" | An *available* UK dwelling used one night = accommodation tie, even someone else's spare room used 16+ nights. |
-| Family staying behind "for school" | Spouse or minor children in the UK = family tie, and usually school-holiday UK days for you. The two-centre life frequently fails the ties table. |
-| Selling / paying dividends in year 1, returning in year 4 | The 5-year rule taxes it all on return. |
-| Assuming "Dubai = no UK tax on my pension" automatically | The 0% outcome requires UAE residency, a TRC, and a processed DT-Individual claim. Until the NT code lands, PAYE continues. |
-| Forgetting IHT | Residence-based IHT follows you for 3–10 years, and UK-situs assets forever. The UAE's 0% is irrelevant to HMRC's claim. |
-| The 60-day property CGT return | Selling the old UK home after leaving triggers a 60-day return even if PPR relief wipes the tax. Late = penalties. |
-| Free-zone 0% assumed automatic | Qualifying status has substance and revenue-source conditions; mainland income is 9%. |
-| Skipping voluntary NICs | Cheap qualifying years lost; the state pension is also frozen in the UAE — every qualifying year matters more. |
-| No UAE will | UAE succession defaults differ sharply from UK expectations; a DIFC/ADJD will fixes it in an afternoon. |
+| Counting days like a tourist | The SRT counts midnights, and leavers' limits are far below 183. The 90-day tie means last year's habits raise this year's bar. |
+| Keeping a home "just in case" | An available UK home used one night is an accommodation tie; a close relative's home needs 16 nights. |
+| Family staying behind "for school" | A UK-resident spouse or minor child is a family tie, and school holidays add UK days. |
+| Paying out reserves in year 1, returning in year 4 | From 6 April 2026 the 5-year rule taxes the full amount of every close-company distribution a material participator received while away, in the year of return. |
+| Assuming the pension is paid gross automatically | Treaty relief needs a processed DT-Individual claim. Until then PAYE continues. |
+| Forgetting IHT | The tail runs 3 to 10 tax years after leaving, and UK assets stay in IHT forever. |
+| The 60-day property return | Selling the old UK home after leaving needs a return within 60 days even if relief removes the tax. |
+| Planning on voluntary Class 2 | Gone for periods abroad from 2026/27 for most people. Class 3 is £18.40 a week, and new applicants need 10 years. |
 
----
+## Sources
 
-## Sources (primary, verify current-year figures before relying)
+| Source | URL | Read on |
+|---|---|---|
+| Finance Act 2013 Sch 45 (statutory residence test, split year, temporary non-residence) | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 | 2026-10-23 |
+| HMRC RDR3, Statutory Residence Test guidance note | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-10-23 |
+| Finance Act 2026 Sch 3 (Part 3, temporary non-residence) | https://www.legislation.gov.uk/ukpga/2026/11/schedule/3 | 2026-10-23 |
+| HMRC RFIG21600, temporary non-residence: close company distributions | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21600 | 2026-10-23 |
+| HMRC HS278, Temporary non-residents and Capital Gains Tax (2026) | https://www.gov.uk/government/publications/temporary-non-residents-and-capital-gains-tax-hs278-self-assessment-helpsheet/hs278-temporary-non-residents-and-capital-gains-tax-2026 | 2026-10-23 |
+| GOV.UK, 4-year FIG regime eligibility | https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime | 2026-10-23 |
+| GOV.UK, Paying tax on rent to landlords abroad | https://www.gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad | 2026-10-23 |
+| GOV.UK, Apply as an individual to receive UK rental income without tax deducted (NRL1) | https://www.gov.uk/guidance/apply-as-an-individual-to-receive-uk-rental-income-without-uk-tax-deducted | 2026-10-23 |
+| GOV.UK, Capital Gains Tax for non-residents: UK property (60 days, property-rich) | https://www.gov.uk/guidance/capital-gains-tax-for-non-residents-uk-residential-property | 2026-10-23 |
+| GOV.UK, Capital Gains Tax rates (18%, 24%, BADR 18%) | https://www.gov.uk/capital-gains-tax/rates | 2026-10-23 |
+| HMRC HS275, Business Asset Disposal Relief (2026) (GBP 1 million limit) | https://www.gov.uk/government/publications/entrepreneurs-relief-hs275-self-assessment-helpsheet/hs275-business-asset-disposal-relief-2026 | 2026-10-23 |
+| GOV.UK, Income Tax rates and Personal Allowance 2026/27 | https://www.gov.uk/income-tax-rates | 2026-10-23 |
+| UK-UAE Double Taxation Convention 2016 (Articles 4, 13, 17, 18) | https://www.gov.uk/government/publications/united-arab-emirates-tax-treaties/2016-uk-uae-double-taxation-convention | 2026-10-23 |
+| GOV.UK, Form DT-Individual | https://www.gov.uk/government/publications/double-taxation-treaty-relief-form-dt-individual | 2026-10-23 |
+| GOV.UK, State Pension if you retire abroad: rates | https://www.gov.uk/state-pension-if-you-retire-abroad/rates-of-state-pension | 2026-10-23 |
+| GOV.UK, Voluntary National Insurance abroad from 6 April 2026 | https://www.gov.uk/government/publications/voluntary-national-insurance-contributions-for-periods-abroad-from-6-april-2026/voluntary-national-insurance-contributions-abroad-from-6-april-2026 | 2026-10-23 |
+| GOV.UK, Voluntary National Insurance rates (Class 3 GBP 18.40) | https://www.gov.uk/voluntary-national-insurance-contributions/rates | 2026-10-23 |
+| GOV.UK, Individual Savings Accounts (non-residents) | https://www.gov.uk/individual-savings-accounts | 2026-10-23 |
+| Inheritance Tax Act 1984 s.6A (long-term UK resident, tail table) | https://www.legislation.gov.uk/ukpga/1984/51/section/6A | 2026-10-23 |
+| HMRC IHTM47020, long-term UK residence test | https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm47020 | 2026-10-23 |
+| UAE Ministry of Finance, Retail T-Sukuk ("The United Arab Emirates does not impose personal income tax") | https://mof.gov.ae/en/public-finance/public-debt/retail-t-sukuk/ | 2026-10-23 |
 
-**UK** — HMRC RDR3: Statutory Residence Test guidance (gov.uk); HMRC Residence, Domicile and
-Remittance manuals; Split-year cases: RDR3 Part 5; Temporary non-residence: CG26500+/RDRM12600+;
-Non-resident landlords: gov.uk NRLS; NRCGT 60-day reporting: gov.uk "Report and pay CGT on UK
-property"; CGT/BADR rates: gov.uk CGT rates 2026/27; IHT residence-based rules: Finance Act 2025
-changes, gov.uk "Inheritance Tax: long-term UK residence"; UK–UAE Double Taxation Convention
-(2016), Article 17 (pensions), gov.uk treaty texts; DT-Individual claim form, gov.uk; Voluntary
-NICs: gov.uk Class 2/Class 3 abroad; State pension abroad (frozen-rate countries): gov.uk.
-
-**UAE** — Federal Decree-Law 47/2022 (Corporate Tax) and FTA Corporate Tax guides (tax.gov.ae);
-Cabinet Decision 85/2022 (tax residency) and FTA TRC service via EmaraTax; Federal Decree-Law
-8/2017 (VAT); FTA Small Business Relief guide; DIFC Wills Service Centre / ADJD wills.
-
----
-
-*Built for the OpenAccountants migration desk. This corridor moves faster than any other —
-rules on both ends changed materially in 2024–2026, and figures age quickly. Treat every number
-here as a pointer to its primary source, and put a named accountant on both ends of your move:
-a GB accountant for the exit, a UAE accountant for the landing.*
+Not yet confirmed: whether HMRC requires the UAE authority to certify residence on the DT-Individual claim (the form page read on 2026-10-23 does not say); the full list of "other listed income" caught by temporary non-residence beyond gains and close-company distributions.
 
 <!-- openaccountants-cta-block -->
 
