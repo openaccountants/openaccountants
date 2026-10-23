@@ -1,715 +1,192 @@
 ---
 name: poland-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Polish VAT return (JPK_V7M / JPK_V7K) for a self-employed individual or small business in Poland. Trigger on phrases like "prepare VAT return", "do the VAT", "Polish VAT", "JPK", "deklaracja VAT", "plik JPK", or any request involving Poland VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Poland only and only standard czynny podatnik VAT registrations. VAT groups (grupa VAT), special economic zones, and fiscal representatives are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Polish VAT work.
-version: 2.0
+description: "Polish VAT (podatek od towarów i usług) for tax year 2026: who must register, the 23%, 8%, 5% and 0% rates, the small-business exemption of PLN 240,000 (raised from PLN 200,000 on 1 January 2026) and the EU SME scheme, the JPK_V7M and JPK_V7K files due on the 25th, refunds in 40 days, KSeF structured e-invoicing (mandatory from 1 February 2026 for businesses with 2024 sales over PLN 200 million, from 1 April 2026 for the rest, with a PLN 10,000 a month carve-out to the end of 2026), split payment above PLN 15,000 for Annex 15 goods, the white list, reverse charge, the 30% additional liability and 10.50% late interest. Trigger on: Polish VAT, JPK_V7, KSeF, zwolnienie podmiotowe, MPP, biała lista, VAT-R. Out of scope: KSeF schema detail (poland-einvoice), income tax (pl-income-tax, pl-cit-corporate-tax), cross-border income (pl-cross-border)."
+version: 2.1
 jurisdiction: PL
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-23
+verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Poland VAT Return
-
-## Section 1 — Quick reference
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Poland (Rzeczpospolita Polska) |
-| Standard rate | 23% |
-| Reduced rates | 8% (food, restaurant services, passenger transport, certain construction/renovation of residential buildings), 5% (basic foodstuffs, books, periodicals, hygiene products) |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods, certain agricultural inputs) |
-| Return form | JPK_V7M (monthly filers) or JPK_V7K (quarterly filers — deklaracja quarterly, ewidencja monthly) |
-| Filing portal | e-Urząd Skarbowy (https://e-urzadskarbowy.podatki.gov.pl) |
-| Authority | Krajowa Administracja Skarbowa (KAS — National Revenue Administration) |
-| Currency | PLN only |
-| Filing frequencies | Monthly (JPK_V7M — standard); Quarterly (JPK_V7K — available to "mały podatnik" with annual turnover ≤ EUR 2M equivalent) |
-| Deadline | 25th of month following period end (both monthly and quarterly) |
-| KSeF status | Krajowy System e-Faktur — mandatory structured e-invoicing phased in from 2026 |
-| Split payment (MPP) | Mandatory for Annex 15 goods/services where invoice ≥ PLN 15,000 gross |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Open Accountants |
-| Validated by | Pending — requires doradca podatkowy validation |
-| Validation date | Pending |
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
-
-**Key JPK_V7 fields (deklaracja section)**
-
-| Field | Meaning |
-| --- | --- |
-| K_10 | Net value of domestic sales at 23% |
-| K_11 | Output VAT at 23% on domestic sales |
-| K_12 | Net value of domestic sales at 8% |
-| K_13 | Output VAT at 8% |
-| K_14 | Net value of domestic sales at 5% |
-| K_15 | Output VAT at 5% |
-| K_16 | Net value of domestic sales at 0% |
-| K_17 | Net value of intra-EU supplies of goods (WDT) |
-| K_18 | Net value of exports |
-| K_19 | Net value of intra-EU supplies of services (where buyer accounts for VAT) |
-| K_20 | Net value of domestic supplies where buyer accounts for VAT (reverse charge) |
-| K_21 | Net value of exempt supplies |
-| K_22 | Net value of supplies not subject to VAT |
-| K_23 | Net value of intra-EU acquisitions of goods (WNT) |
-| K_24 | Output VAT on WNT |
-| K_25 | Net value of import of goods (customs) |
-| K_26 | Output VAT on import of goods |
-| K_27 | Net value of import of services (Art. 28b) |
-| K_28 | Output VAT on import of services |
-| K_29 | Net value of domestic purchases where buyer accounts (Art. 17(1)(7-8)) |
-| K_30 | Output VAT on domestic reverse charge |
-| K_31 | Net value of intra-EU acquisitions of services |
-| K_32 | Output VAT on EU service acquisitions |
-| K_34 | Total output VAT (sum of K_11+K_13+K_15+K_24+K_26+K_28+K_30+K_32) |
-| K_40 | Input VAT on domestic purchases |
-| K_41 | Input VAT on intra-EU acquisitions |
-| K_42 | Input VAT on imports |
-| K_43 | Input VAT on domestic reverse charge |
-| K_44 | Input VAT corrections (prior period) |
-| K_45 | Total input VAT (K_40+K_41+K_42+K_43+K_44) |
-| K_46 | Excess input over output (if K_45 > K_34) |
-| K_47 | Excess output over input (if K_34 > K_45) — VAT payable |
-| K_48 | Amount requested as refund |
-| K_49 | Amount carried forward to next period |
-| K_50 | VAT payable to the tax office |
-
-**GTU codes (required in ewidencja section)**
-
-| Code | Category |
-| --- | --- |
-| GTU_01 | Alcohol |
-| GTU_02 | Fuel |
-| GTU_03 | Heating oil |
-| GTU_04 | Tobacco |
-| GTU_05 | Waste |
-| GTU_06 | Electronic devices |
-| GTU_07 | Vehicles and parts |
-| GTU_08 | Precious metals and scrap |
-| GTU_09 | Pharmaceuticals |
-| GTU_10 | Buildings and land |
-| GTU_11 | Emission rights and similar |
-| GTU_12 | Intangible services (advisory, legal, accounting, management) |
-| GTU_13 | Transport and storage |
-
-**Conservative defaults — Poland-specific**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 23% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Poland |
-| Unknown B2B vs B2C status for EU customer | B2C, charge 23% |
-| Unknown business-use proportion (vehicle, phone) | 50% recovery (vehicle default per Art. 86a) |
-| Unknown SaaS billing entity | Reverse charge from non-EU (K_27/K_28) |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-| Unknown white list status of supplier | WARN — verify before payment |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | PLN 15,000 (also triggers split payment check) |
-| HIGH tax-delta on a single conservative default | PLN 1,000 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | PLN 25,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the period in CSV, PDF, or pasted text. Must cover the full period. Acceptable from: PKO BP, mBank, ING Bank Śląski, Santander Bank Polska, Bank Pekao, Alior Bank, BNP Paribas PL, Revolut Business, Wise Business, or any other.
-
-**Recommended** — sales invoices (faktury sprzedaży) for the period, purchase invoices (faktury zakupu) for input VAT claims above PLN 1,000, NIP number, white list verification for suppliers.
-
-**Ideal** — complete invoice register, KSeF export (when available), prior period JPK_V7, white list verification log.
-
-**Refusal policy if minimum is missing — SOFT WARN.** If no bank statement → hard stop. If bank statement only → proceed with reviewer brief warning about invoice verification and white list checks.
-
-### Poland-specific refusal catalogue
-
-These apply on top of EU-wide refusals in `eu-vat-directive` Section 13.
-
-- **R-PL-1 — VAT-exempt entity (podatnik zwolniony)** — Trigger: client is VAT-exempt (Art. 113 — turnover ≤ PLN 200,000). Message: "VAT-exempt entities do not file JPK_V7. They have no obligation to charge or recover VAT. This skill covers czynny podatnik VAT only."  _(Art. 113)_
-- **R-PL-2 — VAT group (grupa VAT)** — Trigger: client is part of a VAT group under Art. 15a. Message: "VAT groups require consolidated filing. Out of scope."  _(Art. 15a)_
-- **R-PL-3 — Fiscal representative** — Trigger: non-resident with fiscal representative. Message: "Fiscal representative obligations are beyond this skill."
-- **R-PL-4 — Partial exemption (proporcja/prewspółczynnik)** — Trigger: client makes both taxable and exempt supplies, exempt proportion non-de-minimis. Message: "You make both taxable and exempt supplies. Input VAT must be apportioned under Art. 90 (proporcja) and/or Art. 86 ust. 2a (prewspółczynnik). Please use a doradca podatkowy."  _(Art. 90; Art. 86 ust. 2a)_
-- **R-PL-5 — Special economic zone** — Trigger: client operates in a special economic zone with VAT exemptions. Message: "Special economic zone VAT rules require specialist advice. Out of scope."
-- **R-PL-6 — Margin scheme (VAT marża)** — Trigger: client deals in second-hand goods, art, antiques, or travel agent packages under margin scheme. Message: "Margin scheme requires transaction-level margin computation. Out of scope."
-- **R-PL-7 — Income tax instead of VAT** — Trigger: user asks about PIT/CIT. Message: "This skill handles JPK_V7 (VAT) only. For Polish income tax, use the appropriate skill."
-- **R-PL-8 — KSeF mandatory e-invoicing dispute** — Trigger: client's invoices should be on KSeF but are not. Message: "If mandatory KSeF e-invoicing applies, invoices not submitted through KSeF may not be valid for input VAT deduction. Please verify KSeF compliance with a doradca podatkowy before claiming input VAT."
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-Match by case-insensitive substring. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Polish banks (fees exempt — exclude)
-
-**Polish banks table**  _(Art. 43 ust. 1 pkt 38-41)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PKO BP, PKO BANK POLSKI | EXCLUDE for bank charges/fees | Financial service, exempt Art. 43 ust. 1 pkt 38-41 |
-| MBANK, BRE BANK | EXCLUDE | Same |
-| ING BANK ŚLĄSKI, ING PL | EXCLUDE | Same |
-| SANTANDER BANK POLSKA, BZWBK | EXCLUDE | Same |
-| BANK PEKAO, PEKAO SA | EXCLUDE | Same |
-| ALIOR BANK, BNP PARIBAS PL | EXCLUDE | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for separate taxable subscriptions |
-| ODSETKI, INTEREST | EXCLUDE | Interest, out of scope |
-| KREDYT, POŻYCZKA, LOAN | EXCLUDE | Loan principal, out of scope |
-
-### 3.2 Polish government and statutory bodies (exclude entirely)
-
-**Government bodies table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| URZĄD SKARBOWY, US | EXCLUDE | Tax office payment |
-| E-DEKLARACJE, E-URZAD SKARBOWY | EXCLUDE | Tax filing system |
-| ZUS, ZAKŁAD UBEZPIECZEŃ SPOŁECZNYCH | EXCLUDE | Social security contributions |
-| KRUS | EXCLUDE | Agricultural social security |
-| GUS, GŁÓWNY URZĄD STATYSTYCZNY | EXCLUDE | Statistical office fee |
-| KRS, SĄD REJONOWY | EXCLUDE | Court/registry fee |
-| KSeF (payment to system) | EXCLUDE | E-invoicing system |
-
-### 3.3 Polish utilities
-
-**Polish utilities table**
-
-| Pattern | Treatment | Field | Notes |
-| --- | --- | --- | --- |
-| PGE, PGE OBRÓT | Domestic 23% | K_40 (input) | Electricity — overhead |
-| TAURON, ENEA, ENERGA | Domestic 23% | K_40 (input) | Regional energy suppliers |
-| PGNiG, POLSKIE GÓRNICTWO NAFTOWE | Domestic 23% | K_40 (input) | Gas supply |
-| ORANGE POLSKA, ORANGE PL | Domestic 23% | K_40 (input) | Telecoms — overhead |
-| PLAY, P4 | Domestic 23% | K_40 (input) | Mobile telecoms |
-| T-MOBILE PL, PLUS, POLKOMTEL | Domestic 23% | K_40 (input) | Mobile telecoms |
-| NETIA, UPC POLSKA | Domestic 23% | K_40 (input) | Broadband/telecoms |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance table**  _(Art. 43 ust. 1 pkt 37)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PZU, WARTA, ERGO HESTIA | EXCLUDE | Insurance, exempt Art. 43 ust. 1 pkt 37 |
-| ALLIANZ PL, AXA PL, GENERALI PL | EXCLUDE | Same |
-| UBEZPIECZENIE, POLISA | EXCLUDE | All exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics table**
-
-| Pattern | Treatment | Field | Notes |
-| --- | --- | --- | --- |
-| POCZTA POLSKA | EXCLUDE for standard postage |  | Universal postal service, exempt |
-| POCZTA POLSKA | Domestic 23% for courier/Pocztex | K_40 | Non-universal services taxable |
-| INPOST, PACZKOMAT | Domestic 23% | K_40 | Parcel lockers, taxable |
-| DPD PL, DHL PL, GLS PL | Domestic 23% | K_40 | Courier, taxable |
-
-### 3.6 Transport (Poland domestic)
-
-**Transport table**
-
-| Pattern | Treatment | Field | Notes |
-| --- | --- | --- | --- |
-| PKP, PKP INTERCITY | Domestic 8% | K_40 | Passenger rail at 8% |
-| POLREGIO, KOLEJE MAZOWIECKIE | Domestic 8% | K_40 | Regional rail at 8% |
-| ZTM, MPK, KOMUNIKACJA MIEJSKA | Domestic 8% | K_40 | Urban public transport at 8% |
-| LOT, RYANAIR, WIZZ AIR (international) | EXCLUDE / 0% |  | International flights zero rated |
-| TAXI, BOLT PL, UBER PL | Domestic 8% | K_40 | Taxi/ride-hailing at 8% (passenger transport) |
-
-### 3.7 Food retail (blocked unless resale)
-
-**Food retail table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BIEDRONKA, JERONIMO MARTINS | Default BLOCK input VAT | Supermarket — personal provisioning |
-| LIDL PL, ALDI PL, KAUFLAND | Default BLOCK | Same |
-| ŻABKA, LEWIATAN, STOKROTKA | Default BLOCK | Same |
-| RESTAURANTS, CAFES, BARS | Default BLOCK | Representation — see note below |
-
-- **Note on Polish representation** — Poland allows VAT recovery on business entertainment (usługi gastronomiczne) — but ONLY on catering services (usługi cateringowe). Restaurant services (eaten on premises) are NOT deductible under Art. 88 ust. 1 pkt 4. Catering (delivered food for business meetings) IS deductible. Default: block. [T2] flag if client claims catering.  _(Art. 88 ust. 1 pkt 4)_
-
-### 3.8 SaaS — EU suppliers (reverse charge, K_31/K_32/K_41)
-
-**SaaS EU suppliers table**
-
-| Pattern | Billing entity | Field | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | K_31/K_32/K_41 | EU service reverse charge |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | K_31/K_32/K_41 | Reverse charge |
-| ADOBE | Adobe Ireland (IE) | K_31/K_32/K_41 | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | K_31/K_32/K_41 | Reverse charge |
-| LINKEDIN (paid) | LinkedIn Ireland (IE) | K_31/K_32/K_41 | Reverse charge |
-| SPOTIFY | Spotify AB (SE) | K_31/K_32/K_41 | EU reverse charge |
-| DROPBOX | Dropbox Ireland (IE) | K_31/K_32/K_41 | Reverse charge |
-| SLACK | Slack Ireland (IE) | K_31/K_32/K_41 | Reverse charge |
-| ATLASSIAN | Atlassian BV (NL) | K_31/K_32/K_41 | EU reverse charge |
-| ZOOM | Zoom Ireland (IE) | K_31/K_32/K_41 | Reverse charge |
-| STRIPE (subscription) | Stripe IE | K_31/K_32/K_41 | Transaction fees may be exempt |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge, K_27/K_28)
-
-**SaaS non-EU suppliers table**
-
-| Pattern | Billing entity | Field | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — check | K_31/K_32/K_41 | LU entity → EU reverse charge |
-| NOTION | Notion Labs Inc (US) | K_27/K_28 | Non-EU import of services |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | K_27/K_28 | Non-EU |
-| OPENAI, CHATGPT | OpenAI Inc (US) | K_27/K_28 | Non-EU |
-| GITHUB | GitHub Inc (US) | K_27/K_28 | Check if billed by IE entity |
-| FIGMA | Figma Inc (US) | K_27/K_28 | Non-EU |
-| CANVA | Canva Pty Ltd (AU) | K_27/K_28 | Non-EU |
-| HUBSPOT | US or IE — check | K_27/K_28 or K_31/K_32 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | K_27/K_28 | Non-EU |
-
-### 3.10 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing exempt |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| PRZELEWY24, PAYU, TPAY | Check invoice | Polish payment processors — fees may be exempt financial services |
-| BLIK (merchant fees) | Check invoice | Exempt financial service |
-
-### 3.11 Professional services (Poland)
-
-**Professional services table**
-
-| Pattern | Treatment | Field | Notes |
-| --- | --- | --- | --- |
-| KANCELARIA, ADWOKAT, RADCA PRAWNY | Domestic 23% | K_40 | Legal — deductible if business. GTU_12 for sales. |
-| BIURO RACHUNKOWE, KSIĘGOWY, BIEGŁY REWIDENT | Domestic 23% | K_40 | Accountant — always deductible. GTU_12 for sales. |
-| NOTARIUSZ | Domestic 23% | K_40 | Notary |
-| DORADCA PODATKOWY | Domestic 23% | K_40 | Tax adviser |
-
-### 3.12 Payroll and social security (exclude entirely)
-
-**Payroll and social security table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ZUS, SKŁADKI ZUS | EXCLUDE | Social security contributions |
-| WYNAGRODZENIE, PENSJA, PŁACA (outgoing) | EXCLUDE | Wages — outside VAT scope |
-| PIT-4R, ZALICZKA PIT | EXCLUDE | Employee income tax withholding |
-| PFRON | EXCLUDE | Disability fund contribution |
-
-### 3.13 Property and rent
-
-**Property and rent table**  _(Art. 43 ust. 1 pkt 36)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CZYNSZ, NAJEM (commercial, with VAT) | Domestic 23% | Commercial lease with VAT |
-| CZYNSZ, NAJEM (residential, no VAT) | EXCLUDE | Residential lease, exempt Art. 43 ust. 1 pkt 36 |
-| WSPÓLNOTA MIESZKANIOWA, SPÓŁDZIELNIA | EXCLUDE | Housing cooperative fees |
-
-### 3.14 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PRZELEW WŁASNY, TRANSFER WEWNĘTRZNY | EXCLUDE | Internal movement |
-| DYWIDENDA | EXCLUDE | Dividend, out of scope |
-| SPŁATA KREDYTU, RATA | EXCLUDE | Loan repayment, out of scope |
-| WYPŁATA GOTÓWKI, BANKOMAT, ATM | TIER 2 — ask | Default exclude; ask what cash was spent on |
-
-### 3.15 White list and split payment checks
-
-**White list and split payment checks table**  _(Art. 108a; Art. 96b)_
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Any purchase invoice ≥ PLN 15,000 gross | WARN: verify white list + split payment | Art. 108a — mandatory MPP for Annex 15 items |
-| Supplier bank account not on white list | WARN: input VAT at risk | Art. 96b — verify at https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Polish self-employed IT consultant.
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; PLN 64.32`
-
-**Reasoning:**
-Notion Labs Inc is US entity (Section 3.9). Import of services under Art. 28b. Report net PLN 64.32 in K_27, output VAT (23% = PLN 14.79) in K_28, input VAT PLN 14.79 in K_42 (or K_40 depending on form version). Net effect zero.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field (output) | Field (input) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -64.32 | -64.32 | 14.79 | 23% | K_27/K_28 | K_42 | N | — | — |
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -3,800.00 ; PLN`
-
-**Reasoning:**
-Google Ireland (IE). EU service acquisition. Net PLN 3,800 in K_31, output VAT (23% = PLN 874) in K_32, input VAT PLN 874 in K_41.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field (output) | Field (input) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -3,800.00 | -3,800.00 | 874.00 | 23% | K_31/K_32 | K_41 | N | — | — |
-
-### Example 3 — Restaurant service, blocked
-
-**Input line:**
-`15.04.2026 ; RESTAURACJA POD SAMSONEM ; DEBIT ; Client dinner ; -450.00 ; PLN`
-
-**Reasoning:**
-Restaurant service (usługa gastronomiczna) — input VAT blocked under Art. 88 ust. 1 pkt 4. This is NOT catering (which would be deductible). Default: block. No input VAT.
-
-**Output table**  _("Restaurant: blocked — catering (delivered) would be deductible, restaurant (on-premises) is not")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTAURACJA POD SAMSONEM | -450.00 | -450.00 | 0 | — | — | Y | Q1 | "Restaurant: blocked — catering (delivered) would be deductible, restaurant (on-premises) is not" |
-
-### Example 4 — Domestic purchase, split payment threshold
-
-**Input line:**
-`18.04.2026 ; DELL POLSKA ; DEBIT ; Invoice FV/2026/04/41 Laptop ; -7,995.00 ; PLN`
-
-**Reasoning:**
-Domestic purchase from Polish vendor. PLN 7,995 incl. 23% VAT. Net = PLN 6,500. VAT = PLN 1,495. Below PLN 15,000 gross threshold for mandatory split payment. Electronics (laptop) may trigger GTU_06 if client resells electronics — for purchases, no GTU required. Input VAT deductible in K_40. Check: is the supplier on the white list? Verify at wykaz podatników.
-
-**Output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | DELL POLSKA | -7,995.00 | -6,500.00 | -1,495.00 | 23% | K_40 | N | — | — |
-
-### Example 5 — EU B2B service sale (inbound receipt)
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice PL-2026-018 IT consultancy ; +16,500.00 ; PLN`
-
-**Reasoning:**
-Incoming from German company. B2B IT consulting — place of supply is Germany. Invoice at 0% with reverse charge note. Report net in K_19 (EU services supplied). GTU_12 applies (intangible/advisory services). Verify German USt-IdNr on VIES.
-
-**Output table**  _("Verify German USt-IdNr; GTU_12 applies")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +16,500.00 | +16,500.00 | 0 | 0% | K_19 | Y | Q2 (HIGH) | "Verify German USt-IdNr; GTU_12 applies" |
-
-### Example 6 — Vehicle, 50% restriction
-
-**Input line:**
-`28.04.2026 ; TOYOTA LEASING POLSKA ; DEBIT ; Car lease May ; -2,200.00 ; PLN`
-
-**Reasoning:**
-Car lease payment. Passenger vehicles used for mixed purposes: 50% input VAT deduction under Art. 86a. PLN 2,200 incl. 23% VAT. Net = PLN 1,788.62. Full VAT = PLN 411.38. Deductible = 50% = PLN 205.69. Full 100% deduction requires: ewidencja przebiegu pojazdu (mileage log), VAT-26 form filed, and documented exclusive business use. Default: 50%.
-
-**Output table**  _("Vehicle 50% deduction — 100% requires mileage log + VAT-26 form")_
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Field | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | TOYOTA LEASING POLSKA | -2,200.00 | -1,788.62 | -205.69 | 23% (50%) | K_40 | Y | Q3 | "Vehicle 50% deduction — 100% requires mileage log + VAT-26 form" |
-
-### 5.1 Standard rate 23% (Art. 41 ust. 1)
-
-- **Standard rate rule** — Default rate. Sales → K_10/K_11. Purchases → K_40.  _(Art. 41 ust. 1)_
-
-### 5.2 Reduced rate 8% (Art. 41 ust. 2, Annex 3)
-
-- **Reduced rate 8% rule** — Food (certain categories), restaurant/catering services, passenger transport, construction/renovation of residential buildings (social housing). Sales → K_12/K_13.  _(Art. 41 ust. 2, Annex 3)_
-
-### 5.3 Reduced rate 5% (Art. 41 ust. 2a, Annex 10)
-
-- **Reduced rate 5% rule** — Basic foodstuffs (bread, milk, meat, vegetables, fruit), books, periodicals, certain hygiene products. Sales → K_14/K_15.  _(Art. 41 ust. 2a, Annex 10)_
-
-### 5.4 Zero rate (Art. 41 ust. 4-11)
-
-- **Zero rate rule** — Exports → K_18. Intra-EU B2B goods (WDT) → K_17 (requires VIES-verified VAT number, transport proof). Intra-EU B2B services → K_19.  _(Art. 41 ust. 4-11)_
-
-### 5.5 Exempt without credit (Art. 43)
-
-- **Exempt without credit rule** — Financial services (pkt 38-41), insurance (pkt 37), medical (pkt 18-19), education (pkt 26-29), residential rent (pkt 36), postal universal service. Excluded from JPK_V7 output boxes. If significant → **R-PL-4 refuses**.  _(Art. 43)_
-
-### 5.6 Reverse charge — EU services (Art. 28b)
-
-- **Reverse charge EU services rule** — EU supplier invoices at 0%: net → K_31, output VAT → K_32, input VAT → K_41.  _(Art. 28b)_
-
-### 5.7 Reverse charge — EU goods (WNT, Art. 9)
-
-- **Reverse charge EU goods rule** — Physical goods from EU: net → K_23, output VAT → K_24, input VAT → K_41.  _(Art. 9)_
-
-### 5.8 Reverse charge — non-EU services (import usług, Art. 28b)
-
-- **Reverse charge non-EU services rule** — Services from outside EU: net → K_27, output VAT → K_28, input VAT → K_42.  _(Art. 28b)_
-
-### 5.9 Import of goods
-
-- **Import of goods rule** — Goods from non-EU: import VAT on customs declaration or via simplified procedure. Net → K_25, output VAT → K_26, input VAT → K_42.
-
-### 5.10 Blocked input VAT (Art. 88)
-
-- **Blocked input VAT rules** — - Restaurant services (usługi gastronomiczne) — fully blocked Art. 88 ust. 1 pkt 4. Catering (usługi cateringowe) IS deductible — important distinction. - Accommodation services (usługi hotelowe) — blocked Art. 88 ust. 1 pkt 4. Exception: if resold or part of tourism package. - Passenger vehicles: 50% default (Art. 86a); 100% requires mileage log + VAT-26 form. - Fuel for 50%-deduction vehicles: 50% deductible. - Private use: fully blocked.  _(Art. 88; Art. 86a)_
-
-### 5.11 Split payment mechanism (MPP, Art. 108a)
-
-- **Split payment mechanism rule** — Mandatory for invoices ≥ PLN 15,000 gross covering goods/services in Annex 15 (electronics, steel, fuel, construction, etc.). Payment must be split: net to supplier's regular account, VAT to supplier's VAT account. Non-compliance risks: loss of input VAT deduction, 30% sanction, joint liability.  _(Art. 108a)_
-
-### 5.12 White list verification (Art. 96b)
-
-- **White list verification rule** — For payments > PLN 15,000 to VAT-registered suppliers: verify supplier's bank account is on the white list (wykaz podatników VAT). Payment to an unlisted account → input VAT deduction denied unless notified to tax office within 7 days (ZAW-NR form).  _(Art. 96b)_
-
-### 5.13 GTU codes (ewidencja section)
-
-- **GTU codes rule** — Sales of specific goods/services must be tagged with GTU codes (GTU_01–GTU_13) in the JPK_V7 ewidencja. For IT consultants, GTU_12 (intangible services) is the most common. GTU codes do not appear on the deklaracja section — only in ewidencja.
-
-### 5.14 Sales — cross-border B2C
-
-- **Cross-border B2C rule** — EU consumers above €10,000 threshold → **R-EU-5 (OSS refusal)**. Below threshold → Polish VAT.  _(R-EU-5)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — *Pattern:* Orlen, BP PL, Shell PL, Circle K PL. *Default:* 50% recovery (passenger car default). *Question:* "Is this a passenger car (50%) or commercial vehicle (100%)? Do you keep a mileage log and have VAT-26 filed?"
-
-### 6.2 Restaurant vs catering
-
-- **Restaurant vs catering** — *Pattern:* any restaurant name. *Default:* block. *Question:* "Was this eaten on premises (restaurant — blocked) or delivered catering for a business meeting (deductible)?"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing entities** — *Default:* non-EU reverse charge K_27/K_28. *Question:* "Check invoice for legal entity name and country."
-
-### 6.4 Round-number owner transfers
-
-- **Round-number owner transfers** — *Default:* exclude as owner injection. *Question:* "Customer payment, capital injection, or loan?"
-
-### 6.5 Incoming from individuals
-
-- **Incoming from individuals** — *Default:* domestic B2C at 23%, K_10/K_11. *Question:* "Sale? Country?"
-
-### 6.6 Foreign counterparty incoming
-
-- **Foreign counterparty incoming** — *Default:* domestic 23%. *Question:* "B2B with VAT number or B2C? Country?"
-
-### 6.7 Large purchases (split payment check)
-
-- **Large purchases (split payment check)** — *Pattern:* invoice ≥ PLN 15,000 gross. *Default:* verify Annex 15, white list, and MPP compliance. *Question:* "Was this paid via split payment? Is the supplier on the white list?"
-
-### 6.8 Mixed-use phone/internet
-
-- **Mixed-use phone/internet** — *Default:* 0% if mixed. *Question:* "Dedicated business line or mixed? Business percentage?"
-
-### 6.9 Outgoing to individuals
-
-- **Outgoing to individuals** — *Default:* exclude as drawings. *Question:* "Contractor with invoice, wages, refund, or personal?"
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — *Default:* exclude. *Question:* "What was the cash used for?"
-
-### 6.11 Rent payments
-
-- **Rent payments** — *Default:* no VAT (residential). *Question:* "Commercial? Does landlord charge VAT?"
-
-### 6.12 Foreign hotel
-
-- **Foreign hotel** — *Default:* exclude from input VAT. *Question:* "Business trip?"
-
-### 6.13 KSeF invoice verification
-
-- **KSeF invoice verification** — *Pattern:* any purchase invoice from a Polish supplier. *Default:* accept. *Question:* "Is this invoice available in KSeF? (If KSeF is mandatory for this supplier and the invoice is not in KSeF, input VAT may be at risk.)"
-
-## Section 7 — Excel working paper template (Poland-specific)
-
-The base specification is in `vat-workflow-base` Section 3. This section provides the Poland-specific overlay.
-
-### Sheet "Transactions"
-
-Columns A–L per the base. Column H ("JPK field") accepts valid K_ codes from Section 1. Additional column M for GTU code (GTU_01–GTU_13, sales only). Additional column N for split payment flag (MPP: Y/N).
-
-### Sheet "Box Summary"
-
-```
-Output:
-| K_10 | Domestic sales 23% net | =SUMIFS(...) |
-| K_11 | Output VAT 23% | =C[K_10]*0.23 |
-| K_12 | Domestic sales 8% net | =SUMIFS(...) |
-| K_13 | Output VAT 8% | =C[K_12]*0.08 |
-| K_14 | Domestic sales 5% net | =SUMIFS(...) |
-| K_15 | Output VAT 5% | =C[K_14]*0.05 |
-| K_17 | EU goods supplies (WDT) net | =SUMIFS(...) |
-| K_18 | Exports net | =SUMIFS(...) |
-| K_19 | EU services supplies net | =SUMIFS(...) |
-| K_23 | EU goods acquisitions (WNT) net | =SUMIFS(...) |
-| K_24 | Output VAT WNT | =C[K_23]*0.23 |
-| K_27 | Import of services net | =SUMIFS(...) |
-| K_28 | Output VAT import of services | =C[K_27]*0.23 |
-| K_31 | EU services acquisitions net | =SUMIFS(...) |
-| K_32 | Output VAT EU services | =C[K_31]*0.23 |
-| K_34 | Total output VAT | =SUM of output VAT fields |
-
-Input:
-| K_40 | Input VAT domestic | =SUMIFS(...) |
-| K_41 | Input VAT EU acquisitions | =SUMIFS(...) |
-| K_42 | Input VAT imports | =SUMIFS(...) |
-| K_45 | Total input VAT | =K_40+K_41+K_42+K_43+K_44 |
-
-Bottom line:
-| K_46 | Excess input | =IF(K_45>K_34, K_45-K_34, 0) |
-| K_47 | Excess output (VAT payable) | =IF(K_34>K_45, K_34-K_45, 0) |
-| K_50 | VAT payable to urzad skarbowy | =K_47 adjusted for carry-forward |
+# Poland VAT return (2026)
+
+Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
+
+This skill covers Polish VAT for a business registered in Poland: when to register, the rates, the monthly or quarterly JPK_V7 file, KSeF e-invoicing, split payment and the white list. It links to the other Poland skills and does not repeat them:
+
+- [poland-einvoice](poland-einvoice.md): the FA(3) structured invoice, KSeF access, offline modes.
+- [pl-income-tax](pl-income-tax.md) and [pl-cit-corporate-tax](pl-cit-corporate-tax.md): income tax of sole traders and companies, including the cost rules tied to the white list.
+- [pl-cross-border](pl-cross-border.md): income tax for people moving in or out of Poland.
+- EU rules on place of supply, intra-EU supplies and OSS are in [eu-vat-directive](../eu/eu-vat-directive.md); the general return workflow is in [vat-workflow-base](../../foundation/vat-workflow-base.md).
+
+**Which text of the law.** VAT Act (ustawa z dnia 11 marca 2004 r. o podatku od towarów i usług), consolidated text Dz.U. 2026 poz. 1263, the law as at 26 August 2026. The next amendment, Dz.U. 2026 poz. 1270, takes effect on 1 January 2027 and is not covered here. Tax Ordinance, Dz.U. 2026 poz. 622.
+
+## Who this applies to
+
+- **Taxable persons.** Anyone carrying on a business independently, whatever its purpose or result (VAT Act art. 15). Taxable supplies are supplies of goods and services for consideration in Poland, exports, imports, intra-EU acquisitions and intra-EU supplies (art. 5).
+- **Registration.** A business must file the VAT-R registration form with its tax office before its first taxable supply (art. 96 ust. 1). A business that only makes exempt supplies, or uses the small-business exemption, may register but need not (art. 96 ust. 3).
+- **Small-business exemption (zwolnienie podmiotowe).** A business seated in Poland whose sales, without VAT, did not exceed PLN 240,000 in the previous year and do not exceed it in the current year is exempt (art. 113 ust. 1, amended by Dz.U. 2025 poz. 896 from 1 January 2026). A business that starts during the year uses the limit in proportion to the part of the year it trades (art. 113 ust. 9). The exemption is lost from the sale that crosses the limit (art. 113 ust. 5 and 10).
+- **Who cannot use the exemption.** Sellers of goods in Annex 12, most excise goods, new buildings, building land, new means of transport, certain goods sold at a distance online, and car parts; and providers of legal services, advisory services (except agricultural advice), jewellery services and debt collection, including factoring (art. 113 ust. 13). They register from the first sale.
+- **EU businesses (SME scheme).** A business seated in another EU state can be exempt in Poland if its EU-wide turnover is not over EUR 100,000 and its Polish sales are within PLN 240,000, using an EX number issued by its home state (art. 113a). A Polish business can use the other states' exemptions on the same EUR 100,000 test, after a prior notice to its Polish tax office (art. 113b).
+- **Small taxpayer (mały podatnik).** A business whose sales including VAT were not over EUR 2,000,000 in the previous year (art. 2 pkt 25). For 2026 this is PLN 8,517,000 at the NBP rate of 1 October 2025 (4.2586), rounded to PLN 1,000. A small taxpayer may file quarterly and may elect the cash method (art. 21, art. 99 ust. 2-3).
+- **Out of scope.** VAT groups, the margin schemes, flat-rate farmers, fiscal representatives and OSS or IOSS returns.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 23% (the base rate of 22% in art. 41 ust. 1 is raised by art. 146ef while defence spending is above 3% of GDP; no end has been announced) | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 41 ust. 1, art. 146ef ust. 1) |
+| Reduced rate, Annex 3 goods and services | 8% | 2026 | same, art. 41 ust. 2, art. 146ef ust. 1 pkt 2 |
+| Reduced rate, restaurant and catering services (PKWiU 56), with exceptions such as alcohol | 8% | 2026 | Minister of Finance regulation of 9 December 2023 on reduced rates, as summarised at https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity |
+| Reduced rate, Annex 10 goods (basic foods, books, some hygiene goods) | 5% | 2026 | same, art. 41 ust. 2a |
+| Intra-EU supply of goods; export of goods | 0% (export needs proof of exit before the return deadline) | 2026 | same, art. 41 ust. 3, 4, 6 |
+| Small-business exemption: sales without VAT, previous and current year | PLN 240,000 | 2026 | same, art. 113 ust. 1; https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity |
+| Businesses with 2025 sales over PLN 200,000 and up to PLN 240,000 | may use the exemption in 2026 | 2026 | Dz.U. 2025 poz. 896 art. 2, quoted in the notice to Dz.U. 2026 poz. 1263 |
+| EU SME scheme: EU-wide turnover cap | EUR 100,000 | 2026 | VAT Act art. 113a ust. 1, art. 113b ust. 1 |
+| Small taxpayer: previous-year sales including VAT | EUR 2,000,000 = PLN 8,517,000 | 2026 | VAT Act art. 2 pkt 25; https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json |
+| Split payment (MPP) compulsory: Annex 15 goods or services on an invoice with a gross total over | PLN 15,000 | 2026 | VAT Act art. 108a ust. 1a |
+| Payment between businesses must go through a bank account if one transaction is over | PLN 15,000 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf (Business Law art. 19) |
+| Input VAT on cars used also privately | 50% | 2026 | VAT Act art. 86a ust. 1 |
+| KSeF: last month a business may issue paper or PDF invoices if 2024 sales with VAT were up to PLN 200,000,000 | March 2026 | 2026 | VAT Act art. 145l |
+| KSeF: invoices outside KSeF still allowed if invoices issued in the month total PLN 10,000 or less with VAT | to 31 December 2026 | 2026 | VAT Act art. 145m |
+| Refund of excess input VAT | 40 days from filing (25 days if the conditions of art. 87 ust. 6 are met) | 2026 | VAT Act art. 87 ust. 2, 6 |
+| Late payment interest | 10.50% a year from 5 March 2026; reduced 5.25%; higher 15.75% | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf; Tax Ordinance art. 56 § 1; https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml |
+
+## The taxable base
+
+- **Output VAT.** The base is everything the seller receives for the supply, without the VAT itself (art. 29a). The tax point is generally the supply of the goods or the completion of the service (art. 19a). A small taxpayer on the cash method pays VAT when paid, and for buyers who are not active VAT payers no later than the 180th day after the supply (art. 21).
+- **Input VAT.** VAT on purchases used for taxed sales can be deducted (art. 86). Not deductible: hotel and restaurant services, except some packaged ones; purchases from a business that does not exist; and invoices for supplies that did not take place or show false amounts (art. 88). For cars used also privately only 50% is deductible, including fuel and running costs; 100% needs exclusive business use, a mileage log and a VAT-26 notice (art. 86a).
+- **Exempt supplies.** Financial, insurance, health, education and most residential rental services are exempt without the right to deduct (art. 43). A business with mixed supplies deducts by the turnover ratio (art. 90).
+- **Reverse charge.** The Polish buyer accounts for the VAT when:
+  - it buys services from a foreign business under the general B2B rule (import of services, art. 17 ust. 1 pkt 4, art. 28b);
+  - it acquires goods from another EU state (intra-EU acquisition, art. 9);
+  - it buys goods in Poland from a foreign business not registered here, for example gas or electricity through the network (art. 17 ust. 1 pkt 5).
+  Output and input VAT on the same purchase usually cancel out, if the buyer has full deduction.
+- **Excess input VAT** is carried forward or refunded to a Polish bank account in 40 days (art. 87 ust. 1-2).
+- **Rounding.** Tax amounts in the return are in whole złoty (Tax Ordinance art. 63).
+
+## Deadlines and filing
+
+| What | When | Rule |
+|---|---|---|
+| Registration (VAT-R) | before the first taxable supply | VAT Act art. 96 ust. 1 |
+| Monthly JPK_V7M (return and VAT records in one file) and payment | 25th of the following month | art. 99 ust. 1, 11c; art. 103 ust. 1; art. 109 ust. 3b |
+| Quarterly JPK_V7K and payment (small taxpayers on notice, or on the cash method) | return and payment by the 25th after the quarter; the records for months 1 and 2 by the 25th of the next month | art. 99 ust. 2-3, art. 103 ust. 2, art. 109 ust. 3c |
+| Notice to switch to quarterly filing | by the 25th of the second month of the first quarter | art. 99 ust. 3 |
+| Correction of a JPK file the business finds wrong | within 14 days of finding the error | art. 109 ust. 3e |
+| Response to a tax office notice of errors in the JPK file | within 14 days of delivery | art. 109 ust. 3g |
+| KSeF structured invoices, businesses with 2024 sales over PLN 200,000,000 | from 1 February 2026 | art. 106ga, art. 145l |
+| KSeF structured invoices, all other Polish businesses | from 1 April 2026; those issuing PLN 10,000 a month or less may stay outside KSeF until 31 December 2026 | art. 145l, art. 145m |
+| Invoices from cash registers and receipts treated as invoices | allowed outside KSeF until 31 December 2026 | art. 145n |
+| Invoice deadline | by the 15th of the month after the supply | art. 106i ust. 1 |
+
+Quarterly filing is not open to a newly registered business for its first 12 months, nor to anyone who supplied over PLN 50,000 a month of Annex 15 goods in the quarter or the previous four quarters, imported goods under the simplified procedure of art. 33a in the quarter, or failed to accept card or other electronic payment where Business Law art. 19a requires it (art. 99 ust. 3a). KSeF does not apply to invoices issued to consumers, by businesses with no seat or fixed establishment in Poland, or by EU businesses using the SME scheme (art. 106ga ust. 2). All files go through e-Urząd Skarbowy or interface software; there is no paper return (art. 99 ust. 11b).
+
+## Penalties and interest
+
+- **Additional VAT liability.** If an audit finds VAT understated or a refund overstated, the tax office sets an additional liability of up to 30% of the difference (art. 112b ust. 1). It is up to 20% if the business files a correction and pays after a tax audit, and up to 15% after a customs and tax audit (art. 112b ust. 2, 2a). It is 100% of the input VAT on a fake or false invoice used knowingly (art. 112c). It does not apply if the business corrects and pays with interest before an audit starts, or to arithmetic errors and VAT booked in the wrong period before an audit (art. 112b ust. 3).
+- **Split payment.** Paying an Annex 15 invoice over PLN 15,000 without split payment costs an additional liability of 30% of the VAT on that invoice, unless the supplier paid the full VAT (art. 108a ust. 7-8). The buyer also cannot book the cost for income tax (PIT Act art. 22p ust. 1 pkt 3; CIT Act art. 15d).
+- **White list.** Paying an invoice over PLN 15,000 to an account not on the VAT payers list (wykaz podatników VAT) on the day the transfer is ordered makes the buyer jointly liable for the seller's unpaid VAT on that supply (Tax Ordinance art. 117ba). The buyer escapes this by paying through split payment or notifying its tax office within 7 days of ordering the transfer (art. 117ba § 3 pkt 2 and 4). The same payment is also not a deductible cost (PIT Act art. 22p ust. 1 pkt 2).
+- **JPK errors.** The tax office may charge PLN 500 for each error the business fails to correct or explain within 14 days of a tax office notice (art. 109 ust. 3h). Not charged to an individual who is liable under the Fiscal Penal Code for the same act.
+- **KSeF.** Fines of up to 100% of the VAT on an invoice issued outside KSeF, or up to 18.7% of the total on an invoice without VAT, apply only from 1 January 2027 (art. 106ni).
+- **Late payment interest.** 200% of the NBP lombard rate plus 2 points, at least 8% (Tax Ordinance art. 56 § 1): 10.50% a year from 5 March 2026, when the lombard rate fell to 4.25% (M.P. 2026 poz. 269). It is reduced to 5.25% if a correction is filed within 6 months of the deadline and the tax is paid within 7 days (Tax Ordinance art. 56a). It rises to 15.75% on VAT understatements found in an audit, or corrected after one starts, that exceed 25% of the tax due and five times the minimum wage (art. 56b).
+- **Fiscal Penal Code.** A false return or failure to file that puts tax at risk can lead to a fine of up to 720 daily rates or prison (art. 54, 56). Persistent late payment is a petty offence (art. 57). Not issuing an invoice, or issuing a faulty one, carries a fine of up to 180 daily rates (art. 62). A valid correction (art. 16a) removes liability for the return itself.
+
+## Cross-border points
+
+- **Services from abroad.** B2B services from a foreign supplier are taxed where the buyer is established (art. 28b) and reported by the Polish buyer under the reverse charge. They appear in the JPK file as import of services, as output and input tax.
+- **Goods within the EU.** Intra-EU supplies are 0% if the buyer has a valid EU VAT number checked in VIES and the seller holds proof of transport (art. 41 ust. 3, art. 42). Intra-EU acquisitions are taxed by the Polish buyer (art. 9). Recapitulative statements and OSS are covered in [eu-vat-directive](../eu/eu-vat-directive.md).
+- **Imports.** VAT on imports is paid to customs, or settled in the JPK file under the simplified procedure of art. 33a.
+- **Foreign businesses.** A business without a seat or fixed establishment in Poland registers before its first taxable supply in Poland, does not issue KSeF invoices (art. 106ga ust. 2 pkt 1) and is refunded under its own rules. EU businesses can use the SME scheme above.
+- **From 1 January 2027.** Dz.U. 2026 poz. 1270 changes the reverse charge on supplies exempt under art. 43 and art. 113a, and the rules on deregistration. Not covered here.
+
+## Worked examples
+
+### Example 1: a company's monthly JPK_V7M
+
+Alfa sp. z o.o. files monthly. In March 2026 it sells goods for PLN 100,000 net at 23% and catering for PLN 20,000 net at 8%. It buys software from an Irish supplier for PLN 5,000 (reverse charge, 23%). Domestic purchase invoices show input VAT of PLN 9,200. Its director's car is also used privately; the fuel and service invoices show VAT of PLN 1,000, of which 50% is deductible.
+
+Output VAT: 23,000 + 1,600 + 1,150 (reverse charge) = PLN 25,750. Input VAT: 1,150 (reverse charge) + 9,200 + 500 (car) = PLN 10,850. Alfa pays PLN 14,900 by 25 April 2026, with the JPK_V7M for March.
+
+```oa-check
+name: Alfa sp. z o.o., JPK_V7M March 2026
+inputs:
+  sales_23: 100000
+  sales_8: 20000
+  saas_eu: 5000
+  domestic_input: 9200
+  car_vat: 1000
+steps:
+  - out_23: sales_23 * 0.23
+  - out_8: sales_8 * 0.08
+  - rc: saas_eu * 0.23
+  - car_input: car_vat * 0.5
+  - output_vat: out_23 + out_8 + rc
+  - input_vat: rc + domestic_input + car_input
+  - payable: output_vat - input_vat
+expected:
+  output_vat: 25750
+  input_vat: 10850
+  payable: 14900
 ```
 
-### Mandatory recalc step
+### Example 2: a new sole trader crosses the pro-rata exemption limit
 
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/poland-vat-<period>-working-paper.xlsx
+Ewa starts a graphic design business on 1 April 2026 and uses the small-business exemption. Design is not on the excluded list. Her limit for 2026 is PLN 240,000 in proportion to the 275 days from 1 April to 31 December: PLN 180,821.92. By mid-November her sales total PLN 178,000. Her next invoice, for PLN 6,000 net to a business client, takes her to PLN 184,000. The exemption ends with that invoice (art. 113 ust. 10). She charges 23% on it and on the PLN 20,000 she invoices for the rest of the year, and registers as an active VAT payer.
+
+VAT due: 6,000 x 23% = PLN 1,380, plus 20,000 x 23% = PLN 4,600, total PLN 5,980. As a new registrant she files monthly for her first 12 months (art. 99 ust. 3a pkt 1).
+
+```oa-check
+name: Ewa, start 1 April 2026, exemption lost mid-November
+inputs:
+  annual_limit: 240000
+  days_trading: 275
+  days_in_year: 365
+  sales_before: 178000
+  crossing_sale: 6000
+  later_sales: 20000
+steps:
+  - limit: round(annual_limit * days_trading / days_in_year, 2)
+  - total_after: sales_before + crossing_sale
+  - over: total_after - limit
+  - vat_crossing: crossing_sale * 0.23
+  - vat_later: later_sales * 0.23
+  - vat_due: vat_crossing + vat_later
+expected:
+  limit: 180821.92
+  total_after: 184000
+  over: 3178.08
+  vat_due: 5980
 ```
 
-## Section 8 — Poland bank statement reading guide
+## Ask the client first
 
-**CSV format conventions.** PKO BP exports semicolons with DD.MM.YYYY dates. mBank uses comma-separated with ISO dates. ING PL uses semicolons. Common columns: Data operacji, Opis, Kwota, Saldo.
+1. What were sales without VAT in 2025, and to date in 2026? When did the business start? (Exemption, small-taxpayer status.)
+2. What does the business sell? Anything on the art. 113 ust. 13 list, in Annex 15, or at 8% or 5%?
+3. Monthly or quarterly filing, cash method, and since when? Was the business registered in the last 12 months?
+4. Are invoices issued in KSeF, and from what date? What were 2024 sales including VAT? How much is invoiced each month outside KSeF?
+5. Any purchases or sales with other EU states or outside the EU? Any foreign software or advertising suppliers?
+6. Cars: used only for business with a mileage log and VAT-26 notice, or also privately? Payments over PLN 15,000: by split payment, and to accounts on the white list?
 
-**Polish language variants.** Czynsz (rent), wynagrodzenie/pensja (salary), odsetki (interest), przelew (transfer), wypłata (withdrawal), wpłata (deposit), faktura (invoice). Treat as English equivalents.
+## Sources
 
-**Internal transfers.** Labelled "przelew własny", "transfer wewnętrzny". Always exclude.
+| Source | URL | Read on |
+|---|---|---|
+| VAT Act, consolidated text Dz.U. 2026 poz. 1263, with the transitional provisions of Dz.U. 2025 poz. 896 and 1203 quoted in the notice (art. 2 pkt 25, 5, 9, 15, 17, 19a, 21, 28b, 29a, 41, 43, 86, 86a, 87, 88, 96, 99, 103, 106ga, 106i, 106ni, 108a, 109, 112b, 112c, 113, 113a, 113b, 145l-145n, 146ef) | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 2026-10-23 |
+| Amending act Dz.U. 2026 poz. 1270, in force 1 January 2027 (not applied) | https://api.sejm.gov.pl/eli/acts/DU/2026/1270/text.pdf | 2026-10-23 |
+| Tax Ordinance, Dz.U. 2026 poz. 622 (art. 56, 56a, 56b, 63, 117ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-10-23 |
+| Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
+| Business Law (Prawo przedsiębiorców), Dz.U. 2025 poz. 1480 (art. 19) | https://api.sejm.gov.pl/eli/acts/DU/2025/1480/text.pdf | 2026-10-23 |
+| PIT Act, Dz.U. 2026 poz. 592 (art. 22p) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-10-23 |
+| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16a, 54, 56, 57, 62) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
+| Ministry of Finance, VAT rates and limits (PLN 240,000 exemption) | https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity | 2026-10-23 |
+| Ministry of Finance, KSeF portal | https://ksef.podatki.gov.pl/ | 2026-10-23 |
+| NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-10-23 |
+| NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
 
-**Owner draws.** Jednoosobowa działalność gospodarcza (sole trader) transfers to personal account are drawings — exclude.
-
-**Refunds.** Identify by "zwrot", "korekta", "nota korygująca". Book as negative in same field.
-
-**Foreign currency.** Convert to PLN at NBP (National Bank of Poland) mid-rate on the business day preceding the transaction. Art. 31a ust. 1.
-
-**IBAN prefix.** PL = Poland. DE, IE, LU, NL, FR = EU. US, GB, CH = non-EU.
-
-**White list check.** For all domestic purchase invoices > PLN 15,000: verify supplier NIP and bank account at https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka before processing.
-
-## Section 9 — Onboarding fallback (only when inference fails)
-
-### 9.1 Entity type
-
-- **Entity type onboarding** — *Inference rule:* JDG (jednoosobowa działalność gospodarcza) vs sp. z o.o. vs S.A. *Fallback:* "Are you JDG (sole trader), spółka z o.o., or other?"
-
-### 9.2 VAT registration status
-
-- **VAT registration status onboarding** — *Inference rule:* if asking for JPK_V7, they are czynny podatnik VAT. *Fallback:* "Are you czynny podatnik VAT (active) or zwolniony (exempt)?"
-
-### 9.3 NIP
-
-- **NIP onboarding** — *Fallback:* "What is your NIP? (10 digits, PL prefix for EU VIES)"
-
-### 9.4 Filing period
-
-- **Filing period onboarding** — *Inference rule:* transaction dates. *Fallback:* "Monthly (JPK_V7M) or quarterly (JPK_V7K)? Which period?"
-
-### 9.5 Industry
-
-- **Industry onboarding** — *Inference rule:* counterparty mix. *Fallback:* "What does the business do?"
-
-### 9.6 Employees
-
-- **Employees onboarding** — *Inference rule:* ZUS, wynagrodzenie outgoing. *Fallback:* "Do you have employees?"
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies onboarding** — *Fallback:* "Do you make VAT-exempt sales?" *If yes → R-PL-4 may fire.*
-
-### 9.8 Credit brought forward
-
-- **Credit brought forward onboarding** — *Always ask:* "Do you have excess credit (nadwyżka) from the previous period? (K_49)"
-
-### 9.9 Cross-border customers
-
-- **Cross-border customers onboarding** — *Fallback:* "Customers outside Poland? EU or non-EU? B2B or B2C?"
-
-### 9.10 Vehicle type and mileage log
-
-- **Vehicle type and mileage log onboarding** — *Fallback:* "Do you use a vehicle for business? Passenger car or commercial? Do you keep a mileage log (ewidencja przebiegu pojazdu) and have VAT-26 filed?"
-
-## Section 10 — Reference material
-
-### Validation status
-
-v2.0, rewritten April 2026. Awaiting validation by doradca podatkowy in Poland.
-
-### Sources
-
-1. Ustawa o VAT (11 March 2004, as amended) — https://isap.sejm.gov.pl
-2. Ordynacja podatkowa (Tax Ordinance)
-3. Rozporządzenie w sprawie JPK_V7M/V7K
-4. KAS guidance — https://www.podatki.gov.pl
-5. White list — https://www.podatki.gov.pl/wykaz-podatnikow-vat-wyszukiwarka
-6. Council Directive 2006/112/EC — via eu-vat-directive companion skill
-7. VIES — https://ec.europa.eu/taxation_customs/vies/
-8. NBP exchange rates — https://www.nbp.pl
-
-### Known gaps
-
-1. KSeF mandatory e-invoicing timeline is evolving — verify current mandatory dates.
-2. Split payment (MPP) Annex 15 list may be updated — verify annually.
-3. Restaurant vs catering distinction is a common audit issue — the skill defaults to block.
-4. Vehicle 50%/100% distinction requires supporting documentation that cannot be verified from bank data.
-5. GTU codes cover sales only — a future version should add detailed GTU classification guidance.
-6. White list verification is flagged but cannot be performed programmatically — reviewer must verify.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to three-tier OpenAccountants architecture.
-- **v1.0 (April 2026):** Initial draft. Standalone monolithic document.
-
-### Self-check (v2.0)
-
-1. Quick reference with JPK field table and conservative defaults: yes (Section 1).
-2. Supplier library as lookup tables: yes (Section 3, 15 sub-tables).
-3. Worked examples: yes (Section 4, 6 examples).
-4. Tier 1 rules compressed: yes (Section 5, 14 rules).
-5. Tier 2 catalogue: yes (Section 6, 13 items).
-6. Excel template with recalc: yes (Section 7).
-7. Onboarding as fallback: yes (Section 9, 10 items).
-8. All 8 Poland-specific refusals: yes (R-PL-1 through R-PL-8).
-9. Reference material at bottom: yes (Section 10).
-10. Three rates (23%/8%/5%) mapped to K_ fields: yes.
-11. Restaurant vs catering distinction: yes (Section 3.7, Example 3, Section 5.10).
-12. Split payment (MPP) and white list documented: yes (Sections 5.11-5.12, 3.15).
-13. Vehicle 50% default documented: yes (Section 5.10, Example 6).
-14. GTU codes listed: yes (Section 1, Section 5.13).
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.
