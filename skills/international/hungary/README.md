@@ -18,7 +18,7 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 | VAT | hungary-vat-return, hu-vat-return | source-cited draft |
 | SC, social contributions | hu-social-contributions | source-cited draft |
 | PR, payroll withholding | (missing) | |
-| TP, transfer pricing | (missing) | |
+| TP, transfer pricing | hu-transfer-pricing | source-cited draft |
 | XB, cross-border | (missing) | |
 
 hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accounting packs milestone.
@@ -27,3 +27,4 @@ hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accountin
 
 - Nemzeti Adó- és Vámhivatal, information sheets 2026: https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026 (read 2026-10-22)
 - Tao. tv., Act LXXXI of 1996 (corporate tax): https://njt.hu/jogszabaly/1996-81-00-00 (refused connections on 2026-10-22; consolidated text read at https://net.jogtar.hu/jogszabaly?docid=99600081.tv)
+- Transfer pricing decree 45/2025. (XII. 23.) NGM rendelet: https://njt.jog.gov.hu/jogszabaly/2025-45-20-2X (read 2026-10-23; njt.hu refused connections, the same Nemzeti Jogszabálytár answered at njt.jog.gov.hu)

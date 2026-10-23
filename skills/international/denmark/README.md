@@ -19,7 +19,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 | VAT | dk-vat-return, denmark-vat-return | source-cited draft |
 | SC, social contributions | (missing) | |
 | PR, payroll withholding | (missing) | |
-| TP, transfer pricing | (missing) | |
+| TP, transfer pricing | dk-transfer-pricing | source-cited draft |
 | XB, cross-border | dk-cross-border | source-cited draft |
 
 ## Official sources
@@ -31,4 +31,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Aktieavancebeskatningsloven (LBK nr. 849 of 21 September 2026), §§ 38-40 exit tax: https://www.retsinformation.dk/eli/lta/2026/849 (read 2026-10-23)
 - Den juridiske vejledning 2026-2, C.F.6 Forskerskatteordningen: https://info.skat.dk/data.aspx?oid=1977257 (read 2026-10-23)
 - Lov nr. 1691 of 30 December 2024, § 6 (KSL § 48 E researcher-scheme pay base from income year 2026): https://www.retsinformation.dk/eli/lta/2024/1691 (read 2026-10-23)
+- Ligningsloven (LBK nr. 1500 of 24 November 2025), § 2: https://www.retsinformation.dk/eli/lta/2025/1500 (read 2026-10-23)
+- Lov nr. 750 of 20 June 2025 (transfer pricing documentation relief): https://www.retsinformation.dk/eli/lta/2025/750 (read 2026-10-23)
+- BEK nr. 883 of 24 June 2025 (transfer pricing documentation): https://www.retsinformation.dk/eli/lta/2025/883 (read 2026-10-23)
 - Skattestyrelsen: https://skat.dk
