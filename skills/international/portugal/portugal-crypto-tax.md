@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > Source-cited draft: not reviewed by an accountant.
 
-This skill computes the IRS of a Portuguese resident individual on crypto: gains on sale, rewards, mining and trading as a business, and the charge on leaving Portugal. Crypto gains have been taxable since 1 January 2023 (Lei 24-D/2022). Decreto-Lei 97/2026, de 20 de maio, renumbered CIRS art. 10. The crypto rules did not change in substance: the 365-day exclusion moved from n.º 19 to n.º 22, swaps from n.º 20 to n.º 23, the carve-out from n.º 21 to n.º 24, and the exit charge from n.º 22 to n.º 25. Older material citing art. 10(17), (19) or (22) uses the old numbers.
+This skill computes the IRS of a Portuguese resident individual on crypto: gains on sale, rewards, mining and trading as a business, and the charge on leaving Portugal. Crypto gains have been taxable since 1 January 2023 (Lei 24-D/2022). Decreto-Lei 97/2026, de 20 de maio, renumbered CIRS art. 10 with effect from 1 January 2026 (DL 97/2026 art. 18(2)). The crypto rules did not change in substance: the 365-day exclusion moved from n.º 19 to n.º 22, swaps from n.º 20 to n.º 23, the carve-out from n.º 21 to n.º 24, and the exit charge from n.º 22 to n.º 25. Older material citing art. 10(17), (19) or (22) uses the old numbers.
 
 Sibling skills, which this one links to and does not repeat:
 
@@ -54,7 +54,7 @@ Every figure below was read on the Portal das Finanças (AT's consolidated CIRS 
 | Crypto held 365 days or more | Gains and losses excluded | 2026 | CIRS art. 10(22), wording of DL 97/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx |
 | Crypto-for-crypto swap (held under 365 days) | No tax; the crypto received takes the acquisition value of the crypto given | 2026 | CIRS art. 10(23) |
 | Carve-out | Exclusion and swap deferral do not apply when the taxpayer or the payer is not resident in the EU/EEA or in a state with a tax treaty or exchange-of-information agreement with Portugal | 2026 | CIRS art. 10(24) |
-| Loss of residence | Treated as a sale; gain = market value on the date residence ends less acquisition value and acquisition costs | 2026 | CIRS art. 10(25), art. 43(12): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
+| Loss of residence | Treated as a sale; income = the positive difference between market value on the date residence ends and acquisition value plus acquisition costs | 2026 | CIRS art. 10(25), art. 43(12): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
 | Rewards paid in fiat (Category E) | 28% autonomous rate; no withholding | 2026 | CIRS art. 5(2)(u), art. 72(1)(d), art. 101-B(5) |
 | Order of disposal | FIFO, separately at each custodian or crypto service provider | 2026 | CIRS art. 43(8)(g) and (9) |
 | Losses with a counterparty in a listed low-tax regime | Do not count | 2026 | CIRS art. 43(7) |
@@ -100,7 +100,7 @@ Keep, for each unit: acquisition date and price, custodian, sale date and price,
 
 ## Cross-border points
 
-- **Exit charge.** Losing Portuguese residence is treated as a sale of crypto held as a capital asset (art. 10(25)). The gain is market value on the date residence ends less acquisition value and costs (art. 43(12)). Units held 365 days or more on that date stay excluded (art. 10(22)). The rule was added by Lei 24-D/2022 as art. 10(22); Decreto-Lei 97/2026 renumbered it n.º 25 and did not change it. Residence ends on the last day of presence (art. 16(4)), and a person who becomes resident again in the following year is resident for the whole year (art. 16(16)). See `pt-cross-border` for the residence rules. Worked example 2 shows the charge.
+- **Exit charge.** Losing Portuguese residence is treated as a sale of crypto held as a capital asset (art. 10(25)). The income is the positive difference between market value on the date residence ends and acquisition value plus acquisition costs (art. 43(12)); the valuation rule also dates from Lei 24-D/2022 (then art. 43(10), renumbered n.º 12 by Lei 31/2024). Units held 365 days or more on that date stay excluded (art. 10(22)). The rule was added by Lei 24-D/2022 as art. 10(22); Decreto-Lei 97/2026 renumbered it n.º 25 and did not change it. Residence ends on the last day of presence (art. 16(4)), and a person who becomes resident again in the following year is resident for the whole year (art. 16(16)). See `pt-cross-border` for the residence rules. Worked example 2 shows the charge.
 - **Business crypto on exit.** For Category B crypto, losing residence counts as a sale (art. 31(18)(b)).
 - **Non-cooperative counterparties.** No 365-day exclusion and no swap deferral where the taxpayer or the payer is outside the EU/EEA and outside any treaty or exchange-of-information agreement (art. 10(24)). Art. 10(24) still refers to "n.os 19 e 20"; this skill reads that as the rules now in n.º 22 and 23.
 - **Foreign exchanges.** A foreign exchange withholds no Portuguese tax. The gain is taxed in Portugal; foreign tax credit, if any, is in `pt-foreign-source-treaties`.
@@ -158,7 +158,7 @@ He sells nothing. He has no other Category G income in 2026.
 1. Loss of residence is treated as a sale (art. 10(25)).
 2. BTC: 70,000 - 60,000 - 100 = EUR 9,900, held under 365 days, so taxable (art. 43(12)).
 3. ETH: gain of EUR 10,000, held over 365 days, so excluded (art. 10(22)).
-4. Tax at 28%: 9,900 x 28% = EUR 2,772, declared in his 2026 return (Anexo G). He may opt to aggregate instead; with no other income in 2026 that test is the one in example 1.
+4. Tax at 28%: 9,900 x 28% = EUR 2,772, declared in his 2026 return (Anexo G). He may opt to aggregate instead (art. 72(13)) and should test it as in example 1: if the EUR 9,900 were his only 2026 income, the bands would give 8,342 x 12.50% + 1,558 x 15.70% = EUR 1,287.36 before deductions from the tax, far below EUR 2,772.
 5. If he becomes resident again in 2027, he is treated as resident for the whole of 2026 (art. 16(16)). Ask about plans to return before filing.
 
 ```oa-check
@@ -196,6 +196,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | CIRS art. 10, crypto gains, n.º 20 to 25 (wording of DL 97/2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx | 2026-10-23 |
+| Decreto-Lei 97/2026, art. 5 (CIRS art. 10(25) "[Anterior n.º 22.]", art. 43(12)) and art. 18(2) (effect from 1 January 2026), AT's copy of the Diário da República text | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/decreto-lei-97-2026.pdf | 2026-10-23 |
+| CIRS art. 43, wording in force until May 2026 (exit valuation as n.º 12, referring to art. 10(22)) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs43ra_202605.aspx | 2026-10-23 |
 | CIRS art. 10, wording in force until May 2026 (exit rule as n.º 22, from Lei 24-D/2022) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs10ra_202605.aspx | 2026-10-23 |
 | CIRS art. 5, crypto remuneration (n.º 2 u) and n.º 11) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs5.aspx | 2026-10-23 |
 | CIRS art. 16, residence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx | 2026-10-23 |
@@ -211,9 +213,9 @@ expected:
 | CIRS art. 25, specific deduction (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-23 |
 | RGIT art. 116 and 119, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx | 2026-10-23 |
 | LGT art. 35 and 44, interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-23 |
-| Segurança Social guide, IAS 2026 EUR 537.13 (example 1) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-23 |
+| Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
 
-Not yet confirmed: the text of Decreto-Lei 97/2026 itself (the Diário da República page did not load; the renumbering is taken from AT's consolidated CIRS, which marks each paragraph "anterior n.º"); the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
+Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
 
 <!-- openaccountants-cta-block -->
 

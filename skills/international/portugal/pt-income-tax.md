@@ -63,7 +63,7 @@ The law is the Código do IRS (CIRS). AT (Autoridade Tributária e Aduaneira) pu
 | Social security deduction in the simplified regime, coefficients (b) and (c) | Compulsory contributions only in the part above 10% of gross income | 2026 | CIRS art. 31(2) |
 | 15% expenses rule, coefficients (b) and (c) | Add back 15% of gross service income less the listed amounts (see The taxable base) | 2026 | CIRS art. 31(13) |
 | Simplified regime limit | EUR 200,000 of Category B income in the previous year | 2026 | CIRS art. 28(2) and (6): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs28.aspx |
-| IAS (social support index) | EUR 537.13 | 2026 | Segurança Social, Guia Prático, Trabalhadores Independentes (states the 2026 IAS); set by Portaria 480-A/2025/1 |
+| IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1, de 30 de dezembro, art. 2 (AT's copy of the Diário da República text): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
 | Category A specific deduction used in the 15% rule | 8.54 x IAS = EUR 4,587.09 | 2026 | CIRS art. 25(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx |
 | IRS Jovem exemption cap | 55 x IAS = EUR 29,542.15 of exempt income a year | 2026 | CIRS art. 12-B(5): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx |
 | IRS Jovem exempt share | 100% year 1; 75% years 2 to 4; 50% years 5 to 7; 25% years 8 to 10 | 2026 | CIRS art. 12-B(5) |
@@ -181,8 +181,8 @@ Pedro is 29, resident, and in his third year of earning income, so IRS Jovem exe
 2. Social security above 10% of gross: 7,500 - 7,000 = EUR 500 deducted. Net EUR 52,000. The EUR 7,000 not deducted stays available for the 15% rule.
 3. The 15% rule: 15% x 70,000 = EUR 10,500. Against it: the higher of EUR 4,587.09 and EUR 7,000, so EUR 7,000, plus EUR 4,000 of expenses: EUR 11,000. No shortfall. Taxable income EUR 52,000.
 4. IRS Jovem: 75% x 52,000 = EUR 39,000, above the 2026 cap. Exempt income is EUR 29,542.15. Non-exempt income is 52,000 - 29,542.15 = EUR 22,457.85.
-5. Tax on the full EUR 52,000 (band 8): 46,566 x 26.472% + (52,000 - 46,566) x 44.60% = 12,326.95 + 2,423.56 = EUR 14,750.51.
-6. Tax due on the non-exempt part: 14,750.51 x 22,457.85 / 52,000 = EUR 6,370.47. Applying the bands to EUR 22,457.85 alone would give too little tax, because the exempt income counts for the rate (art. 22(4)).
+5. Tax on the full EUR 52,000 (band 8): 46,566 x 26.472% + (52,000 - 46,566) x 44.60% = 12,326.95 + 2,423.56 = EUR 14,750.52 (EUR 14,750.5155 before rounding).
+6. Tax due on the non-exempt part: 14,750.52 x 22,457.85 / 52,000 = EUR 6,370.48. Applying the bands to EUR 22,457.85 alone would give too little tax, because the exempt income counts for the rate (art. 22(4)).
 
 ```oa-check
 name: PT Category B programmer, IRS Jovem year 3 with the 2026 cap, gross EUR 70,000
@@ -210,8 +210,8 @@ expected:
   cap: 29542.15
   exempt: 29542.15
   non_exempt: 22457.85
-  tax_on_all: 14750.51
-  tax_due: 6370.47
+  tax_on_all: 14750.52
+  tax_due: 6370.48
 ```
 
 ## Ask the client first
@@ -246,9 +246,10 @@ expected:
 | CIVA art. 53(1), EUR 15,000 limit | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx | 2026-10-23 |
 | RGIT art. 116 and 119, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx | 2026-10-23 |
 | LGT art. 35 and 44, interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-23 |
+| Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (AT's copy of the Diário da República text) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
 | Segurança Social, Guia Prático, Novo Regime dos Trabalhadores Independentes (IAS 2026 EUR 537.13, 21.4%, 25.2%, 70%/20%, ceiling EUR 6,445.56, payment 10th to 20th) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-23 |
 
-Not yet confirmed: the text of Portaria 480-A/2025/1 itself (the Diário da República page did not load on 2026-10-23; the EUR 537.13 IAS is taken from the Segurança Social guide); which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does; the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
+Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
 
 <!-- openaccountants-cta-block -->
 

@@ -137,9 +137,9 @@ Separate taxation halves the household-based limits for each spouse (art. 78(14)
 
 **The return.** Modelo 3 with the annexes the income needs: Anexo A (employment and pensions), E (capital income, only if aggregating or not withheld), F (rent), G (capital gains), H (tax benefits and deductions), J (foreign income, see `pt-foreign-source-treaties`), L (NHR or IFICI, see `pt-nhr-ifici`).
 
-**IRS automatico.** For taxpayers in the group set by regulation, AT prepares a provisional return and assessment from the data it holds (art. 58-A(1)). The taxpayer can confirm it, and it then counts as filed (art. 58-A(2)). If they neither confirm nor file by 30 June, it becomes final on that date; married couples are then taxed separately (art. 58-A(3) and (4)(b)). Anyone whose real situation differs from the draft must file a normal return (art. 58-A(9)). The draft does not cover holders of crypto assets reported under art. 57(7) (art. 58-A(12)).
+**IRS automatico.** For taxpayers in the group set by regulation, AT prepares a provisional return and assessment from the data it holds (art. 58-A(1)). The taxpayer can confirm it, and it then counts as filed (art. 58-A(2)). If they neither confirm nor file by 30 June, it becomes final on that date; married couples are then taxed separately (art. 58-A(3) and (4)(b)). Anyone whose real situation differs from the draft must file a normal return (art. 58-A(9)). The draft does not cover anyone who must report assets held in a listed low-tax jurisdiction under art. 57(7) (property, vehicles, bank or securities accounts, shares, fund units, bonds, loans, insurance contracts, or assets held through partnerships or trusts there) (art. 58-A(12)).
 
-**Who need not file.** A person whose only income is taxed at the art. 71 final rates and who does not aggregate it, or whose salary and pensions total EUR 8,500 or less with no withholding (art. 58(1)). The exemption does not apply to anyone who opts for joint taxation, has income in kind, or holds crypto assets reported under art. 57(7) (art. 58(3)(a), (c) and (e)).
+**Who need not file.** A person whose only income is taxed at the art. 71 final rates and who does not aggregate it, or whose salary and pensions total EUR 8,500 or less with no withholding (art. 58(1)). The exemption does not apply to anyone who opts for joint taxation, has income in kind, or holds assets in a listed low-tax jurisdiction that must be reported under art. 57(7) (art. 58(3)(a), (c) and (e)). Art. 57(7) does not mention crypto assets.
 
 ## Penalties and interest
 
@@ -262,6 +262,7 @@ expected:
 | CIRS art. 43, capital gains inclusion | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-10-22 |
 | CIRS art. 53, Category H specific deduction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx | 2026-10-22 |
 | CIRS art. 58 and 58-A, filing exemption and IRS automatico | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58a.aspx | 2026-10-22 |
+| CIRS art. 57(7), assets in listed low-tax jurisdictions to report in the return | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx | 2026-10-23 |
 | CIRS art. 59, married couples | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs59.aspx | 2026-10-22 |
 | CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-22 |
 | CIRS art. 71, final withholding rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-22 |
