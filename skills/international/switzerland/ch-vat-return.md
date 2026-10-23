@@ -9,7 +9,7 @@ tier: 2
 last_updated: 2026-10-23
 verified_by: pending
 review_status: pending_review
-authored_by: OpenAccountants team
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
