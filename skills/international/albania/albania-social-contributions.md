@@ -1,12 +1,13 @@
 ---
 name: albania-social-contributions
-description: Use this skill whenever asked about Albania social security and health insurance contributions for employees, employers, or the self-employed. Trigger on phrases like "how much social insurance do I pay in Albania", "Albanian payroll contributions", "sigurime shoqerore", "sigurime shendetesore", "social insurance rate Albania", "health insurance contribution Albania", "employer contribution Albania", "self-employed social insurance Albania", "Listepagesa", "E-SIG payroll declaration", "minimum contribution base", "maximum contribution base", "ALL 40,000 minimum wage", "ALL 50,000 minimum wage 2026", or any question about Albanian social/health contribution obligations for a client. Also trigger when classifying Albanian bank-statement lines that relate to DPT (tatime) payroll-tax debits, social/health insurance remittances, or government contribution payments from BKT, Raiffeisen Bank Albania, Credins, Intesa Sanpaolo Bank Albania, or other Albanian banks. This skill covers employee/employer social (9.5%/15%) and health (1.7%/1.7%) rates, the min/max contribution base, self-employed rates (23% social / 3.4% health), the 2026 base changes, the 20th-of-month declaration deadline, bank-statement classification patterns, and edge cases. This skill is scoped to social-security and health contributions; personal income tax (PIT) is covered only as context. ALWAYS read this skill before touching any Albanian contribution work.
-version: 0.1
+description: "Albanian compulsory social insurance and health insurance contributions for tax year 2026 under Law 7703/1993, Law 10383/2011 and Council of Ministers Decision 77/2015. Covers employees (employer 15% and employee 9.5% social, 1.7% and 1.7% health; part-time and short-contract rates), the ALL 50,000 minimum base and ALL 186,416 social ceiling, the self-employed (23% social on at least the minimum wage, 3.4% health on double the minimum wage), unpaid family workers, technology-park staff, people with two jobs, declaration and payment by the 20th, and Law 9920/2008 penalties and interest. Trigger on 'Albania social insurance', 'sigurime shoqërore', 'sigurime shëndetësore', 'self-employed contributions Albania', 'paga maksimale 2026', 'contribution ceiling Albania'. Out of scope: running the monthly payroll and income tax withholding (albania-payroll), income tax (albania-income-tax), farmers insured through ISSH, treaties (al-cross-border)."
+version: 0.2
 jurisdiction: AL
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+verified_by: pending
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -14,503 +15,185 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Albania Social Security & Health Insurance Contributions
-
-## Albania Social Security & Health Insurance Contributions Skill v0.1
-
-## Section 1 -- Quick reference
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Albania (Republic of Albania) |
-| Currency | ALL (Albanian lek) -- only |
-| Primary Legislation | Law No. 7703 dated 11.05.1993 "On Social Insurance in the Republic of Albania" (as amended) |
-| Supporting Legislation | Law No. 10383 dated 24.02.2011 "On Compulsory Health Care Insurance"; Law No. 29/2023 "On Income Tax" (PIT, effective 1 Jan 2024); DCM (VKM) No. 776 dated 19.12.2025 (minimum wage from 1 Jan 2026) |
-| Tax Authority (collection) | General Directorate of Taxation -- Drejtoria e Pergjithshme e Tatimeve (DPT), tatime.gov.al |
-| Benefits administrator | Social Insurance Institute -- Instituti i Sigurimeve Shoqerore (ISSH) |
-| Filing portal | e-Filing / e-Albania |
-| Employee social insurance rate | 9.5% of gross salary (bounded by min/max base) [PwC, reviewed Feb 2026] |
-| Employer social insurance rate | 15% of gross salary (bounded by min/max base) [PwC] |
-| Employee health insurance rate | 1.7% of gross salary (no ceiling; floored at min base) [PwC] |
-| Employer health insurance rate | 1.7% of gross salary (no ceiling; floored at min base) [PwC] |
-| Employee total | 11.2% of gross salary [PwC] |
-| Employer total | 16.7% of gross salary [PwC] |
-| Combined employer + employee | 27.9% of gross salary [PwC] |
-| Minimum contribution base (2025) | ALL 40,000/month [HLB Albania] |
-| Maximum social-insurance base (2025) | ALL 176,416/month [HLB Albania] |
-| Minimum contribution base (2026) | ALL 50,000/month from 1 Jan 2026 [PwC significant developments] |
-| Maximum social-insurance base (2026) | ALL 186,416/month from 1 Jan 2026 [PwC + HLB] -- DISPUTED, see caveats |
-| Self-employed social insurance | 23% on a base >= minimum salary [PwC] |
-| Self-employed health insurance | 3.4% on a base >= double the minimum salary [PwC] |
-| Declaration/payment deadline | Electronically by the 20th of the following month [PwC] |
-| Validated by | Pending -- requires sign-off by an Albanian licensed accountant |
-| Validation date | Pending |
+# Albania social and health contributions, tax year 2026
 
-**Rate overview (employment)**  _([PwC Albania -- Other taxes])_
+> **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team from Law No. 7703/1993, Law No. 10383/2011, Council of Ministers Decisions No. 77/2015 and No. 776/2025, Instruction No. 23/2014, Law No. 9920/2008 and notices of the General Directorate of Taxes and the Social Insurance Institute, read on 2026-10-23. No accountant has reviewed it. Do not file from it without review by a qualified Albanian professional.
 
-| Component | Employee | Employer | Combined |
-| --- | --- | --- | --- |
-| Social insurance (pension/disability/maternity) | 9.5% | 15% | 24.5% |
-| Health insurance | 1.7% | 1.7% | 3.4% |
-| **Total** | **11.2%** | **16.7%** | **27.9%** |
+Currency: Albanian lek (ALL). Contributions are monthly. The General Directorate of Taxes (tatime.gov.al) collects social and health contributions together with employment income tax on the listëpagesa, and passes them to the Social Insurance Institute (ISSH, issh.gov.al) and the Compulsory Health Insurance Fund (FSDKSH, fsdksh.gov.al) (Law 10383/2011 art. 9(1); Law 7703/1993 art. 13).
 
-*Arithmetic check: employee 9.5 + 1.7 = 11.2; employer 15 + 1.7 = 16.7; combined 24.5 + 3.4 = 27.9 = 11.2 + 16.7. All reconcile. Source: [PwC Albania -- Other taxes].*
+See also: `albania-payroll` (gross to net, the listëpagesa, income tax withholding), `albania-income-tax`, `al-cross-border`.
 
-**Conservative defaults**
+## Who this applies to
 
-| Ambiguity | Default |
-| --- | --- |
-| Period unknown but on/before 31 Dec 2025 | Use 2025 bases (min ALL 40,000 / max ALL 176,416) |
-| Period on/after 1 Jan 2026 | Use 2026 bases (min ALL 50,000 / max ALL 186,416), flag for reviewer |
-| 2026 maximum base disputed | Use PwC/HLB ALL 186,416; flag for reviewer to confirm vs DCM No. 776 |
-| Salary below minimum base | Assess contributions on the minimum base, NOT the lower actual salary |
-| Salary above social ceiling | Cap the 9.5%/15% social components at the ceiling; health (1.7%/1.7%) has NO ceiling |
-| Unknown employment status | Ask -- do not assume employee vs self-employed |
-| Unknown form code (Listepagesa / E-SIG 025) | Use E-SIG 025 payroll list; flag to confirm with e-Filing portal |
+- **Employees and their employers.** Both pay social insurance for sickness, maternity and pensions; the employer alone also pays for work accidents and unemployment (Law 7703/1993 art. 9). Both pay health insurance, half each (Law 10383/2011 art. 8(2)). This covers every employee, full or part time, from the first day of work, and foreign nationals working in Albania (Law 7703/1993 art. 7; ISSH, compulsory insurance page).
+- **Self-employed persons** (individuals carrying on an economic activity with regular income, including individual traders) are insured compulsorily for maternity, pensions and health. They pay for themselves on at least the minimum wage, and may choose a higher base up to the ceiling (Law 7703/1993 art. 9; Decision 77/2015 ch. III paras. 6, 7). This applies even when their business income is taxed at 0% under Law 29/2023 art. 69(1)(dh).
+- **Unpaid family workers** over 16 who work and live lawfully with the self-employed person: the self-employed person pays for them on the minimum wage (Law 7703/1993 art. 9; Decision 77/2015 ch. II para. 3(c)).
+- **Individuals over 18 with regular income from movable or immovable property** and no other compulsory health insurance pay health contributions (Decision 77/2015 ch. III para. 10).
+- **Not covered here:** self-employed farmers, who pay to ISSH under separate rules (Law 7703/1993 art. 10; ISSH page on compulsory insurance for the self-employed in agriculture); voluntary insurance (Law 7703/1993 art. 11); supplementary schemes for the military, police and state officials.
 
-## Section 2 -- Required inputs and refusal catalogue
+## Rates, bands and thresholds
 
-### Required inputs
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| National minimum wage, monthly | ALL 50,000 | 2026 (from 1 Jan) | [Council of Ministers Decision 776/2025](https://www.issh.gov.al/wp-content/uploads/2026/08/VKM-NR.-776-DATE-19.12.2025-PER-PERCAKTIMIN-E-PAGES-MINIMALE-NE-SHKALLE-VENDI.pdf) |
+| Minimum monthly base, employees (social and health) | ALL 50,000 | 2026 | [tatime.gov.al notice, 14.01.2026](https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/); [ISSH, compulsory insurance](https://www.issh.gov.al/sigurimi-i-detyruar/) |
+| Maximum monthly base, social insurance | ALL 186,416 (ALL 176,416 to 31.12.2025) | 2026 | [tatime.gov.al notice, 14.01.2026](https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/); [Law 7703/1993 art. 10](https://www.issh.gov.al/wp-content/uploads/2026/08/LIGJ-NR.-7703-DATE-11.5.1993-PER-SIGURIMET-SHOQERORE-NE-REPUBLIKEN-E-SHQIPERISE-I-NDRYSHUAR-1-1.pdf) |
+| Maximum base, health insurance, employees | None: full gross pay | 2026 | [Decision 77/2015 ch. II para. 4(a)](https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf) |
+| Employee working more than 87 hours a month, social | Employer 15.0%, employee 9.5% (24.5%) | 2026 | Decision 77/2015 ch. III para. 3(a); Law 7703/1993 art. 10 |
+| Employee working less than 87 hours a month, social | Employer 13.9%, employee 9.4% (23.3%) | 2026 | Decision 77/2015 ch. III para. 4(a) |
+| Contract shorter than one week, social | 0.3% of gross, employer only | 2026 | Decision 77/2015 ch. III para. 5(a) |
+| Health insurance, every employee | Employer 1.7%, employee 1.7% (3.4%) | 2026 | Decision 77/2015 ch. III paras. 3(b) to 5(b); [Law 10383/2011 art. 8](https://fsdksh.gov.al/project/ligji-i-fondit/) |
+| Split of the 24.5% by branch | Pensions 21.6%, maternity 1.4%, unemployment 0.9%, sickness 0.3%, work accidents 0.3% | 2026 | Decision 77/2015 ch. III para. 1; ISSH, compulsory insurance |
+| Self-employed, social | 23% of a base of at least ALL 50,000, up to ALL 186,416 at the person's choice: at least ALL 11,500 a month | 2026 | Decision 77/2015 ch. III para. 6; [ISSH, compulsory insurance](https://www.issh.gov.al/sigurimi-i-detyruar/); tatime.gov.al notice |
+| Self-employed, health | 3.4% of double the minimum wage (ALL 100,000): ALL 3,400 a month | 2026 | Law 10383/2011 arts. 7(3), 8(1); ISSH, compulsory insurance; tatime.gov.al notice |
+| Unpaid family worker, social | 23% of the minimum wage (ALL 50,000): ALL 11,500 a month | 2026 | ISSH, compulsory insurance; tatime.gov.al notice |
+| Unpaid family worker, health | 3.4% of ALL 100,000: ALL 3,400 a month | 2026 | Decision 77/2015 ch. II para. 4(b); tatime.gov.al notice |
+| Individual with property income and no other health insurance | 3.4% of double the minimum wage: ALL 3,400 a month | 2026 | Decision 77/2015 ch. III para. 10 |
+| Late-payment interest (art. 76) | 7.8% a year from 11.04.2026, confirmed from 08.10.2026 | 2026 | [tatime.gov.al: Normat e interesit](https://tatime.gov.al/institucioni/publikime/normat-e-interesit/) |
 
-- **Minimum viable inputs** — Employment status (employee vs self-employed) and gross monthly salary (or self-employed base reference). Without employment status, STOP.
-- **Recommended inputs** — The period/month being computed (to select 2025 vs 2026 bases), and whether the salary is below the minimum base or above the social ceiling.
-- **Ideal inputs** — The monthly payroll declaration (Listepagesa / E-SIG 025), bank statements showing DPT contribution remittances, and the DPT/e-Albania account confirming the applicable contribution bases.
+**How the 2026 bases were set.** Law 7703/1993 art. 10 ties the social ceiling to the minimum wage: it rises "by the same measure and at the same time". For 2026 the General Directorate applied that as the same ALL 10,000 increase, from ALL 176,416 to ALL 186,416, not the same 25% (tatime.gov.al notice of 14.01.2026). The fixed lek amounts still printed in the consolidated Decision 77/2015 (for example ALL 1,496 for self-employed health, ALL 22,000 for unpaid family workers) were computed on older minimum wages. Use the 2026 bases above.
 
-### Refusal catalogue
+**Employer rate in the law and in the decision.** Law 7703/1993 art. 10 gives employers 13.8% for sickness, maternity and pensions. Decision 77/2015 adds the employer-only accident (0.3%) and unemployment (0.9%) branches to reach 15.0%.
 
-- **R-AL-SSC-1 -- Employment status unknown** — Trigger: not stated whether the person is an employee or self-employed. Message: "Employment status is mandatory. Employees pay 11.2% (employee) with the employer paying 16.7%; the self-employed pay 23% social on the minimum base plus 3.4% health on double the minimum base. Cannot proceed without this."
-- **R-AL-SSC-2 -- 2026 maximum base relied upon for a high earner** — Trigger: salary above ALL 186,416/month in a 2026 period AND the result is being relied upon for filing. Message: "The 2026 maximum social-insurance base is DISPUTED across sources (PwC/HLB say ALL 186,416; one firm summary of DCM No. 776 says ALL 220,520). Do not file a high-earner 2026 computation without confirming the ceiling against the published DCM No. 776 / Official Gazette. Escalate to an Albanian licensed accountant."
-- **R-AL-SSC-3 -- Penalty / late-payment quantification** — Trigger: client asks for the exact late-filing or late-payment penalty. Message: "Exact penalty amounts and interest rates under Law No. 9920/2008 (Tax Procedures) were not confirmed from an authoritative primary source in this skill [RESEARCH GAP -- reviewer to confirm]. Do not quantify penalties. Escalate to an Albanian licensed accountant."
-- **R-AL-SSC-4 -- Personal income tax (PIT) computation** — Trigger: client asks for the PIT (income tax) due, not contributions. Message: "This skill covers social-security and health contributions only. Albanian PIT monthly bands conflict across sources (tax-free portion variously reported as ALL 30,000-50,000) [RESEARCH GAP]. Verify monthly PIT bands with the DPT before computing PIT; use a dedicated PIT skill."
-- **R-AL-SSC-5 -- Expat / posted-worker / A1-equivalent coverage** — Trigger: cross-border posting, totalization, or treaty coverage question. Message: "Cross-border social-security coordination (posted workers, totalization agreements) is outside the scope of this skill. Escalate to an Albanian licensed accountant."
+## The taxable base
 
-## Section 3 -- Payment pattern library
+**Employees.** The base is monthly gross pay on the listëpagesa, cash and in kind, including the first 14 days of sick pay the employer pays (Decision 77/2015 ch. II; Instruction 26/2023 payroll form items 16 and 24).
+- Social: not below ALL 50,000 and not above ALL 186,416. The floor applies to part-time staff too (Decision 77/2015 ch. III para. 4(a)); only absences justified by documents, such as certified sick leave, reduce it in proportion to days worked ([tatime.gov.al payroll Q&A, answer 6](https://tatime.gov.al/pyetje-pergjigje-per-listepagesat/)).
+- Health: not below ALL 50,000, no ceiling.
+- Left out of the base (Decision 77/2015 ch. II para. 2): court-ordered maintenance, antidotes given in kind under the rules, non-permanent bonuses for family misfortune, long illness, damage or natural disaster, travel costs for work away from home that are not pay, and fees unrelated to the current employment.
+- **Technology parks.** Employees in IT working for companies in parks under Law 58/2022 may, with prior written consent in the contract, pay social and health contributions on the minimum wage whatever their gross (Law 7703/1993 art. 10; Law 10383/2011 art. 7(5)).
+- **Partly disabled employees** receiving a partial invalidity pension may pay on a lower base by working time, but not below 50% of the minimum wage (Decision 77/2015 ch. II para. 3(ç)).
 
-This is the deterministic pre-classifier for Albanian bank-statement transactions related to contributions. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
+**Two or more jobs** (Decision 77/2015 ch. III para. 15). Each employer must calculate and pay contributions. Health is paid on each salary. Social contributions in total may not exceed those computed on the ceiling. Where the work at each employer is below the minimum wage (cleaners, maintenance staff and similar), one employer is agreed as the main employer and declares the person; the total base cannot fall below the minimum wage.
 
-**How to read this table.** Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. Contribution remittances EXCLUDE from any VAT return or revenue classification -- they are statutory payroll/personal obligations, not business supplies. Employer contributions are a payroll cost; employee contributions and PIT are withheld from gross pay.
+**Self-employed.** Social: 23% of the minimum wage, or of a higher base the person chooses up to the ceiling. The person enters the whole amount in the employer column of the listëpagesa (Instruction 26/2023 payroll form item 17). Health: 3.4% of double the minimum wage, a fixed ALL 3,400 a month for 2026, whatever the income (Law 10383/2011 art. 7(3)). In the month of first registration or restart, the General Directorate allows the amount for the days of activity to be entered (tatime.gov.al payroll Q&A, answer 2).
 
-### 3.1 DPT / tax-authority contribution remittances
+**Ambulant traders and domestic workers** pay fixed monthly amounts set in Decision 77/2015 ch. III paras. 13 and 14. See Not yet confirmed.
 
-**DPT / tax-authority contribution remittances pattern table**
+## Deadlines and filing
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DPT, TATIME, DREJTORIA E PERGJITHSHME E TATIMEVE | EXCLUDE -- contribution/PIT remittance | Monthly payroll remittance to the tax authority |
-| SIGURIME SHOQERORE | EXCLUDE -- social insurance contribution | "Social insurance" in Albanian |
-| SIGURIME SHENDETESORE | EXCLUDE -- health insurance contribution | "Health insurance" in Albanian |
-| KONTRIBUTE, KONTRIBUTI | EXCLUDE -- contributions | Generic "contributions" reference |
-| LISTEPAGESA, E-SIG, E-SIG 025 | EXCLUDE -- payroll declaration payment | Payment tied to the monthly payroll list |
-| ISSH, SIGURIMET SHOQERORE | EXCLUDE -- social insurance | ISSH = benefits administrator reference |
+| Obligation | When | Source |
+|---|---|---|
+| Register a new or returning employee, or an unpaid family worker, on form E-SIG 027/a | At least one calendar day before work starts (Law 9920/2008 art. 119(1)) | [ISSH, compulsory insurance](https://www.issh.gov.al/sigurimi-i-detyruar/); [Instruction 23/2014 paras. 4.1, 6.3](https://www.issh.gov.al/wp-content/uploads/2026/08/UDHEZIM-NR.-23-DATE-09.12.2014-PER-MBLEDHJEN-E-KONTRIBUTEVE-TE-DETYRUESHME-TE-SIGURIMEVE-SHOQERORE-DHE-SHENDETESORE-i-perditesuar.pdf) |
+| Declare and pay contributions on the listëpagesa: entities, and individuals registered for VAT | Monthly, by the 20th of the following month | [Law 29/2023 art. 65(1)](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf); Instruction 23/2014 para. 4.3; [tatime.gov.al tax calendar](https://tatime.gov.al/kalendari_tatimor/listepagesa/) |
+| Same, self-employed and traders not registered for VAT, ambulant traders, heads of household employing domestic workers | Quarterly, month by month, by the 20th of the month after each quarter (20 January, April, July, October) | Law 29/2023 art. 65(1); Instruction 23/2014 para. 4.3(b); [tatime.gov.al tax calendar](https://tatime.gov.al/kalendari_tatimor/listepagesa/) |
+| Report a person leaving, on E-SIG 027/a | Within 10 calendar days of leaving; if late, contributions run until the date it is reported | Instruction 23/2014 paras. 4.1, 6.4 |
 
-### 3.2 Contribution debits appearing on specific Albanian banks
+The self-employed person files the listëpagesa even with no employees, listing themselves and any unpaid family workers (E-SIG 025/a.1 and 025/a.2 filing notes, [tatime.gov.al form models](https://tatime.gov.al/institucioni/publikime/modele-dokumentash-tatimore/)). Returns are electronic only (Instruction 23/2014 para. 4.2). Payment is made at banks with an agreement with the General Directorate of Taxes, ISSH and FSDKSH, or at Albanian Post (ISSH, compulsory insurance page). The listëpagesa is the record from which ISSH computes each person's benefits (ISSH, compulsory insurance page). A person can check their insured periods on e-Albania.
 
-**Contribution debits by bank table**
+## Penalties and interest
 
-| Bank | Typical debit description | Treatment |
-| --- | --- | --- |
-| BKT (Banka Kombetare Tregtare) | "DPT" / "TATIME" / "SIGURIME SHOQERORE" | EXCLUDE -- contribution remittance |
-| Raiffeisen Bank Albania | "DREJTORIA E TATIMEVE" / "KONTRIBUTE" | EXCLUDE -- contribution remittance |
-| Credins Bank | "TATIME" / "SIGURIME" | EXCLUDE -- contribution remittance |
-| Intesa Sanpaolo Bank Albania | "DPT KONTRIBUTE" / "SIGURIME SHENDETESORE" | EXCLUDE -- contribution remittance |
-| Banka e Tiranes / Tirana Bank | "TATIME / SIGURIME" | EXCLUDE -- contribution remittance |
+All under Law No. 9920/2008 "On tax procedures", consolidated to Law No. 79/2025 ([tatime.gov.al copy](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf)).
 
-### 3.3 PIT (income tax) remittances -- exclude, but NOT a contribution
+| Failure | Penalty | Source |
+|---|---|---|
+| Contributions paid late | 0.06% of the unpaid amount per day, for at most 365 days | Law 9920/2008 art. 114(1) |
+| Listëpagesa filed late | ALL 10,000 per return for corporate income taxpayers; ALL 5,000 for other taxpayers except individuals; ALL 3,000 for individuals | Law 9920/2008 art. 113 |
+| Incorrect return | 0.06% of the unpaid amount per day, for at most 365 days | Law 9920/2008 art. 115(1) |
+| Employee not registered at least one day before work starts, found at an on-site check | ALL 200,000 per employee for taxpayers registered for VAT and corporate income tax; ALL 50,000 for other taxpayers; plus the contributions | Law 9920/2008 art. 119(1) |
+| Under-declared pay | 200% of the tax and contributions for legal entities; 100% for other taxpayers; plus the amounts for the whole period | Law 9920/2008 art. 119(3) |
+| False returns or documents that understate contributions | 100% of the understated amount | Law 9920/2008 art. 116(1) |
 
-**PIT remittances pattern table**
+**Late-payment interest** is added under art. 76: 120% of the Bank of Albania interbank rate, from the due date to payment. The published rate is 7.8% a year from 11.04.2026, confirmed from 08.10.2026. It cannot be waived (art. 76(4)). There is no flat 10% late-payment penalty in the law.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TATIMI MBI TE ARDHURAT, TAP | EXCLUDE -- personal income tax | PIT withheld from salary, not a social contribution |
-| DIVA | EXCLUDE -- annual income declaration payment | Annual PIT reconciliation, not a contribution |
+An employer that cannot pay all it owes must still pay, in full and on time, the contributions withheld from employees' pay (ISSH, compulsory insurance page). The art. 119(1) fine does not apply to persons over 16 found working who qualify as unpaid family workers of a self-employed person, checked against the family certificate on e-Albania (art. 119(2)).
 
-### 3.4 Salary / payroll (exclude from contribution classification)
+## Cross-border points
 
-**Salary/payroll pattern table**
+- **Foreign nationals** working in Albania are insured on the same terms as Albanians (Law 7703/1993 art. 7; [ISSH, social insurance for foreigners](https://www.issh.gov.al/sigurimet-shoqerore-per-te-huajt-ne-shqiperi/)).
+- **Bilateral agreements.** ISSH lists agreements applied with Turkey, Belgium, North Macedonia, Hungary, Luxembourg, the Czech Republic, Germany, Austria, Canada, Kosovo, Switzerland, Croatia, Bulgaria, Romania, Montenegro and Italy. Each sets the applicable legislation, evidenced by a certificate of coverage; insured periods in both states are added together for benefits, and pensions are exported without reduction ([ISSH, bilateral agreements](https://www.issh.gov.al/shtetet-me-te-cilat-shqiperia-ka-marreveshje/)).
+- **No agreement.** A worker sent to Albania from a country without an agreement pays Albanian contributions from the first day, and may also owe contributions at home.
+- **Albanians abroad** are protected under the agreements, and Albanian citizens aged 18 to pension age may insure voluntarily (Law 7703/1993 arts. 7(a), 11; ISSH, social insurance for foreigners).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PAGA, PAGAT, RROGA (outgoing) | EXCLUDE -- payroll expense | Net salary paid to employee, not a contribution |
-| PAGA (incoming) | EXCLUDE -- employment income received | Not a contribution payment |
+## Worked examples
 
-### 3.5 Benefits received (not contributions)
+### Example 1: self-employed consultant on the minimum base
 
-**Benefits received pattern table**
+Anila is a self-employed consultant in Durrës, not registered for VAT, with no staff. Her business income is taxed at 0% under art. 69(1)(dh), but contributions are still due. She pays on the minimum base.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PENSION, PENSIONI (incoming) | EXCLUDE -- pension income received | ISSH benefit, not a contribution paid |
-| RAPORT MJEKESOR, BARRELINDJE (incoming) | EXCLUDE -- sickness/maternity benefit received | Not a contribution paid |
+Social: 23% × ALL 50,000 = ALL 11,500 a month. Health: 3.4% × ALL 100,000 (double the minimum wage) = ALL 3,400 a month. Total ALL 14,900 a month. As she is not registered for VAT, she files quarterly: ALL 44,700 for July to September 2026, due by 20 October 2026. For the year: ALL 178,800.
 
-## Section 4 -- Worked examples
-
-Six bank-statement classifications and computations for a hypothetical Albanian small business and its staff. All figures in ALL. Rates: 2025 unless stated.
-
-### Example 1 -- Standard salary within bounds (2025)
-
-**Scenario:** Employee on gross ALL 100,000/month (between the ALL 40,000 floor and ALL 176,416 ceiling).
-
-**Reasoning:**
-- Social base = 100,000 (within bounds). Employee social 9.5% = 9,500; employer social 15% = 15,000.
-- Health base = 100,000 (no ceiling). Employee health 1.7% = 1,700; employer health 1.7% = 1,700.
-- Employee total = 9,500 + 1,700 = **11,200** (= 11.2% of 100,000 ✓).
-- Employer total = 15,000 + 1,700 = **16,700** (= 16.7% of 100,000 ✓).
-- Combined = 11,200 + 16,700 = 27,900 (= 27.9% ✓).
-
-**Bank line:** `20.02.2025 ; DPT KONTRIBUTE ; DEBIT ; SIGURIME 01/2025 ; -27,900 ; ALL`
-**Classification:** EXCLUDE -- combined employer+employee contribution remittance (Section 3.1). Source: [PwC Albania -- Other taxes].
-
-### Example 2 -- High earner above the social ceiling (2025)
-
-**Scenario:** Employee on gross ALL 250,000/month (above the ALL 176,416 social ceiling).
-
-**Reasoning:**
-- Social base CAPPED at 176,416. Employee social 9.5% = 176,416 x 0.095 = **16,759.52**; employer social 15% = 176,416 x 0.15 = **26,462.40**.
-- Health has NO ceiling, so health base = full 250,000. Employee health 1.7% = 4,250; employer health 1.7% = 4,250.
-- Employee total = 16,759.52 + 4,250 = **21,009.52**.
-- Employer total = 26,462.40 + 4,250 = **30,712.40**.
-
-**Note:** Because social is capped but health is not, the employee total (21,009.52) is LESS than 11.2% of 250,000 (= 28,000). The cap only bites the social component. Source: [PwC; HLB Albania for the ALL 176,416 ceiling].
-
-### Example 3 -- Salary below the minimum base (2025)
-
-**Scenario:** Part-time/low-wage employee on gross ALL 30,000/month (below the ALL 40,000 floor).
-
-**Reasoning:**
-- Contributions are assessed on the MINIMUM base (40,000), not the lower actual 30,000 (conservative default; Tier 1 Rule 4).
-- Social: employee 40,000 x 0.095 = 3,800; employer 40,000 x 0.15 = 6,000.
-- Health: employee 40,000 x 0.017 = 680; employer 40,000 x 0.017 = 680.
-- Employee total = 3,800 + 680 = **4,480**; employer total = 6,000 + 680 = **6,680**.
-
-**Classification note:** Flag for reviewer -- confirm the employee is genuinely on a sub-minimum gross (e.g., legitimate part-time below the floor) versus an underdeclaration. Source: [HLB Albania for the ALL 40,000 floor].
-
-### Example 4 -- Self-employed individual (2025)
-
-**Scenario:** Self-employed (private) individual, 2025.
-
-**Reasoning:**
-- Social insurance: 23% on a base of at least the minimum salary (ALL 40,000) = 40,000 x 0.23 = **9,200/month**.
-- Health insurance: 3.4% on a base of at least double the minimum salary (ALL 80,000) = 80,000 x 0.034 = **2,720/month**.
-- Total self-employed contribution = 9,200 + 2,720 = **11,920/month**.
-
-**Bank line:** `20.05.2025 ; TATIME ; DEBIT ; KONTRIBUTE I VETEPUNESUAR ; -11,920 ; ALL`
-**Classification:** EXCLUDE -- self-employed contribution remittance (Section 3.1). Source: [PwC Albania -- Other taxes].
-
-### Example 5 -- High earner above the social ceiling (2026)
-
-**Scenario:** Employee on gross ALL 250,000/month in a 2026 period (social ceiling ALL 186,416 per PwC/HLB).
-
-**Reasoning:**
-- Social base CAPPED at 186,416. Employee social 9.5% = 186,416 x 0.095 = **17,709.52**; employer social 15% = 186,416 x 0.15 = **27,962.40**.
-- Health (no ceiling) on full 250,000: employee 4,250; employer 4,250.
-- Employee total = 17,709.52 + 4,250 = **21,959.52**; employer total = 27,962.40 + 4,250 = **32,212.40**.
-
-**WARNING:** The 2026 maximum base of ALL 186,416 is DISPUTED (one source states ALL 220,520). Do NOT file this high-earner 2026 computation without confirming the ceiling against the published DCM No. 776 / Official Gazette (Refusal R-AL-SSC-2). Source: [PwC significant developments; HLB Albania].
-
-### Example 6 -- Ambiguous DPT debit (contributions + PIT combined)
-
-**Input line:**
-`20.03.2025 ; DREJTORIA E TATIMEVE ; DEBIT ; PAGESA 02/2025 ; -45,000 ; ALL`
-
-**Reasoning:**
-Matches "DREJTORIA E TATIMEVE" (Section 3.2, Raiffeisen). A single monthly remittance to the DPT can bundle (a) withheld employee PIT, (b) employee social + health contributions, and (c) employer social + health contributions. The amount cannot be split into PIT vs contributions from the bank line alone -- the payroll declaration (Listepagesa / E-SIG 025) is needed.
-
-**Classification:** EXCLUDE from VAT. Flag for reviewer -- request the E-SIG 025 payroll list to split PIT from social/health contributions. Source: [PwC -- employer withholds and remits PIT + contributions together].
-
-## Section 5 -- Tier 1 rules
-
-These rules apply when payroll data is clear and all required inputs are available. Apply exactly as written. All figures are sourced; any gap is marked.
-
-### Rule 1 -- Employment contribution formulae
-
-- **Employment contribution formulae** — employee_social   = clamp(gross, min_base, social_ceiling) x 9.5% employer_social   = clamp(gross, min_base, social_ceiling) x 15% employee_health   = max(gross, min_base)                   x 1.7%   # NO ceiling employer_health   = max(gross, min_base)                   x 1.7%   # NO ceiling employee_total    = employee_social + employee_health   (= 11.2% within bounds) employer_total    = employer_social + employer_health   (= 16.7% within bounds)  _([PwC Albania -- Other taxes])_
-
-### Rule 2 -- Contribution bases (2025)
-
-- **Contribution bases (2025)** — Minimum base = ALL 40,000/month; maximum social-insurance base = ALL 176,416/month. Apply for any period through 31 December 2025.  _([HLB Albania])_
-
-### Rule 3 -- Contribution bases (2026)
-
-- **Contribution bases (2026)** — From 1 January 2026: minimum base = ALL 50,000/month; maximum social-insurance base = ALL 186,416/month. The 2026 maximum is DISPUTED -- one firm summary of DCM No. 776 states ALL 220,520; use ALL 186,416 and flag (Conservative default; Refusal R-AL-SSC-2).  _([PwC significant developments; HLB Albania])_
-
-### Rule 4 -- Salary below the minimum base is grossed up to the minimum base
-
-- **Sub-minimum gross treatment** — Contributions are assessed on the minimum base, not the lower actual salary. A sub-minimum gross still attracts contributions on ALL 40,000 (2025) / ALL 50,000 (2026).  _([conservative default, corroborated by min-base rule])_
-
-### Rule 5 -- Health insurance has NO ceiling
-
-- **Health insurance ceiling rule** — The 1.7% employee and 1.7% employer health contributions are assessed on full gross salary, floored at the minimum base only. The maximum (ceiling) applies ONLY to the 9.5%/15% social-insurance components.  _([tax-checker / TPA; PwC])_
-
-### Rule 6 -- Self-employed social insurance
-
-- **Self-employed social insurance rate** — 23% on a base of at least the minimum salary (ALL 40,000 in 2025; ALL 50,000 in 2026)  _([PwC])_
-
-### Rule 7 -- Self-employed health insurance
-
-- **Self-employed health insurance rate** — 3.4% on a base of at least double the minimum salary (ALL 80,000 in 2025; ALL 100,000 in 2026)  _([PwC])_
-
-### Rule 8 -- Withholding and remittance
-
-- **Withholding and remittance** — The employer withholds employee PIT plus employee social + health contributions and remits them together with the employer social + health contributions each month.  _([PwC])_
-
-### Rule 9 -- Declaration and payment deadline
-
-- **Declaration and payment deadline** — The monthly payroll declaration (Listepagesa / E-SIG 025), PIT, and social/health contributions must be filed and paid electronically by the 20th day of the following month.  _([PwC])_
-
-### Rule 10 -- PIT is separate from contributions
-
-- **PIT separation rule** — Employment-income PIT is progressive (13% and 23% with a tax-free portion) under Law No. 29/2023, effective 1 Jan 2024. It is NOT a social contribution. The monthly PIT bands conflict across sources [RESEARCH GAP -- reviewer to confirm] -- do not compute PIT in this skill.  _([PwC])_
-
-## Section 6 -- Tier 2 catalogue
-
-When payroll data is ambiguous or client circumstances are unclear, flag these for reviewer confirmation.
-
-### T2-1 -- 2026 high-earner maximum base
-
-- **T2-1 -- 2026 high-earner maximum base** — Trigger: Salary above ALL 186,416/month in a 2026 period. Issue: The 2026 social-insurance ceiling is disputed (PwC/HLB ALL 186,416 vs ARS summary ALL 220,520). The two cannot both be correct. Action: Use ALL 186,416 and flag; do not file without confirming against DCM No. 776 / Official Gazette.
-
-### T2-2 -- Sub-minimum gross salary
-
-- **T2-2 -- Sub-minimum gross salary** — Trigger: Stated gross is below the minimum contribution base. Issue: Contributions must be grossed up to the minimum base; a genuinely sub-minimum gross is unusual and may indicate part-time arrangements, underdeclaration, or a data error. Action: Confirm the actual gross and the basis (Rule 4) with the reviewer.
-
-### T2-3 -- Mixed employment and self-employment
-
-- **T2-3 -- Mixed employment and self-employment** — Trigger: Individual is both employed and self-employed. Issue: Interaction of the employee (11.2%) and self-employed (23% / 3.4%) regimes, and whether minimum bases overlap, is not fully specified in this research. Action: Flag for reviewer; do not net the two regimes without confirmation. [RESEARCH GAP -- reviewer to confirm overlap rules.]
-
-### T2-4 -- Contribution arrears / late-payment penalties
-
-- **T2-4 -- Contribution arrears / late-payment penalties** — Trigger: Unpaid contributions from prior months/years. Issue: Penalty and interest figures under Law No. 9920/2008 were not confirmed from an authoritative source [RESEARCH GAP]. Action: Do not quantify. Escalate to an Albanian licensed accountant (Refusal R-AL-SSC-3).
-
-### T2-5 -- Undeclared work / unregistered employees
-
-- **T2-5 -- Undeclared work / unregistered employees** — Trigger: Workers not on the payroll declaration. Issue: Significant fines apply for undeclared work; the exact figure is not confirmed here [RESEARCH GAP]. Action: Flag for reviewer; do not estimate the fine.
-
-### T2-6 -- Bundled DPT remittance (PIT + contributions)
-
-- **T2-6 -- Bundled DPT remittance (PIT + contributions)** — Trigger: A single DPT debit covers PIT and contributions together. Issue: The bank line cannot be split without the E-SIG 025 payroll list. Action: Request the payroll declaration; flag for reviewer (see Example 6).
-
-## Section 7 -- Excel working paper template
-
-When producing an Albanian contribution computation, structure the working paper as follows:
-
-```
-ALBANIA CONTRIBUTIONS COMPUTATION -- WORKING PAPER
-Client: [name]
-Period (month/year): [____]   Base set: [2025 / 2026]
-Prepared: [date]
-
-INPUT DATA
-  Employment status:             [Employee / Self-employed]
-  Gross monthly salary (ALL):    [____]
-  Minimum base (ALL):            [40,000 (2025) / 50,000 (2026)]
-  Social ceiling (ALL):          [176,416 (2025) / 186,416 (2026) -- DISPUTED 2026]
-
-EMPLOYEE COMPUTATION (if employee)
-  Social base = clamp(gross, min, ceiling): ALL [____]
-  Employee social  (x 9.5%):     ALL [____]
-  Employer social  (x 15%):      ALL [____]
-  Health base = max(gross, min) [NO ceiling]: ALL [____]
-  Employee health  (x 1.7%):     ALL [____]
-  Employer health  (x 1.7%):     ALL [____]
-  Employee TOTAL  (= 11.2% in-bounds): ALL [____]
-  Employer TOTAL  (= 16.7% in-bounds): ALL [____]
-  Combined TOTAL  (= 27.9% in-bounds): ALL [____]
-
-SELF-EMPLOYED COMPUTATION (if self-employed)
-  Social base (>= min salary):   ALL [____]
-  Social (x 23%):                ALL [____]
-  Health base (>= 2 x min salary): ALL [____]
-  Health (x 3.4%):               ALL [____]
-  Self-employed TOTAL:           ALL [____]
-
-REMITTANCE
-  Declaration form: Listepagesa / E-SIG 025
-  Deadline:         20th of following month
-  PIT withheld (separate -- not in this skill): ALL [____]
-
-REVIEWER FLAGS
-  [List any Tier 2 flags here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+```oa-check
+name: Anila, self-employed on the 2026 minimum base, quarterly filer
+inputs:
+  minimum_wage: 50000
+  months_in_quarter: 3
+  months_in_year: 12
+steps:
+  - social_month: minimum_wage * 0.23
+  - health_month: minimum_wage * 2 * 0.034
+  - total_month: social_month + health_month
+  - quarter_due: total_month * months_in_quarter
+  - year_total: total_month * months_in_year
+expected:
+  social_month: 11500
+  health_month: 3400
+  total_month: 14900
+  quarter_due: 44700
+  year_total: 178800
 ```
 
-## Section 8 -- Bank statement reading guide
+### Example 2: part-time employee paid below the minimum wage
 
-### How contribution remittances appear on Albanian bank statements
+Gentian works 80 hours a month in a shop owned by a company, for ALL 30,000 gross a month. He has signed his personal status declaration there.
 
-**BKT (Banka Kombetare Tregtare):**
-- Description: "DPT", "TATIME", "SIGURIME SHOQERORE"
-- Timing: By the 20th of the month following the payroll month
-- Amount: Combined employer + employee contributions (and often PIT bundled)
+He works under 87 hours, so the social rates are 13.9% employer and 9.4% employee. The floor still applies: both bases are ALL 50,000, not his ALL 30,000. Employer social 13.9% × 50,000 = ALL 6,950; employee social 9.4% × 50,000 = ALL 4,700. Health 1.7% × 50,000 = ALL 850 each. His gross is under ALL 50,000, so no income tax (see `albania-payroll`). Net pay ALL 24,450. Employer cost ALL 37,800. Contributions of ALL 13,350 are 44.5% of his actual pay, against 27.9% for a full-time employee at or above the minimum wage.
 
-**Raiffeisen Bank Albania:**
-- Description: "DREJTORIA E TATIMEVE", "KONTRIBUTE"
-- Timing: Same monthly cycle
+```oa-check
+name: Gentian, part-time under 87 hours, ALL 30,000 gross (2026 floor)
+inputs:
+  gross: 30000
+  social_floor: 50000
+  social_ceiling: 186416
+steps:
+  - social_base: clamp(gross, social_floor, social_ceiling)
+  - health_base: max(gross, social_floor)
+  - employer_social: social_base * 0.139
+  - employee_social: social_base * 0.094
+  - employer_health: health_base * 0.017
+  - employee_health: health_base * 0.017
+  - total_contributions: employer_social + employee_social + employer_health + employee_health
+  - net_pay: gross - employee_social - employee_health
+  - employer_cost: gross + employer_social + employer_health
+  - share_of_pay: total_contributions / gross
+expected:
+  social_base: 50000
+  employer_social: 6950
+  employee_social: 4700
+  employer_health: 850
+  total_contributions: 13350
+  net_pay: 24450
+  employer_cost: 37800
+  share_of_pay: 0.445
+```
 
-**Credins Bank / Intesa Sanpaolo Bank Albania:**
-- Description: "TATIME", "SIGURIME", "DPT KONTRIBUTE", "SIGURIME SHENDETESORE"
-- Timing: Same monthly cycle
+## Ask the client first
 
-**Albanian-language terms to recognise:**
-- "Sigurime shoqerore" = social insurance contributions
-- "Sigurime shendetesore" = health insurance contributions
-- "Kontribute" = contributions
-- "Listepagesa" = the monthly payroll list/declaration
-- "Tatim mbi te ardhurat / TAP" = personal income tax (NOT a contribution)
-- "Paga / rroga" = salary/wage
-- "Pension / pensioni" = pension (benefit received, not a contribution)
+1. **Employee, self-employed, unpaid family worker, or more than one of these?** Each has its own base and rate, and a second job changes the ceiling test.
+2. **Monthly gross pay and contract hours.** Under 87 hours, or a contract under one week, changes the rates; the ALL 50,000 floor applies regardless.
+3. **For the self-employed: registered for VAT or not, and the base chosen.** VAT status decides monthly or quarterly filing; a base above ALL 50,000 raises both contributions and future pension.
+4. **Any foreign element.** A posted worker with a certificate of coverage from an agreement country stays in the home scheme.
+5. **Special status:** technology-park employer, partial invalidity pension, farmer, ambulant trader or domestic worker.
 
-**Key identification tips:**
-1. Contribution remittances are always outgoing (DEBIT) to the DPT/tatime.
-2. They recur monthly, due by the 20th of the following month.
-3. A single DPT debit may bundle PIT + employee contributions + employer contributions -- request the E-SIG 025 list to split.
-4. Do not confuse outbound DPT debits (contributions/PIT paid) with inbound pension/sickness/maternity credits (benefits received).
-5. Within bounds, employee total = 11.2% and employer total = 16.7% of gross; above the social ceiling the social component caps but health does not.
+## Sources
 
-## Section 9 -- Onboarding fallback
+| Source | URL | Read on |
+|---|---|---|
+| Law No. 7703/1993 "Për sigurimet shoqërore", consolidated to Law No. 64/2023 (ISSH copy), arts. 7, 9 to 11, 13 | https://www.issh.gov.al/wp-content/uploads/2026/08/LIGJ-NR.-7703-DATE-11.5.1993-PER-SIGURIMET-SHOQERORE-NE-REPUBLIKEN-E-SHQIPERISE-I-NDRYSHUAR-1-1.pdf | 2026-10-23 |
+| Law No. 10383/2011 "Për sigurimin e detyrueshëm të kujdesit shëndetësor", consolidated to Law No. 65/2023 (FSDKSH), arts. 6 to 9 | https://fsdksh.gov.al/project/ligji-i-fondit/ | 2026-10-23 |
+| Council of Ministers Decision No. 77 of 28.1.2015 on compulsory contributions, consolidated to Decision No. 702 of 13.11.2024 (ISSH copy), chs. II and III | https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf | 2026-10-23 |
+| Council of Ministers Decision No. 776 of 19.12.2025 on the national minimum wage (ISSH copy) | https://www.issh.gov.al/wp-content/uploads/2026/08/VKM-NR.-776-DATE-19.12.2025-PER-PERCAKTIMIN-E-PAGES-MINIMALE-NE-SHKALLE-VENDI.pdf | 2026-10-23 |
+| Instruction No. 23 of 9.12.2014 on collection of compulsory contributions, consolidated to Instruction No. 16 of 8.7.2026 (ISSH copy), paras. 4 and 6 | https://www.issh.gov.al/wp-content/uploads/2026/08/UDHEZIM-NR.-23-DATE-09.12.2014-PER-MBLEDHJEN-E-KONTRIBUTEVE-TE-DETYRUESHME-TE-SIGURIMEVE-SHOQERORE-DHE-SHENDETESORE-i-perditesuar.pdf | 2026-10-23 |
+| General Instruction No. 26 of 8.9.2023 on income tax, consolidated to Instruction No. 9 of 12.3.2026, Annex 2 (listëpagesa filing notes) | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
+| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated, art. 65(1) | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-23 |
+| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 76, 113 to 116, 119 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
+| General Directorate of Taxes, "Nga 1 janari 2026, rritet paga minimale dhe maksimale" (14.01.2026) | https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/ | 2026-10-23 |
+| General Directorate of Taxes, tax calendar: listëpagesa | https://tatime.gov.al/kalendari_tatimor/listepagesa/ | 2026-10-23 |
+| General Directorate of Taxes, payroll Q&A | https://tatime.gov.al/pyetje-pergjigje-per-listepagesat/ | 2026-10-23 |
+| General Directorate of Taxes, form models (E-SIG 025/a.1, 025/a.2, 027/a) | https://tatime.gov.al/institucioni/publikime/modele-dokumentash-tatimore/ | 2026-10-23 |
+| General Directorate of Taxes, interest rates for late-payment interest | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-10-23 |
+| Social Insurance Institute, compulsory insurance | https://www.issh.gov.al/sigurimi-i-detyruar/ | 2026-10-23 |
+| Social Insurance Institute, social insurance for foreigners | https://www.issh.gov.al/sigurimet-shoqerore-per-te-huajt-ne-shqiperi/ | 2026-10-23 |
+| Social Insurance Institute, bilateral agreements in force | https://www.issh.gov.al/shtetet-me-te-cilat-shqiperia-ka-marreveshje/ | 2026-10-23 |
 
-If the client provides only a bank statement and no other information:
-
-1. **Scan for DPT/tatime debits** -- identify all outgoing payments matching Section 3 patterns.
-2. **Group by month** -- contributions are monthly, due by the 20th of the following month.
-3. **Estimate the gross from the contribution** (within bounds, employer+employee combined = 27.9% of gross):
-   - Implied gross ~= combined remittance / 0.279 (only valid if no PIT is bundled and salary is within bounds). Treat as a rough estimate only.
-4. **Flag the floor/ceiling:**
-   - If the combined remittance is small, the salary may be at/below the minimum base (ALL 40,000 in 2025 / ALL 50,000 in 2026).
-   - If large, the social component may be capped at the ceiling (ALL 176,416 in 2025 / ALL 186,416 in 2026).
-5. **Flag for reviewer:** "Contribution classification derived from bank-statement amounts only. Gross salary, period (2025 vs 2026 bases), and whether PIT is bundled have not been independently verified. Reviewer must confirm against the E-SIG 025 payroll list before filing."
-
-### Contribution rates (2025) -- with provenance
-
-**Contribution rates (2025) -- with provenance**  _([PwC Albania -- Other taxes]; [PwC])_
-
-| Component | Employee | Employer | Source |
-| --- | --- | --- | --- |
-| Social insurance | 9.5% | 15% | [PwC Albania -- Other taxes] |
-| Health insurance | 1.7% | 1.7% | [PwC Albania -- Other taxes] |
-| **Total** | **11.2%** | **16.7%** | [PwC] |
-| **Combined** | colspan -> **27.9%** |  | [PwC] |
-
-*Arithmetic check: 9.5 + 1.7 = 11.2; 15 + 1.7 = 16.7; 11.2 + 16.7 = 27.9. Reconciles.*
-
-### Contribution bases -- with provenance
-
-**Contribution bases -- with provenance**  _(2025: [HLB Albania]; 2026: [PwC significant developments])_
-
-| Item | 2025 | 2026 | Source |
-| --- | --- | --- | --- |
-| Minimum monthly base | ALL 40,000 | ALL 50,000 | 2025: [HLB Albania]; 2026: [PwC significant developments] |
-| Maximum social-insurance base | ALL 176,416 | ALL 186,416 (DISPUTED) | 2025: [HLB Albania]; 2026: [PwC + HLB] -- one source says ALL 220,520 [ARS] |
-| Health insurance ceiling | None | None | [tax-checker / TPA] |
-| Minimum wage | ALL 40,000 (since 1 Apr 2023) | ALL 50,000 (DCM No. 776, 19.12.2025) | 2025: [PwC]; 2026: [ARS / DCM No. 776] |
-| Self-employed social base | >= ALL 40,000 | >= ALL 50,000 | [PwC] |
-| Self-employed health base | >= ALL 80,000 (2x min) | >= ALL 100,000 (2x min) | [PwC] |
-
-### Self-employed rates -- with provenance
-
-**Self-employed rates -- with provenance**  _([PwC])_
-
-| Component | Rate | Base (2025) | Base (2026) | Source |
-| --- | --- | --- | --- | --- |
-| Social insurance | 23% | >= ALL 40,000 | >= ALL 50,000 | [PwC] |
-| Health insurance | 3.4% | >= ALL 80,000 | >= ALL 100,000 | [PwC] |
-
-*Self-employed monthly check (2025): social 40,000 x 0.23 = 9,200; health 80,000 x 0.034 = 2,720; total 11,920. (2026): social 50,000 x 0.23 = 11,500; health 100,000 x 0.034 = 3,400; total 14,900.*
-
-### Forms
-
-**Forms**  _([PwC]; [PwC -- Tax administration])_
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| Monthly payroll declaration (Listepagesa / E-SIG 025) | Declare salaries, withheld PIT, employer + employee social/health contributions | Electronically by the 20th of the following month | [PwC] |
-| Annual individual income declaration (DIVA) | Annual personal income reconciliation for individuals above the filing threshold | By 31 March of the following year (verify threshold) [RESEARCH GAP -- threshold] | [PwC -- Tax administration] |
-
-### Personal income tax (context only -- NOT this skill's scope)
-
-Employment-income PIT under Law No. 29/2023 (effective 1 Jan 2024) is progressive with a tax-free portion, then 13%, then 23% above ~ALL 200,000/month [PwC -- Taxes on personal income]. The monthly tax-free threshold is reported variously as ALL 30,000-50,000 depending on salary level and the post-Constitutional-Court 2024-25 changes [RESEARCH GAP -- reviewer to confirm monthly PIT bands]. Do not compute PIT here.
-
-### Penalties
-
-**Penalties**  _([PwC -- Tax administration]; [PwC])_
-
-| Item | Detail | Source / status |
-| --- | --- | --- |
-| Late declaration / late payment | Administrative penalties + late-payment interest under Law No. 9920/2008 (Tax Procedures); exact ALL/percentage figures not confirmed | [PwC -- Tax administration]; [RESEARCH GAP -- reviewer to confirm exact figures] |
-| Undeclared work / failure to register employees | Significant fines apply; exact figure not confirmed | [PwC]; [RESEARCH GAP -- reviewer to confirm] |
-
-### Test suite
-
-**Test 1:** Employee, gross ALL 100,000/month, 2025. -> Employee social 9,500; employer social 15,000; employee health 1,700; employer health 1,700. Employee total = **11,200**; employer total = **16,700**; combined = **27,900**.
-
-**Test 2:** Employee, gross ALL 250,000/month, 2025 (above ceiling 176,416). -> Employee social = 176,416 x 0.095 = **16,759.52**; employer social = 176,416 x 0.15 = **26,462.40**; employee health = 250,000 x 0.017 = **4,250**; employer health = **4,250**. Employee total = **21,009.52**; employer total = **30,712.40**.
-
-**Test 3:** Employee, gross ALL 30,000/month, 2025 (below floor 40,000). -> Assess on min base 40,000. Employee social = 3,800; employer social = 6,000; employee health = 680; employer health = 680. Employee total = **4,480**; employer total = **6,680**.
-
-**Test 4:** Self-employed, 2025. -> Social = 40,000 x 0.23 = **9,200**; health = 80,000 x 0.034 = **2,720**; total = **11,920**/month.
-
-**Test 5:** Self-employed, 2026. -> Social = 50,000 x 0.23 = **11,500**; health = 100,000 x 0.034 = **3,400**; total = **14,900**/month.
-
-**Test 6:** Employee, gross ALL 250,000/month, 2026 (above ceiling 186,416, PwC/HLB). -> Employee social = 186,416 x 0.095 = **17,709.52**; employer social = 186,416 x 0.15 = **27,962.40**; employee health = **4,250**; employer health = **4,250**. Employee total = **21,959.52**; employer total = **32,212.40**. FLAG: 2026 ceiling disputed.
-
-**Test 7:** Employee, gross ALL 50,000/month, 2026 (within bounds: floor 50,000, ceiling 186,416). -> Employee social = 4,750; employer social = 7,500; employee health = 850; employer health = 850. Employee total = **5,600** (= 11.2%); employer total = **8,350** (= 16.7%).
-
-**Test 8:** Bundled DPT debit ALL 45,000, single line, no payroll list. -> Cannot split PIT from contributions. EXCLUDE from VAT; request E-SIG 025; flag for reviewer.
-
-### Prohibitions
-
-- **Prohibition - employment status** — NEVER compute contributions without knowing employment status (employee vs self-employed).  _([PwC])_
-- **Prohibition - health ceiling** — NEVER apply the social ceiling to the health components -- health (1.7%/1.7%) has NO ceiling.  _([tax-checker / TPA])_
-- **Prohibition - sub-minimum gross** — NEVER assess contributions on a sub-minimum gross -- gross up to the minimum base.  _([HLB Albania])_
-- **Prohibition - 2026 maximum base reliance** — NEVER rely on the 2026 maximum base (ALL 186,416) for a high earner without confirming against DCM No. 776 / Official Gazette -- it is disputed.  _([ARS / DCM No. 776])_
-- **Prohibition - penalty quantification** — NEVER quantify late-payment or undeclared-work penalties -- the figures are unconfirmed [RESEARCH GAP]; escalate.  _([PwC -- Tax administration])_
-- **Prohibition - PIT computation** — NEVER compute PIT in this skill -- the monthly bands conflict across sources; use a dedicated PIT skill.  _([PwC -- Taxes on personal income])_
-- **Prohibition - employer vs employee lines** — NEVER treat employer contributions as the same line as withheld employee contributions -- they are distinct (16.7% vs 11.2%).  _([PwC])_
-- **Prohibition - inbound vs outbound confusion** — NEVER confuse inbound benefits (pension, sickness, maternity) with outbound contributions.
-- **Prohibition - definitive presentation** — NEVER present contribution figures as definitive -- label as estimated and direct the client to their E-SIG 025 payroll list and DPT/e-Albania account.
-- **Prohibition - secondary aggregator figures** — NEVER use secondary aggregator base figures (e.g., ALL 22,000/95,130 or ALL 45,000/310,000) -- they conflict with PwC/HLB and appear erroneous.
-
-## References
-
-**References**  _(n/a)_
-
-| Tag | Title | Publisher | URL |
-| --- | --- | --- | --- |
-| [PwC -- Other taxes] | Albania - Individual - Other taxes | PwC (reviewed 19 Feb 2026) | https://taxsummaries.pwc.com/albania/individual/other-taxes |
-| [PwC significant developments] | Albania - Individual - Significant developments | PwC | https://taxsummaries.pwc.com/albania/individual/significant-developments |
-| [PwC -- Taxes on personal income] | Albania - Individual - Taxes on personal income | PwC | https://taxsummaries.pwc.com/albania/individual/taxes-on-personal-income |
-| [PwC -- Tax administration] | Albania - Individual - Tax administration | PwC | https://taxsummaries.pwc.com/albania/individual/tax-administration |
-| [HLB Albania] | Increase of the Minimum Wage in Albania from 1 January 2026 | HLB Albania | https://www.hlb.al/increase-of-the-minimum-wage-in-albania-from-1-january-2026-what-changes-for-employers-and-employees/ |
-| [ARS / DCM No. 776] | Council of Ministers Decision No. 776 dated 19.12.2025 -- National Minimum Wage | ARS firm (summary of official DCM) | https://arsfirm.al/en/council-of-ministers-decision-no-776-dated-december-19-2025-on-the-determination-of-the-minimum-wage-at-the-national-level/ |
-| [tax-checker / TPA] | Social insurance in Albania | TPA Group / tax-checker (dated 2023) | https://www.tax-checker.com/tax-system-in-albania/social-insurance-in-albania/ |
-| [Eurofast] | Albania Payroll Guide 2025 | Eurofast | https://eurofast.eu/wp-content/uploads/2025/02/Payroll-Guide-2025_Albania-1.pdf |
-| [DPT] | Tax on personal income (official authority page) | General Directorate of Taxation (DPT) | https://www.tatime.gov.al/eng/c/4/96/108/tax-on-personal-income |
-
-**Caveats (read before relying on 2026 figures):** The 2026 MAXIMUM social-insurance base is DISPUTED. PwC (reviewed Feb 2026) and HLB Albania state ALL 186,416 (same absolute +ALL 10,000 increase as the minimum wage); one firm summary (ARS) of DCM No. 776 states ALL 220,520 (25% proportional indexation matching the 40,000->50,000 minimum-wage rise). These cannot both be correct -- confirm against the published DCM No. 776 / Official Gazette before relying on the 2026 maximum. The 2025 figures (min ALL 40,000 / max ALL 176,416) are well-corroborated (high confidence). Penalty amounts and interest rates under Law No. 9920/2008 are not confirmed (low confidence) [RESEARCH GAP]. PIT monthly bands conflict across sources and are out of scope here. Confirm exact form codes (Listepagesa / E-SIG 025) with the e-Filing / e-Albania portal. Overall confidence: medium.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the 2026 fixed monthly amounts for ambulant traders and domestic workers (Decision 77/2015 ch. III paras. 13 and 14 still print ALL 4,696 and ALL 3,948, computed on older minimum wages); the 2026 rules and amounts for self-employed farmers; whether the self-employed person's own contributions are deductible in computing business income under Law 29/2023; how the social ceiling is shared between two employers in practice (listëpagesa categories 8 to 10 and 17 to 19); whether a self-employed person who is also an employee elsewhere at or above the ceiling still owes self-employed social contributions; the start date and scope of each bilateral agreement and the certificate of coverage procedure (the ISSH procedure page returned no text today); the ISSH page still gives ALL 10,000 for every late listëpagesa, while Law 9920/2008 art. 113 gives ALL 10,000, 5,000 or 3,000 by type of taxpayer (this skill follows the law); the E-SIG 027/a filing notes on tatime.gov.al still say at least 48 hours before work starts, while Instruction 23/2014 para. 4.1 and Law 9920/2008 art. 119(1) say at least one calendar day (this skill follows the law).

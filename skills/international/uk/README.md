@@ -5,8 +5,6 @@ not_applicable: {}
 covered_by:
   SC: uk-national-insurance
   XB: uk-foreign-tax-and-withholding
-partial:
-  XB: "uk-to-uae-relocation-tax and uk-to-italy-flat-tax-relocation are still written for tax year 2025 and have not been checked against the law in force for 2026/27"
 ---
 
 # United Kingdom: tax pack
@@ -23,7 +21,7 @@ Tax year 6 April to 5 April for individuals; companies use their own accounting 
 | SC, social contributions | uk-national-insurance | source-cited draft |
 | PR, payroll withholding | uk-payroll, uk-student-loan-repayment | source-cited draft |
 | TP, transfer pricing | uk-transfer-pricing (2026: Finance Act 2026 reform, UTPP charge, UK-to-UK exemption, SME exemption in euro limits, method and benchmarking steps) | source-cited draft |
-| XB, cross-border | uk-non-resident-sa109 (hub), uk-foreign-tax-and-withholding (foreign tax credit relief, outbound withholding, CT61, treaty rates for 12 partners), uk-statutory-residence-test, uk-non-dom, uk-to-uae-relocation-tax, uk-to-italy-flat-tax-relocation | source-cited draft |
+| XB, cross-border | uk-non-resident-sa109 (hub), uk-foreign-tax-and-withholding (foreign tax credit relief, outbound withholding, CT61, treaty rates for 12 partners), uk-statutory-residence-test, uk-non-dom, uk-to-uae-relocation-tax and uk-to-italy-flat-tax-relocation (2026/27: SRT, split year, 5-year rule with the April 2026 close-company change, IHT tail; Italy flat tax EUR 300,000 from 2026) | source-cited draft |
 
 ## Official sources
 
