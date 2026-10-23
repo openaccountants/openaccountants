@@ -1,12 +1,12 @@
 ---
 name: gr-income-tax
-description: "Greek personal income tax for tax year 2026 (calendar year, return filed in 2027) for all individuals: employees, pensioners, the self-employed and landlords. Covers the 2026 scale of ν. 5246/2025 (9% to 44%), the lower rates for parents and for under-30s, the tax reduction for salaries and pensions (EUR 777 upwards, by number of children), the minimum deemed income of the self-employed (arts. 28A to 28Γ, from ν. 5073/2023), the 2026 rental scale (15% to 45%), dividends 5%, interest 15%, royalties 20%, the 30% card-spending requirement, the abolished solidarity contribution, the E1 return in myAADE, eight instalments, the early-filing discount and the 55% prepayment. Trigger phrases: Greek income tax, φορολογική δήλωση, E1, how much tax in Greece, salary tax Greece, freelancer tax Greece, τεκμήρια, rental income Greece. Out of scope: moving in or out and non-residents (gr-cross-border), EFKA contributions (gr-efka), company tax (gr-corporate-income-tax), VAT (gr-vat-return)."
+description: "Greek personal income tax for tax year 2026 (calendar year, return filed in 2027) for all individuals: employees, pensioners, the self-employed and landlords. Covers the 2026 scale of ν. 5246/2025 (9% to 44%), the lower rates for parents and for under-30s, the tax reduction for salaries and pensions (EUR 777 upwards, by number of children), the minimum deemed income of the self-employed (arts. 28A to 28Γ, from ν. 5073/2023), the 2026 rental scale (15% to 45%), dividends 5%, interest 15%, royalties 20%, the 30% card-spending requirement, the abolished solidarity contribution, the E1 return in myAADE, eight instalments, the early-filing discount and the 55% prepayment. Trigger phrases: Greek income tax, φορολογική δήλωση, E1, how much tax in Greece, salary tax Greece, freelancer tax Greece, τεκμήρια, rental income Greece. Out of scope: moving in or out and non-residents (gr-cross-border), EFKA contributions (gr-efka for the self-employed, gr-employee-contributions for employees), company tax (gr-corporate-income-tax), VAT (gr-vat-return)."
 jurisdiction: GR
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 2.3
+version: 2.4
 verified_by: pending
 ---
 
@@ -18,6 +18,7 @@ This skill covers Greek income tax for individuals for tax year 2026: employees,
 
 - Moving to or from Greece, non-residents, the 5A, 5B and 5C regimes, withholding on payments abroad: `gr-cross-border`
 - EFKA social contributions for the self-employed: `gr-efka`
+- EFKA contributions on employees' pay: `gr-employee-contributions`
 - Company income tax: `gr-corporate-income-tax`
 - VAT: `gr-vat-return`
 - Overview of the system: `gr-tax-overview`
@@ -91,7 +92,7 @@ Codification: [Income Tax Code, Ministry of Finance codification up to ν. 5264/
 
 **Low incomes with no business (art. 15(1A), new from 2026).** Where real income is EUR 6,000 or less, deemed living-expense income is EUR 9,500 or less, and the person runs no registered business or farm, that income and any added deemed-income difference are taxed on the scale with the art. 16 reduction. The part of real income above EUR 6,000 is taxed under art. 29(1), without the art. 16 reduction.
 
-**Self-employed: profit.** Profit is business income minus deductible expenses (arts. 21 and 22). An expense is deductible if it is in the business's interest, is a real transaction at market value, and is recorded and documented. Not deductible (art. 23), among others: any purchase over EUR 500 not paid by bank means; unpaid social contributions; fines; income tax itself; personal consumption; entertainment; rent and staff costs not paid electronically. EFKA contributions are covered in `gr-efka`. Fees for technical work, management, consulting and similar services paid by a business are subject to 20% withholding (art. 64(1)(δ)). That tax is credited on the return (art. 67(6)) and is also deducted from the prepayment (art. 69(1)). A business loss is carried forward against business profit for 5 years (art. 27(1)). Losses of one spouse cannot be set against the other's income (art. 67(4)(ε)).
+**Self-employed: profit.** Profit is business income minus deductible expenses (arts. 21 and 22). An expense is deductible if it is in the business's interest, is a real transaction at market value, and is recorded and documented. Not deductible (art. 23), among others: any purchase over EUR 500 not paid by bank means; unpaid social contributions; fines; income tax itself; personal consumption; entertainment; rent and staff costs not paid electronically. EFKA contributions of the self-employed are fixed monthly amounts by insurance category, not a percentage of profit. The 2026 amounts are in e-EFKA circular 6/2026 ([circular 6/2026](https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-62026)), and the category for a year is chosen in the e-EFKA online service open in December and January, applying from 1 January ([e-EFKA general document 1811441/13.07.2026](https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/geniko-eggrafo-181144113-07-2026), section 7). Contributions actually paid are a business expense, so they reduce business profit (art. 22). They are not deducted from total taxable income. Unpaid contributions are not deductible (art. 23(γ)), and nor are late-payment surcharges (art. 23(ε)). The amounts, categories and deadlines are in `gr-efka`. Fees for technical work, management, consulting and similar services paid by a business are subject to 20% withholding (art. 64(1)(δ)). That tax is credited on the return (art. 67(6)) and is also deducted from the prepayment (art. 69(1)). A business loss is carried forward against business profit for 5 years (art. 27(1)). Losses of one spouse cannot be set against the other's income (art. 67(4)(ε)).
 
 **Self-employed: minimum deemed income (arts. 28A to 28Γ, from ν. 5073/2023).** A sole trader's annual business income is presumed to be at least the art. 28A amount, capped at EUR 50,000:
 
@@ -240,6 +241,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025: arts. 3, 7, 8, 11 to 17, 19 to 23, 27 to 30, 35 to 40, 60, 67, 69, 70, 72(74), with footnotes on ν. 5246/2025 and ν. 5259/2025 | https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf | 2026-10-23 |
+| e-EFKA circular 6/2026 (2026 monthly contributions of the self-employed; detail in `gr-efka`) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-62026 | 2026-10-23 |
+| e-EFKA general document 1811441/13.07.2026, section 7 (category change open December to January) | https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/geniko-eggrafo-181144113-07-2026 | 2026-10-23 |
 | Ministry of Finance, notice of the codification | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
 | Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53, 54 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
 | AADE, E1 return instructions (2025 income, filed 2026) | https://www.aade.gr/sites/default/files/2026-03/Odigies_E1_2026_0.pdf | 2026-10-23 |
