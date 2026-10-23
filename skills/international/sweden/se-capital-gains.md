@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Capital gains on shares and securities
 
-- **Rate**: Gains on shares and other securities are capital income taxed at 30%. Gains on unlisted shares in Swedish companies (and comparable foreign companies) are taken up at five sixths, an effective 25% (IL 42 kap. 15 a §). Qualified shares in a closely held company (3:12 rules) are out of scope.
+- **Rate**: Gains on shares and other securities are capital income taxed at 30%. Gains on unlisted shares in Swedish companies (and comparable foreign companies) are taken up at five sixths, an effective 25% (IL 42 kap. 15 a §). Qualified shares in a closely held company (3:12 rules) are in [se-closely-held-company-312](se-closely-held-company-312.md).
 - **Losses on listed shares**: Losses on listed shares and other listed delägarrätter (for example equity fund units) are deducted in full against taxable gains in the same year on delägarrätter, listed or unlisted (IL 48 kap. 20 §). Only the part that cannot be used that way is cut to 70% and deducted against other capital income (IL 48 kap. 20 a §, first paragraph).
 - **Losses on unlisted shares**: Five sixths deductible against gains on shares (IL 48 kap. 20 §). Any remainder: five sixths of 70% against other capital income (20 a §, second paragraph).
 - **Order**: Full-deductible losses first, then the five-sixths losses (48 kap. 20 §, second paragraph).
@@ -125,7 +125,7 @@ expected:
 | Skatteverket, belopp och procent inkomstår 2026 (schablonintäkt på investeringssparkonto, statslåneränta, försäljning privatbostad, försäljning näringsfastighet, uppskov, skattereduktion vid underskott av kapital) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-23 |
 | Skatteverket, begär uppskov | https://www.skatteverket.se/privat/fastigheterochbostad/forsaljningavbostad/begaruppskov.4.6d02084411db6e252fe80009532.html | 2026-10-23 |
 
-Not yet confirmed: whether an existing deferral is taxed when its owner leaves Sweden in any case other than a sale or transfer of the replacement home (47 kap. 11 b § is repealed; Skatteverket's page says a final deferral lasts while the person owns the home); the rules for qualified shares in closely held companies (out of scope).
+Not yet confirmed: whether an existing deferral is taxed when its owner leaves Sweden in any case other than a sale or transfer of the replacement home (47 kap. 11 b § is repealed; Skatteverket's page says a final deferral lasts while the person owns the home).
 
 > Working paper only. ISK standard income rates change every year; confirm the
 > current year rate from Skatteverket. Have a qualified Swedish tax adviser (skatterådgivare)
