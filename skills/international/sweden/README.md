@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: se-cross-border
 partial:
-  IT-IND: "se-capital-gains has 2026 ISK and interest rules, but its capital loss offset and private housing gain rules have not been checked against IL 45-48 kap. for 2026"
+  IT-IND: "no skill covers the 3:12 rules for owners of closely held companies (dividends and gains on qualified shares), which change from income year 2026"
 ---
 
 # Sweden: tax pack
