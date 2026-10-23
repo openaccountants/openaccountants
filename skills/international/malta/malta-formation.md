@@ -1,10 +1,12 @@
 ---
 name: malta-formation
-description: Use this skill whenever asked about forming, incorporating, or registering a company in Malta. Trigger on phrases like "set up a company in Malta", "Malta Ltd", "Malta company formation", "register a business in Malta", "MBR registration", "Malta Business Registry", "incorporate in Malta", "Malta company costs", "Malta share capital", "Malta memorandum and articles", or any question about starting a limited liability company in Malta. Covers entity types, registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on Malta company formation.
-version: 1.0
+description: "Use this skill whenever asked about forming, incorporating or registering a company in Malta in 2026. Covers the entity types (sole trader, partnership en nom collectif, private limited company, single member company, public limited company), the Companies Act rules on name, memorandum, minimum share capital (EUR 1,164.69 private, EUR 46,587.47 public) and paid-up share (20% and 25%), directors and the company secretary, the Malta Business Registry registration fee (EUR 100 electronic up to EUR 1,500 authorised capital), beneficial owner filings, the annual return (EUR 85 electronic fee, 42 days), accounts deadlines, tax and VAT registration, and post-formation compliance. Trigger on: set up a company in Malta, Malta Ltd, MBR registration, BAROS, incorporate in Malta, Malta company costs, Malta share capital, Malta memorandum and articles, company secretary Malta."
+version: 1.1
 jurisdiction: MT
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
+verified_by: pending
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,188 +16,239 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Malta Formation
+# Malta Formation v1.1
 
-## Section 1 -- Quick Reference
+Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
 
-**Quick Reference**
+Tax year 2026. This skill is the workflow for setting up a Maltese company. It does not repeat the tax computations: company tax and refunds are in `mt-corporate-tax`; accounts and audit in `malta-financial-statements`; VAT registration in `malta-vat-return`; employer registration and payroll in `malta-payroll`; the owner's personal tax in `malta-income-tax`; selling the shares later in `selling-a-company-in-malta`; company residence and substance in `mt-company-residence-and-substance`.
 
-| Field | Value |
+## Section 1: Quick Reference
+
+| Field | Value | Source |
+| --- | --- | --- |
+| Registrar | Registrar of Companies at the Malta Business Registry (MBR); online filing through BAROS | mbr.mt |
+| Key law | Companies Act, Cap. 386; Companies Act (Fees) Regulations, S.L. 386.03; Register of Beneficial Owners Regulations, S.L. 386.19 | legislation.mt |
+| Minimum authorised capital, private company | EUR 1,164.69 | Cap. 386 art. 72(1) |
+| Minimum authorised capital, public company | EUR 46,587.47 | Cap. 386 art. 72(1) |
+| Paid up on signing the memorandum | At least 20% of each share taken up (private); at least 25% (public) | Cap. 386 art. 72(3) |
+| Registration fee, electronic, authorised capital up to EUR 1,500 | EUR 100 (paper: EUR 245) | S.L. 386.03 Schedule (a)(i); MBR fee page |
+| Annual return fee, electronic, authorised capital up to EUR 1,500 | EUR 85 (paper: EUR 100) | S.L. 386.03 Schedule (i)(i) |
+| Company tax rate | 35%, with shareholder refunds; see `mt-corporate-tax` | Cap. 123 art. 56(6) |
+
+## Section 2: Entity Types Comparison
+
+| Feature | Sole trader | Partnership en nom collectif | Private limited company | Public limited company (p.l.c.) | Source |
+| --- | --- | --- | --- | --- | --- |
+| Legal personality | No | Yes, distinct from the partners | Yes | Yes | Cap. 386 art. 4(4) |
+| Liability | Unlimited | Unlimited, joint and several (partnership assets first) | Limited to amount unpaid on shares | Same | Cap. 386 art. 7, 67 |
+| Members | 1 | 2 or more | At least 2; 1 for a single member company (an exempt company whose objects state its main activity); at most 50 | At least 2 | Cap. 386 art. 7, 68, 209, 212 |
+| Directors | Not applicable | Not applicable | At least 1 | At least 2 | Cap. 386 art. 137 |
+| Company secretary | No | No | Yes | Yes | Cap. 386 art. 138 |
+| Minimum authorised capital | Not applicable | Not applicable | EUR 1,164.69 | EUR 46,587.47 | Cap. 386 art. 72 |
+| Tax | Individual rates (`malta-income-tax`) | Each partner taxed on their share, unless the partnership has elected to be treated as a company (Cap. 372 art. 27) | 35% with refunds (`mt-corporate-tax`) | Same | |
+| Audit | No | No | Required unless the micro exemption applies (`malta-financial-statements`) | Always | Cap. 386 art. 185(2) |
+
+Recommended default for a trading business with outside customers: a private limited company. Run the sole trader or company comparison in `malta-tax-optimization` first.
+
+## Section 3: Registration Steps
+
+### Step 1: Choose the name
+
+A private company's name must end with "private limited company", "limited" or "ltd." (art. 70(2)). A public company's name ends with "public limited company" or "p.l.c." (art. 70(1)). Name reservation costs EUR 10 a name (S.L. 386.03 Schedule (s)). The Registrar refuses a name that is the same as, or confusingly close to, another partnership's name, is offensive or undesirable, or is already reserved (art. 70(4)). A name with "fiduciary", "nominee" or "trustee" needs authorisation to act as a trustee (art. 70(5)).
+
+### Step 2: Draft the memorandum and articles
+
+The memorandum must state (art. 69(1)):
+
+- private or public company;
+- name and residence of each subscriber;
+- the company name;
+- the registered office in Malta and the company's e-mail address;
+- the objects (not simply "any lawful purpose", art. 71);
+- authorised capital, its division into shares, shares taken up by each subscriber and the amount paid up on each;
+- number of directors, the first directors, and how the company is represented;
+- the first company secretary.
+
+Where authorised capital equals the minimum, it must be fully subscribed in the memorandum (art. 72(2)). Articles are optional; the First Schedule model regulations apply where they are silent (art. 75). The Act does not require a notary for a private writing; a public deed is optional (art. 76(2)).
+
+### Step 3: Pay up the share capital
+
+At least 20% of each share taken up (private) or 25% (public) is paid on signing (art. 72(3)). Shares may be paid for in assets "capable of economic assessment", but not in future services (art. 73(1)). A non-cash contribution needs an independent expert's report approved by the Registrar, or a director's declaration where it does not exceed EUR 50,000, delivered before registration (art. 73(4) to (6)). Keep evidence of the cash paid up; MBR's current document checklist is on mbr.mt.
+
+### Step 4: Appoint the officers
+
+- Each director must sign the memorandum or a written consent to act (art. 139(1)).
+- Every company has a company secretary (art. 138(1)). The Act sets no residence requirement for the secretary. A company cannot have its sole director as secretary, except an exempt company (art. 138(2)(a), 211(4)). A body corporate can be secretary only if it is a registered company service provider (art. 138(2)(c)).
+
+### Step 5: Register with MBR
+
+Deliver the memorandum and articles to the Registrar (art. 76), electronically through BAROS or on paper, with the registration fee and the beneficial owner declaration (S.L. 386.19). The company exists from the date on its certificate of registration (art. 77(1)). Anyone who trades in the company's name before then is personally liable unless agreed otherwise (art. 78).
+
+Registration fee, electronic format (S.L. 386.03 Schedule (a); MBR fee page):
+
+| Authorised capital | Fee |
 | --- | --- |
-| Country | Malta (Republic of Malta) |
-| Currency | EUR |
-| Company registrar | Malta Business Registry (MBR) -- mbr.mt |
-| Key legislation | Companies Act, Chapter 386 |
-| Typical formation time | 3--5 working days (electronic filing via BAROS) |
-| Corporate tax rate | 35% (effective 5% after refund system) |
-| Skill version | 1.0 |
+| Up to EUR 1,500 | EUR 100 |
+| Over EUR 1,500, up to EUR 5,000 | EUR 210 plus EUR 12 for each EUR 500 or part over EUR 1,500 |
+| Over EUR 5,000, up to EUR 10,000 | EUR 294 plus EUR 17 for each EUR 1,000 or part over EUR 5,000 |
+| Over EUR 10,000, up to EUR 50,000 | EUR 379 plus EUR 17 for each EUR 2,500 or part over EUR 10,000 |
+| Over EUR 2,500,000 | EUR 1,900 (the bands in between are in the Schedule) |
 
-## Section 2 -- Entity Types Comparison
+### Step 6: Tax registration
 
-**Entity Types Comparison**
+The company is resident in Malta from incorporation (Cap. 123 art. 2(1)). It needs a tax number with MTCA, and only a registered tax practitioner can file its return, after the company authorises the practitioner on form MTCA02 (see `mt-corporate-tax`).
 
-| Feature | Sole Trader | Private Limited (Ltd) | General Partnership (Soċjetà f'Isem Kollettiv) | Public Limited (p.l.c.) |
+### Step 7: VAT registration
+
+Register under Article 10 within thirty days of the first taxable supply, unless the company qualifies for and chooses Article 11 (turnover in the preceding calendar year not above EUR 35,000). Article 12 applies to EU acquisitions above EUR 10,000 and to reverse-charge services. Detail: `malta-vat-return`.
+
+### Step 8: Employer registration (if it will employ staff)
+
+Register as a payer under the FSS Rules before the first payroll and report employees to Jobsplus. Detail: `malta-payroll`.
+
+## Section 4: Capital Requirements
+
+| Entity | Minimum authorised capital | Paid up on signing | Non-cash consideration | Source |
 | --- | --- | --- | --- | --- |
-| Legal personality | No | Yes | No | Yes |
-| Liability | Unlimited | Limited to share capital | Unlimited (joint and several) | Limited to share capital |
-| Min. shareholders | 1 | 1 (single-member) or 2+ | 2+ | 2+ |
-| Min. directors | N/A | 1 | N/A | 2 |
-| Company secretary | No | Yes (must be Malta-resident) | No | Yes |
-| Min. authorised capital | N/A | €1,164.69 | N/A | €46,587.47 |
-| Min. paid-up capital | N/A | 20% of authorised (€233) | N/A | 25% of authorised |
-| Tax treatment | Personal income tax | Corporate 35% (refund system) | Partners taxed individually | Corporate 35% (refund system) |
-| Admin burden | Low | Medium | Low | High |
-| Audit required | No | Only if thresholds exceeded | No | Yes |
+| Private company | EUR 1,164.69 | 20% of each share taken up | Expert report, or director's declaration if not over EUR 50,000 | Cap. 386 art. 72, 73 |
+| Single member company | Same as private | Same | Same | Cap. 386 art. 212 |
+| Public company | EUR 46,587.47 | 25% of each share taken up | Same rules | Cap. 386 art. 72, 73 |
 
-**Recommended default:** Private Limited Company (Ltd) for most commercial purposes.
+At the minimum private capital, fully subscribed, 20% paid up is EUR 232.94 (1,164.69 × 20%, rounded to the cent).
 
-### Step 1: Choose Company Name
+## Section 5: Costs
 
-- **Choose Company Name** — - Check availability on MBR's BAROS portal - Name must end in "Limited" or "Ltd" - Restricted words (bank, insurance, fund) require prior regulatory approval  _(MBR BAROS portal)_
+Only statutory fees are listed. Professional fees, registered office services and bank fees are set by each provider.
 
-### Step 2: Prepare Memorandum and Articles of Association
+| Fee | Electronic | Paper | Source |
+| --- | --- | --- | --- |
+| Registration, authorised capital up to EUR 1,500 | EUR 100 | EUR 245 | S.L. 386.03 (a)(i) |
+| Name reservation | EUR 10 a name | | S.L. 386.03 (s) |
+| Annual return, authorised capital up to EUR 1,500 | EUR 85 | EUR 100 | S.L. 386.03 (i)(i) |
+| Annual return, over EUR 1,500 up to EUR 5,000 | EUR 120 | EUR 140 | S.L. 386.03 (i)(ii) |
+| Annual return, over EUR 5,000 up to EUR 10,000 | EUR 135 | EUR 160 | S.L. 386.03 (i)(iii) |
+| Annual return, over EUR 2,500,000 | EUR 1,200 | EUR 1,400 | S.L. 386.03 (i)(x) |
+| Certificate about the directors | EUR 10 | | S.L. 386.03 (p) |
 
-- **Prepare Memorandum and Articles of Association** — - Must include: company name, registered office (in Malta), objects, authorised share capital, share structure, director and secretary details - Signed by all subscribers before a legal procurator or notary  _(Companies Act, Chapter 386)_
+Increasing authorised capital later costs the difference between the registration fee at the new and old capital (S.L. 386.03 (e)).
 
-### Step 3: Deposit Share Capital
+## Section 6: Post-Formation Compliance
 
-- **Deposit Share Capital** — - Minimum 20% of each share's nominal value must be paid up on signing - Deposit into a bank account opened in the company's name (in formation) - Obtain bank deposit slip as evidence for MBR  _(Companies Act, Chapter 386)_
-
-### Step 4: File with Malta Business Registry (MBR)
-
-- **File with Malta Business Registry (MBR)** — - Submit memorandum and articles via BAROS (electronic) or in paper - Attach bank deposit slip, ID copies of directors/shareholders, proof of registered office - Pay registration fee  _(MBR)_
-
-### Step 5: Obtain Certificate of Registration
-
-- **Obtain Certificate of Registration** — - MBR issues certificate once documents satisfy all checks - Company legally exists from date stated on certificate  _(MBR)_
-
-### Step 6: Tax Registration with Commissioner for Revenue (CFR)
-
-- **Tax Registration with Commissioner for Revenue (CFR)** — - Register for income tax via CFR e-Services - Obtain tax registration number  _(CFR)_
-
-### Step 7: VAT Registration
-
-- **VAT Registration** — - Register under Article 10 (standard) or Article 11 (exempt without credit) - Mandatory if turnover exceeds €35,000 threshold or if intra-EU supplies  _(VAT Act Article 10 / Article 11)_
-
-### Step 8: Employer Registration (if applicable)
-
-- **Employer Registration (if applicable)** — - Register with Jobsplus for employment licences - Register for SSC Class 1 contributions with CFR  _(Jobsplus / CFR)_
-
-## Section 4 -- Capital Requirements
-
-**Capital Requirements**
-
-| Entity Type | Min. Authorised Capital | Min. Paid-Up | Payment Timing | In-Kind Contributions |
-| --- | --- | --- | --- | --- |
-| Private Ltd | €1,164.69 | 20% (€233) | On signing of memorandum | Permitted (must be valued by independent expert) |
-| Public p.l.c. | €46,587.47 | 25% | On signing of memorandum | Permitted (independent valuation required) |
-| Single-member Ltd | €1,164.69 | 20% (€233) | On signing of memorandum | Permitted |
-
-- **Full subscription requirement** — Where authorised capital equals the statutory minimum, it must be fully subscribed in the memorandum.  _(Companies Act, Chapter 386)_
-
-## Section 5 -- Costs Breakdown
-
-**Costs Breakdown**
-
-| Cost Component | Amount (EUR) | Notes |
+| Obligation | Deadline | Source |
 | --- | --- | --- |
-| MBR registration fee (electronic) | €100 | For authorised capital up to €1,500 |
-| MBR registration fee (paper) | €245 | For authorised capital up to €1,500 |
-| Paid-up share capital | €233 | 20% of €1,164.69 minimum |
-| Legal / CSP professional fees | €2,500--€4,000 | Preparation of memorandum and articles |
-| Document certification | €100--€200 | Notarisation of signatures |
-| Bank account setup | €0--€500 | Varies by bank |
-| **Total initial cost** | **€3,000--€5,200** | Excluding professional fees for complex structures |
+| Annual return, made up to each anniversary of registration | Within 42 days after the anniversary | Cap. 386 art. 184 |
+| Beneficial owners: annual return confirming or changing details | Within 42 days after each anniversary | S.L. 386.19 reg. 6A |
+| Beneficial owners: notice of a change | Within 14 days after the change is recorded with the company | S.L. 386.19 reg. 6(1) |
+| Change of directors, secretary or representation | Within 14 days | Cap. 386 art. 146 |
+| Annual accounts laid before the general meeting | Within 10 months of year end (private); 7 months (public) | Cap. 386 art. 181, 182 |
+| Annual accounts delivered to the Registrar | Within 42 days after the end of that laying period | Cap. 386 art. 183 |
+| Accounting records kept | 10 years | Cap. 386 art. 163(5) |
+| Company tax return and tax | Later of 9 months after year end and 31 March of the year of assessment; 30 September 2027 for a 31 December 2026 year end | S.L. 372.16 rule 2(c)(i); see `mt-corporate-tax` |
+| Provisional tax | 30 April, 31 August, 21 December (nil benchmark in the first year of assessment) | S.L. 372.18; see `mt-estimated-tax` |
+| VAT returns | As set by registration type | `malta-vat-return` |
+| FSS payroll filings | Monthly payments; annual FS3 and FS7 | `malta-payroll` |
 
-### Annual Maintenance
+Penalties: the Registrar imposes penalties up to the maxima in the Eleventh Schedule to Cap. 386 (art. 427). As the consolidated text reads, a failure to file the annual return carries up to EUR 2,329 plus up to EUR 46 a day (art. 184(3)), and a failure to deliver annual accounts the same (art. 183(6)). Beneficial owner defaults carry up to EUR 5,000 plus up to EUR 100 a day (S.L. 386.19, penalty schedule).
 
-**Annual Maintenance**
+### Bank account
 
-| Item | Cost (EUR) |
-| --- | --- |
-| Annual return filing fee (MBR) | €100 (electronic) |
-| Registered office | €500--€1,500/year (if using service provider) |
-| Accountancy / audit fees | €1,500--€5,000/year |
-| Company secretary fees | €500--€1,200/year |
+Banks run their own due diligence on directors, shareholders and beneficial owners, the business and the source of funds. Expect to provide the certificate of registration, memorandum and articles, a board resolution, identity and address documents for every director, shareholder and beneficial owner, and a business description.
 
-## Section 6 -- Post-Formation Compliance
+## Section 7: Foreign Founder Considerations
 
-**Post-Formation Compliance**
-
-| Obligation | Deadline | Authority |
+| Question | Answer | Source |
 | --- | --- | --- |
-| Annual return | Within 42 days of anniversary of registration | MBR |
-| Financial statements filing | Within 10 months of financial year-end | MBR |
-| Income tax return | 30 June of following year (for calendar year-end) | CFR |
-| VAT returns | Quarterly or as directed | CFR |
-| Beneficial ownership register | Within 14 days of any change | MBR |
-| AML obligations | Ongoing (if subject entity under PMLA) | FIAU |
-| SSC returns | Monthly | CFR |
+| Non-resident directors | Allowed; the Act has no residence requirement for directors or the secretary | Cap. 386 art. 137, 138 |
+| Registered office | Must be in Malta | Cap. 386 art. 69(1)(d) |
+| Nominee shareholders or directors | Beneficial owners must still be declared to MBR. Acting as nominee or company officer by way of business is a regulated company service | S.L. 386.19; Company Service Providers Act, Cap. 529 |
+| Company residence and tax | A Malta-incorporated company is resident in Malta; management and control abroad raises double residence questions | `mt-company-residence-and-substance` |
+| Regulated activity | Registration does not replace any licence the activity needs | Cap. 386 art. 77(3) |
 
-### Documents Typically Required
+## Section 8: Common Mistakes and Refusals
 
-- Certificate of registration
-- Memorandum and articles of association
-- Board resolution authorising account opening
-- ID and proof of address for all directors, shareholders, and UBOs
-- Description of business activities and expected turnover
-- Source of funds documentation
+- **R-MT-F1, shell company request.** Refuse to help form a company whose stated purpose is to hold no real activity in order to hide income or ownership. Refer to a licensed adviser.
+- **R-MT-F2, hiding beneficial ownership.** Beneficial owners must be declared (S.L. 386.19). Refuse if the stated purpose is to hide who owns the company.
+- **R-MT-F3, regulated activity.** Financial services, gaming, crypto, insurance and investment management need a licence before trading (art. 77(3)). Refer to a regulated-sector specialist.
+- **R-MT-F4, sole director as secretary.** Not allowed unless the company is an exempt company (art. 138(2)(a), 211(4)). Fix the memorandum before filing.
+- **R-MT-F5, single member without the conditions.** A single member company must be an exempt company whose objects state its main activity (art. 212(1)).
 
-### Typical Timeline
+## Section 9: Worked Examples
 
-- 2--6 weeks (enhanced due diligence for non-resident shareholders)
+### Example 1: smallest private company
 
-### Common Banks
+Two founders form a private company with authorised capital of EUR 1,200, all subscribed, and pay 20% on signing. They file through BAROS.
 
-- Bank of Valletta (BOV)
-- HSBC Malta
-- APS Bank
-- MeDirect
-- Sparkasse Bank Malta
+- Paid up on signing: 1,200 × 20% = EUR 240.
+- Registration fee (capital up to EUR 1,500, electronic): EUR 100.
+- Annual return fee each year (electronic): EUR 85.
 
-## Section 8 -- Foreign Founder Considerations
+```oa-check
+name: Private company, EUR 1,200 authorised capital, 20% paid up, electronic filing
+inputs:
+  authorised: 1200
+  paid_share: 0.20
+  registration_fee: 100
+  annual_return_fee: 85
+steps:
+  - paid_up: authorised * paid_share
+  - first_year_statutory_fees: registration_fee + annual_return_fee
+expected:
+  paid_up: 240
+  first_year_statutory_fees: 185
+```
 
-**Foreign Founder Considerations**
+### Example 2: EUR 20,000 authorised capital
 
-| Question | Answer |
-| --- | --- |
-| Non-resident directors allowed? | Yes, but company secretary must be Malta-resident |
-| Nominee shareholders permitted? | Yes |
-| Nominee directors permitted? | Yes (but ultimate beneficial owners must be disclosed to MBR) |
-| Apostille requirements | Foreign documents must be apostilled or legalised |
-| Physical presence required? | Not strictly required; power of attorney accepted for signing |
-| Foreign ownership restrictions | None for standard Ltd; regulated activities (banking, gaming, funds) require MFSA licensing |
+A founder sets authorised capital at EUR 20,000, fully subscribed, 20% paid up, filed electronically.
 
-## Section 9 -- Common Mistakes and Refusals
+- Fee band: over EUR 10,000 up to EUR 50,000: EUR 379 plus EUR 17 for each EUR 2,500 or part over EUR 10,000.
+- Excess over EUR 10,000 is EUR 10,000, which is 4 blocks of EUR 2,500: 4 × 17 = EUR 68.
+- Registration fee: EUR 447. Paid up: EUR 4,000. Annual return fee (over EUR 10,000 up to EUR 50,000, electronic): EUR 300.
 
-- **R-MT-F1 -- Shell company request** — "This skill will not assist in forming a company with no genuine economic substance in Malta. Shell structures without real operations, employees, or premises may violate AML regulations and expose founders to criminal liability. Escalate to a licensed legal practitioner."  _(R-MT-F1)_
-- **R-MT-F2 -- Nominee structures without substance** — "Using nominee directors and shareholders to obscure beneficial ownership without legitimate business purpose is a red flag under Malta's PMLA. Beneficial ownership must always be disclosed to the MBR. Refuse to proceed if the client's stated purpose is to hide ownership."  _(R-MT-F2)_
-- **R-MT-F3 -- Regulated activity without licensing** — "If the business involves financial services, gaming, crypto, insurance, or investment management, MFSA licensing is required before operations commence. Formation alone is insufficient. Escalate to a regulated-sector specialist."  _(R-MT-F3)_
-- **R-MT-F4 -- Insufficient capital for the business plan** — "While the legal minimum is €1,165, banks and counterparties may refuse to deal with undercapitalised entities. Flag if the proposed capital is clearly insufficient for the stated business activity."  _(R-MT-F4)_
+```oa-check
+name: Registration fee for EUR 20,000 authorised capital, electronic
+inputs:
+  authorised: 20000
+steps:
+  - blocks: ceil((authorised - 10000) / 2500)
+  - registration_fee: 379 + 17 * blocks
+  - paid_up: authorised * 0.20
+expected:
+  blocks: 4
+  registration_fee: 447
+  paid_up: 4000
+```
 
-## Section 10 -- Timeline
+## Section 10: Ask the Client First
 
-**Timeline**
+1. Who will the shareholders and beneficial owners be, and where do they live? One owner or several?
+2. Who will be director and who will be company secretary?
+3. What will the company do, and does that activity need a licence?
+4. How much capital, and paid in cash or in assets?
+5. Will the company employ staff or make taxable supplies in Malta soon?
+6. Will profits be paid out or kept? (This feeds the tax plan in `mt-corporate-tax`.)
 
-| Step | Duration | Cumulative |
-| --- | --- | --- |
-| Name availability check | 1 day | Day 1 |
-| Draft memorandum and articles | 2--5 days | Day 3--6 |
-| Open bank account and deposit capital | 1--3 weeks | Day 10--27 |
-| File with MBR (electronic) | 1 day | Day 11--28 |
-| MBR review and certificate of registration | 1--3 days | Day 12--31 |
-| Tax registration (CFR) | 1--5 days | Day 13--36 |
-| VAT registration | 1--5 days | Day 14--41 |
-| Employer registration (if needed) | 1--3 days | Day 15--44 |
-| **Ready to trade** |  | **~3--6 weeks** |
+## Sources
 
-The bottleneck is typically the bank account opening, especially for non-resident founders.
+| Source | URL | Read on |
+|---|---|---|
+| Companies Act, Cap. 386 (arts. 4, 7, 67 to 79, 137 to 139, 146, 163, 181 to 185, 209 to 212, 427, Eleventh Schedule) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-10-23 |
+| Companies Act (Fees) Regulations, S.L. 386.03 | https://legislation.mt/eli/sl/386.3/eng/pdf | 2026-10-23 |
+| Companies Act (Register of Beneficial Owners) Regulations, S.L. 386.19 | https://legislation.mt/eli/sl/386.19/eng/pdf | 2026-10-23 |
+| Malta Business Registry, Fee Structure | https://mbr.mt/fees/ | 2026-10-23 |
+| Income Tax Act, Cap. 123 (arts. 2, 56(6)) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-10-23 |
+| Income Tax (Statutory Dates) Rules, S.L. 372.16 | https://legislation.mt/eli/sl/372.16/eng/pdf | 2026-10-23 |
+
+Not yet confirmed:
+- Whether article 42 of Act I of 2026, which substituted the Eleventh Schedule penalties, is in force; the figures above are as the consolidated text reads.
+- MBR's current document checklist for BAROS registration (evidence of paid-up capital, identity documents).
+- How MTCA issues the company's tax number after MBR registration.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
 
 <!-- openaccountants-cta-block -->
 

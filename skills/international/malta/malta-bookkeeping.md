@@ -1,10 +1,12 @@
 ---
 name: malta-bookkeeping
-description: Use this skill whenever asked about bookkeeping, chart of accounts, financial statements, P&L format, balance sheet layout, bank reconciliation, expense classification, asset capitalisation, or day-to-day accounting for a Maltese entity. Trigger on phrases like "chart of accounts Malta", "nominal codes", "GAPSME financial statements", "P&L format", "balance sheet Malta", "expense account", "capitalise or expense", "depreciation Malta", "bank reconciliation", "micro-entity Malta", "small company accounts", "bookkeeping Malta", or any question about recording transactions, classifying expenses, or preparing management accounts under Maltese law. ALWAYS read this skill before touching any bookkeeping work for Malta.
-version: 1.0
+description: "Use this skill whenever asked about bookkeeping, a chart of accounts, expense classification, asset capitalisation, depreciation against tax wear and tear, bank reconciliation, record keeping or management accounts for a Maltese company or self-employed person in 2026. Covers a recommended chart of accounts mapped to GAPSME statements, revenue and VAT recording, which expenses fail the Income Tax Act test, the S.L. 123.01 minimum years for wear and tear and the EUR 14,000 car cap, the EUR 1,160 VAT capital goods threshold, record retention (10 years Companies Act, 9 years income tax, 6 years VAT), and the GAPSME and Companies Act size tests. Trigger on: chart of accounts Malta, nominal codes, bookkeeping Malta, capitalise or expense, depreciation Malta, wear and tear, bank reconciliation, GAPSME, small company accounts Malta."
+version: 1.1
 jurisdiction: MT
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
+verified_by: pending
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,234 +16,215 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Malta Bookkeeping
+# Malta Bookkeeping v1.1
 
-## Section 1 -- Quick Reference
+Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
 
-**Quick Reference**  _(Companies Act (Cap. 386); Legal Notice 289 of 2015 (GAPSME); Income Tax Act (Cap. 123))_
+Tax year 2026. This skill is the day-to-day bookkeeping workflow. Statutory accounts, size tests and audit are in `malta-financial-statements`; individual tax in `malta-income-tax`; company tax in `mt-corporate-tax`; provisional tax in `mt-estimated-tax`; VAT in `malta-vat-return`; social security in `malta-ssc`; payroll in `malta-payroll`.
 
-| Field | Value |
-| --- | --- |
-| Country | Malta (Republic of Malta) |
-| Currency | EUR |
-| Financial year | Typically calendar year (1 Jan -- 31 Dec); companies may choose any 12-month period |
-| Accounting standards | GAPSME (default for SMEs); IFRS as adopted by the EU (by board resolution) |
-| Governing body | Accountancy Board (Malta), Commissioner for Revenue (CFR) |
-| Key legislation | Companies Act (Cap. 386); Legal Notice 289 of 2015 (GAPSME); Income Tax Act (Cap. 123) |
-| Standard chart of accounts | None mandated — entities design their own CoA provided it supports GAPSME/IFRS financial statements |
-| Record retention | 6 years from end of the relevant financial year |
+## Section 1: Quick Reference
 
-## Section 2 -- Recommended Chart of Accounts
+| Field | Value | Source |
+| --- | --- | --- |
+| Currency | EUR (a company may have share capital in another currency; accounts follow it, art. 187) | Companies Act, Cap. 386 |
+| Financial year | Any accounting reference date; 31 December if none notified within nine months of registration | Cap. 386 art. 164 |
+| Frameworks | GAPSME for entities within its limits, unless the board resolves to use IFRS as adopted by the EU | Accountancy Profession (GAPSME) Regulations, S.L. 281.05 reg. 4 |
+| Chart of accounts | None prescribed. Records must show and explain the transactions and let the directors prepare compliant accounts | Cap. 386 art. 163(1), (2) |
+| Records to keep (companies) | Receipts and payments, assets and liabilities, stock statements where goods are dealt in | Cap. 386 art. 163(1) |
+| Records to keep (any business, for tax) | Proper accounts of receipts, payments and all transactions; a profit and loss account; a statement of assets and liabilities (a balance sheet for a company) | Income Tax Management Act, Cap. 372, art. 19(1), (2) |
+| Retention | Companies: 10 years (art. 163(5) Cap. 386). Income tax: at least 9 years after the transaction (art. 19(5) Cap. 372). VAT: at least 6 years (VAT Act art. 48) | as stated |
+| VAT standard rate | 18% | VAT Act, Cap. 406, art. 19 |
 
-Malta does not mandate a standard chart of accounts. The following is a recommended structure that maps cleanly to GAPSME financial statement presentation and Maltese tax return requirements.
+## Section 2: Recommended Chart of Accounts
+
+Malta does not prescribe a chart of accounts. The structure below maps to GAPSME statements and to the adjustments the tax return needs.
 
 ### Assets (1xxx)
 
-**Assets (1xxx)**
-
 | Code | Account | Notes |
 | --- | --- | --- |
-| 1000 | Non-current assets (control) |  |
-| 1010 | Intangible assets -- software | Capitalise if > EUR 1,160 (VAT CGS threshold) |
-| 1020 | Intangible assets -- goodwill | Rare for sole traders |
-| 1100 | Property, plant and equipment |  |
-| 1110 | Land and buildings |  |
-| 1120 | Motor vehicles |  |
-| 1130 | Computer hardware |  |
-| 1140 | Furniture and fittings |  |
-| 1150 | Office equipment |  |
-| 1160 | Leasehold improvements |  |
+| 1000 | Non-current assets (control) | |
+| 1010 | Intangible assets: software | Capitalise under the entity's written capitalisation policy |
+| 1020 | Intangible assets: goodwill | |
+| 1100 | Property, plant and equipment | |
+| 1110 | Land and buildings | |
+| 1120 | Motor vehicles | Keep cost; tax cost is capped at EUR 14,000 for cars (S.L. 123.07 rule 3) |
+| 1130 | Computer hardware | |
+| 1140 | Furniture and fittings | |
+| 1150 | Office equipment and other machinery | |
+| 1160 | Leasehold improvements | |
 | 1199 | Accumulated depreciation | Contra-asset |
-| 1200 | Current assets (control) |  |
-| 1210 | Trade receivables |  |
-| 1220 | Other receivables |  |
-| 1230 | Prepayments |  |
-| 1240 | VAT input (recoverable) | Article 10 entities only |
-| 1300 | Bank -- current account |  |
-| 1310 | Bank -- savings account |  |
-| 1320 | Cash in hand |  |
-| 1330 | Petty cash |  |
+| 1200 | Current assets (control) | |
+| 1210 | Trade receivables | |
+| 1220 | Other receivables | |
+| 1230 | Prepayments | |
+| 1240 | VAT input (recoverable) | Article 10 registrants only |
+| 1250 | Provisional tax paid | Credit against the final tax |
+| 1300 | Bank: current account | |
+| 1310 | Bank: savings account | |
+| 1320 | Cash in hand | |
+| 1330 | Petty cash | |
 
 ### Liabilities (2xxx)
 
-**Liabilities (2xxx)**
-
 | Code | Account | Notes |
 | --- | --- | --- |
-| 2000 | Non-current liabilities (control) |  |
-| 2010 | Bank loans (long-term) |  |
-| 2020 | Hire purchase obligations (long-term) |  |
-| 2100 | Current liabilities (control) |  |
-| 2110 | Trade payables |  |
-| 2120 | Other payables |  |
-| 2130 | Accruals |  |
-| 2140 | VAT output (payable) |  |
-| 2150 | VAT control | Net position for CFR |
-| 2160 | Income tax payable |  |
-| 2170 | SSC payable |  |
-| 2180 | Bank overdraft |  |
-| 2190 | Bank loans (current portion) |  |
-| 2200 | Directors' loan account |  |
+| 2000 | Non-current liabilities (control) | |
+| 2010 | Bank loans (long-term) | |
+| 2020 | Hire purchase and lease obligations (long-term) | |
+| 2100 | Current liabilities (control) | |
+| 2110 | Trade payables | |
+| 2120 | Other payables | |
+| 2130 | Accruals | |
+| 2135 | Deferred income | Advance payments for work not yet done |
+| 2140 | VAT output (payable) | |
+| 2150 | VAT control | Net position for MTCA |
+| 2160 | Income tax payable | |
+| 2165 | FSS tax and Class 1 SSC withheld | Payroll |
+| 2170 | SSC payable (employer share) | |
+| 2180 | Bank overdraft | |
+| 2190 | Bank loans (current portion) | |
+| 2200 | Directors' loan account | |
 
 ### Equity (3xxx)
 
-**Equity (3xxx)**
-
 | Code | Account | Notes |
 | --- | --- | --- |
-| 3000 | Share capital / owner's capital |  |
-| 3010 | Share premium |  |
-| 3100 | Retained earnings |  |
-| 3200 | Current year profit/loss | Clearing account |
-| 3300 | Drawings (sole trader) |  |
+| 3000 | Share capital or owner's capital | |
+| 3010 | Share premium | |
+| 3100 | Retained earnings | |
+| 3200 | Current year profit or loss | Clearing account |
+| 3300 | Drawings (sole trader) | |
+| 3400 | Dividends paid | Record the tax account the dividend is paid from (`mt-corporate-tax`) |
 
 ### Revenue (4xxx)
 
-**Revenue (4xxx)**
+| Code | Account | Notes |
+| --- | --- | --- |
+| 4000 | Sales: services | |
+| 4010 | Sales: goods | |
+| 4020 | Sales: exports and intra-EU | Exempt with credit or outside scope; see `malta-vat-return` |
+| 4100 | Other operating income | |
+| 4200 | Government grants (revenue) | |
+
+### Cost of sales (5xxx)
 
 | Code | Account | Notes |
 | --- | --- | --- |
-| 4000 | Sales -- services | Main revenue for service businesses |
-| 4010 | Sales -- goods |  |
-| 4020 | Sales -- exports / intra-EU | Zero-rated or exempt |
-| 4100 | Other operating income |  |
-| 4200 | Government grants (revenue) | Malta Enterprise grants |
+| 5000 | Purchases: goods for resale | |
+| 5010 | Direct materials | |
+| 5020 | Subcontractors | |
+| 5030 | Import duties | |
+| 5100 | Opening stock | |
+| 5110 | Closing stock | Stock statements are a legal record where goods are dealt in (art. 163(1)(c)) |
 
-### Cost of Goods Sold (5xxx)
-
-**Cost of Goods Sold (5xxx)**
-
-| Code | Account | Notes |
-| --- | --- | --- |
-| 5000 | Purchases -- goods for resale |  |
-| 5010 | Direct materials |  |
-| 5020 | Direct labour (subcontractors) |  |
-| 5030 | Import duties |  |
-| 5100 | Opening stock |  |
-| 5110 | Closing stock |  |
-
-### Operating Expenses (6xxx)
-
-**Operating Expenses (6xxx)**
+### Operating expenses (6xxx)
 
 | Code | Account | Notes |
 | --- | --- | --- |
-| 6000 | Rent -- business premises | Fully deductible |
-| 6010 | Rates and local council levies |  |
-| 6020 | Electricity and water (ARMS) | Apportion if home office |
+| 6000 | Rent: business premises | |
+| 6010 | Rates and local levies | |
+| 6020 | Electricity and water | Apportion if home office |
 | 6030 | Telecoms and internet | Apportion if mixed use |
-| 6040 | Insurance -- business |  |
-| 6050 | Repairs and maintenance |  |
-| 6100 | Salaries and wages |  |
-| 6110 | Employer SSC (Class 1) |  |
-| 6120 | SSC Class 2 (self-employed) | Maps to TA24 Box 20 |
-| 6200 | Accountancy fees |  |
-| 6210 | Legal and professional fees |  |
-| 6220 | Bank charges |  |
-| 6230 | Payment processing fees | Stripe, PayPal etc. |
-| 6300 | Marketing and advertising |  |
-| 6310 | Travel -- flights and accommodation | Business travel only |
-| 6320 | Travel -- local transport |  |
-| 6330 | Motor vehicle expenses | Business % only |
-| 6340 | Motor vehicle fuel | Business % only |
-| 6400 | Office supplies and stationery |  |
-| 6410 | Software subscriptions (SaaS) | Recurring < EUR 1,160 |
-| 6420 | Training and CPD |  |
-| 6430 | Professional subscriptions | MIA, ACCA etc. |
-| 6440 | Postage and courier |  |
-| 6500 | Depreciation -- computer hardware | 25% straight-line |
-| 6510 | Depreciation -- motor vehicles | 20% straight-line |
-| 6520 | Depreciation -- furniture/fittings | 10% straight-line |
-| 6530 | Depreciation -- office equipment | 20% straight-line |
-| 6600 | Bad debts written off |  |
-| 6700 | Entertainment | NOT deductible for tax |
-| 6800 | Sundry expenses |  |
+| 6040 | Insurance: business | |
+| 6050 | Repairs and maintenance | Improvements are capital (art. 26 Cap. 123) |
+| 6100 | Salaries and wages | Deductible only if run through FSS (S.L. 123.07 rule 4) |
+| 6110 | Employer SSC (Class 1) and Maternity Leave Fund | |
+| 6120 | SSC Class 2 (self-employed) | Memo for tax; see Section 4 |
+| 6200 | Accountancy and audit fees | |
+| 6210 | Legal and professional fees | Split capital (for example share issue, property) from revenue |
+| 6220 | Bank charges | |
+| 6230 | Payment processing fees | |
+| 6300 | Marketing and advertising | |
+| 6310 | Travel: flights and accommodation | Business purpose only |
+| 6320 | Travel: local transport | |
+| 6330 | Motor vehicle running costs | Business share only |
+| 6340 | Motor vehicle fuel | Business share only |
+| 6400 | Office supplies and stationery | |
+| 6410 | Software subscriptions | |
+| 6420 | Training | |
+| 6430 | Professional subscriptions | |
+| 6440 | Postage and courier | |
+| 6500 | Depreciation | Accounting charge; added back for tax and replaced by wear and tear |
+| 6600 | Bad debts written off | Specific debts only for tax |
+| 6610 | Provision for doubtful debts (movement) | Added back for tax |
+| 6700 | Entertainment | Flag for tax; see Section 4 |
+| 6710 | Fines and penalties | Not deductible |
+| 6800 | Sundry expenses | |
 
-### Other Income / Expenses (7xxx)
-
-**Other Income / Expenses (7xxx)**
+### Other income and expenses (7xxx)
 
 | Code | Account | Notes |
 | --- | --- | --- |
-| 7000 | Interest received |  |
-| 7010 | Interest paid |  |
-| 7020 | Bank loan interest |  |
-| 7100 | Profit/loss on disposal of assets |  |
-| 7200 | Foreign exchange gains/losses |  |
+| 7000 | Interest received | |
+| 7010 | Interest paid | |
+| 7100 | Profit or loss on disposal of assets | Replaced by the article 24 balancing statement for tax |
+| 7200 | Foreign exchange gains and losses | |
 
 ### Tax (8xxx)
 
-**Tax (8xxx)**
-
 | Code | Account | Notes |
 | --- | --- | --- |
-| 8000 | Income tax expense | Current year charge |
-| 8010 | Deferred tax | GAPSME medium entities |
-| 8020 | Provisional tax paid | Credit against liability |
+| 8000 | Income tax expense (current) | |
+| 8010 | Deferred tax | |
 
-## Section 3 -- Revenue Recognition
-
-**Revenue Recognition**
+## Section 3: Revenue Recognition
 
 | Scenario | Treatment |
 | --- | --- |
-| **Default under GAPSME** | Accruals basis — revenue recognised when earned, not when cash received |
-| **Sole traders (TA24)** | Tax return uses accruals basis; however CFR accepts cash basis for very small operations if consistently applied |
-| **Article 10 VAT-registered** | Record revenue net of 18% VAT; VAT goes to 2140 |
-| **Article 11 (exempt)** | Record revenue gross — no VAT component |
-| **Advance payments received** | Credit to 2130 (Accruals) until service delivered, then transfer to 4000 |
-| **Multi-period contracts** | Recognise revenue proportionally over the service period |
-| **Bad debts** | Write off to 6600 only when irrecoverable; reverse the original revenue if not yet reported |
+| Default | Accruals basis under GAPSME or IFRS: revenue when earned |
+| Article 10 VAT registrant | Record revenue net of VAT; output VAT to 2140 |
+| Article 11 small enterprise | No VAT charged; record the amount invoiced as revenue |
+| Advance payments | Credit 2135 deferred income until the work is done, then transfer to 4000 |
+| Contracts spanning periods | Recognise over the service period |
+| Bad debts | Write off to 6600 when specific and irrecoverable; do not reverse revenue |
 
-## Section 4 -- Expense Classification
+A self-employed person's records must still meet article 19 of Cap. 372 (receipts, payments, a profit and loss account and a statement of assets and liabilities), whatever basis is used.
 
-**Expense Classification**
+## Section 4: Expense Classification and Tax
 
-| Expense Type | Nominal Code | Tax Deductibility | Notes |
+The tax test is article 14(1) of the Income Tax Act: outgoings "wholly and exclusively incurred in the production of the income". Article 26 bars private or domestic spending, capital spending, improvements, recoverable amounts and voluntary payments.
+
+| Expense | Code | Tax treatment | Source |
 | --- | --- | --- | --- |
-| Office rent | 6000 | Fully deductible | Dedicated business premises |
-| Home office utilities | 6020 | Proportional (dedicated room %) | Default 0% until confirmed |
-| Motor vehicle costs | 6330/6340 | Business % only | Mileage log required |
-| Entertainment | 6700 | NOT deductible | Blocked under Article 14 ITA |
-| Software subscriptions | 6410 | Fully deductible | Recurring SaaS under EUR 1,160 |
-| Professional fees | 6200/6210 | Fully deductible | Accountant, lawyer (business) |
-| Travel (business) | 6310/6320 | Fully deductible | Wholly business purpose |
-| Training and CPD | 6420 | Fully deductible | Must relate to current business |
-| SSC Class 2 | 6120 | Deductible (Box 20) | NOT in Box 2 of TA24 |
-| Fines and penalties | — | NOT deductible | Do not record as business expense |
-| Personal drawings | 3300 | NOT deductible | Equity movement, not expense |
+| Office rent | 6000 | Deductible | art. 14(1) |
+| Home office utilities | 6020 | Business share only; default 0% until documented | art. 14(1), 26 |
+| Car running costs | 6330, 6340 | Business share only; keep a log | art. 14(1), 26 |
+| Leased car listed above EUR 14,000 | 6330 | Lease payments × 14,000 ÷ listed price, then business share | S.L. 123.07 rule 3(2) |
+| Wages | 6100 | Deductible if run through FSS | S.L. 123.07 rule 4 |
+| Entertainment | 6700 | No specific rule in the Act; treat as private unless the article 14(1) test is clearly met, and flag | art. 14(1), 26 |
+| Fines and penalties | 6710 | Not deductible | art. 26 |
+| Depreciation | 6500 | Added back; wear and tear deducted instead | art. 14(1)(f); S.L. 123.01 |
+| General bad debt provision | 6610 | Added back; specific bad debts proved to the Commissioner are deductible | art. 14(1)(d) |
+| SSC Class 2 | 6120 | No deduction in the Income Tax Act; `malta-income-tax` treats it as a memo. Confirm on the MTCA return | Cap. 123 Part IV |
+| Drawings | 3300 | Not an expense | |
 
-## Section 5 -- Asset vs Expense Thresholds
-
-**Asset vs Expense Thresholds**
+## Section 5: Asset or Expense
 
 | Rule | Threshold | Treatment |
 | --- | --- | --- |
-| **Tax depreciation (capital allowances)** | No statutory minimum — all business assets must be depreciated per 6th Schedule | Straight-line over minimum years |
-| **VAT Capital Goods Scheme** | EUR 1,160 gross | Separate system; affects VAT Box 30 only |
-| **Practical low-value expensing** | Some practitioners expense items under ~EUR 700 immediately | Flag for reviewer; strictly all assets should be depreciated |
+| Accounts | No statutory threshold | Set and document a capitalisation policy under the framework |
+| Income tax | No de minimis in S.L. 123.01 | Capital items go through wear and tear, not expenses (art. 26) |
+| VAT capital goods | EUR 1,160 for equipment, tools and office furniture; all immovable property | Keep the capital goods list; input VAT is adjusted over 5 or 20 years if use changes (S.L. 406.12) |
 
-### Depreciation Rates (Income Tax Act, 6th Schedule)
+### Tax wear and tear: minimum years (S.L. 123.01 Schedule)
 
-**Depreciation Rates (Income Tax Act, 6th Schedule)**  _(Income Tax Act, 6th Schedule)_
+These are tax minimums, not accounting lives. Accounting depreciation follows the framework and the asset's useful life.
 
-| Asset Category | Minimum Years | Annual Rate |
-| --- | --- | --- |
-| Computers and electronic equipment | 4 | 25% |
-| Computer software | 4 | 25% |
-| Motor vehicles | 5 | 20% |
-| Plant and machinery | 5 | 20% |
-| Office equipment | 5 | 20% |
-| Air conditioning | 6 | ~17% |
-| Furniture, fixtures, fittings | 10 | 10% |
-| Electrical/plumbing installations | 15 | ~7% |
-| Industrial buildings | 50 | 2% |
+| Category | Minimum years |
+| --- | --- |
+| Computers and electronic equipment; computer software | 4 |
+| Motor vehicles; other machinery | 5 |
+| Catering equipment; air-conditioners; medical equipment; communication and broadcasting equipment; construction and excavation equipment | 6 |
+| Furniture, fixtures, fittings and soft furnishings; lifts and escalators; ships; other plant | 10 |
+| Electrical and plumbing installations and sanitary fittings | 15 |
+| Cable and pipeline infrastructure | 20 |
 
-Depreciation is straight-line on cost. First-year depreciation starts in the year the asset is first used in business. Industrial buildings qualify for an additional 10% initial allowance in the acquisition year.
+Rules: straight line on cost (rule 3); a full year's allowance in the year of acquisition and none in the year of disposal (rule 7); only with proper cost records (rule 5); cut to the business-use share (rule 11). Industrial buildings: at most 2% a year plus a 10% initial deduction in the first year of use (Cap. 123 art. 14(1)(j)). Cars: cost capped at EUR 14,000 (S.L. 123.07 rule 3(1)).
 
-## Section 6 -- Profit and Loss Format
+## Section 6: Profit and Loss Layout
 
-GAPSME requires an income statement with the following minimum structure:
+The Companies Act prescribes no general format for a small company's profit and loss account; the layout follows the framework (see `malta-financial-statements`). An illustrative GAPSME layout:
 
 ```
 INCOME STATEMENT
@@ -269,11 +252,9 @@ Income tax expense                              (xxx)
 PROFIT FOR THE YEAR                              xxx
 ```
 
-Small entities under GAPSME may combine administrative and distribution costs into a single "operating expenses" line.
+## Section 7: Balance Sheet Layout
 
-## Section 7 -- Balance Sheet Format
-
-GAPSME prescribes a vertical (report) format:
+Illustrative:
 
 ```
 BALANCE SHEET
@@ -284,7 +265,6 @@ NON-CURRENT ASSETS
   Property, plant and equipment                  xxx
                                                 -----
                                                  xxx
-
 CURRENT ASSETS
   Inventories                                    xxx
   Trade and other receivables                    xxx
@@ -299,92 +279,137 @@ EQUITY
   Retained earnings                              xxx
                                                 -----
                                                  xxx
-
 NON-CURRENT LIABILITIES
   Borrowings                                     xxx
-                                                -----
-                                                 xxx
-
 CURRENT LIABILITIES
   Trade and other payables                       xxx
   Current tax liabilities                        xxx
   Borrowings (current portion)                   xxx
                                                 -----
-                                                 xxx
-                                                -----
 TOTAL EQUITY AND LIABILITIES                     xxx
 ```
 
-Small entities: balance sheet, income statement, and simplified notes only. Medium entities must add statement of changes in equity and cash flow statement.
+## Section 8: Bank Reconciliation Patterns
 
-## Section 8 -- Bank Reconciliation Patterns
+Statement layouts differ by bank and change over time. Map the columns from the client's own export before importing.
 
-### Maltese Bank Statement Formats
-
-**Maltese Bank Statement Formats**
-
-| Bank | Format | Date Format | Key Fields |
-| --- | --- | --- | --- |
-| BOV (Bank of Valletta) | PDF, CSV | DD/MM/YYYY | Date, Description, Debit, Credit, Balance |
-| HSBC Malta | PDF, CSV | DD/MM/YYYY | Value Date, Description, Amount, Balance |
-| APS Bank | PDF | DD/MM/YYYY | Date, Particulars, Withdrawals, Deposits |
-| Revolut Business | CSV | YYYY-MM-DD | Date, Counterparty, Amount, Currency |
-| Wise Business | CSV | YYYY-MM-DD | Date, Description, Amount, Currency, Balance |
-
-### Common Maltese Transaction Descriptions
-
-**Common Maltese Transaction Descriptions**
-
-| Pattern | Likely Classification |
+| Pattern in description | Likely classification |
 | --- | --- |
-| TRASFERIMENT / TRF IN | Incoming payment — check if revenue |
-| DD / DEBIT DIRETT | Direct debit — utility, subscription, or insurance |
-| SO / STANDING ORDER | Standing order — rent or loan repayment |
-| KARTA / CARD | Card payment — expense, check merchant |
-| SPEJJEZ / CHARGES | Bank charges (6220) |
-| ARMS / ARMS LTD | Electricity/water utility (6020) |
-| CFR / TAX / SSC | Tax or SSC payment — exclude from P&L expense |
-| INTERNAL TRANSFER | Own-account transfer — exclude |
+| Incoming transfer | Check whether it is revenue, a loan, capital or a refund |
+| Direct debit or standing order | Utility, subscription, insurance, rent or loan repayment |
+| Card payment | Expense; check the merchant and the receipt |
+| Bank charges | 6220 |
+| Utility company | 6020 |
+| MTCA (tax, VAT, SSC) payment | Balance sheet (2140 to 2170, 1250), never a P&L expense |
+| Own-account transfer | Exclude |
 
-## Section 9 -- Micro-Entity / Small Business Simplifications
+## Section 9: Size Tests (summary)
 
-### GAPSME Size Thresholds (must meet 2 of 3 for two consecutive years)
+Two separate tests apply. The detail and the two-year rules are in `malta-financial-statements`.
 
-**GAPSME Size Thresholds (must meet 2 of 3 for two consecutive years)**
+| Test | Balance sheet total | Turnover | Employees | Effect | Source |
+| --- | --- | --- | --- | --- | --- |
+| GAPSME small entity | EUR 4,000,000 | EUR 8,000,000 | 50 | Balance sheet, income statement, notes | S.L. 281.05 reg. 5(1)(a) |
+| GAPSME medium-sized entity | EUR 20,000,000 | EUR 40,000,000 | 250 | Adds statement of changes in equity and cash flow statement | S.L. 281.05 reg. 5(1)(b) |
+| Companies Act small company (balance sheet dates from 20 March 2026) | EUR 5,000,000 | EUR 10,000,000 | 50 | No directors' report | Cap. 386 art. 185(1) |
+| Companies Act micro, private companies only | EUR 46,600 | EUR 93,000 | 2 | No audit under the Act | Cap. 386 art. 185(2) |
 
-| Criterion | Small | Medium |
-| --- | --- | --- |
-| Balance sheet total | ≤ EUR 4,000,000 | ≤ EUR 20,000,000 |
-| Revenue | ≤ EUR 8,000,000 | ≤ EUR 40,000,000 |
-| Average employees | ≤ 50 | ≤ 250 |
+A limit is met when the entity does not exceed at least two of the three. Every company not micro-exempt is audited. A self-employed person files no GAPSME accounts but keeps the article 19 records.
 
-### Simplifications by Entity Size
+## Section 10: Interaction with Tax Skills
 
-**Simplifications by Entity Size**
-
-| Requirement | Small Entity | Medium Entity |
-| --- | --- | --- |
-| Balance sheet | Required (abbreviated) | Required (full) |
-| Income statement | Required | Required |
-| Notes to accounts | Simplified (limited disclosures) | Full disclosures |
-| Statement of changes in equity | NOT required | Required |
-| Cash flow statement | NOT required | Required |
-| Directors' report | NOT required (private company) | Required |
-| Audit | Exempt if small private company | Required |
-| Filing with Registry | Abbreviated balance sheet; income statement may be withheld | Full filing |
-
-Sole traders filing TA24 are not required to prepare GAPSME financial statements, but must maintain adequate books and records for CFR inspection.
-
-## Section 10 -- Interaction with Tax Skills
-
-**Interaction with Tax Skills**
-
-| Tax Skill | How Bookkeeping Connects |
+| Skill | How the books feed it |
 | --- | --- |
-| **malta-income-tax** | P&L profit feeds TA24 Box 3 (net profit). Depreciation per 6th Schedule goes to Box 15. SSC Class 2 goes to Box 20 (not operating expenses for tax). Entertainment in 6700 must be added back. |
-| **malta-vat-return** | VAT accounts (1240, 2140, 2150) feed the VAT return. Article 10 entities: output VAT (Box 1) from 2140; input VAT (Box 6) from 1240. Reconcile VAT control (2150) quarterly. |
-| **malta-ssc** | SSC Class 2 payments recorded in 6120 feed TA24 Box 20. Employer Class 1 contributions in 6110 are a deductible operating expense in Box 2. |
-| **mt-estimated-tax** | Provisional tax payments recorded in 8020 feed TA24 Box 36 as credits against the final tax liability. |
+| `malta-income-tax` | Net profit, add back depreciation (6500), provisions (6610), fines (6710) and private shares; deduct S.L. 123.01 wear and tear. Class 2 (6120) is a memo item |
+| `mt-corporate-tax` | Profit before tax to chargeable income; allocation of profits to the tax accounts; dividends (3400) and refunds |
+| `mt-estimated-tax` | Provisional tax paid (1250) is credited against the final tax |
+| `malta-vat-return` | 1240, 2140 and 2150 tie to each return; keep the capital goods list |
+| `malta-payroll` | 6100, 6110 and 2165 tie to the FSS returns |
+
+## Section 11: Worked Examples
+
+### Example 1: laptop, accounting depreciation against tax wear and tear
+
+A company with a 31 December year end buys a laptop for EUR 1,600 (net of recoverable VAT) on 1 October 2026. Its policy depreciates computers over 3 years from the month of purchase.
+
+- Accounting depreciation for 2026: 1,600 ÷ 3 × 3 ÷ 12 = EUR 133.33.
+- Tax wear and tear for 2026: 1,600 ÷ 4 = EUR 400, a full year under S.L. 123.01 rule 7(a).
+- Tax adjustment: add back EUR 133.33 and deduct EUR 400, a net reduction of EUR 266.67 in chargeable income.
+
+```oa-check
+name: Laptop bought 1 October 2026, depreciation against wear and tear
+inputs:
+  cost: 1600
+  accounting_years: 3
+  months_owned: 3
+  tax_years: 4
+steps:
+  - accounting_depreciation: round(cost / accounting_years * months_owned / 12, 2)
+  - wear_and_tear: cost / tax_years
+  - net_reduction: wear_and_tear - accounting_depreciation
+expected:
+  accounting_depreciation: 133.33
+  wear_and_tear: 400
+  net_reduction: 266.67
+```
+
+### Example 2: recording an Article 10 sale and a capital good purchase
+
+An Article 10 registrant invoices EUR 2,360 including 18% VAT and buys a printer-copier for EUR 1,416 including 18% VAT.
+
+- Sale: 2,360 ÷ 1.18 = EUR 2,000 to 4000; EUR 360 to 2140.
+- Purchase: 1,416 ÷ 1.18 = EUR 1,200 to 1150; EUR 216 to 1240.
+- The printer costs at least EUR 1,160 whether or not VAT is counted, so it goes on the VAT capital goods list (S.L. 406.12). It is "other machinery" for tax: minimum 5 years, EUR 240 wear and tear in 2026.
+- Net VAT for these two lines: 360 − 216 = EUR 144 payable.
+
+```oa-check
+name: Article 10 sale and capital good purchase at 18%
+inputs:
+  sale_gross: 2360
+  purchase_gross: 1416
+  rate: 0.18
+steps:
+  - sale_net: sale_gross / (1 + rate)
+  - output_vat: sale_gross - sale_net
+  - purchase_net: purchase_gross / (1 + rate)
+  - input_vat: purchase_gross - purchase_net
+  - net_vat_payable: output_vat - input_vat
+  - wear_and_tear: purchase_net / 5
+expected:
+  sale_net: 2000
+  output_vat: 360
+  purchase_net: 1200
+  input_vat: 216
+  net_vat_payable: 144
+  wear_and_tear: 240
+```
+
+## Section 12: Ask the Client First
+
+1. Company or self-employed? If a company, its accounting reference date and whether the board chose IFRS.
+2. VAT registration: Article 10, 11 or 12?
+3. Any cars, and their cost or listed price and business use?
+4. Does anyone use business assets or premises privately?
+5. Payroll: are all wages run through FSS?
+6. Which bank exports are available, and in what format?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Companies Act, Cap. 386 (arts. 163, 164, 185, 187) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-10-23 |
+| Income Tax Management Act, Cap. 372 (art. 19) | https://legislation.mt/eli/cap/372/eng/pdf | 2026-10-23 |
+| Income Tax Act, Cap. 123 (arts. 14, 24, 26) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-10-23 |
+| Deduction for Wear and Tear of Plant and Machinery Rules, S.L. 123.01 | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-10-23 |
+| Income Tax (Deductions) Rules, S.L. 123.07 | https://legislation.mt/eli/sl/123.7/eng/pdf | 2026-10-23 |
+| Accountancy Profession (GAPSME) Regulations, S.L. 281.05 (regs. 4, 5) | https://legislation.mt/eli/sl/281.5/eng/pdf | 2026-10-23 |
+| VAT Act, Cap. 406 (arts. 19, 48) | https://legislation.mt/eli/cap/406/eng/pdf | 2026-10-23 |
+| VAT (Adjustments relating to Input Tax on Capital Goods) Regulations, S.L. 406.12 | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-10-23 |
+
+Not yet confirmed:
+- Whether Class 2 social security contributions are deductible on the 2026 return.
+- Whether the VAT capital goods threshold of EUR 1,160 is tested with or without VAT (see `malta-vat-return`).
+- The Companies Act size limits are summarised from `malta-financial-statements`; the commencement point (20 March 2026) is explained there.
 
 ## Disclaimer
 
