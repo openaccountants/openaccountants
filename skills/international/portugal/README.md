@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
   IT-IND: "pt-income-tax (Category B) is on tax year 2025: 2025 IRS bands, IRS Jovem cap and social security ceiling on the 2025 IAS (EUR 522.50); portugal-crypto-tax is on tax year 2025 and does not cover the exit charge on crypto added by Decreto-Lei 97/2026"
-  XB: pt-foreign-source-treaties and pt-nhr-ifici cover residents' foreign income only; no non-residents or residence rules on arrival and departure
+  XB: "pt-foreign-source-treaties (foreign income of residents) is on tax year 2025"
 ---
 
 # Portugal: tax pack
@@ -21,9 +21,9 @@ Calendar tax year for individuals; companies use the calendar year unless they a
 | SC, social contributions | pt-social-contributions (self-employed, tax year 2025); employee and employer rates only inside portugal-payroll (tax year 2025) | source-cited draft, 2025 figures |
 | PR, payroll withholding | portugal-payroll (tax year 2025) | source-cited draft, 2025 figures |
 | TP, transfer pricing | pt-transfer-pricing | source-cited draft |
-| XB, cross-border | pt-foreign-source-treaties (foreign income of residents, tax year 2025), pt-nhr-ifici. Missing: non-residents with Portuguese income, and the residence rules for moving to or leaving Portugal | partial: residents only |
+| XB, cross-border | pt-cross-border (residence, non-residents, exit tax, outbound withholding, tax year 2026); pt-foreign-source-treaties (foreign income of residents, tax year 2025); pt-nhr-ifici | partial: pt-foreign-source-treaties carries 2025 figures |
 
-The coverage report counts a domain as present when a skill's slug matches it, and counts a domain listed under `partial` as missing. It does not check tax year. Gaps: IT-IND and XB have the gaps named above, and SC and PR carry 2025 figures.
+The coverage report counts a domain as present when a skill's slug matches it, and counts a domain listed under `partial` as missing. It does not check tax year. Gaps: IT-IND has the gaps named above, XB still relies on a tax year 2025 skill for residents' foreign income, and SC and PR carry 2025 figures.
 
 Other skills in this folder (bookkeeping, e-invoicing, financial statements, formation, tax optimisation, return assembly) belong to the accounting milestone and are not counted here.
 

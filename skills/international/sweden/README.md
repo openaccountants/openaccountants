@@ -5,8 +5,7 @@ not_applicable: {}
 covered_by:
   XB: se-cross-border
 partial:
-  IT-IND: se-income-tax covers sole traders' business income only (tax year 2025), not employees or the full individual return
-  SC: se-social-contributions covers the self-employed only; sweden-payroll covers employer contributions; the employee general pension contribution (allmän pensionsavgift) is not covered
+  IT-IND: "se-income-tax (sole traders' business income) and se-capital-gains still carry tax year 2025 figures; se-capital-gains gives the 2025 ISK rate and leaves out the SEK 300,000 tax-free amount"
 ---
 
 # Sweden: tax pack
@@ -17,10 +16,10 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | se-income-tax, se-capital-gains | source-cited draft (partial) |
+| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains | source-cited draft (partial) |
 | IT-CORP, corporate income tax | se-corporate-tax | source-cited draft |
 | VAT | se-vat-return, sweden-vat-return | source-cited draft |
-| SC, social contributions | se-social-contributions, sweden-payroll | source-cited draft (partial) |
+| SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
 | PR, payroll withholding | sweden-payroll | source-cited draft |
 | TP, transfer pricing | (missing) | |
 | XB, cross-border | se-cross-border | source-cited draft |

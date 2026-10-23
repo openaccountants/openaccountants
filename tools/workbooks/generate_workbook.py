@@ -83,6 +83,7 @@ def _add_skill_tab(wb, skill):
     ws.add_data_validation(dv)
 
     r = 2
+    flag_rows = []  # data rows that carry the Flag dropdown (section headers don't)
     for section in skill["sections"]:
         ws.cell(row=r, column=1, value=section["section"]).font = SECTION_FONT
         for c in range(1, len(HEADERS) + 1):
@@ -99,7 +100,7 @@ def _add_skill_tab(wb, skill):
                 cell.alignment = WRAP_TOP
                 cell.border = BORDER
             ws.cell(row=r, column=3).fill = _fill(FLAGCOL)
-            dv.add(ws.cell(row=r, column=3))
+            flag_rows.append(r)
             r += 1
 
     # "Missing" block — add what we don't cover (credited to the verifier).
@@ -128,8 +129,19 @@ def _add_skill_tab(wb, skill):
         for c in range(1, len(HEADERS) + 1):
             ws.cell(row=r, column=c).border = BORDER
         ws.cell(row=r, column=3).fill = _fill(FLAGCOL)
-        dv.add(ws.cell(row=r, column=3))
+        flag_rows.append(r)
         r += 1
+    # One contiguous dv range per run of flag rows (section header rows in
+    # between are deliberately outside the dropdown, as in the original
+    # per-cell form, but a range keeps the saved XML small).
+    runs: list[list[int]] = []
+    for n in flag_rows:
+        if runs and n == runs[-1][1] + 1:
+            runs[-1][1] = n
+        else:
+            runs.append([n, n])
+    for a, b in runs:
+        dv.add("C%d" % a if a == b else "C%d:C%d" % (a, b))
     return ws.title
 
 

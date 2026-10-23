@@ -25,7 +25,7 @@ def _load(path: Path) -> dict:
     try:
         import yaml
     except ImportError:  # pragma: no cover - exercised only without PyYAML
-        raise unittest.SkipTest("PyYAML not installed")
+        raise unittest.SkipTest("PyYAML not installed") from None
     return yaml.safe_load(path.read_text(encoding="utf-8"))
 
 
