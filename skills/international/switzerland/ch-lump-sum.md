@@ -36,7 +36,7 @@ An individual has the right to lump-sum taxation for federal tax when all three 
 
 **Cantons.** For cantonal and communal tax the canton decides whether to offer the regime (StHG art. 6 para. 1). Zurich, Basel-Stadt, Schaffhausen and Appenzell Ausserrhoden have abolished it. Basel-Landschaft allows it only in the year of arrival, to the end of that tax period (ESTV, Einkommenssteuer natürlicher Personen, section 2.4). Zurich abolished it from 1 January 2010 after a popular vote (Kanton Zürich press release of January 2011). A person in those cantons can still be taxed on expenditure for federal tax only.
 
-**Start.** The right exists from the start of tax liability, both for residence and for a stay under DBG art. 3 (circular no. 44, section 2.5). The person must file the special lump-sum return and prove the conditions every year (section 5.1).
+**Start.** The right exists from the start of tax liability, both for residence and for a stay under DBG art. 3 (circular no. 44, section 2.5). The person must file the special lump-sum return and prove the conditions every year (section 5.1). A person who gives up the regime and is taxed in the ordinary way normally cannot return to it later (section 2.5).
 
 ## Rates, bands and thresholds
 
@@ -44,7 +44,8 @@ An individual has the right to lump-sum taxation for federal tax when all three 
 |---|---|---|---|
 | Federal minimum base (DBG art. 14 para. 3 let. a) | CHF 435,000 | 2026 | https://www.fedlex.admin.ch/eli/oc/2025/579/de |
 | Federal minimum base, previous year | CHF 434,700 | 2025 | https://www.fedlex.admin.ch/eli/oc/2024/479/de |
-| Federal minimum base, 2023 and 2024 | CHF 421,700 | 2023-2024 | https://www.fedlex.admin.ch/eli/oc/2022/575/de |
+| Federal minimum base, 2024 | CHF 429,100 | 2024 | https://www.fedlex.admin.ch/eli/oc/2023/493/de |
+| Federal minimum base, 2023 | CHF 421,700 | 2023 | https://www.fedlex.admin.ch/eli/oc/2022/575/de |
 | Own household: multiple of annual rent or rental value | 7 times | 2026 | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de |
 | No own household: multiple of annual board and lodging | 3 times | 2026 | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de |
 | Federal tariff applied to the base | Ordinary tariff, DBG art. 36 (single top marginal 13.2%, flat 11.5% from CHF 794,000) | 2026 | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de |
@@ -53,8 +54,8 @@ An individual has the right to lump-sum taxation for federal tax when all three 
 | Zug wealth base | At least 20 times the income base | 2026 | https://bgs.zg.ch/app/de/texts_of_law/632.1 |
 | Geneva minimum income base | CHF 400,000 | 2026 | https://silgeneve.ch/legis/data/rsg_d3_08.htm |
 | Geneva wealth component | Expenditure base increased by 10% | 2026 | https://silgeneve.ch/legis/data/rsg_d3_08.htm |
-| Vaud minimum base (includes 15% for wealth tax) | CHF 415,000 | 2026 | https://www.estv2.admin.ch/stp/kb/vd-fr.pdf |
-| Vaud rent and board multiples | 7 times rent, 3 times board, each increased by 10% | 2026 | https://www.estv2.admin.ch/stp/kb/vd-fr.pdf |
+| Vaud minimum base (includes 15% for wealth tax) | CHF 415,000 | 2026 | https://prestations.vd.ch/pub/blv-publication/actes/consolide/642.11 |
+| Vaud rent and board multiples | 7 times rent, 3 times board, each increased by 10% | 2026 | https://prestations.vd.ch/pub/blv-publication/actes/consolide/642.11 |
 | Ticino minimum income base (indexed) | CHF 434,700, valid from tax year 2025 | 2025 | https://www.estv2.admin.ch/stp/kb/ti-it.pdf |
 | Ticino wealth base | 5 times the income base | 2026 | https://www.estv2.admin.ch/stp/kb/ti-it.pdf |
 | Valais minimum income base | CHF 250,000 | 2026 | https://lex.vs.ch/app/de/texts_of_law/642.400 |
@@ -67,7 +68,7 @@ An individual has the right to lump-sum taxation for federal tax when all three 
 | Federal late payment interest | 4.00% | 2026 | https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf |
 | Federal fine for breach of procedural duties | Up to CHF 1,000; up to CHF 10,000 in serious or repeat cases | 2026 | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de |
 
-The federal minimum is indexed to consumer prices each year (DBG art. 14 para. 6 with art. 39 para. 2). The fedlex consolidated DBG of 1 January 2025 still showed CHF 421,700, but the EFD ordinance of 22 August 2024 (AS 2024 479, art. 5) set CHF 434,700 for 2025, and ESTV circular 2-215 confirms CHF 434,700 for 2025 and CHF 435,000 for 2026.
+The federal minimum is indexed to consumer prices each year (DBG art. 14 para. 6 with art. 39 para. 2). The EFD ordinances on cold progression set it at CHF 421,700 for 2023 (AS 2022 575), CHF 429,100 for 2024 (AS 2023 493), CHF 434,700 for 2025 (AS 2024 479) and CHF 435,000 for 2026 (AS 2025 579). ESTV circular 2-215 confirms CHF 434,700 for 2025 and CHF 435,000 for 2026.
 
 ## The taxable base
 
@@ -82,7 +83,7 @@ The federal minimum is indexed to consumer prices each year (DBG art. 14 para. 6
 
 **Rent rules.** Annual rent is the actual rent for a full year without heating costs. If the landlord is a related person or company, the arm's length rent counts. With several Swiss homes, the highest rent or rental value sets the 7x test, and the others still count as living costs (section 3.3.2).
 
-**Control calculation (d).** Swiss-source capital income means bonds whose debtor is resident in Switzerland and shares of companies with their seat in Switzerland; where the securities are held and their currency do not matter. Foreign income enters when any foreign tax on it is reduced or removed by a treaty, including when only a Swiss address is given to the payer. The gross amount is the income less the part of foreign tax that cannot be recovered (section 3.3.4). Only two deductions are allowed in (d): maintenance costs of real estate under the property cost ordinance, and ordinary management costs of movable assets whose income is taxed. Debt interest, annuities and other charges are not deductible (VO Aufwandbesteuerung art. 1).
+**Control calculation (d).** Swiss-source capital income means bonds whose debtor is resident in Switzerland and shares of companies with their seat in Switzerland; where the securities are held and their currency do not matter. Foreign income enters when any foreign tax on it is reduced or removed by a treaty, including when only a Swiss address is given to the payer. The gross amount is the income less the part of foreign tax that cannot be recovered (sections 3.3.4 and 5.1). Only two deductions are allowed in (d): maintenance costs of real estate under the property cost ordinance, and ordinary management costs of movable assets whose income is taxed. Debt interest, annuities and other charges are not deductible (VO Aufwandbesteuerung art. 1).
 
 **No deductions from the base.** Nothing is deducted from the living-costs amount or the 7x and 3x amounts (circular no. 44, section 3.2). Social deductions under DBG art. 35 are not allowed (VO art. 2).
 
@@ -120,14 +121,14 @@ The federal minimum is indexed to consumer prices each year (DBG art. 14 para. 6
 - **Modified lump-sum taxation.** Under the treaties with Belgium, Germany, Italy, Norway, Canada, Austria and the USA, a Swiss resident gets treaty relief only if all income from that state taxable under Swiss law is subject to Swiss federal, cantonal and communal tax. A lump-sum taxpayer who claims relief under one of these treaties must therefore include all income from that state in the base, taxed at the rate of total worldwide income (DBG art. 14 para. 5; VO art. 4; circular no. 44, section 5.2). For the rate, deductions such as debt interest count, but they do not reduce the base. If the person does not declare the worldwide figures, the maximum rate applies.
 - **Lump-sum foreign tax credit.** Lump-sum taxpayers generally cannot claim the lump-sum credit for residual foreign withholding taxes. The exception is the modified lump-sum under the seven treaties above, with the gross amounts declared (circular no. 44, section 5.2).
 - **France.** Circular no. 44 lists special rules under the treaty with France for the control calculation (section 3.3.4). Read the treaty before advising a client with French income.
-- **Swiss withholding tax.** The 35% Verrechnungssteuer on Swiss dividends and interest is credited or refunded under the withholding tax ordinance (circular no. 44, section 5.1). See `ch-cross-border`.
+- **Swiss withholding tax.** The 35% Verrechnungssteuer on Swiss dividends and interest (VStG art. 13 para. 1 let. a) is credited or refunded under the withholding tax ordinance (circular no. 44, section 5.1). See `ch-cross-border`.
 - **Tax certificates.** The tax office issues residence certificates on request, taking the treaty into account (section 6).
 
 ## Worked examples
 
 ### Example 1: single person in Zug, rented villa
 
-A single Brazilian national moves to Zug in 2026 for the first time and does not work in Switzerland. She rents a villa for CHF 80,000 a year without heating. Her worldwide living costs are CHF 380,000. Her only Swiss-source income is CHF 40,000 of Swiss dividends, and she claims no treaty relief.
+A single Brazilian national moves to Zug on 1 January 2026, her first Swiss residence, and does not work in Switzerland. She rents a villa for CHF 80,000 a year without heating. Her worldwide living costs are CHF 380,000. Her only Swiss-source income is CHF 40,000 of Swiss dividends, and she claims no treaty relief.
 
 Federal base: the highest of living costs CHF 380,000, the minimum CHF 435,000, 7 x 80,000 = CHF 560,000, and the control calculation CHF 40,000. The base is **CHF 560,000**.
 
@@ -164,7 +165,7 @@ expected:
 
 ### Example 2: married couple, control calculation sets the base
 
-A married couple, both Italian nationals, settle in Ticino in 2026 after more than 10 years abroad. Neither works in Switzerland. They own their home, with a rental value of CHF 52,000. Their worldwide living costs are CHF 320,000. They hold a large portfolio of Swiss shares paying CHF 380,000 of dividends, receive a Swiss pension of CHF 60,000, and rent out a flat in Lugano for CHF 40,000 with CHF 8,000 of maintenance costs. Portfolio management costs are CHF 2,000. They claim no treaty relief on foreign income.
+A married couple, both Italian nationals, settle in Ticino on 1 January 2026 after more than 10 years abroad. Neither works in Switzerland. They rent their home for CHF 52,000 a year without heating. Their worldwide living costs are CHF 320,000. They hold a large portfolio of Swiss shares paying CHF 380,000 of dividends, receive a Swiss pension of CHF 60,000, and rent out a flat in Lugano for CHF 40,000 with CHF 8,000 of maintenance costs. Portfolio management costs are CHF 2,000. They claim no treaty relief on foreign income.
 
 The tests: living costs CHF 320,000; minimum CHF 435,000; 7 x 52,000 = CHF 364,000. The control calculation: 380,000 + 60,000 + 40,000 = CHF 480,000 gross, less the two allowed deductions (property maintenance CHF 8,000 and management costs CHF 2,000) = **CHF 470,000**. That is the highest, so it is the federal base.
 
@@ -177,7 +178,7 @@ name: Married, Ticino, control calculation above the minimum, federal lump-sum t
 inputs:
   living_costs: 320000
   federal_minimum: 435000
-  rental_value: 52000
+  annual_rent: 52000
   swiss_dividends: 380000
   swiss_pension: 60000
   swiss_rent_income: 40000
@@ -187,7 +188,7 @@ inputs:
   tax_at_band_start: 5692
   per_100: 13
 steps:
-  - rent_test: rental_value * 7
+  - rent_test: annual_rent * 7
   - control_base: swiss_dividends + swiss_pension + swiss_rent_income - property_maintenance - management_costs
   - base: max(max(living_costs, federal_minimum), max(rent_test, control_base))
   - steps_of_100: floor((base - band_start) / 100)
@@ -213,12 +214,14 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, version of 2 September 2026, art. 3, 14, 16, 36, 39, 124, 161, 163, 164, 174, 175, 205d (and version of 1 January 2025 for the lagging CHF 421,700) | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de | 2026-10-23 |
+| Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, version of 2 September 2026, art. 3, 14, 16, 36, 39, 124, 161, 163, 164, 174, 175, 205d | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de | 2026-10-23 |
 | Steuerharmonisierungsgesetz (StHG), SR 642.14, version of 1 January 2025, art. 6 | https://www.fedlex.admin.ch/eli/cc/1991/1256_1256_1256/de | 2026-10-23 |
 | Verordnung über die Besteuerung nach dem Aufwand bei der direkten Bundessteuer, SR 642.123, art. 1 to 5 | https://www.fedlex.admin.ch/eli/cc/2013/157/de | 2026-10-23 |
 | Verordnung des EFD über die kalte Progression of 10 September 2025, AS 2025 579, art. 3 | https://www.fedlex.admin.ch/eli/oc/2025/579/de | 2026-10-23 |
 | Verordnung des EFD über die kalte Progression of 22 August 2024, AS 2024 479, art. 5 | https://www.fedlex.admin.ch/eli/oc/2024/479/de | 2026-10-23 |
+| Verordnung des EFD über die kalte Progression of 1 September 2023, AS 2023 493, art. 5 | https://www.fedlex.admin.ch/eli/oc/2023/493/de | 2026-10-23 |
 | Verordnung des EFD über die kalte Progression of 16 September 2022, AS 2022 575, art. 5 | https://www.fedlex.admin.ch/eli/oc/2022/575/de | 2026-10-23 |
+| Bundesgesetz über die Verrechnungssteuer (VStG), SR 642.21, art. 13 | https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de | 2026-10-23 |
 | Verordnung des EFD über Fälligkeit und Verzinsung der direkten Bundessteuer, SR 642.124, art. 1 | https://www.fedlex.admin.ch/eli/cc/1993/717_717_717/de | 2026-10-23 |
 | ESTV, Kreisschreiben Nr. 44, Besteuerung nach dem Aufwand bei der direkten Bundessteuer, 24 July 2018 | https://www.estv.admin.ch/dam/de/sd-web/pl0PXAcAAxJq/dbst-ks-2018-1-044-d-de.pdf | 2026-10-23 |
 | ESTV, Rundschreiben 2-215-D-2025, kalte Progression und Zinssätze für das Steuerjahr 2026, 11 September 2025 | https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf | 2026-10-23 |
@@ -226,7 +229,8 @@ expected:
 | Kanton Zug, Steuergesetz (BGS 632.1), § 14 | https://bgs.zg.ch/app/de/texts_of_law/632.1 | 2026-10-23 |
 | Kanton Zug, Verordnung zum Steuergesetz (BGS 632.11), § 4 | https://bgs.zg.ch/app/de/texts_of_law/632.11 | 2026-10-23 |
 | République et canton de Genève, LIPP (D 3 08), art. 14, version of 1 January 2026 | https://silgeneve.ch/legis/data/rsg_d3_08.htm | 2026-10-23 |
-| ESTV, Feuille cantonale Vaud (février 2026), LI art. 15 | https://www.estv2.admin.ch/stp/kb/vd-fr.pdf | 2026-10-23 |
+| Canton de Vaud, Loi sur les impôts directs cantonaux (LI, BLV 642.11), art. 15 and 60, version of 1 May 2026 | https://prestations.vd.ch/pub/blv-publication/actes/consolide/642.11 | 2026-10-23 |
+| Canton de Vaud, Règlement relatif à l'imposition d'après la dépense (RILI, BLV 642.11.1), art. 1 | https://prestations.vd.ch/pub/blv-publication/actes/consolide/642.11.1 | 2026-10-23 |
 | ESTV, Foglio cantonale Ticino (febbraio 2026), LT art. 13 | https://www.estv2.admin.ch/stp/kb/ti-it.pdf | 2026-10-23 |
 | Kanton Wallis, Steuergesetz (SGS 642.1), art. 11, version of 1 January 2026 | https://lex.vs.ch/app/de/texts_of_law/642.1 | 2026-10-23 |
 | Kanton Wallis, Verordnung über die Besteuerung nach dem Aufwand (SGS 642.400), art. 1 | https://lex.vs.ch/app/de/texts_of_law/642.400 | 2026-10-23 |
@@ -235,4 +239,4 @@ expected:
 | Kanton Bern, Steuergesetz (BSG 661.11), art. 16, version of 1 January 2026 | https://www.belex.sites.be.ch/app/de/texts_of_law/661.11 | 2026-10-23 |
 | Kanton Zürich, press release on the abolition of lump-sum taxation, January 2011 | https://www.zh.ch/de/news-uebersicht/medienmitteilungen/2011/01/004.html | 2026-10-23 |
 
-Not yet confirmed: the Vaud and Ticino minimums come from the ESTV cantonal sheets of February 2026, not the cantons' own legislation sites (the Vaud BLV site did not load); Vaud indexes its CHF 415,000 under LI art. 60 and Ticino its CHF 434,700 under LT art. 13 para. 8, and neither 2026 indexed figure was found; whether Geneva or Bern index their CHF 400,000 (the law texts state a fixed figure); how Graubünden capitalises living costs into a wealth base; the special treaty rules for France, Belgium, Germany, Italy, Norway, Canada, Austria and the USA treaty by treaty; cantonal filing deadlines.
+Not yet confirmed: the Ticino minimum comes from the ESTV cantonal sheet of February 2026, not the canton's own legislation site (which did not load); Vaud indexes its CHF 415,000 under LI art. 60 (RILI art. 1 para. 4) but its law of 1 May 2026 still prints CHF 415,000, and Ticino indexes its CHF 434,700 under LT art. 13 para. 8; neither 2026 indexed figure was found; whether Geneva or Bern index their CHF 400,000 (the law texts state a fixed figure); how Graubünden capitalises living costs into a wealth base; whether the 2020 revision of the ordinance on the credit for foreign withholding taxes (SR 672.201) changed the rule in circular no. 44, section 5.2, that lump-sum taxpayers generally get no credit; the special treaty rules for France, Belgium, Germany, Italy, Norway, Canada, Austria and the USA treaty by treaty; cantonal filing deadlines.
