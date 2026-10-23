@@ -1,669 +1,262 @@
 ---
 name: serbia-income-tax
-description: Use this skill whenever asked about Serbia (Republic of Serbia) personal income tax for self-employed individuals, entrepreneurs, freelancers, and employees. Trigger on phrases like "how much tax do I pay in Serbia", "porez na dohodak", "PP GPDG", "annual income tax", "paušalac", "flat-rate entrepreneur", "freelancer self-taxation", "Model A Model B", "non-taxable salary cap", "PIO contributions", "PPP-PD", "self-employed tax Serbia", "frilenseri", "dinar tax", or any question about filing or computing Serbian personal income tax. Also trigger when preparing or reviewing a PP GPDG annual return, a PPDG-1S/PPDG-1R entrepreneur return, a freelancer quarterly self-taxation return, or payroll withholding (PPP-PD), and when computing social security contributions (PIO, health, unemployment). This skill covers the 10% flat employment/entrepreneur tax, freelancer Models A and B, scheduler income taxes (capital gains, dividends, interest, rental, royalties, other), the annual supplementary progressive tax, social contribution rates and base limits, and penalties. ALWAYS read this skill before touching any Serbian income tax work.
-version: 0.1
+description: "Serbian personal income tax for individuals, tax year 2026. Covers the 10% salary tax and the 2026 non-taxable salary amount of RSD 34,221 a month; entrepreneurs taxed on actual profit at 10% and flat-rate (paušal) entrepreneurs, with who may use the flat-rate regime and the nine-criteria independence test; capital income at 15%; capital gains at 15% with the ten-year, family and housing exemptions; rent at 20% after 25% standard costs; other income; and the annual personal income tax with its threshold of three average annual salaries, personal deductions and 10% and 15% rates, filed on PP GPDG by 15 May 2027. Trigger on: porez na dohodak građana, porez na zarade, paušalac, test samostalnosti, PP GPDG, godišnji porez, kapitalni dobitak, porez na zakup. Out of scope: residence and non-residents (rs-cross-border), payroll (serbia-payroll), contributions (serbia-social-contributions), companies (rs-corporate-tax), VAT (serbia-vat)."
 jurisdiction: RS
-tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - income-tax-workflow-base
 category: international
+tax_year: 2026
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+last_updated: 2026-10-23
+version: 0.1
+verified_by: pending
 ---
 
-# Serbia Personal Income Tax -- Self-Employed & Individuals
-
-## Serbia Personal Income Tax -- Self-Employed & Individuals Skill v0.1
-
-## Section 1 -- Quick Reference
-
-**Section 1 -- Quick Reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Serbia (Republic of Serbia) |
-| Tax | Personal income tax (porez na dohodak građana) + mandatory social contributions |
-| Currency | RSD (Serbian dinar) only |
-| Tax year | Calendar year (1 January -- 31 December); income year 2025 |
-| Primary legislation | Law on Personal Income Tax (Zakon o porezu na dohodak građana) |
-| Supporting legislation | Law on Mandatory Social Insurance Contributions (Zakon o doprinosima za obavezno socijalno osiguranje); Law on Tax Procedure and Tax Administration (ZPPPA). December 2025 amendments effective 1 Jan 2026 (KPMG Serbia, Dec 2025). |
-| Tax authority | Poreska uprava -- Tax Administration of the Republic of Serbia (Ministry of Finance) |
-| Filing portal | eTax / ePorezi (eporezi.purs.gov.rs); freelancer portal frilenseri.purs.gov.rs |
-| Annual return deadline | 15 May following the income year -- 15 May 2026 for 2025 income (Poreska uprava; KPMG Feb 2026) |
-| Validated by | Pending -- requires sign-off by a Serbian tax adviser / licensed accountant |
-| Validation date | Pending |
-| Skill version | 0.1 |
-
-### Headline Income Tax Rates (2025 income year)
-
-**Headline Income Tax Rates (2025 income year) table**  _(PwC; Eurofast; KPMG Dec 2025)_
-
-| Income type | Rate | Base / notes | Source |
-| --- | --- | --- | --- |
-| Employment income (monthly withholding) | 10% flat | Gross salary minus non-taxable cap RSD 28,423/month (2025); RSD 34,221/month from 1 Jan 2026 | PwC; Eurofast; KPMG Dec 2025 |
-| Self-employment / entrepreneur (actual income, bookkeeping) | 10% flat | On taxable profit | welcometoserbia.gov.rs |
-| Self-employment / entrepreneur (flat-rate / paušalno) | 10% | Applied to a deemed lump-sum base set by the Tax Administration; effective tax is a fixed monthly amount; annual base growth capped at 10% through end 2027 | Poreska uprava; NALED |
-| Capital gains | 15% | Resident exempt if asset held 10+ consecutive years | PwC income-determination |
-| Investment income (dividends, interest, investment fund) | 15% | -- | PwC income-determination |
-| Rental / real-estate income | 20% on 75% of gross (25% standard deduction), or on income after documented actual costs | -- | PwC income-determination; audere.rs |
-| Royalty / copyright income | 20% | After standard cost deduction of 50%, 43% or 34% depending on royalty type | PwC income-determination |
-| Other income | 20% (15% for insurance proceeds) | -- | PwC income-determination |
-
-### Annual Supplementary Tax -- 2025 income (filed 2026)
-
-Applies only if total net income exceeds **3x the average annual salary = RSD 5,439,096** (3 × RSD 1,813,032) (KPMG Feb 2026).
-
-**Annual Supplementary Tax bands table**  _(KPMG Feb 2026)_
-
-| Band | Net income (RSD) | Rate | Cumulative supplementary tax at top of band | Source |
-| --- | --- | --- | --- | --- |
-| Below threshold | 0 -- 5,439,096 | 0% (not subject to annual tax) | RSD 0 | KPMG Feb 2026 |
-| Band 1 | 5,439,096 -- 10,878,192 | 10% | RSD 543,909.60 | KPMG Feb 2026 |
-| Band 2 | above 10,878,192 | 15% | -- | KPMG Feb 2026 |
-
-Band 1 width = 10,878,192 − 5,439,096 = RSD 5,439,096; at 10% that is RSD 543,909.60 of tax accumulated by the top of Band 1. PwC expresses Band 2 as "10% then +15% = effective 25% on the top band"; both descriptions are the same marginal 15% supplement layered on the 10% (PwC; KPMG Feb 2026). Personal/dependent deductions and youth relief (Section 1 below and Section 5.10) reduce the base before bands apply.
-
-### Annual Tax Deductions (2025 income)
-
-**Annual Tax Deductions table**  _(KPMG Feb 2026)_
-
-| Deduction | Value (RSD) | Source |
-| --- | --- | --- |
-| Average annual salary (basis for multiples) | 1,813,032 (implied from the 3x threshold of 5,439,096) | KPMG Feb 2026 |
-| Taxpayer personal deduction (40% of avg annual salary) | 725,213 | KPMG Feb 2026 |
-| Per-dependent deduction (15% of avg annual salary) | 271,955 per dependent | KPMG Feb 2026 |
-| Cap on combined personal + dependent deductions | 50% of taxable income | KPMG Feb 2026 |
-| Youth relief (taxpayer under 40 on last day of year) | Additional reduction of 5,439,096 (3x avg annual salary) against employment/self-employment/IP income | KPMG Feb 2026 |
-
-### Social Security Contributions (2025)
-
-**Social Security Contributions table**  _(PwC other-taxes)_
-
-| Contribution | Employee | Employer | Total | Source |
-| --- | --- | --- | --- | --- |
-| Pension & disability (PIO) | 14% | 10% | 24% | PwC other-taxes; Orbitax |
-| Health insurance | 5.15% | 5.15% | 10.3% | PwC other-taxes |
-| Unemployment insurance | 0.75% | 0% (employee only) | 0.75% | PwC other-taxes; welcometoserbia.gov.rs |
-| **TOTAL** | **19.90%** | **15.15%** | **35.05%** | PwC other-taxes |
-
-Employee column check: 14% + 5.15% + 0.75% = **19.90%**. Employer column check: 10% + 5.15% + 0% = **15.15%**. Total column check: 24% + 10.3% + 0.75% = **35.05%**, and 19.90% + 15.15% = **35.05%**. Self-employed entrepreneurs and freelancers pay **both** portions themselves: PIO 24% + health 10.3% + unemployment 0.75% = 35.05% (welcometoserbia.gov.rs).
-
-**2025 contribution base limits** (reset annually on the published average gross salary): floor **RSD 45,950/month** (35% of average salary); ceiling **RSD 656,425/month** (5x average salary; **RSD 7,877,100/year**) (Orbitax; Eurofast).
-
-### Conservative Defaults
-
-**Conservative Defaults table**
-
-| Ambiguity | Default | Source |
-| --- | --- | --- |
-| Residency unknown | Treat as resident (worldwide income); flag for reviewer | PwC residence |
-| Period spans 2025/2026 | Use RSD 28,423 non-taxable cap for 2025 periods; RSD 34,221 only from 1 Jan 2026 | Eurofast; KPMG Dec 2025 |
-| Social base limits, year unknown | Use 2025 floor RSD 45,950 / ceiling RSD 656,425; reset each year | Orbitax |
-| Entrepreneur regime unknown | Default to actual-income (bookkeeping) 10%; flat-rate only if eligible and elected | Poreska uprava |
-| Flat-rate eligibility unclear | Excluded if VAT-registered or turnover > RSD 6,000,000/yr | Poreska uprava; pausal.rs |
-| Rental expense basis unknown | Apply 25% standard deduction (75% taxable at 20%) | audere.rs |
-| Royalty cost-deduction class unknown | Use the lowest standard deduction (34%) until type confirmed | PwC income-determination |
-| Freelancer model unknown | Compute both Model A and Model B; present the lower tax, flag for reviewer | frilenseri.purs.gov.rs |
-| Capital-asset holding period unknown | Treat gain as taxable (no 10-year exemption) | PwC income-determination |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of taxpayer type (employee / entrepreneur-bookkeeping / entrepreneur-flat-rate / freelancer) and residency status (resident vs non-resident).
-
-**Recommended** -- all sales invoices, purchase invoices/receipts, contribution payment records (PIO/health/unemployment), prior-year return or assessment, VAT (PDV) registration status, age (for youth relief and the under-40 annual-tax reduction), number of dependents.
-
-**Ideal** -- complete income and expenditure ledger (entrepreneurs on bookkeeping), flat-rate decision (rešenje) from the Tax Administration (paušalci), freelancer quarterly self-taxation filings, employer PPP-PD records (employees), provisional/installment payment confirmations.
-
-**Refusal if minimum is missing -- SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This computation was produced from bank statement alone. The reviewer must verify all income is captured, that deductions are supported by valid documentation, and that the correct regime (employment / entrepreneur / freelancer) was applied."
-
-### Refusal Catalogue
-
-- **R-RS-1** — Taxpayer type unknown. "Serbia taxes employment, entrepreneur, and freelancer income under different rules and rates. This skill cannot compute tax without knowing the taxpayer type. Please confirm before proceeding."
-- **R-RS-2** — Companies / legal persons. "This skill covers natural persons (employees, entrepreneurs, freelancers) only. Corporate income tax (porez na dobit pravnih lica) for d.o.o./a.d. companies is out of scope. Escalate to a Serbian tax adviser."
-- **R-RS-3** — Non-resident / dual-resident. "Non-resident and dual-resident taxation (Serbian-source only) and tax-treaty relief require specialised analysis. Escalate to a Serbian tax adviser."
-- **R-RS-4** — Flat-rate (paušalno) base determination. "The flat-rate monthly tax is a deemed amount set per-taxpayer by the Tax Administration based on activity, location, age and gender. This skill cannot derive that figure; obtain the official decision (rešenje). Escalate to a Serbian tax adviser." [RESEARCH GAP -- the per-taxpayer flat-rate base cannot be reduced to a single national figure; reviewer to confirm from the rešenje.]
-- **R-RS-5** — Arrears / enforcement. "Client has outstanding tax arrears or is subject to Tax Administration enforcement. Late-payment interest runs at the NBS reference rate + 10 percentage points and repeat violations can trigger an activity ban of 6 months to 3 years. Do not advise. Escalate to a Serbian tax adviser immediately."
-- **R-RS-6** — VAT return requested. "This skill covers personal income tax only. For Serbian VAT (PDV), use the serbia-vat-return skill (if available) or escalate."
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. Serbian descriptions are often in Cyrillic or Latin script; match Latin transliterations. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
-
-### 3.1 Income Patterns (Credits on Bank Statement)
-
-**3.1 Income Patterns table**
-
-| Pattern | Schedule / Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + UPLATA, PRENOS, PLAĆANJE, PAYMENT RECEIVED | Business income | Entrepreneur Box: business revenue | If VAT-registered, extract net (excl. 20% PDV) |
-| HONORAR, NAKNADA, FEES, CONSULTANCY | Business income | Entrepreneur/freelancer revenue | Professional fees |
-| AUTORSKI HONORAR, ROYALTY, COPYRIGHT | Royalty/copyright | Freelancer self-taxation (Model A/B) or royalty schedule | Income from abroad → freelancer self-taxation |
-| STRIPE, PAYPAL, WISE, PAYONEER PAYOUT | Foreign-source income | Freelancer self-taxation (income from abroad) | Match to underlying invoices; quarterly self-tax |
-| UPWORK, FIVERR, TOPTAL | Foreign-source income | Freelancer self-taxation | Net of platform commission |
-| ZARADA, PLATA, SALARY, EMPLOYER [name] | Employment income | 10% withheld at source (PPP-PD) | Already taxed by employer; do not double-count |
-| ZAKUP, KIRIJA, RENT RECEIVED | Rental income | 20% on 75% of gross or actual-cost basis | Real-estate income |
-| KAMATA, INTEREST RECEIVED | Investment income | 15% | Interest income |
-| DIVIDENDA, DIVIDEND | Investment income | 15% | Dividend income |
-| POVRAĆAJ POREZA, TAX REFUND | EXCLUDE | Not income | Refund from prior period |
-| SUBVENCIJA, GRANT, DRŽAVNA POMOĆ | Check nature | EXCLUDE if capital grant; revenue grant = business income | Confirm nature with reviewer |
-
-### 3.2 Expense Patterns (Debits) -- Deductible Business Expenses (entrepreneur bookkeeping)
-
-**3.2 Expense Patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| ZAKUP KANCELARIJE, OFFICE RENT | Office rent | Deductible | Dedicated business premises |
-| OSIGURANJE (poslovno), PROFESSIONAL INSURANCE | Business insurance | Deductible | Must be business-related |
-| KNJIGOVODSTVO, RAČUNOVODSTVO, ACCOUNTANT, BOOKKEEPING | Accountancy fees | Deductible | -- |
-| ADVOKAT, LAWYER, LEGAL, NOTAR | Legal/notary fees | Deductible | Must be business-related |
-| KANCELARIJSKI MATERIJAL, OFFICE SUPPLIES | Office supplies | Deductible | -- |
-| MARKETING, GOOGLE ADS, META ADS, REKLAMA | Marketing/advertising | Deductible | -- |
-| OBUKA, KURS, SEMINAR, CONFERENCE | Training | Deductible | Must relate to current business |
-| BANKARSKA PROVIZIJA, BANK FEE, NAKNADA | Bank charges | Deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing | Deductible | -- |
-| DOMEN, HOSTING, AWS, CLOUDFLARE | IT infrastructure | Deductible | Capitalise if a long-life asset; otherwise expense |
-
-### 3.3 Expense Patterns (Debits) -- SaaS / Software
-
-**3.3 Expense Patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365 | Software subscription | Deductible | Recurring = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Deductible | -- |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN | Software subscription | Deductible | -- |
-| Perpetual software licence (long-life) | Capital item | Capitalise / depreciate | Flag for reviewer; [RESEARCH GAP -- statutory depreciation rates not in research data; reviewer to confirm] |
-
-### 3.4 Expense Patterns (Debits) -- Utilities (may need apportionment)
-
-**3.4 Expense Patterns table**
-
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| EPS, ELEKTRODISTRIBUCIJA, STRUJA | Electricity | T2 if home office | 100% if dedicated office; proportional if home |
-| VODOVOD, VODA | Water | T2 if home office | As above |
-| SBB, YETTEL, A1, TELEKOM, MTS, INTERNET | Telecoms/broadband | T2 | Business-use portion only; default 0% if mixed |
-| MOBILNI, MOBILE | Phone | T2 | Business-use portion only |
-
-### 3.5 Expense Patterns (Debits) -- Travel
-
-**3.5 Expense Patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| AIR SERBIA, WIZZ AIR, RYANAIR, AVIO | Flights | Deductible if business travel | Must be wholly business purpose |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel | -- |
-| TAXI, CARGO, BOLT, YANDEX | Local transport | Deductible if business purpose | -- |
-| GORIVO, BENZIN, NIS, FUEL | Vehicle fuel | T2 -- business % only | Requires mileage log |
-| PARKING | Parking | T2 -- business % only | -- |
-
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
-
-**3.6 Expense Patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTORAN, RUČAK, VEČERA, ENTERTAINMENT | Entertainment | NOT deductible | Private/representation; confirm statutory limit with reviewer |
-| LIČNO, NAMIRNICE, SUPERMARKET, MAXI, IDEA | Personal expenses | NOT deductible | Private living costs |
-| KAZNA, PENAL, FINE, PREKRŠAJ | Fines/penalties | NOT deductible | Public policy |
-| POREZ, INCOME TAX, PIB UPLATA | Tax payments | NOT deductible | Income tax cannot reduce income |
-| ISPLATA VLASNIKU, DRAWINGS, ATM (personal) | Drawings | NOT deductible | Not an expense |
-
-### 3.7 Exclusions (Neither Income nor Expense)
-
-**3.7 Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| INTERNI PRENOS, OWN ACCOUNT, IZMEĐU RAČUNA | EXCLUDE | Own-account transfer |
-| OTPLATA KREDITA, LOAN REPAYMENT | EXCLUDE | Loan principal movement |
-| DOPRINOSI, PIO, ZDRAVSTVO, NEZAPOSLENOST | Contributions schedule | Mandatory contributions -- handled separately, not a general expense line |
-| PDV UPLATA, VAT PAYMENT | EXCLUDE | VAT liability payment, not expense |
-
-### 3.8 Serbian Banks -- Statement Format Reference
-
-**3.8 Serbian Banks table**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| Banca Intesa | PRENOS, UPLATA, ISPLATA, NAKNADA | PDF/CSV; description in Cyrillic or Latin |
-| OTP banka (ex-Société Générale) | TRANSFER, PLAĆANJE, PROVIZIJA | PDF/CSV |
-| Raiffeisen banka | PRENOS, KARTICA, NAKNADA | PDF/CSV |
-| NLB Komercijalna banka | UPLATA, ISPLATA, TROŠAK | PDF; larger retail base |
-| UniCredit Bank Srbija | TRANSFER, CARD, FEE | PDF/CSV |
-| Wise / Revolut (freelancers) | PAYMENT, TRANSFER, PAYOUT | CSV; multi-currency -- convert to RSD |
-
-## Section 4 -- Worked Examples
-
-### Example 1 -- Employment salary (2025 monthly withholding)
-
-**Input line:**
-`05/03/2025 ; INTESA UPLATA ; POSLODAVAC D.O.O. ; ZARADA FEB 2025 ; +107,992.30 ; RSD`
-
-**Reasoning:**
-Net salary received. Gross salary is RSD 150,000/month. 2025 non-taxable cap = RSD 28,423 (Eurofast; KPMG Dec 2025).
-- PIT base = 150,000 − 28,423 = 121,577. PIT = 121,577 × 10% = **RSD 12,157.70**.
-- Gross 150,000 is between floor 45,950 and ceiling 656,425, so contributions apply on full gross. Employee contributions = 150,000 × 19.90% = **RSD 29,850.00**.
-- Net = 150,000 − 12,157.70 − 29,850.00 = **RSD 107,992.30**.
-
-Check: 12,157.70 + 29,850.00 = 42,007.70; 150,000 − 42,007.70 = 107,992.30 ✓
-
-**Classification:** Employment income, already taxed at source via PPP-PD. Net pay RSD 107,992.30. Do not re-tax.
-
-### Example 2 -- Entrepreneur on bookkeeping (actual income, 10%)
-
-**Input:** Sole entrepreneur, VAT-registered. Annual taxable profit (revenue net of PDV, less allowable expenses) = RSD 2,400,000.
-
-**Reasoning:**
-- Income tax = 2,400,000 × 10% = **RSD 240,000** (welcometoserbia.gov.rs).
-- Entrepreneur pays full combined contributions on the contribution base (here using profit as the base, subject to the 2025 floor/ceiling): PIO 24% + health 10.3% + unemployment 0.75% = 35.05%. On RSD 2,400,000 = **RSD 841,200** (welcometoserbia.gov.rs). [RESEARCH GAP -- the precise contribution base for bookkeeping entrepreneurs (taxable profit vs an elected base, with floor/ceiling) should be confirmed by the reviewer.]
-
-**Classification:** Income tax RSD 240,000; contributions ~RSD 841,200 (subject to base-determination check).
-
-### Example 3 -- Freelancer self-taxation, Model A (quarterly)
-
-**Input line (one quarter, income from abroad):**
-`30/06/2025 ; WISE PAYOUT ; UPWORK ESCROW ; Q2 FREELANCE ; +600,000.00 ; RSD`
-
-**Reasoning (Model A):** standardized quarterly deduction RSD 96,000; 20% tax on the excess; PIO 24% and health 10.3% on the same taxable base (Eurofast; frilenseri.purs.gov.rs).
-- Taxable base = 600,000 − 96,000 = 504,000.
-- Tax = 504,000 × 20% = **RSD 100,800**.
-- PIO = 504,000 × 24% = **RSD 120,960**; health = 504,000 × 10.3% = **RSD 51,912**.
-- Total Model A burden = 100,800 + 120,960 + 51,912 = **RSD 273,672**.
-
-**Classification:** File the freelancer self-taxation return for Q2. (See Example 4 for the Model B comparison before choosing.)
-
-### Example 4 -- Freelancer self-taxation, Model B (same quarter)
-
-**Reasoning (Model B):** standardized quarterly deduction RSD 57,900 **plus** 34% of gross quarterly income; 10% tax; PIO 24% (minimum payment applies) and health 10.3% (Eurofast; frilenseri.purs.gov.rs).
-- Deduction = 57,900 + (600,000 × 34%) = 57,900 + 204,000 = 261,900.
-- Taxable base = 600,000 − 261,900 = 338,100.
-- Tax = 338,100 × 10% = **RSD 33,810**.
-- PIO = 338,100 × 24% = **RSD 81,144** (subject to a minimum-contribution floor); health = 338,100 × 10.3% = **RSD 34,824.30**.
-- Total Model B burden (before any PIO minimum top-up) = 33,810 + 81,144 + 34,824.30 = **RSD 149,778.30**.
-
-**Comparison:** For this quarter Model B (RSD 149,778.30) is cheaper than Model A (RSD 273,672), driven by the 34%-of-gross deduction. Default is to present the lower-tax model and flag for reviewer; Model B's PIO minimum-payment rule may raise the result. [RESEARCH GAP -- the Model B minimum PIO contribution amount is not in the research data; reviewer to confirm on frilenseri.purs.gov.rs.]
-
-### Example 5 -- Rental income (real estate)
-
-**Input line:**
-`10/04/2025 ; OTP UPLATA ; ZAKUPAC ; ZAKUP STAN APR ; +80,000.00 ; RSD`
-
-**Reasoning:** Rental income taxed at 20% on 75% of gross after the 25% standard deduction, unless documented actual costs are higher (PwC income-determination; audere.rs).
-- Taxable = 80,000 × 75% = 60,000.
-- Tax = 60,000 × 20% = **RSD 12,000**. Effective rate = 12,000 / 80,000 = 15%.
-
-**Classification:** Rental income, RSD 12,000 tax for the month (standard-deduction basis).
-
-### Example 6 -- Annual supplementary tax (2025 income, high earner)
-
-**Input:** Resident, total net income for 2025 = RSD 12,000,000. Taxpayer is 45 (no youth relief). Claims only the personal deduction. No dependents.
-
-**Reasoning (KPMG Feb 2026):**
-- Threshold = RSD 5,439,096 (3x avg annual salary). Income exceeds it, so the annual tax applies.
-- Personal deduction RSD 725,213 (cannot exceed 50% of taxable income; 725,213 < 6,000,000, so allowed in full). Taxable income for the annual tax = 12,000,000 − 725,213 = 11,274,787.
-- Band 1 (5,439,096 → 10,878,192): width 5,439,096 × 10% = **RSD 543,909.60**.
-- Band 2 (above 10,878,192): 11,274,787 − 10,878,192 = 396,595 × 15% = **RSD 59,489.25**.
-- Annual supplementary tax = 543,909.60 + 59,489.25 = **RSD 603,398.85**.
-
-Check: 543,909.60 + 59,489.25 = 603,398.85 ✓
-
-**Classification:** File Form PP GPDG by 15 May 2026; supplementary tax due RSD 603,398.85 (in addition to tax already withheld during the year).
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Residency
-
-- **Residency taxation basis** — Resident individuals are taxed on worldwide income; non-residents on Serbian-source income only. Default to resident and flag if uncertain.  _(PwC residence)_
-
-### 5.2 Employment Income -- 10% Flat
-
-- **Employment income taxation** — 10% flat PIT on gross salary minus the monthly non-taxable cap: RSD 28,423 for 2025, rising to RSD 34,221 from 1 Jan 2026 (CPI-indexed each 1 February). Withheld monthly at source by the employer and reported on PPP-PD with each salary payment.  _(PwC; Eurofast; KPMG Dec 2025)_
-
-### 5.3 Social Security Contributions
-
-- **Social Security Contributions rule** — Split: employee 19.90% (PIO 14% + health 5.15% + unemployment 0.75%) and employer 15.15% (PIO 10% + health 5.15%; no employer unemployment). Combined 35.05% of gross. 2025 base limits: floor RSD 45,950/month, ceiling RSD 656,425/month (RSD 7,877,100/year). Self-employed/entrepreneurs and freelancers pay the full 35.05% themselves.  _(PwC other-taxes; Orbitax; Eurofast; welcometoserbia.gov.rs)_
-
-### 5.4 Entrepreneur Income Tax -- 10%
-
-- **Entrepreneur income tax rule** — 10% on either actual taxable profit (bookkeeping) or a deemed flat-rate (paušalno) base set by the Tax Administration. Flat-rate base annual growth is capped at 10% through end 2027. Default to bookkeeping unless flat-rate is elected and the client qualifies.  _(Poreska uprava; NALED)_
-
-### 5.5 Flat-Rate (Paušalac) Eligibility
-
-- **Flat-rate eligibility rule** — Annual turnover must not exceed RSD 6,000,000 (calendar year) and must not exceed RSD 8,000,000 over a rolling 365 days; the entrepreneur cannot be VAT-registered. The actual monthly tax is a per-taxpayer deemed amount -- see R-RS-4.  _(pausal.rs; NALED)_
-
-### 5.6 Freelancer Self-Taxation (copyright / income from abroad) -- quarterly
-
-- **Freelancer self-taxation models** — Two models: **Model A:** standardized deduction RSD 96,000/quarter (RSD 32,000/month); 20% tax on the excess; PIO 24% and health 10.3% on the same base. **Model B:** standardized deduction RSD 57,900/quarter plus 34% of gross quarterly income; 10% tax; PIO 24% (minimum payment applies) and health 10.3%. Filed quarterly via the frilenseri portal (within 30 days of quarter end).  _(Eurofast; frilenseri.purs.gov.rs)_
-
-### 5.7 Capital Gains and Investment Income
-
-- **Capital gains and investment income rule** — Capital gains: 15% (resident exemption if the asset is held 10+ consecutive years). Dividends, interest and investment-fund income: 15%.  _(PwC income-determination)_
-
-### 5.8 Rental, Royalty and Other Income
-
-**5.8 Rental, Royalty and Other Income table**  _(PwC; audere.rs)_
-
-| Income type | Rate | Base | Source |
-| --- | --- | --- | --- |
-| Rental / real estate | 20% | 75% of gross (25% standard deduction) or income after documented actual costs | PwC; audere.rs |
-| Royalty / copyright | 20% | After standard cost deduction 50% / 43% / 34% by type | PwC income-determination |
-| Other income | 20% | -- | PwC income-determination |
-| Insurance proceeds | 15% | -- | PwC income-determination |
-
-### 5.9 VAT (PDV) Interaction
-
-- **VAT interaction rule** — VAT registration is mandatory above RSD 8,000,000 turnover over 12 months; standard rate 20%, reduced rate 10%. Flat-rate entrepreneurs cannot enter the VAT system. For VAT-registered entrepreneurs, report income net of PDV and exclude collected PDV from business income.  _(taxadvisorserbia.com)_
-
-### 5.10 Annual Supplementary Tax
-
-- **Annual supplementary tax rule** — For 2025 income, the annual tax applies only if total net income exceeds RSD 5,439,096 (3x avg annual salary of RSD 1,813,032). Band 1: 10% on income from 3x to 6x (5,439,096 → 10,878,192). Band 2: 15% on income above 6x (10,878,192). Personal deduction RSD 725,213 and per-dependent deduction RSD 271,955 (combined deductions capped at 50% of taxable income). Youth relief: taxpayers under 40 on the last day of the year get an additional RSD 5,439,096 reduction against employment/self-employment/IP income.  _(KPMG Feb 2026)_
-
-### 5.11 Filing, Forms and Deadlines
-
-**5.11 Filing, Forms and Deadlines table**
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| PP GPDG | Annual personal income tax return (supplementary annual tax); pre-filled on eTax/ePorezi, verified/corrected and submitted | 15 May following the income year (15 May 2026 for 2025); tax payable by the same date | Poreska uprava; KPMG Feb 2026 |
-| PPP-PD | Aggregate withholding return for salaries (PIT + contributions), filed electronically with each salary payment | On/before the date of income payment | PwC tax-administration |
-| PP OPO / freelancer self-taxation return | Self-assessed income tax + contributions on copyright/income from abroad, via frilenseri portal | Quarterly (within 30 days of quarter end) | frilenseri.purs.gov.rs |
-| PPDG-1S / PPDG-1R | Annual entrepreneur returns -- flat-rate (1S) and actual-income/bookkeeping (1R) | Annual; self-employment income returns electronic-only from 2026 | KPMG Dec 2025 |
-
-### 5.12 Minimum Wage (2025)
-
-- **Minimum wage rule** — Minimum net wage: RSD 308/hour from 1 Jan 2025, raised to RSD 337/hour from 1 Oct 2025; monthly net depends on working hours (e.g. ~RSD 49,280 at 160h to ~RSD 56,672 at 184h, at RSD 308). Check: 308 × 160 = 49,280 ✓; 308 × 184 = 56,672 ✓.  _(WageIndicator; tsg.rs; advokatibeograd.rs)_
-
-### 5.13 Penalties
-
-**5.13 Penalties table**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Failure to file | 20%-75% of tax determined in control; minimum RSD 400,000 (legal person) / RSD 80,000 (entrepreneur) | PwC; ekapija.com |
-| Failure to pay | 10%-50% of tax determined in control; minimum RSD 250,000 (legal person) / RSD 50,000 (entrepreneur) | PwC income-determination |
-| Late-payment interest | NBS reference rate + 10 percentage points per annum; deferred/installment-tax interest at NBS reference rate alone | ZPPPA |
-| Repeat violations | Two offence charges within two years can trigger an activity ban of 6 months to 3 years (plus monetary penalty) | PwC income-determination |
-
-[RESEARCH GAP -- specific monetary fines for individuals (non-entrepreneur natural persons) under the Law on Personal Income Tax are not in the research data; reviewer to confirm from the statute.]
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Choosing Freelancer Model A vs Model B
-
-- Model B's 34%-of-gross deduction favours higher-revenue quarters; Model A's flat RSD 96,000 favours lower-revenue quarters.
-- Model B carries a minimum PIO contribution; verify the current-quarter minimum before concluding which model is cheaper.
-- **Conservative default:** compute both, present the lower total, flag for reviewer. Re-verify standardized amounts on frilenseri.purs.gov.rs before filing.
-
-### 6.2 Entrepreneur Contribution Base
-
-- The contribution base for bookkeeping entrepreneurs interacts with the floor (RSD 45,950) and ceiling (RSD 656,425).
-- **Flag for reviewer:** confirm whether contributions are on taxable profit or an elected base, and whether the annual ceiling (RSD 7,877,100) applies.
-
-### 6.3 Flat-Rate vs Bookkeeping Election
-
-- Flat-rate is unavailable if VAT-registered or turnover exceeds RSD 6,000,000.
-- The deemed monthly tax comes from the Tax Administration decision (rešenje), not from a formula.
-- **Flag for reviewer:** confirm eligibility and obtain the rešenje.
-
-### 6.4 Home Office / Mixed-Use Apportionment
-
-- Only the business-use portion of electricity, water, internet and phone is deductible (entrepreneurs on bookkeeping).
-- **Conservative default:** 0% until a documented basis is provided.
-
-### 6.5 Vehicle Business Use
-
-- Only the business-use percentage of fuel, maintenance and depreciation is deductible; requires a mileage log.
-- **Conservative default:** 0% until a mileage log is provided.
-
-### 6.6 Royalty Cost-Deduction Class
-
-- Standard cost deduction is 50%, 43% or 34% depending on the royalty type.
-- **Conservative default:** lowest deduction (34%) until type confirmed.
-
-### 6.7 Capital-Asset Holding Period (capital gains)
-
-- 10+ consecutive years of holding gives a resident exemption.
-- **Flag for reviewer:** confirm acquisition date and continuous holding.
-
-### 6.8 Annual-Tax Deduction Cap and Youth Relief
-
-- Combined personal + dependent deductions are capped at 50% of taxable income.
-- Youth relief requires the taxpayer to be under 40 on the last day of the year.
-- **Flag for reviewer:** confirm age, dependents, and the 50% cap interaction.
-
-## Section 7 -- Excel Working Paper Template
-
-SERBIA PERSONAL INCOME TAX -- WORKING PAPER
-Income Year: 2025
-Client: ___________________________
-Taxpayer type: Employee / Entrepreneur-bookkeeping / Entrepreneur-flat-rate / Freelancer
-Residency: Resident / Non-resident
-Age (under 40 on 31 Dec?): _______   Dependents: _______
-
-A. EMPLOYMENT (monthly, if applicable)
-  A1. Gross salary                               ___________
-  A2. Less non-taxable cap (28,423 / 34,221)     ___________
-  A3. PIT base (A1 - A2)                          ___________
-  A4. PIT @ 10% (A3 x 10%)                        ___________
-  A5. Employee contributions @ 19.90% on A1*      ___________
-      (*subject to floor 45,950 / ceiling 656,425)
-  A6. Net pay (A1 - A4 - A5)                       ___________
-
-B. ENTREPRENEUR -- BOOKKEEPING (annual, if applicable)
-  B1. Revenue (net of PDV)                        ___________
-  B2. Less allowable expenses                     ___________
-  B3. Taxable profit (B1 - B2)                    ___________
-  B4. Income tax @ 10% (B3 x 10%)                 ___________
-  B5. Contributions @ 35.05% on base*             ___________
-      (*confirm base + ceiling 7,877,100/yr)
-
-C. FREELANCER -- compute BOTH models (quarterly)
-  Model A: deduction 96,000; base = gross - 96,000
-    C1. Tax @ 20%                                 ___________
-    C2. PIO @ 24% + health @ 10.3%                ___________
-  Model B: deduction 57,900 + 34% of gross
-    C3. Tax @ 10%                                 ___________
-    C4. PIO @ 24% (min applies) + health @ 10.3%  ___________
-  C5. Chosen model (lower total) -- FLAG          ___________
-
-D. SCHEDULER INCOME (if applicable)
-  D1. Capital gains @ 15%                          ___________
-  D2. Dividends/interest/fund @ 15%                ___________
-  D3. Rental @ 20% on 75% of gross                 ___________
-  D4. Royalty @ 20% after 50/43/34% deduction      ___________
-  D5. Other @ 20% (insurance 15%)                  ___________
-
-E. ANNUAL SUPPLEMENTARY TAX (PP GPDG, if net income > 5,439,096)
-  E1. Total net income                            ___________
-  E2. Less personal deduction (725,213)           ___________
-  E3. Less dependents (271,955 each)              ___________
-      (E2+E3 capped at 50% of taxable income)
-  E4. Less youth relief (5,439,096 if under 40)   ___________
-  E5. Taxable base                                ___________
-  E6. Band 1 @ 10% (5,439,096 -> 10,878,192)      ___________
-  E7. Band 2 @ 15% (above 10,878,192)             ___________
-  E8. Annual supplementary tax (E6 + E7)          ___________
-
-REVIEWER FLAGS:
-  [ ] Taxpayer type confirmed?
-  [ ] Residency confirmed?
-  [ ] Correct non-taxable cap for period (2025 vs 2026)?
-  [ ] Contribution base + floor/ceiling confirmed?
-  [ ] Freelancer model chosen + Model B PIO minimum checked?
-  [ ] Flat-rate rešenje obtained (if paušalac)?
-  [ ] Royalty cost-deduction class confirmed?
-  [ ] Annual-tax 50% deduction cap + youth relief checked?
-
-## Section 8 -- Bank Statement Reading Guide
-
-### Serbian Bank Statement Formats
-
-**Serbian Bank Statement Formats**  _(Section 8)_
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Banca Intesa | PDF, CSV | Datum, Opis, Zaduženje, Odobrenje, Stanje | Most common; description holds counterparty + reference |
-| OTP banka | PDF, CSV | Datum valute, Opis, Iznos, Stanje | Card transactions show merchant |
-| Raiffeisen banka | PDF, CSV | Datum, Opis transakcije, Iznos | -- |
-| NLB Komercijalna | PDF | Datum, Opis, Isplata, Uplata | Large retail base; Cyrillic common |
-| UniCredit Srbija | PDF, CSV | Value Date, Description, Amount | Mixed Latin/Cyrillic |
-| Wise / Revolut | CSV | Date, Counterparty, Amount, Currency | Freelancers; convert FX to RSD |
-
-### Key Serbian Banking / Tax Terms
-
-**Key Serbian Banking / Tax Terms**  _(Section 8)_
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| UPLATA | Credit / deposit (in) | Potential income |
-| ISPLATA | Payment / withdrawal (out) | Expense -- check counterparty |
-| PRENOS / TRANSFER | Transfer | Check direction; may be own-account |
-| ZARADA / PLATA | Salary | Employment income (already withheld) |
-| HONORAR / NAKNADA | Fee / honorarium | Business or freelancer income |
-| AUTORSKI HONORAR | Author's/copyright fee | Royalty / freelancer self-taxation |
-| ZAKUP / KIRIJA | Rent | Rental income or office-rent expense |
-| KAMATA | Interest | Investment income (15%) |
-| DIVIDENDA | Dividend | Investment income (15%) |
-| DOPRINOSI / PIO | Contributions / pension | Mandatory contributions schedule |
-| PROVIZIJA / NAKNADA (banke) | Bank fee/commission | Deductible (business account) |
-| POREZ | Tax | Tax payment -- not deductible |
-| KAZNA / PREKRŠAJ | Fine / offence | Not deductible |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm"
-3. Apply conservative defaults (Section 1)
-4. Generate the working paper (Section 7) with clear flags
-5. Present the following questions to the client:
-
-ONBOARDING QUESTIONS -- SERBIA PERSONAL INCOME TAX
-1. Taxpayer type: employee, entrepreneur on bookkeeping, flat-rate entrepreneur (paušalac), or freelancer?
-2. Residency: Serbian tax resident (worldwide income) or non-resident (Serbian-source only)?
-3. Period: does any income fall on/after 1 Jan 2026 (different non-taxable cap)?
-4. VAT (PDV): are you registered? Turnover over the last 12 months?
-5. Age: were you under 40 on 31 December of the income year? (youth relief / annual-tax reduction)
-6. Dependents: how many?
-7. If flat-rate: do you have the Tax Administration decision (rešenje) with your monthly amount?
-8. If freelancer: which self-taxation model (A or B) and what is gross income per quarter?
-9. Other income: rental, dividends, interest, royalties, capital gains?
-10. Contributions: amounts of PIO / health / unemployment paid in the year?
-
-## Section 10 -- Reference Material
-
-### Key Legislation & Authority References
-
-**Key Legislation & Authority References**  _(Section 10)_
-
-| Topic | Reference | Source |
-| --- | --- | --- |
-| Personal income tax | Law on Personal Income Tax (Zakon o porezu na dohodak građana) | PwC |
-| Social contributions | Law on Mandatory Social Insurance Contributions | PwC other-taxes |
-| Procedure & penalties | Law on Tax Procedure and Tax Administration (ZPPPA) | ZPPPA (English) |
-| 2026 amendments | Dec 2025 amendments effective 1 Jan 2026 | KPMG Serbia (Dec 2025) |
-| Tax authority | Poreska uprava (purs.gov.rs); eTax/ePorezi (eporezi.purs.gov.rs); frilenseri.purs.gov.rs | Poreska uprava |
-
-### 2025 vs 2026 Boundary -- Important
-
-**2025 vs 2026 Boundary -- Important**  _(Section 10)_
-
-| Item | 2025 | From 1 Jan 2026 | Source |
-| --- | --- | --- | --- |
-| Non-taxable monthly salary cap | RSD 28,423 | RSD 34,221 | Eurofast; KPMG Dec 2025 |
-| Social base floor | RSD 45,950 | Resets on new average salary [confirm] | Orbitax |
-| Social base ceiling | RSD 656,425 | Resets on new average salary [confirm] | Orbitax |
-| Self-employment returns | Paper/electronic | Electronic-only | KPMG Dec 2025 |
-
-### 2025 vs 2026 Boundary -- Important
-
-[RESEARCH GAP -- 2026 social base floor/ceiling and the 2026 average annual salary for the annual tax are not in the research data; confirm the current-year figures with the Tax Administration before computing 2026 payroll or the 2026 annual return.]
-
-### Test Suite
-
-### Test 1 -- Employment net pay (2025).
-
-Input: Gross salary RSD 150,000/month, single employee, 2025.
-Expected: PIT base = 121,577; PIT = RSD 12,157.70; employee contributions = RSD 29,850.00; net = RSD 107,992.30.
-
-### Test 2 -- Entrepreneur bookkeeping tax.
-
-Input: Taxable profit RSD 2,400,000.
-Expected: Income tax = RSD 240,000 (10%). Contributions ~RSD 841,200 at 35.05% (subject to base check).
-
-### Test 3 -- Freelancer Model A (one quarter).
-
-Input: Gross quarterly income RSD 600,000.
-Expected: Base = 504,000; tax = RSD 100,800 (20%); PIO = RSD 120,960 (24%); health = RSD 51,912 (10.3%); total = RSD 273,672.
-
-### Test 4 -- Freelancer Model B (same quarter).
-
-Input: Gross quarterly income RSD 600,000.
-Expected: Deduction = 261,900; base = 338,100; tax = RSD 33,810 (10%); PIO = RSD 81,144 (before min); health = RSD 34,824.30; total = RSD 149,778.30 (before any PIO minimum top-up). Model B is cheaper than Model A here.
-
-### Test 5 -- Rental income.
-
-Input: Monthly rent RSD 80,000, standard deduction.
-Expected: Taxable 60,000 (75%); tax = RSD 12,000 (20%); effective 15%.
-
-### Test 6 -- Annual supplementary tax (2025).
-
-Input: Total net income RSD 12,000,000; age 45; personal deduction only; no dependents.
-Expected: Taxable base = 11,274,787; Band 1 = RSD 543,909.60; Band 2 = RSD 59,489.25; annual tax = RSD 603,398.85.
-
-### Test 7 -- Below annual-tax threshold.
-
-Input: Total net income RSD 5,000,000.
-Expected: Below RSD 5,439,096 threshold -- no annual supplementary tax; PP GPDG not required on this basis.
-
-### Test 8 -- Flat-rate ineligible (turnover).
-
-Input: Entrepreneur turnover RSD 7,000,000/year.
-Expected: Exceeds RSD 6,000,000 -- flat-rate unavailable; bookkeeping at 10% applies; also approaching the RSD 8,000,000 VAT threshold.
-
-## PROHIBITIONS
-
-- NEVER compute tax without confirming the taxpayer type (employee / entrepreneur / freelancer)
-- NEVER apply the RSD 34,221 non-taxable cap to 2025 periods -- use RSD 28,423 through 2025
-- NEVER invent the flat-rate (paušalno) monthly amount -- it comes from the Tax Administration rešenje
-- NEVER tax employment income twice -- salary received net is already withheld via PPP-PD
-- NEVER omit the Model B minimum PIO contribution check before declaring it the cheaper model
-- NEVER include collected PDV (VAT) in business income for VAT-registered entrepreneurs
-- NEVER apply contributions above the ceiling (RSD 656,425/month; RSD 7,877,100/year for 2025)
-- NEVER allow income tax, fines, or personal expenses as deductions
-- NEVER ignore the 50% cap on combined personal + dependent annual-tax deductions
-- NEVER present tax calculations as definitive -- always label as estimated and pending reviewer sign-off
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+# Serbia: personal income tax (2026)
+
+Source-cited draft: not reviewed by an accountant, not for filing. Built by the OpenAccountants team.
+
+This skill covers how Serbia taxes individuals in 2026: salary, self-employment, capital income, capital gains, rent, other income and the annual personal income tax. It links to the other Serbia skills and does not repeat them:
+
+- [rs-cross-border](rs-cross-border.md): who is resident, non-residents, withholding on payments abroad, treaty relief, arriving and leaving.
+- [serbia-payroll](serbia-payroll.md): employer withholding on salary, the PPP-PD return.
+- [serbia-social-contributions](serbia-social-contributions.md): pension, health and unemployment contributions for employees and the self-employed.
+- [rs-corporate-tax](rs-corporate-tax.md): companies (d.o.o., a.d.).
+- [serbia-vat](serbia-vat.md): VAT (PDV).
+
+Law used: **ZPDG**, the Personal Income Tax Act (Zakon o porezu na dohodak građana), in the Ministry of Finance consolidated text read on 23 October 2026. For 2026 the law applies as amended up to 109/2025. Law 80/2026 was published on 31 August 2026 and applies from 1 January 2027 (some parts from 1 January 2028). It changes Articles 15a, 21v, 21g, 21d and 33a. So for 2026 the non-taxable salary amount is still RSD 34,221 a month. From 2027 it is RSD 37,369. Procedure and penalties come from **ZPPPA**, the Tax Procedure and Tax Administration Act.
+
+## Who this applies to
+
+- **Residents** pay tax on worldwide income. **Non-residents** pay only on income earned in Serbia (ZPDG Articles 7 and 8). The residence tests (domicile or centre of vital interests, or 183 days in any 12-month period) are in rs-cross-border.
+- **Employees** pay salary tax, withheld by the employer (Articles 13 to 16 and 99).
+- **Entrepreneurs** (preduzetnici) pay tax on self-employment income (Articles 31 to 33). There are two ways:
+  - **On actual profit**, with books and a tax balance. People who are VAT-registered, or who carry on a business without registering it, are also taxed on profit, with single-entry books (Articles 32(4) and 43).
+  - **Flat-rate (paušalac).** Tax is paid on a deemed income set by the Tax Administration in a decision (rešenje) (Articles 33(3) and 40 to 42).
+- **Freelancers paid from abroad or by private individuals** under a contract for work or a copyright contract self-assess each quarter (Articles 55(2), 85(1)(18) and 100a).
+- **Investors and landlords** pay schedular tax on interest, dividends, capital gains and rent (Articles 61 to 80).
+- **Higher earners** pay the annual personal income tax on top, if their income for the year is more than three times the average annual salary (Article 87).
+
+Out of scope here: agricultural income, gambling winnings, insurance proceeds, seafarers, tourist rentals of 30 days or less (taxed as hospitality income under Article 84b), digital assets, and employer incentives under Articles 21v to 21i.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Salary tax | 10% | 2026 | [ZPDG Art. 16](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Non-taxable salary amount, full-time employee | RSD 34,221 a month (pro rata for part-time) | 2026 | [Law 109/2025, Arts. 7 and 8, in the ZPDG consolidated text](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Non-taxable salary amount from 2027 | RSD 37,369 a month | 2027 | [ZPDG Art. 15a(2) as amended by 80/2026](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Self-employment income (actual profit or flat-rate) | 10% | 2026 | [ZPDG Art. 38](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Flat-rate regime: turnover limit | Not allowed if prior-year turnover, or planned turnover for a new business, is over RSD 6,000,000 | 2026 | [ZPDG Art. 40(2)(4)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Independence test: fees from one client taxed as other income | 20% of gross, no costs, if 5 of 9 criteria are met | 2026 | [ZPDG Arts. 85(1)(17), 85(5)(1) and 86(1)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Interest, dividends, investment fund income | 15% of gross | 2026 | [ZPDG Arts. 63 and 64](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Interest on dinar deposits; Serbian government, provincial, municipal and NBS bonds | Exempt | 2026 | [ZPDG Art. 65](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Capital gains | 15% | 2026 | [ZPDG Art. 77](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Capital gains: holding period exemption | No gain if held without a break for at least 10 years (every taxpayer, resident or not) | 2026 | [ZPDG Art. 72a(1)(5)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Rent from immovable property | 20% of gross less 25% standard costs (actual costs on request) | 2026 | [ZPDG Arts. 65v and 65g](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Other income (contracts for work, board fees and similar) | 20% of gross less 20% standard costs | 2026 | [ZPDG Arts. 85(3) and 86(1)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Royalties paid by a Serbian payer | 20% after standard costs of 50%, 43% or 34% by type of work | 2026 | [ZPDG Arts. 56 to 58](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Freelancer self-taxation, option 1 | 20% of quarterly gross less RSD 110,647 | from 1 Feb 2026 | [ZPDG Arts. 12b(1), 85(5)(2) and 86(1); Government amounts, Sl. glasnik 6/2026](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
+| Freelancer self-taxation, option 2 | 10% of quarterly gross less RSD 66,733 and less 34% of gross | from 1 Feb 2026 | [ZPDG Arts. 12b(2), 85(5)(2) and 86(2)(2); Government amounts, Sl. glasnik 6/2026](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
+| Annual tax: threshold | Income over 3 times the average annual salary for the year. For 2025: RSD 5,439,096 | 2025 (2026 figure published in 2027) | [ZPDG Art. 87(1); MoF explanation for 2025](https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu) |
+| Average annual salary per employee | RSD 1,813,032 for 2025 (Sl. glasnik 19/26) | 2025 | [MoF explanation for 2025](https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu) |
+| Annual tax: personal deduction, taxpayer | 40% of the average annual salary. For 2025: RSD 725,213 | 2025 | [ZPDG Art. 88(1)(1); MoF explanation](https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu) |
+| Annual tax: personal deduction, each dependent family member | 15% of the average annual salary. For 2025: RSD 271,955 | 2025 | [ZPDG Art. 88(1)(2); MoF explanation](https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu) |
+| Annual tax: cap on personal deductions | 50% of income for taxation | 2026 | [ZPDG Art. 88(2)](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| Annual tax: under-40 reduction | Extra reduction of 3 average annual salaries against salary, self-employment and royalty income. For 2025: RSD 5,439,096 | 2025 | [ZPDG Art. 87(4) and (5); MoF explanation](https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu) |
+| Annual tax: rates | 10% up to 6 times the average annual salary, 15% above. For 2025 the band edge is RSD 10,878,192 | 2025 | [ZPDG Art. 89; MoF explanation](https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu) |
+| Late payment interest | NBS reference rate plus 10 percentage points, simple | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809) |
+
+## The taxable base
+
+**Salary (Articles 13 to 16).** The base is the gross salary paid, less RSD 34,221 a month for a full-time employee in 2026. Part-time staff get a pro rata amount. A person with more than one employer gets one amount in total, split between employers by working time. The employer withholds 10% with each payment. A newly settled employee can leave 70% of qualifying salary out of the base for five years (Article 15v); the conditions are in rs-cross-border. Payroll mechanics and contributions are in serbia-payroll and serbia-social-contributions.
+
+**Entrepreneur on actual profit (Articles 33 to 39).** The base is taxable profit in the tax balance. It starts from the accounting result and is adjusted under the corporate tax rules (Article 35). Depreciation follows the corporate tax law (Article 35a). The entrepreneur can choose to pay themselves a personal salary (lična zarada). If they do, that salary is a cost and is taxed as salary. If they do not, the contributions they pay on their own insurance are a cost (Article 37a). Losses and capital gains follow the corporate tax rules (Article 35). Tax is 10%.
+
+**Flat-rate entrepreneur (Articles 40 to 42).** The Tax Administration sets a deemed income by decision. It groups flat-rate entrepreneurs by main activity and adjusts a starting base for registered seat, time since registration, age and work capacity, and other circumstances (Article 41). The skill cannot compute that figure; read it from the client's decision. The flat-rate regime is **not** available to a person who (Article 40(2)):
+
+- works in advertising or market research;
+- works in wholesale or retail trade, hotels and restaurants, financial intermediation or real estate (kiosk and mobile traders can apply, Article 40(3));
+- has other people investing in the business;
+- had turnover over RSD 6,000,000 in the previous year, or plans more on starting;
+- is registered for VAT.
+
+A flat-rate entrepreneur keeps only a turnover book (Article 43(4)). If the conditions stop being met, the Tax Administration orders books from mid-year or from the next year. On VAT registration, books are due from that day (Article 42(5) and (6)).
+
+**The independence test (Article 85(1)(17)).** Fees paid to an entrepreneur or a flat-rate entrepreneur by the same client, or a person related to that client, are taxed as other income if at least five of these nine criteria are met. They are also taxed this way if, when the work started, it could be expected that five would be met and they later are:
+
+1. The client sets the working hours, or decides holidays and leave, and fees are not cut for time off.
+2. The entrepreneur usually works in premises, or at a place, the client provides.
+3. The client trains the entrepreneur.
+4. The client hired the entrepreneur after a job advertisement or through a recruiter.
+5. The client provides the basic tools and equipment, or directs the work beyond a basic order and reasonable checking of results.
+6. At least 70% of the entrepreneur's income in a 12-month period starting or ending in the tax year comes from that client or related persons.
+7. The entrepreneur does work within the client's business, and the contract has no clause making them bear the usual business risk towards the client's customer.
+8. The contract bars the entrepreneur, fully or partly, from working for other clients. A bar limited to a few direct competitors does not count.
+9. The entrepreneur works for that client on 130 or more working days in a 12-month period starting or ending in the tax year. Any part of a working day counts as a day.
+
+If the test is met, the base is the full gross fee with no standard costs (Article 85(5)(1)) and the rate is 20% (Article 86(1)). A Serbian legal entity, entrepreneur or flat-rate entrepreneur paying the fee withholds the tax (Article 99(1)(9)). A "client" includes a Serbian or foreign company that engages the entrepreneur directly or indirectly (Article 85(15)). An agent that only passes on payments for a normal commission is not the client; the person for whose account it pays is (Article 85(16) and (17)). The test does not apply to someone who by law cannot be employed by the client (Article 85(18)). Fees caught by the test do not count towards the flat-rate turnover limit (Article 40(5)).
+
+**Capital income (Articles 61 to 65).** The base is the gross interest, dividend or fund income. A liquidation surplus above the capital invested counts as a dividend (Article 61(2)). A Serbian payer withholds 15% (Article 99(1)(3)). Interest from a payer that does not withhold is self-assessed (Article 100a).
+
+**Capital gains (Articles 72 to 79b).** A gain is the sale price less the purchase price on a sale of real estate rights, copyright and industrial property, company shares and securities, or investment fund units (Article 72(1)).
+
+- **Cost.** The purchase price is raised by the consumer price index from purchase to sale (Article 74). For an asset received as a gift or inheritance, the donor's cost is used (Article 75).
+- **No gain arises** (Article 72a(1)) on: inheritance in the first line; transfers between spouses or between parents and children; transfers between divorcing spouses linked to the divorce; Serbian government, provincial, municipal and NBS bonds; assets held without a break for **ten years or more**; and qualifying share swaps in a reorganisation. The ten-year rule has no residence condition. It does not apply when a company buys back its own shares from the member (Article 72a(3)).
+- **Losses.** A loss can be set against a later gain and carried forward for five years, counting the year of the loss (Article 78).
+- **Home reinvestment.** A seller of real estate who puts the proceeds into housing for themselves or their family in Serbia within 90 days is exempt. Within 12 months, the tax paid is refunded (Article 79).
+
+**Rent (Articles 65a to 65g).** The base is the rent received, including obligations the tenant takes on, less 25% standard costs. Actual costs can be claimed instead, with evidence (Article 65v(3)). A sub-landlord is taxed on the rent received less the rent paid. Rent earned by an entrepreneur on actual profit inside the business is self-employment income (Article 65a(3)). Rentals of flats and rooms for more than 30 days fall here; 30 days or less is hospitality income (Article 65v(2)).
+
+**Other income (Articles 85 and 86).** Fees under a contract for work, board fees and similar income are taxed at 20% after 20% standard costs. Freelancers paid by a foreign payer or a private person under a contract for work or a copyright contract self-assess each quarter. They choose one of two bases each quarter: gross less RSD 110,647 taxed at 20%, or gross less RSD 66,733 and less 34% of gross taxed at 10% (Articles 12b, 55(2), 85(5)(2), 86 and 100a). Royalties paid by Serbian payers use the percentage standard costs in Article 56.
+
+**Annual personal income tax (Articles 87 to 89a).** It applies when a person's income for the year is more than three times the average annual salary for that year. The figure is published after year end.
+
+1. **Add up the income.** This means salary, self-employment profit, royalties, rent, rent of movable property, sports income, hospitality income, other income, and the same kinds of income taxed abroad for residents (Article 87(2)). Capital income and capital gains are **not** included.
+2. **Take off tax and contributions.** Salary and most income comes in net of the tax and the employee's own contributions paid in Serbia; rent and profit come in net of the tax paid (Article 87(3)). Foreign income comes in net of the foreign tax (Article 87(7)).
+3. **Under-40 reduction.** A taxpayer under 40 on 31 December reduces salary, self-employment and royalty income by three more average annual salaries, but not below zero (Article 87(4) and (5)).
+4. **Take off the threshold.** Subtract three average annual salaries. The result is the income for taxation (Article 87(8)).
+5. **Take off personal deductions.** That is 40% of the average annual salary for the taxpayer and 15% for each dependent family member, capped at 50% of the income for taxation (Article 88). Only one family member can claim for the same dependants.
+6. **Apply the rates.** 10% up to six average annual salaries and 15% above (Article 89).
+7. **Credit.** An investment in an alternative investment fund gives a credit of up to 50% of the amount invested, capped at 50% of the annual tax (Article 89a).
+
+## Deadlines and filing
+
+- **Salary.** The employer files the PPP-PD return and pays the tax when it pays the salary (ZPDG Article 101; see serbia-payroll).
+- **Entrepreneur on actual profit.** The tax return and tax balance are due by **15 April 2027** for 2026 (ZPDG Article 93). Monthly advances of one twelfth of last year's tax are due within 15 days after each month (Articles 111 and 114(2)). Any shortfall is paid by the filing date (Article 111(5)). A new business files an estimate within 15 days of registration. A business that closes files within 30 days (Article 94).
+- **Flat-rate entrepreneur.** Tax set by decision is paid monthly, within 15 days after each month (Article 110(1)). Until the 2026 decision arrives, the 2025 amount is paid (Article 109(2)). A request for flat-rate tax for 2027 is due by **31 October 2026** through the Tax Administration portal; a new business asks on registration (Article 42(1) and (2)). If turnover or other conditions changed a lot in the previous year, a return is due by 31 January (Article 93).
+- **Capital gains.** Return within 30 days of the sale of real estate, IP or company shares. For securities and fund units, within 30 days after the end of each half-year (Article 95). The Tax Administration issues a decision and the tax is due within 15 days of receiving it (Article 110(1)(2)).
+- **Self-assessed income.** Interest, rent and other income from a payer that does not withhold: return within 30 days of receipt. Freelancer quarterly returns: within 30 days after the end of the quarter (Article 95). Self-assessed tax is paid by the filing deadline (Article 114(1)).
+- **Annual personal income tax for 2026.** The Tax Administration posts a pre-filled PP GPDG return on its portal by **1 April 2027**. The taxpayer checks it, corrects it and files it electronically by **15 May 2027** (Article 92). If the taxpayer does not file, the Tax Administration files for them (Article 92(4)). The tax is self-assessed and paid by 15 May 2027 (Articles 100a(1)(4) and 114(1)). No return is needed when income for taxation is zero (MoF explanation for 2025).
+
+## Penalties and interest
+
+- **Interest.** Late tax carries interest at the NBS reference rate plus 10 percentage points, simple, from the day after the due date (ZPPPA Article 75).
+- **Individuals who are not entrepreneurs (ZPPPA Article 180).**
+  - Late return: a fixed fine of RSD 10,000.
+  - Return not filed, or wrong data not corrected: RSD 5,000 to 150,000.
+  - Tax in a return or decision not paid: RSD 10,000 if the tax is up to RSD 50,000; RSD 20,000 from 50,000 to 200,000; RSD 40,000 from 200,000 to 1,000,000; RSD 50,000 above 1,000,000.
+- **Entrepreneurs (ZPPPA Article 177).**
+  - No return and no tax paid: 30% to 100% of the tax due, at least RSD 100,000.
+  - Return filed but tax not paid: 10% to 50%, at least RSD 50,000.
+  - Return not filed but tax paid on time: RSD 50,000 to 500,000.
+  - A repeat offence within two years can lead to a ban on the activity for six months to three years (Article 182a).
+- **Under-declaration by an entrepreneur.** 30% to 40% of the shortfall, at least RSD 100,000 (ZPPPA Article 178).
+- **Voluntary disclosure.** No penalty proceedings start if the taxpayer reports the error and pays before the Tax Administration takes any step (ZPPPA Article 182b).
+
+## Cross-border points
+
+The full rules are in [rs-cross-border](rs-cross-border.md). The points that touch this skill:
+
+- **Foreign tax credit.** A resident who paid tax abroad gets a credit, capped at the Serbian tax on that income (ZPDG Article 12). Foreign income is in the annual tax base net of foreign tax (Article 87(7)).
+- **Foreign payer.** Salary or other income from a payer that does not withhold is self-assessed (Article 100a(2) and (3)). Freelancers paid from abroad use the quarterly self-taxation above.
+- **Non-residents.** They pay schedular tax on Serbian income, usually by withholding. They also fall under the annual tax on their Serbian income above the threshold (Article 87(1)(2)).
+- **Ten-year exemption.** It applies to non-residents too (Article 72a(1)(5)).
+- **Assets bought before moving to Serbia.** For shares and securities of non-resident issuers acquired while not resident, and held for at least six months while not resident, the cost is their market value on the day the person became resident (Article 74).
+- **Short visits.** A non-resident in Serbia for 90 days or less in a 12-month period, paid by a foreign principal whose Serbian activity the work does not serve, is exempt (Article 9b).
+- **Independence test.** A foreign client counts as a client (Article 85(15)). Fees from one foreign client that meet five criteria are other income at 20%, self-assessed by the entrepreneur if no one withholds.
+
+## Worked examples
+
+### Example 1: employee who sells shares and an old flat in 2026
+
+Jelena works full time in Belgrade and is a Serbian resident. Her gross monthly salary in 2026 is RSD 200,000. Her employer takes off the non-taxable amount of RSD 34,221 and withholds 10% (Articles 15a and 16): (200,000 − 34,221) × 0.10 = RSD 16,577.90 a month, RSD 198,934.80 for the year.
+
+In June 2026 she sells shares in a Serbian d.o.o. that she bought four years earlier. The sale price is RSD 3,000,000. Her documented cost, raised by the consumer price index to the sale date (Article 74), is RSD 1,800,000. The gain is RSD 1,200,000 and the tax at 15% (Article 77) is RSD 180,000. She files the capital gains return within 30 days of the sale and pays within 15 days of the decision.
+
+She also sells a flat she has owned for eleven years, at a gain of RSD 5,000,000. She held it without a break for ten years or more, so there is no gain for tax purposes (Article 72a(1)(5)). Capital gains are not part of the annual tax base, and her salary alone is below the annual tax threshold.
+
+```oa-check
+name: Example 1, 2026 salary tax plus a share sale and an exempt flat sale
+inputs:
+  gross_monthly_salary: 200000
+  non_taxable_monthly: 34221
+  months: 12
+  share_sale_price: 3000000
+  share_indexed_cost: 1800000
+  flat_gain: 5000000
+  flat_years_held: 11
+steps:
+  - monthly_salary_tax: (gross_monthly_salary - non_taxable_monthly) * 0.10
+  - annual_salary_tax: monthly_salary_tax * months
+  - share_gain: share_sale_price - share_indexed_cost
+  - share_tax: share_gain * 0.15
+  - flat_taxable_gain: flat_gain * (1 - min(1, floor(flat_years_held / 10)))
+  - flat_tax: flat_taxable_gain * 0.15
+  - total_tax: annual_salary_tax + share_tax + flat_tax
+expected:
+  monthly_salary_tax: 16577.90
+  annual_salary_tax: 198934.80
+  share_gain: 1200000
+  share_tax: 180000
+  flat_taxable_gain: 0
+  flat_tax: 0
+  total_tax: 378934.80
+```
+
+### Example 2: annual personal income tax with the 15% band
+
+This example uses the 2025 figures, the latest published, for a return filed by 15 May 2026. The 2026 return, due 15 May 2027, uses the same steps with the 2026 average salary, which is published in early 2027.
+
+Marko is 45 and a Serbian resident. In 2025 his salary, after the salary tax and his own contributions withheld, was RSD 20,000,000. He also rented a flat to a company for RSD 1,200,000. The taxable rent was 1,200,000 × 0.75 = RSD 900,000 and the tenant withheld 20%, RSD 180,000, so the rent enters the annual tax at RSD 720,000 (Article 87(3)). He supports his wife and one child, and no one else claims them.
+
+- Income: 20,000,000 + 720,000 = RSD 20,720,000. He is over 40, so there is no under-40 reduction.
+- Income for taxation: 20,720,000 − 5,439,096 = RSD 15,280,904.
+- Personal deductions: 725,213 + 2 × 271,955 = RSD 1,269,123. The cap is 50% of 15,280,904 = RSD 7,640,452, so the full amount is allowed.
+- Taxable income: 15,280,904 − 1,269,123 = RSD 14,011,781.
+- Tax: 10% of 10,878,192 = RSD 1,087,819.20, plus 15% of (14,011,781 − 10,878,192) = 15% of 3,133,589 = RSD 470,038.35. Total RSD 1,557,857.55.
+
+The edge case: the rent enters net of the tax already withheld, and the 15% rate applies only to taxable income above six average salaries. Had Marko been 38, his salary would first have been cut by another RSD 5,439,096 (Article 87(4)).
+
+```oa-check
+name: Example 2, annual personal income tax for 2025, resident aged 45 with two dependants
+inputs:
+  net_salary: 20000000
+  gross_rent: 1200000
+  avg_annual_salary: 1813032
+  dependants: 2
+steps:
+  - rent_taxable: gross_rent * 0.75
+  - rent_tax: rent_taxable * 0.20
+  - rent_net: rent_taxable - rent_tax
+  - income: net_salary + rent_net
+  - threshold: avg_annual_salary * 3
+  - income_for_taxation: income - threshold
+  - deductions_raw: round(avg_annual_salary * 0.40, 0) + dependants * round(avg_annual_salary * 0.15, 0)
+  - deductions: min(deductions_raw, income_for_taxation * 0.5)
+  - taxable: income_for_taxation - deductions
+  - band_edge: avg_annual_salary * 6
+  - tax_10: min(taxable, band_edge) * 0.10
+  - tax_15: max(taxable - band_edge, 0) * 0.15
+  - annual_tax: tax_10 + tax_15
+expected:
+  rent_net: 720000
+  income: 20720000
+  threshold: 5439096
+  income_for_taxation: 15280904
+  deductions: 1269123
+  taxable: 14011781
+  band_edge: 10878192
+  tax_10: 1087819.20
+  tax_15: 470038.35
+  annual_tax: 1557857.55
+```
+
+## Ask the client first
+
+1. Is the person resident in Serbia for 2026? If they arrived or left during the year, use rs-cross-border first.
+2. What kinds of income did they have: salary, business profit, flat-rate business, freelance fees from abroad, interest, dividends, rent, share or property sales? Who paid each one, a Serbian company or a foreign or private payer?
+3. For an entrepreneur: flat-rate or actual profit? What was 2025 turnover, are they VAT-registered, and what is their activity? Do they work mainly for one client? Check the nine criteria of the independence test.
+4. For a sale: when and how was the asset acquired, what was paid, and was it held without a break for ten years? Is the sale between family members? Will property proceeds go into a home within 90 days or 12 months?
+5. For the annual tax: date of birth (under 40 on 31 December 2026?), dependants and whether a spouse also claims them, and any alternative investment fund investment in 2026.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Ministry of Finance: Zakon o porezu na dohodak građana, consolidated text with amendments up to 80/2026, including the publisher's note on 80/2026 timing and the transitional articles of 109/2025 (page and .docx) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana ; https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-10-23 |
+| Tax Administration: Personal Income Tax Act page (lists amendments up to 80/26) | https://www.purs.gov.rs/fizicka-lica/pregled-propisa/zakoni/9941/zakon-o-porezu-na-dohodak-gradjana.html | 2026-10-23 |
+| Government: adjusted dinar non-taxable amounts under the ZPDG, applying from 1 February 2026 (Sl. glasnik 6/2026), including the Art. 12b quarterly standard costs | https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx | 2026-10-23 |
+| Government: monthly salary amounts under ZPDG Art. 15v for 2026 (Sl. glasnik 115/2025) | https://www.mfin.gov.rs/upload/media/QZLlFz_694931e3dabff.docx | 2026-10-23 |
+| Ministry of Finance: explanation of the annual personal income tax for 2025 (30 March 2026): threshold, average salary, deductions, band edge, filing | https://www.mfin.gov.rs/dokumenti2/objanjenje-u-vezi-sa-godinjim-porezom-na-dohodak-graana-za-2025-godinu ; https://www.mfin.gov.rs/upload/media/h2mQ70_69cd060698d7e.docx | 2026-10-23 |
+| Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text up to 80/2026 (Arts. 75, 177, 178, 180, 182a, 182b) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
+
+Not yet confirmed: the 2026 average annual salary, and so the 2026 annual tax threshold, deductions and band edge (published in early 2027); the Art. 12b quarterly standard costs that applied in January 2026, before the 1 February 2026 adjustment, and how they apply to the first quarter of 2026; the Government decree that sets the flat-rate base (the skill reads the amount from the client's decision instead); the current NBS reference rate for late payment interest; the form codes of the entrepreneur's tax return and of the capital gains return.
