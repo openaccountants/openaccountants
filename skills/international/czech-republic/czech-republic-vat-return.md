@@ -35,7 +35,7 @@ Tax period: the calendar month, or the quarter by election. Currency: Czech koru
 
 Turnover (obrat v tuzemsku, § 4a) is the sum of consideration without VAT for supplies with a Czech place of supply: taxable supplies, supplies exempt with credit, and financial, insurance and property supplies exempt without credit when they are not occasional ancillary activity. Sales of the business's own long-term assets are left out unless they are part of its usual activity (§ 4a(3)). Since 2025 turnover is counted per calendar year, not over a rolling 12 months (Finanční správa, information on changes from 1 January 2025).
 
-A person making only supplies with no right to deduct (exempt without credit, or supplies with a place outside the Czech Republic) does not become a payer by turnover alone (§ 6(3)).
+A person making only supplies that would give no right to deduct (financial, insurance or property supplies exempt without credit) does not become a payer under § 6(1) or (2). It becomes a payer only if it also makes a supply in its turnover that would give a right to deduct, and must apply within 10 working days of that supply (§ 6(3), § 94(2)).
 
 Anyone with its seat or establishment in the Czech Republic who makes or will make supplies with a right to deduct can register voluntarily (§ 6f), unless it has been declared an unreliable person (§ 94a(1)).
 
@@ -51,7 +51,7 @@ Anyone with its seat or establishment in the Czech Republic who makes or will ma
 |---|---|---|---|
 | Standard rate | 21% | 2026 | VAT Act § 47(1)(a), https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
 | Reduced rate (the only one since 2024) | 12% | 2026 | VAT Act § 47(1)(b), https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
-| Goods at 12% | Annex 3: food (customs chapters 01-05, 07-23, 25), but drinks only the selected ones listed; drinking water; live plants; medicines and listed medical devices; newspapers and periodicals; child car seats; listed aids for disabled people | 2026 | VAT Act § 47(3), Annex 3, https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
+| Goods at 12% | Annex 3: food, animal feed and live animals (customs chapters 01-05, 07-23, 25), but drinks only the selected ones listed; drinking water; live plants; medicines and listed medical devices; newspapers and periodicals; child car seats; listed aids for disabled people | 2026 | VAT Act § 47(3), Annex 3, https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
 | Services at 12% | Annex 2: water supply and sewage; public passenger transport and ski lifts; accommodation; catering (drinks only drinking water and the selected drinks); entry to cultural events, museums, zoos and cinemas; sports entry and use of sports facilities; health and social care; home care; funeral services; saunas and steam baths | 2026 | VAT Act § 47(4), Annex 2, https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
 | Heat and cooling | 12% | 2026 | VAT Act § 47(3), https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
 | Books and e-books | Exempt with right to deduct | 2026 | VAT Act § 71i, https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 |
@@ -81,7 +81,7 @@ What is at 21%: everything not listed in Annex 2 or 3. Since the 2024 consolidat
 
 **Reverse charge on services and goods received from abroad.** The payer or identified person self-assesses output tax and, where the use gives a right to deduct, claims the same amount as input tax in the same return. The net effect is zero for a fully taxable business.
 
-**Domestic reverse charge (§ 92a onward)** between two payers: construction and assembly work under CZ-CPA 41 to 43 and supply of workers for it (§ 92e); waste and scrap in Annex 5 (§ 92c); investment gold (§ 92b); and, under § 92f with Government Regulation 361/2014, emission allowances, electricity and gas to traders, electricity certificates, wholesale electronic communications and the selected goods over CZK 100,000. The supplier invoices without VAT and reports the sale on line 25; the customer self-assesses on lines 10 and 11 and deducts on lines 43 and 44.
+**Domestic reverse charge (§ 92a onward)** between two payers: construction and assembly work under CZ-CPA 41 to 43 and supply of workers for it (§ 92e); waste and scrap in Annex 5 (§ 92c); unwrought gold of 333 thousandths or more, and investment gold the supplier has opted to tax (§ 92b); property supplies the supplier has opted to tax (§ 92d); and, under § 92f with Government Regulation 361/2014, emission allowances, electricity and gas to traders, electricity certificates, wholesale electronic communications and the selected goods over CZK 100,000. The supplier invoices without VAT and reports the sale on line 25; the customer self-assesses on lines 10 and 11 and deducts on lines 43 and 44.
 
 **Return lines (form 25 5401, specimen no. 26).** Domestic supplies: lines 1 (21%) and 2 (12%). Intra-EU acquisitions of goods: 3 and 4. Services received from EU businesses under § 9(1): 5 and 6. Imports where the payer self-assesses (§ 23): 7 and 8. Domestic reverse charge as customer: 10 and 11. Other receipts where the recipient declares tax (§ 108), such as services from outside the EU: 12 and 13. Intra-EU supplies of goods: 20. Services to EU businesses: 21. Exports: 22. Domestic reverse charge as supplier: 25. Input VAT from domestic payers: 40 (21%) and 41 (12%); on imports through customs: 42; on lines 3 to 13: 43 and 44. Output tax: 62. Deduction: 63. Tax due: 64. Excess deduction (refund): 65.
 
@@ -91,7 +91,7 @@ What is at 21%: everything not listed in Annex 2 or 3. Since the 2024 consolidat
 |---|---|---|
 | Registration application (turnover) | 10 working days after crossing CZK 2,000,000 or CZK 2,536,500 | VAT Act § 94(1) |
 | Tax period | Calendar month; quarter by election | VAT Act §§ 99, 99a |
-| Quarterly election | Notice by end of January; not for the year of registration or the next year; not for unreliable payers or groups | VAT Act § 99a(1), (3), (4) |
+| Quarterly election | Notice by end of January; not for the year of registration or the next year, unless the tax office allows the next year on a request filed by the end of October of the registration year; not for unreliable payers or groups | VAT Act § 99a(1), (3), (4) |
 | VAT return | 25 days after the end of the period; cannot be extended | Tax Code § 136(4); VAT Act § 101(2) |
 | Payment | Same day as the return deadline | Tax Code § 135(3) |
 | Nil return | Still required for an established payer | VAT Act § 101(3) |
@@ -133,7 +133,7 @@ The CZK 10,000, 30,000 and 50,000 fines are halved if the payer is a natural per
 **Unreliable payer (nespolehlivý plátce, VAT Act § 106a).** The tax office declares a payer unreliable for a serious breach of its duties, and the status is published in the VAT register. Consequences:
 
 - The payer files monthly. A quarterly payer switches to monthly from the next quarter (§ 99a(4)).
-- A customer that receives a supply from a payer published as unreliable is presumed to have known the tax would not be paid and is **liable for the supplier's unpaid VAT** (§ 109(1), (2)(a)). The same presumption applies if the customer pays to a bank account the tax office has not published for that supplier (§ 109(2)(c)(2)), pays in a virtual asset, pays a price obviously out of line with the market without economic reason, or pays cash above the cash-payment limit.
+- A customer that receives a supply from a payer published as unreliable is presumed to have known the tax would not be paid and so is **liable for the supplier's unpaid VAT** unless it rebuts that presumption (§ 109(1), (2)(a)). The same presumption applies if the customer pays to a bank account the tax office has not published for that supplier (§ 109(2)(c)(2)), pays in a virtual asset, pays a price obviously out of line with the market without economic reason, or pays cash above the cash-payment limit.
 - The customer can protect itself by paying the VAT part of the invoice directly to the supplier's tax office (§ 109a).
 - A person declared unreliable cannot register voluntarily (§ 94a(1)).
 
@@ -198,7 +198,7 @@ A Czech sole trader (OSVČ), not yet a payer, has domestic turnover of CZK 1,950
 2. On 15 October 2026 she invoices CZK 400,000. Turnover is now CZK 2,650,000, over CZK 2,536,500 by CZK 113,500. She becomes a payer on 16 October 2026 (§ 6(2)(b)). She must file a new application within 10 working days of 15 October, even though she already applied (Finanční správa, 2025 information note).
 3. The 15 October invoice itself carries no VAT: she was not yet a payer when she made it.
 4. In November she invoices CZK 100,000 for services at 21%: VAT CZK 21,000.
-5. She files monthly. She cannot choose quarters for 2026 or 2027 (§ 99a(3)). Her first return (16 to 31 October) and control statement are due on Wednesday 25 November 2026.
+5. She files monthly. She cannot choose quarters for 2026, nor for 2027 unless she asks the tax office by 31 October 2026 and it agrees for reasons deserving special consideration (§ 99a(3)). Her first return (16 to 31 October) and control statement are due on Wednesday 25 November 2026.
 6. If the tax office later calls her for a missing control statement and she files it in the replacement period, the first such delay in the calendar year carries no fine (§ 101j). A second one costs CZK 10,000, halved to CZK 5,000 because she is a natural person (§ 101h(2)(a)).
 
 Registration also ends the flat-rate income tax regime; see [cz-income-tax](cz-income-tax.md).
@@ -242,7 +242,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 235/2004 Coll., VAT Act, version in force 1 January to 31 December 2026: §§ 4a, 6, 6c, 6f to 6l, 47, 64, 71i, 72, 73, 92a, 92e, 92f, 94, 94a, 96, 99, 99a, 101, 101a, 101c to 101k, 102, 106a, 108, 109, 109a; Annexes 2, 3, 5, 6 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
+| Act No. 235/2004 Coll., VAT Act, version in force 1 January to 31 December 2026: §§ 4a, 6, 6c, 6f to 6l, 47, 64, 71i, 72, 73, 92a to 92f, 94, 94a, 96, 99, 99a, 101, 101a, 101c to 101k, 102, 106a, 108, 109, 109a; Annexes 2, 3, 5, 6 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
 | Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 135, 136, 247a, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 |
 | Act No. 349/2023 Coll., public budget consolidation, Part on the VAT Act, point 5 (§ 47(1)(b): reduced rate 12% from 2024) | https://e-sbirka.gov.cz/sb/2023/349 | 2026-10-23 |
 | Government Regulation No. 361/2014 Coll., temporary domestic reverse charge | https://e-sbirka.gov.cz/sb/2014/361 | 2026-10-23 |
@@ -255,6 +255,6 @@ expected:
 
 Not yet confirmed:
 - The control statement guidelines read are the version valid from 1 January 2024; no later version was listed on the Financial Administration page on 23 October 2026. The CZK 10,000 split comes from those guidelines, not from the Act.
-- Whether the temporary domestic reverse charge under § 92f and Regulation 361/2014 continues after 31 December 2026 (it rests on EU authorisation) was not checked.
+- Whether the temporary domestic reverse charge under § 92f and Regulation 361/2014 continues after 31 December 2026. Czech law sets no end date (§ 92f and Regulation 361/2014 as in force on 23 October 2026 contain none), but its EU basis, Article 199a of the VAT Directive, is reported to run to 31 December 2026 under Directive (EU) 2022/890, with a Commission proposal of 1 October 2026 to extend it to 30 June 2030; both were seen only in secondary reports, as EUR-Lex could not be read. It does not affect tax year 2026.
 - The cash-payment limit that triggers recipient liability under § 109(2)(c)(4) is set in a separate act, which was not read.
 - The current Czech National Bank repo rate was not read; take it from the CNB for each half-year when computing interest.
