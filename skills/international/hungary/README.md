@@ -3,8 +3,6 @@ jurisdiction: HU
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial:
-  IT-IND: "No skill yet for agricultural producers (őstermelő), other independent-activity income outside sole-trader status (for example fees under a civil-law contract), crypto-asset gains (Szja tv. 67/C. §), or short-term private accommodation under the itemised flat tax (Szja tv. 57/A. §)"
 ---
 
 # Hungary: tax pack
@@ -15,7 +13,7 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026) | source-cited draft, partial |
+| IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026); hu-other-independent-income (primary producers, civil-law contract fees, crypto gains, private accommodation flat tax; 2026) | source-cited draft |
 | IT-CORP, corporate income tax | hu-corporate-tax | source-cited draft |
 | VAT | hungary-vat-return, hu-vat-return | source-cited draft |
 | SC, social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | source-cited draft |
@@ -29,4 +27,6 @@ hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accountin
 
 - Nemzeti Adó- és Vámhivatal, information sheets 2026: https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026 (read 2026-10-22)
 - Tao. tv., Act LXXXI of 1996 (corporate tax): https://njt.hu/jogszabaly/1996-81-00-00 (refused connections on 2026-10-22; consolidated text read at https://net.jogtar.hu/jogszabaly?docid=99600081.tv)
+- Nemzeti Adó- és Vámhivatal, information sheets 2 (independent activity), 6 (primary producers) and 10 (letting and private accommodation), 2026: https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026 (read 2026-10-23)
+- Szja tv., Act CXVII of 1995 (personal income tax), consolidated text: https://njt.jog.gov.hu/jogszabaly/1995-117-00-00 (read 2026-10-23)
 - Transfer pricing decree 45/2025. (XII. 23.) NGM rendelet: https://njt.jog.gov.hu/jogszabaly/2025-45-20-2X (read 2026-10-23; njt.hu refused connections, the same Nemzeti Jogszabálytár answered at njt.jog.gov.hu)
