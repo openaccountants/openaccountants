@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   SC: gr-employee-contributions
 partial:
-  IT-IND: "gr-income-tax covers all individuals on the 2026 scale and gr-living-expense-presumptions computes the deemed income of arts. 30-34, but the 2026 annual minimum-wage base of the self-employed minimum income (art. 28A) is not confirmed on an official page, and capital gains (arts. 41-42) are not computed"
+  IT-IND: "capital gains (arts. 41-42) are not computed; gr-income-tax covers all individuals on the 2026 scale and gr-living-expense-presumptions computes the deemed income of arts. 30-34"
   IT-CORP: "gr-corporate-income-tax covers entities keeping double-entry books; partnerships and other entities on single-entry books (ITC art. 47), tonnage-tax shipping companies and the bank deferred tax regime of art. 27A are not covered"
 ---
 
@@ -17,7 +17,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | gr-income-tax, gr-living-expense-presumptions (partial: 2026 scale for employees, pensioners, the self-employed, rent and capital income, and 2026 deemed income from living-expense presumptions; the 2026 art. 28A minimum-wage base is not confirmed; capital gains are not computed) | source-cited draft |
+| IT-IND, individual income tax | gr-income-tax, gr-living-expense-presumptions (partial: 2026 scale for employees, pensioners, the self-employed, rent and capital income, and 2026 deemed income from living-expense presumptions; capital gains are not computed) | source-cited draft |
 | IT-CORP, corporate income tax | gr-corporate-income-tax (partial: double-entry books only; single-entry entities and tonnage-tax shipping are not covered. 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | source-cited draft |
