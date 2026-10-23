@@ -5,8 +5,8 @@ not_applicable: {}
 covered_by:
   SC: gr-employee-contributions
 partial:
-  IT-IND: gr-income-tax covers only the self-employed, on the 2025 scale; employees, pensioners, rent, capital income and the 2026 scale of ν. 5246/2025 are not covered
-  IT-CORP: gr-corporate-income-tax is a short 2025 summary citing PwC and other secondary sources, not the law; 2026 figures, deductions, losses and prepayment are not covered from official sources
+  IT-CORP: "gr-corporate-income-tax covers entities keeping double-entry books; partnerships and other entities on single-entry books (ITC art. 47), tonnage-tax shipping companies and the bank deferred tax regime of art. 27A are not covered"
+  IT-IND: "gr-income-tax covers only the self-employed, on the 2025 scale; employees, pensioners, rent, capital income and the 2026 scale of ν. 5246/2025 are not covered"
 ---
 
 # Greece: tax pack
@@ -18,14 +18,14 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | gr-income-tax (partial: self-employed only, 2025 figures; employees, pensioners and capital income are not covered) | source-cited draft |
-| IT-CORP, corporate income tax | gr-corporate-income-tax (2025 figures, cites secondary sources) | source-cited draft |
+| IT-CORP, corporate income tax | gr-corporate-income-tax (partial: double-entry books only; single-entry entities and tonnage-tax shipping are not covered. 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | source-cited draft |
 | PR, payroll withholding | (missing) | |
-| TP, transfer pricing | (missing) | |
+| TP, transfer pricing | gr-transfer-pricing | source-cited draft |
 | XB, cross-border | gr-cross-border | source-cited draft |
 
-The IT-IND and IT-CORP rows are marked `partial` above, so the coverage report counts them as missing until both get a 2026 rewrite: gr-income-tax covers only the self-employed, and neither has the 2026 scale from ν. 5246/2025.
+The IT-IND row is marked `partial` above, so the coverage report counts it as missing until it gets a 2026 rewrite: gr-income-tax covers only the self-employed and does not have the 2026 scale from ν. 5246/2025.
 
 Accounting-pack skills in this folder: gr-company-formation, greece-einvoice, gr-tax-overview.
 

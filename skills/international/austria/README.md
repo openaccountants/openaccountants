@@ -6,8 +6,7 @@ covered_by:
   SC: at-payroll-and-social-insurance
   PR: at-payroll-and-social-insurance
   XB: at-cross-border
-partial:
-  IT-CORP: "at-corporate-income-tax still describes itself as tax year 2025, reads the loss limit from the 2025 K 1 form and the participation exemption conditions from a 2011 appeals decision, and has no 2026 update against the law"
+partial: {}
 ---
 
 # Austria: tax pack
