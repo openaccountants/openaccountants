@@ -34,7 +34,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
 | Standard rate (§ 10 Abs 1) | 20% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
-| Listed basic foods in Anlage 3, supplies and imports only, from 1 July 2026 (§ 10 Abs 1a, § 28 Abs 69) | 4.9% | 2026 (from 1 July) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
+| Basic foods listed in Anlage 3, as goods supplied or imported (not restaurant or catering services), from 1 July 2026 (§ 10 Abs 1a, § 28 Abs 69). Anlage 3 has 12 items: milk, yoghurt, butter, fresh hen eggs, fresh or chilled vegetables, frozen vegetables, apples, pears and stone fruit (CN 0808 and 0809), rice, wheat flour and semolina, uncooked pasta, bread, table salt, each only within its listed CN code | 4.9% | 2026 (from 1 July) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Reduced rate: goods in Anlage 1 (food not in Anlage 3, books), restaurant food, residential letting, hotel accommodation, passenger transport, waste collection, repairs of bicycles, shoes, clothing (§ 10 Abs 2) | 10% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Reduced rate: goods in Anlage 2 (live animals, plants), artists, swimming pools, theatre, concerts, museums, film, circus, domestic flights, farm wine, sports event tickets (§ 10 Abs 3) | 13% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Jungholz and Mittelberg (§ 10 Abs 4) | 19% | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
@@ -42,10 +42,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Tolerance in the year the limit is crossed (§ 6 Abs 1 Z 27) | 10% (to EUR 60,500) | 2025 onward | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | EU SME scheme: EU-wide annual turnover limit (§ 6 Abs 1 Z 27) | EUR 100,000 | 2025 onward | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Monthly UVA if prior-year turnover exceeded (§ 21 Abs 2) | EUR 100,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
-| No UVA to file (internal return only) if prior-year turnover did not exceed | EUR 55,000 | 2026 | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html |
+| No UVA to file (internal return only) if prior-year turnover did not exceed, and the payment is made in full on time (UVA-Verordnung § 1) | EUR 55,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 |
 | No annual return for a small business with turnover not above this and no tax to pay (§ 21 Abs 6) | EUR 55,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
 | Reverse charge on mobile phones and chips if invoiced consideration is at least (§ 19 Abs 1e lit b) | EUR 5,000 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 |
-| ZM monthly if turnover is above (quarterly at or below) | EUR 100,000 | 2026 | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/zusammenfassende-meldung-zm.html |
+| ZM period follows the UVA period: quarterly if prior-year turnover did not exceed this and no monthly UVA was chosen, otherwise monthly | EUR 100,000 | 2026 | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/zusammenfassende-meldung-zm.html |
 
 ## The taxable base
 
@@ -64,9 +64,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | UVA (form U 30), monthly or quarterly, and payment | 15th day of the second calendar month after the period (§ 21 Abs 1 UStG). Q1: 15 May; Q2: 15 August; Q3: 15 November; Q4: 15 February | RIS, UStG § 21 |
 | Weekend or holiday | Moves to the next day that is not a Saturday, Sunday, public holiday, Good Friday or 24 December (§ 108 Abs 3 BAO). 15 August 2026 is a Saturday and a holiday; 15 November 2026 is a Sunday | RIS, BAO § 108 |
 | Choice of monthly UVA by a quarterly filer | File the January UVA on time; binds for the whole year (§ 21 Abs 2 UStG) | RIS, UStG § 21 |
-| UVA at or below EUR 55,000 prior-year turnover | No UVA to file if the payment is made in full on time; still prepare an internal return. File one when there is a refund or a late or short payment | USP, Umsatzsteuervoranmeldung |
+| UVA at or below EUR 55,000 prior-year turnover | No UVA to file if the payment is made in full on time or there is none (UVA-Verordnung § 1); still prepare an internal return (§ 21 Abs 1 UStG). File one when there is a refund or a late or short payment, or when the tax office asks (UVA-Verordnung § 2) | RIS, UVA-Verordnung; USP, Umsatzsteuervoranmeldung |
 | Recapitulative statement (ZM, form U 13) | By the end of the calendar month after the reporting period, through FinanzOnline | USP, ZM page |
-| Annual return (U 1) | 30 April of the following year on paper, 30 June if filed electronically (§ 134 Abs 1 BAO). Electronic filing is the rule (§ 21 Abs 4 UStG). 2026 return: 30 June 2027 | RIS, BAO § 134 |
+| Annual return (U 1) | 30 April of the following year on paper, 30 June if filed electronically (§ 134 Abs 1 BAO). Electronic filing is the rule (§ 21 Abs 4 UStG). Paper is allowed only for a self-filer without internet access, or one not required to file UVAs because prior-year turnover did not exceed EUR 55,000 (FinanzOnline-Erklärungsverordnung § 2 with UVA-Verordnung § 1). 2026 return: 30 June 2027 | RIS, BAO § 134; RIS, FOnErklV § 2 |
 
 Every return is filed through FinanzOnline (https://finanzonline.bmf.gv.at). A business represented by a tax adviser usually has longer for the annual return; the tax office can extend a deadline on a reasoned request (§ 134 Abs 2 BAO).
 
@@ -127,9 +127,9 @@ expected:
 
 ### Example 2: Small business crosses the limit, inside and then outside the tolerance
 
-A sole trader in Vienna had 2025 turnover of EUR 48,000 and is exempt in 2026. Sales to 31 October 2026 are EUR 54,500. A EUR 4,000 job on 12 November takes the year to EUR 58,500. That is over EUR 55,000 but within the 10% tolerance (EUR 60,500), so the November job stays exempt and the exemption runs to 31 December; from 1 January 2027 the business is taxable because 2026 exceeded the limit.
+A sole trader in Vienna had 2025 turnover of EUR 48,000 and is exempt in 2026. Sales to 31 October 2026 are EUR 54,500. A EUR 4,000 job on 12 November takes the year to EUR 58,500. That is over EUR 55,000 but within the 10% tolerance (EUR 60,500), so the November job stays exempt and the exemption could run to 31 December; from 1 January 2027 the business is taxable because 2026 exceeded the limit.
 
-On 14 December a further EUR 3,000 sale takes the year to EUR 61,500, above the tolerance by EUR 1,000. The exemption ends from that point (§ 6 Abs 1 Z 27 UStG), so this sale is taxable at 20%. The limit is counted gross, and the client billed EUR 3,000 with no VAT, so the VAT is inside the price: 3,000 x 20 / 120 = EUR 500. The business must register for the normal scheme from that sale and file a UVA for the period.
+On 14 December a further EUR 3,000 sale takes the year to EUR 61,500, above the tolerance by EUR 1,000. The exemption ends from that point (§ 6 Abs 1 Z 27 UStG), so this sale is taxable at 20%. The limit is counted gross, and the client billed EUR 3,000 with no VAT, so the VAT is inside the price: 3,000 x 20 / 120 = EUR 500. From that sale the business charges VAT. Its 2025 turnover did not exceed EUR 100,000, so its period is the quarter, and the EUR 500 is due by 15 February 2027 (a Monday). Because 2025 turnover did not exceed EUR 55,000, it files no UVA if it pays in full by then (UVA-Verordnung § 1); it files one if it pays late or short.
 
 ```oa-check
 name: Austria small business limit, tolerance and crossing sale (2026)
@@ -171,8 +171,11 @@ expected:
 | Umsatzsteuergesetz 1994, RIS consolidated text as of 23.10.2026 (§ 6 Abs 1 Z 27 and Abs 3, § 10, § 19, § 21, § 28 Abs 69 and 70) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873 | 2026-10-23 |
 | Bundesabgabenordnung, RIS consolidated text as of 23.10.2026 (§ 108, § 134, § 135, § 205, § 217) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 | 2026-10-23 |
 | Budgetmaßnahmengesetz 2026, BGBl. I Nr. 43/2026 (Art. 2, UStG change) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_43/BGBLA_2026_I_43.html | 2026-10-23 |
+| Änderung des Umsatzsteuergesetzes 1994, BGBl. I Nr. 37/2026 (4.9% rate, Anlage 3) | https://www.ris.bka.gv.at/Dokumente/BgblAuth/BGBLA_2026_I_37/BGBLA_2026_I_37.html | 2026-10-23 |
+| Verordnung betreffend die Abstandnahme von der Verpflichtung zur Abgabe von Voranmeldungen (UVA-Verordnung), BGBl. II Nr. 206/1998 as amended by BGBl. II Nr. 401/2024, RIS consolidated text (§§ 1, 2) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10005119 | 2026-10-23 |
+| FinanzOnline-Erklärungsverordnung (FOnErklV), RIS consolidated text (§ 2, when paper filing is allowed) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20005197 | 2026-10-23 |
 | USP, Umsatzsteuervoranmeldung (UVA thresholds and the EUR 55,000 filing relief) | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/entstehen-der-steuerschuld-und-pflichten/umsatzsteuervoranmeldung.html | 2026-10-23 |
 | USP, Zusammenfassende Meldung (deadline, period table, exemption condition) | https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/umsaetze-mit-auslandsbezug/zusammenfassende-meldung-zm.html | 2026-10-23 |
 | BMF, U 13a instructions for the ZM (late surcharge and coercive penalty) | https://formulare.bmf.gv.at/service/formulare/inter-steuern/pdfd/9999/u13a.pdf | 2026-10-23 |
 
-Not yet confirmed: whether the USP or the BMF threshold for paper filing of the annual return applies (USP says EUR 55,000, the BMF deadlines page still says EUR 35,000; electronic filing by 30 June avoids the question); the reasonableness cap for input VAT on zero-emission cars was not read for 2026.
+Not yet confirmed: the reasonableness cap for input VAT on zero-emission cars was not read for 2026.
