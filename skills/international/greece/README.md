@@ -8,7 +8,6 @@ partial:
   SC: "gr-employee-contributions covers employees and employers for 2026; gr-efka (self-employed) still carries 2025 figures and has not been updated to e-EFKA circular 6/2026"
   IT-IND: gr-income-tax covers only the self-employed, on the 2025 scale; employees, pensioners, rent, capital income and the 2026 scale of ν. 5246/2025 are not covered
   IT-CORP: gr-corporate-income-tax is a short 2025 summary citing PwC and other secondary sources, not the law; 2026 figures, deductions, losses and prepayment are not covered from official sources
-  PR: "gr-payroll spreads the annual tax over 14 payments without the art. 60(3) annualisation decision; the holiday allowance amount, the annual pay certificate and labour fines are not confirmed"
 ---
 
 # Greece: tax pack
@@ -23,7 +22,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | IT-CORP, corporate income tax | gr-corporate-income-tax (2025 figures, cites secondary sources) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed; partial: 2025 figures) | source-cited draft |
-| PR, payroll withholding | gr-payroll (partial: annualisation method, holiday allowance amount and annual certificate not confirmed) | source-cited draft |
+| PR, payroll withholding | gr-payroll (2026; annualisation under ΠΟΛ 1104/2014) | source-cited draft |
 | TP, transfer pricing | (missing) | |
 | XB, cross-border | gr-cross-border | source-cited draft |
 
