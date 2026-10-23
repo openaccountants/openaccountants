@@ -20,7 +20,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | (missing: gr-efka covers only the self-employed; employee and employer EFKA are not covered) | |
 | PR, payroll withholding | (missing) | |
-| TP, transfer pricing | (missing) | |
+| TP, transfer pricing | gr-transfer-pricing | source-cited draft |
 | XB, cross-border | gr-cross-border | source-cited draft |
 
 The IT-IND and IT-CORP rows are marked `partial` above, so the coverage report counts them as missing until both get a 2026 rewrite: gr-income-tax covers only the self-employed, and neither has the 2026 scale from ν. 5246/2025.
