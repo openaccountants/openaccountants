@@ -4,10 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: gr-employee-contributions
-partial:
-  SC: "gr-employee-contributions covers employees and employers for 2026; gr-efka (self-employed) still carries 2025 figures and has not been updated to e-EFKA circular 6/2026"
-  IT-IND: gr-income-tax covers only the self-employed, on the 2025 scale; employees, pensioners, rent, capital income and the 2026 scale of ν. 5246/2025 are not covered
-  IT-CORP: gr-corporate-income-tax is a short 2025 summary citing PwC and other secondary sources, not the law; 2026 figures, deductions, losses and prepayment are not covered from official sources
+partial: {}
 ---
 
 # Greece: tax pack
@@ -18,15 +15,15 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | gr-income-tax (partial: self-employed only, 2025 figures; employees, pensioners and capital income are not covered) | source-cited draft |
-| IT-CORP, corporate income tax | gr-corporate-income-tax (2025 figures, cites secondary sources) | source-cited draft |
+| IT-IND, individual income tax | gr-income-tax, gr-living-expense-presumptions, gr-capital-gains (2026 scale for employees, pensioners, the self-employed, rent and capital income; 2026 deemed income from living-expense presumptions; capital gains on securities, a whole business and property (property gains suspended to 31.12.2026)) | source-cited draft |
+| IT-CORP, corporate income tax | gr-corporate-income-tax (entities on double-entry books, 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties), gr-partnerships-single-entry (ΟΕ, ΕΕ, civil partnerships, joint ventures and other entities on single-entry books, 2026) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
-| SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed; partial: 2025 figures) | source-cited draft |
-| PR, payroll withholding | (missing) | |
-| TP, transfer pricing | (missing) | |
+| SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | source-cited draft |
+| PR, payroll withholding | gr-payroll (2026; annualisation under ΠΟΛ 1104/2014) | source-cited draft |
+| TP, transfer pricing | gr-transfer-pricing | source-cited draft |
 | XB, cross-border | gr-cross-border | source-cited draft |
 
-The IT-IND and IT-CORP rows are marked `partial` above, so the coverage report counts them as missing until both get a 2026 rewrite: gr-income-tax covers only the self-employed, and neither has the 2026 scale from ν. 5246/2025.
+No domain is marked `partial`. IT-IND is covered for 2026 by gr-income-tax (the scale), gr-living-expense-presumptions (deemed income, arts. 30-34) and gr-capital-gains (arts. 41-43). IT-CORP is covered for 2026 by gr-corporate-income-tax (double-entry books) and gr-partnerships-single-entry (single-entry books). Two niche regimes are out of scope: tonnage tax on shipping companies and the deferred tax regime for banks under ITC art. 27A.
 
 Accounting-pack skills in this folder: gr-company-formation, greece-einvoice, gr-tax-overview.
 

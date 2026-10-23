@@ -1,7 +1,7 @@
 ---
 name: belgium-payroll
 description: "Belgian payroll for 2026: employee and employer social security (RSZ / ONSS), payroll withholding (bedrijfsvoorheffing / précompte professionnel), the social and fiscal work bonus, the structural reduction, the employer exemption above the quarterly pay ceiling, first-hire reductions, payslips, DmfA and withholding returns. Uses the RSZ administrative instructions 2026/3 and the income 2026 Income Tax Code: employee rate 13.07%, private-sector employer basic rate 24.92% (19.88% plus wage moderation for structural-reduction category 1), tax-free amount EUR 11,550. Trigger on: Belgian payroll, RSZ bijdragen, ONSS cotisations, bedrijfsvoorheffing, précompte professionnel, werkbonus, structurele vermindering, employer cost Belgium, DmfA, Belgian payslip, double holiday pay. Out of scope: be-employee-income-tax (the employee's annual return), be-social-contributions (self-employed), be-cross-border (posted and frontier workers)."
-version: 1.1
+version: 1.2
 jurisdiction: BE
 tax_year: 2026
 last_updated: 2026-10-23
@@ -16,11 +16,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Belgium Payroll
 
-## Belgium Payroll Skill v1.1 (2026)
+## Belgium Payroll Skill v1.2 (2026)
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to run a payroll, file or pay without review by a qualified professional in Belgium.
 
 The employee's annual income tax return, where the year's withholding is credited, is in `be-employee-income-tax`. Self-employed social contributions are in `be-social-contributions`.
+
+The 2026 withholding computation (Annex III key formula, both 2026 rule sets, family reductions, holiday pay and bonus rates) is in `be-payroll-withholding`.
 
 ## Section 1 -- Quick Reference
 
@@ -60,7 +62,7 @@ The employee's annual income tax return, where the year's withholding is credite
 ### Withholding Tax Mechanism
 
 - **How withholding is computed**: Withholding is not the annual scale applied to one month. Annex III of the royal decree implementing the Income Tax Code (KB/WIB 92) sets a key formula that annualises the taxable pay (gross pay less employee social security), takes off a lump sum for expenses, applies the scale, deducts the tax on the tax-free amount and then reductions for family situation (single, married with one income, married with two incomes), dependent children and disability. The annual figures it approximates for income 2026 are the scale above, the tax-free amount of EUR 11,550 (art. 131) and the employee lump sum of 30% capped at EUR 6,070 (art. 51). The final tax is settled in the annual return (`be-employee-income-tax`).
-- **Use the official tool or table**: Compute 2026 withholding with the FPS Finance calculation tool or the Annex III formula for 2026. This skill does not reproduce the 2026 Annex III amounts; see "Not yet confirmed".
+- **Use the official tool or table**: Compute 2026 withholding with the Annex III key formula for 2026, set out with worked examples in `be-payroll-withholding`, or the FPS Finance simulator.
 
 ### Key Withholding Rules
 
@@ -266,7 +268,7 @@ Belgian employers MUST issue a payslip (fiche de paie / loonfiche) for each sala
 Facts: a full-time white-collar employee in the private sector, category 1 of the structural reduction, gross pay EUR 3,500 a month for July, August and September 2026, no other pay elements.
 
 1. Employee social security: 13.07% x 3,500 = EUR 457.45 a month. No work bonus: the reference pay of EUR 3,500 is above EUR 3,336.98 (July and August) and EUR 3,403.62 (September).
-2. Taxable pay for withholding: 3,500 - 457.45 = EUR 3,042.55 a month. Withholding itself comes from the 2026 Annex III formula and is not computed here.
+2. Taxable pay for withholding: 3,500 - 457.45 = EUR 3,042.55 a month. Withholding itself comes from the 2026 Annex III formula; compute it with `be-payroll-withholding`.
 3. Employer basic contribution at 19.88% + 5.12% = 25.00%: EUR 875.00 a month, EUR 2,625.00 for the quarter.
 4. Structural reduction, quarter: S = 10,500. R = 0.14 x (11,687.74 - 10,500) = 166.28; the very-low-pay part is negative, so nil. Ps = EUR 166.28.
 5. Net basic employer contributions for the quarter: 2,625.00 - 166.28 = EUR 2,458.72. Special contributions come on top.
@@ -368,4 +370,4 @@ expected:
 | Fisconetplus, art. 38/1 WIB 92, meal vouchers and eco-cheques (version for vouchers granted from 1 January 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796974b3-6cc3-458b-bd22-a129b359909b | 2026-10-23 |
 | Fisconetplus, art. 289ter/1 WIB 92 (income 2026), fiscal work bonus | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5403364d-120e-4c43-8945-ac770f1228f6 | 2026-10-23 |
 
-Not yet confirmed: the 2026 Annex III withholding formula, its family and child reductions and the special rates for holiday pay and bonuses (FPS Finance pages at financien.belgium.be were behind a human-verification check and the 2026 royal decree could not be located); the special social security contribution scale for 2026; the work bonus amounts for January to June 2026; the 2026 minimum wage (GGMMI) under collective agreement no. 43, which is not restated here; the company car CO2 contribution for 2026. Sections 5 to 8 (minimum wage, working time, benefits, payslips and filing deadlines) were not re-read against 2026 sources in this update, except the meal voucher and eco-cheque limits.
+Not yet confirmed: the special social security contribution scale for 2026; the work bonus amounts for January to June 2026; the 2026 minimum wage (GGMMI) under collective agreement no. 43, which is not restated here; the company car CO2 contribution for 2026. Sections 5 to 8 (minimum wage, working time, benefits, payslips and filing deadlines) were not re-read against 2026 sources in this update, except the meal voucher and eco-cheque limits.

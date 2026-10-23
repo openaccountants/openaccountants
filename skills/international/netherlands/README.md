@@ -2,13 +2,7 @@
 jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  IT-IND: no 2026 box 1 rates or labour credit for people at AOW age, no tax-part-only credits for non-residents, and the box 3 actual-return route is outlined only, with complex cases referred
-  IT-CORP: nl-corporate-tax has no dividend withholding tax or conditional withholding tax method and refers out non-resident companies with a Dutch permanent establishment
-  TP: netherlands-transfer-pricing does not quantify penalties (no CbC fine amount under art. 29h, no consequence of missing art. 8b or 29g documentation)
-  PR: no company car benefit method (22% addition, 2026 electric discount up to the EUR 30,000 cap, own contribution, 500 km rule) in nl-payroll-tax or netherlands-payroll
-  XB: no treaty relief method (Besluit voorkoming dubbele belasting 2001, treaty dividend rates), and the M-return, non-resident return and dividend tax return deadlines are not confirmed
-  VAT: no VAT registration method, OSS and non-established businesses are referred out, and nl-vat-return gives 4 December instead of 3 December 2026 for joining the KOR
+partial: {}
 ---
 
 # Netherlands: tax pack
@@ -19,13 +13,13 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | nl-income-tax, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | source-cited draft |
-| IT-CORP, corporate income tax | nl-corporate-tax | source-cited draft |
-| VAT | nl-vat-return, netherlands-vat-return | source-cited draft |
+| IT-IND, individual income tax | nl-income-tax, nl-income-tax-special-groups, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | source-cited draft |
+| IT-CORP, corporate income tax | nl-corporate-tax, nl-dividend-withholding | source-cited draft |
+| VAT | nl-vat-return, netherlands-vat-return, nl-vat-registration | source-cited draft |
 | SC, social contributions | nl-social-contributions | source-cited draft |
-| PR, payroll withholding | nl-payroll-tax, netherlands-payroll | source-cited draft |
+| PR, payroll withholding | nl-payroll-tax, netherlands-payroll, nl-company-car | source-cited draft |
 | TP, transfer pricing | netherlands-transfer-pricing | source-cited draft |
-| XB, cross-border | nl-cross-border (hub), netherlands-30-percent-ruling, nl-30-percent-ruling | source-cited draft |
+| XB, cross-border | nl-cross-border (hub), nl-double-tax-relief, netherlands-30-percent-ruling, nl-30-percent-ruling | source-cited draft |
 
 ## Official sources
 
