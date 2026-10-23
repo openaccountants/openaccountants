@@ -16,7 +16,7 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 | IT-CORP, corporate income tax | dk-corporate-tax | source-cited draft |
 | VAT | dk-vat-return, denmark-vat-return | source-cited draft |
 | SC, social contributions | (missing) | |
-| PR, payroll withholding | (missing) | |
+| PR, payroll withholding | dk-payroll | source-cited draft |
 | TP, transfer pricing | (missing) | |
 | XB, cross-border | (missing) | |
 
@@ -25,5 +25,8 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Selskabsskatteloven (LBK nr. 279 of 13 March 2025): https://www.retsinformation.dk/eli/lta/2025/279 (read 2026-10-22)
 - Skattekontrolloven (LBK nr. 12 of 8 January 2024, as amended; § 73 late-filing rates by lov nr. 16 of 14 January 2025): https://www.retsinformation.dk/eli/lta/2024/12 (read 2026-10-22)
 - Kildeskatteloven (LBK nr. 460 of 3 May 2024): https://www.retsinformation.dk/eli/lta/2024/460 (read 2026-10-22)
+- Arbejdsmarkedsbidragsloven (LBK nr. 121 of 7 February 2020): https://www.retsinformation.dk/eli/lta/2020/121 (read 2026-10-23)
+- Ferieloven (LBK nr. 152 of 20 February 2024): https://www.retsinformation.dk/eli/lta/2024/152 (read 2026-10-23)
+- Ligningsloven (LBK nr. 1500 of 24 November 2025): https://www.retsinformation.dk/eli/lta/2025/1500 (read 2026-10-23)
 - Skatte- og Vækstministeriet rates and thresholds: https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen (read 2026-10-22)
 - Skattestyrelsen: https://skat.dk
