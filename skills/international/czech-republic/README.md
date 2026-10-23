@@ -15,7 +15,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, expense lump sums and the flat-rate regime, tax year 2026) | source-cited draft |
-| IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
+| IT-CORP, corporate income tax | cz-corporate-income-tax (2026: residence, 21% rate, base and non-deductible costs, tax depreciation, losses, participation exemption, § 23e borrowing cost limit, advances, deadlines, penalties; top-up tax for large groups not covered) | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
 | SC, social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed OSVČ, 2026) | source-cited draft |
 | PR, payroll withholding | cz-payroll (2026: registration and JMHZ, monthly gross-to-net, prohlášení and credits, DPP and DPČ withholding tax, sick pay, annual reconciliation and vyúčtování; deductions under court orders not covered) | source-cited draft |
