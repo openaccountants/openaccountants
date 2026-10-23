@@ -5,7 +5,7 @@ jurisdiction: SE
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -72,7 +72,7 @@ Sweden has no separate exit tax on individuals. The departure rule for individua
 
 **SINK exemptions (SINK 6 and 6 a §§).** Pay from an employer other than the Swedish state, a municipality or a region is exempt where the person is in Sweden no more than 183 days in a 12-month period, the employer is not resident here, and the pay is not borne by a Swedish permanent establishment. This does not apply to hired-out labour, except work of up to 15 days in a row and 45 days a year. On a temporary employment in Sweden, employer reimbursement of travel to Sweden at the start and home at the end, and of lodging while working here, is also exempt, as is income a treaty exempts.
 
-**Choosing IL instead of SINK (SINK 4 §).** A non-resident can ask to be taxed under IL for the year. They then pay the average municipal rate (32.38% for 2026) and state tax. If at least 90% of their earned income for the year comes from Sweden, they get the basic deduction and the job tax credit. ([Skatteverket: belopp och procent 2026](https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html))
+**Choosing IL instead of SINK (SINK 4 §).** A non-resident can ask to be taxed under IL for the year. They then pay the average municipal rate (32.38% for 2026) and state tax. If at least 90% of their earned income for the year comes from Sweden, they get the basic deduction and the job tax credit. ([Skatteverket: belopp och procent 2026](https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html)) How those are computed is in [se-employee-income-tax](se-employee-income-tax.md).
 
 **The ten-year rule (3 kap. 19 § IL).** A limited taxpayer is taxed on a gain on shares and similar rights (delägarrätter, 48 kap. 2 § IL) and on interests in Swedish partnerships, if they lived in Sweden or stayed here on a lasting basis at any time in the calendar year of the sale or the ten calendar years before. Units in investment funds and special funds are outside the rule, and so are shares held in an investment savings account (ISK), with narrow exceptions set out in 3 kap. 19 §. Foreign company shares are caught only if acquired while the person was unlimited taxable. A tax treaty can limit or remove the right to tax.
 
@@ -94,14 +94,14 @@ Conditions: the employer is Swedish or a foreign company with a permanent establ
 - **SINK:** apply through Skatteverket's e-service (an email address is enough) or form SKV 4350, or the employer applies. A new application is needed for each income year and each new employer or period; Skatteverket handles applications for the next year from December at the earliest. A person with a SINK decision does not file an income tax return for that income. Without a decision, the payer withholds ordinary preliminary tax.
 - **Expert tax relief:** the application (forms FSN 1220 or FSN 1226) must reach Forskarskattenämnden within three months after work in Sweden starts. A late application is rejected, even by one day. Either the employee or the employer may apply. A change of employer needs a new application. ([Forskarskattenämnden: apply](https://forskarskattenamnden.se/andra-sprak/taxation-of-research-workers-board/apply-for-tax-relief))
 - **Departure, population register:** a registered person who will live abroad for a year or more notifies Skatteverket of the move, at least one week before, through the e-service or form SKV 7665. ([Skatteverket: moving away from Sweden](https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/individualsandemployees/movingfromsweden/movingawayfromsweden.4.6bef7d451695d90def41857.html)) Leaving the register does not end tax liability by itself.
-- **Income tax return (individuals, including limited taxpayers with Swedish income outside SINK):** by 2 May the year after the income year (SFL 32 kap. 1 §). An unlimited taxpayer reports all income, Swedish and foreign.
+- **Income tax return (individuals, including limited taxpayers with Swedish income outside SINK):** by 2 May the year after the income year (SFL 32 kap. 1 §). When 2 May is a Saturday, Sunday or public holiday the return can be filed on the next weekday (Lag 1930:173, 2 §), so for income year 2026 the date is Monday 3 May 2027. An unlimited taxpayer reports all income, Swedish and foreign.
 - **Company exit tax:** the gain is reported in the company's income return for the year of the exit. That return is due by 1 July after a financial year ending 31 December, 1 November after one ending 30 April, 15 December after one ending 30 June, and 1 March after one ending 31 August; a return filed electronically may come in one month later (SFL 32 kap. 2 §). See [se-corporate-tax](se-corporate-tax.md). The payment deferral (anstånd) is granted only on application (SFL 63 kap. 2 §); see Penalties and interest and Cross-border points for how it runs.
 
 ## Penalties and interest
 
 ([Skatteverket: belopp och procent 2026](https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html))
 
-- **Late income tax return (förseningsavgift):** individuals and others SEK 1,250, then a further SEK 2,500 after three months and SEK 3,750 after five months. Companies (aktiebolag and economic associations) SEK 6,250, then SEK 12,500 and SEK 18,750.
+- **Late income tax return (förseningsavgift):** each fee is SEK 1,250 for individuals and others, and SEK 6,250 for aktiebolag and economic associations (SFL 48 kap. 6 §). A second fee of the same amount is charged if the return is still missing three months after the deadline, and a third after two more months (SFL 48 kap. 7 §). So an individual pays SEK 1,250, then SEK 2,500 in total, then SEK 3,750 in total; a company SEK 6,250, SEK 12,500 and SEK 18,750 in total.
 - **Tax surcharge (skattetillägg) for an incorrect statement:** 40% of the tax that would have been withheld on final tax; 20% on other taxes (for example VAT and employer contributions); 10% for a timing error on final tax (5% or 2% on other taxes). The same 40% and 20% apply on a discretionary assessment. Where tax should have been withheld and was not, the surcharge is 5% of the amount that should have been withheld.
 - **Interest on the tax account (kostnadsränta):** both rates follow the base rate (basränta), which is 125% of the six-month Treasury bill rate with a floor of 1.25% (SFL 65 kap. 3 §). The low rate equals the base rate (65 kap. 4 §); the high rate is the base rate plus 15 percentage points (65 kap. 13 §). The base rate has been 2.5% since 1 December 2024, so the low rate is 2.5% and the high rate 17.5%; Skatteverket still showed these as current on 22 October 2026. The low rate applies to deferred tax (anstånd) and to final tax up to the due date; the high rate to amounts unpaid after the due date. The interest is not deductible. ([Skatteverket: ränta på skattekontot](https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html))
 - **Deferred company exit tax:** carries the low cost interest while deferred; on a renewed deferral, interest runs from the day after it is granted (SFL 65 kap. 7 §). Skatteverket may withdraw or reduce the deferral if circumstances change materially (SFL 63 kap. 22 §).
@@ -129,7 +129,7 @@ Lena is a German software architect with no earlier link to Sweden. A Swedish co
 - Exempt part: 25% of 1,100,000 = SEK 275,000.
 - Taxable pay: SEK 825,000. She is unlimited taxable for only part of 2026, but all her earned income is Swedish, so the full-year basic deduction applies (63 kap. 4 § second paragraph IL): SEK 17,400 at this level. Taxable earned income: SEK 807,600.
 - State income tax: 20% of (807,600 minus 643,000) = SEK 32,920.
-- Municipal tax at the 2026 average rate of 32.38%: SEK 261,500.88. Her actual municipality's rate applies, and the job tax credit and other credits come off; see [se-income-tax](se-income-tax.md).
+- Municipal tax at the 2026 average rate of 32.38%: SEK 261,500.88. Her actual municipality's rate applies, and the job tax credit and other credits come off; see [se-employee-income-tax](se-employee-income-tax.md).
 - Without the relief, taxable earned income would be SEK 1,082,600 and state tax SEK 87,920. The relief cuts state tax by SEK 55,000 and the municipal tax base by SEK 275,000.
 - Had she earned substantial pay abroad in January, her basic deduction would instead be one twelfth of 0.293 price base amount for each month of unlimited liability (63 kap. 4 § first paragraph IL), and the foreign pay itself would be outside Swedish tax.
 
@@ -200,9 +200,10 @@ Read on 2026-10-22:
 - Inkomstskattelag (1999:1229), as amended to SFS 2026:1393 (3 kap. 3-23 §§, 6 kap. 3-18 §§, 6 a kap., 11 kap. 22-23 a §§, 22 kap. 5 and 7 §§, 63 kap. 3-4 §§, 65 kap. 10 §): https://data.riksdagen.se/dokument/sfs-1999-1229.text
 - Lag (1991:586) om särskild inkomstskatt för utomlands bosatta, as amended to SFS 2025:1356 (4, 5, 6, 6 a, 6 b and 7 §§, and the transitional rules of 2025:1355 and 2025:1356): https://data.riksdagen.se/dokument/sfs-1991-586.text
 - Kupongskattelag (1970:624): https://data.riksdagen.se/dokument/sfs-1970-624.text
-- Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305 (32 kap. 1-2 §§, 63 kap. 2, 14, 17 and 22 §§, 65 kap. 3, 4, 7 and 13 §§): https://data.riksdagen.se/dokument/sfs-2011-1244.text
+- Skatteförfarandelag (2011:1244), as amended to SFS 2026:1305 (32 kap. 1-2 §§, 48 kap. 6-7 §§ (read 2026-10-23), 63 kap. 2, 14, 17 and 22 §§, 65 kap. 3, 4, 7 and 13 §§): https://data.riksdagen.se/dokument/sfs-2011-1244.text
 - Lag (1986:468) om avräkning av utländsk skatt: https://data.riksdagen.se/dokument/sfs-1986-468.text
 - Folkbokföringslag (1991:481), 3 §: https://data.riksdagen.se/dokument/sfs-1991-481.text
+- Lag (1930:173) om beräkning av lagstadgad tid, 2 § (read 2026-10-23): https://data.riksdagen.se/dokument/sfs-1930-173.text
 - Skatteverket, belopp och procent inkomstår 2026: https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html
 - Skatteverket, skattskyldighet: https://www.skatteverket.se/privat/skatter/arbeteochinkomst/sabeskattasdinlon/skattskyldighet.4.65fc817e1077c25b8328000206.html
 - Skatteverket, har du flyttat från Sverige?: https://www.skatteverket.se/privat/internationellt/bosattutomlands/harduflyttatfransverige.4.7459477810df5bccdd4800030036.html
@@ -216,4 +217,4 @@ Read on 2026-10-22:
 - Försäkringskassan, employee who will work abroad: https://www.forsakringskassan.se/english/for-employers/employee-who-will-work-abroad
 - Försäkringskassan, jobba i flera länder inom EU/EES eller i Schweiz och Storbritannien: https://www.forsakringskassan.se/privatperson/flytta-jobba-studera-eller-fa-vard-utomlands/jobba-utomlands/jobba-i-flera-lander-inom-eu-ees-eller-i-schweiz-och-storbritannien
 
-Not yet confirmed: treaty rates on dividends for specific countries (read the treaty); the treaty tie-breaker order, which is the OECD model wording and must be read in each treaty; the events that end a company exit deferral beyond SFL 63 kap. 17 and 22 §§; whether the 2 May return date moves when it falls on a weekend (Skatteverket's 2026 interest page uses 4 May 2026 for payment of residual tax, but the filing-date rule was not read on an official page).
+Not yet confirmed: treaty rates on dividends for specific countries (read the treaty); the treaty tie-breaker order, which is the OECD model wording and must be read in each treaty; the events that end a company exit deferral beyond SFL 63 kap. 17 and 22 §§.
