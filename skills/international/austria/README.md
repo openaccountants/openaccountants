@@ -23,7 +23,7 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 | VAT | at-vat-return, austria-vat-return | source-cited draft |
 | SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG) | source-cited draft |
 | PR, payroll withholding | at-payroll-and-social-insurance | source-cited draft |
-| TP, transfer pricing | (missing: Verrechnungspreisdokumentationsgesetz and arm's-length rules) | |
+| TP, transfer pricing | at-transfer-pricing | source-cited draft |
 | XB, cross-border | at-cross-border | source-cited draft |
 
 Also in the pack: at-tax-overview (a map of the system) and at-company-formation (entity choice).
@@ -37,4 +37,6 @@ Also in the pack: at-tax-overview (a map of the system) and at-company-formation
 - Unternehmensserviceportal (USP): https://www.usp.gv.at (read 2026-10-22)
 - Familienlastenausgleichsgesetz 1967 (FLAG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008220 (read 2026-10-23)
 - ASVG, RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 (read 2026-10-23)
+- Verrechnungspreisdokumentationsgesetz (VPDG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20009608 (read 2026-10-23)
+- BMF, Verrechnungspreisrichtlinien 2021, findok: https://findok.bmf.gv.at/findok/resources/pdf/450cc0c6-d106-4f65-ba18-e3d0d33d2227/80297.1.1.pdf (read 2026-10-23)
 - ÖGK, Arbeitsbehelf 2026: https://www.gesundheitskasse.at/cdscontent/load?contentid=10008.802672&version=1775628844 (read 2026-10-23)
