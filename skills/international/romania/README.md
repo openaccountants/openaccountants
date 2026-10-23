@@ -5,7 +5,6 @@ not_applicable: {}
 partial:
   IT-IND: self-employed (PFA) only
   IT-CORP: short rate list on secondary sources; base, losses and filing not covered
-  PR: rates and the D112 deadline only; no computation method or worked examples
 ---
 
 # Romania: tax pack
@@ -16,22 +15,25 @@ Individuals pay a flat 10% income tax plus employee pension (CAS, 25%) and healt
 
 ## Domains
 
-A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and none yet follows the deep-tax shape except ro-cross-border.
+A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and only ro-cross-border and ro-payroll-social follow the deep-tax shape so far.
 
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | ro-income-tax (partial: self-employed PFA only; employment, investment and rental income for individuals are not covered) | source-cited draft |
 | IT-CORP, corporate income tax | ro-corporate-income-tax (partial: a short rate list citing secondary sources; base, losses and filing are not covered in depth) | source-cited draft |
 | VAT | ro-vat-return, romania-vat-return | source-cited draft |
-| SC, social contributions | ro-cas-cass (self-employed CAS and CASS), ro-payroll-social (employee CAS and CASS, employer CAM; a short list citing secondary sources) | source-cited draft |
-| PR, payroll withholding | ro-payroll-social (partial: rates and the monthly D112 deadline only; no computation method or worked examples) | source-cited draft |
+| SC, social contributions | ro-cas-cass (self-employed CAS and CASS), ro-payroll-social (employee CAS and CASS, employer CAM, the minimum CAS and CASS on part-time contracts, 2026) | source-cited draft |
+| PR, payroll withholding | ro-payroll-social (2026 gross-to-net, minimum-wage relief, benefits, REGES ONLINE, D112, penalties, two worked examples) | source-cited draft |
 | TP, transfer pricing | (missing: Romania has transfer pricing rules and documentation duties; no skill yet) | |
 | XB, cross-border | ro-cross-border | source-cited draft |
 
 ## Official sources
 
-Read on 2026-10-22:
+Read on 2026-10-22 (payroll sources read on 2026-10-23):
 
 - Fiscal Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm
 - Fiscal Procedure Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm
+- OUG 89/2025, ANAF copy: https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf
+- HG 146/2026 (minimum wage from 1 July 2026), ANAF copy: https://static.anaf.ro/static/10/Anaf/legislatie/HG_146_2026.pdf
+- Inspecția Muncii, REGES ONLINE: https://www.inspectiamuncii.ro/reges
 - ANAF: https://www.anaf.ro
