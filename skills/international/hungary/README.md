@@ -3,6 +3,8 @@ jurisdiction: HU
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
+partial:
+  IT-IND: "No skill yet for agricultural producers (őstermelő), other independent-activity income outside sole-trader status (for example fees under a civil-law contract), crypto-asset gains (Szja tv. 67/C. §), or short-term private accommodation under the itemised flat tax (Szja tv. 57/A. §)"
 ---
 
 # Hungary: tax pack
@@ -13,10 +15,10 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | hu-income-tax (self-employed focus) | source-cited draft |
+| IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026) | source-cited draft, partial |
 | IT-CORP, corporate income tax | hu-corporate-tax | source-cited draft |
 | VAT | hungary-vat-return, hu-vat-return | source-cited draft |
-| SC, social contributions | hu-social-contributions | source-cited draft |
+| SC, social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | source-cited draft |
 | PR, payroll withholding | hu-payroll | source-cited draft |
 | TP, transfer pricing | hu-transfer-pricing | source-cited draft |
 | XB, cross-border | hu-cross-border | source-cited draft |

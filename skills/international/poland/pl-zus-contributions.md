@@ -1,7 +1,7 @@
 ---
 name: pl-zus-contributions
 description: Use this skill whenever asked about Polish ZUS (Zakład Ubezpieczeń Społecznych) social contributions for self-employed individuals. Trigger on phrases like "ZUS contributions", "składki ZUS", "Polish social insurance", "Mały ZUS Plus", "self-employed Poland contributions", "działalność gospodarcza ZUS", or any question about social/health insurance obligations for a self-employed client in Poland. Covers retirement 19.52%, disability 8%, sickness 2.45%, health 9%, and Mały ZUS Plus. ALWAYS read this skill before touching any Poland social contributions work.
-version: 2.0
+version: 2.1
 jurisdiction: PL
 tax_year: 2025
 last_updated: 2026-07-13
@@ -25,7 +25,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Supporting legislation | Health Insurance Act; Prawo przedsiębiorców |
 | Standard social base (2025) | 60% avg forecasted wage = PLN 4,694.40/month |
 | Total social rate (with sickness) | 31.64% |
-| Fundusz Pracy | 2.45% (when base >= min wage) |
+| Fundusz Pracy (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45% (when base >= min wage) |
 | Health rate (PIT-36) | 9% of actual income |
 | Health rate (PIT-36L) | 4.9% of actual income |
 | Health rate (PIT-28 ryczałt) | 9% on fixed bracket base |
@@ -82,7 +82,7 @@ Legislation: Art. 22 Ustawy o sus
 | Accident (wypadkowe) | 1.67% | PLN 78.40 |
 | **Total social (with sickness)** | **31.64%** | **PLN 1,485.31** |
 | **Total social (without sickness)** | **29.19%** | **PLN 1,370.30** |
-| Fundusz Pracy | 2.45% | PLN 115.01 |
+| Fundusz Pracy (FP 1.0%) + Solidarity Fund (FS 1.45%) | 2.45% | PLN 115.01 |
 
 ### Preferencyjne ZUS (months 7-30)
 
@@ -143,7 +143,7 @@ Legislation: Art. 22 Ustawy o sus
 | Monthly ZUS declaration (DRA) | 20th of the following month |
 | Payment of contributions | 20th of the following month |
 
-- **Late payment interest and payment method** — Payments via transfer to individual NRS account. Late payment: interest at 200% of Lombard rate / 365 x days late.
+- **Late payment interest and payment method** — Payments via transfer to individual NRS account. Late payment: interest at the Tax Ordinance art. 56 § 1 rate (200% of the NBP lombard rate + 2 points, minimum 8%; 10.50% a year from 5 March 2026, M.P. 2026 poz. 269), charged as rate / 365 x days late.
 
 ### Tax deductibility
 

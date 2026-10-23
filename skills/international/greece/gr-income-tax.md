@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 2.1
+version: 2.2
 verified_by: pending
 ---
 
@@ -103,7 +103,7 @@ If the total is under EUR 30,000 and the best-paid employee earns more, that sal
 
 The presumption can be rebutted for objective reasons (military service, prison, hospital, pregnancy, natural disaster, licence withdrawal, closure by public order, force majeure) with evidence, or by asking for a tax audit under ΚΦΔ art. 23 for other reasons (art. 28A(3) and (4)).
 
-**Deemed living-expense income (arts. 30 to 34).** Separately, if a person's deemed living expenses (homes, cars, boats, staff, school fees, asset purchases) exceed declared income, the difference is added and taxed. This skill does not compute those presumptions; ask the client for their assets.
+**Deemed living-expense income (arts. 30 to 34).** Separately, if a person's deemed living expenses (homes, cars, boats, staff, school fees, asset purchases) exceed declared income, the difference is added and taxed. `gr-living-expense-presumptions` computes them.
 
 **Electronic spending (art. 15(6)).** A resident must spend 30% of real employment, pension and business income (capped at EUR 20,000 of spending) by card, e-wallet or other electronic payment, on goods and services in Greece or the EU/EEA. Rent, car purchases and road tax do not count. The shortfall is taxed at 22%. Business income for this test is never less than the art. 28A minimum (art. 28A(5)). The requirement does not apply to people aged 70 or more, people with an 80% disability, non-residents, residents living or working abroad, minors, conscripts, people in villages up to 500 inhabitants or islands under 3,100 (except tourist areas), and the other groups in art. 15(6)(γ). Each spouse declares their own spending; a surplus can be moved to the other spouse on a joint return (art. 15(6)(ε)).
 
