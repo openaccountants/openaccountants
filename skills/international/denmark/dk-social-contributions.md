@@ -21,7 +21,7 @@ See also: dk-income-tax (state and municipal income tax, personal allowance, B-s
 ## Who this applies to
 
 - **AM-bidrag.** Every person liable to Danish tax pays AM-bidrag of 8% of the base (Arbejdsmarkedsbidragsloven, AMBL, § 1). The base for employees is pay in money or kind for personal work, including benefits in kind and employer pension contributions (AMBL § 2). The base for the self-employed is the personal income from the business (AMBL §§ 4 and 5).
-- **Under 18.** From income year 2026 a person pays AM-bidrag only from the calendar year they turn 18. Pay, B-income and business profit before that year carry no AM-bidrag (skat.dk, AM-bidrag).
+- **Under 18.** From income year 2026 the rate is 0% up to and including 31 December of the income year in which the person turns 17, so AM-bidrag starts in the calendar year they turn 18 (AMBL § 1, stk. 2, added by lov nr. 96 of 4 February 2025, § 1, with effect from 1 January 2026 under § 7, stk. 4). Pay, B-income and business profit before that year carry no AM-bidrag (skat.dk, AM-bidrag).
 - **Income without AM-bidrag.** SU, pensions paid out, efterløn, kontanthjælp, ledighedsydelse, fleksydelse and dagpenge (skat.dk, AM-bidrag).
 - **ATP.** An employer pays ATP for each employee aged 16 or over, with no upper age limit, who works in Denmark or is posted abroad by a Danish employer and works at least 9 hours a week, 18 hours in 14 days or 39 hours a month (virk.dk, ATP employer). The employee pays one third, the employer two thirds.
 - **Employer contributions.** A private employer that pays ATP also pays AUB, Barsel.dk, FIB and AES through Samlet Betaling. FIB is paid by private employers registered for VAT or payroll tax (lønsumsafgift); foreign employers pay it even without that registration (virk.dk, FIB).
@@ -34,7 +34,7 @@ See also: dk-income-tax (state and municipal income tax, personal allowance, B-s
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | AM-bidrag | 8% of the base | 2026 | https://www.retsinformation.dk/eli/lta/2020/121 |
-| AM-bidrag, until the year the person turns 18 | 0% | 2026 | https://skat.dk/borger/am-bidrag |
+| AM-bidrag, up to 31 December of the year the person turns 17 | 0% | 2026 | https://www.retsinformation.dk/eli/lta/2025/96 |
 | ATP, monthly paid, 117 hours or more a month (employee 99, employer 198) | DKK 297.00 a month | 2026 | https://www.borger.dk/pension-og-efterloen/atp-livslang-pension-oversigt/atp-bidraget/atp-satser-for-privat-virksomhed |
 | ATP, monthly paid, 78 to 116 hours (employee 66, employer 132) | DKK 198.00 a month | 2026 | same |
 | ATP, monthly paid, 39 to 77 hours (employee 33, employer 66) | DKK 99.00 a month | 2026 | same |
@@ -48,9 +48,9 @@ See also: dk-income-tax (state and municipal income tax, personal allowance, B-s
 | AUB deduction | First employee and every 50th employee | 2026 | same |
 | Barsel.dk (parental leave fund), per full-time employee | DKK 2,200 a year; DKK 550 a quarter | 2026 | https://virk.dk/vejledning/barsel-dk/bdk-privat-arbejdsgiver/fuldt-omfattet/ |
 | FIB (financing contribution), per full-time employee per quarter, of which Lønmodtagernes Garantifond DKK 55 | DKK 82.00 | 2026 | https://businessindenmark.virk.dk/guidance/fib-bid-finansieringsbidrag/fib-bid-finansieringsbidrag |
-| AES, yearly per full-time employee, group 71 (finance and business services) | DKK 457 | 2026 | https://virk.dk/assets/6feKOXUjVtAaPklFxxBz9C/aes_bidragssatser_2026.pdf |
+| AES plus work injury levy, yearly per full-time employee, group 71 (finance and business services; 268 + 189) | DKK 457 | 2026 | https://virk.dk/assets/6feKOXUjVtAaPklFxxBz9C/aes_bidragssatser_2026.pdf |
 | AES, group 22 (industry) | DKK 1,558 | 2026 | same |
-| AES, group 41 (construction, other) | DKK 2,323 | 2026 | same |
+| AES plus work injury levy, group 41 (construction, other; 1,497 + 826) | DKK 2,323 | 2026 | same |
 | AES, group 51 (wholesale and retail) | DKK 539 | 2026 | same |
 | AES, group 52 (hotels and restaurants) | DKK 389 | 2026 | same |
 | AES, group 83 (social institutions, associations, culture) | DKK 2,911 | 2026 | same |
@@ -62,11 +62,11 @@ See also: dk-income-tax (state and municipal income tax, personal allowance, B-s
 | Efterløn (voluntary early retirement) contribution, full-time / part-time | DKK 593 / DKK 396 a month | 2026 | same |
 | ATP paid by a-kasse members, full-time / part-time | DKK 7 / DKK 5 a month | 2026 | same |
 | Late payment interest on A-skat and AM-bidrag: base rate 0.1% plus 0.85 points | 0.95% a month | 2026 | https://info.skat.dk/data.aspx?oid=2459995 |
-| Reminder fee, A-skat and AM-bidrag | DKK 65 | 2026 | https://info.skat.dk/data.aspx?oid=2168585 |
+| Reminder fee, A-skat and AM-bidrag (reminder sent only when the tax account debit balance exceeds DKK 5,000) | DKK 65 | 2026 | https://info.skat.dk/data.aspx?oid=2168585 |
 | Fee for a provisional assessment when no report is filed | DKK 800 | 2026 | https://www.retsinformation.dk/eli/lta/2024/1040 |
 | Late payment interest, Samlet Betaling, 1 January to 30 June 2026 (yearly) | 9.75% | 2026 | https://virk.dk/vejledning/atp/atp-arbejdsgiver/ |
 
-The AES table gives eight of the 16 branch groups. Look up the employer's group in the AES PDF. Each group figure includes a DKK 2 cost for the work injury levy.
+The AES table gives eight of the 16 branch groups. Look up the employer's group in the AES PDF. Each figure is the AES contribution plus the work injury levy (arbejdsskadeafgift), and includes DKK 2 per full-time employee to cover the levy's costs (AES 2026 rates; virk.dk, AES).
 
 ## The taxable base
 
@@ -80,24 +80,24 @@ The AES table gives eight of the 16 branch groups. Look up the employer's group 
 
 **ATP.** A flat amount by hours band, not a percentage. If the hours are unknown, divide gross pay by the 2026 hourly rate (DKK 258.69 for men, DKK 233.62 for women) and use the band that gives (virk.dk, ATP rates). The employee share is withheld from pay. Both shares are reported in eIndkomst as one figure.
 
-**Employer contributions.** Samlet Betaling converts reported ATP into full-time employees: ATP paid divided by DKK 891 a quarter (virk.dk, FIB). It then charges FIB, Barsel.dk and AUB per full-time employee. Barsel.dk is not charged for apprentices under 25 registered with AUB (virk.dk, Barsel.dk). AUB is not charged for the first employee or every 50th employee, so a business with one employee pays no AUB (virk.dk, AUB). AES is set per full-time employee by branch group and collected with ATP (virk.dk, AES; AES 2026 rates).
+**Employer contributions.** Samlet Betaling converts reported ATP into full-time employees: ATP paid divided by DKK 891 a quarter (virk.dk, FIB). It then charges FIB, Barsel.dk and AUB per full-time employee. Barsel.dk is not charged for apprentices under 25 registered with AUB (virk.dk, Barsel.dk). AUB is not charged for the first employee or every 50th employee, so a business with one employee pays no AUB (virk.dk, AUB). AES is a yearly amount per full-time employee set by branch group, charged when ATP is paid and paid quarterly on the Samlet Betaling invoice (virk.dk, AES; AES 2026 rates).
 
 **Work accident insurance premium.** Set by the insurer, not by statute. It is a business cost outside Samlet Betaling.
 
 ## Deadlines and filing
 
-- **AM-bidrag and A-skat, small and medium employers.** Due on the 1st and payable by the 10th of the month after the pay month (Opkrævningsloven § 2, stk. 5). A deadline on a bank holiday moves to the next banking day.
-- **Large employers.** Where AM-bidrag over the 12 months October to September before the year exceeded DKK 250,000, or A-skat exceeded DKK 1 million, AM-bidrag and A-skat are due on the last banking day of the month the pay relates to (Opkrævningsloven § 2, stk. 6). Skattestyrelsen recalculates each November and notifies changes through Virk (skat.dk, deadlines). The category is on the registration certificate in TastSelv Erhverv.
+- **AM-bidrag and A-skat, small and medium employers.** Due on the 1st and payable by the 10th of the month after the pay month; for December pay the deadline is 17 January (Opkrævningsloven § 2, stk. 5, applying stk. 2, 3. pkt.). A deadline on a bank holiday moves to the next banking day (§ 2, stk. 3).
+- **Large employers.** Where AM-bidrag over the 12 months from October two years before to September the year before (for 2026: October 2024 to September 2025) exceeded DKK 250,000, or A-skat exceeded DKK 1 million, AM-bidrag and A-skat are due on the last banking day of the month the pay relates to (Opkrævningsloven § 2, stk. 6). This does not apply to regions and municipalities. Skattestyrelsen recalculates each November and notifies changes through Virk (skat.dk, deadlines). The category is on the registration certificate in TastSelv Erhverv.
 - **ATP and Samlet Betaling.** ATP is reported in eIndkomst. Samlet Betaling invoices four times a year: Q1 report by 31 May, pay by 1 July; Q2 report by 31 August, pay by 1 October; Q3 report by 30 November, pay by 1 January; Q4 report by 28 February, pay by 1 April (virk.dk, ATP employer). AUB, Barsel.dk, FIB and AES come on the same invoice.
 - **Self-employed AM-bidrag.** Paid through B-skat on the preliminary assessment, in 10 instalments in every month except June and December, and settled on the annual return (skat.dk, B-income). Filing dates are in dk-income-tax.
 - **Voluntary ATP, self-employed.** Quarterly: Q1 by 1 May, Q2 by 1 August, Q3 by 1 November, Q4 by 1 February (virk.dk, ATP self-employed).
-- **Work accidents.** Report in EASY on Virk within 14 days (virk.dk, AES work accident).
+- **Work accidents.** Report in EASY within 14 days of the first day of absence, or of the injury day if there was no absence (virk.dk, AES work accident).
 
 ## Penalties and interest
 
-- **Late AM-bidrag or A-skat.** Interest at the Opkrævningsloven § 7, stk. 2 base rate plus 0.85 percentage points a month, calculated daily, not deductible (Opkrævningsloven § 7, stk. 1 as amended by lov nr. 1694 of 30 December 2024; SKAT Juridisk Vejledning A.B.4.7.2). The 2026 base rate is 0.1% (SKM2025.720.SKTST), so 0.95% a month. From 1 January 2026 interest on interest on the tax account is abolished (A.B.4.7.2).
-- **Reminder fee.** DKK 65 for each reminder (Opkrævningsloven § 6, stk. 1).
-- **No report.** Skattestyrelsen can set the amount provisionally and charge DKK 800 per period (Opkrævningsloven § 4, stk. 1 and 2). After four provisional assessments in a row it can cancel the registration (§ 4, stk. 3).
+- **Late AM-bidrag or A-skat.** A-skat and AM-bidrag sit on the tax account (skattekonto), where the debit balance carries the Opkrævningsloven § 7, stk. 1 rate (§ 16 c, stk. 1): the § 7, stk. 2 base rate plus 0.85 percentage points a month, calculated daily, not deductible (§ 7, stk. 1 as amended by lov nr. 1694 of 30 December 2024, § 1, nr. 6; SKAT Juridisk Vejledning A.B.4.7.2). The 2026 base rate is 0.1% (SKM2025.720.SKTST), so 0.95% a month. From 1 January 2026 interest on interest on the tax account is abolished (A.B.4.7.2).
+- **Reminder fee.** DKK 65 for each reminder (Opkrævningsloven § 6). On the tax account a reminder goes out only when the debit balance exceeds DKK 5,000, and the whole balance is then payable at once (§ 16 c, stk. 4).
+- **No report.** Skattestyrelsen can set the amount provisionally and charge DKK 800, one fee per period even where both A-skat and AM-bidrag are set (Opkrævningsloven § 4, stk. 1 and 2). After four provisional assessments in a row it can cancel the registration (§ 4, stk. 3).
 - **Late Samlet Betaling.** Interest from the deadline at Nationalbanken's official lending rate plus 8 points a year, 9.75% for 1 January to 30 June 2026 (virk.dk, ATP employer).
 - **No work accident insurance.** The employer pays AES an amount equal to the premium it should have paid (Arbejdsskadesikringsloven § 51) and is liable to a fine (§ 82, stk. 1). Failing to keep the insurance in force, to pay AES or to report an accident on time is also fined (§ 82, stk. 2 and 3).
 - **Voluntary ATP, self-employed.** After two unpaid reminders, membership as self-employed ends (virk.dk, ATP self-employed).
@@ -115,7 +115,7 @@ The AES table gives eight of the 16 branch groups. Look up the employer's group 
 
 A Danish ApS in branch group 71 (finance and business services) has three monthly paid employees. Each works at least 117 hours a month, earns DKK 40,000 a month, is over 18 and has no pension scheme. We look at Q1 2026.
 
-ATP is DKK 297 a month per employee: DKK 99 from the employee and DKK 198 from the employer. For the quarter Samlet Betaling sees ATP of 3 x 891 = DKK 2,673, which is 3 full-time employees. Barsel.dk is 3 x 550 = DKK 1,650. FIB is 3 x 82 = DKK 246. AUB is charged on 2 employees, because the first is deducted: 2 x 705.25 = DKK 1,410.50. AES for group 71 is DKK 457 a year, so 3 x 457 / 4 = DKK 342.75 for the quarter. The employer's own cost is its ATP share of 3 x 198 x 3 = DKK 1,782 plus those charges: DKK 5,431.25. Each employee's AM-bidrag is 8% of DKK 40,000 less the DKK 99 ATP share: DKK 3,192.08 a month.
+ATP is DKK 297 a month per employee: DKK 99 from the employee and DKK 198 from the employer. For the quarter Samlet Betaling sees ATP of 3 x 891 = DKK 2,673, which is 3 full-time employees. Barsel.dk is 3 x 550 = DKK 1,650. FIB is 3 x 82 = DKK 246. AUB is charged on 2 employees, because the first is deducted: 2 x 705.25 = DKK 1,410.50. The employer's own cost for the quarter is its ATP share of 3 x 198 x 3 = DKK 1,782 plus those charges: DKK 5,088.50. AES for group 71 comes on top: DKK 457 a year per full-time employee, DKK 1,371 a year for the three, paid through the quarterly invoices. Each employee's AM-bidrag is 8% of DKK 40,000 less the DKK 99 ATP share: DKK 3,192.08 a month.
 
 ```oa-check
 name: Three full-time employees, group 71, Q1 2026
@@ -137,9 +137,9 @@ steps:
   - barsel: fte * barsel_quarter
   - fib: fte * fib_quarter
   - aub: (fte - 1) * aub_quarter
-  - aes: fte * aes_year / 4
+  - aes_annual: fte * aes_year
   - employer_atp: employees * atp_employer * months
-  - employer_cost: employer_atp + barsel + fib + aub + aes
+  - employer_cost: employer_atp + barsel + fib + aub
   - am_monthly: round(pct(monthly_pay - atp_employee, am_rate), 2)
 expected:
   atp_total: 2673
@@ -147,8 +147,8 @@ expected:
   barsel: 1650
   fib: 246
   aub: 1410.50
-  aes: 342.75
-  employer_cost: 5431.25
+  aes_annual: 1371
+  employer_cost: 5088.50
   am_monthly: 3192.08
 ```
 
@@ -200,10 +200,13 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Arbejdsmarkedsbidragsloven, LBK nr. 121 of 7 February 2020, §§ 1-5, 7, 9 | https://www.retsinformation.dk/eli/lta/2020/121 | 2026-10-23 |
+| Lov nr. 96 of 4 February 2025, § 1 (new AMBL § 1, stk. 2: 0% to 31 December of the year the person turns 17) and § 7, stk. 4 (effect from 1 January 2026) | https://www.retsinformation.dk/eli/lta/2025/96 | 2026-10-23 |
+| Personskatteloven, LBK nr. 1284 of 14 June 2021, § 3, stk. 2, nr. 6 | https://www.retsinformation.dk/eli/lta/2021/1284 | 2026-10-23 |
 | Skattestyrelsen, AM-bidrag (8%, base, exempt income, 2026 age rule, order of deduction) | https://skat.dk/borger/am-bidrag | 2026-10-23 |
 | Skattestyrelsen, B-income (B-skat instalments, 2026 age rule) | https://skat.dk/en-us/individuals/b-income | 2026-10-23 |
 | SKAT Juridisk Vejledning C.A.4.1.11 (AM-bidrag deductible; foreign social contributions) | https://info.skat.dk/data.aspx?oid=2061784 | 2026-10-23 |
-| Opkrævningsloven, LBK nr. 1040 of 13 September 2024, §§ 2, 4, 6, 7 | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-23 |
+| Opkrævningsloven, LBK nr. 1040 of 13 September 2024, §§ 2, 4, 6, 7, 16 c | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-23 |
+| Lov nr. 1694 of 30 December 2024, § 1, nr. 6 and 15 (0.85-point addition; no interest on interest on the tax account) | https://www.retsinformation.dk/eli/lta/2024/1694 | 2026-10-23 |
 | SKAT Juridisk Vejledning A.B.4.7.2 (interest base plus 0.85 points; DKK 65 fee) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-10-23 |
 | SKM2025.720.SKTST, Opkrævningsloven § 7, stk. 2 rate for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-23 |
 | Skattestyrelsen, deadlines for A-skat and AM-bidrag | https://skat.dk/erhverv/ansatte-og-loen/frister-ansatte-og-loen | 2026-10-23 |
@@ -223,4 +226,4 @@ expected:
 | Beskæftigelsesministeriet, VEJ nr. 10230 of 9 December 2025, rates for unemployment insurance 2026 (table 4.1) | https://www.retsinformation.dk/eli/retsinfo/2025/10230 | 2026-10-23 |
 | lifeindenmark.borger.dk, social security cover when working abroad | https://lifeindenmark.borger.dk/working/social-security-cover | 2026-10-23 |
 
-Not yet confirmed: the newest consolidation of Arbejdsmarkedsbidragsloven read is from 2020, so the 2026 under-18 rule rests on skat.dk and the amending act was not read. Whether an A1 from another country removes Danish AM-bidrag, rather than only giving a deduction for foreign contributions, was not settled from an official source. The AES PDF states a yearly amount per full-time employee; that Samlet Betaling charges a quarter of it each quarter on the ATP-based full-time count is our reading. How AUB counts "every 50th employee" for fractional full-time counts was not read. The SMV payment date rests on Opkrævningsloven § 2, stk. 5 as consolidated in 2024; skat.dk does not publish the 2026 SMV table on the page read. The monthly A-kasse admin fee charged by each a-kasse, voluntary AES rates for the self-employed, and work accident insurance premiums were not read.
+Not yet confirmed: whether an A1 from another country removes Danish AM-bidrag, rather than only giving a deduction for foreign contributions, was not settled from an official source. Whether Samlet Betaling charges exactly a quarter of the yearly AES amount each quarter on the ATP-based full-time count was not stated on the pages read, so Example 1 shows AES as a yearly figure. How AUB counts "every 50th employee" when the full-time count is a fraction was not read. The SMV payment date rests on Opkrævningsloven § 2, stk. 5 as consolidated in 2024; skat.dk does not publish the 2026 SMV table on the page read. The Samlet Betaling late interest rate from 1 July 2026 was not published on the page read. The commencement order for the 0.85-point addition under lov nr. 1694/2024, § 18, stk. 2 was not located; Den juridiske vejledning 2026-2 applies it. The monthly a-kasse admin fee charged by each a-kasse and work accident insurance premiums were not read.
