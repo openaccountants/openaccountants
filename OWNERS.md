@@ -10,6 +10,30 @@ Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the
 
 Cross-cutting: Ryan owns source reachability, the repo audit and the pentest. Michael owns the website sync, licensing and marketing. Jeff owns the board and issue triage. The GLOBAL, INTL and EU-wide skills are not jurisdictions; Michael maintains them.
 
+## Roles
+
+Owning a region means driving its packs. These roles cut across regions. Each one exists because of something we measured on 23 October 2026 across the 2,169 skills on main:
+
+- 11% have a `## Sources` section, and 1.5% record when each source was read.
+- 74% are still labelled tax year 2025 or earlier, or carry no year.
+- 2% have a worked example the checker recomputes.
+- 1.5% (33) are Accountant-reviewed.
+- Independent reviews this week found at least one wrong or outdated figure in most older skills they checked.
+
+CI checks that a skill is well formed. It does not check that a skill is right. These roles close that gap.
+
+| Role | What it does | Why we need it | Who |
+|---|---|---|---|
+| Data lead | Owns the quality numbers and the checks behind them. Runs a weekly job for broken source links, contradictions between skills and skills still on last year's figures, and opens an issue for each failure. Sets the provenance standard (official sources, "Read on" dates, a "Not yet confirmed" line) and puts the honest counts in the weekly report: reviewed, current-year, fully sourced. | Nothing today opens a source link or compares skills against each other, and `detect-contradictions.py` is not in CI. File counts look like coverage when they are not. | Proposed: Ryan Duguid, who already owns source reachability and the repo audit. To confirm with Ryan. |
+| Country writers | Write and re-verify skills for the countries assigned to them, one writer per country, each skill followed by an independent review against the law before merge. | Keeps work from being duplicated and puts a second check on every figure. | Europe: Claude and ChatGPT, as assigned below (Michael accountable). Other regions: the region owner. |
+| Re-verification queue | Picks the old skills that AIs load most (from the platform usage digest) and sends them back through write and review, most-used first. | Most of the library is older drafts; fixing the ones people actually use first gives the most accuracy per hour. | Data lead sets the queue; country writers do the work. |
+| Reviewing accountants | A named, credentialed accountant reviews a country's pack and signs it off as Accountant-reviewed (`tier: 1`). | This is the third test in [GOAL.md](GOAL.md) and the slowest. 33 skills have it today. | Open. One per country; region owners recruit. |
+| Tooling | Builds and maintains the checks: link checker, contradiction gate, provenance required on changed skills, the coverage report and its `partial:` rule. | Every rule we rely on should run without a person remembering it. | Open; the data lead decides what is built first. |
+| Merger and final review | Merges PRs, holds the line on the two quality states and the copy rules. | Humans merge; one person keeps it consistent. | Michael Cutajar. |
+| Board and triage | Keeps the issue board current and routes new issues and contributors. | Contributors need a clear place to start. | Jeff Watts. |
+
+To take an open role, comment on the coverage report issue or open a PR changing this table.
+
 ## By jurisdiction
 
 Generated from `python3 scripts/coverage-report.py` on 2026-10-22 (tax domains); the issue for each row is the live status. Regenerate with the same command when owners change.
