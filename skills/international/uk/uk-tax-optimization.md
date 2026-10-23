@@ -21,7 +21,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > Source-cited draft: not reviewed by an accountant.
 
-Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): every figure moved to 2026/27 with the year named; dividend rates 10.75% / 35.75% / 39.35%; employer NIC 15% above GBP 5,000; 55p mileage; 14% main pool and 40% first-year allowance (Finance Act 2026 ss.28 and 29); VCT relief 20% (FA 2026 s.15); voluntary Class 2 abroad withdrawn; Example 2 (incorporation) recomputed, it previously applied corporation tax to the dividend instead of the profit; accountant attribution removed; Sources table added.
+Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): every figure moved to 2026/27 with the year named; dividend rates 10.75% / 35.75% / 39.35%; employer NIC 15% above GBP 5,000; 55p mileage; 14% main pool and 40% first-year allowance (Finance Act 2026 ss.28 and 29); VCT relief 20% (FA 2026 s.15); voluntary Class 2 abroad withdrawn; Example 2 (incorporation) recomputed, it previously applied corporation tax to the dividend instead of the profit; accountant attribution removed; Sources table added. Review fixes (2026-10-23): Capital Goods Scheme values taken from VAT Regulations 1995 reg 113; simplified expenses no longer tied to the cash basis; the List 3 condition for traders removed; the zero-emission car allowance dated; em dashes removed.
 
 ## Rates and thresholds, 2026/27
 
@@ -68,7 +68,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | Higher rate | £50,271 -- £125,140 | 40% |
 | Additional rate | Over £125,140 | 45% |
 
-- **Personal Allowance taper** — Personal Allowance tapers: reduced by £1 for every £2 of adjusted net income above £100,000. Fully withdrawn at £125,140.
+- **Personal Allowance taper**: Personal Allowance tapers: reduced by £1 for every £2 of adjusted net income above £100,000. Fully withdrawn at £125,140.
 
 ## Section 2 -- Income Splitting & Structuring
 
@@ -82,7 +82,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | Profits over £50,270 | Income tax 40% + NIC Class 4 (2%) | Corporation tax 25% + salary/dividend mix |
 | When to incorporate | Run both routes for the client (Example 2). At 2026/27 rates, with all profit extracted, the cost at £60,000 is about the same; profit retained in the company is what tips the result | Requires Companies House filing, accounts, employer PAYE |
 
-- **Legislation** — Companies Act 2006; Corporation Tax Act 2009; ITEPA 2003 (dividend taxation)  _(Companies Act 2006; Corporation Tax Act 2009; ITEPA 2003)_
+- **Legislation**: Companies Act 2006; Corporation Tax Act 2009; ITEPA 2003 (dividend taxation)  _(Companies Act 2006; Corporation Tax Act 2009; ITEPA 2003)_
 
 ### Salary vs Dividends (for Ltd companies)
 
@@ -96,8 +96,8 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 ### Family Employment
 
-- **Family employment strategy** — Employ a spouse or family member for genuine work at market rate. Their salary is a deductible business expense and taxed in their hands. Must be genuine employment with documented duties.
-- **Legislation** — ITEPA 2003 s.7; ITTOIA 2005 s.34 (wholly and exclusively test)  _(ITEPA 2003 s.7; ITTOIA 2005 s.34)_
+- **Family employment strategy**: Employ a spouse or family member for genuine work at market rate. Their salary is a deductible business expense and taxed in their hands. Must be genuine employment with documented duties.
+- **Legislation**: ITEPA 2003 s.7; ITTOIA 2005 s.34 (wholly and exclusively test)  _(ITEPA 2003 s.7; ITTOIA 2005 s.34)_
 
 ## Section 3 -- Deductions Most People Miss
 
@@ -107,18 +107,18 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | --- | --- | --- |
 | Use of home as office | ITTOIA 2005 s.34 | Proportion of home costs (rent, mortgage interest, council tax, electricity, heating, internet, insurance) based on rooms used and time spent. Alternatively, use HMRC simplified expenses: £10/month (25-50 hrs), £18/month (51-100 hrs), £26/month (101+ hrs). |
 | Business mileage | ITTOIA 2005 ss.94B-94D | Simplified mileage for cars and goods vehicles in 2026/27: 55p a mile for the first 10,000 business miles, 25p a mile after that (45p for the first 10,000 before 6 April 2026). Covers fuel, insurance, repairs, depreciation. |
-| Professional subscriptions | ITTOIA 2005 s.34 | ICAEW, ACCA, CIMA, CII, Law Society, etc. Must be on HMRC List 3. Fully deductible. |
+| Professional subscriptions | ITTOIA 2005 s.34 | ICAEW, ACCA, CIMA, CII, Law Society, etc. Deductible where paid wholly and exclusively for the trade. |
 | Training & CPD | ITTOIA 2005 s.34 | Training to maintain or update existing skills is deductible. Training for a new trade is not. |
 | Pre-trading expenses | ITTOIA 2005 s.57 | Expenses incurred up to 7 years before trading begins, which would have been deductible if incurred during trading. |
 | Bad debts | ITTOIA 2005 s.35 | Specific bad debts written off are deductible. General provisions are not. |
 | Telephone & broadband | ITTOIA 2005 s.34 | Business-use proportion of personal phone/broadband. A separate business phone line is fully deductible. |
 | Bank charges | ITTOIA 2005 s.34 | Business account fees, payment processing fees (Stripe, PayPal, GoCardless). |
 | Protective clothing & tools | ITTOIA 2005 s.34 | Work-specific clothing (not everyday wear), tools of the trade. |
-| Flat rate expenses (simplified) | ITTOIA 2005 s.94B-D | Available under cash basis: vehicles (mileage rates), use of home, business premises lived in. |
+| Flat rate expenses (simplified) | ITTOIA 2005 s.94B-D | Available to sole traders and to partnerships with no company partner, whether or not they use the cash basis: vehicles (mileage rates), use of home, business premises lived in. |
 
 ## Section 4 -- Capital Allowances Optimization
 
-- **Legislation** — Capital Allowances Act 2001 (CAA 2001)  _(CAA 2001)_
+- **Legislation**: Capital Allowances Act 2001 (CAA 2001)  _(CAA 2001)_
 
 ### Annual Investment Allowance (AIA)
 
@@ -142,7 +142,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 ### New 40% First-Year Allowance (from 1 January 2026)
 
-- **New 40% First-Year Allowance** — Available for main-rate expenditure where AIA or full expensing does not apply. The plant or machinery must be new and unused and must not be a car. Particularly relevant for unincorporated businesses (sole traders/partnerships) and leased assets.  _([Finance Act 2026 s.29, inserting CAA 2001 s.45U](https://www.legislation.gov.uk/ukpga/2026/11/section/29))_
+- **New 40% First-Year Allowance**: Available for main-rate expenditure where AIA or full expensing does not apply. The plant or machinery must be new and unused and must not be a car. Particularly relevant for unincorporated businesses (sole traders/partnerships) and leased assets.  _([Finance Act 2026 s.29, inserting CAA 2001 s.45U](https://www.legislation.gov.uk/ukpga/2026/11/section/29))_
 
 ### Cars
 
@@ -150,17 +150,17 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 | CO2 emissions | Allowance |
 | --- | --- |
-| 0 g/km (electric), new and unused (second hand electric car: main pool) | 100% FYA |
+| 0 g/km (electric), new and unused, bought before April 2027 (second hand electric car: main pool) | 100% FYA |
 | 1-50 g/km | Main pool (14% from April 2026) |
 | Over 50 g/km | Special rate pool (6%) |
 
 ### Timing Strategy
 
-- **Timing strategy** — Buy qualifying plant and machinery before the end of your accounting period to claim AIA in the current year. Defer purchases to the next period only if you expect higher profits next year.
+- **Timing strategy**: Buy qualifying plant and machinery before the end of your accounting period to claim AIA in the current year. Defer purchases to the next period only if you expect higher profits next year.
 
 ## Section 5 -- Loss Utilization
 
-- **Legislation** — ITA 2007 s.64-83  _(ITA 2007 s.64-83)_
+- **Legislation**: ITA 2007 s.64-83  _(ITA 2007 s.64-83)_
 
 **Loss Utilization**
 
@@ -175,7 +175,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 ### Strategy
 
-- **Loss utilization strategy** — In a loss-making year, accelerate expenditure (training, equipment, marketing) to maximize the loss. Use sideways relief to set it against employment income or other income, capped at the greater of £50,000 or 25% of adjusted total income.
+- **Loss utilization strategy**: In a loss-making year, accelerate expenditure (training, equipment, marketing) to maximize the loss. Use sideways relief to set it against employment income or other income, capped at the greater of £50,000 or 25% of adjusted total income.
 
 ## Section 6 -- Timing Strategies
 
@@ -191,7 +191,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 
 ## Section 7 -- VAT Optimization
 
-- **Legislation** — Value Added Tax Act 1994 (VATA 1994)  _(VATA 1994)_
+- **Legislation**: Value Added Tax Act 1994 (VATA 1994)  _(VATA 1994)_
 
 **VAT Optimization**  _(https://www.gov.uk/guidance/capital-goods-scheme-notice-7062)_
 
@@ -202,12 +202,12 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | Cash accounting scheme | Pay VAT only when paid by customers (not when invoiced). Helps cash flow and avoids paying VAT on bad debts. |
 | Annual accounting scheme | One VAT return per year instead of quarterly. Nine monthly instalments based on estimate, balancing payment with annual return. |
 | Partial exemption | If making both taxable and exempt supplies, optimize the allocation method to maximize input VAT recovery. Standard method vs special method. |
-| Capital Goods Scheme | For land and buildings of £600,000 or more (exclusive of VAT) and aircraft, ships, boats and other vessels of £50,000 or more, input VAT is adjusted over later intervals. HMRC's notice 706/2, updated 29 July 2026, no longer treats computers as capital goods. |
+| Capital Goods Scheme | For land and buildings (and civil engineering works) of £600,000 or more (exclusive of VAT) and aircraft, ships, boats and other vessels of £50,000 or more, input VAT is adjusted over later intervals (VAT Regulations 1995 reg 113). Computers are no longer capital items: reg 113(2)(d) is repealed, and HMRC notice 706/2 was updated on 29 July 2026 to match. |
 | De-registration | If turnover falls below £88,000 (de-registration threshold), consider voluntary de-registration if clients are VAT-exempt consumers. |
 
 ## Section 8 -- Social Security Optimization
 
-- **Legislation** — Social Security Contributions and Benefits Act 1992; National Insurance Contributions Act 2014  _(Social Security Contributions and Benefits Act 1992; National Insurance Contributions Act 2014)_
+- **Legislation**: Social Security Contributions and Benefits Act 1992; National Insurance Contributions Act 2014  _(Social Security Contributions and Benefits Act 1992; National Insurance Contributions Act 2014)_
 
 ### National Insurance Contributions (NIC) 2026/27
 
@@ -242,7 +242,7 @@ Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-
 | Tapered allowance | Reduces by £1 for every £2 of adjusted income above £260,000, minimum £10,000 (not reduced if threshold income is £200,000 or less) | FA 2004 s.228ZA |
 | Money Purchase Annual Allowance | £10,000 if flexibly accessed pension benefits | FA 2004 s.227ZA |
 
-- **Strategy** — A higher-rate taxpayer contributing £40,000 to a pension receives 40% tax relief = £16,000 saving. If this brings adjusted net income below £100,000, the Personal Allowance is restored = additional saving of up to £5,028 (£12,570 × 40%).
+- **Strategy**: A higher-rate taxpayer contributing £40,000 to a pension receives 40% tax relief = £16,000 saving. If this brings adjusted net income below £100,000, the Personal Allowance is restored = additional saving of up to £5,028 (£12,570 × 40%).
 
 ### ISA (Individual Savings Account)
 
@@ -419,9 +419,11 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Finance Act 2026 s.15 (VCT relief 20%) | https://www.legislation.gov.uk/ukpga/2026/11/section/15 | 2026-10-23 |
 | VATA 1994 Sch 1 para 1 (registration threshold) | https://www.legislation.gov.uk/ukpga/1994/23/schedule/1/paragraph/1 | 2026-10-23 |
 | HMRC, Capital Goods Scheme (VAT Notice 706/2) | https://www.gov.uk/guidance/capital-goods-scheme-notice-7062 | 2026-10-23 |
+| VAT Regulations 1995 reg 113 (capital items and values) | https://www.legislation.gov.uk/uksi/1995/2518/regulation/113 | 2026-10-23 |
+| GOV.UK, Business cars (40% FYA, 100% FYA before April 2027) | https://www.gov.uk/capital-allowances/business-cars | 2026-10-23 |
 | GOV.UK, Voluntary National Insurance abroad from 6 April 2026 | https://www.gov.uk/government/publications/voluntary-national-insurance-contributions-for-periods-abroad-from-6-april-2026/voluntary-national-insurance-contributions-abroad-from-6-april-2026 | 2026-10-23 |
 
-Not yet confirmed: the Capital Goods Scheme thresholds after HMRC's 29 July 2026 update (the notice says some values changed but its body still shows GBP 600,000 and GBP 50,000).
+Not yet confirmed: nothing in this skill depends on a figure not read from the sources above.
 
 <!-- openaccountants-cta-block -->
 

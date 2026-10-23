@@ -21,7 +21,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > Source-cited draft: not reviewed by an accountant.
 
-For VAT periods ending in tax year 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): 2026/27 deadline and penalty rules added with sources; duplicated Step 2 removed; boxes 2, 8 and 9 limited to Northern Ireland goods trade with the EU; claims that uk-vat-return is accountant-reviewed removed (it is a source-cited draft); accountant attribution removed; Sources table added.
+For VAT periods ending in tax year 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): 2026/27 deadline and penalty rules added with sources; duplicated Step 2 removed; boxes 2, 8 and 9 limited to Northern Ireland goods trade with the EU; claims that uk-vat-return is accountant-reviewed removed (it is a source-cited draft); accountant attribution removed; Sources table added. Review fixes (2026-10-23): em dashes removed.
 
 This skill describes a working METHOD. It does not restate tax law: every rate, threshold and box definition is loaded from the [uk-vat-return](https://www.openaccountants.com/skills/uk-vat-return) skill. Outputs are draft working papers, not filings. A UK accountant should review before anything is submitted or paid. The fuller version of this method is `xero-uk-vat-close`.
 
@@ -49,13 +49,13 @@ If a Xero connection is available to you (MCP connector or similar), pull for th
 
 - The **Trial Balance** at period end.
 - The **VAT account activity** (usually "VAT" / "820" in Xero's default chart): every posting in the period.
-- **Sales and purchase totals by tax rate** (Xero's own VAT Return report or Account Transactions grouped by tax rate) — this is your primary source for outputs and inputs.
+- **Sales and purchase totals by tax rate** (Xero's own VAT Return report or Account Transactions grouped by tax rate). This is your primary source for outputs and inputs.
 
-**If no connection** (or the connector cannot read reports), ask the user to export three CSVs from Xero — Reports → Trial Balance; Reports → Account Transactions (VAT account, period); Reports → VAT Return (or Sales/Purchases by tax rate) — and attach them. The method is identical from here. Any ledger that can export these three views works: this is deliberately connector-optional.
+**If no connection** (or the connector cannot read reports), ask the user to export three CSVs from Xero (Reports → Trial Balance; Reports → Account Transactions (VAT account, period); Reports → VAT Return, or Sales/Purchases by tax rate) and attach them. The method is identical from here. Any ledger that can export these three views works: this is deliberately connector-optional.
 
 Never guess at missing data. If a view is unavailable, say exactly which export you need.
 
-Step 2. Load the law — never from memory
+Step 2. Load the law, never from memory
 
 Call `get_skill` with slug `uk-vat-return` on the OpenAccountants connection (or read it at openaccountants.com/skills/uk-vat-return). That skill is a source-cited draft: each figure in it names its HMRC source. From it, take:
 
@@ -88,7 +88,7 @@ Every number in the final working paper carries both citations: the ledger sourc
 
 Step 4. Reconcile, and stop at the flash points
 
-- **Control account check**: computed Box 5 vs the movement on the VAT control account in the ledger. A difference is a finding — list the reconciling items (late-posted invoices, manual journals, rounding). Do not silently absorb it.
+- **Control account check**: computed Box 5 vs the movement on the VAT control account in the ledger. A difference is a finding: list the reconciling items (late-posted invoices, manual journals, rounding). Do not silently absorb it.
 - **Late claims** from earlier periods: note them separately; uk-vat-return carries the error-correction limits.
 - **STOP and route to the accountant** if you encounter: partial exemption, margin schemes, fuel scale charges, capital goods scheme assets, or anything Step 0 flagged that uk-vat-return marks as judgment-dependent. Name the issue, show the data, and hand over. That is the method working, not failing.
 

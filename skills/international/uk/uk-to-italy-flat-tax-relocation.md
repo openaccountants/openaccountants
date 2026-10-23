@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > Source-cited draft: not reviewed by an accountant.
 
-UK tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Italian tax year: the calendar year 2026. Changelog v1.1 (2026-10-23): the flat tax moved to EUR 300,000 (EUR 50,000 per family member) for residence moved from 1 January 2026; impatriati and 7% pensioner rules taken from Agenzia delle Entrate guidance, including the 30,000-inhabitant limit from 7 April 2026; Italian residence test updated; unsourced Italian rates and wealth-tax percentages removed; UK side brought to 2026/27; worked examples and Sources table added.
+UK tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Italian tax year: the calendar year 2026. Changelog v1.1 (2026-10-23): the flat tax moved to EUR 300,000 (EUR 50,000 per family member) for residence moved from 1 January 2026; impatriati and 7% pensioner rules taken from Agenzia delle Entrate guidance, including the 30,000-inhabitant limit from 7 April 2026; Italian residence test updated; unsourced Italian rates and wealth-tax percentages removed; UK side brought to 2026/27; worked examples and Sources table added. Review fixes (2026-10-23): 7% regime length settled at 10 tax periods from the TUIR text; 30,000-inhabitant limit credited to L. 34/2026 and applied to the earthquake municipalities too; the flat-tax amount tied to the date residence moves; close-company charge limited to material participators; the 1 January 2027 move of these articles into the new Testo unico noted.
 
 **Why this corridor matters.** Italy offers a fixed annual substitute tax on all foreign income for new residents, a partial exemption for relocating workers, and a 7% rate for foreign pensioners in small southern towns. The UK end (the Statutory Residence Test, the 5-year return rule, the inheritance tax tail) applies whatever Italy offers. The main risk is the matching problem: three Italian regimes, three kinds of mover, and costly results from picking the wrong one or electing too late.
 
@@ -31,13 +31,15 @@ The UK departure rules are the same as on any corridor. They are set out in `uk-
 
 - **Breaking UK residence:** the third automatic overseas test (full-time work abroad, fewer than 91 UK days, fewer than 31 UK work days), or the sufficient ties table (as a leaver: 16 to 45 days needs 4 ties, 46 to 90 needs 3, 91 to 120 needs 2, 121 to 182 needs 1) (FA 2013 Sch 45).
 - **Split year:** Case 1 (full-time work overseas), Case 2 (partner of a Case 1 leaver), Case 3 (ceasing to have any UK home).
-- **5-year rule:** if you had sole UK residence in 4 of the 7 years before leaving and return within 5 years, gains on pre-departure assets and, for returns from 6 April 2026, every close-company distribution received while away are taxed in the year you come back (RDR3; RFIG21600).
+- **5-year rule:** if you had sole UK residence in 4 of the 7 years before leaving and return within 5 years, gains on pre-departure assets and, for returns from 6 April 2026, the full amount of close-company distributions received while away by a material participator (or an associate of one) are taxed in the year you come back (FA 2013 Sch 45 para 110; RFIG21600).
 - **IHT tail:** a long-term UK resident (10 of the previous 20 tax years) stays in UK IHT on worldwide assets for 3 to 10 tax years after leaving (IHTA 1984 s.6A).
 - **UK property** stays in UK tax: rent (Non-resident Landlord Scheme), and the 60-day return on any sale. See `uk-non-resident-sa109`.
 
 ## Part 2: Italy's three doors
 
 Italy runs three separate regimes. They suit different lives and each has an eligibility clock. Choose before you arrive.
+
+For the Italian tax year 2026 the regimes sit in TUIR arts. 24-bis and 24-ter and D.Lgs. 209/2023 art. 5, and residence in TUIR art. 2. From 1 January 2027 these provisions are replaced by arts. 246, 247, 225 and 2 of the new Testo unico delle imposte sui redditi (D.Lgs. 19 June 2026 n. 117, arts. 376 and 377), which carry over the same amounts and periods.
 
 ### 2.1 Door 1: the new-residents flat tax (TUIR art. 24-bis)
 - **Who:** anyone who moves tax residence to Italy and was **not Italian resident for at least 9 of the 10 tax years** before the option starts. There is no wealth test.
@@ -48,6 +50,8 @@ Italy runs three separate regimes. They suit different lives and each has an eli
 | Up to 10 August 2024 | EUR 100,000 | EUR 25,000 |
 | After 10 August 2024, up to 31 December 2025 | EUR 200,000 | EUR 25,000 |
 | From 1 January 2026 | **EUR 300,000** | **EUR 50,000** |
+
+The amount follows the date residence moves (civil code art. 43), not the year the option is elected: the EUR 300,000 and EUR 50,000 apply to people who move residence from 1 January 2026 (L. 199/2025 art. 1 commi 25 and 26). Someone who moved in 2025 and elects in a later return pays EUR 200,000.
 
 - **Duration:** renews each year and ends after **15 years** from the first year. It can be revoked. It **lapses** if the tax is not paid in full on time. Revocation or lapse bars a new option.
 - **Payment:** in one sum by the Italian income tax balance date, on form F24 (the Agenzia deadline calendar lists 30 June 2026 for the payment due in 2026). Late payment cannot be cured (no ravvedimento).
@@ -66,9 +70,9 @@ Italy runs three separate regimes. They suit different lives and each has an eli
 - **Fit:** a salary, not a portfolio. Investment income is taxed in full, and RW reporting, IVIE and IVAFE apply.
 
 ### 2.3 Door 3: the 7% regime for foreign pensioners (TUIR art. 24-ter)
-- **Who:** people receiving pension income from foreign payers who move tax residence to a municipality of **no more than 30,000 inhabitants** (20,000 before 7 April 2026) in Sicily, Calabria, Sardinia, Campania, Basilicata, Abruzzo, Molise or Puglia, or to a municipality hit by the 2009 or 2016 earthquakes. They must not have been Italian resident in the **5 previous tax years** and must move from a state with which Italy has administrative cooperation agreements.
+- **Who:** people receiving pension income from foreign payers who move tax residence to a municipality of **no more than 30,000 inhabitants** in Sicily, Calabria, Sardinia, Campania, Basilicata, Abruzzo, Molise or Puglia, or to a municipality hit by the 2009 or 2016 earthquakes that is within the same 30,000 limit. The limit was 20,000 until L. 34/2026 art. 26(1) raised it, in force from 7 April 2026. They must not have been Italian resident in the **5 previous tax years** and must move from a state with which Italy has administrative cooperation agreements.
 - **The relief:** a **7%** substitute tax on **all foreign-source income**, not only the pension. RW reporting, IVIE and IVAFE do not apply for the states covered (Circolare 21/E 2020).
-- **Duration:** the year residence becomes effective plus the next 9 tax years, 10 in all (Circolare 21/E 2020).
+- **Duration:** the year the option takes effect (the year residence moves) plus the next 9 tax periods, 10 in all (TUIR art. 24-ter(4) and (5); Circolare 21/E 2020). The Agenzia summary page's "nine periods of validity" counts only the following years.
 - **Fit:** a retiree living on a UK pension and modest investments who will genuinely live in a small southern town.
 
 ### 2.4 Matching table
@@ -165,6 +169,11 @@ expected:
 | Agenzia delle Entrate, Neo residenti: regime opzionale (EUR 300,000 / 50,000 from 2026; 200,000; 100,000; 9 of 10 years; 15 years; payment; revocation) | https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/opzione-per-i-neo-residenti/infogen-opzionale-neo-residenti | 2026-10-23 |
 | Agenzia delle Entrate, Neo residenti: normativa e prassi (Law 199/2025 art. 1 commi 25-26; DL 113/2024 art. 2) | https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/opzione-per-i-neo-residenti/normativa-e-prassi-regi-opz-neo-residenti | 2026-10-23 |
 | TUIR art. 24-bis (text published by the Agenzia delle Entrate) | https://www.agenziaentrate.gov.it/portale/documents/20143/241456/Articolo+24+bis+del+Testo+Unico_24bisTuir.pdf/7cc66a01-df4c-67b0-ddfd-f13bc80a5ae3?t=1489738101421 | 2026-10-23 |
+| Normattiva, TUIR art. 24-bis (text in force October 2026, EUR 300,000 / 50,000) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art24bis | 2026-10-23 |
+| Normattiva, TUIR art. 24-ter (30,000 inhabitants; 9 periods after the first) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art24ter | 2026-10-23 |
+| Normattiva, L. 30 December 2025 n. 199, art. 1 commi 25 and 26 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199 | 2026-10-23 |
+| Normattiva, amendments to TUIR art. 24-ter (L. 11 March 2026 n. 34, art. 26(1), GU 23 March 2026) | https://www.normattiva.it/do/atto/vediAggiornamentiAllArticolo?art.dataPubblicazioneGazzetta=1986-12-31%2000:00:00.0&art.codiceRedazionale=086U0917&art.flagTipoArticolo=0&art.idArticolo=24&art.idSottoArticolo=3&art.idSottoArticolo1=10&art.versione=5 | 2026-10-23 |
+| Normattiva, D.Lgs. 19 June 2026 n. 117, Testo unico delle imposte sui redditi (arts. 2, 225, 246, 247, 376, 377) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117 | 2026-10-23 |
 | Agenzia delle Entrate, Circolare 17/E of 23 May 2017 (RW, IVIE, IVAFE; inheritance and gift tax) | https://www.agenziaentrate.gov.it/portale/documents/20143/297873/Circolare+n.+17+del+23+maggio+2017_CIRCOLARE+REGIMI+AGEVOLATIVI+PER+PERSONE+FISICHE+CHE+TRASFERISCONO+LA+RESIDENZA+FISCALE+IN+ITALIA+-REGISTRO+CIRCOLARI.0000017.23-05-2017-U+%282%29.pdf/8c361223-0cf1-b41b-be4a-db33664d5855?t=1497872005315 | 2026-10-23 |
 | Agenzia delle Entrate, Lavoratori impatriati (D.Lgs. 209/2023) | https://www.agenziaentrate.gov.it/portale/lavoratori-impatriati-209-2023/infogen-lavoratori-impatriati-209-2023-cittadini | 2026-10-23 |
 | Agenzia delle Entrate, Regime opzionale per i pensionati esteri (7%, 30,000 inhabitants from 7 April 2026) | https://www.agenziaentrate.gov.it/portale/schede/agevolazioni/regime-opzionale-per-i-pensionati-esteri-che-cose-cittadini | 2026-10-23 |
@@ -177,7 +186,7 @@ expected:
 | HMRC RFIG21600, temporary non-residence: close company distributions | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21600 | 2026-10-23 |
 | Inheritance Tax Act 1984 s.6A (long-term UK resident) | https://www.legislation.gov.uk/ukpga/1984/51/section/6A | 2026-10-23 |
 
-Not yet confirmed: the 7% regime's length (Circolare 21/E 2020 says 10 tax periods in all; the Agenzia's summary page says nine periods of validity) and the law that raised the municipality limit to 30,000 inhabitants; how the EUR 300,000 charge applies to someone who moved before 2026 but elects later; Italian ordinary IRPEF, IVIE, IVAFE and inheritance tax rates (left out until read from an Agenzia delle Entrate page).
+Not yet confirmed: Italian ordinary IRPEF, IVIE, IVAFE and inheritance tax rates (left out until read from an Agenzia delle Entrate page).
 
 <!-- openaccountants-cta-block -->
 

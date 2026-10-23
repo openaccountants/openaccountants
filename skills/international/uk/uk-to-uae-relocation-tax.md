@@ -1,6 +1,6 @@
 ---
 name: uk-to-uae-relocation-tax
-description: "What happens to UK tax when a UK resident moves to Dubai or Abu Dhabi, for tax year 2026/27 (6 April 2026 to 5 April 2027). Covers the Statutory Residence Test for leavers, split-year Cases 1 to 3, the 5-year temporary non-residence rule (including the 2026 change that catches every close-company dividend), what stays UK-taxed (rent, UK property gains, UK work, government pensions), the UK-UAE treaty pension article, the residence-based inheritance tax tail from 6 April 2025, voluntary National Insurance after the April 2026 changes, and a departure checklist. Trigger phrases: moving to Dubai, UK to UAE tax, leave UK for Dubai, 5-year rule Dubai, IHT tail UAE, UK pension in Dubai, split year Dubai. Out of scope, see siblings: the residence test in full (uk-statutory-residence-test), filing as a non-resident (uk-non-resident-sa109), foreign tax credit and withholding (uk-foreign-tax-and-withholding), the FIG regime (uk-non-dom), UAE corporate tax and VAT."
+description: "What happens to UK tax when a UK resident moves to Dubai or Abu Dhabi, for tax year 2026/27 (6 April 2026 to 5 April 2027). Covers the Statutory Residence Test for leavers, split-year Cases 1 to 3, the 5-year temporary non-residence rule (including the 2026 change that catches the full amount of close-company distributions to material participators), what stays UK-taxed (rent, UK property gains, UK work, government pensions), the UK-UAE treaty pension article, the residence-based inheritance tax tail from 6 April 2025, voluntary National Insurance after the April 2026 changes, and a departure checklist. Trigger phrases: moving to Dubai, UK to UAE tax, leave UK for Dubai, 5-year rule Dubai, IHT tail UAE, UK pension in Dubai, split year Dubai. Out of scope, see siblings: the residence test in full (uk-statutory-residence-test), filing as a non-resident (uk-non-resident-sa109), foreign tax credit and withholding (uk-foreign-tax-and-withholding), the FIG regime (uk-non-dom), UAE corporate tax and VAT."
 version: 1.1
 jurisdiction: GB
 category: international
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > Source-cited draft: not reviewed by an accountant.
 
-Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): figures moved to 2026/27; temporary non-residence updated for the Finance Act 2026 change to close-company distributions; voluntary National Insurance abroad updated for the April 2026 changes; IHT tail table taken from IHTA 1984 s.6A; UAE section cut back to the one fact this skill relies on; unsourced figures removed; Sources table added.
+Tax year in force: 2026/27 (6 April 2026 to 5 April 2027). Changelog v1.1 (2026-10-23): figures moved to 2026/27; temporary non-residence updated for the Finance Act 2026 change to close-company distributions; voluntary National Insurance abroad updated for the April 2026 changes; IHT tail table taken from IHTA 1984 s.6A; UAE section cut back to the one fact this skill relies on; unsourced figures removed; Sources table added. Review fixes (2026-10-23): close-company charge limited to material participators and their associates; the next-year non-residence condition added to the split-year cases.
 
 **The corridor in one paragraph.** The UAE does not impose personal income tax (UAE Ministry of Finance). So almost every question on this move is a UK question: when you stop being UK resident, what the UK keeps taxing anyway, how long the UK inheritance tax tail follows you, and what happens if you come back within 5 years. Get the UK sequence right and the UAE end is mostly immigration and paperwork.
 
@@ -62,9 +62,9 @@ As a leaver (UK resident in one or more of the previous 3 tax years), five ties 
 
 ### 1.3 Split-year treatment
 
-You are resident for the whole year by default. Split-year treatment cuts the departure year into a UK part and an overseas part if you fit a leaver case:
+You are resident for the whole year by default. Split-year treatment cuts the departure year into a UK part and an overseas part if you fit a leaver case. Every leaver case needs you to have been UK resident in the previous tax year and to be non-resident in the next one (Sch 45 paras 44 to 46):
 
-- **Case 1, starting full-time work overseas.** The split runs from the day overseas full-time work starts. The UK day limit (90) and UK work-day limit (30) for the rest of the year are reduced in proportion to the whole months before the work starts.
+- **Case 1, starting full-time work overseas.** The split runs from the day overseas full-time work starts. The UK day limit (90) and UK work-day limit (30) for the rest of the year are reduced in proportion to the whole months before the work starts. The next tax year must be non-resident because you meet the third automatic overseas test for it.
 - **Case 2, partner of a Case 1 leaver.** You go with a partner who qualifies under Case 1.
 - **Case 3, ceasing to have any UK home.** You stop having any UK home, spend fewer than 16 days in the UK in the rest of the year, and within 6 months you are resident in the new country under its law, present there every day, or your only home is there.
 
@@ -72,10 +72,10 @@ From the split date, foreign income such as a UAE salary is outside UK tax. UK s
 
 ## Part 2: The 5-year trap (temporary non-residence)
 
-You are temporarily non-resident if you had sole UK residence in **4 or more of the 7 tax years** before the year you leave and your non-residence lasts **5 years or less** (RDR3). If so, these are taxed **in the year you return**:
+You are temporarily non-resident if you had sole UK residence in **4 or more of the 7 tax years** before the year you leave and your non-residence lasts **5 years or less** (FA 2013 Sch 45 para 110; RDR3). If so, these are taxed **in the year you return**:
 
 - **Capital gains** on assets you owned before you left and sold while away (TCGA 1992 s.10A; HMRC helpsheet HS278).
-- **Close-company dividends and distributions** received while away. For individuals returning on or after 6 April 2026, the charge applies to the **full amount** of every such distribution: the old exclusion for post-departure trade profits is gone (ITTOIA 2005 ss.401C, 408A and 413A as amended by Finance Act 2026 Sch 3 Part 3; HMRC manual RFIG21600). Paying out company reserves "tax-free in Dubai" and coming home in year 4 is now caught in full.
+- **Close-company dividends and distributions** received while away, where at any time in the departure tax year (its UK part, if split) or the 3 tax years before it you were a material participator in the company or an associate of one. Overseas companies that would be close if UK resident count too. For individuals returning on or after 6 April 2026, the charge applies to the **full amount** of every such distribution: the old exclusion for post-departure trade profits is gone (ITTOIA 2005 ss.401C, 408A and 413A as amended by Finance Act 2026 Sch 3 Part 3, paras 19 to 21; HMRC manual RFIG21600). Paying out company reserves "tax-free in Dubai" and coming home in year 4 is now caught in full.
 - Some other listed income (see RDR3 and the RFIG manual).
 
 Foreign tax paid on a caught distribution can now be credited against the UK charge (FA 2026 Sch 3 Part 3). Income that simply arises while you are away, such as a UAE salary, is not pulled back.
@@ -158,7 +158,7 @@ Since **6 April 2025**, UK inheritance tax follows residence, not domicile (IHTA
 
 ## Part 7: Worked examples
 
-**7.1 The employee (Case 1).** Priya, a London employee, starts a full-time Dubai role on 1 September 2026. Under Case 1 the split runs from 1 September: her UK salary from 6 April to 31 August 2026 is taxed through PAYE, and her UAE salary from 1 September is outside UK tax, provided she keeps within the reduced UK day and work-day limits for the rest of 2026/27. UAE personal income tax: none. UK filings: P85 and a 2026/27 return with SA109. If she keeps her London flat available rather than letting it, she carries the accommodation tie into later years. That is fine while the third automatic overseas test holds and risky the year it fails.
+**7.1 The employee (Case 1).** Priya, a London employee, starts a full-time Dubai role on 1 September 2026. Under Case 1 the split runs from 1 September: her UK salary from 6 April to 31 August 2026 is taxed through PAYE, and her UAE salary from 1 September is outside UK tax, provided she keeps within the reduced UK day and work-day limits for the rest of 2026/27 and meets the third automatic overseas test for 2027/28. UAE personal income tax: none. UK filings: P85 and a 2026/27 return with SA109. If she keeps her London flat available rather than letting it, she carries the accommodation tie into later years. That is fine while the third automatic overseas test holds and risky the year it fails.
 
 **7.2 The company owner (the 5-year rule, priced).** Dan, a higher-rate taxpayer, owns all of a trading company and expects to sell it for a £2,000,000 gain. If he sells while UK resident in 2026/27, the first £1,000,000 qualifies for BADR at 18%. The annual exempt amount (£3,000) goes against the gain taxed at 24%. UK CGT is £419,280. If he moves to Dubai first, sells in year 2 and stays away more than 5 full years, there is no UK CGT (the shares are not UK land) and no UAE personal tax. If he returns in year 4, the whole gain is taxed in the year he comes back, at the rates then in force. The same applies to paying out reserves as dividends while away: from 6 April 2026 every such distribution is caught if he returns within 5 years.
 
@@ -212,7 +212,7 @@ expected:
 | Counting days like a tourist | The SRT counts midnights, and leavers' limits are far below 183. The 90-day tie means last year's habits raise this year's bar. |
 | Keeping a home "just in case" | An available UK home used one night is an accommodation tie; a close relative's home needs 16 nights. |
 | Family staying behind "for school" | A UK-resident spouse or minor child is a family tie, and school holidays add UK days. |
-| Paying out reserves in year 1, returning in year 4 | From 6 April 2026 the 5-year rule taxes every close-company distribution received while away, in the year of return. |
+| Paying out reserves in year 1, returning in year 4 | From 6 April 2026 the 5-year rule taxes the full amount of every close-company distribution a material participator received while away, in the year of return. |
 | Assuming the pension is paid gross automatically | Treaty relief needs a processed DT-Individual claim. Until then PAYE continues. |
 | Forgetting IHT | The tail runs 3 to 10 tax years after leaving, and UK assets stay in IHT forever. |
 | The 60-day property return | Selling the old UK home after leaving needs a return within 60 days even if relief removes the tax. |
