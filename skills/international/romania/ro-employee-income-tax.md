@@ -40,17 +40,17 @@ This skill covers a person whose income is a salary, a pension, rent from their 
 | Same, July to December 2026 | RON 200 a month, gross salary at most RON 4,600 | 2026 | same |
 | Employee pension pillar III, health insurance, ETF purchases | Each deductible up to EUR 400 a year | 2026 | Fiscal Code art. 78 alin. (2) lit. a) (iii), (iv), (vi) |
 | Sports subscription | Deductible up to EUR 100 a year | 2026 | same, (v) |
-| Dividends (distributed from 1 January 2026) | 16%, final, withheld by the company | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf (art. II pct. 5, art. VII alin. (1) lit. c)); Fiscal Code art. 97 alin. (7) |
+| Dividends (distributed from 1 January 2026) | 16%, final, withheld by the company; 10% on dividends distributed on 2025 interim financial statements | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf (art. II pct. 5, art. VII alin. (1) lit. c) and alin. (2)); Fiscal Code art. 97 alin. (7) |
 | Interest on deposits, savings and civil loans | 10%, final, withheld by the payer | 2026 | Fiscal Code art. 97 alin. (1)-(2) |
 | Gains on shares and derivatives through a Romanian broker, held 365 days or more | 3% of each gain, final | 2026 | https://static.anaf.ro/static/10/Anaf/legislatie/L_239_2025.pdf (art. XII pct. 12, art. XIII alin. (2) lit. c)) |
 | Same, held under 365 days | 6% of each gain, final | 2026 | same |
-| Net annual gain on shares not through a Romanian broker, and investment gold | 16%, declared in the Declarația unică | 2026 | same, art. XII pct. 16; Fiscal Code art. 123 alin. (12) |
+| Net annual gain on shares not through a Romanian broker, and investment gold | 16%, declared in the Declarația unică | 2026 | same, art. XII pct. 16; Fiscal Code art. 123 alin. (1^2) |
 | Loss carry-forward on those gains | 70% of later net gains, 5 years | 2026 | Fiscal Code art. 119 alin. (2)-(3) |
-| Gains on virtual currency | 16%; gains under RON 200 per transaction are untaxed if the year's total is at most RON 600 | 2026 | L 239/2025 art. XII pct. 14 |
+| Gains on virtual currency | 16%; gains under RON 200 per transaction are untaxed if the year's total is at most RON 600 | 2026 | L 239/2025 art. XII pct. 14 (Fiscal Code art. 116 alin. (2^1)) |
 | Rent from personal property | Flat 20% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 8; Fiscal Code art. 84 alin. (3) |
 | Short-term rental of 1 to 7 rooms in own homes | Flat 30% expense deduction, tax 10% on the net | 2026 | L 239/2025 art. XII pct. 10 (Fiscal Code art. 85) |
 | Pensions | First RON 3,000 a month untaxed, 10% on the rest | 2026 | Fiscal Code art. 100 alin. (1), art. 101 alin. (2) |
-| CASS on non-salary income (rent, investments and similar) | 10% of 6, 12 or 24 minimum wages: RON 24,300, 48,600 or 97,200 | 2026 | Fiscal Code art. 170 alin. (2)-(3); minimum wage RON 4,050 used for the year: https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf |
+| CASS on non-salary income (rent, investments and similar) | 10% of 6, 12 or 24 minimum wages: RON 24,300, 48,600 or 97,200 | 2026 | Fiscal Code art. 170 alin. (2)-(4), art. 174^1; the minimum wage in force on 1 January of the income year (RON 4,050) applies for the whole year: art. 135^1 alin. (3) |
 | Declarația unică and payment | By 25 May 2027 for 2026 income | 2026 | Fiscal Code art. 122 alin. (3), art. 123 alin. (7) |
 
 ## The taxable base
@@ -66,18 +66,20 @@ At a second employer there is no personal deduction: tax is 10% of gross less co
 
 **Personal deduction.** The basic deduction applies only when gross monthly salary is at most the minimum wage plus RON 2,000. That means RON 6,050 from January to June 2026 and RON 6,325 from July (art. 77 alin. (3)). The percentage depends on the number of dependants. Above the minimum wage it drops by 0.5 points for each RON 50 band. Take the band number k as the excess over the minimum wage divided by 50, rounded up. The percentage is then the starting rate less 0.5 × k points, applied to the minimum wage in force that month. The table in art. 77 alin. (4) gives the bands. A child under 18 always counts as a dependant, and each parent may claim the child (alin. (6)-(7)). Other dependants (spouse, relatives up to the second degree) count only if their own income is at most 20% of the minimum wage, and only one taxpayer claims them. On top come the RON 100 per school-age child (one parent only) and 15% of the minimum wage for under-26s on salaries up to the same ceiling (alin. (10)).
 
-**Minimum-wage tax-free amount (2026).** OUG 89/2025 art. III keeps this relief for 2026 at a lower level. A full-time employee at the main employer pays no income tax and no CAS or CASS on RON 300 a month (January to June) or RON 200 a month (July to December). Two conditions must both be met: the contract's base salary equals the national minimum wage, and gross salary for the month, excluding meal tickets, holiday vouchers and food allowance, is at most RON 4,300 (to June) or RON 4,600 (from July). The amount is cut pro rata for part months. The relief is lost if the base salary was cut after the ordinance came into force. OUG 89/2025 does not amend art. 77, so the personal deduction band is read from the gross salary.
+**Minimum-wage tax-free amount (2026).** OUG 89/2025 art. III keeps this relief for 2026 at a lower level. A full-time employee at the main employer pays no income tax and no CAS or CASS on RON 300 a month (January to June) or RON 200 a month (July to December). Two conditions must both be met: the contract's base salary equals the national minimum wage, and gross salary for the month, excluding meal tickets, holiday vouchers and food allowance, is at most RON 4,300 (to June) or RON 4,600 (from July). The amount is cut pro rata for part months. The relief is lost if the base salary was cut between the ordinance coming into force and 31 December 2026 (art. III alin. (2)).
 
-**Sector exemptions are gone.** OUG 156/2024 art. LXIV pct. 7 repealed art. 60 pct. 2 (software developers), pct. 5 (construction) and pct. 7 (agriculture and food industry), with effect from salary for January 2025 (art. LXV alin. (3)). For 2026 these employees are taxed like everyone else. The exemptions still in art. 60 are for people with a severe or marked disability (pct. 1) and for staff on qualifying research and development projects (pct. 3).
+**Sector exemptions are gone.** OUG 156/2024 art. LXIV pct. 7 repealed art. 60 pct. 2 (software developers), pct. 5 (construction) and pct. 7 (agriculture and food industry), with effect from salary for January 2025 (art. LXV alin. (3)). For 2026 these employees are taxed like everyone else. The salary exemptions still in art. 60 are for people with a severe or marked disability (pct. 1) and for staff on qualifying research and development projects (pct. 3).
 
 **Rent from own property.** Gross rent is the amount in the contract for the year, whether or not it was collected. The net is gross less a flat 20% (art. 84 alin. (1) and (3)), and tax is 10% of the net. When the tenant is a company or other entity that keeps accounts, it withholds the tax at each payment (art. 84^1). Otherwise the landlord declares and pays through the Declarația unică (art. 123 alin. (2)). The landlord registers the contract with ANAF within 30 days of signing it (art. 83 alin. (5)).
 
 **Investment income.**
 - Dividends and interest are taxed by final withholding (art. 97 alin. (1), (2), (7)).
 - Through a Romanian broker, each gain on shares is taxed at 3% (held 365 days or more) or 6% (under 365 days). Losses at a Romanian broker are lost; they cannot be carried forward (art. 97 alin. (8^5)).
-- Gains made through a foreign broker or by direct sale are netted over the year. The net gain is taxed at 16% in the Declarația unică, after carrying forward 70% of losses from the previous 5 years (art. 119, art. 123 alin. (12)).
+- Gains made through a foreign broker or by direct sale are netted over the year. The net gain is taxed at 16% in the Declarația unică, after carrying forward 70% of losses from the previous 5 years (art. 119, art. 123 alin. (1^2)).
 
-**CASS on non-salary income.** Add up the year's net rent, intellectual property income, investment income and other income. Dividends and interest count net of the tax withheld (art. 170 alin. (4)). If the total is at least 6 minimum wages (RON 24,300 for 2026), CASS is 10% of a fixed base: 6, 12 or 24 minimum wages, depending on where the total falls (art. 170 alin. (2)-(3)). Being an employee does not remove this charge. For 2026 the minimum wage in force on 1 January (RON 4,050) applies for the whole year, even though it rose in July.
+Broker gains: the ANAF consolidated Fiscal Code still prints 1% and 3% in art. 97 alin. (8^1), the rates set by Legea 141/2025 from 1 August 2025. That text has not been updated for Legea 239/2025 (Monitorul Oficial nr. 1160 of 15 December 2025), whose art. XII pct. 12 replaces them with 3% and 6%. Art. XIII alin. (1) lit. a) puts pct. 12 in force on 1 January 2026 and alin. (2) lit. c) applies it to transfers made from that date. The ANAF Brașov 2026 summary gives the same 3% and 6%. So 2026 gains through a Romanian broker are taxed at 3% or 6%.
+
+**CASS on non-salary income.** Add up the year's net rent, intellectual property income, investment income and other income. Dividends and interest count net of the tax withheld (art. 170 alin. (4)). If the total is at least 6 minimum wages (RON 24,300 for 2026), CASS is 10% of a fixed base: 6, 12 or 24 minimum wages, depending on where the total falls (art. 170 alin. (2)-(3)). Being an employee does not remove this charge. For 2026 the minimum wage in force on 1 January (RON 4,050) applies for the whole year, even though it rose in July (art. 135^1 alin. (3)). The return and payment are due by 25 May 2027 (art. 174^1 alin. (2) and (12)).
 
 ## Deadlines and filing
 
@@ -86,7 +88,7 @@ At a second employer there is no personal deduction: tax is 10% of gross less co
 | Salary tax and contributions (D112) | By the 25th of the month after payment; quarterly for some small employers | Employer (art. 80, 81) |
 | Salary from a foreign employer with no Romanian payroll | Monthly, by the 25th of the next month | Employee (art. 82 alin. (2)) |
 | Declarația unică for 2026 income | By 25 May 2027 | Individual, online via SPV (art. 122 alin. (3)) |
-| Payment of tax and CASS for 2026 | By 25 May 2027 | Individual (art. 123 alin. (7)) |
+| Payment of tax and CASS for 2026 | By 25 May 2027 | Individual (art. 123 alin. (7), art. 174^1 alin. (2)) |
 | Rental contract registration | Within 30 days of signing or changing it | Landlord (art. 83 alin. (5)) |
 | Redirecting up to 3.5% of salary tax to an NGO or church (form 230) | By 25 May 2027 | Employee (art. 78 alin. (6), art. 123^1) |
 
@@ -96,6 +98,7 @@ Art. 121 lets the annual budget law grant a discount of up to 10% for early paym
 
 - Late-payment interest: 0.02% a day from the day after the due date (Fiscal Procedure Code, Legea 207/2015, art. 174 alin. (5)).
 - Late-payment penalty: 0.01% a day, on top of the interest (art. 176 alin. (2)).
+- If the Declarația unică is not filed by 25 May 2027, interest on the 2026 income tax runs from 1 January 2027 instead of from the due date (art. 175 alin. (1) lit. d)). The same rule applies to CASS (art. 175 alin. (4)).
 - Tax not declared or declared wrong and found by ANAF in an assessment: a non-declaration penalty of 0.08% a day instead of the late-payment penalty. It is cut by 75% if the assessed amount is paid by its due date or rescheduled (art. 181 alin. (1)-(2)).
 - Filing the Declarația unică late: a fine of RON 500 to 1,000 for an individual (art. 336 alin. (1) lit. b), alin. (2) lit. d)).
 
@@ -206,8 +209,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Fiscal Code, Legea 227/2015, ANAF consolidated text (last update Legea 170/2026): art. 7, 60, 64, 66, 76-84^1, 97, 100-101, 119, 121-123, 131, 138, 156, 170, 174, 224 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
-| Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text: art. 174, 176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
+| Fiscal Code, Legea 227/2015, ANAF consolidated text (last update Legea 170/2026): art. 7, 60, 64, 66, 76-84^1, 97, 100-101, 116, 119, 121-123, 131, 135^1, 138, 156, 170, 174^1, 224 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
+| Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text: art. 174-176, 181, 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
 | OUG 89/2025, art. III (2026 tax-free amount for minimum-wage staff) | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
 | Legea 239/2025, art. XII-XIII (broker gains 3%/6%, 16% on other gains and crypto, rent and short-term rental) | https://static.anaf.ro/static/10/Anaf/legislatie/L_239_2025.pdf | 2026-10-23 |
 | Legea 141/2025, art. II pct. 5 and 41, art. VII (dividends 16% from 2026) | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
@@ -217,4 +220,4 @@ expected:
 | ANAF DGRFP Brașov, summary of 2026 tax changes (21 July 2026) | https://static.anaf.ro/static/10/Brasov/Brasov/modificari_fiscale_2026.pdf | 2026-10-23 |
 | ANAF DGRFP Galați, the 2026 minimum tax-free amount (21 January 2026) | https://static.anaf.ro/static/3/Galati/20260123122801_suma%20neimpozabila%20in%202026.pdf | 2026-10-23 |
 
-Not yet confirmed: the ANAF consolidated Fiscal Code still shows 1% and 3% in art. 97 alin. (8^1); this skill follows the amending law (Legea 239/2025 art. XII pct. 12, 3% and 6% from 1 January 2026) and the ANAF 2026 summary. The early-payment discount under art. 121 for tax paid in 2027 is not set yet. The construction-sector minimum wage for 2026 was not checked. CASS on pensions above RON 3,000 is not covered. Whether payroll reads the personal deduction band from gross salary including the RON 300 or 200 tax-free amount is our reading of art. 77; no ANAF example was found.
+Not yet confirmed: the early-payment discount under art. 121 for tax paid in 2027 is not set yet. The construction-sector minimum wage for 2026 was not checked. CASS on pensions above RON 3,000 is not covered. Whether payroll reads the personal deduction band from gross salary including the RON 300 or 200 tax-free amount: OUG 89/2025 and the ANAF notes are silent and no ANAF example was found.
