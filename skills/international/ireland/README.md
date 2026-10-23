@@ -4,10 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: ie-prsi-class-s
-partial:
-  IT-IND: "ie-cgt and ie-non-dom give CGT at 33% only; disposals from 7 October 2026 go at 31% under Financial Resolution No. 3 of 6 October 2026, provisional until Finance (No. 2) Bill 2026 is enacted"
-  IT-CORP: ie-corporation-tax has no rules for a non-resident company's Irish branch (s.25), its description contradicts its body (R&D 30%, KDB 6.25%), and gains are grossed up at 33% after 7 October 2026
-  SC: posted and cross-border workers (A1 and bilateral certificates) and Class K are referred out
+partial: {}
 ---
 
 # Ireland: tax pack
@@ -19,9 +16,9 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | ie-income-tax-form11, ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
-| IT-CORP, corporate income tax | ie-corporation-tax | source-cited draft |
+| IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | source-cited draft |
 | VAT | ireland-vat-return, ie-vat-return | source-cited draft |
-| SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI) | source-cited draft |
+| SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | source-cited draft |
 | PR, payroll withholding | ie-payroll | source-cited draft |
 | TP, transfer pricing | ie-transfer-pricing | source-cited draft |
 | XB, cross-border | ie-cross-border, ie-non-dom, ie-foreign-tax-and-withholding | source-cited draft |

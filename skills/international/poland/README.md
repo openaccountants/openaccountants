@@ -2,8 +2,6 @@
 jurisdiction: PL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  VAT: "poland-einvoice (KSeF invoice format) is still on tax year 2025 and says foreign businesses registered for Polish VAT must issue KSeF invoices from 1 April 2026, which VAT Act art. 106ga ust. 2 pkt 1 excludes; it also leaves out the PLN 10,000 a month carve-out of art. 145m"
 covered_by:
   XB: pl-cross-border
 ---
@@ -18,7 +16,7 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 |---|---|---|
 | IT-IND, individual income tax | pl-income-tax; pl-capital-gains covers investment income | source-cited draft |
 | IT-CORP, corporate income tax | pl-cit-corporate-tax | source-cited draft |
-| VAT | poland-vat-return (2026: PLN 240,000 exemption, JPK_V7, KSeF, split payment); pl-vat-return points to it; poland-einvoice covers the KSeF invoice format | source-cited draft |
+| VAT | poland-vat-return (2026: PLN 240,000 exemption, JPK_V7, KSeF, split payment); pl-vat-return points to it; poland-einvoice covers KSeF for 2026 (who is in and out, the 2026 carve-outs, offline modes, fines from 2027) | source-cited draft |
 | SC, social contributions | pl-zus-contributions (self-employed, social and health contributions); pl-payroll and pl-civil-law-contracts cover employee and contract ZUS for 2026 | source-cited draft |
 | PR, payroll withholding | pl-payroll (employees); pl-civil-law-contracts (umowa zlecenie, umowa o dzieło, board fees) | source-cited draft |
 | TP, transfer pricing | pl-transfer-pricing | source-cited draft |

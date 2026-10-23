@@ -1,683 +1,220 @@
 ---
 name: belgium-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Belgian VAT return (déclaration périodique TVA / periodieke BTW-aangifte) for a self-employed individual or small business in Belgium. Trigger on phrases like "prepare Belgian VAT return", "Belgian BTW", "déclaration TVA Belgique", "BTW-aangifte", "classify transactions for Belgian VAT", or any request involving Belgium VAT filing. This skill covers Belgium only, standard regime (normal/normal simplifié). Régime forfaitaire, partial exemption, margin scheme, and VAT units are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Belgian VAT work.
-version: 2.0
+description: "Belgian VAT (btw / TVA) for tax year 2026: who must charge it, the 21%, 12%, 6% and 0% rates (hotels and campsites moved from 6% to 12% on 1 March 2026), the small-business exemption at EUR 25,000 with its 10% tolerance and the rises to EUR 26,000-30,000 from 2027, the EU small-business scheme (EUR 100,000), monthly or quarterly returns (EUR 2,500,000 test), the 20th and 25th deadlines, the end of the summer holiday extension in 2026, refunds on request and the VAT provision account, the replacement return, mandatory structured B2B e-invoicing from 1 January 2026, late interest (8% in 2026) and the fines in Royal Decrees 41 and 44. Trigger on: Belgian VAT, btw-aangifte, déclaration TVA, Intervat, kwartaalaangifte, vrijstellingsregeling kleine ondernemingen, franchise TVA, vervangende aangifte, Peppol Belgium, btw-boete. Out of scope: e-invoice formats and Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax), corporate tax (be-corporate-tax)."
+version: 2.1
 jurisdiction: BE
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-23
+verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
+depends_on:
+  - vat-workflow-base
+  - eu-vat-directive
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Belgium VAT Return
-
-## Belgium VAT Return Skill (Déclaration Périodique / Periodieke Aangifte) v2.0
-
-## Section 1 — Quick reference
-
-**Read this whole section before classifying anything. The workflow runbook is in `vat-workflow-base` Section 1 — follow that runbook with this skill providing the country-specific content and `eu-vat-directive` providing the EU directive content.**
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Belgium (Koninkrijk België / Royaume de Belgique) |
-| Standard rate | 21% |
-| Reduced rates | 12% (social housing, restaurant meals including non-alcoholic drinks, certain energy products), 6% (basic foodstuffs, water, books, medicines, hotels, renovation of old residential buildings, passenger transport, cultural events) |
-| Zero rate | 0% (exports, intra-EU B2B supplies of goods, certain newspapers) |
-| Return form | Déclaration périodique à la TVA (grilles/cases 00–91) |
-| Filing portal | https://finances.belgium.be (MyMinfin / Intervat) |
-| Authority | SPF Finances / FOD Financiën |
-| Currency | EUR only |
-| Filing frequencies | Monthly (turnover > €2,500,000 or mandatory sectors); Quarterly (below threshold, standard) |
-| Deadline | 20th of the month following the period |
-| Companion skill (Tier 1, workflow) | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Companion skill (Tier 2, EU directive) | **eu-vat-directive v0.1 or later — MUST be loaded** |
-| Contributor | Open Accountants contributors |
-| Validation date | April 2026 |
-
-**Key grilles/cases table**
-
-| Grille | Meaning |
-| --- | --- |
-| 00 | Sales of goods and services at 0% (non-taxable/exempt with credit) |
-| 01 | Sales at 6% (base) |
-| 02 | Sales at 12% (base) |
-| 03 | Sales at 21% (base) |
-| 44 | Intra-EU services received (reverse charge base) |
-| 45 | Intra-EU services provided (base) |
-| 46 | Intra-EU goods supplied (base, 0%) |
-| 47 | Other exempt operations and operations with co-contractor reverse charge |
-| 48 | Credit notes issued (negative output) |
-| 49 | Credit notes received (negative input) |
-| 54 | Output VAT on grilles 01, 02, 03 |
-| 55 | Output VAT on intra-EU acquisitions and reverse charge (grilles 86, 88) |
-| 56 | Output VAT on co-contractor reverse charge |
-| 57 | Output VAT on imports with ET 14 licence |
-| 59 | Total output VAT |
-| 81 | Purchases of goods, raw materials, consumables (base) |
-| 82 | Purchases of services and diverse goods (base) |
-| 83 | Purchases of capital goods (investissements, base) |
-| 84 | Credit notes received on purchases |
-| 85 | Credit notes issued on sales |
-| 86 | Intra-EU acquisitions of goods and services (base, linked with grille 55) |
-| 87 | Other acquisitions (imports, etc.) |
-| 88 | Intra-EU services received (base, linked with grille 55) |
-| 59 | Total output VAT (sum of 54+55+56+57) |
-| 63 | Total deductible input VAT (voorbelasting / TVA déductible) |
-| 71 | Net VAT payable (if 59 > 63) |
-| 72 | Net VAT credit (if 63 > 59) |
-
-**Conservative defaults — Belgium-specific values**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 21% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Belgium |
-| Unknown B2B vs B2C status for EU customer | B2C, charge 21% |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge from non-EU |
-| Unknown blocked-input status | Blocked |
-| Unknown whether transaction is in scope | In scope |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | €5,000 |
-| HIGH tax-delta on a single conservative default | €400 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net VAT position | €10,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-**Minimum viable** — bank statement for the period. Acceptable from: BNP Paribas Fortis, KBC, Belfius, ING Belgium, CBC, AXA Bank, Argenta, Crelan, Revolut Business, Wise Business, or any other.
-
-**Recommended** — sales invoices (especially intra-EU and co-contractor reverse charge), purchase invoices above €400, the client's TVA/BTW number (BE + 10 digits).
-
-**Ideal** — complete invoice register, prior period return, reconciliation of grille 72 credit.
-
-**Refusal policy if minimum is missing — SOFT WARN.** Same as Malta v2.0 template.
-
-### Belgium-specific refusal catalogue
-
-- **R-BE-1** — Trigger: client is under the flat-rate scheme (forfaitaire regeling). Message: "Forfaitaire taxpayers have simplified obligations with pre-determined profit margins. This skill covers the normal regime only."  _(R-BE-1 — Régime forfaitaire.)_
-- **R-BE-2** — Trigger: client under the small enterprise exemption (turnover < €25,000). Message: "Small enterprise exemption clients do not charge VAT and cannot recover input VAT. They file a special listing only (listing clients), not the periodic return. This skill covers the normal regime."  _(R-BE-2 — Small enterprise exemption (vrijstellingsregeling / franchise).)_
-- **R-BE-3** — Trigger: both taxable and exempt supplies, non-de-minimis. Message: "You make both taxable and exempt supplies. Input VAT must be apportioned. Please use a comptable-fiscaliste."  _(R-BE-3 — Partial exemption (pro rata).)_
-- **R-BE-4** — Trigger: second-hand goods, art, antiques. Message: "Margin scheme requires per-item margin computation. Out of scope."  _(R-BE-4 — Margin scheme (régime de la marge / margeregeling).)_
-- **R-BE-5** — Trigger: client is part of a BTW-eenheid. Message: "BTW-eenheden require consolidation. Out of scope."  _(R-BE-5 — VAT unit (unité TVA / BTW-eenheid).)_
-- **R-BE-6** — Trigger: non-resident with fiscal representative. Message: "Non-resident with fiscal representative — out of scope."  _(R-BE-6 — Fiscal representative.)_
-- **R-BE-7** — Trigger: new construction or property. Message: "Real estate VAT is complex. Please use a comptable-fiscaliste."  _(R-BE-7 — Real estate (TVA immobilière).)_
-- **R-BE-8** — Trigger: user asks about IPP/ISOC instead of TVA/BTW. Message: "This skill handles Belgian VAT only."  _(R-BE-8 — Income tax instead of VAT.)_
-
-## Section 3 — Supplier pattern library (the lookup table)
-
-Match by case-insensitive substring. If none match, fall through to Section 5.
-
-### 3.1 Belgian banks (fees exempt — exclude)
-
-**Belgian banks table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BNP PARIBAS FORTIS, FORTIS | EXCLUDE for bank charges | Financial service, exempt |
-| KBC, KBC BANK | EXCLUDE for bank charges | Same |
-| BELFIUS, DEXIA | EXCLUDE for bank charges | Same |
-| ING BELGIQUE, ING BELGIE, ING BE | EXCLUDE for bank charges | Same |
-| CBC | EXCLUDE for bank charges | Same |
-| ARGENTA, CRELAN | EXCLUDE for bank charges | Same |
-| AXA BANK, AGIEAS | EXCLUDE for bank charges | Same |
-| REVOLUT, WISE, N26 (fee lines) | EXCLUDE | Check for separate taxable subscriptions |
-| INTERETS, RENTE, INTEREST | EXCLUDE | Interest, out of scope |
-| PRET, LENING, EMPRUNT | EXCLUDE | Loan principal, out of scope |
-
-### 3.2 Belgian government, regulators, and statutory bodies (exclude entirely)
-
-**Government bodies table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SPF FINANCES, FOD FINANCIEN | EXCLUDE | Tax payment (TVA, IPP, ISOC) |
-| MINFIN, ADMINISTRATION FISCALE | EXCLUDE | Tax payment |
-| ONSS, RSZ | EXCLUDE | Social security contributions (ONSS/RSZ) |
-| CAISSE D'ASSURANCES SOCIALES, SOCIAAL VERZEKERINGSFONDS | EXCLUDE | Social security for self-employed |
-| UCM, ACERTA, PARTENA, LIANTIS, SECUREX, XERIUS | EXCLUDE | Social security funds for self-employed |
-| GREFFE, GREFFIER | EXCLUDE | Court fees |
-| BCE, KBO, BANQUE CARREFOUR | EXCLUDE | Business register fees |
-| PROVINCE, COMMUNE, GEMEENTE | EXCLUDE | Local government fees |
-
-### 3.3 Belgian utilities
-
-**Belgian utilities table**
-
-| Pattern | Treatment | Grille | Notes |
-| --- | --- | --- | --- |
-| ENGIE ELECTRABEL, ELECTRABEL | Domestic 21% or 6% | 82/63 (input) | Electricity: 21% standard; gas/electricity may be 6% (temporary energy measures — verify current rate) |
-| LUMINUS | Domestic 21% or 6% | 82/63 | Energy |
-| TOTALENERGIES BELGIQUE | Domestic 21% | 82/63 | Energy |
-| PROXIMUS | Domestic 21% | 82/63 (input) | Telecoms — overhead |
-| TELENET | Domestic 21% | 82/63 (input) | Telecoms/cable/broadband |
-| ORANGE BELGIQUE, ORANGE BE | Domestic 21% | 82/63 | Mobile telecoms |
-| BASE, MOBILE VIKINGS | Domestic 21% | 82/63 | Mobile telecoms |
-| SWDE, VIVAQUA | Domestic 6% | 82/63 | Water supply at reduced rate |
-
-### 3.4 Insurance (exempt — exclude)
-
-**Insurance table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AG INSURANCE, AG | EXCLUDE | Insurance, exempt |
-| ETHIAS, AXA BELGIQUE | EXCLUDE | Same |
-| P&V, VIVIUM, BALOISE | EXCLUDE | Same |
-| ASSURANCE, VERZEKERING | EXCLUDE | All insurance exempt |
-| MUTUELLE, MUTUALITEIT | EXCLUDE | Health insurance mutual, exempt |
-
-### 3.5 Post and logistics
-
-**Post and logistics table**
-
-| Pattern | Treatment | Grille | Notes |
-| --- | --- | --- | --- |
-| BPOST (standard mail) | EXCLUDE for standard postage |  | Universal postal service, exempt |
-| BPOST (parcels) | Domestic 21% | 82/63 | Non-universal services taxable |
-| DHL EXPRESS BELGIQUE | Domestic 21% | 82/63 | Express courier |
-| UPS BELGIUM, TNT BELGIUM | Domestic 21% | 82/63 | Courier |
-| MONDIAL RELAY, COLIS PRIVE | Domestic 21% | 82/63 | Parcel delivery |
-
-### 3.6 Transport (Belgium domestic)
-
-**Transport table**
-
-| Pattern | Treatment | Grille | Notes |
-| --- | --- | --- | --- |
-| SNCB, NMBS | Domestic 6% | 82/63 (input) | Rail transport at reduced rate |
-| STIB, MIVB | Domestic 6% | 82/63 (input) | Brussels public transport |
-| TEC | Domestic 6% | 82/63 (input) | Walloon public transport |
-| DE LIJN | Domestic 6% | 82/63 (input) | Flemish public transport |
-| UBER BE, UBER BELGIUM | Domestic 6% (transport) | 82/63 | Ride-hailing |
-| TAXI, TAXI VERTS | Domestic 6% | 82/63 | Local taxi, reduced rate |
-| BRUSSELS AIRLINES (domestic/Schengen) | Domestic 21% | 82/63 | Domestic/intra-EU flights at 21% |
-| BRUSSELS AIRLINES, RYANAIR (international non-EU) | EXCLUDE / 0% |  | International flights exempt |
-
-### 3.7 Food retail (blocked unless hospitality business)
-
-**Food retail table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| COLRUYT, COLRUYT GROUP | Default BLOCK input VAT | Personal provisioning |
-| DELHAIZE, AHOLD DELHAIZE | Default BLOCK | Same |
-| CARREFOUR BELGIQUE, ALDI, LIDL | Default BLOCK | Same |
-| MATCH, PROXY DELHAIZE, SPAR | Default BLOCK | Same |
-| RESTAURANT, BRASSERIE, CAFE | Default BLOCK | Entertainment — see Section 5.12 |
-
-### 3.8 SaaS — EU suppliers (reverse charge, grille 88/55 for services, 86/55 for goods)
-
-**EU SaaS suppliers table**
-
-| Pattern | Billing entity | Grille | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) | 88/55 + 63 | EU service reverse charge |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) | 88/55 + 63 | Same |
-| ADOBE | Adobe Systems Software Ireland Ltd (IE) | 88/55 + 63 | Same |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 88/55 + 63 | Same |
-| LINKEDIN (paid) | LinkedIn Ireland Unlimited (IE) | 88/55 + 63 | Same |
-| SPOTIFY TECHNOLOGY | Spotify AB (SE) | 88/55 + 63 | EU reverse charge |
-| DROPBOX | Dropbox International Unlimited (IE) | 88/55 + 63 | Same |
-| SLACK | Slack Technologies Ireland Ltd (IE) | 88/55 + 63 | Same |
-| ATLASSIAN (Jira, Confluence) | Atlassian Network Services BV (NL) | 88/55 + 63 | EU reverse charge |
-| ZOOM | Zoom Video Communications Ireland Ltd (IE) | 88/55 + 63 | Same |
-| STRIPE (subscription) | Stripe Technology Europe Ltd (IE) | 88/55 + 63 | Transaction fees exempt — see 3.11 |
-
-### 3.9 SaaS — non-EU suppliers (reverse charge, grille 87/56 area)
-
-**Non-EU SaaS suppliers table**
-
-| Pattern | Billing entity | Grille | Notes |
-| --- | --- | --- | --- |
-| AWS (standard) | AWS EMEA SARL (LU) — check | 88/55 + 63 | LU → EU reverse charge |
-| NOTION | Notion Labs Inc (US) | 87 + 56 + 63 | Non-EU reverse charge |
-| ANTHROPIC, CLAUDE | Anthropic PBC (US) | 87 + 56 + 63 | Non-EU reverse charge |
-| OPENAI, CHATGPT | OpenAI Inc (US) | 87 + 56 + 63 | Non-EU reverse charge |
-| GITHUB (standard) | GitHub Inc (US) | 87 + 56 + 63 | Check if billed by IE entity |
-| FIGMA | Figma Inc (US) | 87 + 56 + 63 | Non-EU reverse charge |
-| CANVA | Canva Pty Ltd (AU) | 87 + 56 + 63 | Non-EU reverse charge |
-| HUBSPOT | HubSpot Inc (US) or IE — check | 87/56 or 88/55 | Depends on billing entity |
-| TWILIO | Twilio Inc (US) | 87 + 56 + 63 | Non-EU reverse charge |
-
-### 3.10 SaaS — the exception
-
-**SaaS exception table**
-
-| Pattern | Treatment | Why |
-| --- | --- | --- |
-| AWS EMEA SARL | EU reverse charge 88/55 + 63 (LU entity) | If invoice shows Belgian BTW, treat as domestic 21%. |
-
-### 3.11 Payment processors
-
-**Payment processors table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| STRIPE (transaction fees) | EXCLUDE (exempt) | Financial services |
-| PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
-| STRIPE (subscription) | EU reverse charge 88/55 + 63 | IE entity |
-| MOLLIE, ADYEN | Check invoice | Dutch entities — typically via NL entity |
-| SUMUP, SQUARE, ZETTLE | Check invoice | If Belgian: domestic 21%; if EU: reverse charge |
-
-### 3.12 Professional services (Belgium)
-
-**Professional services table**
-
-| Pattern | Treatment | Grille | Notes |
-| --- | --- | --- | --- |
-| COMPTABLE, BOEKHOUDER | Domestic 21% | 82/63 | Always deductible |
-| EXPERT COMPTABLE, BEDRIJFSREVISOR | Domestic 21% | 82/63 | Audit/accounting |
-| AVOCAT, ADVOCAAT | Domestic 21% | 82/63 | Business legal matters |
-| NOTAIRE, NOTARIS | Domestic 21% | 82/63 | Business notarial fees |
-| FISCALISTE, BELASTINGCONSULENT | Domestic 21% | 82/63 | Tax adviser |
-
-### 3.13 Payroll and social security (exclude entirely)
-
-**Payroll and social security table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ONSS, RSZ | EXCLUDE | Social security employer contributions |
-| PRECOMPTE PROFESSIONNEL, BEDRIJFSVOORHEFFING | EXCLUDE | Payroll tax withholding |
-| SALAIRE, LOON, WEDDE | EXCLUDE | Wages |
-| PENSION, PENSIOEN | EXCLUDE | Pension contributions |
-| UCM, ACERTA, PARTENA, SECUREX | EXCLUDE | Self-employed social contributions |
-
-### 3.14 Property and rent
-
-**Property and rent table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| LOYER COMMERCIAL, HUUR BEDRIJFSPAND | Domestic 21% | Commercial lease with TVA/BTW option |
-| LOYER, HUUR (residential) | EXCLUDE | Residential lease exempt |
-| PRECOMPTE IMMOBILIER, ONROERENDE VOORHEFFING | EXCLUDE | Property tax |
-| CADASTRE, KADASTER | EXCLUDE | Government |
-
-### 3.15 Internal transfers and exclusions
-
-**Internal transfers table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| VIREMENT INTERNE, INTERNE OVERBOEKING | EXCLUDE | Internal movement |
-| DIVIDENDE, DIVIDEND | EXCLUDE | Out of scope |
-| REMBOURSEMENT PRET, AFLOSSING | EXCLUDE | Loan repayment |
-| RETRAIT, GELDOPNAME | TIER 2 — ask | Default exclude |
-| APPORT, INBRENG | EXCLUDE | Owner injection |
-
-## Section 4 — Worked examples
-
-Six fully worked classifications from a hypothetical Belgium-based self-employed IT consultant.
-
-### Example 1 — Non-EU SaaS reverse charge (Notion)
-
-**Input line:**
-`03.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; EUR 14.68`
-
-**Reasoning:**
-Notion Labs Inc is US (Section 3.9). Non-EU reverse charge. Client self-assesses: output VAT on grille 56, input VAT on grille 63. Base on grille 87. Net effect zero.
-
-**Example 1 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Grille (input) | Grille (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -14.68 | -14.68 | 3.08 | 21% | 63 | 56 (base 87) | N | — | — |
-
-### Example 2 — EU service, reverse charge (Google Ads)
-
-**Input line:**
-`10.04.2026 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Ads April 2026 ; -850.00 ; EUR`
-
-**Reasoning:**
-IE entity — EU service reverse charge. Base on grille 88, output VAT on grille 55, input VAT on grille 63. Net zero.
-
-**Example 2 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Grille (input) | Grille (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | GOOGLE IRELAND LIMITED | -850.00 | -850.00 | 178.50 | 21% | 63 | 55 (base 88) | N | — | — |
-
-### Example 3 — Entertainment, treatment in Belgium
-
-**Input line:**
-`15.04.2026 ; COMME CHEZ SOI BRUXELLES ; DEBIT ; Business dinner ; -220.00 ; EUR`
-
-**Reasoning:**
-Restaurant transaction. In Belgium, the TVA on restaurant meals at 12% is deductible if the meal has a business purpose and is properly documented (names, business reason). However, frais de réception (entertainment of external guests) at 50% deductible for income tax but fully deductible for VAT if documented. Personal meals: blocked. Default: block, flag for reviewer.
-
-**Example 3 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Grille | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | COMME CHEZ SOI BRUXELLES | -220.00 | -220.00 | 0 | — | — | Y | Q1 | "Restaurant: TVA deductible if business purpose. Confirm and provide names." |
-
-### Example 4 — Capital goods (investissement)
-
-**Input line:**
-`18.04.2026 ; DELL BELGIQUE SA ; DEBIT ; Laptop XPS 15 ; -1,595.00 ; EUR`
-
-**Reasoning:**
-Capital goods in Belgium go to grille 83 (investissements / investeringen). There is no explicit minimum threshold for capitalisation for TVA purposes, but assets used for more than one year are typically treated as capital goods. Input VAT on grille 63. Subject to herzieningsregeling (5 years movable, 15 years immovable).
-
-**Example 4 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Grille | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | DELL BELGIQUE SA | -1,595.00 | -1,318.18 | -276.82 | 21% | 83/63 | N | — | — |
-
-### Example 5 — EU B2B service sale
-
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice BE-2026-018 IT consultancy ; +3,500.00 ; EUR`
-
-**Reasoning:**
-B2B services to Germany — place of supply is customer's country. Report on grille 45 (services intracommunautaires fournis). No output VAT. Verify German USt-IdNr on VIES.
-
-**Example 5 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Grille | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +3,500.00 | +3,500.00 | 0 | 0% | 45 | Y | Q2 (HIGH) | "Verify German USt-IdNr on VIES" |
-
-### Example 6 — Motor vehicle, partial recovery
-
-**Input line:**
-`28.04.2026 ; ARVAL BELGIUM ; DEBIT ; Lease payment BMW 3 Series ; -650.00 ; EUR`
-
-**Reasoning:**
-Car lease. In Belgium, TVA on cars is deductible based on professional use, capped at a maximum of 50% (Art. 45 §2 CTVA). The default professional use percentage can be calculated using the formula: (distance domicile-travail x 2 x 200 working days + private km) / total km. For mixed-use vehicles, the 50% cap applies. Default: 50% deductible (most common for self-employed).
-
-**Example 6 output table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Grille | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | ARVAL BELGIUM | -650.00 | -537.19 | -112.81 (x 50% = -56.40 deductible) | 21% | 82/63 (partial) | Y | Q3 | "Vehicle: max 50% TVA deductible. Confirm professional use %." |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 21% (Art. 37 §1 CTVA)
-
-- **Standard rate 21%** — Default rate. Sales → grille 03/54. Purchases → grille 81 or 82 or 83 / grille 63.  _(Art. 37 §1 CTVA)_
-
-### 5.2 Reduced rate 12% (Table B, Annex to AR no. 20)
-
-- **Reduced rate 12%** — Restaurant meals (food + non-alcoholic drinks), social housing, certain energy products (margarine). Sales → grille 02/54. Purchases → grille 81 or 82 / 63.  _(Table B, Annex to AR no. 20)_
-
-### 5.3 Reduced rate 6% (Table A, Annex to AR no. 20)
-
-- **Reduced rate 6%** — Basic foodstuffs, water supply, books, medicines, hotels, renovation of old residential buildings (>10 years), passenger transport, cultural events (concerts, theatre, museums), social housing rehabilitation. Sales → grille 01/54. Purchases → grille 81 or 82 / 63.  _(Table A, Annex to AR no. 20)_
-
-### 5.4 Zero rate
-
-- **Zero rate** — Exports → grille 00 (with export evidence). Intra-EU goods → grille 46 (with VIES). Intra-EU B2B services → grille 45.  _(Section 5.4)_
-
-### 5.5 Exempt without credit (Art. 44 CTVA)
-
-- **Exempt without credit** — Medical, education, insurance, financial services, residential rent, postal universal service. If significant → R-BE-3 refuses.  _(Art. 44 CTVA)_
-
-### 5.6 Local purchases
-
-- **Local purchases** — Input VAT on compliant invoice. Goods → grille 81, services → grille 82, capital goods → grille 83. Input VAT → grille 63.  _(Section 5.6)_
-
-### 5.7 Co-contractor reverse charge (medecontractant / cocontractant)
-
-- **Co-contractor reverse charge** — Belgium has a domestic co-contractor reverse charge for construction work (Art. 20 AR no. 1), real estate transactions, and certain other sectors. The customer self-assesses VAT. Base → grille 87, output VAT → grille 56, input → grille 63. Invoices must mention "TVA due par le cocontractant" or "BTW verlegd".  _(Art. 20 AR no. 1)_
-
-### 5.8 Reverse charge — EU services (Art. 21 §2 CTVA)
-
-- **Reverse charge — EU services** — EU service: base → grille 88, output VAT → grille 55, input → grille 63. Net zero.  _(Art. 21 §2 CTVA)_
-
-### 5.9 Reverse charge — EU goods (intracommunautaire verwervingen)
-
-- **Reverse charge — EU goods** — EU goods: base → grille 86, output VAT → grille 55, input → grille 63.  _(Section 5.9)_
-
-### 5.10 Reverse charge — non-EU
-
-- **Reverse charge — non-EU** — Non-EU services/goods: base → grille 87, output VAT → grille 56, input → grille 63. If goods import with ET 14 licence → base grille 87, output → grille 57.  _(Section 5.10)_
-
-### 5.11 Capital goods (investissements)
-
-- **Capital goods** — Assets used for >1 year → grille 83. Subject to herzieningstermijn (5 years movable, 15 years immovable). No explicit minimum value threshold for TVA capitalisation.  _(Section 5.11)_
-
-### 5.12 Blocked/restricted input VAT
-
-- **Blocked/restricted input VAT rules** — - Motor vehicles: max 50% deductible (Art. 45 §2 CTVA). Professional use formula or lump sum. - Fuel: follows vehicle deduction percentage (max 50%). - Restaurant meals: TVA deductible if business purpose documented. Alcohol excluded. - Entertainment/reception (frais de réception): TVA fully deductible for VAT purposes (unlike 50% income tax deduction). BUT personal entertainment blocked. - Gifts: TVA deductible if unit value ≤ €50 (excluding VAT) per occasion. - Tobacco: not deductible. - Hotel accommodation for staff: not deductible. For clients/third parties: deductible.  _(Art. 45 §2 CTVA)_
-
-### 5.13 Co-contractor reverse charge (construction detail)
-
-- **Co-contractor reverse charge construction detail** — For registered construction contractors: when a registered contractor provides construction services to another registered contractor, the customer self-assesses. The supplier invoices without VAT and mentions "BTW verlegd — medecontractant" or "Autoliquidation — Art. 20 AR n° 1". This is uniquely Belgian — not found in all EU member states.  _(Art. 20 AR n° 1)_
-
-### 5.14 Sales — local domestic
-
-- **Sales — local domestic** — Charge 21%, 12%, or 6%. Map to grille 01/02/03 + 54.  _(Section 5.14)_
-
-### 5.15 Sales — cross-border B2C
-
-- **Sales — cross-border B2C** — Above €10,000 EU-wide → R-EU-5 OSS refusal fires.  _(Section 5.15)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — Pattern: TOTAL, SHELL, Q8, TEXACO. Default: 50% deductible (vehicle cap). Question: "What is the professional use percentage?"  _(Section 6.1)_
-
-### 6.2 Restaurants and entertainment
-
-- **Restaurants and entertainment** — Pattern: restaurant, brasserie, café. Default: block. Question: "Business meal? Names and purpose? Note: alcohol VAT never deductible."  _(Section 6.2)_
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing entities** — Default: non-EU reverse charge (87/56/63). Question: "Check invoice for legal entity."  _(Section 6.3)_
-
-### 6.4 Round-number owner transfers
-
-- **Round-number owner transfers** — Default: exclude. Question: "Customer payment, own money, or loan?"  _(Section 6.4)_
-
-### 6.5 Incoming from individuals
-
-- **Incoming from individuals** — Default: domestic B2C 21%. Question: "Sale? Business or consumer?"  _(Section 6.5)_
-
-### 6.6 Foreign counterparty incoming
-
-- **Foreign counterparty incoming** — Default: domestic 21%. Question: "B2B with VAT number, B2C, goods or services, country?"  _(Section 6.6)_
-
-### 6.7 Large one-off purchases
-
-- **Large one-off purchases** — Default: grille 83 if capital good. Question: "Confirm invoice amount."  _(Section 6.7)_
-
-### 6.8 Mixed-use phone, internet
-
-- **Mixed-use phone, internet** — Default: 0%. Question: "Dedicated business or mixed?"  _(Section 6.8)_
-
-### 6.9 Outgoing to individuals
-
-- **Outgoing to individuals** — Default: exclude. Question: "Contractor, wages, refund, or personal?"  _(Section 6.9)_
-
-### 6.10 Cash withdrawals
-
-- **Cash withdrawals** — Default: exclude. Question: "What was cash used for?"  _(Section 6.10)_
-
-### 6.11 Rent
-
-- **Rent** — Default: no VAT (residential). Question: "Commercial with TVA option?"  _(Section 6.11)_
-
-### 6.12 Foreign hotel
-
-- **Foreign hotel** — Default: exclude from input. Question: "Business trip?"  _(Section 6.12)_
-
-### 6.13 Airbnb income
-
-- **Airbnb income** — Default: [T2] flag. Question: "Duration? Tourist accommodation?"  _(Section 6.13)_
-
-### 6.14 Co-contractor construction reverse charge
-
-- **Co-contractor construction reverse charge** — Pattern: construction companies, entrepreneurs. Default: [T2] flag. Question: "Is this construction work subject to co-contractor reverse charge (medecontractant)?"  _(Section 6.14)_
-
-### 6.15 Platform sales
-
-- **Platform sales** — Default: if EU cross-border above €10,000 → R-EU-5. Otherwise: domestic 21%. Question: "Sell outside Belgium?"  _(Section 6.15)_
-
-## Section 7 — Excel working paper template (Belgium-specific)
-
-The base specification is in `vat-workflow-base` Section 3.
-
-### Sheet "Transactions"
-
-Column H accepts grille codes from Section 1.
-
-### Sheet "Grille Summary"
-
-**Grille Summary formulas**
-
-| 01 | Sales 6% base | =SUMIFS(...) |
-| 02 | Sales 12% base | =SUMIFS(...) |
-| 03 | Sales 21% base | =SUMIFS(...) |
-| 45 | Intra-EU services provided | =SUMIFS(...) |
-| 46 | Intra-EU goods supplied | =SUMIFS(...) |
-| 54 | Output VAT on domestic sales | =01*0.06 + 02*0.12 + 03*0.21 |
-| 55 | Output VAT on EU reverse charge | =(86+88)*0.21 |
-| 56 | Output VAT on non-EU/co-contractor | =87*0.21 |
-| 59 | Total output VAT | =54+55+56+57 |
-| 81 | Purchases goods base | =SUMIFS(...) |
-| 82 | Purchases services base | =SUMIFS(...) |
-| 83 | Capital goods base | =SUMIFS(...) |
-| 86 | EU goods acquired base | =SUMIFS(...) |
-| 88 | EU services received base | =SUMIFS(...) |
-| 87 | Other acquisitions base | =SUMIFS(...) |
-| 63 | Total deductible input VAT | =SUM(input VAT) |
-| 71 | Net payable | =MAX(0, 59-63) |
-| 72 | Net credit | =MAX(0, 63-59) |
-
-### Mandatory recalc step
-
-```bash
-python /mnt/skills/public/xlsx/scripts/recalc.py /mnt/user-data/outputs/belgium-vat-<period>-working-paper.xlsx
+# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.1
+
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
+
+**What this skill does.** It sets out the law layer of Belgian VAT for 2026: who is in, the rates, the small-business exemption, return frequency, deadlines, refunds, e-invoicing and penalties. Figures come from the VAT Code (Wetboek van de belasting over de toegevoegde waarde, "WBTW", Law of 3 July 1969) and its Royal Decrees (KB nr. 1, 20, 41 and 44), read in the official coordination on FisconetPlus, from amending laws in the Belgisch Staatsblad, and from FOD Financiën pages.
+
+**Sibling skills.** [be-vat-return](be-vat-return.md) is a pointer to this file. [belgium-einvoice](belgium-einvoice.md) covers Peppol and invoice formats. [belgium-bookkeeping](belgium-bookkeeping.md), [be-income-tax](be-income-tax.md) and [be-corporate-tax](be-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
+
+## Who this applies to
+
+- **Taxable persons.** Anyone who carries on an economic activity and supplies goods or services in Belgium for consideration. Companies, sole traders and foreign businesses supplying in Belgium are all in.
+- **Who files the periodic return.** Every taxable person with a right to deduct files a periodic return (WBTW art. 53 § 1). No return is filed by a business under the small-business exemption, under the special scheme for farmers, or making only exempt supplies under art. 44 with no right to deduct. A business under the small-business exemption still files the start, change and end-of-activity declarations (art. 53 § 1, second paragraph). The others are listed on the FOD Financiën periodic return page.
+- **Small-business exemption (vrijstellingsregeling / franchise).** A business established in Belgium whose annual turnover in Belgium does not exceed EUR 25,000 may choose not to charge VAT (art. 56ter § 1). The limit is cut pro rata for a business that starts during the year, by the days from 1 January to the start date. Joint owners count their turnover together; spouses with separate activities count separately. The business must notify the VAT administration in advance. It cannot deduct input VAT (art. 56bis § 4). It reports its annual turnover for the previous year before 31 March (for 2025: before 31 March 2026; FOD Financiën, btw-kalender).
+- **Who cannot use the exemption.** VAT units; businesses that regularly do construction work (except some services by individuals through platforms), businesses that must issue a till receipt from a registered cash system, and dealers in scrap and waste (art. 56bis § 2). The exemption also never covers art. 8 transactions, intra-EU supplies of new means of transport, margin-scheme supplies (art. 58 §§ 1-2), undeclared or unlawful transactions, or hotel-type furnished accommodation under art. 44 § 3, 2°, a), third dash (except some supplies by individuals under art. 50 § 4) (art. 56bis § 3).
+- **Crossing the limit.** If the year's turnover exceeds EUR 25,000 by 10% or less (up to EUR 27,500), the business keeps the exemption for that year. If it exceeds it by more than 10%, the exemption ends from that moment. A business that exceeded the limit in the previous year cannot use the exemption for the following calendar year (art. 56decies § 1).
+- **Limits already legislated for later years.** EUR 26,000 for 2027, EUR 27,000 for 2028, EUR 28,000 for 2029, EUR 29,000 for 2030 and EUR 30,000 from 2031 (art. 56ter § 1 as replaced by art. 26 of the Law of 23 September 2026, in force 1 January 2027).
+- **EU small-business scheme.** A business established in another EU state can use the Belgian exemption if its EU turnover is at most EUR 100,000 and its Belgian turnover at most EUR 25,000. It notifies its home state, which issues a number with the suffix "EX" (art. 56ter § 2). It loses the scheme once EU turnover exceeds EUR 100,000 (art. 56decies § 2). It does not register or file Belgian returns for the exempt supplies (art. 56septies § 1). A Belgian business can use another state's exemption after prior notice to the Belgian administration and gets a Belgian number with the suffix "EX" (art. 56quater).
+- **Out of scope here.** The flat-rate scheme (forfaitaire regeling, art. 56 and KB nr. 2), farmers' special scheme (art. 57), margin schemes, VAT units, travel agents and bankrupt estates. Refer them.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 21% | 2026 | KB nr. 20 art. 1, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 |
+| Reduced rate, Table B (restaurant and catering services, excluding drinks; furnished accommodation and campsites from 1 March 2026; other listed items) | 12% | 2026 | KB nr. 20 art. 1 and Table B, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 |
+| Reduced rate, Table A (food, water, medicines and medical devices, books and newspapers, passenger transport, cultural and sport admission, work on private homes under conditions, and other listed items) | 6% | 2026 | KB nr. 20 art. 1 and Table A, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 |
+| Zero rate, Table C (certain periodical publications and other listed items) | 0% | 2026 | KB nr. 20 art. 1 and Table C, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 |
+| Hotels (furnished accommodation, with or without breakfast) and campsites: from 6% to 12% | 12% from 1 March 2026 | 2026 | KB 14 February 2026 art. 2, 4 and 5, https://www.ejustice.just.fgov.be/eli/besluit/2026/02/14/2026001322/staatsblad |
+| Pesticides and plant-protection products: from 12% to 21% | 21% from 1 March 2026 | 2026 | KB 14 February 2026 art. 3 and 5, https://www.ejustice.just.fgov.be/eli/besluit/2026/02/14/2026001322/staatsblad |
+| Heat pumps for heating supplied and installed in, on or next to homes, 1 January 2026 to 31 December 2030, for end consumers and private dwellings; not when combined with a non-electric heater on the same system | 6% | 2026 | KB nr. 20 art. 1quater/1, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 |
+| Small-business exemption: annual turnover in Belgium | EUR 25,000 | 2026 | WBTW art. 56ter § 1, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/6191791d-e4d1-4829-b8f1-56c7a6892136 |
+| Tolerance: exemption kept for the year if the limit is exceeded by no more than | 10% (EUR 27,500) | 2026 | WBTW art. 56decies § 1, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/83f1a474-d23d-446b-ac69-284f8909b300 |
+| Small-business exemption limit for 2027 / 2028 / 2029 / 2030 / 2031 onwards | EUR 26,000 / 27,000 / 28,000 / 29,000 / 30,000 | 2027-2031 | Law of 23 September 2026 art. 26-27, https://www.ejustice.just.fgov.be/eli/wet/2026/09/23/2026007237/staatsblad |
+| EU small-business scheme: EU-wide turnover cap | EUR 100,000 | 2026 | WBTW art. 56ter § 2, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/6191791d-e4d1-4829-b8f1-56c7a6892136 |
+| Quarterly returns allowed if annual turnover, excluding VAT, for the whole activity does not exceed | EUR 2,500,000 | 2026 | KB nr. 1 art. 17 § 2, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c69c7ee9-8e6d-48da-b9f7-c23cb025a777 |
+| Monthly EU sales listing (and so monthly returns) once intra-EU supplies in a quarter, or one of the four before, exceed | EUR 50,000 | 2026 | FOD Financiën, periodic return page, https://financien.belgium.be/nl/ondernemingen/btw/aangifte/periodieke-aangifte |
+| Replacement return when no return is filed: highest grid 71 of the last 12 months, and at least | EUR 2,100 | 2026 | WBTW art. 53 § 1ter, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/773cb22d-053e-4d4d-ae1f-7ddadab87d78 |
+| Input VAT on cars and their costs: maximum deduction | 50% | 2026 | WBTW art. 45 § 2, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/58a466d6-c626-4369-854f-add149c06034 |
+| Late payment interest (fiscal rate 4% plus 4 points) | 8% a year | 2026 | WBTW art. 91 § 1; FOD Financiën, payment page, https://financien.belgium.be/nl/ondernemingen/btw/betaling-teruggave/betaling |
+| Interest paid by the State on late refunds (late rate minus 2 points) | 6% a year | 2026 | WBTW art. 91 § 4, https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/87160bad-16b2-40ce-9abf-756a527f77a9 |
+
+## The taxable base
+
+- **What is taxed.** Supplies of goods and services in Belgium, intra-EU acquisitions, imports, and services bought from abroad where the Belgian customer pays the VAT. The base is the consideration excluding VAT.
+- **Exempt without deduction.** The supplies listed in art. 44 (for example medical care, education, most financial and insurance services, letting of immovable property). A business with only these supplies files no periodic return.
+- **Domestic reverse charge.** The customer pays the VAT on construction work (werk in onroerende staat) and the related installations listed in KB nr. 1 art. 20, when the customer itself files periodic returns. The supplier's invoice carries no VAT.
+- **Input VAT.** Deductible on purchases used for taxable supplies (art. 45 § 1). Limited to 50% on cars used to carry people or goods by road and on goods and services for them, with exceptions for some vehicle types listed in art. 45 § 2. Not deductible at all: tobacco, spirits not for resale, accommodation, food and drink costs (with exceptions) and reception costs (art. 45 § 3).
+- **Capital goods.** Deduction on capital goods is subject to adjustment. For immovable capital goods the adjustment period is 15 years, and 25 years for buildings let under the art. 44 § 3, 2°, d) regime (art. 48 § 2 as amended by the Law of 10 February 2026).
+- **Credits.** An excess of deductible VAT goes to the taxpayer's VAT provision account unless a refund is asked for in the return (art. 76 § 1).
+
+**Classifying transactions onto the return.** The grid numbers are those of KB nr. 1 annex II.
+
+| Transaction | Base grid | VAT grid | Notes |
+|---|---|---|---|
+| Domestic sale at 6% / 12% / 21% | 01 / 02 / 03 | 54 | Rate from KB nr. 20 Tables A and B |
+| Domestic sale where the customer pays the VAT (construction under KB nr. 1 art. 20, other art. 51 § 2 cases) | 45 | none | Invoice shows no VAT |
+| Services to an EU business under the general place-of-supply rule | 44 | none | Also on the EU sales listing |
+| Exempt intra-EU supply of goods (art. 39bis) | 46 | none | Customer's EU VAT number needed |
+| Exports and other exempt supplies with a right to deduct (art. 39 to 42) | 47 | none | |
+| Credit notes issued | 48 (on 44 and 46) or 49 (others) | 64 | VAT recovered on credit notes issued |
+| Domestic purchase with Belgian VAT: goods for resale and raw materials / other goods and services / capital goods | 81 / 82 / 83 | 59 (deductible part) | Art. 45 limits apply |
+| Intra-EU acquisition of goods | 86 (and 81-83) | 55, deducted in 59 | |
+| Services from an EU supplier, place of supply in Belgium | 88 (and 81-83) | 55, deducted in 59 | |
+| Services from a non-EU supplier, construction work received under KB nr. 1 art. 20, other customer-pays cases | 87 (and 81-83) | 56, deducted in 59 | |
+| Credit notes received | 84 (on 86 and 88) or 85 (others) | 63 | VAT to repay on credit notes received |
+
+- **Not on the return at all.** Wages, social contributions, tax payments, fines, loan capital and interest received or paid, dividends, transfers between own accounts and owner injections or withdrawals involve no supply.
+- **Exempt purchases: no VAT to deduct.** Bank charges and other financial services, insurance and the letting of immovable property are exempt under art. 44, so the invoice carries no Belgian VAT.
+- **Partly or wholly blocked.** Car costs including fuel: deduction at most 50% (art. 45 § 2). Restaurant, hotel and reception costs, tobacco and spirits not for resale: no deduction (art. 45 § 3).
+- **Foreign suppliers.** Read the legal entity and VAT number on the invoice, not the brand name: an EU entity goes in 88 or 86, a non-EU entity in 87. If the invoice charges Belgian VAT, treat it as a domestic purchase.
+
+## Deadlines and filing
+
+- **Frequency.** Monthly is the rule (art. 53 § 1). A business may file quarterly if annual turnover excluding VAT for its whole activity is at most EUR 2,500,000, unless it must file the EU sales listing monthly (KB nr. 1 art. 17 § 2). A quarterly filer that stops meeting the test moves to monthly at the end of that quarter and must notify the change by the 10th of the next month (art. 17 § 3). The former second test (at most EUR 250,000 of supplies of energy products, mobile phones and computers, and motor vehicles) was removed from 10 January 2026 by the KB of 17 December 2025 (art. 6); the FOD Financiën periodic return page still lists it.
+- **Return due dates.** Monthly return by the 20th of the following month. Quarterly return by the 25th of the month after the quarter (KB nr. 1 art. 17 §§ 1-2, rules in force since 1 January 2025). The tax is paid within the same deadline (art. 53 § 1, 3°).
+- **2026 calendar.** Quarterly returns: Q4 2025 by 26 January 2026, Q1 2026 by 27 April 2026, Q2 by 25 July 2026, Q3 by 25 October 2026, Q4 2026 by 25 January 2027. Monthly returns are due on the 20th, moved to 22 June 2026 for May, 21 September 2026 for August and 21 December 2026 for November. The payment dates in the calendar are the same as the return dates, and quarterly filers no longer pay quarterly advances (FOD Financiën, btw-kalender).
+- **No holiday extension from 2026.** The old summer extension for the June, Q2 and July returns no longer applies; a return filed after the legal date is late. As a transition, no late-filing fine is charged in 2026 if the June 2026 or Q2 2026 return is filed by 10 August 2026, or the July 2026 return by 10 September 2026. The return still counts as late for the other effects: the limitation period runs a year longer, any credit reaches the provision account later, and no refund can be asked through the return for the next 6 months (FOD Financiën, periodic return page).
+- **Correcting.** A material error found before the deadline is fixed by filing a new return for the same period, which replaces the first one. After the deadline, the correction goes in the next return (KB nr. 1 art. 17 § 4).
+- **Filing.** Electronically through Intervat (KB nr. 1 art. 18).
+- **Replacement return (vervangende aangifte).** If a return is not filed, after three months the administration sends a proposed replacement return for the highest VAT due in the previous 12 months, or EUR 2,100 if higher or if there is no earlier return. Filing the missing return within one month ends the procedure. If not, the replacement return becomes final and the tax is payable at once with late interest (art. 53 § 1ter).
+- **Refunds.** A credit is refunded only on express request, by the end of the third month after the return period, and only if all returns for the previous six months were filed on time. Otherwise the credit goes to the VAT provision account (art. 76 § 1, as replaced by the Law of 10 February 2026). A refund of the provision account can be asked in MyMinfin.
+- **Main return grids.** Base at 6%, 12% and 21%: grids 01, 02, 03. VAT due on them: grid 54. Deductible VAT: grid 59. VAT payable: grid 71. Credit due by the State: grid 72; only one of 71 and 72 is filled (KB nr. 1 annex II).
+- **Annual listings.** The annual client listing and the annual EU listing for 2025 were due before 31 March 2026 (FOD Financiën, btw-kalender).
+- **Structured e-invoicing from 1 January 2026.** A taxable person established in Belgium must issue a structured electronic invoice for every taxable supply to another Belgian VAT-registered business (art. 53 § 2bis). This includes businesses under the small-business exemption. Flat-rate taxpayers under art. 56 and art. 44 exempt supplies are outside it. Every Belgian VAT-registered customer must be able to receive such invoices. Where the customer cannot receive one for technical reasons, an ordinary invoice is still issued (art. 53 § 2bis, last paragraph, added by the Law of 10 February 2026). Businesses not established in Belgium are not covered (FOD Financiën e-invoicing FAQ). See [belgium-einvoice](belgium-einvoice.md).
+
+## Penalties and interest
+
+| Item | Rule | Source |
+|---|---|---|
+| Late payment interest | 8% a year in 2026 (fiscal rate 4% plus 4 points). Calculated per month on the VAT due rounded down to EUR 10; each started month counts in full; not charged under EUR 5 a month | WBTW art. 91 § 1; FOD Financiën payment page |
+| Late or partial payment, return filed on time | Fine of 5% of the VAT unpaid | KB nr. 41, Table G, section 1, I.1 |
+| Late payment, return filed late or within the replacement-return month | 10% of the VAT | KB nr. 41, Table G, I.2 |
+| VAT due under a final replacement return | 15% of the VAT | KB nr. 41, Table G, I.3 |
+| Periodic return not filed | EUR 500 per return for the 1st offence, EUR 1,250 the 2nd, EUR 2,500 the 3rd, EUR 5,000 after | KB nr. 44 annex, section 1, I.A |
+| Periodic return filed up to five months late | EUR 100 per return per month late, maximum EUR 500 | KB nr. 44 annex, section 1, I.B |
+| Return wrongly completed | EUR 80 for purely accidental errors, EUR 500 for others, per return | KB nr. 44 annex, section 1, I.C |
+| Return filed at the wrong frequency | EUR 250 per return | KB nr. 44 annex, section 1, I.D |
+| Invoice not issued on time | Per invoice: EUR 50 (maximum EUR 500), then EUR 125 (maximum EUR 1,250), then EUR 250 (maximum EUR 5,000) | KB nr. 44 annex, section 2, I.A (as amended from 1 January 2026) |
+| No technical means to issue and receive structured e-invoices | EUR 1,500 the 1st offence, EUR 3,000 the 2nd, EUR 5,000 after. A later offence counts only if found at least three months after the previous fine | KB nr. 44 annex, section 2, I.C |
+| Spontaneous correction | Full remission of proportional fines if the taxpayer corrects before any intervention by the administration | KB nr. 41 art. 3 |
+
+The KB nr. 41 scale does not apply where the offence was committed to evade tax (KB nr. 41 art. 1).
+
+## Cross-border points
+
+- **Services bought from abroad** under the general business-to-business rule: the Belgian customer self-assesses VAT. EU services go in grid 88 with the VAT in grid 55; other reverse-charge purchases go in grid 87 with the VAT in grid 56. The VAT is deducted in grid 59 if the purchase is for taxable use (KB nr. 1 annex II).
+- **Intra-EU acquisitions of goods** go in grid 86, with the VAT in grid 55.
+- **Services sold to EU businesses** under the general rule go in grid 44 and on the EU sales listing. Intra-EU supplies of goods go in grid 46.
+- **EU sales listing.** Quarterly, by the 25th of the month after the quarter (25 January, 25 April, 25 July and 25 October 2026 in the calendar), or monthly by the 20th once intra-EU supplies exceed EUR 50,000 in a quarter. A monthly-listing business cannot file quarterly returns (KB nr. 1 art. 17 § 2; FOD Financiën).
+- **Foreign businesses.** A business not established in Belgium is not under the B2B e-invoicing mandate. It may use the Belgian small-business exemption only through the EU scheme (art. 56ter § 2).
+- **Sales to EU consumers** of goods at a distance and of e-services above the EU-wide threshold are taxed in the customer's state, usually through the one-stop shop. See `eu-vat-directive`.
+
+## Worked examples
+
+**Example 1: quarterly return, Q3 2026.** A Belgian BV files quarterly. In July to September 2026 it invoices EUR 80,000 of consultancy at 21%. It buys EUR 30,000 of goods and services at 21%, has EUR 4,000 net of costs on a passenger car at 21%, and a EUR 500 net client dinner at 12%. Output VAT is 80,000 × 21% = 16,800 (grid 54). Input VAT on the general purchases is 6,300. The car VAT is 840, of which 50% is deductible: 420. The dinner VAT of 60 is not deductible. Deductible VAT in grid 59 is 6,720. VAT payable in grid 71 is 10,080, due with the return by 25 October 2026. If it pays a month late but filed on time, the fine is 5%, EUR 504, and late interest at 8% for one month is EUR 67.20.
+
+```oa-check
+name: Belgium quarterly return Q3 2026 with car and restaurant limits
+inputs:
+  sales_net: 80000
+  purchases_net: 30000
+  car_costs_net: 4000
+  dinner_net: 500
+steps:
+  - output_vat: sales_net * 0.21
+  - input_general: purchases_net * 0.21
+  - car_vat: car_costs_net * 0.21
+  - car_deductible: car_vat * 0.50
+  - dinner_deductible: dinner_net * 0.12 * 0
+  - grid_59: input_general + car_deductible + dinner_deductible
+  - grid_71: output_vat - grid_59
+  - late_payment_fine: grid_71 * 0.05
+  - interest_one_month: floor(grid_71 / 10) * 10 * 0.08 / 12
+expected:
+  output_vat: 16800
+  grid_59: 6720
+  grid_71: 10080
+  late_payment_fine: 504
+  interest_one_month: 67.20
 ```
 
-## Section 8 — Belgian bank statement reading guide
+**Example 2: the small-business exemption and its 10% tolerance.** A self-employed designer has used the exemption for years. By 30 November 2026 her 2026 turnover is EUR 24,000. In December she invoices EUR 2,500 more, so the year ends at EUR 26,500. That is EUR 1,500 over the EUR 25,000 limit, or 6%. Because the excess is no more than 10% (the ceiling is EUR 27,500), she keeps the exemption for all of 2026 and charges no VAT on the December invoices. But she exceeded the limit in 2026, so she cannot use the exemption in 2027, even though the 2027 limit is EUR 26,000 (art. 56decies § 1). From 1 January 2027 she charges 21%. On EUR 3,000 of January 2027 invoices that is EUR 630. Had her December invoices been EUR 4,000 (year total EUR 28,000, 12% over), the exemption would have ended during December, at the moment the 10% margin was passed.
 
-**CSV format conventions.** Belgian banks export CSV with semicolons and DD/MM/YYYY. Common columns: Datum/Date, Omschrijving/Description, Bedrag/Montant, Saldo/Solde. KBC uses structured export; Belfius and BNP Paribas Fortis use similar formats.
+```oa-check
+name: Belgium small-business exemption tolerance, 2026 into 2027
+inputs:
+  turnover_to_november: 24000
+  december_invoices: 2500
+  limit: 25000
+  january_2027_net: 3000
+steps:
+  - year_turnover: turnover_to_november + december_invoices
+  - excess: year_turnover - limit
+  - excess_pct: excess / limit * 100
+  - tolerance_ceiling: limit * 1.10
+  - headroom_left: tolerance_ceiling - year_turnover
+  - vat_january_2027: january_2027_net * 0.21
+expected:
+  year_turnover: 26500
+  excess: 1500
+  excess_pct: 6
+  tolerance_ceiling: 27500
+  headroom_left: 1000
+  vat_january_2027: 630
+```
 
-**Bilingual descriptions.** Belgium has three official languages (Dutch, French, German). Bank statements may use: loyer/huur (rent), salaire/loon (salary), intérêts/rente (interest), virement/overschrijving (transfer), cotisations/bijdragen (contributions).
+## Ask the client first
 
-**Internal transfers.** "Virement interne", "interne overboeking". Exclude.
+- What was your turnover in Belgium in 2025, what do you expect for 2026, and when did you start? (Decides the EUR 25,000 exemption, the pro rata limit and the 10% tolerance.)
+- What is your annual turnover for the whole activity, and do your intra-EU supplies of goods exceed EUR 50,000 a quarter? (Decides monthly or quarterly returns.)
+- Do you do construction work, run a registered cash system, deal in scrap, or belong to a VAT unit? (These exclude the exemption.)
+- Do you make exempt supplies such as letting, medical care or financial services? (Decides deduction and whether you file returns.)
+- Do you have cars, restaurant, hotel or reception costs? (Decides the 50% limit and blocked VAT.)
+- Do you invoice other Belgian businesses, and can your software send and receive Peppol invoices? (Decides e-invoicing compliance.)
 
-**SPF Finances payments.** Tax payments appear as "SPF FINANCES", "FOD FINANCIEN", or with structured communications (+++XXX/XXXX/XXXXX+++). Always exclude.
+## Sources
 
-**Structured communication.** Belgian payments often use structured communication (+++XXX/XXXX/XXXXX+++). This is a reference number, not a classification indicator.
+| Source | URL | Read on |
+|---|---|---|
+| FisconetPlus, VAT Code table of contents (official coordination to Staatsblad 8 October 2026) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e154233d-dc0e-4c0f-9bbf-afc79e797448 | 2026-10-23 |
+| WBTW art. 53 (returns, replacement return, structured e-invoice) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/773cb22d-053e-4d4d-ae1f-7ddadab87d78 | 2026-10-23 |
+| WBTW art. 56ter (small-business exemption) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/6191791d-e4d1-4829-b8f1-56c7a6892136 | 2026-10-23 |
+| WBTW art. 56decies (losing the exemption, 10% tolerance) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/83f1a474-d23d-446b-ac69-284f8909b300 | 2026-10-23 |
+| WBTW art. 45 (deduction limits) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/58a466d6-c626-4369-854f-add149c06034 | 2026-10-23 |
+| WBTW art. 76 (refunds) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/11d42f57-9159-47a5-b967-004f74497d5c | 2026-10-23 |
+| WBTW art. 91 (interest) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/87160bad-16b2-40ce-9abf-756a527f77a9 | 2026-10-23 |
+| KB nr. 1 (return frequency and deadlines) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c69c7ee9-8e6d-48da-b9f7-c23cb025a777 | 2026-10-23 |
+| KB nr. 1 art. 17, version history (EUR 250,000 test removed from 10 January 2026) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/bce4326d-6d49-4680-bd6d-8bf05cb7f6bc | 2026-10-23 |
+| KB nr. 1 annex II (description of the return grids) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/0ac584ed-a3ad-4734-9537-160f30357de5 | 2026-10-23 |
+| WBTW art. 56bis (exclusions from the small-business exemption) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/0cd39ffd-676c-4846-b0c7-2328b1e94524 | 2026-10-23 |
+| KB nr. 20 (rates and Tables A, B and C) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/52d3e79e-132b-4ac6-8ce6-fb79b9634d59 | 2026-10-23 |
+| KB nr. 41 (proportional fines) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d48c176f-6bdd-41fb-b0a1-725841887613 | 2026-10-23 |
+| KB nr. 44 (non-proportional fines) | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/1d5dbc36-f527-4d36-8673-b1267367e2ac | 2026-10-23 |
+| KB 14 February 2026 (hotels and campsites 12%, pesticides 21%, from 1 March 2026) | https://www.ejustice.just.fgov.be/eli/besluit/2026/02/14/2026001322/staatsblad | 2026-10-23 |
+| Law of 10 February 2026, various VAT provisions | https://www.ejustice.just.fgov.be/eli/wet/2026/02/10/2026001291/staatsblad | 2026-10-23 |
+| Law of 23 September 2026, art. 26-27 (exemption limits 2027-2031) | https://www.ejustice.just.fgov.be/eli/wet/2026/09/23/2026007237/staatsblad | 2026-10-23 |
+| FOD Financiën, periodieke aangifte (no holiday extension in 2026) | https://financien.belgium.be/nl/ondernemingen/btw/aangifte/periodieke-aangifte | 2026-10-23 |
+| FOD Financiën, btw-kalender 2026 | https://financien.belgium.be/nl/ondernemingen/btw/btw-kalender | 2026-10-23 |
+| FOD Financiën, betaling (late interest 8% for 2026) | https://financien.belgium.be/nl/ondernemingen/btw/betaling-teruggave/betaling | 2026-10-23 |
+| FOD Financiën, e-factuur FAQ on the B2B obligation | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b | 2026-10-23 |
 
-**Foreign currency.** Convert to EUR at ECB rate.
-
-**IBAN prefix.** BE = Belgium. NL, FR, DE, LU = EU. US, GB = non-EU.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Entity type
-
-- **Entity type** — Inference rule: SPRL/BVBA = old company form; SRL/BV = new company form; personne physique/eenmanszaak = sole trader. Fallback: "SRL/BV, SA/NV, or sole trader (indépendant/zelfstandige)?"  _(Section 9.1)_
-
-### 9.2 VAT regime
-
-- **VAT regime** — Fallback: "Standard regime, franchise (small enterprise exemption), or forfaitaire?"  _(Section 9.2)_
-
-### 9.3 TVA/BTW number
-
-- **TVA/BTW number** — Fallback: "Your Belgian TVA/BTW number? (BE + 10 digits)"  _(Section 9.3)_
-
-### 9.4 Filing period
-
-- **Filing period** — Fallback: "Which month or quarter?"  _(Section 9.4)_
-
-### 9.5 Industry
-
-- **Industry** — Fallback: "What does the business do?"  _(Section 9.5)_
-
-### 9.6 Employees
-
-- **Employees** — Inference rule: ONSS/RSZ outgoing. Fallback: "Employees?"  _(Section 9.6)_
-
-### 9.7 Exempt supplies
-
-- **Exempt supplies** — Fallback: "Any exempt sales?" If yes → R-BE-3.  _(Section 9.7)_
-
-### 9.8 Credit carried forward
-
-- **Credit carried forward** — Always ask. "TVA/BTW credit from prior period? (Grille 72)"  _(Section 9.8)_
-
-### 9.9 Cross-border customers
-
-- **Cross-border customers** — Fallback: "Customers outside Belgium? EU/non-EU? B2B/B2C?"  _(Section 9.9)_
-
-### 9.10 Construction sector
-
-- **Construction sector** — Conditional: "Are you in construction? (Co-contractor reverse charge may apply.)"  _(Section 9.10)_
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Code de la TVA (CTVA) / BTW-Wetboek — https://finances.belgium.be
-2. Arrêtés royaux d'exécution (AR no. 1, no. 20, etc.)
-3. Table A (6%) and Table B (12%) — Annexes to AR no. 20
-4. SPF Finances / FOD Financiën guidance on periodic returns
-5. Council Directive 2006/112/EC — via eu-vat-directive companion
-6. VIES — https://ec.europa.eu/taxation_customs/vies/
-
-### Known gaps
-
-1. Bilingual descriptions not exhaustively mapped.
-2. Co-contractor construction reverse charge flagged T2 only.
-3. ET 14 import licence details not covered.
-4. Vehicle deduction percentage formula simplified to 50% cap.
-5. Temporary reduced rates (energy measures) require annual verification.
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to Malta v2.0 structure.
-- **v1.0/1.1:** Initial skill.
-
-### Self-check (v2.0)
-
-1. Quick reference: yes. 2. Supplier library (15): yes. 3. Worked examples (6): yes. 4. Tier 1 (15): yes. 5. Tier 2 (15): yes. 6. Excel template: yes. 7. Onboarding (10): yes. 8. 8 refusals: yes. 9. Reference material: yes. 10. Vehicle 50% cap: yes. 11. Co-contractor reverse charge: yes. 12. Restaurant 12% rate: yes. 13. Grille system: yes. 14. Bilingual considerations: yes. 15. Non-EU SaaS 87/56: yes.
-
-## End of Belgium VAT Return Skill v2.0
-
-This skill is incomplete without BOTH companion files: `vat-workflow-base` v0.1+ AND `eu-vat-directive` v0.1+.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a comptable-fiscaliste, bedrijfsrevisor, or equivalent licensed practitioner) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: whether the pro rata limit for a business that starts mid-year is also the limit tested for the "exceeded in the previous year" bar in art. 56decies; the full item lists of Tables A, B and C are summarised, not reproduced; any tolerance period the administration may grant for the first months of B2B e-invoicing was not found in the sources read.
