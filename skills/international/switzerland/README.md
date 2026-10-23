@@ -5,6 +5,8 @@ not_applicable: {}
 covered_by:
   SC: ch-ahv-iv
   XB: ch-cross-border
+partial:
+  IT-CORP: "ch-corporate-income-tax is on tax year 2025 and cites secondary sources; needs a 2026 rewrite from fedlex and ESTV"
 ---
 
 # Switzerland: tax pack
@@ -16,7 +18,7 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft |
-| IT-CORP, corporate income tax | ch-corporate-income-tax | source-cited draft |
+| IT-CORP, corporate income tax | ch-corporate-income-tax | source-cited draft; partial: tax year 2025, secondary sources |
 | VAT | ch-vat-return, switzerland-vat | source-cited draft |
 | SC, social contributions | ch-ahv-iv | source-cited draft |
 | PR, payroll withholding | (missing: employer tax at source (Quellensteuer) and payroll deductions) | |
