@@ -56,8 +56,8 @@ The Scottish Rate Resolution sets limits on income **above the Personal Allowanc
 | Intermediate rate, total income | £27,492 to £43,662 at 21% | 2025/26 | https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year |
 | Higher, advanced, top, total income | £43,663 to £75,000 at 42%; £75,001 to £125,140 at 45%; over £125,140 at 48% | 2025/26 | https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year |
 | Personal Allowance taper | £1 lost for every £2 of adjusted net income over £100,000; nil at £125,140 | 2026/27 | https://www.gov.uk/income-tax-rates |
-| UK basic rate limit (used for savings and dividends) | £37,700 | 2026/27 | https://www.legislation.gov.uk/ukpga/2026/11/section/10 |
-| Dividend allowance; ordinary, upper, additional rates | £500; 10.75%, 35.75%, 39.35% | 2026/27 | https://www.legislation.gov.uk/ukpga/2026/11/section/4 |
+| UK basic rate limit (used for savings and dividends) | £37,700 | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/10 |
+| Dividend allowance; ordinary, upper, additional rates | £500; 10.75%, 35.75%, 39.35% | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/8 |
 | Relief-at-source pension relief given by the scheme | Scottish basic rate, 20% | 2026/27 | https://www.legislation.gov.uk/ukpga/2004/12/section/192 |
 
 The Scottish Parliament agreed the 2026-27 resolution (motion S6M-20844) on 19 February 2026, 93 for and 29 against. It is set under Scotland Act 1998 s 80C, applies for one tax year only (s 80C(3)), and is made "for the purposes of section 11A of the Income Tax Act 2007". The Scottish Government's own table matches the GOV.UK figures ([gov.scot rates and bands 2026 to 2027](https://www.gov.scot/publications/scottish-income-tax-rates-and-bands/pages/2026-to-2027/)).
@@ -72,12 +72,12 @@ Run the `uk-income-tax-sa100` method. Change these steps only.
 2. **Personal Allowance and taper** are UK rules. Set the allowance against non-savings income first, as usual.
 3. **Split taxable income** into non-savings, savings and dividends in the normal order (ITA 2007 s 16, applied by s 11A(6)).
 4. **Charge non-savings income at the Scottish bands** (s 11A(1A)): 19%, 20%, 21%, 42%, 45%, 48% on the limits above.
-5. **Charge savings and dividends at UK rates**, placing them in the UK bands by reference to the UK basic rate limit of £37,700 and the higher rate limit of £125,140. ITA 2007 s 13 charges dividends at the ordinary rate where they "would otherwise be charged at the basic rate", which is the UK basic rate under s 10, not a Scottish rate. So a Scottish taxpayer can pay 42% on salary and still pay the dividend ordinary rate on dividends.
+5. **Charge savings and dividends at UK rates**, placing them in the UK bands by reference to the UK basic rate limit of £37,700 and the higher rate limit of £125,140. ITA 2007 s 13 charges dividends at the ordinary rate where they "would otherwise be charged at the basic rate", and s 13(5) reads that test for a Scottish taxpayer as income that would be charged at that rate "if the individual were not a Scottish taxpayer". The UK basic rate limit under s 10, not a Scottish limit, decides the dividend rate. So a Scottish taxpayer can pay 42% on salary and still pay the dividend ordinary rate on dividends.
 6. **Extend the Scottish limits for Gift Aid.** The grossed-up gift increases the UK basic and higher rate limits and, for a Scottish taxpayer, "the upper limit for the Scottish basic rate and the limits for any Scottish rates above the Scottish basic rate" (ITA 2007 s 414(2)(b)). The gift is still treated as made after deduction of tax at the UK basic rate of 20% (s 414(2)(a)), so the charity claims at 20%.
 7. **Extend the Scottish limits for relief-at-source pension contributions.** The scheme claims relief at the Scottish basic rate of 20% (FA 2004 s 192(1A)). If any income is charged at a Scottish rate above the Scottish basic rate, a claim increases the Scottish basic rate limit and every higher Scottish limit by the gross contribution (s 192(4A)). This gives the extra 1% at the intermediate rate, and 22%, 25% or 28% at the higher, advanced and top rates. A starter-rate taxpayer keeps the 20% relief; HMRC does not recover the 1% difference ([PTM044220](https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm044220)).
 8. **Tax reducers, charges and tax paid** follow the UK steps. PAYE deducted under an S code counts as tax paid.
 
-**PAYE codes.** A Scottish taxpayer's code starts with S. The standard code is S1257L. S0T means the Scottish allowance is used up or not known. SBR, SD0, SD1, SD2 and SD3 tax all pay from that job at the Scottish basic, intermediate, higher, advanced and top rate ([tax codes](https://www.gov.uk/tax-codes)). The employer uses the code HMRC sends and does not decide Scottish status ([Scottish Income Tax](https://www.gov.uk/scottish-income-tax)). The 2026/27 PAYE bands are in `uk-payroll`.
+**PAYE codes.** A Scottish taxpayer's code starts with S. The standard code is S1257L. S0T means the Scottish allowance is used up or not known. SBR, SD0, SD1, SD2 and SD3 tax all pay from that job at the Scottish basic, intermediate, higher, advanced and top rate ([tax codes](https://www.gov.uk/tax-codes)). The S prefix tells the employer or pension provider to deduct tax at Scottish rates ([who pays](https://www.gov.uk/scottish-income-tax/who-pays)). The 2026/27 PAYE bands are in `uk-payroll`.
 
 **Losses** are UK rules. A trading loss set against general income reduces total income before the Scottish bands are applied.
 
@@ -95,7 +95,7 @@ The deadlines are the UK Self Assessment deadlines in `uk-income-tax-sa100`.
 
 Source: [Self Assessment deadlines and penalties](https://www.gov.uk/self-assessment-tax-returns/penalties) and [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account).
 
-- **Tell HMRC on the return.** The online SA100 has a box to say the person pays Scottish Income Tax ([Scottish Income Tax](https://www.gov.uk/scottish-income-tax)).
+- **Tell HMRC on the return.** The online SA100 has a box to say the person pays Scottish Income Tax ([who pays](https://www.gov.uk/scottish-income-tax/who-pays)).
 - **Tell HMRC about a move.** A person who moves to or from Scotland must tell HMRC of the new address, or tax may be taken at the wrong rate ([if you move](https://www.gov.uk/scottish-income-tax/if-you-move-to-or-from-scotland)).
 - **Payments on account** are half of last year's Self Assessment liability, including Class 4 NIC. Student loan and capital gains are paid with the balancing payment, not in payments on account. See `uk-payments-on-account`.
 
@@ -112,10 +112,10 @@ The UK Self Assessment regime applies unchanged ([penalties](https://www.gov.uk/
 ## Cross-border points
 
 - **Non-residents are never Scottish taxpayers.** Scottish status needs UK residence for the year (s 80D(1)(a)). Decide residence first with `uk-statutory-residence-test`.
-- **Split year.** A person who is UK resident for a split year is resident "for that year", so the Scottish tests apply to the year. Apply the close connection and days tests to the UK part. Refer split-year Scottish cases for review.
-- **Moving within the UK.** Status is all or nothing for the year (s 80E(3)(c) and s 80F compare time or days across the whole year). Example: a person whose only home is in Edinburgh until 30 November 2026 and in London from 1 December 2026 had a Scottish main home for more of 2026/27 than an English one, so is a Scottish taxpayer for the whole of 2026/27.
+- **Split year.** Scottish status still applies for the whole tax year. In a year the person becomes or stops being UK resident, split-year treatment under the statutory residence test decides how much of that year's income is charged at Scottish rates ([STTG4100](https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4100)). Refer split-year Scottish cases for review.
+- **Moving within the UK.** Status is all or nothing for the year (s 80E(3)(c) and s 80F compare time or days across the whole year; HMRC's example of a mid-year move from Birmingham to Aberdeen is in [STTG4400](https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4400)). Example: a person whose only home is in Edinburgh until 30 November 2026 and in London from 1 December 2026 had a Scottish main home for more of 2026/27 than an English one, so is a Scottish taxpayer for the whole of 2026/27.
 - **Treaties.** A Scottish taxpayer is a UK resident for treaty purposes. Treaty residence, withholding and foreign tax credit relief follow the UK rules in `uk-non-resident-sa109` and `uk-dividends`.
-- **Offshore and mobile workers** with no fixed home use the days test: where they were at midnight ([more than one home](https://www.gov.uk/scottish-income-tax/if-you-live-in-more-than-one-home)).
+- **Offshore and mobile workers** with no fixed home use the days test: where they were at midnight ([more than one home](https://www.gov.uk/scottish-income-tax/if-you-live-in-more-than-one-home)). A night on the UK continental shelf, such as on a North Sea rig, is not a day in any part of the UK; Scottish territorial waters (to 12 nautical miles) count as Scotland ([STTG4500](https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4500)).
 
 ## Worked examples
 
@@ -220,9 +220,12 @@ expected:
 | Scottish Government, Scottish Income Tax rates and bands 2026 to 2027 | https://www.gov.scot/publications/scottish-income-tax-rates-and-bands/pages/2026-to-2027/ | 2026-10-23 |
 | Income Tax Act 2007 s 11A (income charged at Scottish rates) | https://www.legislation.gov.uk/ukpga/2007/3/section/11A | 2026-10-23 |
 | Income Tax Act 2007 s 10 (UK basic, higher, additional rates) | https://www.legislation.gov.uk/ukpga/2007/3/section/10 | 2026-10-23 |
-| Income Tax Act 2007 s 13 (dividend rates) | https://www.legislation.gov.uk/ukpga/2007/3/section/13 | 2026-10-23 |
+| Income Tax Act 2007 s 13 (dividend rates; s 13(5) for Scottish taxpayers) | https://www.legislation.gov.uk/ukpga/2007/3/section/13 | 2026-10-23 |
+| Income Tax Act 2007 s 8 (dividend ordinary, upper and additional rates) | https://www.legislation.gov.uk/ukpga/2007/3/section/8 | 2026-10-23 |
+| GOV.UK, Scottish Income Tax: who pays (S codes, SA return box) | https://www.gov.uk/scottish-income-tax/who-pays | 2026-10-23 |
 | Income Tax Act 2007 s 414 (Gift Aid relief) | https://www.legislation.gov.uk/ukpga/2007/3/section/414 | 2026-10-23 |
 | Finance Act 2004 s 192 (relief at source) | https://www.legislation.gov.uk/ukpga/2004/12/section/192 | 2026-10-23 |
+| HMRC Scottish Taxpayer Technical Guidance STTG4100, STTG4400, STTG4500 | https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance/sttg4100 | 2026-10-23 |
 | HMRC Pensions Tax Manual PTM044220 | https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm044220 | 2026-10-23 |
 | GOV.UK, Scottish Income Tax (2026/27 and 2025/26 tables, who pays, main home, moving) | https://www.gov.uk/scottish-income-tax | 2026-10-23 |
 | GOV.UK, Tax codes | https://www.gov.uk/tax-codes | 2026-10-23 |
@@ -231,6 +234,6 @@ expected:
 | GOV.UK, Payments on account | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-10-23 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-23 |
 | GOV.UK, Income Tax rates and Personal Allowances (taper) | https://www.gov.uk/income-tax-rates | 2026-10-23 |
-| Finance Act 2026 ss 4 and 10 (dividend rates, frozen thresholds), as cited in uk-income-tax-sa100 | https://www.legislation.gov.uk/ukpga/2026/11/section/10 | 2026-10-23 |
+| Finance Act 2026 s 4 (dividend ordinary and upper rates from 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-10-23 |
 
-Not yet confirmed: the SA100 and SA100 notes box wording for Scottish status (the form itself was not read); HMRC's Scottish Taxpayer Technical Guidance (STTG) was not read, so the split-year and move examples rest on the statute alone; whether the Scottish Parliament has set separate Scottish property rates for 2027/28 under s 80C(2B); whether the 7.75% late payment interest rate has changed after 9 January 2026; Finance Act 2026 ss 4 and 10 were not re-read today and are taken from uk-income-tax-sa100.
+Not yet confirmed: the SA100 and SA100 notes box wording for Scottish status (the form itself was not read); the rest of HMRC's Scottish Taxpayer Technical Guidance (only STTG4100, 4400 and 4500 were read); whether the Scottish Parliament has set separate Scottish property rates for 2027/28 under s 80C(2B).
