@@ -16,7 +16,7 @@ This skill computes the annual IRS of a Portuguese resident individual whose inc
 
 Sibling skills, which this one links to and does not repeat:
 
-- `pt-income-tax`: self-employed income (Category B, Anexo B), the simplified regime coefficients. Tax year 2025 figures.
+- `pt-income-tax`: self-employed income (Category B, Anexo B), the simplified regime coefficients. Tax year 2026.
 - `portugal-payroll`: monthly withholding on salaries and social security (TSU). Its frontmatter says tax year 2025, though it carries some 2026 figures.
 - `pt-foreign-source-treaties`: foreign income of residents, the foreign tax credit and Anexo J.
 - `pt-nhr-ifici`: the old non-habitual resident regime and IFICI (20% flat rate). Check this first: a person under either regime is taxed differently and cannot use IRS Jovem.
@@ -70,7 +70,7 @@ The law is the Código do IRS (CIRS). The Tax Authority (Autoridade Tributária 
 | Gains on shares of unlisted micro and small companies | 50% of the net gain included, then taxed at the 28% autonomous rate unless the resident opts to aggregate | 2026 | CIRS art. 43(3), art. 72(1)(c) and (13) |
 | Return filing exemption for low salary or pension | Total EUR 8,500 or less with no withholding | 2026 | CIRS art. 58(1)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58.aspx |
 
-The 2026 bands are lower than the 2025 bands. The 2026 State Budget (Lei 73-A/2025, art. 71) rewrote the art. 68 table: bands 2 to 5 were cut (for example band 2 went from 16.00% to 15.70%) and every band limit was raised. The law came into force on 1 January 2026. Do not use the 2025 table in `pt-income-tax` for 2026 income.
+The 2026 bands are lower than the 2025 bands. The 2026 State Budget (Lei 73-A/2025, art. 71) rewrote the art. 68 table: bands 2 to 5 were cut (for example band 2 went from 16.00% to 15.70%) and every band limit was raised. The law came into force on 1 January 2026.
 
 Pillar Two and other company-level measures do not apply to individuals.
 
@@ -137,9 +137,9 @@ Separate taxation halves the household-based limits for each spouse (art. 78(14)
 
 **The return.** Modelo 3 with the annexes the income needs: Anexo A (employment and pensions), E (capital income, only if aggregating or not withheld), F (rent), G (capital gains), H (tax benefits and deductions), J (foreign income, see `pt-foreign-source-treaties`), L (NHR or IFICI, see `pt-nhr-ifici`).
 
-**IRS automatico.** For taxpayers in the group set by regulation, AT prepares a provisional return and assessment from the data it holds (art. 58-A(1)). The taxpayer can confirm it, and it then counts as filed (art. 58-A(2)). If they neither confirm nor file by 30 June, it becomes final on that date; married couples are then taxed separately (art. 58-A(3) and (4)(b)). Anyone whose real situation differs from the draft must file a normal return (art. 58-A(9)). The draft does not cover holders of crypto assets reported under art. 57(7) (art. 58-A(12)).
+**IRS automatico.** For taxpayers in the group set by regulation, AT prepares a provisional return and assessment from the data it holds (art. 58-A(1)). The taxpayer can confirm it, and it then counts as filed (art. 58-A(2)). If they neither confirm nor file by 30 June, it becomes final on that date; married couples are then taxed separately (art. 58-A(3) and (4)(b)). Anyone whose real situation differs from the draft must file a normal return (art. 58-A(9)). The draft does not cover anyone who must report assets held in a listed low-tax jurisdiction under art. 57(7) (property, vehicles, bank or securities accounts, shares, fund units, bonds, loans, insurance contracts, or assets held through partnerships or trusts there) (art. 58-A(12)).
 
-**Who need not file.** A person whose only income is taxed at the art. 71 final rates and who does not aggregate it, or whose salary and pensions total EUR 8,500 or less with no withholding (art. 58(1)). The exemption does not apply to anyone who opts for joint taxation, has income in kind, or holds crypto assets reported under art. 57(7) (art. 58(3)(a), (c) and (e)).
+**Who need not file.** A person whose only income is taxed at the art. 71 final rates and who does not aggregate it, or whose salary and pensions total EUR 8,500 or less with no withholding (art. 58(1)). The exemption does not apply to anyone who opts for joint taxation, has income in kind, or holds assets in a listed low-tax jurisdiction that must be reported under art. 57(7) (art. 58(3)(a), (c) and (e)). Art. 57(7) does not mention crypto assets.
 
 ## Penalties and interest
 
@@ -154,7 +154,7 @@ Separate taxation halves the household-based limits for each spouse (art. 78(14)
 - **Foreign income of a resident** is taxed in Portugal with a credit for foreign tax (art. 81). Use `pt-foreign-source-treaties`.
 - **Foreign dividends and interest** not withheld in Portugal pay the 28% autonomous rate (art. 72(1)(d)), or 35% if the payer is in a listed low-tax jurisdiction (art. 72(18)(a)).
 - **Non-residents** with Portuguese salary or pensions suffer 25% final withholding (art. 71(4)(a) and (c)); Portuguese rent of a non-resident is taxed at 25% or 28% (art. 72(1)(e) and (2)). EU/EEA residents may elect to be taxed at the resident band rates on their worldwide income (art. 72(15) and (16)).
-- **Exit:** Decreto-Lei 97/2026 treats loss of residence as a sale of crypto assets (art. 10(25), art. 43(12)). For shares there is no general exit charge in the CIRS text read; see `portugal-crypto-tax` for crypto.
+- **Exit:** loss of residence is treated as a sale of crypto assets at market value (art. 10(25), art. 43(12)). The rule dates from Lei 24-D/2022; Decreto-Lei 97/2026 only renumbered it (it was art. 10(22)). For shares there is no general exit charge in the CIRS text read; see `portugal-crypto-tax` for crypto.
 - **NHR and IFICI:** check status first; see `pt-nhr-ifici`. Such taxpayers cannot use IRS Jovem (art. 12-B(9)).
 - **Deductions from the tax:** residents only (art. 78(5)).
 
@@ -262,6 +262,7 @@ expected:
 | CIRS art. 43, capital gains inclusion | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-10-22 |
 | CIRS art. 53, Category H specific deduction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx | 2026-10-22 |
 | CIRS art. 58 and 58-A, filing exemption and IRS automatico | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58a.aspx | 2026-10-22 |
+| CIRS art. 57(7), assets in listed low-tax jurisdictions to report in the return | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx | 2026-10-23 |
 | CIRS art. 59, married couples | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs59.aspx | 2026-10-22 |
 | CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-22 |
 | CIRS art. 71, final withholding rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-22 |
