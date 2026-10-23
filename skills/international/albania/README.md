@@ -29,3 +29,5 @@ Calendar tax year. Authority: the General Directorate of Taxes (Drejtoria e Për
 - Double tax treaties in force, General Directorate of Taxes: https://tatime.gov.al/legjislacioni/marreveshje-nderkombetare/ (read 2026-10-23)
 - General Instruction No. 26/2023 on income tax: https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf (read 2026-10-23)
 - Instruction No. 29 of 16.11.2023 on transfer pricing and advance pricing agreements: https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf (read 2026-10-23)
+- Council of Ministers Decision No. 77/2015 on compulsory social and health contributions, consolidated (ISSH copy): https://www.issh.gov.al/wp-content/uploads/2026/08/VENDIM-NR.-77-DATE-28.1.2015-PER-KONTRIBUTET-E-DETYRUESHME-DHE-PERFITIMET-NGA-SISTEMI-I-SIGURIMEVE-SHOQERORE-DHE-SIGURIMI-I-KUJDESIT-SHENDETESOR.pdf (read 2026-10-23)
+- 2026 minimum and maximum contribution bases, General Directorate of Taxes notice of 14.01.2026: https://tatime.gov.al/nga-1-janari-2026-rritet-paga-minimale-dhe-maksimale/ (read 2026-10-23)
