@@ -3,7 +3,7 @@ name: pt-social-contributions
 description: Use this skill whenever asked about Portuguese self-employed social contributions (contribuições para a Segurança Social). Trigger on phrases like "Segurança Social trabalhador independente", "Portuguese social contributions", "declaração trimestral SS", "contribuições independente Portugal", or any question about social contribution obligations for a self-employed client in Portugal. Covers the 21.4% rate on 70% of relevant income, quarterly declaration, and first-year exemption. ALWAYS read this skill before touching any Portugal social contributions work.
 version: 2.0
 jurisdiction: PT
-tax_year: 2025
+tax_year: 2026
 last_updated: 2026-10-23
 source_checked: 2026-10-17
 tier: 2
@@ -93,7 +93,7 @@ Legislation: Código Contributivo, art. 162
 
 - **Quarterly to monthly conversion formula** — quarterly_relevant_income = sum of relevant_income for the 3 months in the quarter monthly_relevant_income = quarterly_relevant_income / 3
 
-## Section 4 -- Rates, base, and bounds (2025)
+## Section 4 -- Rates, base, and bounds (2026)
 
 Legislation: Código Contributivo, art. 163, 168
 
