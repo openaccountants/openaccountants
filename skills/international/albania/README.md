@@ -3,8 +3,6 @@ jurisdiction: AL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial:
-  IT-IND: "albania-income-tax is written for tax year 2025 and leans on secondary sources; it needs a 2026 refresh from Law 29/2023 (only the ALL 14 million 0% rule was corrected on 2026-10-23; the self-declaration exception that Law 81/2025 added to the art. 12(1)(ç) self-employed reclassification rule is not yet reflected)"
 ---
 
 # Albania: tax pack
