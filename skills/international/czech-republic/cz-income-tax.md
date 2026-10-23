@@ -1,368 +1,258 @@
 ---
 name: cz-income-tax
-description: Use this skill whenever asked about Czech income tax for self-employed individuals (OSVČ). Trigger on phrases like "how much tax do I pay", "DPFO", "daňové přiznání", "income tax return", "výdajové paušály", "expense lump-sums", "paušální daň", "flat-rate tax", "sleva na dani", "tax credits", "self-employed tax Czech", or any question about filing or computing income tax for a self-employed or freelance client in the Czech Republic. ALWAYS read this skill before touching any Czech income tax work.
-version: 2.0
+description: "Czech personal income tax for the self-employed (OSVČ), tax year 2026. Covers business and professional income under § 7 of the Income Taxes Act, the expense lump sums (80%, 60%, 40% and 30% of income, capped at CZK 1,600,000, 1,200,000, 800,000 and 600,000), actual expenses and tax records, the 15% and 23% rates with the 2026 threshold of CZK 1,762,812, credits and the child tax benefit, losses, tax advances (zálohy), the flat-rate regime (paušální daň) with its three bands and 2026 monthly payments, and the return deadlines for 2026. Trigger on: OSVČ, živnostník, DPFO, daňové přiznání, výdajové paušály, výdaje procentem z příjmů, paušální daň, paušální režim, zálohy na daň, Czech freelancer tax, self-employed tax Czech Republic. Out of scope: employees and non-business income (cz-employee-income-tax), social and health insurance (cz-social-health), non-residents and treaties (cz-cross-border), companies (cz-corporate-income-tax), VAT (cz-vat-return)."
 jurisdiction: CZ
-tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - income-tax-workflow-base
 category: international
+tax_year: 2026
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+last_updated: 2026-10-23
+version: 0.1
+verified_by: pending
 ---
 
-# CZ Income Tax
-
-## Section 1 -- Quick reference
-
-**Quick reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Czech Republic (Česká republika) |
-| Tax type | Daň z příjmů fyzických osob (DPFO -- personal income tax) |
-| Primary legislation | Zákon č. 586/1992 Sb., o daních z příjmů |
-| Supporting legislation | Zákon č. 589/1992 Sb. (social insurance); Zákon č. 592/1992 Sb. (health insurance); Zákon č. 540/2020 Sb. (paušální daň) |
-| Tax authority | Finanční správa (Financial Administration) |
-| Filing portal | EPO / Daňový portál |
-| Currency | CZK only |
-| Tax rates | 15% up to CZK 1,676,052; 23% above |
-| Basic taxpayer credit | CZK 30,840/year (na poplatníka) |
-| Expense lump-sums | 80%/60%/40%/30% depending on activity |
-| Paušální daň | CZK 7,498--27,139/month (all-in) |
-| Filing deadline (paper) | 1 April |
-| Filing deadline (electronic) | 1 May |
-| Filing deadline (via daňový poradce) | 1 July |
-| Contributor | Open Accountants Community |
-| Validated by | Pending -- requires Czech daňový poradce sign-off |
-| Validation date | Pending |
-
-**Read this whole section before classifying anything.**
-
-**Expense methods at a glance**
-
-| Activity | Lump-sum % | Cap (CZK) |
-| --- | --- | --- |
-| Agriculture, craft trades (řemeslné živnosti) | 80% | 1,600,000 |
-| Other trades (živnostenské podnikání) | 60% | 1,200,000 |
-| Professional services (§ 7/1c, 7/2) | 40% | 800,000 |
-| Rental of business property (§ 9) | 30% | 600,000 |
-
-**Tax credits (slevy na dani, § 35ba)**  _(§ 35ba)_
-
-| Credit | Annual CZK |
-| --- | --- |
-| Basic taxpayer (na poplatníka) | 30,840 |
-| Spouse (caring for child under 3) | 24,840 |
-| Disability I/II | 2,520 |
-| Disability III | 5,040 |
-| ZTP/P holder | 16,140 |
-| Student | 4,020 |
-| 1st child | 15,204 |
-| 2nd child | 22,320 |
-| 3rd+ child | 27,840 |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown expense method | STOP -- must determine before computing |
-| Unknown expense category | Not deductible |
-| Unknown business-use proportion | 0% business use |
-| Unknown activity type for lump-sum | STOP -- rate depends on activity |
-
-## Section 2 -- Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable** — bank statement for the tax year. Acceptable from: ČSOB, Komerční banka, Fio banka, Česká spořitelna, Raiffeisenbank, MONETA Money Bank, or fintech (Revolut, Wise).
-- **Recommended** — sales invoices, purchase invoices (if real expenses), expense method choice, živnostenský list (trade licence).
-- **Ideal** — complete daňová evidence or accounting records, prior year DPFO, Přehled ČSSZ/VZP.
-
-### Refusal catalogue
-
-- **R-CZ-1 -- s.r.o. or a.s.** — This skill covers OSVČ only. s.r.o. files corporate income tax. Please use a separate skill. (Trigger: client operates through a legal entity.)
-- **R-CZ-2 -- International income / tax treaties** — International income is outside scope. Consult a daňový poradce. (Trigger: significant foreign income.)
-- **R-CZ-3 -- Crypto taxation** — Crypto classification is evolving. Escalate to daňový poradce. (Trigger: significant crypto trading.)
-- **R-CZ-4 -- Expense method unknown** — I cannot compute without knowing your expense method. Please confirm. (Trigger: client has not confirmed real/lump-sum/paušální.)
-
-## Section 3 -- Transaction pattern library (the lookup table)
-
-### 3.1 Czech banks (fees and interest)
-
-**Czech banks (fees and interest)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ČSOB, ČESKOSLOVENSKÁ OBCHODNÍ BANKA | Bank charges: deductible (if real expenses) | Monthly fees |
-| KOMERČNÍ BANKA, KB | Bank charges: deductible | Same |
-| FIO BANKA, FIO | Bank charges: deductible | Same |
-| ČESKÁ SPOŘITELNA, ČS | Bank charges: deductible | Same |
-| RAIFFEISENBANK | Bank charges: deductible | Same |
-| MONETA MONEY BANK | Bank charges: deductible | Same |
-| REVOLUT, WISE (fees) | Deductible | Fintech fees |
-| ÚROK, INTEREST (credit) | EXCLUDE from § 7 | Interest = § 8 capital income |
-| ÚROK, INTEREST (debit) | Deductible if business loan | Personal: EXCLUDE |
-| SPLÁTKA ÚVĚRU (loan repayment) | EXCLUDE | Principal movement |
+# Czech Republic: income tax for the self-employed (OSVČ) (2026) v0.1
+
+> **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team. No accountant has reviewed this skill yet. Every figure comes from the Income Taxes Act as published in e-Sbírka (version in force 1 August to 31 December 2026), the Tax Code, government regulations, MPSV and the Financial Administration, all read on 23 October 2026. It prepares working papers. It is not authority to file or pay.
+
+This skill covers individuals with income from self-employment under § 7 of Act No. 586/1992 Coll. on Income Taxes ("ITA"): trades, farming, licensed professions, independent professions, royalties and letting of business property. It links to the other skills in the pack rather than repeating them:
+
+- Employees, rental, capital and other non-business income, and the full rules on credits and § 15 deductions: [cz-employee-income-tax](cz-employee-income-tax.md).
+- Social and health insurance of the self-employed, including the annual overviews (přehledy): [cz-social-health](cz-social-health.md).
+- Residence, non-residents, treaties and withholding: [cz-cross-border](cz-cross-border.md).
+- VAT registration (which ends the flat-rate regime): [cz-vat-return](cz-vat-return.md).
+- Overview: [cz-tax-overview](cz-tax-overview.md).
+
+Tax year: the calendar year. Currency: Czech koruna (CZK). Authority: the Financial Administration (Finanční správa).
+
+## Who this applies to
+
+- **Self-employed individuals (OSVČ)** with income from self-employment under ITA § 7(1) and (2):
+  - farming, forestry and water management (§ 7(1)(a));
+  - trades under a trade licence (živnost) (§ 7(1)(b));
+  - other business that needs a business authorisation, such as licensed professions (§ 7(1)(c));
+  - a partner's share of profit in a v.o.s. or a general partner's share in a k.s. (§ 7(1)(d));
+  - royalties and use of industrial property and copyright (§ 7(2)(a)), letting of property held in the business (§ 7(2)(b)), and independent professions (§ 7(2)(c)).
+- **Residents** are taxed on worldwide income; **non-residents** on Czech-source income only (ITA § 2). The residence tests are in [cz-cross-border](cz-cross-border.md).
+- **Flat-rate regime (paušální režim).** A self-employed person who joins it pays one monthly amount covering income tax, pension insurance and health insurance, and files no return while the conditions hold (ITA § 2a, § 7a, § 38lh, § 38lk). The rules are below.
+- **Out of scope.** Employment income (§ 6) and rental, capital and other income outside a business (§§ 8 to 10): [cz-employee-income-tax](cz-employee-income-tax.md). A person with both kinds of income files one return with a partial base for each.
 
-### 3.2 Czech government and statutory bodies
+## Rates, bands and thresholds
 
-**Czech government and statutory bodies**
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Rate on the tax base up to 36 times the average wage | 15% | 2026 | [ITA § 16(1)(a)](https://e-sbirka.gov.cz/sb/1992/586/2026-08-01) |
+| Rate on the tax base above 36 times the average wage | 23% | 2026 | ITA § 16(1)(b) |
+| Average wage for tax purposes (ITA § 21g(2)) | CZK 48,967: general assessment base for 2024 of CZK 46,278 times coefficient 1.0581, rounded up | 2026 | [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365); Act 589/1992 § 23b(4) |
+| 23% threshold (36 × 48,967) | CZK 1,762,812 | 2026 | computed from the row above |
+| Expense lump sum: farming, forestry, water management and craft trades (řemeslné živnosti) | 80% of income, at most CZK 1,600,000 | 2026 | ITA § 7(7)(a) |
+| Expense lump sum: other trades | 60% of income, at most CZK 1,200,000 | 2026 | ITA § 7(7)(b) |
+| Expense lump sum: letting of property held in the business | 30% of income, at most CZK 600,000 | 2026 | ITA § 7(7)(c) |
+| Expense lump sum: other self-employment income (licensed and independent professions, royalties) | 40% of income, at most CZK 800,000 | 2026 | ITA § 7(7)(d) |
+| Basic taxpayer credit | CZK 30,840 a year | 2026 | ITA § 35ba(1)(a) |
+| Spouse credit | CZK 24,840, only with a child under 3 in the household and the spouse's own income at most CZK 68,000 | 2026 | ITA § 35bb |
+| Child tax benefit, first, second, third and further child | CZK 15,204; CZK 22,320; CZK 27,840 a year | 2026 | ITA § 35c(1) |
+| Income needed for a tax bonus | § 6 or § 7 income of at least 6 times the minimum wage: CZK 134,400 | 2026 | ITA § 35c(4), § 21g(1); [MPSV, minimum wage](https://www.mpsv.cz/minimalni-mzda) (CZK 22,400 a month) |
+| Student credit | None: § 35ba(1) lists no student credit for 2026 | 2026 | ITA § 35ba(1) |
+| Advances: none due | Last known tax liability up to CZK 30,000 | 2026 | ITA § 38a(2)(a) |
+| Advances: two a year | 40% of the last known tax each, if it was over CZK 30,000 and up to CZK 150,000 | 2026 | ITA § 38a(3) |
+| Advances: four a year | 25% of the last known tax each, if it was over CZK 150,000 | 2026 | ITA § 38a(4) |
+| Flat-rate regime, band I: income limit in the previous year | CZK 1,000,000 from any activity; CZK 1,500,000 if at least 75% is 80% or 60% lump-sum income; CZK 2,000,000 if at least 75% is 80% lump-sum income | 2026 | ITA § 2a(5)(a) |
+| Flat-rate regime, band II: income limit | CZK 1,500,000 from any activity; CZK 2,000,000 if at least 75% is 80% or 60% lump-sum income | 2026 | ITA § 2a(5)(b) |
+| Flat-rate regime, band III: income limit | CZK 2,000,000 from any activity | 2026 | ITA § 2a(5)(c) |
+| Band I monthly payment | CZK 9,162: tax CZK 100, pension insurance CZK 5,756, health insurance CZK 3,306. Reduced from CZK 9,984 from 1 July 2026 with effect back to 1 January 2026 | 2026 | ITA § 38lk(7)(a); [Finanční správa, paušální daň 2025 and 2026](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025) |
+| Band II monthly payment | CZK 16,745: tax CZK 4,963, pension insurance CZK 8,191, health insurance CZK 3,591 | 2026 | ITA § 38lk(7)(b); Finanční správa, same page |
+| Band III monthly payment | CZK 27,139: tax CZK 9,320, pension insurance CZK 12,527, health insurance CZK 5,292 | 2026 | ITA § 38lk(7)(c); Finanční správa, same page |
+| Late payment interest | CNB repo rate on the first day of the half-year plus 8 points: 11.50% for 1 January to 30 June 2026, 11.75% for 1 July to 31 December 2026 | 2026 | [Tax Code § 252, § 251a(5)](https://e-sbirka.gov.cz/sb/2009/280/2026-01-01); [Government Regulation 351/2013 § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) |
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| FINANČNÍ ÚŘAD, FÚ | EXCLUDE | Tax payment |
-| ČSSZ (social insurance) | NOT deductible from income tax base | Social insurance ≠ income deduction |
-| VZP, OBOROVÁ ZP, ZPMV (health insurance) | NOT deductible from income tax base | Health insurance ≠ income deduction |
-| ŽIVNOSTENSKÝ ÚŘAD | Deductible | Trade licence fees |
-| Czech POINT | Deductible | Administrative fees |
+The tax is worked out on the base after deductions, rounded down to whole hundreds of CZK, as the sum of each slice times its rate (ITA § 16(2)). The tax is then rounded up to whole CZK, and each advance up to whole hundreds of CZK (Tax Code § 146(1), (2)).
 
-### 3.3 Czech utilities and telecoms
+## The taxable base
 
-**Czech utilities and telecoms**
+**Partial base from self-employment (ITA § 7(3)).** Income under § 7(1) and (2) less the expenses spent to earn, secure and keep it. A partner's share of profit in a v.o.s. or k.s. is not reduced by expenses (§ 7(3)). The partner instead takes their share of the partnership's base or loss (§ 7(4), (5)). The base is worked out under §§ 23 to 33.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ČEZ, E.ON, PRE | Deductible if business premises | Electricity; apportion if home |
-| INNOGY, PRAŽSKÁ PLYNÁRENSKÁ | Deductible if business premises | Gas |
-| T-MOBILE CZ, O2, VODAFONE CZ | Deductible: business phone/internet | Mixed: apportion |
-| UPC, UNET | Deductible: business internet | Mixed: apportion |
+**Method 1: expense lump sum (výdaje procentem z příjmů, § 7(7)).** Instead of proving expenses, the taxpayer deducts a fixed share of income:
 
-### 3.4 SaaS and software -- international
+- 80% of income from farming, forestry, water management and craft trades, at most CZK 1,600,000;
+- 60% of income from other trades, at most CZK 1,200,000;
+- 30% of income from letting property held in the business, at most CZK 600,000;
+- 40% of other self-employment income (licensed and independent professions, royalties), at most CZK 800,000.
 
-**SaaS and software -- international**
+Rules that follow from it:
 
-| Pattern | Billing entity | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META | IE/LU entities | Deductible expense | Reverse charge DPH |
-| GITHUB, OPENAI, ANTHROPIC | US entities | Deductible expense | Non-EU |
-| SLACK, ZOOM, ATLASSIAN | Various | Deductible expense | Check entity |
-
-### 3.5 Professional services (Czech)
-
-**Professional services (Czech)**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ÚČETNÍ, ÚČETNICTVÍ | Deductible | Accounting fees |
-| ADVOKÁT, PRÁVNÍK | Deductible if business | Legal fees |
-| DAŇOVÝ PORADCE | Deductible | Tax advisory |
-| NOTÁŘ | Deductible if business | Notary fees |
-
-### 3.6 Transport and travel
-
-**Transport and travel**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ČESKÉ DRÁHY, ČD | Deductible if business travel | Train |
-| REGIOJET, LEO EXPRESS | Deductible if business travel | Private rail |
-| LÍTAČKA, DPP (Prague transport) | Deductible if business travel | Public transport |
-| MOL, BENZINA, OMV, SHELL CZ | Deductible: business portion only | Fuel |
-| LETADLO, RYANAIR, WIZZAIR | Deductible if business travel | Flights |
-
-### 3.7 Office and supplies
-
-**Office and supplies**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ALZA.CZ, CZC.CZ, DATART | Capital if significant; else expense | IT equipment |
-| IKEA CZ, HORNBACH | Capital or expense depending on value | Office items |
-| ČESKÁ POŠTA | Deductible | Postage |
-
-### 3.8 Food and entertainment
-
-**Food and entertainment**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ALBERT, TESCO, KAUFLAND, LIDL CZ, BILLA | Default: NOT deductible | Personal provisioning |
-| RESTAURACE (any restaurant) | Deductible if documented business purpose | Document attendees and purpose |
-
-### 3.9 Internal transfers and exclusions
-
-**Internal transfers and exclusions**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| VLASTNÍ PŘEVOD, OWN TRANSFER | EXCLUDE | Internal movement |
-| VÝBĚR, ATM | EXCLUDE (default: drawings) | Ask what cash used for |
-| VKLAD | EXCLUDE | Owner deposit |
-
-## Section 4 -- Worked examples
-
-### Example 1 -- IT freelancer, 40% lump-sum
-
-**Input:** Revenue CZK 1,200,000, 40% lump-sum (professional services), single.
-**Computation:** Lump-sum = CZK 480,000. Tax base = CZK 720,000. Tax at 15% = CZK 108,000. Less basic credit CZK 30,840. Final tax = CZK 77,160.
-
-### Example 2 -- Paušální daň eligibility
-
-**Input:** Revenue CZK 900,000, not VAT registered, no employees, no partnership.
-**Result:** Eligible for Band 1. Monthly payment CZK 7,498. Annual = CZK 89,976. No DPFO filing.
-
-### Example 3 -- Lump-sum cap hit
-
-**Input:** IT freelancer (40%), revenue CZK 2,500,000. Real expenses CZK 1,100,000.
-**Lump-sum:** 40% = CZK 1,000,000, capped at CZK 800,000. Tax base = CZK 1,700,000.
-**Real expenses:** CZK 1,100,000. Tax base = CZK 1,400,000.
-**Conclusion:** Real expenses save CZK 300,000 in tax base. Recommend real expenses.
-
-### Example 4 -- Parent with tax bonus
-
-**Input:** Single parent, revenue CZK 400,000, 40% lump-sum, 3 children.
-**Computation:** Tax base = CZK 240,000. Tax = CZK 36,000. Less basic CZK 30,840 = CZK 5,160. Less child credits CZK 65,364. Tax bonus (refund) = CZK 60,204 (capped at CZK 60,300).
-
-## Section 5 -- Tier 1 rules (deterministic)
-
-### 5.1 Tax rates
-
-- **Tax rates** — 15% on first CZK 1,676,052 of tax base. 23% above. No tax-free band -- zero tax achieved through basic credit.  _(§ 16)_
-
-### 5.2 Expense lump-sums
-
-- **Expense lump-sums rules** — Cannot combine lump-sum and real expenses for the same activity. Lump-sum users need not keep expense receipts but MUST keep income records.  _(§ 7 odst. 7)_
-
-### 5.3 Paušální daň
-
-- **Paušální daň eligibility and rules** — Single monthly payment (tax + social + health). Eligibility: revenue up to CZK 2,000,000, not VAT payer, no employees, no partnership, main activity. Registration by 10 January. No DPFO filing.  _(Zákon č. 540/2020 Sb.)_
-
-### 5.4 Social and health insurance
-
-- **Social and health insurance** — Assessment base = 50% of § 7 partial tax base. Social: 29.2%. Health: 13.5%. NOT deductible from income tax base.  _(Zákon č. 589/1992, 592/1992)_
-
-### 5.5 Loss carry-forward
-
-- **Loss carry-forward** — 5 years. Only available with real expenses -- not lump-sum.  _(§ 34)_
-
-### 5.6 Non-taxable deductions (§ 15)
-
-- **Non-taxable deductions** — Mortgage interest (max CZK 150,000), pension contributions (max CZK 24,000), life insurance (max CZK 24,000), charity (min CZK 1,000 or 2% of base, max 15%).  _(§ 15)_
-
-## Section 6 -- Tier 2 catalogue
-
-### 6.1 Choosing real vs lump-sum expenses
-
-- **Choosing real vs lump-sum expenses** — *Why:* Depends on actual expense level vs lump-sum cap. *Default:* Present both computations. *Question:* "What are your total documented business expenses?"
-
-### 6.2 Switching expense methods (transition adjustment)
-
-- **Switching expense methods (transition adjustment)** — *Why:* Receivables/payables must be adjusted. *Default:* Flag for reviewer. *Question:* "Did you switch from lump-sum to real expenses (or vice versa) this year?"
-
-### 6.3 Spouse credit eligibility
-
-- **Spouse credit eligibility** — *Why:* Since 2025, only when caring for child under 3. *Default:* Do not apply without confirmation. *Question:* "Do you care for a child under 3?"
-
-### 6.4 VAT registration forcing paušální exit
-
-- **VAT registration forcing paušální exit** — *Why:* VAT registration terminates paušální daň. *Default:* If VAT-registered, paušální invalid. *Question:* "Are you VAT registered or approaching the CZK 2,000,000 threshold?"
-
-## Section 7 -- Excel working paper template
-
-### Sheet "Transactions"
-
-Columns: Date, Counterparty, Description, Amount (CZK), Category (Revenue/Expense/Depreciation/EXCLUDE), Deductible amount, Default?, Question, Notes.
-
-### Sheet "Tax Computation"
-
-Step-by-step per Section 5, branching by expense method.
-
-## Section 8 -- Bank statement reading guide
-
-**CSV formats.** ČSOB uses semicolons with DD.MM.YYYY. Komerční banka uses CSV with various delimiters. Fio banka offers clean CSV with YYYY-MM-DD. Common columns: Datum (Date), Protiúčet (Counterparty), Částka (Amount), Poznámka (Note).
-
-**Czech language variants.** Common: příjem (income), výdaj (expense), poplatek (fee), úrok (interest), převod (transfer), vklad (deposit), výběr (withdrawal).
-
-- **Insurance payments** — ČSSZ (social) and health insurance payments are separate from income tax. They are NOT deductible from the income tax base (unlike Poland).
-
-## Section 9 -- Onboarding fallback
-
-### 9.1 Entity type
-
-- **Entity type** — *Inference:* OSVČ from bank account type. *Fallback:* "Are you OSVČ or operating through an s.r.o.?"
-
-### 9.2 Expense method
-
-- **Expense method** — *Inference:* Not inferable. Always ask. *Fallback:* "Real expenses, lump-sum, or paušální daň?"
-
-### 9.3 Activity type
-
-- **Activity type** — *Inference:* From counterparty mix. *Fallback:* "What is your živnost type? Řemeslná, volná, or professional?"
-
-### 9.4 VAT status
-
-- **VAT status** — *Inference:* DPH payments in statement. *Fallback:* "Are you a DPH payer?"
-
-### 9.5 Family status
-
-- **Family status** — *Inference:* Not inferable. *Fallback:* "Married? Children? (Affects credits.)"
-
-## Section 10 -- Reference material
-
-### Test suite
-
-**Test 1 -- IT freelancer, lump-sum.** Revenue CZK 1,200,000, 40%, single. Tax = CZK 77,160.
-**Test 2 -- Craftsman near cap.** Revenue CZK 2,200,000, 80%, cap CZK 1,600,000. Tax = CZK 59,160.
-**Test 3 -- High earner, 23% band.** Revenue CZK 4,000,000, real expenses CZK 1,500,000. Tax = CZK 410,076.
-**Test 4 -- Paušální daň.** Revenue CZK 900,000. Band 1, CZK 89,976/year.
-**Test 5 -- Tax bonus.** Parent, 3 children, CZK 400,000 revenue, 40% lump-sum. Bonus CZK 60,204.
-
-### Edge case registry
-
-**EC1 -- Lump-sum cap exceeded.** Apply cap, not computed percentage.
-**EC2 -- Paušální daň revenue exceeded.** Band shift or full exit.
-**EC3 -- VAT forces paušální exit.** Must file standard DPFO.
-**EC4 -- Employment + freelance combined.** Both partial bases on one return.
-**EC5 -- Student + parent credits.** Both claimable (separate credits).
-**EC6 -- Expense method switch.** Transition adjustment mandatory.
-**EC7 -- Losses with lump-sum.** Cannot carry forward losses under lump-sum.
-**EC8 -- Health insurance minimum.** Must pay minimum even if below threshold.
-
-### Prohibitions
-
-- NEVER compute without determining expense method
-- NEVER exceed lump-sum caps
-- NEVER file DPFO for valid paušální daň taxpayer
-- NEVER apply basic credit more than once
-- NEVER allow both parents to claim same child credit
-- NEVER treat social/health insurance as income tax deductible
-- NEVER carry forward losses under lump-sum expenses
-- NEVER advise on crypto, international structures, or tax treaties
-- NEVER present calculations as definitive
-- NEVER skip transition adjustment when switching expense methods
-
-### Sources
-
-1. Zákon č. 586/1992 Sb. (Income Tax Act)
-2. Zákon č. 540/2020 Sb. (Paušální daň)
-3. Zákon č. 589/1992 Sb. (Social insurance)
-4. Zákon č. 592/1992 Sb. (Health insurance)
-5. Finanční správa -- https://www.financnisprava.cz
-
-### Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a daňový poradce or equivalent licensed practitioner in the Czech Republic) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+- The lump sum covers every expense of the self-employment (§ 7(8)). Nothing is deducted on top. Social and health insurance the self-employed person pays for themselves is not deductible under either method (§ 25(1)(g)).
+- The choice cannot be changed back for that year once made (§ 7(7)).
+- The taxpayer must keep records of income and of receivables (§ 7(8)).
+- Income means the income the person would have if they did not keep accounts, so cash received (§ 7(8)).
+- A person with activities in different lump-sum groups applies each percentage and cap to the income of that activity.
+- The lump sum cannot exceed income, so it cannot create a tax loss.
+
+**Method 2: actual expenses.** The taxpayer deducts expenses actually incurred (§ 24) and keeps tax records (daňová evidence) of income, expenses, assets and debts (§ 7b), or full accounts. Tax depreciation of business assets is in §§ 26 to 33. Expenses listed in § 25 are never deductible.
+
+**Switching methods.** Moving from actual expenses to the lump sum, or into the flat-rate regime, means adjusting the base of the last year on actual expenses. Unpaid receivables are added and unpaid debts deducted (§ 23(8)). The adjustment is made by a supplementary return by the deadline for the year in which the method changed.
+
+**Losses (§ 34(1)).** A tax loss from actual expenses can be deducted from the base of the 5 following years, or from the 2 preceding years (carry back up to CZK 30,000,000 in total). For an individual, a loss can only be set against the partial bases under §§ 7 to 10, not against employment income. A person with a tax loss must file even below the CZK 50,000 income threshold (§ 38g(1)).
+
+**Deductions from the base (§ 15).** Pension and life insurance products (up to CZK 48,000 a year in total), housing loan interest (up to CZK 150,000, or CZK 300,000 for housing acquired before 2021) and donations (over 2% of the base or at least CZK 1,000, at most 15%). They come off the total base after the partial bases are added. Detail: [cz-employee-income-tax](cz-employee-income-tax.md).
+
+**Credits and the child tax benefit (§§ 35ba to 35c).** They come off the tax. Credits come first, then the child benefit. Any child benefit above the tax is paid as a tax bonus of at least CZK 100. The bonus needs § 6 or § 7 income (gross income, not base) of at least CZK 134,400 in 2026 (§ 35c(3), (4)). The full rules are in [cz-employee-income-tax](cz-employee-income-tax.md). They apply in the same way to the self-employed, whatever expense method they use.
+
+**Flat-rate regime (paušální daň).** A person in the regime pays a fixed monthly amount. No base is computed while the conditions below hold.
+
+- **Who can join (§ 2a(1)).** On 1 January of the year, the person must meet all of these:
+  - be self-employed for pension and health insurance, and not exempt from health insurance for a long stay abroad;
+  - not be a VAT payer or required to register for VAT (registration as an identified person is allowed);
+  - not be a partner in a v.o.s. or a general partner in a k.s.;
+  - not be in insolvency proceedings;
+  - have no employment at that date, other than income taxed by final withholding.
+
+  They must also have stayed within the band's income limit in the previous year, and notify the tax office.
+- **Bands (§ 2a(5)).** The person picks a band. A person may always pick a higher band than the lowest one they qualify for. The income limits are in the table above. The 75% tests use the lump-sum percentage that would apply to the activity, whether or not the person used the lump sum.
+- **Tax equal to the flat tax (§ 7a(1)).** At the year end, the tax equals the flat tax if all of these hold:
+  - the person stayed within the band's limit, or exceeded it but stayed within a higher band's limit and notified the higher amount;
+  - besides self-employment income, they had only exempt income, income outside the scope of tax, income taxed by final withholding, and up to CZK 50,000 of capital, rental and other income;
+  - they were not a VAT payer and not a partner in a v.o.s. or k.s.;
+  - as a resident, they do not claim relief from double tax on foreign income (§ 7a(5)).
+
+  The flat tax is the number of months in the regime times the monthly tax part (§ 7a(6)).
+- **Leaving.** The regime ends after a year in which the person exceeded the band limit (unless they notify a higher band that fits), registered for VAT or joined a v.o.s. or k.s. (§ 2a(8)). It can also be left voluntarily. If the tax for a year is not equal to the flat tax, the person files a normal return for that year (§ 38g(7)). The monthly payments made count towards the tax and the insurance.
+
+## Deadlines and filing
+
+**Return for tax year 2026 (Tax Code § 136, § 33(4)).** The return is due within 3 months of the year end. That becomes 4 months if it is filed electronically after the 3 months, and 6 months if a tax adviser or advocate files it after the 3 months, or if an audit is compulsory. A deadline on a weekend or public holiday moves to the next working day. The Financial Administration gave the 2025 dates as 1 April, 4 May and 1 July 2026 ([Finanční správa](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace)). Counting the same way for 2026:
+
+- paper or electronic: **1 April 2027** (Thursday);
+- electronic, after 1 April: **3 May 2027**, because 1 May 2027 is a Saturday and a public holiday;
+- tax adviser or advocate: **1 July 2027**.
+
+The tax is due on the last day for filing. Anyone whose taxable income is over CZK 50,000, or who has a tax loss, must file (ITA § 38g(1)). A person with a data box set up by law files electronically (Tax Code § 72). The self-employed also file annual overviews with ČSSZ and their health insurer: see [cz-social-health](cz-social-health.md).
+
+**Tax advances (ITA § 38a).** They depend on the last known tax liability (the tax on the last return):
+
+- up to CZK 30,000: no advances;
+- over CZK 30,000 and up to CZK 150,000: two advances of 40% each, due 15 June and 15 December;
+- over CZK 150,000: four advances of 25% each, due 15 March, 15 June, 15 September and 15 December.
+
+The advance period runs from the day after the return deadline to the next return deadline (§ 38a(1)). Each advance is rounded up to whole hundreds of CZK (Tax Code § 146(2)). Advances are reduced or dropped where employment income with payroll withholding is part of the base: none if it is 50% or more of the total base, half if it is 15% to 50% (§ 38a(5)). Advances paid late count towards the tax only if paid by the return deadline (§ 38a(1)).
+
+**Flat-rate regime.**
+
+- Notice to join: by 10 January of the year (§ 38lc(1)). For 2027 that is **11 January 2027**, because 10 January 2027 is a Sunday. A person starting a business later in the year notifies by the day the business starts (§ 38lc(2)). A late notice has no effect and the deadline cannot be restored (§ 38lc(6)).
+- Notice to change band, notice of a different flat tax amount, and notice to leave voluntarily: each by 10 January of the relevant year (§§ 38lda, 38ldb, 38le).
+- Notice that the regime has ended (for example on VAT registration): within 15 days (§ 38lg).
+- Monthly payment: by the 20th of each month to the shared personal tax account. In the month a business starts, the first payment is due by the 20th of the next month (§ 38lk(5), (6)).
+- No return: the person is treated as having filed a return showing the flat tax on the last filing day (§ 38lh(1)). The tax and the flat insurance are assessed and due on that day (§ 38li, § 38lj).
+
+## Penalties and interest
+
+- **Late return** (Tax Code § 250). If the return is more than 5 working days late, the penalty is 0.05% of the tax for each further day, capped at 5% of the tax. For a late return showing a loss, it is 0.01% of the loss a day, capped at 5%. Other rules:
+  - A penalty under CZK 1,000 is not charged (§ 250(3)).
+  - A return never filed is charged the full cap, and at least CZK 500 (§ 250(4)).
+  - The maximum is CZK 300,000 (§ 250(5)).
+  - The penalty is halved if the return is filed within 30 days of the deadline and there was no other late filing that year (§ 250(7)).
+- **Tax assessed by the tax office.** 20% penalty (penále) on extra tax over the last known tax, and 1% on a reduction of a loss (Tax Code § 251(1)).
+- **Late payment interest** on unpaid tax and advances. It runs from the fourth day after the due date (Tax Code § 252(2)). The rate is the CNB repo rate on the first day of the half-year plus 8 points (Government Regulation 351/2013 § 2): 11.50% a year for January to June 2026 and 11.75% for July to December 2026 (CNB repo 3.50% from 9 May 2025 and 3.75% from 19 June 2026). Interest of CZK 1,000 or less in total for one tax and period is not charged (§ 251a(2)).
+- **Flat-rate regime.** Failing a condition must be reported within 15 days of finding it (ITA § 38lf). The person then files a normal return and pays tax and insurance under the normal rules.
+
+## Cross-border points
+
+- **Non-residents** with a Czech permanent establishment or Czech-source business income file a return on that income (ITA § 22). The basic credit applies. The other credits, the child benefit and the § 15 deductions need EU or EEA residence and at least 90% of world income from Czech sources (§ 35ba(2), § 35c(5), § 15(8)). See [cz-cross-border](cz-cross-border.md).
+- **Flat-rate regime.** It ends in the month a person becomes non-resident and stops working in Czechia (§ 2a(8)(e)). It also ends the month before a health insurance exemption for a long stay abroad starts (§ 2a(8)(d)). A resident who claims treaty relief on foreign income in a return loses the flat tax for that year (§ 7a(5)).
+- **Foreign business income of a resident** goes into the base, with relief under the treaty (§ 38f). Withholding on payments to non-residents (15%, 35% to non-cooperative states) and the tax security are in [cz-cross-border](cz-cross-border.md).
+- **Social insurance** for people working in more than one EU state follows the EU coordination rules: see [cz-social-health](cz-social-health.md).
+
+## Worked examples
+
+### Example 1: trader on the 60% lump sum, single, two advances the next year
+
+She runs a free trade (not a craft trade) and has income of CZK 1,200,000 in 2026. She uses the 60% lump sum. She has no other income, no children and no deductions.
+
+1. Lump sum: 60% of CZK 1,200,000 is CZK 720,000, under the CZK 1,200,000 cap.
+2. Partial base: CZK 1,200,000 less CZK 720,000 = CZK 480,000, already a whole hundred.
+3. Tax at 15%: CZK 72,000. Less the basic credit of CZK 30,840: CZK 41,160.
+4. The tax is due by 1 April 2027 (or 3 May 2027 if filed electronically after 1 April).
+5. CZK 41,160 is over CZK 30,000 and under CZK 150,000, so in the next advance period she pays two advances of 40%. 40% of 41,160 is 16,464, rounded up to CZK 16,500, due 15 June and 15 December 2027.
+
+Her 2026 income was under CZK 1,500,000, and all of it is 60% lump-sum income. So for 2027 she could also join band I of the flat-rate regime (CZK 9,162 a month at 2026 rates, covering tax and insurance). That needs a notice by 11 January 2027. Compare the two only after working out her social and health insurance in [cz-social-health](cz-social-health.md).
+
+```oa-check
+name: OSVČ free trade, income CZK 1,200,000, 60% lump sum (2026)
+inputs:
+  income: 1200000
+  basic_credit: 30840
+steps:
+  - lump_sum: min(income * 0.60, 1200000)
+  - base: floor((income - lump_sum) / 100) * 100
+  - tax: ceil(base * 0.15 - basic_credit)
+  - advance: ceil(tax * 0.40 / 100) * 100
+expected:
+  lump_sum: 720000
+  base: 480000
+  tax: 41160
+  advance: 16500
+```
+
+### Example 2: professional above the lump-sum cap and the 23% threshold
+
+He is an independent professional (40% lump-sum group) with income of CZK 3,000,000 in 2026. His documented business expenses are CZK 1,000,000. He has no other income, no children and no deductions. He compares the two methods.
+
+1. Lump sum: 40% of CZK 3,000,000 is CZK 1,200,000, capped at CZK 800,000. Base: CZK 2,200,000.
+2. Actual expenses: base CZK 3,000,000 less CZK 1,000,000 = CZK 2,000,000.
+3. Tax on the lump-sum base: 15% of CZK 1,762,812 is CZK 264,421.80. 23% of the excess of CZK 437,188 is CZK 100,553.24. Total CZK 364,975.04. Less the basic credit: CZK 334,135.04, rounded up to CZK 334,136.
+4. Tax on the actual-expenses base: CZK 264,421.80 plus 23% of CZK 237,188 (CZK 54,553.24) = CZK 318,975.04. Less the basic credit: CZK 288,135.04, rounded up to CZK 288,136.
+5. Actual expenses save CZK 46,000 of income tax: the extra CZK 200,000 of expenses, all taxed at 23%. They also lower the base for social and health insurance (see [cz-social-health](cz-social-health.md)). Under actual expenses he must keep tax records (§ 7b).
+6. Either way, his tax is over CZK 150,000, so he pays four quarterly advances in the next period. Each is 25% of CZK 288,136 = 72,034, rounded up to CZK 72,100.
+
+His income is over CZK 2,000,000, so the flat-rate regime is not open to him for 2027.
+
+```oa-check
+name: OSVČ professional, income CZK 3,000,000, lump sum vs actual expenses CZK 1,000,000 (2026)
+inputs:
+  income: 3000000
+  actual_expenses: 1000000
+  threshold: 1762812
+  basic_credit: 30840
+steps:
+  - lump_sum: min(income * 0.40, 800000)
+  - base_lump: floor((income - lump_sum) / 100) * 100
+  - base_actual: floor((income - actual_expenses) / 100) * 100
+  - tax_lump: ceil(min(base_lump, threshold) * 0.15 + max(base_lump - threshold, 0) * 0.23 - basic_credit)
+  - tax_actual: ceil(min(base_actual, threshold) * 0.15 + max(base_actual - threshold, 0) * 0.23 - basic_credit)
+  - saving: tax_lump - tax_actual
+  - quarterly_advance: ceil(tax_actual * 0.25 / 100) * 100
+expected:
+  lump_sum: 800000
+  base_lump: 2200000
+  base_actual: 2000000
+  tax_lump: 334136
+  tax_actual: 288136
+  saving: 46000
+  quarterly_advance: 72100
+```
+
+## Ask the client first
+
+1. What the activity is, and under which licence: craft trade, other trade, licensed or independent profession, royalties, or letting of business property. This sets the lump-sum percentage, its cap and the flat-rate bands.
+2. Income for the year, and documented business expenses if any. This decides lump sum or actual expenses, and whether the 23% rate applies.
+3. Whether they are a VAT payer or must register, are a partner in a v.o.s. or k.s., or had employment on 1 January. Each rules out the flat-rate regime.
+4. Whether they are in the flat-rate regime now, in which band, and whether income stayed within that band's limit.
+5. Other income: employment, rent, capital, foreign income, sales of property or securities. This affects filing, advances and the flat-rate test.
+6. Children in the household, a spouse with a child under 3, and payments that give deductions (pension and life insurance products, mortgage interest, donations).
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Act No. 586/1992 Coll., Income Taxes Act, version in force 1 August to 31 December 2026: §§ 2, 2a, 7, 7a, 7b, 15, 16, 21g, 23, 25, 34, 35ba, 35bb, 35c, 38a, 38g, 38lc to 38lk | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-10-23 |
+| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 136, 146, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 |
+| Government Regulation No. 365/2025 Coll., § 1 (general assessment base 2024 and coefficient) | https://e-sbirka.gov.cz/sb/2025/365 | 2026-10-23 |
+| Government Regulation No. 351/2013 Coll., § 2 (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
+| Finanční správa, Informace k institutu paušální daně pro rok 2025 a 2026 (bands, 2026 monthly payments, band I change from 1 July 2026) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025 | 2026-10-23 |
+| Finanční správa, Fyzické osoby: obecné informace (2025 filing dates) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace | 2026-10-23 |
+| MPSV, Minimální mzda (CZK 22,400 a month for 2026) | https://www.mpsv.cz/minimalni-mzda | 2026-10-23 |
+| Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
+
+Not yet confirmed:
+- The Financial Administration had not published the filing dates for the 2026 return. The 1 April, 3 May and 1 July 2027 dates come from Tax Code §§ 33 and 136 and the way it counted the 2025 dates.
+- The act that cut the band I payment from CZK 9,984 to CZK 9,162 from 1 July 2026 was not read; the figure comes from the Financial Administration page. The pension and health parts of each band come from the social and health insurance acts, which were not read for this skill.
+- Applying each lump-sum percentage and cap per activity, for a person with activities in more than one group, follows the wording of § 7(7); no Financial Administration instruction on it was read.
+- 2026 social and health insurance of the self-employed (minimum advances, assessment bases) is not covered here. cz-social-health still carries 2025 figures.

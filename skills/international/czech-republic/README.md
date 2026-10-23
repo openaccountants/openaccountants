@@ -4,7 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: cz-income-tax covers the self-employed (OSVČ) only, tax year 2025
   SC: cz-social-health covers the self-employed (OSVČ) only, not employee or employer contributions
 ---
 
@@ -16,7 +15,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cz-income-tax (self-employed only, tax year 2025; employment income under ITA § 6 is not covered) | partial, source-cited draft |
+| IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, expense lump sums and the flat-rate regime, tax year 2026) | source-cited draft |
 | IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
 | SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
