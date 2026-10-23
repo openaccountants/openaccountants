@@ -40,7 +40,7 @@ See also: `albania-income-tax`, `al-corporate-tax`, `al-cross-border` (tax repre
 
 **Every taxable person**, VAT-registered or not, must declare the start of its economic activity and register within 15 days of starting (art. 91(1)). The tax administration can register a person who should have registered (art. 91(4)).
 
-**Special regimes** that this skill names but does not work through: travel agents (arts. 123 to 128), second-hand goods, art and antiques margin scheme (arts. 129 to 137), auctions (arts. 138 to 144), agricultural producers' flat-rate compensation at 10% (arts. 145 to 150), and investment gold (arts. 151 to 155/3).
+**Special regimes** that this skill names but does not work through: travel agents (arts. 123 to 128), second-hand goods, art and antiques margin scheme (arts. 129 to 137), auctions (arts. 138 to 144), agricultural producers' flat-rate compensation at 10% (arts. 145 to 150), investment gold (arts. 151 to 155), and electricity sold through the Albanian Power Exchange, which is exempt, with the buyer reverse-charging VAT on purchases from the exchange until 31 December 2026 (arts. 155/1 to 155/3).
 
 ## Rates, bands and thresholds
 
@@ -54,7 +54,7 @@ See also: `albania-income-tax`, `al-corporate-tax`, `al-cross-border` (tax repre
 | Licensed public passenger buses with 9+1 seats or more, electric motor only (supply of the vehicles) | 6% | 2026 | Law 92/2014 art. 49(7) |
 | Books of every kind | 6% | 2026 | Law 92/2014 art. 49(8) |
 | Construction works for sports infrastructure (state investment of sports clubs or federations, or private investment, as defined in sports law) | 6% | 2026 | Law 92/2014 art. 49(9) |
-| Agricultural inputs: chemical fertilisers, pesticides, seeds and seedlings (not hormones in CN 2937), on the Council of Ministers list | 10% | 2026 | Law 92/2014 art. 49(10) |
+| Agricultural inputs: chemical fertilisers, pesticides, seeds and seedlings (not hormones in CN 2937), on the Council of Ministers list | 10% | 2026 | Law 92/2014 art. 49(10); VKM 953/2014 art. 8/1(1) and Annex 4 (the list) |
 | Exports of goods, processing under inward processing for re-export, transport and ancillary services linked to imports or exports | 0% | 2026 | Law 92/2014 art. 57 |
 | International transport of passengers; supplies for sea-going vessels and international aircraft | 0% | 2026 | Law 92/2014 art. 59 |
 | Diplomatic and consular supplies, international organisations, donor-funded projects where the agreement bars paying tax, NATO forces | 0% | 2026 | Law 92/2014 art. 60 |
@@ -79,7 +79,7 @@ See also: `albania-income-tax`, `al-corporate-tax`, `al-cross-border` (tax repre
 - supply of buildings or parts of buildings and the land they stand on, other than the construction process itself; supply of undeveloped land;
 - letting of immovable property, except lettings of buildings up to two months, hotel and holiday accommodation, parking and vehicle storage, fixed equipment and machinery, and safe deposit boxes (these are taxable);
 - printed newspapers and magazines, printing of newspapers, and advertising in print media;
-- betting, lotteries and games of chance; postal universal service; agricultural machinery on the Council of Ministers list; veterinary services except for pets; new electric-only vehicles never registered before (other than the art. 49(7) buses).
+- betting, lotteries and games of chance; postal universal service; agricultural machinery on the Council of Ministers list (VKM 953/2014 art. 8(3), Annex 1/A); veterinary services except for pets; new electric-only vehicles never registered before (other than the art. 49(7) buses).
 
 The Minister of Finance may allow an option to tax certain financial and real estate supplies (art. 55).
 
@@ -142,7 +142,7 @@ All from Law No. 9920/2008 on tax procedures, as amended, unless another act is 
 | Failure | Penalty | Source |
 |---|---|---|
 | Failure to register or update registration data | ALL 10,000 for individuals, ALL 15,000 for legal persons, per breach | art. 112 |
-| Late filing of a return | Per return: ALL 10,000 for corporate income taxpayers; ALL 5,000 for other taxpayers except individuals; ALL 3,000 for individual taxpayers | art. 113 |
+| Late filing of a return, including a VAT return | ALL 10,000 per late return for a corporate income taxpayer; ALL 5,000 for other taxpayers except individuals; ALL 3,000 for individual taxpayers. The band follows the taxpayer's category, not the type of return, so a company that pays corporate income tax and files its VAT return late pays ALL 10,000 for that return. The fine is charged once per return, however long the delay, and the late payment fine of art. 114 is charged on top | art. 113; [Instruction No. 24/2008 para. 113.1](https://tatime.gov.al/wp-content/uploads/2026/01/UMF-nr.24-date-02.09.2008-Per-Procedurat-Tatimore-i-ndryshuar.pdf) |
 | Late payment | 0.06% of the unpaid amount for each day, for at most 365 days | art. 114(1) |
 | Incorrect return (underpaid tax) | 0.06% of the unpaid amount for each day, for at most 365 days | art. 115(1) |
 | Excess credit reduced on audit | 20% of the difference between the credit declared and the credit that should have been declared | art. 115(3) |
@@ -172,9 +172,9 @@ All from Law No. 9920/2008 on tax procedures, as amended, unless another act is 
 
 **Non-established suppliers to non-registered customers** (consumers, small businesses, unregistered public bodies) must appoint an Albanian tax representative to account for the VAT (arts. 87, 88; Instruction 6/2015 art. 27). The representative must have a place of business in Albania, registers separately under its own number, and is personally liable for the VAT and penalties (art. 88). If no representative is appointed, the Albanian customer pays the VAT and penalties (art. 88(3)). This covers telecommunications, broadcasting and electronically supplied services to Albanian consumers (art. 29), and the art. 30 list of services supplied to non-taxable persons in Albania, which includes consulting, legal, accounting, advertising, intellectual property, staff supply and movable equipment hire. Albania has no simplified OSS-style registration: the representative route is the only one in the law.
 
-**Selling services abroad.** An Albanian business supplying services to a foreign business customer charges no Albanian VAT, because the place of supply is outside Albania under art. 24(1). Keep evidence that the customer is a business established abroad. The invoice is still issued and fiscalised (Law 87/2019 art. 24(6)).
+**Selling services abroad.** An Albanian business supplying services to a foreign business customer charges no Albanian VAT, because the place of supply is outside Albania under art. 24(1). Keep evidence that the customer is a business established abroad. The invoice is still issued and fiscalised (Law 87/2019 arts. 4, 20(1), 24(6)).
 
-**Goods.** Imports pay VAT at customs at the domestic rate (arts. 50, 86(5), 90). Some imports are exempt under art. 56(38), for example machinery and equipment directly linked to investment contracts of ALL 500,000,000 or more, or to inward processing investment whatever its value (VKM 953/2014 art. 8(1)), and qualifying agribusiness imports (VKM 953/2014 art. 9). Exports of goods transported outside Albania by or for the seller, or by or for a non-established buyer, are 0% (art. 57). Goods in a non-resident traveller's personal luggage count as exports if they leave within three months, the invoice is stamped by customs at the exit point, and the total including VAT reaches the minimum set by the Minister of Finance (art. 58).
+**Goods.** Imports pay VAT at customs at the domestic rate (arts. 50, 86(5), 90). Some imports are exempt under art. 56(38), for example machinery and equipment directly linked to investment contracts of ALL 500,000,000 or more, or to inward processing or agribusiness investment whatever its value (VKM 953/2014 art. 8(1)), with the eligible categories in VKM 953/2014 art. 9. VKM No. 612/2026 added to art. 8(3) a separate machinery list (Annex 6) for investment contracts of ALL 500,000,000 or more by or for entities licensed by the defence industry authority under Law No. 87/2024. Exports of goods transported outside Albania by or for the seller, or by or for a non-established buyer, are 0% (art. 57). Goods in a non-resident traveller's personal luggage count as exports if they leave Albania within the three months after the month of supply, the invoice is stamped by customs at the exit point, and the total including VAT reaches the minimum set by the Minister of Finance (art. 58).
 
 **Withholding and treaties** on payments to non-residents are income tax, not VAT: see `al-cross-border`.
 
@@ -184,7 +184,7 @@ All from Law No. 9920/2008 on tax procedures, as amended, unless another act is 
 
 Drini SHPK, a VAT-registered Tirana company, sells goods in Albania in March 2026 for ALL 3,000,000 net, all at 20%: output VAT ALL 600,000. Its fiscalised domestic purchase invoices carry deductible input VAT of ALL 250,000 (no fuel, cars or entertainment). It also buys a software subscription from an Irish company for ALL 200,000 with no VAT. The supplier is not established in Albania and Drini is a business customer, so Drini self-assesses 20%, ALL 40,000, as output VAT and deducts the same ALL 40,000 as input VAT. It fiscalises a self-invoice by 10 April 2026.
 
-The net VAT due is ALL 600,000 + 40,000 − 250,000 − 40,000 = ALL 350,000. The return and payment are due on 14 April 2026. If Drini files on time but pays 10 days late, the late payment penalty is 0.06% × 10 days × ALL 350,000 = ALL 2,100, plus interest at the published rate (not computed here).
+The net VAT due is ALL 600,000 + 40,000 − 250,000 − 40,000 = ALL 350,000. The return and payment are due on 14 April 2026. If Drini files on time but pays 10 days late, the late payment penalty is 0.06% × 10 days × ALL 350,000 = ALL 2,100, plus interest at the published rate (not computed here). If it had also filed the return late, Drini, a corporate income taxpayer, would add one late filing fine of ALL 10,000 for that return (Law 9920/2008 art. 113(a)).
 
 ```oa-check
 name: Drini SHPK, March 2026, domestic sales plus reverse-charged foreign service, 10 days late payment
@@ -251,12 +251,13 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Law No. 92/2014 "Për tatimin mbi vlerën e shtuar në Republikën e Shqipërisë", consolidated to Law No. 80/2025 (General Directorate of Taxes copy) | https://tatime.gov.al/wp-content/uploads/2026/09/Ligji-Nr.-92-2014-Per-tatimin-mbi-vleren-e-shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf | 2026-10-23 |
-| Council of Ministers Decision No. 953 of 29.12.2014 on the implementing provisions of the VAT law, consolidated to VKM No. 612/2026, arts. 8, 9, 10, 11, 11/1 | https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf | 2026-10-23 |
+| Council of Ministers Decision No. 953 of 29.12.2014 on the implementing provisions of the VAT law, consolidated to VKM No. 612/2026, arts. 8, 8/1, 9, 10, 11, 11/1 | https://tatime.gov.al/wp-content/uploads/2026/09/VKM-Nr.953-date-29.12.2014-i-ndryshuar.pdf | 2026-10-23 |
 | Instruction No. 6 of 30.1.2015 on VAT, consolidated to Instruction No. 6/2025, arts. 27, 28, 67 | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezim-nr.-6-dt.30.01.2015-Per-Tatimin-mbi-Vleren-e-Shtuar-ne-Republiken-e-Shqiperise-i-ndryshuar.pdf | 2026-10-23 |
 | Law No. 87/2019 "Për faturën dhe sistemin e monitorimit të qarkullimit", consolidated to Law No. 83/2025 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.87-2019-Per-faturen-dhe-sistemin-e-monitorimit-te-qarkullimit-i-ndryshuar.pdf | 2026-10-23 |
 | Law No. 9920/2008 "Për procedurat tatimore në Republikën e Shqipërisë", consolidated to Law No. 79/2025 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
+| Instruction No. 24 of 02.09.2008 on tax procedures, as amended (para. 113.1, late filing fine) | https://tatime.gov.al/wp-content/uploads/2026/01/UMF-nr.24-date-02.09.2008-Per-Procedurat-Tatimore-i-ndryshuar.pdf | 2026-10-23 |
 | General Directorate of Taxes, VAT legislation page | https://tatime.gov.al/legjislacioni/tatimi-mbi-vleren-e-shtuar/ | 2026-10-23 |
 | General Directorate of Taxes, fiscalisation legislation page | https://tatime.gov.al/legjislacioni/fiskalizimi/ | 2026-10-23 |
 | General Directorate of Taxes, commercial companies (20% standard rate, registration mandatory above ALL 10 million, monthly e-Filing) | https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare | 2026-10-23 |
 
-Not yet confirmed: the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); which art. 113 late-filing fine applies to a late VAT return (the article grades by taxpayer category, so a company that pays corporate income tax reads as ALL 10,000); the minimum purchase value for the traveller export rule in art. 58 (set by ministerial instruction, not read); the Council of Ministers lists of agricultural inputs (art. 49(10)) and agricultural machinery (art. 51(n)); whether "professions such as notary, bailiff" in VKM 953/2014 art. 11(2) reaches any other profession in practice; the exact change VKM No. 612/2026 made to VKM 953/2014 art. 8 (import exemption for investment machinery), which the consolidated text marks but does not explain.
+Not yet confirmed: the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); which art. 113 band (ALL 5,000 or ALL 3,000) applies to a late VAT return filed by a VAT-registered natural person who pays personal income tax on business income, since the law does not define "individual taxpayer" for art. 113(c) and Instruction 24/2008 predates that band; the minimum purchase value for the traveller export rule in art. 58 (set by ministerial instruction, not read); the item-by-item contents of VKM 953/2014 Annex 4 (agricultural inputs) and Annex 1/A (agricultural machinery), not read; whether "professions such as notary, bailiff" in VKM 953/2014 art. 11(2) reaches any other profession in practice.
