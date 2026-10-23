@@ -4,9 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: uk-national-insurance
-  XB: uk-statutory-residence-test
-partial:
-  XB: "non-residents with UK income are now covered (uk-non-resident-sa109); still missing a foreign tax credit relief method for UK residents beyond dividends, and a table of UK withholding rates on outbound interest, royalties and dividends with treaty reductions"
+  XB: uk-foreign-tax-and-withholding
 ---
 
 # United Kingdom: tax pack
@@ -23,7 +21,7 @@ Tax year 6 April to 5 April for individuals; companies use their own accounting 
 | SC, social contributions | uk-national-insurance | source-cited draft |
 | PR, payroll withholding | uk-payroll, uk-student-loan-repayment | source-cited draft |
 | TP, transfer pricing | uk-transfer-pricing (2026: Finance Act 2026 reform, UTPP charge, UK-to-UK exemption, SME exemption in euro limits, method and benchmarking steps) | source-cited draft |
-| XB, cross-border | uk-non-resident-sa109 (hub), uk-statutory-residence-test, uk-non-dom, uk-to-uae-relocation-tax, uk-to-italy-flat-tax-relocation. Missing: foreign tax credit relief method and treaty withholding rates | source-cited draft; partial: no foreign tax credit method or withholding table |
+| XB, cross-border | uk-non-resident-sa109 (hub), uk-foreign-tax-and-withholding (foreign tax credit relief, outbound withholding, CT61, treaty rates for 12 partners), uk-statutory-residence-test, uk-non-dom, uk-to-uae-relocation-tax, uk-to-italy-flat-tax-relocation | source-cited draft |
 
 ## Official sources
 
