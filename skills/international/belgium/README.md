@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: be-income-tax covers self-employed individuals only; no rules for employees' annual return (employment income)
+  IT-IND: "be-income-tax (self-employed) still carries income 2025 figures"
 ---
 
 # Belgium: tax pack
@@ -15,7 +15,7 @@ Calendar income year, named after the following assessment year (income 2026 is 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | be-income-tax (self-employed only), be-capital-gains, belgium-crypto-tax. Missing: employees' annual return and employment income | source-cited draft |
+| IT-IND, individual income tax | be-employee-income-tax (employees and pensioners), be-income-tax (self-employed, still on income 2025 figures), be-capital-gains, belgium-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | be-corporate-tax | source-cited draft |
 | VAT | be-vat-return, belgium-vat-return | source-cited draft |
 | SC, social contributions | be-social-contributions (self-employed); employee and employer ONSS / RSZ in belgium-payroll | source-cited draft |
@@ -25,7 +25,7 @@ Calendar income year, named after the following assessment year (income 2026 is 
 
 ## Official sources
 
-- FisconetPlus, Income Tax Code (WIB 92) by income year, read 2026-10-22: https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/2ebbd3f4-ca47-41f5-8f17-2a243befae75
+- FisconetPlus, Income Tax Code (WIB 92) by income year, read 2026-10-23: https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/2ebbd3f4-ca47-41f5-8f17-2a243befae75
 - Belgisch Staatsblad / Moniteur belge (ejustice), read 2026-10-22: https://www.ejustice.just.fgov.be/cgi/welcome.pl?language=nl
 - FOD Financiën, vennootschapsbelasting, read 2026-10-22: https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting
 - Biztax, read 2026-10-22: https://financien.belgium.be/nl/E-services/biztax
