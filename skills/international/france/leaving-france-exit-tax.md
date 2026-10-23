@@ -3,7 +3,7 @@ name: leaving-france-exit-tax
 description: "France has become a net wealth-outflow country for the first time, and its departure rules are built to make leaving expensive if done casually: an exit tax on unrealised share gains (art. 167 bis), a real-estate wealth tax that never lets go of French property, succession rules that can tax your heirs on worldwide assets years after you left, and a France–Switzerland treaty clause that quietly strips treaty protection from lump-sum-taxed Swiss residents. This Guide sequences the exit."
 jurisdiction: FR
 tax_year: 2025
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 authored_by: Michael Cutajar, CPA, ACCA
 review_status: pending_review
 trust_label: Accountant-authored
@@ -36,8 +36,8 @@ deemed realised on departure — taxed at the **31.4% flat tax** (12.8% income t
 social levies) for gains taxed with 2025 income onward, or under the progressive scale by
 election. Exit-tax gains are patrimony income (CSS art. L136-6 I e bis), and the CSG on
 patrimony income went from 9.2% to 10.6% from the taxation of 2025 income (CSS art. L136-8 I 2°
-as amended by LFSS 2026, loi n° 2025-1403, art. 12, I 2° and II 1°). Among patrimony income, only revenus fonciers keep
-the 9.2% CSG (new L136-8 IV). Departures taxed with 2024 or earlier income stay at 17.2% (30%
+as amended by LFSS 2026, loi n° 2025-1403, art. 12, I 2° and II 1°). Revenus fonciers and property gains keep
+the 9.2% CSG, as do life-insurance, PEL, CEL and PEP products (new L136-8 IV; service-public.gouv.fr F2329). Departures taxed with 2024 or earlier income stay at 17.2% (30%
 total). One exception: a deferred apport-cession gain (art. 150-0 B ter) brought into charge by
 the exit tax bears the social levies at the rate of the year the gain was realised (LFR 2016,
 loi n° 2016-1918, art. 34 II), so a gain realised before 2025 stays at 17.2%. The tax is *computed*
