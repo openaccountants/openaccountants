@@ -8,7 +8,6 @@ covered_by:
   XB: at-cross-border
 partial:
   PR: "at-payroll-and-social-insurance has no method for overtime, night and shift supplements (EStG § 68) or termination payments (EStG § 67(3) to (8))"
-  IT-CORP: "at-corporate-income-tax still describes itself as tax year 2025, reads the loss limit from the 2025 K 1 form and the participation exemption conditions from a 2011 appeals decision, and has no 2026 update against the law"
 ---
 
 # Austria: tax pack
