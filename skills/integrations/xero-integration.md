@@ -1,16 +1,16 @@
 ---
 name: xero-integration
-version: 1.0
+version: 1.1
 category: integration
 description: >
   Integration skill for Xero accounting software exports. Activate when the user uploads a Xero bank statement CSV,
   Xero invoice export, or mentions Xero, bank statement import, or Xero CSV.
 jurisdiction: GLOBAL
 tier: 2
-last_updated: 2026-06-12
+last_updated: 2026-10-21
 ---
 
-# Xero Integration Skill v1.0
+# Xero Integration Skill v1.1
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -178,6 +178,65 @@ Widget Corp,INV-1043,05/03/2026,04/04/2026,Keyword research addon,1,200.00,200,2
 ```
 
 ---
+
+## Section 11 - Worked month-end review from exports
+
+This is an offline preparation workflow, not an instruction to post journals, change supplier
+details, lock a period or approve a close. Use only authorised exports and fabricated data for
+testing. Xero reports reflect the selected organisation, settings and current ledger. A balanced
+trial balance alone does not establish completeness, correct coding or a reconciled subledger.
+
+### Input manifest
+
+Before comparing amounts, record the organisation, base currency, financial year end, report name,
+period or as-at date, cash/accrual basis, tracking/status filters, export time and file reference.
+Keep account codes as text, including leading zeros. Separate missing values from explicit zero.
+Do not silently sum formatted headers, subtotal rows or spreadsheet formula caches as transactions.
+
+| Required evidence | Purpose |
+| --- | --- |
+| Current and prior month-end trial balances, plus chart of accounts | Account identity, debit/credit convention, closing balances and movements |
+| Period general ledger and month/YTD profit and loss | Explain movements, journals, cut-off and P&L year resets |
+| Bank reconciliation and independent statements for every account | Reconcile statement, ledger and outstanding items at the same date |
+| Aged receivables and payables on a matching basis/date | Reconcile subledgers to the corresponding control accounts |
+| Relevant payroll, GST/VAT, fixed-asset, loan and accrual schedules | Support the balances actually present; record applicability and gaps |
+
+If dates, entity, currency or filters differ, obtain comparable exports before calculating an
+unexplained difference. Re-export affected reports after an approved adjustment and retain the
+earlier versions and adjustment reference. The human reviewer controls postings and period locks.
+
+### Fabricated Australian example: July 2026, AUD, accrual basis, 30 June year end
+
+These are selected report lines, not a complete trial balance. Assume the manifest confirms the
+same organisation, basis, dates and unfiltered creditors population.
+
+| Check | Evidence supplied | Expected finding |
+| --- | --- | --- |
+| Trade creditors | 31 July TB: credit $12,000; aged payables: amount owed $11,750 | Open difference $250; obtain GL, credit-note, timing and filter explanations before proposing any adjustment |
+| Bank balance | TB and bank reconciliation both debit $8,000; independent bank statement absent | Ledger-to-report match only; statement check not performed, so bank reconciliation remains unverified |
+| Revenue movement | June P&L YTD $108,000; July P&L YTD $9,000; July GL revenue $9,000 | July starts a new financial year; July revenue is $9,000, not $9,000 minus $108,000 |
+| Supplier payment control | Invoice and supplier master show the same recently changed bank details; independent verification absent | Open verification exception; matching records do not establish that the change was authorised |
+
+Use one documented sign convention in comparisons. In this example, show credit balances as
+positive amounts owed for the payables reconciliation; under debit-positive/credit-negative TB
+normalisation, the same $12,000 control balance is -$12,000. Compare like with like. For balance
+sheet accounts, current minus prior closing balance is a movement to explain. For P&L YTD columns,
+subtract only within the same financial year and comparable scope; obtain period GL/P&L evidence
+when the financial year resets.
+
+### Reviewer output
+
+Produce the manifest, account movement table, reconciliation register and an exception list with
+evidence references, amount, owner, next action and open/resolved status. Label every applicable
+check performed, not performed or not applicable with a reason. This example remains incomplete:
+the $250 creditors difference and unavailable bank statement require follow-up. Do not mark the
+close approved, infer a correction journal from the difference alone or treat an empty automated
+exception list as evidence that an unavailable check passed.
+
+Source: [Xero, Do a year end in Xero](https://central.xero.com/0/article/Do-a-year-end-in-Xero-GL)
+describes financial-year reporting, review of balances, adjustments and lock dates. The manifest,
+register and fabricated cases above are preparation controls, not a claim about a particular CSV
+layout or an automated Xero approval feature. Source checked 21 October 2026.
 
 ## Disclaimer
 
