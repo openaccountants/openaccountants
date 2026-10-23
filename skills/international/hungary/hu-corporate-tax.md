@@ -112,7 +112,7 @@ KIVA (kisvállalati adó) replaces both corporate tax and social contribution ta
 - **Foreign tax credit:** without a treaty, foreign income tax is credited up to 90% of the foreign tax and up to the Hungarian tax on that income.
 - **Controlled foreign companies (CFC):** a Hungarian company must add to its base the positive after-tax profit of a CFC, less dividends approved, to the extent it comes from non-genuine arrangements tied to significant people functions performed by the Hungarian company. The add-back falls in the Hungarian company's tax year that includes the last day of the CFC's year. Payments to a CFC are generally not deductible unless the company proves they relate to its business. A company with a CFC cannot opt into KIVA. The full CFC test is in Tao. tv. 4. § 11.; read it on njt.hu before advising.
 - **Exit tax (tőkekivonás, 16/A. §):** moving the place of management abroad, or moving assets or a PE's business out of Hungary so they leave the Hungarian tax net, adds to the base the market value less the tax book value of what is moved. In some cases the tax can be paid in five instalments.
-- **Transfer pricing:** related-party prices are adjusted to arm's length (Tao. tv. 18. §). This pack has no transfer pricing skill yet.
+- **Transfer pricing:** related-party prices are adjusted to arm's length (Tao. tv. 18. §). See hu-transfer-pricing.
 
 ## Worked examples
 
