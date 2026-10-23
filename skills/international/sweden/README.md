@@ -21,7 +21,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 | VAT | se-vat-return, sweden-vat-return | source-cited draft |
 | SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
 | PR, payroll withholding | sweden-payroll | source-cited draft |
-| TP, transfer pricing | (missing) | |
+| TP, transfer pricing | se-transfer-pricing | source-cited draft |
 | XB, cross-border | se-cross-border | source-cited draft |
 
 ## Official sources
@@ -30,4 +30,6 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 - Skatteförfarandelag (2011:1244): https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/skatteforfarandelag-20111244_sfs-2011-1244/ (read 2026-10-22)
 - Lag (1991:586) om särskild inkomstskatt för utomlands bosatta (SINK): https://data.riksdagen.se/dokument/sfs-1991-586.text (read 2026-10-22)
 - Kupongskattelag (1970:624): https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kupongskattelag-1970624_sfs-1970-624/ (read 2026-10-22)
+- Skatteförfarandeförordning (2011:1261): https://data.riksdagen.se/dokument/sfs-2011-1261.text (read 2026-10-23)
+- Lag (2009:1289) and Förordning (2009:1295) om prissättningsbesked: https://data.riksdagen.se/dokument/sfs-2009-1289.text (read 2026-10-23)
 - Skatteverket: https://www.skatteverket.se (read 2026-10-22)
