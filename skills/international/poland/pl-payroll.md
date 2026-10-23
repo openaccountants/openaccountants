@@ -48,26 +48,26 @@ verified_by: pending
 | Accident insurance (wypadkowe) | 0.40% to 8.12% range in the Act; payers with 9 or fewer insured: 50% of the highest group rate, 1.67%; all employer | 2026 | ZUS Act art. 22(1)(4), 16(3); Accident Insurance Act art. 28(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001644; ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
 | Accident rates by activity group (10 or more insured) | group rates from Annex 2 (0.67% to 3.33%), times the payer's correction factor | 2026 | Regulation on accident rates, Dz.U. 2025 poz. 1874, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001874 |
 | Annual cap on pension and disability base (30 x forecast average wage) | PLN 282,600 (average wage PLN 9,420) | 2026 | ZUS Act art. 19(1); M.P. 2025 poz. 1206, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001206 |
-| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, employer; base not capped | 2026 | Budget Act 2026 art. 25-26, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062; Labour Market Act art. 259(1), 261, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620 |
-| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, employer; base not capped | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 29(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 |
-| Bridging Pension Fund (FEP) | 1.5%, employer, only for work in special conditions; base capped like pension | 2026 | Bridging Pensions Act art. 35-36, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 |
-| Health contribution (zdrowotna) | 9% of gross pay less employee social contributions; employee pays; not deductible from PIT | 2026 | Health Act art. 79(1), 81(1) and (6), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 |
+| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, employer; base not capped | 2026 | Budget Act 2026 art. 25-26, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062; Labour Market Act art. 259(1), 261-263, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620; Solidarity Fund Act art. 4(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 |
+| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, employer that is a business (przedsiębiorca); base not capped | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 9, 9a-9c, 29(1), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 |
+| Bridging Pension Fund (FEP) | 1.5%, employer, only for work in special conditions or of a special nature; base is the pension base under ZUS Act art. 18 and 21, with no reference to the art. 19 cap | 2026 | Bridging Pensions Act art. 35-36, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 |
+| Health contribution (zdrowotna) | 9% of gross pay less employee social contributions; no annual cap; employee pays; not deductible from PIT | 2026 | Health Act art. 79(1), 81(1), (5) and (6), https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 |
 | PPK basic payments | employee 2% (0.5% to 2% if pay is up to 1.2 x minimum wage), employer 1.5%; extras up to 2% and 2.5% | 2026 | PPK Act art. 26-27, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000192 |
 | Minimum wage | PLN 4,806 a month; PLN 31.40 an hour | 2026 | Dz.U. 2025 poz. 1242, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 |
-| Late payment interest (tax and ZUS) | 200% of the NBP lombard rate + 2 points, at least 8% a year | 2026 | Tax Ordinance art. 56 § 1, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622; ZUS Act art. 23(1) |
+| Late payment interest (tax and ZUS) | 200% of the NBP lombard rate + 2 points, at least 8% a year; 10.50% a year from 5 March 2026 (lombard rate 4.25%) | 2026 | Tax Ordinance art. 56 § 1, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622; ZUS Act art. 23(1); M.P. 2026 poz. 269, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 |
 
 ## The taxable base
 
-**Social contributions.** The base for pension, disability, sickness and accident insurance is the employee's gross pay (ZUS Act art. 18(1)). Pension and disability stop once the year's base passes PLN 282,600; the employer stops computing them from that point (art. 19(1), (3) and (5)). Sickness and accident have no cap. FP, FS and FGŚP use the pension base **without** the cap (Labour Market Act art. 259(1); Employee Claims Act art. 29(1)). FP and FS are due only where the monthly base is at least the minimum wage, and not for women aged 55 or more or men aged 60 or more (Labour Market Act art. 259(1), 261). Employer PPK payments are not part of the pension and disability base (PPK Act art. 26(5)).
+**Social contributions.** The base for pension, disability, sickness and accident insurance is the employee's gross pay (ZUS Act art. 18(1)). Pension and disability stop once the year's base passes PLN 282,600; the employer stops computing them from that point (art. 19(1), (3) and (5)). Sickness and accident have no cap. FP, FS and FGŚP use the pension base **without** the cap (Labour Market Act art. 259(1); Employee Claims Act art. 29(1)). FS follows the FP rules (Solidarity Fund Act art. 4(1)). FP and FS are due only where the monthly base is at least the minimum wage, and not for women aged 55 or more or men aged 60 or more (Labour Market Act art. 259(1), 261). No FP and FS for 12 months for a hire aged 50 or more who was registered unemployed in the 30 days before, or a referred unemployed hire under 30 (art. 262), and for 36 months after a return from maternity, parental or childcare leave (art. 263). FGŚP has no minimum-wage condition, but the same age, 50-plus, under-30 and return-from-leave exemptions apply (Employee Claims Act art. 9a-9c). Employer PPK payments are not part of the pension and disability base (PPK Act art. 26(5)).
 
 **Health contribution.** 9% of the same base as pension, less the employee's own pension, disability and sickness contributions (Health Act art. 81(1) and (6)). There is no annual cap. Since 2022 it is not deducted from tax (the old art. 27b of the PIT Act is repealed).
 
 **PIT advance, month by month (PIT Act art. 32(4)).**
-1. Start with the month's revenue from the employment (cash pay plus taxable benefits in kind, including the employer's PPK payment, read as a cash benefit paid for the employee under art. 12(1)).
+1. Start with the month's revenue from the employment: cash pay plus benefits in kind and other free benefits (art. 12(1)). Whether and when the employer's PPK payment counts here is on the "Not yet confirmed" line below.
 2. Deduct the standard costs (PLN 250, or 300 for a commuter who files the statement in art. 32(7)), or author's costs where the contract says so.
 3. Deduct the employee's social contributions withheld that month (9.76% + 1.5% + 2.45% = 13.71% while under the cap).
 4. Round the result to whole złoty (Tax Ordinance art. 63 § 1). This is the month's income.
-5. Apply 12%, or 32% once cumulative income from this payer is above PLN 120,000 (art. 32(2)). In the crossing month, split the income at the threshold.
+5. Apply 12%, or 32% once cumulative income from this payer is above PLN 120,000 (art. 32(2)). In the crossing month, split the income at the threshold. If the employee filed a statement that they will file jointly with a spouse or as a single parent (art. 6(2) or 6(4d)), all months stay at 12% where the expected incomes meet the conditions in art. 32(3).
 6. Subtract PLN 300 if the employee filed a PIT-2 statement with this payer (art. 31b(1)). Round the advance to whole złoty.
 
 **Reliefs.** Revenue exempt under the under-26, relocation, parents of 4+ and working seniors reliefs is left out of steps 1 to 5 up to PLN 85,528 a year in total (art. 21(44)). Social and health contributions are still due on that pay. The payer applies the under-26 relief automatically unless the employee asks it not to (art. 32(6)); the other three need a statement from the employee (art. 31a(8)).
@@ -84,14 +84,14 @@ verified_by: pending
 | PIT-4R annual payer declaration | by 31 January of the next year | PIT Act art. 38(1a) |
 | PIT-11 information per employee | to the tax office by 31 January, to the employee by the end of February | PIT Act art. 39(1), 42g(1) |
 | Filing method | PIT-4R and PIT-11 electronically | PIT Act art. 45ba |
-| Employer stops the advance at 32% or applies a new statement | from the month after the statement is received at the latest | PIT Act art. 31a(5) |
+| Employer applies a new statement or request from the employee (PIT-2, commuter costs, reliefs, joint filing) | from the month after the month it is received, at the latest | PIT Act art. 31a(5) |
 
 The employee then files the annual return (PIT-37) between 15 February and 30 April (PIT Act art. 45(1)); see [pl-income-tax](pl-income-tax.md).
 
 ## Penalties and interest
 
-- **Payer liability.** A payer who did not withhold, or withheld but did not pay, is liable for the tax with all its assets (Tax Ordinance art. 30 § 1 and § 3). Late payment interest runs at the art. 56 § 1 rate.
-- **Fiscal penal code.** Not paying withheld tax on time: fine up to 720 daily rates or up to 3 years' imprisonment, or both (KKS art. 77 § 1). Not withholding or withholding too little: fine up to 720 daily rates or up to 2 years, or both (KKS art. 78 § 1). Smaller amounts drop to a fiscal misdemeanour (art. 77 § 3). KKS consolidated text Dz.U. 2025 poz. 633.
+- **Payer liability.** A payer who did not withhold, or withheld but did not pay, is liable for the tax with all its assets (Tax Ordinance art. 30 § 1 and § 3). Late payment interest runs at the art. 56 § 1 rate: 10.50% a year from 5 March 2026 (M.P. 2026 poz. 269).
+- **Fiscal penal code.** Not paying withheld tax on time: fine up to 720 daily rates or up to 3 years' imprisonment, or both (KKS art. 77 § 1). Not withholding or withholding too little: fine up to 720 daily rates or up to 2 years, or both (KKS art. 78 § 1). Amounts under the statutory threshold drop to a fiscal misdemeanour (art. 77 § 3, 78 § 3). Late PIT-11 information: fine up to 120 daily rates (art. 80 § 1). KKS consolidated text Dz.U. 2025 poz. 633.
 - **ZUS.** Late contributions carry late payment interest under the Tax Ordinance rules (ZUS Act art. 23(1)); none is charged if it would be under 1% of the minimum wage (art. 23(1a)). ZUS may also impose an additional charge up to 100% of unpaid contributions (art. 24(1a)). Failing to pay, report or file DRA on time is an offence with a fine up to PLN 46,000 (art. 98(1)).
 
 ## Cross-border points
@@ -226,12 +226,15 @@ The advances are only prepayments. If the employee has other income or reliefs (
 | Health Care Benefits Act, Dz.U. 2025 poz. 1461 (art. 79, 81, 85) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001461 | 2026-10-23 |
 | Budget Act 2026, Dz.U. 2026 poz. 62 (art. 24-27) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000062 | 2026-10-23 |
 | Labour Market Act, Dz.U. 2025 poz. 620 (art. 259-263) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000620 | 2026-10-23 |
-| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 29) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 | 2026-10-23 |
+| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 9-9c, 29) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000186 | 2026-10-23 |
 | Bridging Pensions Act, Dz.U. 2024 poz. 1696 (art. 35-36) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001696 | 2026-10-23 |
 | PPK Act, Dz.U. 2026 poz. 192 (art. 26-28) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000192 | 2026-10-23 |
 | Minimum wage 2026, Dz.U. 2025 poz. 1242 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250001242 | 2026-10-23 |
 | Tax Ordinance, Dz.U. 2026 poz. 622 (art. 30, 56, 63) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 | 2026-10-23 |
+| Minister of Finance notice on late payment interest rates from 5 March 2026, M.P. 2026 poz. 269 | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20260000269 | 2026-10-23 |
+| NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
+| Solidarity Fund Act, Dz.U. 2024 poz. 1848 (art. 4) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20240001848 | 2026-10-23 |
 | Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77-78) | https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20250000633 | 2026-10-23 |
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
-Not yet confirmed: the current NBP lombard rate and so the late payment interest rate in force in October 2026 (podatki.gov.pl page not reachable); that the employer's PPK payment is employee revenue: art. 12(1) covers cash benefits paid for the employee, but the PIT Act does not name PPK there; the full list of accident rates by activity group was read from the annex table, not checked line by line; the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.
+Not yet confirmed: whether the employer's PPK payment is employment revenue of the employee under PIT Act art. 12(1), and in which month it arises (the PIT Act and PPK Act do not say so expressly; only secondary sources were found); the 2027 minimum wage (Dz.U. 2026 poz. 1213) is out of scope for this 2026 skill.
