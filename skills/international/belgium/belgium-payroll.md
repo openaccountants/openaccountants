@@ -1,12 +1,12 @@
 ---
 name: belgium-payroll
-description: Use this skill whenever asked about Belgian payroll processing, employee salary calculations, précompte professionnel (professional withholding tax), ONSS/RSZ social security contributions, employer cost calculations, net-to-gross or gross-to-net conversions, Belgian payslip structure, DmfA declarations, or any question about computing wages, deductions, or employer obligations in Belgium. Trigger on phrases like "Belgian payroll", "ONSS contributions", "RSZ bijdragen", "précompte professionnel", "bedrijfsvoorheffing", "net salary Belgium", "employer cost Belgium", "DmfA filing", "social security Belgium", "Belgian payslip", "13th month Belgium", "double holiday pay", "meal vouchers Belgium", or "eco-cheques".
-version: 1.0
+description: "Belgian payroll for 2026: employee and employer social security (RSZ / ONSS), payroll withholding (bedrijfsvoorheffing / précompte professionnel), the social and fiscal work bonus, the structural reduction, the employer exemption above the quarterly pay ceiling, first-hire reductions, payslips, DmfA and withholding returns. Uses the RSZ administrative instructions 2026/3 and the income 2026 Income Tax Code: employee rate 13.07%, private-sector employer basic rate 24.92% (19.88% plus wage moderation for structural-reduction category 1), tax-free amount EUR 11,550. Trigger on: Belgian payroll, RSZ bijdragen, ONSS cotisations, bedrijfsvoorheffing, précompte professionnel, werkbonus, structurele vermindering, employer cost Belgium, DmfA, Belgian payslip, double holiday pay. Out of scope: be-employee-income-tax (the employee's annual return), be-social-contributions (self-employed), be-cross-border (posted and frontier workers)."
+version: 1.1
 jurisdiction: BE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+trust_label: By OpenAccountants
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -16,46 +16,51 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Belgium Payroll
 
-## Belgium Payroll Skill v1.0
+## Belgium Payroll Skill v1.1 (2026)
+
+> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to run a payroll, file or pay without review by a qualified professional in Belgium.
+
+The employee's annual income tax return, where the year's withholding is credited, is in `be-employee-income-tax`. Self-employed social contributions are in `be-social-contributions`.
 
 ## Section 1 -- Quick Reference
 
 **Quick Reference**
 
-| Field | Value |
-| --- | --- |
-| Country | Belgium (Kingdom of Belgium) |
-| Currency | EUR |
-| Payroll frequency | Monthly (typically paid last working day of month) |
-| Tax year | Calendar year (1 January -- 31 December) |
-| Primary legislation | Income Tax Code 1992 (CIR/WIB 92); Social Security Act (Law of 27 June 1969); Employment Contracts Act (3 July 1978) |
-| Tax authority | SPF Finances / FOD Financiën |
-| Social security authority | ONSS (Office National de Sécurité Sociale) / RSZ (Rijksdienst voor Sociale Zekerheid) |
-| Employee SS rate | 13.07% of gross salary (no cap) |
-| Employer SS rate | ~25% basic + ~3% special contributions (total ~27-28%) |
-| Employer SS cap | EUR 85,000/quarter (basic contributions only, from 1 July 2025) |
-| Withholding tax | Précompte professionnel / Bedrijfsvoorheffing (progressive, per Annex III) |
-| Minimum wage (GGMMI) | EUR 2,189.81/month (from 1 April 2026, 18+ full-time) |
-| DmfA filing | Quarterly, due by end of month following quarter |
-| Skill version | 1.0 |
+| Field | Value | Source |
+| --- | --- | --- |
+| Country | Belgium | |
+| Currency | EUR | |
+| Tax year | Calendar year; income 2026 is assessment year 2027 | |
+| Tax authority | FOD Financiën / SPF Finances | |
+| Social security authority | RSZ (Rijksdienst voor Sociale Zekerheid) / ONSS | |
+| Employee social security | 13.07% of gross pay (pensions 7.50, health care 3.55, benefits 1.15, unemployment 0.87); blue-collar pay declared at 108% | [RSZ instructions 2026/3, contributions](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html) |
+| Employer basic contribution, private sector | 24.92% total rate; 19.88% for workers in category 1 or 3 of the structural reduction, plus wage moderation of at most 5.12% (4.27% + 4.27% of 19.88%), about 25% in all | [RSZ instructions 2026/3, contributions](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html) |
+| Blue-collar holiday contribution | 5.57% quarterly with the other contributions, plus 10.27% once a year, on pay at 108% | [RSZ instructions 2026/3, contributions](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html) |
+| Employer exemption above the pay ceiling | No basic employer contribution or wage moderation on ordinary pay (pay codes 1 and 61) above EUR 86,700 a quarter (January to June 2026) and EUR 88,434 a quarter (from 1 July 2026) | [RSZ instructions 2026/3, exemption above the pay ceiling](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/otheremployersreductions/partial_exemption_very_high_salaries.html) |
+| Withholding | Bedrijfsvoorheffing, computed with the key formula in Annex III of the royal decree implementing the Income Tax Code | |
+| Annual scale withholding is built on | 25% to EUR 16,720; 40% to EUR 29,510; 45% to EUR 51,070; 50% above | [Art. 130 WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96) |
+| Tax-free amount | EUR 11,550 a year | [Art. 131 WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751) |
+| Employee lump-sum expenses | 30% of pay after social security, at most EUR 6,070 a year | [Art. 51 WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c) |
+| DmfA | Quarterly | |
+| Skill version | 1.1 | |
 
 ## Section 2 -- Income Tax Withholding (Précompte Professionnel)
 
 ### Annual Income Tax Brackets (Income Year 2026, AY 2027)
 
-**Annual Income Tax Brackets**
+**Annual Income Tax Brackets**  _(Art. 130 WIB 92, income 2026)_
 
 | Taxable Income (EUR) | Marginal Rate |
 | --- | --- |
 | 0 -- 16,720 | 25% |
-| 16,721 -- 29,510 | 40% |
-| 29,511 -- 51,070 | 45% |
-| 51,071+ | 50% |
+| 16,720 -- 29,510 | 40% |
+| 29,510 -- 51,070 | 45% |
+| Above 51,070 | 50% |
 
 ### Withholding Tax Mechanism
 
-- **Précompte professionnel calculation mechanism** — The précompte professionnel is NOT a simple application of the above brackets. It is calculated via Annex III of AR/CIR 92, which uses a progressive key formula accounting for: Gross taxable remuneration (after ONSS deduction); Family situation (single, married one income, married two incomes); Number of dependent children; Disability status; Flat-rate professional expense deduction (automatically applied); Tax-free allowance (quotité exemptée / belastingvrije som): EUR 10,570 base (2026)  _(Annex III of AR/CIR 92)_
-- **Tax-free allowance (quotité exemptée / belastingvrije som) base** — EUR 10,570 EUR (2026 base)  _(Annex III of AR/CIR 92)_
+- **How withholding is computed**: Withholding is not the annual scale applied to one month. Annex III of the royal decree implementing the Income Tax Code (KB/WIB 92) sets a key formula that annualises the taxable pay (gross pay less employee social security), takes off a lump sum for expenses, applies the scale, deducts the tax on the tax-free amount and then reductions for family situation (single, married with one income, married with two incomes), dependent children and disability. The annual figures it approximates for income 2026 are the scale above, the tax-free amount of EUR 11,550 (art. 131) and the employee lump sum of 30% capped at EUR 6,070 (art. 51). The final tax is settled in the annual return (`be-employee-income-tax`).
+- **Use the official tool or table**: Compute 2026 withholding with the FPS Finance calculation tool or the Annex III formula for 2026. This skill does not reproduce the 2026 Annex III amounts; see "Not yet confirmed".
 
 ### Key Withholding Rules
 
@@ -63,90 +68,91 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Rule | Detail |
 | --- | --- |
-| Calculation base | Gross salary minus 13.07% ONSS = taxable base |
-| Work bonus (werkbonus) | Reduces ONSS for low earners (gross < ~EUR 2,900/month) |
-| Fiscal work bonus | Reduces withholding tax proportional to social work bonus |
-| Holiday pay | Taxed separately at special withholding rates |
-| 13th month / end-of-year premium | Taxed at exceptional rate (often higher marginal) |
-| Double holiday pay | Upper portion taxed at 85% rate for withholding |
+| Calculation base | Gross pay minus employee social security (13.07%, less any social work bonus) |
+| Social work bonus (werkbonus) | Cuts employee social security for low pay; see Section 3 |
+| Fiscal work bonus | A tax credit of 33.14% of part A and 63% of part B of the social work bonus actually granted, at most EUR 2,000 a year (art. 289ter/1 WIB 92); withholding gives it during the year |
+| Holiday pay, end-of-year premium, arrears | Taxed with withholding at special rates for exceptional pay, not the monthly key formula |
 
 ### Withholding Reductions
 
-**Withholding Reductions (2026)**
-
-| Reduction | Amount (2026) |
-| --- | --- |
-| Per dependent child (1st) | EUR 48/month reduction |
-| Per dependent child (2nd) | EUR 133/month |
-| Per dependent child (3rd+) | EUR 299/month each |
-| Disabled dependent | Additional EUR 48/month |
+The 2026 monthly withholding reductions for dependent children, other dependants and disability are set in Annex III for 2026 and are not reproduced here. Do not use the amounts from earlier versions of this skill.
 
 ## Section 3 -- Social Security: Employee Deductions
 
-**Employee Deductions**
+**Employee Deductions**  _(RSZ instructions 2026/3)_
 
 | Contribution | Rate | Base | Cap |
 | --- | --- | --- | --- |
-| Personal ONSS/RSZ | 13.07% | Gross salary | No cap |
-| Special social security contribution | EUR 9.30 -- 60.94/month | Based on family income | Max EUR 731.28/year |
+| Personal RSZ / ONSS | 13.07% | Gross pay (blue-collar: at 108%) | No cap |
+| Special social security contribution | Withheld with the pay and settled in the annual assessment, scaled to household income | Household taxable income | See "Not yet confirmed" |
 
 ### Work Bonus (Werkbonus / Bonus à l'emploi)
 
-- **Work bonus rules** — Low-wage earners receive a reduction on personal ONSS contributions: Applies to monthly gross salary below approximately EUR 2,900; Maximum reduction: ~EUR 280/month (decreasing as salary increases); Effectively reduces the 13.07% burden for minimum-wage workers
+The social work bonus cuts the 13.07% employee contribution for low pay. It has two parts, computed on the monthly reference pay S (gross pay at 100%, full-time equivalent), and the final bonus is the sum of both. It fully offsets the employee contribution up to a reference pay of about EUR 2,300 a month. Source: [RSZ instructions 2026/3, work bonus](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html).
+
+| White-collar (bedienden), 2026 | Part A (low pay) | Part B (very low pay) |
+| --- | --- | --- |
+| Full amount | EUR 127.54 if S is EUR 2,937.93 or less | EUR 171.99 if S is EUR 2,300.62 or less |
+| Tapering, July and August 2026 | 127.54 - 0.3196 x (S - 2,937.93), nil above EUR 3,336.98 | 171.99 - 0.2699 x (S - 2,300.62), nil above EUR 2,937.93 |
+| Tapering, from 1 September 2026 | 127.54 - 0.2739 x (S - 2,937.93), nil above EUR 3,403.62 | 171.99 - 0.2699 x (S - 2,300.62), nil above EUR 2,937.93 |
+
+Blue-collar workers (arbeiders) get higher amounts: part A EUR 137.74, part B EUR 185.75 for July and August 2026, with their own slopes. The amounts for January to June 2026 are not shown on the 2026/3 page; see "Not yet confirmed". Part-time and incomplete months are converted to a full-time reference pay first (S = W / J x D, or W / H x U).
 
 ### Key Rules
 
-- **Employee ONSS key rules** — Personal ONSS is deducted BEFORE calculating taxable income for withholding tax; ONSS applies to ALL remuneration: salary, premiums, bonuses, benefits in kind (BIK); No upper ceiling on employee contributions; ONSS is tax-deductible (reduces the withholding base)
+- **Employee RSZ key rules**: Personal RSZ is deducted before computing taxable pay for withholding; it applies to all pay including bonuses and benefits in kind; there is no ceiling on employee contributions; the work bonus is deducted from the contribution, never paid out beyond it.
 
 ## Section 4 -- Social Security: Employer Contributions
 
-**Employer Contributions**
+**Employer Contributions**  _(RSZ instructions 2026/3)_
 
 | Contribution | Rate | Notes |
 | --- | --- | --- |
-| Basic employer ONSS | ~25.00% | Funds pensions, healthcare, unemployment, etc. |
-| Special contributions (Closure Fund, Asbestos, etc.) | ~2-3% | Sector-dependent |
-| **Total employer ONSS** | **~27-28%** | Varies by sector and joint committee (CP/PC) |
+| Basic employer contribution, private sector | 24.92% | Total rate for all schemes |
+| Category 1 or 3 of the structural reduction | 19.88% plus wage moderation 4.27% + 4.27% x 19.88% (5.12%) | About 25.00% in total; most private-sector workers |
+| Employer share by branch | Pensions 8.86; health care 3.80; benefits 2.35; unemployment 1.46; occupational diseases 1.00; accidents at work 0.30 | Used to remove schemes that do not apply |
+| Asbestos fund | 0.01% | Charged in quarters 1 to 3 of 2026 |
+| Accidents at work (special) | 0.02% | |
+| 1.60% contribution | 1.60% (1.69% with wage moderation) | Only employers with on average 10 or more workers in the reference period |
+| Blue-collar annual holidays | 5.57% quarterly plus 10.27% yearly (15.84% in all, on pay at 108%) | Yearly part due 31 March, paid by 30 April |
 
-### Employer Contribution Cap (from 1 July 2025)
+Other special contributions (Closure Fund, company car CO2 contribution, extra-legal pension 8.86%) depend on the employer and are not totalled here.
 
-**Employer Contribution Cap**
+### Employer Contribution Ceiling (from 1 July 2025)
+
+**Exemption above the quarterly pay ceiling**  _(RSZ instructions 2026/3; programme law of 18 July 2025)_
 
 | Parameter | Detail |
 | --- | --- |
-| Cap threshold | EUR 85,000 gross per quarter per employee |
-| Scope | Basic employer contributions (~25%) only |
-| Excluded from cap | Special contributions (~3%), employee contributions (13.07%) |
-| Indexation | 2% each time health index increases by 2% |
-| Part-time workers | Full EUR 85,000 threshold (not pro-rated) |
+| Ceiling | EUR 85,000 a quarter to December 2025; EUR 86,700 from 1 January to 30 June 2026; EUR 88,434 from 1 July 2026 |
+| What is exempt | The basic employer contribution (after removing non-applicable schemes) and wage moderation on ordinary pay (pay codes 1 and 61) above the ceiling, as reduction code 1360 |
+| Still due | Special contributions and employee contributions on all pay; pay codes other than 1 and 61 |
+| Part-time and short quarters | Absolute amounts per employer, not prorated by the work fraction; split by employment line if there are several |
+| Excluded | From 1 July 2026, paid sportspeople who open the right to their target-group reduction |
 
 ### Structural Reduction (Structurele vermindering)
 
-- **Structural reduction mechanism** — Employers receive an automatic reduction on ONSS contributions calculated via a formula based on reference salary relative to high/low wage ceilings. This reduces the effective employer cost, particularly for low-wage and high-wage workers.
+- **Formula**: Ps = R x µ x ßs, per quarter and employment line. For category 1 (general) from the 3rd quarter of 2026: R = 0.14 x (11,687.74 - S) + 0.16 x (9,738.14 - S), each part rounded to the cent and taken as nil if negative. S is the quarterly reference pay: for a full-time worker with a full quarter, S equals the quarter's pay and µ = 1, ßs = 1 (ßs = 1/µ from 80% work). Category 2 (social maribel) and category 3 (sheltered workshops) have their own formulas. Source: [RSZ instructions 2026/3, structural reduction](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/structuralreduction_targetgroupreductions/structuralreduction.html) and [introduction](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/structuralreduction_targetgroupreductions/introduction.html).
 
 ### Target Group Reductions
 
-**Target Group Reductions**
+**First hires (eerste aanwervingen)**  _(RSZ instructions 2026/3; programme law of 30 May 2026)_
 
-| Target Group | Reduction |
+| Rule | Detail |
 | --- | --- |
-| First hires (1st employee) | Full basic ONSS exemption for unlimited period |
-| Young workers (< 26, low-qualified) | Significant quarterly reduction |
-| Older workers (55+) | Quarterly reduction based on age bracket |
-| Long-term unemployed | Quarterly reduction for 2+ years registered |
+| First employee | Reduction for an unlimited period, capped at a flat EUR 2,000 a quarter (G21) from 1 July 2026, also for running reductions; it was EUR 3,100 (G20) from 2024 to June 2026 |
+| 2nd to 5th employee | From 1 July 2026 again up to the 5th employee (3 from 2024 to June 2026); each for 12 quarters within 20 quarters |
+| New employer | No employee subject to the 27 June 1969 law in the 12 months before the hire; technical business unit rules apply |
+
+Source: [RSZ instructions 2026/3, first hires](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/structuralreduction_targetgroupreductions/firstengagments.html). Other target-group reductions (older workers, young workers, long-term unemployed) are regional or have their own conditions and are not covered here.
 
 ## Section 5 -- Minimum Wage and Overtime
 
 ### Minimum Wage (GGMMI / RMMMG)
 
-**Minimum Wage Schedule**
+The guaranteed average minimum monthly income (GGMMI) is set by collective agreement no. 43 of the National Labour Council and indexed. Read the current amount from the National Labour Council before using it; it is not restated in this update.
 
-| Period | Monthly Gross (full-time, 18+) |
-| --- | --- |
-| Until 31 March 2026 | EUR 2,154.81 |
-| From 1 April 2026 | EUR 2,189.81 |
-
-- **Minimum wage additional rules** — Set by CAO nr. 43 of the National Labour Council (NAR/CNT); Applies to employment contracts of at least one month; Sectors often have higher minimums via joint committee (CP/PC) agreements; Indexed automatically when pivot index is exceeded; Students under 21 and workers under 18 have separate scales (CAO nr. 50)  _(CAO nr. 43; CAO nr. 50)_
+- **Minimum wage additional rules**: Set by CAO nr. 43 of the National Labour Council (NAR/CNT); Applies to employment contracts of at least one month; Sectors often have higher minimums via joint committee (CP/PC) agreements; Indexed automatically when pivot index is exceeded; Students under 21 and workers under 18 have separate scales (CAO nr. 50)  _(CAO nr. 43; CAO nr. 50)_
 
 ### Working Hours and Overtime
 
@@ -253,48 +259,82 @@ Belgian employers MUST issue a payslip (fiche de paie / loonfiche) for each sala
 | October | DmfA Q3 |
 | December | 13th month / end-of-year premium processing |
 
-## Section 9 -- Common Payroll Patterns
+## Section 9 -- Worked Examples
 
-### Pattern 1: Standard Monthly Salary (White-Collar, Single, No Children)
+### Example 1: white-collar employee, EUR 3,500 a month, third quarter of 2026
 
-Gross monthly salary:                EUR 3,500.00
-- ONSS employee (13.07%):           -EUR   457.45
-= Taxable base:                      EUR 3,042.55
-- Précompte professionnel:           -EUR   ~640.00
-- Special SS contribution:           -EUR    18.72
-= Net salary:                        EUR ~1,927.00
+Facts: a full-time white-collar employee in the private sector, category 1 of the structural reduction, gross pay EUR 3,500 a month for July, August and September 2026, no other pay elements.
 
-Employer cost:
-  Gross salary:                      EUR 3,500.00
-+ Employer ONSS (~27%):             +EUR   945.00
-= Total employer cost:               EUR ~4,445.00
+1. Employee social security: 13.07% x 3,500 = EUR 457.45 a month. No work bonus: the reference pay of EUR 3,500 is above EUR 3,336.98 (July and August) and EUR 3,403.62 (September).
+2. Taxable pay for withholding: 3,500 - 457.45 = EUR 3,042.55 a month. Withholding itself comes from the 2026 Annex III formula and is not computed here.
+3. Employer basic contribution at 19.88% + 5.12% = 25.00%: EUR 875.00 a month, EUR 2,625.00 for the quarter.
+4. Structural reduction, quarter: S = 10,500. R = 0.14 x (11,687.74 - 10,500) = 166.28; the very-low-pay part is negative, so nil. Ps = EUR 166.28.
+5. Net basic employer contributions for the quarter: 2,625.00 - 166.28 = EUR 2,458.72. Special contributions come on top.
 
-### Pattern 2: Minimum Wage Worker (With Work Bonus)
+```oa-check
+name: White-collar EUR 3,500 a month, Q3 2026, employee RSZ and structural reduction
+inputs:
+  monthly_gross: 3500
+  employee_rate: 0.1307
+  employer_rate: 0.25
+steps:
+  - employee_ss: round(monthly_gross * employee_rate, 2)
+  - taxable_pay: monthly_gross - employee_ss
+  - quarter_pay: monthly_gross * 3
+  - employer_quarter: quarter_pay * employer_rate
+  - low_pay_part: max(round(0.14 * (11687.74 - quarter_pay), 2), 0)
+  - very_low_pay_part: max(round(0.16 * (9738.14 - quarter_pay), 2), 0)
+  - structural_reduction: low_pay_part + very_low_pay_part
+  - employer_net: employer_quarter - structural_reduction
+expected:
+  employee_ss: 457.45
+  taxable_pay: 3042.55
+  employer_quarter: 2625.00
+  structural_reduction: 166.28
+  employer_net: 2458.72
+```
 
-Gross monthly salary:                EUR 2,189.81
-- ONSS employee (13.07%):           -EUR   286.21
-+ Work bonus:                       +EUR   ~180.00
-= Effective ONSS deduction:         -EUR   106.21
-= Taxable base:                      EUR 2,083.60
-- Précompte professionnel:           -EUR   ~190.00
-- Special SS contribution:           -EUR     9.30
-= Net salary:                        EUR ~1,884.00
+### Example 2: low-paid white-collar employee, EUR 2,500 a month, September 2026
 
-### Pattern 3: Holiday Pay Calculation
+Facts: a full-time white-collar employee, category 1, gross pay EUR 2,500 a month in each month of the third quarter of 2026. The work bonus is shown for September 2026.
 
-**Holiday Pay Calculation**
+1. Work bonus part A: the reference pay of EUR 2,500 is under EUR 2,937.93, so the full EUR 127.54.
+2. Work bonus part B: 171.99 - 0.2699 x (2,500 - 2,300.62) = EUR 118.18.
+3. Social work bonus: 127.54 + 118.18 = EUR 245.72.
+4. Employee social security: 13.07% x 2,500 = 326.75, less the bonus: EUR 81.03 withheld.
+5. Fiscal work bonus earned by this month's social bonus (art. 289ter/1): 33.14% x 127.54 + 63% x 118.18 = 42.27 + 74.45 = EUR 116.72.
+6. Employer, quarter: 25% x 7,500 = 1,875.00. Structural reduction: 0.14 x (11,687.74 - 7,500) = 586.28 plus 0.16 x (9,738.14 - 7,500) = 358.10, total EUR 944.38. Net basic employer contributions EUR 930.62.
 
-| Component | Calculation |
-| --- | --- |
-| Single holiday pay | Normal salary for days taken |
-| Double holiday pay | 92% of gross monthly salary for full year of service |
-| Timing | Paid by employer (white-collar) typically in May/June |
-| ONSS on double holiday | 13.07% on the full 92% amount |
-| Withholding on double holiday | Higher exceptional rate on upper portion |
+```oa-check
+name: White-collar EUR 2,500 a month, September 2026, work bonus and structural reduction
+inputs:
+  monthly_gross: 2500
+  employee_rate: 0.1307
+  employer_rate: 0.25
+steps:
+  - part_a: 127.54
+  - part_b: round(max(min(171.99 - 0.2699 * (monthly_gross - 2300.62), 171.99), 0), 2)
+  - work_bonus: part_a + part_b
+  - employee_ss_gross: round(monthly_gross * employee_rate, 2)
+  - employee_ss_net: employee_ss_gross - work_bonus
+  - fiscal_bonus: round(part_a * 0.3314, 2) + round(part_b * 0.63, 2)
+  - quarter_pay: monthly_gross * 3
+  - employer_quarter: quarter_pay * employer_rate
+  - structural_reduction: max(round(0.14 * (11687.74 - quarter_pay), 2), 0) + max(round(0.16 * (9738.14 - quarter_pay), 2), 0)
+  - employer_net: employer_quarter - structural_reduction
+expected:
+  part_b: 118.18
+  work_bonus: 245.72
+  employee_ss_net: 81.03
+  fiscal_bonus: 116.72
+  structural_reduction: 944.38
+  employer_net: 930.62
+```
 
-### Pattern 4: Company Car Benefit in Kind
+### Holiday Pay and Company Cars
 
-- **Company car BIK calculation** — CO2 reference emissions × 6/7 × catalogue value × age correction (This BIK is added to taxable income for withholding tax AND subject to employer solidarity contribution (CO2-based, minimum EUR 31.34/month).)
+- **Holiday pay**: Blue-collar workers receive holiday pay through the holiday fund, financed by the 15.84% contribution on pay at 108%. White-collar workers receive single and double holiday pay from the employer; the double holiday pay carries employee social security and is subject to withholding at the rate for exceptional pay.
+- **Company car**: The benefit in kind (CO2-based) is added to taxable pay for withholding, and the employer owes the monthly CO2 solidarity contribution ([RSZ instructions 2026/3, company cars](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/special_contributions/companycar.html)). The 2026 amounts are not reproduced here.
 
 ## Section 10 -- Interaction with Other Skills
 
@@ -302,37 +342,29 @@ Gross monthly salary:                EUR 2,189.81
 
 | Skill | Interaction |
 | --- | --- |
-| belgium-bookkeeping | Payroll journal entries (620 accounts), accruals for holiday pay and 13th month |
-| belgium-einvoice | No direct interaction (e-invoicing relates to B2B transactions, not payroll) |
-| payroll-workflow-base | General payroll processing workflow; Belgium-specific overrides in this skill |
+| be-employee-income-tax | The employee's annual return; withholding and the fiscal work bonus are credited there |
+| belgium-bookkeeping | Payroll journal entries, accruals for holiday pay and the 13th month |
+| be-cross-border | Posted workers, frontier workers, A1 certificates |
+| payroll-workflow-base | General payroll workflow; Belgium-specific overrides in this skill |
 
 ### Belgium-Specific Payroll Considerations
 
-- **Indexation**: Belgian salaries are automatically indexed when the pivot index (based on health index) is exceeded. This is UNIQUE in Europe and means gross salaries increase without negotiation.
-- **Joint Committees (CP/PC)**: Over 100 joint committees set sector-specific rules for minimum wages, premiums, working conditions, and benefits. ALWAYS identify the applicable CP/PC before processing payroll.
-- **Language regions**: Administrative language (FR/NL/DE) affects document requirements but not calculation methodology.
-- **Salary margin**: For 2025-2026, the salary margin (loonmarge/marge salariale) is 0% -- meaning no collective salary increases beyond automatic indexation are permitted.
+- **Indexation**: Belgian pay is indexed automatically under sector agreements when the index moves; the timing depends on the joint committee.
+- **Joint Committees (PC / CP)**: Over 100 joint committees set sector minimum pay, premiums and benefits. Always identify the joint committee before running a payroll.
 
-## Disclaimer
+## Sources
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+| Source | URL | Read on |
+|---|---|---|
+| RSZ, administrative instructions 2026/3, social security contributions | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html | 2026-10-23 |
+| RSZ, administrative instructions 2026/3, work bonus | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html | 2026-10-23 |
+| RSZ, administrative instructions 2026/3, structural reduction | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/structuralreduction_targetgroupreductions/structuralreduction.html | 2026-10-23 |
+| RSZ, administrative instructions 2026/3, reductions introduction (S, µ, ß) | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/structuralreduction_targetgroupreductions/introduction.html | 2026-10-23 |
+| RSZ, administrative instructions 2026/3, exemption above the pay ceiling | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/otheremployersreductions/partial_exemption_very_high_salaries.html | 2026-10-23 |
+| RSZ, administrative instructions 2026/3, first hires | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/structuralreduction_targetgroupreductions/firstengagments.html | 2026-10-23 |
+| Fisconetplus, art. 51 WIB 92 (income 2026), lump-sum expenses | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c | 2026-10-23 |
+| Fisconetplus, art. 130 WIB 92 (income 2026), tax scale | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-10-23 |
+| Fisconetplus, art. 131 WIB 92 (income 2026), tax-free amount | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
+| Fisconetplus, art. 289ter/1 WIB 92 (income 2026), fiscal work bonus | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5403364d-120e-4c43-8945-ac770f1228f6 | 2026-10-23 |
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the 2026 Annex III withholding formula, its family and child reductions and the special rates for holiday pay and bonuses (FPS Finance pages at financien.belgium.be were behind a human-verification check and the 2026 royal decree could not be located); the special social security contribution scale for 2026; the work bonus amounts for January to June 2026 and the blue-collar slopes from 1 September 2026; the 2026 minimum wage (GGMMI) under collective agreement no. 43, which is not restated here; the company car CO2 contribution for 2026. Sections 5 to 8 (minimum wage, working time, benefits, payslips and filing deadlines) were not re-read against 2026 sources in this update.
