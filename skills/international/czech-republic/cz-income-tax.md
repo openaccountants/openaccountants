@@ -6,11 +6,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 2.1
 verified_by: pending
 ---
 
-# Czech Republic: income tax for the self-employed (OSVČ) (2026) v0.1
+# Czech Republic: income tax for the self-employed (OSVČ) (2026) v2.1
 
 > **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team. No accountant has reviewed this skill yet. Every figure comes from the Income Taxes Act as published in e-Sbírka (version in force 1 August to 31 December 2026), the Tax Code, government regulations, MPSV and the Financial Administration, all read on 23 October 2026. It prepares working papers. It is not authority to file or pay.
 
