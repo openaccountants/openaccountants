@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by: {}
 partial:
   IT-IND: "cz-employee-income-tax covers employees and non-business income for 2026; cz-income-tax (self-employed OSVČ) still carries tax year 2025 figures"
-  SC: cz-social-health covers the self-employed (OSVČ) only, not employee or employer contributions
+  SC: "cz-social-health covers the self-employed (OSVČ) only, tax year 2026; employee and employer contributions are not covered"
 ---
 
 # Czech Republic: tax pack
@@ -19,7 +19,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 | IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, still tax year 2025 figures) | partial, source-cited draft |
 | IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
-| SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
+| SC, social contributions | cz-social-health (self-employed OSVČ only, tax year 2026; employee and employer contributions missing) | partial, source-cited draft |
 | PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
 | TP, transfer pricing | cz-transfer-pricing | source-cited draft |
 | XB, cross-border | cz-cross-border | source-cited draft |

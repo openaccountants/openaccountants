@@ -1,6 +1,6 @@
 ---
 name: cz-social-health
-description: "Czech social security and public health insurance for the self-employed (OSVČ) for tax year 2026. Covers the pension and employment-policy rate of 29.2% on 55% of profit, health insurance of 13.5% on 50% of profit, voluntary sickness insurance at 2.7%, the 2026 minimum bases (main activity cut from 40% to 35% of the average wage by Act 90/2026 Coll., back to January, with a refund claim by 31 December 2026), minimum advances of CZK 5,005 social and CZK 3,306 health, the CZK 117,521 secondary-activity threshold, the CZK 2,350,416 social cap, the flat-rate tax regime (paušální daň) bands, due dates, the annual přehled, penalties and EU rules. Trigger on: OSVČ zálohy, sociální pojištění OSVČ, zdravotní pojištění OSVČ, přehled OSSZ, vedlejší činnost, paušální daň. Out of scope: employees and employers (cz-employee-contributions), income tax (cz-income-tax), residence and treaties (cz-cross-border)."
+description: "Czech social security and public health insurance for the self-employed (OSVČ) for tax year 2026. Covers the pension and employment-policy rate of 29.2% on 55% of profit, health insurance of 13.5% on 50% of profit, voluntary sickness insurance at 2.7%, the 2026 minimum bases (main activity cut from 40% to 35% of the average wage by Act 90/2026 Coll., back to January, with a refund claim by 31 December 2026), minimum advances of CZK 5,005 social and CZK 3,306 health, the CZK 117,521 secondary-activity threshold, the CZK 2,350,416 social cap, the flat-rate tax regime (paušální daň) bands, due dates, the annual přehled, penalties and EU rules. Trigger on: OSVČ zálohy, sociální pojištění OSVČ, zdravotní pojištění OSVČ, přehled OSSZ, vedlejší činnost, paušální daň. Out of scope: employee and employer contributions (not yet covered in this pack), income tax (cz-income-tax), residence and treaties (cz-cross-border)."
 jurisdiction: CZ
 category: international
 tax_year: 2026
@@ -16,7 +16,7 @@ verified_by: pending
 
 This skill covers the contributions a self-employed person (osoba samostatně výdělečně činná, OSVČ) pays on their own business profit. Related skills in this pack:
 
-- Employees and employers: [cz-employee-contributions](cz-employee-contributions.md).
+- Employee and employer contributions: not yet covered in this pack.
 - Income tax for the self-employed, including flat-rate expenses: [cz-income-tax](cz-income-tax.md).
 - Residence, non-residents and treaties: [cz-cross-border](cz-cross-border.md). Overview: [cz-tax-overview](cz-tax-overview.md).
 
@@ -26,12 +26,12 @@ The law is Act No. 589/1992 Coll. on social security premiums ("SSPA"), as amend
 
 **Self-employed people.** An OSVČ is a person with income from self-employment under the Income Taxes Act, for example a trade licence holder, a freelancer or a farmer. A partner of a general partnership (v.o.s.) or a general partner of a limited partnership is also an OSVČ. Both the social and the health base start from the person's partial tax base from self-employment (dílčí základ daně, ITA § 7) (SSPA § 5b(1); HIPA § 3a(1)). In this skill that figure is called "profit".
 
-**Main or secondary activity.** The answer depends on whether the activity is main (hlavní) or secondary (vedlejší). It is secondary in a month when, for at least part of that month, the person (ČSSZ, Přehled o příjmech a výdajích; Act 155/1995 § 9(6)):
+**Main or secondary activity.** The answer depends on whether the activity is main (hlavní) or secondary (vedlejší). It is secondary in a month when, for at least part of that month, the person (Act 155/1995 § 9(6) and (7)):
 
 - was also an employee;
 - drew an invalidity pension or had been granted an old-age pension;
 - drew maternity or pregnancy sickness benefit from employee sickness insurance;
-- personally cared for a child under 4, or for a dependent person (care degree I for a child under 10, or degree II to IV);
+- personally cared for a child under 4, or for a dependent person (degree I if under 10, or degree II to IV) who is a close relative or lives in the same household;
 - was a dependent child (for example a student).
 
 Otherwise the activity is main. The person must report the reason in the přehled for that year at the latest, with proof by the end of the following month where ČSSZ does not already hold the data (SSPA § 13a(8)).
@@ -39,19 +39,19 @@ Otherwise the activity is main. The person must report the reason in the přehle
 **Social insurance.**
 
 - A main activity is always insured for pension (SSPA § 13a(1)(c)).
-- A secondary activity is insured only if profit for 2026 reaches CZK 117,521. The threshold drops by CZK 9,794 for each full month without the activity (ČSSZ, OSVČ v kostce). Below the threshold there is no social insurance, unless the person opts in voluntarily.
+- A secondary activity is insured only if profit from it for 2026 reaches CZK 117,521 (2.4 times the average wage). The threshold drops by one twelfth, CZK 9,794, for each full month without the secondary activity or on OSVČ sickness benefit (Act 155/1995 § 10(2) and (3); ČSSZ, OSVČ v kostce). Below the threshold there is no social insurance, unless the person opts in voluntarily (§ 10(4)).
 
-**Health insurance.** Every OSVČ pays 13.5% of half the profit. The minimum base does not apply, for the whole year, to (HIPA § 3a(3); VZP, Platba pojistného při souběhu činností):
+**Health insurance.** Every OSVČ pays 13.5% of half the profit. The minimum base does not apply to a person who, for the whole year (HIPA § 3a(3)):
 
-- a person for whom the state pays health insurance (for example a pensioner or a student);
-- an employee who pays health insurance in the job on at least the employee minimum;
-- the groups listed in HIPA § 3(8), such as holders of a ZTP or ZTP/P disability card.
+- is one for whom the state pays health insurance (for example a pensioner or a student) (§ 3c);
+- is also an employee and pays health insurance in the job on at least the employee minimum;
+- holds a ZTP or ZTP/P disability card, or has reached pension age without meeting the other conditions for an old-age pension (§ 3(8)(a) and (b)).
 
-These people pay no monthly health advances. They pay the year's premium after the přehled.
+If one of these facts lasts only part of the year, the minimum is cut pro rata for the full months it lasted (§ 3a(4)(c)). A person exempt from the minimum for the whole year pays no monthly health advances and pays the year's premium within 8 days after the přehled (§ 8(3)).
 
 **Sickness insurance** is voluntary for an OSVČ. The person joins by filing an application (SIA § 11).
 
-**Out of scope here:** employees and employers ([cz-employee-contributions](cz-employee-contributions.md)) and income tax ([cz-income-tax](cz-income-tax.md)).
+**Out of scope here:** employee and employer contributions (not yet covered in this pack) and income tax ([cz-income-tax](cz-income-tax.md)).
 
 ## Rates, bands and thresholds
 
@@ -62,8 +62,8 @@ These people pay no monthly health advances. They pay the year's premium after t
 | Health insurance rate | 13.5% of the health base | 2026 | [VZP, Vyměřovací základ a výpočet pojistného](https://www.vzp.cz/platci/informace/osvc/vymerovaci-zaklad-a-vypocet-pojistneho); HIPA § 2(1) |
 | Social base | 55% of profit (50% before 2024) | 2026 | [SSPA § 5b(1)](https://e-sbirka.gov.cz/sb/1992/589); [ČSSZ, Stanovení výše pojistného](https://www.cssz.gov.cz/web/cz/osvc-duchodove-pojisteni-stanoveni-vyse-pojistneho) |
 | Health base | 50% of profit | 2026 | [HIPA § 3a(1)](https://e-sbirka.gov.cz/sb/1992/592); VZP, Vyměřovací základ |
-| Average wage for 2026 | CZK 48,967 | 2026 | derived: CZK 2,350,416 divided by 48 ([ČSSZ, Maximální vyměřovací základ](https://www.cssz.gov.cz/web/cz/maximalni-vymerovaci-zaklad)) |
-| Minimum monthly social base, main activity | CZK 17,139 (35% of the average wage) for the annual premium for the whole of 2026, under Act 90/2026 Coll. Advances for January to June were set on CZK 19,587 (40%) | 2026 | [ČSSZ, Změna výše minimálních záloh OSVČ v roce 2026](https://www.cssz.gov.cz/web/cz/zmena-vyse-minimalnich-zaloh-osvc-v-roce-2024); SSPA § 14(5); [Act 90/2026 Coll.](https://e-sbirka.gov.cz/sb/2026/90) |
+| Average wage for 2026 | CZK 48,967 (general assessment base for 2024, CZK 46,278, times the coefficient 1.0581, rounded up) | 2026 | [Government Regulation 365/2025 Coll. § 1](https://e-sbirka.gov.cz/sb/2025/365); HIPA § 3a(2); ČSSZ, Maximální vyměřovací základ (48 × 48,967 = 2,350,416) |
+| Minimum monthly social base, main activity | CZK 17,139 (35% of the average wage) for the annual premium for the whole of 2026, under Act 90/2026 Coll. Advances for January to June were set on CZK 19,587 (40%). ČSSZ's annual table still shows CZK 235,044 (12 × 19,587) for 2026; Art. II(5) of the Act overrides it | 2026 | [ČSSZ, Změna výše minimálních záloh OSVČ v roce 2026](https://www.cssz.gov.cz/web/cz/zmena-vyse-minimalnich-zaloh-osvc-v-roce-2024); SSPA § 14(5); [Act 90/2026 Coll.](https://e-sbirka.gov.cz/sb/2026/90) |
 | Minimum annual social base, main activity, full year | CZK 205,668 (12 × 17,139) | 2026 | SSPA § 5b(2)(a); Act 90/2026 Coll. Art. II(5); computed |
 | Minimum monthly social base, main activity, in the start year and the next 2 years, if not self-employed in the previous 20 years | CZK 12,242 (25%) | 2026 | ČSSZ, Změna výše minimálních záloh; SSPA § 14(5) |
 | Minimum monthly social base, secondary activity | CZK 5,387 (11%) | 2026 | [ČSSZ, Zálohy na pojistné](https://www.cssz.gov.cz/web/cz/zalohy-na-pojistne-na-duchodove-pojisteni); SSPA § 14(5) |
@@ -76,7 +76,7 @@ These people pay no monthly health advances. They pay the year's premium after t
 | Minimum monthly sickness base | CZK 9,000 (twice the CZK 4,500 employee threshold), so at least CZK 243 a month | 2026 | SSPA § 5b(4); [ČSSZ, Výpočet pojistného](https://www.cssz.gov.cz/web/cz/vypocet-pojistneho) |
 | Flat-rate tax regime (paušální daň), monthly payment | Band 1 CZK 9,162 (tax 100, social 5,756, health 3,306); band 2 CZK 16,745 (4,963 / 8,191 / 3,591); band 3 CZK 27,139 (9,320 / 12,527 / 5,292). Band 1 was CZK 9,984 until June 2026 | 2026 | [Finanční správa, Informace k institutu paušální daně pro rok 2025 a 2026](https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/informace-k-institutu-pausalni-dane-pro-rok-2025) |
 | Flat-rate regime, monthly social base | Band 1 CZK 19,710 (17,139 × 1.15); band 2 CZK 28,050; band 3 CZK 42,900 | 2026 | [ČSSZ, OSVČ v paušálním režimu](https://www.cssz.gov.cz/web/cz/osvc-v-pausalnim-rezimu); SSPA § 14(3) |
-| Late payment penalty (penále), social and health | Repo rate on the first day of the half-year when the default began, plus 8 points: 11.50% a year for defaults from January to June 2026, 11.75% from July to December 2026. VZP gives 0.0322% a day | 2026 | SSPA § 20(1); HIPA § 18(1); [Government Regulation 351/2013 Coll. § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt); [VZP, Dlužné pojistné, penále, pokuty](https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty) |
+| Late payment penalty (penále), social and health | Repo rate on the first day of the half-year in which the default began, plus 8 points: 11.50% a year (0.0315% a day) for defaults that began from January to June 2026, 11.75% a year (0.0322% a day) for defaults that began from July to December 2026 | 2026 | SSPA § 20(1); HIPA § 18(1); [Government Regulation 351/2013 Coll. § 2](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt); [VZP, Dlužné pojistné, penále, pokuty](https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty) |
 
 Bases and premiums are rounded up to whole koruna (SSPA §§ 5d, 7(3), 14(13); HIPA § 2(2)).
 
@@ -96,7 +96,7 @@ Bases and premiums are rounded up to whole koruna (SSPA §§ 5d, 7(3), 14(13); H
 
 - **Annual premium.** For 2026 the 35% minimum applies to the whole year (Art. II(5)).
 - **Advances.** January to June advances stay due at the old CZK 5,720 minimum (Art. II(1)).
-- **Refund.** A person who paid the old minimum can claim the difference back (CZK 715 a month, up to CZK 4,290) by a written request filed by 31 December 2026. The OSSZ pays within 2 months (Art. II(2)). A refunded amount is left out of the year's total advances on the přehled (Art. II(5)).
+- **Refund.** A person who had to pay advances at the old minimum can claim back the difference between the advance paid and the advance under the new rules (at most CZK 715 a month, CZK 4,290 for January to June). The request must be in writing and filed by 31 December 2026. If the OSSZ grants it, it pays within 2 months of the request (Art. II(2)). A refunded amount is left out of the year's total advances on the přehled (Art. II(5)).
 - **Unpaid advances.** Unpaid January to June advances, and the penalty on them, are written off down to the new minimum, if at least the new minimum was paid (Art. II(3)).
 
 **Advances during the year (SSPA § 14).**
@@ -105,16 +105,16 @@ Bases and premiums are rounded up to whole koruna (SSPA §§ 5d, 7(3), 14(13); H
 - **When it changes.** A new advance applies from the month after the přehled was filed, or was due (§ 14(6)).
 - **Falling income.** A person whose income has fallen by at least a third can ask the OSSZ to cut the advances. A secondary OSVČ can ask to stop them (§ 14(4) and (7)).
 - **New starters.** A person who starts in 2026 and was not self-employed in any of the previous 5 calendar years pays no social advances in 2026 or 2027. The premium is still due after each year's přehled (§ 14(9); ČSSZ, Změna výše minimálních záloh). This exemption does not apply in the flat-rate regime.
-- **Pensioners.** A working old-age pensioner on a full pension can set advances at 22.7%. They claim a 6.5% discount on the annual premium in the přehled (§ 14(1) and § 14bb).
+- **Pensioners.** A working old-age pensioner on a full pension can set advances at 22.7%. They claim a discount equal to 6.5% of the annual social base in the přehled (§ 14(1) and § 14bb(1) and (3)).
 - **Employee at the cap.** No advances are due once employment income alone has reached the CZK 2,350,416 cap and the person has shown this to the OSSZ (§ 15a(7)).
 
 **Health insurance (HIPA §§ 3a and 8).**
 
 - **Base and minimum.** The base is 50% of profit. The minimum is 12 times CZK 24,483.50, which is CZK 293,802 for a full year. It is cut pro rata for months without self-employment or on OSVČ sickness benefit (§ 3a(2) and (4)).
 - **First year.** A person starting out pays the minimum advance, CZK 3,306, in the first calendar year (§ 8(1); VZP).
-- **Later years.** Advances are 13.5% of last year's average monthly health base (§ 8(2)).
+- **Later years.** Advances are 13.5% of last year's average monthly health base. The new advance is first paid for the month in which the přehled was filed or was due, one month earlier than the social advance (§ 8(2)).
 - **No minimum.** A person exempt from the minimum pays no advances. They pay the whole premium after the přehled (§ 8(3)).
-- **Falling income.** The insurer can cut advances if expected profit falls by at least a third (§ 8(4)).
+- **Falling income.** On request, the insurer cuts advances pro rata if expected monthly profit is at least a third lower than last year's (§ 8(4)).
 
 **Voluntary sickness insurance.** The person chooses the monthly base. It must be at least CZK 9,000 and at most the average monthly social base from the last přehled. A person in their first year who has no přehled yet is capped at half the average wage, CZK 24,484 (SSPA § 5b(4)). The premium is 2.7% of the base.
 
@@ -129,7 +129,8 @@ Bases and premiums are rounded up to whole koruna (SSPA §§ 5d, 7(3), 14(13); H
   - have no employment income on 1 January;
   - not have exceeded the income limit for the chosen band in the previous year.
 - **Band limits on previous-year income.** Band 1: up to CZK 1,000,000. Up to CZK 1,500,000 if at least 75% of the income carries 80% or 60% flat-rate expenses. Up to CZK 2,000,000 if at least 75% carries 80%. Band 2: up to CZK 1,500,000, or up to CZK 2,000,000 if at least 75% carries 80% or 60%. Band 3: up to CZK 2,000,000.
-- **Notifications.** Entry and band changes are notified to the tax office by 10 January of the year (ČSSZ, OSVČ v paušálním režimu).
+- **Notifications.** Entry and band changes are notified to the tax office by 10 January of the year. A person starting a business notifies entry by the day the activity starts; a late notification has no effect for that year (Finanční správa, Obecné informace; ČSSZ, OSVČ v paušálním režimu).
+- **Sickness insurance.** Voluntary sickness premiums are not part of the flat-rate payment and are paid to the OSSZ separately. The sickness base is capped at the band's social base, so the maximum monthly premium in 2026 is CZK 533 in band 1, CZK 758 in band 2 and CZK 1,159 in band 3 (SSPA § 5b(4); ČSSZ, OSVČ v paušálním režimu).
 - **Leaving the regime.** If the person breaks a condition, the tax is no longer equal to the flat-rate tax. A přehled is then due and contributions are worked out in the normal way (ČSSZ, OSVČ v paušálním režimu).
 - **Band 1 cut.** Band 1 was CZK 9,984 a month until June 2026 and is CZK 9,162 from July, with effect back to January. The overpayment of CZK 4,932 can be set against any later monthly payment (Finanční správa; Act 90/2026 Coll. Art. II(4)).
 
@@ -141,7 +142,7 @@ Bases and premiums are rounded up to whole koruna (SSPA §§ 5d, 7(3), 14(13); H
 - **Health advances.** Due from the 1st of the month to the 8th of the following month (HIPA § 7(2); VZP, Splatnost). If the 8th falls on a weekend or holiday, the next working day.
 - **Flat-rate payment.** By the 20th of each month to the tax office. When a person starts self-employment and enters the regime, the first payment is due by the 20th of the next month, together with that month's payment (Finanční správa).
 - **Annual přehled (overview of income and expenses).** Filed with the OSSZ and with each health insurer the person was insured with that year. It is due one month after the income tax return deadline (SSPA § 15(1); HIPA § 24(2)).
-  - **Health insurer.** From 1 January 2026 the přehled goes to the health insurer electronically only (HIPA § 24(7); VZP).
+  - **Health insurer.** From 1 January 2026 the přehled goes to the health insurer electronically only (HIPA § 24(7); VZP). A person with no duty to file a tax return files the health přehled by 8 April (HIPA § 24(2)).
   - **OSSZ.** A person with a statutory data box files with the OSSZ electronically too (ČSSZ, Přehled o příjmech a výdajích).
   - **Return deadline.** The tax return is due 3 months after the year end. The deadline is 4 months if the return is filed electronically after the 3 months, and 6 months if a tax adviser files it or the accounts need an audit. The přehled follows whichever deadline applies.
   - **Dates for the 2025 přehled.** For the 2025 year, ČSSZ set 4 May 2026, 4 June 2026 (electronic return after 1 April) and 3 August 2026 (tax adviser) (ČSSZ, Přehled o příjmech a výdajích).
@@ -151,11 +152,13 @@ Bases and premiums are rounded up to whole koruna (SSPA §§ 5d, 7(3), 14(13); H
 
 ## Penalties and interest
 
-- **Late payment penalty (penále).** Unpaid or underpaid advances and premiums carry a penalty at the civil-law default interest rate (SSPA § 20(1); HIPA § 18(1)). The rate is the CNB repo rate on the first day of the half-year in which the default began, plus 8 points (Government Regulation 351/2013 Coll. § 2). That gives 11.50% a year for defaults from January to June 2026 (repo 3.50%) and 11.75% from July to December 2026 (repo 3.75% from 19 June 2026). VZP gives 0.0322% a day.
+- **Late payment penalty (penále).** Unpaid or underpaid advances and premiums carry a penalty at the civil-law default interest rate (SSPA § 20(1); HIPA § 18(1)). The rate is the CNB repo rate on the first day of the calendar half-year in which the default began, plus 8 points (Government Regulation 351/2013 Coll. § 2(1)). That gives 11.50% a year for a default that began from January to June 2026 (repo 3.50% on 1 January 2026) and 11.75% for one that began from July to December 2026 (repo 3.75% from 19 June 2026).
+  - **How it is computed.** The penalty runs for each calendar day from the day after the due date to the day of payment (SSPA § 20(2)). Daily, it is the annual rate divided by 365: VZP publishes 0.0315% a day for 1 July 2025 to 30 June 2026 and 0.0322% a day from 1 July 2026. Penalty = debt × daily rate × days. A health penalty is rounded up to whole koruna (HIPA § 18(3)).
+  - **Not like tax interest.** Under the regulation the rate is fixed by the half-year in which the default began. It does not reset each half-year, which is how late-payment interest on tax works (Tax Code §§ 251a(5) and 252).
   - **End date.** On unpaid social advances, the penalty runs only until the přehled is filed, or until the přehled deadline if it is late (SSPA § 20(2)).
   - **Grace month.** No social penalty is charged if a late advance is paid by the end of the following month (SSPA § 20(3)(b)).
   - **Small amounts.** A health penalty is not charged if it totals CZK 200 or less for the year (HIPA § 18(4)).
-  - **Wrong payment details.** Health insurance paid to the wrong insurer or under the wrong variable symbol counts as unpaid (HIPA § 18(1)).
+  - **Wrong payment details.** Health insurance paid to the wrong insurer, or under the wrong variable symbol, counts as unpaid (HIPA § 18(1)). No penalty is charged if the payer proves the money reached the right insurer's account under the wrong variable symbol (§ 18(5)).
 - **Fines, social.** Up to CZK 50,000 for failing to file the přehled, failing to file a corrected přehled when due, or failing to keep records (SSPA § 25c).
 - **Fines, health.** Up to CZK 50,000 for each failure to file the přehled or other required reports (HIPA § 26(1)). VZP quotes CZK 10,000 for a missed notification and CZK 50,000 for a missing přehled. Until the přehled is filed, the insurer can fix a probable premium (VZP, Přehled o výši daňového základu).
 - **Late přehled and sickness base.** If the přehled is filed late, the sickness base for the months in between is set at the CZK 9,000 minimum (SSPA § 5b(4)).
@@ -180,7 +183,7 @@ A designer has a trade licence as her only activity in 2026. Her 2026 tax return
 3. Health base: 50% of 720,000 = CZK 360,000. This is above the CZK 293,802 minimum.
 4. Health premium: 13.5% of 360,000 = CZK 48,600.
 5. Total for the year: CZK 164,232. Advances paid in 2026 are credited. Any balance is due within 8 days of the přehled.
-6. New advances from the month after the 2026 přehled is filed in 2027: social 29.2% of 33,000 (396,000 / 12) = CZK 9,636. Health 13.5% of 30,000 = CZK 4,050. Each must be at least the 2027 minimum, which ČSSZ and VZP have not yet published.
+6. New advances in 2027: social 29.2% of 33,000 (396,000 / 12) = CZK 9,636, from the month after the 2026 přehled is filed (SSPA § 14(6)). Health 13.5% of 30,000 = CZK 4,050, from the month in which the health přehled is filed (HIPA § 8(2)). Both are above the 2027 minimums. Computed from the 2027 average wage of CZK 51,663 (48,900 × 1.0565, Government Regulation 177/2026 Coll.), those are a social advance of CZK 5,281 (35% base CZK 18,083) and a health advance of CZK 3,488 (base CZK 25,831.50); ČSSZ and VZP have not yet published them.
 7. Sickness insurance on the CZK 9,000 minimum base: CZK 243 a month, CZK 2,916 for the year.
 
 ```oa-check
@@ -307,6 +310,11 @@ expected:
 | Act No. 592/1992 Coll. (HIPA), consolidated: §§ 2, 3a, 7, 8, 18, 24, 26 | https://e-sbirka.gov.cz/sb/1992/592 | 2026-10-23 |
 | Act No. 187/2006 Coll. (SIA), § 11 | https://e-sbirka.gov.cz/sb/2006/187 | 2026-10-23 |
 | Government Regulation No. 351/2013 Coll., § 2 (default interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
+| Act No. 155/1995 Coll. (pension insurance), §§ 9(6) to (9) and 10 (secondary activity, threshold) | https://e-sbirka.gov.cz/sb/1995/155 | 2026-10-23 |
+| Government Regulation No. 365/2025 Coll. (general assessment base 2024 CZK 46,278, coefficient 1.0581) | https://e-sbirka.gov.cz/sb/2025/365 | 2026-10-23 |
+| Government Regulation No. 177/2026 Coll. (general assessment base 2025 CZK 48,900, coefficient 1.0565, for 2027) | https://e-sbirka.gov.cz/sb/2026/177 | 2026-10-23 |
+| VZP, Dlužné pojistné a penále pro OSVČ (daily penalty rates by period) | https://www.vzp.cz/platci/informace/osvc/dluzne-pojistne-penale-pokuty/dluzne-pojistne-a-penale | 2026-10-23 |
+| Act No. 280/2009 Coll. (Tax Code), §§ 251a(5) and 252 (tax interest, for contrast) | https://e-sbirka.gov.cz/sb/2009/280 | 2026-10-23 |
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
-Not yet confirmed: the 2026 přehled due dates (3 May, 3 June and 2 August 2027 are computed from the one-month rule; ČSSZ has not yet published them); the ČSSZ annual minimum-base table still shows CZK 235,044 for 2026 (12 × 19,587), while Act 90/2026 Coll. Art. II(5) gives CZK 205,668, which this skill uses; the CZK 117,521 secondary threshold and the list of secondary-activity reasons are taken from ČSSZ (Act 155/1995 §§ 9 and 10 were not read); the full list of groups exempt from the health minimum under HIPA § 3(8) (VZP's summary was used); the 2027 minimum bases and average wage (not yet published).
+Not yet confirmed: the 2026 přehled due dates (3 May, 3 June and 2 August 2027 are computed from the one-month rule; ČSSZ has not yet published them); the 2027 minimum advances (computed from Government Regulation 177/2026 Coll.; ČSSZ and VZP have not yet published them); whether ČSSZ and VZP in practice keep the penalty rate fixed for the whole default as Regulation 351/2013 § 2(1) reads (VZP lists its daily rates by period without saying).
