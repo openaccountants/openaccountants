@@ -3,6 +3,7 @@ jurisdiction: GR
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
+  IT-CORP: "gr-corporate-income-tax covers entities keeping double-entry books; partnerships and other entities on single-entry books (ITC art. 47), tonnage-tax shipping companies and the bank deferred tax regime of art. 27A are not covered"
   IT-IND: gr-income-tax covers only the self-employed, on the 2025 scale; employees, pensioners, rent, capital income and the 2026 scale of ν. 5246/2025 are not covered
 ---
 
@@ -15,7 +16,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | gr-income-tax (partial: self-employed only, 2025 figures; employees, pensioners and capital income are not covered) | source-cited draft |
-| IT-CORP, corporate income tax | gr-corporate-income-tax (2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties) | source-cited draft |
+| IT-CORP, corporate income tax | gr-corporate-income-tax (partial: double-entry books only; single-entry entities and tonnage-tax shipping are not covered. 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | (missing: gr-efka covers only the self-employed; employee and employer EFKA are not covered) | |
 | PR, payroll withholding | (missing) | |

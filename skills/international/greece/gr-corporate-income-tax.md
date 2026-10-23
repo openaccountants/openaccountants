@@ -40,11 +40,11 @@ Related skills: `gr-income-tax` (individuals and the self-employed), `gr-cross-b
 | Disallowed interest carry-forward | No time limit | 2026 | ITC art. 49(6) |
 | R&D expenditure super-deduction | Deducted with a 100% uplift (200% in total); 150% uplift where paid to a registered start-up or a listed research body not connected to the payer | 2026 | ITC art. 22A(1) |
 | Low-value assets | Assets with a depreciable value below EUR 1,500 may be written off in the year of acquisition | 2026 | ITC art. 24(7) |
-| Participation exemption, dividends and gains on shares | Holding of at least 10% kept for at least 24 months, in an EU company covered by Directive 2011/96/EU | 2026 | ITC arts. 48(1) and 48A(1) |
+| Participation exemption, dividends and gains on shares | Holding of at least 10% kept for at least 24 months, in an EU company covered by Directive 2011/96/EU; from tax year 2025 also in a non-EU capital company that is subject to corporate tax and not in a non-cooperative state | 2026 | ITC arts. 48(1), 48(7), 48A(1) and 48A(4) (paras. 48(7) and 48A(4) added by ν. 5162/2024 art. 98, from tax year 2025) |
 | Withholding on dividends | 5% | Income from 1.1.2020 onward | ITC art. 64(1)(a) |
 | Withholding on interest | 15% | 2026 | ITC art. 64(1)(b) |
-| Withholding on royalties | 20% | 2026 | ITC art. 64(1)(c) |
-| Withholding on fees for technical works, management, consulting and similar services | 20%; for a Greek-resident payee only where the transaction exceeds EUR 300 | 2026 | ITC art. 64(1)(d) and 64(8) |
+| Withholding on royalties | 20%; none where the payee is a Greek-resident legal person or a Greek permanent establishment | 2026 | ITC arts. 64(1)(c) and 62(5) |
+| Withholding on fees for technical works, management, consulting and similar services | 20% where the payee is an individual (a Greek-resident individual only where the transaction exceeds EUR 300) or a legal person not resident in Greece or the EU/EEA; none where the payee is a legal person resident in Greece or the EU/EEA | 2026 | ITC arts. 62(1)(d), 62(2), 62(3), 64(1)(d) and 64(8) |
 | Prepayment of next year's tax (προκαταβολή) | 80% of the current year's tax, less tax withheld at source in Greece | 2026 | ITC art. 71(1) and 71(6) |
 | Prepayment, Greek banks and branches of foreign banks | 100% | 2026 | ITC art. 71(2) |
 | Prepayment, new legal persons | Rate cut by 50% (so 40%) for the first three financial years after starting business; not for companies formed by conversion or merger | 2026 | ITC art. 71(3) |
@@ -57,9 +57,10 @@ Related skills: `gr-income-tax` (individuals and the self-employed), `gr-cross-b
 | Instalments | Eight equal monthly instalments, the first by the last working day of July | 2026 | ITC art. 68(3) |
 | Late return, no tax due | EUR 100 per breach | 2026 | TPC art. 53(1) |
 | Late or missing return, double-entry books | EUR 500 per breach (EUR 250 for single-entry books) | 2026 | TPC art. 53(2) |
+| Return never filed where tax would be due | 50% of the tax on the missing return | 2026 | TPC art. 53(6) |
 | Inaccurate return | 10%, 25% or 50% of the tax shortfall, by size of shortfall | 2026 | TPC art. 54(1) |
 
-The trade fee for individuals was abolished from tax year 2024 (ν. 5162/2024, art. 3 and its commencement article). For legal persons and entities it still applies in 2026. Agricultural cooperatives, entities in liquidation, bankruptcy or dormancy, and entities operating in villages up to 500 inhabitants or islands under 3,100 inhabitants (unless tourist places) pay no trade fee (art. 31(2)). The fee is not deductible (art. 31(6)).
+The trade fee for individuals was abolished from tax year 2024 (ν. 5162/2024, art. 3 and its commencement article). For legal persons and entities it still applies in 2026. Agricultural cooperatives, school cooperatives, certain social-economy cooperatives, entities in liquidation, bankruptcy or dormancy, and entities operating in villages up to 500 inhabitants or islands under 3,100 inhabitants (unless tourist places) pay no trade fee (art. 31(2)). Where the business stops or becomes dormant during the year, the fee is cut pro rata to the months of operation, with more than 15 days counting as a month (art. 31(3)). The fee is not deductible (art. 31(6)).
 
 ### Tax depreciation rates (ITC art. 24(4))
 
@@ -103,7 +104,7 @@ Depreciation starts in the month after the asset is put into use, pro rata (art.
    - employment-related payments and rent not paid electronically or through a payment service provider.
 4. **Replace accounting depreciation with tax depreciation** at the art. 24 rates above.
 5. **R&D super-deduction** (art. 22A). Qualifying R&D cost, including depreciation of research equipment, is deducted with a 100% uplift, or 150% where paid to a registered start-up or a listed research body not connected to the payer. A resulting loss carries forward under art. 27.
-6. **Exempt dividends and gains** (arts. 48 and 48A). A Greek-resident company is exempt on dividends from, and gains on selling shares in, an EU company listed in Annex I of Directive 2011/96/EU, resident in the EU and subject to one of the listed taxes, where it holds at least 10% for at least 24 months. Where the 24 months are not yet completed, the dividend exemption can be claimed provisionally against a bank guarantee (art. 48(3)). Dividends that do not qualify are taxed, with a credit for the underlying corporate tax and the dividend withholding (art. 68(3)).
+6. **Exempt dividends and gains** (arts. 48 and 48A). A Greek-resident company is exempt on dividends from, and gains on selling shares in, an EU company listed in Annex I of Directive 2011/96/EU, resident in the EU and subject to one of the listed taxes, where it holds at least 10% for at least 24 months. From tax year 2025 the same exemption covers a company outside the EU if it is a capital company under its own law, is not in a non-cooperative state under art. 65, and is subject to corporate income tax without an option or exemption (arts. 48(7) and 48A(4)). Business expenses linked to an exempt holding are not deductible (arts. 48(4) and 48A(3)). Where the 24 months are not yet completed, the dividend exemption can be claimed provisionally against a bank guarantee (art. 48(3)). Dividends that do not qualify are taxed, with a credit for the underlying corporate tax and the dividend withholding (art. 68(3)).
 7. **Interest limitation** (art. 49). Exceeding borrowing cost (borrowing costs less taxable interest and equivalent income) is deductible up to the higher of 30% of tax EBITDA and EUR 3,000,000. Tax EBITDA is taxable income plus exceeding borrowing cost plus tax depreciation; exempt income is left out. Any excess carries forward with no time limit. Financial undertakings (banks, investment firms, insurers, pension funds, AIFs, UCITS and others listed in art. 49(7)) are outside the rule. Loans for long-term EU public infrastructure projects are excluded (art. 49(5)).
 8. **Losses** (art. 27). A tax loss carries forward against business profits of the next five years, oldest first. No carry-back. Losses of a foreign permanent establishment cannot be used, except an EU/EEA permanent establishment in a treaty state where the treaty does not exempt its profits. If more than 33% of the shares or votes change hands within a year, and in that year or the next the company's activity changes by more than 50% of turnover compared with the year before the change, the brought-forward losses are lost (art. 27(5)).
 9. **Tax** = taxable profit x 22%, less tax withheld on income included in profit (art. 58(3)), less the prepayment made with last year's return, less foreign tax credit under art. 9 (art. 68(3)). Then add the prepayment for next year and the trade fee.
@@ -125,7 +126,8 @@ Depreciation starts in the month after the asset is put into use, pro rata (art.
 
 ## Penalties and interest
 
-- **Late or missing return with tax due.** EUR 500 per breach for a company keeping double-entry books; EUR 250 for single-entry books (TPC art. 53(2)).
+- **Late or missing return.** EUR 500 per breach for a company keeping double-entry books; EUR 250 for single-entry books (TPC art. 53(2)). No fine where a late original return shows tax payable of up to EUR 100, or a late amended return adds tax of up to EUR 100 (art. 53(7)).
+- **Return never filed where tax would be due.** 50% of the tax on the missing return (TPC art. 53(6)).
 - **Late return with no tax due.** EUR 100 per breach (TPC art. 53(1)).
 - **Inaccurate return.** On the difference between the tax per the return and the tax per AADE's corrective assessment (TPC art. 54(1)):
   - 10% of the difference, if the difference is 5% to 20% of the declared tax;
@@ -133,13 +135,13 @@ Depreciation starts in the month after the asset is put into use, pro rata (art.
   - 50%, if it is over 50%.
   Inaccurate withholding returns carry 50% of the difference (art. 54(2)).
 - **Late payment interest.** Tax not paid by the due date carries interest from the day after the deadline. For a late or amended return, interest runs from the date the tax should first have been paid. No interest on interest (TPC art. 52(1) and (5)). The rate is set outside the TPC; see "Not yet confirmed".
-- **Transfer pricing file.** Late, missing or wrong summary information table: 1/1000 of the documented transactions, minimum EUR 500, maximum EUR 2,000 (TPC art. 55(1)(a)).
+- **Transfer pricing file.** Late or wrong summary information table: 1/1000 of the documented transactions, minimum EUR 500, maximum EUR 2,000 (TPC art. 55(1)(a)). Summary table not filed: 1/1000, minimum EUR 2,500, maximum EUR 10,000 (art. 55(1)(b)). Documentation file handed over late on request: EUR 5,000 (day 31 to 60), EUR 10,000 (day 61 to 90), EUR 20,000 (after day 90 or never) (art. 55(1)(c)).
 
 ## Cross-border points
 
 - **Dividends paid abroad.** 5% withholding (ITC art. 64(1)(a)). Nil where paid to an EU parent covered by Directive 2011/96/EU holding at least 10% for at least 24 months (art. 63(1)). Treaties may reduce the rate.
 - **Interest and royalties paid abroad.** 15% and 20% (art. 64(1)(b) and (c)). Nil between associated EU companies under Directive 2003/49/EC, with a 25% direct holding kept for 24 months (art. 63(2)). Interest on bank loans and interbank deposits is not subject to withholding (art. 64(6)).
-- **Fees paid abroad.** 20% on fees for technical works, management and consulting (art. 64(1)(d)).
+- **Fees paid abroad.** 20% on fees for technical works, management and consulting paid to an individual or to a legal person resident outside the EU/EEA (arts. 62(3) and 64(1)(d)). Fees paid to a legal person resident in the EU/EEA are not subject to withholding (art. 62(2)).
 - **Final tax.** For a non-resident without a Greek permanent establishment, withholding is the final tax, except on art. 64(1)(d) fees (art. 64(3)).
 - **Permanent establishment.** A non-resident with a Greek permanent establishment files form N and pays 22% on the profit attributable to it.
 - **Foreign tax.** Tax paid abroad is credited under ITC art. 9 (art. 68(3)(c)).
@@ -222,7 +224,7 @@ expected:
 3. Where is its registered seat, and how many branches does it have? This sets the trade fee. Did average full-time headcount rise by at least 3/12 with gross income up to EUR 2m? If so, no trade fee is due.
 4. Which unused losses does it have, from which years? Has more than 33% of its ownership changed hands, with a change of activity?
 5. What are its net borrowing costs, and is it a financial undertaking?
-6. Does it receive dividends or sell shares (10% holding, 24 months, EU company)? Does it pay dividends, interest, royalties or fees abroad?
+6. Does it receive dividends or sell shares (10% holding for 24 months; is the company in the EU, or outside it and subject to corporate tax)? Does it pay dividends, interest, royalties or fees abroad?
 
 ## Sources
 
@@ -236,4 +238,4 @@ expected:
 
 The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser on 2026-10-23.
 
-Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52 and was not found on an official page); whether any 2026 law amended the articles above after ν. 5264/2025; the AADE decision setting the filing window for tax year 2026 returns, and any extension; the CFC and exit-tax figures (see `gr-cross-border`).
+Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52; a rate of 0.73% a month appears only in press reports, not on an official page that was read); whether any 2026 law amended the articles above after ν. 5264/2025; the AADE decision setting the filing window for tax year 2026 returns, and any extension; the CFC and exit-tax figures (see `gr-cross-border`).
