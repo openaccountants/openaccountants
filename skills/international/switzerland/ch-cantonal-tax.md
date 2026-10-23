@@ -1,7 +1,7 @@
 ---
 name: ch-cantonal-tax
 description: "Swiss cantonal and communal income and wealth tax on individuals for tax year 2026, from the StHG, the ESTV tables and cantonal sources. Covers how the tax is built (simple tax from the cantonal tariff, times the cantonal, communal and church multipliers), the 2026 multipliers in all 26 cantonal capitals, the Zurich and Zug 2026 tariffs, wealth tax thresholds, deductions that differ by canton (commuting caps, childcare), filing deadlines for Zurich, Zug, Bern, Basel-Stadt, Geneva and Vaud, the 31 December rule when moving between cantons, interest and penalties. Two worked examples: CHF 100,000 taxable income in Zurich city and in Zug city. Trigger on: Kantonssteuer, Gemeindesteuer, Steuerfuss, einfache Steuer, Kirchensteuer, impôt cantonal et communal, centimes additionnels, Vermögenssteuer, moving canton, Swiss income tax by canton. Out of scope: ch-federal-income-tax, ch-payroll (tax at source), ch-cross-border, ch-lump-sum, ch-corporate-income-tax."
-version: 2.1
+version: 2.2
 jurisdiction: CH
 category: international
 tax_year: 2026
@@ -154,7 +154,7 @@ Other cantons were not read for this skill; use the date on the canton's own not
 - **Moving between cantons:** the canton of residence on 31 December taxes the whole year's income and wealth (StHG art. 4b para. 1). Someone moving from Zug to Zurich on 1 December 2026 files one 2026 return, in Zurich, at Zurich rates. Exception: a pension lump sum is taxed in the canton of residence on the day it falls due (StHG art. 4b para. 1).
 - **Property or business in another canton:** that canton taxes the property or business for the whole year, even if it was bought or sold during the year; income and wealth are split between the cantons under the federal ban on intercantonal double taxation (StHG art. 4b para. 2). The rate in each canton is set on total income and wealth.
 - **Arriving from or leaving for abroad:** liability covers only part of the year; regular income is converted to 12 months for the rate (StHG art. 15 para. 3). See `ch-cross-border`.
-- **Tax at source:** foreign employees without a C permit pay cantonal, communal and federal tax through payroll at the tariff of their canton of residence. Those with gross pay of more than CHF 120,000, and in Zurich those with taxable wealth of at least CHF 80,000 (single; CHF 160,000 jointly taxed) or other income of at least CHF 3,000 not taxed at source, are moved into an ordinary assessment ([ZStB 133.1, A.III](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf)). Details: `ch-payroll`, `ch-cross-border`.
+- **Tax at source:** foreign employees without a C permit pay cantonal, communal and federal tax through payroll at the tariff of their canton of residence. Those with gross pay of at least CHF 120,000 (QStV art. 9 para. 1), and in Zurich those with taxable wealth of at least CHF 80,000 (single; CHF 160,000 jointly taxed) or other income of at least CHF 3,000 not taxed at source, are moved into an ordinary assessment ([ZStB 133.1, A.III](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf)). Details: `ch-payroll`, `ch-cross-border`.
 - **Non-residents** with Swiss real estate or a Swiss business file in the canton where it is (StHG art. 4 para. 1; ZStB 133.1, A.I.1 let. d).
 
 ## Worked examples
@@ -268,7 +268,7 @@ The edge case: Zug's city multiplier was 52.11% in 2025 (54% less a 3.5% rebate)
 2. Single, married or registered partners, or a single parent living with children? The tariff and deductions depend on it.
 3. Church membership of each spouse (reformed, Roman Catholic, Christian Catholic, none), and any exit during the year.
 4. Real estate or a business in another canton or abroad.
-5. Permit and tax at source status: C permit or Swiss, or taxed at source with pay of more than CHF 120,000?
+5. Permit and tax at source status: C permit or Swiss, or taxed at source with pay of at least CHF 120,000?
 6. Net wealth at 31 December 2026, and any pension lump sum paid in 2026.
 
 ## Sources

@@ -1,12 +1,13 @@
 ---
 name: albania-income-tax
-description: Use this skill whenever asked about Albania personal income tax for self-employed individuals and employees. Trigger on phrases like "how much tax do I pay in Albania", "Albanian income tax", "DIVA", "D1 annual return", "tatime.gov.al", "self-employed Albania", "ALL tax brackets", "0% small business tax", "social and health contributions Albania", "PAYE Albania", "13% 23% income tax", "dividend tax Albania", "disguised employment", or any question about filing or computing personal income tax for a resident or non-resident individual in Albania. Also trigger when preparing or reviewing an annual individual return, computing the 0%/15%/23% self-employed regime, applying the monthly PAYE withholding schedule, or advising on social/health contributions. This skill covers progressive employment rates, the self-employed business regime, investment income, social/health contributions, the per-child deduction, filing thresholds, penalties, and interaction with VAT. ALWAYS read this skill before touching any Albanian income tax work.
-version: 0.1
+description: "Albanian personal income tax (tatimi mbi të ardhurat personale) for tax year 2026 under Law No. 29/2023 as amended to Law No. 81/2025. Covers employees (13% and 23% scale, monthly payroll, the ALL 600,000 / 420,000 / 360,000 personal deductions), the self-employed and individual traders (15% and 23% scale, the 0% rate to 2029 for gross income up to ALL 14 million, presumed expenses, instalments), the disguised-employment rule in art. 12(1)(ç) and its two exceptions, investment income (dividends 8%; interest, rent and gains 15%), gifts and inheritances, the 31 March DVAP return, and penalties and interest. Trigger on 'Albanian income tax', 'DVAP', 'TAP Albania', 'self-employed Albania 0%', 'disguised employment Albania', 'tax on rent Albania'. Out of scope: companies (al-corporate-tax), VAT (albania-vat), payroll mechanics (albania-payroll), contributions (albania-social-contributions), treaties (al-cross-border), planning (albania-tax-optimization)."
+version: 0.2
 jurisdiction: AL
-tax_year: 2025
+tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+verified_by: pending
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,655 +15,244 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Albania Personal Income Tax -- Self-Employed & Individuals
+# Albania personal income tax, tax year 2026
 
-## Albania Personal Income Tax -- Self-Employed & Individuals Skill v0.1
+> **Source-cited draft.** Built by Michael Cutajar and the OpenAccountants team from the consolidated texts of Law No. 29/2023, General Instruction No. 26/2023 and Law No. 9920/2008 published by the General Directorate of Taxes, read on 2026-10-23. No accountant has reviewed it. Do not file from it without review by a qualified Albanian professional.
 
-## Section 1 -- Quick Reference
+Tax year: the calendar year, 1 January to 31 December (Law 29/2023 art. 6). Currency: Albanian lek (ALL). Authority: Drejtoria e Përgjithshme e Tatimeve (General Directorate of Taxes), tatime.gov.al. Returns are filed on e-Filing.
 
-**Quick Reference table**
+See also: `al-corporate-tax`, `albania-payroll`, `albania-social-contributions`, `albania-vat`, `al-cross-border`, `albania-tax-optimization`.
 
-| Field | Value |
-| --- | --- |
-| Country | Albania (Republic of Albania) |
-| Tax | Personal income tax (Tatimi mbi të Ardhurat Personale) |
-| Currency | ALL only (Albanian lek) |
-| Tax year | Calendar year (1 January -- 31 December) [PwC: Tax administration] |
-| Primary legislation | Law No. 29/2023, dated 30.03.2023, "On Income Tax" (effective 1 Jan 2024; repealed Law No. 8438/1998) |
-| Supporting legislation | General Instruction No. 26, dated 08.09.2023 (implementing); Law No. 7703/1993 "On Social Insurance" (as amended); Law No. 10383/2011 (health insurance); Law No. 9920/2008 "On Tax Procedures" (as amended) |
-| Tax authority | General Directorate of Taxes / Albanian Tax Administration (Drejtoria e Përgjithshme e Tatimeve, DPT) |
-| Filing portal | tatime.gov.al e-filing |
-| Annual return deadline | 31 March of the following year (e.g. 31 March 2026 for 2025) [PwC; tatime.gov.al] |
-| Validated by | Pending — requires sign-off by an Albanian-qualified accountant/tax advisor |
-| Validation date | Pending |
-| Skill version | 0.1 |
-| Research confidence | Medium — several figures flagged [RESEARCH GAP] below require reviewer confirmation against current Council of Ministers (CoM) decisions and General Instruction No. 26/2023 |
+## Who this applies to
 
-### Tax Rate Brackets (2025)
+**Taxpayers.** Every natural person is a personal income taxpayer (art. 7). "Natural person" covers the self-employed individual (individ i vetëpunësuar: services and other professional activity), the individual trader (individ tregtar: commercial activity) and any other individual, including employees (art. 3(2), (5), (6)).
 
-**Employment income — ANNUAL (year-end reconciliation)**  _([Law 29/2023; PwC: Taxes on personal income])_
+**Residence** (art. 8). An individual is resident for the tax year if any one of these is true:
+- has a permanent home (vendbanim i qëndrueshëm) in Albania during the year;
+- is in Albania for 183 days or more in the year, counting the days of arrival and departure;
+- is an Albanian citizen working abroad as an employee or official of the Albanian government;
+- has a shop, professional office, factory or other place of activity in Albania, or a habitual abode there, unless they have a permanent home abroad for the whole year and none in Albania;
+- has the centre of vital interests in Albania.
 
-| Annual Taxable Income (ALL) | Rate | Cumulative Tax at Top |
-| --- | --- | --- |
-| 0 -- 2,040,000 | 13% | ALL 265,200 |
-| 2,040,001+ | 23% | -- |
+From the Law 81/2025 amendment, foreign artists are not resident for 24 months from their first entry into Albania, whatever their days of presence (art. 8(dh)).
 
-Cumulative check: 2,040,000 × 13% = ALL 265,200. Above the breakpoint, tax = 265,200 + 23% × (income − 2,040,000). A personal allowance reduces the taxable base at lower incomes — see the monthly schedule below.
+**Residents** are taxed on worldwide income. **Non-residents** are taxed on their worldwide income attributable to an Albanian permanent establishment, and, to the extent not already covered, on their Albanian-source income (art. 2(2)(a), (b)). Source rules are in art. 4: work done in Albania, pay owed by a resident employer even for work abroad, Albanian real estate, dividends from residents, interest and royalties paid by residents, and more.
 
-**Employment income — MONTHLY withholding (PAYE) schedule (official tatime.gov.al table)**  _([tatime.gov.al: Tax on personal income; PwC])_
+**Three income categories** (art. 10): employment, business, investment. Each is taxed on its own scale (art. 21; Instruction 26 para. 21.2). Inheritances, gifts and gambling winnings are taxed under Chapter VI (art. 60).
 
-| Monthly Gross (ALL) | Tax |
-| --- | --- |
-| 0 -- 50,000 | 0% (fully exempt) |
-| 50,001 -- 60,000 | 13% on the amount exceeding ALL 35,000 (transitional band — allowance partially phases out) |
-| 60,001 -- 200,000 | 13% on the amount exceeding ALL 30,000 |
-| 200,001+ | ALL 22,100 + 23% on the amount exceeding ALL 200,000 |
+**Not in scope here:** companies and other entities (`al-corporate-tax`); social and health contributions (`albania-social-contributions`).
 
-Arithmetic check on the ALL 22,100 base: at monthly gross ALL 200,000 the prior-band tax = 13% × (200,000 − 30,000) = 13% × 170,000 = ALL 22,100. Consistent.
+## Rates, bands and thresholds
 
-[RESEARCH GAP — reviewer to confirm] The monthly 23% breakpoint (ALL 200,000/month = ALL 2,400,000/year) does NOT line up with the annual 23% breakpoint (ALL 2,040,000/year = ALL 170,000/month). The research notes two different official presentations of the monthly table (a simplified 0/13/23 version on tatime.gov.al vs. the allowance-phase-out version above from PwC). Reconcile both against General Instruction No. 26/2023 for the authoritative monthly algorithm before relying on month-by-month figures; the year-end reconciliation uses the annual 13%/23% brackets.
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| Employment income, annual taxable base ALL 0 to 2,040,000 | 13% | 2026 | Law 29/2023 art. 24(1), [tatime.gov.al consolidated law](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf) |
+| Employment income, taxable base above ALL 2,040,000 | 23% | 2026 | Law 29/2023 art. 24(1) |
+| Same bands in monthly payroll | 13% up to ALL 170,000 of monthly base, 23% above | 2026 | [Instruction 26/2023 para. 24.1](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
+| Business net income (taxable profit) of traders and self-employed, ALL 0 to 14,000,000 | 15% | 2026 | Law 29/2023 art. 24(2) |
+| Business taxable profit above ALL 14,000,000 | 23% | 2026 | Law 29/2023 art. 24(2) |
+| Traders and self-employed with gross income up to ALL 14,000,000 a year | 0% on the whole business profit, until 31 Dec 2029 (all or nothing) | 2026 | Law 29/2023 art. 69(1)(dh) |
+| Personal deduction, annual income up to ALL 600,000 | ALL 600,000 a year (ALL 50,000 a month for monthly income up to ALL 50,000) | 2026 | Law 29/2023 art. 22(1)(a) |
+| Personal deduction, annual income ALL 600,001 to 720,000 | ALL 420,000 a year (ALL 35,000 a month for monthly income ALL 50,001 to 60,000) | 2026 | Law 29/2023 art. 22(1)(b) |
+| Personal deduction, annual income above ALL 720,000 | ALL 360,000 a year (ALL 30,000 a month for monthly income above ALL 60,000) | 2026 | Law 29/2023 art. 22(1)(c) |
+| Each dependent child under 18 | ALL 48,000 a year, claimed on the annual return by the higher earner | 2026 | Law 29/2023 arts. 22(1)(ç), 23(1) |
+| Children's education costs | Up to ALL 100,000 a year, only if annual taxable employment and/or business income is under ALL 1,200,000 | 2026 | Law 29/2023 art. 22(2) |
+| Private pension contributions | Deductible up to the national minimum wage each month | 2026 | Law 29/2023 art. 20(1), (4) |
+| Dividends | 8% | 2026 | Law 29/2023 art. 24(3)(a) |
+| Interest, royalties, rent, capital gains on securities and real estate, crypto, other investment income | 15%, no costs deducted unless the law says so | 2026 | Law 29/2023 art. 24(3)(b), (4) |
+| Inheritances, gifts, gambling winnings | 15%, no costs deducted | 2026 | Law 29/2023 art. 60(9) |
+| Gift and inheritance exemption (first and second degree heirs and siblings are fully exempt) | Others: ALL 5,000,000 of immovable property and ALL 1,000,000 of movable property per taxpayer | 2026 | Law 29/2023 art. 60(7) |
+| Presumed-expense regime | Annual turnover up to ALL 10,000,000; 30% of income for the self-employed, 50% services and crafts, 60% production and bars/restaurants, 70% retail and individual transport, 90% wholesale | 2026 | Law 29/2023 art. 14(1) |
+| Payment to a person who has not signed a status declaration and is not in employment | 15% withheld | 2026 | Law 29/2023 art. 65(1)(b) |
+| Withholding on dividends | 8%, final | 2026 | Law 29/2023 arts. 58(1), 59 |
+| Withholding on interest, royalties, gambling, and rent paid to an individual | 15%, final | 2026 | Law 29/2023 arts. 58(1), 59 |
+| Annual return required | Gross income above ALL 1,200,000 from all sources; or more than one employer; or more than ALL 50,000 of other income not taxed by final withholding | 2026 | Law 29/2023 art. 67(1); Instruction 26 para. 67(a) |
+| Late-payment interest rate (art. 76) | 8.1% from 22.07.2025; 7.8% from 11.04.2026, confirmed again from 08.10.2026 | 2026 | [tatime.gov.al: Normat e interesit](https://tatime.gov.al/institucioni/publikime/normat-e-interesit/) |
 
-**Self-employed / business / trader income: annual taxable profit**  _(Law 29/2023 art. 24(2) and art. 69(1)(dh))_
+**No 2026 change to the scales.** The consolidated law read today (amended up to Law 81/2025 of 11.12.2025) does not amend arts. 22 or 24. The Law 81/2025 changes that touch individuals are the self-declaration exception in art. 12(1)(ç), the foreign-artist rule in art. 8(dh), sponsorship received (art. 11(g)) and the crypto-asset definition (art. 3(24)).
 
-| Annual taxable profit (ALL) | Rate under art. 24(2) |
-| --- | --- |
-| 0 -- 14,000,000 | 15% |
-| 14,000,001+ | 23% |
+**How the monthly payroll works.** The employer deducts 1/12 of the art. 22(1)(a) to (c) deduction, then applies art. 24 (art. 65(1); Instruction 26 para. 24.1). Monthly gross up to ALL 50,000 is fully deducted, so no tax. ALL 50,001 to 60,000: 13% of the amount above ALL 35,000. Above ALL 60,000: 13% of the amount above ALL 30,000, up to gross ALL 200,000 (taxable ALL 170,000); above that, ALL 22,100 plus 23% of the amount above ALL 200,000. The base is gross pay, less any voluntary pension contribution withheld, less the deduction; employee social contributions are not deducted (Instruction 26, payroll form notes, items 26 to 28). Only the one employer with whom the employee signs the personal status declaration gives the deduction; other employers apply the scale with no deduction (art. 65(1)). The child and education deductions are claimed only on the annual return (art. 65(2)).
 
-**The 0% rule is a threshold on gross income, not a band.** Law 29/2023 art. 69(1)(dh) says that for individual traders, the self-employed and entities "with gross income up to ALL 14 million a year, the income tax rate of 0% will apply until 31 December 2029" ("me të ardhura bruto deri 14 milionë lekë në vit, norma e tatimit mbi të ardhurat 0% do të aplikohet deri më 31 dhjetor 2029"). The test is gross income (të ardhura bruto), not taxable profit. It is all or nothing:
-- Gross income for the year up to ALL 14,000,000: the whole business profit is taxed at 0%, until 31 December 2029.
-- Gross income above ALL 14,000,000: no 0% rate at all. The whole taxable profit is taxed under art. 24(2): 15% on the first ALL 14,000,000 of taxable profit and 23% on the rest.
+**The ALL 14 million rule is a threshold, not a band.** Art. 69(1)(dh) applies 0% to individual traders, the self-employed and entities "with gross income up to ALL 14 million a year" ("me të ardhura bruto deri 14 milionë lekë në vit"), until 31 December 2029. The test is gross income, not profit:
+- Gross income up to ALL 14,000,000: the whole business profit is taxed at 0%.
+- Gross income above ALL 14,000,000: no 0% at all. The whole taxable profit is taxed under art. 24(2), 15% on the first ALL 14,000,000 and 23% on the rest. Instruction 26 para. 24.4 taxes a taxable profit of ALL 20,000,000 as 14,000,000 × 15% + 6,000,000 × 23% = ALL 3,480,000.
 
-There is no 0% slice for the first ALL 14,000,000 of a larger business. General Instruction No. 26/2023 applies it the same way: where gross income is up to ALL 14 million the rate is 0% and the tax is zero (para. 50), and a taxable profit of ALL 20,000,000 above the threshold is taxed 14,000,000 × 15% + 6,000,000 × 23% = ALL 3,480,000 (para. 24.4).
+Art. 69(1)(dh) has no profession exclusion. The professional-services list in Council of Ministers Decision No. 753 of 20.12.2023 is described in art. 69(6) as repealed by Constitutional Court decision no. 52 of 27.6.2024. The disguised-employment rule below still applies, and income it reclassifies is employment income, outside art. 69(1)(dh).
 
-The 0% rule in art. 69(1)(dh) has no profession exclusion. The professional-services list in CoM Decision No. 753 of 20.12.2023 (art. 4(1) and table 2) is described in art. 69(6) of the consolidated law as repealed by Constitutional Court decision no. 52 of 27.6.2024. The disguised-employment rule in art. 12(1)(ç) still applies (Section 5.4).
+## The taxable base
 
-**Investment income**  _([PwC; HLB Albania])_
+**Employment income** (art. 12) is wages, bonuses and benefits from an employment or similar relationship in which the person must follow the payer's instructions; directors' and board fees; pay from a company to its partner for work done; and termination payments. Not employment income (art. 12(4)): meals, soft drinks, work equipment and medical care provided in kind to all staff on similar terms; documented travel, accommodation and per diem reimbursements; hardship payments within the rules (Instruction 26 para. 12.12(c) caps them at 20% of the employee's annual employment income); employer-paid life, health and work-accident insurance. Cash paid instead of a benefit in kind is taxed as pay (Instruction 26 para. 12.12(a)). A one-off lump sum on termination is taxed at 15% under art. 65(1)(b); termination pay spread monthly goes through payroll (Instruction 26 para. 12.10).
 
-| Type | Rate |
-| --- | --- |
-| Dividends | 8% |
-| Interest, royalties, rental income, capital gains (incl. real estate & securities), crypto, other investment income | 15% |
+**Disguised employment: art. 12(1)(ç).** A self-employed individual's income is employment income if:
+1. 80% or more of the income comes, directly or indirectly, from a single client; or
+2. 90% or more comes from fewer than 3 clients.
 
-### Conservative Defaults
+Client shares are measured on gross income from each client (Instruction 26 para. 12.8, note to the example). The rule applies even if one of the clients is a non-resident, and whether or not the person has staff (para. 12.8). The reclassified amount is net income (invoiced income less deductible business expenses), less the art. 22 deductions, taxed at 13% and 23%. It is reported in the employment boxes (8 and 9) of the annual business return, and the business boxes are left blank (para. 12.8).
 
-**Conservative Defaults table**
+There are two exceptions:
+- **Self-declaration.** The rule does not apply if the person declares, on the self-employed status declaration (Deklarata e Statusit të Vetëpunësuarit, model in Annex 1 to the law), that they are not in an employment situation. It is filed with the regional tax directorate, with the annual business return, within March of the following year. The tax administration uses it as an assessment tool and can still reclassify the income under the tax procedures law if it finds tax avoidance (art. 12(1)(ç), paragraph added by Law 81/2025; Instruction 26 para. 12.8.1). The examples in para. 12.8.1 show the facts it looks at: whose equipment is used, who sets the hours, who supervises, who bears the financial risk, whether the person can send a substitute.
+- **Non-resident clients only.** The rule does not apply if the person provides services only to non-residents, or only to entities with no permanent establishment in Albania. The income is then business income (art. 12(1)(ç), last paragraph; Instruction 26 para. 12.9).
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residency | Treat as Albanian tax resident (worldwide income); non-residents taxed on Albania-source income only [PwC] |
-| Unknown self-employed eligibility for the 0% rate | Do NOT assume 0%: confirm gross income ≤ ALL 14m for the year AND no disguised-employment reclassification [Law 29/2023 arts. 12(1)(ç), 69(1)(dh)] |
-| Single-client / few-client self-employment | Apply disguised-employment reclassification (employment rates 13%/23%) unless proven otherwise [HLB Albania] |
-| Unknown contribution base ceiling | Use the year's official CoM-decision floor/ceiling; verify before computing; health insurance has NO ceiling [Eurofast Payroll Guide 2025] |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown VAT registration status | Assume not registered unless turnover > ALL 10,000,000 evidenced [tatime.gov.al] |
+**Business income** (art. 13) is all income from the business of a trader or self-employed person, including business interest, dividends and royalties, sale of business assets or the whole business, grants and subsidies for the business, and business crypto income. Taxable business income is gross business income less documented expenses incurred to earn, keep and secure it, computed under the corporate chapter rules (arts. 13(2), 43 to 54; see `al-corporate-tax` for deductibility, depreciation and loss rules). Persons not required to keep accounts must keep at least a simplified register of income, expenses, receivables and debts (art. 9(2)).
 
-## Section 2 -- Required Inputs and Refusal Catalogue
+**Presumed expenses** (art. 14). A trader or self-employed person with annual turnover up to ALL 10,000,000 may deduct a fixed share of income instead of actual expenses (rates in the table). The choice is declared to the tax administration and can be changed only once every three years (art. 14(2)). A person using it can claim no other deduction except the art. 22 personal deduction (art. 14(4)). Part-year turnover is annualised to test the ALL 10,000,000 limit (Instruction 26 para. 14.1(b)). While art. 69(1)(dh) gives 0% to anyone with gross income up to ALL 14,000,000, this regime matters mainly where art. 12(1)(ç) reclassifies the income: Instruction 26 para. 12.8 applies the 30% to a reclassified self-employed person.
 
-### Required Inputs
+**Investment income** (art. 15): interest, dividends and royalties; gains on securities and financial instruments; gains from life insurance; private pension returns; gains on real estate; rent from real estate; crypto mining and transactions. No costs are deducted (art. 24(4)), so rent is taxed at 15% of gross rent. Rent, interest or dividends that belong to the business are business income instead (art. 13(1)(b), (ç); Instruction 26 para. 13.1(d)).
+- **Securities** (art. 16): gain is sale price less purchase price. Costs directly linked to the purchase and the sale are treated as part of the purchase and sale prices and are not added or deducted separately (art. 16(1)). A loss can be set against gains on other securities in the same year only.
+- **Crypto** (art. 16(3)): gain is sale value less purchase value; a loss for the year makes the taxable amount zero, and it cannot be set against other crypto gains.
+- **Real estate** (art. 17): gain is sale price less purchase price. The sale price is the higher of the contract price and the official reference price. A loss gives zero. The seller pays the tax before the cadastre registers the transfer (art. 17(7)).
+- **Exempt** (art. 15(2)): sale of movable property, except cars, aircraft and boats sold within 12 months of purchase; certain agricultural land transfers; interest and gains on Albanian government eurobonds held by non-resident individuals.
+- **Joint investment income** of family members is taxed on the member with the highest annual taxable income (art. 15(3)).
 
-**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of (a) tax residency (resident/non-resident), (b) income type(s) (employment, self-employed/business, investment), and (c) for self-employed: annual gross income and whether it is at or below the ALL 14,000,000 threshold for the 0% rate.
+**Not taxable** (art. 11) includes: benefits from compulsory social and health insurance; social assistance; income exempt under ratified treaties; expropriation compensation; state prizes for science, sport and culture; scholarships; court-awarded and insurance damages; agricultural grants; sponsorship received within art. 50(1)(p) limits.
 
-**Recommended** -- all sales invoices, purchase invoices/receipts, monthly payroll/withholding declarations, social/health contribution payment records, prior-year annual return (D1/DIVA), VAT registration status.
+**Deductions** (art. 22). The personal deduction applies separately against employment income and business income (Instruction 26 para. 22.1). The base cannot go below zero (art. 21(2)). The child deduction and education costs are claimed by the family member with the highest annual taxable income, with supporting documents (art. 23(1); Instruction 26 para. 23.1).
 
-**Ideal** -- complete income and expenditure account, list of clients with revenue share (to test the disguised-employment rule), dependent-children details (per-child deduction), education-expense receipts, prior-year tax assessment.
+**CFC rule** (art. 19). An individual who, with related persons, controls more than 50% of a foreign entity that pays less than 50% of the Albanian tax it would owe includes its undistributed passive profits in investment income, unless passive income is 30% or less of the entity's profit.
 
-**Refusal if minimum is missing -- SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This computation was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid documentation and that income classification (employment vs self-employed vs investment) is correct."
+**Computation** (art. 26). Employment and investment tax is computed separately from business tax (art. 26(2)). From the tax computed, deduct the foreign tax credit, tax withheld at source, payroll tax withheld and business instalments paid. An overpayment is refunded within 60 days of a claim made through e-Cats, or carried forward as an advance (art. 26(3); Instruction 26 para. 26).
 
-### Refusal Catalogue
+## Deadlines and filing
 
-- **R-AL-1** — Residency unknown. "Residency determines whether the client is taxed on worldwide income (resident) or Albania-source income only (non-resident). This skill defaults to resident treatment but cannot finalise without confirmation. Please confirm before filing."
-- **R-AL-2**: Self-employed eligibility for the 0% rate unconfirmed. "The 0%-until-2029 rate applies only if gross income for the year is ALL 14,000,000 or less (Law 29/2023 art. 69(1)(dh)) and the income is not reclassified as employment income under art. 12(1)(ç). Above ALL 14,000,000 of gross income the 0% rate does not apply to any part of the profit. This skill cannot confirm eligibility without the client's gross income and client-concentration data. Escalate to an Albanian tax advisor."
-- **R-AL-3** — Companies and partnerships. "This skill covers individuals and sole self-employed persons only. Corporate income tax (tatimi mbi fitimin) and partnership returns are out of scope. Escalate to an Albanian tax advisor."
-- **R-AL-4** — Real-estate or securities capital gains. "Capital gains on real estate and securities are taxed at 15% but require specialised computation of acquisition cost and holding. Escalate to an Albanian tax advisor for material disposals."
-- **R-AL-5** — Arrears / enforcement. "Client has outstanding tax arrears or is subject to DPT enforcement. Late-payment penalty is 10% plus 0.06%/day interest (capped at 365 days). Do not advise. Escalate immediately."
-- **R-AL-6** — VAT return requested. "This skill covers personal income tax only. For Albanian VAT (TVSH), use the albania-vat skill. Standard VAT rate is 20%; registration is mandatory above ALL 10,000,000 turnover."
-- **R-AL-7** — 2026 figures requested. "From 1 January 2026 the minimum wage rises to ALL 50,000/month (CoM Decision 776/2025) and Law No. 79/2025 amends tax procedures (automated VAT, e-communication, lower cash limits). This skill is built for the 2025 tax year — confirm the year-correct figures before applying to 2026."
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. Albanian statements mix Albanian and English; common Albanian terms are listed. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
-
-### 3.1 Income Patterns (Credits on Bank Statement)
-
-**Income patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + TRANSFERTE, PAGESE, ARKETIM, DEPOSIT, PAYMENT RECEIVED | Self-employed business income | Business income (0%/15%/23% regime) | If VAT-registered, extract net (excl. 20% TVSH) |
-| FATURE, HONORAR, FEES, CONSULTANCY, SHERBIM | Self-employed business income | Business income | Professional/service fees |
-| STRIPE PAYOUT, PAYPAL, WISE, REVOLUT PAYOUT | Self-employed business income | Business income | Platform payout — match to invoices; net of platform fee |
-| UPWORK, FIVERR, TOPTAL | Self-employed business income | Business income | Freelance platform — TEST disguised-employment rule |
-| PAGE, RROGA, SALARY, EMPLOYER [name] | Employment income | Employment (13%/23%) | Check whether PAYE already withheld |
-| QIRA, RENT RECEIVED | Rental income | Investment income — 15% | Not self-employment |
-| INTERES, INTERESI, INTEREST | Interest income | Investment income — 15% |  |
-| DIVIDEND, DIVIDENT | Dividend income | Investment income — 8% |  |
-| RIMBURSIM TATIMI, TAX REFUND | EXCLUDE | Not income | Refund from prior year |
-| GRANT, SUBVENCION, GOVERNMENT GRANT | Check nature | Capital grants EXCLUDE; revenue grants = business income | Flag for reviewer |
-
-### 3.2 Expense Patterns (Debits) -- Fully Deductible (self-employed business expenses)
-
-**Fully deductible expense patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| QIRA ZYRE, OFFICE RENT | Office rent | Deductible | Dedicated business premises |
-| SIGURIM PROFESIONAL, PROFESSIONAL INDEMNITY | Professional insurance | Deductible |  |
-| KONTABILIST, AUDITOR, BOOKKEEP, ACCOUNTANT | Accountancy fees | Deductible |  |
-| AVOKAT, LAWYER, LEGAL, NOTER | Legal/notary fees | Deductible | Must be business-related |
-| KANCELARI, OFFICE SUPPLIES, STATIONERY | Office supplies | Deductible |  |
-| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS | Marketing/advertising | Deductible |  |
-| TRAJNIM, KURS, SEMINAR, CONFERENCE, CPD | Training/CPD | Deductible | Must relate to current business |
-| TARIFE BANKE, BANK FEE, KOMISION | Bank charges | Deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, TRANSACTION FEE | Payment processing fees | Deductible |  |
-| DOMAIN, HOSTING, AWS, CLOUDFLARE, DIGITALOCEAN | IT infrastructure | Deductible | High-value items may be capital — flag |
-
-### 3.3 Expense Patterns (Debits) -- SaaS and Software
-
-**SaaS and software expense patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Deductible | Recurring subscription = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Deductible |  |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Deductible |  |
-| PERPETUAL SOFTWARE LICENCE (high value) | Capital item | Capitalise/depreciate | Flag for reviewer — depreciation rate per tax law |
-
-### 3.4 Expense Patterns (Debits) -- Utilities (may need apportionment)
-
-**Utilities expense patterns table**
-
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| OSHEE, KESH, ELECTRICITY | Electricity | T2 if home office | 100% if dedicated office; proportional if home; default 0% if mixed |
-| UJESJELLES, WATER | Water | T2 if home office | Apportion |
-| VODAFONE, ONE, ALBTELECOM, DIGICOM | Telecoms/broadband | T2 | Business-use portion only; default 0% if mixed |
-
-### 3.5 Expense Patterns (Debits) -- Travel
-
-**Travel expense patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| AIR ALBANIA, WIZZ AIR, RYANAIR, FLIGHT | Flights | Deductible if business travel | Must be wholly business purpose |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel |  |
-| TAXI, BOLT, UBER | Local transport | Deductible if business purpose |  |
-| KARBURANT, FUEL, PETROL, GAZOIL | Vehicle fuel | T2 — business % only | Requires mileage log |
-| PARKIM, PARKING | Parking | T2 — business % only |  |
-
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
-
-**Not deductible expense patterns table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTORANT, DINNER, LUNCH, ENTERTAINMENT | Entertainment | NOT deductible (or strictly limited) | Flag for reviewer — entertainment generally blocked |
-| PERSONAL, USHQIME, SUPERMARKET, GROCERIES | Personal expenses | NOT deductible | Private living costs |
-| GJOBE, FINE, PENALTY, PENALITET | Fines/penalties | NOT deductible | Public policy |
-| TATIM, INCOME TAX, TAX PAYMENT | Tax payments | NOT deductible | Income tax cannot reduce income |
-| TERHEQJE PERSONALE, DRAWINGS, ATM (personal) | Drawings | NOT deductible | Not an expense |
-
-### 3.7 Exclusions (Neither Income nor Expense)
-
-**Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRANSFERTE E BRENDSHME, OWN ACCOUNT, BETWEEN ACCOUNTS | EXCLUDE | Own-account transfer |
-| KESTI KREDISE, LOAN REPAYMENT | EXCLUDE (principal) | Loan principal movement; interest may be separately deductible |
-| SIGURIME SHOQERORE, SIGURIME SHENDETESORE, SOCIAL/HEALTH CONTRIBUTION | Contributions (separate line) | Self-employed contributions — see Section 5; NOT a business deduction |
-| PAGESE TVSH, VAT PAYMENT | EXCLUDE | VAT liability payment, not expense |
-
-### 3.8 Albanian Banks -- Statement Format Reference
-
-**Albanian banks statement format reference table**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| BKT (Banka Kombëtare Tregtare) | TRANSFERTE, PAGESE, KOMISION | PDF/CSV; date DD/MM/YYYY |
-| Raiffeisen Bank Albania | PAGESE, TRANSFER, TARIFE | PDF/CSV; counterparty in description |
-| Credins Bank | TRANSFERTE, ARKETIM, KOMISION | PDF |
-| Intesa Sanpaolo Bank Albania | PAGESE, TRANSFER, FEE | PDF/CSV |
-| OTP Bank Albania | TRANSFERTE, PAGESE | PDF/CSV |
-| Revolut / Wise (business) | PAYMENT, TRANSFER, CONVERSION | CSV; multi-currency — convert to ALL |
-
-## Section 4 -- Worked Examples
-
-All examples are for the 2025 tax year and use the figures cited in Sections 1 and 5. Tax figures are estimates and must be reviewer-confirmed.
-
-### Example 1 -- Employee, mid-range salary (monthly PAYE)
-
-**Input line:**
-`31/03/2025 ; BKT TRANSFERTE ; EMPLOYER ALPHA SHPK ; RROGA MARS 2025 ; +90,000.00 ; ALL`
-
-**Reasoning:**
-Monthly employment income ALL 90,000 (gross). This falls in the 60,001–200,000 band: PAYE = 13% on the amount exceeding ALL 30,000.
-- Taxable above allowance = 90,000 − 30,000 = ALL 60,000
-- PIT withheld = 13% × 60,000 = ALL 7,800
-- Employee social + health = 11.2% × 90,000 = ALL 10,080 (90,000 is within the 2025 floor ALL 40,000 / ceiling ~ALL 176,416 [RESEARCH GAP — confirm ceiling])
-- Net pay = 90,000 − 7,800 − 10,080 = **ALL 72,120**
-
-**Classification:** Employment income; PIT withheld ALL 7,800; employee contributions ALL 10,080; net ALL 72,120.
-
-### Example 2 -- High earner, monthly PAYE in the 23% band
-
-**Input line:**
-`30/04/2025 ; Raiffeisen ; EMPLOYER BETA SHA ; RROGA PRILL ; +250,000.00 ; ALL`
-
-**Reasoning:**
-Monthly gross ALL 250,000 → top band (200,001+): PIT = ALL 22,100 + 23% on the amount exceeding ALL 200,000.
-- Excess = 250,000 − 200,000 = ALL 50,000
-- PIT = 22,100 + (23% × 50,000) = 22,100 + 11,500 = **ALL 33,600**
-- Employee contributions: social 9.5% capped at the ceiling; health 1.7% uncapped. Using the reported ceiling ~ALL 176,416 [RESEARCH GAP — confirm]: social = 9.5% × 176,416 = ALL 16,759.52; health = 1.7% × 250,000 = ALL 4,250 → contributions = ALL 21,009.52
-
-**Classification:** Employment income; PIT withheld ALL 33,600; contributions ALL 21,009.52 (ceiling-dependent — reviewer to confirm ceiling figure).
-
-### Example 3 -- Self-employed, gross income at or below the ALL 14m threshold (0% rate)
-
-**Input lines (full year, summarised):**
-`Total business income (credits): +9,500,000.00 ALL`
-`Total allowable expenses (debits): -3,200,000.00 ALL`
-
-**Reasoning:**
-Annual gross income ALL 9,500,000 ≤ ALL 14,000,000 (Law 29/2023 art. 69(1)(dh)) and no disguised-employment reclassification under art. 12(1)(ç).
-- Taxable profit = 9,500,000 − 3,200,000 = ALL 6,300,000
-- PIT rate = **0% until 31 Dec 2029** → income tax = **ALL 0**
-- Note: self-employed social insurance 23% and health 3.4% still apply on their statutory bases (Section 5). On a monthly base of ALL 50,000: social = 23% × 50,000 = ALL 11,500/month; health = 3.4% × 100,000 = ALL 3,400/month [PwC: other taxes].
-
-**Classification:** Self-employed business profit ALL 6,300,000; income tax ALL 0 (0% rate, gross income at or below the threshold); contributions due separately.
-
-### Example 4 -- Self-employed, gross income above ALL 14,000,000 (no 0% rate)
-
-**Input lines (full year, summarised):**
-`Total business income: +20,000,000.00 ALL`
-`Total allowable expenses: -3,000,000.00 ALL`
-
-**Reasoning:**
-Gross income ALL 20,000,000 is above ALL 14,000,000, so the art. 69(1)(dh) 0% rate does not apply to any part of the profit. The whole taxable profit is taxed under art. 24(2). Assume no employment income and no dependent children, so the individual claims the art. 22(1)(c) deduction of ALL 360,000 (annual income above ALL 720,000) against business income, as General Instruction No. 26/2023 para. 24.6 does.
-- Business profit = 20,000,000 − 3,000,000 = ALL 17,000,000
-- Taxable profit = 17,000,000 − 360,000 = ALL 16,640,000
-- First ALL 14,000,000 at 15% = ALL 2,100,000
-- Excess 16,640,000 − 14,000,000 = 2,640,000 at 23% = ALL 607,200
-- Total income tax = 2,100,000 + 607,200 = **ALL 2,707,200**
-
-**Classification:** Self-employed business profit ALL 17,000,000; taxable profit ALL 16,640,000; income tax ALL 2,707,200. No part of the profit is taxed at 0%.
-
-### Example 5 -- Dividend received (8%)
-
-**Input line:**
-`15/06/2025 ; Credins ; SHPK GAMMA ; DIVIDENT 2024 ; +500,000.00 ; ALL`
-
-**Reasoning:**
-Dividend income taxed at 8% (typically withheld at source).
-- Tax = 8% × 500,000 = **ALL 40,000**
-- Net = 500,000 − 40,000 = ALL 460,000
-
-**Classification:** Investment income (dividend); tax ALL 40,000.
-
-### Example 6 -- Rental income (15%)
-
-**Input line:**
-`05/07/2025 ; Intesa ; TENANT D. HOXHA ; QIRA KORRIK ; +60,000.00 ; ALL`
-
-**Reasoning:**
-Rental income is investment income taxed at 15%.
-- Tax = 15% × 60,000 = **ALL 9,000**
-- Net = 60,000 − 9,000 = ALL 51,000
-
-**Classification:** Investment income (rental); tax ALL 9,000. (Where allowable expenses against rent apply, reviewer to confirm method per Law 29/2023.)
-
-### Example 7 -- Disguised employment reclassification
-
-**Input lines (full year, summarised):**
-`Self-employed income from ONE client: +4,000,000.00 ALL (100% from a single client)`
-
-**Reasoning:**
-Because ≥80% of the self-employed income is from a single client, the anti-disguised-employment rule reclassifies the income as employment income, taxed at 13%/23% (NOT 0%). [HLB Albania]
-- Annual taxable income ALL 4,000,000 → first 2,040,000 at 13% = ALL 265,200; excess 1,960,000 at 23% = ALL 450,800
-- Income tax = 265,200 + 450,800 = **ALL 716,000**
-
-**Classification:** Reclassified to employment income; income tax ALL 716,000 (the 0% business rate does NOT apply). Flag for reviewer.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Tax Year and Residency
-
-- **Tax year and residency** — The tax year is the calendar year (1 Jan – 31 Dec). Residents are taxed on worldwide income; non-residents on Albania-source income only.  _(Law No. 29/2023, "On Income Tax" [PwC: Taxes on personal income])_
-
-### 5.2 Employment Income — Progressive Rates
-
-- **Employment progressive rates** — Annual taxable employment income: 13% up to ALL 2,040,000; 23% on the excess (cumulative tax at the breakpoint = ALL 265,200). In-year withholding uses the monthly PAYE schedule (Section 1); year-end reconciliation applies the annual brackets.  _(Law 29/2023 (effective 1 Jan 2024, continuing 2025) [Law 29/2023; PwC; tatime.gov.al])_
-
-### 5.3 Self-Employed / Business Income
-
-- **Self-employed / business income rate**: If gross income for the year is ALL 14,000,000 or less, the rate is 0% on the whole business profit until 31 December 2029 (art. 69(1)(dh)). If gross income is above ALL 14,000,000, the 0% rate does not apply at all: taxable profit is taxed 15% up to ALL 14,000,000 and 23% above (art. 24(2)). The ALL 14m figure is a gross-income threshold for the 0% rate, not a 0% band of profit.  _(Law 29/2023 arts. 24(2), 69(1)(dh); General Instruction No. 26/2023 paras. 24.4, 50)_
-
-### 5.4 Anti-Disguised-Employment Rule
-
-- **Anti-disguised-employment rule**: If ≥80% of self-employed income is from a single client, OR ≥90% from fewer than three clients, the income is reclassified as employment income and taxed at 13%/23% (the 0% business rate does not apply).  _(Law 29/2023 / implementing rules [HLB Albania])_
-
-### 5.5 Investment Income
-
-**Investment income table**
-
-| Type | Rate |
-| --- | --- |
-| Dividends | 8% [PwC; HLB] |
-| Interest, royalties, rental income, capital gains (real estate & securities), crypto, other | 15% [PwC: income determination; HLB] |
-
-### 5.6 Social and Health Contributions — Employees
-
-**Social and health contributions — employees table**  _(Law No. 7703/1993 (social insurance); Law No. 10383/2011 (health) [PwC: other taxes])_
-
-| Contribution | Employee | Employer |
-| --- | --- | --- |
-| Social insurance (pension/disability/maternity) | 9.5% | 15.0% |
-| Health insurance | 1.7% | 1.7% |
-| **TOTAL** | **11.2%** | **16.7%** |
-
-*Column checks: employee 9.5 + 1.7 = 11.2%; employer 15.0 + 1.7 = 16.7%; combined employer + employee = 11.2 + 16.7 = 27.9%.* [PwC: other taxes]
-
-Social insurance is computed on a gross monthly base between an annual floor and ceiling set by Council of Ministers decision (2025 floor aligned with the minimum wage ALL 40,000; ceiling reported ~ALL 176,416 in payroll guides **[RESEARCH GAP — reviewer to confirm exact 2025 ceiling against the current CoM decision]**). Health insurance (1.7% each side) has **no ceiling** — it applies to full gross. [PwC; Eurofast Payroll Guide 2025]
-
-### 5.7 Social and Health Contributions — Self-Employed (non-agricultural)
-
-**Social and health contributions — self-employed table**  _([PwC: other taxes])_
-
-| Contribution | Rate | Base |
-| --- | --- | --- |
-| Social insurance | 23% | on a monthly base of at least ALL 50,000 (≈ ALL 11,500/month minimum) |
-| Health insurance | 3.4% | on at least ALL 100,000 (double the minimum salary base) |
-
-### 5.8 Per-Child and Education Deductions (from 2025)
-
-- **Per-child and education deductions** — ALL 48,000 per year per dependent child under 18; plus up to ALL 100,000/year for children's education. Both available only to taxpayers with annual income below ALL 1,200,000.  _(Law 29/2023 (2025 changes); HLB Albania [HLB Albania])_
-
-### 5.9 Filing Thresholds
-
-- **Annual filing thresholds** — The annual individual return is mandatory if ANY of: Annual income > ALL 1,200,000 from all sources; OR the taxpayer had multiple employers (any income level); OR more than ALL 50,000 of income not subject to final withholding. Self-employed persons must always file.  _([PwC: tax administration; tatime.gov.al; HLB])_
-
-### 5.10 Deadlines and Penalties
-
-**Deadlines and penalties table**  _(Law No. 9920/2008 "On Tax Procedures")_
-
-| Item | Detail |
-| --- | --- |
-| Annual return (D1 / DIVA) | 31 March of the following year; final tax due same date [PwC; tatime.gov.al] |
-| Monthly payroll & withholding declaration | E-filed by the 20th of the following month [PwC] |
-| Late filing — individual taxpayer | ALL 3,000 (plus interest) [HLB; tatime.gov.al] |
-| Late filing — income-tax-registered taxpayer | ALL 10,000 [tatime.gov.al] |
-| Late filing — other taxpayers (non-individual) | ALL 5,000 [tatime.gov.al] |
-| Late payment penalty | 10% of the unpaid liability [tatime.gov.al] |
-| Late payment interest | 0.06% per day, capped at 365 days (max 21.9%) [tatime.gov.al] |
-
-**[RESEARCH GAP — reviewer to confirm]** Penalty figures cited are pre-amendment. Law No. 79/2025 amended tax procedures effective Jan 2026; re-check before applying to 2026 periods.
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Self-Employed 0% Rate Eligibility
-
-- **0% rate eligibility checklist**: Confirm gross income ≤ ALL 14,000,000 for the year (Law 29/2023 art. 69(1)(dh)); above that, no part of the profit is taxed at 0%. Confirm no disguised-employment reclassification (Section 5.4). The CoM Decision No. 753 professional-services list is described in art. 69(6) as repealed by Constitutional Court decision no. 52 of 27.6.2024; art. 69(1)(dh) itself has no profession exclusion. Conservative default: Do not apply 0% until both are confirmed.
-
-### 6.2 Disguised-Employment Test
-
-- **Disguised-employment test** — Compute revenue share per client. If ≥80% from one client or ≥90% from <3 clients, reclassify to employment income. Flag for reviewer with the client-concentration figures.
-
-### 6.3 Contribution Base Floor/Ceiling
-
-- **Contribution base floor/ceiling** — The floor and ceiling are reset annually by CoM decision. Verify the year-correct figures before computing social insurance. Health insurance has no ceiling. Conservative default: Use the year's official figures; flag the ceiling for confirmation.
-
-### 6.4 Home Office / Mixed-Use Expenses
-
-- **Home office / mixed-use expenses** — Only the business-use proportion of rent, electricity, water, internet is deductible (for self-employed). Must be a genuinely dedicated workspace. Conservative default: 0% deduction until the reviewer confirms the arrangement.
-
-### 6.5 Motor Vehicle Business Use
-
-- **Motor vehicle business use** — Only the business-use percentage of fuel, insurance, maintenance is deductible; requires a mileage log. Conservative default: 0% business use until a log is provided.
-
-### 6.6 Capital Asset Depreciation
-
-- **Capital asset depreciation** — High-value business assets should be capitalised and depreciated rather than expensed. **[RESEARCH GAP — depreciation rates/method under Law 29/2023 not enumerated here; reviewer to confirm.]** Flag for reviewer.
-
-### 6.7 Residency Determination
-
-- **Residency determination** — Confirm days-present and permanent-home tests for residents vs non-residents. Flag for reviewer where the client has cross-border ties.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-ALBANIA PERSONAL INCOME TAX -- WORKING PAPER
-Tax Year: 2025
-Client: ___________________________
-Residency: Resident (worldwide) / Non-resident (Albania-source)
-Income type: Employment / Self-employed / Investment / Mixed
-
-A. EMPLOYMENT INCOME (if applicable)
-  A1. Annual gross employment income            ___________
-  A2. PIT (13% to 2,040,000; 23% above)         ___________
-  A3. Employee social 9.5% (capped at ceiling)  ___________
-  A4. Employee health 1.7% (no ceiling)         ___________
-  A5. Net employment income (A1-A2-A3-A4)       ___________
-
-B. SELF-EMPLOYED / BUSINESS INCOME (if applicable)
-  B1. Annual business turnover                   ___________
-  B2. Less: allowable expenses                   ___________
-  B3. Taxable profit (B1 - B2)                   ___________
-  B4. Gross income <= ALL 14m? (Y/N) [confirm]  ___________
-  B5. Income tax (if B4 = Y: 0% on all profit;
-       if B4 = N: 15% to 14m, 23% above)         ___________
-  B6. Self-employed social 23% (base ≥50,000)    ___________
-  B7. Self-employed health 3.4% (base ≥100,000)  ___________
-
-C. INVESTMENT INCOME (if applicable)
-  C1. Dividends                  x 8%  =         ___________
-  C2. Interest/royalties/rent/CG x 15% =         ___________
-
-D. DEDUCTIONS (income < ALL 1,200,000 only)
-  D1. Per child (ALL 48,000 x children)          ___________
-  D2. Education (up to ALL 100,000)              ___________
-
-E. TOTAL INCOME TAX (A2 + B5 + C1 + C2)          ___________
-F. Less: tax already withheld / paid             ___________
-G. Tax due / refund (E - F)                      ___________
-
-REVIEWER FLAGS:
-  [ ] Residency confirmed?
-  [ ] Self-employed 0% rate eligibility confirmed (gross income <= ALL 14m, disguised employment)?
-  [ ] Contribution ceiling figure confirmed against CoM decision?
-  [ ] Per-child/education deduction income limit (<ALL 1,200,000) met?
-  [ ] Filing threshold met (return required)?
-  [ ] All T2 items flagged for review?
-  [ ] Monthly vs annual PAYE reconciliation done?
+| Obligation | When | Source |
+|---|---|---|
+| Annual personal income tax return (Deklarata Vjetore e të Ardhurave Personale, DVAP) | By 31 March of the following year (31 March 2027 for 2026) | Law 29/2023 arts. 61(2), 67(1); [tatime.gov.al: Deklarimi](https://tatime.gov.al/individ/?artikull=deklarimi) |
+| Annual business income tax return of traders and self-employed | By 31 March of the following year; every person with an economic activity must file, whatever the income | Law 29/2023 arts. 61(2), 67(2); Instruction 26 paras. 61.3, 61.6 |
+| Self-employed status declaration (art. 12(1)(ç) exception) | With the annual business return, within March | Law 29/2023 art. 12(1)(ç); Instruction 26 para. 12.8.1 |
+| Business instalments (parapagime) | Quarterly by 31 March, 30 June, 30 September and 31 December, or monthly by the 15th; January to March based on the tax of two years before ÷ 12, April to December on last year's tax ÷ 12 | Law 29/2023 art. 63 |
+| Payroll tax (TAP) and payroll return, employers that are entities or VAT-registered individuals | By the 20th of the following month | Law 29/2023 art. 65(1); Instruction 26 para. 65 |
+| Payroll tax and return, self-employed and traders not registered for VAT | By the 20th of the month after each quarter | Law 29/2023 art. 65(1) |
+| Withholding tax return and payment | By the 20th of the month after payment | Law 29/2023 art. 56(4) |
+| Tax on a real estate gain | Paid by the seller before the cadastre registers the transfer | Law 29/2023 art. 17(7) |
+| Change of residence | Return for income up to the date of change | Law 29/2023 art. 61(4); Instruction 26 para. 61.5 |
+
+Returns are filed electronically on e-Filing ([tatime.gov.al: Formulari i Deklarimit](https://tatime.gov.al/individ/?artikull=formulari-i-deklarimit)). Tax is paid to the state treasury accounts at second-tier banks or Albanian Post ([tatime.gov.al: Pagesa e tatimit](https://tatime.gov.al/individ/?artikull=pagesa-e-tatimit); [Deklaratat tatimore](https://tatime.gov.al/person-fizik/?artikull=deklaratat-tatimore)). A return for a person under 18 is filed by their guardian; for a deceased person, by the heirs (art. 61(1), (3)).
+
+**Who must file DVAP** (art. 67(1); Instruction 26 para. 67): gross income above ALL 1,200,000 a year from all sources (Instruction 26 para. 67(a) says "të ardhura bruto"); more than one employer, at any income; or more than ALL 50,000 of other income not taxed by final withholding. Instruction 26 gives rent from an individual tenant who is not a registered taxpayer, and foreign income, taxed abroad or not, as examples of the third case. An employee with one employer and income at or below ALL 1,200,000 need not file but may, for example to recover payroll tax (Instruction 26 para. 24.6, example 2).
+
+**Instalments.** The tax administration computes the quarterly instalments from the previous year's business return and notifies them in the taxpayer's e-Filing account by 20 April (Instruction 26 para. 63.5). A reduction can be asked for at any time if the year's tax will be significantly lower; an increase can be imposed only for the last quarter, where the first nine months show monthly income more than 10% above last year's average (art. 63(4), (5); Instruction 26 paras. 63.3, 63.4).
+
+## Penalties and interest
+
+All under Law No. 9920/2008 "On tax procedures", consolidated to Law No. 79/2025 ([tatime.gov.al copy](https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf)).
+
+| Failure | Penalty | Source |
+|---|---|---|
+| Late filing of a return, individual taxpayer | ALL 3,000 per return | Law 9920/2008 art. 113(c) |
+| Late filing, other taxpayers except corporate income taxpayers and individuals | ALL 5,000 per return | Law 9920/2008 art. 113(b) |
+| Late payment of tax or contributions | Penalty of 0.06% of the unpaid amount per day, for at most 365 days | Law 9920/2008 art. 114(1) |
+| Late payment of business income tax instalments | 0.06% of the unpaid amount per day, for at most 365 days | Law 9920/2008 art. 114/1 |
+| Incorrect return | 0.06% of the unpaid tax per day, for at most 365 days; 20% of an overstated credit balance cut on audit | Law 9920/2008 art. 115 |
+| Tax evasion (concealment, false documents or returns) | 100% of the tax understated | Law 9920/2008 art. 116(1) |
+| Withholding agent (including an employer) withheld but did not transfer | 0.06% per day, for at most 365 days | Law 9920/2008 art. 117(a) |
+| Withholding agent did not withhold | 50% of the tax | Law 9920/2008 art. 117(b) |
+| Withholding agent withheld but did not declare and pay | 100% of the tax | Law 9920/2008 art. 117(c) |
+| Failure to register or update registration | ALL 10,000 for natural persons | Law 9920/2008 art. 112 |
+| Failure to keep books and records, natural person in business | ALL 10,000 per breach | Law 9920/2008 art. 118 |
+
+**The 0.06% a day is a penalty, not interest.** It is the art. 114 late-payment fine, capped at 365 days, so at most 21.9% of the unpaid amount. The consolidated law has no separate flat 10% late-payment penalty.
+
+**Late-payment interest** (kamatëvonesë) is charged on top, under art. 76. It runs from the due date to the payment date at 120% of the Bank of Albania interbank rate, set each quarter from the previous quarter's average (art. 76(1), (3)). It cannot be waived or appealed, except for calculation errors or a change in the underlying tax (art. 76(4)). The General Directorate publishes the rate in use: 8.1% from 22.07.2025, 7.8% from 11.04.2026, and 7.8% again from 08.10.2026 ([tatime.gov.al: Normat e interesit](https://tatime.gov.al/institucioni/publikime/normat-e-interesit/)).
+
+A payee is not relieved of the tax because the payer failed to withhold; the payer is penalised as a withholding agent (Instruction 26 para. 67(c)).
+
+## Cross-border points
+
+- **Non-residents** are taxed on worldwide income attributable to an Albanian permanent establishment and on other Albanian-source income (art. 2(2)(a), (b)). Albanian employment is taxed through the employer's payroll. Payments by Albanian residents to non-resident individuals for dividends (8%), and interest, royalties, services not received physically outside Albania, directors' fees, construction work and performers' fees (15%), bear final withholding (arts. 58(2), 59). Treaty rates can be lower. See `al-cross-border` for treaty claims and documentation.
+- **Foreign tax credit** (art. 25). A resident deducts foreign tax on foreign income, up to the Albanian tax on that income, country by country, and separately for the annual base and for investment income. The foreign tax must be evidenced by documents from the foreign country (Instruction 26 paras. 25.2 to 25.4). The example in para. 25.4 credits only 15% of Italian rent when 20% was paid in Italy.
+- **Foreign income triggers DVAP** if above ALL 50,000 and not finally taxed by Albanian withholding (Instruction 26 para. 67(c)).
+- **Arriving or leaving.** A person who changes residence files for income up to the date of change (art. 61(4)). Foreign artists are non-resident for their first 24 months in Albania (art. 8(dh)).
+- **Freelancers with foreign clients.** A self-employed resident serving only non-residents, or only entities with no Albanian permanent establishment, is outside art. 12(1)(ç) and keeps business treatment, so the 0% rate is available if gross income is up to ALL 14,000,000 (art. 12(1)(ç); Instruction 26 para. 12.9).
+- **CFC** income from controlled low-taxed foreign entities is taxed as investment income (art. 19).
+- **Non-resident holders of Albanian eurobonds** are exempt on interest and gains (art. 15(2)(c)).
+
+## Worked examples
+
+### Example 1: employee with rent from an individual tenant
+
+Arta works for one Tirana employer all of 2026 at a gross salary of ALL 120,000 a month and has signed the personal status declaration with it. She also lets a flat to an individual (not a registered taxpayer) for ALL 25,000 a month, ALL 300,000 a year. She has no children.
+
+Payroll: monthly income is above ALL 60,000, so the monthly deduction is ALL 30,000. The monthly taxable base is ALL 90,000, all in the 13% band: tax ALL 11,700 a month, ALL 140,400 for the year.
+
+Her income from all sources is ALL 1,740,000, above ALL 1,200,000, and the rent is more than ALL 50,000 not taxed at source, so she must file DVAP by 31 March 2027. On the return, annual employment income ALL 1,440,000 less the ALL 360,000 deduction gives ALL 1,080,000 at 13% = ALL 140,400, equal to the payroll tax. Rent is taxed at 15% of gross with no costs: ALL 45,000. She owes ALL 45,000 with the return.
+
+```oa-check
+name: Arta, employee ALL 120,000 a month plus rent ALL 300,000 (2026)
+inputs:
+  monthly_gross: 120000
+  monthly_deduction: 30000
+  annual_deduction: 360000
+  annual_rent: 300000
+steps:
+  - monthly_base: monthly_gross - monthly_deduction
+  - monthly_tax: min(monthly_base, 170000) * 0.13 + max(monthly_base - 170000, 0) * 0.23
+  - payroll_tax_year: monthly_tax * 12
+  - annual_base: monthly_gross * 12 - annual_deduction
+  - annual_employment_tax: min(annual_base, 2040000) * 0.13 + max(annual_base - 2040000, 0) * 0.23
+  - rent_tax: annual_rent * 0.15
+  - due_with_return: annual_employment_tax - payroll_tax_year + rent_tax
+expected:
+  monthly_tax: 11700
+  payroll_tax_year: 140400
+  annual_employment_tax: 140400
+  rent_tax: 45000
+  due_with_return: 45000
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+### Example 2: self-employed developer with one main client (disguised-employment edge case)
 
-### Albanian Bank Statement Formats
+Besnik is a self-employed software developer, resident in Albania. In 2026 his gross income is ALL 9,000,000, of which ALL 7,650,000 (85%) comes from one Albanian company. His documented business expenses are ALL 1,500,000. He has no children and uses actual expenses.
 
-**Albanian bank statement formats table**
+85% from a single client meets the art. 12(1)(ç) 80% test. If he does not file the self-employed status declaration, his net income is employment income: ALL 9,000,000 less ALL 1,500,000 = ALL 7,500,000, less the ALL 360,000 deduction = ALL 7,140,000. Tax: 2,040,000 × 13% = ALL 265,200, plus (7,140,000 − 2,040,000) × 23% = ALL 1,173,000, total ALL 1,438,200.
 
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BKT | PDF, CSV | Data, Përshkrim, Debi, Kredi, Gjendje | Most common; description holds counterparty + reference |
-| Raiffeisen Bank Albania | PDF, CSV | Value Date, Description, Amount, Balance | Card transactions show merchant |
-| Credins Bank | PDF | Data, Përshkrim, Hyrje, Dalje | Shorter descriptions |
-| Intesa Sanpaolo Bank Albania | PDF, CSV | Date, Description, Amount, Balance |  |
-| OTP Bank Albania | PDF, CSV | Data, Përshkrim, Shumë, Gjendje |  |
-| Revolut / Wise (business) | CSV | Date, Counterparty, Amount, Currency | Multi-currency — convert to ALL |
+If he files the status declaration with his business return in March 2027, or if all his clients were non-residents without an Albanian permanent establishment, the income stays business income. Gross income of ALL 9,000,000 is not above ALL 14,000,000, so art. 69(1)(dh) gives 0%: tax ALL 0. With a declaration, the tax administration can still reclassify on audit if the facts show employment. The amount at stake is ALL 1,438,200.
 
-### Key Albanian Banking / Tax Terms
-
-**Key Albanian banking / tax terms table**
-
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| TRANSFERTE / TRANSFER | Transfer | Check direction for income/expense |
-| PAGESE | Payment | Outgoing payment — likely expense |
-| ARKETIM | Collection/receipt | Incoming — likely income |
-| RROGA / PAGE | Salary/wage | Employment income |
-| QIRA | Rent | Rental income (in) or office rent (out) |
-| INTERES / INTERESI | Interest | Investment income (15%) |
-| DIVIDENT | Dividend | Investment income (8%) |
-| KOMISION / TARIFE | Commission/fee | Bank charge — deductible (business) |
-| FATURE | Invoice | Supporting doc for income/expense |
-| TVSH | VAT | VAT amount — exclude from income/expense base |
-| SIGURIME SHOQERORE / SHENDETESORE | Social / health insurance | Contributions — handle separately |
-| TATIM | Tax | Tax payment — not deductible |
-| GJOBE | Fine/penalty | Not deductible |
-
-## Section 9 -- Onboarding Fallback
-
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm"
-3. Apply conservative defaults (Section 1)
-4. Generate the working paper (Section 7) with clear flags
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- ALBANIA INCOME TAX
-1. Tax residency: resident (worldwide income) or non-resident (Albania-source only)?
-2. Income type: employment, self-employed/business, investment, or mixed?
-3. If self-employed: total annual gross income? Is it ALL 14,000,000 or less?
-4. If self-employed: what % of your income comes from your largest client? From your top 3 clients?
-5. Are you VAT-registered (turnover > ALL 10,000,000)?
-6. Did you have more than one employer during the year?
-7. Any income NOT taxed at source above ALL 50,000?
-8. Dependent children under 18? Any children's education costs? (relevant if income < ALL 1,200,000)
-9. Social/health contributions paid during the year (amount and basis)?
-10. Any dividends, interest, rent, capital gains, or crypto income?
+```oa-check
+name: Besnik, self-employed ALL 9m gross, 85% from one client (2026)
+inputs:
+  gross_income: 9000000
+  largest_client: 7650000
+  expenses: 1500000
+  personal_deduction: 360000
+steps:
+  - client_share: largest_client / gross_income
+  - net_income: gross_income - expenses
+  - base_if_employment: net_income - personal_deduction
+  - tax_if_employment: min(base_if_employment, 2040000) * 0.13 + max(base_if_employment - 2040000, 0) * 0.23
+  - tax_if_business_0pct: net_income * 0
+  - difference: tax_if_employment - tax_if_business_0pct
+expected:
+  client_share: 0.85
+  net_income: 7500000
+  base_if_employment: 7140000
+  tax_if_employment: 1438200
+  tax_if_business_0pct: 0
+  difference: 1438200
 ```
 
-### Key Legislation / Authority References
+## Ask the client first
 
-**Key Legislation / Authority References**  _(Section 10 -- Reference Material)_
+1. **Residence for 2026.** Home, days in Albania, place of business, centre of vital interests, and whether a foreign artist in their first 24 months. This decides worldwide or Albanian-source taxation.
+2. **Kind of income.** Salary from one or more employers, self-employment or trade, rent, dividends, interest, securities, crypto, a property sale, a gift or inheritance.
+3. **For the self-employed: gross income for the year, and the share from each client.** At or below ALL 14,000,000 the business rate is 0%. 80% from one client, or 90% from fewer than three, triggers art. 12(1)(ç) unless the status declaration is filed or all clients are non-residents without an Albanian permanent establishment.
+4. **Whether the clients are Albanian residents or have an Albanian permanent establishment.**
+5. **Children under 18, and who in the family has the higher taxable income.** Only the higher earner claims ALL 48,000 per child.
+6. **Who the tenant is.** Rent from a business tenant is withheld at 15% at source; rent from an individual is paid with DVAP.
 
-| Topic | Reference |
-| --- | --- |
-| Income tax (all rates) | Law No. 29/2023 "On Income Tax" (eff. 1 Jan 2024) |
-| Implementing rules | General Instruction No. 26, dated 08.09.2023 |
-| Social insurance contributions | Law No. 7703/1993 (as amended) |
-| Health insurance contributions | Law No. 10383/2011 |
-| Tax procedures / penalties | Law No. 9920/2008 (as amended; note Law No. 79/2025 from Jan 2026) |
-| Minimum wage 2025 | ALL 40,000/month [ARS; HLB] |
-| Minimum wage 2026 | ALL 50,000/month (CoM Decision No. 776, dated 19.12.2025) [ARS; HLB] |
-| VAT registration threshold | Turnover > ALL 10,000,000 (register within 15 days); standard VAT 20% [PwC; tatime.gov.al] |
-| Filing portal & monthly table | tatime.gov.al |
+## Sources
 
-### Forms
+| Source | URL | Read on |
+|---|---|---|
+| Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated to Law No. 81/2025 (General Directorate of Taxes copy), arts. 2 to 26, 56 to 69 | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-23 |
+| General Instruction No. 26 of 8.9.2023 "Për tatimin mbi të ardhurat", consolidated to Instruction No. 9 of 12.3.2026, paras. 12 to 26, 61 to 67 and payroll form notes | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
+| Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025, arts. 76, 112 to 118 | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-23 |
+| General Directorate of Taxes, interest rates for late-payment interest (art. 76(3)) | https://tatime.gov.al/institucioni/publikime/normat-e-interesit/ | 2026-10-23 |
+| General Directorate of Taxes, DVAP filing obligation and deadline | https://tatime.gov.al/individ/?artikull=deklarimi | 2026-10-23 |
+| General Directorate of Taxes, residents | https://tatime.gov.al/individ/?artikull=rezident | 2026-10-23 |
+| General Directorate of Taxes, non-residents | https://tatime.gov.al/individ/?artikull=jo-rezident | 2026-10-23 |
+| General Directorate of Taxes, payment of tax | https://tatime.gov.al/individ/?artikull=pagesa-e-tatimit | 2026-10-23 |
+| General Directorate of Taxes, filing form and e-Filing | https://tatime.gov.al/individ/?artikull=formulari-i-deklarimit | 2026-10-23 |
+| General Directorate of Taxes, self-employed individual | https://tatime.gov.al/person-fizik/?artikull=individi-i-vetepunesuar | 2026-10-23 |
+| General Directorate of Taxes, tax returns of natural persons in business | https://tatime.gov.al/person-fizik/?artikull=deklaratat-tatimore | 2026-10-23 |
 
-**Forms**  _(Section 10 -- Reference Material)_
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Annual Individual Income Declaration (Deklarata Individuale Vjetore e të Ardhurave — D1 / "DIVA") | Annual PIT return (residents worldwide, certain non-residents; high earners, multiple-employer cases, untaxed income) | 31 March of the following year [PwC; tatime.gov.al] |
-| Monthly payroll & withholding declaration | Employer reports/remits withheld PIT and social/health contributions | 20th of the following month [PwC] |
-
-### Key Thresholds (with provenance)
-
-**Key Thresholds (with provenance)**  _(Section 10 -- Reference Material)_
-
-| Threshold | Value | Source |
-| --- | --- | --- |
-| Tax-free monthly employment income | ALL 50,000/month | tatime.gov.al |
-| Employment 23% breakpoint (annual) | ALL 2,040,000 | Law 29/2023; PwC |
-| Self-employed 0% PIT gross income threshold (all or nothing, not a band) | ALL 14,000,000/year (0% until 31 Dec 2029) | Law 29/2023 art. 69(1)(dh) |
-| Annual return mandatory filing | income > ALL 1,200,000 OR multiple employers OR > ALL 50,000 untaxed | PwC; tatime.gov.al; HLB |
-| Per-child deduction | ALL 48,000/year/child <18 (income < ALL 1,200,000) | HLB Albania |
-| Children's education deduction | up to ALL 100,000/year (income < ALL 1,200,000) | HLB Albania |
-| VAT registration | turnover > ALL 10,000,000 | PwC; tatime.gov.al |
-| 2025 contribution floor | ALL 40,000/month (= minimum wage) | Eurofast; ARS; HLB |
-| 2025 contribution ceiling | ~ALL 176,416/month **[RESEARCH GAP — confirm]** | Eurofast Payroll Guide 2025 |
-
-### Sources
-
-1. PwC Worldwide Tax Summaries — Albania, Individual: Taxes on personal income — https://taxsummaries.pwc.com/albania/individual/taxes-on-personal-income (reviewed 19 Feb 2026)
-2. PwC — Albania, Individual: Other taxes (social/health contributions) — https://taxsummaries.pwc.com/albania/individual/other-taxes
-3. PwC — Albania, Individual: Tax administration — https://taxsummaries.pwc.com/albania/individual/tax-administration
-4. PwC — Albania, Individual: Income determination — https://taxsummaries.pwc.com/albania/individual/income-determination
-5. General Directorate of Taxes (tatime.gov.al) — Tax on personal income (official monthly bracket table) — https://www.tatime.gov.al/eng/c/4/96/108/tax-on-personal-income
-6. tatime.gov.al — Value Added Tax — https://www.tatime.gov.al/eng/c/4/96/110/value-added-tax
-7. tatime.gov.al — Key amendments to the law "On tax procedures" (penalties) — https://www.tatime.gov.al/eng/d/8/45/0/627/on-the-key-amendments-to-the-law-on-tax-procedures
-8. HLB Albania — Legal tax changes from January 1, 2025 — https://www.hlb.al/legal-tax-changes-from-january-1-2025/
-9. HLB Albania — Increase of the Minimum Wage from 1 January 2026 — https://www.hlb.al/increase-of-the-minimum-wage-in-albania-from-1-january-2026-what-changes-for-employers-and-employees/
-10. ARS Firm — CoM Decision No. 776/2025 on the National Minimum Wage — https://arsfirm.al/en/council-of-ministers-decision-no-776-dated-december-19-2025-on-the-determination-of-the-minimum-wage-at-the-national-level/
-11. Eurofast — Albania Payroll Guide 2025 (contribution floor/ceiling) — https://eurofast.eu/wp-content/uploads/2025/02/Payroll-Guide-2025_Albania-1.pdf
-12. Karanovic & Partners — Albania Implementing New Income Tax Law (Law 29/2023, effective 2024) — https://www.karanovicpartners.com/news/albania-implementing-new-income-tax-law/
-13. Law No. 29/2023 "On income tax", consolidated to Law No. 81/2025 (arts. 22, 24, 69), General Directorate of Taxes copy: https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf (read 23 Oct 2026)
-14. General Instruction No. 26 of 8.9.2023 on income tax (paras. 24.4, 24.6, 50), General Directorate of Taxes copy: https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf (read 23 Oct 2026)
-
-### Test Suite
-
-**Test 1 -- Employee, monthly PAYE in the 13% band.**
-Input: monthly gross ALL 90,000.
-Expected: PIT = 13% × (90,000 − 30,000) = ALL 7,800. Employee contributions 11.2% × 90,000 = ALL 10,080. Net = ALL 72,120.
-
-**Test 2 -- Employee, monthly PAYE in the 23% band.**
-Input: monthly gross ALL 250,000.
-Expected: PIT = 22,100 + 23% × (250,000 − 200,000) = 22,100 + 11,500 = ALL 33,600.
-
-**Test 3 -- Self-employed, gross income at or below ALL 14m (0% rate).**
-Input: gross income ALL 9,500,000, expenses ALL 3,200,000, no disguised employment.
-Expected: taxable profit ALL 6,300,000; income tax = ALL 0 (0% until 2029). Contributions due separately.
-
-**Test 4 -- Self-employed, gross income above ALL 14m.**
-Input: gross income ALL 20,000,000, expenses ALL 3,000,000 (profit ALL 17,000,000), no employment income, no children.
-Expected: no 0% rate. Taxable profit = 17,000,000 − 360,000 (art. 22(1)(c)) = 16,640,000; income tax = 14,000,000 × 15% + 2,640,000 × 23% = 2,100,000 + 607,200 = ALL 2,707,200.
-
-**Test 5 -- Dividend.**
-Input: dividend ALL 500,000.
-Expected: tax = 8% × 500,000 = ALL 40,000; net ALL 460,000.
-
-**Test 6 -- Rental income.**
-Input: monthly rent received ALL 60,000.
-Expected: tax = 15% × 60,000 = ALL 9,000; net ALL 51,000.
-
-**Test 7 -- Disguised employment.**
-Input: ALL 4,000,000 self-employed income, 100% from one client.
-Expected: reclassified to employment; tax = 265,200 + 23% × (4,000,000 − 2,040,000) = 265,200 + 450,800 = ALL 716,000. The 0% business rate does NOT apply.
-
-**Test 8 -- Annual employment reconciliation, top band.**
-Input: annual employment income ALL 3,000,000.
-Expected: tax = 265,200 + 23% × (3,000,000 − 2,040,000) = 265,200 + 220,800 = ALL 486,000.
-
-## PROHIBITIONS
-
-- NEVER apply the self-employed 0% rate without confirming gross income ≤ ALL 14m AND no disguised-employment reclassification
-- NEVER apply 0% to the first ALL 14m of a business whose gross income is above ALL 14m: the threshold is all or nothing
-- NEVER ignore the disguised-employment rule for single-client or few-client self-employed income
-- NEVER apply the per-child / education deduction to a taxpayer with income ≥ ALL 1,200,000
-- NEVER apply social-insurance contributions above the ceiling, or apply a ceiling to health insurance (health has none)
-- NEVER mix 2025 and 2026 minimum-wage / contribution figures — use the year-correct figure
-- NEVER allow income tax itself, fines, penalties, drawings, or VAT payments as business deductions
-- NEVER include VAT collected on sales in business income for VAT-registered clients
-- NEVER treat a non-resident as taxed on worldwide income — non-residents are Albania-source only
-- NEVER rely on the [RESEARCH GAP] figures (contribution ceiling, monthly-table reconciliation, depreciation rates) without reviewer confirmation
-- NEVER present tax calculations as definitive -- always label as estimated
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the payment date for the balance on DVAP and on the annual business return (Law 29/2023 art. 61 sets only the filing date, and tatime.gov.al refers to "official instructions"); whether a self-employed person's or trader's late business return is fined ALL 3,000 (art. 113(c), individuals) or ALL 5,000 (art. 113(b)); how "gross income" is measured for the ALL 14,000,000 test in art. 69(1)(dh); the tatime.gov.al self-employed page says "three or fewer clients" for the 90% test while art. 12(1)(ç) says "fewer than 3" (this skill follows the law); how employment income from a foreign employer with no Albanian payroll agent is taxed during the year; the Council of Ministers decision classifying activities for the art. 14 presumed-expense rates; the 2026 national minimum wage that caps the private pension deduction under art. 20(4) (see `albania-social-contributions`).
