@@ -4,6 +4,10 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: leaving-germany-exit-tax
+partial:
+  IT-IND: "self-employed, investment, rental and prepayment income only; no method for an employee's annual return (wages, Werbungskosten, Anlage N), non-resident individuals are refused, and de-income-tax is still on 2025 figures that disagree with the rest of the pack"
+  VAT: "advance returns (UStVA) under standard taxation only; no method for the annual VAT return, and cash-basis (Ist-Versteuerung), small-business (s.19 UStG), partial-exemption and one-stop-shop cases are refused"
+  XB: "no method for non-resident individuals or companies on German income, no treaty withholding-rate table and no foreign tax credit mechanics (s.34c EStG); germany-to-switzerland-cross-border-tax is on 2025 and is missing its commuter (Grenzgaenger) part"
 ---
 
 # Germany: tax pack
@@ -14,13 +18,13 @@ Calendar tax year. Authorities: the Bundeszentralamt für Steuern and the local 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax | source-cited draft |
+| IT-IND, individual income tax | de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax. Missing: the employee's annual return and non-resident individuals | source-cited draft; partial: no employees or non-residents |
 | IT-CORP, corporate income tax | de-corporate-tax (trade tax detail in de-trade-tax) | source-cited draft |
-| VAT | germany-vat-return | source-cited draft |
+| VAT | germany-vat-return (advance returns under standard taxation). Missing: the annual VAT return, cash basis, small businesses, partial exemption and OSS | source-cited draft; partial: advance returns only |
 | SC, social contributions | de-social-contributions | source-cited draft |
 | PR, payroll withholding | de-payroll, germany-payroll | source-cited draft |
 | TP, transfer pricing | germany-transfer-pricing | source-cited draft |
-| XB, cross-border | leaving-germany-exit-tax, germany-to-switzerland-cross-border-tax, de-uk-employer-first-hire | source-cited draft |
+| XB, cross-border | leaving-germany-exit-tax, germany-to-switzerland-cross-border-tax, de-uk-employer-first-hire. Missing: non-residents with German income, treaty withholding rates and foreign tax credit | source-cited draft; partial: departures and two corridors only |
 
 ## Official sources
 

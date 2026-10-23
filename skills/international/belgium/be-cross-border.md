@@ -5,7 +5,7 @@ jurisdiction: BE
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -24,7 +24,7 @@ This is the cross-border hub for the Belgian pack. It covers what changes when a
 
 **Tax year.** Belgium taxes the calendar income year. Income year 2026 is assessment year (aanslagjaar) 2027. Figures below are for income year 2026 unless the row says otherwise.
 
-**2026 is a year of change.** Three 2025-2026 laws matter here: the law of 18 December 2025 (inbound regime), the law of 6 April 2026 (a new tax on capital gains on financial assets, with an exit tax, from 1 January 2026) and the law of 15 July 2026 (personal income tax changes, including a part of art. 244bis for non-residents from assessment year 2027). The `be-capital-gains` skill still says private share gains are generally exempt. That is no longer true for gains realised from 1 January 2026; use this skill and Circular 2026/C/74 until that skill is updated.
+**2026 is a year of change.** Three 2025-2026 laws matter here: the law of 18 December 2025 (inbound regime), the law of 6 April 2026 (a new tax on capital gains on financial assets, with an exit tax, from 1 January 2026) and the law of 15 July 2026 (personal income tax changes, including a part of art. 244bis for non-residents from assessment year 2027). For the capital gains tax itself (scope, exemption, step-up, rates), see `be-capital-gains`.
 
 ## Who this applies to
 
@@ -68,7 +68,7 @@ Diplomats and other Belgian state officials posted abroad are residents by speci
 | Withholding tax (roerende voorheffing) on dividends, interest, royalties | 30% general rate | Income 2026 | [Art. 269, §1, 1° WIB 92 (income 2026)](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
 | Withholding: copyright income | 15% on the first band (EUR 77,220 indexed) | Income 2026 | [Art. 269, §1, 4° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
 | Withholding: dividends of small companies on new shares (VVPR-bis) | 20% for the second financial year after a contribution made by 31 December 2025; 18% for the third and later financial years (the 18% rate applies to dividends allocated or paid from 1 July 2026, programme law of 30 May 2026) | Income 2026 | [Art. 269, §2 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
-| Withholding: capital gains on financial assets (art. 90, 9°, c)) | 10%, withheld only when the recipient is a Belgian resident; never on the exit tax gain. The capital gains tax does not apply in the non-resident tax (Circular 2026/C/94) | From 1 January 2026 | [Art. 269, §1, 5° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
+| Withholding: capital gains on financial assets (art. 90, 9°, c)) | 10%, withheld only when the recipient is a Belgian resident; never on the exit tax gain. The capital gains tax does not apply in the non-resident tax (Circular 2026/C/94) | From 1 June 2026 (law of 6 April 2026, art. 35, second paragraph); the tax itself applies to gains from 1 January 2026 | [Art. 269, §1, 5° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c9acc360-8503-4b60-b2c4-9880403d1cac) |
 
 ## The taxable base
 
