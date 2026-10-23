@@ -28,7 +28,7 @@ Laws used: **ZPDG**, the Personal Income Tax Act (Zakon o porezu na dohodak gra�
 - **Employees**, resident or not, for work done in Serbia. Salary includes pay in cash or in kind and benefits the employer provides (ZPDG Articles 13 to 14b).
 - **Temporary and occasional work** contracts: contributions are paid on the agreed fee like a salary (ZDOSO Article 16). Their income tax treatment is in serbia-income-tax.
 
-Out of scope here: entrepreneurs paying themselves a personal salary (see serbia-social-contributions), the minimum wage (set under labour law), and annual leave and sick pay rules.
+Out of scope here: entrepreneurs paying themselves a personal salary (see serbia-social-contributions), labour law beyond the 2026 minimum wage, and annual leave and sick pay rules.
 
 ## Rates, bands and thresholds
 
@@ -50,8 +50,9 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 | Jubilee award, not taxed up to | RSD 28,912 | from 1 Feb 2026 | [Government, Sl. glasnik 6/2026; ZPDG Art. 18(1)(9)](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
 | Aid on the death of an employee's family member, not taxed up to | RSD 101,194 | from 1 Feb 2026 | [Government, Sl. glasnik 6/2026; ZPDG Art. 18(1)(9a)](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
 | Employer-paid voluntary health and pension premiums, not taxed up to | RSD 8,677 a month | from 1 Feb 2026 | [Government, Sl. glasnik 6/2026; ZPDG Art. 21a(2); ZDOSO Art. 13(3)](https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx) |
-| New-hire refund of salary tax | 65%, 70% or 75% by number of new hires | 2026 | [ZPDG Art. 21v](https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana) |
+| New-hire refund of salary tax | 65%, 70% or 75% by number of new hires, on salary paid up to 31 Dec 2026 | 2026 | [ZPDG Art. 21v as amended by 109/2025; Law 80/2026 Art. 2](https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc) |
 | New-hire refund of contributions | 65%, 70% or 75%, on salary paid up to 31 Dec 2026 | 2026 | [ZDOSO Art. 45, text up to 109/2025](https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx) |
+| Minimum wage | RSD 371 an hour, net of tax and contributions | from 1 Jan 2026 | [Government decision of 11 September 2025](https://www.srbija.gov.rs/vest/en/257386/government-adopts-decision-on-regular-increase-in-minimum-wage.php) |
 | Late payment interest | NBS reference rate plus 10 percentage points, simple | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809) |
 
 ## The taxable base
@@ -73,12 +74,13 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 
 **Employer-paid voluntary health and pension premiums.** Up to RSD 8,677 a month in total is not taxed as salary (ZPDG Article 21a(2)) and not added to the contribution base (ZDOSO Article 13(3)). The excess is.
 
-**New-hire refunds.** An employer that hires a person registered as unemployed for at least six months without a break (three months for a trainee; no minimum for a person up to 30 in the Youth Guarantee programme) can reclaim 65%, 70% or 75% of the salary tax (ZPDG Article 21v) and of the employee and employer contributions (ZDOSO Article 45) on that person's salary. A micro or small company or an entrepreneur that hires at least two such people can reclaim 75% instead (ZPDG Article 21d; ZDOSO Article 45v). The employer pays in full with the salary and then claims the refund on the prescribed form. The conditions are in serbia-social-contributions. Other reliefs for people with disabilities, innovative start-ups and research staff are there too.
+**New-hire refunds.** An employer that hires a person registered as unemployed for at least six months without a break (three months for a trainee; no minimum for a person up to 30 in the Youth Guarantee programme) can reclaim 65%, 70% or 75% of the salary tax (ZPDG Article 21v) and of the employee and employer contributions (ZDOSO Article 45) on that person's salary. A micro or small company or an entrepreneur that hires at least two such people can reclaim 75% instead (ZPDG Article 21d; ZDOSO Article 45v). In 2026 all four refunds cover salary paid up to 31 December 2026; Law 80/2026 extends them to 31 December 2028 from 1 January 2027 and tightens the conditions from 1 January 2028. The employer pays in full with the salary and then claims the refund on the prescribed form. The conditions are in serbia-social-contributions. Other reliefs for people with disabilities, innovative start-ups and research staff are there too.
 
-**Newly settled employees (ZPDG Article 15v).** 70% of a qualifying newcomer's salary is left out of the salary tax base for five years. Contributions are still paid on the full salary. The conditions are in rs-cross-border.
+**Newly settled employees (ZPDG Article 15v).** 70% of a qualifying newcomer's salary is left out of the salary tax base for five years. The contribution base for the employee and the employer is reduced by 70% too, if the person is insured under the Serbian social insurance laws, including under a social security agreement (ZDOSO Article 15a). The conditions are in rs-cross-border.
 
 ## Deadlines and filing
 
+- **Registration.** The employer registers each new employee with the Central Register of Mandatory Social Insurance (CROSO) at the latest before they start work, and reports the end of employment within three working days (CROSO Law Article 12(2)).
 - **Return.** The employer files the individual withholding return, PPP-PD, electronically before each salary payment. It covers salary tax and contributions for every employee paid (ZPPPA Article 41(1) to (5)). The return counts as filed only when the Tax Administration confirms it and gives it a number and a payment reference (ZPPPA Article 41(8)).
 - **Payment.** Salary tax and contributions are paid on the day the salary is paid, under the rules in force on that day (ZPDG Article 101; ZDOSO Article 51(2)).
 - **Salary not paid on time.** If the salary for a month is not paid by the last day of the next month, the employer must file and pay, by that day, contributions on the minimum base of RSD 51,297 (ZDOSO Article 51(3); ZPPPA Article 41(3)). If it does not, the Tax Administration files the return in its place (ZDOSO Article 51(4); ZPPPA Article 41(9)). The difference is paid when the salary is paid (ZDOSO Article 51(5)).
@@ -90,12 +92,13 @@ Out of scope here: entrepreneurs paying themselves a personal salary (see serbia
 
 - **Interest.** Late tax and contributions carry interest at the NBS reference rate plus 10 percentage points, simple, from the day after the due date (ZPPPA Article 75).
 - **Legal entity or entrepreneur (ZPPPA Article 177).**
-  - No return and nothing paid: 30% to 100% of the amount due, at least RSD 500,000 for a legal entity.
+  - No return and nothing paid: 30% to 100% of the amount due, at least RSD 500,000 for a legal entity and RSD 100,000 for an entrepreneur.
   - Return filed but not paid: 10% to 50%, at least RSD 250,000 for a legal entity and RSD 50,000 for an entrepreneur.
   - Return not filed but paid on time: RSD 100,000 to 2,000,000 for a legal entity, RSD 50,000 to 500,000 for an entrepreneur.
-  - Late return, paid on time: RSD 100,000 for a legal entity.
+  - Late return, paid on time: RSD 100,000 for a legal entity and RSD 40,000 for an entrepreneur.
   - Late return and late payment, or return on time and late payment: fixed fines by amount due, up to RSD 300,000 for a legal entity.
   - The responsible person in a legal entity is fined separately.
+- **Late or missing CROSO registration (CROSO Law Article 40).** RSD 300,000 to 1,500,000 for an employer that is a legal entity; RSD 10,000 to 500,000 for an entrepreneur.
 - **Under-declaration (ZPPPA Article 178).** 30% to 40% of the shortfall, at least RSD 200,000 for a legal entity and RSD 100,000 for an entrepreneur.
 - **Wrong data in a PPP-PD return, or no certificate to the employee by 31 January (ZPPPA Article 179(1), points 3 and 3a).** RSD 100,000 to 2,000,000 for a legal entity; RSD 50,000 to 500,000 for an entrepreneur.
 
@@ -158,7 +161,7 @@ Ivana is a full-time director with a gross salary of RSD 900,000 in June 2026. T
 - Employer contributions: 732,820 × 15.15% = RSD 111,022.23.
 - Employer cost: RSD 1,011,022.23.
 
-The edge case: the non-taxable amount reduces only the tax base, and the ceiling reduces only the contribution base. Ivana's income for 2026 will also be over three average salaries, so she will owe annual personal income tax for 2026, filed by 15 May 2027, if her total income is over the threshold; see serbia-income-tax.
+The edge case: the non-taxable amount reduces only the tax base, and the ceiling reduces only the contribution base. If Ivana's 2026 income, net of salary tax and her own contributions (about RSD 8.0 million from this salary), is over three times the 2026 average annual salary, she owes annual personal income tax for 2026, filed by 15 May 2027; see serbia-income-tax.
 
 ```oa-check
 name: Example 2, gross RSD 900,000 above the contribution ceiling (2026)
@@ -197,10 +200,13 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Ministry of Finance: Zakon o porezu na dohodak građana, page and consolidated text up to 80/2026, with the 109/2025 and 80/2026 timing clauses (Arts. 13 to 18, 21a, 21v, 21d, 99 to 101) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dohodak-gradjana ; https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-10-23 |
+| National Assembly: law amending the ZPDG (published as 80/2026), showing Arts. 21v and 21d ran to 2026 before it, and its 2027 and 2028 timing | https://www.parlament.gov.rs/upload/archive/files/cir/doc/zakoni/14_saziv/2551-26.doc | 2026-10-23 |
+| Government of Serbia: minimum wage for 2026, decision of 11 September 2025 | https://www.srbija.gov.rs/vest/en/257386/government-adopts-decision-on-regular-increase-in-minimum-wage.php | 2026-10-23 |
+| Central Register of Mandatory Social Insurance: Zakon o Centralnom registru obaveznog socijalnog osiguranja (Sl. glasnik 95/2018), Arts. 12 and 40 | https://www.croso.gov.rs/storage/files/propisi/Zakon_o_centralnom_registru.pdf | 2026-10-23 |
 | Government: adjusted non-taxable amounts under the ZPDG from 1 February 2026 (Sl. glasnik 6/2026) | https://www.mfin.gov.rs/upload/media/O1eqFP_6981bc02426f9.docx | 2026-10-23 |
 | Ministry of Finance: Zakon o doprinosima za obavezno socijalno osiguranje, page and consolidated text up to 80/2026 | https://www.mfin.gov.rs/propisi/zakon-o-doprinosima-za-obavezno-socijalno-osiguranje ; https://www.mfin.gov.rs/upload/media/c59gCf_6aa14bd2e2c04.docx | 2026-10-23 |
 | Ministry of Finance: Zakon o doprinosima za obavezno socijalno osiguranje, consolidated text up to 109/2025 (the version for 2026) | https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx | 2026-10-23 |
 | Minister of Finance: minimum and maximum monthly and maximum annual contribution bases for 2026 (Sl. glasnik 112/2025) | https://www.mfin.gov.rs/upload/media/nATlw2_69429ec84247a.docx ; https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx ; https://www.mfin.gov.rs/upload/media/ZKR4zZ_6942708d56248.docx | 2026-10-23 |
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
-Not yet confirmed: the end date of the ZPDG Article 21v and 21d salary tax refunds as they stood before Law 80/2026 (the ZDOSO contribution refunds run to 31 December 2026; the consolidated ZPDG text shows only the 2028 date that applies from 2027); the non-taxable reimbursement amounts that applied in January 2026; the 2026 minimum wage (labour law, not read); the deadline for registering a new employee with the Central Register (CROSO); the current NBS reference rate for late payment interest.
+Not yet confirmed: the non-taxable reimbursement amounts that applied in January 2026; the Sl. glasnik number of the 2026 minimum wage decision; whether the CROSO Law has been amended since 2019; the current NBS reference rate for late payment interest.

@@ -52,15 +52,17 @@ The Tax Administration (Poreska uprava) collects and audits contributions (Artic
 | Micro or small employer hiring at least two new people | 75% refund, on salary paid up to 31 Dec 2026 | 2026 | [ZDOSO Art. 45v, text up to 109/2025](https://www.mfin.gov.rs/upload/media/JTHpSm_693c0cc4015d4.docx) |
 | Late payment interest | NBS reference rate plus 10 percentage points, simple | 2026 | [ZPPPA Art. 75](https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809) |
 
-The minimum and maximum monthly bases apply from the first day of the month after they are published (Articles 37(2) and 42(2)). They were signed on 11 December 2025 and published in Sl. glasnik 112/2025, so they apply to payments from 1 January 2026.
+The minimum and maximum monthly bases apply from the first day of the month after they are published (Articles 37(2) and 42(2)). They were signed on 11 December 2025 and published later that month in Sl. glasnik 112/2025, so they apply to payments from 1 January 2026.
 
 ## The taxable base
 
-**Employees (Articles 13 and 36 to 43).** The base is the gross salary, including salary compensation such as sick pay paid by the employer, under the labour law, the employment contract and the employer's rules. It is **not** reduced by the non-taxable salary amount used for salary tax (Article 13(2)). Employer-paid voluntary health and pension premiums count too, to the extent they exceed RSD 8,677 a month (Article 13(3)).
+**Employees (Articles 13 and 36 to 43).** The base is the gross salary, including salary compensation such as sick pay paid by the employer, under the labour law, the employment contract and the employer's rules. It is **not** reduced by the non-taxable salary amount used for salary tax (Article 13(2)). Employer-paid voluntary health and pension premiums count too, to the extent they exceed RSD 8,677 a month from 1 February 2026 (RSD 8,449 in January 2026) (Article 13(3)).
 
 - **Floor.** If the base is below RSD 51,297, contributions are paid on RSD 51,297 (Article 36). For a period shorter than a month, or for someone on reduced hours because of disability, the floor is reduced in proportion to days or hours worked (Article 39). A part-time employee with one employer pays on the full floor (Article 40(1)). A part-time employee with two or more employers pays, at each employer, at least the floor reduced in proportion to working time there (Article 40(2) and (3)).
 - **Ceiling.** If the base is above RSD 732,820, contributions are paid on RSD 732,820. The full ceiling applies even for part of a month or part-time work (Article 41(1) and (3)).
 - **Annual cap.** Someone whose pension contributions over the year were paid on more than RSD 8,793,840 in total, for example from two jobs or a job and a business, can ask the Tax Administration to refund the excess (Articles 12 and 66).
+
+**Newly settled employees (Article 15a).** Where the employee gets the 70% salary tax base reduction for newly settled taxpayers (ZPDG Article 15v), the contribution base for both employee and employer is the salary reduced by 70%. This applies only if the person is insured under the Serbian social insurance laws, including under a social security agreement. The conditions for the reduction are in [rs-cross-border](rs-cross-border.md).
 
 **Company founders and members (Article 23).** A founder who is not employed by the company is insured as a founder. The company pays contributions for them on a base of at least RSD 51,297 a month. A founder employed by the company is treated as an employee on their salary.
 
@@ -68,7 +70,7 @@ The minimum and maximum monthly bases apply from the first day of the month afte
 
 **Flat-rate entrepreneurs (paušalci) (Article 22(3)).** The base is the deemed income set in the Tax Administration's decision under the income tax law. The same decision sets the contributions (Article 58). Rates are 24%, 10.3% and 0.75%. The floor in Article 36 applies, because Article 36(3) does not exclude this base.
 
-**Contract income (Article 28).** The base is the taxable income: the gross fee less the standard costs allowed for income tax. There is no floor and no ceiling (Articles 36(3) and 41(2)). Freelancers who self-assess each quarter under the income tax option with RSD 66,733 and 34% standard costs pay pension contributions on at least three times the minimum base for the quarter (Article 28(2)(1)). Whether health contribution is also due on a contract fee depends on the Health Insurance Act, which this skill has not read.
+**Contract income (Article 28).** The base is the taxable income: the gross fee less the standard costs allowed for income tax. There is no floor and no ceiling (Articles 36(3) and 41(2)). Freelancers who self-assess each quarter under the income tax option with RSD 66,733 and 34% standard costs pay pension contributions on at least three times the minimum base for the quarter (Article 28(2)(1)). People who self-assess contract income each quarter pay health contribution on at least three times the RSD 22,663 budget health base for the quarter (Article 28(2)(2)). If taxable income is higher than either minimum, the base is the taxable income (Article 28(3)). Whether health contribution is also due on a contract fee paid by a payer who withholds depends on the Health Insurance Act, which this skill has not read.
 
 **Posted workers (Article 14).** For an employee sent abroad who stays in the Serbian system, the base is the salary they would earn in Serbia for similar work, and at least twice the minimum base.
 
@@ -82,6 +84,7 @@ An employer using another incentive for the same person, other than the matching
 
 ## Deadlines and filing
 
+- **Registration.** The employer registers each employee or other engaged person with the Central Register of Mandatory Social Insurance (CROSO) at the latest before they start work. Start, end and changes in a business, end of employment and changes in insurance are registered within three working days (CROSO Law Article 12(2)).
 - **Employees.** The employer calculates and pays contributions at the same time as it pays the salary, under the rules in force on the payment date (Article 51(2)). It files the individual withholding return (PPP-PD) electronically before each payment (ZPPPA Article 41(3) and (5)).
 - **Salary not paid.** If the salary for a month is not paid by the last day of the next month, the employer must, by that day, pay contributions on the minimum base of RSD 51,297 (Article 51(3)). If it does not, the Tax Administration calculates them and files the return in the employer's name (Article 51(4); ZPPPA Article 41(9)). The difference is paid when the salary is paid (Article 51(5)). If salary is paid in parts and the first part is below the minimum base, contributions on the minimum base are paid with the first part (Article 52).
 - **Founders not employed by the company.** The company pays by the 15th of the month for the previous month (Articles 53 and 60(3)).
@@ -97,15 +100,16 @@ ZDOSO has no penalty articles of its own. ZPPPA applies (ZDOSO Article 65).
 
 - **Interest.** Late contributions carry interest at the NBS reference rate plus 10 percentage points, simple, from the day after the due date (ZPPPA Article 75).
 - **Legal entity or entrepreneur (ZPPPA Article 177).**
-  - No return and nothing paid: 30% to 100% of the amount due, at least RSD 500,000 for a legal entity.
+  - No return and nothing paid: 30% to 100% of the amount due, at least RSD 500,000 for a legal entity and RSD 100,000 for an entrepreneur.
   - Return filed but not paid: 10% to 50%, at least RSD 250,000 for a legal entity and RSD 50,000 for an entrepreneur.
   - Return not filed but paid on time: RSD 100,000 to 2,000,000 for a legal entity, RSD 50,000 to 500,000 for an entrepreneur.
   - Late return and late payment: a fixed fine by amount due, from RSD 25,000 (up to RSD 100,000) to RSD 300,000 (over RSD 10,000,000) for a legal entity, and RSD 15,000 to 150,000 for an entrepreneur.
-  - Late return, paid on time: RSD 100,000 for a legal entity.
+  - Late return, paid on time: RSD 100,000 for a legal entity and RSD 40,000 for an entrepreneur.
   - Return on time, paid late: a fixed fine by amount due, RSD 20,000 to 250,000 for a legal entity and RSD 10,000 to 140,000 for an entrepreneur.
   - The responsible person in a legal entity is fined separately.
 - **Under-declaration (ZPPPA Article 178).** 30% to 40% of the shortfall, at least RSD 200,000 for a legal entity and RSD 100,000 for an entrepreneur. Where the shortfall is up to 5%, a fixed RSD 100,000 for a legal entity and RSD 50,000 for an entrepreneur.
 - **Wrong data in a PPP-PD return (ZPPPA Article 179(1)(3)).** RSD 100,000 to 2,000,000 for a legal entity; RSD 50,000 to 500,000 for an entrepreneur.
+- **Late or missing CROSO registration (CROSO Law Article 40).** RSD 300,000 to 1,500,000 for an employer that is a legal entity; RSD 10,000 to 500,000 for an entrepreneur; RSD 5,000 to 150,000 for an employer who is a private individual.
 - **No waiver.** A contributor cannot be released from calculating and paying contributions (ZDOSO Article 64).
 
 ## Cross-border points
@@ -169,7 +173,7 @@ A Belgrade d.o.o. hires three people in March 2026. One, Milan, had been registe
 - The employer has between one and nine new hires, so it can reclaim 65% (Article 45(8)): 42,060 × 65% = RSD 27,339 a month.
 - Contributions the employer bears after the refund: RSD 14,721 a month.
 
-The edge case: the refund covers both the employee and the employer share, but the employer still pays the full RSD 42,060 with the salary and then claims the refund on the prescribed form. The refund applies to salary paid up to 31 December 2026. From 2027, Law 80/2026 limits it to 12 months per person and replaces the 2014 headcount test with a net increase over the previous 12 months.
+The edge case: the refund covers both the employee and the employer share, but the employer still pays the full RSD 42,060 with the salary and then claims the refund on the prescribed form. The refund applies to salary paid up to 31 December 2026. From 1 January 2027 Law 80/2026 extends it to salary paid up to 31 December 2028. Its other changes apply from 1 January 2028: a limit of 12 months per person, a net increase over the previous 12 months instead of the 2014 headcount test, no trainee rule, and a Youth Guarantee age of 24 (Law 80/2026 Article 5).
 
 ```oa-check
 name: Example 2, Article 45 refund on a new hire, gross RSD 120,000 (2026)
@@ -214,8 +218,9 @@ expected:
 | Minister of Finance: maximum monthly contribution base for 2026 (Sl. glasnik 112/2025) | https://www.mfin.gov.rs/upload/media/mYTnAm_6942704946245.docx | 2026-10-23 |
 | Minister of Finance: maximum annual contribution base for 2026 (Sl. glasnik 112/2025) | https://www.mfin.gov.rs/upload/media/ZKR4zZ_6942708d56248.docx | 2026-10-23 |
 | Government: adjusted amount under ZDOSO Art. 13(3), from 1 February 2026 (Sl. glasnik 6/2026) | https://www.mfin.gov.rs/upload/media/Sde7dx_6981bbd2012a1.docx | 2026-10-23 |
+| Central Register of Mandatory Social Insurance: Zakon o Centralnom registru obaveznog socijalnog osiguranja (Sl. glasnik 95/2018), Arts. 12 and 40 | https://www.croso.gov.rs/storage/files/propisi/Zakon_o_centralnom_registru.pdf | 2026-10-23 |
 | Minister of Finance: health contribution base for people insured from the budget, 2026 (Sl. glasnik 24/2026) | https://www.mfin.gov.rs/upload/media/0kTel4_69b7dbe81542b.docx | 2026-10-23 |
 | Ministry of Finance: Zakon o porezu na dohodak građana, consolidated text (Arts. 38, 110, 114) | https://www.mfin.gov.rs/upload/media/MOq4eO_6aa14ac8c7a47.docx | 2026-10-23 |
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
-Not yet confirmed: whether health contribution is due on contract fees (set by the Health Insurance Act, not read); the exact publication date of Sl. glasnik 112/2025 (the bases apply from the first day of the next month, which the skill takes as 1 January 2026); how the monthly floor and ceiling apply to an entrepreneur whose base is annual taxable profit; the list of Serbia's social security agreements; the current NBS reference rate for late payment interest; the deadline for registering an employee with the Central Register (CROSO).
+Not yet confirmed: whether health contribution is due on contract fees where the payer withholds (set by the Health Insurance Act, not read); whether the CROSO Law has been amended since 2019; how the monthly floor and ceiling apply to an entrepreneur whose base is annual taxable profit; the list of Serbia's social security agreements; the current NBS reference rate for late payment interest.
