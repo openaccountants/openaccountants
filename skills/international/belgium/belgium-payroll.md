@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Belgium Payroll
 
-## Belgium Payroll Skill v1.1 (2026)
+## Belgium Payroll Skill v1.2 (2026)
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to run a payroll, file or pay without review by a qualified professional in Belgium.
 
