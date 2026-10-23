@@ -6,6 +6,7 @@ covered_by: {}
 partial:
   IT-IND: cz-income-tax covers the self-employed (OSVČ) only, tax year 2025
   SC: cz-social-health covers the self-employed (OSVČ) only, not employee or employer contributions
+  PR: "cz-payroll does not compute sick pay (náhrada mzdy for the first 14 days of sickness, Labour Code § 192) or deductions from pay under court orders (srážky ze mzdy)"
 ---
 
 # Czech Republic: tax pack
@@ -20,7 +21,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 | IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
 | SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
-| PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
+| PR, payroll withholding | cz-payroll (2026: registration and JMHZ, monthly gross-to-net, prohlášení and credits, DPP and DPČ withholding tax, annual reconciliation and vyúčtování; sick pay and court-order deductions not covered) | partial, source-cited draft |
 | TP, transfer pricing | (missing: arm's length rule in ITA § 23(7), documentation, advance pricing agreements) | |
 | XB, cross-border | cz-cross-border | source-cited draft |
 
