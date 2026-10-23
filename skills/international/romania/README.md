@@ -3,9 +3,9 @@ jurisdiction: RO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  IT-IND: self-employed (PFA) only
   IT-CORP: short rate list on secondary sources; base, losses and filing not covered
   PR: rates and the D112 deadline only; no computation method or worked examples
+  SC: "employee and employer contributions (ro-payroll-social) still carry 2025 figures from secondary sources"
 ---
 
 # Romania: tax pack
@@ -20,10 +20,10 @@ A skill's presence is not coverage. Several skills below are thin lists with sec
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ro-income-tax (partial: self-employed PFA only; employment, investment and rental income for individuals are not covered) | source-cited draft |
+| IT-IND, individual income tax | ro-income-tax (self-employed PFA, II, IF and liberal professions, 2026); ro-employee-income-tax (employees, rent and investment income, 2026) | source-cited draft |
 | IT-CORP, corporate income tax | ro-corporate-income-tax (partial: a short rate list citing secondary sources; base, losses and filing are not covered in depth) | source-cited draft |
 | VAT | ro-vat-return, romania-vat-return | source-cited draft |
-| SC, social contributions | ro-cas-cass (self-employed CAS and CASS), ro-payroll-social (employee CAS and CASS, employer CAM; a short list citing secondary sources) | source-cited draft |
+| SC, social contributions | ro-cas-cass (self-employed CAS and CASS, 2026); ro-payroll-social (partial: employee CAS and CASS, employer CAM; a short list on 2025 figures citing secondary sources) | source-cited draft |
 | PR, payroll withholding | ro-payroll-social (partial: rates and the monthly D112 deadline only; no computation method or worked examples) | source-cited draft |
 | TP, transfer pricing | (missing: Romania has transfer pricing rules and documentation duties; no skill yet) | |
 | XB, cross-border | ro-cross-border | source-cited draft |
