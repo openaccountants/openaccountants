@@ -30,6 +30,8 @@ verified_by: pending
 
 Either test is enough. Both are read subject to tax treaties (art. 4a), so a person resident in both countries under domestic law is placed by the treaty tie-breaker.
 
+**Residence can change during the year.** The Ministry of Finance treats the year as split: up to the day of the change the person is taxed in Poland on worldwide income, and from the next day only on Polish-source income. The 183-day test counts days of physical presence in the calendar year, and any part of a day in Poland, including the day of arrival or departure, counts as a day ([MF tax explanations of 29 April 2021 on tax residence, sections 2.2 and 2.3](https://eureka.mf.gov.pl/informacje/podglad/482416)).
+
 **Non-residents (art. 3 ust. 2a and 2b).** A person with no place of residence in Poland is taxed only on income earned in Poland. That includes, in particular, income from:
 - work done in Poland under an employment or similar relationship, wherever the salary is paid;
 - activity performed personally in Poland, wherever the fee is paid;
@@ -54,11 +56,11 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 | Return relief (ulga na powrót) | Exempt revenue up to PLN 85,528 a year, for four consecutive tax years starting with the year of the move or the next year | 2026 | PIT Act art. 21 ust. 1 pkt 152; [podatki.gov.pl, ulga na powrót](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit) |
 | Shared cap with the young-person, 4+ family and working-senior reliefs | PLN 85,528 a year in total across art. 21 ust. 1 pkt 148 and 152-154 | 2026 | PIT Act art. 21 ust. 44 |
 | Employee standard costs, one employer | PLN 250 a month, PLN 3,000 a year | 2026 | PIT Act art. 22 ust. 2 pkt 1 |
-| Withholding on non-residents: fees for mandate and similar contracts (art. 13 pkt 2 and 6-9), royalties, know-how, equipment rental, interest outside art. 30a | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 1 |
+| Withholding on non-residents: personal-activity fees under art. 13 pkt 2 and 6-9 (arts, sport and teaching; board and supervisory seats; mandate and specific-task contracts; management contracts), royalties, know-how, equipment rental, interest outside art. 30a | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 1 |
 | Withholding on non-residents: advisory, accounting, market research, legal, advertising, management and control, data processing, recruitment, guarantees and similar services | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 5 |
 | Withholding on non-residents: entertainment and sports performers | 20% of revenue | 2026 | PIT Act art. 29 ust. 1 pkt 2 |
 | Flat tax on dividends, interest on loans, bank deposits and securities | 19% | 2026 | PIT Act art. 30a ust. 1 pkt 1-4 |
-| Payments to a related non-resident above PLN 2,000,000 a year (art. 29 ust. 1 pkt 1 and art. 30a ust. 1 pkt 1-5a) | Domestic rate withheld on the excess, ignoring treaty relief, unless the payer files a statement or holds an opinion | 2026 | PIT Act art. 41 ust. 12-15 |
+| Payments to a related non-resident above PLN 2,000,000 in the payer's tax year (art. 29 ust. 1 pkt 1 and art. 30a ust. 1 pkt 1-5a) | Domestic rate withheld on the excess, ignoring treaty relief, unless the payer files a statement or holds an opinion | 2026 | PIT Act art. 41 ust. 12-15 |
 | Validity of a certificate of residence with no stated period | 12 months from the date of issue | 2026 | PIT Act art. 41 ust. 9a |
 | Abolition relief (ulga abolicyjna) cap | PLN 1,360, except for employment and certain service income earned outside the land territory of any state | 2026 | PIT Act art. 27g ust. 2 and 5; [podatki.gov.pl, ulga abolicyjna](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit) |
 | Exit tax threshold | Applies only if the market value of the assets moved exceeds PLN 4,000,000 (one limit for both spouses together) | 2026 | PIT Act art. 30db |
@@ -71,17 +73,17 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 ## The taxable base
 
 **Return relief: who qualifies (art. 21 ust. 1 pkt 152 and ust. 43).** All of these must be met:
-1. The person moved their place of residence to Poland after 31 December 2021 ([podatki.gov.pl](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit)) and, as a result, is a Polish resident.
+1. The person moved their place of residence to Poland after 31 December 2021 ([act of 29 October 2021, Dz.U. 2021 poz. 2105, art. 53](https://api.sejm.gov.pl/eli/acts/DU/2021/2105/text.pdf)) and, as a result, is a Polish resident.
 2. They had no place of residence in Poland in the three calendar years before the year of the move, nor in that year up to the day before the move.
 3. They hold Polish citizenship, a Karta Polaka, or citizenship of another EU/EEA state or Switzerland; or they lived without a break during that period in the EU/EEA, Switzerland, Australia, Chile, Israel, Japan, Canada, Mexico, New Zealand, South Korea, the UK or the USA; or they lived in Poland for at least five calendar years before that period.
 4. They hold a certificate of residence or other evidence of their foreign tax residence for the period that matters.
 5. They have not used the relief before.
 
-**Return relief: what it covers.** Revenue from employment, mandate contracts with businesses (art. 13 pkt 8), maternity benefit, and business income taxed on the scale, at 19% flat, under IP Box or under the ryczałt on recorded revenue. Management contracts are not covered ([podatki.gov.pl](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit)). Revenue taxed at a flat rate under the PIT Act, or already exempt, does not count towards the PLN 85,528 (art. 21 ust. 39).
+**Return relief: what it covers.** Revenue from employment, mandate and specific-task contracts under art. 13 pkt 8 (with a business, with a property owner or manager for services to that property, or with an estate enterprise), maternity benefit, and business income taxed on the scale, at 19% flat, under IP Box or under the ryczałt on recorded revenue. Management contracts are not covered ([podatki.gov.pl](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit)). Revenue taxed at a flat rate under the PIT Act, or already exempt, does not count towards the PLN 85,528 (art. 21 ust. 39).
 
 **How the relief works.**
 - It exempts revenue, not income. Revenue is exempted in date order from the start of the year until the cap is used ([podatki.gov.pl](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit)).
-- Employee standard costs stay deductible against the taxable part: the rule that costs of exempt revenue are not deductible (art. 23 ust. 1 pkt 31) does not apply to this relief (art. 23 ust. 10).
+- Employee standard costs stay deductible against the taxable part: the rule that costs of exempt revenue are not deductible (art. 23 ust. 1 pkt 31) does not apply to this relief (art. 23 ust. 10). Employment and art. 13 pkt 8 costs are capped at the taxable part of the revenue from that source (art. 22 ust. 3b).
 - Social contributions whose base is the exempt revenue cannot be deducted (art. 26 ust. 1 pkt 2, closing words). Only the contributions on the taxable part are deducted.
 - An employer applies the relief during the year only on the employee's signed statement, with the start and end year, or on a PIT-2 (part G). It then applies from the next month at the latest (art. 31a ust. 8-9). If it was not applied during the year, the person claims it in the annual return.
 
@@ -105,7 +107,7 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 | Annual PIT return (PIT-37, PIT-36, PIT-36L, PIT-28) | Resident or non-resident taxpayer | 15 February to 30 April 2027 for 2026 | PIT Act art. 45 ust. 1 |
 | Return relief shown in the return | Taxpayer | Part D of PIT-37, PIT-36 or PIT-36L; part C of PIT-28 | [podatki.gov.pl, ulga na powrót](https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit) |
 | Payment of tax withheld from non-residents | Payer (company or business) | By the 20th of the month after the month of withholding | PIT Act art. 42 ust. 1 |
-| PIT-8AR annual return of flat-rate tax withheld | Payer | End of January 2027 | PIT Act art. 42 ust. 1a; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
+| PIT-8AR annual return of flat-rate tax withheld (filed electronically, art. 45ba; so is the IFT-1R) | Payer | End of January 2027 | PIT Act art. 42 ust. 1a; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
 | IFT-1R information on income of a non-resident individual | Payer, to the taxpayer and to the tax office for foreign persons; also where a treaty means nothing was withheld | End of February 2027; within 14 days of the taxpayer's written request | PIT Act art. 42 ust. 2 pkt 2, 4 and 6 |
 | PIT-11 for revenue covered by the return relief | Employer | With the usual PIT-11 | PIT Act art. 42 ust. 5 |
 | PIT-NZ exit tax return and payment | Taxpayer | By the 7th of the month after the month in which the assets moved pass PLN 4,000,000 | PIT Act art. 30da ust. 14; [podatki.gov.pl, PIT forms](https://www.podatki.gov.pl/podatki-firmowe/pit/formularze-pit) |
@@ -116,7 +118,7 @@ Either test is enough. Both are read subject to tax treaties (art. 4a), so a per
 
 **Payer liability (Tax Ordinance art. 30 § 1 and 3).** A payer that fails to withhold, or withholds but does not pay over, is liable for the tax with all its assets. If a certificate of residence went out of date because the taxpayer moved and did not supply a new one, the taxpayer bears that liability instead (PIT Act art. 41 ust. 9b-9c).
 
-**Return relief claimed wrongly.** Where the employer applied the relief on the employee's statement, the employer's usual liability for under-withholding does not apply (PIT Act art. 31a ust. 10). The statement is made under criminal liability for false statements (art. 31a ust. 9), so the employee bears the tax and interest.
+**Return relief claimed wrongly.** Where the employer under-withheld because it applied the employee's statement, the usual protection of employees from the employer's under-withholding is switched off (PIT Act art. 31a ust. 10, disapplying Tax Ordinance art. 26a § 2), so the tax office can hold the employee liable for the tax (Tax Ordinance art. 30 § 5). The statement is made under criminal liability for false statements (art. 31a ust. 9).
 
 **Tax withheld wrongly.** A taxpayer who disputes the tax a payer withheld can apply to the tax office for a declaration of overpayment (Tax Ordinance art. 75 § 1).
 
@@ -139,7 +141,7 @@ Facts (invented): Anna, a Polish citizen, lived and worked in Ireland from 2019.
 Walk-through:
 1. Exempt revenue: the first PLN 85,528 of 2026 salary (January to June in full, and PLN 10,528 of July).
 2. Taxable revenue: 150,000 - 85,528 = 64,472.
-3. Standard costs: 250 x 12 = 3,000. These stay deductible because art. 23 ust. 10 switches off the rule against costs of exempt revenue.
+3. Standard costs: 250 x 12 = 3,000. These stay deductible because art. 23 ust. 10 switches off the rule against costs of exempt revenue, and they are below the cap of the taxable revenue of 64,472 (art. 22 ust. 3b).
 4. Social contributions withheld for the year: 150,000 x 13.71% = 20,565. Only those on the taxable revenue are deductible: 64,472 x 13.71% = 8,839.11.
 5. Tax base: 64,472 - 3,000 - 8,839.11 = 52,632.89, rounded to PLN 52,633 (Tax Ordinance art. 63).
 6. Tax on the scale: 52,633 x 12% - 3,600 = 2,715.96, rounded to PLN 2,716.
@@ -222,13 +224,15 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | PIT Act, consolidated text Dz.U. 2026 poz. 592, ELI record (later amendments 779, 846, 1079) | https://api.sejm.gov.pl/eli/acts/DU/2026/592 | 2026-10-23 |
-| PIT Act, Sejm unified text incl. Dz.U. 2026 poz. 592, 779, 846, 1079, 1098, 1123 (arts. 3, 4a, 21 ust. 1 pkt 152 and ust. 39, 43, 44, 22 ust. 2, 23 ust. 1 pkt 31 and ust. 10, 26, 27, 27g, 29, 30a, 30da-30df, 31a, 41, 42, 45) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf | 2026-10-23 |
+| PIT Act, Sejm unified text incl. Dz.U. 2026 poz. 592, 779, 846, 1079, 1098, 1123 (arts. 3, 4a, 13, 21 ust. 1 pkt 152 and ust. 39, 43, 44, 22 ust. 2 and 3b, 23 ust. 1 pkt 31 and ust. 10, 26, 27, 27g, 29, 30a, 30da-30df, 31a, 41, 42, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text/U/D20260592Lj.pdf | 2026-10-23 |
 | Social Insurance System Act, Sejm unified text of Dz.U. 2026 poz. 199 (arts. 16, 22) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text/U/D20260199Lj.pdf | 2026-10-23 |
 | MRPiPS notice on the 2026 annual contribution cap, M.P. 2025 poz. 1206 | https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf | 2026-10-23 |
-| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 12, 30, 56, 63, 75) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-10-23 |
+| Tax Ordinance, Sejm unified text of Dz.U. 2026 poz. 622 (arts. 12, 26a, 30, 56, 63, 75) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text/U/D20260622Lj.pdf | 2026-10-23 |
 | MF notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
 | NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
 | Poland-Germany double tax treaty, Dz.U. 2005 nr 12 poz. 90 (art. 14) | https://api.sejm.gov.pl/eli/acts/DU/2005/90/text.pdf | 2026-10-23 |
+| Act of 29 October 2021 amending the PIT Act (Polski Ład), Dz.U. 2021 poz. 2105, art. 53 (return relief only for moves after 31 December 2021) | https://api.sejm.gov.pl/eli/acts/DU/2021/2105/text.pdf | 2026-10-23 |
+| Ministry of Finance tax explanations of 29 April 2021 on tax residence of individuals (sections 2.2 and 2.3), in the MF Eureka system | https://eureka.mf.gov.pl/informacje/podglad/482416 | 2026-10-23 |
 | podatki.gov.pl, ulga na powrót (updated 6 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-powrot-pit | 2026-10-23 |
 | podatki.gov.pl, ulga abolicyjna (updated 13 October 2026) | https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-abolicyjna-pit | 2026-10-23 |
 | podatki.gov.pl, deduction of social contributions (contributions on exempt revenue not deductible) | https://www.podatki.gov.pl/ulgi-i-odliczenia/odliczenie-skladek-na-ubezpieczenie-spoleczne-pit | 2026-10-23 |
@@ -236,4 +240,4 @@ expected:
 
 The ISAP pages (isap.sejm.gov.pl) serve a browser check to scripted requests, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
-Not yet confirmed: how the residence tests apply in the year of arrival or departure (part-year residence), which the Ministry of Finance explanations of 29 April 2021 address but which were not read for this skill; whether standard employee costs are applied for months in which all salary is exempt when the employer computes monthly advances (the annual figure of PLN 3,000 in Example 1 follows art. 22 ust. 2 pkt 1 and art. 23 ust. 10); treaty rates for countries other than Germany; whether the 2026 amendments Dz.U. 2026 poz. 1098 and 1123 change any withholding rule here (the unified text read includes them and shows none).
+Not yet confirmed: whether, in the year of arrival, a person who passes 183 days is resident for the whole year or only from arrival (the MF explanations give a split-year example only for departure under the centre-of-interests test); how an employer spreads standard costs over months in which all salary is exempt when it computes monthly advances (the annual tax in Example 1 does not depend on it); treaty rates for countries other than Germany.
