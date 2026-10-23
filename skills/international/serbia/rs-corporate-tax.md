@@ -5,8 +5,8 @@ jurisdiction: RS
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-23
+version: 0.2
 verified_by: pending
 ---
 
@@ -98,7 +98,7 @@ Declining balance uses cost in year one and the written-down value after that. I
 - A gain on selling real estate, IP rights, shares and securities, and units in investment funds is part of taxable profit.
 - A capital loss can only be set off against capital gains. A loss left over carries forward against future capital gains for 5 years (Article 30).
 
-**Interest limitation in 2026.** The 2026 rule is thin capitalisation (Article 62, 2024 text). Interest and related costs on loans from related parties are deductible only on the part of the related-party debt that does not exceed four times the company's equity. For banks and financial leasing companies the limit is ten times equity. Equity is the assets that earn income, less the debts linked to them, averaged over 1 January and 31 December. The interest must also be at arm's length (Articles 60 and 61). The Ministry publishes an annual rulebook of interest rates treated as arm's length.
+**Interest limitation in 2026.** The 2026 rule is thin capitalisation (Article 62, 2024 text). Interest and related costs on loans from related parties are deductible only on the part of the related-party debt that does not exceed four times the company's equity. For banks and financial leasing companies the limit is ten times equity. Equity is the assets that earn income, less the debts linked to them, averaged over 1 January and 31 December. The interest must also be at arm's length (Articles 60 and 61). For 2026 the arm's length interest rates are set by the Minister of Finance's Rulebook on interest rates considered to be at arm's length for 2026 (Sl. glasnik RS 36/2026), made under Article 61(3). It applies to loans and credits between related parties for 2026 (Rulebook Arts. 1 and 2). For the rates, see [rs-transfer-pricing](rs-transfer-pricing.md).
 
 The 80/2026 law replaces thin capitalisation with a 30% of EBITDA cap (EUR 3 million safe harbour, 3-year carry-forward; Article 62a). That rule applies only from EU accession.
 
@@ -185,9 +185,9 @@ Performers' and sportsmen's fees are also covered if they are not taxed as an in
 - **Related parties.** These include holdings or voting rights of at least 25%, the listed family relationships, and any company from a preferential tax jurisdiction.
 - **Reporting.** Related-party transactions must be shown separately in the tax balance and priced at arm's length. Supporting documentation is set by a Minister of Finance rulebook.
 - **Country-by-country reporting.** A Serbian ultimate parent of a group with at least EUR 750 million consolidated revenue files a country-by-country report within 12 months of year end.
-- **Pack status.** This pack has no transfer pricing skill yet.
+- **Detail.** Methods, documentation and the 2026 arm's length interest rates are in [rs-transfer-pricing](rs-transfer-pricing.md).
 
-**CFC rules and exit tax.** For tax year 2026 Serbia has neither CFC rules nor an exit tax on companies. Law 80/2026 adds both, with hybrid mismatch rules (Articles 62b to 62z). They apply only from the day Serbia joins the EU. Serbia is not an EU member, so the EU directives do not apply in 2026.
+**CFC rules and exit tax.** For tax year 2026 Serbia has neither CFC rules nor an exit tax on companies. Law 80/2026 adds both under the new heading "Rules against profit shifting": CFC rules (ZPDPL Articles 62b and 62v), exit taxation (Article 62g) and hybrid mismatch rules (Articles 62d to 62z). They are inserted after Article 62, which amending law Article 17 deletes. Article 23 of Law 80/2026 says the law applies from the day Serbia joins the EU, except amending Articles 2, 3, 5, 6, 8, 16 and 19 (from 1 January 2027) and Articles 9 to 15 (from 1 January 2028). The articles that delete Article 62 and insert these rules are not on either list. So the CFC, exit tax and hybrid mismatch rules apply from the day Serbia joins the EU, and not in 2026, 2027 or 2028.
 
 ## Worked examples
 
@@ -278,14 +278,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Ministry of Finance: Zakon o porezu na dobit pravnih lica, Official Gazette consolidated text with amendments up to 80/2026 (page and .docx) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica ; https://www.mfin.gov.rs//upload/media/SByOge_6aa127acd2250.docx | 2026-10-22 |
+| Ministry of Finance: Zakon o porezu na dobit pravnih lica, Official Gazette consolidated text with amendments up to 80/2026 (page and .docx) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica ; https://www.mfin.gov.rs//upload/media/SByOge_6aa127acd2250.docx | 2026-10-23 |
 | Ministry of Finance: the same law, consolidated text with amendments up to 94/2024 (the version that applies to tax year 2026), .docx still hosted by the Ministry | https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx | 2026-10-22 |
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text with amendments up to 80/2026 (page and .docx) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-22 |
 | Tax Administration: corporate income tax law page (lists amendments up to 80/26) | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/zakon-pdp/306/zakon-o-porezu-na-dobit-pravnih-lica.html | 2026-10-22 |
 | Tax Administration: Rulebook on the content of the corporate income tax return (Sl. glasnik 30/15 to 21/25) | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/6861/pravilnik-o-sadrzaju-poreske-prijave-za-obracun-poreza-na-dobit-pravnih-lica.html | 2026-10-22 |
+| Ministry of Finance: Rulebook on arm's length interest rates for 2026 (Sl. glasnik RS 36/2026), page and .docx | https://www.mfin.gov.rs/propisi/pravilnik-o-kamatnim-stopama-za-koje-se-smatra-da-su-u-skladu-sa-principom-van-dohvata-ruke-za-2026-godinu-slubeni-glasnik-rs-br-362026 ; https://www.mfin.gov.rs/upload/media/aatf8h_69f0810128819.docx | 2026-10-23 |
 | Tax Administration: corporate income tax secondary legislation list (arm's length interest rate rulebooks, preferential jurisdictions list, transfer pricing rulebook) | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp.html | 2026-10-22 |
 | National Bank of Serbia: key policy rate (home page rate panel and the 10 September 2026 decision) | https://www.nbs.rs/en/indeks/ ; https://nbs.rs/en/scripts/showcontent/index.html?id=21715 | 2026-10-22 |
 | Government of Serbia conclusion of 28 May 2026 opening public consultation on the draft Law on Global Minimum Tax on Profit (hosted by the Ministry of Finance) | https://www.mfin.gov.rs//upload/media/thb1x7_6a198d07e3278.pdf | 2026-10-22 |
 | Pravno-informacioni sistem RS: ELI record of the ZPDPL. The ELI resolves, but the text sits behind a login and could not be read, so no figure here relies on it. | https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2001/25/1/reg | 2026-10-22 |
 
-Not yet confirmed: whether the draft Law on Global Minimum Tax on Profit (consultation June 2026) has been adopted, and from when it applies; whether the 1 January 2027 repeal of ZPDPL Articles 25a(3) and 30a applies to the 2026 tax balance; the arm's length interest rate rulebook for 2026 (the Tax Administration lists rulebooks up to 2025); the exact form codes of the return and tax balance under the 21/25 rulebook (the Tax Administration labels the return "PDP"); the asset-to-group classification in the depreciation rulebook.
+Not yet confirmed: whether the draft Law on Global Minimum Tax on Profit (consultation June 2026) has been adopted, and from when it applies; whether the 1 January 2027 repeal of ZPDPL Articles 25a(3) and 30a applies to the 2026 tax balance; the exact form codes of the return and tax balance under the 21/25 rulebook (the Tax Administration labels the return "PDP"); the asset-to-group classification in the depreciation rulebook.
