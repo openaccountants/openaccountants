@@ -60,11 +60,11 @@ Paid membership of a control commission or a similar audit body is not "taking p
 | Penalty on extra tax assessed by the tax office (penále) | 20% of the extra tax; 1% of a reduced tax loss | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 251(1)) |
 | Late return penalty | 0.05% of the tax a day after 5 working days, capped at 5% and CZK 300,000 | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 250) |
 | Penalty for a missed reporting or record-keeping duty | up to CZK 500,000 | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 247a(1)) |
-| Late payment interest: CNB repo rate on the first day of the half-year plus 8 points | 11.50% a year (default starting January to June 2026); 11.75% (default starting July to December 2026) | 2026 | https://e-sbirka.gov.cz/sb/2013/351 (§ 2(1)); https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt |
+| Late payment interest: CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points | 11.50% a year for days from 1 January to 30 June 2026; 11.75% for days from 1 July to 31 December 2026 | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 251a(5), § 252(4)); https://e-sbirka.gov.cz/sb/2013/351 (§ 2(1)); https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt |
 | Country-by-country report: group consolidated revenue in the prior year | EUR 750,000,000 or more | 2026 | https://e-sbirka.gov.cz/sb/2013/164 (§ 13zd(2)) |
 | Time limit to assess tax | 3 years from the filing deadline, extendable, 10 years at most | 2026 | https://e-sbirka.gov.cz/sb/2009/280 (§ 148(1), (5)) |
 
-Repo rate: 3.50% from 9 May 2025 and 3.75% from 19 June 2026 (CNB repo history), so 3.50 + 8 = 11.50% and 3.75 + 8 = 11.75%.
+Repo rate: 3.50% from 9 May 2025 and 3.75% from 19 June 2026 (CNB repo history). The rate on 1 January 2026 was 3.50%, so 3.50 + 8 = 11.50%; on 1 July 2026 it was 3.75%, so 3.75 + 8 = 11.75%.
 
 ## The taxable base
 
@@ -79,7 +79,7 @@ Repo rate: 3.50% from 9 May 2025 and 3.75% from 19 June 2026 (CNB repo history),
 - Where database comparables are less comparable and include extreme values, statistical tools such as the interquartile range may narrow the range. Values between the 25th and the 75th percentile then count as arm's length. Give the reasons for using it.
 - A taxpayer outside the updated range of comparables, with no satisfactory explanation, is adjusted (D-34, part 2.3).
 
-**Interest on related-party loans.** Besides the arm's length test, interest and related costs on loans from related persons are not deductible on the part of related-party debt above 4 times equity (6 times for banks and insurers) (ITA § 25(1)(w)). The general interest limitation rules are in [cz-corporate-income-tax](cz-corporate-income-tax.md).
+**Interest on related-party loans.** Besides the arm's length test, interest and related costs on loans from related persons are not deductible on the part of related-party debt above 4 times equity (6 times for banks and insurers) (ITA § 25(1)(w)). The separate limit on exceeding borrowing costs (30% of tax EBITDA) is in ITA § 23e; no skill in this pack covers it yet.
 
 **Moving assets abroad within one entity.** A transfer of assets from the Czech Republic abroad without a change of owner is treated as a sale to itself at the arm's length price (ITA § 23g(1)). The exit tax detail is in [cz-cross-border](cz-cross-border.md).
 
@@ -114,7 +114,7 @@ D-34 also describes the OECD three-tier structure: master file, local file and c
 
 - A taxpayer that agrees prices with a related person may ask its tax office to rule whether the way the price was set matches how independent persons would set it.
 - The application must name all persons involved and describe the group structure, the business, the transaction, the periods covered, the method with documentation and forecast assumptions, and the proposed ruling (§ 38nc(2)).
-- Where the persons involved fall under different tax offices, the superior office rules. The General Financial Directorate (GFŘ) also handles bilateral and multilateral APAs (§ 38nc(3); Pokyn GFŘ D-32, part I.3).
+- Where the persons involved fall under different tax offices, a higher office rules (§ 38nc(3)); in practice this is the General Financial Directorate (GFŘ), which also handles bilateral and multilateral APAs (Pokyn GFŘ D-32, part I.3).
 - A ruling can be issued for a company not yet founded (§ 38nc(4)).
 - The application can cover the period in which it is filed and later periods (D-32, part I.2). It must be in Czech (D-32, part I.1).
 - The fee is CZK 10,000 per transaction or set of aggregated transactions (D-32, part I.5.1). No appeal lies against the ruling (TC § 132(3)).
@@ -131,7 +131,7 @@ D-34 also describes the OECD three-tier structure: master file, local file and c
 ## Penalties and interest
 
 - **Penalty on adjusted tax (penále).** When the tax office assesses extra tax, the penalty is 20% of the extra tax, or 1% of a reduced tax loss (TC § 251(1)). There is no penalty on tax the taxpayer disclosed itself in a valid supplementary return (§ 251(4)).
-- **Late payment interest.** It runs from the fourth day after the original due date until payment (TC § 252(2)). A later assessment does not move the start date: interest on a TP adjustment runs from the original due date of the return. The rate is the CNB repo rate on the first day of the half-year in which the default began, plus 8 points (TC § 252(4); Government Regulation 351/2013 § 2(1)). For a default that began in January to June 2026 that is 11.50% a year; July to December 2026, 11.75%.
+- **Late payment interest.** It runs from the fourth day after the original due date until payment (TC § 252(2)). A later assessment does not move the start date: interest on a TP adjustment runs from the original due date of the return. The rate is the CNB repo rate on the first day of the calendar half-year in which each day of interest falls, plus 8 points (TC § 251a(5) and § 252(4); Government Regulation 351/2013 § 2(1)). Days from 1 January to 30 June 2026 bear 11.50% a year; days from 1 July to 31 December 2026, 11.75%. Interest is not charged if the total for one tax and one period does not exceed CZK 1,000 (TC § 251a(2)).
 - **Late return.** 0.05% of the tax for each day after the first 5 working days, capped at 5% of the tax (0.01% a day on a tax loss). It is not charged under CZK 1,000 and cannot exceed CZK 300,000 (TC § 250(1), (3), (5)). The annex is part of the corporate return, not a separate filing.
 - **Missed reporting or record-keeping duties.** The tax office may fine up to CZK 500,000 for a missed reporting duty or record-keeping duty set by a tax law or by the tax office (TC § 247a(1)). A taxpayer that does not cure a defect in a filing under TC § 74(1)(c) or (d) when called on pays CZK 1,000, which can rise to CZK 50,000 where this seriously hinders tax administration (§ 247a(2) and (4)).
 - **Country-by-country reporting.** Fines of up to CZK 1,500,000 for an ultimate parent or a surrogate filer, and up to CZK 600,000 for other Czech member entities, for breaching the reporting duty (Act 164/2013, § 13zp).
@@ -139,10 +139,10 @@ D-34 also describes the OECD three-tier structure: master file, local file and c
 
 ## Cross-border points
 
-- **Treaties.** Article 9 (associated enterprises) of Czech tax treaties sets the same arm's length rule. A corresponding adjustment in the other state follows Article 9(2) and the mutual agreement procedure in Article 25 of the treaty (Pokyn GFŘ D-34, part 5).
+- **Treaties.** Article 9 (associated enterprises) of Czech tax treaties sets the same arm's length rule. A corresponding adjustment in the other state follows Article 9(2) where the treaty has it, and the mutual agreement procedure (Article 25 of the OECD Model) (Pokyn GFŘ D-34, part 5).
 - **EU disputes.** Inside the EU, double taxation from a TP adjustment can also go to the EU Arbitration Convention (90/436/EEC). D-34 says the EU dispute resolution directive (2017/1852) was to be transposed for complaints filed after 30 June 2019 about periods starting on or after 1 January 2018 (D-34, part 5).
 - **The annex looks at foreign related persons first.** A company over the size test files the annex for every foreign related person. It files for domestic related persons too only when it reports a tax loss or claims an investment incentive (form 25 5404/E instructions).
-- **Adjustments paid to a foreign related person become dividends.** For a non-resident, the difference found between the agreed price and the arm's length price (§ 23(7)), and interest not deductible under § 25(1)(w), count as a profit share from a Czech source (ITA § 22(1)(g)(3)). Profit shares paid to non-residents are taxed at 15% (ITA § 36(1)(b)(1)). This does not apply where the recipient is resident in another EU or EEA state or in Switzerland (§ 22(1)(g)(3)). The withholding mechanics, the 35% rate for non-cooperative states and treaty caps are in [cz-cross-border](cz-cross-border.md).
+- **Adjustments paid to a foreign related person become dividends.** For a non-resident, the difference found between the agreed price and the arm's length price (§ 23(7)), and interest not deductible under § 25(1)(w) (thin capitalisation) or § 25(1)(zl) (profit-participating loans), count as a profit share from a Czech source (ITA § 22(1)(g)(3)). Profit shares paid to non-residents are taxed at 15% (ITA § 36(1)(b)(1)). This does not apply where the recipient is resident in another EU or EEA state or in Switzerland (§ 22(1)(g)(3)). The withholding mechanics, the 35% rate for non-cooperative states and treaty caps are in [cz-cross-border](cz-cross-border.md).
 - **Permanent establishments.** Profit attribution follows ITA § 23(11) and the treaty's Article 7, using the OECD 2010 report on attributing profits to permanent establishments (Pokyn GFŘ D-32, part III.1).
 
 ## Worked examples
@@ -155,9 +155,9 @@ A Czech s.r.o. pays its German parent a management fee of CZK 6,000,000 for 2026
 2. Extra corporate tax at 21%: CZK 315,000 (§ 21(1)).
 3. Penalty (penále) of 20% of the extra tax: CZK 63,000 (TC § 251(1)(a)).
 4. Total before interest: CZK 378,000.
-5. Late payment interest also runs on the CZK 315,000 from the fourth day after the original due date of the 2026 return until payment (TC § 252(2)). The rate depends on the half-year in which the default began, so it is not computed here.
+5. Late payment interest also runs on the CZK 315,000 from the fourth day after the original due date of the 2026 return until payment (TC § 252(2)). The rate changes each half-year (11.50% a year for days in January to June 2026, 11.75% for July to December 2026; TC § 251a(5)), so it is not computed here.
 6. The parent is resident in Germany, an EU state, so the CZK 1,500,000 is not treated as a Czech-source dividend to it (ITA § 22(1)(g)(3)). Had the parent been outside the EU, the EEA and Switzerland, the difference would count as a profit share taxed at 15% (§ 36(1)(b)(1)), subject to the treaty.
-7. The parent can ask the German tax office for a corresponding adjustment under Article 9(2) and the mutual agreement procedure in the Czech–German treaty, or use the EU Arbitration Convention.
+7. To remove the double taxation, the group can use the mutual agreement procedure in the Czech-German tax treaty or the EU Arbitration Convention.
 
 ```oa-check
 name: Management fee cut by CZK 1,500,000 on audit (2026)
@@ -180,9 +180,9 @@ expected:
 
 ### Example 2: the company corrects a royalty itself and checks the annex
 
-A Czech a.s. pays its Dutch parent a royalty of 8% of sales. Sales for 2025 were CZK 50,000,000. Total assets are CZK 60,000,000, turnover is above CZK 80,000,000 and it has 40 employees. After filing the 2025 return, its benchmark (interquartile range, reasons given) shows that 5% is the highest arm's length royalty rate. The company decides to correct to 5% before any audit. The related persons did not settle the difference.
+A Czech a.s. pays its Dutch parent a royalty of 8% of sales of the licensed products. Those sales for 2025 were CZK 50,000,000. Its total assets are CZK 60,000,000, its total net turnover is CZK 90,000,000 and it has 40 employees. After filing the 2025 return, its benchmark (interquartile range, reasons given) shows that 5% is the highest arm's length royalty rate. The company decides to correct to 5% before any audit. The related persons did not settle the difference.
 
-1. Annex check: the company passes the asset test (CZK 60 million is above CZK 40 million) and the turnover test, and it has a foreign related person. So it must file the annex for the Dutch parent, reporting the royalty on line B2. Passing one size test is enough; the employee test is not needed.
+1. Annex check: the company passes the asset test (CZK 60 million is above CZK 40 million) and the turnover test (CZK 90 million is above CZK 80 million), and it has a foreign related person. So it must file the annex for the Dutch parent, reporting the royalty on line B2. Passing one size test is enough; the employee test is not needed.
 2. Royalty paid: 8% of CZK 50,000,000 = CZK 4,000,000. At 5%: CZK 2,500,000. Excess: CZK 1,500,000.
 3. The excess is added back to the base (ITA § 23(3)(a)(17)). The company files a supplementary return and pays the extra tax by the end of the month after the month it found the error (TC § 141(1)).
 4. Extra tax at 21%: CZK 315,000.
@@ -228,7 +228,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Act No. 586/1992 Coll., Income Taxes Act, version in force from 1 August 2026: §§ 21(1), 22(1)(g)(3), 23(3)(a)(17), 23(7), 23(11), 23g(1), 25(1)(w), 36(1)(b), 38nc, 38nd, 38r(2) | https://e-sbirka.gov.cz/sb/1992/586 | 2026-10-23 |
-| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 74, 92, 132, 133, 136, 141, 148, 247a, 250, 251, 252 | https://e-sbirka.gov.cz/sb/2009/280 | 2026-10-23 |
+| Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 74, 92, 132, 133, 136, 141, 148, 247a, 250, 251, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280 | 2026-10-23 |
 | Act No. 634/2004 Coll., Administrative Fees, tariff item 1(1)(n) | https://e-sbirka.gov.cz/sb/2004/634 | 2026-10-23 |
 | Act No. 164/2013 Coll., International Cooperation in Tax Administration, §§ 13zd, 13zl, 13zm, 13zn, 13zp | https://e-sbirka.gov.cz/sb/2013/164 | 2026-10-23 |
 | Government Regulation No. 351/2013 Coll., § 2(1) (late payment interest: repo plus 8 points) | https://e-sbirka.gov.cz/sb/2013/351 | 2026-10-23 |
@@ -240,4 +240,4 @@ expected:
 | Finanční správa, Převodní ceny, zdaňování nadnárodních společností | https://financnisprava.gov.cz/cs/mezinarodni-spoluprace/mezinarodni-zdanovani-prime-dane/prevodni-ceny-zdanovani-nadnarodnich-spolecnosti | 2026-10-23 |
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
-Not yet confirmed: the form version of the annex for tax periods starting in 2026 (vzor 12 covers periods starting in 2025 and parts of 2026 periods whose filing deadline falls by 31 December 2026; a later vzor had not been found); whether Pokyn GFŘ D-35, announced in D-34 to replace D-334, has been issued (it was not found on the Financial Administration pages read, and D-334 is listed as current); the Czech act that transposes EU directive 2017/1852 and its procedure; the day-count basis the Financial Administration uses to compute late payment interest; and the point in the range (median or nearest edge) to which the tax office adjusts a price that falls outside the arm's length range, which the guidance read does not state.
+Not yet confirmed: the form version of the annex for tax periods starting in 2026 (vzor 12 covers periods starting in 2025 and parts of 2026 periods whose filing deadline falls by 31 December 2026; a later vzor had not been found); whether Pokyn GFŘ D-35, announced in D-34 to replace D-334, has been issued (it was not found on the Financial Administration pages read, and D-334 is listed as current); the Czech act that transposes EU directive 2017/1852 and its procedure; the day-count basis the Financial Administration uses to compute late payment interest; whether Article 9(2) appears in each Czech treaty; and the point in the range (median or nearest edge) to which the tax office adjusts a price that falls outside the arm's length range, which the guidance read does not state.
