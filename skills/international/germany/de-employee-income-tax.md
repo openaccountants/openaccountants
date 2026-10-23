@@ -66,7 +66,7 @@ All amounts are for tax year 2026.
 | Work equipment written off at once | Cost up to EUR 800 net of VAT per item | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2)), applied by § 9(1) sentence 3 no. 7 EStG |
 | Second home for work (doppelte Haushaltsführung), rent | Up to EUR 1,000 a month in Germany | § 9(1) sentence 3 no. 5 EStG |
 | First vocational training or study (no prior qualification, not within employment) | Special expense up to EUR 6,000 a year | https://www.gesetze-im-internet.de/estg/__10.html (§ 10(1) no. 7) |
-| Pension contributions, cap | Up to the maximum contribution to the miners' pension scheme: EUR 124,800 × 24.7% = EUR 30,826 (rounded up); doubled for joint assessment. The tax-free employer share is then subtracted | § 10(3) EStG; ceiling: SVBezGrV 2026 § 4, https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf; rate: https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |
+| Pension contributions, cap | Up to the maximum contribution to the miners' pension scheme: EUR 124,800 × 24.7% = EUR 30,826 (rounded up); doubled for joint assessment. The tax-free employer share is then subtracted | § 10(3) EStG; ceiling: SVBezGrV 2026 § 4(1) no. 2, https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html; rate: https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |
 | Other insurance (health, care, unemployment, liability, etc.), cap | EUR 1,900 for employees (employer pays towards health cover); EUR 2,800 otherwise; summed for spouses. Basic health and care cover is deductible in full even above the cap | § 10(4) EStG, same URL as § 10 |
 | Statutory health contribution with sick-pay entitlement | Reduce by 4% before deducting | § 10(1) no. 3(a) sentence 4 EStG |
 | Special expenses lump sum | EUR 36 (EUR 72 joint) | https://www.gesetze-im-internet.de/estg/__10c.html |
@@ -96,7 +96,7 @@ Work down this ladder. Each spouse computes their own employment income; the res
    - **Union dues:** from 2026 deducted in addition to the lump sum (§ 9a sentence 3 EStG).
    - Business travel, removal for work, second household, job application costs, account fees for salary.
    = **Income from employment.**
-3. **Add other income** (from the sibling skills) to get total income (Gesamtbetrag der Einkünfte), less the single parent relief where it applies.
+3. **Add other income** (from the sibling skills) to get the sum of income (Summe der Einkünfte). Less the single parent relief where it applies (§ 24b(1) EStG deducts it from the sum of income) = **total income (Gesamtbetrag der Einkünfte)**.
 4. **Less special expenses (Sonderausgaben):**
    - Pension contributions: employee plus employer share to the statutory scheme, up to the cap, minus the tax-free employer share. In practice: the employee share.
    - Basic health and care insurance (employee share; statutory health reduced by 4% where sick pay is covered). Unemployment, disability and liability insurance count only while the EUR 1,900 cap is not already used by basic health and care (§ 10(4) sentence 4 EStG). For most employees it is.
@@ -117,7 +117,7 @@ Work down this ladder. Each spouse computes their own employment income; the res
 | Step | Rule |
 |---|---|
 | Form | Main form (Hauptvordruck) with Anlage N per employed spouse, Anlage Vorsorgeaufwand, Anlage Kind per child, Anlage Haushaltsnahe Aufwendungen, Anlage Sonderausgaben, Anlage Außergewöhnliche Belastungen, Anlage N-AUS for foreign pay. Form names from the ELSTER 2025 guide; the 2026 forms are not yet published |
-| Channel | ELSTER (Mein ELSTER or third-party software). Paper is allowed for an employee with no business income, or with side income under EUR 410 (ELSTER 2025 guide) |
+| Channel | ELSTER (Mein ELSTER or third-party software). Electronic filing is compulsory only where there is farming, trade or self-employed income and the case is not one of § 46(2) no. 2 to 8 EStG; otherwise paper is allowed (§ 25(4) EStG) |
 | Mandatory filers, own return | By 31 July 2027 (seven months after year end, § 149(2) AO). 31 July 2027 is a Saturday, so the deadline moves to Monday 2 August 2027 (§ 108(3) AO) |
 | Mandatory filers, prepared by a tax adviser | By the last day of February of the second following year (§ 149(3) AO): 29 February 2028. Unlike 2020 to 2024, no special extension applies to 2026 (Art. 97 § 36 EGAO covers only up to 2024). The tax office can call for an earlier return (§ 149(4) AO) |
 | Voluntary filers | Four-year assessment period (§ 169(2) no. 2 AO), starting at the end of 2026 because there is no duty to file (§ 170(1) AO): the 2026 return must reach the tax office by 31 December 2030. The ELSTER 2025 guide states the same rule for 2025 (31 December 2029) and says it cannot be extended |
@@ -184,7 +184,7 @@ expected:
 
 ### Example 2: married couple, classes III and V, one child, splitting
 
-Jonas earns EUR 72,000 (class III, 15 km on 200 days, so commuting is EUR 1,140 and the EUR 1,230 lump sum is higher). Mia earns EUR 18,000 (class V) and pays EUR 200 union dues; she has no other job costs. One child, Kindergeld EUR 3,108 for the year. Both in statutory health insurance at a 2.9% additional rate, no church. Because one spouse was in class V, they must file (§ 46(2) no. 3a EStG). Wage tax withheld on both certificates together: EUR 11,900 (invented).
+Jonas earns EUR 72,000 (class III, 15 km on 200 days, so commuting is EUR 1,140 and the EUR 1,230 lump sum is higher). Mia earns EUR 18,000 (class V) and pays EUR 200 union dues; she has no other job costs. One child, Kindergeld EUR 3,108 for the year. Both in statutory health insurance at a 2.9% additional rate, both work outside Saxony (so care is 1.8% each), no church. Because one spouse was in class V, they must file (§ 46(2) no. 3a EStG). Wage tax withheld on both certificates together: EUR 9,414 (invented case; worked out with the § 39b(2) EStG formula for these facts: class III EUR 7,564, class V EUR 1,850 at the 14% minimum; a payroll run can differ by a few euros).
 
 - Jonas: 72,000 − 1,230 = EUR 70,770. Mia: 18,000 − 1,230 − 200 = EUR 16,570 (union dues on top of the lump sum, new for 2026). Total EUR 87,340.
 - Pension, employee shares: 6,696 + 1,674 = EUR 8,370.
@@ -193,7 +193,7 @@ Jonas earns EUR 72,000 (class III, 15 km on 200 days, so commuting is EUR 1,140 
 - Splitting: tax on 34,973 = 5,662, doubled EUR 11,324.
 - With child allowances (EUR 9,756): taxable EUR 60,191, splitting tax 2 × 4,243 = EUR 8,486. Saving EUR 2,838 is less than Kindergeld of EUR 3,108, so Kindergeld stands and the income tax is EUR 11,324.
 - Surcharge base is EUR 8,486 (with allowances), below EUR 40,700: no surcharge.
-- Refund: 11,900 − 11,324 = EUR 576.
+- Extra payment: 11,324 − 9,414 = EUR 1,910, due one month after the notice. Classes III and V often withhold too little, which is why this couple must file.
 
 ```oa-check
 name: DE married couple 2026, splitting, one child, Kindergeld check
@@ -203,7 +203,7 @@ inputs:
   union_dues_b: 200
   health_ceiling: 69750
   kindergeld_year: 3108
-  withheld: 11900
+  withheld: 9414
 steps:
   - income_a: gross_a - 1230
   - income_b: gross_b - 1230 - union_dues_b
@@ -221,7 +221,7 @@ steps:
   - tax_kfb: 2 * floor((173.10 * zk + 2397) * zk + 1034.87)
   - allowance_saving: tax_split - tax_kfb
   - income_tax: min(tax_split, tax_kfb + kindergeld_year)
-  - refund: withheld - income_tax
+  - extra_payment: income_tax - withheld
 expected:
   vorsorge: 17320.50
   taxable: 69947
@@ -229,7 +229,7 @@ expected:
   tax_kfb: 8486
   allowance_saving: 2838
   income_tax: 11324
-  refund: 576
+  extra_payment: 1910
 ```
 
 `income_tax` takes the lower of the two routes: with allowances the tax is 8,486 plus the Kindergeld added back, 3,108, which is 11,594; without them it is 11,324, so the allowance route is not used. Both examples use only zone 3 of the tariff because the taxable amounts fall in it; a different case must pick its zone first.
@@ -269,10 +269,15 @@ expected:
 | SolzG §§ 3, 4 | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |
 | AO §§ 108, 149, 152, 169, 170, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |
 | EGAO Art. 97 § 36 (extensions end with 2024) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-23 |
-| SVBezGrV 2026 (miners' pension ceiling EUR 124,800) | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf | 2026-10-23 |
+| SVBezGrV 2026 § 4 (miners' pension ceiling EUR 124,800) | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-23 |
+| SVBezGrV 2026 § 2(2) (health and care ceiling EUR 69,750) | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-23 |
+| SGB V §§ 241, 243 (health 14.6%, reduced 14.0%) | https://www.gesetze-im-internet.de/sgb_5/__241.html | 2026-10-23 |
+| PBAV 2025 § 1 (care 3.6%) and SGB XI §§ 55(3), 58 (childless surcharge borne by the employee) | https://www.gesetze-im-internet.de/pbav_2025/__1.html | 2026-10-23 |
+| EStG § 25(4) (when electronic filing is compulsory) | https://www.gesetze-im-internet.de/estg/__25.html | 2026-10-23 |
+| EStG § 39b(2) (wage tax formula, Vorsorgepauschale) | https://www.gesetze-im-internet.de/estg/__39b.html | 2026-10-23 |
 | RVBeitrSBek 2026 (pension rates 18.6% and 24.7%) | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-23 |
 | BMF monthly report Feb 2026, main tax changes 2026 | https://www.bundesfinanzministerium.de/Monatsberichte/Ausgabe/2026/02/Inhalte/Kapitel-2-Analysen/2-5-wichtigste-steuerliche-aenderungen-2026.html | 2026-10-23 |
 | BMF booklet "Steuern von A bis Z" (church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf | 2026-10-23 |
 | ELSTER, guide to the 2025 income tax return (forms, filing duty, voluntary deadline) | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-23 |
 
-Not yet confirmed: the 2026 form set and line numbers (ELSTER has not published the 2026 guide; the form names above are from 2025); which states charge 8% and which 9% church tax (state law, not on a federal page); the employee rates in the examples (health additional rate 2.9% and care 2.4% / 1.8%) are taken from de-payroll, not re-read today.
+Not yet confirmed: the 2026 form set and line numbers (ELSTER has not published the 2026 guide; the form names above are from 2025); which states charge 8% and which 9% church tax (state law, not on a federal page); the health additional rate of 2.9% in the examples is an assumed fund rate (each fund sets its own).
