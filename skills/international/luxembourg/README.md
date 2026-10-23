@@ -19,7 +19,7 @@ Calendar tax year. Direct taxes (income tax, corporate income tax, municipal bus
 | SC, social contributions | luxembourg-social-contributions | source-cited draft |
 | PR, payroll withholding | luxembourg-payroll | source-cited draft |
 | TP, transfer pricing | lu-transfer-pricing | source-cited draft |
-| XB, cross-border | (missing: residence, non-residents, treaties and exit rules for individuals) | |
+| XB, cross-border | lu-cross-border | source-cited draft |
 
 luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the Accounting packs milestone and is not counted here.
 
@@ -29,3 +29,5 @@ luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the 
 - Administration des contributions directes: https://impotsdirects.public.lu
 - Guichet.lu, business taxation: https://guichet.public.lu/fr/entreprises/fiscalite.html
 - Legilux, official journal: https://legilux.public.lu
+- ACD, treaties in force and frontier-worker circulars, read 2026-10-23: https://impotsdirects.public.lu/fr/conventions/luxembourg.html
+- CCSS, telework framework agreement, read 2026-10-23: https://ccss.public.lu/fr/employeurs/secteur-prive/activite-etranger/accord-teletravail.html
