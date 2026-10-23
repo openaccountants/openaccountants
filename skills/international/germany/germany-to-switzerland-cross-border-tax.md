@@ -5,9 +5,9 @@ jurisdiction: DE
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-authored_by: OpenAccountants team
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: By OpenAccountants
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 version: 0.1
 verified_by: pending
@@ -34,10 +34,10 @@ Three groups, with different results. Classify the client first and test again a
 **1. Frontier commuter (Grenzgänger), art. 15a.** A person resident in one state whose place of work is in the other state and who regularly returns from there to their home. The pay is taxed in the state of residence. The work state may withhold tax, capped at 4.5% of gross pay if the person shows an official residence certificate from their home tax office (art. 15a(1)).
 
 - **Place of work** is normally where the employee is integrated into the employer's business. For drivers and field staff, days away count as business trips when counting non-return days. Where the contract names several sites or none, the place of work is where the work is mostly done (protocol no. 5(a)).
-- **Regular return, new from 2026.** There is a regular return only if the employee travels from home to the place of work and back on at least 20% of the agreed working days in the calendar year (protocol no. 5(b)). Agreed working days are those in the contract. Leave and sick days are not working days (protocol no. 5(d)).
+- **Regular return, new from 2026.** There is a regular return only if the employee travels from home to the place of work and back on at least 20% of the agreed working days in the calendar year (protocol no. 5(b)). Agreed working days are those in the contract. Protocol no. 5(d) takes leave and sick days out of the working days for the 60-day test; the protocol does not say whether they also come out of the base for the 20% test, so check both bases (Example 2 passes and fails the same way on either).
 - **The 60 non-return days test.** A person who does not return home after every working day keeps commuter status unless, when employed for the whole calendar year, they fail to return home on more than 60 working days because of their work (art. 15a(2)).
-- **What counts as a non-return day.** A day on which returning home was not possible or not reasonable for work reasons, and the person in fact did not return. Return is not reasonable when the shortest road distance one way is over 100 km by car, or the fastest public transport one way at usual commuting times takes over 1.5 hours (protocol no. 5(e); consultation agreement of 12 October 2018). One-day business trips in either treaty state are not non-return days; one-day trips to a third country always are (protocol no. 5(f)). Weekend and holiday days on a multi-day business trip paid by the employer, and days off worked on the employer's express order, are working days (protocol no. 5(d)). Shift work spread over several days does not break the regular return; breaks under four hours do not end the working day (protocol no. 5(c)).
-- **Home office days.** A working day spent entirely at home in the residence state is not a non-return day (consultation agreement of 15 and 18 July 2022, BMF letter of 26 July 2022). From 2026 such days still reduce the days on which the person commutes, so they count against the 20% regular-return test.
+- **What counts as a non-return day.** A day on which returning home was not possible or not reasonable for work reasons, and the person in fact did not return. Return is not reasonable when the shortest road distance one way is over 100 km by car, or the fastest public transport one way at usual commuting times takes over 1.5 hours; the means of transport mostly used decides (protocol no. 5(e), which takes over the consultation agreement of 12 October 2018). One-day business trips in either treaty state are not non-return days; one-day trips to a third country always are (protocol no. 5(f)). Weekend and holiday days on a multi-day business trip paid by the employer, and days off worked on the employer's express order, are working days (protocol no. 5(d)). Shift work spread over several days does not break the regular return; breaks under four hours do not end the working day (protocol no. 5(c)).
+- **Home office days.** Under the consultation agreement of 15 and 18 July 2022 (BMF letter of 26 July 2022), a working day spent entirely at home in the residence state is not a non-return day. That agreement was made under the treaty as amended in 2010; whether it still applies under the 2026 protocol is not confirmed (see the end of this skill). Either way, a home office day is not a day on which the person travels to the place of work and back, so from 2026 it counts against the 20% regular-return test.
 - **Part-year employment.** The allowed non-return days are 5 per full month and 1 per full week of employment in the other state (protocol no. 5(g)).
 - **Part-time employment.** Someone who works some hours on every usual working day keeps the 60 days. Someone who works only on some days gets 60 cut in proportion: contractual working days over the usual full-time working days, taken as 240 for a five-day week and 280 for a six-day week if the contract is silent. Leave is not deducted from either figure (protocol no. 5(i)).
 - **Several employers in the work state.** Status is judged once for all jobs in the year; non-return days from all jobs are added (protocol no. 5(h)).
@@ -89,7 +89,7 @@ A weekday flat does not by itself move the person's residence. If the person is 
 4. Non-return days: count only days that meet protocol no. 5(e) and (f), and compare with 60 or the reduced limit for part-year or part-time work. Add days from all jobs in the work state.
 5. If both tests pass, art. 15a applies to the whole year's pay from that employment. If either fails, go to Step 3.
 
-The employer certifies the non-return days on form Gre-3, stamped by the tax office for the place of work (protocol no. 5(j)). The employer sends it, ideally within three months after the year end or the end of the job (Gre-3 notes). The employee must give the employer the facts needed (protocol no. 5(j)).
+The employer certifies the non-return days on form Gre-3, stamped by the tax office for the place of work (protocol no. 5(j)). Where the employer finds at the year end, or when the job ends, that commuter status fails because of the non-return days, it sends the Gre-3 to the tax authority that collects the withholding, if possible within three months (Gre-3 note 2). The employee must give the employer the facts needed (protocol no. 5(j)).
 
 ### Step 2: the German assessment of a commuter (German resident)
 
@@ -113,14 +113,14 @@ A former commuter who worked in the Swiss public service and draws a second-pill
 | Step | Rule |
 |---|---|
 | Gre-1 residence certificate | Apply to the German tax office when starting work and when changing employer; valid for one year and renewed without a new application |
-| Gre-3 non-return days | Employer certifies, Swiss tax office stamps; aim for three months after the year end or the end of the job |
+| Gre-3 non-return days | Where status fails: employer certifies, the tax office for the place of work stamps; if possible within three months after the year end or the end of the job |
 | German return, 2026 | Required when total income exceeds EUR 12,348 (single) and no German wage tax was withheld (§ 56 EStDV). Due 31 July 2027, a Saturday, so Monday 2 August 2027; with a tax adviser 29 February 2028 (§§ 108, 149 AO; see de-non-resident-tax) |
 | Prepayments | Quarterly on 10 March, 10 June, 10 September and 10 December; the 4.5% Swiss tax is counted (art. 15a(3)(a); § 37 EStG) |
 | Weekly stayer | Swiss tax return or tax at source in Switzerland (see ch-cross-border); German return showing the exempt pay for progression, with proof of Swiss tax |
 
 ## Penalties and interest
 
-- **Late filing surcharge (§ 152 AO).** 0.25% of the tax due per started month, at least EUR 25 per month, at most EUR 25,000. Compulsory if the 2026 return is not filed by 29 February 2028 and tax is due.
+- **Late filing surcharge (§ 152 AO).** 0.25% per started month of the assessed tax less prepayments and credited withholding, at least EUR 25 per month, at most EUR 25,000. Compulsory if the 2026 return is not filed by 29 February 2028 and tax is due.
 - **Interest on assessed tax (§ 233a, § 238 AO).** 0.15% per full month on the balance, from 1 April 2028 for 2026.
 - **Late payment (§ 240 AO).** 1% per started month on overdue tax, rounded down to the nearest EUR 50.
 - **Lost commuter status found late.** The employer must collect the Swiss tax not withheld (Gre-1 note 4). In Germany the exemption under art. 24 is refused until the Swiss tax is shown paid (§ 50d(8) EStG), so the return is assessed with the pay taxed and changed later.
@@ -173,9 +173,9 @@ expected:
 Jonas lives in Konstanz and works three days a week for a Zurich employer all of 2026. His contract does not state the usual full-time days, so a five-day week gives 240. His contractual days are 3/5 of 240 = 144. He takes 12 days of leave, so he has 132 working days. He works 30 of them at home in Konstanz and stays overnight in Switzerland on 30 days because of evening client work more than 100 km from home. (Invented case.)
 
 - Non-return limit: 60 × 144 / 240 = 36 days (leave is not deducted for this ratio). His 30 days are within it.
-- Regular return: commuting days = 132 − 30 − 30 = 72. 20% of 132 = 26.4. 72 is above, so he passes.
+- Regular return: commuting days = 132 − 30 − 30 = 72. 20% of 132 = 26.4. 72 is above, so he passes. On the contract days without deducting leave (144) the threshold is 28.8; he still passes.
 - He is a commuter: Switzerland withholds at most 4.5% and Germany taxes the pay and credits it, as in Example 1.
-- Edge case: if he had worked 80 days at home, his commuting days would be 132 − 80 − 30 = 22, below 26.4. He would then fail the regular-return test from 2026 even though the home office days are not non-return days. Art. 15 would then apply: Switzerland taxes pay for his Swiss work days and Germany exempts it with progression, on proof of Swiss tax.
+- Edge case: if he had worked 80 days at home, his commuting days would be 132 − 80 − 30 = 22, below 26.4 (and below 28.8). He would then fail the regular-return test from 2026 even though the home office days are not non-return days. Art. 15 would then apply: Switzerland taxes pay for his Swiss work days and Germany exempts it with progression, on proof of Swiss tax.
 
 ```oa-check
 name: DE-CH part-time commuter 2026, non-return limit and 20% return test
@@ -239,4 +239,4 @@ expected:
 | ErbStG § 2 (five-year rule for German nationals) | https://www.gesetze-im-internet.de/erbstg_1974/__2.html | 2026-10-23 |
 | AO §§ 152, 233a, 238, 240 | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-23 |
 
-Not yet confirmed: whether the home office consultation agreement of July 2022 still applies under the 2026 protocol text (it was made under the treaty as amended in 2010, and the new protocol no. 5 does not mention home office days; the 2023 Gre-1 notes still cite it); whether the BMF has issued an introductory letter on the 2026 commuter rules (none found on the BMF Switzerland page); the euro conversion rule for Swiss pay; how the German tax office treats a year in which the 20% test fails only because of home office days.
+Not yet confirmed: whether the home office consultation agreement of July 2022 still applies under the 2026 protocol text (it was made under the treaty as amended in 2010, and the new protocol no. 5 does not mention home office days; the 2023 Gre-1 notes still cite it); whether the BMF has issued an introductory letter on the 2026 commuter rules (none found in a search of bundesfinanzministerium.de on 2026-10-23); whether leave and sick days come out of the base for the 20% test; how the German implementing ordinance KonsVerCHEV (https://www.gesetze-im-internet.de/konsverchev/), which still uses 250 and 300 usual working days for part-time workers (§ 9) and a one day a week or five days a month return test (§ 7), sits beside protocol no. 5 from 2026; the euro conversion rule for Swiss pay; how the German tax office treats a year in which the 20% test fails only because of home office days.
