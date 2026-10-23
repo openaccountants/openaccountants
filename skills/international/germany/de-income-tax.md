@@ -49,12 +49,12 @@ See also, and do not repeat here:
 | Church tax (members only) | 8% or 9% of income tax, by state; base ignores the § 35 credit | 2026 | https://www.gesetze-im-internet.de/estg/__51a.html; BMF booklet "Steuern von A bis Z" (Stand January 2025): "je nach Bundesland 8 oder 9 Prozent" |
 | Trade tax credit (§ 35) | 4.0 × trade tax base amount (Messbetrag), capped at the tax on trade income and at the trade tax actually payable | 2026 | https://www.gesetze-im-internet.de/estg/__35.html |
 | Trade tax allowance, base rate | EUR 24,500 off trade income (rounded down to EUR 100); base rate 3.5% | 2026 | https://www.gesetze-im-internet.de/gewstg/__11.html |
-| Trade tax multiplier floor | 200% for 2026; 280% from 2027 | 2026 | BMF booklet (above): "mindestens 200 Prozent"; https://www.gesetze-im-internet.de/gewstg/__36.html (§ 36(5b): new § 16(4) applies from 2027) |
+| Trade tax multiplier floor | 200% for 2026; 280% from 2027 | 2026 | Law of 29 June 2026 (BGBl. 2026 I Nr. 197), Art. 8: in § 16(4) sentence 2 GewStG "wird die Angabe „200“ durch die Angabe „280“ ersetzt", first applied for 2027 (https://www.gesetze-im-internet.de/gewstg/__36.html, § 36(5b)). The § 16 page already shows only the 2027 wording |
 | Trade tax itself | Not a business expense | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5b)) |
 | Small business (Kleinunternehmer) | Prior-year turnover not over EUR 25,000 and current-year turnover not over EUR 100,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
 | Business entertainment (Bewirtung) | 70% deductible, with a proper receipt | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) no. 2) |
 | Gifts to non-employees | Deductible only if the year's gifts to one person cost at most EUR 50 | 2026 | Same, § 4(5) no. 1 |
-| Home office day rate (Tagespauschale) | EUR 6 per day worked mainly at home, max EUR 1,260 a year | 2026 | Same, § 4(5) no. 6c |
+| Home office day rate (Tagespauschale) | EUR 6 per day worked mainly at home without going to an outside place of work, max EUR 1,260 a year | 2026 | Same, § 4(5) no. 6c |
 | Home office room that is the centre of all work | Actual cost, or EUR 1,260 a year flat (one twelfth less per month not met) | 2026 | Same, § 4(5) no. 6b |
 | Home to own premises | EUR 0.38 per full km one way, per day; cap EUR 4,500 unless a car is used | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) sentence 3 no. 4), applied by § 4(5) no. 6 EStG |
 | Meals on business trips | EUR 28 for a full day away; EUR 14 for arrival, departure, or more than 8 hours away | 2026 | Same, § 9(4a), applied by § 4(5) no. 5 EStG |
@@ -86,7 +86,7 @@ See also, and do not repeat here:
 | Fuel, car costs | Depends on the car method; see below. No method confirmed: deduct nothing yet |
 | Laptop, phone, furniture | Over EUR 800 net: depreciate (computers and software: one year allowed). EUR 800 or less: expense now or pool |
 | Health, care, pension insurance (Krankenkasse, DRV, KSK) | Not a business expense. Special expense in Step 2 |
-| Income tax, surcharge, church tax, prepayments | Never deductible (§ 12 no. 3 EStG) |
+| Income tax, surcharge, church tax, prepayments | Never a business expense (§ 12 no. 3 EStG). Church tax paid is a special expense in Step 2 (§ 10(1) no. 4 EStG) |
 | Trade tax (Gewerbesteuer) | Never deductible (§ 4(5b) EStG). Records that call it an expense are wrong for any year since 2008 |
 | Fines from a court or authority | Not deductible (§ 4(5) no. 8 EStG) |
 | Transfers between own accounts, loan principal, private withdrawals | Leave out. Interest on a business loan is an expense |
@@ -134,7 +134,7 @@ See also, and do not repeat here:
 
 ### Example 1: Freiberufler designer, single, normal VAT scheme
 
-Anna is a self-employed designer in Hamburg, single, no church, normal VAT scheme. 2026 fees net of VAT: EUR 72,000. Ordinary costs (software, studio share, insurance, adviser): EUR 9,000. A client dinner: EUR 400 net. A gift to one client: EUR 80. 140 days worked mainly at home, no separate room. A laptop for EUR 1,800 net. Basic health and care cover per the insurer's certificate (already net of the 4% cut): EUR 7,200. Private pension (Rürup) EUR 3,000. Prepayments paid: EUR 10,000. (Invented case.)
+Anna is a self-employed designer in Hamburg, single, no church, normal VAT scheme. 2026 fees net of VAT: EUR 72,000. Ordinary costs (software, studio share, insurance, adviser): EUR 9,000. A client dinner: EUR 400 net. A gift to one client: EUR 80. 140 days worked mainly at home without going to the studio, no separate room. All VAT she collected in 2026 she also paid over in 2026, so VAT nets to nil in the EÜR. A laptop for EUR 1,800 net. Basic health and care cover per the insurer's certificate (already net of the 4% cut): EUR 7,200. Private pension (Rürup) EUR 3,000. Prepayments paid: EUR 10,000. (Invented case.)
 
 - Dinner: 70% of 400 = EUR 280. Gift: over EUR 50, so EUR 0. Home office: 140 × 6 = EUR 840. Laptop: one-year life, EUR 1,800.
 - Profit: 72,000 − 9,000 − 280 − 0 − 840 − 1,800 = EUR 60,080.
@@ -174,7 +174,7 @@ expected:
 
 ### Example 2: sole trader with the trade tax credit capped, church member
 
-Bernd runs an online shop in a town with a trade tax multiplier of 360%. 2026 profit EUR 95,000, his only income; no trade tax add-backs. Single, church member at 9%. Special expenses: basic health and care cover EUR 9,000, pension EUR 6,000. (Invented case; the multiplier is an input, each town sets its own.)
+Bernd runs an online shop in a town with a trade tax multiplier of 360%. 2026 profit EUR 95,000, his only income; no trade tax add-backs. Single, church member at 9%. Special expenses: basic health and care cover EUR 9,000, pension EUR 6,000. 2026 is his first year of trading, so no church tax or prepayments were paid in it and the EUR 36 lump sum applies. (Invented case; the multiplier is an input, each town sets its own.)
 
 - Trade tax: 95,000 − 24,500 = 70,500 × 3.5% = Messbetrag EUR 2,467.50; × 360% = EUR 8,883. Not deductible, so profit stays EUR 95,000.
 - Taxable income: 95,000 − 9,000 − 6,000 − 36 = EUR 79,964. Zone 4: 0.42 × 79,964 − 11,135.63 = 22,449.25, so EUR 22,449.
@@ -244,6 +244,7 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | EStDV §§ 56, 60 (duty to file, EÜR electronically) | https://www.gesetze-im-internet.de/estdv_1955/__56.html | 2026-10-23 |
 | GewStG § 11 (EUR 24,500, 3.5%) | https://www.gesetze-im-internet.de/gewstg/__11.html | 2026-10-23 |
 | GewStG §§ 16, 36 (multiplier floor 280% only from 2027) | https://www.gesetze-im-internet.de/gewstg/__36.html | 2026-10-23 |
+| BGBl. 2026 I Nr. 197, law of 29 June 2026, Art. 8 (floor 200 to 280) | https://www.recht.bund.de/bgbl/1/2026/197/VO.html | 2026-10-23 |
 | UStG § 19 (EUR 25,000 / 100,000) | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-23 |
 | SolzG §§ 3, 4 (EUR 20,350 / 40,700, 5.5%, 11.9%) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-23 |
 | AO §§ 108, 138, 141, 149 (deadlines, registration, books) | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |
@@ -254,6 +255,6 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | EStG § 49 (German income of non-residents) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |
 | SVBezGrV 2026 § 4 (miners' pension ceiling EUR 124,800) | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-23 |
 | BMF, Anlage EÜR 2026 form and instructions (letter of 1 September 2026) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
-| BMF booklet "Steuern von A bis Z" (Stand January 2025; church tax 8 or 9%, multiplier floor 200%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-23 |
+| BMF booklet "Steuern von A bis Z" (Stand January 2025; church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-23 |
 
 Not yet confirmed: which states charge 8% and which 9% church tax, and their rounding (state church tax rules, not on a federal page); the one-year life for computers rests on a BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, not on the statute; the EUR 0.30 per km rate for business trips rests on the same instructions; the 2026 main form and Anlage S and G line numbers (ELSTER's 2026 guide is not yet published).
