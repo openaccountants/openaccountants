@@ -62,7 +62,7 @@ Arithmetic check on the ALL 22,100 base: at monthly gross ALL 200,000 the prior-
 
 [RESEARCH GAP — reviewer to confirm] The monthly 23% breakpoint (ALL 200,000/month = ALL 2,400,000/year) does NOT line up with the annual 23% breakpoint (ALL 2,040,000/year = ALL 170,000/month). The research notes two different official presentations of the monthly table (a simplified 0/13/23 version on tatime.gov.al vs. the allowance-phase-out version above from PwC). Reconcile both against General Instruction No. 26/2023 for the authoritative monthly algorithm before relying on month-by-month figures; the year-end reconciliation uses the annual 13%/23% brackets.
 
-**Self-employed / business / trader income — ANNUAL taxable profit**  _(Law 29/2023 art. 24(2) and art. 69(1)(dh))_
+**Self-employed / business / trader income: annual taxable profit**  _(Law 29/2023 art. 24(2) and art. 69(1)(dh))_
 
 | Annual taxable profit (ALL) | Rate under art. 24(2) |
 | --- | --- |
@@ -91,7 +91,7 @@ The 0% rule in art. 69(1)(dh) has no profession exclusion. The professional-serv
 | Ambiguity | Default |
 | --- | --- |
 | Unknown residency | Treat as Albanian tax resident (worldwide income); non-residents taxed on Albania-source income only [PwC] |
-| Unknown self-employed eligibility for the 0% rate | Do NOT assume 0% — confirm gross income ≤ ALL 14m for the year AND no disguised-employment reclassification [Law 29/2023 arts. 12(1)(ç), 69(1)(dh)] |
+| Unknown self-employed eligibility for the 0% rate | Do NOT assume 0%: confirm gross income ≤ ALL 14m for the year AND no disguised-employment reclassification [Law 29/2023 arts. 12(1)(ç), 69(1)(dh)] |
 | Single-client / few-client self-employment | Apply disguised-employment reclassification (employment rates 13%/23%) unless proven otherwise [HLB Albania] |
 | Unknown contribution base ceiling | Use the year's official CoM-decision floor/ceiling; verify before computing; health insurance has NO ceiling [Eurofast Payroll Guide 2025] |
 | Unknown business-use % (vehicle, phone, home) | 0% deduction |
@@ -113,7 +113,7 @@ The 0% rule in art. 69(1)(dh) has no profession exclusion. The professional-serv
 ### Refusal Catalogue
 
 - **R-AL-1** — Residency unknown. "Residency determines whether the client is taxed on worldwide income (resident) or Albania-source income only (non-resident). This skill defaults to resident treatment but cannot finalise without confirmation. Please confirm before filing."
-- **R-AL-2** — Self-employed eligibility for the 0% rate unconfirmed. "The 0%-until-2029 rate applies only if gross income for the year is ALL 14,000,000 or less (Law 29/2023 art. 69(1)(dh)) and the income is not reclassified as employment income under art. 12(1)(ç). Above ALL 14,000,000 of gross income the 0% rate does not apply to any part of the profit. This skill cannot confirm eligibility without the client's gross income and client-concentration data. Escalate to an Albanian tax advisor."
+- **R-AL-2**: Self-employed eligibility for the 0% rate unconfirmed. "The 0%-until-2029 rate applies only if gross income for the year is ALL 14,000,000 or less (Law 29/2023 art. 69(1)(dh)) and the income is not reclassified as employment income under art. 12(1)(ç). Above ALL 14,000,000 of gross income the 0% rate does not apply to any part of the profit. This skill cannot confirm eligibility without the client's gross income and client-concentration data. Escalate to an Albanian tax advisor."
 - **R-AL-3** — Companies and partnerships. "This skill covers individuals and sole self-employed persons only. Corporate income tax (tatimi mbi fitimin) and partnership returns are out of scope. Escalate to an Albanian tax advisor."
 - **R-AL-4** — Real-estate or securities capital gains. "Capital gains on real estate and securities are taxed at 15% but require specialised computation of acquisition cost and holding. Escalate to an Albanian tax advisor for material disposals."
 - **R-AL-5** — Arrears / enforcement. "Client has outstanding tax arrears or is subject to DPT enforcement. Late-payment penalty is 10% plus 0.06%/day interest (capped at 365 days). Do not advise. Escalate immediately."
@@ -338,11 +338,11 @@ Because ≥80% of the self-employed income is from a single client, the anti-dis
 
 ### 5.3 Self-Employed / Business Income
 
-- **Self-employed / business income rate** — If gross income for the year is ALL 14,000,000 or less, the rate is 0% on the whole business profit until 31 December 2029 (art. 69(1)(dh)). If gross income is above ALL 14,000,000, the 0% rate does not apply at all: taxable profit is taxed 15% up to ALL 14,000,000 and 23% above (art. 24(2)). The ALL 14m figure is a gross-income threshold for the 0% rate, not a 0% band of profit.  _(Law 29/2023 arts. 24(2), 69(1)(dh); General Instruction No. 26/2023 paras. 24.4, 50)_
+- **Self-employed / business income rate**: If gross income for the year is ALL 14,000,000 or less, the rate is 0% on the whole business profit until 31 December 2029 (art. 69(1)(dh)). If gross income is above ALL 14,000,000, the 0% rate does not apply at all: taxable profit is taxed 15% up to ALL 14,000,000 and 23% above (art. 24(2)). The ALL 14m figure is a gross-income threshold for the 0% rate, not a 0% band of profit.  _(Law 29/2023 arts. 24(2), 69(1)(dh); General Instruction No. 26/2023 paras. 24.4, 50)_
 
 ### 5.4 Anti-Disguised-Employment Rule
 
-- **Anti-disguised-employment rule** — If ≥80% of self-employed income is from a single client, OR ≥90% from fewer than three clients, the income is reclassified as employment income and taxed at 13%/23% (the 0% business rate does not apply).  _(Law 29/2023 / implementing rules [HLB Albania])_
+- **Anti-disguised-employment rule**: If ≥80% of self-employed income is from a single client, OR ≥90% from fewer than three clients, the income is reclassified as employment income and taxed at 13%/23% (the 0% business rate does not apply).  _(Law 29/2023 / implementing rules [HLB Albania])_
 
 ### 5.5 Investment Income
 
@@ -404,7 +404,7 @@ Social insurance is computed on a gross monthly base between an annual floor and
 
 ### 6.1 Self-Employed 0% Rate Eligibility
 
-- **0% rate eligibility checklist** — Confirm gross income ≤ ALL 14,000,000 for the year (Law 29/2023 art. 69(1)(dh)); above that, no part of the profit is taxed at 0%. Confirm no disguised-employment reclassification (Section 5.4). The CoM Decision No. 753 professional-services list is described in art. 69(6) as repealed by Constitutional Court decision no. 52 of 27.6.2024; art. 69(1)(dh) itself has no profession exclusion. Conservative default: Do not apply 0% until both are confirmed.
+- **0% rate eligibility checklist**: Confirm gross income ≤ ALL 14,000,000 for the year (Law 29/2023 art. 69(1)(dh)); above that, no part of the profit is taxed at 0%. Confirm no disguised-employment reclassification (Section 5.4). The CoM Decision No. 753 professional-services list is described in art. 69(6) as repealed by Constitutional Court decision no. 52 of 27.6.2024; art. 69(1)(dh) itself has no profession exclusion. Conservative default: Do not apply 0% until both are confirmed.
 
 ### 6.2 Disguised-Employment Test
 
@@ -592,8 +592,8 @@ ONBOARDING QUESTIONS -- ALBANIA INCOME TAX
 10. ARS Firm — CoM Decision No. 776/2025 on the National Minimum Wage — https://arsfirm.al/en/council-of-ministers-decision-no-776-dated-december-19-2025-on-the-determination-of-the-minimum-wage-at-the-national-level/
 11. Eurofast — Albania Payroll Guide 2025 (contribution floor/ceiling) — https://eurofast.eu/wp-content/uploads/2025/02/Payroll-Guide-2025_Albania-1.pdf
 12. Karanovic & Partners — Albania Implementing New Income Tax Law (Law 29/2023, effective 2024) — https://www.karanovicpartners.com/news/albania-implementing-new-income-tax-law/
-13. Law No. 29/2023 "On income tax", consolidated to Law No. 81/2025 (arts. 22, 24, 69), General Directorate of Taxes copy — https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf (read 23 Oct 2026)
-14. General Instruction No. 26 of 8.9.2023 on income tax (paras. 24.4, 24.6, 50), General Directorate of Taxes copy — https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf (read 23 Oct 2026)
+13. Law No. 29/2023 "On income tax", consolidated to Law No. 81/2025 (arts. 22, 24, 69), General Directorate of Taxes copy: https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf (read 23 Oct 2026)
+14. General Instruction No. 26 of 8.9.2023 on income tax (paras. 24.4, 24.6, 50), General Directorate of Taxes copy: https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf (read 23 Oct 2026)
 
 ### Test Suite
 
