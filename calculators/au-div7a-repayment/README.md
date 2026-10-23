@@ -70,7 +70,7 @@ The rounding conventions are stated in every result and are not presented as ATO
 Results include the verdict, reason codes, reasons, source links, rules date, rounding policy
 and scope limits. Calculated results include the supplied amounts, rounded term, benchmark,
 estimate, target and shortfall. `unknown` and `refused` results contain **no calculated money**.
-`no_shortfall_indicated` is conditional on caller-attested inputs, not a compliance determination.
+`no_shortfall_indicated` is conditional on inputs the caller confirms, not a compliance determination.
 
 A shortfall is **not a deemed dividend**. Review all relevant conditions, s 109Q exceptions,
 s 109Y distributable surplus and any applicable relief separately. The function does not form
