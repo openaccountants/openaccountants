@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   SC: gr-employee-contributions
 partial:
-  IT-IND: "gr-income-tax covers all individuals on the 2026 scale, but the 2026 annual minimum-wage base of the self-employed minimum income (art. 28A) is not confirmed on an official page, and capital gains (arts. 41-42) and living-expense presumptions (arts. 31-34) are not computed"
+  IT-IND: "gr-income-tax covers all individuals on the 2026 scale and gr-capital-gains covers capital gains (arts. 41-43), but the 2026 annual minimum-wage base of the self-employed minimum income (art. 28A) is not confirmed on an official page, and living-expense presumptions (arts. 31-34) are not computed"
   IT-CORP: "gr-corporate-income-tax covers entities keeping double-entry books; partnerships and other entities on single-entry books (ITC art. 47), tonnage-tax shipping companies and the bank deferred tax regime of art. 27A are not covered"
   SC: "gr-employee-contributions covers employees and employers for 2026; gr-efka (self-employed) still carries 2025 figures and has not been updated to e-EFKA circular 6/2026"
 ---
@@ -18,7 +18,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | gr-income-tax (partial: 2026 scale for employees, pensioners, the self-employed, rent and capital income; the 2026 art. 28A minimum-wage base is not confirmed; capital gains and living-expense presumptions are not computed) | source-cited draft |
+| IT-IND, individual income tax | gr-income-tax, gr-capital-gains (partial: 2026 scale for employees, pensioners, the self-employed, rent and capital income; capital gains on securities, a whole business and property (property suspended to 31.12.2026); the 2026 art. 28A minimum-wage base is not confirmed; living-expense presumptions are not computed) | source-cited draft |
 | IT-CORP, corporate income tax | gr-corporate-income-tax (partial: double-entry books only; single-entry entities and tonnage-tax shipping are not covered. 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed; partial: 2025 figures) | source-cited draft |
