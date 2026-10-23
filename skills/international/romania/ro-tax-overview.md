@@ -9,6 +9,7 @@ last_updated: 2026-10-23
 version: 0.2
 verified_by: pending
 review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -31,11 +32,11 @@ This is a short map. Each line points to the skill that holds the detail. The la
 | Employer work insurance contribution (CAM) | 2.25% | art. 220^3(1) | ro-payroll-social |
 | Profit tax | 16% of taxable profit | art. 17 | ro-corporate-income-tax |
 | Micro-enterprise tax | 1% of revenue, for a company whose revenue for the previous year was not above the RON equivalent of EUR 100,000, among other conditions | art. 47(1)(c), art. 51(1) | ro-corporate-income-tax |
-| Dividend tax | 16% on dividends distributed from 1 January 2026, to Romanian companies and to resident individuals (final for individuals) | art. 43(2), art. 97(7) | ro-corporate-income-tax, ro-employee-income-tax |
-| VAT | Standard rate 21%; reduced rate 11% | art. 291(1) and (2) | ro-vat-return |
+| Dividend tax | 16% on dividends distributed from 1 January 2026 (for a modified tax year, from its first day in 2026), to Romanian companies and to resident individuals; final for individuals. A Romanian company holding at least 10% for a full year, among other conditions, is exempt. Dividends distributed from 2025 interim accounts stay at 10% | art. 43(2) and (4), art. 97(7); Legea 141/2025 art. VII(1)(a) and (c) and (2) | ro-corporate-income-tax, ro-employee-income-tax |
+| VAT | Standard rate 21%; reduced rate 11%, both since 1 August 2025 (Legea 141/2025, which replaced 19%, 9% and 5%) | art. 291(1) and (2); Legea 141/2025 art. II pt. 42 and art. VII(1) | ro-vat-return |
 | Annual individual return (Declarația unică) for 2026 income | File by 25 May 2027 | art. 122(3) | ro-income-tax, ro-employee-income-tax |
-| Annual profit tax return (D101) for 2026 | File by 25 June 2027 (modified tax year: the 25th of the sixth month after the year ends) | art. 42(1) and (2) | ro-corporate-income-tax |
-| Transfer pricing file | Large taxpayers prepare it each year for transactions with each affiliated person at or above the thresholds, by the profit tax return deadline | ANAF Order 828/2026 art. 2 | ro-transfer-pricing |
+| Annual profit tax return (D101) for 2026 | File by 25 June 2027 (modified tax year: the 25th of the sixth month after the year ends; the taxpayers in art. 41(16) and (17) have their own deadlines) | art. 42(1) and (2) | ro-corporate-income-tax |
+| Transfer pricing file | Large taxpayers prepare it each year, from 2026 transactions, for transactions with each affiliated person at or above the thresholds, by the profit tax return deadline. Small and medium taxpayers prepare it only when ANAF asks during a tax control | ANAF Order 828/2026 art. 2(1), (2) and (7), art. 15(1) | ro-transfer-pricing |
 | EU context | Romania is an EU member state; VAT follows Directive 2006/112/EC | | ro-vat-return |
 
 ## Fines for late filing
@@ -50,6 +51,7 @@ This is a short map. Each line points to the skill that holds the detail. The la
 |---|---|---|
 | Fiscal Code, Legea 227/2015, ANAF consolidated text: art. 16, 17, 42, 43, 47, 51, 59, 64, 65, 97, 122, 138, 156, 220^3, 291 | https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm | 2026-10-23 |
 | Fiscal Procedure Code, Legea 207/2015, ANAF consolidated text: art. 336 | https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm | 2026-10-23 |
-| ANAF Order 828/2026 (transfer pricing file), ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf | 2026-10-23 |
+| ANAF Order 828/2026 (transfer pricing file), Monitorul Oficial nr. 543 of 2 July 2026, ANAF copy: art. 2, 15 | https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf | 2026-10-23 |
+| Legea 141/2025 (Monitorul Oficial nr. 699 of 25 July 2025), ANAF copy: art. II pt. 1, 5 and 42, art. VII | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: nothing beyond the open points listed in each linked skill.
