@@ -20,7 +20,7 @@ verified_by: pending
 
 ## Who this applies to
 
-**Every business (Unternehmer) taxed in Germany files an annual VAT return** for the calendar year, electronically, in which it computes the tax or the surplus itself (§ 18(3) UStG). The tax period is the calendar year (§ 16(1) UStG), or the part of it in which the business traded (§ 16(3)). The return counts as a tax assessment subject to review (§ 168 AO), so no notice follows unless the tax office departs from it.
+**Every business (Unternehmer) taxed in Germany files an annual VAT return** for the calendar year, electronically, in which it computes the tax or the surplus itself (§ 18(3) UStG). The tax period is the calendar year (§ 16(1) UStG), or the part of it in which the business traded (§ 16(3)). The return counts as a tax assessment subject to review (§ 168 AO), so no notice follows unless the tax office departs from it. If the return lowers the tax below the prepayments or shows a refund, that effect starts only when the tax office agrees, which needs no form; the refund is then paid without a separate claim (§ 168 sentences 2 and 3 AO; USt 2 E 2026, lines 124 to 126).
 
 **Who does not file it.**
 - **A small business using § 19 UStG.** § 19(1) sentence 2 switches off the filing duties of § 18(1) to (4) UStG, which includes the annual return. This applies from tax year 2024 (§ 27(39) UStG). Two exceptions keep a return due: the tax office asks for one (§ 149(1) sentence 2 AO), or the business owes tax as a buyer, for example under reverse charge or on an intra-Community acquisition (§ 18(4a) UStG). The 2026 form instructions say the same.
@@ -31,7 +31,7 @@ verified_by: pending
 - Previous year within EUR 25,000: the scheme runs until current-year turnover passes EUR 100,000. The supply that crosses the line is already taxed in full, and from then on normal invoicing, input tax and advance returns apply.
 - First year of business: the limit is EUR 25,000 in the current year, not EUR 100,000. The supply that crosses EUR 25,000 is already taxed.
 
-A small business can give up the scheme by a statement to the tax office up to the last day of February of the second year after the year concerned. The waiver binds for five calendar years (§ 19(3)).
+A small business can give up the scheme by a statement to the tax office up to the last day of February of the second year after the year concerned. The waiver binds for at least five calendar years and can then be revoked from the start of a later calendar year (§ 19(3)).
 
 **The EU small business scheme.** A German business that wants the small business exemption in another member state joins a special reporting procedure at the Bundeszentralamt für Steuern (BZSt), which issues a small-business identification number (§ 19a(1) UStG). Its EU-wide annual turnover must not exceed EUR 100,000 in the previous or the current year. It files a quarterly turnover report with the BZSt within one month after each quarter (§ 19a(3)). It must tell the BZSt within 15 working days if EU turnover passes EUR 100,000; participation ends at that point (§ 19a(4)). A business based elsewhere in the EU can use the German exemption on the same EUR 100,000 test with a small-business number from its home state (§ 19(4)).
 
@@ -47,7 +47,7 @@ A small business can give up the scheme by a statement to the tax office up to t
 | Small business: total turnover, previous year, not exceeded | EUR 25,000 | 2026 (2025 turnover) | § 19(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__19.html |
 | Small business: total turnover, current year, not exceeded | EUR 100,000 | 2026 | § 19(1) UStG |
 | Small business: limit in the first year of business | EUR 25,000 (current year) | 2026 | UStAE 19.1(3); USt 2 A 2026 instructions, line 53 |
-| Small business waiver: binds for | 5 calendar years | 2026 | § 19(3) UStG |
+| Small business waiver: binds for at least | 5 calendar years | 2026 | § 19(3) UStG |
 | EU small business scheme: EU-wide annual turnover, previous and current year | EUR 100,000 | 2026 | § 19a(1) no. 2 UStG, https://www.gesetze-im-internet.de/ustg_1980/__19a.html |
 | EU small business scheme: report after passing EUR 100,000 | Within 15 working days | 2026 | § 19a(4) UStG |
 | EU small business scheme: quarterly turnover report | Within one month after the quarter | 2026 | § 19a(3) UStG |
@@ -82,7 +82,7 @@ A small business can give up the scheme by a statement to the tax office up to t
 
 **Small business: what counts.** Total turnover is the sum of taxable supplies counted on receipts, less exempt financial and insurance supplies and some others listed in § 19(2), and without sales of fixed assets. Supplies on which the customer owes the tax under § 13b count in; services the small business buys under § 13b do not (UStAE 19.2(2)). A small business still owes VAT on imports, intra-Community acquisitions and reverse-charge purchases (UStAE 19.1(1)).
 
-**Moving into standard taxation.** When a small business moves into standard taxation, a supply made in the new year is taxed in full even if the customer paid in advance in the old year. That after-tax goes in line 39 (Kz 317) of the annual return and in Kz 65 of the advance return. A supply made in the small-business year stays tax-free even when it is paid later. Input tax on assets bought while exempt can come back over the § 15a period: the 2026 form lists a change of scheme under the small business rules as a change in circumstances for § 15a (USt 2 A, line 100).
+**Moving into standard taxation.** When a small business moves into standard taxation, a supply made in the new year is taxed in full even if the customer paid in advance in the old year. That after-tax goes in line 39 (Kz 317) of the annual return and in line 46 (Kz 65) of the advance return for the period of the supply (USt 1 E 2026, line 46). A supply made in the small-business year stays tax-free even when it is paid later. Input tax on assets bought while exempt can come back over the § 15a period: the 2026 form lists a change of scheme under the small business rules as a change in circumstances for § 15a (USt 2 A, line 100).
 
 **Cash accounting.** The tax arises when the fee is received. When the method changes, no supply may be taxed twice or escape tax (§ 20 sentence 3). A supply made in a cash-accounting year stays on cash accounting if it is paid after a later switch to accruals (USt 2 A 2026 instructions, line 21).
 
@@ -106,18 +106,18 @@ A small business can give up the scheme by a statement to the tax office up to t
 | Choose monthly filing after a surplus above EUR 9,000 | File the January return by 10 February | § 18(2a) UStG |
 | Small business waiver for 2026 | By 29 February 2028 | § 19(3) UStG |
 | EU small business quarterly report | Within one month after each quarter, to the BZSt | § 19a(3) UStG |
-| One-stop shop return and payment | End of the month after each quarter: 30 April, 31 July, 31 October, 31 January. Payment must have reached the Bundeskasse by then. A nil return is due for a quarter with no sales | § 18j(4) UStG; BZSt OSS page |
+| One-stop shop return and payment | End of the month after each quarter: 30 April, 31 July, 31 October, 31 January. Payment must have reached the Bundeskasse by then. A nil return is due for a quarter with no sales. For Q4 2026 the date is Sunday 31 January 2027: file and pay by Friday 29 January 2027, because no official text moves this date | § 18j(4) UStG; BZSt OSS page |
 
 **How to file.** The annual return goes to the local tax office electronically, authenticated, through ELSTER (§ 18(3) UStG; § 87a(6) AO). Paper only with permission, to avoid hardship. Foreign businesses add Anlage UN. The one-stop shop return goes to the BZSt through the BZSt online portal.
 
-**One-stop shop (§ 18j UStG).** A German business that sells goods at a distance or supplies telecom, broadcasting or electronic services to consumers in other member states charges the customer's country's VAT once the EU-wide total passes EUR 10,000 (§ 3c(4)); the very sale that crosses it is the first one. Instead of registering in each country it can declare that VAT quarterly through the one-stop shop at the BZSt. Registration normally starts on the first day of the quarter after the application. Taking part covers all member states and all such supplies. Corrections to an OSS return within three years go in a later OSS return. Repeated late filing leads to exclusion (§ 18j(6)).
+**One-stop shop (§ 18j UStG).** A business established only in Germany that sells goods at a distance or supplies telecom, broadcasting or electronic services to consumers in other member states charges the customer's country's VAT once the EU-wide total passes EUR 10,000 (§ 3c(4)); the very sale that crosses it is the first one. Instead of registering in each country it can declare that VAT quarterly through the one-stop shop at the BZSt. The notice to take part must reach the BZSt before the quarter from which the scheme is used (§ 18j(1) sentence 3), so registration normally starts on the first day of the quarter after the application. Taking part covers all member states and all such supplies. Corrections to an OSS return within three years go in a later OSS return. Repeated late filing leads to exclusion (§ 18j(6)).
 
 ## Penalties and interest
 
-- **Late annual return.** The tax office may set a late filing surcharge (§ 152(1) AO). It must set one if the return is more than 14 months late, unless the tax is nil, negative or not above the prepayments (§ 152(2) and (3)). The amount is 0.25% per started month of the tax less the prepayments, at least EUR 25 per started month, capped at EUR 25,000 (§ 152(5) sentence 2 and (10)). For the monthly or quarterly advance returns the amount is discretionary instead (§ 152(8)).
+- **Late annual return.** The tax office may set a late filing surcharge (§ 152(1) AO). It must set one if the return is not filed within 14 months after the year ends, for 2026 by 29 February 2028, unless the tax office extended the deadline or the tax is nil, negative or not above the prepayments (§ 152(2) no. 1 and (3)). The amount is 0.25% per started month of the tax less the prepayments, at least EUR 25 per started month, capped at EUR 25,000 (§ 152(5) sentence 2 and (10)). For the monthly or quarterly advance returns the amount is discretionary instead (§ 152(8)).
 - **Late payment.** 1% per started month on the overdue tax rounded down to a multiple of EUR 50 (§ 240(1) AO). This runs on a late closing payment and on late advance payments.
 - **Interest.** Where an assessment differs from the prepayments, the difference carries 0.15% for each full month from 1 April 2028 for tax year 2026 (§ 233a(2) AO, 15 months after the year end; § 238(1a) AO).
-- **Fines.** Not paying an advance payment, a closing balance or an OSS payment in full and on time is an administrative offence with a fine up to EUR 30,000 (§ 26a(1) and (3) UStG). Not issuing a required invoice or not keeping invoices for eight years: up to EUR 5,000. Not keeping payment records where § 14b(1) sentence 5 requires it: up to EUR 1,000.
+- **Fines.** Not paying an advance payment, a closing balance or an OSS payment in full and on time is an administrative offence with a fine up to EUR 30,000 (§ 26a(1) and (3) UStG). Deliberately or recklessly not issuing a required invoice, or not keeping invoices for eight years: up to EUR 5,000. Deliberately or recklessly not keeping, for two years, the invoices and payment records that § 14b(1) sentence 5 requires: up to EUR 1,000 (§ 26a(2) nos. 1 to 3 and (3)).
 - **Correcting an error.** An error in an advance return can be corrected in the annual return, as in Example 1. Deliberate under-declaration is tax evasion and outside this skill.
 
 ## Cross-border points
@@ -126,7 +126,7 @@ A small business can give up the scheme by a statement to the tax office up to t
 - **EU businesses using the German small business exemption** need the small-business number from their home state and EU turnover within EUR 100,000 (§ 19(4)). They waive it in their home state, not in Germany (§ 19(5)).
 - **German businesses using another state's small business exemption** go through the BZSt procedure in § 19a, with the quarterly report and the 15-working-day notice above.
 - **One-stop shop.** Sales declared through the OSS are taxed in the customer's state and are not part of the German output tax.
-- **Reverse charge on services from abroad** applies to a small business too, which then must file a return for that period (§ 18(4a)).
+- **Reverse charge on services from abroad** applies to a small business too, which then must file an advance return for that period and an annual return for the year (§ 18(4a)).
 
 ## Worked examples
 
@@ -167,9 +167,9 @@ expected:
 
 ### Example 2: A translator leaves the small business scheme and uses cash accounting
 
-Lena is a self-employed translator, a liberal profession under § 18(1) no. 1 EStG. In 2025 she used § 19. Her total turnover for 2025 was EUR 31,200. That is above EUR 25,000 but below EUR 100,000, so 2025 stayed tax-free and she filed no VAT return for it. Because 2025 passed EUR 25,000, every supply she makes from 1 January 2026 is taxed at 19%. Her 2025 turnover is far below EUR 800,000, and she is a liberal professional, so the tax office can let her tax receipts (§ 20 nos. 1 and 3); she applies for it.
+Lena is a self-employed translator, a liberal profession under § 18(1) no. 1 EStG. Her 2024 total turnover was within EUR 25,000, so in 2025 she used § 19. Her total turnover for 2025 was EUR 31,200, counted on receipts and including the advance below (UStAE 19.2(1)). That is above EUR 25,000 but below EUR 100,000, so 2025 stayed tax-free and she filed no VAT return for it. Because 2025 passed EUR 25,000, every supply she makes from 1 January 2026 is taxed at 19%. Her 2025 turnover is far below EUR 800,000, and she is a liberal professional, so the tax office can let her tax receipts (§ 20 nos. 1 and 3); she applies for it.
 
-Her 2025 tax was nil, so she files quarterly (§ 18(2)). In Q1 2026 she receives EUR 8,925 for 2026 work (EUR 7,500 net plus EUR 1,425 VAT) and EUR 1,800 for a December 2025 job. The December job was supplied while she was exempt, so it carries no VAT. A client paid her EUR 2,000 in November 2025 as an advance for a job she delivered in February 2026. The supply is in 2026, so the advance is taxed now: 2,000 x 19 / 119 = EUR 319.33, in Kz 65 of the advance return and line 39 (Kz 317) of the annual return. Her input tax on 2026 invoices for the quarter is EUR 380. Q1 payment: 1,425 + 319.33 - 380 = EUR 1,364.33, due Friday 10 April 2026. She must already be able to receive e-invoices. For 2026 supplies she may still send paper or PDF invoices to German business clients until 31 December 2026 (§ 27(38) no. 1); for 2027 supplies the relief continues to 31 December 2027 as long as her 2026 total turnover stays within EUR 800,000 (no. 2).
+Her 2025 tax was nil, so she files quarterly (§ 18(2)). In Q1 2026 she receives EUR 8,925 for 2026 work (EUR 7,500 net plus EUR 1,425 VAT) and EUR 1,800 for a December 2025 job. The December job was supplied while she was exempt, so it carries no VAT. A client paid her EUR 2,000 in November 2025 as an advance for a job she delivered in February 2026. The supply is in 2026, so the advance is taxed in the period of the supply (USt 1 E 2026, line 46; USt 2 E 2026, line 39): 2,000 x 19 / 119 = EUR 319.33, in Kz 65 of the advance return and line 39 (Kz 317) of the annual return. Her input tax on 2026 invoices for the quarter is EUR 380. Q1 payment: 1,425 + 319.33 - 380 = EUR 1,364.33, due Friday 10 April 2026. She must already be able to receive e-invoices. For 2026 supplies she may still send paper invoices, or PDF invoices with the client's consent, to German business clients until 31 December 2026 (§ 27(38) no. 1); for 2027 supplies the relief continues to 31 December 2027 as long as her 2026 total turnover stays within EUR 800,000 (no. 2).
 
 ```oa-check
 name: Translator, out of § 19 from 2026 after EUR 31,200 in 2025, cash accounting, Q1 2026
@@ -227,15 +227,19 @@ expected:
 | UStG § 26a (fines) | https://www.gesetze-im-internet.de/ustg_1980/__26a.html | 2026-10-23 |
 | UStG § 27(38) and (39) (e-invoice transition; small business filing from 2024) | https://www.gesetze-im-internet.de/ustg_1980/__27.html | 2026-10-23 |
 | UStDV §§ 44, 46, 47, 48 | https://www.gesetze-im-internet.de/ustdv_1980/__44.html | 2026-10-23 |
+| AO § 168 (return as an assessment; refunds need consent) | https://www.gesetze-im-internet.de/ao_1977/__168.html | 2026-10-23 |
 | AO § 108 (deadline on a weekend) | https://www.gesetze-im-internet.de/ao_1977/__108.html | 2026-10-23 |
 | AO § 149 (filing deadlines) | https://www.gesetze-im-internet.de/ao_1977/__149.html | 2026-10-23 |
 | AO § 152 (late filing surcharge) | https://www.gesetze-im-internet.de/ao_1977/__152.html | 2026-10-23 |
-| AO §§ 233a, 238 (interest) | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-10-23 |
+| AO § 233a (interest period) | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-10-23 |
+| AO § 238 (interest rate) | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-10-23 |
+| EGAO Art. 97 § 36 (extended deadlines end with tax year 2024) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-23 |
 | AO § 240 (late payment surcharge) | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-23 |
 | BMF letter of 29 December 2025, 2026 annual VAT return form USt 2 A and instructions USt 2 E | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-muster-USt-erklaerung-2026.pdf?__blob=publicationFile&v=5 | 2026-10-23 |
-| VAT Application Decree (UStAE) as at 31 December 2025, sections 19.1 and 19.2 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
+| BMF letter of 29 December 2025, 2026 advance return form USt 1 A and instructions USt 1 E (line 46, Kz 65) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
+| VAT Application Decree (UStAE) as at 31 December 2025, sections 19.1, 19.2 and 19.7 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
 | BMF FAQ on e-invoicing (receiving from 1 January 2025) | https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html | 2026-10-23 |
 | BZSt, One-Stop-Shop EU scheme (deadlines, payment, nil returns) | https://www.bzst.de/DE/Unternehmen/Umsatzsteuer/One-Stop-Shop_EU/one_stop_shop_eu_node.html | 2026-10-23 |
 | ELSTER, the filing portal | https://www.elster.de | 2026-10-23 |
 
-Not yet confirmed: whether the OSS deadline for Q4 2026 (31 January 2027, a Sunday) moves to the next working day, since the BZSt page gives fixed dates and does not mention § 108(3) AO; the BMF letter of 18 March 2025 on § 19 may have been replaced by a later letter, so UStAE 19.1 was read as consolidated at 31 December 2025 only; whether a former small business's after-tax on advances received before the switch goes in Kz 65 of the 2026 advance return (the annual form puts it in line 39, Kz 317; the advance-return box was taken from the germany-vat-return skill's reading of the 2026 UStVA form).
+Not yet confirmed: whether the one-stop shop deadline for Q4 2026 (Sunday 31 January 2027) moves to the next working day under § 108(3) AO; neither § 18j UStG, UStAE 18j.1 nor the BZSt page says so, so the skill tells the reader to file and pay by Friday 29 January 2027.
