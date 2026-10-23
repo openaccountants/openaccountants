@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by: {}
 partial:
   IT-IND: cz-income-tax covers the self-employed (OSVČ) only, tax year 2025
-  SC: cz-social-health covers the self-employed (OSVČ) only, not employee or employer contributions
 ---
 
 # Czech Republic: tax pack
