@@ -40,7 +40,7 @@ A self-employed person is not insured against unemployment, is not compulsorily 
 | Full rate, self-employed | 10.0%: AHV 8.1%, IV 1.4%, EO 0.5%; no ceiling | 2026 | [sheet 2.02, no. 5](https://www.ahv-iv.ch/p/2.02.d); [AHVG art. 8](https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de); [IVG art. 3](https://www.fedlex.admin.ch/eli/cc/1959/827_857_845/de); [EOG art. 27](https://www.fedlex.admin.ch/eli/cc/1952/1021_1046_1050/de) |
 | Full rate applies from | Income of CHF 60,500 | 2026 | [sheet 2.02, no. 6](https://www.ahv-iv.ch/p/2.02.d); [AHVV art. 21](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
 | Sliding scale (sinkende Beitragsskala) | CHF 10,100 to under 60,500, total rate 5.371% to 9.321% (full table below) | 2026 | [sheet 2.02, no. 6](https://www.ahv-iv.ch/p/2.02.d); [AHVV art. 21](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
-| Minimum contribution | CHF 530 a year (AHV 435, IV 70, EO 25) on income under CHF 10,100 | 2026 | [sheet 2.02, no. 6](https://www.ahv-iv.ch/p/2.02.d); [AHVG art. 8 para. 2](https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de) |
+| Minimum contribution | CHF 530 a year in total (AHV part CHF 435) on income under CHF 10,100 | 2026 | [sheet 2.02, no. 6](https://www.ahv-iv.ch/p/2.02.d); [AHVG art. 8 para. 2](https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de) |
 | Minimum already paid on wages | Then only the lowest scale rate, 5.371%, on self-employed income under CHF 10,100 (on request) | 2026 | [sheet 2.02, no. 6](https://www.ahv-iv.ch/p/2.02.d) |
 | Small side income | Up to CHF 2,500 a year from a side activity: contributions only on request | 2026 | [AHVV art. 19](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
 | Rounding | Income rounded down to the next CHF 100; own capital rounded up to the next CHF 1,000 | 2026 | [AHVG art. 8 para. 1](https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de); [AHVV art. 18 para. 2](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
@@ -100,7 +100,7 @@ The rate in a band applies to the whole income, not just the slice inside the ba
 3. Deduct interest on the own capital invested in the business at 31 December, rounded up to the next CHF 1,000, at the rate for that year (AHVG art. 9 para. 2 let. f; AHVV art. 18 para. 2). The rate is the yearly average yield of CHF bonds of private Swiss borrowers (SNB statistics), rounded to the nearest half percent. For 2025 it is 1% (BSV Mitteilung Nr. 504). The BSV announces the 2026 rate in January 2027.
 4. Past reference age, deduct the CHF 16,800 allowance unless waived (AHVV art. 6quater).
 5. Round down to the next CHF 100 (AHVG art. 8 para. 1).
-6. Apply the rate for the band the income falls in, or the CHF 530 minimum below CHF 10,100. Past reference age, income under CHF 10,100 after the allowance is charged at the lowest rate (5.371%), not the minimum (AHVV art. 21 para. 2; sheet 2.02, no. 17).
+6. Apply the rate for the band the income falls in, or the CHF 530 minimum below CHF 10,100. Past reference age, income under CHF 10,100 after the allowance is charged at the lowest rate (5.371%), but never more than the CHF 530 minimum (AHVV art. 21 para. 2; sheet 2.02, no. 17).
 
 **Not part of the base for the fund:** EO maternity, paternity and service allowances and IV, ALV and military daily allowances. The fund deducts 5.3% from these directly, so they must be shown separately from business income in the tax return ([sheet 2.02](https://www.ahv-iv.ch/p/2.02.d), no. 18).
 
@@ -151,7 +151,7 @@ Contributions count as paid when they reach the fund's account, not when the pay
 
 A self-employed graphic designer, aged 38, closes her 2026 accounts on 31 December. Her 2026 tax assessment shows net income from self-employment of CHF 41,800, after she deducted CHF 3,200 of own AHV/IV/EO contributions. She has no own capital in the business.
 
-The fund adds back the CHF 3,200: 41,800 + 3,200 = CHF 45,000. Rounded down to the next CHF 100 it stays CHF 45,000. It falls in the band CHF 43,000 to under 45,500, so the total rate is 7.222%. Her 2026 contributions are 45,000 x 7.222% = CHF 3,249.90, plus the fund's administration cost of up to 5% of that.
+The fund adds back the CHF 3,200: 41,800 + 3,200 = CHF 45,000. Rounded down to the next CHF 100 it stays CHF 45,000. The law's method, grossing the reported income up to 100% at the band's rate (AHVG art. 9 para. 4), gives the same result here: 41,800 x 100 / (100 - 7.222) = CHF 45,053.79, rounded down to CHF 45,000. It falls in the band CHF 43,000 to under 45,500, so the total rate is 7.222%. Her 2026 contributions are 45,000 x 7.222% = CHF 3,249.90, plus the fund's administration cost of up to 5% of that.
 
 Her Akontobeiträge for 2026 were set on the CHF 40,000 of her last decision: 40,000 x 6.728% = CHF 2,691.20 a year, CHF 672.80 a quarter, each paid by the 10th day after the quarter. The final decision bills the difference, CHF 558.70, payable within 30 days of the invoice. The Akonto reached about 83% of the final amount, so the 25% shortfall rule does not apply and no interest runs if she pays the invoice on time.
 
@@ -168,6 +168,7 @@ inputs:
 steps:
   - income_before_contributions: assessed_net_income + own_contributions_deducted
   - contribution_income: floor(income_before_contributions / 100) * 100
+  - grossed_up_at_band_rate: floor(assessed_net_income * 100 / (100 - rate_43000_to_45500_pct) / 100) * 100
   - final_contributions: contribution_income * rate_43000_to_45500_pct / 100
   - akonto_year: akonto_income * rate_38000_to_40500_pct / 100
   - akonto_quarter: akonto_year / 4
@@ -177,6 +178,7 @@ steps:
 expected:
   income_before_contributions: 45000.00
   contribution_income: 45000.00
+  grossed_up_at_band_rate: 45000.00
   final_contributions: 3249.90
   akonto_year: 2691.20
   akonto_quarter: 672.80
@@ -251,6 +253,7 @@ expected:
 | AHVG, SR 831.10, version of 1 January 2026, art. 3, 8, 9, 9bis, 10, 14, 15, 16, 34ter (and the version of 1 January 2027, art. 8) | https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de | 2026-10-23 |
 | AHVV, SR 831.101, version of 1 January 2026, art. 3, 6ter, 6quater, 17 to 25, 27, 28, 28bis, 34 to 34b, 41bis, 42 (and the version of 1 January 2027, art. 21) | https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de | 2026-10-23 |
 | IVG, SR 831.20, version of 1 January 2026, art. 3 | https://www.fedlex.admin.ch/eli/cc/1959/827_857_845/de | 2026-10-23 |
+| IVV, SR 831.201, version of 1 January 2025, art. 1bis (IV part of the sliding scale) | https://www.fedlex.admin.ch/eli/cc/1961/29_29_29/de | 2026-10-23 |
 | EOG, SR 834.1, version of 1 June 2026, art. 27 | https://www.fedlex.admin.ch/eli/cc/1952/1021_1046_1050/de | 2026-10-23 |
 | BVG, SR 831.40, version of 1 January 2025 (current), art. 4, 8, 44 | https://www.fedlex.admin.ch/eli/cc/1983/797_797_797/de | 2026-10-23 |
 | BVV 3, SR 831.461.3, version of 1 January 2025 (current), art. 7, 7a | https://www.fedlex.admin.ch/eli/cc/1985/1778_1778_1778/de | 2026-10-23 |
@@ -259,4 +262,4 @@ expected:
 | BSV, Merkblatt Entsendung Schweiz-EU | https://www.bsv.admin.ch/dam/de/sd-web/nj5pRW599A3W/entsendungsmerkblatt-ch-eu.pdf | 2026-10-23 |
 | ESTV, Kreisschreiben Nr. 18a, Steuerliche Behandlung von Vorsorgebeiträgen und -leistungen der Säule 3a, 22 December 2025 | https://www.estv.admin.ch/dam/de/sd-web/yQgKmvu80LEr/dbst-ks-2025-1-018a-dv-de.pdf | 2026-10-23 |
 
-Not yet confirmed: the interest rate on own capital for contribution year 2026 (published by the BSV in January 2027; example 2 assumes the 2025 rate of 1%); the minimum contribution and non-employed table for 2027 (only the 2027 sliding-scale limits were read); how the 13th AHV pension will be financed after 2026; each fund's administration cost rate (up to 5%); the sliding-scale rate split between IV and EO within each band (the sheet gives only the total).
+Not yet confirmed: the interest rate on own capital for contribution year 2026 (published by the BSV in January 2027; example 2 assumes the 2025 rate of 1%); the minimum contribution and non-employed table for 2027 (only the 2027 sliding-scale limits were read); how the 13th AHV pension will be financed after 2026; each fund's administration cost rate (up to 5%); the EO part of each sliding-scale band (the sheet gives only the total; the IV part is in IVV art. 1bis); the split of the CHF 530 minimum between IV and EO for the self-employed (AHVG art. 8 para. 2 sets only the AHV part, CHF 435).

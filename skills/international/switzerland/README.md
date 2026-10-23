@@ -6,7 +6,7 @@ covered_by:
   SC: ch-ahv-iv
   XB: ch-cross-border
 partial:
-  IT-IND: "ch-cantonal-tax is on tax year 2025 with approximate Zurich multipliers (canton 100%, church about 11%) that differ from the ESTV 2026 table (canton 95%, church 10%); needs a 2026 rewrite. ch-federal-income-tax is also still on tax year 2025"
+  IT-IND: "ch-cantonal-tax and ch-federal-income-tax are on tax year 2025, and ch-cantonal-tax uses approximate 2025 cantonal and communal multipliers; both need a 2026 rewrite from fedlex and ESTV"
 ---
 
 # Switzerland: tax pack
