@@ -32,7 +32,7 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
   - one person controls the other, both are controlled by a third person, or both jointly control a third person (items 3(g) to (i)). Control means more than half the votes, the power to appoint more than half of a governing body, or decisive influence by any other means (para. 1, item 4);
   - commercial agent and principal; donor and recipient (items 3(k) and (l));
   - persons who take part directly or indirectly in management, control or capital so that they can agree non-standard terms (item 3(m));
-  - a resident and a foreign counterparty registered outside the EU in a state whose tax on the income is more than 60% lower than Bulgarian tax, where that state refuses or is unable to exchange information under a treaty in force (item 3(n)). Owners of both sides are related too (item 3(o)).
+  - a resident and a foreign counterparty if both of these hold: the counterparty is registered outside the EU in a state whose tax on the income from the deals is more than 60% lower than Bulgarian tax, and that state refuses or is unable to exchange information on the deals although a tax treaty is in force (item 3(n)). The first test is met unless the Bulgarian party proves that the counterparty pays tax that is not a preferential regime, or that it sold the goods or performed the services on the local market. Owners of both sides are related too (item 3(o)).
 - **Permanent establishments.** Chapter 8a applies to transfers between a Bulgarian place of business of a foreign company and the rest of that company abroad (DOPK Article 71zh(1)).
 - **Sole traders.** Sole traders taxed under Article 26 of the Personal Income Tax Act are in the documentation rules (DOPK Article 71b(1)).
 - **Who must prepare a local file (DOPK Article 71b).** A resident company, a foreign company with a Bulgarian place of business, or a sole trader with controlled transactions. Excluded:
@@ -58,7 +58,7 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
 | Comparable search refresh | at least every three years; financial data of comparables every year | 2026 | https://lex.bg/laws/ldoc/2135514513 (DOPK Art. 71e(3)) |
 | Country-by-country report group threshold | consolidated revenue above EUR 750,000,000 in the prior year | 2026 | https://lex.bg/laws/ldoc/2135514513 (DOPK Art. 143kh(6)) |
 | Interquartile range, adjustment point | first to third quartile; adjust to the median when no point fits better | 2026 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238785 (Ordinance N-3 Arts. 20(6), 21(2)) |
-| Withholding tax on dividends, including hidden profit distribution, to non-residents | 5% | 2026 | https://lex.bg/laws/ldoc/2135540562 (ZKPO Arts. 194, 200(1), para. 1 item 4) |
+| Withholding tax on dividends, including hidden profit distribution, paid to foreign companies | 5% | 2026 | https://lex.bg/laws/ldoc/2135540562 (ZKPO Arts. 194, 200(1), para. 1 item 4) |
 
 ## The taxable base
 
@@ -66,7 +66,7 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
 
 **Methods (DOPK para. 1, item 10; Ordinance N-3, Article 1).** Comparable uncontrolled price, resale price, cost plus, transactional net margin and transactional profit split. Since 2026 a taxpayer may use another method if none of the five is suitable and the other method gives a more reliable result (Ordinance N-3, Article 14(8)). The most appropriate method is chosen on the facts (Article 14(2) and (3)). On a tie, comparable uncontrolled price beats the others, and a traditional method beats a profit method (Article 14(5)). Ordinance N-3 is to be read in line with the OECD Transfer Pricing Guidelines (Ordinance N-3, para. 2). The NRA says its old Transfer Pricing Manual still applies only where it does not contradict the new rules.
 
-**Accurate delineation first.** The analysis has two stages: describe the actual transaction by its economic substance, then compare it with uncontrolled deals (Ordinance N-3, Article 3). Where the contract is missing, unclear or not followed, conduct decides (Article 5(2)). A party that assumes a risk by contract but does not control it, or cannot afford it, is treated as not bearing it (Article 8(5)).
+**Accurate delineation first.** The analysis has two stages: describe the actual transaction by its economic substance, then compare it with uncontrolled deals (Ordinance N-3, Article 3). Where the contract is missing, unclear or not followed, conduct decides (Article 5(2)). A party that assumes a risk by contract but does not control it, or lacks the financial capacity to bear it, is treated as not bearing it; the risk is allocated to the related party that controls it and can bear it (Article 8(5)).
 
 **Range and adjustment (Ordinance N-3, Articles 20 and 21).**
 - Two or more comparables form a range. When comparability defects remain, the range is narrowed, for example to the interquartile range (first to third quartile) (Article 20(4) to (6)).
@@ -77,7 +77,7 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
 
 **Financial transactions (Ordinance N-3, Articles 53 and 54).** A related-party loan can be recharacterised in whole or part after a full analysis (Article 53(2)). The debtor's credit rating drives the rate. The parent's consolidated rating may be used in limited cases (Article 54(3)). A bank "comfort letter" on a loan that was never made is not a reliable rating (Article 54(4)). Interest-free loans and loans at off-market rates are also listed as tax evasion in ZKPO Article 16(2)(3), and Article 16 applies even between unrelated parties.
 
-**Hidden profit distribution.** Amounts unrelated to the business, or above normal market levels, accrued, paid or distributed in any form to shareholders, partners or persons related to them are a hidden profit distribution (ZKPO para. 1, item 5(a)). Interest on a loan that meets three of four equity-like tests (loan above equity, no fixed term, payment tied to profit, subordinated) is also a hidden distribution (item 5(b)). Such expenses are not deductible (ZKPO Article 26, item 11). A hidden distribution is a dividend (para. 1, item 4(c)), so 5% withholding tax applies when the recipient is a non-resident (Articles 194 and 200(1)). The EU and EEA parent exemption does not cover a hidden distribution (Article 194(3), item 3).
+**Hidden profit distribution.** Amounts unrelated to the business, or above normal market levels, accrued, paid or distributed in any form to shareholders, partners or persons related to them are a hidden profit distribution (ZKPO para. 1, item 5(a)). Interest on a loan that meets three of four equity-like tests (loan above equity, no fixed term, payment tied to profit, subordinated) is also a hidden distribution (item 5(b)). Such expenses are not deductible (ZKPO Article 26, item 11). A hidden distribution is a dividend (para. 1, item 4(c)), so 5% withholding tax applies when the recipient is a foreign company (Articles 194(1), item 1, and 200(1)). A non-resident individual shareholder is taxed under the Personal Income Tax Act, which this skill does not cover. The EU and EEA parent exemption does not cover a hidden distribution (Article 194(3), item 3).
 
 **Burden of proof.** A taxpayer dealing with related parties must prove the market price and any reason for departing from it, including with evidence from abroad (DOPK Article 116(2)). If it does not, the revenue officer sets the market price from available information (Article 116(4)), including exchange prices and statistical sources (Article 116(5)). The officer takes the taxpayer's own analysis into account only if it was presented in time and covers the points in Ordinance N-3, Article 55.
 
@@ -86,7 +86,7 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
 | What | When | Source |
 |---|---|---|
 | Annual CIT return (with the annual activity report) | 1 March to 30 June of the following year | ZKPO Art. 92(2) and (3) |
-| Local file prepared | by 30 June of the following year | DOPK Art. 71d(1) |
+| Local file prepared | by 30 June of the following year (the NRA transfer pricing page still says 31 March; the law has said 30 June since State Gazette 104/2020, in force 1 January 2021, and the law governs) | DOPK Art. 71d(1) |
 | Local file updated after a corrective return under ZKPO Art. 75(3) | within 14 days of the corrective return, and no later than 30 September | DOPK Art. 71d(2) |
 | Master file available (for the ultimate parent's year starting on or after 1 January of the local file year) | within 12 months after the local file deadline | DOPK Art. 71d(3) |
 | Documentation produced to the NRA | on request during a tax audit, within the period the officer sets | DOPK Arts. 71e(1), 278a(5) |
@@ -99,8 +99,8 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
 - **Master file (Article 71g).** Group structure, value chain for the top five products and any above 5% of group revenue, transfer pricing policy, main service agreements, intangibles, financing and the consolidated accounts. A group member that must prepare a local file must also *have* a master file, prepared by the ultimate parent or another group member (Article 71b(10)).
 - **Language and format.** Not yet confirmed. The DOPK text read does not state a language for the local file.
 - **Country-by-country reporting.** A Bulgarian ultimate parent of a group with consolidated revenue above EUR 750,000,000 in the prior year files the CbC report (Articles 143kh(1), (2) and (6)). A Bulgarian group member files in place of a foreign parent when the parent's state does not require a report, has no qualifying exchange agreement, or is in systemic failure (Article 143ts(1)). Every Bulgarian group member files the Article 143sh notification. The NRA uses CbC data for risk assessment only and cannot set market prices from it (Article 143shch(2)).
-- **Advance pricing agreements.** Bulgaria has no APA procedure. DOPK transitional para. 59(5) says the NRA only receives APA information from other member states "until there is a legal basis" to issue APAs.
-- **Disputes.** The EU tax dispute resolution procedure (Directive 2017/1852) is in DOPK Articles 134a onwards, with the Minister of Finance as competent authority (Article 134a(3)). Treaty mutual agreement procedures follow the treaty.
+- **Advance pricing agreements.** Bulgaria has no APA procedure. Para. 59(5) of the transitional provisions of the DOPK amending act (State Gazette 63/2017) says the NRA only receives APA information from other member states "until there is a legal basis" to issue APAs.
+- **Disputes.** The EU tax dispute resolution procedure (Directive 2017/1852) is in DOPK Articles 134a onwards, with the Minister of Finance as competent authority (Article 134b(3)). Treaty mutual agreement procedures follow the treaty.
 
 ## Penalties and interest
 
@@ -112,18 +112,19 @@ For the corporate tax computation, the 10% rate, the Article 43 thin capitalisat
 | Repeat breach of the three above | double | DOPK Art. 278a(8) |
 | CbC report not filed in time | BGN 100,000 to 200,000 = EUR 51,129.19 to 102,258.38 (repeat BGN 200,000 to 300,000 = EUR 102,258.38 to 153,387.56) | DOPK Art. 278a(1) |
 | CbC report with false or incomplete data | BGN 50,000 to 150,000 = EUR 25,564.59 to 76,693.78 (repeat BGN 100,000 to 250,000 = EUR 51,129.19 to 127,822.97) | DOPK Art. 278a(2) |
+| Notification under Art. 143ts(2) or 143ch(5) missing | BGN 10,000 = EUR 5,112.92 (repeat BGN 15,000 = EUR 7,669.38) | DOPK Art. 278a(3) |
 | CbC notification under Art. 143sh missing | BGN 50,000 to 150,000 = EUR 25,564.59 to 76,693.78 (repeat BGN 100,000 to 200,000 = EUR 51,129.19 to 102,258.38) | DOPK Art. 278a(4) |
 | Hidden profit distribution not shown in the CIT return | 20% of the hidden distribution | ZKPO Art. 267 |
-| Return understating tax | BGN 500 to 3,000 = EUR 255.65 to 1,533.88 (repeat BGN 1,000 to 6,000) | ZKPO Art. 261 |
+| Return understating tax | BGN 500 to 3,000 = EUR 255.65 to 1,533.88 (repeat BGN 1,000 to 6,000 = EUR 511.29 to 3,067.75) | ZKPO Art. 261 |
 
 - **Additional tax.** An adjustment adds 10% CIT on the increase in the base (ZKPO Article 20).
-- **Late-payment interest.** Unpaid tax carries statutory interest. From 1 January 2026 the annual rate is the ECB main refinancing rate in force on 1 January or 1 July, plus 8 percentage points (Council of Ministers Decree 347 of 29 December 2025, as stated by the NRA). No interest runs on interest or on fines.
+- **Late-payment interest.** Unpaid tax carries statutory interest. From 1 January 2026 the annual rate is the ECB main refinancing rate in force on 1 January or 1 July, plus 8 percentage points (Council of Ministers Decree 347 of 29 December 2025, State Gazette 115/2025, amending Decree 426 of 2014, as stated by the NRA). Until 31 December 2025 the rate was the BNB base rate plus 10 points. No interest runs on interest or on fines.
 - **Time limit.** No assessment proceeding can start after 5 years from the end of the year in which the return was filed or due (DOPK Article 109(1)). Public receivables expire after 5 years from 1 January of the year after payment fell due (DOPK Article 171(1)).
 
 ## Cross-border points
 
 - **Documentation is cross-border only.** A company whose controlled transactions are all with Bulgarian parties has no local file duty (DOPK Article 71b(2)(4)), though Article 15 still applies to it.
-- **Hidden distributions to foreign shareholders** are dividends and bear 5% withholding tax (ZKPO Articles 194 and 200(1)). The EU and EEA exemption does not apply to them (Article 194(3), item 3). A treaty can lower the rate; check the treaty for the shareholder's state. Withholding on interest, royalties and fees is in bg-corporate-income-tax.
+- **Hidden distributions to foreign corporate shareholders** are dividends and bear 5% withholding tax (ZKPO Articles 194 and 200(1)). The EU and EEA exemption does not apply to them (Article 194(3), item 3). A treaty can lower the rate; check the treaty for the shareholder's state. Withholding on interest, royalties and fees is in bg-corporate-income-tax.
 - **Low-tax counterparties.** A foreign party in a non-EU state whose tax is more than 60% below Bulgarian tax, and which does not exchange information, is related to the Bulgarian party whatever the ownership (DOPK para. 1, item 3(n)).
 - **Corresponding adjustments.** The DOPK text read has no rule for a unilateral downward adjustment in Bulgaria after a foreign upward adjustment. Relief runs through the treaty MAP or the EU dispute procedure (DOPK Articles 134a onwards).
 - **Permanent establishments.** Transfers between a Bulgarian branch and its head office are priced and documented as controlled transactions (DOPK Article 71zh(1)).
@@ -168,7 +169,7 @@ expected:
 
 ### Example 2: Contract manufacturer below the interquartile range
 
-A Bulgarian contract manufacturer sells its whole output to its Austrian parent. Its 2026 total costs are EUR 10,000,000 and its operating profit is EUR 200,000, a net cost plus of 2%. The tested party is the Bulgarian company and the method is TNMM. A benchmark of independent manufacturers gives an interquartile range of 4.0% to 8.5% with a median of 6.0%. The 2% result is outside the range. No point in the range fits the facts better, so the result is moved to the median (Ordinance N-3, Article 21(2)(2)). Arm's length profit is EUR 600,000 (10,000,000 x 6%). The base rises by EUR 400,000 and the extra CIT at 10% is EUR 40,000 (ZKPO Articles 15 and 20). Late-payment interest runs from the CIT due date. If the NRA also treats the shortfall as a hidden profit distribution to the parent, 5% withholding (EUR 20,000) and the 20% Article 267 sanction (EUR 80,000) are on top; whether underpricing of sales falls within ZKPO para. 1, item 5(a) is not yet confirmed, so ask before relying on either figure.
+A Bulgarian contract manufacturer sells its whole output to its Austrian parent. Its 2026 total costs are EUR 10,000,000 and its operating profit is EUR 200,000, a net cost plus of 2%. The tested party is the Bulgarian company and the method is TNMM. A benchmark of independent manufacturers gives an interquartile range of 4.0% to 8.5% with a median of 6.0%. The 2% result is outside the range. No point in the range fits the facts better, so the result is moved to the median (Ordinance N-3, Article 21(2)(2)). Arm's length profit is EUR 600,000 (10,000,000 x 6%). The base rises by EUR 400,000 and the extra CIT at 10% is EUR 40,000 (ZKPO Articles 15 and 20). Late-payment interest runs from the CIT due date. Whether underpriced sales to the parent are also a hidden profit distribution (with 5% withholding and the 20% Article 267 sanction) is not yet confirmed; see the end of this skill.
 
 ```oa-check
 name: Example 2, TNMM net cost plus 2% adjusted to the 6% median
@@ -184,16 +185,12 @@ steps:
   - arm_length_profit: total_costs * median / 100
   - adjustment: arm_length_profit - operating_profit
   - extra_cit: adjustment * 0.10
-  - wht_if_hidden: adjustment * 0.05
-  - sanction_if_hidden: adjustment * 0.20
 expected:
   ncp_pct: 2.0
   below_q1: 2.0
   arm_length_profit: 600000
   adjustment: 400000
   extra_cit: 40000
-  wht_if_hidden: 20000
-  sanction_if_hidden: 80000
 ```
 
 ## Ask the client first
@@ -210,10 +207,12 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | lex.bg: Corporate Income Tax Act (ZKPO), consolidated to State Gazette 55/2026, Arts. 15, 16, 20, 26, 43, 43a, 92, 194, 200, 261, 262, 267, para. 1 items 4 and 5 | https://lex.bg/laws/ldoc/2135540562 | 2026-10-23 |
-| lex.bg: Tax-Insurance Procedure Code (DOPK), consolidated to State Gazette 85/2026, Arts. 71a to 71zh, 109, 116, 134a, 143u to 143shch, 171, 175, 278a, Additional Provisions para. 1 items 3, 4, 8, 10, transitional para. 59 | https://lex.bg/laws/ldoc/2135514513 | 2026-10-23 |
+| lex.bg: Tax-Insurance Procedure Code (DOPK), consolidated to State Gazette 85/2026, Arts. 71a to 71zh, 109, 116, 134a, 134b, 143u to 143shch, 171, 175, 278a, Additional Provisions para. 1 items 3, 4, 8, 10, para. 59 of the transitional provisions to the State Gazette 63/2017 amending act | https://lex.bg/laws/ldoc/2135514513 | 2026-10-23 |
 | State Gazette 96/2025: Ordinance N-3 of 7 November 2025 on the market price methods (in force 1 January 2026) | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238785 | 2026-10-23 |
 | State Gazette 70/2024: Euro Introduction Act, Arts. 11 to 13 and para. 34 (DOPK amounts in euro) | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=224950 | 2026-10-23 |
 | NRA: Transfer pricing | https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/transferno-tzenoobrazuvane | 2026-10-23 |
 | NRA: Overdue liabilities (statutory interest from 2026) | https://nra.bg/wps/portal/nra/delayed.payments | 2026-10-23 |
 
-Not yet confirmed: the NRA transfer pricing page says the local file is due by 31 March, but DOPK Article 71d(1) has said 30 June since 2021, and this skill follows the law; the euro figures for leva amounts still printed in DOPK Articles 71b(5) and 278a are our conversion under the Euro Introduction Act, not figures the NRA has published; whether underpricing of sales to a shareholder (not only overpayments) counts as a hidden profit distribution under ZKPO para. 1, item 5(a); the required language of the local file; whether the annual CIT return has a related-party disclosure schedule; the text of Council of Ministers Decree 347/2025 itself (the interest formula is taken from the NRA page); whether the old NRA Transfer Pricing Manual will be reissued under Ordinance N-3.
+Leva amounts: the Euro Introduction Act (para. 34) restated in euro only the DOPK Article 71b(2), item 3 size tests and the CbC thresholds. The Article 71b(5) transaction thresholds and the Article 278a penalties are still printed in leva and are read as euro at BGN 1.95583, rounded to the cent (Euro Introduction Act, Articles 11(2), 12 and 13).
+
+Not yet confirmed: whether underpricing of sales to a shareholder (not only overpayments) counts as a hidden profit distribution under ZKPO para. 1, item 5(a); the required language of the local file; whether the annual CIT return has a related-party disclosure schedule; the text of Council of Ministers Decree 347/2025 itself (the interest formula is taken from the NRA overdue liabilities page); whether the old NRA Transfer Pricing Manual will be reissued under Ordinance N-3.
