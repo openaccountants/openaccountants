@@ -3,7 +3,7 @@ jurisdiction: CY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  TP: "no method for the simplified measures below the local file threshold (Tax Department circular on low value-adding services and back-to-back financing not read from an official copy) and no pricing method for intra-group loans beyond the arm's length rule"
+  TP: "no Tax Department simplified measures below the local file threshold, and no Cyprus safe-harbour margins for low value-adding services or back-to-back financing (circulars not read from an official copy)"
 covered_by: {}
 ---
 
@@ -20,7 +20,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | VAT | cyprus-vat-return | source-cited draft |
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
 | PR, payroll withholding | cyprus-payroll | source-cited draft |
-| TP, transfer pricing | cy-transfer-pricing. Missing: the Tax Department's simplified measures below the local file threshold; a pricing method for intra-group loans | source-cited draft; partial: no simplified measures, no loan pricing method |
+| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools. Missing: the Tax Department's simplified measures and safe-harbour margins below the local file threshold | source-cited draft; partial: no simplified measures |
 | XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | source-cited draft |
 
 ## Official sources
@@ -33,4 +33,5 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 - Transfer pricing regulations K.D.P. 273/2022 and notice K.D.P. 314/2022 (CyLaw): https://www.cylaw.org/KDP/data/2022_1_273.pdf, https://www.cylaw.org/KDP/data/2022_1_314.pdf (read 2026-10-23)
 - Capital Gains Tax Law 52/1980, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/1980_1_52/full.html (read 2026-10-23)
 - Regulation (EC) 883/2004, consolidated (EUR-Lex), arts. 11 to 13: https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 (read 2026-10-23)
+- OECD Transfer Pricing Guidelines 2022, Chapter X (financial transactions): https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf (read 2026-10-23)
 - Tax Department: https://www.gov.cy/tax/ (read 2026-10-22)
