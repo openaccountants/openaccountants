@@ -14,6 +14,14 @@ on:
     branches: [main]
     paths:
       - "skills/**"
+  # Re-send guides a failed doorbell missed (e.g. 22-23 Oct 2026, secret
+  # mismatch). Sends every human-edited guide changed since `since_sha`, at
+  # the current main SHA, in batches of 200 (the platform's limit).
+  workflow_dispatch:
+    inputs:
+      since_sha:
+        description: "Last commit whose guides reached the platform"
+        required: true
 
 permissions:
   contents: read
@@ -26,7 +34,7 @@ jobs:
     # secrets are not.
     environment: production
     runs-on: ubuntu-latest
-    if: github.event.head_commit.author.email != 'sync@openaccountants.com'
+    if: github.event_name == 'push' && github.event.head_commit.author.email != 'sync@openaccountants.com'
     steps:
       - name: Collect changed guide files and ring the platform
         env:
@@ -70,3 +78,46 @@ jobs:
             -d "$BODY") || STATUS=000
           echo "Platform answered HTTP $STATUS: $(head -c 300 resp.txt 2>/dev/null)"
           case "$STATUS" in 2*) ;; *) exit 1 ;; esac
+
+  backfill:
+    if: github.event_name == 'workflow_dispatch'
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Re-send guides changed since since_sha, in batches
+        env:
+          SECRET: ${{ secrets.PLATFORM_INGEST_SECRET }}
+          SINCE: ${{ inputs.since_sha }}
+        run: |
+          set -euo pipefail
+          [ -n "$SECRET" ] || { echo "PLATFORM_INGEST_SECRET not set"; exit 1; }
+          HEAD_SHA=$(git rev-parse HEAD)
+          git cat-file -e "$SINCE^{commit}"
+          # Human commits only; the sync bot's renders came from the platform.
+          git log --no-merges --format='%H%x09%an%x09%ae' "$SINCE..$HEAD_SHA" \
+            | awk -F'\t' '$3 != "sync@openaccountants.com"' > commits.tsv
+          cut -f1 commits.tsv | while read -r c; do
+            git diff-tree --no-commit-id --name-only -r --diff-filter=d "$c" -- 'skills/**/*.md' 'skills/*.md'
+          done | sort -u | while read -r f; do
+            case "$(basename "$f" | tr 'A-Z' 'a-z')" in readme*) continue ;; esac
+            [ -f "$f" ] && echo "$f"
+          done > paths.txt
+          AUTHORS=$(awk -F'\t' '{print $2"\t"$3}' commits.tsv | sort -u \
+            | jq -R -s -c 'split("\n") | map(select(length>0) | split("\t") | {name: .[0], email: .[1], login: null})')
+          echo "$(wc -l < paths.txt) guide(s) to re-send at $HEAD_SHA"
+          split -l 200 paths.txt batch_
+          FAILED=0
+          for b in batch_*; do
+            [ -s "$b" ] || continue
+            BODY=$(jq -cn --arg sha "$HEAD_SHA" --argjson authors "$AUTHORS" --rawfile p "$b" \
+              '{headSha: $sha, paths: ($p | split("\n") | map(select(length>0))), authors: $authors}')
+            STATUS=$(curl -s -o resp.txt -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
+              -H "Authorization: Bearer $SECRET" -H "Content-Type: application/json" -d "$BODY") || STATUS=000
+            echo "$b ($(wc -l < "$b") paths): HTTP $STATUS $(head -c 200 resp.txt)"
+            case "$STATUS" in 2*) ;; *) FAILED=1 ;; esac
+            sleep 20
+          done
+          exit $FAILED
