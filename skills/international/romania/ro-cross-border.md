@@ -5,8 +5,8 @@ jurisdiction: RO
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-23
+version: 0.2
 verified_by: pending
 ---
 
@@ -150,7 +150,8 @@ All from the Procedure Code ([ANAF consolidated text](https://static.anaf.ro/sta
 - **Late payment interest:** 0.02% for each day late, from the day after the due date to the day of payment (art. 174(1) and (5)).
 - **Late payment penalty:** 0.01% for each day late, on top of interest (art. 176(2) and (3)). It does not apply where the non-declaration penalty applies (art. 176(4)).
 - **Non-declaration penalty:** 0.08% a day on tax that was not declared or was declared wrongly and is then assessed by ANAF (art. 181(1)). It falls by 75% if the assessed tax is paid or set off by the due date in the assessment (art. 156(1)), or put into an instalment plan, in which case the reduction is given when the plan ends (art. 181(2)). It is not charged below RON 50 and cannot exceed the tax it is charged on (art. 181(6) and (11)).
-- **Late filing of a return or a registration:** a fine of RON 1,000 to 5,000 for medium and large companies, and RON 500 to 1,000 for other companies and for individuals (art. 336(1)(a)-(b) and (2)(d)).
+- **Late filing of a company return or a registration:** a fine of RON 1,000 to 5,000 for medium and large companies, and RON 500 to 1,000 for other companies. An individual who files a registration or a declaration other than an income return late is fined RON 500 to 1,000 (art. 336(1)(a)-(b) and (2)(d)).
+- **Late filing of an individual's income return or Declarația unică:** a fine of RON 50 to 500 (art. 336(3)).
 - **Failing to withhold, or withholding and not paying over:** a fine, by the amount of tax involved (art. 336(1)(o)-(p) and (2)(f)-(h)):
   - up to RON 50,000: RON 4,000 to 6,000 for medium and large companies; RON 1,000 to 1,500 for other companies and individuals;
   - RON 50,000 to 100,000: RON 12,000 to 14,000; RON 4,000 to 6,000;

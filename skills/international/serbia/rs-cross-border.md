@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -140,9 +140,10 @@ The employer must be a Serbian resident. It must not be related to the person's 
 - **Wrong treaty relief.** A payer that applies a treaty rate without a valid residence certificate or a beneficial owner bears the tax shortfall itself (ZPDG Article 107a(3); ZPDPL Article 40a(3)).
 - **Interest.** Tax paid late carries interest at the NBS reference rate plus 10 percentage points, simple, from the day after the due date (ZPPPA Article 75).
 - **Withholding return not filed or tax not paid (legal entity or entrepreneur).** These are the general fines of ZPPPA Article 177:
-  - no return and tax not paid: 30% to 100% of the tax, at least RSD 500,000 for a legal entity;
-  - return filed but tax not paid: 10% to 50%, at least RSD 250,000;
-  - late return with the tax paid on time: RSD 100,000 for a legal entity.
+  - no return, tax not calculated and not paid: 30% to 100% of the tax found in a tax audit, at least RSD 500,000 for a legal entity and RSD 100,000 for an entrepreneur (Article 177(1));
+  - return filed but tax not paid: 10% to 50% of the tax found in a tax audit, at least RSD 250,000 for a legal entity and RSD 50,000 for an entrepreneur (Article 177(4));
+  - no return but the tax paid on time: RSD 100,000 to 2,000,000 for a legal entity and RSD 50,000 to 500,000 for an entrepreneur (Article 177(5));
+  - late return with the tax paid on time: RSD 100,000 for a legal entity (Article 177(9)) and RSD 40,000 for an entrepreneur (Article 177(10)).
 - **Under-declaration.** 30% to 40% of the shortfall, at least RSD 200,000 for a legal entity and RSD 100,000 for an entrepreneur (ZPPPA Article 178).
 - **Wrong data or no certificate.** Wrong data in a PPP-PD return, or no certificate to the recipient by 31 January, costs a legal entity RSD 100,000 to 2,000,000 (ZPPPA Article 179(1), points 3 and 3a).
 - **Responsible person.** The responsible person in the company is fined separately under each article.

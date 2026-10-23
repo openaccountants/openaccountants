@@ -5,8 +5,7 @@ not_applicable: {}
 covered_by:
   SC: ch-ahv-iv
   XB: ch-cross-border
-partial:
-  IT-IND: "ch-lump-sum (expenditure-based taxation) is still on tax year 2025 and gives a 2025 federal minimum base of CHF 421,700, where the ESTV circular gives CHF 434,700; it needs a 2026 refresh"
+partial: {}
 ---
 
 # Switzerland: tax pack
@@ -17,7 +16,7 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft; partial: ch-lump-sum on tax year 2025 |
+| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft |
 | IT-CORP, corporate income tax | ch-corporate-income-tax | source-cited draft |
 | VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return points to it | source-cited draft |
 | SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | source-cited draft |
