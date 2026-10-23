@@ -5,7 +5,7 @@ jurisdiction: HU
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -14,7 +14,7 @@ verified_by: pending
 
 Source-cited draft: not reviewed by an accountant, not for filing.
 
-The law is Act LXXXI of 1996 on corporate tax and dividend tax (the Tao. tv.). The tax authority is the Nemzeti Adó- és Vámhivatal (NAV). Section references below come from NAV's own guidance, which cites the Act paragraph by paragraph. The official statute site, njt.hu, refused every connection on 2026-10-22 (direct request, web fetch and browser). Instead the rate (19. §), the loss rules (17. §), the interest limitation threshold (8. § (1) j)), the development reserve (7. § (1) f), (15)), the group rules (2/A. §, 17. §) and the advances (26. §) were read in the consolidated text on net.jogtar.hu, a commercial reprint of the Act, in its version in force from 1 October to 31 December 2026. Read the paragraph on njt.hu before relying on an edge case.
+The law is Act LXXXI of 1996 on corporate tax and dividend tax (the Tao. tv.). The tax authority is the Nemzeti Adó- és Vámhivatal (NAV). Section references below come from NAV's own guidance, which cites the Act paragraph by paragraph. The rate (19. §), the loss rules (17. §), the interest limitation threshold (8. § (1) j)), the development reserve (7. § (1) f), (15)), the group rules (2/A. §, 17. §) and the advances (26. §) were read in the official Nemzeti Jogszabálytár at njt.jog.gov.hu, in the version in force from 1 October 2026 (the short address njt.hu refused connections on 2026-10-22 and 2026-10-23).
 
 Related skills in this pack: hu-income-tax (individuals and sole traders), hu-social-contributions, hungary-vat-return, hungary-einvoice.
 
@@ -35,7 +35,7 @@ Related skills in this pack: hu-income-tax (individuals and sole traders), hu-so
 | Corporate tax rate (társasági adó) | 9% of the positive tax base | 2017 onwards, unchanged for 2026 | [NAV info sheet 41](https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02) (Tao. tv. 19. §) |
 | Income (profit) minimum | 2% of adjusted total revenue | 2026 | NAV info sheet 41, section 7 (Tao. tv. 6. § (7)-(11)) |
 | Loss carry-forward | 5 tax years, set-off up to 50% of the tax base before losses | 2026 | NAV info sheet 41, section 5.1 (Tao. tv. 17. § (2)) |
-| Interest limitation | Net borrowing cost above the greater of 30% of tax EBITDA and HUF 939,810,000 is added back | 2026 (same figure in the version in force from 1 January 2027) | [NAV guide to form 2529](https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato); Act text on net.jogtar.hu (Tao. tv. 8. § (1) j)) |
+| Interest limitation | Net borrowing cost above the greater of 30% of tax EBITDA and HUF 939,810,000 is added back | 2026 (same figure in the version in force from 1 January 2027) | [NAV guide to form 2529](https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato); [Act text on njt.jog.gov.hu](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00) (Tao. tv. 8. § (1) j)) |
 | Advance payments | Monthly if prior-year tax above HUF 20 million; quarterly if HUF 20 million or less | Advances based on 2025 tax onward | NAV info sheet 41, section 15 (Tao. tv. 26. §) |
 | Local business tax (helyi iparűzési adó, HIPA) | Set by each municipality, at most 2% | 2026 | [NAV English summary](https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations) |
 | Innovation contribution (innovációs járulék) | 0.3% of the HIPA-type base; micro and small enterprises exempt | 2026 | [NAV info sheet 68](https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/68.-Az-innovacios-jarulek-legfontosabb-szabalyai-2026.-02.-02) (Inno. tv. 16. § (2)) |
@@ -110,9 +110,9 @@ KIVA (kisvállalati adó) replaces both corporate tax and social contribution ta
 - **Outbound interest and royalties:** a foreign company with no place of business in Hungary has no corporate tax on its Hungarian-source income (NAV English summary, section 7.1), so there is no corporate withholding tax on interest or royalties paid to it. Payments to a foreign company still face the transfer pricing and anti-hybrid rules on the Hungarian payer's side.
 - **EU directives:** because domestic law already levies nothing on these outbound payments to companies, the Parent-Subsidiary and Interest and Royalties Directives rarely matter for outbound flows. Inbound dividends are deducted from the base under 7. § (1) g).
 - **Foreign tax credit:** without a treaty, foreign income tax is credited up to 90% of the foreign tax and up to the Hungarian tax on that income.
-- **Controlled foreign companies (CFC):** a Hungarian company must add to its base the positive after-tax profit of a CFC, less dividends approved, to the extent it comes from non-genuine arrangements tied to significant people functions performed by the Hungarian company. The add-back falls in the Hungarian company's tax year that includes the last day of the CFC's year. Payments to a CFC are generally not deductible unless the company proves they relate to its business. A company with a CFC cannot opt into KIVA. The full CFC test is in Tao. tv. 4. § 11.; read it on njt.hu before advising.
+- **Controlled foreign companies (CFC):** a Hungarian company must add to its base the positive after-tax profit of a CFC, less dividends approved, to the extent it comes from non-genuine arrangements tied to significant people functions performed by the Hungarian company. The add-back falls in the Hungarian company's tax year that includes the last day of the CFC's year. Payments to a CFC are generally not deductible unless the company proves they relate to its business. A company with a CFC cannot opt into KIVA. The full CFC test is in Tao. tv. 4. § 11.; read it on njt.jog.gov.hu before advising.
 - **Exit tax (tőkekivonás, 16/A. §):** moving the place of management abroad, or moving assets or a PE's business out of Hungary so they leave the Hungarian tax net, adds to the base the market value less the tax book value of what is moved. In some cases the tax can be paid in five instalments.
-- **Transfer pricing:** related-party prices are adjusted to arm's length (Tao. tv. 18. §). This pack has no transfer pricing skill yet.
+- **Transfer pricing:** related-party prices are adjusted to arm's length (Tao. tv. 18. §). See hu-transfer-pricing.
 
 ## Worked examples
 
@@ -216,8 +216,8 @@ expected:
 | NAV: central bank base rate (notice of 25 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-22 |
 | NAV guidance 3011/2025 on fining practice (30 September 2025) | https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2F3011-2025_20250930_m.pdf | 2026-10-22 |
 | NAV guidance 3006/2018 on fining practice (consolidated) | https://nav.gov.hu/pfile/file?path=%2Fszabalyzok%2Futmutatok%2Fe3006-2018 | 2026-10-22 |
-| Tao. tv. (Act LXXXI of 1996) on Nemzeti Jogszabálytár (official) | https://njt.hu/jogszabaly/1996-81-00-00 | 2026-10-22: connection refused to direct request, web fetch and browser |
-| Tao. tv. consolidated text, version in force 1 October to 31 December 2026 (net.jogtar.hu, commercial reprint) | https://net.jogtar.hu/jogszabaly?docid=99600081.tv | 2026-10-22 |
+| Tao. tv. (Act LXXXI of 1996), 2/A. §, 7. § (1) f) and (15), 8. § (1) j), 17. §, 19. §, 26. §; Nemzeti Jogszabálytár (official), version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 | 2026-10-23 (njt.hu refused connections on 2026-10-22) |
+| Tao. tv. consolidated text, version in force from 1 January 2027 (net.jogtar.hu, commercial reprint; used only for the 2027 interest limitation figure) | https://net.jogtar.hu/jogszabaly?docid=99600081.tv | 2026-10-22 |
 | MNB: central bank base rate history | https://www.mnb.hu/Jegybanki_alapkamat_alakulasa | 2026-10-22 |
 
-Not yet confirmed: the statute text on the official njt.hu site (checked only in the net.jogtar.hu reprint); the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.
+Not yet confirmed: the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.

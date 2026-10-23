@@ -4,10 +4,7 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 version: 2.0
 jurisdiction: PT
 tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
+last_updated: 2026-10-23
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -16,11 +13,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Portugal VAT Return Skill (Declaração Periódica de IVA) v2.0
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+> Source-cited draft: not reviewed by an accountant.
 
 ### IVA
 

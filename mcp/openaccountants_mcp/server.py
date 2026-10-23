@@ -108,7 +108,7 @@ def _safe_resolve(packages_dir: Path, *segments: str) -> Path:
     try:
         joined.relative_to(root)
     except ValueError:
-        raise ToolInputError("Path escapes allowed root")
+        raise ToolInputError("Path escapes allowed root") from None
     return joined
 
 
@@ -485,9 +485,13 @@ def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
     if rec is None:
         raise ToolInputError(f"Skill '{slug}' not found")
     fpath = _safe_resolve(PACKAGES_DIR, rec["relpath"])
-    size = fpath.stat().st_size
-    if size > MAX_FILE_BYTES:
-        raise ToolInputError(f"File too large ({size:,} bytes, limit {MAX_FILE_BYTES:,})")
+    st = fpath.stat()
+    if st.st_size > MAX_FILE_BYTES:
+        raise ToolInputError(f"File too large ({st.st_size:,} bytes, limit {MAX_FILE_BYTES:,})")
+    # Bodies are always read from disk, never cached: a stat-fingerprint cache
+    # (mtime_ns + size) can serve stale guidance when a rewrite preserves both
+    # (e.g. a rate correction 21% -> 22%), and can keep serving a body after
+    # read permission is revoked. Freshness fails closed here.
     _, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
     return rec, body
 
@@ -561,7 +565,19 @@ if _TRANSPORT not in _VALID_TRANSPORTS:
 # not read ``MCP_*`` variables itself).  HTTP is loopback-only unless an operator
 # deliberately sets MCP_HOST for a reverse-proxy or other controlled deployment.
 _HTTP_HOST = os.environ.get("MCP_HOST") or "127.0.0.1"
-_HTTP_PORT = int(os.environ.get("MCP_PORT", "8000"))
+_MCP_PORT_RAW = os.environ.get("MCP_PORT", "8000")
+try:
+    _HTTP_PORT = int(_MCP_PORT_RAW)
+except ValueError:
+    # An unparseable port used to escape as a bare, confusing ValueError from
+    # module import; name the variable so the operator knows what to fix.
+    raise ValueError(
+        f"MCP_PORT must be an integer port number (got {_MCP_PORT_RAW!r})"
+    ) from None
+if not 1 <= _HTTP_PORT <= 65535:
+    raise ValueError(
+        f"MCP_PORT must be a TCP port in 1..65535 (got {_HTTP_PORT})"
+    )
 _STREAMABLE_HTTP_PATH = os.environ.get("MCP_STREAMABLE_HTTP_PATH", "/mcp")
 
 mcp = MCPServer(
@@ -1165,7 +1181,7 @@ def _build_feedback_body(
     rating: int | None,
 ) -> tuple[str, bool]:
     today = datetime.now(tz=timezone.utc).date().isoformat()
-    meta_lines = [f"**Submitted via:** OpenAccountants MCP `submit_feedback`",
+    meta_lines = ["**Submitted via:** OpenAccountants MCP `submit_feedback`",
                   f"**Date:** {today}"]
     if skill_slug:
         meta_lines.append(f"**Skill:** `{skill_slug}`")

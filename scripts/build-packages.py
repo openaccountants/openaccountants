@@ -475,15 +475,19 @@ Or if you're comfortable with GitHub: fork the repo, fix the source file under `
 
 def _is_redirect(filepath):
     """Return True if a .md file is a redirect stub (not real content)."""
-    with open(filepath, 'r', errors='ignore') as fh:
+    return _check_file_content(filepath)[0]
+
+
+def _check_file_content(filepath):
+    """Return (is_redirect, line_count) for a .md file."""
+    with open(filepath, 'r', encoding='utf-8', errors='ignore') as fh:
         lines = fh.readlines()
-    if len(lines) <= 50:
+    line_count = len(lines)
+    if line_count <= 50:
         content = ''.join(lines[:20]).lower()
         if 'consolidated' in content or 'redirect' in content:
-            return True
-        # Short non-redirect files (like references.md) are kept
-        return False
-    return False
+            return True, line_count
+    return False, line_count
 
 
 def find_country_skills(country_dir):
@@ -497,11 +501,8 @@ def find_country_skills(country_dir):
             if not f.endswith('.md') or f.startswith('.'):
                 continue
             filepath = os.path.join(root, f)
-            if _is_redirect(filepath):
-                continue
-            with open(filepath, 'r', errors='ignore') as fh:
-                line_count = sum(1 for _ in fh)
-            if line_count < 5:
+            is_redirect, line_count = _check_file_content(filepath)
+            if is_redirect or line_count < 5:
                 continue  # skip near-empty stubs
             skills.append((f, filepath))
 
@@ -550,11 +551,11 @@ def build_package(country_dir_name, country_dir):
     os.makedirs(pkg_dir, exist_ok=True)
 
     # Write foundation
-    with open(os.path.join(pkg_dir, "foundation.md"), 'w') as f:
+    with open(os.path.join(pkg_dir, "foundation.md"), 'w', encoding="utf-8") as f:
         f.write(build_foundation())
 
     # Write intake
-    with open(os.path.join(pkg_dir, "intake.md"), 'w') as f:
+    with open(os.path.join(pkg_dir, "intake.md"), 'w', encoding="utf-8") as f:
         f.write(build_intake(name, practitioner, code))
 
     # Copy content skills
@@ -599,7 +600,7 @@ def build_package(country_dir_name, country_dir):
         copied_files.append(f"{country_dir_name}-return-assembly.md")
 
     # Write README
-    with open(os.path.join(pkg_dir, "README.md"), 'w') as f:
+    with open(os.path.join(pkg_dir, "README.md"), 'w', encoding="utf-8") as f:
         f.write(build_readme(name, copied_files, practitioner, code))
 
     # Count actual computation skills (not metadata like references.md)
@@ -781,7 +782,7 @@ def build_us_state_package(state_code):
                 state_skill_count += 1
 
     # 6. Generate README
-    with open(os.path.join(pkg_dir, "README.md"), "w") as fh:
+    with open(os.path.join(pkg_dir, "README.md"), "w", encoding="utf-8") as fh:
         fh.write(build_us_state_readme(state_name, state_code, copied_files))
     copied_files.append("README.md")
 
@@ -907,12 +908,12 @@ def build_canada_province_package(province_code):
     copied_files = []
 
     # 1. Universal foundation
-    with open(os.path.join(pkg_dir, "foundation.md"), "w") as fh:
+    with open(os.path.join(pkg_dir, "foundation.md"), "w", encoding="utf-8") as fh:
         fh.write(build_foundation())
     copied_files.append("foundation.md")
 
     # 2. Canada-flavoured intake
-    with open(os.path.join(pkg_dir, "intake.md"), "w") as fh:
+    with open(os.path.join(pkg_dir, "intake.md"), "w", encoding="utf-8") as fh:
         fh.write(build_intake("Canada", "CPA", "CA"))
     copied_files.append("intake.md")
 
@@ -960,7 +961,7 @@ def build_canada_province_package(province_code):
             copied_files.append(orch_file)
 
     # 7. Generate README
-    with open(os.path.join(pkg_dir, "README.md"), "w") as fh:
+    with open(os.path.join(pkg_dir, "README.md"), "w", encoding="utf-8") as fh:
         fh.write(build_canada_province_readme(province_name, province_code, copied_files))
     copied_files.append("README.md")
 
@@ -1127,7 +1128,7 @@ def main():
                 shutil.copy2(xb_base, os.path.join(xb_pkg, "cross-border-workflow-base.md"))
                 xb_files.append("cross-border-workflow-base.md")
             if xb_files:
-                with open(os.path.join(xb_pkg, "README.md"), "w") as fh:
+                with open(os.path.join(xb_pkg, "README.md"), "w", encoding="utf-8") as fh:
                     fh.write("# Cross-Border Accounting Skills\n\n"
                              "Multi-jurisdiction orchestrator for international transactions: "
                              "tax residency, VAT place of supply, withholding tax treaties, "
@@ -1159,7 +1160,7 @@ def main():
                     shutil.copy2(os.path.join(vert_dir, f), os.path.join(vert_pkg, f))
                     vert_files.append(f)
             if vert_files:
-                with open(os.path.join(vert_pkg, "README.md"), "w") as fh:
+                with open(os.path.join(vert_pkg, "README.md"), "w", encoding="utf-8") as fh:
                     fh.write("# Industry Vertical Skills\n\n"
                              "Industry-specific accounting patterns for freelancers and small businesses.\n"
                              "Load alongside your country package for industry-aware tax classification.\n\n"
@@ -1187,7 +1188,7 @@ def main():
                     shutil.copy2(os.path.join(integ_dir, f), os.path.join(integ_pkg, f))
                     integ_files.append(f)
             if integ_files:
-                with open(os.path.join(integ_pkg, "README.md"), "w") as fh:
+                with open(os.path.join(integ_pkg, "README.md"), "w", encoding="utf-8") as fh:
                     fh.write("# Software & Platform Integration Skills\n\n"
                              "Column mappings, export formats, and reconciliation guides for popular\n"
                              "accounting software and payment platforms.\n\n"
@@ -1225,7 +1226,7 @@ def main():
     # Regenerate Canada index (packages/canada/README.md)
     ca_index_dir = os.path.join(PACKAGES_DIR, "canada")
     os.makedirs(ca_index_dir, exist_ok=True)
-    with open(os.path.join(ca_index_dir, "README.md"), "w") as fh:
+    with open(os.path.join(ca_index_dir, "README.md"), "w", encoding="utf-8") as fh:
         rows = "\n".join(
             f"| {CA_PROVINCE_NAMES[c]} | `{c.upper()}` | [`packages/ca-{c}/`](../ca-{c}/) |"
             for c in CA_PROVINCE_CODES
@@ -1248,7 +1249,7 @@ def main():
     us_index_src = os.path.join(PACKAGES_DIR, "us", "README.md")
     # Preserve the existing index if present; it's maintained in the repo
     if not os.path.isfile(us_index_src):
-        with open(us_index_src, "w") as fh:
+        with open(us_index_src, "w", encoding="utf-8") as fh:
             fh.write("# United States — Tax Skills Index\n\n"
                      "Pick your state package under `packages/us-[code]/`.\n"
                      "See the repo README for details.\n")

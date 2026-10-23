@@ -34,6 +34,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date
+from typing import Any
 
 
 # ---------------------------------------------------------------------------
@@ -165,19 +166,51 @@ def fetch_skills():
     skills = http_get(
         skills_query_path(slugs=args.slug_list, jurisdiction=args.jurisdiction)
     )
+    if not skills:
+        return skills
+
+    # Batch query current versions for all skill IDs in chunks of 50
+    versions_by_skill_id: dict[Any, dict[str, Any]] = {}
+    # Fail closed on a malformed skills response: a row without an id would
+    # otherwise silently yield a verification sheet with no guide content.
+    skill_ids = [s["id"] for s in skills]
+    chunk_size = 50
+    for i in range(0, len(skill_ids), chunk_size):
+        chunk = skill_ids[i:i + chunk_size]
+        ids_param = f"in.({','.join(str(cid) for cid in chunk)})"
+        try:
+            versions = http_get(
+                rest_query_path(
+                    "skill_versions",
+                    skill_id=ids_param,
+                    is_current="eq.true",
+                    select="skill_id,markdown_content,version",
+                )
+            )
+            for v in versions:
+                versions_by_skill_id[v["skill_id"]] = v
+        except Exception as exc:
+            # Fallback to per-item fetch if the batch query fails on the
+            # backend; the cause is logged so the failure is never silent.
+            print(f"WARN: batched skill_versions fetch failed ({exc}); "
+                  f"falling back to per-skill queries", file=sys.stderr)
+            for s_id in chunk:
+                v_list = http_get(
+                    rest_query_path(
+                        "skill_versions",
+                        skill_id=f"eq.{s_id}",
+                        is_current="eq.true",
+                        select="markdown_content,version",
+                        limit="1",
+                    )
+                )
+                if v_list:
+                    versions_by_skill_id[s_id] = v_list[0]
 
     for s in skills:
-        versions = http_get(
-            rest_query_path(
-                "skill_versions",
-                skill_id=f"eq.{s['id']}",
-                is_current="eq.true",
-                select="markdown_content,version",
-                limit="1",
-            )
-        )
-        s["markdown"] = versions[0]["markdown_content"] if versions else ""
-        s["version"] = versions[0]["version"] if versions else None
+        v = versions_by_skill_id.get(s["id"])
+        s["markdown"] = v["markdown_content"] if v else ""
+        s["version"] = v["version"] if v else None
     return skills
 
 

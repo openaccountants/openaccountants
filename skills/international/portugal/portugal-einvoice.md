@@ -4,10 +4,7 @@ description: "Utilize esta skill sempre que lhe forem colocadas questões sobre 
 version: 1.0
 jurisdiction: PT
 tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
+last_updated: 2026-10-23
 depends_on:
   - einvoice-workflow-base
 category: invoicing
@@ -19,11 +16,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Portugal — Facturação Electrónica (ATCUD / SAF-T(PT) / e-Fatura) — Skill v1.1
 
-## Verified rates & thresholds (accountant-reviewed)
+## Rates and thresholds
 
-> Reviewed against the cited tax authorities by **Mário Jorge da costa Vale** on 2026-06-04.
-> Items flagged for further clarification are tracked separately and excluded here.
-> This block is generated from verified `skill_facts` — edit the facts, not the prose.
+> Source-cited draft: not reviewed by an accountant.
 
 ### Faturação Eletrónica
 
