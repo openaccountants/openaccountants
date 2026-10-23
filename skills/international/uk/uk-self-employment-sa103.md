@@ -4,7 +4,7 @@ description: Use this skill whenever asked about UK self-employment income for s
 version: 3.0
 jurisdiction: GB
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-22
 authored_by: James Power, CIMA
 reviewed_by: James Power
 review_status: current
@@ -56,7 +56,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Currency | GBP only |
 | Current tax year | 6 April 2025 -- 5 April 2026 (2025-26) |
 | Primary legislation | Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005); Capital Allowances Act 2001 (CAA 2001) |
-| Supporting legislation | Finance Act 2024 (basis period reform completion, Class 2 abolition, Class 4 cut); Finance (No.2) Act 2023 (MTD ITSA powers); Social Security Contributions and Benefits Act 1992 |
+| Supporting legislation | Finance Act 2024 (basis period reform completion, Class 4 cut); National Insurance Contributions (Reduction in Rates) Act 2023, s.3 (Class 2 abolition from 6 April 2024); Finance (No.2) Act 2023 (MTD ITSA powers); Social Security Contributions and Benefits Act 1992 |
 | Tax authority | HM Revenue & Customs (HMRC) |
 | Filing portal | HMRC Self Assessment Online (MTD ITSA quarterly portal from April 2026 for mandated traders) |
 | Filing deadline (2025-26, online) | 31 January 2027 |
@@ -586,7 +586,7 @@ ONBOARDING QUESTIONS -- UK SELF-EMPLOYMENT
 | Cash basis (default from 2024-25) | ITTOIA 2005, Part 2 Ch 3A as amended by FA 2024 |
 | Loss relief | ITA 2007, ss 64-90 |
 | Class 4 NIC (6%/2% post-Apr-2024) | SSCBA 1992, s15; National Insurance Contributions (Reduction in Rates) Act 2024 |
-| Class 2 abolition (compulsory) | National Insurance Contributions (Reduction in Rates) Act 2024 |
+| Class 2 abolition (compulsory) | National Insurance Contributions (Reduction in Rates) Act 2023, s.3 (in force 6 April 2024): https://www.legislation.gov.uk/ukpga/2023/57/section/3 |
 | Basis period reform | Finance Act 2022 ss 6-7 and Sch 1; Finance Act 2024 |
 | MTD ITSA powers | Finance (No.2) Act 2017, ss 60-62; Finance Act 2021; Income Tax (Digital Requirements) Regulations 2021 (as amended) |
 | MTD ITSA penalty regime | Finance Act 2021, Schs 24-26 |

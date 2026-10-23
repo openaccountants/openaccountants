@@ -3,7 +3,7 @@ name: leaving-france-exit-tax
 description: "France has become a net wealth-outflow country for the first time, and its departure rules are built to make leaving expensive if done casually: an exit tax on unrealised share gains (art. 167 bis), a real-estate wealth tax that never lets go of French property, succession rules that can tax your heirs on worldwide assets years after you left, and a France–Switzerland treaty clause that quietly strips treaty protection from lump-sum-taxed Swiss residents. This Guide sequences the exit."
 jurisdiction: FR
 tax_year: 2025
-last_updated: 2026-08-03
+last_updated: 2026-10-22
 authored_by: Michael Cutajar, CPA, ACCA
 review_status: pending_review
 trust_label: Accountant-authored
@@ -32,8 +32,12 @@ departure, and on the departure date you hold:
 - a stake of **at least 50%** in any company.
 
 **What it does.** Your unrealised gains (plus certain deferred gains and earn-outs) are
-deemed realised on departure — taxed at the **30% flat tax** (12.8% income tax + 17.2%
-social levies), or under the progressive scale by election. The tax is *computed*
+deemed realised on departure — taxed at the **31.4% flat tax** (12.8% income tax + 18.6%
+social levies) for gains taxed with 2025 income onward, or under the progressive scale by
+election. The social levies on securities gains rose from 17.2% (30% total) to 18.6% when the
+CSG on patrimony income went from 9.2% to 10.6% from the 2025 income year (LFSS 2026, loi
+n° 2025-1403, art. 12; service-public.fr F2329). Departures taxed with 2024 or earlier income
+stay at 17.2% (30% total). The tax is *computed*
 immediately, but:
 
 **Payment is suspended (sursis de paiement) automatically** if you move to an EU/EEA state
@@ -172,7 +176,7 @@ foyer-in-France trap for commuters.
 
 CGI art. 4 B (residence tests); art. 167 bis (exit tax: 6-of-10-years condition, €800k /
 50% thresholds, sursis de paiement, 2/5-year erasure at the €2.57m line, forms 2074-ETD/ETS);
-PFU 30% (12.8% + 17.2%); IFI arts. 964 ss. (€1.3m threshold, non-resident French-property
+PFU 31.4% (12.8% + 18.6%) from 2025 income, 30% (12.8% + 17.2%) before (CSS art. L136-8 as amended by LFSS 2026 art. 12; https://www.service-public.fr/particuliers/vosdroits/F2329); IFI arts. 964 ss. (€1.3m threshold, non-resident French-property
 scope); non-resident minimum rates (art. 197 A: 20%/30%) and social levies with the 7.5%
 EU/EEA/UK rate; art. 750 ter (succession reach, heir 6-of-10-years rule); assurance-vie
 arts. 990 I / 757 B; France–Switzerland DTA art. 4 (lump-sum residents exclusion);
