@@ -6,8 +6,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
+authored_by: Michael Cutajar and the OpenAccountants team
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Ireland: PRSI for posted and cross-border workers, and Class K (2026)
@@ -58,7 +62,7 @@ The 1 October 2026 rise comes from the schedule of increases in section 3(3) of 
 1. **Posted employee (Article 12(1)).** An employee of an employer that normally carries on its activities in Ireland, sent to another state to work for that employer, stays on Irish PRSI if the anticipated duration does not exceed 24 months and the employee is not replacing another posted person. DSP also requires: the employee was subject to Irish PRSI for at least one month before the posting (if hired to be posted), a direct relationship with the employer throughout, and that the employer is the one posting the employee.
 2. **Self-employed (Article 12(2)).** A person normally self-employed in Ireland who does similar work in another state for up to 24 months stays on Irish PRSI (Class S). DSP requires at least two months' self-employed trading in Ireland just before.
 3. **Longer postings (Article 16).** If the work is known from the start to exceed 24 months, the other state must agree in advance before DSP issues an A1. An unforeseen extension also needs the host state's agreement.
-4. **Two or more states (Article 13).** An employee working in two or more states pays in the state of residence if a substantial part of the activity is there (DSP uses 25% as the indicator). Otherwise, in general, the state of the employer's registered office or place of business; Article 13(1)(b) has four cases for several employers. A self-employed person pays in the state of residence if a substantial part is there, otherwise where the centre of interest is (Article 13(2)). A person employed in one state and self-employed in another pays where employed (Article 13(3)). All income is then treated as earned in that one state (Article 13(5)), so an Irish-covered worker pays PRSI on pay for work done abroad.
+4. **Two or more states (Article 13).** An employee working in two or more states pays in the state of residence if a substantial part of the activity is there (DSP uses 25% as the indicator). Otherwise, with one employer, the state of the employer's registered office or place of business (Article 13(1)(b)(i)); Article 13(1)(b)(ii) to (iv) set three further rules for two or more employers. A self-employed person pays in the state of residence if a substantial part is there, otherwise where the centre of interest is (Article 13(2)). A person employed in one state and self-employed in another pays where employed (Article 13(3)). All income is then treated as earned in that one state (Article 13(5)), so an Irish-covered worker pays PRSI on pay for work done abroad.
 
 **The A1 is the evidence.** Whichever state is competent issues the Portable Document A1. A worker posted out of Ireland keeps paying Irish PRSI through Irish payroll and is exempt in the host state. A worker posted into Ireland with an A1, a certificate of coverage under a bilateral agreement, or a DSP 52-week exemption is not liable to Irish PRSI on that employment; without one of these, PRSI is due ([TDM Part 02-04-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-04-01.pdf)). The employer leaves the exempt pay out of "pay for PRSI" and keeps the certificate; no PRSI class is entered for these three exemption reasons ([PRSI Employer Guide 2026](https://assets.gov.ie/static/documents/338359b5/20260122_PRSI_Employer_Guide_-_January_2026_-_English_Version_copy.pdf.final.pdf)).
 
@@ -73,7 +77,7 @@ The 1 October 2026 rise comes from the schedule of increases in section 3(3) of 
 - employees and occupational pensioners under pensionable age (66) where unearned income is their only additional income; this applies whether the pension comes from their own employment or a spouse's or civil partner's;
 - modified rate contributors (Classes B, C, D) on self-employed income from a trade or profession and on any unearned income.
 
-There is no employer share, no upper limit and no benefit entitlement under Class K. A person aged 66 or over with only employment or occupational pension income plus unearned income is outside Class K (DSP limits it to those under 66). A person whose total income from self-employment, earned and unearned, and employment is below EUR 5,000 a year is not a self-employed contributor at all ([DSP leaflet SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf); Social Welfare Consolidation Act 2005, Schedule 1, Part 3, paragraph 3). An employee who also has self-employed income pays Class S, not Class K, on it ([ie-prsi-class-s](ie-prsi-class-s.md)). Income from an occupational pension itself is Class M (no PRSI).
+There is no employer share, no upper limit and no benefit entitlement under Class K. DSP's Class K guidance limits the charge on employees and occupational pensioners to those under 66; for people born on or after 1 January 1958 who keep working past 66, see the "Not yet confirmed" line. A person whose total income from self-employment, earned and unearned, and employment is below EUR 5,000 a year, measured before capital allowances, is not a self-employed contributor at all ([DSP leaflet SW74](https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf); Social Welfare Consolidation Act 2005, Schedule 1, Part 3, paragraph 3). An employee who also has self-employed income pays Class S, not Class K, on it ([ie-prsi-class-s](ie-prsi-class-s.md)). Income from an occupational pension itself is Class M (no PRSI).
 
 ## Deadlines and filing
 
@@ -143,7 +147,7 @@ Seán, aged 52, is a Class A employee earning EUR 60,000. He has no self-employe
 - Base: EUR 20,000 plus EUR 1,000 is EUR 21,000. His total income is far above EUR 5,000.
 - Rate: income returned through self-assessment for 2026 uses the blended rate of 4.2375%, not the two period rates.
 - Class K: EUR 21,000 at 4.2375% is EUR 889.88. This is above EUR 650, so the minimum question does not arise.
-- The edge case: had Seán turned 66 before 2026 and kept working, Class K would not apply to his rent (DSP limits Class K for employees and occupational pensioners to those under 66), and the PRSI on the unearned income would be nil.
+- The edge case: had Seán been born in 1955, so over pensionable age in 2026 and born before 1 January 1958, Class K would not apply to his rent (DSP limits Class K for employees and occupational pensioners to those under 66, and the PRSI Employer Guide gives nil liability for people born before 1 January 1958 who are over pensionable age), and the PRSI on the unearned income would be nil.
 
 ```oa-check
 name: Employee under 66 with rent EUR 20,000 and interest EUR 1,000, Class K 2026
@@ -155,11 +159,11 @@ inputs:
 steps:
   - unearned: rent + interest
   - class_k: round(unearned * blended_rate * under_66, 2)
-  - class_k_if_66_or_over: unearned * blended_rate * 0
+  - class_k_if_born_before_1958_and_over_66: unearned * blended_rate * 0
 expected:
   unearned: 21000.00
   class_k: 889.88
-  class_k_if_66_or_over: 0.00
+  class_k_if_born_before_1958_and_over_66: 0.00
 ```
 
 ## Ask the client first
@@ -180,7 +184,7 @@ expected:
 | DSP, PRSI Class K rates (updated 20 January 2026) | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-k-rates/ | 2026-10-23 |
 | DSP, SW14 PRSI Contribution Rates and User Guide, January 2026 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
 | DSP, SW19 Rates of Payment 2026 (May 2026) | https://assets.gov.ie/static/documents/9c18b85f/20260520_Rates_of_Payment_Booklet_-_SW19_-_2026_May.pdf | 2026-10-23 |
-| DSP, SW74 guide to PRSI for the self-employed | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-23 |
+| DSP, SW74 guide to PRSI for the self-employed (January 2025 edition; used only for the EUR 5,000 test and the non-resident rule) | https://assets.gov.ie/38671/0aa2cf3d831a4076b1b6208e1287d9f9.pdf | 2026-10-23 |
 | DSP, PRSI Employer Guide, January 2026 | https://assets.gov.ie/static/documents/338359b5/20260122_PRSI_Employer_Guide_-_January_2026_-_English_Version_copy.pdf.final.pdf | 2026-10-23 |
 | Social Welfare Consolidation Act 2005, section 21 (revised) | https://revisedacts.lawreform.ie/eli/2005/act/26/section/21/revised/en/html | 2026-10-23 |
 | Social Welfare Consolidation Act 2005, Schedule 1 (revised) | https://revisedacts.lawreform.ie/eli/2005/act/26/schedule/1/revised/en/html | 2026-10-23 |
@@ -189,4 +193,4 @@ expected:
 | Revenue, preliminary tax | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-23 |
 | Revenue, guidelines for charging interest on late payment | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/Guidelines-for-charging-interest-on-late-payment-20240715074235.pdf | 2026-10-23 |
 
-Not yet confirmed: whether the EUR 650 minimum applies to Class K9 (SW14 and SW19 attach the self-employed footnote with the minimum to K9, but the 2005 Act sets the minimum for self-employment contributions and DSP's guidelines do not repeat it for Class K); DSP's Class K page prints blended rates of 4.0125% (2025) and 4.235% (2026), which conflict with SW14 and SW19 (4.125% and 4.2375%) and with the arithmetic of the period rates, so this skill uses SW14 and SW19; the posting period under the Ireland-UK Convention for Great Britain and Northern Ireland, since DSP's page applies the EU Regulation's 24 months to UK postings without citing the Trade and Cooperation Agreement Protocol.
+Not yet confirmed: whether Class K extends past 66 for employees born on or after 1 January 1958 who have not been awarded the State Pension (Contributory) (the PRSI Employer Guide and SW74 keep employee and Class S PRSI running to 70 for them, but DSP's Class K guidance still says under 66); whether the EUR 650 minimum applies to Class K9 (SW14 and SW19 attach the self-employed footnote with the minimum to K9, but the 2005 Act sets the minimum for self-employment contributions and DSP's guidelines do not repeat it for Class K); DSP's Class K page prints blended rates of 4.0125% (2025) and 4.235% (2026), which conflict with SW14 and SW19 (4.125% and 4.2375%) and with the arithmetic of the period rates, so this skill uses SW14 and SW19; the posting period under the Ireland-UK Convention for Great Britain and Northern Ireland, since DSP's page applies the EU Regulation's 24 months to UK postings without citing the Trade and Cooperation Agreement Protocol.
