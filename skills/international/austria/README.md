@@ -8,7 +8,6 @@ covered_by:
   XB: at-cross-border
 partial:
   PR: "at-payroll-and-social-insurance has no method for overtime, night and shift supplements (EStG § 68) or termination payments (EStG § 67(3) to (8))"
-  SC: "at-payroll-and-social-insurance has no rates for apprentices, miners or construction workers (BUAK)"
 ---
 
 # Austria: tax pack
