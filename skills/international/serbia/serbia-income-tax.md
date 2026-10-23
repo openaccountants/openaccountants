@@ -74,7 +74,7 @@ Out of scope here: agricultural income, gambling winnings, insurance proceeds, s
 **Flat-rate entrepreneur (Articles 40 to 42).** The Tax Administration sets a deemed income by decision. It groups flat-rate entrepreneurs by main activity and adjusts a starting base for registered seat, time since registration, age and work capacity, and other circumstances (Article 41). The skill cannot compute that figure; read it from the client's decision. The flat-rate regime is **not** available to a person who (Article 40(2)):
 
 - works in advertising or market research;
-- works in wholesale or retail trade, hotels and restaurants, financial intermediation or real estate (kiosk and mobile traders can apply, Article 40(3));
+- works in wholesale or retail trade, hotels and restaurants, financial intermediation or real estate (trade or catering carried on in a kiosk, trailer or similar movable structure can still be approved on request, Article 40(3), and so can a person who makes and sells only their own products, Article 40(4));
 - has other people investing in the business;
 - had turnover over RSD 6,000,000 in the previous year, or plans more on starting;
 - is registered for VAT.
@@ -100,7 +100,7 @@ If the test is met, the base is the full gross fee with no standard costs (Artic
 **Capital gains (Articles 72 to 79b).** A gain is the sale price less the purchase price on a sale of real estate rights, copyright and industrial property, company shares and securities, or investment fund units (Article 72(1)).
 
 - **Cost.** The purchase price is raised by the consumer price index from purchase to sale (Article 74). For an asset received as a gift or inheritance, the donor's cost is used (Article 75).
-- **No gain arises** (Article 72a(1)) on: inheritance in the first line; transfers between spouses or between parents and children; transfers between divorcing spouses linked to the divorce; Serbian government, provincial, municipal and NBS bonds; assets held without a break for **ten years or more**; and qualifying share swaps in a reorganisation. The ten-year rule has no residence condition. It does not apply when a company buys back its own shares from the member (Article 72a(3)).
+- **No gain arises** (Article 72a(1)) on: inheritance in the first line; transfers between spouses or between blood relatives in the direct line (parents, children, grandparents, grandchildren); transfers between divorcing spouses linked to the divorce; Serbian government, provincial, municipal and NBS bonds; assets held without a break for **ten years or more**; and qualifying share swaps in a reorganisation. The ten-year rule has no residence condition. It does not apply when a company buys back its own shares from the member (Article 72a(3)).
 - **Losses.** A loss can be set against a later gain and carried forward for five years, counting the year of the loss (Article 78).
 - **Home reinvestment.** A seller of real estate who puts the proceeds into housing for themselves or their family in Serbia within 90 days is exempt. Within 12 months, the tax paid is refunded (Article 79).
 
@@ -123,7 +123,7 @@ If the test is met, the base is the full gross fee with no standard costs (Artic
 - **Salary.** The employer files the PPP-PD return and pays the tax when it pays the salary (ZPDG Article 101; see serbia-payroll).
 - **Entrepreneur on actual profit.** The tax return and tax balance are due by **15 April 2027** for 2026 (ZPDG Article 93). Monthly advances of one twelfth of last year's tax are due within 15 days after each month (Articles 111 and 114(2)). Any shortfall is paid by the filing date (Article 111(5)). A new business files an estimate within 15 days of registration. A business that closes files within 30 days (Article 94).
 - **Flat-rate entrepreneur.** Tax set by decision is paid monthly, within 15 days after each month (Article 110(1)). Until the 2026 decision arrives, the 2025 amount is paid (Article 109(2)). A request for flat-rate tax for 2027 is due by **31 October 2026** through the Tax Administration portal; a new business asks on registration (Article 42(1) and (2)). If turnover or other conditions changed a lot in the previous year, a return is due by 31 January (Article 93).
-- **Capital gains.** Return within 30 days of the sale of real estate, IP or company shares. For securities and fund units, within 30 days after the end of each half-year (Article 95). The Tax Administration issues a decision and the tax is due within 15 days of receiving it (Article 110(1)(2)).
+- **Capital gains.** Return within 30 days of the sale of real estate, IP or company shares. For a sale of real estate where the seller may claim the home reinvestment exemption, the deadline is 120 days from the sale (Article 95(3)). For securities and fund units, within 30 days after the end of each half-year (Article 95). The Tax Administration issues a decision and the tax is due within 15 days of receiving it (Article 110(1)(2)).
 - **Self-assessed income.** Interest, rent and other income from a payer that does not withhold: return within 30 days of receipt. Freelancer quarterly returns: within 30 days after the end of the quarter (Article 95). Self-assessed tax is paid by the filing deadline (Article 114(1)).
 - **Annual personal income tax for 2026.** The Tax Administration posts a pre-filled PP GPDG return on its portal by **1 April 2027**. The taxpayer checks it, corrects it and files it electronically by **15 May 2027** (Article 92). If the taxpayer does not file, the Tax Administration files for them (Article 92(4)). The tax is self-assessed and paid by 15 May 2027 (Articles 100a(1)(4) and 114(1)). No return is needed when income for taxation is zero (MoF explanation for 2025).
 
@@ -135,11 +135,14 @@ If the test is met, the base is the full gross fee with no standard costs (Artic
   - Return not filed, or wrong data not corrected: RSD 5,000 to 150,000.
   - Tax in a return or decision not paid: RSD 10,000 if the tax is up to RSD 50,000; RSD 20,000 from 50,000 to 200,000; RSD 40,000 from 200,000 to 1,000,000; RSD 50,000 above 1,000,000.
 - **Entrepreneurs (ZPPPA Article 177).**
-  - No return and no tax paid: 30% to 100% of the tax due, at least RSD 100,000.
-  - Return filed but tax not paid: 10% to 50%, at least RSD 50,000.
-  - Return not filed but tax paid on time: RSD 50,000 to 500,000.
-  - A repeat offence within two years can lead to a ban on the activity for six months to three years (Article 182a).
-- **Under-declaration by an entrepreneur.** 30% to 40% of the shortfall, at least RSD 100,000 (ZPPPA Article 178).
+  - No return and no tax paid: 30% to 100% of the tax found in a tax audit, at least RSD 100,000 (Article 177(1)).
+  - Return filed but tax not paid: 10% to 50% of the tax found in a tax audit, at least RSD 50,000 (Article 177(4)).
+  - Return not filed but tax paid on time: RSD 50,000 to 500,000 (Article 177(5)).
+  - Late return and tax not paid on time: a fixed RSD 15,000 if the tax is up to RSD 100,000; RSD 30,000 from 100,000 to 1,000,000; RSD 100,000 from 1,000,000 to 10,000,000; RSD 150,000 above 10,000,000 (Article 177(8)).
+  - Late return but tax paid on time: a fixed RSD 40,000 (Article 177(11)).
+  - Return on time but tax paid late: a fixed RSD 10,000, 20,000, 80,000 or 140,000 in the same four bands (Article 177(10)).
+  - Repeating an offence under Article 177(1) to (4) or (6) within two years of a final conviction can lead to a ban on the activity for six months to three years (Article 182a).
+- **Under-declaration by an entrepreneur.** 30% to 40% of the shortfall, at least RSD 100,000. If the shortfall is no more than 5% of the correct tax, the fine is a fixed RSD 50,000 (ZPPPA Article 178).
 - **Voluntary disclosure.** No penalty proceedings start if the taxpayer reports the error and pays before the Tax Administration takes any step (ZPPPA Article 182b).
 
 ## Cross-border points
