@@ -1,12 +1,12 @@
 ---
 name: gr-cross-border
-description: "Greece cross-border tax for tax year 2026 (calendar year). Covers tax residence tests for individuals (home, centre of vital interests, more than 183 days in any 12 months) and companies (Greek incorporation, registered seat, place of effective management); arriving under the special inbound regimes (art. 5A EUR 100,000 lump sum for high-net-worth movers, art. 5B 7% flat tax on foreign income of pensioners, art. 5C 50% exemption on Greek employment or business income for 7 years); leaving (deregistration procedure, the company exit tax of art. 66A); non-residents with Greek-source income such as rent or salary; withholding on outbound dividends, interest, royalties and fees, with the EU directive exemptions; treaty relief and the foreign tax credit. Trigger phrases: moving to Greece, leaving Greece, non-resident, expat, exit tax, digital nomad, Greek non-dom, 5A 5B 5C, golden visa tax. Out of scope: self-employed income tax (gr-income-tax), company tax (gr-corporate-income-tax), EFKA contributions (gr-efka), VAT (gr-vat-return)."
+description: "Greece cross-border tax for tax year 2026 (calendar year). Covers tax residence tests for individuals (home, centre of vital interests, more than 183 days in any 12 months) and companies (Greek incorporation, registered seat, place of effective management); arriving under the special inbound regimes (art. 5A EUR 100,000 lump sum for high-net-worth movers, art. 5B 7% flat tax on foreign income of pensioners, art. 5C 50% exemption on Greek employment or business income for 7 years); leaving (deregistration procedure, the company exit tax of art. 66A); non-residents with Greek-source income such as rent or salary; withholding on outbound dividends, interest, royalties and fees, with the EU directive exemptions; treaty relief and the foreign tax credit. Trigger phrases: moving to Greece, leaving Greece, non-resident, expat, exit tax, digital nomad, Greek non-dom, 5A 5B 5C, golden visa tax. Out of scope: self-employed income tax (gr-income-tax), company tax (gr-corporate-income-tax), EFKA contributions of the self-employed (gr-efka) and of employees and employers (gr-employee-contributions), VAT (gr-vat-return)."
 jurisdiction: GR
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-23
+version: 0.2
 verified_by: pending
 ---
 
@@ -17,6 +17,7 @@ This is the hub skill for anyone or any company crossing the Greek border. It se
 - Self-employed income tax, presumptive income, prepayments: `gr-income-tax`
 - Company income tax: `gr-corporate-income-tax`
 - EFKA social contributions for the self-employed: `gr-efka`
+- EFKA contributions on employees' pay, withheld and paid by the employer: `gr-employee-contributions`
 - VAT: `gr-vat-return`
 - Overview of the system: `gr-tax-overview`
 
@@ -70,8 +71,8 @@ Place of effective management is judged on the facts, in particular: where day-t
 | Corporate income tax rate (also the rate of the company exit tax) | 22% | 2021 onwards, so 2026 | ΚΦΕ art. 58(1)(a) and art. 66A(2), same |
 | Withholding on dividends | 5% | 2026 | ΚΦΕ art. 64(1)(a), same |
 | Withholding on interest | 15% | 2026 | ΚΦΕ art. 64(1)(b), same |
-| Withholding on royalties and other payments | 20% | 2026 | ΚΦΕ art. 64(1)(c), same |
-| Withholding on fees for technical, management, consulting and similar services | 20% | 2026 | ΚΦΕ art. 64(1)(d), same |
+| Withholding on royalties and other payments | 20%; none where the payee is a Greek-resident legal person or a Greek permanent establishment | 2026 | ΚΦΕ arts. 64(1)(c) and 62(5), same |
+| Withholding on fees for technical works, management, consulting and similar services | 20% where the payee is an individual (a Greek-resident individual only where the transaction exceeds EUR 300) or a legal person not resident in Greece or the EU/EEA; none where the payee is a legal person resident in Greece or the EU/EEA | 2026 | ΚΦΕ arts. 62(1)(d), 62(2), 62(3), 64(1)(d) and 64(8), same |
 | Dividends to an EU parent (Parent-Subsidiary Directive) | 0% if holding at least 10% for at least 24 months | 2026 | ΚΦΕ art. 63(1), same |
 | Interest and royalties to an associated EU company (Interest and Royalties Directive) | 0% if holding at least 25% for at least 24 months | 2026 | ΚΦΕ art. 63(2), same |
 
@@ -153,9 +154,9 @@ For the inbound regimes, the sanction is losing the regime. Under 5A and 5B, fai
 
 **Foreign tax credit, not exemption (art. 9 ΚΦΕ).** A Greek resident deducts foreign tax paid on foreign income from the Greek tax on that income. The credit cannot exceed the Greek tax on that income. Under art. 5A there is no credit for foreign tax on covered income. Art. 5B does not override treaties.
 
-**Social security (EU/EEA and Switzerland).** Regulation (EC) 883/2004 means a person is subject to one state's social security legislation at a time, normally the state where they work (art. 11). An employee posted by their employer to another member state stays in the home system if the posting is expected to last no more than 24 months and they do not replace another posted worker (art. 12(1)). The self-employed have a parallel rule (art. 12(2)). The posting is shown by a form A1 from the home system (the A1 rules are in Regulation 987/2009; see "Not yet confirmed"). Someone who moves to Greece to work for a Greek employer under art. 5C normally joins the Greek system (e-EFKA). EFKA for the self-employed is in `gr-efka`. There is no employee or employer EFKA skill in the pack yet.
+**Social security (EU/EEA and Switzerland).** Regulation (EC) 883/2004 means a person is subject to one state's social security legislation at a time, normally the state where they work (art. 11). An employee posted by their employer to another member state stays in the home system if the posting is expected to last no more than 24 months and they do not replace another posted worker (art. 12(1)). The self-employed have a parallel rule (art. 12(2)). The posting is shown by a form A1 from the home system (the A1 rules are in Regulation 987/2009; see "Not yet confirmed"). Someone who moves to Greece to work for a Greek employer under art. 5C normally joins the Greek system (e-EFKA). Contributions on employees' pay (the employee and employer shares, the ceiling and the APD return) are in `gr-employee-contributions`. Contributions of the self-employed are in `gr-efka`.
 
-**Companies.** The 22% rate, deductions and filing are in `gr-corporate-income-tax`. Withholding on outbound dividends, interest, royalties and fees is set out above. The directive exemptions need the holding thresholds and the 24-month holding period. If the period is not yet complete, the payer may skip withholding by lodging a bank guarantee (art. 63(3)).
+**Companies.** The 22% rate, deductions and filing are in `gr-corporate-income-tax`. Withholding on outbound dividends, interest, royalties and fees is set out above. Fees for technical, management and consulting services paid to a legal person resident in another EU/EEA state carry no withholding (art. 62(2)), except the 8% that general government bodies withhold on services they buy (arts. 62(2) and 64(2)); paid to a legal person outside the EU/EEA or to an individual, they carry 20% (arts. 62(3) and 64(1)(d)). The EUR 300 floor of art. 64(8) applies only to a Greek-resident payee. For a non-resident without a Greek permanent establishment, withholding on these fees is not the final tax (art. 64(3)); the payee may instead opt to be taxed as a resident and credit the tax withheld (art. 62(3)). The directive exemptions need the holding thresholds and the 24-month holding period. If the period is not yet complete, the payer may skip withholding by lodging a bank guarantee (art. 63(3)).
 
 ## Worked examples
 
@@ -167,7 +168,7 @@ Under 5C, half (EUR 35,000) is exempt. The other EUR 35,000 is taxed on the 2026
 
 With 5C, the art. 16 reduction depends on which salary figure the art. 16(2) phase-out uses. On the taxable EUR 35,000 it would be EUR 777 minus EUR 460 (EUR 20 x 23), so EUR 317, and tax would be EUR 6,883. If the exempt half also counts, the reduction is nil. We have not found a ruling on this. See "Not yet confirmed".
 
-As she is aged 31 or over with no children, no reduced rate of art. 15(1)(b) to (e) applies. As a Greek resident she must also spend 30% of her real income (capped at EUR 20,000) by card or other electronic means, or pay 22% on the shortfall (art. 15(6)). This example assumes she meets that requirement. It does not compute her employee EFKA contributions. There is no special solidarity contribution: it was abolished from 2023.
+As she is aged 31 or over with no children, no reduced rate of art. 15(1)(b) to (e) applies. As a Greek resident she must also spend 30% of her real income (capped at EUR 20,000) by card or other electronic means, or pay 22% on the shortfall (art. 15(6)). This example assumes she meets that requirement. It does not compute her employee EFKA contributions (see `gr-employee-contributions`). There is no special solidarity contribution: it was abolished from 2023.
 
 ```oa-check
 name: Art. 5C mover, Greek salary EUR 70,000, 2026 scale, before art. 16 reduction
@@ -235,7 +236,7 @@ expected:
 
 ## Sources
 
-All read on 2026-10-22.
+All read on 2026-10-22. The Income Tax Code arts. 62 and 64 were read again on 2026-10-23 for the withholding on fees.
 
 - Income Tax Code (ν. 4172/2013), Ministry of Finance administrative codification including amendments up to ν. 5264/2025 (circular 56053/06-04-2026): arts. 3, 4, 5, 5A, 5B, 5C, 9, 15, 20, 40, 58, 62, 63, 64, 66A, 67. https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf
 - Ministry of Finance, notice of the codification of the Income Tax Code: https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/
