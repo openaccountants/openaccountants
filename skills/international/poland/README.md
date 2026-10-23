@@ -2,7 +2,8 @@
 jurisdiction: PL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  XB: pl-cross-border
 ---
 
 # Poland: tax pack
@@ -19,7 +20,7 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 | SC, social contributions | pl-zus-contributions | source-cited draft |
 | PR, payroll withholding | (missing) | |
 | TP, transfer pricing | pl-transfer-pricing | source-cited draft |
-| XB, cross-border | (missing; pl-cit-corporate-tax covers company withholding, CFC and exit tax) | |
+| XB, cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | source-cited draft |
 
 ## Official sources
 
