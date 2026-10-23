@@ -2,8 +2,7 @@
 jurisdiction: PT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  IT-IND: "pt-income-tax (Category B) is on tax year 2025: 2025 IRS bands, IRS Jovem cap and social security ceiling on the 2025 IAS (EUR 522.50); portugal-crypto-tax is on tax year 2025 and does not cover the exit charge on crypto added by Decreto-Lei 97/2026"
+partial: {}
 ---
 
 # Portugal: tax pack
@@ -14,7 +13,7 @@ Calendar tax year for individuals; companies use the calendar year unless they a
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | pt-irs-employees-investment (employees, pensioners, capital income, rent and capital gains, tax year 2026); pt-income-tax (self-employed, Category B, tax year 2025); portugal-crypto-tax | partial: Category B and crypto carry 2025 figures |
+| IT-IND, individual income tax | pt-irs-employees-investment (employees, pensioners, capital income, rent and capital gains, tax year 2026); pt-income-tax (self-employed, Category B, tax year 2026); portugal-crypto-tax (crypto gains, rewards, mining and the exit charge on leaving, tax year 2026) | source-cited draft |
 | IT-CORP, corporate income tax | pt-corporate-tax | source-cited draft |
 | VAT | pt-vat-return, portugal-vat-return | source-cited draft |
 | SC, social contributions | pt-social-contributions (self-employed, tax year 2026); employee and employer rates inside portugal-payroll (tax year 2026) | source-cited draft |
@@ -22,7 +21,7 @@ Calendar tax year for individuals; companies use the calendar year unless they a
 | TP, transfer pricing | pt-transfer-pricing | source-cited draft |
 | XB, cross-border | pt-cross-border (residence, non-residents, exit tax, outbound withholding, tax year 2026); pt-foreign-source-treaties (foreign income of residents, foreign tax credit, tax year 2026); pt-nhr-ifici | source-cited draft |
 
-The coverage report counts a domain as present when a skill's slug matches it, and counts a domain listed under `partial` as missing. It does not check tax year. Gaps: IT-IND has the gaps named above.
+The coverage report counts a domain as present when a skill's slug matches it, and counts a domain listed under `partial` as missing. It does not check tax year. Gaps: none listed.
 
 Other skills in this folder (bookkeeping, e-invoicing, financial statements, formation, tax optimisation, return assembly) belong to the accounting milestone and are not counted here.
 
