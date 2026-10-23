@@ -19,7 +19,7 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 |---|---|---|
 | IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft; partial: ch-lump-sum on tax year 2025 |
 | IT-CORP, corporate income tax | ch-corporate-income-tax | source-cited draft |
-| VAT | ch-vat-return, switzerland-vat | source-cited draft |
+| VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return points to it | source-cited draft |
 | SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | source-cited draft |
 | PR, payroll withholding | ch-payroll | source-cited draft |
 | TP, transfer pricing | ch-transfer-pricing | source-cited draft |
@@ -41,3 +41,5 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 - BSV, Masszahlen berufliche Vorsorge 2025/2026: https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf (read 2026-10-23)
 - Kantonales Steueramt Zürich, Quellensteuer-Tarife 2026: https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html (read 2026-10-23)
 - Kantonales Steueramt Zürich (worked example canton): https://www.zh.ch/de/steuern-finanzen/steuern.html (read 2026-10-22)
+- Fedlex, Mehrwertsteuergesetz (MWSTG), SR 641.20: https://www.fedlex.admin.ch/eli/cc/2009/615/de (read 2026-10-23)
+- Fedlex, Zinssatzverordnung EFD, SR 631.014: https://www.fedlex.admin.ch/eli/cc/2025/564/de (read 2026-10-23)
