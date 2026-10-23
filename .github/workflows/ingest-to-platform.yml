@@ -62,8 +62,11 @@ jobs:
             echo "No human-edited guide files in this push."; exit 0
           fi
           echo "Ringing platform for $COUNT file(s)."
-          curl -sf -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
+          # Print the status and the start of the reply, so a failure says why
+          # (401 = secret mismatch, 400 = bad body, 5xx = platform error).
+          STATUS=$(curl -s -o resp.txt -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
             -H "Authorization: Bearer $SECRET" \
             -H "Content-Type: application/json" \
-            -d "$BODY" \
-            | head -c 200
+            -d "$BODY") || STATUS=000
+          echo "Platform answered HTTP $STATUS: $(head -c 300 resp.txt 2>/dev/null)"
+          case "$STATUS" in 2*) ;; *) exit 1 ;; esac

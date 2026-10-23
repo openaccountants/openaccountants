@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 2.2
+version: 2.3
 verified_by: pending
 ---
 
@@ -35,7 +35,7 @@ Every individual who has income taxable in Greece for 2026:
 
 Every person aged 18 or over must declare all income, taxed or exempt, electronically (art. 67(1)). Married couples and registered partners file one joint return, with tax assessed separately for each spouse, unless one of them elects separate returns by 28 February of the filing year (art. 67(4)).
 
-Out of scope here: capital gains on property and securities (arts. 41 to 42), the inbound regimes 5A, 5B and 5C (see `gr-cross-border`), farmers' special rules, and seafarers and other groups taxed at flat rates under art. 15(2).
+Out of scope here: capital gains on property and securities (arts. 41 to 42, see `gr-capital-gains`), the inbound regimes 5A, 5B and 5C (see `gr-cross-border`), farmers' special rules, and seafarers and other groups taxed at flat rates under art. 15(2).
 
 ## Rates, bands and thresholds
 
