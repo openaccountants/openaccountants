@@ -39,7 +39,7 @@ This skill computes the monthly withholding an employer takes from pay in 2026. 
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Employee social security deducted first | 13.07% of gross pay (less any social work bonus) | 2026 | [RSZ instructions 2026/3](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html); see `belgium-payroll` |
+| Employee social security deducted first | 13.07% of gross pay (blue-collar: of gross at 108%), less any social work bonus | 2026 | [RSZ instructions 2026/3](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html); see `belgium-payroll` |
 | Flat-rate professional expenses, employees | 30% of annual gross after social security, capped at EUR 6,070 (cap reached at EUR 20,233.33) | 2026 | [Key formula 2026, nr. 8](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75) |
 | Flat-rate professional expenses, directors | 3%, capped at EUR 3,200 (cap reached at EUR 106,666.67) | 2026 | Key formula 2026, nr. 8 |
 | Withholding scale (annex 1) | 26.75% to EUR 16,710; EUR 4,469.93 + 42.80% to EUR 29,500; EUR 9,944.05 + 48.15% to EUR 51,050; EUR 20,320.38 + 53.50% above | 2026, whole year | [Key formula 2026, annex 1](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/821b117c-eebc-497a-8297-ed2bb1e99d75) |
@@ -57,15 +57,15 @@ This skill computes the monthly withholding an employer takes from pay in 2026. 
 | Spouse with own earned income up to EUR 290 net a month | EUR 1,740 | 2026 | Key formula annex 4; KB 27 September 2026, art. 7 |
 | Spouse with only pensions up to EUR 579 net a month | EUR 3,474 | 2026 | Same |
 | Work bonus reduction (fiscal work bonus in withholding) | 33.14% of part A; part B 52.54% to 31 July, 63% from 1 August | 2026 | Key formula nr. 20; [KB 24 July 2026, art. 4 and 7](https://www.ejustice.just.fgov.be/eli/besluit/2026/07/24/2026005690/staatsblad) |
-| Overtime reduction | 57.75% (50% or 100% premium hours) or 66.81% (20% premium hours) of the gross pay base, first 180 hours a year | 2026 | Key formula nr. 18; KB 24 July 2026, art. 2 |
+| Overtime reduction | 57.75% (50% or 100% premium hours) or 66.81% (20% premium hours) of the gross pay base, first 180 hours a year (360 in hotels, 280 in qualifying road and rail works) | 2026 | Key formula nr. 18; KB 24 July 2026, art. 2 and 7 |
 | Group insurance and pension contributions withheld | 30% of the employee's contribution | 2026 | Key formula nr. 17 |
 | Low-paid statutory public servants | EUR 7.50 a month if taxable pay is EUR 742.26 to 2,722.91 | 2026 | Key formula nr. 19 |
 | Holiday pay and other exceptional pay | 0% to 53.50% by annual normal gross pay (table below) | 2026 | [Annex III 2026, nr. 53](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a38f6c59-3ab9-49d3-8844-d39f91387663) |
-| Holiday pay paid by a holiday fund (blue-collar) | 17.16% up to EUR 1,740; 23.22% above | 2026 | Annex III 2026, nr. 69 |
+| Holiday pay paid by a holiday fund (blue-collar) | 17.16% of the whole amount if it is up to EUR 1,740; 23.22% of the whole amount if it is above | 2026 | Annex III 2026, nr. 69 |
 | Quarterly payment threshold | Withholding on the previous year's income under EUR 51,480 | Income 2026 | [Art. 412 WIB 92](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/473ac660-d80e-4181-ab8e-e3544b57ffa8) |
 | Late payment interest | 4% a year | Current | [FOD Financiën, betaling](https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/betaling); [art. 414](https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5) |
 
-The scale rates are the income tax rates of art. 130 WIB 92 (25%, 40%, 45%, 50%) raised by 7% for local surcharges (key formula nr. 5). The real municipal surcharge depends on the commune and is settled in the annual return, not in withholding.
+The scale builds in a 7% increase for local surcharges (key formula nr. 5): 26.75%, 42.80%, 48.15% and 53.50% are 25%, 40%, 45% and 50% times 1.07. Its band limits (EUR 16,710, 29,500, 51,050) are not those of art. 130 WIB 92 for income 2026 (EUR 16,720, 29,510, 51,070), and the KB of 27 September 2026 did not change the scale. The final tax, with the commune's actual surcharge, is settled in the annual return (`be-employee-income-tax`).
 
 Exceptional pay rates (Annex III 2026, nr. 53), by annual normal gross pay:
 
@@ -87,7 +87,7 @@ Exceptional pay rates (Annex III 2026, nr. 53), by annual normal gross pay:
 
 The key formula has five steps (key formula nr. 6). Round every amount to the cent at each step (nr. 3).
 
-1. **Annual gross.** Take the month's gross taxable pay, including benefits in kind, and deduct employee social security (13.07%, after any social work bonus). For directors under the self-employed statute, deduct instead EUR 385 up to EUR 1,465 a month, plus 21.5% of the slice to EUR 6,310, plus 14.5% of the slice to EUR 9,290, at most EUR 1,858.78 (nr. 7). Multiply by 12.
+1. **Annual gross.** Take the month's gross taxable pay, including benefits in kind, and deduct employee social security (13.07%, on gross at 108% for blue-collar workers, after any social work bonus). For directors under the self-employed statute, deduct instead EUR 385 up to EUR 1,465 a month, plus 21.5% of the slice to EUR 6,310, plus 14.5% of the slice to EUR 9,290, at most EUR 1,858.78 (nr. 7). Multiply by 12.
 2. **Annual net.** Deduct the flat-rate professional expenses: 30% capped at EUR 6,070 for employees, 3% capped at EUR 3,200 for directors (nr. 8). Actual expenses play no role in withholding.
 3. **Annual tax.**
    - Single person, or spouse with own earned income: apply the scale to the annual net, then deduct the tax on the tax-free amount (EUR 2,987.98 to October; EUR 3,089.63 from November) (nr. 11 a).
@@ -95,7 +95,7 @@ The key formula has five steps (key formula nr. 6). Round every amount to the ce
    - Deduct the reductions for children and other family charges (annexes 3 to 5). A disabled child counts as two. Reductions cannot take the tax below zero (nr. 13).
    - Non-residents who do not meet the 75% full-year test: scale only, no tax-free amount, no reductions (nr. 12).
 4. **Monthly withholding.** Divide the annual tax by 12 (nr. 16).
-5. **Other reductions,** in this order: 30% of group insurance and pension contributions withheld; overtime; low-paid public servants; the work bonus (33.14% of part A, 63% of part B from 1 August 2026). The result cannot be negative (nrs. 17 to 21).
+5. **Other reductions,** in this order: 30% of group insurance and pension contributions withheld; overtime (not for overtime already exempt under art. 38, § 1, first paragraph, 29°/1 and 30° WIB 92); low-paid public servants; the work bonus (33.14% of part A, 63% of part B from 1 August 2026). The result cannot be negative (nrs. 17 to 21).
 
 **Pay that is not monthly.** Fortnightly pay: after social security, multiply by 2 to get a month, run the five steps, divide the result by 2. Weekly: multiply by 4 and divide by 4. Per working day: multiply by 20 and divide by 20 (nr. 22).
 
@@ -116,12 +116,11 @@ The key formula has five steps (key formula nr. 6). Round every amount to the ce
 - **Late payment interest** runs per calendar month at 4% a year on the unpaid amount rounded down to EUR 10, from the first day of the month after the due date. For withholding paid late, a further half month of interest is due for the month the payment fell due. Interest under EUR 5 a month is not charged (art. 414 WIB 92; FOD Financiën, betaling).
 - **Administrative fines** of EUR 50 to EUR 1,250 per infringement apply to breaches of the Code and its decrees, such as a late or missing return. The scale is set by royal decree (art. 445, § 1 WIB 92).
 - **Tax increases** of 10% to 200% apply where a return wrongly claims an exemption from paying over withholding (art. 444, second paragraph WIB 92).
-- An employer who fails to withhold remains liable for the withholding that was due.
 
 ## Cross-border points
 
 - A non-resident employee working in Belgium for a full year under contracts covering at least 75% of normal working time is withheld like a resident. Other non-residents get no tax-free amount and no family reductions (key formula nr. 11 B and 12).
-- For a spouse with tax-free income above EUR 11,550 under a treaty or from certain grants, or (non-residents) foreign earned income above EUR 11,550, the couple is not treated as a one-income couple from 1 November 2026 (KB 27 September 2026, art. 1).
+- Married people are withheld on as single (no marital quotient) if the spouse has earned income exempt under a treaty above a limit or, for non-residents, treaty-exempt or foreign earned income above that limit: EUR 13,790 a year to October (Annex III 2026, nr. 4.2). From 1 November 2026 the limit is EUR 11,550, and a study grant above EUR 11,550 that builds social security rights counts too (KB 27 September 2026, art. 1).
 - Frontier workers, treaty exemptions, the inbound regime and which country taxes the pay: `be-cross-border`. Social security coordination (A1 certificates): `belgium-payroll` and `be-cross-border`.
 
 ## Worked examples
@@ -217,7 +216,8 @@ expected:
 | WIB 92 art. 414 (income 2026), late payment interest | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5 | 2026-10-23 |
 | WIB 92 art. 444 (income 2026), tax increases | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0 | 2026-10-23 |
 | WIB 92 art. 445 (income 2026), administrative fines | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f9f2e45e-5e3b-4642-a5e3-31ad4ca7f25f | 2026-10-23 |
-| WIB 92 art. 130 and 131 (income 2026), scale and tax-free amount | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
+| WIB 92 art. 130 (income 2026), tax scale | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-10-23 |
+| WIB 92 art. 131 (income 2026), tax-free amount | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
 | FOD Financiën, vennootschapsbelasting betalen (late payment interest 4%) | https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/betaling | 2026-10-23 |
 
-Not yet confirmed: no consolidated key formula for the rules from 1 November 2026 was published at the date read; the November figures come from the KB of 27 September 2026 and the FOD simulator. The FOD aangifte page still gives the quarterly threshold as EUR 50,240 "in 2025"; the EUR 51,480 figure is the income 2026 text of art. 412. The form number of the withholding return (274) and the royal decree scale of fines under art. 445 were not read. The exceptional pay rates of nr. 53 to 57 were read only in the January 2026 Annex III; whether they are applied before or after employee social security was not re-read for this skill. The work bonus amounts that feed step 5 are in `belgium-payroll`.
+Not yet confirmed: no consolidated key formula for the rules from 1 November 2026 was published at the date read; the November figures come from the KB of 27 September 2026 and the FOD simulator. The FOD aangifte page still gives the quarterly threshold as EUR 50,240 "in 2025"; the EUR 51,480 figure is the income 2026 text of art. 412. The form number of the withholding return (274) and the royal decree scale of fines under art. 445 were not read. The exceptional pay rates of nr. 53, 55 to 57 and 69 are from the January 2026 Annex III; the KB of 27 September 2026 changes only the nr. 54 limits. Annex III does not say in nr. 53 whether the rate is applied to the payment before or after employee social security; nr. 25.1 deducts social security only for monthly pay. The rule that an employer who fails to withhold stays liable was removed because no source was read. The work bonus amounts that feed step 5 are in `belgium-payroll`.
