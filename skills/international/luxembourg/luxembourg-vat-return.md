@@ -35,7 +35,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 |---|---|---|---|
 | Standard rate (art. 39(3), art. 40(2)) | 17% | 2026 | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
 | Intermediate rate, annex C: wine of 13% alcohol or less, solid mineral fuels and fuel oils, cleaning products, advertising print, heat not from a heating network, custody of securities, credit management by a third party | 14% | 2026 | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
-| Reduced rate, annex A: gas, electricity, network heat, firewood, plants and flowers, hairdressing, small repairs, cleaning of private homes, bicycles | 8% | 2026 | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
+| Reduced rate, annex A: gas, electricity, network heat, firewood, plants and flowers, hairdressing, repair of household appliances, shoes, leather goods, clothing and household linen, window cleaning and cleaning of private homes, bicycles (including their hire and repair) | 8% | 2026 | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
 | Super-reduced rate, annex B: food (not alcohol), books and newspapers, children's clothing and shoes, water, medicines, restaurant services (not alcohol), accommodation, passenger transport, admissions, waste collection, authors and performers, certain housing works, solar panels on homes | 3% | 2026 | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf |
 | Franchise threshold, Luxembourg annual turnover net of VAT (art. 57bis(1)) | EUR 50,000 | 2025 onward | https://pfi.public.lu/fr/professionnel/tva/sme.html |
 | Tolerance in the year it is crossed (art. 57bis(6)) | 10% (to EUR 55,000) | 2025 onward | https://pfi.public.lu/fr/professionnel/tva/sme.html |
@@ -58,13 +58,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Obligation | Deadline | Source |
 |---|---|---|
-| Monthly return and payment | Before the 15th day of the month after the month (art. 64(6)) | LTVA; guichet.lu |
-| Quarterly return and payment | Before the 15th day of the quarter after the quarter. Q2 2026: before 15 July 2026 | guichet.lu |
+| Monthly return and payment | Before the 15th day of the month after the month (art. 64(6)): the law says "avant le quinzième jour", so the last day is the 14th | LTVA; guichet.lu |
+| Quarterly return and payment | Before the 15th day of the first month after the quarter, so by the 14th. Q2 2026: by 14 July 2026 | AED, déclarations; guichet.lu |
 | Annual return for monthly and quarterly filers, and balance | Before 1 May of the following year (art. 64(7)). 2026: before 1 May 2027 | LTVA; guichet.lu |
 | Annual return for annual-only filers (turnover up to EUR 112,000), and payment | Before 1 March of the following year (art. 64(9)(a); guichet.lu). 2026: before 1 March 2027 | LTVA; guichet.lu |
 | Business that stops trading | Final return within two months of stopping (art. 64(7)) | LTVA |
 | Franchise business | No return, if it has no tax to pay and made no cross-border B2B services; tell the AED its prior-year turnover in writing before 1 March (art. 57bis(4)) | LTVA |
-| Recapitulative statement (intra-EU goods and B2B services) | Before the 15th of the month (or quarter, for goods under EUR 50,000) after the period; the 25th when filed electronically | AED, état récapitulatif |
+| Recapitulative statement (intra-EU goods and B2B services) | Before the 25th of the month after the period when filed electronically, which is the rule (art. 64bis(3) and (4)); before the 15th only for a paper statement a regulation allows. Monthly, or quarterly for intra-EU supplies of goods under EUR 50,000 a quarter and, by choice, for services | LTVA; AED, état récapitulatif |
 
 Returns are filed electronically through eCDF (art. 64(8)); payment goes to the AED's central receipt office and must name the VAT number and period (AED, paiement). The AED reviews the filing frequency each year from the turnover, so the frequency can change from one year to the next. Returns filed for a period other than the one the business is registered for are not taken into account.
 
@@ -97,7 +97,7 @@ Fines are set by the AED director and are payable within one month of notice; a 
 
 A consultancy in Esch-sur-Alzette had 2025 turnover of EUR 300,000, so it files quarterly plus an annual return. For April to June 2026 it invoiced EUR 30,000 net to Luxembourg clients at 17%. It paid EUR 2,000 for a US software subscription, which is reverse-charged at 17%. Input VAT on Luxembourg invoices is EUR 2,100.
 
-Output VAT is 5,100, plus 340 on the reverse charge, EUR 5,440. Input VAT is 2,100 plus 340, EUR 2,440. The return shows EUR 3,000 to pay, filed on eCDF and paid before 15 July 2026. If the payment is 60 days late, the late-payment fine under art. 77(1) cannot exceed 10% a year: 3,000 x 10% x 60 / 365 = EUR 49.32 at most.
+Output VAT is 5,100, plus 340 on the reverse charge, EUR 5,440. Input VAT is 2,100 plus 340, EUR 2,440. The return shows EUR 3,000 to pay, filed on eCDF and paid by 14 July 2026 (before the 15th, art. 64(6)). If the payment is 60 days late, the late-payment fine under art. 77(1) cannot exceed 10% a year: 3,000 x 10% x 60 / 365 = EUR 49.32 at most.
 
 ```oa-check
 name: Luxembourg quarterly return Q2 2026 with reverse charge and late-payment fine cap
@@ -163,7 +163,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| AED, coordinated LTVA at 1 January 2026 (arts. 39, 40, 54, 55, 57 to 57quater, 61, 64, 73 to 80, 85; annexes A to C) | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf | 2026-10-23 |
+| AED, coordinated LTVA at 1 January 2026 (arts. 39, 40, 54, 55, 57 to 57quater, 61, 64, 64bis, 73 to 80, 85; annexes A to C) | https://pfi.public.lu/dam-assets/pdf/legislation/tva/loi/loi-tva-2026-01-01.pdf | 2026-10-23 |
 | AED, publication page for the 2026 coordinated text | https://pfi.public.lu/fr/publications/textes-de-loi/tva010126.html | 2026-10-23 |
 | Legilux, law of 20 December 2024 amending the LTVA (Mémorial A 574) | https://legilux.public.lu/eli/etat/leg/loi/2024/12/20/a574/jo | 2026-10-23 |
 | AED, SME franchise from 1 January 2025 | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
@@ -174,4 +174,4 @@ expected:
 | AED, recapitulative statement | https://pfi.public.lu/fr/professionnel/tva/en-cours-activite-economique/etat-recapitulatif.html | 2026-10-23 |
 | Guichet.lu, VAT return frequency and deadlines | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/tva/declarations/declaration-tva.html | 2026-10-23 |
 
-Not yet confirmed: the AED coordinated text is not binding and the consolidated text on Legilux was not available, so article wording should be checked against the Mémorial before a dispute; the grand-ducal regulation that sets the EUR 112,000 and EUR 620,000 filing bands was not read (the figures come from the AED and Guichet.lu pages); whether "before the 15th" allows filing on the 15th itself was not settled.
+Not yet confirmed: the AED coordinated text is not binding and the consolidated text on Legilux was not available, so article wording should be checked against the Mémorial before a dispute; the grand-ducal regulation that sets the EUR 112,000 and EUR 620,000 filing bands was not read (the figures come from the AED and Guichet.lu pages).
