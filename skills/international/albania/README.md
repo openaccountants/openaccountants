@@ -2,9 +2,7 @@
 jurisdiction: AL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  PR: "albania-payroll is still on tax year 2025 and rests on secondary sources (Playroll, Wise); its 10% late payment penalty contradicts Law 9920/2008 art. 114 (0.06% a day, at most 365 days)"
-  SC: "albania-social-contributions is still on tax year 2025 and has not been checked against the 2026 contribution law and minimum wage"
+partial: {}
 covered_by: {}
 ---
 
