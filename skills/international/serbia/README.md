@@ -2,8 +2,7 @@
 jurisdiction: RS
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  VAT: "serbia-vat does not cover the cash accounting scheme (Article 36a), the special schemes for travel agencies and for second-hand goods, art and antiques, or the special scheme for investment gold, and the POPDV field-by-field rules are not read from the PDV Rulebook"
+partial: {}
 covered_by:
   XB: rs-cross-border
 ---
@@ -23,6 +22,8 @@ Calendar tax year for individuals and, by default, for companies. Authority: the
 | PR, payroll withholding | serbia-payroll | source-cited draft |
 | TP, transfer pricing | rs-transfer-pricing | source-cited draft |
 | XB, cross-border | rs-cross-border | source-cited draft |
+
+Not covered in depth, by design (niche regimes, not a group most clients belong to): the VAT cash accounting scheme (Article 36a), the special schemes for travel agencies, second-hand goods and investment gold, and a field-by-field POPDV map. serbia-vat refers these out.
 
 ## Official sources
 
