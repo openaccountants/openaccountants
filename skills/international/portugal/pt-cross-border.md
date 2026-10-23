@@ -20,7 +20,7 @@ Sibling skills, which this one links to and does not repeat:
 - `pt-nhr-ifici`: the old NHR regime and IFICI (20% rate), the activity lists, the registration steps. This skill only runs the IFICI entry test for a new arrival.
 - `pt-irs-employees-investment`: the 2026 IRS bands, the specific deductions and the resident computation. The band table below is copied from there and was re-read today.
 - `pt-income-tax`: self-employed income (Category B). Tax year 2025.
-- `portugal-crypto-tax`: crypto, including the deemed sale of crypto on loss of residence added by Decreto-Lei 97/2026.
+- `portugal-crypto-tax`: crypto, including the deemed sale of crypto on loss of residence (CIRS art. 10(25), numbered art. 10(22) before Decreto-Lei 97/2026 renumbered it).
 - `pt-corporate-tax`: IRC rates, the participation exemption on dividends paid to EU and treaty parents (CIRC art. 14(3)), payments on account.
 - `pt-transfer-pricing`: related-party pricing, including the exit values of assets moved abroad.
 
@@ -61,8 +61,10 @@ A day of presence is any day, full or part, that includes a night spent in Portu
 | Non-resident with a Portuguese permanent establishment | 25% autonomous rate on its income | 2026 | CIRS art. 72(6)(a) |
 | Non-resident individual, dividends and interest from Portuguese payers | 28% final withholding | 2026 | CIRS art. 71(1)(a) |
 | Non-resident individual, rent from residential leases | 25% autonomous rate | 2026 | CIRS art. 72(2) |
+| Residential leases for permanent housing of 5 to under 10 years / 10 to under 20 years / 20 years or more | 25% less 10 / 15 / 20 points (the rule is not limited to residents) | 2026 | CIRS art. 72(3) to (5) |
 | Non-resident individual, other rent (shops, offices) | 28% autonomous rate | 2026 | CIRS art. 72(1)(e) |
 | Non-resident individual, other income not withheld | 28% autonomous rate | 2026 | CIRS art. 72(1)(b) |
+| Non-resident individual, gain on Portuguese property (not through a permanent establishment) | 50% of the gain is included and aggregated; the art. 68 rate is set on all income, foreign included. The old 28% rate of art. 72(1)(a) is repealed | 2026 | CIRS art. 43(2)(b), art. 22(3)(a) and (10): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx |
 | Capital income paid to a holder in a listed low-tax place, or to an account for unidentified third parties | 35% | 2026 | CIRS art. 71(17); CIRC art. 87(4)(h) and (i): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx |
 | Non-resident company without a permanent establishment, general IRC rate | 25% | 2026 | CIRC art. 87(4) |
 | IRC withholding, general rate / directors' fees | 25% / 21.5% | 2026 | CIRC art. 94(4): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc94.aspx |
@@ -80,7 +82,7 @@ A day of presence is any day, full or part, that includes a night spent in Portu
 | Bank guarantee if AT fears non-collection | Tax plus 25% | 2026 | CIRC art. 83(4) |
 | Parent-Subsidiary exemption on dividends to an EU, EEA or treaty parent | Holding at least 10%, held 1 year | 2026 | CIRC art. 14(3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc14.aspx (detail in `pt-corporate-tax`) |
 | Interest and Royalties Directive exemption | Direct holding of at least 25%, held 2 years without interruption | 2026 | CIRC art. 14(12) and (13)(b) |
-| Treaty relief form validity | 1 year (2 years for the directive interest and royalties form) | 2026 | CIRC art. 98(3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc98.aspx |
+| Treaty relief form (21-RFI) validity | At most 1 year from the certificate's issue, and it ends earlier on the last day of the tax period the certificate covers; the directive interest and royalties form (MOD. 01-DJR) lasts 2 years per contract | 2026 | CIRC art. 98(3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc98.aspx; CIRS art. 101-C(4) for individuals; AT FAQ 4201, 4203, 5642 |
 | A1 posting, EU rules | Up to 24 months; longer only by exception agreement | 2026 | Segurança Social, practical guide on postings from Portugal (Reg. 883/2004 art. 12): https://www.seg-social.pt/ptss/pssd/documento/cmc2117bg00thkl2y1r0iz21r |
 
 ## The taxable base
@@ -97,9 +99,9 @@ A day of presence is any day, full or part, that includes a night spent in Portu
 
 The option is made in the Modelo 3, within the normal filing period, with proof of the conditions (art. 17-A(6)). AT may ask for documents, to be supplied within 30 days (art. 17-A(7)).
 
-**Option 2: art. 72(15) and (16) (no 90% test).** An EU or EEA resident may opt to have the art. 72(1)(b) and (e) income and the art. 72(6) income taxed at the art. 68 rate that would apply to a resident, worked out on all their income, including foreign income. Art. 72(1)(e) is non-residential rent. Art. 72(6) covers permanent establishment income and salary or pensions that were not withheld.
+**Option 2: art. 72(15) and (16) (no 90% test).** An EU or EEA resident may opt to have the art. 72(1)(b) and (e) income and the art. 72(6) income taxed at the art. 68 rate that would apply to a resident, worked out on all their income, including foreign income. Art. 72(1)(e) is rent not covered by art. 72(2), that is non-residential rent. Art. 72(6) covers permanent establishment income and salary or pensions that were not withheld. Art. 72(15) does not list art. 72(2), so residential rent cannot use this option; it reaches the resident bands only through art. 17-A.
 
-**Option 3: refund under art. 71(11) to (13).** An EU or EEA resident who suffered final withholding on salary, directors' fees, royalties, business income, services, pensions or performers' fees (art. 18(1)(a) to (d), (f), (m) and (o)) may ask for back the excess over the tax at the art. 68 bands on all their income. Costs directly tied to the Portuguese income, or the art. 25 deduction for salary, are deductible (art. 71(12)). The request goes to AT within two years from the end of the year after the year the income arose. AT refunds within three months of receiving full proof, or pays interest (art. 71(13)). AT informs the state of residence (art. 71(16)).
+**Option 3: refund under art. 71(11) to (13).** An EU or EEA resident who suffered final withholding on salary, directors' fees, royalties, business income, services, pensions or performers' fees (art. 18(1)(a) to (d), (f), (m) and (o)) may ask for back the excess over the tax at the art. 68 bands on all their income. Costs directly tied to the Portuguese income, or the art. 25 deduction for salary, are deductible (art. 71(12)). The request goes to AT within two years counted from the end of the calendar year after the year the income arose. AT refunds by the end of the third month after the month the full proof is presented, or pays interest (art. 71(13)). AT informs the state of residence (art. 71(16)).
 
 **Which to use.** The flat rate wins when the person's worldwide income puts them in the top bands. The resident rates win when Portuguese income is modest and foreign income is small. Example 1 runs the test.
 
@@ -112,11 +114,11 @@ The option is made in the Modelo 3, within the normal filing period, with proof 
 - the option is made in the return for the period of cessation, with a form listing the assets; AT may ask for a bank guarantee of the tax plus 25% (art. 83(4));
 - the first instalment is due by the return deadline, the others by the last day of May each year (art. 83(7)).
 
-The instalments stop, and the remaining tax falls due, if the assets are sold or leave the activity, are moved outside the EU/EEA, the company moves outside the EU/EEA, or it enters insolvency or liquidation (art. 83(16) to (19)). Gains on shareholdings may use the participation exemption of art. 51-C if its conditions are met at the date of cessation (art. 83(15)).
+The instalments stop if the assets are sold, cease or leave the activity, or are moved outside the EU/EEA: the tax on those assets is due by the end of May of the next year (art. 83(16)(a) and (b), (17)(a)). If the company moves outside the EU/EEA, all remaining tax is due by the date of the move (art. 83(16)(c), (17)(b)). Insolvency or liquidation makes every instalment due (art. 83(16)(d), (19)). Gains on shareholdings may use the participation exemption of art. 51-C if its conditions are met at the date of cessation (art. 83(15)).
 
 **Permanent establishments.** The same rules apply when a non-resident company's Portuguese permanent establishment stops trading, or when its assets are moved out of Portugal (CIRC art. 84(1)). The five-instalment option applies if the assets go to another EU or qualifying EEA state (art. 84(2)).
 
-**Individuals leaving.** For individuals, the CIRS text read today has an exit charge only for crypto assets (Decreto-Lei 97/2026; see `portugal-crypto-tax`). Shares and other assets are not taxed on departure under the articles read for this skill.
+**Individuals leaving.** For individuals, the CIRS text read today has an exit charge only for crypto assets: loss of residence counts as a sale of crypto (CIRS art. 10(25), numbered art. 10(22) before Decreto-Lei 97/2026; the gain is market value at departure less cost, art. 43(12); see `portugal-crypto-tax`). Shares and other assets are not taxed on departure under the articles read for this skill.
 
 ## Deadlines and filing
 
@@ -128,11 +130,11 @@ The instalments stop, and the remaining tax falls due, if the assets are sold or
 | IFICI request for a 2026 arrival | By 15 January 2027 | Portaria 352/2024/1 art. 2(1), via `pt-nhr-ifici` |
 | Withheld IRC paid to the State | By the 20th of the month after the deduction | CIRC art. 94(6) |
 | Form 21-RFI (relief at source) in the payer's hands | By the deadline for paying over the tax that would have been withheld | CIRC art. 98(2) |
-| Refund claim (forms 22-RFI to 24-RFI) where tax was withheld in full | Within 2 years from the end of the year the income arose; AT refunds within 1 year or pays interest | CIRC art. 98(7) and (9) |
+| Refund claim (forms 22-RFI to 24-RFI) where tax was withheld in full | Within 2 years from the end of the year the income arose; AT refunds within 1 year or pays interest | CIRC art. 98(7) and (9); CIRS art. 101-C(7) and (9) for individuals |
 | Art. 71(11) refund of excess withholding (EU/EEA individuals) | Within 2 years from the end of the year after the income arose | CIRS art. 71(13) |
 | IRC exit tax instalments | First with the return for the period of cessation; then by 31 May each year | CIRC art. 83(7) |
 
-**The forms.** AT lists four treaty forms (FAQ 5635): **21-RFI** asks for full or partial relief from withholding at source; **22-RFI** asks for a refund of tax on share dividends and on interest from debt securities; **23-RFI** asks for a refund on royalties, and on dividends and interest not covered by 22-RFI; **24-RFI** asks for a refund on other income. The 21-RFI goes to the Portuguese payer. Forms 22-RFI to 24-RFI go to AT's international relations service (Direção de Serviços de Relações Internacionais) (FAQ 5637). Each needs a certificate of tax residence from the other state (CIRC art. 98(2)(a)). A 21-RFI with its certificate expires on the last day of the period the certificate covers (FAQ 4203). The payer must have the original paper, not an emailed copy (FAQ 5308). A payer who pays income to non-residents reports it on Modelo 30 (AT forms page).
+**The forms.** AT lists four treaty forms (FAQ 5635): **21-RFI** asks for full or partial relief from withholding at source; **22-RFI** asks for a refund of tax on share dividends and on interest from debt securities; **23-RFI** asks for a refund on royalties, and on dividends and interest not covered by 22-RFI; **24-RFI** asks for a refund on other income. The 21-RFI goes to the Portuguese payer. Forms 22-RFI to 24-RFI go to AT's international relations service (Direção de Serviços de Relações Internacionais) (FAQ 5637). Each needs a certificate of tax residence from the other state (CIRC art. 98(2)(a); for individuals CIRS art. 101-C(2)). A 21-RFI with its certificate is valid for at most one year from the certificate's issue and expires on the last day of the tax period the certificate covers (FAQ 4201, 4203). The Interest and Royalties Directive uses its own forms: MOD. 01-DJR for relief at source and MOD. 02-DJR for a refund (FAQ 5640). The Parent-Subsidiary exemption has no form: the payer needs, before paying, a declaration issued or authenticated by the parent's tax authority (CIRC art. 14(4); FAQ 5643). The payer must have the original paper, not an emailed copy (FAQ 5308). A payer who pays income to non-residents reports it on Modelo 30 (AT forms page).
 
 **Tax representative and the NIF.** A non-resident with income subject to IRS, and a resident who leaves Portugal for more than six months, must appoint a representative living in Portugal (CIRS art. 130(1); LGT art. 19(6)). The appointment is made in the declaration that registers the tax number (NIF), or the start or change of activity, and the representative must sign to accept (CIRS art. 130(3)). It is optional for residents of the EU or EEA (art. 130(2); LGT art. 19(8)). Outside the EU and EEA it is also not needed if the person signs up for electronic notifications (the morada única digital, the Portal das Finanças notification service, or an electronic mailbox) (LGT art. 19(15)). Without a representative, AT does not send notices, and the person cannot exercise rights such as complaints and appeals (CIRS art. 130(4); LGT art. 19(7)). Non-resident companies with Portuguese income and no permanent establishment have the same rule (CIRC art. 126).
 
@@ -149,7 +151,7 @@ The instalments stop, and the remaining tax falls due, if the assets are sold or
 
 ## Cross-border points
 
-- **Treaties come first for withholding.** No Portuguese withholding, or a reduced rate, applies where a treaty gives Portugal no taxing right or a limited one, but only if the 21-RFI and the residence certificate reach the payer in time (CIRC art. 98(1) and (2)). Without a treaty in force there is no relief at source (AT FAQ 457 group).
+- **Treaties come first for withholding.** No Portuguese withholding, or a reduced rate, applies where a treaty gives Portugal no taxing right or a limited one, but only if the 21-RFI and the residence certificate reach the payer in time (CIRC art. 98(1) and (2); CIRS art. 101-C(1) to (3) for individuals). Relief at source can also come from domestic law, such as the CIRC art. 14 directive exemptions (art. 98(1)).
 - **Dividends to companies.** Exempt under CIRC art. 14(3) for qualifying EU, EEA or treaty parents (10% for 1 year); otherwise 25% (art. 87(4)), or 35% to a listed low-tax place (art. 87(4)(i)). See `pt-corporate-tax` for the full conditions and the anti-abuse rule.
 - **Interest and royalties to EU associated companies.** Exempt if the recipient is the beneficial owner, subject to tax without exemption, takes a listed legal form, and the 25% direct holding has been held for 2 years (CIRC art. 14(12) and (13)). Not available if third-country residents control the recipient, unless it is shown that tax reduction was not a main purpose (art. 14(15)(a)). An amount above arm's length does not get the exemption (art. 14(15)(b)). Swiss companies have the same relief (art. 14(16)). The directive form lasts 2 years per contract (art. 98(3)(a)).
 - **Individuals moving out** stay liable in Portugal on Portuguese-source income after leaving (art. 15(2)). Check art. 16(14) before treating the year as split.
@@ -164,8 +166,8 @@ Claire lives in France and is tax resident there. In 2026 she lets her Lisbon fl
 
 1. **The 90% test.** Portuguese income is 14,400 / (14,400 + 1,000) = 93.5% of her total. That is at least 90%, so she can opt under art. 17-A. (The ratio is above 90% on net figures too.)
 2. **Flat rate.** Residential rent of a non-resident: 25% x 13,000 = EUR 3,250.00 (art. 72(2)).
-3. **Art. 17-A.** Taxable income includes foreign income. Her pension of EUR 1,000 is below EUR 4,587.09, so the art. 53 deduction removes all of it. Taxable income is EUR 13,000, all Portuguese. Tax = 12,587 x 13.579% + (13,000 - 12,587) x 21.20% = 1,709.19 + 87.56 = EUR 1,796.74.
-4. **Result.** The option saves EUR 1,453.26. She files a Modelo 3 between 1 April and 30 June 2027 with Anexo F, makes the election and attaches proof of French residence and of her worldwide income. If she has health or other expenses that France does not allow, she may also claim the art. 78 deductions (art. 17-A(4)). France will then tax the rent under the France-Portugal treaty with its own credit. That part is outside this skill.
+3. **Art. 17-A.** Under resident rules, residential rent is taxed at 25% unless the owner opts to aggregate it (art. 72(2) and (13)). The rate of art. 17-A(3) applies to income that a resident would aggregate, so Claire also ticks the aggregation option for her rent (see Not yet confirmed). Taxable income includes foreign income. Her pension of EUR 1,000 is below EUR 4,587.09, so the art. 53 deduction removes all of it. Taxable income is EUR 13,000, all Portuguese. Tax = 12,587 x 13.579% + (13,000 - 12,587) x 21.20% = 1,709.19 + 87.56 = EUR 1,796.74.
+4. **Result.** The option saves EUR 1,453.26. She files a Modelo 3 between 1 April and 30 June 2027 with Anexo F, makes the election and attaches proof of French residence and of her worldwide income. If she has health or other expenses that France does not allow, she may also claim the art. 78 deductions (art. 17-A(4)). How France then treats the rent is outside this skill.
 
 ```oa-check
 name: PT non-resident landlord, 25% flat vs art. 17-A resident bands, 2026
@@ -206,7 +208,7 @@ Mark is British. He has never lived in Portugal. He arrives in Lisbon on 1 July 
 4. **Net Category A income.** Social security of EUR 4,620 is more than 8.54 x IAS (EUR 4,587.09), so the deduction is EUR 4,620 (art. 25(2)). Net income = 42,000 - 4,620 = EUR 37,380.
 5. **IFICI tax:** 20% x 37,380 = EUR 7,476.00.
 6. **General rates, for comparison:** 29,397 x 20.579% + (37,380 - 29,397) x 34.90% = 6,049.61 + 2,786.07 = EUR 8,835.68.
-7. **Result.** IFICI saves EUR 1,359.68 for 2026, before the deductions from the tax, which this comparison leaves out. He must tell AT about the change of status within 60 days (LGT art. 19(5)).
+7. **Result.** IFICI saves EUR 1,359.68 for 2026, before the deductions from the tax, which this comparison leaves out. The minimum-existence deduction does not apply on either route: his gross income is above 2.2 x 14 x IAS = EUR 16,543.60 (art. 70(4)(a)). He must tell AT about the change of status within 60 days (LGT art. 19(5)).
 
 ```oa-check
 name: PT arrival 1 July 2026, 183-day count and IFICI 20% vs 2026 bands
@@ -253,15 +255,20 @@ expected:
 | CIRS art. 15, scope of IRS | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs15.aspx | 2026-10-23 |
 | CIRS art. 16, residence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx | 2026-10-23 |
 | CIRS art. 17-A, option for EU/EEA residents | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs17a.aspx | 2026-10-23 |
+| CIRS art. 10, capital gains (crypto on loss of residence, n.º 25) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx | 2026-10-23 |
 | CIRS art. 18, income obtained in Portugal | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs18.aspx | 2026-10-23 |
+| CIRS art. 22, aggregation (non-residents' property gains, n.º 3(a) and 10) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-10-23 |
 | CIRS art. 25, Category A deduction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-23 |
+| CIRS art. 43, gains (50% inclusion; exit value of crypto) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-10-23 |
 | CIRS art. 53, pension deduction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx | 2026-10-23 |
 | CIRS art. 57, returns (two residence statuses) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs57.aspx | 2026-10-23 |
 | CIRS art. 60, filing period | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-23 |
 | CIRS art. 68, 2026 bands (Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 70, minimum existence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx | 2026-10-23 |
 | CIRS art. 71, final withholding rates and refunds | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-23 |
 | CIRS art. 72, special rates | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-23 |
 | CIRS art. 101, withholding on other categories | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101.aspx | 2026-10-23 |
+| CIRS art. 101-C, treaty relief and refunds for non-resident individuals | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101c.aspx | 2026-10-23 |
 | CIRS art. 130, representatives | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs130.aspx | 2026-10-23 |
 | CIRC art. 2, residence of entities | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc2.aspx | 2026-10-23 |
 | CIRC art. 4, scope of IRC | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc4.aspx | 2026-10-23 |
@@ -283,9 +290,8 @@ expected:
 
 Not yet confirmed:
 
-- Whether the art. 72(15) option covers residential rent. Its text names art. 72(1)(e) (non-residential rent) and 72(6), but not art. 72(2), the 25% residential rent added by Lei 56/2023. Example 1 uses art. 17-A, which covers all income a resident would aggregate.
+- Whether AT accepts the resident option to aggregate residential rent (art. 72(13)) inside an art. 17-A election. Art. 17-A(1) applies the rules for residents, which include that option, but no AT instruction or FAQ on the point was found. Example 1 assumes it does; without it, the rent stays at 25%.
 - Whether the 90% test in art. 17-A(1) is measured on gross or net income. Example 1 passes on both.
-- The rate for a non-resident's gain on Portuguese property. Art. 43(2) includes 50% of the gain and does not distinguish residents, but the rate for non-residents was not settled in the articles read today.
 - The text of Reg. 883/2004 itself. EUR-Lex did not load; the A1 rules above come from the Segurança Social guides.
 - The list of low-tax jurisdictions (the portaria behind the 35% rates and art. 16(6)) was not read today.
 - Whether a person with no Portuguese income in the non-resident part of a split year must still file the second return under art. 57(6), or is exempt under art. 58.
