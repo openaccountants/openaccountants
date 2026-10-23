@@ -2,8 +2,7 @@
 jurisdiction: CY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  TP: "no Tax Department simplified measures below the local file threshold, and no Cyprus safe-harbour margins for low value-adding services or back-to-back financing (circulars not read from an official copy)"
+partial: {}
 covered_by: {}
 ---
 
@@ -20,7 +19,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | VAT | cyprus-vat-return | source-cited draft |
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
 | PR, payroll withholding | cyprus-payroll | source-cited draft |
-| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools. Missing: the Tax Department's simplified measures and safe-harbour margins below the local file threshold | source-cited draft; partial: no simplified measures |
+| TP, transfer pricing | cy-transfer-pricing, including the OECD Chapter X method for intra-group loans, back-to-back financing, guarantees and cash pools, the Tax Department's minimum documentation and safe harbours below the local file threshold (Circulars 6/2023 and 5/2026) and the CUP method for back-to-back financing (Circular 7/2023) | source-cited draft |
 | XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | source-cited draft |
 
 ## Official sources

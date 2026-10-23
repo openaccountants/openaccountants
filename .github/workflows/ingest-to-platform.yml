@@ -105,19 +105,30 @@ jobs:
             case "$(basename "$f" | tr 'A-Z' 'a-z')" in readme*) continue ;; esac
             [ -f "$f" ] && echo "$f"
           done > paths.txt
-          AUTHORS=$(awk -F'\t' '{print $2"\t"$3}' commits.tsv | sort -u \
-            | jq -R -s -c 'split("\n") | map(select(length>0) | split("\t") | {name: .[0], email: .[1], login: null})')
+          # Each guide goes with the author of the last human commit that touched it,
+          # one batch per author. A single merged author list let the platform credit
+          # every guide to whichever listed author has a profile (23 Oct 2026).
+          while read -r f; do
+            git log --format='%ae%x09%an' "$SINCE..$HEAD_SHA" -- "$f" \
+              | awk -F'\t' '$1 != "sync@openaccountants.com"' | head -1 \
+              | awk -v f="$f" -F'\t' '{print $1"\t"$2"\t"f}'
+          done < paths.txt | sort > owned.tsv
           echo "$(wc -l < paths.txt) guide(s) to re-send at $HEAD_SHA"
-          split -l 200 paths.txt batch_
           FAILED=0
-          for b in batch_*; do
-            [ -s "$b" ] || continue
-            BODY=$(jq -cn --arg sha "$HEAD_SHA" --argjson authors "$AUTHORS" --rawfile p "$b" \
-              '{headSha: $sha, paths: ($p | split("\n") | map(select(length>0))), authors: $authors}')
-            STATUS=$(curl -s -o resp.txt -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
-              -H "Authorization: Bearer $SECRET" -H "Content-Type: application/json" -d "$BODY") || STATUS=000
-            echo "$b ($(wc -l < "$b") paths): HTTP $STATUS $(head -c 200 resp.txt)"
-            case "$STATUS" in 2*) ;; *) FAILED=1 ;; esac
-            sleep 20
+          cut -f1 owned.tsv | sort -u | while read -r email; do
+            awk -F'\t' -v e="$email" '$1 == e {print $3}' owned.tsv > mine.txt
+            NAME=$(awk -F'\t' -v e="$email" '$1 == e {print $2; exit}' owned.tsv)
+            rm -f batch_*; split -l 200 mine.txt batch_
+            for b in batch_*; do
+              [ -s "$b" ] || continue
+              BODY=$(jq -cn --arg sha "$HEAD_SHA" --arg n "$NAME" --arg e "$email" --rawfile p "$b" \
+                '{headSha: $sha, paths: ($p | split("\n") | map(select(length>0))), authors: [{name: $n, email: $e, login: null}]}')
+              STATUS=$(curl -s -o resp.txt -w '%{http_code}' -X POST "https://www.openaccountants.com/api/cron/github-ingest" \
+                -H "Authorization: Bearer $SECRET" -H "Content-Type: application/json" -d "$BODY") || STATUS=000
+              echo "$NAME $b ($(wc -l < "$b") paths): HTTP $STATUS $(head -c 200 resp.txt)"
+              case "$STATUS" in 2*) ;; *) echo 1 > failed.flag ;; esac
+              sleep 20
+            done
           done
+          [ -f failed.flag ] && FAILED=1
           exit $FAILED
