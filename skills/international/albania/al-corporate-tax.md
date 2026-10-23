@@ -5,18 +5,18 @@ jurisdiction: AL
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-23
+version: 0.2
 verified_by: pending
 ---
 
 # Albania corporate income tax, tax year 2026
 
-> **Source-cited draft.** Drafted from the consolidated text of Law No. 29/2023 and Law No. 9920/2008 published by the General Directorate of Taxes, read on 2026-10-22. No accountant has reviewed it. Do not file from it without review by a qualified Albanian professional.
+> **Source-cited draft.** Drafted from the consolidated texts of Law No. 29/2023 and Law No. 9920/2008, General Instruction No. 26/2023 (as amended to Instruction No. 9/2026) and Instruction No. 29/2023 on transfer pricing, published by the General Directorate of Taxes, read on 2026-10-22 and 2026-10-23. No accountant has reviewed it. Do not file from it without review by a qualified Albanian professional.
 
 Tax year: the calendar year, 1 January to 31 December (Law 29/2023, art. 6). Currency: Albanian lek (ALL). Authority: Drejtoria e Përgjithshme e Tatimeve (General Directorate of Taxes), tatime.gov.al.
 
-See also: `albania-income-tax` (individuals, self-employed, sole traders), `albania-vat`, `albania-payroll`, `albania-social-contributions`, `albania-tax-optimization`.
+See also: `albania-income-tax` (individuals, self-employed, sole traders), `al-transfer-pricing`, `albania-vat`, `albania-payroll`, `albania-social-contributions`, `albania-tax-optimization`.
 
 ## Who this applies to
 
@@ -44,7 +44,7 @@ See also: `albania-income-tax` (individuals, self-employed, sole traders), `alba
 | Automotive industry | 5% until 31 Dec 2029 | 2026 | Law 29/2023 art. 69(1)(d) |
 | Software production or development, entities registered before the law | 5% ended 31 Dec 2025; standard rules from 2026 | 2025 only | Law 29/2023 art. 69(1)(ç) |
 | 4 and 5 star "special status" hotels and resorts with an international brand | Exempt for 10 years, for structures obtaining special status by December 2026 | 2026 | Law 29/2023 art. 69(1)(b) |
-| Interest deduction cap | 30% of tax EBITDA; excess carried forward 5 years | 2026 | Law 29/2023 art. 30 |
+| Interest deduction cap | 30% of EBITDA (profit + taxes + interest + depreciation and amortisation); excess carried forward 5 years | 2026 | Law 29/2023 art. 30; [Instruction 26/2023 points 30.2, 30.4](https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf) |
 | Representation and entertainment costs | Deductible up to 0.3% of annual revenue | 2026 | Law 29/2023 art. 50(1)(g) |
 | Employee life and health insurance | Deductible up to 5% of gross wages | 2026 | Law 29/2023 art. 50(1)(ll) |
 | Loss carry-forward | 5 years, first in first out; no carry-back | 2026 | Law 29/2023 art. 54 |
@@ -78,7 +78,7 @@ See also: `albania-income-tax` (individuals, self-employed, sole traders), `alba
 - Bribes; costs linked to income excluded from taxable profit; undocumented or unreal costs.
 - Sponsorship above 5% of pre-tax profit (press, literary, cultural, sport, research) or 3% (other). Qualifying sport sponsorship by entities with taxable profit over ALL 100 million can be deducted at three times its value with a General Directorate authorisation.
 
-**Interest limitation** (art. 30). Net interest expense (interest expense in excess of taxable interest income) is deductible up to 30% of tax EBITDA. Disallowed interest carries forward five years. The rule does not apply to banks, non-bank lenders, insurers and leasing companies, or to loans for long-term public infrastructure projects where the operator, assets and income are all in Albania. Law 29/2023 contains no debt-to-equity ratio test; the limits are art. 30 and the interest rate cap in art. 50(1)(dh).
+**Interest limitation** (art. 30). Net interest expense (interest expense in excess of taxable interest income) is deductible up to 30% of EBITDA. Under General Instruction 26/2023 as amended to Instruction 9/2026, EBITDA starts from profit before tax and adds back the tax-adjusted excess interest and the tax-adjusted depreciation and amortisation (point 30.2); the worked formula is EBITDA = profit + taxes + interest expense + depreciation and amortisation (point 30.4). Exempt income is left out of EBITDA (art. 30(2)). Law 29/2023 art. 30(2) still words the starting point as taxable income; where the two give different numbers, ask before relying on the instruction's figure. Deductible interest is measured after the art. 50(1)(dh) rate cap (point 30.4). Disallowed interest carries forward five years. Worked numbers are in `al-transfer-pricing`. The rule does not apply to banks, non-bank lenders, insurers and leasing companies, or to loans for long-term public infrastructure projects where the operator, assets and income are all in Albania. Law 29/2023 contains no debt-to-equity ratio test; the limits are art. 30 and the interest rate cap in art. 50(1)(dh).
 
 **Depreciation** (art. 51), each asset individually, straight line:
 - Buildings, installations and constructions with life over 15 years: 5%.
@@ -124,7 +124,7 @@ All returns are filed electronically through e-Filing ([efiling.tatime.gov.al](h
 
 **Final payment.** Art. 61 sets the return date. It does not state a separate payment date for the balance of tax for resident entities; in practice the balance is settled with the return. See "Not yet confirmed" below.
 
-**Transfer pricing.** Taxpayers with controlled transactions above a threshold set by ministerial instruction file an annual controlled transactions notice; documentation must be produced within 45 days of a request (art. 37).
+**Transfer pricing.** Taxpayers whose controlled transactions, including loan balances, exceed ALL 50,000,000 in total in the period file an annual controlled transactions notice by the corporate return date, 31 March 2027 for tax year 2026 (art. 37(2); Instruction 29/2023 points 14.1, 14.3). Documentation must be produced within 45 days of a request (art. 37(1)). See `al-transfer-pricing`.
 
 ## Penalties and interest
 
@@ -156,9 +156,9 @@ Where a taxpayer that produced transfer pricing documentation is adjusted, it pa
 - Payments for services, except services received physically outside Albania: 15%.
 - Insurance services, directors' fees, construction and installation work, and payments for performers and sportspeople: 15%.
 
-Dividends, interest and royalties paid to Albanian residents and PEs are also subject to withholding as a final tax (art. 58(1)). No withholding applies to exempt persons, to dividends meeting the art. 29 participation exemption, to interest on Albanian government eurobonds paid to non-residents, or to interest paid to banks and financial institutions (art. 58(3)). Treaty rates can be lower; the payer must file treaty documentation by the end of the following year (Law 9920/2008 art. 115/3).
+Dividends, interest and royalties paid to Albanian residents and PEs are also subject to withholding as a final tax (art. 58(1)). No withholding applies to exempt persons, to dividends meeting the art. 29 participation exemption, to interest and capital gains on eurobonds issued by the Republic of Albania paid to non-resident entities without an Albanian PE, or to interest paid to banks and financial institutions (art. 58(3)). The eurobond rule covers entities only; for non-resident individuals, eurobond interest and gains are exempt investment income under art. 15(2)(c). Treaty rates can be lower; the payer must file treaty documentation by the end of the following year (Law 9920/2008 art. 115/3).
 
-**Low-tax jurisdictions.** Law 29/2023 has no separate withholding rate for payments to low-tax jurisdictions. Instead, transactions with residents of jurisdictions listed by ministerial instruction are "controlled transactions" under the transfer pricing rules even if the parties are unrelated (art. 32(2)(ç)).
+**Low-tax jurisdictions.** Law 29/2023 has no separate withholding rate for payments to low-tax jurisdictions. Instead, transactions with residents of the jurisdictions listed in Annex 1 to Instruction 29/2023 are "controlled transactions" under the transfer pricing rules even if the parties are unrelated (art. 32(2)(ç); Instruction 29/2023 point 3.6). The list is set out in `al-transfer-pricing`.
 
 **Not an EU member.** The EU Parent-Subsidiary and Interest-Royalties Directives do not apply. Law 29/2023 is partly aligned with the Anti-Tax Avoidance Directive (2016/1164) and the Merger Directive (2009/133/EC) (footnote 1 to the law).
 
@@ -166,7 +166,7 @@ Dividends, interest and royalties paid to Albanian residents and PEs are also su
 
 **Exit tax** (art. 47). A resident that moves assets from its Albanian head office to a foreign PE, or moves its tax residence abroad, is taxed on the market value of the assets less their tax value, unless the assets stay connected with an Albanian PE. Assets moving into Albania take market value as their tax base.
 
-**Transfer pricing** (arts. 32 to 39, 44). Arm's length principle, five OECD methods, an arm's length range with adjustment to its median, advance pricing agreements and corresponding adjustments. A detailed transfer pricing skill for Albania does not yet exist.
+**Transfer pricing** (arts. 32 to 39, 44). Arm's length principle, five OECD methods, an arm's length range with adjustment to its median, advance pricing agreements and corresponding adjustments. See `al-transfer-pricing` for the full rules, the ALL 50,000,000 notice and the Annex 1 list.
 
 ## Worked examples
 
@@ -240,6 +240,8 @@ expected:
 |---|---|---|
 | Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated to Law No. 81/2025 (General Directorate of Taxes copy) | https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf | 2026-10-22 |
 | Law No. 9920/2008 "Për procedurat tatimore", consolidated to Law No. 79/2025 (General Directorate of Taxes copy) | https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf | 2026-10-22 |
+| General Instruction No. 26 of 8.9.2023 "Për tatimin mbi të ardhurat", consolidated to Instruction No. 9 of 12.3.2026, point 30 | https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf | 2026-10-23 |
+| Instruction No. 29 of 16.11.2023 on transfer pricing and advance pricing agreements, points 3.6, 14.1, 14.3 and Annex 1 | https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf | 2026-10-23 |
 | General Directorate of Taxes, legislation list | https://tatime.gov.al/legjislacioni/ligje/ | 2026-10-22 |
 | General Directorate of Taxes, commercial companies (15% rate, 8% dividends, 0% up to ALL 14 million until 2029) | https://tatime.gov.al/entitete/?artikull=shoqerite-tregtare | 2026-10-22 |
 | General Directorate of Taxes, return form and e-Filing | https://tatime.gov.al/entitete/?artikull=forma-e-deklarates-2 | 2026-10-22 |
@@ -247,4 +249,4 @@ expected:
 | General Directorate of Taxes, tax returns and payment | https://tatime.gov.al/entitete/?artikull=deklaratat-tatimore-2 | 2026-10-22 |
 | Official Publications Centre, Law 29/2023 entry | https://qbz.gov.al/eli/ligj/2023/03/30/29 | 2026-10-22: page loads only a script shell and could not be read; not relied on for any figure |
 
-Not yet confirmed: the payment date for the final balance of corporate income tax for resident entities (Law 29/2023 art. 61 sets only the return date); the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); the Bank of Albania 12-month average lending rate that caps deductible interest under art. 50(1)(dh); treatment of tax losses from 2023 and earlier; the threshold for the annual controlled transactions notice (set by ministerial instruction); the list of jurisdictions under art. 32(2)(ç); Albania's position on Pillar Two beyond the absence of rules in Law 29/2023; the official name of the annual corporate return form on e-Filing.
+Not yet confirmed: the payment date for the final balance of corporate income tax for resident entities (Law 29/2023 art. 61 sets only the return date); the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); the Bank of Albania 12-month average lending rate that caps deductible interest under art. 50(1)(dh); treatment of tax losses from 2023 and earlier; Albania's position on Pillar Two beyond the absence of rules in Law 29/2023; the official name of the annual corporate return form on e-Filing.
