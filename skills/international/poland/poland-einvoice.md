@@ -1,416 +1,180 @@
 ---
 name: poland-einvoice
-description: Use this skill whenever asked about Polish e-invoicing, KSeF, Krajowy System e-Faktur, faktura ustrukturyzowana, FA(3) schema, structured invoice Poland, e-Faktura, UPO (Urzędowe Poświadczenie Odbioru), KSeF API, KSeF 2.0, batch submission Poland, offline mode KSeF, GTU codes, split payment MPP, NIP validation, or any question about issuing, receiving, validating, or archiving electronic invoices in Poland. Also trigger when preparing FA(3) XML invoices, configuring KSeF API integration, handling KSeF rejection errors, or advising on the transition to mandatory KSeF. This skill covers the FA(3) schema, KSeF API architecture, mandatory fields, validation rules, archiving, penalties, and interaction with Polish VAT returns. ALWAYS read this skill before touching any Polish e-invoicing work.
-version: 1.0
+description: "Polish KSeF e-invoicing (Krajowy System e-Faktur) for tax year 2026: who must issue structured FA(3) invoices and from when (1 February 2026 for businesses with 2024 sales over PLN 200 million including VAT, 1 April 2026 for the rest), who is outside KSeF (businesses with no seat or fixed establishment in Poland, consumer invoices, OSS, IOSS and EU SME scheme invoices, tolls and single tickets), the 2026 carve-outs for PLN 10,000 a month and for cash-register invoices, receiving invoices, the offline24, unavailability and failure modes with their deadlines, QR codes, storage for 10 years, what KSeF means for input VAT, and the fines from 1 January 2027. Trigger on: KSeF, e-faktura, faktura ustrukturyzowana, FA(3), offline24, tryb awaryjny, numer KSeF, kod QR, art. 106ga, art. 145m. Out of scope: VAT rates, JPK_V7 and the VAT return (poland-vat-return), income tax (pl-income-tax, pl-cit-corporate-tax)."
+version: 1.1
 jurisdiction: PL
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-23
+verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - einvoice-workflow-base
-category: invoicing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Poland Einvoice
-
-## Section 1 -- Quick Reference
-
-**Section 1 -- Quick Reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Poland (Rzeczpospolita Polska) |
-| Currency | PLN (Polish złoty); foreign currency invoices also supported |
-| E-invoicing system | KSeF (Krajowy System e-Faktur) -- Krajowy System e-Faktur 2.0 |
-| Invoice format | FA(3) XML (proprietary Polish schema, NOT EN 16931) |
-| Governing body | Ministerstwo Finansów (Ministry of Finance) |
-| Tax authority | Krajowa Administracja Skarbowa (KAS) |
-| Key legislation | Act of 29 October 2021 amending VAT Act (Dz.U. 2021 poz. 2076); RD on KSeF implementation; VAT Act Art. 106na--106nd |
-| Portal URL | https://ksef.podatki.gov.pl |
-| Schema URL | https://crd.gov.pl/wzor/2025/06/25/13775/ (FA(3) production) |
-| API documentation | OpenAPI 3.0.4 specification at ksef.podatki.gov.pl |
-| Phase 1 mandatory | 1 February 2026 (businesses with 2024 VAT sales > PLN 200M) |
-| Phase 2 mandatory | 1 April 2026 (all remaining VAT-registered businesses) |
-| Penalties effective | 1 January 2027 |
-| Current status | Fully operational in production since 1 February 2026 |
-| Skill version | 1.0 |
-
-## Section 2 -- Mandate Scope
-
-### Who Must Comply
-
-**Who Must Comply**
-
-| Scope | From | Requirement |
-| --- | --- | --- |
-| Large taxpayers (2024 VAT sales > PLN 200M) | 1 February 2026 | Must issue all B2B invoices via KSeF |
-| All remaining VAT-registered businesses | 1 April 2026 | Must issue all B2B invoices via KSeF |
-| B2G | 1 February 2026 | Invoices to public entities must be issued via KSeF (integration with PEF -- Platforma Elektronicznego Fakturowania) |
-| B2C | Not mandatory | Consumer invoices may be issued outside KSeF; if issued via KSeF, buyer receives a visualisation (not the XML) |
-| Foreign entities with Polish VAT registration | 1 April 2026 | Must issue structured invoices via KSeF for Polish-taxable transactions |
-| Cross-border invoices | Required | All invoices issued by Polish VAT payers, including cross-border, must be reported through KSeF |
-
-### Exemptions
-
-- Invoices issued by taxpayers not registered for Polish VAT
-- Tickets and simplified invoices for amounts up to PLN 450 (EUR ~100) -- exempt from KSeF but subject to Veri\*factu-like fiscal printer rules
-- Invoices from the agricultural flat-rate scheme (rolnik ryczałtowy) issued by the buyer (RR invoices use a separate FA_RR(1) schema)
-
-### Timeline Summary
-
-**Timeline Summary**
-
-| Date | Milestone |
-| --- | --- |
-| October 2021 | KSeF legislative framework enacted |
-| January 2022 | Voluntary KSeF 1.0 launched |
-| September 2023 | FA(2) schema published |
-| April 2025 | AEAT Veri\*factu services enter production |
-| June 2025 | KSeF 2.0 API documentation published |
-| September 2025 | Open API testing begins |
-| October 2025 | Pre-production DEMO environment available |
-| 1 February 2026 | KSeF 2.0 production launch; mandatory for large taxpayers; FA(3) schema effective |
-| 1 April 2026 | Mandatory for all remaining VAT-registered businesses |
-| 1 January 2027 | Financial penalties for non-compliance take effect |
-
-## Section 3 -- Technical Format
-
-### FA(3) Schema
-
-**FA(3) Schema**
-
-| Parameter | Value |
-| --- | --- |
-| Format | Proprietary Polish XML schema (NOT EN 16931 / UBL / CII) |
-| Schema version | FA(3) (effective 1 February 2026, replacing FA(2)) |
-| Schema location | https://crd.gov.pl/wzor/2025/06/25/13775/ |
-| Encoding | UTF-8 |
-| Namespace | As defined in FA(3) XSD |
-| Validation | XSD schema validation + semantic business rules |
-
-### FA(3) Root Structure
-
-**FA(3) Root Structure**
-
-| Element | Required | Description |
-| --- | --- | --- |
-| `Naglowek` | Yes | Header: schema version, form code, creation date |
-| `Podmiot1` | Yes | Seller: tax ID (NIP), name, address |
-| `Podmiot2` | Yes | Buyer: tax ID (NIP or other), name, address |
-| `Podmiot3` | No | Third party (e.g., tax representative, factor) |
-| `PodmiotUpowazniony` | Conditional | Authorised entity (if issuing on behalf of seller) |
-| `Fa` | Yes | Invoice body: header data, line items, totals, payment, annotations |
-| `Stopka` | No | Footer: additional free-text information |
-| `Zalacznik` | No | Attachment node (new in FA(3) -- for structured attachments) |
-
-### Key Differences from EN 16931
-
-**Key Differences from EN 16931**
-
-| Feature | KSeF FA(3) | EN 16931 |
-| --- | --- | --- |
-| Schema | Proprietary Polish XSD | UBL 2.1 or CII |
-| GTU codes | Required for classified goods/services (GTU_01--GTU_13) | No equivalent |
-| MPP marker | Split payment indicator for transactions > PLN 15,000 | No equivalent |
-| Adnotacje (annotations) | Mandatory boolean fields (P_16 through P_18A, Zwolnienie, etc.) | Free-text notes |
-| Hash/chain integrity | Not in schema (KSeF assigns number) | Not applicable |
-| Peppol interoperability | Not supported -- closed national system | Core design principle |
-
-## Section 4 -- Mandatory Fields
-
-### Naglowek (Header)
-
-**Naglowek (Header)**
-
-| Field | Description | Required |
-| --- | --- | --- |
-| `KodFormularza` | Form code (must be "FA") | Yes |
-| `WariantFormularza` | Schema variant (3 for FA(3)) | Yes |
-| `DataWytworzeniaFa` | XML creation datetime | Yes |
-| `SystemInfo` | Issuing system identifier | Yes |
-
-### Podmiot1 (Seller)
-
-**Podmiot1 (Seller)**
-
-| Field | Description | Required |
-| --- | --- | --- |
-| `DaneIdentyfikacyjne/NIP` | Seller Polish tax ID (NIP, 10 digits) | Yes |
-| `DaneIdentyfikacyjne/Nazwa` | Seller full legal name | Yes |
-| `Adres` | Seller address (street, city, postal code, country) | Yes |
-
-### Podmiot2 (Buyer)
-
-**Podmiot2 (Buyer)**
-
-| Field | Description | Required |
-| --- | --- | --- |
-| `DaneIdentyfikacyjne/NIP` or `NrVatUE` or `KodUE`+`NrID` | Buyer identification | Yes (at least one) |
-| `DaneIdentyfikacyjne/Nazwa` | Buyer name | Yes |
-| `Adres` | Buyer address | Yes |
-
-### Fa (Invoice Body)
-
-**Fa (Invoice Body)**
-
-| Field | Description | Required |
-| --- | --- | --- |
-| `P_1` | Invoice issue date (YYYY-MM-DD) | Yes |
-| `P_2` | Invoice number (sequential) | Yes |
-| `P_3A` or `P_3B` | Sale/service date or period | Yes (one required) |
-| `FaWiersz/NrWierszaFa` | Line number (unique, sequential) | Yes |
-| `FaWiersz/P_7` | Description of goods/services | Yes |
-| `FaWiersz/P_8A` or `P_8B` | Unit of measure | Yes |
-| `FaWiersz/P_9A` or `P_9B` | Quantity | Yes |
-| `FaWiersz/P_10` | Unit net price (up to 8 decimal places) | Conditional |
-| `FaWiersz/P_11` | Line net amount (2 decimal places) | Yes |
-| `FaWiersz/P_11A` | Line VAT amount | Conditional |
-| `FaWiersz/P_12` | VAT rate (23, 8, 5, 0, zw, oo, np) | Yes |
-| `P_13_1` through `P_13_11` | Summary net amounts per rate | Conditional (per applicable rate) |
-| `P_14_1` through `P_14_5` | Summary VAT amounts per rate | Conditional |
-| `P_15` | Total gross amount (brutto) | Yes |
+# Poland KSeF e-invoicing (2026)
 
-### Adnotacje (Annotations -- Mandatory Booleans)
+Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
 
-**Adnotacje (Annotations -- Mandatory Booleans)**
+This skill covers the duty to issue and receive invoices through KSeF, Poland's national e-invoicing system, under the VAT Act (ustawa o podatku od towarów i usług, consolidated text Dz.U. 2026 poz. 1263). Article numbers below are to that act unless another act is named. It links to the other Poland skills and does not repeat them:
 
-| Field | Description | Values |
-| --- | --- | --- |
-| `P_16` | Reverse charge (Art. 17 ust. 1 pkt 7/8) | 1 or 2 |
-| `P_17` | Self-supply (Art. 106a pkt 2 lit. b) | 1 or 2 |
-| `P_18` | Margin scheme | 1 or 2 |
-| `P_18A` | Mechanism of split payment (MPP) | 1 or 2 |
-| `Zwolnienie` | VAT exemption basis | Selection required if any line is "zw" |
-
-### GTU Codes (Goods/Services Classification)
+- [poland-vat-return](poland-vat-return.md): VAT registration, rates, the JPK_V7 file, split payment and the white list.
+- [pl-cit-corporate-tax](pl-cit-corporate-tax.md) and [pl-income-tax](pl-income-tax.md): income tax.
 
-**GTU Codes (Goods/Services Classification)**
-
-| Code | Category |
-| --- | --- |
-| GTU_01 | Alcohol |
-| GTU_02 | Fuel |
-| GTU_03 | Heating oil |
-| GTU_04 | Tobacco |
-| GTU_05 | Waste |
-| GTU_06 | Electronic devices |
-| GTU_07 | Vehicles and parts |
-| GTU_08 | Precious metals |
-| GTU_09 | Pharmaceuticals |
-| GTU_10 | Buildings/land |
-| GTU_11 | Emission allowances |
-| GTU_12 | Intangible services (consulting, advisory, legal, management) |
-| GTU_13 | Transport services |
-
-## Section 5 -- Transmission Method
-
-### KSeF API 2.0
-
-**KSeF API 2.0**
-
-| Parameter | Detail |
-| --- | --- |
-| API specification | OpenAPI 3.0.4 (JSON) |
-| Production endpoint | `https://api.ksef.mf.gov.pl/v2` |
-| DEMO endpoint | `https://api-demo.ksef.mf.gov.pl/v2` |
-| Test endpoint | `https://api-test.ksef.mf.gov.pl/v2` |
-| Authentication | Qualified electronic signature, trusted profile (profil zaufany), or KSeF authorisation token |
-| Session types | Interactive (real-time, single invoices) or Batch (bulk submission) |
-
-### Submission Flow
-
-1. **Authenticate** -- open a KSeF session using certificate, trusted profile, or token
-2. **Submit** -- send FA(3) XML file via API endpoint
-3. **Validate** -- KSeF performs XSD and semantic validation
-4. **Accept or Reject** -- if valid, KSeF assigns a unique KSeF number and timestamp; if invalid, returns error
-5. **UPO** -- download Urzędowe Poświadczenie Odbioru (official receipt of acceptance) as proof of issuance
-6. **Buyer access** -- buyer retrieves invoice from KSeF using their NIP credentials
-
-### Alternative Submission Methods
-
-**Alternative Submission Methods**
-
-| Method | Description |
-| --- | --- |
-| Aplikacja Podatnika KSeF | Free web application from Ministry of Finance |
-| Aplikacja Mobilna KSeF | Free mobile app for issuing/receiving on smartphone |
-| e-mikrofirma | Integration with e-Urząd Skarbowy for micro-businesses |
-| Batch mode | Upload ZIP of multiple FA(3) XMLs; each validated individually |
-
-### Offline Mode
-
-If KSeF is unavailable (system downtime declared by MF), businesses may:
-
-1. Issue invoices outside KSeF with offline numbering
-2. Submit to KSeF within 7 days of system restoration
-3. The date of issue (P_1) remains the original date; the KSeF date is the submission date
-4. Offline invoices require specific handling and must reference the offline period
-
-### KSeF Number Format
-
-- **KSeF Number Format** — Format: `{NIP}-{YYYYMMDD}-{sequential number}` -- assigned by KSeF upon acceptance. This number becomes the primary legal identifier of the invoice.
-
-## Section 6 -- Validation Rules
-
-### XSD Validation (First Layer)
-
-- **XSD validation rejection rate** — KSeF validates every submitted XML against the FA(3) XSD. Approximately 70% of rejections are XSD validation errors.
-
-**XSD Validation (First Layer)**
-
-| Common XSD Error | Cause | Resolution |
-| --- | --- | --- |
-| Missing required element | Required field not populated (e.g., NIP in Podmiot1) | Populate all mandatory fields |
-| Wrong date format | Dates must be YYYY-MM-DD (not DD.MM.YYYY or DD/MM/YYYY) | Standardise date formatting |
-| Invalid element order | XML elements must follow XSD-defined sequence | Reorder elements per schema |
-| Wrong data type | Numeric field contains text or vice versa | Validate field types |
-| Excess decimal places | Amounts: max 2 decimals; prices: max 8; quantities: max 6 | Apply correct precision |
-
-### Semantic Validation (Second Layer)
-
-**Semantic Validation (Second Layer)**
-
-| Rule | Description |
-| --- | --- |
-| NIP checksum | Seller NIP must pass modulus-11 check digit validation |
-| Tax calculation | Sum of line net amounts per rate must equal summary amount (P_13_x); VAT amounts must equal P_14_x |
-| Gross total | P_15 must equal sum of all net amounts + all VAT amounts |
-| GTU format | Must be exact codes (e.g., `GTU_12` not `12` or `GTU 12`) |
-| Duplicate detection | Same seller NIP + invoice number + date = error 440 (duplicate) |
-| Adnotacje completeness | All mandatory annotation fields (P_16, P_17, P_18, P_18A) must be populated |
-| Zwolnienie logic | If any line has rate "zw", the Zwolnienie element must specify the exemption basis |
-| Currency handling | Foreign currency invoices must include PLN conversion amounts in separate fields |
-
-### Common Rejection Scenarios
-
-**Common Rejection Scenarios**
-
-| Issue | Resolution |
-| --- | --- |
-| Polish NIP in NrVatUE field | Polish NIPs go in the NIP field; NrVatUE is for EU VAT numbers with country prefix |
-| Rounding mismatch | Use banker's rounding; ensure line totals sum to header totals within 1 grosz |
-| Negative quantities on non-corrective invoice | Only corrective invoices (korekta) may have negative values |
-| Missing Adnotacje fields | Even if not applicable, P_16 through P_18A must contain value "2" (not applicable) |
-| Invalid bank account format | Polish IBAN must be exactly 26 characters (digits only, no PL prefix in domestic format) |
-
-## Section 7 -- Tax Computation Rules
-
-### VAT Rates (2025/2026)
-
-**VAT Rates (2025/2026)**
-
-| Rate Code | Rate | Application |
-| --- | --- | --- |
-| 23 | 23% | Standard rate |
-| 8 | 8% | Reduced (construction, certain food, medical) |
-| 5 | 5% | Reduced (basic food, books, periodicals) |
-| 0 | 0% | Zero-rated (intra-EU supplies, exports) |
-| zw | Exempt | VAT-exempt supplies (must specify exemption basis) |
-| oo | Not subject | Out-of-scope transactions |
-| np | Not applicable | Supplies not subject to Polish VAT (e.g., place of supply outside Poland) |
-
-### Rounding
-
-- **Rounding rules** — - Line net amount (`P_11`): 2 decimal places - Unit price (`P_10`): up to 8 decimal places - Quantity (`P_9A`/`P_9B`): up to 6 decimal places - VAT amount per line (`P_11A`): 2 decimal places - Gross total (`P_15`): 2 decimal places - Use banker's rounding (round half to even) for consistency with KSeF validation - Sum of line amounts must exactly equal the corresponding summary field -- no tolerance
-
-### Multi-Rate Invoice Handling
-
-- **Multi-rate invoice handling** — - Each applicable VAT rate has dedicated summary fields (P_13_1/P_14_1 for 23%, P_13_2/P_14_2 for 8%, etc.) - Line items reference the rate via P_12 - If a single invoice has lines at 23%, 8%, and exempt, all three summary pairs must be populated - P_15 (gross total) = sum of all P_13_x + sum of all P_14_x
-
-### Split Payment (Mechanizm Podzielonej Płatności -- MPP)
-
-- **Split payment (MPP) rule** — - Mandatory for transactions > PLN 15,000 gross involving goods/services listed in Annex 15 to the VAT Act - Set annotation P_18A = 1 when MPP applies - Invoice must include the phrase "mechanizm podzielonej płatności" - Payment is split: net amount to seller's account, VAT amount to seller's VAT account  _(Annex 15 to the VAT Act)_
-
-### Corrective Invoices (Faktury Korygujące)
-
-- **Corrective invoices rule** — - Must reference the original KSeF number of the corrected invoice - Show both "before" and "after" values, or the difference - Use same FA(3) schema with corrective-specific fields populated - KSeF validates that the referenced original invoice exists and belongs to the same seller NIP
-
-## Section 8 -- Archiving Requirements
-
-**Section 8 -- Archiving Requirements**
-
-| Requirement | Detail |
-| --- | --- |
-| KSeF as legal archive | KSeF stores all accepted invoices for 10 years -- this constitutes the legal archive |
-| No separate archiving needed | Once accepted by KSeF, the invoice is legally archived; businesses do not need to maintain separate copies for VAT purposes |
-| Attachments | KSeF does NOT store attachments (Zalacznik node in FA(3) is metadata only); supporting documents (contracts, delivery notes) must be archived separately by the business |
-| UPO retention | Retain UPO (official receipt) as proof of successful submission |
-| Pre-KSeF invoices | Invoices issued before KSeF mandate remain subject to standard Polish archiving rules (5 years from end of tax year) |
-| Access | Both seller and buyer can retrieve invoices from KSeF at any time during the retention period using their NIP credentials |
-| Audit | Tax authorities have direct access to all KSeF invoices; no separate data provision needed during audits |
-
-## Section 9 -- Penalties for Non-Compliance
-
-Financial penalties take effect from 1 January 2027. During 2026, the practical consequences of non-compliance are primarily operational (invoices not legally valid for VAT deduction).
-
-## Section 9 -- Penalties for Non-Compliance
-
-**Penalties table**
-
-| Violation | Penalty |
-| --- | --- |
-| Issuing invoice outside KSeF (when mandatory) | Up to 100% of the VAT amount on the invoice |
-| Invoice not conforming to FA(3) schema | Rejection by KSeF -- invoice not legally issued; must correct and resubmit |
-| Failure to issue invoice at all | Standard VAT Act penalties apply (up to 720 daily rates under fiscal penal code) |
-| Late submission in offline mode | Must submit within 7 days of system restoration; late submission may trigger penalties |
-| Buyer deducting input VAT from non-KSeF invoice | Input VAT deduction denied -- buyer bears the risk |
-| Using non-KSeF invoices after mandate date | Trading partners on compliant systems may reject non-KSeF invoices |
-
-### Practical Risks During 2026 (Before Penalty Enforcement)
-
-- Invoices not submitted through KSeF are not legally valid for VAT deduction purposes
-- Trading partners may refuse non-KSeF invoices
-- Audit exposure increases as KAS cross-references KSeF data
-
-## Section 10 -- Interaction with Tax Skills
-
-### VAT Return Integration
-
-- **VAT return integration** — - KSeF data directly feeds into JPK_VAT (Jednolity Plik Kontrolny) -- the standard audit file for VAT - JPK_V7M (monthly) and JPK_V7K (quarterly) declarations must reconcile with invoices in KSeF - KSeF invoice numbers are used as references in JPK records - GTU codes from KSeF invoices must match GTU markings in JPK_VAT - Split payment (MPP) markers from KSeF feed into JPK_VAT classification - Tax authorities can automatically cross-check KSeF invoices against JPK declarations in real-time
-
-### e-Urząd Skarbowy Integration
-
-- The e-mikrofirma module in e-Urząd Skarbowy connects directly to KSeF
-- Taxpayers can issue invoices in KSeF and transfer data directly to VAT records without manual re-entry
-- Pre-filled VAT returns based on KSeF data are progressively being developed
-
-### Income Tax Integration
-
-- **Income tax integration** — - For sole proprietors (JDG -- jednoosobowa działalność gospodarcza), KSeF invoice data feeds into the annual PIT-36/PIT-36L return - Revenue and cost figures must reconcile with KSeF records - KSeF provides an authoritative source for income verification during audits
-
-### Cross-Border Considerations
-
-- **Cross-border considerations** — - All invoices issued by Polish VAT payers, including intra-EU and export invoices, must be reported through KSeF - Intra-EU supplies must be reported in both KSeF and the EU VAT Information Exchange System (VIES) via VAT-UE declaration - Import VAT (from customs declarations) is handled separately but must reconcile with purchase invoices in KSeF
-
-### PEF (Platforma Elektronicznego Fakturowania) Integration
-
-- B2G invoices previously submitted through PEF are being migrated to KSeF
-- From 1 February 2026, PEF forwards invoices to KSeF production environment
-- Public entities receive invoices through KSeF with PEF acting as an intermediary during transition
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a doradca podatkowy, biegły rewident, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+## Who this applies to
+
+**Issuing.** Every VAT taxpayer must issue structured invoices (faktury ustrukturyzowane) through KSeF (art. 106ga ust. 1). A structured invoice is an invoice issued through KSeF together with the KSeF number the system gives it (art. 2 pkt 32a). The duty does not cover invoices (art. 106ga ust. 2):
+
+1. issued by a business with no seat and no fixed establishment in Poland, even if it is registered for Polish VAT;
+2. issued by a business with no seat in Poland whose Polish fixed establishment takes no part in the supply invoiced;
+3. issued under the non-EU OSS, the scheme for international occasional road passenger transport, or IOSS (Division XII chapters 7, 7a and 9), for supplies under those schemes;
+4. issued to a private individual not in business;
+5. covered by the Minister's regulation under art. 106s (Dz.U. 2025 poz. 1740): paid motorway tolls and single passenger tickets on simplified invoices, air navigation route charges invoiced by EUROCONTROL, insurance and financial services exempt under art. 43 ust. 1 pkt 7 and 37-41 on simplified invoices, and self-billed invoices where the buyer or the seller has no Polish NIP for that supply;
+6. issued by a business using the EU SME exemption (art. 113a ust. 1).
+
+Those invoices are issued on paper or as ordinary electronic invoices (art. 106ga ust. 3). Groups 1, 2 and 4 may choose to use KSeF (art. 106ga ust. 4). EU buyers who self-bill an intra-EU supply under an EU VAT number may also choose KSeF (regulation 1740, § 3).
+
+**Start dates.** The duty began on 1 February 2026. Until 31 March 2026, a business whose 2024 sales including VAT were PLN 200,000,000 or less could still issue paper or ordinary electronic invoices (art. 145l). From 1 April 2026 it applies to everyone in scope.
+
+**2026 carve-outs.** Until 31 December 2026 a business in scope may still issue paper or ordinary electronic invoices:
+
+- if the invoices it issues outside KSeF in a month total PLN 10,000 or less including VAT. It loses the right from the invoice that takes the month over PLN 10,000 (art. 145m). The Ministry of Finance counts only invoices that would otherwise have to go through KSeF, counts each invoice in the month of its issue date, and says that once the limit is crossed the business uses KSeF for that invoice and every later one (KSeF FAQ, questions 16, 17 and 22);
+- for invoices issued from a cash register, and for fiscal receipts showing the buyer's NIP that count as simplified invoices (up to PLN 450 or EUR 100, art. 106e ust. 5 pkt 3) (art. 145n).
+
+**Receiving.** A structured invoice is issued and received through KSeF (art. 106gb ust. 1), so from 1 February 2026 every Polish VAT business receives its structured purchase invoices there. The seller passes the invoice on in a way agreed with the buyer instead when the buyer has no seat or fixed establishment in Poland (or its Polish establishment is not involved), is an EU SME scheme user, has no Polish tax number, is a private individual, or when the place of supply is outside Poland (art. 106gb ust. 4). KSeF is not used to report purchases from foreign suppliers (KSeF FAQ, question 11).
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| 2024 sales including VAT above which KSeF applied from 1 February 2026 | PLN 200,000,000 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 145l) |
+| Invoices outside KSeF allowed if the month's total, including VAT, is at or below | PLN 10,000 a month, to 31 December 2026 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 145m) |
+| Fiscal receipt with buyer's NIP that counts as a simplified invoice, outside KSeF to 31 December 2026 | up to PLN 450 or EUR 100 | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 106e ust. 5 pkt 3, art. 145n) |
+| Fine for an invoice that should have gone through KSeF, from 1 January 2027 | up to 100% of the VAT shown | 2027 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 106ni ust. 1) |
+| Same fine where the invoice shows no VAT | up to 18.7% of the invoice total | 2027 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 106ni ust. 1) |
+| Time to pay a fine | 14 days from delivery of the decision | 2027 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 106ni ust. 3) |
+| Storage of invoices in KSeF | 10 years from the end of the year of issue | 2026 | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf (art. 112aa) |
+
+## The taxable base
+
+KSeF changes how an invoice is issued and received. It does not change what is taxed, the rates or the tax point; those are in [poland-vat-return](poland-vat-return.md). What it changes:
+
+- **Issue date.** A structured invoice is issued on the day it is sent to KSeF (art. 106na ust. 1). An invoice issued in an offline mode is issued on the date the seller puts on it, field P_1 (art. 106nda ust. 10, art. 106nf ust. 9).
+- **Receipt date.** A structured invoice is received on the day KSeF assigns its number (art. 106na ust. 3). If it is passed to a buyer listed in art. 106gb ust. 4 outside KSeF, it is received when the buyer actually gets it (art. 106na ust. 4).
+- **Input VAT.** The right to deduct arises in the period the tax point arose, but not before the period in which the buyer received the invoice (art. 86 ust. 10 and 10b pkt 1). For a structured invoice that is the period in which KSeF assigned the number. The Ministry gives the same answer (KSeF FAQ, "Czy data nadania nr KSeF jest równoznaczne z możliwością odliczenia vat naliczonego?").
+- **Invoices that should have gone through KSeF but did not.** The act does not make deduction depend on the invoice going through KSeF. The invoices that cannot support deduction are listed in art. 88 ust. 3a (issued by a non-existent entity, for exempt or non-taxable supplies, for transactions that did not happen, with untrue amounts, sham transactions, self-billed invoices the seller did not accept, VAT shown where none should be). An invoice issued outside KSeF is not on that list. The consequence of skipping KSeF falls on the seller: the art. 106ni fine from 1 January 2027. For the buyer, such an invoice counts as received when the buyer actually gets it.
+- **Corrections.** A seller reduces its taxable base in the period in which it issues a corrective structured invoice (art. 29a ust. 13). A corrective invoice outside KSeF still needs proof that the buyer received it (art. 29a ust. 13a).
+- **Attachments.** Invoices with complex unit, quantity or price data (utilities, telecoms, fuel) may carry a KSeF attachment after the business notifies the tax office through e-Urząd Skarbowy (art. 106gba).
+- **QR codes.** A structured invoice handed to a buyer outside KSeF, or used outside KSeF, carries a QR code that links to it in KSeF (art. 106gb ust. 5). An offline invoice handed over before it is in KSeF carries a second code that proves who issued it, made with a KSeF certificate (art. 106nda ust. 6 and 7).
+- **Format.** The structured invoice follows the FA(3) schema, which replaced FA(2) on 1 February 2026 (Ministry of Finance, FA(3) page). B2G invoices sent through the public procurement platform (PEF) or Peppol become structured invoices once they are in KSeF with a number (art. 106gb ust. 7).
+
+## Deadlines and filing
+
+| What | When | Source |
+|---|---|---|
+| KSeF for businesses with 2024 sales over PLN 200,000,000 | from 1 February 2026 | art. 106ga, art. 145l |
+| KSeF for all other businesses in scope | from 1 April 2026 | art. 145l |
+| Receiving structured invoices through KSeF | from 1 February 2026 | art. 106gb; Ministry of Finance, scope page |
+| Paper or ordinary e-invoices at PLN 10,000 a month or less, and cash-register invoices | to 31 December 2026 | art. 145m, art. 145n |
+| Issue an invoice | by the 15th of the month after the supply | art. 106i ust. 1 |
+| Offline24 (the seller's own choice, for example no internet): send to KSeF | no later than the next working day after issue | art. 106nda ust. 2 |
+| KSeF unavailable (announced maintenance): send to KSeF | no later than the next working day after the unavailability ends | art. 106nh ust. 2 |
+| KSeF failure announced on the Ministry's BIP page: send to KSeF | within 7 working days after the announced end of the failure; the period restarts if a new failure is announced | art. 106nf ust. 4 and 5 |
+| Total failure announced in the media | issue paper or ordinary e-invoices; they are not sent to KSeF | art. 106ne ust. 3, art. 106ng, art. 106nf ust. 7 |
+| KSeF number in bank transfers and split payments between active VAT payers | payments from 1 January 2027 | art. 108g; art. 17 of the act of 16 June 2023 (Dz.U. 2023 poz. 1598), quoted in the notice to Dz.U. 2026 poz. 1263 |
+| Fines for breaches of the KSeF duty | from 1 January 2027 | art. 106ni, footnote 23 |
+
+Access is through the Ministry's KSeF interface software and free apps; users authenticate and are given permissions under art. 106nb and the regulation on using KSeF (Dz.U. 2025 poz. 1815, amended by Dz.U. 2026 poz. 169). A taxpayer that is not a natural person names its first KSeF user on form ZAW-FA (KSeF FAQ). Invoices issued in KSeF do not go into a JPK_FA file; invoices issued outside KSeF can still be requested in one (KSeF FAQ, question 15).
+
+## Penalties and interest
+
+- **Fine from 1 January 2027.** The head of the tax office may fine a taxpayer who, against the duty, did not issue a structured invoice in KSeF, issued an offline-mode invoice that does not follow the FA(3) template, or did not send an offline-mode invoice to KSeF in time. The fine is up to 100% of the VAT shown on that invoice or, if it shows no VAT, up to 18.7% of the invoice total (art. 106ni ust. 1). It is paid within 14 days of delivery of the decision, without a demand (art. 106ni ust. 3). The act sets a ceiling only; it does not fix the amount below it.
+- **No criminal case.** Failing the KSeF duty or the offline send deadlines does not start fiscal penal proceedings (art. 106ni ust. 4). This rule has no 2027 start date and applies now.
+- **During 2026.** There is no money fine for KSeF breaches before 1 January 2027 (art. 106ni, footnote 23). The VAT return penalties, interest and the 30% additional liability still apply to wrong VAT figures; see [poland-vat-return](poland-vat-return.md).
+- **JPK_VAT errors linked to KSeF.** The Ministry says penalties for wrong JPK_VAT files are not automatic and follow only if the taxpayer does not correct the file after a call to do so (KSeF FAQ, question 23; art. 109 ust. 3e-3g).
+
+## Cross-border points
+
+- **Foreign businesses registered for Polish VAT.** A business with no seat and no fixed establishment in Poland does not have to issue invoices in KSeF (art. 106ga ust. 2 pkt 1). Nor does one with no Polish seat whose Polish fixed establishment is not involved in the supply (pkt 2). Either may use KSeF voluntarily (ust. 4). If it does, it authenticates in KSeF and can act through a proxy named on ZAW-FA (KSeF FAQ, question 18). The Ministry published explanations on 28 January 2026 on when a fixed establishment exists for KSeF purposes (Ministry of Finance, scope page).
+- **Polish seller, foreign buyer.** A Polish business invoicing a foreign customer still issues the invoice in KSeF. It then gives the buyer the invoice in an agreed way, for example as a PDF, with the QR code (art. 106gb ust. 4 and 5; KSeF FAQ, question 36). Intra-EU supplies and exports are not excluded.
+- **Foreign supplier, Polish buyer.** Invoices from foreign suppliers are not reported to KSeF (KSeF FAQ, question 11). The Polish buyer accounts for reverse charge in its JPK_V7 as before.
+- **Self-billing.** A self-billed invoice is outside KSeF when the buyer or the seller has no Polish NIP for that supply (regulation 1740, § 2 pkt 5 and 6). An EU buyer self-billing an intra-EU supply under its EU VAT number may still choose KSeF (§ 3).
+- **Special schemes.** Non-EU OSS, IOSS and international occasional road passenger transport invoices stay outside KSeF (art. 106ga ust. 2 pkt 3). The Ministry says they cannot be issued in KSeF voluntarily (scope page).
+
+## Worked examples
+
+### Example 1: a sole trader near the PLN 10,000 monthly limit in 2026
+
+Marta runs a small translation business in Poland and is an active VAT payer. In June 2026 she issues paper invoices to business clients: PLN 2,000, PLN 3,000 and PLN 2,500 net, each with 23% VAT. She also invoices a private individual PLN 1,000 net. The consumer invoice is outside KSeF anyway (art. 106ga ust. 2 pkt 4), so it does not count towards the limit (KSeF FAQ, question 22). Her three business invoices total PLN 9,225 with VAT, so she is within PLN 10,000. On 28 June she invoices another business client PLN 1,000 net (PLN 1,230 with VAT). That takes the month to PLN 10,455. Under art. 145m ust. 2 that invoice, and every later one, must go through KSeF. The headroom before it was PLN 775.
+
+```oa-check
+name: Marta, June 2026, PLN 10,000 monthly limit under art. 145m
+inputs:
+  inv_1: 2000
+  inv_2: 3000
+  inv_3: 2500
+  inv_4: 1000
+  vat_rate: 23
+  limit: 10000
+steps:
+  - gross_before: (inv_1 + inv_2 + inv_3) * (1 + vat_rate / 100)
+  - headroom: limit - gross_before
+  - gross_4: inv_4 * (1 + vat_rate / 100)
+  - gross_after: gross_before + gross_4
+  - excess: gross_after - limit
+expected:
+  gross_before: 9225
+  headroom: 775
+  gross_4: 1230
+  gross_after: 10455
+  excess: 455
+```
+
+### Example 2: the 2027 fine ceiling on two invoices issued outside KSeF
+
+In February 2027 a Polish company issues two PDF invoices by email instead of through KSeF, with no offline mode applying. Invoice A is for consulting, PLN 20,000 net plus 23% VAT. Invoice B is for VAT-exempt training, PLN 15,000 with no VAT shown. Under art. 106ni ust. 1, the ceiling for A is 100% of the VAT shown, PLN 4,600. For B it is 18.7% of the total, PLN 2,805. The combined ceiling is PLN 7,405. The tax office may set a lower amount; the act fixes only the maximum. Whether the buyer can deduct the VAT on invoice A depends on art. 86 and 88, not on KSeF. Its period is the one in which the buyer actually received the PDF.
+
+```oa-check
+name: Fine ceiling, two invoices outside KSeF, February 2027
+inputs:
+  net_a: 20000
+  vat_rate: 23
+  total_b: 15000
+  cap_vat_pct: 100
+  cap_total_pct: 18.7
+steps:
+  - vat_a: net_a * vat_rate / 100
+  - cap_a: vat_a * cap_vat_pct / 100
+  - cap_b: total_b * cap_total_pct / 100
+  - cap_total: cap_a + cap_b
+expected:
+  vat_a: 4600
+  cap_a: 4600
+  cap_b: 2805
+  cap_total: 7405
+```
+
+## Ask the client first
+
+1. Where is the business's seat, and does it have a fixed establishment in Poland that takes part in the supplies? (Decides whether KSeF applies at all.)
+2. What were 2024 sales including VAT, and how much is invoiced each month to business clients outside KSeF? (Start date and the PLN 10,000 carve-out.)
+3. Who are the customers: Polish businesses, private individuals, foreign businesses, public bodies? (KSeF, agreed delivery with a QR code, or PEF.)
+4. Are invoices issued from a cash register, by self-billing, or under OSS, IOSS or the EU SME scheme? (Exclusions in art. 106ga ust. 2, 145n and regulation 1740.)
+5. Which software sends invoices to KSeF, who holds KSeF permissions, and is a KSeF certificate in place for offline invoices?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| VAT Act, consolidated text Dz.U. 2026 poz. 1263, with art. 17 of the act of 16 June 2023 quoted in the notice (art. 2 pkt 32a, 29a, 86, 88, 106e, 106ga, 106gb, 106gba, 106i, 106na-106ni, 108g, 112aa, 145l-145n) | https://api.sejm.gov.pl/eli/acts/DU/2026/1263/text.pdf | 2026-10-23 |
+| Regulation of 7 December 2025 on cases with no duty to issue structured invoices, Dz.U. 2025 poz. 1740 | https://api.sejm.gov.pl/eli/acts/DU/2025/1740/text.pdf | 2026-10-23 |
+| Regulation of 12 December 2025 on using KSeF, Dz.U. 2025 poz. 1815 (title and entry into force only) | https://api.sejm.gov.pl/eli/acts/DU/2025/1815 | 2026-10-23 |
+| Amending act Dz.U. 2026 poz. 1270, in force 1 January 2027 (checked: no KSeF changes) | https://api.sejm.gov.pl/eli/acts/DU/2026/1270/text.pdf | 2026-10-23 |
+| Ministry of Finance, KSeF scope (who is in and out, receiving from 1 February 2026) | https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/zakres-obowiazkowego-ksef | 2026-10-23 |
+| Ministry of Finance, KSeF legal basis and key dates | https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/podstawy-prawne-oraz-kluczowe-terminy | 2026-10-23 |
+| Ministry of Finance, KSeF questions and answers (page modified 8 October 2026) | https://ksef.podatki.gov.pl/pytania-i-odpowiedzi-ksef-20/ | 2026-10-23 |
+| Ministry of Finance, special invoicing modes | https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/tryby-szczegolne-wystawiania-faktur | 2026-10-23 |
+| Ministry of Finance, FA(3) structure | https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/struktura-logiczna-fa-3 | 2026-10-23 |
+
+Not yet confirmed: the Ministry's explanations of 28 January 2026 on fixed establishment for KSeF were not read. The regulation on using KSeF (Dz.U. 2025 poz. 1815, amended by Dz.U. 2026 poz. 169) was not read beyond its title, so authentication methods and permission types are not listed here. No Ministry or court statement was found on input VAT deduction for an invoice that should have gone through KSeF but did not; the deduction point above rests on the text of art. 86 and 88. The Ministry's key-dates page swaps the numbers of Dz.U. 2025 poz. 1740 and 1742; the Sejm register confirms poz. 1740 is the exclusions regulation. The FA(3) field list, GTU codes and the KSeF number format were not re-checked and are left out.
