@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Italian payroll processing for 
 version: 1.0
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -224,8 +224,8 @@ Kept from the live Guide; D.Lgs. 66/2003 was not re-read.
 | Revaluation each 31 December, fixed part | 1.5% | "un tasso costituito dall'1,5 per cento in misura fissa e dal 75 per cento" |
 | Revaluation, share of the consumer price index rise | 75% | "dal 75 per cento dell'aumento dell'indice dei prezzi al consumo" |
 
-- **Accrual formula.** Each year's TFR equals that year's pay divided by 13.5 (art. 2120), after the Fondo di garanzia deduction the law allows.
-- **Destination.** Kept by the employer or paid to a pension fund of the employee's choice; larger employers pay retained TFR to the INPS Fondo di Tesoreria. The 2026 headcount threshold was not read on an allowed page.
+- **Accrual formula.** Each year's TFR equals that year's pay divided by 13.5 (art. 2120), less the 0.50% contribution under L. 297/1982 art. 3, so 6.91% of pay net (see it-employer-contributions).
+- **Destination.** Kept by the employer or paid to a pension fund of the employee's choice; employers with 50 or more staff in their first year, and from 2026 also firms whose average headcount reaches 60 (50 from 2028, 40 from 2032), pay retained TFR to the INPS Fondo di Tesoreria (L. 199/2025; INPS Circolare 12/2026; see it-employer-contributions).
 - **Tax treatment.** Tassazione separata at the employee's average rate (TUIR art. 19), F24 code 1012; the revaluation's substitute tax rate was not proven here.
 
 ### Ferie (Annual Leave)
@@ -330,7 +330,7 @@ INPS contributions go in the INPS section of the same F24 (causali not re-read).
 | CU to the Agenzia delle Entrate | 16 March of the following year | art. 4(6-quinquies) |
 | CU with only self-employment fees or agents' commissions | 30 April of the following year, from 2026 | art. 4(6-quinquies) |
 | Modello 770 (withholding agent return) | 31 October of the following year | art. 4(3-bis) |
-| Autoliquidazione INAIL | 16 February (payment) and 28 February (declaration) | Kept from the live Guide; not an allowed host |
+| Autoliquidazione INAIL | 16 February (payment); the pay declaration was due 2 March in 2026 | INAIL autoliquidazione guide 2025/2026; see it-employer-contributions |
 
 D.P.R. 322/1998 art. 4: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art4!vig=2026-06-30
 

@@ -5,7 +5,7 @@ jurisdiction: IT
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -293,6 +293,6 @@ Not yet confirmed:
 - **Rate on gains from qualifying holdings.** L. 205/2017 comma 1000 brought them into the art. 5 substitute tax from 2019, but the 26% in D.L. 66/2014 art. 3 comma 1 names only lett. c-bis to c-quinquies. The 26% for lett. c rests on Agenzia practice we did not read.
 - **Payment traceability** for 19% credits (L. 160/2019) and the IVAFE exemption for small bank balances: not read.
 - **Legal interest rate for 2026** used in ravvedimento: not read.
-- **First pensionable band for 2026** (above which the employee pays an extra 1% INPS): EUR 56,224 in secondary sources citing INPS circolare 6/2026, not read on inps.it.
+- **First pensionable band for 2026** (above which the employee pays an extra 1% INPS): EUR 56,224 (INPS Circolare 6/2026; see it-employer-contributions).
 - **Consolidated codes from 2027.** Balances, acconti and any penalties for 2026 income fall in 2027, when D.Lgs. 33/2025 (payments) and D.Lgs. 173/2024 (penalties) apply with new article numbers. We did not read whether they change any figure above.
 - Whether the 730/2027 has the sections for capital gains (RT), foreign income and RW: check the 730/2027 instructions when published.
