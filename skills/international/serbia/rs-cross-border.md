@@ -23,7 +23,7 @@ This skill is the cross-border hub of the Serbia pack. It says who Serbia taxes 
 
 Statutes used, all as Ministry of Finance consolidated texts read on 23 October 2026:
 
-- **ZPDG**, the Personal Income Tax Act (Zakon o porezu na dohodak građana). The text in force for 2026 runs up to amendment 109/2025. Law 80/2026 applies from 1 January 2027, and its changes from 1 January 2028. It does not touch any article used here (ZPDG publisher's note; footnotes on Articles 15a, 21v, 21g and 21d).
+- **ZPDG**, the Personal Income Tax Act (Zakon o porezu na dohodak građana). The text in force for 2026 runs up to amendment 109/2025. Law 80/2026 applies from 1 January 2027, and its changes from 1 January 2028. It does not touch any article used here (ZPDG publisher's note; footnotes on Articles 15a, 21v, 21g, 21d and 33a).
 - **ZPDPL**, the Corporate Income Tax Act (Zakon o porezu na dobit pravnih lica). It applies to 2026 in the version up to 94/2024. See rs-corporate-tax for the 80/2026 timing.
 - **ZPPPA**, the Tax Procedure and Tax Administration Act (Zakon o poreskom postupku i poreskoj administraciji).
 
@@ -55,7 +55,7 @@ A resident is taxed on worldwide income (Article 7(1)). A non-resident is taxed 
 **Who must withhold.** The withholding agent is the payer:
 
 - **Individual recipients.** A legal entity, entrepreneur or flat-rate entrepreneur paying an individual withholds (ZPDG Article 99). So does a registered branch or representative office of a foreign company (Article 99(2)).
-- **Company recipients.** A resident legal entity paying a non-resident company withholds (ZPDPL Article 40).
+- **Company recipients.** A resident legal entity paying a non-resident company withholds (ZPDPL Article 40). So does an entrepreneur who keeps books (ZPDG Article 104).
 
 If the payer is not a withholding agent, for example a private individual or a foreign employer, the recipient self-assesses (ZPDG Article 100a).
 
@@ -114,7 +114,7 @@ The ZPDG has no higher rate for individuals resident in a preferential tax juris
 - **Foreign withholding.** Foreign withholding tax on interest, royalties, rent, services and non-qualifying dividends is credited (Article 53a). The income is grossed up. The credit is capped at 15% applied to 40% of that grossed-up income (Article 53a(3)).
 - **Foreign dividends.** The indirect credit for dividends from a 10% subsidiary held for a year is in rs-corporate-tax (Articles 52 and 53).
 
-**Newly settled employees (ZPDG Article 15v).** A person who moves to Serbia and becomes resident can have 70% of their salary from a qualifying employer left out of the salary tax base, for five years from the employment contract. Two groups qualify:
+**Newly settled employees (ZPDG Article 15v).** A person who moves to Serbia and becomes resident can have 70% of their salary from a qualifying employer left out of the salary tax base, for five years from the employment contract. The job must be an indefinite-term employment contract. The person must settle in Serbia when or soon after starting, and be resident on the centre of vital interests test and for treaty purposes (Article 15v(1) and (7)). Two groups qualify:
 
 - someone who did not mainly stay in Serbia in the 24 months before the contract, with a monthly salary over RSD 439,692 in 2026;
 - someone under 40 who was mainly abroad for study or training in the 12 months before the contract, with a monthly salary over RSD 293,128 in 2026.
@@ -127,7 +127,7 @@ The employer must be a Serbian resident. It must not be related to the person's 
 - **Company withholding.** The payer files the PDPO/S withholding return within three days of paying (ZPDPL Article 40(6); Rulebook on the withholding return, Sl. glasnik 97/15 to 27/21). One return covers one type of income. If a treaty rate is applied, the recipient's residence certificate is attached.
 - **Self-assessed income of individuals.** Returns for interest, other income and rent paid by a payer who does not withhold are due within 30 days of receipt (ZPDG Article 95(6)). The same applies to salary from a foreign payer (Article 100a(2)).
 - **Capital gains of individuals.**
-  - Real estate, IP and company shares: return within 30 days of the transfer.
+  - Real estate, IP and company shares: return within 30 days of the day the income is earned or starts to be earned.
   - Securities and investment fund units: within 30 days after the end of each half-year.
   - Digital assets: within 120 days after the end of the quarter (ZPDG Article 95(1) and (2)).
 - **Capital gains of non-resident companies.** Return within 30 days of the income, filed through a tax proxy (ZPDPL Article 40(10)).
@@ -160,14 +160,14 @@ If the payer does not hold the certificate when it pays, it withholds at the dom
 
 **Preferential list in practice.** Check the recipient's state against the 49 entries in force before every payment of royalties, interest, rent or service fees. The list includes Andorra, Bahamas, Bahrain, Bermuda, the British Virgin Islands, the Cayman Islands, Gibraltar, Guernsey, the Isle of Man, Jersey, Liechtenstein, Mauritius, Monaco, Panama, Seychelles and others. Check the Article 3a(3) treaty carve-out against the treaty list.
 
-**Leaving Serbia.** A person who leaves for good is not resident for the rest of that year if they no longer have a domicile or centre of vital interests in Serbia (ZPDG Article 7(6)). From then on, only Serbian-source income is taxed. The ZPDG has no exit tax or deemed sale on departure. Points to settle on departure:
+**Leaving Serbia.** A person who leaves for good and is not resident in the following year is not resident for the rest of the year of departure, if they no longer have a domicile or centre of vital interests in Serbia in that period (ZPDG Article 7(6)). From then on, only Serbian-source income is taxed. The ZPDG has no exit tax or deemed sale on departure. Points to settle on departure:
 
 - **Income in the year of departure.** Foreign income up to the departure date stays in the resident's tax base.
 - **Later Serbian income.** Rent, dividends, interest and gains from Serbia stay taxable at the non-resident rates above.
 - **Tax proxy.** Name a tax proxy if Serbian income will need a return, for example rent from a private tenant or a capital gain.
 - **Residence certificate.** Get a residence certificate from the new state so that Serbian payers can apply the treaty.
 
-For companies, the ZPDPL has no exit tax for 2026. The exit tax and CFC rules in Law 80/2026 apply only from EU accession (see rs-corporate-tax).
+For companies, the ZPDPL text that applies to 2026 (amendments up to 94/2024) has no exit tax and no CFC rules. Law 80/2026 adds both (Articles 62b and 62g of the new text), but not for 2026; see rs-corporate-tax for their start date.
 
 ## Worked examples
 
@@ -175,7 +175,7 @@ For companies, the ZPDPL has no exit tax for 2026. The exit tax and CFC rules in
 
 Anna lives in Germany and is not a Serbian resident. She owns an office in Novi Sad and rents it to a Serbian d.o.o. for RSD 100,000 a month, RSD 1,200,000 for 2026. The tenant is a legal entity, so it withholds (ZPDG Article 99(1)(4)). The taxable amount is the gross rent less 25% standard costs (Article 65v): 1,200,000 × 0.75 = RSD 900,000. Tax at 20% (Article 65g) is RSD 180,000, which is 15% of the gross rent. Anna receives RSD 1,020,000.
 
-The tenant files a PPP-PD and pays the tax with each monthly payment. Monthly, that is RSD 15,000 of tax on RSD 100,000. Germany is on the Ministry of Finance treaty list. This example assumes the treaty's immovable property article leaves the right to tax the rent with Serbia; check that article. Anna claims the RSD 180,000 as a credit in Germany using the certificate the tenant must give her by 31 January 2027.
+The tenant files a PPP-PD and pays the tax with each monthly payment. Monthly, that is RSD 15,000 of tax on RSD 100,000. Germany is on the Ministry of Finance treaty list. Under the Serbia-Germany treaty (the Yugoslavia-Germany treaty signed in Bonn on 26 March 1987), Serbia may tax income from immovable property situated in Serbia, including rent (Article 6(1) and (3)). Germany then exempts that income from German tax and may take it into account for the rate (Article 24(1)(a)). The treaty gives exemption here, not a credit for the Serbian tax. The tenant must give Anna a certificate of the tax withheld by 31 January 2027 (ZPPPA Article 41(11)), which is her proof of the Serbian tax.
 
 ```oa-check
 name: Example 1, non-resident individual, rent from a Serbian company, 2026
@@ -256,7 +256,8 @@ expected:
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text up to 80/2026 (Arts. 14, 41, 75, 159a, 177 to 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 | Tax Administration: Rulebook on the list of jurisdictions with a preferential tax system (Sl. glasnik 122/12, 104/18, 161/20) | https://www.purs.gov.rs/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/6863/pravilnik-o-listi-jurisdikcija-sa-preferencijalnim-poreskim-sistemom.html ; https://www.purs.gov.rs/upload/media/2025/2/4/369483/Pravilnikolistijurisdikcijasapreferencijalnimporeskimsistemom.docx | 2026-10-23 |
 | Tax Administration: Rulebook on types of services subject to withholding for non-resident companies (Sl. glasnik 18/18) | https://www.purs.gov.rs/upload/media/2025/2/4/357539/pravilnikuslugenerezidenti.pdf | 2026-10-23 |
-| Tax Administration: Rulebook on the content of the corporate withholding return, Form PDPO/S (Sl. glasnik 97/15 to 27/21) | https://www.purs.gov.rs/nerezidenti/pregled-propisa/pravilnici/3319/pravilnik-o-sadrzaju-poreske-prijave-za-obracun-poreza-na-dobit-po-odbitku-na-prihode-i-naknade-koje-ostvaruju-nerezidentna-i-rezidentna-pravna-lica.html | 2026-10-23 |
+| Tax Administration: Rulebook on the content of the corporate withholding return, Form PDPO/S (Sl. glasnik 97/15 to 27/21) | https://www.purs.gov.rs/nerezidenti/pregled-propisa/pravilnici/3319/pravilnik-o-sadrzaju-poreske-prijave-za-obracun-poreza-na-dobit-po-odbitku-na-prihode-i-naknade-koje-ostvaruju-nerezidentna-i-rezidentna-pravna-lica.html ; https://www.purs.gov.rs/upload/media/2025/2/4/370080/Pravilnikosadrajuporeskeprijavezaobraunporezanadobitpoodbitkunaprihodeinaknadekojeostvarujunerezidentnairezidentnapravnalica.docx | 2026-10-23 |
 | Ministry of Finance: list of double tax treaties, with MLI combined texts | https://www.mfin.gov.rs/propisi/ugovori-o-izbegavanju-dvostrukog-oporezivanja | 2026-10-23 |
+| Ministry of Finance: Serbia-Germany (Yugoslavia-Germany) double tax treaty, Serbian text (Arts. 6 and 24) | https://www.mfin.gov.rs//upload/media/Ab5pBR_6012ebef63504.pdf | 2026-10-23 |
 
-Not yet confirmed: the 2026 average annual salary that sets the non-resident annual tax threshold (published after year end); the current NBS reference rate used for late payment interest; whether the Ministry of Finance treaty page shows every treaty in force (it may not list all of them), and so whether a given listed jurisdiction falls under the Article 3a(3) carve-out; the immovable property article of the Serbia-Germany treaty assumed in Example 1; the form code of the Serbian residence certificate under the Minister's rulebook; how social contributions apply to a non-resident's contract income (left to serbia-social-contributions).
+Not yet confirmed: the 2026 average annual salary that sets the non-resident annual tax threshold (published after year end); the current NBS reference rate used for late payment interest; whether the Ministry of Finance treaty page shows every treaty in force (it may not list all of them), and so whether a given listed jurisdiction falls under the Article 3a(3) carve-out; the form code of the Serbian residence certificate under the Minister's rulebook; how social contributions apply to a non-resident's contract income (left to serbia-social-contributions).
