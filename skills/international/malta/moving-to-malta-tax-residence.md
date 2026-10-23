@@ -21,7 +21,7 @@ Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not
 **Why this corridor needs a skill.** Malta takes in more relocating wealth per capita than
 almost any EU state, yet most arrival advice is sold by visa agencies and stops at the permit.
 The tax layer is where Malta actually competes: a **remittance-basis system** open to any
-resident non-domiciled person (not a special permit — the default law), **no wealth tax, no
+resident non-domiciled person (not a special permit: the default law), **no wealth tax, no
 inheritance or estate tax, no gift tax, no personal exit tax**, and a treaty network of 70+
 conventions inside the EU's legal order. The catch is that "Malta is tax-free" is wrong in
 five specific ways, and the people who get burned are the ones who never learned what Malta
@@ -31,7 +31,7 @@ five specific ways, and the people who get burned are the ones who never learned
 accountants on the origin side. Corporate structuring (the 35%/refund imputation system,
 Pillar Two) is flagged but not the focus.
 
-## Part 2 — The residence routes
+## Part 2: The residence routes
 
 **1. Ordinary residence (the default, and often the best).** EU/EEA nationals can simply
 move: register, spend **more than 183 days** in Malta in a year (or come to establish Malta as
@@ -64,9 +64,10 @@ a tax status: holders who become resident are taxed like any other resident non-
 regimes.** From 1 January 2026 the Tax Treatment of Highly Skilled Individuals Rules (LN 20 of
 2026) replace the Highly Qualified Persons, innovation and creativity, aviation, maritime and
 family-office employee rules. A qualifying employee may elect a flat **15%** on employment
-income up to **€7 million** (above that, 35%), where income from the qualifying contract is at
-least **€65,000** (rising by €10,000 every five years; former aviation offices start at
-€45,000). The benefit runs for five years with up to two five-year extensions, and never
+income up to **€7 million** (above that, the normal progressive rates), where income from the
+qualifying contract is at least **€65,000** (rising by €10,000 every five years). Where a
+replaced regime had a lower minimum, that lower minimum applies for 2026, rises by €10,000
+for 2027, and the standard minimum applies from 2028 (LN 20/2026, rules 3, 7 and 9). The benefit runs for five years with up to two five-year extensions, and never
 beyond 31 December 2040. This is the one route where Malta-source salary escapes progressive
 rates.
 
@@ -86,12 +87,12 @@ not passports.
 
 ---
 
-## Part 3 — Remittance-basis mechanics (where the value lives)
+## Part 3: Remittance-basis mechanics (where the value lives)
 
 A resident **non-dom** is taxed on:
-1. Malta-source income and gains — always;
-2. Foreign-source **income** — only to the extent **received in / remitted to** Malta;
-3. Foreign-source **capital gains** — **never**, even if remitted the same day.
+1. Malta-source income and gains: always;
+2. Foreign-source **income**: only to the extent **received in / remitted to** Malta;
+3. Foreign-source **capital gains**: **never**, even if remitted the same day.
 
 That third leg is the headline: sell a foreign portfolio, wire the proceeds to Malta, and the
 gain element is outside the charge. Discipline still matters:
@@ -102,21 +103,21 @@ gain element is outside the charge. Discipline still matters:
   accounts remit on a worst-first basis in practice, and unpicking them years later is
   forensic accounting at hourly rates.
 - **"Remitted" is broad**: card spending in Malta from a foreign account, paying a Maltese
-  bill from foreign income, moving money to a Maltese brokerage — all remittances. Loans
+  bill from foreign income, moving money to a Maltese brokerage: all remittances. Loans
   secured on foreign income used in Malta can be too.
 - **The €5,000 minimum tax**: non-domiciled residents with foreign income of €35,000+ who
   aren't in a programme pay a minimum €5,000/yr even if they remit nothing. A married couple
   tests the €35,000 on their combined income and pays one €5,000. Anyone whose worldwide-basis
   tax would be lower can opt to be taxed on the worldwide basis instead. That is the floor of the
-  whole system — often the entire Maltese tax bill of a careful non-dom.
+  whole system, often the entire Maltese tax bill of a careful non-dom.
 - **No deemed-domicile clock.** Unlike the UK's old regime, Malta's remittance basis does not
   expire after N years. Domicile shifts only if you genuinely adopt Malta as your permanent
-  home — long-term residents keep the basis, but a person who dies domiciled elsewhere also
+  home. Long-term residents keep the basis, but a person who dies domiciled elsewhere also
   keeps their *origin* country's succession reach; plan the estate on both ends.
 
 ---
 
-## Part 4 — What Malta actually taxes (the honest list)
+## Part 4: What Malta actually taxes (the honest list)
 
 | Item | Treatment |
 |---|---|
@@ -127,22 +128,22 @@ gain element is outside the charge. Discipline still matters:
 | Foreign income remitted | Progressive, or **15%** under GRP/Residence Programme with the €15k minimum |
 | Foreign income kept offshore | Not taxed (but counts toward the €35k trigger for the €5k minimum) |
 | Foreign capital gains | **Not taxed**, remitted or not |
-| Wealth, inheritance, estate, gifts | **No such taxes.** Transfers of Malta situs property on death attract duty: 5% on property (3.5% on the first €400,000 of an inherited home used as the heir's residence, from 28 October 2025), 2% on shares (5% for property companies). A transfer cost, not an estate tax |
-| Social security | Class 1/Class 2 contributions apply to Malta work — capped, but real |
+| Wealth, inheritance, estate, gifts | **No such taxes.** Transfers of Malta situs property on death attract duty: 5% on property (from 28 October 2025, 3.5% for an heir who lives in the inherited home: on the value from €35,000 to €400,000 where it was also the deceased's home, the first €35,000 being ignored, or on the first €400,000 otherwise; LN 306/2025), 2% on shares (5% for property companies). A transfer cost, not an estate tax |
+| Social security | Class 1/Class 2 contributions apply to Malta work: capped, but real |
 
-**VAT and daily life:** standard 18% — Malta is a normal EU consumption-tax country.
+**VAT and daily life:** standard 18%; Malta is a normal EU consumption-tax country.
 
 **Companies, in one paragraph:** Malta's 35% corporate rate with shareholder refunds
 (typically 6/7ths) yields the famous ~5% effective rate on trading profits of
 non-resident-owned companies, and full participation exemption on qualifying holdings. It
 still works, but layer in substance requirements, your origin country's CFC rules (a UK or
 German resident owner drags the company back home), and Pillar Two for large groups (Malta
-elected the transitional deferral — verify current status). A personal relocation should
+elected the transitional deferral; verify current status). A personal relocation should
 never be designed around the company trick; get the personal residence right first.
 
 ---
 
-## Part 5 — The corridor discipline (both ends)
+## Part 5: The corridor discipline (both ends)
 
 1. **Exit the origin country properly.** Malta's low bar does not lower the origin bar: UK
    leavers still fight the SRT and the 5-year temporary-non-residence rule; French leavers
@@ -169,7 +170,7 @@ never be designed around the company trick; get the personal residence right fir
 | "Malta is tax-free, I'll just invoice my clients from here" | Work done *in* Malta is Malta-source: progressive rates up to 35%, unless you're in the Highly Skilled Individuals or nomad regime. The remittance basis never shelters local work. |
 | One mixed bank account for everything | Clean capital becomes unprovable; every remittance is presumptively income. Segregate before arrival or lose the benefit in practice. |
 | Taking GRP with modest remitted income | The €15,000 minimum can exceed what ordinary progressive rates would have charged. Run both numbers before buying the 15% ticket. |
-| Forgetting the €5,000 minimum | Foreign income ≥€35,000 triggers it even with zero remittances — budget it as the annual subscription fee. |
+| Forgetting the €5,000 minimum | Foreign income ≥€35,000 triggers it even with zero remittances. Budget it as the annual subscription fee. |
 | Treating MPRP as a tax deal | It's a residence permit. The tax outcome is whatever your actual residence + non-dom status produces; some MPRP holders aren't even Maltese tax residents. |
 | Buying property in year one "to qualify" | 5% duty in, then final tax on the full transfer value out (5% if sold within 5 years, 8% after); renting satisfies most programmes and keeps the exit cheap while you test the island. |
 | Ignoring the origin country's estate reach | Malta not taxing inheritance doesn't stop a UK domicile (or the new residence-based UK IHT tail), French 750 ter, or US estate tax from reaching the same assets. |
@@ -181,7 +182,7 @@ never be designed around the company trick; get the personal residence right fir
 
 *Built by Michael Cutajar and the OpenAccountants team, from the Malta end of the corridor. Malta's offer is simple
 once stated precisely: it taxes the island and what you bring to it, and ignores what you
-keep outside — with no wealth, inheritance, or exit taxes waiting behind the door. The craft
+keep outside, with no wealth, inheritance, or exit taxes waiting behind the door. The craft
 is all in the arrival: segregate the money before you land, pick the route by arithmetic
 rather than brochure, and close the origin country properly with a named accountant on each
 end.*
@@ -202,13 +203,18 @@ end.*
 | MTCA, New Property Tax System - FAQ (8% / 5% / 10%, own-residence exemption) | https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq | 2026-10-23 |
 | MTCA, General Information on Duty (5%, 1% provisional) | https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty | 2026-10-23 |
 | MTCA, Share Transfers FAQ (2%, 5% property companies) | https://mtca.gov.mt/personal-tax/sharetransfers/faqs-share-transfers | 2026-10-23 |
-| MTCA, Overview of Legal Notices July to December 2025 (LN 306/2025: 3.5% on first EUR 400,000) | https://mtca.gov.mt/docs/default-source/documents/legislative-developments/2026/overview-of-recently-published-legal-notices-july-to-december-2025-memo.pdf?sfvrsn=eaa8dda1_1 | 2026-10-23 |
+| LN 306 of 2025, Reduced Rate of Duty on Transfers Causa Mortis of a Dwelling House Rules (3.5%, EUR 35,000 / 400,000) | https://legislation.mt/eli/ln/2025/306/eng | 2026-10-23 |
+| Duty on Documents and Transfers Act, Cap. 364, arts. 35 and 42 | https://legislation.mt/eli/cap/364/eng | 2026-10-23 |
+| LN 20 of 2026, Tax Treatment of Highly Skilled Individuals Rules | https://legislation.mt/eli/ln/2026/20/eng | 2026-10-23 |
+| Income Tax Act, Cap. 123, art. 56(1)(c) (EUR 5,000 minimum tax), art. 5A | https://legislation.mt/eli/cap/123/eng | 2026-10-23 |
+| Malta Retirement Programme Rules, S.L. 123.134 (15%, EUR 7,500, EUR 500, 75%) | https://legislation.mt/eli/sl/123.134/eng | 2026-10-23 |
 | MTCA, Rental Income Taxed at 15% - Article 31D FAQ | https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/rental-income-taxed-at-15----article-31d-of-the-income-tax-act | 2026-10-23 |
 
 Not yet confirmed:
 - The Residence Programme (EU/EEA/Swiss) thresholds were not re-read in this refresh; this skill points to `mt-residence-programmes-for-wealthy-families` for them.
 - The CJEU ruling on investor citizenship (C-181/23, April 2025), the size of Malta's treaty network, the 18% VAT rate and the Pillar Two deferral were not re-read from an official source today.
-- legislation.mt was unavailable on 2026-10-23, so statutory texts (Cap. 123, S.L. 123.148, LN 20/2026) were checked through MTCA's published guidance only.
+- The Global Residence Programme and Nomad Residence Permit figures were checked against MTCA's guidelines, not the rules themselves.
+- LN 20/2026 rule 3(1) raises the EUR 65,000 minimum by EUR 10,000 "every five (5) years with effect from the year subsequent to the year in which these rules come into force". Whether the first increase falls in 2027 or five years later is not settled by the text.
 - Budget 2027 is presented on 26 October 2026; nothing from it is reflected here.
 
 <!-- openaccountants-cta-block -->

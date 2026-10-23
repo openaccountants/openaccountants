@@ -65,7 +65,7 @@ When the occupancy period for the own-residence exemption is uncertain at draft 
 
 - **FWT is on transfer VALUE, not on gain.** The client pays even at a loss. Non-specialists routinely tell the client "no profit, no tax". That is wrong, and it destroys trust at the deed.
 - **Applying 8% by default.** 8% is the *general* rate. Property acquired *before* 1 January 2004 is 10% (unless a promise of sale was notified before 17 November 2014). Miss this and you under-collect by 2 points of the whole value.
-- **The 5% quick-sale rate.** Transfers within 5 years of acquisition (not forming part of a project) are 5%, not 8%. Since 20 March 2020 the 5% rate is lost where the transferor or a related person carried out works needing development permission in those 5 years, unless the property was bought as a declared sole ordinary residence.
+- **The 5% quick-sale rate.** Transfers within 5 years of acquisition (not forming part of a project) are 5%, not 8%. Since 20 March 2020 (Act VIII of 2020, art. 14) the 5% rate is lost where the transferor or a related person carried out works needing development permission in those 5 years, unless the property was bought as a declared sole ordinary residence.
 - **The 2% first-home rate.** An individual (or two co-owners) who declared on the purchase deed that the property was bought as their sole ordinary residence, and sells within 3 years while owning no other residential property, pays 2%.
 - **Forgetting the notary is the collector.** The FWT is withheld and remitted by the notary on the deed. Late or wrong figures don't just cost interest; they can hold up the deed itself.
 - **Own-residence exemption assumed, not proven.** The 3-year ownership and occupation and the 12-month transfer window are strict. Assume it and the client may face FWT they never budgeted for.
@@ -85,20 +85,20 @@ The transfer is executed on a notarial deed. A promise of sale is presented at t
 
 ## FACT CORRECTIONS
 
-**FACT CORRECTIONS**  _(Income Tax Act art. 5A as summarised by MTCA "New Property Tax System - FAQ"; MTCA "Selling Property"; Duty on Documents and Transfers Act as summarised by MTCA "General Information on Duty")_
+**FACT CORRECTIONS**  _(Income Tax Act, Cap. 123, art. 5A; Income Tax Management Act, Cap. 372, art. 43; MTCA "New Property Tax System - FAQ"; MTCA "Selling Property"; MTCA "General Information on Duty")_
 
 | fact_key | current | correct | source |
 | --- | --- | --- | --- |
-| general_fwt | 8% | General FWT from 1 January 2015: 8% of transfer value | MTCA New Property Tax System FAQ, Q1 |
-| pre_2004_fwt | 10% | Property acquired before 1 January 2004 (no promise of sale notified before 17 November 2014): 10% of transfer value | MTCA FAQ, Q2 |
-| quick_sale_fwt | 5% | Transfer within 5 years of acquisition, not part of a project: 5%. Lost from 20 March 2020 where permit works were done in those 5 years, unless bought as a declared sole ordinary residence | MTCA FAQ, Q2 |
-| first_home_fwt | (missing) | Property bought as declared sole ordinary residence, sold within 3 years, seller owns no other residential property: 2% | MTCA FAQ, Q2 |
-| restoration_fwt | 5%, property acquired after 1 Jan 2016 | Property in a UCA or scheduled, restored under a PA permit applied for on or after 1 January 2015, PA completion certificate produced, not used on a previous transfer: 5% | MTCA FAQ, Q2 |
-| pre_1992_inheritance | 7% (incl. judicial auction) | Inherited before 25 November 1992: 7% final. A judicial sale by auction is not taxable under art. 5A at all | MTCA FAQ, Q8 and Q14 |
-| post_1992_inheritance | 12% on gain | Inherited after 24 November 1992: elect 12% on (transfer value less value in the causa mortis declaration) or the FWT rate (10%, 8% or 5%) | MTCA FAQ, Q13 |
-| donation | 12% on gain | Donated more than 5 years before the transfer: 12% on the excess over acquisition value (not for a project) or FWT (10% or 8%). Within 5 years: FWT by the donor's acquisition date | MTCA FAQ, Q15 |
-| non_resident | 12% default FWT | No separate non-resident rate. A non-resident taxable on the gain in their country of residence may opt out of art. 5A with a certificate from that country, and is then taxed under art. 5 with 7% provisional tax that is not refundable | MTCA FAQ, Q7 |
-| own_residence | exempt | Owned and occupied as own residence 3 consecutive years before the transfer, sold within 12 months of vacating, declared as main residence: exempt | MTCA FAQ, Q9 |
+| general_fwt | 8% | General FWT from 1 January 2015: 8% of transfer value (the higher of consideration and market value) | ITA art. 5A(5)(a), 5A(6)(a) |
+| pre_2004_fwt | 10% | Property acquired before 1 January 2004 (no promise of sale notified before 17 November 2014): 10% of transfer value | ITA art. 5A(5)(f) |
+| quick_sale_fwt | 5% | Transfer within 5 years of acquisition, not part of a project: 5%. Lost from 20 March 2020 where permit works were done in those 5 years, unless bought as a declared sole ordinary residence | ITA art. 5A(5)(e); Act VIII of 2020, art. 14 |
+| first_home_fwt | (missing) | Property bought as declared sole ordinary residence, sold within 3 years, seller owns no other residential property: 2% | ITA art. 5A(5)(g) |
+| restoration_fwt | 5%, property acquired after 1 Jan 2016 | Property in a UCA or scheduled, restored under a permit applied for on or after 1 January 2015, transferred on or after 1 January 2016, completion certificate produced to the notary, rate not used on a previous transfer: 5% | ITA art. 5A(5)(h) |
+| pre_1992_inheritance | 7% (incl. judicial auction) | Inherited before 25 November 1992: 7% of the transfer value. A judicial sale by auction is outside art. 5A, except a judicial auction of property inherited on or after 25 November 1992, which is taxed at 7% | ITA art. 5A(3)(f) and (5)(c) |
+| post_1992_inheritance | 12% on gain | Inherited after 24 November 1992: 12% on (transfer value less value in the causa mortis declaration), unless the seller elects on the deed for the transfer-value rate (10%, 8% or 5%) | ITA art. 5A(5)(b) |
+| donation | 12% on gain | Donated more than 5 years before the transfer: 12% on the excess over acquisition value (not for a project), unless the seller elects on the deed for the transfer-value rate. Within 5 years: the donor's acquisition date counts | ITA art. 5A(5)(b) |
+| non_resident | 12% default FWT | No separate non-resident rate. A non-resident taxable on the gain in their country of residence may opt out of art. 5A with a certificate from that country's tax authority, and is then taxed under art. 5 with 7% provisional tax that is not refundable | ITA art. 5A(3)(h); Income Tax Management Act art. 43(1)(b) |
+| own_residence | exempt | Owned and occupied as own residence 3 consecutive years before the transfer, sold within 12 months of vacating, declared as main residence: exempt | ITA art. 5A(4) and art. 5(5)(c); MTCA FAQ, Q9 |
 | brokerage | deductible with notary fee | Brokerage fees paid by the transferor are deductible from the transfer value if the Tax on Property Transfers Rules' verification conditions are met | MTCA FAQ, Q18 |
 | buyer_duty | 5% | Buyer's duty: general 5% (MTCA example: EUR 10,000 on EUR 200,000), 1% provisional duty at promise of sale | MTCA General Information on Duty |
 | valuation_tolerance | (missing) | 15% tolerance between declared value and the department's valuation; above that, assessment on buyer and seller | MTCA Selling Property |
@@ -139,10 +139,12 @@ expected:
 | MTCA, Selling Property (DDT1, 21 days, 15% tolerance) | https://mtca.gov.mt/personal-tax/property-taxes/selling-property | 2026-10-23 |
 | MTCA, General Information on Duty (5% duty, 1% provisional) | https://mtca.gov.mt/personal-tax/property-taxes/general-information-on-duty | 2026-10-23 |
 | MTCA, Overview of Legal Notices July to December 2025 (LN 284/2025, LN 305/2025) | https://mtca.gov.mt/docs/default-source/documents/legislative-developments/2026/overview-of-recently-published-legal-notices-july-to-december-2025-memo.pdf?sfvrsn=eaa8dda1_1 | 2026-10-23 |
-| Income Tax Act, Cap. 123, art. 5A | https://legislation.mt/eli/cap/123/eng | 2026-10-23 (site unavailable; rates taken from the MTCA FAQ) |
+| Income Tax Act, Cap. 123, art. 5A (rates, exclusions, transfer value) | https://legislation.mt/eli/cap/123/eng | 2026-10-23 |
+| Income Tax Management Act, Cap. 372, art. 43 (7% provisional tax) | https://legislation.mt/eli/cap/372/eng | 2026-10-23 |
+| Act VIII of 2020, art. 14 (permit-works proviso to the 5% rate, assented 20 March 2020) | https://legislation.mt/eli/act/2020/8/eng | 2026-10-23 |
 
 Not yet confirmed:
-- legislation.mt was unavailable on 2026-10-23, so the rates were checked against MTCA's own FAQ, not the consolidated text of art. 5A.
+- The brokerage deduction conditions (Tax on Property Transfers Rules) and the 21-day promise-of-sale and DDT1 steps were taken from MTCA pages, not re-read in the rules themselves.
 - Budget 2027 is presented on 26 October 2026. Any change to art. 5A rates or reliefs for 2027 is not reflected here.
 
 <!-- openaccountants-cta-block -->
