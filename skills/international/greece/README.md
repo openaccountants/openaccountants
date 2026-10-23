@@ -21,7 +21,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | IT-CORP, corporate income tax | gr-corporate-income-tax (partial: double-entry books only; single-entry entities and tonnage-tax shipping are not covered. 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
 | SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | source-cited draft |
-| PR, payroll withholding | (missing) | |
+| PR, payroll withholding | gr-payroll (2026; annualisation under ΠΟΛ 1104/2014) | source-cited draft |
 | TP, transfer pricing | gr-transfer-pricing | source-cited draft |
 | XB, cross-border | gr-cross-border | source-cited draft |
 
