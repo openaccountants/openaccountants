@@ -2,6 +2,8 @@
 jurisdiction: RS
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  VAT: "serbia-vat does not cover the cash accounting scheme (Article 36a), the special schemes for travel agencies and for second-hand goods, art and antiques, or the special scheme for investment gold, and the POPDV field-by-field rules are not read from the PDV Rulebook"
 covered_by:
   XB: rs-cross-border
 ---
