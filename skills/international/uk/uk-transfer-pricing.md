@@ -210,7 +210,7 @@ Diverted profits tax (DPT, Part 3 of FA 2015) is abolished for accounting period
 
 How the new rule works:
 - **What is caught.** A company has unassessed transfer pricing profits where it has made a CT self-assessment, its profits are subject to a transfer pricing requirement for a provision, and that requirement is not fully reflected in the return (s.217B TIOPA 2010). HMRC may assess those profits to corporation tax.
-- **Rate.** Profits assessed at the UTPP rate are charged at the underlying corporation tax rate plus 6% (s.217A(3)), so 31% where the main rate of 25% applies.
+- **Rate.** Profits assessed at the UTPP rate are charged at the underlying corporation tax rate plus 6% (s.217A(3) and (4)), so 31% where the profits fall at the 25% main rate and no other amount chargeable as corporation tax (such as the bank surcharge) applies to them.
 - **Conditions for the UTPP rate.** The provision has an effective tax mismatch outcome (the other party's tax on the corresponding profits is less than 80% of the UK tax, s.217D), the tax design condition is met (the structure is reasonably designed to reduce, eliminate or delay UK tax, s.217E), and the profits do not arise wholly from excepted loan relationship arrangements (s.217C). If these are not met, HMRC can still assess the profits, but not at the UTPP rate.
 - **SME exemption.** The charge needs a transfer pricing requirement (s.217B(1)(c) and (4)). Where the SME exemption takes the provision out of Part 4, there is no such requirement and no UTPP charge.
 

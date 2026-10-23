@@ -34,10 +34,13 @@ departure, and on the departure date you hold:
 **What it does.** Your unrealised gains (plus certain deferred gains and earn-outs) are
 deemed realised on departure — taxed at the **31.4% flat tax** (12.8% income tax + 18.6%
 social levies) for gains taxed with 2025 income onward, or under the progressive scale by
-election. The social levies on securities gains rose from 17.2% (30% total) to 18.6% when the
-CSG on patrimony income went from 9.2% to 10.6% from the 2025 income year (LFSS 2026, loi
-n° 2025-1403, art. 12; service-public.fr F2329). Departures taxed with 2024 or earlier income
-stay at 17.2% (30% total). The tax is *computed*
+election. Exit-tax gains are patrimony income (CSS art. L136-6 I e bis), and the CSG on
+patrimony income went from 9.2% to 10.6% from the taxation of 2025 income (CSS art. L136-8 I 2°
+as amended by LFSS 2026, loi n° 2025-1403, art. 12, I 2° and II 1°). Among patrimony income, only revenus fonciers keep
+the 9.2% CSG (new L136-8 IV). Departures taxed with 2024 or earlier income stay at 17.2% (30%
+total). One exception: a deferred apport-cession gain (art. 150-0 B ter) brought into charge by
+the exit tax bears the social levies at the rate of the year the gain was realised (LFR 2016,
+loi n° 2016-1918, art. 34 II), so a gain realised before 2025 stays at 17.2%. The tax is *computed*
 immediately, but:
 
 **Payment is suspended (sursis de paiement) automatically** if you move to an EU/EEA state
@@ -176,7 +179,7 @@ foyer-in-France trap for commuters.
 
 CGI art. 4 B (residence tests); art. 167 bis (exit tax: 6-of-10-years condition, €800k /
 50% thresholds, sursis de paiement, 2/5-year erasure at the €2.57m line, forms 2074-ETD/ETS);
-PFU 31.4% (12.8% + 18.6%) from 2025 income, 30% (12.8% + 17.2%) before (CSS art. L136-8 as amended by LFSS 2026 art. 12; https://www.service-public.fr/particuliers/vosdroits/F2329); IFI arts. 964 ss. (€1.3m threshold, non-resident French-property
+PFU 31.4% (12.8% + 18.6%) from 2025 income, 30% (12.8% + 17.2%) before (CSS arts. L136-6 I e bis and L136-8 I 2° as amended by LFSS 2026 art. 12; 150-0 B ter deferred gains at the realisation-year rate, LFR 2016 art. 34 II; https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384); IFI arts. 964 ss. (€1.3m threshold, non-resident French-property
 scope); non-resident minimum rates (art. 197 A: 20%/30%) and social levies with the 7.5%
 EU/EEA/UK rate; art. 750 ter (succession reach, heir 6-of-10-years rule); assurance-vie
 arts. 990 I / 757 B; France–Switzerland DTA art. 4 (lump-sum residents exclusion);
