@@ -1,10 +1,10 @@
 ---
 name: netherlands-transfer-pricing
-description: Use this skill whenever asked about Netherlands transfer pricing rules, documentation requirements, or verrekenprijzen compliance. Trigger on phrases like "transfer pricing Netherlands", "Dutch TP documentation", "verrekenprijzen", "master file Netherlands", "local file Netherlands", "CbCR Netherlands", "APA Netherlands", "Article 8b DCITA", "DTA transfer pricing", or any question about intercompany pricing for Dutch entities.
-version: 1.0
+description: Use this skill whenever asked about Netherlands transfer pricing rules, documentation requirements, or verrekenprijzen compliance. Trigger on phrases like "transfer pricing Netherlands", "Dutch TP documentation", "verrekenprijzen", "master file Netherlands", "local file Netherlands", "CbCR Netherlands", "APA Netherlands", "Article 8b DCITA", "DTA transfer pricing", "CbC fine Netherlands", "missing transfer pricing documentation Netherlands", "verrekenprijzen boete", or any question about intercompany pricing for Dutch entities.
+version: 1.1
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-09-28
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Netherlands transfer pricing: pricing, documentation and reporting
 
-Tax year: 2026. Checked against official sources on 28 September 2026. Select the transaction year and group reporting year before applying this guide to an earlier period. The current consolidated corporate tax law was compared with its January 2026 version for the provisions used below; the relevant articles were unchanged. This guide covers Dutch corporate transfer pricing, documentation, reporting and advance certainty. It does not determine a market price without transaction evidence.
+Tax year: 2026. Checked against official sources on 28 September 2026; the penalties section was rechecked on 23 October 2026. Select the transaction year and group reporting year before applying this guide to an earlier period. The current consolidated corporate tax law was compared with its January 2026 version for the provisions used below; the relevant articles were unchanged. This guide covers Dutch corporate transfer pricing, documentation, reporting and advance certainty. It does not determine a market price without transaction evidence.
 
 ## Ask the client first
 
@@ -113,9 +113,27 @@ ICAP is an alternative voluntary multilateral risk-assessment route with Netherl
 
 For an audit or double-tax dispute, preserve the assessment, reasoning and domestic objection deadlines and obtain specialist advice on the applicable treaty/MAP or European dispute-resolution route. Do not assume a foreign corresponding adjustment or that starting discussions preserves every deadline. [Decree section 11](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html).
 
-## Penalties and escalation
+## Penalties and consequences
 
-Do not use the old fixed fine amounts or an automatic burden-of-proof reversal rule. Article 29h allows a fine up to the applicable sixth criminal-law category for specified CbC failures caused by intent or gross negligence, with its own imposition period; criminal provisions can also apply. Inadequate records, an incorrect return and a reporting/notification failure are different issues. Refer the actual notice, conduct, year, legal basis and response deadline for procedural advice; this guide does not calculate penalties or determine a reversal of proof. [Article 29h](https://wetten.overheid.nl/BWBR0002672).
+A missing CbC report, missing master or local file and missing article 8b records are three different failures. Each has its own consequence. None of them changes the arm's-length price itself; they change who has to prove it and what fine can follow.
+
+| Failure | Consequence | Amount (2026) | Source |
+| --- | --- | --- | --- |
+| CbC report (art. 29c) or CbC notification (art. 29d) not made, late, incomplete or wrong, through intent or gross negligence | Administrative fine (vergrijpboete) on the reporting entity, or on the group entity that had to notify | Up to the sixth fine category: **€1,100,000**. The inspector sets the amount with the formal-law coordinator; there is no fixed percentage. Time limit: five years after the end of the calendar year in which the obligation arose | [Wet Vpb art. 29h(1)–(2)](https://wetten.overheid.nl/BWBR0002672); [Sr art. 23(4)](https://wetten.overheid.nl/BWBR0001854); [Stb. 2025, 401](https://zoek.officielebekendmakingen.nl/stb-2025-401.html); [BBBB § 28h](https://wetten.overheid.nl/BWBR0038145) |
+| Same CbC failure, prosecuted as a criminal offence | AWR chapter IX applies, without the usual requirement that too little tax was levied | Not keeping the required records: up to 6 months' detention or a third-category fine (**€11,000**). Intentional: up to 4 years' imprisonment or a fourth-category fine (**€27,500**) | [Wet Vpb art. 29h(3)](https://wetten.overheid.nl/BWBR0002672); [AWR art. 68(1)(d) and 69(1)](https://wetten.overheid.nl/BWBR0002320); [Stb. 2025, 401](https://zoek.officielebekendmakingen.nl/stb-2025-401.html) |
+| Article 8b(3) records missing or clearly inadequate | The burden of proof shifts to the taxpayer: the taxpayer must make it plausible (aannemelijk maken) that its prices are arm's length, by any means it chooses. No separate fine for the gap itself | None fixed | [Wet Vpb art. 8b(3)](https://wetten.overheid.nl/BWBR0002672); [Kamerstukken II 2001/02, 28034, nr. 3](https://zoek.officielebekendmakingen.nl/kst-28034-3.html) |
+| Master file or local file (art. 29g) not in the administration by the return deadline | The files are part of the administration (AWR art. 52(3)). The failure is a criminal offence under the ordinary records rules and supports an information decision | AWR art. 68 / 69 amounts above | [Wet Vpb art. 29g](https://wetten.overheid.nl/BWBR0002672); [AWR art. 52](https://wetten.overheid.nl/BWBR0002320); [Kamerstukken II 2015/16, 34305, nr. 3, on art. 29h](https://zoek.officielebekendmakingen.nl/kst-34305-3.html) |
+| Inspector issues an information decision (informatiebeschikking) for a failure under AWR art. 41, 47, 47a, 49 or 52, and it becomes final; or the corporate return was not filed | Reversed and aggravated burden of proof: the assessment stands in objection and appeal unless the taxpayer shows (doen blijken) that and to what extent it is wrong. Does not apply to a vergrijpboete | None fixed | [AWR art. 52a, 25(3) and 27e](https://wetten.overheid.nl/BWBR0002320) |
+| Too little corporate tax through gross negligence or intent (for example an unsupported TP position) | Vergrijpboete on the assessment or additional assessment | Legal maximum **100%** of the tax not levied. Policy: **25%** for gross negligence, **50%** for intent, on the part of the tax caused by that conduct, also where the tax was set under a reversed burden of proof | [AWR art. 67d and 67e](https://wetten.overheid.nl/BWBR0002320); [BBBB § 25(2), (3), (5) and (6)](https://wetten.overheid.nl/BWBR0038145) |
+| Corporate tax paid late or not paid on a self-assessed tax through gross negligence or intent | Vergrijpboete | Up to **100%** of the unpaid tax | [AWR art. 67f](https://wetten.overheid.nl/BWBR0002320) |
+
+How to use the table:
+
+- Fines are not automatic. The 2022 decree says departing from its policy does not by itself lead to a fine; the Belastingdienst weighs the facts. [Decree, note 4](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html).
+- A transfer-pricing correction is a tax adjustment first. A fine needs gross negligence or intent on top. The reversed burden of proof does not extend to the fine itself. [AWR art. 25(3) and 27e(3)](https://wetten.overheid.nl/BWBR0002320).
+- Below the €50,000,000 threshold only article 8b(3) applies. Missing 8b records shift the burden of proof but do not, on their own, reverse it. A reversal under AWR art. 25(3) and 27e needs a final information decision or an unfiled return.
+- Meeting the article 29g content requirements also satisfies article 8b(3) for cross-border transactions, and for domestic ones if the same standard is applied to them. [Decree section 10.2](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html).
+- An information decision is open to objection. Act on it within the deadline it states; once it is final the reversal applies. Refer the actual notice to a specialist.
 
 ## Related reporting and developments
 
@@ -128,21 +146,44 @@ Do not use the old fixed fine amounts or an automatic burden-of-proof reversal r
 
 These are hypothetical controls, not market benchmarks.
 
-**A — Reporting-year boundary.** A multinational group's preceding reporting-year revenue is exactly **€50,000,000**. Its Dutch taxpayer group entity falls within article 29g, subject to the stated entity/group definitions. It must have the master/local files by its actual corporate return filing deadline; a lower current-year revenue does not undo that prior-year threshold test. [Article 29g](https://wetten.overheid.nl/BWBR0002672).
+**A: Reporting-year boundary.** A multinational group's preceding reporting-year revenue is exactly **€50,000,000**. Its Dutch taxpayer group entity falls within article 29g, subject to the stated entity/group definitions. It must have the master/local files by its actual corporate return filing deadline; a lower current-year revenue does not undo that prior-year threshold test. [Article 29g](https://wetten.overheid.nl/BWBR0002672).
 
-**B — Notification versus report.** An in-scope group has a calendar reporting year ending 31 December 2026. Its Dutch notification is due by 31 December 2026; its required confidential report is due within twelve months, by 31 December 2027. Waiting until 2027 to notify confuses two separate deadlines. [Articles 29c–29d](https://wetten.overheid.nl/BWBR0002672).
+**B: Notification versus report.** An in-scope group has a calendar reporting year ending 31 December 2026. Its Dutch notification is due by 31 December 2026; its required confidential report is due within twelve months, by 31 December 2027. Waiting until 2027 to notify confuses two separate deadlines. [Articles 29c–29d](https://wetten.overheid.nl/BWBR0002672).
 
-**C — Restricted asset step-up.** Hypothetical non-debt asset acquisition from a related body: agreed price **€100,000**, supported arm's-length price **€140,000**. The seller includes only the agreed price in profit tax. The proposed extra **€40,000** step-up is not recognised under article 8bc; the acquisition starting value remains **€100,000** on these facts. Do not grant the higher value because foreign inclusion is absent. [Article 8bc](https://wetten.overheid.nl/BWBR0002672).
+**C: Restricted asset step-up.** Hypothetical non-debt asset acquisition from a related body: agreed price **€100,000**, supported arm's-length price **€140,000**. The seller includes only the agreed price in profit tax. The proposed extra **€40,000** step-up is not recognised under article 8bc; the acquisition starting value remains **€100,000** on these facts. Do not grant the higher value because foreign inclusion is absent. [Article 8bc](https://wetten.overheid.nl/BWBR0002672).
 
-**D — Partial downward adjustment.** Hypothetical contractual service cost **€80,000**, supported arm's-length cost **€100,000**. Proposed extra deduction: **€20,000**. Evidence proves the counterpart includes only **€12,000** of corresponding upward adjustment in profit tax. Article 8bb permits only that **€12,000** additional downward adjustment, giving **€92,000** before any other deduction restriction; **€8,000** of the proposed reduction remains denied. [Articles 8ba–8bb](https://wetten.overheid.nl/BWBR0002672).
+**D: Partial downward adjustment.** Hypothetical contractual service cost **€80,000**, supported arm's-length cost **€100,000**. Proposed extra deduction: **€20,000**. Evidence proves the counterpart includes only **€12,000** of corresponding upward adjustment in profit tax. Article 8bb permits only that **€12,000** additional downward adjustment, giving **€92,000** before any other deduction restriction; **€8,000** of the proposed reduction remains denied. [Articles 8ba–8bb](https://wetten.overheid.nl/BWBR0002672).
 
-**E — Qualifying simplified services.** Hypothetical eligible service costs allocated to a recipient are **€200,000**, after exclusions, with all low-value conditions met. The **5%** markup is **€10,000**; the charge is **€210,000**. If instead the service is core manufacturing, the simplification fails and this arithmetic establishes no arm's-length price. [Decree section 6.3](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html).
+**E: Qualifying simplified services.** Hypothetical eligible service costs allocated to a recipient are **€200,000**, after exclusions, with all low-value conditions met. The **5%** markup is **€10,000**; the charge is **€210,000**. If instead the service is core manufacturing, the simplification fails and this arithmetic establishes no arm's-length price. [Decree section 6.3](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html).
 
-**F — Contribution value.** Hypothetical non-debt asset contribution: fair market value **€140,000**, transferor amount included in profit tax **€100,000**, no exception. Article 8bd restricts the Dutch starting value to **€100,000**; a **€40,000** difference is not justified by calling the transaction a capital contribution. This case assumes the included amount is proven and does not infer it from historical accounting basis. [Article 8bd](https://wetten.overheid.nl/BWBR0002672).
+**F: Contribution value.** Hypothetical non-debt asset contribution: fair market value **€140,000**, transferor amount included in profit tax **€100,000**, no exception. Article 8bd restricts the Dutch starting value to **€100,000**; a **€40,000** difference is not justified by calling the transaction a capital contribution. This case assumes the included amount is proven and does not infer it from historical accounting basis. [Article 8bd](https://wetten.overheid.nl/BWBR0002672).
 
-**G — Different CbC thresholds.** A Dutch ultimate parent's multinational group has consolidated revenue exactly **€750,000,000** in the preceding reporting year. The confidential CbC threshold is met. If its revenue is exactly that amount on both relevant balance-sheet dates, the ordinary Dutch-parent public-report threshold of **exceeding** that amount is not met on those facts. Independently check scope and other routes; the two regimes are not interchangeable. [Article 29c](https://wetten.overheid.nl/BWBR0002672); [public-report article 2](https://wetten.overheid.nl/BWBR0049420).
+**G: Different CbC thresholds.** A Dutch ultimate parent's multinational group has consolidated revenue exactly **€750,000,000** in the preceding reporting year. The confidential CbC threshold is met. If its revenue is exactly that amount on both relevant balance-sheet dates, the ordinary Dutch-parent public-report threshold of **exceeding** that amount is not met on those facts. Independently check scope and other routes; the two regimes are not interchangeable. [Article 29c](https://wetten.overheid.nl/BWBR0002672); [public-report article 2](https://wetten.overheid.nl/BWBR0049420).
 
-**H — Old benchmark with changed functions.** Last year's tested distributor now owns valuable IP and controls new material risks. Keeping the old search merely because three years have not elapsed is unsupported. Redelineate, reconsider method/tested party and obtain reliable current comparables before calculating an adjustment. [Decree sections 2–3](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html); [OECD 5.37–5.38](https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf).
+**H: Old benchmark with changed functions.** Last year's tested distributor now owns valuable IP and controls new material risks. Keeping the old search merely because three years have not elapsed is unsupported. Redelineate, reconsider method/tested party and obtain reliable current comparables before calculating an adjustment. [Decree sections 2–3](https://www.officielebekendmakingen.nl/stcrt-2022-16685.html); [OECD 5.37–5.38](https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf).
+
+**I: Correction, then fine.** Hypothetical 2026 calendar year. A Dutch distributor in a group with €80,000,000 of preceding-year revenue reported a taxable amount of **€1,000,000**. It had no local file in its administration by the return deadline and did not respond to the inspector's information request; the resulting information decision became final. The inspector raises an additional assessment correcting its intra-group purchase prices by **€300,000**. Because the decision is final, the assessment stands unless the company shows that and to what extent it is wrong (AWR art. 25(3) and 27e). The taxable amount before and after the correction is above €200,000, so the whole correction is taxed at **25.8%**: extra corporate tax **€77,400**. If the inspector proves gross negligence, the policy fine is **25%** (**€19,350**); for intent, **50%** (**€38,700**); the legal maximum is **100%** (**€77,400**). The reversed burden of proof does not apply to the fine. If the same group also had €750,000,000 of revenue and its Dutch parent filed no CbC report through intent or gross negligence, a separate article 29h fine of up to **€1,100,000** could follow. [Wet Vpb art. 22, 29g and 29h](https://wetten.overheid.nl/BWBR0002672); [AWR art. 25, 27e, 52a and 67e](https://wetten.overheid.nl/BWBR0002320); [BBBB § 25](https://wetten.overheid.nl/BWBR0038145); [Stb. 2025, 401](https://zoek.officielebekendmakingen.nl/stb-2025-401.html).
+
+```oa-check
+name: NL TP correction of EUR 300,000 and vergrijpboete (2026)
+inputs:
+  taxable_before: 1000000
+  correction: 300000
+steps:
+  - tax_before: min(taxable_before, 200000) * 0.19 + max(taxable_before - 200000, 0) * 0.258
+  - taxable_after: taxable_before + correction
+  - tax_after: min(taxable_after, 200000) * 0.19 + max(taxable_after - 200000, 0) * 0.258
+  - extra_tax: tax_after - tax_before
+  - fine_gross_negligence: extra_tax * 0.25
+  - fine_intent: extra_tax * 0.50
+  - fine_legal_max: extra_tax * 1.00
+expected:
+  tax_before: 244400.00
+  extra_tax: 77400.00
+  fine_gross_negligence: 19350.00
+  fine_intent: 38700.00
+  fine_legal_max: 77400.00
+```
 
 ## When to refuse or refer
 
@@ -155,6 +196,24 @@ These are hypothetical controls, not market benchmarks.
 ## Final workpaper and completion checklist
 
 Retain: entity/relationship and period decisions; threshold calculations; actual transaction/FAR evidence; selected method, tested party and comparables; current financial updates; price and adjustment arithmetic; foreign inclusion evidence and mismatch conclusions; ledger/tax reconciliation; document and filing deadlines; notification/report acceptance; unresolved issues and named reviewer. Mark completion only for the deliverables actually checked. Recheck official sources for later legal changes before filing or acting.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Wet op de vennootschapsbelasting 1969, art. 8b, 8ba–8bd, 22, 29b–29h | https://wetten.overheid.nl/BWBR0002672 | 2026-10-23 |
+| Algemene wet inzake rijksbelastingen, art. 25, 27e, 52, 52a, 67d–67f, 68, 69 | https://wetten.overheid.nl/BWBR0002320 | 2026-10-23 |
+| Wetboek van Strafrecht, art. 23 (fine categories) | https://wetten.overheid.nl/BWBR0001854 | 2026-10-23 |
+| Besluit van 26 november 2025, Stb. 2025, 401 (fine categories from 1 January 2026) | https://zoek.officielebekendmakingen.nl/stb-2025-401.html | 2026-10-23 |
+| Besluit Bestuurlijke Boeten Belastingdienst, § 25 and § 28h | https://wetten.overheid.nl/BWBR0038145 | 2026-10-23 |
+| Verrekenprijsbesluit 2022, Stcrt. 2022, 16685 | https://www.officielebekendmakingen.nl/stcrt-2022-16685.html | 2026-10-23 |
+| Memorie van toelichting art. 8b, Kamerstukken II 2001/02, 28034, nr. 3 | https://zoek.officielebekendmakingen.nl/kst-28034-3.html | 2026-10-23 |
+| Memorie van toelichting art. 29h, Kamerstukken II 2015/16, 34305, nr. 3 | https://zoek.officielebekendmakingen.nl/kst-34305-3.html | 2026-10-23 |
+| Regeling aanvullende documentatieverplichtingen verrekenprijzen | https://wetten.overheid.nl/BWBR0037475 | 2026-09-28 |
+| Besluit fiscale rulingpraktijk | https://wetten.overheid.nl/BWBR0042342 | 2026-09-28 |
+| Belastingdienst, CbC notification FAQ | https://gegevensportaal.belastingdienst.nl/cbc/faq/nl/ | 2026-09-28 |
+
+Not yet confirmed: how the Belastingdienst sets the amount of an article 29h fine in practice (BBBB § 28h leaves it to the formal-law coordinator and publishes no percentage); the 2026 version of the Verrekenprijsbesluit 2022 was read as published in 2022, with no later amending decree checked.
 
 <!-- openaccountants-cta-block -->
 

@@ -5,7 +5,6 @@ not_applicable: {}
 partial:
   IT-IND: no 2026 box 1 rates or labour credit for people at AOW age, no tax-part-only credits for non-residents, and the box 3 actual-return route is outlined only, with complex cases referred
   IT-CORP: nl-corporate-tax has no dividend withholding tax or conditional withholding tax method and refers out non-resident companies with a Dutch permanent establishment
-  TP: netherlands-transfer-pricing does not quantify penalties (no CbC fine amount under art. 29h, no consequence of missing art. 8b or 29g documentation)
   XB: no treaty relief method (Besluit voorkoming dubbele belasting 2001, treaty dividend rates), and the M-return, non-resident return and dividend tax return deadlines are not confirmed
 ---
 
