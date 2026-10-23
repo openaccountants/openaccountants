@@ -33,7 +33,7 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Enabling provision | Article 51A, Income Tax Act (Chapter 123) |
 | OECD member? | No (enhanced engagement partner) |
 | BEPS signatory? | Yes (Inclusive Framework member; MLI signatory) |
-| Effective date | Basis years commencing on or after 1 January 2024. Time-limited grandfathering for arrangements entered into before 1 January 2024 that are not materially altered on or after that date (Rule 1(2)) |
+| Effective date | Basis years commencing on or after 1 January 2024. Arrangements entered into before 1 January 2024 and not materially altered on or after that date come in for basis years commencing on or after 1 January 2027 (Rule 1(2) proviso, added by L.N. 9 of 2024) |
 | Currency | EUR |
 | Documentation language | English or Maltese |
 | Tax year | Basis year 2026 |
@@ -50,7 +50,7 @@ Tax year: basis year 2026 (year of assessment 2027). Company tax computation is 
 | Required? | Yes, where thresholds met |
 | Format | OECD Annex I to Chapter V of the TP Guidelines |
 | Filing | Not filed annually; made available on MTCA request within a reasonable timeframe, in English or Maltese |
-| Retention period | Part of the record-keeping duty in Article 19(1) ITMA. The Article 19(5) ITMA time limit runs from the end of the period the arrangement refers to, or the date of the arrangement, whichever is later. The skill previously said 9 years; that figure is not re-checked against Article 19(5) here |
+| Retention period | At least nine years (Article 19(5) ITMA). TP documentation is part of the Article 19(1) ITMA records, and the nine years run from the end of the period the arrangement refers to, or the date of the arrangement, whichever is later (MTCA guidelines, Rule 6) |
 
 ### 2.2 Local File
 
@@ -79,7 +79,7 @@ A taxpayer that uses the simplified approach for low-value-adding intra-group se
 
 ### 2.5 Exceptions (Rule 9)
 
-The Rules do not apply to transactions in a financial period where, in that period, BOTH of these aggregates stay at or below the limit. If EITHER limit is exceeded, the Rules apply. (Version 1.0 of this skill said both had to be exceeded; that was wrong.)
+Under Rule 9(b) the Rules do not apply where, in the year preceding the year of assessment (the basis year), BOTH of these aggregates stay at or below the limit. If EITHER limit is exceeded, the Rules apply. (Version 1.0 of this skill said both had to be exceeded; that was wrong.) Rule 9(a) also takes out securitisation transactions under S.L. 123.128. The parties can ask the Commissioner in writing for a determination that the Rules apply anyway (Rule 9 proviso).
 
 **De Minimis Thresholds**
 
@@ -96,10 +96,10 @@ Dividends paid to an associated enterprise are left out of the revenue aggregate
 
 | Criterion | Detail |
 | --- | --- |
-| Relationship test (general) | >75% direct/indirect participating rights (not re-checked against the Rule text in this update) |
-| Relationship test (MNE constituents) | >50% participating rights (not re-checked against the Rule text in this update) |
-| Entities out of scope | SMEs as defined in EU State Aid Rules (not re-checked against the Rule text in this update) |
-| Transaction type | Cross-border arrangements only (domestic transactions not in scope) |
+| Relationship test (general) | Associated enterprises are bodies of persons where one controls the other, or the same person or persons control both, through a direct or indirect participation of more than 75% in the voting rights or ordinary capital, or through powers in the articles of association (Rule 2(1)) |
+| Relationship test (MNE constituents) | More than 50% where the bodies of persons are constituent entities of an MNE group as defined for CbCR in S.L. 123.127 (Rule 2(1) proviso) |
+| Entities out of scope | Micro, small and medium-sized enterprises under Annex I of Commission Regulation (EU) No 651/2014: the Rule 2(1) definition of "company" excludes them |
+| Transaction type | Cross-border arrangements only (Rule 2(1) definition: at least one party not resident in Malta, or a foreign permanent establishment, and the arrangement is relevant to the total income of a company resident in Malta or with a Malta permanent establishment). Domestic transactions are not in scope |
 
 ## Section 3 -- Arm's Length Standard
 
@@ -151,7 +151,7 @@ The Transfer Pricing Rules apply first, then the Notional Interest Deduction Rul
 | Documentation submission on request | Within reasonable timeframe upon MTCA request |
 | CbCR filing | Within 12 months of end of reporting FY |
 | CbCR notification | As per EU DAC requirements |
-| Corporate tax return | Generally within 9 months of FY-end |
+| Corporate tax return | For a person to whom Article 11(2) ITA applies, the last day of the ninth month after the accounting date, or 31 March of the year of assessment if later (S.L. 372.16, rule 2(c)(i)); see mt-corporate-tax |
 
 ## Section 6 -- Penalties
 
@@ -172,7 +172,8 @@ The Transfer Pricing Rules apply first, then the Notional Interest Deduction Rul
 | --- | --- |
 | APA availability | Yes. Under the Rules, an APA is agreed between the Maltese Competent Authority and a foreign Competent Authority under the treaty MAP article, before the cross-border arrangement (MTCA APA page). Version 1.0 of this skill said APAs were not established; that was wrong |
 | Unilateral transfer pricing ruling | Yes. The Commissioner issues unilateral rulings in advance of an arrangement. A ruling that makes a downward adjustment without a primary adjustment abroad is only considered if it is arm's length in principle and amount, avoids double taxation, and is exchanged with the other tax administration (MTCA guidelines, Rule 11) |
-| Fees | Not confirmed in this skill |
+| Fees | Unilateral ruling: EUR 3,000 non-refundable (Rule 11(7)); renewal EUR 1,000 (Rule 11(13)). APA: EUR 5,000 (Rule 12(4)); renewal EUR 2,000 (Rule 12(10)) |
+| Duration | Unilateral ruling binding for 5 years, or a shorter period stated in the ruling (Rule 11(8)). APA up to 5 years (Rule 12(5)), and may also cover up to 3 earlier basis years on request (Rule 12(6)) |
 | Alternative mechanism | Mutual Agreement Procedure (MAP) under Malta's tax treaties |
 | MAP scope | Transfer pricing disputes covered under applicable DTAs |
 | MAP fees | No fees charged |
@@ -194,10 +195,10 @@ Malta does not currently have formal safe harbour provisions for transfer pricin
 
 ### 8.1 SME Exclusion as Practical Relief
 
-The exclusion of SMEs from the scope of S.L. 123.207 (not re-checked against the Rule text in this update) provides significant practical relief for Malta's predominantly SME economy. SME definitions follow EU State Aid Rules:
-- Fewer than 250 employees
-- Annual turnover ≤ EUR 50 million OR balance sheet total ≤ EUR 43 million
-- Not more than 25% owned by non-SME entities
+The Rule 2(1) definition of "company" excludes micro, small and medium-sized enterprises as defined in Annex I of Commission Regulation (EU) No 651/2014. Under that Annex:
+- Fewer than 250 staff
+- Annual turnover not above EUR 50 million, or balance sheet total not above EUR 43 million
+- Staff and financial figures of partner enterprises (25% or more) and linked enterprises (control) are added in, so a Malta subsidiary of a large group is not an SME even if it is small on its own
 
 ## Section 9 -- Recent Developments
 
@@ -208,7 +209,7 @@ The exclusion of SMEs from the scope of S.L. 123.207 (not re-checked against the
 | November 2022 | S.L. 123.207 Transfer Pricing Rules introduced (LN 284/2022) |
 | January 2024 | Rules apply for basis years from 1 January 2024; pre-2024 arrangements not materially altered are grandfathered for a limited time (Rule 1(2)) |
 | 2024 | MTCA Guidelines in relation to the Transfer Pricing Rules published (Article 96(2) ITA) |
-| Not confirmed | End date of the Rule 1(2) grandfathering. Version 1.0 said January 2027; the MTCA pages read on 23 October 2026 do not state a date, and legislation.mt was unavailable |
+| 2024 | L.N. 9 of 2024 amends Rule 1: arrangements entered into before 1 January 2024 and not materially altered come in for basis years commencing on or after 1 January 2027 |
 | 7 May 2026 | YA 2026 company return: new attachment TRA 135 for the Transfer Pricing Rules |
 | Ongoing | BEPS Pillar Two: Malta implementing GloBE rules (15% minimum tax) via EU Minimum Tax Directive |
 | Ongoing | No BEPS Pillar One Amount B adoption announced |
@@ -229,7 +230,7 @@ The exclusion of SMEs from the scope of S.L. 123.207 (not re-checked against the
 
 ### Example 1 -- Does a company fall inside the Rules in 2026?
 
-A Malta company has cross-border arrangements with associated enterprises in its 2026 financial period. Revenue items (sales, services, interest, excluding dividends paid) total EUR 4,500,000 at arm's length. Capital items (loans and asset transfers) total EUR 25,000,000. Revenue stays under EUR 6,000,000, but capital goes over EUR 20,000,000. Rule 9 only takes a period out of scope when both stay within their limits, so the Rules apply for 2026. The company needs a master file and local file ready on request and completes TRA 135 with its return.
+A Malta company that is not an SME (it is part of a large group) has cross-border arrangements with associated enterprises in its 2026 financial period. Revenue items (sales, services, interest, excluding dividends paid) total EUR 4,500,000 at arm's length. Capital items (loans and asset transfers) total EUR 25,000,000. Revenue stays under EUR 6,000,000, but capital goes over EUR 20,000,000. Rule 9 only takes a period out of scope when both stay within their limits, so the Rules apply for 2026. The company needs a master file and local file ready on request and completes TRA 135 with its return.
 
 ```oa-check
 name: Rule 9 exception test, revenue EUR 4.5m and capital EUR 25m
@@ -287,9 +288,11 @@ This skill and its outputs are provided for informational and computational purp
 | MTCA, Guidelines in relation to the Transfer Pricing Rules (S.L. 123.207) | https://mtca.gov.mt/docs/default-source/documents/business-tax/international-affairs/international-direct-taxation/transfer-pricing/useful-links/guidelines---transfer-pricing-rules.pdf | 2026-10-23 |
 | MTCA, Advance Pricing Arrangements | https://mtca.gov.mt/business-tax/InternationalAffairs/international-direct-taxation/transfer-pricing/advanced-pricing-arrangements-(apa) | 2026-10-23 |
 | MTCA, Year of Assessment 2026 Tax Return for Companies (TRA 135), 7 May 2026 | https://mtca.gov.mt/news-results-page/2026/05/07/year-of-assessment-2026-tax-return-for-companies | 2026-10-23 |
-| Transfer Pricing Rules, S.L. 123.207 | https://legislation.mt/eli/sl/123.207/eng | Site unavailable on 2026-10-23 |
+| Transfer Pricing Rules, S.L. 123.207 (L.N. 284 of 2022 as amended by L.N. 9 of 2024), Rules 1, 2, 9, 11, 12 | https://legislation.mt/eli/sl/123.207/eng | 2026-10-23 |
+| Income Tax Management Act, Cap. 372, Article 19(5) | https://legislation.mt/eli/cap/372/eng | 2026-10-23 |
+| Income Tax (Statutory Dates) Rules, S.L. 372.16 | https://legislation.mt/eli/sl/372.16/eng | 2026-10-23 |
 
-Not yet confirmed: the end date of the Rule 1(2) grandfathering; the SME exclusion and the 75% / 50% associated enterprise tests against the Rule text; whether Legal Notice 9 of 2024 amended the Rules as earlier versions said; the Article 19(5) ITMA retention period; CbCR penalty amounts; APA and ruling fees; the content of TRA 135. legislation.mt was unavailable on 23 October 2026, so the Rule text itself was not read.
+Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the content of TRA 135; the CbCR deadline and notification rules (not re-read in this update); how the S.L. 372.16 return date applies to a company with a 31 December accounting date (see mt-corporate-tax).
 
 <!-- openaccountants-cta-block -->
 

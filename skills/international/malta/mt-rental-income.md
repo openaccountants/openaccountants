@@ -52,7 +52,7 @@ Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malt
 | Deadline | 30 April following year | 30 June following year |
 | Availability | Residents and non-residents | Residents and non-residents |
 | Entities | Individuals and bodies corporate | Individuals and bodies corporate |
-| Related-party lets | NOT available | Must use this system |
+| Commercial tenement or club let to or from a related body of persons | NOT available | Must use this system |
 | Election | Annual choice: can change each year | Default if FWS not elected |
 | Mixed election | NOT allowed: the option covers all qualifying rental income from all tenements for the year | N/A |
 
@@ -63,7 +63,7 @@ Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malt
 | Ambiguity | Default |
 | --- | --- |
 | Unknown system choice (FWS vs normal) | STOP: ask client which system they elect |
-| Unknown whether the tenant is a related party (a company or other body of persons more than 25% owned or controlled by the landlord, or by the same persons) | Treat as related party (FWS blocked) |
+| Commercial tenement or club, and unknown whether it is let to or from a related body of persons (more than 25% owned or controlled by the landlord, or by the same persons) | Treat as related (FWS blocked). The test does not apply to a dwelling or garage |
 | Unknown property type (residential vs commercial) | STOP: ask client |
 | Unknown residency status of landlord | STOP: affects withholding obligations |
 | Unknown whether furnished or unfurnished | Treat as unfurnished (no furniture premium) |
@@ -73,7 +73,7 @@ Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malt
 
 ### Required Inputs
 
-**Minimum viable** -- total gross rental income for the year, election for FWS or normal system, confirmation of whether the tenant is a related party.
+**Minimum viable** -- total gross rental income for the year, election for FWS or normal system, whether each property is a dwelling or garage or a commercial tenement, and for a commercial tenement whether it is let to or from a related body of persons.
 
 **Recommended** -- lease agreement(s), rental income bank receipts, property purchase documentation (for normal system deductions), details of any letting agent commissions, insurance and maintenance invoices.
 
@@ -82,7 +82,7 @@ Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malt
 ### Refusal Catalogue
 
 - **R-MTR-1 -- System election unknown**: The client must confirm whether they elect the 15% Final Withholding System or the normal progressive system. This affects all calculations. Cannot proceed without this election.  _(R-MTR-1)_
-- **R-MTR-2 -- Related-party letting**: Rent from related parties cannot benefit from the 15% final tax. Under Article 31D(8)(a)(ii), as quoted by MTCA, a body of persons is related to an individual if that individual owns or controls more than 25% of it, directly or indirectly; two bodies of persons are related if the same persons own or control more than 25% of each. If the letting is between related parties, the normal system must be used. Confirm the relationship before proceeding.  _(R-MTR-2; Article 31D)_
+- **R-MTR-2 -- Related-party letting**: A commercial tenement or club let to or from a related body of persons cannot benefit from the 15% final tax (Article 31D(8)(a)(ii)). The related-party condition sits only in that limb: a dwelling house or garage under Article 31D(8)(a)(i) qualifies whoever the tenant is. A body of persons is related to an individual if that individual owns or controls more than 25% of it, directly or indirectly; two bodies of persons are related if the same persons own or control more than 25% of each. If a commercial letting is between related parties, the normal system must be used. Confirm the relationship before proceeding.  _(R-MTR-2; Article 31D)_
 - **R-MTR-3 -- Property transfers / capital gains**: Property disposals and transfer tax computations are outside the scope of this skill. Escalate to a warranted accountant.  _(R-MTR-3)_
 - **R-MTR-4 -- Complex non-resident structures**: Non-resident landlords with complex holding structures, trusts, or nominee arrangements require specialist advice. Escalate to a warranted accountant.  _(R-MTR-4)_
 - **R-MTR-5 -- Mixed election attempted**: A taxpayer cannot elect FWS for part of their rental income and the normal system for another part. All rental income must be under one system for any given year.  _(R-MTR-5)_
@@ -91,7 +91,7 @@ Tax year: basis year 2026, return and TA24 due in 2027. Rate tables are in [malt
 
 ### 3.1 Core Rules (Article 31D)
 
-- **FWS core rules**: 1. The tax is 15% of **gross rental income received** in the basis year 2. Gross means gross: no deductions of any kind (repairs, insurance, management fees, mortgage interest, depreciation: NOTHING) 3. The tax is **final**: no refunds, no set-offs, no credits against other tax, no carry-forward of losses 4. Available to both residents and non-residents 5. Available to both individuals and companies; a Malta company allocates the profits to its final tax account 6. **NOT available** for rent from related parties 7. Rent includes ground rent from an emphyteutical concession; "tenement" covers all immovable property, including land and roof tops; recharges of common costs are not rent for Article 31D (MTCA guidance note)  _(Article 31D)_
+- **FWS core rules**: 1. The tax is 15% of **gross rental income received** in the basis year 2. Gross means gross: no deductions of any kind (repairs, insurance, management fees, mortgage interest, depreciation: NOTHING) 3. The tax is **final**: no refunds, no set-offs, no credits against other tax, no carry-forward of losses 4. Available to both residents and non-residents 5. Available to both individuals and companies; a Malta company allocates the profits to its final tax account 6. **NOT available** for a commercial tenement or club let to or from a related body of persons (Article 31D(8)(a)(ii)) 7. "Tenement" is a dwelling house or part of one occupied as a home, a garage, or a commercial tenement or club as defined in article 1525 of the Civil Code (Article 31D(8)(a)); "rents" include ground rents (Article 31D(8)(c)); recharges of common costs are not rent for Article 31D (MTCA guidance note) 8. Tax on rent from a long private residential lease is abated as prescribed (Article 31D(2) proviso); this skill does not compute the abatement  _(Article 31D)_
 
 ### 3.2 Calculation
 
@@ -315,13 +315,14 @@ Platform fees are not deducted from the FWS base.
 ```
 Additional tax = EUR 4,800 × 25% = EUR 1,200
 ```
-A let between two individuals in the same family is not caught by the body-of-persons test that MTCA quotes; see "Not yet confirmed" in Sources.
+An office is a commercial tenement, so the related-party bar in Article 31D(8)(a)(ii) applies. A dwelling or garage let to the same company would not be caught, and a let between two individuals is not caught by the body-of-persons test.
 
 ## Section 8 -- Decision Flowchart: FWS vs Normal System
 
 ```
-1. Is the tenant a RELATED PARTY (a body of persons more than 25% owned or
-   controlled by the landlord, or by the same persons)?
+1. Is the property a commercial tenement or club let to or from a RELATED
+   body of persons (more than 25% owned or controlled by the landlord, or by
+   the same persons)? Dwellings and garages skip this test.
    YES → Normal system only (FWS blocked)
    NO → Continue
 
@@ -340,7 +341,7 @@ ALWAYS compute both options and present to reviewer for confirmation.
 
 ### FWS Filing
 
-- [ ] Confirm no rent is from a related party (body of persons more than 25% owned or controlled)
+- [ ] Confirm no commercial tenement or club is let to or from a related body of persons (more than 25% owned or controlled)
 - [ ] Calculate total gross rental income for the basis year
 - [ ] Compute 15% tax
 - [ ] Complete TA24, online or manually
@@ -375,7 +376,7 @@ ALWAYS compute both options and present to reviewer for confirmation.
 
 ## PROHIBITIONS
 
-- NEVER apply FWS to related-party lettings
+- NEVER apply FWS to a commercial tenement or club let to or from a related body of persons
 - NEVER deduct expenses under the FWS: the 15% rate applies to GROSS income with zero deductions
 - NEVER deduct repairs, insurance or agent fees on top of the 20% further deduction under the normal system
 - NEVER set a rental loss against other income or carry it forward
@@ -388,7 +389,7 @@ ALWAYS compute both options and present to reviewer for confirmation.
 
 ## Ask the Client First
 
-- Is any tenant a company or other body of persons that the landlord (or the same owners) holds more than 25% of?
+- For each commercial property or club: is it let to or from a company or other body of persons that the landlord (or the same owners) holds more than 25% of?
 - Gross rent received in 2026 per property, and whether any of it is ground rent from emphyteusis.
 - Interest on loans for each let property, ground rent paid, and any MTA licence fees.
 - The landlord's other income and marital or parent status, to find the marginal rate (resident or non-resident).
@@ -412,9 +413,9 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 | MTCA, Tax Return Cycle | https://mtca.gov.mt/personal-tax/individual/tax-return-cycle | 2026-10-23 |
 | MTCA, New Property Tax System FAQ | https://mtca.gov.mt/personal-tax/property-taxes/faqs/new-property-tax-system---faq | 2026-10-23 |
 | MTCA, Budget Measures Implementation Act 2026 overview (no change to rental income tax) | https://mtca.gov.mt/business-tax/legislative-developments/2026 | 2026-10-23 |
-| Income Tax Act, Cap. 123 | https://legislation.mt/eli/cap/123/eng | Site unavailable on 2026-10-23 |
+| Income Tax Act, Cap. 123, Articles 31D and 5A(3)(e) | https://legislation.mt/eli/cap/123/eng | 2026-10-23 |
 
-Not yet confirmed: the full statutory text of Article 31D(8) (legislation.mt was unavailable), so whether any related-party limb reaches lets between individuals; the MTCA manual's line that gross rent under the 15% is "declared by end of June", which sits against FAQ 5 saying individuals do not declare it in the return; the 31 July online return date for the 2026 basis year; treating platform fees as not deductible from the 15% base; the UK treaty position in Example 3.
+Not yet confirmed: the MTCA guidance note's wider reading of "tenement" (land, roof tops) against the Article 31D(8)(a) definition; the MTCA manual's line that gross rent under the 15% is "declared by end of June", which sits against FAQ 5 saying individuals do not declare it in the return; the 31 July online return date for the 2026 basis year; treating platform fees as not deductible from the 15% base; the UK treaty position in Example 3.
 
 <!-- openaccountants-cta-block -->
 

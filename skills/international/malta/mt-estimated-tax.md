@@ -31,15 +31,15 @@ Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 c
 | --- | --- |
 | Country | Malta (Republic of Malta) |
 | Tax | Income tax provisional payments (Provisional Tax / PT) |
-| Primary legislation | Income Tax Management Act, Chapter 372, Article 42; Payment of Provisional Tax Rules, 2000 |
+| Primary legislation | Income Tax Management Act, Chapter 372, Article 42(2); Payment of Provisional Tax (P.T.) Rules, S.L. 372.18 (L.N. 48 of 2000) |
 | Authority | Commissioner for Tax and Customs / Malta Tax and Customs Administration (MTCA) |
 | Portal | https://mtca.gov.mt (myTax) |
 | Currency | EUR only |
 | Payment schedule | Three instalments: 20% by 30 April, 30% by 31 August, 50% by 21 December |
 | Computation basis | PT benchmark: the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year (for 2026: basis year 2024, YA 2025). The Commissioner may set a higher benchmark by written notice |
-| Who pays | An individual who had to file a return for the benchmark year; companies liable to tax for that year |
+| Who pays | Every company; an individual liable to tax in Malta for the benchmark year of assessment, except one who could elect under Article 12 ITMA (no return) for that year; any other person that is not a company or an individual. The Commissioner can exempt by written notice (S.L. 372.18, rule 2(1)) |
 | First year of business | No PT; the tax for that year is paid with the return by 30 June of the next year |
-| Late payment | Interest of 0.6% per month or part thereof (from 1 September 2022) |
+| Late payment | Additional tax of 0.6% of the unpaid PT for each calendar month or part (S.L. 372.18, rule 14(1), for periods from 1 June 2022; MTCA pages say from 1 September 2022). Cut by 90% on the part of the benchmark above the tax the self-assessment shows. Stops at the tax settlement date |
 | Tax year | Basis year 2026 |
 | Review status | Source-cited draft: not reviewed by an accountant |
 
@@ -185,7 +185,7 @@ The benchmark is EUR 3,000: the 15% tax on rent was paid with the TA24 and never
 
 ### Example 5 -- Late payment interest
 
-The first 2026 instalment of EUR 1,800 was due 30 April 2026 and paid 15 July 2026. Interest is 0.6% for each month or part of a month. May, June and the part of July give 3 months, so EUR 32.40.
+The first 2026 instalment of EUR 1,800 was due 30 April 2026 and paid 15 July 2026. Interest is 0.6% for each calendar month or part of a month. May, June and the part of July give 3 months, so EUR 32.40. This assumes the 2026 tax is not below the benchmark; otherwise the 90% cut in rule 14(1) applies to the difference.
 
 ```oa-check
 name: Late April 2026 PT instalment, paid 15 July, 0.6% per month or part
@@ -211,7 +211,7 @@ expected:
 
 ### 5.1 Standard computation (benchmark year)
 
-- **Standard computation (benchmark year)**: The PT benchmark for a basis year is the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year. Tax deducted at source stays deducted. ``` benchmark = tax_underpaid_line + PT_paid_for_benchmark_year PT_instalment_1 = benchmark x 20% PT_instalment_2 = benchmark x 30% PT_instalment_3 = benchmark x 50% ``` Do NOT divide by three equally. The split is always 20/30/50. If no self-assessment was filed for the benchmark year, the benchmark is the tax in the Commissioner's estimated tax statement.  _(Section 5.1; MTCA PT booklet Q3, Q8)_
+- **Standard computation (benchmark year)**: The PT benchmark for a basis year is the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year. Tax deducted at source stays deducted. ``` benchmark = tax_underpaid_line + PT_paid_for_benchmark_year PT_instalment_1 = benchmark x 20% PT_instalment_2 = benchmark x 30% PT_instalment_3 = benchmark x 50% ``` Do NOT divide by three equally. The split is always 20/30/50. If no self-assessment was filed for the benchmark year before the month preceding the instalment, the benchmark is the tax in the Commissioner's Article 31(3) determination (the estimated tax statement); without one, the last earlier self-assessment; without either, nil. The Commissioner can set a higher benchmark by written notice.  _(S.L. 372.18, rules 2(1), 5, 6(1), 6(4), 7(1); MTCA PT booklet Q3, Q8)_
 
 ### 5.2 Year-end reconciliation
 
@@ -219,7 +219,7 @@ expected:
 
 ### 5.3 First year and new businesses
 
-- **First year and new businesses**: In the first year of business there is no PT; the tax is paid with the return by 30 June of the following year. An individual is a PT payer for a basis year only if a return was due for the basis year two years earlier, so a business that starts in 2025 has its first benchmark in 2027 (based on 2025). The Commissioner may exempt a person, or set a benchmark, by written notice.  _(Section 5.3; MTCA PT booklet Q2, Q11)_
+- **First year and new businesses**: In the first year of business there is no PT; the tax is paid with the return by 30 June of the following year. The benchmark year of assessment is the last one for which a return was due before 1 January of the year of the first instalment (S.L. 372.18, rule 2(1)). An individual whose business starts in 2025 files the first return for YA 2026 by 30 June 2026, so the first PT is for basis year 2027, on a benchmark from basis year 2025. The Commissioner may exempt a person, or set a benchmark, by written notice.  _(S.L. 372.18, rule 2(1); MTCA PT booklet Q2, Q11)_
 
 ### 5.4 Excluded income
 
@@ -235,16 +235,17 @@ expected:
 | --- | --- |
 | Interest rate | 0.6% per month or part thereof (from 1 September 2022) |
 | Runs from | Due date of each instalment |
-| Maximum | No cap found in the MTCA sources |
-| Shortfall after the year | Tax unpaid after 30 June of the following year also bears 0.6% a month |
+| Stops | No further additional tax on unpaid PT for any month starting after the tax settlement date, 30 June of the year of assessment (S.L. 372.18, rule 14(2); S.L. 372.16, rule 5) |
+| 90% reduction | Where the self-assessed tax is below the PT benchmark, the additional tax on the difference is cut by 90% (S.L. 372.18, rule 14(1), last proviso) |
+| Shortfall after the year | Tax unpaid after the 30 June settlement date bears interest of 0.6% for each month or part; total interest cannot exceed the tax (S.L. 372.28, rule 2) |
 
 ### 6.2 Interest computation
 
-- **Interest computation**: ``` interest = unpaid_amount x 0.6% x months_or_part_overdue ``` Interest accrues per instalment independently. The 2019 MTCA booklet also reduces the charge by 90% on the part of the benchmark above the tax actually due; whether that reduction still applies to the post-2022 interest is not confirmed.  _(Section 6.2)_
+- **Interest computation**: ``` interest = unpaid_amount x 0.6% x months_or_part_overdue ``` Interest accrues per instalment independently. The charge on the part of the benchmark above the tax actually due is cut by 90% (rule 14(1), last proviso, still in force after L.N. 99 of 2022).  _(S.L. 372.18, rule 14)_
 
 ## Section 7 -- Adjustments and reductions
 
-- **Adjustments and reductions**: If the taxpayer expects the tax for the year to be lower than the benchmark, they file a PT reduction form giving the estimated tax. No approval is needed. The instalments still follow the original benchmark (20% and 30%) until the reduced total is reached; the last instalment is the balance. Example: benchmark EUR 1,000, estimate EUR 800: pay EUR 200, EUR 300, then EUR 300. Risk: if the tax for the year exceeds the reduced total, interest runs on the shortfall. Flag for reviewer before advising any PT reduction.  _(Section 7; MTCA PT booklet Q9; MTCA FAQ 5)_
+- **Adjustments and reductions**: If the taxpayer expects the tax for the year to be lower than the benchmark, they file the PT reduction form in the Schedule to S.L. 372.18 giving the estimated tax. No approval is needed, and the form can be filed more than once in a year (rule 10(2)). Each later instalment is the lower of the normal 20/30/50 amount and the estimate less PT already paid (rule 10(3)). The instalments still follow the original benchmark (20% and 30%) until the reduced total is reached; the last instalment is the balance. Example: benchmark EUR 1,000, estimate EUR 800: pay EUR 200, EUR 300, then EUR 300. Risk: if the tax for the year exceeds the reduced total, interest runs on the shortfall. Flag for reviewer before advising any PT reduction.  _(S.L. 372.18, rules 10 to 12; MTCA PT booklet Q9; MTCA FAQ 5)_
 
 ## Section 8 -- Edge cases
 
@@ -352,9 +353,12 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 | MTCA, FAQs General Questions (PT reduction form; 0.6% per month or part from 1 September 2022) | https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/faqs---general-questions | 2026-10-23 |
 | MTCA, Manual on the Taxation of Rental Income (Article 42 ITMA, PT on rent) | https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf | 2026-10-23 |
 | MTCA, Budget Measures Implementation Act 2026 overview (no change to PT) | https://mtca.gov.mt/business-tax/legislative-developments/2026 | 2026-10-23 |
-| Income Tax Management Act, Cap. 372 | https://legislation.mt/eli/cap/372/eng | Site unavailable on 2026-10-23 |
+| Income Tax Management Act, Cap. 372, Article 42(2) | https://legislation.mt/eli/cap/372/eng | 2026-10-23 |
+| Payment of Provisional Tax (P.T.) Rules, S.L. 372.18 (as amended to L.N. 99 of 2022), rules 2 to 14 | https://legislation.mt/eli/sl/372.18/eng | 2026-10-23 |
+| Income Tax (Rate of Interest) Rules, S.L. 372.28, rule 2 | https://legislation.mt/eli/sl/372.28/eng | 2026-10-23 |
+| Income Tax (Statutory Dates) Rules, S.L. 372.16, rules 2 and 5 | https://legislation.mt/eli/sl/372.16/eng | 2026-10-23 |
 
-Not yet confirmed: the subsidiary legislation number of the Payment of Provisional Tax Rules, 2000 (version 2.0 said S.L. 372.04); whether the 90% reduction in the 2019 booklet still applies to the 0.6% interest; whether interest on a late instalment stops at 30 June of the following year, as the 2019 booklet's additional tax did. The PT booklet is dated 2019 and legislation.mt was unavailable, so the article 42 text was not read.
+Not yet confirmed: the start date of the 0.6% rate for PT (rule 14(1) says periods from 1 June 2022; MTCA pages say 1 September 2022; this does not change any 2026 figure); the 31 December refund date and refund interest, taken from the MTCA Tax Return Cycle page rather than Article 48 ITMA.
 
 <!-- openaccountants-cta-block -->
 
