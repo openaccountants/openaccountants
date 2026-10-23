@@ -1,6 +1,6 @@
 ---
 name: at-payroll-and-social-insurance
-description: "Use this skill for Austrian payroll in tax year 2026: monthly wage tax (Lohnsteuer) withheld by the employer, the 13th and 14th salaries taxed at 6% within the Jahressechstel after the EUR 620 allowance, employee and employer social insurance under the ASVG (18.07% and 20.98% for salaried staff outside Vienna), the maximum contribution base of EUR 6,930 a month and EUR 13,860 a year for special payments, the marginal-employment limit of EUR 551.10, and the employer's payroll levies (DB 3.7%, DZ by Land, Kommunalsteuer 3%, MV 1.53%). Covers monthly payment and the mBGM to the ÖGK by the 15th, the annual Lohnzettel (L 16) by end of February, and penalties. Trigger phrases: Lohnverrechnung, Lohnsteuer, Lohnnebenkosten, 13. Gehalt, Urlaubszuschuss, Weihnachtsremuneration, Austrian payroll, employer cost Austria. Out of scope: the annual tariff and the employee's L 1 or E 1 return (at-income-tax), self-employed SVS (at-svs-contributions), arriving and leaving (at-cross-border), company tax (at-corporate-income-tax)."
+description: "Use this skill for Austrian payroll in tax year 2026: monthly wage tax (Lohnsteuer), the 13th and 14th salaries at 6% within the Jahressechstel, employee and employer social insurance under the ASVG (18.07% and 20.98% outside Vienna), the EUR 6,930 maximum contribution base, the employer's levies (DB 3.7%, DZ, Kommunalsteuer 3%, MV 1.53%), tax-free supplements under EStG § 68 (EUR 400 a month for dirt, hardship, danger, Sunday, holiday and night work, plus 50% overtime supplements for the first 15 hours up to EUR 170 in 2026), and termination pay (old-system Abfertigung at 6%, BV-Kasse payouts, Kündigungsentschädigung and settlements with a tax-free fifth, Urlaubsersatzleistung). Covers monthly and annual deadlines and penalties. Trigger phrases: Lohnverrechnung, Lohnsteuer, Überstundenzuschlag, SEG-Zulage, Abfertigung, Urlaubsersatzleistung, Austrian payroll. Out of scope: the annual tariff and the employee's L 1 or E 1 return (at-income-tax), self-employed SVS (at-svs-contributions), arriving and leaving (at-cross-border), company tax (at-corporate-income-tax)."
 jurisdiction: AT
 category: international
 tax_year: 2026
@@ -22,7 +22,7 @@ All figures are for the 2026 calendar year. Statute text was read on RIS (the fe
 - **Foreign employers with no Austrian establishment.** They may run Austrian payroll voluntarily, and then carry all the employer's duties (EStG § 47(1) lit. b). If they do not, they must send the Finanzamt a wage certificate (Lohnbescheinigung, EStG § 84a) for employees with unlimited tax liability whose centre of activity is in Austria for more than six months of the year (EStG § 47(1) lit. c). The employee then declares the wages in their own return.
 - **Employees (Dienstnehmer) under the ASVG.** Anyone in an employment relationship, plus free service contractors (freie Dienstnehmer), is insured with the ÖGK (Österreichische Gesundheitskasse). Pay above EUR 551.10 a month means full insurance. At or below it, the person is marginally employed (geringfügig) and only accident insurance is paid by the employer.
 - **Registration.** The employer registers each employee with the ÖGK before work starts, and deregisters them within seven days after insurance ends (ASVG § 33(1)).
-- **Not covered here.** Civil servants (B-KUVG), miners (knappschaftliche Pensionsversicherung), apprentices' reduced rates, construction workers' BUAK contributions, overtime and shift supplements under EStG § 68, and termination payments under § 67(3) to (8). Refer them.
+- **Not covered here.** Civil servants (B-KUVG), miners (knappschaftliche Pensionsversicherung), apprentices' reduced rates, construction workers' BUAK contributions and their special rules under EStG § 67(5), widow's pension settlements under § 67(4), pension buy-outs under § 67(8)(e), and back pay in insolvency under § 67(8)(g). Refer them. Supplements under EStG § 68 and termination payments under § 67(3), (6) and (8)(a) to (d) and (f) are covered below.
 
 ## Rates, bands and thresholds
 
@@ -54,6 +54,15 @@ All figures are for the 2026 calendar year. Statute text was read on RIS (the fe
 | DB, DZ and Kommunalsteuer small-payroll relief: if the month's total pay is at most EUR 1,460, deduct | EUR 1,095 from the base | 2026 | same, and FLAG § 41(4) |
 | Late-payment interest on social insurance (Verzugszinsen) | 5.53% | from 1 January 2026 | https://www.gesundheitskasse.at/cdscontent/load?contentid=10008.802672&version=1775628844 |
 | Vienna Dienstgeberabgabe (U-Bahn levy), per employee working in Vienna, for each started week; employees over 55 exempt | EUR 2 | 2026 | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrW&Gesetzesnummer=20000133 |
+| Tax-free total of dirt, hardship and danger allowances (SEG-Zulagen), Sunday, holiday and night supplements, overtime supplements linked to that work, and holiday-work pay under ARG § 9(5) | EUR 400 a month (EUR 600 if normal hours fall mostly between 19:00 and 07:00) | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=68 |
+| Tax-free overtime supplements on top of that (EStG § 68(2) as modified for 2026) | first 15 overtime hours a month, at most 50% of the basic hourly pay, at most EUR 170 a month | pay periods in 2026 (the permanent rule is 10 hours and EUR 120) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=124b (Z 440 lit. c) |
+| Same overtime relief, for comparison | first 18 hours, EUR 200 a month | pay periods 2024 and 2025 only | same (Z 440 lit. b) |
+| Statutory or collective-agreement severance (Abfertigung alt) | 6%, or the tariff tax on one month's current pay times the number of months if that is lower | 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=67 |
+| Capital paid out by a BV-Kasse (Abfertigung neu) | 6%; nil if moved to a pension insurer, a pension fund or a Pensionskasse | 2026 | same |
+| Voluntary severance and other payments on leaving (§ 67(6)): slice at 6% | one quarter of the last 12 months' current pay, at most 9 times EUR 6,930 (EUR 62,370) | 2026 | same |
+| Kündigungsentschädigung, and court or out-of-court settlements (§ 67(8)(a) and (b)): tax-free part | one fifth after social insurance, at most one fifth of EUR 62,370 (EUR 12,474) | 2026 | same |
+| Settlement on leaving for periods covered by a BV-Kasse | up to EUR 7,500 at 6% | 2026 | same |
+| Social-plan payments on leaving (§ 67(8)(f)) | up to EUR 22,000 at half the rate that results when the payment is spread evenly over the months of the year | 2026 | same |
 
 The BMF deadlines page gives the same DB rate (3.7%) and DZ range (0.31% to 0.4%) ([BMF, Fristen und Fälligkeiten](https://www.bmf.gv.at/themen/steuern/fristen-verfahren/fristen-faelligkeiten.html)).
 
@@ -80,6 +89,30 @@ The BMF deadlines page gives the same DB rate (3.7%) and DZ range (0.31% to 0.4%
 
 **Base for DB, DZ and Kommunalsteuer.** All wages paid in the month, current and special payments alike, with no maximum base (FLAG § 41(3); KommStG § 5). Pensions, statutory severance under § 67(3) and (6), wages of disabled employees protected by law, and wages of employees from the month after they turn 60 are left out of the DB base (FLAG § 41(4)). Kommunalsteuer is owed to the municipality where the establishment is (KommStG § 5(1)). DZ is owed only by members of the Wirtschaftskammer (WKO).
 
+**Supplements for overtime, night, Sunday and holiday work, and SEG-Zulagen (EStG § 68).**
+
+1. Split each overtime hour into its basic pay (Grundlohn) and the supplement (Zuschlag). The basic pay is always taxed at the tariff with current pay. Only the supplement can be tax-free (§ 68(1) to (3)).
+2. Find the basic hourly pay. The BMF divides monthly pay by 173 for a 40-hour week, unless the collective agreement or works agreement sets another divisor (LStR 2002 Rz 1148).
+3. An overtime hour is an hour beyond the normal working time set by law, collective agreement or works agreement, and only time beyond 40 hours a week, or beyond the daily hours that a 40-hour week spread over the working days gives, counts (§ 68(4)). Part-time extra hours paid with the 25% Mehrarbeit supplement are not overtime and stay taxable (LStR 2002 Rz 1146).
+4. Pot 1, EUR 400 a month (§ 68(1)): SEG-Zulagen, Sunday, holiday and night supplements, overtime supplements for overtime worked on Sundays, holidays or at night, and holiday-work pay under ARG § 9(5). Night work means at least 3 hours in a row between 19:00 and 07:00 that the business requires (§ 68(6)). If the employee's normal hours in the pay period fall mostly in that window, the pot is EUR 600. SEG-Zulagen qualify only if a law, collective agreement, works agreement or an in-house rule for all staff or a group of staff grants them (§ 68(5)).
+5. Pot 2, the weekday overtime pot (§ 68(2) with § 124b Z 440 lit. c): for pay periods in 2026, supplements for the first 15 overtime hours in the month, at most 50% of the basic hourly pay per hour, at most EUR 170 in total. A supplement above 50% is tax-free only up to 50%. If the supplement is below 50%, only that lower amount is tax-free, and still for 15 hours at most (LStR 2002 Rz 1148, which gives the same rule for the old 10 hours). Overtime supplements that do not fit in pot 1 because pot 1 is full can use pot 2 if its hours are not used up (Rz 1147).
+6. Everything above the two pots is taxed at the tariff with current pay (§ 68(3)).
+7. Social insurance: overtime pay, the supplements, the hardship and danger allowances and the Sunday, holiday and night supplements are all Entgelt and bear full contributions. Only a dirt allowance (Schmutzzulage) is exempt, and only as far as it is tax-free under § 68 (ASVG § 49(3) Z 2). DB, DZ, Kommunalsteuer and MV are due on all of it: § 68 pay is not on the exempt lists (FLAG § 41(4); KommStG § 5(2); BMSVG § 6(5) with ASVG § 49).
+8. Each employer gives both pots in full, even where the employee changes job in the month or has two jobs (Rz 1147).
+
+The § 68(1) text in force from 1 July 2026 (adding "comparable statutory rules" to holiday-work pay) applies to pay periods ending after 31 December 2025. An employer that had not applied it had to correct (aufrollen) earlier 2026 payrolls by 30 September 2026 where technically possible (§ 124b Z 494). The same applied to the 15-hour and EUR 170 rule, with a deadline of 31 May 2026 (§ 124b Z 440 lit. c).
+
+**Termination payments (EStG § 67(3) to (8)).** Run them in the final payroll in this order.
+
+1. **Statutory or collective-agreement severance, old system (Abfertigung alt, § 67(3)).** It applies to employment that began before 1 January 2003 (BMSVG § 46(1)), or to the frozen old entitlement of an employee who moved to the new system for later years (BMSVG § 47(2)). The labour-law amount is a number of monthly pays. Tax is the lower of 6% of the payment, or the tariff wage tax on one month's current pay multiplied by that number of months (the Vervielfachungsmethode). No social insurance (ASVG § 49(3) Z 7), no MV, and no DB, DZ or Kommunalsteuer (FLAG § 41(4) lit. b; KommStG § 5(2) lit. b). Extra severance paid for years covered by a BV-Kasse is taxed at the tariff under § 67(10).
+2. **New-system severance (Abfertigung neu, BMSVG).** The employer does not pay it: the employee claims it from the BV-Kasse (BMSVG § 14(1)). The employee cannot take it out yet, and it stays in the BV-Kasse, if they resigned, were dismissed for cause, left early without good reason, or have fewer than 36 contribution months (§ 14(2)). A cash payout is taxed at 6%. If the employee moves the money to a pension insurer, a pension investment fund, a Pensionskasse or (from 17 October 2026) a supplementary pension scheme under ASVG § 479, no wage tax arises (EStG § 67(3); BMSVG § 17(1)).
+3. **Voluntary severance and other payments on leaving (§ 67(6)).** 6% applies to one quarter of the current pay of the last 12 months, capped at 9 times the monthly maximum contribution base (EUR 62,370 for 2026). For service years with no BV-Kasse claim, a further slice of 2/12 to 12/12 of the last 12 months' current pay is also taxed at 6%, depending on proven years of service (3 to 25 years), capped at 3 times EUR 6,930 per month counted; any statutory severance already paid or due reduces that further slice (§ 67(6) Z 2, 3 and 7). Anything above is taxed at the tariff as current pay of the month (§ 67(6) Z 6). Payments for waiving work in future pay periods are excluded from § 67(6). Not part of the DB, DZ or Kommunalsteuer base (FLAG § 41(4) lit. b; KommStG § 5(2) lit. b).
+4. **Kündigungsentschädigung (damages for the pay the employee would have earned up to the end of the proper notice period, § 67(8)(b)).** Deduct the employee's social insurance on it. One fifth of the rest is tax-free, at most EUR 12,474 (one fifth of EUR 62,370). The remainder is taxed with the current pay of the month of payment at the tariff (§ 67(10)). It is Entgelt for social insurance and MV, and insurance runs on for the notice period it covers (ASVG § 11(2); BMSVG § 14(2)).
+5. **Settlements (Vergleichssummen, § 67(8)(a)).** Same one-fifth rule and cap, unless part of the sum is severance under § 67(3) or (6), which keeps its 6%. A settlement paid on or after leaving for periods covered by a BV-Kasse is taxed at 6% up to EUR 7,500. Insurance runs on for the period the settlement covers, after leaving out amounts that are not Entgelt (ASVG § 11(2)).
+6. **Pay for untaken holiday (Urlaubsersatzleistung, § 67(8)(d)).** Split it. The part that replaces current pay is taxed as current pay of the month of payment. The part that replaces the 13th and 14th salary is a special payment and is taxed under § 67(1) and (2). Social insurance and MV are due, and insurance runs on for the holiday period it covers, after any Kündigungsentschädigung period (ASVG § 11(2)).
+7. **Social-plan payments (§ 67(8)(f)).** Paid on leaving under a social plan for a restructuring under ArbVG § 109(1) Z 1 to 6, and not already taxed at 6% under § 67(6): up to EUR 22,000 at half the rate that results when the payment is spread evenly over the months of the year.
+8. **Everything else** paid on leaving, such as a bonus or commission earned during employment, follows the normal rules for current pay or special payments.
+
 ## Deadlines and filing
 
 | What | When | To whom | Source |
@@ -100,6 +133,8 @@ Wages for one month that are paid by the 15th of the next month count for the ea
 
 An employee who had two or more employers at the same time during the year, each withholding separately, must file an assessment (EStG § 41(1) Z 2). Other filing duties: `at-income-tax`.
 
+Termination payments have no deadlines of their own. The wage tax on them is paid over by the 15th of the following month like other wages, and the leaver's Lohnzettel goes in with all the others by end of February (EStG §§ 79(1) and 84(1)).
+
 ## Penalties and interest
 
 | What | Amount | Source |
@@ -118,7 +153,7 @@ An employee who had two or more employers at the same time during the year, each
 - **Postings and the A1 certificate.** Under Regulation (EC) No 883/2004 a worker is insured in one state at a time. Postings from Austria for up to 24 months stay under Austrian insurance with an A1 certificate. The conditions are in `at-cross-border`. An employee posted abroad still counts as employed in Austria for DB (FLAG § 41(1)) and DZ.
 - **Non-resident employees.** Wages for work done in Austria are Austrian income of a non-resident (EStG § 98(1) no. 4) and go through Austrian payroll if the employer has an Austrian establishment. In payroll they get the Verkehrsabsetzbetrag and Pendlereuro but not the Familienbonus Plus or the sole-earner or single-parent credit (EStG § 70(2) Z 1). The non-resident add-on of EUR 11,077 applies on assessment, not in payroll (EStG § 102(3)): `at-cross-border`.
 - **Foreign employer, no Austrian establishment.** No duty to withhold. Either run voluntary payroll (§ 47(1) lit. b), or send the § 84a wage certificate for employees with their centre of activity in Austria for more than six months (§ 47(1) lit. c). Social insurance follows Regulation 883/2004, not the tax rules: refer the registration of a foreign employer.
-- **Treaty cases.** Where a treaty gives the taxing right on part of the wages to another state (for example work days abroad), refer the split payroll.
+- **Treaty cases.** Where a treaty gives the taxing right on part of the wages to another state (for example work days abroad), refer the split payroll. The same applies to a severance or settlement that pays for years partly worked abroad: refer the split before applying the 6% or the one-fifth rule.
 
 ## Worked examples
 
@@ -204,6 +239,81 @@ expected:
   employer_cost: 5162.00
 ```
 
+### Example 3: ten weekday overtime hours at a basic hourly pay of EUR 30
+
+A wage-earning employee in Linz has a 40-hour week and monthly pay of EUR 5,190. The collective agreement uses the divisor 173, so the basic hourly pay is EUR 30. In March 2026 they work 10 overtime hours on weekdays, in daytime, each paid at the basic hourly pay plus a 50% supplement. There is no Sunday, holiday or night work and no SEG-Zulage, so the EUR 400 pot is not touched.
+
+1. Basic pay for the overtime: 10 x EUR 30 = EUR 300. Always taxable.
+2. Supplements: 10 x EUR 15 = EUR 150.
+3. Weekday overtime pot for 2026: supplements for up to 15 hours, at most 50% of EUR 30 per hour (EUR 15), at most EUR 170. All 10 hours fit and EUR 150 is under EUR 170, so the whole EUR 150 is tax-free.
+4. Social insurance: the full EUR 450 is Entgelt. Employee share 18.07% = EUR 81.32 (monthly total EUR 5,640, under the EUR 6,930 cap). The employer also pays its 20.98%, MV, DB, DZ and Kommunalsteuer on EUR 450.
+5. Edge case: with 18 overtime hours instead, the supplements are EUR 270. Only the first 15 hours count (EUR 225), and the cap cuts that to EUR 170. So EUR 100 of supplement is taxable, plus EUR 540 of basic pay. Under the 2024 and 2025 rule (18 hours, EUR 200) EUR 200 would have been tax-free; under the permanent rule (10 hours, EUR 120) only EUR 120.
+
+```oa-check
+name: Weekday overtime supplements, EUR 30 basic hourly pay (2026)
+inputs:
+  monthly_pay: 5190
+  divisor: 173
+  hours: 10
+  hours_b: 18
+  rate: 0.5
+steps:
+  - hourly: monthly_pay / divisor
+  - basic_ot: hours * hourly
+  - supplement: hours * hourly * rate
+  - tax_free: min(min(hours, 15) * hourly * min(rate, 0.5), 170)
+  - taxable_supplement: supplement - tax_free
+  - ee_sv_ot: round((basic_ot + supplement) * 0.1807, 2)
+  - supplement_b: hours_b * hourly * rate
+  - tax_free_b: min(min(hours_b, 15) * hourly * min(rate, 0.5), 170)
+  - taxable_b: supplement_b - tax_free_b + hours_b * hourly
+expected:
+  hourly: 30.00
+  basic_ot: 300.00
+  supplement: 150.00
+  tax_free: 150.00
+  taxable_supplement: 0.00
+  ee_sv_ot: 81.32
+  supplement_b: 270.00
+  tax_free_b: 170.00
+  taxable_b: 640.00
+```
+
+### Example 4: old-system severance of three months' pay
+
+The employee from Example 1 (EUR 4,000 a month in Graz, 14 payments) joined in 1999. On 1 January 2005 they moved to the new severance system by written agreement and kept their old claim frozen (BMSVG § 47(2)). The employer ends the employment on 30 September 2026. The frozen claim is three monthly pays, computed on the last month's pay of EUR 4,000, so EUR 12,000. Whether the monthly base should also include a share of the 13th and 14th salary is a labour-law point: confirm it before paying.
+
+1. Vervielfachungsmethode: the tariff wage tax on one month's current pay is EUR 552.41 (Example 1, step 5). Times 3 = EUR 1,657.23.
+2. Fixed rate: 6% of EUR 12,000 = EUR 720.00.
+3. The lower figure applies: wage tax EUR 720.00. Net severance EUR 11,280.00.
+4. No employee or employer social insurance (ASVG § 49(3) Z 7), no MV, and no DB, DZ or Kommunalsteuer (FLAG § 41(4) lit. b, KommStG § 5(2) lit. b). Employer cost is the EUR 12,000 itself.
+5. For years from 2005 the employee's claim is against the BV-Kasse, not the employer. If the employer paid an extra voluntary EUR 12,000 on top, § 67(6) Z 1 would tax at 6% up to one quarter of the last 12 months' current pay (12 x EUR 4,000 / 4 = EUR 12,000), so all of it at 6% (EUR 720). The service-scaled slice of § 67(6) Z 2 is not available for the BV-Kasse years (Z 7).
+
+```oa-check
+name: Old-system severance, three monthly pays of EUR 4,000 (2026)
+inputs:
+  monthly_pay: 4000
+  months: 3
+  monthly_wage_tax: 552.41
+  voluntary: 12000
+steps:
+  - severance: monthly_pay * months
+  - tax_multiple: monthly_wage_tax * months
+  - tax_fixed: severance * 0.06
+  - wage_tax: min(tax_multiple, tax_fixed)
+  - net: severance - wage_tax
+  - quarter_cap: min(monthly_pay * 12 / 4, 9 * 6930)
+  - voluntary_tax: min(voluntary, quarter_cap) * 0.06
+expected:
+  severance: 12000.00
+  tax_multiple: 1657.23
+  tax_fixed: 720.00
+  wage_tax: 720.00
+  net: 11280.00
+  quarter_cap: 12000.00
+  voluntary_tax: 720.00
+```
+
 ## Ask the client first
 
 1. Where is each establishment, which municipality, and which Land? (Kommunalsteuer goes to the municipality; DZ, the Vienna WBF and the Vienna Dienstgeberabgabe depend on the Land.)
@@ -212,6 +322,8 @@ expected:
 4. For each employee: salaried or wage-earning, apprentice, marginal, or free service contractor; age (60 or over drops out of the DB base); start date (MV is free in the first month).
 5. Has the employee claimed a Pendlerpauschale (form L 34 EDV), the Familienbonus Plus or a sole-earner credit with you?
 6. Does anyone work abroad or come from abroad, and is there an A1 certificate?
+7. For overtime: which divisor and which overtime and night rules does the collective agreement set, and are overtime hours recorded hour by hour? (The basic hourly pay, which hours fall in the EUR 400 pot and which in the EUR 170 pot.)
+8. For a leaver: when did the employment start, was there a move to the new severance system and on what date, who ended it and how, and what does the termination agreement or settlement pay? (Old or new severance, § 67(3) or (6), the one-fifth rule, Urlaubsersatzleistung.)
 
 ## Sources
 
@@ -223,7 +335,7 @@ expected:
 | EStG § 47 (employer, foreign employer without establishment) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=47 | 2026-10-23 |
 | EStG § 62 (deductions before the wage-tax tariff) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=62 | 2026-10-23 |
 | EStG § 66 (wage-tax tariff, annualisation) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=66 | 2026-10-23 |
-| EStG § 67 (special payments, EUR 620, 6%, Jahressechstel, EUR 2,615) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=67 | 2026-10-23 |
+| EStG § 67 (special payments, EUR 620, 6%, Jahressechstel, EUR 2,615; termination payments in (3), (6), (8) and (10), as in force from 17 October 2026 and compared with the text in force on 1 March 2026) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=67 | 2026-10-23 |
 | EStG § 76 (payroll account) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=76 | 2026-10-23 |
 | EStG § 79 (paying over wage tax by the 15th) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=79 | 2026-10-23 |
 | EStG § 82 (employer liability) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=82 | 2026-10-23 |
@@ -247,4 +359,16 @@ expected:
 | Wiener Dienstgeberabgabegesetz §§ 3, 5, 6 (EUR 2 a week, over-55 exemption, deadlines) | https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=LrW&Gesetzesnummer=20000133 | 2026-10-23 |
 | BMF, Fristen und Fälligkeiten (15th of the month, L 16, DB 3.7%) | https://www.bmf.gv.at/themen/steuern/fristen-verfahren/fristen-faelligkeiten.html | 2026-10-23 |
 
-Not yet confirmed: the fine range for late or missing wage-tax payments under the Finanzstrafgesetz, which was not read.
+| EStG § 68 (supplements: EUR 400, EUR 600 for night workers, 10 hours and EUR 120, overtime and night definitions), in force from 1 July 2026, and the versions in force on 1 January and 1 March 2026 | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=68 | 2026-10-23 |
+| EStG § 124b Z 440 lit. b and c (overtime relief: 18 hours and EUR 200 for 2024 and 2025; 15 hours and EUR 170 for 2026), Z 492 and Z 494 (§ 68(1) roll-back deadlines) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004570&Paragraf=124b | 2026-10-23 |
+| ASVG § 11(2) (insurance runs on for Kündigungsentschädigung, Urlaubsersatzleistung and settlements) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=11 | 2026-10-23 |
+| ASVG § 49(3) Z 2 and Z 7 (dirt allowances and termination payments are not Entgelt) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147&Paragraf=49 | 2026-10-23 |
+| BMSVG § 6(5) (MV base follows ASVG § 49) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=6 | 2026-10-23 |
+| BMSVG § 14 (claim against the BV-Kasse, exclusions, 36 contribution months) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=14 | 2026-10-23 |
+| BMSVG § 17 (payout and transfer options) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=17 | 2026-10-23 |
+| BMSVG § 46 (new system for employment beginning after 31 December 2002) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=46 | 2026-10-23 |
+| BMSVG § 47 (move to the new system, frozen old claim on the last month's pay) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20002088&Paragraf=47 | 2026-10-23 |
+| Kommunalsteuergesetz § 5 (base, § 67(3) and (6) payments excluded) | https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004841&Paragraf=5 | 2026-10-23 |
+| BMF, Lohnsteuerrichtlinien 2002 Rz 1145 to 1148 (overtime: divisor 173, supplements under 50%, part-time Mehrarbeit, both pots per employer) | https://findok.bmf.gv.at/findok/iwg/19/19974/19974.21.pdf | 2026-10-23 |
+
+Not yet confirmed: the fine range for late or missing wage-tax payments under the Finanzstrafgesetz, which was not read. The Lohnsteuerrichtlinien file read is the consolidated edition of 20 December 2021, which still shows the old EUR 86 and EUR 360 amounts; only its method points (Rz 1145 to 1148) are used here, and the current findok edition was not read. Whether the social-insurance contribution on tax-free supplements is deductible in full in the wage-tax base was not checked, so Example 3 stops before the month's wage tax. The labour-law size of a severance (AngG § 23 months, and whether the monthly base includes a share of the 13th and 14th salary) was not read.
