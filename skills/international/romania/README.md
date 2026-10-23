@@ -3,7 +3,7 @@ jurisdiction: RO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  IT-IND: self-employed (PFA) only
+  IT-IND: "PFA skill ro-income-tax still carries 2025 figures and is not in the deep-tax shape"
   IT-CORP: short rate list on secondary sources; base, losses and filing not covered
   PR: rates and the D112 deadline only; no computation method or worked examples
 ---
@@ -20,7 +20,7 @@ A skill's presence is not coverage. Several skills below are thin lists with sec
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ro-income-tax (partial: self-employed PFA only; employment, investment and rental income for individuals are not covered) | source-cited draft |
+| IT-IND, individual income tax | ro-employee-income-tax (employees, rent, investment income, 2026); ro-income-tax (partial: self-employed PFA, still on 2025 figures) | source-cited draft |
 | IT-CORP, corporate income tax | ro-corporate-income-tax (partial: a short rate list citing secondary sources; base, losses and filing are not covered in depth) | source-cited draft |
 | VAT | ro-vat-return, romania-vat-return | source-cited draft |
 | SC, social contributions | ro-cas-cass (self-employed CAS and CASS), ro-payroll-social (employee CAS and CASS, employer CAM; a short list citing secondary sources) | source-cited draft |
