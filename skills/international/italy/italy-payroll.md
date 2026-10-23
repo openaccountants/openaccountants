@@ -79,7 +79,7 @@ No statutory tax-free allowance exists. The detrazione is subtracted from gross 
 | Over EUR 50,000 | none | the formula reaches zero at the limit |
 | Extra, income over EUR 25,000 up to EUR 35,000 | EUR 65 | "aumentata di un importo pari a 65 euro" |
 
-- **Not covered here:** trattamento integrativo (D.L. 3/2020 art. 1) and family detrazioni (TUIR art. 12); amounts not read.
+- **Not covered here:** the trattamento integrativo (D.L. 3/2020 art. 1) and family detrazioni (TUIR art. 12) are in `it-irpef-employees`; apply them in payroll from there.
 - Total income for the detrazione excludes the main home and its pertinenze (art. 13(6-bis)).
 
 ### Cuneo fiscale 2026: the tax-free sum and the extra detrazione
@@ -173,11 +173,11 @@ Two tax measures, granted automatically in payroll from 2025 (L. 207/2024 art. 1
 
 ### INPS Contributions (Employer Share)
 
-- **Total employer INPS rate range.** The employer pays the rest of the pension rate (Section 3) plus, by sector and size: malattia, maternità, NASpI, CIG/CIGS/fondi di solidarietà, Fondo di garanzia TFR, CUAF; and INAIL (risk-based, separate). No allowed page prints these rates; the live Guide's percentages are removed.
+- **Total employer INPS rate range.** The employer pays the rest of the pension rate (Section 3) plus, by sector and size: malattia, maternità, NASpI, CIG/CIGS/fondi di solidarietà, Fondo di garanzia TFR, CUAF; and INAIL (risk-based, separate). The 2026 rates for industry and commerce, INAIL, TFR and the cost of an employee are in `it-employer-contributions`.
 
 ### Typical Total Employer Rates
 
-Not printed on any allowed page. Use the company's INPS classification (inquadramento) and the CCNL. For IRAP on staff costs see `it-irap`.
+See `it-employer-contributions` (industry and commerce, with two worked examples). For IRAP on staff costs see `it-irap`.
 
 ## Section 5: Minimum Wage and Overtime
 
@@ -415,7 +415,7 @@ When a business pays a resident professional's fee, it withholds on account and 
 
 ## When to refuse or refer
 
-- Employer contribution rates, INAIL premiums, CIG/fondi di solidarietà: not printed here; refer to a consulente del lavoro.
+- Employer contribution rates, INAIL premiums, CIG and FIS: use `it-employer-contributions`; other INPS classes (construction, agriculture, credit): refer to a consulente del lavoro.
 - Dirigenti, apprentices, agricultural, domestic, entertainment and public-sector workers (special schemes).
 - Non-resident, cross-border, impatriati or seconded employees. Refer.
 - Termination packages, TFR advances and settlements, and taxation of arrears. Refer.

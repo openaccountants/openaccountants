@@ -2,8 +2,9 @@
 name: tax-research-with-your-ai-how-to-do-it-defensibly
 description: The method for researching any tax question with the AI you already use, so the answer is citable and reviewable, not just plausible.
 jurisdiction: general
+category: cross-border
 tax_year: 2025
-last_updated: 2026-07-25
+last_updated: 2026-10-21
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -35,9 +36,11 @@ high-stakes positions; those end with a licensed professional.
 1. Make your AI fetch the law, not remember it. Say: "Answer only from
    primary sources you fetch now. No figures from memory." Stale recall is
    the main failure mode; rates and thresholds change every year.
-2. Rank what you find. Statute beats regulations, beats case law, beats
-   official guidance, beats commentary. When sources conflict, the higher
-   tier wins. Never cite a blog as authority.
+2. Identify the applicable hierarchy in the jurisdiction. Read legislation
+   together with valid delegated legislation and binding judicial interpretation;
+   do not assume every judgment ranks below every regulation. Separate these
+   authorities from administrative guidance and commentary. Explain conflicts
+   and seek professional review where their effect is unresolved.
 3. Demand pinpoint citations: the section or article number, the official
    URL, and the effective date or tax year, for every figure.
 4. Check the AI's homework. Open each cited page and confirm it actually
@@ -50,6 +53,76 @@ high-stakes positions; those end with a licensed professional.
    source's date and today, re-pull the source and say so in the answer.
 7. Finish with a scope note: what was assumed, what was not covered, and
    what needs professional confirmation before anyone relies on it.
+
+## Australian supplement: a research file note
+
+Use this supplement for Australian tax research. It records the work performed and its limits;
+it does not decide the taxpayer's facts, make an election or authorise lodgement. The following
+controls were checked against the linked official sources on 21 October 2026.
+
+### Establish the period and authority
+
+- Record transaction dates and the exact income year, entity, residency and question. Distinguish
+  enacted law from a proposal and commencement from application to the taxpayer's period. Check
+  relevant application, saving and transitional provisions, not only the operative section.
+- Record the Federal Register compilation ID and effective period, not only a moving 'latest'
+  link. Check for commenced amendments awaiting incorporation and inspect the amending law and
+  relevant dates. The Register's latest-version warning can identify such amendments.
+  See [Federal Register frequently asked questions](https://www.legislation.gov.au/help-and-resources/using-the-legislation-register/frequently-asked-questions).
+- Identify each source's legal status. A public ruling binds the Commissioner where it applies
+  to the entity and the entity relies on it; it does not bind the courts. A draft public ruling
+  is not legally binding, but can provide written-guidance protection on its stated terms. Read
+  its reliance notice rather than assuming either binding protection or no protection at all.
+  See [TR 2006/10, paragraphs 30 and 39A-39B](https://www.ato.gov.au/law/view/document?DocID=TXR/TR200610/NAT/ATO/00001).
+- A practical compliance guideline describes an administrative compliance approach and lacks the
+  legally binding effect of a public ruling. Read its own reliance terms and eligibility criteria.
+  See [PCG 2016/1, paragraphs 8 and 23-26](https://www.ato.gov.au/law/view/document?DocID=COG/PCG20161/NAT/ATO/00001).
+- Edited private advice is historical research material, not a ruling another taxpayer can rely
+  on, and is not maintained for later changes. A decision impact statement records the ATO's
+  response to a decision; separately read the judgment, appeal status and affected rulings.
+  See [PS LA 2008/4, sections 2 and 7](https://www.ato.gov.au/law/view/document?DocID=PSR/PS20084/NAT/ATO/00001)
+  and [PS LA 2009/9, paragraphs 187-200](https://www.ato.gov.au/law/view/document?DocID=PSR/PS20099/NAT/ATO/00001).
+
+### File-note template
+
+```markdown
+# Australian tax research file note
+Question and decision required:
+Taxpayer facts and evidence supplied:
+Period, transaction dates and relevant application provisions:
+Missing facts and assumptions requiring confirmation:
+
+## Source register
+| Proposition | Source / pinpoint / official link | Version / effective period / date read | Status and reliance terms | Supports the proposition? |
+| --- | --- | --- | --- | --- |
+
+## Analysis
+Apply each relevant condition to an evidenced fact. Identify conflicting authority,
+alternative interpretations, adverse authority and unresolved factual conditions.
+
+## Conditional position for review
+Conclusion and supporting source references:
+What changes the conclusion:
+Unavailable sources, unperformed checks and unresolved issues:
+Evidence or specialist review required, owner and next action:
+Reviewer decision and date (leave pending until actually obtained):
+```
+
+### Fabricated acceptance cases
+
+1. A proposition depends on a subsection that the researcher cannot retrieve. Record the exact
+   unavailable authority, the access limitation and the next retrieval step. Do not invent its
+   wording, cite a search snippet as a completed source check or label the position confirmed.
+   Continue analysis that the available evidence supports, with the dependency unresolved.
+2. An RCTI question concerns an invoice issued in August 2026, but the draft memo cites GSTR 2000/10
+   as current law. The [withdrawal notice](https://www.ato.gov.au/law/view/document?DocID=GST/GSTR200010/NAT/ATO/00001)
+   limits its continuing application to RCTIs issued on or before 14 June 2023. Retrieve the
+   [2023 determination](https://www.legislation.gov.au/F2023L00785) for the later invoice and label
+   [GSTR 2026/D2](https://www.ato.gov.au/law/view/document?DocID=DGS/GSTR2026D2/NAT/ATO/00001)
+   as a draft with its own reliance terms. Leave unresolved factual eligibility for review.
+3. A well-cited note has no recorded reviewer decision. Deliver it as a conditional position with
+   review pending. Do not manufacture sign-off or call the taxpayer's treatment approved merely
+   because all links resolved.
 
 ## The traps
 
