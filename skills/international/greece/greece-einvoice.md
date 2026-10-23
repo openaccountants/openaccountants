@@ -1,10 +1,10 @@
 ---
 name: greece-einvoice
-description: Use this skill whenever asked about e-invoicing in Greece, myDATA platform, AADE electronic books, MARK unique registration number, real-time tax book reporting, e-invoicing providers in Greece, myDATA API, income/expense classification, QR code on Greek invoices, or any question about issuing, transmitting, validating, or archiving electronic invoices under Greek law. Trigger on phrases like "myDATA", "AADE", "MARK number", "Greek e-invoice", "electronic books Greece", "myDATA API", "SendInvoices", "e-timologio", "AFM tax number", "income classification", "expense classification", or "Greek VAT invoice". ALWAYS read this skill before touching any Greece invoicing compliance work.
-version: 1.0
+description: Use this skill whenever asked about e-invoicing in Greece, myDATA platform, AADE electronic books, MARK unique registration number, real-time tax book reporting, e-invoicing providers in Greece, myDATA API, income/expense classification, QR code on Greek invoices, or any question about issuing, transmitting, validating, or archiving electronic invoices under Greek law. Trigger on phrases like "myDATA", "AADE", "MARK number", "Greek e-invoice", "electronic books Greece", "myDATA API", "SendInvoices", "e-timologio", "AFM tax number", "income classification", "expense classification", or "Greek VAT invoice", "mandatory e-invoicing Greece 2026", "timologio". Covers tax year 2026, including the mandatory B2B and B2G e-invoicing dates (2 March 2026 and 2 November 2026). VAT rates and returns are in greece-vat-return. ALWAYS read this skill before touching any Greece invoicing compliance work.
+version: 1.1
 jurisdiction: GR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Greece Einvoice
 
-## Greece E-Invoicing Compliance Skill v1.0
+## Greece E-Invoicing Compliance Skill v1.1
 
 ## Section 1 -- Quick Reference
 
@@ -28,12 +28,25 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Currency | EUR |
 | E-invoicing system name | myDATA (My Digital Accounting and Tax Application) |
 | Governing body | AADE (Ανεξάρτητη Αρχή Δημοσίων Εσόδων -- Independent Authority for Public Revenue) |
-| Key legislation | Law 4308/2014 (Greek Accounting Standards); Decision A.1138/2020 (myDATA launch); Law 5073/2023 (penalties); Law 5222/2025 (penalty updates); Decision 1128/2025 (B2B/B2C/B2G e-invoicing via providers) |
-| Implementation timeline | myDATA platform launched July 2020; mandatory data transmission phased from 2021; B2G Peppol adopted; B2B/B2C mandatory electronic book reporting; MARK validation in force |
-| Current status (2026) | All businesses must transmit invoice summaries in real-time to myDATA; MARK (Unique Registration Number) required on all invoices; AADE cross-checks myDATA vs VAT returns; escalating penalty regime active |
-| Skill version | 1.0 |
+| Key legislation | Law 4308/2014 (Greek Accounting Standards), art. 14 (e-invoice), par. 6 added by ν. 5222/2025 art. 239; Tax Procedure Code ν. 5104/2024, art. 16 (electronic transmission to AADE) and arts. 57-58 (fines); joint decision Α.1138/2020 (myDATA transmission); joint decision Α.1128/2025 (mandatory e-invoicing), amended by Α.1044/2026 and Α.1197/2026; AADE decision Α.1112/2025 (provider obligations) |
+| Implementation timeline | myDATA transmission under Α.1138/2020. Mandatory e-invoicing (Α.1128/2025 as amended): first period, businesses with 2023 gross revenue over EUR 1,000,000, from 2 March 2026, with parallel use of ERP or the special form allowed to 3 May 2026; second period, all other businesses, from 2 November 2026, with parallel use allowed to 31 January 2027 |
+| Current status (23 October 2026) | First-period businesses must issue domestic B2B, non-EU B2B and B2G invoices only electronically, through a certified provider or AADE's free timologio / myDATAapp. Second-period businesses must do the same from 2 November 2026. Buyers must accept e-invoices from 2 March 2026. All businesses transmit book data to myDATA (TPC art. 16) |
+| Skill version | 1.1 |
 
 ## Section 2 -- Mandate Scope
+
+### Mandatory e-invoicing (Α.1128/2025, as amended by Α.1044/2026 and Α.1197/2026)
+
+| Item | Rule | Source |
+| --- | --- | --- |
+| Which invoices | Every sale of goods or services (a) inside Greece to an entity under ν. 4308/2014 (B2B), (b) to a business in a non-EU country, except retail (B2B), (c) for public contracts and other General Government spending (B2G) | Α.1128/2025 art. 1(1), as replaced by Α.1044/2026 |
+| How | Only through a certified e-invoicing provider (Πάροχος Υπηρεσιών Ηλεκτρονικής Έκδοσης Στοιχείων) or AADE's timologio application (myDATAapp is covered by the timologio declaration) | Α.1128/2025 art. 1(2); AADE e-invoicing page |
+| First period | Businesses with gross revenue over EUR 1,000,000 on their 2023 income tax return: e-invoices only from 2 March 2026; parallel use of ERP or the special form allowed 2 March to 3 May 2026 if a start declaration was filed with a start date no later than 2 March 2026 | Α.1128/2025 arts. 1(3)(α), 2(1), as amended by Α.1044/2026 |
+| Second period | All other businesses: e-invoices only from 2 November 2026; parallel use allowed 2 November 2026 to 31 January 2027 if a start declaration was filed with a start date no later than 2 November 2026 | Α.1128/2025 art. 2(2), as replaced by Α.1197/2026 (ΦΕΚ Β' 5905/30.09.2026) |
+| Buyer acceptance | From 2 March 2026 a buyer under ν. 4308/2014 must accept e-invoices for B2B and B2G transactions | Α.1128/2025 art. 2(3), as replaced by Α.1044/2026 |
+| Not covered by the mandate | Intra-EU B2B invoices and retail (B2C) sales; these still follow the myDATA transmission rules in Α.1138/2020 | Α.1128/2025 art. 1(1) |
+
+The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 October 2026) no longer apply.
 
 ### Who Must Comply
 
@@ -201,15 +214,16 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Greek VAT Rates (2026)
 
-**Greek VAT Rates (2026)**  _(Annex to Greek VAT Code (Law 2859/2000))_
+**Greek VAT Rates (2026)**  _(VAT Code ν. 5144/2024, art. 26 and Annex III; ν. 2859/2000 is repealed)_
 
-| Rate | Mainland | Aegean Islands (reduced jurisdiction) |
+| Rate | General | Islands with the 30% reduction (art. 26(4A)) |
 | --- | --- | --- |
 | Standard | 24% | 17% |
-| Reduced | 13% | 9% |
-| Super-reduced | 6% | 4% |
+| Reduced (Annex III) | 13% | 9% |
+| Lower (where Annex III says so) | 6% | 4% |
+| Lowest (where Annex III says so) | 4% | 3% |
 
-- **Aegean island reduced rate scope** — Aegean island reduced rates apply to specific islands listed in Annex to Greek VAT Code (Law 2859/2000).  _(Annex to Greek VAT Code (Law 2859/2000))_
+- **Island reduction scope:** From 1 January 2026 the 30% reduction applies automatically on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants at the latest census (art. 26(4A), added by ν. 5246/2025 art. 11). For Lesvos, Kos, Samos and Chios it needs a ministerial decision (art. 26(4)). Tobacco and means of transport are excluded (art. 26(4B)). Rates are rounded to the nearest whole number (art. 26(6)). Details and examples: greece-vat-return.
 
 ### Rounding Rules
 
@@ -253,20 +267,23 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 9 -- Penalties for Non-Compliance
 
-### myDATA Penalty Framework (Law 5073/2023, updated by Law 5222/2025)
+### myDATA and e-invoicing fines (Tax Procedure Code ν. 5104/2024, arts. 57 and 58)
 
-**myDATA Penalty Framework**  _(Law 5073/2023, updated by Law 5222/2025)_
-
-| Violation | Penalty |
-| --- | --- |
-| First violation (failure to transmit or late transmission) | 50% of the VAT amount on the untransmitted documents, minimum EUR 250 |
-| Repeat violation | 100% of the VAT amount |
-| Failure to transmit data for an entire period | EUR 2,500 per month of non-compliance |
-| Discrepancy between myDATA and VAT return | Triggers automatic audit; potential reassessment of VAT + 50% surcharge |
+| Violation | Penalty | Source |
+| --- | --- | --- |
+| Retail receipts not transmitted to myDATA through the fiscal device system, VAT-bearing | 50% of the VAT on them, minimum EUR 250 (single-entry books) or EUR 500 (double-entry books) per audit | TPC art. 58(1)(α) |
+| Same, transaction without VAT | EUR 500 (single-entry) or EUR 1,000 (double-entry) per audit | TPC art. 58(1)(β) |
+| Repeat of either | Double the fine | TPC art. 58(2) |
+| Issuer does not transmit invoice summaries (sales invoices, self-billing, purchase titles) | 10% of the net value of each document, capped at EUR 250 a day | TPC art. 58(3)(α) |
+| Payroll, depreciation and year-end adjustment entries, or income classifications, not transmitted | EUR 250 (single-entry) or EUR 500 (double-entry) per tax year per breach | TPC art. 58(3)(β) |
+| Issuer transmits only after the buyer reports an omission or difference, and the value first sent was too low | 5% of the net value of each document | TPC art. 58(3)(γ) |
+| Digital delivery notes not transmitted | EUR 100 each, capped at EUR 500 a day and EUR 20,000 a year | TPC art. 58(3)(δ) |
+| Late (not missing) transmission under art. 58(3)(α), (β), (δ) | 50% of the fine for non-transmission | TPC art. 58(5) |
+| Required e-invoice not issued | Treated as no invoice issued: 50% of the VAT on it, or EUR 500 (single-entry) / EUR 1,000 (double-entry) per audit for a transaction without VAT | TPC art. 57, as stated by AADE on 17.2.2026 |
 
 ### AADE Cross-Checks
 
-- **AADE cross-check sources and audit trigger** — AADE actively cross-references myDATA electronic books against: VAT returns (Φ2/periodic and annual); Income tax declarations; Third-party data (banks, card payments). Businesses with zero VAT declarations but active myDATA data face targeted audits. In 2025, AADE identified approximately 400 businesses with zero-turnover declarations despite active transaction data in myDATA.
+- **AADE cross-check sources and audit trigger** — AADE cross-references myDATA electronic books against periodic VAT returns (there is no annual VAT return under VAT Code art. 43), income tax declarations and third-party data.
 
 ### Additional Consequences
 
@@ -293,6 +310,20 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ### Electronic Tax Registers → myDATA
 
 - **POS transmission via electronic tax registers** — POS transactions from electronic tax registers (EAFΔΣΣ) are transmitted to myDATA as retail income. This data feeds into both VAT returns and income tax declarations.
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| AADE, joint decision Α.1128/2025 (mandatory e-invoicing) | https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1128-15-09-2025 | 2026-10-23 |
+| AADE, joint decision Α.1044/2026 (first period moved to 2.3.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1044-17-02-2026 | 2026-10-23 |
+| AADE, joint decision Α.1197/2026 (second period moved to 2.11.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 | 2026-10-23 |
+| AADE press release 17.2.2026 | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
+| AADE, mandatory e-invoicing page | https://www.aade.gr/node/15728 | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, arts. 57-58 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| VAT Code (ν. 5144/2024), Ministry of Finance codification to ν. 5313/2026, art. 26 | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
+
+Not yet confirmed: the B2G format and channel rules outside Α.1128/2025 (Peppol and EN 16931 statements in this skill are not checked against an official source); the myDATA API and schema versions; the archiving periods in Section 8; whether the second-period date moves again; AADE's e-invoicing page also shows a 1 January 2027 deadline, which appears to belong to digital delivery notes (decision Α.1198/2026, not read).
 
 ## Disclaimer
 
