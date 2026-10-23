@@ -3,8 +3,8 @@ name: se-income-tax
 description: Use this skill whenever asked about Swedish income tax for self-employed individuals (enskild firma / enskild näringsidkare). Trigger on phrases like "Swedish tax", "kommunalskatt", "statlig inkomstskatt", "jobbskatteavdrag", "grundavdrag", "NE-bilaga", "F-skatt", "expansionsfond", "räntefördelning", "Inkomstdeklaration 1", "self-employed tax Sweden", or any question about filing or computing income tax for a Swedish self-employed client. Covers kommunalskatt, statlig inkomstskatt, jobbskatteavdrag, grundavdrag, egenavgifter, F-skatt, expansionsfond, räntefördelning, deductible expenses, filing deadlines, and penalties. ALWAYS read this skill before touching any Swedish income tax work.
 version: 2.0
 jurisdiction: SE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -27,14 +27,14 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing portal | skatteverket.se / Mina sidor |
 | Currency | SEK only |
 | Return form | Inkomstdeklaration 1 with NE-bilaga (business income attachment) |
-| Filing deadline (digital) | 2 May of the following year |
+| Filing deadline (digital) | 2 May of the following year; for income year 2026 that is Monday 3 May 2027, because 2 May 2027 is a Sunday (SFL 32 kap. 1 §; Lag 1930:173, 2 §) |
 | Filing deadline (via ombud) | 16 June |
 | F-skatt instalments | 12th of each month |
-| Kommunalskatt (municipal + regional) | Average 32.41% (range 28.98%--35.30%) |
-| Statlig inkomstskatt (state tax) | 20% on taxable earned income above SEK 625,800 (under 66); SEK 733,200 (66+) |
-| Egenavgifter (self-employment contributions) | 28.97% (full); 10.21% (age 66+) |
-| Grundavdrag (basic deduction) | SEK 17,300--45,300 (under 66); up to SEK 86,500 (66+) |
-| Jobbskatteavdrag | Tax credit reducing kommunalskatt; approximately SEK 44,000--46,000 for average earners |
+| Kommunalskatt (municipal + regional) | 2026 average 32.38% (range 28.93% Österåker to 35.65% Dorotea) |
+| Statlig inkomstskatt (state tax) | 20% on taxable earned income above SEK 643,000 (skiktgräns 2026, same at every age). Before the basic deduction this is reached at SEK 660,400 under 66 and SEK 760,500 from 66 (brytpunkt) |
+| Egenavgifter (self-employment contributions) | 28.97% if born 1959 or later; 10.21% (old-age pension contribution only) if born 1938-1958; none if born 1937 or earlier (2026) |
+| Grundavdrag (basic deduction) | Under 66: SEK 25,100 at low income, at most SEK 45,600, at least SEK 17,400. 66 or over at 1 January 2026: SEK 65,800 at low income, at most SEK 179,100, at least SEK 117,500 |
+| Jobbskatteavdrag | Credit against kommunalskatt. Business surplus counts as work income (IL 67 kap. 6 §). Formula: IL 67 kap. 7 § (under 66) and 8 § (66 or over); worked in [se-employee-income-tax](se-employee-income-tax.md) |
 | Contributor | Open Accountants Community |
 | Validated by | Pending -- requires Swedish auktoriserad or godkänd revisor sign-off |
 | Validation date | Pending |
@@ -63,7 +63,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Unknown business-use proportion (phone, car, home office) | 0% business use |
 | Unknown whether capital or revenue expenditure | Capital (depreciate, do not expense) |
 | Unknown moms treatment | Exclude moms from revenue and costs if momsregistrerad |
-| Unknown municipality | Average kommunalskatt 32.41% (flag as estimated) |
+| Unknown municipality | Average kommunalskatt 32.38% for 2026 (flag as estimated) |
 | Unknown F-skatt status | Assume not registered (flag immediately) |
 
 **Red flag thresholds**
@@ -86,7 +86,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Refusal catalogue
 
-- **R-SE-1 -- Aktiebolag (AB) instead of enskild firma** — Trigger: client operates through an AB (limited company). Message: "This skill covers enskild firma (sole proprietorship) only. AB taxation follows the corporate income tax rules (22% bolagsskatt) and different filing forms. Please use a separate skill or consult an auktoriserad revisor."
+- **R-SE-1 -- Aktiebolag (AB) instead of enskild firma** — Trigger: client operates through an AB (limited company). Message: "This skill covers enskild firma (sole proprietorship) only. AB taxation follows the corporate income tax rules (20.6% bolagsskatt) and different filing forms. Please use a separate skill or consult an auktoriserad revisor."
 - **R-SE-2 -- 3:12 rules (fåmansbolag)** — Trigger: client has a closely held company and asks about dividend taxation under 3:12 rules. Message: "The 3:12 rules for fåmansbolag are outside the scope of this skill. Please consult an auktoriserad revisor."
 - **R-SE-3 -- International income** — Trigger: client has significant foreign-source income or asks about tax treaty application. Message: "International income and tax treaty questions are outside this skill's scope. Please consult a qualified tax advisor."
 - **R-SE-4 -- Handelsbolag / kommanditbolag** — Trigger: client operates through a partnership. Message: "Partnership taxation has specific rules for income allocation between partners. This skill covers enskild firma only."
@@ -187,7 +187,7 @@ This is the deterministic pre-classifier for income tax purposes. When a transac
 | --- | --- | --- |
 | LÖN, SALARY, LÖNEUTBETALNING (outgoing to employees) | Deductible expense (R3--R6) | Staff salary cost |
 | ARBETSGIVARAVGIFT (payment to SKV) | Deductible expense | Employer social contributions |
-| EGENAVGIFTER (own social contributions) | Deductible via schablonavdrag (25%) | See Section 5, Step 2 |
+| EGENAVGIFTER (own social contributions) | Deductible via schablonavdrag (25%; 10% if born 1938-1958) | See Section 5.2 |
 | FACKAVGIFT, UNIONEN, IF METALL | Deductible expense | Trade union dues for employees |
 
 ### 3.8 Transport and travel
@@ -211,8 +211,8 @@ This is the deterministic pre-classifier for income tax purposes. When a transac
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | STAPLES, OFFICE DEPOT, CLAS OHLSON | Deductible expense | Office supplies |
-| IKEA (business furniture) | Capital if > SEK 5,000; else deductible expense | Check half prisbasbelopp threshold |
-| ELGIGANTEN, MEDIAMARKT, KOMPLETT | Capital if > SEK 5,000 and life > 3 years; else deductible | Computer/electronics |
+| IKEA (business furniture) | Capital if SEK 29,600 or more excluding moms and life > 3 years; else deductible expense | Half prisbasbelopp threshold, 2026 (IL 18 kap. 4 §) |
+| ELGIGANTEN, MEDIAMARKT, KOMPLETT | Capital if SEK 29,600 or more excluding moms and life > 3 years; else deductible | Computer/electronics |
 | POSTNORD | Deductible expense | Postage and shipping |
 | WEBHALLEN, INET | Capital or expense depending on amount | IT equipment |
 
@@ -255,7 +255,7 @@ These are four fully worked income tax classifications drawn from a hypothetical
 ### Example 1 -- SaaS subscription (reverse charge moms interaction)
 
 **Input line:**
-`2025-03-15 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Workspace ; -1,200.00 SEK`
+`2026-03-15 ; GOOGLE IRELAND LIMITED ; DEBIT ; Google Workspace ; -1,200.00 SEK`
 
 **Reasoning:**
 Google Ireland Ltd is an EU entity (Section 3.5). The consultant is momsregistrerad. Reverse charge moms applies -- the consultant reports output moms and claims input moms on the momsdeklaration (net zero). For income tax purposes, the expense is deductible at the net amount (SEK 1,200). Moms is NOT included in R1 revenue or expense costs.
@@ -265,17 +265,17 @@ Google Ireland Ltd is an EU entity (Section 3.5). The consultant is momsregistre
 ### Example 2 -- Capital equipment above threshold
 
 **Input line:**
-`2025-06-20 ; ELGIGANTEN ; DEBIT ; MacBook Pro 14" ; -22,990.00 SEK`
+`2026-06-20 ; ELGIGANTEN ; DEBIT ; MacBook Pro 14" ; -22,990.00 SEK`
 
 **Reasoning:**
-SEK 22,990 exceeds half prisbasbelopp (approximately SEK 5,000 in 2025) and the asset has a useful life over 3 years. Must enter the inventarier pool as a capital asset. Not directly expensed. Depreciation year 1 = 30% of SEK 22,990 = SEK 6,897 (räkenskapsenlig avskrivning).
+Half prisbasbelopp for 2026 is SEK 29,600 (price base amount SEK 59,200). The consultant is momsregistrerad, so the cost is SEK 22,990 / 1.25 = SEK 18,392 excluding moms. That is below SEK 29,600, so the computer is an asset of low value and the whole cost is deducted at once (IL 18 kap. 4 §), even though it will last more than 3 years. Only an asset costing SEK 29,600 or more excluding moms, with a life over 3 years, goes into the inventarier pool (year 1 depreciation at most 30%, IL 18 kap. 13 §).
 
-**Classification:** Capital asset (inventarier pool). R7 depreciation = SEK 6,897. Do NOT put SEK 22,990 in R3--R6.
+**Classification:** Deductible expense, R3--R6, SEK 18,392 (direktavdrag). Input moms of SEK 4,598 goes on the momsdeklaration, not in the NE-bilaga.
 
 ### Example 3 -- External restaurant meal (not deductible)
 
 **Input line:**
-`2025-09-10 ; RESTAURANG PELIKAN STOCKHOLM ; DEBIT ; Client dinner ; -2,400.00 SEK`
+`2026-09-10 ; RESTAURANG PELIKAN STOCKHOLM ; DEBIT ; Client dinner ; -2,400.00 SEK`
 
 **Reasoning:**
 External representation food costs are NOT deductible for income tax in Sweden. Only simpler refreshments (enklare förtäring) at internal events are deductible up to SEK 300/person. This is a client dinner -- zero deduction regardless of business purpose.
@@ -296,24 +296,24 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 5.1 Kommunalskatt computation
 
-- **Kommunalskatt computation** — Applied to taxable earned income (beskattningsbar förvärvsinkomst) at the municipality rate. If municipality unknown, use 32.41%. Range: 28.98% (Österåker) to 35.30% (Degerfors).  _(IL kap. 65)_
+- **Kommunalskatt computation** — Applied to taxable earned income (beskattningsbar förvärvsinkomst) at the rate of the municipality where the person was registered on 1 November 2025. If municipality unknown, use the 2026 average of 32.38%. Range 2026: 28.93% (Österåker) to 35.65% (Dorotea).  _(IL kap. 65; SCB, Kommunalskatter 2026)_
 
 ### 5.2 Egenavgifter and schablonavdrag
 
-- **Egenavgifter and schablonavdrag** — Egenavgifter = 28.97% of net business profit (10.21% for age 66+). Since egenavgifter are calculated on the profit they reduce, apply schablonavdrag of 25% as preliminary deduction from net business profit. Actual egenavgifter reconciled on the return.  _(SAL)_
-- **Schablonavdrag computation** — (1) Net profit before egenavgifter = X. (2) Schablonavdrag = X x 25% = Y. (3) Taxable business income = X - Y. (4) Actual egenavgifter computed on final adjusted base.  _(SAL)_
+- **Egenavgifter and schablonavdrag** — The rate follows the year of birth, not the age on a given day. Born 1959 or later: full egenavgifter of 28.97% (16.35% under SAL 3 kap. 13 § plus allmän löneavgift 12.62%). Born 1938-1958: only the old-age pension contribution of 10.21% (SAL 3 kap. 15 §, which from 2026 applies to those who were 67 at the start of the year). Born 1937 or earlier: no egenavgifter (SAL transitional rule 2000:980 point 6). Someone born 1959 or later who had full old-age pension all of 2026, or full sickness or activity compensation for any part of it, also pays only 10.21% (SAL 3 kap. 16 §). Since egenavgifter are calculated on the profit they reduce, apply a schablonavdrag as a preliminary deduction from net business profit: 25% where the full rate applies, 10% where only 10.21% applies. Actual egenavgifter are reconciled the following year (IL 16 kap. 29 §).  _(SAL 3 kap.; Skatteverket, belopp och procent 2026)_
+- **Schablonavdrag computation** — (1) Net profit before egenavgifter = X. (2) Schablonavdrag = X x 25% (or 10%) = Y. (3) Taxable business income = X - Y. (4) Egenavgifter computed on that base at 28.97% (or 10.21%).  _(SAL; IL 16 kap. 29 §)_
 
 ### 5.3 Statlig inkomstskatt
 
-- **Statlig inkomstskatt** — 20% on taxable earned income above SEK 625,800 (under 66) or SEK 733,200 (66+). Below the brytpunkt: 0% state tax.  _(IL kap. 65)_
+- **Statlig inkomstskatt** — 20% on taxable earned income (after the basic deduction) above SEK 643,000 for 2026, at every age. Measured before the basic deduction, that point (brytpunkt) is SEK 660,400 under 66 and SEK 760,500 from 66.  _(IL 65 kap. 5 §; Skatteverket, belopp och procent 2026)_
 
 ### 5.4 Grundavdrag
 
-- **Grundavdrag** — Income-dependent basic deduction. Minimum SEK 17,300, maximum SEK 45,300 (under 66); up to SEK 86,500 (66+). Computed automatically by Skatteverket. Reduces taxable earned income before both kommunalskatt and statlig skatt.  _(IL kap. 63)_
+- **Grundavdrag** — Income-dependent basic deduction on the assessed earned income (business surplus after the schablonavdrag), rounded up to the next SEK 100. Under 66: SEK 25,100 at low income, at most SEK 45,600, at least SEK 17,400. 66 or over at 1 January 2026 (born 1959 or earlier): SEK 65,800 at low income, at most SEK 179,100, at least SEK 117,500. The band formula is in [se-employee-income-tax](se-employee-income-tax.md). Computed automatically by Skatteverket. Reduces taxable earned income before both kommunalskatt and statlig skatt.  _(IL 63 kap. 3 and 3 a §§)_
 
 ### 5.5 Capital expenditure threshold
 
-- **Capital expenditure threshold** — Assets above half prisbasbelopp (approximately SEK 5,000) with useful life over 3 years: must enter inventarier pool and depreciate. Assets below or with life under 3 years: expense immediately (direktavdrag).  _(IL kap. 18)_
+- **Capital expenditure threshold** — Assets costing half prisbasbelopp or more (SEK 29,600 excluding moms in 2026) with useful life over 3 years: must enter inventarier pool and depreciate. Assets below that, or with life of 3 years or less: expense immediately (direktavdrag). Items bought together as one purchase are tested on their combined cost.  _(IL 18 kap. 4 §)_
 
 ### 5.6 Depreciation rates
 
@@ -321,7 +321,7 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 5.7 Motor vehicle standard rate
 
-- **Motor vehicle standard rate (2025)** — SEK 25.00/mil SEK per mil (business travel using a private car; alternative: actual costs with logbook apportionment)  _(IL kap. 16)_
+- **Motor vehicle standard rate (2026)** — SEK 25 per mil (business travel using a private car; alternative: actual costs with logbook apportionment)  _(IL kap. 16)_
 
 ### 5.8 Home office deduction
 
@@ -333,7 +333,7 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 5.10 Moms interaction
 
-- **Moms interaction** — Moms collected on sales: NOT income (exclude from R1). Input moms recovered: NOT an expense (exclude from costs). Non-deductible moms (e.g., representation): IS an expense. Non-momsregistrerad (under SEK 80,000 turnover): no moms separation needed, gross = net.  _(ML)_
+- **Moms interaction** — Moms collected on sales: NOT income (exclude from R1). Input moms recovered: NOT an expense (exclude from costs). Non-deductible moms (e.g., representation): IS an expense. Non-momsregistrerad (turnover not above SEK 120,000 this year or either of the two previous years): no moms separation needed, gross = net.  _(ML 18 kap. 4 §)_
 
 ### 5.11 F-skatt
 
@@ -351,7 +351,7 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 6.1 Jobbskatteavdrag computation
 
-- **Jobbskatteavdrag computation** — Why ambiguous: Complex formula based on earned income, kommunalskatt rate, and age. Default: Do not compute manually -- flag for reviewer or use Skatteverket's calculator. Question: "What is your municipality of residence? (Required for precise jobbskatteavdrag.)"
+- **Jobbskatteavdrag computation** — Compute it. The surplus of active business income counts as work income, after general deductions, rounded down to SEK 100 (IL 67 kap. 6 §). Under 66 at 1 January 2026 use IL 67 kap. 7 §; 66 or over use 67 kap. 8 §. The formula, the order of credits and a worked example are in [se-employee-income-tax](se-employee-income-tax.md); do not repeat them here. The SEK 1,500 earned income credit (IL 67 kap. 46-47 §§) also applies. Inputs needed: municipality on 1 November 2025 and year of birth. Question: "Which municipality were you registered in on 1 November 2025, and what is your year of birth?"
 
 ### 6.2 Expansionsfond allocation
 
@@ -359,7 +359,7 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 6.3 Räntefördelning
 
-- **Räntefördelning** — Why ambiguous: Positive räntefördelning reclassifies business income as capital income (30% tax). Requires net business assets > SEK 50,000. Rate: 2.96% (statslåneräntan + 6pp). Default: Do not apply without reviewer confirmation. Question: "What were your net business assets at the start of the income year?"
+- **Räntefördelning** — Why ambiguous: Positive räntefördelning reclassifies business income as capital income (30% tax). Positive räntefördelning is open when the capital base (kapitalunderlag) is above SEK 0. Rate for 2026: 8.55% (statslåneräntan 2.55% at 30 November 2025 + 6 points). Default: Do not apply without reviewer confirmation. Question: "What were your net business assets at the start of the income year?"
 
 ### 6.4 Mixed-use phone/internet
 
@@ -375,7 +375,7 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 6.7 Negative räntefördelning
 
-- **Negative räntefördelning** — Why ambiguous: Mandatory if business capital deficit exceeds SEK 500,000 change during year. Reclassifies capital income as business income. Default: Flag for reviewer. Question: "Has your business capital changed by more than SEK 500,000 during the year?"
+- **Negative räntefördelning** — Why ambiguous: Mandatory if the capital base (kapitalunderlag) at the start of the year is below minus SEK 500,000; 2026 rate 3.55%. Moves an amount from capital income to business income. Default: Flag for reviewer. Question: "Were the business's liabilities more than SEK 500,000 above its assets at the start of the year?"
 
 ## Section 7 -- Excel working paper template
 
@@ -414,15 +414,15 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 | Step | Description | Formula |
 | --- | --- | --- |
 | 1 | Net business profit (R9) | From NE-bilaga |
-| 2 | Schablonavdrag (25%) | =Step1 * 0.25 |
+| 2 | Schablonavdrag (25%; 10% if born 1938-1958) | =Step1 * 0.25 |
 | 3 | Taxable business income | =Step1 - Step2 |
 | 4 | Grundavdrag | Manual entry (income-dependent) |
 | 5 | Beskattningsbar förvärvsinkomst | =Step3 - Step4 |
 | 6 | Kommunalskatt | =Step5 * [rate] |
-| 7 | Statlig skatt | =MAX(0, (Step5 - 625800) * 0.20) |
-| 8 | Jobbskatteavdrag | Manual entry (complex formula) |
-| 9 | Estimated tax | =Step6 + Step7 - Step8 |
-| 10 | Egenavgifter | =Step3 * 0.2897 |
+| 7 | Statlig skatt | =MAX(0, (Step5 - 643000) * 0.20) |
+| 8 | Jobbskatteavdrag | IL 67 kap. 7 § formula; see se-employee-income-tax |
+| 9 | Estimated tax | =Step6 + Step7 - Step8 - 1500 (earned income credit) |
+| 10 | Egenavgifter | =Step3 * 0.2897 (0.1021 if born 1938-1958) |
 
 ## Section 8 -- Bank statement reading guide
 
@@ -462,7 +462,7 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### 9.5 Age
 
-- **Age** — Inference: Not inferable from bank statement. Always ask if relevant to tax computation. Fallback: "What is your age at the start of the income year? (Affects grundavdrag, egenavgifter rate, and brytpunkt.)"
+- **Age** — Inference: Not inferable from bank statement. Always ask. Fallback: "What is your year of birth?" (Born 1959 or later: full egenavgifter. Born 1938-1958: 10.21%. Born 1959 or earlier is 66 at 1 January 2026 and gets the higher grundavdrag and the jobbskatteavdrag under IL 67 kap. 8 §.)
 
 ### 9.6 Industry
 
@@ -488,28 +488,92 @@ The client can choose either the standard deduction of SEK 2,000/year or actual 
 
 ### Test suite
 
-Input: Enskild firma, Stockholm (kommunalskatt 30.44%), born 1985, gross revenue SEK 800,000, allowable expenses SEK 200,000, no expansionsfond or räntefördelning.
-Expected: Net profit = SEK 600,000. Schablonavdrag = SEK 150,000. Taxable business income = SEK 450,000. Grundavdrag ~SEK 17,300. Beskattningsbar = SEK 432,700. Below brytpunkt: no statlig skatt. Kommunalskatt = ~SEK 131,714. Less jobbskatteavdrag. Plus egenavgifter (28.97% on adjusted base).
+All figures are for income year 2026: price base amount SEK 59,200, skiktgräns SEK 643,000, Stockholm total municipal rate 30.55%, average 32.38%.
 
-Input: Kommunalskatt 32.41%, born 1980, net business income SEK 900,000.
-Expected: After schablonavdrag and grundavdrag, taxable earned income exceeds SEK 625,800. Statlig skatt at 20% on the excess.
+Input: Enskild firma, Stockholm (kommunalskatt 30.55% for 2026), born 1985, gross revenue SEK 800,000, allowable expenses SEK 200,000, no expansionsfond or räntefördelning, no other income.
+Expected: Net profit = SEK 600,000. Schablonavdrag 25% = SEK 150,000. Taxable business income (assessed earned income) = SEK 450,000. Grundavdrag: 450,000 is between 3.11 and 7.88 price base amounts, so 0.77 × 59,200 − 10% × (450,000 − 184,112) = 18,995.20, rounded up to SEK 19,000. Beskattningsbar förvärvsinkomst = SEK 431,000. Below SEK 643,000: no statlig skatt. Kommunalskatt = SEK 131,670.50. Jobbskatteavdrag (IL 67 kap. 7 §, work income 450,000 between 3.24 and 8.08 price base amounts) = (1.813 × 59,200 + 25.1% × (450,000 − 191,808) − 19,000) × 30.55% = SEK 46,782. Earned income credit SEK 1,500. Income tax before burial and church fees = SEK 83,388.50. General pension contribution 7% × 450,000 = SEK 31,500, credited in full if paid on time. Egenavgifter 28.97% × 450,000 = SEK 130,365.
+
+```oa-check
+name: Sole trader born 1985, Stockholm, net profit SEK 600,000 (2026)
+inputs:
+  net_profit: 600000
+  pbb: 59200
+  municipal_rate: 0.3055
+  skiktgrans: 643000
+steps:
+  - schablonavdrag: net_profit * 0.25
+  - earned_income: net_profit - schablonavdrag
+  - basic_deduction: ceil((0.77 * pbb - 0.10 * (earned_income - 3.11 * pbb)) / 100) * 100
+  - taxable_earned: earned_income - basic_deduction
+  - municipal_tax: taxable_earned * municipal_rate
+  - state_tax: max(taxable_earned - skiktgrans, 0) * 0.20
+  - work_income: floor(earned_income / 100) * 100
+  - job_credit: floor((1.813 * pbb + 0.251 * (work_income - 3.24 * pbb) - basic_deduction) * municipal_rate)
+  - earned_income_credit: 1500
+  - income_tax: municipal_tax + state_tax - job_credit - earned_income_credit
+  - pension_contribution: earned_income * 0.07
+  - egenavgifter: earned_income * 0.2897
+expected:
+  schablonavdrag: 150000.00
+  earned_income: 450000.00
+  basic_deduction: 19000.00
+  taxable_earned: 431000.00
+  municipal_tax: 131670.50
+  state_tax: 0.00
+  job_credit: 46782.00
+  income_tax: 83388.50
+  pension_contribution: 31500.00
+  egenavgifter: 130365.00
+```
+
+Input: Kommunalskatt 32.38% (2026 average), born 1980, net business profit SEK 900,000 before schablonavdrag, no other income.
+Expected: Schablonavdrag SEK 225,000. Assessed earned income SEK 675,000, above 7.88 price base amounts, so grundavdrag SEK 17,400. Taxable earned income SEK 657,600, which exceeds SEK 643,000: statlig skatt 20% × 14,600 = SEK 2,920. Kommunalskatt SEK 212,930.88. Jobbskatteavdrag (above 8.08 price base amounts) = (3.027 × 59,200 − 17,400) × 32.38% = SEK 52,390. Earned income credit SEK 1,500. Income tax SEK 161,960.88.
+
+```oa-check
+name: Sole trader born 1980, average rate, net profit SEK 900,000 (2026)
+inputs:
+  net_profit: 900000
+  pbb: 59200
+  municipal_rate: 0.3238
+  skiktgrans: 643000
+steps:
+  - schablonavdrag: net_profit * 0.25
+  - earned_income: net_profit - schablonavdrag
+  - basic_deduction: ceil(0.293 * pbb / 100) * 100
+  - taxable_earned: earned_income - basic_deduction
+  - municipal_tax: taxable_earned * municipal_rate
+  - state_tax: max(taxable_earned - skiktgrans, 0) * 0.20
+  - job_credit: floor((3.027 * pbb - basic_deduction) * municipal_rate)
+  - income_tax: municipal_tax + state_tax - job_credit - 1500
+expected:
+  earned_income: 675000.00
+  basic_deduction: 17400.00
+  taxable_earned: 657600.00
+  state_tax: 2920.00
+  municipal_tax: 212930.88
+  job_credit: 52390.00
+  income_tax: 161960.88
+```
+
+Input: Sole trader born 1955, net business profit SEK 300,000 before schablonavdrag.
+Expected: Born 1938-1958, so only the old-age pension contribution of 10.21% and a 10% schablonavdrag. Schablonavdrag SEK 30,000. Taxable business income SEK 270,000. Egenavgifter 10.21% × 270,000 = SEK 27,567. Grundavdrag and jobbskatteavdrag follow the 66-or-over rules (IL 63 kap. 3 a § and 67 kap. 8 §).
 
 Input: Net business income SEK 500,000, client allocates SEK 200,000 to expansionsfond.
 Expected: Expansionsfondsskatt = SEK 200,000 x 20.6% = SEK 41,200. Taxable business income reduced to SEK 300,000.
 
-Input: Client buys office furniture for SEK 20,000, deducts full amount.
-Expected: Above threshold, life > 3 years. Inventarier pool. Depreciation = SEK 6,000 year 1. Correct: remove SEK 20,000 from expenses, add SEK 6,000 depreciation.
+Input: Client buys office furniture for SEK 20,000 excluding moms, deducts full amount.
+Expected: Correct. SEK 20,000 is below half prisbasbelopp (SEK 29,600 for 2026), so the whole cost is deducted at once (IL 18 kap. 4 §), unless it is part of a larger purchase of linked items that together reach SEK 29,600.
 
 Input: Momsregistrerad client reports SEK 1,250,000 gross receipts including 25% moms.
 Expected: NE R1 = SEK 1,000,000. Exclude SEK 250,000 moms.
 
-Input: Net business assets SEK 500,000. Business income SEK 400,000.
-Expected: Räntefördelningsbelopp = SEK 14,800 (500,000 x 2.96%). Reclassified to capital income (30% tax). Taxable business income = SEK 385,200.
+Input: Net business assets (kapitalunderlag) SEK 500,000. Business income SEK 400,000.
+Expected: Räntefördelningsbelopp = SEK 42,750 (500,000 x 8.55%, the 2026 rate). Reclassified to capital income (30% tax). Taxable business income = SEK 357,250.
 
 ### Edge case registry
 
-EC1 -- Statlig skatt below brytpunkt. Never apply 20% state tax on income below SEK 625,800.
-EC2 -- Egenavgifter not deducted. Always apply 25% schablonavdrag. Egenavgifter are deductible.
+EC1 -- Statlig skatt below the skiktgräns. Never apply 20% state tax on taxable earned income up to SEK 643,000 (2026).
+EC2 -- Egenavgifter not deducted. Always apply the schablonavdrag: 25%, or 10% if born 1938-1958. Egenavgifter are deductible.
 EC3 -- Capital expenditure expensed directly. Assets above half prisbasbelopp with life > 3 years must be depreciated.
 EC4 -- Moms included in revenue. For momsregistrerade, R1 = net of moms.
 EC5 -- Expansionsfond reversed without taxation. Must be reversed and taxed on cessation.
@@ -534,11 +598,17 @@ EC10 -- Negative räntefördelning ignored. Mandatory when thresholds exceeded.
 
 ### Sources
 
-1. Inkomstskattelagen (IL, 1999:1229) -- https://www.riksdagen.se
-2. Skatteförfarandelagen (SFL, 2011:1244)
-3. Socialavgiftslagen (SAL, 2000:980)
-4. Bokföringslagen (BFL, 1999:1078)
-5. Skatteverket guidance -- https://www.skatteverket.se
+| Source | URL | Read on |
+|---|---|---|
+| Inkomstskattelag (1999:1229), as amended to SFS 2026:1393: 16 kap. 29 §; 18 kap. 4 and 13 §§; 63 kap. 3-3 a §§; 65 kap. 3-5 §§; 67 kap. 6-8, 46-47 §§ | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-10-23 |
+| Socialavgiftslag (2000:980), as amended to SFS 2026:493: 3 kap. 13, 15 and 16 §§; transitional rules 2000:980 point 6, 2022:889 and 2025:1362 | https://data.riksdagen.se/dokument/sfs-2000-980.text | 2026-10-23 |
+| Skatteförfarandelag (2011:1244): 32 kap. 1 §; 48 kap. 6-7 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-23 |
+| Mervärdesskattelag (2023:200): 18 kap. 4 § | https://data.riksdagen.se/dokument/sfs-2023-200.text | 2026-10-23 |
+| Bokföringslag (1999:1078) | https://data.riksdagen.se/dokument/sfs-1999-1078.text | not re-read |
+| Skatteverket, belopp och procent inkomstår 2026 (egenavgifter, schablonavdrag, grundavdrag, skiktgräns, brytpunkt, räntefördelning, expansionsfond, milersättning) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-23 |
+| SCB, kommunala skattesatser 2026 (table OE0101, Kommunalskatter2000) | https://www.statistikdatabasen.scb.se/goto/sv/ssd/Kommunalskatter2000 | 2026-10-23 |
+
+Not yet confirmed: the 66-or-over grundavdrag band table (IL 63 kap. 3 a §) was not worked here, so the born-1955 test stops at egenavgifter; the general 7.5% reduction of egenavgifter is not covered in this skill; the home office standard amounts, representation limits and the ombud filing date in this skill were not re-read for 2026.
 
 ### Disclaimer
 
