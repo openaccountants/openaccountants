@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -14,13 +14,13 @@ verified_by: pending
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific payer's or contractor's facts. Do not rely on it to pay, withhold or file without review by a qualified professional in Poland.
 
-**Which text of the law.** PIT Act (ustawa z dnia 26 lipca 1991 r. o podatku dochodowym od osób fizycznych), consolidated text Dz.U. 2026 poz. 592. The later amendments (poz. 779, 846, 1079, 1098, 1123, 1287, 1347, 1354, 1371) were checked and do not change art. 13, 21 ust. 1 pkt 148, 22 ust. 9, 29, 30 ust. 1 pkt 5a, 31b, 41, 42 or 42g. Social Insurance System Act (ustawa z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych, "ZUS Act"), consolidated text Dz.U. 2026 poz. 199, with later amendments poz. 252, 426, 473, 507 and 734 (only poz. 473 matters here; see below). Health Care Benefits Act ("Health Act"), consolidated text Dz.U. 2025 poz. 1461. Fund rates for 2026: Budget Act, Dz.U. 2026 poz. 62.
+**Which text of the law.** PIT Act (ustawa z dnia 26 lipca 1991 r. o podatku dochodowym od osób fizycznych), consolidated text Dz.U. 2026 poz. 592. The later amendments (poz. 779, 846, 1079, 1098, 1123, 1287, 1347, 1354, 1371) were checked and do not change art. 13, 21 ust. 1 pkt 148, 22 ust. 9, 29, 30 ust. 1 pkt 5a, 31b, 41, 42 or 42g. Social Insurance System Act (ustawa z dnia 13 października 1998 r. o systemie ubezpieczeń społecznych, "ZUS Act"), consolidated text Dz.U. 2026 poz. 199, with later amendments poz. 252, 426, 473, 507 and 734 (only poz. 473 matters here; see below). Health Care Benefits Act ("Health Act"), consolidated text Dz.U. 2025 poz. 1461; its later amendments do not change art. 66, 79, 81, 82 or 85. Fund rates for 2026: Budget Act, Dz.U. 2026 poz. 62.
 
 **Sibling skills.** Employees on an employment contract, the PIT scale, PIT-2 and the reliefs in detail: [pl-payroll](pl-payroll.md). ZUS for the self-employed, including a contractor who runs a business: [pl-zus-contributions](pl-zus-contributions.md). The annual return, residence and joint filing: [pl-income-tax](pl-income-tax.md). Company deductibility and withholding tax on payments abroad: [pl-cit-corporate-tax](pl-cit-corporate-tax.md). This skill does not repeat them.
 
 ## Who this applies to
 
-**Mandate and specific-task contracts (PIT Act art. 13 pkt 8).** Pay for services under an umowa zlecenia or an umowa o dzieło is income from "activity performed personally" when the payer is a business, a legal person or an entity without legal personality (or a property owner or manager, for services to that property, or an estate business). It is not this category when the contractor signs the contract as part of their own registered business; then it is business income (see [pl-income-tax](pl-income-tax.md)). A contract with a private individual who is not in business is income from "other sources" (art. 10 ust. 1 pkt 9): costs are still 20% (art. 22 ust. 9 pkt 6), but no payer withholds, because art. 41 ust. 1 binds only businesses and legal entities.
+**Mandate and specific-task contracts (PIT Act art. 13 pkt 8).** Pay for services under an umowa zlecenia or an umowa o dzieło is income from "activity performed personally" when the payer is a business, a legal person or an entity without legal personality (or a property owner or manager, for services to that property, or an estate business). It is not this category when the contractor signs the contract as part of their own registered business; then it is business income (see [pl-income-tax](pl-income-tax.md)). Management contracts and managerial contracts (umowa o zarządzanie, kontrakt menedżerski) are a separate category under art. 13 pkt 9 and are not covered here. A contract with a private individual who is not in business is income from "other sources" (art. 10 ust. 1 pkt 9): costs are still 20% (art. 22 ust. 9 pkt 6), but no payer withholds, because art. 41 ust. 1 binds only businesses and legal entities.
 
 **Board members (PIT Act art. 13 pkt 7).** Pay received by members of management boards, supervisory boards, committees or other governing bodies of legal persons, however they were appointed, is also income from activity performed personally. A board member who also has an employment contract for the same role is an employee for that pay; see [pl-payroll](pl-payroll.md).
 
@@ -29,12 +29,12 @@ verified_by: pending
 **ZUS titles.**
 - **Zlecenie:** compulsory pension and disability insurance (ZUS Act art. 6 ust. 1 pkt 4), compulsory accident insurance (art. 12 ust. 1), and sickness only on request (art. 11 ust. 2). Cover runs from the start date in the contract to its end (art. 13 pkt 2).
 - **Dzieło:** not a ZUS title in art. 6, so no social contributions, and not a health title in Health Act art. 66, so no health contribution. Exception: a dzieło or zlecenie signed with the contractor's own employer, or under which the contractor works for their own employer, is treated as employment (ZUS Act art. 8 ust. 2a). Its pay is added to the employment base (art. 18 ust. 1a) and carries every employee contribution, including sickness.
-- **Supervisory board members paid for that function:** compulsory pension and disability (art. 6 ust. 1 pkt 22), no sickness (not in art. 11), no accident (art. 12 ust. 2). This title applies on top of any other title, including for pensioners (art. 9 ust. 4).
-- **Management board members appointed by resolution, with no other contract:** not listed in ZUS Act art. 6, so no social contributions; health contribution only (Health Act art. 66 ust. 1 pkt 35a). If the company pays the board member under a mandate contract, that contract is a zlecenie title under art. 6 ust. 1 pkt 4. The sole shareholder of a one-person sp. z o.o. pays ZUS as a self-employed person (ZUS Act art. 8 ust. 6 pkt 4); see [pl-zus-contributions](pl-zus-contributions.md).
+- **Supervisory board members paid for that function:** compulsory pension and disability (art. 6 ust. 1 pkt 22), no sickness (not in art. 11), no accident (art. 12 ust. 2). Pkt 22 is not in the overlap rules of art. 9 ust. 1 and 2, so this title is compulsory alongside any other title; pensioners are covered too (art. 9 ust. 4).
+- **Management board members appointed by resolution, with no other contract:** not listed in ZUS Act art. 6, so no social contributions; health contribution only (Health Act art. 66 ust. 1 pkt 35a). If the company pays the board member under a mandate contract, that contract is a zlecenie title under art. 6 ust. 1 pkt 4. A board member paid both under the appointment and under a mandate contract owes health on each title separately (Health Act art. 82 ust. 1). The sole shareholder of a one-person sp. z o.o. pays ZUS as a self-employed person (ZUS Act art. 8 ust. 6 pkt 4); see [pl-zus-contributions](pl-zus-contributions.md).
 
 **Students under 26.** A zleceniobiorca who is a secondary-school pupil or a student and is under 26 is outside compulsory pension and disability insurance (ZUS Act art. 6 ust. 4), so also outside accident (art. 12 ust. 1) and outside the health contribution from that contract (Health Act art. 66 ust. 1 pkt 1 needs a person who meets the conditions for social insurance). Being under 26 without being a pupil or student is not enough for ZUS.
 
-**Reclassification risk.** From July 2026 a labour inspector can decide, by administrative decision, that a civil-law contract is in fact an employment relationship, after the payer ignored an order to fix it (State Labour Inspection Act art. 11 ust. 1 pkt 7a, added by Dz.U. 2026 poz. 473, in force three months after publication on 7 April 2026). ZUS then treats the person as an employee (ZUS Act art. 18 ust. 1b, added by the same act).
+**Reclassification risk.** From 8 July 2026 a labour inspector can decide, by administrative decision, that a civil-law contract is in fact an employment relationship, after the payer ignored an order to fix it (State Labour Inspection Act art. 11 ust. 1 pkt 7a, added by Dz.U. 2026 poz. 473; the act was published on 7 April 2026 and this part entered into force on 8 July 2026, art. 20). The person is then an employee for ZUS (ZUS Act art. 6 ust. 1 pkt 1). Until the decision is final, or until a court judgment on appeal is final, the employee contribution base is the amount reported under the civil-law contract (ZUS Act art. 18 ust. 1b), and contributions already paid on the contract count toward the employee contributions (art. 38b), both added by the same act.
 
 ## Rates, bands and thresholds
 
@@ -52,9 +52,9 @@ verified_by: pending
 | Pension insurance | 19.52%: 9.76% contractor, 9.76% payer | 2026 | ZUS Act art. 22 ust. 1 pkt 1, art. 16 ust. 1 pkt 4 and 12, https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf |
 | Disability insurance | 8%: 1.5% contractor, 6.5% payer | 2026 | ZUS Act art. 22 ust. 1 pkt 2, art. 16 ust. 1b |
 | Sickness insurance (zlecenie, voluntary) | 2.45%, contractor | 2026 | ZUS Act art. 22 ust. 1 pkt 3, art. 11 ust. 2, art. 16 ust. 2 |
-| Accident insurance (zlecenie) | payer's rate; 1.67% for payers with 9 or fewer insured | 2026 | ZUS Act art. 22 ust. 1 pkt 4, art. 16 ust. 3; ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
-| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, payer; for zlecenie and paid supervisory board members whose monthly base is at least the minimum wage | 2026 | Budget Act 2026 art. 25-26, https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf; Labour Market Act art. 259 ust. 1 pkt 1 lit. c and i, https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf |
-| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, payer that is a business; covers zlecenie with compulsory pension cover, not board members | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 9, 10, 29, https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf |
+| Accident insurance (zlecenie) | payer's rate; 1.67% (50% of the highest group rate) for payers with 9 or fewer insured | 2026 | ZUS Act art. 22 ust. 1 pkt 4, art. 16 ust. 3; Accident Insurance Act art. 28 ust. 1, https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf; ZUS, https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne |
+| Labour Fund (FP) + Solidarity Fund (FS) | 1.0% + 1.45% = 2.45%, payer; for zlecenie and paid supervisory board members with compulsory pension cover whose monthly base is at least the minimum wage (bases from several sources are added up on the person's statement); not for women aged 55 or more or men aged 60 or more | 2026 | Budget Act 2026 art. 25-26, https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf; Labour Market Act art. 259 ust. 1 pkt 1 lit. c and i, ust. 2-3, art. 261, 265 ust. 1, https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf |
+| Guaranteed Employee Benefits Fund (FGŚP) | 0.10%, payer that is a business; covers zlecenie with compulsory pension cover, not board members; not for women aged 55 or more or men aged 60 or more | 2026 | Budget Act 2026 art. 27; Employee Claims Act art. 9, 9b ust. 2, 10, 29, https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf |
 | Health contribution | 9%, contractor pays, payer withholds; not deductible from PIT | 2026 | Health Act art. 79 ust. 1, 81, 85 ust. 4 and 17a, https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf; PIT Act art. 27b (repealed) |
 | Minimum wage (multiple-contract test, FP test) | PLN 4,806 a month | 2026 | Regulation, Dz.U. 2025 poz. 1242 § 1, https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf |
 | Minimum hourly rate | PLN 31.40 | 2026 | Regulation, Dz.U. 2025 poz. 1242 § 2 |
@@ -69,7 +69,7 @@ verified_by: pending
 **Which contract carries ZUS when there are several (ZUS Act art. 9).**
 1. **Employment elsewhere plus a zlecenie.** Employment is the compulsory title. The zlecenie is voluntary for social insurance, unless the monthly employment base is below the minimum wage (PLN 4,806); then the zlecenie is compulsory too (art. 9 ust. 1 and 1a). Health is due on each title separately (Health Act art. 82 ust. 1).
 2. **Two or more zlecenie contracts.** The one that started first is compulsory; the others are voluntary (art. 9 ust. 2). If the base under the compulsory contract in a month is below the minimum wage, the other contracts are compulsory too, until the combined base reaches the minimum wage (art. 9 ust. 2c).
-3. **Zlecenie plus own business.** ZUS is compulsory from the business if the zlecenie base is below the lowest base for business ZUS (art. 9 ust. 2a, referring to art. 18 ust. 8; PLN 5,652 a month in 2026 per ZUS). Otherwise the earliest-title rule in point 2 applies.
+3. **Zlecenie plus own business.** ZUS is compulsory from the business if the zlecenie base is below the lowest base for business ZUS (art. 9 ust. 2a, referring to art. 18 ust. 8: 60% of the forecast average wage of PLN 9,420, so PLN 5,652 a month in 2026; Budget Act 2026 art. 24, confirmed by ZUS). Otherwise the earliest-title rule in point 2 applies. A business owner on the preferential base (art. 18a) or Mały ZUS Plus (art. 18c) pays compulsory ZUS on both titles (art. 9 ust. 2a, last sentence).
 4. **Pensioners on a zlecenie.** Compulsory pension and disability, unless they are also employed (art. 9 ust. 4a).
 5. **Contract with own employer.** Always employment for ZUS (art. 8 ust. 2a), whatever the other titles.
 
@@ -95,7 +95,7 @@ verified_by: pending
 | Register the zleceniobiorca or supervisory board member with ZUS | within 7 days of the start of insurance | ZUS Act art. 36 ust. 4 |
 | ZUS declaration, monthly reports and payment (social, health, FP, FS, FGŚP) | by the 15th of the next month for payers with legal personality; by the 20th for other payers | ZUS Act art. 47 ust. 1 |
 | PIT advances (art. 41 ust. 1) and flat tax (art. 30 ust. 1 pkt 5a, art. 29) paid to the tax office | by the 20th of the month after withholding | PIT Act art. 42 ust. 1 |
-| Annual payer declarations (PIT-4R for advances, PIT-8AR for flat tax) | by 31 January of the next year | PIT Act art. 42 ust. 1a |
+| Annual payer declarations (PIT-4R for advances; PIT-8AR for the flat taxes under art. 29 and art. 30 ust. 1 pkt 5a) | by 31 January of the next year | PIT Act art. 42 ust. 1a, art. 41 ust. 4; MF forms list (PIT-4R "deklaracja roczna o zaliczkach", PIT-8AR "deklaracja roczna o zryczałtowanym podatku") |
 | PIT-11 information per resident contractor or board member, including when the under-26 relief applied | to the tax office by 31 January, to the contractor by the end of February | PIT Act art. 42 ust. 2 pkt 1 and ust. 5, art. 42g ust. 1 |
 | IFT-1R information per non-resident | to the contractor and the tax office for foreign persons by the end of February | PIT Act art. 42 ust. 2 pkt 2 |
 | Filing method | electronic | PIT Act art. 45ba |
@@ -104,9 +104,9 @@ verified_by: pending
 ## Penalties and interest
 
 - **Payer liability.** A payer who did not withhold, or withheld and did not pay, is liable for the tax with all its assets (Tax Ordinance art. 30 § 1). Late payment interest runs at the art. 56 § 1 rate: 10.50% a year from 5 March 2026 (M.P. 2026 poz. 269).
-- **Fiscal penal code (Dz.U. 2025 poz. 633).** Not paying withheld tax on time: fine up to 720 daily rates or up to 3 years' imprisonment, or both (art. 77 § 1). Not withholding or withholding too little: fine up to 720 daily rates or up to 2 years, or both (art. 78 § 1). Late PIT-11 or other tax information: fine up to 120 daily rates (art. 80 § 1 and 2).
+- **Fiscal penal code (Dz.U. 2025 poz. 633).** Not paying withheld tax on time: fine up to 720 daily rates or up to 3 years' imprisonment, or both (art. 77 § 1). Not withholding or withholding too little: fine up to 720 daily rates or up to 2 years, or both (art. 78 § 1). A payer that does not send a PIT-11 or IFT-1R on time to the contractor or the tax office: fine up to 180 daily rates (art. 80 § 2); other late tax information: up to 120 daily rates (art. 80 § 1).
 - **ZUS.** Late contributions carry late payment interest under the Tax Ordinance (ZUS Act art. 23 ust. 1), not charged below 1% of the minimum wage (art. 23 ust. 1a). ZUS may add a charge up to 100% of unpaid contributions (art. 24 ust. 1a). Not paying contributions on time or not reporting required data: fine up to PLN 46,000 (art. 98 ust. 1).
-- **Reclassification.** If an inspector's decision turns a contract into employment, contributions are recalculated as for an employee (ZUS Act art. 18 ust. 1b), and the limitation period for those contributions is suspended while the decision is under appeal (art. 24 ust. 5h, both added by Dz.U. 2026 poz. 473).
+- **Reclassification.** If an inspector's decision turns a contract into employment, the payer registers the person as an employee within 7 days of the decision becoming final (ZUS Act art. 36 ust. 4e). Contributions already paid on the contract count toward the employee contributions (art. 38b), and the limitation period for contributions is suspended while the decision is under appeal (art. 24 ust. 5h). All three were added by Dz.U. 2026 poz. 473 from 8 July 2026.
 
 ## Cross-border points
 
@@ -174,7 +174,7 @@ A software company pays a programmer PLN 10,000 under an umowa o dzieło for a c
 
 **Advance.** Income 10,000 − 5,000 = PLN 5,000. At 12%: PLN 600. Net payment PLN 9,400.
 
-**Edge case: the cap.** If the programmer had already used PLN 117,000 of 50% costs earlier in the year, only PLN 3,000 of costs would remain, and the income would be PLN 7,000. Had the work been outside the listed creative fields, costs would be 20% (PLN 2,000) and the advance PLN 960.
+**Edge case: the cap.** If this payer had already given the programmer PLN 117,000 of 50% costs earlier in the year, only PLN 3,000 of costs would remain, and the income would be PLN 7,000 (advance PLN 840). 50% costs from other payers are capped on the annual return. Had the work been outside the listed creative fields, costs would be 20% (PLN 2,000) and the advance PLN 960.
 
 **Edge case: own employer.** If the programmer were also employed by this company, the dzieło would be employment for ZUS (ZUS Act art. 8 ust. 2a): the PLN 10,000 would carry the full employee and employer contributions and health, and the 50% costs would be computed after the employee's social contributions (PIT Act art. 22 ust. 9 pkt 3).
 
@@ -222,20 +222,22 @@ The advances are prepayments. The contractor's annual return applies the full sc
 |---|---|---|
 | PIT Act, consolidated text Dz.U. 2026 poz. 592 (art. 10, 13, 21, 22, 26, 27, 29, 30, 31b, 32, 41, 42, 42g, 44, 45, 45ba) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf | 2026-10-23 |
 | PIT Act amendments after consolidation (poz. 779, 846, 1079, 1098, 1123, 1287, 1347, 1354, 1371; none touch the articles used) | https://api.sejm.gov.pl/eli/acts/DU/1991/350/references | 2026-10-23 |
-| ZUS Act, consolidated text Dz.U. 2026 poz. 199 (art. 6, 8, 9, 11-13, 16, 18, 19, 22-24, 36, 47, 98) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf | 2026-10-23 |
-| Act amending the State Labour Inspection Act and other acts, Dz.U. 2026 poz. 473 (reclassification decision; ZUS Act art. 18 ust. 1b, 24 ust. 5h) | https://api.sejm.gov.pl/eli/acts/DU/2026/473/text.pdf | 2026-10-23 |
+| ZUS Act, consolidated text Dz.U. 2026 poz. 199 (art. 6, 8, 9, 11-13, 16, 18, 18a, 18c, 19, 22-24, 36, 47, 98) | https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf | 2026-10-23 |
+| Act amending the State Labour Inspection Act and other acts, Dz.U. 2026 poz. 473 (reclassification decision; ZUS Act art. 18 ust. 1b, 24 ust. 5h, 36 ust. 4e, 38b; art. 20 entry into force) | https://api.sejm.gov.pl/eli/acts/DU/2026/473/text.pdf | 2026-10-23 |
+| Sejm ELI record for Dz.U. 2026 poz. 473 (entry into force 2026-07-08) | https://api.sejm.gov.pl/eli/acts/DU/2026/473 | 2026-10-23 |
 | ZUS Act amendments poz. 252, 426, 507, 734 (checked, nothing on these contracts) | https://api.sejm.gov.pl/eli/acts/DU/1998/887/references | 2026-10-23 |
-| Health Care Benefits Act, Dz.U. 2025 poz. 1461 (art. 66, 79, 81, 82, 85) | https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf | 2026-10-23 |
-| Budget Act 2026, Dz.U. 2026 poz. 62 (art. 25-27) | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf | 2026-10-23 |
-| Labour Market Act, Dz.U. 2025 poz. 620 (art. 259) | https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf | 2026-10-23 |
-| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 9, 10, 29) | https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf | 2026-10-23 |
+| Health Care Benefits Act, Dz.U. 2025 poz. 1461 (art. 66, 79, 81, 82, 85; later amendments 2025 poz. 1537, 1739 and 2026 poz. 26, 203, 791, 972, 986, 1007 do not touch them) | https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf | 2026-10-23 |
+| Budget Act 2026, Dz.U. 2026 poz. 62 (art. 24-27) | https://api.sejm.gov.pl/eli/acts/DU/2026/62/text.pdf | 2026-10-23 |
+| Labour Market Act, Dz.U. 2025 poz. 620 (art. 259, 261, 265) | https://api.sejm.gov.pl/eli/acts/DU/2025/620/text.pdf | 2026-10-23 |
+| Employee Claims Act (FGŚP), Dz.U. 2026 poz. 186 (art. 9, 9b, 10, 29) |
+| Accident Insurance Act, consolidated text Dz.U. 2025 poz. 1644 (art. 28) | https://api.sejm.gov.pl/eli/acts/DU/2025/1644/text.pdf | 2026-10-23 | https://api.sejm.gov.pl/eli/acts/DU/2026/186/text.pdf | 2026-10-23 |
 | Minimum wage and minimum hourly rate 2026, Dz.U. 2025 poz. 1242 | https://api.sejm.gov.pl/eli/acts/DU/2025/1242/text.pdf | 2026-10-23 |
 | Tax Ordinance, Dz.U. 2026 poz. 622 (art. 30, 56, 63) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-10-23 |
 | Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
 | NBP base rates (lombard 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe.xml | 2026-10-23 |
-| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77, 78, 80) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
+| Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 77, 78, 80 § 1 and 2; 2026 amendments poz. 347, 421, 846, 901 do not touch them) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
 | ZUS, contribution rates for 2026 (accident 1.67%, lowest business base PLN 5,652) | https://www.zus.pl/baza-wiedzy/skladki-wskazniki-odsetki/skladki/wysokosc-skladek-na-ubezpieczenia-spoleczne | 2026-10-23 |
 | Ministry of Finance, PIT forms list (PIT-4R, PIT-8AR, PIT-11) | https://www.podatki.gov.pl/pit/formularze-do-druku-pit/ | 2026-10-23 |
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
-Not yet confirmed: the split between PIT-4R (advances) and PIT-8AR (flat tax) as the two annual declarations under art. 42 ust. 1a was read only from the podatki.gov.pl forms list, not from the form regulation; the exact first day the labour inspector's reclassification power applies (the act enters into force three months after publication on 7 April 2026); whether a management board member paid both by appointment and under a separate mandate contract owes health on both titles (Health Act art. 82 suggests yes; not tested against ZUS practice).
+Not yet confirmed: nothing open. The independent review on 2026-10-23 settled the PIT-4R / PIT-8AR split (MF forms list and PIT Act art. 41 ust. 4), the reclassification start date (8 July 2026, Sejm ELI record) and health on two titles for a board member (Health Act art. 82 ust. 1).

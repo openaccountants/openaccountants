@@ -4,7 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: pl-cross-border
-partial: {}
+partial:
+  SC: "pl-zus-contributions (self-employed) is still on tax year 2025 figures (for example the 2025 contribution base of PLN 4,694.40; the 2026 base is PLN 5,652 per zus.pl and Budget Act 2026 art. 24) and needs a 2026 rewrite"
 ---
 
 # Poland: tax pack
@@ -18,7 +19,7 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 | IT-IND, individual income tax | pl-income-tax; pl-capital-gains covers investment income | source-cited draft |
 | IT-CORP, corporate income tax | pl-cit-corporate-tax | source-cited draft |
 | VAT | pl-vat-return, poland-vat-return | source-cited draft |
-| SC, social contributions | pl-zus-contributions | source-cited draft |
+| SC, social contributions | pl-zus-contributions (self-employed, 2025 figures; partial); pl-payroll and pl-civil-law-contracts cover employee and contract ZUS for 2026 | source-cited draft |
 | PR, payroll withholding | pl-payroll (employees); pl-civil-law-contracts (umowa zlecenie, umowa o dzieło, board fees) | source-cited draft |
 | TP, transfer pricing | pl-transfer-pricing | source-cited draft |
 | XB, cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | source-cited draft |
