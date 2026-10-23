@@ -4,8 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: dk-cross-border
-partial:
-  XB: "no country-by-country treaty rate table; exit tax on receivables (Kursgevinstloven § 37) and pensions not covered"
 ---
 
 # Denmark: tax pack
@@ -32,4 +30,5 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Skatte- og Vækstministeriet rates and thresholds: https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen (read 2026-10-22)
 - Aktieavancebeskatningsloven (LBK nr. 849 of 21 September 2026), §§ 38-40 exit tax: https://www.retsinformation.dk/eli/lta/2026/849 (read 2026-10-23)
 - Den juridiske vejledning 2026-2, C.F.6 Forskerskatteordningen: https://info.skat.dk/data.aspx?oid=1977257 (read 2026-10-23)
+- Lov nr. 1691 of 30 December 2024, § 6 (KSL § 48 E researcher-scheme pay base from income year 2026): https://www.retsinformation.dk/eli/lta/2024/1691 (read 2026-10-23)
 - Skattestyrelsen: https://skat.dk
