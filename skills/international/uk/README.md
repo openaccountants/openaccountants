@@ -5,6 +5,8 @@ not_applicable: {}
 covered_by:
   SC: uk-national-insurance
   XB: uk-foreign-tax-and-withholding
+partial:
+  XB: "uk-to-uae-relocation-tax and uk-to-italy-flat-tax-relocation are still written for tax year 2025 and have not been checked against the law in force for 2026/27"
 ---
 
 # United Kingdom: tax pack
@@ -15,9 +17,9 @@ Tax year 6 April to 5 April for individuals; companies use their own accounting 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | uk-income-tax-sa100, uk-scottish-income-tax (Scottish taxpayers: status tests, 2026/27 Scottish bands, savings and dividends on UK bands, Gift Aid and pension extensions, S codes), uk-self-employment-sa103, uk-capital-gains-sa108, uk-dividends, uk-rental-sa105, uk-payments-on-account, uk-student-loan-repayment (2026/27 thresholds) | source-cited draft |
+| IT-IND, individual income tax | uk-income-tax-sa100, uk-scottish-income-tax (Scottish taxpayers: status tests, 2026/27 Scottish bands, savings and dividends on UK bands, Gift Aid and pension extensions, S codes), uk-self-employment-sa103 (2026/27: Class 4 6%/2%, 55p mileage, 14% main pool, MTD from April 2026), uk-capital-gains-sa108, uk-dividends (2026/27 rates 10.75%/35.75%/39.35%, director salary and dividends), uk-rental-sa105, uk-payments-on-account (2026/27 POAs, MTD interaction), uk-student-loan-repayment (2026/27 thresholds) | source-cited draft |
 | IT-CORP, corporate income tax | uk-corporation-tax | source-cited draft |
-| VAT | uk-vat-return, vat-returns-for-small-businesses-in-the-uk, gb-vat-eu-goods-sellers | source-cited draft |
+| VAT | uk-vat-return, vat-returns-for-small-businesses-in-the-uk (short quarterly routine, 2026/27 thresholds, Flat Rate Scheme limits, penalties), gb-vat-eu-goods-sellers | source-cited draft |
 | SC, social contributions | uk-national-insurance | source-cited draft |
 | PR, payroll withholding | uk-payroll, uk-student-loan-repayment | source-cited draft |
 | TP, transfer pricing | uk-transfer-pricing (2026: Finance Act 2026 reform, UTPP charge, UK-to-UK exemption, SME exemption in euro limits, method and benchmarking steps) | source-cited draft |

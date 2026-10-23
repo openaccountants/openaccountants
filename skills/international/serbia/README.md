@@ -2,6 +2,7 @@
 jurisdiction: RS
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial: {}
 covered_by:
   XB: rs-cross-border
 ---
@@ -22,6 +23,8 @@ Calendar tax year for individuals and, by default, for companies. Authority: the
 | TP, transfer pricing | rs-transfer-pricing | source-cited draft |
 | XB, cross-border | rs-cross-border | source-cited draft |
 
+Not covered in depth, by design (niche regimes, not a group most clients belong to): the VAT cash accounting scheme (Article 36a), the special schemes for travel agencies, second-hand goods and investment gold, and a field-by-field POPDV map. serbia-vat refers these out.
+
 ## Official sources
 
 - Zakon o porezu na dobit pravnih lica (Ministry of Finance consolidated text): https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dobit-pravnih-lica (read 2026-10-22)
@@ -32,4 +35,7 @@ Calendar tax year for individuals and, by default, for companies. Authority: the
 - Ministry of Finance treaty list: https://www.mfin.gov.rs/propisi/ugovori-o-izbegavanju-dvostrukog-oporezivanja (read 2026-10-23)
 - Rulebook on transfer prices and arm's length methods (Sl. glasnik 61/13 to 95/21): https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp/7721/pravilnik-o-transfernim-cenama-i-metodama-koje-se-po-principu-van-dohvata-ruke-primenjuju-kod-utvrdjivanja-cene-transakcija-medju-povezanim-licima-.html (read 2026-10-23)
 - Rulebook on arm's length interest rates for 2026 (Sl. glasnik 36/2026): https://www.mfin.gov.rs/propisi/pravilnik-o-kamatnim-stopama-za-koje-se-smatra-da-su-u-skladu-sa-principom-van-dohvata-ruke-za-2026-godinu-slubeni-glasnik-rs-br-362026 (read 2026-10-23)
+- Zakon o porezu na dodatu vrednost, consolidated to 80/2026 (Ministry of Finance): https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dodatu-vrednost2 (read 2026-10-23)
+- Zakon o elektronskom fakturisanju, consolidated to 80/2026 (Ministry of Finance): https://www.mfin.gov.rs/propisi/zakon-o-elektronskom-fakturisanju-slubeni-glasnik-rs-br-442021-1292021-1382022-922023-92024-1092025-i-802026-nezvanino-preien-redakcije-slubenog-glasnika- (read 2026-10-23)
+- Sistem elektronskih faktura (SEF): https://www.efaktura.gov.rs (read 2026-10-23)
 - Pravno-informacioni sistem RS (Official Gazette): https://www.pravno-informacioni-sistem.rs

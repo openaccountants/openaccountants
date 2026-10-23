@@ -17,7 +17,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 |---|---|---|
 | IT-IND, individual income tax | gr-income-tax, gr-living-expense-presumptions, gr-capital-gains (2026 scale for employees, pensioners, the self-employed, rent and capital income; 2026 deemed income from living-expense presumptions; capital gains on securities, a whole business and property (property gains suspended to 31.12.2026)) | source-cited draft |
 | IT-CORP, corporate income tax | gr-corporate-income-tax (entities on double-entry books, 2026: 22% rate, base, losses, interest limitation, withholding, 80% prepayment, trade fee, form N, penalties), gr-partnerships-single-entry (ΟΕ, ΕΕ, civil partnerships, joint ventures and other entities on single-entry books, 2026) | source-cited draft |
-| VAT | gr-vat-return, greece-vat-return | source-cited draft |
+| VAT | greece-vat-return (2026 under the VAT Code ν. 5144/2024: 24%, 13%, 6% and 4% rates, the 30% island reduction from 1.1.2026, EUR 10,000 small business exemption and EU SME scheme, monthly and quarterly returns, reverse charge, intra-EU, OSS, refunds, fines); gr-vat-return is a pointer to it | source-cited draft |
 | SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026) | source-cited draft |
 | PR, payroll withholding | gr-payroll (2026; annualisation under ΠΟΛ 1104/2014) | source-cited draft |
 | TP, transfer pricing | gr-transfer-pricing | source-cited draft |

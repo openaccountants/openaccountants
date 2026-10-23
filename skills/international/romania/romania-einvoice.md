@@ -1,10 +1,10 @@
 ---
 name: romania-einvoice
 description: Use this skill whenever asked about e-invoicing in Romania, RO e-Factura, ANAF electronic invoice system, SPV (Spațiul Privat Virtual), B2B e-invoice clearance model, UBL 2.1 Romania, CIUS-RO, XML invoice validation, or any question about issuing, transmitting, validating, or archiving electronic invoices under Romanian law. Trigger on phrases like "e-Factura", "RO e-Factura", "ANAF invoice", "SPV portal", "CIUS-RO", "B2B clearance Romania", "B2C e-invoice Romania", "OUG 115/2023", "EN 16931 Romania", or "invoice validation ANAF". ALWAYS read this skill before touching any Romania invoicing compliance work.
-version: 1.0
+version: 1.1
 jurisdiction: RO
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -28,8 +28,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Governing body | Agenția Națională de Administrare Fiscală (ANAF) / Ministry of Finance (MF) |
 | Key legislation | OUG 120/2021 (system establishment); OUG 115/2023 (B2B mandate); OUG 69/2024, OUG 138/2024 (B2C extension); Ordinul MF 1.366/2021 (CIUS-RO); Codul Fiscal Art. 319 |
 | Implementation timeline | B2G Nov 2021; High-risk B2B Jul 2022; All B2B Jan 2024 (reporting) / Jul 2024 (clearance); B2C Jan 2025 |
-| Current status (2026) | Centralised clearance model: B2B and B2G fully mandatory; B2C mandatory for established taxpayers; XML-only invoicing through ANAF platform |
-| Skill version | 1.0 |
+| Current status (2026) | Centralised clearance model: B2B and B2G fully mandatory; B2C mandatory for established taxpayers; XML-only invoicing through ANAF platform. From 1 January 2026: 5 working days to transmit (B2B and B2C), invoices to non-established but Romanian VAT-registered customers included, and individuals trading under their personal number (CNP) must enrol in the Registrul RO e-Factura obligatoriu (by 15 January 2026 if already trading) (OUG 89/2025 art. X, XI, XIV) |
+| Skill version | 1.1 |
 
 ## Section 2 -- Mandate Scope
 
@@ -123,7 +123,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | SPV web portal | Manual upload of XML invoices at anaf.ro → Factura electronică → Trimitere Factură |
 | REST API | Automated submission via ANAF web services; separate endpoints for B2B/B2G and B2C |
 | Authentication | Qualified digital certificate (semnătură electronică calificată) registered in SPV |
-| Submission deadline | 5 calendar days from invoice issuance (but no later than 5 calendar days from the legal deadline for issuance under Art. 319(16) Fiscal Code) |
+| Submission deadline | From 1 January 2026: 5 working days from invoice issuance, and no later than 5 working days from the legal deadline for issuance under Art. 319(16) Fiscal Code; the same deadline now applies to B2C invoices (OUG 120/2021 art. 10(7) and 10^1(2^1), as rewritten and added by OUG 89/2025 art. X pt. 2 and 3) |
 | Recipient download | Buyer must download validated invoice within 60 days |
 | Download availability | Validated XML available for download for 60 days; after that, archived and available on request |
 
@@ -167,11 +167,13 @@ ANAF enforces API call limits. Consult the current "Limite Apeluri API" document
 
 | Rate | Percentage | Application |
 | --- | --- | --- |
-| Standard | 19% | Most goods and services |
-| Reduced 1 | 9% | Foodstuffs, water supply, medicines, hotel accommodation, restaurant services |
-| Reduced 2 | 5% | Social housing (under thresholds), cultural events, certain children's products |
+| Standard | 21% | Most goods and services (Fiscal Code art. 291(1), as rewritten by Legea 141/2025 art. II pt. 42, in force 1 August 2025) |
+| Reduced | 11% | Medicines, food (with exceptions for alcohol, NC 2202 drinks and high-sugar food), water and sewerage, agricultural inputs, books and press, museum entry, firewood, cold-season heat, social-policy buildings, hotel accommodation, restaurant and catering (art. 291(2)) |
+| Transitional | 9% | Only qualifying homes under advance contracts signed by 1 August 2025 and delivered by 31 July 2026, and buildings sold to town halls for subsidised rent until 1 August 2026 (Legea 141/2025 art. III) |
 | Exempt with credit | 0% | Intra-community supplies, exports |
 | Exempt without credit | 0% | Financial services, insurance, education, healthcare |
+
+There is no 19%, 5% or general 9% rate since 1 August 2025. Sources: Fiscal Code, ANAF consolidated text (https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm) and Legea 141/2025, ANAF copy (https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf), both read on 2026-10-23. The full rate rules are in [ro-vat-return](ro-vat-return.md).
 
 ### Rounding Rules
 
@@ -206,7 +208,7 @@ ANAF enforces API call limits. Consult the current "Limite Apeluri API" document
 
 **Late or Missing Submission Penalties**
 
-| Taxpayer Category | Fine per Incident (RON) |
+| Taxpayer Category (late transmission, past the 5 working days; OUG 120/2021 art. 13^2(1)(c) and (3)) | Fine per Incident (RON) |
 | --- | --- |
 | Large taxpayers (contribuabili mari) | 5,000 -- 10,000 |
 | Medium taxpayers (contribuabili mijlocii) | 2,500 -- 5,000 |
@@ -218,9 +220,11 @@ ANAF enforces API call limits. Consult the current "Limite Apeluri API" document
 
 | Violation | Penalty |
 | --- | --- |
-| Receiving/registering a B2B invoice not transmitted via RO e-Factura (buyer penalty) | 15% of the total invoice value |
-| Failure to issue invoice via RO e-Factura for in-scope B2B transactions | Fine equal to the VAT amount on the invoice |
-| B2C non-compliance (post-grace period) | Same graduated fines as above by taxpayer category |
+| Receiving/registering a B2B invoice not transmitted via RO e-Factura (buyer penalty) | 15% of the total invoice value (art. 13^2(1)(b) and (2)) |
+| Issuer not transmitting an in-scope B2B invoice via RO e-Factura | 15% of the total invoice value (OUG 120/2021 art. 13^2(1)(a) and (2), as rewritten by OUG 115/2023 art. LXVIII pt. 15, from 1 July 2024) |
+| B2C non-compliance (post-grace period) | Same graduated fines as above by taxpayer category (not re-checked against the law on 2026-10-23) |
+
+Sources for the B2B fines: OUG 115/2023, ANAF copy (https://static.anaf.ro/static/10/Anaf/legislatie/OUG_115_2023.pdf), and the 2026 deadline change in OUG 89/2025, ANAF copy (https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf), both read on 2026-10-23. The consolidated text of OUG 120/2021 on legislatie.just.ro did not load that day, so a later amendment to art. 13^2 is not ruled out.
 
 ### Consequences Beyond Fines
 
@@ -234,7 +238,7 @@ ANAF enforces API call limits. Consult the current "Limite Apeluri API" document
 
 ### RO e-Factura → RO e-TVA
 
-- **RO e-TVA pre-filled VAT return** — The RO e-TVA system provides taxpayers with a pre-filled VAT return based on RO e-Factura data, RO e-Transport data, and customs declarations. Taxpayers must review and adjust before submission.
+- **RO e-TVA pre-filled VAT return** — The RO e-TVA system builds a pre-filled VAT return from RO e-Factura, RO e-Transport, SAF-T and customs data. ANAF sends it by the 5th of the month after the D300 deadline, with a compliance notice where a row differs by at least 20% and 5,000 lei (OUG 70/2024 art. 3(2) and 5(1), as amended by OUG 87/2024). From 1 January 2026 the duty to answer that notice and the fine for not answering were repealed (OUG 89/2025 art. XII). Details: [ro-vat-return](ro-vat-return.md).
 
 ### RO e-Factura → SAF-T (D406)
 
