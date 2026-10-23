@@ -34,11 +34,19 @@ class IngestWorkflowTests(unittest.TestCase):
           printf '%s\n' "$API_PAGES" | jq "$5"
         }
         curl() {
+          out=/dev/stdout; fmt=""; body=""
           while [ "$#" -gt 0 ]; do
-            if [ "$1" = "-d" ]; then printf 'CAPTURED_BODY=%s\n' "$2" >&2; printf '{}'; return; fi
+            case "$1" in
+              -o) out="$2"; shift ;;
+              -w) fmt="$2"; shift ;;
+              -d) body="$2"; shift ;;
+            esac
             shift
           done
-          return 3
+          [ -n "$body" ] || return 3
+          printf 'CAPTURED_BODY=%s\n' "$body" >&2
+          printf '{}' > "$out"
+          [ -z "$fmt" ] || printf '200'
         }
         '''
         if os.name == "nt":
