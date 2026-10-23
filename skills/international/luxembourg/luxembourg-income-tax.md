@@ -1,12 +1,13 @@
 ---
 name: luxembourg-income-tax
-description: Use this skill whenever asked about Luxembourg personal income tax for self-employed individuals (indépendants) and individuals. Trigger on phrases like "how much tax do I pay in Luxembourg", "déclaration d'impôt", "Form 100", "modèle 100", "tax class", "classe d'impôt", "barème", "revenu imposable", "solidarity surcharge", "employment fund", "fonds pour l'emploi", "CCSS contributions", "cotisations sociales", "self-employed tax Luxembourg", "indépendant", "advance tax payments", "avances trimestrielles", "salaire social minimum", or any question about filing or computing Luxembourg income tax for a self-employed or individual client. Also trigger when preparing or reviewing a Form 100 / Form 163 return, computing deductible business expenses, estimating social contributions, or advising on quarterly advance payments. This skill covers the 23-band progressive PIT scale (0%–42%), the employment-fund (solidarity) surcharge, tax classes 1/1a/2, CCSS social contributions (employee, employer, self-employed), Form 100 structure, advance payments, penalties, and interaction with VAT and the social-security ceiling. ALWAYS read this skill before touching any Luxembourg income tax work.
-version: 0.2
+description: "Luxembourg personal income tax for resident individuals and self-employed people (indépendants) for tax year 2026: the 23-band scale (0% to 42%), tax classes 1, 1a and 2, the employment fund surcharge (7%, or 9% above EUR 150,000 / 300,000), the CIS, CII, CI-CO2, CISSM and single-parent credits, expenses, depreciation (arts. 32 and 34), special expenses and CCSS contributions, Form 100 and Form 163 annual adjustment, quarterly advances, penalties and interest. Trigger on: impôt sur le revenu Luxembourg, modèle 100, décompte annuel 163, classe d'impôt, barème 2026, indépendant Luxembourg, avances trimestrielles. Out of scope: lu-cross-border, luxembourg-payroll, luxembourg-social-contributions, lu-corporate-tax."
+version: 0.3
 jurisdiction: LU
 tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+verified_by: pending
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -14,734 +15,280 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Luxembourg Income Tax -- Self-Employed and Individuals
-
-## Section 1 -- Quick Reference
-
-**Section 1 Quick Reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Luxembourg (Grand Duchy of Luxembourg) |
-| Tax | Personal Income Tax (impôt sur le revenu des personnes physiques) |
-| Currency | EUR only |
-| Tax year | Calendar year (1 January -- 31 December) [LIR art. 1(2)](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Primary legislation | Loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu (LIR / Income Tax Law) |
-| Supporting legislation | Code de la sécurité sociale (social contributions); LIR art. 118 as amended by the law of 20 December 2024 (scale applicable from tax year 2025, unchanged in the LIR text in force on 1 January 2026) |
-| Direct-tax authority | Administration des contributions directes (ACD) |
-| Social-security authority | Centre commun de la sécurité sociale (CCSS); health fund Caisse nationale de santé (CNS); pension fund Caisse nationale d'assurance pension (CNAP) |
-| Filing portal | MyGuichet.lu (guichet.public.lu) |
-| Annual return | Form 100 (modèle 100) -- déclaration pour l'impôt sur le revenu des personnes physiques [ACD, formulaires personnes physiques](https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html) |
-| Filing deadline | 31 December of the year following the income year; income year 2026 due 31 December 2027 [ACD, délais de dépôt](https://impotsdirects.public.lu/fr/az/d/delais/depot.html) |
-| Verified by | Pending -- requires sign-off by a Luxembourg-qualified tax adviser / expert-comptable |
-| Verification date | Pending |
-| Skill version | 0.2 |
-
-### Tax Rate Brackets -- Progressive Scale (barème) for tax years 2025 and 2026, Tax Class 1
-
-**Progressive Scale Tax Class 1 (LIR art. 118; taxable income rounded down to a multiple of EUR 50 first, art. 126(2))**  _([LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf))_
-
-| Taxable Income (EUR) | Marginal Rate | Cumulative Tax at Top of Band (EUR) |
-| --- | --- | --- |
-| 0 -- 13,230 | 0% | 0.00 |
-| 13,230 -- 15,435 | 8% | 176.40 |
-| 15,435 -- 17,640 | 9% | 374.85 |
-| 17,640 -- 19,845 | 10% | 595.35 |
-| 19,845 -- 22,050 | 11% | 837.90 |
-| 22,050 -- 24,255 | 12% | 1,102.50 |
-| 24,255 -- 26,550 | 14% | 1,423.80 |
-| 26,550 -- 28,845 | 16% | 1,791.00 |
-| 28,845 -- 31,140 | 18% | 2,204.10 |
-| 31,140 -- 33,435 | 20% | 2,663.10 |
-| 33,435 -- 35,730 | 22% | 3,168.00 |
-| 35,730 -- 38,025 | 24% | 3,718.80 |
-| 38,025 -- 40,320 | 26% | 4,315.50 |
-| 40,320 -- 42,615 | 28% | 4,958.10 |
-| 42,615 -- 44,910 | 30% | 5,646.60 |
-| 44,910 -- 47,205 | 32% | 6,381.00 |
-| 47,205 -- 49,500 | 34% | 7,161.30 |
-| 49,500 -- 51,795 | 36% | 7,987.50 |
-| 51,795 -- 54,090 | 38% | 8,859.60 |
-| 54,090 -- 117,450 | 39% | 33,570.00 |
-| 117,450 -- 176,160 | 40% | 57,054.00 |
-| 176,160 -- 234,870 | 41% | 81,125.10 |
-| 234,870+ | 42% | -- |
-
-- **Tax-free threshold** — The first EUR 13,230 of taxable income (class 1) is taxed at 0%. There is no separate flat personal allowance; the 0% band IS the allowance.  _(LIR art. 118)_
-
-### Employment-Fund (Solidarity) Surcharge
-
-**Employment-Fund Surcharge table**  _([ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html))_
-
-| Adjusted taxable income | Surcharge on PIT (classes 1 and 1a) | Surcharge on PIT (class 2) |
-| --- | --- | --- |
-| Up to threshold | 7% | 7% |
-| Above EUR 150,000 (class 1/1a) / EUR 300,000 (class 2) | 9% | 9% |
-
-- **Surcharge application** — Applied on top of the PIT computed from the scale above. The rate is 7%, or 9% where adjusted taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2), since tax year 2013.  _([ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html))_
-
-### Tax Classes
-
-**Tax Classes table**  _(LIR arts. 119 to 121)_
-
-| Class | Who | Treatment |
-| --- | --- | --- |
-| Class 1 | Single / individually taxed, no dependent child | Full progressive scale, no splitting -- least favourable |
-| Class 1a | Single with a child giving a child tax reduction, widowed, or aged 64 or over at the start of the tax year (art. 119 no. 2) | More favourable scale |
-| Class 2 | Spouses taxed jointly (art. 3), partners taxed jointly (art. 3bis), and people widowed, divorced or separated in the three preceding years (art. 119 no. 3) | Tax = twice the tax on half the income (art. 121) -- most favourable |
-
-### Conservative Defaults
-
-**Conservative Defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown tax class | Class 1 (single, no children) -- highest, most conservative outcome (see Section 1A) |
-| Solidarity surcharge rate | 7% on PIT (9% only if taxable income > EUR 150,000 class 1/1a or > EUR 300,000 class 2) |
-| Social-contribution ceiling | EUR 13,518.68/month from 1 January 2026 and EUR 13,856.63/month from 1 June 2026 (CCSS); use the figure for the month |
-| Employer MDE class / accident coefficient | MDE class II–III and accident coefficient 1.0 (0.75%) where firm-specific data unknown |
-| Unknown business-use % (vehicle, phone, home) | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown VAT status | Assume VAT is charged (turnover above EUR 50,000) unless the client confirms the franchise scheme |
-
-### Section 1A -- Why default to Class 1
-
-Classes 1a and 2 give more favourable treatment via splitting and abatements. Defaulting to class 1 avoids overstating reliefs and gives the highest (most conservative) tax estimate for a single individual. Never silently assume class 2 or 1a -- it materially understates tax.
-
-### Required Inputs
-
-**Minimum viable** -- bank statement for the full income year in CSV, PDF, or pasted text, plus confirmation of tax class (1 / 1a / 2) and status (self-employed indépendant filing by assessment, or employee). For employees not filing a full return, confirm whether a Form 163 annual adjustment applies.
-
-**Recommended** -- all sales invoices, purchase invoices/receipts, CCSS contribution statements, prior year Form 100 or tax assessment (bulletin d'impôt), VAT registration status (registered / franchise scheme).
-
-**Ideal** -- complete income and expenditure account (compte de résultat), asset register with depreciation schedule, quarterly advance-payment confirmations, employment income (fiche de retenue / tax card) details, family situation (dependent children, age, marital/partnership status).
-
-**Refusal if minimum is missing -- SOFT WARN.** No bank statement at all = hard stop. Bank statement without invoices = proceed with reviewer warning: "This Form 100 working paper was produced from bank statement alone. The reviewer must verify that all deductions claimed are supported by valid documentation and that expenses were incurred in the production of income (frais d'obtention / dépenses d'exploitation)."
-
-### Refusal Catalogue
-
-- **R-LU-1 -- Tax class unknown** — Tax class (classe d'impôt 1, 1a, or 2) determines how the progressive scale and the solidarity-surcharge threshold are applied. This skill defaults to class 1 (most conservative) but flags the result. Confirm class before relying on the figure.
-- **R-LU-2 -- Companies, partnerships, holding structures** — This skill covers individuals and sole-trader/liberal-profession indépendants only. Sociétés (SARL, SA), SOPARFI holdings, and partnerships file separate returns (corporate income tax / municipal business tax / net wealth tax). Escalate to a Luxembourg tax adviser.
-- **R-LU-3 -- Non-resident / cross-border (frontalier) taxation** — Non-resident and cross-border (French/German/Belgian frontalier) taxation, the 34-day treaty thresholds and the 90% rule for assimilation to resident treatment are out of scope here. Use `lu-cross-border`.
-- **R-LU-4 -- Capital gains / property disposals** — Capital gains (plus-values) on real estate or substantial shareholdings have separate rules and rates. Escalate to a Luxembourg tax adviser.
-- **R-LU-5 -- Impatriate / expat regimes** — The impatriate regime (art. 115 no. 13b) is covered by `lu-cross-border`. The participative premium (prime participative) and stock-option/profit-sharing schemes have specific conditions and are out of scope. Escalate to a Luxembourg tax adviser.
-- **R-LU-6 -- Arrears / enforcement** — Client has outstanding tax arrears or is subject to ACD enforcement. Late-payment interest runs at 0.6% per month and a late-filing surcharge of up to 10% can be set. Do not advise -- escalate immediately.  _([ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html))_
-- **R-LU-7 -- VAT return requested** — This skill covers personal income tax (Form 100 / Form 163) only. For Luxembourg VAT, use the dedicated VAT skill. Standard VAT rate 17%, intermediate 14%, reduced 8%, super-reduced 3%. The small-business franchise (no VAT charged) applies up to EUR 50,000 of annual turnover from 1 January 2025, with a 10% tolerance to EUR 55,000 for the year in which the threshold is crossed; the next year the franchise is lost (LTVA arts. 57 to 57quater).  _([AED, taux nationaux](https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html); [AED, régime de franchise SME](https://pfi.public.lu/fr/professionnel/tva/sme.html))_
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
-
-**What the patterns rest on.** The bank-text patterns are matching aids, not law. Every treatment in the tables follows one of these LIR rules (consolidated text at 1 January 2026): an expense is deductible only if it is caused exclusively by the business (art. 45(1)); household and lifestyle spending, gifts (libéralités), income tax and fines are never deductible (art. 12 nos. 1 to 4); depreciable assets are written off over their useful life (art. 32) unless they cost EUR 870 or less or last one year or less (art. 34); compulsory social contributions are special expenses (art. 110). A merchant name alone never decides business use: where a row says "business purpose", the client must confirm it.
-
-**How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. Luxembourg statements mix French, German, and English terms. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
-
-### 3.1 Income Patterns (Credits on Bank Statement)
-
-**Income Patterns table**
-
-| Pattern | Working-Paper Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| Client name + VIREMENT, VIR, ÜBERWEISUNG, TRANSFER, PAIEMENT FACTURE | Gross professional income | Business income | If VAT-registered, extract net (excl. 17% VAT) |
-| HONORAIRES, FEES, PROFESSIONAL FEES, PRESTATIONS | Gross professional income | Business income | Professional/liberal-profession fees |
-| STRIPE PAYOUT, STRIPE TRANSFER | Gross professional income | Business income | Platform payout -- match to underlying invoices |
-| PAYPAL PAYOUT, PAYPAL TRANSFER | Gross professional income | Business income | Platform payout -- verify against invoices |
-| WISE PAYOUT, WISE TRANSFER | Gross professional income | Business income | International platform payout |
-| UPWORK, FIVERR, MALT, TOPTAL | Gross professional income | Business income | Freelance platform -- net of platform commission |
-| SALAIRE, TRAITEMENT, GEHALT, PAYROLL, EMPLOYER [name] | Employment income (separate category) | Employment income | NOT self-employment -- wage tax already withheld at source |
-| LOYER REÇU, RENT RECEIVED, MIETE | Rental income (separate category) | Rental income | Revenus de location -- separate income category |
-| INTÉRÊTS, INTEREST, ZINSEN | Investment income (separate category) | Investment income | Interest income |
-| DIVIDENDE, DIVIDEND | Investment income (separate category) | Investment income | Dividend income |
-| REMBOURSEMENT IMPÔT, ACD REFUND, TAX REFUND | EXCLUDE | Not income | Tax refund from prior year |
-| AIDE, SUBVENTION, GRANT | Check nature | Check nature | A public subsidy tied directly to buying an asset reduces that asset's acquisition price (ACD circular L.I.R. n° 34/1); an operating subsidy is business income |
-
-### 3.2 Expense Patterns (Debits) -- Fully Deductible Operating Expenses
-
-**Fully Deductible Operating Expenses table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| LOYER BUREAU, OFFICE RENT, MIETE BÜRO | Office rent | Fully deductible | Dedicated business premises |
-| ASSURANCE RC PRO, PROFESSIONAL INDEMNITY, PI INSURANCE | Professional insurance | Fully deductible |  |
-| EXPERT-COMPTABLE, FIDUCIAIRE, COMPTABLE, ACCOUNTANT, AUDIT | Accountancy fees | Fully deductible |  |
-| AVOCAT, LAWYER, NOTAIRE (business), LEGAL | Legal fees | Fully deductible | Must be business-related |
-| FOURNITURES, OFFICE SUPPLIES, PAPETERIE | Office supplies | Fully deductible |  |
-| MARKETING, GOOGLE ADS, META ADS, FACEBOOK ADS, PUBLICITÉ | Marketing/advertising | Fully deductible |  |
-| FORMATION, CPD, COURSE, SÉMINAIRE, CONFERENCE | Training/CPD | Fully deductible | Must relate to current business |
-| COTISATION PROFESSIONNELLE, ORDRE, CHAMBRE | Professional subscriptions | Fully deductible |  |
-| FRAIS BANCAIRES, BANK FEE, KONTOFÜHRUNG | Bank charges | Fully deductible | Business account only |
-| STRIPE FEE, PAYPAL FEE, COMMISSION | Payment processing fees | Fully deductible |  |
-| POSTE, POST LUXEMBOURG (business), POSTAGE | Postage | Fully deductible | Business correspondence |
-| DOMAINE, HOSTING, CLOUDFLARE, AWS, OVH | IT infrastructure | Fully deductible | Recurring = expense; one-off high-value = capitalise |
-
-### 3.3 Expense Patterns (Debits) -- SaaS and Software
-
-**SaaS and Software table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| GOOGLE WORKSPACE, MICROSOFT 365, OFFICE 365 | Software subscription | Fully deductible | Recurring subscription = operating expense |
-| ADOBE, CANVA, FIGMA, NOTION, SLACK, ZOOM | Software subscription | Fully deductible |  |
-| ANTHROPIC, OPENAI, GITHUB, ATLASSIAN, DROPBOX | Software subscription | Fully deductible |  |
-| LICENCE LOGICIEL (perpetual, high value) | Capital item | Depreciate over useful life | Flag for reviewer -- see Tier 2 |
-
-### 3.4 Expense Patterns (Debits) -- Utilities (may need apportionment)
-
-**Utilities table**
-
-| Pattern | Category | Tier | Notes |
-| --- | --- | --- | --- |
-| ENOVOS, CREOS, LEO, ELECTRICITÉ, EAU | Electricity/water | T2 if home office | 100% if dedicated office; proportional if home |
-| POST TELECOM, TANGO, ORANGE LU, INTERNET | Telecoms/broadband | T2 | Business-use portion only; default 0% if mixed |
-| MOBILE, GSM, FORFAIT MOBILE | Phone | T2 | Business-use portion only |
-
-### 3.5 Expense Patterns (Debits) -- Travel
-
-**Travel table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| LUXAIR, RYANAIR, LUFTHANSA, FLIGHT, VOL | Flights | Deductible if business travel | Must be wholly business purpose |
-| HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel |  |
-| CFL, TRAIN, BUS, TAXI, BOLT, UBER | Local transport | Deductible if business purpose | Home-to-work travel is limited by LIR art. 46 no. 9 and its grand-ducal regulation; do not book it here |
-| CARBURANT, ESSENCE, SHELL, ARAL, FUEL | Vehicle fuel | T2 -- business % only | Requires mileage log |
-| PARKING, VIGNETTE | Parking | T2 -- business % only |  |
-
-### 3.6 Expense Patterns (Debits) -- NOT Deductible
-
-**NOT Deductible table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANT, DÉJEUNER, DINNER, RÉCEPTION, CLIENT MEAL | Entertainment/representation | Deductible only with a documented business purpose (art. 45(1)); otherwise NOT deductible | The LIR sets no fixed percentage. Lifestyle spending tied to the client's social position is not deductible even if it helps the business (art. 12 no. 1); the client's own share of a meal is private |
-| PERSONNEL, COURSES, CACTUS, AUCHAN, DELHAIZE, GROCERIES | Personal expenses | NOT deductible | Private living costs (art. 12 no. 1) |
-| AMENDE, PÉNALITÉ, FINE, PENALTY, STRAFE | Fines/penalties | NOT deductible | LIR art. 12 no. 4 |
-| ACD PAIEMENT, IMPÔT, INCOME TAX, AVANCE IMPÔT | Tax payments | NOT deductible | Income tax and net wealth tax (art. 12 no. 3a) |
-| PRÉLÈVEMENT PRIVÉ, DRAWINGS, RETRAIT PERSO | Drawings | NOT deductible | Not an expense |
-
-### 3.7 Expense Patterns (Debits) -- Capital Items (Depreciate)
-
-**Capital Items table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| LAPTOP, ORDINATEUR, MACBOOK, COMPUTER | Computer hardware | EUR 870 or less per item: write off in the year of purchase (art. 34); above: depreciate over useful life (art. 32) | Linear or declining balance |
-| IMPRIMANTE, PRINTER, SCANNER | Office equipment | Same EUR 870 test, then depreciate | Linear or declining balance |
-| MOBILIER, FURNITURE, BUREAU, CHAISE | Furniture/fittings | Same EUR 870 test, then depreciate | Linear or declining balance |
-| VOITURE, CAR, VÉHICULE (business) | Motor vehicle | Depreciate, business % only | Linear or declining balance |
-
-> **Note.** The LIR and the ACD publish no table of rates per asset type. The rate follows from the useful life (durée usuelle d'utilisation) of the asset, set in years from its kind and conditions of use (art. 32(2)). See Section 6.5 for the method and the fixed limits.
-
-### 3.8 Exclusions (Neither Income nor Expense)
-
-**Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| VIREMENT INTERNE, OWN ACCOUNT, ENTRE COMPTES | EXCLUDE | Own-account transfer |
-| REMBOURSEMENT PRÊT, LOAN REPAYMENT, CRÉDIT | EXCLUDE | Loan principal movement |
-| CCSS, COTISATIONS SOCIALES, SOCIAL SECURITY | Social-contribution deduction | Deductible as a special expense, NOT an operating expense (see Section 5) |
-| TVA, VAT PAYMENT, PAIEMENT TVA | EXCLUDE | VAT liability payment, not an expense |
-| AVANCE TRIMESTRIELLE, PROVISIONAL, ACOMPTE IMPÔT | Advance tax paid (credit against liability) | Not an expense -- credit against final assessment |
-
-### 3.9 Luxembourg Banks -- Statement Format Reference
-
-**Bank Format Reference table**
-
-| Bank | Common Patterns | Notes |
-| --- | --- | --- |
-| BCEE (Spuerkeess) | VIREMENT, DOMICILIATION, CARTE, FRAIS | PDF/CSV; FR/DE descriptions; date DD/MM/YYYY |
-| BIL (Banque Internationale à Luxembourg) | VIR, PRÉLÈVEMENT, PAIEMENT CARTE | PDF/CSV; counterparty in description |
-| BGL BNP Paribas | VIREMENT, DOMICILIATION, ACHAT CARTE | PDF/CSV |
-| ING Luxembourg | TRANSFER, DIRECT DEBIT, CARD PAYMENT | CSV/PDF; English labels common |
-| Revolut / Wise (Business) | PAYMENT, TRANSFER, CONVERSION, FEE | CSV; clean counterparty names; multi-currency -- use EUR amounts |
-
-### Example 1 -- Client Payment (VAT-registered freelancer)
-
-**Input line:**
-`15/03/2025 ; BCEE VIREMENT ; STUDIO KREBS SARL ; PAIEMENT FACT 2025-003 ; +1,170.00 ; EUR`
-
-**Reasoning:**
-Client payment for services. Freelancer is VAT-registered, so EUR 1,170 includes 17% standard VAT. Net = EUR 1,170 / 1.17 = EUR 1,000.00. EUR 170.00 is VAT collected (excluded from income -- it is a liability to the authorities). ([AED, taux nationaux](https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html): standard rate 17%)
-
-**Classification:** Gross professional income = EUR 1,000.00. VAT EUR 170.00 excluded.
-
-### Example 2 -- SaaS Subscription (Fully Deductible)
-
-**Input line:**
-`01/04/2025 ; BIL PRÉLÈVEMENT ; ADOBE SYSTEMS IRELAND ; CREATIVE CLOUD AVR ; -29.99 ; EUR`
-
-**Reasoning:**
-Monthly SaaS subscription, recurring operating expense, fully deductible. For a VAT-registered freelancer the net amount (excl. recoverable input VAT) is the expense; if under the franchise scheme, the gross amount is the cost.
-
-**Classification:** Deductible operating expense = EUR 29.99 (or net if input VAT recoverable).
-
-### Example 3 -- Entertainment / Representation (Restricted)
-
-**Input line:**
-`22/04/2025 ; BGL CARTE ; RESTAURANT CLAIRELUNE ; DÉJEUNER CLIENT ; -85.00 ; EUR`
-
-**Reasoning:**
-Client entertainment (frais de représentation). The LIR has no fixed deductible percentage for representation costs. The test is art. 45(1): the expense is deductible only if the business alone caused it. Art. 12 no. 1 blocks lifestyle spending linked to the client's economic or social position, even when it helps the business. So ask who attended and why. If the client documents a named business contact and a business purpose, deduct the cost; if not, it is private.
-
-**Classification:** NOT deductible until the client documents the guest and the business purpose; then deductible as an operating expense.
-
-### Example 4 -- Self-Employed Social Contribution (CCSS)
-
-**Input line:**
-`10/01/2025 ; BCEE DOMICILIATION ; CCSS COTISATIONS ; INDÉPENDANT T4 2024 ; -2,909.34 ; EUR`
-
-**Reasoning:**
-CCSS social contribution for a self-employed person. Social contributions are deductible -- but as a **special expense (dépense spéciale)**, not as an operating expense in the income-and-expenditure account. They reduce taxable income at the return level. Art. 110 no. 2 allows a self-employed person's compulsory health, accident and pension contributions; the dependency-insurance contribution is not on that list, so take it out of the deduction. (LIR art. 110)
-
-**Classification:** Social-contribution deduction = EUR 2,909.34. Do NOT include in operating expenses.
-
-### Example 5 -- Equipment Purchase (Capital Item)
-
-**Input line:**
-`03/06/2025 ; BGL ACHAT CARTE ; APPLE STORE LUXEMBOURG ; MACBOOK PRO ; -1,899.00 ; EUR`
-
-**Reasoning:**
-Capital asset (immobilisation). The price is above EUR 870, so the art. 34 immediate write-off does not apply. Capitalise it and depreciate it over its useful life (art. 32). The acquisition price excludes input VAT the client can deduct, and includes VAT the client cannot deduct (ACD circular L.I.R. n° 34/1). If the client documents a useful life of 4 years and is not VAT-registered, the linear charge is 1,899.00 / 4 = EUR 474.75 a year. The declining-balance rate would be capped at the lower of 3 x 25% and 30%, so 30%.
-
-**Classification:** Capitalise EUR 1,899.00 (net of deductible VAT if registered). Depreciate over the documented useful life. Do NOT expense in full.
-
-### Example 6 -- Internal Transfer (Exclude)
-
-**Input line:**
-`15/05/2025 ; BIL VIREMENT ; VIREMENT INTERNE - ÉPARGNE ; ; -2,000.00 ; EUR`
-
-**Reasoning:**
-Transfer between the client's own accounts. Neither income nor expense. Exclude entirely.
-
-**Classification:** EXCLUDE.
-
-### Example 7 -- Income Tax Estimate (Class 1, single freelancer)
-
-**Scenario:** Single freelancer, class 1, taxable income (after social-contribution and operating-expense deductions) = EUR 45,000.
-
-**Reasoning:**
-Apply the class-1 scale (art. 118, the same for 2025 and 2026). From Section 1, the cumulative tax at the top of the EUR 44,910 band is EUR 5,646.60. The remaining EUR 90.00 (45,000 − 44,910) falls in the 32% band: 90 × 32% = EUR 28.80. PIT = EUR 5,646.60 + EUR 28.80 = **EUR 5,675.40**. Solidarity surcharge at 7% (income below EUR 150,000) = EUR 5,675.40 × 7% = EUR 397.28. **Total = EUR 6,072.68.** (LIR art. 118; ACD, Fonds pour l'emploi)
-
-**Classification:** PIT EUR 5,675.40 + surcharge EUR 397.28 = EUR 6,072.68 (estimate -- pass to the deterministic engine for the official figure).
-
-### 5.1 Deductibility of Business Expenses
-
-- **Deductibility of Business Expenses** — An expense is deductible only if it is caused exclusively by the business (art. 45(1)); expenses linked to exempt income are not deductible (art. 45(2)). Mixed-use expenses must be apportioned on a reasonable, documented basis. Household and lifestyle costs, gifts (libéralités), income tax, net wealth tax and fines are never deductible (art. 12 nos. 1 to 4). Pay to the operator or to a spouse taxed jointly with them is not an expense (art. 48 no. 3).  _([LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf), arts. 12, 45, 48)_
-- **Representation costs and gifts** — The LIR sets no fixed percentage. Client meals and receptions are deductible only where the business alone caused them (art. 45(1)). Spending driven by the client's social or economic position is private even if it helps the business (art. 12 no. 1). Gratuitous gifts (libéralités) are not deductible (art. 12 no. 2).  _([LIR](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf), arts. 12 and 45)_
-
-### 5.2 Revenue Recognition
-
-- **Revenue Recognition** — All business income is professional income (bénéfice commercial / bénéfice provenant de l'exercice d'une profession libérale). For VAT-registered clients, report net of VAT. Under the small-business franchise scheme, no VAT is charged and gross is reported. VAT collected on sales is NOT income.
-
-### 5.3 Progressive Scale and Solidarity Surcharge
-
-- **Progressive Scale and Solidarity Surcharge** — PIT is progressive over 23 bands from 0% to 42% (Section 1). On top of the PIT computed, the employment-fund (solidarity) surcharge applies: 7% of the PIT, rising to 9% where taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2).  _(LIR art. 118; [ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html))_
-
-### 5.4 Tax Classes
-
-- **Tax Classes** — Three classes (Section 1): class 1 (single, full scale), class 1a (single with a child tax reduction / widowed / aged 64 or over at the start of the year, more favourable), class 2 (spouses or partners taxed jointly, and the widowed, divorced or separated within three years; twice the tax on half the income, most favourable). Never apply a class without confirmation; default to class 1.  _(LIR arts. 119 to 121)_
-
-### 5.5 Social Contributions -- Employee
-
-**Social Contributions Employee table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-| Contribution | Employee Rate | Base | Capped at ceiling? |
-| --- | --- | --- | --- |
-| Pension / old-age (assurance pension) | 8.50% (half of the 17% total in 2026; 16% total in 2025) | gross remuneration | Yes |
-| Health -- benefits in kind (CNS, prestations en nature) | 2.80% (half of 5.60%) | gross remuneration | Yes |
-| Health -- cash benefits (CNS, prestations en espèces) | 0.25% (half of 0.50%) | gross remuneration | Yes |
-| Dependency / long-term care (assurance dépendance) | 1.40% | gross income less the monthly abatement | **No -- uncapped** |
-| **Employee total** | **12.95%** | -- | -- |
-
-- **Dependency contribution abatement** — The dependency contribution is charged after a monthly abatement of a quarter of the social minimum wage: EUR 675.93 from 1 January 2026 and EUR 692.83 from 1 June 2026. For an employee working under 150 hours in the month, the abatement is prorated on hours declared over 173. The contribution is NOT subject to the ceiling. (Component check: 8.50 + 2.80 + 0.25 + 1.40 = 12.95%.) For the full rules use `luxembourg-social-contributions`.  _([CCSS notice of 16 January 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf); [CCSS notice of 14 August 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf))_
-
-### 5.6 Social Contributions -- Employer
-
-**Social Contributions Employer table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-| Contribution | Employer Rate | Notes |
-| --- | --- | --- |
-| Pension / old-age | 8.50% | half of the 17% total |
-| Health -- benefits in kind | 2.80% | half of 5.60% |
-| Health -- cash benefits | 0.25% | half of 0.50% |
-| Accident insurance (AAA) | 0.65% | multiplied by the employer's bonus-malus factor (0.70% in 2025) |
-| Occupational health (santé au travail / STM) | 0.14% |  |
-| Employers' mutual insurance (MDE) | class 1 0.23% / 2 0.95% / 3 1.56% / 4 2.66% | class set by the employer's financial absenteeism rate |
-| **Employer subtotal (excl. MDE), accident factor 1.0** | **12.34%** | (8.50 + 2.80 + 0.25 + 0.65 + 0.14) |
-| **Employer total at MDE class 2** | **13.29%** | (12.34 + 0.95) |
-
-- **Firm-specific defaults** — The accident factor and MDE class are firm-specific; assume factor 1.0 and MDE class 2 where unknown, and flag it.  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-### 5.7 Social Contributions -- Self-Employed (Indépendants)
-
-**Social Contributions Self-Employed table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-| Contribution | Self-Employed Rate | Notes |
-| --- | --- | --- |
-| Pension (both shares borne by the indépendant) | 17.00% | capped at ceiling (16% in 2025) |
-| Health -- benefits in kind | 5.60% | capped at ceiling |
-| Health -- cash benefits | 0.50% | capped at ceiling; whether it applies depends on the person's cash-benefit cover (see `luxembourg-social-contributions`) |
-| Dependency / long-term care | 1.40% | on income less the monthly abatement; uncapped |
-| Accident insurance | 0.65% x factor | capped at ceiling |
-| **Total before accident insurance** | **24.50%** | (17.00 + 5.60 + 0.50 + 1.40) |
-
-Base = net professional income, between the SSM (floor) and 5x the SSM (ceiling: EUR 13,518.68 a month from 1 January 2026, EUR 13,856.63 from 1 June 2026).  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-### 5.8 Social-Contribution Ceiling (Plafond Cotisable)
-
-**Social-Contribution Ceiling table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-| Period | Index | SSM unskilled, monthly | Monthly ceiling (5x SSM) |
-| --- | --- | --- | --- |
-| 1 Jan – 31 May 2026 | 968.04 | EUR 2,703.74 | EUR 13,518.68 |
-| From 1 June 2026 | 992.24 | EUR 2,771.33 | EUR 13,856.63 |
-
-- **Ceiling basis** — Ceiling = 5x the social minimum wage (salaire social minimum, SSM), which changed with the 1 June 2026 indexation. Use the figure for the month; for a full-year estimate, weight 5 months and 7 months.  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
-
-### 5.9 Social Minimum Wage (SSM) and Tax Credits
-
-**Tax credit table (LIR text in force on 1 January 2026)**
-
-| Tax credit | Amount | Notes | Source |
-| --- | --- | --- | --- |
-| Employee tax credit (CIS) | EUR 300 + (gross - 936) x 0.029 for gross EUR 936 to 11,265; EUR 600 for EUR 11,266 to 40,000; EUR 600 - (gross - 40,000) x 0.015 for EUR 40,001 to 79,999; nil from EUR 80,000 | once per employee; not combined with the CII or the pensioner credit | LIR art. 154quater |
-| Employee CO2 tax credit (CI-CO2 salarié) | EUR 216 for gross EUR 936 to 40,000; EUR 216 - (gross - 40,000) x 0.0054 for EUR 40,001 to 79,999; nil from EUR 80,000 | paid with the CIS | LIR art. 154quater |
-| Self-employed tax credit (CII) | same bands as the CIS, applied to net profit | requires compulsory social-security affiliation for that profit | LIR art. 152ter |
-| Self-employed CO2 tax credit (CI-CO2 indépendant) | same bands as the CI-CO2 salarié, applied to net profit | deducted from the tax; paid out if the tax is too low | LIR art. 152ter |
-| Minimum-wage tax credit (CISSM) | EUR 81.00/month for monthly gross EUR 1,800–3,000; 81/600 x (3,600 - gross) between EUR 3,000 and 3,600; nil from EUR 3,600 | prorated for part-time; paid through payroll | LIR art. 139quater |
-| Single-parent tax credit (CIM) | EUR 3,504 below adjusted taxable income EUR 60,000; 3,504 - (income - 60,000) x 0.0612 between EUR 60,000 and 105,000; EUR 750 above EUR 105,000 | reduced by 50% of maintenance received for the child | LIR art. 154ter |
-
-Source for all rows: [LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf).
-
-### 5.10 Wage-Tax Withholding (Employees)
-
-- **Wage-Tax Withholding** — The employer withholds wage tax (retenue sur traitements et salaires) per the tax card (fiche de retenue, on the RTS scale) plus social contributions monthly. The tax class on the card determines the scale applied. Employees and pensioners not taxed by assessment may ask for an annual adjustment (décompte annuel, LIR art. 145) on Form 163 R (residents) or Form 163 NR (non-residents), by 31 December of the following year. Anyone taxed by assessment files Form 100 instead.  _([ACD, décompte annuel](https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html); [LIR art. 145](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf))_
-
-### 5.11 Filing, Advances, and Penalties
-
-**Filing, Advances, and Penalties table**
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Annual return | Form 100 (modèle 100), online via MyGuichet.lu with LuxTrust, or the PDF form | [ACD, formulaires personnes physiques](https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html) |
-| Filing deadline | 31 December of the year following the income year; income year 2026 due 31 December 2027 | [ACD, délais de dépôt](https://impotsdirects.public.lu/fr/az/d/delais/depot.html) |
-| Annual adjustment (employees and pensioners) | Form 163 R / 163 NR, by 31 December of the year following | [ACD, décompte annuel](https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html) |
-| Quarterly advances (avances) | 10 March, 10 June, 10 September, 10 December of the tax year; each is in principle a quarter of the tax from the last assessment, after withholding credits | [LIR art. 135(1) and (2)](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Final payment | Balance due by the end of the month after the month the assessment notice (bulletin d'impôt) is received; late-payment interest runs from then, and also on a late advance | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
-| Late-filing surcharge (majoration) | up to 10% of the tax due; a penalty payment (astreinte) after a final deadline; estimated assessment if no return | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
-| Late-payment interest | 0.6% per month from the end of the month after the assessment notice is received; 0.1% or 0.2% a month under an agreed payment plan | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
-
-### 5.12 VAT Interaction
-
-**VAT Interaction table**
-
-| Scenario | Income Tax Treatment |
-| --- | --- |
-| VAT collected on sales (registered) | NOT income -- exclude from professional income |
-| Input VAT recovered (registered) | NOT an expense -- exclude from operating expenses |
-| Input VAT blocked/non-deductible | IS an expense -- include the blocked VAT |
-| Franchise-scheme client (turnover ≤ EUR 50,000) | No VAT charged; record purchases gross |
-| Foreign VAT (non-reclaimable) | IS an expense -- full gross is cost |
-
-- **VAT franchise threshold and rates** — From 1 January 2025 the small-business franchise applies up to EUR 50,000 of annual turnover. A business that crosses it keeps the franchise to the end of that year if turnover stays within EUR 55,000 (10% tolerance), and loses it the next year (LTVA arts. 57 to 57quater). Rates: standard 17%, intermediate 14%, reduced 8%, super-reduced 3%.  _([AED, régime de franchise SME](https://pfi.public.lu/fr/professionnel/tva/sme.html); [AED, taux nationaux](https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html))_
-
-### 6.1 Home Office Deduction
-
-- Calculate the proportion of the home used for business (dedicated room(s) as a percentage of total rooms or floor area)
-- Apply that percentage to rent, electricity, water, internet, maintenance
-- Must be a genuinely dedicated workspace -- a dual-use room does NOT qualify
-- Retain the calculation in the client's records
-
-**Conservative default:** 0% deduction until reviewer confirms the arrangement.
-
-**Flag for reviewer:** Confirm room count / floor-area basis and that the workspace is genuinely dedicated.
-
-### 6.2 Motor Vehicle Business Use
-
-- Only the business-use percentage of fuel, insurance, maintenance, and depreciation is deductible
-- Client must maintain a mileage log (business vs total kilometres)
-- Depreciation on the vehicle is on a useful-life basis × business %
-
-**Conservative default:** 0% business use until a mileage log is provided. Depreciate the vehicle under Section 6.5 and deduct only the business share.
-
-### 6.3 Phone / Internet Mixed Use
-
-- Business-use portion only; client must provide a reasonable estimate
-
-**Conservative default:** 0% deduction until business percentage confirmed.
-
-### 6.4 Representation / Entertainment Costs
-
-- The LIR sets no fixed deductible percentage for representation costs (frais de représentation)
-- Deductible only where the business alone caused the cost (art. 45(1)); lifestyle spending tied to the client's position is private (art. 12 no. 1); gratuitous gifts are not deductible (art. 12 no. 2)
-- This skill blocks them until the client documents the guest and the business purpose
-
-**Flag for reviewer:** Check the documentation for each representation cost claimed.
-
-### 6.5 Depreciation of Capital Assets (Amortissement)
-
-- **Linear (default).** Annual charge = cost (less any estimated salvage value) / useful life in years. The useful life is set in years from the kind and conditions of use of the asset (art. 32(1) and (2)). The LIR and the ACD publish no table of rates per asset type, so the rate is 100% / useful life (a 4-year life gives 25%, a 5-year life 20%).
-- **Deferred linear (on request with the return).** The client may claim less than the linear charge in a year and carry the unclaimed part forward; the balance is deducted in the last year of the useful life. Not available with the forfait for operating expenses (art. 32(1a); ACD circular L.I.R. n° 32/1).
-- **Declining balance.** Allowed for tangible assets other than buildings, where the owner is also the user. The fixed rate on book value may not exceed 3 times the linear rate or 30%, whichever is lower (4 times and 40% for equipment used only for scientific or technical research). It needs the bookkeeping entries set by grand-ducal regulation. Switching from declining balance to linear is allowed; switching from linear to declining balance is not (art. 32(3) to (5)).
-- **Immediate write-off.** An asset with a useful life of one year or less, or an asset costing EUR 870 or less per item where the owner is also the user, may be written off in full in the year of acquisition (art. 34). Not for assets taken over with a business transfer.
-- **Building components.** Lifts, central heating, sanitary, lighting, air-conditioning and IT/internet cabling of a business building may be depreciated separately at up to 10% linear; declining balance is not allowed on buildings (ACD circular L.I.R. n° 32/2).
-- **Acquisition price.** Includes incidental costs (transport, assembly, customs) and excludes deductible input VAT; a public subsidy tied directly to the purchase reduces it (ACD circular L.I.R. n° 34/1).
-- **Extraordinary loss.** An extraordinary write-down is allowed for extraordinary technical or economic loss (art. 31).
-
-**Flag for reviewer:** Check the useful life the client has documented for each asset, and whether the first-year charge is time-apportioned.
-
-### 6.6 Self-Employed Combined Social Rate
-
-- 2026: 24.50% before accident insurance (Section 5.7); accident insurance 0.65% x factor on top
-
-**Flag for reviewer:** Confirm whether the 0.50% cash-benefit rate applies to the client.
-
-### 6.7 Split-Year Social Parameters
-
-- The SSM and contribution ceiling change on 1 June 2026; Jan–May and June–Dec figures differ
-
-**Flag for reviewer:** Confirm whether the period split materially affects the estimate for clients near the ceiling.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-LUXEMBOURG INCOME TAX -- FORM 100 WORKING PAPER
-Income Year: 2026
-Client: ___________________________
-Tax Class: 1 / 1a / 2        Status: Self-employed (indépendant) / Employee
-
-A. PROFESSIONAL INCOME (bénéfice)
-  A1. Client payments (net of VAT if registered)   ___________
-  A2. Platform payouts (Stripe, PayPal, etc.)       ___________
-  A3. Other business income                          ___________
-  A4. TOTAL professional income                      ___________
-
-B. OPERATING EXPENSES (dépenses d'exploitation)
-  B1. Office rent                                    ___________
-  B2. Professional insurance                         ___________
-  B3. Accountancy / legal / fiduciaire fees          ___________
-  B4. Office supplies                                ___________
-  B5. Software subscriptions                         ___________
-  B6. Marketing / advertising                        ___________
-  B7. Bank charges / payment processing fees         ___________
-  B8. Training / CPD / professional subs             ___________
-  B9. Travel (flights, hotels, transport)            ___________
-  B10. Telecoms (business % of phone/internet)       ___________
-  B11. Home office (% of utilities/rent)             ___________
-  B12. Vehicle expenses (business %)                 ___________
-  B13. Depreciation (amortissement, arts. 32/34)    ___________
-  B14. Other allowable expenses                      ___________
-  B15. TOTAL operating expenses                      ___________
-
-C. NET PROFESSIONAL PROFIT (A4 - B15)                ___________
-
-D. OTHER INCOME
-  D1. Employment income (wage tax already withheld)  ___________
-  D2. Rental income                                  ___________
-  D3. Investment income                              ___________
-  D4. TOTAL other income                             ___________
-
-E. SPECIAL EXPENSES / DEDUCTIONS (dépenses spéciales)
-  E1. CCSS contributions paid (excl. dependency)     ___________
-  E2. Other deductible special expenses              ___________
-  E3. TOTAL special expenses                         ___________
-
-F. TAXABLE INCOME (C + D4 - E3)                       ___________
-
-G. TAX COMPUTATION (pass to deterministic engine)
-  G1. PIT from 2026 scale (Section 1)                ___________
-  G2. Solidarity surcharge (7% / 9%)                 ___________
-  G3. Tax credits (CII / CI-CO2 / CIS / CIM)         ___________
-  G4. Advance payments made                          ___________
-  G5. Tax due / refund (G1 + G2 - G3 - G4)           ___________
-
-REVIEWER FLAGS:
-  [ ] Tax class confirmed (1 / 1a / 2)?
-  [ ] VAT registration / franchise scheme confirmed?
-  [ ] Home office arrangement confirmed?
-  [ ] Vehicle business % confirmed with mileage log?
-  [ ] Phone/internet business % confirmed?
-  [ ] Useful life documented; art. 34 EUR 870 test applied?
-  [ ] Self-employed CCSS combined rate confirmed?
-  [ ] Social ceiling / SSM split-year handled?
-  [ ] CCSS as special expense (not operating expense)?
-  [ ] Representation costs treatment confirmed?
+# Luxembourg personal income tax: residents and the self-employed (2026) v0.3
+
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Luxembourg.
+
+What matters for 2026:
+
+- **The scale did not change.** The LIR text in force on 1 January 2026 still carries the art. 118 scale set by the law of 20 December 2024 and first applied for 2025: 0% up to EUR 13,230, then 8% rising to 42% above EUR 234,870.
+- **CI-CO2 is EUR 216 a year** for employees and the self-employed (arts. 152ter and 154quater, as amended by the law of 19 December 2025).
+- **Pension contributions rose to 17% in total** (8.5% + 8.5% for employees; 17% for the self-employed), and the social parameters changed again on 1 June 2026 (CCSS).
+- **Deadline:** the 2026 return (Form 100) and the 2026 annual adjustment (Form 163 R / 163 NR) are due by 31 December 2027.
+
+This skill computes the annual tax of a resident individual. For non-residents, frontier workers, the 90% option and the impatriate regime use `lu-cross-border`. For monthly wage withholding use `luxembourg-payroll`. For the full contribution rules (self-employed base, voluntary insurance, minima) use `luxembourg-social-contributions`.
+
+## Who this applies to
+
+- **Residents.** An individual with a fiscal domicile or habitual stay in Luxembourg is taxed on worldwide income (art. 2(1) and (2) LIR). Non-residents are taxed only on Luxembourg-source income (art. 2(3), art. 156): see `lu-cross-border`.
+- **The self-employed (indépendants):** trade (art. 14), farming and forestry (art. 61) and liberal professions (art. 91), as sole operators. Profit is computed from accounts; this skill covers the income-tax side.
+- **Employees and pensioners.** Tax is withheld at source on the electronic tax card (`luxembourg-payroll`). Those not taxed by assessment may claim an annual adjustment (art. 145). Those taxed by assessment (for example with more than EUR 600 of other net income, or spouses who opted for joint taxation; art. 153(1)) file Form 100.
+- **Tax classes (art. 119):**
+  - Class 1: anyone not in class 1a or 2.
+  - Class 1a: unless in class 2, widowed persons; persons who get the child tax reduction (art. 122); persons who had completed their 64th year at the start of the tax year.
+  - Class 2: spouses taxed jointly (art. 3), partners taxed jointly (art. 3bis), persons widowed in the three preceding years, and persons divorced or separated in the three preceding years (if they did not use this rule in the five years before).
+- **Out of this skill:** companies, partnerships and holding structures (`lu-corporate-tax`); capital gains on real estate and substantial shareholdings; the participative premium and stock-option schemes; arrears under enforcement. Escalate these to a Luxembourg tax adviser.
+
+## Rates, bands and thresholds
+
+**Income tax scale, all classes (art. 118 LIR; taxable income first rounded down to a multiple of EUR 50, art. 126(2)).** Source: [LIR, consolidated text in force on 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf). Tax years 2025 and 2026.
+
+| Taxable income (EUR) | Rate | Cumulative tax at top of band (EUR) |
+|---|---|---|
+| 0 to 13,230 | 0% | 0.00 |
+| 13,230 to 15,435 | 8% | 176.40 |
+| 15,435 to 17,640 | 9% | 374.85 |
+| 17,640 to 19,845 | 10% | 595.35 |
+| 19,845 to 22,050 | 11% | 837.90 |
+| 22,050 to 24,255 | 12% | 1,102.50 |
+| 24,255 to 26,550 | 14% | 1,423.80 |
+| 26,550 to 28,845 | 16% | 1,791.00 |
+| 28,845 to 31,140 | 18% | 2,204.10 |
+| 31,140 to 33,435 | 20% | 2,663.10 |
+| 33,435 to 35,730 | 22% | 3,168.00 |
+| 35,730 to 38,025 | 24% | 3,718.80 |
+| 38,025 to 40,320 | 26% | 4,315.50 |
+| 40,320 to 42,615 | 28% | 4,958.10 |
+| 42,615 to 44,910 | 30% | 5,646.60 |
+| 44,910 to 47,205 | 32% | 6,381.00 |
+| 47,205 to 49,500 | 34% | 7,161.30 |
+| 49,500 to 51,795 | 36% | 7,987.50 |
+| 51,795 to 54,090 | 38% | 8,859.60 |
+| 54,090 to 117,450 | 39% | 33,570.00 |
+| 117,450 to 176,160 | 40% | 57,054.00 |
+| 176,160 to 234,870 | 41% | 81,125.10 |
+| above 234,870 | 42% | |
+
+**How each class uses the scale.**
+
+| Class | Computation | Source |
+|---|---|---|
+| 1 | Scale applied to adjusted taxable income | [LIR art. 120](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
+| 1a | Scale applied to income reduced by a quarter of its shortfall below EUR 79,380, with the marginal rate capped at 39% from EUR 51,804 to 117,450, then 40%, 41% and 42% as in the scale | LIR art. 120bis (same URL) |
+| 2 | Twice the tax on half the income (splitting) | LIR art. 121 (same URL) |
+
+**Other figures (tax year 2026).**
+
+| Item | Amount | Source |
+|---|---|---|
+| Employment fund surcharge | 7% of the income tax; 9% where adjusted taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2) | [ACD, fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html) |
+| Employee credit (CIS) | EUR 300 + (gross - 936) x 0.029 for gross EUR 936 to 11,265; EUR 600 for 11,266 to 40,000; 600 - (gross - 40,000) x 0.015 for 40,001 to 79,999; nil from 80,000 | [LIR art. 154quater](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
+| CO2 credit (CI-CO2), employees and self-employed | EUR 216 for income EUR 936 to 40,000; 216 - (income - 40,000) x 0.0054 for 40,001 to 79,999; nil from 80,000 | LIR arts. 152ter and 154quater (same URL) |
+| Self-employed credit (CII) | Same bands as the CIS, on net profit; EUR 300 where net profit is under EUR 936; needs compulsory social-security affiliation for that profit; not combined with the CIS or the pensioner credit | LIR art. 152ter (same URL) |
+| Minimum-wage credit (CISSM), employees | EUR 81 a month for monthly gross EUR 1,800 to 3,000; 81 / 600 x (3,600 - gross) from 3,000 to 3,600; nil from 3,600 | LIR art. 139quater (same URL) |
+| Single-parent credit (CIM) | EUR 3,504 below adjusted taxable income EUR 60,000; 3,504 - (income - 60,000) x 0.0612 from 60,000 to 105,000; EUR 750 above 105,000; reduced by 50% of child maintenance above EUR 2,712 a year | LIR art. 154ter (same URL) |
+| Child tax reduction as a rebate (no family allowance paid) | EUR 922.50 per child | LIR art. 122(3) (same URL) |
+| Flat deduction, employment expenses | EUR 540 (pensions EUR 300; investment income EUR 25) | LIR art. 107 (same URL) |
+| Flat home-to-work deduction (employees) | EUR 99 per distance unit above 4 units, maximum EUR 2,574 | LIR art. 105bis (same URL) |
+| Flat deduction, special expenses | EUR 480 (art. 113(1)); does not cover compulsory social contributions, which are deducted in full | LIR arts. 110 and 113 (same URL) |
+| Extra-professional abatement, couples both working | EUR 4,500 | LIR art. 129b (same URL) |
+| Immediate write-off of low-value assets | EUR 870 per item (owner-user) | LIR art. 34 (same URL) |
+| Declining-balance cap | Lower of 3 x the linear rate and 30% (4 x and 40% for research equipment) | LIR art. 32(3) (same URL) |
+| Building components (lifts, heating, sanitary, lighting, air-conditioning, IT cabling) | Up to 10% linear, no declining balance | [ACD circular L.I.R. n° 32/2](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi22/lir-32-2-du-3052022.pdf) |
+| Late-payment interest | 0.6% a month; 0.1% or 0.2% a month under an agreed payment plan | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
+| Late-filing surcharge | Up to 10% of the tax | same URL |
+
+**Social contributions (2026), for the tax computation only.** Full rules in `luxembourg-social-contributions`.
+
+| Item | Amount | Source |
+|---|---|---|
+| Employee share | Pension 8.50%, sickness 2.80%, cash-benefit surcharge 0.25%, dependency 1.40% (total 12.95%) | [CCSS notice of 16 January 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) |
+| Self-employed | Pension 17.00%, sickness 5.60%, cash benefits 0.50% where covered, dependency 1.40% (24.50% before accident insurance); accident 0.65% x factor | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
+| Monthly ceiling (5 x SSM) | EUR 13,518.68 from 1 January 2026; EUR 13,856.63 from 1 June 2026 | CCSS notices of [16 January](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf) and [14 August 2026](https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf) |
+| Social minimum wage, unskilled, 18+ | EUR 2,703.74 a month from 1 January 2026; EUR 2,771.33 from 1 June 2026 | same notices |
+| Dependency abatement | EUR 675.93 a month from 1 January 2026; EUR 692.83 from 1 June 2026; the dependency contribution has no ceiling | same notices |
+
+**VAT figures a self-employed client needs.** Franchise up to EUR 50,000 of annual turnover from 1 January 2025; a business that crosses it keeps the franchise to the end of that year if turnover stays within EUR 55,000, and loses it the next year ([AED, régime de franchise](https://pfi.public.lu/fr/professionnel/tva/sme.html)). Rates: 17% standard, 14% intermediate, 8% reduced, 3% super-reduced ([AED, taux nationaux](https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html)). For returns use `luxembourg-vat-return`.
+
+## The taxable base
+
+Work in this order.
+
+1. **Net income per category.** Business profit, employment income less expenses (at least the art. 107 flat EUR 540 and the art. 105bis travel deduction), pensions, investment income, rental income. Residents include foreign income; income exempt under a treaty with a progression clause sets the rate (art. 134).
+2. **Less special expenses.** Compulsory health, accident and pension contributions are deducted in full (art. 110 nos. 1 and 2). The dependency contribution is not on that list and is not deducted. Other special expenses (interest, insurance premiums, pension savings) are deducted as claimed, at least the EUR 480 flat amount (art. 113). Business losses of the 17 preceding years carry forward, oldest first, if regular accounts were kept; losses from years closed 1991 to 2016 have no time limit (art. 114).
+3. **Less abatements** (arts. 127 to 130), such as the EUR 4,500 extra-professional abatement for couples who both work (art. 129b).
+4. **Round down** to a multiple of EUR 50 (art. 126(2)), apply the scale for the class, add the employment fund surcharge, then deduct credits (CII, CIS, CI-CO2, CIM) and withholding and advances already paid.
+
+**Business expenses.** An expense is deductible only if the business alone caused it (art. 45(1)); expenses linked to exempt income are not (art. 45(2)). Never deductible: household and lifestyle costs, including spending driven by the client's social or economic position even when it helps the business (art. 12 no. 1); gifts (art. 12 no. 2); income tax and net wealth tax (art. 12 no. 3a); fines and penalties (art. 12 no. 4). Pay to the operator or to a spouse taxed jointly is not an expense (art. 48 no. 3). Home-to-work travel of the self-employed is deductible only within the limits of the grand-ducal regulation under art. 46 no. 9.
+
+**Representation costs.** The LIR sets no fixed percentage. A client meal is deductible only with a named guest and a business purpose (art. 45(1)); without them it is private (art. 12 no. 1). The client's own share of a meal is private.
+
+**Mixed-use costs** (car, phone, home office): deduct only the business share on a documented basis (mileage log, floor area of a room used only for work). Default 0% until the client documents it.
+
+**Depreciation.**
+
+- **Linear.** Cost (less any salvage value) spread equally over the useful life remaining from the start of the year (art. 32(1)). The useful life is set in years from the kind and conditions of use of the asset (art. 32(2)). The LIR and the ACD publish no table of rates by asset type; the rate is 100% divided by the useful life.
+- **Deferred linear.** On request with the return, the client may deduct less than the linear charge and carry the unused part forward; the balance is deducted in the last year of the useful life (art. 32(1a); [ACD circular L.I.R. n° 32/1](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi18/circulairelir32-1du15052018-amortissement-differe.pdf)).
+- **Declining balance.** Tangible assets other than buildings, where the owner is the user, at a fixed rate on book value capped at the lower of 3 x the linear rate and 30%; it needs the bookkeeping entries set by regulation. Switching to linear is allowed; switching from linear to declining balance is not (art. 32(3) to (5)).
+- **Immediate write-off.** An asset with a useful life of one year or less, or costing EUR 870 or less per item where the owner is the user, may be written off in the year of acquisition; not for assets taken over with a business (art. 34).
+- **Year of acquisition.** Depreciation runs in principle from purchase or entry into service. As a simplification, a full year may be taken for an asset bought in the first half of the year and half a year for one bought in the second half ([Guichet.lu, résultat d'exploitation](https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/entreprise-individuelle-societe-personne/calcul-resultat-exploitation.html)).
+- **Acquisition price** includes transport, assembly and customs; it excludes input VAT the client can deduct and includes VAT it cannot; a public subsidy tied directly to the purchase reduces it ([ACD circular L.I.R. n° 34/1](https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lir-n-34-1-du-19-juin-1998.pdf)).
+- **Extraordinary write-down** for extraordinary technical or economic loss (art. 31).
+
+**VAT and profit.** For a VAT-registered client, VAT collected is not income and recoverable input VAT is not an expense; blocked input VAT and foreign VAT that cannot be reclaimed are part of the cost. A client under the franchise records income and purchases gross.
+
+**Classifying a bank statement.** Merchant names never decide business use on their own.
+
+| Bank text | Treatment |
+|---|---|
+| Client transfers (VIREMENT, VIR, ÜBERWEISUNG), HONORAIRES, Stripe, PayPal, Wise, Upwork, Malt payouts | Business income, net of VAT if registered; match payouts to invoices |
+| SALAIRE, GEHALT, PAYROLL | Employment income, tax already withheld |
+| LOYER REÇU, MIETE; INTÉRÊTS, DIVIDENDE | Rental or investment income (separate categories) |
+| AIDE, SUBVENTION | Subsidy tied to an asset reduces its cost (circular 34/1); an operating subsidy is income |
+| Office rent, RC Pro insurance, fiduciaire and legal fees, software subscriptions, ads, training, bank and payment fees | Operating expense (art. 45(1)) |
+| ENOVOS, POST, TANGO, ORANGE, fuel, parking | Business share only |
+| RESTAURANT, DÉJEUNER CLIENT | Blocked until guest and purpose are documented |
+| Groceries, personal spending, drawings | Not deductible (art. 12 no. 1) |
+| AMENDE, PÉNALITÉ | Not deductible (art. 12 no. 4) |
+| ACD, IMPÔT, AVANCE | Not an expense; advances are credited against the tax |
+| CCSS COTISATIONS | Special expense, not an operating expense; take out the dependency part |
+| TVA payments, own-account transfers, loan principal | Exclude |
+| Laptop, furniture, car | EUR 870 test (art. 34), else capitalise and depreciate (art. 32) |
+
+## Deadlines and filing
+
+| Item | Rule | Source |
+|---|---|---|
+| Tax year | Calendar year | [LIR art. 1(2)](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
+| Annual return | Form 100 (modèle 100), online through MyGuichet.lu with LuxTrust, as a PDF through MyGuichet, or on paper | [ACD, formulaires personnes physiques](https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html) |
+| Return deadline | 31 December of the following year (from tax year 2022); tax year 2026 is due 31 December 2027 | [ACD, délais de dépôt](https://impotsdirects.public.lu/fr/az/d/delais/depot.html) |
+| Annual adjustment (employees and pensioners not taxed by assessment) | Form 163 R (residents) or 163 NR (non-residents), by 31 December of the following year; the ACD page gives 31 December 2026 for tax year 2025 | [ACD, décompte annuel](https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html); LIR art. 145 |
+| Quarterly advances | 10 March, 10 June, 10 September, 10 December of the tax year; each in principle a quarter of the last assessed tax after withholding; the ACD may change them on request or of its own motion | [LIR art. 135](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
+| Balance on assessment | Due by the end of the month after the month the assessment notice (bulletin d'impôt) is received | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
+
+## Penalties and interest
+
+- **Late filing:** the tax office can add a supplement of up to 10% of the tax. If the return is still missing, it sets a final deadline and then a penalty payment (astreinte) whose amount it announces in advance ([ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html)).
+- **Late payment:** interest at 0.6% a month from the end of the month after the assessment notice is received; also on a late advance. Under an agreed payment plan the rate is 0.1% or 0.2% a month (same source).
+- **No return at all:** the tax office assesses by estimate.
+- A client with arrears under enforcement goes to a Luxembourg tax adviser.
+
+## Cross-border points
+
+- **Non-residents** are taxed only on Luxembourg-source income (arts. 2(3) and 156); their classes, the 90% option (art. 157ter) and frontier-worker rules are in `lu-cross-border`.
+- **Residents with foreign income:** income exempt under a treaty is still counted to set the rate (exemption with progression, art. 134).
+- **Impatriates** (art. 115 no. 13b): `lu-cross-border`.
+- **Social security** of people working in more than one state (Reg. 883/2004, telework agreement): `lu-cross-border`.
+- **Foreign VAT** the client cannot reclaim is part of the cost.
+
+## Worked examples
+
+Both examples are 2026 estimates for residents. The client paid no advances and has no other income. Pass the taxable income to the deterministic engine for the filed figure.
+
+### Example 1: single self-employed consultant, class 1
+
+A single consultant, no children, aged 40, class 1. Net profit for 2026 is EUR 60,000. She paid EUR 13,000 of compulsory health, accident and pension contributions to the CCSS and EUR 750 of dependency contribution. She has no other special expenses.
+
+**Taxable income.** Profit 60,000 less contributions 13,000 (art. 110 no. 2; the 750 dependency contribution is not deductible) less the EUR 480 flat special-expense deduction (art. 113) = 46,520, rounded down to EUR 46,500 (art. 126(2)).
+
+**Tax.** Cumulative tax at EUR 44,910 is 5,646.60. The remaining 1,590 is taxed at 32% = 508.80. Income tax = **6,155.40**. Surcharge at 7% (income under EUR 150,000) = 430.88. Total = 6,586.28.
+
+**Credits.** Net profit is between EUR 40,001 and 79,999. CII = 600 - (60,000 - 40,000) x 0.015 = 300.00. CI-CO2 = 216 - 20,000 x 0.0054 = 108.00. Tax payable = 6,586.28 - 408.00 = **EUR 6,178.28**.
+
+```oa-check
+name: LU class 1, self-employed, net profit EUR 60,000 (2026)
+inputs:
+  profit: 60000
+  contributions: 13000
+  forfait: 480
+steps:
+  - taxable: floor((profit - contributions - forfait) / 50) * 50
+  - tax: 5646.60 + (taxable - 44910) * 0.32
+  - surcharge: round(tax * 0.07, 2)
+  - total: tax + surcharge
+  - cii: 600 - (profit - 40000) * 0.015
+  - co2: 216 - (profit - 40000) * 0.0054
+  - payable: total - cii - co2
+expected:
+  taxable: 46500
+  tax: 6155.40
+  surcharge: 430.88
+  total: 6586.28
+  cii: 300.00
+  co2: 108.00
+  payable: 6178.28
 ```
 
-### Luxembourg Bank Statement Formats
+### Example 2: married sole earner, class 2, with capital assets
 
-**Bank Statement Formats table**
+Spouses taxed jointly, class 2. Only one spouse works, as a self-employed engineer, so there is no extra-professional abatement. Profit before depreciation is EUR 92,000. On 1 January 2026 the engineer put into service equipment costing EUR 12,000 net of deductible VAT, useful life 5 years, booked on declining balance. The same day he bought a monitor for EUR 450 net. He paid EUR 19,000 of compulsory health, accident and pension contributions.
 
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BCEE (Spuerkeess) | PDF, CSV | Date, Libellé/Description, Débit, Crédit, Solde | Most common; FR/DE descriptions |
-| BIL | PDF, CSV | Date valeur, Libellé, Montant, Solde | Counterparty in description |
-| BGL BNP Paribas | PDF, CSV | Date, Opération, Débit, Crédit, Solde | Card transactions show merchant |
-| ING Luxembourg | PDF, CSV | Date, Description, Amount, Balance | English labels common |
-| Revolut / Wise Business | CSV | Date, Counterparty, Amount, Currency, Reference | Clean data; multi-currency -- use EUR |
+**Depreciation.** Linear rate 20%; declining-balance rate capped at the lower of 3 x 20% and 30%, so 30% (art. 32(3)): 12,000 x 30% = 3,600. The asset entered service on 1 January, so a full year applies. The monitor costs under EUR 870 and is written off in full: 450 (art. 34). Profit = 92,000 - 3,600 - 450 = 87,950.
 
-### Key Luxembourg / French / German Banking Terms
+**Taxable income.** 87,950 - 19,000 - 480 = 68,470, rounded down to EUR 68,450.
 
-**Banking Terms table**
+**Tax.** Class 2 takes twice the tax on half the income (art. 121). Half = 34,225. Tax on the half = 2,663.10 + (34,225 - 33,435) x 22% = 2,836.90. Doubled = **5,673.80**. Surcharge at 7% (income under EUR 300,000) = 397.17. Total = 6,070.97.
 
-| Term | English | Classification Hint |
-| --- | --- | --- |
-| VIREMENT / VIR / ÜBERWEISUNG | Transfer | Check direction for income/expense |
-| DOMICILIATION / PRÉLÈVEMENT / LASTSCHRIFT | Direct debit | Regular expense (utility, subscription) |
-| ORDRE PERMANENT / DAUERAUFTRAG | Standing order | Regular expense (rent, loan) |
-| CARTE / KARTE / ACHAT CARTE | Card payment | Expense -- check merchant |
-| CRÉDIT / GUTSCHRIFT | Credit | Potential income |
-| FRAIS / SPESEN | Bank charges | Deductible operating expense |
-| INTÉRÊTS / ZINSEN | Interest | Interest income or bank charge |
-| RETRAIT / ATM | Cash withdrawal | Ask what cash was spent on |
-| CCSS | Social-security body | Social-contribution deduction (special expense) |
-| ACD / AED | Tax authorities | Tax payment / refund -- not income/expense |
+**Credits.** Net profit is EUR 80,000 or more, so there is no CII and no CI-CO2 (art. 152ter(2)). Tax payable = **EUR 6,070.97**.
 
-## Section 9 -- Onboarding Fallback
+The edge cases: the declining-balance cap, the EUR 870 write-off, the splitting, and the credit cut-off at EUR 80,000 of profit. Had the equipment been bought in the second half of the year, only half a year's charge (1,800) would apply under the Guichet.lu simplification.
 
-If the client provides a bank statement but cannot answer onboarding questions immediately:
-
-1. Classify all transactions using the pattern library (Section 3)
-2. Mark all Tier 2 items as "PENDING -- reviewer must confirm"
-3. Apply conservative defaults (Section 1)
-4. Generate the working paper (Section 7) with clear flags
-5. Present the following questions to the client:
-
-```
-ONBOARDING QUESTIONS -- LUXEMBOURG INCOME TAX
-1. Tax class: 1 (single), 1a (single with child / widowed / 64 or over at 1 January), or 2 (married/partnered joint)?
-2. Status: fully self-employed (indépendant) or employee (or both)?
-3. VAT: do you charge VAT, or are you under the franchise (turnover up to EUR 50,000)?
-4. Home office: dedicated room or shared space? If dedicated, what % of floor area?
-5. Vehicle: do you use a car for business? What % is business use? Mileage log kept?
-6. Phone/internet: what % is business use?
-7. CCSS social contributions: total amount paid in the income year?
-8. Advance tax payments: total paid in the year (10 Mar / Jun / Sep / Dec)?
-9. Any other income (employment, rental, dividends, interest)?
-10. Any capital assets purchased during the year (for depreciation)?
-11. Dependent children / family situation (affects class 1a/2 and CIM credit)?
+```oa-check
+name: LU class 2, sole earner, depreciation and splitting (2026)
+inputs:
+  profit_before_dep: 92000
+  equipment: 12000
+  life: 5
+  monitor: 450
+  contributions: 19000
+  forfait: 480
+steps:
+  - db_rate: min(3 / life, 0.30)
+  - depreciation: equipment * db_rate
+  - writeoff: monitor
+  - profit: profit_before_dep - depreciation - writeoff
+  - taxable: floor((profit - contributions - forfait) / 50) * 50
+  - half: taxable / 2
+  - tax_half: 2663.10 + (half - 33435) * 0.22
+  - tax: tax_half * 2
+  - surcharge: round(tax * 0.07, 2)
+  - payable: tax + surcharge
+expected:
+  depreciation: 3600.00
+  profit: 87950
+  taxable: 68450
+  tax: 5673.80
+  surcharge: 397.17
+  payable: 6070.97
 ```
 
-## Section 10 -- Reference Material
+## Ask the client first
 
-### Key Legislation and Authority References
+1. Family situation on 1 January 2026: single, married or partnered (and do you file jointly), widowed, divorced or separated in the last three years; children in the household and their ages; your age. This sets the class (1, 1a or 2) and the credits.
+2. What income did you have in 2026: self-employed profit, salary, pension, rent, interest or dividends, and any income from abroad?
+3. For self-employed profit: are you VAT-registered or under the franchise, which assets did you buy (price, date, useful life), and which costs are partly private (car, phone, home office)?
+4. What did you pay to the CCSS in 2026, split between health, accident, pension and dependency?
+5. Which advances did you pay on 10 March, June, September and December, and did an employer withhold tax?
+6. Do you live or work partly outside Luxembourg? If yes, use `lu-cross-border` first.
 
-**Key Legislation and Authority References**  _(LIR -- Loi modifiée du 4 décembre 1967; Code de la sécurité sociale; CCSS)_
+## Sources
 
-| Topic | Reference | Source |
-| --- | --- | --- |
-| Income tax law (barème, classes, deductions) | LIR -- Loi modifiée du 4 décembre 1967 | [LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Social contributions | Code de la sécurité sociale; CCSS | [CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html) |
-| Scale for 2025 and 2026 | LIR art. 118 as amended by the law of 20 December 2024 | [LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
-| Annual return | Form 100 (modèle 100), MyGuichet.lu | [ACD, formulaires personnes physiques](https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html) |
-| Employee annual adjustment | Form 163 R / 163 NR (décompte annuel) | [ACD, décompte annuel](https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html) |
-| Direct tax authority | Administration des contributions directes (ACD) | [ACD](https://impotsdirects.public.lu) |
-| Social-security authority | Centre commun de la sécurité sociale (CCSS); CNS; CNAP | [CCSS](https://ccss.public.lu) |
-| Penalties | Late filing up to 10%; penalty payment; interest 0.6%/month | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
-| Depreciation | LIR arts. 28 to 34; ACD circulars L.I.R. n° 32/1, 32/2, 34/1 | [LIR](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf); [circular 32/2](https://impotsdirects.public.lu/dam-assets/fr/legislation/legi22/lir-32-2-du-3052022.pdf); [circular 34/1](https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lir-n-34-1-du-19-juin-1998.pdf) |
-| VAT franchise and rates | LTVA arts. 39, 40, 57 to 57quater | [AED, régime de franchise SME](https://pfi.public.lu/fr/professionnel/tva/sme.html); [AED, taux nationaux](https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html) |
+| Source | URL | Read on |
+|---|---|---|
+| LIR, consolidated text in force on 1 January 2026 (ACD, updated 8 May 2026): arts. 1, 2, 12, 31, 32, 34, 45, 46, 48, 105bis, 107, 110, 113, 114, 118 to 123, 126, 129b, 134, 135, 139quater, 145, 152ter, 153, 154ter, 154quater | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
+| ACD circular L.I.R. n° 32/1 of 15 May 2018 (deferred depreciation) | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi18/circulairelir32-1du15052018-amortissement-differe.pdf | 2026-10-23 |
+| ACD circular L.I.R. n° 32/2 of 30 May 2022 (building components, 10%) | https://impotsdirects.public.lu/dam-assets/fr/legislation/legi22/lir-32-2-du-3052022.pdf | 2026-10-23 |
+| ACD circular L.I.R. n° 34/1 of 19 June 1998 (low-value assets, acquisition price) | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lir-n-34-1-du-19-juin-1998.pdf | 2026-10-23 |
+| Guichet.lu, résultat d'exploitation d'une entreprise individuelle (year-of-acquisition simplification; page last changed 11 June 2018) | https://guichet.public.lu/fr/entreprises/fiscalite/impots-benefices/benefices-patrimoine/entreprise-individuelle-societe-personne/calcul-resultat-exploitation.html | 2026-10-23 |
+| ACD, fonds pour l'emploi (7% / 9%) | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
+| ACD, délais de dépôt (31 December of the following year) | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
+| ACD, formulaires personnes physiques (Form 100, MyGuichet) | https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html | 2026-10-23 |
+| ACD, décompte annuel (Forms 163 R and 163 NR, deadline) | https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html | 2026-10-23 |
+| ACD, prélèvements supplémentaires (10% supplement, astreinte, 0.6% interest) | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
+| CCSS, avis aux employeurs, taux de cotisation au 1 January 2026 (abatement EUR 675.93) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260116-avis-80-99-fr-de.pdf | 2026-10-23 |
+| CCSS, avis aux employeurs, minima et maximum au 1 June 2026 (abatement EUR 692.83) | https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf | 2026-10-23 |
+| CCSS, paramètres sociaux (rates, SSM, ceiling) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
+| AED, régime de franchise (EUR 50,000 / 55,000 from 2025) | https://pfi.public.lu/fr/professionnel/tva/sme.html | 2026-10-23 |
+| AED, taux nationaux (17 / 14 / 8 / 3%) | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
 
-### Key Numbers at a Glance (2026)
-
-| Item | Value | Source |
-| --- | --- | --- |
-| PIT tax-free threshold (class 1) | EUR 13,230 | LIR art. 118 |
-| Top marginal rate | 42% above EUR 234,870 | LIR art. 118 |
-| Solidarity surcharge | 7% (9% above adjusted taxable income EUR 150,000 class 1/1a; EUR 300,000 class 2) | ACD, Fonds pour l'emploi |
-| Employee social total | 12.95% | CCSS, paramètres sociaux |
-| Employer social total (excl. MDE, accident factor 1.0) | 12.34% | CCSS, paramètres sociaux |
-| Self-employed total before accident insurance | 24.50% | CCSS, paramètres sociaux |
-| Social ceiling | EUR 13,518.68/month (Jan to May 2026); EUR 13,856.63/month (from 1 June 2026) | CCSS, paramètres sociaux |
-| SSM unskilled | EUR 2,703.74/month (Jan to May 2026); EUR 2,771.33/month (from 1 June 2026) | CCSS, paramètres sociaux |
-| VAT franchise threshold | EUR 50,000 turnover (tolerance to EUR 55,000 in the year crossed) | AED, régime de franchise SME |
-| Dependency abatement | EUR 675.93/month (from 1 January 2026); EUR 692.83/month (from 1 June 2026) | CCSS notices of 16 January and 14 August 2026 |
-| Immediate write-off limit | EUR 870 per item (owner-user) | LIR art. 34 |
-
-### Caveats and Open Items
-
-- Employer accident insurance (0.65% in 2026) is multiplied by a firm-specific bonus-malus factor, and the MDE class depends on the employer's absenteeism. Exact employer cost varies by employer.
-- Social parameters change on 1 June 2026 (indexation): SSM, ceiling and dependency abatement differ between January to May and June to December.
-- The LIR and the ACD publish no depreciation rate per asset type; the rate follows from the useful life the client documents (Section 6.5).
-- Not yet confirmed: whether a first-year depreciation charge must be time-apportioned for months held (the LIR text does not say); the VAT rates page of the AED was last updated 28 December 2023, and the consolidated LTVA on Legilux could not be read for 2026.
-
-### Test Suite
-
-#### Test 1 -- Single freelancer, mid-range income.
-
-Input: Class 1, taxable income EUR 45,000.
-Expected: PIT = EUR 5,675.40 (cum. EUR 5,646.60 at EUR 44,910 + EUR 90 × 32% = EUR 28.80). Surcharge 7% = EUR 397.28. Total = EUR 6,072.68.
-
-#### Test 2 -- Single freelancer at top of 0% band.
-
-Input: Class 1, taxable income EUR 13,230.
-Expected: PIT = EUR 0.00. Surcharge = EUR 0.00. Total = EUR 0.00 (threshold fully within the 0% band).
-
-#### Test 3 -- Single, EUR 60,000.
-
-Input: Class 1, taxable income EUR 60,000.
-Expected: PIT = EUR 11,164.50 (cum. EUR 8,859.60 at EUR 54,090 + EUR 5,910 × 39% = EUR 2,304.90). Surcharge 7% = EUR 781.52 (EUR 781.515 rounded). Total = EUR 11,946.02.
-
-#### Test 4 -- Higher-rate surcharge threshold.
-
-Input: Class 1, taxable income EUR 150,000.
-Expected: PIT = EUR 46,590.00 (cum. EUR 33,570.00 at EUR 117,450 + EUR 32,550 × 40% = EUR 13,020.00). Surcharge 7% (income not above EUR 150,000) = EUR 3,261.30. Total = EUR 49,851.30. Above EUR 150,000 the surcharge steps up to 9%.
-
-#### Test 5 -- Employee monthly social contributions.
-
-Input: Employee, monthly gross EUR 4,000 (below ceiling).
-Expected (January to May 2026): capped contributions (pension 8.5% + health 2.8% + 0.25% = 11.55% × 4,000) = EUR 462.00; dependency 1.4% × (4,000 − 675.93) = EUR 46.54. Total employee SSC = EUR 508.54.
-
-#### Test 6 -- Dependency contribution uses abatement and is uncapped.
-
-Input: Monthly professional income EUR 5,000 in March 2026.
-Expected: dependency base = 5,000 − 675.93 = EUR 4,324.07; × 1.4% = EUR 60.54. In October 2026 the base is 5,000 − 692.83 = EUR 4,307.17; × 1.4% = EUR 60.30. (No ceiling applied to dependency.)
-
-#### Test 7 -- VAT extraction on income (registered).
-
-Input: Client payment EUR 1,170 gross, standard 17% VAT.
-Expected: net income = EUR 1,000.00; VAT EUR 170.00 excluded.
-
-#### Test 8 -- CCSS classified as special expense, not operating expense.
-
-Input: CCSS payment EUR 2,909.34 placed in the operating-expense column.
-Expected: Move to special-expense deduction (E1). Do NOT include in operating expenses.
-
-## PROHIBITIONS
-
-- NEVER apply a rate table without knowing the tax class -- default to class 1 and flag
-- NEVER compute final tax figures as definitive -- always pass taxable income to the deterministic engine and label outputs as estimated
-- NEVER omit the employment-fund (solidarity) surcharge on PIT
-- NEVER apply the 9% surcharge below EUR 150,000 (class 1/1a) or EUR 300,000 (class 2)
-- NEVER quote the self-employed 24.50% without adding accident insurance and checking whether the 0.50% cash-benefit rate applies
-- NEVER treat CCSS contributions as an operating expense -- they are a special-expense deduction
-- NEVER include VAT collected on sales in income for VAT-registered clients
-- NEVER expense a capital asset in full -- capitalise and depreciate per the LIR
-- NEVER invent a useful life -- take it from the client's asset facts, then apply the art. 32 caps (declining balance at most 3x linear and 30%)
-- NEVER allow personal living costs, fines, penalties, or income tax itself as a deduction
-- NEVER apply the dependency-insurance ceiling -- that contribution is uncapped
-- NEVER mix the January to May and June 2026 social ceilings without noting the split
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu page (last changed 2018, and it still says depreciation cannot be deferred, which art. 32(1a) has allowed since 2017); neither the LIR nor an ACD circular states it, so a reviewer must confirm current ACD practice before a part-year charge is filed. Whether the ACD smooths the step from 7% to 9% surcharge just above EUR 150,000 / 300,000 on assessment (the ACD page shows a plain step). The AED rates page was last updated 28 December 2023, and the consolidated VAT law (LTVA) was not read for 2026.
