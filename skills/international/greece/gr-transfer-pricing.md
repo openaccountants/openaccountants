@@ -16,7 +16,7 @@ Source-cited draft: not reviewed by an accountant, not for filing.
 
 Greek transfer pricing rules sit in two codes. The Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ΚΦΕ, ν. 4172/2013) defines connected persons (art. 2(ζ)) and sets the arm's length rule (art. 50) and the rule for business restructurings (art. 51). The Tax Procedure Code (Κώδικας Φορολογικής Διαδικασίας, ΚΦΔ) sets the documentation file and Summary Information Table (art. 25), advance pricing agreements (art. 26) and the fines (arts. 55 and 56).
 
-**Renumbering.** The Tax Procedure Code was re-enacted as ν. 5104/2024 (Α' 58). The old numbers in ν. 4174/2013 still appear in older guidance and in many firms' templates. AADE's correspondence table maps them: old art. 21 is now art. 25 (documentation file), old art. 22 is now art. 26 (APA), old art. 56 is now art. 55 (documentation fines) and old art. 56A is now art. 56 (country-by-country and DAC6 fines). The AADE codification read for this skill is updated to ν. 5259/2025 (Α' 228/12.12.2025). It does not mention a ν. 5193/2025, and no 2025 or 2026 change to the transfer pricing articles was found in it.
+**Renumbering.** The Tax Procedure Code was re-enacted as ν. 5104/2024 (Α' 58). The old numbers in ν. 4174/2013 still appear in older guidance and in many firms' templates. AADE's correspondence table maps them: old art. 21 is now art. 25 (documentation file), old art. 22 is now art. 26 (APA), old art. 56 is now art. 55 (documentation fines) and old art. 56A is now art. 56 (country-by-country and DAC6 fines). The AADE codification read for this skill (circular Ε.2109/2025) is updated to ν. 5259/2025 (Α' 228/12.12.2025). It shows no amendment by a 2025 law to arts. 25, 26, 54, 55 or 56.
 
 Related skills: `gr-corporate-income-tax` (the 22% rate, the taxable base, the return), `gr-cross-border` (residence, withholding, the company exit tax of art. 66A), `gr-income-tax` (individuals). This skill does not repeat them.
 
@@ -74,9 +74,9 @@ A taxpayer under these limits keeps no file and files no Summary Information Tab
 
 **Restructurings (ΚΦΕ art. 51).** A transfer or licence of goodwill or intangibles in a restructuring is paid for at arm's length, valuing the whole transfer package. No adjustment follows if the taxpayer shows that no significant intangibles or assets were transferred or licensed and that arm's length payment was made. If it cannot show this and no comparable exists, the price is set on the whole package, taking account of the present value of expected future profits. The taxpayer may use another method if it shows the result is at arm's length. The adjustment is made for the year of the restructuring.
 
-**The file (ΚΦΔ art. 25(3) to (5)).** The file consists, as the case requires, of a Master File (Βασικός Φάκελος Τεκμηρίωσης) and a Greek Local File (Ελληνικός Φάκελος Τεκμηρίωσης). It must include a chapter on events that affect its information because of a change in market conditions; the taxpayer updates it by the end of the tax year in which the change happens. A file can be reused for the next year if it is updated with all needed changes. The exact content of the file, the Master File, the Local File and the ΣΠΠ, when a file counts as incomplete, and the accepted methods are set by decision of the AADE Governor (ΚΦΔ art. 83(29)). This skill does not set out that decision's content.
+**The file (ΚΦΔ art. 25(3) to (5)).** The file consists, as the case requires, of a Master File (Βασικός Φάκελος Τεκμηρίωσης) and a Greek Local File (Ελληνικός Φάκελος Τεκμηρίωσης). It must include a chapter on events that affect its information because of a change in market conditions; the taxpayer updates it by the end of the tax year in which the change happens. A file can be reused for the next year if it is updated with all needed changes. The exact content of the file, the Master File, the Local File and the ΣΠΠ, when a file counts as incomplete, and the accepted methods are set by decision of the AADE Governor (ΚΦΔ art. 83(29)). AADE's transfer pricing page lists ΠΟΛ 1097/2014 (Β' 883/9.4.2014), issued under old art. 21, and its amendment ΠΟΛ 1144/2014 as the decisions on the file's content. This skill does not set out their content. The same power lets the Governor set a simplified procedure for micro and small entities and exemptions for micro entities (art. 83(29)).
 
-**Interest, guarantees and other financial transactions.** Greece applies the OECD guidelines (ΚΦΕ art. 50(2)), so intra-group loans, guarantees and cash pools are priced under the OECD method. Interest limitation and other deduction rules are in `gr-corporate-income-tax`.
+**Interest, guarantees and other financial transactions.** Greece applies the OECD guidelines (ΚΦΕ art. 50(2)), so intra-group loans, guarantees and cash pools are priced under the OECD method. The interest limitation rule (ΚΦΕ art. 49) is separate and is not covered in this pack yet.
 
 ## Deadlines and filing
 
@@ -89,6 +89,7 @@ A taxpayer under these limits keeps no file and files no Summary Information Tab
 | Produce the file to AADE | Whenever asked, within 30 days of receiving the request | ΚΦΔ art. 25(4) |
 | Update a reused file | Within 4 months of the end of the year in which the need to update arose | ΚΦΔ art. 25(5) |
 | Country-by-country report | 12 months after the end of the group's reporting fiscal year | Α.1341/2019 |
+| Country-by-country notification by a Greek group member | By the last day of the group's reporting fiscal year | Α.1341/2019 |
 
 So for a company with a calendar 2026 year, the file must be ready and the ΣΠΠ filed by 15 July 2027.
 
@@ -110,8 +111,8 @@ All from the Tax Procedure Code (ν. 5104/2024). The fines in art. 55 replace th
 - **Permanent establishments.** A Greek permanent establishment of a foreign business documents its dealings with its head office and with persons connected to the head office. A Greek company documents its dealings with its own permanent establishments abroad (ΚΦΔ art. 25(1)).
 - **APA (ΚΦΔ art. 26).** Connected persons, Greek permanent establishments of foreign businesses (for dealings with head office and its connected persons) and Greek businesses' permanent establishments abroad may ask the AADE Governor to approve in advance the method for pricing specific future cross-border transactions with connected persons. The approval covers the method, comparables, adjustments and critical assumptions. A unilateral APA is decided within 18 months and never applies to earlier years. A bilateral or multilateral APA request may ask for the decision to apply to earlier years (a rollback), if the facts of those years match, the right to assess has not lapsed, and no audit order has been served for those years. An APA lasts at most 4 years. While its terms are kept, prices within it are treated as arm's length, and an audit only checks that the terms and assumptions still hold. It is revised if the critical assumptions prove wrong or change materially, or after a mutual agreement procedure under a treaty or the EU Arbitration Convention (art. 26(5)).
 - **Treaties.** An adjustment abroad on a Greek company's counterparty does not reduce Greek tax under art. 50 by itself, since art. 50 can only increase Greek profit. Relief comes through the mutual agreement article of the treaty, which this skill does not cover in detail.
-- **Country-by-country reporting.** Groups with consolidated revenue of EUR 750,000,000 or more report under art. 9ΑΑ of ν. 4170/2013 and AADE decision ΠΟΛ 1184/2017 as amended by Α.1341/2019, within 12 months of the end of the reporting year. Fines are in ΚΦΔ art. 56.
-- **Related rules elsewhere.** The company exit tax (ΚΦΕ art. 66A) and withholding on outbound payments are in `gr-cross-border`. The intra-group dividend and interest/royalty exemptions (ΚΦΕ arts. 48 and 63) are in `gr-corporate-income-tax`.
+- **Country-by-country reporting.** Groups with consolidated revenue of EUR 750,000,000 or more report under art. 9ΑΑ of ν. 4170/2013 and AADE decision ΠΟΛ 1184/2017 as amended by Α.1341/2019, within 12 months of the end of the reporting year. Each Greek constituent entity files its notification electronically through the AADE application no later than the last day of the group's reporting fiscal year (ΠΟΛ 1184/2017 art. 2(3), as replaced by Α.1341/2019). Fines are in ΚΦΔ art. 56.
+- **Related rules elsewhere.** The company exit tax (ΚΦΕ art. 66A) and withholding on outbound payments are in `gr-cross-border`. The withholding exemption for interest and royalties to associated EU companies (ΚΦΕ art. 63) is in `gr-cross-border`. The intra-group dividend exemption (ΚΦΕ art. 48) is not covered in this pack yet.
 
 ## Worked examples
 
@@ -126,10 +127,10 @@ name: Alpha AE, file test and ΣΠΠ fines, 2026
 inputs:
   turnover: 12000000
   goods_from_parent: 1500000
-  services_to_parent: 300000
+  service_fees_to_parent: 300000
   limit_high_turnover: 200000
 steps:
-  - connected_total: goods_from_parent + services_to_parent
+  - connected_total: goods_from_parent + service_fees_to_parent
   - excess_over_limit: max(0, connected_total - limit_high_turnover)
   - base_fine: connected_total / 1000
   - late_spp_fine: clamp(base_fine, 500, 2000)
@@ -146,7 +147,7 @@ expected:
 
 Beta AE, a Greek company, declared corporate income tax of EUR 150,000 for 2026. It paid its parent a management fee of EUR 600,000. On audit, AADE accepts the client's own benchmark, which supports an arm's length fee of EUR 400,000, and adds the EUR 200,000 excess to Beta's profit under ΚΦΕ art. 50(1). Beta handed over its file on day 75 after AADE's request.
 
-Extra tax is 22% of EUR 200,000, which is EUR 44,000. The difference is 44,000 / 150,000 = 29.33% of the declared tax. That is over 20% and up to 50%, so the inaccurate return fine is 25% of EUR 44,000, which is EUR 11,000 (ΚΦΔ art. 54(1)(β)). The file came in between day 61 and day 90, so a further EUR 10,000 fine applies (art. 55(1)(γ)). Total tax and fines: EUR 65,000, plus interest under art. 52 from the original 2026 payment deadline (not computed here). The parent's country may or may not give relief; that goes through the treaty's mutual agreement procedure.
+Extra tax is 22% of EUR 200,000, which is EUR 44,000. The difference is 44,000 / 150,000 = 29.33% of the declared tax. That is over 20% and up to 50%, so the inaccurate return fine is 25% of EUR 44,000, which is EUR 11,000 (ΚΦΔ art. 54(1)(β)). The file came in between day 61 and day 90, so a further EUR 10,000 fine applies (art. 55(1)(γ)). Total tax and fines: EUR 65,000, plus interest under art. 52 from the original payment deadline for the 2026 tax (not computed here). The parent's country may or may not give relief; that goes through the treaty's mutual agreement procedure.
 
 ```oa-check
 name: Beta AE, management fee adjustment and late file, 2026
@@ -187,6 +188,7 @@ expected:
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025: arts. 2(στ) and 2(ζ), 50, 51, 58, 68, 72(84) | https://minfin.gov.gr/wp-content/uploads/2026/04/ΚΩΔΙΚΟΠΟΙΗΣΗ-ΤΟΥ-ΚΩΔΙΚΑ-ΦΟΡΟΛΟΓΙΑΣ-ΕΙΣΟΔΗΜΑΤΟΣ-ΜΕΧΡΙ-ΤΟ-Ν-5264-2025.pdf | 2026-10-23 |
 | Ministry of Finance, notice of the Income Tax Code codification | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
 | Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025 updated to ν. 5259/2025: arts. 25, 26, 52, 54, 55, 56, 83(29) and (30), and the old-to-new article correspondence table | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
-| AADE decision Α.1341/2019 amending ΠΟΛ 1184/2017 (country-by-country reports: threshold, 12-month deadline) | https://aade.gr/sites/default/files/2019-09/a1341_2019fek.pdf | 2026-10-23 |
+| AADE decision Α.1341/2019 amending ΠΟΛ 1184/2017 (country-by-country reports: pro rata threshold, 12-month deadline, notification deadline) | https://aade.gr/sites/default/files/2019-09/a1341_2019fek.pdf | 2026-10-23 |
+| AADE, Ενδοομιλικές συναλλαγές (ΣΠΠ e-service, deadline, list of decisions: ΠΟΛ 1097/2014, ΠΟΛ 1144/2014) | https://www.aade.gr/endoomilikes-synallages | 2026-10-23 |
 
-Not yet confirmed: the AADE Governor's decision under ΚΦΔ art. 83(29) that sets the content of the Master File, Local File and ΣΠΠ and the accepted methods (not read, so this skill does not list the file's contents or the ΣΠΠ form fields); whether the ΣΠΠ deadline moves when 15 July falls on a non-working day; whether individuals carrying on a business are bound by art. 25, given that ΚΦΕ art. 50 names only legal persons and entities; the late payment interest rate under ΚΦΔ art. 52; any APA application fee; the deadline and form for the country-by-country notification by Greek group members, and whether any AADE decision after Α.1341/2019 changed the procedure; a "ν. 5193/2025" renumbering mentioned in the brief for this skill, which does not appear in the AADE codification read (the renumbering found is the one made by ν. 5104/2024); the domestic rules implementing the EU dispute resolution directive 2017/1852.
+Not yet confirmed: the content of the Master File, Local File and ΣΠΠ under ΠΟΛ 1097/2014 as amended by ΠΟΛ 1144/2014 (the decisions were identified but their text was not checked, so this skill does not list the file's contents or the ΣΠΠ fields); whether a newer decision under ΚΦΔ art. 83(29) replaced them; whether individuals carrying on a business are bound by art. 25, given that ΚΦΕ art. 50 names only legal persons and entities; the late payment interest rate under ΚΦΔ art. 52; any APA application fee; whether any AADE decision after Α.1341/2019 changed the country-by-country procedure; any 2026 law amending the Tax Procedure Code after ν. 5259/2025; the domestic rules implementing the EU dispute resolution directive 2017/1852.
