@@ -26,6 +26,8 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 - Skattekontrolloven (LBK nr. 12 of 8 January 2024, as amended; § 73 late-filing rates by lov nr. 16 of 14 January 2025): https://www.retsinformation.dk/eli/lta/2024/12 (read 2026-10-22)
 - Kildeskatteloven (LBK nr. 460 of 3 May 2024): https://www.retsinformation.dk/eli/lta/2024/460 (read 2026-10-22)
 - Arbejdsmarkedsbidragsloven (LBK nr. 121 of 7 February 2020): https://www.retsinformation.dk/eli/lta/2020/121 (read 2026-10-23)
+- Lov nr. 96 of 4 February 2025 (AM-bidrag 0% up to the year a person turns 17, from 2026): https://www.retsinformation.dk/eli/lta/2025/96 (read 2026-10-23)
+- Opkrævningsloven (LBK nr. 1040 of 13 September 2024; § 2(5) and (6) A-tax and AM-bidrag due dates): https://www.retsinformation.dk/eli/lta/2024/1040 (read 2026-10-23)
 - Ferieloven (LBK nr. 152 of 20 February 2024): https://www.retsinformation.dk/eli/lta/2024/152 (read 2026-10-23)
 - Ligningsloven (LBK nr. 1500 of 24 November 2025): https://www.retsinformation.dk/eli/lta/2025/1500 (read 2026-10-23)
 - Skatte- og Vækstministeriet rates and thresholds: https://svmn.dk/tal-og-metode/satser/satser-og-beloebsgraenser-i-lovgivningen (read 2026-10-22)
