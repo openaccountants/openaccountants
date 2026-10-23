@@ -40,6 +40,8 @@ Not taxed under arts. 41 to 43:
 
 - Listed shares where the seller holds less than 0.5% (art. 42(1)(β)).
 - Securities traded on a regulated market or multilateral trading facility that were acquired before 1 January 2009 (art. 42(1), last subparagraph).
+- Gains on corporate bonds and gains from Greek or EU/EEA mutual funds. AADE's E1 instructions tell taxpayers to enter these in the exempt-income codes 659-660 of Table 6, even though art. 42(1)(δ) lists corporate bonds.
+- Gains on shares in shipowning companies taxed under ν. 27/1975 or art. 57 of ν. 4646/2019 (AADE E1 instructions, Table 6, codes 659-660).
 - Gifts and inheritances. AADE's E1 instructions say transfers for no consideration are not within the Income Tax Code. They fall under gift and inheritance tax.
 - Gains from the exchange of Greek government bonds under the Greek debt restructuring programme (art. 42(6)).
 - Gains on assets sold inside a sole trader's business: these are business income, taxed on the scale (art. 21(1)). See `gr-income-tax`.
@@ -87,7 +89,7 @@ So a sale below book value is taxed on book value, and a purchase above book val
 - Corporate actions up to the sale (splits, bonus issues) are taken into account.
 - Shares bought at different times: the acquisition price is the average cost (total cost divided by total number).
 
-**Contribution to a wholly owned company.** If an individual contributes Greek or foreign securities to a company in exchange for its shares, the sale price on contribution is the acquisition price of the securities contributed, so no gain arises. This applies only if the contributor is the sole shareholder or partner, the company is based in a state that cooperates on tax, and the shares received are sold at least 2 years after they were received. On that later sale, their acquisition price is the original cost of the securities contributed (art. 42(4)). Mergers, divisions, share exchanges and asset contributions under arts. 52 to 54 follow those articles (art. 42(7)).
+**Contribution to a wholly owned company.** If an individual contributes Greek or foreign securities to a company in exchange for its shares, the sale price on contribution is the acquisition price of the securities contributed, so no gain arises. This applies only if the contributor is the sole shareholder or partner, the company is based in a state that cooperates on tax, and the shares received are sold at least 2 years after they were received. On that later sale, their acquisition price is the original cost of the securities contributed (art. 42(4)). Art. 42(7) still points mergers, divisions, share exchanges and asset contributions to arts. 52 to 54, but those articles were repealed by ν. 5162/2024 art. 59 from 5 December 2024 (codification footnotes 351 to 353). This skill does not cover the tax treatment of reorganisations.
 
 **Losses.** If the result is negative, the loss is carried forward for the next 5 years. It can be set only against future gains on art. 42(1) securities (art. 42(5)). It cannot be set against salary, business or rental income. A loss on securities whose gain is exempt, such as listed shares below 0.5%, is not a loss for this purpose (AADE E1 instructions, codes 871-872). From tax year 2021 the carried loss is entered separately on the E1 and set off by AADE on assessment, not deducted by the taxpayer from the current gain (AADE E1 instructions, codes 829-830).
 
@@ -132,7 +134,7 @@ E1 codes, from AADE's instructions for 2025 income (the 2026 form is not yet pub
 | 871-872 | Loss on art. 42 securities in the year, split Greek and foreign |
 | 873-874 | Losses carried forward from earlier years, not yet set off |
 | 875-876 | Gains on shares in shipowning and related companies under the shipping community's voluntary contribution agreement (ν. 4607/2019 art. 56, as amended by ν. 5000/2022 art. 6) |
-| 659-660 or 619-620 (Table 6) | Exempt gains: listed shares below 0.5%, listed securities acquired before 1.1.2009 |
+| 659-660 (Table 6) | Exempt gains: listed shares below 0.5%, listed securities acquired before 1.1.2009, corporate bonds, Greek or EU/EEA mutual funds |
 
 ## Penalties and interest
 
@@ -141,15 +143,15 @@ From the Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025:
 | Breach | Penalty | Source |
 |---|---|---|
 | Late or missing return with no tax due | EUR 100 per breach | ΚΦΔ art. 53(1) |
-| Late or missing income tax return, taxpayer on single-entry books | EUR 250 per breach | ΚΦΔ art. 53(2) |
-| Same, taxpayer on double-entry books | EUR 500 per breach | ΚΦΔ art. 53(2) |
+| Late or missing return, taxpayer required to keep single-entry books | EUR 250 per breach | ΚΦΔ art. 53(2) |
+| Same, taxpayer required to keep double-entry books | EUR 500 per breach | ΚΦΔ art. 53(2) |
 | No return filed where tax would be due | 50% of the tax on the missing return | ΚΦΔ art. 53(6) |
 | Inaccurate return: tax difference 5% to 20% of the tax declared | 10% of the difference | ΚΦΔ art. 54(1)(a) |
 | Difference over 20% and up to 50% | 25% of the difference | ΚΦΔ art. 54(1)(b) |
 | Difference over 50% | 50% of the difference | ΚΦΔ art. 54(1)(c) |
 | Late payment | Interest from the day after the payment deadline | ΚΦΔ art. 52(1) |
 
-The late-payment interest rate is set by ministerial decision; we did not read the percentage on an official page (see Sources).
+Art. 53(2) applies only to taxpayers required to keep books. An investor who keeps no books is not covered by it, and we did not find a separate fixed fine for that case in the Code. The late-payment interest rate is not in art. 52; we did not read the percentage on an official page (see Sources).
 
 ## Cross-border points
 
@@ -237,8 +239,8 @@ expected:
 |---|---|---|
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025: arts. 3, 5, 7, 9, 21, 41, 42, 42A, 43, 43A, 62, 67, 67A, 72(6), (7), (26), (27), (33), (74), with footnotes 270 to 306 and 538 to 539 | https://minfin.gov.gr/wp-content/uploads/2026/04/%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%9F%CE%A0%CE%9F%CE%99%CE%97%CE%A3%CE%97-%CE%A4%CE%9F%CE%A5-%CE%9A%CE%A9%CE%94%CE%99%CE%9A%CE%91-%CE%A6%CE%9F%CE%A1%CE%9F%CE%9B%CE%9F%CE%93%CE%99%CE%91%CE%A3-%CE%95%CE%99%CE%A3%CE%9F%CE%94%CE%97%CE%9C%CE%91%CE%A4%CE%9F%CE%A3-%CE%9C%CE%95%CE%A7%CE%A1%CE%99-%CE%A4%CE%9F-%CE%9D-5264-2025.pdf | 2026-10-23 |
 | Ministry of Finance, notice of the codification | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
-| AADE, E1 return instructions (2025 income, filed 2026): subtable 4Ε, codes 829-876; Table 6, codes 659-660 and 619-620 | https://www.aade.gr/sites/default/files/2026-03/Odigies_E1_2026_0.pdf | 2026-10-23 |
-| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53, 54 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| AADE, E1 return instructions (2025 income, filed 2026): subtable 4Ε, codes 829-876; Table 6, codes 659-660 | https://www.aade.gr/sites/default/files/2026-03/Odigies_E1_2026_0.pdf | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025: arts. 52, 53(1), (2), (6), 54(1) | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
 | Housing Policy portal (stegasi.gov.gr): suspension of property capital gains tax to 31.12.2026 (ν. 5162/2024 art. 90) | https://stegasi.gov.gr/programs/anastoli-epivolis-forou-yperaxias-apo-metavivasi-akiniton/ | 2026-10-23 |
 
-Not yet confirmed: whether the suspension of art. 41 has been or will be extended past 31 December 2026 (press reports say the 2027 budget plan includes an extension to 31 December 2027, but we found no enacted law; the codification and the Housing Policy portal both give 31 December 2026); whether the 0.5% holding in art. 42(1)(β) is tested only at the date of sale or over an earlier period (the law's wording is present tense; we did not read an AADE circular on it); how AADE applies "included in the acquisition price and the sale price" for costs in art. 42(3) (we treat purchase costs as added to cost and sale costs as deducted from proceeds); the Greek tax treatment of crypto-assets, which the codified Code does not address; any amendment to arts. 41 to 43 made during 2026 after ν. 5264/2025; the late-payment interest rate under ΚΦΔ art. 52; the 2026 E1 form and code numbers, which AADE has not yet published.
+Not yet confirmed: whether the suspension of art. 41 will be extended past 31 December 2026 (a Ministry of Finance draft bill put to public consultation in October 2026, open to 1 November 2026, extends it to 2027 according to press reports; it is not enacted, and the codification and the Housing Policy portal both give 31 December 2026); the legal basis AADE relies on to treat corporate bond gains as exempt; the fixed fine under ΚΦΔ art. 53 for a late return with tax due by an individual who keeps no books; whether the 0.5% holding in art. 42(1)(β) is tested only at the date of sale or over an earlier period (the law's wording is present tense; we did not read an AADE circular on it); how AADE applies "included in the acquisition price and the sale price" for costs in art. 42(3) (we treat purchase costs as added to cost and sale costs as deducted from proceeds); the Greek tax treatment of crypto-assets, which the codified Code does not address; any amendment to arts. 41 to 43 made during 2026 after ν. 5264/2025; the late-payment interest rate under ΚΦΔ art. 52; the 2026 E1 form and code numbers, which AADE has not yet published.
