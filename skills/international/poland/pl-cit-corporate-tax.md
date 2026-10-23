@@ -5,7 +5,7 @@ jurisdiction: PL
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -152,7 +152,7 @@ There is no carry-back. Losses are lost on a transformation, merger or division 
 
 **Exit tax (art. 24f).** 19% on unrealised gains when a company moves assets abroad and Poland loses the right to tax their disposal, or moves its seat or management abroad, including by cross-border conversion.
 
-**Transfer pricing.** Related-party transactions must be at arm's length (art. 11c). Documentation duties are in art. 11k to 11t. This pack has no transfer pricing skill yet.
+**Transfer pricing.** Related-party transactions must be at arm's length (art. 11c). Documentation duties are in art. 11k to 11t. See [pl-transfer-pricing](pl-transfer-pricing.md).
 
 ## Worked examples
 
