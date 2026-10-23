@@ -18,7 +18,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | VAT | cyprus-vat-return | source-cited draft |
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
 | PR, payroll withholding | cyprus-payroll | source-cited draft |
-| TP, transfer pricing | (missing: article 33 arm's length rule and local file thresholds are summarised in cy-corporate-tax only) | |
+| TP, transfer pricing | cy-transfer-pricing | source-cited draft |
 | XB, cross-border | (missing: cy-non-dom covers arrivals only) | |
 
 ## Official sources
@@ -26,4 +26,5 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 - Income Tax Law 118(I)/2002, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html (read 2026-10-22)
 - Special Defence Contribution Law 117(I)/2002, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (read 2026-10-22)
 - Assessment and Collection of Taxes Law 4/1978, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html (read 2026-10-22)
+- Transfer pricing regulations K.D.P. 273/2022 and notice K.D.P. 314/2022 (CyLaw): https://www.cylaw.org/KDP/data/2022_1_273.pdf, https://www.cylaw.org/KDP/data/2022_1_314.pdf (read 2026-10-23)
 - Tax Department: https://www.gov.cy/tax/ (read 2026-10-22)
