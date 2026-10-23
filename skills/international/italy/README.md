@@ -4,8 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: it-cross-border
-partial:
-  SC: "2026 rates are confirmed for Cassa Forense and CNPADC only; Inarcassa and ENPAM rates on 2026 income and the other professional funds are not yet confirmed"
+partial: {}
 ---
 
 # Italy: tax pack
@@ -19,7 +18,7 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 | IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap covers the regional tax on companies | source-cited draft |
 | VAT | italy-vat-return | source-cited draft |
-| SC, social contributions | it-inps-contributions (gestione separata), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee INPS in italy-payroll | source-cited draft; partial (rates of most professional funds) |
+| SC, social contributions | it-inps-contributions (gestione separata), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee INPS in italy-payroll | source-cited draft |
 | PR, payroll withholding | italy-payroll | source-cited draft |
 | TP, transfer pricing | italy-transfer-pricing | source-cited draft |
 | XB, cross-border | it-cross-border (hub), it-impatriati | source-cited draft |

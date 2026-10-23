@@ -1,11 +1,11 @@
 ---
 name: it-regime-forfettario
-description: "Italy's regime forfettario (flat-rate regime) for individuals running a business or a profession, tax year 2026, under L. 190/2014 art. 1 commi 54-89. Covers the entry and stay conditions (EUR 85,000 revenue, EUR 20,000 staff costs, the employment-income bar raised to EUR 35,000 for 2025 and 2026, the comma 57 exclusions), the same-year exit above EUR 100,000, the full table of coefficienti di redditivita by ATECO group, the 15% substitute tax and the 5% start-up rate, deduction of INPS contributions, no VAT and the invoice wording, e-invoicing, the EUR 2 stamp duty, the 35% INPS cut for artigiani and commercianti, acconti, Quadro LM, leaving the regime, and penalties. Trigger on: forfettario, forfetario, flat tax partita IVA, imposta sostitutiva 15%, 5% startup, coefficiente di redditivita, Quadro LM, superamento 100.000. Out of scope: regime ordinario (it-income-tax), employees (it-irpef-employees), INPS rates (it-inps-contributions), acconti method (it-estimated-tax), VAT returns (italy-vat-return), e-invoice XML (italy-einvoice)."
+description: "Italy's regime forfettario (flat-rate regime) for individuals running a business or a profession, tax year 2026, under L. 190/2014 art. 1 commi 54-89. Covers the entry and stay conditions (EUR 85,000 revenue, EUR 20,000 staff costs, the employment-income bar raised to EUR 35,000 for 2025 and 2026, the comma 57 exclusions), the same-year exit above EUR 100,000, the full table of coefficienti di redditivita by ATECO group, the 15% substitute tax and the 5% start-up rate, deduction of INPS contributions, no VAT and the invoice wording, e-invoicing, the EUR 2 stamp duty, the 35% INPS cut for artigiani and commercianti, acconti, Quadro LM, leaving the regime, and penalties. Trigger on: forfettario, forfetario, flat tax partita IVA, imposta sostitutiva 15%, 5% startup, coefficiente di redditivita, Quadro LM, superamento 100.000. Out of scope: regime ordinario (it-income-tax), employees (it-irpef-employees), INPS rates (it-inps-contributions for the gestione separata, it-inps-artigiani-commercianti for artigiani and commercianti), acconti method (it-estimated-tax), VAT returns (italy-vat-return), e-invoice XML (italy-einvoice)."
 jurisdiction: IT
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -19,7 +19,8 @@ For 2026 the rules are L. 190/2014, art. 1, commi 54 to 89, as in force on 22 Oc
 Related skills, not repeated here:
 - `it-income-tax`: the regime ordinario for the self-employed, and what happens when this regime does not apply.
 - `it-irpef-employees`: employment and pension income, which a forfettario may also have and which is taxed under IRPEF.
-- `it-inps-contributions`: gestione separata rates and bases. Artigiani and commercianti rates are not yet in the pack.
+- `it-inps-contributions`: gestione separata rates and bases.
+- `it-inps-artigiani-commercianti`: artigiani and commercianti rates, the minimale, the fixed instalments and how the 35% cut is worked out.
 - `it-estimated-tax`: the acconti method and the F24 codes for the substitute tax.
 - `italy-vat-return`: the regime ordinario VAT return, for the year after leaving.
 - `italy-einvoice`: the FatturaPA file, SdI routing and stamp duty mechanics.
@@ -111,7 +112,7 @@ Source: the Gazzetta Ufficiale page of L. 145/2018 allegato 2, published by the 
 
 The person confirms these by ticking LM21 column 3. If one year's income has to be split between a "new" activity at 5% and a second activity at 15%, Quadro LM is filled in twice (two modules).
 
-**INPS for artigiani and commercianti (commi 76 to 84).** Forfettari who run a business may ask INPS to compute the artigiani or commercianti contributions on the forfettario income, cut by 35% (comma 77). Someone already in business must apply by 28 February of the year; someone starting applies online when they start. A late application works from the following year (comma 83). The cut ends from the year after the regime ends, and once someone is back on the ordinary INPS regime they can never use the cut again (comma 82). The cut does not apply to professionals in the gestione separata. Contribution rates and the minimum income base are not in this skill. `it-inps-contributions` covers the gestione separata only, so artigiani and commercianti rates are a gap in the pack.
+**INPS for artigiani and commercianti (commi 76 to 84).** Forfettari who run a business may ask INPS to compute the artigiani or commercianti contributions on the forfettario income, cut by 35% (comma 77). Someone already in business must apply by 28 February of the year; someone starting applies online when they start. A late application works from the following year (comma 83). The cut ends from the year after the regime ends, and once someone is back on the ordinary INPS regime they can never use the cut again (comma 82). The cut does not apply to professionals in the gestione separata. Contribution rates, the minimum income base and worked figures for the cut are in `it-inps-artigiani-commercianti`.
 
 **VAT (commi 58 to 60).** A forfettario charges no VAT on domestic sales, deducts no input VAT, keeps no VAT registers and files no annual VAT return. They still number and keep purchase invoices and customs documents. On reverse-charge purchases, and other operations where they are the debtor, they self-charge VAT and pay it by the 16th of the following month (comma 60). A forfettario may issue a simplified invoice whatever the amount (comma 59). The Agenzia's "Semplificazioni e adempimenti" page still gives the older deadline for this self-charged VAT (the 16th of the second month after each quarter); comma 60 as in force sets the 16th of the following month.
 
@@ -134,7 +135,7 @@ The person confirms these by ticking LM21 column 3. If one year's income has to 
 | Balance (saldo) for 2026 and first acconto for 2027 | 30 June 2027, or within the next 30 days with a 0.40% surcharge | Agenzia, "Come si paga l'Irpef", https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef ; comma 64 applies the IRPEF payment rules |
 | Acconti: forfettari pay two EQUAL instalments, 30 June and 30 November | one payment by 30 November if the total is not above EUR 206 | same Agenzia page |
 | Acconto base | 100% of the previous year's tax, or of the lower tax expected | same Agenzia page |
-| INPS artigiani and commercianti contributions under the cut | same dates as the income tax balance and acconti | comma 79 |
+| INPS artigiani and commercianti contributions under the cut | contribution on the minimale (cut by 35%) and maternity on the four fixed INPS dates; the part above the minimale with the income tax balance and acconti | comma 79; INPS Circolare 35/2016; see `it-inps-artigiani-commercianti` |
 | Opt in to the INPS cut | 28 February | comma 83 |
 | Payment channel | F24 | Agenzia payment page |
 
@@ -286,5 +287,6 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | TUIR, D.P.R. 917/1986, art. 11 (2026 IRPEF bands) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art11!vig=2026-10-22 | 2026-10-22 |
 | TUIR, art. 13 (detrazioni) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art13!vig=2026-10-22 | 2026-10-22 |
 | Agenzia, IRPEF rates (updated 13 January 2026; 2026 middle rate in its note) | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef | 2026-10-22 |
+| INPS Circolare n. 35 of 19 February 2016 (forfettari: 35% cut on the minimale and above, maternity on the fixed dates) | https://www.inps.it/bussola/VisualizzaDoc.aspx?sVirtualURL=%2FCircolari%2FCircolare+numero+35+del+19-02-2016.htm | 2026-10-23 |
 
-Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) the INPS artigiani and commercianti 2026 rates and minimum base (no official INPS page read); (5) whether the impatriati regime can be combined with the forfettario.
+Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) whether the impatriati regime can be combined with the forfettario.

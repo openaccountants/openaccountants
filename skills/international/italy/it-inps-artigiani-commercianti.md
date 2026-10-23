@@ -87,14 +87,14 @@ All 2026 figures below are from INPS Circolare n. 14 of 9 February 2026 (https:/
 
 **Forfettari: the 35% cut.** A forfettario running a business may ask INPS to apply a reduced regime (L. 190/2014 art. 1 c. 77 to 84). The base is the forfettario income, and the whole contribution, on the minimale and above it, is cut by 35% (comma 77; INPS Circolare 35/2016). Maternity of EUR 7.44 is still due in full (Circolare 35/2016). Points to know:
 - Paying at least the normal contribution on the minimale (EUR 4,513.92 or EUR 4,604.20 for 2026) credits all 12 months for pension. Paying less credits fewer months in proportion (L. 335/1995 art. 2 c. 29; Circolare 35/2016).
-- Someone already in business opts in by 28 February. Someone starting a business applies as soon as INPS confirms the enrolment. A late request works from the next year (comma 83; Circolare 14/2026, para. 8).
+- Someone already in business opts in by 28 February. Someone starting a business applies as soon as INPS confirms the enrolment. A late request works from the next year (comma 83; Circolare 35/2016, para. 3).
 - The cut stays for later years unless the person gives it up. Giving it up, or leaving the forfettario, ends it for good (comma 82; Circolare 14/2026, para. 8).
 - The over-65 cut and the under-21 rate do not combine with it (commi 80 and 81).
 - It applies to artigiani and commercianti only, never to the gestione separata.
 
 **Over-65 pensioners.** Owners and helpers over 65 who already draw an INPS pension pay 50% of the contributions (L. 449/1997 art. 59 c. 15; Circolare 14/2026, para. 1).
 
-**New enrolments in 2025.** People who enrolled for the first time in either scheme during 2025 and earn business income, including forfettari, get 50% off the pension rate for 36 months from the start. Maternity, and for commercianti the 0.48% indemnity part, stay in full. It cannot be combined with the forfettario 35% cut or the over-65 cut (L. 207/2024 art. 1 c. 186; INPS news page on Circolare 83/2025). Quadro RR flags it with code E.
+**New enrolments in 2025.** People who enrolled for the first time in either scheme during 2025 and earn business income, including forfettari, get 50% off the pension rate for 36 months from the start. Maternity, and for commercianti the 0.48% indemnity part, stay in full. It must be asked for through the INPS "Portale delle Agevolazioni", is capped at EUR 300,000 over the three years, and cannot be combined with the forfettario 35% cut or the over-65 cut (L. 207/2024 art. 1 c. 186; INPS news page on Circolare 83/2025). Quadro RR flags it with code E.
 
 **Income tax.** Contributions paid in the year are deductible from total income under the regime ordinario (TUIR art. 10, see `it-income-tax`). In the forfettario they reduce the forfettario income (see `it-regime-forfettario`).
 
@@ -111,7 +111,9 @@ All 2026 figures below are from INPS Circolare n. 14 of 9 February 2026 (https:/
 | 3rd | 16 November 2026 |
 | 4th | 16 February 2027 |
 
-The INPS information pages for artigiani and commercianti give the third date as 17 November 2026. The circolare says 16 November. Pay by 16 November.
+The third instalment is due on Monday 16 November 2026: that is the date in Circolare 14/2026, para. 9, and the INPS page "F24 per artigiani e commercianti" gives 16 November as the standing date. The INPS information pages "Aliquote e contributi" print 17 November 2026; the circolare governs.
+
+**Forfettari with the 35% cut.** They still pay the contribution on the minimale, cut by 35%, and the EUR 7.44 maternity on these four fixed dates (Circolare 35/2016, para. 1). The contribution on income above the minimale goes with the income tax acconti and saldo (L. 190/2014 art. 1 c. 79).
 
 **Percentage on income above the minimale.** Paid with the income tax (D.L. 63/2002; Circolare 62/2026, para. 3):
 - Two acconti of equal amount, worked out on the previous year's business income (INPS information pages for artigiani and commercianti).
@@ -137,6 +139,14 @@ The INPS information pages for artigiani and commercianti give the third date as
 | Evasion self-reported within 12 months of the due date, before any INPS request, paid within 30 days | Official reference rate plus 5.5 points a year | 40% |
 | Same, paid within 90 days | Official reference rate plus 7.5 points a year | 40% |
 | Debt found by INPS or an inspection, paid within 30 days of notice | Half of the omissione or evasione rate | |
+
+**The reference rate now.** The "tasso ufficiale di riferimento" is the ECB main refinancing rate (D.M. 26 September 2005, cited in INPS Circolare 98/2026, note 1). From 16 September 2026 it is 2.65%, so the yearly rates are (Circolare 98/2026, para. 3):
+- omissione: 8.15%;
+- omissione paid within 120 days, in one go, before any INPS request: 2.65%;
+- evasion self-reported within 12 months: 8.15% if paid within 30 days, 10.15% if paid within 90 days;
+- evasion otherwise: 30%, capped at 60%.
+
+The rate before 16 September 2026 was 2.40% (from 17 June 2026) and before that 2.15% (from 11 June 2025) (ECB key interest rates page).
 
 Once the cap is reached and the debt is still unpaid, late-payment interest (interessi di mora) runs under D.P.R. 602/1973 art. 30 (L. 388/2000 art. 116 c. 9).
 
@@ -174,7 +184,7 @@ Figures are shown only where read on the fund's own site on 23 October 2026.
 | EPAP | Agronomists, geologists, chemists, actuaries | Not yet confirmed | Not yet confirmed | Not yet confirmed | not read |
 | CNPR | Ragionieri and periti commerciali | Not yet confirmed | Not yet confirmed | Not yet confirmed | not read |
 
-**Timing differs by fund.** Cassa Forense: the minimums fall due in the year itself, and the percentage on 2026 income is self-assessed on Mod. 5/2027 and paid in two instalments, 30 September and 31 December 2027 (the 2026 notes give those dates for 2025 income). CNPADC charges the soggettivo on the previous year's income, with the 2026 minimum's second instalment due 2 November 2026 (CNPADC notice). Check the fund's own calendar for the others.
+**Timing differs by fund.** Cassa Forense: the minimums fall due in the year itself, and the percentage on 2026 income is self-assessed on Mod. 5/2027 and paid in two instalments, 30 September and 31 December 2027 (the 2026 notes give those dates for 2025 income). CNPADC: the minimums are paid in two instalments, normally 31 May and 31 October (for 2026, 1 June and 2 November, per the CNPADC notices); the excess over the minimums is worked out on the previous year's income, declared by 1 December and paid by 20 December (CNPADC "Quanto, quando e come versare i contributi"). Check the fund's own calendar for the others.
 
 ## Worked examples
 
@@ -290,6 +300,10 @@ expected:
 | Inarcassa, "Contributi per gli iscritti" | https://www.inarcassa.it/articoli/contributi-gli-iscritti | 2026-10-23 |
 | ENPAM, "Contributi di Quota A" | https://www.enpam.it/comefareper/pagare-i-contributi/contributi-di-quota-a/ | 2026-10-23 |
 | ENPAM, "Aliquota intera Quota B" | https://www.enpam.it/comefareper/pagare-i-contributi/contributi-per-la-libera-professione/aliquota-intera-quota-b/ | 2026-10-23 |
+| INPS Circolare n. 98 of 11 September 2026 (reference rate 2.65% from 16 September 2026; sanzioni civili rates) | https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.09.circolare-numero-98-del-11-09-2026_15369.html | 2026-10-23 |
+| ECB, key ECB interest rates (main refinancing operations) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |
+| INPS, "F24 per artigiani e commercianti" (instalment dates, causali) | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49923.f24-per-artigiani-e-commercianti.html | 2026-10-23 |
+| CNPADC notice, minimum contributions 2026, second instalment due 2 November 2026 | https://www.cnpadc.it/comunicazione/avvisi/contributi-minimi-2026-seconda-rata-scadenza-02/11/2026.html | 2026-10-23 |
 | Regulation (EC) 883/2004 on EUR-Lex | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02004R0883-20190731 | could not be fetched; relied on the INPS page above |
 
-Not yet confirmed: (1) the third fixed instalment date: Circolare 14/2026 says 16 November 2026, the INPS information pages say 17 November 2026; (2) whether the acconti on the excess use the current year's minimale and rates applied to the previous year's income (our reading; Example 1 takes the acconti from F24 receipts instead); (3) whether forfettari who opted in pay the reduced contribution on the minimale on the four fixed dates or with the income tax (Circolare 35/2016 puts maternity on the fixed dates; L. 190/2014 c. 79 puts saldo and acconti on the income tax dates); (4) the current official reference rate used for sanzioni civili; (5) the 2027 payment dates under D.Lgs. 33/2025; (6) Inarcassa and ENPAM rates on 2026 income, and all rates and minimums of the other funds in the table; (7) the Cassa Forense rate above the 2026 ceiling (3% is stated in the vademecum without a year limit).
+Not yet confirmed: (1) whether the acconti on the excess use the current year's minimale and rates applied to the previous year's income (our reading; INPS says only that the two equal acconti are "calcolati sul reddito d'impresa dell'anno precedente"; Example 1 takes the acconti from F24 receipts); (2) the 2027 payment dates under D.Lgs. 33/2025; (3) Inarcassa and ENPAM rates on 2026 income (their sites state rates on 2025 income only), and all rates and minimums of the other funds in the table.
