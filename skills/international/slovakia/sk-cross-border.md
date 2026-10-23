@@ -17,7 +17,7 @@ This skill covers what happens in Slovak income tax when income, people or compa
 
 Detail lives in the sibling skills. Read [slovakia-pit](slovakia-pit.md) for the individual return, [sk-corporate-income-tax](sk-corporate-income-tax.md) for companies, [sk-payroll-social](sk-payroll-social.md) for payroll and social contributions, and [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md) for VAT on cross-border services. Those four skills still carry 2025 figures.
 
-**What changed for 2026.** The 2025 consolidation package, Act No. 261/2025 Coll. of 24 September 2025, did not change the withholding rules (§ 43) or the security rules (§ 44). It did change the individual rate bands to 19%, 25%, 30% and 35% for 2026 (§ 15 letter a), § 52zzzj), cut the personal allowance bands, and replaced the company minimum tax scale (§ 46b(2)). The 7% dividend rate and the 10% / 21% / 24% company rates were already in force from 2025.
+**What changed for 2026.** The 2025 consolidation package, Act No. 261/2025 Coll. of 24 September 2025, did not change the withholding rules (§ 43) or the security rules (§ 44). It did change the individual rate bands to 19%, 25%, 30% and 35% for 2026 (§ 15 letter a), § 52zzzj), cut the personal allowance bands, and replaced the company minimum tax scale (§ 46b(2)). The 7% dividend rate and the 10% / 21% / 24% company rates were already in force from 2025. Set against the version in force from 1 December 2025, the 2026 text of § 2, § 13, § 16, § 17f, § 17g, § 44 and § 45 is unchanged. In § 43 only the content of the withholding notice changed (§ 43(11)): for each non-resident recipient it now gives the income type (for § 16(1)(e) points 1, 2, 4, 9 and 11), the amount, the rate, the recipient's address and its foreign tax number.
 
 ## Who this applies to
 
@@ -59,16 +59,16 @@ A legal person is resident if its seat or its place of effective management is i
 | Security deduction on payments to a taxpayer of a non-cooperating state, or where the beneficial owner is not shown | 35% of the payment | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 44(2), § 44(7)) |
 | Security deduction ordered by a tax office decision | 9.5% of the payment | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 44(1)) |
 | EU interest and royalty exemption: holding | at least 25% direct holding, for at least 24 months in a row | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 13(2)(f), (h)) |
-| Permanent establishment: one-off activity, building or assembly site | more than 6 months in any 12-month period | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(2)) |
+| Permanent establishment: one-off activity; building site or construction or assembly project | one-off activity: more than 6 months in any 12-month period; site or project: activity of the non-resident or its related persons over 6 months | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(2)) |
 | Permanent establishment: services performed in Slovakia | more than 183 days in any 12-month period | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(2)) |
 | Non-resident share sale: real-estate-rich company test | Slovak real estate over 50% of equity | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 16(1)(h)) |
-| Non-resident individual: spouse allowance and PEPP deduction available | Slovak income at least 90% of worldwide income | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 11(7)) |
-| Individual rates (resident and non-resident) | 19% up to 154.8 x subsistence minimum; 25% to 212.4 x; 30% to 264 x; 35% above | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 a) 1) |
+| Non-resident individual: spouse allowance and PEPP and supplementary pension contributions deductible | Slovak income at least 90% of worldwide income | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 11(7)) |
+| Individual rates (resident and non-resident) | 19% up to 154.8 x subsistence minimum; 25% to 212.4 x; 30% to 264 x; 35% above. A sole trader with business revenue up to EUR 100,000 pays 15% on that base | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 a) 1 to 3) |
 | Company rates | 10% (taxable revenue up to EUR 100,000); 21%; 24% (taxable revenue over EUR 5,000,000) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 b) 1) |
 | Exit tax on a company's special tax base | 21% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 15 b) 3, § 17f(5)) |
 | Exit tax instalments (move to EU/EEA state with recovery agreement) | up to 5 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17g(1)) |
 | Exit tax instalments: no lien needed | tax up to EUR 3,000 | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 17g(5)) |
-| Slovak tax treaties in force | 70 entries (list as at 1 January 2022) | 2022 | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf |
+| Cooperating states (§ 2 x)): Ministry of Finance list valid from 1 January 2026 | 138 states and jurisdictions, 71 of them through a tax treaty; Russia is not on it | 2026 | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf |
 | Late payment interest (also on unremitted withholding and security) | 4 x ECB base rate a year, at least 15% a year, at most 4 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 156(1)-(2)) |
 
 ## The taxable base
@@ -89,10 +89,10 @@ A non-resident is taxed on income from:
 
 A permanent establishment is a fixed place through which the non-resident carries on its activity in Slovakia: a branch, office, workshop, worksite, point of sale, technical equipment, or a place of extraction. A place is fixed if it is used continuously or repeatedly.
 
-- A one-off activity creates a permanent establishment only after more than six months in any 12 months. The same six-month rule applies to building sites and construction or assembly projects, counting related persons.
+- A one-off activity creates a permanent establishment only after more than six months in any 12 months. A building site or construction or assembly project is one only if the activity of the non-resident or its related persons there lasts more than six months.
 - Services provided in Slovakia by the non-resident or its staff create one after more than 183 days in any 12 months.
 - Repeated intermediation of transport or accommodation, including through a digital platform, counts as a fixed place.
-- A dependent agent is one: a person who habitually concludes contracts, or plays the principal role leading to contracts the non-resident concludes without material change, in the non-resident's name or for its property or services.
+- A dependent agent is one: a person acting on the non-resident's instructions who habitually negotiates, concludes or arranges contracts, or plays the principal role leading to contracts the non-resident concludes without material change, in the non-resident's name or for its property or services.
 
 Income of a registered permanent establishment is not withheld at source (§ 43(2)). It is declared in a return and taxed at the normal rates.
 
@@ -105,17 +105,18 @@ Paid to a non-resident (§ 43(2)), withholding applies to:
 - services in Slovakia and artists or sportspeople (§ 16(1)(c) and (d));
 - royalties, rent of movables, advisory, management, data processing and marketing fees, and capital fund distributions (§ 16(1)(e) points 1, 2, 4, 10 and 12);
 - interest and other yields on loans, and derivative income;
+- paid-out revaluation differences on a company conversion (§ 16(1)(k));
 - dividends only when the recipient is a taxpayer of a non-cooperating state.
 
 Paid to anyone (§ 43(3)), withholding also applies to bank interest, fund yields, lottery winnings, and dividends paid to individuals (point r), among others.
 
-The rates are 19% as the rule, 7% for dividends to individuals, and 35% for any of this income paid to a taxpayer of a non-cooperating state (§ 43(1)). If the payer cannot show who the beneficial owner is, it withholds 35% (§ 43(25)).
+The rates are 19% as the rule, 7% for dividends to individuals, and 35% for any of this income paid to a taxpayer of a non-cooperating state (§ 43(1)). If the payer cannot show who the beneficial owner of a non-resident's Slovak-source income is, it withholds 35% (§ 43(25)).
 
 **Withholding as final tax or as an advance.** Withholding settles the tax (§ 43(6)). A non-resident from an EU or EEA state may instead treat tax withheld on services, royalties, rent of movables, advisory fees and interest as an advance, file a Slovak return, and claim back any excess. A non-resident artist or sportsperson from any state may do the same for § 16(1)(d) income (§ 43(6)(a) and (b), § 43(7)).
 
 ### Security deduction (zabezpečenie dane, § 44)
 
-This catches Slovak-source income of a non-resident that is not withheld under § 43 and is not employment income. Examples are the sale of Slovak shares, real estate or movables, and services income not caught above.
+This catches Slovak-source income of a non-resident that is not withheld under § 43 and is not employment income. Examples are the sale of Slovak shares, real estate or movables, income of a Slovak permanent establishment, and a non-resident partner's share in a Slovak v.o.s. or k.s. (§ 16(3)).
 
 - It applies only where the recipient is outside the EU and EEA (§ 44(2)). Payments to EU and EEA residents are not subject to it.
 - The payer deducts 19% of the gross payment, or 35% if the recipient is a taxpayer of a non-cooperating state (§ 44(2)) or the beneficial owner is not shown (§ 44(7)).
@@ -126,6 +127,8 @@ This catches Slovak-source income of a non-resident that is not withheld under �
 ### Non-cooperating states (§ 2 letter x))
 
 A taxpayer of a non-cooperating state is one whose permanent residence or seat is not in a state on the list published by the Ministry of Finance. The Ministry lists states with a tax treaty, a tax information exchange agreement, or a multilateral exchange agreement with Slovakia. It removes states on the EU list of non-cooperative jurisdictions as at 1 January, and states with no corporate income tax or a zero rate.
+
+The list valid from 1 January 2026 was built from the EU list published in the Official Journal on 17 October 2025 (C/2025/5613). It has 138 entries. A state with a Slovak tax treaty can still be non-cooperating: Russia has a treaty with Slovakia but is not on the list, so a payment to a Russian resident carries 35%. Check the list in force on the day of payment (https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf).
 
 ### Dividends paid abroad
 
@@ -185,9 +188,9 @@ All from the Tax Procedure Code, Act No. 563/2009 Coll.
 
 ## Cross-border points
 
-- **Treaties override domestic rates.** A treaty can lower or remove Slovak withholding. Slovakia had 70 treaties in force on 1 January 2022 (Financial Directorate list). Read the treaty in force for the year of payment for the rate.
+- **Treaties override domestic rates.** A treaty can lower or remove Slovak withholding (§ 1(2)). The Ministry of Finance list valid from 1 January 2026 names 71 states with a Slovak tax treaty, including Kyrgyzstan, whose treaty applies from 1 January 2026. Read the treaty in force for the year of payment for the rate.
 - **Beneficial owner.** The beneficial owner is the person who receives the income for its own benefit and can use it freely, or its permanent establishment. An intermediary is not (§ 2 letter af)). A payer that cannot show the beneficial owner applies 35% (§ 43(25), § 44(7)).
-- **Reporting the recipient.** The withholding notice lists non-resident recipients by income type, with their foreign tax number and address (§ 43(11)(b)).
+- **Reporting the recipient.** The withholding notice names each non-resident recipient, with its address and foreign tax number, and splits royalties, rent of movables, dividends and similar income by type (§ 43(11)(b)).
 - **Social security, payroll and VAT** are not in this skill. Posted workers and A1 certificates go with [sk-payroll-social](sk-payroll-social.md). VAT on services bought from abroad goes with [slovakia-vat-registration-4-7-7a](slovakia-vat-registration-4-7-7a.md).
 - **Transfer pricing** between related parties, including a head office and its permanent establishment (§ 2 letter r)), is out of scope here.
 
@@ -255,10 +258,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 595/2003 Coll. on income tax, version in force 1 Jan 2026 to 30 Dec 2026 (§ 2, § 11, § 12, § 13, § 15, § 16, § 17f, § 17g, § 43, § 43a, § 44, § 45, § 49, § 52zzzj) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |
+| Act No. 595/2003 Coll. on income tax, version in force 1 Jan 2026 to 30 Dec 2026 (§ 1, § 2, § 11, § 12, § 13, § 15, § 16, § 17f, § 17g, § 43, § 43a, § 44, § 45, § 49, § 52zzzj) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |
 | Act No. 261/2025 Coll. (2025 consolidation package), as published | https://static.slov-lex.sk/static/SK/ZZ/2025/261/vyhlasene_znenie.html | 2026-10-23 |
 | Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 Sep 2026 (§ 154, § 155, § 156) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |
 | Financial Administration, international taxation legislation page | https://www.financnasprava.sk/sk/financna-sprava/legislativa/dane/priame-dane/dan-z-prijmov/medzinarodne-zdanenie | 2026-10-23 |
-| Financial Directorate, list of Slovak tax treaties in force (1/MZ/2022/IM, as at 1 Jan 2022) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf | 2026-10-23 |
+| Ministry of Finance, list of cooperating states under § 2 x), valid from 1 Jan 2026 (with the treaty or agreement for each state) | https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf | 2026-10-23 |
+| Financial Directorate, list of Slovak tax treaties in force (1/MZ/2022/IM, as at 1 Jan 2022; shows the Russia treaty) | https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf | 2026-10-23 |
 
-Not yet confirmed: the Ministry of Finance's current list of cooperating states under § 2 letter x) (not read); treaties signed or brought into force after 1 January 2022 (the Financial Directorate list is dated 1 January 2022); treaty withholding rates for individual states; the subsistence minimum (životné minimum) at 1 January 2026, so the 2026 individual bands are given here as multiples only; the ECB base rate used for interest and fines on a given date; the text of a later version of Act No. 595/2003 in force from 31 December 2026 (Act No. 406/2025 Coll.), which is not covered here.
+Not yet confirmed: treaty withholding rates for individual states; the subsistence minimum (životné minimum) at 1 January 2026, so the 2026 individual bands are given here as multiples only; the ECB base rate used for interest and fines on a given date; the text of a later version of Act No. 595/2003 in force from 31 December 2026 (Act No. 406/2025 Coll.), which is not covered here.

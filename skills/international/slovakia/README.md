@@ -11,7 +11,6 @@ partial:
   VAT: "slovakia-vat-return and slovakia-vat-registration-4-7-7a carry 2025 figures"
   SC: "sk-payroll-social carries 2025 figures and no self-employed (SZCO) contribution method"
   PR: "sk-payroll-social carries 2025 withholding bands; the 2026 monthly bands of 19%, 25%, 30% and 35% are not in it"
-  XB: "sk-cross-border has no per-treaty withholding rate table, and the treaty list it cites is dated 1 January 2022"
 ---
 
 # Slovakia: tax pack
@@ -35,4 +34,5 @@ Calendar tax year. Authority: the Financial Administration (Finančná správa S
 - Act No. 595/2003 Coll. on income tax, version in force from 1 January 2026: https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (read 2026-10-23)
 - Act No. 261/2025 Coll., 2025 consolidation package: https://static.slov-lex.sk/static/SK/ZZ/2025/261/vyhlasene_znenie.html (read 2026-10-23)
 - Act No. 563/2009 Coll., Tax Procedure Code, version in force from 1 September 2026: https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (read 2026-10-23)
+- Ministry of Finance, list of cooperating states under § 2 x) with the treaty for each state, valid from 1 January 2026: https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf (read 2026-10-23)
 - Financial Directorate, list of tax treaties in force (as at 1 January 2022): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf (read 2026-10-23)
