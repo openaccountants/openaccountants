@@ -28,9 +28,9 @@ This skill is the cross-border hub for the UK pack. It holds the non-resident me
 ## Who this applies to
 
 - **Individuals who are not UK resident for the whole tax year** under the statutory residence test (FA 2013 Sch 45). The test, the day counts and the ties are in `uk-statutory-residence-test`. Do not restate them here.
-- **Split years are different.** A person in a split year is UK resident for the year. The overseas part changes how some income is charged, but the s.811 limit below "only applies when an individual has been non-resident for the entire tax year. It does not apply, therefore, in the overseas part of a split year" (HMRC SAIM1170). HMRC's PAYE manual says the same of s.810 and s.811 (PAYE93066).
+- **Split years are different.** A person in a split year is UK resident for the year. The overseas part changes how some income is charged, but the s.811 limit below "only applies when an individual has been non-resident for the entire tax year. It does not apply, therefore, in the overseas part of a split year" (HMRC SAIM1170). HMRC's PAYE manual says s.810 "does not apply in the tax year of arrival in the UK or departure from the UK" (PAYE93066).
 - **Scottish and Welsh taxpayer status does not apply to a non-resident.** Both definitions start with "resident in the UK for income tax purposes" (Scotland Act 1998 s.80D(1)(a); Government of Wales Act 2006 s.116E(1)(a)). A non-resident's non-savings income is charged at the UK "default" rates instead (ITA 2007 s.11C). In a split year the person is UK resident, so Scottish or Welsh status can apply.
-- **Non-resident landlords for the NRL scheme** are a different population: people whose "usual place of abode" is outside the UK (ITA 2007 s.971(2); SI 1995/2902 reg 2). HMRC's guidance says "If you live abroad for 6 months or more per year, you're classed as a 'non-resident landlord' ... even if you're a UK resident for tax purposes". Someone can be in the NRL scheme and still be UK resident under the SRT.
+- **Non-resident landlords for the NRL scheme** are a different population: people whose "usual place of abode" is outside the UK (ITA 2007 s.971(2); SI 1995/2902 reg 2). GOV.UK (Tax on your UK income if you live abroad: rent) says "If you live abroad for 6 months or more per year, you're classed as a 'non-resident landlord' ... even if you're a UK resident for tax purposes". Someone can be in the NRL scheme and still be UK resident under the SRT.
 - **Companies and trusts** are out of scope. Non-resident companies pay corporation tax on UK property income and on gains from UK land (see `uk-corporation-tax`).
 
 ## Rates, bands and thresholds
@@ -41,7 +41,7 @@ This skill is the cross-border hub for the UK pack. It holds the non-resident me
 | Default higher rate | 40% | 2026/27 (also 2025/26) | https://www.legislation.gov.uk/ukpga/2026/11/section/3 |
 | Default additional rate | 45% | 2026/27 (also 2025/26) | https://www.legislation.gov.uk/ukpga/2026/11/section/3 |
 | Savings basic, higher, additional rates | 20%, 40%, 45% | 2026/27 (also 2025/26) | https://www.legislation.gov.uk/ukpga/2026/11/section/3 |
-| Property basic, higher, additional rates (apply to individuals, including non-residents, through ITA s.11CA) | 22%, 42%, 47% | 2027/28 onwards, enacted, not yet in force | https://www.legislation.gov.uk/ukpga/2026/11/section/7 ; https://www.legislation.gov.uk/ukpga/2007/3/section/11C |
+| Property basic, higher, additional rates (apply to individuals, including non-residents, through ITA s.11CA) | 22%, 42%, 47% | 2027/28 onwards, enacted, not yet in force (s.11CA inserted by FA 2026 s.6, rates set by s.7) | https://www.legislation.gov.uk/ukpga/2026/11/section/6 ; https://www.legislation.gov.uk/ukpga/2026/11/section/7 |
 | Dividend ordinary, upper, additional rates | 10.75%, 35.75%, 39.35% (2025/26: 8.75%, 33.75%, 39.35%) | 2026/27 | https://www.legislation.gov.uk/ukpga/2026/11/section/4 |
 | Basic rate band on the HS300 limit working sheet | GBP 37,700, then 40% on the next GBP 87,440, 45% above | 2025/26 working sheet; the limits are frozen to 2030/31 (FA 2026 s.10) | https://assets.publishing.service.gov.uk/media/69bbb455bfd6895605dad865/HS300-WS-2026.pdf |
 | Personal Allowance, if the claimant qualifies under ITA s.56 | GBP 12,570 | 2026/27 | https://www.gov.uk/income-tax-rates |
@@ -65,16 +65,17 @@ This skill is the cross-border hub for the UK pack. It holds the non-resident me
 - **A** is the tax deducted at source, or treated as deducted, from "disregarded income" (s.811(4)).
 - **B** is the tax that would be due if the disregarded income were left out **and** no Personal Allowance, married couple's reduction or treaty relief given through s.56(3) or a treaty were allowed (s.811(5) and (6)).
 
-Disregarded income (s.813 and s.825) is:
+Disregarded income (s.813, s.814 and s.825) is:
 
 - UK bank and building society interest, and other interest within ITTOIA Part 4 Chapter 2;
 - dividends from UK resident companies;
 - purchased life annuity payments, deeply discounted securities, transactions in deposits, unauthorised unit trust income;
-- disregarded annual payments;
+- disregarded annual payments (s.826);
+- disregarded transaction income (s.814: income from transactions carried out through a UK broker or investment manager where the independent broker or investment manager conditions are met);
 - the UK State Pension and other ITEPA s.577 social security pensions, and the pension types listed in s.813(3);
 - taxable social security benefits in ITEPA s.660 Table A, other than income support and jobseeker's allowance.
 
-Income is not disregarded where the non-resident has a UK representative for it (s.813(2)). Property income, employment income, self-employment profits and most private pensions are never disregarded. The limit is a ceiling, not a choice of method: work out the normal liability and the s.811 figure and pay the lower. HMRC's own staff "do two calculations for the year ... to determine the most beneficial one" (PAYE93066). On the return, HS300 and its working sheet do the comparison, and box 28 of the working sheet replaces box A297 of the Tax Calculation Summary working sheet "if smaller".
+Income is not disregarded where the non-resident has a UK representative for it (s.813(2)). Property income, employment income, self-employment profits and most private pensions are never disregarded. Pensions under registered pension schemes are disregarded only where the scheme was a retirement annuity contract immediately before 6 April 2006 (s.813(4)). The limit is a ceiling, not a choice of method: work out the normal liability and the s.811 figure and pay the lower. HMRC's own staff "do two calculations for the year ... to determine the most beneficial one" (PAYE93066). On the return, HS300 and its working sheet do the comparison, and box 28 of the working sheet replaces box A297 of the Tax Calculation Summary working sheet "if smaller".
 
 Since April 2016 banks do not deduct tax from interest ("Income Tax is no longer automatically taken from interest on savings and investments", GOV.UK). So A is usually nil, and the s.811 limit means a non-resident pays nothing on UK bank interest, dividends or the State Pension, at the cost of losing the Personal Allowance against everything else.
 
@@ -126,8 +127,8 @@ Mixed-use property splits: the residential part rebases to 2015, the rest to 201
   - tax is paid within 30 days of each quarter ending 30 June, 30 September, 31 December and 31 March;
   - by 5 July each year the agent or tenant sends form NRLY to HMRC and gives the landlord certificate NRL6.
 
-  The landlord applies on NRL1 (online or by post) to receive rent gross. HMRC approves it if satisfied the landlord "will follow all your UK tax obligations" and will not approve it if returns or payments are late. Approval does not remove the duty to file a return.
-- **UK land disposals**: report every disposal of UK land within 60 days of completion through a Capital Gains Tax on UK property account, "even if you have no tax to pay ... have made a loss ... are registered for Self Assessment". Pay any tax due in the same 60 days. If the person files a Self Assessment return, the gain also goes on the SA108 (boxes 51 to 52.5) with credit for the tax already paid.
+  The landlord applies on NRL1 (online or by post) to receive rent gross. HMRC approves it if satisfied the landlord "will follow all your UK tax obligations" and will not approve it if "you're late with your tax returns or payments". Approval does not remove the duty to file a return: "you'll need to declare your income in your Self Assessment tax return" (GOV.UK, Tax on your UK income if you live abroad: rent).
+- **UK land disposals**: report every disposal of UK land within 60 days of completion through a Capital Gains Tax on UK property account, "even if you have no tax to pay ... have made a loss ... are registered for Self Assessment". Pay any tax due in the same 60 days. If the person files a Self Assessment return, the gain also goes on the SA108 (boxes 52.1 to 52.5, the non-resident CGT section) with credit for the tax already paid in box 52.4.
 - **Treaty claims at source** (for example to receive a UK pension gross) use the country-specific DT form, sent to the tax authority of the country of residence first.
 
 ## Penalties and interest
@@ -138,17 +139,17 @@ Mixed-use property splits: the residential part rebases to 2015, the rest to 201
 | SA tax paid late | 5% of the tax unpaid at 30 days, 6 months and 12 months | https://www.gov.uk/self-assessment-tax-returns/penalties |
 | 60-day UK property return late | FA 2009 Sch 55 paras 3 to 6 apply (table item 2A, returns under FA 2019 Sch 2): GBP 100; GBP 10 a day for up to 90 days after 3 months if HMRC gives notice; then the greater of 5% of the tax or GBP 300 at 6 months and again at 12 months | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 |
 | Late registration (failure to notify) | Based on the tax still unpaid at 31 January | https://www.gov.uk/self-assessment-tax-returns/penalties |
-| Late payment interest | Bank of England base rate plus 4% (from 6 April 2025). 7.75% from 9 January 2026 on HMRC's page | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates |
+| Late payment interest | Bank of England base rate plus 4% (from 6 April 2025). 7.75% from 9 January 2026 on HMRC's page; Bank Rate has stayed at 3.75% since 18 December 2025, so 7.75% is the rate in force at 23 October 2026 | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates ; https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp |
 | NRL agent or tenant pays late | Interest on late quarterly payments; the agent or tenant is liable for tax it should have deducted | https://www.gov.uk/guidance/paying-tax-on-rent-to-landlords-abroad |
 
-The HMRC interest page was last updated on 23 December 2025. Check it for any base rate change since 9 January 2026 before quoting interest to a client.
+The HMRC interest page was last updated on 23 December 2025. The rate moves with Bank Rate, so check both pages on the day before quoting interest to a client.
 
 ## Cross-border points
 
 - **Treaty tie-breaker.** A person resident in the UK under the SRT and also resident elsewhere may be treaty non-resident. That changes treaty relief, not SRT status. It also matters for temporary non-residence, since "sole UK residence" excludes any time as treaty non-resident (FA 2013 Sch 45 para 112). SA109 boxes 18 to 21 and HS302 handle the claim.
 - **Relief for UK tax in the country of residence.** The UK taxes the UK-source income. The country of residence usually gives the credit or exemption. GOV.UK: "If the tax rates in the 2 countries are different, you'll pay the higher rate of tax."
 - **Treaties and UK land.** HMRC says many treaties decide taxing rights on UK land disposals and a return is needed to claim treaty relief. Read the gains article of the relevant treaty. Most preserve the UK's right over immovable property in the UK.
-- **Rates beyond 2026/27.** From 2027/28 the property rates of 22%, 42% and 47% apply to individuals' property income, and the savings rates rise to 22%, 42% and 47% (FA 2026 ss.5 and 7). Under s.811, UK interest of a non-resident stays disregarded. Under the normal computation it would be taxed at the new savings rates.
+- **Rates beyond 2026/27.** The NRL deduction rate for 2027/28 and the regulations that change it are covered in `uk-rental-sa105`. From 2027/28 the property rates of 22%, 42% and 47% apply to individuals' property income, and the savings rates rise to 22%, 42% and 47% (FA 2026 ss.5 and 7). Under s.811, UK interest of a non-resident stays disregarded. Under the normal computation it would be taxed at the new savings rates.
 - **Social security.** A non-resident working in the UK can still owe Class 1 NIC; this depends on the social security agreement or the UK-EU Trade and Cooperation Agreement protocol, not the tax treaty. See `uk-national-insurance`.
 - **Companies.** Non-resident companies with UK property income or UK land gains: see `uk-corporation-tax`.
 
@@ -156,7 +157,7 @@ The HMRC interest page was last updated on 23 December 2025. Check it for any ba
 
 ### Example 1: non-resident landlord, s.811 limit against full liability (2026/27)
 
-Ana lives in Portugal all year and is not UK resident under the SRT. She lets a London flat through a UK agent. Net rent after allowable expenses is GBP 18,000. She also has GBP 2,000 of UK bank interest, paid gross. She has no NRL1 approval, so the agent deducted 20% of the net rent: GBP 3,600.
+Ana lives in Portugal all year and is not UK resident under the SRT. She lets a London flat through a UK agent. Net rent after allowable expenses, all paid through the agent, is GBP 18,000. She also has GBP 2,000 of UK bank interest, paid gross. She has no NRL1 approval, so the agent deducted 20% of the net rent: GBP 3,600.
 
 **If she can claim a Personal Allowance** (for example as an EEA national under s.56(3)(za)):
 
@@ -265,6 +266,7 @@ If Ben had UK income, his taxable UK income would use up the basic rate band fir
 | ITA 2007 s.811 (limit on liability of non-UK residents) | https://www.legislation.gov.uk/ukpga/2007/3/section/811 | 2026-10-23 |
 | ITA 2007 s.812 (case where limit does not apply) | https://www.legislation.gov.uk/ukpga/2007/3/section/812 | 2026-10-23 |
 | ITA 2007 s.813 (meaning of disregarded income) | https://www.legislation.gov.uk/ukpga/2007/3/section/813 | 2026-10-23 |
+| ITA 2007 s.814 (disregarded transaction income) | https://www.legislation.gov.uk/ukpga/2007/3/section/814 | 2026-10-23 |
 | ITA 2007 s.825 (disregarded savings and investment income) | https://www.legislation.gov.uk/ukpga/2007/3/section/825 | 2026-10-23 |
 | ITA 2007 s.56 (residence etc of claimants for allowances) | https://www.legislation.gov.uk/ukpga/2007/3/section/56 | 2026-10-23 |
 | ITA 2007 s.11C (default rates for non-UK resident individuals) | https://www.legislation.gov.uk/ukpga/2007/3/section/11C | 2026-10-23 |
@@ -272,6 +274,7 @@ If Ben had UK income, his taxable UK income would use up the basic rate band fir
 | ITA 2007 s.971 (non-resident landlords) | https://www.legislation.gov.uk/ukpga/2007/3/section/971 | 2026-10-23 |
 | Finance Act 2026 s.3 (default and savings rates 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/3 | 2026-10-23 |
 | Finance Act 2026 s.2 (main rates 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/2 | 2026-10-23 |
+| Finance Act 2026 ss.6 and 7 (property rates from 2027-28) | https://www.legislation.gov.uk/ukpga/2026/11/section/6 | 2026-10-23 |
 | Finance Act 2025 s.3 (default and savings rates 2025-26) | https://www.legislation.gov.uk/ukpga/2025/8/section/3 | 2026-10-23 |
 | ITEPA 2003 s.27 (UK-based earnings of non-residents) | https://www.legislation.gov.uk/ukpga/2003/1/section/27 | 2026-10-23 |
 | TCGA 1992 s.1A (territorial scope) | https://www.legislation.gov.uk/ukpga/1992/12/section/1A | 2026-10-23 |
@@ -296,6 +299,8 @@ If Ben had UK income, his taxable UK income would use up the basic rate band fir
 | GOV.UK, Capital Gains Tax rates and allowances | https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances | 2026-10-23 |
 | GOV.UK, Income Tax rates and Personal Allowances | https://www.gov.uk/income-tax-rates | 2026-10-23 |
 | GOV.UK, Self Assessment tax returns: deadlines and penalties | https://www.gov.uk/self-assessment-tax-returns | 2026-10-23 |
+| Bank of England, Bank Rate history | https://www.bankofengland.co.uk/boeapps/database/Bank-Rate.asp | 2026-10-23 |
+| GOV.UK, Tax on your UK income if you live abroad: rent | https://www.gov.uk/tax-uk-income-live-abroad/rent | 2026-10-23 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-23 |
 
-Not yet confirmed: whether HMRC's late payment interest rate has changed since 9 January 2026 (the HMRC page was last updated 23 December 2025); the 2026/27 SA109 notes and HS300 working sheet (only the 2025/26 editions, published in 2026, were available); the legislation.gov.uk text of SI 1995/2902 is shown in its original form, so later amendments to the regulation wording were not checked (the current HMRC guidance was used for the 20% rate and the GBP 100 a week test).
+Not yet confirmed: the 2026/27 SA109 notes and HS300 working sheet (only the 2025/26 editions, published in 2026, were available); the legislation.gov.uk text of SI 1995/2902 is shown in its original form, so later amendments to the regulation wording were not checked (the current HMRC guidance was used for the 20% rate and the GBP 100 a week test).
