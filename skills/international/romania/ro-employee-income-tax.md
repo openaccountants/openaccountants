@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -100,7 +100,8 @@ Art. 121 lets the annual budget law grant a discount of up to 10% for early paym
 - Late-payment penalty: 0.01% a day, on top of the interest (art. 176 alin. (2)).
 - If the Declarația unică is not filed by 25 May 2027, interest on the 2026 income tax runs from 1 January 2027 instead of from the due date (art. 175 alin. (1) lit. d)). The same rule applies to CASS (art. 175 alin. (4)).
 - Tax not declared or declared wrong and found by ANAF in an assessment: a non-declaration penalty of 0.08% a day instead of the late-payment penalty. It is cut by 75% if the assessed amount is paid by its due date or rescheduled (art. 181 alin. (1)-(2)).
-- Filing the Declarația unică late: a fine of RON 500 to 1,000 for an individual (art. 336 alin. (1) lit. b), alin. (2) lit. d)).
+- Filing the Declarația unică or another income return late: a fine of RON 50 to 500 for an individual (art. 336 alin. (3)).
+- Filing another declaration late, such as a fiscal registration: a fine of RON 500 to 1,000 for an individual (art. 336 alin. (1) lit. a)-b), alin. (2) lit. d)).
 
 ## Cross-border points
 
