@@ -26,7 +26,7 @@ Law 80/2026 (in force 8 September 2026) does not change Articles 59 to 61v. It d
   - A person who directly or indirectly holds at least 25% of the shares or interests is treated as able to control the taxpayer.
   - A person who directly or indirectly holds at least 25% of the votes in the management bodies has significant influence.
   - Two companies are related when the same persons take part in their management, control or capital at those levels.
-  - Family members are related: spouse or partner, descendants, adopted children and their descendants, parents, adoptive parents, siblings and their descendants, grandparents and their descendants, and the spouse's siblings and parents.
+  - The family of a person who is related under the 25% tests is related too: spouse or partner, descendants, adopted children and their descendants, parents, adoptive parents, siblings and their descendants, grandparents and their descendants, and the spouse's or partner's siblings and parents (Article 59(6)).
   - Any non-resident legal entity from a jurisdiction with a preferential tax system is a related party, whatever the ownership (Article 59(7)). The list of those jurisdictions is a Minister of Finance rulebook (see rs-corporate-tax).
 - **Not related.** The Republic, an autonomous province and a local government unit are not treated as legal entities for Articles 59 to 61a (Article 61b).
 - **Sale of capital assets.** A company that sells a capital asset covered by Article 27 (capital gains) to a related party does not have to price it at arm's length or document it (Article 60(6)).
@@ -39,7 +39,7 @@ Law 80/2026 (in force 8 September 2026) does not change Articles 59 to 61v. It d
 | Short-form report allowed (except loans) | one-off transaction, or total with one related party in the year, not above the VAT registration turnover | 2026 | https://www.mfin.gov.rs/upload/media/vlmAb4_675ab2034cea0.docx (ZPDPL Art. 60(4)); https://www.purs.gov.rs/upload/media/2025/2/4/373665/Pravilnikotransfernimcenama.docx (Rulebook Art. 2(3)) |
 | VAT registration turnover used for that test | RSD 8,000,000 in the previous 12 months | 2026 | https://www.purs.gov.rs/sr/pravna-lica/pdv/zakon/202/zakon-o-porezu-na-dodatu-vrednost.html (VAT Law Art. 38(1)) |
 | Left out of the short-form test value | interest on loans, advances given or received, VAT | 2026 | ZPDPL Art. 60(5) |
-| Arm's length range (TNMM) | interquartile range, first to third quartile; weighted average of 3 to 5 years of comparables | 2026 | Rulebook Arts. 26 and 24(2) |
+| Arm's length range (TNMM) | interquartile range, first to third quartile; weighted average of 3 to 5 years of comparables | 2026 | Rulebook Art. 26(1), (3) and (4) |
 | Price outside the range | adjusted to the midpoint of the range | 2026 | ZPDPL Art. 60(10); Rulebook Art. 31(6) |
 | Activity analysis can be skipped | activity is not the main one and earns under 10% of total income | 2026 | Rulebook Art. 4(2) |
 | Fixed asset bought from a related party | depreciation base is the lower of transfer price and arm's length price; 20% of the difference goes into the adjustment in the year and the next four years | 2026 | ZPDPL Art. 10a; Rulebook Art. 31(3) |
@@ -110,7 +110,7 @@ The taxpayer uses the method that best fits the facts, and may combine methods (
 - **Missing or incomplete documentation (ZPDPL Article 112a).** The tax authority first issues a warning and orders the taxpayer to file or complete the documentation within a period of 30 to 90 days from delivery of the warning.
 - **Documentation not filed with the return (ZPPPA Article 178a).** A legal entity is fined RSD 100,000 to 2,000,000. If it files the documents after the deadline, the fine is RSD 100,000. The responsible person is fined RSD 10,000 to 100,000 (RSD 10,000 for late filing).
 - **Documents not produced on request in an audit (ZPPPA Article 179(1), item 10).** RSD 100,000 to 2,000,000 for the company, RSD 10,000 to 100,000 for the responsible person.
-- **Tax understated because of a transfer pricing adjustment (ZPPPA Article 178).** 30% to 40% of the tax difference, at least RSD 200,000. If the difference is up to 5% of the correct tax, the fine is RSD 100,000. The responsible person is fined RSD 10,000 to 100,000.
+- **Tax understated because of a transfer pricing adjustment (ZPPPA Article 178).** 30% to 40% of the tax difference, at least RSD 200,000. If the difference is up to 5% of the correct tax, the fine is RSD 100,000 (RSD 10,000 for the responsible person). Otherwise the responsible person is fined RSD 10,000 to 100,000. No fine may exceed the maximum set by the law on misdemeanours (Article 178(6)).
 - **Late-payment interest (ZPPPA Article 75).** The National Bank of Serbia reference rate plus 10 percentage points, simple interest, from the day after the original due date. The current rate is in rs-corporate-tax.
 
 ## Cross-border points
@@ -153,7 +153,7 @@ expected:
 
 Šumadija Gradnja d.o.o. borrows RSD 100,000,000 from its Cypriot parent on a five-year loan at 10% a year. The loan is drawn on 1 April 2026, so it runs 275 days in 2026. The company uses the rulebook rates (it has not elected the general method under Article 61(4)). The 2026 rate for a long-term RSD loan to a company that is not a bank or leasing company is 7.21%.
 
-Thin capitalisation is not a problem here. Equity under the Article 62 definition is RSD 30,000,000, so the limit is RSD 120,000,000 of related-party debt, above the RSD 100,000,000 borrowed. Interest charged in 2026 is RSD 7,534,246.58 (100,000,000 × 10% × 275 / 365). Arm's length interest is RSD 5,432,191.78 (at 7.21%). The excess expense of RSD 2,102,054.79 goes into the tax base (Article 60(8), item 2), and the extra tax at 15% is RSD 315,308.22. The 20% withholding on the interest paid to Cyprus, and any treaty rate, is a separate question covered in rs-corporate-tax.
+Thin capitalisation is not a problem here. Equity under the Article 62 definition is RSD 30,000,000, so the limit is RSD 120,000,000 of related-party debt, above the RSD 100,000,000 borrowed. Interest charged in 2026 is RSD 7,534,246.58 (100,000,000 × 10% × 275 / 365). Arm's length interest is RSD 5,432,191.78 (at 7.21%). The excess expense of RSD 2,102,054.79 goes into the tax base (Article 60(8), item 2), and the extra tax at 15% is RSD 315,308.22. Withholding on the interest paid to Cyprus (20%, or 25% if the payee is from a jurisdiction on the preferential tax list) and any treaty rate are a separate question covered in rs-corporate-tax.
 
 ```oa-check
 name: Example 2, RSD long-term related-party loan at 10% against the 7.21% rulebook rate, 275 days
