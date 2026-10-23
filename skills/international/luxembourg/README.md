@@ -2,8 +2,7 @@
 jurisdiction: LU
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  IT-IND: "luxembourg-income-tax has the 2026 scale, surcharge, classes, tax credits and CCSS rates from the LIR and the CCSS, but has no depreciation rates or representation-cost rule, its transaction patterns, Form 163 and advance-payment dates are not checked against an official source, its VAT threshold and rates cite a secondary source, and the dependency abatement from 1 June 2026 is not stated"
+partial: {}
 covered_by: {}
 ---
 
@@ -38,3 +37,6 @@ luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the 
 - ACD, monthly withholding formulas for the 2025 scales (still in force in 2026), read 2026-10-23: https://impotsdirects.public.lu/dam-assets/fr/baremes/bareme-2025-format-excel.xlsx
 - Règlement grand-ducal of 20 December 2024 publishing the withholding scales (Mémorial A 590), read 2026-10-23: https://legilux.public.lu/eli/etat/leg/rgd/2024/12/20/a590/jo
 - CCSS, notice to employers, contribution minima and maximum at 1 June 2026, read 2026-10-23: https://ccss.public.lu/dam-assets/publications/2026/ccss-20260814-avis-80-99.pdf
+- ACD, depreciation circulars L.I.R. n° 32/2 (building components) and 34/1 (immediate write-off), read 2026-10-23: https://impotsdirects.public.lu/fr/legislation/circulaires.html
+- ACD, annual adjustment forms 163 R / 163 NR, read 2026-10-23: https://impotsdirects.public.lu/fr/formulaires/decompte_annuel.html
+- AED (pfi.public.lu), VAT franchise from 1 January 2025 and national VAT rates, read 2026-10-23: https://pfi.public.lu/fr/professionnel/tva/sme.html
