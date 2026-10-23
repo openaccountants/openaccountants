@@ -49,12 +49,14 @@ Out of scope: investment funds, SPF, securitisation and holding structures for g
 | Private pension (prévoyance-vieillesse) contract or Luxembourg PEPP sub-account | EUR 4,500 a year per taxpayer, one cap for both kinds of contract | 2026 (law of 19 December 2025) | LIR arts. 111bis(7) and 111ter(7) (same URL) |
 | Employee's own contributions to an employer supplementary pension scheme | EUR 1,200 a year | 2026 | LIR art. 110 no. 3 (same URL) |
 | Self-employed contributions to an approved supplementary pension scheme | up to 20% of net business income (arts. 10 nos. 1 to 3), on an actuary's certificate | 2026 | LIR art. 110 no. 3a (same URL) |
-| Gifts to approved bodies | up to 20% of total net income and EUR 1,000,000; the excess carries forward | 2026 | LIR art. 109(1) no. 3 (same URL) |
+| Gifts to approved bodies | up to 20% of total net income and EUR 1,000,000; the excess carries forward to the next two tax years | 2026 | LIR art. 109(1) no. 3 (same URL) |
 | Extra-professional abatement | EUR 4,500 for spouses taxed jointly who both have professional income; EUR 2,250 each if taxed individually | 2026 | LIR art. 129b(1) (same URL) |
 | Investment income taxed by assessment | First EUR 1,500 a year exempt (EUR 3,000 for spouses taxed jointly) | 2026 | LIR art. 115 no. 15 (same URL) |
 | Dividends from a fully taxable resident company (or treaty or EU equivalent) | 50% exempt in the shareholder's hands | 2026 | LIR art. 115 no. 15a (same URL) |
 | Withholding tax on dividends | 15% (17.65% on the net amount if the company bears it); credited against the shareholder's income tax | 2026 | LIR arts. 148(1) and 154(1) no. 2 (same URL) |
-| Start-up investment credit | 20% of the eligible investment in new shares of a start-up (under 5 years old, under 50 staff, balance sheet or turnover up to EUR 10m); at least EUR 10,000 invested; stake above 30% not eligible; credit capped at EUR 100,000 a year | 2026 (law of 22 December 2025) | LIR art. 154quaterdecies (same URL) |
+| Start-up investment credit | 20% of the eligible investment in new shares of an innovative start-up (under 5 years old, under 50 staff, balance sheet or turnover up to EUR 10m); at least EUR 10,000 invested in the entity in the year; the part that takes the investor above 30% of the capital is not eligible; credit capped at EUR 100,000 a year | from tax year 2026 (law of 19 December 2025, Mémorial A 2025 n° 617, art. 3) | LIR art. 154quaterdecies (same URL) |
+| Abatement for staying in work after pension rights open | up to EUR 9,000 a year (EUR 750 a month) | from tax year 2026 (law of 19 December 2025, Mémorial A 2025 n° 623) | LIR art. 129g (same URL) |
+| Interest on the owner's own home (deducted against the rental value, not as a special expense) | in full in the year the rental value is first fixed and the next year; then EUR 4,000 a year for four years, EUR 3,000 a year for five years, then EUR 2,000 a year; each cap is increased by its own amount for a spouse taxed jointly and for each child | from tax year 2024 | LIR art. 98(4); grand-ducal regulation of 12 July 1968 as amended, as stated by [ACD, habitation personnelle](https://impotsdirects.public.lu/fr/az/h/habit_pers.html) |
 | IRC, taxable income up to EUR 175,000 | 14% | 2025 onwards | [ACD, IRC tariff](https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html) |
 | IRC, EUR 175,000 to 200,000 | EUR 24,500 plus 30% of the income above EUR 175,000 | 2025 onwards | same |
 | IRC, above EUR 200,000 | 16% | 2025 onwards | same |
@@ -77,10 +79,11 @@ Out of scope: investment funds, SPF, securitisation and holding structures for g
 - **Private pension (art. 111bis).** Up to EUR 4,500 a year per person into an approved prévoyance-vieillesse contract, or a Luxembourg PEPP sub-account (art. 111ter). Spouses taxed jointly each get their own cap. The contract must run at least 10 years and pay out between ages 60 and 75. Payout as capital or annual withdrawals is taxed under art. 99 no. 4.
 - **Interest and insurance (art. 109(1) no. 1a).** One EUR 672 cap per person covers consumer-loan interest and the listed insurance premiums. It does not cover the private pension, which has its own cap.
 - **Home-savings contract (art. 111(1)(c) and (5)).** A separate cap of EUR 1,344 or EUR 672, if the money finances the client's own home.
-- **Own-home mortgage interest.** Under art. 98(4) the limits for interest on the owner's home are set by grand-ducal regulation, not by the LIR. This skill does not state those limits; see Not yet confirmed.
+- **Own-home mortgage interest.** Under art. 98(4) the limits are set by grand-ducal regulation (12 July 1968, as amended). From tax year 2024 interest is deductible in full in the year the home's rental value is first fixed and the year after, then up to EUR 4,000, EUR 3,000 and finally EUR 2,000 a year, each increased by its own amount for a spouse taxed jointly and for each child ([ACD](https://impotsdirects.public.lu/fr/az/h/habit_pers.html)). This is a deduction against the rental value, separate from the EUR 672 cap.
+- **Staying in work after pension rights open (art. 129g).** From 2026 a person who meets the conditions for a Luxembourg personal pension but keeps working and does not draw it gets an abatement of up to EUR 9,000 a year (EUR 750 a month), on a certificate from the pension body.
 - **Supplementary pensions.** An employee can deduct up to EUR 1,200 of own contributions to the employer's scheme (art. 110 no. 3). A self-employed person can deduct contributions to an approved scheme up to 20% of net business income (art. 110 no. 3a).
 - **Couples.** Spouses taxed jointly who both work get a EUR 4,500 extra-professional abatement (art. 129b), capped at the lower earner's net income from work.
-- **Start-up credit.** A resident who subscribes at least EUR 10,000 in new shares of a qualifying start-up gets a credit of 20% of the eligible amount, capped at EUR 100,000 a year (art. 154quaterdecies). The shares must be held at least three years.
+- **Start-up credit.** From 2026 a resident who subscribes at least EUR 10,000 in new, fully paid shares of a qualifying start-up gets a credit of 20% of the eligible amount, capped at EUR 100,000 a year (art. 154quaterdecies). The start-up must be innovative (at least two full-time staff and R&D of at least 15% of operating costs, certified). The client cannot claim it for the client's own company: a founder, or anyone employed by the start-up, is excluded, and so are shares held as business assets. The shares must be held three years. Credit above the tax due carries forward; it is not refunded.
 
 **Red lines (do not cross).**
 
@@ -94,7 +97,7 @@ Out of scope: investment funds, SPF, securitisation and holding structures for g
 - NEVER advise taking profit out as interest-free loans, private costs or above-market pay to a shareholder. Those are hidden distributions (art. 164(3)).
 - NEVER present incorporation as a pure tax play without the substance and anti-abuse warning.
 - NEVER contradict the rates in `luxembourg-income-tax`, `lu-corporate-tax` or `luxembourg-social-contributions`. If they differ, the LIR and the CCSS pages win.
-- NEVER state the own-home mortgage interest ceilings from memory; they sit in a regulation this skill has not read.
+- NEVER offer the start-up credit for the client's own company; founders and employees of the start-up are excluded (art. 154quaterdecies(3)).
 - NEVER present a plan as final advice. Route it to a Luxembourg tax adviser.
 
 ## Deadlines and filing
@@ -212,7 +215,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| LIR, consolidated text in force on 1 January 2026 (arts. 98, 109, 110, 111, 111bis, 111ter, 113, 115, 118, 129b, 135, 148, 154, 154quaterdecies, 164) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
+| LIR, consolidated text in force on 1 January 2026 (arts. 98, 99, 109, 110, 111, 111bis, 111ter, 113, 115, 118, 126, 129b, 129g, 135, 148, 154, 154quaterdecies, 164) | https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf | 2026-10-23 |
 | ACD, IRC tariff from 2025 | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect.html | 2026-10-23 |
 | ACD, net wealth tax tariff and minimum | https://impotsdirects.public.lu/fr/az/t/tarif-applicable-collectivites/tarif-collect-if.html | 2026-10-23 |
 | ACD, overall tax burden of a company (23.87%) | https://impotsdirects.public.lu/fr/az/c/charg_fisc.html | 2026-10-23 |
@@ -221,7 +224,10 @@ expected:
 | ACD, fonds pour l'emploi | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
 | ACD, filing deadlines | https://impotsdirects.public.lu/fr/az/d/delais/depot.html | 2026-10-23 |
 | ACD, late filing and late payment | https://impotsdirects.public.lu/fr/az/p/prelev.html | 2026-10-23 |
+| ACD, own home of the owner (interest limits from tax year 2024) | https://impotsdirects.public.lu/fr/az/h/habit_pers.html | 2026-10-23 |
+| Legilux, law of 19 December 2025, Mémorial A 2025 n° 617 (start-up credit, from tax year 2026) | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a617/jo | 2026-10-23 |
+| Legilux, law of 19 December 2025, Mémorial A 2025 n° 623 (EUR 4,500 pension cap, art. 129g, from tax year 2026) | https://legilux.public.lu/eli/etat/leg/loi/2025/12/19/a623/jo | 2026-10-23 |
 | ACD, laws of 2018 (ATAD transposition, law of 21 December 2018) | https://impotsdirects.public.lu/fr/legislation/legi18.html | 2026-10-23 |
 | CCSS, social parameters (2026 rates, minimum and maximum base) | https://ccss.public.lu/fr/parametres-sociaux.html | 2026-10-23 |
 
-Not yet confirmed: the limits on interest for the owner's own home, which art. 98(4) leaves to a grand-ducal regulation that was not read; the first tax year of the start-up investment credit (added by the law of 22 December 2025); the exact provision of the Steueranpassungsgesetz that holds the anti-abuse rule; when a shareholder-manager of a SARL is insured with the CCSS as self-employed rather than as an employee (see `luxembourg-social-contributions`).
+Not yet confirmed: the own-home interest limits come from the ACD page; the text of the amended grand-ducal regulation of 12 July 1968 on Legilux was not read; the exact provision of the Steueranpassungsgesetz that holds the anti-abuse rule; when a shareholder-manager of a SARL is insured with the CCSS as self-employed rather than as an employee (see `luxembourg-social-contributions`).
