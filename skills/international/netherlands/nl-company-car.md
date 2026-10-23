@@ -28,13 +28,15 @@ This skill is the car method that `nl-payroll-tax` and `netherlands-payroll` ref
 |---|---|---|---|
 | General addition, first admission on or after 1 Jan 2017 | 22% of catalogue value | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 13bis(1)(a)) |
 | General addition, first admission before 1 Jan 2017 | 25% of catalogue value | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 36c) |
-| Car more than 16 years since first use (youngtimer) | 35% of market value | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/bijtelling-privegebruik-auto-2026 |
+| Car more than 16 years since first use (youngtimer) | 35% of market value | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 13bis(1)(b)); https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (par. 23.3.20) |
 | Zero-emission discount, first admission 2026 | minus 4% of value, at most EUR 1,200 (so 18% on the first EUR 30,000, 22% above) | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 13bis(2)) |
 | Zero-emission discount, first admission 2025 | 17% up to EUR 30,000, 22% above | 2026 (60-month lock) | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
 | Zero-emission discount, first admission 2023 and 2024 | 16% up to EUR 30,000, 22% above | 2026 (60-month lock) | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
 | Zero-emission discount, first admission 2022 | 16% up to EUR 35,000, 22% above | 2026 (60-month lock) | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
 | Zero-emission, first admission 2021, inside 60 months | 12% up to EUR 40,000, 22% above; after the 60 months 18% up to EUR 30,000 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (par. 23.3.4) |
 | Zero-emission, first admission 2017 to 2020 (60 months expired) | 18% up to EUR 30,000, 22% above | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (par. 23.3.4) |
+| Zero-emission, first admission 2010 to 2016 (rate set by date of first Dutch registration, general rate 25%) | first registration 2026: 21% up to EUR 30,000; 2025: 20% up to EUR 30,000; 2023 and 2024: 19% up to EUR 30,000; 2022: 19% up to EUR 35,000; 2021 inside 60 months: 15% up to EUR 40,000, after: 21% up to EUR 30,000; 2010 to 2020: 21% up to EUR 30,000; 25% above the cap | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf; https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (par. 23.3.4) |
+| Zero-emission youngtimer (more than 16 years old) | 35% of market value less the discount for its date of first Dutch registration, for example 31% up to EUR 30,000 for registration in 2026 or before 2020 | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf (par. 23.3.4) |
 | Hydrogen and qualifying solar-cell cars | discount on the whole value, no EUR 30,000 cap (18% for 2026 admissions) | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 13bis(2)) |
 | Private-use threshold | 500 km a calendar year | 2026 | https://wetten.overheid.nl/BWBR0002471/2026-01-01 (art. 13bis(1), (3)) |
 | Final levy for continuous alternating use of a van | EUR 451 a van a year (EUR 37.58 a month) | 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf |
@@ -52,9 +54,9 @@ This skill is the car method that `nl-payroll-tax` and `netherlands-payroll` ref
 
 A car made available for part of the year: scale private km to a full year before testing the 500 km limit (par. 23.3.10). 200 km in three months is 800 km a year, so the addition applies.
 
-**Step 2. The value (grondslag).** The Dutch catalogue price at the date of first admission, including VAT and BPM, plus factory or dealer accessories fitted before registration (art. 13bis(5)(b); par. 23.3.2). Use the RDW licence-plate check for cars registered from 2005. An imported used car uses the Dutch catalogue price at its first admission anywhere. For a car more than 16 years since first use, the value is the market value (par. 23.3.20).
+**Step 2. The value (grondslag).** The Dutch catalogue price at the date of first admission, including VAT and BPM, plus factory or dealer accessories fitted before registration (art. 13bis(5)(b); par. 23.3.2). Use the RDW licence-plate check for cars registered from 2005. An imported used car uses the Dutch catalogue price at its first admission anywhere. For a car more than 16 years since first use, the value is the market value (par. 23.3.20). The law text in force still says market value from 15 years (art. 13bis(5)(b)), while the 35% rate starts after 16 years (art. 13bis(1)(b)). The State Secretary told the Senate on 15 January 2026 that this is an omission and will be repaired with retroactive effect from 1 January 2026 (letter ref. 2026-0000011922). The repair was not yet in the law text on 23 October 2026. Follow the Belastingdienst: a car aged 15 to 16 uses its catalogue value.
 
-**Step 3. The percentage.** 22% for first admission on or after 1 January 2017, 25% before that. For a zero-emission car, apply the discount for its year of first admission (table above). The 2026 discount is 4% of the value, capped at EUR 1,200. That equals 18% on the first EUR 30,000 and 22% on the rest.
+**Step 3. The percentage.** 22% for first admission on or after 1 January 2017, 25% before that (art. 36c). For a zero-emission car first admitted before 2017, the discount follows the date of first Dutch registration (tenaamstelling), not first admission (par. 23.3.3, 23.3.4). For a zero-emission car, apply the discount for its year of first admission (table above). The 2026 discount is 4% of the value, capped at EUR 1,200. That equals 18% on the first EUR 30,000 and 22% on the rest.
 
 **Step 4. The 60-month rule.** The discount in force at first admission stays fixed for 60 months. The 60 months start on the first day of the month after the month of first admission (art. 13bis(18)). A car first admitted on 7 March 2026 keeps 18% up to EUR 30,000 until 31 March 2031. After that the rules then in force apply. When the period ends during the year, make two calculations: the old rate up to the end month, the new rate after (Handboek par. 23.3.3, example 1).
 
@@ -70,7 +72,7 @@ A car made available for part of the year: scale private km to a full year befor
 
 **Vans used in rotation.** If two or more employees use a van in continuous rotation because of the work, the employer pays a final levy of EUR 451 a van a year instead of individual additions (par. 23.4.5).
 
-**Youngtimer transition.** A car already made available in 2025 that was at least 15 years old on 31 December 2025 and turns 16 during 2026 may use 35% of market value for all of 2026. A car that turns 15 on or after 1 January 2026 uses 25% of catalogue value until it is more than 16 years old (par. 23.3.20). From 2027 the youngtimer age is 25 years (par. 23.3.20, Let op 2).
+**Youngtimer transition.** A car already made available to the same employee in 2025 that was at least 15 years old on 31 December 2025 and turns 16 during 2026 may use 35% of market value for all of 2026. This is an elective approval by policy decision ahead of legislation (Kamerstukken II 2025-26, 36812, nr. 116); the employer may instead use the catalogue value if that gives a lower addition. A car that turns 15 on or after 1 January 2026 uses 25% of catalogue value until it is more than 16 years old (par. 23.3.20). From 2027 the youngtimer age is 25 years and the discount for zero-emission cars first admitted in 2027 is 2% of the value, capped at EUR 600 (art. 13bis(1) and (2) as they read from 1 January 2027; par. 23.3.20, Let op 2).
 
 ## Deadlines and filing
 
@@ -86,7 +88,7 @@ A car made available for part of the year: scale private km to a full year befor
 - **Late or wrong return.** EUR 83 a return after the seven-day grace period; up to EUR 1,675 in exceptional repeat cases (par. 13.5.2, 13.5.4, 13.5.5).
 - **Employee statement that turns out wrong.** If an employee with a Verklaring geen privégebruik auto drives more than 500 private km, the assessment for past periods goes to the **employee**, for wage tax, employee-insurance premiums and the Zvw contribution, with possible interest and a fine. The employer pays no employer Zvw or premiums for those periods. The assessment can be raised up to five years after the calendar year. If the employer knew the statement was wrong, the assessment goes to the employer (art. 13bis(11); par. 23.3.16).
 - **Van statement and a private trip.** If the inspector suspects a private trip and the business purpose cannot be shown, the van is treated as used for more than 500 private km and the tax is assessed on the employee, or on the employer if it knew (art. 13bis(15)).
-- Interest (belastingrente) can apply to corrections of past years (par. 13.5.5).
+- Interest (belastingrente) is charged on a supplementary assessment for a past year (par. 14.5.1).
 
 ## Cross-border points
 
@@ -173,11 +175,14 @@ expected:
 |---|---|---|
 | Wet op de loonbelasting 1964, art. 13bis, 31 and 36c (version 1 Jan 2026, and current version from 8 Oct 2026) | https://wetten.overheid.nl/BWBR0002471/2026-01-01 | 2026-10-23 |
 | Wet op de loonbelasting 1964, current version | https://wetten.overheid.nl/BWBR0002471/ | 2026-10-23 |
+| Wet op de loonbelasting 1964, version from 1 Jan 2027 (art. 13bis) | https://wetten.overheid.nl/BWBR0002471/2027-01-01 | 2026-10-23 |
+| Staatssecretaris van Financiën, letter to the Eerste Kamer, Herstel omissie versobering youngtimerregeling, 15 Jan 2026 | https://apiback.eerstekamer.nl/9370000/1/j9vvkfvj6b325az/vmu8e84v2svn/f=/vmu8e84n1bqh.pdf | 2026-10-23 |
+| Kamerstukken II 2025-26, 36812, nr. 116 (transition for cars that turned 15 in 2025) | https://zoek.officielebekendmakingen.nl/kst-36812-116.html | 2026-10-23 |
 | Wet inkomstenbelasting 2001, art. 3.145 (repealed 1 Jan 2006) | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-23 |
-| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), par. 13.2, 13.4, 13.5, 23.3, 23.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-23 |
+| Belastingdienst, Handboek Loonheffingen 2026 (March 2026), par. 13.2, 13.4, 13.5, 14.5, 23.3, 23.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-23 |
 | Belastingdienst, Tarieven, bedragen en percentages loonheffingen 2026 | https://download.belastingdienst.nl/belastingdienst/docs/bijlage-nieuwsbrief-loonheffingen-2026-lh2091b64fd.pdf | 2026-10-23 |
 | Belastingdienst, Bijtelling privégebruik auto 2026 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/bijtelling-privegebruik-auto-2026 | 2026-10-23 |
 | Belastingdienst, Werknemer: wat is mijn bijtelling? | https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/reizen-werk-privegebruik-werknemer-wat-is-mijn-bijtelling | 2026-10-23 |
 | Kennisgroep Belastingdienst KG:213:2026:1 (youngtimer age 25 from 2027) | https://kennisgroepen.belastingdienst.nl/publicaties/kg21320261-heretikettering-bij-wetswijziging-privegebruik-auto/ | 2026-10-23 |
 
-Not yet confirmed: (1) the consolidated text of Wet LB art. 13bis(5)(b) still says market value applies to a car more than 15 years old, while art. 13bis(1)(b), the Handboek and belastingdienst.nl apply market value and 35% only after 16 years; this skill follows the Handboek and the 2026 transition, and the gap for a car aged 15 to 16 is not settled; (2) the 2027 text of art. 13bis (no zero-emission discount for new admissions, youngtimer age 25) was not read in the law itself, only in the Handboek and KG:213:2026:1; (3) no October 2026 edition of the Handboek Loonheffingen 2026 was found, so the March 2026 edition is used.
+Not yet confirmed: (1) the retroactive repair of art. 13bis(5)(b) (market value from 16 instead of 15 years) is announced but was not in the law text on 23 October 2026; (2) no October 2026 edition of the Handboek Loonheffingen 2026 was found, so the March 2026 edition is used.
