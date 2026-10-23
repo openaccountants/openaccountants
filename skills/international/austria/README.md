@@ -3,9 +3,9 @@ jurisdiction: AT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  SC: at-payroll-and-social-insurance
+  PR: at-payroll-and-social-insurance
   XB: at-cross-border
-partial:
-  SC: at-svs-contributions covers the self-employed (GSVG and FSVG) only, not employee or employer contributions
 ---
 
 # Austria: tax pack
@@ -19,14 +19,12 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 | IT-IND, individual income tax | at-income-tax | source-cited draft |
 | IT-CORP, corporate income tax | at-corporate-income-tax | source-cited draft |
 | VAT | at-vat-return, austria-vat-return | source-cited draft |
-| SC, social contributions | (missing: employee and employer contributions under the ASVG; at-svs-contributions covers only the self-employed under the GSVG and FSVG) | |
-| PR, payroll withholding | (missing: Lohnsteuer and the employer's payroll duties) | |
+| SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG) | source-cited draft |
+| PR, payroll withholding | at-payroll-and-social-insurance | source-cited draft |
 | TP, transfer pricing | (missing: Verrechnungspreisdokumentationsgesetz and arm's-length rules) | |
 | XB, cross-border | at-cross-border | source-cited draft |
 
-SC is marked missing although at-svs-contributions exists: it covers only the self-employed, not employees or their employers. A partial skill does not count as coverage.
-
-Also in the pack: at-svs-contributions (self-employed social insurance), at-tax-overview (a map of the system) and at-company-formation (entity choice).
+Also in the pack: at-tax-overview (a map of the system) and at-company-formation (entity choice).
 
 ## Official sources
 
@@ -35,3 +33,6 @@ Also in the pack: at-svs-contributions (self-employed social insurance), at-tax-
 - Bundesabgabenordnung (BAO), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10003940 (read 2026-10-22)
 - Federal Ministry of Finance: https://www.bmf.gv.at (read 2026-10-22)
 - Unternehmensserviceportal (USP): https://www.usp.gv.at (read 2026-10-22)
+- Familienlastenausgleichsgesetz 1967 (FLAG), RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008220 (read 2026-10-23)
+- ASVG, RIS: https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10008147 (read 2026-10-23)
+- ÖGK, Arbeitsbehelf 2026: https://www.gesundheitskasse.at/cdscontent/load?contentid=10008.802672&version=1775628844 (read 2026-10-23)
