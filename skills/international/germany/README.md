@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by:
   XB: leaving-germany-exit-tax
 partial:
-  IT-IND: "de-income-tax (self-employed) is still on 2025 figures that disagree with the rest of the pack"
   VAT: "advance returns (UStVA) under standard taxation only; no method for the annual VAT return, and cash-basis (Ist-Versteuerung), small-business (s.19 UStG), partial-exemption and one-stop-shop cases are refused"
   XB: "no treaty withholding-rate table by country; germany-to-switzerland-cross-border-tax is on 2025 and is missing its commuter (Grenzgaenger) part"
 ---
@@ -18,7 +17,7 @@ Calendar tax year. Authorities: the Bundeszentralamt für Steuern and the local 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | de-employee-income-tax, de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax; non-residents in de-non-resident-tax. Missing: de-income-tax still on 2025 figures | source-cited draft; partial: de-income-tax on 2025 figures |
+| IT-IND, individual income tax | de-employee-income-tax, de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax; non-residents in de-non-resident-tax | source-cited draft |
 | IT-CORP, corporate income tax | de-corporate-tax (trade tax detail in de-trade-tax) | source-cited draft |
 | VAT | germany-vat-return (advance returns under standard taxation). Missing: the annual VAT return, cash basis, small businesses, partial exemption and OSS | source-cited draft; partial: advance returns only |
 | SC, social contributions | de-social-contributions | source-cited draft |

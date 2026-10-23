@@ -4,7 +4,7 @@ description: Use this skill whenever asked about German rental income taxation (
 version: 1.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -258,7 +258,7 @@ The Case 1 client asks in autumn 2026 to cut 2026 prepayments for her EUR 10,050
 ## When to refuse or refer
 
 - Business property, trading partnerships, or a possible trade in property (gewerblicher Grundstückshandel).
-- Non-resident landlords and foreign property (Anlage AUS, treaties).
+- Non-resident landlords: compute the rental result here, then tax it under `de-non-resident-tax`. Foreign property (Anlage AUS, treaties): refer.
 - The cheap-let forecast band; doubted intention to make a surplus; lasting losses.
 - Holiday homes with own use; short-term lets with hotel-like services.
 - Shorter actual useful life; change of method on older buildings.
