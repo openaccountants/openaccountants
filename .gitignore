@@ -1,6 +1,11 @@
 skills/.claude/
+.claude/
 contrib/
 .DS_Store
 **/.DS_Store
 tools/workbooks/out/
 __pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/

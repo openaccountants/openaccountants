@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-21",
+  "jurisdiction": "AU",
+  "currency": "AUD",
+  "basis": "Private companies with a 30 June income year; one existing complying amalgamated loan under ITAA 1936 s 109E.",
+  "formula": "P * r / (1 - (1 / (1 + r)) ** ceil(remainingTermYears))",
+  "formula_basis": "ITAA 1936 s 109E(5)-(6); P is the Division 7A amount outstanding at the end of the previous income year.",
+  "benchmark_rates": {
+    "2021-22": { "basis_points": 452, "percent": "4.52" },
+    "2022-23": { "basis_points": 477, "percent": "4.77" },
+    "2023-24": { "basis_points": 827, "percent": "8.27" },
+    "2024-25": { "basis_points": 877, "percent": "8.77" },
+    "2025-26": { "basis_points": 837, "percent": "8.37" },
+    "2026-27": { "basis_points": 877, "percent": "8.77" }
+  },
+  "rate_provenance": {
+    "source": "https://www.ato.gov.au/tax-rates-and-codes/division-7a-benchmark-interest-rate",
+    "published_update": "2026-07-01",
+    "legal_basis": "ITAA 1936 s 109N(2)",
+    "note": "ATO table for years ending 30 June. Unsupported years and substituted accounting periods are refused; no rate is carried forward."
+  },
+  "rounding": "Exact rational arithmetic. Estimate rounded once to the nearest cent, half up. Payment target and positive shortfall rounded up to the next cent. These are calculator conventions, not statutory rounding rules.",
+  "sources": [
+    "https://www.ato.gov.au/law/view/document?DocID=PAC/19360027/109E",
+    "https://www.ato.gov.au/law/view/document?DocID=PAC/19360027/109N",
+    "https://www.ato.gov.au/law/view/document?DocID=PAC/19360027/109R",
+    "https://www.ato.gov.au/businesses-and-organisations/corporate-tax-measures-and-assurance/private-company-benefits-division-7a-dividends/in-detail/division-7a-loans",
+    "https://www.ato.gov.au/tax-rates-and-codes/division-7a-benchmark-interest-rate"
+  ],
+  "limits": [
+    "Preparation aid requiring professional review; no approval to lodge or act.",
+    "Loan compliance, formation of the amalgamated loan, actual term and eligible repayments are caller-attested, not independently verified.",
+    "Opening balance must reflect the statutory basis, including relevant pre-lodgment-day repayments attributed to the loan year. Do not deduct current-year repayments from it.",
+    "No substituted accounting periods, new-loan-year calculation, refinancing, term conversion or other unreviewed term adjustments.",
+    "No annual interest, principal reduction, closing balance or repayment schedule. Actual interest can depend on balances from time to time.",
+    "Shortfall is not a deemed dividend. Further conditions, exceptions, s 109Y distributable surplus and possible relief require separate review."
+  ]
+}
