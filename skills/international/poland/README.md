@@ -18,11 +18,12 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 | VAT | pl-vat-return, poland-vat-return | source-cited draft |
 | SC, social contributions | pl-zus-contributions | source-cited draft |
 | PR, payroll withholding | (missing) | |
-| TP, transfer pricing | (missing; pl-cit-corporate-tax names the arm's length rule only) | |
+| TP, transfer pricing | pl-transfer-pricing | source-cited draft |
 | XB, cross-border | (missing; pl-cit-corporate-tax covers company withholding, CFC and exit tax) | |
 
 ## Official sources
 
 - CIT Act, consolidated text Dz.U. 2026 poz. 554: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 (read 2026-10-22)
+- Transfer pricing: CIT Act art. 11a-11t as amended by Dz.U. 2026 poz. 1371: https://api.sejm.gov.pl/eli/acts/DU/2026/1371/text.pdf (read 2026-10-23); MF safe harbour notice for 2026, M.P. 2025 poz. 1249: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249 (read 2026-10-23)
 - Tax Ordinance, consolidated text Dz.U. 2026 poz. 622: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 (read 2026-10-22)
 - Ministry of Finance tax portal: https://www.podatki.gov.pl (read 2026-10-22)
