@@ -62,7 +62,8 @@ See also: dk-income-tax (state and municipal income tax, personal allowance, B-s
 | Efterløn (voluntary early retirement) contribution, full-time / part-time | DKK 593 / DKK 396 a month | 2026 | same |
 | ATP paid by a-kasse members, full-time / part-time | DKK 7 / DKK 5 a month | 2026 | same |
 | Late payment interest on A-skat and AM-bidrag: base rate 0.1% plus 0.85 points | 0.95% a month | 2026 | https://info.skat.dk/data.aspx?oid=2459995 |
-| Reminder fee, A-skat and AM-bidrag (reminder sent only when the tax account debit balance exceeds DKK 5,000) | DKK 65 | 2026 | https://info.skat.dk/data.aspx?oid=2168585 |
+| Reminder fee, A-skat and AM-bidrag (reminder sent only when the tax account debit balance exceeds DKK 5,000), to 13 September 2026 | DKK 65 | 2026 | https://info.skat.dk/data.aspx?oid=2168585 |
+| Reminder fee, A-skat and AM-bidrag, from 14 September 2026 | DKK 160 | 2026 | https://www.retsinformation.dk/eli/lta/2026/763 |
 | Fee for a provisional assessment when no report is filed | DKK 800 | 2026 | https://www.retsinformation.dk/eli/lta/2024/1040 |
 | Late payment interest, Samlet Betaling, 1 January to 30 June 2026 (yearly) | 9.75% | 2026 | https://virk.dk/vejledning/atp/atp-arbejdsgiver/ |
 
@@ -96,7 +97,7 @@ The AES table gives eight of the 16 branch groups. Look up the employer's group 
 ## Penalties and interest
 
 - **Late AM-bidrag or A-skat.** A-skat and AM-bidrag sit on the tax account (skattekonto), where the debit balance carries the Opkrævningsloven § 7, stk. 1 rate (§ 16 c, stk. 1): the § 7, stk. 2 base rate plus 0.85 percentage points a month, calculated daily, not deductible (§ 7, stk. 1 as amended by lov nr. 1694 of 30 December 2024, § 1, nr. 6; SKAT Juridisk Vejledning A.B.4.7.2). The 2026 base rate is 0.1% (SKM2025.720.SKTST), so 0.95% a month. From 1 January 2026 interest on interest on the tax account is abolished (A.B.4.7.2).
-- **Reminder fee.** DKK 65 for each reminder (Opkrævningsloven § 6). On the tax account a reminder goes out only when the debit balance exceeds DKK 5,000, and the whole balance is then payable at once (§ 16 c, stk. 4).
+- **Reminder fee.** DKK 65 for each reminder up to 13 September 2026, and DKK 160 from 14 September 2026 (Opkrævningsloven § 6, stk. 1, as amended by lov nr. 763 of 8 September 2026, § 1, nr. 1, in force 14 September 2026 under § 8; skat.dk, Payments to your tax account). On the tax account a reminder goes out only when the debit balance exceeds DKK 5,000, and the whole balance is then payable at once (§ 16 c, stk. 4).
 - **No report.** Skattestyrelsen can set the amount provisionally and charge DKK 800, one fee per period even where both A-skat and AM-bidrag are set (Opkrævningsloven § 4, stk. 1 and 2). After four provisional assessments in a row it can cancel the registration (§ 4, stk. 3).
 - **Late Samlet Betaling.** Interest from the deadline at Nationalbanken's official lending rate plus 8 points a year, 9.75% for 1 January to 30 June 2026 (virk.dk, ATP employer).
 - **No work accident insurance.** The employer pays AES an amount equal to the premium it should have paid (Arbejdsskadesikringsloven § 51) and is liable to a fine (§ 82, stk. 1). Failing to keep the insurance in force, to pay AES or to report an accident on time is also fined (§ 82, stk. 2 and 3).
@@ -207,7 +208,9 @@ expected:
 | SKAT Juridisk Vejledning C.A.4.1.11 (AM-bidrag deductible; foreign social contributions) | https://info.skat.dk/data.aspx?oid=2061784 | 2026-10-23 |
 | Opkrævningsloven, LBK nr. 1040 of 13 September 2024, §§ 2, 4, 6, 7, 16 c | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-23 |
 | Lov nr. 1694 of 30 December 2024, § 1, nr. 6 and 15 (0.85-point addition; no interest on interest on the tax account) | https://www.retsinformation.dk/eli/lta/2024/1694 | 2026-10-23 |
-| SKAT Juridisk Vejledning A.B.4.7.2 (interest base plus 0.85 points; DKK 65 fee) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-10-23 |
+| SKAT Juridisk Vejledning A.B.4.7.2 (interest base plus 0.85 points; DKK 65 fee before 14 September 2026) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-10-23 |
+| Lov nr. 763 of 8 September 2026, § 1, nr. 1 (Opkrævningsloven § 6 reminder fee DKK 65 to DKK 160) and § 8 (in force 14 September 2026) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-10-23 |
+| Skattestyrelsen, Payments to your tax account (reminder fee DKK 160 from 14 September 2026) | https://skat.dk/en-us/businesses/payment-and-the-tax-account-skattekontoen/payments-to-your-tax-account | 2026-10-23 |
 | SKM2025.720.SKTST, Opkrævningsloven § 7, stk. 2 rate for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-23 |
 | Skattestyrelsen, deadlines for A-skat and AM-bidrag | https://skat.dk/erhverv/ansatte-og-loen/frister-ansatte-og-loen | 2026-10-23 |
 | borger.dk, ATP rates for 2026, private employers | https://www.borger.dk/pension-og-efterloen/atp-livslang-pension-oversigt/atp-bidraget/atp-satser-for-privat-virksomhed | 2026-10-23 |
