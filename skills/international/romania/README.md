@@ -33,5 +33,5 @@ Read on 2026-10-22:
 
 - Fiscal Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm
 - Fiscal Procedure Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm
-- ANAF Order 442/2016 (transfer pricing file), ANAF copy, read on 2026-10-23: https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_442_2016.pdf
+- ANAF Order 828/2026 (transfer pricing file, replaces Order 442/2016 for 2026 transactions), ANAF copy, read on 2026-10-23: https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf
 - ANAF: https://www.anaf.ro
