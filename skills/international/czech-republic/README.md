@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by: {}
 partial:
   IT-IND: "cz-employee-income-tax covers employees and non-business income for 2026; cz-income-tax (self-employed OSVČ) still carries tax year 2025 figures"
-  SC: cz-social-health covers the self-employed (OSVČ) only, not employee or employer contributions
+  SC: "employee and employer contributions are in cz-employee-contributions (2026); the self-employed skill cz-social-health still carries 2025 figures and the old 2.1% OSVČ sickness rate (2.7% in 2026)"
 ---
 
 # Czech Republic: tax pack
@@ -19,8 +19,8 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 | IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, still tax year 2025 figures) | partial, source-cited draft |
 | IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
-| SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
-| PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
+| SC, social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed, still 2025 figures) | partial, source-cited draft |
+| PR, payroll withholding | (missing: employer income tax advances, tax declaration, annual reconciliation; employee social and health insurance is in cz-employee-contributions) | |
 | TP, transfer pricing | cz-transfer-pricing | source-cited draft |
 | XB, cross-border | cz-cross-border | source-cited draft |
 
@@ -33,4 +33,5 @@ Also in the pack: cz-tax-overview, cz-company-formation, references.md.
 - VAT Act (235/2004 Coll.): https://www.zakonyprolidi.cz/cs/2004-235
 - Income Taxes Act, official e-Sbírka text in force for 2026: https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 (read 2026-10-23)
 - Finanční správa: https://financnisprava.gov.cz (read 2026-10-23)
-- ČSSZ: https://www.cssz.gov.cz (read 2026-10-22)
+- ČSSZ: https://www.cssz.gov.cz (read 2026-10-23)
+- VZP: https://www.vzp.cz (read 2026-10-23)

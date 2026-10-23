@@ -22,7 +22,8 @@ See also, and do not repeat here:
 - **de-payroll** and **germany-payroll**: running wage tax for an employee, including tax class I.
 - **de-corporate-tax**: corporate tax at 15%, also for the German permanent establishment of a foreign company.
 - **leaving-germany-exit-tax**: shareholders who move out, and extended limited liability after a move to a low-tax country (§ 2 AStG).
-- **germany-to-switzerland-cross-border-tax**: Swiss commuters and moves to Switzerland (still on 2025 figures).
+- **germany-to-switzerland-cross-border-tax**: Swiss commuters and moves to Switzerland.
+- **de-treaty-withholding-rates**: treaty withholding rates by country, § 43b, § 50g and § 50d(3).
 
 ## Who this applies to
 
@@ -133,7 +134,7 @@ The person is taxed as a resident on their German income: Grundfreibetrag, speci
 
 ### Kapitalertragsteuer on dividends to non-residents
 
-The German company withholds 25% plus 5.5% surcharge, 26.375% in all, whoever the shareholder is. For a non-resident shareholder without a German business, that settles the German tax. The excess over the treaty rate is reclaimed from the BZSt under § 50c(3). Example: a treaty limit of 15% gives a refund of 26.375% − 15% = 11.375% of the gross dividend. A foreign company that cannot use a treaty still gets two fifths of the tax back (§ 44a(9)). The treaty rate itself depends on the treaty; this skill has no rate table by country.
+The German company withholds 25% plus 5.5% surcharge, 26.375% in all, whoever the shareholder is. For a non-resident shareholder without a German business, that settles the German tax. The excess over the treaty rate is reclaimed from the BZSt under § 50c(3). Example: a treaty limit of 15% gives a refund of 26.375% − 15% = 11.375% of the gross dividend. A foreign company that cannot use a treaty still gets two fifths of the tax back (§ 44a(9)). The treaty rate itself depends on the treaty; see de-treaty-withholding-rates for the rates by country.
 
 ### Foreign tax credit for residents (§ 34c and § 32d(5) EStG)
 
@@ -301,4 +302,4 @@ For comparison, the § 34c cap for income taxed at the tariff is German tariff t
 | BZSt, Kapitalertragsteuerentlastung (26.375%, processing time) | https://www.bzst.de/DE/Unternehmen/Kapitalertraege/Kapitalertragsteuerentlastung/kapitalertragsteuerentlastung_node.html | 2026-10-23 |
 | BZSt, Abzugsteuern nach § 50a EStG | https://www.bzst.de/DE/Unternehmen/Abzugsteuern/abzugsteuern_node.html | 2026-10-23 |
 
-Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); treaty withholding rates by country (no table here); church tax for non-residents (state law).
+Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); church tax for non-residents (state law).
