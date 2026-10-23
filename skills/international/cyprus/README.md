@@ -3,7 +3,6 @@ jurisdiction: CY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  XB: "no country-by-country treaty withholding-rate table"
   TP: "no method for the simplified measures below the local file threshold (Tax Department circular on low value-adding services and back-to-back financing not read from an official copy) and no pricing method for intra-group loans beyond the arm's length rule"
 covered_by: {}
 ---
@@ -22,7 +21,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
 | PR, payroll withholding | cyprus-payroll | source-cited draft |
 | TP, transfer pricing | cy-transfer-pricing. Missing: the Tax Department's simplified measures below the local file threshold; a pricing method for intra-group loans | source-cited draft; partial: no simplified measures, no loan pricing method |
-| XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC. Missing: a treaty rate table by country | source-cited draft; partial: no treaty rate table |
+| XB, cross-border | cy-cross-border (residence, non-residents, withholding, leaving); cy-non-dom for domicile and SDC | source-cited draft |
 
 ## Official sources
 
