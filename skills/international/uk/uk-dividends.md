@@ -4,7 +4,7 @@ description: Use this skill whenever asked about UK dividend income taxation. Tr
 version: 1.1
 jurisdiction: GB
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-22
 authored_by: James Power, CIMA
 reviewed_by: James Power
 review_status: current
@@ -40,7 +40,7 @@ Reviewed against the cited tax authorities by James Power on 2026-06-03. Items f
 - **Higher rate (2026-27)** — 35.75% (up from 33.75%)  _(Finance (No.2) Bill 2024-26)_
 - **Additional rate (2026-27)** — 39.35% (unchanged)  _(Finance (No.2) Bill 2024-26)_
 - **Dividend allowance (2026-27)** — £500 (unchanged)  _(ITA 2007 s.13A)_
-- **Combined CT + higher-rate dividend (2026-27)** — ~51.78% (up from ~50.28%)  _(Calculated)_
+- **Combined CT + higher-rate dividend (2026-27)** — ~51.81% (up from ~50.31%)  _(Calculated)_
 - **Impact on salary-vs-dividend** — Dividend advantage over salary narrows materially from 6 April 2026  _(Tax planning note)_
 
 ## Section 1 -- Quick Reference
@@ -176,7 +176,7 @@ Announced at Autumn Budget 2025 and enacted by Finance Act 2026 (c. 11). Basic a
 
 Optimal for most single directors: Salary at £12,570, dividends for the rest up to the basic rate band limit. Beyond basic rate, the combined CT + dividend tax rate increases. The strategy above is calibrated to the 2024-25 tax year (dividend rates unchanged for 2025-26, but from 6 April 2025 employer NIC rose from 13.8% to 15% and the Secondary Threshold fell from £9,100 to £5,000).
 
-2026-27 impact: The Autumn Budget 2025 dividend hike (basic 8.75% → 10.75%; higher 33.75% → 35.75%) narrows the dividend advantage over salary, particularly for higher-rate director-shareholders. The combined CT + higher-rate dividend cost rises from ~50.28% to ~51.78%, eroding most of the gap against the salary route. Single directors should still favour salary at the Primary Threshold plus dividends, but the savings vs. a pure-salary extraction will be materially smaller from 6 April 2026 — re-run the comparison annually.
+2026-27 impact: The Autumn Budget 2025 dividend hike (basic 8.75% → 10.75%; higher 33.75% → 35.75%) narrows the dividend advantage over salary, particularly for higher-rate director-shareholders. The combined CT + higher-rate dividend cost rises from ~50.31% to ~51.81%, eroding most of the gap against the salary route. Single directors should still favour salary at the Primary Threshold plus dividends, but the savings vs. a pure-salary extraction will be materially smaller from 6 April 2026 — re-run the comparison annually.
 
 ### 3.3 Combined Effective Rates (2024-25)
 
@@ -185,8 +185,8 @@ Optimal for most single directors: Salary at £12,570, dividends for the rest up
 | Income band | Salary effective rate | Dividend effective rate |
 | --- | --- | --- |
 | Up to PA (£12,570) | NIC only (employer) | 0% (within PA + allowance) |
-| Basic rate | 20% IT + 8% NIC + 13.8% ER NIC = ~34.25% (offset by CT deduction) | 25% CT + 8.75% on remainder = ~32.19% combined |
-| Higher rate | 40% IT + 2% NIC + 13.8% ER NIC = ~49.03% (offset by CT deduction) | 25% CT + 33.75% on remainder = ~50.28% combined |
+| Basic rate | 20% IT + 8% NIC + 13.8% ER NIC = ~34.25% (offset by CT deduction) | 25% CT + 8.75% on remainder = ~31.56% combined |
+| Higher rate | 40% IT + 2% NIC + 13.8% ER NIC = ~49.03% (offset by CT deduction) | 25% CT + 33.75% on remainder = ~50.31% combined |
 | Additional rate | 45% IT + 2% NIC + 13.8% ER NIC = ~53.43% (offset by CT deduction) | 25% CT + 39.35% on remainder = ~54.51% combined |
 
 ### 3.4 Important Caveats

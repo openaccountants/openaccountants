@@ -6,7 +6,7 @@ version: 2.0
 jurisdiction: DE
 tax_year: 2025
 tier: 2
-last_updated: 2026-06-12
+last_updated: 2026-10-22
 category: international
 depends_on:
   - income-tax-workflow-base
@@ -41,11 +41,13 @@ verified_by: pending
 
 | Taxable Income (EUR) | Rate | Notes |
 |---|---|---|
-| 0 -- 12,084 | 0% | Grundfreibetrag (basic allowance) |
-| 12,085 -- 17,005 | 14% -- 24% | Progressive zone 1 (linear-progressive) |
-| 17,006 -- 66,760 | 24% -- 42% | Progressive zone 2 (linear-progressive) |
-| 66,761 -- 277,825 | 42% | Proportionalzone (flat) |
+| 0 -- 12,096 | 0% | Grundfreibetrag (basic allowance) |
+| 12,097 -- 17,443 | 14% -- 24% | Progressive zone 1 (linear-progressive) |
+| 17,444 -- 68,480 | 24% -- 42% | Progressive zone 2 (linear-progressive) |
+| 68,481 -- 277,825 | 42% | Proportionalzone (flat) |
 | 277,826+ | 45% | Reichensteuer (wealth tax surcharge) |
+
+Source: s.32a(1) EStG as set for 2025 by Art. 1 Steuerfortentwicklungsgesetz of 23 December 2024 (BGBl. 2024 I Nr. 449). For 2026 the zones are 12,348 / 17,799 / 69,878 / 277,825 (s.32a(1) EStG as amended by Art. 2 of the same Act).
 
 **Germany uses a FORMULA-BASED progressive rate, not simple bracket multiplication. Each euro is taxed at its own marginal rate within zones 1 and 2. Do not compute manually -- pass to the deterministic engine.**
 
@@ -54,9 +56,11 @@ verified_by: pending
 | Item | Value |
 |---|---|
 | Rate | 5.5% of the Einkommensteuer |
-| Exemption threshold (single) | ESt up to EUR 18,130 -- no SolZ |
-| Exemption threshold (married/joint) | ESt up to EUR 36,260 -- no SolZ |
+| Exemption threshold (single) | ESt up to EUR 19,950 -- no SolZ |
+| Exemption threshold (married/joint) | ESt up to EUR 39,900 -- no SolZ |
 | Gleitzone (phase-in) | 11.9% marginal rate on ESt between threshold and full-rate zone |
+
+Source: s.3(3) SolzG 1995 as amended for 2025 by Art. 3 Steuerfortentwicklungsgesetz (BGBl. 2024 I Nr. 449). For 2026 the limits are EUR 20,350 (single) and EUR 40,700 (joint) (Art. 4 of the same Act).
 
 ### Kirchensteuer (KiSt)
 

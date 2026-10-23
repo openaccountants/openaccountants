@@ -4,7 +4,7 @@ description: Use this skill whenever asked about UK transfer pricing rules, docu
 version: 1.0
 jurisdiction: GB
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-22
 authored_by: James Power, CIMA
 reviewed_by: James Power
 review_status: current
@@ -204,9 +204,17 @@ However, several practical reliefs exist:
 
 The SME and medium-sized company exemptions from Part 4 adjustments significantly narrow the scope of UK TP rules in practice. Medium-sized companies are exempt unless the counterparty is in a non-qualifying territory (tax haven).
 
-### 8.2 Diverted Profits Tax Interaction
+### 8.2 Diverted Profits Tax and Unassessed Transfer Pricing Profits
 
-Companies within the SME/medium exemption may still be exposed to the Diverted Profits Tax (25% rate) if profits are diverted from the UK through arrangements lacking economic substance.
+Diverted profits tax (DPT, Part 3 of FA 2015) is abolished for accounting periods beginning on or after 1 January 2026. Finance Act 2026, s.46 and Sch 5, repeals Part 3 of FA 2015 and replaces DPT with a charge to corporation tax on "unassessed transfer pricing profits" (UTPP) in new Part 4A of TIOPA 2010 (ss.217A onwards). DPT still applies to accounting periods beginning before 1 January 2026.
+
+How the new rule works:
+- **What is caught.** A company has unassessed transfer pricing profits where it has made a CT self-assessment, its profits are subject to a transfer pricing requirement for a provision, and that requirement is not fully reflected in the return (s.217B TIOPA 2010). HMRC may assess those profits to corporation tax.
+- **Rate.** Profits assessed at the UTPP rate are charged at the underlying corporation tax rate plus 6% (s.217A(3) and (4)), so 31% where the profits fall at the 25% main rate and no other amount chargeable as corporation tax (such as the bank surcharge) applies to them.
+- **Conditions for the UTPP rate.** The provision has an effective tax mismatch outcome (the other party's tax on the corresponding profits is less than 80% of the UK tax, s.217D), the tax design condition is met (the structure is reasonably designed to reduce, eliminate or delay UK tax, s.217E), and the profits do not arise wholly from excepted loan relationship arrangements (s.217C). If these are not met, HMRC can still assess the profits, but not at the UTPP rate.
+- **SME exemption.** The charge needs a transfer pricing requirement (s.217B(1)(c) and (4)). Where the SME exemption takes the provision out of Part 4, there is no such requirement and no UTPP charge.
+
+Source: Finance Act 2026, s.46 and Sch 5: https://www.legislation.gov.uk/ukpga/2026/11/section/46 and https://www.legislation.gov.uk/ukpga/2026/11/schedule/5
 
 ## Section 9 -- Recent Developments
 
@@ -231,7 +239,7 @@ Companies within the SME/medium exemption may still be exposed to the Diverted P
 | uk-corporation-tax | TP adjustments increase taxable profits; interaction with loss utilisation |
 | uk-vat | TP adjustments may affect customs value and VAT on imports |
 | uk-bookkeeping | Related-party disclosures in financial statements must align with TP positions |
-| Diverted Profits Tax (DPT) | 25% rate applies where profits diverted from UK; TP documentation relevant to DPT risk |
+| Unassessed transfer pricing profits (replaced DPT) | For accounting periods beginning on or after 1 January 2026, unassessed TP profits are charged to corporation tax, at the CT rate plus 6% where the s.217C conditions are met (FA 2026 s.46, Sch 5). DPT applies only to earlier periods. TP documentation is the main evidence against both |
 | CbCR | Global risk assessment tool; feeds HMRC compliance approach |
 
 ## Disclaimer

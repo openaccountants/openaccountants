@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Germany transfer pricing rules,
 version: 1.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-09-19
+last_updated: 2026-10-22
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -375,8 +375,8 @@ Germany has no formal safe harbour. The documentation thresholds lower the paper
 | Related Guide | Interaction |
 | --- | --- |
 | `germany-bookkeeping` | Transfer pricing records build on the general bookkeeping records and the related-party disclosures |
-| `germany-corporate-tax` | A correction under § 1 AStG raises taxable income and so affects corporate income tax (Körperschaftsteuer) and trade tax (Gewerbesteuer). The ministry's 2020 paper says the surcharge under § 162(4) AO cannot be deducted (no. 89) |
-| `germany-vat` | The arm's length price can differ from the customs value and from the value for import VAT. Later price adjustments that raise the price must be reported to the main customs office without delay. A later credit can give a refund claim only if the adjustment was agreed in the contract, in principle and in amount, before the imports, and is tied to the products (no. 4.7 and 4.8 of the 2024 administrative principles) |
+| `de-corporate-tax` | A correction under § 1 AStG raises taxable income and so affects corporate income tax (Körperschaftsteuer) and trade tax (Gewerbesteuer). The ministry's 2020 paper says the surcharge under § 162(4) AO cannot be deducted (no. 89) |
+| `germany-vat-return` | The arm's length price can differ from the customs value and from the value for import VAT. Later price adjustments that raise the price must be reported to the main customs office without delay. A later credit can give a refund claim only if the adjustment was agreed in the contract, in principle and in amount, before the imports, and is tied to the products (no. 4.7 and 4.8 of the 2024 administrative principles) |
 | CbCR | The BZSt passes each report to the competent tax office and to the treaty states, and may evaluate the reports within its legal tasks (§ 138a(7) AO). The transaction matrix is the tool the ministry names for the risk-based choice of audit fields |
 | Financial statements | Related-party disclosures under HGB or IFRS should agree with the transfer pricing position. The consolidated accounts are item 17 of the master file and the base for the revenue test in 2.4 |
 

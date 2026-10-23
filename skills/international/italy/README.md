@@ -4,7 +4,9 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: it-cross-border
-partial: {}
+partial:
+  VAT: "italy-vat-return covers the periodic settlement and the LIPE only; the annual VAT return (Dichiarazione IVA) is referred out with no method, and the December VAT acconto has no computation"
+  PR: "italy-payroll gives no employer INPS or INAIL contribution rates, so the employer's monthly contributions and the cost of an employee cannot be computed; it also leaves out the trattamento integrativo and family detrazioni without pointing to it-irpef-employees"
 ---
 
 # Italy: tax pack
