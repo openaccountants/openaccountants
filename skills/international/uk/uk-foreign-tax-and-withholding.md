@@ -6,11 +6,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
-# UK foreign tax credit relief and withholding on outbound payments v0.1
+# UK foreign tax credit relief and withholding on outbound payments v0.2
 
 Tax year 2026/27 (6 April 2026 to 5 April 2027) for individuals. Companies use their accounting period; the rates below apply to payments made in 2026. Returns being filed now (by 31 January 2027) are for 2025/26; the credit rules are the same for both years.
 
@@ -50,10 +50,11 @@ It links out for everything else:
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Withholding on yearly interest (ITA s.874(2)) | 20% (the basic rate) | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/874 ; https://www.legislation.gov.uk/ukpga/2026/11/section/2 |
-| Withholding on yearly interest from 6 April 2027 | 22% (s.874(2) now says "savings basic rate"; FA 2026 sets it at 22% for 2027/28) | 2027/28 | https://www.legislation.gov.uk/ukpga/2007/3/section/874 ; https://www.legislation.gov.uk/ukpga/2026/11/section/5 |
+| Withholding on yearly interest from 6 April 2027 | 22% (FA 2026 Sch 1 para 29 changes s.874(2) to "the savings basic rate" for 2027/28 onward; FA 2026 s.5 sets it at 22% for 2027/28) | 2027/28 | https://www.legislation.gov.uk/ukpga/2026/11/schedule/1/paragraph/29 ; https://www.legislation.gov.uk/ukpga/2026/11/section/5 |
 | Withholding on patent royalties and IP royalties to an owner abroad (ITA ss.903, 906) | 20% (the basic rate) | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/903 ; https://www.legislation.gov.uk/ukpga/2007/3/section/906 |
 | Withholding on ordinary dividends | None (no duty in ITA Part 15) | Standing | https://www.legislation.gov.uk/ukpga/2007/3/section/847 |
 | Withholding on UK-REIT property income dividends | Basic rate, 20% | 2026/27 | https://www.gov.uk/guidance/double-taxation-relief-for-companies |
+| Rate the REIT regulations may require on PIDs from 6 April 2027 | Property basic rate, 22% (ITA s.974(1)(a) as amended by FA 2026 Sch 1 para 33; FA 2026 s.7) | 2027/28 | https://www.legislation.gov.uk/ukpga/2007/3/section/974 ; https://www.legislation.gov.uk/ukpga/2026/11/section/7 |
 | CT61 return and payment | Within 14 days after each quarter ending 31 March, 30 June, 30 September, 31 December | Standing | https://www.legislation.gov.uk/ukpga/2007/3/section/949 ; https://www.legislation.gov.uk/ukpga/2007/3/section/947 |
 | Dividend ordinary, upper, additional rates (for the FTCR limit) | 10.75%, 35.75%, 39.35% | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/8 ; https://www.legislation.gov.uk/ukpga/2026/11/section/4 |
 | Dividend allowance (dividend nil rate band) | GBP 500 | 2026/27 | https://www.legislation.gov.uk/ukpga/2007/3/section/13A |
@@ -69,7 +70,7 @@ The UK deducts 20%. Where the treaty rate is lower, the treaty rate applies once
 
 | Partner | Treaty read | Interest | Royalties | Article |
 |---|---|---|---|---|
-| United States | 2001 convention as amended by 2002 protocol | 0% | 0% | Arts 11, 12 (Art 23 limitation on benefits) |
+| United States | 2001 convention as amended by 2002 protocol | 0% (up to 15% on profit-linked interest, Art 11(5)) | 0% | Arts 11, 12 (Art 23 limitation on benefits) |
 | Ireland | 1976 convention as amended by 1998 protocol | 0% | 0% | Arts 12, 13 |
 | Germany | 2010 convention as amended by 2021 protocol | 0% | 0% | Arts 11, 12 |
 | France | 2008 convention | 0% | 0% | Arts 12, 13 |
@@ -82,14 +83,14 @@ The UK deducts 20%. Where the treaty rate is lower, the treaty rate applies once
 | China | 2011 agreement as amended in 2013 | 10% | 10%; for equipment royalties 10% of 60% of the gross, so 6% | Arts 11, 12 |
 | Japan | 2006 convention as amended by 2013 protocol | 0% (10% on profit-linked interest) | 0% | Arts 11, 12 |
 
-Treaty URLs are in Sources. The 2018 HMRC Digest of Double Taxation Treaties also tabulates rates, but it is out of date for Luxembourg and Germany, so this table is read from the treaty texts.
+Treaty URLs are in Sources. For Ireland, France, the Netherlands, Spain, India, China and Japan, GOV.UK also publishes a synthesised text with the Multilateral Instrument. Those texts keep the rates above and add a principal purposes test: no benefit where obtaining it was one of the principal purposes of the arrangement. The 2018 HMRC Digest of Double Taxation Treaties also tabulates rates, but it is out of date for Luxembourg and Germany, so this table is read from the treaty texts.
 
 ## The taxable base
 
 ### Foreign tax credit relief: individuals
 
 1. **Check the treaty first.** If the treaty gives the UK sole taxing rights, there is no foreign tax to credit. If it gives the other country sole rights, there is no UK tax. If it caps the foreign tax (for example US dividends at 15%), credit is limited to the capped amount (HS263 section 1).
-2. **Report the gross.** Foreign income goes into the UK computation gross. With a credit claim, "no deduction is to be made for foreign tax" (TIOPA s.31(2)(a)). On SA106 page F2, column B is the amount before tax, column C the foreign tax, column E is marked X to claim, and column F repeats column B.
+2. **Report the gross.** Foreign income goes into the UK computation gross. With a credit claim, "no deduction is to be made for foreign tax" (TIOPA s.31(2)(a)). On SA106 page F2, column B is the amount before tax and column C the foreign tax; on page F3, column E is marked X to claim and column F repeats column B.
 3. **Credit is the lowest of three figures** (HS263 working sheet FTC6):
    - the foreign tax actually paid;
    - the foreign tax the treaty allows;
@@ -110,10 +111,10 @@ Treaty URLs are in Sources. The 2018 HMRC Digest of Double Taxation Treaties als
 ### UK withholding: what is caught
 
 - **Only yearly interest** is caught by s.874; ITA 2007 does not define it, so check whether the loan is short or long before deducting. A deed's location is ignored in deciding whether interest arises in the UK (s.874(6A)).
-- **Main exemptions from s.874:** interest paid by banks in the ordinary course (s.878), interest on advances from banks (s.879), quoted Eurobonds, meaning listed securities carrying a right to interest (s.882), qualifying private placements (s.888A), and payments a company reasonably believes are "excepted payments" (s.930), mainly because the recipient is a UK resident company (s.933) or a non-resident company trading in the UK through a permanent establishment that must bring the payment into its UK chargeable profits (s.934).
+- **Main exemptions from s.874:** interest paid by banks in the ordinary course (s.878), interest on an advance from a bank where the person beneficially entitled is within the charge to corporation tax on it (s.879), quoted Eurobonds, meaning listed securities carrying a right to interest (s.882), qualifying private placements (s.888A), and payments a company reasonably believes are "excepted payments" (s.930), mainly because the recipient is a UK resident company (s.933) or a non-resident company trading in the UK through a permanent establishment that must bring the payment into its UK chargeable profits (s.934).
 - **Royalties:** s.903 covers patent royalties arising in the UK. s.906 covers royalties and other payments for the use of intellectual property (as defined in s.907) where the owner's usual place of abode is abroad. Payments for copies of works exported for distribution abroad are outside s.906 (s.906(4)).
 - **Treaty rate on royalties without HMRC clearance.** A company may deduct at the treaty rate if it "reasonably believes" at the time of payment that the payee is entitled to treaty relief (ITA s.911). If the belief turns out wrong, the full 20% is due as if s.911 had never applied (s.911(3)).
-- **Interest needs HMRC clearance.** There is no reasonable-belief rule for interest. The payer deducts 20% until HMRC issues a direction, after a DT-Company or DT-Individual claim or a DTTP2 notification under the treaty passport scheme. GOV.UK: "Until you receive a Direction letter from us, you must withhold tax from the interest payments."
+- **Interest needs HMRC clearance.** There is no reasonable-belief rule for interest. The payer deducts 20% until HMRC issues a direction, after a DT-Company or DT-Individual claim or a DTTP2 notification under the treaty passport scheme. The treaty passport page: "Until you receive a Direction letter from us, you must withhold tax from the interest payments, unless we tell you that DTTP30610 applies."
 - **The EU Interest and Royalties Directive no longer applies.** ITA ss.914 to 917 were repealed by Finance Act 2021 s.34. EU payees now rely on the treaty.
 
 ## Deadlines and filing
@@ -129,6 +130,7 @@ Treaty URLs are in Sources. The 2018 HMRC Digest of Double Taxation Treaties als
 **Payers (withholding):**
 
 - **CT61.** A UK resident company that makes a payment within ITA s.946 files a return "within 14 days after the end of the return period" (s.949(3)). Return periods are the quarters ending 31 March, 30 June, 30 September and 31 December, cut at the end of the company's accounting period (s.947). The tax is due on the same day, without assessment (s.951). The CT61 cannot be downloaded; it is requested from HMRC online. HMRC accepts aggregated figures but wants separate figures before and from 6 April "to reflect any change in the tax rate" (CTM35050). That matters for interest paid around 6 April 2027, when the rate moves to 22%.
+- **Royalties paid at a treaty rate, including 0%.** A royalty paid under s.911 is still one from which the company "is required to deduct" under s.906(5) or s.903(7); s.911 only changes the rate (s.911(1)(a), (2)). It is therefore a s.946 payment, and s.949(2) and (4) require a CT61 for that quarter showing the payment and the tax, which is nil at a 0% treaty rate. The CT61 notes say the same: enter the gross royalty in box 3 and the tax deducted in box 4, tick the box below boxes 3 and 4, and also complete the CT600H supplementary pages with the CT600. "Nil returns are not required" in those notes means quarters with no entries at all. A royalty paid gross because it is an excepted payment under s.930 is different: no duty to deduct arises, so it is not a s.946 payment.
 - **Other payers** (individuals, partnerships without company members) account through self assessment or under ITA Part 15 Chapter 16 (ss.903(9), 906(7)).
 - **Certificates.** The payer gives the recipient a statement of tax deducted on request (ITA s.975).
 
@@ -143,7 +145,7 @@ Treaty URLs are in Sources. The 2018 HMRC Digest of Double Taxation Treaties als
 | Failure | Consequence | Source |
 |---|---|---|
 | CT61 not delivered, or a payment left off it | Up to GBP 300, then up to GBP 60 a day while it continues | https://www.legislation.gov.uk/ukpga/1970/9/section/98 |
-| Paying gross without a reasonable belief that the payment is excepted, or deducting at a treaty rate under s.911 without a reasonable belief | Up to GBP 3,000, then up to GBP 600 a day (TMA s.98(4A), (4B), (4D)) | https://www.legislation.gov.uk/ukpga/1970/9/section/98 |
+| CT61 not delivered, or the payment not shown on it, where the payment was made gross without a reasonable belief that it was excepted, or under s.911 without a reasonable belief in treaty entitlement | Up to GBP 3,000, then up to GBP 600 a day (TMA s.98(4A), (4B), (4D)) | https://www.legislation.gov.uk/ukpga/1970/9/section/98 |
 | Wrong CT61 given fraudulently or negligently | Up to GBP 3,000 (TMA s.98(2)) | https://www.legislation.gov.uk/ukpga/1970/9/section/98 |
 | Tax under deducted | The payer is liable for the full sum it should have deducted (ITA s.951(2); s.938; s.911(3)) | https://www.legislation.gov.uk/ukpga/2007/3/section/951 |
 | CT61 tax paid late | Interest from the due date under TMA s.87, at the late payment rate (7.75% from 9 January 2026) | https://www.legislation.gov.uk/ukpga/1970/9/section/87 |
@@ -174,7 +176,7 @@ Priya is UK resident and domiciled. In 2026/27 she has employment income of GBP 
 
 **Edge case: no W-8BEN.** If the broker had withheld 30% (GBP 3,000), the credit would still be GBP 1,500, capped by the treaty (HS263 box FTC5; TIOPA s.33). She must reclaim the other GBP 1,500 from the US, not from HMRC.
 
-On her return she enters, on SA106 page F2 under dividends from foreign companies: country USA, column B GBP 10,000, column C GBP 1,500, X in column E, and column F GBP 10,000.
+On her return she enters, on SA106 under dividends from foreign companies: country USA, column B GBP 10,000 and column C GBP 1,500 (page F2), X in column E and GBP 10,000 in column F (page F3).
 
 ```oa-check
 name: Higher-rate taxpayer, US dividends 10,000 with 15% US tax (2026/27)
@@ -219,9 +221,9 @@ UK Sub Ltd has a calendar-year accounting period. It pays its German parent GBP 
 - **Domestic rule.** The owner of the IP has its usual place of abode outside the UK, so ITA s.906 requires a 20% deduction: GBP 20,000, with GBP 80,000 paid over.
 - **Treaty rule.** Under the UK-Germany convention Art 12(1) the royalties "shall be taxable only in" Germany: 0%.
 - **Relief without clearance.** If UK Sub reasonably believes, at the time of payment, that the parent is entitled to treaty relief (for example it holds a German residence certificate and has checked beneficial ownership and the treaty's principal purpose test), it may deduct at 0% under s.911. It pays GBP 100,000 gross.
-- **CT61 timing.** The payment falls in the quarter ending 30 June 2026. The CT61 is due by 14 July 2026, and any tax by the same date (ss.949(3), 951).
+- **CT61 timing.** The payment falls in the quarter ending 30 June 2026. The CT61 is due by 14 July 2026, and any tax by the same date (ss.949(3), 951). Paying at 0% under s.911, UK Sub still files it, showing GBP 100,000 in box 3, nil in box 4 and the treaty box ticked, and completes CT600H with its CT600 for 2026.
 - **If UK Sub cannot form that belief,** it deducts GBP 20,000, files the CT61 and pays the GBP 20,000 by 14 July 2026. The parent then reclaims it from HMRC on form DT-Company and can apply for relief at source on future payments.
-- **If UK Sub pays gross on a belief it cannot defend,** HMRC can collect the GBP 20,000 from UK Sub (s.911(3)), with interest from 14 July 2026 and a penalty of up to GBP 3,000 (TMA s.98(4D)). Thirty days of interest at 7.75% on GBP 20,000 is GBP 127.40.
+- **If UK Sub pays gross on a belief it cannot defend,** HMRC can collect the GBP 20,000 from UK Sub (s.911(3)), with interest from 14 July 2026. If UK Sub also failed to deliver the CT61 or show the payment on it, the penalty is up to GBP 3,000, then up to GBP 600 a day (TMA s.98(4A), (4D)). Thirty days of interest at 7.75% on GBP 20,000 is GBP 127.40.
 - **Arm's length.** If the royalty is above an arm's length amount, the treaty applies only to the arm's length part (Art 12(4)); the excess stays taxable at 20%. See `uk-transfer-pricing`.
 
 ```oa-check
@@ -277,16 +279,21 @@ expected:
 | ITA 2007 s.13A (dividend nil rate, GBP 500) | https://www.legislation.gov.uk/ukpga/2007/3/section/13A | 2026-10-23 |
 | ITA 2007 s.847 (duties to deduct in Part 15) | https://www.legislation.gov.uk/ukpga/2007/3/section/847 | 2026-10-23 |
 | ITA 2007 s.874 (yearly interest) | https://www.legislation.gov.uk/ukpga/2007/3/section/874 | 2026-10-23 |
+| ITA 2007 s.879 (interest on advances from banks) | https://www.legislation.gov.uk/ukpga/2007/3/section/879 | 2026-10-23 |
 | ITA 2007 s.882 (quoted Eurobonds) | https://www.legislation.gov.uk/ukpga/2007/3/section/882 | 2026-10-23 |
 | ITA 2007 s.888A (qualifying private placements) | https://www.legislation.gov.uk/ukpga/2007/3/section/888A | 2026-10-23 |
 | ITA 2007 s.903 (patent royalties) | https://www.legislation.gov.uk/ukpga/2007/3/section/903 | 2026-10-23 |
 | ITA 2007 s.906 (IP royalties, owner abroad) | https://www.legislation.gov.uk/ukpga/2007/3/section/906 | 2026-10-23 |
+| ITA 2007 s.907 (meaning of intellectual property) | https://www.legislation.gov.uk/ukpga/2007/3/section/907 | 2026-10-23 |
 | ITA 2007 s.911 (deduction at treaty rate) | https://www.legislation.gov.uk/ukpga/2007/3/section/911 | 2026-10-23 |
 | ITA 2007 s.914 (repealed by FA 2021 s.34) | https://www.legislation.gov.uk/ukpga/2007/3/section/914 | 2026-10-23 |
 | ITA 2007 ss.930, 933, 938 (excepted payments) | https://www.legislation.gov.uk/ukpga/2007/3/section/930 | 2026-10-23 |
-| ITA 2007 ss.946, 947, 949, 951 (CT61 returns and payment) | https://www.legislation.gov.uk/ukpga/2007/3/section/949 | 2026-10-23 |
+| ITA 2007 s.946 (payments that go on a CT61) | https://www.legislation.gov.uk/ukpga/2007/3/section/946 | 2026-10-23 |
+| ITA 2007 ss.947, 949, 951 (CT61 returns and payment) | https://www.legislation.gov.uk/ukpga/2007/3/section/949 | 2026-10-23 |
+| ITA 2007 s.974 (REIT deduction rate) | https://www.legislation.gov.uk/ukpga/2007/3/section/974 | 2026-10-23 |
 | ITA 2007 contents (Part 15 section list) | https://www.legislation.gov.uk/ukpga/2007/3/contents | 2026-10-23 |
-| Finance Act 2026 ss.2, 4, 5 (2026/27 main rates, dividend rates, 2027/28 savings rates) | https://www.legislation.gov.uk/ukpga/2026/11/section/5 | 2026-10-23 |
+| Finance Act 2026 ss.2, 4, 5, 7 (2026/27 main rates, dividend rates, 2027/28 savings and property rates) | https://www.legislation.gov.uk/ukpga/2026/11/section/5 | 2026-10-23 |
+| Finance Act 2026 Sch 1 paras 29, 33 (s.874 savings basic rate, s.974 property basic rate, from 2027/28) | https://www.legislation.gov.uk/ukpga/2026/11/schedule/1/paragraph/29 | 2026-10-23 |
 | TMA 1970 s.87 (interest on overdue tax deducted at source) | https://www.legislation.gov.uk/ukpga/1970/9/section/87 | 2026-10-23 |
 | TMA 1970 s.98 (penalties, CT61) | https://www.legislation.gov.uk/ukpga/1970/9/section/98 | 2026-10-23 |
 | HMRC HS263 Relief for foreign tax paid (2026) | https://www.gov.uk/government/publications/calculating-foreign-tax-credit-relief-on-income-hs263-self-assessment-helpsheet/relief-for-foreign-tax-paid-2026-hs263 | 2026-10-23 |
@@ -296,6 +303,8 @@ expected:
 | HMRC INTM161150 (excess not repaid or carried) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161150 | 2026-10-23 |
 | HMRC INTM161090 (credit or deduction) | https://www.gov.uk/hmrc-internal-manuals/international-manual/intm161090 | 2026-10-23 |
 | HMRC CTM35050 (CT61 accounting) | https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm35050 | 2026-10-23 |
+| HMRC CT61 Notes (2010) | https://assets.publishing.service.gov.uk/media/5a7e0a5ce5274a2e8ab4573c/ct61-notes-2010.pdf | 2026-10-23 |
+| GOV.UK, Completing the CT600H page for cross-border royalties | https://www.gov.uk/guidance/supplementary-pages-ct600h-cross-border-royalties | 2026-10-23 |
 | GOV.UK, Return of Income Tax on company payments (CT61) | https://www.gov.uk/government/publications/corporation-tax-return-of-income-tax-on-company-payments-ct61 | 2026-10-23 |
 | GOV.UK, Claiming Double Taxation Relief for companies and other concerns | https://www.gov.uk/guidance/double-taxation-relief-for-companies | 2026-10-23 |
 | GOV.UK, Double Taxation Treaty Passport Scheme | https://www.gov.uk/guidance/double-taxation-treaty-passport-scheme | 2026-10-23 |
@@ -316,5 +325,6 @@ expected:
 | UK-India 1993 convention as amended in 2013 | https://assets.publishing.service.gov.uk/media/5b853e67e5274a4a8fbf169d/1993_India_-_UK_Double_Taxation_Agreement__as_amended_in_2013_-_in_force.pdf | 2026-10-23 |
 | UK-China 2011 agreement as amended in 2013 | https://www.gov.uk/government/publications/china-tax-treaties/2011-uk-china-double-taxation-agreement-as-amended-in-2013-in-force | 2026-10-23 |
 | UK-Japan 2006 convention as amended by 2013 protocol | https://www.gov.uk/government/publications/japan-tax-treaties/2006-uk-japan-double-taxation-convention-as-amended-by-the-2013-protocol-in-force | 2026-10-23 |
+| Synthesised MLI texts (Ireland, France, Netherlands, Spain, India, China, Japan), example: UK-India | https://www.gov.uk/government/publications/india-tax-treaties/2020-uk-india-synthesised-text-of-the-multilateral-instrument-and-the-1993-double-taxation-convention-in-force | 2026-10-23 |
 
-Not yet confirmed: whether HMRC expects a CT61 showing nil tax for a royalty paid gross under s.911 (s.949 read literally requires one; GOV.UK only says to include details in the Company Tax Return); the effect of the Multilateral Instrument on each treaty (synthesised texts exist for Ireland, France, Netherlands, Spain, India, China and Japan and were not read); the 2026/27 (SA106 2027) form and box numbers, not yet published; the text of ITA ss.879 and 907, cited from the ITA 2007 contents list but not opened; whether a given loan carries "yearly" interest, which the Act does not define.
+Not yet confirmed: whether SI 2006/2867 itself has been amended so that UK-REITs deduct at 22% from 6 April 2027 (ITA s.974 now permits it; the regulations were not read); the 2026/27 (SA106 2027) form and box numbers, not yet published; whether a given loan carries "yearly" interest, which the Act does not define.
