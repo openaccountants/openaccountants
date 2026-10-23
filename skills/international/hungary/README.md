@@ -3,6 +3,8 @@ jurisdiction: HU
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
+partial:
+  IT-IND: "hu-income-tax covers the self-employed only (flat-rate, real-cost and KATA); no skill yet for capital income (interest, dividends, capital gains), rental income or the individual annual return of an employee"
 ---
 
 # Hungary: tax pack
@@ -13,10 +15,10 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | hu-income-tax (self-employed focus) | source-cited draft |
+| IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026) | source-cited draft, partial |
 | IT-CORP, corporate income tax | hu-corporate-tax | source-cited draft |
 | VAT | hungary-vat-return, hu-vat-return | source-cited draft |
-| SC, social contributions | hu-social-contributions | source-cited draft |
+| SC, social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | source-cited draft |
 | PR, payroll withholding | (missing) | |
 | TP, transfer pricing | hu-transfer-pricing | source-cited draft |
 | XB, cross-border | (missing) | |
