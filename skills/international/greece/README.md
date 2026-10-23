@@ -2,7 +2,10 @@
 jurisdiction: GR
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+covered_by:
+  SC: gr-employee-contributions
 partial:
+  SC: "gr-employee-contributions covers employees and employers for 2026; gr-efka (self-employed) still carries 2025 figures and has not been updated to e-EFKA circular 6/2026"
   IT-IND: gr-income-tax covers only the self-employed, on the 2025 scale; employees, pensioners, rent, capital income and the 2026 scale of ν. 5246/2025 are not covered
   IT-CORP: gr-corporate-income-tax is a short 2025 summary citing PwC and other secondary sources, not the law; 2026 figures, deductions, losses and prepayment are not covered from official sources
   PR: "gr-payroll spreads the annual tax over 14 payments without the art. 60(3) annualisation decision; the holiday allowance amount, the annual pay certificate and labour fines are not confirmed"
@@ -19,7 +22,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | IT-IND, individual income tax | gr-income-tax (partial: self-employed only, 2025 figures; employees, pensioners and capital income are not covered) | source-cited draft |
 | IT-CORP, corporate income tax | gr-corporate-income-tax (2025 figures, cites secondary sources) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
-| SC, social contributions | (missing: gr-efka covers only the self-employed; employee and employer EFKA are not covered) | |
+| SC, social contributions | gr-employee-contributions (employees and employers, 2026), gr-efka (self-employed; partial: 2025 figures) | source-cited draft |
 | PR, payroll withholding | gr-payroll (partial: annualisation method, holiday allowance amount and annual certificate not confirmed) | source-cited draft |
 | TP, transfer pricing | (missing) | |
 | XB, cross-border | gr-cross-border | source-cited draft |
@@ -32,4 +35,6 @@ Accounting-pack skills in this folder: gr-company-formation, greece-einvoice, gr
 
 - Income Tax Code (ν. 4172/2013), Ministry of Finance codification up to ν. 5264/2025, read 2026-10-22: https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/
 - Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, read 2026-10-22: https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf
+- e-EFKA circular 4/2026 (2026 insurable earnings ceiling), read 2026-10-23: https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-42026
+- e-EFKA circular 38/2024 and KPK rate table, read 2026-10-23: https://www.efka.gov.gr/el/egkyklioi-kai-genika-eggrapha/egkyklios-38-24122024
 - AADE, Greeks abroad and non-residents, read 2026-10-22: https://aade.gr/en/greeks-abroad-non-residents
