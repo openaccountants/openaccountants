@@ -2,6 +2,8 @@
 jurisdiction: CY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  TP: "no method for the simplified measures below the local file threshold (Tax Department circular on low value-adding services and back-to-back financing not read from an official copy) and no pricing method for intra-group loans beyond the arm's length rule"
 covered_by: {}
 ---
 
@@ -18,7 +20,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 | VAT | cyprus-vat-return | source-cited draft |
 | SC, social contributions | cyprus-social-contributions | source-cited draft |
 | PR, payroll withholding | cyprus-payroll | source-cited draft |
-| TP, transfer pricing | cy-transfer-pricing | source-cited draft |
+| TP, transfer pricing | cy-transfer-pricing. Missing: the Tax Department's simplified measures below the local file threshold; a pricing method for intra-group loans | source-cited draft; partial: no simplified measures, no loan pricing method |
 | XB, cross-border | (missing: cy-non-dom covers arrivals only) | |
 
 ## Official sources
@@ -26,5 +28,7 @@ Calendar tax year. Authority: the Tax Department (Τμήμα Φορολογία�
 - Income Tax Law 118(I)/2002, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html (read 2026-10-22)
 - Special Defence Contribution Law 117(I)/2002, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html (read 2026-10-22)
 - Assessment and Collection of Taxes Law 4/1978, consolidated (CyLaw): https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html (read 2026-10-22)
+- Income Tax (Amendment) (No. 4) Law 244(I)/2025, s. 17 (2026 transfer pricing thresholds and the director rule): https://www.cylaw.org/nomoi/arith/2025_1_244.pdf (read 2026-10-23)
+- Administrative Cooperation in Taxation Law 205(I)/2012, consolidated (CyLaw), article 7C and Annex III (country-by-country reporting): https://www.cylaw.org/nomoi/enop/non-ind/2012_1_205/full.html (read 2026-10-23)
 - Transfer pricing regulations K.D.P. 273/2022 and notice K.D.P. 314/2022 (CyLaw): https://www.cylaw.org/KDP/data/2022_1_273.pdf, https://www.cylaw.org/KDP/data/2022_1_314.pdf (read 2026-10-23)
 - Tax Department: https://www.gov.cy/tax/ (read 2026-10-22)
