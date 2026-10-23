@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Albania personal income tax for
 version: 0.1
 jurisdiction: AL
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -62,14 +62,20 @@ Arithmetic check on the ALL 22,100 base: at monthly gross ALL 200,000 the prior-
 
 [RESEARCH GAP — reviewer to confirm] The monthly 23% breakpoint (ALL 200,000/month = ALL 2,400,000/year) does NOT line up with the annual 23% breakpoint (ALL 2,040,000/year = ALL 170,000/month). The research notes two different official presentations of the monthly table (a simplified 0/13/23 version on tatime.gov.al vs. the allowance-phase-out version above from PwC). Reconcile both against General Instruction No. 26/2023 for the authoritative monthly algorithm before relying on month-by-month figures; the year-end reconciliation uses the annual 13%/23% brackets.
 
-**Self-employed / business / trader income — ANNUAL taxable profit**  _([HLB Albania; PwC])_
+**Self-employed / business / trader income: annual taxable profit**  _(Law 29/2023 art. 24(2) and art. 69(1)(dh))_
 
-| Annual Taxable Profit (ALL) | Statutory Rate | Effective Rate 2025 |
-| --- | --- | --- |
-| 0 -- 14,000,000 | 15% | **0% until 31 Dec 2029** |
-| 14,000,001+ | 23% | 23% |
+| Annual taxable profit (ALL) | Rate under art. 24(2) |
+| --- | --- |
+| 0 -- 14,000,000 | 15% |
+| 14,000,001+ | 23% |
 
-Self-employed and registered entrepreneurs with annual turnover up to ALL 14,000,000 enjoy a 0% rate until 31 December 2029 (statutory rate 15%); profit above ALL 14,000,000 is taxed at 23%. Subject to profession-based exclusions (CoM Decision No. 753) and the anti-disguised-employment rule below.
+**The 0% rule is a threshold on gross income, not a band.** Law 29/2023 art. 69(1)(dh) says that for individual traders, the self-employed and entities "with gross income up to ALL 14 million a year, the income tax rate of 0% will apply until 31 December 2029" ("me të ardhura bruto deri 14 milionë lekë në vit, norma e tatimit mbi të ardhurat 0% do të aplikohet deri më 31 dhjetor 2029"). The test is gross income (të ardhura bruto), not taxable profit. It is all or nothing:
+- Gross income for the year up to ALL 14,000,000: the whole business profit is taxed at 0%, until 31 December 2029.
+- Gross income above ALL 14,000,000: no 0% rate at all. The whole taxable profit is taxed under art. 24(2): 15% on the first ALL 14,000,000 of taxable profit and 23% on the rest.
+
+There is no 0% slice for the first ALL 14,000,000 of a larger business. General Instruction No. 26/2023 applies it the same way: where gross income is up to ALL 14 million the rate is 0% and the tax is zero (para. 50), and a taxable profit of ALL 20,000,000 above the threshold is taxed 14,000,000 × 15% + 6,000,000 × 23% = ALL 3,480,000 (para. 24.4).
+
+The 0% rule in art. 69(1)(dh) has no profession exclusion. The professional-services list in CoM Decision No. 753 of 20.12.2023 (art. 4(1) and table 2) is described in art. 69(6) of the consolidated law as repealed by Constitutional Court decision no. 52 of 27.6.2024. The disguised-employment rule in art. 12(1)(ç) still applies (Section 5.4).
 
 **Investment income**  _([PwC; HLB Albania])_
 
@@ -85,7 +91,7 @@ Self-employed and registered entrepreneurs with annual turnover up to ALL 14,000
 | Ambiguity | Default |
 | --- | --- |
 | Unknown residency | Treat as Albanian tax resident (worldwide income); non-residents taxed on Albania-source income only [PwC] |
-| Unknown self-employed eligibility for 0% band | Do NOT assume 0% — confirm turnover ≤ ALL 14m AND activity not on CoM Decision 753 excluded list AND no disguised-employment reclassification [PwC] |
+| Unknown self-employed eligibility for the 0% rate | Do NOT assume 0%: confirm gross income ≤ ALL 14m for the year AND no disguised-employment reclassification [Law 29/2023 arts. 12(1)(ç), 69(1)(dh)] |
 | Single-client / few-client self-employment | Apply disguised-employment reclassification (employment rates 13%/23%) unless proven otherwise [HLB Albania] |
 | Unknown contribution base ceiling | Use the year's official CoM-decision floor/ceiling; verify before computing; health insurance has NO ceiling [Eurofast Payroll Guide 2025] |
 | Unknown business-use % (vehicle, phone, home) | 0% deduction |
@@ -96,7 +102,7 @@ Self-employed and registered entrepreneurs with annual turnover up to ALL 14,000
 
 ### Required Inputs
 
-**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of (a) tax residency (resident/non-resident), (b) income type(s) (employment, self-employed/business, investment), and (c) for self-employed: annual turnover and whether the activity is eligible for the 0% small-business band.
+**Minimum viable** -- bank statement for the full tax year in CSV, PDF, or pasted text, plus confirmation of (a) tax residency (resident/non-resident), (b) income type(s) (employment, self-employed/business, investment), and (c) for self-employed: annual gross income and whether it is at or below the ALL 14,000,000 threshold for the 0% rate.
 
 **Recommended** -- all sales invoices, purchase invoices/receipts, monthly payroll/withholding declarations, social/health contribution payment records, prior-year annual return (D1/DIVA), VAT registration status.
 
@@ -107,7 +113,7 @@ Self-employed and registered entrepreneurs with annual turnover up to ALL 14,000
 ### Refusal Catalogue
 
 - **R-AL-1** — Residency unknown. "Residency determines whether the client is taxed on worldwide income (resident) or Albania-source income only (non-resident). This skill defaults to resident treatment but cannot finalise without confirmation. Please confirm before filing."
-- **R-AL-2** — Self-employed eligibility for the 0% band unconfirmed. "The 0%-until-2029 rate applies only if turnover ≤ ALL 14,000,000, the activity is not on the CoM Decision No. 753 excluded-profession list, and the income is not reclassified as disguised employment. This skill cannot confirm eligibility without the client's activity code and client-concentration data. Escalate to an Albanian tax advisor."
+- **R-AL-2**: Self-employed eligibility for the 0% rate unconfirmed. "The 0%-until-2029 rate applies only if gross income for the year is ALL 14,000,000 or less (Law 29/2023 art. 69(1)(dh)) and the income is not reclassified as employment income under art. 12(1)(ç). Above ALL 14,000,000 of gross income the 0% rate does not apply to any part of the profit. This skill cannot confirm eligibility without the client's gross income and client-concentration data. Escalate to an Albanian tax advisor."
 - **R-AL-3** — Companies and partnerships. "This skill covers individuals and sole self-employed persons only. Corporate income tax (tatimi mbi fitimin) and partnership returns are out of scope. Escalate to an Albanian tax advisor."
 - **R-AL-4** — Real-estate or securities capital gains. "Capital gains on real estate and securities are taxed at 15% but require specialised computation of acquisition cost and holding. Escalate to an Albanian tax advisor for material disposals."
 - **R-AL-5** — Arrears / enforcement. "Client has outstanding tax arrears or is subject to DPT enforcement. Late-payment penalty is 10% plus 0.06%/day interest (capped at 365 days). Do not advise. Escalate immediately."
@@ -254,33 +260,35 @@ Monthly gross ALL 250,000 → top band (200,001+): PIT = ALL 22,100 + 23% on the
 
 **Classification:** Employment income; PIT withheld ALL 33,600; contributions ALL 21,009.52 (ceiling-dependent — reviewer to confirm ceiling figure).
 
-### Example 3 -- Self-employed, within the 0% small-business band
+### Example 3 -- Self-employed, gross income at or below the ALL 14m threshold (0% rate)
 
 **Input lines (full year, summarised):**
 `Total business income (credits): +9,500,000.00 ALL`
 `Total allowable expenses (debits): -3,200,000.00 ALL`
 
 **Reasoning:**
-Annual turnover ALL 9,500,000 ≤ ALL 14,000,000, activity confirmed eligible (not on CoM Decision 753 list) and no disguised-employment reclassification.
+Annual gross income ALL 9,500,000 ≤ ALL 14,000,000 (Law 29/2023 art. 69(1)(dh)) and no disguised-employment reclassification under art. 12(1)(ç).
 - Taxable profit = 9,500,000 − 3,200,000 = ALL 6,300,000
 - PIT rate = **0% until 31 Dec 2029** → income tax = **ALL 0**
 - Note: self-employed social insurance 23% and health 3.4% still apply on their statutory bases (Section 5). On a monthly base of ALL 50,000: social = 23% × 50,000 = ALL 11,500/month; health = 3.4% × 100,000 = ALL 3,400/month [PwC: other taxes].
 
-**Classification:** Self-employed business profit ALL 6,300,000; income tax ALL 0 (0% band); contributions due separately.
+**Classification:** Self-employed business profit ALL 6,300,000; income tax ALL 0 (0% rate, gross income at or below the threshold); contributions due separately.
 
-### Example 4 -- Self-employed, profit above ALL 14,000,000
+### Example 4 -- Self-employed, gross income above ALL 14,000,000 (no 0% rate)
 
 **Input lines (full year, summarised):**
 `Total business income: +20,000,000.00 ALL`
 `Total allowable expenses: -3,000,000.00 ALL`
 
 **Reasoning:**
-Taxable profit = 20,000,000 − 3,000,000 = ALL 17,000,000.
-- Band 0 – 14,000,000: 0% (until 2029) → ALL 0
-- Band above 14,000,000: 23% × (17,000,000 − 14,000,000) = 23% × 3,000,000 = **ALL 690,000**
-- Total income tax = 0 + 690,000 = **ALL 690,000**
+Gross income ALL 20,000,000 is above ALL 14,000,000, so the art. 69(1)(dh) 0% rate does not apply to any part of the profit. The whole taxable profit is taxed under art. 24(2). Assume no employment income and no dependent children, so the individual claims the art. 22(1)(c) deduction of ALL 360,000 (annual income above ALL 720,000) against business income, as General Instruction No. 26/2023 para. 24.6 does.
+- Business profit = 20,000,000 − 3,000,000 = ALL 17,000,000
+- Taxable profit = 17,000,000 − 360,000 = ALL 16,640,000
+- First ALL 14,000,000 at 15% = ALL 2,100,000
+- Excess 16,640,000 − 14,000,000 = 2,640,000 at 23% = ALL 607,200
+- Total income tax = 2,100,000 + 607,200 = **ALL 2,707,200**
 
-**Classification:** Self-employed business profit ALL 17,000,000; income tax ALL 690,000.
+**Classification:** Self-employed business profit ALL 17,000,000; taxable profit ALL 16,640,000; income tax ALL 2,707,200. No part of the profit is taxed at 0%.
 
 ### Example 5 -- Dividend received (8%)
 
@@ -316,7 +324,7 @@ Because ≥80% of the self-employed income is from a single client, the anti-dis
 - Annual taxable income ALL 4,000,000 → first 2,040,000 at 13% = ALL 265,200; excess 1,960,000 at 23% = ALL 450,800
 - Income tax = 265,200 + 450,800 = **ALL 716,000**
 
-**Classification:** Reclassified to employment income; income tax ALL 716,000 (the 0% band does NOT apply). Flag for reviewer.
+**Classification:** Reclassified to employment income; income tax ALL 716,000 (the 0% business rate does NOT apply). Flag for reviewer.
 
 ## Section 5 -- Tier 1 Rules (When Data Is Clear)
 
@@ -330,11 +338,11 @@ Because ≥80% of the self-employed income is from a single client, the anti-dis
 
 ### 5.3 Self-Employed / Business Income
 
-- **Self-employed / business income rate** — Statutory rate 15% on profit up to ALL 14,000,000 and 23% above — BUT a 0% rate applies to the up-to-ALL-14m band until 31 December 2029. Profit above ALL 14,000,000 is taxed at 23%.  _(Law 29/2023; HLB Albania commentary [HLB Albania; PwC])_
+- **Self-employed / business income rate**: If gross income for the year is ALL 14,000,000 or less, the rate is 0% on the whole business profit until 31 December 2029 (art. 69(1)(dh)). If gross income is above ALL 14,000,000, the 0% rate does not apply at all: taxable profit is taxed 15% up to ALL 14,000,000 and 23% above (art. 24(2)). The ALL 14m figure is a gross-income threshold for the 0% rate, not a 0% band of profit.  _(Law 29/2023 arts. 24(2), 69(1)(dh); General Instruction No. 26/2023 paras. 24.4, 50)_
 
 ### 5.4 Anti-Disguised-Employment Rule
 
-- **Anti-disguised-employment rule** — If ≥80% of self-employed income is from a single client, OR ≥90% from fewer than three clients, the income is reclassified as employment income and taxed at 13%/23% (the 0% band does not apply).  _(Law 29/2023 / implementing rules [HLB Albania])_
+- **Anti-disguised-employment rule**: If ≥80% of self-employed income is from a single client, OR ≥90% from fewer than three clients, the income is reclassified as employment income and taxed at 13%/23% (the 0% business rate does not apply).  _(Law 29/2023 / implementing rules [HLB Albania])_
 
 ### 5.5 Investment Income
 
@@ -394,9 +402,9 @@ Social insurance is computed on a gross monthly base between an annual floor and
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
 
-### 6.1 Self-Employed 0% Band Eligibility
+### 6.1 Self-Employed 0% Rate Eligibility
 
-- **0% band eligibility checklist** — Confirm turnover ≤ ALL 14,000,000 for the year. Confirm the activity is NOT on the CoM Decision No. 753 excluded-profession list. **[RESEARCH GAP — the excluded list is not enumerated here; reviewer must check Decision 753.]** Confirm no disguised-employment reclassification (Section 5.4). Conservative default: Do not apply 0% until all three are confirmed.
+- **0% rate eligibility checklist**: Confirm gross income ≤ ALL 14,000,000 for the year (Law 29/2023 art. 69(1)(dh)); above that, no part of the profit is taxed at 0%. Confirm no disguised-employment reclassification (Section 5.4). The CoM Decision No. 753 professional-services list is described in art. 69(6) as repealed by Constitutional Court decision no. 52 of 27.6.2024; art. 69(1)(dh) itself has no profession exclusion. Conservative default: Do not apply 0% until both are confirmed.
 
 ### 6.2 Disguised-Employment Test
 
@@ -442,9 +450,9 @@ B. SELF-EMPLOYED / BUSINESS INCOME (if applicable)
   B1. Annual business turnover                   ___________
   B2. Less: allowable expenses                   ___________
   B3. Taxable profit (B1 - B2)                   ___________
-  B4. 0%-band eligible? (Y/N) [confirm]          ___________
-  B5. Income tax (0% to 14m if eligible;
-       23% above 14m)                            ___________
+  B4. Gross income <= ALL 14m? (Y/N) [confirm]  ___________
+  B5. Income tax (if B4 = Y: 0% on all profit;
+       if B4 = N: 15% to 14m, 23% above)         ___________
   B6. Self-employed social 23% (base ≥50,000)    ___________
   B7. Self-employed health 3.4% (base ≥100,000)  ___________
 
@@ -462,7 +470,7 @@ G. Tax due / refund (E - F)                      ___________
 
 REVIEWER FLAGS:
   [ ] Residency confirmed?
-  [ ] Self-employed 0%-band eligibility confirmed (turnover, Decision 753, disguised employment)?
+  [ ] Self-employed 0% rate eligibility confirmed (gross income <= ALL 14m, disguised employment)?
   [ ] Contribution ceiling figure confirmed against CoM decision?
   [ ] Per-child/education deduction income limit (<ALL 1,200,000) met?
   [ ] Filing threshold met (return required)?
@@ -519,7 +527,7 @@ If the client provides a bank statement but cannot answer onboarding questions i
 ONBOARDING QUESTIONS -- ALBANIA INCOME TAX
 1. Tax residency: resident (worldwide income) or non-resident (Albania-source only)?
 2. Income type: employment, self-employed/business, investment, or mixed?
-3. If self-employed: total annual turnover? Is your activity on the CoM Decision 753 excluded list?
+3. If self-employed: total annual gross income? Is it ALL 14,000,000 or less?
 4. If self-employed: what % of your income comes from your largest client? From your top 3 clients?
 5. Are you VAT-registered (turnover > ALL 10,000,000)?
 6. Did you have more than one employer during the year?
@@ -562,7 +570,7 @@ ONBOARDING QUESTIONS -- ALBANIA INCOME TAX
 | --- | --- | --- |
 | Tax-free monthly employment income | ALL 50,000/month | tatime.gov.al |
 | Employment 23% breakpoint (annual) | ALL 2,040,000 | Law 29/2023; PwC |
-| Self-employed 0% PIT turnover ceiling | ALL 14,000,000/year (0% until 31 Dec 2029) | HLB Albania |
+| Self-employed 0% PIT gross income threshold (all or nothing, not a band) | ALL 14,000,000/year (0% until 31 Dec 2029) | Law 29/2023 art. 69(1)(dh) |
 | Annual return mandatory filing | income > ALL 1,200,000 OR multiple employers OR > ALL 50,000 untaxed | PwC; tatime.gov.al; HLB |
 | Per-child deduction | ALL 48,000/year/child <18 (income < ALL 1,200,000) | HLB Albania |
 | Children's education deduction | up to ALL 100,000/year (income < ALL 1,200,000) | HLB Albania |
@@ -584,6 +592,8 @@ ONBOARDING QUESTIONS -- ALBANIA INCOME TAX
 10. ARS Firm — CoM Decision No. 776/2025 on the National Minimum Wage — https://arsfirm.al/en/council-of-ministers-decision-no-776-dated-december-19-2025-on-the-determination-of-the-minimum-wage-at-the-national-level/
 11. Eurofast — Albania Payroll Guide 2025 (contribution floor/ceiling) — https://eurofast.eu/wp-content/uploads/2025/02/Payroll-Guide-2025_Albania-1.pdf
 12. Karanovic & Partners — Albania Implementing New Income Tax Law (Law 29/2023, effective 2024) — https://www.karanovicpartners.com/news/albania-implementing-new-income-tax-law/
+13. Law No. 29/2023 "On income tax", consolidated to Law No. 81/2025 (arts. 22, 24, 69), General Directorate of Taxes copy: https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf (read 23 Oct 2026)
+14. General Instruction No. 26 of 8.9.2023 on income tax (paras. 24.4, 24.6, 50), General Directorate of Taxes copy: https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf (read 23 Oct 2026)
 
 ### Test Suite
 
@@ -595,13 +605,13 @@ Expected: PIT = 13% × (90,000 − 30,000) = ALL 7,800. Employee contributions 1
 Input: monthly gross ALL 250,000.
 Expected: PIT = 22,100 + 23% × (250,000 − 200,000) = 22,100 + 11,500 = ALL 33,600.
 
-**Test 3 -- Self-employed within the 0% band.**
-Input: turnover ALL 9,500,000, expenses ALL 3,200,000, eligible activity, no disguised employment.
+**Test 3 -- Self-employed, gross income at or below ALL 14m (0% rate).**
+Input: gross income ALL 9,500,000, expenses ALL 3,200,000, no disguised employment.
 Expected: taxable profit ALL 6,300,000; income tax = ALL 0 (0% until 2029). Contributions due separately.
 
-**Test 4 -- Self-employed above ALL 14m.**
-Input: profit ALL 17,000,000.
-Expected: income tax = 23% × (17,000,000 − 14,000,000) = ALL 690,000.
+**Test 4 -- Self-employed, gross income above ALL 14m.**
+Input: gross income ALL 20,000,000, expenses ALL 3,000,000 (profit ALL 17,000,000), no employment income, no children.
+Expected: no 0% rate. Taxable profit = 17,000,000 − 360,000 (art. 22(1)(c)) = 16,640,000; income tax = 14,000,000 × 15% + 2,640,000 × 23% = 2,100,000 + 607,200 = ALL 2,707,200.
 
 **Test 5 -- Dividend.**
 Input: dividend ALL 500,000.
@@ -613,7 +623,7 @@ Expected: tax = 15% × 60,000 = ALL 9,000; net ALL 51,000.
 
 **Test 7 -- Disguised employment.**
 Input: ALL 4,000,000 self-employed income, 100% from one client.
-Expected: reclassified to employment; tax = 265,200 + 23% × (4,000,000 − 2,040,000) = 265,200 + 450,800 = ALL 716,000. The 0% band does NOT apply.
+Expected: reclassified to employment; tax = 265,200 + 23% × (4,000,000 − 2,040,000) = 265,200 + 450,800 = ALL 716,000. The 0% business rate does NOT apply.
 
 **Test 8 -- Annual employment reconciliation, top band.**
 Input: annual employment income ALL 3,000,000.
@@ -621,7 +631,8 @@ Expected: tax = 265,200 + 23% × (3,000,000 − 2,040,000) = 265,200 + 220,800 =
 
 ## PROHIBITIONS
 
-- NEVER apply the self-employed 0% rate without confirming turnover ≤ ALL 14m, activity eligibility (CoM Decision 753), AND no disguised-employment reclassification
+- NEVER apply the self-employed 0% rate without confirming gross income ≤ ALL 14m AND no disguised-employment reclassification
+- NEVER apply 0% to the first ALL 14m of a business whose gross income is above ALL 14m: the threshold is all or nothing
 - NEVER ignore the disguised-employment rule for single-client or few-client self-employed income
 - NEVER apply the per-child / education deduction to a taxpayer with income ≥ ALL 1,200,000
 - NEVER apply social-insurance contributions above the ceiling, or apply a ceiling to health insurance (health has none)
@@ -629,7 +640,7 @@ Expected: tax = 265,200 + 23% × (3,000,000 − 2,040,000) = 265,200 + 220,800 =
 - NEVER allow income tax itself, fines, penalties, drawings, or VAT payments as business deductions
 - NEVER include VAT collected on sales in business income for VAT-registered clients
 - NEVER treat a non-resident as taxed on worldwide income — non-residents are Albania-source only
-- NEVER rely on the [RESEARCH GAP] figures (contribution ceiling, monthly-table reconciliation, Decision 753 list, depreciation rates) without reviewer confirmation
+- NEVER rely on the [RESEARCH GAP] figures (contribution ceiling, monthly-table reconciliation, depreciation rates) without reviewer confirmation
 - NEVER present tax calculations as definitive -- always label as estimated
 
 ## Disclaimer
