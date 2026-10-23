@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: cz-income-tax covers the self-employed (OSVČ) only, tax year 2025
+  IT-IND: "cz-employee-income-tax covers employees and non-business income for 2026; cz-income-tax (self-employed OSVČ) still carries tax year 2025 figures"
   SC: "employee and employer contributions are in cz-employee-contributions (2026); the self-employed skill cz-social-health still carries 2025 figures and the old 2.1% OSVČ sickness rate (2.7% in 2026)"
 ---
 
@@ -16,12 +16,12 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cz-income-tax (self-employed only, tax year 2025; employment income under ITA § 6 is not covered) | partial, source-cited draft |
+| IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, still tax year 2025 figures) | partial, source-cited draft |
 | IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
 | SC, social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed, still 2025 figures) | partial, source-cited draft |
 | PR, payroll withholding | (missing: employer income tax advances, tax declaration, annual reconciliation; employee social and health insurance is in cz-employee-contributions) | |
-| TP, transfer pricing | (missing: arm's length rule in ITA § 23(7), documentation, advance pricing agreements) | |
+| TP, transfer pricing | cz-transfer-pricing | source-cited draft |
 | XB, cross-border | cz-cross-border | source-cited draft |
 
 Also in the pack: cz-tax-overview, cz-company-formation, references.md.
@@ -31,6 +31,7 @@ Also in the pack: cz-tax-overview, cz-company-formation, references.md.
 - Income Taxes Act (586/1992 Coll.): https://www.zakonyprolidi.cz/cs/1992-586 (read 2026-10-22)
 - Tax Code (280/2009 Coll.): https://www.zakonyprolidi.cz/cs/2009-280 (read 2026-10-22)
 - VAT Act (235/2004 Coll.): https://www.zakonyprolidi.cz/cs/2004-235
-- Finanční správa: https://financnisprava.gov.cz (read 2026-10-22)
+- Income Taxes Act, official e-Sbírka text in force for 2026: https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 (read 2026-10-23)
+- Finanční správa: https://financnisprava.gov.cz (read 2026-10-23)
 - ČSSZ: https://www.cssz.gov.cz (read 2026-10-23)
 - VZP: https://www.vzp.cz (read 2026-10-23)
