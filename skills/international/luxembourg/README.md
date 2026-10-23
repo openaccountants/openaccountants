@@ -18,7 +18,7 @@ Calendar tax year. Direct taxes (income tax, corporate income tax, municipal bus
 | VAT | luxembourg-vat-return | source-cited draft |
 | SC, social contributions | luxembourg-social-contributions | source-cited draft |
 | PR, payroll withholding | luxembourg-payroll | source-cited draft |
-| TP, transfer pricing | (missing: arm's length rules of arts. 56 and 56bis LIR) | |
+| TP, transfer pricing | lu-transfer-pricing | source-cited draft |
 | XB, cross-border | (missing: residence, non-residents, treaties and exit rules for individuals) | |
 
 luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the Accounting packs milestone and is not counted here.

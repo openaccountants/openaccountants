@@ -5,7 +5,6 @@ not_applicable: {}
 covered_by:
   XB: leaving-germany-exit-tax
 partial:
-  IT-IND: "no method for partners' profit shares (partnership-level determination) or for the year of moving to or from Germany (part-year liability with the s.32b progression clause)"
   XB: "no treaty withholding-rate table by country; germany-to-switzerland-cross-border-tax is on 2025 and is missing its commuter (Grenzgaenger) part"
 ---
 
@@ -17,7 +16,7 @@ Calendar tax year. Authorities: the Bundeszentralamt für Steuern and the local 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | de-employee-income-tax, de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax; non-residents in de-non-resident-tax. Missing: partners in partnerships; the year of moving in or out | source-cited draft; partial: no partnerships, no year of moving in or out |
+| IT-IND, individual income tax | de-employee-income-tax, de-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax; partners and the year of moving in or out in de-partners-and-part-year; non-residents in de-non-resident-tax | source-cited draft |
 | IT-CORP, corporate income tax | de-corporate-tax (trade tax detail in de-trade-tax) | source-cited draft |
 | VAT | germany-vat-return (advance returns, transaction classification); de-vat-annual-and-special-schemes (annual return, § 19 small businesses and the EU scheme, § 20 cash basis, extension and special prepayment, partial exemption, § 15a, § 13b, OSS, penalties, e-invoicing dates) | source-cited draft |
 | SC, social contributions | de-social-contributions | source-cited draft |
