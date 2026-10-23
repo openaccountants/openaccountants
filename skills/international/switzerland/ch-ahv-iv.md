@@ -1,7 +1,7 @@
 ---
 name: ch-ahv-iv
 description: "Swiss AHV/IV/EO social contributions of the self-employed and of non-employed persons for 2026. Covers who counts as self-employed, the full rate of 10.0% (AHV 8.1%, IV 1.4%, EO 0.5%) from CHF 60,500, the full sliding scale from CHF 10,100 (5.371%) and the minimum contribution of CHF 530, how the contribution income is found (tax assessment, add-back of own contributions, interest on own capital, rounding), provisional (Akonto) and final contributions, the allowance past reference age, 5% late interest, non-employed contributions by wealth (CHF 530 to 26,500), voluntary BVG and the pillar 3a limits for 2026 (CHF 7,258 / 20% up to CHF 36,288). Trigger on: AHV Selbständige, AHV/IV/EO self-employed, sinkende Beitragsskala, Akontobeiträge, Beitragsverfügung, Nichterwerbstätige AHV, Säule 3a Selbständige. Out of scope: ch-payroll (employees), ch-federal-income-tax and ch-cantonal-tax (the tax return), ch-cross-border (which country insures)."
-version: 0.1
+version: 2.1
 jurisdiction: CH
 category: international
 tax_year: 2026
