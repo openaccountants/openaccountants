@@ -1,6 +1,6 @@
 ---
 name: de-employee-income-tax
-description: "Use this skill for the annual German income tax return of an employee resident in Germany (Einkommensteuererklärung with Anlage N), tax year 2026, filed in 2027. Covers when an employee must file (§ 46 EStG: tax classes III/V or IV with factor, side income or wage replacement benefits over EUR 410, several employers) and when filing is voluntary (four years), the 2026 tariff, Arbeitnehmer-Pauschbetrag, Werbungskosten (commuting allowance at EUR 0.38 from the first km, home office day allowance, work equipment, training, union dues), Vorsorgeaufwendungen, Kinderfreibetrag against Kindergeld, Ehegattensplitting, single parent relief, household services (§ 35a), extraordinary burdens, solidarity surcharge, church tax, deadlines, late-filing surcharge and interest. Trigger on: Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung, tax refund Germany employee, Steuerklasse III V Pflichtveranlagung, Splittingtarif. Out of scope: payroll withholding (de-payroll, germany-payroll), self-employed income (de-income-tax), capital income (de-capital-gains), rent (de-rental-income), non-resident individuals."
+description: "Use this skill for the annual German income tax return of an employee resident in Germany (Einkommensteuererklärung with Anlage N), tax year 2026, filed in 2027. Covers when an employee must file (§ 46 EStG: tax classes III/V or IV with factor, side income or wage replacement benefits over EUR 410, several employers) and when filing is voluntary (four years), the 2026 tariff, Arbeitnehmer-Pauschbetrag, Werbungskosten (commuting allowance at EUR 0.38 from the first km, home office day allowance, work equipment, training, union dues), Vorsorgeaufwendungen, Kinderfreibetrag against Kindergeld, Ehegattensplitting, single parent relief, household services (§ 35a), extraordinary burdens, solidarity surcharge, church tax, deadlines, late-filing surcharge and interest. Trigger on: Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung, tax refund Germany employee, Steuerklasse III V Pflichtveranlagung, Splittingtarif. Out of scope: payroll withholding (de-payroll, germany-payroll), self-employed income (de-income-tax), capital income (de-capital-gains), rent (de-rental-income), non-resident individuals (de-non-resident-tax)."
 jurisdiction: DE
 category: international
 tax_year: 2026
@@ -17,7 +17,7 @@ This skill works out the annual income tax of an employee who lives in Germany, 
 See also, and do not repeat here:
 
 - **de-payroll** and **germany-payroll**: how the employer withholds Lohnsteuer, tax classes, the Vorsorgepauschale in payroll, social insurance rates and ceilings.
-- **de-income-tax** and **de-einkommensteuer-freelancer**: self-employed and trade income (Anlage S, G, EÜR). de-income-tax is still on 2025 figures.
+- **de-income-tax** and **de-einkommensteuer-freelancer**: self-employed and trade income (Anlage S, G, EÜR).
 - **de-capital-gains**: investment income and the flat tax (Anlage KAP).
 - **de-rental-income**: letting income (Anlage V).
 - **de-social-contributions**: social insurance for the self-employed.
@@ -27,7 +27,7 @@ See also, and do not repeat here:
 
 - **In scope.** A person with a residence or habitual abode in Germany is fully liable to income tax on worldwide income (§ 1(1) EStG). This skill covers such a person whose income is mainly employment income (§ 19 EStG), with or without a spouse, with or without children.
 - **Married couples and registered partners.** They may choose joint assessment (Zusammenveranlagung) if both are fully liable, not permanently separated, and met both conditions at some point in the year (§ 26(1) EStG). If neither chooses, joint assessment applies (§ 26(3) EStG).
-- **Out of scope.** Non-residents with German wages (limited liability, § 1(4) EStG, or the § 1(3) election): no method here. Self-employed, trade, capital and rental income go to the sibling skills listed above, then the results come back into this return.
+- **Out of scope.** Non-residents with German wages (limited liability, § 1(4) EStG, or the § 1(3) election): use de-non-resident-tax. Self-employed, trade, capital and rental income go to the sibling skills listed above, then the results come back into this return.
 
 ### When an employee must file (§ 46(2) EStG)
 
@@ -134,7 +134,7 @@ Work down this ladder. Each spouse computes their own employment income; the res
 - **Foreign pay of a resident.** Pay exempt in Germany under a tax treaty is still declared (Anlage N-AUS) and raises the rate on the rest (§ 32b EStG). Foreign tax credits under § 34c EStG are not covered here.
 - **Moving in or out in 2026.** Months of limited liability and German-exempt foreign income are handled under § 2(7) and § 32b EStG; the pack has no method yet. For shares and departure rules see leaving-germany-exit-tax.
 - **Spouse living abroad.** An EU/EEA national may get joint assessment with a spouse resident in the EU/EEA under § 1a EStG; filing is then mandatory (§ 46(2) no. 7 EStG). Not covered further.
-- **Non-residents with German pay** (§ 1(3) election, § 46(2) no. 9 EStG) and Swiss cross-border commuters: refuse here. The commuter case belongs in germany-to-switzerland-cross-border-tax, which does not yet have its commuter part.
+- **Non-residents with German pay** (§ 1(3) election, § 46(2) no. 9 EStG): use de-non-resident-tax. Swiss cross-border commuters: refuse here. The commuter case belongs in germany-to-switzerland-cross-border-tax, which does not yet have its commuter part.
 
 ## Worked examples
 

@@ -4,8 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: se-cross-border
-partial:
-  IT-IND: "no skill covers the 3:12 rules for owners of closely held companies (dividends and gains on qualified shares), which change from income year 2026"
 ---
 
 # Sweden: tax pack
@@ -16,7 +14,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains | source-cited draft (partial) |
+| IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | source-cited draft |
 | IT-CORP, corporate income tax | se-corporate-tax | source-cited draft |
 | VAT | se-vat-return, sweden-vat-return | source-cited draft |
 | SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | source-cited draft |
