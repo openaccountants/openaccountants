@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 1.1
 verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
