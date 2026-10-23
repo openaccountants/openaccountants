@@ -1,7 +1,7 @@
 ---
 name: vat-returns-for-small-businesses-in-the-uk
 description: "A short routine for a VAT-registered small UK business filing a standard quarterly VAT return in 2026/27. Covers the GBP 90,000 registration and GBP 88,000 deregistration thresholds, the 20%, 5% and 0% rates, the return and payment deadline of one month and 7 days after the period ends, Making Tax Digital for VAT, the points-based late submission penalty and the late payment penalty, and the Flat Rate Scheme limits (join at GBP 150,000, leave over GBP 230,000, 16.5% limited cost business rate, 1% first-year discount). Trigger phrases: small business VAT return, quarterly VAT return, VAT deadline, VAT threshold 2026, flat rate scheme, limited cost business, VAT penalty points. Out of scope: the full 9-box method and corrections (uk-vat-return), EU goods sellers (gb-vat-eu-goods-sellers), partial exemption, VAT groups, margin schemes and Northern Ireland goods trade."
-version: 1.1
+version: 1.2
 jurisdiction: GB
 category: international
 tax_year: 2026
@@ -49,10 +49,10 @@ It is not for a business with partial exemption, cross-border goods trade, a VAT
 ## The traps
 
 - **Wrong rate on a mixed basket.** Most goods and services are 20%; some are 5% or 0%; some are exempt. Exempt and zero-rated are not the same: zero-rated sales count towards the registration threshold, exempt sales do not.
-- **Threshold watch for a business that is not yet registered.** The test is rolling: taxable turnover in the last 12 months over GBP 90,000, or an expectation that the next 30 days alone will go over GBP 90,000. Register within 30 days of the end of the month in which you went over.
+- **Threshold watch for a business that is not yet registered.** The test is rolling: taxable turnover in the last 12 months over GBP 90,000, or an expectation that the next 30 days alone will go over GBP 90,000. On the 12-month test, register within 30 days of the end of the month in which you went over. On the 30-day test, register by the end of that 30-day period.
 - **Weekend deadlines.** The deadline does not move for weekends or bank holidays. The payment must reach HMRC on or before it.
 - **Flat Rate Scheme limited cost test.** A business that spends little on goods pays 16.5% of VAT-inclusive turnover, which can be more than it would pay under the standard method. Run the test every period.
-- **Flat Rate Scheme exit.** You must leave the scheme if turnover in the last 12 months was over GBP 230,000 including VAT on the anniversary of joining, or you expect more than GBP 230,000 in the next 30 days alone.
+- **Flat Rate Scheme exit.** You must leave the scheme if, on the anniversary of joining, turnover in the last 12 months was over GBP 230,000 including VAT (or you expect it to be over that in the next 12 months), or if you expect more than GBP 230,000 in the next 30 days alone.
 - **Penalty points stack.** A late nil return still earns a point.
 
 ## Rates, thresholds and deadlines

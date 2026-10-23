@@ -1,7 +1,7 @@
 ---
 name: uk-payments-on-account
 description: Use this skill whenever asked about UK Payments on Account (POA) for Self Assessment taxpayers. Trigger on phrases like "payments on account", "POA", "POA 2026", "January payment", "July payment", "balancing payment", "SA303", "claim to reduce", "reduce payments on account", "do I need to make payments on account", "POA threshold", "tax underpayment", "MTD ITSA payments on account", or any question about advance income tax payments under UK Self Assessment. Covers the two-payment schedule (31 January / 31 July), the GBP 1,000 threshold, the 80% PAYE test, balancing payment mechanics, SA303 claim to reduce, excluded items (voluntary Class 2 NIC, student loan, CGT), interest on late payments, the interaction with MTD ITSA quarterly updates from 6 April 2026, and interaction with tax codes. ALWAYS read this skill before touching any UK POA work.
-version: 3.1
+version: 3.2
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-23
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UK Payments On Account
 
-## UK Payments on Account (POA) -- Self Assessment Skill v3.1
+## UK Payments on Account (POA) -- Self Assessment Skill v3.2
 
 ## Rates and thresholds, 2026/27 (6 April 2026 to 5 April 2027)
 
@@ -31,10 +31,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **1st POA for 2026/27**: 31 January 2027, 50% of the 2025/26 SA balance  _(TMA 1970 s.59A(2))_
 - **2nd POA for 2026/27**: 31 July 2027, 50%  _(TMA 1970 s.59A(2))_
 - **Balancing payment for 2026/27**: 31 January 2028  _(TMA 1970 s.59B)_
-- **Not in the POA base**: student loan and postgraduate loan repayments, capital gains tax, voluntary Class 2 NIC; these are paid with the balancing payment  _(https://www.gov.uk/understand-self-assessment-bill/payments-on-account)_
+- **Not in the POA base**: student loan and postgraduate loan repayments, capital gains tax, voluntary Class 2 NIC; these are paid with the balancing payment  _(https://www.gov.uk/understand-self-assessment-bill/payments-on-account; Class 2: HMRC Self Assessment Manual SAM121665)_
 - **Late payment interest**: Bank of England base rate + 4% from 6 April 2025 (was + 2.5% before); 7.75% from 9 January 2026  _(https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates)_
 - **Type**: simple interest (not compound)  _(TMA 1970 s.86)_
-- **Making Tax Digital for Income Tax**: from 6 April 2026 if 2024/25 qualifying income was over £50,000; from 6 April 2027 over £30,000 (2025/26); from 6 April 2028 over £20,000 (2026/27). POA dates do not change  _(https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax)_
+- **Making Tax Digital for Income Tax**: from 6 April 2026 if 2024/25 qualifying income was over £50,000; from 6 April 2027 over £30,000 (2025/26); from 6 April 2028 over £20,000 (2026/27). POA dates do not change  _(https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)_
 
 ## Section 1 -- Quick reference
 
@@ -217,7 +217,23 @@ expected:
 
 **Input:** Standard POA = GBP 5,000 each. Client expects current year SA balance = GBP 3,000. SA303 filed.
 
-**Output:** Reduced POA = GBP 1,500 each. If actual liability = GBP 6,000, HMRC charges interest on GBP 3,500 shortfall per instalment from original due dates.
+**Output:** Reduced POA = GBP 1,500 each. If the actual SA balance = GBP 6,000, each POA is treated for interest as the lower of the original POA (GBP 5,000) and the reduced POA plus half the balancing amount (GBP 1,500 + 50% x GBP 3,000 = GBP 3,000). HMRC charges interest on a GBP 1,500 shortfall per instalment from the original due dates (TMA 1970 s.86(4)-(6)).
+
+```oa-check
+name: Interest base after an SA303 reduction (TMA 1970 s.86(5))
+inputs:
+  original_poa: 5000
+  reduced_poa: 1500
+  actual_balance: 6000
+steps:
+  - balancing: actual_balance - 2 * reduced_poa
+  - deemed_poa: min(original_poa, reduced_poa + balancing / 2)
+  - shortfall_each: deemed_poa - reduced_poa
+expected:
+  balancing: 3000.00
+  deemed_poa: 3000.00
+  shortfall_each: 1500.00
+```
 
 ### Example 6 -- Late payment interest (Bank Rate + 4 pp)
 
@@ -364,7 +380,7 @@ There is no separate penalty for late POA payment -- only interest. Outside Maki
 
 ### 6.3 Time-to-Pay arrangements
 
-- **Time-to-Pay (TTP) arrangements**: A taxpayer who cannot meet a POA on time may apply for a Time-to-Pay (TTP) arrangement with HMRC (online for liabilities under GBP 30,000, by phone above). The arrangement does NOT stop interest accruing, but it does stop further collection action and any late payment surcharge on the balancing payment provided the TTP is agreed before the surcharge trigger date. Process unchanged across 2024-25, 2025-26, 2026-27.
+- **Time-to-Pay (TTP) arrangements**: A taxpayer who cannot pay on time can ask HMRC for a payment plan (Time to Pay) (https://www.gov.uk/pay-self-assessment-tax-bill). Late payment interest still runs. Under Making Tax Digital for Income Tax, if a plan is agreed and kept, late payment penalties are paused from the date the taxpayer contacted HMRC (https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax).
 
 ## Section 7 -- Interaction with tax codes and PAYE
 
@@ -376,7 +392,7 @@ There is no separate penalty for late POA payment -- only interest. Outside Maki
 
 **EC2 -- SA303 reduction to zero, then income increases.** Balancing payment of full amount due 31 January. HMRC charges interest on the shortfall from each original POA due date.
 
-**EC3 -- Employment plus self-employment.** GBP 50,000 PAYE + GBP 15,000 SE. Total tax GBP 18,000, PAYE GBP 14,000. PAYE% = 77.8% < 80%. POAs apply. SA balance = GBP 4,000, each POA = GBP 2,000.
+**EC3 -- Employment plus self-employment.** Employee with a side trade. Total income tax and Class 4 GBP 18,000, of which GBP 14,000 deducted through PAYE. PAYE% = 77.8% < 80%. POAs apply. SA balance = GBP 4,000, each POA = GBP 2,000.
 
 **EC4 -- Prior year SA balance just below GBP 1,000.** GBP 980. No POAs required. Full amount due as balancing payment.
 
@@ -487,13 +503,15 @@ Before delivering output, verify:
 | Income Tax (Payments on Account) (Amendment) Regulations 2008 (GBP 500 to GBP 1,000) | https://www.legislation.gov.uk/uksi/2008/838/made | 2026-10-23 |
 | GOV.UK, Understand your Self Assessment tax bill: payments on account | https://www.gov.uk/understand-self-assessment-bill/payments-on-account | 2026-10-23 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-23 |
-| GOV.UK, Check if you're eligible for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax | 2026-10-23 |
+| GOV.UK, Find out if and when you need to use Making Tax Digital for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-23 |
 | GOV.UK, Send quarterly updates (MTD for Income Tax) | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | 2026-10-23 |
 | GOV.UK, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-23 |
 | GOV.UK, Self-employed National Insurance rates (voluntary Class 2) | https://www.gov.uk/self-employed-national-insurance-rates | 2026-10-23 |
 | GOV.UK, Pay your Self Assessment bill through your tax code | https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code | 2026-10-23 |
+| TMA 1970 s.86 (interest after a claim to reduce, s.86(4)-(6)) | https://www.legislation.gov.uk/ukpga/1970/9/section/86 | 2026-10-23 |
+| HMRC Self Assessment Manual SAM121665 (Class 2 not in payments on account) | https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam121665 | 2026-10-23 |
 
-Not yet confirmed: the Bank of England base rate after 9 January 2026 (the HMRC page read today still shows 7.75% as current); the online payment plan limit for Self Assessment debts (GBP 30,000 in section 6.3 is carried over and was not re-read today).
+Not yet confirmed: the Bank of England base rate after 9 January 2026 (the HMRC page read today still shows 7.75% as current); the online payment plan limit for Self Assessment debts (removed from section 6.3; not found on the GOV.UK pages read today).
 
 ## Disclaimer
 

@@ -1,7 +1,7 @@
 ---
 name: uk-self-employment-sa103
 description: Use this skill whenever asked about UK self-employment income for sole traders filing SA103S (short) or SA103F (full) as part of Self Assessment. Trigger on phrases like "self-employment income", "SA103", "trading income", "sole trader tax", "allowable expenses UK", "capital allowances UK", "trading allowance", "basis period", "tax year basis", "simplified expenses", "Class 4 NIC", "Class 2 abolished", "MTD ITSA", "Making Tax Digital", "April 2026 sole trader", "loss relief self-employed", or any question about computing self-employment profits for a UK sole trader. Covers trading income computation, allowable expenses, capital allowances (AIA, WDA, FYA), simplified expenses, the trading allowance, the completed basis period reform, the MTD ITSA three-phase rollout from April 2026, loss relief, and Class 4 NIC interaction (including the post-2024 rate cut and Class 2 abolition). ALWAYS read this skill before touching any UK self-employment work.
-version: 3.1
+version: 3.2
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-23
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UK Self Employment Sa103
 
-## UK Self-Employment (SA103) -- Sole Trader Skill v3.1
+## UK Self-Employment (SA103) -- Sole Trader Skill v3.2
 
 **Three-year scope:** 2024-25 | 2025-26 | 2026-27 (working year, 6 April 2026 to 5 April 2027)
 
@@ -33,12 +33,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **AIA (Annual Investment Allowance)**: £1,000,000  _(CAA 2001 s.51A)_
 - **Main pool writing-down allowance**: 14% from 6 April 2026 (18% before); special rate pool 6%  _(Finance Act 2026 s.28; https://www.gov.uk/work-out-capital-allowances/rates-and-pools)_
 - **Zero-emission car first-year allowance**: 100% for new cars bought before April 2027  _(Finance Act 2026 s.30)_
+- **Main-rate first-year allowance**: 40% for new and unused main-rate plant or machinery bought on or after 1 January 2026; not cars, not second-hand, not special rate; open to sole traders (no company condition)  _(CAA 2001 ss.45U, 46 and 52, inserted by Finance Act 2026 s.29)_
 - **Class 4 NIC**: 0% to £12,570; 6% from £12,570 to £50,270; 2% above  _(https://www.gov.uk/self-employed-national-insurance-rates)_
 - **Class 2 NIC**: not payable; treated as paid if profits are £7,105 or more; voluntary £3.65 a week below that  _(same page)_
 - **Simplified mileage, cars and goods vehicles**: 55p a mile for the first 10,000 business miles in 2026-27 (45p before 6 April 2026); 25p after  _(https://www.gov.uk/simpler-income-tax-simplified-expenses/print)_
 - **Simplified mileage, motorcycles**: 24p a mile  _(same page)_
 - **Working from home flat rate**: £10 / £18 / £26 a month for 25-50 / 51-100 / 101+ hours  _(same page)_
-- **Making Tax Digital for Income Tax**: from 6 April 2026 if 2024/25 qualifying income was over £50,000; from 6 April 2027 over £30,000; from 6 April 2028 over £20,000  _(https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax)_
+- **Making Tax Digital for Income Tax**: from 6 April 2026 if 2024/25 qualifying income was over £50,000; from 6 April 2027 over £30,000; from 6 April 2028 over £20,000  _(https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)_
 
 ## Section 1 -- Quick Reference
 
@@ -51,13 +52,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Currency | GBP only |
 | Current tax year | 6 April 2026 -- 5 April 2027 (2026-27) |
 | Primary legislation | Income Tax (Trading and Other Income) Act 2005 (ITTOIA 2005); Capital Allowances Act 2001 (CAA 2001) |
-| Supporting legislation | Finance Act 2022 s.7 and Sch 1 (basis period reform); National Insurance Contributions (Reduction in Rates) Act 2023, s.2 (Class 4 main rate 9% to 8%) and s.3 (Class 2 no longer payable), both from 6 April 2024; National Insurance Contributions (Reduction in Rates) Act 2024, s.1 (Class 4 main rate to 6% from 6 April 2024); Finance (No.2) Act 2017 ss.60-62 (MTD powers); Finance Act 2026 ss.28-30 (capital allowances); Social Security Contributions and Benefits Act 1992 s.15 |
+| Supporting legislation | Finance Act 2022 s.7 and Sch 1 (basis period reform); National Insurance Contributions (Reduction in Rates) Act 2023, s.3 (Class 2 no longer payable from 6 April 2024); National Insurance Contributions (Reduction in Rates) Act 2024, s.1(3) (Class 4 main rate 9% to 6% from 6 April 2024; s.1(4) treats the 2023 Act s.2 cut to 8% as never having had effect); Finance (No.2) Act 2017 ss.60-62 (MTD powers); Finance Act 2026 ss.28-30 (capital allowances); Social Security Contributions and Benefits Act 1992 s.15 |
 | Tax authority | HM Revenue & Customs (HMRC) |
 | Filing portal | HMRC Self Assessment Online (MTD ITSA quarterly portal from April 2026 for mandated traders) |
 | Filing deadline (2026-27, online) | 31 January 2028 |
 | Filing deadline (2026-27, paper) | 31 October 2027 |
 | Status | Source-cited draft: not reviewed by an accountant |
-| Skill version | 3.1 |
+| Skill version | 3.2 |
 
 ### MTD ITSA Timeline -- The Biggest 2026-27 Change [T1]
 
@@ -103,7 +104,7 @@ Making Tax Digital for Income Tax Self Assessment (MTD ITSA) phases in mandatory
 
 ### Class 4 NIC Rates -- Applies All 3 Years [T1]
 
-The main rate fell from 9% to 8% from 6 April 2024 (National Insurance Contributions (Reduction in Rates) Act 2023 s.2) and then to 6% from the same date (National Insurance Contributions (Reduction in Rates) Act 2024 s.1). The rates are unchanged for 2026-27 (GOV.UK, read 2026-10-23).
+The main rate fell from 9% to 6% from 6 April 2024 (National Insurance Contributions (Reduction in Rates) Act 2024 s.1(3)). The 2023 Act s.2 cut to 8% never took effect: s.1(4) of the 2024 Act treats it as never having had effect. The rates are unchanged for 2026-27 (GOV.UK, read 2026-10-23).
 
 **Class 4 NIC Rates**
 
@@ -225,7 +226,7 @@ The main rate fell from 9% to 8% from 6 April 2024 (National Insurance Contribut
 | LOAN REPAYMENT, MORTGAGE | EXCLUDE | Not deductible | Capital repayments are not expenses |
 | DRAWINGS, PERSONAL | EXCLUDE | Not deductible | Personal drawings |
 | AMAZON (check) | T2 -- ask | Could be business supplies or personal | Default: not deductible until confirmed |
-| COMPUTER, LAPTOP, DELL, APPLE | Capital allowance (Box 49 AIA) | T1 | Capital item -- claim AIA (100% in year). Do NOT put in revenue expenses. |
+| COMPUTER, LAPTOP, DELL, APPLE | Cash basis: allowable expense. Accruals: Box 49 AIA | T1 | Cash basis (the default): deduct the cost as a normal allowable expense, not a capital allowance. Accruals basis: capital item, claim AIA (100% in year), not a revenue expense. |
 
 ### 3.3 SaaS Subscriptions (Common UK Patterns)
 
@@ -264,7 +265,7 @@ The main rate fell from 9% to 8% from 6 April 2024 (National Insurance Contribut
 - Turnover: GBP 52,000
 - Revenue expenses: 6,000 + 1,200 + 800 + 300 (50% of 600) + 1,500 = GBP 9,800
 - Mileage: 8,000 x 45p = GBP 3,600
-- Capital allowances (AIA): laptop GBP 1,300
+- Laptop: GBP 1,300, deducted as an allowable expense (on the cash basis, equipment other than cars is an expense, not a capital allowance)
 - Total deductions: 9,800 + 3,600 + 1,300 = GBP 14,700
 - Taxable profit: 52,000 - 14,700 = GBP 37,300
 - Class 4 NIC: (37,300 - 12,570) x 6% = GBP 1,483.80
@@ -277,10 +278,10 @@ inputs:
   turnover: 52000
   revenue_expenses: 9800
   miles: 8000
-  laptop_aia: 1300
+  laptop: 1300
 steps:
   - mileage: miles * 0.45
-  - profit: turnover - revenue_expenses - mileage - laptop_aia
+  - profit: turnover - revenue_expenses - mileage - laptop
   - class4: (min(profit, 50270) - 12570) * 0.06
 expected:
   mileage: 3600.00
@@ -315,11 +316,11 @@ inputs:
   turnover: 52000
   revenue_expenses: 9800
   miles: 8000
-  laptop_aia: 1300
+  laptop: 1300
   personal_allowance: 12570
 steps:
   - mileage: miles * 0.55
-  - profit: turnover - revenue_expenses - mileage - laptop_aia
+  - profit: turnover - revenue_expenses - mileage - laptop
   - income_tax: (profit - personal_allowance) * 0.20
   - class4: (min(profit, 50270) - 12570) * 0.06
 expected:
@@ -625,7 +626,7 @@ ONBOARDING QUESTIONS -- UK SELF-EMPLOYMENT
 | AIA | CAA 2001, ss 38A-38B |
 | Cash basis (default from 2024-25) | ITTOIA 2005, Part 2 Ch 3A as amended by FA 2024 |
 | Loss relief | ITA 2007, ss 64-90 |
-| Class 4 NIC (6%/2% from 6 Apr 2024) | SSCBA 1992, s15; National Insurance Contributions (Reduction in Rates) Act 2023 s.2 (9% to 8%); National Insurance Contributions (Reduction in Rates) Act 2024 s.1 (to 6%): https://www.legislation.gov.uk/ukpga/2024/5/section/1 |
+| Class 4 NIC (6%/2% from 6 Apr 2024) | SSCBA 1992, s15; National Insurance Contributions (Reduction in Rates) Act 2024 s.1(3) (9% to 6%) and s.1(4) (2023 Act s.2 treated as never having had effect): https://www.legislation.gov.uk/ukpga/2024/5/section/1 |
 | Class 2 abolition (compulsory) | National Insurance Contributions (Reduction in Rates) Act 2023, s.3 (in force 6 April 2024): https://www.legislation.gov.uk/ukpga/2023/57/section/3 |
 | Basis period reform | Finance Act 2022 s.7 and Sch 1 |
 | Capital allowances 2026 changes | Finance Act 2026 ss.28-30: https://www.legislation.gov.uk/ukpga/2026/11/contents |
@@ -641,7 +642,7 @@ ONBOARDING QUESTIONS -- UK SELF-EMPLOYMENT
 - NEVER allow fines or penalties as deductible
 - NEVER claim both trading allowance AND actual expenses
 - NEVER claim AIA on cars -- cars are excluded from AIA
-- NEVER claim full expensing for sole traders -- companies only
+- NEVER claim full expensing for sole traders -- companies only (the 40% main-rate first-year allowance under CAA 2001 s.45U is not limited to companies)
 - NEVER claim sideways loss relief on cash basis for years before 2024 to 2025 (the restriction was removed from 2024 to 2025)
 - NEVER include VAT-inclusive figures if VAT-registered
 - NEVER separately claim fuel/insurance when using mileage rate
@@ -656,9 +657,12 @@ ONBOARDING QUESTIONS -- UK SELF-EMPLOYMENT
 
 | Source | URL | Read on |
 |---|---|---|
-| NIC (Reduction in Rates) Act 2023 s.2 (Class 4 9% to 8%) | https://www.legislation.gov.uk/ukpga/2023/57/section/2/enacted | 2026-10-23 |
+| NIC (Reduction in Rates) Act 2023 s.2 (superseded, never had effect) | https://www.legislation.gov.uk/ukpga/2023/57/section/2 | 2026-10-23 |
 | NIC (Reduction in Rates) Act 2023 contents (s.3 Class 2) | https://www.legislation.gov.uk/ukpga/2023/57/contents | 2026-10-23 |
-| NIC (Reduction in Rates) Act 2024 s.1 (Class 4 to 6%) | https://www.legislation.gov.uk/ukpga/2024/5/enacted | 2026-10-23 |
+| NIC (Reduction in Rates) Act 2024 s.1 (Class 4 9% to 6%) | https://www.legislation.gov.uk/ukpga/2024/5/section/1 | 2026-10-23 |
+| Finance Act 2026 s.28 (main pool 18% to 14%) | https://www.legislation.gov.uk/ukpga/2026/11/section/28 | 2026-10-23 |
+| Finance Act 2026 s.29 (40% first-year allowance, CAA 2001 s.45U) | https://www.legislation.gov.uk/ukpga/2026/11/section/29 | 2026-10-23 |
+| GOV.UK, Cash basis (equipment as an expense) | https://www.gov.uk/simpler-income-tax-cash-basis | 2026-10-23 |
 | Finance Act 2026 contents (ss.28-30 capital allowances) | https://www.legislation.gov.uk/ukpga/2026/11/contents | 2026-10-23 |
 | Finance Act 2026 s.30 (zero-emission car FYA to 2027) | https://www.legislation.gov.uk/ukpga/2026/11/section/30 | 2026-10-23 |
 | GOV.UK, Self-employed National Insurance rates | https://www.gov.uk/self-employed-national-insurance-rates | 2026-10-23 |
@@ -667,11 +671,11 @@ ONBOARDING QUESTIONS -- UK SELF-EMPLOYMENT
 | GOV.UK, First-year allowances | https://www.gov.uk/capital-allowances/first-year-allowances | 2026-10-23 |
 | SA103F 2026 form (box numbers) | https://assets.publishing.service.gov.uk/media/69c2635b13101e9908704b36/SA103F_2026.pdf | 2026-10-23 |
 | SA103F 2026 notes (what goes in each box) | https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf | 2026-10-23 |
-| GOV.UK, Check if you're eligible for MTD for Income Tax | https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax | 2026-10-23 |
+| GOV.UK, Find out if and when you need to use MTD for Income Tax | https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax | 2026-10-23 |
 | GOV.UK, Send quarterly updates | https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/send-quarterly-updates | 2026-10-23 |
 | GOV.UK, Penalties for MTD for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-23 |
 
-Not yet confirmed: whether the 40% first-year allowance for main-rate expenditure (Finance Act 2026 s.29) is open to sole traders (section not read in full); the 2026-27 SA103F form (the box numbers above are from the 2025-26 form, SA103F 2026, and its box 50 still says 18%).
+Not yet confirmed: which SA103F box takes the 40% main-rate first-year allowance; the 2026-27 SA103F form (the box numbers above are from the 2025-26 form, SA103F 2026, and its box 50 still says 18%).
 
 ## Disclaimer
 
