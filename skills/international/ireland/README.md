@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   SC: ie-prsi-class-s
 partial:
-  IT-IND: no non-resident or PAYE-only (Form 12) method, no Case V rental method, and ie-cgt and ie-non-dom still give CGT at 33% after the 31% rate from 7 October 2026
+  IT-IND: no non-resident or PAYE-only (Form 12) method and no Case V rental method
 ---
 
 # Ireland: tax pack
