@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Belgium cryptocurrency or digit
 version: 1.0
 jurisdiction: BE
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -34,7 +34,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing portal | MyMinfin (Tax-on-web) |
 | Filing deadline | Typically late June–mid July of the following year (varies; paper earlier) |
 | EU reporting | DAC8 / CARF — exchanges report from 2026 |
-| Three-tier system | (1) Tax-free (normal management); (2) 33% + municipal surcharge (speculative); (3) Progressive 25%–50% + social security (professional) |
+| Three-tier system | (1) Normal management: tax-free for gains to 31 December 2025; from 1 January 2026 taxed at 10% with the EUR 10,000 exemption and the 31 December 2025 value step-up (see be-capital-gains); (2) 33% + municipal surcharge (speculative); (3) Progressive 25%–50% + social security (professional) |
 | 2026 change | New 10% capital gains tax on crypto from 1 Jan 2026 for normal management gains (EUR 10,000 annual exemption) |
 | Validated by | Pending — requires sign-off by a Belgian belastingconsulent / conseil fiscal |
 | Skill version | 1.0 |
@@ -45,7 +45,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown whether normal management or speculative | Treat as speculative (taxable at 33%) |
+| Unknown whether normal management or speculative | Gains from 1 January 2026: report under the 10% regime. The return is presumed correct and the administration must prove speculation or abnormal management (Circular 2026/C/74, no. 192). Gains to 31 December 2025: treat as speculative (taxable at 33%) |
 | Unknown whether speculative or professional | Treat as professional (progressive rates) |
 | Unknown cost basis | STOP — cannot compute gain without acquisition cost |
 | Unknown residency status | STOP — determines worldwide taxation |
@@ -72,7 +72,7 @@ The Dienst Voorafgaande Beslissingen (DVB/SDA) uses a detailed questionnaire to 
 
 **Classification Factors table**
 
-| Factor | Normal Management (Tax-Free) | Speculative (33%) | Professional (25–50%) |
+| Factor | Normal Management (tax-free to 31 Dec 2025; 10% from 1 Jan 2026) | Speculative (33%) | Professional (25–50%) |
 | --- | --- | --- | --- |
 | Crypto as % of movable wealth | < 25% (SDA informal threshold) | > 25% | High and systematic |
 | Transaction frequency | Low; buy-and-hold | High volume trading | Very high; daily trading |
@@ -138,7 +138,7 @@ Citation: Loi du 24 décembre 2002 / Wet van 24 december 2002 (DVB/SDA organic l
 
 From 1 January 2026, a new capital gains tax applies:
 
-**2026 Regime table**  _(Programme law (Programmawet) 2025; Art. 90, al. 1, 9°, c) WIB 92 (new))_
+**2026 Regime table**  _(Law of 6 April 2026 introducing a tax on capital gains on financial assets; Art. 90, al. 1, 9°, c) WIB 92 (new))_
 
 | Aspect | Detail |
 | --- | --- |
@@ -315,7 +315,7 @@ Belgium applies the same three-tier classification to NFTs as to other crypto as
 
 | Classification | Loss Offset | Carry-Forward |
 | --- | --- | --- |
-| Normal management | N/A (gains are tax-free, so losses are irrelevant) | No |
+| Normal management | Gains to 31 December 2025: N/A (gains were tax-free). From 1 January 2026: losses offset gains in the 10% regime in the same year (see 8.3 and be-capital-gains) | No |
 | Speculative (miscellaneous income) | Losses can **only** offset gains within the **same category** (miscellaneous/speculative crypto gains) in the **same tax year** | **No carry-forward** |
 | Professional income | Losses deductible as business losses; can offset other professional income | Carry-forward possible under normal business loss rules |
 
@@ -325,7 +325,7 @@ Belgium applies the same three-tier classification to NFTs as to other crypto as
 
 ### 8.3 2026 Regime — Loss Rules
 
-- **2026 loss rules** — Under the new 10% capital gains tax from 2026: Losses are deductible only against gains in the same sub-category of financial assets; Crypto losses cannot offset, e.g., share gains; No carry-forward of losses
+- **2026 loss rules** — Under the 10% capital gains tax from 2026, a loss offsets gains only if realised in the same taxable period, by the same taxpayer, and in the same regime (art. 90, al. 1, 9°, c) WIB 92). All financial assets in that regime mix, crypto included: a crypto loss offsets a gain on, for example, listed shares in the same year. For crypto held before 2026, the loss is measured from the 31 December 2025 value. No carry-forward or carry-back. _(Art. 102, §5 WIB 92; Circular 2026/C/74, no. 174)_
 
 ## Section 9 -- Anti-Avoidance Rules
 
