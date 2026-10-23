@@ -43,7 +43,7 @@ The law is Act No. 595/2003 Z. z. on Income Tax ("ITA", version in force from 1 
 
 **Domestic deals count too.** The guideline has separate rules for cross-border and domestic significant controlled transactions (MF/012879/2025-724, art. 2(8) and (9)), and Table I takes both (12/PO/2026/IM).
 
-**Out of scope.** A micro-taxpayer (mikrodaňovník, revenue up to EUR 60,000) loses that status if it is a dependent person with a controlled transaction in the period (ITA § 2(w)(1)).
+**Micro-taxpayers.** A micro-taxpayer (mikrodaňovník, revenue up to EUR 60,000) loses that status if it is a dependent person with a controlled transaction in the period (ITA § 2(w)(1)).
 
 ## Rates, bands and thresholds
 
@@ -62,7 +62,7 @@ The law is Act No. 595/2003 Z. z. on Income Tax ("ITA", version in force from 1 
 | APA term | up to 5 periods, renewable for up to 5 more; longer if the competent authorities agree it | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (§ 18(4) and (5)) |
 | Penalty on tax increased by the tax office | 3 times the ECB base rate a year, at least 10% a year; at least 1% of the amount, at most 100% | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 155(1)(f), (2), (5)) |
 | Penalty on tax disclosed in a supplementary return | the ECB base rate a year, at least 3% a year (2 times, at least 7%, if filed within 15 days after an audit starts) | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 155(1)(g), (h), (5)) |
-| Penalty for a missed non-monetary duty (for example documentation not handed over) | EUR 100 to EUR 10,000, can be repeated | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 154(1)(d), (j); § 155(1)(e), (16)) |
+| Penalty for a missed non-monetary duty (for example documentation not handed over) | EUR 100 to EUR 10,000; a fine for a breach under § 154(1)(j) can be repeated while it lasts | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 154(1)(d), (j); § 155(1)(e), (16)) |
 | Late payment interest | 4 times the ECB base rate a year, at least 15% a year, for at most 4 years | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html (§ 156(2)) |
 | ECB base rate (main refinancing operations) | 2.15% from 11 June 2025; 2.40% from 17 June 2026; 2.65% from 16 September 2026 | 2026 | https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ |
 | Country-by-country report: group consolidated revenue in the prior year | EUR 750,000,000 or more | 2026 | https://static.slov-lex.sk/static/SK/ZZ/2012/442/20260101.html (§ 22a(h)) |
@@ -95,7 +95,7 @@ A taxpayer may combine them or use another method, but only one that respects th
 
 **Permanent establishments** (§ 17(7)). A Slovak PE of a non-resident may not show a lower base, or a higher loss, than an independent enterprise doing the same work. § 18 applies to it, and the non-resident must keep documentation on the method.
 
-**Interest on related-party loans.** Besides the arm's length test, interest on loans from dependent persons is not deductible above 25% of profit before tax plus depreciation and interest expense (§ 21a(1)). Banks, insurers and leasing companies are outside this rule (§ 21a(3)). The corporate skill covers the base around it.
+**Interest on related-party loans.** Besides the arm's length test, interest on loans from dependent persons is not deductible above 25% of profit before tax plus depreciation and interest expense (§ 21a(1)). Banks, insurers and leasing companies are outside this rule (§ 21a(3)). § 21a does not apply where the taxpayer already increased its base under the interest limitation rule in § 17k, which adds back net interest costs above 30% of the adjusted base once they exceed EUR 3,000,000 (§ 17k(2), § 21a(4)). The corporate skill covers the base around it.
 
 ## Deadlines and filing
 
@@ -148,7 +148,7 @@ A taxpayer may combine them or use another method, but only one that respects th
 - **Doubled penalty for abuse.** Where the office adjusts under § 17(5)(a) and also applies the anti-abuse rule (ITA § 50a or TC § 3(6)), the penalty is doubled (ITA § 18a(1)). The doubling falls away if the taxpayer does not appeal and pays within the appeal period (§ 18a(2)).
 - **APA requested.** Where the taxpayer asked for an APA and the office audits the period of the request or the two periods before it, an adjustment without abuse carries the lower penalty under TC § 155(1)(g) (ITA § 18a(3)).
 - **Self-correction.** Tax disclosed in a supplementary return carries a penalty of the ECB base rate a year, at least 3% a year, on the difference (TC § 155(1)(g), (5)). It runs from the day after the return deadline until the supplementary return is filed (§ 155(2)). The rate is twice the ECB rate, at least 7%, if filed within 15 days after an audit starts (§ 155(1)(h)).
-- **Documentation not handed over, or another non-monetary duty missed.** EUR 100 to EUR 10,000, which can be repeated while the breach lasts (TC § 155(1)(e), (16)). A tax office does not impose a fine set within a range for a first breach (§ 155(4)).
+- **Documentation not handed over, or another non-monetary duty missed.** EUR 100 to EUR 10,000 (TC § 154(1)(j), § 155(1)(e)). The fine can be imposed again in the same amount if it did not lead to a remedy and the breach lasts (§ 155(16)). A tax office does not impose a fine set within a range for a first breach (§ 155(4)).
 - **Late payment interest.** 4 times the ECB base rate on the day the arrears arose, at least 15% a year, for each day until payment, for at most 4 years (TC § 156(2)). Interest under EUR 5 is not charged (§ 156(6)(b)).
 - **Country-by-country reporting.** Up to EUR 10,000 for not filing the report, and up to EUR 3,000 for a missed notice, both repeatable (Act 442/2012, § 22g(2)).
 - **Time limit.** Tax can be assessed for 5 years from the end of the year in which the return was due. An audit report restarts the period, but never beyond 10 years (TC § 69(1) to (3)). Where a tax treaty is applied, the limit is 10 years (§ 69(5)).
@@ -167,10 +167,10 @@ A taxpayer may combine them or use another method, but only one that respects th
 
 A Slovak s.r.o. has taxable revenue of EUR 3,000,000 in 2026, so its rate is 21%. It pays its Austrian parent a management fee of EUR 250,000 and deducts it in full. Its benchmark gives a range of independent fees with a median of EUR 180,000, and the fee sits above the range. In an audit that starts in June 2028, the office adjusts to the median.
 
-1. Documentation check: the fee is cross-border and above EUR 10,000, so it is significant. It is below EUR 1,000,000 and the company's revenue is below EUR 8,000,000, so neither full nor basic documentation applies. Table I in the 2026 return meets the duty (guideline art. 3(3)).
+1. Documentation check: the fee is cross-border and above EUR 10,000, so it is significant. The company does not report under IFRS, claims no regional investment aid and Austria is not a non-cooperative state. The fee is below EUR 1,000,000 and the company's revenue is below EUR 8,000,000, so neither full nor basic documentation applies (guideline art. 3(1) and (2)). Table I in the 2026 return meets the duty (guideline art. 3(3)).
 2. Adjustment to the median: EUR 250,000 less EUR 180,000 = EUR 70,000 (ITA § 17(5)(a), § 18(1)).
 3. Extra tax at 21%: EUR 14,700.
-4. Penalty: at the current ECB rate of 2.65%, 3 times is 7.95%, so the 10% floor applies (TC § 155(5)). It runs from 1 April 2027 (the day after the 31 March 2027 deadline) to 30 June 2028, the date the § 16(9) window is assumed to close: 457 days. On a 365-day year: 14,700 x 10% x 457 / 365 = EUR 1,840.52. That is above the 1% minimum of EUR 147.
+4. Penalty: the ECB rate used is the one on the day the assessment is delivered (TC § 155(7)). The example assumes it is still 2.65%: 3 times is 7.95%, so the 10% floor applies (§ 155(5)). The floor stops applying only if the ECB rate rises above 3.33%. It runs from 1 April 2027 (the day after the 31 March 2027 deadline) to 30 June 2028, the date the § 16(9) window is assumed to close: 457 days. On a 365-day year: 14,700 x 10% x 457 / 365 = EUR 1,840.52. That is above the 1% minimum of EUR 147.
 5. Paying within 15 days of the assessment cuts the penalty to two thirds: EUR 1,227.01 (§ 155(17)).
 6. Late payment interest is extra and is not computed here, because the ECB rate on the day the arrears arose is not yet known.
 7. To relieve the double tax, the parent asks Austria for a corresponding adjustment through the treaty's mutual agreement procedure or the EU Arbitration Convention.
@@ -206,7 +206,7 @@ A Slovak a.s. has taxable revenue of EUR 9,000,000, so its rate is 24%. In 2025 
 2. The Slovak loan has principal above EUR 50,000, so it is significant. It is domestic and the company claims no investment aid, so the interest goes in Table I and no separate file is needed.
 3. Excess royalty: EUR 1,200,000 less EUR 1,080,000 = EUR 120,000, added back (ITA § 17(5)(a)).
 4. Extra tax at 24%: EUR 28,800, paid by the end of the month after the month the company found the error (TC § 16(2)).
-5. Penalty: the ECB rate is 2.65%, below 3%, so the 3% floor applies (TC § 155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. On a 365-day year: 28,800 x 3% x 244 / 365 = EUR 577.58.
+5. Penalty: the ECB rate used is the one on the day the supplementary return is filed (TC § 155(7)). On 30 November 2026 it is 2.65% (in force from 16 September 2026), below 3%, so the 3% floor applies (§ 155(5)). It runs from 1 April 2026, the day after the 31 March 2026 deadline, to 30 November 2026: 244 days. On a 365-day year: 28,800 x 3% x 244 / 365 = EUR 577.58.
 6. Had the office found it on audit instead, the 10% floor would apply over a longer period (TC § 155(1)(f)).
 
 ```oa-check
@@ -244,9 +244,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 595/2003 Z. z. on Income Tax, version in force 1 January 2026 to 30 December 2026: §§ 2(n) to (r), (w), (x), (ab), 15, 17(5) to (7), 18, 18a, 21a, 49, 50a | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |
+| Act No. 595/2003 Z. z. on Income Tax, version in force 1 January 2026 to 30 December 2026: §§ 2(n) to (r), (w), (x), (ab), 15, 17(5) to (7), 17k, 18, 18a, 21a, 49, 50a | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html | 2026-10-23 |
+| Act No. 595/2003 Z. z., version in force 1 January 2025 to 14 March 2025: § 15 (rates for tax year 2025, used in example 2) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20250101.html | 2026-10-23 |
 | Act No. 595/2003 Z. z., version in force from 1 January 2027 (§§ 17(5) and 18 unchanged) | https://static.slov-lex.sk/static/SK/ZZ/2003/595/20270101.html | 2026-10-23 |
 | Act No. 563/2009 Z. z., Tax Code, version in force 1 September 2026 to 31 December 2026: §§ 16, 69, 154, 155, 156 | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20260901.html | 2026-10-23 |
+| Act No. 563/2009 Z. z., version in force from 1 January 2027 (§§ 16, 69, 154 to 156 unchanged) | https://static.slov-lex.sk/static/SK/ZZ/2009/563/20270101.html | 2026-10-23 |
 | Act No. 442/2012 Z. z. on international assistance and cooperation in tax administration, version in force from 1 January 2026: §§ 22a to 22g | https://static.slov-lex.sk/static/SK/ZZ/2012/442/20260101.html | 2026-10-23 |
 | Ministry of Finance, guideline MF/012879/2025-724 on documentation content | https://www.mfsr.sk/files/archiv/49/Usmernenie-2025.pdf | 2026-10-23 |
 | Ministry of Finance, annex to the guideline (shortened documentation form) | https://www.mfsr.sk/files/archiv/73/Usmernenie-2025_priloha.docx | 2026-10-23 |
