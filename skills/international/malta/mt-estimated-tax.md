@@ -1,23 +1,27 @@
 ---
 name: mt-estimated-tax
-description: Use this skill whenever asked about Malta provisional tax (estimated tax) for self-employed or self-occupied individuals. Trigger on phrases like "provisional tax Malta", "estimated tax", "PT instalments", "how much provisional tax do I pay", "20% 30% 50%", "April instalment", "August instalment", "December instalment", "TA24 overpayment", "refund of provisional tax", "Chapter 372", "ITA provisional tax", or any question about Malta's advance income tax payment obligations. Covers the three-instalment schedule (20/30/50), basis of computation (prior year assessment), first-year rules, minimum provisional tax, penalties for late payment, and interaction with the TA24 final assessment. ALWAYS read this skill before touching any Malta provisional tax work.
-version: 2.0
+description: 'Use this skill whenever asked about Malta provisional tax (estimated tax) for self-employed or self-occupied individuals. Trigger on phrases like "provisional tax Malta", "estimated tax", "PT instalments", "how much provisional tax do I pay", "20% 30% 50%", "April instalment", "August instalment", "December instalment", "PT benchmark", "PT reduction form", "refund of provisional tax", "Chapter 372", "ITMA article 42", or any question about Malta''s advance income tax payment obligations. Covers basis year 2026: the three-instalment schedule (20/30/50 on 30 April, 31 August, 21 December), the PT benchmark taken from the self-assessment two years earlier, first-year rules, the PT reduction form, interest of 0.6% a month on late payment, and settlement with the tax return by 30 June. ALWAYS read this skill before touching any Malta provisional tax work.'
+version: 2.1
 jurisdiction: MT
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: Michael Cutajar, CPA (Malta)
-review_status: current
-trust_label: Checked by Michael Cutajar, CPA (Malta)
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
 tier: 2
+verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # MT Estimated Tax
 
-## Malta Provisional Tax (PT) -- Self-Employed Skill v2.0
+## Malta Provisional Tax (PT) -- Self-Employed Skill v2.1
+
+Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
+
+Tax year: basis year 2026 (year of assessment 2027). The PT benchmark for 2026 comes from the self-assessment for basis year 2024. Rates are in [malta-income-tax](malta-income-tax.md); rental income is in [mt-rental-income](mt-rental-income.md).
 
 ## Section 1 -- Quick reference
 
@@ -27,17 +31,17 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Country | Malta (Republic of Malta) |
 | Tax | Income tax provisional payments (Provisional Tax / PT) |
-| Primary legislation | Income Tax Management Act, Chapter 372, Art. 44 et seq.; Provisional Tax Rules (S.L. 372.04) |
-| Supporting legislation | Income Tax Act, Chapter 123, Art. 14 (deductions); Art. 50 (penalties) |
-| Authority | Commissioner for Revenue (CFR), Malta |
-| Portal | https://cfr.gov.mt (CFR Online Services) |
+| Primary legislation | Income Tax Management Act, Chapter 372, Article 42; Payment of Provisional Tax Rules, 2000 |
+| Authority | Commissioner for Tax and Customs / Malta Tax and Customs Administration (MTCA) |
+| Portal | https://mtca.gov.mt (myTax) |
 | Currency | EUR only |
 | Payment schedule | Three instalments: 20% by 30 April, 30% by 31 August, 50% by 21 December |
-| Computation basis | 100% of prior year assessed tax liability (from most recent TA24) |
-| Minimum threshold | CFR-determined administrative minimum for new businesses with no prior assessment |
-| Contributor | Open Accountants Community |
-| Validated by | Pending -- requires sign-off by a Malta-warranted CPA |
-| Validation date | Pending |
+| Computation basis | PT benchmark: the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year (for 2026: basis year 2024, YA 2025). The Commissioner may set a higher benchmark by written notice |
+| Who pays | An individual who had to file a return for the benchmark year; companies liable to tax for that year |
+| First year of business | No PT; the tax for that year is paid with the return by 30 June of the next year |
+| Late payment | Interest of 0.6% per month or part thereof (from 1 September 2022) |
+| Tax year | Basis year 2026 |
+| Review status | Source-cited draft: not reviewed by an accountant |
 
 **Instalment schedule summary**
 
@@ -51,29 +55,29 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Ambiguity | Default |
 | --- | --- |
-| No prior year TA24 available | STOP -- request latest TA24 assessment or CFR PT notice |
-| First year, no penultimate year | Flag for reviewer -- minimum PT per CFR applies |
-| Income expected to drop | Pay per notice -- do NOT reduce without CFR approval |
-| Rental income in prior year tax | Exclude rental income taxed at 15% final WHT from PT basis |
-| Overpayment treatment | Credit against next year (not automatic refund) |
+| No benchmark-year self-assessment or PT notice available | STOP: request the PT notice (PT1) or the basis year 2024 self-assessment |
+| First or second year of business | Check whether a return was due for the benchmark year; if not, no PT benchmark |
+| Income expected to drop | Pay per notice, or file a PT reduction form; do not simply pay less |
+| Rental income taxed at the 15% final tax (TA24) | Not in the return, so not in the benchmark |
+| Overpayment treatment | Refunded by 31 December of the year the return is filed, if the return was filed on time and bank details are in My Account |
 
 ## Section 2 -- Required inputs and refusal catalogue
 
 ### Required inputs
 
-**Minimum viable** -- the prior year TA24 assessed tax liability (the net tax payable after credits) OR the CFR-issued PT notice (Vorauszahlungsbescheid equivalent). One of these is mandatory.
+**Minimum viable** -- the self-assessment for the benchmark year (basis year 2024 for 2026 PT): tax underpaid and PT paid for that year; OR the PT notice (PT1) issued by MTCA. One of these is mandatory.
 
 **Recommended** -- current year of assessment, any PAYE or withholding tax deducted at source in the current year, the client's TIN.
 
-**Ideal** -- full TA24 from the prior year, any CFR PT notice received, bank statements showing prior PT payments, any correspondence about PT reductions.
+**Ideal** -- the full benchmark-year return and tax statement, any PT notice received, bank statements showing PT payments, any PT reduction form filed.
 
-**Refusal policy if minimum is missing -- HARD STOP.** Without the prior year TA24 tax liability or a CFR PT notice, provisional tax cannot be computed. Do not estimate from income figures.
+**Refusal policy if minimum is missing -- HARD STOP.** Without the benchmark-year self-assessment or a PT notice, provisional tax cannot be computed. Do not estimate from income figures.
 
 ### Refusal catalogue
 
-- **R-MT-PT-1 -- Group companies or partnership PT** — Trigger: client asks about PT for a company or partnership. Message: "This skill covers provisional tax for self-employed individuals only. Company and partnership PT obligations have different rules. Please consult a warranted accountant."  _(Section 2 -- Refusal catalogue)_
-- **R-MT-PT-2 -- Non-resident PT obligations** — Trigger: client is non-resident or asks about PT for non-residents. Message: "Non-resident provisional tax obligations are outside the scope of this skill. Please consult a warranted accountant."  _(Section 2 -- Refusal catalogue)_
-- **R-MT-PT-3 -- PT penalty disputes** — Trigger: client asks about disputing PT penalties or CFR enforcement. Message: "Penalty disputes require legal analysis. Please escalate to a warranted accountant or tax advocate."  _(Section 2 -- Refusal catalogue)_
+- **R-MT-PT-1 -- Group companies or partnership PT**: Trigger: client asks about PT for a company or partnership. Message: "This skill covers provisional tax for self-employed individuals only. Companies also pay PT, with instalment dates that follow their accounting period. Please consult a warranted accountant."  _(Section 2 -- Refusal catalogue)_
+- **R-MT-PT-2 -- Non-resident PT obligations**: Trigger: client is non-resident or asks about PT for non-residents. Message: "Non-resident provisional tax obligations are outside the scope of this skill. Please consult a warranted accountant."  _(Section 2 -- Refusal catalogue)_
+- **R-MT-PT-3 -- PT penalty disputes**: Trigger: client asks about disputing PT penalties or CFR enforcement. Message: "Penalty disputes require legal analysis. Please escalate to a warranted accountant or tax advocate."  _(Section 2 -- Refusal catalogue)_
 
 ## Section 3 -- Payment pattern library
 
@@ -85,7 +89,7 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| CFR, COMMISSIONER FOR REVENUE | PT payment | Match with April/August/December timing to identify which instalment |
+| MTCA, CFR, COMMISSIONER FOR REVENUE | PT payment | Match with April/August/December timing to identify which instalment |
 | INLAND REVENUE MALTA | PT payment | Legacy name, same authority |
 | PROVISIONAL TAX, PROV TAX, PT PAYMENT | PT payment | Explicit description |
 | TAX INSTALMENT, TAX INST | PT payment | Generic instalment label |
@@ -99,7 +103,8 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 | 15 April -- 10 May | 1st instalment (20%) | High if payee is CFR |
 | 15 August -- 15 September | 2nd instalment (30%) | High if payee is CFR |
 | 1 December -- 31 December | 3rd instalment (50%) | High if payee is CFR |
-| Any other date to CFR | Late payment or adjustment | Flag for reviewer |
+| 1 June -- 30 June (following year) | Settlement with the return | Not PT |
+| Any other date to MTCA | Late payment or adjustment | Flag for reviewer |
 
 ### 3.3 Related but NOT provisional tax
 
@@ -108,7 +113,7 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | VAT DEPARTMENT, VAT PAYMENT | EXCLUDE from PT | VAT payment, separate obligation |
-| SSC, SOCIAL SECURITY, CESOP | EXCLUDE from PT | Social security contribution |
+| SSC, SOCIAL SECURITY, CLASS 2 | EXCLUDE from PT | Social security contribution |
 | FSS, FINAL SETTLEMENT | EXCLUDE from PT | PAYE final settlement system |
 | PENALTY, INTEREST CFR | EXCLUDE from PT | Late payment charge, not PT principal |
 
@@ -126,28 +131,47 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 ### Example 1 -- Standard three-instalment computation
 
-**Standard three-instalment computation**
+The 2024 self-assessment (YA 2025) shows tax underpaid of EUR 3,000, and EUR 6,000 of PT was paid for 2024. The 2026 PT benchmark is EUR 3,000 + EUR 6,000 = EUR 9,000. Tax deducted at source is not added back. The 2026 instalments are 20%, 30% and 50% of that.
 
 | Instalment | Percentage | Amount | Due date |
 | --- | --- | --- | --- |
-| 1st | 20% | EUR 1,800 | 30 April 2025 |
-| 2nd | 30% | EUR 2,700 | 31 August 2025 |
-| 3rd | 50% | EUR 4,500 | 21 December 2025 |
+| 1st | 20% | EUR 1,800 | 30 April 2026 |
+| 2nd | 30% | EUR 2,700 | 31 August 2026 |
+| 3rd | 50% | EUR 4,500 | 21 December 2026 |
 | **Total** | **100%** | **EUR 9,000** |  |
 
-### Example 2 -- Reconciliation with final assessment (underpayment)
+```oa-check
+name: PT benchmark from the 2024 self-assessment, 2026 instalments
+inputs:
+  tax_underpaid_2024: 3000
+  pt_paid_2024: 6000
+steps:
+  - benchmark: tax_underpaid_2024 + pt_paid_2024
+  - april: pct(benchmark, 20)
+  - august: pct(benchmark, 30)
+  - december: pct(benchmark, 50)
+  - total: april + august + december
+expected:
+  benchmark: 9000.00
+  april: 1800.00
+  august: 2700.00
+  december: 4500.00
+  total: 9000.00
+```
 
-**Input:** Total PT paid = EUR 8,000. Final TA24 tax liability = EUR 11,500.
+### Example 2 -- Reconciliation with the return (underpayment)
 
-**Output:** Balance due = EUR 11,500 - EUR 8,000 = EUR 3,500. Due with TA24 filing by 30 June following the year of assessment.
+**Input:** Total PT paid for 2026 = EUR 8,000. Tax per the 2026 self-assessment = EUR 11,500.
 
-### Example 3 -- Reconciliation with final assessment (overpayment)
+**Output:** Balance due = EUR 11,500 - EUR 8,000 = EUR 3,500, payable by the tax settlement date, 30 June 2027.
 
-**Input:** Total PT paid = EUR 10,000. Final TA24 tax liability = EUR 7,200.
+### Example 3 -- Reconciliation with the return (overpayment)
 
-**Output:** Overpayment = EUR 2,800. Client may request refund (written application to CFR, 6-12 months processing) or accept credit against next year's PT.
+**Input:** Total PT paid = EUR 10,000. Tax per the self-assessment = EUR 7,200.
 
-### Example 4 -- Rental income excluded from PT basis
+**Output:** Overpayment = EUR 2,800. If the return was filed on time, MTCA refunds it by 31 December of the filing year; after that, interest runs in the taxpayer's favour at 0.6% a month. The refund needs all income tax and VAT returns filed and bank details in My Account.
+
+### Example 4 -- Rental income at 15% excluded from PT basis
 
 **Rental income excluded from PT basis**
 
@@ -157,35 +181,49 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 | 2nd (30%) | EUR 900 |
 | 3rd (50%) | EUR 1,500 |
 
-### Example 5 -- Late payment penalty
+The benchmark is EUR 3,000: the 15% tax on rent was paid with the TA24 and never entered the return.
 
-**Input:** 1st instalment of EUR 1,800 due 30 April. Paid 15 July (2.5 months late).
+### Example 5 -- Late payment interest
 
-**Computation:** Interest = EUR 1,800 x 0.75% x 3 months (rounded up) = EUR 40.50. Additional 10% penalty may apply at CFR discretion.
+The first 2026 instalment of EUR 1,800 was due 30 April 2026 and paid 15 July 2026. Interest is 0.6% for each month or part of a month. May, June and the part of July give 3 months, so EUR 32.40.
+
+```oa-check
+name: Late April 2026 PT instalment, paid 15 July, 0.6% per month or part
+inputs:
+  unpaid: 1800
+  rate_pct: 0.6
+  months_part: 2.5
+steps:
+  - months: ceil(months_part)
+  - interest: pct(unpaid, rate_pct) * months
+expected:
+  months: 3
+  interest: 32.40
+```
 
 ### Example 6 -- Bank statement classification
 
-**Input line:** `30.04.2025 ; CFR ONLINE PAYMENT ; DEBIT ; PT2025 INST 1 ; -1,800.00 ; EUR`
+**Input line:** `30.04.2026 ; MTCA ONLINE PAYMENT ; DEBIT ; PT2026 INST 1 ; -1,800.00 ; EUR`
 
-**Classification:** Provisional tax payment, 1st instalment for YA 2025. Not a deductible expense for VAT or income tax purposes -- this is a tax payment, not a business cost.
+**Classification:** Provisional tax payment, 1st instalment for basis year 2026. Not a deductible expense for VAT or income tax purposes: this is a tax payment, not a business cost.
 
 ## Section 5 -- Computation rules
 
-### 5.1 Standard computation (prior-year basis)
+### 5.1 Standard computation (benchmark year)
 
-- **Standard computation (prior-year basis)** — The computation basis is always the prior year assessed tax liability from the most recent TA24, after credits, minus any tax deducted at source. ``` prior_year_tax = TA24_assessed_tax - tax_credits - WHT_at_source PT_instalment_1 = prior_year_tax x 20% PT_instalment_2 = prior_year_tax x 30% PT_instalment_3 = prior_year_tax x 50% total_PT = prior_year_tax x 100% ``` Do NOT divide by three equally. The split is always 20/30/50.  _(Section 5.1)_
+- **Standard computation (benchmark year)**: The PT benchmark for a basis year is the tax payable in the self-assessment for the basis year two years earlier, adding back the PT paid for that year. Tax deducted at source stays deducted. ``` benchmark = tax_underpaid_line + PT_paid_for_benchmark_year PT_instalment_1 = benchmark x 20% PT_instalment_2 = benchmark x 30% PT_instalment_3 = benchmark x 50% ``` Do NOT divide by three equally. The split is always 20/30/50. If no self-assessment was filed for the benchmark year, the benchmark is the tax in the Commissioner's estimated tax statement.  _(Section 5.1; MTCA PT booklet Q3, Q8)_
 
 ### 5.2 Year-end reconciliation
 
-- **Year-end reconciliation** — ``` balance_due = final_tax_liability - total_PT_paid - WHT_at_source if balance_due > 0: additional payment required with TA24 (by 30 June) if balance_due < 0: overpayment -- refund or credit ```  _(Section 5.2)_
+- **Year-end reconciliation**: ``` balance_due = self_assessment_tax - total_PT_paid - tax_at_source if balance_due > 0: pay by 30 June of the following year if balance_due < 0: refund by 31 December if the return was filed on time ```  _(Section 5.2)_
 
-### 5.3 Special rules for first year and new businesses
+### 5.3 First year and new businesses
 
-- **Special rules for first year and new businesses** — For the first year of self-employment with no prior TA24: PT is based on the penultimate year's tax. If no penultimate year assessment exists, the CFR sets a minimum PT amount administratively. Flag for reviewer.  _(Section 5.3)_
+- **First year and new businesses**: In the first year of business there is no PT; the tax is paid with the return by 30 June of the following year. An individual is a PT payer for a basis year only if a return was due for the basis year two years earlier, so a business that starts in 2025 has its first benchmark in 2027 (based on 2025). The Commissioner may exempt a person, or set a benchmark, by written notice.  _(Section 5.3; MTCA PT booklet Q2, Q11)_
 
 ### 5.4 Excluded income
 
-- **Excluded income** — Income subject to final withholding tax (e.g., 15% on rental income, 15% on certain interest) is NOT included in the PT computation base. PT applies only to income subject to progressive rates.  _(Section 5.4)_
+- **Excluded income**: Income taxed at a final tax outside the return (for example the 15% on rent paid with the TA24) is not in the self-assessment, so it is not in the benchmark. Rent declared in the return under the normal system IS in the benchmark.  _(Section 5.4; MTCA manual on rental income)_
 
 ## Section 6 -- Penalties and interest
 
@@ -195,107 +233,128 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 | Element | Rate |
 | --- | --- |
-| Interest rate | 0.75% per month (9% per annum) |
+| Interest rate | 0.6% per month or part thereof (from 1 September 2022) |
 | Runs from | Due date of each instalment |
-| Maximum | No statutory cap -- accrues until paid |
-| Additional penalty | CFR may impose 10% on amounts outstanding after final due date |
+| Maximum | No cap found in the MTCA sources |
+| Shortfall after the year | Tax unpaid after 30 June of the following year also bears 0.6% a month |
 
 ### 6.2 Interest computation
 
-- **Interest computation** — ``` interest = unpaid_amount x 0.75% x months_overdue ``` Interest accrues per instalment independently. A missed April instalment accrues 8+ months of interest by December.  _(Section 6.2)_
+- **Interest computation**: ``` interest = unpaid_amount x 0.6% x months_or_part_overdue ``` Interest accrues per instalment independently. The 2019 MTCA booklet also reduces the charge by 90% on the part of the benchmark above the tax actually due; whether that reduction still applies to the post-2022 interest is not confirmed.  _(Section 6.2)_
 
 ## Section 7 -- Adjustments and reductions
 
-- **Adjustments and reductions** — If the taxpayer expects current year income to be significantly lower than the prior year, they may apply in writing to CFR to reduce PT instalments. The application must include evidence (reduced contracts, cessation of activity) and should be submitted before the relevant instalment due date. Risk: if actual tax exceeds the reduced PT, interest and penalties apply on the shortfall. Flag for reviewer before advising any PT reduction.  _(Section 7)_
+- **Adjustments and reductions**: If the taxpayer expects the tax for the year to be lower than the benchmark, they file a PT reduction form giving the estimated tax. No approval is needed. The instalments still follow the original benchmark (20% and 30%) until the reduced total is reached; the last instalment is the balance. Example: benchmark EUR 1,000, estimate EUR 800: pay EUR 200, EUR 300, then EUR 300. Risk: if the tax for the year exceeds the reduced total, interest runs on the shortfall. Flag for reviewer before advising any PT reduction.  _(Section 7; MTCA PT booklet Q9; MTCA FAQ 5)_
 
 ## Section 8 -- Edge cases
 
-**EC1 -- No prior year TA24 assessment available.** Client has been self-employed for 3 years but never filed a TA24. CFR may issue estimated assessments. PT should be based on the latest CFR-issued assessment. If none exists, CFR minimum applies. Flag for reviewer -- client must regularise filing history urgently.
+**EC1 -- No self-assessment for the benchmark year.** Client has been self-employed for 3 years but never filed a return. The benchmark is the tax in the Commissioner's estimated tax statement. Filing the return replaces it with the self-assessed figure. Flag for reviewer -- client must regularise filing history urgently.
 
-**EC2 -- Prior year resulted in zero tax.** Tax liability = EUR 0. PT = EUR 0. No instalments required. However, if current year income is expected to exceed the personal allowance, voluntary PT payments are prudent.
+**EC2 -- Benchmark year resulted in zero tax.** Tax liability = EUR 0. PT = EUR 0. No instalments required. However, if current year income is expected to exceed the personal allowance, voluntary PT payments are prudent.
 
-**EC3 -- Mid-year switch from employment to self-employment.** First year of self-employment. Penultimate-year rule applies. PAYE covers the employment portion. PT applies only to the self-employment income. Flag for reviewer.
+**EC3 -- Mid-year switch from employment to self-employment.** First year of self-employment. If the benchmark year had no return due (employment only, taxed under FSS), there is no PT benchmark yet. Tax on the self-employed income is settled with the return. Flag for reviewer.
 
-**EC4 -- Rental income at 15% final WHT.** Rental income taxed at 15% final WHT is excluded from the PT computation. PT applies only to income subject to progressive rates.
+**EC4 -- Rental income at the 15% final tax.** Rent taxed at 15% on the TA24 is not in the return, so it is outside the benchmark. Rent declared in the return is inside it.
 
-**EC5 -- Overpayment carried forward but client wants refund.** Client must submit written request to CFR. Processing time 6-12 months. Flag for reviewer for cash flow advice.
+**EC5 -- Overpayment.** If the return was filed on time, MTCA refunds by 31 December, with interest at 0.6% a month after that. The refund is held until all income tax and VAT returns are filed and bank details are in My Account.
 
-**EC6 -- Client ceases self-employment mid-year.** Apply to CFR to cancel remaining PT instalments. Final TA24 reconciles actual liability.
+**EC6 -- Client ceases self-employment mid-year.** File a PT reduction form with the estimated tax for the year. The return reconciles the actual liability.
 
-**EC7 -- CFR PT notice differs from client calculation.** The CFR notice prevails unless the client appeals. Pay the CFR-stated amount and query separately. Paying less triggers penalties on the shortfall.
+**EC7 -- PT notice differs from client calculation.** The notice sets the benchmark. Pay the stated amount, or file a PT reduction form, and query separately. Paying less without a reduction form triggers interest on the shortfall.
 
-**EC8 -- Foreign source income with DTR.** PT is based on the NET tax from the prior TA24, which already factors in double taxation relief. Flag for reviewer to confirm DTR availability in the current year.
+**EC8 -- Foreign source income with DTR.** The benchmark is the tax payable in the benchmark-year self-assessment, which already reflects double taxation relief. Flag for reviewer to confirm DTR availability in the current year.
 
-**EC9 -- Late filing of prior year TA24.** Use the latest available assessed year as the basis. File the overdue TA24 urgently. CFR may issue revised PT notices once processed.
+**EC9 -- Late filing of the benchmark-year return.** Until it is filed, the benchmark is the estimated tax statement. Once filed, the benchmark is revised to the self-assessed tax.
 
 ## Section 9 -- Self-checks
 
 Before delivering output, verify:
 
-- [ ] Prior year TA24 tax liability confirmed (or CFR PT notice obtained)
+- [ ] Benchmark-year self-assessment (two years earlier) confirmed, or PT notice obtained
 - [ ] 20/30/50 split applied (NOT equal thirds)
-- [ ] Rental income at final WHT excluded from PT basis
+- [ ] Rent taxed at the 15% final tax excluded from PT basis
 - [ ] All three instalment due dates stated (30 Apr, 31 Aug, 21 Dec)
 - [ ] Year-end reconciliation formula presented
 - [ ] First-year / new business rule checked
 - [ ] Any adjustment request flagged for reviewer
 - [ ] Overpayment treatment explained (credit vs refund)
 - [ ] Penalty rates stated if relevant
-- [ ] Output labelled as estimated until CFR notice confirmed
+- [ ] Output labelled as estimated until the PT notice is confirmed
 
 ## Section 10 -- Test suite
 
 ### Test 1 -- Standard three-instalment computation
 
-**Input:** Prior year TA24 tax liability = EUR 9,000.
+**Input:** PT benchmark (2024 self-assessment) = EUR 9,000.
 **Expected:** 1st = EUR 1,800 (30 Apr). 2nd = EUR 2,700 (31 Aug). 3rd = EUR 4,500 (21 Dec). Total = EUR 9,000.
 
 ### Test 2 -- Zero prior year tax
 
-**Input:** Prior year TA24 tax liability = EUR 0.
+**Input:** Benchmark-year tax = EUR 0.
 **Expected:** PT = EUR 0. No instalments due. Flag: advise voluntary payments if current year income expected to exceed threshold.
 
 ### Test 3 -- Underpayment reconciliation
 
-**Input:** Total PT paid = EUR 8,000. Final TA24 = EUR 11,500.
-**Expected:** Balance due = EUR 3,500. Due with TA24 filing by 30 June.
+**Input:** Total PT paid = EUR 8,000. Self-assessment tax = EUR 11,500.
+**Expected:** Balance due = EUR 3,500. Due by 30 June of the following year.
 
 ### Test 4 -- Overpayment reconciliation
 
-**Input:** Total PT paid = EUR 10,000. Final TA24 = EUR 7,200.
-**Expected:** Overpayment = EUR 2,800. Client may request refund or credit.
+**Input:** Total PT paid = EUR 10,000. Self-assessment tax = EUR 7,200.
+**Expected:** Overpayment = EUR 2,800. Refunded by 31 December if the return was filed on time.
 
 ### Test 5 -- Late payment penalty
 
-**Input:** 1st instalment EUR 1,800 due 30 April. Paid 15 July (approx. 3 months late).
-**Expected:** Interest = EUR 1,800 x 0.75% x 3 = EUR 40.50. Additional 10% penalty may apply.
+**Input:** 1st instalment EUR 1,800 due 30 April. Paid 15 July (2.5 months, counted as 3).
+**Expected:** Interest = EUR 1,800 x 0.6% x 3 = EUR 32.40.
 
 ### Test 6 -- First year, no prior assessment
 
-**Input:** First year of self-employment. No prior TA24.
-**Expected:** Flag for reviewer. Minimum PT per CFR administrative determination. Request CFR notice.
+**Input:** First year of self-employment. No return due for the benchmark year.
+**Expected:** No PT for the year. Tax paid with the return by 30 June of the following year. Flag for reviewer if a PT notice arrives anyway.
 
 ### Test 7 -- Rental income excluded
 
-**Input:** Prior year: EUR 3,000 tax on SE income + EUR 1,500 on rental (15% WHT). Total = EUR 4,500.
+**Input:** Benchmark year: EUR 3,000 tax in the return on SE income, plus EUR 1,500 paid on rent with the TA24 (15%).
 **Expected:** PT on EUR 3,000 only. 1st = EUR 600, 2nd = EUR 900, 3rd = EUR 1,500.
 
 ## Prohibitions
 
-- NEVER compute PT without the prior year TA24 tax liability or a CFR PT notice
-- NEVER use current year estimated income as the basis -- PT is always prior year
-- NEVER advise skipping PT payments because income is expected to drop -- must apply to CFR
+- NEVER compute PT without the benchmark-year self-assessment or a PT notice
+- NEVER use current year estimated income as the basis: PT follows the benchmark year (two years earlier) unless a PT reduction form is filed
+- NEVER advise skipping PT payments because income is expected to drop: file a PT reduction form
 - NEVER divide by three equally -- the split is always 20/30/50
-- NEVER include income subject to final WHT (rental at 15%) in the PT basis
-- NEVER present PT figures as definitive without a CFR notice -- label as estimated
+- NEVER include income taxed at a final tax outside the return (rent at 15%) in the PT basis
+- NEVER present PT figures as definitive without a PT notice: label as estimated
 - NEVER advise on PT penalty disputes without escalating to a warranted accountant
-- NEVER assume overpayment is automatically refunded -- client must apply or accept credit
+- NEVER promise a refund date unless the return was filed on time and bank details are in My Account
+
+## Ask the Client First
+
+- The PT notice (PT1) for 2026, or the 2024 self-assessment showing tax underpaid and PT paid.
+- The year the business started, and whether a return was due for 2024.
+- Whether 2026 tax will be lower than the benchmark (for a PT reduction form).
+- Which instalments have been paid, and on what dates.
+- Whether any rent is taxed at 15% on the TA24.
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| MTCA, Provisional Tax and Social Security Contributions booklet (2019 edition, linked from the Tax Return Cycle page) | https://mtca.gov.mt/docs/default-source/documents/personal-tax/individual/tax-return-cycle/pt-booklet730742a2-5244-4a68-81a5-6af28f61d15f.pdf | 2026-10-23 |
+| MTCA, Tax Return Cycle (30 June settlement, 0.6% interest, refunds by 31 December) | https://mtca.gov.mt/personal-tax/individual/tax-return-cycle | 2026-10-23 |
+| MTCA, FAQs General Questions (PT reduction form; 0.6% per month or part from 1 September 2022) | https://mtca.gov.mt/personal-tax/legal-and-technical/faqs/faqs---general-questions | 2026-10-23 |
+| MTCA, Manual on the Taxation of Rental Income (Article 42 ITMA, PT on rent) | https://mtca.gov.mt/docs/default-source/documents/manual-on-taxation-of-rental-incomee26fd6c3-a420-4cb8-b7c4-0b7e1137b7de.pdf | 2026-10-23 |
+| MTCA, Budget Measures Implementation Act 2026 overview (no change to PT) | https://mtca.gov.mt/business-tax/legislative-developments/2026 | 2026-10-23 |
+| Income Tax Management Act, Cap. 372 | https://legislation.mt/eli/cap/372/eng | Site unavailable on 2026-10-23 |
+
+Not yet confirmed: the subsidiary legislation number of the Payment of Provisional Tax Rules, 2000 (version 2.0 said S.L. 372.04); whether the 90% reduction in the 2019 booklet still applies to the 0.6% interest; whether interest on a late instalment stops at 30 June of the following year, as the 2019 booklet's additional tax did. The PT booklet is dated 2019 and legislation.mt was unavailable, so the article 42 text was not read.
 
 <!-- openaccountants-cta-block -->
 
