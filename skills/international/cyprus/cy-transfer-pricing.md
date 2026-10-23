@@ -1,6 +1,6 @@
 ---
 name: cy-transfer-pricing
-description: "Cyprus transfer pricing for tax year 2026: the arm's length rule in article 33 of the Income Tax Law 118(I)/2002, who counts as a connected person (the 25% test, relatives, partners, and from 2026 a director with 50% of board votes), the Cyprus local file thresholds raised from 1 January 2026 to EUR 2,500,000 per category, EUR 5,000,000 for goods and EUR 10,000,000 for financing, the master file duty for the ultimate or surrogate parent of a multinational group with revenue of EUR 750m or more, the Summary Information Table filed with the return, the 60-day production rule, the EUR 500 to EUR 20,000 penalties, advance pricing agreements under article 33C, country-by-country reporting at EUR 750m, and MAP and the EU dispute procedure. Trigger on: Cyprus transfer pricing, Cyprus local file, Summary Information Table, article 33 Cyprus, interest-free loan Cyprus, Cyprus APA. Out of scope: the corporate tax computation and SDC (cy-corporate-tax), individuals (cyprus-income-tax), planning (cyprus-tax-optimization)."
+description: "Cyprus transfer pricing for tax year 2026: the arm's length rule in article 33 of the Income Tax Law 118(I)/2002, connected persons (the 25% test, relatives, partners, and from 2026 a director with 50% of board votes), the 2026 local file thresholds (EUR 2,500,000 per category, EUR 5,000,000 for goods, EUR 10,000,000 for financing), the master file and country-by-country report at EUR 750m, the Summary Information Table, the 60-day production rule, penalties of EUR 500 to EUR 20,000, APAs, MAP and the EU dispute procedure, and a step-by-step method under OECD Chapter X for pricing intra-group loans, back-to-back financing, interest-free loans, guarantees and cash pools. Trigger on: Cyprus transfer pricing, Cyprus local file, Summary Information Table, intra-group loan interest rate Cyprus, back-to-back loan Cyprus, interest-free loan Cyprus, Cyprus APA. Out of scope: the corporate tax computation and SDC (cy-corporate-tax), individuals (cyprus-income-tax), planning (cyprus-tax-optimization)."
 jurisdiction: CY
 category: international
 tax_year: 2026
@@ -55,6 +55,8 @@ Related skills: `cy-corporate-tax` (the 15% rate, the taxable base, the IR4 dead
 | Country-by-country report: excluded group | Consolidated group revenue below EUR 750,000,000 in the preceding fiscal year | 2026 | Administrative Cooperation in Taxation Law 205(I)/2012, Annex III Part I definitions: https://www.cylaw.org/nomoi/enop/non-ind/2012_1_205/full.html |
 | Country-by-country report deadline | 12 months after the last day of the group's reporting fiscal year | 2026 | Law 205(I)/2012, article 7C(1) |
 | Corporate tax rate on an adjustment | 15% | 2026 | See `cy-corporate-tax` (Income Tax Law, Second Schedule) |
+| Interest limitation on exceeding borrowing costs (borrowing costs minus taxable interest income) | 30% of taxable EBITDA, with EUR 3,000,000 deductible in any case per company or Cyprus group | 2026 | Income Tax Law, articles 2 and 11(16)(a) and (d)(ii): https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
+| Cyprus safe-harbour margin for back-to-back or other intra-group financing | Not given: the Tax Department circular was not read from an official copy | 2026 | See "Not yet confirmed" |
 
 The Council of Ministers may change the local file thresholds by decree (article 33(14), added for 2026). No such decree was found.
 
@@ -69,6 +71,42 @@ The Council of Ministers may change the local file thresholds by decree (article
 7. **What the Cyprus local file contains** (K.D.P. 314/2022, para. 2(b)): the group's activities and structure; the local organisation and who management reports to; the business and strategy, including changes from the previous year; restructurings and transfers of intangibles; key competitors; a detailed description of each controlled transaction, the amounts per category per connected person, the group entities involved, copies of the contracts; for each category, a comparability and functional analysis, the method chosen and why, the tested party, the comparables and any adjustments to them, and why the result is at arm's length; copies of APAs and rulings issued by other tax authorities; and financial information, including the audited financial statements for the year. The master file content follows para. 2(a).
 8. **Quality review.** A holder of a practising certificate from the Institute of Certified Public Accountants of Cyprus (ICPAC) or another recognised audit body in Cyprus carries out a quality assurance review of the Cyprus local file, no later than the return filing date for the year (K.D.P. 273/2022, reg. 3(3)).
 9. **Below the threshold.** A taxpayer under the local file threshold for a category still has to price that category at arm's length; article 33(1) applies regardless. The Tax Department has issued guidance on the documentation it expects below the threshold and optional simplified pricing for some transactions. That guidance was not read from an official copy for this skill, so no safe-harbour figure is given here.
+
+### Pricing intra-group loans and other financing
+
+Cyprus law gives no formula for an interest rate. Article 33(6) lets the Commissioner apply article 33(1) in line with the OECD Transfer Pricing Guidelines, and Chapter X of the 2022 Guidelines is the OECD's guidance on financial transactions. The steps below follow Chapter X. The Tax Department's own circular on financing transactions was not read from an official copy (see "Not yet confirmed"), so this skill gives no Cyprus safe-harbour margin and no minimum spread.
+
+**Step 1. Delineate the transaction.** Decide first whether the advance is a loan at all, and for how much (OECD 10.11 to 10.13). Indicators: a fixed repayment date; an obligation to pay interest; the right to enforce payment; the lender's rank against ordinary creditors; covenants and security; the source of the interest payments; whether the borrower could borrow the same amount from a bank; whether the money buys capital assets; and whether the borrower has repaid on time or asked for postponements (10.12). If good-faith projections show the borrower could never service the full amount, only the part an independent lender would have lent is priced as a loan (10.13). The label in the contract does not decide this (10.11).
+
+**Step 2. Do the functional analysis.** For the lender, the key functions are assessing the borrower's risk, committing the capital, setting the terms, documenting the loan and monitoring it (10.24). If the lender does not control the risk of the loan, or lacks the financial capacity to bear a default, the risk goes to the group company that does, and the lender earns no more than a risk-free return (10.25). This is the test that decides how much a Cyprus finance company may keep.
+
+**Step 3. Rate the borrower.** Creditworthiness is one of the main factors in the rate (10.62). Use the borrower's own public rating if it has one; otherwise replicate a rating agency's method or use a credit-scoring tool, and record why the rating was chosen (10.68, 10.71 to 10.74). Adjust for implicit support: a subsidiary that is important to the group is rated closer to the group, with no fee for that support (10.76 to 10.79). The group rating may be used where the borrower is important to the group and its own credit metrics are close to the group's (10.82). Where both exist, prefer the rating of the specific debt (issue rating) over the borrower's general rating (10.70). Check whether controlled transactions that are not at arm's length distort the financial ratios; if they do, the rating derived from them is not reliable (10.75).
+
+**Step 4. Find comparables (CUP method).** Benchmark against loans or bonds of borrowers with the same rating and similar terms: amount, maturity, currency, security, seniority, covenants (10.89 to 10.91). Long maturity, no security and subordination push the rate up; strong collateral, a good guarantee and covenants push it down (10.90). Loans to members of other groups can be comparables (10.92), and so can realistic alternatives such as bonds, deposits and commercial paper, after adjustments (10.93). Look for internal comparables: a loan from an independent bank to the borrower or the group on similar terms (10.94, 10.95). The group's average external interest rate is not usually an internal comparable (10.95). Expect a range of rates, not one rate (10.91).
+
+**Step 5. Set the rate and the fees.** Pick a point in the range and write it into the loan agreement. Arrangement or commitment fees are tested like any other charge, remembering that a bank's fees partly cover regulatory costs a group lender does not have (10.96). If no comparables exist, the cost of funds approach builds the rate from the lender's borrowing cost plus its costs of arranging and servicing the loan, a risk premium and a profit margin; the lender's cost of funds must be competitive with other lenders', and the borrower must have had no cheaper realistic option (10.97 to 10.99). Credit default swap spreads and economic models are fallbacks with known weaknesses (10.101 to 10.106). A bank's "bankability" letter is not evidence of an arm's length rate (10.107, 10.108).
+
+**Step 6. Document it.** Keep the loan agreement, the rating analysis, the comparable search and the rate chosen. Above the EUR 10,000,000 financing threshold this goes in the Cyprus local file, which for each category must hold the functional analysis, the method and why it was chosen, the tested party, the comparables and adjustments, and why the result is at arm's length (K.D.P. 314/2022, para. 2(b)). A Cyprus ultimate or surrogate parent's master file also describes how the group is financed, which entities provide central financing, and the group's transfer pricing policy for financing (K.D.P. 314/2022, para. 2(a)(iv)).
+
+**Back-to-back financing.** A Cyprus company that borrows from one party and lends on to a connected company must show what it actually does (OECD 10.44 to 10.47). Two outcomes:
+- *Real lender.* Its own people in Cyprus decide whether to lend, on what terms, and monitor the borrower, and it has equity that could absorb a default. Then it bears the credit risk, and the on-loan is priced by steps 3 to 5 on the borrower's rating; the Cyprus company keeps the spread over its own cost of funds (10.24, 10.138 to 10.141).
+- *Conduit.* It only passes money through. Then it earns a return on its intermediary function, priced on the costs of that function, not a credit spread (10.100, 10.46), and no more than a risk-free return on the funds (10.25).
+
+The evidence for the margin is the functional analysis (who decides, who monitors, what capital is at risk) and the comparable search for the borrower's rate. No fixed Cyprus margin is given here, because the circular that sets the Tax Department's expectations for back-to-back financing was not read.
+
+**Interest-free and below-market loans.**
+- *Cyprus company lends.* The Commissioner adds arm's length interest to the lender's income (article 33(1)), taxed at 15% (example 1). The arm's length interest, not the nil charge, counts for the financing threshold (article 33(9)(a)).
+- *Cyprus company borrows from a connected lender.* Article 33(1) only adds profits, so it gives the borrower no deduction for interest it did not pay. The one exception is article 33(5): when the Commissioner increases a Cyprus lender's profits on a loan to a Cyprus borrower, the borrower gets an equal deduction treated as interest. Delineation still matters: an advance an independent lender would not have made may be equity, not a loan (step 1).
+
+**Guarantees.** First decide whether there is a guarantee at all. A letter of comfort with no enforceable right is not one, and support that comes only from group membership earns no fee (OECD 10.155, 10.163). An explicit guarantee is priced only for the benefit beyond implicit support (10.156, 10.175). The yield approach gives the most the borrower would pay: the rate it would pay without the guarantee, with implicit support, minus the rate with the guarantee (10.174 to 10.177). The cost approach gives the least the guarantor would accept, based on its expected loss or the capital needed (10.178 to 10.180). The arm's length fee comes from both perspectives (10.180). Where a guarantee lets the borrower borrow more than it could alone, part of the loan may be delineated as a loan to the guarantor followed by an equity contribution (10.161).
+
+**Cash pools.** A cash pool leader that only coordinates balances earns a service fee, not a bank's spread (10.130, 10.137). A treasury company that sets rates and bears credit, liquidity and currency risk is priced as a lender and may earn the spread (10.139 to 10.141). The netting benefit is shared among members after the leader is paid (10.121, 10.143). Balances that stay in the pool year after year may be re-delineated as term loans or deposits (10.122, 10.123). Cross-guarantees required by the pool bank may give the borrower nothing beyond implicit support; where the facts support that conclusion, no guarantee fee is due, and any support paid on another member's default is a capital contribution (10.147, 10.148).
+
+**Interaction with interest limitation and SDC.**
+- The 30% of taxable EBITDA limit with the EUR 3,000,000 safe harbour (article 11(16), see `cy-corporate-tax`) applies to "exceeding borrowing costs": deductible borrowing costs minus taxable interest income and economically equivalent income (article 2). A Cyprus on-lender that earns more interest than it pays has no exceeding borrowing costs, and a primary adjustment that raises its interest income reduces them further.
+- A corresponding deduction given to a Cyprus borrower under article 33(5) is treated as interest, so article 11, including the interest limitation, applies to it.
+- Interest paid to an associated company in a low-tax jurisdiction is not deductible (article 11(17), see `cy-corporate-tax`).
+- An ordinary Cyprus-resident company pays no SDC on interest, including deemed interest from an adjustment (SDC Law, article 3B; see point 5 of the list above). Interest received by a resident individual is in `cyprus-income-tax` and `cy-non-dom`.
 
 ## Deadlines and filing
 
@@ -165,6 +203,46 @@ expected:
   categories_over_old_limit_count: 3
 ```
 
+### Example 3: bank loan on-lent to a subsidiary, pricing the on-loan (tax year 2026)
+
+Lambda Holdings Ltd is Cyprus resident. On 1 January 2026 it borrows EUR 8,000,000 from an unrelated bank for 5 years at a fixed 4.60%. The same day it lends EUR 8,000,000 to its 100% subsidiary in Romania for 5 years, unsecured, interest payable yearly, principal at the end. Two Lambda directors in Cyprus with finance experience assessed the subsidiary's forecasts, approved the loan, and review its accounts every quarter. Lambda has equity of EUR 1,500,000 that would absorb a loss if the subsidiary defaulted. Lambda spends EUR 24,000 a year arranging and servicing the loan.
+
+The market data below is assumed for the example. It is not real data. A credit model gives the subsidiary a stand-alone rating of B+. It is a core trading company of the group, so implicit support lifts it one notch to BB- (OECD 10.78). A database search for euro 5-year senior unsecured loans and bonds of BB- borrowers gives a range of 5.50% to 6.30%, median 5.90%. Lambda sets the rate at 5.90%.
+
+Lambda's directors control the lending risk and it has the capital to bear it, so it is a real lender, not a conduit, and it keeps the spread (OECD 10.24, 10.25, 10.141). Interest received: 8,000,000 x 5.90% = EUR 472,000. Interest paid to the bank: 8,000,000 x 4.60% = EUR 368,000. Taxable profit on the arrangement: 472,000 - 368,000 - 24,000 = EUR 80,000. Corporate tax at 15%: EUR 12,000. No SDC, because Lambda is a company (SDC Law, article 3B). Interest received exceeds interest paid, so Lambda has no exceeding borrowing costs and the interest limitation does not bite (Income Tax Law, article 2 and article 11(16)).
+
+If Lambda had charged only 4.70%, its cost plus 0.10%, the Commissioner could add the shortfall to 5.90%: 8,000,000 x 1.20% = EUR 96,000, extra tax EUR 14,400. The financing category is under EUR 10,000,000 whether measured by principal or by interest, so Lambda keeps no Cyprus local file for it, but it keeps the rating analysis and comparable search to prove the rate, and files the Summary Information Table. Romania may test the same 5.90% from the borrower's side; that is outside this skill.
+
+```oa-check
+name: Lambda Holdings Ltd, bank loan on-lent to subsidiary, 2026
+inputs:
+  principal: 8000000
+  bank_rate_pct: 4.6
+  arm_length_rate_pct: 5.9
+  low_rate_pct: 4.7
+  servicing_costs: 24000
+  cit_rate_pct: 15
+  financing_threshold: 10000000
+steps:
+  - interest_received: principal * arm_length_rate_pct / 100
+  - interest_paid: principal * bank_rate_pct / 100
+  - taxable_profit: interest_received - interest_paid - servicing_costs
+  - cit: taxable_profit * cit_rate_pct / 100
+  - exceeding_borrowing_costs: max(0, interest_paid - interest_received)
+  - adjustment_if_low_rate: principal * (arm_length_rate_pct - low_rate_pct) / 100
+  - extra_cit_if_low_rate: adjustment_if_low_rate * cit_rate_pct / 100
+  - financing_excess_by_principal: max(0, principal - financing_threshold)
+expected:
+  interest_received: 472000
+  interest_paid: 368000
+  taxable_profit: 80000
+  cit: 12000
+  exceeding_borrowing_costs: 0
+  adjustment_if_low_rate: 96000
+  extra_cit_if_low_rate: 14400
+  financing_excess_by_principal: 0
+```
+
 ## Ask the client first
 
 1. Who owns the company, directly and through relatives, partners or other companies, and does any director hold 50% or more of board votes? This decides who is connected.
@@ -173,6 +251,8 @@ expected:
 4. Is the company the ultimate or surrogate parent of a group, and what was consolidated group revenue in the previous year?
 5. Does any shareholder use company assets privately, and has 10% SDC on a disguised distribution been paid for that use?
 6. Has any other country adjusted the price of these transactions, or is an APA or MAP request open?
+7. For each connected loan: the agreement, amount, currency, term, security, ranking, and any guarantee or cash pool behind it. Does the borrower have a credit rating, or recent bank loans we can use as comparables?
+8. If the company borrows to lend on: who in Cyprus decides on and monitors the loans, and how much equity does the company have at risk?
 
 ## Sources
 
@@ -185,5 +265,6 @@ expected:
 | Assessment and Collection of Taxes Law 4/1978, consolidated: article 50Z | https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html | 2026-10-23 |
 | Special Defence Contribution Law 117(I)/2002, consolidated: articles 3A and 3B | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-10-23 |
 | Administrative Cooperation in Taxation Law 205(I)/2012, consolidated: article 7C and Annex III | https://www.cylaw.org/nomoi/enop/non-ind/2012_1_205/full.html | 2026-10-23 |
+| OECD Transfer Pricing Guidelines for Multinational Enterprises and Tax Administrations 2022, Chapter X (financial transactions), paras. 10.1 to 10.183 | https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/01/oecd-transfer-pricing-guidelines-for-multinational-enterprises-and-tax-administrations-2022_57104b3a/0e655865-en.pdf | 2026-10-23 |
 
-Not yet confirmed: the Tax Department's 2023 circular on minimum documentation below the local file threshold and the optional simplification measures (reported elsewhere as a 5% mark-up for low value-adding services and a margin for back-to-back financing) could not be read from an official copy because the Tax Department website blocked access, and it is not confirmed whether that circular still applies after the 2026 threshold change; how the financing threshold is measured (principal or interest; the law says only that it is tested at arm's length value); whether payments and receipts in a category are added together for the threshold test (example 2 follows the Summary Information Table's "total per category" row); whether the Tax Department reads K.D.P. 314/2022, para. 5(a) ("those obliged to keep a file") as narrower than article 33(10) for persons below every local file threshold (the law, article 33(10), puts the duty on every article 33(7) person, and this skill follows the law); any fee for an APA application; any decree under article 33(14) changing the 2026 thresholds.
+Not yet confirmed: the Tax Department's 2023 circular on minimum documentation below the local file threshold and the optional simplification measures (reported elsewhere as a 5% mark-up for low value-adding services and a margin for back-to-back financing) could not be read from an official copy because the Tax Department website blocked access, and it is not confirmed whether that circular still applies after the 2026 threshold change; how the financing threshold is measured (principal or interest; the law says only that it is tested at arm's length value); whether payments and receipts in a category are added together for the threshold test (example 2 follows the Summary Information Table's "total per category" row); whether the Tax Department reads K.D.P. 314/2022, para. 5(a) ("those obliged to keep a file") as narrower than article 33(10) for persons below every local file threshold (the law, article 33(10), puts the duty on every article 33(7) person, and this skill follows the law); any fee for an APA application; any decree under article 33(14) changing the 2026 thresholds; the Tax Department's circular on intra-group financing (reported elsewhere as Circular 7/2023, naming the comparable uncontrolled price method for back-to-back financing), its margins and whether it still applies, because the Tax Department website blocked access and no copy was found on CyLaw; a later circular reported elsewhere as updating the simplified-measure rates in October 2026, and a reported financial transactions table from tax year 2026, neither read; whether a guarantee fee goes in the financing or the "other" column of the Summary Information Table.
