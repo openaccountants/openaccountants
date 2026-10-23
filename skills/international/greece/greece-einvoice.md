@@ -5,6 +5,7 @@ version: 1.1
 jurisdiction: GR
 tax_year: 2026
 last_updated: 2026-10-23
+verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -46,11 +47,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Buyer acceptance | From 2 March 2026 a buyer under ν. 4308/2014 must accept e-invoices for B2B and B2G transactions | Α.1128/2025 art. 2(3), as replaced by Α.1044/2026 |
 | Not covered by the mandate | Intra-EU B2B invoices and retail (B2C) sales; these still follow the myDATA transmission rules in Α.1138/2020 | Α.1128/2025 art. 1(1) |
 
-The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 October 2026) no longer apply.
+The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 October 2026) no longer apply. The 1 January 2027 date on AADE's e-invoicing page is not an e-invoicing date: it starts phase B1 of digital delivery notes (loading, transshipment and receipt data, and stock quantity checks), under Α.1122/2024 art. 4(5) as replaced by Α.1198/2026. Phase B2 (Combined Nomenclature item codes) starts 1 January 2028.
 
 ### Who Must Comply
 
-- **Who must comply with myDATA transmission** — All Greek businesses -- every entity with a Greek AFM (Tax Identification Number) that issues revenue or expense documents must transmit data to myDATA. This includes: Sole proprietors (ατομική επιχείρηση); Companies of all legal forms (ΑΕ, ΕΠΕ, ΟΕ, ΕΕ, ΙΚΕ); Freelancers and professionals; Farmers under the special or normal regime. B2G (Business-to-Government): Greece has adopted the Peppol four-corner model for B2G. Structured e-invoices (EN 16931) are transmitted via Peppol to public entities. Data also flows to myDATA. B2B (Business-to-Business): Suppliers must transmit invoice summary data to myDATA in real-time or near-real-time. The transmitted data receives a MARK from AADE, which must appear on the invoice delivered to the buyer. Invoices issued through a certified e-invoicing provider are automatically transmitted. B2C (Business-to-Consumer): Retail transactions reported via electronic tax registers (eTax Register Machines / EAFΔΣΣ) are transmitted to myDATA. For invoices (not receipts), same rules as B2B apply.
+- **Who must comply with myDATA transmission**: All Greek businesses -- every entity with a Greek AFM (Tax Identification Number) that issues revenue or expense documents must transmit data to myDATA. This includes: Sole proprietors (ατομική επιχείρηση); Companies of all legal forms (ΑΕ, ΕΠΕ, ΟΕ, ΕΕ, ΙΚΕ); Freelancers and professionals; Farmers under the special or normal regime. B2G (Business-to-Government): Greece has adopted the Peppol four-corner model for B2G. Structured e-invoices (EN 16931) are transmitted via Peppol to public entities. Data also flows to myDATA. B2B (Business-to-Business): Suppliers must transmit invoice summary data to myDATA in real-time or near-real-time. The transmitted data receives a MARK from AADE, which must appear on the invoice delivered to the buyer. Invoices issued through a certified e-invoicing provider are automatically transmitted. B2C (Business-to-Consumer): Retail transactions reported via electronic tax registers (eTax Register Machines / EAFΔΣΣ) are transmitted to myDATA. For invoices (not receipts), same rules as B2B apply.
 
 ### Transmission Methods (By Entity Type)
 
@@ -65,13 +66,13 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 
 ### Exemptions
 
-- **Exemptions from myDATA compliance** — There is no turnover threshold -- all taxable entities must comply. Small entities issuing very few documents can use the Special Data Entry Form instead of software integration.
+- **Exemptions from myDATA compliance**: There is no turnover threshold -- all taxable entities must comply. Small entities issuing very few documents can use the Special Data Entry Form instead of software integration.
 
 ## Section 3 -- Technical Format
 
 ### myDATA XML Schema
 
-- **myDATA XML schema description** — myDATA uses a proprietary XML schema defined by AADE, not UBL or CII. The current schema version is governed by AADE technical specifications.
+- **myDATA XML schema description**: myDATA uses a proprietary XML schema defined by AADE, not UBL or CII. The current schema version is governed by AADE technical specifications.
 
 **myDATA XML Schema Components**
 
@@ -84,11 +85,11 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 | Detailed invoice (for providers) | `InvoicesDoc_detailed.xsd` |
 | Delivery notes | `RegisterTransfer.xsd`, `GetDeliveryStatusResponse.xsd` |
 
-- **Current API versions** — Current API versions: v1.0.12 (for ERP/provider) and v2.0.1 (with digital delivery notes).
+- **Current API versions**: Current API versions: v1.0.12 (for ERP/provider) and v2.0.1 (with digital delivery notes).
 
 ### B2G Format
 
-- **B2G e-invoicing format** — For B2G transactions, Greece uses EN 16931 with Peppol BIS Billing 3.0 (UBL 2.1 XML), transmitted via the Peppol network. The data also flows into myDATA for electronic book purposes.
+- **B2G e-invoicing format**: For B2G transactions, Greece uses EN 16931 with Peppol BIS Billing 3.0 (UBL 2.1 XML), transmitted via the Peppol network. The data also flows into myDATA for electronic book purposes.
 
 ### Key Data Elements (myDATA Schema)
 
@@ -138,7 +139,7 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 
 ### MARK (Μοναδικός Αριθμός Καταχώρησης)
 
-- **MARK definition and role** — The MARK is the critical fiscal identifier. It is: Assigned by AADE upon successful data transmission to myDATA; A unique numeric registration number (long integer); Required on the invoice before delivery to the buyer; Used to generate the QR code verification URL. Without a valid MARK, the document is not fiscally recognized under Greek law.
+- **MARK definition and role**: The MARK is the critical fiscal identifier. It is: Assigned by AADE upon successful data transmission to myDATA; A unique numeric registration number (long integer); Required on the invoice before delivery to the buyer; Used to generate the QR code verification URL. Without a valid MARK, the document is not fiscally recognized under Greek law.
 
 ### QR Code
 
@@ -184,17 +185,17 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 
 ### Connection Loss Handling
 
-- **Handling loss of connection to myDATA during invoice issuance** — If the connection to myDATA is lost during invoice issuance, the transaction continues normally. The invoice is issued with a "loss of connection" indicator and transmitted with a slight delay. The MARK is obtained shortly after connectivity is restored.
+- **Handling loss of connection to myDATA during invoice issuance**: If the connection to myDATA is lost during invoice issuance, the transaction continues normally. The invoice is issued with a "loss of connection" indicator and transmitted with a slight delay. The MARK is obtained shortly after connectivity is restored.
 
 ## Section 6 -- Validation Rules
 
 ### AADE Validation (on SendInvoices)
 
-- **AADE validation checks on SendInvoices** — XML schema validation against the current InvoicesDoc XSD version; AFM validation for issuer and counterpart; Invoice type code validity (must match allowed type codes); Classification code validity (income/expense codes must exist in the designation combinations); Tax category and rate consistency; Arithmetic validation (line totals, VAT calculations, summary totals); Duplicate detection (same series/AA from the same issuer).
+- **AADE validation checks on SendInvoices**: XML schema validation against the current InvoicesDoc XSD version; AFM validation for issuer and counterpart; Invoice type code validity (must match allowed type codes); Classification code validity (income/expense codes must exist in the designation combinations); Tax category and rate consistency; Arithmetic validation (line totals, VAT calculations, summary totals); Duplicate detection (same series/AA from the same issuer).
 
 ### Pre-Submission Checks
 
-- **Pre-submission validation checks** — Validate XML locally against the current InvoicesDoc.xsd before API call; Verify AFM validity using AADE's public AFM verification service; Confirm income classification codes match the designation combinations spreadsheet (published by AADE); Ensure all line items have valid VAT category codes; Verify arithmetic: sum of line net values = total net value; sum of line VAT = total VAT.
+- **Pre-submission validation checks**: Validate XML locally against the current InvoicesDoc.xsd before API call; Verify AFM validity using AADE's public AFM verification service; Confirm income classification codes match the designation combinations spreadsheet (published by AADE); Ensure all line items have valid VAT category codes; Verify arithmetic: sum of line net values = total net value; sum of line VAT = total VAT.
 
 ### Common Rejection Reasons
 
@@ -223,23 +224,23 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 | Lower (where Annex III says so) | 6% | 4% |
 | Lowest (where Annex III says so) | 4% | 3% |
 
-- **Island reduction scope:** From 1 January 2026 the 30% reduction applies automatically on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants at the latest census (art. 26(4A), added by ν. 5246/2025 art. 11). For Lesvos, Kos, Samos and Chios it needs a ministerial decision (art. 26(4)). Tobacco and means of transport are excluded (art. 26(4B)). Rates are rounded to the nearest whole number (art. 26(6)). Details and examples: greece-vat-return.
+- **Island reduction scope:** From 1 January 2026 the 30% reduction applies automatically on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants at the latest census (art. 26(4A), added by ν. 5246/2025 art. 11). Lesvos, Kos, Samos and Chios get it under art. 26(4) through decision Α.1150/2021, still in force (AADE circular Ε.2113/2025). The islands are listed in the annex to Ε.2113/2025. Tobacco and means of transport are excluded (art. 26(4B)). Rates are rounded to the nearest whole number (art. 26(6)). Details and examples: greece-vat-return.
 
 ### Rounding Rules
 
-- **VAT rounding rules** — VAT amounts calculated per line, rounded to 2 decimal places (EUR cents). Summary totals are the sum of rounded line-level amounts. myDATA validates arithmetic consistency with a tolerance of ±0.01 per line.
+- **VAT rounding rules**: VAT amounts calculated per line, rounded to 2 decimal places (EUR cents). Summary totals are the sum of rounded line-level amounts. myDATA validates arithmetic consistency with a tolerance of ±0.01 per line.
 
 ### Multi-Rate Invoice Handling
 
-- **Multi-rate invoice handling** — Each VAT rate appears as a separate element in the `taxesTotals` section. Line items must each declare their own VAT category and rate. Mixed-rate invoices are fully supported.
+- **Multi-rate invoice handling**: Each VAT rate appears as a separate element in the `taxesTotals` section. Line items must each declare their own VAT category and rate. Mixed-rate invoices are fully supported.
 
 ### Withholding Tax
 
-- **Withholding tax types** — Greek invoices frequently include withholding tax (παρακράτηση φόρου). Withholding types include: Income tax withholding (e.g., 20% on professional services); Solidarity contribution (where applicable); Stamp duty (χαρτόσημο). These are declared in the `taxesTotals` element with specific tax type codes.
+- **Withholding tax types**: Greek invoices frequently include withholding tax (παρακράτηση φόρου). Withholding types include: Income tax withholding (e.g., 20% on professional services); Solidarity contribution (where applicable); Stamp duty (χαρτόσημο). These are declared in the `taxesTotals` element with specific tax type codes.
 
 ### Income and Expense Classification
 
-- **Income classification requirement** — Every invoice line must carry an income classification code. The designation combinations are published by AADE in a spreadsheet and map invoice types to allowed classification categories.
+- **Income classification requirement**: Every invoice line must carry an income classification code. The designation combinations are published by AADE in a spreadsheet and map invoice types to allowed classification categories.
 
 **Common income classification categories**
 
@@ -279,37 +280,37 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 | Issuer transmits only after the buyer reports an omission or difference, and the value first sent was too low | 5% of the net value of each document | TPC art. 58(3)(γ) |
 | Digital delivery notes not transmitted | EUR 100 each, capped at EUR 500 a day and EUR 20,000 a year | TPC art. 58(3)(δ) |
 | Late (not missing) transmission under art. 58(3)(α), (β), (δ) | 50% of the fine for non-transmission | TPC art. 58(5) |
-| Required e-invoice not issued | Treated as no invoice issued: 50% of the VAT on it, or EUR 500 (single-entry) / EUR 1,000 (double-entry) per audit for a transaction without VAT | TPC art. 57, as stated by AADE on 17.2.2026 |
+| Required e-invoice not issued | Treated as no invoice issued. With VAT: 50% of the VAT on it, at least EUR 250 (single-entry) or EUR 500 (double-entry) per audit, 100% on a repeat. Without VAT: EUR 500 (single-entry) or EUR 1,000 (double-entry) per audit | TPC art. 57(5), (6); AADE press release 17.2.2026 |
 
 ### AADE Cross-Checks
 
-- **AADE cross-check sources and audit trigger** — AADE cross-references myDATA electronic books against periodic VAT returns (there is no annual VAT return under VAT Code art. 43), income tax declarations and third-party data.
+- **AADE cross-check sources and audit trigger**: AADE cross-references myDATA electronic books against periodic VAT returns (there is no annual VAT return under VAT Code art. 43), income tax declarations and third-party data.
 
 ### Additional Consequences
 
-- **Additional consequences of non-compliance** — Untransmitted invoices are not fiscally valid -- buyers cannot claim VAT deductions. AADE may impose precautionary tax assessments based on myDATA data alone. Persistent non-compliance triggers classification as high-risk taxpayer.
+- **Additional consequences of non-compliance**: Untransmitted invoices are not fiscally valid -- buyers cannot claim VAT deductions. AADE may impose precautionary tax assessments based on myDATA data alone. Persistent non-compliance triggers classification as high-risk taxpayer.
 
 ## Section 10 -- Interaction with Tax Skills
 
 ### myDATA → VAT Return (Φ2)
 
-- **myDATA feeds into VAT return preparation** — myDATA electronic books are the primary source for VAT return preparation. AADE pre-fills VAT return data from myDATA. The taxpayer must reconcile any differences between their accounting records and the myDATA data before filing.
+- **myDATA feeds into VAT return preparation**: myDATA electronic books are the primary source for VAT return preparation. AADE pre-fills VAT return data from myDATA. The taxpayer must reconcile any differences between their accounting records and the myDATA data before filing.
 
 ### Expense Classification → Input VAT
 
-- **Expense classification and input VAT deductibility** — Buyers must classify received invoices in myDATA as expenses with the appropriate classification codes. This classification determines: Deductibility of input VAT; Allocation to the correct income tax expense category; Reconciliation with the VAT return. Buyers who do not classify counterpart invoices within the deadline risk having AADE auto-classify them.
+- **Expense classification and input VAT deductibility**: Buyers must classify received invoices in myDATA as expenses with the appropriate classification codes. This classification determines: Deductibility of input VAT; Allocation to the correct income tax expense category; Reconciliation with the VAT return. Buyers who do not classify counterpart invoices within the deadline risk having AADE auto-classify them.
 
 ### myDATA → Income Tax
 
-- **myDATA feeds into income tax return** — Income data transmitted to myDATA feeds into the annual income tax return. AADE cross-references declared revenue against myDATA totals. Significant discrepancies trigger audit procedures.
+- **myDATA feeds into income tax return**: Income data transmitted to myDATA feeds into the annual income tax return. AADE cross-references declared revenue against myDATA totals. Significant discrepancies trigger audit procedures.
 
 ### B2G → Peppol → myDATA
 
-- **B2G transaction flow via Peppol to myDATA** — For B2G transactions, the e-invoice travels via Peppol to the public entity. The invoice data is simultaneously transmitted to myDATA. The public entity's payment system references the myDATA MARK.
+- **B2G transaction flow via Peppol to myDATA**: For B2G transactions, the e-invoice travels via Peppol to the public entity. The invoice data is simultaneously transmitted to myDATA. The public entity's payment system references the myDATA MARK.
 
 ### Electronic Tax Registers → myDATA
 
-- **POS transmission via electronic tax registers** — POS transactions from electronic tax registers (EAFΔΣΣ) are transmitted to myDATA as retail income. This data feeds into both VAT returns and income tax declarations.
+- **POS transmission via electronic tax registers**: POS transactions from electronic tax registers (EAFΔΣΣ) are transmitted to myDATA as retail income. This data feeds into both VAT returns and income tax declarations.
 
 ## Sources
 
@@ -320,10 +321,12 @@ The earlier dates in Α.1128/2025 as first published (2 February 2026 and 1 Octo
 | AADE, joint decision Α.1197/2026 (second period moved to 2.11.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 | 2026-10-23 |
 | AADE press release 17.2.2026 | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
 | AADE, mandatory e-invoicing page | https://www.aade.gr/node/15728 | 2026-10-23 |
+| AADE, joint decision Α.1198/2026 (digital delivery notes, phase B1 from 1.1.2027) | https://www.aade.gr/egkyklioi-kai-apofaseis/1198-30-09-2026 | 2026-10-23 |
+| AADE circular Ε.2113/2025 (island VAT reduction) | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
 | Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, arts. 57-58 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
 | VAT Code (ν. 5144/2024), Ministry of Finance codification to ν. 5313/2026, art. 26 | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
 
-Not yet confirmed: the B2G format and channel rules outside Α.1128/2025 (Peppol and EN 16931 statements in this skill are not checked against an official source); the myDATA API and schema versions; the archiving periods in Section 8; whether the second-period date moves again; AADE's e-invoicing page also shows a 1 January 2027 deadline, which appears to belong to digital delivery notes (decision Α.1198/2026, not read).
+Not yet confirmed: the B2G format and channel rules outside Α.1128/2025 (Peppol and EN 16931 statements in this skill are not checked against an official source); the myDATA API and schema versions; the archiving periods in Section 8; whether the second-period date moves again.
 
 ## Disclaimer
 

@@ -48,8 +48,9 @@ Load this skill with eu-vat-directive (EU rules) and vat-workflow-base (the retu
 | Reduced rate, goods and services in Annex III | 13% (for example hotel stays, passenger transport, restaurants and cafés except drinks, water supply) | 2026 | art. 26(1) and Annex III: same URL |
 | Lower rate where Annex III says so | 6% (for example books, medicines for human use, electricity and natural gas, theatre and cinema tickets) | 2026 | art. 26(1) and Annex III: same URL |
 | Lowest rate where Annex III says so | 4% (works to remove architectural barriers for people with disabilities, Annex III B.14) | 2026 | art. 26(1) and Annex III: same URL |
-| Island reduction, automatic | Rates cut by 30% on the islands of the North Aegean Region, Samothrace and the Dodecanese with a population of up to 20,000 at the latest census: 24% to 17%, 13% to 9%, 6% to 4%, 4% to 3% | From 1.1.2026 (ν. 5246/2025 art. 11) | art. 26(4A), (5), (6): same URL |
-| Island reduction, by ministerial decision | The Minister may cut rates by 30% for Lesvos, Kos, Samos and Chios while a migrant reception centre operates there (Leros was dropped from this list from 1.1.2026) | From 1.1.2026 | art. 26(4): same URL |
+| Island reduction, automatic | Rates cut by 30% on the islands of the North Aegean Region, Samothrace and the Dodecanese with a population of up to 20,000 at the latest census: 24% to 17%, 13% to 9%, 6% to 4%, 4% to 3% | From 1.1.2026 (ν. 5246/2025 arts. 11 and 47(5)) | art. 26(4A), (5), (6): same URL; ν. 5246/2025 (ΦΕΚ Α' 198/11.11.2025): https://www.aade.gr/sites/default/files/2025-11/%CE%91%CE%A0%CE%9F%CE%A3%CE%A0%CE%91%CE%A3%CE%9C%CE%91%20%CE%A6%CE%95%CE%9A%20%CE%91%20198_2025%20%CE%9D%205246_2025.pdf |
+| Island reduction, by ministerial decision | Rates cut by 30% on Lesvos, Kos, Samos and Chios while a migrant reception centre operates there. The decision in force is Α.1150/2021 (ΦΕΚ Β' 2828), so the cut applies on these four islands in 2026. Leros was taken out of art. 26(4) from 1.1.2026 and now gets the cut under art. 26(4A) | 2026 | art. 26(4): same URL; AADE circular Ε.2113/2025, point 1: https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf |
+| Islands that get the reduction | Only those in the annex to AADE circular Ε.2113/2025 (built from ELSTAT census data). Main islands: Agathonisi, Agios Efstratios, Astypalaia, Ikaria, Kalymnos, Karpathos, Kasos, Kos, Leipsoi, Leros, Lesvos, Limnos, Megisti, Nisyros, Oinousses, Patmos, Samothrace, Samos, Symi, Tilos, Fournoi, Chalki, Chios, Psara, plus the islets listed there. Rhodes is not on the list | 2026 | Ε.2113/2025, point 2 and annex: same URL |
 | Island reduction does not apply | Tobacco products and means of transport | 2026 | art. 26(4B): same URL |
 | Small business exemption, Greek turnover | EUR 10,000 (previous and current year) | From 1.1.2025 | art. 44α(1): same URL |
 | EU SME scheme, Union turnover | EUR 100,000 (previous and current year) | From 1.1.2025 | arts. 44β(1), 44δ(2): same URL |
@@ -58,7 +59,7 @@ Load this skill with eu-vat-directive (EU rules) and vat-workflow-base (the retu
 | Two interest-free instalments allowed | Tax due over EUR 100 on a return filed on time | 2026 | art. 43(6): same URL |
 | VAT on exempt use deducted in full anyway | Up to EUR 30 a year | 2026 | art. 36(8): same URL |
 
-Rounding on islands: the reduced rate is rounded to the nearest whole number, with 0.5 rounded up (art. 26(6)). So 6% x 0.7 = 4.2% gives 4%, and 4% x 0.7 = 2.8% gives 3%. The reduction covers goods located in, sold to, acquired into or imported into those islands, and services physically performed there by a business established there (art. 26(4)(β), (5)).
+Rounding on islands: the reduced rate is rounded to the nearest whole number, with 0.5 rounded up (art. 26(6)). So 6% x 0.7 = 4.2% gives 4%, and 4% x 0.7 = 2.8% gives 3%. The reduction covers goods that, when the tax becomes chargeable, (βα) are on those islands and are supplied by a taxable person established there, (ββ) are sold from anywhere in Greece to a taxable person or a non-taxable legal person established there, (βγ) are acquired from another member state by such a person established there, or (βδ) are imported into those islands (art. 26(4)(β), applied to the art. 26(4A) islands by art. 26(4A)). It also covers services physically performed there by a business established there (art. 26(5)). A permanent island branch counts as being established there. A mainland seller delivering to a private consumer on an island charges the normal rate (Ε.2113/2025, point 5, examples 2 and 6).
 
 ## The taxable base
 
@@ -83,17 +84,16 @@ Rounding on islands: the reduced rate is rounded to the nearest whole number, wi
 
 ## Penalties and interest
 
-All from the TPC (ν. 5104/2024, AADE codification Ε.2109/2025). The TPC still names articles of the old VAT Code; art. 71(1) of the new code maps them to the new articles.
+All from the TPC (ν. 5104/2024, AADE codification Ε.2109/2025, current to ν. 5259/2025), with art. 53 as amended by ν. 5301/2026 art. 37 (ΦΕΚ Α' 74/15.05.2026, applying to breaches from 19.4.2024). The TPC still names articles of the old VAT Code; art. 71(1) of the new code maps them to the new articles.
 
-- **Late or missing return with tax due.** EUR 250 per breach on single-entry books, EUR 500 on double-entry books (TPC art. 53(2)).
-- **Late return with no tax due.** EUR 100 per breach (TPC art. 53(1)(γ)).
+- **Late or missing VAT return with tax due.** EUR 250 per breach on single-entry books, EUR 500 on double-entry books (TPC art. 53(2), as amended by ν. 5301/2026).
+- **Late or missing VAT return with no tax due.** EUR 100 per breach (TPC art. 53(1A), added by ν. 5301/2026).
 - **Return never filed where tax would be due.** 50% of the tax on the missing return (TPC art. 53(6)).
 - **Late amended VAT return.** No fixed fine under art. 53(1) or (2) if the original return was filed on time (TPC art. 53(7)(α)). Interest still runs.
 - **Inaccurate VAT return.** 50% of the difference between the tax declared and the tax AADE assesses (TPC art. 54(2)).
 - **Trading without registering the start of activity.** 50% of the VAT that should have been paid for the whole period of activity (TPC art. 53(10)).
-- **Late OSS return where Greece is the member state of consumption.** EUR 100 (TPC art. 53(3)).
 - **Late payment interest.** Runs from the day after the payment deadline. For a late or amended return, it runs from the date the tax should first have been paid. No interest on interest (TPC art. 52(1), (5)). The rate is not in the TPC; see "Not yet confirmed".
-- **Not issuing an e-invoice where one is required.** Treated as not issuing the invoice: 50% of the VAT on it, or EUR 500 (single-entry) / EUR 1,000 (double-entry) per audit for a transaction without VAT (TPC art. 57, as AADE stated on 17.2.2026). See greece-einvoice.
+- **Not issuing an e-invoice where one is required.** Treated as not issuing the invoice (AADE press release 17.2.2026, citing circular Ε.2004/2026). With VAT: 50% of the VAT on it, at least EUR 250 (single-entry) or EUR 500 (double-entry) per audit; 100% on a repeat (TPC art. 57(6)). Without VAT: EUR 500 (single-entry) or EUR 1,000 (double-entry) per audit (TPC art. 57(5)). See greece-einvoice.
 
 ## Cross-border points
 
@@ -177,7 +177,7 @@ expected:
 ## Ask the client first
 
 1. Double-entry or single-entry books? This sets monthly or quarterly returns (art. 43(1)) and the size of most fines.
-2. Where is the business established, and where are the goods or the services physically supplied? An island location can cut the rate by 30% (art. 26(4A)).
+2. Where is the business established, and where are the goods or the services physically supplied? An island on the annex to AADE circular Ε.2113/2025 cuts the rate by 30% (art. 26(4), (4A), (5)).
 3. Turnover in 2025 and 2026 so far, in Greece and across the EU? This decides the small business exemption and the EU SME scheme (arts. 44α, 44β).
 4. Does it buy or sell across borders: EU goods, EU or non-EU services, sales to EU consumers? This brings in the reverse charge, recapitulative statements, Intrastat and OSS.
 5. Does it make any exempt supplies, or receive subsidies? This decides partial exemption (art. 36).
@@ -189,9 +189,12 @@ expected:
 |---|---|---|
 | VAT Code (ν. 5144/2024), Ministry of Finance administrative codification to ν. 5313/2026, arts. 2-4, 18, 19, 24, 26, 29, 33, 35-41, 43, 44 to 44ζ, 45, 56-58, 67, 71 and Annex III | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
 | Ministry of Finance page publishing that codification (12.10.2026) | https://minfin.gov.gr/koinopoiisi-dioikitikis-kodikopoiisis-tou-n-5144-2024-gia-ton-kodika-tou-forou-prostithemenis-axias-symfona-me-tin-par-55-tou-arthr-83-tou-n-5104-2024/ | 2026-10-23 |
-| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025, arts. 52-54 and 57 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| Tax Procedure Code (ν. 5104/2024), AADE codification Ε.2109/2025 (to ν. 5259/2025), arts. 52-54 and 57 | https://www.aade.gr/sites/default/files/2025-12/e2109_2025.pdf | 2026-10-23 |
+| ν. 5246/2025 (ΦΕΚ Α' 198/11.11.2025), art. 11 (amends VAT Code art. 26) and art. 47(5) (in force 1.1.2026), copy hosted by AADE | https://www.aade.gr/sites/default/files/2025-11/%CE%91%CE%A0%CE%9F%CE%A3%CE%A0%CE%91%CE%A3%CE%9C%CE%91%20%CE%A6%CE%95%CE%9A%20%CE%91%20198_2025%20%CE%9D%205246_2025.pdf | 2026-10-23 |
+| AADE circular Ε.2113/31.12.2025 on the 30% island reduction (art. 26(4)-(5)), with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
+| ν. 5301/2026 (ΦΕΚ Α' 74/15.05.2026), art. 37 (amends TPC art. 53), copy hosted by AADE | https://www.aade.gr/sites/default/files/2026-05/%CE%BD%205301_2026.pdf | 2026-10-23 |
 | AADE, decision Α.1128/2025 on mandatory e-invoicing | https://www.aade.gr/egkyklioi-kai-apofaseis/mydata-diataxeis/1128-15-09-2025 | 2026-10-23 |
 | AADE, decision Α.1197/2026 (second period moved to 2.11.2026) | https://www.aade.gr/egkyklioi-kai-apofaseis/1197-30-09-2026 | 2026-10-23 |
 | AADE press release 17.2.2026 (e-invoicing dates and fines) | https://www.aade.gr/deltia-typoy-anakoinoseis/deltio-typoy-17022026 | 2026-10-23 |
 
-Not yet confirmed: the late payment interest rate (set outside the TPC); whether a ministerial decision under art. 26(4) is in force for Lesvos, Kos, Samos or Chios in 2026, and the list of islands that meet the 20,000-population test in art. 26(4A); the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.
+Not yet confirmed: the late payment interest rate (set outside the TPC); the fine for a late OSS return where Greece is the member state of consumption (TPC art. 53(3) was repealed from 19.4.2024 by ν. 5301/2026 art. 37(11), and no replacement was found); any amendment to TPC arts. 52-58 after ν. 5301/2026; the deadline and form for recapitulative statements and the AADE decision on how periodic returns are filed; the domestic refund procedure and timing for a Greek business with a credit balance; the capital goods adjustment periods in art. 38.

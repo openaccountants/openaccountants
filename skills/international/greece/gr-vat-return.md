@@ -28,7 +28,7 @@ This file used to hold a copy of the Greek VAT return skill written under the ol
 Headline 2026 figures, all from the VAT Code (ν. 5144/2024) in the Ministry of Finance codification to ν. 5313/2026:
 
 - Rates: 24% standard; 13% for Annex III goods and services; 6% and 4% where Annex III says so (art. 26(1)).
-- Islands: from 1 January 2026, rates are cut by 30% (to 17%, 9%, 4% and 3%) on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants (art. 26(4A), (6)). For Lesvos, Kos, Samos and Chios a 30% cut needs a ministerial decision (art. 26(4)). Tobacco and means of transport never get it (art. 26(4B)).
+- Islands: from 1 January 2026, rates are cut by 30% (to 17%, 9%, 4% and 3%) on the islands of the North Aegean Region, Samothrace and the Dodecanese with up to 20,000 inhabitants (art. 26(4A), (6)). Lesvos, Kos, Samos and Chios get the same cut under art. 26(4) through decision Α.1150/2021, which AADE circular Ε.2113/2025 confirms is still in force. The islands are listed in the annex to Ε.2113/2025. Tobacco and means of transport never get it (art. 26(4B)).
 - Small business exemption: Greek turnover up to EUR 10,000 in the previous and current year (art. 44α(1)).
 - Returns: monthly on double-entry books, quarterly on single-entry books, due by the last working day of the following month (art. 43(1), (4)).
 
@@ -37,5 +37,6 @@ Headline 2026 figures, all from the VAT Code (ν. 5144/2024) in the Ministry of 
 | Source | URL | Read on |
 |---|---|---|
 | VAT Code (ν. 5144/2024), Ministry of Finance administrative codification to ν. 5313/2026, arts. 26, 43, 44α | https://minfin.gov.gr/wp-content/uploads/2026/10/Κοινοποίηση-Διοικητικής-Κωδικοποίησης-του-ν.5144-2024-γι.pdf | 2026-10-23 |
+| AADE circular Ε.2113/31.12.2025 on the 30% island reduction, with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of greece-vat-return.
