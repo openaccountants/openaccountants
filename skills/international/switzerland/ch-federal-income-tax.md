@@ -1,544 +1,242 @@
 ---
 name: ch-federal-income-tax
-description: Use this skill whenever asked about Swiss federal income tax (direkte Bundessteuer / impot federal direct) for self-employed individuals. Trigger on phrases like "Bundessteuer", "direkte Bundessteuer", "impot federal direct", "Steuererklarung Schweiz", "selbstandig Steuern Schweiz", "Swiss federal income tax", "self-employed tax Switzerland", "AHV deduction", "Saule 3a", "BVG", "Geschaftsaufwand", or any question about computing or filing FEDERAL income tax for a self-employed person in Switzerland. This skill covers FEDERAL progressive brackets only (0--11.5%), Geschaftsaufwand, AHV/IV/EO deductibility, BVG/Saule 3a deductions, and federal filing. Cantonal and municipal taxes are out of scope. ALWAYS read this skill before touching any Swiss federal income tax work.
-version: 2.0
+description: "Swiss federal income tax for individuals (direkte Bundessteuer, impot federal direct) for tax year 2026. Covers who is liable (DBG art. 3), joint taxation of married couples, the 2026 tariffs after the cold-progression adjustment (single tariff up to 13.2% marginal and 11.5% flat from CHF 794,000; married and single-parent tariff), the CHF 263 tax reduction per child, the main deductions (commuting cap CHF 3,300, flat professional expenses, Pillar 2 and 3a, insurance premiums, private interest, childcare CHF 25,800, two-earner deduction, child and support deductions CHF 6,800), tax at source for foreign employees and the ordinary assessment from CHF 120,000, filing and payment (1 March due date, 4.00% late interest) and fines. Trigger on: Bundessteuer, DBSt, direkte Bundessteuer, Swiss federal tax, Steuertarif Bund, Kinderabzug, Zweiverdienerabzug, Säule 3a Abzug. Out of scope: ch-cantonal-tax, ch-ahv-iv, ch-payroll, ch-cross-border, ch-lump-sum."
 jurisdiction: CH
-tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - income-tax-workflow-base
 category: international
+tax_year: 2026
 tier: 2
+last_updated: 2026-10-23
+version: 2.1
+verified_by: pending
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# CH Federal Income Tax
+# Switzerland: federal income tax for individuals (direkte Bundessteuer), 2026
+
+The Confederation levies an income tax on individuals under the Federal Act on Direct Federal Tax (DBG, SR 642.11). The cantons assess and collect it, together with their own cantonal and communal income tax, on one return. This skill covers the federal layer only. It links to the pack's other skills rather than repeating them:
+
+- `ch-cantonal-tax`: cantonal and communal income and wealth tax, which is usually the larger part of the bill.
+- `ch-ahv-iv`: AHV/IV/EO contributions of the self-employed.
+- `ch-payroll`: what an employer withholds, including tax-at-source tariffs and the employer's commission.
+- `ch-cross-border`: residence, arrival, departure, non-residents, the subsequent ordinary assessment (NOV) in detail, and treaties.
+- `ch-lump-sum`: taxation on expenditure (Pauschalbesteuerung, DBG art. 14).
+
+## Who this applies to
+
+- **Residents (unlimited liability).** A person is liable on worldwide income if they have tax domicile in Switzerland (living here with the intention of staying) or tax residence: a stay of at least 30 days with work, or at least 90 days without work, ignoring short breaks (DBG art. 3). Foreign business, permanent establishments and real estate are exempt but count for the rate (DBG art. 6 and 7).
+- **Non-residents (limited liability).** Taxed on Swiss sources such as a Swiss business, real estate or employment, at the rate that applies to their worldwide income (DBG art. 4, 5 and 7). See `ch-cross-border`.
+- **Married couples and registered partners** living together are taxed jointly: their incomes are added up, whatever their marital property regime (DBG art. 9 para. 1 and 1bis). Children's income is added to the parent's, except their own earnings, which they are taxed on separately (DBG art. 9 para. 2).
+- **Foreign employees without a settlement permit (C)** are taxed at source on employment income (DBG art. 83). This does not apply if they are married to, and living with, a Swiss citizen or C-permit holder (DBG art. 83 para. 2). See "Tax at source" below.
+- **Taxation on expenditure.** Foreign nationals who do not work in Switzerland can opt for a lump-sum tax instead (DBG art. 14; minimum base CHF 435,000 in 2026). See `ch-lump-sum`.
+
+The tax year is the calendar year (DBG art. 40). If liability starts or ends during the year, only the income of that period is taxed, but the rate on regular income is set on income converted to 12 months (DBG art. 40 para. 3).
+
+## Rates, bands and thresholds
+
+The tariffs and franc amounts are indexed to the consumer price index of 30 June before the tax year (DBG art. 39). For 2026 the index rose 0.06% (170.3 to 170.4 points). The Federal Department of Finance (EFD) adjusted the tariffs by ordinance of 10 September 2025 (VKP, AS 2025 579, corrected AS 2025 621); the franc deductions stayed at their 2025 amounts ([ESTV circular 2-215-D-2025](https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf)).
+
+**Single tariff, 2026 (DBG art. 36 para. 1).** Tax at the start of each band, plus the marginal amount for each further CHF 100.
+
+| Taxable income from (CHF) | Tax at that income (CHF) | Per further CHF 100 |
+|---|---|---|
+| 0 to 15,200 | 0.00 | 0.77 (above 15,200) |
+| 33,200 | 138.60 | 0.88 |
+| 43,500 | 229.20 | 2.64 |
+| 58,000 | 612.00 | 2.97 |
+| 76,200 | 1,152.50 | 5.94 |
+| 82,100 | 1,502.95 | 6.60 |
+| 108,900 | 3,271.75 | 8.80 |
+| 141,500 | 6,140.55 | 11.00 |
+| 185,100 | 10,936.55 | 13.20 |
+| 793,900 | 91,298.15 | (step to the next row) |
+| 794,000 | 91,310.00 | 11.50 (flat 11.5% on the whole income from here) |
+
+**Married and single-parent tariff, 2026 (DBG art. 36 para. 2 and 2bis).**
+
+| Taxable income from (CHF) | Tax at that income (CHF) | Per further CHF 100 |
+|---|---|---|
+| 0 to 29,700 | 0.00 | 1.00 (above 29,700) |
+| 53,400 | 237.00 | 2.00 |
+| 61,300 | 395.00 | 3.00 |
+| 79,100 | 929.00 | 4.00 |
+| 94,900 | 1,561.00 | 5.00 |
+| 108,700 | 2,251.00 | 6.00 |
+| 120,600 | 2,965.00 | 7.00 |
+| 130,500 | 3,658.00 | 8.00 |
+| 138,400 | 4,290.00 | 9.00 |
+| 144,300 | 4,821.00 | 10.00 |
+| 148,300 | 5,221.00 | 11.00 |
+| 150,400 | 5,452.00 | 12.00 |
+| 152,400 | 5,692.00 | 13.00 |
+| 941,300 | 108,249.00 | (step to the next row) |
+| 941,400 | 108,261.00 | 11.50 (flat 11.5% from here) |
+
+Sources for both tables: [DBG art. 36](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) (version of 2 September 2026) and [ESTV Form. 58c, Tarife 2026](https://www.estv.admin.ch/dam/de/sd-web/gnde9CmEsalK/dbst-tairfe-58c-2026-dfi.pdf). The first published text had CHF 1,152.55 at CHF 76,200; the Federal Chancellery corrected it to CHF 1,152.50 on 17 October 2025 (AS 2025 621), and the ESTV table uses 1,152.50.
+
+**Rounding.** Income below a full CHF 100 is ignored, and the annual tax is rounded down to the next 5 centimes (ESTV Form. 58c, notes 1 and 2). Tax below CHF 25 is not levied (DBG art. 36 para. 3).
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Tax reduction per child or supported person (married and single-parent tariff) | CHF 263 off the tax | 2026 | [DBG art. 36 para. 2bis](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Child deduction, per minor child or child in education | CHF 6,800 | 2026 | [DBG art. 35 para. 1 let. a](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Support deduction, per person unable to work whom the taxpayer supports | CHF 6,800 | 2026 | [DBG art. 35 para. 1 let. b](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Married couple deduction | CHF 2,800 | 2026 | [DBG art. 35 para. 1 let. c](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Two-earner deduction (married, both working) | 50% of the lower earned income, min CHF 8,600, max CHF 14,100 | 2026 | [DBG art. 33 para. 2](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Commuting costs, employees, cap | CHF 3,300 | 2026 | [DBG art. 26 para. 1 let. a](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Commuting by private car, per km | CHF 0.75 (2025: 0.70) | 2026 | [Berufskostenverordnung, annex](https://www.fedlex.admin.ch/eli/cc/1993/1363_1363_1363/de) |
+| Commuting by bicycle or moped, per year | CHF 700 | 2026 | [Berufskostenverordnung, annex](https://www.fedlex.admin.ch/eli/cc/1993/1363_1363_1363/de) |
+| Meals away from home, full deduction | CHF 15 a day, CHF 3,200 a year | 2026 | [Berufskostenverordnung, annex](https://www.fedlex.admin.ch/eli/cc/1993/1363_1363_1363/de) |
+| Other professional expenses, flat rate | 3% of net salary, min CHF 2,000, max CHF 4,000 | 2026 | [Berufskostenverordnung, annex](https://www.fedlex.admin.ch/eli/cc/1993/1363_1363_1363/de) |
+| Side job, flat rate | 20% of net income, min CHF 800, max CHF 2,400 | 2026 | [Berufskostenverordnung, annex](https://www.fedlex.admin.ch/eli/cc/1993/1363_1363_1363/de) |
+| Insurance premiums and savings interest, married | CHF 3,700 (CHF 5,550 without Pillar 2 or 3a contributions) | 2026 | [DBG art. 33 para. 1 let. g and 1bis](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Insurance premiums and savings interest, others | CHF 1,800 (CHF 2,700 without Pillar 2 or 3a contributions) | 2026 | [DBG art. 33 para. 1 let. g and 1bis](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Insurance premiums, add per child or supported person | CHF 700 | 2026 | [DBG art. 33 para. 1bis let. b](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Pillar 3a, member of a pension fund | CHF 7,258 | 2026 | [BSV Masszahlen 2025/2026](https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf); BVV 3 art. 7 |
+| Pillar 3a, no pension fund | 20% of earned income, max CHF 36,288 | 2026 | [BSV Masszahlen 2025/2026](https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf); [BVV 3 art. 7](https://www.fedlex.admin.ch/eli/cc/1985/1778_1778_1778/de) |
+| Childcare by third parties, per child under 14 | Up to CHF 25,800 | 2026 | [DBG art. 33 para. 3](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Private debt interest | Up to investment income plus CHF 50,000 | 2026 | [DBG art. 33 para. 1 let. a](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Job-related training | Up to CHF 13,000 | 2026 | [DBG art. 33 para. 1 let. j](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Political party contributions | Up to CHF 10,600 | 2026 | [DBG art. 33 para. 1 let. i](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Medical costs borne by the taxpayer | Part above 5% of net income | 2026 | [DBG art. 33 para. 1 let. h](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Donations to exempt Swiss charities | From CHF 100 a year, up to 20% of net income | 2026 | [DBG art. 33a](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| Tax at source: mandatory ordinary assessment (NOV) | Gross employment income of at least CHF 120,000 | 2026 | [QStV art. 9](https://www.fedlex.admin.ch/eli/cc/2018/274/de) |
+| Employer's collection commission on tax at source | 1% to 2%, set by the canton | 2026 | [DBG art. 88 para. 4](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
+| General due date of the tax | 1 March of the following year | 2026 | [SR 642.124 art. 1](https://www.fedlex.admin.ch/eli/cc/1993/717_717_717/de) |
+| Late payment and refund interest | 4.00% (2025: 4.50%) | 2026 | [ESTV circular 2-215-D-2025](https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf) |
+| Interest paid on advance payments | 0.00% (2025: 0.75%) | 2026 | [ESTV circular 2-215-D-2025](https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf) |
+
+## The taxable base
+
+**Income.** All income is taxed unless the DBG exempts it: employment income and fringe benefits (art. 17), self-employment income (art. 18), investment income (art. 20, 20a), imputed rental value of an owner-occupied home (art. 21 para. 1 let. b), pensions and replacement income (art. 22, 23). Private capital gains on movable assets are tax-free (art. 16 para. 3). Lump-sum pension payouts are taxed separately at one fifth of the tariff (art. 38); this is out of scope here.
+
+**Employees: professional expenses (DBG art. 26).** Deductible are commuting costs up to CHF 3,300, extra costs of meals away from home and of shift work, and other necessary job costs. The EFD sets flat rates for meals and other costs (table above); the taxpayer may prove higher other costs instead of the flat 3%. Job-related training is a separate deduction under art. 33 para. 1 let. j.
+
+**Self-employed (DBG art. 27 to 31).** Business-justified costs are deductible, including depreciation and provisions, losses on business assets, and interest on business debt. Fines and criminal-purpose payments are not. Losses carry forward for 7 years (art. 31). AHV/IV/EO contributions are deductible under art. 33 para. 1 let. d; the contribution rates are in `ch-ahv-iv`.
 
-## Switzerland Federal Income Tax (Direkte Bundessteuer) -- Self-Employed Skill v2.0
+**General deductions (DBG art. 33 and 33a).** Private debt interest up to investment income plus CHF 50,000; maintenance payments to a separated or divorced spouse and for children in their care; AHV/IV and Pillar 2 contributions, including buy-ins; Pillar 3a within the limits above; EO, unemployment and compulsory accident premiums; other insurance premiums and savings interest within the flat caps; medical costs above 5% of net income; disability costs; party contributions; job-related training; childcare; donations.
 
-## Section 1 -- Quick Reference
+**Two-earner deduction (DBG art. 33 para. 2).** If both spouses earn, 50% of the lower earned income is deducted, at least CHF 8,600 and at most CHF 14,100. "Earned income" is employment or self-employment income less professional or business expenses and less the art. 33 para. 1 let. d to f contributions. If one spouse works substantially in the other's business, each is allocated half of the joint earned income unless the couple proves another split.
 
-**Quick Reference**
+**Social deductions (DBG art. 35).** CHF 6,800 per minor child or child in education whom the taxpayer supports (split half each between separately taxed parents with joint custody where no maintenance is deducted for the child); CHF 6,800 per supported person unable to work; CHF 2,800 for married couples. They are fixed on the facts at the end of the tax year or of liability, and given pro rata on partial liability.
 
-| Field | Value |
-| --- | --- |
-| Country | Switzerland (Federal level only) |
-| Tax | Direkte Bundessteuer (DBSt) |
-| Currency | CHF only |
-| Tax year | Calendar year |
-| Primary legislation | Bundesgesetz uber die direkte Bundessteuer (DBG), SR 642.11 |
-| Supporting legislation | AHVG; BVG; BVV 3 |
-| Tax authority | ESTV / AFC |
-| Filing portal | Cantonal tax portal (varies -- federal filed with cantonal return) |
-| Filing deadline | 31 March (standard, varies by canton) / extensions routinely available |
-| Contributor | Open Accountants Community |
-| Validated by | Pending -- requires sign-off by Swiss Treuhnder or Steuerberater |
-| Validation date | Pending |
-| Skill version | 2.0 |
+**Not deductible (DBG art. 34).** Living costs of the taxpayer and family, debt repayment, purchase or improvement of assets, and income and wealth taxes.
 
-**IMPORTANT: This skill covers FEDERAL tax only. Cantonal and municipal taxes are separate and typically represent the majority of the total tax burden. They are out of scope.**
+**Tariff choice (DBG art. 36).** The single tariff applies to single, separated and divorced people without children. The married tariff applies to married couples living together and, under para. 2bis, to widowed, separated, divorced and single people who live with children or supported persons and mainly bear their maintenance. On that tariff the tax is then reduced by CHF 263 per child or supported person.
 
-### Federal Tax Tariff -- Grundtarif (Single) -- Approximate
+### Tax at source (Quellensteuer)
 
-**Federal Tax Tariff -- Grundtarif (Single) -- Approximate**
+Foreign employees resident in Switzerland without a C permit pay tax at source on gross employment income, including fringe benefits and replacement income (DBG art. 83 and 84). The ESTV builds the federal share into the cantonal source-tax tariffs, which include flat amounts for professional expenses, insurance premiums and family deductions (DBG art. 85). The employer withholds, remits and is liable for the tax (DBG art. 88). Tariff codes, rates and remittance: `ch-payroll`.
 
-| Taxable Income (CHF) | Approx. Marginal Rate |
-| --- | --- |
-| 0 -- 17,800 | 0% |
-| 17,801 -- 31,600 | 0.77% |
-| 31,601 -- 41,400 | 0.88% -- 2.64% |
-| 41,401 -- 55,200 | 2.97% |
-| 55,201 -- 72,500 | 5.94% |
-| 72,501 -- 78,100 | 6.60% |
-| 78,101 -- 103,600 | 8.80% |
-| 103,601 -- 134,600 | 11.00% |
-| 134,601 -- 176,000 | 13.20% |
-| 176,001+ | 11.50% max effective rate |
+- **Mandatory subsequent ordinary assessment (NOV).** If gross employment income in the year is at least CHF 120,000, or the person has income not taxed at source, they file a normal return (DBG art. 89; QStV art. 9). For a married two-earner couple, the test is met if either spouse reaches CHF 120,000 (QStV art. 9 para. 3). The spouse is assessed too. Once in the NOV, the person stays in it until source taxation ends. Tax withheld is credited without interest.
+- **NOV on request.** Anyone below the triggers can ask for an ordinary assessment by 31 March of the following year, or at deregistration when leaving Switzerland (DBG art. 89a). Without it, the source tax replaces the federal income tax on employment income and no extra deductions are given later. This is how a source-taxed employee claims Pillar 3a, buy-ins or actual commuting costs.
+- Part-year cases, non-residents and the quasi-resident rule: `ch-cross-border`.
 
-- **Never compute from approximate brackets** — NEVER compute Swiss federal tax from these approximate brackets. Use official ESTV tariff tables.
+## Deadlines and filing
 
-### Verheiratetentarif (Married)
+- **Return.** One return per year covers federal, cantonal and communal income tax, filed with the cantonal tax authority. The canton sends the form or announces publicly; a taxpayer who receives nothing must still file (DBG art. 124 para. 1). The return must be complete, signed and filed on time with its attachments (art. 124 para. 2). The DBG sets no calendar date; the canton does. In Zurich the 2026 return is due **31 March 2027** ([Kantonales Steueramt Zürich, ZStB 133.1](https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html)). Other cantons: `ch-cantonal-tax`.
+- **Source-taxed persons with other income** must request a return form by 31 March of the following year (DBG art. 89 para. 4).
+- **Payment.** The 2026 tax falls due on **1 March 2027** (general due date, SR 642.124 art. 1). The canton issues a provisional bill if the assessment is not yet made, based on the return, the last assessment or the likely amount (DBG art. 162). It must be paid within 30 days of the due date (DBG art. 163). Cantons may collect in instalments in advance (DBG art. 161 para. 1; SR 642.124 art. 2). Overpayments are refunded and underpayments collected after the final assessment (art. 162 para. 3).
+- **Assessment period.** The right to assess expires 5 years after the end of the tax year, and in any case after 15 years (DBG art. 120).
+- **Records.** Self-employed people must attach their accounts or, with simplified bookkeeping, statements of income, expenses, assets and private drawings (DBG art. 125 para. 2).
 
-More favourable. Tax-free threshold ~CHF 30,800. Maximum effective rate 11.5% reached ~CHF 912,600.
+## Penalties and interest
 
-### Saule 3a Limits (2025)
+- **Late payment interest.** 4.00% a year for 2026, starting 30 days after the definitive or provisional bill is delivered (DBG art. 164; SR 642.124 art. 3; [ESTV circular 2-215-D-2025](https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf)). Refunds of overpaid tax carry the same 4.00%. Voluntary advance payments earn 0.00% in 2026.
+- **Failure to file or other procedural breaches** after a reminder: fine up to CHF 1,000, up to CHF 10,000 in serious cases or on repeat (DBG art. 174). The authority can also assess at its discretion (DBG art. 130 para. 2).
+- **Tax evasion.** The fine is normally once the evaded tax; it can be cut to one third for slight fault or raised to three times for serious fault (DBG art. 175 para. 2). Attempted evasion: two thirds of that fine (DBG art. 176). The back tax and interest are due on top (DBG art. 151).
+- **Voluntary disclosure.** A first self-disclosure is fine-free if no tax authority knew of the evasion, the taxpayer cooperates fully on the back tax, and makes a serious effort to pay it. Later disclosures: fine of one fifth of the evaded tax (DBG art. 175 para. 3 and 4).
+- **Employers** who fail to withhold tax at source commit evasion under DBG art. 175 para. 1; see `ch-payroll`.
 
-**Saule 3a Limits (2025)**
+## Cross-border points
 
-| Category | Maximum (CHF) |
-| --- | --- |
-| With BVG (Pensionskasse) | 7,258 |
-| Without BVG | 20% of net earned income, max 36,288 |
+- **Exemption with progression.** Foreign business income, foreign permanent establishments and foreign real estate are exempt, but worldwide income sets the rate (DBG art. 6 and 7). Ask for the foreign figures even where they are not taxed.
+- **Swiss withholding tax (Verrechnungssteuer).** 35% is withheld on Swiss dividends and interest. A resident gets it back by declaring the income; it is not a final tax. See `ch-cross-border`.
+- **Arrivals and departures.** Liability starts or ends with residence. Regular income is annualised for the rate (DBG art. 40 para. 3). The tax falls due when a taxpayer prepares to leave Switzerland for good (DBG art. 161 para. 4 let. a). Detail: `ch-cross-border`.
+- **Non-resident employees** of Swiss employers are taxed at source, finally, unless they qualify for an NOV on request (DBG art. 91 and 99a). Frontier workers from Germany, France, Italy and Austria follow special rules: `ch-cross-border` and `germany-to-switzerland-cross-border-tax`.
+- **Treaties.** Switzerland's double tax treaties override the DBG where they allocate taxing rights. Foreign tax on income Switzerland taxes is not deductible as a tax (DBG art. 34 let. e), but non-recoverable foreign withholding tax on movable private assets is deductible (DBG art. 32 para. 1).
 
-### AHV/IV/EO (Self-Employed)
+## Worked examples
 
-**AHV/IV/EO (Self-Employed)**
+### Example 1: single person, taxable income CHF 100,000
 
-| Component | Rate |
-| --- | --- |
-| Total AHV/IV/EO | 10.0% |
+A single person with no children has taxable income of CHF 100,000 after all deductions. The single tariff applies. The income falls in the band starting at CHF 82,100, where the tax is CHF 1,502.95, plus CHF 6.60 for each further CHF 100.
 
-- **AHV/IV/EO deductibility** — Fully deductible. Rate 10.0% on income above CHF 10,100 (declining scale below).
+The excess is 100,000 - 82,100 = CHF 17,900, which is 179 steps of CHF 100. Tax: 1,502.95 + 179 x 6.60 = 1,502.95 + 1,181.40 = **CHF 2,684.35**. This matches the ESTV 2026 table. The effective federal rate is 2.68%; the marginal rate is 6.6%. Cantonal and communal tax come on top (`ch-cantonal-tax`).
 
-### Key Deduction Lines
-
-**Key Deduction Lines**
-
-| Line | Description |
-| --- | --- |
-| Geschaftsaufwand | Business expenses |
-| Abschreibungen | Depreciation |
-| AHV/IV/EO | Social insurance contributions |
-| BVG | Pillar 2 pension |
-| Saule 3a | Pillar 3a |
-| Kinderabzug | CHF 6,700 per child |
-
-### Conservative Defaults
-
-**Conservative Defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown marital status | STOP -- determines tariff |
-| Unknown BVG status | Without BVG (higher 3a limit applies) |
-| Unknown business-use % | 0% deduction |
-| Unknown expense category | Not deductible |
-| Unknown cantonal question | ESCALATE -- federal only |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-- **Minimum viable inputs** — **Minimum viable** -- bank statement for the full tax year, marital status, canton of residence.
-- **Recommended inputs** — **Recommended** -- all invoices, AHV/IV/EO contribution statements, BVG certificate, Saule 3a statements, prior year Steuerveranlagung.
-- **Ideal inputs** — **Ideal** -- complete business accounts, Anlageverzeichnis, provisional tax notices.
-- **Refusal if minimum missing** — **Refusal if minimum is missing -- SOFT WARN.** No bank statement = hard stop. Unknown marital status = hard stop.
-
-### Refusal Catalogue
-
-- **R-CH-1** — Cantonal / municipal tax. "This skill covers FEDERAL tax only. Cantonal and municipal taxes require separate cantonal skills or Treuhnder consultation. Do not estimate."
-- **R-CH-2** — Corporations (AG, GmbH, Verein). "Corporate taxation is separate. Out of scope."
-- **R-CH-3** — Non-resident / Quellensteuer. "Source tax for non-residents has different rules. Escalate."
-- **R-CH-4** — Interkantonale Steuerausscheidung. "Multi-canton allocation is out of scope."
-- **R-CH-5** — Steuererlass / tax relief applications. "Escalate to Treuhnder."
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Income Patterns (Credits)
-
-**3.1 Income Patterns (Credits)**
-
-| Pattern | Tax Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| ZAHLUNG, UBERWEISUNG [client], HONORAR | Einkünfte selbstandige Erwerbstatigkeit | Business income | Extract net if MWST-registered |
-| STRIPE PAYOUT, PAYPAL PAYOUT | Business income | Revenue | Platform payout |
-| LOHN, GEHALT, ARBEITGEBER | Einkünfte unselbstandige Erwerbstatigkeit | NOT self-employment | Employment income |
-| MIETEINNAHME, MIETZINS | Einkünfte Liegenschaft | NOT self-employment | Rental income |
-| ZINSEN, KAPITALERTRAG, DIVIDENDE | Einkünfte Vermogen | NOT self-employment | Capital income (VSt 35%) |
-| STEUERRUCKERSTATTUNG, RUCKZAHLUNG | EXCLUDE | Not income | Tax refund |
-
-### 3.2 Expense Patterns (Debits) -- Fully Deductible (Geschaftsaufwand)
-
-**3.2 Expense Patterns (Debits) -- Fully Deductible (Geschaftsaufwand)**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| BÜROMIETE, GESCHÄFTSMIETE, OFFICE RENT | Raumkosten | Fully deductible | Dedicated premises |
-| BERUFSHAFTPFLICHT, VERSICHERUNG (business) | Versicherung | Fully deductible | Professional insurance |
-| TREUHAND, BUCHHALTER, STEUERBERATER | Beratungskosten | Fully deductible |  |
-| RECHTSANWALT, NOTAR (business) | Rechtskosten | Fully deductible |  |
-| BÜROMATERIAL | Bürobedarf | Fully deductible |  |
-| WERBUNG, MARKETING, GOOGLE ADS | Werbekosten | Fully deductible |  |
-| WEITERBILDUNG, KURS, SEMINAR | Weiterbildung | Fully deductible (up to CHF 12,900) | Job-related |
-| VERBANDSBEITRAG, MITGLIEDSCHAFT | Beitrge | Fully deductible | Professional associations |
-| BANKGEBÜHR, KONTOFÜHRUNG | Bankspesen | Fully deductible | Business account |
-| STRIPE FEE, PAYPAL FEE | Transaktionskosten | Fully deductible |  |
-| SOFTWARE, LIZENZ, ABONNEMENT (under CHF 1,000) | IT-Kosten | Fully deductible | Low-value = immediate expense |
-
-### 3.3 Expense Patterns -- Social Insurance
-
-**3.3 Expense Patterns -- Social Insurance**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| AHV, AUSGLEICHSKASSE, SVA | Fully deductible | AHV/IV/EO contributions |
-| BVG, PENSIONSKASSE, AUFFANGEINRICHTUNG | Fully deductible | Pillar 2 |
-| SÄULE 3A, VORSORGE 3A | Deductible within limits | CHF 7,258 or CHF 36,288 |
-
-### 3.4 Expense Patterns -- Travel
-
-**3.4 Expense Patterns -- Travel**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| FLUG, SWISS, EASYJET, RYANAIR | Reisekosten | Fully deductible | Business purpose |
-| HOTEL, BOOKING.COM | Reisekosten | Fully deductible | Business travel |
-| SBB, BLS, ZVV | Reisekosten | Fully deductible | Business travel |
-| TAXI, UBER | Reisekosten | Fully deductible | Business purpose |
-| TANKSTELLE, MIGROL, COOP PRONTO, BP | Fahrzeugkosten | T2 -- business % only |  |
-
-### 3.5 Expense Patterns -- NOT Deductible
-
-**3.5 Expense Patterns -- NOT Deductible**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PRIVAT, LEBENSMITTEL, MIGROS, COOP (groceries) | NOT deductible | Lebenshaltungskosten |
-| BUSSE, ORDNUNGSBUSSE | NOT deductible | Fines |
-| BUNDESSTEUER, KANTONSSTEUER, STEUERN | NOT deductible | Income tax |
-| PRIVATBEZUG | NOT deductible | Drawings |
-
-### 3.6 Capital Items
-
-**3.6 Capital Items**
-
-| Pattern | Straight-Line | Reducing Balance | Notes |
-| --- | --- | --- | --- |
-| COMPUTER, LAPTOP, PC | 40% | 50% |  |
-| BÜROMÖBEL | 12.5% | 25% |  |
-| FAHRZEUG, AUTO (business) | 20% | 40% |  |
-| MASCHINE, EQUIPMENT | 12.5%-20% | 25%-40% |  |
-| GEBÄUDE (commercial) | 2%-4% | 3%-7% |  |
-| Low-value (under CHF 1,000) | 100% immediate | -- |  |
-
-### 3.7 Exclusions
-
-**3.7 Exclusions**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| EIGENÜBERWEISUNG, INTERNAL | EXCLUDE | Own-account transfer |
-| DARLEHEN, KREDIT, AMORTISATION | EXCLUDE | Loan principal |
-| DARLEHENSZINS (business) | Deductible | Business loan interest |
-| MWST ZAHLUNG | EXCLUDE from P&L | MWST liability |
-| STEUERZAHLUNG | EXCLUDE | Tax payment |
-
-### 3.8 Swiss Banks -- Statement Format Reference
-
-**3.8 Swiss Banks -- Statement Format Reference**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| UBS | CSV, PDF, MT940 | Buchungsdatum, Text, Betrag | UBS e-banking export |
-| PostFinance | CSV, PDF | Datum, Buchungstext, Gutschrift/Belastung | PostFinance e-Finance |
-| ZKB (Zurcher Kantonalbank) | CSV, PDF | Datum, Text, Betrag |  |
-| Credit Suisse / UBS (merged) | CSV, PDF | Datum, Beschreibung, Betrag | Post-merger formats |
-| Raiffeisen CH | CSV, PDF | Datum, Buchungstext, Betrag |  |
-| Revolut, Wise | CSV | Date, Counterparty, Amount | Multi-currency |
-
-## Section 4 -- Worked Examples
-
-### Example 1 -- Client Payment (MWST-registered)
-
-**Input line:**
-`15.03.2025 ; UBS Gutschrift ; AGENTUR ZURICH AG ; Honorar Mrz 2025 ; +8,100.00 ; CHF`
-
-**Reasoning:**
-Client payment. If MWST-registered (8.1% standard rate), CHF 8,100 may include MWST. Check invoice: if gross, net = CHF 7,493.06 + CHF 606.94 MWST. If Kleinunternehmer, full CHF 8,100.
-
-**Classification:** Business income = CHF 7,493.06 (or CHF 8,100 if not MWST-registered).
-
-### Example 2 -- AHV Contribution
-
-**Input line:**
-`15.02.2025 ; PostFinance Belastung ; AUSGLEICHSKASSE ZURICH ; AHV/IV/EO ; -4,800.00 ; CHF`
-
-**Reasoning:**
-AHV/IV/EO contributions. Fully deductible from taxable income.
-
-**Classification:** Deductible. Reduces taxable income.
-
-### Example 3 -- Saule 3a Contribution
-
-**Input line:**
-`30.06.2025 ; ZKB Überweisung ; CREDIT SUISSE SÄULE 3A ; Einzahlung 2025 ; -7,258.00 ; CHF`
-
-**Reasoning:**
-Saule 3a at maximum (CHF 7,258 with BVG). Fully deductible.
-
-**Classification:** Deductible (within limit). If without BVG, could be up to CHF 36,288.
-
-### Example 4 -- Software Subscription
-
-**Input line:**
-`01.04.2025 ; UBS Lastschrift ; ADOBE INC ; Creative Cloud ; -35.90 ; CHF`
-
-**Reasoning:**
-Monthly SaaS subscription. Under CHF 1,000. Fully deductible as Geschaftsaufwand.
-
-**Classification:** Geschaftsaufwand -- IT. Fully deductible.
-
-### Example 5 -- Cantonal Tax Payment (Exclude)
-
-**Input line:**
-`30.09.2025 ; PostFinance ; STEUERAMT ZH ; Kantonssteuer 2025 ; -5,000.00 ; CHF`
-
-**Reasoning:**
-Tax payment. Not deductible. Not a business expense.
-
-**Classification:** EXCLUDE. Not deductible.
-
-### Example 6 -- Low-Value Asset
-
-**Input line:**
-`03.06.2025 ; UBS Karte ; DIGITEC ; Drucker ; -890.00 ; CHF`
-
-**Reasoning:**
-Printer CHF 890. Under CHF 1,000 low-value threshold. Immediate full deduction.
-
-**Classification:** Geschaftsaufwand. Fully deductible in year of purchase.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Business Income
-
-- **Business income treatment** — All self-employment income is Einkünfte aus selbstandiger Erwerbstatigkeit (Art. 18 DBG). For MWST-registered, report net.  _(Art. 18 DBG)_
-
-### 5.2 Geschaftsaufwand
-
-- **Business expense deductibility** — Business expenses deductible under DBG Art. 27-31. Must be business-related.  _(DBG Art. 27-31)_
-
-### 5.3 Abschreibungen (Depreciation)
-
-- **Depreciation method** — Choose straight-line or reducing balance (consistent per asset). ESTV guideline rates apply. Low-value under CHF 1,000 may be expensed immediately.
-
-### 5.4 AHV/IV/EO Deductibility
-
-- **AHV/IV/EO deductibility detail** — Fully deductible. Self-employed pay 10.0% on income above CHF 10,100 (declining scale below). Circular calculation resolved by Ausgleichskasse.
-
-### 5.5 Saule 3a and BVG
-
-- **Saule 3a and BVG limits** — - With BVG: max CHF 7,258 - Without BVG: 20% of net earned income, max CHF 36,288 - Hard cap -- excess not deductible
-
-### 5.6 Personal Deductions (Federal)
-
-**5.6 Personal Deductions (Federal)**
-
-| Deduction | CHF |
-| --- | --- |
-| Married couple | 2,800 |
-| Kinderabzug | 6,700 per child |
-| Unterstützungsabzug | Up to 7,050 |
-
-### 5.7 Non-Deductible
-
-**5.7 Non-Deductible**
-
-| Expense | Reason |
-| --- | --- |
-| Personal living expenses | Art. 34 DBG |
-| Fines (Bussen) | Public policy |
-| Income tax (all levels) | Tax on income |
-| Capital expenditure | Through Abschreibungen |
-
-### 5.8 Filing and Penalties
-
-**5.8 Filing and Penalties**
-
-| Item | Detail |
-| --- | --- |
-| Standard deadline | 31 March (varies by canton) |
-| Extensions | Routinely available |
-| Late filing | Reminder + fee; estimated assessment |
-| Persistent non-filing | Fine up to CHF 1,000 |
-| Tax evasion | 33.3%-300% of evaded tax |
-
-### 5.9 Provisional Tax
-
-- **Provisional tax billing** — Billed by canton based on prior assessment. Interest on under/overpayment (Ausgleichszins).
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office (Arbeitszimmer)
-
-- **Home office deductibility** — Deductible if predominantly business use AND no separate business premises. Proportion by floor area. Flag for reviewer.
-
-### 6.2 Vehicle Business Use
-
-- **Vehicle business use split** — Business vs private split required. Private use of business vehicle = taxable benefit (Naturallohn). Flag for reviewer.
-
-### 6.3 Phone / Internet Mixed Use
-
-- **Phone/internet mixed use default** — Business portion only. Default 0%.
-
-### 6.4 BVG Voluntary Contributions
-
-- **BVG voluntary contributions** — Self-employed may voluntarily join BVG. Contributions fully deductible. Flag for reviewer to confirm BVG status.
-
-### 6.5 AHV Declining Scale
-
-- **AHV declining scale** — For income CHF 10,100-58,800, rate is less than 10%. Use official AHV table.
-
-## Section 7 -- Excel Working Paper Template
-
-```
-SWITZERLAND FEDERAL INCOME TAX -- WORKING PAPER
-Tax Year: 2025
-Client: ___________________________
-Marital Status: Single / Married
-Canton: ___________ (for filing only -- cantonal tax is OUT OF SCOPE)
-
-A. SELF-EMPLOYMENT INCOME
-  A1. Business revenue (net of MWST)              ___________
-  A2. Other business income                        ___________
-  A3. Total                                        ___________
-
-B. GESCHÄFTSAUFWAND
-  B1. Raumkosten                                   ___________
-  B2. Versicherungen (business)                    ___________
-  B3. Beratungskosten                              ___________
-  B4. IT / Software                                ___________
-  B5. Marketing                                    ___________
-  B6. Reisekosten                                  ___________
-  B7. Fahrzeugkosten (business %)                  ___________
-  B8. Abschreibungen                               ___________
-  B9. Bankspesen                                   ___________
-  B10. Übrige Geschäftsaufwand                     ___________
-  B11. Total                                       ___________
-
-C. NET SELF-EMPLOYMENT INCOME (A3 - B11)           ___________
-
-D. DEDUCTIONS
-  D1. AHV/IV/EO                                    ___________
-  D2. BVG                                          ___________
-  D3. Säule 3a                                     ___________
-  D4. Kinderabzug                                  ___________
-  D5. Other personal deductions                    ___________
-  D6. Total deductions                             ___________
-
-E. STEUERBARES EINKOMMEN (C - D6)                  ___________
-
-F. DIREKTE BUNDESSTEUER (use ESTV tariff)          ___________
-
-NOTE: This is FEDERAL TAX ONLY. Cantonal/municipal = separate.
-
-REVIEWER FLAGS:
-  [ ] Marital status confirmed (Grundtarif/Verheiratetentarif)?
-  [ ] BVG status confirmed (affects Säule 3a limit)?
-  [ ] Home office eligibility confirmed?
-  [ ] Vehicle business % confirmed?
-  [ ] AHV contribution rate confirmed (declining scale)?
+```oa-check
+name: Single, taxable income CHF 100,000, federal tax 2026
+inputs:
+  taxable_income: 100000
+  band_start: 82100
+  tax_at_band_start: 1502.95
+  per_100: 6.60
+steps:
+  - steps_of_100: floor((taxable_income - band_start) / 100)
+  - tax_raw: tax_at_band_start + steps_of_100 * per_100
+  - tax: floor(tax_raw * 20) / 20
+  - effective_rate_pct: round(tax / taxable_income * 100, 2)
+expected:
+  steps_of_100: 179
+  tax: 2684.35
+  effective_rate_pct: 2.68
 ```
 
-## Section 8 -- Bank Statement Reading Guide
+### Example 2: married couple with two children, taxable income CHF 150,000
 
-### Swiss Bank Statement Formats
+A married couple living together with two minor children has joint taxable income of CHF 150,000. That figure is already after the two child deductions (2 x CHF 6,800), the married couple deduction (CHF 2,800) and any two-earner deduction. The married tariff applies.
 
-**Swiss Bank Statement Formats**
+The income falls in the band starting at CHF 148,300, where the tax is CHF 5,221.00, plus CHF 11.00 for each further CHF 100. The excess is 150,000 - 148,300 = CHF 1,700, which is 17 steps. Tariff tax: 5,221 + 17 x 11 = CHF 5,408.00.
 
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| UBS | CSV, PDF, MT940 | Buchungsdatum, Text, Betrag | E-banking export |
-| PostFinance | CSV, PDF | Datum, Buchungstext, Gutschrift/Belastung | E-Finance export |
-| ZKB | CSV, PDF | Datum, Text, Betrag |  |
-| Raiffeisen CH | CSV, PDF | Datum, Buchungstext, Betrag |  |
-| Credit Suisse (now UBS) | CSV, PDF | Datum, Beschreibung, Betrag | Legacy format |
-| Revolut, Wise | CSV | Date, Counterparty, Amount | Multi-currency |
+The edge case: children count twice, once as an income deduction and again as a reduction of the tax itself. DBG art. 36 para. 2bis cuts the tax by CHF 263 per child: 2 x 263 = CHF 526. Federal tax: 5,408 - 526 = **CHF 4,882.00**, an effective rate of 3.25%. Leaving out the CHF 263 reduction is a common error in hand computations.
 
-### Key Swiss Banking Terms
-
-**Key Swiss Banking Terms**
-
-| Term | English | Hint |
-| --- | --- | --- |
-| Gutschrift | Credit | Potential income |
-| Belastung / Lastschrift | Debit | Potential expense |
-| Überweisung | Transfer | Check direction |
-| Dauerauftrag | Standing order | Regular expense |
-| Kartenzahlung | Card payment | Expense |
-| Bargeldbezug | Cash withdrawal | Ask purpose |
-| Kontoführung | Account maintenance | Bank charge |
-| Vergütung | Payment/remuneration | Often income |
-
-## Section 9 -- Onboarding Fallback
-
-```
-ONBOARDING QUESTIONS -- SWITZERLAND FEDERAL INCOME TAX
-1. Marital status: single or married?
-2. Canton and municipality of residence?
-3. BVG (Pensionskasse) member? (Affects Säule 3a limit)
-4. Säule 3a contributions made?
-5. Home office: dedicated room? Separate business premises?
-6. Vehicle: business use %?
-7. Phone/internet: business use %?
-8. AHV/IV/EO contributions paid?
-9. Other income (employment, rental, securities)?
-10. Children / dependants?
+```oa-check
+name: Married, two children, taxable income CHF 150,000, federal tax 2026
+inputs:
+  taxable_income: 150000
+  band_start: 148300
+  tax_at_band_start: 5221
+  per_100: 11
+  children: 2
+  reduction_per_child: 263
+steps:
+  - steps_of_100: floor((taxable_income - band_start) / 100)
+  - tariff_tax: tax_at_band_start + steps_of_100 * per_100
+  - child_reduction: children * reduction_per_child
+  - tax: floor((tariff_tax - child_reduction) * 20) / 20
+  - effective_rate_pct: round(tax / taxable_income * 100, 2)
+expected:
+  steps_of_100: 17
+  tariff_tax: 5408.00
+  child_reduction: 526.00
+  tax: 4882.00
+  effective_rate_pct: 3.25
 ```
 
-## Section 10 -- Reference Material
+## Ask the client first
 
-### Key Legislation
+1. Marital status and household on 31 December 2026: married or registered and living together, single, separated, divorced or widowed, and whether children or supported persons live with them. This picks the tariff and the CHF 263 reductions.
+2. Residence permit and nationality (and the spouse's): a B or L permit means tax at source, and then whether gross employment income reaches CHF 120,000.
+3. Canton and commune of residence on 31 December, which sets the filing deadline and the cantonal tax.
+4. Pension fund membership, for the Pillar 3a limit (CHF 7,258 or up to CHF 36,288), and any Pillar 2 buy-ins.
+5. Both spouses' earned income, for the two-earner deduction, and childcare costs for children under 14.
+6. Any foreign income, business or real estate, which is exempt but sets the rate.
 
-**Key Legislation**
+## Sources
 
-| Topic | Reference |
-| --- | --- |
-| Self-employment income | DBG Art. 18 |
-| Business expenses | DBG Art. 27-31 |
-| Non-deductible | DBG Art. 34 |
-| Depreciation | DBG Art. 28; ESTV Merkblatt |
-| AHV/IV/EO deduction | DBG Art. 33 Abs. 1 lit. d, f |
-| BVG / Saule 3a | BVG; BVV 3; DBG Art. 33 |
-| Federal tariff | DBG Art. 214 |
-| Personal deductions | DBG Art. 33, 33a, 35 |
-| Filing | DBG Art. 124 |
-| Penalties | DBG Art. 175 (evasion: 33.3%-300%) |
+| Source | URL | Read on |
+|---|---|---|
+| Bundesgesetz über die direkte Bundessteuer (DBG), SR 642.11, version of 2 September 2026 (and of 1 January 2026), art. 3 to 9, 14, 16 to 40, 83 to 89a, 120, 124, 130, 161 to 164, 174 to 176 | https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de | 2026-10-23 |
+| Verordnung des EFD über die kalte Progression (VKP) of 10 September 2025, AS 2025 579 | https://www.fedlex.admin.ch/eli/oc/2025/579/de | 2026-10-23 |
+| Berichtigung of the VKP, art. 2 para. 1, of 17 October 2025, AS 2025 621 | https://www.fedlex.admin.ch/eli/oc/2025/621/de | 2026-10-23 |
+| ESTV, Form. 58c, Tarife direkte Bundessteuer 2026 | https://www.estv.admin.ch/dam/de/sd-web/gnde9CmEsalK/dbst-tairfe-58c-2026-dfi.pdf | 2026-10-23 |
+| ESTV, Rundschreiben 2-215-D-2025, kalte Progression und Zinssätze für das Steuerjahr 2026, 11 September 2025 | https://www.estv.admin.ch/dam/de/sd-web/vFK3ntWLQ4s4/2-215-D-2025-d.pdf | 2026-10-23 |
+| ESTV, Steuertarife zur direkten Bundessteuer | https://www.estv.admin.ch/de/steuertarife-zur-direkten-bundessteuer | 2026-10-23 |
+| Verordnung des EFD über den Abzug der Berufskosten (Berufskostenverordnung), SR 642.118.1, version of 1 January 2026, annex | https://www.fedlex.admin.ch/eli/cc/1993/1363_1363_1363/de | 2026-10-23 |
+| Verordnung des EFD über Fälligkeit und Verzinsung der direkten Bundessteuer, SR 642.124, art. 1 to 3 | https://www.fedlex.admin.ch/eli/cc/1993/717_717_717/de | 2026-10-23 |
+| Quellensteuerverordnung (QStV), SR 642.118.2, version of 10 January 2025 (current), art. 9 | https://www.fedlex.admin.ch/eli/cc/2018/274/de | 2026-10-23 |
+| Verordnung über die steuerliche Abzugsberechtigung für Beiträge an anerkannte Vorsorgeformen (BVV 3), SR 831.461.3, art. 7 | https://www.fedlex.admin.ch/eli/cc/1985/1778_1778_1778/de | 2026-10-23 |
+| BSV, Wichtige Masszahlen im Bereich der beruflichen Vorsorge 2025 und 2026 | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
+| Kantonales Steueramt Zürich, ZStB 133.1, Fristen Steuererklärung | https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html | 2026-10-23 |
 
-### Test Suite
-
-**Test 1 -- Single, federal only.**
-Input: Single, net income CHF 100,000, AHV CHF 10,000, Saule 3a CHF 7,258 (has BVG).
-Expected: Taxable CHF 82,742. Apply Grundtarif. Federal tax ~CHF 3,500-4,000.
-
-**Test 2 -- Married, joint.**
-Input: Married, combined CHF 180,000, AHV CHF 12,000, Saule 3a CHF 14,516 total, 2 children.
-Expected: Taxable ~CHF 140,084. Apply Verheiratetentarif.
-
-**Test 3 -- Saule 3a without BVG.**
-Input: Without BVG, net earned income CHF 200,000.
-Expected: Max 20% = CHF 40,000 but capped CHF 36,288.
-
-**Test 4 -- Saule 3a without BVG, income cap.**
-Input: Without BVG, net earned CHF 30,000.
-Expected: 20% x CHF 30,000 = CHF 6,000.
-
-**Test 5 -- Low-value asset.**
-Input: CHF 900 printer.
-Expected: Immediate expense.
-
-**Test 6 -- Cantonal question.**
-Input: "How much tax in Zurich?"
-Expected: ESCALATE. Federal only.
-
-## PROHIBITIONS
-
-- **Prohibitions list** — - NEVER compute Swiss federal tax from approximate brackets -- use ESTV tariff tables - NEVER apply Grundtarif to married or Verheiratetentarif to single - NEVER estimate cantonal or municipal taxes -- FEDERAL ONLY - NEVER allow Saule 3a above applicable maximum - NEVER allow income tax as a deduction - NEVER allow fines as deductions - NEVER allow capital expenditure directly as expense - NEVER present federal tax as total tax burden - NEVER present calculations as definitive
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a Treuhnder or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: how the two-earner deduction applies when the lower earned income is below the CHF 8,600 minimum (the DBG text gives only the minimum; ESTV practice was not read); filing deadlines and instalment practice in cantons other than Zurich; the start date of the abolition of the imputed rental value voted in 2025 (not read, so the base above still lists it as taxable); retroactive Pillar 3a top-up contributions (not read).
