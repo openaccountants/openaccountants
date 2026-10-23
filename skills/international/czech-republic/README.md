@@ -3,8 +3,7 @@ jurisdiction: CZ
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial:
-  VAT: "cz-vat-return and czech-republic-vat-return are still written for tax year 2025 and have not been checked against the VAT Act in force for 2026; the 2026 registration thresholds (CZK 2,000,000 and CZK 2,536,500, VAT Act § 6) are only in cz-tax-overview"
+partial: {}
 ---
 
 # Czech Republic: tax pack
@@ -17,7 +16,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 |---|---|---|
 | IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, expense lump sums and the flat-rate regime, tax year 2026) | source-cited draft |
 | IT-CORP, corporate income tax | cz-corporate-income-tax (2026: residence, 21% rate, base and non-deductible costs, tax depreciation, losses, participation exemption, § 23e borrowing cost limit, advances, deadlines, penalties; top-up tax for large groups not covered) | source-cited draft |
-| VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
+| VAT | czech-republic-vat-return (2026: registration at CZK 2,000,000 and CZK 2,536,500, 21% and 12% rates, return, control statement and EC sales list, reverse charge, unreliable payers, penalties; partial exemption, special schemes, VAT groups and OSS not covered); cz-vat-return is a pointer to it | source-cited draft |
 | SC, social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed OSVČ, 2026) | source-cited draft |
 | PR, payroll withholding | cz-payroll (2026: registration and JMHZ, monthly gross-to-net, prohlášení and credits, DPP and DPČ withholding tax, sick pay, annual reconciliation and vyúčtování; deductions under court orders not covered) | source-cited draft |
 | TP, transfer pricing | cz-transfer-pricing | source-cited draft |
