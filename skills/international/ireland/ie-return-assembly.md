@@ -62,7 +62,7 @@ The figures the assembled return uses for 2026. Each upstream skill has the full
 | Form 12 limit on non-PAYE income | Taxable EUR 5,000 or less and gross EUR 30,000 or less | 2026 | [Revenue: do you need to submit a tax return?](https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx) |
 | Preliminary tax: the lowest of | 90% of the current year, 100% of the previous year, or 105% of the pre-preceding year (direct debit only) | 2026 and 2027 | [Revenue: preliminary tax](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx) |
 
-The 31% CGT rate comes from Financial Resolution No. 3 of 6 October 2026 and is provisional until the Finance (No. 2) Act 2026 is in force. [ie-cgt](ie-cgt.md) explains when it would lapse. Budget 2027 changes announced on 6 October 2026 do not change the 2026 bands, credits, USC or PRSI above.
+The 31% CGT rate comes from Financial Resolution No. 3 of 6 October 2026 and is provisional until the Finance (No. 2) Act 2026 is in force. [ie-cgt](ie-cgt.md) explains when it would lapse. In a year with gains at 33% and 31%, the EUR 1,270 exemption comes off the 33% gains first (section 601(3), [section 601](https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html)). Budget 2027 changes announced on 6 October 2026 do not change the 2026 bands, credits, USC or PRSI above.
 
 ## The taxable base
 
@@ -71,7 +71,7 @@ Build the working paper in this order. Each line comes from the skill named.
 1. **Income by source.** Trading profit (Case I and II) after adjustments and capital allowances ([ie-income-tax-form11](ie-income-tax-form11.md)); employment income and PAYE deducted from the year-end employment detail summary; net rent (Case V) and other non-PAYE income ([ie-paye-rental-nonresident](ie-paye-rental-nonresident.md)); foreign income ([ie-non-dom](ie-non-dom.md) for the remittance basis, [ie-foreign-tax-and-withholding](ie-foreign-tax-and-withholding.md) for credits).
 2. **Income tax.** Apply the band for the person's status at 20% and the balance at 40%, then subtract credits. Credits reduce tax; they are not deductions from income. The Earned Income credit is the lower of EUR 2,000 or 20% of earned income, and with the Employee credit cannot exceed EUR 2,000 in total ([Revenue: Earned Income Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx)).
 3. **USC.** On total income, a different base from income tax. Use [ie-usc](ie-usc.md) for exempt income, reduced rates and the surcharge.
-4. **PRSI.** Class S on reckonable self-employed income of EUR 5,000 or more ([ie-prsi-class-s](ie-prsi-class-s.md)). Employees' PRSI on pay is already deducted through payroll.
+4. **PRSI.** Class S on reckonable self-employed income of EUR 5,000 or more ("Self-employed contributors with annual income of €5,000 or over pay Class S PRSI", [DSP SW14](https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf); detail in [ie-prsi-class-s](ie-prsi-class-s.md)). Employees' PRSI on pay is already deducted through payroll.
 5. **Capital gains.** A separate computation with its own payment dates ([ie-cgt](ie-cgt.md)). It goes on the same Form 11 or paper Form 12, but the CGT is paid on the CGT dates, not with the income tax balance.
 6. **Credits for tax paid.** Subtract PAYE and USC deducted through payroll, professional services withholding tax, and preliminary tax paid for 2026. What is left is the 2026 balance.
 7. **Preliminary tax for the next year.** Form 11 filers pay preliminary tax for 2027 with the 2026 balance ([ie-preliminary-tax](ie-preliminary-tax.md)).
@@ -150,14 +150,14 @@ expected:
 Ciarán is a PAYE employee. Payroll has dealt with his salary in full. He sold listed shares twice in 2026: on 15 September, a gain of EUR 6,000, and on 10 November, a gain of EUR 10,000. He has no losses. He has no other non-PAYE income, so he stays on Form 12.
 
 - The September gain is before 7 October 2026, so 33% applies. The November gain is after, so 31% applies ([ie-cgt](ie-cgt.md)).
-- Revenue's page does not say which gain the EUR 1,270 exemption reduces. This skill sets it against the 33% gain, which gives the lower tax. Flag this for the reviewer.
+- The EUR 1,270 exemption comes off the 33% gain: where gains are taxed at more than one rate, section 601(3) gives the exemption against the gains at the higher rate first ([section 601](https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html)).
 - CGT: (EUR 6,000 less EUR 1,270) at 33% is EUR 1,560.90. EUR 10,000 at 31% is EUR 3,100.00. Total EUR 4,660.90.
 - Both disposals are in the 1 January to 30 November period, so the whole EUR 4,660.90 is due by 15 December 2026.
 - He reports the gains on the paper Form 12 or on Form CG1 by 31 October 2027, not on the online eForm 12.
 - If the 31% resolution lapses before the Finance (No. 2) Act 2026 is in force, the November gain goes back to 33%, and the CGT on it rises to EUR 3,300.00.
 
 ```oa-check
-name: Two 2026 share gains either side of 7 October 2026, exemption against the 33% gain
+name: Two 2026 share gains either side of 7 October 2026, exemption against the 33% gain (section 601(3))
 inputs:
   gain_before: 6000
   gain_after: 10000
@@ -203,8 +203,10 @@ expected:
 | Revenue, eBrief 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-23 |
 | Revenue, guidelines for charging interest on late payment | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-23 |
 | Revenue, Earned Income Credit | https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx | 2026-10-23 |
+| Taxes Consolidation Act 1997, section 601 as enacted (exemption against the higher-rate gains first, subsection (3)) | https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html | 2026-10-23 |
+| Department of Social Protection, SW14 (January 2026): Class S from EUR 5,000 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
 
-Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged; which part of the gains the EUR 1,270 CGT exemption reduces when a year has gains at two rates (Revenue's page does not say). The EUR 5,000 Class S entry point is taken from [ie-prsi-class-s](ie-prsi-class-s.md) and its Department of Social Protection leaflet, not read again today.
+Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged.
 
 <!-- openaccountants-cta-block -->
 

@@ -45,7 +45,7 @@ Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not r
 | --- | --- | --- |
 | Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
 | Rate for most gains, disposals on or after 7 October 2026 | 31% | "The rate of CGT is 31% for most gains." "Rates for most gains changed on 7 October 2026 to 31%." |
-| Rate for most gains, disposals 6 December 2012 to 6 October 2026 | 33% | "6 October 2026 33%" (Revenue's table prints the start date as "6 December 2021"; the 33% rate has applied since 6 December 2012, as the previous row in that table ends on 5 December 2012) |
+| Rate for most gains, disposals 6 December 2012 to 6 October 2026 | 33% | "6 October 2026 33%" (Revenue's table prints the start date as "6 December 2021"; it is a misprint: Finance Act 2013, section 43, set 33% for "disposals made on or after 6 December 2012" ([FA 2013 s.43](https://www.irishstatutebook.ie/eli/2013/act/8/section/43/enacted/en/html))) |
 | Gains from development land | 33% | "33% for gains from development land." |
 | Gains from foreign life policies and foreign investment products | 40% | "40% for gains from foreign life policies and foreign investment products." |
 | Gains from venture capital funds, individuals and partnerships | 15% | "15% for gains from venture capital funds for individuals and partnerships." |
@@ -121,9 +121,9 @@ Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not r
 
 - **What changed.** Financial Resolution No. 3, agreed by Dáil Éireann on 6 October 2026, amends section 28(3) of the Taxes Consolidation Act 1997 "by the substitution of “31 per cent” for “33 per cent”". It "shall have effect in respect of disposals of assets made on or after 7 October 2026" ([Dáil record, 6 October 2026](https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml)). Revenue's CGT page already gives 31% ([how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx)).
 - **Why it applies now.** The resolution has statutory effect under the Provisional Collection of Taxes Act 1927. That Act covers capital gains tax: Finance Act 2010, section 160, defines "tax" in it to include "capital gains tax" ([FA 2010 s.160](https://www.irishstatutebook.ie/2010/en/act/pub/0005/sec0160.html)).
-- **When it would lapse.** Under section 4 of the 1927 Act the resolution stops having effect if the Bill with the same provision is not read a second time within the next twenty Dáil sitting days, if the Dáil rejects that provision, if the Dáil is dissolved before the Act passes, or four months after 7 October 2026 (that is, 7 February 2027) if no Act is in force by then ([1927 Act s.4](https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html)). The provision is section 36 of the Finance (No. 2) Bill 2026 (Bill 98 of 2026). Once the Finance Act is in force, it governs.
+- **When it would lapse.** Section 4 of the 1927 Act, as substituted by the Finance Act 1974 (section 85) and amended by the Appropriation Act 1991 (section 2), ends the resolution's effect on the first of these events: the Bill with the same provision is not read a second time within 84 days after the Dáil passed the resolution (if the Dáil is in recess on any of days 82 to 84, within the next five sitting days after it resumes); the Dáil rejects that provision of the Bill; an Act with the same provision comes into operation; or four months pass from 7 October 2026 ([Finance Act 1974 s.85](https://www.irishstatutebook.ie/1974/en/act/pub/0027/sec0085.html), [Appropriation Act 1991 s.2](https://www.irishstatutebook.ie/1991/en/act/pub/0032/print.html)). A dissolution of the Dáil does not end it: section 4A leaves any dissolution period out of the 84-day and four-month counts ([Finance Act 1992 s.250](https://www.irishstatutebook.ie/1992/en/act/pub/0009/sec0250.html)). The provision is section 36 of the Finance (No. 2) Bill 2026 (Bill 98 of 2026), which applies 31% "to disposals of assets made on or after 7 October 2026" ([Bill 98 of 2026, as initiated](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf)). Once the Finance Act is in force, it governs.
 - **What to do.** Compute disposals on or after 7 October 2026 at 31%. If the resolution lapses, those disposals go back to 33%. Before 7 February 2027, check that the Finance (No. 2) Act 2026 is in force and still says 31%.
-- **What it does not change.** Development land stays at 33% (section 649A; Revenue: "33% for gains from development land"). The 10% Entrepreneur Relief rate, the 40%, 15% and 12.5% rates, the EUR 1,270 exemption and the payment dates are unchanged.
+- **What it does not change.** Development land stays at 33%: its rate sits in section 649A(1)(b), set at 33% by Finance Act 2013 section 43 ([FA 2013 s.43](https://www.irishstatutebook.ie/eli/2013/act/8/section/43/enacted/en/html)), and Bill 98 does not amend section 649A (Revenue: "33% for gains from development land"). The 10% Entrepreneur Relief rate, the 40%, 15% and 12.5% rates, the EUR 1,270 exemption and the payment dates are unchanged.
 
 ## Ask the client first
 
@@ -142,7 +142,7 @@ Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not r
 4. **Compute the chargeable gain on each disposal.** Proceeds (or market value where Section 3.5 requires it) less the purchase price and allowable expenses: enhancement expenditure, and fees such as solicitor's and auctioneer's fees on acquisition and disposal. For costs paid up to 31 December 2002, apply the indexation multiplier for the year the cost was paid (Section 4.4). For shares, identify the shares sold under Section 3.7. [How to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) (Taxes Consolidation Act 1997, section 552)
 5. **Apply reliefs that remove or reduce the gain.** Principal Private Residence Relief (section 604), Retirement Relief (sections 598 and 599), the site to a child relief (section 603A), each as set out in Section 4. [CGT reliefs](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/index.aspx)
 6. **Add the year's gains and deduct allowable losses.** Deduct current-year losses, then losses brought forward. Development land losses and gains have their own ring-fence (Section 3.6). [If you make a loss](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/if-you-make-a-loss.aspx) (section 546)
-7. **Deduct the personal exemption.** An individual deducts the EUR 1,270 personal exemption from the year's gains after losses. It is per individual, whether resident or non-resident, and cannot be transferred to a spouse or civil partner, or used by a company or trust. [What is exempt](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx) (section 601)
+7. **Deduct the personal exemption.** An individual deducts the EUR 1,270 personal exemption from the year's gains after losses. It is per individual, whether resident or non-resident, and cannot be transferred to a spouse or civil partner, or used by a company or trust. Where the year's gains are taxed at two or more rates, the exemption goes against the gains at the highest rate first, then the next highest (section 601(3), [section 601](https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html)). No exemption is given where Retirement Relief under section 598 or 599 is allowed (section 601(5); [Tax and Duty Manual Part 19-07-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-19/19-07-01.pdf)). [What is exempt](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx) (section 601)
 8. **Apply the rate.** For most gains: 33% on disposals up to 6 October 2026, 31% on disposals on or after 7 October 2026 (provisional, see Section 1). Development land stays at 33%. 10% on qualifying gains under Revised Entrepreneur Relief, up to the lifetime limit for the period the gain arises in; the excess goes at the standard rate for the disposal date. Other rates in the "How to calculate CGT" table are out of scope. A credit for foreign CGT paid may be claimed on the return. [How to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx) and [Entrepreneur Relief](https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx) (sections 28(3) and 597AA)
 9. **Check the CG50A clearance before completion.** On a sale of a specified asset for more than EUR 500,000 (more than EUR 1,000,000 for a house or apartment), the vendor needs a CG50A or the purchaser deducts 15% (Section 4.7). [CG50A](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/cgt-clearance-certificate-cg50a.aspx) and [Tax and Duty Manual Part 42-03-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-03-01.pdf)
 10. **Pay by the date for the disposal's period, then file.** Disposals 1 January to 30 November: pay by 15 December of the same year. Disposals 1 December to 31 December: pay by 31 January of the next year. File the return on or before 31 October of the year after the disposal, even if no tax is due because of reliefs or losses (Section 6). [Pay and file](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx)
@@ -201,8 +201,8 @@ Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not r
 - **Chargeable gain computation formula.** Chargeable gain = proceeds (or market value) less the purchase price (or market value at acquisition) less allowable expenses. Where indexation applies, each cost paid up to 31 December 2002 is multiplied by the multiplier for the year it was paid. Annual computation, per [how to calculate](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx):
   1. Compute the chargeable gain on each disposal in the tax year.
   2. Add the gains together and deduct allowable losses.
-  3. Deduct the personal exemption of EUR 1,270 (individuals only) and any other exemptions or reliefs.
-  4. Multiply the taxable gain by the rate: 33% for disposals up to 6 October 2026, 31% for disposals on or after 7 October 2026, or 10% on the part that qualifies for Revised Entrepreneur Relief. Where a year has disposals on both sides of 7 October 2026, keep the gains in two groups and apply each rate to its group.
+  3. Deduct the personal exemption of EUR 1,270 (individuals only) and any other exemptions or reliefs. Where gains are taxed at more than one rate, set the exemption against the gains at the higher rate first (section 601(3), [section 601](https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html)).
+  4. Multiply the taxable gain by the rate: 33% for disposals up to 6 October 2026, 31% for disposals on or after 7 October 2026, or 10% on the part that qualifies for Revised Entrepreneur Relief. Where a year has disposals on both sides of 7 October 2026, keep the gains in two groups and apply each rate to its group. The EUR 1,270 exemption comes off the 33% group first, and only the unused part comes off the 31% group (section 601(3)).
 
 ### 3.4 Allowable deductions (section 552)
 
@@ -330,7 +330,7 @@ Facts (hypothetical). Ms de Paor founded an Irish trading company in 2018 and ha
 | CGT at 33% on the excess | **164,580.90** |
 | **Total CGT** | **314,580.90** |
 
-The Revenue page does not say which part of the gain the personal exemption reduces. This skill's choice, not Revenue's: this example sets it against the part taxed at 33%. Confirm with the adopting accountant.
+The exemption goes against the part taxed at 33% because section 601(3) gives it against the gains at the higher rate first ([section 601](https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html)).
 
 ### Example D: Retirement Relief, sale outside the family with marginal relief
 
@@ -341,10 +341,12 @@ Facts (hypothetical). Mr Ó Sé, aged 60, has owned and run his business for mor
 | Line item | Amount (hypothetical, EUR) |
 | --- | --- |
 | Chargeable gain (900,000 less 200,000) | 700,000 |
-| Less: personal exemption | (1,270) |
+| Less: personal exemption (only in the comparison without Retirement Relief) | (1,270) |
 | CGT at 33% without relief | 230,580.90 |
 | Marginal relief limit: half of (900,000 less 750,000) | **75,000** |
 | **CGT due (the lower amount)** | **75,000** |
+
+With marginal relief allowed, the EUR 1,270 exemption is not given as well: section 601(5) denies it where relief under section 598 or 599 is allowed ([Tax and Duty Manual Part 19-07-01](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-19/19-07-01.pdf)). The 75,000 limit is the tax due.
 
 ## Section 6: Filing and payment
 
@@ -411,7 +413,7 @@ Facts (hypothetical). Mr Ó Sé, aged 60, has owned and run his business for mor
 
 ## Sources
 
-Sources 1 to 20 are official pages read on 2 October 2026. Source 4 and sources 21 to 24 were read on 23 October 2026.
+Sources 1 to 20 are official pages read on 2 October 2026. Sources 4, 5 and 11 and sources 21 to 30 were read on 23 October 2026.
 
 1. CGT overview: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/index.aspx
 2. What do you pay CGT on: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-do-you-pay-cgt-on.aspx
@@ -434,11 +436,17 @@ Sources 1 to 20 are official pages read on 2 October 2026. Source 4 and sources 
 19. Section 602 of the Taxes Consolidation Act 1997, as enacted (chattels): https://www.irishstatutebook.ie/eli/1997/act/39/section/602/enacted/en/html
 20. Section 603 of the Taxes Consolidation Act 1997, as enacted (wasting assets): https://www.irishstatutebook.ie/eli/1997/act/39/section/603/enacted/en/html
 21. Dáil Éireann debate, 6 October 2026, Financial Resolution No. 3 (Capital Gains Tax): https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml
-22. Provisional Collection of Taxes Act 1927, section 4 (when a resolution stops having effect): https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html
+22. Provisional Collection of Taxes Act 1927, section 4 as enacted (since replaced; see sources 25 to 27): https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html
 23. Finance Act 2010, section 160 (capital gains tax within the 1927 Act): https://www.irishstatutebook.ie/2010/en/act/pub/0005/sec0160.html
 24. Revenue, Revised Entrepreneur Relief ("reduced from the standard rate of 31%"), read again 23 October 2026: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx
+25. Finance Act 1974, section 85 (substituted section 4 of the 1927 Act): https://www.irishstatutebook.ie/1974/en/act/pub/0027/sec0085.html
+26. Appropriation Act 1991, section 2 (84-day second reading rule, section 4A): https://www.irishstatutebook.ie/1991/en/act/pub/0032/print.html
+27. Finance Act 1992, section 250 (section 4A, dissolution disregarded): https://www.irishstatutebook.ie/1992/en/act/pub/0009/sec0250.html
+28. Finance (No. 2) Bill 2026 (Bill 98 of 2026), as initiated 19 October 2026, section 36: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf
+29. Section 601 of the Taxes Consolidation Act 1997, as enacted (exemption order across rates, subsection (3); no exemption with Retirement Relief, subsection (5)): https://www.irishstatutebook.ie/eli/1997/act/39/section/601/enacted/en/html, and Tax and Duty Manual Part 19-07-01 (reviewed December 2024): https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-19/19-07-01.pdf
+30. Finance Act 2013, section 43 (33% from 6 December 2012; development land rate in section 649A(1)(b)): https://www.irishstatutebook.ie/eli/2013/act/8/section/43/enacted/en/html
 
-Not yet confirmed: whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged (the Bill, section 36, had not passed when read); section 4 of the 1927 Act was read as enacted; any later amendment to its time limits was not checked; Revenue's historic-rates table prints the start of the 33% period as "6 December 2021", which this skill reads as a misprint for 6 December 2012.
+Not yet confirmed: whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged (Bill 98 had completed only First Stage, on 19 October 2026, when read on 23 October 2026); section 601(3) and (5) were read as enacted, and no official revised text was available to confirm that later Finance Acts changed only the amount (Revenue's Tax and Duty Manual Part 19-07-01 confirms EUR 1,270 and subsection (5)).
 
 <!-- openaccountants-cta-block -->
 
