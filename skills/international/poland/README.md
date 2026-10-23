@@ -2,7 +2,8 @@
 jurisdiction: PL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  XB: pl-cross-border
 partial:
   PR: "employees only; no rules for umowa zlecenie or umowa o dzieło contracts or board members' fees"
 ---
@@ -21,7 +22,7 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 | SC, social contributions | pl-zus-contributions | source-cited draft |
 | PR, payroll withholding | pl-payroll (employees only) | source-cited draft |
 | TP, transfer pricing | pl-transfer-pricing | source-cited draft |
-| XB, cross-border | (missing; pl-cit-corporate-tax covers company withholding, CFC and exit tax) | |
+| XB, cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | source-cited draft |
 
 ## Official sources
 

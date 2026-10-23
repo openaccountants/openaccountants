@@ -16,7 +16,7 @@ Individuals pay a flat 10% income tax plus employee pension (CAS, 25%) and healt
 
 ## Domains
 
-A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and only ro-cross-border, ro-corporate-income-tax and ro-employee-income-tax follow the deep-tax shape so far.
+A skill's presence is not coverage. Several skills below are thin lists with secondary sources, and only ro-cross-border, ro-corporate-income-tax, ro-employee-income-tax and ro-transfer-pricing follow the deep-tax shape so far.
 
 | Domain | Skill | Status |
 |---|---|---|
@@ -25,7 +25,7 @@ A skill's presence is not coverage. Several skills below are thin lists with sec
 | VAT | ro-vat-return, romania-vat-return | source-cited draft |
 | SC, social contributions | ro-cas-cass (partial: self-employed CAS and CASS, still on 2025 figures), ro-payroll-social (employee CAS and CASS, employer CAM; a short list citing secondary sources) | source-cited draft |
 | PR, payroll withholding | ro-payroll-social (partial: rates and the monthly D112 deadline only; no computation method or worked examples) | source-cited draft |
-| TP, transfer pricing | (missing: Romania has transfer pricing rules and documentation duties; no skill yet) | |
+| TP, transfer pricing | ro-transfer-pricing | source-cited draft |
 | XB, cross-border | ro-cross-border | source-cited draft |
 
 ## Official sources
@@ -34,4 +34,5 @@ Read on 2026-10-22:
 
 - Fiscal Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/legislatie/Cod_fiscal_norme_2023.htm
 - Fiscal Procedure Code, ANAF consolidated text: https://static.anaf.ro/static/10/Anaf/cod_procedura/Cod_Procedura_Fiscala_2023.htm
+- ANAF Order 828/2026 (transfer pricing file, replaces Order 442/2016 for 2026 transactions), ANAF copy, read on 2026-10-23: https://static.anaf.ro/static/10/Anaf/legislatie/OPANAF_828_2026.pdf
 - ANAF: https://www.anaf.ro
