@@ -3,6 +3,8 @@ jurisdiction: HU
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
+partial:
+  VAT: "hu-vat-return is still on tax year 2025 and needs a 2026 refresh"
 ---
 
 # Hungary: tax pack
@@ -15,7 +17,7 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 |---|---|---|
 | IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026); hu-other-independent-income (primary producers, civil-law contract fees, crypto gains, private accommodation flat tax; 2026) | source-cited draft |
 | IT-CORP, corporate income tax | hu-corporate-tax | source-cited draft |
-| VAT | hungary-vat-return, hu-vat-return | source-cited draft |
+| VAT | hungary-vat-return, hu-vat-return | source-cited draft, partial |
 | SC, social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | source-cited draft |
 | PR, payroll withholding | hu-payroll | source-cited draft |
 | TP, transfer pricing | hu-transfer-pricing | source-cited draft |
