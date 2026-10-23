@@ -14,7 +14,7 @@ verified_by: pending
 
 Source-cited draft: not reviewed by an accountant, not for filing.
 
-**What changed for 2026.** A new ministerial decree, 45/2025. (XII. 23.) NGM rendelet on transfer pricing records and data supply, replaced 32/2017. (X. 18.) NGM rendelet in January 2026. It applies first to records and data supply for tax years starting in calendar 2026 (decree 45/2025, 15. § (1)). The main changes for a typical client:
+**What changed for 2026.** A new ministerial decree, 45/2025. (XII. 23.) NGM rendelet on transfer pricing records and data supply, replaced 32/2017. (X. 18.) NGM rendelet on 23 January 2026 (45/2025, 14. § and 16. §: in force on the 31st day after its 23 December 2025 promulgation). It applies first to records and data supply for tax years starting in calendar 2026 (decree 45/2025, 15. § (1)). The main changes for a typical client:
 
 - The local file (helyi dokumentum) exemption rises from HUF 100 million to **HUF 150 million** per transaction (or aggregated group of transactions) a year (45/2025, 4. § (4) a); old rule: 32/2017, 1. § (2) e)).
 - A master file (fődokumentum) is needed only when the transactions that need a local file total **more than HUF 500 million** in the year (45/2025, 4. § (3)).
@@ -22,9 +22,9 @@ Source-cited draft: not reviewed by an accountant, not for filing.
 - A simplified local file covers low-value services at a **5% net cost plus mark-up** (7. §).
 - New rules for database searches: Hungary first, then Czechia, Poland and Slovakia, then the other central and eastern EU states, then the EU (11. § (2)).
 
-For a tax year that started in 2025, the old decree 32/2017 still applies to records due after the new decree came into force, unless the company opts to apply the new decree to its local files (45/2025, 15. § (2)-(3)).
+For a tax year that started in 2025, the old decree 32/2017 still applies to records due after the new decree came into force, unless the company opts to apply the new decree to some of its 2025 local files (45/2025, 15. § (2)-(3)).
 
-The arm's length rule itself is in Tao. tv. (Act LXXXI of 1996) 18. §. Penalties and the advance pricing procedure are in the Art. (Act CL of 2017). All statute text below was read on the Nemzeti Jogszabálytár at njt.jog.gov.hu, in the version in force from 1 October 2026. The short address njt.hu still refused connections on 2026-10-23. The 9% rate, the tax base, the return and the general penalties are in `hu-corporate-tax`. This skill does not repeat them.
+The arm's length rule itself is in Tao. tv. (Act LXXXI of 1996) 18. §. Penalties and the advance pricing procedure are in the Art. (Act CL of 2017); MAP and country-by-country reporting are in the Aktv. (Act XXXVII of 2013). All statute text below was read on the Nemzeti Jogszabálytár at njt.jog.gov.hu, in the version in force from 1 October 2026. The short address njt.hu still refused connections on 2026-10-23. The 9% rate, the tax base, the return and the general penalties are in `hu-corporate-tax`. This skill does not repeat them.
 
 ## Who this applies to
 
@@ -45,10 +45,10 @@ Two cases are outside 18. § (1)-(2) and (4) altogether (18. § (3)):
 - a long-term contract between an SME and a joint purchasing and selling company in which SMEs together hold more than 50% of the votes;
 - grants, payments and free transfers to the state or a municipality made under a legal obligation and not repayable.
 
-**The documentation and data supply duty (18. § (5))** applies to business associations (Kft, Zrt, Bt, Kkt), associations, SEs, cooperatives, European cooperatives and foreign companies with a Hungarian PE. It does not apply if, on the last day of the tax year, the taxpayer is a **small enterprise (kisvállalkozás)**. Public-benefit non-profit companies and companies under majority state influence are also exempt.
+**The documentation and data supply duty (18. § (5))** applies to business associations (Kft, Zrt, Bt, Kkt), joint ventures (egyesülés), SEs, cooperatives, European cooperatives and foreign companies with a Hungarian PE. It does not apply if, on the last day of the tax year, the taxpayer is a **small enterprise (kisvállalkozás)**. Public-benefit non-profit companies and companies under majority state influence are also exempt.
 
 - A small enterprise has fewer than 50 staff, and net revenue or balance sheet total of at most EUR 10 million in forints (Kkv. tv., Act XXXIV of 2004, 3. § (2)). Micro enterprises count as small (Tao. tv. 4. § 24.).
-- A company with linked enterprises adds their figures (Kkv. tv. 5. § (5)-(7)). A Hungarian subsidiary of a large group is therefore almost never small.
+- A company with linked enterprises adds their figures in full, and partner enterprises (25% or more) in proportion (Kkv. tv. 5. § (5)-(7)). A Hungarian subsidiary of a large group is therefore almost never small.
 - Status changes only after two consecutive years over or under the limits (Kkv. tv. 5. § (3)).
 - A **medium-sized** enterprise is not exempt. "SMEs are exempt" is a common mistake: only micro and small enterprises are.
 
@@ -59,7 +59,7 @@ Two cases are outside 18. § (1)-(2) and (4) altogether (18. § (3)):
 | Item | Rate or amount | Tax year | Source |
 |---|---|---|---|
 | Corporate tax on a transfer pricing adjustment | 9% (see hu-corporate-tax) | 2026 | [Tao. tv. 19. §, njt.jog.gov.hu](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00) |
-| Arm's length range | Interquartile range of the comparables, where database or other public data is used | 2026 | [Tao. tv. 18. § (9), 4. § 31/e.](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00) |
+| Arm's length range | Interquartile range of the comparables, where database or other public data is used | 2026 | [Tao. tv. 18. § (9), 4. § 31e.](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00) |
 | Adjustment point when outside the range | Median, unless the taxpayer proves another point in the range fits better | 2026 | [Tao. tv. 18. § (11)-(12)](https://njt.jog.gov.hu/jogszabaly/1996-81-00-00) |
 | Local file exemption | Transaction value (aggregated where aggregable) at arm's length price, ex VAT, not above HUF 150,000,000 in the year | 2026 onward (HUF 100,000,000 under the old decree) | [45/2025 NGM rendelet 4. § (4) a), (5)](https://njt.jog.gov.hu/jogszabaly/2025-45-20-2X); [32/2017 NGM rendelet 1. § (2) e)](https://njt.jog.gov.hu/jogszabaly/2017-32-20-2X) |
 | Cost pass-through exemption | Unchanged recharge of a cost bought from an unrelated party, up to HUF 500,000,000 | 2026 | [45/2025, 4. § (4) c)](https://njt.jog.gov.hu/jogszabaly/2025-45-20-2X) |
@@ -72,7 +72,7 @@ Two cases are outside 18. § (1)-(2) and (4) altogether (18. § (3)):
 | APA fee (szokásos piaci ár megállapítása) | HUF 10,000,000 unilateral; HUF 14,000,000 bilateral or multilateral; extension or amendment 50%; pre-filing consultation HUF 1,000,000 each | 2026 | [Art. 175. §](https://njt.jog.gov.hu/jogszabaly/2017-150-00-00) |
 | Country-by-country report threshold | Group consolidated revenue of EUR 750,000,000 or more in the previous year | 2026 | [Aktv. 2013. évi XXXVII. 4. § 7.17](https://njt.jog.gov.hu/jogszabaly/2013-37-00-00) |
 | CbC default fine | Up to HUF 20,000,000 | 2026 | [Aktv. 43/S. §](https://njt.jog.gov.hu/jogszabaly/2013-37-00-00) |
-| MAP request fee | None (free of fees and duties) | 2026 | [NAV MAP guide](https://nav.gov.hu/ado/egyeb/map_tajekoztato) |
+| MAP request deadline | 3 years from notice of the first-instance decision causing the dispute, unless the treaty sets another period | 2026 | [Aktv. 42/A. §, 42/B. § (3)](https://njt.jog.gov.hu/jogszabaly/2013-37-00-00) |
 
 ## The taxable base
 
@@ -120,7 +120,7 @@ For each tax year with a related-party transaction performed, a company under th
 - **Simplified local file (egyszerűsített helyi dokumentum)** (7. §), allowed for:
   - low-value services at the 5% mark-up test;
   - interest-free transfers of funds;
-  - unchanged resales or recharges of something bought from an unrelated party, where the group company adds no real function or risk.
+  - unchanged resales or recharges, at the same price, of something bought from an unrelated party, where the group company adds no real function or risk and neither the company nor a related party sells it unchanged to outsiders (7. § (1) d)).
 
   A low-value service is one that:
   - no group company sells to outsiders;
@@ -150,7 +150,7 @@ The arm's length rule still applies to all of them.
 ## Deadlines and filing
 
 - **Related-party notification:** report to NAV the name, seat and tax number of each new related party within 15 days after the first contract with it, and the end of the relationship within 15 days (465/2017. (XII. 28.) Korm. rendelet 16. § (4) b)).
-- **Documentation:** ready by the corporate tax return deadline for the year (Tao. tv. 18. § (5)). That is 31 May 2027 for a calendar 2026 year (see hu-corporate-tax). It is not filed; NAV asks for it in an audit.
+- **Documentation:** ready by the time the corporate tax return is filed (Tao. tv. 18. § (5): "a bevallás benyújtásáig"). The return deadline is 31 May 2027 for a calendar 2026 year (see hu-corporate-tax), so a company that files early must have its records ready earlier. It is not filed; NAV asks for it in an audit.
 - **Transfer pricing data supply (transzferár-adatszolgáltatás):** made in the corporate tax return itself (Tao. tv. 18. § (5); 45/2025, 12. § and 13. §). For each transaction or aggregated transaction it covers:
   - one of 54 transaction types;
   - the exemption reason, if any, and whether transactions were aggregated;
@@ -163,7 +163,7 @@ The arm's length rule still applies to all of them.
   - for financing, the reference rate and margin.
 
   Transactions at or below HUF 150 million give no data at all (12. § (2)). Low-value services give a short data set (12. § (5)).
-- **Which sheets.** In the 2025 return the data went on sheets **2529-ATP-01** and **2529-ATP-KV**, under the old decree's 8/A. §. Line 57 of the main sheet declares whether the company must supply data, or why it is exempt ([NAV guide to form 2529](https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato), pages 242 to 251). The 2629 return for 2026 had not been published on 2026-10-23. Expect the same sheets, filled under 45/2025.
+- **Which sheets.** In the 2025 return the data went on sheets **2529-ATP-01** and **2529-ATP-KV**, under the old decree's 8/A. §. Line 57 of the main sheet declares whether the company must supply data, or why it is exempt ([NAV guide to form 2529](https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato), pages 242 to 251). The 2629 return for 2026 had not been published on 2026-10-23. The data content for 2026 is set by 45/2025, 12. § and 13. §; the sheet names and line numbers for 2026 are not confirmed.
 - **APA:** filed electronically with the Minister for tax policy, not NAV, before the transactions take place. A request for a deal already performed is rejected. The procedure takes 120 days, extendable twice by 90 days. Talks with a foreign authority have 2 years, extendable by 1 year, and that time does not count toward the 120 days. The decision covers 3 to 5 full tax years and can be extended once by 3 years if asked at least 6 months before it expires. There is no appeal. A bilateral APA can roll back to open years (Art. 174. § to 183. §). If the request is rejected or ended, 85% of the fee is refunded, except in the cases in 175. § (3a).
 - **CbC:**
   - Every Hungarian member of an in-scope group notifies NAV by the last day of the group's reporting year. The notice states whether the member files the report and, if not, who does (Aktv. 43/O. §).
@@ -172,16 +172,17 @@ The arm's length rule still applies to all of them.
 ## Penalties and interest
 
 - **Missing or deficient TP record (Art. 230. §).** A default fine of up to HUF 5,000,000 per record (or aggregated record) for failing to prepare or keep it. For a repeat breach, up to HUF 10,000,000 per record. If the same record is missed again, up to four times the first fine. The repeat rules lapse if more than two years pass between two failures. If the record is completed before the repeat-penalty decision is notified, the fine can be reduced or waived. The figures in some secondary sources (HUF 2 million and HUF 4 million) are out of date.
-- **Tax shortfall from an adjustment.** The extra corporate tax carries the general tax penalty (generally 50% of the shortfall) and late payment interest (central bank base rate plus 5 points). A self-revision before an audit replaces both with the self-revision surcharge. The figures and sources are in hu-corporate-tax.
+- **Tax shortfall from an adjustment.** The extra corporate tax carries the tax penalty of 50% of the shortfall (Art. 215. § (3)), or 200% where the shortfall is tied to hidden income or false or destroyed records (215. § (4)), plus late payment interest at the central bank base rate plus 5 points, per day (Art. 209. § (1)). A self-revision before an audit replaces both with the self-revision surcharge. The figures and sources are in hu-corporate-tax.
 - **CbC failures.** Up to HUF 20,000,000 (Aktv. 43/S. §).
 
 ## Cross-border points
 
 - **Mutual agreement procedure (MAP).**
-  - **Treaty partners:** request MAP under the relevant tax treaty and Aktv. chapter IV/A. The general deadline is 3 years from notice of the first-instance decision that causes the dispute, whether or not domestic appeals are used (Aktv. 42/B. § (3)). Some treaties set a shorter period (2 years with Canada, Indonesia, the Philippines and Portugal, per NAV).
-  - **EU disputes:** the Dispute Resolution Directive (2017/1852) route under Aktv. chapter III/A has the same 3-year limit (Aktv. 41/B. § (3)). The EU Arbitration Convention also remains available.
-  - **Fees and form:** MAP is free. For transfer pricing cases handled by NAV, use the TPMAP form, filed electronically by companies ([NAV MAP guide](https://nav.gov.hu/ado/egyeb/map_tajekoztato)).
-  - **Who can apply:** Hungarian rules accept a request even where a good-faith foreign self-revision caused the double taxation. For tax years starting on or after 1 January 2018, the request is not barred by the domestic limitation period.
+  - **Who decides:** the Hungarian competent authority for treaty MAP and for EU dispute resolution is the Minister for tax policy, not NAV (Aktv. 42/B. § (1), 41/B. § (1)). There is no appeal against its decision (42/B. § (1a)).
+  - **Treaty partners:** request MAP under the relevant tax treaty and Aktv. chapter IV/A. The general deadline is 3 years from notice of the first-instance decision that causes the dispute, whether or not domestic appeals are used (Aktv. 42/B. § (3)). A different period in the treaty takes precedence (42/A. §), so check the treaty.
+  - **EU disputes:** the Dispute Resolution Directive (2017/1852) route under Aktv. chapter III/A has the same 3-year limit (Aktv. 41/B. § (3)). The EU Arbitration Convention route remains available (Aktv. 42. §).
+  - **What to send:** a company under the TP documentation duty must send its TP records with the request (Aktv. 42/C. § (1) h)).
+  - **Limitation:** a request can be made after the domestic limitation period has run (Art. 205. § (1)). For tax years starting before 1 January 2018 the request had to reach the authorities within the limitation period, unless the treaty says otherwise (205. § (2)).
 - **Branches.** Dealings between a foreign company and its Hungarian PE are priced at arm's length (18. § (7)). If a treaty exempts the PE's result from Hungarian tax, the documentation duty falls away (18. § (8), (8a)). Hungarian PE profit rules are in hu-corporate-tax.
 - **Low-tax and CFC counterparties.** No downward adjustment is allowed toward a CFC (18. § (1) ab)). The CFC rule and the deduction limits on payments to CFCs are in hu-corporate-tax.
 - **Exit and restructuring.** Moving functions, assets or a business out of Hungary can trigger exit tax (Tao. tv. 16/A. §, see hu-corporate-tax). It is also its own transaction type in the TP data supply (45/2025, 13. § (2) 50.).
@@ -244,8 +245,8 @@ expected:
 Mecsek Zrt has 120 staff, so it is not a small enterprise and has the documentation duty. In both 2025 and 2026 it buys components from a German sister company for HUF 120,000,000 a year. In 2026 it also provides back-office services (payroll, bookkeeping) to group companies. These services meet the low-value definition. Its cost for them is HUF 180,000,000, charged at cost plus 5%.
 
 1. Components, 2026: HUF 120,000,000 is HUF 30,000,000 below the HUF 150,000,000 threshold. No local file is needed (45/2025, 4. § (4) a)) and no data goes on the ATP sheets (12. § (2)). The price must still be arm's length, and NAV can still adjust it.
-2. Components, 2025: the old threshold was HUF 100,000,000 (32/2017, 1. § (2) e)). HUF 120,000,000 is HUF 20,000,000 above it, so a local file was due with the 2025 return by 31 May 2026. The exception is if Mecsek opted to apply 45/2025 to its 2025 local files (15. § (2)).
-3. Services, 2026: fee 180,000,000 x 1.05 = HUF 189,000,000. That is HUF 39,000,000 above HUF 150,000,000, so a local file is needed. The services are a different transaction type from the purchase, so the two are never added together (8. § (3)).
+2. Components, 2025: the old threshold was HUF 100,000,000 (32/2017, 1. § (2) e)). HUF 120,000,000 is HUF 20,000,000 above it, so under the old decree a local file was due by the time the 2025 return was filed (31 May 2026 at the latest). Whether opting into 45/2025 for that local file (15. § (2)) also brings in the HUF 150 million exemption is not settled (see Not yet confirmed), so prepare the file.
+3. Services, 2026: fee 180,000,000 x 1.05 = HUF 189,000,000. That is HUF 39,000,000 above HUF 150,000,000, so a local file is needed. The two cannot be aggregated: Mecsek is the customer in one and the supplier in the other (8. § (2)), and services are never aggregated with other transaction categories (8. § (3)).
 4. Mecsek, as provider, actually earns exactly 5%, which meets the "at least 5%" test in 7. § (1) a). It may prepare the simplified local file and gives only the short data set (12. § (5)). At 4.9% it would need a full local file.
 5. Master file: the transactions needing a local file total HUF 189,000,000, HUF 311,000,000 below the HUF 500,000,000 trigger, so none is due.
 
@@ -290,18 +291,18 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tao. tv. (Act LXXXI of 1996), 4. § 23., 24., 31/e., 18. §, 19. §; Nemzeti Jogszabálytár, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 | 2026-10-23 |
+| Tao. tv. (Act LXXXI of 1996), 4. § 23., 24., 31e., 18. §, 19. §; Nemzeti Jogszabálytár, version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/1996-81-00-00 | 2026-10-23 |
 | 45/2025. (XII. 23.) NGM rendelet on transfer pricing records and data supply | https://njt.jog.gov.hu/jogszabaly/2025-45-20-2X | 2026-10-23 |
 | 32/2017. (X. 18.) NGM rendelet (repealed January 2026; applies to 2025 records) | https://njt.jog.gov.hu/jogszabaly/2017-32-20-2X | 2026-10-23 |
-| Art. (Act CL of 2017), 174. § to 183. § (APA) and 230. § (fines); version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
-| Aktv. (Act XXXVII of 2013), 4. § 7.17, 41/B. §, 42/B. §, 43/N. § to 43/S. § | https://njt.jog.gov.hu/jogszabaly/2013-37-00-00 | 2026-10-23 |
+| Art. (Act CL of 2017), 174. § to 183. § (APA), 205. § (MAP and limitation), 209. § (late interest), 215. § (tax penalty) and 230. § (fines); version in force from 2026-10-01 | https://njt.jog.gov.hu/jogszabaly/2017-150-00-00 | 2026-10-23 |
+| Aktv. (Act XXXVII of 2013), 4. § 7.17, 41/B. §, 42. §, 42/A. § to 42/C. §, 43/N. § to 43/S. § | https://njt.jog.gov.hu/jogszabaly/2013-37-00-00 | 2026-10-23 |
 | Htv. (Act C of 1990), 39. § (1), (11), (12) | https://njt.jog.gov.hu/jogszabaly/1990-100-00-00 | 2026-10-23 |
 | Kkv. tv. (Act XXXIV of 2004), 3. § and 5. § | https://njt.jog.gov.hu/jogszabaly/2004-34-00-00 | 2026-10-23 |
 | 465/2017. (XII. 28.) Korm. rendelet, 16. § (4) b) | https://njt.jog.gov.hu/jogszabaly/2017-465-20-22 | 2026-10-23 |
 | Ptk. (Act V of 2013), 8:2. § (net.jogtar.hu, commercial reprint; the official page loaded without Book Eight) | https://net.jogtar.hu/jogszabaly?docid=a1300005.tv | 2026-10-23 |
 | NAV information sheet 41: key rules of corporate tax, section 5.13 (2 February 2026) | https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026/41.-A-tarsasagi-ado-legfontosabb-szabalyai-2026.02.02 | 2026-10-23 |
 | NAV guide to the 2529 return (tax year 2025), ATP sheets and line 57 | https://nav.gov.hu/pfile/file?path=/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/2529/2529-kitoltesi-utmutato | 2026-10-23 |
-| NAV: information on mutual agreement procedures | https://nav.gov.hu/ado/egyeb/map_tajekoztato | 2026-10-23 |
+| NAV: information on mutual agreement procedures (dated 21 September 2020; NAV marks it archived and out of force since 29 December 2024; not relied on) | https://nav.gov.hu/ado/egyeb/map_tajekoztato | 2026-10-23 |
 | Nemzeti Jogszabálytár short address (official) | https://njt.hu/jogszabaly/1996-81-00-00 | 2026-10-23: connection refused; the same database answered at njt.jog.gov.hu |
 
-Not yet confirmed: the layout of the 2629 return's transfer pricing sheets for tax year 2026 (not yet published by NAV); whether a 2025 taxpayer opting into 45/2025 under its 15. § (2) can also use the HUF 150 million local file exemption for 2025, or only the new content rules; the exact day 45/2025 entered into force (the Nemzeti Jogszabálytár shows a time state from 24 January 2026 and the repeal of 32/2017 with effect from 23 January 2026); the Ptk. 8:2. § text on the official site (read in the net.jogtar.hu reprint only); NAV's audit practice on choosing a point other than the median.
+Not yet confirmed: the layout of the 2629 return's transfer pricing sheets for tax year 2026 (not yet published by NAV); whether a 2025 taxpayer opting into 45/2025 under its 15. § (2) can also use the HUF 150 million local file exemption for 2025, or only the new content rules; the Ptk. 8:2. § text on the official site (read in the net.jogtar.hu reprint only); NAV's audit practice on choosing a point other than the median; MAP filing details now that the Minister is the competent authority (whether NAV's TPMAP form is still used, whether the request is free of fees, and which treaties set a 2-year deadline: NAV's archived 2020 guide named Canada, Indonesia, the Philippines and Portugal); whether a request is accepted where a good-faith foreign self-revision caused the double taxation (stated only in the archived NAV guide).
