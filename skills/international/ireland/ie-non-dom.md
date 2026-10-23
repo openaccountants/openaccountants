@@ -1,21 +1,24 @@
 ---
 name: ie-non-dom
-description: "Use this skill for any question about Ireland's non-dom tax rules. Trigger on: \"Ireland non-dom\", \"Irish non-domiciled\", \"remittance basis Ireland\", \"move to Ireland tax\", \"Irish tax foreign income\", \"Ireland domicile tax\", \"not domiciled Ireland\", \"Irish resident non-dom\", \"Ireland foreign dividends tax\", \"Irish non-dom CGT\". Covers non-dom eligibility, remittance basis, Irish-source income treatment, CGT for non-doms, and comparison with UK non-dom."
-version: 1.0
+description: "Use this skill for any question about Ireland's non-dom tax rules. Trigger on: \"Ireland non-dom\", \"Irish non-domiciled\", \"remittance basis Ireland\", \"move to Ireland tax\", \"Irish tax foreign income\", \"Ireland domicile tax\", \"not domiciled Ireland\", \"Irish resident non-dom\", \"Ireland foreign dividends tax\", \"Irish non-dom CGT\". Covers residence and ordinary residence, non-dom eligibility, the remittance basis for foreign income and foreign gains, Irish-source income treatment, CGT for non-doms (33% for disposals up to 6 October 2026, 31% from 7 October 2026, provisional until the Finance (No. 2) Act 2026 is in force), and the domicile levy for Irish domiciled individuals. Tax year 2026. It does not compare Ireland with the UK regime."
+version: 1.1
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+verified_by: pending
 ---
 
 # Ireland: tax for people who are not domiciled in Ireland
 
 This skill covers how Ireland taxes an individual who is resident or ordinarily resident in Ireland but not domiciled here. It sets out the residence and ordinary residence tests, the remittance basis for foreign income and foreign gains, what the remittance basis does not cover, and the domicile levy (which applies only to people who ARE Irish domiciled). Figures are for tax year 2026. The Irish tax year is the calendar year, 1 January to 31 December.
+
+Built by Michael Cutajar and the OpenAccountants team. Source-cited draft: not reviewed by an accountant.
 
 ## Quick reference
 
@@ -113,7 +116,9 @@ Rules an assistant gets wrong:
 | Item | Value | Note (verbatim, revenue.ie) |
 | --- | --- | --- |
 | Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx |
-| CGT rate, most gains | 33% | "The rate of CGT is" this rate "for most gains." |
+| CGT rate, most gains, disposals on or after 7 October 2026 (provisional) | 31% | "The rate of CGT is 31% for most gains." "Rates for most gains changed on 7 October 2026 to 31%." |
+| CGT rate, most gains, disposals up to 6 October 2026 | 33% | "6 October 2026 33%" (historic rates table) |
+| CGT rate, development land (unchanged) | 33% | "33% for gains from development land." |
 
 | Item | Value | Note (verbatim, revenue.ie) |
 | --- | --- | --- |
@@ -127,7 +132,9 @@ Rules an assistant gets wrong:
 | Lifetime limit, gains on or after 1 January 2026 | EUR 1,500,000 | "For gains arising on or after 1 January 2026, the lifetime limit increases" |
 | Lifetime limit, gains 1 January 2016 to 31 December 2025 | EUR 1,000,000 | "of gains arising between 1 January 2016 and 31 December 2025" |
 
-Entrepreneur Relief has ownership and working-time conditions. Use `ie-cgt` for the full CGT computation, reliefs and pay and file dates.
+The 31% rate comes from Financial Resolution No. 3 of 6 October 2026, which amends section 28(3) of the Taxes Consolidation Act 1997 for disposals on or after 7 October 2026 ([Dáil record, 6 October 2026](https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml)). It has effect under the Provisional Collection of Taxes Act 1927 and lapses if the Finance (No. 2) Act 2026 is not in force by 7 February 2027, or earlier if the Bill fails. If it lapses, those disposals go back to 33%. Remitted foreign gains need care. Section 29(4)(b) treats the amounts received in Ireland "as gains accruing when they are received in the State" ([section 29 as enacted](https://www.irishstatutebook.ie/eli/1997/act/39/section/29/enacted/en/html)), while the resolution applies 31% to "disposals of assets made on or after 7 October 2026". Where a foreign asset was sold before 7 October 2026 and the gain is brought into Ireland on or after that date, this skill does not settle which rate applies. Refer that case.
+
+Entrepreneur Relief has ownership and working-time conditions. Use [ie-cgt](ie-cgt.md) for the full CGT computation, the provisional status of the 31% rate, reliefs and pay and file dates.
 
 ## The domicile levy (Irish domiciled individuals only)
 
@@ -155,7 +162,7 @@ Entrepreneur Relief has ownership and working-time conditions. Use `ie-cgt` for 
 4. Establish domicile from the facts (domicile of origin, any domicile of choice, evidence of intention). The individual must satisfy Revenue that he or she is not domiciled in Ireland. An Irish citizen is not excluded by citizenship alone, but non-ordinary residence no longer gives the remittance basis (from 2010). Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-34/34-00-01.pdf
 5. Sort each income source. Irish source income: taxed in full. Employment income for duties performed in Ireland: Schedule E and PAYE, taxed in full even if the employer is foreign. Case IV income: taxed in full. Foreign income under Case III (foreign investment income, foreign rents, the part of a foreign employment performed outside Ireland): remittance basis. Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf
 6. Trace the money brought into Ireland in the tax year. Treat mixed accounts as income first. Apply the 1 January pre-residence practice to income earned before the year of residence. Check section 72 loans and transfers to a spouse or civil partner. Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-05/05-01-21a.pdf
-7. Sort each gain. Asset situated in Ireland: arising basis, CGT at the rate in the table above. Asset situated outside the State: tax only the gain remitted. Crypto-asset with no provable location: arising basis. Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf
+7. Sort each gain. Asset situated in Ireland: arising basis, CGT at the rate for the disposal date in the table above (33% up to 6 October 2026, 31% from 7 October 2026, development land 33%). Asset situated outside the State: tax only the gain remitted. Crypto-asset with no provable location: arising basis. Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-02/02-01-03.pdf
 8. If the individual IS Irish domiciled, test the four domicile levy conditions together and, if all are met, file Form DL1 and pay by the date above, after crediting Irish income tax already paid. Source: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-18c/18c-00-01.pdf
 9. If the individual has left Ireland but is still ordinarily resident, apply the three exceptions and the EUR 3,810 cliff for other foreign income, then check any double taxation agreement. Source: https://www.revenue.ie/en/jobs-and-pensions/tax-residence/ordinarily-resident-tax-purposes.aspx
 
@@ -190,6 +197,13 @@ Entrepreneur Relief has ownership and working-time conditions. Use `ie-cgt` for 
 - Revenue, How to calculate CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
 - Revenue, What is exempt from CGT: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx
 - Revenue, Revised Entrepreneur Relief: https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt-reliefs/revised-entrepreneur-relief.aspx
+- Dáil Éireann debate, 6 October 2026, Financial Resolution No. 3 (Capital Gains Tax), read 23 October 2026: https://data.oireachtas.ie/akn/ie/debateRecord/dail/2026-10-06/debate/mul@/main.xml
+- Taxes Consolidation Act 1997, section 29 as enacted, read 23 October 2026: https://www.irishstatutebook.ie/eli/1997/act/39/section/29/enacted/en/html
+- Provisional Collection of Taxes Act 1927, section 4, read 23 October 2026: https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html
+
+Revenue's How to calculate CGT page was read again on 23 October 2026 for the 31% and 33% rates.
+
+Not yet confirmed: whether the Finance (No. 2) Act 2026 is enacted with the 31% rate unchanged; which rate applies to a foreign gain on a disposal before 7 October 2026 that is remitted on or after that date (section 29(4)(b) dates the gain to the remittance; the resolution keys the rate to the disposal date; no Revenue guidance found).
 
 > **Working paper only.** Irish domicile determination is fact-specific and can have significant gift and inheritance tax implications in addition to income tax. Engage a qualified Irish tax adviser.
 
