@@ -44,7 +44,7 @@ This skill covers the flat 19% taxes on an individual's savings, investments, cr
 | Housing relief: time to spend the sale proceeds on own housing | the year of sale and the next three years | 2026 | same, art. 21 ust. 1 pkt 131 |
 | Loss carry-forward, securities and shares | 5 years; at most 50% of the loss a year, or one deduction up to PLN 5,000,000 | 2026 | same, art. 9 ust. 3, 6 |
 | Solidarity levy (danina solidarnościowa) | 4% of income above PLN 1,000,000, art. 30b income included | 2026 | same, art. 30h ust. 1-2 |
-| Late payment interest | 10.50% a year; reduced 5.25% | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf |
+| Late payment interest | 10.50% a year from 5 March 2026; reduced 5.25% | 2026 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf; Tax Ordinance art. 56 § 1 |
 
 ## The taxable base
 
@@ -70,11 +70,11 @@ This skill covers the flat 19% taxes on an individual's savings, investments, cr
 | Solidarity levy (DSF-1) and payment | 30 April 2027 | art. 30h ust. 4 |
 | Withholding on Polish interest and dividends | at payment, by the payer | art. 41 ust. 4 |
 
-Returns are filed through e-Urząd Skarbowy (Twój e-PIT). Spouses cannot file PIT-38 or PIT-39 jointly; each files their own share.
+Returns are filed through e-Urząd Skarbowy (Twój e-PIT). Spouses cannot file PIT-38 or PIT-39 jointly; each files their own share (art. 6 ust. 1; joint filing in art. 6 ust. 2 covers scale income only, and art. 30b ust. 5 and art. 30e ust. 5 keep this income separate).
 
 ## Penalties and interest
 
-- **Late payment interest.** 10.50% a year (M.P. 2026 poz. 269; Tax Ordinance art. 56). Reduced to 5.25% if a correction is filed within 6 months of the deadline and the tax paid within 7 days (art. 56a).
+- **Late payment interest.** 10.50% a year from 5 March 2026, when the NBP lombard rate fell to 4.25% (M.P. 2026 poz. 269; Tax Ordinance art. 56 § 1). Reduced to 5.25% if a correction is filed within 6 months of the deadline and the tax paid within 7 days (art. 56a).
 - **Housing relief not used.** Tax on the part that was claimed exempt, plus interest from the day after the original payment deadline (art. 30e ust. 7).
 - **Fiscal Penal Code.** Not filing a PIT-38 or PIT-39, or filing a false one, is a fiscal offence or petty offence depending on the amount (Fiscal Penal Code art. 54, 56). A valid correction (art. 16a) or voluntary disclosure (art. 16) made before the authority acts removes liability.
 
@@ -90,9 +90,9 @@ Returns are filed through e-Urząd Skarbowy (Twój e-PIT). Spouses cannot file P
 
 ### Example 1: shares, a carried loss and a US dividend
 
-Piotr, a Polish resident, sold shares in 2026 for PLN 120,000. They cost PLN 90,000 including fees. He has a PLN 10,000 loss on shares from 2024, of which he may use 50%, PLN 5,000, this year. He also received a US dividend of PLN 2,000 gross through a foreign broker; the US withheld 15%, PLN 300.
+Piotr, a Polish resident, sold shares in 2026 for PLN 120,000. They cost PLN 90,000 including fees. He has a PLN 10,000 loss on shares from 2024 that he has not used yet. As the loss is under PLN 5,000,000 he deducts all of it in one go (art. 9 ust. 3 pkt 2). He also received a US dividend of PLN 2,000 gross through a foreign broker; the US withheld 15%, PLN 300.
 
-Income on shares: 120,000 - 90,000 - 5,000 = PLN 25,000. Tax at 19%: PLN 4,750. On the dividend, Polish tax is 19% of 2,000 = PLN 380, less the US tax of PLN 300: PLN 80 more. Piotr pays PLN 4,830 with his PIT-38 by 30 April 2027.
+Income on shares: 120,000 - 90,000 - 10,000 = PLN 20,000. Tax at 19%: PLN 3,800. On the dividend, Polish tax is 19% of 2,000 = PLN 380, less the US tax of PLN 300: PLN 80 more. Piotr pays PLN 3,880 with his PIT-38 by 30 April 2027.
 
 ```oa-check
 name: Piotr, PIT-38 2026, shares with carried loss and US dividend
@@ -104,17 +104,17 @@ inputs:
   us_tax: 300
 steps:
   - income: revenue - costs
-  - loss_used: min(loss_2024 * 0.5, income)
+  - loss_used: min(loss_2024, 5000000, income)
   - base: round(income - loss_used, 0)
   - tax_shares: round(base * 0.19, 0)
   - pl_div_tax: dividend * 0.19
   - div_extra: pl_div_tax - min(us_tax, pl_div_tax)
   - total: tax_shares + div_extra
 expected:
-  base: 25000
-  tax_shares: 4750
+  base: 20000
+  tax_shares: 3800
   div_extra: 80
-  total: 4830
+  total: 3880
 ```
 
 ### Example 2: crypto with carried costs, and a flat sold within five years
@@ -166,6 +166,8 @@ expected:
 | Tax Ordinance, Dz.U. 2026 poz. 622 (art. 56, 56a, 63) | https://api.sejm.gov.pl/eli/acts/DU/2026/622/text.pdf | 2026-10-23 |
 | Minister of Finance notice on late payment interest, M.P. 2026 poz. 269 | https://api.sejm.gov.pl/eli/acts/MP/2026/269/text.pdf | 2026-10-23 |
 | Fiscal Penal Code, Dz.U. 2025 poz. 633 (art. 16, 16a, 54, 56) | https://api.sejm.gov.pl/eli/acts/DU/2025/633/text.pdf | 2026-10-23 |
+| NBP base rates archive (lombard rate 4.25% from 5 March 2026) | https://static.nbp.pl/dane/stopy/stopy_procentowe_archiwum.xml | 2026-10-23 |
+| PIT Act amendments after poz. 592: Dz.U. 2026 poz. 779, 846, 1079 (none touches art. 9, 21 ust. 1 pkt 131, 22 ust. 14-16, 30a, 30b, 30e or 45) | https://api.sejm.gov.pl/eli/acts/DU/2026/592/references | 2026-10-23 |
 | Ministry of Finance, PIT forms (PIT-38, PIT-39) | https://www.podatki.gov.pl/podatki-osobiste/pit/formularze-pit | 2026-10-23 |
 
-Not yet confirmed: later amendments to the PIT Act after Dz.U. 2026 poz. 592 were not re-read for art. 30a, 30b and 30e in this version (pl-income-tax lists them as not changing its articles). The statement that spouses cannot file PIT-38 or PIT-39 jointly follows from art. 6 ust. 2 covering scale income only and was not checked against a Ministry page. Treaty treatment of gains is described in general terms; check the specific treaty.
+Not yet confirmed: treaty treatment of gains is described in general terms; check the specific treaty.

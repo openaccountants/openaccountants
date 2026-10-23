@@ -2,6 +2,8 @@
 jurisdiction: PL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  VAT: "poland-einvoice (KSeF invoice format) is still on tax year 2025 and says foreign businesses registered for Polish VAT must issue KSeF invoices from 1 April 2026, which VAT Act art. 106ga ust. 2 pkt 1 excludes; it also leaves out the PLN 10,000 a month carve-out of art. 145m"
 covered_by:
   XB: pl-cross-border
 ---
