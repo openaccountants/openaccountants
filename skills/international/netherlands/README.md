@@ -2,8 +2,7 @@
 jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-partial:
-  XB: "no treaty relief method (Besluit voorkoming dubbele belasting 2001, treaty dividend rates), and the M-return and non-resident return deadlines are not confirmed"
+partial: {}
 ---
 
 # Netherlands: tax pack
@@ -20,7 +19,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 | SC, social contributions | nl-social-contributions | source-cited draft |
 | PR, payroll withholding | nl-payroll-tax, netherlands-payroll, nl-company-car | source-cited draft |
 | TP, transfer pricing | netherlands-transfer-pricing | source-cited draft |
-| XB, cross-border | nl-cross-border (hub), netherlands-30-percent-ruling, nl-30-percent-ruling | source-cited draft |
+| XB, cross-border | nl-cross-border (hub), nl-double-tax-relief, netherlands-30-percent-ruling, nl-30-percent-ruling | source-cited draft |
 
 ## Official sources
 
