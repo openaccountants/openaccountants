@@ -124,7 +124,7 @@ There is no reduced small-company rate and no separate minimum tax outside Pilla
 
 **Exit tax (SEL § 5, stk. 7; §§ 26-27).** When a company stops being tax resident in Denmark, or becomes resident elsewhere under a treaty, its assets and liabilities that leave Danish taxation are treated as sold at market value on the date of the move. An internal transfer of assets from Denmark to a foreign head office or branch, after which they leave Danish taxation, is treated as a sale at market value to a group company (SEL § 8, stk. 4, 3. pkt.). For moves to the EU or EEA (with recovery assistance), the company can choose a deferral (henstand), paid in five equal yearly instalments, with interest of 1 percentage point over the Nationalbank discount rate, at least 3% a year (§ 27, stk. 2 and 7). The election is made in the timely return for the year of the move (§ 26, stk. 2). Any balance still deferred falls due if the assets are sold or moved outside the EU/EEA.
 
-**Transfer pricing.** Transactions with related parties must be at arm's length, with documentation under Skattekontrolloven §§ 38-39. See dk-transfer-pricing.
+**Transfer pricing.** Transactions with related parties must be at arm's length, with reporting and documentation under Skattekontrolloven §§ 37-40. See dk-transfer-pricing.
 
 ## Worked examples
 
