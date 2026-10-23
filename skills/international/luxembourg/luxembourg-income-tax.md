@@ -3,8 +3,8 @@ name: luxembourg-income-tax
 description: Use this skill whenever asked about Luxembourg personal income tax for self-employed individuals (indépendants) and individuals. Trigger on phrases like "how much tax do I pay in Luxembourg", "déclaration d'impôt", "Form 100", "modèle 100", "tax class", "classe d'impôt", "barème", "revenu imposable", "solidarity surcharge", "employment fund", "fonds pour l'emploi", "CCSS contributions", "cotisations sociales", "self-employed tax Luxembourg", "indépendant", "advance tax payments", "avances trimestrielles", "salaire social minimum", or any question about filing or computing Luxembourg income tax for a self-employed or individual client. Also trigger when preparing or reviewing a Form 100 / Form 163 return, computing deductible business expenses, estimating social contributions, or advising on quarterly advance payments. This skill covers the 23-band progressive PIT scale (0%–42%), the employment-fund (solidarity) surcharge, tax classes 1/1a/2, CCSS social contributions (employee, employer, self-employed), Form 100 structure, advance payments, penalties, and interaction with VAT and the social-security ceiling. ALWAYS read this skill before touching any Luxembourg income tax work.
 version: 0.1
 jurisdiction: LU
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -27,19 +27,19 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Currency | EUR only |
 | Tax year | Calendar year (1 January -- 31 December) [Guichet.lu] |
 | Primary legislation | Loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu (LIR / Income Tax Law) |
-| Supporting legislation | Code de la sécurité sociale (social contributions); Loi du 12 juillet 2024 + budget/index-adjustment laws applying the 2.5 index-bracket adjustment to the 2025 PIT scale |
+| Supporting legislation | Code de la sécurité sociale (social contributions); LIR art. 118 as amended by the law of 20 December 2024 (scale applicable from tax year 2025, unchanged in the LIR text in force on 1 January 2026) |
 | Direct-tax authority | Administration des contributions directes (ACD) |
 | Social-security authority | Centre commun de la sécurité sociale (CCSS); health fund Caisse nationale de santé (CNS); pension fund Caisse nationale d'assurance pension (CNAP) |
 | Filing portal | MyGuichet.lu (guichet.public.lu) |
 | Annual return | Form 100 (modèle 100) -- déclaration pour l'impôt sur le revenu des personnes physiques [Guichet.lu] |
-| Filing deadline | 31 December of the year following the income year; income year 2025 due 31 December 2026, filing window opens 7 April 2026 [Guichet.lu] |
+| Filing deadline | 31 December of the year following the income year; income year 2026 due 31 December 2027 [ACD, délais de dépôt](https://impotsdirects.public.lu/fr/az/d/delais/depot.html) |
 | Verified by | Pending -- requires sign-off by a Luxembourg-qualified tax adviser / expert-comptable |
 | Verification date | Pending |
 | Skill version | 0.1 |
 
-### Tax Rate Brackets -- 2025 Progressive Scale (barème), Tax Class 1
+### Tax Rate Brackets -- Progressive Scale (barème) for tax years 2025 and 2026, Tax Class 1
 
-**2025 Progressive Scale Tax Class 1**  _([PwC])_
+**Progressive Scale Tax Class 1 (LIR art. 118; taxable income rounded down to a multiple of EUR 50 first, art. 126(2))**  _([LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf))_
 
 | Taxable Income (EUR) | Marginal Rate | Cumulative Tax at Top of Band (EUR) |
 | --- | --- | --- |
@@ -67,28 +67,28 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | 176,160 -- 234,870 | 41% | 81,125.10 |
 | 234,870+ | 42% | -- |
 
-- **Tax-free threshold** — The first EUR 13,230 of taxable income (class 1) is taxed at 0% -- this is Luxembourg's tax-free threshold after the 2.5 index-bracket inflation adjustment for 2025. There is no separate flat personal allowance; the 0% band IS the allowance.  _([PwC])_
+- **Tax-free threshold** — The first EUR 13,230 of taxable income (class 1) is taxed at 0%. There is no separate flat personal allowance; the 0% band IS the allowance.  _(LIR art. 118)_
 
 ### Employment-Fund (Solidarity) Surcharge
 
-**Employment-Fund Surcharge table**  _([PwC])_
+**Employment-Fund Surcharge table**  _([ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html))_
 
-| Taxable Income | Surcharge on PIT (classes 1 and 1a) | Surcharge on PIT (class 2) |
+| Adjusted taxable income | Surcharge on PIT (classes 1 and 1a) | Surcharge on PIT (class 2) |
 | --- | --- | --- |
 | Up to threshold | 7% | 7% |
 | Above EUR 150,000 (class 1/1a) / EUR 300,000 (class 2) | 9% | 9% |
 
-- **Surcharge application** — Applied on top of the PIT computed from the scale above.  _([PwC])_
+- **Surcharge application** — Applied on top of the PIT computed from the scale above. The rate is 7%, or 9% where adjusted taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2), since tax year 2013.  _([ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html))_
 
 ### Tax Classes
 
-**Tax Classes table**  _([PwC])_
+**Tax Classes table**  _(LIR arts. 119 to 121)_
 
 | Class | Who | Treatment |
 | --- | --- | --- |
 | Class 1 | Single / individually taxed, no dependent child | Full progressive scale, no splitting -- least favourable |
-| Class 1a | Single with dependent child, widowed, or aged 65+ | More favourable scale |
-| Class 2 | Married / partnered opting for joint taxation | Income-splitting -- most favourable |
+| Class 1a | Single with a child giving a child tax reduction, widowed, or aged 64 or over at the start of the tax year (art. 119 no. 2) | More favourable scale |
+| Class 2 | Spouses taxed jointly (art. 3), partners taxed jointly (art. 3bis), and people widowed, divorced or separated in the three preceding years (art. 119 no. 3) | Tax = twice the tax on half the income (art. 121) -- most favourable |
 
 ### Conservative Defaults
 
@@ -98,7 +98,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Unknown tax class | Class 1 (single, no children) -- highest, most conservative outcome (see Section 1A) |
 | Solidarity surcharge rate | 7% on PIT (9% only if taxable income > EUR 150,000 class 1/1a or > EUR 300,000 class 2) |
-| Social-contribution ceiling | Use May 2025 ceiling EUR 13,518.68/month for full-year estimates; note Jan–Apr 2025 was EUR 13,188.96 |
+| Social-contribution ceiling | EUR 13,518.68/month from 1 January 2026 and EUR 13,856.63/month from 1 June 2026 (CCSS); use the figure for the month |
 | Employer MDE class / accident coefficient | MDE class II–III and accident coefficient 1.0 (0.75%) where firm-specific data unknown |
 | Unknown business-use % (vehicle, phone, home) | 0% deduction |
 | Unknown expense category | Not deductible |
@@ -106,7 +106,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Section 1A -- Why default to Class 1
 
-Classes 1a and 2 give more favourable treatment via splitting and abatements. Defaulting to class 1 avoids overstating reliefs and gives the highest (most conservative) tax estimate for a single individual. Never silently assume class 2 or 1a -- it materially understates tax. [PwC]
+Classes 1a and 2 give more favourable treatment via splitting and abatements. Defaulting to class 1 avoids overstating reliefs and gives the highest (most conservative) tax estimate for a single individual. Never silently assume class 2 or 1a -- it materially understates tax.
 
 ### Required Inputs
 
@@ -122,10 +122,10 @@ Classes 1a and 2 give more favourable treatment via splitting and abatements. De
 
 - **R-LU-1 -- Tax class unknown** — Tax class (classe d'impôt 1, 1a, or 2) determines how the progressive scale and the solidarity-surcharge threshold are applied. This skill defaults to class 1 (most conservative) but flags the result. Confirm class before relying on the figure.
 - **R-LU-2 -- Companies, partnerships, holding structures** — This skill covers individuals and sole-trader/liberal-profession indépendants only. Sociétés (SARL, SA), SOPARFI holdings, and partnerships file separate returns (corporate income tax / municipal business tax / net wealth tax). Escalate to a Luxembourg tax adviser.
-- **R-LU-3 -- Non-resident / cross-border (frontalier) taxation** — Non-resident and cross-border (French/German/Belgian frontalier) taxation, treaty relief, and the 90% rule for assimilation to resident treatment have specific rules. Out of scope. Escalate to a Luxembourg tax adviser.
+- **R-LU-3 -- Non-resident / cross-border (frontalier) taxation** — Non-resident and cross-border (French/German/Belgian frontalier) taxation, the 34-day treaty thresholds and the 90% rule for assimilation to resident treatment are out of scope here. Use `lu-cross-border`.
 - **R-LU-4 -- Capital gains / property disposals** — Capital gains (plus-values) on real estate or substantial shareholdings have separate rules and rates. Escalate to a Luxembourg tax adviser.
-- **R-LU-5 -- Impatriate / expat regimes** — The impatriate regime, the participative premium (prime participative), and stock-option/profit-sharing schemes have specific conditions. Escalate to a Luxembourg tax adviser.
-- **R-LU-6 -- Arrears / enforcement** — Client has outstanding tax arrears or is subject to ACD enforcement. Late-payment interest runs at 0.6% per month and a late-filing surcharge of up to 10% plus a fine up to EUR 25,000 may apply. Do not advise -- escalate immediately.  _([taxx.lu])_
+- **R-LU-5 -- Impatriate / expat regimes** — The impatriate regime (art. 115 no. 13b) is covered by `lu-cross-border`. The participative premium (prime participative) and stock-option/profit-sharing schemes have specific conditions and are out of scope. Escalate to a Luxembourg tax adviser.
+- **R-LU-6 -- Arrears / enforcement** — Client has outstanding tax arrears or is subject to ACD enforcement. Late-payment interest runs at 0.6% per month and a late-filing surcharge of up to 10% can be set. Do not advise -- escalate immediately.  _([ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html))_
 - **R-LU-7 -- VAT return requested** — This skill covers personal income tax (Form 100 / Form 163) only. For Luxembourg VAT, use the dedicated VAT skill. Standard VAT rate 17%, intermediate 14%, reduced 8%, super-reduced 3%; registration compulsory above EUR 50,000 turnover.  _([Expatica])_
 
 ## Section 3 -- Transaction Pattern Library
@@ -290,7 +290,7 @@ Client entertainment (frais de représentation). Representation costs are restri
 `10/01/2025 ; BCEE DOMICILIATION ; CCSS COTISATIONS ; INDÉPENDANT T4 2024 ; -2,909.34 ; EUR`
 
 **Reasoning:**
-CCSS social contribution for a self-employed person. Social contributions are deductible -- but as a **special expense (dépense spéciale)**, not as an operating expense in the income-and-expenditure account. They reduce taxable income at the return level. [PwC; Guichet.lu]
+CCSS social contribution for a self-employed person. Social contributions are deductible -- but as a **special expense (dépense spéciale)**, not as an operating expense in the income-and-expenditure account. They reduce taxable income at the return level. Art. 110 no. 2 allows a self-employed person's compulsory health, accident and pension contributions; the dependency-insurance contribution is not on that list, so take it out of the deduction. (LIR art. 110)
 
 **Classification:** Social-contribution deduction = EUR 2,909.34. Do NOT include in operating expenses.
 
@@ -319,7 +319,7 @@ Transfer between the client's own accounts. Neither income nor expense. Exclude 
 **Scenario:** Single freelancer, class 1, taxable income (after social-contribution and operating-expense deductions) = EUR 45,000.
 
 **Reasoning:**
-Apply the 2025 class-1 scale. From Section 1, the cumulative tax at the top of the EUR 44,910 band is EUR 5,646.60. The remaining EUR 90.00 (45,000 − 44,910) falls in the 32% band: 90 × 32% = EUR 28.80. PIT = EUR 5,646.60 + EUR 28.80 = **EUR 5,675.40**. Solidarity surcharge at 7% (income below EUR 150,000) = EUR 5,675.40 × 7% = EUR 397.28. **Total = EUR 6,072.68.** [PwC]
+Apply the class-1 scale (art. 118, the same for 2025 and 2026). From Section 1, the cumulative tax at the top of the EUR 44,910 band is EUR 5,646.60. The remaining EUR 90.00 (45,000 − 44,910) falls in the 32% band: 90 × 32% = EUR 28.80. PIT = EUR 5,646.60 + EUR 28.80 = **EUR 5,675.40**. Solidarity surcharge at 7% (income below EUR 150,000) = EUR 5,675.40 × 7% = EUR 397.28. **Total = EUR 6,072.68.** (LIR art. 118; ACD, Fonds pour l'emploi)
 
 **Classification:** PIT EUR 5,675.40 + surcharge EUR 397.28 = EUR 6,072.68 (estimate -- pass to the deterministic engine for the official figure).
 
@@ -333,88 +333,87 @@ Apply the 2025 class-1 scale. From Section 1, the cumulative tax at the top of t
 
 ### 5.3 Progressive Scale and Solidarity Surcharge
 
-- **Progressive Scale and Solidarity Surcharge** — PIT is progressive over 23 bands from 0% to 42% (Section 1). On top of the PIT computed, the employment-fund (solidarity) surcharge applies: 7% of the PIT, rising to 9% where taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2).  _(LIR barème (2025, 2.5 index-bracket adjustment); [PwC])_
+- **Progressive Scale and Solidarity Surcharge** — PIT is progressive over 23 bands from 0% to 42% (Section 1). On top of the PIT computed, the employment-fund (solidarity) surcharge applies: 7% of the PIT, rising to 9% where taxable income exceeds EUR 150,000 (classes 1 and 1a) or EUR 300,000 (class 2).  _(LIR art. 118; [ACD, Fonds pour l'emploi](https://impotsdirects.public.lu/fr/az/f/fond_empl.html))_
 
 ### 5.4 Tax Classes
 
-- **Tax Classes** — Three classes (Section 1): class 1 (single, full scale), class 1a (single with dependent child / widowed / 65+, more favourable), class 2 (married/partnered joint taxation with income-splitting, most favourable). Never apply a class without confirmation; default to class 1.  _([PwC])_
+- **Tax Classes** — Three classes (Section 1): class 1 (single, full scale), class 1a (single with a child tax reduction / widowed / aged 64 or over at the start of the year, more favourable), class 2 (spouses or partners taxed jointly, and the widowed, divorced or separated within three years; twice the tax on half the income, most favourable). Never apply a class without confirmation; default to class 1.  _(LIR arts. 119 to 121)_
 
 ### 5.5 Social Contributions -- Employee
 
-**Social Contributions Employee table**  _([Guichet.lu; PwC])_
+**Social Contributions Employee table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 | Contribution | Employee Rate | Base | Capped at ceiling? |
 | --- | --- | --- | --- |
-| Pension / old-age (assurance pension) | 8.00% | gross remuneration | Yes |
-| Health -- benefits in kind (CNS, prestations en nature) | 2.80% | gross remuneration | Yes |
-| Health -- cash benefits (CNS, prestations en espèces) | 0.25% | gross remuneration | Yes |
-| Dependency / long-term care (assurance dépendance) | 1.40% | gross income less EUR 675.94/month abatement | **No -- uncapped** |
-| **Employee total** | **12.45%** | -- | -- |
+| Pension / old-age (assurance pension) | 8.50% (half of the 17% total in 2026; 16% total in 2025) | gross remuneration | Yes |
+| Health -- benefits in kind (CNS, prestations en nature) | 2.80% (half of 5.60%) | gross remuneration | Yes |
+| Health -- cash benefits (CNS, prestations en espèces) | 0.25% (half of 0.50%) | gross remuneration | Yes |
+| Dependency / long-term care (assurance dépendance) | 1.40% | gross income less the monthly abatement | **No -- uncapped** |
+| **Employee total** | **12.95%** | -- | -- |
 
-- **Dependency contribution abatement** — The dependency contribution applies the EUR 675.94/month abatement (EUR 8,045.32/year for 2025) and is NOT subject to the ceiling. (Component check: 8.00 + 2.80 + 0.25 + 1.40 = 12.45%.)  _([PwC])_
+- **Dependency contribution abatement** — The dependency contribution is charged after a monthly abatement of a quarter of the social minimum wage: EUR 675.94 while the SSM is EUR 2,703.74 (1 January to 31 May 2026). The SSM rises to EUR 2,771.33 from 1 June 2026, so recompute the abatement for those months. The contribution is NOT subject to the ceiling. (Component check: 8.50 + 2.80 + 0.25 + 1.40 = 12.95%.) For the full rules use `luxembourg-social-contributions`.  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 ### 5.6 Social Contributions -- Employer
 
-**Social Contributions Employer table**  _([Guichet.lu])_
+**Social Contributions Employer table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 | Contribution | Employer Rate | Notes |
 | --- | --- | --- |
-| Pension / old-age | 8.00% |  |
-| Health -- benefits in kind | 2.80% |  |
-| Health -- cash benefits | 0.25% |  |
-| Accident insurance (AAA) | 0.75% | × bonus/malus coefficient 0.85–1.5 by risk class |
+| Pension / old-age | 8.50% | half of the 17% total |
+| Health -- benefits in kind | 2.80% | half of 5.60% |
+| Health -- cash benefits | 0.25% | half of 0.50% |
+| Accident insurance (AAA) | 0.65% | multiplied by the employer's bonus-malus factor (0.70% in 2025) |
 | Occupational health (santé au travail / STM) | 0.14% |  |
-| Employers' mutual insurance (MDE) | class I 0.72% / II 1.22% / III 1.46% / IV 2.84% | class set by prior-year financial absenteeism rate (I <0.65%, II <1.60%, III <2.50%, IV >2.50%) |
-| **Employer subtotal (excl. MDE), accident coeff 1.0** | **11.94%** | (8.00 + 2.80 + 0.25 + 0.75 + 0.14) |
-| **Employer total at MDE class II** | **13.16%** | (11.94 + 1.22) |
+| Employers' mutual insurance (MDE) | class 1 0.23% / 2 0.95% / 3 1.56% / 4 2.66% | class set by the employer's financial absenteeism rate |
+| **Employer subtotal (excl. MDE), accident factor 1.0** | **12.34%** | (8.50 + 2.80 + 0.25 + 0.65 + 0.14) |
+| **Employer total at MDE class 2** | **13.29%** | (12.34 + 0.95) |
 
-- **Firm-specific defaults** — The accident coefficient and MDE class are firm-specific; assume coefficient 1.0 and MDE class II–III where unknown. Approximate employer total social cost is roughly 12–15% of gross. [RESEARCH GAP -- the live CCSS schedule (ccss.public.lu) returned HTTP 403; cross-check MDE class rates against the current CCSS schedule.]  _([Guichet.lu; Rivermate])_
+- **Firm-specific defaults** — The accident factor and MDE class are firm-specific; assume factor 1.0 and MDE class 2 where unknown, and flag it.  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 ### 5.7 Social Contributions -- Self-Employed (Indépendants)
 
-**Social Contributions Self-Employed table**  _([Baloise; PwC])_
+**Social Contributions Self-Employed table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 | Contribution | Self-Employed Rate | Notes |
 | --- | --- | --- |
-| Pension (16% = 8% employee + 8% employer, both borne by the indépendant) | 16.00% | capped at ceiling |
+| Pension (both shares borne by the indépendant) | 17.00% | capped at ceiling (16% in 2025) |
 | Health -- benefits in kind | 5.60% | capped at ceiling |
-| Health -- cash benefits | 0.50% | capped at ceiling |
-| Dependency / long-term care | 1.40% | on income less EUR 675.94/month abatement; uncapped |
-| **Component sum (this skill's figures)** | **23.50%** | (16.00 + 5.60 + 0.50 + 1.40) |
+| Health -- cash benefits | 0.50% | capped at ceiling; whether it applies depends on the person's cash-benefit cover (see `luxembourg-social-contributions`) |
+| Dependency / long-term care | 1.40% | on income less the monthly abatement; uncapped |
+| Accident insurance | 0.65% x factor | capped at ceiling |
+| **Total before accident insurance** | **24.50%** | (17.00 + 5.60 + 0.50 + 1.40) |
 
-> **[RESEARCH GAP -- reviewer to confirm.]** The research data states a self-employed **total of ~24.5%**, but its own component breakdown (pension 16% + health-in-kind 5.6% + health-cash 0.5% + dependency 1.4%) sums to **23.5%** -- a 1.0 percentage-point discrepancy that the source itself flags ("confirm exact health split with CCSS"). Accident insurance may also apply on top. Do NOT publish a single self-employed rate to a client without the reviewer confirming the exact CCSS combined rate and whether accident cover is added. Base = net professional income, capped at 5× the social minimum wage (max monthly EUR 13,518.68 from May 2025; annual EUR 162,224.16); dependency uncapped. [Baloise; PwC]
+Base = net professional income, between the SSM (floor) and 5x the SSM (ceiling: EUR 13,518.68 a month from 1 January 2026, EUR 13,856.63 from 1 June 2026).  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 ### 5.8 Social-Contribution Ceiling (Plafond Cotisable)
 
-**Social-Contribution Ceiling table**  _([Orbitax])_
+**Social-Contribution Ceiling table, 2026**  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
-| Period | Monthly ceiling | Annual (May 2025 onward) |
-| --- | --- | --- |
-| 1 Jan – 30 Apr 2025 | EUR 13,188.96 | -- |
-| From 1 May 2025 | EUR 13,518.68 | EUR 162,224.16 |
+| Period | Index | SSM unskilled, monthly | Monthly ceiling (5x SSM) |
+| --- | --- | --- | --- |
+| 1 Jan – 31 May 2026 | 968.04 | EUR 2,703.74 | EUR 13,518.68 |
+| From 1 June 2026 | 992.24 | EUR 2,771.33 | EUR 13,856.63 |
 
-- **Ceiling basis** — Ceiling = 5× the social minimum wage (salaire social minimum, SSM). Changed mid-year with the 1 May 2025 indexation. Default to the May 2025 figure for full-year estimates; note the split-year nuance.  _([Orbitax])_
+- **Ceiling basis** — Ceiling = 5x the social minimum wage (salaire social minimum, SSM), which changed with the 1 June 2026 indexation. Use the figure for the month; for a full-year estimate, weight 5 months and 7 months.  _([CCSS, paramètres sociaux](https://ccss.public.lu/fr/parametres-sociaux.html))_
 
 ### 5.9 Social Minimum Wage (SSM) and Tax Credits
 
-**SSM table**  _([Orbitax])_
-
-| Item | Jan 2025 | May 2025 | Source |
-| --- | --- | --- | --- |
-| SSM unskilled (18+), monthly | EUR 2,637.79 | EUR 2,703.74 | [Orbitax] |
-| SSM skilled (qualifié), monthly (+20%) | EUR 3,165.35 | EUR 3,244.48 | [All Eyes On Me] |
-
-**Tax credit table**  _([PwC])_
+**Tax credit table (LIR text in force on 1 January 2026)**
 
 | Tax credit | Amount | Notes | Source |
 | --- | --- | --- | --- |
-| Employee tax credit (CIS -- crédit d'impôt salarié) | EUR 0–600/year by income | granted from ~EUR 936 gross annual; phased out above ~EUR 80,000 | [PwC] |
-| Minimum-wage tax credit (CISSM) | EUR 81.00/month for monthly gross EUR 1,800–3,000; degressive 81/600 × (3,600 − gross) between EUR 3,000–3,600 | prorated for part-time; ensures a worker on the unskilled SSM has no PIT in all classes | [PwC] |
-| Single-parent tax credit (CIM) | EUR 750–3,504/year |  | [PwC; Guichet.lu] |
+| Employee tax credit (CIS) | EUR 300 + (gross - 936) x 0.029 for gross EUR 936 to 11,265; EUR 600 for EUR 11,266 to 40,000; EUR 600 - (gross - 40,000) x 0.015 for EUR 40,001 to 79,999; nil from EUR 80,000 | once per employee; not combined with the CII or the pensioner credit | LIR art. 154quater |
+| Employee CO2 tax credit (CI-CO2 salarié) | EUR 216 for gross EUR 936 to 40,000; EUR 216 - (gross - 40,000) x 0.0054 for EUR 40,001 to 79,999; nil from EUR 80,000 | paid with the CIS | LIR art. 154quater |
+| Self-employed tax credit (CII) | same bands as the CIS, applied to net profit | requires compulsory social-security affiliation for that profit | LIR art. 152ter |
+| Self-employed CO2 tax credit (CI-CO2 indépendant) | same bands as the CI-CO2 salarié, applied to net profit | deducted from the tax; paid out if the tax is too low | LIR art. 152ter |
+| Minimum-wage tax credit (CISSM) | EUR 81.00/month for monthly gross EUR 1,800–3,000; 81/600 x (3,600 - gross) between EUR 3,000 and 3,600; nil from EUR 3,600 | prorated for part-time; paid through payroll | LIR art. 139quater |
+| Single-parent tax credit (CIM) | EUR 3,504 below adjusted taxable income EUR 60,000; 3,504 - (income - 60,000) x 0.0612 between EUR 60,000 and 105,000; EUR 750 above EUR 105,000 | reduced by 50% of maintenance received for the child | LIR art. 154ter |
+
+Source for all rows: [LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf).
 
 ### 5.10 Wage-Tax Withholding (Employees)
 
-- **Wage-Tax Withholding** — The employer withholds wage tax (retenue sur traitements et salaires) per the tax card (fiche de retenue, on the RTS scale) plus social contributions monthly. The tax class on the card determines the scale applied. Employees not required to file a full return may file Form 163 (décompte annuel) to claim refunds.  _([PwC; Guichet.lu])_
+- **Wage-Tax Withholding** — The employer withholds wage tax (retenue sur traitements et salaires) per the tax card (fiche de retenue, on the RTS scale) plus social contributions monthly. The tax class on the card determines the scale applied. Employees not required to file a full return may file Form 163 (décompte annuel) to claim refunds.  _([Guichet.lu])_
 
 ### 5.11 Filing, Advances, and Penalties
 
@@ -423,12 +422,12 @@ Apply the 2025 class-1 scale. From Section 1, the cumulative tax at the top of t
 | Item | Detail | Source |
 | --- | --- | --- |
 | Annual return | Form 100 (modèle 100), electronic via MyGuichet.lu | [Guichet.lu] |
-| Filing deadline | 31 December of the year following the income year; income year 2025 due 31 Dec 2026 (window opens 7 Apr 2026) | [Guichet.lu] |
+| Filing deadline | 31 December of the year following the income year; income year 2026 due 31 December 2027 | [ACD, délais de dépôt](https://impotsdirects.public.lu/fr/az/d/delais/depot.html) |
 | Annual adjustment (employees) | Form 163, by 31 December of the year following | [Guichet.lu] |
 | Self-employed quarterly advances (avances) | 10 March, 10 June, 10 September, 10 December of the tax year | [Expatica; Guichet.lu] |
 | Final payment | Balance due within 1 month of the assessment notice (bulletin d'impôt) | [Guichet.lu] |
-| Late-filing surcharge (majoration) | up to 10% of the tax due; plus a fine (astreinte/amende) up to EUR 25,000 | [taxx.lu] |
-| Late-payment interest | 0.6% per month (7.2% per annum) on tax unpaid by the due date | [taxx.lu] |
+| Late-filing surcharge (majoration) | up to 10% of the tax due; a penalty payment (astreinte) after a final deadline; estimated assessment if no return | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
+| Late-payment interest | 0.6% per month from the end of the month after the assessment notice is received; 0.1% or 0.2% a month under an agreed payment plan | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
 
 ### 5.12 VAT Interaction
 
@@ -485,13 +484,13 @@ Apply the 2025 class-1 scale. From Section 1, the cumulative tax at the top of t
 
 ### 6.6 Self-Employed Combined Social Rate
 
-- The exact self-employed combined CCSS rate (and whether accident insurance is added) is not settled in the research data (Section 5.7)
+- 2026: 24.50% before accident insurance (Section 5.7); accident insurance 0.65% x factor on top
 
-**Flag for reviewer:** Confirm the combined rate against the live CCSS schedule before quoting it.
+**Flag for reviewer:** Confirm whether the 0.50% cash-benefit rate applies to the client.
 
 ### 6.7 Split-Year Social Parameters
 
-- The SSM and contribution ceiling changed on 1 May 2025; Jan–Apr and May–Dec figures differ
+- The SSM and contribution ceiling change on 1 June 2026; Jan–May and June–Dec figures differ
 
 **Flag for reviewer:** Confirm whether the period split materially affects the estimate for clients near the ceiling.
 
@@ -499,7 +498,7 @@ Apply the 2025 class-1 scale. From Section 1, the cumulative tax at the top of t
 
 ```
 LUXEMBOURG INCOME TAX -- FORM 100 WORKING PAPER
-Income Year: 2025
+Income Year: 2026
 Client: ___________________________
 Tax Class: 1 / 1a / 2        Status: Self-employed (indépendant) / Employee
 
@@ -535,16 +534,16 @@ D. OTHER INCOME
   D4. TOTAL other income                             ___________
 
 E. SPECIAL EXPENSES / DEDUCTIONS (dépenses spéciales)
-  E1. CCSS social contributions paid                 ___________
+  E1. CCSS contributions paid (excl. dependency)     ___________
   E2. Other deductible special expenses              ___________
   E3. TOTAL special expenses                         ___________
 
 F. TAXABLE INCOME (C + D4 - E3)                       ___________
 
 G. TAX COMPUTATION (pass to deterministic engine)
-  G1. PIT from 2025 scale (Section 1)                ___________
+  G1. PIT from 2026 scale (Section 1)                ___________
   G2. Solidarity surcharge (7% / 9%)                 ___________
-  G3. Tax credits (CIS / CISSM / CIM)                ___________
+  G3. Tax credits (CII / CI-CO2 / CIS / CIM)         ___________
   G4. Advance payments made                          ___________
   G5. Tax due / refund (G1 + G2 - G3 - G4)           ___________
 
@@ -602,7 +601,7 @@ If the client provides a bank statement but cannot answer onboarding questions i
 
 ```
 ONBOARDING QUESTIONS -- LUXEMBOURG INCOME TAX
-1. Tax class: 1 (single), 1a (single with child / widowed / 65+), or 2 (married/partnered joint)?
+1. Tax class: 1 (single), 1a (single with child / widowed / 64 or over at 1 January), or 2 (married/partnered joint)?
 2. Status: fully self-employed (indépendant) or employee (or both)?
 3. VAT: registered (turnover > EUR 50,000) or franchise scheme?
 4. Home office: dedicated room or shared space? If dedicated, what % of floor area?
@@ -623,40 +622,34 @@ ONBOARDING QUESTIONS -- LUXEMBOURG INCOME TAX
 
 | Topic | Reference | Source |
 | --- | --- | --- |
-| Income tax law (barème, classes, deductions) | LIR -- Loi modifiée du 4 décembre 1967 | [PwC] |
+| Income tax law (barème, classes, deductions) | LIR -- Loi modifiée du 4 décembre 1967 | [LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | Social contributions | Code de la sécurité sociale; CCSS | [Guichet.lu] |
-| 2025 scale (2.5 index-bracket adjustment) | Loi du 12 juillet 2024 + budget/index laws | [PwC] |
+| Scale for 2025 and 2026 | LIR art. 118 as amended by the law of 20 December 2024 | [LIR, consolidated text at 1 January 2026](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf) |
 | Annual return | Form 100 (modèle 100), MyGuichet.lu | [Guichet.lu] |
 | Employee annual adjustment | Form 163 (décompte annuel) | [Guichet.lu] |
 | Direct tax authority | Administration des contributions directes (ACD) | [Guichet.lu] |
 | Social-security authority | Centre commun de la sécurité sociale (CCSS); CNS; CNAP | [Guichet.lu] |
-| Penalties | Late filing up to 10% + fine up to EUR 25,000; interest 0.6%/month | [taxx.lu] |
+| Penalties | Late filing up to 10%; penalty payment; interest 0.6%/month | [ACD, prélèvements supplémentaires](https://impotsdirects.public.lu/fr/az/p/prelev.html) |
 
-### Key Numbers at a Glance (2025)
-
-**Key Numbers at a Glance (2025)**  _([PwC]; [Guichet.lu]; [Orbitax]; [Expatica]; [Baloise])_
+### Key Numbers at a Glance (2026)
 
 | Item | Value | Source |
 | --- | --- | --- |
-| PIT tax-free threshold (class 1) | EUR 13,230 | [PwC] |
-| Top marginal rate | 42% above EUR 234,870 | [PwC] |
-| Solidarity surcharge | 7% (9% above EUR 150,000 class 1/1a; EUR 300,000 class 2) | [PwC] |
-| Employee social total | 12.45% | [Guichet.lu; PwC] |
-| Employer social total (excl. MDE, coeff 1.0) | 11.94% | [Guichet.lu] |
-| Self-employed component sum | 23.50% (research states ~24.5% total -- see Section 5.7 gap) | [Baloise; PwC] |
-| Dependency abatement | EUR 675.94/month (EUR 8,045.32/year) | [PwC] |
-| Social ceiling (from 1 May 2025) | EUR 13,518.68/month (EUR 162,224.16/year) | [Orbitax] |
-| SSM unskilled (from 1 May 2025) | EUR 2,703.74/month | [Orbitax] |
+| PIT tax-free threshold (class 1) | EUR 13,230 | LIR art. 118 |
+| Top marginal rate | 42% above EUR 234,870 | LIR art. 118 |
+| Solidarity surcharge | 7% (9% above adjusted taxable income EUR 150,000 class 1/1a; EUR 300,000 class 2) | ACD, Fonds pour l'emploi |
+| Employee social total | 12.95% | CCSS, paramètres sociaux |
+| Employer social total (excl. MDE, accident factor 1.0) | 12.34% | CCSS, paramètres sociaux |
+| Self-employed total before accident insurance | 24.50% | CCSS, paramètres sociaux |
+| Social ceiling | EUR 13,518.68/month (Jan to May 2026); EUR 13,856.63/month (from 1 June 2026) | CCSS, paramètres sociaux |
+| SSM unskilled | EUR 2,703.74/month (Jan to May 2026); EUR 2,771.33/month (from 1 June 2026) | CCSS, paramètres sociaux |
 | VAT registration threshold | EUR 50,000 turnover | [Expatica] |
 
-### Caveats and Open Items (from research)
+### Caveats and Open Items
 
-- Employer accident insurance (0.75%) is modulated by a firm-specific bonus/malus coefficient (0.85–1.5); MDE class (0.72%/1.22%/1.46%/2.84%) depends on prior-year absenteeism. Exact employer cost varies by employer. The live CCSS schedule (ccss.public.lu/en/parametres-sociaux.html) returned HTTP 403 and could not be fetched; cross-check the MDE class rates against the current CCSS schedule. [RESEARCH GAP -- reviewer to confirm against CCSS.]
-- Social parameters changed at 1 May 2025 (indexation): SSM and ceiling differ between Jan–Apr and May–Dec.
-- The self-employed health split (5.60% in-kind + 0.50% cash) and the ~24.5% headline come from an insurer source (Baloise) plus PwC component rates, not a single official CCSS table; the components sum to 23.5%. [RESEARCH GAP -- reviewer to confirm.]
-- One secondary source cited a different first-bracket figure (EUR 12,438) reflecting a pre-2025 or class-specific scale; the EUR 13,230 figure (PwC, post-2.5-index-adjustment class-1 scale) is used here.
-- The 42% top-rate threshold appears as EUR 234,870 in the detailed PwC table and as EUR 200,004 / EUR 234,900 in some summaries; EUR 234,870 is the working figure. [RESEARCH GAP -- verify against the official ACD barème before relying on it for high incomes.]
-- Statutory LIR depreciation (amortissement) rates are NOT in the research data. [RESEARCH GAP -- reviewer to confirm.]
+- Employer accident insurance (0.65% in 2026) is multiplied by a firm-specific bonus-malus factor, and the MDE class depends on the employer's absenteeism. Exact employer cost varies by employer.
+- Social parameters change on 1 June 2026 (indexation): SSM, ceiling and dependency abatement differ between January to May and June to December.
+- Statutory LIR depreciation (amortissement) rates are NOT in this skill. [RESEARCH GAP -- reviewer to confirm.]
 
 ### Test Suite
 
@@ -683,12 +676,12 @@ Expected: PIT = EUR 46,590.00 (cum. EUR 33,570.00 at EUR 117,450 + EUR 32,550 ×
 #### Test 5 -- Employee monthly social contributions.
 
 Input: Employee, monthly gross EUR 4,000 (below ceiling).
-Expected: capped contributions (pension 8% + health 2.8% + 0.25% = 11.05% × 4,000) = EUR 442.00; dependency 1.4% × (4,000 − 675.94) = EUR 46.54. Total employee SSC = EUR 488.54.
+Expected (January to May 2026): capped contributions (pension 8.5% + health 2.8% + 0.25% = 11.55% × 4,000) = EUR 462.00; dependency 1.4% × (4,000 − 675.94) = EUR 46.54. Total employee SSC = EUR 508.54.
 
 #### Test 6 -- Dependency contribution uses abatement and is uncapped.
 
-Input: Annual professional income EUR 60,000.
-Expected: dependency base = 60,000 − 8,045.32 = EUR 51,954.68; × 1.4% = EUR 727.37. (No ceiling applied to dependency.)
+Input: Monthly professional income EUR 5,000 in March 2026.
+Expected: dependency base = 5,000 − 675.94 = EUR 4,324.06; × 1.4% = EUR 60.54. (No ceiling applied to dependency.)
 
 #### Test 7 -- VAT extraction on income (registered).
 
@@ -706,14 +699,14 @@ Expected: Move to special-expense deduction (E1). Do NOT include in operating ex
 - NEVER compute final tax figures as definitive -- always pass taxable income to the deterministic engine and label outputs as estimated
 - NEVER omit the employment-fund (solidarity) surcharge on PIT
 - NEVER apply the 9% surcharge below EUR 150,000 (class 1/1a) or EUR 300,000 (class 2)
-- NEVER publish a single self-employed CCSS rate without reviewer confirmation (component sum 23.5% vs stated ~24.5%)
+- NEVER quote the self-employed 24.50% without adding accident insurance and checking whether the 0.50% cash-benefit rate applies
 - NEVER treat CCSS contributions as an operating expense -- they are a special-expense deduction
 - NEVER include VAT collected on sales in income for VAT-registered clients
 - NEVER expense a capital asset in full -- capitalise and depreciate per the LIR
 - NEVER invent depreciation (amortissement) rates -- they are a research gap; flag for the reviewer
 - NEVER allow personal living costs, fines, penalties, or income tax itself as a deduction
 - NEVER apply the dependency-insurance ceiling -- that contribution is uncapped
-- NEVER mix the Jan–Apr and May 2025 social ceilings without noting the split
+- NEVER mix the January to May and June 2026 social ceilings without noting the split
 
 ## Disclaimer
 

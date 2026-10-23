@@ -38,7 +38,7 @@ This skill sets out who is taxed where and on what. For the tax computation (sca
 - business and professional profits from a Luxembourg permanent establishment or activity (nos. 1 and 3);
 - rent from Luxembourg property (no. 7);
 - dividends from Luxembourg companies (no. 6), usually settled by the 15% withholding;
-- gains on Luxembourg property, and gains on a substantial shareholding (more than 10%, art. 100) in a Luxembourg company if sold within six months of purchase, or if the seller was resident for more than 15 years and left less than five years before the sale (no. 8).
+- gains on Luxembourg property, and gains on a substantial shareholding (more than 10%, art. 100) in a Luxembourg company if sold within six months of purchase, or if the seller was resident for more than 15 years and left less than five years before the sale (no. 8). Shares in a corporate investment fund, a SICAR or an SPF are excluded (no. 8c).
 
 **Part-year residents (art. 6(3)).** Income of the resident period and of the non-resident period are taxed separately.
 
@@ -64,7 +64,7 @@ Out of scope: companies (see `lu-corporate-tax`), cross-border VAT (`luxembourg-
 | Telework threshold, Belgian residents | 34 days a year, not prorated (24 days before 2022) | from 2022 | [ACD note, Belgium tolerance threshold](https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/seuil-de-tolerance-b-03-2023.pdf) |
 | Social security: substantial activity in the residence state | 25% of working time | current | [Guichet.lu, telework](https://guichet.public.lu/fr/citoyens/travail/conditions-travail/teletravail/teletravail.html) |
 | Social security: telework framework agreement | telework from 25% to under 50% of working time, in the residence state only; A1 for up to 3 years | from 1 July 2023 | [CCSS, Accord-cadre sur le télétravail](https://ccss.public.lu/fr/employeurs/secteur-prive/activite-etranger/accord-teletravail.html) |
-| Impatriate exemption | 50% of total gross annual pay; pay above EUR 400,000 gets no exemption | from 2025 | LIR art. 115 no. 13b |
+| Impatriate exemption | 50% of total gross annual pay, applied to pay up to EUR 400,000 (so at most EUR 200,000 exempt); the part of pay above EUR 400,000 is fully taxable | from 2025 | LIR art. 115 no. 13b |
 | Impatriate minimum fixed pay | EUR 75,000 gross a year | from 2025 | LIR art. 115 no. 13b, condition 4 |
 | Impatriate duration | the year of starting work plus up to 8 following tax years | from 2025 | LIR art. 115 no. 13b |
 | Withholding on dividends | 15% of gross; 17.65% of net if the payer bears it | current | [LIR arts. 146 and 148](https://impotsdirects.public.lu/dam-assets/fr/legislation/LIR/texte-coordonn-en-vigueur-au-1er-janvier-2026-ver-08052026.pdf); exemptions in `lu-corporate-tax` |
@@ -80,7 +80,7 @@ Out of scope: companies (see `lu-corporate-tax`), cross-border VAT (`luxembourg-
 
 1. Only income in art. 156 is taxed. Expenses count only if they have a direct economic link to that income (art. 157(1)).
 2. Most special expenses are not deductible for a non-resident (art. 157(2)). Insurance and pension contributions under art. 110 nos. 1 to 3 remain deductible against income in art. 156 nos. 1 to 5, as does the EUR 480 lump sum of art. 113 for those with professional income.
-3. **Wage withholding is final** for a non-resident employee (art. 157(3)), unless an assessment applies. An assessment applies when the person worked in Luxembourg continuously for at least nine months of the year (art. 157(4)), when they asked for the 157ter option or the 157bis(3) rate, or when they have other income to assess (art. 157bis(7)).
+3. **Wage withholding is final** for a non-resident employee (art. 157(3)), unless an assessment applies. A non-resident employed in Luxembourg continuously for at least nine months of the year falls under the same assessment triggers as a resident employee in art. 153(1) no. 1 (art. 157(4)); that alone does not force an assessment. An assessment also follows when the person asks for the 157ter option or the 157bis(3) rate. Once professional income is assessed, the assessment covers all the person's art. 156 income (art. 157bis(7)).
 4. **Tax class (art. 157bis).** A married non-resident with professional income is put in class 1 (157bis(2)). If both spouses ask, the withholding card shows the rate they would have under 157ter, and an assessment then becomes compulsory (157bis(3)). Unmarried non-residents get class 1 or 1a under art. 119. Widowed, divorced or separated people in the cases of art. 119 no. 3 b and c get class 2 (157bis(4)). Child reductions and the extraordinary-charges allowance for children also apply (157bis(5)).
 5. **Minimum 15% rate.** On Luxembourg income other than employment and pensions (for example rent from a Luxembourg flat), the rate cannot be below 15% (157bis(6)). The cap in 157bis(6a) limits the result.
 
@@ -153,7 +153,7 @@ Facts: a single French resident works full time for a Luxembourg company all yea
 
 1. **Threshold test.** 40 days in France is above the 34-day limit for a full-time, full-year contract. The tolerance is lost from day one.
 2. **Split.** Luxembourg taxes the pay for 180 days; France taxes the pay for 40 days. 70,000 x 180 / 220 = EUR 57,272.73 is taxed in Luxembourg; 70,000 x 40 / 220 = EUR 12,727.27 in France.
-3. **157ter option.** She has no foreign income other than the French-taxed salary. For the 90% test, the 40 treaty-exempt days count as Luxembourg income because they are within the 50-day cap. Her ratio is 100%, so she can ask to be taxed like a resident. Without the option she stays in class 1 with final withholding.
+3. **157ter option.** She has no foreign income other than the French-taxed salary. For the 90% test, the 40 treaty-exempt days count as Luxembourg income because they are within the 50-day cap. Her ratio is 100%, so she can ask to be taxed like a resident. Without the option she stays in class 1 (art. 157bis(4)); her withholding is final unless her taxable income passes the art. 153(1) no. 1 assessment limit, which applies to her because she works in Luxembourg all year (art. 157(4)).
 4. **Social security.** 40 / 220 = 18.18% of her working time is in France, below 25%. She stays insured in Luxembourg only, on the whole salary. The framework agreement is not needed.
 5. **Payroll.** The employer has to split the withholding (the ACD intermittent or daily-scale method); see `luxembourg-payroll`. The French return reports the 40 days' pay; France gives the relief under its own rules (outside this skill).
 
@@ -247,7 +247,7 @@ expected:
 | ACD, Fonds pour l'emploi | https://impotsdirects.public.lu/fr/az/f/fond_empl.html | 2026-10-23 |
 | ACD, treaties in force (France, Belgium, Germany entries) | https://impotsdirects.public.lu/fr/conventions/luxembourg.html | 2026-10-23 |
 | Circular L.G. – Conv. D.I. n° 61 of 24 June 2026, France, 34 days (scanned; read by OCR) | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-du-directeur-des-contributions-lg-conv-di-n-61-du-24-juin-2026.pdf | 2026-10-23 |
-| Avenant to the France–Luxembourg treaty of 7 November 2022 (29 to 34 days) | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/avenant-a-la-convention-lu-fr-34-jours-et-fonction-publique-signe-7-novembre-2022.pdf | 2026-10-23 |
+| Avenant to the France-Luxembourg treaty of 7 November 2022 (29 to 34 days) | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/avenant-a-la-convention-lu-fr-34-jours-et-fonction-publique-signe-7-novembre-2022.pdf | 2026-10-23 |
 | Circular L.G. – Conv. D.I. n° 71 of 18 March 2024, Germany protocol of 6 July 2023 | https://impotsdirects.public.lu/dam-assets/fr/legislation/circulaires/circulaire-lg-conv-di-71-du-18-mars-2024.pdf | 2026-10-23 |
 | ACD note, Belgium tolerance threshold (34 days) | https://impotsdirects.public.lu/dam-assets/fr/conventions/conv/seuil-de-tolerance-b-03-2023.pdf | 2026-10-23 |
 | ACD, Télétravail (withholding methods) | https://impotsdirects.public.lu/fr/az/t/teletravail.html | 2026-10-23 |
@@ -259,4 +259,4 @@ expected:
 | ACD, treaty withholding rates |https://impotsdirects.public.lu/fr/conventions/tx_ret.html | 2026-10-23 |
 | ACD, laws passed in 2025 and 2026 | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-23 |
 
-Not yet confirmed: the text of the France and Belgium treaties themselves (the skill relies on the ACD circulars and notes, and the Belgian note dates from March 2023; no later Belgian change was listed on the ACD treaty page); whether France and Luxembourg agreed new conditions from 2025 under art. 3 of the 2022 avenant (the June 2026 circular still applies 34 days and no new avenant is listed); the text of the telework framework agreement itself and whether it was renewed or changed (read through the CCSS page and the Belgian signatory list); the consolidated text of § 14 StAnpG (Legilux shows the published act, with no amendment to § 14 seen); the deferral of the art. 38 charge for individuals moving within the EEA (no instalment rule was found in the LIR text read).
+Not yet confirmed: the text of the France and Belgium treaties themselves (the skill relies on the ACD circulars and notes, and the Belgian note dates from March 2023; no later Belgian change was listed on the ACD treaty page); whether France and Luxembourg agreed new conditions from 2025 under art. 3 of the 2022 avenant (the June 2026 circular still applies 34 days and no new avenant is listed); the text of the telework framework agreement itself and whether it was renewed or changed (read through the CCSS page and the Belgian signatory list); the deferral of the art. 38 charge for individuals moving within the EEA (no instalment rule was found in the LIR text read).
