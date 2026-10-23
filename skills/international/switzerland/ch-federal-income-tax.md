@@ -108,7 +108,7 @@ Sources for both tables: [DBG art. 36](https://www.fedlex.admin.ch/eli/cc/1991/1
 
 ## The taxable base
 
-**Income.** All income is taxed unless the DBG exempts it: employment income and fringe benefits (art. 17), self-employment income (art. 18), investment income (art. 20, 20a), imputed rental value of an owner-occupied home (art. 21 para. 1 let. b), pensions and replacement income (art. 22, 23). Private capital gains on movable assets are tax-free (art. 16 para. 3). Lump-sum pension payouts are taxed separately at one fifth of the tariff (art. 38); this is out of scope here.
+**Income.** All income is taxed unless the DBG exempts it: employment income and fringe benefits (art. 17), self-employment income (art. 18), investment income (art. 20, 20a), imputed rental value of an owner-occupied home (art. 21 para. 1 let. b), pensions and replacement income (art. 22, 23). Private capital gains on movable assets are tax-free (art. 16 para. 3). The imputed rental value is still taxed in 2026. The reform that abolishes it, accepted by voters on 28 September 2025, comes into force on 1 January 2029 (Federal Council decision of 1 April 2026), so 2026 to 2028 are taxed under the current rules, with the deductions for maintenance costs and private debt interest ([EFD press release, 1 April 2026](https://www.efd.admin.ch/de/newnsb/yGTqBPowRqyVh0zPokW-q)). Lump-sum pension payouts are taxed separately at one fifth of the tariff (art. 38); this is out of scope here.
 
 **Employees: professional expenses (DBG art. 26).** Deductible are commuting costs up to CHF 3,300, extra costs of meals away from home and of shift work, and other necessary job costs. The EFD sets flat rates for meals and other costs (table above); the taxpayer may prove higher other costs instead of the flat 3%. Job-related training is a separate deduction under art. 33 para. 1 let. j.
 
@@ -237,6 +237,7 @@ expected:
 | Quellensteuerverordnung (QStV), SR 642.118.2, version of 10 January 2025 (current), art. 9 | https://www.fedlex.admin.ch/eli/cc/2018/274/de | 2026-10-23 |
 | Verordnung über die steuerliche Abzugsberechtigung für Beiträge an anerkannte Vorsorgeformen (BVV 3), SR 831.461.3, art. 7 | https://www.fedlex.admin.ch/eli/cc/1985/1778_1778_1778/de | 2026-10-23 |
 | BSV, Wichtige Masszahlen im Bereich der beruflichen Vorsorge 2025 und 2026 | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
+| EFD, Bundesrat setzt Abschaffung des Eigenmietwerts auf 2029 in Kraft, press release of 1 April 2026 | https://www.efd.admin.ch/de/newnsb/yGTqBPowRqyVh0zPokW-q | 2026-10-23 |
 | Kantonales Steueramt Zürich, ZStB 133.1, Fristen Steuererklärung | https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html | 2026-10-23 |
 
-Not yet confirmed: how the two-earner deduction applies when the lower earned income is below the CHF 8,600 minimum (the DBG text gives only the minimum; ESTV practice was not read); filing deadlines and instalment practice in cantons other than Zurich; the start date of the abolition of the imputed rental value voted in 2025 (not read, so the base above still lists it as taxable); retroactive Pillar 3a top-up contributions (not read).
+Not yet confirmed: how the two-earner deduction applies when the lower earned income is below the CHF 8,600 minimum (the DBG text gives only the minimum; ESTV practice was not read); filing deadlines and instalment practice in cantons other than Zurich; retroactive Pillar 3a top-up contributions (not read).

@@ -5,8 +5,6 @@ not_applicable: {}
 covered_by:
   SC: ch-ahv-iv
   XB: ch-cross-border
-partial:
-  IT-IND: "ch-cantonal-tax and ch-federal-income-tax are on tax year 2025, and ch-cantonal-tax uses approximate 2025 cantonal and communal multipliers; both need a 2026 rewrite from fedlex and ESTV"
 ---
 
 # Switzerland: tax pack
@@ -17,7 +15,7 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft; partial: ch-cantonal-tax and ch-federal-income-tax on tax year 2025 |
+| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | source-cited draft |
 | IT-CORP, corporate income tax | ch-corporate-income-tax | source-cited draft |
 | VAT | ch-vat-return, switzerland-vat | source-cited draft |
 | SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | source-cited draft |
@@ -31,6 +29,7 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 - Fedlex, Verrechnungssteuergesetz (VStG), SR 642.21: https://www.fedlex.admin.ch/eli/cc/1966/371_385_384/de (read 2026-10-22)
 - Fedlex, Quellensteuerverordnung (QStV), SR 642.118.2: https://www.fedlex.admin.ch/eli/cc/2018/274/de (read 2026-10-22)
 - Federal Tax Administration (ESTV): https://www.estv.admin.ch (read 2026-10-22)
+- ESTV, Form. 58c, Tarife direkte Bundessteuer 2026: https://www.estv.admin.ch/dam/de/sd-web/gnde9CmEsalK/dbst-tairfe-58c-2026-dfi.pdf (read 2026-10-23)
 - ESTV, steuerlich anerkannte Zinssätze 2026 (CHF), circular 2-218-DV-2026: https://www.estv.admin.ch/dam/de/sd-web/xY4pH-Qc2lrL/2-218-DV-2026-d.pdf (read 2026-10-23)
 - Fedlex, ALBAG (country-by-country reports), SR 654.1: https://www.fedlex.admin.ch/eli/cc/2017/645/de (read 2026-10-23)
 - Informationsstelle AHV/IV, Merkblatt 2.02 Beiträge der Selbstständigerwerbenden, Stand 1. Januar 2026: https://www.ahv-iv.ch/p/2.02.d (read 2026-10-23)
