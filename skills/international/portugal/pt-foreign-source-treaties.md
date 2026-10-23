@@ -31,7 +31,7 @@ The law is the Código do IRS (CIRS), read article by article on the Portal das 
 
 **Residents only.** A person resident in Portugal under CIRS art. 16 is taxed on worldwide income. Residence tests, split years and treaty tie-breakers are in `pt-cross-border`. Non-residents pay Portuguese tax only on Portuguese-source income and are out of scope here.
 
-**Is the income foreign at all?** CIRS art. 18(1) lists what counts as Portuguese-source. Salary is Portuguese-source if the work is done in Portugal or the payer is resident in Portugal (art. 18(1)(a)). A remote worker living in Lisbon and paid by a foreign employer therefore has Portuguese income, not foreign income. Pensions are Portuguese-source when owed by a Portuguese payer (art. 18(1)(l)). Rent and gains on property are source-taxed where the property is (art. 18(1)(h)).
+**Is the income foreign at all?** CIRS art. 18(1) lists what counts as Portuguese-source. Salary is Portuguese-source if the work is done in Portugal or the payer is resident in Portugal (art. 18(1)(a)). A remote worker living in Lisbon and paid by a foreign employer therefore has Portuguese income, not foreign income. Pensions are Portuguese-source when owed by a Portuguese payer (art. 18(1)(l)). Rent and gains on property in Portugal are Portuguese-source (art. 18(1)(h)); rent and gains on property abroad are foreign income.
 
 **Three groups of residents, three treatments.** Check status first, with `pt-nhr-ifici`:
 
@@ -52,11 +52,11 @@ The law is the Código do IRS (CIRS), read article by article on the Portal das 
 | Net gains on shares and other securities | 28%; 35% where the issuer is in a listed low-tax jurisdiction | 2026 | CIRS art. 72(1)(c) and (18)(b) |
 | Rent | 25% for residential leases, 28% for other rent; option to aggregate | 2026 | CIRS art. 72(1)(e), (2) and (13) |
 | IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1: https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222 |
-| Specific deduction for pensions (Category H) | 8.54 x IAS = EUR 4,587.09 per pensioner, or the whole pension if lower | 2026 | CIRS art. 53: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx |
+| Specific deduction for pensions (Category H) | 8.54 x IAS = EUR 4,587.09 per pensioner, or the whole pension if lower | 2026 | CIRS art. 53(1) and (2), by reference to art. 25(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx |
 | Foreign tax credit | Lower of the foreign tax paid and the share of Portuguese tax on that income; capped at the tax the treaty allows; unused amount carried forward 5 years only when Portuguese tax was too small | 2026 | CIRS art. 81(1) to (3): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs81.aspx |
 | IFICI special rate | 20% on net Category A and B income from the qualifying activity only | 2026 | EBF art. 58-A(2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/bf_rep/Pages/ebf58a.aspx |
 | IFICI holder: foreign Category A, B, E, F, G | Exempt, counted for the rate on other income | 2026 | CIRS art. 81(4) |
-| IFICI holder: income paid by an entity in a listed low-tax jurisdiction | 35% | 2026 | CIRS art. 81(5) |
+| IFICI holder: capital income and gains paid by or linked to an entity in a listed low-tax jurisdiction | 35% | 2026 | CIRS art. 81(5) |
 | NHR holder: net foreign pension | 10% (option to aggregate) | Rest of the NHR period | Old CIRS art. 72(12) and (13), wording of Lei 2/2020: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs72ra_202312.aspx; kept by art. 236(3) Lei 82/2023 |
 
 There is no CIRS art. 72-A. The 2024 Budget (Lei 82/2023) put IFICI in the Tax Benefits Statute, EBF art. 58-A, and revoked CIRS art. 72(10) and (12) for everyone except NHR holders covered by its transitional art. 236.
@@ -72,7 +72,7 @@ There is no CIRS art. 72-A. The 2024 Budget (Lei 82/2023) put IFICI in the Tax B
 **Step 4: Portuguese tax on the income.**
 
 - Salary and pensions are aggregated with other income and taxed at the art. 68 bands, after the specific deduction (art. 25 for salary, art. 53 for pensions).
-- Dividends and interest paid abroad are not withheld in Portugal, so they pay the 28% autonomous rate (art. 72(1)(d)), or 35% from a listed low-tax jurisdiction (art. 72(18)(a)). The resident may aggregate them instead (art. 72(13)); then every item of Category E must be aggregated (art. 22(5)).
+- Dividends and interest paid by a foreign payer directly to the resident are not withheld in Portugal, so they pay the 28% autonomous rate (art. 72(1)(d)), or 35% from a listed low-tax jurisdiction (art. 72(18)(a)). If a Portuguese bank or broker acting for the payer or the holder pays out foreign securities income (dividends, bond interest), it withholds 28% as a final tax (art. 71(1)(b)). The resident may aggregate them instead (art. 72(13)); then every item of Category E must be aggregated (art. 22(5)). On aggregation, dividends from an EU or EEA company that meets art. 2 of Directive 2011/96/EU count at 50%, with a certificate from that state's tax authority as proof (art. 40-A(1), (4) and (5)).
 - Rent and gains follow art. 72 and the rules in `pt-irs-employees-investment`.
 
 **Step 5: the foreign tax credit (art. 81(1) and (2)).** The credit is the lower of:
@@ -84,7 +84,7 @@ Foreign tax above the treaty rate is not credited. Claim it back from the source
 
 **Step 6: treaty exemption.** Where a treaty gives Portugal the exemption method with progression, the income is exempt but counted to find the rate on the other income (art. 81(9), art. 22(4)). Where a treaty applies the credit method in the source state instead, no Portuguese credit is given (art. 81(10)).
 
-**IFICI holders.** IFICI is EBF art. 58-A. Its 20% rate covers only net Category A and B income earned in the qualifying activity (art. 58-A(2)). Foreign Category A, B, E, F and G income is exempt and counted for the rate on other income (CIRS art. 81(4)). Category H is not in that list. An IFICI holder's foreign pension is therefore aggregated at the art. 68 bands, after the art. 53 specific deduction, with the art. 81(1) credit for foreign tax. It is not taxed at 10%. Income of any category paid by an entity in a listed low-tax jurisdiction pays 35% (art. 81(5)).
+**IFICI holders.** IFICI is EBF art. 58-A. Its 20% rate covers only net Category A and B income earned in the qualifying activity (art. 58-A(2)). Foreign Category A, B, E, F and G income is exempt and counted for the rate on other income (CIRS art. 81(4)). Category H is not in that list. An IFICI holder's foreign pension is therefore aggregated at the art. 68 bands, after the art. 53 specific deduction, with the art. 81(1) credit for foreign tax. It is not taxed at 10%. Capital income and gains paid by, or on securities of, an entity in a listed low-tax jurisdiction pay 35% (art. 81(5), applying art. 71(17)(b) and (c) and art. 72(18)).
 
 **NHR holders.** The 10% pension rate was old CIRS art. 72(12), added by Lei 2/2020. Lei 82/2023 revoked it from 2024 but its art. 236(3) keeps the old wording of art. 72(10) and (12) and art. 81(4) to (8) for people already registered as NHR and for the closed 2023 and 2024 transitional groups, until their 10 years end. Under Lei 2/2020 art. 329(2), NHRs registered (or with a request pending) when that law took effect, and residents who applied by 31 March 2020 or 2021, keep the pre-2020 pension exemption unless they opted for 10% in their 2020 return. The 10% applies to the net pension that is not Portuguese-source under art. 18(1), on the part that did not create a deduction under art. 25(2). The NHR holder may aggregate instead (old art. 72(13)). Details and the full NHR matrix are in `pt-nhr-ifici`.
 
@@ -118,10 +118,10 @@ Foreign tax above the treaty rate is not credited. Claim it back from the source
 
 ### Example 1: resident under the general rules (or an IFICI holder) with a foreign pension
 
-Maria is resident in Portugal for all of 2026. Her only income is a private pension from abroad of EUR 24,000 gross. The source state withheld EUR 1,800, and the treaty lets that state tax the pension at that level (confirm from the treaty). She is not NHR. The same computation applies if she held IFICI for a job, because art. 81(4) does not exempt pensions.
+Maria is resident in Portugal for all of 2026. Her only income is a pension from abroad of EUR 24,000 gross. The source state withheld EUR 1,800, and the treaty lets that state tax the pension at that level. Many treaties give private pensions only to the state of residence; under such a treaty the art. 81(2) cap is nil, nothing is credited and the EUR 1,800 must be reclaimed abroad. Read the pension article of the treaty first. She is not NHR. The pension computation is the same if she also held IFICI for a job in Portugal taxed at 20%, because art. 81(4) does not exempt pensions and income taxed at the art. 72 special rates is not aggregated (art. 22(3)(b)).
 
 1. Specific deduction (art. 53): EUR 4,587.09. Taxable income: 24,000 - 4,587.09 = EUR 19,412.91. The pension is declared gross of the foreign tax (art. 22(6)).
-2. Minimum existence (art. 70) does not apply: gross income is above EUR 16,543.60.
+2. Minimum existence (art. 70) does not apply: gross income is above 2.2 x 14 x IAS = EUR 16,543.60 (art. 70(4)(a)).
 3. Tax by band: 19,412.91 is in band 4. Tax = 17,838 x 15.823% + (19,412.91 - 17,838) x 24.10% = 2,822.51 + 379.55 = EUR 3,202.06.
 4. Share of Portuguese tax on the foreign income: all her income is foreign, so EUR 3,202.06.
 5. Credit = lower of 1,800 and 3,202.06 = EUR 1,800. Tax after the credit: EUR 1,402.06, before deductions from the tax such as general family expenses.
@@ -178,6 +178,24 @@ expected:
 
 The EUR 4,300 is the total burden if the over-withholding is never recovered (3,000 abroad plus 1,300 in Portugal); with the refund it falls to EUR 2,800.
 
+**The aggregation option.** Suppose the dividends are João's only income and he aggregates them (art. 72(13)). The company is outside the EU and EEA, so art. 40-A does not halve them. Tax at the art. 68 bands on EUR 10,000: 8,342 x 12.50% + (10,000 - 8,342) x 15.70% = 1,042.75 + 260.31 = EUR 1,303.06. Credit = lower of 1,500 (treaty cap) and 1,303.06 = EUR 1,303.06. Portuguese tax due: nil, against EUR 1,300 at 28%. Aggregation also pulls in every other item of Category E he has (art. 22(5)), so compare both routes on all of it.
+
+```oa-check
+name: PT resident, EUR 10,000 foreign dividends aggregated at 2026 bands, treaty cap 15%
+inputs:
+  dividends: 10000
+  band1_top: 8342
+steps:
+  - pt_tax: round(band1_top * 0.125 + (dividends - band1_top) * 0.157, 2)
+  - treaty_tax: dividends * 0.15
+  - credit: min(treaty_tax, pt_tax)
+  - pt_due: pt_tax - credit
+expected:
+  pt_tax: 1303.06
+  credit: 1303.06
+  pt_due: 0.00
+```
+
 ## Ask the client first
 
 1. Were you resident in Portugal for all of 2026, and are you registered under NHR or IFICI? If NHR, when did you become resident and did you opt for the 10% pension rate in your 2020 return? (Decides exemption, 10%, or the general rules.)
@@ -185,7 +203,7 @@ The EUR 4,300 is the total burden if the over-withholding is never recovered (3,
 3. How much foreign tax was actually paid on each item, and do you have the payer's or tax authority's statement? (The credit needs proof and is capped at the treaty rate.)
 4. Did the payer apply the treaty rate, or withhold at its full domestic rate? (Over-withholding must be reclaimed abroad.)
 5. Is the foreign tax for 2026 still not final by 30 June 2027? (The art. 60(3) extension must be notified in time.)
-6. Do you want dividends, interest or rent aggregated? (Only worth it if your top band is below the special rate.)
+6. Do you want dividends, interest or rent aggregated? (Worth it when the bands on the extra income come out below the special rate, or when EU dividends count at 50% under art. 40-A. Aggregating Category E pulls in all of it.)
 
 ## Sources
 
@@ -199,11 +217,13 @@ The EUR 4,300 is the total burden if the over-withholding is never recovered (3,
 | CIRS art. 68, 2026 bands (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
 | CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-22 |
 | CIRS art. 22, aggregation and gross-up of foreign income | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-10-23 |
+| CIRS art. 40-A, 50% of qualifying dividends on aggregation | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs40a.aspx | 2026-10-23 |
+| CIRS art. 70, minimum existence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx | 2026-10-23 |
 | CIRS art. 23, currency conversion | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs23.aspx | 2026-10-23 |
 | CIRS art. 18, Portuguese-source income | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs18.aspx | 2026-10-23 |
 | CIRS art. 53, pension specific deduction | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx | 2026-10-22 |
 | CIRS art. 60, filing period and extension | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-23 |
-| CIRS art. 71, 35% withholding for low-tax jurisdictions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-23 |
+| CIRS art. 71, 28% final withholding (incl. foreign securities income paid through a Portuguese intermediary, art. 71(1)(b)) and 35% for low-tax jurisdictions | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs71.aspx | 2026-10-23 |
 | CIRS art. 97, payment | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx | 2026-10-22 |
 | Portaria 480-A/2025/1, IAS 2026 = EUR 537.13 | https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222 | 2026-10-23 |
 | Aviso 2/2022, Sweden terminates the treaty from 1 January 2022 | https://files.dre.pt/1s/2022/02/02200/0000300003.pdf | 2026-10-23 |
