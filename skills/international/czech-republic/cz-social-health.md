@@ -1,22 +1,22 @@
 ---
 name: cz-social-health
-description: "Czech social security and public health insurance for the self-employed (OSVČ) for tax year 2026. Covers the pension and employment-policy rate of 29.2% on 55% of profit, health insurance of 13.5% on 50% of profit, voluntary sickness insurance at 2.7%, the 2026 minimum bases (main activity cut from 40% to 35% of the average wage by Act 90/2026 Coll., back to January, with a refund claim by 31 December 2026), minimum advances of CZK 5,005 social and CZK 3,306 health, the CZK 117,521 secondary-activity threshold, the CZK 2,350,416 social cap, the flat-rate tax regime (paušální daň) bands, due dates, the annual přehled, penalties and EU rules. Trigger on: OSVČ zálohy, sociální pojištění OSVČ, zdravotní pojištění OSVČ, přehled OSSZ, vedlejší činnost, paušální daň. Out of scope: employee and employer contributions (not yet covered in this pack), income tax (cz-income-tax), residence and treaties (cz-cross-border)."
+description: "Czech social security and public health insurance for the self-employed (OSVČ) for tax year 2026. Covers the pension and employment-policy rate of 29.2% on 55% of profit, health insurance of 13.5% on 50% of profit, voluntary sickness insurance at 2.7%, the 2026 minimum bases (main activity cut from 40% to 35% of the average wage by Act 90/2026 Coll., back to January, with a refund claim by 31 December 2026), minimum advances of CZK 5,005 social and CZK 3,306 health, the CZK 117,521 secondary-activity threshold, the CZK 2,350,416 social cap, the flat-rate tax regime (paušální daň) bands, due dates, the annual přehled, penalties and EU rules. Trigger on: OSVČ zálohy, sociální pojištění OSVČ, zdravotní pojištění OSVČ, přehled OSSZ, vedlejší činnost, paušální daň. Out of scope: employee and employer contributions (cz-employee-contributions), income tax (cz-income-tax), residence and treaties (cz-cross-border)."
 jurisdiction: CZ
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 2.1
 verified_by: pending
 ---
 
-# Czech Republic: social and health insurance for the self-employed (OSVČ), 2026 v0.1
+# Czech Republic: social and health insurance for the self-employed (OSVČ), 2026 v2.1
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from the Czech Social Security Administration (ČSSZ), the General Health Insurance Company (VZP), the Financial Administration (Finanční správa), the Czech National Bank and the statutes in the Collection of Laws (e-Sbírka), read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
 This skill covers the contributions a self-employed person (osoba samostatně výdělečně činná, OSVČ) pays on their own business profit. Related skills in this pack:
 
-- Employee and employer contributions: not yet covered in this pack.
+- Employee and employer contributions: [cz-employee-contributions](cz-employee-contributions.md).
 - Income tax for the self-employed, including flat-rate expenses: [cz-income-tax](cz-income-tax.md).
 - Residence, non-residents and treaties: [cz-cross-border](cz-cross-border.md). Overview: [cz-tax-overview](cz-tax-overview.md).
 
@@ -51,7 +51,7 @@ If one of these facts lasts only part of the year, the minimum is cut pro rata f
 
 **Sickness insurance** is voluntary for an OSVČ. The person joins by filing an application (SIA § 11).
 
-**Out of scope here:** employee and employer contributions (not yet covered in this pack) and income tax ([cz-income-tax](cz-income-tax.md)).
+**Out of scope here:** employee and employer contributions (cz-employee-contributions) and income tax ([cz-income-tax](cz-income-tax.md)).
 
 ## Rates, bands and thresholds
 

@@ -17,9 +17,9 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 | IT-CORP, corporate income tax | hu-corporate-tax | source-cited draft |
 | VAT | hungary-vat-return, hu-vat-return | source-cited draft |
 | SC, social contributions | hu-social-contributions | source-cited draft |
-| PR, payroll withholding | (missing) | |
+| PR, payroll withholding | hu-payroll | source-cited draft |
 | TP, transfer pricing | hu-transfer-pricing | source-cited draft |
-| XB, cross-border | (missing) | |
+| XB, cross-border | hu-cross-border | source-cited draft |
 
 hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accounting packs milestone.
 
