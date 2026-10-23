@@ -6,8 +6,6 @@ covered_by:
   SC: at-payroll-and-social-insurance
   PR: at-payroll-and-social-insurance
   XB: at-cross-border
-partial:
-  PR: "at-payroll-and-social-insurance has no method for overtime, night and shift supplements (EStG § 68) or termination payments (EStG § 67(3) to (8))"
 ---
 
 # Austria: tax pack
