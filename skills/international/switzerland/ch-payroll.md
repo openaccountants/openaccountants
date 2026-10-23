@@ -48,7 +48,7 @@ Out or partly out:
 | BVG coordination deduction | CHF 26,460 | 2026 | [BVG art. 8](https://www.fedlex.admin.ch/eli/cc/1983/797_797_797/de); [BSV Masszahlen](https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf) |
 | BVG maximum insured annual pay | CHF 90,720 | 2026 | same |
 | BVG coordinated pay, minimum / maximum | CHF 3,780 / CHF 64,260 | 2026 | same |
-| BVG minimum savings credits (% of coordinated pay) | Age 25-34: 7%; 35-44: 10%; 45-54: 15%; 55-65: 18% | 2026 | [BVG art. 16](https://www.fedlex.admin.ch/eli/cc/1983/797_797_797/de) |
+| BVG minimum savings credits (% of coordinated pay) | Age 25-34: 7%; 35-44: 10%; 45-54: 15%; 55 to reference age: 18% | 2026 | [BVG art. 16](https://www.fedlex.admin.ch/eli/cc/1983/797_797_797/de) |
 | BVG minimum interest rate | 1.25% | 2026 | [BSV Masszahlen](https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf) |
 | BVG split | Employer pays at least as much as all its employees together | 2026 | [BVG art. 66 para. 1](https://www.fedlex.admin.ch/eli/cc/1983/797_797_797/de) |
 | Family allowance fund (FAK) contribution | Set by each canton and fund, as % of AHV wages | 2026 | [FamZG art. 16](https://www.fedlex.admin.ch/eli/cc/2008/51/de) |
@@ -56,7 +56,7 @@ Out or partly out:
 | Small-wage limit (AHV only on request) | CHF 2,500 a year per employer | 2026 | [sheet 2.01, no. 19](https://www.ahv-iv.ch/p/2.01.d) |
 | AHV payment frequency | Quarterly if annual payroll is up to CHF 200,000; monthly above | 2026 | [AHVV art. 34](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
 | AHV late payment interest | 5% a year, day by day (30-day month, 360-day year) | 2026 | [AHVV art. 41bis and 42](https://www.fedlex.admin.ch/eli/cc/63/1185_1183_1185/de) |
-| Tax at source tariff codes | A single; B married, one earner; C married, two earners; H single with children; G replacement income; L to Q German frontier workers; R to V Italian frontier workers | 2026 | [QStV art. 1](https://www.fedlex.admin.ch/eli/cc/2018/274/de) |
+| Tax at source tariff codes | A single, not living with children; B married, one earner; C married, two earners; H single living with and mainly supporting children; D AHV refunds under AHVG art. 18 para. 3; E simplified procedure; G replacement income not paid through the employer; L to Q German frontier workers; R to V Italian frontier workers | 2026 | [QStV art. 1](https://www.fedlex.admin.ch/eli/cc/2018/274/de) |
 | Employer's commission on tax at source (federal range) | 1% to 2% of the tax, set by the canton | 2026 | [DBG art. 88 para. 4](https://www.fedlex.admin.ch/eli/cc/1991/1184_1184_1184/de) |
 | Zurich commission on tax at source | 2% of the tax (1% on pension lump sums, max CHF 50 each) | 2026 | [Kantonales Steueramt Zürich](https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-abrechnen.html) |
 | Zurich tariff A0, no church tax, gross CHF 6,951 to 7,000 a month | 7.75% | 2026 | [Zurich Tarif A ohne Kirchensteuer, Ausgabe 2026](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/p208840_QuellensteuerTarif_A_ohne_KS_ENT1.pdf) |
@@ -96,7 +96,7 @@ The DBG and the Wegleitung set no calendar date for handing over the Lohnausweis
 
 The tax at source goes to the canton of residence of each employee, even where the employer sits in another canton (DBG art. 88 para. 2 and art. 107 para. 3). An employer with staff living in several cantons files in each.
 
-Small employers can use the simplified procedure (BGSA): one annual settlement of AHV/IV/EO, ALV, family allowances and a flat source tax with the compensation fund. Each wage must not exceed CHF 22,680 and total payroll CHF 60,480, and it is not open to companies (AG, GmbH) or cooperatives ([sheet 2.01](https://www.ahv-iv.ch/p/2.01.d), no. 6; DBG art. 37a).
+Small employers can use the simplified procedure (BGSA): one annual settlement of AHV/IV/EO, ALV, family allowances and a flat source tax with the compensation fund. For 2026 each wage must not exceed CHF 22,680 and total payroll CHF 60,480 (twice the maximum AHV old-age pension), all staff must be settled this way, and it is not open to companies (AG, GmbH) or cooperatives ([AHV/IV sheet 2.07, Stand 1.1.2026](https://www.ahv-iv.ch/p/2.07.d), no. 2; AHVV art. 34 para. 1 let. c). The flat source tax is 5% of the AHV wage: 0.5% federal (DBG art. 37a) and 4.5% cantonal and communal (sheet 2.07, no. 5).
 
 ## Penalties and interest
 
@@ -164,7 +164,7 @@ A single Portuguese citizen with a B permit lives in the canton of Zurich, has n
 
 Social deductions: AHV/IV/EO 5.3% = CHF 371 and ALV 1.1% = CHF 77 (below the CHF 12,350 monthly ceiling). The BVG and UVG employee contributions depend on her fund and insurer and are left out here.
 
-The employer keeps a 2% commission on the tax, CHF 10.85, and pays CHF 531.65 to the Kantonales Steueramt Zürich on the monthly return, due within 30 days after the month ends.
+The employer keeps a 2% commission on the tax, CHF 10.85, so CHF 531.65 is owed to the Kantonales Steueramt Zürich. The employer files the monthly return within 30 days after the month ends; the tax office then invoices the amount.
 
 The edge case: her annual gross is 12 x 7,000 = CHF 84,000, which is CHF 36,000 under the CHF 120,000 NOV threshold. So tax at source is final for her salary unless she asks for an NOV by 31 March 2027 (DBG art. 89a). If she had a 13th salary or bonus, the month's rate would be set under ESTV circular 45, not simply read from the monthly table.
 
@@ -212,6 +212,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Informationsstelle AHV/IV, Merkblatt 2.01 Lohnbeiträge an die AHV, IV und EO, Stand 1. Januar 2026 | https://www.ahv-iv.ch/p/2.01.d | 2026-10-23 |
+| Informationsstelle AHV/IV, Merkblatt 2.07 Vereinfachtes Abrechnungsverfahren für Arbeitgebende, Stand 1. Januar 2026 | https://www.ahv-iv.ch/p/2.07.d | 2026-10-23 |
 | Informationsstelle AHV/IV, Merkblatt 2.08 Beiträge an die Arbeitslosenversicherung, Stand 1. Januar 2025 | https://www.ahv-iv.ch/p/2.08.d | 2026-10-23 |
 | Informationsstelle AHV/IV, Update Sozialversicherungen in der Schweiz, Änderungen 2026 | https://www.shop.ahv-iv.ch/data/docs/de/82816/Update-%C2%ABSozialversicherungen-in-der-Schweiz%C2%BB-Stand-1.-Januar-2026.pdf | 2026-10-23 |
 | AHVG, SR 831.10, version of 1 January 2026, art. 5, 13, 51, 52 | https://www.fedlex.admin.ch/eli/cc/63/837_843_843/de | 2026-10-23 |
@@ -229,4 +230,4 @@ expected:
 | Kantonales Steueramt Zürich, Quellensteuer-Tarife | https://www.zh.ch/de/steuern-finanzen/steuern/quellensteuer/quellensteuer-tarife.html | 2026-10-23 |
 | Kantonales Steueramt Zürich, Quellensteuertarif A ohne Kirchensteuer, Ausgabe 2026 | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/p208840_QuellensteuerTarif_A_ohne_KS_ENT1.pdf | 2026-10-23 |
 
-Not yet confirmed: a 2026 edition of AHV/IV sheet 2.08 (the 2025 edition was read; AVIG art. 3 and UVV art. 22 as in force on 1 January 2026 give the same 2.2% and CHF 148,200); a fixed calendar deadline for the Lohnausweis (none in the DBG or the 2026 Wegleitung; any cantonal deadline is not checked); the 2026 BGSA simplified-procedure limits (sheet 2.01 of 2026 still quotes the 2025 figures CHF 22,680 and CHF 60,480); cantonal FAK rates, who bears them in each canton, and the compensation funds' administration fees; UVG premium rates (insurer-specific); the commission rate and return frequency in cantons other than Zurich.
+Not yet confirmed: a 2026 edition of AHV/IV sheet 2.08 (the 2025 edition was read; AVIG art. 3 and UVV art. 22 as in force on 1 January 2026 give the same 2.2% and CHF 148,200); a fixed calendar deadline for the Lohnausweis (none in the DBG or the 2026 Wegleitung; any cantonal deadline is not checked); cantonal FAK rates, who bears them in each canton, and the compensation funds' administration fees; UVG premium rates (insurer-specific); the commission rate and return frequency in cantons other than Zurich.
