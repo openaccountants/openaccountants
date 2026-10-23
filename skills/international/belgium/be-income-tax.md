@@ -6,7 +6,7 @@ jurisdiction: BE
 tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
-trust_label: By OpenAccountants
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -51,17 +51,18 @@ Income year 2026 is assessment year 2027. All income tax figures below are the i
 | VAPZ maximum rate | Ordinary VAPZ 8.50% of the reference income (was 8.17%); social VAPZ 9.78% (was 9.40%); from contribution year 2026 | 2026 | [RSVZ, Wijzigingen VAPZ, 13 October 2026](https://www.rsvz.be/nl/nieuws/wijzigingen-vapz) |
 | Restaurant costs | 69% deductible (31% disallowed) | Income 2026 | [Art. 53, 8°bis WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca) |
 | Reception costs and business gifts | 50% deductible; branded advertising items excluded from the limit | Income 2026 | [Art. 53, 8° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca) |
-| Car costs | Not deductible unless the car emits no CO2. Plug-in hybrid: electricity at the zero-emission rate; other costs (not fuel) at 120% - 0.5% x g CO2/km, at most 75% for a car bought, leased or rented before 1 January 2028 unless it emits 50 g/km or less. Home to work by car: EUR 0.15 per km | Income 2026 | [Art. 66 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3) |
+| Car costs, cars bought, leased or rented from 1 January 2026 | Not deductible unless the car emits no CO2. Plug-in hybrid: electricity at the zero-emission rate; other costs (not fuel) at 120% - 0.5% x g CO2/km, at most 75% for a car bought, leased or rented before 1 January 2028 unless it emits 50 g/km or less. Home to work by car: EUR 0.15 per km | Income 2026 | [Art. 66 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3) |
+| Car costs, cars bought, leased or rented before 1 January 2026 | 120% - (0.5% x coefficient x g CO2/km), coefficient 1 for diesel, 0.95 for other fuels (0.90 for natural gas under 12 fiscal hp), rounded to one decimal. Bought before 1 July 2023: at least 50% (40% at 200 g/km or more or with no CO2 data), at most 100%; bought before 1 January 2018: at least 70% for income 2026. Bought from 1 July 2023 to 31 December 2025: at most 25% unless zero-emission, 0% with no CO2 data. Plug-in hybrid bought from 1 July 2023 to 31 December 2025: electricity 100%, fuel at the 25% cap, other costs by the formula at most 75% (100% at 50 g/km or less) | Income 2026 | [Art. 550 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d51b4c37-c6d6-4fd2-ad8b-28ee18069895) |
 | Prepayment increase on profits and benefits | None from assessment year 2027. The increase now applies only to company directors' pay (art. 30, 2°) | Income 2026 (law of 15 July 2026) | [Art. 157 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/333419cd-668a-47b2-b989-0e421421f5bc) |
 | Base rate (basisrentevoet) | 2%: the ECB marginal lending rate on 1 January 2026 (2.40%) rounded down to the unit, never under 1% | Income 2026 | [Art. 161 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/1f33c7f0-21c9-4cc3-9e45-41cb00db2b7e); [ECB key interest rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html) |
 | Bonification on prepayments (self-employed) | 1.5, 1.25, 1 and 0.75 times the base rate: 3% (by 10 April 2026), 2.5% (by 10 July), 2% (by 10 October), 1.5% (by 20 December). Prepayments from 21 December 2026 to 20 February 2027: 0.5 times the base rate, 1% | Income 2026 | [Art. 176](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/8eff9596-837e-469e-8e90-0b1d72e582e1) and [art. 177 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d5619aa0-3a1c-4dba-8600-7e87e8c4bdfc) |
-| Bonification ceiling | Only prepayments up to the tax on the self-employed income, raised to 106%, less withholding and credits | Income 2026 | [Art. 175 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db64628c-365f-4ee1-b0fb-122282a6c557) |
-| Prepayment increase, company directors only | 2.25 times the base rate (4.5%), cut to 90%, less 3, 2.5, 2 and 1.5 times the base rate (6%, 5%, 4%, 3%) on prepayments by 10 April, 10 July, 10 October and 20 December; none under 0.5% of the tax or EUR 100; tax counted at 106% | Income 2026 | [Art. 159](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/b35e0c32-dc58-4847-b389-4481bf0a969b), [160](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/fd39784e-027e-4943-bd38-458c44606ede), [163](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e97ca46f-5f52-425e-87cb-723b84f6f0ba) and [165 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/38f2eab4-a66d-494a-8a4d-d5177ad80182) |
+| Bonification ceiling | Only prepayments up to the total tax raised to 106%, less withholding, tax credits and any prepayments needed to avoid a director's increase. The tax on profits or benefits of a person who assists or replaces a self-employed person without an employment contract (a helper), and on indemnities under art. 27, second paragraph, 5° and 6°, is left out, so prepayments on that income earn no bonification | Income 2026 (law of 15 July 2026) | [Art. 175 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db64628c-365f-4ee1-b0fb-122282a6c557) |
+| Prepayment increase, company directors only | 2.25 times the base rate (4.5%) of the tax on directors' pay counted at 106%, less 3, 2.5, 2 and 1.5 times the base rate (6%, 5%, 4%, 3%) of prepayments by 10 April, 10 July, 10 October and 20 December; the positive difference is cut to 90%; none under 0.5% of the tax or EUR 100 | Income 2026 | [Art. 159](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/b35e0c32-dc58-4847-b389-4481bf0a969b), [160](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/fd39784e-027e-4943-bd38-458c44606ede), [163](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e97ca46f-5f52-425e-87cb-723b84f6f0ba) and [165 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/38f2eab4-a66d-494a-8a4d-d5177ad80182) |
 | Municipal surcharge | Rate set by each municipality, charged on the total tax | Income 2026 | [Art. 466](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/81bf3101-a837-4d89-8b97-713e080f00ac) and [art. 468 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/4d803548-89eb-4ef5-b1a5-12f5751e1313) |
 | Late payment interest | 4% a year for 2026 and 2027 | 2026, 2027 | [Art. 414 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5); [law of 5 May 1865, art. 2, §2/1](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/da7e0caf-3428-43aa-ab80-30410a15beca) |
 | Tax increase | 10% to 200% of the tax on undeclared or late income; none for a first offence in good faith, presumed | Income 2026 | [Art. 444 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0) |
 
-**Coming next year, not for income 2026.** The law of 15 July 2026 adds an entrepreneur deduction (ondernemersaftrek) of 10% of profits and benefits, capped at EUR 311 and later EUR 415, from assessment year 2028 (income 2027). Do not apply it to income 2026.
+**Coming next year, not for income 2026.** The law of 15 July 2026 adds an entrepreneur deduction (ondernemersaftrek, new art. 81 WIB 92): 10% of profits and benefits after deducting professional losses (art. 78 to 80), at most EUR 311, from assessment year 2028 (income 2027); the cap becomes EUR 415 from assessment year 2030 (income 2029). It does not apply to an assisting spouse's income, helpers' income, replacement income or attendance fees. Do not apply it to income 2026.
 
 ## The taxable base
 
@@ -78,7 +79,7 @@ Work through the return in this order.
 6. **Net professional income.** For a married couple or legal cohabitants, the assisting-spouse attribution (art. 86) and the marital quotient (art. 87 and 88) can move part of it; see `be-employee-income-tax`.
 7. **Scale tax** on taxable income (art. 130), **less tax on the tax-free amount** (art. 134). With children or dependants, add the supplements first.
 8. **Less reductions** (pension savings, gifts, childcare and others) as in `be-employee-income-tax`.
-9. **Municipal surcharge.** Multiply the tax by the municipality's rate (art. 466). The rate must be known; if the municipality is unknown, stop and ask.
+9. **Regional split and municipal surcharge.** The basic tax is shared between the federal state and the region, which levies its own surcharge and can grant regional reductions (see `be-employee-income-tax`). The worked examples below assume the regional surcharge exactly offsets the federal autonomy cut; that is an assumption, not a confirmed 2026 result. Then multiply the tax by the municipality's rate (art. 466). The rate must be known; if the municipality is unknown, stop and ask.
 10. **Prepayments and bonification.** Deduct prepayments made for 2026 and the bonification they earned (art. 175 to 177). No increase for missing prepayments on self-employed profits or benefits from assessment year 2027.
 
 ### Classifying bank lines
@@ -133,7 +134,7 @@ The exact Tax-on-web dates for income 2026 are not yet published; see "Not yet c
 
 ### Example 1: consultant (benefits), lump sum beats actual costs
 
-Facts: a single resident consultant, no children, gross benefits EUR 60,000 in 2026 (net of VAT). Social contributions paid in 2026: EUR 10,500. Provable costs: EUR 3,000. No prepayments. The municipality's rate is assumed to be 7%.
+Facts: a single resident consultant, no children, gross benefits EUR 60,000 in 2026 (net of VAT). Social contributions paid in 2026: EUR 10,500. Provable costs: EUR 3,000. No prepayments. The municipality's rate is assumed to be 7%. The regional surcharge is assumed to offset the federal autonomy cut exactly.
 
 1. Base for the lump sum: 60,000 - 10,500 = EUR 49,500.
 2. Lump sum for benefits: 28.7% x 7,720 = 2,215.64; 10% x (15,340 - 7,720) = 762; 5% x (25,530 - 15,340) = 509.50; 3% x (49,500 - 25,530) = 719.10. Total EUR 4,206.24, under the EUR 5,340 cap. It beats the EUR 3,000 of actual costs, so the lump sum is used.
@@ -177,7 +178,7 @@ expected:
 
 ### Example 2: trader (profits), lump sum capped, prepayments with bonification
 
-Facts: a single resident shopkeeper, no children. Gross receipts EUR 120,000 in 2026 (net of VAT); goods bought for resale EUR 40,000; social contributions paid EUR 15,000; other provable costs EUR 9,000. Prepayments: EUR 5,000 on 2 April 2026, EUR 5,000 on 8 July 2026 and EUR 5,000 on 15 January 2027. Municipal rate assumed 7.5%.
+Facts: a single resident shopkeeper, no children. Gross receipts EUR 120,000 in 2026 (net of VAT); goods bought for resale EUR 40,000; social contributions paid EUR 15,000; other provable costs EUR 9,000. Prepayments: EUR 5,000 on 2 April 2026, EUR 5,000 on 8 July 2026 and EUR 5,000 on 15 January 2027. Municipal rate assumed 7.5%. Same regional assumption as Example 1.
 
 1. Base: 120,000 - 40,000 - 15,000 = EUR 65,000.
 2. Lump sum for profits: 30% x 65,000 = 19,500, capped at EUR 6,070. Actual costs of EUR 9,000 are higher, so actual costs are used.
@@ -236,7 +237,8 @@ expected:
 3. Social contributions and VAPZ actually paid in 2026, with the fund's statement.
 4. Actual costs with invoices, and any car: CO2, fuel type, date bought or leased, business share.
 5. Prepayments made for 2026, with the payment dates.
-6. Family situation and any other income (pay, rent, foreign income), and whether the client is also a company director.
+6. Family situation and any other income (pay, rent, foreign income), whether the client is also a company director, and whether any of the income is earned as a helper who assists or replaces another self-employed person (no bonification on that part).
+7. Region of residence, for the regional surcharge and regional reductions.
 
 ## Sources
 
@@ -246,12 +248,14 @@ expected:
 | Fisconetplus, art. 52 WIB 92 (income 2026), social contributions | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34 | 2026-10-23 |
 | Fisconetplus, art. 53 WIB 92 (income 2026), restaurant and gift limits | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca | 2026-10-23 |
 | Fisconetplus, art. 66 WIB 92 (income 2026), car costs | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3 | 2026-10-23 |
+| Fisconetplus, art. 550 WIB 92, car costs for cars bought before 1 January 2026 (version for assessment year 2027) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d51b4c37-c6d6-4fd2-ad8b-28ee18069895 | 2026-10-23 |
 | Fisconetplus, art. 130 WIB 92 (income 2026), tax scale | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-10-23 |
 | Fisconetplus, art. 131 WIB 92 (income 2026), tax-free amount | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
 | Fisconetplus, art. 134 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/20a503a9-4213-4e60-a91c-0ebb907e176a | 2026-10-23 |
 | Fisconetplus, art. 157 WIB 92 (income 2026), prepayment increase | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/333419cd-668a-47b2-b989-0e421421f5bc | 2026-10-23 |
 | Fisconetplus, art. 159 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/b35e0c32-dc58-4847-b389-4481bf0a969b | 2026-10-23 |
 | Fisconetplus, art. 160 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/fd39784e-027e-4943-bd38-458c44606ede | 2026-10-23 |
+| Fisconetplus, art. 162 WIB 92 (income 2026), royal decree power to change the increase rate | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/4519285d-7f8c-4268-94a9-32e0de756319 | 2026-10-23 |
 | Fisconetplus, art. 161 WIB 92 (income 2026), base rate | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/1f33c7f0-21c9-4cc3-9e45-41cb00db2b7e | 2026-10-23 |
 | Fisconetplus, art. 163 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e97ca46f-5f52-425e-87cb-723b84f6f0ba | 2026-10-23 |
 | Fisconetplus, art. 165 WIB 92, tax counted at 106% | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/38f2eab4-a66d-494a-8a4d-d5177ad80182 | 2026-10-23 |
@@ -266,4 +270,4 @@ expected:
 | ECB, key interest rates (marginal lending facility 2.40% from 11 June 2025 to 16 June 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |
 | RSVZ, Wijzigingen VAPZ (13 October 2026) | https://www.rsvz.be/nl/nieuws/wijzigingen-vapz | 2026-10-23 |
 
-Not yet confirmed: whether a royal decree under art. 162 set a different increase rate for assessment year 2027 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the rates above follow the law and the ECB rate); the Tax-on-web opening date and any administrative extension for income 2026; the deductible percentage for zero-emission cars and the transitional percentages for fossil-fuel cars bought before 1 July 2023 or between 1 July 2023 and 31 December 2025 (art. 550 and the law of 25 November 2021 were not re-read); the VAPZ maximum in euro for 2026; whether art. 64 still allows declining-balance depreciation for a self-employed person in 2026.
+Not yet confirmed: whether a royal decree under art. 162 set a different increase rate for assessment year 2027 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the rates above follow the law and the ECB rate); the Tax-on-web opening date and any administrative extension for income 2026; the deductible percentage for zero-emission cars (the art. 66, §1 text on Fisconetplus does not print it); the regional surcharge rates and autonomy factor for income 2026 (the examples assume they offset exactly); the VAPZ maximum in euro for 2026; whether art. 64 still allows declining-balance depreciation for a self-employed person in 2026.

@@ -4,7 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: "belgium-crypto-tax still uses the income 2025 scale and tax-free amount for professional crypto income"
+  PR: "belgium-payroll does not compute 2026 payroll withholding (bedrijfsvoorheffing): the 2026 Annex III key formula and its family reductions are not yet in the skill"
 ---
 
 # Belgium: tax pack
@@ -15,11 +15,11 @@ Calendar income year, named after the following assessment year (income 2026 is 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | be-employee-income-tax (employees and pensioners), be-income-tax (self-employed, income 2026), be-capital-gains, belgium-crypto-tax (professional crypto still on income 2025 scale) | source-cited draft |
+| IT-IND, individual income tax | be-employee-income-tax (employees and pensioners), be-income-tax (self-employed, income 2026), be-capital-gains, belgium-crypto-tax (income 2026 scale for professional crypto) | source-cited draft |
 | IT-CORP, corporate income tax | be-corporate-tax | source-cited draft |
 | VAT | be-vat-return, belgium-vat-return | source-cited draft |
 | SC, social contributions | be-social-contributions (self-employed, 2026 RSVZ amounts); employee and employer ONSS / RSZ in belgium-payroll | source-cited draft |
-| PR, payroll withholding | belgium-payroll (2026 RSZ rates, work bonus and reductions) | source-cited draft |
+| PR, payroll withholding | belgium-payroll (2026 RSZ rates, work bonus and reductions). Missing: the 2026 withholding computation (Annex III) | source-cited draft; partial: no 2026 withholding formula |
 | TP, transfer pricing | be-transfer-pricing | source-cited draft |
 | XB, cross-border | be-cross-border (hub: residence, inbound regime, individual exit tax from 2026, non-residents); company exit tax also in be-corporate-tax | source-cited draft |
 

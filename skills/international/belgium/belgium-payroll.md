@@ -6,7 +6,7 @@ jurisdiction: BE
 tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
-trust_label: By OpenAccountants
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
 category: payroll
@@ -88,7 +88,7 @@ The 2026 monthly withholding reductions for dependent children, other dependants
 
 ### Work Bonus (Werkbonus / Bonus à l'emploi)
 
-The social work bonus cuts the 13.07% employee contribution for low pay. It has two parts, computed on the monthly reference pay S (gross pay at 100%, full-time equivalent), and the final bonus is the sum of both. It fully offsets the employee contribution up to a reference pay of about EUR 2,300 a month. Source: [RSZ instructions 2026/3, work bonus](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html).
+The social work bonus cuts the 13.07% employee contribution for low pay. It has two parts, computed on the monthly reference pay S (gross pay at 100%, full-time equivalent), and the final bonus is the sum of both. It can never exceed the employee contribution; a shortfall is cut from part B first, then part A. From 1 July 2026 the total reduction is capped at EUR 3,594.36 per worker per calendar year. Source: [RSZ instructions 2026/3, work bonus](https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/deductions/workers_reductions/workbonus.html).
 
 | White-collar (bedienden), 2026 | Part A (low pay) | Part B (very low pay) |
 | --- | --- | --- |
@@ -96,7 +96,7 @@ The social work bonus cuts the 13.07% employee contribution for low pay. It has 
 | Tapering, July and August 2026 | 127.54 - 0.3196 x (S - 2,937.93), nil above EUR 3,336.98 | 171.99 - 0.2699 x (S - 2,300.62), nil above EUR 2,937.93 |
 | Tapering, from 1 September 2026 | 127.54 - 0.2739 x (S - 2,937.93), nil above EUR 3,403.62 | 171.99 - 0.2699 x (S - 2,300.62), nil above EUR 2,937.93 |
 
-Blue-collar workers (arbeiders) get higher amounts: part A EUR 137.74, part B EUR 185.75 for July and August 2026, with their own slopes. The amounts for January to June 2026 are not shown on the 2026/3 page; see "Not yet confirmed". Part-time and incomplete months are converted to a full-time reference pay first (S = W / J x D, or W / H x U).
+Blue-collar workers (arbeiders, declared at 108%) get higher amounts on the same pay bands: part A EUR 137.74, tapering by 0.3452 x (S - 2,937.93) in July and August 2026 and by 0.2958 x (S - 2,937.93) from 1 September 2026; part B EUR 185.75, tapering by 0.2915 x (S - 2,300.62). The amounts for January to June 2026 are not shown on the 2026/3 page; see "Not yet confirmed". Part-time and incomplete months are converted to a full-time reference pay first (S = W / J x D, or W / H x U).
 
 ### Key Rules
 
@@ -178,8 +178,8 @@ The guaranteed average minimum monthly income (GGMMI) is set by collective agree
 | Double holiday pay | 92% of gross monthly salary (paid in May/June) |
 | 13th month / end-of-year premium | Sector-dependent (most CPs mandate it) |
 | Guaranteed salary (illness) | 30 days at full pay (white-collar); 7/7/14 days (blue-collar) |
-| Meal vouchers | Employer max EUR 6.91/day worked (common: EUR 8 total, EUR 1.09 employee) |
-| Eco-cheques | Max EUR 250/year |
+| Meal vouchers | Electronic vouchers granted from 1 January 2026: employer share at most EUR 8.91 per voucher, employee share at least EUR 1.09, one voucher per day actually worked ([art. 38/1, §2 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796974b3-6cc3-458b-bd22-a129b359909b)) |
+| Eco-cheques | At most EUR 250 per worker per year, EUR 10 per cheque ([art. 38/1, §4 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796974b3-6cc3-458b-bd22-a129b359909b)) |
 | Commuting allowance | Mandatory (amount depends on transport mode and CP) |
 | Group insurance (2nd pillar pension) | Common via sector or company plan |
 | Hospitalisation insurance | Widespread (not strictly mandatory but often via CP) |
@@ -365,6 +365,7 @@ expected:
 | Fisconetplus, art. 51 WIB 92 (income 2026), lump-sum expenses | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c | 2026-10-23 |
 | Fisconetplus, art. 130 WIB 92 (income 2026), tax scale | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-10-23 |
 | Fisconetplus, art. 131 WIB 92 (income 2026), tax-free amount | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
+| Fisconetplus, art. 38/1 WIB 92, meal vouchers and eco-cheques (version for vouchers granted from 1 January 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796974b3-6cc3-458b-bd22-a129b359909b | 2026-10-23 |
 | Fisconetplus, art. 289ter/1 WIB 92 (income 2026), fiscal work bonus | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5403364d-120e-4c43-8945-ac770f1228f6 | 2026-10-23 |
 
-Not yet confirmed: the 2026 Annex III withholding formula, its family and child reductions and the special rates for holiday pay and bonuses (FPS Finance pages at financien.belgium.be were behind a human-verification check and the 2026 royal decree could not be located); the special social security contribution scale for 2026; the work bonus amounts for January to June 2026 and the blue-collar slopes from 1 September 2026; the 2026 minimum wage (GGMMI) under collective agreement no. 43, which is not restated here; the company car CO2 contribution for 2026. Sections 5 to 8 (minimum wage, working time, benefits, payslips and filing deadlines) were not re-read against 2026 sources in this update.
+Not yet confirmed: the 2026 Annex III withholding formula, its family and child reductions and the special rates for holiday pay and bonuses (FPS Finance pages at financien.belgium.be were behind a human-verification check and the 2026 royal decree could not be located); the special social security contribution scale for 2026; the work bonus amounts for January to June 2026; the 2026 minimum wage (GGMMI) under collective agreement no. 43, which is not restated here; the company car CO2 contribution for 2026. Sections 5 to 8 (minimum wage, working time, benefits, payslips and filing deadlines) were not re-read against 2026 sources in this update, except the meal voucher and eco-cheque limits.
