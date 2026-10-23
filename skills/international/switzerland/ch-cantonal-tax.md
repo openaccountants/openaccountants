@@ -1,7 +1,7 @@
 ---
 name: ch-cantonal-tax
 description: "Swiss cantonal and communal income and wealth tax on individuals for tax year 2026, from the StHG, the ESTV tables and cantonal sources. Covers how the tax is built (simple tax from the cantonal tariff, times the cantonal, communal and church multipliers), the 2026 multipliers in all 26 cantonal capitals, the Zurich and Zug 2026 tariffs, wealth tax thresholds, deductions that differ by canton (commuting caps, childcare), filing deadlines for Zurich, Zug, Bern, Basel-Stadt, Geneva and Vaud, the 31 December rule when moving between cantons, interest and penalties. Two worked examples: CHF 100,000 taxable income in Zurich city and in Zug city. Trigger on: Kantonssteuer, Gemeindesteuer, Steuerfuss, einfache Steuer, Kirchensteuer, impôt cantonal et communal, centimes additionnels, Vermögenssteuer, moving canton, Swiss income tax by canton. Out of scope: ch-federal-income-tax, ch-payroll (tax at source), ch-cross-border, ch-lump-sum, ch-corporate-income-tax."
-version: 0.1
+version: 2.1
 jurisdiction: CH
 category: international
 tax_year: 2026
@@ -27,7 +27,7 @@ Related skills, linked rather than repeated:
 ## Who this applies to
 
 - **Unlimited liability in a canton:** a person with tax domicile in the canton, or who stays there at least 30 days while working or 90 days without working (StHG art. 3 para. 1). Domicile means living there with the intention of staying, or a domicile given by federal law (StHG art. 3 para. 2).
-- **Couples and children:** the income and wealth of spouses living together are added up, whatever their marital property regime; the same applies to registered partners. A child's income and wealth go to the parent with parental authority, except the child's earned income (StHG art. 3 para. 3 to 5).
+- **Couples and children:** the income and wealth of spouses living together are added up, whatever their marital property regime; the same applies to registered partners. A child's income and wealth go to the parent with parental authority, except the child's earned income and real estate gains, which are taxed separately (StHG art. 3 para. 3 to 5).
 - **Limited liability in a canton:** a person living elsewhere is taxed in the canton where they run a business or permanent establishment, or own real estate (StHG art. 4 para. 1). People not resident in Switzerland are also taxed on work done in the canton, board fees, mortgage interest, pensions from public or Swiss occupational schemes and similar income (StHG art. 4 para. 2).
 - **Moving within Switzerland:** for the whole tax year, the canton where the person lives on 31 December taxes them (StHG art. 4b para. 1). See "Cross-border points".
 - **Taxed at source instead:** foreign employees without a settlement permit (C permit) are taxed through payroll (StHG art. 32 and following); see `ch-payroll` and `ch-cross-border`.
@@ -53,11 +53,11 @@ Most cantons state the multipliers as a percentage of the simple tax. Some (for 
 | OW | Sarnen | 3.25 | 3.86 | 0.54 | 0.54 | units |
 | NW | Stans | 2.66 | 2.35 | 0.26 | 0.40 | units |
 | GL | Glarus | 58% | 61% | 7.5% | 8% | plus a 1.7% building surcharge on the simple tax |
-| ZG | Zug | 78% | 52% | 6% | 5.95% | ESTV shows 2025 for the city; 2026 from the [Zug tax office](https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf) |
+| ZG | Zug | 78% | 52% | 6% | 5.95% | ESTV prints the 2025 commune and church figures (52.11%, 7.5%, 7%); 2026 from the [Zug tax office](https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf) |
 | FR | Fribourg | 96% (wealth 100%) | 80% | 9% (wealth 10%) | 7% (wealth 20%) | |
 | SO | Solothurn | 104% | 107% | 16% | 21% | ESTV shows the 2025 figures |
 | BS | Basel | 100% | none | 8% of the cantonal income tax | 8% of the cantonal income tax | the city levies no communal tax; the canton's tax includes it |
-| BL | Liestal | 100% | 65% | 0.55% of taxable income (0.05 per mille of wealth) | 6.75% of the cantonal tax | |
+| BL | Liestal | 100% | 65% | 0.55% of taxable income; on wealth ESTV prints 0.05 (footnote: per cent or per mille) | 6.75% of the cantonal tax | |
 | SH | Schaffhausen | 76% | 83% | 13% | 13% | |
 | AR | Herisau | 3.3 | 4.1 | 0.60 | 0.47 | units |
 | AI | Appenzell | 96% | 56% | 10% | 10% | ESTV shows the 2025 figures |
@@ -79,8 +79,8 @@ Most cantons state the multipliers as a percentage of the simple tax. Some (for 
 | Zurich: income tariff for single people (Grundtarif), simple tax | 0% on the first CHF 7,000, then 2%, 3%, 4%, 5%, 6%, 7%, 8%, 9%, 10%, 11%, 12% on bands of 5,000, 4,800, 8,000, 9,700, 11,200, 13,100, 17,600, 34,000, 33,700, 53,300, 69,300; 13% above CHF 266,700 | 2026 | [ESTV Kantonsblatt Zürich, § 35 para. 1 StG](https://www.estv2.admin.ch/stp/kb/zh-de.pdf) |
 | Zurich: married tariff | 0% on the first CHF 14,100; 13% above CHF 370,600 | 2026 | [ESTV Kantonsblatt Zürich, § 35 para. 2 StG](https://www.estv2.admin.ch/stp/kb/zh-de.pdf) |
 | Zurich: wealth tariff, single | 0 per mille on the first CHF 81,000, rising to 3 per mille above CHF 3,304,000; married: 0 on the first CHF 161,000 | 2026 | [ESTV Kantonsblatt Zürich, § 47 StG](https://www.estv2.admin.ch/stp/kb/zh-de.pdf) |
-| Zurich: cantonal multiplier | 95% for 2026 and 2027 (set every two years) | 2026 | [ESTV table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf); [§ 2 StG in the Kantonsblatt](https://www.estv2.admin.ch/stp/kb/zh-de.pdf) |
-| Zug: income tariff for single people (Grundtarif), simple tax | 0.5% on the first CHF 1,100, then 1%, 2%, 3%, 3.25%, 3.5%, 4%, 4.5%, 5.5%, 5.5%, 6.5%, 8%, 10%, 9% on bands of 2,200, 2,800, 4,000, 5,200, 5,800, 5,800, 8,000, 11,500, 13,300, 15,000, 20,100, 25,300, 29,800; 8% above CHF 149,900 | 2026 | [Steuerverwaltung Zug, Grundtarif gültig Steuerperiode 2026](https://zg.ch/dam/jcr:96c7eef4-eb2f-4f8a-a4c4-dad209249598/Grundtarif%202001%20bis%202026.pdf) |
+| Zurich: cantonal multiplier | 95% for 2026. The Kantonsrat sets it for two calendar years at a time, and the 2026 indexation marks the start of a period, so 95% runs for 2026 and 2027 | 2026 | [ESTV table 3.4.1](https://www.estv2.admin.ch/stp/ds/e-steuersatz-steuerfuss-de.pdf); [§ 2 para. 2 and § 48 StG in the Kantonsblatt](https://www.estv2.admin.ch/stp/kb/zh-de.pdf) |
+| Zug: income tariff for single people (Grundtarif), simple tax (bands unchanged from 2025: index June 2025 at 110.2, as in June 2024) | 0.5% on the first CHF 1,100, then 1%, 2%, 3%, 3.25%, 3.5%, 4%, 4.5%, 5.5%, 5.5%, 6.5%, 8%, 10%, 9% on bands of 2,200, 2,800, 4,000, 5,200, 5,800, 5,800, 8,000, 11,500, 13,300, 15,000, 20,100, 25,300, 29,800; 8% above CHF 149,900 | 2026 | [Steuerverwaltung Zug, Grundtarif gültig Steuerperiode 2026](https://zg.ch/dam/jcr:96c7eef4-eb2f-4f8a-a4c4-dad209249598/Grundtarif%202001%20bis%202026.pdf) |
 | Zug: personal deduction | CHF 12,000 single; CHF 24,000 married or single with children (amounts in force from 2025) | 2026 | [ESTV Kantonsblatt Zug, § 33 StG](https://www.estv2.admin.ch/stp/kb/zg-de.pdf) |
 | Zug: wealth tariff | 0.425 per mille on the first CHF 254,000, up to 1.7 per mille above CHF 762,000 | 2026 | [Steuerverwaltung Zug, Grundtarif 2026](https://zg.ch/dam/jcr:96c7eef4-eb2f-4f8a-a4c4-dad209249598/Grundtarif%202001%20bis%202026.pdf) |
 | Zug: cantonal multiplier | 78% for 2026 to 2029 (statutory 82%, cut by the vote of 30 November 2025) | 2026 | [Zug tax office, Steuerfüsse 2023 to 2026](https://zg.ch/dam/jcr:24fb8832-3383-4718-9a48-9461bc7501fc/Steuerf%C3%BCsse%202026_effektiv%2021.1.26.pdf); [vote explanation](https://cdn.zg.ch/dam/jcr:09c43d5c-61d7-4ca1-b825-62f5cba55fba/20251130_Erl%C3%A4uterung%20KA2_%C3%84nderung_Steuergesetz-9_UA.pdf) |
@@ -89,7 +89,7 @@ Most cantons state the multipliers as a percentage of the simple tax. Some (for 
 | Wealth tax, Bern | Not levied if the rate-determining wealth is below CHF 100,000 | 2026 | [ESTV Kantonsblatt Bern, art. 65 para. 3 StG](https://www.estv2.admin.ch/stp/kb/be-de.pdf) |
 | Wealth deduction, Geneva | CHF 87,872 single; CHF 175,743 married or single parent; CHF 43,936 per dependant | 2026 | [ESTV Feuille cantonale Genève, art. 58 LIPP, art. 16 RCEPF](https://www.estv2.admin.ch/stp/kb/ge-fr.pdf) |
 | Wealth tax, Vaud | Net wealth below CHF 60,000 not taxed; doubled for married couples | 2026 | [ESTV Feuille cantonale Vaud, LI](https://www.estv2.admin.ch/stp/kb/vd-fr.pdf) |
-| Pillar 3a, maximum deduction (federal and cantonal) | CHF 7,258 with a pension fund; CHF 36,288 without | 2026 | [BSV, Masszahlen berufliche Vorsorge 2025/2026, no. 9](https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf) |
+| Pillar 3a, maximum deduction (federal and cantonal) | CHF 7,258 with a pension fund; up to CHF 36,288 without | 2026 | [BSV, Masszahlen berufliche Vorsorge 2025/2026, no. 9](https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf) |
 
 **Deductions that differ by canton (2026).** The StHG lets each canton cap commuting costs and set the childcare maximum (StHG art. 9 para. 1 and para. 2 let. m). Pension fund contributions and buy-ins (StHG art. 9 para. 2 let. d) and pillar 3a (let. e, same maximum as federal) are deductible everywhere.
 
@@ -120,7 +120,7 @@ The Basel-Stadt and Zug amounts are those in force from 2025 as shown in the Feb
 
 **Lump sums from pensions.** Pension capital (2nd pillar, pillar 3a) is taxed separately from other income, at a reduced rate, in the canton of residence at the time of payment (StHG art. 4b para. 1 and art. 11 para. 3). Zurich computes it at the rate for one twentieth of the lump sum, with a minimum simple rate of 2% (§ 37 StG); Zug charges 30% (40% above CHF 230,400) of the normal tariff (§ 37 StG Zug).
 
-**Caps on the total burden.** In Geneva and Ticino, cantonal and communal income and wealth tax together may not exceed 60% of net taxable income; any cut is taken from the wealth tax (ESTV, Steuersatz und Steuerfuss, 3.3.1).
+**Caps on the total burden.** In Geneva and Ticino, cantonal and communal income and wealth tax together may not exceed 60% of net taxable income; any cut is taken from the wealth tax. Bern, Lucerne, Basel-Stadt, Aargau, Vaud and Valais have caps of their own, each worked differently (ESTV, Steuersatz und Steuerfuss, 3.3.1).
 
 ## Deadlines and filing
 
@@ -132,7 +132,7 @@ The Basel-Stadt and Zug amounts are those in force from 2025 as shown in the Feb
 | Zurich | 31 March 2027 for the 2026 return; forms sent in January 2027 | [ZStB 133.1, Aufforderung 2027, A.I.3 and 4](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf) |
 | Zug | 30 April of the following year (30 April 2026 for the 2025 return); extensions online | [Kanton Zug, eTax.zug 2025](https://zg.ch/news/news~_2026_2_etax-zug-2025-neue-deklarationsloesung-fuer-natuerliche-personen-ist-online~.html) |
 | Bern | 15 March for employees; 15 May for the self-employed. For the 2025 returns, free online extension to 15 July 2026, at most to 15 November 2026 | [Steuerverwaltung Bern, TaxInfo](https://www.taxinfo.sv.fin.be.ch/taxinfo/1cce120a-05da-45e8-8968-b66ae236fee5); [Kanton Bern media release](https://www.be.ch/de/start/dienstleistungen/medien/medienmitteilungen.html?newsID=68239ab2-4062-4a28-a910-4a9b7bd0dbf4) |
-| Basel-Stadt | 31 March of the following year (31 March 2026 for the 2025 return); reminder fee CHF 40 | [bs.ch, Steuererklärung als natürliche Person einreichen](https://www.bs.ch/themen/arbeit-und-steuern/steuererklaerung/steuererklaerung-als-natuerliche-person-einreichen) |
+| Basel-Stadt | 31 March of the following year (31 March 2026 for the 2025 return); free extension to 30 September 2026 for the 2025 return, CHF 40 for a longer one; reminder fee CHF 40 | [bs.ch, Steuererklärung als natürliche Person einreichen](https://www.bs.ch/themen/arbeit-und-steuern/steuererklaerung/steuererklaerung-als-natuerliche-person-einreichen) |
 | Geneva | Before 31 March of each year, even if no tax is due | [ge.ch, Remplir ma déclaration d'impôt](https://www.ge.ch/remplir-ma-declaration-impot-tant-que-particulier) |
 | Vaud | Legal deadline 15 March, tolerance to 30 June; free extension requests by 30 June | [vd.ch, Demander un délai](https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/demander-un-delai-pour-deposer-ma-declaration-dimpot) |
 
@@ -154,7 +154,7 @@ Other cantons were not read for this skill; use the date on the canton's own not
 - **Moving between cantons:** the canton of residence on 31 December taxes the whole year's income and wealth (StHG art. 4b para. 1). Someone moving from Zug to Zurich on 1 December 2026 files one 2026 return, in Zurich, at Zurich rates. Exception: a pension lump sum is taxed in the canton of residence on the day it falls due (StHG art. 4b para. 1).
 - **Property or business in another canton:** that canton taxes the property or business for the whole year, even if it was bought or sold during the year; income and wealth are split between the cantons under the federal ban on intercantonal double taxation (StHG art. 4b para. 2). The rate in each canton is set on total income and wealth.
 - **Arriving from or leaving for abroad:** liability covers only part of the year; regular income is converted to 12 months for the rate (StHG art. 15 para. 3). See `ch-cross-border`.
-- **Tax at source:** foreign employees without a C permit pay cantonal, communal and federal tax through payroll at the tariff of their canton of residence. Those with gross pay of CHF 120,000 or more, and in Zurich those with wealth of at least CHF 80,000 (single) or other income of at least CHF 3,000, are moved into an ordinary assessment ([ZStB 133.1, A.III](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf)). Details: `ch-payroll`, `ch-cross-border`.
+- **Tax at source:** foreign employees without a C permit pay cantonal, communal and federal tax through payroll at the tariff of their canton of residence. Those with gross pay of more than CHF 120,000, and in Zurich those with taxable wealth of at least CHF 80,000 (single; CHF 160,000 jointly taxed) or other income of at least CHF 3,000 not taxed at source, are moved into an ordinary assessment ([ZStB 133.1, A.III](https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/vertreter/steuerbuch/zstb-nr-133-1/ZStB-Nr-133-1_Aufforderung-2027.pdf)). Details: `ch-payroll`, `ch-cross-border`.
 - **Non-residents** with Swiss real estate or a Swiss business file in the canton where it is (StHG art. 4 para. 1; ZStB 133.1, A.I.1 let. d).
 
 ## Worked examples
@@ -268,7 +268,7 @@ The edge case: Zug's city multiplier was 52.11% in 2025 (54% less a 3.5% rebate)
 2. Single, married or registered partners, or a single parent living with children? The tariff and deductions depend on it.
 3. Church membership of each spouse (reformed, Roman Catholic, Christian Catholic, none), and any exit during the year.
 4. Real estate or a business in another canton or abroad.
-5. Permit and tax at source status: C permit or Swiss, or taxed at source with pay of CHF 120,000 or more?
+5. Permit and tax at source status: C permit or Swiss, or taxed at source with pay of more than CHF 120,000?
 6. Net wealth at 31 December 2026, and any pension lump sum paid in 2026.
 
 ## Sources
@@ -297,4 +297,4 @@ The edge case: Zug's city multiplier was 52.11% in 2025 (54% less a 3.5% rebate)
 | Canton de Vaud, Demander un délai pour déposer ma déclaration d'impôt | https://www.vd.ch/etat-droit-finances/impots/impots-pour-les-individus/demander-un-delai-pour-deposer-ma-declaration-dimpot | 2026-10-23 |
 | BSV, Wichtige Masszahlen berufliche Vorsorge 2025/2026, no. 9 (pillar 3a) | https://www.bsv.admin.ch/dam/de/sd-web/GZplHByBJoFc/Internet_Masszahlenarticles_25_26_d.pdf | 2026-10-23 |
 
-Not yet confirmed: the 2026 filing dates for Zug, Basel-Stadt and Bern (only the 2025-return dates were published; the rules suggest 30 April, 31 March and 15 March / 15 May 2027); filing dates for the other 20 cantons; the 2026 multipliers of Solothurn, Appenzell Innerrhoden and other communes not in the tables; whether Zug, Basel-Stadt and Bern indexed any deduction for 2026 beyond the amounts shown in the February 2026 Kantonsblätter; the Geneva, Vaud, Bern and Basel-Stadt 2026 income tariffs (not worked here); the Vaud commuting rules beyond the flat rates; due dates, instalments and interest rates outside Zurich; the Zurich rule for church tax when someone leaves the church during the year; ESTV footnote detail for Basel-Landschaft church tax and the Geneva 12% deduction.
+Not yet confirmed: the 2026 filing dates for Zug, Basel-Stadt and Bern (only the 2025-return dates were published; the rules suggest 30 April, 31 March and 15 March / 15 May 2027); filing dates for the other 20 cantons; the 2026 multipliers of Solothurn, Appenzell Innerrhoden and other communes not in the tables; whether Basel-Stadt and Bern indexed any deduction for 2026 beyond the amounts shown in the February 2026 Kantonsblätter; the Geneva, Vaud, Bern and Basel-Stadt 2026 income tariffs (not worked here); the Vaud commuting rules beyond the flat rates; due dates, instalments and interest rates outside Zurich; the Zurich rule for church tax when someone leaves the church during the year; ESTV footnote detail for Basel-Landschaft church tax and the Geneva 12% deduction.
