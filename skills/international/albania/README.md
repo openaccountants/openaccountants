@@ -3,6 +3,8 @@ jurisdiction: AL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
+partial:
+  IT-IND: "albania-income-tax is written for tax year 2025 and leans on secondary sources; it needs a 2026 refresh from Law 29/2023 (only the ALL 14 million 0% rule was corrected on 2026-10-23)"
 ---
 
 # Albania: tax pack
@@ -19,10 +21,12 @@ Calendar tax year. Authority: the General Directorate of Taxes (Drejtoria e Për
 | SC, social contributions | albania-social-contributions | source-cited draft |
 | PR, payroll withholding | albania-payroll | source-cited draft |
 | TP, transfer pricing | (missing: Law 29/2023 arts. 32 to 39 set a full regime; al-corporate-tax gives a summary only) | |
-| XB, cross-border | (missing: treaties, non-resident filing, exit tax in depth) | |
+| XB, cross-border | al-cross-border | source-cited draft |
 
 ## Official sources
 
 - Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated: https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf (read 2026-10-22)
 - Law No. 9920/2008 "Për procedurat tatimore", consolidated: https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf (read 2026-10-22)
 - Tax legislation list, General Directorate of Taxes: https://tatime.gov.al/legjislacioni/ligje/ (read 2026-10-22)
+- Double tax treaties in force, General Directorate of Taxes: https://tatime.gov.al/legjislacioni/marreveshje-nderkombetare/ (read 2026-10-23)
+- General Instruction No. 26/2023 on income tax: https://tatime.gov.al/wp-content/uploads/2026/09/Udhezimi-nr-26-date-8.9.2023-Per-tatimin-mbi-te-ardhuart.pdf (read 2026-10-23)
