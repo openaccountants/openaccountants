@@ -3,8 +3,6 @@ jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 partial:
-  IT-IND: no 2026 box 1 rates or labour credit for people at AOW age, no tax-part-only credits for non-residents, and the box 3 actual-return route is outlined only, with complex cases referred
-  TP: netherlands-transfer-pricing does not quantify penalties (no CbC fine amount under art. 29h, no consequence of missing art. 8b or 29g documentation)
   XB: "no treaty relief method (Besluit voorkoming dubbele belasting 2001, treaty dividend rates), and the M-return and non-resident return deadlines are not confirmed"
 ---
 
@@ -16,7 +14,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | nl-income-tax, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | source-cited draft |
+| IT-IND, individual income tax | nl-income-tax, nl-income-tax-special-groups, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | source-cited draft |
 | IT-CORP, corporate income tax | nl-corporate-tax, nl-dividend-withholding | source-cited draft |
 | VAT | nl-vat-return, netherlands-vat-return, nl-vat-registration | source-cited draft |
 | SC, social contributions | nl-social-contributions | source-cited draft |
