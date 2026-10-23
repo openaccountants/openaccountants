@@ -4,6 +4,8 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: se-cross-border
+partial:
+  PR: "sweden-payroll does not value taxable benefits (car benefit, 2026 meal benefit SEK 62/124/310) or apply the 2026 tax-free travel allowances (traktamente SEK 300 a day, mileage SEK 25 a mil); it stops whenever a benefit value is needed"
 ---
 
 # Sweden: tax pack
