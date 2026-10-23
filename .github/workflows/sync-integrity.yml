@@ -58,7 +58,8 @@ jobs:
             python3 scripts/check-sync-integrity.py \
               --base "$MERGE_BASE" \
               --head "$PR_HEAD" \
-              --mode audit
+              --mode audit \
+              --strict-metadata
           elif [ "$PUSH_BASE" = "0000000000000000000000000000000000000000" ]; then
             echo "Initial branch push has no base revision; unit tests still ran."
           else

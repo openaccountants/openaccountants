@@ -70,6 +70,13 @@ def codes(findings: list[object], severity: str | None = None) -> set[str]:
     }
 
 
+class PackReadmeTests(unittest.TestCase):
+    def test_pack_readme_is_not_audited_as_a_guide(self):
+        raw = "M\0skills/international/hungary/README.md\0M\0skills/international/hungary/hu-vat.md\0"
+        paths = [change.display_path for change in sync_integrity.parse_name_status(raw)]
+        self.assertEqual(paths, ["skills/international/hungary/hu-vat.md"])
+
+
 class GuideComparisonTests(unittest.TestCase):
     path = "skills/foundation/synthetic-guide.md"
 
