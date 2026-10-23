@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -88,7 +88,7 @@ On the itemised and 10% routes the producer credit takes up to HUF 100,000 off t
 ### Civil-law contract fees and other independent activity
 
 **Revenue** is the fee plus any cost reimbursement received for the work (Szja tv. 17. § (1)-(2)). **Income** is reached in one of two ways (17. § (3)):
-1. **10% flat cost:** income is 90% of revenue, with no receipts. If chosen, no independent-activity revenue of that year may be itemised, and a cost reimbursement is also taxed at 90% (NAV information sheet 2, section 2.2).
+1. **10% flat cost:** income is 90% of revenue, with no receipts. A cost reimbursement is also taxed at 90% (NAV information sheet 2, section 2.2). Using the flat cost for the advances does not lock it in: the return can itemise instead, provided the flat cost is used for none of the year's independent-activity revenue (Szja tv. 47. § (3)).
 2. **Itemised costs:** documented costs under the 3. számú melléklet, up to the revenue. Assets under HUF 200,000 used only for the activity are expensed at once; dearer assets get a flat 1% of revenue, at most 50% of their value, once (NAV information sheet 2, section 2.3). A loss of one activity cannot offset another (17. § (3)).
 
 The method chosen applies to all independent-activity income of the year (18. § (2)). The income joins the consolidated base at 15%.
