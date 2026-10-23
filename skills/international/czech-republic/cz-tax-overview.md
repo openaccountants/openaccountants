@@ -28,11 +28,11 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 | Item | Rate or amount | Year | Source | Detail |
 |---|---|---|---|---|
 | Individual income tax | 15% up to 36 times the average wage; 23% above | 2026 | [ITA § 16(1)](https://e-sbirka.gov.cz/sb/1992/586/2026-08-01) | [cz-employee-income-tax](cz-employee-income-tax.md), [cz-income-tax](cz-income-tax.md) |
-| Average wage for tax purposes | CZK 48,967 (CZK 46,278 times 1.0581, rounded up) | 2026 | [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365) | cz-income-tax |
+| Average wage for tax purposes | CZK 48,967 (CZK 46,278 times 1.0581, rounded up) | 2026 | ITA § 21g(2); Act 589/1992 § 23b(4); [Government Regulation 365/2025 § 1](https://e-sbirka.gov.cz/sb/2025/365) | cz-income-tax |
 | 23% threshold (36 times CZK 48,967) | CZK 1,762,812 | 2026 | computed from the row above | cz-employee-income-tax |
 | Basic taxpayer credit | CZK 30,840 a year | 2026 | ITA § 35ba(1)(a) | cz-employee-income-tax |
 | Corporate income tax | 21% (5% basic investment funds, 0% pension funds) | 2026 | ITA § 21(1) to (3) | [cz-corporate-income-tax](cz-corporate-income-tax.md) |
-| Withholding on payments to non-residents | 15%; 35% to states outside the EU and EEA with no treaty or tax information exchange agreement | 2026 | ITA § 36(1) | cz-cross-border |
+| Withholding on payments to non-residents | 15%; 35% to states outside the EU and EEA with no treaty, tax information exchange agreement or multilateral information exchange convention in force | 2026 | ITA § 36(1) | cz-cross-border |
 | VAT rates | 21% standard; 12% reduced | 2026 | [VAT Act § 47(1)](https://e-sbirka.gov.cz/sb/2004/235/2026-01-01) | [cz-vat-return](cz-vat-return.md) |
 | VAT registration (established business) | turnover over CZK 2,000,000 in a calendar year: VAT payer from 1 January of the next year; over CZK 2,536,500: from the day after | 2026 | VAT Act § 6(1), (2)(b) | cz-vat-return |
 | Late payment interest on tax | CNB repo rate on the first day of the half-year plus 8 points: 11.50% a year for January to June 2026, 11.75% for July to December 2026 | 2026 | [Tax Code § 251a(5), § 252(4)](https://e-sbirka.gov.cz/sb/2009/280/2026-01-01); [Government Regulation 351/2013 § 2(1)](https://e-sbirka.gov.cz/sb/2013/351); [CNB repo history](https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt) | cz-corporate-income-tax |
@@ -55,7 +55,8 @@ For the 2025 return the Financial Administration gave 1 April, 4 May and 1 July 
 
 | Source | URL | Read on |
 |---|---|---|
-| Act No. 586/1992 Coll., Income Taxes Act, version in force from 1 August 2026: §§ 2, 16, 17, 21, 21a, 35ba, 36 | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-10-23 |
+| Act No. 586/1992 Coll., Income Taxes Act, version in force from 1 August 2026: §§ 2, 16, 17, 21, 21a, 21g, 35ba, 36 | https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 | 2026-10-23 |
+| Act No. 589/1992 Coll., social security premiums, version in force from 1 July 2026: § 23b(4) (average wage rounded up to whole CZK) | https://e-sbirka.gov.cz/sb/1992/589/2026-07-01 | 2026-10-23 |
 | Act No. 280/2009 Coll., Tax Code, version in force from 1 January 2026: §§ 33, 135, 136, 251a, 252 | https://e-sbirka.gov.cz/sb/2009/280/2026-01-01 | 2026-10-23 |
 | Act No. 235/2004 Coll., VAT Act, version in force from 1 January 2026: §§ 6, 47 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
 | Government Regulation No. 365/2025 Coll. (general assessment base for 2024 and coefficient) | https://e-sbirka.gov.cz/sb/2025/365 | 2026-10-23 |
@@ -63,4 +64,4 @@ For the 2025 return the Financial Administration gave 1 April, 4 May and 1 July 
 | Finanční správa, Daň z příjmů fyzických osob, obecné informace (2025 filing dates) | https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/fyzicke-osoby/obecne-informace | 2026-10-23 |
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
-Not yet confirmed: the Financial Administration had not published the filing dates for 2026 returns; 1 April, 3 May and 1 July 2027 are counted from Tax Code §§ 33(4) and 136. The VAT Act version read is the one in force from 1 January 2026; later 2026 amendments to § 6 or § 47 were not checked.
+Not yet confirmed: the Financial Administration had not published the filing dates for 2026 returns; 1 April, 3 May and 1 July 2027 are counted from Tax Code §§ 33(4) and 136.

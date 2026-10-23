@@ -3,7 +3,8 @@ jurisdiction: CZ
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial: {}
+partial:
+  VAT: "cz-vat-return and czech-republic-vat-return are still written for tax year 2025 and have not been checked against the VAT Act in force for 2026; the 2026 registration thresholds (CZK 2,000,000 and CZK 2,536,500, VAT Act § 6) are only in cz-tax-overview"
 ---
 
 # Czech Republic: tax pack
