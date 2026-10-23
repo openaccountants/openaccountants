@@ -4,8 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: leaving-france-exit-tax
-partial:
-  XB: "leaving-france-exit-tax (departures, exit tax, IFI) is still on tax_year 2025 figures and has not been re-checked for 2026"
 ---
 
 # France: tax pack
@@ -22,7 +20,7 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 | SC, social contributions | fr-social-contributions (self-employed), france-payroll (employee and employer contributions) | source-cited draft |
 | PR, payroll withholding | france-payroll | source-cited draft |
 | TP, transfer pricing | france-transfer-pricing | source-cited draft |
-| XB, cross-border | fr-cross-border (residence, non-residents with French income, withholding, social levies, the impatriate regime, treaty credits), leaving-france-exit-tax (individuals leaving France), fr-corporate-tax (withholding on payments abroad, CFC rules) | source-cited draft; partial: leaving-france-exit-tax still on 2025 figures |
+| XB, cross-border | fr-cross-border (residence, non-residents with French income, withholding, social levies, the impatriate regime, treaty credits), leaving-france-exit-tax (individuals leaving France), fr-corporate-tax (withholding on payments abroad, CFC rules) | source-cited draft |
 
 ## Official sources
 
