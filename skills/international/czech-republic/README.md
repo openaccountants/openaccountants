@@ -21,7 +21,7 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 | VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
 | SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
 | PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
-| TP, transfer pricing | (missing: arm's length rule in ITA § 23(7), documentation, advance pricing agreements) | |
+| TP, transfer pricing | cz-transfer-pricing | source-cited draft |
 | XB, cross-border | cz-cross-border | source-cited draft |
 
 Also in the pack: cz-tax-overview, cz-company-formation, references.md.

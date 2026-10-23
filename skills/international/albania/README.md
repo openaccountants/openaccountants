@@ -18,7 +18,7 @@ Calendar tax year. Authority: the General Directorate of Taxes (Drejtoria e Për
 | VAT | albania-vat | source-cited draft |
 | SC, social contributions | albania-social-contributions | source-cited draft |
 | PR, payroll withholding | albania-payroll | source-cited draft |
-| TP, transfer pricing | (missing: Law 29/2023 arts. 32 to 39 set a full regime; al-corporate-tax gives a summary only) | |
+| TP, transfer pricing | al-transfer-pricing | source-cited draft |
 | XB, cross-border | (missing: treaties, non-resident filing, exit tax in depth) | |
 
 ## Official sources
@@ -26,3 +26,4 @@ Calendar tax year. Authority: the General Directorate of Taxes (Drejtoria e Për
 - Law No. 29/2023 "Për tatimin mbi të ardhurat", consolidated: https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf (read 2026-10-22)
 - Law No. 9920/2008 "Për procedurat tatimore", consolidated: https://tatime.gov.al/wp-content/uploads/2026/10/Ligj-Nr-9920-Dt-2008.05.19-perditesuar-1.pdf (read 2026-10-22)
 - Tax legislation list, General Directorate of Taxes: https://tatime.gov.al/legjislacioni/ligje/ (read 2026-10-22)
+- Instruction No. 29 of 16.11.2023 on transfer pricing and advance pricing agreements: https://tatime.gov.al/wp-content/uploads/2026/09/UDHEZIM-Nr.29-DT.-16.11.2023-PER-TRANSFERIMIN-E-CMIMIT-DHE-MARREVESHJET-E-CMIMIT-NE-AVANCE.pdf (read 2026-10-23)
