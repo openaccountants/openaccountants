@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 1.1
+version: 1.2
 verified_by: pending
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
@@ -54,7 +54,7 @@ Related skills: residence and the company exit tax are in [ie-cross-border](ie-c
 
 No change has been made to the 12.5% or 25% rates for 2025 or 2026. If a rate changes inside an accounting period, profits are apportioned on a time basis.
 
-**The 31% CGT rate is in force, but provisionally.** Financial Resolution No. 3, carried by the Dáil on 6 October 2026, substitutes 31% for 33% in section 28(3) for disposals made on or after 7 October 2026, with statutory effect under the Provisional Collection of Taxes Act 1927. Section 36 of the Finance (No. 2) Bill 2026 (Bill 98 of 2026, published 19 October 2026, not yet enacted) makes the same change. Under section 4 of the 1927 Act the resolution lapses if the Bill's provisions are rejected or are not enacted in time, so a gain computed at 31% must be revisited if that happens. Revenue's company gains page already uses 31%. Development land is taxed at 33% under section 649A, which the resolution does not touch.
+**The 31% CGT rate is in force, but provisionally.** Financial Resolution No. 3, carried by the Dáil on 6 October 2026, substitutes 31% for 33% in section 28(3) for disposals made on or after 7 October 2026, with statutory effect under the Provisional Collection of Taxes Act 1927. Section 36 of the Finance (No. 2) Bill 2026 (Bill 98 of 2026, published 19 October 2026, not yet enacted) makes the same change. The 1927 Act covers capital gains tax (section 1, definition of "tax", as substituted by section 160 of the Finance Act 2010). Under section 4 the resolution lapses if the Bill's provisions are rejected, if the Bill is not read a second time in time, or if no Act containing the change comes into operation within four months of 7 October 2026, so a gain computed at 31% must be revisited if that happens. Revenue's company gains page already uses 31%. Development land is taxed at 33% under section 649A, which the resolution does not touch.
 
 ## The taxable base
 
@@ -67,7 +67,7 @@ No change has been made to the 12.5% or 25% rates for 2025 or 2026. If a rate ch
 1. Work out the CGT on the gain at the rate for the disposal date: 31% from 7 October 2026, 33% before.
 2. Divide that tax by 12.5%. The result is the adjusted gain, reported in the capital gains section of the CT1.
 
-A gain of EUR 150,000 on a disposal from 7 October 2026 gives tax of EUR 46,500 and an adjusted gain of EUR 372,000. The same gain on 6 October 2026 gives EUR 49,500 and EUR 396,000 (Revenue's example). Development land gains stay outside CT profits: they are reported in the Capital Gains (Development Land) section of the CT1 and follow CGT pay and file dates. Disposals of shares in trading subsidiaries may be exempt under section 626B; check the conditions in TDM Part 20-01-14.
+A gain of EUR 150,000 on a disposal from 7 October 2026 gives tax of EUR 46,500 and an adjusted gain of EUR 372,000. The same gain on 6 October 2026 gives EUR 49,500 and EUR 396,000, the figures in Revenue's own example of a disposal in October 2025 at 33%. Development land gains stay outside CT profits: they are reported in the Capital Gains (Development Land) section of the CT1 and follow CGT pay and file dates. Disposals of shares in trading subsidiaries may be exempt under section 626B; check the conditions in TDM Part 20-01-14.
 
 **Capital allowances.**
 
@@ -103,7 +103,7 @@ Allowances are cut for a short period or part non-trade use. Revenue's example: 
 
 **Pillar Two (Part 4A TCA)** ([Revenue: Pillar Two](https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/index.aspx)). In-scope groups pay at least 15% in each jurisdiction. Ireland's domestic top-up tax (a qualified domestic top-up tax) and the IIR apply for fiscal years commencing on or after 31 December 2023; the UTPR from fiscal years commencing on or after 31 December 2024. Revenue states Ireland's domestic top-up tax has transitional qualified status with the OECD. The OECD Side-by-Side package of 5 January 2026 changes some rules and is acknowledged by the European Commission (Notice C/2026/253). Screen for scope and refer the computation.
 
-**Foreign dividends: participation exemption** ([Revenue](https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/exemption-foreign-distributions/index.aspx)). For distributions from 1 January 2025, an Irish company holding at least 5% for a continuous 12 months can elect to exempt dividends from foreign subsidiaries resident in an EU or EEA state or treaty country (three-year look-back for 2026 distributions, five years for 2025). The election covers every relevant distribution for the period, not dividend by dividend.
+**Foreign dividends: participation exemption** ([Revenue](https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/exemption-foreign-distributions/index.aspx)). For distributions from 1 January 2025, an Irish company holding at least 5% for a continuous 12 months can elect to exempt dividends from foreign subsidiaries resident in an EU or EEA state or treaty country (three-year look-back for 2026 distributions, five years for 2025). From 2026 a non-treaty country that charges withholding tax on cross-border distributions also counts, where that tax is paid on the full distribution and not refunded. The election covers every relevant distribution for the period, not dividend by dividend.
 
 ## Deadlines and filing
 
@@ -127,7 +127,7 @@ Example, large company: CT for 2025 of EUR 900,000, expected 2026 CT of EUR 1,20
 
 **Pillar Two** ([Revenue: key dates](https://www.revenue.ie/en/companies-and-charities/pillar-two/dates/index.aspx)). Register on ROS within 12 months after the end of the first fiscal year in scope (entities with a first year ending in 2024 had until 28 February 2026). File the Top-up Tax Information Return within 15 months of each fiscal year end, 18 months for the first year. The first TIR and pay and file deadline was 30 June 2026; for a group first in scope for calendar 2025, the first TIR is due 30 June 2027.
 
-**The 2025 CT1.** For a 31 December 2025 year end the CT1 was due by 23 September 2026. Filed before 23 November 2026: 5% surcharge and a 25% relief restriction. Filed on 23 November 2026: 5% surcharge, but a 50% restriction. Later: 10% and 50%. The R&D rate for 2025 is 30% and the claim is due by 31 December 2026. 2025 is the first year directors' Class S PRSI counts for start-up relief.
+**The 2025 CT1.** For a 31 December 2025 year end the CT1 was due by 23 September 2026. Filed within two months of the return date: 5% surcharge and a 25% relief restriction. Later: 10% and 50%. The R&D rate for 2025 is 30% and the claim is due by 31 December 2026. 2025 is the first year directors' Class S PRSI counts for start-up relief.
 
 **Proposals in the Finance (No. 2) Bill 2026, not yet law** ([Bill 98 of 2026, as initiated](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf)):
 - small company limit for preliminary tax raised from EUR 200,000 to EUR 350,000, and a top-up within four months of the period end where at least 80% was paid, for periods commencing on or after 1 January 2027 (section 74);
@@ -249,10 +249,12 @@ expected:
 | Finance (No. 2) Bill 2026 (Bill 98 of 2026), as initiated, sections 25, 30, 32, 36, 72, 74 | https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf | 2026-10-23 |
 | Oireachtas, Finance (No. 2) Bill 2026 status | https://www.oireachtas.ie/en/bills/bill/2026/98/ | 2026-10-23 |
 | Provisional Collection of Taxes Act 1927, section 4 | https://www.irishstatutebook.ie/eli/1927/act/7/section/4/enacted/en/html | 2026-10-23 |
+| Finance Act 2010, section 160 (capital gains tax within the 1927 Act) | https://www.irishstatutebook.ie/2010/en/act/pub/0005/sec0160.html | 2026-10-23 |
 | TDM Part 22-02-03, development land rate of charge | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-22/22-02-03.pdf | 2026-10-23 |
 | TDM Part 29-02-03, R&D corporation tax credit (updated April 2026) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-29/29-02-03.pdf | 2026-10-23 |
 | Revenue, Knowledge Development Box | https://www.revenue.ie/en/companies-and-charities/reliefs-and-exemptions/knowledge-development-box-kdb/index.aspx | 2026-10-23 |
 | Revenue, what is Pillar Two | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/index.aspx | 2026-10-23 |
+| Revenue, UTPR top-up tax (fiscal years commencing on or after 31 December 2024) | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/uptr-top-up-tax.aspx | 2026-10-23 |
 | Revenue, domestic top-up tax | https://www.revenue.ie/en/companies-and-charities/pillar-two/what-is/domestic-top-up-tax.aspx | 2026-10-23 |
 | Revenue, Pillar Two key dates | https://www.revenue.ie/en/companies-and-charities/pillar-two/dates/index.aspx | 2026-10-23 |
 | Revenue, preliminary CT | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/preliminary-ct.aspx | 2026-10-23 |
