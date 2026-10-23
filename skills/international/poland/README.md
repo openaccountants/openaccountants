@@ -4,8 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: pl-cross-border
-partial:
-  PR: "employees only; no rules for umowa zlecenie or umowa o dzieło contracts or board members' fees"
+partial: {}
 ---
 
 # Poland: tax pack
@@ -20,7 +19,7 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 | IT-CORP, corporate income tax | pl-cit-corporate-tax | source-cited draft |
 | VAT | pl-vat-return, poland-vat-return | source-cited draft |
 | SC, social contributions | pl-zus-contributions | source-cited draft |
-| PR, payroll withholding | pl-payroll (employees only) | source-cited draft |
+| PR, payroll withholding | pl-payroll (employees); pl-civil-law-contracts (umowa zlecenie, umowa o dzieło, board fees) | source-cited draft |
 | TP, transfer pricing | pl-transfer-pricing | source-cited draft |
 | XB, cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | source-cited draft |
 
@@ -29,4 +28,5 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 - CIT Act, consolidated text Dz.U. 2026 poz. 554: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000554 (read 2026-10-22)
 - Transfer pricing: CIT Act art. 11a-11t as amended by Dz.U. 2026 poz. 1371: https://api.sejm.gov.pl/eli/acts/DU/2026/1371/text.pdf (read 2026-10-23); MF safe harbour notice for 2026, M.P. 2025 poz. 1249: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WMP20250001249 (read 2026-10-23)
 - Tax Ordinance, consolidated text Dz.U. 2026 poz. 622: https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20260000622 (read 2026-10-22)
+- PIT Act, consolidated text Dz.U. 2026 poz. 592, and ZUS Act, Dz.U. 2026 poz. 199 (civil-law contracts and board fees): https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf, https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf (read 2026-10-23)
 - Ministry of Finance tax portal: https://www.podatki.gov.pl (read 2026-10-22)
