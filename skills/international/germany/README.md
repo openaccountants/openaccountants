@@ -4,8 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   XB: leaving-germany-exit-tax
-partial:
-  XB: "no treaty withholding-rate table by country; germany-to-switzerland-cross-border-tax is on 2025 and is missing its commuter (Grenzgaenger) part"
+partial: {}
 ---
 
 # Germany: tax pack
@@ -22,7 +21,7 @@ Calendar tax year. Authorities: the Bundeszentralamt für Steuern and the local 
 | SC, social contributions | de-social-contributions | source-cited draft |
 | PR, payroll withholding | de-payroll, germany-payroll | source-cited draft |
 | TP, transfer pricing | germany-transfer-pricing | source-cited draft |
-| XB, cross-border | de-non-resident-tax, leaving-germany-exit-tax, germany-to-switzerland-cross-border-tax, de-uk-employer-first-hire. Missing: treaty withholding rates by country; the Swiss commuter part | source-cited draft; partial: no treaty rate table, Swiss corridor on 2025 |
+| XB, cross-border | de-non-resident-tax, leaving-germany-exit-tax, de-treaty-withholding-rates (German withholding on dividends, interest and royalties paid abroad; treaty rates for 12 partners; § 50c, § 43b, § 50g, § 50d(3)), germany-to-switzerland-cross-border-tax (2026, with the art. 15a commuter rules), de-uk-employer-first-hire | source-cited draft |
 
 ## Official sources
 
