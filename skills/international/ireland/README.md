@@ -5,6 +5,7 @@ not_applicable: {}
 covered_by:
   SC: ie-prsi-class-s
 partial:
+  IT-IND: "ie-cgt and ie-non-dom give CGT at 33% only; disposals from 7 October 2026 go at 31% under Financial Resolution No. 3 of 6 October 2026, provisional until Finance (No. 2) Bill 2026 is enacted"
   IT-CORP: ie-corporation-tax has no rules for a non-resident company's Irish branch (s.25), its description contradicts its body (R&D 30%, KDB 6.25%), and gains are grossed up at 33% after 7 October 2026
   SC: posted and cross-border workers (A1 and bilateral certificates) and Class K are referred out
 ---
