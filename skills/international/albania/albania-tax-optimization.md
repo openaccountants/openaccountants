@@ -1,7 +1,7 @@
 ---
 name: albania-tax-optimization
-description: Use this skill whenever asked about reducing tax in Albania, tax planning, or legal strategies to minimise tax for a self-employed person or small business in Albania. Trigger on phrases like "reduce tax Albania", "0% tax small business Albania", "simplified profit tax", "freelancer Albania", "self-employed vs company Albania", "save tax Albania", "tax planning Albania". This skill covers the 0% PIT for small businesses under ALL 14m (to 2029), the simplified profit-tax regime, the freelancer single-client reclassification rule, the standard rates above the thresholds, and the anti-avoidance red lines. ALWAYS read this skill before advising on any Albanian tax optimisation.
-version: 0.1
+description: Use this skill whenever asked about reducing tax in Albania, tax planning, or legal strategies to minimise tax for a self-employed person or small business in Albania. Trigger on phrases like "reduce tax Albania", "0% tax small business Albania", "simplified profit tax", "freelancer Albania", "self-employed vs company Albania", "save tax Albania", "tax planning Albania". This skill covers the 0% rate for traders, the self-employed and entities with gross income up to ALL 14m (to 2029, Law 29/2023 art. 69(1)(dh)), the repeal of the old simplified profit tax, the freelancer single-client reclassification rule, the standard rates above the thresholds, and the anti-avoidance red lines. ALWAYS read this skill before advising on any Albanian tax optimisation.
+version: 0.2
 jurisdiction: AL
 tax_year: 2025
 last_updated: 2026-07-13
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Albania Tax Optimization Skill v0.1
 
-**Tier 2 — research-verified. Sources: Tatime (General Directorate of Taxes), PwC Albania, Karanovic & Partners. Figures must agree with `albania-income-tax.md` / `albania-social-contributions.md`. NOT yet signed off by an Albanian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
+**Tier 2, source-cited draft. Sources: Law No. 29/2023 on income tax, consolidated to Law No. 81/2025, as published by the General Directorate of Taxes ([tatime.gov.al](https://tatime.gov.al/wp-content/uploads/2026/09/Ligj-Nr.-29-2023-Per-Tatimin-mbi-te-Ardhurat-i-ndryshuar.pdf), read 2026-10-23). Figures must agree with `albania-income-tax.md` / `albania-social-contributions.md`. NOT yet signed off by an Albanian tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
 
 ## Section 1 -- Quick Reference
 
@@ -33,13 +33,13 @@ Albania Tax Optimization Skill v0.1
 | Self-employed contributions | ~24.4% combined |
 | Anti-avoidance | Freelancer single-client reclassification rule |
 
-> **Albania's headline is a temporary 0% PIT for small businesses:** self-employed individuals and small entities with **gross annual income up to ALL 14 million** (~€135k) pay **0% profit tax until 31 December 2029**. (Tatime; Karanovic)
+> **Albania's headline is a temporary 0% rate:** individual traders, the self-employed and entities with **gross income up to ALL 14,000,000 a year** pay **0% income tax until 31 December 2029** (Law 29/2023 art. 69(1)(dh)). It is a threshold, not a band: above ALL 14,000,000 of gross income there is no 0% at all.
 
 ## Section 2 -- The 0% Small-Business Regime
 
-- **0% PIT for small business** — 0% percent (business/self-employment profit where gross annual income ≤ ALL 14,000,000, in force until 31 Dec 2029)  _(Tatime; Karanovic)_
-- **Simplified profit tax for small business** — 0% percent (small business turnover ≤ ALL 8,000,000)  _(Tatime)_
-- **Above ALL 14m threshold** — Above ALL 14m: standard rates apply (progressive PIT 13%/23% bands; corporate income tax). [RESEARCH GAP — reviewer to confirm the exact above-threshold PIT/CIT rates against `albania-income-tax.md`.]  _(albania-income-tax.md)_
+- **0% rate**: individual traders, the self-employed and entities with gross income up to ALL 14,000,000 a year pay 0% on the whole business profit until 31 Dec 2029. The test is gross income, not profit.  _(Law 29/2023 art. 69(1)(dh); see `albania-income-tax`)_
+- **Old simplified profit tax**: repealed. It sat in Chapter III of Law No. 9632/2006 on local taxes, which Law 29/2023 art. 71(2) repealed; the art. 69(1)(dh) 0% rate is the small-business regime now.  _(Law 29/2023 arts. 69(1)(e), 71(2))_
+- **Above ALL 14,000,000 of gross income**: individual traders and the self-employed pay 15% on taxable profit up to ALL 14,000,000 and 23% on the rest, on the whole profit. Entities pay corporate income tax at 15% (see `al-corporate-tax`).  _(Law 29/2023 arts. 24(2), 41)_
 
 This makes Albania extremely efficient for profitable solo/micro service businesses under the cap — but social contributions (~24.4%) and VAT (above ALL 5m) still apply.
 
