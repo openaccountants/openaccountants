@@ -19,7 +19,7 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 | SC, social contributions | hu-social-contributions | source-cited draft |
 | PR, payroll withholding | (missing) | |
 | TP, transfer pricing | hu-transfer-pricing | source-cited draft |
-| XB, cross-border | (missing) | |
+| XB, cross-border | hu-cross-border | source-cited draft |
 
 hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accounting packs milestone.
 

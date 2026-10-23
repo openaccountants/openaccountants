@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -38,11 +38,11 @@ So a Hungarian citizen working abroad for years stays resident under domestic la
 
 **Scope.** A resident is taxed on worldwide income. A non-resident is taxed only on income whose source is Hungary, or that a treaty or reciprocity lets Hungary tax (Szja tv. 2. § (4)). A treaty overrides the Szja tv. where they differ (Szja tv. 2. § (5)).
 
-**Where income comes from (Szja tv. 3. § 4.).** Employment: where the work is usually done. Self-employment: the state of residence, unless done through a fixed base. Real estate income: where the property is. Directors' fees: where the company has its seat. Dividends, interest and royalties: the residence of the payer, or Hungary if paid through a Hungarian branch. Gains on shares in a Hungarian real-estate company: always Hungary.
+**Where income comes from (Szja tv. 3. § 4.).** Employment: where the work is usually done. Self-employment: the state of residence, unless done through a fixed base. Real estate income: where the property is. Directors' fees: where the company has its seat. Interest and royalties: the residence of the payer, or Hungary if the payer owes them through a Hungarian branch or PE (3. § 4. h), i)). Dividends: the residence of the paying company (3. § 4. j)). Any of these is Hungarian-source if the underlying right belongs to the individual's own Hungarian fixed base. Gains on shares in a Hungarian real-estate company: always Hungary.
 
 **Part year.** Residence can change during the year. NAV's example: a citizen who moves abroad for good on 1 September and has a permanent home only abroad from then is resident for January to August and non-resident for September to December (NAV information sheet 4, section 2.4).
 
-**Companies.** A company registered in Hungary is resident; a foreign company is resident if its place of management is in Hungary (Tao. tv. 2. § (2), (3)). A foreign company is taxed only on profits of a Hungarian permanent establishment (Tao. tv. 2. § (4)). Details in [hu-corporate-tax](hu-corporate-tax.md).
+**Companies.** A company registered in Hungary is resident; a foreign company is resident if its place of management is in Hungary (Tao. tv. 2. § (2), (3)). A foreign company is taxed on profits of a Hungarian permanent establishment and on gains from selling or withdrawing shares in a Hungarian real-estate holding company (Tao. tv. 2. § (4) a), c)). Details in [hu-corporate-tax](hu-corporate-tax.md).
 
 ## Rates, bands and thresholds
 
@@ -50,8 +50,8 @@ So a Hungarian citizen working abroad for years stays resident under domestic la
 |---|---|---|---|
 | Personal income tax, flat rate (also on dividends and interest) | 15% | 2026 | [Szja tv. 8. § (1)](https://njt.jog.gov.hu/jogszabaly/1995-117-00-00) |
 | Residence test for EEA nationals | 183 days in the calendar year, arrival and departure days counted | 2026 | Szja tv. 3. § 2. b) |
-| Payer's tax on dividends, interest, royalties and other Hungarian-source income paid to a non-resident individual | 15% unless the treaty rate is documented before payment; paid by the 12th of the month after payment | 2026 | Szja tv. 7. számú melléklet, points 1 and 2; [NAV information sheet 24, section 2.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26) |
-| Treaty rate at source | The treaty rate, if the payer holds an annual residence certificate and (where the treaty asks) a beneficial owner statement before payment | 2026 | Szja tv. 7. számú melléklet, points 2, 6 and 7 |
+| Payer's tax on dividends, interest, royalties and other Hungarian-source income paid to a non-resident individual | 15% unless the treaty rate is documented by the time of payment; paid by the 12th of the month after payment | 2026 | Szja tv. 7. számú melléklet, points 1 and 2; [NAV information sheet 24, section 2.3](https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/24.-Bevallasi-adofizetesi-informaciok-2026.01.26) |
+| Treaty rate at source | The treaty rate, if by the time of payment the payer holds this year's residence certificate (or accepts the person's written residence statement until it arrives) and, where the treaty asks, a beneficial owner statement | 2026 | Szja tv. 7. számú melléklet, points 2, 6 and 7 |
 | Withholding on dividends, interest and royalties paid to a foreign company | None | 2026 | [NAV English summary on business associations](https://nav.gov.hu/pfile/file?path=%2Fen%2Ftaxation%2Ftaxinfo%2Fa-short-summary-on-the-taxation-of-business-associations), sections 2.6 and 7.1; see hu-corporate-tax |
 | Social contribution tax (szocho) on a resident's dividends and interest | 13% | 2026 | [Szocho tv. 1. § (5), 2. § (1)](https://njt.jog.gov.hu/jogszabaly/2018-52-00-00) |
 | Szocho on dividends, interest and gains of a person who is "foreign" under the Tbj. | None | 2026 | Szocho tv. 5. § (6); [Tbj. 4. § 1. and 12.](https://njt.jog.gov.hu/jogszabaly/2019-122-00-00) |
@@ -87,7 +87,7 @@ So a Hungarian citizen working abroad for years stays resident under domestic la
 - **Allowances:** a non-resident can claim Hungarian allowances (family allowance and others) only under the 75% rule in Szja tv. 1/A. § (3).
 - **Szocho:** a person who is "foreign" under the Tbj. pays no social contribution tax on dividends, interest or gains (Szocho tv. 5. § (6)). Under the Tbj., "domestic" means a Hungarian citizen with a registered Hungarian address, a long-term residence permit holder, a refugee, an EEA national exercising free movement in Hungary with a registered address, or a stateless person (Tbj. 4. § 1.); everyone else is "foreign" (Tbj. 4. § 12.).
 
-**Leaving: individuals.** We found no rule in the 2026 Szja tv. that taxes unrealised gains when a person leaves. A person leaving for good can ask NAV to assess the year's tax early, by decision, instead of filing (Art. 148. § (1)). A person with no Hungarian home or habitual abode who leaves before year end must notify NAV 30 days before leaving (Art. 148. § (2)).
+**Leaving: individuals.** We found no rule in the 2026 Szja tv. that taxes unrealised gains when a person leaves. A person leaving to settle abroad can ask NAV to assess the tax by decision during the year, if they show the foreign immigration visa and attach the documents needed (Art. 148. § (1)). A person with no Hungarian home, habitual abode, seat or PE who leaves before year end, not intending to return that year for taxable work or income, must notify NAV 30 days before leaving, with the documents; NAV then assesses the tax by decision (Art. 148. § (2)).
 
 **Leaving: companies (exit tax).** The base is increased by the market value less the tax book value of what is moved (Tao. tv. 16/A. § (1), (2)) when a company:
 
@@ -100,7 +100,7 @@ The charge applies only where the assets leave the Hungarian tax net. Market val
 **Instalments.** Moves to another EU state, or to an EEA state with an EU-standard tax recovery agreement, can be paid in five instalments. The company elects on the return, pays 20% with the return, and pays the other 80% in four equal yearly instalments by each year's corporate tax return due date (16/A. § (4), (5)). The whole balance falls due at once if any of these happen (16/A. § (6)):
 
 - the assets or business are sold;
-- the assets or the place of management move on to a third country;
+- the assets or the place of management move on to a third country (this does not apply to a move to an EEA state with a tax recovery agreement);
 - the company enters insolvency;
 - an instalment is 30 days late.
 
@@ -113,9 +113,9 @@ The company must tell NAV within 15 days (16/A. § (7)).
 - **Treaty-exempt income:** not taxed, but shown on the return as information. A return is not needed for income that a treaty makes untaxable in Hungary (Szja tv. 11. § (3) g)).
 - **Non-resident with no Hungarian tax:** may file form NYK by 30 April of the following year to say they had no Hungarian liability. The NAV draft return then does not become their return (NAV information sheet 24, section 2.3).
 - **Payer's withholding:** deducted at payment, paid by the 12th of the following month (Szja tv. 7. számú melléklet, point 2).
-- **Residence certificate for a non-resident:** an English original, a certified Hungarian translation, or a copy of either. It is needed every tax year, before the first payment of the year or the first payment after a change. It is kept by the payer (melléklet, point 6). Where the treaty turns on it, the beneficial owner statement must also be made before payment (point 7).
+- **Residence certificate for a non-resident:** an English original, a certified Hungarian translation, or a copy of either. It is needed every tax year, before the first payment of the year or the first payment after a change. It is kept by the payer (melléklet, point 6). If the certificate is not ready by the time of payment, the payer may accept the person's written statement of residence; if the certificate still has not been shown by the payer's return for the last month of the year, the payer must declare and pay the tax it did not withhold, and can correct this by self-revision if the certificate comes later (point 6). Where the treaty turns on it, the beneficial owner statement is made before payment; a statement made after payment but before the payer's return lets the payer correct the tax and settle the difference with the person (point 7).
 - **Refund of over-withheld tax:** the non-resident claims from NAV with the residence certificate and the payer's certificate. NAV pays to the account named (melléklet, point 4). A custodian or registered nominee can act for them (point 5).
-- **Hungarian residence certificate (for use abroad):** requested from NAV on form IGAZOL. It is free in Hungarian or Hungarian and English ([NAV guide on residence certificates](https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/tax-residence-certificate)).
+- **Hungarian residence certificate (for use abroad):** requested from NAV on form IGAZOL. It is free in Hungarian or Hungarian and English ([NAV note on residence certificates](https://nav.gov.hu/pfile/file?path=/en/taxation/taxinfo/tax-residence-certificate)).
 - **Exit tax:** declared on the corporate return for the year of the move. The instalment election is made on that return (Tao. tv. 16/A. § (4)).
 - **A1 certificate (social security).** EU Regulation 883/2004 applies one state's social security law at a time, normally where the work is done.
   - A posted worker or self-employed person stays in the home system for up to 24 months.
@@ -126,7 +126,7 @@ The company must tell NAV within 15 days (16/A. § (7)).
 
 - **Late payment interest:** for each day late, the central bank base rate plus 5 percentage points, divided by 365 (Art. 209. § (1)). With the base rate at 5.50% from 26 August 2026, that is 10.50% a year.
 - **Tax penalty (adóbírság):** 50% of the shortfall; 200% where income was hidden or records were falsified (Art. 215. § (3), (4)). An individual is not penalised for a shortfall caused by a false certificate from the employer or payer (215. § (2) a)).
-- **Default fine (mulasztási bírság):** up to HUF 400,000 for an individual and HUF 1,000,000 for others, for late, missing or wrong filings. No fine if the taxpayer files and shows it acted as could reasonably be expected (Art. 220. § (1) to (3)).
+- **Default fine (mulasztási bírság):** up to HUF 400,000 for an individual and HUF 1,000,000 for others, for late, missing or wrong filings. For a late filing, no fine if the taxpayer files and shows it acted as could reasonably be expected (Art. 220. § (1) to (3)).
 - **Payer that withheld:** once tax is withheld, NAV can collect it only from the payer (Szja tv. 15. § (3)). The treaty rate may be applied only if the documents are in hand by the time of payment; otherwise the payer withholds 15% (Szja tv. 7. számú melléklet, point 2).
 - **Exit tax instalments:** a 30-day delay on an instalment makes the whole balance due at once (Tao. tv. 16/A. § (6) e)).
 
@@ -148,7 +148,7 @@ The company must tell NAV within 15 days (16/A. § (7)).
 A Hungarian Kft pays a dividend of HUF 2,000,000 to an individual shareholder resident in a treaty country. The treaty caps source tax on this dividend at 5%. The shareholder is not a Hungarian citizen and has no registered Hungarian address, so they are "foreign" under the Tbj.
 
 - **If the payer has the paperwork before payment** (this year's residence certificate, plus the beneficial owner statement if the treaty asks for it), it withholds 5%: HUF 100,000.
-- **If not**, it must withhold the domestic 15%: HUF 300,000. The shareholder can then claim the HUF 200,000 difference from NAV with the residence certificate and the payer's certificate.
+- **If it has neither the certificate nor a written residence statement it is willing to accept**, it must withhold the domestic 15%: HUF 300,000. The shareholder can then claim the HUF 200,000 difference from NAV with the residence certificate and the payer's certificate.
 - **Szocho:** none, because the person is foreign under the Tbj. (Szocho tv. 5. § (6)).
 - **Payment:** the payer pays the tax by the 12th of the month after payment.
 
@@ -228,4 +228,4 @@ expected:
 | NAV: central bank base rate notice (25 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
 | Nemzeti Jogszabálytár short address (official) | https://njt.hu/jogszabaly/1995-117-00-00 | 2026-10-23: unreachable; the same database answered at njt.jog.gov.hu |
 
-Not yet confirmed: NAV's 2026 list of applicable treaties (the "Adózói tájékoztató" page named in information sheet 4) was not read, so this skill names no treaty partner or treaty rate other than the US position; which Hungarian treaties use the credit method rather than exemption for employment income; whether the NAV office handling non-resident refund claims is still the one named on NAV's 2017 English page (not relied on); the absence of an individual exit tax rests on a text search of the 2026 Szja tv., not on a NAV statement; payroll withholding for non-resident employees is left to the pack's payroll skill.
+Not yet confirmed: NAV's 2026 list of applicable treaties (the "Adózói tájékoztató" page named in information sheet 4) was not read, so this skill names no treaty partner or treaty rate other than the US position; which Hungarian treaties use the credit method rather than exemption for employment income; whether the NAV office handling non-resident refund claims is still the one named on NAV's 2017 English page (not relied on); the absence of an individual exit tax rests on two independent full-text searches of the 2026 Szja tv. including its annexes (the only deemed-gain rule found, 65/C. §, covers transfers into a trust or private foundation), not on a NAV statement; payroll withholding for non-resident employees is left to the pack's payroll skill.
