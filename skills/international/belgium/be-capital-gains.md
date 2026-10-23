@@ -9,6 +9,7 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
+verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -60,7 +61,7 @@ Out of scope: money on a payment account (so no tax on everyday currency gains),
 |---|---|---|---|
 | General regime (type C) rate | 10% on the net gain after the exemption, unless taxing it at the progressive scale gives less tax. No municipal surcharge | Gains from 1 January 2026 | [Art. 171, 2°, e) WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21); [art. 466, second paragraph](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/81bf3101-a837-4d89-8b97-713e080f00ac) |
 | Basic exemption (type C) | EUR 10,000 per taxpayer (statutory base EUR 4,855, coefficient 2.0592) | Assessment year 2027 | [Art. 96/2, first paragraph, 2° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737); [indexation table AY 2027](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e3a471be-e270-4962-9fbf-67ce0d7571f0) |
-| Supplementary exemption (carry-forward of unused basic exemption) | Builds up from income year 2027: EUR 1,000 for assessment year 2028 (statutory base EUR 480, to be reset by royal decree so it indexes to exactly EUR 1,000), less the basic exemption used the year before | First usable in assessment year 2028 | [Art. 96/2, first paragraph, 3° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737); [Circular 2026/C/74, nos. 93 to 96](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
+| Supplementary exemption (carry-forward of unused basic exemption) | EUR 1,000 less the part of the basic exemption actually used the year before, if that part was under EUR 1,000 (statutory base EUR 480, to be reset by royal decree so it indexes to exactly EUR 1,000). The first one comes from income year 2026 and is usable in income year 2027 | First usable in assessment year 2028 | [Art. 96/2, first paragraph, 3° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/75fb5224-4701-4169-ac6b-26c51dfdf737); [Circular 2026/C/74, nos. 93 to 96](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4) |
 | Cap on supplementary exemptions used in one year | Statutory base EUR 2,426, indexed yearly; oldest used first | From assessment year 2028 | Art. 96/2, third paragraph WIB 92 |
 | Substantial interest (type B) exemption | First EUR 1,000,000 of gains, one "backpack" over 5 consecutive taxable periods; not indexed | Gains from 1 January 2026 | Art. 96/2, first paragraph, 1° and second paragraph WIB 92; Circular 2026/C/74, no. 51 |
 | Substantial interest scale (type B), on the gain after the exemption | 1.25% to EUR 2,500,000; 2.5% from EUR 2,500,000 to EUR 5,000,000; 5% from EUR 5,000,000 to EUR 10,000,000; 10% above EUR 10,000,000. Not indexed. No municipal surcharge | Gains from 1 January 2026 | [Art. 171, 9° to 11° and 2°, f) WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/c67e2c6d-c7b0-4fef-bf88-70e579734c21) |
@@ -125,10 +126,10 @@ A gain the taxpayer reports under the 10% regime is presumed correct; the admini
 | Event | What to do | When | Source |
 |---|---|---|---|
 | Type C gain on financial instruments or insurance at a Belgian bank, insurer or broker, no opt-out | The intermediary withholds 10% on the gross gain (snapshot value for pre-2026 assets; no exemption, no losses, no historical cost option) | From 1 June 2026, on each sale | Art. 261, first paragraph, 5° WIB 92; Circular 2026/C/94 |
-| Same, with withholding | Reporting in the return is optional. Report to use the exemption, losses or a higher historical cost; the withholding is then credited against the tax | Income year 2026 return | Circular 2026/C/74, nos. 121 and 122; art. 307, §1/1 WIB 92 |
+| Same, with withholding | Reporting in the return is optional. Report to use the exemption, losses or a higher historical cost; the withholding is then credited against the tax and any excess is refunded | Income year 2026 return | Circular 2026/C/74, nos. 121 and 122; art. 307, §1/1, fourth paragraph WIB 92 (inserted by art. 28 law of 6 April 2026); Circular 2026/C/94 |
 | Opt-out of withholding, per account or contract | All account holders tell the intermediary in writing, at account opening or before the first sale on that account; a later choice applies from the next year. Revocation: once a year, effective the next year | Before the first sale | Art. 265/1 WIB 92; art. 85/1 KB/WIB 92; Circular 2026/C/94 |
 | Opt-out for income year 2026 (transitional) | Tell the intermediary by 31 August 2026; applies to the whole of 2026 | 31 August 2026 | Art. 34 law of 6 April 2026; Circular 2026/C/94 |
-| Sales from 1 January to 31 May 2026 | All account holders could ask the intermediary to pay an amount equal to 10%, treated as withholding; asked by 31 August 2026, paid by 30 November 2026. Asking excludes the opt-out for 2026 | 31 August 2026 / 30 November 2026 | Art. 35 law of 6 April 2026; Circular 2026/C/74, no. 124 |
+| Sales from 1 January to 31 May 2026 | All account holders could ask the intermediary to pay an amount equal to 10%, treated as withholding; asked by 31 August 2026, paid by 30 November 2026. Asking excludes the opt-out for 2026 | 31 August 2026 / 30 November 2026 | Art. 35 law of 6 April 2026; Circular 2026/C/74, no. 124; Circular 2026/C/94 |
 | Opted-out accounts | Intermediary files a yearly BELCOTAX form 281.08 (accounts) or 281.09 (insurance) with the total gains | Before 1 March of the following year | Art. 85/1, §1 KB/WIB 92 |
 | Opted-out gains, crypto, money, gold, foreign accounts, types A and B, exit tax | Must be reported in the personal income tax return | Income year 2026 return (assessment year 2027), filed in 2027 | Art. 313 WIB 92; Circular 2026/C/74, nos. 38, 59 and 120 |
 | Types A and B sales | Every Belgian-linked intermediary that designs, offers or manages the sale must report it to the administration once carried out | When the transaction is carried out | Art. 326bis WIB 92; Circular 2026/C/74, nos. 211 to 215 |
@@ -160,7 +161,7 @@ Facts: a Belgian resident, single, holds one Belgian securities account and has 
 3. Same year, same taxpayer, same type C: net gain EUR 17,000.
 4. Basic exemption for assessment year 2027: EUR 10,000. Taxable: EUR 7,000.
 5. Tax at 10%: EUR 700. No municipal surcharge.
-6. The bank withheld 10% of the gross ETF gain, EUR 1,800, on 15 September 2026. It ignored the exemption and the loss. She reports both sales in her 2027 return so the exemption and the loss apply; the EUR 1,800 is credited against the EUR 700, leaving EUR 1,100 of withholding above the tax.
+6. The bank withheld 10% of the gross ETF gain, EUR 1,800, on 15 September 2026. It ignored the exemption and the loss. She reports both sales in her 2027 return so the exemption and the loss apply; she asks in that return for the EUR 1,800 to be credited against the EUR 700 and the EUR 1,100 excess to be refunded (art. 307, §1/1, fourth paragraph WIB 92, inserted by art. 28 of the law of 6 April 2026). She must keep the bank statements showing the withholding and the 31 December 2025 values.
 
 ```oa-check
 name: Type C investor, ETF gain with step-up, share loss and EUR 10,000 exemption (income 2026)
@@ -250,6 +251,7 @@ All read on 2026-10-22.
 | Source | URL | Read on |
 |---|---|---|
 | FPS Finance, Circular 2026/C/74 on the tax on capital gains on financial assets in the personal income tax (22 July 2026), with the law of 6 April 2026 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4 | 2026-10-22 |
+| Art. 307, §1/1, fourth paragraph WIB 92 as inserted by art. 28 of the law of 6 April 2026 (credit and refund of withholding), reproduced in the annex to Circular 2026/C/74 | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/7f6b62c6-1baa-487a-8f59-c883dd5485c4 | 2026-10-22 |
 | FPS Finance, Circular 2026/C/94 on withholding tax on capital gains on financial assets (20 October 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/a64fb047-7cc0-4c60-81ca-35a4ab745e55 | 2026-10-22 |
 | Fisconetplus, art. 90 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5e4a1456-519a-415a-942b-060dbf9e842d | 2026-10-22 |
 | Fisconetplus, art. 92 WIB 92 (income 2026), definition of financial assets and deemed transfers | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/6bfef6a8-8c6a-4b8b-a3ee-709ae06564c4 | 2026-10-22 |
@@ -274,25 +276,6 @@ Not yet confirmed:
 
 - The filing deadline for the 2027 personal income tax return (income year 2026). It is set on the return form and was not published on 22 October 2026.
 - The exact indexed cap on supplementary exemptions for assessment year 2028 (statutory base EUR 2,426) and the royal decree that resets the EUR 480 base so the supplementary exemption is EUR 1,000; the circular's figures for later years are hypothetical.
-- Whether withholding credited above the final tax (EUR 1,100 in example 1) is refunded in cash or only set off; the circular says the withholding is fully credited (no. 121) but does not say a refund follows.
 - Where the line between a sale "up to" 31 December 2030 (statute) and "up to and including" (circular) matters, rely on the circular only with the risk named.
 - The rules for life insurance contracts (art. 102/1: premiums paid, value at 31 December 2025, the 8-year and 130% tests) are summarised, not worked through; read Circular 2026/C/74, nos. 177 to 189, before advising on a policy.
 - Penalties for an intermediary that misses the art. 326bis report were not checked.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
