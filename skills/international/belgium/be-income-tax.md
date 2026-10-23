@@ -1,10 +1,10 @@
 ---
 name: be-income-tax
-description: Use this skill whenever asked about Belgian income tax (Personenbelasting / Impot des personnes physiques) for self-employed individuals. Trigger on phrases like "personenbelasting", "IPP", "belastingaangifte", "belastingvrij minimum", "gemeentebelasting", "beroepskosten", "sociale bijdragen", "VAPZ", "PLCI", "Belgian income tax", "self-employed tax Belgium", "Tax-on-web", or any question about computing or filing income tax for a self-employed person in Belgium. This skill covers progressive brackets (25--50%), belastingvrij minimum, gemeentebelasting, beroepskosten (actual vs forfaitaire), sociale bijdragen deductibility, VAPZ/PLCI pension deduction, and Tax-on-web filing. ALWAYS read this skill before touching any Belgian income tax work.
-version: 2.0
+description: "Belgian personal income tax (personenbelasting / impot des personnes physiques) for self-employed residents: traders and business owners (winst) and liberal professions (baten), for income 2026 (assessment year 2027). Covers the art. 130 scale (25%, 40%, 45%, 50%), the EUR 11,550 tax-free amount, actual costs versus the art. 51 lump sum (30% capped at EUR 6,070 for profits; 28.7% to 3% capped at EUR 5,340 for benefits), deduction of social contributions and VAPZ, restaurant and gift limits, car costs, the municipal surcharge, prepayments (voorafbetalingen) and the 2026 bonification rates, and the end of the prepayment increase for self-employed profits. Trigger on: personenbelasting zelfstandige, IPP indépendant, beroepskosten, forfaitaire beroepskosten, voorafbetalingen, bonificatie, Tax-on-web zelfstandige. Out of scope: be-employee-income-tax (employees and pensioners), be-social-contributions, belgium-payroll, be-corporate-tax, be-capital-gains, be-cross-border."
+version: 2.1
 jurisdiction: BE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,542 +14,260 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# BE Income Tax
-
-## Belgium Income Tax (PB/IPP) -- Self-Employed Skill v2.0
-
-## Section 1 -- Quick Reference
-
-**Quick Reference table**
-
-| Field | Value |
-| --- | --- |
-| Country | Belgium (Koninkrijk Belgie / Royaume de Belgique) |
-| Tax | Personenbelasting (PB) / Impot des personnes physiques (IPP) + Gemeentebelasting |
-| Currency | EUR only |
-| Tax year | Calendar year (income year) / Assessment year = income year + 1 |
-| Primary legislation | Wetboek van de inkomstenbelastingen 1992 (WIB 92) / CIR 92 |
-| Supporting legislation | KB/WIB 92; Royal Decree No. 38 (social statute) |
-| Tax authority | FOD Financien / SPF Finances |
-| Filing portal | Tax-on-web (MyMinfin) |
-| Filing deadline | 30 June (self-filing) / mid-October (with accountant) |
-| Contributor | Open Accountants Community |
-| Validated by | Pending -- requires sign-off by erkend boekhouder-fiscalist or bedrijfsrevisor |
-| Validation date | Pending |
-| Skill version | 2.0 |
-
-### Progressive Tax Brackets (Income Year 2025 / AJ 2026)
-
-**Progressive Tax Brackets table**
-
-| Taxable Income (EUR) | Marginal Rate |
-| --- | --- |
-| 0 -- 16,320 | 25% |
-| 16,721 -- 28,800 | 40% |
-| 29,511 -- 49,840 | 45% |
-| Above 49,840 | 50% |
-
-### Belastingvrij Minimum (Tax-Free Allowance)
-
-**Belastingvrij Minimum table**
-
-| Category | EUR |
-| --- | --- |
-| Base | 10,910 |
-| +1 dependant child | +1,850 |
-| +2 dependant children | +4,760 |
-| +3 dependant children | +10,660 |
-| +4+ children | +6,180 per additional |
-| Disabled dependant | +1,850 per person |
-
-Converted to tax reduction at 25% rate: EUR 10,910 x 25% = EUR 2,727.50 base.
-
-### Gemeentebelasting (Municipal Surcharge)
-
-- **Gemeentebelasting range** — 0% to 9% of federal tax % (Average ~7%)
-- **Unknown municipality rule** — MUST know municipality to compute. STOP if unknown.
-
-### Key Deductions
-
-**Key Deductions table**
-
-| Item | Rule |
-| --- | --- |
-| Sociale bijdragen | Fully deductible as professional expense |
-| Restaurant meals (business) | 69% deductible |
-| Business gifts | 50% deductible |
-| VAPZ/PLCI (gewoon) | Max ~EUR 3,965 (8.17% of reference income) |
-| VAPZ/PLCI (sociaal) | Max ~EUR 4,562 (9.40% of reference income) |
-| Forfaitaire beroepskosten (max) | ~EUR 5,750 |
-
-### Conservative Defaults
-
-**Conservative Defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown municipality | STOP -- cannot compute gemeentebelasting |
-| Unknown expense method | Forfaitaire beroepskosten |
-| Unknown business-use % | 0% deduction |
-| Unknown VAPZ type | Gewoon VAPZ |
-| Unknown vehicle CO2 | Minimum deductibility percentage |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-- **Minimum viable** — bank statement for the full tax year, municipality of residence, marital/family status.
-- **Recommended** — all invoices, sociale bijdragen statements from social fund, VAPZ/PLCI certificates, prior year aanslagbiljet.
-- **Ideal** — complete accounting records, asset register, voorafbetalingen confirmations, employment income fiche 281.10.
-- **Refusal if minimum is missing** — SOFT WARN. No bank statement = hard stop. No municipality = hard stop.
-
-### Refusal Catalogue
-
-- **R-BE-1 -- Companies (BV, NV, CV)** — This skill covers natural persons (personenbelasting) only. Vennootschapsbelasting is out of scope.
-- **R-BE-2 -- Non-resident** — Non-resident taxation (BNI/INR) has different rules. Escalate.
-- **R-BE-3 -- International structures** — Cross-border income and tax treaties require specialist analysis. Escalate.
-- **R-BE-4 -- Fiscale procedures / bezwaar** — Objections and appeals require specialist advice. Escalate.
-
-## Section 3 -- Transaction Pattern Library
-
-This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. If none match, fall through to Tier 1 rules in Section 5.
-
-### 3.1 Income Patterns (Credits)
-
-**Income Patterns table**
-
-| Pattern | Tax Line | Treatment | Notes |
-| --- | --- | --- | --- |
-| OVERSCHRIJVING [client], BETALING, HONORARIUM | Beroepsinkomsten | Business income | Net of BTW if BTW-registered |
-| STRIPE PAYOUT, PAYPAL PAYOUT | Beroepsinkomsten | Business income | Platform payout |
-| LOON, WEDDE, WERKGEVER | Bezoldiging | NOT self-employment | Employment income |
-| HUUR ONTVANGEN, HUUROPBRENGST | Onroerend inkomen | NOT self-employment | Rental income |
-| INTERESTEN, DIVIDEND | Roerend inkomen | NOT self-employment | Capital income (RV 30% withheld) |
-| FOD FINANCIEN TERUGBETALING | EXCLUDE | Not income | Tax refund |
-
-### 3.2 Expense Patterns (Debits) -- Fully Deductible
-
-**Fully Deductible Expenses table**
-
-| Pattern | Category | Treatment | Notes |
-| --- | --- | --- | --- |
-| KANTOORHUUR, HUUR KANTOOR, OFFICE RENT | Huurkosten | Fully deductible | Dedicated premises |
-| BEROEPSAANSPRAKELIJKHEID, BA VERZEKERING | Verzekering | Fully deductible | Professional insurance |
-| BOEKHOUDER, ACCOUNTANT, FISCALIST | Erelonen | Fully deductible |  |
-| ADVOCAAT, NOTARIS (business) | Erelonen | Fully deductible | Business-related |
-| KANTOORMATERIAAL, BUREELBENODIGDHEDEN | Kantoorkosten | Fully deductible |  |
-| RECLAME, MARKETING, GOOGLE ADS | Reclamekosten | Fully deductible |  |
-| OPLEIDING, VORMING, BIJSCHOLING | Opleidingskosten | Fully deductible | Current profession |
-| LIDMAATSCHAP, BEROEPSVERENIGING | Bijdragen | Fully deductible |  |
-| BANKREKENINGKOSTEN, BANKKOSTEN | Financiele kosten | Fully deductible | Business account |
-| STRIPE FEE, PAYPAL FEE | Transactiekosten | Fully deductible |  |
-| SOFTWARE, LICENTIE, ABONNEMENT | IT-kosten | Fully deductible |  |
-
-### 3.3 Expense Patterns -- Sociale Bijdragen
-
-**Sociale Bijdragen table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ACERTA, LIANTIS, XERIUS, GROUP S, PARTENA | Fully deductible | Social insurance fund contributions |
-| SOCIALE BIJDRAGEN, COTISATIONS SOCIALES | Fully deductible | Quarterly social contributions |
-| VAPZ, PLCI, AANVULLEND PENSIOEN | Deductible (within limits) | See Section 6 for caps |
-
-### 3.4 Expense Patterns -- Partially Deductible
-
-**Partially Deductible table**
-
-| Pattern | Deductibility | Treatment | Notes |
-| --- | --- | --- | --- |
-| RESTAURANT, ETENTJE, ZAKENLUNCH | 69% | Partially deductible | Business purpose restaurant meals |
-| GESCHENK, CADEAU, RELATIEGESCHENK | 50% | Partially deductible | Business gifts |
-| BRANDSTOF, BENZINE, DIESEL, TOTAL, Q8 | CO2-based % | T2 | Vehicle fuel -- see CO2 rules |
-| ONDERHOUD AUTO, GARAGE | CO2-based % | T2 | Vehicle maintenance |
-
-### 3.5 Expense Patterns -- NOT Deductible
-
-**NOT Deductible table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PRIVE, BOODSCHAPPEN, SUPERMARKT, COLRUYT, DELHAIZE | NOT deductible | Personal living costs |
-| BOETE, GELDBOETE | NOT deductible | Fines |
-| PERSONENBELASTING, PB BETALING | NOT deductible | Income tax |
-| PRIVEOPNAME | NOT deductible | Drawings |
-
-### 3.6 Capital Items
-
-**Capital Items table**
-
-| Pattern | Useful Life | Annual Rate | Notes |
-| --- | --- | --- | --- |
-| COMPUTER, LAPTOP, PC | 3 years | 33.3% |  |
-| PRINTER, SCANNER | 5 years | 20% |  |
-| KANTOORMEUBILAIR, BUREAU | 10 years | 10% |  |
-| AUTO, WAGEN (business) | 5 years | 20% | CO2 deductibility limits apply |
-| GEBOUW (commercial) | 33 years | 3% |  |
-
-### 3.7 Exclusions
-
-**Exclusions table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| EIGEN REKENING, INTERNE OVERSCHRIJVING | EXCLUDE | Own-account transfer |
-| LENING, AFLOSSING | EXCLUDE | Loan principal |
-| LENINGSINTERESTEN (business) | Deductible | Business loan interest |
-| BTW BETALING | EXCLUDE from P&L | BTW liability payment |
-| VOORAFBETALING BELASTING | Track separately | Credit against tax due |
-
-### 3.8 Belgian Banks -- Statement Format Reference
-
-**Belgian Banks Statement Format table**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BNP Paribas Fortis | CSV, PDF | Datum, Omschrijving, Bedrag | Most common; CODA format available |
-| KBC | CSV, PDF | Boekingsdatum, Omschrijving, Bedrag | KBC Touch export |
-| Belfius | CSV, PDF | Datum, Mededeling, Bedrag |  |
-| ING Belgium | CSV, PDF | Datum, Naam tegenpartij, Bedrag |  |
-| Argenta | CSV, PDF | Datum, Verrichting, Bedrag |  |
-| N26, Revolut | CSV | Date, Counterparty, Amount | Neobank format |
-
-## Section 4 -- Worked Examples
-
-### Example 1 -- Client Payment (BTW-registered)
-
-**Input line:**
-`15/03/2025 ; BNP Fortis Credit ; DESIGN STUDIO BVBA ; Factuur 2025-012 ; +3,025.00 ; EUR`
-
-**Reasoning:**
-Client payment. If BTW-registered (21%), EUR 3,025 includes BTW. Net = EUR 2,500 (beroepsinkomsten) + EUR 525 BTW.
-
-**Classification:** Beroepsinkomsten = EUR 2,500.
-
-### Example 2 -- Restaurant Meal (69% Deductible)
-
-**Input line:**
-`22/04/2025 ; KBC Visa ; RESTAURANT COMME CHEZ SOI ; Zakenlunch ; -95.00 ; EUR`
-
-**Reasoning:**
-Business restaurant meal. 69% deductible. EUR 95 x 69% = EUR 65.55 deductible. EUR 29.45 not deductible.
-
-**Classification:** Beroepskosten = EUR 65.55.
-
-### Example 3 -- Sociale Bijdragen
-
-**Input line:**
-`15/01/2025 ; Belfius DD ; ACERTA ; Sociale bijdragen Q4 2024 ; -1,850.00 ; EUR`
-
-**Reasoning:**
-Social contributions. Fully deductible as beroepskosten.
-
-**Classification:** Beroepskosten -- fully deductible.
-
-### Example 4 -- VAPZ Contribution
-
-**Input line:**
-`30/06/2025 ; KBC DD ; ACERTA VAPZ ; Gewoon VAPZ 2025 ; -3,965.00 ; EUR`
-
-**Reasoning:**
-Gewoon VAPZ at maximum (EUR 3,965 for 2025). Deductible as social contribution.
-
-**Classification:** Deductible within VAPZ cap.
-
-### Example 5 -- Vehicle Fuel (CO2-dependent)
-
-**Input line:**
-`10/05/2025 ; BNP Fortis Card ; TOTAL ENERGIES ; Diesel ; -75.00 ; EUR`
-
-**Reasoning:**
-Vehicle fuel. Fuel is max 75% deductible regardless of CO2. Other vehicle costs follow the CO2-based formula. Business % required.
-
-**Classification:** T2 -- 75% cap on fuel, business % required, CO2 deductibility for other costs.
-
-### Example 6 -- Personal Groceries (Exclude)
-
-**Input line:**
-`08/03/2025 ; Belfius Card ; COLRUYT ; Boodschappen ; -85.00 ; EUR`
-
-**Reasoning:**
-Personal groceries. Not business-related.
-
-**Classification:** NOT deductible. Exclude.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Beroepsinkomsten
-
-- **Beroepsinkomsten treatment** — All business income is beroepsinkomsten. For BTW-registered, report net of BTW.
-
-### 5.2 Beroepskosten
-
-- **Two methods** — Werkelijke (actual): All documented business expenses meeting the test. Forfaitaire (flat-rate): Graduated scale, max ~EUR 5,750. Cannot combine both. Sociale bijdragen deductible under either method.
-
-### 5.3 Forfaitaire Beroepskosten Scale
-
-**Forfaitaire Beroepskosten Scale table**
-
-| Income Bracket (EUR) | Rate |
-| --- | --- |
-| 0 -- 19,620 | 30% |
-| 19,621 -- 38,900 | 11% |
-| 38,901 -- 64,770 | 3% |
-| Above 64,770 | 0% |
-
-### 5.4 Non-Deductible Expenses
-
-**Non-Deductible Expenses table**
-
-| Expense | Reason |
-| --- | --- |
-| Personal living expenses | Not business-related |
-| Fines (boetes) | Public policy |
-| Income tax (personenbelasting) | Tax on income |
-| Capital expenditure | Through afschrijvingen |
-
-### 5.5 Partially Deductible
-
-**Partially Deductible table**
-
-| Item | % Deductible |
-| --- | --- |
-| Restaurant meals (business) | 69% |
-| Business gifts | 50% |
-| Vehicle costs (fuel) | Max 75% |
-| Vehicle costs (other) | CO2-based formula |
-
-### 5.6 Voorafbetalingen (Advance Payments)
-
-**Voorafbetalingen table**
-
-| Quarter | Deadline | Benefit % |
-| --- | --- | --- |
-| VA1 | 10 April | 12% |
-| VA2 | 10 July | 10% |
-| VA3 | 10 October | 8% |
-| VA4 | 20 December | 6% |
-
-- **Vermeerdering** — Vermeerdering (~9% of tax) for insufficient advance payments. Making VA earns bonification to offset.
-
-### 5.7 Filing Deadlines
-
-**Filing Deadlines table**
-
-| Item | Deadline |
-| --- | --- |
-| Tax-on-web (self) | 30 June |
-| With accountant | Mid-October |
-| Paper filing | End of June |
-
-### 5.8 Penalties
-
-**Penalties table**
-
-| Offence | Penalty |
-| --- | --- |
-| Late filing (first) | EUR 50/month |
-| Late payment interest | 4% per year (2025) |
-| Non-filing / serious | EUR 50-1,250 + tax increase 10%-200% |
-
-### 5.9 Afschrijvingen (Depreciation)
-
-**Afschrijvingen table**
-
-| Asset | Life | Rate |
-| --- | --- | --- |
-| Computer | 3 years | 33.3% |
-| Software | 3 years | 33.3% |
-| Furniture | 10 years | 10% |
-| Vehicles | 5 years | 20% |
-| Buildings | 33 years | 3% |
-
-- **Depreciation methods permitted** — Straight-line or declining balance (degressief) permitted.
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Werkelijke vs Forfaitaire Comparison
-
-- **Comparison rule** — Compare actual expenses (including sociale bijdragen) against forfaitaire scale. Flag for reviewer.
-
-### 6.2 Motor Vehicle CO2 Deductibility
-
-- **CO2 deductibility formula** — 120% - (0.5% x coefficient x CO2 g/km) (From 2025. High-emission vehicles significantly limited. Flag for reviewer to compute using exact CO2 and fuel type.)
-
-### 6.3 VAPZ/PLCI Limits
-
-- **VAPZ/PLCI limits** — Gewoon: 8.17% of reference income (max ~EUR 3,965). Sociaal: 9.40% of reference income (max ~EUR 4,562). Reference income = net professional income from 3 years prior. Flag for reviewer to confirm limit.
-
-### 6.4 Home Office
-
-- **Home office deduction rule** — Dedicated workspace required. Proportional by floor area. Dual-use does not qualify.
-
-### 6.5 Phone / Internet Mixed Use
-
-- **Phone/Internet mixed use rule** — Business portion only. Default 0%.
-
-### 6.6 Sociale Bijdragen in First 3 Years
-
-- **First 3 years sociale bijdragen rule** — Provisional contributions on minimum basis. Regularisation later. Adjustment in year of payment/receipt.
-
-## Section 7 -- Excel Working Paper Template
-
-BELGIUM INCOME TAX -- PB/IPP WORKING PAPER
-Tax Year: 2025 (AJ 2026)
-Client: ___________________________
-Municipality: ___________ (Rate: ___%)
-Status: Single / Married / Cohabitant
-Dependants: ___
-
-A. BEROEPSINKOMSTEN (net of BTW if registered)    ___________
-
-B. BEROEPSKOSTEN
-  Method: [ ] Werkelijk  [ ] Forfaitair
-  B1. Sociale bijdragen                            ___________
-  B2. Kantoorkosten                                ___________
-  B3. Verzekeringen                                ___________
-  B4. Erelonen (boekhouder, advocaat)              ___________
-  B5. IT / software                                ___________
-  B6. Reclame / marketing                          ___________
-  B7. Reiskosten                                   ___________
-  B8. Restaurantkosten (69%)                       ___________
-  B9. Autokosten (CO2-based %)                     ___________
-  B10. Afschrijvingen                              ___________
-  B11. Overige beroepskosten                       ___________
-  B12. TOTAL                                       ___________
-
-C. NETTO BEROEPSINKOMEN (A - B12)                  ___________
-
-D. BELASTING
-  D1. Federale belasting (brackets)                ___________
-  D2. Less: Belastingvrij minimum reductie         ___________
-  D3. Less: Other reductions                       ___________
-  D4. Federale belasting verschuldigd              ___________
-  D5. Gemeentebelasting (D4 x rate)               ___________
-  D6. TOTAL                                        ___________
-  D7. Less: Voorafbetalingen                       ___________
-  D8. SALDO                                        ___________
-
-REVIEWER FLAGS:
-  [ ] Municipality and rate confirmed?
-  [ ] Expense method confirmed (actual/forfait)?
-  [ ] Vehicle CO2 deductibility computed?
-  [ ] Restaurant meals at 69%?
-  [ ] VAPZ within limits?
-  [ ] Vermeerdering for missing VA?
-
-## Section 8 -- Bank Statement Reading Guide
-
-### Belgian Bank Statement Formats
-
-**Belgian Bank Statement Formats table**
-
-| Bank | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| BNP Paribas Fortis | CSV, PDF, CODA | Datum, Omschrijving/Mededeling, Bedrag | CODA format = structured |
-| KBC | CSV, PDF | Boekingsdatum, Omschrijving, Bedrag | KBC Touch/Business |
-| Belfius | CSV, PDF | Datum, Mededeling, Bedrag |  |
-| ING Belgium | CSV, PDF | Datum, Naam tegenpartij, Mededeling, Bedrag |  |
-| Argenta | CSV, PDF | Datum, Verrichting, Bedrag |  |
-
-### Key Belgian Banking Terms
-
-**Key Belgian Banking Terms table**
-
-| Term | English | Hint |
-| --- | --- | --- |
-| Overschrijving | Transfer | Check direction |
-| Domiciliering | Direct debit | Regular expense |
-| Storting | Deposit | Potential income |
-| Betaalkaart / Visa | Card payment | Expense |
-| Bancontact | Debit card payment | Expense |
-| Rekeningkosten | Account charges | Deductible |
-
-## Section 9 -- Onboarding Fallback
-
-ONBOARDING QUESTIONS -- BELGIUM INCOME TAX
-1. Municipality of residence? (Required for gemeentebelasting)
-2. Family status: single, married/cohabitant, dependants?
-3. Expense method: actual (werkelijk) or flat-rate (forfaitair)?
-4. Sociale bijdragen: total paid in the year? Which fund?
-5. VAPZ/PLCI contributions? Gewoon or sociaal?
-6. Vehicle: CO2 emissions? Fuel type? Business %?
-7. Home office: dedicated room? Floor area %?
-8. Phone/internet: business %?
-9. Other income (employment, rental, investment)?
-10. Voorafbetalingen made? Amounts and dates?
-
-## Section 10 -- Reference Material
-
-### Key Legislation
-
-**Key Legislation table**
-
-| Topic | Reference |
-| --- | --- |
-| Tax brackets | WIB 92, Art. 130+ |
-| Belastingvrij minimum | WIB 92, Art. 131-145 |
-| Beroepskosten | WIB 92, Art. 49-66 |
-| Forfaitaire kosten | WIB 92, Art. 51 |
-| Gemeentebelasting | WIB 92, Art. 466-470 |
-| Sociale bijdragen | Royal Decree No. 38 |
-| VAPZ | Programmawet 24 Dec 2002 |
-| Afschrijvingen | WIB 92, Art. 61-65 |
-| Voorafbetalingen | WIB 92, Art. 157-168 |
-| Restaurant meals | 69% rule |
-| Record keeping | 7 years |
-
-### Test Suite
-
-Input: Turnover EUR 50,000, actual expenses EUR 10,000 (incl. sociale bijdragen EUR 5,500).
-Expected: Net EUR 40,000. Federal tax ~EUR 14,016. Less belastingvrij EUR 2,728 = EUR 11,289. Gemeente EUR 948.
-
-Input: Turnover EUR 30,000, actual EUR 2,000.
-Expected: Forfaitaire ~EUR 7,028. Forfaitaire is better.
-
-Input: EUR 3,000 restaurant at 100%.
-Expected: 69% = EUR 2,070 deductible. Remove EUR 930.
-
-Input: EUR 5,000 gewoon VAPZ. Max EUR 3,965.
-Expected: EUR 1,035 excess not deductible.
-
-Input: Federal tax EUR 8,000, rate 7%.
-Expected: Gemeente EUR 560. Total EUR 8,560.
-
-Input: Tax EUR 10,000, no VA.
-Expected: Vermeerdering ~EUR 900. Total EUR 10,900.
-
-## PROHIBITIONS
-
-- NEVER compute gemeentebelasting without municipality and actual rate
-- NEVER allow both werkelijke and forfaitaire beroepskosten
-- NEVER deduct restaurant meals at 100% -- maximum 69%
-- NEVER allow income tax as a deduction
-- NEVER allow fines as deductions
-- NEVER allow VAPZ above maximum
-- NEVER ignore vermeerdering for missing advance payments
-- NEVER present calculations as definitive
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an erkend boekhouder-fiscalist or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+# Belgium: income tax for the self-employed (income 2026, assessment year 2027) v2.1
+
+> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to file, pay or take a tax position without review by a qualified professional in Belgium.
+
+This skill computes the annual personal income tax of a Belgian resident who earns self-employed income. It links to the other Belgian skills instead of repeating them:
+
+- The tax-free amount supplements for children and dependants, the marital quotient, joint assessment, federal reductions and the refund mechanics: `be-employee-income-tax`
+- Quarterly self-employed social contributions and VAPZ: `be-social-contributions`
+- Company directors paid by their company, and the company itself: `be-corporate-tax`
+- Capital gains on financial assets: `be-capital-gains`
+- Residence, non-residents and exit tax: `be-cross-border`
+
+## Who this applies to
+
+- **Belgian residents** taxed in the personenbelasting on worldwide income (see `be-cross-border` for the residence test).
+- **Self-employed with profits (winst)**: traders, craftsmen, shopkeepers and other industrial, commercial or agricultural businesses run as a sole trader (art. 23, §1, 1° WIB 92).
+- **Self-employed with benefits (baten)**: liberal professions, offices and other gainful activities not counted as profits (art. 23, §1, 2° and art. 27 WIB 92), for example consultants, doctors, lawyers, architects.
+- **Assisting spouses (meewerkende echtgenoot)** for the share of income attributed to them.
+
+Out: company directors (3% lump sum, increase for missing prepayments still applies; see "Prepayments" and `be-corporate-tax`), companies, and non-residents (`be-cross-border`). Employees and pensioners are in `be-employee-income-tax`.
+
+Income year 2026 is assessment year 2027. All income tax figures below are the indexed amounts for income 2026 as printed in Fisconetplus. Several were changed by the law of 15 July 2026 (Belgian Official Gazette 29 July 2026), which applies from assessment year 2027.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Tax scale | 25% to EUR 16,720; 40% from EUR 16,720 to EUR 29,510; 45% from EUR 29,510 to EUR 51,070; 50% above EUR 51,070 | Income 2026 | [Art. 130 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96) |
+| Tax-free amount, basic | EUR 11,550 per taxpayer (supplements for children and dependants: see `be-employee-income-tax`) | Income 2026 (law of 15 July 2026) | [Art. 131 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751) |
+| Tax on the tax-free amount (deducted from the scale tax) | 25% up to EUR 11,750; 30% from EUR 11,750 to EUR 16,720; 40% to EUR 27,860; 45% to EUR 51,070; 50% above | Income 2026 | [Art. 134 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/20a503a9-4213-4e60-a91c-0ebb907e176a) |
+| Lump-sum expenses, profits (winst) | 30% of gross profits after social contributions and the purchase price of goods sold; at most EUR 6,070 | Income 2026 | [Art. 51 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c) |
+| Lump-sum expenses, benefits (baten) | 28.7% of the first EUR 7,720; 10% from EUR 7,720 to EUR 15,340; 5% from EUR 15,340 to EUR 25,530; 3% above EUR 25,530; at most EUR 5,340 | Income 2026 | [Art. 51 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c) |
+| Lump-sum expenses, assisting spouse and company directors | Assisting spouse 5%, at most EUR 5,340; company directors 3%, at most EUR 3,200 | Income 2026 | [Art. 51 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c) |
+| Personal social contributions | Deductible as professional expenses, including VAPZ contributions (art. 45 programme law of 24 December 2002) | Income 2026 | [Art. 52, 7° and 7°bis WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34) |
+| VAPZ maximum rate | Ordinary VAPZ 8.50% of the reference income (was 8.17%); social VAPZ 9.78% (was 9.40%); from contribution year 2026 | 2026 | [RSVZ, Wijzigingen VAPZ, 13 October 2026](https://www.rsvz.be/nl/nieuws/wijzigingen-vapz) |
+| Restaurant costs | 69% deductible (31% disallowed) | Income 2026 | [Art. 53, 8°bis WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca) |
+| Reception costs and business gifts | 50% deductible; branded advertising items excluded from the limit | Income 2026 | [Art. 53, 8° WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca) |
+| Car costs, cars bought, leased or rented from 1 January 2026 | Not deductible unless the car emits no CO2. Plug-in hybrid: electricity at the zero-emission rate; other costs (not fuel) at 120% - 0.5% x g CO2/km, at most 75% for a car bought, leased or rented before 1 January 2028 unless it emits 50 g/km or less. Home to work by car: EUR 0.15 per km | Income 2026 | [Art. 66 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3) |
+| Car costs, cars bought, leased or rented before 1 January 2026 | 120% - (0.5% x coefficient x g CO2/km), coefficient 1 for diesel, 0.95 for other fuels (0.90 for natural gas under 12 fiscal hp), rounded to one decimal. Bought before 1 July 2023: at least 50% (40% at 200 g/km or more or with no CO2 data), at most 100%; bought before 1 January 2018: at least 70% for income 2026. Bought from 1 July 2023 to 31 December 2025: at most 25% unless zero-emission, 0% with no CO2 data. Plug-in hybrid bought from 1 July 2023 to 31 December 2025: electricity 100%, fuel at the 25% cap, other costs by the formula at most 75% (100% at 50 g/km or less) | Income 2026 | [Art. 550 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d51b4c37-c6d6-4fd2-ad8b-28ee18069895) |
+| Prepayment increase on profits and benefits | None from assessment year 2027. The increase now applies only to company directors' pay (art. 30, 2°) | Income 2026 (law of 15 July 2026) | [Art. 157 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/333419cd-668a-47b2-b989-0e421421f5bc) |
+| Base rate (basisrentevoet) | 2%: the ECB marginal lending rate on 1 January 2026 (2.40%) rounded down to the unit, never under 1% | Income 2026 | [Art. 161 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/1f33c7f0-21c9-4cc3-9e45-41cb00db2b7e); [ECB key interest rates](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html) |
+| Bonification on prepayments (self-employed) | 1.5, 1.25, 1 and 0.75 times the base rate: 3% (by 10 April 2026), 2.5% (by 10 July), 2% (by 10 October), 1.5% (by 20 December). Prepayments from 21 December 2026 to 20 February 2027: 0.5 times the base rate, 1% | Income 2026 | [Art. 176](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/8eff9596-837e-469e-8e90-0b1d72e582e1) and [art. 177 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d5619aa0-3a1c-4dba-8600-7e87e8c4bdfc) |
+| Bonification ceiling | Only prepayments up to the total tax raised to 106%, less withholding, tax credits and any prepayments needed to avoid a director's increase. The tax on profits or benefits of a person who assists or replaces a self-employed person without an employment contract (a helper), and on indemnities under art. 27, second paragraph, 5° and 6°, is left out, so prepayments on that income earn no bonification | Income 2026 (law of 15 July 2026) | [Art. 175 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db64628c-365f-4ee1-b0fb-122282a6c557) |
+| Prepayment increase, company directors only | 2.25 times the base rate (4.5%) of the tax on directors' pay counted at 106%, less 3, 2.5, 2 and 1.5 times the base rate (6%, 5%, 4%, 3%) of prepayments by 10 April, 10 July, 10 October and 20 December; the positive difference is cut to 90%; none under 0.5% of the tax or EUR 100 | Income 2026 | [Art. 159](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/b35e0c32-dc58-4847-b389-4481bf0a969b), [160](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/fd39784e-027e-4943-bd38-458c44606ede), [163](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e97ca46f-5f52-425e-87cb-723b84f6f0ba) and [165 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/38f2eab4-a66d-494a-8a4d-d5177ad80182) |
+| Municipal surcharge | Rate set by each municipality, charged on the total tax | Income 2026 | [Art. 466](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/81bf3101-a837-4d89-8b97-713e080f00ac) and [art. 468 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/4d803548-89eb-4ef5-b1a5-12f5751e1313) |
+| Late payment interest | 4% a year for 2026 and 2027 | 2026, 2027 | [Art. 414 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5); [law of 5 May 1865, art. 2, §2/1](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/da7e0caf-3428-43aa-ab80-30410a15beca) |
+| Tax increase | 10% to 200% of the tax on undeclared or late income; none for a first offence in good faith, presumed | Income 2026 | [Art. 444 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0) |
+
+**Coming next year, not for income 2026.** The law of 15 July 2026 adds an entrepreneur deduction (ondernemersaftrek, new art. 81 WIB 92): 10% of profits and benefits after deducting professional losses (art. 78 to 80), at most EUR 311, from assessment year 2028 (income 2027); the cap becomes EUR 415 from assessment year 2030 (income 2029). It does not apply to an assisting spouse's income, helpers' income, replacement income or attendance fees. Do not apply it to income 2026.
+
+## The taxable base
+
+Work through the return in this order.
+
+1. **Gross receipts.** All profits or benefits of 2026. A VAT-registered taxpayer counts receipts net of VAT. Receipts on the bank statement are a starting point; reconcile them with the invoices issued.
+2. **Less social contributions paid in 2026.** Quarterly contributions, regularisations and VAPZ paid in the year (art. 52, 7° and 7°bis). Amounts are in `be-social-contributions`.
+3. **Less professional expenses: actual or lump sum.** Actual costs are deductible if made to earn the income and proven (art. 49). Without proof, the art. 51 lump sum applies instead, computed on gross receipts less social contributions and, for traders, the purchase price of goods sold. One method for all income of the same category. Taxpayers on the fixed bases of art. 342, §1 (forfaitaire grondslagen) get no lump sum.
+   - Profits (winst): 30%, at most EUR 6,070. Purchases of goods sold stay deductible on top.
+   - Benefits (baten): 28.7% / 10% / 5% / 3% on the bands above, at most EUR 5,340.
+   Compare both before choosing. Actual costs win when real costs (rent, insurance, software, travel, depreciation) exceed the lump sum.
+4. **Limits on actual costs.** Restaurant 69%, receptions and gifts 50% (art. 53). Car costs follow art. 66 (see the table). Fines, income tax and private living costs are not deductible. Mixed-use items (phone, internet, home office) count only for the business share, which the taxpayer must show.
+5. **Depreciation.** Assets with a limited useful life are depreciated over that life (art. 52, 6° and art. 61 to 64), not expensed. Keep an asset register.
+6. **Net professional income.** For a married couple or legal cohabitants, the assisting-spouse attribution (art. 86) and the marital quotient (art. 87 and 88) can move part of it; see `be-employee-income-tax`.
+7. **Scale tax** on taxable income (art. 130), **less tax on the tax-free amount** (art. 134). With children or dependants, add the supplements first.
+8. **Less reductions** (pension savings, gifts, childcare and others) as in `be-employee-income-tax`.
+9. **Regional split and municipal surcharge.** The basic tax is shared between the federal state and the region, which levies its own surcharge and can grant regional reductions (see `be-employee-income-tax`). The worked examples below assume the regional surcharge exactly offsets the federal autonomy cut; that is an assumption, not a confirmed 2026 result. Then multiply the tax by the municipality's rate (art. 466). The rate must be known; if the municipality is unknown, stop and ask.
+10. **Prepayments and bonification.** Deduct prepayments made for 2026 and the bonification they earned (art. 175 to 177). No increase for missing prepayments on self-employed profits or benefits from assessment year 2027.
+
+### Classifying bank lines
+
+Use this as a first pass on a bank statement. Anything that does not match goes to the general rules above.
+
+| Pattern | Treatment |
+|---|---|
+| Transfer from a client, STRIPE / PAYPAL payout | Business receipts (net of VAT if registered) |
+| LOON, WEDDE, WERKGEVER | Employment pay, not self-employed income (`be-employee-income-tax`) |
+| HUUR ONTVANGEN | Rental income, not self-employed income |
+| INTERESTEN, DIVIDEND | Investment income, not self-employed income |
+| FOD FINANCIEN TERUGBETALING | Tax refund, not income |
+| Social insurance fund (ACERTA, LIANTIS, XERIUS, GROUP S, PARTENA, UCM) | Social contributions, deductible (art. 52, 7°) |
+| VAPZ / PLCI | Deductible within the VAPZ maximum (art. 52, 7°bis) |
+| Office rent, professional insurance, accountant, lawyer, software, advertising, training, bank charges | Deductible if for the business |
+| RESTAURANT, ZAKENLUNCH | 69% deductible if business |
+| GESCHENK, RELATIEGESCHENK, reception | 50% deductible |
+| BRANDSTOF, GARAGE, car lease | Art. 66 rules; ask CO2, fuel type, purchase date and business share |
+| BOETE, PERSONENBELASTING, PRIVE, supermarket | Not deductible |
+| Computer, furniture, vehicle purchase | Asset: depreciate, do not expense |
+| Own-account transfer, loan principal, VAT payment | Exclude from profit |
+| VOORAFBETALING | Prepayment: credit against the tax, record the date |
+
+## Deadlines and filing
+
+| What | When | Source |
+|---|---|---|
+| Prepayments for income 2026 | By 10 April, 10 July, 10 October and 20 December 2026; a further window from 21 December 2026 to 20 February 2027 earns 1% | [Art. 177 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d5619aa0-3a1c-4dba-8600-7e87e8c4bdfc); [art. 176 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/8eff9596-837e-469e-8e90-0b1d72e582e1) |
+| Electronic return with self-employed income | By 16 October 2027, and at least five months after the electronic return is available | [Art. 308/1 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/51c63576-3d3c-49cd-bf84-e5c6e20022ad) |
+| Paper return | By 30 June 2027, and at least one month after the form is sent | [Art. 308, §1 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182821e5-122a-4948-867e-297c16371fe1) |
+| Paying a balance | Within two months of the assessment notice being sent | [Art. 413 WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/09b8ca93-c681-40df-9a8f-c5a947e063ae) |
+| Social contributions | Quarterly, by the last day of each quarter | `be-social-contributions` |
+
+The exact Tax-on-web dates for income 2026 are not yet published; see "Not yet confirmed".
+
+## Penalties and interest
+
+- **Tax increase (art. 444 WIB 92).** Not filing, filing late, or filing a wrong return adds 10% to 200% of the tax on the undeclared or late income. No increase for a first offence in good faith, which is presumed since the programme law of 18 July 2025. It applies only if the undeclared or late income reaches EUR 2,500.
+- **Administrative fine (art. 445 WIB 92).** EUR 50 to EUR 1,250 per breach.
+- **Late payment interest (art. 414 WIB 92).** 4% a year for 2026 and 2027, per calendar month on the unpaid tax rounded down to EUR 10; not charged under EUR 5 a month.
+- **Missing prepayments.** For self-employed profits and benefits there is no increase from assessment year 2027 (art. 157 as amended by the law of 15 July 2026). The cost of not prepaying is the lost bonification and a larger balance later. A self-employed person who is also a company director still risks the increase on the director's pay.
+
+## Cross-border points
+
+- **Foreign self-employed income** exempt under a treaty is exempt with progression; the municipal surcharge can still be computed as if the income were Belgian (art. 466bis). See `be-cross-border`.
+- **Fixed base abroad.** Profits of a permanent establishment or fixed base in another state follow the treaty; keep separate accounts.
+- **Social security** depends on where the person works under EU Regulation 883/2004; an A1 certificate decides which country's contributions are deductible. See `be-social-contributions`.
+- **Non-residents** with a Belgian business file the non-resident return; see `be-cross-border`.
+
+## Worked examples
+
+### Example 1: consultant (benefits), lump sum beats actual costs
+
+Facts: a single resident consultant, no children, gross benefits EUR 60,000 in 2026 (net of VAT). Social contributions paid in 2026: EUR 10,500. Provable costs: EUR 3,000. No prepayments. The municipality's rate is assumed to be 7%. The regional surcharge is assumed to offset the federal autonomy cut exactly.
+
+1. Base for the lump sum: 60,000 - 10,500 = EUR 49,500.
+2. Lump sum for benefits: 28.7% x 7,720 = 2,215.64; 10% x (15,340 - 7,720) = 762; 5% x (25,530 - 15,340) = 509.50; 3% x (49,500 - 25,530) = 719.10. Total EUR 4,206.24, under the EUR 5,340 cap. It beats the EUR 3,000 of actual costs, so the lump sum is used.
+3. Net professional income: 49,500 - 4,206.24 = EUR 45,293.76.
+4. Scale tax: 4,180 + 5,116 + 45% x (45,293.76 - 29,510) = EUR 16,398.69.
+5. Less tax on the tax-free amount: 25% x 11,550 = 2,887.50. Tax EUR 13,511.19.
+6. Municipal surcharge at 7%: EUR 945.78. Total EUR 14,456.97.
+7. No prepayments, so no bonification. From income 2026 there is also no increase for missing prepayments on benefits. The full EUR 14,456.97 is due within two months of the assessment.
+
+```oa-check
+name: Consultant on benefits EUR 60,000, lump sum, income 2026
+inputs:
+  gross: 60000
+  social_contributions: 10500
+  actual_costs: 3000
+  tax_free: 11550
+  municipal_rate: 0.07
+steps:
+  - base: gross - social_contributions
+  - lump_a: min(base, 7720) * 0.287
+  - lump_b: (min(base, 15340) - 7720) * 0.10
+  - lump_c: (min(base, 25530) - 15340) * 0.05
+  - lump_d: max(base - 25530, 0) * 0.03
+  - lump_sum: min(lump_a + lump_b + lump_c + lump_d, 5340)
+  - costs_used: max(lump_sum, actual_costs)
+  - net_income: base - costs_used
+  - scale_tax: round(min(net_income, 16720) * 0.25 + (min(net_income, 29510) - 16720) * 0.40 + (min(net_income, 51070) - 29510) * 0.45 + max(net_income - 51070, 0) * 0.50, 2)
+  - tax_on_tax_free: tax_free * 0.25
+  - tax: scale_tax - tax_on_tax_free
+  - municipal: round(tax * municipal_rate, 2)
+  - total_tax: tax + municipal
+expected:
+  base: 49500
+  lump_sum: 4206.24
+  net_income: 45293.76
+  scale_tax: 16398.69
+  tax: 13511.19
+  municipal: 945.78
+  total_tax: 14456.97
+```
+
+### Example 2: trader (profits), lump sum capped, prepayments with bonification
+
+Facts: a single resident shopkeeper, no children. Gross receipts EUR 120,000 in 2026 (net of VAT); goods bought for resale EUR 40,000; social contributions paid EUR 15,000; other provable costs EUR 9,000. Prepayments: EUR 5,000 on 2 April 2026, EUR 5,000 on 8 July 2026 and EUR 5,000 on 15 January 2027. Municipal rate assumed 7.5%. Same regional assumption as Example 1.
+
+1. Base: 120,000 - 40,000 - 15,000 = EUR 65,000.
+2. Lump sum for profits: 30% x 65,000 = 19,500, capped at EUR 6,070. Actual costs of EUR 9,000 are higher, so actual costs are used.
+3. Net professional income: 65,000 - 9,000 = EUR 56,000.
+4. Scale tax: 4,180 + 5,116 + 9,702 + 50% x (56,000 - 51,070) = EUR 21,463.
+5. Less 2,887.50 on the tax-free amount: EUR 18,575.50.
+6. Municipal surcharge at 7.5%: EUR 1,393.16. Total EUR 19,968.66.
+7. Bonification ceiling (art. 175): 18,575.50 x 106% = EUR 19,690.03. All prepayments fit under it.
+8. Bonification: 3% x 5,000 (by 10 April) = 150; 2.5% x 5,000 (by 10 July) = 125; the January 2027 payment falls in the new 21 December to 20 February window, 1% x 5,000 = 50. Total EUR 325.
+9. Balance: 19,968.66 - 15,000 - 325 = EUR 4,643.66, due within two months of the assessment notice.
+
+```oa-check
+name: Shopkeeper, profits, actual costs, prepayments and bonification, income 2026
+inputs:
+  receipts: 120000
+  goods_sold: 40000
+  social_contributions: 15000
+  actual_costs: 9000
+  tax_free: 11550
+  municipal_rate: 0.075
+  va1: 5000
+  va2: 5000
+  va_late: 5000
+  base_rate: 0.02
+steps:
+  - base: receipts - goods_sold - social_contributions
+  - lump_sum: min(base * 0.30, 6070)
+  - costs_used: max(lump_sum, actual_costs)
+  - net_income: base - costs_used
+  - scale_tax: min(net_income, 16720) * 0.25 + (min(net_income, 29510) - 16720) * 0.40 + (min(net_income, 51070) - 29510) * 0.45 + max(net_income - 51070, 0) * 0.50
+  - tax: scale_tax - tax_free * 0.25
+  - municipal: round(tax * municipal_rate, 2)
+  - total_tax: tax + municipal
+  - bonif_ceiling: round(tax * 1.06, 2)
+  - bonif_regular: va1 * 1.5 * base_rate + va2 * 1.25 * base_rate
+  - bonif_late: min(va_late, bonif_ceiling - va1 - va2) * 0.5 * base_rate
+  - bonification: bonif_regular + bonif_late
+  - balance: total_tax - va1 - va2 - va_late - bonification
+expected:
+  base: 65000
+  lump_sum: 6070
+  net_income: 56000
+  scale_tax: 21463
+  tax: 18575.50
+  municipal: 1393.16
+  total_tax: 19968.66
+  bonif_ceiling: 19690.03
+  bonification: 325
+  balance: 4643.66
+```
+
+## Ask the client first
+
+1. Profits (trade, shop, craft) or benefits (liberal profession)? It sets the lump-sum scale and cap.
+2. Municipality of residence on 1 January 2027, for the surcharge rate.
+3. Social contributions and VAPZ actually paid in 2026, with the fund's statement.
+4. Actual costs with invoices, and any car: CO2, fuel type, date bought or leased, business share.
+5. Prepayments made for 2026, with the payment dates.
+6. Family situation and any other income (pay, rent, foreign income), whether the client is also a company director, and whether any of the income is earned as a helper who assists or replaces another self-employed person (no bonification on that part).
+7. Region of residence, for the regional surcharge and regional reductions.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Fisconetplus, art. 51 WIB 92 (income 2026), lump-sum expenses | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2fb1778-ac33-4e91-8e57-e53c0cac384c | 2026-10-23 |
+| Fisconetplus, art. 52 WIB 92 (income 2026), social contributions | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34 | 2026-10-23 |
+| Fisconetplus, art. 53 WIB 92 (income 2026), restaurant and gift limits | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/69b77d81-d360-48f5-a66c-fa9eee78daca | 2026-10-23 |
+| Fisconetplus, art. 66 WIB 92 (income 2026), car costs | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/dfec7b36-48d5-41fc-abea-04a7eaac88a3 | 2026-10-23 |
+| Fisconetplus, art. 550 WIB 92, car costs for cars bought before 1 January 2026 (version for assessment year 2027) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d51b4c37-c6d6-4fd2-ad8b-28ee18069895 | 2026-10-23 |
+| Fisconetplus, art. 130 WIB 92 (income 2026), tax scale | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/796a4fc5-340e-4c89-a72a-88caa804ca96 | 2026-10-23 |
+| Fisconetplus, art. 131 WIB 92 (income 2026), tax-free amount | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/f3c5d665-cac4-4cbd-b714-bd287f791751 | 2026-10-23 |
+| Fisconetplus, art. 134 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/20a503a9-4213-4e60-a91c-0ebb907e176a | 2026-10-23 |
+| Fisconetplus, art. 157 WIB 92 (income 2026), prepayment increase | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/333419cd-668a-47b2-b989-0e421421f5bc | 2026-10-23 |
+| Fisconetplus, art. 159 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/b35e0c32-dc58-4847-b389-4481bf0a969b | 2026-10-23 |
+| Fisconetplus, art. 160 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/fd39784e-027e-4943-bd38-458c44606ede | 2026-10-23 |
+| Fisconetplus, art. 162 WIB 92 (income 2026), royal decree power to change the increase rate | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/4519285d-7f8c-4268-94a9-32e0de756319 | 2026-10-23 |
+| Fisconetplus, art. 161 WIB 92 (income 2026), base rate | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/1f33c7f0-21c9-4cc3-9e45-41cb00db2b7e | 2026-10-23 |
+| Fisconetplus, art. 163 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e97ca46f-5f52-425e-87cb-723b84f6f0ba | 2026-10-23 |
+| Fisconetplus, art. 165 WIB 92, tax counted at 106% | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/38f2eab4-a66d-494a-8a4d-d5177ad80182 | 2026-10-23 |
+| Fisconetplus, art. 175 WIB 92 (income 2026), bonification | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db64628c-365f-4ee1-b0fb-122282a6c557 | 2026-10-23 |
+| Fisconetplus, art. 176 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/8eff9596-837e-469e-8e90-0b1d72e582e1 | 2026-10-23 |
+| Fisconetplus, art. 177 WIB 92 (income 2026), bonification rates | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/d5619aa0-3a1c-4dba-8600-7e87e8c4bdfc | 2026-10-23 |
+| Fisconetplus, art. 308 and 308/1 WIB 92, filing dates | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/182821e5-122a-4948-867e-297c16371fe1 | 2026-10-23 |
+| Fisconetplus, art. 413 and 414 WIB 92, payment and interest | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/db296af5-75b3-49bc-95e2-a35bb742fed5 | 2026-10-23 |
+| Fisconetplus, art. 444 and 445 WIB 92 (income 2026) | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/5095859f-8ffb-42f9-b535-3197a7c3dbe0 | 2026-10-23 |
+| Fisconetplus, art. 465 to 470 WIB 92 (income 2026), municipal surcharge | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/81bf3101-a837-4d89-8b97-713e080f00ac | 2026-10-23 |
+| Belgian Official Gazette, law of 15 July 2026 (Numac 2026005724), title 12 prepayments and the entrepreneur deduction | https://www.ejustice.just.fgov.be/eli/wet/2026/07/15/2026005724/staatsblad | 2026-10-23 |
+| ECB, key interest rates (marginal lending facility 2.40% from 11 June 2025 to 16 June 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-23 |
+| RSVZ, Wijzigingen VAPZ (13 October 2026) | https://www.rsvz.be/nl/nieuws/wijzigingen-vapz | 2026-10-23 |
+
+Not yet confirmed: whether a royal decree under art. 162 set a different increase rate for assessment year 2027 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the rates above follow the law and the ECB rate); the Tax-on-web opening date and any administrative extension for income 2026; the deductible percentage for zero-emission cars (the art. 66, §1 text on Fisconetplus does not print it); the regional surcharge rates and autonomy factor for income 2026 (the examples assume they offset exactly); the VAPZ maximum in euro for 2026; whether art. 64 still allows declining-balance depreciation for a self-employed person in 2026.
