@@ -143,7 +143,7 @@ The employer must be a Serbian resident. It must not be related to the person's 
   - no return, tax not calculated and not paid: 30% to 100% of the tax found in a tax audit, at least RSD 500,000 for a legal entity and RSD 100,000 for an entrepreneur (Article 177(1));
   - return filed but tax not paid: 10% to 50% of the tax found in a tax audit, at least RSD 250,000 for a legal entity and RSD 50,000 for an entrepreneur (Article 177(4));
   - no return but the tax paid on time: RSD 100,000 to 2,000,000 for a legal entity and RSD 50,000 to 500,000 for an entrepreneur (Article 177(5));
-  - late return with the tax paid on time: RSD 100,000 for a legal entity (Article 177(9)).
+  - late return with the tax paid on time: RSD 100,000 for a legal entity (Article 177(9)) and RSD 40,000 for an entrepreneur (Article 177(10)).
 - **Under-declaration.** 30% to 40% of the shortfall, at least RSD 200,000 for a legal entity and RSD 100,000 for an entrepreneur (ZPPPA Article 178).
 - **Wrong data or no certificate.** Wrong data in a PPP-PD return, or no certificate to the recipient by 31 January, costs a legal entity RSD 100,000 to 2,000,000 (ZPPPA Article 179(1), points 3 and 3a).
 - **Responsible person.** The responsible person in the company is fined separately under each article.
