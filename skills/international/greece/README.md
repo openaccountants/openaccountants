@@ -18,7 +18,7 @@ Calendar tax year. Authority: AADE (Independent Authority for Public Revenue); r
 | IT-IND, individual income tax | gr-income-tax (partial: self-employed only, 2025 figures; employees, pensioners and capital income are not covered) | source-cited draft |
 | IT-CORP, corporate income tax | gr-corporate-income-tax (2025 figures, cites secondary sources) | source-cited draft |
 | VAT | gr-vat-return, greece-vat-return | source-cited draft |
-| SC, social contributions | (missing: gr-efka covers only the self-employed; employee and employer EFKA are not covered) | |
+| SC, social contributions | gr-efka (self-employed, freelancers and farmers, 2026 amounts from e-EFKA circular 6/2026); employees and employers are in gr-employee-contributions (PR #650) | source-cited draft |
 | PR, payroll withholding | (missing) | |
 | TP, transfer pricing | (missing) | |
 | XB, cross-border | gr-cross-border | source-cited draft |
