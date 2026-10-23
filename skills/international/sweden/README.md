@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: se-cross-border
 partial:
-  IT-IND: "se-income-tax, for sole traders' business income, still carries tax year 2025 figures"
+  IT-IND: "se-income-tax (sole traders' business income) and se-capital-gains still carry tax year 2025 figures; se-capital-gains gives the 2025 ISK rate and leaves out the SEK 300,000 tax-free amount"
 ---
 
 # Sweden: tax pack

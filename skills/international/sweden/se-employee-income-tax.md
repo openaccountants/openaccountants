@@ -17,7 +17,7 @@ This skill computes the final tax of a person whose income is pay, pension and s
 ## Who this applies to
 
 - People who are unlimited taxable in Sweden for the whole of 2026 (living in Sweden, or staying here six months in a row) and whose income is employment income (tjänst), pension and capital income. The residence tests are in [se-cross-border](se-cross-border.md).
-- A person must file if their income from employment and business together was at least 42.3% of the price base amount (SEK 25,041.60 for 2026), if their capital income without a third-party statement was at least SEK 200, or if they are limited taxable with taxable income of at least SEK 100 (SFL 30 kap. 1 §).
+- A person must file if their income from employment and business together was at least 42.3% of the price base amount (SEK 25,042 or more for 2026, as Skatteverket rounds it), if their capital income without a third-party statement was at least SEK 200, or if they are limited taxable with taxable income of at least SEK 100 (SFL 30 kap. 1 §).
 - Skatteverket sends each such person a return already filled in from employers', banks' and fund managers' statements. If every figure is right, the person approves it in the e-service or by logging in with their codes. If anything is missing (commuting, a sale of shares, ROT paid outside the invoice model), they change or add it before approving.
 - Out of scope: active business income, partnership income, close-company (fåmansföretag) dividends under 57 kap. IL, and SINK taxpayers.
 
@@ -46,6 +46,8 @@ This skill computes the final tax of a person whose income is pay, pension and s
 | ROT credit (repair, maintenance, extension of own home) | 30% of the labour cost | 2026 | IL 67 kap. 19 § (Lag 2025:322) |
 | ROT and RUT cap | SEK 75,000 per person a year in total, of which ROT at most SEK 50,000 | 2026 | IL 67 kap. 19 § |
 | Unemployment fund fee credit | 25% of fees paid to an a-kassa | 2026 | IL 67 kap. 51 § |
+| Burial fee (begravningsavgift) | 0.292% of taxable earned income; Stockholm 0.07%, Tranås 0.285% | 2026 | same page |
+| Public service fee | At most SEK 1,184 per person a year | 2026 | same page |
 | Late filing fee (individual) | SEK 1,250 at the deadline, a second SEK 1,250 after three months, a third after two more months | 2026 | SFL 48 kap. 6-7 §§ |
 | Base interest rate on the tax account | 2.5% since 1 December 2024 (cost interest); 17.5% high rate | 2026 | https://www.skatteverket.se/rantapaskattekontot |
 
@@ -63,13 +65,13 @@ This skill computes the final tax of a person whose income is pay, pension and s
 - 3.11 to 7.88 PBB: 0.77 PBB less 10% of income above 3.11 PBB;
 - above 7.88 PBB (SEK 466,496): 0.293 PBB, which is SEK 17,400 after rounding.
 
-A person who was 66 at 1 January 2026 (born 1959 or earlier) adds a special amount from the 13-band table in IL 63 kap. 3 a §. For 2027 the age moves to 67 (the version of 3 a § in force from 1 January 2027). The deduction cannot exceed the earned income (IL 63 kap. 5 §).
+A person who was 66 at 1 January 2026 (born 1959 or earlier) adds a special amount from the 12-band table in IL 63 kap. 3 a §. For 2027 the age moves to 67 (the version of 3 a § in force from 1 January 2027). The deduction cannot exceed the earned income (IL 63 kap. 5 §).
 
 **Taxable earned income** is earned income less the basic deduction. Municipal tax is that amount times the rate of the kommun where the person was registered on 1 November 2025 (IL 65 kap. 3 §). State tax is 20% of the part above SEK 643,000.
 
-**Pension contribution.** The employee pays 7% of pay, rounded to the nearest SEK 100. Income above 8.07 income base amounts (SEK 673,038) is ignored. No contribution is due if income is below 42.3% of the price base amount. Pension and sickness compensation paid as pension carry no contribution. The same amount comes back as a credit, so for an employee the net cost is nil. A self-employed person gets the credit only if the contribution was paid on time (IL 67 kap. 4 §).
+**Pension contribution.** The employee pays 7% of pay, rounded to the nearest SEK 100. Income above 8.07 income base amounts (SEK 673,038) is ignored. No contribution is due if income is below 42.3% of the price base amount. Pension is not income from employment, so it carries no contribution, and neither does income-related sickness or activity compensation (Lag (1994:1744) 3-4 §§). The same amount comes back as a credit, so for an employee the net cost is nil. A self-employed person gets the credit only if the contribution was paid on time (IL 67 kap. 4 §).
 
-**Job tax credit, under 66.** Credits count against municipal tax only (IL 67 kap. 2 §). With work income W (pay and active business income, rounded down to SEK 100), GA the basic deduction and K the municipal rate (IL 67 kap. 7 §):
+**Job tax credit, under 66.** Credits count against municipal tax only (IL 67 kap. 2 §). With work income W (the surplus of employment income and of active business income, less general deductions, rounded down to SEK 100; IL 67 kap. 6 §), GA the basic deduction and K the municipal rate (IL 67 kap. 7 §):
 
 - W up to 0.91 PBB: (W − GA) × K;
 - 0.91 to 3.24 PBB: (0.91 PBB + 38.74% of W between 0.91 and 3.24 PBB − GA) × K;
@@ -80,20 +82,20 @@ The credit does not fall at high incomes. Pension is not work income, so a pensi
 
 **Job tax credit, 66 or over.** 22% of work income up to 1.75 PBB; 0.2635 PBB plus 7% of work income from 1.75 to 5.24 PBB; 0.6293 PBB above 5.24 PBB (IL 67 kap. 8 §).
 
-**Capital income.** Interest, dividends and gains outside an ISK, less interest paid on loans. A surplus is taxed at 30%. A deficit gives the credit in the table above, which is set against tax on earned income and property fee.
+**Capital income.** Interest, dividends and gains outside an ISK, less deductible interest. Since 2026 interest is deductible only on loans with qualifying security or lender: a bank or mortgage-lender loan secured on property or a tenant-owner flat, a bank or securities-firm loan secured on listed securities or fund units, a pawnbroker loan, or a loan secured on the vehicle or boat it financed (IL 42 kap. 6 a-6 g §§; 2025 was a transition year at 50% for other loans). Interest on unsecured consumer loans and credit cards is not deductible. A surplus is taxed at 30%. A deficit gives the credit in the table above, which is set against tax on earned income and property fee.
 
-**ISK.** Each quarter, add the value of the account on the first day and the deposits made in that quarter; the capital base is one quarter of the sum of the four (IL 42 kap. 37 §). Standard income is the base times 3.55%. From 2026 a deduction removes the standard income on the first SEK 300,000 of combined ISK, capital insurance and PEPP savings, ISK first (IL 42 kap. 48 §). The rest is capital income at 30%. Gains and dividends inside the ISK are not taxed (IL 42 kap. 42 §).
+**ISK.** Each quarter, add the value of the account on the first day and the deposits made in that quarter; the capital base is one quarter of the sum of the four (IL 42 kap. 37 §). Standard income is the base times 3.55%. A deduction removes the standard income on the first SEK 300,000 (SEK 150,000 in 2025) of combined ISK, capital insurance and PEPP savings, ISK first (IL 42 kap. 48 §). The rest is capital income at 30%. Gains and dividends inside the ISK are not taxed (IL 42 kap. 42 §).
 
 **Order of credits** (IL 67 kap. 2 §): pension contribution, job tax credit, sickness and activity compensation, earned income credit, regional credit, capital deficit, household work (ROT and RUT), green technology, gifts, a-kassa fee. Credits are given in whole kronor (IL 67 kap. 1 §). A credit beyond the tax it can be set against is lost; it is not paid out.
 
-**On top of income tax** the final tax includes the burial fee (begravningsavgift), the church fee for members of the Church of Sweden, and the public service fee. Each depends on the kommun or the person's income and is not computed here.
+**On top of income tax** the final tax includes the burial fee (0.292% of taxable earned income in most kommuner), the church fee for members of the Church of Sweden (set by each parish), and the public service fee (at most SEK 1,184). They are left out of the examples.
 
 ## Deadlines and filing
 
 - Return for income year 2026: due 2 May 2027 (SFL 32 kap. 1 §). 2 May 2027 is a Sunday, so filing on Monday 3 May 2027 is on time (Lag (1930:173) 2 §).
 - Residual tax (kvarskatt) up to SEK 30,000: no cost interest if it is on the tax account by 3 May 2027 (SFL 65 kap. 4 §). Above SEK 30,000: pay the excess by 12 February 2027 to avoid interest from 13 February 2027.
 - Final tax due: the due date that falls first once 90 days have passed from the final tax decision (SFL 62 kap. 8 §).
-- ROT and RUT: the contractor deducts the credit on the invoice. The person must pay the invoice electronically by 31 December 2026 for it to count in 2026 (IL 67 kap. 15 a §), and the contractor applies to Skatteverket. Confirm in the return that the amounts match.
+- ROT and RUT: the contractor deducts the credit on the invoice. The person must pay the invoice electronically (IL 67 kap. 15 a §), and the credit belongs to the year the work was paid for, so payment by 31 December 2026 counts in 2026 (IL 67 kap. 12 §), and the contractor applies to Skatteverket. Confirm in the return that the amounts match.
 
 ## Penalties and interest
 
@@ -191,7 +193,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Inkomstskattelag (1999:1229), as amended to SFS 2026:1393: 12 kap. 2, 26-27 §§; 42 kap. 36-48 §§; 63 kap. 2-5 §§; 65 kap. 3-7 §§; 67 kap. 1-10, 11-19, 46-51 §§; transitional rules 2024:1132, 2025:322, 2025:1376 | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-10-23 |
+| Inkomstskattelag (1999:1229), as amended to SFS 2026:1393: 12 kap. 2, 26-27 §§; 42 kap. 6 a-6 g, 36-48 §§; 63 kap. 2-5 §§; 65 kap. 3-7 §§; 67 kap. 1-10, 11-19, 46-51 §§; transitional rules 2024:1132, 2024:1177, 2025:322, 2025:1376 | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-10-23 |
 | Lag (1994:1744) om allmän pensionsavgift, 2-4 §§ | https://data.riksdagen.se/dokument/sfs-1994-1744.text | 2026-10-23 |
 | Skatteförfarandelag (2011:1244): 30 kap. 1 §; 32 kap. 1 §; 48 kap. 3, 6-7 §§; 49 kap. 11 §; 62 kap. 8 §; 65 kap. 3-6, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-23 |
 | Lag (1930:173) om beräkning av lagstadgad tid, 2 § | https://data.riksdagen.se/dokument/sfs-1930-173.text | 2026-10-23 |
@@ -200,4 +202,4 @@ expected:
 | Skatteverket, deklaration | https://www.skatteverket.se/privat/deklaration | 2026-10-23 |
 | Skatteverket, rot- och rutarbete | https://www.skatteverket.se/privat/fastigheterochbostad/rotochrutarbete.4.2e56d4ba1202f95012080002966.html | 2026-10-23 |
 
-Not yet confirmed: the 2026 public service fee cap, the average burial fee and church fee rates (not on the page read); the base interest rate in force in 2027 when residual tax for 2026 is charged (Skatteverket shows 2.5% from 1 December 2024 and the rate can change); whether the job tax credit uses the price base amount multiple rounded before the municipal rate is applied (the example uses the unrounded product and drops öre as 67 kap. 1 § requires); the date Skatteverket will publish for the 2027 filing round (the law gives 3 May 2027).
+Not yet confirmed: the average church fee rate (not on the page read); the base interest rate in force in 2027 when residual tax for 2026 is charged (Skatteverket shows 2.5% from 1 December 2024 and the rate can change); whether the job tax credit uses the price base amount multiple rounded before the municipal rate is applied (the example uses the unrounded product and drops öre as 67 kap. 1 § requires); the date Skatteverket will publish for the 2027 filing round (the law gives 3 May 2027).
