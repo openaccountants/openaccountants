@@ -72,7 +72,7 @@ Place of effective management is judged on the facts, in particular: where day-t
 | Withholding on dividends | 5% | 2026 | ΚΦΕ art. 64(1)(a), same |
 | Withholding on interest | 15% | 2026 | ΚΦΕ art. 64(1)(b), same |
 | Withholding on royalties and other payments | 20%; none where the payee is a Greek-resident legal person or a Greek permanent establishment | 2026 | ΚΦΕ arts. 64(1)(c) and 62(5), same |
-| Withholding on fees for technical works, management, consulting and similar services | 20% where the payee is an individual (a Greek-resident individual only where the transaction exceeds EUR 300) or a legal person not resident in Greece or the EU/EEA; none where the payee is a legal person resident in Greece or the EU/EEA | 2026 | ΚΦΕ arts. 62(1)(d), 62(2), 62(3), 64(1)(d) and 64(8), same |
+| Withholding on fees for technical works, management, consulting and similar services | 20% where the payee is an individual (a Greek-resident individual only where the transaction exceeds EUR 300) or a legal person not resident in Greece or the EU/EEA; none where the payee is a legal person resident in Greece or the EU/EEA. Contractors building technical works of any kind carry 3% on the value of the work, whoever the payee | 2026 | ΚΦΕ arts. 62(1)(d), 62(2), 62(3), 64(1)(d) and 64(8), same |
 | Dividends to an EU parent (Parent-Subsidiary Directive) | 0% if holding at least 10% for at least 24 months | 2026 | ΚΦΕ art. 63(1), same |
 | Interest and royalties to an associated EU company (Interest and Royalties Directive) | 0% if holding at least 25% for at least 24 months | 2026 | ΚΦΕ art. 63(2), same |
 

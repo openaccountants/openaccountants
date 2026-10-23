@@ -12,7 +12,7 @@ verified_by: pending
 
 # Greece: personal income tax, tax year 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
+Source-cited draft. Built by Michael Cutajar and the OpenAccountants team.
 
 This skill covers Greek income tax for individuals for tax year 2026: employees, pensioners, the self-employed, landlords and people with dividends, interest or royalties. It links to the pack's other skills instead of repeating them:
 

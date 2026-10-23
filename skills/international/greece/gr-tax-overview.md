@@ -7,14 +7,14 @@ last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 review_status: pending_review
-trust_label: Source-cited draft
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Greece Tax Overview
 
-Source-cited draft: not reviewed by an accountant, not for filing.
+Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
 
 A map of the main Greek taxes for tax year 2026. It computes nothing; each line points to the skill that holds the detail. Income tax figures are from the Ministry of Finance codification of the Income Tax Code (ΚΦΕ, ν. 4172/2013) with amendments up to ν. 5264/2025. VAT figures are from the AADE codification of the VAT Code (ν. 5144/2024), which replaced ν. 2859/2000.
 
@@ -28,7 +28,7 @@ A map of the main Greek taxes for tax year 2026. It computes nothing; each line 
 | Basis of taxation | Greek tax residents are taxed on worldwide income; non-residents only on Greek-source income | ΚΦΕ art. 3(1) and (2), same | `gr-cross-border` |
 | Personal income tax scale (employment, pension and business income) | 9% to EUR 10,000, 20% to 20,000, 26% to 30,000, 34% to 40,000, 39% to 60,000, 44% above EUR 60,000. Lower rates for parents and for under-30s | ΚΦΕ art. 15(1), as replaced by ν. 5246/2025 art. 3(1), same | `gr-income-tax` |
 | Corporate income tax rate | 22% (from tax year 2021) | ΚΦΕ art. 58(1)(a), same | `gr-corporate-income-tax` |
-| VAT standard rate | 24%; reduced rates 13% and 6% for goods and services in Annex III | VAT Code (ν. 5144/2024) art. 26(1), [AADE codification circular Ε.2023/2025](https://www.aade.gr/egkyklioi-kai-apofaseis/e-2023-29-04-2025) | `gr-vat-return` |
+| VAT standard rate | 24%; reduced rates 13%, and 6% or 4% where Annex III provides for them, for goods and services in Annex III | VAT Code (ν. 5144/2024) art. 26(1), [AADE codification circular Ε.2023/2025](https://www.aade.gr/egkyklioi-kai-apofaseis/e-2023-29-04-2025) | `gr-vat-return` |
 | Personal income tax return | 15 March to 15 July of the following year, so 15 July 2027 for 2026 income | ΚΦΕ art. 67(3), same | `gr-income-tax` |
 | Corporate income tax return | 15 March to 15 July of the following year for a 31 December year end; otherwise by the last working day of the sixth month after the year end | ΚΦΕ art. 68(2), same | `gr-corporate-income-tax` |
 | Social insurance | e-EFKA. Employees and employers pay percentage contributions on pay; the self-employed pay fixed monthly amounts by category | [e-EFKA](https://www.efka.gov.gr) | `gr-employee-contributions`, `gr-efka` |
