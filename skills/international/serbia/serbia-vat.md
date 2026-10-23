@@ -1,665 +1,183 @@
 ---
 name: serbia-vat
-description: Use this skill whenever asked to prepare, review, or advise on a Serbia VAT (PDV) return or any PDV-related classification. Trigger on phrases like "prepare PDV return", "Serbia VAT", "PPPDV", "Serbian VAT filing", "e-Faktura", "Poreska Uprava", or any request involving Serbian VAT obligations. This skill contains the complete Serbian PDV classification rules, rate tables, e-invoicing requirements, filing deadlines, and deductibility rules required to produce a correct return. ALWAYS read this skill before touching any Serbia VAT-related work.
+description: "Serbian value added tax (porez na dodatu vrednost, PDV) for 2026 under the Zakon o porezu na dodatu vrednost, consolidated to Law 80/2026. Covers who must register (the RSD 8,000,000 threshold in Article 38) and small taxpayers; the 20% general rate and the 10% special rate and what each covers; exemptions with and without input deduction; input tax and blocked items; monthly and quarterly tax periods and the 15-day return and payment deadline; the PPPDV return with its POPDV schedule; the SEF e-invoicing system and the e-VAT records (EEO and EPP) due by the 12th; reverse charge and the tax debtor rules; refunds; penalties under the ZPPPA; and which 80/2026 changes start in 2027. Trigger on: Serbia VAT, PDV Srbija, PPPDV, POPDV, SEF, e-faktura, Serbian reverse charge, Serbian VAT refund. Out of scope: corporate tax (rs-corporate-tax), income tax (serbia-income-tax), payroll (serbia-payroll), cross-border structuring (rs-cross-border)."
 jurisdiction: RS
-tax_year: 2025
-last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tax_year: 2026
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+last_updated: 2026-10-23
+version: 0.1
+verified_by: pending
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
-# Serbia VAT
-
-## Skill Metadata
-
-**Skill Metadata**
-
-| Field | Value |
-| --- | --- |
-| Jurisdiction | Republic of Serbia (Republika Srbija) |
-| Jurisdiction Code | RS |
-| Primary Legislation | Zakon o porezu na dodatu vrednost (Law on Value Added Tax), Official Gazette RS No. 84/2004, as amended |
-| Supporting Legislation | Pravilnik o PDV (PDV Rulebook); Zakon o fiskalizaciji (Fiscalization Law); Zakon o elektronskom fakturisanju (E-Invoicing Law) |
-| Tax Authority | Poreska uprava (Tax Administration), Ministry of Finance |
-| Filing Portal | https://eporezi.purs.gov.rs (ePorezi portal) |
-| Validated By | Deep research verification, April 2026 |
-| Validation Date | April 2026 |
-| Skill Version | 1.0 |
-| Confidence Coverage | Tier 1: rate classification, return box assignment, reverse charge, e-invoicing rules. Tier 2: partial exemption, sector-specific rules, place of supply. Tier 3: group structures, special tax zones, complex international arrangements. |
-
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified tax adviser must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified tax adviser and document the gap.
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and PIB (Poreski identifikacioni broj)** [T1] -- 9-digit tax identification number
-2. **PDV registration number** [T1] -- Separate from PIB; format RS + 9 digits
-3. **Registration type** [T1] -- Mandatory PDV taxpayer, voluntary PDV taxpayer, or non-registered (below threshold)
-4. **Filing period** [T1] -- Monthly (if turnover > RSD 50,000,000) or quarterly (if turnover <= RSD 50,000,000)
-5. **Industry/sector** [T2] -- Impacts specific exemption rules
-6. **Does the business make exempt supplies?** [T2] -- If yes, partial attribution required (Article 30 of Zakon o PDV)
-7. **Is the client registered for e-Faktura?** [T1] -- Mandatory for B2G since 1 January 2023; mandatory for B2B since 1 January 2024
-8. **Does the client use fiscal cash registers?** [T1] -- Mandatory for retail (B2C) under Fiscalization Law
-9. **PDV credit carried forward from prior period** [T1] -- Prethodni porez (pretplata)
-10. **Does the client deal with the public sector (B2G)?** [T1] -- e-Faktura mandatory; treasury payment rules apply
-
-**If any of items 1-4 are unknown, STOP. Do not classify any transactions until confirmed.**
-
-## Step 1: Transaction Classification Rules
-
-### 1a. Determine Transaction Type [T1]
-
-- **Transaction type determination** — Sale (output PDV -- obracunati PDV) or Purchase (input PDV -- prethodni porez). Salaries (zarade), social contributions (doprinosi), tax payments, loan repayments, dividends = OUT OF SCOPE (never on PDV return)  _(Zakon o PDV, Article 3 (taxable transactions), Article 4 (supply of goods), Article 5 (supply of services))_
-
-### 1b. Determine Counterparty Location [T1]
-
-- **Counterparty location determination** — Domestic (Serbia): Supplier/customer is in Serbia. Foreign: All countries outside Serbia (including EU member states). Note: Serbia is NOT an EU member state. Serbia is an EU candidate country. No intra-community supply rules apply. Kosovo: Treated as separate customs territory; imports from Kosovo treated as imports from abroad [T2]  _(Zakon o PDV, Article 11-12 (place of supply))_
-
-### 1c. Determine PDV Rate [T1]
-
-**PDV Rate table**
-
-| Rate | Category | Legal Basis |
-| --- | --- | --- |
-| 20% | Standard rate (opsta stopa) | Zakon o PDV, Article 23(1) |
-| 10% | Reduced rate (posebna stopa) | Zakon o PDV, Article 23(2) |
-| 0% | Zero-rated (exports, international transport) | Zakon o PDV, Article 24 |
-
-- **Standard rate (opsta stopa)** — 20%  _(Zakon o PDV, Article 23(1))_
-- **Reduced rate (posebna stopa)** — 10%  _(Zakon o PDV, Article 23(2))_
-- **Zero-rated (exports, international transport)** — 0%  _(Zakon o PDV, Article 24)_
-
-### 1d. Standard Rate (20%) Applies To [T1]
-
-- **Standard rate applicability** — All goods and services not specifically listed for the reduced rate; Professional services (legal, accounting, consulting, IT); Telecommunications and electronic services; Construction services; Motor vehicles; Electronics, furniture, luxury goods; Restaurant and catering services  _(Zakon o PDV, Article 23(1))_
-
-### 1e. Reduced Rate (10%) Applies To [T1]
-
-**Reduced Rate (10%) Applies To**
-
-| Category | Examples | Legal Basis |
-| --- | --- | --- |
-| Basic foodstuffs | Bread, milk, flour, cooking oil, sugar, meat, fish, eggs, fruits, vegetables | Art 23(2), Point 1 |
-| Daily newspapers | Newspapers published at least 3 times per week | Art 23(2), Point 4 |
-| Medicines | Registered medicinal products | Art 23(2), Point 2 |
-| Medical devices | Registered medical devices on official list | Art 23(2), Point 2a |
-| Textbooks and teaching materials | School and university textbooks | Art 23(2), Point 5 |
-| Hotel accommodation | First overnight stay (not food/beverages) | Art 23(2), Point 11 |
-| Public utilities | Heating, water supply, waste collection | Art 23(2), Points 7-9 |
-| Computers and components | Desktop, laptop, tablet computers | Art 23(2), Point 10 |
-| Baby food and diapers | Infant nutrition and hygiene products | Art 23(2), Point 1a |
-| Agricultural inputs | Seeds, fertilizers, pesticides | Art 23(2), Point 3 |
-| Natural gas and firewood | Energy for household heating | Art 23(2), Point 13 |
-
-### 1f. Zero-Rated Supplies [T1]
-
-- **Zero-rated supplies list** — Export of goods (Article 24(1), Point 1) -- goods must leave Serbia, confirmed by customs declaration; International transport services (Article 24(1), Point 5); Supplies connected with international air and sea transport (Article 24(1), Point 4); Supplies to diplomatic and consular missions (Article 24(1), Point 6); Supplies financed by international donor agreements (Article 24(1), Point 7) [T2]; Note: Zero-rated suppliers can claim full input PDV refund  _(Zakon o PDV, Article 24)_
-
-### 1g. Exempt Supplies (Without Input PDV Recovery) [T1]
-
-**Exempt Supplies table**  _(Zakon o PDV, Article 25)_
-
-| Category | Legal Basis |
-| --- | --- |
-| Financial services (banking, lending, securities) | Art 25(1), Point 1-5 |
-| Insurance and reinsurance | Art 25(1), Point 6 |
-| Residential rent (stambeni prostor) | Art 25(1), Point 10 |
-| Education services (accredited institutions) | Art 25(1), Point 14 |
-| Healthcare services (by licensed providers) | Art 25(1), Point 8 |
-| Social welfare services | Art 25(1), Point 9 |
-| Cultural and sporting events (by non-profits) | Art 25(1), Point 15-16 |
-| Postal services (universal postal service) | Art 25(1), Point 7 |
-| Land (not building land) | Art 25(1), Point 11 |
-| Used residential property | Art 25(1), Point 12 |
-
-- **Exempt suppliers cannot recover input PDV** — Exempt suppliers CANNOT recover input PDV on related purchases (Article 30)  _(Zakon o PDV, Article 25)_
-
-## Step 2: PDV Return Structure (PPPDV Form)
-
-The PDV return (Poreska prijava poreza na dodatu vrednost -- PPPDV) is filed electronically via ePorezi. The form structure is:
-
-### Section I: Output PDV (Obracunati PDV) [T1]
-
-**Section I: Output PDV (Obracunati PDV)**
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 001 | Taxable base at 20% (opsta stopa) | Net value of standard-rated supplies |
-| 002 | PDV at 20% | = Field 001 x 20% |
-| 003 | Taxable base at 10% (posebna stopa) | Net value of reduced-rated supplies |
-| 004 | PDV at 10% | = Field 003 x 10% |
-| 005 | Total output PDV | = Field 002 + Field 004 |
-
-### Section II: Reverse Charge PDV (Interni obracun) [T1]
-
-**Section II: Reverse Charge PDV (Interni obracun)**
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 006 | Taxable base for internal calculation at 20% | Import of services / deemed supplies |
-| 007 | PDV at 20% (internal) | = Field 006 x 20% |
-| 008 | Taxable base for internal calculation at 10% | Import of services at reduced rate |
-| 009 | PDV at 10% (internal) | = Field 008 x 10% |
-| 010 | Total internal PDV | = Field 007 + Field 009 |
-
-### Section III: Total Output PDV [T1]
-
-**Section III: Total Output PDV**
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 011 | Total output PDV | = Field 005 + Field 010 |
-
-### Section IV: Input PDV (Prethodni porez) [T1]
-
-**Section IV: Input PDV (Prethodni porez)**
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 101 | Input PDV at 20% (domestic) | From invoices with 20% PDV |
-| 102 | Input PDV at 10% (domestic) | From invoices with 10% PDV |
-| 103 | Input PDV from internal calculation (reverse charge) | = Field 007 + Field 009 |
-| 104 | Input PDV on imports (from customs) | From customs declarations |
-| 105 | Input PDV from agricultural farmers (pausalci) | 8% compensation |
-| 106 | Input PDV corrections (increase) | Adjustments increasing input PDV |
-| 107 | Input PDV corrections (decrease) | Adjustments decreasing input PDV |
-| 108 | Total input PDV | = Fields 101+102+103+104+105+106-107 |
-
-### Section V: PDV Payable or Credit [T1]
-
-- **PDV Payable or Credit logic** — IF Field 011 > Field 108 THEN Field 109 (PDV payable / obaveza) = Field 011 - Field 108 Field 110 = 0 ELSE Field 109 = 0 Field 110 (PDV credit / pretplata) = Field 108 - Field 011 END  _(Zakon o PDV, Article 50-51; PPPDV form instructions (Pravilnik))_
-
-### Section VI: Exempt and Zero-Rated Supplies [T1]
-
-**Section VI: Exempt and Zero-Rated Supplies**  _(Zakon o PDV, Article 50-51; PPPDV form instructions (Pravilnik))_
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 201 | Exports (Article 24) | Zero-rated supply base |
-| 202 | Exempt supplies without credit (Article 25) | Exempt supply base |
-| 203 | Other non-taxable supplies | Informational |
-
-## Step 3: Reverse Charge (Interni Obracun) Mechanics [T1]
-
-### 3a. When Reverse Charge Applies [T1]
-
-- **When reverse charge applies** — The Serbian recipient must self-assess PDV (interni obracun) when: 1. Services received from a foreign supplier with no fixed establishment in Serbia (Article 10(1), Point 3); 2. Goods imported (physical) -- PDV assessed at customs, not via reverse charge on the return; 3. Specific domestic transactions where the recipient is designated as the PDV debtor (Article 10(1), Point 3 and 3a): Construction services (recipient is the PDV debtor if both parties are PDV registered); Supplies of waste and secondary raw materials; Supplies of certain metals (as designated by regulation)  _(Article 10(1), Point 3 and 3a)_
-
-### 3b. Reverse Charge -- Foreign Services [T1]
-
-**Reverse Charge -- Foreign Services steps**  _(Zakon o PDV, Article 10(1), Point 3; Article 12)_
-
-| Step | Action | Field |
-| --- | --- | --- |
-| 1 | Determine net value of service | Base amount |
-| 2 | Apply appropriate rate (20% or 10%) | Determine rate |
-| 3 | Report base in Field 006 or 008 | Output side (interni obracun) |
-| 4 | Report PDV in Field 007 or 009 | Output PDV |
-| 5 | Deduct same PDV in Field 103 | Input side |
-| 6 | Net effect = zero for fully taxable businesses | Check |
-
-### 3c. Reverse Charge -- Domestic Construction [T2]
-
-- **Domestic construction reverse charge** — When both supplier and recipient are PDV registered, and the supply is construction services, the recipient (not the supplier) is the PDV debtor. Supplier invoices without PDV, noting "PDV obracunava primalac" (PDV calculated by recipient). Recipient self-assesses in Fields 006/007 and deducts in Field 103. Flag for reviewer: Confirm that the service qualifies as construction under the regulation.  _(Zakon o PDV, Article 10(1), Point 3a)_
-
-### 3d. Import of Goods [T1]
-
-- **Import of goods PDV treatment** — PDV on imported physical goods is assessed and collected by Customs (Uprava Carina). Importer pays PDV at the border via customs declaration (carinska deklaracija). This import PDV is deductible as input PDV (Field 104). Do NOT self-assess on the PPPDV return -- Customs handles assessment.  _(Zakon o PDV, Article 7 (import as taxable transaction), Article 28 (input PDV from imports))_
-
-## Step 4: E-Invoicing (e-Faktura) System
-
-### 4a. Overview [T1]
-
-**E-invoicing milestones**  _(Zakon o elektronskom fakturisanju (E-Invoicing Law), Official Gazette RS No. 44/2021)_
-
-| Milestone | Requirement |
-| --- | --- |
-| 1 January 2022 | B2G: Public sector entities must receive e-invoices |
-| 1 January 2023 | B2G: All suppliers to public sector must issue via SEF |
-| 1 January 2024 | B2B: Mandatory issuance and receipt between PDV taxpayers |
-| Ongoing | B2C: Fiscal cash register (e-fiskalizacija) applies |
-
-### 4b. SEF Requirements [T1]
-
-**SEF Requirements**
-
-| Requirement | Details |
-| --- | --- |
-| Registration | All PDV taxpayers must register on SEF portal |
-| Invoice format | XML-based, transmitted via SEF system |
-| Mandatory fields | PIB, date, invoice number, line items, PDV breakdown |
-| Acceptance | B2G invoices require buyer acceptance within 15 days |
-| Rejection | If B2G buyer does not respond within 15 days, invoice is deemed accepted |
-| Storage | Invoices stored on SEF for 10 years |
-| CRF integration | Public sector invoices also registered with CRF (Central Registry of Invoices) |
-
-### 4c. Fiscal Cash Registers (e-Fiskalizacija) [T1]
-
-**Fiscal Cash Registers requirements**  _(Zakon o fiskalizaciji, Official Gazette RS No. 153/2020)_
-
-| Requirement | Details |
-| --- | --- |
-| Mandatory for | All retail (B2C) transactions |
-| System | Electronic fiscal device (ESIR or V-PFR) connected to Tax Administration |
-| Real-time reporting | Each transaction reported to Poreska uprava in real time |
-| Receipt | Fiscal receipt with QR code issued to customer |
-
-## Step 5: Registration Rules
-
-### 5a. Mandatory Registration [T1]
-
-**Mandatory Registration thresholds**
-
-| Criterion | Threshold | Legal Basis |
-| --- | --- | --- |
-| Domestic turnover (last 12 months) | RSD 8,000,000 | Art 38(1) |
-| Foreign entities with taxable supply in Serbia | No threshold (any amount) | Art 10a |
-
-- **Mandatory registration process** — Once the RSD 8,000,000 threshold is exceeded, the taxpayer must apply for PDV registration within prescribed deadline. PDV obligation begins from the day stated in the registration certificate.  _(Zakon o PDV, Article 38)_
-
-### 5b. Voluntary Registration [T1]
-
-- **Voluntary registration** — Taxpayers below the RSD 8,000,000 threshold may voluntarily register. Once registered voluntarily, the taxpayer must remain registered for at least 2 years.  _(Zakon o PDV, Article 38a)_
-
-### 5c. Non-Resident Registration [T1]
-
-- **Non-resident registration** — Foreign entities performing taxable supplies in Serbia must either: 1. Register for PDV through a fiscal representative (poreski punomoenik), OR 2. Appoint a tax representative who assumes joint liability  _(Zakon o PDV, Article 10a)_
-
-### 5d. Deregistration [T1]
-
-- **Deregistration rules** — Taxpayer may apply for deregistration if turnover falls below RSD 8,000,000 for 12 consecutive months. Must have been registered for at least 2 years (if voluntarily registered). Must adjust (reverse) input PDV on remaining assets at time of deregistration.  _(Zakon o PDV, Article 39)_
-
-## Step 6: Deductibility Rules
-
-### 6a. General Deduction Right [T1]
-
-- **General deduction right** — All input PDV on goods and services used for taxable business activities is deductible. Input PDV must be documented by a proper PDV invoice (PDV racun), customs declaration, or e-Faktura.  _(Zakon o PDV, Article 27-28)_
-
-### 6b. Non-Deductible Input PDV (Article 29) [T1]
-
-**Non-Deductible Input PDV table**
-
-| Category | Legal Basis | Notes |
-| --- | --- | --- |
-| Passenger vehicles and motorcycles | Art 29(1), Point 1 | Exception: taxi, rental, driving school, vehicle dealers |
-| Fuel for non-deductible vehicles | Art 29(1), Point 1 | Follows vehicle deductibility |
-| Entertainment and hospitality (reprezentacija) | Art 29(1), Point 2 | 50% deductible only [T2] |
-| Personal consumption of employees | Art 29(1), Point 3 | Gifts, personal items |
-| Goods/services for exempt activities | Art 30 | No input PDV on exempt supplies |
-
-### 6c. Partial Deduction -- Entertainment (Reprezentacija) [T2]
-
-- **Partial deduction entertainment** — 50% of input PDV on entertainment and hospitality is deductible. Remaining 50% is non-deductible (becomes an expense for CIT purposes). Flag for reviewer: Confirm that the expense qualifies as reprezentacija under Article 29.  _(Zakon o PDV, Article 29(1), Point 2)_
-
-### 6d. Partial Exemption (Pro-Rata -- Srazmerni odbitak) [T2]
-
-- **Pro-rata deduction formula** — Deductible % = (Taxable Supplies + Zero-Rated Supplies) / Total Supplies x 100. If a business makes both taxable and exempt supplies, input PDV must be apportioned. Applied to input PDV that cannot be directly attributed to taxable or exempt activities. Annual correction required. Flag for reviewer: Pro-rata calculation must be confirmed by qualified tax adviser.  _(Zakon o PDV, Article 30)_
-
-### 6e. Capital Goods Adjustment [T2]
-
-- **Capital goods adjustment** — Input PDV on capital goods (equipment >= 5 years useful life; real estate >= 10 years) is subject to adjustment if use changes. If a capital good shifts from taxable to exempt use (or vice versa), input PDV must be corrected proportionally. Flag for reviewer: Capital goods adjustment is complex; confirm with adviser.  _(Zakon o PDV, Article 32)_
-
-### 6f. Agricultural Flat-Rate Farmers (Pausalac) [T1]
-
-- **Agricultural flat-rate farmers** — Farmers not registered for PDV are entitled to PDV compensation at 8% of their sales value. The PDV-registered buyer pays the 8% compensation to the farmer and claims it as input PDV (Field 105). Farmer does not file PDV returns.  _(Zakon o PDV, Article 34)_
-
-## Step 7: Key Thresholds
-
-**Step 7: Key Thresholds**
-
-| Threshold | Value | Notes |
-| --- | --- | --- |
-| Standard PDV rate | 20% | Art 23(1) |
-| Reduced PDV rate | 10% | Art 23(2) |
-| Mandatory registration | RSD 8,000,000 (last 12 months) | Art 38(1) |
-| Monthly filing threshold | RSD 50,000,000 annual turnover | Below = quarterly filing |
-| Voluntary registration lock-in | 2 years minimum | Art 38a |
-| Agricultural compensation rate | 8% | Art 34 |
-| Entertainment deductibility | 50% of input PDV | Art 29(1)(2) |
-| Capital goods adjustment -- equipment | 5 years | Art 32 |
-| Capital goods adjustment -- real estate | 10 years | Art 32 |
-| e-Faktura B2B mandatory | Since 1 January 2024 | E-Invoicing Law |
-
-## Step 8: Filing Deadlines
-
-**Step 8: Filing Deadlines**  _(Zakon o PDV, Article 48, 50, 51)_
-
-| Return | Period | Filing Deadline | Payment Deadline |
-| --- | --- | --- | --- |
-| PPPDV (monthly filer) | Monthly | 15th of the following month | 15th of the following month |
-| PPPDV (quarterly filer) | Quarterly | 20th of the month following quarter end | 20th of the month following quarter end |
-| Annual PDV reconciliation | N/A | No separate annual return | N/A |
-| e-Faktura registration | Ongoing | Must be registered before first B2B/B2G transaction | N/A |
-
-- **Filing method** — Electronic only via ePorezi portal (paper filing not accepted).  _(Zakon o PDV, Article 48, 50, 51)_
-
-### Late Filing and Payment Penalties [T1]
-
-**Late Filing and Payment Penalties**  _(Zakon o PDV, Article 60-61; Zakon o poreskom postupku i poreskoj administraciji)_
-
-| Violation | Penalty |
-| --- | --- |
-| Late filing | Fine: RSD 100,000 to RSD 2,000,000 for legal entities |
-| Late payment | Interest: reference rate of NBS + 10% per annum (calculated daily) |
-| Failure to issue e-Faktura | Fine: RSD 200,000 to RSD 2,000,000 for legal entities |
-| Failure to register for PDV | Fine: RSD 100,000 to RSD 2,000,000 + mandatory registration |
-| Non-use of fiscal cash register | Fine: RSD 300,000 to RSD 2,000,000 + temporary business closure |
-
-## Step 9: Place of Supply Rules
-
-### 9a. Supply of Goods [T1]
-
-**Supply of Goods place of supply**
-
-| Scenario | Place of Supply | Legal Basis |
-| --- | --- | --- |
-| Goods not dispatched | Location of goods at time of supply | Art 11(1) |
-| Goods dispatched/transported | Where dispatch begins | Art 11(1)(2) |
-| Goods installed/assembled | Place of installation | Art 11(1)(3) |
-| Import of goods | Serbia (at point of customs clearance) | Art 11(2) |
-
-### 9b. Supply of Services [T1]
-
-**Supply of Services place of supply**  _(Zakon o PDV, Articles 11-12)_
-
-| Scenario | Place of Supply | Legal Basis |
-| --- | --- | --- |
-| B2B (general rule) | Where the recipient is established | Art 12(4) |
-| B2C (general rule) | Where the supplier is established | Art 12(5) |
-| Real estate related | Where the property is located | Art 12(6)(1) |
-| Transport of goods (B2B) | Where recipient is established | Art 12(4) |
-| Cultural, sporting events | Where event takes place | Art 12(6)(4) |
-| Restaurant/catering | Where services performed | Art 12(6)(5) |
-| Short-term vehicle rental | Where vehicle made available | Art 12(6)(6) |
-
-## Step 10: Edge Case Registry
-
-### EC1 -- Software subscription from US provider (e.g., Microsoft 365) [T1]
-
-**Situation:** Serbian company pays for cloud services from a US company, no PDV on invoice.
-**Resolution:** Reverse charge (interni obracun). Self-assess at 20% in Fields 006/007. Deduct in Field 103. Net effect = zero.
-**Legislation:** Zakon o PDV, Article 10(1)(3), Article 12(4)
-
-### EC2 -- Export of goods to EU country [T1]
-
-**Situation:** Serbian manufacturer exports goods to Germany. Customs declaration obtained.
-**Resolution:** Zero-rated under Article 24(1)(1). Report in Field 201. No output PDV. Full input PDV recovery on related purchases.
-**Legislation:** Zakon o PDV, Article 24(1)(1)
-
-### EC3 -- Construction services between two PDV taxpayers [T2]
-
-**Situation:** PDV-registered contractor provides construction services to PDV-registered developer.
-**Resolution:** Reverse charge applies. Contractor invoices without PDV, noting "PDV obracunava primalac". Developer self-assesses in Fields 006/007, deducts in Field 103. Flag for reviewer: confirm service qualifies as construction.
-**Legislation:** Zakon o PDV, Article 10(1)(3a)
-
-### EC4 -- Purchase of passenger car [T1]
-
-**Situation:** Company purchases a sedan for employee use.
-**Resolution:** Input PDV is BLOCKED under Article 29(1)(1). PDV becomes part of the cost of the asset. No input PDV recovery.
-**Legislation:** Zakon o PDV, Article 29(1)(1)
-
-### EC5 -- Business entertainment (reprezentacija) [T2]
-
-**Situation:** Company hosts a client dinner, PDV on invoice is RSD 5,000.
-**Resolution:** 50% of input PDV (RSD 2,500) is deductible in Field 101. Remaining 50% (RSD 2,500) is non-deductible (expense for CIT). Flag for reviewer: confirm qualification as reprezentacija.
-**Legislation:** Zakon o PDV, Article 29(1)(2)
-
-### EC6 -- Purchase from flat-rate farmer (pausalac) [T1]
-
-**Situation:** Food processing company buys wheat from an unregistered farmer for RSD 1,000,000.
-**Resolution:** Company pays 8% compensation (RSD 80,000) to farmer. Company claims RSD 80,000 as input PDV in Field 105.
-**Legislation:** Zakon o PDV, Article 34
-
-### EC7 -- Import of goods from China [T1]
-
-**Situation:** Serbian retailer imports electronics from China.
-**Resolution:** PDV assessed by Customs at 20%. Import PDV deductible in Field 104. Do NOT self-assess on PPPDV. Customs duties are separate.
-**Legislation:** Zakon o PDV, Article 7, Article 28
-
-### EC8 -- Residential property rental [T1]
-
-**Situation:** Company rents out apartments to tenants.
-**Resolution:** Exempt under Article 25(1)(10). No output PDV. Input PDV on related costs is NOT deductible (Article 30).
-**Legislation:** Zakon o PDV, Article 25(1)(10)
-
-### EC9 -- Credit notes [T1]
-
-**Situation:** Supplier issues a credit note reducing a previous invoice.
-**Resolution:** Adjust the original entry. If original was in Field 001/002 (output), reduce Fields 001/002 by credit note amount. If original was input, reduce relevant input field. Issue credit note via e-Faktura system.
-**Legislation:** Zakon o PDV, Article 21
-
-### EC10 -- Services to foreign client (B2B export of services) [T1]
-
-**Situation:** Serbian IT company provides software development to a UK client.
-**Resolution:** Place of supply is where the recipient is established (UK) per Article 12(4). Supply is outside the scope of Serbian PDV. No PDV charged. Not reported as output but may be shown in Field 203 (informational). Input PDV on related costs is deductible.
-**Legislation:** Zakon o PDV, Article 12(4)
-
-### EC11 -- Supply of waste and secondary raw materials [T2]
-
-**Situation:** Company sells scrap metal to another PDV-registered company.
-**Resolution:** Reverse charge applies. Seller invoices without PDV. Buyer self-assesses. Flag for reviewer: confirm material qualifies under the waste/scrap regulation.
-**Legislation:** Zakon o PDV, Article 10(1)(3a)
-
-### EC12 -- Free supply of goods (employee gifts) [T1]
-
-**Situation:** Company distributes promotional gifts to employees.
-**Resolution:** Deemed taxable supply if input PDV was deducted on acquisition. Output PDV must be charged on the market value (emsal vrednost). If input PDV was not deducted, no output PDV.
-**Legislation:** Zakon o PDV, Article 4(4)
-
-## Step 11: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Qualified tax adviser must confirm before filing.
+# Serbia: value added tax (PDV), 2026
+
+Source-cited draft: not reviewed by an accountant, not for filing.
+
+The statute is the Zakon o porezu na dodatu vrednost (ZPDV), Službeni glasnik RS 84/2004 with amendments up to 80/2026. The Ministry of Finance publishes the Official Gazette's unofficial consolidated text. Article numbers below refer to it. E-invoicing and the e-VAT records sit in a separate law, the Zakon o elektronskom fakturisanju (ZEF). Penalties and interest sit in the Zakon o poreskom postupku i poreskoj administraciji (ZPPPA).
+
+**Read this first: which text applies in 2026.**
+- Law 109/2025 applies from the April 2026 (or April to June 2026) tax period. One article applies from 1 January 2026 and one from January 2027 (109/2025 Art. 12).
+- Law 80/2026 entered into force on 8 September 2026. It applies from 1 January 2027, except: the Article 25(2)(6) change (from 8 September 2026), the Article 48 change on approved monthly periods (from 15 December 2026) and two Article 50 changes (from the January 2027 or January to March 2027 period) (80/2026 Art. 17).
+- Supplies made from 2027 but paid for before 2027 stay under the old text (80/2026 Art. 13).
+- The consolidated text marks every 80/2026 change with a footnote. This skill flags each of them as "from 2027".
+
+See also: [rs-corporate-tax](rs-corporate-tax.md), [serbia-income-tax](serbia-income-tax.md), [serbia-payroll](serbia-payroll.md), [rs-cross-border](rs-cross-border.md), [how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide](how-to-open-a-company-in-serbia-as-a-foreigner-doo-entrepreneur-registration-guide.md).
+
+## Who this applies to
+
+- **Mandatory registration.** A business whose total turnover in the previous 12 months exceeds RSD 8,000,000 must file a registration application (evidenciona prijava) within five days of reaching that turnover (Article 38(1)). If it files late, the Tax Administration can register it ex officio. Input deduction then runs only from the day the application is filed (Article 38).
+- **Total turnover** for the test means supplies that carry VAT, supplies exempt with deduction under Article 24, and supplies abroad that would give a deduction right in Serbia (Article 28(1) points 1 and 2, by reference). Sales of the business's own equipment and buildings are left out (Article 33(6)).
+- **Small taxpayers (mali obveznik).** Turnover of RSD 8,000,000 or less in the previous 12 months, or expected for the next 12 months at start-up. A small taxpayer charges no VAT, may not show VAT on invoices and deducts no input tax (Article 33(1) and (2)). It may opt in by filing a registration application (Article 33(3)). From 2027 an opt-in or a mandatory registration lasts at least for the current and the next calendar year (Articles 33(4) and 38, from 80/2026).
+- **Farmers** below RSD 8,000,000 are outside VAT. A VAT payer buying from an unregistered farmer pays the farmer an 8% VAT compensation and deducts it as input tax once paid (Article 34).
+- **Foreign businesses.** A foreign person making taxable or zero-rated supplies in Serbia must appoint a tax representative and register, whatever its turnover. It need not do so if it supplies only VAT payers and the persons in Article 9(1), because those customers then account for the VAT (Article 10a(1) and (2)).
+- **Tax debtors who are not VAT payers** must still account for VAT in some cases, for example a non-registered Serbian company buying services from a foreign supplier. See Deadlines and filing.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source URL |
+|---|---|---|---|
+| General rate (opšta stopa) | 20% | 2026 | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dodatu-vrednost2 (ZPDV Art. 23(1)) |
+| Special rate (posebna stopa) | 10% | 2026 | Same, ZPDV Art. 23(2) |
+| Registration threshold, previous 12 months | above RSD 8,000,000 | 2026 | Same, ZPDV Art. 38(1) and Art. 33(1) |
+| Registration application after crossing the threshold | within 5 days | 2026 | Same, ZPDV Art. 38(1) |
+| Monthly tax period | turnover above RSD 50,000,000 in previous 12 months, and every new VAT payer for its first and next calendar year | 2026 | Same, ZPDV Art. 48 |
+| Quarterly tax period | turnover below RSD 50,000,000 | 2026 | Same, ZPDV Art. 48 |
+| Return and payment deadline, VAT payer | 15 days after the period ends | 2026 | Same, ZPDV Arts. 48, 50 and 51 |
+| Return deadline, tax debtor not registered | 10 days after the period ends | 2026 | Same, ZPDV Art. 50 |
+| Domestic reverse charge on construction | supplies above RSD 500,000 net of VAT | 2026 | Same, ZPDV Art. 10(2)(3) |
+| VAT compensation to unregistered farmers | 8% | 2026 | Same, ZPDV Art. 34(3) |
+| e-VAT records (EEO output, EPP input) | by the 12th of the month after the period | 2026 | https://www.mfin.gov.rs/propisi/zakon-o-elektronskom-fakturisanju-slubeni-glasnik-rs-br-442021-1292021-1382022-922023-92024-1092025-i-802026-nezvanino-preien-redakcije-slubenog-glasnika- (ZEF Arts. 4 and 4a) |
+| Input tax: e-invoice accepted by | the day before the return is filed, and no later than the 10th of the next month | 2026 | ZPDV Art. 28 |
+| Refund deadline | 45 days, or 15 days for mainly exporters | 2026 | ZPDV Art. 52(4) |
+| Foreign business VAT refund (refakcija), minimum claim | above EUR 200, reciprocity required | 2026 | ZPDV Art. 53(1) |
+| Tourist VAT refund, minimum purchase | RSD 6,000 including VAT | 2026 | ZPDV Art. 24(1)(4) |
+| Late payment interest | NBS annual reference rate plus 10 percentage points, simple interest | 2026 | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 (ZPPPA Art. 75(1)) |
+
+**What the 10% rate covers (Article 23(2)).** Bread and bakery products, milk and dairy, flour, sugar, edible sunflower, maize, rapeseed, soy and olive oil, edible fats and honey; fresh, chilled and frozen fruit, vegetables, meat, fish and eggs; cereals, sunflower, soy, sugar beet and rapeseed; medicines, including veterinary ones; orthotic and prosthetic aids and surgically implanted medical devices; dialysis material; fertiliser, plant protection products, seed, seedlings, animal feed and live livestock; textbooks and teaching aids; daily newspapers; monographic and serial publications; firewood, briquettes and pellets; accommodation in accommodation establishments; tickets for cinema, theatre, fairs, circuses, amusement parks, concerts, exhibitions, sports events, museums, galleries, botanical gardens and zoos (where not exempt); natural gas; heat for heating; transfer of residential buildings and units; drinking water by network, but not bottled water; waste water treatment; municipal waste; public cleaning and green areas; passenger transport with its luggage; cemetery and funeral services. The minister's rulebook defines the scope of most items. Everything else is at 20%.
+
+## The taxable base
+
+- **Output VAT** is due on supplies of goods and services in Serbia for consideration and on imports (Article 3). The VAT payer is the tax debtor, except where the law makes someone else liable (Article 10(1)(1)).
+- **Exempt with deduction (Article 24).** Exports of goods, transport and other services linked to imports and exports, supplies into free zones, international transport and similar items. They carry no VAT but keep the input deduction.
+- **Exempt without deduction (Article 25).** Financial services (credit, deposits, payments, shares, securities), insurance, land and its lease, second and later sales of buildings, residential leases, postal services of the public operator, health, education, social and cultural services and others listed. Input tax on costs of these supplies is not deductible.
+- **Buildings.** The first transfer of a newly built building or unit is taxable. Later transfers are exempt (Article 25(2)(3)). Residential transfers that are taxed are at 10% (Article 23(2)(14)). Between VAT payers, a building sale where the contract says VAT will be charged is reverse charged (Article 10(2)(2)).
+- **Services, place of supply (Article 12).** B2B services are supplied where the customer is established (Article 12(4)). B2C services are supplied where the supplier is established (Article 12(5)). Exceptions include services on real estate (where the property is), passenger transport (where it happens) and event services (where performed) (Article 12(6)).
+- **Input tax (Article 28).** A VAT payer deducts input tax on goods and services used for taxable or Article 24 supplies, or for supplies abroad that would give a deduction in Serbia. It needs a VAT invoice or, for imports, the customs document and proof of payment. Where an e-invoice is required, only an accepted e-invoice gives the deduction. The e-invoice must be accepted by the day before the return is filed, and no later than the 10th of the following month, to count for that period. The right lapses five years after the year in which the VAT became due.
+- **Blocked input tax (Article 29).** No deduction on passenger cars, motorcycles, yachts, boats and aircraft, their fuel, parts and running costs, unless the business sells, rents or transports with them, or trains drivers. No deduction on entertainment (reprezentacija), which includes hospitality, gifts other than small gifts, and leisure for business partners. No deduction on employee commuting or employee meals, with a narrow exception for meals in the employer's own catering. Entertainment is fully blocked. It is not a 50% item.
+- **Mixed use (Article 30).** Input tax used for both deductible and non-deductible supplies is split by economic attribution. What cannot be attributed is deducted by the pro rata: deductible turnover over total turnover, both net of VAT, from 1 January to the end of the period. Sales of equipment and business buildings and up to two occasional property and two occasional financial transactions a year are left out of the ratio.
+- **Invoices (Article 42).** Every supply needs an invoice. A VAT payer issues an e-invoice (under the ZEF), a fiscal receipt (under the fiscalisation law), a paper invoice or another electronic invoice. A customer who is the tax debtor makes an internal invoice (interni račun). A SEF user makes it in SEF.
+
+## Deadlines and filing
+
+- **Tax period.** Monthly if turnover in the previous 12 months exceeded RSD 50,000,000, quarterly if below. A business switches at the end of a quarter when it crosses the line. Every new VAT payer files monthly for the year it starts and the next calendar year. A quarterly filer may apply between 20 and 31 December to file monthly for the next year (Article 48). From 15 December 2026 an approved monthly period runs until the end of the calendar year after the year the taxpayer asks to end it (Article 48, from 80/2026).
+- **Return and payment.** The VAT payer files the PPPDV return within 15 days after the period ends, even if nothing is due (Article 50). Returns go in electronically through the ePorezi portal (ZPPPA Art. 38). VAT is paid by the same deadline (Articles 48 and 51).
+- **POPDV.** For periods up to December 2026, or October to December 2026, the return is filed with the POPDV schedule (pregled obračuna PDV). Law 80/2026 drops the POPDV from 2027: a late or amended return for a 2026 period filed in 2027 goes in without it (80/2026 Art. 15).
+- **Tax debtors who are not VAT payers** use a monthly period (Article 48). They file within 10 days after the month in which the liability arose (Article 50) and pay by that date.
+- **Year-end notice.** With the return for the last period of the year, a VAT payer reports the secondary raw materials and farm produce it bought from unregistered sellers, and the amounts (Article 51a).
+- **SEF e-invoicing (ZEF Art. 3).** Private businesses must issue e-invoices through SEF (Sistem elektronskih faktura, efaktura.gov.rs) to each other and to the public sector. Retail sales under the fiscalisation law are excluded, except sales to holders of a corporate card and retail sales where a public body asks for an e-invoice within seven days. In those cases the fiscal receipt comes first (ZEF Art. 3, from 109/2025). Free supplies are also excluded.
+- **e-VAT records, output side (EEO, ZEF Art. 4).** A VAT payer records in SEF the output VAT that is not already on an e-invoice it issued, for example on fiscal-receipt sales and self-supplies. Reverse charge purchases, sales to income or corporate taxpayers not covered by e-invoices, and first transfers of new buildings are recorded one by one. Everything else is recorded in summary by rate. Deadline: the 12th of the month after the period. Records can be corrected.
+- **e-VAT records, input side (EPP, ZEF Art. 4a).** Every VAT payer records its input tax in SEF in summary for each period, whether or not it can deduct it. Deadline: the 12th of the month after the period. The record shows the position on the day before it is made, or on the 10th if made after the 10th.
+- **The 2027 pre-filled return.** From the January 2027 period, SEF prepares a preliminary VAT return (PPP PDV) from the e-invoices and e-VAT records. The taxpayer files the return with it as an annex (Articles 49a and 50a). If no return is filed, the Tax Administration files one ex officio from the preliminary return (Article 50, from 80/2026). The Ministry published the PPP PDV and new PP PDV forms on efaktura.gov.rs on 19 October 2026.
+- **Farm purchases.** Electronic recording of purchases from unregistered farmers in SEF (ZEF Art. 4b) applies from 1 July 2027.
+- **Records** are kept until the limitation period for assessment ends. For buildings it is at least ten years from first use (Article 47).
+
+## Penalties and interest
+
+Figures from the ZPPPA as amended by 94/2024, in force from 2025.
+- **Return filed on time, VAT not paid on time** (Art. 177). Legal entity: RSD 20,000 if the unpaid tax is up to RSD 100,000; 40,000 for RSD 100,000 to 1,000,000; 150,000 for RSD 1,000,000 to 10,000,000; 250,000 above that. Entrepreneur: RSD 10,000, 20,000, 80,000 or 140,000.
+- **Late return and late payment** (Art. 177). Legal entity: RSD 25,000, 50,000, 200,000 or 300,000 in the same bands. Entrepreneur: RSD 15,000, 30,000, 100,000 or 150,000.
+- **Late return, tax paid on time** (Art. 177). Legal entity RSD 100,000. Entrepreneur RSD 40,000.
+- **No return and no payment, found in an audit** (Art. 177(1)). 30% to 100% of the tax due, at least RSD 500,000 for a legal entity and RSD 100,000 for an entrepreneur.
+- **Understated VAT** (Art. 178). 30% to 40% of the difference, at least RSD 200,000 for a legal entity and RSD 100,000 for an entrepreneur. If the difference is up to 5%, a fixed RSD 100,000 for a legal entity and RSD 50,000 for an entrepreneur.
+- **Late or missing registration application** (Art. 178a). RSD 100,000 to 2,000,000 for a legal entity, RSD 50,000 to 500,000 for an entrepreneur.
+- **VAT shown on an invoice against the law** (Art. 178b). RSD 100,000 to 2,000,000 for a legal entity. Anyone who shows VAT on an invoice must pay it (ZPDV Article 44).
+- **Responsible person.** The responsible person in a legal entity is fined RSD 10,000 to 100,000 for most of these offences.
+- **E-invoicing and e-VAT records** (ZEF Art. 18). Failure to issue an e-invoice, to record VAT in SEF or to keep the SEF status up to date: RSD 200,000 to 2,000,000 for a legal entity, RSD 50,000 to 500,000 for an entrepreneur, RSD 50,000 to 150,000 for the responsible person. A record corrected before supervision starts is not an offence.
+- **Interest** on late tax runs from the day after the due date at the National Bank of Serbia annual reference rate plus 10 percentage points, simple interest on a 365 or 366 day year (ZPPPA Art. 75). If a VAT refund is not paid on time, interest runs to the taxpayer from the day after the statutory deadline.
+- **Late registration correction.** From 2027 a business that registered late may correct VAT for past periods in its first return after registration, and this counts as correcting an error (Article 50, from 80/2026).
+
+## Cross-border points
+
+- **Serbia is not in the EU.** There are no intra-community supplies or acquisitions. Goods leaving Serbia are exports under Article 24. Goods arriving are imports, with VAT collected by Customs.
+- **Services from abroad.** If a foreign supplier is not registered for Serbian VAT, the Serbian customer is the tax debtor (Article 10(1)(3)). A registered customer makes an internal invoice in SEF and deducts the VAT on it in the same period if the purchase is for deductible supplies (Article 28). A non-registered Serbian business customer pays the VAT with a 10-day return.
+- **Services to foreign businesses.** B2B services are supplied where the customer is, so they are outside Serbian VAT (Article 12(4)), except where Article 12(6) puts them in Serbia, for example services on Serbian property.
+- **Foreign suppliers to consumers.** A foreign business making taxable supplies in Serbia to non-VAT payers must appoint a tax representative and register (Article 10a). Where a Serbian VAT payer collects payment for the foreign supplier, that VAT payer is the tax debtor (Article 10).
+- **Refund to foreign businesses.** A foreign business not making supplies in Serbia can reclaim Serbian VAT above EUR 200, if its country gives Serbian businesses the same right (Article 53).
+- **Domestic reverse charge between registered VAT payers (Article 10(2)).** It applies to secondary raw materials and linked services; buildings where the contract says VAT is charged; construction goods and services above RSD 500,000 net; electricity and gas for resale; investment gold (added by 109/2025); sales of mortgaged or pledged property and sales in enforcement; and a transferee when a going-concern transfer stops qualifying. It applies only where both parties are registered for VAT.
+
+## Worked examples
+
+### Example 1: quarterly filer, April to June 2026
+
+A Belgrade design company files quarterly. In the April to June 2026 quarter it invoices domestic customers RSD 3,000,000 net at 20% and sells printed books for RSD 500,000 net at 10%. Accepted e-invoices from Serbian suppliers show RSD 350,000 of input VAT. They include a client dinner with RSD 12,000 of VAT, which is entertainment and fully blocked under Article 29. It also buys RSD 400,000 of software services from a German supplier that is not registered in Serbia. It is the tax debtor under Article 10(1)(3). It makes an internal invoice in SEF, charges 20% and deducts the same amount because the software is used for taxable sales. The return and payment are due by 15 July 2026, and the e-VAT records by 12 July 2026.
+
+```oa-check
+name: Example 1, quarterly PDV return Q2 2026 with reverse charge and blocked entertainment
+inputs:
+  sales_20: 3000000
+  sales_10: 500000
+  input_vat_invoices: 350000
+  entertainment_vat: 12000
+  foreign_services: 400000
+steps:
+  - output_20: sales_20 * 0.20
+  - output_10: sales_10 * 0.10
+  - reverse_charge_vat: foreign_services * 0.20
+  - total_output: output_20 + output_10 + reverse_charge_vat
+  - deductible_input: input_vat_invoices - entertainment_vat + reverse_charge_vat
+  - vat_payable: total_output - deductible_input
+expected:
+  output_20: 600000
+  output_10: 50000
+  reverse_charge_vat: 80000
+  total_output: 730000
+  deductible_input: 418000
+  vat_payable: 312000
 ```
 
-When a [T3] situation is identified, output:
+### Example 2: exporter with a refund
 
+A furniture maker in Niš files monthly and meets the Government's criteria for a taxpayer that mainly exports goods. In March 2026 it exports goods worth RSD 10,000,000, which are exempt with deduction under Article 24. It sells RSD 1,000,000 net domestically at 20%. Its input VAT on accepted e-invoices and on imports paid at customs is RSD 900,000. Input tax exceeds output tax, so it has a refund. It asks for a refund in the return rather than a credit. It files on time by 15 April 2026, so the Tax Administration must pay within 15 days of that deadline, by 30 April 2026 (Article 52(4)). The exports count in its total turnover for the RSD 50,000,000 monthly test.
+
+```oa-check
+name: Example 2, monthly return March 2026 with exports and a refund
+inputs:
+  exports: 10000000
+  domestic_sales_20: 1000000
+  input_vat: 900000
+steps:
+  - output_vat: domestic_sales_20 * 0.20
+  - net_position: output_vat - input_vat
+  - refund: max(input_vat - output_vat, 0)
+  - turnover_for_tests: exports + domestic_sales_20
+expected:
+  output_vat: 200000
+  net_position: -700000
+  refund: 700000
+  turnover_for_tests: 11000000
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to qualified tax adviser. Document gap.
-```
 
-## Step 12: Test Suite
+## Ask the client first
 
-### Test 1 -- Standard domestic sale at 20%
+1. What was your total turnover in each of the last 12 months, and when did it first pass RSD 8,000,000? Are you registered for VAT, and since when?
+2. Do you file monthly or quarterly, and when did you register? New VAT payers file monthly for their first two calendar years.
+3. What do you sell, and at which rate? Do you make any exempt supplies under Article 25, such as financial services, residential rent or used buildings?
+4. Do you buy services or goods from foreign suppliers that are not registered in Serbia? Do you buy construction work, scrap or buildings from other VAT payers?
+5. Are all your supplier e-invoices accepted in SEF by the 10th? Are your EEO and EPP records filed by the 12th?
+6. Do you mainly export goods? This changes the refund deadline from 45 to 15 days.
 
-**Input:** Serbian company sells IT consulting to a domestic client, net RSD 500,000, PDV RSD 100,000.
-**Expected output:** Field 001 = RSD 500,000. Field 002 = RSD 100,000. Output PDV reported.
+## Sources
 
-### Test 2 -- Reduced rate sale at 10%
+| Source | URL | Read on |
+|---|---|---|
+| Zakon o porezu na dodatu vrednost, consolidated to 80/2026 (Ministry of Finance page), Arts. 10, 10a, 12, 23 to 30, 33, 34, 38, 38a, 42, 44, 47 to 53, and the start-date articles of 94/2024 (Art. 22), 109/2025 (Art. 12) and 80/2026 (Arts. 12 to 17) | https://www.mfin.gov.rs/propisi/zakon-o-porezu-na-dodatu-vrednost2 | 2026-10-23 |
+| Consolidated VAT law, docx file linked from that page | https://www.mfin.gov.rs/upload/media/5MwIQ2_6aa12716d86e0.docx | 2026-10-23 |
+| Zakon o elektronskom fakturisanju, consolidated to 80/2026, Arts. 3, 3a, 4, 4a, 4b, 18, 24 and the amending laws' start dates | https://www.mfin.gov.rs/propisi/zakon-o-elektronskom-fakturisanju-slubeni-glasnik-rs-br-442021-1292021-1382022-922023-92024-1092025-i-802026-nezvanino-preien-redakcije-slubenog-glasnika- | 2026-10-23 |
+| Zakon o poreskom postupku i poreskoj administraciji, consolidated to 80/2026, Arts. 38, 75, 177, 178, 178a, 178b | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 | 2026-10-23 |
+| Poreska uprava, VAT pages and tax calendar notes (year-end notice, change of tax period) | https://www.purs.gov.rs/pravna-lica/pdv.html | 2026-10-23 |
+| efaktura.gov.rs, PPP PDV and PP PDV forms notice of 19 October 2026 | https://www.efaktura.gov.rs/vest/11281/obrasci-poreske-prijave-pdv-u-word-formatu.php | 2026-10-23 |
+| efaktura.gov.rs, electronic recording of VAT (EEO) and input tax (EPP) | https://www.efaktura.gov.rs/tekst/4071/elektronsko-evidentiranje-obracuna-pdv-u-sef.php | 2026-10-23 |
 
-**Input:** Bakery sells bread to a retailer, net RSD 200,000, PDV RSD 20,000.
-**Expected output:** Field 003 = RSD 200,000. Field 004 = RSD 20,000.
-
-### Test 3 -- Export of goods, zero-rated
-
-**Input:** Serbian manufacturer exports furniture to Italy, net RSD 3,000,000. Customs declaration obtained.
-**Expected output:** Field 201 = RSD 3,000,000. No output PDV. Input PDV on related purchases refundable.
-
-### Test 4 -- Import of services, reverse charge
-
-**Input:** Serbian company receives marketing services from a UK agency, EUR 10,000 (approx. RSD 1,170,000). No PDV on invoice.
-**Expected output:** Field 006 = RSD 1,170,000. Field 007 = RSD 234,000 (20%). Field 103 = RSD 234,000. Net effect = zero.
-
-### Test 5 -- Purchase of passenger car, blocked input
-
-**Input:** Company purchases sedan, net RSD 5,000,000, PDV RSD 1,000,000.
-**Expected output:** Input PDV of RSD 1,000,000 is BLOCKED (Article 29). Asset capitalized at RSD 6,000,000. No input PDV recovery.
-
-### Test 6 -- Entertainment expense at 50%
-
-**Input:** Company hosts client dinner, net RSD 30,000, PDV RSD 6,000.
-**Expected output:** Field 101 includes RSD 3,000 (50% of RSD 6,000). Remaining RSD 3,000 non-deductible.
-
-### Test 7 -- Purchase from flat-rate farmer
-
-**Input:** Food processor buys milk from unregistered farmer, purchase price RSD 500,000.
-**Expected output:** Compensation paid to farmer: RSD 40,000 (8%). Field 105 = RSD 40,000.
-
-### Test 8 -- Construction reverse charge (domestic)
-
-**Input:** PDV-registered contractor invoices PDV-registered developer for construction work, net RSD 10,000,000. No PDV on invoice.
-**Expected output:** Developer: Field 006 = RSD 10,000,000. Field 007 = RSD 2,000,000. Field 103 = RSD 2,000,000. Net = zero.
-
-## PROHIBITIONS [T1]
-
-- **Prohibitions list** — NEVER allow input PDV deduction on passenger vehicles (unless taxi/rental/dealer business); NEVER skip reverse charge (interni obracun) for services received from foreign suppliers; NEVER treat Serbia as an EU member state -- no intra-community rules apply; NEVER allow full input PDV deduction on entertainment -- maximum 50%; NEVER issue paper invoices when e-Faktura is mandatory; NEVER confuse zero-rated (Article 24, with input recovery) with exempt (Article 25, without input recovery); NEVER register import of goods via reverse charge -- Customs handles PDV on imports; NEVER allow input PDV recovery on purchases used for exempt activities (Article 30); NEVER compute any number -- all arithmetic is handled by the deterministic engine, not the AI; NEVER ignore the RSD 8,000,000 registration threshold -- monitor and flag when approaching
-
-## Step 13: Invoice Requirements and Documentation
-
-### 13a. PDV Invoice (PDV Racun) Requirements [T1]
-
-**PDV Invoice Requirements table**  _(Zakon o PDV, Article 42; Zakon o elektronskom fakturisanju)_
-
-| Requirement | Details |
-| --- | --- |
-| Who must issue | All PDV-registered taxpayers for every taxable supply |
-| Mandatory fields | Supplier name, PIB, PDV number; buyer name, PIB, PDV number; date of issue; sequential number; date of supply; description; quantity; unit price; taxable base; PDV rate; PDV amount; total |
-| Issuance deadline | By the date of supply or receipt of advance payment |
-| Format | e-Faktura (electronic) for all B2B and B2G transactions |
-| Storage | 10 years (electronic storage on SEF system) |
-| Language | Serbian (translations may be attached for cross-border) |
-
-### 13b. Credit Note (Knjizno odobrenje) and Debit Note (Knjizno zaduzenje) [T1]
-
-**Credit Note / Debit Note table**
-
-| Document | Purpose | Requirements |
-| --- | --- | --- |
-| Credit note | Reduce previously invoiced amount | Must reference original invoice number; issue via e-Faktura |
-| Debit note | Increase previously invoiced amount | Must reference original invoice number; issue via e-Faktura |
-| PDV effect | Both adjust output and input PDV in the period of issuance | Buyer and seller adjust simultaneously |
-
-### 13c. Internal Invoice (Interni Racun) [T1]
-
-**Internal Invoice table**
-
-| Requirement | Details |
-| --- | --- |
-| When issued | For reverse charge (interni obracun) transactions -- services from abroad |
-| Who issues | The Serbian recipient (PDV payer) |
-| Purpose | Self-assesses PDV on imported services |
-| Fields | Same as PDV racun but supplier section shows foreign entity details |
-| Registration | Must be registered in the e-Faktura system |
-
-## Step 14: Advance Payments and Tax Point Rules
-
-### 14a. Tax Point (Promet) [T1]
-
-**Tax Point table**
-
-| Event | Tax Point | Legal Basis |
-| --- | --- | --- |
-| Supply of goods | Date of delivery | Art 14(1) |
-| Supply of services | Date of completion | Art 15(1) |
-| Advance payment received | Date of receipt | Art 16(1) |
-| Continuous supply | End of each billing period | Art 14(4) |
-| Import of goods | Date of customs clearance | Art 7 |
-
-### 14b. Advance Payments [T1]
-
-- **Advance payments rule** — When an advance payment (avans) is received, PDV is triggered immediately. Seller must issue a PDV invoice for the advance. When goods/services are subsequently delivered, a final invoice is issued covering the remaining amount. The advance PDV invoice and final invoice together equal the total transaction.  _(Zakon o PDV, Article 16)_
-
-## Step 15: Penalties and Interest Reference Table
-
-**Step 15: Penalties and Interest Reference Table**
-
-| Violation | Amount / Rate | Legal Basis |
-| --- | --- | --- |
-| Late filing of PPPDV | Fine: RSD 100,000 -- RSD 2,000,000 (legal entity) | Art 60 |
-| Late filing (entrepreneur) | Fine: RSD 50,000 -- RSD 500,000 | Art 60 |
-| Late filing (responsible person) | Fine: RSD 10,000 -- RSD 100,000 | Art 60 |
-| Late payment | Interest: NBS reference rate + 10% p.a. (daily calculation) | Zakon o poreskom postupku |
-| Failure to register for PDV | Fine: RSD 100,000 -- RSD 2,000,000 + mandatory registration | Art 60 |
-| Failure to issue e-Faktura | Fine: RSD 200,000 -- RSD 2,000,000 (legal entity) | E-Invoicing Law |
-| Failure to use fiscal cash register | Fine: RSD 300,000 -- RSD 2,000,000 + temporary closure (up to 60 days) | Fiscalization Law |
-| Issuing incorrect PDV invoice | Fine: RSD 100,000 -- RSD 2,000,000 | Art 60 |
-| Tax evasion | Criminal prosecution under Criminal Code | Criminal Code Art 229 |
-| Failure to keep records | Fine: RSD 100,000 -- RSD 2,000,000 | Art 60 |
-
-## Step 16: Double Taxation Treaty Considerations [T3]
-
-Serbia has an extensive double taxation treaty network (over 60 treaties). DTTs do NOT affect PDV/VAT obligations -- they cover income tax only. However, DTTs may affect withholding tax on payments that also have PDV implications. ALWAYS escalate cross-border arrangements involving DTT analysis to a qualified tax adviser.
-
-**Legislation:** Individual DTTs; Zakon o porezu na dobit pravnih lica (Corporate Income Tax Law)
-
-## Step 17: Record-Keeping Requirements [T1]
-
-**Step 17: Record-Keeping Requirements**
-
-| Record Type | Retention Period | Legal Basis |
-| --- | --- | --- |
-| PDV invoices (e-Faktura system) | 10 years (stored on SEF) | E-Invoicing Law |
-| Accounting ledgers | 10 years | Zakon o racunovodstvu |
-| Bank statements | 10 years | Zakon o racunovodstvu |
-| Contracts and agreements | 10 years | Zakon o racunovodstvu |
-| Customs declarations | 5 years | Carinski zakon |
-| PPPDV returns (filed electronically) | Maintained by Poreska uprava | Electronic filing |
-| Fiscal cash register data | 5 years | Zakon o fiskalizaciji |
-| Internal invoices (interni racun) | 10 years | E-Invoicing Law |
-
-## 2026 Legislative Amendments (Effective 1 April 2026)
-
-**2026 Legislative Amendments table**
-
-| Change | Details | Effective |
-| --- | --- | --- |
-| Credit notes mandatory | Suppliers must issue credit notes for any subsequent decrease in tax base | 1 April 2026 |
-| PDV correction timing | Reduction in calculated PDV allowed in the period the change occurred, subject to conditions by filing deadline | 1 April 2026 |
-| Pre-filled VAT returns | Pre-completed PPPDV returns introduced via SEF e-invoicing system | 1 January 2026 |
-| Internal invoice compliance | No input PDV deduction unless internal invoices comply with SEF rules | 1 April 2026 |
-| E-invoicing alignment | Advances and tax base adjustments must follow SEF format requirements | 1 April 2026 |
-
-Serbia adopted a major package of amendments to the VAT Law on 3 December 2025 (Official Gazette RS No. 109/2025), largely effective from 1 April 2026:
-
-**Note:** VAT rates (20% standard, 10% reduced) are unchanged by these amendments. The changes are procedural/administrative.
-
-## Contribution Notes
-
-This skill covers Serbian PDV as of April 2026. Serbian tax law is subject to frequent amendment. All rates and thresholds should be verified against the most recent Official Gazette publications before filing. A qualified Serbian tax adviser (poreski savetnik) must validate all T1 rules before this skill is used in production.
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the exact wording of Articles 33(4), 38, 50 and 51 before Law 80/2026 (the Ministry's page offers only the new consolidated text), including the minimum period of a voluntary registration in 2026 and the old deregistration rule; which articles of Law 94/2024 fall under its deferred start in January 2027 (its Arts. 14, 15(1), 16 and 18), and so whether every 94/2024 change to Articles 28 and 49a to 50b applies in 2026, although 80/2026 Art. 15 confirms the POPDV stays for 2026 periods; the start date of the investment gold reverse charge within 2026; the current NBS reference rate; the PDV Rulebook (Pravilnik o PDV) text for the POPDV fields, which the Tax Administration page did not display.
