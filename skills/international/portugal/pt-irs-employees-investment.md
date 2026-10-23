@@ -5,7 +5,7 @@ jurisdiction: PT
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
+last_updated: 2026-10-23
 version: 0.1
 verified_by: pending
 ---
@@ -17,7 +17,7 @@ This skill computes the annual IRS of a Portuguese resident individual whose inc
 Sibling skills, which this one links to and does not repeat:
 
 - `pt-income-tax`: self-employed income (Category B, Anexo B), the simplified regime coefficients. Tax year 2025 figures.
-- `portugal-payroll`: monthly withholding on salaries and social security (TSU). Tax year 2025 figures.
+- `portugal-payroll`: monthly withholding on salaries and social security (TSU). Its frontmatter says tax year 2025, though it carries some 2026 figures.
 - `pt-foreign-source-treaties`: foreign income of residents, the foreign tax credit and Anexo J.
 - `pt-nhr-ifici`: the old non-habitual resident regime and IFICI (20% flat rate). Check this first: a person under either regime is taxed differently and cannot use IRS Jovem.
 - `portugal-crypto-tax`: crypto gains and income.
@@ -50,7 +50,7 @@ The law is the Código do IRS (CIRS). The Tax Authority (Autoridade Tributária 
 | Band 8: over 46,566 to 86,634 | 44.60% (average 34.856%) | 2026 | same |
 | Band 9: over 86,634 | 48.00% | 2026 | same |
 | Solidarity surcharge | 2.5% on taxable income over EUR 80,000 up to 250,000; 5% over 250,000 | 2026 | CIRS art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx |
-| IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1 (found through a search; the Diário da República page did not load, see "Not yet confirmed") |
+| IAS (social support index) | EUR 537.13 | 2026 | Portaria 480-A/2025/1, art. 2 and 4: https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222 |
 | Specific deduction, Category A | 8.54 x IAS = EUR 4,587.09, or the employee's compulsory social security if higher | 2026 | CIRS art. 25(1)(a) and (2): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx |
 | Specific deduction, Category H | Same EUR 4,587.09 per pensioner; plus compulsory contributions above that amount | 2026 | CIRS art. 53(1), (2), (4): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs53.aspx |
 | Minimum existence reference value | Higher of EUR 12,880 and 1.5 x 14 x IAS (EUR 11,279.73), so EUR 12,880 | 2026 | CIRS art. 70(1), wording of Lei 73-A/2025: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs70.aspx |
@@ -61,11 +61,13 @@ The law is the Código do IRS (CIRS). The Tax Authority (Autoridade Tributária 
 | Residential lease 5 to under 10 years | 25% less 10 points = 15% (a further 2 points off per renewal, up to 10 points) | 2026 | CIRS art. 72(3) |
 | Residential lease 10 to under 20 years | 25% less 15 points = 10% | 2026 | CIRS art. 72(4) |
 | Residential lease 20 years or more | 25% less 20 points = 5% | 2026 | CIRS art. 72(5) |
+| Long-lease reductions, leases signed from 1 January 2024 | No reduction if the monthly rent is more than 50% above the general rent limits of Portaria 176/2019 for the property type and municipality; a further 5 points off on a new lease whose rent is at least 5% below the previous lease on the same property | 2026 | CIRS art. 72(23) and (24) |
 | Other rent (shops, offices) | 28% autonomous rate | 2026 | CIRS art. 72(1)(e) |
 | Net gains on shares and securities | 28% autonomous rate | 2026 | CIRS art. 72(1)(c) |
 | Listed securities and open funds held over 2 years | 10% (2 to 5 years), 20% (5 to 8 years), 30% (8 years or more) of the gain excluded | 2026 | CIRS art. 43(5), wording of Lei 31/2024: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
 | Short-term securities gains, compulsory aggregation | Held under 365 days and taxable income (including the gain) at or above EUR 86,634 | 2026 | CIRS art. 72(14) |
-| Property gains, and gains on unlisted micro and small company shares | 50% included, then aggregated at the band rates | 2026 | CIRS art. 43(2)(b) and (3) |
+| Property gains | 50% of the net gain included, then aggregated at the band rates | 2026 | CIRS art. 43(2)(b) |
+| Gains on shares of unlisted micro and small companies | 50% of the net gain included, then taxed at the 28% autonomous rate unless the resident opts to aggregate | 2026 | CIRS art. 43(3), art. 72(1)(c) and (13) |
 | Return filing exemption for low salary or pension | Total EUR 8,500 or less with no withholding | 2026 | CIRS art. 58(1)(b): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs58.aspx |
 
 The 2026 bands are lower than the 2025 bands. The 2026 State Budget (Lei 73-A/2025, art. 71) rewrote the art. 68 table: bands 2 to 5 were cut (for example band 2 went from 16.00% to 15.70%) and every band limit was raised. The law came into force on 1 January 2026. Do not use the 2025 table in `pt-income-tax` for 2026 income.
@@ -87,7 +89,7 @@ Pillar Two and other company-level measures do not apply to individuals.
 
 **Step 4: IRS Jovem.** A taxpayer aged 35 or under who is not a dependant can exempt part of their Category A and B income for the first 10 years of earning income, by opting in the return (CIRS art. 12-B(1); the 2020 to 2021 regime was the old art. 2-B, now replaced). The exemption is 100% in year 1, 75% in years 2 to 4, 50% in years 5 to 7 and 25% in years 8 to 10, capped each year at 55 x IAS = EUR 29,542.15 of exempt income (art. 12-B(5)). Years with no Category A or B income do not count (art. 12-B(3)(b)). The exempt part is still counted to find the rate on the rest (art. 12-B(4), art. 22(4)). People who have had NHR or IFICI, opted for the returning-resident regime of art. 12-A, or have unpaid tax cannot use it (art. 12-B(9)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs12b.aspx
 
-**Step 5: minimum existence.** A low earner whose income is mainly salary or pension gets an amount taken off taxable income so that what is left after tax does not fall below the reference value of EUR 12,880 (art. 70(2) and (3)). It does not apply when the household's gross income exceeds 2.2 x 14 x IAS (EUR 16,543.60) per taxpayer (art. 70(4)(a)). AT publishes the simplified formulas for each year in the first quarter of the next year (art. 70(6)).
+**Step 5: minimum existence.** A taxpayer whose gross income comes mainly from employment, pensions or the professional activities in the table of Portaria 1011/2001 (except code 15) gets an amount (abatimento) taken off taxable income (art. 70(2)). The reference value is EUR 12,880 (art. 70(1)). If gross income is at or below the reference value, the amount is the reference value less the specific deductions and less the general expenses cap divided by the first band rate (250 / 12.5% = EUR 2,000). Above it, the amount tapers by the formulas in art. 70(2)(b) and (c) and (3). The amount is never negative and never more than gross income less specific deductions (art. 70(2)(d)). It does not apply to anyone in the household when total gross income exceeds 2.2 x 14 x IAS (EUR 16,543.60) times the number of taxpayers, or when income taxed at the final rates and not aggregated exceeds 14 x IAS (EUR 7,519.82) times the number of taxpayers (art. 70(4)). Gross income here includes exempt income, such as the IRS Jovem part (art. 70(5)(a)). AT publishes the simplified formulas for each year in the first quarter of the next year (art. 70(6)).
 
 **Step 6: tax by band.** Apply the art. 68 table to taxable income. AT computes the tax by taking the upper limit of the highest band fully used at that band's average rate (column B), plus the excess at the next band's normal rate (column A) (art. 68(2)). The result can differ by a cent from adding the bands one by one. Under joint taxation, divide taxable income by two, apply the table and multiply by two (art. 69). Then add the solidarity surcharge on taxable income over EUR 80,000 (art. 68-A).
 
@@ -104,7 +106,7 @@ Pillar Two and other company-level measures do not apply to individuals.
 | Education and training | 30% of costs, up to EUR 800 for the household (raised by up to EUR 300 for rent of a student living over 50 km from home, max EUR 400 of that rent) | art. 78-D(1) and (11) |
 | Rent of the taxpayer's permanent home | 15% of rent paid; for 2026 the cap is EUR 900 | art. 78-E(1)(a) and (10); Decreto-Lei 97/2026, art. 15(1), as reproduced by AT |
 | Mortgage interest on the home, contracts up to 31 December 2011 only | 15%, up to EUR 296 (up to EUR 450 for low incomes) | art. 78-E(1)(b) and (5) |
-| VAT on invoices from car and motorbike repair, restaurants and hotels, hairdressers, vets, bookshops and (from 2026) cultural venues; public transport passes | 15% of the VAT (100% for transport passes and newspaper subscriptions), up to EUR 250 for the household | art. 78-F(1), (3), (7); points g) to l) added by Lei 73-A/2025 |
+| VAT on invoices from car and motorbike repair, restaurants and hotels, hairdressers and vets, and from 2026 bookshops, performing arts, theatres and venues, libraries, museums and monuments; public transport tickets and passes; newspaper and magazine subscriptions; gyms and sports clubs | 15% of the VAT (100% for public transport and periodical subscriptions, 35% for veterinary medicines, 30% for gyms and sports clubs), up to EUR 250 for the household | art. 78-F(1), (3), (6), (7), (8); points g) to l) added by Lei 73-A/2025 |
 
 **Overall cap.** The deductions for health, education, housing, alimony, invoice VAT, care homes, tax benefits and domestic work (art. 78(1)(c) to (h), (k) and (m)) together cannot exceed a cap per household (art. 78(7)). The dependants and general family expenses deductions sit outside it. The cap is:
 
@@ -120,7 +122,7 @@ Separate taxation halves the household-based limits for each spouse (art. 78(14)
 
 **Losses.** Carry-forward of net securities losses and rental losses is governed by CIRS art. 55, which was not read for this skill. This skill does not compute loss carry-forwards; read art. 55 for the case.
 
-**Property gains and the main home.** A gain on the sale of the taxpayer's own permanent home is excluded if the sale proceeds (less the loan repaid) are reinvested in another permanent home in Portugal or the EU/EEA between 24 months before and 36 months after the sale, the intention is declared in the return for the year of sale, and the home sold was the tax domicile for the 12 months before (art. 10(5)). A partial reinvestment excludes a proportional part of the gain (art. 10(12)). For sales from 1 January 2026 to 31 December 2029, Decreto-Lei 97/2026 added a second exclusion: gains on the sale of any home are excluded if reinvested within the same window in Portuguese homes let for housing at a rent within the legal caps, with a lease signed within 6 months and kept for at least 36 months in the first 5 years (art. 10(7) to (9)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx
+**Property gains and the main home.** A gain on the sale of the taxpayer's own permanent home is excluded if the sale proceeds (less the loan repaid) are reinvested in another permanent home in Portugal or the EU/EEA between 24 months before and 36 months after the sale, the intention is declared in the return for the year of sale, and the home sold was the tax domicile for the 12 months before (art. 10(5)). A partial reinvestment excludes a proportional part of the gain (art. 10(12)). The relief is lost if the new home is not used as the household's home within 12 months, or if the household's tax domicile is not fixed there (art. 10(6)(a) and (e)). For sales from 1 January 2026 to 31 December 2029, Decreto-Lei 97/2026 added a second exclusion: gains on the sale of any home are excluded if reinvested within the same window in Portuguese homes let for housing at a rent within the legal caps, with a lease signed within 6 months and kept for at least 36 months in the first 5 years, and the new property not sold within 5 years (art. 10(7) to (9)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx
 
 ## Deadlines and filing
 
@@ -130,21 +132,21 @@ Separate taxation halves the household-based limits for each spouse (art. 78(14)
 | AT shows the e-fatura deduction totals | By 15 March 2027; complaints by 31 March 2027 | CIRS art. 78-B(6) and (7) |
 | Modelo 3 return for 2026 income | 1 April to 30 June 2027, online only, whether or not 30 June is a working day | CIRS art. 60(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx |
 | Foreign tax credit not yet known | Deadline extended to 31 December 2027, if AT is told within the normal period | CIRS art. 60(3) and (4) |
-| Payment of the balance due | By 31 August 2027 when AT issues the assessment in the normal period | CIRS art. 97(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx |
+| Payment of the balance due | By 31 August 2027 when AT issues the assessment in the normal period (art. 77(a)); by 31 December 2027 when it is issued in the art. 77(c) period | CIRS art. 97(1)(a) and (c): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx |
 | Correction of a filed return | Within 30 days of a fact that changes the income declared | CIRS art. 60(2) |
 
 **The return.** Modelo 3 with the annexes the income needs: Anexo A (employment and pensions), E (capital income, only if aggregating or not withheld), F (rent), G (capital gains), H (tax benefits and deductions), J (foreign income, see `pt-foreign-source-treaties`), L (NHR or IFICI, see `pt-nhr-ifici`).
 
 **IRS automatico.** For taxpayers in the group set by regulation, AT prepares a provisional return and assessment from the data it holds (art. 58-A(1)). The taxpayer can confirm it, and it then counts as filed (art. 58-A(2)). If they neither confirm nor file by 30 June, it becomes final on that date; married couples are then taxed separately (art. 58-A(3) and (4)(b)). Anyone whose real situation differs from the draft must file a normal return (art. 58-A(9)). The draft does not cover holders of crypto assets reported under art. 57(7) (art. 58-A(12)).
 
-**Who need not file.** A person whose only income is taxed at the art. 71 final rates and who does not aggregate it, or whose salary and pensions total EUR 8,500 or less with no withholding (art. 58(1)). This does not apply to anyone opting for joint taxation (art. 58(3)(a)).
+**Who need not file.** A person whose only income is taxed at the art. 71 final rates and who does not aggregate it, or whose salary and pensions total EUR 8,500 or less with no withholding (art. 58(1)). The exemption does not apply to anyone who opts for joint taxation, has income in kind, or holds crypto assets reported under art. 57(7) (art. 58(3)(a), (c) and (e)).
 
 ## Penalties and interest
 
 - **Late or missing return:** fine of EUR 150 to EUR 3,750 (RGIT art. 116(1)). Not applicable when the person was exempt from filing under CIRS art. 58 (RGIT art. 116(3)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx
 - **Waiver of the fine:** no fine if the person has had no tax conviction and no waiver or reduced fine in the previous five years (RGIT art. 29(1)), or if there was no loss of revenue and the failure is put right (RGIT art. 29(2)). A late return always counts as a loss of revenue if tax was not paid on time (art. 29(3)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit29.aspx
-- **Compensatory interest (juros compensatórios):** due when the taxpayer's fault delays the assessment, counted day by day from the filing deadline. A late return always counts as a delay. Rate: the legal interest rate under art. 559(1) of the Civil Code (LGT art. 35(1), (3), (6), (10)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx
-- **Late payment interest (juros de mora):** due from the payment deadline until payment, at the rate set for debts to the State (LGT art. 44). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx
+- **Compensatory interest (juros compensatórios):** due when the taxpayer's fault delays the assessment, counted day by day from the filing deadline. A late return always counts as a delay. Rate: the legal interest rate under art. 559(1) of the Civil Code (LGT art. 35(1), (3), (6), (10)), which Portaria 291/2003 sets at 4% a year. Capped at 180 days for an error shown in the return (LGT art. 35(7)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx
+- **Late payment interest (juros de mora):** due from the payment deadline until payment, at the rate set for debts to the State (LGT art. 44(1) to (3)). The IGCP fixes that rate each year: 7.221% from 1 January 2026 (Aviso 18/2026/2). A balance for 2026 income falls due in 2027, so the 2027 rate applies; it is published around January 2027. Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt44.aspx
 - **Long-lease rent rates lost:** if a lease that got the reduced rate ends early through the landlord's fault, the reduction is lost from the start of the lease and the difference is paid with compensatory interest (CIRS art. 72(20)).
 
 ## Cross-border points
@@ -270,12 +272,16 @@ expected:
 | Lei 73-A/2025, 2026 State Budget (art. 71 amends CIRS art. 68, 70, 78-F; in force 1 January 2026) | https://files.diariodarepublica.pt/1s/2025/12/25002/0000200271.pdf | 2026-10-22 |
 | RGIT art. 116 and 29, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx | 2026-10-22 |
 | LGT art. 35 and 44, interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-22 |
-| Portaria 480-A/2025/1, IAS 2026 = EUR 537.13 | diariodarepublica.pt (detail page did not load; figure seen only in the search result summary) | 2026-10-22 |
+| Portaria 480-A/2025/1, IAS 2026 = EUR 537.13 (art. 2), from 1 January 2026 (art. 4) | https://diariodarepublica.pt/dr/detalhe/portaria/480-a-2025-993056222 | 2026-10-23 |
+| Aviso 18/2026/2 (IGCP), late payment interest 7.221% from 1 January 2026 | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-23 |
+| Portaria 291/2003, legal interest rate 4% (AT copy) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/portaria_291_de_8_de_abril_de_2003_serie_i_b.pdf | 2026-10-23 |
+| CIRS art. 78-A to 78-F, deductions from the tax (one page per article) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs78e.aspx | 2026-10-23 |
 
 Not yet confirmed:
 
-- The IAS for 2026 (EUR 537.13, Portaria 480-A/2025/1). The Diário da República page did not render; the figure was seen only in a search summary of that page. The specific deduction (EUR 4,587.09), the IRS Jovem cap (EUR 29,542.15) and the minimum existence thresholds depend on it.
-- The current legal interest rate (Civil Code art. 559) and the 2026 late payment interest rate. Neither page was read, so no figure is given.
+- That no portaria has replaced Portaria 291/2003 (4% legal interest). The AT copy of the portaria was read; its current status was not checked on the Diário da República.
+- The late payment interest rate for 2027, which applies to a 2026 balance paid late. The IGCP had not published it on 2026-10-23.
+- Juros indemnizatórios (interest AT pays on overpaid tax, LGT art. 43). The AT page did not load, so the rate is not given.
 - How the 2026 rent deduction cap of EUR 900 (Decreto-Lei 97/2026, art. 15(1)) interacts with the higher limits for low incomes in art. 78-E(4), which Lei 36/2024 phases in at 75% for 2026. Use EUR 900 unless taxable income is low, and check AT's simulator for a low-income tenant.
 - The loss carry-forward periods of CIRS art. 55 were not read today.
 - CIRS art. 68(2) still refers to EUR 8,059 (the 2025 first band limit) after the 2026 change to the table. AT's method in practice uses the band limits of the current table, as in the examples; this is a drafting leftover in the law, not confirmed by AT guidance.
