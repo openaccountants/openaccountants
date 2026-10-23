@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: se-cross-border
 partial:
-  IT-IND: "se-income-tax (sole traders' business income) and se-capital-gains still carry tax year 2025 figures; se-capital-gains gives the 2025 ISK rate and leaves out the SEK 300,000 tax-free amount"
+  IT-IND: "no skill covers the 3:12 rules for owners of closely held companies (dividends and gains on qualified shares), which change from income year 2026"
 ---
 
 # Sweden: tax pack
