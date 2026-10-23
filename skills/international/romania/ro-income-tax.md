@@ -110,7 +110,7 @@ Tax is 10% of the result (art. 123(1)).
 | Non-declaration penalty (tax undeclared or declared wrongly, then assessed by ANAF) | 0.08% a day, instead of the 0.01% penalty; cut by 75% if paid by the due date in the assessment; not charged under RON 50; capped at the tax | art. 181(1)-(2), (6), (11); art. 176(4) |
 | Fine for an individual's late Declarația unică | RON 50 to 500 | art. 336(3) |
 
-Where ANAF assesses the tax after a return was not filed, only the non-declaration penalty applies, not the fine (art. 181(9)).
+Where a tax inspection sets the tax because no return was filed, only the non-declaration penalty applies, not the fine (art. 181(9)).
 
 ## Cross-border points
 

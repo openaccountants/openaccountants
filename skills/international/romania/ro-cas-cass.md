@@ -28,7 +28,7 @@ The law is Legea 227/2015 (Codul fiscal, "the Fiscal Code"), Title V, and Legea 
   - people insured in their own professional pension system who are not required to join the public pension system;
   - pensioners.
   An employee is not exempt from CAS on PFA income. The salary exemption in art. 150(2) covers only intellectual property income.
-- **CASS exemptions.** The categories in art. 154(1) (for example pupils and students up to age 26, pregnant women and new mothers, cancer patients in national programmes) are exempt. Under art. 154(2), people in categories (d) to (ș) still pay CASS on income outside their exemption. Check art. 154 before applying any exemption.
+- **CASS exemptions do not cover PFA income.** The art. 154(1) categories are insured without paying, but none of them removes CASS on income from independent activities. Pupils and students up to age 26 (letter a) and young people from the child protection system (letter b) pay CASS on that income under the text of their own letter. People with disabilities (letter e, exempt only on their disability payments), cancer patients in national programmes (letter f), pregnant women and new mothers (letter g) and the other categories from (d) to (ș) pay CASS on any income outside their exemption (art. 154(2)). For a PFA, being in category a, b, e or f in 2025 only removes the 6-wage floor top-up for 2026 (art. 174(8)(a)).
 - **Out of scope.** Employee and employer contributions on salaries (ro-payroll-social). CASS on rent, investments and other non-business income, which uses fixed bases of 6, 12 or 24 minimum wages (art. 170(2)-(3)): see ro-employee-income-tax. Intellectual property and sports contracts where the payer withholds contributions (art. 151(5)-(11), art. 174(4)-(5)). Agricultural income.
 
 ## Rates, bands and thresholds
@@ -48,7 +48,7 @@ All thresholds for 2026 use the minimum wage in force on 1 January 2026, RON 4,0
 | CASS base | actual net income or norm, all independent sources added | 2026 | art. 170(1) |
 | CASS cap: 72 minimum wages | base RON 291,600; CASS at most RON 29,160 | 2026 | art. 170(1); ANAF Brașov summary, p. 38 (cap raised from 60 to 72 wages by Legea 239/2025 and Legea 141/2025) |
 | CASS floor: 6 minimum wages | base RON 24,300; CASS at least RON 2,430 | 2026 | art. 174(6) |
-| CASS opt-in (no income, a loss, or starting during the year) | 10% of 6 wages, RON 2,430; 25% when the option is filed, 75% by 25 May of the next year | 2026 | art. 180(1)-(2), art. 182 |
+| CASS opt-in (no income, a loss or zero net income in the previous year, or starting during the year) | 10% of 6 wages, RON 2,430; 25% when the option is filed, 75% by 25 May of the next year | 2026 | art. 180(1)-(2), art. 182 |
 | Early-payment discount | up to 10%, only if the annual budget law sets it | 2026 | art. 151(14), art. 174(17) |
 
 ## The taxable base
@@ -168,7 +168,7 @@ expected:
 1. What was your 2026 net income from each independent activity (real system), or your norm and the months worked?
 2. Do you also have a salary, a pension, rent or investment income? A salary or pension removes the CASS floor top-up. A pension removes CAS.
 3. Are you insured in your own professional pension system instead of the public one, or in another EU state (A1 certificate)?
-4. Are you in a CASS-exempt category under art. 154 (for example a student under 26, pregnant or a new mother)?
+4. In 2025, were you a pupil or student under 26, from the child protection system, a person with a disability under Legea 448/2006, or a cancer patient in a national programme? That removes the CASS floor top-up for 2026 (art. 174(8)); it does not remove CASS on your PFA income.
 5. Do you want a CAS base above the minimum, or to opt in to CAS below 12 minimum wages, for pension rights?
 6. Did you opt in to CASS earlier in 2026, or pay any CAS or CASS before the deadline?
 
