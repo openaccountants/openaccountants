@@ -5,12 +5,12 @@ jurisdiction: NL
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.1
+last_updated: 2026-10-23
+version: 0.2
 verified_by: pending
 ---
 
-# Netherlands: cross-border tax for people and companies (2026) v0.1
+# Netherlands: cross-border tax for people and companies (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure below comes from wetten.overheid.nl or belastingdienst.nl, read on 22 October 2026. It prepares working papers; it is not authority to file or pay.
 
@@ -30,7 +30,7 @@ Tax year: the calendar year. 2026 figures apply to 1 January to 31 December 2026
 
 - A **resident** (binnenlands belastingplichtige) is taxed on worldwide income in box 1 (work and home), box 2 (substantial interest, 5% or more of a company) and box 3 (savings and investments).
 - A **non-resident** (buitenlands belastingplichtige) is taxed only on Dutch income in each box (Wet IB 2001 art. 7.1).
-- A **qualifying non-resident** (kwalificerende buitenlandse belastingplichtige) lives in another EU country, Liechtenstein, Norway, Iceland, Switzerland or on Bonaire, Sint Eustatius or Saba, pays Dutch wage or income tax on at least 90% of world income, and sends an income statement from the home tax authority. They get the deductions a resident would (Wet IB 2001 art. 7.8; Belastingdienst).
+- A **qualifying non-resident** (kwalificerende buitenlandse belastingplichtige) lives in another EU country, Liechtenstein, Norway, Iceland, Switzerland or on Bonaire, Sint Eustatius or Saba, and pays Dutch wage or income tax on all or nearly all (at least 90%) of world income. They get the deductions a resident would. An income statement from the home tax authority is needed only if the inspector asks for it (Wet IB 2001 art. 7.8(6), text valid in 2026).
 
 **Part-year (split year).** There is no separate split-year election. A person who arrives or leaves during the year is resident for part of the year and non-resident for the rest, and files one M return covering both parts (see Deadlines).
 
@@ -69,7 +69,7 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 
 - **Box 1:** profit from a business run through a Dutch permanent establishment or permanent representative, wages for work done in the Netherlands, result from other work done in the Netherlands, and certain periodic payments such as Dutch pensions whose premiums were deducted (art. 7.2).
 - **Box 2:** income from a substantial interest in a company established in the Netherlands (art. 7.1(b)).
-- **Box 3:** a deemed return on Dutch assets only: Dutch real estate, rights relating to it, and profit shares in a business managed in the Netherlands, less related debts (art. 7.7). A non-resident's foreign bank accounts and shares are outside it.
+- **Box 3:** a deemed return on Dutch assets only: Dutch real estate, rights relating to it, and profit shares in a business managed in the Netherlands, less related debts (art. 7.7). A non-resident's foreign bank accounts and shares are outside it. Every non-resident gets the box 3 tax-free allowance for these assets (Belastingdienst, Fiscale informatie 2026, "U woont buiten Nederland").
 
 **Arriving: the expat scheme.** An employee recruited or seconded from abroad, who lived more than 150 km from the Dutch border for more than 16 of the 24 months before the first working day in the Netherlands (Handboek 2026 §19.4), and who meets the salary norm, can receive up to 30% of wage including the allowance tax-free for at most 60 months. The detail, including the cap, part years and the annual salary test, is in [netherlands-30-percent-ruling](netherlands-30-percent-ruling.md). The headline history, from the Handboek Loonheffingen 2026 §19.4:
 
@@ -85,6 +85,7 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 ## Deadlines and filing
 
 - **Year of arrival or departure: the M return.** Someone who lived in the Netherlands for only part of the year because of immigration or emigration files the M return (migration) for that year, online in Mijn Belastingdienst under "Aangifte inkomstenbelasting voor belastingplichtigen die een deel van het jaar buiten Nederland wonen", or on a paper M form requested from the Belastingdienst. An entrepreneur filing on paper also completes the M annual accounts booklet ([Belastingdienst M return](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/deels-niet-in-nederland-wonen-m-aangifte-doen)).
+- **M return deadline.** The 2025 M return could be filed online from 1 May 2026, and the Belastingdienst says it can be filed until 1 July 2026 ([Belastingdienst M return notice](https://sorry.belastingdienst.nl/mbd/storing/nog-geen-aangifte-doen)). Detail in [nl-double-tax-relief](nl-double-tax-relief.md).
 - **Assessment period.** The Belastingdienst has 3 years to impose the final assessment; for 2025 that is 31 December 2028, extended by any filing extension granted (same page).
 - **Protective assessment.** It is issued after the M return for the emigration year has been filed ([Belastingdienst conserverende aanslag](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/conserverende-aanslag-bij-emigratie)).
 - **Payment deferral.** On emigration to an EU or EEA country, deferral is automatic and no collection interest runs during it. Otherwise apply for it as the assessment explains; the Belastingdienst can ask for security (bank guarantee, mortgage or pledge) when the person moves outside the EU. A move from an EU country on to a non-EU country withdraws an automatic deferral for the box 2 and own-home insurance parts; reapply in writing (same page).
@@ -92,8 +93,8 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
   - Pensions and annuities: deferral for at most 10 years, then remission on request if the rules were kept. Surrendering the pension or annuity in that period makes it payable.
   - Box 2 shares, emigration before 15 September 2015 at 15:15: 10 years' deferral, then remission on request if the company still exists and the person still owns the shares.
   - Box 2 shares, deregistration from the municipality after 15 September 2015 at 15:15: lifetime deferral, no remission after 10 years. A sale, a dividend or the end of the business must be reported and makes the assessment (partly) payable.
-- **Non-residents with Dutch income** file a non-resident income tax return for the year. Qualifying non-residents add an income statement from their home tax authority unless one was already sent in an earlier year and nothing has changed ([Belastingdienst income statement](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/inkomensverklaring-aangifte-inkomstenbelasting-buitenlandse-belastingplichtigen)).
-- **Dividend tax and conditional withholding tax** are withheld when the payment is made available, then declared and paid on a return. Where the law requires payment on a return for a period, payment is due within one month after the end of that period (AWR art. 19(1); Wet DB art. 7; Wet bronbelasting 2021 art. 5.1). Dividend tax already withheld on the same dividend is credited against the conditional withholding tax (Wet bronbelasting 2021 art. 5.2).
+- **Non-residents with Dutch income** file a non-resident (C) income tax return for the year by the date in the invitation letter ([Belastingdienst, uitstel aangifte buitenland](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/uitstel-aanvragen-belastingaangifte-buitenland-hoe-doe-ik-dat)). Without an invitation, they must file if the tax due exceeds the assessment threshold (€57 for 2025) ([Belastingdienst, aangifte buitenlands belastingplichtige](https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/buitenlands-belastingplichtig-hoe-doe-ik-aangifte-inkomstenbelasting)). Qualifying non-residents send an income statement from their home tax authority only if the inspector asks (Wet IB 2001 art. 7.8(6)).
+- **Dividend tax and conditional withholding tax** are withheld when the payment is made available, then declared and paid on a return. Dividend tax: return and payment within one month after the dividend is made available (AWR art. 19(3)). Conditional withholding tax: one return a year for the calendar year, filed and paid within one month after the year ends (Wet bronbelasting 2021 art. 5.1(3); AWR art. 19(1); Belastingdienst). Detail in [nl-dividend-withholding](nl-dividend-withholding.md). Dividend tax already withheld on the same dividend is credited against the conditional withholding tax (Wet bronbelasting 2021 art. 5.2).
 
 ## Penalties and interest
 
@@ -107,7 +108,7 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 ## Cross-border points
 
 - **Treaty tie-breaker.** Where both states treat a person as resident, the treaty decides, usually in the order permanent home, centre of vital interests, habitual abode, nationality. Dutch law follows the outcome: becoming treaty-resident elsewhere is itself a deemed disposal of a substantial interest (Wet IB 2001 art. 4.16(1)(h)). For a company, a Dutch-incorporated BV whose management sits abroad stays Dutch under art. 2(5) Wet Vpb, and the treaty decides which state may tax.
-- **Relief method.** The Netherlands gives relief after computing tax on worldwide income: broadly an exemption-type reduction for foreign employment and business income, and a credit for foreign withholding on dividends, interest and royalties, under the applicable treaty or the unilateral decree. Check the treaty article by article before computing.
+- **Relief method.** The Netherlands gives relief after computing tax on worldwide income: an exemption-type reduction for foreign employment and business income, and a credit for foreign withholding on dividends, interest and royalties, under the applicable treaty or the unilateral decree (Besluit voorkoming dubbele belasting 2001). Method, formulas and treaty dividend rates: [nl-double-tax-relief](nl-double-tax-relief.md).
 - **Dividend tax relief.** Withholding is not required on distributions to a corporate shareholder established in the EU, the EEA, or a treaty state with a dividend article, if the holding would qualify for the participation exemption had the shareholder been Dutch, subject to anti-abuse conditions (Wet DB art. 4(2) and (3)). Treaty rates apply otherwise.
 - **Conditional withholding tax** applies to interest, royalties and dividends paid by a Dutch entity to an affiliated entity (a qualifying interest, meaning decisive influence) in a low-tax jurisdiction, and in some abuse cases. The lists are published each year on overheid.nl ("Overzicht laagbelastende landen 2026").
 - **EU social security.** Within the EU, EEA and Switzerland, Regulation (EC) 883/2004 decides which single country's social security applies, normally the country where the work is done, with A1 certificates for postings. A non-resident who is not insured in the Netherlands pays only the 8.10% tax part of the first box 1 band, not the 27.65% national insurance part. Payroll treatment is in [nl-payroll-tax](nl-payroll-tax.md).
@@ -197,6 +198,11 @@ expected:
 | Belastingdienst, Conserverende aanslag bij emigratie | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/conserverende-aanslag-bij-emigratie | 2026-10-22 |
 | Belastingdienst, Aangifte doen over het jaar van emigratie of immigratie (M return) | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/deels-niet-in-nederland-wonen-m-aangifte-doen | 2026-10-22 |
 | Belastingdienst, Inkomensverklaring voor kwalificerend buitenlands belastingplichtigen | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/inkomensverklaring-aangifte-inkomstenbelasting-buitenlandse-belastingplichtigen | 2026-10-22 |
+| Belastingdienst, notice on the 2025 M return (online from 1 May, until 1 July 2026) | https://sorry.belastingdienst.nl/mbd/storing/nog-geen-aangifte-doen | 2026-10-23 |
+| Belastingdienst, Aangifte inkomstenbelasting als buitenlands belastingplichtige | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/buitenlands-belastingplichtig-hoe-doe-ik-aangifte-inkomstenbelasting | 2026-10-23 |
+| Belastingdienst, Uitstel aanvragen belastingaangifte buitenland | https://www.belastingdienst.nl/wps/wcm/connect/nl/buitenland/content/uitstel-aanvragen-belastingaangifte-buitenland-hoe-doe-ik-dat | 2026-10-23 |
+| Belastingdienst, Fiscale informatie 2026, U woont buiten Nederland | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/u_woont_buiten_nederland | 2026-10-23 |
+| Belastingdienst, Aangifte doen en betalen bronbelasting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/aangifte-doen-en-betalen-+bronbelasting | 2026-10-23 |
 | Belastingdienst, Box 1 uitleg en tarieven | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/inkomstenbelasting/heffingskortingen_boxen_tarieven/boxen_en_tarieven/box_1/box_1 | 2026-10-22 |
 | Belastingdienst, Expat Scheme (30% facility) | https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility | 2026-10-22 |
 | Belastingdienst, Handboek Loonheffingen 2026 (March 2026), §19.4 | https://download.belastingdienst.nl/belastingdienst/docs/handboek-loonheffingen-lh0221t61fd.pdf | 2026-10-22 |
@@ -204,4 +210,4 @@ expected:
 | Belastingdienst, Overzicht percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-10-22 |
 | Belastingdienst, Invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
 
-Not yet confirmed: the filing deadline for the 2026 M return and for the non-resident return (not stated on the pages read); the return period for dividend tax and conditional withholding tax (the one-month payment rule in AWR art. 19(1) runs from the end of a period set by ministerial regulation, not read); whether non-qualifying non-residents get the box 3 tax-free allowance; the final 2027 expat salary norm and 2027 WNT cap; the relief method under the Besluit voorkoming dubbele belasting 2001 and individual treaties.
+Not yet confirmed: the filing deadlines for 2026 M and non-resident returns (set in the 2027 invitation letters); the final 2027 expat salary norm and 2027 WNT cap.
