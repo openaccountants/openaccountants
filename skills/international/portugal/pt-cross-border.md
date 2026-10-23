@@ -16,7 +16,7 @@ This skill answers four questions. Is the person or company resident in Portugal
 
 Sibling skills, which this one links to and does not repeat:
 
-- `pt-foreign-source-treaties`: foreign income of a Portuguese resident, the foreign tax credit (CIRS art. 81) and Anexo J. Tax year 2025.
+- `pt-foreign-source-treaties`: foreign income of a Portuguese resident, the foreign tax credit (CIRS art. 81) and Anexo J. Tax year 2026.
 - `pt-nhr-ifici`: the old NHR regime and IFICI (20% rate), the activity lists, the registration steps. This skill only runs the IFICI entry test for a new arrival.
 - `pt-irs-employees-investment`: the 2026 IRS bands, the specific deductions and the resident computation. The band table below is copied from there and was re-read today.
 - `pt-income-tax`: self-employed income (Category B). Tax year 2025.

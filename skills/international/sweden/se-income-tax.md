@@ -89,7 +89,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ### Refusal catalogue
 
 - **R-SE-1 -- Aktiebolag (AB) instead of enskild firma**: Trigger: client operates through an AB (limited company). Message: "This skill covers enskild firma (sole proprietorship) only. AB taxation follows the corporate income tax rules (20.6% bolagsskatt) and different filing forms. Please use a separate skill or consult an auktoriserad revisor."
-- **R-SE-2 -- 3:12 rules (fåmansbolag)**: Trigger: client has a closely held company and asks about dividend taxation under 3:12 rules. Message: "The 3:12 rules for fåmansbolag are outside the scope of this skill. Please consult an auktoriserad revisor."
+- **R-SE-2 -- 3:12 rules (fåmansbolag)**: Trigger: client has a closely held company and asks about dividend taxation under 3:12 rules. Message: "The 3:12 rules for fåmansbolag are outside the scope of this skill. Use se-closely-held-company-312."
 - **R-SE-3 -- International income**: Trigger: client has significant foreign-source income or asks about tax treaty application. Message: "International income and tax treaty questions are outside this skill's scope. Please consult a qualified tax advisor."
 - **R-SE-4 -- Handelsbolag / kommanditbolag**: Trigger: client operates through a partnership. Message: "Partnership taxation has specific rules for income allocation between partners. This skill covers enskild firma only."
 
@@ -596,7 +596,7 @@ EC10 -- Negative räntefördelning ignored. Mandatory when thresholds exceeded.
 - NEVER ignore mandatory negative räntefördelning
 - NEVER apply jobbskatteavdrag to capital income
 - NEVER present calculations as definitive -- always label as estimated
-- NEVER advise on international income, 3:12 rules, or complex restructuring -- escalate
+- NEVER advise on international income or complex restructuring -- escalate. For 3:12 rules use se-closely-held-company-312
 
 ### Sources
 
