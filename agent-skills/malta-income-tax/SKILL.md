@@ -277,15 +277,61 @@ The amounts in these cases are invented. The rates come from the sources linked 
 - Tax: €31,625 × 25% − €3,400 = €4,506.25.
 - Balance due by 30 June 2027: €4,506.25 − €3,500 = €1,006.25.
 
+```oa-check
+name: Case 1, single self-employed, basis year 2026
+inputs:
+  fees: 45000
+  expenses: 13000
+  laptop_cost: 1500
+  provisional_paid: 3500
+steps:
+  - wear_and_tear: laptop_cost / 4
+  - chargeable: fees - expenses - wear_and_tear
+  - tax: chargeable * 0.25 - 3400
+  - balance_due: tax - provisional_paid
+expected:
+  chargeable: 31625
+  tax: 4506.25
+  balance_due: 1006.25
+```
+
 **Case 2: married couple with two children, basis year 2026 compared with 2025.**
 - Facts: both spouses are EU nationals and file jointly. Their children, aged 10 and 14, live with them. Chargeable income is €40,000.
 - 2026, table (a)(iii): €40,000 × 25% − €6,575 = €3,425.
 - The same income in 2025, married table: €40,000 × 25% − €4,550 = €5,450.
 
+```oa-check
+name: Case 2, married with two children, 2026 table (a)(iii) against the 2025 married table
+inputs:
+  chargeable: 40000
+steps:
+  - tax_2026: chargeable * 0.25 - 6575
+  - tax_2025: chargeable * 0.25 - 4550
+  - saving: tax_2025 - tax_2026
+expected:
+  tax_2026: 3425
+  tax_2025: 5450
+  saving: 2025
+```
+
 **Case 3: part-time self-employed.**
 - Facts: a full-time employee, registered with Jobsplus, also does part-time design work for other clients. The work is registered and has no employees. Net profit in 2026 is €15,000.
 - Final tax: €12,000 × 10% = €1,200, paid by 30 April 2027 with the statement of accounts.
 - The excess €3,000 goes into the 2026 return at progressive rates.
+
+```oa-check
+name: Case 3, part-time self-employed, 10% final tax capped at 12,000
+inputs:
+  profit: 15000
+  cap: 12000
+steps:
+  - at_final_rate: min(profit, cap)
+  - final_tax: at_final_rate * 0.10
+  - excess_to_return: max(profit - cap, 0)
+expected:
+  final_tax: 1200
+  excess_to_return: 3000
+```
 
 **Case 4: residential let on the 15% option.**
 - Facts: a two-bedroom flat is let for all of 2026 on a registered five-year long private residential lease, at €18,000 a year.

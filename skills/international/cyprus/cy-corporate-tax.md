@@ -1,13 +1,16 @@
 ---
 name: cy-corporate-tax
 description: "Cyprus corporate income tax for tax year 2026: companies resident in Cyprus (managed and controlled in Cyprus, or incorporated in Cyprus unless a treaty says otherwise) and Cyprus permanent establishments of foreign companies. Covers the 15% rate from 1 January 2026 (Law 244(I)/2025), the taxable base, the dividend and securities-gains exemptions, notional interest deduction, IP box, the 7-year loss carry-forward, 75% group relief, interest limitation (30% EBITDA, EUR 3m), provisional tax on 31 July and 31 December, the IR4 return, penalties, Special Defence Contribution as it stands for 2026 (deemed distribution kept only for 2024 and 2025 profits) and withholding on outbound payments. Trigger on: Cyprus corporate tax, 15% Cyprus, IR4, TD4, provisional tax Cyprus, deemed dividend distribution, NID Cyprus, Cyprus group relief. Out of scope: individuals (cyprus-income-tax), domicile and SDC for individuals (cy-non-dom), VAT (cyprus-vat-return), payroll (cyprus-payroll), social insurance (cyprus-social-contributions), planning (cyprus-tax-optimization)."
-jurisdiction: CY
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: CY
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Cyprus corporate income tax (tax year 2026)
@@ -189,3 +192,23 @@ expected:
 The gov.cy PDFs refuse automated downloads (HTTP 403); they were read in a browser on 2026-10-22. Article references to the laws are to the Greek consolidated texts on CyLaw, which are not the official gazette.
 
 Not yet confirmed: the 10-year government bond yields used for the 2026 NID reference rate; the Capital Gains Tax rate (not read for this skill); the name of the e-filing portal for the IR4; whether any decree has extended the 2025 or 2026 filing dates; the number and in-force date of the Pillar Two law.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

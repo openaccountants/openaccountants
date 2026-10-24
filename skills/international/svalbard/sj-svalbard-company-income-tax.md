@@ -2,13 +2,16 @@
 name: sj-svalbard-company-income-tax
 description: >
   Svalbard company income-tax scope and rate reference for 2026. Covers local office and management, nonresident business duration, property income, allocation between Svalbard and mainland activity, ordinary sixteen-percent taxation and the special twenty-two-percent profit band. Uses the enacted annual decision rather than a budget proposal and includes numerical examples showing how payroll and physical assets affect the higher-rate slice. Distinguishes companies from sole proprietors and employee residence. Filing guidance is included with scope limits. Formation, detailed deductions, international relief, withholding procedures and independent accountant review remain outstanding.
-jurisdiction: SJ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SJ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Svalbard: company income tax in 2026
@@ -66,3 +69,23 @@ The annual decision's section 6 specifies **20%** for dividends within its cross
 ## Verification limits
 
 Svalbard only; Jan Mayen is outside this Guide. Checked 22 October 2026 against the consolidated Act and enacted annual decision. Formation, accounts, detailed deductions and losses, special company regimes, withholding administration, VAT/customs, treaties, payment and independent accountant review remain outstanding. These three initial topics do not constitute comprehensive jurisdiction coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

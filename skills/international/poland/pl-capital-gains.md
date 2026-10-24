@@ -3,13 +3,12 @@ name: pl-capital-gains
 description: "Polish tax on investment income and capital gains of individuals for tax year 2026: the 19% flat tax on interest and dividends (PIT Act art. 30a) and on gains from shares, securities, derivatives and fund units (art. 30b), 19% on crypto-asset gains with unused costs carried forward without limit (art. 30b ust. 1a), losses on securities over five years, 19% on property sold within five years of the end of the year of purchase (art. 30e) and the housing relief (art. 21 ust. 1 pkt 131), credit for foreign tax (art. 30a ust. 9, art. 30b ust. 5a and 5e), the 4% solidarity levy, and the PIT-38 and PIT-39 returns due 30 April 2027. Trigger on: Belka tax, podatek od zysków kapitałowych, PIT-38, PIT-39, PIT-8C, kryptowaluty podatek, sprzedaż mieszkania przed 5 latami, ulga mieszkaniowa. Out of scope: business income (pl-income-tax), non-residents and exit tax (pl-cross-border), companies (pl-cit-corporate-tax)."
 version: 1.1
 jurisdiction: PL
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -171,3 +170,23 @@ expected:
 | Ministry of Finance, PIT forms (PIT-38, PIT-39) | https://www.podatki.gov.pl/podatki-osobiste/pit/formularze-pit | 2026-10-23 |
 
 Not yet confirmed: treaty treatment of gains is described in general terms; check the specific treaty.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

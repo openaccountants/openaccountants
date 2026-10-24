@@ -1,13 +1,16 @@
 ---
 name: lu-corporate-tax
 description: "Use this skill for Luxembourg corporate income tax on resident companies (SA, SARL, SARL-S, SAS, SCA, SE, cooperatives) and on Luxembourg permanent establishments of foreign companies, for tax year 2026. Covers impôt sur le revenu des collectivités (IRC) at 14% / 16% with the EUR 175,000 to 200,000 band, the 7% contribution au fonds pour l'emploi, municipal business tax (impôt commercial communal, ICC) with the EUR 17,500 allowance and the Luxembourg City 225% multiplier, the combined 23.87% rate, net wealth tax and minimum net wealth tax, participation exemption (art. 166 LIR), 17-year loss carry-forward, fiscal unity (art. 164bis), interest limitation (art. 168bis), CFC rules, filing and quarterly advances, penalties, and dividend withholding tax. Trigger on: 'Luxembourg corporate tax', 'IRC Luxembourg', 'SARL tax', 'Soparfi', 'intégration fiscale'. Out of scope: individuals (luxembourg-income-tax), VAT (luxembourg-vat-return), payroll (luxembourg-payroll), social security (luxembourg-social-contributions), planning (luxembourg-tax-optimization), funds and securitisation vehicles."
-jurisdiction: LU
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: LU
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Luxembourg corporate income tax (tax year 2026)
@@ -301,3 +304,23 @@ The `max` step is a simplification. It holds here because the ordinary tax excee
 | ACD, table of communal ICC rates 2016 to 2026 (Excel, 12 December 2025) | https://impotsdirects.public.lu/content/dam/acd/fr/archive/documentsdivers/taux-ic-2016-2026-12122025.xlsx | 2026-10-22 |
 
 Not yet confirmed: the maximum amount of the astreinte; the due dates of net wealth tax advances; any rounding of the ICC base; payment deferral of exit tax in instalments; the 2027 IRC cut, which is a stated government plan, not yet law.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

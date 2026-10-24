@@ -2,13 +2,16 @@
 name: dm-social-contributions
 description: >
   Dominica Social Security contribution calculations and remittance reference for 2026. Covers employee and employer rates with and without redundancy coverage, the monthly earnings ceiling, capped examples, self-employed contributions and payment dates. Use for Dominica DSS, employer insurance contributions, redundancy contribution classification or self-employed social security. The dated 2026 notice and contribution schedule take precedence over older numerical examples in the FAQ. Coverage status, earnings classification and reciprocal-agreement exemptions need individual verification. Benefit calculations, voluntary contribution eligibility and partial-period payroll mechanics remain outside this draft. Monetary examples use Eastern Caribbean dollars.
-jurisdiction: DM
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: DM
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Dominica social-security contributions: 2026
@@ -50,3 +53,23 @@ For established prior-year earnings of EC$60,000, annual contributions are EC$8,
 ## Self-check and exclusions
 
 Retain the coverage and redundancy classification, earnings reconciliation, ceiling calculation and payment receipt. Confirm age transitions, reciprocal-agreement exemptions, irregular pay and partial periods separately. Voluntary-contributor rates and benefit entitlements are not a substitute for a coverage decision. General research reference; independent review remains pending.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

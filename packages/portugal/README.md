@@ -7,28 +7,33 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `portugal-bookkeeping.md`
-4. `portugal-crypto-tax.md`
-5. `portugal-einvoice.md`
-6. `portugal-financial-statements.md`
-7. `portugal-formation.md`
-8. `portugal-payroll.md`
-9. `portugal-tax-optimization.md`
-10. `portugal-vat-return.md`
-11. `pt-corporate-tax.md`
-12. `pt-foreign-source-treaties.md`
-13. `pt-income-tax.md`
-14. `pt-nhr-ifici.md`
-15. `pt-return-assembly.md`
-16. `pt-social-contributions.md`
-17. `pt-vat-return.md`
-18. `eu-vat-directive.md`
-19. `bookkeeping-workflow-base.md`
-20. `einvoice-workflow-base.md`
-21. `payroll-workflow-base.md`
-22. `company-formation-workflow-base.md`
-23. `financial-statements-workflow-base.md`
-24. `crypto-tax-workflow-base.md`
+3. `README.md`
+4. `portugal-bookkeeping.md`
+5. `portugal-crypto-tax.md`
+6. `portugal-einvoice.md`
+7. `portugal-financial-statements.md`
+8. `portugal-formation.md`
+9. `portugal-payroll.md`
+10. `portugal-tax-optimization.md`
+11. `portugal-vat-return.md`
+12. `pt-corporate-tax.md`
+13. `pt-cross-border.md`
+14. `pt-foreign-source-treaties.md`
+15. `pt-income-tax.md`
+16. `pt-irs-employees-investment.md`
+17. `pt-nhr-ifici.md`
+18. `pt-return-assembly.md`
+19. `pt-social-contributions.md`
+20. `pt-transfer-pricing.md`
+21. `pt-vat-return.md`
+22. `eu-vat-directive.md`
+23. `bookkeeping-workflow-base.md`
+24. `einvoice-workflow-base.md`
+25. `payroll-workflow-base.md`
+26. `company-formation-workflow-base.md`
+27. `financial-statements-workflow-base.md`
+28. `transfer-pricing-workflow-base.md`
+29. `crypto-tax-workflow-base.md`
 
 ## Also known as
 

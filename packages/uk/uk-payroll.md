@@ -1,7 +1,7 @@
 ---
 name: uk-payroll
 description: Use this skill whenever asked about UK payroll, PAYE, National Insurance contributions, employer obligations, RTI submissions, statutory payments, or payslip requirements. Trigger on phrases like "PAYE", "National Insurance", "NIC", "Class 1 NI", "employer NI", "employee NI", "RTI", "FPS", "EPS", "real time information", "P45", "P60", "P11D", "statutory sick pay", "SSP", "statutory maternity pay", "SMP", "national minimum wage", "national living wage", "payslip", "tax code", "student loan deduction", "workplace pension", "auto-enrolment", "HMRC payroll", or any question about running payroll in the United Kingdom. ALWAYS read this skill before processing any UK payroll work.
-version: 1.0
+version: 1.1
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-16
@@ -397,7 +397,7 @@ The 2025/26 tax year ran from 6 April 2025 to 5 April 2026 ([2025/26 rates](http
 | SMP and SPP flat rate | £187.18 or 90% of AWE if lower |
 | SSP weekly rate | £118.75 (with 3 waiting days and the LEL test) |
 | Small Employers' Relief recovery | 108.5% (92% otherwise) |
-| Student loan thresholds, Plans 1, 2 and 4 | £26,065; £28,470; £32,745 (postgraduate £21,000) |
+| Student loan thresholds for 2025/26 only, Plans 1, 2 and 4 (for 2026/27 use £26,900; £29,385; £33,795 from the table above) | £26,065; £28,470; £32,745 (postgraduate £21,000) |
 
 - **Minimum wage.** From 1 April 2025 to 31 March 2026 the rates were £12.21 (21 and over), £10 (18 to 20) and £7.55 (under 18 and apprentices) ([NMW rates](https://www.gov.uk/national-minimum-wage-rates)).
 

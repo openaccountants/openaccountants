@@ -2,13 +2,16 @@
 name: gf-space-sector-octroi
 description: >
   French Guiana space-sector import relief reference for operations from August 2026 under territorial deliberations AP-2026-56 and AP-2026-57. Explains the residual octroi rate, continuing regional levy, activity and goods annex requirements, exclusive operational use, service-operator evidence and restrictions on combining exemptions. Includes an illustrative computation and exclusion cases for ordinary logistics and goods with alternative uses. This is a narrow source-cited draft, not automatic eligibility for every space supplier or a complete customs filing manual. Independent review, exact goods classification and current amendment checks remain necessary before application.
-jurisdiction: GF
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: GF
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # French Guiana: space-sector import octroi from August 2026
@@ -48,3 +51,23 @@ For an illustrative qualifying import with confirmed customs value **€100,000*
 A listed mast for an eligible activity still fails this regime if it has an alternative use inconsistent with article 2. Equipment for ordinary warehousing does not qualify merely because launch cargo passes through the warehouse. An import before 1 August 2026 cannot use this decision retrospectively. A failed condition requires assessment under the otherwise applicable tariff and any separately established relief, not an assumed zero rate. [AP-2026-57, arts. 2, 5, 8](https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-57-regime-exo-partielle-activites-spatiales.pdf).
 
 Source-cited draft awaiting independent review. Only the cited illustrative annex entry has been visually verified here; no full classification crosswalk is claimed. Verify the exact row and current amendments for the transaction. Detailed customs filing codes, guarantees, reassessment and appeal procedures are outside this Guide.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

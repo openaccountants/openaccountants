@@ -1,13 +1,16 @@
 ---
 name: cz-employee-income-tax
 description: "Czech personal income tax for employees and other non-business income, tax year 2026. Covers the 15% and 23% rates and the 2026 threshold of CZK 1,762,812 (36 times the average wage), the employment income base (gross pay, no super-gross), monthly advances withheld by the employer, the signed tax declaration, tax credits (taxpayer, spouse, disability, ZTP/P), the child tax benefit and bonus, deductions (pension and life insurance products, mortgage interest, donations), the employer's annual reconciliation versus filing a return, and rental and capital income at a high level. Trigger on: zaměstnanec, mzda, záloha na daň, prohlášení poplatníka, roční zúčtování, sleva na poplatníka, daňové zvýhodnění, daňový bonus, Czech salary tax, employee tax return Czech Republic. Out of scope: self-employed (OSVČ) income tax (cz-income-tax), social and health insurance (cz-social-health), residence and non-residents (cz-cross-border), corporate tax (cz-corporate-income-tax)."
-jurisdiction: CZ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: CZ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Czech Republic: income tax for employees and other non-business income (2026) v0.1
@@ -267,3 +270,23 @@ expected:
 Not yet confirmed:
 - The Financial Administration had not published the filing dates for the 2026 return. The 1 April, 3 May and 1 July 2027 dates come from Tax Code §§ 33 and 136 and the way the Financial Administration counted the 2025 dates.
 - Employee social and health insurance rates. These belong to the SC domain, which has no employee skill yet.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

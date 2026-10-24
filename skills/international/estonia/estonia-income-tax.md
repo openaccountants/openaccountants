@@ -1,10 +1,10 @@
 ---
 name: estonia-income-tax
 description: Use this skill whenever asked about Estonia personal income tax for self-employed individuals (FIE) and resident individuals. Trigger on phrases like "how much tax do I pay in Estonia", "Estonian income tax return", "Form A", "Form E", "tuludeklaratsioon", "TSD", "FIE", "ettevõtluskonto", "entrepreneur account", "basic exemption", "maksuvaba tulu", "tax hump", "social tax", "sotsiaalmaks", "funded pension", "II pillar", "unemployment insurance", "töötuskindlustus", "flat 22% tax", "self-employed tax Estonia", or any question about filing or computing personal income tax for a resident or self-employed (FIE) client in Estonia. Also trigger when preparing or reviewing a Form A / Form E return, computing FIE business deductions, running payroll withholding via TSD, advising on FIE social-tax advance payments, or comparing the entrepreneur-account simplified regime. This skill covers the flat 22% income tax rate, the income-dependent basic exemption and its 2026 reform, social tax, unemployment-insurance premiums, funded (II) pension, the entrepreneur-account regime, payroll (TSD) declarations, filing deadlines, penalties, and interaction with VAT. ALWAYS read this skill before touching any Estonian income tax work.
-version: 0.1
+version: 0.2
 jurisdiction: EE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -71,7 +71,7 @@ All amounts in euros. "2026" is the year in force now; the 2025 column is for th
 | Training expenses plus gifts and donations | Up to 1,200 a year together, not more than taxable income | Same | [Income tax returns for 2025](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025) |
 | III-pillar (supplementary funded pension) contributions | Up to 15% of taxable income, maximum 6,000 a year, outside the 1,200 limit | Same | [III-pillar contributions](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension) |
 | Renting out a dwelling | 20% of the rent deducted automatically; not for short-term accommodation or sub-letting | Same | Income tax returns for 2025 |
-| Dividends taxed at 14/86 before 2025 and passed on to an individual | 7% withheld | 7% withheld | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
+| Dividend a company received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, passed on to an individual. A company's own pre-2025 profit paid out now is taxed at 22/78 | 7% withheld | 7% withheld | [TuMS § 61(68)](https://www.riigiteataja.ee/akt/TuMS) |
 
 The 2026 rate stayed at 22%. Earlier commentary had announced a 24% rate and a separate security tax from 2026; the ETCB 2026 rates list only the 22% rate, so do not use 24% for personal income tax. The 24% figure that does apply is the standard **VAT** rate.
 

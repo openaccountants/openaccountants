@@ -1,13 +1,16 @@
 ---
 name: ro-cross-border
 description: "Use this skill when a person or company crosses Romania's border for tax: tax residence tests for individuals (domicile, centre of vital interests, more than 183 days in any 12 months) and for companies (Romanian legal person or place of effective management), arriving in Romania (the Z015 residence questionnaire, the digital nomad exemption), leaving (the Z017 questionnaire 30 days before departure, the extra three years of worldwide tax after a move to a non-treaty state, and the 16% company exit tax with a five-year instalment option), non-residents with Romanian income, withholding on outbound dividends, interest, royalties and service fees (16%, 10%, 50%), EU directive exemptions and treaty relief. Tax year 2026 (calendar year). Trigger phrases: moving to Romania, leaving Romania, non-resident Romania, expat Romania, exit tax Romania, digital nomad Romania, withholding tax Romania, certificat de rezidenta fiscala. Out of scope: ro-income-tax, ro-corporate-income-tax, ro-payroll-social, ro-cas-cass, ro-vat-return."
-jurisdiction: RO
-category: cross-border
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: RO
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: cross-border
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Romania cross-border: residence, arriving, leaving, non-residents and withholding (2026)
@@ -259,3 +262,23 @@ Not yet confirmed:
 - The Romanian body that issues A1 certificates, and its procedure.
 - The 2026 national minimum gross wage (used only to confirm that no personal deduction applies in Example 1).
 - Treaty withholding rates for individual treaty partners.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

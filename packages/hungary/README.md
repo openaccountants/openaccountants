@@ -7,13 +7,22 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `hu-income-tax.md`
-4. `hu-social-contributions.md`
-5. `hu-vat-return.md`
-6. `hungary-einvoice.md`
-7. `hungary-vat-return.md`
-8. `eu-vat-directive.md`
-9. `einvoice-workflow-base.md`
+3. `README.md`
+4. `hu-capital-and-rental-income.md`
+5. `hu-corporate-tax.md`
+6. `hu-cross-border.md`
+7. `hu-income-tax.md`
+8. `hu-other-independent-income.md`
+9. `hu-payroll.md`
+10. `hu-social-contributions.md`
+11. `hu-transfer-pricing.md`
+12. `hu-vat-return.md`
+13. `hungary-einvoice.md`
+14. `hungary-vat-return.md`
+15. `eu-vat-directive.md`
+16. `einvoice-workflow-base.md`
+17. `payroll-workflow-base.md`
+18. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

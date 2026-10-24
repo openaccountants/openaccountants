@@ -1,13 +1,16 @@
 ---
 name: hu-corporate-tax
 description: "Hungarian corporate income tax (társasági adó, TAO) for tax year 2026: resident companies and Hungarian permanent establishments (telephely) of foreign companies. Covers the 9% flat rate (Tao. tv. 19. §), the taxable base from pre-tax profit, the income minimum, development reserve, participation exemption, the interest limitation rule, loss carry-forward (5 years, 50% cap), group taxation (csoportos társasági adó), the 2629 return due on the last day of the fifth month after year end, monthly or quarterly advances, penalties and late payment interest, outbound withholding, CFC and exit tax. Also short sections on local business tax (HIPA), the innovation contribution and KIVA. Trigger phrases: Hungarian corporate tax, TAO, társasági adó, Kft tax, 9% Hungary, 2629 bevallás, HIPA, KIVA. Out of scope: individual income tax (hu-income-tax), social contributions (hu-social-contributions), VAT (hungary-vat-return), e-invoicing (hungary-einvoice)."
-jurisdiction: HU
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: HU
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Hungary corporate income tax (társasági adó): 2026
@@ -221,3 +224,23 @@ expected:
 | MNB: central bank base rate history | https://www.mnb.hu/Jegybanki_alapkamat_alakulasa | 2026-10-22 |
 
 Not yet confirmed: the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
