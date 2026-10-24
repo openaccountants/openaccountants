@@ -18,7 +18,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Italian VAT return: periodic settlement, LIPE and payment (regime ordinario), tax year 2026 v2.1
-
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Italy.
 
 **What this skill does.** It takes an Italian business under the regime ordinario from its invoices and bank lines to a settled VAT period: which rate applies, which VP row each amount goes in, when the tax is paid by F24, when the LIPE is sent, and what a late or wrong payment costs. Figures come from D.P.R. 633/1972 (the VAT decree) and its Tabella A, D.P.R. 100/1998, D.P.R. 542/1999, D.L. 78/2010, D.Lgs. 127/2015, and the penalty decrees D.Lgs. 471/1997 and 472/1997 as reformed by D.Lgs. 87/2024, all read on Normattiva on 24 October 2026, plus Agenzia delle Entrate pages.
