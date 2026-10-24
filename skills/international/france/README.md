@@ -16,7 +16,7 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 |---|---|---|
 | IT-IND, individual income tax | fr-personal-income-tax, fr-income-tax, fr-capital-gains, fr-rental-income, fr-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | fr-corporate-tax (local business taxes in fr-cfe) | source-cited draft |
-| VAT | france-vat-return | source-cited draft |
+| VAT | france-vat-return (franchise en base, rates, régime réel normal and régime simplifié, CA3 and CA12, self-assessment, EU statements, e-invoicing dates, penalties; e-invoicing formats in france-einvoice) | source-cited draft |
 | SC, social contributions | fr-social-contributions (self-employed), france-payroll (employee and employer contributions) | source-cited draft |
 | PR, payroll withholding | france-payroll | source-cited draft |
 | TP, transfer pricing | france-transfer-pricing | source-cited draft |
@@ -25,6 +25,6 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 ## Official sources
 
 - Code général des impôts (Légifrance): https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069577 (read 2026-10-22)
-- Bulletin officiel des finances publiques (BOFiP): https://bofip.impots.gouv.fr (could not be reached on 2026-10-22)
+- Bulletin officiel des finances publiques (BOFiP): https://bofip.impots.gouv.fr (could not be reached on 2026-10-22; read 2026-10-24)
 - impots.gouv.fr, professional pages: https://www.impots.gouv.fr/professionnel (in maintenance on 2026-10-22)
 - Service-public.gouv.fr, business pages: https://entreprendre.service-public.gouv.fr (read 2026-10-22)
