@@ -14,7 +14,7 @@ depends_on:
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Latvia: personal income tax (2026) v0.2
+# Latvia: personal income tax (2026) v0.3
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the consolidated Law On Personal Income Tax (PIT Law), the law On State Social Insurance, the Law On Taxes and Fees (LTF) and the Administrative Liability Law, in the versions in force for 2026, and from the State Revenue Service (VID) rate and annual return pages. See Sources for how they were read.
 
