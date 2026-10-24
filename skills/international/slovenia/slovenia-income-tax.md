@@ -53,7 +53,7 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 | Other dependent family member | EUR 2,995.83 | 2026 | same FURS notice |
 | Disabled person with 100% impairment and a right to care | EUR 20,196.38 | 2026 | same FURS notice; ZDoh-2 art. 112(1) |
 | Age 70 or over; 10-year volunteer rescuer | EUR 1,665.58 | 2026 | same FURS notice; ZDoh-2 art. 112(8) |
-| Pupil or student (student work) | EUR 3,886.35 | 2026 | same FURS notice; ZDoh-2 art. 113(3) |
+| Pupil or student, on student work through an authorised agency, up to age 26 | EUR 3,886.35 | 2026 | same FURS notice; ZDoh-2 art. 113(3) |
 | Employee up to and including the year they turn 29 | EUR 1,443.50 a year, pro rata per full month employed | 2026 | same FURS notice; ZDoh-2 art. 113(6) |
 | Voluntary supplementary pension premium | up to 24% of employee pension contributions (5.844% of a pension), max EUR 3,224.18 | 2026 | same FURS notice; ZDoh-2 art. 117 |
 | Pension credit | 13.5% of the pension, off the tax | 2026 | ZDoh-2 art. 112(3), https://pisrs.si/pregledPredpisa?id=ZAKO4697 |
@@ -62,7 +62,7 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 | Capital gains after 5 / 10 years held | 20% / 15% | 2026 | ZDoh-2 art. 132(2) |
 | Capital gains after 15 years held | exempt | 2026 | ZDoh-2 art. 96(1) |
 | Interest on EU bank deposits and Slovenian retail bonds issued 2024 to 2026 | first EUR 1,000 a year exempt | 2026 | ZDoh-2 art. 133 |
-| Individual investment account (INR) payout | 15%, final; exempt after 15 years with no payout | 2026 | ZDoh-2 arts. 104.b and 132(3) |
+| Individual investment account (INR) payout | 15%, final; exempt for a payout made at least 15 years after opening (or after the last payout) | from 5 March 2026 | ZDoh-2 arts. 104.b and 132(3); ZINR art. 45 |
 | Rent | 25% final, on rent less 10% standard costs | 2026 | ZDoh-2 arts. 77 and 135.č |
 | Royalties | 10% standard costs; 25% advance tax | 2026 | ZDoh-2 arts. 79 and 130 |
 | s.p. on normed expenses | 20% final | 2026 | ZDoh-2 art. 135.a |
@@ -79,38 +79,39 @@ The band amounts and allowances are indexed each year by a ministerial rule if t
 
 **The general allowance and its taper.** Every resident gets EUR 5,551.93 in 2026, unless another resident claims them as a dependant (art. 111(1)). If total income is up to EUR 17,766.18, the resident also gets 20,832.39 minus 1.17259 times total income. The extra amount falls to nil at EUR 17,766.18 (art. 111(3) and the 2026 FURS notice). Total income means employment, business (but not s.p. income on normed expenses), basic farming, royalty and other income, leaving out exempt income. The law counts the income itself, not the base after contributions (arts. 37 and 111(3)). Business income counts as profit before contributions (art. 111(4)).
 
-**Dependants.** A child counts up to 18. A child up to 26 still counts while in education, not employed and with own income below the dependant allowance. A spouse with no income of their own, and parents living at the same address, can also count (ZDoh-2 art. 115). Only one parent takes the full amount for a child. The other gets any difference, and the amount is split pro rata if the parents do not agree (art. 114(10) and (11)). Only the months the child was actually supported count (art. 114(9)).
+**Dependants.** A child counts up to 18. A child up to 26 still counts while in education, not employed, not in business and with own income below the dependant allowance (student work, scholarships and family pension do not count as own income). A spouse who is not employed, not in business and has own income below the dependant allowance can also count, and so can parents registered at the same permanent address with income below that allowance (ZDoh-2 art. 115(1), (3) and (9)). Only one parent takes the full amount for a child. The other gets any difference, and the amount is split pro rata if the parents do not agree (art. 114(10) and (11)). Only the months the child was actually supported count (art. 114(9)).
 
 **Capital gains.** These are taxed at a separate rate and never enter the annual base (art. 131.a).
 
 - **Base.** The gain is disposal value less acquisition value. If positive, deduct standard costs: the lower of 1% of cost plus 1% of proceeds, or the gain itself (ZDoh-2 art. 97(1)). Cost includes improvements to real estate and the inheritance, gift or transfer tax paid on acquisition (art. 98).
 - **Rate by holding period.** 25% up to 5 years, 20% after 5 years, 15% after 10 years, and exempt after 15 years (arts. 132(2) and 96(1)).
 - **Other exemptions.** A home lived in and registered as the permanent residence for the last three years is exempt, and so is the sale of debt securities (art. 96(2)).
-- **Losses.** Losses net against gains of the same year only. A loss on an exempt disposal does not count. A loss is blocked if the same securities are bought back within 30 days, or bought by a family member or a 25% related company (art. 97(2) to (5)).
+- **Losses.** Losses net against gains of the same year only. The one exception is a loss on shares held before a bonus issue from company funds, which can be carried forward (art. 97(3)). A loss on an exempt disposal does not count (art. 96(3)). A loss is blocked if the same securities are bought back within 30 days, or bought by a family member or a 25% related company (art. 97(2) to (5)).
 - **Mixed holding periods.** When gains of different holding periods remain after losses, the net gain is split pro rata between them (art. 97(4)).
 
-**Dividends and interest.** Taxed at 25% final (art. 132(1)). A Slovenian payer withholds the tax. Interest on deposits at Slovenian and other EU banks, and on Slovenian government retail bonds issued in 2024 to 2026, is exempt up to EUR 1,000 a year in total (art. 133).
+**Dividends and interest.** Taxed at 25% final (art. 132(1)). A Slovenian payer of dividends withholds the tax within five days of payment (ZDavP-2 art. 325(4)). Interest on deposits at Slovenian and other EU banks, and on Slovenian government retail bonds issued in 2024 to 2026, is not withheld. FURS assesses it on the resident's return (ZDavP-2 art. 325(7)). That interest is exempt up to EUR 1,000 a year in total (ZDoh-2 art. 133), and no return is needed if the total is EUR 1,000 or less (ZDavP-2 art. 326(2)). Interest on other Slovenian government securities and on listed Slovenian corporate bonds is also assessed on a return, not withheld (ZDavP-2 art. 325(8)).
 
-**Individual investment account (INR).** This account came in with ZINR (Uradni list RS 40/25). Only the return is taxed, and only when it is paid out. The rate is 15%, withheld by the provider. A payout after at least 15 years with no earlier payout is exempt (ZDoh-2 arts. 104.a to 104.c, 132(3)).
+**Individual investment account (INR).** This account came in with ZINR (Uradni list RS 40/25, published 4 June 2025). ZINR came into force the next day and applies nine months later, so from 5 March 2026 (ZINR art. 45). Only the return is taxed, and only when it is paid out: the payout up to the account value less deposits (ZDoh-2 art. 104.c). The rate is 15% final (art. 132(3)), withheld by the INR provider within five days of the payout (ZDavP-2 art. 325(12)). The first payout made at least 15 years after the account was opened, with no payout before it, is exempt; so is a payout made at least 15 years after the previous one (ZDoh-2 art. 104.b).
 
 **Rent.** The base is rent less 10% standard costs. The landlord can instead claim the actual upkeep costs they paid, with invoices (ZDoh-2 art. 77(1) and (2)). Farm or forest land has no cost deduction. Subletting is taxed on the sublet rent less the rent paid. The tax is 25% final (art. 135.č). Rent and capital income stay out of the annual base (art. 131.a); there is no election to add them in.
 
 **Sole proprietor (s.p.).** Business profit is revenue less expenses under corporate tax rules (ZDoh-2 art. 48(1) and (2)).
 
 - **Actual expenses.** The profit joins the annual base and is taxed on the scale.
-- **Normed expenses.** The s.p. can elect normed expenses instead if prior-year revenue was up to EUR 30,000, or up to EUR 60,000 with full-time self-employment insurance for at least nine months (art. 48(3), amended by ZDoh-2AB from 2025). A new business can elect in its first year (art. 48(4)). The deduction is set by art. 59 (see the table above). The remaining profit is taxed at 20% final (art. 135.a).
+- **Normed expenses.** The s.p. can elect normed expenses instead if prior-year revenue was up to EUR 30,000, or up to EUR 60,000 with full-time self-employment insurance for at least nine months (art. 48(3), amended by ZDoh-2AB from 2025). A new business can elect for its first year, and also for its second year if it started in the last six months of the first (art. 48(4)). The new business elects within eight days of registration (ZDavP-2 art. 308(2)).
+- **Forced exit for 2026.** An s.p. must use actual expenses and keep full books for 2026 if its 2025 revenue exceeded EUR 60,000 (full-time self-insured for nine months in 2025) or EUR 30,000 (otherwise) (ZDoh-2AB art. 23(b)). The deduction is set by art. 59 (see the table above). The remaining profit is taxed at 20% final (art. 135.a).
 - **Pointer only.** This skill does not cover business expenses, depreciation, reliefs or the s.p. against d.o.o. choice. Use [slovenia-tax-optimization](slovenia-tax-optimization.md) and [si-corporate-income-tax](si-corporate-income-tax.md), whose base rules ZDoh-2 art. 48(2) borrows.
 
 **Changes for 2025 and 2026.**
 
-- **ZDoh-2AB (Uradni list RS 104/24), from tax year 2025** (ZDoh-2AB art. 17):
+- **ZDoh-2AB (Uradni list RS 104/24), from tax year 2025** (ZDoh-2AB art. 27(1)):
   - lowered the normed-expense entry threshold from EUR 50,000 to 30,000, and for farm households from EUR 100,000 to 60,000 (art. 48);
   - rewrote the normed-expense scale (art. 59);
   - added the 7% relief for new residents (art. 113.a);
-  - raised the dependant amounts (art. 114);
+  - raised the dependant amounts (art. 114, indexed for 2025 under ZDoh-2AB art. 26);
   - dropped the extra proof test for EU and EEA non-residents (art. 116).
-- **ZDoh-2AB, from tax year 2026:** it deletes art. 42(1) (ZDoh-2AB art. 17(1)).
-- **ZINR (Uradni list RS 40/25):** added the INR regime.
+- **ZDoh-2AB, from tax year 2026:** it deletes art. 42(1), the special base for public servants and officials posted abroad, who were taxed only on the pay they would have received for the same work in Slovenia (ZDoh-2AB arts. 7 and 27(1); old text in the ZDoh-2 consolidated text NPB33).
+- **ZINR (Uradni list RS 40/25):** added the INR regime, applying from 5 March 2026 (ZINR art. 45).
 
 The PISRS register lists no amendment to ZDoh-2 after ZINR as of 24 October 2026.
 
@@ -154,7 +155,7 @@ Returns are filed on eDavki.
 | Individual: false, wrong or incomplete data in a return | EUR 400 to 5,000 | ZDavP-2 art. 395 |
 | s.p.: tax return not filed, filed late, or wrong; books not kept | EUR 800 to 10,000 | ZDavP-2 art. 397(1) |
 | Tax found in an audit | interest at 7% a year from the due date to the decision | ZDavP-2 art. 95 |
-| Late payment | default interest at the rate set by the law on default interest | ZDavP-2 art. 96(1) |
+| Late payment | default interest at the ECB main refinancing rate plus 8 points, reset each half-year: 10.15% for January to June 2026 (ECB rate 2.15%) and 10.40% for July to December 2026 | ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; minister's notice, Uradni list RS 1124/2026 |
 
 There is no fine for a late return if the tax is paid under a voluntary disclosure (samoprijava, ZDavP-2 art. 63). There is no fine for wrong data if the return is corrected under art. 64 (ZDavP-2 art. 396).
 
@@ -168,11 +169,11 @@ There is no fine for a late return if the tax is paid under a voluntary disclosu
 
 ## Worked examples
 
-**Example 1: employee with a flat let to a private tenant (2026).** A resident employee earns gross salary of EUR 36,000. The payslips show employee contributions of EUR 7,956. There are no dependants. The employee also lets a flat to a private individual for EUR 12,000 a year. A private tenant is not a withholding payer, so the landlord files a rent return by 28 February 2027.
+**Example 1: employee with a flat let to a private tenant (2026).** A resident employee earns gross salary of EUR 36,000. Employee contributions are 23.1% of gross (15.5% pension, 6.36% health, 0.14% unemployment, 0.1% parental, 1% long-term care), so EUR 8,316. The example leaves out the flat monthly compulsory health contribution. There are no dependants. The employee also lets a flat to a private individual for EUR 12,000 a year. A private tenant is not a withholding payer, so the landlord files a rent return by 28 February 2027.
 
-- The employment base is 36,000 less 7,956 = EUR 28,044.
+- The employment base is 36,000 less 8,316 = EUR 27,684.
 - Total income is over EUR 17,766.18, so only the general allowance of EUR 5,551.93 applies.
-- The net annual base is EUR 22,492.07. It falls in band 2: 1,555.43 + 26% of (22,492.07 less 9,721.43) = EUR 4,875.80.
+- The net annual base is EUR 22,132.07. It falls in band 2: 1,555.43 + 26% of (22,132.07 less 9,721.43) = EUR 4,782.20.
 - The monthly withholding by the main employer is credited against this in the informative calculation.
 - The rent is outside the annual base. The base is 12,000 less 10% standard costs = EUR 10,800. Tax at 25% is EUR 2,700.
 
@@ -180,7 +181,7 @@ There is no fine for a late return if the tax is paid under a voluntary disclosu
 name: Slovenian employee with rental income, 2026 scale
 inputs:
   gross_salary: 36000
-  employee_contributions: 7956
+  employee_contributions: 8316
   general_allowance: 5551.93
   rent: 12000
 steps:
@@ -190,18 +191,18 @@ steps:
   - rent_base: rent * 0.90
   - rent_tax: rent_base * 0.25
 expected:
-  employment_base: 28044
-  net_base: 22492.07
-  annual_tax: 4875.80
+  employment_base: 27684
+  net_base: 22132.07
+  annual_tax: 4782.20
   rent_base: 10800
   rent_tax: 2700
 ```
 
-**Example 2: low earner with a child and a share sale (2026).** A resident employee earns gross salary of EUR 17,000. Employee contributions are EUR 3,757. They support one child all year and claim the child. They also sell shares bought 7 years ago for EUR 20,000, for EUR 30,000.
+**Example 2: low earner with a child and a share sale (2026).** A resident employee earns gross salary of EUR 17,000. Employee contributions at 23.1% are EUR 3,927. They support one child all year and claim the child. They also sell shares bought 7 years ago for EUR 20,000, for EUR 30,000.
 
 - Total income of EUR 17,000 is under the EUR 17,766.18 limit, so the extra general allowance applies: 20,832.39 less 1.17259 times 17,000 = EUR 898.36. The total general allowance is 5,551.93 + 898.36 = EUR 6,450.29.
-- The employment base is EUR 13,243. Less the general allowance and the first-child allowance of EUR 2,995.83, the net base is EUR 3,796.88.
-- All of it is in band 1 at 16%, so the tax is EUR 607.50.
+- The employment base is EUR 13,073. Less the general allowance and the first-child allowance of EUR 2,995.83, the net base is EUR 3,626.88.
+- All of it is in band 1 at 16%, so the tax is EUR 580.30.
 - The gain is EUR 10,000. The standard costs are the lower of 1% of 20,000 plus 1% of 30,000 (EUR 500) and the gain, so EUR 500, leaving a base of EUR 9,500.
 - After 5 but under 10 years of holding the rate is 20%, so the tax on the gain is EUR 1,900. It is reported on the capital gains return by 28 February 2027.
 
@@ -209,7 +210,7 @@ expected:
 name: Slovenian low earner with child and 7-year share gain, 2026
 inputs:
   gross_salary: 17000
-  employee_contributions: 3757
+  employee_contributions: 3927
   general_allowance: 5551.93
   child_allowance: 2995.83
   cost: 20000
@@ -227,9 +228,9 @@ steps:
 expected:
   extra_allowance: 898.36
   total_general: 6450.29
-  employment_base: 13243
-  net_base: 3796.88
-  annual_tax: 607.50
+  employment_base: 13073
+  net_base: 3626.88
+  annual_tax: 580.30
   gain_base: 9500
   gain_tax: 1900
 ```
@@ -249,9 +250,15 @@ expected:
 |---|---|---|
 | Personal Income Tax Act (ZDoh-2), unofficial consolidated text NPB36 up to ZINR (Uradni list RS 40/25): arts. 37, 41, 42, 46 to 48, 59, 77 to 80, 96 to 98, 104.a to 104.c, 111 to 123, 127, 128, 130 to 140 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-24 |
 | PISRS register entry for ZDoh-2 (amendment list, last entry 40/25 ZINR) | https://pisrs.si/api/rezultat/zbirka/id/ZAKO4697 | 2026-10-24 |
-| ZDoh-2AB, Uradni list RS 104/24 (amendments and art. 17 start dates) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2024-01-3309 | 2026-10-24 |
+| ZDoh-2AB, Uradni list RS 104/24 (amendments; arts. 23, 26 and 27 on transition and start dates) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2024-01-3309 | 2026-10-24 |
 | FURS, notice of the 2026 income tax scale and allowances (15 December 2025, under the Pravilnik in Uradni list RS 104/25) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Dohodnina/Letna_odmera_dohodnine/Opis/Lestvica_za_leto_2026.docx | 2026-10-24 |
 | FURS, annual income tax assessment page | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/dohodnina/letna_odmera_dohodnine/ | 2026-10-24 |
+| ZDoh-2, unofficial consolidated text NPB33 (up to ZORZFS, before ZDoh-2AB): old art. 42(1) | https://pisrs.si/api/datoteke/integracije/9340577 (NPB 33 version in the PISRS register for ZAKO4697) | 2026-10-24 |
+| Individual Investment Accounts Act (ZINR), Uradni list RS 40/25: art. 45 (entry into force and start of application) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-1572 | 2026-10-24 |
+| Prescribed Default Interest Rate Act (ZPOMZO-1): art. 2 | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |
+| Minister of Finance, rate of default interest from 1 July 2026 (10.40%), Uradni list RS 1124/2026 | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
+| ECB key interest rates (main refinancing rate 2.15% from 11 June 2025, 2.40% from 17 June 2026) | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-24 |
+| Social Security Contributions Act (ZPSV) arts. 8 to 13 rates and Long-Term Care Act (ZDOsk-1) 1% contribution, for the example contribution rates | https://pisrs.si/pregledPredpisa?id=ZAKO984 and https://pisrs.si/pregledPredpisa?id=ZAKO8819 | 2026-10-24 |
 | Tax Procedure Act (ZDavP-2), unofficial consolidated text up to ZDavP-2P (Uradni list RS 100/25) and decision U-I-148/25: arts. 63, 64, 66, 95, 96, 267 to 277, 283, 297 to 301, 308, 325 to 330, 394 to 397 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 
-Not yet confirmed: the late-payment interest rate for 2026 (ZDavP-2 art. 96 points to the law on default interest, not read). The wording of ZDoh-2 art. 42(1) before ZDoh-2AB deleted it from 2026. The start date of the INR regime under ZINR. FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published.
+Not yet confirmed: FURS practice on whether "total income" for the allowance taper is gross pay (the reading used here, from arts. 37 and 111(3) and the FURS monthly table, which uses gross pay). Whether the flat monthly compulsory health contribution (obvezni zdravstveni prispevek) reduces the employment base under ZDoh-2 art. 41(1). The eDavki form codes Doh-KDVP and Doh-Div, which are FURS names and are not in the statute. The 2027 indexation, not yet published.
