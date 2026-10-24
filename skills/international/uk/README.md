@@ -15,7 +15,7 @@ Tax year 6 April to 5 April for individuals; companies use their own accounting 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | uk-income-tax-sa100, uk-scottish-income-tax (Scottish taxpayers: status tests, 2026/27 Scottish bands, savings and dividends on UK bands, Gift Aid and pension extensions, S codes), uk-self-employment-sa103 (2026/27: Class 4 6%/2%, 55p mileage, 14% main pool, MTD from April 2026), uk-capital-gains-sa108, uk-dividends (2026/27 rates 10.75%/35.75%/39.35%, director salary and dividends), uk-rental-sa105, uk-payments-on-account (2026/27 POAs, MTD interaction), uk-student-loan-repayment (2026/27 thresholds) | source-cited draft |
+| IT-IND, individual income tax | uk-income-tax-sa100 (2026/27 deep-tax shape: Personal Allowance taper, rUK, Welsh and Scottish bands, savings and dividend allowances, Marriage Allowance, Child Benefit charge, filing, penalties), uk-scottish-income-tax (Scottish taxpayers: status tests, 2026/27 Scottish bands, savings and dividends on UK bands, Gift Aid and pension extensions, S codes), uk-self-employment-sa103 (2026/27: Class 4 6%/2%, 55p mileage, 14% main pool, MTD from April 2026), uk-capital-gains-sa108, uk-dividends (2026/27 rates 10.75%/35.75%/39.35%, director salary and dividends), uk-rental-sa105, uk-payments-on-account (2026/27 POAs, MTD interaction), uk-student-loan-repayment (2026/27 thresholds) | source-cited draft |
 | IT-CORP, corporate income tax | uk-corporation-tax | source-cited draft |
 | VAT | uk-vat-return, vat-returns-for-small-businesses-in-the-uk (short quarterly routine, 2026/27 thresholds, Flat Rate Scheme limits, penalties), gb-vat-eu-goods-sellers | source-cited draft |
 | SC, social contributions | uk-national-insurance | source-cited draft |
