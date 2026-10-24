@@ -6,6 +6,7 @@ covered_by:
   IT-IND: lithuania-pit
   SC: lt-payroll-social
   PR: lt-payroll-social
+  XB: lt-cross-border
 partial:
   IT-IND: "lithuania-pit carries 2025 figures and is not yet in the 2026 deep-tax shape"
   IT-CORP: "lt-corporate-income-tax carries 2025 figures and cites secondary sources; the 2026 17% rate is not yet worked through"
@@ -28,7 +29,7 @@ Calendar tax year for most taxpayers. Authority: the State Tax Inspectorate (Val
 | SC, social contributions | lt-payroll-social (2025 figures) | source-cited draft |
 | PR, payroll withholding | lt-payroll-social (2025 figures) | source-cited draft |
 | TP, transfer pricing | lt-transfer-pricing (2026: associated persons, arm's length, Order 1K-123, master and local files, EUR 90,000 exemption, FR0528, APAs, CbCR, fines and interest) | source-cited draft |
-| XB, cross-border | (missing) | |
+| XB, cross-border | lt-cross-border (2026: residence, tax at source on payments abroad, DAS-1, foreign tax credits, exit tax) | source-cited draft |
 
 Also in the pack: lt-tax-overview, lt-company-formation, references.md.
 
@@ -37,4 +38,7 @@ Also in the pack: lt-tax-overview, lt-company-formation, references.md.
 - Law on Corporate Income Tax IX-675, consolidated from 19 May 2026: https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr (read 2026-10-23)
 - Minister of Finance Order 1K-123 (transfer pricing rules): https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (read 2026-10-23)
 - Law on Tax Administration IX-2112, consolidated from 1 July 2026: https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr (read 2026-10-23)
+- Law on Personal Income Tax IX-1007, consolidated from 11 June 2026: https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr (read 2026-10-24)
+- VMI, commentary on the Corporate Income Tax Law: https://www.vmi.lt/evmi/documents/20142/751579/Pelno+mokes%C4%8Dio+komentaras+(aktualus+2026-09-28).pdf/c9688bd6-8557-df3a-c0a3-e4032cfff2b6?t=1790570493065 (read 2026-10-24)
+- VMI, personal income tax page, with the law, the 2026 English translation and the commentary: https://www.vmi.lt/evmi/gyventoju-pajamu-mokestis (read 2026-10-23)
 - VMI: https://www.vmi.lt (read 2026-10-23)
