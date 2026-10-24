@@ -22,6 +22,7 @@ This skill links to its siblings instead of repeating them:
 - `croatia-income-tax`: the personal return, rates and allowances in full.
 - `croatia-payroll` and `croatia-social-contributions`: payroll withholding, JOPPD and contributions.
 - `croatia-vat-return`: VAT on services bought from non-residents.
+- `hr-transfer-pricing`: related-party pricing, documentation and the 2026 related-party loan rate.
 
 ## Who this applies to
 
@@ -52,11 +53,11 @@ Storage, display, delivery, purchasing, information gathering and other preparat
 | Withholding: fees for performances of foreign artists, entertainers and athletes paid to a foreign entity | 10% of gross; no personal income tax or contributions for the performer | 2026 | ZPD art. 31(10), NN 138/20: https://narodne-novine.nn.hr/clanci/sluzbeni/2020_12_138_2627.html |
 | Withholding: all payments taxable under art. 31, plus market research, tax and business advisory and audit services, paid to persons seated or managed in a jurisdiction on the EU list of non-cooperative jurisdictions with which Croatia applies no tax treaty | 25% of gross | 2026 | ZPD art. 31(12), NN 114/23 |
 | Interest exempt from withholding | commodity credits for goods used in the business; loans from a foreign bank or other financial institution; interest to foreign legal-person bondholders | 2026 | ZPD art. 31(5): https://narodne-novine.nn.hr/clanci/sluzbeni/2004_12_177_3067.html |
-| EU Interest and Royalties Directive exemption | 0%: associated companies, direct holding of at least 25% either way or by a common parent, held 24 months without a break; EEA companies too | 2026 | ZPD arts. 31.a, 31.b, 31.f; NN 57/06: https://narodne-novine.nn.hr/clanci/sluzbeni/2006_05_57_1354.html |
-| EU Parent-Subsidiary Directive exemption on dividends | 0%: EU parent holding at least 10% of capital for 24 months without a break; EEA companies too | 2026 | ZPD arts. 31.e, 31.f; NN 22/12: https://narodne-novine.nn.hr/clanci/sluzbeni/2012_02_22_571.html |
+| EU Interest and Royalties Directive exemption | 0%: associated companies, direct holding of at least 25% either way or by a common parent, held 24 months without a break, or paid exempt before 24 months against a bank guarantee (ZPD art. 31.b(4), Rulebook art. 51.a(13)); EEA companies too, and under the Rulebook Swiss companies (Rulebook art. 51.a(11)) | 2026 | ZPD arts. 31.a, 31.b, 31.f; NN 57/06: https://narodne-novine.nn.hr/clanci/sluzbeni/2006_05_57_1354.html |
+| EU Parent-Subsidiary Directive exemption on dividends | 0%: EU parent holding at least 10% of capital for 24 months without a break, or paid exempt before 24 months against a bank guarantee (Rulebook art. 51.b(4)); EEA companies too, and under the Rulebook Swiss companies (Rulebook art. 51.b(7)) | 2026 | ZPD arts. 31.e, 31.f; NN 22/12: https://narodne-novine.nn.hr/clanci/sluzbeni/2012_02_22_571.html |
 | Non-resident individual: interest and dividends from Croatia (capital income) | 12%, withheld by the payer | 2026 | ZPDoh art. 70(1) and (19) as amended by NN 114/23: https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1609.html |
 | Capital gains on financial assets (residents; non-residents on Croatian-source gains) | 12%; no tax if held more than two years | 2026 | ZPDoh art. 67(8), art. 70(4), NN 114/23 |
-| Corporate profit tax rate (non-resident PE profit, exit tax base) | 10% if revenue in the period is up to EUR 1,000,000; 18% if EUR 1,000,000 or more | 2026 | ZPD art. 28, NN 114/23 |
+| Corporate profit tax rate (non-resident PE profit, exit tax base) | 10% if revenue in the period is up to EUR 1,000,000; 18% if more than EUR 1,000,000 | 2026 | ZPD art. 28, NN 114/23 |
 | Personal income tax, default where the municipality has not set rates | 20% up to EUR 60,000 a year; 30% above | 2026 | ZPDoh art. 19.a(5), NN 152/24: https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2505.html |
 | Range a local unit may set (Grad Zagreb) | lower rate 15% to 23%; higher rate 25% to 33% | 2026 | ZPDoh art. 19.a(2), NN 152/24 |
 | Basic personal allowance, residents and non-residents (non-residents only for months with Croatian income) | EUR 600 a month | 2026 | ZPDoh arts. 14(1) and 16(1), NN 152/24 |
@@ -66,7 +67,7 @@ Storage, display, delivery, purchasing, information gathering and other preparat
 | Tax loss carry-forward (companies) | 5 years | 2026 | ZPD art. 17(2), NN 177/04 |
 | Treaty example: Cyprus (in force from 1 January 2024) | royalties 5%, interest 5%, dividends 5% | 2026 | Tax Administration, treaty table: https://porezna-uprava.gov.hr/hr/dvostruko-oporezivanje/3997 |
 
-**Services.** The Profit Tax Act once taxed market research, tax and business advisory and audit services paid abroad at 15% (original art. 31(6), NN 177/04). NN 114/23 replaced paragraph 6 with the general 15% rate, in force from 12 October 2023 (NN 114/23, arts. 9 and 15). Those services now appear only in paragraph 12, so they bear withholding only at 25%, and only when paid to a listed non-cooperative jurisdiction with no Croatian treaty. Paid to any other non-resident, they bear no Croatian withholding.
+**Services.** The Profit Tax Act once taxed market research, tax and business advisory and audit services paid abroad at 15% (original art. 31(6), NN 177/04). Before NN 114/23 that services clause was paragraph 6 and the 15% rate paragraph 7. NN 114/23 (published 4 October 2023, in force on the eighth day after; applied to tax periods from 1 January 2024: arts. 9, 13(1) and 15) replaced paragraph 6 with the general 15% rate and paragraph 7 with the 10% dividend rate, and dropped the services clause. The consolidated Act in force for 2026 lists in paragraph 4 only interest, dividends, profit shares and intellectual property rights. Those services now appear only in paragraph 12, so they bear withholding only at 25%, and only when paid to a listed non-cooperative jurisdiction with no Croatian treaty. Paid to any other non-resident, they bear no Croatian withholding. Some Tax Administration guidance pages still list these services among withholding items; the Act governs.
 
 ## The taxable base
 
@@ -107,11 +108,11 @@ Assets due to return within 12 months, and transfers for securities financing, c
 | Profit tax return (PD; PD-NN for 2026 periods) and payment | four months after the end of the tax period | ZPD art. 35(1) and (2); Rulebook as amended by NN 39/26: https://narodne-novine.nn.hr/clanci/sluzbeni/2026_04_39_469.html |
 | Parent-Subsidiary exemption used: evidence of residence, holding and form to the Tax Administration | within 15 days of each payment | Rulebook art. 51.b(1) |
 | Interest and Royalties exemption: Tax Administration certificate | applied for per contract; issued within 3 months; valid 1 year; refund claim within 2 years of payment | Rulebook art. 51.a(3) to (7) |
-| Treaty claim form certified by the foreign authority | before payment; for each payment, or for frequent payments at the first payment and then every 12 months | Rulebook art. 51(5): https://narodne-novine.nn.hr/clanci/sluzbeni/289407.html |
+| Treaty claim form certified by the foreign authority | before payment; for each payment, or for frequent payments at the first payment and then every 12 months | Rulebook art. 51(5): https://narodne-novine.nn.hr/clanci/sluzbeni/2005_08_95_1885.html |
 | Treaty refund after domestic rate was withheld | within 3 years from the end of the year of payment, to the Zagreb Regional Office | Rulebook art. 51(9) |
 | Exit event (move of PE business or of tax residence): notify the Tax Administration | within 8 days | ZPD art. 30.d(5) |
 | Resident with foreign income without a domestic payer (INO-DOH): calculate, pay and report | within 30 days of receipt | ZPDoh art. 81(1) |
-| Resident taxed abroad during the year, or posted abroad: report income and foreign tax | by 31 January of the next year | ZPDoh art. 81(3) and (4) |
+| Resident taxed abroad during the year, or posted abroad: report income and foreign tax | notify within 8 days of the first receipt in the year; report by 31 January of the next year | ZPDoh art. 81(3) and (4) |
 | Capital gains tax on financial assets | by the last day of February of the next year | ZPDoh art. 70(4) |
 
 **Treaty claim forms** (Rulebook, art. 51(3)). Four forms, one per type of payment, each titled "Zahtjev ... prema Ugovoru o izbjegavanju dvostrukog oporezivanja između Republike Hrvatske i [state]":
@@ -139,7 +140,7 @@ The non-resident has the form certified by its own tax authority and gives two c
 - **Anti-abuse.** Treaty and directive benefits are denied for arrangements that are not genuine and whose main purpose, or one of them, is the tax benefit (ZPD, art. 5.a, NN 50/16 and 138/20; and arts. 31.d(3) and 31.e(3) for the directives).
 - **Hybrids and CFCs.** Rules against profit shifting are in ZPD arts. 30.a to 30.i. Refer them.
 - **Mutual agreement procedure.** The Tax Administration publishes MAP guidelines (updated August 2024) on its double taxation page.
-- **Transfer pricing.** Related-party prices with non-residents must be at arm's length (ZPD, art. 13). This pack has no transfer pricing skill yet.
+- **Transfer pricing.** Related-party prices with non-residents must be at arm's length (ZPD, art. 13). See `hr-transfer-pricing`.
 
 ## Worked examples
 
@@ -239,16 +240,19 @@ expected:
 | Profit Tax Act amendment NN 114/22 (fines in euro, art. 38) | https://narodne-novine.nn.hr/clanci/sluzbeni/2022_10_114_1679.html | 2026-10-23 |
 | Profit Tax Act amendment NN 114/23 (art. 28 threshold EUR 1,000,000; art. 31(6), (7), (12); art. 31.f; art. 35) | https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1613.html | 2026-10-23 |
 | Profit Tax Act amendment NN 151/25 (art. 30 foreign tax credit, in force 1 January 2026) | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_151_2261.html | 2026-10-23 |
-| Profit Tax Rulebook NN 95/05 (art. 51, treaty forms and procedure) | https://narodne-novine.nn.hr/clanci/sluzbeni/289407.html | 2026-10-23 |
+| Profit Tax Rulebook NN 95/05 (art. 51, treaty forms and procedure) | https://narodne-novine.nn.hr/clanci/sluzbeni/2005_08_95_1885.html | 2026-10-23 |
 | Profit Tax Rulebook amendment NN 39/26 (art. 52, new PD and PD-NN forms for 2026) | https://narodne-novine.nn.hr/clanci/sluzbeni/2026_04_39_469.html | 2026-10-23 |
 | Personal Income Tax Act NN 115/16 (arts. 3, 4, 6, 7, 16, 80, 81) | https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2525.html | 2026-10-23 |
 | Personal Income Tax Act amendment NN 114/23 (art. 70: 12% on interest, dividends and capital gains) | https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1609.html | 2026-10-23 |
 | Personal Income Tax Act amendment NN 152/24 (EUR 600 allowance; art. 19.a rate ranges, in force 1 January 2025) | https://narodne-novine.nn.hr/clanci/sluzbeni/2024_12_152_2505.html | 2026-10-23 |
 | General Tax Act NN 115/16 (art. 43 home and habitual abode; art. 130 interest) | https://narodne-novine.nn.hr/clanci/sluzbeni/2016_12_115_2519.html | 2026-10-23 |
 | General Tax Act amendment NN 106/18 (art. 43(3) and (4); art. 45 permanent establishment) | https://narodne-novine.nn.hr/clanci/sluzbeni/2018_11_106_2065.html | 2026-10-23 |
+| Profit Tax Act, Tax Administration consolidated text to NN 151/25 (arts. 3, 17, 28, 30, 30.d, 31 to 31.f, 35, 38) | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro19 | 2026-10-23 |
+| Profit Tax Rulebook, Tax Administration consolidated text to NN 39/26 (arts. 49 to 52) | https://porezna-uprava.gov.hr/hr_propisi/_layouts/15/in2.vuk2019.sp.propisi.intranet/propisi.aspx#id=pro23 | 2026-10-23 |
+| Personal Income Tax Act and General Tax Act, Tax Administration consolidated texts (ZPDoh to NN 152/24; OPZ to NN 151/25, arts. 43, 45 and 130 unchanged) | https://porezna-uprava.gov.hr/Propisi | 2026-10-23 |
 | Tax Administration, double taxation: treaties in force and rates | https://porezna-uprava.gov.hr/hr/dvostruko-oporezivanje/3997 | 2026-10-23 |
 | Tax Administration, treaty network (treaties awaiting ratification) | https://porezna-uprava.gov.hr/hr/ugovori-o-izbjegavanju-dvostrukog-oporezivanja/7559 | 2026-10-23 |
 | Tax Administration, determining tax residence (TU and TI questionnaires) | https://porezna-uprava.gov.hr/hr/utvrdjivanje-rezidentnosti-u-porezne-svrhe/3998 | 2026-10-23 |
 | Tax Administration, non-resident capital income | https://porezna-uprava.gov.hr/hr/4-primici-nerezidenta-od-kapitala/4284 | 2026-10-23 |
 
-Not yet confirmed: which jurisdictions are on the EU Annex I list on a given payment date (the Council list was not read for this skill); the late-payment interest rate for 2026 (the special law setting it was not read); the footnotes to the Tax Administration treaty table (rates shown with footnote marks, such as Austria and Belgium dividends, were not used); the wording of Rulebook arts. 49, 50, 51.a and 51.b was read in a consolidated text and checked against the original NN 95/05 only for art. 51, not against each amending rulebook; the Tax Administration page on non-resident legal persons still lists advisory and audit services among withholding items, which this skill reads as out of date after NN 114/23; whether the art. 28 rate applied to an exit base spread over five periods follows each later period's revenue.
+Not yet confirmed: which jurisdictions are on the EU Annex I list on a given payment date (the Council list was not read for this skill); the late-payment interest rate for 2026 (the special law setting it was not read); the footnotes to the Tax Administration treaty table (rates shown with footnote marks, such as Austria and Belgium dividends, were not used); the Rulebook arts. 49 to 52 were read in the Tax Administration consolidated text to NN 39/26, not against each amending rulebook; whether the art. 28 rate applied to an exit base spread over five periods follows each later period's revenue.
