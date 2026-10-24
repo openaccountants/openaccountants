@@ -5,8 +5,6 @@ not_applicable: {}
 covered_by: {}
 partial:
   VAT: "latvia-vat-return still carries tax year 2025 figures; not yet refreshed for 2026"
-  SC: "latvia-social-contributions still carries tax year 2025 figures; not yet refreshed for 2026"
-  PR: "latvia-payroll still carries tax year 2025 figures; not yet refreshed for 2026"
 ---
 
 # Latvia: tax pack
@@ -20,8 +18,8 @@ Calendar tax year for individuals; companies use their financial year as the rep
 | IT-IND, individual income tax | latvia-income-tax (2026: 25.5% and 33% bands at the EUR 105,300 social insurance cap, 3% surcharge above EUR 200,000, EUR 570 monthly non-taxable minimum, dependant relief, eligible expenses, capital income, self-employed income, annual return, payment, penalties) | source-cited draft |
 | IT-CORP, corporate income tax | lv-corporate-income-tax (2026: 20% with the 0.8 divisor, optional 15%/0.85 plus 6% for companies owned only by individuals, deemed distributions, dividends received, pre-2018 profit and losses, monthly return and payment, fines and late interest) | source-cited draft |
 | VAT | latvia-vat-return (2025 figures) | source-cited draft |
-| SC, social contributions | latvia-social-contributions (2025 figures) | source-cited draft |
-| PR, payroll withholding | latvia-payroll (2025 figures) | source-cited draft |
+| SC, social contributions | latvia-social-contributions (2026: 34.09% split 23.59% / 10.50% and reduced rates, EUR 105,300 maximum base and solidarity tax refund to 25%, EUR 2,340 quarterly employee minimum, self-employed 31.07% on at least EUR 780 plus 10% for pensions, quarterly reports and payment, late interest) | source-cited draft |
+| PR, payroll withholding | latvia-payroll (2026: 25.5% monthly wage tax with EUR 570 minimum and EUR 250 dependant relief via the wage tax book, contributions, employer report by the 17th and payment by the 23rd, year-end 33% top-up, penalties) | source-cited draft |
 | TP, transfer pricing | lv-transfer-pricing (2026: related persons, deemed distribution, controlled transactions report, local and master file, penalties, country-by-country report, APAs) | source-cited draft |
 | XB, cross-border | lv-cross-border (2026: residence, permanent establishment, withholding on payments to non-residents, low-tax jurisdictions, treaty relief, foreign tax credit, exit charge) | source-cited draft |
 
@@ -34,3 +32,4 @@ Calendar tax year for individuals; companies use their financial year as the rep
 - State Revenue Service: https://www.vid.gov.lv (not reachable on 2026-10-23)
 - Law On Personal Income Tax: https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (read 2026-10-24, Internet Archive copy of 1 September 2026)
 - Law On State Social Insurance: https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu (read 2026-10-24, Internet Archive copy of 3 October 2026)
+- Solidarity Tax Law (Solidaritātes nodokļa likums): https://likumi.lv/ta/id/278636-solidaritates-nodokla-likums (read 2026-10-24, Internet Archive copy of 18 February 2026)
