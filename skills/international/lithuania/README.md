@@ -23,7 +23,7 @@ Calendar tax year for most taxpayers. Authority: the State Tax Inspectorate (Val
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | lithuania-pit (2025 figures) | source-cited draft |
-| IT-CORP, corporate income tax | lt-corporate-income-tax (2026: 17% rate, 0%/7% small entity rates and the related-entity test, taxable profit, non-deductible items, depreciation and immediate write-off, losses and the 70% cap, 30% EBITDA interest limit, investment project relief, advance payments, return by 15 June, fines and late interest) | source-cited draft |
+| IT-CORP, corporate income tax | lt-corporate-income-tax (2026: 17% rate, 0%/7% small entity rates and the related-entity test, taxable profit, non-deductible items, depreciation and immediate write-off, losses and the 70% cap, 30% EBITDA interest limit, the 4:1 controlled debt rule, passenger car caps, investment project relief, advance payments, return by 15 June, fines and late interest) | source-cited draft |
 | VAT | lithuania-vat-return (2025 figures) | source-cited draft |
 | SC, social contributions | lt-payroll-social (2025 figures) | source-cited draft |
 | PR, payroll withholding | lt-payroll-social (2025 figures) | source-cited draft |
