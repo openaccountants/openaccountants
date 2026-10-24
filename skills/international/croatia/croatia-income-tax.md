@@ -62,13 +62,14 @@ Detail lives in the sibling skills. Read [hr-cross-border](hr-cross-border.md) f
 | Tourist letting by private individuals | annual lump sum per bed set by the local unit: category I EUR 100 to 300; II EUR 70 to 200; III EUR 30 to 150; IV and 0 EUR 20 to 100 | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/in2.vuk.sp.propisi.intranet/propisi.aspx#id=pro1623 (art. 57(4)) |
 | Unexplained assets | 36%, increased by 100% | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/in2.vuk.sp.propisi.intranet/propisi.aspx#id=pro1623 (art. 78) |
 | Paušalni obrt: entry limit | receipts not above the VAT registration limit, EUR 60,000 | 2026 | https://porezna-uprava.gov.hr/hr/obrtnici-pausalisti/4564 |
-| Paušalni obrt: tax | 12% of the band base, paid quarterly | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/in2.vuk.sp.propisi.intranet/propisi.aspx#id=pro1623 (art. 82(5), (6)) |
-| Paušalni obrt bands (receipts: base; annual tax) | up to 11,300: 1,695; 203.40. 11,300.01 to 15,300: 2,295; 275.40. 15,300.01 to 19,900: 2,985; 358.20. 19,900.01 to 30,600: 4,590; 550.80. 30,600.01 to 40,000: 6,000; 720.00. 40,000.01 to 50,000: 7,500; 900.00. 50,000.01 to 60,000: 9,000; 1,080.00 (EUR) | 2026 | https://porezna-uprava.gov.hr/hr/obrtnici-pausalisti/4564 |
-| Paušalni obrt: cut for Vukovar, assisted areas and group I islands | 25% of the lump-sum tax | 2026 | https://porezna-uprava.gov.hr/hr/obrtnici-pausalisti/4564 |
+| Paušalni obrt: tax | 12% of the band base, paid quarterly | 2026 | https://porezna-uprava.gov.hr/hr_propisi/_layouts/in2.vuk.sp.propisi.intranet/propisi.aspx#id=pro1623 (art. 82(6)); Paušalni Ordinance art. 4(1), 6(1) |
+| Paušalni obrt bands (receipts: base; annual tax) | up to 11,300: 1,695; 203.40. 11,300.01 to 15,300: 2,295; 275.40. 15,300.01 to 19,900: 2,985; 358.20. 19,900.01 to 30,600: 4,590; 550.80. 30,600.01 to 40,000: 6,000; 720.00. 40,000.01 to 50,000: 7,500; 900.00. 50,000.01 to 60,000: 9,000; 1,080.00 (EUR) | 2026 | https://porezna-uprava.gov.hr/Propisi (Paušalni Ordinance, NN 1/20 to 16/25, art. 3(1)); https://porezna-uprava.gov.hr/hr/obrtnici-pausalisti/4564 |
+| Paušalni obrt in Vukovar, group I assisted areas and group I islands | pays 25% of the lump-sum tax (a 75% cut) | 2026 | https://porezna-uprava.gov.hr/Propisi (Paušalni Ordinance, NN 1/20 to 16/25, art. 5) |
 | Paušalni obrt: monthly contribution base | EUR 797.20 | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html (art. 7) |
 | Contribution bases: obrt on books; free profession on books | EUR 1,295.45; EUR 2,192.30 a month | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html (art. 6) |
 | Maximum monthly contribution base | EUR 11,958.00 | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html (art. 4) |
-| Low-salary pension base cut | gross up to EUR 700: base cut by EUR 300; EUR 700.01 to 1,300: cut by 0.5 x (1,300 - gross) | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1611.html (Contributions Act art. 21.a) |
+| Low-salary pension base cut | gross up to EUR 700: base cut by EUR 300; EUR 700.01 to 1,300: cut by 0.5 x (1,300 - gross) | 2026 | https://narodne-novine.nn.hr/clanci/sluzbeni/2023_10_114_1611.html (Contributions Act art. 21.a, unchanged in the consolidated text to NN 152/24) |
+| Employee pension contributions; employer health contribution | 15% pillar I and 5% pillar II (20% if only in pillar I); 16.5% health | 2026 | https://porezna-uprava.gov.hr/Propisi (Contributions Act, consolidated text NN 84/08 to 152/24, art. 13(1), 14(1), 17(1)) |
 
 ## The taxable base
 
@@ -80,7 +81,7 @@ The annual base is employment income plus self-employment income plus other inco
 
 ### Employment (art. 20 to 27)
 
-- Employment income is all receipts from the employer in cash or in kind, minus the employee's mandatory contributions (art. 20, 21, 23). For a usual employee these are pension contributions of 15% (pillar I) and 5% (pillar II), 20% in all; the 16.5% health contribution is paid by the employer on top and is not deducted from the employee (rates as on the Tax Administration's paušalni page; detail in [croatia-social-contributions](croatia-social-contributions.md)).
+- Employment income is all receipts from the employer in cash or in kind, minus the employee's mandatory contributions (art. 20, 21, 23). For a usual employee these are pension contributions of 15% (pillar I) and 5% (pillar II), 20% in all; the 16.5% health contribution is paid by the employer on top and is not deducted from the employee (Contributions Act art. 13(1), 14(1), 17(1); detail in [croatia-social-contributions](croatia-social-contributions.md)).
 - The employer withholds an advance on each payment. The monthly base is gross pay minus contributions minus the monthly allowance on the tax card, taxed at the local lower rate up to EUR 5,000 a month and the higher rate above (art. 24(2), (3)).
 - The advance is halved for pensioners and for people living in group I assisted areas and Vukovar (art. 24(5)).
 - Employees up to 25 have the lower-rate tax on their salary cut by 100%; those aged 26 to 30 by 50%. The relief covers the whole year in which the age is reached (art. 46(2), (8)).
@@ -98,8 +99,9 @@ The annual base is employment income plus self-employment income plus other inco
 
 ### Paušalni obrt (art. 82)
 
-- A trade (not a free profession) that is not in VAT and has receipts not above the VAT registration limit (EUR 60,000) can pay a lump sum instead of keeping books (art. 82(1); Tax Administration paušalni page).
-- The base is fixed by the band the year's receipts fall in, not by actual profit. Tax is 12% of the band base (art. 82(6)), paid quarterly by the last day of each quarter.
+- A trade, or agriculture and forestry, that is not in VAT and has receipts not above the VAT registration limit (EUR 60,000, VAT Act art. 90(1)) can pay a lump sum instead of keeping books (art. 82(1); Paušalni Ordinance art. 2(1)). Free professions cannot; they keep books.
+- The base is fixed by the band the year's receipts fall in, not by actual profit. Tax is 12% of the band base (art. 82(6); Paušalni Ordinance art. 3, 4(1)), paid quarterly by the last day of each quarter (Ordinance art. 6(1)). A trader who starts or stops during the year is put in a band by grossing up average monthly receipts to 12 months, and the base is cut pro rata (Ordinance art. 3(4)).
+- In Vukovar, group I assisted areas and group I islands the paušalist pays 25% of the lump-sum tax (Ordinance art. 5).
 - The paušalist keeps only a sales book (KPR) and files the PO-SD report within 15 days after the year ends, paying any balance the same day (art. 82(4), (6)).
 - If receipts pass the VAT limit during a month, the lump sum applies to the end of that month; then the trader moves to books (art. 82(9), (10)).
 - Contributions for a paušalist insured on that basis are on EUR 797.20 a month for 2026: EUR 119.58 pillar I, EUR 39.86 pillar II and EUR 131.54 health a month (Tax Administration paušalni page).
@@ -115,7 +117,7 @@ No allowance and no annual return (art. 55(2), (3)).
 - **Rent:** 30% flat expenses, 12% tax on the rest, paid monthly by assessment (art. 57(1), art. 62(1)). Handing property to anyone other than close family without a lease counts as letting (art. 62(9), (10)). If the landlord is in VAT, or its receipts pass the VAT limit, rent is taxed as self-employment instead (art. 61).
 - **Tourist letting** by private individuals with a hospitality approval: a yearly lump sum per bed or camp unit, set by the local unit inside the legal range. The defaults where no decision was made are EUR 200, 135, 90 and 60 by category (art. 57(4), (7), art. 82(2), (5)).
 - **Sale of real estate:** the gain is the price minus cost uplifted by producer prices, minus documented investment and sale costs (art. 58(1)). It is not taxed after two years of ownership, unless more than three properties of the same kind are sold within five years. A home used by the owner or dependants, sales within close family, and inherited property are exempt (art. 58(2) to (6)). Tax is 24% (art. 62(3), (4)).
-- **Interest:** 12% withheld (art. 70(1)). Bank interest of up to 0.5% a year, interest on bonds and on Croatian government securities, and life and voluntary pension yields are not taxed (art. 65(2)).
+- **Interest:** 12% withheld (art. 70(1)). Default interest, interest on payment accounts and sight deposits of up to 0.5% a year, interest on bonds and on debt securities of the Republic of Croatia and local units, and life and voluntary pension yields are not taxed (art. 65(2)).
 - **Dividends and profit shares:** 12% withheld (art. 70(19)).
 - **Capital gains on financial assets:** 12% on gains minus losses of the same year (art. 67(11), art. 70(4)). Gains on assets sold more than two years after acquisition, and transfers in close family or by inheritance, are not taxed (art. 67(8)). FIFO applies (art. 70(5)). The holder pays by the end of February for the previous year, or has a broker or the depository SKDD compute it (art. 70(4), (7), (8), (14)). Gains on non-listed company shares are taxed by assessment at 12%, and the sale must be reported within eight days (art. 70(17)).
 - **Share awards and employee options:** 24% withheld (art. 68, art. 70(18)).
@@ -124,11 +126,11 @@ No allowance and no annual return (art. 55(2), (3)).
 
 - **Registration:** report the start of a business, letting or income from abroad within 8 days (art. 83(1), art. 87(4)). A lease must reach the tax office within 8 days unless a notary sent it (art. 62(7), (8)).
 - **Withholding on salary:** on each payment, under the rules in force on the payment day (art. 24(1)), reported on the JOPPD form (art. 27). The employer does a year-end recalculation in December where the year's pay was uneven (art. 47).
-- **Annual return (DOH):** compulsory for the self-employed on books and for seafarers in international shipping (art. 48). It is filed by the end of February for the previous year (art. 50(2)). For 2025 the Tax Administration set the last day as 2 March 2026. For 2026 the end of February 2027 falls on a Sunday.
-- **Self-employed tax due:** the balance on the return is due on the last day for filing (art. 46(12)). Monthly advances for the next period are one twelfth of the year's tax, paid by the last day of each month (art. 37(5)). A new business pays no advances until its first return (art. 37(4)).
-- **Employees and other income (special procedure):** the Tax Administration assesses on its own and sends a provisional decision by 30 June (art. 51, art. 54(2)). Claims for dependants, disability, health contributions, gifts or foreign tax go on form ZPP-DOH by the end of February (art. 53(1)). Objections run to 31 July (art. 54(3)). A balance due is paid within 15 days of the objection deadline (art. 54(9)).
-- **Paušalni obrt:** quarterly tax by the last day of each quarter; PO-SD by 15 January 2027 for 2026 (art. 82(5), (6); Tax Administration paušalni page).
-- **Capital gains:** self-assessed and paid by the end of February 2027 for 2026 (art. 70(4), (14)).
+- **Annual return (DOH):** compulsory for the self-employed on books and for seafarers in international shipping (art. 48). It is filed by the end of February for the previous year (art. 50(2)). When the last day falls on a Sunday, a public holiday or another day the office is closed, the deadline moves to the next working day (General Administrative Procedure Act art. 81(2), applied through General Tax Act art. 4). 28 February 2027 is a Sunday, so the DOH for 2026 is due by Monday 1 March 2027. The Tax Administration applied the same rule for 2025 (2 March 2026).
+- **Self-employed tax due:** the balance on the return is due on the last day for filing (art. 46(12)). Monthly advances for the next period are one twelfth of the year's tax, each paid by the last day of the month for the previous month, starting with the month after the filing deadline (art. 37(2), (5)). A new business pays no advances until its first return (art. 37(4)).
+- **Employees and other income (special procedure):** the Tax Administration assesses on its own and sends a provisional decision by 30 June (art. 51, art. 54(2)). Claims for dependants, disability, health contributions, gifts or foreign tax go on form ZPP-DOH by the end of February (art. 53(1)); for 2026 that is 1 March 2027. Objections run to 31 July (art. 54(3)). A balance due is paid within 15 days of the objection deadline (art. 54(9)).
+- **Paušalni obrt:** quarterly tax by the last day of each quarter (Paušalni Ordinance art. 6(1)); PO-SD by 15 January 2027 for 2026, with any balance paid the same day (art. 82(6)).
+- **Capital gains:** self-assessed and paid by the end of February for the previous year (art. 70(4), (14)); for 2026 that is Monday 1 March 2027 (General Administrative Procedure Act art. 81(2)).
 - **Foreign income:** a resident who earns directly from abroad pays the advance within 30 days (art. 81(1)), or, if tax is paid abroad during the year, reports by 31 January (art. 81(3), (4)).
 
 ## Penalties and interest
@@ -140,7 +142,7 @@ From the Income Tax Act. Fines are set within these ranges.
 - **Payers (companies):** EUR 1,320 to 6,630 for not paying or underpaying withheld tax, not reporting payments, or not paying into a bank account (art. 91(1)); the responsible person EUR 260 to 1,320 (art. 91(4)). A self-employed payer: EUR 660 to 3,980 (art. 91(2)).
 - **No return filed, or wrong data:** the tax is set by estimate (art. 48(4), art. 82(7)).
 - **Unexplained assets:** 36% plus 100% (art. 78).
-- **Late payment interest** runs under the General Tax Act (art. 90 of the Income Tax Act). The rate is not in this skill.
+- **Late payment interest** runs from the day the tax was due (General Tax Act art. 130(1), (3), applied through Income Tax Act art. 90). Where an audit finds more tax, it runs from the day the tax should have been paid (General Tax Act art. 130(7)). The 2026 rate is not in this skill.
 
 ## Cross-border points
 
@@ -186,7 +188,7 @@ expected:
 
 ### Example 2: obrt on books in Split, base over EUR 60,000
 
-A sole trader in Split keeps books. In 2026 his business receipts are EUR 140,000 and his deductible expenses, including the contributions he paid, are EUR 65,000. He has no dependants and lives in Split all year. His income is EUR 75,000. After the EUR 7,200 annual allowance the base is EUR 67,800. The first EUR 60,000 is taxed at Split's lower rate of 21.5% (EUR 12,900). The other EUR 7,800 is taxed at Split's higher rate of 32% (EUR 2,496). Tax is EUR 15,396, due with the DOH return by the end of February 2027, less any advances already paid for 2026. From the month after the filing deadline he pays monthly advances of one twelfth, EUR 1,283 (art. 37(5)). He cannot be a paušalist: his receipts are over EUR 60,000.
+A sole trader in Split keeps books. In 2026 his business receipts are EUR 140,000 and his deductible expenses, including the contributions he paid, are EUR 65,000. He has no dependants and lives in Split all year. His income is EUR 75,000. After the EUR 7,200 annual allowance the base is EUR 67,800. The first EUR 60,000 is taxed at Split's lower rate of 21.5% (EUR 12,900). The other EUR 7,800 is taxed at Split's higher rate of 32% (EUR 2,496). Tax is EUR 15,396, due with the DOH return by Monday 1 March 2027 (28 February is a Sunday), less any advances already paid for 2026. From the month after the filing deadline he pays monthly advances of one twelfth, EUR 1,283 (art. 37(5)). He cannot be a paušalist: his receipts are over EUR 60,000.
 
 ```oa-check
 name: HR obrt on books in Split, base above EUR 60,000 (2026)
@@ -237,5 +239,10 @@ expected:
 | Tax Administration, Uobičajeno boravište za porezne svrhe | https://porezna-uprava.gov.hr/hr/uobicajeno-boraviste-za-porezne-svrhe/4142 | 2026-10-23 |
 | Tax Administration, Godišnji obračun poreza na dohodak (DOH and ZPP-DOH dates for 2025) | https://porezna-uprava.gov.hr/hr/godisnji-obracun-poreza-na-dohodak/3957 | 2026-10-23 |
 | Tax Administration, Primatelj kamata (12% on interest) | https://porezna-uprava.gov.hr/hr/primatelj-kamata/4471 | 2026-10-23 |
+| Pravilnik o paušalnom oporezivanju samostalnih djelatnosti, consolidated text NN 1/20, 1/21, 156/22, 15/23, 1/24, 16/25 (Tax Administration register) (art. 2 to 6) | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
+| Zakon o doprinosima, consolidated text NN 84/08 to 152/24 (Tax Administration register) (art. 13, 14, 17, 21.a) | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
+| Opći porezni zakon, consolidated text NN 115/16 to 151/25 (Tax Administration register) (art. 4, 130) | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
+| Zakon o općem upravnom postupku, NN 47/2009 (art. 81(2)) | https://narodne-novine.nn.hr/clanci/sluzbeni/2009_04_47_1065.html | 2026-10-24 |
+| Zakon o porezu na dodanu vrijednost, consolidated text (Tax Administration register) (art. 90(1), EUR 60,000) | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
 
-Not yet confirmed: the exact last filing day the Tax Administration will set for 2026 DOH returns (28 February 2027 is a Sunday); the late payment interest rate under the General Tax Act for 2026; the consolidated text of the Paušalni Ordinance (NN 1/20 to 16/25), read here only through the Tax Administration's 2026 band table; the tourist letting lump sum each local unit set for 2026; the employee contribution rates (15% and 5%) were read on the Tax Administration's paušalni page, not in the consolidated Contributions Act.
+Not yet confirmed: the late payment interest rate on tax debts for 2026 (General Tax Act art. 130(1) points to a separate law; no official text naming the 2026 rate for tax debts was found); the tourist letting lump sum each local unit set for 2026.
