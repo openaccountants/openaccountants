@@ -1,10 +1,10 @@
 ---
 name: iceland-income-tax
 description: Use this skill whenever asked about Iceland (Ísland) personal income tax for self-employed individuals and employees. Trigger on phrases like "how much tax do I pay in Iceland", "skattframtal", "RSK 1.01", "income tax return Iceland", "staðgreiðsla", "reiknað endurgjald", "calculated remuneration", "persónuafsláttur", "personal tax credit", "útsvar", "municipal tax", "tryggingagjald", "lífeyrissjóður pension", "capital income tax 22%", "VSK / VAT registration", "Skatturinn", or any question about filing or computing income tax for a self-employed (sjálfstætt starfandi) or employed individual resident in Iceland. Also trigger when preparing or reviewing an annual return (skattframtal) or business income statement (rekstrarframtal RSK 4.11), computing deductible expenses, or advising on monthly withholding (staðgreiðsla). This skill covers the 3-bracket combined state + municipal income tax, personal tax credit, capital income tax, mandatory occupational pension, tryggingagjald, calculated remuneration, penalties, and interaction with VAT (VSK). ALWAYS read this skill before touching any Icelandic income tax work.
-version: 0.1
+version: 0.9
 jurisdiction: IS
 tax_year: 2026
-last_updated: 2026-09-25
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -19,23 +19,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This method covers a resident individual's employment income, sole-trader income and ordinary private capital income for calendar 2026. Amounts are ISK. A return filed in 2026 normally reports 2025 income; the return for 2026 income is filed in 2027. Keep those periods separate. The published 2026 filing deadline is 13 March 2026 for the earlier income year; a 2027 filing deadline is not established by that notice. [Official source](https://www.skatturinn.is/english/individuals/filing-a-tax-return/)
 
-## Ask the client first
+## Who this applies to
 
-- Obtain arrival/departure dates, foreign residence certificates, municipality, age, marital/cohabitation status and the spouse's income and credit use. Ordinary unlimited liability includes worldwide income; residence and treaty outcomes require facts, not an Icelandic bank account. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
-- Collect payslips, taxable benefits, employer statements, pension certificates and withholding records from every payer. A net bank salary is not gross taxable salary. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
-- For business, collect invoices and credit notes, platform gross-sales/fees reports, bank and card statements, cash sales, receivables/payables, inventory, VAT registration/returns, asset register, pension/payroll returns and prior losses. Establish whether the relationship is employment or independent business. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
-- Obtain domestic and foreign interest/dividend statements, investment purchase and disposal costs, year-end balances, capital tax withheld, rental contracts/registration and property use. Confirm whether securities qualify for the listed-market allowance. [Official source](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/)
+Income Tax Act Article 1 includes Icelandic domicile and a stay **longer than 183 days** in any twelve-month period, counting normal holiday absences. A former domiciliary remains within the statutory rule for three years from the following New Year unless equivalent ordinary foreign tax liability and fulfilment are proved. Skatturinn's English page instead describes residence at six months or more. Preserve that boundary difference and resolve exact-183-day or treaty-residence cases under the [cross-border Guide](is-cross-border.md) before final calculation. The full-year examples assume ordinary unlimited liability throughout 2026. [Income Tax Act, Article 1](https://www.althingi.is/lagas/nuna/2003090.html), [English guidance](https://www.skatturinn.is/english/individuals/tax-liability/)
 
-## The method, step by step
-
-1. **Fix the taxpayer and period.** A stay of six months or more in a twelve-month period generally gives unlimited liability from arrival; shorter stays normally produce limited liability on Icelandic-source income. A former resident can remain liable for three years unless the foreign-tax-liability condition is proved. Check treaty residence and relief before calculating a cross-border final return. The full-year examples below assume ordinary unlimited liability throughout 2026. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
-2. **Build a reconciled income ledger.** Classify each receipt from its legal source and supporting document. Match invoices to gross platform sales, refunds, fees and net settlements. Identify transfers between own accounts, loans and capital contributions separately; a merchant name or bank description does not determine tax treatment. Reconcile opening cash/bank, movements and closing balances, then reconcile unpaid invoices and business liabilities. Establish the tax treatment of each grant or reimbursement from its conditions. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
-3. **Prepare the business result where applicable.** Start from business revenue, exclude collected VAT where applicable, and deduct substantiated business costs and permitted depreciation. Recoverable input VAT is not an income-tax expense; nonrecoverable VAT follows the underlying cost or asset. Calculate own remuneration separately, deduct it and employer costs in the business result, and carry remuneration plus the remaining taxable profit to the personal return. Do not tax turnover and profit again as additional personal income. [Income Tax Act, Articles 31 and 61](https://www.althingi.is/lagas/nuna/2003090.html) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
-4. **Compute personal earned-income tax.** Combine taxable employment benefits, calculated remuneration, taxable pensions/other income and business profit in their proper categories. Deduct eligible personal pension contributions once. Apply the annual state bands and actual municipal rate, then eligible credit. Reconcile withholding as a payment, not an expense. [Official source](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/) [Official source](https://www.skatturinn.is/einstaklingar/helstutolur/2026)
-5. **Compute capital income separately.** Distinguish private capital from business income, calculate gains from documented proceeds and tax basis, apply the specific allowance/exemption and reconcile capital withholding. Do not apply the personal credit to 2026 capital tax. [Official source](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/) [Official source](https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/)
-6. **Complete, submit and reconcile.** Check prefilled amounts against evidence, attach the correct business schedules, report foreign items and year-end assets/debts, submit and retain the acknowledgement. Compare the assessment with the return, withholding and approved relief; investigate differences before accepting the balance. [Official source](https://www.skatturinn.is/english/individuals/filing-a-tax-return/) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/) [Official source](https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026)
-
-## Rates, personal credit and pension deductions
+## Rates, bands and thresholds
 
 ### Monthly withholding for 2026
 
@@ -49,9 +37,9 @@ The combined withholding rates include average municipal tax of 14.94%. They are
 
 Source for the table: [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026).
 
-At assessment the municipal tax (útsvar) is charged at the rate of the municipality of legal domicile, on the same base as state income tax. The law allows a municipal rate of no more than 14.97% and no less than 12.44%, so a final bill can be higher or lower than the 14.94% withheld. A person domiciled in more than one municipality during the year pays municipal tax to each in proportion to the time lived there. [Act 4/1995, Articles 20, 21 and 23](https://www.althingi.is/lagas/nuna/1995004.html) [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026)
+At assessment the municipal tax (útsvar) is charged at the rate of the municipality of legal domicile, on the same base as state income tax. Article 23 gives the ordinary municipal-rate range of 12.44% to 14.97%, so a final bill can be higher or lower than the 14.94% withheld. Confirm the municipality’s actual rate and any applicable Article 24 change or exceptional surcharge rather than treating that ordinary range as a complete rule for every case. A person domiciled in more than one municipality during the year pays municipal tax to each in proportion to the time lived there. [Act 4/1995, Articles 20–24](https://www.althingi.is/lagas/nuna/1995004.html) [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026)
 
-The monthly personal credit is 72,492. Use the credit available for the taxpayer and period, accounting for other employers and earlier use. The credit is available to individuals domiciled in Iceland aged 16 or over; a person who turns 16 during the year gets the full credit for the whole year. Credit not used in one month accumulates and can be used later in the same year, but unused credit does not carry to the next year. [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/)
+The monthly personal credit is 72,492. Use the credit available for the taxpayer and period, accounting for other employers and earlier use. For ordinary residents the age condition is met for the entire year in which the person turns 16. Residence and qualifying-stay limits still apply: eligible temporary employees under Article 3(1) have a day-based credit, not an automatic full-year credit. Use the [cross-border status and annualisation method](is-cross-border.md) for that case. [Posted-worker credit](https://www.skatturinn.is/english/individuals/posted-workers/) Credit not used in one month accumulates and can be used later in the same year, but unused credit does not carry to the next year. [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/)
 
 Mandatory employee pension contributions are deductible up to 4% of the contribution base, and qualifying regularly paid additional private-pension contributions up to another 4%. Both deductions require the contributions to be paid regularly. These deductions also apply to qualifying own remuneration; employer pension payments are a separate business cost. The employer withholding form calculates an employer counter-contribution of 11.5% against the 4% employee contribution; a different agreed rate can be entered. No contributions are due for an employee aged 70 or over, and children aged 15 or younger do not pay into a pension fund. [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026) [Official source](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/) [Employer notice 1/2026](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf)
 
@@ -65,7 +53,15 @@ For a person resident for only part of the year, Article 69 sets the method: div
 
 Children born in 2011 or later pay 6% on employment income above 300,000 in 2026 and receive no personal credit. Other child income generally belongs with the relevant parent's taxable income under the statutory rules; it is not automatically covered by this employment exemption. A child turning sixteen in the year enters the ordinary regime. [Official source](https://www.skatturinn.is/einstaklingar/helstutolur/2026) [Official source](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026) [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
 
-## Sole traders: remuneration, expenses and losses
+## The base
+
+1. **Build a reconciled income ledger.** Classify each receipt from its legal source and supporting document. Match invoices to gross platform sales, refunds, fees and net settlements. Identify transfers between own accounts, loans and capital contributions separately; a merchant name or bank description does not determine tax treatment. Reconcile opening cash/bank, movements and closing balances, then reconcile unpaid invoices and business liabilities. Establish the tax treatment of each grant or reimbursement from its conditions. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
+2. **Prepare the business result where applicable.** Start from business revenue, exclude collected VAT where applicable, and deduct substantiated business costs and permitted depreciation. Recoverable input VAT is not an income-tax expense; nonrecoverable VAT follows the underlying cost or asset. Calculate own remuneration separately, deduct it and employer costs in the business result, and carry remuneration plus the remaining taxable profit to the personal return. Do not tax turnover and profit again as additional personal income. [Income Tax Act, Articles 31 and 61](https://www.althingi.is/lagas/nuna/2003090.html) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
+3. **Compute personal earned-income tax.** Combine taxable employment benefits, calculated remuneration, taxable pensions/other income and business profit in their proper categories. Deduct eligible personal pension contributions once. Apply the annual state bands and actual municipal rate, then eligible credit. Reconcile withholding as a payment, not an expense. [Official source](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/) [Official source](https://www.skatturinn.is/einstaklingar/helstutolur/2026)
+4. **Compute capital income separately.** Distinguish private capital from business income, calculate gains from documented proceeds and tax basis, apply the specific allowance/exemption and reconcile capital withholding. Do not apply the personal credit to 2026 capital tax. [Official source](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/) [Official source](https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/)
+5. **Complete, submit and reconcile.** Check prefilled amounts against evidence, attach the correct business schedules, report foreign items and year-end assets/debts, submit and retain the acknowledgement. Compare the assessment with the return, withholding and approved relief; investigate differences before accepting the balance. [Official source](https://www.skatturinn.is/english/individuals/filing-a-tax-return/) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/) [Official source](https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026)
+
+### Sole traders: remuneration, expenses and losses
 
 Own remuneration (reiknað endurgjald) reflects the salary an unrelated person would receive for comparable work. Select the published 2026 occupation, staffing and work-scope category, record the facts and calculate the appropriate benchmark. It is not simply the cash drawn from the business. For example, category B5 for qualifying general business outside the specialist categories, run alone or with the stated small staffing complement, shows 933,000 monthly / 11,196,000 annually for the full-time benchmark. Do not apply B5 to a specialist covered by category A. [Official source](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026)
 
@@ -78,7 +74,7 @@ Check these conditions on the benchmark before using it:
 
 A lower amount than the benchmark needs written explanations and supporting documents, and Skatturinn may depart from the minimum only on that basis. If Skatturinn does not accept a lower figure and raises it, the increase may not create a loss in the business beyond the year's ordinary depreciation; for an old-age or disability pensioner with their own business it may not create a loss at all. Benefits are added to the benchmark at their assessed value. [Official source](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026)
 
-Own remuneration of less than 700,000 a year falls outside withholding, and the startup guidance says an individual whose own remuneration does not exceed 700,000 for a full year need not register on the employer register. The remuneration still goes on the return and income and municipal tax are charged at assessment; the threshold is not an income-tax exemption. The two Skatturinn pages word the boundary differently ("less than" and "does not exceed"), so at exactly 700,000 confirm the treatment with Skatturinn. Separately, if the approved remuneration is so low that no withholding arises, the person may apply to file the own-remuneration return once a year; if approved, the personal credit must not be used against other income. [Official source](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
+For sufficiently minor self-employment, [Regulation 591/1987, Article 2(8)](https://files.reglugerd.is/pdf/0591-1987/current), effective 1 January 2026, excludes own remuneration **no higher than 700,000 for a full year** from withholding. That includes exactly 700,000 under the regulation; annualise the remuneration rather than testing only receipts from a short activity. Article 8 preserves the return and underlying tax obligations, so this is not an income-tax exemption. Startup guidance also says own remuneration not exceeding that full-year amount need not be on the employer register, while the separate 2026 remuneration page says less than that amount. The primary regulation settles the withholding boundary; confirm any disputed registration procedure separately, including whether wages paid to others create employer obligations. Separately, if the approved remuneration is so low that no withholding arises, the person may apply to file the own-remuneration return once a year; if approved, the personal credit must not be used against other income. [Official source](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 
 Otherwise register the business and the applicable employer/VAT obligations before starting; the startup guidance requires notification at least eight days before commencement. Monthly payroll withholding has a due date on the first day of the following month and final payment date on the fifteenth. Check the actual registered filing arrangement and any applicable special rule. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 
@@ -98,9 +94,13 @@ For ordinary office equipment, the statutory depreciation range is 20–35%, nor
 
 A sole trader's business loss does not reduce unrelated salary merely because both are on one return. Article 31 permits unused losses from the ten years preceding the income year, provided the loss and remaining balance were adequately reported when incurred. A substantial change in the business can prevent use unless justified by normal business purposes. Maintain a schedule by originating year, amounts used and remaining expiry; do not deduct an unsupported opening loss. [Act, Articles 31 and 61](https://www.althingi.is/lagas/nuna/2003090.html) [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
 
-## Capital income, investments and rental receipts
+For a planned transfer into an ehf., use the [corporate Guide's Article 56 incorporation workpaper](is-corporate-income-tax.md). The conditional domestic route requires all business assets/liabilities, continuing activity, shares-only consideration and the audited balance/formation evidence; it does not make every owner-to-company transfer tax neutral. The owner retains liability for pretransfer public levies, and an accepted book revaluation does not increase the continuing tax basis. [Income Tax Act, Article 56](https://www.althingi.is/lagas/nuna/2003090.html); [Regulation 223/2003](https://files.reglugerd.is/pdf/0223-2003/current)
+
+### Capital income, investments and rental receipts
 
 Ordinary private capital income is taxed at 22% in 2026. The combined annual exemption of 300,000 for an individual (600,000 for eligible jointly assessed spouses) applies first to interest, then eligible dividends and then eligible share gains meeting the regulated-market conditions. It is not a blanket exemption for every private-company dividend or every gain. Preserve statements proving listing/market eligibility, basis, expenses, proceeds and withholding. Business investment income remains in the business regime where the law requires it. Capital income carries no municipal tax and does not push earned income into a higher band. Banks and paying companies withhold 22% from interest and dividends without applying the allowance; the allowance is given at assessment, which can produce a refund. Capital gains and rent have no withholding and are paid after assessment. For jointly taxed spouses, capital income is added together and taxed with the spouse whose employment income is higher. [Official source](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/) [Act, Articles 62 and 66](https://www.althingi.is/lagas/nuna/2003090.html) [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
+
+**Employee share options require two different bases.** Use the [payroll Guide's Article 9/10/10a classification and examples](iceland-payroll.md). Ordinary Article 9 employment income is fixed as exercise market value less contract price, with income taxation deferred until ownership changes; employer levy and exercise reporting have their separate timing. Article 18 uses that exercise market value as the later capital basis, subject to same-class average cost. A proved Article 10 or 10a capital plan instead taxes its specified sale-minus-original-contract-price amount; do not grant it the ordinary wage-option basis uplift. Preserve annual asset/deferred-tax records and establish the actual ownership-change event, eligibility, foreign allocation and reporting procedure. The published RSK 2.085 reverse conflicts with the current ordinary Article 9 calculation, as recorded in the payroll method. [Current Act, Articles 9, 10, 10a and 18](https://www.althingi.is/lagas/nuna/2003090.html); [official option income/reporting guidance](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/); [published RSK 2.085](https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf)
 
 For qualified residential letting outside business, 25% of gross rent is exempt in 2026, so 75% is taxed at 22%. The conditions include a housing-law lease registered in the housing register and no more than two separately identified residential properties under the nonbusiness rule. Ordinary operating costs are not additionally deducted from this gross-rent basis. A specific offset for rent paid on the owner's own residence can apply where the rented-out property was originally acquired for own use; establish the conditions and use the rental schedule rather than subtracting all housing costs. [Official source](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/) [Act, Articles 58a and 66](https://www.althingi.is/lagas/nuna/2003090.html)
 
@@ -108,16 +108,14 @@ Home accommodation must be registered with the district commissioner and have a 
 
 Qualifying home accommodation within the 2,000,000 gross-receipts limit across the owners is a separate regime: capital tax applies to gross income without the residential-rent exemption. Failure of the applicable conditions can put the whole year's activity into business taxation. Commercial-premises letting and other business rental activity need the business computation. Do not grant the housing exemption solely because a platform calls a stay residential. [Official source](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/) [Act, Article 58a](https://www.althingi.is/lagas/nuna/2003090.html)
 
-Foreign income is not omitted because no Icelandic withholding occurred. Report the corresponding foreign income, year-end asset and foreign tax with documentary exchange-rate and treaty-relief support. A private asset disposal needs its own gain/exemption classification; this guide does not establish a universal exemption for property, cryptocurrency or private-company transactions. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/) [Published return layout](https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf)
-
-## Filing schedules and assessment
+## Deadlines and filing
 
 Use the current year's live form instructions. The dedicated business-filing guidance currently specifies:
 
-- RSK 4.10 only for small incidental activity with turnover below 2,000,000, no VAT registration, no depreciable business assets and no car-cost deduction. [Source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
+- RSK 4.10 only for small incidental activity with turnover below 2,000,000, no VAT registration, no wages paid to others, no depreciable business assets and no car-cost deduction. The startup guidance expressly adds the no-wages condition to the dedicated filing summary. [Filing summary](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/) [Startup conditions](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 - RSK 4.11 for turnover from 2,000,000 through 30,000,000; VAT-registered activity below the lower threshold also uses the business statement. [Source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
 - RSK 1.04 above 30,000,000; smaller businesses may choose it. Agriculture has its separate schedule. [Source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
-- Conflict to resolve: Skatturinn's startup guidance still says that a sole trader whose business revenue exceeds 20,000,000 must file annual accounts and RSK 1.04 instead of the business statement. For turnover between 20,000,000 and 30,000,000, confirm the current requirement with Skatturinn or the live form instructions before choosing RSK 4.11. [Source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
+- Conflict to resolve: the startup page's filing list and annual-accounts section use 30,000,000, matching the dedicated filing summary, but its bookkeeping section and later filing/annual-accounts FAQs still use 20,000,000. For turnover between 20,000,000 and 30,000,000, confirm the current requirement with Skatturinn or the live form instructions before choosing RSK 4.11. [Source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 - RSK 4.05 reconciles remuneration, profit, assets, debts and prior losses into the personal return RSK 1.01. RSK 4.01 maintains depreciable assets. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/)
 
 Check the return sections for gross wages/benefits, own remuneration, business profit, pension deductions, foreign income, withholding, interest, dividends, disposal gains, rent, assets and debts. Reconcile gross earnings less personal pension deductions to the taxable base, business schedules to the ledger, and all payment credits to statements. The published 2026 form is a useful layout for **2025 income**; do not assume its field numbers or annual values remain unchanged for the 2027 return. [Official source](https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf) [Official source](https://www.skatturinn.is/english/individuals/filing-a-tax-return/)
@@ -135,11 +133,19 @@ Under the 2026 assessment rules (2025 income):
 
 An individual may appeal within three months of the announced completion of assessment. A late return within the appeal period can be treated as an appeal. After the ordinary period, the authority can consider an amendment request reaching up to six years back from the request year, subject to new information/material-interest conditions; this is not an automatic six-year entitlement. Skatturinn's power to raise tax reaches the income of the six years before the year of reassessment, but only two years back if the taxpayer's return and attachments gave adequate information for a correct assessment. Preserve the original return, correction, documents, explanation and submission receipt. [Official source](https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala)
 
-Late or defective returns carry statutory surcharges on the tax base, not a flat fine. A person who files no return is assessed on an estimate set high enough not to understate the income, and Skatturinn may add up to 15% to the estimated bases. A return received after the deadline but before assessment is finished may carry only 0.5% per day of delay, capped at 10%. Defective or wrongly reported items may carry 25%, reduced to at most 15% if the taxpayer corrects them before assessment. The surcharge is cancelled if the taxpayer shows they were not at fault or were prevented by circumstances beyond their control. Intentional or grossly negligent understatement is a separate offence with fines of at least twice and up to ten times the tax evaded. [Act, Articles 96, 108 and 109](https://www.althingi.is/lagas/nuna/2003090.html) [Official source](https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala)
-
 Business accounting books and supporting records, including electronic records, are retained for seven years from the end of the relevant accounting year; annual accounts for twenty-five years. Preserve records supporting continuing asset values or disputed assessments as long as they remain needed. [Official retention guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 
-## Worked cases
+## Penalties and interest
+
+Late or defective returns carry statutory surcharges on the tax base, not a flat fine. A person who files no return is assessed on an estimate set high enough not to understate the income, and Skatturinn may add up to 15% to the estimated bases. A return received after the deadline but before assessment is finished may carry only 0.5% per day of delay, capped at 10%. Defective or wrongly reported items may carry 25%, reduced to at most 15% if the taxpayer corrects them before assessment. The surcharge is cancelled if the taxpayer shows they were not at fault or were prevented by circumstances beyond their control. Intentional or grossly negligent understatement is a separate offence with fines of at least twice and up to ten times the tax evaded. [Act, Articles 96, 108 and 109](https://www.althingi.is/lagas/nuna/2003090.html) [Official source](https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala)
+
+## Cross-border points
+
+Foreign income is not omitted because no Icelandic withholding occurred. Report the corresponding foreign income, year-end asset and foreign tax with documentary exchange-rate and treaty-relief support. A private asset disposal needs its own gain/exemption classification; this guide does not establish a universal exemption for property, cryptocurrency or private-company transactions. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/) [Published return layout](https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf)
+
+Use the [cross-border Guide](is-cross-border.md) for residence, treaty, source-payment and departure screening. The cross-border Guide supplies the resident foreign-relief workpaper and a full-year individual progressive-tax credit example, alongside the separate company example. Establish the actual treaty branch, covered taxes, supported earned-income bases, personal credit and foreign tax paid; a company's flat-rate example does not determine the individual result. The stated individual method excludes unused-credit, spouse, part-year and multiple-country/category cases pending their own determination.
+
+## Worked examples that recompute
 
 All amounts below are explicit hypothetical facts, not client data. Calculations retain decimals to show the method; use the portal's required rounding for filing.
 
@@ -177,7 +183,7 @@ Invoices total 1,000,000 excluding VAT; a platform retains documented business f
 
 ### I — form selection and correction boundary
 
-An incidental activity below 2,000,000 turnover that owns depreciable business equipment fails the conditions for RSK 4.10. Prepare the appropriate fuller business statement and asset register. An omitted foreign-interest statement discovered after assessment requires recomputing the affected income and payment credits and submitting an appeal/correction through the applicable route; changing a spreadsheet alone does not amend the assessed return. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/) [Official source](https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala)
+An incidental activity below 2,000,000 turnover that owns depreciable business equipment fails the conditions for RSK 4.10. Prepare the appropriate fuller business statement and asset register. Separately, an activity with 1,500,000 turnover, no VAT registration, no depreciable assets and no car deduction still fails the simplified route if it paid wages to another person; do not treat the turnover test as sufficient. [Startup eligibility](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/) An omitted foreign-interest statement discovered after assessment requires recomputing the affected income and payment credits and submitting an appeal/correction through the applicable route; changing a spreadsheet alone does not amend the assessed return. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/) [Official source](https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala)
 
 ### J — home-accommodation boundaries
 
@@ -211,28 +217,202 @@ A sole trader in category B5 (benchmark 11,196,000) also holds a permanent salar
 
 A privately owned car has running costs of 900,000 in the year and the log shows 6,000 business kilometres out of 20,000 in total. The business share is 30%, so the deduction is **270,000**; with no kilometre record the deduction is nil. A passenger car held as a business asset is depreciated at 10–20%, not the 20–35% used for office equipment. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/) [Act, Article 37](https://www.althingi.is/lagas/nuna/2003090.html)
 
+### Recomputable arithmetic controls
+
+These controls implement the stated hypothetical cases. Entitlement, source documents and filing rounding must be established separately; inputs are not client facts.
+
+```oa-check
+name: Iceland individual A, monthly earned income 2026
+inputs:
+  wages: 800000
+  paid_pension: 32000
+  first_ceiling: 498122
+  credit: 72492
+steps:
+  - base: wages - paid_pension
+  - withholding: first_ceiling * 0.3149 + (base - first_ceiling) * 0.3799 - credit
+  - net_cash: wages - paid_pension - withholding
+expected:
+  base: 768000
+  withholding: 186893.27
+  net_cash: 581106.73
+```
+
+```oa-check
+name: Iceland individual B, annual state and municipal computation 2026
+inputs:
+  taxable_income: 9216000
+  first_annual_ceiling: 5977470
+  established_municipal_rate: 0.1494
+  annual_credit: 869898
+steps:
+  - state_tax: first_annual_ceiling * 0.1655 + (taxable_income - first_annual_ceiling) * 0.2305
+  - municipal_tax: taxable_income * established_municipal_rate
+  - total_before_payments: max(0, state_tax + municipal_tax - annual_credit)
+expected:
+  state_tax: 1735752.45
+  municipal_tax: 1376870.40
+  total_before_payments: 2242724.85
+```
+
+```oa-check
+name: Iceland individual C, remuneration plus residual profit is not turnover
+inputs:
+  business_revenue: 20000000
+  other_deductible_costs: 4000000
+  established_remuneration: 11196000
+  documented_employer_pension: 1287540
+steps:
+  - levy_base: established_remuneration + documented_employer_pension
+  - levy: levy_base * 0.0635
+  - residual_profit: business_revenue - other_deductible_costs - established_remuneration - documented_employer_pension - levy
+  - personal_income_before_pension: established_remuneration + residual_profit
+expected:
+  levy: 792704.79
+  residual_profit: 2723755.21
+  personal_income_before_pension: 13919755.21
+```
+
+```oa-check
+name: Iceland individual D, allowance only on qualifying capital income
+inputs:
+  interest: 200000
+  eligible_listed_dividends: 180000
+  private_company_dividends: 100000
+  allowance: 300000
+steps:
+  - interest_allowance: min(interest, allowance)
+  - remaining_allowance: allowance - interest_allowance
+  - eligible_dividend_allowance: min(eligible_listed_dividends, remaining_allowance)
+  - taxable_capital: interest - interest_allowance + eligible_listed_dividends - eligible_dividend_allowance + private_company_dividends
+  - capital_tax: taxable_capital * 0.22
+expected:
+  interest_allowance: 200000
+  eligible_dividend_allowance: 100000
+  taxable_capital: 180000
+  capital_tax: 39600
+```
+
+```oa-check
+name: Iceland individual E and J, distinct residential and home-accommodation bases
+inputs:
+  qualifying_residential_rent: 2400000
+  qualifying_home_accommodation: 2000000
+steps:
+  - residential_base: qualifying_residential_rent * 0.75
+  - residential_tax: residential_base * 0.22
+  - home_accommodation_tax: qualifying_home_accommodation * 0.22
+expected:
+  residential_base: 1800000
+  residential_tax: 396000
+  home_accommodation_tax: 440000
+```
+
+```oa-check
+name: Iceland individual F, child's employment allowance boundary
+inputs:
+  qualifying_child_wages: 500000
+  allowance: 300000
+steps:
+  - child_tax: max(0, qualifying_child_wages - allowance) * 0.06
+  - exact_boundary_tax: max(0, allowance - allowance) * 0.06
+expected:
+  child_tax: 12000
+  exact_boundary_tax: 0
+```
+
+```oa-check
+name: Iceland individual K, continuing asset ordinary-depreciation floor
+inputs:
+  original_cost: 600000
+  opening_value: 65000
+  chosen_rate: 0.20
+steps:
+  - residual_floor: original_cost * 0.10
+  - scheduled_depreciation: opening_value * chosen_rate
+  - allowed_depreciation: min(scheduled_depreciation, max(0, opening_value - residual_floor))
+  - closing_value: opening_value - allowed_depreciation
+expected:
+  scheduled_depreciation: 13000
+  allowed_depreciation: 5000
+  closing_value: 60000
+```
+
+```oa-check
+name: Iceland individual N, base surcharges do not equal tax due
+inputs:
+  estimated_base: 9000000
+steps:
+  - maximum_nonfiler_base: estimated_base * 1.15
+  - eight_day_late_base_rate: min(8 * 0.005, 0.10)
+expected:
+  maximum_nonfiler_base: 10350000
+  eight_day_late_base_rate: 0.04
+```
+
+```oa-check
+name: Iceland individual P, other-job remuneration reduction and floor
+inputs:
+  benchmark: 11196000
+  other_permanent_job_pay: 8000000
+steps:
+  - permitted_reduction: max(0, other_permanent_job_pay - benchmark * 0.50)
+  - minimum_floor: benchmark * 0.25
+  - reduced_benchmark: max(minimum_floor, benchmark - permitted_reduction)
+expected:
+  permitted_reduction: 2402000
+  minimum_floor: 2799000
+  reduced_benchmark: 8794000
+```
+
+## Ask the client first
+
+- Obtain arrival/departure dates, foreign residence certificates, municipality, age, marital/cohabitation status and the spouse's income and credit use. Ordinary unlimited liability includes worldwide income; residence and treaty outcomes require facts, not an Icelandic bank account. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
+- Collect payslips, taxable benefits, employer statements, pension certificates and withholding records from every payer. A net bank salary is not gross taxable salary. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/)
+- For business, collect invoices and credit notes, platform gross-sales/fees reports, bank and card statements, cash sales, receivables/payables, inventory, VAT registration/returns, asset register, pension/payroll returns and prior losses. Establish whether the relationship is employment or independent business. [Official source](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
+- Obtain domestic and foreign interest/dividend statements, investment purchase and disposal costs, year-end balances, capital tax withheld, rental contracts/registration and property use. Confirm whether securities qualify for the listed-market allowance. [Official source](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/)
+
 ## When to refuse or refer
 
 - Do not give a final filing figure when residence, the municipality, gross remuneration, pension eligibility, prior losses or investment basis is missing. Identify the exact missing evidence and continue the supported parts.
 - Obtain specialist resolution for conflicting treaty residence, foreign social-security coverage, cross-border business establishments, business incorporation/cessation, special pension arrangements or disputed remuneration classification.
-- Refer a foreign expert who may qualify for the Article 30 relief (a deduction of 25% of employment income for the first three years; it needs an employer based in Iceland, no residence in Iceland in the previous 60 months, scarce expertise, and a written application to the approving committee no later than three months after starting work); this guide does not apply it. [Act, Article 30](https://www.althingi.is/lagas/nuna/2003090.html)
+- Refer a foreign expert who may qualify for the Article 30 relief (a deduction of 25% of employment income for the first three years; it requires employment by a qualifying legal entity domiciled or having a permanent establishment in Iceland that pays the specialist income, no Icelandic residence or domicile during the preceding continuous 60-month period with the first three months of Icelandic stay excluded from that test, scarce expertise, and a written application with supporting material reaching the approving committee no later than three months after starting work; check the implementing regulation and obtain approval before applying the relief); this guide does not apply it. [Act, Article 30](https://www.althingi.is/lagas/nuna/2003090.html)
 - Do not apply ordinary private-capital or rental shortcuts to a transaction whose business, property, crypto or exemption classification is unproved. Preserve the transaction and calculate the established ordinary categories while resolving that branch.
 - Do not submit an estimate as a complete reconciled return or call an AI/source review professional attestation.
 
 <!-- openaccountants-cta-block -->
 
----
+## Talk to an accountant
 
-## Talk to a verified accountant
+For advice on your facts, [contact OpenAccountants](https://www.openaccountants.com/contact).
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+## Sources
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+Primary pages accessed on 23 October 2026. The example inputs and residence wording were checked in this pass; unresolved scope and administrative conflicts remain stated above. No professional attestation is implied.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+| Official source | Read on |
+| --- | --- |
+| [1995004.html](https://www.althingi.is/lagas/nuna/1995004.html) | 2026-10-23 |
+| [2003090.html](https://www.althingi.is/lagas/nuna/2003090.html) | 2026-10-23 |
+| [Ordinary option reporting, income-tax deferral and employee-plan conditions](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/) | 2026-10-23 |
+| [RSK 2.085 published option report; discrepancy retained](https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf) | 2026-10-23 |
+| [atvinnurekstur/ad-hefja-rekstur/framtalsskil](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/framtalsskil/) | 2026-10-23 |
+| [atvinnurekstur/ad-hefja-rekstur/stofna-rekstur](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/) | 2026-10-23 |
+| [atvinnurekstur/skattar-og-gjold/tryggingagjald](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald) | 2026-10-23 |
+| [atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026) | 2026-10-23 |
+| [einstaklingar/fjarmagnstekjur/leigutekjur](https://www.skatturinn.is/einstaklingar/fjarmagnstekjur/leigutekjur/) | 2026-10-23 |
+| [einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026](https://www.skatturinn.is/einstaklingar/framtal-og-alagning/alagningarsedill-og-forsendur/2026) | 2026-10-23 |
+| [einstaklingar/helstutolur/2026](https://www.skatturinn.is/einstaklingar/helstutolur/2026) | 2026-10-23 |
+| [einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala](https://www.skatturinn.is/einstaklingar/kaerur-og-malsmedferd/ferill-agreiningsmala) | 2026-10-23 |
+| [einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/fjarmagnstekjuskattur/) | 2026-10-23 |
+| [einstaklingar/skattar-og-gjold/utvarpsgjald](https://www.skatturinn.is/einstaklingar/skattar-og-gjold/utvarpsgjald/) | 2026-10-23 |
+| [einstaklingar/stadgreidsla/personuafslattur](https://www.skatturinn.is/einstaklingar/stadgreidsla/personuafslattur/) | 2026-10-23 |
+| [einstaklingar/stadgreidsla/stadgreidsla/2026](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026) | 2026-10-23 |
+| [einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/idgjald-i-lifeyrissjodi/) | 2026-10-23 |
+| [english/individuals/filing-a-tax-return](https://www.skatturinn.is/english/individuals/filing-a-tax-return/) | 2026-10-23 |
+| [english/individuals/tax-liability](https://www.skatturinn.is/english/individuals/tax-liability/) | 2026-10-23 |
+| [media/2026/rsk_0601_1_2026.is.pdf](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) | 2026-10-23 |
+| [media/rsk01/rsk_0110_2026.en.pdf](https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf) | 2026-10-23 |
+| [](https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2025/12/23/Skattabreytingar-a-arinu-2026/) | 2026-10-23 |
+| [Posted-worker personal credit](https://www.skatturinn.is/english/individuals/posted-workers/) | 2026-10-23 |
+| [Payments outside withholding, Regulation 591/1987, current from 1 January 2026](https://files.reglugerd.is/pdf/0591-1987/current) | 2026-10-23 |
