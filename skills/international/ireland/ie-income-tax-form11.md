@@ -32,7 +32,7 @@ See also: `ie-payroll` (PAYE under the RPN, Class A PRSI), `ie-usc` (USC in dept
   - you are a **proprietary director**: you own, or can control directly or indirectly, more than 15% of the company's ordinary share capital;
   - you have PAYE income and non-PAYE income over EUR 5,000 net (after capital allowances, expenses and losses carried forward), or over EUR 30,000 gross (before capital allowances and losses);
   - your income is only rental, foreign or other non-PAYE income;
-  - you opened a foreign bank account in the year (unless it is reported under DAC2/CRS or FATCA, is not in a listed territory under s.835YA, and you are not otherwise chargeable).
+  - you are resident in Ireland and opened a foreign bank account in the year (s.895; not if it is reported under DAC2/CRS or FATCA, is not in a listed territory under s.835YA, and you are not otherwise chargeable).
 - **The EUR 5,000 and EUR 30,000 tests.** Section 959B takes out of self-assessment a PAYE worker whose net non-PAYE income does not exceed EUR 5,000 (and gross does not exceed EUR 30,000), where it is coded against their credits or fully taxed at source. This exclusion does not apply to company directors or their jointly assessed spouses, unless the company is dormant ([Revenue, Notes for Guidance Part 41A, s.959B](https://www.revenue.ie/en/tax-professionals/documents/notes-for-guidance/tca/part41a.pdf)). Below the limits, the person uses Form 12 in myAccount ([Revenue, who should register](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx)).
 - **Out:** companies (they file CT1, see `ie-corporation-tax`; a proprietary director still files their own Form 11); the partnership itself (the precedent partner files Form 1 (Firms), s.959M; each partner then puts their share on their own Form 11); a PAYE-only employee (Form 12, see `ie-paye-rental-nonresident`).
 - **Residence** decides what is taxed: see `ie-cross-border`. A non-resident files Form 11 for Irish-source income above the limits.
@@ -89,7 +89,7 @@ Budget 2027 (6 October 2026) announced changes for 2027. They are not law until 
 
 **Step 8: USC and PRSI.** Both are self-assessed on Form 11 and paid with income tax.
 - USC: on total income after capital allowances (active traders) but **before** pension contributions; the surcharge tests non-PAYE income only. Use `ie-usc`.
-- PRSI Class S: on gross income after capital allowances, before pension contributions; minimum EUR 650 ([Revenue, PRSI](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)). Use `ie-prsi-class-s`. Department of Social Protection pensions and benefits are exempt from PRSI ([Guide, PRSI for the self-employed](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
+- PRSI Class S: on gross income after capital allowances, before pension contributions; minimum EUR 650 ([Revenue, PRSI](https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx)). Pension contributions get income tax relief only, not PRSI or USC relief ([Revenue, pension relief](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx)). Use `ie-prsi-class-s`. Department of Social Protection pensions and benefits are exempt from PRSI ([Guide, PRSI for the self-employed](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/guide-pay-file.pdf)).
 
 **Step 9: self-assessment.** Total income tax, USC and PRSI, less tax deducted at source and preliminary tax paid, gives the balance due or overpaid (Panel P).
 
@@ -153,9 +153,9 @@ expected:
 
 ### Example 2: trader with a car, rental income, a pension and the USC surcharge (2026)
 
-Ciaran, single, aged 42, an active sole trader, has trading profit of EUR 95,000 before capital allowances. In 2026 he buys a car for EUR 40,000 with CO2 of 130 g/km (VRT category B), used 80% for business, and a laptop for EUR 2,400. He has Case V rental profit of EUR 12,000 and pays EUR 8,000 into a PRSA.
+Ciaran, single, aged 42, an active sole trader, has trading profit of EUR 95,000 before capital allowances. In 2026 he buys a new car for EUR 40,000 with CO2 of 130 g/km (VRT category B), used 80% for business, and a laptop for EUR 2,400. He has Case V rental profit of EUR 12,000 and pays EUR 8,000 into a PRSA.
 
-Capital allowances: the car is category B, so the cost that qualifies is the lower of 50% of 24,000 and 50% of 40,000, which is 12,000. 12.5% of that is 1,500; at 80% business use, 1,200. Laptop: 2,400 x 12.5% = 300. Total 1,500. Trading profit 93,500. Total income with rent: 105,500.
+Capital allowances: the car is category B, so the cost that qualifies is the lower of 50% of 24,000 and 50% of its retail price new (40,000), which is 12,000. 12.5% of that is 1,500; at 80% business use, 1,200. Laptop: 2,400 x 12.5% = 300. Total 1,500. Trading profit 93,500. Total income with rent: 105,500.
 
 Pension: his limit is 25% of net relevant earnings of 93,500 (under the 115,000 cap) = 23,375, so all 8,000 is relieved. Taxable income 97,500. Income tax: 8,800 + 40% of 53,500 (21,400) = 30,200, less credits 4,000 = EUR 26,200.
 
@@ -228,6 +228,7 @@ Refer to a practitioner: partnerships' own accounts (Form 1 (Firms)), the High I
 | Revenue, Do you need to pay PRSI | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/prsi-need-pay.aspx | 2026-10-24 |
 | Revenue, High Income Earner Restriction | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/hier.aspx | 2026-10-24 |
 | Revenue, Tax relief limits on pension contributions | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx | 2026-10-24 |
+| Revenue, Tax relief for pension contributions (income tax relief only; no USC or PRSI relief) | https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx | 2026-10-24 |
 | Revenue, Tax and Duty Manual, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 | Department of Social Protection, PRSI Class S rates | https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ | 2026-10-24 |
 
