@@ -1,47 +1,57 @@
 ---
 name: li-tax-overview
-description: "Source-cited draft: tax overview for Liechtenstein (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Route 2026 Liechtenstein tax questions to the applicable source Guide and
+  country gap register. Use for individual wealth-and-income tax, corporate profit,
+  VAT, payroll/social contributions, transfer pricing, cross-border and formation
+  intake. Identify the person, entity, country and period before choosing a method.
+  This overview replaces the earlier approximate rate/deadline summary with a
+  routing map; it supplies no standalone liability, treaty entitlement or filing
+  instruction. The linked Guides contain the actual rules, sources, calculations
+  and limits. All remain source-cited drafts with partial domain coverage, pending
+  named Liechtenstein accountant review; presence is
+  not proof of completeness.
 jurisdiction: LI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
+version: 0.2
 ---
 
-# Liechtenstein Tax Overview
+# Liechtenstein tax overview v0.2
 
-## The Liechtenstein tax system at a glance
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
-Liechtenstein is a low-tax microstate in a customs and currency union with Switzerland. It levies a progressive personal income tax (which also captures wealth via a notional yield), a flat 12.5% corporate profit tax, and applies the Swiss VAT system.
+## Start with the question
 
-- **Tax year** — Calendar year (1 January to 31 December)  _(Tax Act (Steuergesetz, SteG))_
-- **Currency** — Swiss franc (CHF)  _(Currency Treaty with Switzerland)_
-- **National tax authority** — Steuerverwaltung des Fürstentums Liechtenstein (Liechtenstein Tax Administration)  _([Tax Act (Steuergesetz, SteG)](https://www.llv.li/de/landesverwaltung/steuerverwaltung))_
-- **Residence basis of taxation** — Residents are taxed on worldwide earned income and net wealth; non-residents are taxed only on certain Liechtenstein-source income  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/individual/taxes-on-personal-income))_
-- **Headline personal income tax rate (incl. communal surcharge)** — 2.5% to 22.4% combined (national tax plus communal surcharge) %  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/individual/taxes-on-personal-income))_
-- **Headline corporate profit tax rate** — 12.5% flat %  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/corporate/taxes-on-corporate-income))_
-- **Does Liechtenstein levy VAT?** — Yes — Liechtenstein applies the Swiss VAT (MWST) system under its customs union with Switzerland; standard rate 8.1%  _([Value Added Tax Act (Mehrwertsteuergesetz, MWSTG)](https://taxsummaries.pwc.com/liechtenstein/corporate/other-taxes))_
-- **Withholding tax on dividends, interest, royalties** — None — Liechtenstein does not levy withholding tax on dividends, interest or royalties  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/corporate/taxes-on-corporate-income))_
-- **Inheritance, estate and gift tax** — None — Liechtenstein does not levy inheritance, estate or gift taxes  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/individual/other-taxes))_
-- **Corporate tax return filing deadline** — 1 July following the tax year (extension up to 6 months on request) (approx — confirm)  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/corporate/tax-administration))_
-- **Individual tax return filing deadline** — Normally mid-to-end April following the tax year (extensions available) (approx — confirm)  _([Tax Act (Steuergesetz, SteG)](https://taxsummaries.pwc.com/liechtenstein/individual/tax-administration))_
+This is a router for the 2026 source-cited country draft, not a standalone tax calculation. Establish legal person/entity, residence and activity countries, dates, income/supply/payment category, existing registrations, records and the authority decision before selecting a workpaper. The [country README](README.md) declares all seven applicable domains partial.
+
+| Work | Read first | Key boundary |
+|---|---|---|
+| Individual income and wealth | [li-income-tax](li-income-tax.md) | Established taxable income/wealth, family tariff and actual annual municipality rate |
+| Corporate profit | [li-corporate-income-tax](li-corporate-income-tax.md) | Tax adjustments, modified equity, losses and minimum-tax eligibility |
+| VAT | [liechtenstein-vat](liechtenstein-vat.md) | Actual authority/registration, supply evidence, deduction entitlement and method |
+| Employee withholding and insurance | [li-payroll-social](li-payroll-social.md) | Separate tax/social bases, 2026 Liechtenstein rates and coverage |
+| Related parties and PEs | [li-transfer-pricing](li-transfer-pricing.md) | Actual relationship, documentation route and supported arm's-length method |
+| Migration, foreign income and relief | [li-cross-border](li-cross-border.md) | Domestic liability, actual treaty and claim/deferral procedure |
+| Entity setup | [li-company-formation](li-company-formation.md) | Selected form, contributions, actual register/governance and licensing evidence |
+
+The earlier summary's rates/deadlines, Swiss-derived payroll/VAT assumptions and secondary citations remain in Git history. They are not substitutes for the current topic's source check. The [Liechtenstein Tax Administration](https://www.llv.li/de/landesverwaltung/steuerverwaltung) and the [official legislation collection](https://www.gesetze.li) are source entry points; the exact Acts/sections and read limits are linked in each Guide.
+
+## Evidence and unresolved work
+
+The country batch was prepared on `codex/liechtenstein-country-completion` under [issue #406](https://github.com/openaccountants/openaccountants/issues/406). Preserve the original six Guides and research history; the missing TP and XB methods have been added in this batch. This router intentionally has no calculation blocks because it supplies no independent tax formula.
+
+No named local accountant review, complete tax-domain coverage, filing acceptance or production ingestion is asserted. The dated independent review record identifies source scope and correction closure. Complete the remaining source/specialist work in README and named local accountant review. The country batch uses one combined content push to consolidated draft PR #514; verify publication and exact-head CI there.
 
 <!-- openaccountants-cta-block -->
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
