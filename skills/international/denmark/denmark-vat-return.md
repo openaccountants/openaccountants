@@ -1,97 +1,291 @@
 ---
 name: denmark-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Danish VAT return (Momsangivelse) for a self-employed individual or small business in Denmark. Trigger on phrases like "prepare VAT return", "do the VAT", "Danish VAT", "moms", "momsangivelse", or any request involving Denmark VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Denmark only and only standard-registered businesses. Loensumsafgift-only entities, VAT groups, and fiscal representatives are in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any Danish VAT work.
-version: 2.0
+description: "Danish VAT (moms) and the VAT return (momsangivelse) for 2026, for a business registered or registering in Denmark. Covers the single 25% rate and the zero-rated supplies (exports, intra-EU goods, newspapers, passenger air transport), the DKK 50,000 registration threshold and the EU SME scheme (EUR 100,000 EU turnover, EX number), half-yearly, quarterly and monthly periods by turnover with the 2026 deadlines, input VAT and its limits (cars, restaurants 25%, hotels, gifts, entertainment, partial deduction), domestic reverse charge, the boxes A, B and C, the EU sales list, invoices, digital bookkeeping from 2026, corrections, and the DKK 1,400 fee and interest for late returns. Trigger phrases: moms, momsangivelse, Danish VAT return, momsfrister, EU-salg uden moms, momsfradrag, TastSelv Erhverv. Out of scope: income tax (dk-income-tax), company tax (dk-corporate-tax), payroll and lønsumsafgift (dk-payroll), cross-border income tax (dk-cross-border); OSS returns, margin schemes and property VAT are referred."
+version: 2.1
 jurisdiction: DK
+category: international
 tax_year: 2026
-last_updated: 2026-10-16
+tier: 2
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Denmark VAT return (moms) — 2026 operational method
+# Denmark: VAT (moms) and the VAT return (2026)
 
-**Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation. Figures and procedures were retrieved from the Danish Tax Agency (Skattestyrelsen/SKAT) on 24 and 25 September 2026.
+> **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file or pay without review by a qualified professional in Denmark.
 
-This method prepares an ordinary Danish VAT return for a registered business for **tax year 2026**. It covers filing periods and deadlines, domestic 25% sales, supported input VAT including the statutory limits on restaurant, hotel, gift and vehicle VAT, ordinary EU/foreign purchase routing, imports, EU reporting records, filing, payment and correction. It does not decide exemptions, VAT groups, OSS/IOSS, margin schemes, property, capital-goods adjustments or a partial-deduction rate.
+**Which text of the law.** Momsloven (the VAT Act) is consolidated in LBK nr. 209 of 27 February 2024. It has since been amended by lov nr. 332 of 9 April 2024 (EU SME scheme, place of supply for events), lov nr. 1473 and nr. 1489 of 10 December 2024, lov nr. 1693 of 30 December 2024 (SME scheme rules in a new chapter 17 a from 1 January 2025, zero rate for passenger air transport), lov nr. 1695 of 30 December 2024 (artists and authors), lov nr. 1703 of 30 December 2024, lov nr. 1783 of 29 December 2025 (education exemption from 1 January 2026) and lov nr. 763 of 8 September 2026 (reminder fee). This skill reads the 2024 consolidation together with those acts; lov nr. 763 of 2026 names lov nr. 1783 of 2025 as the latest change before it. Momsbekendtgørelsen (the VAT Order) is BEK nr. 1435 of 29 November 2023 as amended, most recently by BEK nr. 518 and nr. 850 of 2025. Collection, the late-filing fee and interest are in Opkrævningsloven (LBK nr. 1040 of 13 September 2024 as amended). All texts were read on retsinformation.dk on 24 October 2026; practice points come from skat.dk and Den juridiske vejledning 2026-2, read the same day.
 
-## Key figures and return routes
+"ML" below means Momsloven and "MB" means Momsbekendtgørelsen.
 
-| Figure or route | Use | Official source |
-| --- | --- | --- |
-| DKK 50,000 per calendar year | A Danish-established business must register when taxable sales are more than this in a calendar year; the small-business exemption also depends on the preceding calendar year. A foreign business is treated differently (see step 1). | [VAT registration](https://skat.dk/erhverv/moms/moms-saadan-goer-du/saadan-registrerer-du-din-virksomhed-for-moms) and [foreign businesses (Juridisk vejledning D.A.14.1.5)](https://info.skat.dk/data.aspx?oid=2049567) |
-| 25% | General Danish VAT rate; use it for the domestic taxable-sale examples below. The EU-purchase route separately directs a registered purchaser to calculate Danish VAT. | [Get started on VAT](https://skat.dk/erhverv/moms/i-gang-med-moms) and [EU purchases](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/purchases-of-goods-and-services-in-the-eu) |
-| Filing period | Half-yearly if taxable turnover is under DKK 5 million a year and you filed and paid on time; quarterly if newly registered, on request, or where SKAT finds turnover of DKK 5-50 million; monthly where SKAT finds turnover over DKK 50 million, or on request. | [VAT deadlines](https://skat.dk/erhverv/moms/frister-indberet-og-betal-moms) |
-| DKK 1,400 per period | Late-filing charge: if a return is not filed by the deadline, SKAT makes a provisional assessment, charges DKK 1,400 for each late period and adds interest. | [VAT deadlines](https://skat.dk/erhverv/moms/frister-indberet-og-betal-moms) |
-| Restaurant 25%; hotel room 100% | Input-VAT limits: only 25% of the VAT on strictly business restaurant meals is deductible; hotel overnight stays are 100% deductible when the invoice separates the room from restaurant items. | [Food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel) |
-| Cars and motorbikes | No deduction on purchase, on rent or lease under 6 months, or on running costs; limited deduction on rent or lease over 6 months where at least 10% of use is VAT-liable business. | [Vehicle deductions](https://skat.dk/en-us/businesses/vat/vat-deductions/vat-deductible-expenses/vat-deductions-for-vehicle-expenses) |
-| Input VAT / output VAT | Reconcile totals from the business accounts; refund results only where input exceeds output. | [VAT accounts](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts) |
-| Box A goods / A services; B goods / B services; C | International-trade value records: EU purchases; EU sales; exports and other untaxed supplies. | [VAT accounts](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts) |
-| 4 pm filing-day cut-off | Select the official before/after 4 pm correction branch for the filing day; use the prior-period correction route for later changes. | [Correct a VAT return](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-change-your-vat-return-or-vat-payment) |
+## Who this applies to
 
-Amounts in the cases are hypothetical arithmetic, not authority figures. Prepare the return in DKK. Where an invoice is in another currency, retain the documented conversion basis and confirm the applicable exchange-rate treatment with SKAT's guidance before entering it; this skill does not state a conversion rule. Do not use a bank debit as the VAT base.
+- **Any taxable person who supplies goods or services in Denmark** must register (ML § 47, stk. 1), unless one of the exceptions below applies. A taxable person is anyone who independently carries on an economic activity, whatever the legal form: sole traders (enkeltmandsvirksomhed), partnerships, ApS and A/S companies.
+- **Small business exemption.** A business established in Denmark is exempt from registration and from charging VAT while its taxable turnover in Denmark in the calendar year does not exceed DKK 50,000 (ML § 71 e, stk. 1, in force from 1 January 2025; it replaced the old § 48). It cannot use the exemption in a year if it exceeded the threshold in the previous year, and the exemption ends from the moment the threshold is passed during the year (ML § 71 k, stk. 1). A business under the threshold may still register voluntarily, for at least 2 calendar years (ML § 49).
+- **Exempt activity only.** A business whose supplies are all exempt under ML § 13 (for example healthcare, most education, insurance, financial services, letting of property) does not register for those supplies (ML § 47, stk. 1, nr. 1). It may still have to register to pay VAT on goods bought from other EU countries (see Cross-border points).
+- **Foreign businesses.** A business established abroad that makes taxable supplies in Denmark must register unless the Danish customer is made liable under reverse charge (ML § 47, stk. 2, 3. pkt.). A business established outside the EU, in a country without a mutual-assistance agreement with Denmark, must register through a Danish representative (ML § 47, stk. 2). An EU business can use the Danish small business exemption only through the EU SME scheme (ML § 71 e, stk. 4).
+- **Out of scope here:** OSS and IOSS returns, the margin schemes for second-hand goods, art and travel, VAT on buildings and land, VAT groups (fællesregistrering, ML § 47, stk. 4), lønsumsafgift (payroll tax on VAT-exempt businesses, see dk-payroll), and businesses that let cars or run a driving school (special car rules in ML § 42, stk. 6). Refer these.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate (the only positive rate) | 25% of the taxable amount | 2026 | ML § 33; https://www.retsinformation.dk/eli/lta/2024/209 |
+| Zero rate (exempt with right to deduct): goods sent to a VAT-registered buyer in another EU country, exports outside the EU, newspapers published at least monthly (also electronic), passenger air transport | 0% | 2026 | ML § 34, stk. 1, nr. 1, 5, 18 and 22 (nr. 22 added by lov nr. 1693/2024 from 1 Jan 2025); https://www.retsinformation.dk/eli/lta/2024/1693 |
+| Prepayment received before delivery or invoice: taxable amount | 80% of the amount received (so VAT is 20% of the gross payment) | 2026 | ML § 27, stk. 1, 2. pkt.; https://www.retsinformation.dk/eli/lta/2024/209 |
+| Registration threshold, business established in Denmark | Annual Danish turnover above DKK 50,000 | 2026 | ML § 71 e, stk. 1 (lov nr. 1693/2024); https://www.retsinformation.dk/eli/lta/2024/1693 |
+| Threshold for an artist's first sale of own works | DKK 350,000 a year | 2026 | ML § 71 e, stk. 2; https://www.retsinformation.dk/eli/lta/2024/1693 |
+| EU SME scheme: EU-wide turnover ceiling to use another country's exemption (or Denmark's, for an EU business) | EUR 100,000 in the previous or current year | 2026 | ML § 71 k, stk. 2 and 3; https://www.retsinformation.dk/eli/lta/2024/1693 |
+| Unregistered business: EU goods purchases before registration is needed | DKK 80,000 a year (current and previous year), no excise goods | 2026 | ML § 50; https://www.retsinformation.dk/eli/lta/2024/209 |
+| Half-yearly period | Taxable supplies not above DKK 5 million a year | 2026 | ML § 57, stk. 4; https://www.retsinformation.dk/eli/lta/2024/209 |
+| Quarterly period | Above DKK 5 million and up to DKK 50 million a year; also every new registration | 2026 | ML § 57, stk. 3 and § 47, stk. 6; https://www.retsinformation.dk/eli/lta/2024/209 |
+| Monthly period | Above DKK 50 million a year; a new registration expecting more than DKK 55 million | 2026 | ML § 57, stk. 2 and § 47, stk. 6 |
+| Restaurant meals of a strictly business nature | 25% of the VAT is deductible | 2026 | ML § 42, stk. 2; https://www.retsinformation.dk/eli/lta/2024/209 |
+| Long-term (over 6 months) lease of a passenger car | Deduct VAT on the rent up to 25% of a base of 2% a month of the registration tax (first 3 years), 1% after; at least 10% VAT-liable driving | 2026 | ML § 42, stk. 4 and 5 |
+| Vans and trucks up to 3 tonnes used partly privately | All VAT on running costs; one third of the VAT on rent if hired | 2026 | ML § 41, stk. 2 and 3 |
+| Telephones placed with employees | 50% of the VAT | 2026 | ML § 40, stk. 2 |
+| Capital goods adjustment applies to machinery, software and rights | Cost above DKK 100,000 excluding VAT | 2026 | ML § 43, stk. 2 |
+| Simplified invoice allowed | Supply of DKK 3,000 or less | 2026 | MB § 66, stk. 1; https://www.retsinformation.dk/eli/lta/2023/1435 |
+| EU sales list on a quarterly basis allowed | Goods sales to the EU not above DKK 400,000 in the quarter and each of the 4 previous quarters | 2026 | MB § 99, stk. 4; https://www.retsinformation.dk/eli/lta/2023/1435 |
+| Fee for a provisional assessment when a return is late | DKK 1,400 per period | 2026 | Opkrævningsloven § 4, stk. 2 as amended by lov nr. 16/2025, § 1 (for assessments from 1 Feb 2025); https://www.retsinformation.dk/eli/lta/2025/16 |
+| Late-payment interest | Base rate 0.1% plus 0.85 points = 0.95% a month, charged per day as 0.95% x 12 / 365 of the unpaid amount (366 in a leap year) | 2026 | Opkrævningsloven § 7, stk. 1 and 2, and § 16 c, stk. 1; SKM2025.720.SKTST, https://info.skat.dk/data.aspx?oid=2459995; L 80 (2024-25) remarks, https://www.folketingstidende.dk/samling/20241/lovforslag/L80/20241_L80_som_fremsat.pdf |
+| Reminder fee (payment reminder; EU sales list reminder) | DKK 160 (was DKK 65 before 14 Sep 2026) | 2026 | Opkrævningsloven § 6 and ML § 54, stk. 3, as amended by lov nr. 763/2026; https://www.retsinformation.dk/eli/lta/2026/763 |
+| Digital bookkeeping duty, personally owned business | Net turnover above DKK 300,000 in 2 consecutive income years | 2026 | Bogføringsloven § 16, stk. 1; BEK nr. 297/2025; https://www.retsinformation.dk/eli/lta/2025/297 |
+
+Denmark has no reduced VAT rate. A supply is either taxed at 25%, zero-rated under ML § 34 (with the right to deduct input VAT), or exempt under ML § 13 (without that right).
+
+## The taxable base
+
+**Output VAT.** Output VAT is 25% of the consideration excluding VAT, including directly linked subsidies (ML § 27, stk. 1). The base includes other duties and taxes, incidental costs charged to the customer (commission, packing, shipping, insurance), connection fees and agent's commission (ML § 27, stk. 2). Each period's output VAT covers supplies, intra-EU acquisitions, imports and reverse-charge purchases for which VAT became due in the period (ML § 56, stk. 2).
+
+**When VAT is due.** VAT is due on delivery (ML § 23, stk. 1). If an invoice is issued before or soon after delivery, the invoice date counts (stk. 2). A payment received before delivery or invoice makes VAT due on the payment date (stk. 3); the taxable amount is then 80% of what was received (ML § 27, stk. 1, 2. pkt.).
+
+**Exempt supplies (no VAT, no deduction).** The main ML § 13, stk. 1 exemptions: hospital and medical care including physiotherapy and dentistry (nr. 1), social care (nr. 2), education (nr. 3), sport by non-profit bodies (nr. 5), cultural activities (nr. 6), authors' and artists' services (nr. 7), letting of property (nr. 8), supply of property other than new buildings and building land (nr. 9), insurance (nr. 10), financial services (nr. 11), lotteries (nr. 12) and passenger transport (nr. 15). Two changes matter now:
+- From 1 January 2026 the education exemption covers "education of children and young people under 30, school teaching and teaching at higher education institutions, vocational training"; the wider wording "other teaching of a school-like or vocational nature" was removed (lov nr. 1783/2025, § 1, nr. 1). A course provider for adults that relied on the old wording must test whether it is now taxable.
+- From 1 July 2025 a licence to use an author's or artist's copyright is taxable when supplied by anyone other than the author or artist (ML § 4 d and § 13, stk. 1, nr. 7, by lov nr. 1695/2024).
+
+**Input VAT: the main rule.** A registered business deducts VAT on purchases used only for its taxable supplies, including supplies made abroad (ML § 37, stk. 1). Deductible VAT includes VAT on domestic purchases, VAT on intra-EU acquisitions, import VAT and self-assessed reverse-charge VAT (ML § 37, stk. 2). The claim needs an invoice or customs document (MB § 83).
+
+**When input VAT is booked.** Input VAT belongs to the period in which the purchase was delivered or cleared through customs (MB § 81, stk. 1). From 1 July 2025 a business may instead book input VAT when it books the expense in its accounts: as a rule in the period right after delivery, and at the latest in the period that falls 6 months after delivery (MB § 81, stk. 3, added by BEK nr. 518/2025). Payment-basis booking with adjustment for supplier balances is also allowed (MB § 81, stk. 2). One method must be used for all purchases in a period (MB § 81, stk. 4).
+
+**Partial deduction.** For costs used for both taxable and exempt activity, the deductible share is the taxable turnover as a share of total turnover (ML § 38, stk. 1). During the year use one provisional percentage, rounded up to the next whole number: the final percentage for the previous financial year if it has been worked out by the time the first return of the year is filed, otherwise the final percentage for the year before that, and settle the final percentage in the period that includes the 6th month after the year end (MB § 17, stk. 1 and 2). Costs used partly for private purposes are deducted on an estimate of the business share (ML § 38, stk. 2). Once a year the return asks whether the business has exempt activity (ML § 38 a).
+
+**No deduction or limited deduction (ML §§ 41-42).** These limits apply even where the cost is wholly business:
+- **Food, housing and staff benefits:** no deduction for meals for the owner and staff, housing for them, benefits in kind, or holiday homes and childcare for staff (ML § 42, stk. 1, nr. 1-4). Skattestyrelsen allows a deduction for food on unannounced overtime, and 100% for food and drinks at meetings in the business's own premises (meetings with business contacts, board meetings, internal meetings with professional content, internal courses) (skat.dk, food and hotel).
+- **Entertainment, representation and gifts:** no deduction (ML § 42, stk. 1, nr. 5). Product samples and ordinary advertising items are not gifts in this sense (Den juridiske vejledning D.A.11.5.7.4). Gifts to staff are also gifts for this rule (same section).
+- **Restaurant meals:** 25% of the VAT is deductible where the cost is strictly business (ML § 42, stk. 2). If any part of the event is private, nothing is deductible; the cost cannot be split (Den juridiske vejledning D.A.11.5.7.2). A Christmas lunch or staff party held at a restaurant gets 25%; food at a staff party in the business's own or rented premises gets nothing (skat.dk, food and hotel).
+- **Hotels:** the room is fully deductible and restaurant items such as breakfast get 25%, provided the hotel invoice shows them separately. A social element in the stay is estimated and excluded (skat.dk, food and hotel). ML § 42 sets no percentage limit on hotel rooms.
+- **Passenger cars (up to 9 persons, white plates):** no deduction on purchase or running costs (ML § 42, stk. 1, nr. 6). A lease of more than 6 months gives a limited deduction set out in the table above, shown on the lessor's invoice (ML § 42, stk. 4 and 5). The Øresund bridge toll is deductible (ML § 42, stk. 7). A business that sells cars, lets cars or runs a driving school deducts normally (ML § 42, stk. 6).
+- **Vans and trucks up to 3 tonnes (yellow or "parrot" plates):** VAT on purchase is deductible only if the vehicle is used solely for taxable activity (ML § 41, stk. 1). Running costs are fully deductible even with part private use, and one third of the VAT on rent of a hired one (ML § 41, stk. 2 and 3), but only if the business's supplies exceed the DKK 50,000 threshold (ML § 41, stk. 5). Insurance and fines carry no deductible VAT (skat.dk, vehicles).
+- **Telephones at employees' homes:** 50% (ML § 40, stk. 2).
+
+**Capital goods.** Machinery, equipment, software and rights costing over DKK 100,000 excluding VAT, and property, are capital goods. If their use changes between taxable and exempt after purchase, the deduction is adjusted (ML § 43). Refer adjustments.
+
+**Domestic reverse charge.** The Danish buyer, not the seller, pays the VAT when a taxable person in Denmark buys from a business established in Denmark (ML § 46, stk. 1):
+- CO2 allowances and credits, and gas and electricity certificates (nr. 6);
+- scrap metal (nr. 7);
+- mobile phones (nr. 8), integrated circuits before they are built into end products (nr. 9), and game consoles, tablets and laptops (nr. 10). These three do not apply where the seller sells only or mainly to private consumers (ML § 46, stk. 2);
+- gas and electricity to a reseller, unless delivered to the reseller's own meter point (nr. 11);
+- telecom services bought mainly for resale (nr. 12);
+- investment gold and gold of 325 thousandths or more from a registered business (nr. 4).
+
+The seller invoices without VAT. The buyer enters the VAT as output VAT and, if the purchase is for taxable use, deducts the same amount.
+
+**Invoices.** Every taxable person must issue an invoice for each supply, and a separate invoice for a prepayment (ML § 52 a, stk. 1). A full invoice shows the date, a sequential number, the seller's VAT number, both parties' names and addresses, what was supplied, the delivery date if different, the taxable amount and unit price, the rate and the VAT (MB § 58). For a supply of DKK 3,000 or less a simplified invoice is allowed (MB § 66, stk. 1). A business that is not registered must not show VAT on an invoice; VAT shown in error must be paid over (ML § 52 a, stk. 6 and 7; ML § 46, stk. 6, which was stk. 7 before lov nr. 332/2024 renumbered § 46).
+
+**Digital bookkeeping from 2026.** Under the Bookkeeping Act (Bogføringsloven, lov nr. 700 of 24 May 2022), a business that must file an annual report (ApS, A/S and other companies in accounting classes B to D) or a personally owned business with net turnover above DKK 300,000 in 2 consecutive income years must record its transactions and keep its vouchers in a digital bookkeeping system (§ 16, stk. 1). The system must be registered with the Danish Business Authority or meet the § 15 requirements, which include the ability to send and receive e-invoices automatically (§ 15, stk. 1, nr. 3; § 16, stk. 2). For companies this applied from financial years starting on or after 1 July 2024 (registered standard system) or 1 January 2025 (other systems) (BEK nr. 1342/2023, § 1). For personally owned businesses over the DKK 300,000 limit it applies from the first financial year starting on or after 1 January 2026 (BEK nr. 297/2025, § 1). Bookkeepers who keep the books for such businesses must meet the same rules (§ 17). The Act lets the minister require e-invoices as documentation for purchases and sales (§ 18); this skill did not find an order that uses that power.
+
+## Deadlines and filing
+
+**Registering.** Register through virk.dk at least 8 days before taxable activity starts (ML § 47, stk. 6). A new registration starts on quarterly returns, or monthly if expected taxable supplies exceed DKK 55 million. Changes are notified within 8 days, and so is closing down (ML § 47, stk. 6 and 7).
+
+**Periods.** Half-yearly up to DKK 5 million, quarterly from DKK 5 million to DKK 50 million, monthly above DKK 50 million (ML § 57, stk. 2-4). The period changes from 1 January, based on taxable supplies in the 12 months from 1 July to 30 June before it; a period can only be lengthened if every return and payment in those 12 months was on time (ML § 57, stk. 6). A business may ask for a shorter period from 1 January or 1 July, at least 1 month ahead, and then stays on it for 2 years (ML § 57, stk. 7 and 8). Skattestyrelsen can also impose a shorter period on a business that pays late (ML § 62).
+
+**Return and payment deadlines.** The return and the payment have the same deadline (skat.dk, VAT deadlines):
+- Half-yearly and quarterly: the 1st day of the 3rd month after the period ends (ML § 57, stk. 3 and 4).
+- Monthly: the 25th of the following month; June is due 1 month and 17 days after the period (ML § 57, stk. 2).
+
+| Period (2026) | Due |
+|---|---|
+| 2nd half 2025 / Q4 2025 | 2 March 2026 |
+| Q1 2026 | 1 June 2026 |
+| 1st half 2026 / Q2 2026 | 1 September 2026 |
+| Q3 2026 | 1 December 2026 |
+| 2nd half 2026 / Q4 2026 | 1 March 2027 |
+
+Monthly filers, 2026: December 2025 by 26 January; January by 25 February; February by 25 March; March by 27 April; April by 26 May; May by 25 June; June by 17 August; July by 25 August; August by 25 September; September by 26 October; October by 25 November; November by 28 December 2026; December 2026 by 25 January 2027. These are Skattestyrelsen's published dates, which move a deadline off a non-banking day (skat.dk, VAT deadlines).
+
+**Filing.** File in TastSelv Erhverv. A registered business files every period, including a nil return when there was no activity (skat.dk, registration). Amounts are in whole kroner (ML § 57, stk. 1). The return fields are: output VAT (salgsmoms), VAT on goods bought abroad (EU and non-EU, including import VAT), VAT on services bought abroad under reverse charge, input VAT (købsmoms), and the value boxes A goods, A services, B goods (EU sales list), B goods (not on the list), B services and C (MB § 79; skat.dk, foreign trade).
+- **A goods:** value of goods acquired from other EU countries. **A services:** value of services bought from other EU countries under the general B2B rule. Non-EU purchases do not go in box A.
+- **B goods (EU sales list):** zero-rated goods to VAT-registered buyers in other EU countries. **B goods (not on the list):** new means of transport to non-registered buyers, installation and assembly in other EU countries, distance sales. **B services:** services to EU businesses under the general B2B rule.
+- **C:** other supplies without Danish VAT, such as exports outside the EU, and services to EU businesses that are taxed where the property, transport, restaurant service or short-term hire takes place (skat.dk, foreign trade).
+
+Net VAT is output VAT plus VAT on foreign purchases, less deductible input VAT (ML § 56, stk. 1; MB § 78). A negative result is refunded no later than 3 weeks after a return filed on time is received (Opkrævningsloven § 12, stk. 2), to the extent the tax account shows a credit balance, and is paid to the business's NemKonto (§ 12, stk. 5; § 16 c, stk. 5). Skattestyrelsen can stop the clock while it checks the return, or hold the refund while earlier returns are missing (§ 12, stk. 3 and 4). Skattestyrelsen recommends paying no earlier than 5 working days before the deadline, because an earlier payment may be set against other public debt (skat.dk, pay VAT).
+
+**EU sales list (EU-salg uden moms).** A business that sells zero-rated goods to EU-registered buyers, or services to EU businesses under the general B2B rule, reports each buyer's VAT number and the total value by the 25th of the month after the period, whatever its VAT return period (MB §§ 99 and 100). The listing period is the month; quarterly is allowed on application if the business is not on monthly VAT and its EU goods sales do not exceed DKK 400,000 in the quarter or in each of the 4 previous quarters (MB § 99, stk. 4-6). There is no nil listing (skat.dk, foreign trade). The values in box B and on the list must agree (MB § 85, stk. 4 and 5). The zero rate for intra-EU goods is lost if the list is missing or wrong, unless the failure is properly explained (ML § 34, stk. 2).
+
+**Corrections.** Correct the period the error belongs to in TastSelv Erhverv. A return can be corrected the same day before 4 pm through the filing screen, and after that through the correction route (skat.dk, correct a return). A business that wants its VAT changed must put forward the facts or legal grounds within 3 years of the return deadline (Skatteforvaltningsloven § 31, stk. 2); Skattestyrelsen has the same 3 years to give notice of a change (§ 31, stk. 1). After that, a change is possible only in the cases in § 32, stk. 1: earlier practice finally overturned, a change that follows directly from another VAT change, intent or gross negligence, special circumstances accepted by Skattestyrelsen, or a change in the private-law or public-law basis of the VAT. The request must be made within 6 months of learning of the ground (§ 32, stk. 2). Skattestyrelsen states that a forgotten deduction or a misunderstanding of the rules is not enough (skat.dk, correct a return).
+
+**Records.** VAT records must support each period's figures (ML § 55). Invoices must be kept (ML § 52 c); a digital bookkeeping system must keep records and vouchers for 5 years (Bogføringsloven § 15, stk. 1, nr. 1).
+
+## Penalties and interest
+
+- **Late return.** If no return arrives by the deadline, Skattestyrelsen sets the VAT provisionally (foreløbig fastsættelse) and charges DKK 1,400 for each period (Opkrævningsloven § 4, stk. 1 and 2, as amended by lov nr. 16/2025). The fee is due even if the return is filed afterwards (skat.dk, provisional assessments). After 4 consecutive provisional assessments for the same registration, Skattestyrelsen can cancel the registration (Opkrævningsloven § 4, stk. 3).
+- **Late payment.** Interest accrues for each day after the last on-time payment day up to and including the day of payment, at the base rate plus 0.85 percentage points a month (Opkrævningsloven § 7, stk. 1). The 2026 base rate is 0.1% (SKM2025.720.SKTST), so the rate is 0.95% a month. The monthly rate is spread evenly over the calendar year: daily interest = unpaid amount x 0.95% x 12 / 365 (366 in a leap year), rounded to 2 decimals (remarks to L 80 of 2024-25, which became lov nr. 1694/2024; Den juridiske vejledning, A.B.4.7.2). The interest is not deductible for income tax. VAT sits on the tax account (skattekonto), where a debit balance carries the same rate (Opkrævningsloven § 16 c, stk. 1); from 1 January 2026 there is no interest on interest on the tax account (lov nr. 1694/2024, § 1, nr. 15, as stated in Den juridiske vejledning, A.B.4.7.2).
+- **Reminders.** A reminder letter costs DKK 160 from 14 September 2026 (DKK 65 before) (Opkrævningsloven § 6; lov nr. 763/2026). A reminder about a missing EU sales list costs the same (ML § 54, stk. 3). A debit balance above DKK 5,000 on the tax account is payable at once and triggers a reminder (Opkrævningsloven § 16 c, stk. 4).
+- **Under-declaration.** VAT paid too little is payable with the normal payment deadline, so interest runs from that date (Opkrævningsloven § 5, stk. 1).
+- **Fines and prison.** Wrong or misleading information, failure to register, and breaches of the invoicing and record rules, done deliberately or with gross negligence, are punished by fines (ML § 81, stk. 1). With intent to evade VAT the penalty is a fine or up to 1 year and 6 months in prison, or more under the Criminal Code § 289 (ML § 81, stk. 3). Issuing false invoices is a separate offence (ML § 81, stk. 4). Companies can be fined (ML § 81, stk. 6). Skattestyrelsen can also issue an order with daily fines to enforce registration duties (ML § 47, stk. 8).
+- **Buyer's joint liability.** A registered buyer who pays a Danish supplier in a way that does not identify payer and payee through a bank or payment institution can be jointly liable for VAT the supplier evades, unless the payment is DKK 8,000 or less including VAT (ML § 46, stk. 11; it was stk. 12 until lov nr. 332/2024 repealed stk. 3 and renumbered the rest).
+
+## Cross-border points
+
+- **Goods sold to EU businesses.** Zero-rated when the goods leave Denmark for another EU country and the buyer is registered there and has given its VAT number (ML § 34, stk. 1, nr. 1). Keep the buyer's number and transport evidence. Invoice by the 15th of the month after delivery (ML § 52 b), and the supply is treated as made on that 15th unless invoiced earlier (ML § 24). Report in box B goods and on the EU sales list.
+- **Services sold to EU businesses.** Under the general B2B rule the place of supply is the customer's country and the customer pays the VAT there. Invoice by the 15th of the following month (ML § 52 b, stk. 2), report in box B services and on the EU sales list. Property services, passenger transport, restaurant and catering services and short-term hire of transport located in another EU country go in box C, not B services (skat.dk, foreign trade).
+- **Buying from the EU.** A registered business self-assesses Danish VAT on goods and services bought from other EU countries (reverse charge): enter the VAT in "VAT on goods bought abroad" or "VAT on services bought abroad", deduct it as input VAT if the use is taxable, and report the value in box A goods or A services. If the EU seller charged its own VAT in error, still self-assess 25% Danish VAT, do not claim the foreign VAT as input VAT, and ask the seller to refund it. An unregistered business need not register for EU goods purchases below DKK 80,000 a year (ML § 50), but bought-in EU services are usually taxable whatever the amount (skat.dk, EU purchases). Services that are taxed where they take place (property abroad including hotel stays, passenger transport, event tickets, restaurant meals, short-term hire of transport) carry no Danish VAT for the buyer (skat.dk, EU purchases).
+- **Buying from foreign suppliers in Denmark.** When a foreign business without a fixed establishment in Denmark installs or assembles goods here, or supplies general B2B services, the Danish business buyer pays the VAT (ML § 46, stk. 1, nr. 2 and 3). This applies even if the foreign supplier has a Danish VAT number (ML § 46 a, stk. 1).
+- **Imports from outside the EU.** Import VAT is 25% of the customs value plus customs duty and other import charges (not the VAT itself), plus shipping and insurance up to the destination in the EU when that is known (ML § 32, stk. 1). A registered importer enters import VAT in "VAT on goods bought abroad" and deducts it as input VAT to the extent of taxable use (ML § 37, stk. 2, nr. 3). Keep the customs import specification (MB § 80, stk. 2). Non-EU goods do not go in box A; non-EU services bought under reverse charge go in "VAT on services bought abroad" but not in box A services (MB § 79, stk. 3).
+- **Exports.** Goods sent outside the EU are zero-rated (ML § 34, stk. 1, nr. 5). Report the value in box C.
+- **Sales to private customers in other EU countries.** A Danish business whose distance sales of goods and electronic, telecom and broadcasting services to private customers in other EU countries do not exceed EUR 10,000 in the current calendar year and did not in the previous one charges Danish VAT (ML § 21 e, stk. 1, nr. 3); it may opt out for at least 2 years (§ 21 e, stk. 2). Above that, VAT is due in each customer's country, usually through the One Stop Shop, whose return and payment are due by the end of the month after the period (ML § 66 g). OSS returns are out of scope; refer.
+- **EU SME scheme.** A Danish business can use another EU country's small business exemption if its EU-wide turnover did not exceed EUR 100,000 in the previous or current year. It notifies Skattestyrelsen in advance, receives a number with the suffix "EX", and reports its turnover per country for each calendar quarter within 1 month after the quarter ends. It must report within 15 working days if it passes EUR 100,000 (ML § 71 e, stk. 5; §§ 71 f-71 g; § 71 k, stk. 3). An EU business can use the Danish DKK 50,000 exemption in the same way (ML § 71 e, stk. 4). A business using a small business exemption cannot zero-rate intra-EU goods (ML § 34 c), and there is no deduction for input VAT on supplies made exempt under another country's SME exemption (ML § 37, stk. 9).
+- **Non-EU businesses** that must register in Denmark do so through a Danish representative, who is jointly liable (ML § 47, stk. 2; § 46, stk. 7, stk. 8 before the 2024 renumbering). Income tax for non-residents is in dk-cross-border.
+
+## Worked examples
+
+### Example 1: Consultancy on quarterly returns, Q3 2026
+
+An ApS consultancy registered in 2026 is on quarterly returns (ML § 47, stk. 6). In Q3 2026 (July to September) it invoices Danish clients DKK 200,000 excluding VAT. Domestic purchase invoices for its taxable work carry DKK 18,000 of VAT. It buys a software service from a German supplier for DKK 20,000 without VAT. It takes clients to a restaurant (invoice VAT DKK 1,000) and pays for a hotel night on a work trip where the invoice shows room VAT DKK 600 and breakfast VAT DKK 100 separately.
+
+- Output VAT: 25% of DKK 200,000 = DKK 50,000 (ML § 33).
+- Reverse charge on the German service: 25% of DKK 20,000 = DKK 5,000, entered in "VAT on services bought abroad", with DKK 20,000 in box A services. It is deductible because the use is taxable (ML § 37, stk. 2).
+- Restaurant: 25% of DKK 1,000 = DKK 250 (ML § 42, stk. 2).
+- Hotel: the room VAT DKK 600 in full, plus 25% of the DKK 100 breakfast VAT = DKK 625.
+- Input VAT: DKK 18,000 + 250 + 625 + 5,000 = DKK 23,875.
+- Net VAT: DKK 50,000 + 5,000 - 23,875 = DKK 31,125, filed and paid by 1 December 2026.
+
+```oa-check
+name: Denmark Q3 2026 quarterly return, consultancy with an EU service, restaurant and hotel
+inputs:
+  sales: 200000
+  domestic_input_vat: 18000
+  eu_service: 20000
+  restaurant_vat: 1000
+  hotel_room_vat: 600
+  hotel_breakfast_vat: 100
+steps:
+  - output_vat: sales * 0.25
+  - eu_service_vat: eu_service * 0.25
+  - restaurant_ded: restaurant_vat * 0.25
+  - hotel_ded: hotel_room_vat + hotel_breakfast_vat * 0.25
+  - input_vat: domestic_input_vat + restaurant_ded + hotel_ded + eu_service_vat
+  - net_vat: output_vat + eu_service_vat - input_vat
+expected:
+  output_vat: 50000
+  eu_service_vat: 5000
+  restaurant_ded: 250
+  hotel_ded: 625
+  input_vat: 23875
+  net_vat: 31125
+```
+
+### Example 2: Physiotherapy clinic with taxable product sales, first half of 2026, filed late
+
+A physiotherapy clinic run as a sole trader makes exempt treatments (ML § 13, stk. 1, nr. 1) and taxable sales of training equipment and fitness classes, so it is registered for its taxable part and files half-yearly. In its 2025 financial year (the calendar year) taxable turnover was DKK 583,000 and exempt turnover DKK 317,000.
+
+For the first half of 2026:
+- Taxable sales DKK 300,000 excluding VAT, so output VAT DKK 75,000.
+- VAT on equipment bought for resale (used only for taxable sales): DKK 20,000, fully deductible.
+- VAT on shared costs used for both activities (cleaning, IT, a treatment couch under DKK 100,000): DKK 8,000. The provisional deduction percentage is 583,000 / 900,000 = 64.78%, rounded up to 65% (MB § 17, stk. 1), so DKK 5,200 is deductible.
+- VAT on supplies used only for treatments: DKK 3,000, not deductible.
+- A restaurant lunch with an equipment supplier about the product range, strictly business, invoice VAT DKK 400: 25% = DKK 100.
+- Input VAT: DKK 20,000 + 5,200 + 100 = DKK 25,300. Net VAT payable: DKK 49,700.
+
+The return and payment were due on 1 September 2026. The owner files nothing by then, so Skattestyrelsen makes a provisional assessment and charges DKK 1,400 (Opkrævningsloven § 4, stk. 2). The fee is a separate charge, not VAT. The owner then files the correct return and pays the DKK 49,700 on 1 October 2026. Interest accrues on the unpaid VAT for each day from 2 September to 1 October 2026, which is 30 days: DKK 49,700 x 0.95% x 12 / 365 x 30 = DKK 465.68 (Opkrævningsloven § 7, stk. 1, and § 16 c, stk. 1; 2026 has 365 days). Interest on the fee itself is left out here. The final 2026 percentage is settled with the return for the period that includes June 2027, the 6th month after the year end (MB § 17, stk. 2).
+
+```oa-check
+name: Denmark H1 2026 half-yearly return, mixed clinic with pro-rata rounding, a late-filing fee and 30 days' interest
+inputs:
+  taxable_prior: 583000
+  exempt_prior: 317000
+  sales: 300000
+  resale_input_vat: 20000
+  shared_input_vat: 8000
+  restaurant_vat: 400
+  late_fee: 1400
+  monthly_rate_pct: 0.95
+  days_late: 30
+steps:
+  - pro_rata_pct: ceil(taxable_prior / (taxable_prior + exempt_prior) * 100)
+  - output_vat: sales * 0.25
+  - shared_ded: shared_input_vat * pro_rata_pct / 100
+  - restaurant_ded: restaurant_vat * 0.25
+  - input_vat: resale_input_vat + shared_ded + restaurant_ded
+  - net_vat: output_vat - input_vat
+  - total_due_excl_interest: net_vat + late_fee
+  - interest: round(net_vat * monthly_rate_pct / 100 * 12 / 365 * days_late, 2)
+  - total_due: total_due_excl_interest + interest
+expected:
+  pro_rata_pct: 65
+  output_vat: 75000
+  shared_ded: 5200
+  restaurant_ded: 100
+  input_vat: 25300
+  net_vat: 49700
+  total_due_excl_interest: 51100
+  interest: 465.68
+  total_due: 51565.68
+```
 
 ## Ask the client first
 
-- CVR/VAT number, registration date, whether the business is established in Denmark, current assigned period (half-yearly, quarterly or monthly) and prior filed return/receipt.
-- Sales and purchase ledgers, invoices and credit notes for the period; do not classify from a bank payee alone.
-- Customer/supplier VAT number, country, goods movement or service facts, and invoice treatment for every international item.
-- Customs/import records, business-use and invoice evidence for claimed input VAT.
-- For every restaurant, hotel, staff-food, gift and vehicle cost: the invoice, the business purpose, who attended or received it, and for vehicles the plate colour (white or yellow), the weight, and whether it is bought, rented or leased and for how long.
-- Whether a return has been filed, corrected, assessed or is a negative return still being processed.
+1. Is the business established in Denmark, and what are its CVR or SE number, registration date and assigned VAT period? Send the sales and purchase ledgers and invoices for the period; a bank payee alone is not enough to classify a transaction. (Decides registration, the threshold and the deadline.)
+2. What was taxable turnover in the last calendar year and so far this year, and does any of it come from exempt activity (healthcare, education, letting, finance)? (Decides the DKK 50,000 test, the period, and partial deduction.)
+3. Does the business buy from or sell to other EU countries or outside the EU, and does it hold the customers' VAT numbers and transport evidence? (Decides boxes A, B and C, the EU sales list and the zero rate.)
+4. Which costs are meals, hotels, gifts, staff events or vehicles, and for vehicles: plate colour, weight, bought or leased, and how long? (These carry the ML §§ 41-42 limits.)
+5. Has any return been filed late, assessed provisionally or corrected, and is there a debit on the tax account? (Fees, interest and the correction route.)
+6. For a personally owned business: was net turnover above DKK 300,000 in each of the last 2 income years? (Digital bookkeeping duty from the 2026 financial year.)
 
-## The method, step by step
+## Sources
 
-1. **Confirm registration, period and deadline.** A Danish-established business registers through Virk when taxable sales are more than DKK 50,000 in a calendar year. A foreign business without a fixed place of business in Denmark that makes taxable sales here must register, and the threshold does not help it unless it is established in another EU country and uses the special scheme for small businesses in Denmark; reverse charge or the One Stop Shop can also remove the duty. Refer every foreign business. [VAT registration](https://skat.dk/erhverv/moms/moms-saadan-goer-du/saadan-registrerer-du-din-virksomhed-for-moms) and [foreign businesses (Juridisk vejledning D.A.14.1.5)](https://info.skat.dk/data.aspx?oid=2049567). Once registered, file every assigned period in TastSelv Erhverv, including a zero declaration where there were no relevant sales. Do not treat a zero declaration as a classification for zero-rated sales. Use the period SKAT has assigned: half-yearly if taxable turnover is under DKK 5 million a year and you have filed and paid on time; quarterly if the business is newly registered, has asked for it, or SKAT has found turnover of DKK 5-50 million; monthly if SKAT has found turnover over DKK 50 million, or on request. Filing and payment deadlines in 2026: half-yearly, 1st half 2026 by 1 September 2026 and 2nd half 2026 by 1 March 2027; quarterly, Q4 2025 by 2 March 2026, Q1 2026 by 1 June 2026, Q2 2026 by 1 September 2026, Q3 2026 by 1 December 2026 and Q4 2026 by 1 March 2027. Monthly filers take each date from SKAT's monthly table: most fall on or just after the 25th of the following month, but some are moved (June 2026 is due 17 August 2026). If a return is late, SKAT makes a provisional assessment and charges DKK 1,400 for each period not filed on time, plus interest. [VAT deadlines](https://skat.dk/erhverv/moms/frister-indberet-og-betal-moms)
-2. **Build the evidence schedule.** Use invoice dates for the reporting period even when unpaid. The exception is a prepayment without an invoice: there, VAT arises at the time of payment. [Period rule](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts) Record invoice date, legal counterparty, VAT number, goods/services, origin/destination, VAT-exclusive base, VAT shown, rate/route, business purpose, customs evidence and document ID. Reconcile sales/purchases to the ledger before entering a return.
-3. **Calculate domestic VAT and the deductible input VAT.** For a confirmed ordinary domestic taxable sale, calculate `output VAT = VAT-exclusive sale × 25 ÷ 100`. Total output VAT and supported input VAT from the period accounts. Claim input VAT only where both business and seller are VAT registered and an invoice documents a resale or business-running purchase. Test private, mixed and exempt use separately. [Get started on VAT](https://skat.dk/erhverv/moms/i-gang-med-moms) and [VAT deductions](https://skat.dk/en-us/businesses/vat/vat-deductions/getting-your-vat-deductions)
-   Then apply the statutory limits before entering **Købsmoms (indgående moms)**. They apply even when the cost is wholly for the VAT-liable business:
-   - **Restaurant meals:** no deduction for restaurant services, except 25% of the VAT where the cost is strictly business, for example an employee's business travel, congresses and conferences, staff meetings held at a restaurant, or a restaurant meal with customers or other business contacts. If any part of the meal is private, nothing is deductible; you cannot split it into a business part and a private part. [Juridisk vejledning D.A.11.5.7.2](https://info.skat.dk/data.aspx?oid=2085707) and [food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel)
-   - **Hotels:** the overnight stay is 100% deductible and restaurant items such as breakfast are 25%, but only if the hotel invoice shows the two separately. If the stay includes a social event, estimate and exclude the social part. [Food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel)
-   - **Staff food and parties:** food and drink for employees is generally not deductible, except for unannounced overtime. A staff party or Christmas lunch at a restaurant gets 25% of the VAT; the food at a staff party in your own or rented premises gets none. Food, cake and drinks for meetings in your own premises (with business contacts, board meetings, internal meetings with professional content, internal courses) are 100% deductible under SKAT's guidance. Purchases relating to entertainment are not deductible. [Food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel)
-   - **Gifts and representation:** no deduction for VAT on gifts, including gifts to staff, or on entertainment and representation. Product samples and ordinary advertising articles stay fully deductible. [Juridisk vejledning D.A.11.5.7](https://info.skat.dk/data.aspx?oid=2085705) and [D.A.11.5.7.4](https://info.skat.dk/data.aspx?oid=2085709)
-   - **Vehicles:** no deduction for vehicles on white plates. For a car or motorbike there is no deduction on purchase, none on rent or lease of less than 6 months, and none on running costs such as petrol or repairs (the Øresund bridge toll is the one exception). A rent or lease of more than 6 months gives a limited deduction only if at least 10% of the driving relates to VAT-liable activity, and the deductible amount is the one stated on the rental company's invoice. Vans and trucks on yellow or "parrot" plates can qualify for deduction depending on taxable, exempt and private use; refer mixed or private use. Insurance and fines are not deductible. [Vehicle deductions](https://skat.dk/en-us/businesses/vat/vat-deductions/vat-deductible-expenses/vat-deductions-for-vehicle-expenses)
-   - If a food, hospitality, gift or vehicle cost does not fit one of these rules, or its purpose or attendees are undocumented, do not claim it; refer it.
-4. **Route international purchases separately.** A registered business calculates Danish VAT on goods/services bought in other EU countries. Report the purchase value in **A goods** for EU goods or **A services** for EU services, and report goods VAT in **Moms af varekøb i udlandet** and services VAT in **Moms af ydelseskøb i udlandet med omvendt betalingspligt**; ordinary fully deductible input VAT can normally be deducted at the same time. If the EU seller charged its own country's VAT, still calculate 25% Danish VAT on the invoice amount, do not enter the foreign VAT as Købsmoms, and ask the seller to repay it. The same source says an unregistered business has an EU-goods exception below DKK 80,000 annually but foreign services usually remain taxable regardless of amount. Do not use this method for the listed place-of-supply exclusions: property services outside Denmark (including hotel stays in other EU countries), passenger transport, tickets to cultural, sports, training and similar events, restaurant and catering services, and short-term hire of transport. The same applies to the second list of services used mainly outside the EU (for example rights, advertising, consultancy, banking, financing and insurance, and hire of staff or movable goods). [EU purchases](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/purchases-of-goods-and-services-in-the-eu)
-5. **Handle imports and sales records.** For non-EU goods, confirm importer registration and obtain the customs declaration/import statement. Reconcile import VAT to the documented customs value plus customs duty, other import charges and transport/insurance to the known EU destination; avoid counting costs already included twice. Put import VAT in **Moms af varekøb i udlandet**, and only the deductible portion in **Købsmoms (indgående moms)**. Non-EU goods do not enter A goods. For qualifying non-EU business services, calculate Danish VAT under the supported place-of-supply route, put it in **Moms af ydelseskøb i udlandet med omvendt betalingspligt**, and separately test input deduction; non-EU services do not enter A services. Refer excluded services before calculation. [Non-EU purchases](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-non-eu-countries/buying-goods-and-services-in-countries-outside-the-eu) and [special VAT accounts/import base](https://info.skat.dk/data.aspx?oid=2068799). For EU sales without Danish VAT, keep verified buyer VAT number and dispatch/transport evidence. Use the **B goods** box marked for EU-salg uden moms for ordinary qualifying EU goods sales and **B services** for qualifying reverse-charge services; also report those sales by buyer VAT number in **EU-salg uden moms** and make sure the value is the same in both places. A separate B goods box covers supplies excluded from that listing, such as specified installation sales; do not mix the two. **C** is for other qualifying supplies without Danish VAT, including exports. Zero-VAT sales to businesses in other EU countries of services connected with property there (for example construction work), passenger transport there, restaurant and catering services performed there, and short-term hire of transport made available there go in **C**, not B services. File **EU-salg uden moms** monthly, by the 25th of the following month, whatever your VAT return period; quarterly listing (for example Q1 2026 by 25 April 2026) is allowed only if you have applied for it in TastSelv Erhverv. File the listing only for periods with such sales; no zero listing is required. [Exact return fields and dual reporting](https://skat.dk/erhverv/moms/moms-ved-handel-med-udlandet/indberet-din-handel-med-udlandet), [EU-salg deadlines](https://skat.dk/erhverv/moms/frister-indberet-og-betal-moms), [VAT accounts](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts) and [EU documentation](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/documentation-requirements-for-eu-trade)
-6. **Reconcile, file and pay.** Tie output VAT to sales schedules, input VAT to invoice-level support after the step 3 limits, foreign-purchase VAT to the EU A schedules and separate non-EU import/service schedules, B/C to cross-border evidence and the net result to the VAT control account. For the ordinary scope here, calculate **net VAT = domestic output VAT + VAT on foreign goods purchases + reverse-charge VAT on foreign services − deductible input VAT**. Positive net VAT is payable; negative net VAT is a refund claim, subject to processing. Do not count foreign-purchase VAT twice as domestic output VAT. File in TastSelv Erhverv. The digital receipt states whether VAT is payable or refundable; the filing and payment deadline are the same. SKAT recommends paying no sooner than 5 working days before the deadline, because an earlier payment may be used to cover other debt to public authorities. A refund is normally paid to the business NemKonto no later than 21 days after the return is filed. [Pay VAT](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-pay-vat)
-7. **Correct the affected period.** Open the affected period in TastSelv Erhverv and follow the official correction branch for **before 4 pm on the day filed** or **after 4 pm**. Enter the corrected period amounts following that branch, then retain the acknowledgement and reconcile the changed liability. Correct the period the error belongs to; do not place the difference in an unrelated period. A change more than 3 years after the return was due is allowed only under the stated exceptional conditions and by a written application through TastSelv Erhverv (Contact, then Write to us), stating the reason, the documentation, the VAT to change and the correct amount. A forgotten deduction, a misunderstood rule or a wrong entry does not itself qualify. [Correction guidance](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-change-your-vat-return-or-vat-payment)
+| Source | URL | Read on |
+|---|---|---|
+| Momsloven, LBK nr. 209 of 27 Feb 2024 (§§ 13, 21 e, 23, 24, 27, 32, 33, 34, 37-43, 46-47, 49-50, 52 a-52 c, 54-57, 62, 66 g, 81) | https://www.retsinformation.dk/eli/lta/2024/209 | 2026-10-24 |
+| Lov nr. 332 of 9 Apr 2024 (SME scheme, § 34 c, § 37, stk. 9, § 46, stk. 3 repealed, § 48 repealed) | https://www.retsinformation.dk/eli/lta/2024/332 | 2026-10-24 |
+| Lov nr. 1693 of 30 Dec 2024 (chapter 17 a, §§ 71 b-71 k; § 34, stk. 1, nr. 22) | https://www.retsinformation.dk/eli/lta/2024/1693 | 2026-10-24 |
+| Lov nr. 1695 of 30 Dec 2024 (§ 4 d, § 13, stk. 1, nr. 7) | https://www.retsinformation.dk/eli/lta/2024/1695 | 2026-10-24 |
+| Lov nr. 1473, nr. 1489 and nr. 1703 of Dec 2024 (minor ML amendments) | https://www.retsinformation.dk/eli/lta/2024/1703 | 2026-10-24 |
+| Lov nr. 1783 of 29 Dec 2025 (§ 13, stk. 1, nr. 3 from 1 Jan 2026) | https://www.retsinformation.dk/eli/lta/2025/1783 | 2026-10-24 |
+| Lov nr. 763 of 8 Sep 2026 (reminder fee DKK 160 from 14 Sep 2026; ML § 54, stk. 3) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-10-24 |
+| Momsbekendtgørelsen, BEK nr. 1435 of 29 Nov 2023 (§§ 17, 58, 66, 78-86, 99-100) | https://www.retsinformation.dk/eli/lta/2023/1435 | 2026-10-24 |
+| BEK nr. 518 of 13 May 2025 (MB §§ 17 and 81, from 1 Jul 2025) | https://www.retsinformation.dk/eli/lta/2025/518 | 2026-10-24 |
+| BEK nr. 850 of 20 Jun 2025 (MB § 64) | https://www.retsinformation.dk/eli/lta/2025/850 | 2026-10-24 |
+| Opkrævningsloven, LBK nr. 1040 of 13 Sep 2024 (§§ 4-8, 16 c) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-24 |
+| Lov nr. 16 of 14 Jan 2025 (§ 4, stk. 2 fee DKK 800 to DKK 1,400) | https://www.retsinformation.dk/eli/lta/2025/16 | 2026-10-24 |
+| Lov nr. 1694 of 30 Dec 2024 (§ 7 daily interest and addition 0.7 to 0.85; § 1, nr. 15 no interest on interest) | https://www.retsinformation.dk/eli/lta/2024/1694 | 2026-10-24 |
+| L 80 (2024-25) as introduced, remarks to § 1, nr. 5 (daily interest: monthly rate x 12 / 365, rounded to 2 decimals) | https://www.folketingstidende.dk/samling/20241/lovforslag/L80/20241_L80_som_fremsat.pdf | 2026-10-24 |
+| Skatteforvaltningsloven, LBK nr. 1228 of 13 Oct 2025 (§§ 31-32, time limits for changing VAT) | https://www.retsinformation.dk/eli/lta/2025/1228 | 2026-10-24 |
+| Bogføringsloven, lov nr. 700 of 24 May 2022 (§§ 15-18, 34) | https://www.retsinformation.dk/eli/lta/2022/700 | 2026-10-24 |
+| BEK nr. 1342 of 24 Nov 2023 (digital bookkeeping, companies) | https://www.retsinformation.dk/eli/lta/2023/1342 | 2026-10-24 |
+| BEK nr. 297 of 20 Mar 2025 (digital bookkeeping, personally owned businesses from 2026) | https://www.retsinformation.dk/eli/lta/2025/297 | 2026-10-24 |
+| Skattestyrelsen, VAT deadlines 2026/27 and the DKK 1,400 fee | https://skat.dk/erhverv/moms/frister-indberet-og-betal-moms | 2026-10-24 |
+| Skattestyrelsen, registering for VAT | https://skat.dk/erhverv/moms/moms-saadan-goer-du/saadan-registrerer-du-din-virksomhed-for-moms | 2026-10-24 |
+| Skattestyrelsen, provisional assessments | https://skat.dk/erhverv/betaling-og-skattekonto/indberet-til-tiden-og-undgaa-foreloebig-fastsaettelser | 2026-10-24 |
+| Skattestyrelsen, food and hotel deductions | https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel | 2026-10-24 |
+| Skattestyrelsen, vehicle deductions | https://skat.dk/en-us/businesses/vat/vat-deductions/vat-deductible-expenses/vat-deductions-for-vehicle-expenses | 2026-10-24 |
+| Skattestyrelsen, reporting foreign trade (boxes A, B, C; EU sales list) | https://skat.dk/erhverv/moms/moms-ved-handel-med-udlandet/indberet-din-handel-med-udlandet | 2026-10-24 |
+| Skattestyrelsen, EU purchases | https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/purchases-of-goods-and-services-in-the-eu | 2026-10-24 |
+| Skattestyrelsen, how to pay VAT | https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-pay-vat | 2026-10-24 |
+| Skattestyrelsen, changing a VAT return | https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-change-your-vat-return-or-vat-payment | 2026-10-24 |
+| Skattestyrelsen, VAT accounts | https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts | 2026-10-24 |
+| Den juridiske vejledning 2026-2, D.A.11.5.7.2 (restaurant meals) | https://info.skat.dk/data.aspx?oid=2085707 | 2026-10-24 |
+| Den juridiske vejledning 2026-2, D.A.11.5.7.4 (gifts, samples, advertising items) | https://info.skat.dk/data.aspx?oid=2085709 | 2026-10-24 |
+| Den juridiske vejledning 2026-2, A.B.4.7.2 (fees and interest) | https://info.skat.dk/data.aspx?oid=2168585 | 2026-10-24 |
+| Den juridiske vejledning 2026-2, A.B.4.5.3 (interest on the tax account) | https://info.skat.dk/data.aspx?oid=2168702 | 2026-10-24 |
+| Skattestyrelsen, interest rate under Opkrævningsloven § 7, stk. 2 for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-24 |
 
-## Worked checks
-
-| Case | Facts and arithmetic | Result |
-| --- | --- | --- |
-| Domestic sale | Hypothetical Danish taxable sale DKK 100,000 excluding VAT. [General rate](https://skat.dk/erhverv/moms/i-gang-med-moms) | Output VAT **DKK 25,000** (`100,000 × 25 ÷ 100`). |
-| Supported business purchase | Hypothetical domestic business purchase has DKK 10,000 VAT, valid invoice and wholly taxable use. [Input VAT conditions](https://skat.dk/en-us/businesses/vat/vat-deductions/getting-your-vat-deductions) | Put **DKK 10,000** in input VAT; do not infer it from bank payment alone. |
-| EU service purchase | Registered business buys a qualifying EU business service for DKK 20,000, 25%, wholly taxable use. [EU purchase route](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/purchases-of-goods-and-services-in-the-eu) | Record **A services DKK 20,000**, self-assess **DKK 5,000** VAT and test the same DKK 5,000 for input deduction. |
-| EU goods sale | Seller has buyer VAT number and evidence goods left Denmark for another EU state. [EU documentation](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/documentation-requirements-for-eu-trade) | Record the supported value in **B goods**; do not substitute an unverified foreign customer. |
-| Correction | Filed return omitted a DKK 10,000 domestic 25% sale. [General rate](https://skat.dk/erhverv/moms/i-gang-med-moms) and [correction route](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-change-your-vat-return-or-vat-payment) | Correct the affected period; omitted output VAT is **DKK 2,500** (`10,000 × 25 ÷ 100`). |
-| Restaurant meal | Hypothetical restaurant bill on an employee's business trip, strictly business; the invoice shows DKK 400 VAT. [Food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel) | Input VAT **DKK 100** (`400 × 25 ÷ 100`), not DKK 400. If part of the meal was private, nothing is deductible. |
-| Hotel stay | Hypothetical hotel invoice shows room VAT DKK 300 and breakfast VAT DKK 40 separately. [Food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel) | Input VAT **DKK 310** = room DKK 300 + breakfast DKK 10 (`40 × 25 ÷ 100`). |
-| Passenger car | Hypothetical purchase of a white-plate passenger car with DKK 60,000 VAT on the invoice. [Vehicle deductions](https://skat.dk/en-us/businesses/vat/vat-deductions/vat-deductible-expenses/vat-deductions-for-vehicle-expenses) | No input VAT: there is no deduction on buying a car. |
-
-### Complete ordinary return example
-
-Assume the domestic sale and supported input invoice above, the EU service purchase above, and a non-EU import whose customs statement confirms **DKK 2,500** import VAT. All purchases are used wholly for deductible taxable activity, and none is a restaurant, hotel, gift or vehicle cost. [Accounts](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts), [EU purchases](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/purchases-of-goods-and-services-in-the-eu) and [non-EU reporting](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-non-eu-countries/buying-goods-and-services-in-countries-outside-the-eu) support the routes.
-
-- Domestic output VAT: **DKK 25,000**.
-- Foreign-goods VAT field: **DKK 2,500** import VAT; **A goods is zero** because this example has no EU goods purchases.
-- Foreign-services VAT field: **DKK 5,000**; **A services DKK 20,000**.
-- Input VAT: **DKK 17,500** = DKK 10,000 domestic + DKK 5,000 EU service + DKK 2,500 import. [Deduction conditions](https://skat.dk/en-us/businesses/vat/vat-deductions/getting-your-vat-deductions).
-- Net payable: **DKK 15,000** = DKK 25,000 + DKK 2,500 + DKK 5,000 − DKK 17,500. No B/C sales occur in this example. [Foreign VAT added to payable and deductible input](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-non-eu-countries/buying-goods-and-services-in-countries-outside-the-eu).
-
-Retain the return receipt, control-account reconciliation and invoice/customs schedule together. If an input deduction fails, change the input total; never delete the corresponding acquisition/import liability merely to make the return balance.
-
-## When to refuse or refer
-
-- Missing registration, invoice, customs, buyer-VAT-number or EU transport evidence; retain the records and identify the exact unresolved route.
-- Exemption, place-of-supply uncertainty, partial deduction, restaurant/hospitality, gift or vehicle VAT outside the step 3 rules, VAT group, property, margin scheme, capital-goods adjustment, OSS/IOSS, a foreign business or non-established supplier position, or a car-rental or driving-school business (special rules apply).
-- A negative or authority-corrected return outside the self-service route.
-
-Official sources: [SKAT VAT hub](https://skat.dk/en-us/businesses/vat), [Get started on VAT](https://skat.dk/erhverv/moms/i-gang-med-moms), [VAT registration](https://skat.dk/erhverv/moms/moms-saadan-goer-du/saadan-registrerer-du-din-virksomhed-for-moms), [VAT deadlines](https://skat.dk/erhverv/moms/frister-indberet-og-betal-moms), [EU purchases](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/purchases-of-goods-and-services-in-the-eu), [VAT deductions](https://skat.dk/en-us/businesses/vat/vat-deductions/getting-your-vat-deductions), [food and hotel deductions](https://skat.dk/erhverv/moms/fradrag-for-moms/udgifter-du-kan-faa-momsfradrag-for/momsfradrag-for-forplejning-og-hotel), [vehicle deductions](https://skat.dk/en-us/businesses/vat/vat-deductions/vat-deductible-expenses/vat-deductions-for-vehicle-expenses), [VAT accounts](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-do-your-business-vat-accounts), [EU documentation](https://skat.dk/en-us/businesses/vat/vat-on-international-trade/vat-on-sales-to-businesses/trading-with-eu-countries/documentation-requirements-for-eu-trade), [pay VAT](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-pay-vat), [correction guidance](https://skat.dk/en-us/businesses/vat/vat-what-to-do/how-to-change-your-vat-return-or-vat-payment).
+Not yet confirmed: no consolidated Momsloven after LBK nr. 209/2024 exists, so the in-force text was rebuilt from the amending acts listed above; a later Momsbekendtgørelse amendment in 2026 was searched for and not found. The daily interest formula is taken from the remarks to the bill (L 80 of 2024-25) and Den juridiske vejledning, not from the wording of § 7 itself; the formula figure in the bill is an image and was read only through the text around it. The date from which lov nr. 1783/2025, § 2, nr. 5 (interest only on the part of a tax-account debit that is principal and fees) applies is set by ministerial order and was not found. No order under Bogføringsloven § 18 requiring e-invoices for purchases and sales was found. Vehicle rules for vans over 3 tonnes and mixed private use are referred, not set out.
 
 <!-- openaccountants-cta-block -->
 
