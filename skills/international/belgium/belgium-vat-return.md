@@ -3,16 +3,15 @@ name: belgium-vat-return
 description: "Belgian VAT (btw / TVA) for tax year 2026: who must charge it, the 21%, 12%, 6% and 0% rates (hotels and campsites moved from 6% to 12% on 1 March 2026), the small-business exemption at EUR 25,000 with its 10% tolerance and the rises to EUR 26,000-30,000 from 2027, the EU small-business scheme (EUR 100,000), monthly or quarterly returns (EUR 2,500,000 test), the 20th and 25th deadlines, the end of the summer holiday extension in 2026, refunds on request and the VAT provision account, the replacement return, mandatory structured B2B e-invoicing from 1 January 2026, late interest (8% in 2026) and the fines in Royal Decrees 41 and 44. Trigger on: Belgian VAT, btw-aangifte, déclaration TVA, Intervat, kwartaalaangifte, vrijstellingsregeling kleine ondernemingen, franchise TVA, vervangende aangifte, Peppol Belgium, btw-boete. Out of scope: e-invoice formats and Peppol set-up (belgium-einvoice), bookkeeping (belgium-bookkeeping), income tax (be-income-tax), corporate tax (be-corporate-tax)."
 version: 2.1
 jurisdiction: BE
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -218,3 +217,23 @@ expected:
 | FOD Financiën, e-factuur FAQ on the B2B obligation | https://efactuur.belgium.be/nl/FAQ/algemene-vragen-b2b | 2026-10-23 |
 
 Not yet confirmed: whether the pro rata limit for a business that starts mid-year is also the limit tested for the "exceeded in the previous year" bar in art. 56decies; the full item lists of Tables A, B and C are summarised, not reproduced; any tolerance period the administration may grant for the first months of B2B e-invoicing was not found in the sources read.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

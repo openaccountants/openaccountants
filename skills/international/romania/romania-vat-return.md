@@ -1,15 +1,14 @@
 ---
 name: romania-vat-return
 description: "Pointer skill for Romanian VAT (TVA) in tax year 2026. This slug is an older alias kept so existing links work; the full method lives in ro-vat-return. It states the headline 2026 figures: 21% standard rate and 11% reduced rate under Fiscal Code art. 291 as rewritten by Legea 141/2025 art. II pt. 42 from 1 August 2025, the 9% transitional rate for homes to 31 July 2026, the 395,000 lei small-enterprise threshold, D300 due on the 25th, D394 due on the 30th, and RO e-Factura within 5 working days. Trigger phrases: Romania VAT return, D300, TVA Romania, Romanian VAT rate. For registration, rates by supply, D300 rows, RO e-TVA, reverse charge, EU trade, refunds, penalties and worked examples, load ro-vat-return. Out of scope: romania-einvoice, ro-corporate-income-tax, ro-cross-border."
+version: 1.1
 jurisdiction: RO
-category: international
 tax_year: 2026
 last_updated: 2026-10-23
-version: 1.1
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
-verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -42,3 +41,23 @@ There is no 19%, 9% (other than the transitional homes) or 5% rate in art. 291 s
 | OUG 89/2025, ANAF copy | https://static.anaf.ro/static/10/Anaf/legislatie/OUG_89_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of ro-vat-return.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

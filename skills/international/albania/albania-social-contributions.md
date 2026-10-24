@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 depends_on:
   - social-contributions-workflow-base
 category: international
@@ -197,3 +196,23 @@ expected:
 | Social Insurance Institute, bilateral agreements in force | https://www.issh.gov.al/shtetet-me-te-cilat-shqiperia-ka-marreveshje/ | 2026-10-23 |
 
 Not yet confirmed: the 2026 fixed monthly amounts for ambulant traders and domestic workers (Decision 77/2015 ch. III paras. 13 and 14 still print ALL 4,696 and ALL 3,948, computed on older minimum wages); the 2026 rules and amounts for self-employed farmers; whether the self-employed person's own contributions are deductible in computing business income under Law 29/2023; how the social ceiling is shared between two employers in practice (listëpagesa categories 8 to 10 and 17 to 19); whether a self-employed person who is also an employee elsewhere at or above the ceiling still owes self-employed social contributions; the start date and scope of each bilateral agreement and the certificate of coverage procedure (the ISSH procedure page returned no text today); the ISSH page still gives ALL 10,000 for every late listëpagesa, while Law 9920/2008 art. 113 gives ALL 10,000, 5,000 or 3,000 by type of taxpayer (this skill follows the law); the E-SIG 027/a filing notes on tatime.gov.al still say at least 48 hours before work starts, while Instruction 23/2014 para. 4.1 and Law 9920/2008 art. 119(1) say at least one calendar day (this skill follows the law).
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

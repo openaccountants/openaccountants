@@ -4,11 +4,9 @@ description: Use this skill whenever asked about reducing tax in Germany, tax pl
 version: 1.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-09-20
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 category: tax-optimization
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -321,7 +319,7 @@ Outside a date window only straight-line depreciation applies, and a switch from
 | Source | all figures below | https://www.gesetze-im-internet.de/estg/__10d.html |
 | Carry-back cap, single assessment | EUR 1,000,000 | "einem Betrag von 1 000 000 Euro" |
 | Carry-back cap, jointly assessed spouses | EUR 2,000,000 | "einem Betrag von 2 000 000 Euro" |
-| Carry-forward: share of the total income above the base | 70% | "bis zu 70 Prozent des 1 Million Euro übersteigenden" |
+| Carry-forward: share of the total income above the base | 70% for 2024 to 2027; 60% from 2028 | "bis zu 70 Prozent des 1 Million Euro übersteigenden"; back to 60 Prozent from 2028 under BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |
 
 **Trade tax loss carry-forward (§ 10a GewStG)**
 
@@ -563,6 +561,8 @@ Each paragraph is linked where it is used. Laws read: Einkommensteuergesetz, Abg
 This Guide and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this Guide. All outputs must be reviewed and signed off by a qualified professional (such as a Steuerberater or Wirtschaftsprüfer) before filing or acting upon.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

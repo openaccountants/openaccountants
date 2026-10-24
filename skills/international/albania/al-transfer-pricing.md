@@ -1,13 +1,16 @@
 ---
 name: al-transfer-pricing
 description: "Albanian transfer pricing for tax year 2026 under Law No. 29/2023 'Për tatimin mbi të ardhurat' (arts. 3(13), 32 to 39, 44) and Instruction No. 29 of 16.11.2023 on transfer pricing and advance pricing agreements. Covers who is a related person (the 50% tests, relatives, de facto control), which transactions are controlled, the five methods, the arm's length range and adjustment to the median, documentation produced within 45 days, the annual controlled transactions notice above ALL 50 million due with the corporate return, APAs (EUR 30 million admission test, fees, five-year term), country-by-country reporting at ALL 105 billion, penalties under Law No. 9920/2008, and how the 30% EBITDA interest cap sits beside transfer pricing. Trigger on 'Albania transfer pricing', 'transferimi i çmimit', 'njoftimi vjetor për transaksionet e kontrolluara', 'Albania APA', 'Albanian related party'. Out of scope: the corporate computation (al-corporate-tax), individuals (albania-income-tax), planning (albania-tax-optimization)."
-jurisdiction: AL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: AL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Albania transfer pricing, tax year 2026
@@ -225,3 +228,23 @@ expected:
 | General Directorate of Taxes, instructions list | https://tatime.gov.al/legjislacioni/udhezime/ | 2026-10-23 |
 
 Not yet confirmed: whether the annual notice is now filed only on e-Filing; the Bank of Albania 12-month lending rate figures that cap deductible interest under Law 29/2023 art. 50(1)(dh) (the rule is the rate for the month the loan was taken; the figures were not read); whether the published 7.8% late payment interest rate is an annual rate applied per day (neither Law 9920/2008 art. 76 nor Instruction 24/2008 point 76 says); whether EBITDA starts from taxable income (Law 29/2023 art. 30(2)) or profit before tax (General Instruction 26/2023 point 30.2 as amended) where they differ; how the administration adjusts purely domestic related-party transactions under art. 44 without the art. 32 machinery; the detailed country-by-country report content set by Council of Ministers decision under Law 9920/2008 art. 63/4(2).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

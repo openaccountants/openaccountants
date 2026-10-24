@@ -173,3 +173,23 @@ expected:
 | Fisconetplus, art. 52 WIB 92 (income 2026), deductibility | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34 | 2026-10-23 |
 
 Not yet confirmed: the management cost rates of the social insurance funds and their legal maximum; the VAPZ maximum in euro for 2026; the 2026 amounts for self-employed with an early retirement pension or a survivor's pension only (sections 6 and 7 of the RSVZ table were not worked into this skill); the annual company contribution (vennootschapsbijdrage) for 2026.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

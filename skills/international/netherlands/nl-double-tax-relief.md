@@ -1,13 +1,16 @@
 ---
 name: nl-double-tax-relief
 description: "How the Netherlands relieves double taxation for its residents in tax year 2026, and the deadlines for the migration (M) and non-resident (C) income tax returns. Covers the Besluit voorkoming dubbele belasting 2001: exemption with progression in box 1 (arts. 8 to 12), credit for foreign tax on dividends, interest and royalties (arts. 15 to 17, 19, 25), the box 3 exemption for foreign real estate, the corporate tax object exemption (Wet Vpb art. 15e) and the art. 23d credit; treaty relief; and treaty dividend rates for 12 partners. Trigger on: aftrek voorkoming dubbele belasting, foreign salary, foreign dividends, US withholding, treaty rate, exemption method, credit method, objectvrijstelling, M-aangifte deadline, C-aangifte deadline. Out of scope: residence and emigration (nl-cross-border), Dutch dividend tax and conditional withholding tax (nl-dividend-withholding), corporate tax generally (nl-corporate-tax), resident income tax (nl-income-tax)."
-jurisdiction: NL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: NL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.1
@@ -257,3 +260,23 @@ expected:
 | Belastingdienst, aangifte en betalen bronbelasting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/aangifte-doen-en-betalen-+bronbelasting | 2026-10-23 |
 
 Not yet confirmed: the invitation date usually printed on 2025 C letters (the notes link belastingrente to filing after 1 May 2026, but the deadline itself is in each letter); filing dates for 2026 returns; how Dutch national insurance contributions are relieved when a resident is insured in the Netherlands and also works abroad; the treaty rates for partners other than the 12 listed; and how the MLI changes each listed treaty beyond the principal purpose test (in particular whether a 365-day holding period applies to the reduced company rates).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
