@@ -92,7 +92,7 @@ Sum the items, subtract EUR 200,000 ("soweit die Summe den Betrag von 200 000 Eu
 
 | Reduction | Rule and condition |
 | --- | --- |
-| Property (no. 1 sentence 1) | The Grundsteuer booked as a business expense in the period, for real property that belongs to the entrepreneur's business assets. This replaced the old reduction of 1.2% of the property's Einheitswert and first applies for 2025 ([§ 36(4b) GewStG](https://www.gesetze-im-internet.de/gewstg/__36.html)). Rented premises give no reduction |
+| Property (no. 1 sentence 1) | The Grundsteuer booked as a business expense in the period, for real property that belongs to the entrepreneur's business assets. This wording first applies for collection period 2025 ([§ 36(4b) GewStG](https://www.gesetze-im-internet.de/gewstg/__36.html)); for 2024 and earlier the old wording applies. Rented premises give no reduction |
 | Extended property reduction (no. 1 sentences 2 to 6) | On request, for businesses that only manage their own real property (and capital): the trade income from that property. Narrow limits (20% for power supply, 5% for other tenant services). Refer |
 | Partnership shares (no. 2) | Profit shares from a partnership of co-entrepreneurs, if counted in the profit. The partnership pays its own trade tax |
 | German company dividends (no. 2a) | Dividends from a non-exempt German company, if the holding is "mindestens 15 Prozent" at the start of the period, less directly related expenses |
@@ -117,13 +117,14 @@ Sum the items, subtract EUR 200,000 ("soweit die Summe den Betrag von 200 000 Eu
 - **At a low multiplier the credit is capped.** At the 200% floor, a base amount of EUR 1,942.50 gives trade tax of EUR 3,885, while four times the base amount is EUR 7,770. The credit is EUR 3,885. An unused credit is lost: § 35 has no carry-forward or refund.
 - **Partners.** The share follows the general profit-sharing key, without advance shares, as a percentage with two decimals; the base amount, the tax payable and the shares are determined separately and uniformly (§ 35(2) EStG). The base amount notice and the trade tax notice are Grundlagenbescheide for the credit (§ 35(3) EStG): if they change, the income tax follows.
 - **Church tax is not reduced.** "§ 35 ist bei der Ermittlung der festzusetzenden Einkommensteuer nach Satz 1 nicht anzuwenden" ([§ 51a(2) EStG](https://www.gesetze-im-internet.de/estg/__51a.html)). Church tax is "je nach Bundesland 8 oder 9 Prozent" of income tax ([BMF booklet](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9)).
+- **Solidarity surcharge is computed after the credit.** Its base is the income tax to be assessed under [§ 2(6) EStG](https://www.gesetze-im-internet.de/estg/__2.html), which is the tariff tax "vermindert um ... die Steuerermäßigungen" (§ 35 is one). [§ 3(1) no. 1, (2) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) departs from § 2(6) only for the child allowances, so the § 35 credit also lowers the surcharge. Church tax is the exception, by the express rule above.
 - **Companies get no credit.** A GmbH pays trade tax on top of corporation tax (see `de-corporate-tax`).
 
 ## Deadlines and filing
 
 **Who must file** ([§ 25(1) GewStDV](https://www.gesetze-im-internet.de/gewstdv_1955/__25.html)): every liable business whose trade income "den Betrag von 24 500 Euro überstiegen hat"; every non-exempt capital company and cooperative, whatever the amount; a business with a loss carry-forward determined at the end of the last period; any business the tax office asks. A sole trader at or below EUR 24,500 with no loss carry-forward and no request files nothing. Note the test is on trade income before rounding: EUR 24,580 rounds to EUR 24,500, gives no tax, yet a return is due.
 
-**What.** A declaration for setting the base amount and, where § 28 applies, an apportionment declaration, sent electronically in the official data format. On request the tax office can accept a signed paper form to avoid undue hardship ([§ 14a GewStG](https://www.gesetze-im-internet.de/gewstg/__14a.html)). On ELSTER the forms are named GewSt 1 A (return) and GewSt 1 D (apportionment).
+**What.** A declaration for setting the base amount and, where § 28 applies, an apportionment declaration, sent electronically in the official data format. On request the tax office can accept a signed paper form to avoid undue hardship ([§ 14a GewStG](https://www.gesetze-im-internet.de/gewstg/__14a.html)).
 
 | Deadline | Collection period 2026 | Source |
 | --- | --- | --- |
@@ -267,11 +268,13 @@ expected:
 | GewStG § 35a (travelling trade) | https://www.gesetze-im-internet.de/gewstg/__35a.html | 2026-10-24 |
 | GewStG § 36 (application dates) | https://www.gesetze-im-internet.de/gewstg/__36.html | 2026-10-24 |
 | GewStDV § 25 (who files) | https://www.gesetze-im-internet.de/gewstdv_1955/__25.html | 2026-10-24 |
+| EStG § 2(6) (income tax to be assessed, after Steuerermäßigungen) | https://www.gesetze-im-internet.de/estg/__2.html | 2026-10-24 |
 | EStG § 4(5b) (trade tax not deductible) | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-24 |
 | EStG § 15 (commercial business, partnerships) | https://www.gesetze-im-internet.de/estg/__15.html | 2026-10-24 |
 | EStG § 18 (free professions) | https://www.gesetze-im-internet.de/estg/__18.html | 2026-10-24 |
 | EStG § 35 (credit) | https://www.gesetze-im-internet.de/estg/__35.html | 2026-10-24 |
 | EStG § 51a (church tax) | https://www.gesetze-im-internet.de/estg/__51a.html | 2026-10-24 |
+| SolzG § 3 (surcharge base) | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-24 |
 | AO § 1, § 108, § 138, § 149, § 152, § 184, § 233a, § 238, § 240 | https://www.gesetze-im-internet.de/ao_1977/ | 2026-10-24 |
 | EGAO Art. 97 § 36 (Corona extensions) | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |
 | BGBl. 2026 I Nr. 197, Art. 8 (floor 200 to 280 from 2027) | https://www.recht.bund.de/bgbl/1/2026/197/VO.html | 2026-10-24 |
@@ -280,7 +283,7 @@ expected:
 | Destatis press release 369, October 2026 (average multiplier 2025: 410%) | https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_369_712.html | 2026-10-24 |
 | City of Munich, Gewerbesteuer (multiplier 490%) | https://stadt.muenchen.de/service/info/gewerbesteuer/1074725/ | 2026-10-24 |
 
-Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); whether the solidarity surcharge is computed after the § 35 credit ([§ 3(2) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) has no sentence switching § 35 off, but this skill does not settle it); any de minimis limit for Abfärbung under § 15(3) no. 1 EStG (case law, not in the statute); the Munich multiplier as a decision for 2026 specifically (the city page says "aktuell gültig" without a year).
+Not yet confirmed: the ELSTER form names GewSt 1 A and GewSt 1 D for 2026 (not read on ELSTER); any de minimis limit for Abfärbung under § 15(3) no. 1 EStG (case law, not in the statute); the Munich multiplier as a decision for 2026 specifically (the city page says "aktuell gültig" without a year).
 
 <!-- openaccountants-cta-block -->
 
