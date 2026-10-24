@@ -1,10 +1,10 @@
 ---
 name: fi-prepayments
 description: Use this skill whenever asked about Finland prepayment tax (ennakkovero) for self-employed individuals. Trigger on phrases like "ennakkovero", "ennakkoverot", "prepayment tax Finland", "Finnish tax prepayments", "residual tax Finland", "jäännösvero", "tax instalments Finland", "OmaVero prepayment", "prepayment certificate", "ennakkoperintä", or any question about paying tax during the year as a Finnish self-employed person. Covers prepayment calculation, payment schedules, adjustment requests, residual tax, and penalties. ALWAYS read this skill before advising on Finnish tax prepayments.
-version: 1.0
+version: 1.2
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-09-25
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland prepayments — 2026 operational method
+# Finland prepayments v1.2 — 2026 operational method
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation. Sources were retrieved from the Finnish Tax Administration (Vero) for this editorial update.
 
@@ -101,6 +101,44 @@ If advances and any additional prepayment are too small, the shortfall is back t
 | Shortfall after year end | Individual identifies an estimated €600 shortage for tax year 2026 in December 2026. | Request additional prepayment and select a January 2027 due date; paid by that due date, no interest with relief arises. Pay the amount and reference in the decision.  [Vero additional prepayment](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/) |
 | Small shortfall found late | Individual finds a €600 shortage in April, after the January window. | An additional prepayment now carries interest with relief from 1 February with no €20 deduction; because €600 is below approximately €880, leaving it as back tax may cost less. Confirm with the MyTax figures.  [Vero additional prepayment](https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/) |
 | Seasonal income | Business expects income only in June–August. | Request a decision reflecting the forecast; follow its issued instalments rather than assuming twelve equal payments. |
+
+## Executable instalment examples
+
+The [official instalment table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) was re-read as indexed Vero text on 23 October 2026. Other operational source work above is preserved from the earlier draft and retains specialist and named Finnish accountant review gaps; see the [country README](README.md#evidence-and-next-action) for the independent source-review scope. These examples assume an ordinary individual schedule with no monthly/seasonal election or midyear change; the actual decision controls.
+
+### Six instalments
+
+Assume the issued ordinary individual prepayment total is EUR 1,800, within the more-than-EUR-1,700 through EUR 10,000 band. Six equal instalments are EUR 300 each. This does not calculate tax from business profit.
+
+```oa-check
+name: Finland assumed individual six prepayment instalments
+inputs:
+  decision_total: 1800
+  ordinary_instalments: 6
+steps:
+  instalment_amount: decision_total / ordinary_instalments
+  reconciled_total: instalment_amount * ordinary_instalments
+expected:
+  instalment_amount: 300
+  reconciled_total: 1800
+```
+
+### Monthly schedule
+
+Assume an ordinary individual decision total of EUR 12,000, above the EUR 10,000 band boundary. Twelve equal instalments are EUR 1,000 each. Any unpaid prior decision and its replacement need separate reconciliation.
+
+```oa-check
+name: Finland assumed individual monthly prepayment instalments
+inputs:
+  decision_total: 12000
+  ordinary_instalments: 12
+steps:
+  instalment_amount: decision_total / ordinary_instalments
+  reconciled_total: instalment_amount * ordinary_instalments
+expected:
+  instalment_amount: 1000
+  reconciled_total: 12000
+```
 
 ## When to refuse or refer
 

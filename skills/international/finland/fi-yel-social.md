@@ -1,10 +1,10 @@
 ---
 name: fi-yel-social
 description: Use this skill whenever asked about Finland YEL pension insurance or social security for self-employed persons. Trigger on phrases like "YEL", "YEL insurance", "yrittäjän eläkelaki", "self-employed pension Finland", "Finnish pension insurance", "entrepreneur pension", "YEL income", "YEL contribution", "sickness allowance Finland", "disability pension self-employed Finland", "new entrepreneur discount", or any question about mandatory social insurance obligations for Finnish self-employed. Covers YEL contribution rates, income thresholds, provider selection, tax deductibility, and social security benefits. ALWAYS read this skill before advising on Finnish self-employed social insurance.
-version: 1.0
+version: 1.4
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland YEL and self-employed social insurance — 2026 editorial draft
+# Finland YEL and self-employed social insurance v1.4 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation.
 
@@ -31,13 +31,13 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Senior Oy shareholder test | more than 30% alone / more than 50% with family | Shares or voting rights. |
 | Contribution flexibility | 10–100% increase / 10–20% reduction | Provider route and terms apply. |
 | Review cap / pension accrual / unemployment-security income | €4,000 / 1.5% / €15,481 | Review and benefit rules have separate conditions. |
-| Health insurance (Vero, 2026): self-employed daily allowance contribution | 1.11% where annual income is €17,255 or more; 0.23% where it is less | Age 16 to 67; Vero uses the YEL confirmed income. Separate health care contribution 1.10% on wage and work income as taxed. |
+| Health insurance (Vero, 2026): self-employed daily allowance contribution | 1.11% where annual income is €17,255 or more; 0.23% where it is less | Age 16 to 67; Vero uses the YEL confirmed income. Health care contribution 1.10%; YEL replaces relevant business income/own-company wages for this contribution too (section 5a). |
 | Ordinary illustrative contribution | €30,000 × 24.40% = €7,320; €7,320 ÷ 12 = €610 | A mathematical example, not an invoice schedule. |
 | Eligible illustrative reduction | €7,320 × 78% = €5,709.60 | Apply only after confirming history. |
 
 ## Ask the client first
 
-- When did the self-employment begin, and has it lasted (or will it last) at least four months without interruption after age 18?
+- When did the self-employment begin, and has it lasted (or will it last) at least four months without interruption, and when does the month after the 18th birthday begin?
 - Is the person drawing an old-age, early old-age, partial old-age, disability or unemployment pension?
 - Does the person also have a job (employment or service relationship)? It does not remove the YEL obligation.
 - Does a spouse or other family member work in the business, are they paid, and does the spouse have split earnings in taxation?
@@ -53,7 +53,9 @@ Retain date of birth; any pension being drawn; work start, duration, hours, role
 
 ## 2. Eligibility
 
-YEL is required only if all of these hold: the person works in the activity (simply owning a company is not enough); is self-employed, not in an employment or service relationship; is at least 18 and below the age end for their birth year; the self-employment has lasted at least four months without interruption after they turned 18; they live in Finland, or live in another EU country while working as self-employed in Finland (the EU Regulation or a social security agreement can displace this); and 2026 annual confirmed income is at least €9,423.09. Self-employment carried on alongside a job, or seasonally, is covered if it meets these conditions: the employment does not remove the YEL obligation, and TyEL for the job and YEL for the business run side by side. Voluntary pension insurance does not replace YEL. The obligation ends at 68 for people born in 1957 or earlier, 69 for 1958–1961, and 70 for 1962 or later, and it ends at the end of the calendar month in which the person reaches that age.
+YEL is required only if all of these hold: the person works in the activity (simply owning a company is not enough); is self-employed, not in an employment or service relationship; has reached the beginning of the calendar month after their 18th birthday and is below the age end for their birth year; the qualifying self-employment has lasted at least four months without interruption; they live in Finland, or live in another EU country while working as self-employed in Finland (the EU Regulation or a social security agreement can displace this); and 2026 annual confirmed income is at least €9,423.09. Self-employment carried on alongside a job, or seasonally, is covered if it meets these conditions: the employment does not remove the YEL obligation, and TyEL for the job and YEL for the business run side by side. Voluntary pension insurance does not replace YEL. The obligation ends at 68 for people born in 1957 or earlier, 69 for 1958–1961, and 70 for 1962 or later, and it ends at the end of the calendar month in which the person reaches that age.
+
+The lower age boundary follows YEL Act section 4(1)(1): turning 18 during a month does not start coverage that day. [YEL Act, section 4](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
 The 2026 upper confirmed-income limit is €214,000. A kiosk operated for three months each year can still require YEL where the seasonal activity continues year to year and the other conditions are met: the YEL policy is continuous and valid year round.
 
@@ -73,9 +75,9 @@ Confirmed income is the annual value of the work performed, broadly the wage for
 
 Record the recommendation, its inputs and the work evidence. Explain any departure with substantiated part-time, hours, staffing, unusual-work, pay or other work-input facts. Do not mechanically choose either leeway boundary. Aggregate work input across companies; one policy can cover it. The provider makes the appealable confirmed-income decision.
 
-The 2023 reform: providers review YEL income every three years. In the first two reviews, a provider can increase confirmed income by no more than €4,000 at each review. From the beginning of 2026, that cap also applies at the first review for insurance begun in 2023–2025. In 2026 reviews are carried out for YEL insurance that began in 2023 and for incomes not reviewed in the past three years. The cap is not an annual cap or an automatic increase. Retain the notice, current evidence and decision.
+The 2023 reform: providers review YEL income every three years. For income confirmed before the reform, its first two review increases are capped at €4,000 each without the entrepreneur's consent to a higher increase. From 2026 the transition also caps the first review before 1 January 2029 for income first confirmed to start during 2023–2025. A higher increase is permitted with the entrepreneur's consent. The cap is neither annual nor an automatic increase. Record the qualifying history, notice, evidence, consent and decision. [YEL Act, commencement provisions for Acts 1157/2022 and 1400/2025](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
-At the beginning of each year, the provider raises confirmed income using the wage coefficient. Contact the provider when business operations change or when considering a rise in confirmed income. Keep the change facts and new decision: confirmed income cannot be amended retrospectively. This differs from late policy arrangement, which can cover the current and three preceding years.
+At the beginning of each year, the provider adjusts confirmed income using the wage coefficient under section 89. Contact the provider when business operations change. Ordinary income changes are not retrospective; section 112a provides a disability-pension exception, which requires separate review. This differs from late policy arrangement, which can cover the current and three preceding years. The statute's base-year monetary figures are not automatically the 2026 indexed amounts. [YEL Act, sections 89 and 112a](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
 ## The method, step by step
 
@@ -89,7 +91,7 @@ At the beginning of each year, the provider raises confirmed income using the wa
 
 Choose an earnings-related pension insurance company, or where eligible an industry pension fund. Obtain its current quote and preserve the provider, policy effective date, payment-frequency choice and terms. Do not use a universal instalment date, late-interest rate or payment plan.
 
-Arrange YEL within six months of starting self-employment. Coverage begins at the start. A person can arrange insurance retroactively for the current and three previous years only. Uninsured work further back is lost: no YEL pension accrues for it. If ETK has urged correction and the person does not act, ETK can arrange YEL on that person's behalf and at that person's expense. Two further consequences are set by the Self-Employed Persons' Pensions Act (YEL, 1272/2006), which this skill cannot yet cite from an allowed official page, so confirm them with the provider or ETK before advising: a neglect fee (laiminlyöntimaksu, section 122) of up to the contribution for the neglected period, imposed by the State Treasury (Valtiokonttori) on the provider's application where YEL is not taken out within six months of the obligation starting, and also payable after ETK compulsory insurance (section 143); and no start-up reduction where ETK has insured the person compulsorily (section 115). Do not calculate a fee amount. This draft does not establish provider invoice terms.
+Arrange YEL within six months of starting qualifying self-employment. Section 109 sets that deadline; section 143 authorises ETK compulsory insurance after an uncorrected notice, limited to the current and three preceding calendar years. Section 122 provides a neglect-fee ceiling equal to the neglected-period contribution, with statutory discretion/waiver conditions: the State Treasury decides on the provider's application. Section 115 excludes compulsory-insurance cases from the startup reduction. Do not calculate a fee or infer the maximum is automatic. Provider invoice terms remain separate. [YEL Act, sections 109, 115, 122 and 143](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
 For 2026:
 
@@ -114,7 +116,9 @@ The provider record controls actual accrual where flexibility or unpaid contribu
 
 ## 5a. Health insurance and unemployment security
 
-**Health insurance contributions (2026).** Vero applies the YEL confirmed income, as endorsed by the pension provider, when determining a self-employed person's health insurance contribution. For 2026 Vero lists, for 16- to 67-year-olds, a daily allowance contribution of 1.11% for self-employed individuals whose annual income is €17,255 or more and 0.23% where it is less, plus a health care contribution of 1.10% on wage and work income. The daily allowance contribution is the one tied to YEL income; the health care contribution is listed separately, on wage and work income as taxed. These are collected through income taxation, not by the pension provider. Check the person's tax card or assessment for the amount actually levied.
+**Health insurance contributions (2026).** Confirmed YEL income is relevant to both insured-person contributions. For health care, it replaces the relevant business income and own-company wages; other earned income not replaced remains in the base. Do not charge health care on both the replaced income and YEL income. The daily allowance contribution uses wage income and YEL/MYEL income, with the YEL-specific supplement applied to YEL income. [Vero prepayment bases](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-is-the-current-years-total-of-prepayments-calculated/); [Vero insurance-related data, section 3.4](https://www.vero.fi/en/incomes-register/companies-and-organisations/detailed-guidance/64633/reporting-data-to-the-incomes-register-insurance-related-data10/)
+
+For 2026, Vero lists 1.10% health care on wage/work income and, for self-employed persons aged 16–67, daily allowance of 1.11% at annual income of at least €17,255 or 0.23% below it. Apply the correct substituted base and other-income rules before using those rates; this is not a complete mixed-income assessment formula. These insured-person contributions are collected through income taxation, separately from the pension provider's invoice. The employer health contribution on actual own-company wages is a separate employer liability. Reconcile the person's tax card/assessment. [Vero tax bases](https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/tax-bases/); [Vero health insurance contribution](https://www.vero.fi/en/incomes-register/companies-and-organisations/employers/earnings-payment-data/employers-are-obliged-to-insure-their-employees/health-insurance-contribution/)
 
 **Kela benefits.** Kela's sickness allowance and daily allowances for parents use the YEL confirmed income for the 12-month reference period before the calendar month preceding the start of the allowance, averaged if it changed. Wage income from the person's own company and business income are not included. If the person is both self-employed and in paid employment outside their own business, both income sources are used. Contribution flexibility does not change these benefits. Refer the exact benefit amount to Kela.
 
@@ -144,7 +148,67 @@ The provider record controls actual accrual where flexibility or unpaid contribu
 
 **Midyear start:** a qualifying business begins in July. Estimate confirmed income as the annual value of the work using the outsider-wage/work-input method; do not halve that assessment solely because the start date is midyear. The provider’s decision and actual policy-period terms control.
 
-**Changed business:** the provider has indexed confirmed income at the start of the year, then the business operations materially change. Give the change facts to the provider and obtain its new decision; do not seek a retrospective amendment to confirmed income. A late-policy arrangement is a different rule.
+**Changed business:** the provider has indexed confirmed income at the start of the year, then the business operations materially change. Give the change facts to the provider and obtain its new decision; ordinary changes are prospective. The disability-pension exception in section 112a needs separate review before ruling out a retrospective change. A late-policy arrangement is a different rule. [YEL Act, section 112a](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
+
+### Review-cap arithmetic with no consent to exceed it
+
+Assume current indexed confirmed income of EUR 20,000, a proposed review result of EUR 27,000, verified eligibility for the EUR 4,000 transition cap and no consent to a higher increase. The capped result is EUR 24,000. Annual indexation, different review histories, consent and disability cases are separate; the calculation does not establish the correct work-input value.
+
+```oa-check
+name: Finland assumed eligible YEL review cap without higher consent
+inputs:
+  current_indexed_income: 20000
+  proposed_review_income: 27000
+  established_transition_cap: 4000
+steps:
+  proposed_increase: proposed_review_income - current_indexed_income
+  capped_increase: min(proposed_increase, established_transition_cap)
+  capped_review_income: current_indexed_income + capped_increase
+expected:
+  proposed_increase: 7000
+  capped_increase: 4000
+  capped_review_income: 24000
+```
+
+## Executable contribution examples
+
+The standard rate and new-entrepreneur reduction below were rechecked against [ETK's self-employed page](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/) on 23 October 2026. The independent source review and its selected verification limits are recorded in the [country README](README.md#evidence-and-next-action); remaining specialist and named accountant review are separate. These controls reproduce existing illustrative amounts; they do not establish eligibility or insurer billing terms.
+
+### Standard full-year contribution
+
+Assume EUR 30,000 confirmed income and ordinary full-year liability, without flexibility or other adjustments. The monthly equivalent is arithmetic, not a provider payment schedule.
+
+```oa-check
+name: Finland 2026 assumed standard YEL contribution
+inputs:
+  confirmed_annual_income: 30000
+  contribution_rate: 0.244
+  months: 12
+steps:
+  annual_contribution: confirmed_annual_income * contribution_rate
+  monthly_equivalent: annual_contribution / months
+expected:
+  annual_contribution: 7320
+  monthly_equivalent: 610
+```
+
+### Confirmed new-entrepreneur reduction
+
+Assume the same base and confirmed entitlement to the 22% reduction for the full period. An insurer must establish that entitlement separately.
+
+```oa-check
+name: Finland assumed eligible YEL startup reduction
+inputs:
+  confirmed_annual_income: 30000
+  contribution_rate: 0.244
+  eligible_reduction: 0.22
+steps:
+  standard_contribution: confirmed_annual_income * contribution_rate
+  contribution_after_reduction: standard_contribution * (1 - eligible_reduction)
+expected:
+  standard_contribution: 7320
+  contribution_after_reduction: 5709.60
+```
 
 ## When to refuse or refer
 
@@ -157,6 +221,8 @@ The provider record controls actual accrual where flexibility or unpaid contribu
 
 ## Sources
 
+Direct statutory check, 23 October 2026: [Self-Employed Persons' Pensions Act 1272/2006](https://www.finlex.fi/fi/lainsaadanto/2006/1272), sections 4, 89, 109, 112–112a, 114–115, 122 and 143, plus the displayed review-transition provisions. Official HTML statutory text was extracted after the browser reader proved incomplete; hashes are in the country research record. This closes selected statutory gaps, not every annual decree, social-benefit rule or exception in the earlier operational draft. Named Finnish accountant review remains open; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action).
+
 - [Finnish Centre for Pensions: FAQs on YEL insurance](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/)
 - [Finnish Centre for Pensions: self-employed](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/)
 - [Finnish Centre for Pensions: pension insurance of the self-employed, 2026 booklet (PDF)](https://www.etk.fi/wp-content/uploads/2026/02/pension-insurance-of-the-self-employed.pdf)
@@ -168,6 +234,8 @@ The provider record controls actual accrual where flexibility or unpaid contribu
 - [Työeläke.fi: social security of the self-employed](https://www.tyoelake.fi/en/pensions-for-the-self-employed/social-security-of-the-self-employed-based-on-confirmed-income/)
 - [Työeläke.fi: the Finnish Centre for Pensions supervises](https://www.tyoelake.fi/en/pensions-for-the-self-employed/the-finnish-centre-for-pensions-supervises/)
 - [Vero: pension premiums (YEL)](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/deductions/pension-premiums-yel/)
+- [Vero: prepayment bases, YEL/MYEL subsection](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-is-the-current-years-total-of-prepayments-calculated/), read 23 October 2026
+- [Vero: insurance-related data, section 3.4](https://www.vero.fi/en/incomes-register/companies-and-organisations/detailed-guidance/64633/reporting-data-to-the-incomes-register-insurance-related-data10/), effective 1 January 2026; read 23 October 2026
 - [Vero: tax bases for 2026](https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/tax-bases/)
 - [Vero: health insurance contribution (Incomes Register)](https://www.vero.fi/en/incomes-register/companies-and-organisations/employers/earnings-payment-data/employers-are-obliged-to-insure-their-employees/health-insurance-contribution/)
 
