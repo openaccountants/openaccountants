@@ -26,13 +26,17 @@ This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **ski
 - `REUSE.toml` — machine-readable per-path licence mapping.
 - `COMMERCIAL-LICENSING.md` — commercial alternative for both tracks.
 
+## How to write a skill
+
+**Read [docs/skill-template.md](docs/skill-template.md) first. Its opening section, "How to write a skill: the standard", is the one standard for every writer, human or AI.** In short: primary sources only (never Big Four or blogs), every figure cited to its article with a read date, nothing unconfirmed in the skill, the deep-tax shape with two recomputing examples, the current tax year, and one independent review before merge.
+
 ## Skill file conventions
 
 Every skill is a single Markdown file with YAML frontmatter. **The canonical frontmatter spec — required keys (`name`, `description`, `jurisdiction`, `category`, `tax_year`, `tier`, `last_updated`), optional keys (`tax_year_notes`, `verified_by`, `reviewed_by`, `depends_on`, `version`), formats, and the category vocabulary — is [docs/skill-template.md](docs/skill-template.md).** Do not restate or improvise variants; CI enforces the spec via `scripts/validate-guides.py`. Tier labels: `1` = accountant-reviewed, `2` = source-cited draft.
 
 After the frontmatter, a tax skill follows the deep-tax shape in `docs/skill-template.md`, in this order: who this applies to; rates, bands and thresholds (a table with an official source URL per figure); the base; deadlines and filing; penalties and interest; cross-border points; two worked examples that recompute (each in an `oa-check` block); ask the client first; sources with read dates. US skills add a Circular 230 §10.37 disclosure. Accounting-pack skills (bookkeeping, e-invoicing, financial statements, tax optimisation) keep the general template.
 
-Every published skill ends with the `<!-- openaccountants-cta-block -->` marker followed by a "Talk to an accountant" CTA. The marker makes the stamp idempotent; bulk re-stamps skip files that already have it.
+The `<!-- openaccountants-cta-block -->` marker and its "Talk to an accountant" CTA are stamped by the platform. Do not add, edit or remove them by hand; `## Sources` is the last section you write.
 
 ## AUDIT FLASH POINT convention
 
@@ -52,4 +56,4 @@ Transparency about AI involvement is expressed in README content and public post
 
 ## When in doubt
 
-Read the existing files in the same jurisdiction before writing new ones. Tax skills follow the deep-tax shape above. Match the pattern of well-developed packs (Malta, US-CA, Germany, UK) when filling in thinner jurisdictions, and check the pack README for which domains apply.
+Read the existing files in the same jurisdiction before writing new ones. Tax skills follow the deep-tax shape above. Match a complete pack built to the standard (for example Slovakia, Croatia or Estonia) when filling in thinner jurisdictions, and check the pack README for which domains apply.

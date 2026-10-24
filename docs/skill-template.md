@@ -1,4 +1,44 @@
-# Frontmatter spec — the canonical reference
+# How to write a skill: the standard
+
+**This file is the one standard for every skill in this repository.** It applies to every writer, human or AI (Claude, ChatGPT, Codex, Gemini or anything else), and to every accountant who contributes. `CLAUDE.md`, `AGENTS.md`, `CONTRIBUTING.md` and `OWNERS.md` point here. If another document says something different, this file wins; fix the other document in the same PR.
+
+The repository is treated as tax law. Every figure must be traceable to the law that sets it.
+
+## The ten rules
+
+1. **Primary sources only.** Every rate, threshold, deadline and penalty comes from the law itself (the official gazette or law register) or the tax authority's own pages, fetched by you, for the tax year the skill covers. Never cite PwC, KPMG, Deloitte, EY, taxsummaries, blogs, law-firm notes or another AI. A secondary source may help you find the law; it is never the citation.
+2. **The statute wins.** If a tax authority page disagrees with the current law text, follow the law, cite it, and note the outdated page.
+3. **When a site blocks scripts,** open it in a normal browser tab and read it there. Never solve a CAPTCHA or human check. If a site refuses every connection, use an Internet Archive (web.archive.org) copy captured in the current year and say so in the Sources table.
+4. **Cite the article.** Every row of the rates table names the act and article (e.g. "ZKPO art. 20") and links the official text.
+5. **Read dates.** The `## Sources` table records the date each source was read.
+6. **Nothing unconfirmed goes in.** If you cannot confirm a figure or rule from an official source, leave it out of the skill and list it on the "Not yet confirmed:" line at the end of `## Sources`.
+7. **Tax skills use the deep-tax shape** (below): nine sections in order, a rates table, and exactly two worked examples whose `oa-check` blocks recompute in CI.
+8. **Current tax year.** `tax_year` is the year the figures apply to. A skill with an old `tax_year` makes its pack partial. When a law changes mid-year, give both periods with their dates.
+9. **Independent review before merge.** Someone other than the writer (a person or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment: figures checked, fixes made with sources, items still not confirmed. Only then does the PR merge, as a source-cited draft (`tier: 2`).
+10. **Accountant sign-off is the only route to tier 1.** A licensed accountant reviews the whole skill and sets `tier: 1`, `reviewed_by` and `reviewed_on`. No one else sets these keys.
+
+## Updating an existing skill
+
+- Rewrite in place; keep the slug.
+- `version` and `last_updated` only go up. Set `version` one step above main's, and keep any version in the body heading the same (CI `compare` fails otherwise).
+- Keep a team byline or `trust_label` as it is. Remove a named outside reviewer only when the content they reviewed has changed (a changed skill loses its review and returns to source-cited draft).
+- Fix contradictions you find in sibling skills in their own PR, not as a bonus edit.
+
+## Pack README
+
+Each jurisdiction folder has a `README.md` (see [pack-readme-template.md](pack-readme-template.md)). A domain whose skills still carry an old tax year, or leave out a group of taxpayers or a core computation most clients need, gets a `partial:` entry with the reason in double quotes. Remove the entry only when the gap is closed. Niche regimes, special VAT schemes and treaty-rate tables are named out of scope in the README; they do not make a domain partial.
+
+## Checks before you open a PR
+
+```
+python3 scripts/check-examples.py <skill.md>
+python3 scripts/validate-guides.py --no-index-check
+python3 scripts/coverage-report.py --json
+```
+
+Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, and do not add or edit the platform-written keys listed below or the `openaccountants-cta-block`.
+
+# Frontmatter spec
 
 **This section is THE frontmatter spec for every skill/skill file in this repo.** Other docs (`CLAUDE.md`, `CONTRIBUTING.md`) link here rather than restating it. CI enforces it: `scripts/validate-guides.py` hard-fails on malformed frontmatter, a missing `name`/`description`, a non-integer `tax_year`, a missing or invalid `tier` (must be 1 or 2), a missing or malformed `last_updated` (YYYY-MM-DD), and a missing `jurisdiction` (except in a small allowlist of jurisdiction-agnostic directories, where it warns).
 
@@ -7,7 +47,7 @@
 | Key | Format | Notes |
 |-----|--------|-------|
 | `name` | slug, `[country-or-topic]-[domain]` | e.g. `malta-income-tax` |
-| `description` | 80-100 words | What it covers, entity types, jurisdiction, tax year, plus trigger phrases the AI should match |
+| `description` | 80-150 words | What it covers, entity types, jurisdiction, tax year, plus trigger phrases the AI should match |
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
 | `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in the body text, never here. CI errors on anything that is not an integer 2015-2035 |
@@ -19,8 +59,8 @@
 | Key | Format | Notes |
 |-----|--------|-------|
 | `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"`. The platform does not store this key, so the daily export drops it when it re-renders a skill. Put the year label in the body text, such as a "Tax year" row in the quick-reference table, so it survives |
-| `verified_by` | `pending` or `Name, Credential` | e.g. `Michael Cutajar, CPA (Malta)`. Stored identifier — the field name stays `verified_by` even though the display language is "reviewed". A real name here does **not** imply `tier: 1`; set `tier: 1` explicitly as well. CI errors if `tier: 2` carries a real `verified_by` |
-| `reviewed_by` | `Name, Credential` | Used on the hand-authored `packages/us-federal/` guides (e.g. `Christopher Aryee, CPA`) |
+| `verified_by` | legacy | Do not add to new skills. The platform is retiring it; accountant review uses `reviewed_by` and `reviewed_on` (rule 10) |
+| `reviewed_by` | `Name, Credential` | Set only by a licensed accountant who reviewed the whole skill, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1` |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change when present. Keep any body-heading version in step |
 
@@ -74,7 +114,9 @@ This is the vocabulary actually in use across the repo's guides (by count), not 
 
 Legacy synonyms still present in older files — do **not** use for new files: `federal-tax` (use `federal`), `state` / `us-states` (use `state-tax`), `financial-reporting` (use `financial-statements`), plus stragglers `template`, `pattern(s)`, `intelligence`.
 
-## Template
+## General template (accounting packs only)
+
+Bookkeeping, e-invoicing, financial statements and tax optimisation skills use this general template. **Tax skills (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) use the deep-tax shape further down, not this.**
 
 ---
 
@@ -86,14 +128,13 @@ description: >
   Include trigger phrases the AI should match. Be specific about scope.]
 jurisdiction: XX   # REQUIRED — MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-27, etc.
 category: international   # see the category vocabulary above
-tax_year: 2025             # bare integer = coverage start year
+tax_year: 2026             # bare integer = the year the figures apply to
 tax_year_notes: "2025-26"  # optional; the export drops it, so repeat the label in the body
 tier: 2                    # 1 = accountant-reviewed | 2 = source-cited draft
 last_updated: 2026-07-04   # YYYY-MM-DD
 version: 0.1
 depends_on:
   - [workflow-base-or-country-skill]
-verified_by: pending       # or "Name, Credential" — stored field name stays verified_by
 ---
 ```
 

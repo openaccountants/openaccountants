@@ -3,9 +3,9 @@ jurisdiction: BG
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-IND: bulgaria-income-tax
   XB: bg-cross-border
-partial:
-  IT-IND: "bulgaria-income-tax still carries 2025 figures; rewrite for 2026 and the euro pending"
+partial: {}
 ---
 
 # Bulgaria: tax pack
@@ -16,7 +16,7 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | bulgaria-income-tax | source-cited draft (2025 figures) |
+| IT-IND, individual income tax | bulgaria-income-tax | source-cited draft (2026, euro) |
 | IT-CORP, corporate income tax | bg-corporate-income-tax | source-cited draft |
 | VAT | bulgaria-vat-return | source-cited draft (2026, euro) |
 | SC, social contributions | bulgaria-social-contributions | source-cited draft |
@@ -35,3 +35,4 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 - NRA, application of double tax treaties: https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/prilagane-na-SIDDO (read 2026-10-23)
 - NRA, list of double tax treaties: https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/spisak-sas-spogodbi (read 2026-10-23)
 - Value Added Tax Act (ZDDS), consolidated: https://lex.bg/laws/ldoc/2135533201 (read 2026-10-24)
+- NRA, child and disabled child reliefs for 2026: https://nra.bg/wps/portal/nra/taxes/danak-vurhu-dohodite-na-fizicheski-lica/danuchni-oblekchenia-za-deca/danuchni_oblekchenia_za-deca (read 2026-10-24)
