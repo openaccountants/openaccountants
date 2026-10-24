@@ -1,253 +1,111 @@
 ---
 name: monaco-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Monaco TVA (VAT) return for any client. Trigger on phrases like "Monaco VAT", "Monaco TVA", "Monaco tax return", or any request involving Monaco VAT. Monaco is within the French VAT territory and applies French TVA rules identically. Supplies between Monaco and France are domestic. For all substantive rules, refer to the France VAT skill. ALWAYS read this skill before touching any Monaco TVA work.
-version: 2.0
+description: "Monaco VAT working paper for 2026 using the Monaco turnover tax code and the France Monaco convention. Covers standard rate calculations, ordinary franchise thresholds, start date and threshold crossing tests, input deduction, business service reverse charge, monthly or permitted quarterly filing, Monaco DSF procedures and statutory penalties. Use for Monaco TVA, VAT returns, small business exemption and foreign service questions. Requires transaction evidence and the assigned filing calendar. Includes reproducible examples, records unresolved special regimes and live forms, and awaits a named Monaco professional review."
+version: 2.1
 jurisdiction: MC
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Monaco VAT
+# Monaco VAT v2.1
 
-## Section 1 — Quick reference
+> **Source-cited draft; partial scope.** Checked 24 October 2026. No named Monaco professional has reviewed this Guide. It produces a working paper, not a filing or a final tax position. Read the [country gap register](README.md) before use.
 
-Monaco applies French TVA law in full under the Franco-Monegasque Customs Convention of 1963. For all substantive rules, refer to the France VAT skill (france-vat-return).
+## Who this applies to
 
-**Quick reference field table**
+Tax year 2026. Apply Monaco's Code des taxes sur le chiffre d'affaires to taxable transactions, establishments and recipients. The France–Monaco convention aligns turnover taxes on the same bases and rates; it does not justify replacing Monaco filing rules with an assumed Nice tax-office procedure. Ordinary taxable business services use article 11's recipient/provider location tests, subject to the special rules that follow. Establish transaction type, tax point, customer status and the establishment receiving the service before assigning a rate. [Convention, art. 15](https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/); [Code, arts. 1, 11–14, A-139](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-| Field | Value |
-| --- | --- |
-| Country | Principality of Monaco |
-| Tax name | TVA (Taxe sur la Valeur Ajoutee) — identical to French TVA |
-| Standard rate | 20% |
-| Reduced rates | 10% (restaurants, prepared food, accommodation, passenger transport), 5.5% (food, books, energy, adapted housing), 2.1% (medicines, press, cultural events) |
-| Zero rate | Exports outside EU |
-| Return form | French CA3 declaration |
-| Filing portal | Monaco: https://service-public-entreprises.gouv.mc; filed via Nice tax office |
-| Authority | Direction des Services Fiscaux de Monaco (registration); DGFiP France (substantive law) |
-| Currency | EUR |
-| Filing frequency | Monthly (turnover > EUR 4M HT or TVA > EUR 15,000), quarterly (otherwise), annual (< EUR 1,000 TVA) |
-| Deadline | Monthly: 15th-24th of following month; quarterly: within month after quarter |
-| Companion skills | vat-workflow-base v0.1+, eu-vat-directive v0.1+ |
-| Contributor | Open Accountants Skills Registry |
-| Validated by | Pending |
+This draft covers ordinary standard-rated supplies, an ordinary small-business franchise screen and a business-service reverse-charge illustration. Reduced rates, property, special schemes, imports, intra-community exemptions and electronic-invoicing transition rules need transaction-specific review. Never infer exemption or deduction from a bank merchant's name.
 
-- **Critical rule — Monaco-France supplies** — Monaco-France supplies are DOMESTIC (not intra-EU)
-- **Critical rule — Monaco-EU non-France supplies** — Monaco-EU (non-France) supplies follow France-EU intra-community rules
-- **Critical rule — Monaco-non-EU supplies** — Monaco-non-EU supplies follow French export/import rules
-- **Critical rule — Monaco EU VAT territory status** — Monaco IS part of the EU VAT territory
+## Rates, bands and thresholds
 
-**Conservative defaults table**
+| Item | Amount | Period | Official source |
+|---|---|---|---|
+| Standard rate | 20% | 2026 | [Art. 51](https://legimonaco.mc/code/code-taxes-chiffre-affaires) |
+| Ordinary franchise, prior-year national turnover | Total EUR 85,000; relevant service subset EUR 37,500 | 2026 screen | [Art. 87(I)](https://legimonaco.mc/code/code-taxes-chiffre-affaires) |
+| Ordinary franchise, current-year national turnover | Total EUR 93,500; relevant service subset EUR 41,250 | 2026 screen | [Art. 87(I), (III)](https://legimonaco.mc/code/code-taxes-chiffre-affaires) |
+| Quarterly filing permission | Annual tax strictly below EUR 4,000 | 2026 | [Art. 70(2)](https://legimonaco.mc/code/code-taxes-chiffre-affaires) |
+| Late-payment interest | 0.20% per month | 2026, statutory conditions | [Art. 110](https://legimonaco.mc/code/code-taxes-chiffre-affaires) |
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate | 20% |
-| Unknown purchase status | Not deductible |
-| Unknown counterparty | Domestic Monaco/France |
-| Unknown B2B/B2C for EU | B2C, charge 20% |
-| Unknown business-use | 0% |
+## The base
 
-## Section 2 — Required inputs and refusal catalogue
+For an established ordinary business, test both total national turnover and the service subset excluding on-premises consumption and accommodation. The prior-year and current-year tests differ. Crossing either current-year ceiling ends franchise for transactions from the crossing date. Special authors/artists thresholds are outside this ordinary screen. Article 89 defines included/excluded turnover and prorates thresholds for a mid-year start. Article 88 has exclusions. Its July 2026 amendment and article 89 changes specify application from 21 February 2026: inspect the transaction date. [Arts. 87–89](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-### Required inputs
+A franchise business cannot deduct input VAT or show VAT on invoices; article 90 prescribes “TVA non applicable, article 87 du Code des taxes”. Article 91 allows an option effective the first day of the declaration month, covering two years including that year, with renewal conditions. Reverse-charge obligations require a separate test; franchise is not a universal exemption from all recipient obligations. [Arts. 62, 87–91](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-**Minimum viable** — bank statement. Banks: CMB (Compagnie Monegasque de Banque), CFM (Credit Foncier de Monaco), Barclays Monaco, HSBC Private Bank Monaco.
+For ordinary taxable business, reconcile output VAT, recipient-accounted VAT and deductible input VAT. Article 42 conditions deduction; invoice requirements are in article 71. A general-rule B2B service supplied by a taxable supplier established outside both Monaco and France to a Monaco taxable recipient is screened under articles 11 and 62(2). Self-assessment does not automatically create an equal deduction. Confirm invoice, business use, taxable use, exclusions and timing. Do not default an unknown counterparty to domestic treatment. [Arts. 11, 42, 62(2), 71](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-### Refusal catalogue
+## Deadlines and filing
 
-- **R-MC-1 — Complex cross-border structures** — Trigger: Monaco corporate structures with non-French elements. Message: "Requires specialist analysis."
-- **R-MC-2 — Partial exemption** — Trigger: mixed supplies. Message: "Pro-rata per French rules. Flag for reviewer."
+Article 66 registration and article 68 identification must be assessed before filing; the current application form and portal onboarding have not been operationally tested. Article 70 requires an administration-prescribed return to the Recette des taxes, ordinarily monthly with monthly payment. Annual tax below EUR 4,000 permits quarterly declarations; exactly EUR 4,000 does not meet that condition. Cessation requires a declaration within thirty days. [Arts. 66, 68, 70](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-## Section 3 — Supplier pattern library
+Under A-139, file ordinary declarations with Monaco DSF. A-144 allows DSF category-specific filing periods; absent one, the declaration must be submitted **before the 25th**. It moves the deadline to the next working day when it coincides with a public holiday or deemed holiday. Nil returns remain required, with the stated seasonal-closure exception. A-145 governs authorised extra time, not an automatic extension. Confirm the taxpayer's assigned calendar and actual form with DSF; no live return was filed for this research. [Annex, A-139, A-144–A-145](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-### 3.1 Monaco/French banks
+## Penalties and interest
 
-**Monaco/French banks pattern table**
+Article 110 sets 0.20% monthly late-payment interest on unpaid or deferred amounts, calculated from the first day of the month following the due month through the last day of the payment month. Article 111 adds a 10% late/non-declaration surcharge, escalating to 40% after the first unanswered thirty-day formal notice and 80% after the second; hidden activity also attracts 80%. Article 112 adds 40% for established bad faith on inaccurate/insufficient declarations, 80% for fraud. These provisions have different triggers; do not stack percentages without establishing the facts and applicable procedural rule. [Arts. 110–112](https://legimonaco.mc/code/code-taxes-chiffre-affaires).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CMB, CFM, BARCLAYS MONACO, HSBC MONACO | EXCLUDE | Financial service exempt |
-| BNP, SOCIETE GENERALE, CREDIT AGRICOLE | EXCLUDE (French domestic) | Same |
+## Cross-border points
 
-### 3.2 Government
+Use Monaco Code transaction-location rules and the France–Monaco framework; distinguish goods from services, France from another state, establishment from invoice address and import from recipient-accounted service VAT. This draft does not establish the documents, reporting or eligibility for intra-community exemption, export exemption or special online schemes. Route them to a current Monaco VAT specialist. Never turn a foreign customer name into automatic zero-rating. [Arts. 2, 7, 11–14, 29–33, 62](https://legimonaco.mc/code/code-taxes-chiffre-affaires); [Art. 15](https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/).
 
-**Government pattern table**
+## Two worked examples that recompute
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| DIRECTION DES SERVICES FISCAUX | EXCLUDE | Tax payment |
-| CCSS MONACO, CAISSES SOCIALES | EXCLUDE | Social security |
+### Ordinary domestic standard-rated sale
 
-### 3.3 Utilities
+Assume a correctly classified EUR 12,000 VAT-inclusive sale at 20%, and EUR 600 documented deductible input VAT in the same period. Net sales are EUR 10,000, output VAT EUR 2,000 and net payable EUR 1,400. No other transactions or carried credit exist.
 
-**Utilities pattern table**
+```oa-check
+name: Standard-rate VAT inclusive sale and allowed inputs
+inputs:
+  gross: 12000
+  allowed_input: 600
+steps:
+  - net: gross / 1.2
+  - output: gross - net
+  - payable: output - allowed_input
+expected:
+  net: 10000
+  output: 2000
+  payable: 1400
+```
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SMEG (Societe Monegasque de l'Electricite et du Gaz) | Domestic 20% | Electricity/gas |
-| MONACO TELECOM | Domestic 20% | Telecoms |
+### Foreign service with incomplete input recovery
 
-### 3.4 SaaS — EU/non-EU
+Assume a taxable supplier established outside both Monaco and France supplies a EUR 2,000 general-rule B2B service that meets articles 11 and 62(2), has no special place rule and is standard-rated. Recipient VAT is EUR 400. A separately established deductible-use fraction of 50% gives EUR 200 input credit and EUR 200 net tax. The fraction is an assumed result of a separate deduction analysis, not a Monaco default.
 
-Follow French TVA rules exactly. EU suppliers: intra-community reverse charge. Non-EU: import of services.
+```oa-check
+name: Recipient VAT with a separately established deduction fraction
+inputs:
+  service: 2000
+  deductible_fraction: 0.5
+steps:
+  - output: service * 0.2
+  - input_credit: output * deductible_fraction
+  - payable: output - input_credit
+expected:
+  output: 400
+  input_credit: 200
+  payable: 200
+```
 
-### 3.5 Food and entertainment
+## Ask the client first
 
-**Food and entertainment pattern table**
+- What are the establishment, registration, franchise/option and assigned filing details?
+- What are the transaction, tax point, goods route or service type, and customer status?
+- What are prior/current-year national turnover and the relevant service subset?
+- What invoice, taxable-use and deduction evidence supports each input?
+- What prior credits, imports, foreign supplies, special schemes or cessation dates exist?
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| CARREFOUR, CASINO | Default BLOCK | Personal provisioning |
-| RESTAURANT | Domestic 10% (restaurant) | Entertainment: limited deductibility |
+**Not yet confirmed:** live forms/portal, reduced-rate scope, special schemes, imports/intra-community reporting, mixed exemption and staged invoicing changes. This is a partial VAT working paper. Version 2.1 replaces the earlier unsourced Nice filing route and generic bank-pattern defaults.
 
-### 3.6 Internal transfers
+## Sources
 
-**Internal transfers pattern table**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| VIREMENT INTERNE | EXCLUDE |  |
-| SALAIRE | EXCLUDE |  |
-
-## Section 4 — Worked examples
-
-### Example 1 — Non-EU SaaS reverse charge
-
-**Input:** `NOTION LABS INC ; DEBIT ; EUR 14.68`
-**Treatment:** Import of services. Self-assess TVA at 20%. Net zero.
-
-### Example 2 — French domestic sale
-
-**Input:** `SA NICE CLIENT ; CREDIT ; EUR 12,000`
-**Treatment:** DOMESTIC (Monaco-France). 20%. Net = 10,000. TVA = 2,000.
-
-### Example 3 — Restaurant at 10%
-
-**Input:** `LE LOUIS XV ; DEBIT ; EUR 440`
-**Treatment:** Restaurant 10%. Net = 400. TVA = 40. Entertainment: limited deductibility.
-
-### Example 4 — Intra-EU supply to Germany
-
-**Input:** `GERMAN GMBH (DE) ; CREDIT ; EUR 5,000`
-**Treatment:** Intra-EU B2B. Zero-rated. Same as France-EU supply.
-
-### Example 5 — Electricity
-
-**Input:** `SMEG ; DEBIT ; EUR 240`
-**Treatment:** Domestic 20%. Net = 200. TVA = 40.
-
-### Example 6 — Export outside EU
-
-**Input:** `US BUYER INC ; CREDIT ; EUR 10,000`
-**Treatment:** Export. Zero-rated. Customs documentation required.
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-All rules follow French CGI Articles 256-298. See France VAT skill for complete details.
-
-### 5.1 Standard 20% — most goods/services
-
-- **Standard rate** — 20%
-
-### 5.2 Intermediate 10% — restaurants, accommodation, transport
-
-- **Intermediate rate — restaurants, accommodation, transport** — 10%  _(French CGI Articles 256-298)_
-
-### 5.3 Reduced 5.5% — food, books, energy
-
-- **Reduced rate — food, books, energy** — 5.5%  _(French CGI Articles 256-298)_
-
-### 5.4 Super-reduced 2.1% — medicines, press
-
-- **Super-reduced rate — medicines, press** — 2.1%  _(French CGI Articles 256-298)_
-
-### 5.5 Zero — exports outside EU
-
-- **Zero rate — exports outside EU** — 0%  _(French CGI Articles 256-298)_
-
-### 5.6 Exempt — financial, insurance, medical, education, residential rental
-
-- **Exempt categories** — Exempt — financial, insurance, medical, education, residential rental  _(French CGI Articles 256-298)_
-
-### 5.7 Monaco-France = domestic
-
-- **Monaco-France treatment** — Monaco-France = domestic  _(French CGI Articles 256-298)_
-
-### 5.8 Monaco-EU = intra-community (same as France)
-
-- **Monaco-EU treatment** — Monaco-EU = intra-community (same as France)  _(French CGI Articles 256-298)_
-
-### 5.9 Blocked — entertainment (limited), personal use
-
-- **Blocked categories** — Blocked — entertainment (limited), personal use  _(French CGI Articles 256-298)_
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Monaco-specific administrative differences — flag
-
-- **Monaco-specific administrative differences** — Flag
-
-### 6.2 Mixed-use — 0% default
-
-- **Mixed-use default** — 0% default
-
-### 6.3 Complex corporate — escalate
-
-- **Complex corporate treatment** — Escalate
-
-## Section 7 — Excel working paper template
-
-Standard layout per French CA3 structure.
-
-## Section 8 — Bank statement reading guide
-
-**Format:** CMB/CFM CSV, DD/MM/YYYY, EUR. **Language:** French.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 TVA number — French-format TVA number (FR + 11 digits)?
-
-### 9.2 Monaco or Nice registration
-
-### 9.3 Prior credit — always ask
-
-## Section 10 — Reference material
-
-### Sources
-
-1. French CGI Articles 256-298 (TVA)
-2. Franco-Monegasque Customs Convention (1963)
-3. EU VAT Directive 2006/112/EC Art. 6-7
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to 10-section architecture.
-- **v1.0:** Initial wrapper skill.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+| Official source and provisions read | URL | Read on |
+|---|---|---|
+| Code, arts. 11, 42, 51, 62, 66, 68, 70–71, 87–91, 110–112; annex A-139, A-144–A-145 | https://legimonaco.mc/code/code-taxes-chiffre-affaires | 2026-10-24 |
+| France–Monaco convention, art. 15 | https://legimonaco.mc/tai/convention/1963/05-18-tai1l000235/ | 2026-10-24 |
