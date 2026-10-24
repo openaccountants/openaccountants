@@ -55,7 +55,8 @@ This skill links to its siblings instead of repeating them:
 | Non-resident's gain on Estonian immovable property, Estonian-registered movables, or a 10%+ holding in an entity more than 50% in Estonian real estate | 22% of the gain | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 29(4)); https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian |
 | Royalty exemption, EU or Swiss associated company | 0% if 25% held for two years or more (direct either way, or common parent); arm's-length part only | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 31(4), (5)) |
 | Participation exemption on dividends received and passed on | Holding of at least 10% in the paying company | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 50(1^1)) |
-| Exit tax deferral when assets or residence move within the EEA | Payable over up to five years | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 54^5(3)) |
+| Exit tax deferral when assets or residence move within the EEA | Payable over up to five years; not for a non-EU EEA state without a recovery-assistance agreement equivalent to Directive 2010/24/EU | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 54^5(3), (4)) |
+| Interest on deferred exit tax | 0.06% a day; the ETCB can cut the rate by up to 50% when it grants the schedule | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 54^5(5)); https://www.riigiteataja.ee/akt/MKS (§ 117(1), (2)) |
 | Basic exemption for non-resident individuals | Only an EEA resident, on application with a residence certificate; 700 a month in 2026 | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 42(1)); https://www.emta.ee/en/private-client/foreigner-non-resident/non-residents/income-employment |
 | Tax treaties | 66 in force (of 70 signed) | 2026 | https://www.fin.ee/en/double-taxation-agreements |
 | Interest on late payment | 0.06% a day (21.9% a year); no claim under 10 euros; rounded to whole euros | 2026 | https://www.emta.ee/en/private-client/taxes-and-payment/payment-arrears/payment-interests |
@@ -64,7 +65,7 @@ This skill links to its siblings instead of repeating them:
 
 **Non-resident individuals and companies (TuMS § 29).** Estonian-source income is:
 
-- Wages for work in Estonia, if the employer is the Estonian state, a resident, a non-resident acting as an employer in Estonia, or a non-resident through an Estonian permanent establishment, or if the person worked in Estonia at least 183 days in 12 consecutive months (§ 29(1)). With an Estonian employer the day count does not matter. A user company in Estonia counts as the employer of an agency worker (§ 29(13)).
+- Wages for work in Estonia, if the employer is the Estonian state, a resident, a non-resident acting as an employer in Estonia, or a non-resident through an Estonian permanent establishment, or if the person worked in Estonia at least 183 days in 12 consecutive months (§ 29(1)). With an Estonian employer the day count does not matter. A user company in Estonia counts as the employer of an agency worker (§ 29(1^3)), and the foreign agency must withhold on the Estonian wages (§ 40(3^2)).
 - Fees for serving on the management or supervisory board of a resident company, wherever the work is done (§ 29(2)).
 - Income from business carried on in Estonia (§ 29(3)). A service fee is taxed only where the service is provided in Estonia, except that a company in an EU-listed non-cooperative jurisdiction is taxed on every service fee from an Estonian resident (§ 29(3), § 10^1).
 - Gains on Estonian immovable property, Estonian-registered movables, timber felled in Estonia, rights tied to Estonian real estate, and holdings of at least 10% in a company or fund more than 50% made up of Estonian real estate at any time in the two years before (§ 29(4)).
@@ -73,7 +74,7 @@ This skill links to its siblings instead of repeating them:
 - Interest only from a real-estate fund holding as above (§ 29(7)).
 - Pensions, grants, prizes and benefits paid from Estonia, and performance fees for artists and sportspeople performing in Estonia, including fees paid to a third party for their activity (§ 29(9), (10)).
 
-**Withholding is final.** Tax withheld at the Act or treaty rate is the non-resident's final tax on that income, unless the income belongs to an Estonian permanent establishment (TuMS § 43(4)). Payments to an Estonian-registered permanent establishment, and to an FIE in the business register for business income, are paid gross (TuMS § 40(2)). The unemployment insurance premium withheld is deducted before withholding (TuMS § 42(5)). An EEA resident individual can claim the monthly basic exemption on written application (TuMS § 42(1)).
+**Withholding is final.** Tax withheld at the Act or treaty rate is the non-resident's final tax on that income, unless the income belongs to an Estonian permanent establishment (TuMS § 43(4)). Payments to an Estonian-registered permanent establishment, and to an FIE entered in the Estonian business register or the register of another EEA state for business income, are paid gross (TuMS § 40(2) points 2 and 3). The unemployment insurance premium withheld is deducted before withholding (TuMS § 42(5)). An EEA resident individual can claim the monthly basic exemption on written application (TuMS § 42(1)).
 
 **Dividends.** A resident company pays 22/78 on the net dividend when it pays it (TuMS § 50(1), § 4(1^1)). The shareholder pays nothing more, whether resident or not, so there is no withholding on dividends to a non-resident. A dividend is exempt at the paying company if it is paid out of (TuMS § 50(1^1)):
 
@@ -90,7 +91,7 @@ Exemptions 1 and 3 apply only if the paying subsidiary could not deduct the divi
 
 **Companies with foreign income (TuMS § 54(5)).** A resident company, or an Estonian permanent establishment, can deduct foreign tax paid on income it received from abroad from the 22/78 it owes when it distributes that income, if the § 50(1^1) exemption does not apply. Records are kept country by country.
 
-**Exit of a company (TuMS § 54^5, § 50(2^2)).** A resident company that moves assets to its permanent establishment in another EU state or a third country is taxed on market value minus book value of those assets at the time they leave Estonia (§ 54^5(1)). A resident company that is deleted from the register is taxed on the market value of its assets, including liquidation distributions, above the cash and in-kind contributions to equity not yet paid back (§ 50(2^2)). That charge does not apply if the business carries on in Estonia through another company or through a non-resident's permanent establishment. Both are § 1(3) objects, so the 22/78 method applies (§ 4(1^1)). Payment can be spread over up to five years if the assets go to a permanent establishment in an EEA state, or the company becomes resident in another EEA state (§ 54^5(3)). The deferral ends and the tax falls due if the assets or the business are sold, moved on to a third country, the company goes bankrupt or is liquidated, or it misses instalments and does not fix it within 12 months (§ 54^5(6)). Securities financing and collateral returned within 12 months are excluded (§ 54^5(2)). Assets coming into Estonia take the value set by the state they came from, or market value if that value is not a market value (§ 50(2), § 53(4^12)).
+**Exit of a company (TuMS § 54^5, § 50(2^2)).** A resident company that moves assets to its permanent establishment in another EU state or a third country is taxed on market value minus book value of those assets at the time they leave Estonia (§ 54^5(1)). A resident company that is deleted from the register is taxed on the market value of its assets, including liquidation distributions, above the cash and in-kind contributions to equity not yet paid back (§ 50(2^2)). That charge does not apply if the business carries on in Estonia through another company or through a non-resident's permanent establishment. Both are § 1(3) objects, so the 22/78 method applies (§ 4(1^1)). Payment can be spread over up to five years if the assets go to a permanent establishment in an EEA state, or the company becomes resident in another EEA state (§ 54^5(3)). This does not apply to a non-EU EEA state that has no agreement with Estonia or the EU on recovery assistance equivalent to Directive 2010/24/EU (§ 54^5(4)). The ETCB can ask for security where there is good reason to doubt payment, and interest on the deferred tax runs under the Taxation Act (§ 54^5(5)): 0.06% a day, which the ETCB can cut by up to 50% from the date of the scheduling decision (Taxation Act § 117(1), (2)). The deferral ends and the tax falls due if the assets or the business are sold, the assets are moved on to a third country, the company's residence or the permanent establishment's business moves to a third country, the company goes bankrupt or is liquidated, or it misses instalments and does not fix it within 12 months (§ 54^5(6)). Securities financing and collateral returned within 12 months are excluded (§ 54^5(2)). Assets coming into Estonia take the value set by the state they came from, or market value if that value is not a market value (§ 50(2), § 53(4^12)).
 
 **Individuals leaving.** The exit charge in § 54^5 is written for resident companies. A person who leaves stops being taxed on worldwide income from the day after departure, once the residence tests above are no longer met.
 
@@ -101,17 +102,17 @@ Exemptions 1 and 3 apply only if the paying subsidiary could not deduct the divi
 | Withholding on payments to non-residents: pay and file form TSD (annex 2) | 10th of the month after the payment | TuMS § 40(4), (5) |
 | Company tax on distributions, PE profit taken out, exit tax: file TSD and pay | 10th of the month after the distribution or transfer | TuMS § 54(2), (4) |
 | Residence certificate for treaty rates | Filed with the TSD, unless already in the ETCB register | TuMS § 43(2) |
-| Non-resident's own return where no tax was withheld (for example rent from a natural person, or a property gain) | 30 April of the following year | https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian |
+| Non-resident's own return where no tax was withheld (for example rent from a natural person, or a property gain, which the ETCB says goes in table 3.1 of form V1) | 30 April of the following year | TuMS § 44(1); https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian |
 | Tax due on that return | 1 October of the year the return is filed | TuMS § 46(3) |
 | Change of residence (form R) | As soon as possible; on leaving, at the first opportunity | https://www.emta.ee/en/private-client/foreigner-non-resident/tax-residency/determining-residency |
 
-The ETCB does not send a tax notice to non-residents (TuMS § 46(1)). A payment covered by a treaty exemption is still reported on TSD annex 2. The ETCB states that a foreign residence certificate is usually valid for 36 months once entered in its database.
+The ETCB does not send a tax notice to non-residents (TuMS § 46(1)). A payment covered by a treaty exemption is still reported on TSD annex 2. The ETCB states that a legal person's residence certificate is valid for 36 months unless it says otherwise, and can then be used for all payments by all payers.
 
 ## Penalties and interest
 
 - **Interest.** Unpaid tax carries interest from the day after the due date up to and including the day of payment (Taxation Act § 115(1)). The rate is 0.06% a day, 21.9% a year. The ETCB does not claim interest under 10 euros and rounds to whole euros.
-- **Late or missing return.** Failing to file a tax return on time is a misdemeanour: a fine of up to 300 fine units for an individual, up to 3,200 euros for a legal person (Taxation Act § 154).
-- **False or missing information that cuts tax or withholding.** Up to 300 fine units for an individual, up to 32,000 euros for a legal person (Taxation Act § 153^1).
+- **Late or missing return.** Failing to file a tax return on time is a misdemeanour: a fine of up to 300 fine units (2,400 euros) for an individual, up to 3,200 euros for a legal person (Taxation Act § 154). A fine unit is 8 euros from 1 January 2025 (Penal Code § 47(1)).
+- **Intentionally false or missing information that cuts tax or withholding, or raises a refund claim.** Up to 300 fine units (2,400 euros) for an individual, up to 32,000 euros for a legal person (Taxation Act § 153^1).
 - **Board members.** A legal representative who breaks the taxpayer's duties wilfully or through gross negligence is jointly liable for the resulting tax debt (Taxation Act § 40(1)).
 
 ## Cross-border points
@@ -156,7 +157,7 @@ expected:
 
 Kask OÜ is owned by a German GmbH. In June 2026 it pays a net dividend of 78,000 euros. Of that, 30,000 euros comes from a dividend Kask received from its 60%-owned Latvian subsidiary, which is resident and liable to tax in Latvia and could not deduct it. That part is exempt under § 50(1^1) point 1. The taxed part is 78,000 − 30,000 = 48,000 euros. Company tax is 48,000 ÷ 0.78 × 22% = 13,538.46 euros, due with the June TSD by 10 July 2026. The German parent receives 78,000 with no withholding.
 
-In September 2026 Kask moves software and equipment to its new branch in Finland. Market value is 500,000 euros and book value 200,000 euros. The taxable amount is 300,000 (§ 54^5(1)). Applying § 4(1^1): 300,000 ÷ 0.78 × 22% = 84,615.38 euros. Finland is an EEA state, so Kask can apply to spread payment over up to five years (§ 54^5(3)). If it agrees five equal annual instalments, each is 16,923.08 euros. Interest on deferred tax runs under the Taxation Act; the instalment schedule and interest are agreed with the ETCB and are not computed here.
+In September 2026 Kask moves software and equipment to its new branch in Finland. Market value is 500,000 euros and book value 200,000 euros. The taxable amount is 300,000 (§ 54^5(1)). Applying § 4(1^1): 300,000 ÷ 0.78 × 22% = 84,615.38 euros. Finland is an EEA state, so Kask can apply to spread payment over up to five years (§ 54^5(3)). If it agrees five equal annual instalments, each is 16,923.08 euros. Interest on the deferred tax runs at 0.06% a day, or less if the ETCB cuts the rate in its scheduling decision (Taxation Act § 117); it depends on the schedule the ETCB grants and is not computed here.
 
 ```oa-check
 name: Kask OUe, June 2026 dividend with participation exemption, September 2026 exit to Finnish PE
@@ -194,7 +195,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Act (tulumaksuseadus), consolidated text in force 01.10.2026 to 31.12.2026 (RT I, 09.07.2026, 66), §§ 1, 4, 6, 7, 13, 14, 29, 31, 40 to 43, 45, 46, 50, 53, 54, 54^5 | https://www.riigiteataja.ee/akt/TuMS | 2026-10-23 |
-| Taxation Act (maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 40, 115, 153^1, 154 | https://www.riigiteataja.ee/akt/MKS | 2026-10-23 |
+| Taxation Act (maksukorralduse seadus), consolidated text in force from 17.10.2026, §§ 40, 115, 117, 153^1, 154 | https://www.riigiteataja.ee/akt/MKS | 2026-10-23 |
+| Penal Code (karistusseadustik), consolidated text in force 01.10.2026 to 31.12.2026, § 47 (fine unit 8 euros) | https://www.riigiteataja.ee/akt/KarS | 2026-10-24 |
 | ETCB, Tax rates (2025 and 2026) | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates | 2026-10-23 |
 | ETCB, Taxation of non-resident's Estonian income (updated 29.04.2026) | https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian | 2026-10-23 |
 | ETCB, Non-residents: rental income and licence fee (updated 14.02.2025) | https://www.emta.ee/en/private-client/foreigner-non-resident/non-residents/rental-income-and-licence-fee | 2026-10-23 |
@@ -206,4 +208,6 @@ expected:
 | Ministry of Finance, Riigikogu approves security tax changes (18.06.2025) | https://www.fin.ee/uudised/riigikogu-kiitis-heaks-julgeolekumaksu-muudatused | 2026-10-23 |
 | Ministry of Finance, Double taxation agreements (updated 07.04.2026) | https://www.fin.ee/en/double-taxation-agreements | 2026-10-23 |
 
-Not yet confirmed: the number and text of the act that cancelled the 24% rate (the consolidated § 4(1) shows 22%, but the amending act was not read); treaty rates for individual countries; the form and annex the ETCB uses for a non-resident's property gain (its page names form V1, table 3.1, not checked against the form); the fine-unit value in euros; whether interest on a deferred exit tax runs at the 0.06% daily rate or a reduced rate under the Taxation Act.
+Out of scope: treaty withholding rates for individual countries; use the treaty text on the Ministry of Finance list.
+
+Not yet confirmed: the number of the act that cancelled the 24% rate. The Ministry of Finance confirms the cancellation, and the consolidated § 4(1) in force for 2026 still carries the 22% wording from RT I, 30.06.2023, 107; the cancelling act itself was not read.
