@@ -4,7 +4,7 @@ description: Use this skill whenever asked about bookkeeping, chart of accounts,
 version: 1.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
