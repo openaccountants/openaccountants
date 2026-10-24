@@ -5,7 +5,7 @@ jurisdiction: LV
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 version: 0.1
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -63,7 +63,7 @@ A treaty can give a narrower definition; read the treaty article before relying 
 | Item | Rate or amount | Year | Source URL |
 |---|---|---|---|
 | Corporate income tax rate on distributed and deemed distributed profit | 20% of the base; the taxable object is first divided by 0.8 | 2026 | [CIT Law ss. 3(1), 4(9)](https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums) |
-| Alternative rate on dividends of a company whose members are all individuals (by choice) | 15%; object divided by 0.85; PIT of 6% withheld from the dividend | 2026 (new) | CIT Law ss. 3(5), 4.2, 16(5); [PIT Law s. 15(5.1)](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
+| Alternative rate on dividends of a company whose members are all individuals in the tax period in which the dividends are calculated (by choice) | 15%; object divided by 0.85; PIT of 6% withheld from the dividend. Covers calculated dividends only (s. 4(2)(1)(a)); deemed distributions stay at 20% after the 0.8 gross-up | 2026 (new, in force 1 January 2026) | CIT Law ss. 3(5), 4.2, 16(5); [PIT Law s. 15(5.1)](https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli) |
 | Withholding on fees for management and consulting services paid to a non-resident | 20% of the fee | 2026 | CIT Law s. 5(1)(1), (5) |
 | Withholding on payment for sale of Latvian real estate by a non-resident (includes shares in a company more than 50% of whose assets are Latvian real estate) | 3% of the payment | 2026 | CIT Law s. 5(1)(2), (2) |
 | Withholding on rent or lease of Latvian real estate paid to a non-resident | 5% of the payment | 2026 | CIT Law s. 5(1)(4) |
@@ -76,7 +76,7 @@ A treaty can give a narrower definition; read the treaty article before relying 
 | Additional rate on total annual income above EUR 200,000 | 3% | 2026 | PIT Law s. 15.1(1) |
 | PIT on capital income and capital gains | 25.5% | 2026 | PIT Law s. 15(5) |
 | PIT withheld from a non-resident individual's sale of Latvian real estate, where the payer withholds | 3% of the payment | 2026 | PIT Law ss. 3(3)(7.1), 15(7), 17(12) |
-| PIT on a non-resident artist's, athlete's or coach's income, and on copyright fees | 25.5% | 2026 | PIT Law ss. 3(3)(3), (12)(a), 15(7.1) |
+| PIT on a non-resident artist's, athlete's or coach's income, and on author's fees for literary, scientific or artistic works, discoveries, inventions and industrial designs | 25.5% | 2026 | PIT Law ss. 3(3)(3), (12)(a), 15(7.1) |
 | PIT on other intellectual property payments to a non-resident individual | 5% | 2026 | PIT Law ss. 3(3)(12)(b), 15(8) |
 | PIT withheld by individuals from payments to low-tax or no-tax jurisdictions | 25.5% | 2026 | PIT Law s. 17(17) |
 | Optional rate for a foreign remote worker on a long-stay visa under Immigration Law s. 11(5), working for an employer or business registered in an OECD state | 15%, for 365 days from becoming resident | 2026 | PIT Law s. 15(19.2) |
@@ -118,11 +118,11 @@ Other payments to non-residents, such as ordinary dividends, interest and royalt
 
 **Leaving: companies (exit charge).** A transfer of assets out of Latvian taxing rights is a deemed distribution taxed at 20% after the 0.8 gross-up (CIT Law section 4(2)(2)). It covers three cases:
 
-- **(i) Transfer to a foreign permanent establishment.** A Latvian taxpayer transfers an asset to its own permanent establishment abroad, and Latvia loses the right to tax that asset. If the book value is not the market value, market value is used (section 4(8.2)).
+- **(i) Transfer to a foreign permanent establishment.** A Latvian taxpayer transfers an asset to its own permanent establishment abroad, and Latvia loses the right to tax that asset. If the book value is not the market value, market value is used (section 4(8.2)). If the asset is a fixed asset and the company keeps separate accounts for the establishment, its value enters the base gradually, as its depreciation is attributed to the establishment, and is taxed in the period in which the company distributes profit (section 4(8.2)). The company reports these assets in the return for the last month of the reporting year (section 16(4)).
 - **(j) Transfer by a Latvian permanent establishment.** A non-resident's Latvian permanent establishment transfers an asset to its head office or to another permanent establishment abroad, and Latvia loses the right to tax that asset. Where the establishment moves a line of business abroad, the base is the market value of the transferred assets at the transfer date less the liabilities transferred with them (section 4(13.1)).
 - **(g) Stopping CIT.** A company that stops paying Latvian CIT without being liquidated, other than in a reorganisation where the assets stay in use in Latvia, is taxed as if it had been liquidated (sections 4(8.1), 17(20)). The base is the liquidation quota: equity less what the members contributed (section 4(8)).
 
-The (i) and (j) items go into the base of the last tax period of the reporting year (section 4(5)). Temporary transfers of up to 12 months are excluded where the assets serve as securities financing, collateral, prudential capital or liquidity management (section 4(11.1)). The CIT Law contains no instalment option for the exit charge.
+The (i) and (j) items go into the base of the last tax period of the reporting year (section 4(5)). Temporary transfers of up to 12 months are excluded where the assets serve as securities financing, collateral, prudential capital or liquidity management (section 4(11.1)). Neither the CIT Law nor LTF section 24 contains a five-year instalment option for the exit charge of the kind in article 5(2) of Council Directive (EU) 2016/1164 (ATAD), which the CIT Law names as a directive it transposes. The only payment relief in the text is the general one: on a reasoned written application filed no later than five working days after the due date, VID may split payment of a tax over up to one year (LTF section 24(1)(1)).
 
 ## Deadlines and filing
 
@@ -141,11 +141,11 @@ The (i) and (j) items go into the base of the last tax period of the reporting y
 - **Late payment interest (nokavējuma nauda):** 0.05% of the unpaid principal for each day late, unless a specific tax law sets another rate (LTF section 29(2)). For taxes paid through the single tax account, it is calculated twice a month, on the 1st and the 15th. It is not charged if the late tax arrives by the last day of the month in which it fell due (section 29(2.1), (2.2)).
 - **Failure to withhold.** A payer that should have withheld CIT from a non-resident and did not must pay it as its own tax. The amount is the payment ÷ 0.8 × the withholding rate (CIT Law section 5(11)). Late withholding or late reporting also makes the payer liable under the LTF (CIT Law section 19(2)).
 - **Understatement found in an audit.** The tax, interest to the audit start date and a penalty (LTF section 32(1)). The penalty is 20% of the undeclared tax where the understatement is 15% or less of the tax that should have been declared, and 30% where it is more (section 32(4), (5)). It is halved where the taxpayer met filing and payment deadlines, cooperated, and this is not a repeat breach (section 32(7)). Amounts assessed in an audit are due within 30 days of the decision (section 32(8)).
-- **Late returns** (LTF section 141, measured in fine units):
-  - 3 to 10 days late: warning, or 5 to 14 units;
-  - 11 to 20 days late: 15 to 30 units;
-  - 21 to 30 days late: 31 to 56 units;
-  - more than 30 days late, or not filed: 57 to 140 units.
+- **Late returns** (LTF section 141, in fine units of EUR 5 each, Administrative Liability Law section 16(2)):
+  - 3 to 10 days late: warning, or 5 to 14 units (EUR 25 to 70). No penalty for one monthly or quarterly return filed up to 5 days late in the VID electronic system within 12 months;
+  - 11 to 20 days late: 15 to 30 units (EUR 75 to 150);
+  - 21 to 30 days late: 31 to 56 units (EUR 155 to 280);
+  - more than 30 days late, or not filed: 57 to 140 units (EUR 285 to 700).
 
 ## Cross-border points
 
@@ -155,7 +155,7 @@ The (i) and (j) items go into the base of the last tax period of the reporting y
 - **Employment abroad, individuals.** A resident's wages are exempt in Latvia if all three are true (PIT Law section 24(7)):
   - the work is done in another EU or EEA state, or a treaty state;
   - the wages are subject to income tax there;
-  - the worker is not leased personnel.
+  - the worker is not personnel leased to a Latvian resident or to a Latvian permanent establishment.
 
   If the employer is Latvian, it must confirm to VID in writing, before the work abroad starts, that the wages are taxed abroad (section 24(7.1)).
 - **Foreign tax credit, companies.** CIT on dividends is reduced by foreign tax paid on the foreign income in those dividends, proved by confirmed foreign documents (CIT Law section 15(1)). The credit is capped at the Latvian CIT on the foreign income, worked out country by country (section 15(2), (3)). Excess credit carries forward in date order (section 15(6)). A company may also reduce dividends in the base by income received from a foreign permanent establishment that was taxed abroad. This needs separate accounts for that establishment (section 15(4), (4.1)). It does not apply to an establishment in a low-tax jurisdiction (section 15(5)).
@@ -202,7 +202,7 @@ A Finnish Oy has a registered permanent establishment in Riga. On 30 September 2
 2. Because a business line moves, the object is market value less the liabilities transferred: 300,000 − 50,000 = EUR 250,000 (section 4(13.1)).
 3. Gross-up: 250,000 ÷ 0.8 = EUR 312,500 (section 4(9)).
 4. CIT at 20%: EUR 62,500 (section 3(1)).
-5. The item goes in the return for the last tax period of the reporting year, December 2026, since a permanent establishment's year is the calendar year (sections 4(5), 17(9)). That return is due by 20 January 2027 and the tax by 23 January 2027 (section 17(1), (7)). If the branch stops trading altogether, it files within 20 days of stopping (section 17(10)).
+5. The item goes in the return for the last tax period of the reporting year, December 2026, since a permanent establishment's year is the calendar year (sections 4(5), 17(9)). That return is due by 20 January 2027 (section 17(1)). The tax falls due on 23 January 2027 (section 17(7)), a Saturday, so the payment day is the next working day, Monday 25 January 2027 (LTF section 29(3.1)). If the branch stops trading altogether, it files within 20 days of stopping (section 17(10)).
 
 ```oa-check
 name: Branch moves business line abroad, market value EUR 300,000 (2026)
@@ -232,10 +232,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), consolidated text with amendments to 3 December 2025: ss. 1, 2, 3, 4, 4.2, 5, 6.1, 15, 16, 17, 19 | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-23 |
-| Law On Personal Income Tax (Par iedzīvotāju ienākuma nodokli), consolidated text with amendments to 3 December 2025: ss. 2, 3, 15, 15.1, 17, 19, 24 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-23 |
-| Law On Taxes and Fees (Par nodokļiem un nodevām), consolidated text: ss. 14, 23, 29, 32, 141 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-23 |
+| Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), consolidated text with amendments to 3 December 2025: ss. 1, 2, 3, 4, 4.2, 5, 6.1, 15, 16, 17, 19 | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-24 |
+| Law On Personal Income Tax (Par iedzīvotāju ienākuma nodokli), consolidated text with amendments to 3 December 2025: ss. 2, 3, 15, 15.1, 17, 19, 24 | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-24 |
+| Law On Taxes and Fees (Par nodokļiem un nodevām), consolidated text: ss. 14, 23, 24, 29, 32, 141 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-24 |
+| Administrative Liability Law (Administratīvās atbildības likums), version in force from 1 January 2026: s. 16 | https://likumi.lv/ta/id/303007 | 2026-10-24 |
 
-likumi.lv (the official legal acts portal of the publisher Latvijas Vēstnesis) and vid.gov.lv refused connections from our network on 23 October 2026. The three texts were read from Internet Archive copies of the likumi.lv pages: the CIT Law captured on 4 October 2026, the LTF on 18 September 2026 and the PIT Law on 1 September 2026.
+likumi.lv (the official legal acts portal of the publisher Latvijas Vēstnesis) and vid.gov.lv refused connections from our network on 23 and 24 October 2026 (direct requests and a browser both timed out). The texts were read from Internet Archive (web.archive.org) copies of the likumi.lv pages: the CIT Law captured on 4 October 2026, the LTF on 18 September 2026, the PIT Law on 1 September 2026, and the Administrative Liability Law (version from 1 January 2026) on 13 October 2025.
 
-Not yet confirmed: the Cabinet of Ministers regulation on applying treaty relief and the residence certificate forms (Regulation No. 178 of 30 April 2001 is the one named in VID material; not read); the Cabinet list of low-tax and no-tax jurisdictions in force in 2026 (not read); the euro value of a fine unit under LTF section 141 (set in the Administrative Liability Law, not read); the 2026 maximum social insurance contribution base that sets the 33% band and the later declaration window (set under the law On State Social Insurance, not read); the Cabinet rules on reporting payments to non-residents under CIT Law section 16(2); amendments to the PIT Law adopted after 1 September 2026; individual treaty rates and tie-breakers.
+Not yet confirmed: the Cabinet of Ministers regulation on applying treaty relief and the residence certificate forms (Regulation No. 178 of 30 April 2001 is the one named in VID material; not read); the Cabinet list of low-tax and no-tax jurisdictions in force in 2026 (not read); whether Latvia gives the ATAD article 5(2) exit-tax instalments anywhere outside the CIT Law and LTF section 24 (none found in those texts); the 2026 maximum social insurance contribution base that sets the 33% band and the later declaration window (set under the law On State Social Insurance, not read); the Cabinet rules on reporting payments to non-residents under CIT Law section 16(2); amendments to the PIT Law adopted after 1 September 2026; individual treaty rates and tie-breakers.

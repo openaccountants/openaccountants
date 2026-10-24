@@ -13,7 +13,7 @@ partial:
 
 # Latvia: tax pack
 
-Calendar tax year. Authority: the State Revenue Service (Valsts ieņēmumu dienests, VID). Euro. Personal income tax at 25.5% and 33% with a 3% additional rate above EUR 200,000; corporate income tax at 20% charged only when profit is distributed (base divided by 0.8); VAT under EU rules; state social insurance contributions. The laws are the Law On Personal Income Tax, the Corporate Income Tax Law, the Value Added Tax Law and the Law On Taxes and Fees, all published on likumi.lv.
+Calendar tax year. Authority: the State Revenue Service (Valsts ieņēmumu dienests, VID). Euro. Personal income tax at 25.5% and 33% with a 3% additional rate above EUR 200,000; corporate income tax at 20% charged only when profit is distributed (base divided by 0.8), or from 2026, by choice, 15% on dividends (base divided by 0.85) for a company whose members are all individuals; VAT under EU rules; state social insurance contributions. The laws are the Law On Personal Income Tax, the Corporate Income Tax Law, the Value Added Tax Law and the Law On Taxes and Fees, all published on likumi.lv.
 
 ## Domains
 
