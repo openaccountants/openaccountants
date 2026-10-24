@@ -42,7 +42,7 @@ See also: `ie-payroll` (employee and employer PRSI, Class A), `ie-usc` (Universa
 | Class S rate, 1 January to 30 September 2025 / from 1 October 2025 | 4.1% / 4.2% | 2025 | 2024 Act s.3(1), (2), cols. 4-5: https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf |
 | Enacted future steps: from 1 October 2027 / from 1 October 2028 | 4.5% / 4.7% | 2027-2028 | 2024 Act s.3(4), (5), cols. 7-8: https://www.irishstatutebook.ie/pdf/2024/en.act.2024.0024.pdf |
 | Blended rate for 2026 self-assessed income: ((4.2 x 9) + (4.35 x 3)) / 12 | 4.2375% | 2026 | SWCA s.38BA (2024 Act s.9); DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
-| Blended rate for 2025 self-assessed income: ((4.1 x 9) + (4.2 x 3)) / 12 | 4.125% | 2025 | SWCA s.38BA; DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
+| Blended rate for 2025 self-assessed income: ((4.1 x 9) + (4.2 x 3)) / 12 | 4.125% | 2025 | SWCA s.38BA; DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ ; Revenue TDM 38-01-04J para. 10.2: https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-01-04J.pdf |
 | Minimum annual contribution (reckonable income, emoluments, or both together) | EUR 650 | 2026 | SWCA s.21(1)(a), (c), (f); 2024 Act s.5: https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
 | Income floor: below this, no Class S (total before capital allowances) | under EUR 5,000 | 2026 | SWCA Sch. 1 Pt. 3 para. 3; S.I. 312 of 1996 art. 92 as amended by S.I. 684 of 2010 art. 6: https://www.irishstatutebook.ie/eli/2010/si/684/made/en/print |
 | Flat contribution where Revenue says no return is needed | EUR 310 | 2026 | SWCA s.21(1)(b): https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
@@ -50,12 +50,12 @@ See also: `ie-payroll` (employee and employer PRSI, Class A), `ie-usc` (Universa
 | Voluntary contribution, last paid at Class S | EUR 650 a year | 2026 | SWCA s.26(1) (2024 Act s.6); SW14: https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
 | Payroll subclasses for Class S directors: S0 weekly pay up to EUR 500, S1 over EUR 500 | same rate for both: 4.2%, then 4.35% from 1 Oct 2026 | 2026 | DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/ |
 | Proprietary director shareholding for Class S | 50% or more | 2026 | DSP: https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ |
-| Upper earnings limit | none (all reckonable income) | 2026 | SW14: https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
+| Upper earnings limit | none (the rate applies to all reckonable income) | 2026 | SWCA s.21(1)(a): https://revisedacts.lawreform.ie/eli/2005/act/26/revised/en/html |
 | Preliminary tax: lowest of 90% of current year, 100% of previous year, 105% of pre-preceding year (direct debit only) | 90% / 100% / 105% | 2026 | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
 | Late filing surcharge: within two months / after two months | 5% capped at EUR 12,695 / 10% capped at EUR 63,485 | 2026 | TCA s.1084; https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx |
 | Interest on late income tax, which includes Class S (s.23(4)) | 0.0219% a day | 2026 | TCA s.1080; https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf |
 
-**Why there is a blended rate.** When a Class S rate changes during a contribution year, s.38BA sets one rate for the year: (A x C + B x D) / 12, where A and B are the two rates and C and D the months (including part months) each applied. The rate rose on 1 October in both 2025 and 2026, so C is 9 and D is 3. The DSP page prints the results: 4.125% for 2025 income and 4.2375% for 2026 income.
+**Why there is a blended rate.** When a Class S rate changes during a contribution year, s.38BA sets one rate for the year: (A x C + B x D) / 12, where A and B are the two rates and C and D the months (including part months) each applied. The rate rose on 1 October in both 2025 and 2026, so C is 9 and D is 3. The DSP page prints the results: 4.125% for 2025 income and 4.2375% for 2026 income. Revenue applies the same method on the return: its manual for the 2025 ROS Form 11 sets "PRSI rate of 4.125% on all classes, Form 11" (TDM 38-01-04J para. 10.2), and the 2024 manual set the 2024 blend of 4.025% (TDM 38-01-04I). Revenue's public page "Do you need to pay PRSI?" prints only the two period rates; on a Form 11 use the blended rate.
 
 **Directors under PAYE use the period rate.** Section 38BA does not apply to emoluments taxed under PAYE (TCA Part 42 Chapter 4; s.38BA(2)). A Class S director's payroll deducts 4.2% on pay to 30 September 2026 and 4.35% after.
 
@@ -108,16 +108,16 @@ Because Class S is charged as part of the income tax sum, the Income Tax Acts' c
 
 ### Example 1: sole trader, 2026 income, Form 11
 
-Aoife, aged 45, is a sole trader. Her 2026 trading profit is EUR 84,000, she claims EUR 6,000 of capital allowances, and she has EUR 2,000 of Irish rent. Reckonable income is 84,000 - 6,000 + 2,000 = EUR 80,000. That is above the EUR 5,000 floor. For 2026 income on a Form 11 the rate is the blended rate: ((4.2 x 9) + (4.35 x 3)) / 12 = 4.2375%. Class S is 80,000 x 4.2375% = EUR 3,390.00, which is above the EUR 650 minimum. It is paid with her income tax and USC: preliminary tax by 31 October 2026, and the 2026 balance with the 2026 Form 11 by 31 October 2027.
+Aoife, aged 45, is a sole trader. Her 2026 trading profit is EUR 84,000, she claims EUR 6,000 of capital allowances, and she has EUR 2,000 of Irish rental profit (rent less allowable expenses, as computed for income tax). Reckonable income is 84,000 - 6,000 + 2,000 = EUR 80,000. That is above the EUR 5,000 floor. For 2026 income on a Form 11 the rate is the blended rate: ((4.2 x 9) + (4.35 x 3)) / 12 = 4.2375%. Class S is 80,000 x 4.2375% = EUR 3,390.00, which is above the EUR 650 minimum. It is paid with her income tax and USC: preliminary tax by 31 October 2026, and the 2026 balance with the 2026 Form 11 by 31 October 2027.
 
 ```oa-check
 name: Sole trader, 2026 reckonable income EUR 80,000, blended rate
 inputs:
   trading_profit: 84000
   capital_allowances: 6000
-  irish_rent: 2000
+  irish_rental_profit: 2000
 steps:
-  - reckonable: trading_profit - capital_allowances + irish_rent
+  - reckonable: trading_profit - capital_allowances + irish_rental_profit
   - rate_2026: (4.2 * 9 + 4.35 * 3) / 12
   - by_rate: reckonable * rate_2026 / 100
   - class_s: max(by_rate, 650)
@@ -177,6 +177,7 @@ expected:
 | Revenue, what is preliminary tax? | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | 2026-10-24 |
 | Revenue, pay and file (deadlines, late filing surcharge) | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx | 2026-10-24 |
 | Revenue, eBrief No. 034/26 (ROS extension to 18 November 2026) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | 2026-10-24 |
+| Revenue, TDM 38-01-04J, Income tax return form 2025, ROS Form 11, para. 10.2 (Form 11 PRSI rate 4.125% for 2025) | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-38/38-01-04J.pdf | 2026-10-24 |
 | Revenue, Guidelines for charging interest on late payment (updated May 2025) | https://www.revenue.ie/en/tax-professionals/tdm/collection/debt-management/guidelines-for-charging-interest-on-late-payment.pdf | 2026-10-24 |
 
 Not yet confirmed: (1) whether Class S is deductible in computing taxable income for income tax (no source read says so either way); (2) whether pension contribution relief reduces reckonable income; (3) how the EUR 650 minimum is collected for a director whose only Class S is through PAYE and whose pay gives less than EUR 650; (4) the part-year treatment for someone awarded the State Pension (Contributory) between 66 and 70 during the year; (5) how a mid-year start or finish is treated beyond the annual floor and minimum (the law read has no pro-rating rule); (6) the full list of "prescribed relatives" in art. 94 of S.I. 312 of 1996 (taken from the DSP leaflet, not the regulation); (7) whether interest also runs on the late filing surcharge; (8) the text of arts. 81 to 84 of S.I. 312 of 1996 (para. 5 exceptions), not read; (9) the Social Welfare Bill for Budget 2027 was not enacted on 24 October 2026 and was not read.
