@@ -39,7 +39,7 @@ A resident is taxed on worldwide income. A non-resident is taxed on Slovenian-so
 
 Some people are non-residents even though they meet a test (ZDoh-2 art. 7(1)):
 
-- foreign diplomats and consular staff, and staff of international organisations and EU institutions, who are not Slovenian citizens;
+- foreign diplomats and consular staff, and staff of international organisations, who are not Slovenian citizens; staff of EU institutions, the ECB and the EIB working in Slovenia;
 - a foreign expert in a shortage occupation who was not resident in the previous 5 years, owns no Slovenian property and stays less than 365 days in two consecutive tax years. FURS must confirm this status in writing (art. 7(3));
 - a person in Slovenia only to study or for medical treatment.
 
@@ -93,7 +93,7 @@ A foreign company that does business in Slovenia must register for tax on form D
 
 No withholding applies to payments to the state, municipalities or the Bank of Slovenia. None applies to a resident, or to a Slovenian PE of a non-resident, that gives the payer its tax number (art. 70(2)).
 
-**Withholding on dividends inside the EU and EEA, without the 10% test.** No tax is withheld on dividends to a company resident in another EU or EEA state if it cannot credit the Slovenian tax at home, for example because it exempts the dividend, and the transaction is not avoidance (art. 70(3)). Exempt EU and EEA pension funds, investment funds and insurers get similar relief on dividends and interest (art. 70(5)). Neither rule applies to states with no exchange of information (art. 70(7)).
+**Withholding on dividends inside the EU and EEA, without the 10% test.** No tax is withheld on dividends to a company resident in another EU or EEA state if it cannot credit the Slovenian tax at home, for example because it exempts the dividend, and the transaction is not avoidance (art. 70(3)). EU and EEA pension funds, investment funds and insurers that can run a pension plan get similar relief on dividends and interest (art. 70(5)). Neither rule applies to states with no exchange of information (art. 70(7)).
 
 ## The taxable base
 
@@ -106,7 +106,7 @@ No withholding applies to payments to the state, municipalities or the Bank of S
 
 - Profit of a Slovenian PE is taxed on a CIT return like a resident's (arts. 12 and 68(3)).
 - Other Slovenian-source income is taxed only through withholding under art. 70 (art. 11).
-- Source rules are in art. 8. Gains on Slovenian real estate are Slovenian-source. So are gains on shares of a company where more than half the value came from Slovenian real estate at any time in the 365 days before the sale (art. 8(10) and (14)).
+- Source rules are in art. 8. Gains on Slovenian real estate are Slovenian-source. So are gains on shares of a company where more than half the value came from Slovenian real estate at any time in the 365 days before the sale (art. 8(10) and (14)). Art. 70 does not list gains, so nothing is withheld on them; under art. 11 such a gain is taxed in Slovenia only as part of the profit of a Slovenian PE.
 - Services are Slovenian-source if performed in Slovenia or charged to a Slovenian resident or PE (art. 8(13)). Only the listed services paid to listed jurisdictions bear withholding.
 
 The base for withholding is each gross payment (FURS, CIT computation guidance, section 3.0). A resident or PE that suffers withholding includes the gross income in its base and credits the tax withheld (art. 75).
@@ -126,7 +126,7 @@ A non-resident pays no Slovenian tax on (ZDoh-2 art. 33):
 - business income where there is no PE and less than 183 days' presence in any 12 months. Artists and sportsmen are excluded, and so is income under withholding;
 - interest on Slovenian government bonds and on listed corporate bonds.
 
-Tax paid by a non-resident during the year is final. There is no annual reconciliation as for residents ([FURS, International taxation of individuals, June 2025](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Brosura_Mednarodna_obdavcitev_posameznikov.docx), section 2.5).
+Tax paid by a non-resident during the year is final. There is no annual reconciliation as for residents. A Slovenian payer withholds the advance on the withholding return (form REK). Where the payer is not a Slovenian tax payer, for example a foreign employer, the non-resident files the return for the advance themselves ([FURS, International taxation of individuals, June 2025](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Brosura_Mednarodna_obdavcitev_posameznikov.docx), section 2.5).
 
 **Arriving: relief for new residents.** From tax year 2025, an employee gets a reduction of income tax equal to 7% of salary for up to 5 consecutive tax years. All of these must hold (ZDoh-2 art. 113.a):
 
@@ -155,7 +155,7 @@ The other rules in art. 54.a:
 
 ## Deadlines and filing
 
-- **CIT return (DDPO) for a resident or a non-resident's PE.** Filed on eDavki within 3 months after the end of the tax period: 31 March for a calendar year. Any balance is due within 30 days of filing. Advance payments (akontacije) are paid monthly if the annual advance exceeds EUR 400, otherwise quarterly. Each instalment falls due on the last day of its period and must be paid within 20 days ([FURS, CIT computation and payment, April 2026](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Obracunavanje_in_placevanje_davka_od_dohodkov_pravnih_oseb.docx)). A new taxpayer files a provisional computation within 8 days of registration.
+- **CIT return (DDPO) for a resident or a non-resident's PE.** Filed on eDavki within 3 months after the end of the tax period: 31 March for a calendar year. Any balance is due within 30 days of the filing deadline (ZDavP-2 art. 370(2)). Advance payments (akontacije) are paid monthly if the annual advance exceeds EUR 400, otherwise quarterly. Each instalment falls due on the last day of its period and must be paid within 20 days ([FURS, CIT computation and payment, April 2026](https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Obracunavanje_in_placevanje_davka_od_dohodkov_pravnih_oseb.docx)). A new taxpayer files a provisional computation within 8 days of registration.
 - **Withholding tax.** The payer computes and withholds at the time of payment. It pays the tax and files the withholding return no later than **5 days after the payment**, and gives the recipient the same data (ZDavP-2 art. 374). FURS names the form ODO-1 (CIT computation guidance, section 3.0).
 - **Treaty relief before payment.** The recipient gives the payer the claim form before the income is paid. The payer sends it to FURS, which decides within 15 days. The payer may apply the treaty rate only once FURS approves (ZDavP-2 art. 260). Each payment needs a new claim, but FURS may approve regular payments for a longer period (art. 260(5) and (6)). The forms are:
   - KIDO 1 for dividends;
@@ -189,7 +189,7 @@ The other rules in art. 54.a:
   | Sole trader | EUR 800 to 10,000 |
   | Responsible person of a legal person | EUR 600 to 4,000 (EUR 800 to 4,000 for a medium or large company) (art. 397(3)) |
 
-- **Especially serious cases.** These are cases where unpaid tax could exceed EUR 10,000 for a legal person, or EUR 25,000 for a medium or large company (art. 398(1) and (4)):
+- **Especially serious cases.** A case is especially serious because of intent or gain, and always where the unpaid tax could exceed EUR 10,000 for a legal person, or EUR 25,000 for a medium or large company (art. 398(1) and (4)):
 
   | Who | Fine |
   |---|---|
@@ -291,8 +291,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Corporate Income Tax Act (ZDDPO-2), consolidated text NPB23 (up to ZDDPO-2V, Uradni list RS 85/25): arts. 3 to 8, 8.a, 11, 12, 24, 54.a, 54.b, 60 with the ZORZFS art. 64 note, 62 to 67, 67.h, 68, 70 to 72, 74, 75 | https://pisrs.si/pregledPredpisa?id=ZAKO4687 | 2026-10-23 |
-| Personal Income Tax Act (ZDoh-2), consolidated text NPB36 (up to ZDoh-2AB, Uradni list RS 104/24): arts. 5 to 10, 33, 96, 113.a, 116, 121, 122, 132, 135.č, 136, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-23 |
-| Tax Procedure Act (ZDavP-2), consolidated text NPB32: arts. 60, 95.a, 96, 104, 260, 262, 370.a, 373 to 377, 383.a, 394, 397, 398 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-23 |
+| Personal Income Tax Act (ZDoh-2), consolidated text NPB36 (up to ZINR, Uradni list RS 40/25; no later amendment in the PISRS register): arts. 5 to 10, 33, 96, 113.a, 116, 121, 122, 132, 135.č, 136, 137 | https://pisrs.si/pregledPredpisa?id=ZAKO4697 | 2026-10-23 |
+| Tax Procedure Act (ZDavP-2), consolidated text NPB32 (up to ZDavP-2P, Uradni list RS 100/25): arts. 60, 95.a, 96, 104, 260, 262, 370, 370.a, 373 to 377, 383.a, 394, 397, 398 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-23 |
 | FURS, Obračunavanje in plačevanje DDPO (CIT computation and payment), 4th edition April 2026 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Obracunavanje_in_placevanje_davka_od_dohodkov_pravnih_oseb.docx | 2026-10-23 |
 | FURS, letter 0920-542/2024-2 on the 22% rate (ZORZFS art. 64) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2024/0920-542_2024-2_Odgovor_na_vase_vprasanje_-_sprememba_davcne_stopnje_DDPO.docx | 2026-10-23 |
 | FURS, order listing states under art. 8.a (corporate rate below 12.5%) | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Zakonodaja/Seznam_drzav_v_katerih_je_splosna_oziroma_povprecna_nominalna_stopnja_obdavcitve_dobicka_druzb_nizja_od_12_5_pri_tem_pa_to_niso_drzave_clanice_EU.pdf | 2026-10-23 |
@@ -304,4 +304,4 @@ expected:
 | FURS, Mednarodna obdavčitev posameznikov (international taxation of individuals), 7th edition June 2025 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Brosura_Mednarodna_obdavcitev_posameznikov.docx | 2026-10-23 |
 | FURS, Uveljavljanje odbitka oziroma vračila tujega davka (foreign tax credit and refund), September 2021 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Uveljavljanje_odbitka_oziroma_vracila_tujega_davka_pravnih_oseb_in_fizicnih_oseb_ki_opravljajo_dejavnost.docx | 2026-10-23 |
 
-Not yet confirmed: the late payment interest rate for 2026 (ZDavP-2 art. 96 points to the statutory default interest law, not read); the EC reference rate that may lift exit-tax deferral interest above 2%; whether the art. 8.a order of 28 February 2022 has been amended since (FURS still publishes it as the current list); the average annual salary figure behind the 7% new-resident relief and the 2026 indexed income tax bands; whether ZDoh-2 was amended after Uradni list RS 104/24 (the pisrs consolidated text NPB36 ends there); the ministerial lists of company forms and taxes for arts. 71 and 72; individual treaty rates and tie-breakers; the withholding mechanics for non-resident individuals (REK forms), which belong to the payroll and income tax skills.
+Not yet confirmed: the late payment interest rate for 2026 (ZDavP-2 art. 96 points to the statutory default interest law, not read); the EC reference rate that may lift exit-tax deferral interest above 2%; whether the art. 8.a order of 28 February 2022 has been amended since (FURS still publishes it as the current list); the average annual salary figure behind the 7% new-resident relief and the 2026 indexed income tax bands; the ministerial lists of company forms and taxes for arts. 71 and 72; individual treaty rates and tie-breakers; the detail of REK withholding for non-resident individuals, which belongs to the payroll and income tax skills.
