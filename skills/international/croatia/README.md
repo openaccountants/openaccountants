@@ -5,8 +5,7 @@ not_applicable: {}
 covered_by:
   IT-CORP: hr-corporate-income-tax
   XB: hr-cross-border
-partial:
-  VAT: "croatia-vat-return carries tax year 2025 figures, not yet rolled to 2026"
+partial: {}
 ---
 
 # Croatia: tax pack
@@ -35,7 +34,4 @@ Calendar tax year unless a company is allowed a different business year. Authori
 - Odluka o objavi kamatne stope na zajmove između povezanih osoba, NN 150/2025: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2236.html (read 2026-10-23)
 - Tax Administration register of regulations (Opći porezni zakon, Zakon o administrativnoj suradnji u području poreza): https://porezna-uprava.gov.hr/Propisi (read 2026-10-23)
 - Tax Administration, Transferne cijene: https://porezna-uprava.gov.hr/hr/transferne-cijene/3993 (read 2026-10-23)
-- Zakon o doprinosima NN 84/08 and amendments to NN 152/24, consolidated in the Tax Administration register: https://porezna-uprava.gov.hr/Propisi (read 2026-10-23)
-- Naredba o iznosima osnovica za obračun doprinosa za 2026., NN 150/25: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html (read 2026-10-23)
-- Uredba o visini minimalne plaće za 2026., NN 132/25: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_10_132_1931.html (read 2026-10-24)
 - Tax Administration: https://porezna-uprava.gov.hr/ (read 2026-10-23)
