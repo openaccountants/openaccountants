@@ -6,7 +6,6 @@ covered_by:
   XB: si-cross-border
 partial:
   IT-IND: "tax year 2025 figures; 2026 refresh pending"
-  IT-CORP: "tax year 2025 figures; 2026 refresh pending"
   VAT: "tax year 2025 figures; 2026 refresh pending"
   SC: "tax year 2025 figures; 2026 refresh pending"
   PR: "tax year 2025 figures; 2026 refresh pending"
@@ -21,7 +20,7 @@ Calendar tax year for individuals; companies may use a business year of up to 12
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | slovenia-income-tax (tax year 2025) | source-cited draft |
-| IT-CORP, corporate income tax | si-corporate-income-tax (tax year 2025) | source-cited draft |
+| IT-CORP, corporate income tax | si-corporate-income-tax (2026: 22% rate under ZORZFS art. 64, base and non-deductible items, depreciation caps, R&D, investment and green reliefs, losses over five years at 50% of the base, 63% overall cap, interest limitation, advances, return, fines) | source-cited draft |
 | VAT | slovenia-vat-return (tax year 2025) | source-cited draft |
 | SC, social contributions | slovenia-social-contributions (tax year 2025) | source-cited draft |
 | PR, payroll withholding | slovenia-payroll (tax year 2025) | source-cited draft |
