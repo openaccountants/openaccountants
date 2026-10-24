@@ -2,13 +2,16 @@
 name: sx-turnover-tax
 description: >
   Sint Maarten turnover-tax reference checked in 2026 against the official statute and tax-administration guidance. Covers the five-percent rate, receipts-based timing, authorised invoice accounting, treatment of genuine customer disbursements, monthly returns and selected exemption conditions. Explains the special export boundary encompassing the French side of the island and statutory export-evidence requirements. Includes worked computations and distinguishes exemption from absence of filing duties. Flags conditional recipient liability for overseas suppliers rather than assuming a universal reverse charge. Applies to Dutch Sint Maarten. Complete sector-specific relief, amendment reconciliation and independent accountant review remain outstanding.
-jurisdiction: SX
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SX
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Sint Maarten: turnover tax
@@ -59,3 +62,23 @@ Article 11(2) can levy tax on the locally established business recipient in the 
 ## Verification limits
 
 Checked 22 October 2026. The official Dutch statutes support the rules above; this English explanation is not an official translation. Complete later-instrument reconciliation, special regimes, all exclusions and exemptions, refund/correction procedures, liability interactions and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive country coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

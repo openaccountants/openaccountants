@@ -1,256 +1,181 @@
 ---
 name: be-social-contributions
-description: "Use this skill whenever asked about Belgian self-employed social contributions (sociale bijdragen / cotisations sociales). Trigger on phrases like \"sociale bijdragen\", \"Belgian social contributions\", \"RSVZ\", \"INASTI\", \"self-employed Belgium\", \"zelfstandige bijdragen\", \"VAPZ\", \"PLCI\", or any question about social contribution obligations for a self-employed client in Belgium. Covers the 20.5% / 14.16% tiered rates, quarterly payments, management company interaction, and VAPZ supplementary pension. ALWAYS read this skill before touching any Belgium social contributions work."
+description: "Belgian social contributions for the self-employed (sociale bijdragen zelfstandigen / cotisations sociales des indépendants) for contribution year 2026, under Royal Decree No. 38 and the RSVZ / INASTI 2026 amounts. Covers the 20.50% rate up to EUR 75,024.54 and 14.16% up to EUR 110,562.42, the minimum quarterly contribution of EUR 890.42 and maximum of EUR 5,103.05, provisional contributions on income of three years earlier revalued by 1.07236269, regularisation, starters (primostarters), secondary activity, assisting spouses, student-entrepreneurs and pensioners, late payment increases, and VAPZ at 8.50% / 9.78% from 2026. Trigger on: sociale bijdragen, cotisations sociales indépendant, RSVZ, INASTI, socialeverzekeringsfonds, bijberoep, primostarter, VAPZ, PLCI. Out of scope: be-income-tax (income tax on self-employed profits), belgium-payroll (employees), be-corporate-tax (the annual company contribution), be-cross-border."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/be-social-contributions"
   jurisdiction: "BE"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-23"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# BE Social Contributions
-
-## Section 1 -- Quick reference
-
-**Quick reference**
-
-| Field | Value |
-| --- | --- |
-| Country | Belgium (Kingdom of Belgium) |
-| Authority | RSVZ/INASTI (Rijksinstituut voor de Sociale Verzekeringen der Zelfstandigen) |
-| Social insurance fund | Acerta, Liantis, Xerius, UCM, etc. (client chooses one) |
-| Primary legislation | Koninklijk Besluit nr. 38 (Royal Decree No. 38 on self-employed social status) |
-| Supporting legislation | Wet betreffende het sociaal statuut der zelfstandigen; Programmawet; WIB |
-| Rate (hoofdberoep, bracket 1) | 20.50% on income up to EUR 73,447.52 |
-| Rate (hoofdberoep, bracket 2) | 14.16% on EUR 73,947.41 -- EUR 108,238.40 |
-| Rate above ceiling | 0% (no contributions above EUR 108,238.40) |
-| Management fee | 3.05% on top of calculated contributions |
-| Minimum quarterly (hoofdberoep) | EUR 871.71 |
-| Bijberoep exemption threshold | EUR 1,881.75/year |
-| Payment frequency | Quarterly |
-| Due dates | 31 Mar, 30 Jun, 30 Sep, 31 Dec |
-| Currency | EUR only |
-| Contributor | Open Accountants |
-| Validated by | Pending -- requires validation by Belgian boekhouder or accountant |
-| Validation date | Pending |
-
-## Section 2 -- Required inputs and refusal catalogue
-
-- **Required inputs before computing any social contribution figure** — 1. Social status -- zelfstandige in hoofdberoep (main occupation), bijberoep (secondary occupation), or meewerkende echtgeno(o)t(e) (assisting spouse)? 2. Net professional income -- netto beroepsinkomen from self-employment (after business expenses, before social contributions and personal deductions) 3. Year of activity -- starter (first 3 years) or established? 4. Social insurance fund -- which fund is the client affiliated with? 5. Any concurrent employment? -- determines hoofdberoep vs bijberoep 6. Interest in VAPZ/PLCI? -- supplementary pension for self-employed
-- **Stop condition if occupation status unknown** — If main vs secondary occupation status is unknown, STOP. Rates and minimums differ significantly.
-- **R-BE-SOC-1 -- Cross-border frontier worker** — Trigger: client lives in Belgium but works as self-employed in another EU state. Message: "Cross-border social insurance requires A1 certificate analysis under EU Regulation 883/2004. Escalate to qualified accountant."  _(R-BE-SOC-1)_
-- **R-BE-SOC-2 -- Artistic status** — Trigger: client claims artistic status for social contribution purposes. Message: "Artistic status determination is outside this skill's scope. Refer to qualified accountant with expertise in artist social status."  _(R-BE-SOC-2)_
-- **Prohibitions** — NEVER compute contributions without knowing hoofdberoep vs bijberoep status NEVER forget the 3.05% management fee -- it is always added by the social insurance fund NEVER tell a client that social contributions have no upper limit -- there IS a ceiling at EUR 108,238.40 NEVER ignore the minimum contribution for hoofdberoep -- even with zero income, minimum applies NEVER confuse VAPZ deductibility with regular business expense deduction -- they are separate mechanisms NEVER apply bijberoep rates to a client whose employment is below 50% of full-time NEVER state that provisional contributions are final -- regularisation WILL occur NEVER present contribution amounts without noting the management fee component
-
-## Section 3 -- Contribution base
-
-Legislation: KB nr. 38, art. 11
-
-- **How the base is determined** — Provisional contributions are based on income from 3 years ago (N-3), indexed. Final contributions are recalculated when the actual-year income is assessed by the tax administration. Social contributions are themselves deductible from taxable income, creating a circular reference resolved by RSVZ tables.  _(KB nr. 38, art. 11)_
-- **Contribution base formula** — contribution_base = net_professional_income (netto beroepsinkomen) This is the income from self-employment AFTER business expenses but BEFORE social contributions deduction.  _(KB nr. 38, art. 11)_
-
-## Section 4 -- Rates and thresholds (2025)
-
-Legislation: KB nr. 38, art. 12; RSVZ published rates
-
-### Hoofdberoep rates
-
-**Hoofdberoep rates**  _(KB nr. 38, art. 12; RSVZ published rates)_
-
-| Income bracket | Rate |
-| --- | --- |
-| EUR 0 -- EUR 73,447.52 | 20.50% |
-| EUR 73,947.41 -- EUR 108,238.40 | 14.16% |
-| Above EUR 108,238.40 | 0% |
-
-### Bijberoep
-
-**Bijberoep**  _(KB nr. 38, art. 12; RSVZ published rates)_
-
-| Threshold | Amount |
-| --- | --- |
-| Exemption threshold (no contributions below) | EUR 1,881.75/year |
-| Minimum quarterly contribution (above threshold) | EUR 99.38 |
-| Rate above threshold | 20.50% (same bracket schedule as hoofdberoep) |
-
-### Minimum contributions -- hoofdberoep
-
-**Minimum contributions -- hoofdberoep**  _(KB nr. 38, art. 12; RSVZ published rates)_
-
-| Category | Quarterly minimum (2025) | Annual minimum |
-| --- | --- | --- |
-| Established (4+ years) | EUR 871.71 | EUR 3,561.68 |
-| Starter (years 1-3) | EUR 871.71 | EUR 3,561.68 |
-
-- **Starter reduction floor** — Starters can request reduction to a lower provisional contribution if they expect low income, but the minimum cannot go below the bijberoep minimum.
-
-### VAPZ / PLCI supplementary pension
-
-Legislation: Wet van 24 december 2002 (VAPZ); Programmawet 2003
-
-**VAPZ / PLCI supplementary pension**  _(Wet van 24 december 2002 (VAPZ); Programmawet 2003)_
-
-| Type | Maximum | Tax treatment |
-| --- | --- | --- |
-| Ordinary VAPZ | 8.17% of reference income (max ~EUR 4,000.44) | Deductible as social contribution |
-| Social VAPZ | 9.40% of reference income (max ~EUR 4,602.71) | Same + additional solidarity coverage |
-
-- **Reference income (VAPZ)** — Reference income = income from N-3 (same base as social contributions). Must be affiliated with social insurance fund and in order with contribution payments.  _(Wet van 24 december 2002 (VAPZ); Programmawet 2003)_
-
-## Section 5 -- Computation steps
-
-### Step 5.1 -- Determine occupation type
-
-- **Occupation type determination** — IF client has concurrent employment >= 50% of full-time: status = bijberoep ELSE: status = hoofdberoep
-
-### Step 5.2 -- Compute annual contributions (hoofdberoep)
-
-- **Annual contribution computation (hoofdberoep)** — IF income <= 73,447.52: contributions = income x 20.50% ELIF income <= 108,238.40: contributions = (73,447.52 x 20.50%) + ((income - 73,447.52) x 14.16%) ELSE: contributions = (73,447.52 x 20.50%) + ((108,238.40 - 73,447.52) x 14.16%) contributions = max(contributions, annual_minimum) management_fee = contributions x 3.05% total = contributions + management_fee
-
-### Step 5.3 -- Compute quarterly payment
-
-- **Quarterly payment computation** — quarterly_payment = total / 4
-
-### Step 5.4 -- Bijberoep computation
-
-- **Bijberoep computation** — IF income <= 1,865.44: contributions = 0 ELSE: Apply same rate brackets as hoofdberoep contributions = max(calculated_amount, quarterly_minimum x 4)
-
-## Section 6 -- Payment schedule and tax deductibility
-
-Legislation: KB nr. 38, art. 15; WIB art. 52
-
-### Payment schedule
-
-**Payment schedule**  _(KB nr. 38, art. 15; WIB art. 52)_
-
-| Quarter | Covers | Due date |
-| --- | --- | --- |
-| Q1 | Jan--Mar | 31 March |
-| Q2 | Apr--Jun | 30 June |
-| Q3 | Jul--Sep | 30 September |
-| Q4 | Oct--Dec | 31 December |
-
-- **Payment fund and penalties** — Contributions are payable to the chosen social insurance fund (sociaal verzekeringsfonds). Late payment triggers a 3% surcharge per quarter plus 7% annual interest. Non-payment can result in loss of social security rights.  _(KB nr. 38, art. 15; WIB art. 52)_
-
-### Tax deductibility
-
-**Tax deductibility**  _(KB nr. 38, art. 15; WIB art. 52)_
-
-| Question | Answer |
-| --- | --- |
-| Are social contributions deductible? | YES -- fully deductible as beroepskosten |
-| When deductible? | In the year they are paid |
-| Does this include regularisation payments? | YES -- deductible in year of payment |
-| Are VAPZ contributions also deductible? | YES -- as separate deduction under social contribution rules (not beroepskosten) |
-
-## Section 7 -- Starter status and special situations
-
-### Starter status (first 4 quarters)
-
-- **Starter status rules** — Client can request provisional contributions based on estimated income rather than minimum. Reduced start-up contributions available if expected income is low, minimum = bijberoep minimum. Risk warning: if actual income exceeds estimates, significant regularisation will follow. Adviser should review estimated income and warn about Nachbemessung risk.  _(KB nr. 38, art. 12bis)_
-
-### Management company (vennootschap) mandataris
-
-- **Management company mandataris treatment** — Client is a company director (bestuurder/zaakvoerder) and also has an independent practice: the client pays social contributions as self-employed on total net professional income from ALL self-employed activities. Company director fees (bezoldiging bedrijfsleider) are part of this base. There is no separate contribution regime for mandatarissen.
-
-### Meewerkende echtgeno(o)t(e) (assisting spouse)
-
-- **Assisting spouse statutes** — Mini-statute: contributions limited to sickness/disability. Maxi-statute: full contributions like hoofdberoep on attributed income. Determine which statute applies and flag for reviewer.
-
-### Pensioner continuing self-employment
-
-- **Pensioner continuing self-employment rules** — If the client has reached legal retirement age and has 45-year career, no income limits apply. Otherwise, income limits may apply and excess income triggers contribution obligations. Minimum contribution = bijberoep minimum.
-
-### Student-zelfstandige
-
-- **Student-entrepreneur status** — Specific student-entrepreneur status available since 2017. If income below threshold (approx EUR 8,430.72), reduced contributions apply. Above threshold, regular bijberoep or hoofdberoep rules apply.
-
-## Section 8 -- Edge case registry
-
-### EC1 -- Concurrent employment below 50%
-
-- **EC1 resolution** — Situation: Client is employed part-time (30%) and self-employed. Resolution: If employment is below 50% of full-time, client is considered zelfstandige in hoofdberoep, not bijberoep. Full minimum contributions apply. Verify exact employment percentage with employment contract. Flag for reviewer.
-
-### EC2 -- Income much higher than N-3 base
-
-- **EC2 resolution** — Situation: Client's provisional base from 3 years ago is EUR 20,000 but current year will be EUR 80,000. Resolution: Client can voluntarily increase provisional contributions to avoid large regularisation. Recommend increasing to avoid cash flow shock.
-
-### EC3 -- Regularisation after cessation
-
-- **EC3 resolution** — Situation: Client stopped self-employment in 2023, regularisation for 2023 arrives in 2025. Resolution: Regularisation must be paid even after cessation. The amount is deductible in the year of payment from any remaining income or can reduce personal income tax.
-
-### EC4 -- Cross-border EEA (frontier worker)
-
-- **EC4 resolution** — Situation: Client lives in Belgium but works as self-employed in the Netherlands. Resolution: Under EU Regulation 883/2004, if the client works in multiple member states, they generally pay contributions in their country of residence if they perform substantial (25%+) activity there. A1 certificate required. Escalate to reviewer.  _(EU Regulation 883/2004)_
-
-## Section 9 -- Reviewer escalation protocol
-
-When a situation requires reviewer judgement:
-
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified boekhouder/accountant must confirm before advising client.
-
-When a situation is outside skill scope:
-
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified accountant. Document gap.
-
-## Section 10 -- Test suite
-
-### Test 1 -- Standard hoofdberoep, mid-range income
-
-Input: Net professional income EUR 45,000, hoofdberoep, established, age 40.
-Expected output: Contributions = EUR 45,000 x 20.50% = EUR 9,225.00. Management fee = EUR 281.36. Total = EUR 9,506.36. Quarterly: EUR 2,376.59.
-
-### Test 2 -- High income, both brackets
-
-Input: Net professional income EUR 90,000, hoofdberoep, established, age 45.
-Expected output: Bracket 1: EUR 73,447.52 x 20.50% = EUR 15,159.22. Bracket 2: (EUR 90,000 - EUR 73,447.52) x 14.16% = EUR 2,271.45. Total contributions: EUR 17,430.67. Management: EUR 531.64. Grand total: EUR 17,962.31. Quarterly: EUR 4,490.58.
-
-### Test 3 -- Above ceiling
-
-Input: Net professional income EUR 150,000, hoofdberoep, established, age 50.
-Expected output: Bracket 1: EUR 73,447.52 x 20.50% = EUR 15,159.22. Bracket 2: (EUR 108,238.40 - EUR 73,447.52) x 14.16% = EUR 4,983.42. No contribution above EUR 108,238.40. Total contributions: EUR 20,142.64. Management: EUR 614.35. Grand total: EUR 20,756.99.
-
-### Test 4 -- Bijberoep below threshold
-
-Input: Net professional income EUR 1,500, bijberoep, age 32.
-Expected output: Below EUR 1,881.75 threshold. Contributions = EUR 0.
-
-### Test 5 -- Bijberoep above threshold
-
-Input: Net professional income EUR 10,000, bijberoep, age 35.
-Expected output: Contributions = EUR 10,000 x 20.50% = EUR 2,050.00. Management: EUR 62.53. Total: EUR 2,112.53. Quarterly: EUR 528.13.
-
-### Test 6 -- Minimum contribution (low income hoofdberoep)
-
-Input: Net professional income EUR 5,000, hoofdberoep, established, age 30.
-Expected output: Calculated: EUR 5,000 x 20.50% = EUR 1,025.00. Below minimum of EUR 3,561.68. Apply minimum: EUR 3,561.68 + management EUR 108.63 = EUR 3,670.31. Quarterly: EUR 917.58.
-
-### Test 7 -- VAPZ calculation
-
-Input: Reference income EUR 50,000, ordinary VAPZ.
-Expected output: Maximum VAPZ = EUR 50,000 x 8.17% = EUR 4,085.00. Cap at EUR 4,000.44 if applicable. Deductible from taxable income.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+# Belgium: social contributions for the self-employed (contribution year 2026) v2.1
+
+> **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any person's facts. Do not rely on it to pay, plan or take a position without review by a qualified professional in Belgium.
+
+This skill computes the quarterly social contributions a self-employed person pays to a social insurance fund (socialeverzekeringsfonds) in 2026. Related skills:
+
+- Income tax on the same profits, where these contributions are deductible: `be-income-tax`
+- Employees and employer RSZ / ONSS: `belgium-payroll`
+- Company directors working through a company, and the annual company contribution: `be-corporate-tax`
+- Which country's social security applies to cross-border work: `be-cross-border`
+
+## Who this applies to
+
+- **Self-employed in main occupation (hoofdberoep)**: anyone working in Belgium as self-employed who is not in one of the categories below. This includes a company director (bestuurder, zaakvoerder) paid by the company.
+- **Self-employed in secondary occupation (bijberoep)**: someone whose self-employed work sits beside another main occupation, usually employment; the fund checks the conditions. Lower thresholds apply.
+- **Assisting spouses and legal cohabitants (meewerkende echtgenoot)**: maxi-statute (full cover) or mini-statute (sickness and invalidity only, on the helped person's income).
+- **Student-entrepreneurs, pensioners and people above pension age**: their own thresholds and rates.
+
+Out: employees (`belgium-payroll`), and people insured in another EU state under Regulation 883/2004 (`be-cross-border`).
+
+## Rates, bands and thresholds
+
+All amounts are from the RSVZ table "Bijdragen 2026" (January 2026), reference year 2023, revaluation coefficient 1.07236269.
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Main occupation, rate band 1 | 20.50% on professional income up to EUR 75,024.54, on a minimum income of EUR 17,374.08 | 2026 | [RSVZ, Bijdragen 2026, section 1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Main occupation, rate band 2 | 14.16% on income above EUR 75,024.54 up to EUR 110,562.42; nothing above | 2026 | [RSVZ, Bijdragen 2026, section 1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Main occupation, minimum and maximum | Minimum EUR 890.42 a quarter; maximum EUR 5,103.05 a quarter | 2026 | [RSVZ, Bijdragen 2026, section 1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Starter, provisional | EUR 890.42 a quarter until the end of the third full calendar year; EUR 771.90 for a primostarter's first quarter | 2026 | [RSVZ, Bijdragen 2026, section 1, A.1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Primostarter, reduced (first 4 quarters, on request) | EUR 459.82 a quarter if estimated income does not exceed EUR 8,972.07; above that, 20.50% / 14.16%. First-quarter discount EUR 118.52. Final minimum: EUR 341.30 first quarter, EUR 459.82 other quarters | 2026 | [RSVZ, Bijdragen 2026, section 1, A.3 and B.1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Secondary occupation | Nothing below EUR 1,922.16 income; from EUR 1,922.16, 20.50% / 14.16%; minimum EUR 98.51 a quarter, maximum EUR 5,103.05 | 2026 | [RSVZ, Bijdragen 2026, section 3](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Equated with secondary occupation (art. 37 ARS) | Nothing below EUR 1,922.16; 20.50% up to EUR 9,101.26, maximum EUR 466.44 a quarter; main-occupation rules from EUR 9,101.26 | 2026 | [RSVZ, Bijdragen 2026, section 4](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Student-entrepreneur | Nothing below EUR 8,687.04; 20.50% on the part from EUR 8,687.04, maximum EUR 445.21 a quarter; main-occupation rules from EUR 17,374.08 | 2026 | [RSVZ, Bijdragen 2026, section 5](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Assisting spouse, maxi-statute | 20.50% / 14.16% on a minimum income of EUR 7,632.44; minimum EUR 391.16, maximum EUR 5,103.05 a quarter | 2026 | [RSVZ, Bijdragen 2026, section 2, §1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Assisting spouse, mini-statute | 0.79% / 0.51% of the helped person's income; minimum EUR 34.31, maximum EUR 193.48 a quarter | 2026 | [RSVZ, Bijdragen 2026, section 2, §2](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Above pension age with a retirement pension | Nothing below EUR 3,844.32; 14.70% up to EUR 75,024.54 and 14.16% to EUR 110,562.42; minimum EUR 141.28, maximum EUR 4,015.19 a quarter | 2026 | [RSVZ, Bijdragen 2026, section 8, §1](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Revaluation of reference income | Income of 2023 x 1.07236269 for provisional 2026 contributions | 2026 | [RSVZ, Bijdragen 2026, cover page](https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf) |
+| Late payment increases | 3% of the unpaid part at the end of each quarter it stays unpaid; plus a one-off 7% on 1 January of the next year on contributions first claimed in the year and still unpaid; never on increases | 2026 | [RSVZ, Wat als ik mijn bijdragen niet betaal?](https://www.rsvz.be/nl/faq/wat-als-ik-mijn-bijdragen-niet-betaal) |
+| VAPZ maximum rate | Ordinary VAPZ 8.50% of the reference income (was 8.17%); social VAPZ 9.78% (was 9.40%); secondary occupation can join from EUR 1,922.16 income three years earlier | From 2026 | [RSVZ, Wijzigingen VAPZ, 13 October 2026](https://www.rsvz.be/nl/nieuws/wijzigingen-vapz) |
+| Tax treatment | Personal social contributions, including VAPZ, are deductible professional expenses | Income 2026 | [Art. 52, 7° and 7°bis WIB 92](https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34) |
+
+On top of the contributions, the social insurance fund charges management costs (beheerskosten) to cover its expenses. The rate is set by each fund; ask the fund.
+
+## The taxable base
+
+- **What income counts.** Professional income from the self-employed activity: gross professional income less professional expenses and professional losses, as set by the tax administration (RSVZ). Social contributions paid are themselves professional expenses for income tax (art. 52, 7° WIB 92).
+- **Final contributions use the income of the year itself.** The 2026 contributions are finally based on 2026 income. The fund learns that income only when the tax administration reports it, usually one or two years later.
+- **Provisional contributions use income of three years earlier.** For 2026, the 2023 income revalued by 1.07236269. Someone who was not self-employed then pays the legal provisional amounts (EUR 890.42 a quarter in main occupation).
+- **Regularisation.** When the 2026 income is known, the fund recomputes the final contributions and asks for more or refunds the difference.
+- **Paying more or less in advance.** You can pay higher provisional contributions to avoid a large regularisation. Lower provisional contributions need the fund's agreement on objective evidence; if the real income turns out higher, the fund charges the supplement plus increases. The reduced amount never goes below the minimum.
+- **Computation, main occupation.** Annual contributions = 20.50% x min(income, 75,024.54) + 14.16% x (min(income, 110,562.42) - 75,024.54) if positive, with the income taken as at least EUR 17,374.08. Quarterly = annual / 4.
+
+## Deadlines and filing
+
+| What | When | Source |
+|---|---|---|
+| Quarterly contributions | On the fund's account by the last day of each quarter (31 March, 30 June, 30 September, 31 December 2026) | [RSVZ, Wat als ik mijn bijdragen niet betaal?](https://www.rsvz.be/nl/faq/wat-als-ik-mijn-bijdragen-niet-betaal) |
+| VAPZ for 2026 | Paid within 2026; those who already paid for 2026 can top up to the new 8.50% / 9.78% maximum | [RSVZ, Wijzigingen VAPZ](https://www.rsvz.be/nl/nieuws/wijzigingen-vapz) |
+| Limitation period | The fund has 5 years from 1 January after the contribution year to claim; the starter supplement runs to 1 January of the 8th year after the start | [RSVZ, Wat als ik mijn bijdragen niet betaal?](https://www.rsvz.be/nl/faq/wat-als-ik-mijn-bijdragen-niet-betaal) |
+
+## Penalties and interest
+
+- **3% per quarter.** If the contribution is not fully on the fund's account by the last day of the quarter, the fund adds 3% of the unpaid part, and again at the end of every later quarter while it stays unpaid.
+- **7% once.** Contributions first claimed in a year and still unpaid at year end get a one-off extra 7% on 1 January of the next year.
+- **No increases on increases.** They apply only to the principal.
+- **Waiver.** You can ask the fund to waive the increases once the principal for that quarter is paid, for force majeure, good faith on your status, or a hardship case. A first late payment in your career, for one quarter and paid within 8 days, can be waived on request without detailed reasons. A missed letter or an accountant's error is not a valid reason.
+- **Underestimated provisional contributions.** A supplement plus increases at regularisation.
+
+## Cross-border points
+
+- **One country's social security.** Under EU Regulation 883/2004, a person working in more than one member state pays contributions in one state only; an A1 certificate shows which. See `be-cross-border`.
+- **Self-employed in Belgium, employed abroad.** The person is generally insured in the state of employment; check the A1 before charging Belgian contributions.
+- **Contributions paid abroad** are not Belgian social contributions for this skill; the income tax deduction then depends on art. 52, 7° and the treaty.
+
+## Worked examples
+
+### Example 1: established, main occupation, final contributions
+
+Facts: a self-employed designer in main occupation since 2019. Final professional income for 2026: EUR 45,000.
+
+1. Income is between the minimum income (EUR 17,374.08) and EUR 75,024.54, so only band 1 applies.
+2. Annual contributions: 20.50% x 45,000 = EUR 9,225.00.
+3. Quarterly: EUR 2,306.25, above the EUR 890.42 minimum and below the EUR 5,103.05 maximum.
+4. The fund's management costs come on top.
+
+```oa-check
+name: Main occupation, final 2026 contributions on income EUR 45,000
+inputs:
+  income: 45000
+  min_income: 17374.08
+  band1_top: 75024.54
+  ceiling: 110562.42
+steps:
+  - base: max(income, min_income)
+  - band1: min(base, band1_top) * 0.205
+  - band2: max(min(base, ceiling) - band1_top, 0) * 0.1416
+  - annual: band1 + band2
+  - quarterly: round(annual / 4, 2)
+expected:
+  base: 45000
+  annual: 9225.00
+  quarterly: 2306.25
+```
+
+### Example 2: provisional contributions on 2023 income, then a refund at regularisation
+
+Facts: a self-employed consultant in main occupation. Professional income 2023: EUR 80,000. The fund sets 2026 provisional contributions on 2023 income revalued. Final income for 2026 turns out to be EUR 60,000. The client did not ask for a reduction.
+
+1. Revalued 2023 income: 80,000 x 1.07236269 = EUR 85,789.02.
+2. Band 1: 20.50% x 75,024.54 = 15,380.03. Band 2: 14.16% x (85,789.02 - 75,024.54) = 1,524.25. Annual provisional EUR 16,904.28.
+3. Quarterly provisional: EUR 4,226.07, under the EUR 5,103.05 maximum.
+4. Final 2026 contributions: 20.50% x 60,000 = EUR 12,300.00.
+5. Regularisation: the fund refunds 16,904.28 - 12,300.00 = EUR 4,604.28, once the tax administration reports the 2026 income. Had the client expected this, a reduced provisional amount could have been requested from the fund with evidence.
+
+```oa-check
+name: Provisional 2026 contributions on revalued 2023 income, then regularisation
+inputs:
+  income_2023: 80000
+  revaluation: 1.07236269
+  income_2026: 60000
+  band1_top: 75024.54
+  ceiling: 110562.42
+steps:
+  - revalued: round(income_2023 * revaluation, 2)
+  - prov_band1: round(min(revalued, band1_top) * 0.205, 2)
+  - prov_band2: round(max(min(revalued, ceiling) - band1_top, 0) * 0.1416, 2)
+  - provisional_annual: prov_band1 + prov_band2
+  - provisional_quarterly: round(provisional_annual / 4, 2)
+  - final_annual: min(income_2026, band1_top) * 0.205 + max(min(income_2026, ceiling) - band1_top, 0) * 0.1416
+  - refund: provisional_quarterly * 4 - final_annual
+expected:
+  revalued: 85789.02
+  prov_band1: 15380.03
+  prov_band2: 1524.25
+  provisional_annual: 16904.28
+  provisional_quarterly: 4226.07
+  final_annual: 12300.00
+  refund: 4604.28
+```
+
+## Ask the client first
+
+1. Main or secondary occupation? Any employment, and at what fraction of full-time?
+2. When did the activity start (first three calendar years, primostarter)?
+3. Professional income of 2023 and the expected income for 2026.
+4. Which social insurance fund, and its management cost rate?
+5. VAPZ: ordinary or social, and what was already paid for 2026?
+6. Any work or insurance in another country (A1 certificate)?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| RSVZ, Bijdragen 2026, main categories (January 2026) | https://www.rsvz.be/sites/rsvz/files/2024-01/folder_sociale_bijdragen.pdf | 2026-10-23 |
+| RSVZ, publication page for the 2026 contribution amounts | https://www.rsvz.be/nl/publicaties/sociale-bijdragen | 2026-10-23 |
+| RSVZ, Hoeveel sociale bijdragen moet ik betalen? | https://www.rsvz.be/nl/faq/hoeveel-sociale-bijdragen-moet-ik-betalen | 2026-10-23 |
+| RSVZ, Wat als ik mijn bijdragen niet betaal? | https://www.rsvz.be/nl/faq/wat-als-ik-mijn-bijdragen-niet-betaal | 2026-10-23 |
+| RSVZ, Wijzigingen VAPZ (13 October 2026) | https://www.rsvz.be/nl/nieuws/wijzigingen-vapz | 2026-10-23 |
+| Fisconetplus, art. 52 WIB 92 (income 2026), deductibility | https://eservices.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/e2123748-b2c4-49ab-8b2d-5eacb94fbc34 | 2026-10-23 |
+
+Not yet confirmed: the management cost rates of the social insurance funds and their legal maximum; the VAPZ maximum in euro for 2026; the 2026 amounts for self-employed with an early retirement pension or a survivor's pension only (sections 6 and 7 of the RSVZ table were not worked into this skill); the annual company contribution (vennootschapsbijdrage) for 2026.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
@@ -272,4 +197,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `be-social-contributions` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/be-social-contributions. If neither is available, confirm every figure against the official source pages cited above before relying on it.

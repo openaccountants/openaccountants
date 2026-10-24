@@ -3,16 +3,15 @@ name: hu-vat-return
 description: "Hungarian VAT (általános forgalmi adó, ÁFA) for tax year 2026: who must charge it, the 27%, 18%, 5% and 0% rates (0% for prescription-only medicines from 1 September 2026), the subjective exemption limit of HUF 20 million for 2026 and HUF 22 million for 2027, the EU small-business scheme (EUR 100,000), monthly, quarterly or annual filing set from 2024 data, the 20th-of-the-month and 25 February deadlines, form 2665 and its M sheets, online invoice data reporting, refund minimums, domestic reverse charge, blocked input VAT, cash accounting, late-payment interest and penalties under the Art. Trigger on: Hungarian VAT, áfa bevallás, 2665, alanyi adómentesség, áfa gyakoriság, havi negyedéves éves áfa, Online Számla, fordított adózás, NAV refund. Out of scope: row-by-row classification and the supplier library (hungary-vat-return), invoice software and data format (hungary-einvoice), income tax (hu-income-tax), corporate tax (hu-corporate-tax)."
 version: 2.1
 jurisdiction: HU
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -177,3 +176,23 @@ expected:
 | NAV, central bank base rate notice (5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
 
 Not yet confirmed: the HUF 24,000,000 exemption limit for 2028 is in NAV's notice but not in the consolidated Áfa tv. text read today; the specific fine for missing or late online invoice data was not located in the Art. today, so only the general default fine (Art. 220. §) is given; the full Annex 3 list of 5% items is summarised, not reproduced.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

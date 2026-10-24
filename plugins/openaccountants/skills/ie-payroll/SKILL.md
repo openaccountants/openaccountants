@@ -1,13 +1,13 @@
 ---
 name: ie-payroll
-description: "Use this skill whenever asked to compute, review, or advise on end-to-end Irish monthly or weekly payroll for employees — gross-to-net calculation, payslip generation, statutory deduction sequencing (pension, BIK, PAYE, USC, PRSI, LPT-at-source), real-time submission to Revenue (PSR / \"payroll submission request\"), and year-end Employee Detail Summary reconciliation under Revenue myAccount. Trigger on phrases like \"Ireland payroll\", \"Irish payroll\", \"Irish payslip\", \"compute Irish payroll\", \"monthly payroll Ireland\", \"weekly payroll Ireland\", \"gross to net Ireland\", \"RPN\", \"Revenue Payroll Notification\", \"PSR submission\", \"Employee Detail Summary\", \"BrightPay\", \"Sage payroll Ireland\", \"Surf Accounts payroll\", \"Thesaurus payroll\", \"BIK Ireland\", \"company car BIK Ireland\", or any request involving running monthly or weekly payroll for one or more employees in Ireland. This skill is the ORCHESTRATOR — it pulls PAYE bracket rules from `ie-paye`, USC bands from `ie-usc`, and PRSI Class A ra"
+description: "Use this skill whenever asked to compute, review, or advise on end-to-end Irish monthly or weekly payroll for employees — gross-to-net calculation, payslip generation, statutory deduction sequencing (pension, BIK, PAYE, USC, PRSI, LPT-at-source), real-time submission to Revenue (PSR / \"payroll submission request\"), and year-end Employee Detail Summary reconciliation under Revenue myAccount. Trigger on phrases like \"Ireland payroll\", \"Irish payroll\", \"Irish payslip\", \"compute Irish payroll\", \"monthly payroll Ireland\", \"weekly payroll Ireland\", \"gross to net Ireland\", \"RPN\", \"Revenue Payroll Notification\", \"PSR submission\", \"Employee Detail Summary\", \"BrightPay\", \"Sage payroll Ireland\", \"Surf Accounts payroll\", \"Thesaurus payroll\", \"BIK Ireland\", \"company car BIK Ireland\", or any request involving running monthly or weekly payroll for one or more employees in Ireland. It covers Income Tax under the Revenue Payroll Notification, USC and PRSI Class A itself, with the 2026 PRSI rates for bo"
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/ie-payroll"
   jurisdiction: "IE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-22"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -447,4 +447,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-22. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `ie-payroll` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/ie-payroll. If neither is available, confirm every figure against the official source pages cited above before relying on it.

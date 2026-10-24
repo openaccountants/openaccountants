@@ -7,7 +7,6 @@ tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 depends_on:
   - income-tax-workflow-base
 category: international
@@ -292,3 +291,23 @@ expected:
 | AED, taux nationaux (17 / 14 / 8 / 3%) | https://pfi.public.lu/fr/professionnel/tva/taxe-valeur-ajoutee/taux-nationaux-applicables.html | 2026-10-23 |
 
 Not yet confirmed: the year-of-acquisition rule rests only on the Guichet.lu page (last changed 2018, and it still says depreciation cannot be deferred, which art. 32(1a) has allowed since 2017); neither the LIR nor an ACD circular states it, so a reviewer must confirm current ACD practice before a part-year charge is filed. Whether the ACD smooths the step from 7% to 9% surcharge just above EUR 150,000 / 300,000 on assessment (the ACD page shows a plain step). The AED rates page was last updated 28 December 2023, and the consolidated VAT law (LTVA) was not read for 2026.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

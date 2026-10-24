@@ -2,13 +2,16 @@
 name: fo-vat
 description: >
   Prepare ordinary Faroese MVG registration and quarterly VAT working papers in 2026. Exempt sectors, detailed place-of-supply rules, real property and import valuation require additional classification. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
-jurisdiction: FO
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.2
-verified_by: pending
+jurisdiction: FO
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Faroe Islands VAT registration and returns v0.2
@@ -62,3 +65,23 @@ Complete the exempt-sector rules, input restrictions, invoice requirements and i
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

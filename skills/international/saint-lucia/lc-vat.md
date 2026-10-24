@@ -2,13 +2,16 @@
 name: lc-vat
 description: >
   Saint Lucia VAT registration, standard-rate calculation and return reference checked for 2026. Covers the statutory EC$400,000 registration threshold, forward-looking and three-month tests, standard VAT arithmetic, tourism-rate distinctions and nil-return filing. Use for Saint Lucia VAT, registration deadlines, taxable turnover, standard-rate invoices or tourism accommodation VAT. It uses the Attorney General Chambers revised legislation rather than old government pages retaining the original EC$180,000 threshold. Input recovery, exemptions, levy interaction and current amendments require further checking. This Guide does not claim complete VAT compliance or accountant review.
-jurisdiction: LC
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: LC
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Saint Lucia VAT
@@ -40,3 +43,23 @@ The [tourism order, S.I. 188/2020, paragraph 3](https://attorneygeneralchambers.
 Retain registration-trigger evidence, supply classification and separate tax calculations. Reconcile output VAT to invoices, and support every input deduction independently. This Guide does not establish recoverability for all purchases, refund entitlement or a zero-rating/exemption list.
 
 Payment mechanics, invoices, mixed supplies, input apportionment, imports, current sector amendments and the Health and Citizen Security Levy need separate checks. The examples calculate VAT only, not the total of every tax or levy. Independent review and amendment verification remain merge requirements.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

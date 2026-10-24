@@ -6,7 +6,6 @@ jurisdiction: SE
 tax_year: 2026
 last_updated: 2026-10-23
 review_status: pending_review
-verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -619,6 +618,8 @@ Not yet confirmed: the 66-or-over grundavdrag band table (IL 63 kap. 3 a §) was
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an auktoriserad revisor, godkänd revisor, or equivalent licensed practitioner in Sweden) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,15 +1,14 @@
 ---
 name: ie-return-assembly
 description: "Use this skill last, to put together an Irish individual's income tax return for tax year 2026 from the work done in the other Ireland skills. It decides Form 11 or Form 12, lists the 2026 figures each part uses (rate bands EUR 44,000 single and EUR 53,000 married at 20%, then 40%; main credits EUR 2,000; USC bands to 8%; PRSI Class S at 4.2375%; CGT 33% or 31% by disposal date), adds income tax, USC and PRSI, takes off PAYE and preliminary tax, and sets out the pay and file dates (31 October 2027 for the 2026 Form 11), the late filing surcharge and interest. Trigger on: assemble Irish return, Form 11 2026, Form 12 2026, ROS pay and file, Statement of Liability, balance due Ireland. Out of scope: companies and CT1 (ie-corporation-tax), VAT (ireland-vat-return), CAT (ie-cat)."
-jurisdiction: IE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 1.1
-verified_by: pending
+jurisdiction: IE
+tax_year: 2026
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -207,6 +206,8 @@ expected:
 | Department of Social Protection, SW14 (January 2026): Class S from EUR 5,000 | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | 2026-10-23 |
 
 Not yet confirmed: the ROS pay and file extension date for 2026 returns (due in 2027), which Revenue has not announced; whether the Finance (No. 2) Act 2026 is enacted with the 31% CGT rate unchanged.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

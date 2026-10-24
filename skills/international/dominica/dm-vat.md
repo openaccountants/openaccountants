@@ -2,13 +2,16 @@
 name: dm-vat
 description: >
   Dominica VAT registration, rates and return preparation reference checked for 2026. Covers the standard and accommodation or diving rates, the annual registration threshold, the three-month forward-looking registration test, monthly filing and payment, and illustrative output-tax arithmetic. Use for Dominica VAT, EC$250,000 registration, tax-inclusive pricing or nil returns. It flags inconsistent official wording at the exact annual threshold and cites the 2016 regulation changing threshold amounts. This draft does not determine every exemption, input deduction, special-sector registration rule, import liability or place-of-supply question, and does not assert comprehensive VAT coverage.
-jurisdiction: DM
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: DM
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Dominica VAT
@@ -36,3 +39,23 @@ For an established standard-rated supply worth EC$10,000 before VAT, output tax 
 ## Controls and exclusions
 
 Classify standard-rated, reduced-rate, zero-rated and exempt supplies separately. Reconcile sales to output tax and retain support for every claimed deduction. Do not treat all purchase tax as recoverable or extend an accommodation rate to an entire mixed package. Input apportionment, blocked deductions, imports, reverse charge, refunds, deregistration and sector exemptions require further sourced work. Independent legal/source review remains pending; this is not a complete filing instruction.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

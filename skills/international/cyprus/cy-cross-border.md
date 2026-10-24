@@ -1,13 +1,16 @@
 ---
 name: cy-cross-border
 description: "Cyprus cross-border tax for tax year 2026 (Income Tax Law 118(I)/2002, SDC Law 117(I)/2002 and related laws on CyLaw). Covers individual residence (183-day rule and the 60-day rule), company residence (management and control, or incorporation in Cyprus), how non-residents are taxed on Cyprus-source income, withholding on payments to non-residents (10% royalties, 10% professionals and performers), 5% and 17% SDC on dividends and interest to low-tax and EU-listed jurisdictions, the 20%, 25% and 50% employment exemptions for arrivals, foreign tax credit, leaving Cyprus (no individual exit tax; company exit tax with 5-year instalments), A1 rules and penalties. Trigger on: move to Cyprus, leave Cyprus, Cyprus non-resident, Cyprus withholding tax, Cyprus royalty withholding, 60-day rule. Out of scope: cy-non-dom, cy-corporate-tax, cy-transfer-pricing, cyprus-income-tax, cyprus-payroll, cyprus-social-contributions."
-jurisdiction: CY
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: CY
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Cyprus cross-border tax: residence, non-residents, leaving, withholding (tax year 2026)
@@ -229,3 +232,23 @@ expected:
 | Regulation (EC) 883/2004, consolidated text, arts. 11 to 13 (EUR-Lex) | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02004R0883-20190731 | 2026-10-23 |
 
 Not yet confirmed: the jurisdictions on the EU Annex I list at each payment date (the Council page refused automated access); the Tax Department's own guidance pages on gov.cy (they refuse automated access and were not read for this skill); whether the second 5% late-payment charge in article 50A(e) also applies to article 24 withholding; any treaty rates.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

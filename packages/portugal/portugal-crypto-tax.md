@@ -1,454 +1,224 @@
 ---
 name: portugal-crypto-tax
-description: "Utilize esta skill sempre que for solicitada informação sobre a tributação de criptomoedas ou ativos digitais em Portugal. Acione-a perante expressões como \"imposto cripto Portugal\", \"Bitcoin Portugal\", \"criptoativos IRS\", \"mais-valias cripto Portugal\", \"rendimentos cripto Portugal\", \"staking Portugal\", \"rendimentos de mineração Portugal\", \"imposto NFT Portugal\", \"Modelo 3 cripto\", \"Anexo G cripto\", \"Anexo G1 cripto\", \"365 dias cripto Portugal\", \"Autoridade Tributária cripto\", \"imposto Binance Portugal\", \"imposto Coinbase Portugal\", \"DeFi Portugal\", ou qualquer questão sobre IRS, mais-valias ou IVA aplicável a criptomoedas, tokens ou ativos digitais para residentes fiscais portugueses ou rendimentos cripto de fonte portuguesa. Abrange a exclusão dos 365 dias, taxa de 28% para curto prazo, Categoria B (mineração/trading profissional), exclusão de NFT, método FIFO e reporte DAC8. Trigger also on: \"crypto tax Portugal\", \"Bitcoin Portugal\", \"cryptocurrency gains Portugal\", \"crypto income Portugal\", \"staking Portugal\", \"mining income Portugal\", \"NFT tax Portugal\", \"Modelo 3 crypto\", \"Anexo G crypto\", \"Anexo G1 crypto\", \"365 days crypto Portugal\", \"Autoridade Tributária crypto\", \"Binance Portugal tax\", \"Coinbase Portugal tax\", \"DeFi tax Portugal\". LEIA SEMPRE esta skill antes de tratar qualquer questão de criptoativos em Portugal."
-version: 1.0
+description: "Portuguese IRS on crypto assets for resident individuals, tax year 2026. Covers gains on crypto that is not a security (CIRS art. 10(1)(k)): the 28% autonomous rate or aggregation at the 2026 bands (12.5% to 48% plus the solidarity surcharge), the exclusion for crypto held 365 days or more (art. 10(22)), tax-free crypto-for-crypto swaps (art. 10(23)), the carve-out for non-cooperative counterparties (art. 10(24)), the exit charge on loss of residence (art. 10(25), art. 43(12)), FIFO per custodian, rewards paid in crypto or fiat, mining and trading as Category B (coefficients 0.15 and 0.95), losses, filing and fines. Article numbers follow Decreto-Lei 97/2026, which renumbered art. 10. Trigger on: 'crypto tax Portugal', 'Bitcoin Portugal 365 dias', 'criptoativos IRS', 'staking Portugal', 'exit tax crypto Portugal', 'Anexo G crypto'. Out of scope: self-employed rules in general (pt-income-tax), residence and other exit rules (pt-cross-border), NHR and IFICI (pt-nhr-ifici), companies (pt-corporate-tax)."
+version: 1.1
 jurisdiction: PT
-tax_year: 2025
-last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
-  - portugal-income-tax
-category: crypto
+  - pt-income-tax
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Portugal Crypto Tax
+# Portugal: IRS on crypto assets (tax year 2026)
 
-## Portugal — Tributação de Criptoativos — Skill v1.1
+> Source-cited draft: not reviewed by an accountant.
 
-## Verified rates & thresholds (accountant-reviewed)
+This skill computes the IRS of a Portuguese resident individual on crypto: gains on sale, rewards, mining and trading as a business, and the charge on leaving Portugal. Crypto gains have been taxable since 1 January 2023 (Lei 24-D/2022). Decreto-Lei 97/2026, de 20 de maio, renumbered CIRS art. 10 with effect from 1 January 2026 (DL 97/2026 art. 18(2)). The crypto rules did not change in substance: the 365-day exclusion moved from n.º 19 to n.º 22, swaps from n.º 20 to n.º 23, the carve-out from n.º 21 to n.º 24, and the exit charge from n.º 22 to n.º 25. Older material citing art. 10(17), (19) or (22) uses the old numbers.
 
-- **Verified block note** — Reviewed against the cited tax authorities by Mário Jorge da costa Vale on 2026-06-04. Items flagged for further clarification are tracked separately and excluded here. This block is generated from verified skill_facts — edit the facts, not the prose.
+Sibling skills, which this one links to and does not repeat:
 
-### Cripto
+- `pt-income-tax`: Category B (self-employed) rules, the simplified regime, payments on account.
+- `pt-irs-employees-investment`: the 2026 bands in full, deductions from the tax, the household, interest rates.
+- `pt-cross-border`: residence, split years, non-residents, exit rules for other assets.
+- `pt-nhr-ifici`: NHR and IFICI holders.
+- `pt-social-contributions`: social security on Category B crypto income.
 
-- **Detido < 365 dias** — 28% taxa autónoma (ou englobamento)  _(CIRS Art. 10.º)_
-- **Detido ≥ 365 dias** — ISENTO de IRS  _(CIRS Art. 10.º n.º 17)_
-- **Cripto-para-cripto (swap)** — NÃO é evento tributável  _(CIRS)_
-- **Taxa autónoma padrão** — 28%  _(CIRS Art. 72.º)_
-- **Jurisdição na lista negra** — 35%  _(Portaria 150/2004)_
-- **Englobamento** — 12,5% a 48% (progressivo)  _(CIRS Art. 22.º e 68º)_
-- **Recebidos em fiat** — 28% no ano de recebimento  _(CIRS Cat. E)_
-- **Recebidos em cripto** — Não tributável até conversão em fiat  _(CIRS Cat. E)_
-- **Mineração habitual** — Cat. B — taxas progressivas  _(CIRS Cat. B)_
-- **Método obrigatório** — FIFO  _(CIRS Art. 44.º/48.º)_
-- **Regime simplificado** — Coeficiente 0,95 (campo 422 Anexo B)  _(CIRS Art. 31.º)_
-
-## Secção 1 — Referência Rápida
+Every figure below was read on the Portal das Finanças (AT's consolidated CIRS and RGIT) on 2026-10-23.
 
-**Referência Rápida**
+## Who this applies to
 
-| Campo | Valor |
-| --- | --- |
-| País | Portugal (República Portuguesa) |
-| Imposto | IRS — Imposto sobre o Rendimento das Pessoas Singulares |
-| Moeda | EUR (todos os valores devem ser expressos em EUR à data da operação) |
-| Ano fiscal | Ano civil (1 de janeiro – 31 de dezembro) |
-| Autoridade primária | Código do IRS (CIRS), artigos 10.º, 12.º-A, 28.º, 31.º, 72.º; Lei n.º 24-D/2022 (Orçamento do Estado 2023) — disposições sobre criptoativos |
-| Reforma central | A Lei 24-D/2022 (OE 2023) introduziu a tributação de criptoativos a partir de 1 de janeiro de 2023 — antes desta data, os ganhos cripto para pessoas singulares NÃO eram tributáveis |
-| Autoridade fiscal | Autoridade Tributária e Aduaneira (AT) |
-| Portal de submissão | Portal das Finanças (portaldasfinancas.gov.pt) |
-| Prazo de entrega | 1 de abril – 30 de junho do ano seguinte |
-| Reporte UE | DAC8 — plataformas cripto reportam a partir de 2026; plataformas registadas em Portugal já reportam desde 2024 (até 31 de janeiro anualmente) |
-| Validado por | Verificado por Mário Jorge da costa Vale (CA - 85883) em 2026-06-04 |
-| Versão da skill | 1.1 |
+**Resident individuals.** Residence follows CIRS art. 16: more than 183 days in Portugal in any 12-month period starting or ending in the year, or a home kept as a habitual residence. Residents are taxed on worldwide gains. Non-residents are in `pt-cross-border`.
 
-### A Exclusão dos 365 Dias — A Regra Central de Portugal
+**What counts as a crypto asset.** Any digital representation of value or rights that can be transferred or stored electronically using distributed ledger or similar technology (art. 10(20)). Unique crypto assets not fungible with other crypto assets (NFTs) are excluded from that definition (art. 10(21)). Crypto assets that are securities follow the securities rules, not this skill (art. 10(1)(k)).
 
-**A Exclusão dos 365 Dias**
+**Which category.**
 
-| Período de Detenção | Tratamento Fiscal |
-| --- | --- |
-| **< 365 dias** | Tributado à **taxa autónoma de 28%** com opção de englobamento (taxas progressivas) |
-| **≥ 365 dias** | **ISENTO de IRS** — mas tem de ser declarado no Anexo G1 |
+| Activity | Category and rule |
+|---|---|
+| Occasional sale of crypto for fiat, goods or services | Category G capital gain (art. 10(1)(k)) |
+| Rewards from crypto operations (staking, lending) paid in fiat | Category E capital income (art. 5(2)(u)) |
+| Rewards paid in crypto | Not taxed on receipt; taxed as a capital gain when the crypto received is sold (art. 5(11)) |
+| Crypto trading or mining carried on as a business | Category B (`pt-income-tax`); coefficient 0.15 for crypto operations, 0.95 for mining (art. 31(1)(a) and (d)) |
+| Crypto received as pay for work | Category A or B, as pay; not a capital gain |
 
-Esta exclusão aplica-se a criptoativos que NÃO sejam qualificados como valores mobiliários. Não se aplica a traders profissionais (Categoria B).
+## Rates, bands and thresholds
 
-### Classificação de Criptoativos em sede de IRS
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| Net crypto gains (Category G), held under 365 days | 28% autonomous rate | 2026 | CIRS art. 72(1)(c): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx |
+| Option to aggregate instead | 2026 IRS bands, 12.50% to 48.00%; solidarity surcharge 2.5% over EUR 80,000 and 5% over EUR 250,000 | 2026 | CIRS art. 72(13), art. 68 (Lei 73-A/2025), art. 68-A: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx |
+| Crypto held 365 days or more | Gains and losses excluded | 2026 | CIRS art. 10(22), wording of DL 97/2026: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx |
+| Crypto-for-crypto swap (held under 365 days) | No tax; the crypto received takes the acquisition value of the crypto given | 2026 | CIRS art. 10(23) |
+| Carve-out | Exclusion and swap deferral do not apply when the taxpayer or the payer is not resident in the EU/EEA or in a state with a tax treaty or exchange-of-information agreement with Portugal | 2026 | CIRS art. 10(24) |
+| Loss of residence | Treated as a sale; income = the positive difference between market value on the date residence ends and acquisition value plus acquisition costs | 2026 | CIRS art. 10(25), art. 43(12): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx |
+| Rewards paid in fiat (Category E) | 28% autonomous rate; no withholding | 2026 | CIRS art. 5(2)(u), art. 72(1)(d), art. 101-B(5) |
+| Order of disposal | FIFO, separately at each custodian or crypto service provider | 2026 | CIRS art. 43(8)(g) and (9) |
+| Losses with a counterparty in a listed low-tax regime | Do not count | 2026 | CIRS art. 43(7) |
+| Loss carry-forward, Category G crypto | 5 years, only if the person aggregates | 2026 | CIRS art. 55(1)(d): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx |
+| Simplified regime coefficients (Category B) | 0.15 crypto operations; 0.95 mining | 2026 | CIRS art. 31(1)(a) and (d): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx |
+| Category B loss carry-forward | 12 years | 2026 | CIRS art. 55(1)(a) |
 
-**Classificação de Criptoativos em sede de IRS**
+There is no 35% rate on crypto gains. The 35% list in art. 72(18) covers capital income from listed low-tax jurisdictions and gains on certain securities and trusts, not art. 10(1)(k). The 2026 bands are lower than 2025: use the Lei 73-A/2025 table, not the 2025 table.
 
-| Atividade | Categoria de IRS | Tratamento Fiscal |
-| --- | --- | --- |
-| Mais-valias em cripto detido < 365 dias | Categoria G (Mais-valias) | 28% autónoma ou taxas progressivas (englobamento) |
-| Mais-valias em cripto detido ≥ 365 dias | Categoria G — isento | 0% (mas declaração obrigatória no Anexo G1) |
-| Recompensas de staking / lending / yield farming | Categoria E (Rendimentos de capitais) | 28% autónoma ou taxas progressivas (englobamento) |
-| Mineração / emissão de criptoativos | Categoria B (Rendimentos empresariais e profissionais) | Taxas progressivas 14,5%–53% |
-| Trading habitual/profissional de cripto | Categoria B | Taxas progressivas 14,5%–53% |
-| Permuta cripto-por-cripto | NÃO é facto tributário | O valor de aquisição transita para o novo ativo |
-| Rendimentos de NFT | Excluídos do regime de criptoativos | Ver Secção 6 |
+## The taxable base
 
-### Pressupostos Conservadores
+**Gain on each sale (Category G).** Sale value less acquisition value, each with the costs needed to buy and sell (art. 10(4)(a), art. 43(12) for the exit). Convert to euros at the date of each operation. Which units were sold: the oldest first, counted at each custodian separately (art. 43(8)(g) and (9)). A wallet at one exchange and another at a second exchange are two FIFO queues.
 
-**Pressupostos Conservadores**
+**365-day test.** Each unit sold is checked against its own acquisition date. Units held 365 days or more are out, gains and losses both (art. 10(22)). Units held less are in.
 
-| Ambiguidade | Pressuposto |
-| --- | --- |
-| Período de detenção desconhecido | Tratar como < 365 dias (tributável a 28%) |
-| Desconhece-se se a atividade é ocasional ou habitual | Tratar como ocasional (Categoria G/E), salvo indicadores claros de atividade empresarial |
-| Valor de aquisição desconhecido | PARAR — não é possível apurar mais-valia sem custo de aquisição |
-| Estatuto de residência desconhecido | PARAR — afeta tributação mundial vs. fonte |
-| Recompensa de staking: passiva ou empresarial? | Tratar como Categoria E (passivo — 28%) |
-| Cripto recebida como contrapartida por trabalho | Categoria A (trabalho dependente) ou Categoria B (trabalho independente) — não Categoria G |
+**Swaps.** When crypto held under 365 days is exchanged for other crypto, there is no tax. The new crypto takes the old acquisition value (art. 10(23)). The swap rule also covers crypto received as a reward under art. 5(11). Tax arises when crypto is exchanged for fiat, goods or services.
 
-## Secção 2 — Inputs Necessários e Catálogo de Recusas
+**Net and choose.** Net all Category G crypto gains and losses of the year (art. 43(1)). A net gain pays 28% (art. 72(1)(c)), or the person opts to aggregate it with other income at the band rates (art. 72(13)). Aggregation pays when the marginal rate on the gain is below 28%: in 2026 that means total taxable income stays within band 4 (EUR 23,089, marginal 24.10%), or reaches band 5 only for a small part. If the person aggregates crypto gains, they must aggregate all income of that category (art. 22(5)). Worked example 1 shows the test.
 
-### Inputs Necessários
+**Losses.** A net loss on crypto can be carried forward 5 years only if the person aggregates in the loss year (art. 55(1)(d)). Losses with a counterparty in a listed low-tax regime do not count (art. 43(7)).
 
-- **Mínimo viável** — histórico de operações da(s) exchange(s) ou carteira(s), confirmação da residência fiscal em Portugal, períodos de detenção para todas as alienações e indicação se a atividade é ocasional ou profissional.
-- **Recomendado** — exportações CSV completas de todas as exchanges utilizadas (Binance, Coinbase, Kraken, Revolut, etc.), endereços de carteiras com histórico on-chain, datas e custos de aquisição de cada posição, registo de atividade de staking/lending/mineração, e estatuto RNH/IFICI quando aplicável.
-- **Ideal** — exportação completa de tracker de portefólio (ex.: CoinTracking, Koinly), histórico de interações com protocolos DeFi com datas, documentação de todos os períodos de detenção (prova da data de aquisição) e registos de eventuais airdrops de tokens.
+**Rewards.** Rewards in fiat are Category E income in the year received, 28% or aggregated (art. 5(2)(u), art. 72(1)(d)). Rewards in crypto are not taxed on receipt; the gain arises when they are sold (art. 5(11)). This skill takes their acquisition value as EUR 0.
 
-### Catálogo de Recusas
+**Business crypto (Category B).** If trading or mining is a business, use `pt-income-tax`. In the simplified regime, crypto operations use coefficient 0.15 and mining 0.95 (art. 31(1)(a) and (d)). The income counts when the crypto is sold (art. 31(17)). Stopping the activity or losing residence counts as a sale (art. 31(18)). The 365-day exclusion is a Category G rule and does not apply to Category B income.
 
-- **R-PTC-1 — Residência desconhecida** — Os residentes fiscais em Portugal são tributados em IRS sobre o rendimento mundial. Os não residentes apenas são tributados sobre rendimento de fonte portuguesa. Não é possível avançar sem confirmar o estatuto de residência fiscal.
-- **R-PTC-2 — Sem registos de operações ou prova de período de detenção** — A exclusão dos 365 dias é o benefício mais valioso da tributação cripto em Portugal. Sem prova das datas de aquisição, a AT pode recusar a exclusão. Não é possível avançar sem registos completos.
-- **R-PTC-3 — Detenção de criptoativos por pessoa coletiva** — As sociedades que detêm criptoativos estão sujeitas a IRC (Imposto sobre o Rendimento das Pessoas Coletivas) com regras distintas. Esta skill cobre apenas pessoas singulares (IRS). Escalar para contabilista certificado.
-- **R-PTC-4 — Disputas sobre classificação na Categoria B** — Saber se a atividade cripto constitui atividade profissional/empresarial (Categoria B) depende da regularidade, volume e intenção. A Categoria B sobrepõe-se às Categorias G e E. Escalar para profissional qualificado.
-- **R-PTC-5 — Tokens valores mobiliários** — Criptoativos qualificáveis como valores mobiliários têm tratamento fiscal distinto e não beneficiam da exclusão dos 365 dias. Escalar para classificação.
+## Deadlines and filing
 
-## Secção 3 — Tabelas de Taxas
+| What | When | Source |
+|---|---|---|
+| Modelo 3 for 2026, with Anexo G for taxable crypto gains | 1 April to 30 June 2027, online | CIRS art. 60(1): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx |
+| Payment of the balance | By 31 August 2027 when AT assesses within the normal period | CIRS art. 97(1)(a): https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs97.aspx |
+| Exit charge | Declared in the return for the year residence ends, with the year's other income | CIRS art. 10(25), art. 43(12) |
 
-### 3.1 Categoria G — Mais-valias (Curto Prazo, < 365 Dias)
+Excluded gains on crypto held 365 days or more are reported in the return's annex for excluded gains (Anexo G1). Rewards in fiat go in Anexo E, business crypto in Anexo B. Box numbers change between return versions; check the 2026 form.
 
-**Opções de taxa Categoria G**
+Keep, for each unit: acquisition date and price, custodian, sale date and price, and fees. The 365-day exclusion depends on proving the acquisition date.
 
-| Opção | Taxa | Quando é Vantajosa |
-| --- | --- | --- |
-| Taxa autónoma | **28%** | Por defeito — vantajosa quando o rendimento total ficaria num escalão marginal > 28% |
-| Taxa autónoma (jurisdição constante da lista) | **35%** | Se a contraparte estiver em jurisdição de tributação privilegiada (Portaria 150/2004) |
-| Englobamento (agregação com taxas progressivas) | **14,5%–53%** | Vantajoso quando o rendimento total anual (incluindo mais-valias cripto) < ~€23.000 |
+## Penalties and interest
 
-**Taxas Progressivas de IRS 2025 (para englobamento)**
+- **Late or missing return:** fine of EUR 150 to EUR 3,750 (RGIT art. 116(1)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit116.aspx
+- **Omissions or errors in the return** (for example an undeclared crypto gain) that are not fraud: fine of EUR 375 to EUR 22,500, cut to a quarter when no tax is due (RGIT art. 119(1) and (2)). Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx
+- **Compensatory interest** when the taxpayer's fault delays the assessment (LGT art. 35), and **late payment interest** from the due date (LGT art. 44). Rates: see `pt-irs-employees-investment`. Source: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx
 
-| Rendimento Coletável | Taxa |
-| --- | --- |
-| Até €7.703 | 14,5% |
-| €7.704 – €11.623 | 21% |
-| €11.624 – €16.472 | 26,5% |
-| €16.473 – €21.321 | 28,5% |
-| €21.322 – €27.146 | 35% |
-| €27.147 – €39.791 | 37% |
-| €39.792 – €51.997 | 43,5% |
-| €51.998 – €81.199 | 45% |
-| Superior a €81.199 | 48% (+ sobretaxa de solidariedade de 2,5% > €80.000 e 5% > €250.000 = efetiva até 53%) |
+## Cross-border points
 
-- **Citação** — Código do IRS, artigo 72.º, n.º 1, alínea d) (taxa de 28%); artigo 68.º (taxas progressivas); Lei n.º 24-D/2022 (disposições do OE 2023 sobre cripto).  _(Código do IRS, artigo 72.º, n.º 1, alínea d); artigo 68.º; Lei n.º 24-D/2022)_
+- **Exit charge.** Losing Portuguese residence is treated as a sale of crypto held as a capital asset (art. 10(25)). The income is the positive difference between market value on the date residence ends and acquisition value plus acquisition costs (art. 43(12)); the valuation rule also dates from Lei 24-D/2022 (then art. 43(10), renumbered n.º 12 by Lei 31/2024). Units held 365 days or more on that date stay excluded (art. 10(22)). The rule was added by Lei 24-D/2022 as art. 10(22); Decreto-Lei 97/2026 renumbered it n.º 25 and did not change it. Residence ends on the last day of presence (art. 16(4)), and a person who becomes resident again in the following year is resident for the whole year (art. 16(16)). See `pt-cross-border` for the residence rules. Worked example 2 shows the charge.
+- **Business crypto on exit.** For Category B crypto, losing residence counts as a sale (art. 31(18)(b)).
+- **Non-cooperative counterparties.** No 365-day exclusion and no swap deferral where the taxpayer or the payer is outside the EU/EEA and outside any treaty or exchange-of-information agreement (art. 10(24)). Art. 10(24) still refers to "n.os 19 e 20"; this skill reads that as the rules now in n.º 22 and 23.
+- **Foreign exchanges.** A foreign exchange withholds no Portuguese tax. The gain is taxed in Portugal; foreign tax credit, if any, is in `pt-foreign-source-treaties`.
+- **NHR and IFICI.** See `pt-nhr-ifici`.
 
-### 3.2 Categoria E — Rendimentos de Capitais (Staking, Lending)
+## Worked examples
 
-**Categoria E — Cenários e Taxas**
+### Example 1: gain on BTC held under 365 days, 28% or aggregation
 
-| Cenário | Taxa |
-| --- | --- |
-| Recompensas de staking / lending (pagas em fiat ou convertidas para fiat) | 28% (taxa liberatória ou taxa especial) |
-| Recompensas de staking / lending (recebidas em cripto, ainda não convertidas) | **Não imediatamente tributáveis** — tributadas a 28% no momento da conversão para fiat |
-| Rendimento proveniente de jurisdição de tributação privilegiada | 35% |
-| Opção pelo englobamento | Disponível — as taxas progressivas podem ser mais favoráveis |
+A resident bought 2 BTC at EUR 30,000 each on 1 February 2026, with EUR 200 of fees. She sold both on 1 October 2026 at EUR 50,000 each, with EUR 300 of fees. Held 8 months, so taxable. Her only other income is a salary of EUR 40,000, with 11% employee social security (EUR 4,400). Deductions from the tax are left out because they are the same either way.
 
-- **Nuance crítica** — Quando as recompensas de staking são recebidas na mesma cripto (ex.: staking de SOL com recompensas em SOL), não há tributação imediata. A tributação ocorre apenas quando as recompensas são convertidas para moeda fiat ou utilizadas em compras. Esta leitura é confirmada pela interpretação da Belim Tax Law Office das disposições do CIRS e pela orientação da AT.
-- **Citação** — CIRS artigo 5.º (rendimentos de capitais); artigo 71.º, n.º 1 (taxa liberatória 28%); artigo 72.º, n.º 1, alínea d) (taxa especial 28%).  _(CIRS artigo 5.º; artigo 71.º, n.º 1; artigo 72.º, n.º 1, alínea d))_
-
-### 3.3 Categoria B — Rendimentos Empresariais (Mineração, Trading Profissional)
-
-**Categoria B — Regimes**
-
-| Regime | Base Tributável | Taxa |
-| --- | --- | --- |
-| Regime simplificado (volume de negócios < €200.000) | 15% da receita bruta cripto é tratada como rendimento tributável (coeficiente 0,15 para vendas; 0,95 para serviços) | Taxas progressivas sobre o rendimento presumido |
-| Regime simplificado — mineração em específico | Campo 422 do Quadro 4-A do Anexo B | Taxas progressivas |
-| Contabilidade organizada | Lucro real = receita − despesas documentadas | Taxas progressivas 14,5%–53% |
-
-- **Nota** — No regime simplificado, apenas 15% das receitas de vendas de cripto é considerada tributável (dedução automática de 85%), o que resulta numa taxa efetiva muito baixa. Esta regra aplica-se, contudo, apenas a atividades genuinamente enquadráveis na Categoria B. Especificamente para mineração, o coeficiente é de 0,95 (campo 422), ou seja, 95% é tributável.
-- **Citação** — CIRS artigo 31.º (coeficientes do regime simplificado); artigo 28.º (âmbito da Categoria B).  _(CIRS artigo 31.º; artigo 28.º)_
-
-## Secção 4 — Métodos de Custo de Aquisição
-
-### 4.1 FIFO — Obrigatório
-
-**Métodos de custo de aquisição — estatuto**
-
-| Método | Estatuto |
-| --- | --- |
-| FIFO (First In, First Out) | **Obrigatório** — exigido pelos artigos 44.º e 48.º do CIRS para apuramento do valor de aquisição |
-| LIFO | Não permitido |
-| Custo médio | Não permitido |
-| Identificação específica | Não permitido |
-
-### 4.2 Componentes do Valor de Aquisição
-
-- **Valor de aquisição inclui** — Preço de compra em EUR (convertido à taxa de câmbio da data de aquisição); Comissões e encargos da exchange na aquisição; Taxas de rede/gas diretamente imputáveis à aquisição
-- **Valor de realização inclui** — Receita de venda em EUR (ou valor de mercado se a alienação for por contrapartida não-fiat)  _(artigo 44.º do CIRS)_
-- **Despesas dedutíveis** — Despesas e encargos necessários efetivamente suportados na aquisição e na alienação do criptoativo
-
-### 4.3 Permutas Cripto-por-Cripto — NÃO Tributáveis
-
-- **Permutas cripto-por-cripto** — Esta é uma diferença fundamental em relação à maioria das jurisdições da UE. Ao trocar uma cripto por outra (ex.: BTC → ETH): Não há facto tributário; O valor de aquisição do ativo original transita para o novo ativo; O período de detenção para efeitos da exclusão dos 365 dias reinicia-se na data da permuta (interpretação conservadora — a AT não emitiu orientação definitiva sobre a continuidade do período de detenção em permutas); O imposto só é desencadeado quando a cripto é definitivamente convertida para moeda fiat (EUR, USD, etc.) ou usada na aquisição de bens/serviços
-- **Pressuposto conservador quanto ao período de detenção** — Tratar cada permuta como nova aquisição para efeitos dos 365 dias. Sinalizar para revisão profissional sempre que a continuidade do período de detenção seja determinante para o resultado fiscal.
-
-## Secção 5 — DeFi, Staking, Mineração e Airdrops
-
-### 5.1 Staking e Lending
-
-**Staking e Lending — tipos e tratamento**
-
-| Tipo | Categoria | Tratamento |
-| --- | --- | --- |
-| Recompensas de staking recebidas na mesma cripto | Categoria E | **Não imediatamente tributáveis** — tributadas a 28% apenas na conversão para fiat |
-| Recompensas de staking recebidas em fiat | Categoria E | Tributáveis a 28% (ou taxas progressivas via englobamento) no ano de recebimento |
-| Juros de lending recebidos em fiat | Categoria E | Tributáveis a 28% no ano de recebimento |
-| Juros de lending recebidos em cripto | Categoria E | Não imediatamente tributáveis — tributados na conversão para fiat |
-| Staking/validação como atividade regular | Categoria B | Taxas progressivas (sobrepõe-se à Categoria E) |
-
-### 5.2 Mineração
-
-**Mineração — cenários e categoria**
-
-| Cenário | Categoria | Tratamento |
-| --- | --- | --- |
-| Mineração ocasional (hobby) | Provável Categoria E | 28% na conversão para fiat |
-| Mineração habitual (infraestrutura dedicada) | Categoria B | Taxas progressivas 14,5%–53%, declarada no Anexo B |
-| Mineração especificamente | Categoria B, campo 422 | Coeficiente 0,95 no regime simplificado |
-
-- **Sobreposição de categorias** — A Categoria B sobrepõe-se à Categoria E quando a atividade é habitual. Nos termos do CIRS, havendo padrão profissional/empresarial estabelecido, este prevalece.
-
-### 5.3 Airdrops
-
-**Airdrops — tipos e tratamento**
-
-| Tipo | Tratamento |
-| --- | --- |
-| Airdrop gratuito (sem ação exigida) | Não imediatamente tributável; valor de aquisição = €0; tributado na alienação |
-| Airdrop em contrapartida de serviço prestado | Categoria B ou Categoria E consoante o contexto |
-| Airdrop recebido por operador empresarial | Rendimento de Categoria B |
-
-### 5.4 Protocolos DeFi
-
-**Protocolos DeFi — atividades e tratamento**
-
-| Atividade | Tratamento |
-| --- | --- |
-| Fornecer liquidez a pools DEX | Adicionar cripto ao pool — não é facto tributário (lógica cripto-por-cripto); o LP token recebido herda o valor de aquisição dos ativos depositados |
-| Recompensas de yield farming em cripto | Categoria E — não imediatamente tributáveis até conversão para fiat |
-| Impermanent loss | Não é facto tributário reconhecido (a perda só é reconhecida na efetiva alienação para fiat) |
-| Recompensas em governance tokens | Valor de aquisição = €0 (gratuitos); tributados na alienação para fiat após análise do período de detenção |
-
-### 5.5 Hard Forks
-
-- **Hard Forks — tratamento conservador** — Sem orientação específica da AT. Tratamento conservador: Valor de aquisição da moeda original: inalterado; Valor de aquisição da moeda resultante do fork: €0; Período de detenção de 365 dias para a moeda resultante: inicia-se na data do fork; Tributação desencadeada na alienação para fiat
-
-## Secção 6 — Tratamento de NFT
-
-- **Exclusão de NFT** — Os NFT estão expressamente excluídos do regime de tributação de criptoativos em Portugal.
-
-**Tratamento de NFT**
-
-| Regra | Detalhe |
-| --- | --- |
-| Base legal | Lei n.º 24-D/2022 (OE 2023) — os NFT ("tokens não fungíveis") são classificados como ativos digitais únicos e excluídos das regras fiscais dos criptoativos |
-| Mais-valias na venda de NFT | Atualmente NÃO tributáveis para pessoas singulares (inexistência de norma específica) |
-| Criação e venda de NFT | Pode constituir rendimento empresarial de Categoria B se for habitual (atividade criativa/artística) |
-| Royalties de NFT | Potencialmente Categoria B ou Categoria E consoante a regularidade |
-| NFT como valores mobiliários | Se o NFT representar um valor mobiliário (instrumento financeiro), cai no regime dos valores mobiliários e não no regime dos criptoativos |
-
-A exclusão dos NFT é um dos aspetos mais favoráveis da tributação cripto em Portugal. Contudo, a AT ou futura legislação podem alterar este tratamento. Monitorizar anualmente as atualizações do OE (Orçamento do Estado).
-
-## Secção 7 — Obrigações Declarativas
-
-### 7.1 Modelo 3 — Declaração Anual de IRS
-
-**Modelo 3 — Anexos**
-
-| Anexo | Conteúdo | Quando Usar |
-| --- | --- | --- |
-| **Anexo G** (Quadro 18) | Mais-valias tributáveis — cripto detido < 365 dias | Quando alienou cripto detido < 365 dias com ganho (ou perda) |
-| **Anexo G** (Quadro 18A) | Mais-valias em que a contraparte se situa em jurisdição extra-UE/EEE sem convenção fiscal | Situações específicas de contraparte estrangeira |
-| **Anexo G1** (Quadro 7) | Mais-valias isentas — cripto detido ≥ 365 dias | **Obrigatório ainda que isento** — tem de ser declarado para efeitos de controlo pela AT |
-| **Anexo E** | Rendimentos de capitais da Categoria E (staking, lending) | Quando recompensas de staking/lending foram recebidas ou convertidas para fiat |
-| **Anexo B** (Quadro 4-A) | Rendimentos empresariais da Categoria B (mineração, trading profissional) | Campo 419: trading/serviços cripto; campo 422: mineração |
-| **Anexo B** (Quadro 13G) | Informação suplementar sobre atividade cripto | Obrigatório quando se entrega Anexo B para atividade cripto |
-
-### 7.2 Detalhes de Submissão
-
-**Detalhes de Submissão**
-
-| Item | Detalhe |
-| --- | --- |
-| Prazo de entrega | 1 de abril – 30 de junho do ano seguinte |
-| Prazo de pagamento | 31 de agosto do ano seguinte |
-| Plataforma | Portal das Finanças (portaldasfinancas.gov.pt) |
-| Declaração obrigatória | Mesmo que os ganhos sejam isentos (≥ 365 dias), devem ser declarados no Anexo G1 |
-
-### 7.3 Reporte por Exchanges
-
-- **Reporte por Exchanges** — Os prestadores de serviços de criptoativos registados em Portugal estão obrigados a reportar à AT todas as operações dos clientes até 31 de janeiro do ano seguinte. A DAC8 alargará este reporte a plataformas em toda a UE a partir de 2026.
-
-### 7.4 Conservação de Registos
-
-**Conservação de Registos**
-
-| Exigência | Detalhe |
-| --- | --- |
-| Período de conservação | 4 anos a contar do final do ano fiscal relevante (artigo 128.º do CIRS) — alargado para 12 anos se a AT abrir investigação |
-| Registos a manter | Logs de operações com datas (crítico para prova dos 365 dias), registos do valor de aquisição, livro FIFO, logs de staking/mineração, endereços de carteiras |
-| Prova do período de detenção | **Essencial** — a documentação da data de aquisição é o registo mais importante para invocar a exclusão dos 365 dias |
-| Formato | Exportações CSV das exchanges, registos de blockchain explorers, dados de trackers de portefólio |
-
-## Secção 8 — Compensação de Perdas e Reporte
-
-### 8.1 Perdas da Categoria G (Curto Prazo)
-
-**Perdas Categoria G**
-
-| Regra | Detalhe |
-| --- | --- |
-| Compensação no mesmo ano | Menos-valias cripto (< 365 dias) podem compensar mais-valias cripto (< 365 dias) dentro da Categoria G |
-| Compensação entre categorias | As perdas da Categoria G NÃO podem compensar rendimentos das Categorias E ou B |
-| Reporte para anos seguintes | As menos-valias da Categoria G podem ser reportadas durante **5 anos** (artigo 55.º do CIRS) |
-| Exigência de englobamento | Para reportar perdas é OBRIGATÓRIO optar pelo englobamento no ano da perda e nos anos subsequentes |
-
-### 8.2 Perdas da Categoria E
-
-- **Perdas Categoria E** — Os rendimentos da Categoria E (staking/lending) não geram perdas no sentido tradicional — são tributados no momento do recebimento. Não existe reporte de perdas.
-
-### 8.3 Perdas da Categoria B
-
-**Perdas Categoria B**
-
-| Regra | Detalhe |
-| --- | --- |
-| Compensação no mesmo ano | As perdas da Categoria B podem compensar rendimentos da Categoria B |
-| Reporte para anos seguintes | **12 anos** nos termos do artigo 55.º, n.º 1, alínea a), do CIRS |
-| Compensação entre categorias | Não podem compensar outras categorias |
-
-### 8.4 Limitação por Jurisdições de Tributação Privilegiada
-
-- **Limitação por jurisdição privilegiada** — Se a contraparte se situar em jurisdição de tributação privilegiada (Portaria 150/2004), a taxa é de 35% e as regras de compensação de perdas podem ser restringidas.  _(Portaria 150/2004)_
-
-## Secção 9 — Normas Antiabuso
-
-### 9.1 Cláusula Geral Antiabuso
-
-- **Cláusula geral antiabuso** — O artigo 38.º, n.º 2, da Lei Geral Tributária (LGT) consagra uma cláusula geral antiabuso. A AT pode desconsiderar montagens que sejam: Total ou parcialmente artificiais; Estruturadas com a finalidade essencial de obter vantagem fiscal; Contrárias à finalidade da legislação  _(artigo 38.º, n.º 2, da LGT)_
-
-### 9.2 Normas Antiabuso Específicas Para Cripto
-
-**Normas Antiabuso Específicas Para Cripto**
-
-| Medida | Detalhe |
-| --- | --- |
-| Tributação à saída | Quando se perde a residência fiscal portuguesa, os ganhos cripto não realizados consideram-se alienados ao valor de mercado à data da saída — potencialmente tributáveis (artigo 10.º, n.º 22, do CIRS) |
-| Agravamento por paraísos fiscais | Rendimentos provenientes de / transações com entidades em jurisdições de tributação privilegiada: taxa de 35% (artigo 72.º, n.º 17, do CIRS) |
-| Preços de transferência | Operações entre partes relacionadas valorizadas em condições de plena concorrência (artigo 43.º, n.º 9, do CIRS, por remissão para o artigo 63.º, n.º 4, do CIRC) |
-| Reporte por exchanges | As plataformas portuguesas reportam dados de clientes à AT desde 2024; DAC8 a partir de 2026 |
-| Coimas | Falta de declaração: coimas de €375 a €22.500 (consoante a intenção e o montante); fraude fiscal: responsabilidade criminal |
-
-### 9.3 Regimes RNH / IFICI e Cripto
-
-- **RNH/IFICI e cripto** — Para tratamento RNH/IFICI dos rendimentos cripto estrangeiros ver skill pt-nhr-ifici.
-
-## Secção 10 — Exemplos Práticos
-
-### Exemplo 1 — Ganho de Curto Prazo (< 365 Dias)
-
-**Input:** Residente fiscal em Portugal. Comprou 2 BTC a €30.000 cada em 1 de março de 2025. Vendeu 2 BTC a €50.000 cada em 1 de novembro de 2025 (8 meses de detenção — < 365 dias). Comissões de exchange: €200 totais na aquisição, €300 na alienação. Rendimento anual de trabalho dependente: €40.000.
-
-**Cálculo:**
-```
-Valor de realização:   2 × €50.000 = €100.000
-Menos comissões:                    −€300
-Realização líquida:                  €99.700
-
-Custo de aquisição:    2 × €30.000 = €60.000
-Mais comissões aq.:                 +€200
-Custo total:                         €60.200
-
-Mais-valia:            €99.700 − €60.200 = €39.500
-
-Opção A — Taxa autónoma de 28%:
-  €39.500 × 28% = €11.060
-
-Opção B — Englobamento:
-  Rendimento total: €40.000 (salário) + €39.500 (cripto) = €79.500
-  Taxa marginal a €79.500 ≈ 45%
-  Englobamento é MAIS caro → Escolher taxa autónoma.
-
-Imposto: €11.060 (taxa autónoma preferida)
-Declarado em: Anexo G, Quadro 18
+1. Gain: (100,000 - 300) - (60,000 + 200) = EUR 39,500.
+2. Option A, 28%: 39,500 x 28% = EUR 11,060.
+3. Option B, aggregate: salary less the specific deduction of EUR 4,587.09 (higher than her EUR 4,400 social security) gives EUR 35,412.91. Tax on salary alone: 29,397 x 20.579% + (35,412.91 - 29,397) x 34.90% = EUR 8,149.16. With the gain, taxable income is EUR 74,912.91 (band 8). Tax: 46,566 x 26.472% + (74,912.91 - 46,566) x 44.60% = EUR 24,969.67. Extra tax from the gain: EUR 16,820.51. No solidarity surcharge (under EUR 80,000).
+4. The 28% rate is cheaper by EUR 5,760.51. She declares the gain in Anexo G at 28%.
+
+```oa-check
+name: PT crypto gain held under 365 days, 28% vs aggregation (2026)
+inputs:
+  proceeds: 100000
+  sale_fees: 300
+  cost: 60000
+  buy_fees: 200
+  salary: 40000
+  ias: 537.13
+steps:
+  - gain: proceeds - sale_fees - (cost + buy_fees)
+  - autonomous_tax: gain * 0.28
+  - specific_deduction: round(max(8.54 * ias, salary * 0.11), 2)
+  - cat_a: salary - specific_deduction
+  - tax_salary_only: round(29397 * 0.20579 + (cat_a - 29397) * 0.349, 2)
+  - aggregated: cat_a + gain
+  - tax_aggregated: round(46566 * 0.26472 + (aggregated - 46566) * 0.446, 2)
+  - extra_if_aggregated: tax_aggregated - tax_salary_only
+  - saving_at_28: extra_if_aggregated - autonomous_tax
+expected:
+  gain: 39500
+  autonomous_tax: 11060
+  cat_a: 35412.91
+  tax_salary_only: 8149.16
+  tax_aggregated: 24969.67
+  extra_if_aggregated: 16820.51
+  saving_at_28: 5760.51
 ```
 
-### Exemplo 2 — Ganho de Longo Prazo (≥ 365 Dias) — Isento
+### Example 2: leaving Portugal with crypto, the exit charge
 
-**Input:** Residente fiscal em Portugal. Comprou 5 ETH a €1.500 cada em 15 de janeiro de 2024. Vendeu 5 ETH a €4.000 cada em 20 de fevereiro de 2025 (401 dias de detenção — ≥ 365 dias). Comissões de exchange: €100 totais.
+A resident stops being resident on 30 September 2026. On that date he holds, at one EU exchange:
 
-**Cálculo:**
+- 1 BTC bought on 1 June 2026 for EUR 60,000 plus EUR 100 of fees (121 days), market value EUR 70,000;
+- 10 ETH bought on 1 March 2024 for EUR 20,000 (over 365 days), market value EUR 30,000.
+
+He sells nothing. He has no other Category G income in 2026.
+
+1. Loss of residence is treated as a sale (art. 10(25)).
+2. BTC: 70,000 - 60,000 - 100 = EUR 9,900, held under 365 days, so taxable (art. 43(12)).
+3. ETH: gain of EUR 10,000, held over 365 days, so excluded (art. 10(22)).
+4. Tax at 28%: 9,900 x 28% = EUR 2,772, declared in his 2026 return (Anexo G). He may opt to aggregate instead (art. 72(13)) and should test it as in example 1: if the EUR 9,900 were his only 2026 income, the bands would give 8,342 x 12.50% + 1,558 x 15.70% = EUR 1,287.36 before deductions from the tax, far below EUR 2,772.
+5. If he becomes resident again in 2027, he is treated as resident for the whole of 2026 (art. 16(16)). Ask about plans to return before filing.
+
+```oa-check
+name: PT crypto exit charge on loss of residence, BTC under 365 days, ETH excluded (2026)
+inputs:
+  btc_market_value: 70000
+  btc_cost: 60000
+  btc_fees: 100
+  eth_market_value: 30000
+  eth_cost: 20000
+  eth_excluded: 1
+steps:
+  - btc_gain: btc_market_value - btc_cost - btc_fees
+  - eth_gain: eth_market_value - eth_cost
+  - taxable_gain: btc_gain + eth_gain * (1 - eth_excluded)
+  - exit_tax: taxable_gain * 0.28
+expected:
+  btc_gain: 9900
+  eth_gain: 10000
+  taxable_gain: 9900
+  exit_tax: 2772
 ```
-Mais-valia:  (5 × €4.000) − (5 × €1.500) − €100 = €12.400
 
-Período de detenção: 401 dias ≥ 365 → ISENTO
+## Ask the client first
 
-Imposto: €0
-Declarado em: Anexo G1, Quadro 7 (declaração obrigatória
-  ainda que isento)
-```
+1. Were you resident in Portugal for all of 2026, and do you plan to leave or have you left? (Worldwide tax, exit charge, split year.)
+2. For every sale, swap or payment with crypto: dates bought and sold, prices in euros, fees, and the exchange or wallet. (FIFO per custodian and the 365-day test.)
+3. Did you receive staking, lending or other rewards, in fiat or in crypto? (Category E in the year, or a gain on later sale.)
+4. Do you trade or mine regularly, with dedicated equipment or as your living? (Category B and `pt-income-tax`.)
+5. Are any exchanges or counterparties outside the EU/EEA, in a country with no tax treaty with Portugal, or in a listed low-tax jurisdiction? (Art. 10(24) and art. 43(7).)
+6. What is your other income in 2026? (Whether aggregation beats 28%.)
 
-### Exemplo 3 — Recompensas de Staking (Categoria E)
+## Sources
 
-**Input:** Residente fiscal em Portugal. Fez staking de SOL numa exchange registada em Portugal ao longo de 2025. Recebeu 50 SOL em recompensas de staking. 30 SOL foram convertidos para EUR a €150 cada (= €4.500). 20 SOL permanecem na carteira de staking (não convertidos).
+| Source | URL | Read on |
+|---|---|---|
+| CIRS art. 10, crypto gains, n.º 20 to 25 (wording of DL 97/2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs10.aspx | 2026-10-23 |
+| Decreto-Lei 97/2026, art. 5 (CIRS art. 10(25) "[Anterior n.º 22.]", art. 43(12)) and art. 18(2) (effect from 1 January 2026), AT's copy of the Diário da República text | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/decreto-lei-97-2026.pdf | 2026-10-23 |
+| CIRS art. 43, wording in force until May 2026 (exit valuation as n.º 12, referring to art. 10(22)) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs43ra_202605.aspx | 2026-10-23 |
+| CIRS art. 10, wording in force until May 2026 (exit rule as n.º 22, from Lei 24-D/2022) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/ra/Pages/irs10ra_202605.aspx | 2026-10-23 |
+| CIRS art. 5, crypto remuneration (n.º 2 u) and n.º 11) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs5.aspx | 2026-10-23 |
+| CIRS art. 16, residence | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs16.aspx | 2026-10-23 |
+| CIRS art. 22, aggregation | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs22.aspx | 2026-10-23 |
+| CIRS art. 31, coefficients 0.15 and 0.95, n.º 17 and 18 | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-23 |
+| CIRS art. 43, FIFO, low-tax losses, exit value | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs43.aspx | 2026-10-23 |
+| CIRS art. 55, losses | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs55.aspx | 2026-10-23 |
+| CIRS art. 60 and 97, filing and payment | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs60.aspx | 2026-10-23 |
+| CIRS art. 68, IRS bands 2026 (wording of Lei 73-A/2025) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68.aspx | 2026-10-23 |
+| CIRS art. 68-A, solidarity surcharge | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs68a.aspx | 2026-10-23 |
+| CIRS art. 72, 28% rate, aggregation option, 35% list | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs72.aspx | 2026-10-23 |
+| CIRS art. 101-B(5), no withholding on crypto remuneration | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs101b.aspx | 2026-10-23 |
+| CIRS art. 25, specific deduction (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs25.aspx | 2026-10-23 |
+| RGIT art. 116 and 119, fines | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit119.aspx | 2026-10-23 |
+| LGT art. 35 and 44, interest | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/lgt/Pages/lgt35.aspx | 2026-10-23 |
+| Portaria 480-A/2025/1, art. 2, IAS 2026 EUR 537.13 (example 1) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-23 |
 
-**Cálculo:**
-```
-Porção convertida:   30 SOL × €150 = €4.500
-  Imposto: €4.500 × 28% = €1.260 (taxa liberatória,
-  retida pela exchange portuguesa)
+Not yet confirmed: the acquisition value of crypto received as a reward (this skill assumes EUR 0); whether a swap restarts the 365-day period (no AT guidance read); how occasional mining outside a business is taxed; how NFT sales are taxed once excluded from the crypto definition; the Anexo G, G1, E and B box numbers for 2026; that art. 10(24), which still cites "n.os 19 e 20", is read as n.º 22 and 23; DAC8 and Portuguese exchange reporting dates.
 
-Porção não convertida: 20 SOL — NÃO imediatamente tributável
-  (recompensas recebidas na mesma cripto, ainda não convertidas para fiat)
-  Valor de aquisição destes 20 SOL = €0 para futura alienação
-  Período de detenção de 365 dias inicia-se na data de receção
-
-Imposto total para 2025: €1.260
-Declarado em: Anexo E (para a porção convertida)
-```
-
-## Auto-verificações
-
-Antes de entregar qualquer cálculo de imposto cripto em Portugal, confirmar:
-
-- [ ] Residência confirmada — residente fiscal em Portugal (mundial) ou não residente?
-- [ ] Período de detenção calculado para cada alienação — é ≥ ou < 365 dias?
-- [ ] FIFO aplicado por tipo de moeda em todas as exchanges e carteiras
-- [ ] Permutas cripto-por-cripto tratadas como não tributáveis (valor de aquisição transita)
-- [ ] NFT corretamente excluídos do regime de criptoativos
-- [ ] Recompensas de staking em cripto: não imediatamente tributáveis (apenas na conversão para fiat)
-- [ ] Indicadores de Categoria B avaliados — atividade ocasional ou profissional?
-- [ ] Comparação englobamento vs. taxa autónoma efetuada
-- [ ] Mais-valias isentas (≥ 365 dias) ainda assim declaradas no Anexo G1
-- [ ] Estatuto RNH/IFICI verificado — habitualmente irrelevante para cripto (ver skill pt-nhr-ifici)
-- [ ] Risco de contraparte em jurisdição de tributação privilegiada avaliado (taxa de 35%)
-- [ ] Output marcado como estimativa — sinalizado para revisão profissional
-
-## PROIBIÇÕES
-
-- NUNCA assumir que Portugal continua a ser um paraíso fiscal cripto — os ganhos são tributáveis desde 1 de janeiro de 2023
-- NUNCA aplicar imposto a cripto detida há ≥ 365 dias (salvo trading profissional ou tokens valores mobiliários)
-- NUNCA tratar permutas cripto-por-cripto como facto tributário — NÃO são tributáveis em Portugal
-- NUNCA esquecer de declarar ganhos isentos no Anexo G1 — a omissão pode gerar coimas
-- NUNCA assumir que recompensas de staking em cripto são imediatamente tributáveis — só são tributadas na conversão para fiat
-- NUNCA classificar rendimentos de NFT no regime de criptoativos — os NFT estão expressamente excluídos
-- NUNCA ignorar a questão do reinício do período de detenção em permutas cripto-por-cripto — usar o pressuposto conservador
-- NUNCA apresentar posições fiscais cripto como definitivas — etiquetar sempre como estimativa e sinalizar para revisão profissional
-- NUNCA ignorar o risco de tributação à saída para pessoas singulares que percam a residência fiscal portuguesa
-- NUNCA calcular mais-valias sem datas de aquisição verificadas — a exclusão dos 365 dias depende de período de detenção comprovável
-
-## Aviso Legal
-
-Esta skill e os seus outputs são disponibilizados apenas para fins informativos e de cálculo, não constituindo aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores declinam qualquer responsabilidade por erros, omissões ou consequências decorrentes do uso desta skill. Todos os outputs devem ser revistos e validados por profissional qualificado (contabilista certificado, advogado tributarista ou revisor oficial de contas em Portugal) antes da submissão ou de qualquer atuação com base nos mesmos.
-
-A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Inicie sessão para aceder à versão mais recente, solicitar revisão profissional por contabilista licenciado e acompanhar atualizações à medida que a legislação fiscal evolui.
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
