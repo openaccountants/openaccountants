@@ -16,7 +16,7 @@ Calendar income year, named after the following assessment year (income 2026 is 
 |---|---|---|
 | IT-IND, individual income tax | be-employee-income-tax (employees and pensioners), be-income-tax (self-employed, income 2026), be-capital-gains, belgium-crypto-tax (income 2026 scale for professional crypto) | source-cited draft |
 | IT-CORP, corporate income tax | be-corporate-tax | source-cited draft |
-| VAT | belgium-vat-return (tax year 2026: rates, small-business exemption EUR 25,000, monthly or quarterly returns, deadlines, refunds, B2B e-invoicing, penalties); be-vat-return points to it | source-cited draft |
+| VAT | belgium-vat-return (tax year 2026 law layer: rates, small-business exemption EUR 25,000, monthly or quarterly returns, deadlines, refunds, B2B e-invoicing, penalties); be-vat-return (tax year 2026 return preparation: grid map, construction and other reverse charges, Intervat, client and intra-EU listings, e-invoicing and listing fines, 8% interest) | source-cited draft |
 | SC, social contributions | be-social-contributions (self-employed, 2026 RSVZ amounts); employee and employer ONSS / RSZ in belgium-payroll | source-cited draft |
 | PR, payroll withholding | be-payroll-withholding (2026 Annex III key formula, January to October and from 1 November 2026, family reductions, holiday pay and bonus rates, return and payment dates); belgium-payroll (2026 RSZ rates, work bonus and reductions) | source-cited draft |
 | TP, transfer pricing | be-transfer-pricing | source-cited draft |
