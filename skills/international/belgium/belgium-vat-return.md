@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.2
+# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.3
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
