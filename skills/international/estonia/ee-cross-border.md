@@ -5,8 +5,8 @@ jurisdiction: EE
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.1
+last_updated: 2026-10-24
+version: 0.2
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
@@ -51,7 +51,7 @@ This skill links to its siblings instead of repeating them:
 | Withholding on service fees to a company in an EU-listed non-cooperative jurisdiction, wherever the service was performed | 22% | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 29(3), § 41 p 11, § 43(1) p 1) |
 | Interest paid to a non-resident | Not taxed, except interest from a fund over 50% invested in Estonian real estate with a holding of at least 10%: 22% | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 29(7)); https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian |
 | Dividends paid to a non-resident (company or individual) | No withholding; the company pays 22/78 on distribution | 2026 | https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian |
-| Dividends to an individual paid out of profit taxed at 14/86 before 2025 | 7% withheld | 2026 | https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates |
+| Dividend a company received (exempt under TuMS § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, passed on to an individual. Not the company's own pre-2025 profit, which is taxed at 22/78 | 7% withheld (TuMS § 61(68)) | 2026 | https://www.riigiteataja.ee/akt/TuMS |
 | Non-resident's gain on Estonian immovable property, Estonian-registered movables, or a 10%+ holding in an entity more than 50% in Estonian real estate | 22% of the gain | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 29(4)); https://www.emta.ee/en/business-client/registration-business/non-residents-e-residents/taxation-non-residents-estonian |
 | Royalty exemption, EU or Swiss associated company | 0% if 25% held for two years or more (direct either way, or common parent); arm's-length part only | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 31(4), (5)) |
 | Participation exemption on dividends received and passed on | Holding of at least 10% in the paying company | 2026 | https://www.riigiteataja.ee/akt/TuMS (§ 50(1^1)) |
