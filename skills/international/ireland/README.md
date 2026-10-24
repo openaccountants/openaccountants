@@ -19,7 +19,7 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 | IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | source-cited draft |
 | VAT | ie-vat-return (rates incl. the 9% hospitality rate from 1 July 2026, thresholds, VAT3, RTD, cash basis, reverse charge, RCT, VIES, penalties); ireland-vat-return (older duplicate of the same content, to be merged) | source-cited draft |
 | SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | source-cited draft |
-| PR, payroll withholding | ie-payroll | source-cited draft |
+| PR, payroll withholding | ie-payroll (PAYE under the RPN, USC, PRSI Class A for both 2026 periods, BIK, minimum wage, auto-enrolment from 1 January 2026, submissions, 14th/23rd payment, penalties) | source-cited draft |
 | TP, transfer pricing | ie-transfer-pricing | source-cited draft |
 | XB, cross-border | ie-cross-border, ie-non-dom, ie-foreign-tax-and-withholding | source-cited draft |
 
