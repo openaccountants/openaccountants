@@ -30,7 +30,7 @@ Sibling skills, which this one links to and does not repeat:
 
 **Self-employed workers.** A person who carries on a profession or business on their own account is covered by the self-employed regime (Code art. 132 and following). This includes recibos verdes freelancers, empresários em nome individual and EIRL holders, and their spouses or partners who work with them regularly.
 
-**Not covered** (Code art. 139 and the ISS guide): lawyers and solicitadores in their own pension fund; people temporarily working in Portugal who already have compulsory cover elsewhere for invalidity, old age and death (they must ask for exclusion, form RV 1025); small farmers producing mainly for own use with yearly income up to 4 x IAS (EUR 2,148.52, form RV 1027); Category B income only from small renewable power production or from rent and local lodging (alojamento local) in a house or flat. A person who works for the same entity, or the same group, both as employee or MOE and as a freelancer is treated as an employee for that work; the employee or MOE rates apply to the fees.
+**Not covered** (Code art. 139 and the ISS Guia Prático): lawyers and solicitadores in their own pension fund; people temporarily working in Portugal who already have compulsory cover elsewhere for invalidity, old age and death (they must ask for exclusion, form RV 1025); small farmers producing mainly for own use with yearly income up to 4 x IAS (EUR 2,148.52, form RV 1027); farmers whose only such income is Common Agricultural Policy subsidies below 4 x IAS a year; owners of local and coastal fishing boats who work as crew, marine harvesters and shore fishers (they have their own regime, Code art. 97 to 99); Category B income only from small renewable power production or from rent and local lodging (alojamento local) in a house or flat. A person who works for the same entity, or the same group, both as employee or MOE and as a freelancer is treated as an employee for that work; the employee or MOE rates apply to the fees.
 
 **When cover starts.** The AT tells Segurança Social when someone opens activity. The person is registered automatically. For a first-ever start, cover takes effect on the first day of the 12th month after the month activity started (Code art. 145(1)). Activity started in January 2026 means contributions from 1 January 2027. If activity stops during those 12 months, the count is suspended and resumes on restart within 12 months (art. 145(4)). On a restart after an earlier period of activity, cover takes effect on the first day of the month of restart (art. 145(3)). A person may ask to start earlier through a quarterly declaration; cover then starts on the first day of that declaration month and the EUR 20 minimum applies until the first declared base.
 
@@ -41,7 +41,7 @@ Sibling skills, which this one links to and does not repeat:
 - for a person receiving an occupational-risk pension with incapacity of 70% or more;
 - from January, for a person who in the previous year only paid the EUR 20 minimum (art. 157(1)(d) with 163(2)), while that stays true.
 
-Exemption is automatic when Segurança Social already knows the facts; otherwise the person files form RC 3001 and it starts the month after the request (art. 157(2), ISS guide).
+Exemption is automatic when Segurança Social already knows the facts; otherwise the person files form RC 3001 and it starts the month after the request (art. 157(2), ISS Guia Prático).
 
 **Employees and companies.** Employers pay contributions on pay under the general regime (art. 53). Members of corporate bodies (membros dos órgãos estatutários, MOE) such as gerentes and directors are covered by Code art. 61 and following. Unpaid MOE of for-profit companies are excluded if they have other compulsory cover with pay above 1 x IAS, or are invalidity or old-age pensioners (art. 64). The payroll run is in `portugal-payroll`.
 
@@ -56,9 +56,9 @@ Exemption is automatic when Segurança Social already knows the facts; otherwise
 | Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4) |
 | Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a) |
 | Relevant income: goods, and hotel, restaurant and drinks services declared as such | 20% | 2026 | Code art. 162(1)(b) and (2) |
-| Relevant income with organised accounts | prior-year taxable profit; monthly base = 1/12, minimum 1.5 x IAS (EUR 805.70) | 2026 | Code art. 162(3), 163(3); ISS guide |
+| Relevant income with organised accounts | prior-year taxable profit; monthly base = 1/12, minimum 1.5 x IAS (EUR 805.70) | 2026 | Code art. 162(3), 163(3); ISS Guia Prático |
 | Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1) |
-| Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2); ISS guide (2026 edition) |
+| Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2); ISS Guia Prático (2026 edition) |
 | Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5) |
 | Exemption with employment | monthly average relevant income below 4 x IAS = EUR 2,148.52; above it, base = excess | 2026 | Code art. 157(1)(a), 163(4) |
 | Option on the base | up to 25% above or below, in 5% steps | 2026 | Code art. 164(1)-(2) |
@@ -83,31 +83,31 @@ Monthly base = relevant income / 3. It applies to the declaration month and the 
 
 Then, in this order:
 
-1. If the worker is in the employment exemption and the monthly average is at or above 4 x IAS, the base is the excess over EUR 2,148.52 (art. 163(4)). The ISS guide says a resulting contribution below EUR 5 is ignored.
-2. The worker may move the base up or down by up to 25% in 5% steps when declaring (art. 164). The ISS guide says the option does not apply to the excess base of a worker with employment.
+1. If the worker is in the employment exemption and the monthly average is at or above 4 x IAS, the base is the excess over EUR 2,148.52 (art. 163(4)). The ISS Guia Prático says a resulting contribution below EUR 5 is ignored.
+2. The worker may move the base up or down by up to 25% in 5% steps when declaring (art. 164(1)-(2)). The option does not apply to the excess base of a worker with employment (art. 163(4)).
 3. The base is capped at EUR 6,445.56 (art. 163(5)).
 4. Contribution = base x 21.4% (25.2% for an ENI or EIRL holder). If there is no income, or the result is under EUR 20, the contribution is EUR 20 (art. 163(2)).
 
-**Income left out.** Unless the worker chooses to include them, relevant income excludes investment grants and subsidies, capital gains, and income from intellectual or industrial property. Income from small renewable power production and from rent or local lodging in a house or flat never counts (art. 162(4) and the ISS guide).
+**Income left out.** Unless the worker chooses to include them, relevant income excludes investment grants and subsidies, capital gains, and income from intellectual or industrial property. Income from small renewable power production and from rent or local lodging in a house or flat never counts (art. 162(4) and the ISS Guia Prático).
 
-**Organised accounts.** Relevant income is the prior-year taxable profit declared on Anexo SS of the IRS Modelo 3 (art. 162(3)). The monthly base is 1/12 of it, at least 1.5 x IAS (EUR 805.70). Segurança Social sets it in October for the next calendar year (art. 163(3)). These workers file no quarterly declaration. After the October notice they may ask to move to the quarterly regime, from January (art. 164(3)); the ISS guide gives 1 to 30 November as the window.
+**Organised accounts.** Relevant income is the prior-year taxable profit declared on Anexo SS of the IRS Modelo 3 (art. 162(3)). The monthly base is 1/12 of it, at least 1.5 x IAS (EUR 805.70). Segurança Social sets it in October for the next calendar year (art. 163(3)). These workers file no quarterly declaration. After the October notice they may ask to move to the quarterly regime, from January (art. 164(3)); the ISS Guia Prático gives 1 to 30 November as the window.
 
-**Spouses and partners** of a self-employed worker pay on 70% of that worker's relevant income, adjustable from 20% lower up to the full amount, with the same EUR 20 minimum and 12 x IAS ceiling (art. 166, ISS guide).
+**Spouses and partners** of a self-employed worker pay on 70% of that worker's relevant income, adjustable from 20% lower up to the full amount, with the same EUR 20 minimum and 12 x IAS ceiling (art. 166, ISS Guia Prático).
 
-**Annual review.** In January the worker confirms or corrects the previous year's declared income (art. 151-A(5)). Segurança Social also compares the year with AT data. A difference over EUR 20 is charged in January of the following year (art. 164-A, ISS guide). For 2025 income the ISS guide gives 20 February 2026 as the date for any extra payment; after that, interest runs. Overpayments are credited to future contributions, or refunded on form RC 3041.
+**Annual review.** In January the worker confirms or corrects the previous year's declared income (art. 151-A(5)). Segurança Social also reviews the year against AT data and notifies the worker of any difference (art. 164-A(1)). A difference over EUR 20 is charged in January of the following year (ISS Guia Prático), and contributions paid as a result of the review count as paid late (art. 164-A(2)). For 2025 income the ISS Guia Prático gives 20 February 2026 as the date for any extra payment; after that, interest runs. Overpayments are credited to future contributions, or refunded on form RC 3041.
 
 **Employees and MOE.** The base is pay as defined in Code art. 44 to 48. Which items are in or out, and the monthly payroll figures, are in `portugal-payroll`. MOE pay is subject at the MOE rates above, with the 1 x IAS minimum base (art. 66).
 
 **Contracting entities.** The base is the total value of services the worker supplied to the entity in the calendar year (art. 167). Dependency is the entity's share of the worker's total activity value for the year (art. 140).
 
-**Effect on IRS.** In the IRS simplified regime, compulsory contributions are deductible only to the extent they exceed 10% of gross Category B income (CIRS art. 31(2)). Contributions also count toward the 15% expenses test. The method is in `pt-income-tax`.
+**Effect on IRS.** In the IRS simplified regime, for income taxed at the 0.75 and 0.35 coefficients, compulsory contributions linked to the activity are deducted, up to the net income, only for the part above 10% of the gross income (CIRS art. 31(2)). In the 15% expenses test, the part not deducted that way counts where it is higher than the specific deduction (CIRS art. 31(13)(a)). The method is in `pt-income-tax`.
 
 ## Deadlines and filing
 
 | Obligation | Deadline | Source |
 |---|---|---|
 | Self-employed quarterly declaration | Last day of January, April, July and October, for the previous three months' income | Code art. 151-A(3) |
-| Correction of a quarterly declaration | Within 15 days after the deadline (ISS guide). A late declaration can be filed online until the last day of the month before the next declaration month | ISS guide |
+| Correction of a quarterly declaration | Within 15 days after the deadline (ISS Guia Prático). A late declaration can be filed online until the last day of the month before the next declaration month | ISS Guia Prático |
 | Annual confirmation of last year's income | January | Code art. 151-A(5) |
 | Self-employed monthly payment | Between the 10th and the 20th of the month after the month it relates to | Code art. 155(2) |
 | Contracting-entity contribution | By the 20th of the month after Segurança Social issues the payment notice; it relates to the previous calendar year | Code art. 155(3) |
@@ -117,9 +117,9 @@ Then, in this order:
 
 The quarterly declaration is filed on Segurança Social Direta. Workers exempt under art. 157(1)(a) to (c) and workers on organised accounts do not file it. A worker who stops or suspends activity files the declaration in the next window (art. 151-A(4)).
 
-Payment is by Multibanco reference, homebanking or direct debit set up on Segurança Social Direta (ISS guide).
+Payment is by Multibanco reference, homebanking or direct debit set up on Segurança Social Direta (ISS Guia Prático).
 
-To receive benefits, the worker's contributions must be paid up to the end of the third month before the month of the event that gives rise to the benefit (ISS guide).
+To receive benefits, the worker's contributions must be paid up to the end of the third month before the month of the event that gives rise to the benefit (ISS Guia Prático).
 
 ## Penalties and interest
 
@@ -133,12 +133,12 @@ To receive benefits, the worker's contributions must be paid up to the end of th
 
 **Interest.** Late contributions carry interest for each calendar month or part of a month (art. 211). The rate is the one for debts to the State (art. 212): 7.221% for 2026 (IGCP Aviso 18/2026/2).
 
-**Benefits.** Unpaid contributions suspend benefits until the debt is settled (ISS guide).
+**Benefits.** Unpaid contributions suspend benefits until the debt is settled (ISS Guia Prático).
 
 ## Cross-border points
 
-- A self-employed worker who goes to work abroad for a set period may keep Portuguese cover. The limit is one year, extendable by one more year on request, unless an international agreement says otherwise (Code art. 138). While the income is not declared in Portugal, the last base stays in force (ISS guide).
-- A self-employed person working temporarily in Portugal who already has compulsory cover elsewhere for invalidity, old age and death is outside the regime once excluded on form RV 1025 (ISS guide).
+- A self-employed worker who goes to work abroad for a set period may keep Portuguese cover. The limit is one year, extendable by one more year on request, unless an international agreement says otherwise (Code art. 138). While the income is not declared in Portugal, the last base stays in force (ISS Guia Prático).
+- A self-employed person working temporarily in Portugal who already has compulsory cover elsewhere for invalidity, old age and death is outside the regime once excluded on form RV 1025 (ISS Guia Prático).
 - A foreign invalidity or old-age pension gives the same exemption as a Portuguese one (art. 157(1)(b)).
 - Which state's legislation applies to people working in more than one EU state, and A1 certificates, are in `pt-cross-border`. This skill does not set those rules.
 
@@ -184,7 +184,7 @@ João is employed full-time by an unrelated company at EUR 1,400 a month, which 
 
 1. Relevant income: 15,000 x 70% + 6,000 x 20% = 10,500 + 1,200 = EUR 11,700.
 2. Monthly average: 11,700 / 3 = EUR 3,900. This is at least 4 x IAS (EUR 2,148.52), so the employment exemption does not cover all of it.
-3. Base: 3,900 - 2,148.52 = EUR 1,751.48 (art. 163(4)). This is under the ceiling. The 25% option does not apply to this base.
+3. Base: 3,900 - 2,148.52 = EUR 1,751.48 (art. 163(4)). This is under the ceiling. The 25% option does not apply to this base (art. 163(4)).
 4. Monthly contribution: 1,751.48 x 21.4% = EUR 374.82 for July, August and September. He pays each between the 10th and the 20th of the following month.
 
 If his next quarter's monthly average falls below EUR 2,148.52, he owes nothing as self-employed for those three months.
@@ -232,9 +232,9 @@ expected:
 | ISS, Guia Prático, Novo Regime dos Trabalhadores Independentes (v1.09, 2026 figures) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-24 |
 | ISS, Guia Prático, Pagamento de Contribuições à Segurança Social | https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla | 2026-10-24 |
 | ISS, Guia Prático, Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem (rate tables) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft | 2026-10-24 |
-| CIRS art. 31(2) (contributions in the simplified regime) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-24 |
+| CIRS art. 31(2) and 31(13)(a) (contributions in the simplified regime) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-24 |
 
-Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS guide still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS guide; the EUR 5 de minimis for the excess base and the rule that the 25% option does not apply to it, both from the ISS guide only; the annual review article 164-A was read only by title, its EUR 20 threshold comes from the ISS guide; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
+Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS Guia Prático still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS Guia Prático; the EUR 5 de minimis for the excess base, from the ISS Guia Prático only; the EUR 20 threshold for the annual review is in the ISS Guia Prático, not in art. 164-A; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
 
 > Contributed by Ryan Duguid.
 
