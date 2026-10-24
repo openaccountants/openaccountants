@@ -8,7 +8,6 @@ covered_by:
   PR: lt-payroll-social
   XB: lt-cross-border
 partial:
-  IT-IND: "lithuania-pit carries 2025 figures and is not yet in the 2026 deep-tax shape"
   IT-CORP: "lt-corporate-income-tax carries 2025 figures and cites secondary sources; the 2026 17% rate is not yet worked through"
   VAT: "lithuania-vat-return carries 2025 figures and is not yet in the 2026 deep-tax shape"
   SC: "lt-payroll-social carries 2025 figures and cites secondary sources"
@@ -23,7 +22,7 @@ Calendar tax year for most taxpayers. Authority: the State Tax Inspectorate (Val
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | lithuania-pit (2025 figures) | source-cited draft |
+| IT-IND, individual income tax | lithuania-pit (2026: 20/25/32% bands, 15% capital rate, NPD formula, individual activity at 20% with the sliding credit, exemptions, annual return by 1 May, fines and interest) | source-cited draft |
 | IT-CORP, corporate income tax | lt-corporate-income-tax (2025 figures) | source-cited draft |
 | VAT | lithuania-vat-return (2025 figures) | source-cited draft |
 | SC, social contributions | lt-payroll-social (2025 figures) | source-cited draft |
@@ -40,5 +39,6 @@ Also in the pack: lt-tax-overview, lt-company-formation, references.md.
 - Law on Tax Administration IX-2112, consolidated from 1 July 2026: https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr (read 2026-10-23)
 - Law on Personal Income Tax IX-1007, consolidated from 11 June 2026: https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr (read 2026-10-24)
 - VMI, commentary on the Corporate Income Tax Law: https://www.vmi.lt/evmi/documents/20142/751579/Pelno+mokes%C4%8Dio+komentaras+(aktualus+2026-09-28).pdf/c9688bd6-8557-df3a-c0a3-e4032cfff2b6?t=1790570493065 (read 2026-10-24)
+- VMI, GPMĮ commentary (2026-10-19 edition): https://www.vmi.lt/evmi/documents/20142/391224/GPM+aktualus+komentaras+%28aktuali+redakcija+2026-10-19%29+.pdf/541c2138-7e9c-3e99-33bf-fc547c5cdc28?t=1792476568043 (read 2026-10-24)
 - VMI, personal income tax page, with the law, the 2026 English translation and the commentary: https://www.vmi.lt/evmi/gyventoju-pajamu-mokestis (read 2026-10-23)
 - VMI: https://www.vmi.lt (read 2026-10-23)
