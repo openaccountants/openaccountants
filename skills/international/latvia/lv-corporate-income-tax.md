@@ -24,7 +24,7 @@ Latvia does not tax annual profit. A company pays corporate income tax (CIT) onl
 - **Out:** individuals; sole traders who have not chosen to prepare annual accounts; budget-funded bodies whose business income is in the budget; private pension funds; investment funds and alternative investment funds (their investors pay); non-profit associations and foundations; religious organisations, trade unions and political parties (art. 2(2)).
 - **Micro-enterprise taxpayers** (SIA, sole trader or farm registered for micro-enterprise tax) pay CIT inside micro-enterprise tax under the Micro-enterprise Tax Law, not under this skill (art. 2(4), art. 4(11)). Registering for that regime triggers a deemed dividend (art. 7(1)(3)).
 - **Tonnage tax** companies have a separate base for qualifying shipping (art. 4(16) to 4(21)). Not covered here.
-- **Credit institutions and consumer lenders** also pay an annual CIT top-up of 20% on the previous year's after-tax profit, less CIT already paid on that year's distributions (art. 4.1). Not covered in detail here.
+- **Credit institutions and consumer lenders** also pay an annual CIT top-up of 20% on the previous year's after-tax profit, less the CIT paid on dividends calculated in the top-up year (extraordinary dividends excluded) (art. 4.1(4)). Not covered in detail here.
 
 ## Rates, bands and thresholds
 
@@ -67,18 +67,25 @@ The dividend is taxed in the period in which it is calculated (declared), not wh
 - (g) Liquidation quota: equity above the shareholders' contributions (art. 4(8)).
 - (h) to (k) Assets transferred in a reorganisation (art. 18); assets moved to a foreign PE, or out of a Latvian PE, where Latvia loses the right to tax (exit charge, see `lv-cross-border`); hybrid mismatch results (art. 7.1).
 
-Items (b), (c), (d), (e), (f), (i), (j) and (k) go into the base of the **last taxation period of the reporting year** (art. 4(5)). Non-business expenses (a) are taxed in the period they arise.
+Items (b), (c), (d), (e), (f), (i), (j) and (k) go into the base of the **last taxation period of the reporting year** (art. 4(5)). Non-business expenses (a) are taxed in the period they arise, except advances on deals not started within 12 months, which go into the last month of the reporting year (art. 8(2¹)(1)).
 
 **3. Reliefs that reduce the base**
 - **Dividends received** (art. 6): a company can reduce its calculated dividends by dividends it received in the same period from a payer that is a CIT payer in its home state, or on which tax was withheld at source. Not for dividends from a low-tax or no-tax jurisdiction, from a company that was a micro-enterprise taxpayer when it earned the profit, where the payer deducted the dividend, or where the main purpose is to use the exemption (art. 6(1), 6(3) to 6(5)). Unused received dividends carry forward in date order (art. 6(2)).
 - **Share disposals** (art. 13): a gain on directly held shares held at least 36 months reduces calculated dividends, with carry-forward of any excess. Not for shares in low-tax jurisdiction companies, unlisted companies whose assets are more than 50% Latvian real estate, or fund units (art. 13(3), 13(4)).
 - **Donations** to qualifying recipients (art. 12): not covered in detail here.
 
+**3a. Controlled foreign companies (art. 6.1)**
+- A company adds to its base the profit of a foreign company (or of its own foreign PE) that comes from non-genuine arrangements, where it holds, alone or with related persons, more than 50% of the shares or votes, or is entitled to more than 50% of the profit (art. 6.1(1) to 6.1(3)). An arrangement is non-genuine to the extent the foreign company would not take the risks or hold the assets if it were not controlled by a company that carries out the key management functions for them (art. 6.1(7)).
+- The share of profit goes into the return for the last taxation period of the reporting year in which the foreign company's year ends (art. 6.1(5)).
+- Not applied where the foreign company's annual profit is up to EUR 750,000, or its income other than from sales of goods and services is up to EUR 75,000, unless it is in a listed low-tax or no-tax jurisdiction or the tax authority found the arrangements in an audit (art. 6.1(8), 6.1(9)).
+- Later dividends out of that already-taxed profit reduce the company's own dividend base (art. 6.1(10)).
+
 **4. The 15% alternative for companies owned only by individuals (art. 4.2)**
-- Condition: in the taxation period in which the dividend is calculated, every shareholder (dalībnieks) is an individual (art. 4.2(1)).
+- Condition: in the taxation period in which the dividend is calculated, every shareholder (dalībnieks) is an individual (art. 4.2(1)). "Dalībnieks" means any owner of shares or anyone else with a non-debt right to share in profit (art. 1(7)), so the option is open to an AS as well as an SIA, as long as no shareholder is a company, fund or other entity.
 - Scope: only calculated dividends under art. 4(2)(1)(a). Deemed dividends, payments treated as dividends and all deemed distributions stay at 20% / 0.8.
 - It is a choice: the company "is entitled to choose" it (art. 4.2(1)).
 - Computation: dividend / 0.85 x 15% (art. 3(5), art. 4.2(2)). The shareholder then pays 6% personal income tax on the dividend instead of the usual exemption (PIT Law art. 9(3.9), art. 15(5.1)).
+- Who withholds the 6%: the company, when it calculates the dividend (CIT Law art. 16(5)). For personal income tax the dividend counts as paid on the day it is calculated (PIT Law art. 16.1(8)). The company pays the 6% into the single tax account by the 23rd of the following month (PIT Law art. 17(10)(12)) and reports the payment to VID by the 15th of the following month (PIT Law art. 17(11)(1)). For listed shares, the investment service provider that keeps the account withholds, on the payment date (PIT Law art. 16.1(8)).
 - Start: inserted by the law of 3 December 2025, in force 1 January 2026.
 - Per euro of net dividend the total is 15/85 plus 6%, about 23.6%, against 25% under the standard rule.
 
@@ -98,6 +105,7 @@ Items (b), (c), (d), (e), (f), (i), (j) and (k) go into the base of the **last t
 | Payment | into the single tax account by the 23rd of the month after the taxation period | art. 17(7) |
 | Year-end correction | no late interest on extra tax from correcting the last month's return for changes found while preparing annual accounts filed on time | art. 17(8) |
 | Minimum tax | if CIT for the reporting year is under EUR 50, top up to EUR 50 in the last month's return; not for a company registered or liquidated in the year, one that paid at least EUR 100 of personal income tax or social contributions for an employee, or one in insolvency | art. 17(11), 17(12) |
+| 6% personal income tax on art. 4.2 dividends | company withholds on the day the dividend is calculated; pays by the 23rd and reports to VID by the 15th of the following month | CIT Law art. 16(5); PIT Law arts. 16.1(8), 17(10)(12), 17(11)(1) |
 | Due date on a holiday | moves to the next working day | Law on Taxes and Fees art. 29(3¹) |
 
 ## Penalties and interest
@@ -148,7 +156,7 @@ expected:
   cit: 9500
 ```
 
-**Example 2. SIA owned by two individuals, 15% option plus a loan to a sister company, 2026.** In March 2026 the SIA calculates a dividend of EUR 50,000 for its two individual shareholders and chooses the art. 4.2 rate. CIT is 50,000 / 0.85 x 15% = EUR 8,823.53, due by 23 April 2026. The shareholders pay 6% personal income tax on the dividend, EUR 3,000. Total tax is EUR 11,823.53. Under the standard rule it would be 50,000 / 0.8 x 20% = EUR 12,500 with no personal income tax, so the option saves EUR 676.47. In June 2026 the SIA also lends EUR 10,000 for 24 months to a sister company owned by the same individuals. The SIA had retained earnings at 1 January 2026, opening share capital of EUR 3,000, no earlier unrepaid loans and no borrowings from unrelated lenders. The first EUR 3,000 is covered by share capital (art. 11(4)(3)); EUR 7,000 is a deemed distribution. It goes into the December 2026 return at the standard rate, because the 15% option covers only calculated dividends: 7,000 / 0.8 x 20% = EUR 1,750.
+**Example 2. SIA owned by two individuals, 15% option plus a loan to a sister company, 2026.** In March 2026 the SIA calculates a dividend of EUR 50,000 for its two individual shareholders and chooses the art. 4.2 rate. CIT is 50,000 / 0.85 x 15% = EUR 8,823.53, due by 23 April 2026. The SIA withholds 6% personal income tax from the dividend, EUR 3,000, reports it to VID by 15 April 2026 and pays it by 23 April 2026. Total tax is EUR 11,823.53. Under the standard rule it would be 50,000 / 0.8 x 20% = EUR 12,500 with no personal income tax, so the option saves EUR 676.47. In June 2026 the SIA also lends EUR 10,000 for 24 months to a sister company owned by the same individuals. The SIA had retained earnings at 1 January 2026, opening share capital of EUR 3,000, no earlier unrepaid loans and no borrowings from unrelated lenders. The first EUR 3,000 is covered by share capital (art. 11(4)(3)); EUR 7,000 is a deemed distribution. It goes into the December 2026 return at the standard rate, because the 15% option covers only calculated dividends: 7,000 / 0.8 x 20% = EUR 1,750.
 
 ```oa-check
 name: Individual-owned SIA, art. 4.2 dividend plus related-party loan, 2026
@@ -191,10 +199,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), version in force from 1 January 2026: arts. 2, 3, 4, 4.1, 4.2, 6, 7, 8, 9, 10, 11, 13, 17, 19; transitional provisions 8 to 10, 13, 14, 53 | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-24 (likumi.lv refused the connection; read from the Internet Archive copy of 4 October 2026, https://web.archive.org/web/20261004132502/https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums) |
+| Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), version in force from 1 January 2026: arts. 1(7), 2, 3, 4, 4.1, 4.2, 6, 6.1, 7, 8, 9, 10, 11, 13, 16(5), 17, 19; transitional provisions 8 to 10, 13, 14, 53 | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-24 (likumi.lv refused the connection; read from the Internet Archive copy of 4 October 2026, https://web.archive.org/web/20261004132502/https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums) |
 | Law on Taxes and Fees (likums "Par nodokļiem un nodevām"): arts. 29, 32, 33.2, 141 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-24 (Internet Archive copy of 18 September 2026) |
-| Law On Personal Income Tax (likums "Par iedzīvotāju ienākuma nodokli"): arts. 9(1)(2.1), 9(3.9), 15(5.1) | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-24 (Internet Archive copy of 1 September 2026) |
+| Law On Personal Income Tax (likums "Par iedzīvotāju ienākuma nodokli"): arts. 9(1)(2.1), 9(3.9), 15(5.1), 16.1(8), 17(10)(12), 17(11)(1) | https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli | 2026-10-24 (Internet Archive copy of 1 September 2026) |
 | Administrative Liability Law (Administratīvās atbildības likums): art. 16 | https://likumi.lv/ta/id/303007-administrativas-atbildibas-likums | 2026-10-24 (Internet Archive copy of 10 August 2026, https://web.archive.org/web/20260810162753/https://likumi.lv/ta/id/303007-administrativas-atbildibas-likums) |
 | State Revenue Service (VID) | https://www.vid.gov.lv | 2026-10-24 (refused the connection; not read) |
 
-Not yet confirmed: who withholds and declares the 6% personal income tax on art. 4.2 dividends, and by when (the PIT Law withholding article was not read); whether "dalībnieki" in art. 4.2 also covers shareholders of a joint-stock company (AS); the CIT return form and its annexes (the return regulation was not read); the art. 8(5) fuel limits and the art. 12 donation relief; any CIT Law amendment after the 4 October 2026 archive copy.
+Not yet confirmed: the CIT return form and its annexes (the return regulation was not read); the art. 8(5) fuel limits and the art. 12 donation relief; any CIT Law amendment after the 4 October 2026 archive copy.
