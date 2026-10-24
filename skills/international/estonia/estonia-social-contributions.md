@@ -78,9 +78,9 @@ The minimum does not apply, and social tax is paid on actual pay, for (SMS § 2(
 - a state pensioner or a person with partial or no work capacity;
 - a local council member; a qualifying seafarer; a spouse receiving the foreign service allowance.
 
-In a month where the employee refused work under the Employment Contracts Act § 19 (other than unpaid leave agreed by both sides), the minimum is pro-rated by the time worked (SMS § 2(3)).
+In a month in which the employee starts or leaves work, or refused work under the Employment Contracts Act § 19 (other than unpaid leave agreed by both sides), the minimum is pro-rated by the time worked (SMS § 2(3)).
 
-**Exempt amounts** (SMS § 3): among others the income-tax-free payments in TuMS § 13(3) points 1 to 23 (travel costs and per diems within the limits, statutory compensation), and occupational health and safety costs meeting the Occupational Health and Safety Act. Fringe benefits are not exempt: social tax is due on the benefit plus its 22/78 income tax, paid without attributing it to the person (SMS § 2(1) point 7, § 9(1) point 3), so it earns the person no pension or health rights.
+**Exempt amounts** (SMS § 3): among others the income-tax-free payments in TuMS § 13(3) points 1 to 2³, 6 and 14 (business travel costs and foreign per diems within the limits, among others), and occupational health and safety costs meeting the Occupational Health and Safety Act. Fringe benefits are not exempt: social tax is due on the benefit plus its 22/78 income tax, paid without attributing it to the person (SMS § 2(1) point 7, § 9(1) point 3), so it earns the person no pension or health rights.
 
 **Unemployment premiums** are on the same pay, with no minimum and no ceiling, except statutory severance, compensation or penalty interest for unlawful dismissal, pay due by law for a delayed final settlement, and SMS § 3 amounts (TKindlS § 40(2)). Both premiums are rounded to the cent per person (TKindlS § 42(3)).
 

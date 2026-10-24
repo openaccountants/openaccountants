@@ -55,7 +55,7 @@ Related skills: `estonia-social-contributions` (social tax, the II pillar split 
 | Social tax monthly minimum base (kuumäär) | EUR 886 (minimum social tax EUR 292.38) | 2026 | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
 | Minimum monthly wage, full time | EUR 886 to 31 March 2026; EUR 946 from 1 April 2026 (EUR 5.67 an hour) | 2026 | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates (Government Regulation No. 36 of 23.03.2026) |
 | Fringe benefit income tax | 22/78 of the benefit | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS §§ 4(1¹), 48) |
-| Tax-free birth allowance from employer | Up to 5 × EUR 700 = EUR 3,500 per child (still subject to social tax, unemployment premium and II pillar) | 2026 | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption |
+| Tax-free birth allowance from employer | Up to 5/12 of EUR 8,400 = EUR 3,500 per child (still subject to social tax, unemployment premium and II pillar) | 2026 | https://www.riigiteataja.ee/akt/109072026066 (TuMS § 13(3) point 7); https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption |
 | Employee health promotion costs exempt from fringe benefit tax | EUR 400 per employee a year | 2026 | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates |
 | Interest on late payment | 0.06% a day | 2026 | https://www.riigiteataja.ee/akt/116102026009 (MKS § 117(1)) |
 
@@ -77,7 +77,7 @@ The monthly limit is a cap, not a carry-forward. If pay after deductions is belo
 
 **Pensionable age.** From the year a person reaches pensionable age the basic exemption is EUR 9,312 a year, and the Social Insurance Board applies it to the state pension first. Any part the pension does not use can be applied by the employer on a written application (TuMS § 42(1³)). The employee unemployment premium stops at the end of the month the person reaches pensionable age or is granted an early or flexible old-age pension; the employer's 0.8% continues (TKindlS § 42(1) point 1, § 40(1) point 2).
 
-**Social tax base.** Social tax is charged on the gross pay, with no ceiling. For an employee or official it is charged on at least EUR 886 a month even if pay is lower (SMS § 2(2)), so the minimum is EUR 292.38. If the person has several employers, the minimum applies only through the employer that gives the basic exemption (SMS § 2(2¹)). It does not apply, and social tax is paid on actual pay, for among others: a state pensioner or a person with partial or no work capacity; a parent raising a child under 3 or three or more children under 19; a person with shortened working time under the Employment Contracts Act § 43(4) or (6); and for up to 12 months after hiring someone who was registered unemployed for at least six months (SMS § 2(4)). For a month where the employee refused work under the Employment Contracts Act § 19, the minimum is pro-rated by time worked (SMS § 2(3)). See `estonia-social-contributions` for the full list.
+**Social tax base.** Social tax is charged on the gross pay, with no ceiling. For an employee or official it is charged on at least EUR 886 a month even if pay is lower (SMS § 2(2)), so the minimum is EUR 292.38. If the person has several employers, the minimum applies only through the employer that gives the basic exemption (SMS § 2(2¹)). It does not apply, and social tax is paid on actual pay, for among others: a state pensioner or a person with partial or no work capacity; a parent raising a child under 3 or three or more children under 19; a person with shortened working time under the Employment Contracts Act § 43(4) or (6); and for up to 12 months after hiring someone who was registered unemployed for at least six months (SMS § 2(4)). For a month in which the employee starts or leaves work, or refused work under the Employment Contracts Act § 19 (other than agreed unpaid leave), the minimum is pro-rated by time worked (SMS § 2(3)). See `estonia-social-contributions` for the full list.
 
 **What is outside the base.** Business travel expense reimbursements and foreign per diems within the limits (EUR 75 a day for the first 15 days in a month, EUR 40 a day after that) are not income (TuMS § 13(3) point 1) and carry no social tax (SMS § 3 point 1). Statutory severance pay carries income tax and social tax but no unemployment premium (TKindlS § 40(2) point 1).
 
@@ -89,8 +89,8 @@ The monthly limit is a cap, not a carry-forward. If pay after deductions is belo
 |---|---|---|
 | Register the start of work in the employment register (töötamise register) | No later than the moment the person starts work (MKS § 25²(3)) | e-MTA |
 | Register a suspension or end of work | Within 10 days (MKS § 25²(4)) | e-MTA |
-| Form TSD (income tax, social tax, unemployment premiums, II pillar, fringe benefits) | 10th day of the month after the month of payment (TuMS § 54(1) and (2); SMS § 9(1) point 4; TKindlS § 42(1) point 3) | e-MTA |
-| Payment of everything on the TSD | Same day, the 10th (TuMS § 54(4); SMS § 9(1) point 4; TKindlS § 42(1) point 3) | EMTA prepayment account |
+| Form TSD (income tax, social tax, unemployment premiums, II pillar, fringe benefits) | 10th day of the month after the month of payment (TuMS § 40(5) for withheld tax, § 54(1) for fringe benefits; SMS § 9(1) point 4; TKindlS § 42(1) point 3; KoPS § 11(1) point 4) | e-MTA |
+| Payment of everything on the TSD | Same day, the 10th (TuMS § 40(4) for withheld tax, § 54(4) for fringe benefit tax; SMS § 9(1) point 4; TKindlS § 42(1) point 3; KoPS § 11(1) point 4) | EMTA prepayment account |
 | Employee's choice of II pillar rate (4% or 6%, or back to 2%) | Application to the pension registrar by 30 November; the new rate applies from 1 January of the next year (KoPS § 17²(8)) | Pension registrar or account manager |
 
 The employer must check with the pension register whether each payee owes the II pillar contribution, and at what rate (KoPS § 11(1) point 1). EMTA says the obligation can change on 1 January, 1 May and 1 September, and recommends checking in December, April and August.
@@ -112,7 +112,7 @@ The unemployment premium is treated as a tax for collection, interest and sancti
 
 ## Cross-border points
 
-- **Non-resident employees** paid for work in Estonia: the employer withholds 22%. Only the unemployment premium is deducted first; the employer does not give the basic exemption (TuMS § 41 point 2, § 42(5)). A non-resident does not pay into the II pillar, because KoPS § 6 covers residents only. Treaty relief and the 183-day test are in `ee-cross-border`.
+- **Non-resident employees** paid for work in Estonia: the employer withholds 22% after deducting the unemployment premium (TuMS § 41 point 2, § 42(5)). The basic exemption is given only to a resident of another EEA state who has given the employer a written application and whose certificate of residence is entered in EMTA's database (TuMS § 42(1), which covers residents of any EEA state; EMTA, non-residents' employment income). Other non-residents get no basic exemption. A non-resident does not pay into the II pillar, because KoPS § 6 covers Estonian residents only. Treaty relief and the 183-day test are in `ee-cross-border`.
 - **Social security coordination.** Inside the EU, EEA and Switzerland, Regulation (EC) No 883/2004 decides which country's social security applies. A worker posted to Estonia with an A1 certificate from another state stays in that state's system; one posted out of Estonia with an Estonian A1 stays on Estonian social tax. Check the A1 before the first payroll.
 - **Foreign employer with staff in Estonia.** A non-resident acting as an employer in Estonia must withhold and pay the unemployment premium and declare it in the TSD (TKindlS § 4(2) point 4), and is liable for fringe benefit tax (TuMS § 48(2)).
 - **Seafarers** on qualifying ships have a special social tax base and rate (SMS § 2(4) point 8, § 7(2¹)). Out of scope here.
@@ -208,7 +208,7 @@ expected:
 
 1. **When is pay actually paid out?** The month of payment, not the month worked, fixes the rates and the TSD (cash basis). December 2025 pay paid in January 2026 uses 2026 rules.
 2. **Has the employee given you a basic exemption application, and do they work for anyone else or get a state pension?** Only one payer gives it (two if one is the Social Insurance Board), and the social tax minimum follows the employer that gives it.
-3. **Is the person a resident, and do they have an A1 from another country?** This decides the basic exemption, the II pillar and whether Estonian social tax applies at all.
+3. **Is the person an Estonian resident, a resident of another EEA state (with a certificate of residence) or neither, and do they have an A1 from another country?** This decides the basic exemption, the II pillar and whether Estonian social tax applies at all.
 4. **Does an SMS § 2(4) exception apply** (pensioner, partial work capacity, child under 3 or three children under 19, recent unemployment, shortened hours)? If so, social tax is on actual pay, not EUR 886.
 5. **What is the II pillar status and rate in the pension register this month?** None, 2%, 4% or 6%.
 6. **Board member, employee or contractor?** Board fees carry no unemployment premium; a registered FIE's business invoice carries no social tax from the payer.
@@ -217,7 +217,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 41, 42, 43, 48, 54 | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
+| Income Tax Act (Tulumaksuseadus), consolidated text in force from 01.10.2026, §§ 4, 13, 23, 23⁵, 40, 41, 42, 43, 48, 54 | https://www.riigiteataja.ee/akt/109072026066 | 2026-10-24 |
 | Social Tax Act (Sotsiaalmaksuseadus), consolidated text in force 22.05.2026 to 24.10.2026, §§ 2, 2¹, 3, 4, 7, 9 | https://www.riigiteataja.ee/akt/121052026019 | 2026-10-24 |
 | Unemployment Insurance Act (Töötuskindlustuse seadus), consolidated text in force from 01.10.2026, §§ 3, 4, 40, 41, 42 | https://www.riigiteataja.ee/akt/130062026040 | 2026-10-24 |
 | Government Regulation No. 78 of 25.09.2025, unemployment insurance premium rates 2026 to 2029 | https://www.riigiteataja.ee/akt/130092025003 | 2026-10-24 |
@@ -227,6 +227,7 @@ expected:
 | EMTA, Tax rates (2024 to 2026, minimum wage table) | https://emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/tax-rates | 2026-10-24 |
 | EMTA, Social tax (2026 minimum base) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/social-tax | 2026-10-24 |
 | EMTA, Income tax and basic exemption (birth allowance 2026) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/income-tax-and-basic-exemption | 2026-10-24 |
+| EMTA, Non-residents' employment income (basic exemption for EEA residents) | https://www.emta.ee/en/private-client/foreigner-non-resident/non-residents/income-employment | 2026-10-24 |
 | EMTA, Contributions to mandatory funded pension | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/contributions-mandatory-funded-pension | 2026-10-24 |
 | EMTA, Submission of declaration form TSD (data-based TSD from 1 October 2026) | https://www.emta.ee/en/business-client/taxes-and-payment/income-and-social-taxes/submission-declaration-form-tsd | 2026-10-24 |
 | Ministry of Finance, Law changes in force in 2026 | https://www.fin.ee/uudised/2026-aastal-joustuvad-seadusemuudatused | 2026-10-24 |
