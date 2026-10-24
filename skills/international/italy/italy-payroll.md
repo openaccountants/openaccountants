@@ -85,6 +85,7 @@ This skill does not repeat its siblings:
 - **Tredicesima.** One extra month's pay, usually in December, set by the CCNL, not by statute. **Quattordicesima.** Only where the CCNL gives it, usually June or July. Both carry IRPEF and INPS.
 - **Fringe benefits for 2026.** These are goods and services given to employees, plus sums paid or refunded for home water, electricity and gas, rent of the main home or interest on its mortgage. They are not income up to EUR 1,000. The limit is EUR 2,000 for an employee with dependent children who declares it and gives the children's codici fiscali (L. 207/2024 commi 390-391). The employer must first inform the unions.
 - The fringe limit replaces only the EUR 258.23 figure in TUIR art. 51(3). The rest of art. 51(3) still applies: if the total goes above the limit, the whole value is taxed, not only the excess.
+- **The same base for INPS.** The contribution base is pay as defined in TUIR art. 51 (L. 153/1969 art. 12(2), as replaced by D.Lgs. 314/1997 art. 6). Fringe benefits within the limit are out of the INPS base too; above the limit, the whole value carries employee and employer INPS.
 - **Meal vouchers** are exempt up to EUR 4 a day on paper and EUR 10 electronic (art. 51(2)(c)).
 - **Company cars** for mixed use: the taxable value is 50% of the ACI cost for 15,000 km (10% battery electric, 20% plug-in hybrid), less what the employee pays. Values rise by 50% after 31 December of the fifth year after first registration (art. 51(4)(a)).
 - **Also outside pay:** contractual health fund contributions up to EUR 3,615.20 (art. 51(2)(a)), and welfare and education services for all staff or categories of staff (art. 51(2)(f), (f-bis)).
@@ -225,7 +226,7 @@ Same kind of firm. An employee earns gross pay of EUR 17,000 for the whole year 
 
 Employee INPS: 9.19% of 17,000 = EUR 1,562.30. Taxable pay and total income: EUR 15,437.70. Total income is up to EUR 20,000, so the cuneo is the tax-free sum. Employment income is above 15,000, so the share is 4.8%: EUR 741.01, paid in the payslip and not taxed. Gross tax: 23% = EUR 3,550.67. Employment detrazione: (28,000 - 15,437.70) / 13,000 = 0.966331, kept as 0.9663, times 1,190 = 1,149.90, plus 1,910 = EUR 3,059.90. Net IRPEF: EUR 490.77. Income is above 15,000 and the detrazione is below gross tax, so there is no trattamento integrativo. Net cash for the year: 17,000 - 1,562.30 - 490.77 + 741.01 = EUR 15,687.94, plus the EUR 1,800 refund.
 
-The edge case: had the refunds been EUR 2,100, the limit is passed and all EUR 2,100 is taxed, not just the EUR 100 excess (TUIR art. 51(3)). Taxable income becomes EUR 17,537.70. The tax-free sum rises to 4.8% of it, EUR 841.81. Gross tax becomes EUR 4,033.67, the detrazione falls to EUR 2,867.59, and net IRPEF rises to EUR 1,166.08. This example leaves aside the contribution side of the refund.
+The edge case: had the refunds been EUR 2,100, the limit is passed and all EUR 2,100 is taxed, not just the EUR 100 excess (TUIR art. 51(3)). It also enters the INPS base (L. 153/1969 art. 12(2)): employee INPS becomes 9.19% of 19,100 = EUR 1,755.29. Taxable income becomes 19,100 - 1,755.29 = EUR 17,344.71. The tax-free sum rises to 4.8% of it, EUR 832.55. Gross tax becomes EUR 3,989.28. The detrazione ratio is (28,000 - 17,344.71) / 13,000 = 0.819637, kept as 0.8196, so the detrazione falls to 1,910 + 975.32 = EUR 2,885.32, and net IRPEF rises to EUR 1,103.96.
 
 ```oa-check
 name: Employee EUR 17,000 gross, cuneo tax-free sum, fringe benefit within and over EUR 2,000 (2026)
@@ -241,7 +242,8 @@ steps:
   - detrazione: 1910 + round(1190 * ratio, 2)
   - net_irpef: gross_tax - detrazione
   - net_cash: gross - inps_ee - net_irpef + cuneo_sum
-  - taxable_over: taxable + fringe_over
+  - inps_ee_over: round((gross + fringe_over) * 0.0919, 2)
+  - taxable_over: gross + fringe_over - inps_ee_over
   - cuneo_sum_over: round(taxable_over * 0.048, 2)
   - gross_tax_over: round(taxable_over * 0.23, 2)
   - ratio_over: floor((28000 - taxable_over) / 13000 * 10000) / 10000
@@ -256,12 +258,13 @@ expected:
   detrazione: 3059.90
   net_irpef: 490.77
   net_cash: 15687.94
-  taxable_over: 17537.70
-  cuneo_sum_over: 841.81
-  gross_tax_over: 4033.67
-  ratio_over: 0.8047
-  detrazione_over: 2867.59
-  net_irpef_over: 1166.08
+  inps_ee_over: 1755.29
+  taxable_over: 17344.71
+  cuneo_sum_over: 832.55
+  gross_tax_over: 3989.28
+  ratio_over: 0.8196
+  detrazione_over: 2885.32
+  net_irpef_over: 1103.96
 ```
 
 ## Ask the client first
@@ -291,6 +294,7 @@ expected:
 | D.Lgs. 68/2011 art. 6 (addizionale regionale) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2011-05-06;68~art6!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 446/1997 art. 50 (regional surcharge withholding) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art50!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 360/1998 art. 1 (addizionale comunale) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-09-28;360~art1!vig=2026-10-24 | 2026-10-24 |
+| L. 153/1969 art. 12, as replaced by D.Lgs. 314/1997 art. 6 (INPS base follows TUIR art. 51) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-09-02;314~art6!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 241/1997 art. 18 (F24 by the 16th) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-07-09;241~art18!vig=2026-10-24 | 2026-10-24 |
 | D.L. 269/2003 art. 44 (UniEmens) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269~art44!vig=2026-10-24 | 2026-10-24 |
 | D.L. 70/2011 art. 7(2)(l) (deadlines on a Saturday or holiday) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-10-24 | 2026-10-24 |
@@ -314,7 +318,6 @@ Not yet confirmed:
 - **Consolidated codes from 2027.** The conguaglio, CU, 770 and F24 payments for 2026 pay fall in 2027, when D.Lgs. 33/2025 (payments) and D.Lgs. 173/2024 (penalties) apply with new article numbers. We did not read whether they change any date or figure above.
 - **Sick pay (malattia).** INPS pays from day 4 for up to 180 days a year at a share of pay set by law; the first three days are usually paid by the employer under the CCNL. Neither the percentages nor the statute were read.
 - **Payslip law.** The payslip contents above follow L. 4/1953, which was not re-read.
-- **Contributions on fringe benefits.** Whether the 2026 fringe-benefit exemption also takes the amount out of the INPS base was not read in an INPS source.
 - **Regional and municipal rates for 2026** and the 2027 acconto: each region and comune sets its own; none read.
 - **Criminal thresholds** for unpaid withholding (D.Lgs. 74/2000) were not read.
 - **Moved, not dropped:** employer INPS rates by sector, the Fondo di Tesoreria and its 2026 headcount rule, INAIL autoliquidazione and the 2026 hiring reliefs are in `it-employer-contributions`. Family detrazioni and the 19% detrazioni (including the EUR 440 cut above EUR 200,000) are in `it-irpef-employees` and `it-income-tax`. The Modello Redditi PF deadline is in `it-income-tax`.
