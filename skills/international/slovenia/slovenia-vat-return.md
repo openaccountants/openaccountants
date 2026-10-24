@@ -1,6 +1,6 @@
 ---
 name: slovenia-vat-return
-description: "Slovenian VAT (davek na dodano vrednost, DDV) for tax year 2026 under ZDDV-1. Covers the 22%, 9.5% and 5% rates and what falls in each, the EUR 60,000 small business exemption with its EUR 66,000 in-year ceiling, the EU SME cross-border exemption (EUR 100,000), monthly and quarterly periods (EUR 210,000 test), the DDV-O return and payment by the last working day of the next month (20th for recapitulative statement filers), the VAT ledgers and prefilled return, domestic reverse charge, the RP-O recapitulative statement, VAT groups from 2026, fiscal cash registers, B2G e-invoices and B2B e-invoicing from 2028, fines and interest. Trigger phrases: DDV-O, Slovenian VAT, obračun DDV, evidenca obračunanega DDV, RP-O, PD-O, davčna blagajna. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, si-cross-border."
+description: "Slovenian VAT (davek na dodano vrednost, DDV) for tax year 2026 under ZDDV-1. Covers the 22%, 9.5% and 5% rates and what falls in each, the EUR 60,000 small business exemption with its EUR 66,000 in-year ceiling, the EU SME cross-border exemption (EUR 100,000), monthly and quarterly periods (EUR 210,000 test), the DDV-O return by the last working day of the next month (the 20th for recapitulative statement filers, who still pay by the last working day), the VAT ledgers and prefilled return, domestic reverse charge, the RP-O recapitulative statement, VAT groups from 2026, fiscal cash registers, B2G e-invoices and B2B e-invoicing from 2028, fines and interest. Trigger phrases: DDV-O, Slovenian VAT, obračun DDV, evidenca obračunanega DDV, RP-O, PD-O, davčna blagajna. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, si-cross-border."
 jurisdiction: SI
 category: international
 tax_year: 2026
@@ -50,8 +50,8 @@ Slovenian VAT is in the VAT Act (Zakon o davku na dodano vrednost, ZDDV-1) and i
 | Flat-rate compensation for farmers, added by the buyer | 8% | 2026 | ZDDV-1 art. 95(3), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
 | Interest on self-corrections and late self-filed returns | 3% a year | 2026 | ZDDV-1 arts. 88.b(2), 88.c(2), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
 | Interest on tax found in an inspection | 7% a year | 2026 | ZDavP-2 art. 95, https://pisrs.si/pregledPredpisa?id=ZAKO4703 |
-| Late payment interest | ECB main refinancing rate + 8 points, set each half-year | 2026 | ZDavP-2 art. 96(1); ZPOMZO-1 art. 2, https://pisrs.si/pregledPredpisa?id=ZAKO3695 |
-| ECB main refinancing rate in force before 1 January 2026 / before 1 July 2026 | 2.15% / 2.40% | 2026 | ECB key interest rates, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html |
+| Late payment interest, 1 January to 30 June 2026 | 10.15% a year | 2026 | ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; Minister of Finance notice, Uradni list RS 2/2026, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011/visina-predpisane-obrestne-mere-zamudnih-obresti |
+| Late payment interest, 1 July to 31 December 2026 | 10.40% a year | 2026 | ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; Minister of Finance notice, Uradni list RS 1124/2026, https://pisrs.si/api/uradni-list/objava/u20261124.pdf |
 
 What falls in each rate (ZDDV-1 Annexes I and IV, NPB 20):
 
@@ -120,7 +120,7 @@ ZDDV-1 sets the VAT fines itself. ZDavP-2 sets the interest.
 
 - **Self-correction.** Before an inspection, an assessment or offence proceedings start, an error can go into the current return (art. 88.b) or a missed return can be filed late (art. 88.c). Interest is 3% a year from the day after the original deadline. No fine is imposed for the listed offences when a return is filed this way (art. 141.a).
 - **Inspection interest.** 7% a year from the original deadline to the assessment (ZDavP-2 art. 95).
-- **Late payment interest.** The statutory default rate (ZDavP-2 art. 96). Under ZPOMZO-1 art. 2 it is the ECB main refinancing rate in force before the half-year starts plus 8 points. On the ECB table that gives 10.15% for January to June 2026 (2.15% + 8) and 10.40% for July to December 2026 (2.40% + 8).
+- **Late payment interest.** The statutory default rate (ZDavP-2 art. 96): the ECB main refinancing rate plus 8 points, fixed for each half-year (ZPOMZO-1 art. 2). The Minister of Finance published 10.15% for 1 January to 30 June 2026 (Uradni list RS 2/2026) and 10.40% for 1 July to 31 December 2026 (Uradni list RS 1124/2026).
 - **Late refunds.** FURS pays default interest when a requested refund is not paid within 21 days (art. 73(3)).
 
 ## Cross-border points
@@ -129,7 +129,7 @@ ZDDV-1 sets the VAT fines itself. ZDavP-2 sets the interest.
 - **Distance sales and B2C digital services.** Below EUR 10,000 a year across the EU, the place of supply stays Slovenia. Above it, VAT is due where the customer is, usually through the OSS (art. 30.f).
 - **Intra-EU supplies.** Zero-rated with a valid customer VAT number and proof of transport (art. 46). They go on RP-O, and the return then falls due on the 20th.
 - **Imports.** VAT is paid as an import duty, unless the registered importer gives its VAT number and the VAT details in the customs declaration. It then accounts for the VAT in the return (art. 77(6)). A non-established importer needs a tax representative for this (art. 77(7)).
-- **Refunds to foreign businesses.** EU businesses claim through their home portal. The FURS page gives 30 September as the deadline for claims on the previous year.
+- **Refunds to foreign businesses.** EU businesses claim through their home portal by 30 September of the year after the VAT was charged (art. 74.d(2)).
 - **Non-established suppliers.** File monthly (art. 89(4)). Non-EU businesses appoint a tax representative (art. 76(2)).
 
 ## Worked examples
@@ -212,7 +212,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ZDDV-1, VAT Act, NPB 20 (arts. 5, 5.a, 30.f, 33.a, 41, 46, 63, 66, 66.b, 73, 76 to 80, 85, 85.b, 87 to 92.a, 94 to 95, 131, 140 to 142; Annexes I and IV) | https://pisrs.si/pregledPredpisa?id=ZAKO4701 | 2026-10-24 |
+| ZDDV-1, VAT Act, NPB 20 (arts. 5, 5.a, 30.f, 33.a, 41, 46, 63, 66, 66.b, 73, 74.d, 76 to 80, 85, 85.b, 87 to 92.a, 94 to 95, 131, 140 to 142; Annexes I and IV) | https://pisrs.si/pregledPredpisa?id=ZAKO4701 | 2026-10-24 |
 | Pravilnik o izvajanju ZDDV-1, implementing rules, NPB 30 (arts. 127.b, 150.b) | https://pisrs.si/pregledPredpisa?id=PRAV7542 | 2026-10-24 |
 | ZDavP-2, Tax Procedure Act, NPB 32 (arts. 95, 95.a, 96, 97) | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
 | ZPOMZO-1, Act on the statutory default interest rate, NPB 2 (art. 2) | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |
@@ -222,6 +222,7 @@ expected:
 | FURS, Davek na dodano vrednost (2026 filing calendar) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_na_dodano_vrednost_ddv/ | 2026-10-24 |
 | FURS, Stopnje DDV, 15th edition, October 2026 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Stopnje_DDV.docx | 2026-10-24 |
 | FURS, Spremembe zakonodaje na področju DDV (updated 30 December 2025) | https://www.fu.gov.si/datoteka.php?src=fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Spremembe_zakonodaje_na_podrocju_DDV.zip | 2026-10-24 |
-| European Central Bank, key interest rates | https://www.ecb.europa.eu/stats/policy_and_exchange_rates/key_ecb_interest_rates/html/index.en.html | 2026-10-24 |
+| Minister of Finance, Višina predpisane obrestne mere zamudnih obresti, Uradni list RS 2/2026 (from 1 January 2026) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011/visina-predpisane-obrestne-mere-zamudnih-obresti | 2026-10-24 |
+| Minister of Finance, Višina predpisane obrestne mere zamudnih obresti, Uradni list RS 1124/2026 (from 1 July 2026) | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
 
-Not yet confirmed: the 2026 default interest rates (10.15% and 10.40%) are worked out from ZPOMZO-1 and the ECB table, not read from the Ministry of Finance notice in the Official Gazette; the DDV-O box layout was not read from the form rules; how VAT applies to the supply that takes a small business over EUR 66,000 in the year was not checked against FURS guidance.
+Not yet confirmed: the DDV-O box layout was not read from the form rules; how VAT applies to the supply that takes a small business over EUR 66,000 in the year was not checked against FURS guidance.

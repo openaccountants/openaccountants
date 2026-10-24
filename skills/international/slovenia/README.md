@@ -20,7 +20,7 @@ Calendar tax year for individuals; companies may use a business year of up to 12
 |---|---|---|
 | IT-IND, individual income tax | slovenia-income-tax (tax year 2025) | source-cited draft |
 | IT-CORP, corporate income tax | si-corporate-income-tax (2026: 22% rate under ZORZFS art. 64, base and non-deductible items, depreciation caps, R&D, investment and green reliefs, losses over five years at 50% of the base, 63% overall cap, interest limitation, advances, return, fines) | source-cited draft |
-| VAT | slovenia-vat-return (2026: 22%, 9.5% and 5% rates, EUR 60,000 small business exemption and EUR 66,000 ceiling, EU SME scheme, monthly or quarterly at EUR 210,000, DDV-O and payment by the last working day or the 20th, VAT ledgers and prefilled return, domestic reverse charge, RP-O and PD-O, VAT groups, fiscal cash registers, B2B e-invoicing from 2028, fines and interest) | source-cited draft |
+| VAT | slovenia-vat-return (2026: 22%, 9.5% and 5% rates, EUR 60,000 small business exemption and EUR 66,000 ceiling, EU SME scheme, monthly or quarterly at EUR 210,000, DDV-O by the last working day (the 20th for RP-O filers) with payment by the last working day, VAT ledgers and prefilled return, domestic reverse charge, RP-O and PD-O, VAT groups, fiscal cash registers, B2B e-invoicing from 2028, fines and interest) | source-cited draft |
 | SC, social contributions | slovenia-social-contributions (tax year 2025) | source-cited draft |
 | PR, payroll withholding | slovenia-payroll (tax year 2025) | source-cited draft |
 | TP, transfer pricing | si-transfer-pricing (2026: related parties, arm's length, recognised interest rate, documentation, fines, CbCR, APA, MAP) | source-cited draft |
