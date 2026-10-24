@@ -7,8 +7,10 @@ description: >
   and capital-gains filing. Use for payments to overseas consultants or associated
   companies, Qatar projects, offshore services used in Qatar, tax residence,
   foreign branches, withholding gross-ups, or moving business activity abroad.
-  Separates the domestic source rules from treaty entitlement and identifies
-  the limits of the current research. Qatar Financial Centre, free-zone relief,
+  Includes foreign-income inclusion and exemptions, substance screening,
+  statutory credit computation, PE expense attribution and business cessation.
+  Separates domestic source rules from treaty entitlement and documents the
+  2026 approved-payer direct-relief conditions. Qatar Financial Centre, free-zone relief,
   treaty-specific rate tables and global minimum tax calculations require
   separate analysis. Produces working papers for qualified professional review.
 jurisdiction: QA
@@ -16,10 +18,10 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 ---
 
-# Qatar cross-border income tax v0.1
+# Qatar cross-border income tax v0.2
 
 ## Who this applies to
 
@@ -105,30 +107,148 @@ For the twelve-month accrual exception, read the [Arabic ER art. 21(1)](https://
 it concerns government **payers**, not a private payer's governmental recipient.
 The English compilation's “due to” wording reverses that distinction.
 
-### PE income, foreign income and credits
+### Qatar PE attribution
 
-A Qatar PE is assessed on taxable income under the ordinary rules, rather than
-automatically charging final 5% withholding on every receipt. Reconcile
-Qatar-source receipts, allowable expenses and losses under ITL arts. 2–9; test
-related-party prices under ER arts. 52–63. This Guide does not complete a PE
-profit-attribution calculation.
+Under amended [ER art. 7](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35),
+first apply the treaty. Domestic attribution includes the PE's own profit and
+Qatar sales of the same/similar goods and other same/similar Qatar activities
+specified in art. 7(1), rather than allocating only by the PE's invoices.
+Attribute the profit of a distinct, separate enterprise performing the same
+functions in comparable conditions, dealing independently with the enterprise.
 
-The amended law is **not a blanket Qatar-source-only rule**. ITL arts. 2 Bis
-through 2 Bis/5 bring specified foreign real-estate income, dividends, interest,
-royalties, technical-service fees, property gains and other service income of
-Qatari projects into the analysis. Check the particular provision's foreign-PE
-and effective-connection conditions. Art. 2 Bis/4 excludes profits attributable
-to a foreign PE if taxed there. Foreign gains and directors' fees exemptions
-under ITL art. 4 require the conditions in ER art. 2, including foreign tax and
-substantial activity where applicable. Do not call all foreign dividends exempt.
+Build the PE reconciliation from those attributable receipts less allowable
+external operating costs and actual head-office executive/general administrative
+costs incurred for the PE. Use a documented allocation tied to the underlying
+costs and PE benefit. Do **not** apply the replaced generic 3% head-office cap.
+Art. 7(3) disallows internal notional royalties, management/service commissions
+and lending interest paid to the head office/other offices, other than actual
+expense reimbursement; the banking exception must be tested separately. It also
+ignores corresponding internal notional receipts charged by the PE, subject to
+the same exception. Add back barred internal charges, apply the ordinary
+[corporate deductions, depreciation and loss rules](qa-corporate-income-tax.md),
+and use the same attribution method each year unless a justified acceptable
+reason supports changing it: ER art. 7(4). Pricing documentation does not turn
+an internally booked notional charge into a deductible payment.
 
-ITL art. 20 permits credit for foreign income tax actually paid on income taxable
-in Qatar, net of foreign refunds, up to Qatar tax due. Keep the foreign assessment,
-payment proof, income reconciliation and exemption analysis. Foreign tax on
-Qatar-exempt income does not create a credit. Source: [ITL arts. 2 Bis–4 and 20;
-ER art. 2](https://www.gta.gov.qa/assets/pdf/Income%20Tax%20Law%20EN%202024.pdf).
-Detailed foreign-income exemption, substance and credit-allocation workings
-remain a gap recorded in the README.
+### Foreign-income inclusion and exemptions
+
+The amended law is **not** a blanket Qatar-source-only rule. A Qatari project
+is a project managed by a resident under ITL art. 1. Make an income-by-income
+schedule with payer/source state, foreign PE connection, gross receipt, associated
+expenses, exemption conditions, foreign assessment, payment and refunds:
+
+| Foreign category | Inclusion/exclusion step | Current provision |
+|---|---|---|
+| Real-estate use, letting or other exploitation | Art. 2 Bis includes it subject to its express conditions: the beneficiary does not operate through a PE in the property state and the property is not effectively connected to that PE | ITL art. 2 Bis |
+| Foreign dividends, interest and royalties | Included under the analogous foreign-PE/effective-connection conditions; do not presume all foreign dividends exempt | ITL art. 2 Bis/1 |
+| Foreign technical-service fees | Included subject to the specified foreign-PE and effective-connection conditions | ITL art. 2 Bis/2 |
+| Disposal of foreign property | Included first; then test the specific gains exemption below | ITL art. 2 Bis/3 and art. 4(6) |
+| Foreign PE profits | Excluded if attributable to that PE and subject to tax in that foreign state | ITL art. 2 Bis/4 |
+| Distribution rights; marketing, procurement, financial brokerage, agency/other intermediary services; guarantees/similar financial support; telecom/broadcast services | Specified foreign income included, with the applicable PE exclusion and exemptions tested separately | ITL art. 2 Bis/5 |
+
+Source: [current Arabic ITL arts. 1–4](https://almeezan.qa/legislations/d444f6ad-68b1-4244-af96-6bf9ee39e065).
+Do not replace the two numbered conditions in arts. 2 Bis–2 Bis/2 with an
+unsourced general foreign-PE rule. Preserve the particular category's facts and
+apply art. 2 Bis/4 to actual foreign-PE profit.
+
+ITL art. 4(6) covers a Qatari project's foreign real estate, movable property
+forming part of its foreign PE including transfer of that PE, and foreign shares,
+interests/rights. Art. 4(7) covers its foreign board-member fees. Under
+[ER art. 2(5)](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35),
+these exemptions require the foreign tax condition and substantial activity
+where applicable. Keep foreign assessment/payment and substance evidence before
+removing the gain/fee. ITL art. 4(8)'s dividend exemption requires distributions
+from profits taxed or exempt under the specified Qatar law conditions; it is
+not an automatic participation exemption for every overseas dividend. Ownership,
+listed-security and natural-person exemptions have their separate art. 4/ER
+art. 2 conditions. Use the current Arabic numbering: the English compilation
+misnumbers some exemption subclauses.
+
+Remove expenses of Qatar-exempt income from the deductible base. Allocate shared
+expenses using accurate regular records; absent those, ER art. 6 uses taxable
+revenue divided by total revenue. The English translation suggesting deduction
+of exempt-income expenses is wrong; the Arabic provision prohibits it. See the
+[corporate Guide](qa-corporate-income-tax.md) for the full reconciliation.
+
+### Substantial-activity working paper
+
+[ER art. 34 Bis](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35)
+implements ITL art. 11 Bis. Record each test for the preceding two financial
+years rather than labelling every holding company a shell:
+
+1. More than 75% of accrued revenue is relevant income (real-estate income,
+   dividends, interest or royalties).
+2. More than 60% of book assets are abroad **or** more than 60% of relevant
+   income is earned/paid through foreign transactions.
+3. Daily operations and significant decision-making functions were outsourced.
+
+All three screening criteria are required. Then test the exclusions in
+art. 34 Bis(2): qualifying regulated-market securities issuers, licensed financial
+institutions, specified domestic-shareholding enterprises whose beneficial
+owners are Qatar tax residents, Qatar-resident holding companies with the
+specified resident owners/ultimate parent, and enterprises with at least five
+full-time employees exclusively carrying out relevant-income activities.
+Document the actual exclusion rather than treating five employees in unrelated
+work as enough.
+
+An in-scope project discloses in its annual income-tax return whether it has
+its own/exclusively used Qatar premises, at least one active Qatar bank account,
+and either (a) a Qatar-tax-resident director with actual, regular and independent
+authority over relevant activities/assets who is not an employee/director of an
+unrelated enterprise, or (b) a majority of full-time employees Qatar-tax-resident.
+Retain the premises, bank, decision-making, director and payroll evidence.
+Failure to report, meet the indicators or supply supporting evidence triggers
+ITL art. 11 Bis's lack-of-substance consequences, including refusal of a residence
+certificate; dependent foreign-income exemptions must be reconsidered. ITL
+art. 24(9) provides a financial penalty of 15% of net income for breach of the
+substantial-activity requirements. This is separate from the ordinary 10% rate.
+
+### Foreign-tax-credit computation
+
+Under [ITL art. 20](https://almeezan.qa/legislations/d444f6ad-68b1-4244-af96-6bf9ee39e065):
+
+1. Finish the Qatar taxable-income reconciliation, including only taxable
+   foreign receipts less allowable associated costs, and excluding exempt PE
+   profits/gains and their costs. Apply eligible ordinary losses and the
+   applicable ownership exemptions before computing Qatar tax.
+2. For each taxable foreign income item, identify an income tax imposed by
+   the foreign state, political subdivision or local authority, **actually paid
+   by this taxpayer**, less any foreign refund. Exclude tax on Qatar-exempt
+   income, unpaid accruals, penalties, VAT/customs and tax merely paid by a
+   different company. Do not assume an underlying corporate-tax credit for a
+   shareholder without a separate legal entitlement.
+3. Sum the eligible net foreign income taxes. The statutory credit is
+   `min(eligible foreign income tax actually paid net of refunds, Qatar tax due)`;
+   remaining Qatar liability is `max(0, Qatar tax due - credit)`. Art. 20 states
+   this Qatar-tax cap, not a per-country basket or a foreign-income fraction
+   formula. Do not introduce either without a separately applicable source.
+4. Keep the item-level eligibility schedule, assessment, payment/refund proof,
+   currency reconciliation and credit-to-return bridge. No carryforward,
+   carryback or refund of excess credit is asserted by this provision. A treaty
+   credit article must be read independently for the specific case.
+
+### Cessation, asset transfers and migration
+
+A departure, branch closure or change in management location requires a
+residence, source, PE and asset-by-asset analysis; it is not automatic clearance.
+For an actual taxable business disposal, [ER art. 5(2)](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35)
+measures proceeds at the higher of agreed price and market value, less cost for
+non-depreciable assets or net book value for depreciable assets; shares use the
+documented capital interest. Reconcile the tax basis and accumulated depreciation,
+related-party pricing, ownership exemptions and allowable losses. Foreign gains
+must first pass the inclusion and conditional exemptions above. A qualifying
+in-kind contribution to a resident joint-stock company has the specific ITL
+art. 4(5) exemption and five-year registered-share retention condition; it is
+not a general exemption for every restructuring.
+
+For a pure management/residence migration with no disposal, do not invent a
+deemed-sale charge from the disposal formula or conclude that every asset escapes
+tax. Record whether a legal/economic transfer, PE disposal, taxable receipt or
+continuing Qatar-source business exists and apply those specific charges. These
+ordinary provisions establish the actual-disposal/cessation computation, not a
+universal residence-departure valuation rule. Specialist reorganisations and
+regime-specific migration relief require their own law. Follow the notice and
+cessation-return rules below even where an exemption removes the tax.
 
 ## Deadlines and filing
 
@@ -156,7 +276,8 @@ demergers can constitute total cessation. ER art. 29(8) requires the return by
 the notification deadline on cessation/transfer, with filing obligations
 continuing until notification. Do not give someone departing Qatar an automatic
 tax clearance or a universal zero exit-tax conclusion. This Guide establishes
-these notice/filing duties but does not resolve asset valuation or migration gains.
+these notice/filing duties alongside the actual-disposal valuation and conditional
+foreign-gain exemption analysis above.
 
 ER art. 37 also requires reporting contracts with nonresidents without a Qatar
 PE regardless of value. Under art. 37(5), notify within **30 days** from the
@@ -189,8 +310,8 @@ not confined to Pillar Two. Art. 24(10) also penalises the last managers/persons
 in charge in the specified failure to retain records for five years after
 dissolution; it does not shorten an otherwise longer retention/dispute duty.
 These are distinct offences. Do not describe failure to withhold as merely a
-late-return fine. Substantial-activity breaches have their own provisions;
-their full computation is outside this Guide's verified ordinary-payment scope.
+late-return fine. ITL art. 24(9) imposes 15% of net income for a substantial-activity
+requirements breach; use the screening and evidence analysis above.
 
 ## Cross-border points
 
@@ -201,16 +322,57 @@ required, PE connection and the income article before calculating relief.
 A signature date alone does not prove a treaty applies to the payment period.
 
 ER art. 22(1) provides a **refund application** by the nonresident or representative
-where an effective treaty supports relief, using the GTA form; GTA refunds an
-accepted claim. [Cabinet Decision 4/2026](https://almeezan.qa/legislations/f6bfa17b-9d1d-47fc-97b3-873859357599)
-adds ER arts. 22 Bis–22 Bis/3 for direct treaty benefits through an approved
-payer (`المدين المعتمد`). That route requires GTA-approved payer status,
-recipient application and residence evidence, treaty entitlement and payer due
-diligence. The ordinary refund route remains. Do not instruct a payer to apply
-a treaty rate directly until its eligibility, operative thresholds and procedure
-are verified. This Guide identifies the route but does not establish its full
-operating conditions. See [current ER arts. 22–22 Bis/3](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35)
-and [GTA refund instructions](https://www.gta.gov.qa/en/taxes-info).
+where an effective treaty supports relief, using the GTA form; preserve the
+withholding certificate, residence evidence, contract, payment and entitlement
+analysis. An accepted claim is refunded. The refund route continues alongside
+the following direct route; ordinary payers do not gain approved status merely
+by holding a recipient residence certificate.
+
+### Direct treaty benefits through an approved payer
+
+[Cabinet Decision 4/2026](https://almeezan.qa/legislations/f6bfa17b-9d1d-47fc-97b3-873859357599)
+inserted ER arts. 22 Bis–22 Bis/3, effective **16 March 2026** (art. 3:
+the day after Gazette publication on 15 March). Before that amendment, this new
+approved-payer mechanism was unavailable; ordinary withholding and the existing
+refund route applied, subject to a separately applicable GTA treaty circular.
+The domestic 5% WHT rate did not change. Read the current procedure with
+[GTA President's Decision 8/2026, art. 1](https://www.gta.gov.qa/assets/pdf/Decision%20of%20the%20President%20of%20the%20General%20Tax%20Authority%20No.%20(8)%20of.pdf):
+
+- **Payer threshold:** in the preceding year, at least **1,250 reported WHT
+  transactions OR QAR 10,000,000 actually withheld**. The money test is tax
+  withheld, not gross invoices or turnover. Decision 8 art. 2 exempts entities
+  granted status by GTA for compliance purposes from these volume thresholds;
+  it does not remove approval or the other conditions. Decision 8 art. 3 makes
+  its thresholds effective from issuance on 2 April 2026; do not backdate those
+  published operating thresholds to payments before that decision.
+- **Approval:** the registered payer applies on the GTA form with the prescribed
+  resource/compliance information and questionnaire. GTA decides within 60 days;
+  silence is rejection. Status lasts three years; apply for renewal at least
+  60 days before expiry. Withdrawal is reasoned and bars regrant for one year:
+  ER art. 22 Bis/1. Keep the actual approval and validity period.
+- **Eligible payment:** an approved payer's contract payment to a treaty-resident
+  nonresident, not connected with a Qatar PE, within the covered WHT categories;
+  the provisions also cover qualifying continuing payments under existing
+  contracts: art. 22 Bis.
+- **Recipient application:** before payment, apply to the approved payer with a
+  residence certificate, beneficial-owner and no-PE-connection evidence, the
+  applicable treaty article/rate and proof of all entitlement conditions at the
+  benefit date. The recipient must declare that it has made no arrangement whose
+  main purpose is obtaining treaty benefits: art. 22 Bis/2.
+- **Payer review:** carry out and retain due diligence, establish the actual
+  beneficial use of the services and absence of an intermediary financial
+  arrangement, and respond to the recipient within 60 days. Silence rejects
+  the application; the recipient has no appeal against that payer rejection
+  under this direct procedure. Notify GTA of the nature/amount and recipient;
+  provide requested information within 30 days: art. 22 Bis/3.
+- **Liability:** the approved payer bears unwithheld tax and the applicable
+  penalties if direct-benefit conditions are not met or the treaty is misused. Only apply the evidenced treaty
+  benefit after the approval, payment and recipient tests pass; retain the
+  domestic-rate computation and the precise relief calculation. If direct
+  conditions fail, use ordinary withholding and examine the refund route.
+
+Source: [current ER arts. 22–22 Bis/3](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35),
+Decision 4/2026 and Decision 8/2026 above. No treaty-specific rate is assumed.
 
 Keep domestic and treaty PE tests separate. Assess foreign tax and filing duties
 in the other country as well. TP documentation and nonresident withholding are
@@ -242,31 +404,49 @@ expected:
   recipient_cash: 95000
 ```
 
-### 2. Offshore service used in Qatar, contract guarantees net fee
+### 2. Taxable foreign royalty, exempt foreign PE and credit cap
 
-The same factual exclusions apply, but all work is performed offshore and the
-service is used/consumed by the Qatar business. ER art. 21(2)'s use/benefit rule
-requires withholding despite offshore performance. The contract guarantees the
-supplier QAR 95,000 net and requires the payer to bear the tax. Gross
-consideration is QAR 100,000, withholding QAR 5,000 and the payer's cash cost
-QAR 100,000. Applying 5% to QAR 95,000 would leave the supplier below the
-guaranteed net amount. No treaty outcome is assumed.
+Assume an ordinary wholly foreign-owned Qatar project earns QAR 1,000,000
+foreign royalties with QAR 200,000 directly related allowable costs. The rights
+are not connected to a foreign PE; art. 2 Bis/1 includes this income. Separately,
+a foreign PE has QAR 300,000 net profit subject to foreign tax, satisfying the
+art. 2 Bis/4 exclusion; its own costs are already inside that net figure and
+are not deducted from the royalty. No other income, losses or exemptions apply.
+The taxpayer has actually paid QAR 100,000 foreign income tax on the royalty,
+received a QAR 5,000 refund, and paid QAR 30,000 on the exempt PE profit.
+
+Qatar base is QAR 800,000, pre-credit tax QAR 80,000. Eligible royalty tax is
+QAR 95,000; the PE's QAR 30,000 cannot enter the credit. Art. 20 caps the credit
+at QAR 80,000, leaving no Qatar tax and QAR 15,000 excess for which no automatic
+carryforward/refund is asserted. This illustrates actual eligibility and the
+statutory cap without assuming a treaty or an invented allocation ratio.
 
 ```oa-check
-name: Qatar offshore-benefit service contractual gross-up
+name: Qatar foreign royalty credit excludes exempt PE tax and applies cap
 inputs:
-  guaranteed_net: 95000
-  withholding_rate: 0.05
+  royalty: 1000000
+  royalty_cost: 200000
+  foreign_pe_profit: 300000
+  foreign_pe_exclusion: 300000
+  royalty_tax_paid: 100000
+  royalty_tax_refund: 5000
+  exempt_pe_tax_paid: 30000
+  exempt_pe_tax_ineligible: 30000
+  qatar_rate: 0.10
 steps:
-  gross_fee: guaranteed_net / (1 - withholding_rate)
-  withholding: gross_fee * withholding_rate
-  recipient_cash: gross_fee - withholding
-  payer_cash: recipient_cash + withholding
+  taxable_base: royalty - royalty_cost + foreign_pe_profit - foreign_pe_exclusion
+  qatar_before_credit: taxable_base * qatar_rate
+  eligible_foreign_tax: royalty_tax_paid - royalty_tax_refund + exempt_pe_tax_paid - exempt_pe_tax_ineligible
+  credit: min(eligible_foreign_tax, qatar_before_credit)
+  qatar_payable: max(0, qatar_before_credit - credit)
+  excess_no_automatic_relief: eligible_foreign_tax - credit
 expected:
-  gross_fee: 100000
-  withholding: 5000
-  recipient_cash: 95000
-  payer_cash: 100000
+  taxable_base: 800000
+  qatar_before_credit: 80000
+  eligible_foreign_tax: 95000
+  credit: 80000
+  qatar_payable: 0
+  excess_no_automatic_relief: 15000
 ```
 
 ## Ask the client first
@@ -288,6 +468,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| GTA President Decision 8/2026, arts. 1–2, approved-payer thresholds and exception | https://www.gta.gov.qa/assets/pdf/Decision%20of%20the%20President%20of%20the%20General%20Tax%20Authority%20No.%20(8)%20of.pdf | 2026-10-24 |
 | GTA consolidated ITL 24/2018 incorporating Law 11/2022 and ER 39/2019 incorporating Decision 3/2023, articles cited above | https://www.gta.gov.qa/assets/pdf/Income%20Tax%20Law%20EN%202024.pdf | 2026-10-24 |
 | Current Arabic ITL, including amended art. 24 | https://almeezan.qa/legislations/d444f6ad-68b1-4244-af96-6bf9ee39e065 | 2026-10-24 |
 | Current Arabic ER, including WHT art. 21 and treaty mechanisms | https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35 | 2026-10-24 |
@@ -300,12 +481,11 @@ expected:
 | GTA treaty directory | https://www.gta.gov.qa/en/agreements | 2026-10-24 |
 | GTA global minimum-tax framework, separate regime | https://www.gta.gov.qa/en/global-minimum | 2026-10-24 |
 
-Not yet confirmed: complete foreign-income exemption/substance and credit-allocation
-workings, PE profit attribution, migration/cessation asset valuation and gain
-calculations, and approved-payer direct treaty-relief operating thresholds and
-procedures. These are recorded as XB gaps in the pack README. No unverified
-treaty rate or universal exit-tax exemption is supplied.
+Not yet confirmed: none within ordinary mainland foreign-income, PE attribution,
+actual-disposal/cessation and nonresident-payment scope described here. Treaty
+rates, specialist reorganisations, QFC/free-zone regimes and detailed Pillar Two
+computations require separate sources and are outside this Guide.
 
-General reference only. This source-cited draft is not a filing or a professional
-attestation. A qualified Qatar tax professional must review the taxpayer's facts,
-supporting documents and applicable law before filing or taking a tax position.
+General reference only. A qualified Qatar tax professional must review the
+facts, contracts, treaty entitlement, records and operative filings before acting.
+This is a source-cited draft, not professional attestation.

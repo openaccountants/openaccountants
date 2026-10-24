@@ -8,7 +8,9 @@ description: >
   Use for Qatar related-party services, goods, financing, intercompany charges,
   documentation thresholds, or Dhareeba transfer pricing filing questions. Separates
   entity turnover and asset tests from the multinational group revenue test and
-  identifies deferred subsidiary reporting provisions. Produces a sourced working
+  records the current suspension of subsidiary local filing, with the Qatar
+  legislation, GTA circular and jurisdiction-confirmed implementation evidence.
+  Includes bilateral APA application and rollback procedures. Produces a sourced working
   paper for professional review; Qatar Financial Centre rules and the separate
   global minimum tax computation require their own analysis.
 jurisdiction: QA
@@ -16,10 +18,10 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 ---
 
-# Qatar transfer pricing v0.1
+# Qatar transfer pricing v0.2
 
 ## Who this applies to
 
@@ -134,7 +136,17 @@ arts. 1–5 and 8–9, replaces Decision 21/2018. For a non-excluded MNE group:
 - Arts. 2(2)–(3) and 3(2), concerning local subsidiary filing, surrogate relief
   and reporting-entity identification, start only for a fiscal year designated
   by a President's decision: art. 8(2). Do not activate them merely because
-  they appear in the law. Their current activation is not established here.
+  they appear in the law. For current application, the
+  [OECD 2026 Qatar peer review](https://www.oecd.org/en/publications/country-by-country-reporting-compilation-of-2026-peer-review-reports_353cb719-en/full-report/qatar_b342d28e.html)
+  records local filing as suspended, Qatar's confirmation that its rules are
+  unchanged and effectively applied, and its non-reciprocal status without
+  local filing. Read that jurisdiction-confirmed implementation evidence with
+  art. 8(2) and GTA Circular 10/2020: an ordinary non-parent subsidiary is not
+  directed to file a CbC report merely from the uncommenced statutory clauses.
+  This conclusion rests on positive current implementation evidence, not failure
+  to locate a commencement decision. The peer review also records surrogate-parent
+  filing as permitted; a voluntary surrogate role requires its own eligibility
+  and exchange analysis and is not a mandatory local-subsidiary filing rule.
 
 For a calendar 2026 Qatar ultimate parent, these statutory dates are
 31 December 2026 for the notification and 31 December 2027 for the report.
@@ -186,9 +198,29 @@ withholding. See [qa-cross-border-tax](qa-cross-border-tax.md).
 An adjustment does not itself give the counterparty a foreign deduction or
 corresponding adjustment. Inspect the applicable treaty and its dispute procedure
 through the [GTA treaty directory](https://www.gta.gov.qa/en/agreements).
-ER art. 64 contemplates bilateral advance pricing procedures; this Guide does not
-establish current application forms or promise acceptance. Qatar's global minimum
-tax is a separate computation: [GTA minimum-tax framework](https://www.gta.gov.qa/en/global-minimum).
+ER art. 64 contemplates bilateral advance pricing arrangements. Under the
+[GTA 2026 bilateral APA guide, pp. 2–8](https://www.gta.gov.qa/assets/pdf/GTA_BAPAM_Annex_Guide_En_20260429.pdf),
+notify both competent authorities before filing, then submit identical requests
+simultaneously to both. Use English if there is no common language unless the
+authorities agree otherwise. Qatar's acceptance target is 30 days from a complete
+application; its resolution target is 30 months, with an aim of 24 as processes
+improve. These are guidance targets, not statutory acceptance guarantees.
+The guidance generally envisages at least five covered years, including two
+prospective years, with unchanged facts. Agree the work plan after acceptance,
+supply information to both authorities and continue filing covered-year returns
+on the request's positions. Authorities conduct substantive negotiations; taxpayers
+do not attend those negotiations. Renewal can be requested in the final year,
+subject to the facts and authority decision.
+
+The [GTA rollback guidance, sections 2–6](https://www.gta.gov.qa/assets/pdf/Guidance_on_Roll-Back_of_Bilateral_Advance_Pricing_Arrangements_20260329.pdf)
+requires substantially unchanged earlier-year facts, an unexpired assessment
+limitation period and GTA verification. That verification is not itself a tax
+audit or an automatic adjustment. Separate audits and implementation adjustments
+under an agreed APA remain possible. Keep rollback eligibility separate from
+ordinary return correction and treaty dispute deadlines; no acceptance is promised.
+
+Qatar's global minimum tax remains a separate computation:
+[GTA minimum-tax framework](https://www.gta.gov.qa/en/global-minimum).
 
 ## Two worked examples that recompute
 
@@ -267,6 +299,9 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
+| OECD 2026 Qatar CbCR peer review, jurisdiction-confirmed current implementation and suspension, read with Qatar law/GTA circular | https://www.oecd.org/en/publications/country-by-country-reporting-compilation-of-2026-peer-review-reports_353cb719-en/full-report/qatar_b342d28e.html | 2026-10-24 |
+| GTA bilateral APA guide, pp. 2–8 | https://www.gta.gov.qa/assets/pdf/GTA_BAPAM_Annex_Guide_En_20260429.pdf | 2026-10-24 |
+| GTA rollback guidance, sections 2–6 | https://www.gta.gov.qa/assets/pdf/Guidance_on_Roll-Back_of_Bilateral_Advance_Pricing_Arrangements_20260329.pdf | 2026-10-24 |
 | GTA consolidated Income Tax Law 24/2018, including Law 11/2022; ER 39/2019, including Decision 3/2023; arts. cited above | https://www.gta.gov.qa/assets/pdf/Income%20Tax%20Law%20EN%202024.pdf | 2026-10-24 |
 | Current Arabic ITL, including amended art. 24 | https://almeezan.qa/legislations/d444f6ad-68b1-4244-af96-6bf9ee39e065 | 2026-10-24 |
 | Current Arabic ER, including arts. 52–64 | https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35 | 2026-10-24 |
@@ -281,10 +316,11 @@ expected:
 | GTA treaty directory | https://www.gta.gov.qa/en/agreements | 2026-10-24 |
 | GTA global minimum-tax framework, separate regime | https://www.gta.gov.qa/en/global-minimum | 2026-10-24 |
 
-Not yet confirmed: current activation of Decision 16/2019 art. 8(2) and
-operational bilateral APA procedures. TP remains partial in the pack README
-pending the subsidiary CbCR commencement check; failure to find a decision is
-not proof that none exists.
+Not yet confirmed: none within ordinary mainland pricing, declaration,
+master/local files and current mandatory CbCR scope. A specific voluntary
+surrogate-parent arrangement and treaty dispute case require their own
+eligibility, exchange and procedural analysis. QFC and Pillar Two are separate
+special regimes.
 
 General reference only. This source-cited draft is not a filing or a professional
 attestation. A qualified Qatar tax professional must review the taxpayer's facts,
