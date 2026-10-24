@@ -1,10 +1,10 @@
 ---
 name: malta-formation
 description: "Use this skill whenever asked about forming, incorporating or registering a company in Malta in 2026. Covers the entity types (sole trader, partnership en nom collectif, private limited company, single member company, public limited company), the Companies Act rules on name, memorandum, minimum share capital (EUR 1,164.69 private, EUR 46,587.47 public) and paid-up share (20% and 25%), directors and the company secretary, the Malta Business Registry registration fee (EUR 100 electronic up to EUR 1,500 authorised capital), beneficial owner filings, the annual return (EUR 85 electronic fee, 42 days), accounts deadlines, tax and VAT registration, and post-formation compliance. Trigger on: set up a company in Malta, Malta Ltd, MBR registration, BAROS, incorporate in Malta, Malta company costs, Malta share capital, Malta memorandum and articles, company secretary Malta."
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 verified_by: pending
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Malta Formation v1.1
+# Malta Formation v1.2
 
 Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
 
@@ -148,7 +148,7 @@ Increasing authorised capital later costs the difference between the registratio
 | VAT returns | As set by registration type | `malta-vat-return` |
 | FSS payroll filings | Monthly payments; annual FS3 and FS7 | `malta-payroll` |
 
-Penalties: the Registrar imposes penalties up to the maxima in the Eleventh Schedule to Cap. 386 (art. 427). As the consolidated text reads, a failure to file the annual return carries up to EUR 2,329 plus up to EUR 46 a day (art. 184(3)), and a failure to deliver annual accounts the same (art. 183(6)). Beneficial owner defaults carry up to EUR 5,000 plus up to EUR 100 a day (S.L. 386.19, penalty schedule).
+Penalties: the Registrar imposes penalties up to the maxima in the Eleventh Schedule to Cap. 386 (art. 427). The Schedule was substituted by article 42 of Act I of 2026, in force from 20 March 2026 (L.N. 61 of 2026). A failure to file the annual return carries up to EUR 2,329 plus up to EUR 46 a day (art. 184(3)), and a failure to deliver annual accounts the same (art. 183(6)). A late beneficial owner change notice (reg. 6(5)) or annual confirmation (reg. 6A(2)) carries up to EUR 5,000 plus up to EUR 100 a day; failing to comply with regulation 5 within six months (reg. 5(6)) carries up to EUR 10,000 plus up to EUR 500 a day (S.L. 386.19, Second Schedule).
 
 ### Bank account
 
@@ -180,7 +180,7 @@ Two founders form a private company with authorised capital of EUR 1,200, all su
 
 - Paid up on signing: 1,200 × 20% = EUR 240.
 - Registration fee (capital up to EUR 1,500, electronic): EUR 100.
-- Annual return fee each year (electronic): EUR 85.
+- Annual return fee each year (electronic): EUR 85, first due with the return made up to the first anniversary of registration.
 
 ```oa-check
 name: Private company, EUR 1,200 authorised capital, 20% paid up, electronic filing
@@ -191,10 +191,10 @@ inputs:
   annual_return_fee: 85
 steps:
   - paid_up: authorised * paid_share
-  - first_year_statutory_fees: registration_fee + annual_return_fee
+  - registration_plus_first_annual_return: registration_fee + annual_return_fee
 expected:
   paid_up: 240
-  first_year_statutory_fees: 185
+  registration_plus_first_annual_return: 185
 ```
 
 ### Example 2: EUR 20,000 authorised capital
@@ -235,12 +235,12 @@ expected:
 | Companies Act, Cap. 386 (arts. 4, 7, 67 to 79, 137 to 139, 146, 163, 181 to 185, 209 to 212, 427, Eleventh Schedule) | https://legislation.mt/eli/cap/386/eng/pdf | 2026-10-23 |
 | Companies Act (Fees) Regulations, S.L. 386.03 | https://legislation.mt/eli/sl/386.3/eng/pdf | 2026-10-23 |
 | Companies Act (Register of Beneficial Owners) Regulations, S.L. 386.19 | https://legislation.mt/eli/sl/386.19/eng/pdf | 2026-10-23 |
+| Commencement Notice, L.N. 61 of 2026 (Act I of 2026 art. 42 in force 20 March 2026) | https://legislation.mt/eli/ln/2026/61/eng | 2026-10-24 |
 | Malta Business Registry, Fee Structure | https://mbr.mt/fees/ | 2026-10-23 |
 | Income Tax Act, Cap. 123 (arts. 2, 56(6)) | https://legislation.mt/eli/cap/123/eng/pdf | 2026-10-23 |
 | Income Tax (Statutory Dates) Rules, S.L. 372.16 | https://legislation.mt/eli/sl/372.16/eng/pdf | 2026-10-23 |
 
 Not yet confirmed:
-- Whether article 42 of Act I of 2026, which substituted the Eleventh Schedule penalties, is in force; the figures above are as the consolidated text reads.
 - MBR's current document checklist for BAROS registration (evidence of paid-up capital, identity documents).
 - How MTCA issues the company's tax number after MBR registration.
 

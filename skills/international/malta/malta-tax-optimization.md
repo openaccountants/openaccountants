@@ -1,10 +1,10 @@
 ---
 name: malta-tax-optimization
 description: "Use this skill when asked how a self-employed individual or small business owner in Malta can lawfully reduce or time income tax for basis year 2026 (year of assessment 2027). Covers the 10% part-time final tax and its EUR 12,000 cap, joint and parent rate tables, the sole trader or company choice (35% with shareholder refunds, the elective 15% final tax), deductions people miss (article 14 test, home for the elderly fees, the car cost cap), wear and tear timing, losses, provisional tax, VAT registration choice, pension tax credits, and the anti-avoidance rule in article 51. Trigger on: reduce tax Malta, tax planning Malta, save tax Malta, pay less tax Malta, deductions I'm missing, part-time 10% Malta, incorporate in Malta, pension tax credit Malta. Links the computation skills instead of repeating them."
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 verified_by: pending
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Malta Tax Optimization
 
-## Malta Tax Optimization: Self-Employed Skill v1.1
+## Malta Tax Optimization: Self-Employed Skill v1.2
 
 Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
 
@@ -97,7 +97,7 @@ Every deduction below must pass article 14(1) ("wholly and exclusively incurred 
 
 Entertainment: the Income Tax Act has no specific rule. Treat client entertainment as private unless the article 14(1) test is clearly met, and flag it.
 
-Social security Class 2: the Income Tax Act contains no deduction for social security contributions. `malta-income-tax` treats Class 2 as a memo item. Confirm on the current MTCA return before claiming it.
+Social security Class 2: Part IV of the Income Tax Act has no specific provision on social security contributions either way, and MTCA's 2026 return booklet (basis year 2025) does not mention them. `malta-income-tax` treats Class 2 as a memo item. Do not claim it until the position is confirmed.
 
 ## Section 4: Capital Allowances (Wear and Tear)
 
@@ -117,7 +117,9 @@ Rule 7(a) of S.L. 123.01: an asset acquired on any day other than the first day 
 | Furniture, fixtures, fittings and soft furnishings; lifts; other plant | 10 | 10% |
 | Electrical and plumbing installations and sanitary fittings | 15 | about 6.67% |
 
-Industrial buildings and structures: at most 2% of cost a year, plus an initial deduction of 10% in the year first used (Cap. 123 art. 14(1)(j)).
+Industrial buildings and structures: at most 2% of cost a year, excluding the land (Cap. 123 art. 14(1)(f), proviso (i)), plus an initial deduction of one-tenth in the year first used (art. 14(1)(j)).
+
+Article 14(1)(j) also gives an initial deduction of one-fifth on plant and machinery first used in the year, but its proviso lets the Minister end it by order in the Gazette. Whether that order has been made was not checked; the examples below do not claim it.
 
 Allowances are only given where proper records of cost are kept (rule 5) and are cut to the business-use share (rule 11). S.L. 123.01 has no de minimis amount for writing off small items in one year.
 
@@ -177,9 +179,9 @@ Planning points:
 | Personal retirement scheme tax credit | 25% of qualifying contributions, up to EUR 750 a year. Each spouse may claim. Not carried forward. | MTCA tax return booklet 2026 (basis year 2025); Cap. 123 art. 57 |
 | Voluntary occupational pension scheme | 25% of the employee's qualifying contributions, up to EUR 750 a year | MTCA tax return booklet 2026; S.L. 123.175 |
 | Pension income exemption, age 61 and over | Basis year 2026: 100% of pension income under art. 4(1)(d), up to EUR 37,104. Basis year 2025: 80%, up to EUR 13,309 | Pensions (Tax Exemption) Rules, S.L. 123.204 rule 3 (L.N. 53 of 2026) |
-| Pensioner rebate | From year of assessment 2027, a pensioner using the exemption and taxed on the married table gets a rebate of (chargeable income less 15,000) × 15%, capped at EUR 540 | S.L. 123.204 rule 4 |
+| Pensioner rebate | From year of assessment 2027, a pensioner using the exemption and taxed at the married rates in art. 56(1)(a)(i) (the married table without qualifying children) gets a rebate of (chargeable income less 15,000) × 15%, capped at EUR 540. No refund and no carry-forward. | S.L. 123.204 rule 4 |
 
-Article 57 of the Act states 15% and EUR 150 "or such other amount as may be prescribed". The 25% and EUR 750 figures are from MTCA's booklet for basis year 2025. Confirm the 2026 figures before quoting them.
+Article 57(1) of the Act states 15% and EUR 150 "or such other amount as may be prescribed by the Minister". The 25% and EUR 750 figures are in MTCA's 2026 booklet for basis year 2025 (read on 2026-10-24). Confirm the basis year 2026 figures before quoting them.
 
 Malta Enterprise runs grant and tax-credit schemes for small businesses (for example Micro Invest). Their rates and caps change by call and are not in the Income Tax Act. Read the current Malta Enterprise guidelines before quoting a figure.
 
@@ -296,7 +298,8 @@ Rates and dates also rely on the sources listed in `malta-income-tax`, `mt-corpo
 
 Not yet confirmed:
 - The 2026 personal retirement scheme and occupational pension tax credit figures (the 25% and EUR 750 are from MTCA's booklet for basis year 2025).
-- Whether Class 2 social security contributions are deductible on the 2026 return.
+- Whether Class 2 social security contributions are deductible. Checked on 2026-10-24: Cap. 123 Part IV has no specific provision and MTCA's 2026 booklet is silent, so it turns on the general article 14(1) test, which no official source applies to Class 2.
+- Whether the one-fifth initial deduction on plant and machinery in art. 14(1)(j) has been ended by Ministerial order.
 - Whether the Gazette notice and rules starting the 175% deduction in art. 14(1)(ha) have been issued.
 - 2026 Class 2 weekly amounts (see `malta-ssc`).
 - Current Malta Enterprise scheme rates and caps.

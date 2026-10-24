@@ -1,10 +1,10 @@
 ---
 name: malta-bookkeeping
 description: "Use this skill whenever asked about bookkeeping, a chart of accounts, expense classification, asset capitalisation, depreciation against tax wear and tear, bank reconciliation, record keeping or management accounts for a Maltese company or self-employed person in 2026. Covers a recommended chart of accounts mapped to GAPSME statements, revenue and VAT recording, which expenses fail the Income Tax Act test, the S.L. 123.01 minimum years for wear and tear and the EUR 14,000 car cap, the EUR 1,160 VAT capital goods threshold, record retention (10 years Companies Act, 9 years income tax, 6 years VAT), and the GAPSME and Companies Act size tests. Trigger on: chart of accounts Malta, nominal codes, bookkeeping Malta, capitalise or expense, depreciation Malta, wear and tear, bank reconciliation, GAPSME, small company accounts Malta."
-version: 1.1
+version: 1.2
 jurisdiction: MT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 verified_by: pending
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Malta Bookkeeping v1.1
+# Malta Bookkeeping v1.2
 
 Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
 
@@ -220,7 +220,7 @@ These are tax minimums, not accounting lives. Accounting depreciation follows th
 | Electrical and plumbing installations and sanitary fittings | 15 |
 | Cable and pipeline infrastructure | 20 |
 
-Rules: straight line on cost (rule 3); a full year's allowance in the year of acquisition and none in the year of disposal (rule 7); only with proper cost records (rule 5); cut to the business-use share (rule 11). Industrial buildings: at most 2% a year plus a 10% initial deduction in the first year of use (Cap. 123 art. 14(1)(j)). Cars: cost capped at EUR 14,000 (S.L. 123.07 rule 3(1)).
+Rules: straight line on cost (rule 3); a full year's allowance in the year of acquisition and none in the year of disposal (rule 7); only with proper cost records (rule 5); cut to the business-use share (rule 11). Industrial buildings: at most 2% of cost a year, excluding the land (Cap. 123 art. 14(1)(f), proviso (i)), plus a one-tenth initial deduction in the first year of use (art. 14(1)(j)). Cars: cost capped at EUR 14,000 (S.L. 123.07 rule 3(1)).
 
 ## Section 6: Profit and Loss Layout
 
@@ -311,7 +311,8 @@ Two separate tests apply. The detail and the two-year rules are in `malta-financ
 | --- | --- | --- | --- | --- | --- |
 | GAPSME small entity | EUR 4,000,000 | EUR 8,000,000 | 50 | Balance sheet, income statement, notes | S.L. 281.05 reg. 5(1)(a) |
 | GAPSME medium-sized entity | EUR 20,000,000 | EUR 40,000,000 | 250 | Adds statement of changes in equity and cash flow statement | S.L. 281.05 reg. 5(1)(b) |
-| Companies Act small company (balance sheet dates from 20 March 2026) | EUR 5,000,000 | EUR 10,000,000 | 50 | No directors' report | Cap. 386 art. 185(1) |
+| Companies Act small company, new limits (in force 20 March 2026) | EUR 5,000,000 | EUR 10,000,000 | 50 | No directors' report | Cap. 386 art. 185(1), as substituted by Act I of 2026 art. 26; L.N. 61 of 2026 |
+| Companies Act small company, previous limits | EUR 4,000,000 | EUR 8,000,000 | 50 | No directors' report | Cap. 386 art. 185(1) before Act I of 2026 |
 | Companies Act micro, private companies only | EUR 46,600 | EUR 93,000 | 2 | No audit under the Act | Cap. 386 art. 185(2) |
 
 A limit is met when the entity does not exceed at least two of the three. Every company not micro-exempt is audited. A self-employed person files no GAPSME accounts but keeps the article 19 records.
@@ -403,13 +404,15 @@ expected:
 | Deduction for Wear and Tear of Plant and Machinery Rules, S.L. 123.01 | https://legislation.mt/eli/sl/123.1/eng/pdf | 2026-10-23 |
 | Income Tax (Deductions) Rules, S.L. 123.07 | https://legislation.mt/eli/sl/123.7/eng/pdf | 2026-10-23 |
 | Accountancy Profession (GAPSME) Regulations, S.L. 281.05 (regs. 4, 5) | https://legislation.mt/eli/sl/281.5/eng/pdf | 2026-10-23 |
+| Commencement Notice, L.N. 61 of 2026 (Act I of 2026 arts. 17, 26 to 29, 31, 41, 42 in force 20 March 2026) | https://legislation.mt/eli/ln/2026/61/eng | 2026-10-24 |
+| MBR, Informative note: entry into force of legislation (L.N. 61 of 2026) | https://www.mbr.mt/post/informative-note-entry-into-force-of-legislation-1 | 2026-10-24 |
 | VAT Act, Cap. 406 (arts. 19, 48) | https://legislation.mt/eli/cap/406/eng/pdf | 2026-10-23 |
 | VAT (Adjustments relating to Input Tax on Capital Goods) Regulations, S.L. 406.12 | https://legislation.mt/eli/sl/406.12/eng/pdf | 2026-10-23 |
 
 Not yet confirmed:
 - Whether Class 2 social security contributions are deductible on the 2026 return.
 - Whether the VAT capital goods threshold of EUR 1,160 is tested with or without VAT (see `malta-vat-return`).
-- The Companies Act size limits are summarised from `malta-financial-statements`; the commencement point (20 March 2026) is explained there.
+- Which accounts use the new article 185(1) limits. L.N. 61 of 2026 brought article 26 of Act I of 2026 into force on 20 March 2026 with no transitional rule. MBR's informative note on L.N. 61 says the new limits are mandatory for financial reporting periods starting on or after 20 March 2026 and bars early or retroactive use; on that reading a 31 December 2026 year end still uses the previous limits. `malta-financial-statements` reads it by balance sheet date instead.
 
 ## Disclaimer
 
