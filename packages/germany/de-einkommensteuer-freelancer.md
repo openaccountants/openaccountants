@@ -3,7 +3,7 @@ name: de-einkommensteuer-freelancer
 description: Computes Einkommensteuer for Freiberufler including Betriebsausgaben, Sonderausgaben, and progressive tax brackets.
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-22
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -204,7 +204,7 @@ Private costs: they do not reduce profit. They are taken off the total income an
 | --- | --- | --- |
 | Carry-back cap, single assessment | EUR 1,000,000 | [§ 10d(1) EStG](https://www.gesetze-im-internet.de/estg/__10d.html): "bis zu einem Betrag von 1 000 000 Euro" |
 | Carry-back cap, spouses assessed together | EUR 2,000,000 | § 10d(1): "2 000 000 Euro" |
-| Carry-forward: above a total income of 1 million euro (2 million for spouses assessed together) losses are deducted only up to this share of the excess | 70% | § 10d(2): "bis zu 70 Prozent des 1 Million Euro übersteigenden Gesamtbetrags der Einkünfte" |
+| Carry-forward: above a total income of 1 million euro (2 million for spouses assessed together) losses are deducted only up to this share of the excess | 70% for 2024 to 2027; 60% from 2028 | § 10d(2): "bis zu 70 Prozent des 1 Million Euro übersteigenden Gesamtbetrags der Einkünfte"; back to 60 Prozent from 2028 under BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |
 
 A loss first offsets other income of the same year; the rest goes back one year, then two, ahead of special expenses (on request carry-back is waived, only as a whole), and then forward without time limit. The office fixes the remaining loss each year end (§ 10d(4)), which triggers a duty to file the next year. Trade tax losses follow § 10a GewStG (`de-trade-tax`).
 

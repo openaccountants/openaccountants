@@ -1,13 +1,16 @@
 ---
 name: cz-payroll
 description: "Use for running Czech payroll as an employer in 2026. Covers registration with ČSSZ, the tax office and health insurers under the new single monthly employer report (JMHZ), the monthly gross-to-net sequence (employee social insurance 7.1%, health insurance 4.5%, the 15% and 23% tax advance, the signed prohlášení k dani, the CZK 2,570 monthly taxpayer credit and child credits), DPP and DPČ agreements and the 15% withholding tax below CZK 12,000 and CZK 4,500, the 2026 minimum wage of CZK 22,400, the CZK 129.50 tax-free meal contribution, sick pay for the first 14 days (náhrada mzdy), the annual reconciliation and vyúčtování, payslips, record keeping and penalties. Trigger on: Czech payroll, mzdy, výplatní páska, záloha na daň, srážková daň, DPP, DPČ, prohlášení poplatníka, JMHZ, stravenkový paušál, náhrada mzdy, roční zúčtování. Out of scope: cz-employee-income-tax (the employee's own return), cz-employee-contributions (contribution rules in depth), cz-social-health (self-employed), cz-cross-border."
-jurisdiction: CZ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: CZ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Czech Republic: running payroll (2026)
@@ -240,3 +243,23 @@ expected:
 | Act 582/1991 Sb. on social security administration, § 35a | https://e-sbirka.gov.cz/sb/1991/582 | 2026-10-23 |
 
 Not yet confirmed: whether the health insurance minimum base applies to a worker insured only through a DPP or DPČ (Act 592/1992 Sb. § 3(8) does not list them; the examples avoid the point); how the employee's one-third health share is rounded when 13.5% of the base does not divide by three (the examples use bases where it does); the legal basis, and the 2026 form, of any monthly statement each health insurer asks employers for (JMHZ does not replace it under the ČSSZ list); the current Civil Code default interest rate used for late-payment interest and penále (not given on the pages read); how the reduced hourly figure for sick pay is rounded when it is not a whole number of haléře (Labour Code § 192(2) applies the sickness benefit method "in a similar way"; Example 3 uses earnings below the first threshold, where the point does not arise).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

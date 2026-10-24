@@ -2,13 +2,16 @@
 name: sx-personal-income-tax-tables
 description: >
   Sint Maarten personal income tax calculation reference for calendar year 2026. Uses enacted regulation AB 2026 number 11 and its income-tax annex to explain the low-income override, marginal bands, lookup-table interpolation and basic credit already embedded in published amounts. Reproduces verified worked examples and distinguishes taxable income from salary or turnover. Highlights rounding risks when rebuilding the schedule and avoids assuming eligibility for child, elderly or sole-earner supplements. Applies to Dutch Sint Maarten, not French Saint-Martin. Residence, deductions, filing, credits eligibility and complete amendment reconciliation require further work. Independent accountant review is pending.
-jurisdiction: SX
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SX
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Sint Maarten: 2026 personal income-tax tables
@@ -60,3 +63,23 @@ The annex lists sole-earner, child and elderly supplements, but a rate table alo
 Checked 22 October 2026. Official regulation and Annex I downloaded; introductory examples and nil-tax instruction visually checked. The government host's expired certificate required a one-off certificate-verification bypass for these public PDF downloads; the indexed official titles and matching PDF content were also checked. The alternate www1 host returned an under-construction page.
 
 Residence, taxable scope, deductions, filing obligations, supplement eligibility, constitutional-review status and the complete amendment history still require reconciliation before merge. Independent accountant review has not occurred. This is a source-cited calculation draft, not comprehensive country coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

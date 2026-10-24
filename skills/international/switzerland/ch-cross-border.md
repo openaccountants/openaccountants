@@ -1,13 +1,16 @@
 ---
 name: ch-cross-border
 description: "Switzerland cross-border tax hub for 2026: when a person or company becomes or stops being taxable in Switzerland. Covers the residence tests for individuals (DBG art. 3: domicile, or a stay of 30 days with work or 90 days without) and companies (seat or effective management), arriving (lump-sum taxation under DBG art. 14, tax at source for foreign employees and the subsequent ordinary assessment from 2021), leaving (no exit tax for individuals; hidden reserves and 35% withholding tax when a company moves abroad), non-residents with Swiss income (employment, board fees, mortgage interest, pensions), the 35% Verrechnungssteuer and treaty refunds, and EU social security coordination. Calendar tax year. Trigger on: moving to Switzerland, leaving Switzerland, non-resident, expat, Quellensteuer, NOV, Pauschalbesteuerung, exit tax, Verrechnungssteuer refund, Grenzgänger. Out of scope: ch-federal-income-tax, ch-cantonal-tax, ch-corporate-income-tax, ch-lump-sum (detail), ch-ahv-iv, germany-to-switzerland-cross-border-tax."
-jurisdiction: CH
-category: cross-border
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: CH
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: cross-border
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Switzerland: crossing the border (residence, arrival, departure, non-residents)
@@ -220,3 +223,23 @@ Read on 2026-10-22:
 - Kantonales Steueramt Zürich, Zürcher Steuerbuch Nr. 133.1 (filing notice): https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html
 
 Not yet confirmed: the Zurich cantonal and communal tax-at-source rate for non-resident board members; the deadline for a treaty refund claim of Verrechnungssteuer by a German resident; the period for registering with the commune on arrival (cantonal law); the capped rates in the French, Italian and Austrian frontier-worker arrangements.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

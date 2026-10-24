@@ -7,15 +7,23 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `pl-capital-gains.md`
-4. `pl-income-tax.md`
-5. `pl-vat-return.md`
-6. `pl-zus-contributions.md`
-7. `poland-einvoice.md`
-8. `poland-vat-return.md`
-9. `references.md`
-10. `eu-vat-directive.md`
-11. `einvoice-workflow-base.md`
+3. `README.md`
+4. `pl-capital-gains.md`
+5. `pl-cit-corporate-tax.md`
+6. `pl-civil-law-contracts.md`
+7. `pl-cross-border.md`
+8. `pl-income-tax.md`
+9. `pl-payroll.md`
+10. `pl-transfer-pricing.md`
+11. `pl-vat-return.md`
+12. `pl-zus-contributions.md`
+13. `poland-einvoice.md`
+14. `poland-vat-return.md`
+15. `references.md`
+16. `eu-vat-directive.md`
+17. `einvoice-workflow-base.md`
+18. `payroll-workflow-base.md`
+19. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

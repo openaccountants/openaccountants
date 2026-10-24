@@ -3,16 +3,15 @@ name: portugal-vat-return
 description: "Portuguese VAT (IVA) for tax year 2026: who must charge it, the mainland rates of 23%, 13% and 6%, the Azores (16%, 9%, 4%) and Madeira (22%, 12%, 4%) rates, the art. 53 small-business exemption at EUR 15,000 with its 25% margin, the EU small-business scheme (EUR 100,000), monthly or quarterly periodic returns (EUR 650,000 test), return due on the 20th and payment on the 25th of the second month after the period (20 and 25 September for June and Q2, with deadlines on a weekend moving to the next working day), refunds after 12 months or above EUR 3,000, blocked input VAT, the domestic reverse charge on construction, late interest and RGIT fines. Trigger on: Portuguese VAT, IVA, declaração periódica, regime de isenção artigo 53, IVA trimestral mensal, autoliquidação, reembolso de IVA, coima IVA, Açores Madeira IVA. Out of scope: invoicing software, ATCUD and SAF-T (portugal-einvoice), bookkeeping (portugal-bookkeeping), income tax (pt-income-tax), corporate tax (pt-corporate-tax)."
 version: 2.1
 jurisdiction: PT
-category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
-verified_by: pending
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -193,3 +192,23 @@ expected:
 | RGIT art. 29, 114 and 116 (fines) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/rgit/Pages/rgit114.aspx | 2026-10-23 |
 
 Not yet confirmed: the 2026 late-interest rate (secondary sources give 7.221% under IGCP Aviso 18/2026/2, but the Diário da República page did not render and no official copy was read) and whether it runs by day or by month; whether the Azores 2026 regional budget changed the Azores rates (the Azores budget was not read); whether the supply that takes turnover past the 25% margin is itself taxed or only later supplies; that the AT calendar shows 21 September 2026 and 22 February 2027 (the move follows from CPPT art. 20(1); the AT calendar itself was not read); the deadline for reporting invoice data to AT (left to portugal-einvoice); the return-form changes made by Portaria 298/2026/1 (published 16 July 2026, mostly for periods from 1 July 2027) are not described here.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,13 +1,16 @@
 ---
 name: it-inps-artigiani-commercianti
 description: "Italian INPS pension contributions for artigiani (craft businesses) and commercianti (traders and shopkeepers), tax year 2026, plus a map of the professional pension funds (casse). Covers who must register (owners, family helpers, working SRL members), the 2026 minimum income of EUR 18,808 and the fixed contributions on it, the 24% and 24.48% rates and the extra point above EUR 56,224, the two maximums (pre-1996 and post-1995 insured), maternity, the four fixed instalments and the percentage acconti and saldo with the income tax, the 35% cut for forfettari, the 50% cut for over-65 pensioners, sanzioni civili, Quadro RR section I and F24 codes. Trigger on: contributi INPS artigiani, commercianti, gestione IVS, minimale, contributi fissi, Cassetto previdenziale, AF CF AP CP, Cassa Forense, Inarcassa, CNPADC, ENPAM. Out of scope: gestione separata (it-inps-contributions), employees (italy-payroll), forfettario tax (it-regime-forfettario), income tax (it-income-tax), acconti method (it-estimated-tax)."
-jurisdiction: IT
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: IT
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # INPS contributions for artigiani and commercianti, and the professional funds (Italy, 2026)
@@ -307,3 +310,23 @@ expected:
 | Regulation (EC) 883/2004 on EUR-Lex | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02004R0883-20190731 | could not be fetched; relied on the INPS page above |
 
 Not yet confirmed: (1) whether the acconti on the excess use the current year's minimale and rates applied to the previous year's income (our reading; INPS says only that the two equal acconti are "calcolati sul reddito d'impresa dell'anno precedente"; Example 1 takes the acconti from F24 receipts); (2) the 2027 payment dates under D.Lgs. 33/2025; (3) Inarcassa and ENPAM rates on 2026 income (their sites state rates on 2025 income only), and all rates and minimums of the other funds in the table.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

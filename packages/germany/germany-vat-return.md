@@ -1,14 +1,12 @@
 ---
 name: germany-vat-return
-description: Use this skill whenever asked to prepare, review, or classify transactions for a German VAT return (Umsatzsteuer-Voranmeldung / UStVA) for a self-employed individual or very small business operating under the Regelbesteuerung in Germany. Trigger on phrases like "prepare VAT return", "do the German VAT", "fill in UStVA", "create the return", "Umsatzsteuer", "Vorsteuer", or any request involving German VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Germany only and only Regelbesteuerung (standard taxation). Kleinunternehmer, Organschaft, Differenzbesteuerung, partial exemption, and Ist-Versteuerung edge cases are all in the refusal catalogue. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any German VAT work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a German VAT return (Umsatzsteuer-Voranmeldung / UStVA) for a self-employed individual or very small business operating under the Regelbesteuerung in Germany. Trigger on phrases like "prepare VAT return", "do the German VAT", "fill in UStVA", "create the return", "Umsatzsteuer", "Vorsteuer", or any request involving German VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers Germany only and only Regelbesteuerung (standard taxation). Organschaft and Differenzbesteuerung are in the refusal catalogue; Kleinunternehmer, partial exemption and Ist-Versteuerung are handled in de-vat-annual-and-special-schemes. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later (for workflow architecture) AND eu-vat-directive v0.1 or later (for EU directive content). ALWAYS read this skill before touching any German VAT work.
 version: 2.0
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-23
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-drafted_by: OpenAccountants
-approved_by: pending
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -36,7 +34,7 @@ Federal Ministry of Finance on 29 December 2025: https://www.bundesfinanzministe
 | Filing extension | One month longer, on application (§ 46 UStDV). A monthly filer must also declare and pay a Sondervorauszahlung of one eleventh of the previous year's advance payments (§ 47, § 48(2) UStDV); a quarterly filer pays none |
 | Annual declaration | Umsatzsteuererklaerung, due seven months after the calendar year ends (§ 149(2) AO), or by the last day of February of the second following year when a Steuerberater files it (§ 149(3) AO) |
 | Companion Guides | `vat-workflow-base` (workflow) and `eu-vat-directive` (EU directive content) |
-| Scope | Regelbesteuerung only. Kleinunternehmer, Organschaft, Differenzbesteuerung, partial exemption and Ist-Versteuerung timing cases are refused: Section 2 |
+| Scope | Regelbesteuerung, advance returns. Organschaft and Differenzbesteuerung are refused: Section 2. Kleinunternehmer, partial exemption and Ist-Versteuerung go to de-vat-annual-and-special-schemes |
 
 **VAT rates on the 2026 return**
 
@@ -142,13 +140,13 @@ the reviewer, in proportion to the size of the business.
 
 ### Germany-specific refusal catalogue
 
-These sit on top of the EU-wide refusals in `eu-vat-directive` Section 13. If a trigger fires, stop, give the message verbatim and end. Refusal is a safety mechanism.
+These sit on top of the EU-wide refusals in `eu-vat-directive` Section 13. R-DE-2 and R-DE-3 are refusals: if one fires, stop, give the message verbatim and end. R-DE-1, R-DE-4 and R-DE-5 are pointers to de-vat-annual-and-special-schemes.
 
-- **R-DE-1: Kleinunternehmer § 19 UStG.** Trigger: the client is a Kleinunternehmer, or prior-year turnover was within EUR 25,000 and current-year turnover will stay within EUR 100,000 and the status has not been given up. Message: "A Kleinunternehmer under § 19 UStG charges no VAT and recovers no Vorsteuer. Their supplies are tax-free, and § 19(1) UStG switches off the filing duties of § 18(1) to (4) UStG, so there is normally no advance return AND no annual VAT return. The tax office can still demand one (§ 149(1) sentence 2 AO), and a return is still due in the cases of § 18(4a) UStG. This Guide covers Regelbesteuerung only. Reverse charge under § 13b UStG still applies to a Kleinunternehmer who receives services from a business abroad: refer those to a Steuerberater. An advance return is then due for that period under § 18(4a) UStG, with the tax in lines 30 to 32 and no input deduction."
+- **R-DE-1: Kleinunternehmer § 19 UStG (pointer, not a refusal).** Trigger: the client is a Kleinunternehmer, or prior-year turnover was within EUR 25,000 and current-year turnover will stay within EUR 100,000 and the status has not been given up. Action: stop this skill and use [de-vat-annual-and-special-schemes](de-vat-annual-and-special-schemes.md), which covers the § 19 limits, the first year, losing the status mid-year, the waiver, the filing exemption and its exceptions (§ 149(1) sentence 2 AO, § 18(4a) UStG), and the EU scheme. Where a Kleinunternehmer owes reverse-charge tax on a service from abroad, the advance return for that period is due under § 18(4a) UStG, with the tax in lines 30 to 32 and no input deduction.
 - **R-DE-2: Organschaft (VAT group).** Trigger: client is part of a VAT group (Organschaft) under § 2(2) Nr. 2 UStG, or asks about group registration. Message: "An Organschaft is one taxable person. Supplies inside the group are not taxable, and the Organtraeger files one UStVA for the whole group. This needs a Steuerberater. Out of scope."
 - **R-DE-3: Differenzbesteuerung (margin scheme).** Trigger: client deals in second-hand goods, art, antiques, or collectables under the margin scheme (§ 25a UStG). Message: "The margin scheme needs a margin worked out transaction by transaction under § 25a UStG. Out of scope."
-- **R-DE-4: Partial exemption.** Trigger: client makes both taxable supplies and exempt-without-credit supplies (§ 4 Nr. 8 to 29 UStG) and the exempt proportion is not de minimis. Message: "You make both taxable and exempt supplies. Your input VAT must be apportioned under § 15(4) UStG, which requires an annual pro-rata calculation. Please use a Steuerberater to determine and confirm the pro-rata rate before input VAT is claimed."
-- **R-DE-5: Ist-Versteuerung edge cases.** Trigger: client uses cash-basis accounting (Ist-Versteuerung under § 20 UStG) and the period contains timing differences between invoicing and payment that materially affect the return. Message: "Ist-Versteuerung needs payment dates compared with invoice dates line by line. This Guide assumes Soll-Versteuerung. With material timing differences, use a Steuerberater."
+- **R-DE-4: Partial exemption (pointer, not a refusal).** Trigger: client makes both taxable supplies and exempt-without-credit supplies (§ 4 Nr. 8 to 29 UStG) and the exempt proportion is not de minimis. Action: apportion the input VAT under § 15(4) UStG with [de-vat-annual-and-special-schemes](de-vat-annual-and-special-schemes.md), which sets out direct allocation, the estimate, the turnover key, the floor-area rule for buildings, the final key in the annual return and § 15a corrections.
+- **R-DE-5: Ist-Versteuerung (pointer, not a refusal).** Trigger: client uses cash-basis accounting (Ist-Versteuerung under § 20 UStG). Action: use [de-vat-annual-and-special-schemes](de-vat-annual-and-special-schemes.md) for the conditions, the timing of output tax on receipt, input tax on the invoice, and the change between methods; the box mapping in this skill still applies.
 
 ## Section 3: Supplier pattern library (the lookup table)
 
@@ -490,7 +488,7 @@ Each rule gives its source and its Kennzahl. Apply it silently where the data is
 
 ### 5.5 Exempt without input deduction (ss4 Nr.8-29 UStG)
 
-- **Exempt supplies list.** Financial services, insurance, residential rent, healthcare, education, social welfare, the universal postal service. They go in Kz 48, line 23. No output VAT, and no input VAT on the related costs (§ 15(2) UStG). If they are not trivial, the input tax must be apportioned under § 15(4) UStG and R-DE-4 refuses.
+- **Exempt supplies list.** Financial services, insurance, residential rent, healthcare, education, social welfare, the universal postal service. They go in Kz 48, line 23. No output VAT, and no input VAT on the related costs (§ 15(2) UStG). If they are not trivial, the input tax must be apportioned under § 15(4) UStG: R-DE-4 points to de-vat-annual-and-special-schemes.
 
 ### 5.6 Reverse charge: foreign suppliers (§ 13b(1) and § 13b(2) Nr. 1 UStG)
 
@@ -745,7 +743,7 @@ data could not answer.
 ### 9.2 VAT registration status
 
 - Inference: a client asking for a UStVA is on Regelbesteuerung. No VAT on sales suggests a
-  Kleinunternehmer, which triggers R-DE-1. Ask: "Are you on Regelbesteuerung, or a
+  Kleinunternehmer, which triggers the R-DE-1 pointer. Ask: "Are you on Regelbesteuerung, or a
   Kleinunternehmer under § 19 UStG with no VAT on your invoices?"
 
 ### 9.3 USt-IdNr and Steuernummer
@@ -769,14 +767,14 @@ data could not answer.
 ### 9.7 Exempt supplies
 
 - Inference: medical, financial, educational or residential letting income. Ask: "Any VAT-exempt
-  sales?" If yes and not trivial, R-DE-4 refuses.
+  sales?" If yes and not trivial, follow the R-DE-4 pointer.
 
 ### 9.8 Soll- or Ist-Versteuerung
 
 - Inference: most small businesses are on Soll. Ist-Versteuerung needs the tax office's
   permission and, on the turnover ground, turnover within the limit in the Key thresholds
   summary. Ask: "Are you taxed on invoices issued or on payments received, and do you have the
-  permission in writing?" If it is Ist with material timing differences, R-DE-5 may fire.
+  permission in writing?" If it is Ist, follow the R-DE-5 pointer.
 
 ### 9.9 Dauerfristverlaengerung
 
@@ -844,8 +842,8 @@ print was taken out. Read the Known gaps before relying on it.
 
 ## When to refuse or refer
 
-- Any trigger in the refusal catalogue in Section 2 fires: Kleinunternehmer, Organschaft,
-  Differenzbesteuerung, partial exemption, or Ist-Versteuerung with timing effects.
+- A refusal in Section 2 fires: Organschaft or Differenzbesteuerung. Kleinunternehmer, partial
+  exemption and Ist-Versteuerung go to de-vat-annual-and-special-schemes.
 - A special scheme this Guide does not cover is in use: the one-stop shop (§§ 18i, 18j, 18k
   UStG), travel services (§ 25 UStG), or the average-rate scheme of § 24 UStG.
 - Construction or building-cleaning reverse charge is in play: it turns on whether BOTH parties
@@ -1009,7 +1007,7 @@ tax office's discretion there. https://www.gesetze-im-internet.de/ao_1977/__152.
 1. Quick reference, Kennzahl table and conservative defaults at the top: yes, Section 1.
 2. Supplier library, worked examples, Tier 1 and Tier 2: yes, Sections 3 to 6.
 3. Excel template with a mandatory recalculation step, and the bank statement guide: Sections 7
-   and 8. Onboarding as a fallback: Section 9. All five refusals: Section 2.
+   and 8. Onboarding as a fallback: Section 9. Refusals and pointers: Section 2.
 4. Entertainment VAT recoverable and motor vehicles not blocked, both stated: rules 5.3, 5.10.
 5. Reverse charge split between the EU box and the other-foreign box: Section 1, rules 5.6 and
    5.7, Examples 1 and 2.
@@ -1041,6 +1039,8 @@ must be reviewed and signed off by a qualified professional (such as a CPA, EA, 
 equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 > Contributed by OpenAccountants.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

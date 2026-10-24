@@ -21,12 +21,12 @@ Tax year 2026/27 (6 April 2026 to 5 April 2027) is the year in force. The return
 
 This guide covers individuals resident in England, Wales or Northern Ireland who work out Income Tax on the SA100 return. It covers who must register and file, rates and bands, the Personal Allowance taper, the savings and dividend allowances, the Finance Act 2026 rate changes, the High Income Child Benefit Charge, Marriage Allowance, pension and Gift Aid relief claimed through the return, payments on account, deadlines, penalties and interest.
 
-Out of scope: Scottish taxpayers (the rates are different, so refer them); non-residents and split years (SA109); the foreign income and gains regime; trusts (SA107); Capital Gains Tax (SA108); the detail of self-employment (SA103) and UK property (SA105); National Insurance. Making Tax Digital for Income Tax (MTD) gets a cross-reference only ([MTD: who needs it](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)).
+Scottish taxpayers: use `uk-scottish-income-tax` alongside this skill (Scottish rates on non-savings income). Out of scope: non-residents and split years (SA109); the foreign income and gains regime; trusts (SA107); Capital Gains Tax (SA108); the detail of self-employment (SA103) and UK property (SA105); National Insurance. Making Tax Digital for Income Tax (MTD) gets a cross-reference only ([MTD: who needs it](https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax)).
 
 ## Ask the client first
 
 - Which tax year is this: the 2025/26 return being filed now, or planning for 2026/27?
-- Where was your main home during the year? If it was in Scotland, stop and refer. If you were outside the UK for part of the year, also refer.
+- Where was your main home during the year? If it was in Scotland, use `uk-scottish-income-tax` alongside this skill. If you were outside the UK for part of the year, refer.
 - Have you registered for Self Assessment before? Did you get a return for 2024/25? (This decides the 5 October registration duty.)
 - Employment: P60, P11D, P45, any tips or payments not on the P60, any termination or redundancy payment?
 - Self-employment or property: gross income before expenses? (This decides the trading and property allowances and MTD.)
@@ -43,7 +43,7 @@ Out of scope: Scottish taxpayers (the rates are different, so refer them); non-r
 
 ## The method, step by step
 
-1. **Pick the tax year and confirm the person is in scope.** For a Scottish taxpayer, a non-resident or a split year, stop and refer.
+1. **Pick the tax year and confirm the person is in scope.** For a Scottish taxpayer, use `uk-scottish-income-tax` alongside this skill. For a non-resident or a split year, stop and refer.
 2. **Decide whether a return is needed** and whether the 5 October registration deadline has been missed ([who must send a return](https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return); [register](https://www.gov.uk/register-for-self-assessment)).
 3. **Collect total income** by source, gross. Non-savings income is employment, self-employment, pensions and property. Savings income is interest. Dividend income comes last.
 4. **Take off reliefs deductible from income**, such as trading losses and pension contributions paid gross. Then work out adjusted net income by also deducting grossed-up Gift Aid and grossed-up relief-at-source pension contributions ([adjusted net income](https://www.gov.uk/guidance/adjusted-net-income)).
@@ -69,7 +69,7 @@ Out of scope: Scottish taxpayers (the rates are different, so refer them); non-r
 
 - For 2026/27, Finance Act 2026 s.2 sets "the basic rate is 20%", "the higher rate is 40%" and "the additional rate is 45%".
 - "You do not get a Personal Allowance on taxable income over £125,140" ([Income Tax rates](https://www.gov.uk/income-tax-rates)).
-- Scotland: "Income tax bands are different if you live in Scotland". Scottish rates apply to non-savings income only; savings and dividends use UK rates ([Income Tax in Scotland](https://www.gov.uk/scottish-income-tax)). This guide refers Scottish taxpayers; see "When to refuse or refer".
+- Scotland: "Income tax bands are different if you live in Scotland". Scottish rates apply to non-savings income only; savings and dividends use UK rates ([Income Tax in Scotland](https://www.gov.uk/scottish-income-tax)). For Scottish taxpayers, use `uk-scottish-income-tax`.
 
 ### Frozen thresholds ([Finance Act 2026 s.10](https://www.legislation.gov.uk/ukpga/2026/11/section/10); [s.9](https://www.legislation.gov.uk/ukpga/2026/11/section/9))
 
@@ -207,7 +207,7 @@ Out of scope: Scottish taxpayers (the rates are different, so refer them); non-r
 | Paper return misses 31 October | File online by 31 January instead to avoid a penalty |
 | Registered after 5 October 2026 for 2025/26 | Return due 3 months from the date of HMRC's notice, but tax still due by 31 January 2027 |
 | Wants a 2025/26 balance collected through the tax code | Online return by 30 December 2026 |
-| Scottish taxpayer | Refer. Non-savings bands differ; savings and dividends use UK rates |
+| Scottish taxpayer | Use `uk-scottish-income-tax`. Non-savings bands differ; savings and dividends use UK rates |
 
 ## Worked cases
 
@@ -252,7 +252,7 @@ The return is filed on 20 August 2027 with £4,000 of tax due, which was paid on
 
 ## When to refuse or refer
 
-- **Scottish taxpayers** (main home in Scotland, or unclear between homes): refer. The 2026/27 Scottish bands are 19%, 20%, 21%, 42%, 45% and 48% at different thresholds. Pension relief and Marriage Allowance limits also differ ([Income Tax in Scotland](https://www.gov.uk/scottish-income-tax)).
+- **Scottish taxpayers** (main home in Scotland, or unclear between homes): use `uk-scottish-income-tax`, which covers the status tests and the Scottish computation. The 2026/27 Scottish bands are 19%, 20%, 21%, 42%, 45% and 48% at different thresholds. Pension relief and Marriage Allowance limits also differ ([Income Tax in Scotland](https://www.gov.uk/scottish-income-tax)).
 - **Non-residents, split years, dual residents and the foreign income and gains regime** (which replaced the remittance basis from 6 April 2025): refer to a specialist and the SA109 pages.
 - **Trust or estate income** (SA107), **capital gains** (SA108) and **partnership returns**: out of scope.
 - **Pensions**: the tapered or money purchase annual allowance, carry-forward near the limit, annual allowance charges, lump sums and drawdown. Refer ([annual allowance](https://www.gov.uk/tax-on-your-private-pension/annual-allowance)).
@@ -317,7 +317,7 @@ HMRC must receive the return and any money owed by the deadline. A return is sti
 ## Completion checklist ([Income Tax rates](https://www.gov.uk/income-tax-rates); [Finance Act 2026 s.4](https://www.legislation.gov.uk/ukpga/2026/11/section/4); [payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account))
 
 - [ ] Tax year confirmed. The 2025/26 return uses dividend rates of 8.75%, 33.75% and 39.35%; 2026/27 uses 10.75%, 35.75% and 39.35%.
-- [ ] Residence confirmed; Scottish, non-resident and split-year cases referred.
+- [ ] Residence confirmed; Scottish taxpayers computed with `uk-scottish-income-tax`; non-resident and split-year cases referred.
 - [ ] Registration by 5 October checked for first-time filers.
 - [ ] Income split into non-savings, savings and dividends, and taxed in that order.
 - [ ] Adjusted net income worked out; Personal Allowance taper applied above £100,000.

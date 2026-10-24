@@ -2,13 +2,16 @@
 name: sj-svalbard-payroll-tax
 description: >
   Svalbard payroll-tax reference for 2026 using the consolidated Act, enacted annual rates and official guidance. Covers gross-basis withholding, the annual twelve-basic-amount threshold, multiple employers, the new youth allowance and refund mechanism, monthly reporting and the changed payment deadline. Shows worked income-tax calculations and distinguishes employee insurance contributions from employer contributions. Applies only to Svalbard, not all territories grouped under the SJ code. Insurance membership, full benefits valuation, special payments, rounding implementation and independent accountant review require further work before treating this as a complete payroll manual.
-jurisdiction: SJ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: SJ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Svalbard: payroll tax in 2026
@@ -56,3 +59,23 @@ For 2026, payment of withheld tax is due **no later than the first working day a
 ## Verification limits
 
 Checked 22 October 2026. This covers Svalbard only, not Jan Mayen. Full social-insurance membership, benefits, holiday-pay timing, corrections, special groups, youth refund administration and payroll rounding need further treatment. Independent accountant review has not occurred; this is not complete payroll coverage.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -4,8 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: ie-prsi-class-s
-partial:
-  IT-IND: no non-resident or PAYE-only (Form 12) method and no Case V rental method
+partial: {}
 ---
 
 # Ireland: tax pack
@@ -16,7 +15,7 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ie-income-tax-form11, ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
+| IT-IND, individual income tax | ie-income-tax-form11, ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
 | IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | source-cited draft |
 | VAT | ireland-vat-return, ie-vat-return | source-cited draft |
 | SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | source-cited draft |
