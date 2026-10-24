@@ -5,7 +5,7 @@ jurisdiction: SI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 version: 0.1
 verified_by: pending
 ---
@@ -24,8 +24,8 @@ The rules sit in four places. The Corporate Income Tax Act (Zakon o davku od doh
 
 1. the taxpayer holds, directly or indirectly, at least 25% of the value or number of shares or stakes in the capital, management or control, or of the voting rights, of the foreign person, or controls it by contract;
 2. the foreign person holds at least 25% in the taxpayer on the same tests;
-3. the same person holds at least 25% in both (the taxpayer and the foreign person, or two taxpayers);
-4. the same individuals or their family members hold at least 25% in both.
+3. the same person holds at least 25% of the capital, management or control of both (the taxpayer and the foreign person, or two taxpayers), or controls both by contract;
+4. the same individuals or their family members hold at least 25% of the capital, management or control of both, or control both by contract.
 
 In each case the link also exists where "the terms of the transaction differ from terms that are or would be agreed between unrelated persons" in the same or comparable circumstances. Family members are a spouse or long-term partner, a registered partner, children (including adopted children and stepchildren), and parents and adoptive parents (art. 16(2)). The Rules on transfer prices art. 24 add that control can exist without 25%, where one party dictates the terms and they go against the other party's rational economic interest.
 
@@ -67,7 +67,7 @@ So a Slovenian group where every company is profitable and pays the full rate ha
 | Interest on a return filed after the audit minutes (art. 140.a) | 5% a year | 2026 | https://pisrs.si/pregledPredpisa?id=ZAKO4703 |
 | Withholding on a hidden profit distribution (ZDDPO-2 arts. 70(1) and 74 point 7) | 15% | 2026 | https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
 | Interest limitation (ZDDPO-2 art. 54.c) | Exceeding borrowing costs deductible up to the higher of 30% of tax EBITDA or EUR 3,000,000 | 2026 | https://pisrs.si/pregledPredpisa?id=ZAKO4687 |
-| CbCR group threshold | Consolidated group revenue of EUR 750,000,000 | 2026 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Transferne_cene.docx |
+| CbCR group threshold (ZDavP-2 art. 255.i(1) and (5); Directive 2016/881 Annex III section I point 4) | Consolidated group revenue of at least EUR 750,000,000 in the year before the reporting year | 2026 | https://publications.europa.eu/resource/celex/32016L0881.ENG.xhtml |
 | APA fee (Rules implementing ZDavP-2 art. 6.h) | EUR 15,000; renewal EUR 7,500; EUR 5,000 refunded if no APA for reasons not on the taxpayer's side | 2026 | https://pisrs.si/pregledPredpisa?id=PRAV7927 |
 | APA term (art. 6.d(3)) | Up to 5 years, can be renewed | 2026 | https://pisrs.si/pregledPredpisa?id=PRAV7927 |
 
@@ -78,9 +78,9 @@ So a Slovenian group where every company is profitable and pays the full rate ha
 - revenue is taken at no less than the comparable market price (primerljiva tržna cena);
 - expenses are taken at no more than the comparable market price.
 
-The adjustment only ever raises the Slovenian tax base. Slovenian law has no domestic rule that lets a taxpayer lower its base because a foreign related party was adjusted. Relief for double taxation comes through MAP (see Cross-border points). In the return, a revenue increase goes in row 3.1 (foreign related person) or 3.2 (related resident), an expense reduction in row 6.2 or 6.3 (FURS, Transferne cene).
+The adjustment only ever raises the Slovenian tax base. Slovenian law has no domestic rule that lets a taxpayer lower its base because a foreign related party was adjusted. Relief for double taxation comes through MAP (see Cross-border points). In the return, a revenue increase goes in row 3.1 (foreign related person) or 3.2 (related resident), an expense reduction in row 6.2 or 6.3 (FURS, Transferne cene). For interest under art. 19, extra interest income on a loan given goes in row 3.3 (foreign) or 3.4 (resident), and disallowed interest on a loan received in row 6.4 (foreign) or 6.5 (resident) (FURS, Davčno obravnavanje obresti po ZDDPO-2).
 
-**Methods (art. 16(5); Rules arts. 1.a to 6).** Comparable uncontrolled price, resale price, cost plus, profit split, and transactional net margin. Use the most appropriate method for the case. Internal comparables are preferred over external ones. Where the criteria are equal, the comparable uncontrolled price method comes first (Rules art. 1.a(2) and (6)). Comparability follows five factors: the features of the assets or services, the functions (with assets used and risks taken), contract terms, economic circumstances and business strategies (Rules arts. 9 to 16). Each transaction is tested on its own unless deals are so closely linked that they can only be judged together (Rules art. 17).
+**Methods (art. 16(5); Rules arts. 1.a to 6).** Comparable uncontrolled price, resale price, cost plus, profit split, and transactional net margin. Use the most appropriate method for the case. Internal comparables are preferred over external ones. Where a traditional method (the first three) and a profit method are equally reliable, the traditional method comes first (Rules art. 1.a(3)). Where the criteria are equal, the comparable uncontrolled price method comes first (Rules art. 1.a(2) and (6)). Comparability follows five factors: the features of the assets or services, the functions (with assets used and risks taken), contract terms, economic circumstances and business strategies (Rules arts. 9 to 16). Each transaction is tested on its own unless deals are so closely linked that they can only be judged together (Rules art. 17).
 
 **The range (Rules art. 21).**
 
@@ -104,7 +104,7 @@ The adjustment only ever raises the Slovenian tax base. Slovenian law has no dom
 
 **Interest outside the rate rule.** A payment under a negative interest rate is not interest. It is a fee for a service, tested under art. 16 against market prices, not the recognised rate (FURS, section 2.3).
 
-**Hidden profit distribution (art. 74 point 7).** The excess is a dividend-like income where a company pays or gives value, at a price that is not arm's length, to a person holding at least 25% in it (or controlling it). This covers interest paid above, or charged below, the recognised rate. The excess then falls under the 15% withholding tax in art. 70(1). Art. 70 and tax treaties set out when no tax, or less tax, is withheld. Resident recipients who give their tax number are outside it.
+**Hidden profit distribution (art. 74 point 7).** The excess is a dividend-like income where a company pays or gives value, at a price that is not arm's length, to a person holding at least 25% in it (or controlling it). This covers interest paid above, or charged below, the recognised rate. The excess then falls under the 15% withholding tax in art. 70(1). Resident recipients who give their tax number are outside it (art. 70(2)). The EU parent-subsidiary exemption in art. 71(1) does not cover a hidden distribution where the payment is not at arm's length under art. 16 (art. 71(2)). For a recipient in another EU or EEA state, art. 70(3) removes the tax only if the recipient cannot credit it at home because it exempts the dividend, and the deal is not tax avoidance. Otherwise only a tax treaty reduces it, usually under its dividend article (FURS, Davčno obravnavanje obresti po ZDDPO-2, section 3.1).
 
 ## Deadlines and filing
 
@@ -115,7 +115,7 @@ The adjustment only ever raises the Slovenian tax base. Slovenian law has no dom
 | Hand over documentation on audit | Immediately as a rule; or within the period FURS sets, 30 to 90 days | art. 382(5) |
 | Slovenian translation of the master file | On request, within the period FURS sets, at least 60 days | art. 382(7) |
 | Keep documentation | 10 years after the year it covers | art. 382(6) |
-| CbCR notification (Obvestilo CbCR), any member of a multinational group | With the corporate income tax return, electronically | Rules implementing ZDavP-2 art. 86.e |
+| CbCR notification (Obvestilo CbCR), every Slovenian member of a group at or above EUR 750 million | With the corporate income tax return, electronically | Rules implementing ZDavP-2 art. 86.e(2); FURS, Transferne cene |
 | CbCR (reporting entity) | Within 12 months after the last day of the group's reporting year | ZDavP-2 art. 255.i(2) |
 | APA: FURS says whether it will start the procedure | Within 3 months of the application | ZDavP-2 art. 14.b(4) |
 | APA fee | Within 30 days of that notice | art. 14.e(1) |
@@ -123,6 +123,7 @@ The adjustment only ever raises the Slovenian tax base. Slovenian law has no dom
 | APA: critical assumption broken | Notify FURS within 30 days | art. 14.c(2); Rules art. 6.e(2) |
 | APA renewal request | 6 months before the APA ends | Rules art. 6.g(2) |
 | MAP request | Within 3 years of the return, the return filed in audit, or the assessment | ZDavP-2 art. 256.b(1) |
+| Ask FURS to apply a MAP agreement (with a corrected return where tax is self-assessed) | Within 60 days of the notice of the agreement | ZDavP-2 art. 258(2) and (6) |
 
 **What the documentation must contain (art. 382(1)).**
 
@@ -137,23 +138,23 @@ Article 382 sets no size or value threshold: every taxpayer with related-party t
 
 **Documentation.** Failing to provide the art. 382 documentation, or providing it late or not in the set form, is an offence under ZDavP-2 art. 397(1) point 40. The fine for a legal person is EUR 1,200 to 15,000; for a medium or large company under the Companies Act, EUR 3,200 to 30,000; for a sole trader EUR 800 to 10,000. The responsible person of a legal person is also fined EUR 600 to 4,000 (EUR 800 to 4,000 in a medium or large company) (art. 397(3)). The same fines cover a missing CbCR (point 45) and a missing or false APA report (point 44).
 
-**Wrong return.** A return with untrue, incomplete or wrong data is an offence under art. 397(1) point 8, at the same fines. Where the offence is especially serious, art. 398 raises the fines: EUR 4,500 to 100,000 for a legal person, EUR 10,500 to 150,000 for a medium or large company, and EUR 1,200 to 20,000 (EUR 1,400 to 20,000) for the responsible person. That covers tax underpaid above EUR 10,000 (legal person) or EUR 25,000 (medium or large company), or intent (art. 398(4)).
+**Wrong return.** A return with untrue, incomplete or wrong data is an offence under art. 397(1) point 8, at the same fines. Where the offence is especially serious, art. 398 raises the fines: EUR 4,500 to 100,000 for a legal person, EUR 10,500 to 150,000 for a medium or large company, and EUR 1,200 to 20,000 (EUR 1,400 to 20,000) for the responsible person. That covers tax underpaid above EUR 10,000 (legal person) or EUR 25,000 (medium or large company), or intent (art. 398(4)). No fine is imposed for a wrong return (point 8), unpaid withholding (point 6) or the art. 398 aggravated fine where the taxpayer files a corrected return under art. 55 (self-correction) or art. 140.a (after the audit minutes) (art. 399). The documentation offence (point 40) is not on that list.
 
 **Interest on the tax.**
 
 - Tax assessed in an audit carries 7% a year from the due date to the assessment (art. 95).
 - A taxpayer that agrees with the audit minutes can file a corrected return within 30 days and pay the tax with interest at 5% a year (art. 140.a). This can be done once per audit.
 - A self-correction (samoprijava) before the audit starts carries interest at 3% a year (art. 55(3)). It must be filed with the tax paid, and only once for the same obligation (art. 55(2) and (4)).
-- Unpaid tax after the due date carries late payment interest (zamudne obresti) at the statutory default rate (art. 96).
+- Unpaid tax after the due date carries late payment interest (zamudne obresti) at the rate set by the law on statutory default interest (art. 96). A late return or late correction outside arts. 54.a and 55 also carries art. 96 interest (art. 95.a). This skill does not state that rate.
 
 **Withholding.** Where the adjustment is a hidden profit distribution to a 25% holder, the payer must also account for 15% withholding on the excess. Missing that is a separate offence under art. 397(1) point 6.
 
 ## Cross-border points
 
 - **Business units of non-residents.** The profit of a Slovenian business unit is the profit that can be attributed to it (ZDDPO-2 art. 12(4)). FURS applies the OECD transfer pricing rules and the OECD report on attribution of profits to permanent establishments (FURS, Transferne cene).
-- **MAP.** A Slovenian resident can ask FURS to start a mutual agreement procedure with the other state within 3 years (art. 256.b). The legal basis is the tax treaty, the EU Arbitration Convention on transfer pricing adjustments, or Directive (EU) 2017/1852 (ZDavP-2 art. 256). The request does not depend on domestic appeals. After an agreement, the taxpayer files a corrected return that applies it (art. 256.c).
+- **MAP.** A Slovenian resident can ask FURS to start a mutual agreement procedure with the other state within 3 years (art. 256.b(1)). The legal basis is the tax treaty or the EU Arbitration Convention on transfer pricing adjustments (ZDavP-2 art. 256(1)); the chapter implements Directive (EU) 2017/1852. The request does not depend on domestic appeals. It is filed in Slovenian and English; a large company files it with every competent authority concerned at the same time (art. 256.b(3) and (4)). After an agreement, the taxpayer asks FURS to apply it within 60 days, withdraws any appeal, and, where the tax is self-assessed, files a corrected return (art. 258).
 - **APA.** Unilateral, bilateral or multilateral (ZDavP-2 art. 14.a(2)). The process runs: pre-filing meeting, application, signing, monitoring (Rules implementing ZDavP-2 arts. 6.a to 6.h). The pre-filing meeting covers whether the APA can, on request, apply to past years with the same facts (art. 6.b(4)). A bilateral or multilateral application needs an English translation (art. 6.c). FURS shares APAs with other EU states and the Commission (ZDavP-2 art. 248.a).
-- **CbCR.** The Slovenian ultimate parent of a multinational group files the CbCR; a constituent entity or surrogate parent files it in the cases set by Directive 2016/881 (ZDavP-2 art. 255.i). FURS cannot adjust a price on the CbCR alone, but can use it to open enquiries (art. 255.k). FURS passes the CbCR to the other states concerned (art. 248.b). Every Slovenian member of a multinational group files the CbCR notification with its return, whatever the group's size (Rules art. 86.e; FURS, Transferne cene).
+- **CbCR.** The Slovenian ultimate parent of a multinational group files the CbCR; a constituent entity or surrogate parent files it in the cases set by Directive 2016/881 (ZDavP-2 art. 255.i). FURS cannot adjust a price on the CbCR alone, but can use it to open enquiries (art. 255.k). FURS passes the CbCR to the other states concerned (art. 248.b). Every Slovenian member of a multinational group with consolidated revenue of at least EUR 750 million in the previous year files the CbCR notification with its return (Rules art. 86.e; FURS, Transferne cene). Groups below the threshold are excluded groups and have no CbCR duty (ZDavP-2 art. 255.i(5)).
 - **Withholding.** The 15% tax on a hidden profit distribution can be reduced by a tax treaty (usually its dividend article) or removed under art. 70. Check the recipient's position before paying.
 - **Low-tax jurisdictions.** Purchases of services and intangibles from jurisdictions with a more favourable tax regime are reported in return attachment 14 (Rules on the CIT return). The tax rules on those payments are not covered here.
 
@@ -171,8 +172,8 @@ Kras d.o.o. is a Slovenian company with no credit rating. Its German parent owns
 6. Interest allowed: 2,000,000 x 4.333% x 72 / 365 = EUR 17,094.58.
 7. Kras reduces its expenses in return row 6.4 by EUR 8,549.26, unless it proves an unrelated lender would have charged 6.5%.
 8. Extra corporate income tax at 22%: EUR 1,880.84.
-9. The parent holds at least 25%, so the excess interest is a hidden profit distribution (art. 74 point 7). With no exemption or treaty relief, withholding at 15% is EUR 1,282.39.
-10. The loan exceeds EUR 50,000, so Kras lists it in attachment 15 and the interest in attachment 16.
+9. The parent holds at least 25%, so the excess interest is a hidden profit distribution (art. 74 point 7). The parent-subsidiary exemption does not reach it (art. 71(2)). Before any relief under art. 70(3) or the Slovenia-Germany treaty, withholding at 15% is EUR 1,282.39.
+10. The loan received from one related person exceeds EUR 50,000, so Kras lists it in attachment 15. It ticks the art. 16 status and reports the interest in attachment 16; attachment 16 is mandatory once its cumulative turnover with the parent passes EUR 50,000 excluding VAT. The interest alone (EUR 25,643.84) does not pass it.
 
 ```oa-check
 name: Kras d.o.o., 5-year EUR parent loan above the recognised rate, 2026
@@ -254,17 +255,19 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| ZDDPO-2, Corporate Income Tax Act, NPB 23 (arts. 12, 16 to 19, 36, 54.c, 60, 70, 74; note on ZORZFS art. 64) | https://pisrs.si/pregledPredpisa?id=ZAKO4687 | 2026-10-23 |
-| ZDavP-2, Tax Procedure Act, NPB 32 (arts. 14.a to 14.g, 55, 95, 96, 140.a, 248.a, 248.b, 255.i to 255.l, 256 to 256.c, 358, 382, 397, 398) | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-23 |
-| Pravilnik o transfernih cenah (Rules on transfer prices), NPB 1 | https://pisrs.si/pregledPredpisa?id=PRAV7545 | 2026-10-23 |
+| ZDDPO-2, Corporate Income Tax Act, NPB 23 (arts. 12, 16 to 19, 36, 54.c, 60, 70, 71, 74; note on ZORZFS art. 64) | https://pisrs.si/pregledPredpisa?id=ZAKO4687 | 2026-10-23 |
+| ZDavP-2, Tax Procedure Act, NPB 32 (arts. 14.a to 14.g, 55, 95, 95.a, 96, 140.a, 248.a, 248.b, 255.i to 255.l, 256 to 256.c, 258, 358, 382, 397 to 399) | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-23 |
+| Pravilnik o transfernih cenah (Rules on transfer prices), NPB 1 (PisRS lists only the 2006 text and the 2012 amendment, Uradni list RS 141/06 and 4/12) | https://pisrs.si/pregledPredpisa?id=PRAV7545 | 2026-10-23 |
 | Pravilnik o priznani obrestni meri (Rules on the recognised interest rate), NPB 3, in use from 1 January 2022 | https://pisrs.si/pregledPredpisa?id=PRAV7544 | 2026-10-23 |
 | Pravilnik o izvajanju ZDavP-2 (Rules implementing the Tax Procedure Act), NPB 26 (arts. 6.a to 6.h, 86.c to 86.g) | https://pisrs.si/pregledPredpisa?id=PRAV7927 | 2026-10-23 |
 | Pravilnik o davčnem obračunu DDPO (Rules on the CIT return), NPB 10 (attachments 15 to 17) | https://pisrs.si/pregledPredpisa?id=PRAV11756 | 2026-10-23 |
 | Ministry of Finance, recognised interest rates for related-party loans (page and 2026 archive, January to October 2026) | https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-finance/o-ministrstvu/direktorat-za-sistem-davcnih-carinskih-in-drugih-javnih-prihodkov/ | 2026-10-23 |
 | Ministry of Finance, Arhiv priznanih obrestnih mer za leto 2026 (v15) | https://www.gov.si/assets/ministrstva/MF/Davcni-direktorat/OBRESTI/Arhiv-priznanih-obrestnih-mer-za-leto-2026-v15.docx | 2026-10-23 |
+| ZORZFS, Act on reconstruction, development and provision of funds, NPB 4 (art. 64: 22% for 2024 to 2028) | https://pisrs.si/pregledPredpisa?id=ZAKO8910 | 2026-10-24 |
+| Council Directive (EU) 2016/881, Annex III section I (MNE group, excluded group under EUR 750,000,000) | https://publications.europa.eu/resource/celex/32016L0881.ENG.xhtml | 2026-10-24 |
 | FURS, Davek od dohodkov pravnih oseb (rate 19% and 22% for 2024 to 2028; list of rules) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo/ | 2026-10-23 |
 | FURS, Transferne cene, detailed description, 3rd edition, January 2025 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Mednarodno_obdavcenje/Opis/Transferne_cene.docx | 2026-10-23 |
 | FURS, Davčno obravnavanje obresti po ZDDPO-2, 4th edition, May 2025 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Davcno_obravnavanje_obresti_po_ZDDPO-2.doc | 2026-10-23 |
 | FURS, explanation 0920-18321/2025-1 (28 November 2025), attachments 15, 16 and 17 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Poslovanje_z_nami/Novodila_in_pojasnila/2025/0920-18321_2025-1_Metodologija_izpolnjevanja_prilog_15_16_in_17_k_obracunu_DDPO-2.docx | 2026-10-23 |
 
-Not yet confirmed: the EUR 750 million CbCR threshold was read in the FURS description only, not in Directive 2016/881 itself (EUR-Lex did not load); the statutory late payment interest rate under ZDavP-2 art. 96 was not read; the November and December 2026 variable parts are not yet published; the exact exemptions from the 15% withholding on a hidden profit distribution to an EU parent (ZDDPO-2 art. 70) were not worked through; the low value-adding services 5% approach is FURS guidance only, with no rule in the statute or the Rules; PisRS shows the Rules on transfer prices consolidated only to the 2012 amendment, and no later amendment was found.
+Not yet confirmed: the November and December 2026 variable parts are not yet published; the Slovenia-Germany treaty rate on the withholding in example 1 was not worked through; whether a loan principal counts towards the EUR 50,000 turnover test for attachment 16 is not stated in FURS 0920-18321/2025-1.
