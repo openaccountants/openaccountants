@@ -44,7 +44,7 @@ Tax year: the calendar year (ZKPO art. 21). Authority: the National Revenue Agen
 | Interest limitation (art. 43a) applies when | Exceeding borrowing costs are more than EUR 3,000,000 | 2026 | ZKPO art. 43a(7), wording set by Euro Introduction Act § 36 |
 | Interest limitation allowance | 30% of tax EBITDA; excess carried forward with no time limit | 2026 | ZKPO art. 43a(1), (5) |
 | Donations | Deductible up to 10% of accounting profit (50% to the health fund for listed purposes, 15% patronage); overall cap 65% | 2026 | ZKPO art. 31 |
-| No advance payments | Net sales in the year before the preceding year up to BGN 300,000 (EUR 153,387.56); and new companies in their first year and the next | 2026 | ZKPO art. 83(2) |
+| No advance payments | Net sales in the year before the preceding year up to BGN 300,000 (EUR 153,387.56); and new companies in their first year and the next, except companies formed by a transformation | 2026 | ZKPO art. 83(2) |
 | Monthly advance payments | Net sales in the year before the preceding year above BGN 3,000,000 (EUR 1,533,875.64) | 2026 | ZKPO art. 84 |
 | Quarterly advance payments | Everyone else who must pay advances | 2026 | ZKPO art. 85 |
 | Expenses tax on representation costs and social costs in kind | 10% | 2026 | ZKPO arts. 204(1)(1), (2), 216(1) |
@@ -113,7 +113,7 @@ Monthly advance = forecast tax profit / 12 x 10% (art. 86). Quarterly advance = 
 | Transaction booked against the accounting policy, distorting the result | BGN 100 to 1,000 (EUR 51.13 to 511.29) per breach; repeat BGN 200 to 2,000 (EUR 102.26 to 1,022.58) | ZKPO art. 263 |
 | The company's representative who allowed a breach of arts. 261 to 263 | BGN 200 to 1,000 (EUR 102.26 to 511.29); repeat BGN 400 to 2,000 (EUR 204.52 to 1,022.58) | ZKPO art. 264 |
 | Hidden profit distribution not declared in the return | 20% of the hidden distribution | ZKPO art. 267 |
-| Advances too low: monthly advances short of the annual tax by more than 25%, or quarterly advances short of 75% of the annual tax by more than 25% | Interest on the shortfall above the 25% margin, from 16 April to 31 December | ZKPO art. 89 |
+| Advances too low: the annual tax exceeds the monthly advances by more than 25%, or 75% of the annual tax exceeds the quarterly advances (Q1 to Q3) by more than 25% | Interest on the excess over 125% of the advances, from 16 April to 31 December, under the Law on Interest on Taxes | ZKPO art. 89 |
 | Late payment of the tax | Statutory interest (законна лихва) | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 |
 
 The euro figures above are the lev amounts still written in the ZKPO, converted at BGN 1.95583 and rounded to the cent as Euro Introduction Act arts. 12 and 13 require.
@@ -134,7 +134,7 @@ Struma Trade OOD has an accounting profit for 2026 of EUR 200,000. Its accounts 
 
 The fine is added back (art. 26(6)); accounting depreciation is replaced by tax depreciation (art. 54). The tax result is EUR 187,000. After the 2023 loss, taxable profit is EUR 137,000 and corporate tax is EUR 13,700. Representation costs stay deductible but bear 10% expenses tax, EUR 1,000.
 
-Its 2024 net sales were BGN 1,800,000, which is EUR 920,325.38: above EUR 153,387.56 and below EUR 1,533,875.64, so it pays quarterly advances. It declared a forecast profit of EUR 120,000 by 15 April 2026, so each of the three quarterly advances is EUR 3,000 (EUR 9,000 in all). The balance of EUR 4,700 is due by 30 June 2027 with the expenses tax. No interest under art. 89: 75% of the annual tax is EUR 10,275, below 125% of the advances (EUR 11,250).
+Its 2024 net sales were BGN 1,800,000, which is EUR 920,325.39: above EUR 153,387.56 and below EUR 1,533,875.64, so it pays quarterly advances. It declared a forecast profit of EUR 120,000 by 15 April 2026, so each of the three quarterly advances is EUR 3,000 (EUR 9,000 in all). The balance of EUR 4,700 is due by 30 June 2027 with the expenses tax. No interest under art. 89: 75% of the annual tax is EUR 10,275, below 125% of the advances (EUR 11,250).
 
 ```oa-check
 name: Bulgarian OOD, 2026 CIT with loss, quarterly advances, expenses tax
@@ -164,7 +164,7 @@ expected:
   taxable_profit: 137000
   cit: 13700
   expenses_tax: 1000
-  net_sales_2024_eur: 920325.38
+  net_sales_2024_eur: 920325.39
   quarterly_advance: 3000
   advances_paid: 9000
   balance_due: 4700
