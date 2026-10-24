@@ -2,13 +2,16 @@
 name: pr-self-employment-tax-2025
 description: >
   Puerto Rico federal self-employment tax reference for 2025 earnings and 2026 filing. Explains why the Puerto Rico-source federal income exclusion does not remove the separate social security and Medicare calculation. Covers Form 1040-SS and Schedule SE, the net-earnings threshold, the 92.35 percent adjustment, combined wage cap, Medicare component and additional Medicare thresholds. Includes examples with and without employee wages and distinguishes the filing extension from payment. Local income tax, employer payroll obligations, special occupations, optional methods and independent accountant review remain outside this source-cited draft.
-jurisdiction: PR
-category: international
-tax_year: 2025
-tier: 2
-last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
+jurisdiction: PR
+tax_year: 2025
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Puerto Rico: federal self-employment tax for 2025
@@ -59,3 +62,23 @@ Retain business income and expense records, the Schedule C/F inputs, all wage st
 ## Remaining review
 
 Checked 22 October 2026. Optional methods, church/ministry rules, approved exemptions, international social-security agreements, additional child tax credit, estimated-payment schedules, late-payment relief and local income-tax deductions remain outside this initial scope. No independent accountant review has occurred. Employer payroll, local unemployment/disability and workers' compensation need separate Guides.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -1,13 +1,16 @@
 ---
 name: rs-cross-border
 description: "Serbian cross-border tax for tax year 2026. Covers tax residence of individuals (domicile, centre of business and vital interests, the 183-day test, arrival and departure in the year) and of companies (incorporation or place of effective management); how non-resident individuals and companies are taxed on Serbian income; withholding on dividends, interest, royalties, rent and services paid to non-residents, including the 25% rate for companies on the preferential tax jurisdictions list; claiming treaty relief with a residence certificate; permanent establishment; the foreign tax credit; the 90-day exemption; the newly settled employee relief; and leaving Serbia. Trigger on: Serbian tax resident, 183 days Serbia, non-resident Serbia, withholding tax Serbia, porez po odbitku, nerezident, potvrda o rezidentnosti, PDPO, tax haven list Serbia, moving to or leaving Serbia. Out of scope: rates and returns for residents (serbia-income-tax), corporate tax balance (rs-corporate-tax), payroll (serbia-payroll), contributions (serbia-social-contributions), VAT on cross-border supplies (serbia-vat)."
-jurisdiction: RS
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: RS
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Serbia: cross-border tax, residence, non-residents and withholding (2026)
@@ -262,3 +265,23 @@ expected:
 | Ministry of Finance: Serbia-Germany (Yugoslavia-Germany) double tax treaty, Serbian text (Arts. 6 and 24) | https://www.mfin.gov.rs//upload/media/Ab5pBR_6012ebef63504.pdf | 2026-10-23 |
 
 Not yet confirmed: the 2026 average annual salary that sets the non-resident annual tax threshold (published after year end); the current NBS reference rate used for late payment interest; whether the Ministry of Finance treaty page shows every treaty in force (it may not list all of them), and so whether a given listed jurisdiction falls under the Article 3a(3) carve-out; the form code of the Serbian residence certificate under the Minister's rulebook; how social contributions apply to a non-resident's contract income (left to serbia-social-contributions).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

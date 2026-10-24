@@ -1,13 +1,16 @@
 ---
 name: cz-employee-contributions
 description: "Czech social security and public health insurance contributions on employment income for tax year 2026. Covers the employee social rate of 7.1% (6.5% pension, 0.6% sickness) and the employer rate of 24.8%, health insurance of 13.5% split one third employee (4.5%) and two thirds employer (9%), the 2026 annual cap on the social base of CZK 2,350,416 (48 times the average wage), the health minimum base of CZK 22,400, the CZK 4,500 small-scope threshold and the CZK 12,000 threshold for work agreements (DPP), employer discounts, monthly payment by the 20th, the new single monthly employer report (JMHZ), penalties and EU posting rules. Trigger on: Czech payroll contributions, sociální pojištění zaměstnance, zdravotní pojištění zaměstnavatel, DPP, DPČ, JMHZ, maximální vyměřovací základ. Out of scope: self-employed contributions (cz-social-health), income tax withholding, residence and treaties (cz-cross-border)."
-jurisdiction: CZ
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: CZ
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Czech Republic: employee and employer social and health contributions (2026) v0.1
@@ -257,3 +260,23 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: whether the health minimum base applies to DPP and DPČ workers who pass the earnings threshold (VZP describes the minimum for employees in an employment contract; HIPA § 3(8) does not list agreements among the exceptions, and no other statutory exclusion was found); how the employee's one third of the health premium is rounded when the total is not divisible by 3 (PHIA § 9(2) sets the split but not the rounding); the CZK 4,500 small-scope threshold for 2027 (no MPSV communication found).
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

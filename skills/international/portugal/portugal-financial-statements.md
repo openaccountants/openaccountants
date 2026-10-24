@@ -5,6 +5,8 @@ version: 1.0
 jurisdiction: PT
 tax_year: 2025
 last_updated: 2026-10-23
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
@@ -294,6 +296,8 @@ TOTAL DO CAPITAL PRÓPRIO E PASSIVO
 ## Aviso Legal
 
 Esta skill e os respetivos resultados são disponibilizados apenas para fins informativos e de cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de serem submetidos ou utilizados como base de decisão.
+
+> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

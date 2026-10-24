@@ -1,14 +1,15 @@
 ---
 name: sk-transfer-pricing
 description: "Use this skill for Slovak transfer pricing (transferové oceňovanie) in tax year 2026. It covers dependent persons (závislá osoba, Income Tax Act § 2(n) to (r), the 25% test), significant controlled transactions (over EUR 10,000, or loans over EUR 50,000 principal), the arm's length adjustment in § 17(5), corresponding adjustments in § 17(6), methods and the median rule in § 18(1), full, basic and shortened documentation under Ministry of Finance guideline MF/012879/2025-724 and who keeps which, Table I of the corporate return, the 15-day deadline to hand documentation over, penalties and late payment interest under the Tax Code, country-by-country reporting (EUR 750 million) and APAs under § 18(4) to (10). Trigger on: transfer pricing Slovakia, transferové oceňovanie, závislá osoba, kontrolovaná transakcia, transferová dokumentácia, APA Slovakia. Out of scope: corporate tax in general (sk-corporate-income-tax), individual income tax (slovakia-pit), VAT (slovakia-vat-return)."
-jurisdiction: SK
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: SK
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovakia: transfer pricing (2026) v0.1
@@ -257,3 +258,23 @@ expected:
 | Národná banka Slovenska, ECB key interest rates | https://nbs.sk/en/statistics/financial-markets/interest-rates/ecb-key-interest-rates/ | 2026-10-23 |
 
 Not yet confirmed: the day-count basis the tax office uses for per-day penalties and interest (the examples assume 365 days); whether interest also runs on tax disclosed in a timely supplementary return, alongside the § 155(1)(g) penalty; the end date of the audit penalty where no § 16(9) window applies; whether a TP adjustment that raises income counts towards the EUR 100,000 and EUR 5,000,000 revenue tests in § 15; whether a TP adjustment paid abroad is treated as a deemed distribution for withholding; the materiality test in Accounting Act § 17(9) that the guideline uses (not read); the name of the tax office that handles APAs and corresponding adjustments (the law points to the Financial Directorate's website, which was not read); the Financial Directorate's support pages on TP documentation (podpora.financnasprava.sk returned an error); and the public country-by-country reporting rules in the Accounting Act, not covered here.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

@@ -7,23 +7,30 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ie-cat.md`
-4. `ie-cgt.md`
-5. `ie-corporation-tax.md`
-6. `ie-formation.md`
-7. `ie-freelance-intake.md`
-8. `ie-income-tax-form11.md`
-9. `ie-non-dom.md`
-10. `ie-payroll.md`
-11. `ie-preliminary-tax.md`
-12. `ie-prsi-class-s.md`
-13. `ie-return-assembly.md`
-14. `ie-usc.md`
-15. `ie-vat-return.md`
-16. `ireland-vat-return.md`
-17. `eu-vat-directive.md`
-18. `payroll-workflow-base.md`
-19. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ie-cat.md`
+5. `ie-cgt.md`
+6. `ie-corporation-tax.md`
+7. `ie-cross-border.md`
+8. `ie-foreign-tax-and-withholding.md`
+9. `ie-formation.md`
+10. `ie-freelance-intake.md`
+11. `ie-income-tax-form11.md`
+12. `ie-non-dom.md`
+13. `ie-paye-rental-nonresident.md`
+14. `ie-payroll.md`
+15. `ie-preliminary-tax.md`
+16. `ie-prsi-class-s.md`
+17. `ie-prsi-cross-border.md`
+18. `ie-return-assembly.md`
+19. `ie-transfer-pricing.md`
+20. `ie-usc.md`
+21. `ie-vat-return.md`
+22. `ireland-vat-return.md`
+23. `eu-vat-directive.md`
+24. `payroll-workflow-base.md`
+25. `company-formation-workflow-base.md`
+26. `transfer-pricing-workflow-base.md`
 
 ## Also known as
 

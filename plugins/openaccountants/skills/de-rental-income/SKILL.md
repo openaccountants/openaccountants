@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/de-rental-income"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-23"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -73,7 +73,7 @@ All apply to tax year 2026 and were the same in 2025 unless marked.
 | Car travel to the property | 30 cents per km driven | [§ 5(2) BRKG](https://www.gesetze-im-internet.de/brkg_2005/__5.html) |
 | Commuting allowance (only if a first place of activity), 2026 | EUR 0.38 per full km one way | [§ 9(1) no. 4 EStG](https://www.gesetze-im-internet.de/estg/__9.html) |
 | Loss carry-back | EUR 1,000,000 (EUR 2,000,000 joint) | [§ 10d EStG](https://www.gesetze-im-internet.de/estg/__10d.html) |
-| Loss carry-forward above EUR 1 million (EUR 2 million joint) | 70% of the excess | § 10d(2) EStG |
+| Loss carry-forward above EUR 1 million (EUR 2 million joint) | 70% of the excess for 2024 to 2027; 60% from 2028 | § 10d(2) EStG; BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |
 | Private sale exempt if total gains are | less than EUR 1,000 | [§ 23(3) EStG](https://www.gesetze-im-internet.de/estg/__23.html) |
 | Employee must file if untaxed income is | more than EUR 410 | [§ 46(2) EStG](https://www.gesetze-im-internet.de/estg/__46.html) |
 | VAT on an opted let | 19% | [§ 12 UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html) |
@@ -171,7 +171,7 @@ Letting is VAT-exempt (§ 4 no. 12 sentence 1 letter a UStG), except short-term 
 
 - **Same year**: against other rental income, then other kinds of income (§ 2(3) EStG).
 - **Carry-back**: up to EUR 1,000,000 (EUR 2,000,000 joint), to the year before and then the second year before; waivable only in full ("insgesamt abzusehen").
-- **Carry-forward**: no time limit; unlimited up to total income of EUR 1 million (EUR 2 million joint), then 70% of the excess (from 2024, § 52(18b)). The page shows no end date; the share for later years is marked "check": confirm it on the current statute before planning a large carry-forward. Fixed by a separate notice (§ 10d(4)).
+- **Carry-forward**: no time limit; unlimited up to total income of EUR 1 million (EUR 2 million joint), then 70% of the excess for 2024 to 2027 (§ 52(18b)) and 60% again from 2028: BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) changes "70 Prozent" back to "60 Prozent" from 1 January 2028, a change the consolidated text on gesetze-im-internet.de does not show yet. Fixed by a separate notice (§ 10d(4)).
 - **Schemes**: §§ 15a, 15b apply by analogy (§ 21(1) sentence 2). Refer.
 - **Lasting losses** with no surplus in sight may be denied; no allowed page sets the test. A permanent home let at 66% or more is fully paid by statute. Refer doubtful cases.
 - **Prepayments**: a building's rental loss reduces prepayments only for calendar years beginning **after** its acquisition or completion ([§ 37(3) sentence 8 EStG](https://www.gesetze-im-internet.de/estg/__37.html)); if the building is bought before the year it is completed, count from completion (sentence 9). The bar does not apply where § 7b is claimed (sentence 10). The same timing governs a wage tax allowance ([§ 39a(1) no. 5 EStG](https://www.gesetze-im-internet.de/estg/__39a.html)).
@@ -256,7 +256,7 @@ The Case 1 client asks in autumn 2026 to cut 2026 prepayments for her EUR 10,050
 ## When to refuse or refer
 
 - Business property, trading partnerships, or a possible trade in property (gewerblicher Grundstückshandel).
-- Non-resident landlords and foreign property (Anlage AUS, treaties).
+- Non-resident landlords: compute the rental result here, then tax it under `de-non-resident-tax`. Foreign property (Anlage AUS, treaties): refer.
 - The cheap-let forecast band; doubted intention to make a surplus; lasting losses.
 - Holiday homes with own use; short-term lets with hotel-like services.
 - Shorter actual useful life; change of method on older buildings.
@@ -341,4 +341,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `de-rental-income` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/de-rental-income. If neither is available, confirm every figure against the official source pages cited above before relying on it.

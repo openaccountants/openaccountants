@@ -7,13 +7,18 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `luxembourg-income-tax.md`
-4. `luxembourg-payroll.md`
-5. `luxembourg-social-contributions.md`
-6. `luxembourg-tax-optimization.md`
-7. `luxembourg-vat-return.md`
-8. `eu-vat-directive.md`
-9. `payroll-workflow-base.md`
+3. `README.md`
+4. `lu-corporate-tax.md`
+5. `lu-cross-border.md`
+6. `lu-transfer-pricing.md`
+7. `luxembourg-income-tax.md`
+8. `luxembourg-payroll.md`
+9. `luxembourg-social-contributions.md`
+10. `luxembourg-tax-optimization.md`
+11. `luxembourg-vat-return.md`
+12. `eu-vat-directive.md`
+13. `payroll-workflow-base.md`
+14. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

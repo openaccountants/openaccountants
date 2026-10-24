@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/germany-tax-optimization"
   jurisdiction: "DE"
   tax_year: "2026"
-  last_updated: "2026-09-20"
+  last_updated: "2026-10-23"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -319,7 +319,7 @@ Outside a date window only straight-line depreciation applies, and a switch from
 | Source | all figures below | https://www.gesetze-im-internet.de/estg/__10d.html |
 | Carry-back cap, single assessment | EUR 1,000,000 | "einem Betrag von 1 000 000 Euro" |
 | Carry-back cap, jointly assessed spouses | EUR 2,000,000 | "einem Betrag von 2 000 000 Euro" |
-| Carry-forward: share of the total income above the base | 70% | "bis zu 70 Prozent des 1 Million Euro übersteigenden" |
+| Carry-forward: share of the total income above the base | 70% for 2024 to 2027; 60% from 2028 | "bis zu 70 Prozent des 1 Million Euro übersteigenden"; back to 60 Prozent from 2028 under BGBl. 2024 I Nr. 108, Art. 6 (https://www.recht.bund.de/bgbl/1/2024/108/VO.html) |
 
 **Trade tax loss carry-forward (§ 10a GewStG)**
 
@@ -562,6 +562,8 @@ This Guide and its outputs are provided for informational and computational purp
 
 > Contributed by OpenAccountants.
 
+> Contributed by Ryan Duguid.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -582,4 +584,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-09-20. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `germany-tax-optimization` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/germany-tax-optimization. If neither is available, confirm every figure against the official source pages cited above before relying on it.

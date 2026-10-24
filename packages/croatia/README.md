@@ -15,9 +15,11 @@
 8. `hr-company-formation.md`
 9. `hr-corporate-income-tax.md`
 10. `hr-tax-overview.md`
-11. `eu-vat-directive.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+11. `hr-transfer-pricing.md`
+12. `eu-vat-directive.md`
+13. `payroll-workflow-base.md`
+14. `company-formation-workflow-base.md`
+15. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

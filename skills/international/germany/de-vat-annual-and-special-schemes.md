@@ -1,13 +1,16 @@
 ---
 name: de-vat-annual-and-special-schemes
 description: "German VAT for tax year 2026 beyond the monthly or quarterly advance return: the annual VAT return (Umsatzsteuererklärung, form USt 2 A) and who files it, its deadline (2 August 2027, or 29 February 2028 with a tax adviser), reconciling it to the advance returns and paying the balance within one month; the small business scheme under § 19 UStG (EUR 25,000 and EUR 100,000, losing it mid-year, no annual return) and the EU small business scheme run by the BZSt; cash accounting under § 20 UStG (EUR 800,000, freelancers); the one-month extension and the 1/11 special prepayment; partial exemption (§ 15(4)) and input tax correction (§ 15a); domestic reverse charge (§ 13b); the EU one-stop shop (§ 18j, EUR 10,000); penalties; and the e-invoicing timetable. Trigger on: Umsatzsteuererklärung, Jahreserklärung, Abschlusszahlung, Kleinunternehmer, Istversteuerung, Sondervorauszahlung, Vorsteueraufteilung, § 15a, OSS. Out of scope: classifying transactions and filling the advance return (germany-vat-return), e-invoice formats (germany-einvoice), income tax (de-income-tax, de-einkommensteuer-freelancer)."
-jurisdiction: DE
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: DE
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Germany: the annual VAT return and the special schemes, tax year 2026
@@ -243,3 +246,23 @@ expected:
 | ELSTER, the filing portal | https://www.elster.de | 2026-10-23 |
 
 Not yet confirmed: whether the one-stop shop deadline for Q4 2026 (Sunday 31 January 2027) moves to the next working day under § 108(3) AO; neither § 18j UStG, UStAE 18j.1 nor the BZSt page says so, so the skill tells the reader to file and pay by Friday 29 January 2027.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

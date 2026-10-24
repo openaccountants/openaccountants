@@ -1,13 +1,16 @@
 ---
 name: pl-transfer-pricing
 description: "Polish transfer pricing (ceny transferowe) for tax year 2026, under CIT Act chapter 1a (art. 11a to 11t) and the matching PIT Act chapter 4b (art. 23m to 23zf). Covers related parties (25% test), arm's length and recharacterisation, local file thresholds (PLN 10m goods and financial, PLN 2m services and other; PLN 2.5m and PLN 0.5m for tax havens), exemptions, deadlines, the TPR-C return and its 2026 changes (Dz.U. 2026 poz. 1371), the PLN 200m master file, the 2026 loan safe harbour (WIBOR, WIRON or POLSTR 3M plus 2.0 or 2.6 points), the 5% low-value services safe harbour, the 10%, 20% and 30% additional tax liability, fiscal penal fines, APA fees, MAP and CbC (PLN 3.25bn or EUR 750m). Trigger on: ceny transferowe, local file Poland, TPR-C, safe harbour pożyczki. Out of scope: rates and base in pl-cit-corporate-tax; individuals in pl-income-tax."
-jurisdiction: PL
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: PL
+tax_year: 2026
+last_updated: 2026-10-23
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Poland: transfer pricing (2026)
@@ -282,3 +285,23 @@ expected:
 | podatki.gov.pl, Ceny transferowe (TPR-C(6), 2026 safe harbour notice) | https://www.podatki.gov.pl/ceny-transferowe/ | 2026-10-23 |
 
 Not yet confirmed: the WIBOR 3M, WIRON 3M or POLSTR 3M fixing for any particular contract date (example 1 assumes 4.00%; take the actual fixing from the benchmark administrator); whether a calendar-2025 TPR filed after that date must still carry the repealed statement (the transitional rule in art. 4(1) covers only tax years straddling 1 January 2026); the TPR-C form version and regulation for tax year 2026 (not yet published); whether the Ministry of Finance accepts that Tax Ordinance art. 12 § 5 moves the local file preparation deadline (the text applies it to deadlines in tax law; no MF guidance read); the full list of low-value services in annex 6 to the CIT Act (not reproduced here); the detailed content requirements in the documentation regulation (not read in full); treaty-specific MAP time limits.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

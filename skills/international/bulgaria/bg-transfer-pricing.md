@@ -1,14 +1,15 @@
 ---
 name: bg-transfer-pricing
 description: "Bulgarian transfer pricing (трансферно ценообразуване) for tax year 2026 under the Corporate Income Tax Act (ZKPO) Article 15, the Tax-Insurance Procedure Code (DOPK) Chapter 8a (Articles 71a to 71zh), Articles 116 and 278a, the related-party definition in DOPK Additional Provisions para. 1 item 3, and Ordinance N-3 of 7 November 2025 on the market price methods, which replaced Ordinance N-9 from 1 January 2026. Covers who is related, the arm's length rule for domestic and cross-border deals, the five methods, the interquartile range and adjustment to the median, local and master file tests and euro thresholds, the 30 June deadline, hidden profit distribution, penalties, country-by-country reporting and the absence of an APA procedure. Trigger on: Bulgaria transfer pricing, местно досие, обобщено досие, свързани лица, Наредба Н-3, Bulgarian local file, country-by-country report Bulgaria. Out of scope: the full CIT computation, thin capitalisation detail and withholding tax (bg-corporate-income-tax), VAT (bulgaria-vat-return)."
-jurisdiction: BG
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.1
-verified_by: pending
+jurisdiction: BG
+tax_year: 2026
+last_updated: 2026-10-23
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Bulgaria: transfer pricing (трансферно ценообразуване), tax year 2026
@@ -216,3 +217,23 @@ expected:
 Leva amounts: the Euro Introduction Act (para. 34) restated in euro only the DOPK Article 71b(2), item 3 size tests and the CbC thresholds. The Article 71b(5) transaction thresholds and the Article 278a penalties are still printed in leva and are read as euro at BGN 1.95583, rounded to the cent (Euro Introduction Act, Articles 11(2), 12 and 13).
 
 Not yet confirmed: whether underpricing of sales to a shareholder (not only overpayments) counts as a hidden profit distribution under ZKPO para. 1, item 5(a); the required language of the local file; whether the annual CIT return has a related-party disclosure schedule; the text of Council of Ministers Decree 347/2025 itself (the interest formula is taken from the NRA overdue liabilities page); whether the old NRA Transfer Pricing Manual will be reissued under Ordinance N-3.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
