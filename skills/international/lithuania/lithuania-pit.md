@@ -77,7 +77,7 @@ VDU is the average wage used for the year's social insurance base. For 2026 VMI 
 
 **What GMP includes.** All taxable income for the year, except income taxed at the 5% waste rate, business certificate income, and life insurance or pension payouts up to the premiums paid. It is counted before the article 21 expenses and before the NPD itself (GPMĮ article 20(7), applying to 2026 income). The NPD reduces only employment-related income (article 20(1)).
 
-**Individual activity.** Taxable income is income less allowable deductions (GPMĮ articles 16(1)(3) and 18). The person takes either actual documented expenses, including their own Sodra and health contributions (article 18(11)), or a flat 30% of income in place of the other article 18 deductions, with no documents needed (article 18(12)). The 30% option is not open where the income, or part of it, comes from the person's employer or a person linked to the employer. Then:
+**Individual activity.** Taxable income is income less allowable deductions (GPMĮ articles 16(1)(3) and 18). The person takes either actual documented expenses, including their own Sodra and health contributions (article 18(11)), or a flat 30% of income in place of the other article 18 deductions, with no documents needed (article 18(12)). The 30% option is not open where the individual activity income, or part of it, comes from a person with whom the individual has an employment relationship or one equivalent to it. Then:
 
 - taxable income up to EUR 20,000: tax = 20% x income - 15% x income, so 5% effective;
 - over EUR 20,000 up to EUR 42,500: tax = 20% x income - income x (0.15 - 2/300,000 x (income - 20,000)); the effective rate climbs to 20%;
@@ -110,7 +110,7 @@ Losses from individual activity carry forward and stay with the type of activity
 ## Penalties and interest
 
 - **Late payment interest** (delspinigiai): from 1 August 2026 the rate is **0.027% for each day** of delay, set by order of the Minister of Finance (VMI page on late payment interest; MAĮ articles 96 and 99).
-- **Tax found at audit:** where an audit finds tax not calculated or not declared, or a lower rate applied unlawfully, the taxpayer pays the shortfall plus a fine of **20% to 100%** of it (MAĮ article 139(1)). A repeat breach doubles the range (article 139(3)). Voluntary correction is dealt with in article 139(4).
+- **Tax found at audit:** where an audit finds tax not calculated or not declared, or a lower rate applied unlawfully, the taxpayer pays the shortfall plus a fine of **20% to 100%** of it (MAĮ article 139(1)). If a fine for a breach of the same tax law was already imposed within the limitation period of MAĮ article 68(4), the new fine is doubled (article 139(3)). These fines do not apply where the taxpayer files a late return, or corrects a return that declared too little, before the date of VMI's audit order (article 139(4)).
 - **Waiver:** VMI can waive fines and interest in the cases in MAĮ article 141.
 
 ## Cross-border points
@@ -174,7 +174,7 @@ expected:
 
 1. Were you a Lithuanian resident for all of 2026, and do you have income from abroad?
 2. What kinds of income did you have: salary, registered individual activity, a business certificate, dividends, interest, rent, sales of shares or property?
-3. For individual activity: total income, actual expenses with documents, and whether any of the income came from your employer or a person linked to it (that rules out the 30% option).
+3. For individual activity: total income, actual expenses with documents, and whether any of the income came from someone you also work for as an employee (that rules out the 30% option).
 4. For any sale: purchase date, cost with documents, and for a home whether you had declared residence there for the 2 years before the sale.
 5. Did your employer apply the NPD, and at more than one job?
 6. Did you pay life insurance, pension contributions or tuition you want to deduct?
@@ -189,4 +189,4 @@ expected:
 | VMI, late payment interest (KM2633, 30 July 2026) | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 | Law on Tax Administration IX-2112, consolidated from 1 July 2026, arts 96, 99, 139, 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-24 |
 
-Not yet confirmed: the fine for filing the annual return late (Code of Administrative Offences, not read); what MAĮ article 139(4) gives for voluntary correction; whether individual activity needs advance tax payments during the year; crypto-asset rules beyond the general gain rules above; Sodra figures for the self-employed (lt-payroll-social still carries 2025 figures).
+Not yet confirmed: the fine for filing the annual return late (Code of Administrative Offences, not read); whether individual activity needs advance tax payments during the year; crypto-asset rules beyond the general gain rules above; Sodra figures for the self-employed (lt-payroll-social still carries 2025 figures).
