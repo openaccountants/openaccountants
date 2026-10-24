@@ -40,7 +40,7 @@ Companies linked only through shares held directly by the state or a municipalit
 3. any company or person in a low-tax or no-tax country or territory, related or not;
 4. a related Latvian resident, only where the transaction is economically linked, in the same supply chain, with that person's dealings with a related foreign company or a low-tax person.
 
-Group 4 does not count towards the filing thresholds and needs a local file only when VID asks for one (article 15.2(7)). Purely domestic transactions outside the supply-chain rule carry no article 15.2 documentation duty, but the CIT charge in article 4(2)(2)(e) still applies to them.
+Group 4 does not count towards the group 1 to 3 thresholds. It needs a local file only where the group 4 transactions exceed EUR 250,000 in the reporting year and VID asks for one (article 15.2(7)). Purely domestic transactions outside the supply-chain rule carry no article 15.2 documentation duty, but the CIT charge in article 4(2)(2)(e) still applies to them.
 
 **Controlled transaction** means a transaction between two related persons under article 1(18), or with a person in groups 1 to 4 above (article 1(29¹)).
 
@@ -64,7 +64,7 @@ Group 4 does not count towards the filing thresholds and needs a local file only
 | Late payment interest (nokavējuma nauda) | 0.05% of the unpaid tax for each day late | 2026 | Law on Taxes and Fees, art. 29(2) |
 | Penalty on tax understated, found in an audit | 20% of the understated tax if the shortfall is up to 15% of the tax due; 30% if it is more | 2026 | Law on Taxes and Fees, art. 32(4) and (5) |
 | Audit and correction window for transfer pricing | 5 years after the payment deadline (3 years for other matters) | 2026 | Law on Taxes and Fees, arts. 16(1)(6) and 23(1) and (5) |
-| Thresholds before the 2026 rewrite (reporting years starting before 2025) | Local file prepared above EUR 250,000; local file filed above EUR 5,000,000; master file filed above EUR 15,000,000, or above EUR 5,000,000 where net turnover exceeded EUR 50,000,000 | Up to 2024 | Law on Taxes and Fees, art. 15.2(3) and (4), version in force from 28 November 2018 |
+| Thresholds before the 2026 rewrite (reporting years starting before 2025) | Local file prepared above EUR 250,000; local file filed above EUR 5,000,000; master file filed above EUR 15,000,000, or above EUR 5,000,000 where net turnover exceeded EUR 50,000,000 | Up to 2024 | Law on Taxes and Fees, art. 15.2(3) and (4), version in force up to 31 December 2025 |
 
 ## The taxable base
 
@@ -73,7 +73,7 @@ Group 4 does not count towards the filing thresholds and needs a local file only
 3. **Compute the object.** The object is the difference between the price charged and the market value: income the company would have received, or costs it would not have incurred (CIT Law, art. 4(2)(2)(e); Regulation No. 677, para. 7). Only a difference that moves profit out of the Latvian company is a deemed distribution. The law contains no downward adjustment for a price that favours the Latvian company.
 4. **Gross up and tax.** Divide the object by 0.8 and apply 20% (CIT Law, arts. 3(1) and 4(9)). The effective rate on the price difference is 25%.
 5. **Timing.** The object goes into the taxable base of the last taxation period (month or quarter) of the reporting year (CIT Law, art. 4(5)).
-6. **Low value-adding services, simplified route.** A payer may instead price support services (accounting and audit, HR, IT support outside the group's core business, in-house legal, communications, general administration) at cost plus 5% (Regulation No. 677, paras. 18.1 to 18.9). The services must be supportive, outside the group's main business, use no unique and valuable intangibles and carry no significant risk (para. 18.2). Research and development, manufacturing, purchasing of production inputs, sales and marketing, financial services, extraction, insurance and senior management are excluded (para. 18.3). The route is closed if the same services are sold to independent parties (para. 18.5). Conditions: the payer keeps simplified documentation, the group applies the method consistently, and the services give the recipient a real benefit and do not duplicate its own functions or serve only the shareholder (para. 18.6). Costs are pooled, direct charges separated, the pool allocated by a consistent key (para. 18.7), and the 5% mark-up added to both direct and allocated costs (para. 18.8). A charge above that value is a cost the company would not have incurred, so the excess is the taxable object.
+6. **Low value-adding services, simplified route.** A payer may instead price support services (accounting and audit, HR, IT support outside the group's core business, in-house legal, communications, general administration) at cost plus 5% (Regulation No. 677, paras. 18.1 to 18.9). The services must be supportive, outside the group's main business, use no unique and valuable intangibles and carry no significant risk (para. 18.2). Research and development, manufacturing, purchasing of production inputs, sales and marketing, financial services, extraction, insurance and senior management are excluded (para. 18.3). The route is closed if the same services are sold to independent parties (para. 18.5). Conditions: the payer keeps simplified documentation, the group applies the method consistently, and the services give the recipient a real benefit and do not duplicate its own functions or serve only the shareholder (para. 18.6). Costs are pooled, direct charges separated, the pool allocated by a consistent key (para. 18.7), and the 5% mark-up added to both direct and allocated costs (para. 18.8). Pass-through costs are listed in the pool but get no mark-up and are left out of the value (para. 18.7.1). A charge above that value is a cost the company would not have incurred, so the excess is the taxable object.
 7. **Loans to related persons.** A loan to a related person can be a deemed distribution in its own right under CIT Law article 11, separately from interest pricing. See `lv-corporate-income-tax`.
 
 ## Deadlines and filing
@@ -84,7 +84,7 @@ Group 4 does not count towards the filing thresholds and needs a local file only
 | Local file and master file, prepared | Within 12 months after the end of the reporting year | Art. 15.2(4) |
 | Local file and master file, produced when VID asks | Within 30 days of the request | Art. 15.2(4) |
 | Documentation plus other information requested to check adjustment risk or to propose an APA | Within 90 days of the request | Art. 15.2(6) |
-| Local file for a domestic supply-chain transaction (group 4), when VID asks | Within 90 days of the request | Art. 15.2(7) |
+| Local file for domestic supply-chain transactions (group 4) above EUR 250,000, when VID asks | Within 90 days of the request | Art. 15.2(7) |
 | Simplified documentation (low value-adding services), prepared, and produced when VID asks | Prepared within 12 months after year end; produced within one month of the request | Art. 15.2(12) |
 | Translation of a file written in English, when VID asks | Within one month of the request | Art. 15.2(13)(3) |
 | Annual update | The functional and economic analysis is reviewed every year. Where nothing material changed, a local file may be refreshed every three years, but the financial data of the tested party and comparables are updated every year | Art. 15.2(5) |
@@ -100,7 +100,7 @@ Files may be in Latvian or English (art. 15.2(13)(3)) and must be electronic and
 
 - **Documentation penalty.** Up to 1% of the controlled transactions that had to be documented, as shown in the year's income or expenses, capped at EUR 100,000. It applies if the documentation deadline is missed, or if several required parts are missing so that VID cannot tell whether the price is at market value (Law on Taxes and Fees, art. 15.2(14)). "Up to" means VID sets the amount within that range.
 - **Estimated assessment.** If the article 15.2 documents are not filed on time, or materially breach the requirements, VID may set the tax by estimate during an audit or tax control (art. 23(6), point 13).
-- **Tax adjustment.** The extra CIT, late payment interest of 0.05% a day from the payment deadline (art. 29(2)), and the audit penalty of 20% or 30% of the understated tax (art. 32(4) and (5)).
+- **Tax adjustment.** The extra CIT, late payment interest of 0.05% a day from the payment deadline (art. 29(2)), and the audit penalty of 20% or 30% of the understated tax (art. 32(4) and (5)). The penalty is halved if the breach is not a repeat one, the taxpayer met its filing and payment deadlines and it cooperated with VID under art. 32.2 (art. 32(7)).
 - **Correcting first.** A taxpayer may correct its return and pay the tax and late interest with no penalty before a tax control decision is issued (art. 33.2(1)). After receiving notice of an audit, but before the audit starts, a correction carries a 5% penalty on the understated tax (art. 33.2(2)).
 - **Country-by-country report.** Up to 1% of annual turnover, at most EUR 3,200 (art. 32.5(2)).
 
@@ -209,7 +209,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Law on Taxes and Fees (likums "Par nodokļiem un nodevām"), consolidated version in force from 1 January 2026: arts. 1(18), 1(29) to 1(29³), 15(9), 15.2, 16(1)(6), 16.1, 23, 29, 32, 32.5, 33.2, transitional provision 249 | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-23 (read from the Internet Archive copy of 18 September 2026; likumi.lv refused direct connections) |
-| Law on Taxes and Fees, art. 15.2 as in force from 28 November 2018 (the pre-2026 thresholds) | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-23 (Internet Archive copy of 26 December 2024) |
+| Law on Taxes and Fees, art. 15.2 as in force up to 31 December 2025 (the pre-2026 thresholds) | https://likumi.lv/ta/id/33946-par-nodokliem-un-nodevam | 2026-10-24 (Internet Archive copy of 7 September 2025) |
 | Corporate Income Tax Law (Uzņēmumu ienākuma nodokļa likums), version in force from 1 January 2026: arts. 2, 3, 4, 5(6), 11, 17 | https://likumi.lv/ta/id/292700-uznemumu-ienakuma-nodokla-likums | 2026-10-23 (Internet Archive copy of 4 October 2026) |
 | Cabinet Regulation No. 677 of 14 November 2017, CIT Law application rules, version from 25 February 2021: paras. 3, 6 to 19 | https://likumi.lv/ta/id/295416 | 2026-10-23 (Internet Archive copy of 11 May 2026) |
 | Cabinet Regulation No. 397 of 4 July 2017 on the country-by-country report, version from 7 February 2020: paras. 2.3, 9, 16, 17 | https://likumi.lv/ta/id/292196-noteikumi-par-starptautiskas-uznemumu-grupas-parskatu-par-katru-valsti | 2026-10-23 (Internet Archive copy of 12 August 2024) |
