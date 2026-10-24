@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # The UK statutory residence test (SRT), tax year 2026/27
 
-Tax year 2026/27 runs from 6 April 2026 to 5 April 2027. It has 365 days, because it holds no 29 February. The test is in Finance Act 2013, Schedule 45 ("Sch 45"), in force since 6 April 2013 and unchanged in the paragraphs used here. HMRC's summary is guidance note RDR3 (updated 11 June 2026) and its manual is the Residence and FIG regime manual (RFIG20000 onwards). Where they simplify, the statute governs. The thresholds are counts of days, hours and ties. The law words them as "less than", "at least", "more than" or "not more than", and this skill keeps that wording, because one day either side changes the answer.
+Tax year 2026/27 runs from 6 April 2026 to 5 April 2027. It has 365 days, because it holds no 29 February. The test is in Finance Act 2013, Schedule 45 ("Sch 45"), in force since 6 April 2013. The only amendments to the paragraphs used here are wording changes for opposite-sex civil partners (S.I. 2019/1458, from 2 December 2019). Finance Act 2020 s109 modified the test for coronavirus for 2019/20 and 2020/21 only; it matters for 2026/27 only through a look-back to those years (FIG, inheritance tax). HMRC's summary is guidance note RDR3 (updated 11 June 2026) and its manual is the Residence and FIG regime manual (RFIG20000 onwards). Where they simplify, the statute governs. The thresholds are counts of days, hours and ties. The law words them as "less than", "at least", "more than" or "not more than", and this skill keeps that wording, because one day either side changes the answer.
 
 ## Who this applies to
 
@@ -59,15 +59,17 @@ The SRT holds no money amounts. These are its counts. All are in Sch 45 as in fo
 | 90-day tie | More than 90 UK days in either or both of the 2 previous tax years (para 37) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Accommodation tie | Available for a continuous period of at least 91 days and at least 1 night spent there; a gap of fewer than 16 days does not break availability; at a close relative's home, at least 16 nights (para 34) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Family tie through a child under 18 | No tie if P sees the child in the UK on fewer than 61 days (para 32(3)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
-| Child in UK full-time education | Treated as not resident if fewer than 21 UK days outside term-time (para 33(3)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Child in UK full-time education | A child under 18 who is UK resident only because of UK full-time education is treated as not resident if fewer than 21 UK days outside term-time (para 33(3)-(4)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Deeming rule | Applies with at least 3 ties, more than 30 days present but not at midnight, and residence in 1 of the 3 previous years; days after the 30th count (para 23) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Exceptional circumstances | At most 60 days a year left out of the count (para 22(6)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Split year Case 3: leaving the UK home | Fewer than 16 UK days after the home ends; sufficient overseas link at the end of 6 months (para 46) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Split year Cases 1 and 6: permitted limits | 30 UK work days and 90 UK days, each reduced by the limit times whole months outside the period, divided by 12 (paras 44(8)-(9), 49(8)-(9)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Split year Cases 2 and 7: permitted limit | 90 UK days, reduced by 90 times whole months outside the part, divided by 12 (paras 45(9)-(10), 50(9)-(10)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
 | Rounding the "appropriate number" | Round up if the first decimal is 5 or more, otherwise down (paras 20(4), 52(5)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| "Whole months" in the appropriate number | Calendar months wholly inside the part of the year (Interpretation Act 1978 s5 and Sch 1: "Month" means calendar month). HMRC, for the same words in para 20: "the whole of January, the whole of February and so on", with 6 to 30 April counting as the whole of April (RFIG20960) | 2026/27 | https://www.legislation.gov.uk/ukpga/1978/30/schedule/1 |
 | Temporary non-residence | Sole UK residence in at least 4 of the 7 tax years before the year of departure; non-residence of 5 years or less (para 110) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
-| 4-year FIG regime entry | Not UK resident for each of the 10 tax years before the first qualifying year (ITTOIA 2005 s845B) | 2026/27 | https://www.legislation.gov.uk/ukpga/2005/5/section/845B |
+| 4-year FIG regime entry | Not UK resident for each of the 10 tax years before the first qualifying year, and at least 10 years old at its start (ITTOIA 2005 s845B(1)(c)-(d)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2005/5/section/845B |
+| Inheritance tax: long-term UK resident | UK resident for at least 10 of the previous 20 tax years (IHTA 1984 s6A(1)) | 2026/27 | https://www.legislation.gov.uk/ukpga/1984/51/section/6A |
 
 ## The taxable base
 
@@ -112,7 +114,7 @@ Used only when no automatic test decides the year. Each tie must be of a differe
 
 | Tie | Who it counts for | Definition |
 |---|---|---|
-| Family (para 32) | Leavers and arrivers | A spouse or civil partner (not separated), a partner living with the person as if married, or a child under 18, who is UK resident for the year. No tie through a child seen in the UK on fewer than 61 days. A child in UK full-time education is treated as non-resident if in the UK fewer than 21 days outside term-time (para 33). |
+| Family (para 32) | Leavers and arrivers | A spouse or civil partner (not separated), a partner living with the person as if married, or a child under 18, who is UK resident for the year. No tie through a child seen in the UK on fewer than 61 days. A child under 18 who is UK resident only because of full-time education in the UK is treated as non-resident if in the UK fewer than 21 days outside term-time (para 33). |
 | Accommodation (para 34) | Leavers and arrivers | A place to live in the UK, available for a continuous 91 days or more in the year, with at least 1 night spent there. Gaps under 16 days are bridged. At a close relative's home (parent, grandparent, sibling, adult child or grandchild), at least 16 nights. |
 | Work (para 35) | Leavers and arrivers | At least 40 days with more than 3 hours' work in the UK. |
 | 90-day (para 37) | Leavers and arrivers | More than 90 UK days in either or both of the 2 previous tax years. |
@@ -135,13 +137,13 @@ A year can be split only if the person is UK resident for it (para 43). Test eve
 | 7. Partner of a Case 6 person (para 50) | Not resident last year. Moves to the UK to live with a partner in Case 6 (this year or last). Before the deemed arrival day: no UK home, or more time overseas; UK days within the reduced 90 limit. Resident next year. | Before the deemed arrival day |
 | 8. Starting to have a UK home (para 51) | Not resident last year. No UK home on 6 April; from a day in the year, a UK home for the rest of the year and all of next year. Before that day, not sufficient ties (tables cut back). Resident next year, and next year is not a split year. | Before the UK home starts |
 
-- **Cutting the tables back** (Cases 4, 5, 8). Each day number in the first column of Table A or B is reduced by: that number times A, divided by 12, where A is the whole months in the year from the arrival day (paras 47(7), 48(6), 51(7)). The tie definitions themselves (40 work days, 91 days of availability, 61 days with a child) are not reduced. The family-member residence check still uses the whole year (paras 47(8), 48(7), 51(8)).
+- **Cutting the tables back** (Cases 4, 5, 8). Each day number in the first column of Table A or B is reduced by: that number times A, divided by 12, where A is the whole months in the part of the year beginning with the arrival day (paras 47(7), 48(6), 51(7)). A whole month is a calendar month (Interpretation Act 1978 Sch 1). Arriving on 15 May 2026, A is 10 (June to March); 1 to 5 April 2027 is not a whole month. The tie definitions themselves (40 work days, 91 days of availability, 61 days with a child) are not reduced. The family-member residence check still uses the whole year (paras 47(8), 48(7), 51(8)).
 - **Priority.** Case 1 beats Cases 2 and 3; Case 2 beats Case 3 (para 54). Among arrival Cases: Case 6 wins unless Case 5 also applies with an earlier split year date; the same with Case 7 where Case 6 does not apply. Otherwise, among Cases 4, 5 and 8, the earliest split year date wins (para 55). The split year date is the last day of the overseas part (para 55(2)).
 - **Partner** means a spouse, civil partner, or someone living with the person as if married (para 52(4)).
 
 ## Deadlines and filing
 
-- **Where residence is reported.** On the SA109 pages ("Residence and foreign income and gains (FIG) regime etc") filed with the SA100 Self Assessment return. Split-year claims and FIG claims go there too.
+- **Where residence is reported.** On the SA109 pages ("Residence and foreign income and gains (FIG) regime etc") filed with the SA100 Self Assessment return. Split-year claims and FIG claims go there too. The latest SA109 on GOV.UK is the 2026 edition, for 2025/26 (page updated 28 September 2026). The 2026/27 edition is not yet published.
 - **Notify chargeability.** A person with no return notice must tell HMRC within 6 months from the end of the tax year (TMA 1970 s7). For 2026/27 that is 5 October 2027.
 - **2026/27 return** (TMA 1970 s8(1D)): paper by 31 October 2027; online by 31 January 2028. A later notice from HMRC gives 3 months (s8(1F)-(1G)).
 - **Balancing payment** for 2026/27: 31 January 2028 (TMA 1970 s59B(4)).
@@ -155,6 +157,7 @@ There is no SRT-specific penalty. A wrong residence answer leads to a wrong or l
 - **Late filing** (FA 2009 Sch 55): £100 (para 3); after 3 months, £10 a day for up to 90 days (para 4); after 6 months, the greater of 5% of the tax and £300 (para 5); after 12 months, another 5% or £300, or more where information was withheld deliberately (para 6).
 - **Late payment** (GOV.UK penalties page): 5% of the tax unpaid at 30 days, 6 months and 12 months.
 - **Errors** (FA 2007 Sch 24 para 4): for a UK-only (category 1) inaccuracy, 30% of the potential lost revenue if careless, 70% if deliberate, 100% if deliberate and concealed. Category 2 and 3 inaccuracies, which involve offshore matters, run higher: 45%/105%/150% and 60%/140%/200%.
+- **Making Tax Digital for Income Tax.** A person who must use MTD for Income Tax from 6 April 2026 gets the new penalties for the 2026/27 return instead: penalty points for late submission, and late payment penalties of 3% of the tax owed at day 15 and 3% more at day 30, plus 10% a year from day 31 for up to 2 years (no penalty up to 15 days late, and none at day 15 in the first year). The current penalties still apply to their 2025/26 return (GOV.UK, Penalties for Making Tax Digital for Income Tax).
 - **Late payment interest:** 7.75% from 9 January 2026 (Bank Rate plus 4% from 6 April 2025), per HMRC's interest rates page.
 
 ## Cross-border points
@@ -163,7 +166,8 @@ There is no SRT-specific penalty. A wrong residence answer leads to a wrong or l
 - **Temporary non-residence** (paras 109-115). A person is temporarily non-resident if: they had sole UK residence for a residence period; the next period or periods are not sole UK residence; at least 4 of the 7 tax years before the year of departure were years (or split years with a UK part) of sole UK residence; and the temporary period of non-residence is 5 years or less (para 110). "Sole UK residence" means UK resident with no time as treaty non-resident (para 112). A residence period is a whole non-split year, or the UK or overseas part of a split year (para 111). The period runs from the end of the last sole-residence period to the start of the next one (para 113).
   - **Effect.** Gains on disposals in the temporary period of non-residence are treated as accruing in the period of return, unless the asset is excluded by TCGA 1992 s1N (TCGA 1992 s1M(1)). Treaties do not stop that charge (s1M(4)). RDR3 lists other income caught in the year of return, such as some pension payments, close company distributions and chargeable event gains. Detail is at RFIG21500.
   - RDR3 adds that the period must be longer than 5 years, "that is 5 years plus one day", to escape these rules.
-- **The 4-year FIG regime.** From 6 April 2025 the remittance basis was replaced by a residence-based regime (GOV.UK). A person is a "qualifying new resident" for a year if UK resident for it and not UK resident for each of the 10 tax years before it, and is at least 10 years old at its start (ITTOIA 2005 s845B(1)). They also qualify for the next 3 tax years in which they are UK resident (s845B(2)-(3)). Every one of those residence answers is an SRT answer. HMRC: "You cannot roll any unused years over to a later year." The claim, its effect and the allowances it costs are in `uk-non-dom`. The SRT applies from 2013/14. A 10-year look-back that reaches 2012/13 or earlier uses the old residence rules, which this skill does not cover. Refer those cases.
+- **The 4-year FIG regime.** From 6 April 2025 the remittance basis was replaced by a residence-based regime (GOV.UK). A person is a "qualifying new resident" for a year if UK resident for it and not UK resident for each of the 10 tax years before it, and is at least 10 years old at its start (ITTOIA 2005 s845B(1)). They also qualify for the next 3 tax years in which they are UK resident (s845B(2)-(3)). Every one of those residence answers is an SRT answer. The age-10 condition was inserted by Finance Act 2026 Sch 3 para 3, in force from Royal Assent on 18 March 2026 with no separate commencement rule, so it applies to 2026/27. HMRC: "You cannot roll any unused years over to a later year." The claim, its effect and the allowances it costs are in `uk-non-dom`. The SRT applies from 2013/14. A 10-year look-back that reaches 2012/13 or earlier uses the old residence rules, which this skill does not cover. Refer those cases.
+- **Inheritance tax.** From 6 April 2025 worldwide assets are within inheritance tax for a "long-term UK resident": UK resident for at least 10 of the previous 20 tax years (IHTA 1984 s6A(1)), with exits after 10 consecutive non-resident years or a shorter tail (s6A(2)-(3)). Residence for 2013/14 onward is the SRT answer (s6A(5)), and the SRT applies to inheritance tax so far as individuals' residence is relevant (Sch 45 para 1(4)). The test and its tail are in `uk-non-dom`.
 - **What non-residents still pay** on UK income and UK land: `uk-non-resident-sa109`. Planned moves: `uk-to-uae-relocation-tax`, `uk-to-italy-flat-tax-relocation`. Foreign tax credit relief for residents: `uk-foreign-tax-and-withholding`.
 
 ## Worked examples
@@ -214,18 +218,18 @@ expected:
 
 ### Example 2: an arriver, split year Case 8 and the cut-back Table B
 
-Raj was not UK resident in any of the 10 years to 2025/26. On 1 October 2026 he takes a 2-year lease on a London flat and lives there; it stays his UK home for the rest of 2026/27 and all of 2027/28. He keeps his family home in Singapore, so Case 4 (UK-only home) does not apply, and he is not full-time in the UK, so Case 5 does not. Over the whole year he spends 190 days in the UK (30 before 1 October and 160 after), so he is resident for 2026/27 under the first automatic UK test (at least 183 days). He is resident for 2027/28 and that year is not split.
+Raj was not UK resident in any of the 10 years to 2025/26. On 1 October 2026 he takes a 2-year lease on a London flat and lives there; it stays his UK home for the rest of 2026/27 and all of 2027/28. He keeps his family home in Singapore, so Case 4 (UK-only home) does not apply, and he is not full-time in the UK, so Case 5 does not. Over the whole year he spends 190 days in the UK (50 before 1 October and 140 after), so he is resident for 2026/27 under the first automatic UK test (at least 183 days). He is resident for 2027/28 and that year is not split.
 
-- **Before the home: 6 April to 30 September 2026.** That is 25 + 31 + 30 + 31 + 31 + 30 = 178 days. He spends 30 midnights in the UK in that part. He does more than 3 hours' UK work on 45 days (work tie) and stays in a serviced flat that is available to him from 1 June to 30 September (122 days, accommodation tie). No family tie, no 90-day tie. That is 2 ties. The country tie does not count: he was resident in none of the 3 previous years, so Table B applies.
+- **Before the home: 6 April to 30 September 2026.** That is 25 + 31 + 30 + 31 + 31 + 30 = 178 days. He spends 50 midnights in the UK in that part, on work trips. He does more than 3 hours' UK work on 45 days (work tie). On those trips he stays in a serviced flat that is available to him from 1 June to 30 September (122 days, accommodation tie). It is a place to stay, not a home: his home is in Singapore, so on 6 April he has no UK home, as Case 8 requires. No family tie, no 90-day tie. That is 2 ties. The country tie does not count: he was resident in none of the 3 previous years, so Table B applies.
 - **Cutting Table B back** (para 51(6)-(7)). A is the whole months from 1 October 2026 to 5 April 2027: October to March, 6. Each day number is reduced by the number times 6/12, rounded half up (para 52(5)). 45 × 6 / 12 = 22.5, which rounds to 23, so 45 becomes 22. 90 becomes 45. 120 becomes 60.
-- **Result.** 30 days is "more than 22 but not more than 45": all 4 ties needed. He has 2. He does not have sufficient UK ties before 1 October, so **Case 8 applies**. The overseas part is 6 April to 30 September 2026; the UK part starts 1 October 2026.
-- **Watch the rounding.** A plain half-even rounding would give 22 and a band edge of 23. The statute rounds 0.5 up.
+- **Result.** 50 days is "more than 45 but not more than 60" in the cut-back table: at least 3 ties needed. He has 2. (The uncut Table B would ask for all 4 at 50 days.) He does not have sufficient UK ties before 1 October, so **Case 8 applies**. The overseas part is 6 April to 30 September 2026; the UK part starts 1 October 2026.
+- **Watch the rounding.** A plain half-even rounding would give 22 and a first band edge of 23. The statute rounds 0.5 up, so the edge is 22. That does not change Raj's result, but it decides a case with exactly 23 days.
 
 ```oa-check
 name: Arriver, Case 8 split year, Table B cut back for 6 whole months (2026/27)
 inputs:
   whole_months_from_arrival: 6
-  days_before_home: 30
+  days_before_home: 50
   ties_before_home: 2
 steps:
   - overseas_part_days: 25 + 31 + 30 + 31 + 31 + 30
@@ -244,7 +248,7 @@ expected:
   band_1: 22
   band_2: 45
   band_3: 60
-  ties_needed: 4
+  ties_needed: 3
   sufficient_ties: 0
   case_8_ties_condition_met: 1
 ```
@@ -277,9 +281,15 @@ In the check, a `ties_needed` of 5 would mean no number of ties is enough (22 da
 | GOV.UK, Self Assessment tax returns: deadlines | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-10-24 |
 | GOV.UK, Self Assessment tax returns: penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
+| Interpretation Act 1978, s5 and Schedule 1 ("Month" means calendar month) | https://www.legislation.gov.uk/ukpga/1978/30/schedule/1 | 2026-10-24 |
+| HMRC Residence and FIG regime manual, RFIG20960 (whole months) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20960 | 2026-10-24 |
+| Finance Act 2026, Schedule 3 para 3 (age-10 condition in s845B) | https://www.legislation.gov.uk/ukpga/2026/11/schedule/3 | 2026-10-24 |
+| Finance Act 2020, s109 (coronavirus modifications, 2019/20 and 2020/21) | https://www.legislation.gov.uk/ukpga/2020/14/section/109 | 2026-10-24 |
+| Inheritance Tax Act 1984, s6A (long-term UK resident) | https://www.legislation.gov.uk/ukpga/1984/51/section/6A | 2026-10-24 |
+| GOV.UK, Penalties for Making Tax Digital for Income Tax | https://www.gov.uk/guidance/penalties-for-making-tax-digital-for-income-tax | 2026-10-24 |
 | GOV.UK, SA109 Residence and FIG regime etc (page updated 28 September 2026) | https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109 | 2026-10-24 |
 
-Not yet confirmed: how to count "whole months" for the appropriate number when the arrival or departure day falls mid-month (the statute does not say, and HMRC's manual pages on it were not read; Example 2 uses 1 October so both readings give 6); whether the 2026/27 edition of the SA109 notes is published; the commencement date of the age-10 condition in ITTOIA 2005 s845B(1)(d) for years before 2026/27.
+Not yet confirmed: whether the age-10 condition in ITTOIA 2005 s845B(1)(d), in force from 18 March 2026, also governs claims for 2025/26 (FA 2026 Sch 3 para 3 has no commencement rule of its own; 2026/27 is covered either way).
 
 <!-- openaccountants-cta-block -->
 
