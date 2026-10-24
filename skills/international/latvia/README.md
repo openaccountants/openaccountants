@@ -4,7 +4,6 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
 partial:
-  IT-IND: "latvia-income-tax still carries tax year 2025 figures; not yet refreshed for 2026"
   SC: "latvia-social-contributions still carries tax year 2025 figures; not yet refreshed for 2026"
   PR: "latvia-payroll still carries tax year 2025 figures; not yet refreshed for 2026"
 ---
@@ -17,7 +16,7 @@ Calendar tax year for individuals; companies use their financial year as the rep
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | latvia-income-tax (2025 figures) | source-cited draft |
+| IT-IND, individual income tax | latvia-income-tax (2026: 25.5% and 33% bands at the EUR 105,300 social insurance cap, 3% surcharge above EUR 200,000, EUR 570 monthly non-taxable minimum, dependant relief, eligible expenses, capital income, self-employed income, annual return, payment, penalties) | source-cited draft |
 | IT-CORP, corporate income tax | lv-corporate-income-tax (2026: 20% with the 0.8 divisor, optional 15%/0.85 plus 6% for companies owned only by individuals, deemed distributions, dividends received, pre-2018 profit and losses, monthly return and payment, fines and late interest) | source-cited draft |
 | VAT | latvia-vat-return (2026: EUR 50,000 threshold with EUR 5,000 tolerance, EU small-enterprise scheme, 21%/12%/5% rates including bread, milk, poultry and eggs at 12% from 1 July 2026, car and entertainment input limits, domestic reverse charges, monthly or quarterly returns by the 20th and payment by the 23rd, EU sales list, B2B e-invoices from 2028, fines and late interest) | source-cited draft |
 | SC, social contributions | latvia-social-contributions (2025 figures) | source-cited draft |
@@ -34,4 +33,5 @@ Calendar tax year for individuals; companies use their financial year as the rep
 - VAT Law (Pievienotās vērtības nodokļa likums), consolidated: https://likumi.lv/ta/id/253451-pievienotas-vertibas-nodokla-likums (read 2026-10-24, Internet Archive copy of 16 October 2026)
 - Accounting Law (Grāmatvedības likums), consolidated: https://likumi.lv/ta/id/324249-gramatvedibas-likums (read 2026-10-24, Internet Archive copy of 16 October 2026)
 - State Revenue Service: https://www.vid.gov.lv (not reachable on 2026-10-23)
-- Law On Personal Income Tax: https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (read 2026-10-23)
+- Law On Personal Income Tax: https://likumi.lv/ta/id/56880-par-iedzivotaju-ienakuma-nodokli (read 2026-10-24, Internet Archive copy of 1 September 2026)
+- Law On State Social Insurance: https://likumi.lv/ta/id/45466-par-valsts-socialo-apdrosinasanu (read 2026-10-24, Internet Archive copy of 3 October 2026)
