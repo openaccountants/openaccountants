@@ -1,10 +1,10 @@
 ---
 name: montenegro-payroll
-description: Use this skill whenever asked about Montenegro payroll processing for employed persons. Trigger on phrases like "Montenegro payroll", "Crna Gora plata", "porez na dohodak fizičkih lica", "PIT Montenegro", "withholding tax Montenegro", "IOPPD form", "IOPPD obrazac", "social contributions Montenegro", "doprinosi za socijalno osiguranje", "PIO pension Montenegro", "Fond PIO", "penziono i invalidsko osiguranje", "unemployment contribution Montenegro", "health insurance Montenegro", "prirez Montenegro", "municipal surtax Montenegro", "Europe Now 2", "Evropa sad 2", "net salary Montenegro", "neto plata", "bruto neto Crna Gora", "PAYE Montenegro", "employer contributions Montenegro", "minimum wage Montenegro", "minimalna zarada", "gross to net Montenegro", "Uprava prihoda i carina", or any question about computing employee pay, withholding personal income tax, or mandatory social contributions for Montenegro-based employees. This skill covers progressive PIT withholding on gross salary, the municipal surtax (prirez) on assessed PIT, employee social contributions (PIO + unemployment), the residual employer contributions, the dual-tier minimum wage, and IOPPD filing obligations under the post-October-2024 "Europe Now 2.0" reform. ALWAYS read this skill before processing any Montenegro payroll.
-version: 0.1
+description: "Prepare Montenegro 2026 employment payroll workpapers: classify cash/noncash earnings, compute marginal salary PIT on gross, reconcile employee and employer contributions, keep local prirez separate from net salary, and map ordinary salary/aggregate tax to IOPPD. Includes ten executable salary, gross-up, benefit, multiple-payer, reporting, Chamber and disability-levy controls. Use for bruto/neto, withholding, code 097, IOPPD amendments and foreign salary. Current local decisions, benefit valuation, minimum salary, special levy/status implementation and reliefs, actual IRMS acceptance, historical arrears and independent review remain open. Source-cited preparation draft."
+version: 0.3
 jurisdiction: ME
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -12,542 +12,411 @@ depends_on:
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+sources:
+  - url: "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0"
+    title: "PIT consolidation through 160/25"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0"
+    title: "Enacted 160/25 PIT amendment applying January 2026"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0"
+    title: "Employment payroll calculation instruction through 103/24"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0"
+    title: "IOPPD reporting rule, instructions and code list through 124/24"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/5cb52f80-2fcc-4f77-8111-07ea8b6d8ff1?version=1.0"
+    title: "Official IOPPD calculation-code workbook, October 2024/January 2025 revisions"
+    as_of: "2026-10-24"
+  - url: "https://www.sluzbenilist.me/propisi/389055/download"
+    title: "151/25 Chamber contribution decision for 2026"
+    as_of: "2026-10-24"
+  - url: "https://www.zzzcg.me/wp-content/uploads/2018/01/Zakon-o-profesionalnoj-rehabilitaciji-i.pdf"
+    title: "Disability employment law through 55/16, quota and levy Articles 21–23"
+    as_of: "2026-10-24"
+  - url: "https://www.sluzbenilist.me/propisi/385768/download"
+    title: "122/25 disability-employment amendment and application gate"
+    as_of: "2026-10-24"
+  - url: "https://www.sluzbenilist.me/propisi/395547/download"
+    title: "92/26 unified-assessment commencement deferral to December 2026"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0"
+    title: "Ministry local-finance law reproduction, Articles 8–9"
+    as_of: "2026-10-24"
 ---
 
-# Montenegro Payroll
+# Montenegro payroll preparation v0.3
 
-## Montenegro Payroll Skill v0.1
+## Who this applies to
 
-**Tier 2 — research-verified. Figures below are sourced from PwC Worldwide Tax Summaries, KPMG Montenegro (October 2024 Tax Alert), Eurofast (Montenegro Tax Card 2025), Karanovic & Partners and Perfectum, referencing the Revenue and Customs Administration of Montenegro (Uprava prihoda i carina Crne Gore), the Fund for Pension and Disability Insurance (Fond PIO) and the Ministry of Labour. NOT yet signed off by a licensed Montenegrin accountant or tax adviser. The figures incorporate the "Europe Now 2.0" (Evropa sad 2) reform effective 1 October 2024. Treat every computation as an estimate pending professional review.**
+Prepare 2026 employment-income withholding and payroll ledgers for an established employee/payer/insurance period. Personal earnings include cash and specified noncash remuneration, temporary/occasional employment and supplementary work under labour rules. Independent business, dividends, rent and other receipts need their own classification, not automatic salary treatment. [PIT Articles 12, 14–16][pit]
 
-## Section 1 -- Quick Reference
+This source-cited draft replaces the retained secondary-source summary at Git checkpoint `db00f70a`. The PIT consolidation through 160/25, actual January 2026 amendment, employment instruction and actual IOPPD rule/instructions were read. The May 70/26 amendment changes gambling income provisions, not the employment bands used here. The September proposal changes salary bands from January 2027 if enacted as proposed; it is not current 2026 law. No accepted return or named accountant review is claimed. [PIT][pit]; [160/25 Article 21][amend]; [70/26 Articles 1–3][may]; [proposal Articles 1–2][proposal]
 
-**Quick Reference**
+The [contribution Guide](montenegro-social-contributions.md) owns insurance status, principal/supplementary entrepreneurship, statutory floors, annual refund and additional service. Its remaining cap/floor and exceptional-population limits apply here too. All seven country domains remain partial.
 
-| Field | Value |
+## Salary bands, separate bases and charges
+
+| Item | Ordinary 2026 treatment | Source |
+| --- | --- | --- |
+| Salary PIT | 0% through EUR 700 monthly gross; 9% on the next EUR 300; 15% above EUR 1,000 | PIT Articles 10(1)(1), 15, 46; instruction Article 3 |
+| Employee contributions | PIO 10%, unemployment 0.5%, on established contribution base | Contribution law Articles 9, 15, 18; instruction Article 4 |
+| Employer contributions | Ordinary PIO 0%, unemployment 0.5%, Labour Fund 0.2% | Instruction Article 5; contribution law Articles 15, 18 |
+| Municipal prirez | Applicable local rate × salary PIT; local decision required | Local-finance Articles 8–9; instruction Article 6 |
+| PIT payment | Each payment, using applicable payment-date law, subject to specific historical-award provision | PIT Articles 46, 60k |
+| Monthly IOPPD | By 15th of following month; electronic; complete replacement data on amendment | PIT Article 47; reporting rule Articles 5–7 |
+| Employee annual statement | By 31 January for preceding year | PIT Article 47; instruction Article 9 |
+
+Sources: [PIT][pit], [contributions][social], [instruction][instruction], [local finance][local], [IOPPD][ioppd]. These are the specified ordinary charges, not a conclusion that no other employment levy applies. The contribution floor and labour-law minimum salary are different checks. No current minimum salary or annual cap figure is certified here.
+
+PIT uses gross personal earnings under Article 15. Do not deduct PIO/unemployment before calculating PIT. The zero band is part of the monthly marginal calculation; it is not another EUR 700 deduction after applying the bands. For established ordinary monthly taxable gross G:
+
+`PIT = 0.09 × max(min(G, 1000) − 700, 0) + 0.15 × max(G − 1000, 0)`.
+
+This expresses the instruction's EUR 27 fixed first-band tax above EUR 1,000. The law prints cent expressions at band boundaries; use current authority rounding/validation for fractional-cent issues. Examples use explicit cents rounding and established whole-month gross. Do not reset the monthly bands on every instalment paid to the same person in that period. Keep cumulative gross/tax/payment records and reconcile all salary-type codes before reporting tax through 097. [PIT Articles 10, 15, 46][pit]; [instruction Articles 3, 10][instruction]; [IOPPD instructions, column 8/code 097][ioppd]
+
+## Net pay and municipal surtax allocation
+
+Keep Bruto I, employee deductions, net salary, payer-side charges and total funding distinct. Under the Ministry's calculation structure, net salary is gross minus salary PIT and employee contributions. Prirez is separately recorded in payer-side funding, not deducted again from that net salary. The current employment instruction places prirez in its charges-on-earnings section; the Ministry's generic example explicitly shows it outside net in Bruto II. The example is dated 2022 and is used for allocation/layout only, **not** its superseded pension rates, minimum wage, blanket local-rate note or other levy assumptions. [Instruction Articles 2–7][instruction]; [Ministry generic example][example]
+
+For ordinary cash salary with contribution base equal to taxable gross and established local rate r:
+
+- Employee deductions: salary PIT + 10% PIO + 0.5% unemployment.
+- Net salary: gross less those employee deductions.
+- Specified employer funding: gross + 0.5% employer unemployment + 0.2% Labour Fund + r × PIT.
+- Add all separately applicable levies, noncash cost, reimbursements or other costs before describing a result as total employer cost. [Instruction Articles 2–6][instruction]; [Ministry allocation example][example]
+
+The statutory ceilings of up to 13%, or up to 15% for the capital/old capital, do not enact a single local rate for every municipality. Obtain the operative municipality decision, geographical/payer rules and local filing/payment details. The [municipality-hosted Bar ordinance][bar] specifies 13% of PIT and monthly local reporting/payment, but its current amendment chain and any taxpayer's situs are not cleared here. Do not copy that rate nationwide or treat national IOPPD as the local prirez filing. The controls below use explicit assumed local rates, not a certified municipality assignment. [Local-finance Articles 8–9][local]; [instruction Article 6][instruction]; [Bar Articles 3–7][bar]
+
+## Additional employer and business charges
+
+### Chamber contribution for 2026
+
+The actual 151/25 decision applies from 1 January 2026 and requires **Chamber members** to pay 0.27%. Point 2 uses gross employee salaries reported in IOPPD; for entrepreneurs it uses independent-activity income shown in GPP-FL. Payment follows the relevant IOPPD/GPP-FL submission. Establish membership, legal person/entrepreneur capacity, correct income population and any exception before multiplying. Do not use the employer's sales turnover, net salary or the duplicated code-097 reporting base as a second economic salary amount. [Decision points 1–3, 6][chamber]
+
+Point 4 excludes the specified persons entered in the artisan register after its establishment. Retain actual registration and applicable effective date. The municipality's April 2026 notice reports the register began operating on 1 March 2026, but that does not establish that a particular employer is registered or all its earlier payments are refundable. An exemption from the business Chamber contribution does not prove no separate craft-Chamber obligation. Actual craft dues, membership cases, partial-period treatment and current payment instructions require their own evidence. The published decision lists payment accounts; confirm the current recipient/account before payment, not from an old generic payroll template. [Decision points 4–5][chamber]; [municipal registration notice][artisan]
+
+Keep Chamber contribution outside employee net in the employer/business liability schedule. The original six payroll controls intentionally exclude it; the seventh shows its incremental funding effect for an established liable member. An entrepreneur's annual contribution is a different base/payment event, not an employee deduction or a second salary return. Any PIT deduction timing and treatment need their own business-base reconciliation. [Decision points 1–3][chamber]
+
+### Disability-employment quota and special levy
+
+Read the original law's Articles 21–23 with the 122/25 amendment and 92/26 commencement change. Article 21 requires at least one qualifying worker for employers with 20–50 employees, and at least 5% for more than 50, with statutory rounding. Article 22 charges 20% of the preceding-year national average monthly salary for each required worker not employed. For employers with **more than 10 and fewer than 20** employees and no qualifying worker, it specifies a monthly 5% contribution instead. Those are employer/shortfall charges, not 20%/5% of each employee's pay. Establish monthly headcount, recognised qualifying status, quota credit and exceptions. [Articles 21–23][disability]
+
+Article 21's 24-month new-employer wording is expressly linked to its paragraph 2; do not turn it into a blanket exemption for every new employer. Article 22a exempts qualifying disability organisations/associations as employers. Before the later reform's application, Article 21(5) has a specified severe-disability double-count rule. Record actual status and period, not a self-selected headcount discount. Borderline headcounts, fractional quota rounding, multiple establishments, status changes and the exact scope of exceptions require current authority confirmation. The controls use 15 employees or an exact-integer quota, no new-employer/association/severe-disability adjustment. [Articles 21–22a][disability]
+
+The actual 122/25 amendment changes the status/support system and repeals specified old provisions from its application date, including Article 21(5). Its Article 10 ties application to commencement of unified assessment. The actual 92/26 amendment moves that commencement in Article 60(1) from 1 July to **1 December 2026**. Do not apply the new status/repeal regime to these October 2026 controls merely because 122/25 was enacted earlier. Recheck later amendments/commencement before December or later payroll, and retain continuation/reassessment decisions. [122/25 Articles 9–10][disability-amend]; [92/26 Articles 1–2][deferral]
+
+Article 22 specifies the preceding-year average monthly salary. The extracted law/agency guidance does not itself explicitly label that statistical series gross or net; a government draft explanation describes gross, but is not a substitute for the operative current calculation/authority field guidance. **The exact statistical-series selection and resulting 2026 nominal levy are not certified here.** The two levy controls below therefore use an expressly hypothetical already-established reference base, not a claim that it is the published 2026 amount. [Article 22][disability]; [agency explanation][disability-agency]
+
+Pay the applicable levy at monthly salary/compensation payment, with tax-authority control under Article 23. Published IOPPD instructions have a separate disability item for employee/qualifying-person counts, base, rate and contribution. Keep the company-level charge separate from per-person contribution rows, reconcile any status/shortfall change and current authority acknowledgement/payment ledger. Current reporting fields, statistical-base guidance, payment account and corrections remain open. Do not offset a subsidy or assumed quota credit without the legal decision. [Articles 22–23][disability]; [IOPPD instructions][ioppd]
+
+## Earnings, benefits and exclusions
+
+Article 14 covers salary/compensation, employee board/body remuneration, vouchers/shares/goods, benefits, debt forgiveness and employer-paid personal expenses, plus labour-law temporary/occasional and supplementary work. Noncash valuation follows the nominal/market/expense rules in Article 14(2). Maintain a payment-by-payment matrix: cash amount, taxable gross benefit, PIT exemption, contribution inclusion/exclusion, evidence and reporting code. Noncash value is not additional cash paid to the employee. [PIT Articles 14–15][pit]
+
+Article 5a contains specific limits/conditions, including increased-cost allowances, death/illness assistance, retirement/redundancy, scholarships, newborn payments, education and jubilee awards. For example, the 2026 amendment raises qualifying death solidarity assistance to EUR 2,000 and distinguishes an employee newborn payment up to EUR 1,000 from social/child-protection-law receipts. These are receipt-specific exemptions, not a general allowance for arbitrary payments. Travel/car limits require the actual implementing instrument; none is invented here. [PIT Articles 5–5a][pit]; [160/25 Article 2][amend]
+
+Contribution law Article 18a separately excludes specified noncash benefits unless replacing unpaid salary. Thus a taxable noncash benefit can have a different contribution result. Keep genuine salary replacement, ordinary cash bonuses, reimbursement and benefit valuation separate. The amended zimnica contribution limit does not establish a PIT exemption for that payment. Labour Fund treatment for noncash/exempt benefits needs separate rule/application verification. [Contribution Articles 3a, 18a][social]; [PIT Articles 14–15][pit]
+
+For qualifying acquired digital-nomad status, inspect the actual personal and contribution relief conditions; foreign payer or remote work alone does not establish relief. Do not reuse an expired employment-incentive code as a new 2026 exemption. Full immigration/status, incentive eligibility and exceptional benefit cases remain open. [PIT Articles 32c–32d][pit]; [contribution Articles 18c–18d, 31a][social]
+
+## Inputs and run sequence
+
+1. Obtain employer/person identifiers, contract and registered insurance status, work/residence countries, municipality, pay period/payment date, hours/absence, all concurrent payers, gross/net contract terms and prior instalments. Establish the current labour/collective-agreement floor and statutory contribution base. [PIT Articles 3–4, 14–15, 46][pit]; [contribution Articles 4–13][social]
+2. Classify cash and benefits, prove exemptions/valuation and distinguish taxable gross from contribution gross. Keep expense reimbursements and actual benefit provision separate from cash paid. [PIT Articles 5a, 14–15][pit]; [contribution Article 18a][social]
+3. Calculate monthly aggregate PIT, person-side contributions, net cash, payer-side contribution/prirez schedules and other applicable employment levies. Reverse a desired net only after selecting the correct band and insurance status; recompute components at cents. [Instruction Articles 2–7][instruction]
+4. Assemble IOPPD rows by person, code and actual insurance periods, with salary tax through aggregate code 097. Reconcile reported liabilities to payroll ledger and paid amounts; do not treat a sum of repeated report bases as actual payroll expense. [Reporting rule/instructions][ioppd]
+5. Submit on the current authority electronic service, retain acknowledgement and reconcile payment/authority ledger. File the separate local declaration where required and deliver the annual employee statement. For changes, retain the original and the full replacement return, authority response and payment adjustment. [PIT Article 47][pit]; [reporting Articles 5–7][ioppd]; [local example Article 5][bar]
+
+## IOPPD form assembly and correction
+
+The actual authority attachment is **RTF despite its generic download label**, not a PDF. Its rule, instructions and code list through 124/24 were extracted/read. The official XLS code workbook was inspected read-only. These establish the following published preparation mapping; authenticated current IRMS schema acceptance and all later code changes are not certified. [Rule/instructions][ioppd]; [code workbook][codes]
+
+| Field | Published instruction |
 | --- | --- |
-| Country | Montenegro (Crna Gora) — ISO 3166-1 alpha-2: ME |
-| Currency | EUR only (Montenegro uses the euro unilaterally) |
-| Standard pay frequency | Monthly |
-| Tax year | Calendar year (1 January -- 31 December) (PwC — Tax administration) |
-| Tax withholding system | Monthly PAYE — the employer withholds personal income tax (porez na dohodak fizičkih lica) and all contributions at source on the gross salary (PwC; Eurofast 2025) |
-| Income / contributions authority | Revenue and Customs Administration of Montenegro (Uprava prihoda i carina Crne Gore), under the Ministry of Finance — https://www.upravaprihoda.gov.me/ |
-| Pension authority | Fund for Pension and Disability Insurance (Fond PIO) |
-| Employment / minimum-wage authority | Ministry of Labour and Social Welfare |
-| Key legislation | Personal Income Tax Law (Zakon o porezu na dohodak fizičkih lica); Law on Mandatory Social Security Contributions (Zakon o obaveznom socijalnom osiguranju, amended Oct 2024); Labour Law (Zakon o radu); Law on Surtax on Personal Income Tax (municipal surtax) |
-| Reform package | "Europe Now 2.0" (Evropa sad 2), effective 1 October 2024 (KPMG Oct 2024 Tax Alert) |
-| Filing form | IOPPD (Obrazac IOPPD) — integrated monthly return of calculated/paid PIT and contributions, filed to the Revenue and Customs Administration (Perfectum; payroll guides) |
-| Validated by | Pending -- requires sign-off by a licensed Montenegrin accountant / tax adviser |
-| Skill version | 0.1 |
-
-**Read this whole section before computing anything. The shared payroll runbook lives in `payroll-workflow-base` — follow that runbook with this skill supplying the Montenegro-specific content.**
-
-### The two most important Montenegro facts
-
-- **Fact 1 — PIT computed on gross salary** — PIT is computed on GROSS salary, not on a reduced base. Unlike many neighbouring jurisdictions, Montenegro's progressive PIT bands apply directly to the gross monthly salary (0% up to EUR 700, 9% on EUR 700.01–1,000, 15% above EUR 1,000.01). Social contributions are NOT subtracted before computing PIT.  _(PwC — Taxes on personal income; Eurofast 2025 p.3)_
-- **Fact 2 — Europe Now 2.0 reform effect** — The "Europe Now 2.0" reform (1 October 2024) gutted the contribution wedge. The employer pension share fell from 5.5% to 0%, the employee pension share fell from 15% to 10%, and the mandatory health contribution is 0% for both sides. Post-reform the employee social wedge is 10.5% and the employer wedge is ~1.17%. Eurofast's 2025 card still PRINTS stale pre-reform column totals (15.5% employee / 6.47% employer) — those are WRONG; use the itemised post-reform rows.  _(KPMG Oct 2024 Tax Alert; PwC; Eurofast 2025 p.4 — see Section 4 source conflict)_
-
-## Section 2 -- Income Tax Withholding (porez na dohodak fizičkih lica)
-
-The employer withholds personal income tax (PIT) monthly at source on the gross monthly salary using progressive, marginal bands, then applies the municipal surtax (prirez) to the assessed PIT. PIT and surtax are withheld and remitted monthly. (PwC; Eurofast 2025)
-
-### Employment-income PIT bands (2025) — applied to GROSS monthly salary
-
-**Employment-income PIT bands (2025) — applied to GROSS monthly salary**  _(PwC — Taxes on personal income; Eurofast Tax Card 2025 p.3)_
-
-| Band | Monthly gross salary | Marginal rate |
-| --- | --- | --- |
-| 1 | EUR 0.00 – 700.00 | 0% |
-| 2 | EUR 700.01 – 1,000.00 | 9% |
-| 3 | over EUR 1,000.01 | 15% |
-
-- **Marginal band application** — The bands are marginal: only the slice of gross within each band is taxed at that band's rate. The 0% band IS the tax-free allowance — there is no separate personal allowance applied on top.  _(PwC — Taxes on personal income; Eurofast Tax Card 2025 p.3)_
-
-### Monthly withholding method (deterministic)
-
-- **Monthly withholding steps** — 1. Start with gross monthly salary (bruto plata). 2. Compute PIT by applying each marginal band to the slice of gross within it: 0% on the portion up to EUR 700.00; 9% on the portion from EUR 700.01 to EUR 1,000.00 (max EUR 27.00 in this band — verify: 300 × 9% = 27.00 ✓); 15% on the portion above EUR 1,000.01. 3. Compute the municipal surtax (prirez) = surtax rate × assessed PIT (NOT × income) — see below. 4. Total tax withheld = PIT + surtax. 5. Separately withhold employee social contributions at 10.5% of gross (Section 3). 6. Net pay = gross − employee social contributions − PIT − surtax.  _(PwC; Eurofast 2025)_
-
-Note the order does not matter for the arithmetic because every deduction is computed on gross independently: contributions on gross, PIT on gross, surtax on the PIT amount. There is no "income after contributions" intermediate base for PIT.
-
-### Municipal surtax (prirez) on assessed PIT
-
-**Municipal surtax (prirez) on assessed PIT**  _(PwC — Taxes on personal income)_
-
-| Location | Surtax rate (× assessed PIT) |
-| --- | --- |
-| Podgorica and Cetinje | 15% |
-| All other municipalities (national default) | 13% |
-
-- **Surtax range source conflict** — Eurofast states a wider 10%–15% range depending on municipality (Eurofast 2025 p.10); the specific municipality's by-law governs. [T2-1 — reviewer to confirm the exact surtax rate for the employee's municipality of residence.] The surtax is charged on the assessed PIT amount, not on the income.  _(Eurofast 2025 p.10)_
-
-### Other personal-income rates (context — not employment payroll)
-
-**Other personal-income rates (context — not employment payroll)**
-
-| Income type | Rate | Note |
-| --- | --- | --- |
-| Self-employment / entrepreneurial (annual, marginal) | 0% to EUR 8,400; 9% EUR 8,400.01–12,000; 15% above EUR 12,000.01 | Annual entrepreneurial income — out of scope for employer payroll (PwC) |
-| Capital gains, rental, interest, dividends, royalties | 15% flat | Not employment income (PwC; Eurofast 2025) |
-
-## Section 3 -- Contributions: Employee Deductions
-
-Employees bear a total social-contribution wedge of 10.5% of gross, withheld at source. (PwC — Other taxes; KPMG Oct 2024 Tax Alert; Eurofast 2025 p.4)
-
-**Employee contributions table**  _(PwC — Other taxes; KPMG Oct 2024 Tax Alert; Eurofast 2025 p.4)_
-
-| Contribution | Employee rate | Base | Authority | Note |
-| --- | --- | --- | --- | --- |
-| Pension and Disability Insurance (PIO) | 10.0% | Gross salary (capped — see ceiling) | Fond PIO | Cut from 15% to 10% on 1 Oct 2024 (KPMG) |
-| Unemployment insurance | 0.5% | Gross salary | Revenue & Customs Admin | (Eurofast 2025 p.4; PwC) |
-| Health insurance | 0.0% | — | — | Mandatory employee health contribution abolished (Eurofast 2025 p.4 — Health Fund 0.0%) |
-| **Total employee contributions** | **10.5%** | Gross | — | 10.0% + 0.5% + 0.0% — verify: 10.0 + 0.5 = 10.5 ✓ |
-
-### PIO contribution base ceiling
-
-**PIO contribution base ceiling**  _(PwC — Other taxes)_
-
-| Cap | Amount | Year | Note |
-| --- | --- | --- | --- |
-| Annual PIO contribution base ceiling | EUR 68,765 | 2024 published figure (reset annually) | PwC — Other taxes |
-| Implied monthly PIO base cap | EUR 5,730.42 | derived | = 68,765 ÷ 12 (verify: 68,765 / 12 = 5,730.4166… ≈ 5,730.42) |
-
-Source conflict flagged. PwC publishes the annual PIO base ceiling as EUR 68,765 (2024); the ceiling is reset annually and the 2025/2026 figure was NOT independently confirmed from Fond PIO / the Official Gazette in this research. One secondary source (TaxRavens) cites a conflicting ~EUR 54,533. [RESEARCH GAP — reviewer to confirm the current-year PIO base ceiling with the Tax Administration / Fond PIO before relying on it.] Whether the EUR 0.5% unemployment contribution is also subject to the PIO ceiling, or applies to uncapped gross, is not confirmed — this skill applies unemployment to full gross and flags it. [T2-2]
-
-## Section 4 -- Contributions: Employer Contributions
-
-Post-reform the employer wedge is small — the employer pays no PIO and no health contribution. The residual employer-borne contributions total ~1.17% of gross. (Eurofast 2025 p.4 itemised; KPMG Oct 2024 Tax Alert)
-
-**Employer contributions table**  _(Eurofast 2025 p.4 itemised; KPMG Oct 2024 Tax Alert)_
-
-| Contribution | Employer rate | Base | Note |
-| --- | --- | --- | --- |
-| Unemployment insurance | 0.5% | Gross salary | Matches the 0.5% employee unemployment line (Eurofast 2025 p.4) |
-| Labour Fund (Fond rada) | 0.2% | Gross salary | Employer-only (Eurofast 2025 p.4) |
-| Chamber of Commerce membership contribution | 0.27% | Gross salary | Employer-only (Eurofast 2025 p.4) |
-| Prevention of Disability Fund | 0.2% | Gross salary | Employer-only (Eurofast 2025 p.4) |
-| Pension and Disability Insurance (PIO) | 0.0% | — | Employer share cut from 5.5% to 0% on 1 Oct 2024 (KPMG) |
-| Health insurance | 0.0% | — | Abolished (Eurofast 2025 p.4 — Health Fund 0.0%) |
-| **Total employer contributions** | **1.17%** | Gross | 0.5% + 0.2% + 0.27% + 0.2% — verify: 0.5 + 0.2 + 0.27 + 0.2 = 1.17 ✓ |
-
-- **Total employer cost formula** — Total employer cost = gross salary + (1.17% × gross) = gross × 1.0117.  _(Derived from Eurofast itemised rates + KPMG reform)_
-
-Source conflict flagged — do NOT use Eurofast's printed totals. The Eurofast 2025 Tax Card prints column totals "Employees 15.5%" and "Employer 6.47%". These are internally inconsistent with the itemised rows in the same table: the 15.5% reflects the PRE-reform employee pension of 15% (now 10%), and the 6.47% reflects pre-reform employer rates (PIO employer 5.5%, now 0%). PwC and KPMG confirm the post-1-Oct-2024 employee total is 10.5% and the employer PIO is 0%. This skill uses the itemised post-reform figures (employee 10.5%, employer 1.17%). [T2-3 — an accountant should confirm against the consolidated Law on Mandatory Social Security Contributions in the Official Gazette.]
-
-### Combined wage wedge
-
-**Combined wage wedge**
-
-| Component | Rate |
-| --- | --- |
-| Employee social contributions | 10.5% |
-| Employer social contributions | 1.17% |
-| **Combined social-contribution wedge** | **11.67%** (verify: 10.5 + 1.17 = 11.67 ✓) |
-
-(PIT and municipal surtax are on top of the social wedge.)
-
-## Section 5 -- Minimum Wage and Working Conditions
-
-### National minimum wage (from 1 October 2024) — dual NET tier
-
-**National minimum wage (from 1 October 2024) — dual NET tier**  _(KPMG Oct 2024 Tax Alert; Karanovic & Partners)_
-
-| Qualification tier | Net monthly minimum |
-| --- | --- |
-| Jobs requiring up to a high-school diploma | EUR 600 net |
-| Jobs requiring higher qualifications | EUR 800 net |
-
-- **Dual net wage structure** — The Europe Now 2.0 reform replaced a single minimum with this dual NET-wage structure tied to the qualification level of the job.  _(KPMG Oct 2024 Tax Alert; Karanovic & Partners)_
-
-Source conflict flagged. Some 2025 trackers (Trading Economics, minimum-wage.org) report a single figure of ~EUR 670 net / ~EUR 700 gross rather than the EUR 600/EUR 800 net tiers. The exact 2025/2026 gross-up of the net minima, and whether the EUR 600/800 tiers were further indexed, were not confirmed from a primary source. [RESEARCH GAP — reviewer to confirm the current gross/net minimum wage and tier structure with the Ministry of Labour.]
-
-### Working hours and overtime
-
-[RESEARCH GAP — reviewer to confirm] Statutory overtime multipliers, maximum weekly hours, and night/Sunday/holiday premiums under the Montenegrin Labour Law (Zakon o radu) were not part of this research dataset. A reviewer should populate these from the Labour Law and any applicable collective agreement before relying on overtime figures.
-
-## Section 6 -- Conservative Defaults
-
-- **Conservative default policy** — When an input is unknown, the skill MUST apply the conservative default below and flag the assumption in its output rather than guessing a more favourable figure.
-
-**Conservative defaults table**
-
-| Field | Default | Rationale |
-| --- | --- | --- |
-| Employee social-contribution rate | **10.5% of gross** (PIO 10% + unemployment 0.5%; health 0%) | Confirmed by PwC, KPMG (Oct 2024 reform) and Eurofast itemised table; use itemised figures, NOT Eurofast's printed 15.5% total. |
-| Employer social-contribution rate | **1.17% of gross** (unemployment 0.5% + Labour Fund 0.2% + Chamber 0.27% + Prevention of Disability 0.2%; PIO and health 0%) | Itemised from Eurofast 2025 card; the card's printed 6.47% total is a stale pre-reform aggregate. |
-| Municipal surtax | **13% of assessed PIT** (15% if the employee resides in Podgorica or Cetinje) | PwC; surtax is on the PIT amount, not on income. Use the employee's municipality of residence. (Eurofast cites a 10–15% range.) |
-| PIO base ceiling | **EUR 68,765/yr → ~EUR 5,730.42/month** (apply the cap to the PIO base only) | PwC 2024 figure; reset annually — flag for reviewer confirmation. **[RESEARCH GAP]** |
-| Unemployment-contribution base | **Full gross (uncapped)** | The PIO ceiling's application to unemployment is unconfirmed; applying to full gross is the conservative assumption. **[T2-2]** |
-| PIT base | **Gross salary (no deduction of contributions before PIT)** | Montenegro applies PIT bands directly to gross. (PwC) |
-| Monthly filing | **File IOPPD and remit PIT + surtax + contributions by the 15th of the following month** | Eurofast tax calendar + payroll guides + Perfectum. |
-
-## Section 7 -- Required Inputs and Refusal Catalogue
-
-### Required inputs before any computation
-
-- **Required inputs list** — 1. Gross monthly salary (bruto plata) in EUR. 2. Employee's municipality of residence — to select the correct surtax rate (15% Podgorica/Cetinje vs 13% default). If unknown, default to 13% and flag it. 3. Pay period (month and year) — to pick the correct minimum wage, PIO ceiling and band figures, and to confirm the post-1-Oct-2024 reform applies. 4. Whether the employee's gross exceeds the monthly PIO base cap (~EUR 5,730.42) — triggers the contribution ceiling. 5. The qualification tier of the job — to check against the dual-tier minimum wage (EUR 600 / EUR 800 net).
-
-### Refusal Catalogue — DO NOT attempt; route to a licensed accountant
-
-**Refusal Catalogue table**
-
-| Scenario | Why it is out of scope |
-| --- | --- |
-| Posted workers / A1-equivalent / cross-border social-security coordination | Requires bilateral social-security agreement analysis and Fond PIO determinations — see `cross-border-payroll-coordination`. |
-| Non-resident employees, double-tax-treaty relief, expat tax-equalisation | Treaty residency and tie-breaker analysis is beyond a domestic payroll run. |
-| Withholding tax on payments to non-residents (dividends, interest, royalties, services) | 15% (30% for low-tax jurisdictions), reducible by treaty — out of scope for employee payroll (Eurofast 2025 p.7). |
-| Benefits in kind / company cars / stock options valuation | Montenegrin BIK valuation rules were not in this research dataset. **[RESEARCH GAP]** |
-| Self-employed / entrepreneurial income (annual 0/9/15% bands) | Different regime — out of scope for employer payroll. |
-| Sickness, maternity and disability benefit reimbursement mechanics | Not covered here. |
-| Severance / termination payment taxation | Not in scope; route to a reviewer. |
-| Exact penalty quantification per offence | Penalty ranges are statutory bands (Section 13); apply judgement and confirm the specific charge with the Tax Administration. |
-
-## Section 8 -- Transaction / Payment Pattern Library
-
-Deterministic classification of Montenegrin bank-statement lines for payroll. Match on the uppercased description fragment.
-
-### Salary credits (what lands in the employee's account)
-
-**Salary credits table**
-
-| Bank statement text (ME / EN) | Classification |
-| --- | --- |
-| `PLATA`, `ZARADA`, `NETO PLATA`, `ISPLATA ZARADE` | Net salary payment |
-| `PLACA`, `SALARY`, `WAGES` | Net salary payment (ASCII / English variant) |
-| `AKONTACIJA ZARADE`, `AVANS` | Salary advance (not final pay) |
-| `NAKNADA`, `TOPLI OBROK`, `REGRES` | Allowance / meal / holiday allowance (check taxability) |
-| `DNEVNICA` | Per-diem / travel allowance (may be tax-exempt up to limits) |
-| `POVRAĆAJ POREZA` | Income tax refund — NOT income |
-
-### Employer debits (what leaves the employer's account)
-
-**Employer debits table**
-
-| Bank statement text (ME / EN) | Classification |
-| --- | --- |
-| `POREZ NA DOHODAK`, `UPRAVA PRIHODA`, `UPiC` | Personal income tax (and surtax) remittance to the Revenue & Customs Administration |
-| `PRIREZ` | Municipal surtax remittance |
-| `DOPRINOS PIO`, `PENZIJSKO`, `FOND PIO` | Pension & Disability (PIO) contribution remittance |
-| `DOPRINOS NEZAPOSLENOST`, `OSIGURANJE NEZAPOSLENOSTI` | Unemployment-insurance contribution remittance |
-| `FOND RADA`, `KOMORA`, `FOND ZA INVALIDE` | Labour Fund / Chamber of Commerce / Prevention-of-Disability remittances (employer-only) |
-| `IOPPD` | Reference tag for an IOPPD-linked payment batch |
-| `ISPLATA ZARADA`, `PAYROLL`, `OBRAČUN ZARADE` | Net wages disbursed to employees |
-
-PIT, surtax and all contributions are reported together on the IOPPD form (Section 12) and remitted simultaneously, due by the 15th of the following month.
-
-## Section 9 -- Worked Examples
-
-All examples use 2025 figures and the post-1-Oct-2024 "Europe Now 2.0" rates: employee contributions 10.5% of gross, employer 1.17% of gross, PIT on gross (0% / 9% / 15% marginal). Surtax defaults to 13% unless the employee resides in Podgorica/Cetinje (15%). Every line below was recomputed end-to-end.
-
-### Example 1 — Mid-low earner, EUR 800 gross/month, non-Podgorica (13% surtax)
-
-Bank statement context: `ISPLATA ZARADE … 705,83 EUR` credited to the employee; `UPRAVA PRIHODA … 10,17 EUR` and `FOND PIO … 80,00 EUR` debited from the employer.
-
-**Example 1 computation table**
-
-| Step | Computation | EUR |
-| --- | --- | --- |
-| Gross salary | — | 800.00 |
-| PIT — band 1 (0% on first 700) | 700 × 0% | 0.00 |
-| PIT — band 2 (9% on 700.01–800) | (800 − 700) × 9% | 9.00 |
-| Total PIT | 0 + 9.00 | 9.00 |
-| Municipal surtax (13% of PIT) | 9.00 × 13% | 1.17 |
-| Employee contributions (10.5% of 800) | PIO 10% (80.00) + unemployment 0.5% (4.00) | 84.00 |
-| **Net pay** | 800 − 84.00 − 9.00 − 1.17 | **705.83** |
-| Employer contributions (1.17% of 800) | on top of gross | 9.36 |
-| **Total employer cost** | 800 + 9.36 | **809.36** |
-
-### Example 2 — Higher earner in Podgorica, EUR 1,500 gross/month (15% surtax)
-
-**Example 2 computation table**
-
-| Step | Computation | EUR |
-| --- | --- | --- |
-| Gross salary | — | 1,500.00 |
-| PIT — band 1 (0% on first 700) | 700 × 0% | 0.00 |
-| PIT — band 2 (9% on 700.01–1,000) | 300 × 9% | 27.00 |
-| PIT — band 3 (15% on 1,000.01–1,500) | 500 × 15% | 75.00 |
-| Total PIT | 0 + 27.00 + 75.00 | 102.00 |
-| Municipal surtax (15% Podgorica) | 102.00 × 15% | 15.30 |
-| Employee contributions (10.5% of 1,500) | — | 157.50 |
-| **Net pay** | 1,500 − 157.50 − 102.00 − 15.30 | **1,225.20** |
-| Employer contributions (1.17% of 1,500) | on top | 17.55 |
-| **Total employer cost** | 1,500 + 17.55 | **1,517.55** |
-
-### Example 3 — At the 0% ceiling, EUR 700 gross/month, 13% surtax
-
-**Example 3 computation table**
-
-| Step | Computation | EUR |
-| --- | --- | --- |
-| Gross salary | — | 700.00 |
-| PIT — band 1 (0% on first 700) | 700 × 0% | 0.00 |
-| Total PIT | — | 0.00 |
-| Municipal surtax (13% of 0) | 0 × 13% | 0.00 |
-| Employee contributions (10.5% of 700) | — | 73.50 |
-| **Net pay** | 700 − 73.50 − 0 | **626.50** |
-| Employer contributions (1.17% of 700) | on top | 8.19 |
-| **Total employer cost** | 700 + 8.19 | **708.19** |
-
-At EUR 700 gross the PIT is exactly zero (the 0% band IS the tax-free allowance) — but contributions still apply. The 9% band bites only on gross above EUR 700.00.
-
-### Example 4 — At the 9% ceiling, EUR 1,000 gross/month, 13% surtax
-
-**Example 4 computation table**
-
-| Step | Computation | EUR |
-| --- | --- | --- |
-| Gross salary | — | 1,000.00 |
-| PIT — band 1 (0% on first 700) | 700 × 0% | 0.00 |
-| PIT — band 2 (9% on 700.01–1,000) | 300 × 9% | 27.00 |
-| Total PIT | 0 + 27.00 | 27.00 |
-| Municipal surtax (13% of PIT) | 27.00 × 13% | 3.51 |
-| Employee contributions (10.5% of 1,000) | — | 105.00 |
-| **Net pay** | 1,000 − 105.00 − 27.00 − 3.51 | **864.49** |
-| Employer contributions (1.17% of 1,000) | on top | 11.70 |
-| **Total employer cost** | 1,000 + 11.70 | **1,011.70** |
-
-At exactly EUR 1,000 gross the whole salary sits within bands 1 and 2; the 15% band applies only to gross above EUR 1,000.01.
-
-### Example 5 — High earner under the PIO cap, EUR 3,000 gross/month, 13% surtax
-
-**Example 5 computation table**
-
-| Step | Computation | EUR |
-| --- | --- | --- |
-| Gross salary | — | 3,000.00 |
-| PIT — band 1 (0% on first 700) | 700 × 0% | 0.00 |
-| PIT — band 2 (9% on 700.01–1,000) | 300 × 9% | 27.00 |
-| PIT — band 3 (15% on 1,000.01–3,000) | 2,000 × 15% | 300.00 |
-| Total PIT | 0 + 27.00 + 300.00 | 327.00 |
-| Municipal surtax (13% of PIT) | 327.00 × 13% | 42.51 |
-| Employee contributions (10.5% of 3,000) | gross below the monthly PIO cap (~5,730.42) | 315.00 |
-| **Net pay** | 3,000 − 315.00 − 327.00 − 42.51 | **2,315.49** |
-| Employer contributions (1.17% of 3,000) | on top | 35.10 |
-| **Total employer cost** | 3,000 + 35.10 | **3,035.10** |
-
-### Example 6 — Above the PIO base cap, EUR 6,000 gross/month, Podgorica (15% surtax)
-
-**Example 6 computation table**
-
-| Step | Computation | EUR |
-| --- | --- | --- |
-| Gross salary | — | 6,000.00 |
-| PIT — band 1 (0% on first 700) | 700 × 0% | 0.00 |
-| PIT — band 2 (9% on 700.01–1,000) | 300 × 9% | 27.00 |
-| PIT — band 3 (15% on 1,000.01–6,000) | 5,000 × 15% | 750.00 |
-| Total PIT | 0 + 27.00 + 750.00 | 777.00 |
-| Municipal surtax (15% Podgorica) | 777.00 × 15% | 116.55 |
-| PIO base after cap | min(6,000, 5,730.42) | 5,730.42 |
-| PIO contribution (10% of capped base) | 5,730.42 × 10% | 573.04 |
-| Unemployment (0.5% of full gross) | 6,000 × 0.5% — applied to full gross **[T2-2]** | 30.00 |
-| Total employee contributions | 573.04 + 30.00 | 603.04 |
-| **Net pay** | 6,000 − 603.04 − 777.00 − 116.55 | **4,503.41** |
-| Employer contributions (1.17% of 6,000) | on top | 70.20 |
-| **Total employer cost** | 6,000 + 70.20 | **6,070.20** |
-
-The PIO contribution base is capped at ~EUR 5,730.42/month (= EUR 68,765/yr ÷ 12, 2024 figure), so PIO = EUR 573.04 rather than 10% of full gross. Whether unemployment is also capped is unconfirmed [T2-2] — this example applies unemployment to full gross. [RESEARCH GAP — confirm the current-year PIO ceiling and the unemployment-base treatment with the Tax Administration.]
-
-## Section 10 -- Tier 1 Rules (deterministic — the skill applies these directly)
-
-- **Tax year** — Tax year = calendar year (1 Jan – 31 Dec).  _(PwC — Tax administration)_
-- **Employment-income PIT bands (marginal, on gross monthly salary)** — 0% up to EUR 700.00, 9% on EUR 700.01–1,000.00, 15% above EUR 1,000.01. Social contributions are NOT deducted before computing PIT.  _(PwC; Eurofast 2025 p.3)_
-- **0% band nature** — The 0% band is the tax-free allowance — there is no separate personal allowance.  _(PwC)_
-- **Municipal surtax (prirez)** — Charged on the assessed PIT amount: 13% nationwide, 15% in Podgorica and Cetinje. Eurofast cites a 10–15% municipal range. [T2-1]  _(PwC)_
-- **Employee social contributions total** — 10.5% of gross: PIO 10.0% + unemployment 0.5% + health 0.0%  _(PwC; KPMG; Eurofast 2025 p.4)_
-- **Employer social contributions total** — ~1.17% of gross: unemployment 0.5% + Labour Fund 0.2% + Chamber of Commerce 0.27% + Prevention of Disability Fund 0.2%; PIO and health both 0%  _(Eurofast 2025 p.4 itemised; KPMG)_
-- **Europe Now 2.0 reform** — The "Europe Now 2.0" reform (1 Oct 2024) cut PIO from 20.5% to 10% total (employer 5.5%→0%, employee 15%→10%) and confirmed health at 0%/0%.  _(KPMG Oct 2024 Tax Alert)_
-- **Stale totals prohibition** — Do NOT use Eurofast's printed column totals (15.5% employee / 6.47% employer) — they are stale pre-reform aggregates. Use the itemised rows (10.5% / 1.17%).  _(KPMG; PwC)_
-- **PIO contribution base cap** — EUR 68,765/yr (2024 published; ≈ EUR 5,730.42/month). The ceiling resets annually.  _(PwC [RESEARCH GAP — confirm current-year cap.])_
-- **Total employer cost** — Total employer cost = gross × 1.0117 (gross + 1.17% contributions). PIT and surtax are withheld from the employee, not added to employer cost.
-- **Net pay** — Net pay = gross − employee contributions (10.5%) − PIT − surtax. Each is computed independently on its own base.  _(PwC; Eurofast)_
-- **IOPPD filing/remittance** — Employers file the integrated monthly IOPPD return and remit PIT + surtax + all contributions simultaneously, due by the 15th of the following month.  _(Eurofast tax calendar; Perfectum; payroll guides)_
-- **Annual PIT return deadline** — Annual PIT return due 30 April; single-employer employees with only employment income need not file.  _(Eurofast 2025 p.10; PwC)_
-- **Minimum wage (dual net tier) from 1 Oct 2024** — EUR 600 net (jobs up to high-school qualification) and EUR 800 net (higher qualification).  _(KPMG; Karanovic & Partners [RESEARCH GAP — current gross-up unconfirmed.])_
-- **Currency** — Montenegro uses EUR only.
-
-## Section 11 -- Tier 2 Catalogue (reviewer judgement required)
-
-**Tier 2 Catalogue (reviewer judgement required)**  _(Section 11)_
-
-| Ref | Issue | What the reviewer must resolve |
-| --- | --- | --- |
-| **[T2-1]** | Exact municipal surtax rate | PwC states 13% (15% Podgorica/Cetinje); Eurofast states a 10–15% range by municipality. Confirm the specific municipality's surtax by-law. |
-| **[T2-2]** | Unemployment-contribution base vs the PIO ceiling | Whether the 0.5% unemployment contribution is subject to the PIO base ceiling or applies to uncapped gross is unconfirmed; this skill applies it to full gross. Confirm with the Tax Administration. |
-| **[T2-3]** | Post-reform contribution totals vs Eurofast printed totals | Eurofast prints 15.5% / 6.47% (pre-reform); itemised rows give 10.5% / 1.17% (post-reform, per PwC/KPMG). Confirm against the consolidated Law on Mandatory Social Security Contributions in the Official Gazette. |
-| **[T2-4]** | Current-year PIO base ceiling | PwC publishes EUR 68,765 (2024); TaxRavens cites ~EUR 54,533. Confirm the current-year cap with Fond PIO / the Official Gazette. **[RESEARCH GAP]** |
-| **[T2-5]** | Minimum wage gross/net and tier structure | EUR 600/EUR 800 net (KPMG) vs ~EUR 670 net / ~EUR 700 gross single figure (trackers). Confirm with the Ministry of Labour. **[RESEARCH GAP]** |
-| **[T2-6]** | Overtime / night / holiday premiums and maximum hours | Not in this research dataset — confirm from the Labour Law (Zakon o radu) and any collective agreement. **[RESEARCH GAP]** |
-| **[T2-7]** | Benefits in kind, severance, per-diem/travel-allowance tax limits | Not in this research dataset — reviewer to populate. **[RESEARCH GAP]** |
-| **[T2-8]** | IOPPD exact form code/version and submission channel | Corroborated by Eurofast calendar + Perfectum + payroll guides; confirm the current form code/version on the Tax Administration portal. |
-
-## Section 12 -- Filing Obligations
-
-### Monthly — IOPPD
-
-**Monthly — IOPPD**  _(Eurofast 2025 p.10; Perfectum)_
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| **IOPPD (Obrazac IOPPD)** | Integrated monthly return of calculated and paid personal income tax (and surtax) and mandatory social security contributions on salaries; filed online (or in person) to the Revenue and Customs Administration. There is no separate contributions report — IOPPD covers PIT and all contributions. | By the 15th of the month following the reporting month; tax and contributions are paid simultaneously with filing. (Eurofast 2025 p.10 tax calendar; Perfectum; payroll guides) **[T2-8 — confirm exact form code/version.]** |
-| Payment of PIT + surtax + contributions | Remittance of withheld amounts | Same as IOPPD (15th of the following month). (Eurofast 2025 p.10) |
-
-### Annual and other returns (employer-entity context)
-
-**Annual and other returns (employer-entity context)**  _(Eurofast 2025 p.10)_
-
-| Form | Purpose | Deadline |
-| --- | --- | --- |
-| Annual personal income tax return (GPP-FL / godišnja prijava) | Annual PIT reconciliation. Individuals with only single-employer employment income are NOT obliged to file. | 30 April for the previous year. (Eurofast 2025 p.10; PwC — Tax administration) |
-| Withholding tax on dividends/distributions | Declaration and payment of dividend-distribution withholding | 28 February for the previous year. (Eurofast 2025 p.10) |
-| Annual corporate income tax return | CIT return (employer entity) | 31 March for the previous year. (Eurofast 2025 p.10) |
-| VAT return | Declaration and payment of VAT | 15th of the following month. (Eurofast 2025 p.10) |
-
-- **Corporate income tax (employer-entity context)** — Progressive: 9% up to EUR 100,000 taxable profit, 12% to EUR 1,500,000, 15% above.  _(Eurofast 2025 p.5)_
-- **VAT rates and registration threshold** — Standard 21%, reduced 7% and 15%, zero 0%; registration threshold EUR 30,000 turnover in a 12-month period.  _(Eurofast 2025 p.8)_
-
-## Section 13 -- Penalties
-
-Statutory fine bands per the relevant laws (Eurofast 2025 p.10). Default interest may also apply to late payments.
-
-**Penalties table**  _(Eurofast 2025 p.10)_
-
-| Area | Trigger | Fine band |
-| --- | --- | --- |
-| Personal Income Tax Law | Failure to submit the annual PIT return within the legal deadline; late or incorrect payment; other related offences | EUR 2,000 – EUR 10,000 (Eurofast 2025 p.10) |
-| Corporate Income Tax / withholding | Late submission of a withholding or CIT return; late payment of CIT or withholding; other related offence | EUR 550 – EUR 16,500 (Eurofast 2025 p.10) |
-| VAT | Failure to register; failure to submit a VAT return; fiscalisation / other VAT offences | EUR 3,000 – EUR 40,000 (Eurofast 2025 p.10) |
-
-**[RESEARCH GAP — reviewer to confirm]** The specific penalty band for late IOPPD filing or late remittance of payroll PIT/contributions, and the default-interest rate, were not isolated from a primary source in this research. The PIT-Law band above (EUR 2,000–10,000) is the closest published range. Confirm the applicable charge with the Tax Administration. Record-keeping retention periods were also not confirmed. **[RESEARCH GAP]**
-
-## Section 14 -- Excel Working Paper Template
-
-A reviewer-ready monthly payroll working paper should contain the following columns (one row per employee per month). Inputs are entered; computed cells follow the Section 2 / Section 3 order exactly.
-
-**Excel Working Paper Template columns**  _(Section 14)_
-
-| Col | Heading | Type | Formula / source |
-| --- | --- | --- | --- |
-| A | Employee name | Input | — |
-| B | JMBG / tax ID | Input | personal identification number |
-| C | Municipality of residence | Input | drives surtax rate (15% Podgorica/Cetinje, else 13%) |
-| D | Gross salary (EUR) | Input | bruto plata |
-| E | PIT — band 1 (0%) | Computed | `0` (on `MIN(D,700)`) |
-| F | PIT — band 2 (9%) | Computed | `MAX(MIN(D,1000)-700,0) * 9%` |
-| G | PIT — band 3 (15%) | Computed | `MAX(D-1000,0) * 15%` |
-| H | Total PIT | Computed | `E + F + G` |
-| I | Surtax rate | Input | `0.15` if Podgorica/Cetinje else `0.13` |
-| J | Municipal surtax | Computed | `H * I` |
-| K | PIO base (capped) | Computed | `MIN(D, 5730.42)` (2024 cap — confirm current year) |
-| L | PIO contribution (10%) | Computed | `K * 10%` |
-| M | Unemployment (0.5%) | Computed | `D * 0.5%` (full gross — see [T2-2]) |
-| N | Total employee contributions | Computed | `L + M` |
-| O | Net pay | Computed | `D - N - H - J` |
-| P | Employer contributions (1.17%) | Computed | `D * 1.17%` |
-| Q | Total employer cost | Computed | `D + P` |
-
-Footer checks: sum of column H ties to the IOPPD income-tax line; sum of J ties to the surtax remittance; sum of L + M ties to the PIO + unemployment remittance; sum of O ties to the total net wages disbursed; sum of P ties to the employer-contribution remittance.
-
-## Section 15 -- Montenegrin Bank Statement & Terminology Reading Guide
-
-**Terminology Reading Guide**  _(Section 15)_
-
-| Montenegrin term | English | Relevance |
-| --- | --- | --- |
-| Bruto plata / bruto zarada | Gross salary | Starting figure for all computations |
-| Neto plata / neto zarada | Net salary | What the employee receives |
-| Porez na dohodak fizičkih lica | Personal income tax | Withheld monthly on gross |
-| Prirez | Municipal surtax | 13% (15% Podgorica/Cetinje) of assessed PIT |
-| Doprinosi | Contributions | PIO + unemployment (employee); residual (employer) |
-| Penziono i invalidsko osiguranje (PIO) | Pension & disability insurance | 10% employee, 0% employer |
-| Osiguranje od nezaposlenosti | Unemployment insurance | 0.5% employee + 0.5% employer |
-| Zdravstveno osiguranje | Health insurance | 0% / 0% — abolished |
-| Fond rada | Labour Fund | 0.2% employer-only |
-| Privredna komora | Chamber of Commerce | 0.27% employer-only membership contribution |
-| Fond za profesionalnu rehabilitaciju / invalide | Prevention of Disability Fund | 0.2% employer-only |
-| Fond PIO | Fund for Pension and Disability Insurance | Receives PIO contributions |
-| Uprava prihoda i carina | Revenue and Customs Administration | Receives PIT, surtax and contributions |
-| IOPPD | Integrated monthly payroll return | PIT + surtax + all contributions in one filing |
-| Evropa sad 2 | "Europe Now 2.0" | The 1 Oct 2024 reform package |
-| Minimalna zarada | Minimum wage | EUR 600 / EUR 800 net (dual tier) |
-| JMBG | Unique personal identification number | Required for every employee |
-
-## Section 16 -- Onboarding Fallback
-
-When key facts are missing, ask the user these questions before computing. If a question is unanswered, apply the Section 6 conservative default and clearly flag the assumption.
-
-1. What is the employee's **gross monthly salary** in EUR?
-2. In which **municipality** does the employee reside? (Podgorica/Cetinje → 15% surtax; otherwise → 13%. If unknown → default 13% and flag it.)
-3. Which **month and year** is this pay run for? (Confirms the post-1-Oct-2024 reform applies and selects the correct minimum wage / PIO ceiling.)
-4. Does the gross exceed the **monthly PIO base cap** (~EUR 5,730.42)? (Triggers the contribution ceiling — confirm the current-year cap.)
-5. What is the **qualification tier of the job**? (To check against the EUR 600 / EUR 800 net minimum wage.)
-
-## Section 17 -- Interaction with Other Skills
-
-**Interaction with Other Skills**  _(Section 17)_
-
-| Scenario | Skill to use |
-| --- | --- |
-| Employee payroll (PIT + surtax + contributions) | **This skill (montenegro-payroll.md)** |
-| Montenegro personal income tax (annual / self-employment) | montenegro-income-tax.md |
-| Montenegro social contributions (detailed contribution mechanics) | montenegro-social-contributions.md |
-| Cross-border / posted workers / treaty coordination | cross-border-payroll-coordination.md |
-| Montenegro VAT (PDV) returns | montenegro-vat.md |
-| Shared workflow runbook | payroll-workflow-base.md |
-
-### Key handoff points
-
-- **Payroll → Bookkeeping:** Gross wages and the 1.17% employer contributions are expenses; withheld PIT, surtax and the 10.5% employee contributions are liabilities until remitted via IOPPD.
-- **Payroll → Income tax:** Single-employer employees with only employment income need not file an annual PIT return; otherwise the IOPPD-reported income feeds the annual return (due 30 April).
-- **Payroll → Pension:** PIO contributions paid through payroll build the employee's Fond PIO pension entitlement.
-
-## Section 18 -- Reference Material
-
-**Reference Material**  _(Section 18)_
-
-| # | Source | Publisher | URL |
-| --- | --- | --- | --- |
-| 1 | Montenegro — Individual — Taxes on personal income (PIT bands 0/9/15%, 15% other income, 13%/15% surtax) | PwC Worldwide Tax Summaries | https://taxsummaries.pwc.com/montenegro/individual/taxes-on-personal-income |
-| 2 | Montenegro — Individual — Other taxes (PIO 10% employee, unemployment 0.5%/0.5%, PIO annual cap EUR 68,765) | PwC Worldwide Tax Summaries | https://taxsummaries.pwc.com/montenegro/individual/other-taxes |
-| 3 | Montenegro — Corporate — Other taxes / Taxes on corporate income (VAT 21/15/7/0%; CIT context) | PwC Worldwide Tax Summaries | https://taxsummaries.pwc.com/montenegro/corporate/other-taxes |
-| 4 | Montenegro Tax Card 2025 (itemised SSC table, PIT bands, CIT 9/12/15%, VAT, tax calendar, penalties) | Eurofast | https://eurofast.eu/wp-content/uploads/2025/02/MontenegroTaxCard2025.pdf |
-| 5 | Amendments to the Montenegrin Labor Law and Law on Mandatory Social Security Contributions — Oct 2024 Tax Alert (PIO 20.5%→10%; min wage EUR 600/EUR 800 net; effective 1 Oct 2024) | KPMG Montenegro | https://assets.kpmg.com/content/dam/kpmg/me/pdf/2024/10/Amendments-to-the-Montenegrin-Labor-Law-and-Law-on-Mandatory-Social-Security-Contributions.pdf |
-| 6 | Recent Changes in the Montenegrin Labour Regulations (Europe Now 2; dual-tier minimum wage; Oct 2024 contributions) | Karanovic & Partners | https://www.karanovicpartners.com/news/recent-changes-in-the-montenegrin-labour-regulations/ |
-| 7 | Social Security Contributions – Montenegro (employee 10.5%, employer 0% + Labour Fund 0.2%; conflicting PIO cap ~EUR 54,533) | TaxRavens | https://taxravens.com/en/montenegro/social-contributions |
-| 8 | IOPPD Form (integrated monthly PIT + contributions report) | Perfectum | https://www.perfectum.me/en/important-documents/ioppd-form/ |
-
-### Primary authorities note
-
-Primary authorities: Revenue and Customs Administration of Montenegro (https://www.upravaprihoda.gov.me/); Fund for Pension and Disability Insurance (Fond PIO); Ministry of Labour and Social Welfare. **[RESEARCH GAP — no direct primary-source (Official Gazette / upravaprihoda.gov.me) page was machine-readable in this research; figures rest on Big-4 (PwC, KPMG) and Eurofast secondary summaries and should be confirmed against the in-force legislation.]**
-
-### Test Suite
-
-Run these to validate any implementation of this skill. Expected results use 2025 post-reform figures (employee 10.5%, employer 1.17%, PIT 0/9/15% on gross) and the 13% default surtax unless Podgorica/Cetinje (15%) is named.
-
-1. **Mid-low earner.** EUR 800 gross, 13% surtax. Expect: PIT EUR 9.00, surtax EUR 1.17, employee contributions EUR 84.00, net EUR 705.83, employer contributions EUR 9.36, total employer cost EUR 809.36.
-2. **Higher earner, Podgorica.** EUR 1,500 gross, 15% surtax. Expect: PIT EUR 102.00, surtax EUR 15.30, employee contributions EUR 157.50, net EUR 1,225.20, employer cost EUR 1,517.55.
-3. **At the 0% ceiling.** EUR 700 gross, 13% surtax. Expect: PIT EUR 0.00, surtax EUR 0.00, employee contributions EUR 73.50, net EUR 626.50, employer cost EUR 708.19.
-4. **At the 9% ceiling.** EUR 1,000 gross, 13% surtax. Expect: PIT EUR 27.00, surtax EUR 3.51, employee contributions EUR 105.00, net EUR 864.49, employer cost EUR 1,011.70.
-5. **High earner under the PIO cap.** EUR 3,000 gross, 13% surtax. Expect: PIT EUR 327.00, surtax EUR 42.51, employee contributions EUR 315.00, net EUR 2,315.49, employer cost EUR 3,035.10.
-6. **Above the PIO cap.** EUR 6,000 gross, Podgorica (15% surtax). Expect: PIT EUR 777.00, surtax EUR 116.55, PIO base capped at EUR 5,730.42, PIO EUR 573.04, unemployment EUR 30.00 (full gross), employee contributions EUR 603.04, net EUR 4,503.41, employer cost EUR 6,070.20.
-7. **Marginal-band check.** Confirm PIT is computed marginally on gross — only the slice above EUR 700 is taxed at 9%, only the slice above EUR 1,000 at 15% — and that social contributions are NOT deducted before computing PIT.
-8. **Surtax-on-PIT check.** Confirm the surtax is applied to the assessed PIT amount, not to income.
-9. **Stale-total check.** Confirm the implementation uses the itemised post-reform rates (employee 10.5%, employer 1.17%) and NOT Eurofast's printed 15.5% / 6.47% totals.
-10. **Employer-cost check.** Confirm employer cost = gross × 1.0117 and that PIT, surtax and employee contributions are withheld from the employee (never added to employer cost).
-11. **Filing check.** Confirm PIT, surtax and all contributions are reported together on a single monthly IOPPD, due by the 15th of the following month.
-12. **Surtax-default check.** Municipality unknown — confirm the skill applies the 13% surtax and flags the assumption rather than guessing 15%.
-
-## PROHIBITIONS
-
-- NEVER deduct social contributions before computing PIT — Montenegro applies the PIT bands directly to GROSS salary.
-- NEVER apply the 9% or 15% PIT rate to the whole salary — the bands are marginal; only the slice within each band is taxed at that rate.
-- NEVER apply the surtax to income — it is charged on the assessed PIT amount (13% default, 15% Podgorica/Cetinje).
-- NEVER use Eurofast's printed contribution totals (15.5% employee / 6.47% employer) — they are stale pre-reform aggregates; use the itemised post-reform rates (10.5% / 1.17%).
-- NEVER apply a PIO employer contribution or an employee/employer health contribution — both are 0% after the 1 Oct 2024 reform.
-- NEVER exceed the PIO base ceiling (~EUR 5,730.42/month, EUR 68,765/yr 2024 figure) when computing the PIO contribution — but confirm the current-year cap before relying on it.
-- NEVER assume the EUR 600 / EUR 800 net minimum-wage figure without confirming the qualification tier and the current gross-up — it is a flagged RESEARCH GAP.
-- NEVER quote a specific late-IOPPD penalty without confirming it — the exact payroll-penalty band is an unconfirmed RESEARCH GAP.
-- NEVER file contributions separately from PIT — both go on the single monthly IOPPD to the Revenue and Customs Administration.
-- NEVER present payroll computations as definitive — always label them as estimated and direct the user to a licensed Montenegrin accountant.
+| 0.1 / 0.2 / 0.3 | Reporting month/year; original or amended report marker |
+| 1.1–1.4 | Payer identifier/name and preparer contact details |
+| Columns 2 / 3 | Insured person's identifier/name |
+| Column 4 | Calculation code; ordinary salary 001, applicable sick-pay separate code, aggregate salary tax 097 |
+| Columns 5 / 6 | First/last day of relevant insured period within report period, subject to specified quarterly exception |
+| Column 7 | Gross base for the particular row, not necessarily unique economic earnings |
+| Column 8 | Income tax; employment tax calculated exclusively through 097 for total personal earnings over EUR 700 |
+| Columns 9 / 11 | Employee PIO / unemployment |
+| Column 12 / 14 / 15 | Payer PIO / unemployment / Labour Fund |
+| Columns 10 / 13 | Historical health contribution fields for the stated periods through December 2021, not current 2026 charges |
+| Totals / separate disability item | Published column sums and distinct disability non-employment levy inputs; quota/rate method below; current statistical-series/status/schema implementation still open |
+
+Source: [IOPPD instructions, general/special parts][ioppd]. The XLS `Kontrole poreza i doprinosa` sheet confirms ordinary salary row 3 contribution rates and tax through 097, and row 104 aggregate-tax purpose. It contains historic text, malformed historical dates, and row 109 zimnica wording predating the actual 2026 amendment. It must not override law or supply a current floor/exemption from its old labels. The printed 097 inclusion lists also differ between materials; special income-code inclusion needs current authority confirmation, not a guessed merged list. [Workbook][codes]; [contribution Article 18a][social]
+
+Code 097 repeats an income base for tax reporting; it is not another salary payment, expense or contribution base. Reconcile economic earnings once from salary/benefit records, calculate aggregate tax once, and separately follow required form column totals. A salary/sick-pay split must not grant a separate zero band to each row. The control below illustrates this duplication risk, not a portal-ready payload. [IOPPD instructions, columns 4–8 and totals][ioppd]
+
+Rule Article 6 requires an amended period report with complete data for all persons concerned, not only the changed employee/difference. Article 8's retained OPD1 exception concerns earlier-period unpaid earnings and needs the original rules/application dates; do not automatically send every arrear as a current 001 row or make OPD1 the ordinary 2026 return. [IOPPD Articles 6–8][ioppd]
+
+## Worked examples
+
+Hypothetical full-month 2026 EUR cases with established employee/status/base, salary above the applicable verified floor, no additional service, exemptions, annual PIO refund or other employment levies except those stated. Local rates are explicit scenario inputs. Each example tests its stated method, not an accepted filing or universally complete employer cost. Cents use half-up rounding per component for these workpapers; current portal validation remains open.
+
+### 1. Ordinary upper-band payroll and cash reconciliation
+
+Gross 2,000, local rate assumed 15%. PIT 177, employee contributions 210, net 1,613; specified payer funding 2,040.55. Prirez is included in payer funding, not deducted from net again. [PIT Articles 10, 15, 46][pit]; [instruction Articles 2–6][instruction]; [allocation example][example]
+
+```oa-check
+name: Montenegro ordinary cash payroll and payer reconciliation
+inputs:
+  gross: 2000
+  local_rate: 0.15
+steps:
+  - pit: round(27 + (gross - 1000) * 0.15, 2)
+  - employee_pio: round(gross * 0.10, 2)
+  - employee_unemployment: round(gross * 0.005, 2)
+  - net: gross - pit - employee_pio - employee_unemployment
+  - employer_unemployment: round(gross * 0.005, 2)
+  - labour_fund: round(gross * 0.002, 2)
+  - prirez: round(pit * local_rate, 2)
+  - specified_funding: gross + employer_unemployment + labour_fund + prirez
+  - remittances: pit + employee_pio + employee_unemployment + employer_unemployment + labour_fund + prirez
+  - cash_reconciliation: specified_funding - net - remittances
+expected:
+  pit: 177
+  employee_pio: 200
+  employee_unemployment: 10
+  net: 1613
+  employer_unemployment: 10
+  labour_fund: 4
+  prirez: 26.55
+  specified_funding: 2040.55
+  remittances: 427.55
+  cash_reconciliation: 0
+```
+
+### 2. Salary at the first taxed-band ceiling
+
+Gross 1,000, local rate assumed 13%. PIT is 27, net 868, specified funding 1,010.51. Do not apply 9% to the entire 1,000 or deduct contributions before calculating PIT. [PIT Articles 10, 15][pit]; [instruction][instruction]
+
+```oa-check
+name: Montenegro salary band ceiling
+inputs:
+  gross: 1000
+  local_rate: 0.13
+steps:
+  - pit: round(max(min(gross, 1000) - 700, 0) * 0.09 + max(gross - 1000, 0) * 0.15, 2)
+  - net: gross - pit - round(gross * 0.10, 2) - round(gross * 0.005, 2)
+  - prirez: round(pit * local_rate, 2)
+  - specified_funding: gross + round(gross * 0.005, 2) + round(gross * 0.002, 2) + prirez
+expected:
+  pit: 27
+  net: 868
+  prirez: 3.51
+  specified_funding: 1010.51
+```
+
+### 3. Net-to-gross in the established upper band
+
+Target cash net 1,500. For this status/band, net before cents = 0.745 × gross + 123; gross = (net − 123)/0.745. Recompute each component after rounding gross to cents. This is not a universal gross-up factor for benefits, partial periods, nonemployees or exempt/capped cases. [PIT Articles 10, 15][pit]; [instruction Articles 2–5][instruction]
+
+```oa-check
+name: Montenegro upper band net to gross
+inputs:
+  target_net: 1500
+steps:
+  - gross: round((target_net - 123) / 0.745, 2)
+  - pit: round(27 + (gross - 1000) * 0.15, 2)
+  - employee_pio: round(gross * 0.10, 2)
+  - employee_unemployment: round(gross * 0.005, 2)
+  - actual_net: gross - pit - employee_pio - employee_unemployment
+expected:
+  gross: 1848.32
+  pit: 154.25
+  employee_pio: 184.83
+  employee_unemployment: 9.24
+  actual_net: 1500
+```
+
+### 4. Taxable genuine noncash benefit, separate contribution base
+
+Cash gross salary 2,000 plus established taxable market-value benefit 200. Assume it is an Article 18a(3) excluded noncash benefit and does not replace unpaid salary. PIT base 2,200, contribution base 2,000, PIT 207, cash net 1,583 plus benefit provided in kind. Labour Fund/other costs on the benefit and any tax gross-up undertaking are outside this control. [PIT Articles 14(1)(4), 14(2), 15][pit]; [contribution Article 18a(3)][social]
+
+```oa-check
+name: Montenegro noncash benefit separate payroll bases
+inputs:
+  cash_gross: 2000
+  taxable_benefit: 200
+steps:
+  - pit_base: cash_gross + taxable_benefit
+  - contribution_base: cash_gross
+  - pit: round(27 + (pit_base - 1000) * 0.15, 2)
+  - employee_contributions: round(contribution_base * 0.10, 2) + round(contribution_base * 0.005, 2)
+  - net_cash: cash_gross - pit - employee_contributions
+expected:
+  pit_base: 2200
+  contribution_base: 2000
+  pit: 207
+  employee_contributions: 210
+  net_cash: 1583
+```
+
+### 5. Concurrent employers: aggregate PIT exposure
+
+Same month gross 1,200 from employer A and 800 from B, each payer's assumed PIT 57 and 9. Aggregate gross 2,000 implies 177 under the employment scale, versus 66 withheld: indicative difference 111. Articles 43(4)(5)/43a require the annual return and authority assessment for qualifying multiple-payer income; this control is a monthly exposure workpaper, not an instruction for employer A to collect the other payer's liability or a substitute for that decision. [PIT Articles 10, 43, 43a][pit]
+
+```oa-check
+name: Montenegro concurrent employers indicative tax difference
+inputs:
+  gross_a: 1200
+  gross_b: 800
+steps:
+  - withheld_a: 27 + (gross_a - 1000) * 0.15
+  - withheld_b: (gross_b - 700) * 0.09
+  - total_gross: gross_a + gross_b
+  - aggregate_pit: 27 + (total_gross - 1000) * 0.15
+  - indicative_difference: aggregate_pit - withheld_a - withheld_b
+expected:
+  withheld_a: 57
+  withheld_b: 9
+  total_gross: 2000
+  aggregate_pit: 177
+  indicative_difference: 111
+```
+
+### 6. Ordinary salary and qualifying sick-pay rows, one aggregate tax row
+
+Salary 1,500 plus correctly calculated/eligible short sick-pay compensation 500 in the same month. Contributions are allocated over the actual rows/periods, aggregate code 097 base 2,000 and PIT 177. Its repeated base is not a second 2,000 payment. Sick-pay entitlement, underlying amount and reimbursement decision are assumptions. [IOPPD instructions, codes 001/006/097 and columns 7–15][ioppd]; [code workbook][codes]
+
+```oa-check
+name: Montenegro IOPPD salary and sick pay aggregate tax control
+inputs:
+  salary_base: 1500
+  sick_base: 500
+steps:
+  - economic_gross: salary_base + sick_base
+  - salary_pio: salary_base * 0.10
+  - sick_pio: sick_base * 0.10
+  - total_pio: salary_pio + sick_pio
+  - employee_unemployment: economic_gross * 0.005
+  - code_097_pit: 27 + (economic_gross - 1000) * 0.15
+  - repeated_report_bases: salary_base + sick_base + economic_gross
+  - net_cash: economic_gross - total_pio - employee_unemployment - code_097_pit
+expected:
+  economic_gross: 2000
+  salary_pio: 150
+  sick_pio: 50
+  total_pio: 200
+  employee_unemployment: 10
+  code_097_pit: 177
+  repeated_report_bases: 4000
+  net_cash: 1613
+```
+
+### 7. Chamber contribution added to ordinary employee funding
+
+Established liable Chamber member, no artisan exception, one employee gross 2,000 and assumed local prirez rate 15%. Original control 1's specified funding 2,040.55 excludes Chamber. Contribution 0.27% × 2,000 = 5.40; expanded specified funding 2,045.95. Employee net stays 1,613. Other levies still need separate applicability checks. [Chamber decision points 1–3][chamber]; [instruction][instruction]
+
+```oa-check
+name: Montenegro Chamber contribution incremental payroll funding
+inputs:
+  salary_gross: 2000
+  funding_before_chamber: 2040.55
+  employee_net: 1613
+steps:
+  - chamber_due: round(salary_gross * 0.0027, 2)
+  - expanded_specified_funding: funding_before_chamber + chamber_due
+  - employee_net_after_employer_charge: employee_net
+expected:
+  chamber_due: 5.40
+  expanded_specified_funding: 2045.95
+  employee_net_after_employer_charge: 1613
+```
+
+### 8. Entrepreneur Chamber base differs from employee payroll
+
+An established liable member's GPP-FL independent-activity income base is 15,000, with no artisan exception. Annual Chamber contribution 40.50, due with the relevant return submission. The input is the established statutory return-income base, not turnover, salary or a new conclusion about PIT expense deductibility. [Decision points 1–3][chamber]
+
+```oa-check
+name: Montenegro entrepreneur Chamber contribution
+inputs:
+  established_return_income: 15000
+steps:
+  - annual_chamber_contribution: round(established_return_income * 0.0027, 2)
+expected:
+  annual_chamber_contribution: 40.50
+```
+
+### 9. Employer with 15 workers and no qualifying disability worker
+
+October 2026 established nonexempt employer, 15 employees, no qualifying worker. Use a **hypothetical established statutory reference base of 1,000**, not a certified national 2026 amount. Article 22's 5% employer contribution is 50 for the month; do not multiply it by all 15 employees or the salary bill. Statistical-series selection and actual amount remain an implementation gap. [Article 22][disability]
+
+```oa-check
+name: Montenegro smaller employer disability levy method
+inputs:
+  hypothetical_established_reference_base: 1000
+steps:
+  - monthly_employer_levy: hypothetical_established_reference_base * 0.05
+expected:
+  monthly_employer_levy: 50
+```
+
+### 10. Exact quota and shortfall for an 80-worker employer
+
+October 2026 established nonexempt employer, 80 employees. Statutory 5% quota is exactly four; two workers count once each with documented qualifying status, no double-count or new-employer exception. Shortfall two; at a **hypothetical established reference base of 1,000**, contribution 2 × 20% × 1,000 = 400. No fractional quota issue or actual 2026 nominal levy is certified. [Articles 21–22][disability]; [date gate][deferral]
+
+```oa-check
+name: Montenegro disability quota shortfall employer levy
+inputs:
+  employee_count: 80
+  established_qualifying_count: 2
+  hypothetical_established_reference_base: 1000
+steps:
+  - required_count: employee_count * 0.05
+  - shortfall: max(required_count - established_qualifying_count, 0)
+  - monthly_employer_levy: shortfall * hypothetical_established_reference_base * 0.20
+expected:
+  required_count: 4
+  shortfall: 2
+  monthly_employer_levy: 400
+```
+
+## Payment, annual reporting and foreign salary
+
+PIT is calculated/withheld/paid on each earnings payment under Article 46, not postponed to the following month's reporting deadline. The instruction requires simultaneous contributions/prirez payment and noncash charges by the month's last working day. Contribution Article 21 and IOPPD Article 5 specify monthly deadlines for their respective population/reporting functions. Preserve calculation period, payment event, report period and original obligation date separately. [PIT Article 46][pit]; [instruction Article 7][instruction]; [contribution Article 21][social]; [IOPPD Article 5][ioppd]
+
+Resident recipients of foreign earnings and specified immune diplomatic/international-employer earnings have Article 46 self-calculation/payment within five days of receipt; a nonresident employer with a Montenegro establishment and no diplomatic immunity has its own employer duty. Residence, source, treaty priority, credit evidence and insurance coordination remain separate checks. Do not turn a foreign bank payer into automatic exemption or assume tax treaty relief also exempts social insurance. [PIT Articles 3–4, 44–46][pit]; [contribution Articles 5, 7][social]
+
+Employer annual employee information is due by 31 January for the preceding year. The annual personal return is a separate taxpayer obligation for the Article 43 populations, including foreign income and qualifying multiple employers, ordinarily by end April. Article 43a provides an authority decision for the multiple-payer case. Do not multiply monthly tax by twelve and call it the final annual liability without reconciling the actual circumstances/assessment. [PIT Articles 43–43a, 47][pit]
+
+Historic dispute/court awards fall under PIT Article 60k and contribution Article 29b's original-due-date rate rules. The reporting rule retains special earlier-period provisions. Determine the original period, legal decision and payment before selecting rates/codes; a new report does not convert all arrears into 2026 earnings. Interest, penalties and account offsets need current procedural authority. [PIT Article 60k][pit]; [contribution Article 29b][social]; [IOPPD Article 8][ioppd]
+
+The authority's January 2026 IRMS transition notice identifies the new service; period-specific extensions do not create a recurring filing or payment extension. Current portal code validations, authorisation, late/corrected report behaviour and payment accounts have not been tested here. [Authority notice][irms]
+
+## Sanctions and reviewer handoff
+
+Article 53a(1) lists payer withholding/payment/reporting failures, with legal-person fine EUR 2,000–20,000 and responsible-person fine 500–1,000. Article 53v contains separate individual offences and range 500–2,000. These are specified offences, not an automatic assessment for every discrepancy. Article 53 refers other procedural matters to tax procedure; current interest, appeal/stay and enforcement methods are not completed here. [PIT Articles 53–53v][pit]
+
+Handoff: contract/payroll register; receipt classification and benefit valuations; all payers and insurance periods; legal wage/floor/status/relief evidence; current municipal decision; statutory calculations and cents reconciliation; code/period mapping; original/full replacement reports and acknowledgements; payment/authority/local ledgers; annual statement and any personal return/assessment; current-law/source dates.
+
+Remaining: complete current municipal decisions/situs and local forms; wage/collective-agreement floors and entitlement calculations; exact benefit/expense and relief implementation; current disability statistical-series/status/quota exceptions and Chamber membership/artisan/craft dues, union and other levy applicability; full 2026 reporting-code amendments and contradictions; actual IRMS schema/acknowledgement/corrections; historical award and procedural methods; foreign/treaty/coverage cases; independent country review and named accountant attestation. The companion individual-tax Guide has now been rebuilt, but its documented form/specialist/procedure limits remain; it does not establish missing payroll implementation.
+
+## Sources
+
+Read on **24 October 2026**: targeted PIT Articles 3–5a, 10, 12–16, 32c–32d, 42–47, 53–53v and 60k; actual 160/25 provisions relevant to payroll; actual 70/26 Articles 1–3; employment instruction; IOPPD rule/instructions/code list; selected official workbook rows; local-finance Articles 8–9 and Bar ordinance. January 2027 salary proposal visually read, not certified as enacted. Historic Ministry example used only for gross/net/prirez allocation. Current taxpayer facts/accepted filings were not obtained.
+
+[pit]: https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0
+[amend]: https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0
+[may]: https://www.sluzbenilist.me/propisi/394390/download
+[instruction]: https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0
+[social]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
+[ioppd]: https://wapi.gov.me/download/28aa7760-8d39-440d-8874-1ffcc5773095?version=1.0
+[codes]: https://wapi.gov.me/download/5cb52f80-2fcc-4f77-8111-07ea8b6d8ff1?version=1.0
+[local]: https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0
+[bar]: https://investin.bar.me/wp-content/uploads/2024/08/Odluka-o-prirezu-porezu-na-dohodak-fizickih-lica.pdf
+[example]: https://wapi.gov.me/download/f1efb281-21a8-4c03-a2ae-d6ea5c608e93?version=1.0
+[proposal]: https://wapi.gov.me/download/58f7f48c-33de-4ec0-a1f4-28fd16fc7fb6?version=1.0
+[chamber]: https://www.sluzbenilist.me/propisi/389055/download
+[artisan]: https://www.ul-gov.me/me/aktuelnosti/prijava-u-registar-zanatlija
+[disability]: https://www.zzzcg.me/wp-content/uploads/2018/01/Zakon-o-profesionalnoj-rehabilitaciji-i.pdf
+[disability-amend]: https://www.sluzbenilist.me/propisi/385768/download
+[deferral]: https://www.sluzbenilist.me/propisi/395547/download
+[disability-agency]: https://www.zzzcg.me/programi/zaposljavanje-lica-sa-invaliditetom/
+[irms]: https://www.gov.me/clanak/vazno-obavjestenje-u-vezi-sa-pocetkom-primjene-novog-integrisanog-it-sistema-poreske-uprave-irms
 
 ## Disclaimer
 

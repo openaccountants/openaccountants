@@ -1,10 +1,10 @@
 ---
 name: montenegro-social-contributions
-description: Use this skill whenever asked about Montenegro social security contributions and payroll deductions for employees, self-employed individuals (entrepreneurs), or employers. Trigger on phrases like "Montenegro social contributions", "PIO contribution", "pension and disability insurance Montenegro", "how much salary tax in Montenegro", "Montenegrin payroll", "Europe Now reform", "Evropa sad", "IOPPD return", "net to gross Montenegro", "employer cost Montenegro", "Montenegro minimum wage", "prirez surtax", or any question about Montenegrin salary taxes and contributions. Also trigger when classifying bank statement transactions that relate to Poreska uprava / Uprava prihoda i carina debits, salary payments, or social contribution remittances from Montenegrin banks (CKB, NLB, Hipotekarna, Lovćen, Erste, Prva banka). Also trigger when computing personal income tax (porez na dohodak) on salary under the post-October-2024 "Europe Now 2.0" schedule, or when reconciling the IOPPD monthly return. This skill covers the post-reform employee PIO (10%), unemployment (0.5% + 0.5%), abolished health contribution (0%), Labour Fund (0.2%), the 0/9/15% salary PIT bands, the EUR 700 exemption, the municipal surtax, minimum-wage floors, the IOPPD filing cycle, bank statement classification patterns, and edge cases. ALWAYS read this skill before touching any Montenegrin social-contribution or salary-tax work.
-version: 0.1
+description: "Prepare Montenegro 2026 social-contribution workpapers for employees, actual-income entrepreneurs, supplementary entrepreneurs, qualifying contract recipients and registered farmers. Determine insured status, gross or statutory base, pension/unemployment allocation, additional service contributions, exemptions, timing and annual refund routing. Includes six executable controls. Use for doprinosi, PIO, dopunska preduzetnička djelatnost, contribution floors, zimnica and annual pension ceilings. Adds the promulgated annual PIO refund procedure and Form 1 mapping. Current cap instrument, collective-agreement floors, special populations, actual submission/IRMS, international coordination and independent review remain open. Source-cited preparation draft; payroll income tax and municipal surtax require separate reconciliation."
+version: 0.4
 jurisdiction: ME
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -12,550 +12,268 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+sources:
+  - url: "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0"
+    title: "Ministry contribution-law consolidation through 160/25"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0"
+    title: "Enacted 160/25 contribution amendment, applying January 2026"
+    as_of: "2026-10-24"
+  - url: "https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0"
+    title: "Ministry payroll calculation instruction through 103/24"
+    as_of: "2026-10-24"
+  - url: "https://www.sluzbenilist.me/propisi/362476/download"
+    title: "107/23 annual pension-contribution refund rule and actual Form 1"
+    as_of: "2026-10-24"
+  - url: "https://www.monstat.org/cg/novosti.php?id=4638"
+    title: "MONSTAT December and full-year 2025 earnings release"
+    as_of: "2026-10-24"
 ---
 
-# Montenegro Social Security Contributions & Salary Tax
+# Montenegro social-contribution preparation v0.4
 
-## Montenegro Social Security Contributions & Salary Tax Skill v0.1
+## Who this applies to
 
-> **Tier 2 — research-verified, NOT accountant-verified.** Figures are drawn from PwC Worldwide Tax Summaries (last reviewed 27 March 2026) and corroborating law-firm commentary (BDK Advokati, CEE Legal Matters), **not** directly from the Montenegrin Official Gazette or a downloadable Poreska uprava rate schedule. A warranted Montenegrin accountant must confirm every figure against the current Law on Mandatory Social Insurance Contributions and the latest minimum-wage decree before this skill is used for filing. See Section 11 for known research gaps.
+Build a contribution workpaper after classifying each person's insurance status and income. Employees, principal entrepreneurs, employed persons with supplementary business, directors, contract recipients and farmers have distinct provisions. A second payment does not automatically take the employee treatment or escape contributions because its recipient already has employment. [Articles 4–9, 11, 15, 18][law]
 
-## Section 1 — Quick reference
+This source-cited draft replaces the retained 2025 secondary-source summary preserved at Git checkpoint `4692a57a`. The current Ministry consolidation through 160/25 and actual amendment were read. Amendment Article 8 applies the new provisions from 1 January 2026. No named accountant review, actual registration, accepted return, annual cap instrument or collective-agreement floor has been obtained. All seven country domains remain partial. [Law][law]; [amendment][amend]
 
-**Quick reference table**
+The September government package also contains a **proposal**, not an enacted instrument verified here, to set Articles 15/16/18 insurance rates to zero. Its Article 5 specifies application from 1 January 2027. The scanned one-page proposal was visually read; neither it nor its government approval is evidence that zero rates apply to 2026 pay. Enacted status, final text and related Labour Fund changes require separate future-period verification. [Proposal Articles 1–5][proposal]
 
-| Field | Value |
+## Rates, bases and allocation
+
+| Population/item | Contribution treatment | Source |
+| --- | --- | --- |
+| Ordinary insured employee | Employee PIO 10%; employer PIO 0%; employee unemployment 0.5%; employer unemployment 0.5% | Articles 15(1), 18(1) |
+| Employee Labour Fund charge | Employer 0.2% on gross personal earnings under the payroll instruction; separate from the two insurance contributions listed in the law | Instruction Article 5; law Article 2 |
+| Principal entrepreneur | PIO 10% and unemployment 1%, on the relevant statutory bases | Articles 5(1)(12), 7(1)(9), 9(7), 11(5), 15(2), 18(2) |
+| Supplementary entrepreneur, employed person | PIO 10%, on Article 9(11) base; do not automatically add the principal-entrepreneur unemployment charge | Articles 4(11a), 5(1)(16), 7, 9(11), 15(2) |
+| Qualifying contract recipient not insured on another basis | PIO 10% on taxable independent-activity income, not automatically gross cash | Articles 5(1)(13), 9(8), 15(2) |
+| Additional credited service | Employer/entrepreneur additional PIO: 6%, 9%, 12%, 18%, 28% for the statutory 12-to-14/15/16/18/24 month categories | Articles 8, 16 |
+| Registered qualifying farmer | Article 9 general base 20% of prior-year average gross monthly pay; Article 9a own mandatory base 12%, difference funded from budget | Articles 9(10), 9a, 15(2) |
+
+Sources: [law][law]; [instruction][instruction]. Article 2 lists PIO and unemployment; the current text deletes the old health contribution provisions. That does not establish entitlement to health benefits or an exemption from other employment levies. The ordinary 10.5% employee/0.7% employer sum excludes additional service, special levies, income tax and municipal surtax; it is not a universal employer-cost rate. [Articles 2, 6, 10, 15–18][law]; [instruction Articles 4–6][instruction]
+
+## Establish the base before multiplying
+
+Employee gross earnings encompass salary for work/time, increases, salary compensation and specified other taxable remuneration, including direct work/performance-related payments. Record cash, noncash, reimbursement, arrears and compensation separately; a bank label is insufficient to decide the base. Article 18a has express exclusions and exceptions. [Articles 3a, 9(1), 18a][law]
+
+The lowest monthly contribution base is the **gross basic salary prescribed by the general collective agreement for the relevant qualification category**, under Article 4(21). Article 9(1) applies that minimum to the specified employees. Do not replace it with an assumed net minimum wage gross-up. Obtain the operative agreement, category, working/insurance period and any current amendments before certifying a low-pay or part-period calculation. Labour-law minimum salary compliance is a separate check; no current numerical minimum is certified here. [Articles 4(21), 9(1), 11][law]
+
+For principal entrepreneurs paying tax on actual income, Article 9(7) uses realised/estimated annual turnover: through EUR 9,000, 60% of prior-year average monthly gross pay; over 9,000 through 15,000, 100%; over 15,000, 150%. It permits a higher elected base. Article 11(5) supplies the corresponding ordinary unemployment base. Annual lump-sum taxpayers instead follow their legally determined taxable income. Do not confuse turnover, profit and the monthly contribution base. [Articles 4(23), 9(7), 11(5)][law]
+
+Article 9(11), added for 2026 supplementary entrepreneurs, uses the same turnover-linked 60/100/150% monthly base structure with higher-base election. Existing employment is part of that status, not an automatic exemption from its PIO. Article 7's principal-entrepreneur category must not be silently extended to the separately defined supplementary status. Mixed-status cases need documented registration/classification. [Articles 4(11a), 5(1)(12) and (16), 7, 9(11), 15(2)][law]; [amendment Articles 1–4][amend]
+
+For 2026, MONSTAT's full-year 2025 average gross monthly pay is EUR 1,206. The December-only EUR 1,220 and annual average net EUR 1,012 are different populations. Thus the statutory percentages yield 723.60 / 1,206 / 1,809 for the three turnover bands, before a valid higher election. Verify the relevant year and period each time. [Article 4(23)][law]; [MONSTAT release, 30 January 2026][stats]
+
+Directors use Article 9(2) remuneration; qualifying contracts use Article 9(8) taxable income. Foreign workers, posted persons, citizens abroad, religious communities and compensation recipients have distinct status/base/payer rules. Article 11's reproduced numbering contains cross-reference tensions between categories and bases; do not resolve exceptional foreign/director cases by copying a mismatched row. Actual insurance legislation, agreement and authority interpretation remain necessary for those cases. [Articles 5, 7, 9, 11–13, 15, 21][law]
+
+## Exclusions, suspensions and date gates
+
+Article 18a addresses listed receipts and noncash benefits. Noncash remuneration replacing unpaid salary is an express exception to the noncash exclusion. Taxability and contribution liability are separate conclusions; an exclusion from this law is not proof of income-tax exemption. Retain the exact type, purpose, valuation, legal basis and supporting documents. [Article 18a][law]
+
+From January 2026 the zimnica exclusion refers to **70% of previous-year average monthly gross pay**, replacing the former minimum-wage reference. For 2026 the resulting limit is EUR 844.20. Apply that only to a genuinely qualifying zimnica payment, with prior payments and applicable administration checked; do not relabel ordinary salary or infer exemption for every listed receipt up to that amount. [Article 18a(2)][law]; [amendment Articles 5, 8][amend]; [statistics][stats]
+
+Article 18d grants the stated contribution relief to a person with acquired digital-nomad status receiving the described employment/independent-activity income from an employer not registered in Montenegro. Retain immigration status, payer and income evidence; remote work alone is insufficient. Full status procedure and interaction with other coverage/taxes remain open. Article 18c is expired, with Article 31a's historical 2023 limit; do not use it as a new-hire exemption in 2026. [Articles 18c–18d, 31a][law]; [amendment Article 6][amend]
+
+Approved employment suspension and legally registered temporary cessation of principal independent activity follow Articles 19–20. The latter permits a request to continue contributions within five working days after temporary deregistration. Informal inactivity or no revenue is not documented cessation. Dispute/court-settlement arrears have Article 29b's rule referring to the rate when payment should have occurred; do not apply the current rate automatically to every historical award. [Articles 19–20, 29b][law]
+
+## Annual ceiling and refund are a separate workpaper
+
+Article 14(1) requires PIO calculation/payment across the different income bases. The annual maximum is fixed by the Ministry's yearly instrument; Article 22 provides a post-year refund application and decision. Do not use the old Guide's EUR 68,765 from a prior year, divide an annual amount into an assumed monthly cap, stop unemployment at a PIO maximum or promise an automatic payroll refund. [Articles 14, 22–24][law]
+
+The operative **2026 maximum has not been retrieved**. The Gazette ceiling record found is explicitly for 2025; do not use it for 2026. Article 22 requires the insured person's post-year application by the end of the following calendar year, with an authority decision. Thus a 2026 claim is a 2027 application; eligibility/amount still require the correct annual maximum and actual paid contributions. No numeric 2026 capped/refund example is certified here. [Articles 14, 22–24][law]; [2025 ceiling record, discovery only][cap2025]
+
+### Annual PIO refund procedure and actual Form 1
+
+The actual promulgated 107/23 Gazette text and attached **Form 1** were read, including visual inspection of the form. It replaces the 42/12 refund rule. Use this PIO-specific process, not an old general-social-insurance ZPDO template still appearing in official search results. The Ministry reproduction names the form but omits it; the actual Gazette PDF contains both the rule and form. [Refund rule Articles 1–6 and Form 1][refund]
+
+Prepare a person/year schedule of every insurance basis, payer, actual payment, reported contribution base/rate, cumulative base and supported annual maximum. Reconcile to payer reports and tax-authority records. The rule bases the post-year refund on paid-contribution data delivered to the tax authority, not an unpaid accrual or a new estimate. For several insurance bases, Article 4 allocates the refund to the basis whose contributions were paid after the annual maximum was reached. Preserve the chronology rather than allocating a refund pro rata across employers or choosing the highest rate automatically. Historical different rates need their actual period/payment rules. [Refund Articles 2, 4][refund]; [law Articles 14, 22][law]
+
+| Application routing | Competent tax-office location under Article 3 |
 | --- | --- |
-| Country | Montenegro (Crna Gora) |
-| Primary legislation | Law on Mandatory Social Insurance Contributions (*Zakon o doprinosima za obavezno socijalno osiguranje*), as amended by "Europe Now" (2022) and "Europe Now 2.0" (effective ~1 Oct 2024) [PwC; BDK Advokati] |
-| Supporting legislation | Personal Income Tax Law (*Zakon o porezu na dohodak fizičkih lica*); Corporate Profit Tax Law; VAT Law [PwC] |
-| Tax authority | Poreska uprava Crne Gore / Uprava prihoda i carina Crne Gore (Tax Administration / Revenue and Customs Administration), Ministry of Finance [gov.me/en/taxadministration] |
-| E-filing portal | ePrijava / Taxis — https://eprijava.tax.gov.me [gov.me] |
-| Currency | EUR (Montenegro uses the euro unilaterally) [PwC] |
-| Employee PIO (pension/disability) | 10% of gross salary [PwC] |
-| Employee unemployment | 0.5% of gross salary [PwC] |
-| Employee health | 0% — abolished [CEE Legal Matters; Europe Now reforms] |
-| **Combined employee contribution** | **10.5% of gross salary** (10% PIO + 0.5% unemployment) [TaxRavens] |
-| Employer PIO | 0% — eliminated by Europe Now 2.0 (previously 5.5%) [PwC; BDK Advokati] |
-| Employer unemployment | 0.5% of gross salary [PwC] |
-| Employer Labour Fund (Fond rada) | 0.2% of gross salary [TaxRavens — verify, see §11] |
-| **Combined employer contribution** | **~0.7% of gross salary** (0.5% unemployment + 0.2% Labour Fund) [TaxRavens] |
-| Salary PIT | 0% to EUR 700; 9% on EUR 700.01–1,000; 15% above EUR 1,000 (monthly gross) [PwC] |
-| Municipal surtax (prirez) | 13% of the PIT amount in most municipalities; 15% in Podgorica and Cetinje [PwC] |
-| PIO annual ceiling | EUR 68,765/year (PwC, stated "for 2024") — **lowest-confidence figure, see §11** [PwC] |
-| Net minimum wage (standard) | EUR 670/month (roles up to secondary education) [countryeconomy.com] |
-| Net minimum wage (degree roles) | EUR 800/month (university-degree roles; dual structure from Sept 2024) [countryeconomy.com] |
-| Monthly payroll return | IOPPD — filed electronically to Poreska uprava by the 15th of the following month, paid simultaneously [Mellow] |
-| Validated by | Pending — requires sign-off by a warranted Montenegrin accountant |
-| Validation date | Pending |
-
-**Read this whole section before computing or classifying anything.**
-
-**Has personal income tax?** Yes. Montenegro levies a progressive personal income tax on salary on top of social contributions. This skill computes both the contributions and the salary PIT, because in Montenegrin payroll they are withheld and remitted together on a single IOPPD return.
-
-## Section 2 — Rate and contribution tables
-
-### 2.1 Social contribution rates (post-"Europe Now 2.0", effective ~1 Oct 2024)
-
-**Social contribution rates table**  _(PwC / CEE Legal Matters / TaxRavens)_
-
-| Contribution | Employee | Employer | Total | Source |
-| --- | --- | --- | --- | --- |
-| Pension & disability (PIO) | 10.0% | 0.0% | 10.0% | PwC |
-| Unemployment insurance | 0.5% | 0.5% | 1.0% | PwC |
-| Health insurance | 0.0% | 0.0% | 0.0% (abolished) | CEE Legal Matters |
-| Labour Fund (Fond rada) | 0.0% | 0.2% | 0.2% | TaxRavens — verify, §11 |
-| **Total contributions** | **10.5%** | **0.7%** | **11.2%** | TaxRavens |
-
-- **All rates basis** — All rates are a percentage of gross salary, subject to the minimum-wage floor (§2.4) and the PIO annual ceiling (§2.5).  _(§2.4, §2.5)_
-
-**Arithmetic check.** Employee column: 10.0 + 0.5 + 0.0 + 0.0 = **10.5%**. Employer column: 0.0 + 0.5 + 0.0 + 0.2 = **0.7%**. Total column: 10.0 + 1.0 + 0.0 + 0.2 = **11.2%**, which equals 10.5% + 0.7%. Consistent.
-
-> These supersede the pre-reform burden (employee ~24%, employer ~10%) that many EOR/payroll websites still publish. **Treat any pre-October-2024 rate table as STALE.** [TaxRavens; §11 caveat 6]
-
-### 2.2 Personal income tax on salary (monthly gross) — 0 / 9 / 15
-
-**PIT bands table**  _(PwC)_
-
-| Band (monthly gross) | Rate | Source |
-| --- | --- | --- |
-| EUR 0 – 700.00 | 0% (fully exempt) | PwC |
-| EUR 700.01 – 1,000.00 | 9% on the portion in this band | PwC |
-| Above EUR 1,000.00 | 15% on the portion above EUR 1,000 | PwC |
-
-**Marginal-tax build-up table**
-
-| Gross monthly | PIT computed | Running PIT |
-| --- | --- | --- |
-| 700.00 | 0% × 700 | EUR 0.00 |
-| 1,000.00 | + 9% × 300 (700.01→1,000) | EUR 27.00 |
-| above 1,000 | + 15% × (gross − 1,000) | EUR 27.00 + 0.15 × (gross − 1,000) |
-
-**Marginal-tax build-up (this skill uses the progressive/marginal reading — see §11 caveat 3):**
-
-So the maximum PIT in the 9% band is **9% × 300 = EUR 27.00**, and PIT on any gross above EUR 1,000 is **EUR 27.00 + 15% × (gross − 1,000)**.
-
-### 2.3 Municipal surtax (prirez)
-
-- **Surtax basis** — The surtax is charged on the assessed PIT amount, not on income.  _(PwC)_
-
-**Municipal surtax table**  _(PwC)_
-
-| Municipality | Surtax rate (on PIT amount) | Source |
-| --- | --- | --- |
-| Podgorica, Cetinje | 15% | PwC |
-| All other municipalities | 13% | PwC |
-
-### 2.4 Minimum-wage floors (net)
-
-**Minimum-wage floors table**  _(countryeconomy.com)_
-
-| Role category | Net minimum/month | Source |
-| --- | --- | --- |
-| Up to secondary-school (high-school) diploma | EUR 670 | countryeconomy.com |
-| University-degree-required roles | EUR 800 | countryeconomy.com |
-
-- **Contribution base floor** — The effective contribution base cannot fall below the applicable net minimum wage grossed up. **The exact gross-up factor is a RESEARCH GAP — reviewer to confirm against the SSC Law.**  _(PwC)_
-
-### 2.5 PIO annual ceiling
-
-- **PIO annual ceiling** — EUR 68,765 (stated for 2024) EUR/year  _(PwC)_
-
-**This is the single lowest-confidence number in the skill — see §11 caveat 1. One secondary source (TaxRavens) cites a materially lower figure (~EUR 54,533/year), which is unreconciled.**
-
-### 2.6 Reference — corporate profit tax (CIT) and VAT (context only)
-
-**CIT and VAT reference table**  _(PwC)_
-
-| Tax | Rate | Source |
-| --- | --- | --- |
-| CIT — profit up to EUR 100,000 | 9% | PwC |
-| CIT — profit EUR 100,000.01 – 1,500,000 | EUR 9,000 + 12% on profit above EUR 100,000 | PwC |
-| CIT — profit above EUR 1,500,000 | EUR 177,000 + 15% on profit above EUR 1,500,000 | PwC |
-| VAT standard | 21% | PwC |
-| VAT reduced | 7% (bread, milk/dairy, medicines, schoolbooks) | PwC |
-| VAT — exports | 0% | PwC |
-
-These are not part of payroll but are listed so an agent does not misattribute a CIT/VAT line as a contribution.
-
-**CIT cumulative-tax check.** At EUR 100,000 profit: 9% × 100,000 = EUR 9,000 ✓ (matches the base of the second band). At EUR 1,500,000: EUR 9,000 + 12% × (1,500,000 − 100,000) = 9,000 + 12% × 1,400,000 = 9,000 + 168,000 = **EUR 177,000** ✓ (matches the base of the third band). Consistent. [A 15% VAT figure also appears on PwC for certain hospitality/accommodation supplies — see §11 caveat 4; treat 7% as the standard reduced rate.]
-
-## Section 3 — Conservative defaults
-
-**Conservative defaults table**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown exact employee/employer split | Employee = 10.5% of gross (10% PIO + 0.5% unemployment); employer = ~0.7% (0.5% unemployment + 0.2% Labour Fund) [TaxRavens] |
-| Labour Fund cannot be confirmed for the period | Use employer 0.5% (unemployment only); flag that Labour Fund 0.2% may also apply [§11] |
-| Municipality not stated | Apply 15% surtax (Podgorica/Cetinje high case) as the conservative figure [PwC] |
-| Gross salary unknown but minimum-wage role | Use the grossed-up applicable net minimum (EUR 670 standard / EUR 800 degree role) as the floor [countryeconomy.com] |
-| 15% PIT band mechanics unclear | Use the marginal reading (15% only on the portion above EUR 1,000) but flag for reviewer [§11 caveat 3] |
-| PIO ceiling relevance unclear | Apply the EUR 68,765 cap but mark it [RESEARCH GAP — reviewer to confirm] [§11 caveat 1] |
-| Salary in non-EUR currency | STOP — Montenegro is EUR-only; convert and confirm rate before computing |
-
-## Section 4 — Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Required inputs** — **Minimum viable** — monthly gross salary in EUR and worker type (employee vs entrepreneur/self-employed). Without gross salary, STOP; do not compute. **Recommended** — municipality of the employer (for surtax 13% vs 15%), role qualification level (for the minimum-wage floor), and whether annual income approaches the PIO ceiling. **Ideal** — the employer's IOPPD return for the month, the employment contract (gross vs net agreed), and a bank statement showing the salary debit and the contribution/tax remittances.
-
-### Refusal catalogue
-
-- **R-ME-SSC-1** — Trigger: the input cites employee ~24% / employer ~10%, or a residual health-insurance contribution. Message: "Those are pre-October-2024 rates. Europe Now 2.0 reduced the employee burden to 10.5% (10% PIO + 0.5% unemployment), eliminated the employer PIO contribution, and abolished health contributions. Recompute using the post-reform schedule and confirm the period."  _(§11 caveat 6)_
-- **R-ME-SSC-2** — Trigger: annual income is at or above ~EUR 55,000 and the result depends on the PIO cap. Message: "The PIO annual ceiling is the lowest-confidence figure in this skill — PwC states EUR 68,765 'for 2024' while another source cites ~EUR 54,533. Do not finalise a high-earner computation that turns on the cap without a warranted accountant confirming the current ceiling."  _(§11 caveat 1)_
-- **R-ME-SSC-3** — Trigger: self-employed worker whose contribution base or whether the activity is the primary income source is unclear. Message: "Self-employed contributions depend on the base used and whether the activity is the worker's primary income source. Confirm the base and primary-source status per case before computing."  _(§11 caveat 7)_
-- **R-ME-SSC-4** — Trigger: unpaid IOPPD or contribution arrears. Message: "Specific Montenegrin penalty and default-interest amounts were not confirmed from an authoritative source in this skill's research. Default interest accrues and fines apply, but do not quantify arrears — escalate to a warranted accountant."  _(§11 caveat 5)_
-- **R-ME-SSC-5** — Trigger: the question is actually about VAT or corporate profit tax. Message: "That is a VAT (21%/7%) or CIT (9/12/15%) matter, not a payroll contribution. The §2.6 reference is context only; load the relevant Montenegro VAT or CIT skill before advising."
-
-## Section 5 — Payment / transaction pattern library
-
-This is the deterministic pre-classifier for bank statement transactions related to Montenegrin payroll, social contributions, and salary tax. When a transaction matches a pattern below, apply the treatment directly. Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement.
-
-**Key principle.** Employee contributions and PIT are statutory deductions withheld from the gross — they are not separate business supplies and EXCLUDE from any VAT return. Employer contributions are a payroll cost.
-
-### 5.1 Contribution & salary-tax remittances to the tax authority
-
-**Contribution & salary-tax remittance patterns**
-
-| Pattern (Montenegrin / English) | Treatment | Notes |
-| --- | --- | --- |
-| PORESKA UPRAVA | EXCLUDE — tax/contribution remittance | Tax Administration |
-| UPRAVA PRIHODA I CARINA, UPC | EXCLUDE — tax/contribution remittance | Revenue & Customs Administration |
-| DOPRINOSI, DOPRINOS | EXCLUDE — social contribution remittance | "contributions" |
-| PIO, PENZIJSKO, PENZIJSKO I INVALIDSKO | EXCLUDE — pension/disability contribution | PIO |
-| ZA NEZAPOSLENOST, OSIGURANJE OD NEZAPOSLENOSTI | EXCLUDE — unemployment insurance |  |
-| FOND RADA | EXCLUDE — Labour Fund contribution | Employer 0.2% [verify, §11] |
-| POREZ NA DOHODAK, POREZ NA ZARADE | EXCLUDE — salary PIT remittance | Personal income tax on salary |
-| PRIREZ | EXCLUDE — municipal surtax remittance | On PIT amount |
-| IOPPD | EXCLUDE — combined PIT+contribution remittance | Monthly return payment |
-
-### 5.2 Contribution remittances on specific Montenegrin banks
-
-**Bank remittance patterns**
-
-| Bank | Typical reference | Treatment |
-| --- | --- | --- |
-| CKB (Crnogorska komercijalna banka) | "PORESKA UPRAVA" / "DOPRINOSI" | EXCLUDE — remittance |
-| NLB Banka | "UPRAVA PRIHODA" / "POREZ NA ZARADE" | EXCLUDE — remittance |
-| Hipotekarna banka | "DOPRINOSI" / "PIO" | EXCLUDE — remittance |
-| Lovćen banka | "PORESKA UPRAVA" | EXCLUDE — remittance |
-| Erste Bank (Podgorica) | "POREZ I DOPRINOSI" | EXCLUDE — remittance |
-| Prva banka Crne Gore | "DOPRINOSI / POREZ" | EXCLUDE — remittance |
-
-### 5.3 Salary / payroll lines (not a contribution remittance)
-
-**Salary/payroll line patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ZARADA, NETO ZARADA, PLATA (outgoing) | EXCLUDE — net salary payment to employee | The contributions/PIT are remitted separately to Poreska uprava |
-| ZARADA, PLATA (incoming) | EXCLUDE — employment income received | Not a contribution |
-| AKONTACIJA ZARADE | EXCLUDE — salary advance | Not a contribution |
-
-### 5.4 Other tax lines (do NOT confuse with payroll contributions)
-
-**Other tax line patterns**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PDV, POREZ NA DODATU VRIJEDNOST | EXCLUDE here — VAT, not a contribution | Load the VAT skill |
-| POREZ NA DOBIT | EXCLUDE here — corporate profit tax | Not payroll |
-| PENZIJA, PENZIJSKI ČEK (incoming) | EXCLUDE — pension benefit received | Not a contribution paid |
-
-## Section 6 — Worked examples
-
-Six examples for a hypothetical Montenegrin employer running payroll, with realistic bank-statement lines in EUR. All PIT uses the marginal reading (§2.2) and the named municipality's surtax (§2.3). All amounts are recomputed to the cent.
-
-### Example 1 — Salary at the EUR 700 exemption ceiling (Podgorica)
-
-**Input line:**
-`05.02.2025 ; ZARADA — M. POPOVIĆ JAN 2025 ; DEBIT ; NETO ZARADA ; -626.50 ; EUR`
-
-**Reasoning (gross EUR 700.00):**
-- PIT: 0% × 700 = **EUR 0.00** (entirely within the exempt band).
-- Surtax: 15% × 0 = **EUR 0.00**.
-- Employee PIO: 10% × 700 = EUR 70.00.
-- Employee unemployment: 0.5% × 700 = EUR 3.50.
-- Total employee deductions = 0 + 0 + 70.00 + 3.50 = **EUR 73.50**.
-- Net pay = 700.00 − 73.50 = **EUR 626.50** ✓ (matches the statement line).
-- Employer contributions: 0.5% × 700 = EUR 3.50 + 0.2% × 700 = EUR 1.40 = EUR 4.90. Total employer cost = 700 + 4.90 = **EUR 704.90**.
-
-**Classification:** Net salary EXCLUDE from VAT; contributions + PIT remitted via IOPPD by 15 Feb 2025.
-
-### Example 2 — Salary at the EUR 1,000 band ceiling (Podgorica, 15% surtax)
-
-**Input line:**
-`05.03.2025 ; ZARADA — A. VUKOVIĆ FEB 2025 ; DEBIT ; NETO ZARADA ; -863.95 ; EUR`
-
-**Reasoning (gross EUR 1,000.00):**
-- PIT: 0% × 700 = 0; 9% × (1,000 − 700) = 9% × 300 = EUR 27.00; nothing above 1,000. PIT = **EUR 27.00**.
-- Surtax: 15% × 27.00 = **EUR 4.05**.
-- Employee PIO: 10% × 1,000 = EUR 100.00.
-- Employee unemployment: 0.5% × 1,000 = EUR 5.00.
-- Total employee deductions = 27.00 + 4.05 + 100.00 + 5.00 = **EUR 136.05**.
-- Net pay = 1,000.00 − 136.05 = **EUR 863.95** ✓.
-- Employer cost: 0.5% × 1,000 = 5.00 + 0.2% × 1,000 = 2.00 = EUR 7.00. Total = 1,000 + 7.00 = **EUR 1,007.00**.
-
-**Classification:** EXCLUDE from VAT; remit via IOPPD by 15 Mar 2025.
-
-### Example 3 — Mid-level salary (Podgorica, 15% surtax)
-
-**Input line:**
-`05.04.2025 ; ZARADA — J. NIKOLIĆ MAR 2025 ; DEBIT ; NETO ZARADA ; -1,586.45 ; EUR`
-
-**Reasoning (gross EUR 2,000.00):**
-- PIT: 0 + 9% × 300 + 15% × (2,000 − 1,000) = 27.00 + 150.00 = **EUR 177.00**.
-- Surtax: 15% × 177.00 = **EUR 26.55**.
-- Employee PIO: 10% × 2,000 = EUR 200.00.
-- Employee unemployment: 0.5% × 2,000 = EUR 10.00.
-- Total employee deductions = 177.00 + 26.55 + 200.00 + 10.00 = **EUR 413.55**.
-- Net pay = 2,000.00 − 413.55 = **EUR 1,586.45** ✓.
-- Employer cost: 0.5% × 2,000 = 10.00 + 0.2% × 2,000 = 4.00 = EUR 14.00. Total = 2,000 + 14.00 = **EUR 2,014.00**.
-
-**Classification:** EXCLUDE from VAT; remit via IOPPD by 15 Apr 2025.
-
-### Example 4 — Higher salary in a 13%-surtax municipality (Nikšić)
-
-**Input line:**
-`05.05.2025 ; ZARADA — S. ĐUROVIĆ APR 2025 ; DEBIT ; NETO ZARADA ; -2,678.24 ; EUR`
-
-**Reasoning (gross EUR 3,500.00, Nikšić → 13% surtax):**
-- PIT: 0 + 9% × 300 + 15% × (3,500 − 1,000) = 27.00 + 375.00 = **EUR 402.00**.
-- Surtax: 13% × 402.00 = **EUR 52.26**.
-- Employee PIO: 10% × 3,500 = EUR 350.00.
-- Employee unemployment: 0.5% × 3,500 = EUR 17.50.
-- Total employee deductions = 402.00 + 52.26 + 350.00 + 17.50 = **EUR 821.76**.
-- Net pay = 3,500.00 − 821.76 = **EUR 2,678.24** ✓.
-- Employer cost: 0.5% × 3,500 = 17.50 + 0.2% × 3,500 = 7.00 = EUR 24.50. Total = 3,500 + 24.50 = **EUR 3,524.50**.
-
-**Classification:** EXCLUDE from VAT; remit via IOPPD by 15 May 2025.
-
-### Example 5 — Contribution/tax remittance to the tax authority (not salary)
-
-**Input line:**
-`14.04.2025 ; PORESKA UPRAVA CRNE GORE ; DEBIT ; IOPPD POREZ I DOPRINOSI MAR 2025 ; -190.55 ; EUR`
-
-**Reasoning (for the Example 3 employee, gross EUR 2,000):**
-This is the employer remitting, in one IOPPD payment, the withheld employee PIT + surtax + employee contributions plus the employer contributions: PIT 177.00 + surtax 26.55 = 203.55 tax; employee contributions 210.00; employer contributions 14.00. The exact split between "porez" and "doprinosi" sub-lines depends on the bank narrative; the EUR 190.55 here is illustrative of one sub-component and must be reconciled to the full IOPPD. Matches "PORESKA UPRAVA" (pattern 5.1).
-
-**Classification:** EXCLUDE from VAT — statutory remittance. Reconcile against the filed IOPPD; flag if the bank line does not tie to the computed total.
-
-### Example 6 — Ambiguous tax-authority debit (could be VAT or arrears)
-
-**Input line:**
-`20.06.2025 ; UPRAVA PRIHODA I CARINA ; DEBIT ; UPLATA PO RJEŠENJU ; -4,100.00 ; EUR`
-
-**Reasoning:**
-Matches "UPRAVA PRIHODA I CARINA" (pattern 5.2) but the reference "uplata po rješenju" (payment per assessment/decision) is irregular and could be VAT, CIT, a payroll arrears assessment, or penalties/default interest. Cannot allocate without the underlying *rješenje* (assessment) document. Penalty and default-interest mechanics are a research gap (§11 caveat 5).
-
-**Classification:** EXCLUDE from VAT. Flag for reviewer — request the assessment to split principal contributions/tax (and identify whether it is payroll, VAT or CIT) from penalties/interest.
-
-## Section 7 — Tier 1 rules
-
-Apply exactly as written when the gross salary, worker type, and municipality are known and the figure does not turn on the PIO ceiling.
-
-### Rule 1 — Employee deduction formula
-
-- **Employee deduction formula** — employee_PIT     = PIT_marginal(gross)                      # 0 / 9% / 15% per §2.2 surtax           = surtax_rate × employee_PIT                # 13% or 15% per §2.3 employee_PIO     = 10%  × gross employee_unemp   = 0.5% × gross net_pay          = gross − employee_PIT − surtax − employee_PIO − employee_unemp Where PIT_marginal(gross) = 0 if gross ≤ 700; 9% × (gross − 700) if 700 < gross ≤ 1,000; 27.00 + 15% × (gross − 1,000) if gross > 1,000.  _(PwC)_
-
-### Rule 2 — Employer cost formula
-
-- **Employer cost formula** — employer_unemp     = 0.5% × gross employer_labourfund= 0.2% × gross      # verify per §11 total_employer_cost= gross + employer_unemp + employer_labourfund Employer PIO is 0% and employer health is 0% post-reform.  _(PwC; CEE Legal Matters)_
-
-### Rule 3 — Health insurance is abolished
-
-- **Health insurance abolished** — Neither employer nor employee pays a mandatory health contribution. Healthcare is budget-financed. Do not add any health line.  _(CEE Legal Matters)_
-
-### Rule 4 — First EUR 700 of monthly gross salary is exempt
-
-- **EUR 700 exemption** — PIT applies only above EUR 700/month.  _(PwC)_
-
-### Rule 5 — Surtax is on the PIT amount, not on income
-
-- **Surtax base** — surtax = surtax_rate × PIT, never surtax_rate × gross. 15% in Podgorica/Cetinje, 13% elsewhere.  _(PwC)_
-
-### Rule 6 — Contribution base floor is the minimum wage
-
-- **Minimum wage floor** — The effective contribution base cannot be below the applicable net minimum wage grossed up (EUR 670 standard / EUR 800 degree role). The exact gross-up is [RESEARCH GAP — reviewer to confirm].  _(countryeconomy.com; PwC)_
-
-### Rule 7 — PIO ceiling
-
-- **PIO ceiling application** — PIO is not levied on annual income above EUR 68,765 (PwC, "for 2024"). Above the cap, stop applying the 10% PIO. Flag the cap as low-confidence (§11 caveat 1).  _(PwC)_
-
-### Rule 8 — Monthly remittance via IOPPD
-
-- **IOPPD filing deadline** — The employer files the IOPPD (calculated and paid taxes and contributions on salaries) electronically to Poreska uprava via ePrijava/Taxis by the 15th of the month following the month the salary was paid; tax and contributions are remitted simultaneously with filing.  _(Mellow)_
-
-### Rule 9 — Entrepreneurial income PIT (annual)
-
-- **Entrepreneurial income PIT bands** — For self-employed/entrepreneurial income (not salary): 0% up to EUR 8,400; 9% on EUR 8,400.01–12,000; 15% above EUR 12,000 (annual). Self-employed pay both the employee and the (now 0%) employer portions on a base of at least the minimum wage.  _(PwC; TaxRavens)_
-
-### Rule 10 — Combined burden shorthand
-
-- **Combined burden shorthand** — Employee statutory deduction ≈ 10.5% of gross (contributions) plus PIT; employer cost ≈ 0.7% of gross.  _(TaxRavens)_
-
-## Section 8 — Tier 2 catalogue (reviewer judgement)
-
-When data is ambiguous or the result turns on a low-confidence figure, flag for reviewer.
-
-### T2-1 — High earner near or above the PIO ceiling
-
-**Trigger:** annual income ≈ EUR 55,000+. **Issue:** PwC's EUR 68,765 cap is a 2024 figure; TaxRavens cites ~EUR 54,533. The two are unreconciled and the 2025/2026 indexed cap is unconfirmed. **Action:** flag; do not finalise without the current SSC Law ceiling. [§11 caveat 1]
-
-### T2-2 — 15% PIT band mechanics
-
-**Trigger:** gross above EUR 1,000. **Issue:** sources differ on whether 15% applies to the whole gross or only the portion above EUR 1,000. This skill uses the marginal reading. **Action:** flag; confirm the exact mechanics against the PIT Law. [§11 caveat 3]
-
-### T2-3 — Labour Fund (Fond rada) applicability
-
-**Trigger:** any employer-cost computation. **Issue:** the 0.2% Labour Fund comes only from TaxRavens and is not itemised by PwC. **Action:** flag; if unconfirmed, present employer cost both with (0.7%) and without (0.5%) the Labour Fund. [§11 caveat 2]
-
-### T2-4 — Self-employed / freelancer base
-
-**Trigger:** self-employed worker, especially outbound contractors. **Issue:** the base and whether the activity is the primary income source drive the contribution. **Action:** flag; confirm base rules per case. [§11 caveat 7]
-
-### T2-5 — Stale pre-reform rates in source documents
-
-**Trigger:** prior workings or EOR quotes show ~24% employee / ~10% employer or a health contribution. **Issue:** these predate Europe Now 2.0 (Oct 2024). **Action:** recompute on the post-reform schedule; flag the discrepancy. [§11 caveat 6]
-
-### T2-6 — Minimum-wage floor and gross-up
-
-**Trigger:** low-paid or part-time worker near the EUR 670/800 floor. **Issue:** the gross-up factor that converts the net minimum to a contribution base is unconfirmed. **Action:** flag; apply the floor conservatively and confirm the gross-up. [Rule 6]
-
-## Section 9 — Excel working paper template
-
-MONTENEGRO PAYROLL — SALARY TAX & CONTRIBUTIONS WORKING PAPER
-Employer: [name]            Employee: [name]
-Month / Year: [____]        Municipality: [____]  (surtax 13% / 15%)
-Prepared: [date]
-
-INPUT DATA
-  Gross monthly salary (EUR):        [____]
-  Worker type:                       [Employee / Entrepreneur]
-  Role qualification:                [Up to secondary / University]
-  Applicable net minimum (floor):    [EUR 670 / EUR 800]
-  Annual income near PIO cap?        [YES/NO — if YES, FLAG, see §11]
-
-PERSONAL INCOME TAX (marginal, §2.2)
-  Band 0–700 @ 0%:                   EUR 0.00
-  Band 700.01–1,000 @ 9%:            EUR [9% × (min(gross,1000)−700)]
-  Above 1,000 @ 15%:                 EUR [15% × max(gross−1000,0)]
-  Total PIT:                         EUR [____]
-  Surtax @ [13%/15%] of PIT:         EUR [____]
-
-EMPLOYEE CONTRIBUTIONS
-  PIO 10% × gross:                   EUR [____]
-  Unemployment 0.5% × gross:         EUR [____]
-  Health 0% (abolished):             EUR 0.00
-  Total employee contributions:      EUR [____]   (= 10.5% × gross)
-
-NET PAY
-  Net = gross − PIT − surtax
-        − employee contributions:    EUR [____]
-
-EMPLOYER COST
-  Unemployment 0.5% × gross:         EUR [____]
-  Labour Fund 0.2% × gross [verify]: EUR [____]
-  PIO 0%, Health 0%:                 EUR 0.00
-  Total employer cost (gross + ~0.7%): EUR [____]
-
-IOPPD REMITTANCE
-  Total to Poreska uprava
-    (PIT + surtax + all contributions): EUR [____]
-  IOPPD filing/payment due:          15th of following month
-
-REVIEWER FLAGS
-  [List any Tier 2 / research-gap flags]
-
-## Section 10 — Bank statement & terminology reading guide
-
-### How payroll items appear on Montenegrin bank statements
-
-**Net salary (outgoing to employee):** "ZARADA", "NETO ZARADA", "PLATA", "AKONTACIJA ZARADE". Recurs monthly; net of all deductions.
-
-**Tax/contribution remittance (outgoing to authority):** "PORESKA UPRAVA", "UPRAVA PRIHODA I CARINA", "DOPRINOSI", "POREZ NA ZARADE", "PIO", "FOND RADA", "PRIREZ", "IOPPD". Typically a single combined IOPPD payment by the 15th of the following month.
-
-**Key Montenegrin terms:**
-
-**Key Montenegrin terms table**
-
-| Term | Meaning |
-| --- | --- |
-| Zarada / plata | Salary / wage |
-| Bruto / neto | Gross / net |
-| Doprinosi | Contributions |
-| PIO (penzijsko i invalidsko osiguranje) | Pension & disability insurance |
-| Osiguranje od nezaposlenosti | Unemployment insurance |
-| Zdravstveno osiguranje | Health insurance (abolished — 0%) |
-| Fond rada | Labour Fund |
-| Porez na dohodak / porez na zarade | Personal income tax / salary tax |
-| Prirez | Municipal surtax |
-| IOPPD | Monthly return of calculated & paid taxes and contributions |
-| Poreska uprava | Tax Administration |
-| Rješenje | Assessment / decision |
-
-1. Net salary debits go to an individual; remittances go to "Poreska uprava" / "Uprava prihoda i carina".
-2. The combined IOPPD remittance should reconcile to (employee PIT + surtax + employee contributions + employer contributions) for all employees that month.
-3. Do not classify "PDV" (VAT) or "porez na dobit" (CIT) lines as payroll contributions.
-4. Inbound "penzija" credits are pension benefits received, not contributions paid.
-
-## Section 11 — Research gaps & caveats (read before relying on any figure)
-
-**PRIMARY SOURCE LIMITATION.** Figures come from PwC Worldwide Tax Summaries (reviewed 27 March 2026) and law-firm commentary (BDK Advokati, CEE Legal Matters), not from the Montenegrin Official Gazette or a parsed Poreska uprava rate schedule. The gov.me pages and the ePrijava/Taxis portal were identified but not parsed for raw figures. A warranted Montenegrin accountant must confirm everything below before filing.
-
-**PIO annual ceiling [LOWEST CONFIDENCE].** EUR 68,765 is explicitly a "2024" PwC figure; the 2025/2026 indexed cap is unconfirmed, and TaxRavens cites a materially lower ~EUR 54,533. [RESEARCH GAP — reviewer to confirm the current ceiling.]
-
-**Labour Fund 0.2%.** Sourced only from TaxRavens; not itemised by PwC. [RESEARCH GAP — reviewer to confirm it still applies and at what rate.]
-
-**15% PIT band mechanics.** Sources differ on full-gross vs marginal application above EUR 1,000. This skill uses the marginal reading. [RESEARCH GAP — reviewer to confirm.]
-
-**VAT reduced rate.** PwC references both 7% and a 15% rate for certain hospitality/accommodation supplies. Standard reduced rate treated here as 7%. [RESEARCH GAP — reviewer to confirm the 15% reclassification.]
-
-**Penalties & VAT registration threshold.** Specific penalty/default-interest amounts were not confirmed; the EUR 30,000 VAT registration threshold (cited by PwC) is also unconfirmed against a primary source. [RESEARCH GAP — reviewer to confirm.]
-
-**Stale pre-reform rates.** Many EOR/payroll sites still publish employee ~24% / employer ~10% and a health contribution. These are STALE; the October-2024 Europe Now 2.0 figures in this skill supersede them.
-
-**Self-employed/freelancer contributions.** Depend on the base and on whether the activity is the worker's primary income source. [RESEARCH GAP — confirm per case.]
-
-**Minimum-wage gross-up.** The factor converting the EUR 670/800 net minimum into a contribution base is unconfirmed. [RESEARCH GAP — reviewer to confirm.]
-
-## Section 12 — Reference material & test suite
-
-### 12.1 Reference — net-pay table (marginal PIT, Podgorica 15% surtax, employee 10.5%)
-
-**Net-pay table (marginal PIT, Podgorica 15% surtax, employee 10.5%)**  _(§2.1/§2.2 [PwC])_
-
-| Gross/month | PIT | Surtax (15%) | Employee contrib (10.5%) | Net pay | Source basis |
-| --- | --- | --- | --- | --- | --- |
-| EUR 700.00 | 0.00 | 0.00 | 73.50 | 626.50 | §2.1/§2.2 [PwC] |
-| EUR 1,000.00 | 27.00 | 4.05 | 105.00 | 863.95 | §2.1/§2.2 [PwC] |
-| EUR 2,000.00 | 177.00 | 26.55 | 210.00 | 1,586.45 | §2.1/§2.2 [PwC] |
-| EUR 3,500.00 | 402.00 | 60.30 | 367.50 | 2,670.20 | §2.1/§2.2 [PwC] |
-
-*(Row 4 here uses Podgorica 15% surtax = 15% × 402.00 = 60.30, so net = 3,500 − 402.00 − 60.30 − 367.50 = 2,670.20. Example 4 in §6 used Nikšić 13% surtax, giving a different surtax and net — both are correct for their stated municipality.)*
-
-**Check, row 3:** employee contrib = 10.5% × 2,000 = 210.00 ✓; net = 2,000 − 177.00 − 26.55 − 210.00 = 1,586.45 ✓.
-
-### 12.2 Forms and deadlines
-
-**Forms and deadlines**  _(Mellow / PwC)_
-
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| IOPPD | Monthly combined return of PIT + employee/employer contributions on salaries; e-filed via ePrijava/Taxis, paid simultaneously | 15th of the month after salary payment | Mellow |
-| Annual PIT return (GPP) | Annual reconciliation for multiple-source / self-employment income | End of April following the tax year (verify exact date with Poreska uprava) | PwC |
-| Corporate profit tax return | Annual CIT return | End of March following the tax year | PwC |
-
-### 12.3 Thresholds
-
-**Thresholds**  _(PwC)_
-
-| Threshold | Value | Source |
-| --- | --- | --- |
-| Salary PIT exemption | First EUR 700/month of gross is exempt | PwC |
-| Entrepreneurial income exemption | First EUR 8,400/year exempt | PwC |
-| PIO annual ceiling | EUR 68,765/year (PwC "2024" — low confidence, §11) | PwC |
-| VAT registration threshold | EUR 30,000 taxable turnover in preceding 12 months (verify) | PwC |
-
-### 12.4 Penalties
-
-**Penalties**  _(PwC)_
-
-| Item | Detail | Source |
-| --- | --- | --- |
-| Late filing / late payment | Default interest on overdue taxes & contributions; fines for failure to file IOPPD or to withhold/remit. **Specific amounts not confirmed — [RESEARCH GAP, §11 caveat 5].** | PwC |
-
-### 12.5 Test suite
-
-**Test 1 — Gross EUR 700, Podgorica.** PIT 0.00; surtax 0.00; employee contrib 73.50; net = **EUR 626.50**. (§6 Ex 1)
-
-**Test 2 — Gross EUR 1,000, Podgorica.** PIT = 9% × 300 = 27.00; surtax = 15% × 27 = 4.05; employee contrib = 105.00; net = 1,000 − 136.05 = **EUR 863.95**. (§6 Ex 2)
-
-**Test 3 — Gross EUR 2,000, Podgorica.** PIT = 27 + 15% × 1,000 = 177.00; surtax = 26.55; employee contrib = 210.00; net = **EUR 1,586.45**. (§6 Ex 3)
-
-**Test 4 — Gross EUR 3,500, Nikšić (13% surtax).** PIT = 27 + 15% × 2,500 = 402.00; surtax = 13% × 402 = 52.26; employee contrib = 367.50; net = **EUR 2,678.24**. (§6 Ex 4)
-
-**Test 5 — Employer cost on gross EUR 2,000.** unemployment 0.5% × 2,000 = 10.00; Labour Fund 0.2% × 2,000 = 4.00; PIO 0; health 0; total employer cost = 2,000 + 14.00 = **EUR 2,014.00**.
-
-**Test 6 — Health contribution.** Expected = **EUR 0.00** (abolished). Any non-zero health line is wrong.
-
-**Test 7 — Entrepreneur, annual income EUR 8,400.** Entrepreneurial PIT = **EUR 0.00** (within the EUR 8,400 exemption); contributions still due on at least the minimum-wage base — flag base per §8 T2-4.
-
-**Test 8 — Pre-reform input (employee 24%, employer 10%).** Expected response: REFUSE/recompute per R-ME-SSC-1; correct figures are employee 10.5%, employer ~0.7%.
-
-### 12.6 Prohibitions
-
-- **Never use pre-October-2024 rates** — NEVER use pre-October-2024 rates (employee ~24% / employer ~10%, or any health contribution) — Europe Now 2.0 superseded them.  _(§12.6)_
-- **Never add health-insurance contribution** — NEVER add a health-insurance contribution — it is abolished (0%).  _(§12.6)_
-- **Never compute surtax on gross** — NEVER compute surtax on gross — it is charged on the PIT amount.  _(§12.6)_
-- **Never finalise high-earner result without PIO ceiling confirmation** — NEVER finalise a high-earner result that turns on the PIO ceiling without reviewer confirmation of the current cap (the EUR 68,765 figure is low-confidence).  _(§12.6)_
-- **Never present Labour Fund 0.2% as certain** — NEVER present the Labour Fund 0.2% as certain — it is sourced from one secondary site; show employer cost with and without it if unconfirmed.  _(§12.6)_
-- **Never apply full-gross 15% reading without flagging** — NEVER apply the full-gross 15% reading without flagging — this skill uses the marginal reading pending confirmation.  _(§12.6)_
-- **Never quantify penalties or arrears** — NEVER quantify penalties or arrears — escalate to a warranted accountant.  _(§12.6)_
-- **Never classify VAT or CIT as payroll contribution** — NEVER classify a VAT ("PDV") or CIT ("porez na dobit") line as a payroll contribution.  _(§12.6)_
-- **Never treat figures as definitive** — NEVER treat figures as definitive — this is a Tier 2 research-verified skill; label outputs as estimates and direct the client to Poreska uprava / a warranted accountant.  _(§12.6)_
-- **Never compute in non-EUR currency** — NEVER compute in a non-EUR currency without converting and confirming — Montenegro is EUR-only.  _(§12.6)_
+| Employee | Employer's seat |
+| Contractual remuneration, including qualifying royalty/service contracts | Individual's residence |
+| Board/director remuneration | Payer's seat |
+| Independent activity | Tax-registration location |
+
+Source: [refund Article 3][refund]. For mixed statuses/payers in different offices, obtain the authority's competent-office direction; the rule does not justify a universal residence-office shortcut. An eUprava service listing inspected here gives generic residence wording and older agency names, which are not substituted for the rule's category-specific routing or treated as current successful electronic acceptance. [Rule][refund]; [service listing, access comparison only][refund-service]
+
+The actual Form 1 requests the tax authority/regional office, claim year, insured person's name, basis of insurance, recipient/bank account/bank, applicant name/JMB/address and date. Enter the proper insured person and entitlement, not automatically the employer's account. Keep supporting person/year reconciliation, payer/authority contribution evidence, annual maximum and any representation authority with the submission. These are workpaper/evidence requirements; the printed form itself does not list a new universal attachment checklist. No invented mandatory notarisation or fee is added. [Form 1][refund]; [law Article 22][law]
+
+The regional office decides by a formal decision. Article 4 requires refund **within 30 days of the decision**, not within 30 days of the application. Keep application receipt, any information requests, decision and payment reconciliation. The rule does not prescribe a separate decision-making deadline; current tax-procedure/appeal rules and payment offsets must be verified separately. Do not net an anticipated claim against current remittances. No unemployment/Labour Fund refund follows from this PIO maximum rule. [Refund Articles 1, 4][refund]; [law Articles 22–25][law]
+
+
+## Computation workflow and evidence
+
+1. Identify person, payer, legal status, work country, insurance periods and all concurrent activities. Check the applicable international agreement/coverage certificate before an exemption. [Articles 4–8][law]
+2. Classify each payment and establish gross earnings or the statutory turnover/average-pay/taxable-income base. Record floor, exclusions, election and additional service evidence. [Articles 3a, 9–13, 18a–18d][law]
+3. Calculate PIO, unemployment and employer Labour Fund separately, maintaining liability by person, period and payer. Keep PIT/surtax in the payroll workpaper. [Articles 15–18][law]; [instruction Articles 3–6][instruction]
+4. Reconcile person totals to contribution control accounts, reports, payments and authority ledger. Preserve adjustments separately from current pay; do not net an unapproved annual refund against remittances. [Articles 21–25][law]
+5. Escalate missing status, period/floor/cap evidence or inconsistent official form references before filing. A source-cited draft is not an accepted submission or professional attestation.
+
+## Worked examples
+
+Hypothetical full-month 2026 EUR preparation cases with established classification, no higher elected base, no relief except where stated and no annual refund applied. Ordinary employee gross is assumed above the applicable verified floor; no particular current numerical floor is asserted. Values are contribution controls, not complete payslips or filings.
+
+### 1. Ordinary employee and separate employer charges
+
+Gross contribution base 2,000; no special service/additional levy. PIO/unemployment deductions 210; employer unemployment/Labour Fund 14. Salary PIT/surtax and other possible employment costs are excluded from this control. [Articles 15, 18][law]; [instruction Articles 4–5][instruction]
+
+```oa-check
+name: Montenegro ordinary employee contributions
+inputs:
+  gross_base: 2000
+steps:
+  - employee_pio: gross_base * 0.10
+  - employee_unemployment: gross_base * 0.005
+  - employee_total: employee_pio + employee_unemployment
+  - employer_unemployment: gross_base * 0.005
+  - employer_labour_fund: gross_base * 0.002
+  - employer_charges: employer_unemployment + employer_labour_fund
+expected:
+  employee_pio: 200
+  employee_unemployment: 10
+  employee_total: 210
+  employer_unemployment: 10
+  employer_labour_fund: 4
+  employer_charges: 14
+```
+
+### 2. Principal actual-income entrepreneur, lower turnover band
+
+Annual turnover 8,500, principal status and actual-income taxation established. Full-month 60% base uses prior-year average gross 1,206; PIO 72.36 plus unemployment 7.236, rounded separately to cents 7.24, total 79.60. This does not compute business income tax. [Articles 9(7), 11(5), 15(2), 18(2)][law]; [statistics][stats]
+
+```oa-check
+name: Montenegro principal entrepreneur contribution base
+inputs:
+  prior_average_gross: 1206
+steps:
+  - monthly_base: prior_average_gross * 0.60
+  - pio: round(monthly_base * 0.10, 2)
+  - unemployment: round(monthly_base * 0.01, 2)
+  - total: pio + unemployment
+expected:
+  monthly_base: 723.60
+  pio: 72.36
+  unemployment: 7.24
+  total: 79.60
+```
+
+### 3. Supplementary business alongside employment
+
+Annual turnover 16,000, Article 5(1)(16) status established. Full-month base 150% × 1,206 = 1,809, PIO 180.90, in addition to the separately calculated employment PIO. No principal-business unemployment charge is added to this supplementary base. Annual refund remains separate. [Articles 5(1)(16), 7, 9(11), 14, 15(2)][law]; [amendment][amend]; [statistics][stats]
+
+```oa-check
+name: Montenegro supplementary entrepreneur pension
+inputs:
+  prior_average_gross: 1206
+  employment_pio: 200
+steps:
+  - supplementary_base: prior_average_gross * 1.50
+  - supplementary_pio: supplementary_base * 0.10
+  - combined_pio_before_refund: employment_pio + supplementary_pio
+expected:
+  supplementary_base: 1809
+  supplementary_pio: 180.90
+  combined_pio_before_refund: 380.90
+```
+
+### 4. Registered farmer own contribution and budget difference
+
+Qualifying farmer registration established. General base 20% and own mandatory base 12% of 1,206 produce total PIO 24.12, own payment 14.472 and budget difference 9.648, rounded here to 14.47 and 9.65. Actual quarterly assessment and authority allocation control payment. [Articles 9(10), 9a, 15(2), 21(8)][law]; [statistics][stats]
+
+```oa-check
+name: Montenegro registered farmer contribution allocation
+inputs:
+  prior_average_gross: 1206
+steps:
+  - general_base: prior_average_gross * 0.20
+  - own_base: prior_average_gross * 0.12
+  - total_pio: round(general_base * 0.10, 2)
+  - own_pio: round(own_base * 0.10, 2)
+  - budget_difference: total_pio - own_pio
+expected:
+  general_base: 241.20
+  own_base: 144.72
+  total_pio: 24.12
+  own_pio: 14.47
+  budget_difference: 9.65
+```
+
+### 5. Established additional service category
+
+Employee base 2,000 and documented 12-month-to-15-month credited-service category. Additional employer PIO at 9% is 180, on top of ordinary employer unemployment/Labour Fund 14. Employee deductions remain 210. Eligibility and service records are assumptions, not a finding that any specific role qualifies. [Articles 8, 16(2)][law]; [instruction Articles 4–5][instruction]
+
+```oa-check
+name: Montenegro additional credited service employer charge
+inputs:
+  gross_base: 2000
+steps:
+  - extra_pio: gross_base * 0.09
+  - ordinary_employer_charges: gross_base * 0.007
+  - specified_employer_charges: extra_pio + ordinary_employer_charges
+expected:
+  extra_pio: 180
+  ordinary_employer_charges: 14
+  specified_employer_charges: 194
+```
+
+### 6. Qualifying zimnica exclusion limit
+
+A documented qualifying 2026 zimnica payment is 800, with no prior use of the relevant exclusion. The 70% limit is 844.20, so the whole assumed payment falls within it. This tests the limit only; it does not establish the PIT result, a Labour Fund exclusion or treatment of an excess payment. [Article 18a(2)][law]; [amendment Articles 5, 8][amend]; [statistics][stats]
+
+```oa-check
+name: Montenegro 2026 zimnica contribution exclusion ceiling
+inputs:
+  prior_average_gross: 1206
+  qualifying_payment: 800
+steps:
+  - exclusion_limit: prior_average_gross * 0.70
+  - excluded_contribution_receipt: min(qualifying_payment, exclusion_limit)
+  - headroom: exclusion_limit - excluded_contribution_receipt
+expected:
+  exclusion_limit: 844.20
+  excluded_contribution_receipt: 800
+  headroom: 44.20
+```
+
+## Reporting, payments, corrections and sanctions
+
+Article 21 distinguishes the payer and deadline by population: ordinary employer contributions by the 15th for the previous month; specified foreign-employed citizens and religious-community cases quarterly; principal/supplementary entrepreneurs through the income-tax calculation/payment mechanism; specified board/contract receipts by the payer by the 15th; farmers under quarterly authority assessment. If an immune foreign/diplomatic payer does not pay the specified employee contributions, Article 21(7) gives the employee five days from receipt. Classify before applying a deadline. [Article 21][law]
+
+The employment instruction additionally requires payment with remuneration, and for noncash earnings no later than the month's last working day. Its older OPD1 report references and retained historical calculation table are not proof of current IOPPD/IRMS fields. Do not interpret the contribution law's 15th-day rule as permission to defer payment due with salary. Actual current integrated reporting rules, form codes, portal schema, account references, correction sequence and period-specific transition notices remain to be reconciled in the payroll method. [Instruction Articles 7–10][instruction]
+
+Article 22 requires an annual-cap refund application after year end, by the end of the following calendar year, decided by the tax authority. Preserve paid amounts and decision; no unemployment or Labour Fund refund is inferred from that PIO rule. Article 25 refers unresolved assessment, collection, interest and limitation matters to tax procedure, with its express PIO limitation exception. Exact current interest, appeal/stay and enforcement methods are still open. [Articles 22–25][law]
+
+For Article 26's listed payer failures, statutory fines are EUR 2,000–20,000 for a legal person, 500–1,000 for its responsible person and 1,000–6,000 for an entrepreneur. Article 27 specifies 250–2,000 for its listed individual nonpayment cases. These are offence-specific ranges, not automatic charges for every late return. [Articles 26–27][law]
+
+## Reviewer handoff and remaining evidence
+
+Supply person/status/registration, all work and insurance periods, payer/residence, international coverage evidence, gross receipt classification, applicable floor/elected base, yearly statistics/cap, calculation and payment ledgers, additional-service records, actual form/acknowledgement, amendments and refund decisions. Bank narratives alone do not establish any of these.
+
+Still open: current numerical floor and partial/multiple-employer application; operative 2026 cap, mixed-status competence and current refund submission/offset/remedy implementation; full benefit/exemption valuation and Labour Fund interactions; exceptional Article 11 cross-references; foreign/posted coverage agreements; farmer and supplementary-business assessment/reporting implementation; historical arrears; current IOPPD/IRMS fields, amendments, payment accounts and procedures; all other employment levies; independent country review and named accountant attestation. The payroll and individual Guides have been rebuilt for 2026; their current local-decision, forms/IRMS, specialist and procedural gaps remain open. Reconcile their stated bases and periods with this contribution method rather than treating companion presence as completed implementation.
+
+## Sources
+
+Read on **24 October 2026**. Source labels identify actual operative reading, not a completed taxpayer filing.
+
+- [Contribution law][law], Ministry March 2026 DOCX consolidation through 160/25: Articles 1–27 and targeted 29b–33 read; historical transitional rates not applied as 2026 rates.
+- [Enacted amendment][amend], 160/25 Articles 1–8: supplementary business, zimnica, digital-nomad and application gates read.
+- [Payroll instruction][instruction], Ministry April 2026 reproduction through 103/24: Articles 1–10 and historical/reference material read. Old table/report references are disclosed, not certified as current IRMS implementation.
+- [MONSTAT full-year 2025 release][stats], 30 January 2026: prior-year average gross 1,206 distinguished from net and December-only values.
+- [September government proposal][proposal]: one-page scanned text visually inspected, including January 2027 application; enactment/final text not certified.
+- [107/23 refund rule and actual Form 1][refund]: operative Articles 1–6 and form read; form visually inspected. 2026 cap and accepted electronic submission not obtained.
+- [2025 ceiling record][cap2025]: discovery metadata only, not operative 2026 amount or current refund form.
+
+[law]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
+[amend]: https://wapi.gov.me/download/9c7ab8f6-6971-48cb-9ac0-4d6f87ac48bb?version=1.0
+[instruction]: https://wapi.gov.me/download/f73befc2-975e-42d9-af00-4d5de0a3172d?version=1.0
+[stats]: https://www.monstat.org/cg/novosti.php?id=4638
+[proposal]: https://wapi.gov.me/download/7edeb39c-81cc-4468-bd62-6cfc5a36443c?version=1.0
+[refund]: https://www.sluzbenilist.me/propisi/362476/download
+[refund-service]: https://m.euprava.me/usluge/detalji_usluge?generatedServiceId=245
+[cap2025]: https://www.sluzbenilist.me/propisi/387933
 
 ## Disclaimer
 

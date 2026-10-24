@@ -1,10 +1,19 @@
 ---
 name: montenegro-tax-optimization
-description: Use this skill whenever asked about reducing tax in Montenegro, tax planning, or legal strategies to minimise tax for a self-employed person or small company in Montenegro. Trigger on phrases like "reduce tax Montenegro", "lump-sum tax Montenegro", "paušal", "entrepreneur income tax 9% 15%", "self-employed vs company Montenegro", "Montenegro corporate 9%", "save tax Montenegro", "tax planning Montenegro". This skill covers the low progressive entrepreneurial PIT (0/9/15%), the lump-sum regime (under €30k, with its professional-services exclusion), the low progressive CIT (9/12/15%), the municipal surtax, and the anti-avoidance red lines. ALWAYS read this skill before advising on any Montenegro tax optimisation.
-version: 0.1
+description: >-
+  Use to identify the evidence needed before comparing Montenegro principal
+  entrepreneurship, lump-sum taxation and company ownership. Retained 2025
+  planning draft with targeted 2026 corrections, not a complete current planning
+  computation. Routes actual income-tax, corporate, payroll and contribution
+  work to the rebuilt companion Guides. Explains the annual lump-sum decision,
+  activity and VAT exclusions, separate contribution basis and municipal surtax
+  ceilings rather than treating them as automatic rates or savings. Trigger on
+  Montenegro tax planning, pausal, lump-sum eligibility or company versus
+  self-employment. Unverified planning conclusions must not override current law.
+version: 0.2
 jurisdiction: ME
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
@@ -12,77 +21,45 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Montenegro Tax Optimization
+# Montenegro planning: retained draft and eligibility gates
 
-## Montenegro Tax Optimization Skill v0.1
+**Retained, unverified 2025 planning draft with targeted corrections read on 24 October 2026.** This is not research-verified planning advice or a computed recommendation. The earlier text is preserved in Git at `cf27ecf8`. Use the rebuilt [individual](montenegro-income-tax.md), [corporate](me-corporate-income-tax.md), [payroll](montenegro-payroll.md) and [contribution](montenegro-social-contributions.md) methods for their stated 2026 scope and limitations. This routing note cannot override their sourced rules or certify their open implementation gaps.
 
-**Tier 2 — research-verified. Sources: Poreska uprava, PwC Montenegro, Eurofast/KPMG. Figures must agree with `montenegro-income-tax.md` / `montenegro-social-contributions.md`. NOT yet signed off by a Montenegrin tax adviser. Aggressive positions are never advised; every suggestion must be reviewed.**
+## Annual lump-sum principal-business tax
 
-## Section 1 -- Quick Reference
+Article 49 concerns **principal independent-activity income tax in an annual lump sum**. It is not salary tax and does not replace social contributions with one universal tax-inclusive monthly bill. The preceding year's turnover, or planned turnover on starting, must satisfy the statutory **less than EUR 30,000.01** test. Eligibility also requires the application and tax-authority decision, permitted activity and other statutory conditions. Turnover records remain required. [PIT Article 49(1)–(7)][pit]
 
-**Quick Reference**
+Applications ordinarily go in by the end of January, or within five days of a new activity's registration. Ordinary payment is monthly in one-twelfth of the annual obligation, by the end of the current month for the previous month. Qualifying seasonal principal activity lasting no more than six months has the separate payment rule by the fifth of the current month. Do not assume that a threshold alone elects the regime, proves an authority decision or supplies its actual scale. [PIT 49(3)–(8)][pit]
 
-| Field | Value |
-| --- | --- |
-| Country | Montenegro |
-| Currency | EUR |
-| Headline levers | Low progressive PIT (0/9/15%); lump-sum regime (under €30k); low CIT (9/12/15%) |
-| Entrepreneur PIT | 0% to €8,400; 9% €8,400.01–12,000; 15% above €12,000 |
-| Corporate tax | 9% to €100k; 12% to €1.5m; 15% above |
-| Municipal surtax | 13% (15% in Podgorica & Cetinje) on the PIT amount |
-| Anti-avoidance | Lump-sum excludes professional/IT/consulting; substance |
+Article 49(9) excludes listed activities, including legal, notarial, audit, accounting, health, consulting, design, surveyor, enforcement and other professional/intellectual occupations, alongside specified other sectors. Paragraphs (10)–(11) contain specific kiosk/mobile and own-production conditions. Paragraph (12) excludes VAT-registered taxpayers. Establish the actual activity and those provisions; a label such as IT, marketing or “online work” is not a substitute for classification under the law. No blanket conclusion that all online activities qualify or are excluded is made here. [PIT 49(9)–(12)][pit]
 
-> **Montenegro is a low-rate jurisdiction** (9–15% PIT and CIT). The key optimisation is the **lump-sum (paušal) regime** for small crafts/trades — but it is **NOT** available to IT/consulting/marketing/online professionals.
+Contributions have their own statutory base. For lump-sum taxpayers, the contribution law refers to legally determined taxable income; actual-income entrepreneurs have a different base method. Reconcile the authority decision, insured status, current contribution rules and payment obligations separately. [Contribution Articles 9(7), 11(5)][social]
 
-## Section 2 -- Lump-Sum (paušal) Regime
+## Municipal surtax is a local enactment question
 
-- **Lump-sum regime revenue ceiling** — €30,000 EUR (Annual revenue ≤ €30,000; raised from €18,000 effective 1 Jan 2025)
-- **Lump-sum fixed monthly amount replaces profit tax** — A fixed monthly amount of salary taxes + social contributions replaces tax on actual profit — favourable when real profit is high.
-- **AUDIT FLASH POINT — professional services excluded from lump-sum** — Professional services (IT, consulting, marketing, intellectual/online activities) CANNOT use the lump-sum regime. It is limited to specific listed crafts and small local trades. Confirm the activity qualifies before recommending it.
+The local-finance law permits a municipality to impose **up to 13%** of the relevant PIT obligation, or **up to 15%** for Podgorica and Cetinje. These are ceilings. Article 9 requires the rate set by the municipality's own rule; Article 8 identifies the covered income classes and territorial activity. Obtain the operative local decision and establish taxpayer/payer/situs allocation. Residence alone does not settle every case, and the ceilings are not universal actual rates. [Local-finance Articles 8–9][local]
 
-## Section 3 -- Entrepreneurial PIT & Surtax
+Use the payroll Guide's allocation method for employment and reconcile the relevant local branch for business, property or capital. Do not omit an established liability or substitute a guessed 13% or 15% rate.
 
-**Entrepreneurial PIT bands**
+## Compare complete alternatives before recommending one
 
-| Band (entrepreneurial income) | Rate |
-| --- | --- |
-| up to €8,400 | 0% |
-| €8,400.01 – 12,000 | 9% |
-| above €12,000 | 15% |
+For an entrepreneur, establish principal versus supplementary/occasional activity, actual profit, admissible costs, contribution status, VAT and local obligations. For a company, compute corporate tax and separately establish salary, benefit, distribution or other owner-extraction treatment. A low headline company rate alone does not prove a lower total burden or tax-free extraction. Use the sourced category rules in the companion methods rather than the retired headline-rate comparison.
 
-- **Municipal surtax** — 13% percent (15% in Podgorica/Cetinje, applied on the PIT amount — residence municipality matters slightly)
+Ask for the activity and contracts, registration and regime decisions, actual/prior/planned turnover, cost and profit evidence, VAT status, local decision, insurance status and intended owner payments. Then compare the same commercial cash flow and period with all established liabilities. Do not recommend misclassification or artificial turnover suppression.
 
-## Section 4 -- Company (CIT) & Extraction
+## Not yet confirmed
 
-**Company (CIT) rates**
+This note does not implement the current lump-sum scale/application, every activity exception, authority decision or local enactment; a complete entity/extraction comparison, anti-avoidance/employment-status analysis or total-cost model; current forms/IRMS; or professional planning advice. Whole-pack independent review is separate from accountant attestation, and all seven country domains remain partial.
 
-| Profit | CIT |
-| --- | --- |
-| up to €100,000 | 9% |
-| €100,000.01 – 1,500,000 | €9,000 + 12% on the excess |
-| above €1,500,000 | €177,000 + 15% on the excess |
+## Sources
 
-A company caps the rate at 9% on the first €100k of profit and defers distribution. **[RESEARCH GAP — reviewer to confirm the current dividend tax rate.]**
+- [PIT consolidation through 160/25][pit], actual Article 49; targeted reread 24 October 2026 for the corrections above. Complete current PIT scope and later amendment gates are recorded in the individual Guide.
+- [Local-finance law][local], actual Articles 8–9; targeted reread 24 October 2026. No municipality-specific enactment or actual rate verified here.
+- [Contribution-law consolidation through 160/25][social], Articles 9(7), 11(5), read for the companion contribution method and independently checked in the pack review on 24 October 2026. Full insured-status and implementation limits remain in that Guide.
 
-## Section 5 -- Red Lines (do not cross)
-
-- **Lump-sum closed to professional/IT/consulting work** — Lump-sum is closed to professional/IT/consulting work — don't place such income there.
-- **Disguised employment — AUDIT FLASH POINT** — Disguised employment: single-client entrepreneur under employer-like control → reclassification. AUDIT FLASH POINT.
-- **Do not under-report to stay within lump-sum ceiling** — Don't under-report to stay within the €30,000 lump-sum ceiling.
-
-## PROHIBITIONS
-
-- **Prohibition 1** — NEVER place IT/consulting/marketing/professional income in the lump-sum regime — it is excluded.
-- **Prohibition 2** — NEVER present single-client work as safe self-employment.
-- **Prohibition 3** — NEVER omit the municipal surtax when computing the effective PIT.
-- **Prohibition 4** — NEVER contradict the rates in `montenegro-income-tax.md` / `montenegro-social-contributions.md`.
-- **Prohibition 5** — NEVER present [RESEARCH GAP] figures as confirmed, nor optimisation as definitive advice — route to a licensed Montenegrin tax adviser.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Montenegro) before acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+[pit]: https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0
+[local]: https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0
+[social]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
 
 <!-- openaccountants-cta-block -->
 
