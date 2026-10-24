@@ -4,8 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 covered_by:
   XB: ee-cross-border
 not_applicable: {}
-partial:
-  IT-CORP: "ee-corporate-income-tax still carries tax year 2025 figures, cites secondary sources and is not in the deep-tax shape"
+partial: {}
 ---
 
 # Estonia: tax pack
@@ -17,7 +16,7 @@ Calendar tax year. Authority: the Estonian Tax and Customs Board (Maksu- ja Toll
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | estonia-income-tax | source-cited draft |
-| IT-CORP, corporate income tax | ee-corporate-income-tax | source-cited draft (partial, see above) |
+| IT-CORP, corporate income tax | ee-corporate-income-tax (distributed-profit tax at 22/78, deemed distributions, participation exemption, capital reductions, bank advance tax, 2026) | source-cited draft |
 | VAT | estonia-vat-return | source-cited draft |
 | SC, social contributions | estonia-social-contributions (social tax, unemployment premiums, II pillar, self-employed FIE, 2026) | source-cited draft |
 | PR, payroll withholding | estonia-payroll (gross to net, withholding, basic exemption, TSD, 2026) | source-cited draft |
