@@ -7,7 +7,6 @@ tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
 version: 0.1
-verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
@@ -57,17 +56,18 @@ The law is the Law on State Social Insurance No. I-1336 ("VSDĮ", consolidated v
 | Individual activity: ceiling on the base (VSD and PSD) | 43 VDU: EUR 99,422.45 | 2026 | [Sodra, individual activity](https://sodra.lt/imokos/vykdau-individualia-veikla); [VSDĮ art. 10(5)](https://www.e-tar.lt/portal/lt/legalAct/TAR.0F9036415DBD/asr); [SDĮ art. 17(13)](https://www.e-tar.lt/portal/lt/legalAct/TAR.94F6B680E8B8/asr) |
 | Individual activity: maximum VSD | EUR 12,447.69 (EUR 15,430.36 with the second pillar) | 2026 | [Sodra, individual activity](https://sodra.lt/imokos/vykdau-individualia-veikla) |
 | Individual activity: monthly PSD minimum (6.98% of the MMA) | EUR 80.48 a month, unless PSD is paid for the person elsewhere | 2026 | same; [SDĮ art. 17(11), 17(12)](https://www.e-tar.lt/portal/lt/legalAct/TAR.94F6B680E8B8/asr) |
+| First year of self-employment | VSD optional for one year from the first start of activity after 1 January 2018 (or after a break of at least 10 years); PSD still due | 2026 | [VSDĮ art. 11(3)](https://www.e-tar.lt/portal/lt/legalAct/TAR.0F9036415DBD/asr); [Law XV-633 art. 3(2)](https://www.e-tar.lt/portal/lt/legalAct/2cf13750d9b111f08918e1adc7c5b1ec) |
 | Business certificate holders | VSD 8.72% (11.72% with second pillar) and PSD 6.98%, both on the MMA | 2026 | [Sodra, self-employed rates](https://sodra.lt/imoku-tarifai/imoku-tarifai-taikomi-savarankiskai-dirbantiems-asmenims) |
 | IĮ owners, MB members, full partners | VSD 13.83% (16.83% with second pillar) and PSD 6.98% on 50% of funds drawn for personal needs (January to June 2026), 90% (July to December 2026) | 2026 | same; [VSDĮ art. 10(3)(1)](https://www.e-tar.lt/portal/lt/legalAct/TAR.0F9036415DBD/asr) |
-| PIT on employment income up to 36 VDU (EUR 83,237.40) a year | 20% | 2026 | [GPMĮ art. 6(1)](https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr) |
-| PIT on employment income over 36 VDU up to 60 VDU (EUR 138,729) | 25% | 2026 | same |
-| PIT on employment income over 60 VDU | 32% | 2026 | same |
+| PIT on annual income (pay included) up to 36 VDU (EUR 83,237.40) | 20% | 2026 | [GPMĮ art. 6(1)](https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr) |
+| PIT on annual income over 36 VDU up to 60 VDU (EUR 138,729) | 25% | 2026 | same |
+| PIT on annual income over 60 VDU | 32% | 2026 | same |
 | PIT on individual activity income up to EUR 42,500 | 20%, less a credit (5% effective up to EUR 20,000) | 2026 | [GPMĮ art. 6(8), 18-2](https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr) |
 | Monthly NPD, monthly employment income up to the MMA | EUR 747 | 2026 | [GPMĮ art. 20(2)](https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr) |
 | Monthly NPD above the MMA | 747 - 0.49 x (monthly income - 1,153); nil from EUR 2,677.49 | 2026 | same; [VMI commentary on art. 20](https://www.vmi.lt/evmi/documents/20142/391224/GPM+aktualus+komentaras+%28aktuali+redakcija+2026-10-19%29+.pdf/541c2138-7e9c-3e99-33bf-fc547c5cdc28?t=1792476568043) |
 | Late payment interest on tax (delspinigiai) | 0.027% a day from 1 August 2026 | 2026 | [VMI, late interest](https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.-) |
 
-**What changed for 2026.** Law XV-633 rewrote VSDĮ article 10(9) so that, for 2026 and later years, the 60 VDU ceiling covers the employer's social insurance contributions as well as the employee's (XV-633 article 5(3)). Sodra's employer page still carries the older note that since 2021 the ceiling applied only to the employee's part; that note describes the earlier law. The same law raised the base for IĮ owners and partnership members from 50% to 90% of drawings for periods from 1 July 2026. Income tax moved to three bands (20%, 25%, 32%) and individual activity income to 20% with a sliding credit; see [lithuania-pit](lithuania-pit.md).
+**What changed for 2026.** Law XV-633 rewrote VSDĮ article 10(9) so that, for 2026 and later years, the 60 VDU ceiling covers the employer's social insurance contributions as well as the employee's (XV-633 article 5(3)). Sodra's employer page still carries the older note that since 2021 the ceiling applied only to the employee's part; that note describes the earlier law. The same law excluded from the base, for 2026 and later years, employer-paid voluntary health insurance premiums that are exempt from income tax (VSDĮ article 11(1)(17)), and raised the base for IĮ owners and partnership members from 50% to 90% of drawings for periods from 1 July 2026. Income tax moved to three bands (20%, 25%, 32%) and individual activity income to 20% with a sliding credit; see [lithuania-pit](lithuania-pit.md).
 
 ## The taxable base
 
@@ -88,6 +88,8 @@ Where pay falls below the MMA because of unpaid leave or sickness benefit, the b
 **Income tax withholding.** The employer withholds GPM from gross pay. The employee's Sodra and health contributions are not deducted first: VMI's NPD example in its commentary on article 20 works from pay before contributions. If the employee asks in writing, the employer deducts the monthly NPD: EUR 747 when monthly employment income is at most the MMA, falling by 0.49 for each euro above it, and nil from EUR 2,677.49 (GPMĮ articles 20(2) and 23(2)). The NPD is given at one place of work only. On each payment the employer applies the article 6 rates by the size of that payment alone; for regular payments, at the employee's request, it applies them by reference to the total it has paid and expects to pay that year (GPMĮ article 23(7)). The annual return then reconciles the bands and the NPD; see [lithuania-pit](lithuania-pit.md).
 
 **Individual activity.** The base is 90% of the year's taxable income from individual activity, before deducting the person's own VSD and PSD (VSDĮ article 10(3)(2); Sodra). Taxable income means income less allowable deductions under GPMĮ article 18: actual documented costs or the flat 30% option (see [lithuania-pit](lithuania-pit.md)). The base is capped at 43 VDU, EUR 99,422.45 for 2026 (VSDĮ article 10(5); Sodra), and the same cap applies to PSD (SDĮ article 17(13)). VSD is 12.52% of the base, or 15.52% for a second-pillar saver; PSD is 6.98%.
+
+**First year of activity.** IĮ owners, MB members, full partners, farmers and people with individual activity may choose not to pay VSD for one year from the day they first become self-employed after 1 January 2018; the same applies to someone who has not been self-employed for at least ten years since that date (VSDĮ article 11(3), as set by Law XV-633). The relief covers social insurance only; the PSD rules below still apply.
 
 **The PSD floor for the self-employed.** A self-employed person not insured through another channel pays PSD of 6.98% of the MMA each month, EUR 80.48 in 2026, and the yearly PSD cannot be less than 6.98% of 12 MMAs (SDĮ article 17(11) and (12)). The monthly payment is not needed when PSD is paid for the person elsewhere (for example as an employee) or the State insures them (for example a full-time student or someone with the full pension record) (Sodra). After the year, the person pays the difference between the PSD paid and 6.98% of the base.
 
@@ -151,7 +153,7 @@ expected:
   total_cost: 2035.40
 ```
 
-**Example 2: a high-earning freelancer hits the 43 VDU cap.** A consultant with registered individual activity has taxable income of EUR 120,000 for 2026 after actual documented costs (before her own contributions). She is in the second pillar and has no job. Ninety percent of her income is EUR 108,000, which is above the EUR 99,422.45 cap, so the base is EUR 99,422.45. VSD at 15.52% is EUR 15,430.36, the maximum Sodra publishes. PSD at 6.98% is EUR 6,939.69. During the year she paid the monthly PSD minimum of EUR 80.48, EUR 965.76 in all, so EUR 5,973.93 of PSD is still due, together with the VSD if she did not pay it monthly, by 1 May 2027. Her income tax is separate: at this level there is no individual activity credit and the article 6(1) bands apply (see [lithuania-pit](lithuania-pit.md)).
+**Example 2: a high-earning freelancer hits the 43 VDU cap.** A consultant with registered individual activity has taxable income of EUR 120,000 for 2026 after actual documented costs (before her own contributions). She has been self-employed since 2020, is in the second pillar and has no job. Ninety percent of her income is EUR 108,000, which is above the EUR 99,422.45 cap, so the base is EUR 99,422.45. VSD at 15.52% is EUR 15,430.36, the maximum Sodra publishes. PSD at 6.98% is EUR 6,939.69. During the year she paid the monthly PSD minimum of EUR 80.48, EUR 965.76 in all, so EUR 5,973.93 of PSD is still due, together with the VSD if she did not pay it monthly, by 1 May 2027. Her income tax is separate: at this level there is no individual activity credit and the article 6(1) bands apply (see [lithuania-pit](lithuania-pit.md)).
 
 ```oa-check
 name: Individual activity, taxable income EUR 120,000, second pillar, 43 VDU cap, 2026
@@ -182,14 +184,14 @@ expected:
 3. Is the employee in the second pillar (extra 3%)? Has the employee asked this employer to apply the NPD, and does another employer already apply it?
 4. Is anyone paid below the MMA for a full month, and does one of the article 10(7) exceptions apply (another employer, a pension, under 24, low participation level, parental benefits)?
 5. Will any employee's pay from all employers pass EUR 138,729 in 2026? From that point VSD stops for both sides.
-6. For the self-employed: taxable income for the year, whether costs are actual or the 30% option, second pillar status, and whether PSD is already paid through a job or by the State.
+6. For the self-employed: taxable income for the year, whether costs are actual or the 30% option, second pillar status, whether this is the first year of self-employment (VSD optional), and whether PSD is already paid through a job or by the State.
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
 | Law on State Social Insurance No. I-1336, consolidated version from 1 July 2026: art. 2(16), 8, 10(1), (3), (5) to (10), 12, 19 | https://www.e-tar.lt/portal/lt/legalAct/TAR.0F9036415DBD/asr | 2026-10-24 |
-| Law No. XV-633 of 9 December 2025 amending VSDĮ art. 5, 10, 11 and 12: art. 2, 3, 5 | https://www.e-tar.lt/portal/lt/legalAct/2cf13750d9b111f08918e1adc7c5b1ec | 2026-10-24 |
+| Law No. XV-633 of 9 December 2025 amending VSDĮ art. 5, 10, 11 and 12: art. 2, 3, 4, 5 | https://www.e-tar.lt/portal/lt/legalAct/2cf13750d9b111f08918e1adc7c5b1ec | 2026-10-24 |
 | Law on Health Insurance No. I-1343, consolidated version from 1 September 2026: art. 17 | https://www.e-tar.lt/portal/lt/legalAct/TAR.94F6B680E8B8/asr | 2026-10-24 |
 | Law on Personal Income Tax No. IX-1007, consolidated version from 11 June 2026: art. 6, 18-2, 20, 23, 27 | https://www.e-tar.lt/portal/lt/legalAct/TAR.C677663D2202/asr | 2026-10-24 |
 | VMI order VA-121 (GPM313 form and filing rules), consolidated version from 21 November 2025 | https://www.e-tar.lt/portal/lt/legalAct/75345220e61e11e7acd7ea182930b17f/asr | 2026-10-24 |
@@ -201,4 +203,4 @@ expected:
 | VMI, commentary on the Personal Income Tax Law (version of 19 October 2026), art. 20 | https://www.vmi.lt/evmi/documents/20142/391224/GPM+aktualus+komentaras+%28aktuali+redakcija+2026-10-19%29+.pdf/541c2138-7e9c-3e99-33bf-fc547c5cdc28?t=1792476568043 | 2026-10-24 |
 | VMI, late payment interest, answer KM2633 | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 
-Not yet confirmed: the text of the 2026 social funds' budget indicators law that fixes the rates and the 2026 VDU (the figures here come from Sodra's tables and its EUR 138,729 ceiling); the late interest rate Sodra charges on employer contributions in 2026 (the law leaves it to the Minister of Finance; VMI's 0.027% a day is confirmed for tax only); whether the Guarantee Fund and Long-term Employment Benefit Fund contributions, which rest on separate laws, also stop at the 60 VDU ceiling from 2026; the monthly band thresholds employers use under GPMĮ article 23(7) when a single payment is large; the exact payment date for 2026 self-employed contributions, given that 1 May 2027 is a Saturday; the administrative fine for filing SAM or GPM313 late (Code of Administrative Offences, not read); and the social insurance rules for posted and multi-state workers under the EU coordination regulations.
+Not yet confirmed: the text of the 2026 social funds' budget indicators law that fixes the rates and the 2026 VDU (the figures here come from Sodra's tables and its EUR 138,729 ceiling); the late interest rate Sodra charges on employer contributions in 2026 (the law leaves it to the Minister of Finance; VMI's 0.027% a day is confirmed for tax only, and only from 1 August 2026; the rate for January to July 2026 was not read); whether the Guarantee Fund and Long-term Employment Benefit Fund contributions, which rest on separate laws, also stop at the 60 VDU ceiling from 2026; the monthly band thresholds employers use under GPMĮ article 23(7) when a single payment is large; the exact payment date for 2026 self-employed contributions, given that 1 May 2027 is a Saturday; the administrative fine for filing SAM or GPM313 late (Code of Administrative Offences, not read); and the social insurance rules for posted and multi-state workers under the EU coordination regulations.
