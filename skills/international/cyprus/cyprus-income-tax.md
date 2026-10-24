@@ -67,9 +67,10 @@ Sibling skills: residence detail, non-residents and withholding are in `cy-cross
 | Foreign pension (services abroad), optional rate | 5% on the amount over EUR 5,000 | 2026 | ITL art. 20, same CyLaw URL |
 | Crypto-asset disposal gains | 8% | 2026 | ITL art. 20E(1), same CyLaw URL |
 | Approved employee share option or share award plans | 8%, up to twice the year's pay from that employer and EUR 1,000,000 per rolling 10 years | 2026 | ITL art. 20D(1) and (2), same CyLaw URL |
-| AIF carried interest and UCITS performance fees (optional) | 8%, minimum tax EUR 10,000 a year | 2026 | ITL arts. 20B(4) and 20C(4), same CyLaw URL |
+| AIF carried interest and UCITS performance fees (optional) | 8%, minimum tax EUR 10,000 a year | 2026 | ITL arts. 20B(4), (7) and 20C(4), (7), same CyLaw URL |
+| Energy-efficiency capital spending 2023 to 2030: building fabric / efficiency systems, renewables and batteries / electric vehicles | 7% / 20% / 33 1/3% a year | 2026 | ITL art. 10(2), third proviso (α) to (γ), same CyLaw URL |
 | SDC on dividends, resident and domiciled individual, profits of 2026 onward | 5% | 2026 | SDC Law art. 3(1)(α), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html |
-| SDC on dividends paid out of profits of 2025 or earlier | 17% | 2026 | SDC Law art. 3(1)(α) proviso (ii), same URL |
+| SDC on dividends from a Cyprus-resident company paid out of profits of 2025 or earlier, received within six years from 1 January 2026 | 17% | 2026 | SDC Law art. 3(1)(α) proviso (ii), same URL |
 | SDC on interest, resident and domiciled individual | 17% (3% on government savings certificates and development bonds and listed bonds) | 2026 | SDC Law art. 3B(α)(i) and (β)(i), same URL |
 | SDC interest refund: total income not over | EUR 12,000 (refund of SDC above 3%) | 2026 | SDC Law art. 3B(α)(i), second proviso, same URL |
 | Deemed domicile for SDC | Resident 17 of the last 20 years | 2026 | SDC Law art. 2(3) proviso (i), same URL |
@@ -79,7 +80,8 @@ Sibling skills: residence detail, non-residents and withholding are in `cy-cross
 | Charge for not complying with a written notice, individual | EUR 300 | 2026 | ACL art. 50A(β) to (δ), same URL |
 | Late payment charge | 5%, plus another 5% if still unpaid 2 months after the due date | 2026 | ACL art. 50A(ε), same URL |
 | Provisional tax underestimate charge | 1/10 of the gap between final tax and provisional tax, when provisional chargeable income is below 3/4 of the final figure | 2026 | ACL art. 26(1), same URL |
-| Default interest rate | 3.5% a year from 1 January 2026 | 2026 | ACL art. 39(1); rate as printed by the Tax Department, https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%9D%CF%8C%CE%BC%CE%BF%CE%B9-%CE%A0%CE%92%CE%95-%CE%95%CE%B9%CF%83%CF%80%CF%81%CE%AC%CE%BE%CE%B5%CF%89%CF%82-%CE%A7%CE%B1%CF%81%CF%84%CE%BF%CF%83%CE%AE%CE%BC%CF%89%CE%BD.pdf |
+| Default interest rate | 3.50% a year from 1 January 2026 | 2026 | ACL art. 39(1); Public Default Interest Rate for 2026 Order, K.D.P. 376/2025, para. 2, https://www.cylaw.org/KDP/data/2025_1_376.pdf |
+| Ex gratia retirement or termination payments, early-retirement scheme benefits and non-contractual termination pay over EUR 200,000 | 20%, taxed alone | 2026 | ITL art. 20ΣΤ with art. 5(1)(β)(iv) to (vi), https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html |
 
 Above EUR 72,000, tax is EUR 13,500 plus 35% of the excess.
 
@@ -87,15 +89,16 @@ Above EUR 72,000, tax is EUR 13,500 plus 35% of the excess.
 
 **Order of the computation.** Gross income under ITL art. 5, less exempt income (art. 8), less business expenses and allowances (arts. 9 to 11), less losses (art. 13), less the art. 14 contributions within the one-fifth cap, less the art. 14B personal deductions, gives chargeable income. Apply the bands. Income taxed at a special rate (arts. 20, 20B to 20E) is taxed on its own and not added to other income.
 
-**Employment.** All pay and benefits for an office or employment are taxable, including allowances, joining inducements, ex gratia payments on leaving and non-contractual termination pay (ITL art. 5(1)(β)). A loan or cash facility from a company to a director or individual shareholder (or their spouse or a relative to the second degree) is a deemed monthly benefit of 9% a year on the balance (ITL art. 5(1)(ζ)).
+**Employment.** All pay and benefits for an office or employment are taxable, including allowances, joining inducements, ex gratia payments on leaving and non-contractual termination pay (ITL art. 5(1)(β)). Ex gratia retirement or termination payments, early-retirement scheme benefits and non-contractual termination pay (art. 5(1)(β)(iv) to (vi)) that exceed EUR 200,000 are taxed at 20% under art. 20ΣΤ and not added to other income; refer these. A loan or cash facility from a company to a director or individual shareholder (or their spouse or a relative to the second degree) is a deemed monthly benefit of 9% a year on the balance (ITL art. 5(1)(ζ)).
 
-**Business profit.** Expenses are deductible only if incurred wholly and exclusively to earn the income (ITL art. 9(1)). Not deductible (ITL art. 11): household or private spending, including home to work travel; tax itself; capital withdrawn or capital spending; improvements; amounts recoverable from insurance; private motor vehicle expenses (art. 11(13)); and business entertainment above 1% of gross receipts or EUR 30,000 (art. 11(12)). A private motor vehicle is not plant or machinery for capital allowances (ITL art. 10(1), proviso). Capital spending is relieved through wear-and-tear allowances (ITL art. 10); capital spending in 2023 to 2030 to improve a building's energy efficiency gets 7% a year (art. 10(2)). Pay on which Social Insurance and other fund contributions are not paid in the year they fall due is not deductible until they are paid within the time the law allows, and rent paid in breach of ACL art. 48A is not deductible (ITL art. 9).
+**Business profit.** Expenses are deductible only if incurred wholly and exclusively to earn the income (ITL art. 9(1)). Not deductible (ITL art. 11): household or private spending, including home to work travel; tax itself; capital withdrawn or capital spending; improvements; amounts recoverable from insurance; private motor vehicle expenses (art. 11(13)); interest on the cost of a private motor vehicle, or of any other asset not used in the business, for 7 years from its purchase (art. 11(15)); and business entertainment above 1% of gross receipts or EUR 30,000 (art. 11(12)). A private motor vehicle is not plant or machinery for capital allowances (ITL art. 10(1), proviso). Capital spending is relieved through wear-and-tear allowances (ITL art. 10); capital spending in 2023 to 2030 gets 7% a year for a building's insulation and window replacement, 20% for efficiency systems, renewables and storage batteries, and 33 1/3% for electric vehicles (art. 10(2), third proviso). Pay on which Social Insurance and other fund contributions are not paid in the year they fall due is not deductible until they are paid within the time the law allows, and rent paid in breach of ACL art. 48A is not deductible (ITL art. 9).
 
 **Rent.** Rent is taxed at the bands. Deduct 20% of gross rent from buildings, then wear and tear and interest (ITL art. 9(2)). From 2026 there is no SDC on rent (the SDC Law no longer charges it). From 1 July 2026 rent for property in Cyprus may be paid only by bank transfer, card or another recognised electronic means, and the landlord may not accept any other method (ACL art. 48A, in force 1 July 2026 under Law 243(I)/2025 s. 35(β)). Tax on rent is paid through provisional tax (see Deadlines). The Tax Department's FAQs (question 53) say a tenant that is a company still withholds GHS from the rent; rates are in `cyprus-social-contributions`.
 
 **Dividends, interest and securities gains.** None is taxed at the bands (ITL art. 8(19), (20), (22)). A resident who is also domiciled in Cyprus pays SDC on dividends and interest (SDC Law arts. 2, 3, 3B):
 - Dividends out of profits of 2026 onward: 5%.
-- Dividends out of profits up to tax year 2025, received within six years from 1 January 2026: 17%. The rate follows the year of the profits, not the year the dividend is paid.
+- Dividends from a Cyprus-resident company out of profits up to tax year 2025, received within six years from 1 January 2026: 17%. The rate follows the year of the profits, not the year the dividend is paid.
+- A disguised dividend distribution from a Cyprus-resident company to a shareholder (for example company assets used privately) carries 10% SDC (SDC Law art. 3A); refer these.
 - Interest: 17%, or 3% on Cyprus or EU government savings certificates and development bonds and on listed bonds. A person whose total income, interest included, is not over EUR 12,000 can reclaim SDC withheld on interest above 3%.
 - A resident who is not domiciled pays no SDC. Deemed domicile after 17 of the last 20 years of residence; the rules are in `cy-non-dom`.
 - GHS also applies to this income; see `cyprus-social-contributions`.
@@ -120,7 +123,7 @@ Above EUR 72,000, tax is EUR 13,500 plus 35% of the excess.
 - Crypto-asset disposals (sale, gift, swap, use as payment): 8% (art. 20E). Crypto from mining is outside 20E and taxed at the bands (art. 20E(4)).
 - Approved share option or award plans: 8% on the benefit up to twice the year's pay from that employer and EUR 1,000,000 per rolling ten years; the excess is taxed at the bands (art. 20D).
 - Foreign pension for services abroad: 5% above EUR 5,000, or the bands, chosen each year (art. 20).
-- AIF carried interest and UCITS performance fees: 8% with EUR 10,000 minimum tax (arts. 20B and 20C).
+- AIF carried interest and UCITS performance fees: 8% with EUR 10,000 minimum tax, chosen year by year; a person who chooses it loses the art. 8(21), (21A), (21B), (23) and (23A) exemptions (arts. 20B and 20C, para. (7)).
 
 ## Deadlines and filing
 
@@ -147,8 +150,8 @@ Above EUR 72,000, tax is EUR 13,500 plus 35% of the excess.
 - **Provisional tax too low** (ACL art. 26(1)): if provisional chargeable income is below three quarters of the final figure, the person pays an extra one tenth of the difference between the final tax and the provisional tax. Overpaid provisional tax is refunded (art. 26(2)).
 - **Loss of reliefs:** a late return by either partner loses the art. 14B deductions (ITL art. 14B(2)(α)).
 - **Assessment window:** the Tax Department can assess within 6 years from the later of the filing of the return and of any revised return (ACL art. 23(1)); 12 years for fraud or wilful default (art. 23(2)).
-- **Business closure:** the Tax Department can suspend a business and seal its premises for up to 10 days if the person fails to file at least two tax returns, fails to pay tax due, does not issue proper invoices or receipts, or obstructs an audit, after three registered-mail notices (ACL art. 32A). Refer any client facing enforcement.
-- **SDC:** late payment of SDC carries 5%, and another 5% after 2 months (SDC Law); see `cy-non-dom`.
+- **Business closure:** the Tax Department can suspend a business and seal its premises for up to 10 days if the person fails, on or after 1 January 2027, to file at least two tax returns (or twelve monthly withholding returns or three VAT returns); fails to pay tax due where the total owed, charges included, exceeds EUR 20,000; does not issue proper invoices or receipts; or obstructs an audit. Three registered-mail notices must come first (ACL art. 32A(1) and (2)). Refer any client facing enforcement.
+- **SDC:** late payment of SDC carries 5%, and another 5% if still unpaid 2 months after the due date (SDC Law art. 7B(ε)); see `cy-non-dom`.
 
 ## Cross-border points
 
@@ -245,17 +248,18 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law 118(I)/2002, consolidated to Law 67(I)/2026 (CyLaw): arts. 2, 5, 8, 9, 10, 11, 13, 14, 14B, 20, 20B to 20E, 25, 34 to 36, Second Schedule | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-24 |
+| Income Tax Law 118(I)/2002, consolidated to Law 67(I)/2026 (CyLaw): arts. 2, 5, 8, 9, 10, 11, 13, 14, 14B, 20, 20B to 20ΣΤ, 25, 34 to 36, Second Schedule | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_118/full.html | 2026-10-24 |
 | Income Tax (Amendment) (No. 4) Law 244(I)/2025, s. 25 commencement 1 January 2026 | https://www.cylaw.org/nomoi/arith/2025_1_244.pdf | 2026-10-24 |
-| Special Defence Contribution Law 117(I)/2002, consolidated (CyLaw): arts. 2, 3, 3B | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-10-24 |
+| Special Defence Contribution Law 117(I)/2002, consolidated (CyLaw): arts. 2, 3, 3A, 3B, 7B | https://www.cylaw.org/nomoi/enop/non-ind/2002_1_117/full.html | 2026-10-24 |
 | SDC (Amendment) (No. 4) Law 245(I)/2025, s. 10 commencement 1 January 2026 | https://www.cylaw.org/nomoi/arith/2025_1_245.pdf | 2026-10-24 |
 | Assessment and Collection of Taxes Law 4/1978, consolidated (CyLaw): arts. 5, 23 to 26, 30, 32A, 38, 39, 48A, 50A | https://www.cylaw.org/nomoi/enop/non-ind/1978_1_4/full.html | 2026-10-24 |
 | ACL (Amendment) (No. 2) Law 243(I)/2025, s. 35 commencement (1 January 2026; art. 48A from 1 July 2026) | https://www.cylaw.org/nomoi/arith/2025_1_243.pdf | 2026-10-24 |
 | Tax Department, Individual Income Tax Return page (TFA from 2026, 2025 deadline 31 October 2026, band table) | https://www.gov.cy/mof-tax/en/documents/forologiki-dilosi-eisodimatos-atomoy/ | 2026-10-24 |
 | Tax Department, FAQs on the 2026 reform for individuals (11 May 2026): 2026 return due 31 July 2027, family income, TD59, GHS on rent | https://www.gov.cy/media/sites/167/2026/05/FAQs-110526.pdf | 2026-10-24 |
+| Public Default Interest Rate for 2026 Order, K.D.P. 376/2025 (3.50% from 1 January 2026) | https://www.cylaw.org/KDP/data/2025_1_376.pdf | 2026-10-24 |
 | Tax Department, presentation on the ACL amendments (default interest 3.5% from 1 January 2026) | https://www.gov.cy/media/sites/167/2026/03/2026-%CE%A6%CE%BF%CF%81%CE%9C%CE%B5%CF%84%CE%B1%CF%81%CF%81%CF%8D%CE%B8%CE%BC%CE%B9%CF%83%CE%B7-%CE%9D%CF%8C%CE%BC%CE%BF%CE%B9-%CE%A0%CE%92%CE%95-%CE%95%CE%B9%CF%83%CF%80%CF%81%CE%AC%CE%BE%CE%B5%CF%89%CF%82-%CE%A7%CE%B1%CF%81%CF%84%CE%BF%CF%83%CE%AE%CE%BC%CF%89%CE%BD.pdf | 2026-10-24 |
 
-Not yet confirmed: the wear-and-tear rates by asset class (set by a notification kept in force by ITL art. 47, not read); the publication date of the Income Tax (Amendment) (No. 6) Law of 2022 that opens art. 8(21A) (the Tax Department table read for v0.1 gave 26 July 2022); the transitional art. 8(23A) rules for 2016 to 2021 starters; how the art. 14B(1)(β) ownership proviso applies to the rent limb; the self-employed GHS rate, Social Insurance categories, the 2.65% GHS on pay and the 2026 insurable earnings ceiling from v0.1 (now only in `cyprus-social-contributions`, not re-read here); the landlord's GHS self-assessment on rent with no withholding (v0.1, FAQs question 54, not re-read); the SDC late-payment article number; the bad-debt conditions, home-office, phone and vehicle apportionment working rules, VAT interaction table, bank-statement classification patterns, Cyprus bank formats and the working-paper template from v0.1 (practice notes, not law, not carried).
+Not yet confirmed: the general wear-and-tear rates by asset class (set by the notification under art. 52A of the repealed Income Tax Law 58/1961, kept in force by ITL art. 47; no official copy found on CyLaw or the Tax Department site, and secondary tables are not cited); the publication date of the Income Tax (Amendment) (No. 6) Law of 2022 that opens art. 8(21A) (the Tax Department table read for v0.1 gave 26 July 2022); the transitional art. 8(23A) rules for 2016 to 2021 starters; how the art. 14B(1)(β) ownership proviso applies to the rent limb; whether the art. 20ΣΤ 20% rate applies to the whole payment or only to the part over EUR 200,000; the self-employed GHS rate, Social Insurance categories, the 2.65% GHS on pay and the 2026 insurable earnings ceiling from v0.1 (now only in `cyprus-social-contributions`, not re-read here); the landlord's GHS self-assessment on rent with no withholding (v0.1, FAQs question 54, not re-read); the bad-debt conditions, home-office, phone and vehicle apportionment working rules, VAT interaction table, bank-statement classification patterns, Cyprus bank formats and the working-paper template from v0.1 (practice notes, not law, not carried).
 
 <!-- openaccountants-cta-block -->
 
