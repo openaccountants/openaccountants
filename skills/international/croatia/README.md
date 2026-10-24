@@ -8,8 +8,6 @@ covered_by:
 partial:
   IT-IND: "croatia-income-tax carries tax year 2025 figures, not yet rolled to 2026"
   VAT: "croatia-vat-return carries tax year 2025 figures, not yet rolled to 2026"
-  SC: "croatia-social-contributions carries tax year 2025 contribution bases, not yet rolled to 2026"
-  PR: "croatia-payroll carries tax year 2025 figures, not yet rolled to 2026"
 ---
 
 # Croatia: tax pack
@@ -23,8 +21,8 @@ Calendar tax year unless a company is allowed a different business year. Authori
 | IT-IND, individual income tax | croatia-income-tax (2025 figures; partial) | source-cited draft |
 | IT-CORP, corporate income tax | hr-corporate-income-tax: who pays and residence, the 10% / 18% rates at EUR 1,000,000 of revenue, add-backs (50% representation and cars), depreciation, losses (5 years), thin capitalisation, the 30% EBITDA limit, advances, the PD return (30 April, e-filed by all) and fines, for 2026 | source-cited draft |
 | VAT | croatia-vat-return (2025 figures; partial) | source-cited draft |
-| SC, social contributions | croatia-social-contributions (2025 figures; partial) | source-cited draft |
-| PR, payroll withholding | croatia-payroll (2025 figures; partial) | source-cited draft |
+| SC, social contributions | croatia-social-contributions: Pillar I 15% and Pillar II 5% (20% Pillar I only), health 16.5%, the 2026 bases (minimum EUR 757.34, pension maximum EUR 11,958 a month and EUR 143,496 a year), the low-wage Pillar I relief, trainee and grandfathered first-job reliefs, fixed bases for obrt, freelancers and flat-rate taxpayers, deadlines and fines, for 2026 | source-cited draft |
+| PR, payroll withholding | croatia-payroll: monthly income tax advance with the EUR 600 allowance and dependants, local rates within the legal ranges (default 20% / 30%, EUR 5,000 monthly band), contributions with each salary, young-worker relief, the EUR 1,050 minimum wage, JOPPD deadlines and fines, for 2026 | source-cited draft |
 | TP, transfer pricing | hr-transfer-pricing: related persons, domestic cases (privileged status or losses), methods, documentation and compensating adjustment, PD-IPO with the 2026 e-invoice carve-out, the 2.65% related-party loan rate for 2026, thin capitalisation, APAs and CbCR | source-cited draft |
 | XB, cross-border | hr-cross-border: residence, PE, non-residents, article 31 withholding, treaty forms, foreign tax credit, exit tax | source-cited draft |
 
@@ -38,4 +36,7 @@ Calendar tax year unless a company is allowed a different business year. Authori
 - Odluka o objavi kamatne stope na zajmove između povezanih osoba, NN 150/2025: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2236.html (read 2026-10-23)
 - Tax Administration register of regulations (Opći porezni zakon, Zakon o administrativnoj suradnji u području poreza): https://porezna-uprava.gov.hr/Propisi (read 2026-10-23)
 - Tax Administration, Transferne cijene: https://porezna-uprava.gov.hr/hr/transferne-cijene/3993 (read 2026-10-23)
+- Zakon o doprinosima NN 84/08 and amendments to NN 152/24, consolidated in the Tax Administration register: https://porezna-uprava.gov.hr/Propisi (read 2026-10-23)
+- Naredba o iznosima osnovica za obračun doprinosa za 2026., NN 150/25: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_12_150_2237.html (read 2026-10-23)
+- Uredba o visini minimalne plaće za 2026., NN 132/25: https://narodne-novine.nn.hr/clanci/sluzbeni/2025_10_132_1931.html (read 2026-10-24)
 - Tax Administration: https://porezna-uprava.gov.hr/ (read 2026-10-23)
