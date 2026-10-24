@@ -65,9 +65,9 @@ Pay for past work is spread over the days on which the work was done (KSO art. 6
 **Wage tax.** The employer works out an advance tax each month (ZDDFL art. 42):
 1. Monthly tax base = taxable employment income accrued for the month (art. 24) less the employee's own mandatory social and health contributions withheld (art. 42(2)).
 2. Less any monthly reliefs the employer applies (disability relief, voluntary insurance withheld by the employer; art. 42(3)).
-3. Tax = base x 10% (art. 42(4)). It is withheld when the month's pay is finally paid (art. 42(5)). There is no tax-free allowance.
+3. Tax = base x 10% (art. 42(4)). It is withheld when the month's pay is finally paid (art. 42(5)) and paid over by the 25th of the month after the month it was withheld (art. 65(11)). There is no tax-free allowance.
 
-**Annual recalculation.** If the employer holds the employee's main contract on 31 December, it recalculates the year's tax by 31 January of the next year, using the reliefs the employee documents between 30 November and 31 December (ZDDFL art. 49(1), (3), (4)). Any shortfall is withheld, and any overpayment refunded, by 31 January (art. 49(5), (6)).
+**Annual recalculation.** If the employer holds the employee's main contract on 31 December, it recalculates the year's tax by 31 January of the next year, using the reliefs the employee documents between 30 November and 31 December (ZDDFL art. 49(1), (3), (4)). Any shortfall is withheld, and any overpayment refunded, by 31 January (art. 49(5), (6)). Tax withheld on the recalculation is paid by 25 February (art. 65(11)).
 
 ## Deadlines and filing
 
@@ -75,11 +75,12 @@ Pay for past work is spread over the days on which the work was done (KSO art. 6
 |---|---|---|
 | Social and health contributions for the month | 25th of the next month | KSO art. 7(1); ZZO art. 40(1)(1)(c) |
 | Contributions on extra pay for a past month, accrued or paid late | 25th of the month after it is accrued or paid | KSO art. 7(2) |
-| Declaration 1 (data per insured person) | 25th of the month after the month the data relate to | Ordinance N-13 art. 4(1)(1)(a), [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073) |
+| Declaration 1 (data per insured person) | 25th of the month after the month the data relate to; if pay for that month is accrued or paid after that date, by the end of the month in which it is accrued or paid | Ordinance N-13 art. 4(1)(1)(a), consolidated to ДВ бр. 90/2026 |
 | Declaration 6 (contributions due) | With Declaration 1 | Ordinance N-13 art. 4(3)(1) |
-| Wage tax withheld for the month | Paid by the 25th of the next month | ZDDFL art. 65(11) |
+| Wage tax withheld | 25th of the month after the month in which it was withheld | ZDDFL art. 65(11) |
 | Declaration 6 for the wage tax | 1st to 25th of the month after the month the tax was withheld | Ordinance N-13 art. 4(3)(5)(a) |
 | Annual recalculation of the employee's tax | 31 January of the next year | ZDDFL art. 49(1), (5), (6) |
+| Payment of tax withheld on the annual recalculation | 25 February of the next year | ZDDFL art. 65(11) |
 | Declaration 6 for tax from the annual recalculation | 25 February of the next year | Ordinance N-13 art. 4(3)(5)(b) |
 | Corrections to Declarations 1 and 6 by the employer | Up to 30 April of the next year; later only with NRA or NSSI approval | Ordinance N-13 art. 9(5) |
 
@@ -110,7 +111,7 @@ The KSO amounts are now printed in euro (2026 amendments). The ZDDFL amount is s
 
 An IT company (work accident rate 0.4%) pays an employee born in 1990 a gross salary of EUR 2,000 for October 2026. This is above the minimum insurable income for any activity (the highest in Appendix 1A is EUR 1,532.00) and below the EUR 2,300 ceiling, so the base is EUR 2,000.
 
-Employee contributions at 13.78%: EUR 275.60 (pension 131.60, second pillar 44.00, illness and maternity 28.00, unemployment 8.00, health 64.00). Tax base: 2,000 - 275.60 = EUR 1,724.40. Tax at 10%: EUR 172.44. Net pay: EUR 1,551.96. Employer contributions at 18.52% + 0.4% = 18.92%: EUR 378.40. Total cost to the employer: EUR 2,378.40. Contributions, Declarations 1 and 6 and the tax are all due by 25 November 2026.
+Employee contributions at 13.78%: EUR 275.60 (pension 131.60, second pillar 44.00, illness and maternity 28.00, unemployment 8.00, health 64.00). Tax base: 2,000 - 275.60 = EUR 1,724.40. Tax at 10%: EUR 172.44. Net pay: EUR 1,551.96. Employer contributions at 18.52% + 0.4% = 18.92%: EUR 378.40. Total cost to the employer: EUR 2,378.40. Contributions and Declarations 1 and 6 are due by 25 November 2026. If the October pay is also paid (and the tax withheld) in October, the tax is due by 25 November 2026 too; if the pay is paid in November, the tax is due by 25 December 2026 (ZDDFL art. 65(11)).
 
 ```oa-check
 name: Bulgaria employee born 1990, EUR 2,000 gross, October 2026, IT activity
@@ -194,9 +195,10 @@ expected:
 | Health Insurance Act (ZZO), consolidated to ДВ бр. 68/2026: arts. 29(3), 40 | https://lex.bg/laws/ldoc/2134412800 | 2026-10-24 |
 | Personal Income Taxes Act (ZDDFL): arts. 8, 24, 25, 42, 48, 49, 65, 81 | https://lex.bg/laws/ldoc/2135538631 | 2026-10-24 |
 | Council of Ministers Decree 243 of 13 November 2025 on the minimum wage, ДВ бр. 98/2025 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961 | 2026-10-24 |
-| Ordinance N-13 of 17 December 2019 (Declarations 1 and 6), ДВ бр. 1/2020: arts. 2, 4, 8, 9 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073 | 2026-10-24 |
+| Ordinance N-13 of 17 December 2019 (Declarations 1 and 6), original text ДВ бр. 1/2020: arts. 2, 4, 8, 9 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073 | 2026-10-24 |
+| Ordinance N-13, consolidated text to ДВ бр. 90/2026 (amendments ДВ бр. 10/2021, 15/2024, 17/2026, 90/2026; secondary consolidation by KiK-Info, checked article by article against the original): arts. 4, 6, 8, 9 | https://kik-info.com/normativna-baza/naredbi/h-13/ | 2026-10-24 |
 | NSSI, new insurable income limits from 1 August 2026 | https://nssi.bg/dohod01082026/ | 2026-10-24 |
 | Euro Introduction Act: arts. 11, 12, 13 | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-24 |
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-24 |
 
-Not yet confirmed: the consolidated text of Ordinance N-13 after its later amendments (only the original ДВ 1/2020 text was read, so the filing deadlines come from that text); the NRA's own 2026 payroll guidance (nra.bg served a human check, so it was not read); the statutory late-payment interest rate after the euro changeover; the minimum wage for 2027 (no decree had been published when this was read).
+Not yet confirmed: the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (the consolidated text used is a secondary consolidation; arts. 4(1)(1)(a), 4(3)(1), 4(3)(5) and 9(5) read the same in the original 2020 text); the NRA's own 2026 payroll guidance (nra.bg served a human check, so it was not read); the statutory late-payment interest rate after the euro changeover; the minimum wage for 2027 (no decree had been published when this was read).

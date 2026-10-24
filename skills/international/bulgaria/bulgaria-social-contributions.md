@@ -73,9 +73,9 @@ If the difference is negative, no final contribution is due on it. Contributions
 | What | Deadline | Source |
 |---|---|---|
 | Employer contributions and employee share | 25th of the month after the month worked | KSO art. 7(1); ZZO art. 40(1)(1)(c) |
-| Employer Declarations 1 and 6 | 25th of the month after the month the data relate to | Ordinance N-13 art. 4(1)(1)(a), (3)(1), [dv.parliament.bg](https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073) |
+| Employer Declarations 1 and 6 | 25th of the month after the month the data relate to | Ordinance N-13 art. 4(1)(1)(a), (3)(1), consolidated to ДВ бр. 90/2026 |
 | Self-insured monthly advances (social and health) | 25th of the month after the month they relate to | KSO art. 7(4); ZZO art. 40(1)(2) |
-| Self-insured Declaration 1 | 25th of the month after the month concerned; one annual Declaration 1 is allowed if insured for pension only | Ordinance N-13 arts. 4(1)(2)(a), 6(1) |
+| Self-insured Declaration 1 | 25th of the month after the month concerned; if insured for pension only, one Declaration 1 a year is allowed, filed by 25 February with the January data | Ordinance N-13 arts. 4(1)(2)(a), 6(1), (2) |
 | Self-insured: start or restart of activity | Declaration 1 by the 25th of the month after the first full month insured | Ordinance N-13 art. 6(3) |
 | Civil-contract contributions | 25th of the month after the month of payment | KSO art. 7(6) |
 | Self-insured final contributions | By the annual tax return deadline: 30 April of the next year | ZZO art. 40(1)(2); Ordinance on self-insured persons art. 2(4); ZDDFL art. 53(1) |
@@ -185,11 +185,12 @@ expected:
 | National Health Insurance Fund Budget Act for 2026, ДВ бр. 68/2026: art. 2 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=244981 | 2026-10-24 |
 | Health Insurance Act (ZZO), consolidated to ДВ бр. 68/2026: arts. 29(3), 40 | https://lex.bg/laws/ldoc/2134412800 | 2026-10-24 |
 | Ordinance on the social insurance of self-insured persons (NSSI copy): arts. 2, 3 | https://www.nssi.bg/wp-content/uploads/NOOSLBGIRCHML.pdf | 2026-10-24 |
-| Ordinance N-13 of 17 December 2019 (Declarations 1 and 6), ДВ бр. 1/2020: arts. 4, 6 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073 | 2026-10-24 |
+| Ordinance N-13 of 17 December 2019 (Declarations 1 and 6), original text ДВ бр. 1/2020: arts. 4, 6 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=144073 | 2026-10-24 |
+| Ordinance N-13, consolidated text to ДВ бр. 90/2026 (amendments ДВ бр. 10/2021, 15/2024, 17/2026, 90/2026; secondary consolidation by KiK-Info, checked article by article against the original): arts. 4, 6, 9 | https://kik-info.com/normativna-baza/naredbi/h-13/ | 2026-10-24 |
 | Personal Income Taxes Act (ZDDFL): arts. 25, 29, 42, 53 | https://lex.bg/laws/ldoc/2135538631 | 2026-10-24 |
 | Council of Ministers Decree 243 of 13 November 2025 on the minimum wage, ДВ бр. 98/2025 | https://dv.parliament.bg/DVWeb/showMaterialDV.jsp?idMat=238961 | 2026-10-24 |
 | NSSI, new insurable income limits from 1 August 2026 | https://nssi.bg/dohod01082026/ | 2026-10-24 |
 | Euro Introduction Act: arts. 11, 12, 13 | https://lex.bg/bg/laws/ldoc/2137244903 | 2026-10-24 |
 | Law on Interest on Taxes, Fees and Other Similar State Receivables, art. 1 | https://lex.bg/bg/laws/ldoc/2123675140 | 2026-10-24 |
 
-Not yet confirmed: how the NRA's 2026 reconciliation annex sums the annual minimum and maximum across the two 2026 periods (this skill adds the monthly limits for each month of activity, which follows KSO art. 6(9) but the 2026 form was not read; nra.bg served a human check); the treatment of advances paid on more than the final income; the consolidated text of Ordinance N-13 and of the self-insured ordinance after their latest amendments; the statutory late-payment interest rate after the euro changeover.
+Not yet confirmed: how the NRA's 2026 reconciliation annex sums the annual minimum and maximum across the two 2026 periods (this skill adds the monthly limits for each month of activity, which follows KSO art. 6(9) but the 2026 form was not read; nra.bg served a human check); the treatment of advances paid on more than the final income; the amending ДВ issues of Ordinance N-13 were not read on dv.parliament.bg (a secondary consolidation to ДВ бр. 90/2026 was used); the self-insured ordinance after its latest amendments; the statutory late-payment interest rate after the euro changeover.
