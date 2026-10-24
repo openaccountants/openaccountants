@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-10-23",
+  "guide": "skills/international/syria/sy-consumption-tax-jewellery-vehicles.md",
+  "guide_sha256": "44c254c12a486165c6c960296f12feab044caee47b6ff89efa333a2404900116",
+  "status": "local draft; independent source review found no material defects within scope; not published or attested",
+  "source": {
+    "url": "https://docs.mof.gov.sy/consumption_tax_on_imports_table.pdf",
+    "sha256": "951a25b73f88fab55300644515586ac38689b2b2074d5b6136c81c470683f37a",
+    "locators": {
+      "jewellery": "III pp6-7; Table3 p233",
+      "vehicles": "III p8; Table3 p233",
+      "common_filing": "V p10",
+      "denomination": "XXII p19",
+      "supersession": "XXIV p20"
+    }
+  },
+  "checks": {
+    "schema": "1 Guide, no errors/warnings",
+    "examples": "3 blocks, no failures/missing"
+  },
+  "remaining": [
+    "jewellery statutory additions",
+    "technical electronic-invoice/hallmarking instructions",
+    "full underlying legislation and later measures",
+    "territorial implementation",
+    "other customs/registration charges",
+    "negative component-credit outcome",
+    "complete imports"
+  ],
+  "review": {
+    "reviewer": "review_gi_minimum",
+    "date": "2026-10-23",
+    "result": "no material defects within scope",
+    "guide_sha256": "44c254c12a486165c6c960296f12feab044caee47b6ff89efa333a2404900116",
+    "record": "2026-10-23-syria-jewellery-vehicles-review.md"
+  }
+}
