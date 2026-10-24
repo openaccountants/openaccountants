@@ -1,10 +1,10 @@
 ---
 name: portugal-bookkeeping
 description: "Utilize esta skill sempre que lhe forem colocadas questões sobre contabilidade portuguesa, plano de contas, SNC, demonstrações financeiras ou normas contabilísticas em Portugal. Active perante expressões como \"contabilidade Portugal\", \"SNC\", \"código de contas\", \"Sistema de Normalização Contabilística\", \"plano de contas\", \"microentidade\", \"pequena entidade\", \"NCRF\", \"NCRF-PE\", \"NC-ME\", \"balanço\", \"demonstração de resultados\", \"IES\", \"contabilista certificado\", \"regime simplificado\", \"contabilidade organizada\", \"SAF-T(PT)\", \"CAE\", \"Categoria B\", ou qualquer questão sobre o registo de operações, relato financeiro ou regras contabilísticas para entidades portuguesas. Trigger also on: \"Portuguese bookkeeping\", \"Portugal accounting\", \"SNC chart of accounts\", \"Portuguese GAAP\", \"simplified regime Portugal\", \"organized accounting Portugal\", \"self-employed Portugal Cat B\", \"SAF-T Portugal\", \"CAE coefficients\", \"Portuguese certified accountant\"."
-version: 1.0
+version: 1.1
 jurisdiction: PT
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -531,8 +531,8 @@ Para o tratamento do regime de Residente Não Habitual (RNH) e do Incentivo Fisc
 - **IES integra dados contabilísticos e fiscais** — A submissão da IES integra os dados contabilísticos e fiscais num único relato anual
 - **Resultado fiscal e Quadro 07** — O resultado fiscal parte do resultado contabilístico (conta 81) com correcções fiscais no Quadro 07 da Modelo 22
 - **Principais correcções fiscais** — Principais correcções: tributação autónoma, gastos não dedutíveis, benefícios fiscais (SIFIDE, RFAI, DLRR)
-- **Taxa de IRC geral** — 21% (taxa geral)
-- **Taxa reduzida PME primeiros 50.000 EUR** — 17% (sobre os primeiros 50.000 EUR para PME; derrama estadual sobre lucros superiores a 1.500.000 EUR)
+- **Taxa de IRC geral** — 19% nos períodos de tributação iniciados em 2026 (20% em 2025, 18% em 2027, 17% a partir de 2028)  _(artigo 87.º, n.º 1, do CIRC; artigo 3.º da Lei n.º 64/2025; ver a skill pt-corporate-tax)_
+- **Taxa reduzida PME primeiros 50.000 EUR** — 15% em 2026 (16% em 2025) sobre os primeiros 50.000 EUR de matéria coletável de PME e Small Mid Cap; o excedente paga a taxa geral; derrama estadual sobre lucros superiores a 1.500.000 EUR  _(artigo 87.º, n.º 2, do CIRC; ver a skill pt-corporate-tax)_
 
 Utilize a skill pt-income-tax para o apuramento detalhado
 
