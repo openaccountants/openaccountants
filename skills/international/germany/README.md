@@ -16,7 +16,7 @@ Calendar tax year. Authorities: the Bundeszentralamt für Steuern and the local 
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | de-employee-income-tax, de-self-employed-income-tax, de-einkommensteuer-freelancer, de-capital-gains, de-rental-income, de-estimated-tax; partners and the year of moving in or out in de-partners-and-part-year; non-residents in de-non-resident-tax | source-cited draft |
-| IT-CORP, corporate income tax | de-corporate-tax (trade tax detail in de-trade-tax) | source-cited draft |
+| IT-CORP, corporate income tax | de-corporate-tax; trade tax (Gewerbesteuer) for companies, partnerships and sole traders in de-trade-tax (2026: liability, § 8 add-backs, § 9 reductions, EUR 24,500 allowance, 3.5% base rate, 200% multiplier floor, § 35 EStG credit, § 10a losses, apportionment, prepayments, penalties) | source-cited draft |
 | VAT | germany-vat-return (advance returns, transaction classification); de-vat-annual-and-special-schemes (annual return, § 19 small businesses and the EU scheme, § 20 cash basis, extension and special prepayment, partial exemption, § 15a, § 13b, OSS, penalties, e-invoicing dates) | source-cited draft |
 | SC, social contributions | de-social-contributions | source-cited draft |
 | PR, payroll withholding | de-payroll, germany-payroll | source-cited draft |
