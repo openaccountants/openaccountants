@@ -15,7 +15,7 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ie-income-tax-form11, ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
+| IT-IND, individual income tax | ie-income-tax-form11, ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc (2026 USC bands, exemption, reduced rates, surcharges, payroll and self-assessment collection), ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
 | IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | source-cited draft |
 | VAT | ie-vat-return (rates incl. the 9% hospitality rate from 1 July 2026, thresholds, VAT3, RTD, cash basis, reverse charge, RCT, VIES, penalties); ireland-vat-return (older duplicate of the same content, to be merged) | source-cited draft |
 | SC, social contributions | ie-prsi-class-s (self-employed and proprietary directors, Class S: 4.2% then 4.35% from 1 October 2026, 4.2375% blended for 2026 income, EUR 5,000 floor, EUR 650 minimum), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | source-cited draft |
