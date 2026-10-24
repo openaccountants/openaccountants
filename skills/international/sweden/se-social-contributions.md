@@ -54,7 +54,7 @@ F-skatt, FA-skatt and special A-skatt govern how tax is collected. The absence o
 | Employer contributions (staff of a sole trader) | 31.42% = 18.80% (sickness 3.55%, parental 2.00%, old-age pension 10.21%, survivor's 0.30%, labour market 2.64%, work injury 0.10%) + 12.62% allmän löneavgift | 2026 | SAL 2 kap. 26 §; Lag 1994:1920 1 and 3 §§ |
 | Employer: employee aged 67 at 1 January 2026 | 10.21%; 0% for employees born 1937 or earlier | 2026 | SAL 2 kap. 27 §; SAL transitional rules point 5 |
 | Employer: youth reduction, employee aged 18-22 at 1 January 2026 (born 2003-2007), pay from 1 April 2026 to 30 September 2027 | 20.81% on pay up to SEK 25,000 a calendar month; 31.42% above | 2026 | Lag (2026:100) 2 §; https://data.riksdagen.se/dokument/sfs-2026-100.text |
-| Employer: växa refund (first and second employee; sole traders qualify) | Refund of all employer contributions except the 10.21% part, on pay up to SEK 35,000 a month, for the first 24 months | 2026 | Lag (2025:1334) 3, 7-8 §§; https://data.riksdagen.se/dokument/sfs-2025-1334.text |
+| Employer: växa refund (first and second employee; sole traders qualify) | Refund of all employer contributions except the 10.21% part, on pay up to SEK 35,000 a month, for the first 24 months; employment of at least three months and at least 20 hours a week; can be combined with the youth reduction (10 § bars only the old växa rules and Lag 2021:423) | 2026 | Lag (2025:1334) 3, 7-8, 10 §§; https://data.riksdagen.se/dokument/sfs-2025-1334.text |
 | Employer: no contributions on small pay | Pay to one person under SEK 1,000 in the year | 2026 | SAL 2 kap. 14 § |
 
 The 2026 components of egenavgifter changed from 2025 (parental 2.60% to 2.00%, survivor's 0.60% to 0.30%, work injury 0.20% to 0.10%, allmän löneavgift 11.62% to 12.62%), but the total stays 28.97%. From 1 January 2026 the age for the 10.21% rate is 67 at the start of the year, not 66. Someone born 1959 turns 67 during 2026 and pays the full rate for the whole year.
@@ -111,7 +111,7 @@ Pay what the preliminary tax decision says, not an amount derived from the estim
 ## Penalties and interest
 
 - **Late return (förseningsavgift).** SEK 1,250 for an individual's income return. A second fee is charged if the return is still missing three months after the due date, and a third after a further two months (SFL 48 kap. 1, 6-7 §§). A person living abroad on the due date who files by 31 May pays no fee (48 kap. 3 §).
-- **Incorrect information (skattetillägg).** 40% of the tax that would have been lost on income tax and the allmän pensionsavgift (SFL 49 kap. 11 § with 56 kap. 3 §). 20% on other taxes, which covers egenavgifter, allmän löneavgift and särskild löneskatt (49 kap. 11 § with 56 kap. 6 §). Lower rates apply when the error is only one of timing (49 kap. 13 §).
+- **Incorrect information (skattetillägg).** 40% of the income tax that would have been lost (SFL 49 kap. 11 § with 56 kap. 3 § 1); 10% where the error is only one of timing (49 kap. 13 §). There is no skattetillägg on egenavgifter, on the self-employed allmän löneavgift or on the allmän pensionsavgift: SFL treats them as avgifter (2 kap. 2 §), and 49 kap. 3 § charges skattetillägg only on employer contributions under SAL 2 kap., the employer allmän löneavgift and the kommunal fastighetsavgift. There is none on särskild löneskatt on passive business either (49 kap. 2 §). Under-reported business income therefore draws the 40% surcharge on the extra income tax only.
 - **Cost interest (kostnadsränta).** Basränta 2.5% from 1 December 2024 (Skatteverket). Final tax owed carries interest at the basränta from 13 February 2027. On up to SEK 30,000 there is no interest from 13 February to 3 May 2027 (SFL 65 kap. 4 and 6 §§). Late payment after a due date carries basränta plus 15 points, now 17.5% (65 kap. 13 §). Cost interest is not deductible.
 - **Unpaid pension fee.** A fee not paid in time is not taken out, but the tax credit is lost (IL 67 kap. 4 §; SFL 62 kap. 17 §).
 
@@ -120,6 +120,7 @@ Pay what the preliminary tax decision says, not an amount derived from the estim
 - Egenavgifter are due on liable income from work in Sweden, and on work abroad only while the person is covered by Swedish social insurance under EU/EEA rules or a social security agreement (SAL 3 kap. 2 §). EU law and agreements override the Act (SAL 1 kap. 3 §).
 - Tax residence alone does not decide coverage. Before charging Swedish rates for work outside Sweden, or before leaving income out, get the coverage certificate (A1 within the EU/EEA) with its dates and covered activities. Keep foreign-covered income separate. Do not treat an unconfirmed claim of foreign coverage as an exemption.
 - Where the person is covered in Sweden, income earned abroad still enters the base, computed as if earned by a Swedish resident (SAL 3 kap. 12 § point 2).
+- An independent business carried on outside the EEA is always passive (IL 2 kap. 23 §), so it carries no egenavgifter. Särskild löneskatt under SLF 2 § reaches passive business "här i landet" (in Sweden) only.
 - Residence, SINK and treaty points are in [se-cross-border](se-cross-border.md).
 
 ## Worked examples
@@ -201,16 +202,16 @@ Working paper output: income year; classification and coverage evidence; base be
 | Lag (1994:1744) om allmän pensionsavgift, 2-5 §§ | https://data.riksdagen.se/dokument/sfs-1994-1744.text | 2026-10-24 |
 | Socialförsäkringsbalk (2010:110), 59 kap. 14 § | https://data.riksdagen.se/dokument/sfs-2010-110.text | 2026-10-24 |
 | Inkomstskattelag (1999:1229), 16 kap. 29-31 §§, 67 kap. 4 § | https://data.riksdagen.se/dokument/sfs-1999-1229.text | 2026-10-24 |
-| Skatteförfarandelag (2011:1244), 28 kap. 4-5 §§, 32 kap. 1 §, 48 kap. 1-7 §§, 49 kap. 11, 13 §§, 55 kap. 2-3 §§, 56 kap. 3, 6, 8 §§, 62 kap. 4-8, 17 §§, 65 kap. 3-6, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-24 |
+| Skatteförfarandelag (2011:1244), 2 kap. 2 §, 28 kap. 4-5 §§, 32 kap. 1 §, 48 kap. 1-7 §§, 49 kap. 2-3, 11, 13 §§, 55 kap. 2-3 §§, 56 kap. 3, 6, 8 §§, 62 kap. 4-8, 17 §§, 65 kap. 3-6, 13 §§ | https://data.riksdagen.se/dokument/sfs-2011-1244.text | 2026-10-24 |
 | Lag (2026:100) om tillfälligt sänkta arbetsgivaravgifter för unga, 2 § and transitional rules | https://data.riksdagen.se/dokument/sfs-2026-100.text | 2026-10-24 |
-| Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag, 3, 7-8 §§ | https://data.riksdagen.se/dokument/sfs-2025-1334.text | 2026-10-24 |
+| Lag (2025:1334) om återbetalning av vissa avgifter till växa-företag, 3, 7-8, 10 §§ | https://data.riksdagen.se/dokument/sfs-2025-1334.text | 2026-10-24 |
 | Skatteverket, egenavgifter och särskild löneskatt (2026 table, components, waiting periods, NE reconciliation, special and regional deductions, NACE at 13.2) | https://www.skatteverket.se/egenavgifter | 2026-10-24 |
 | Skatteverket, belopp och procent inkomstår 2026 (income and price base amounts, pension fee max SEK 47,100, ceiling SEK 673,038) | https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html | 2026-10-24 |
 | Skatteverket, fyll i N3A-bilagan (boxes 25-30) | https://www.skatteverket.se/foretag/inkomstdeklaration/deklarerasomdelagareihandelsbolag/fyllain3abilagan.4.2fb39afe18dabf1e4d251d9.html | 2026-10-24 |
 | Skatteverket, preliminärskatt för företag och föreningar (significant difference, six-month limit) | https://www.skatteverket.se/foretag/skatterochavdrag/skattekontobetalaochfatillbaka/preliminarskattforforetagochforeningar.4.233f91f71260075abe8800010616.html | 2026-10-24 |
 | Skatteverket, ränta på skattekontot (basränta 2.5%, high rate 17.5%) | https://www.skatteverket.se/rantapaskattekontot | 2026-10-24 |
 
-Not yet confirmed: the support-area annex to Lag 2001:1170 was not listed here, and the de minimis conditions in its 6 c § were not worked through; the statutory basis of the sickness rates for waiting periods other than 7 days (SAL 3 kap. 17 § delegates them; the figures are Skatteverket's); the statutory basis of the 10% schablonavdrag on the 10.21% route (IL sets only the 25% and 20% maximums); the later filing date for returns filed through a tax agent; how the regional and special deductions interact when both apply to the same base; whether the youth reduction and the växa refund can apply to the same pay (see sweden-payroll); and a Skatteverket page applying the 20% skattetillägg rate to egenavgifter (the rate here is read from SFL 49 kap. 11 § with 56 kap. 3 and 6 §§).
+Not yet confirmed: the support-area annex to Lag 2001:1170 was not listed here, and the de minimis conditions in its 6 c § were not worked through; the statutory basis of the sickness rates for waiting periods other than 7 days (SAL 3 kap. 17 § delegates them; the figures are Skatteverket's); the statutory basis of the 10% schablonavdrag on the 10.21% route (IL sets only the 25% and 20% maximums); the later filing date for returns filed through a tax agent; and how the regional and special deductions interact when both apply to the same base.
 
 <!-- openaccountants-cta-block -->
 
