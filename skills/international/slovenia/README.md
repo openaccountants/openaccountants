@@ -5,8 +5,6 @@ not_applicable: {}
 covered_by:
   XB: si-cross-border
 partial:
-  IT-IND: "tax year 2025 figures; 2026 refresh pending"
-  VAT: "tax year 2025 figures; 2026 refresh pending"
   SC: "tax year 2025 figures; 2026 refresh pending"
   PR: "tax year 2025 figures; 2026 refresh pending"
 ---
@@ -19,9 +17,9 @@ Calendar tax year for individuals; companies may use a business year of up to 12
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | slovenia-income-tax (tax year 2025) | source-cited draft |
+| IT-IND, individual income tax | slovenia-income-tax (2026: five-band scale 16% to 50% with the 2026 indexed bands, general allowance EUR 5,551.93 and its taper, dependants, capital income at 25% with 20%, 15% and exemption by holding period, INR at 15%, rent at 25% with 10% standard costs, s.p. normed expenses at 20% as a pointer, informative calculation and objection, advance tax, fines) | source-cited draft |
 | IT-CORP, corporate income tax | si-corporate-income-tax (2026: 22% rate under ZORZFS art. 64, base and non-deductible items, depreciation caps, R&D, investment and green reliefs, losses over five years at 50% of the base, 63% overall cap, interest limitation, advances, return, fines) | source-cited draft |
-| VAT | slovenia-vat-return (tax year 2025) | source-cited draft |
+| VAT | slovenia-vat-return (2026: 22%, 9.5% and 5% rates, EUR 60,000 small business exemption and EUR 66,000 ceiling, EU SME scheme, monthly or quarterly at EUR 210,000, DDV-O by the last working day (the 20th for RP-O filers) with payment by the last working day, VAT ledgers and prefilled return, domestic reverse charge, RP-O and PD-O, VAT groups, fiscal cash registers, B2B e-invoicing from 2028, fines and interest) | source-cited draft |
 | SC, social contributions | slovenia-social-contributions (tax year 2025) | source-cited draft |
 | PR, payroll withholding | slovenia-payroll (tax year 2025) | source-cited draft |
 | TP, transfer pricing | si-transfer-pricing (2026: related parties, arm's length, recognised interest rate, documentation, fines, CbCR, APA, MAP) | source-cited draft |
@@ -33,6 +31,8 @@ Also in the pack: si-tax-overview, si-company-formation, slovenia-tax-optimizati
 
 - Corporate Income Tax Act (ZDDPO-2), consolidated: https://pisrs.si/pregledPredpisa?id=ZAKO4687 (read 2026-10-23)
 - Personal Income Tax Act (ZDoh-2), consolidated: https://pisrs.si/pregledPredpisa?id=ZAKO4697 (read 2026-10-23)
+- VAT Act (ZDDV-1), consolidated: https://pisrs.si/pregledPredpisa?id=ZAKO4701 (read 2026-10-24)
+- FURS, VAT: https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_na_dodano_vrednost_ddv/ (read 2026-10-24)
 - Tax Procedure Act (ZDavP-2), consolidated: https://pisrs.si/pregledPredpisa?id=ZAKO4703 (read 2026-10-23)
 - FURS, international taxation: https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/mednarodno_obdavcenje/ (read 2026-10-23)
 - FURS, corporate income tax: https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo/ (read 2026-10-23)

@@ -6,7 +6,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
@@ -18,7 +18,7 @@ Source-cited draft: not reviewed by an accountant, not for filing.
 This is the hub for the Lithuanian cross-border (XB) domain. It links rather than repeats:
 
 - Corporate tax in general (rates for small companies, losses, advance payments): [lt-corporate-income-tax](lt-corporate-income-tax.md). That skill still carries 2025 figures; the 2026 rates below come from the law in force.
-- Personal income tax for residents: [lithuania-pit](lithuania-pit.md) (also 2025 figures).
+- Personal income tax for residents: [lithuania-pit](lithuania-pit.md) (2026 figures).
 - Payroll and Sodra contributions: [lt-payroll-social](lt-payroll-social.md).
 - VAT: [lithuania-vat-return](lithuania-vat-return.md).
 
