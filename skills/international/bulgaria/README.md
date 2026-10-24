@@ -6,7 +6,6 @@ covered_by:
   XB: bg-cross-border
 partial:
   IT-IND: "bulgaria-income-tax still carries 2025 figures; rewrite for 2026 and the euro pending"
-  VAT: "bulgaria-vat-return still carries 2025 figures; rewrite for 2026 and the euro pending"
   SC: "bulgaria-social-contributions still carries 2025 figures; rewrite for 2026 pending"
   PR: "bulgaria-payroll still carries 2025 figures; rewrite for 2026 pending"
 ---
@@ -21,7 +20,7 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 |---|---|---|
 | IT-IND, individual income tax | bulgaria-income-tax | source-cited draft (2025 figures) |
 | IT-CORP, corporate income tax | bg-corporate-income-tax | source-cited draft |
-| VAT | bulgaria-vat-return | source-cited draft (2025 figures) |
+| VAT | bulgaria-vat-return | source-cited draft (2026, euro) |
 | SC, social contributions | bulgaria-social-contributions | source-cited draft (2025 figures) |
 | PR, payroll withholding | bulgaria-payroll | source-cited draft (2025 figures) |
 | TP, transfer pricing | bg-transfer-pricing | source-cited draft |
@@ -37,3 +36,4 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 - Personal Income Taxes Act (ZDDFL), consolidated: https://lex.bg/laws/ldoc/2135538631 (read 2026-10-23)
 - NRA, application of double tax treaties: https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/prilagane-na-SIDDO (read 2026-10-23)
 - NRA, list of double tax treaties: https://nra.bg/wps/portal/nra/mezhdunarodni-deinosti/siddo/spisak-sas-spogodbi (read 2026-10-23)
+- Value Added Tax Act (ZDDS), consolidated: https://lex.bg/laws/ldoc/2135533201 (read 2026-10-24)
