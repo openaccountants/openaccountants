@@ -6,7 +6,6 @@ covered_by:
   XB: bg-cross-border
 partial:
   IT-IND: "bulgaria-income-tax still carries 2025 figures; rewrite for 2026 and the euro pending"
-  IT-CORP: "bg-corporate-income-tax still carries 2025 figures; rewrite for 2026 and the euro pending"
   VAT: "bulgaria-vat-return still carries 2025 figures; rewrite for 2026 and the euro pending"
   SC: "bulgaria-social-contributions still carries 2025 figures; rewrite for 2026 pending"
   PR: "bulgaria-payroll still carries 2025 figures; rewrite for 2026 pending"
@@ -21,7 +20,7 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 | Domain | Skill | Status |
 |---|---|---|
 | IT-IND, individual income tax | bulgaria-income-tax | source-cited draft (2025 figures) |
-| IT-CORP, corporate income tax | bg-corporate-income-tax | source-cited draft (2025 figures) |
+| IT-CORP, corporate income tax | bg-corporate-income-tax | source-cited draft |
 | VAT | bulgaria-vat-return | source-cited draft (2025 figures) |
 | SC, social contributions | bulgaria-social-contributions | source-cited draft (2025 figures) |
 | PR, payroll withholding | bulgaria-payroll | source-cited draft (2025 figures) |
