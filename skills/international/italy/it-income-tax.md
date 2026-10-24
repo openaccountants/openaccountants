@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. No accountant has reviewed it. Do not rely on it to file, pay or take a tax position without review by a qualified Italian professional (commercialista).
 
-How Italy taxes a resident self-employed professional under IRPEF for tax year 2026. The tax year is the calendar year, so 2026 income is declared and settled in 2027. The authority is the Agenzia delle Entrate; the currency is the euro. For 2026 income the old TUIR (D.P.R. 917/1986) applies. The new TUIR (D.Lgs. 117/2026) applies only from 1 January 2027, so Normattiva may show some old articles as repealed for later dates. Every statute here was read as in force on 24 October 2026.
+How Italy taxes a resident self-employed professional under IRPEF for tax year 2026. The tax year is the calendar year, so 2026 income is declared and settled in 2027. The authority is the Agenzia delle Entrate; the currency is the euro. For 2026 income the TUIR of 1986 (D.P.R. 917/1986) applies; Normattiva shows it in force on 24 October 2026. A new consolidated TUIR, D.Lgs. 19 June 2026 n. 117, was published on 3 July 2026 (see "Not yet confirmed" for the date it starts to apply). Every statute here was read as in force on 24 October 2026.
 
 This skill does not repeat its siblings:
 
@@ -68,7 +68,7 @@ Out of scope:
 | Pension detrazione, extra if total income is above EUR 25,000 and not above 29,000 | EUR 50 | 2026 | TUIR art. 13(3-bis), link above |
 | Cuneo fiscale, employees with total income up to EUR 20,000: tax-free sum, share of employment income | 7.1% / 5.3% / 4.8% (pay up to 8,500 / up to 15,000 / above) | 2026 | L. 207/2024 art. 1 comma 4, https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207~art1!vig=2026-10-24 |
 | Cuneo fiscale, employees with total income above EUR 20,000: extra detrazione | EUR 1,000 to 32,000, then 1,000 x (40,000 - total income) / 8,000; nil above 40,000 | 2026 | L. 207/2024 art. 1 comma 6, link above |
-| 19% detrazioni (oneri), e.g. medical costs above EUR 129.11 | 19% | 2026 | TUIR art. 16-ter(5-bis)(a); Agenzia, https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio |
+| Detrazioni for oneri (art. 15), e.g. medical costs above EUR 129.11 | 19% | 2026 | D.Lgs. 446/1997 art. 49(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-10-24; Agenzia, https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio |
 | 19% detrazioni in full up to total income of | EUR 120,000; then x (240,000 - total income) / 120,000; nil from 240,000 | 2026 | TUIR art. 15(3-bis), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art15!vig=2026-10-24 |
 | Cap on oneri giving a detrazione, total income above EUR 75,000 and up to 100,000: base amount | EUR 14,000 | 2026 | TUIR art. 16-ter(1)-(2), https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917~art16ter!vig=2026-10-24 |
 | Same cap, total income above EUR 100,000: base amount | EUR 8,000 | 2026 | TUIR art. 16-ter(2)(b), link above |
@@ -96,11 +96,12 @@ Out of scope:
 
 How the table works:
 
+- **Why 19% and not 22%.** Normattiva's text of TUIR art. 15(1) still prints "22 per cento". The rate was fixed at 19% for oneri paid from 1998 by D.Lgs. 446/1997 art. 49, which did not amend the words of art. 15, so the consolidated text never changed. L. 199/2025 did not change the rate: it only refers to oneri "nella misura del 19 per cento" in the new art. 16-ter(5-bis).
 - **Bands** apply to taxable income: total income (reddito complessivo) less oneri deducibili (art. 10), such as compulsory INPS or cassa contributions paid in the year. Each rate applies only to the slice inside its band.
 - **Detrazioni** come off gross tax, never off income, and only up to the tax due: no refund of the excess (art. 11(3)). The art. 13 detrazioni use **total income**, before oneri deducibili and without the main home (art. 13(6-bis)). Each ratio is taken to four decimal places, cut off, not rounded (art. 13(6)).
 - **One art. 13 detrazione only.** The self-employed one (comma 5) cannot be combined with the employment (comma 1) or pension (comma 3) one. Employment and pension amounts are scaled to the days worked or drawn in the year; the self-employed one is not.
 - **No-tax area for the self-employed.** EUR 1,265 is 23% of EUR 5,500, so with no other income or oneri no IRPEF is due up to EUR 5,500 of total income.
-- **Order for oneri.** First the art. 16-ter cap (above EUR 75,000), then the art. 15(3-bis) phase-out (above EUR 120,000), then the EUR 440 cut (above EUR 200,000), which cannot take the detrazione below nil. Medical costs and some start-up investments are outside the art. 16-ter cap; mortgage interest, insurance and multi-year building instalments from contracts or spending up to 31 December 2024 are also outside it (art. 16-ter(4)-(5)).
+- **Order for oneri.** First the art. 16-ter cap (above EUR 75,000), then the art. 15(3-bis) phase-out (above EUR 120,000), then the EUR 440 cut (above EUR 200,000). Medical costs and mortgage interest (art. 15(1)(a), (b) and (1-ter)) are outside the art. 15(3-bis) phase-out at any income (art. 15(3-quater)), and medical costs are also outside the EUR 440 cut. Medical costs and some start-up investments are outside the art. 16-ter cap; mortgage interest, insurance and multi-year building instalments from contracts or spending up to 31 December 2024 are also outside it (art. 16-ter(4)-(5)).
 - **Cuneo fiscale** is for employees only (L. 207/2024 commi 4-9). A professional with no employment income gets neither part. The details, the separate trattamento integrativo and the 2026 payroll substitute taxes are in `it-irpef-employees` and `italy-payroll`.
 
 ## The taxable base
@@ -149,7 +150,7 @@ How the table works:
 | Item | Rule | Source |
 |---|---|---|
 | Return not filed | 120% of the tax due, minimum EUR 250; no tax due: EUR 250 to 1,000 (up to double for those who must keep books) | D.Lgs. 471/1997 art. 1(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-24 |
-| Return filed more than 90 days late, before any audit and within the assessment period | 75% of the tax due (three times the 25% late-payment penalty) | D.Lgs. 471/1997 art. 1(1), link above |
+| Return filed more than 90 days late, before any audit and within the assessment period | 75% of the tax due (three times the 25% late-payment penalty) | D.Lgs. 471/1997 art. 1(1-bis), link above |
 | Understated return (infedele) | 70% of the extra tax, minimum EUR 150; cut by a third if the extra tax is under 3% of the tax declared and under EUR 30,000 | D.Lgs. 471/1997 art. 1(2) and (4), link above |
 | Late payment | 25% of the unpaid amount; half (12.5%) if paid within 90 days; within 15 days, one fifteenth of that half for each day late | D.Lgs. 471/1997 art. 13(1), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 |
 | Ravvedimento: unpaid tax or acconto paid within 30 days | one tenth of the minimum penalty | D.Lgs. 472/1997 art. 13(1)(a), https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24 |
@@ -159,7 +160,7 @@ How the table works:
 | Ravvedimento: return filed up to 90 days late | one tenth of the minimum omitted-return penalty (EUR 25 on the EUR 250 minimum) | D.Lgs. 472/1997 art. 13(1)(c), link above |
 | Interest with ravvedimento | legal rate, day by day: 1.60% a year from 1 January 2026 | D.Lgs. 472/1997 art. 13(2); D.M. 10 December 2025, GU n. 289 of 13 December 2025 |
 
-Ravvedimento is barred once a notice of assessment or liquidation is served (art. 13(1-ter)). The reduced penalty, the tax and the interest are paid together. Lower reductions (one sixth, one fifth) apply after an audit report or a draft assessment; refer those. Invoice and VAT penalties are in `italy-vat-return`.
+Ravvedimento is barred once a notice of assessment or liquidation is served (art. 13(1-ter)). The reduced penalty, the tax and the interest are paid together. Smaller reductions (one sixth, one fifth, one quarter) apply after an audit report or a draft assessment (art. 13(1)(b-ter) to (b-quinquies)); refer those. Invoice and VAT penalties are in `italy-vat-return`.
 
 ## Cross-border points
 
@@ -273,6 +274,7 @@ expected:
 | D.P.R. 322/1998 art. 2 (Redditi PF deadlines, late returns) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1998-07-22;322~art2!vig=2026-10-24 | 2026-10-24 |
 | D.M. 164/1999 art. 13 (730 by 30 September) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.finanze:decreto:1999-05-31;164~art13!vig=2026-10-24 | 2026-10-24 |
 | D.L. 70/2011 art. 7(2)(l) (deadlines on a Saturday or holiday) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2011-05-13;70~art7!vig=2026-10-24 | 2026-10-24 |
+| D.Lgs. 446/1997 art. 49 (19% rate for oneri from 1998) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art49!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 471/1997 arts. 1 and 13 (penalties) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art1!vig=2026-10-24 | 2026-10-24 |
 | D.Lgs. 472/1997 art. 13 (ravvedimento) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;472~art13!vig=2026-10-24 | 2026-10-24 |
 | D.M. 10 December 2025, legal interest rate for 2026 (GU n. 289, 13 December 2025) | https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.dataPubblicazioneGazzetta=2025-12-13&atto.codiceRedazionale=25A06705&tipoSerie=serie_generale&tipoVigenza=originario | 2026-10-24 |
@@ -287,7 +289,7 @@ expected:
 
 Not yet confirmed:
 
-- **19% rate in the statute.** Normattiva's text of TUIR art. 15(1) still prints "22 per cento"; the 19% rests on later law that the consolidated text does not show in that article, on art. 16-ter(5-bis)(a) as inserted by L. 199/2025 ("nella misura del 19 per cento") and on the Agenzia pages. The amending act was not read.
+- **New TUIR start date.** D.Lgs. 117/2026 is on Normattiva (in force 4 July 2026), but the article that sets when it starts to apply (reported as 1 January 2027) was not read in the official text.
 - **Consolidated codes from 2027.** The 2026 balance, the acconti and any penalties fall in 2027, when D.Lgs. 33/2025 (payments) and D.Lgs. 173/2024 (penalties) apply with new article numbers. We did not read whether they change any figure above.
 - **Depreciation coefficients** (D.M. 31 December 1988) and the car cost cap in euro: not read.
 - **Regional and municipal rates for 2026**: each region and comune sets its own; none read.
