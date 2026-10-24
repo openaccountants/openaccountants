@@ -5,7 +5,7 @@ jurisdiction: LT
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 version: 0.1
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -38,7 +38,9 @@ The law is the Law on Corporate Income Tax No. IX-675 ("PMĮ", consolidated vers
 - an entity and the spouses, partners and close relatives of its participants or managers;
 - members of one group of entities (a parent with subsidiaries in which it holds, directly or indirectly, more than 25% of shares, votes or profit rights, PMĮ art. 2(7));
 - two entities where one holds, directly or indirectly, 25% or more of the other's shares or votes, or has agreed to coordinate its decisions with the other, to answer for the other's obligations to third parties, to hand over all or part of its profit, or has given the other the use of 25% or more of its assets;
-- further links through common participants and their relatives (art. 2(33), points 5 to 9).
+- further links inside a group through participants with 25% or more, managers and their relatives, and two entities that the same participants or their relatives each own 25% or more of (art. 2(33), points 5 to 7 and 9);
+- an entity and its permanent establishment, PEs of one entity, and PEs of group members (points 10 to 12);
+- two entities where one has decision-making rights in the other (point 13).
 
 **Domestic deals count.** The arm's length rule applies to transactions between two Lithuanian entities too. Only the documentation duty has a domestic exemption (Rules para. 87.1, see Deadlines).
 
@@ -54,7 +56,7 @@ The law is the Law on Corporate Income Tax No. IX-675 ("PMĮ", consolidated vers
 | Documentation exemption: controlled transaction with a value in the period not above | EUR 90,000 (unless repeated, linked or with a target territory) | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules para. 87.2) |
 | FR0528 related-party report: a transaction, a total, or a loan balance on any day of | EUR 90,000 or more, excluding VAT | 2026 | https://www.vmi.lt/evmi/asocijuot%C5%B3-asmen%C5%B3-tarpusavio-sandori%C5%B3-arba-%C5%ABkini%C5%B3-operacij%C5%B3-ataskaita-fr0528- (answer KM1402) |
 | Mark-up for low value-adding intra-group services (simplified approach) | 5% on the cost base | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules para. 76-1) |
-| Hard-to-value intangibles: no ex post adjustment if the change in price stays within | 20% of the actual price, or after 5 years of third-party income | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules para. 67-1) |
+| Hard-to-value intangibles: no ex post adjustment if the change in price stays within | 20% of the actual price, or the 20% is exceeded only more than 5 years after the year of first third-party income | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules para. 67-1) |
 | Time to hand documentation to VMI after a request | 30 days | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules para. 91) |
 | Refresh of the local file and of database comparables when conditions do not change | at least every 3 years (transaction data every year) | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules paras. 88, 89) |
 | Keep documentation for at least | 5 calendar years from the year after the transaction | 2026 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr (Rules para. 94) |
@@ -87,7 +89,7 @@ Lithuanian law prints some article and paragraph numbers with a superscript (37�
 - Cost allocation keys (turnover, headcount) are allowed if the charge matches the benefit (para. 74).
 - **Low value-adding services** (HR, IT support, accounting, legal and similar back-office work that is not the group's core business, creates no unique intangibles and carries no significant risk, para. 3.1) can be priced at cost plus **5%** without a benchmark, when a cost-based method is the most appropriate. The simplification does not apply where the same services are also bought from or sold to third parties (para. 76-1).
 
-**Intangibles** (paras. 58 to 67-1). Each group member that performs, controls or funds development, enhancement, maintenance, protection or exploitation of an intangible earns a return for that contribution; legal ownership alone does not earn the residual (paras. 59 to 61). Cost-based methods are normally not used to value intangibles (para. 64). For **hard-to-value intangibles** VMI may adjust the original price using later results, unless the taxpayer shows detailed ex ante forecasts and that the difference came from unforeseeable events, or the change would be 20% or less of the actual price, or more than 5 years have passed since the first third-party income (para. 67-1).
+**Intangibles** (paras. 58 to 67-1). Each group member that performs, controls or funds development, enhancement, maintenance, protection or exploitation of an intangible earns a return for that contribution; legal ownership alone does not earn the residual (paras. 59 to 61). Cost-based methods are normally not used to value intangibles (para. 64). For **hard-to-value intangibles** VMI may adjust the original price using later results, unless the taxpayer shows detailed ex ante forecasts and that the difference came from unforeseeable events, or the change would be 20% or less of the actual price, or the 20% is exceeded only more than 5 years after the year in which the buyer first earned income from unassociated persons with the intangible (paras. 67-1.1 to 67-1.3).
 
 **Interest and rent paid to a controlling person** have their own deductibility rules in PMĮ; they are in [lt-corporate-income-tax](lt-corporate-income-tax.md), not here.
 
@@ -122,7 +124,9 @@ Values are without VAT. Dividends, donations, group loss transfers, advance paym
 - The request describes the transaction, the parties' obligations, risks and assets, the method, the comparables, the price or range, and the critical assumptions (art. 37-2(1)).
 - VMI decides within 90 days, extendable once by 90 days (art. 37-2(2)). It can approve, amend with the taxpayer's agreement, or refuse with reasons (art. 37-2(3)).
 - An approved APA binds VMI (art. 37-2(4)). It lasts for the period in the request but no longer than the current year plus 5 calendar years, and ends earlier if the law it relies on changes (art. 37-2(5)). It can be amended when conditions shift without breaking the critical assumptions (art. 37-2(7)).
-- Bilateral and multilateral APAs are linked to the Law on resolution of double taxation disputes (art. 37-2(5)).
+- To renew an APA whose conditions will not change, apply at least 180 days before it ends (art. 37-2(8)). While an APA runs, the taxpayer files an annual report on how it is applied (art. 37-2(10)).
+- A request can ask VMI to agree a bilateral or multilateral APA with a treaty partner's competent authority; the article then applies with the necessary changes (art. 37-2(11)). Such a request can cover past periods with the same facts, within the 5-year window of MAĮ art. 68(4) (art. 37-2(12)). The Law on resolution of double taxation disputes can override the validity rule (art. 37-2(5)).
+- Article 37-2 was amended by Law No. XV-309 of 19 June 2025.
 
 **Country-by-country report (ataskaita apie TĮG dalyvius), MAĮ art. 61.** Applies to groups whose consolidated revenue was EUR 750 million or more in the financial year before the reporting year (art. 61(2)). A Lithuanian reporting entity files with VMI within **12 months** after the end of the reporting year (art. 61(3)). VMI sets the filing procedure (art. 61(4)).
 
@@ -141,7 +145,7 @@ Values are without VAT. Dividends, donations, group loss transfers, advance paym
 - **Treaties and disputes.** Article 9 (associated enterprises) of Lithuania's tax treaties applies the same arm's length rule. A taxpayer facing double taxation after an adjustment can use the treaty's mutual agreement procedure and, inside the EU, the EU Arbitration Convention or the procedures of Lithuania's Law on resolution of double taxation disputes, which MAĮ art. 37-2(5) names.
 - **OECD Guidelines.** The Rules recommend the OECD Transfer Pricing Guidelines to the extent they do not conflict with the Rules (para. 96).
 - **Domestic exemption from documentation, not from the rule.** A Lithuanian company dealing only with other Lithuanian entities has no master or local file to prepare (para. 87.1) and can prepare its support later (para. 19), but the prices must still be arm's length.
-- **Target territories.** The EUR 90,000 documentation exemption never covers a transaction with an associated person registered in a target territory (para. 87.2.3).
+- **Target territories.** The EUR 90,000 documentation exemption never covers a transaction with an associated person registered in a target territory (para. 87.2.3). A target territory is a state or zone on the Minister of Finance's list; it is listed if it meets at least two criteria, among them a comparable tax rate below 75% of the 17% rate, no effective exchange of information, or a ruling with the controlled entity on its rate or base (PMĮ art. 2(38)).
 - **Moving assets or activity abroad (exit tax).** A transfer of assets out of Lithuania without a change of owner, or a move of the business abroad, is taxed on the gain to market price at the moment of transfer. For transfers to qualifying EEA states the tax can be spread over 5 years (PMĮ art. 40-2). No cross-border skill in this pack covers it yet.
 - **Permanent establishments.** A foreign entity's Lithuanian PE is a taxpayer under the Rules (para. 2) and has its own master file and local file thresholds (paras. 84, 85.4).
 
@@ -190,7 +194,7 @@ A Lithuanian UAB in an international group had revenue of EUR 4,200,000 in 2025.
 
 1. Which file: revenue of EUR 4,200,000 is above EUR 3,000,000, so a local file is due (para. 85.1). It is below EUR 15,000,000, so no master file (para. 84).
 2. The car rental is EUR 30,000, not above EUR 90,000, is not repeated or linked, and the Latvian company is not in a target territory. It is left out of the local file (para. 87.2). The rent must still be at arm's length.
-3. The IT charge: EUR 200,000 plus 15% = EUR 230,000. The simplified price at cost plus 5% is EUR 210,000 (para. 76-1). The UAB may pay more than the simplified price only with a benchmark that supports 15%. Without one, the EUR 20,000 above the simplified price is the exposure.
+3. The IT charge: EUR 200,000 plus 15% = EUR 230,000. The simplified price at cost plus 5% is EUR 210,000 (para. 76-1), and the 5% needs no benchmark. The 15% does: without a benchmark that supports it, the EUR 20,000 above the simplified price is the amount at risk in an audit.
 4. Tax at risk on the excess at 17%: EUR 3,400.
 5. FR0528: the IT purchase of EUR 230,000 is EUR 90,000 or more, so it goes in the report filed with the 2026 return by 15 June 2027 (VMI KM1402).
 6. The local file is ready by 15 June 2027 and handed over within 30 days of a VMI request (paras. 19, 91).
@@ -237,7 +241,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law on Corporate Income Tax No. IX-675, consolidated version from 19 May 2026: art. 2(7), 2(8), 2(33), 5(1), 40, 40-2 (exit), 50, 51 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-10-23 |
+| Law on Corporate Income Tax No. IX-675, consolidated version from 19 May 2026: art. 2(7), 2(8), 2(33), 2(38), 5(1), 40, 40-2 (exit), 50, 51, 53 | https://www.e-tar.lt/portal/lt/legalAct/TAR.A5ACBDA529A9/asr | 2026-10-23 |
 | Minister of Finance Order No. 1K-123, Rules implementing PMĮ art. 40(2) and GPMĮ art. 15(2), consolidated version from 1 January 2021: paras. 2 to 96 | https://www.e-tar.lt/portal/lt/legalAct/TAR.55EC668C883A/asr | 2026-10-23 |
 | Law on Tax Administration No. IX-2112, consolidated version from 1 July 2026: art. 37-2, 61, 68, 96 to 99, 139 to 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-23 |
 | VMI, corporate income tax rates (art. 5) | https://www.vmi.lt/evmi/tarifai-5-str.- | 2026-10-23 |
@@ -245,4 +249,4 @@ expected:
 | VMI, FR0528 report, answer KM1402 (who files, EUR 90,000, deadline, exclusions) | https://www.vmi.lt/evmi/asocijuot%C5%B3-asmen%C5%B3-tarpusavio-sandori%C5%B3-arba-%C5%ABkini%C5%B3-operacij%C5%B3-ataskaita-fr0528- | 2026-10-23 |
 | VMI, late payment interest, answer KM2633 (0.027% a day from 1 August 2026) | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-23 |
 
-Not yet confirmed: the text of the FR0528 form and rules that apply to 2026 returns (VMI's answer KM1402 cites the 2005 rules VA-27, and a newer VMI order VA-78 of 4 September 2025 applying from 1 January 2026 was seen in a search but not read); whether the FR0528 EUR 90,000 total is counted per associated person or across all of them; the late payment interest rate after 31 October 2026 (it is reset each quarter); the VMI procedure, form and any fee for an APA request, and whether VMI charges for bilateral APAs; the country-by-country notification duty, the VMI filing rules and the penalty for not filing; any separate administrative fine for not preparing or not handing over TP documentation; the list of target territories in force for 2026; whether Lithuania makes a secondary adjustment (for example a deemed dividend) after a primary TP adjustment; and the procedure for a downward corresponding adjustment after a foreign adjustment.
+Not yet confirmed: the text of the FR0528 form and rules that apply to 2026 returns (VMI's answer KM1402, dated 16 July 2024, cites VMI order VA-27 of 2005; a search shows VA-27 still in force in a consolidated version from 1 January 2026 as amended by order VA-78 of 4 September 2025, but that text sits behind a CAPTCHA on e-seimas.lrs.lt and was not read); whether the FR0528 EUR 90,000 total is counted per associated person or across all of them; the late payment interest rate after 31 October 2026 (it is reset each quarter); the VMI procedure, form and any fee for an APA request, and whether VMI charges for bilateral APAs; the country-by-country notification duty, the VMI filing rules and the penalty for not filing; any separate administrative fine for not preparing or not handing over TP documentation; the Minister of Finance's list of target territories in force for 2026; whether Lithuania makes a secondary adjustment (for example a deemed dividend) after a primary TP adjustment; and the procedure for a downward corresponding adjustment after a foreign adjustment.
