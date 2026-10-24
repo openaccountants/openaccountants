@@ -6,14 +6,14 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 2.1
+version: 2.2
 verified_by: pending
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
-# Lithuania: VAT (2026) v2.1
+# Lithuania: VAT (2026) v2.2
 
-This skill sets out who must charge Lithuanian VAT (pridėtinės vertės mokestis, PVM), at what rate, and how to file and pay it for 2026. The law is the Law on VAT No. IX-751 (Pridėtinės vertės mokesčio įstatymas, PVMĮ), in its consolidated version in force from 1 July 2026 to 31 December 2026. Fines and late payment interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
+This skill sets out who must charge Lithuanian VAT (pridėtinės vertės mokestis, PVM), at what rate, and how to file and pay it for 2026. The law is the Law on VAT No. IX-751 (Pridėtinės vertės mokesčio įstatymas, PVMĮ), in its consolidated version in force from 1 July 2026 to 31 December 2026. Art. 19 (rates) is the same in the version in force from 1 January 2026: its last changes are laws XV-287 and XV-366 of June 2025. Fines and late payment interest come from the Law on Tax Administration No. IX-2112 (Mokesčių administravimo įstatymas, MAĮ). The tax authority is the State Tax Inspectorate (VMI).
 
 The biggest change for 2026: the 9% reduced rate ended on 31 December 2025. From 1 January 2026, accommodation, scheduled passenger transport and culture admissions are at 12%, books are at 5%, and heating, hot water and firewood for homes are no longer on a reduced rate.
 
@@ -21,10 +21,12 @@ The biggest change for 2026: the 9% reduced rate ended on 31 December 2025. From
 
 - **Taxable persons supplying in Lithuania.** Anyone who supplies goods or services in Lithuania must register and charge VAT (PVMĮ art. 71(1)), unless the small business scheme applies or the only supplies are ones where the buyer accounts for the VAT under art. 95(2) to (4).
 - **Small business scheme (smulkiojo verslo schema).** A Lithuanian taxable person need not register or charge VAT if its domestic supplies were not above **EUR 45,000** in the previous calendar year and are not expected to pass it in the current year (art. 71(2)). A new business qualifies if it does not expect to pass EUR 45,000 in its first year.
+- **Related companies are counted together.** Where one person (alone or with related persons) controls several legal persons, all of them, and that person if it carries on economic activity, must register once their combined supplies pass the limit, even if each one is below it. This does not apply if they prove that no member of their management bodies is the same person and that their activities are not of the same kind and they do not act in each other's interest (art. 71(7)).
+- **Cross-border services trigger registration below EUR 45,000.** A business that buys services from a foreign supplier for which it must account for the VAT under art. 95(2) (for example advertising from Google or Facebook, or platform fees from Booking or Bolt), or that supplies B2B services taxed in another member state, must register for VAT whatever its turnover (art. 71-1(2)). It can still stay on the small business scheme while its Lithuanian supplies are within EUR 45,000 (VMI answer KM3566).
 - **Businesses from other EU states.** A business established in another member state can use the Lithuanian small business scheme if its Lithuanian supplies stay within EUR 45,000 and its total EU supplies were not above **EUR 100,000** in the previous year (art. 71(2-1)). It registers for this through its home state.
-- **Buyers of goods from other EU states.** A person not registered (for example an exempt business) must register once goods bought from other member states pass **EUR 14,000** in a calendar year (art. 71-1). New vehicles and excise goods are left out of the count.
-- **Non-EU businesses.** A business established outside the EU, or with only a branch in some member state, registers through its Lithuanian branch, or if it has none, through a fiscal agent in Lithuania (art. 71).
-- **Not registering does not remove the tax.** A person who should have registered must still compute and pay the VAT (art. 71).
+- **Buyers of goods from other EU states.** A flat-rate farmer, a business whose activity gives no right to deduct VAT, or a legal person that is not a taxable person, if not registered, must register once goods bought from other member states pass **EUR 14,000** in a calendar year (art. 71-1(1) and (3)). New vehicles and excise goods are left out of the count.
+- **Non-EU businesses.** A business established outside the EU, or with only a branch in some member state, registers through its Lithuanian branch, or if it has none, through a fiscal agent in Lithuania (art. 71(3)).
+- **Not registering does not remove the tax.** A person who should have registered must still compute and pay the VAT (art. 71(4)).
 
 ## Rates, bands and thresholds
 
@@ -58,7 +60,7 @@ The biggest change for 2026: the 9% reduced rate ended on 31 December 2025. From
 
 ## Deadlines and filing
 
-- **Registration.** Apply to VMI, which can be done electronically (art. 76). The requested registration date cannot be earlier than 3 working days after the application (VMI). VAT is due from the month the EUR 45,000 limit was passed, whether or not registration is complete (art. 71(2)).
+- **Registration.** Apply to VMI electronically through My VMI (art. 76). Where registration is compulsory, apply without delay once the obligation arises; VMI decides within 3 working days of receiving the application (VMI answer KM0738). PVMĮ sets no fixed number of days. A voluntary applicant applies at least 3 working days before the date from which it wants to be registered (VMI). VAT is due from the month the EUR 45,000 limit was passed, whether or not registration is complete (art. 71(2) and (4)).
 - **Tax period (art. 84).**
   - Default: the calendar month.
   - Quarter: on request, for a VAT payer (other than an individual) whose income from economic activity was not above EUR 300,000 last year, or a new payer expecting to stay under it. A change back is possible only after the quarter ends.
@@ -72,7 +74,7 @@ The biggest change for 2026: the 9% reduced rate ended on 31 December 2025. From
 ## Penalties and interest
 
 - **Late payment interest (delspinigiai).** Charged on VAT not paid by the due date, and on VAT found in an audit from the day after the original due date (MAĮ art. 96). The rate is set by the Minister of Finance from the 12-month government securities yield plus 7 points (MAĮ art. 99). From 1 August 2026 it is **0.027% a day** (VMI answer KM2633).
-- **Fine on understated VAT.** VAT found understated in a tax audit, or a lower rate wrongly applied, carries a fine of **20% to 100%** of the shortfall (MAĮ art. 139(1)). VMI starts from the midpoint and adjusts for mitigating and aggravating circumstances (art. 140). A repeat breach within 5 years doubles it (art. 139(3)).
+- **Fine on understated VAT.** VAT found understated in a tax audit, or a lower rate wrongly applied, carries a fine of **20% to 100%** of the shortfall (MAĮ art. 139(1)). VMI starts from the midpoint and adjusts for mitigating and aggravating circumstances (art. 140). A repeat breach of the same tax law, where a fine was already imposed within the current and five previous calendar years, doubles it (art. 139(3), 68(4)).
 - **Voluntary correction.** No fine if a corrected return is filed before VMI orders an audit (MAĮ art. 139(4)).
 - **Relief.** VMI can waive fines and interest in the cases in MAĮ art. 141.
 - **Not registering.** The VAT is still due from the month the limit was passed (PVMĮ art. 71(2)), with late payment interest from its due date.
@@ -85,7 +87,7 @@ The biggest change for 2026: the 9% reduced rate ended on 31 December 2025. From
 - **Intra-EU supplies of goods.** Zero-rated under chapter VI with evidence (art. 56); reported on FR0564 (art. 88-1).
 - **Acquisitions from other EU states.** Taxed in Lithuania. A non-registered buyer registers once acquisitions pass EUR 14,000 a year (art. 71-1).
 - **Non-EU businesses.** Register through a Lithuanian branch or a fiscal agent (art. 71).
-- **EU small business scheme.** Lithuanian businesses can use other states' schemes and foreign EU businesses can use Lithuania's, within the EUR 100,000 EU-wide limit (art. 71(2-1), 74-1).
+- **EU small business scheme.** Lithuanian businesses can use other states' schemes and foreign EU businesses can use Lithuania's, within the EUR 100,000 EU-wide limit (art. 71(2-1), 71-2, 74-1).
 - **One-stop shop (OSS) and import one-stop shop.** Special schemes in PVMĮ chapter XII, sections 5 to 7, with their own return dates (art. 115-3, 115-8, 115-13). Not covered in detail here.
 
 ## Worked examples
@@ -126,9 +128,9 @@ expected:
 
 ### Example 2: a freelancer passes EUR 45,000 in September 2026
 
-An individual designer in Lithuania had supplies of EUR 38,000 in 2025, so she started 2026 on the small business scheme. By the end of August 2026 her supplies were EUR 41,000. In September she invoices a Lithuanian client EUR 7,000, taking her to EUR 48,000. She registers. From October to December she invoices Lithuanian clients EUR 12,000, net of VAT. In October she also buys EUR 2,000 of design software services from a supplier in Ireland, used fully for her taxable work.
+An individual designer in Lithuania had supplies of EUR 38,000 in 2025, so she started 2026 on the small business scheme. By the end of August 2026 her supplies were EUR 41,000. In September she invoices a Lithuanian client EUR 7,000, taking her to EUR 48,000; the contract says the price is net of VAT and the client pays any VAT on top. She registers. From October to December she invoices Lithuanian clients EUR 12,000, net of VAT. In October she also buys EUR 2,000 of design software services from a supplier in Ireland, used fully for her taxable work.
 
-1. Her supplies pass EUR 45,000 in September. VAT is due from September, on the supplies by which the limit was passed: the September invoice of EUR 7,000 (art. 71(2)). 7,000 x 21% = EUR 1,470.
+1. Her supplies pass EUR 45,000 in September. VAT is due from September, on the supplies by which the limit was passed: the whole September invoice of EUR 7,000 (art. 71(2)). She must apply to register without delay (VMI answer KM0738). 7,000 x 21% = EUR 1,470.
 2. October to December sales: 12,000 x 21% = EUR 2,520.
 3. The Irish service: she is a taxable buyer of a B2B service from a supplier not established in Lithuania, so she accounts for the VAT (art. 95(2)). Output 2,000 x 21% = EUR 420. She deducts the same EUR 420.
 4. Total output VAT for the period: 1,470 + 2,520 + 420 = EUR 4,410. Input VAT: EUR 420.
@@ -164,7 +166,7 @@ expected:
 
 ## Ask the client first
 
-1. What were your supplies in Lithuania in 2025, and in 2026 so far, month by month? Did you pass EUR 45,000, and in which month?
+1. What were your supplies in Lithuania in 2025, and in 2026 so far, month by month? Did you pass EUR 45,000, and in which month? Do you or your owners control other companies with the same kind of activity?
 2. What do you sell, exactly? Accommodation, transport, culture admissions, books, medicines, heating or firewood each need a rate check against the 2026 art. 19 list.
 3. Are you a company or an individual, and is your income from economic activity above EUR 300,000? This sets the monthly, quarterly or half-yearly period.
 4. Do you buy services or goods from suppliers outside Lithuania, or construction work from Lithuanian contractors?
@@ -175,11 +177,13 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law on VAT No. IX-751, consolidated version from 1 July 2026 to 31 December 2026: art. 2(32), 19, 62(2), 71, 71-1, 76, 78, 84, 85, 86, 87(1), 88-1, 90(1), 95, 96, 125-3 | https://www.e-tar.lt/portal/lt/legalAct/TAR.ED68997709F5/asr | 2026-10-24 |
+| Law on VAT No. IX-751, consolidated version from 1 July 2026 to 31 December 2026: art. 2(32), 19, 62(2), 71, 71-1, 71-2, 74-1, 76, 78, 84, 85, 86, 87(1), 88-1, 90(1), 95, 96 | https://www.e-tar.lt/portal/lt/legalAct/TAR.ED68997709F5/asr | 2026-10-24 |
 | VMI, reduced 9% VAT rate, "relevant until 2025-12-31", with the 2026 rates for each item | https://www.vmi.lt/evmi/lengvatinis-9-proc.-pvm-tarifas-19-str.- | 2026-10-24 |
 | VMI, i.SAF data submission and correction | https://www.vmi.lt/evmi/duomenu-teikimas-tikslinimas | 2026-10-24 |
+| VMI, VAT payers: answers KM0738 (when to apply for registration; decision within 3 working days) and KM3566 (registration when buying services from foreign platforms) | https://www.vmi.lt/evmi/pvm-moketojai | 2026-10-24 |
 | VMI, VAT payer registration, deregistration and data changes | https://www.vmi.lt/evmi/pvm-moketojo-registravimas-isregistravimas-duomenu-keitimas | 2026-10-24 |
-| Law on Tax Administration No. IX-2112, consolidated version from 1 July 2026: art. 96, 99, 139 to 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-23 |
+| Law on Tax Administration No. IX-2112, consolidated version from 1 July 2026: art. 68(4), 96, 99, 139 to 141 | https://www.e-tar.lt/portal/lt/legalAct/TAR.3EB34933E485/asr | 2026-10-24 |
+| Law on VAT No. IX-751, list of consolidated versions (2026-01-01, 2026-07-01 and 2027-01-01 versions and the amending laws) | https://www.e-tar.lt/portal/lt/legalActEditions/TAR.ED68997709F5 | 2026-10-24 |
 | VMI, late payment interest, answer KM2633 (0.027% a day from 1 August 2026) | https://www.vmi.lt/evmi/delspinigiai-baudos-ir-atleidimas-nuo-ju-96-100-str.-138-143-str.- | 2026-10-24 |
 
-Not yet confirmed: the number of days a business has to apply for registration after passing EUR 45,000 (not found in PVMĮ or on the VMI pages read); how art. 125-3 (budget compensation of 9 percentage points for "goods in art. 19(3)(1)") works now that art. 19(3)(1) lists accommodation, and whether it compensates households for heating; the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing FR0600, FR0564 or i.SAF late (Code of Administrative Offences, not read); the Government list of extra domestic reverse charge cases under art. 96(1)(4); the exemptions in art. 20 to 40 and the zero-rate evidence rules (not read in detail); the OSS and IOSS rules and the EUR 10,000 distance sales limit; VAT refunds to foreign businesses (art. 116 to 119); and the PVMĮ version in force from 1 January 2027.
+Not yet confirmed: how VAT is computed on a supply that crossed the EUR 45,000 limit where the price was agreed without VAT and cannot be increased (on top of, or within, the price); the rate for accommodation booked and paid in 2025 but supplied in 2026 (VMI answer KM3670, title only read); the late payment interest rate after 31 October 2026 (it is reset each quarter); any administrative fine for filing FR0600, FR0564 or i.SAF late (Code of Administrative Offences, not read); the Government list of extra domestic reverse charge cases under art. 96(1)(4); the exemptions in art. 20 to 40 and the zero-rate evidence rules (not read in detail); the OSS and IOSS rules and the EUR 10,000 distance sales limit; VAT refunds to foreign businesses (art. 116 to 119); and the PVMĮ version in force from 1 January 2027 (law XV-1036 of 18 June 2026 changes art. 78, 88-1 and others from 2027; not read in detail).
