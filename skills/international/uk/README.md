@@ -21,7 +21,7 @@ Tax year 6 April to 5 April for individuals; companies use their own accounting 
 | SC, social contributions | uk-national-insurance | source-cited draft |
 | PR, payroll withholding | uk-payroll, uk-student-loan-repayment | source-cited draft |
 | TP, transfer pricing | uk-transfer-pricing (2026: Finance Act 2026 reform, UTPP charge, UK-to-UK exemption, SME exemption in euro limits, method and benchmarking steps) | source-cited draft |
-| XB, cross-border | uk-non-resident-sa109 (hub), uk-foreign-tax-and-withholding (foreign tax credit relief, outbound withholding, CT61, treaty rates for 12 partners), uk-statutory-residence-test, uk-non-dom, uk-to-uae-relocation-tax and uk-to-italy-flat-tax-relocation (2026/27: SRT, split year, 5-year rule with the April 2026 close-company change, IHT tail; Italy flat tax EUR 300,000 from 2026) | source-cited draft |
+| XB, cross-border | uk-non-resident-sa109 (hub), uk-foreign-tax-and-withholding (foreign tax credit relief, outbound withholding, CT61, treaty rates for 12 partners), uk-statutory-residence-test (2026/27: automatic overseas and UK tests, ties tables for leavers and arrivers, day counting and the deeming rule, split-year Cases 1-8, temporary non-residence), uk-non-dom, uk-to-uae-relocation-tax and uk-to-italy-flat-tax-relocation (2026/27: SRT, split year, 5-year rule with the April 2026 close-company change, IHT tail; Italy flat tax EUR 300,000 from 2026) | source-cited draft |
 
 ## Official sources
 

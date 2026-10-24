@@ -1,10 +1,10 @@
 ---
 name: uk-statutory-residence-test
-description: "Use this skill for any question about UK tax residency. Trigger on: \"UK tax resident\", \"statutory residence test\", \"SRT UK\", \"183 days UK\", \"leave UK tax\", \"UK ties test\", \"automatic overseas test UK\", \"split year UK\", \"ceasing UK residency\", \"UK non-resident\", \"UK resident abroad\", \"how many days UK tax\", \"UK day count rules\", \"UK resident status\". Covers the Statutory Residence Test (SRT) in full — automatic tests, sufficient ties, and split-year treatment."
-version: 1.0
+description: "Whether an individual is UK resident for tax year 2026/27 (6 April 2026 to 5 April 2027) under the statutory residence test in Finance Act 2013 Schedule 45. Covers the five automatic overseas tests, the four automatic UK tests, the sufficient ties test with the ties tables for leavers and arrivers, day counting (the midnight rule, transit days, exceptional circumstances, the deeming rule), split-year Cases 1 to 8 with their priority rules, and temporary non-residence. Trigger on: UK tax resident, statutory residence test, SRT, 183 days UK, UK ties test, automatic overseas test, split year UK, leaving the UK, arriving in the UK, UK day count, deeming rule, temporary non-residence. Out of scope: taxing foreign income under the 4-year FIG regime (uk-non-dom), what a non-resident pays on UK income (uk-non-resident-sa109), the return itself (uk-income-tax-sa100, uk-capital-gains-sa108)."
+version: 1.1
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,300 +15,271 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # The UK statutory residence test (SRT), tax year 2026/27
 
-Whether an individual is resident in the UK for a tax year under the statutory residence test (SRT). The primary year is **2026/27**, meaning 6 April 2026 to 5 April 2027, which HMRC writes as "2026 to 2027". The test holds almost no money amounts. Its thresholds are counts of days, hours and ties, and the law words them precisely as "less than", "at least" or "more than". This skill keeps that wording exactly. The law is Finance Act 2013, Schedule 45 as shown on legislation.gov.uk on 25 September 2026 ([FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45)). HMRC's summary is guidance note RDR3, updated 11 June 2026 ([RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3)). Where RDR3 simplifies, the statute governs.
+Tax year 2026/27 runs from 6 April 2026 to 5 April 2027. It has 365 days, because it holds no 29 February. The test is in Finance Act 2013, Schedule 45 ("Sch 45"), in force since 6 April 2013 and unchanged in the paragraphs used here. HMRC's summary is guidance note RDR3 (updated 11 June 2026) and its manual is the Residence and FIG regime manual (RFIG20000 onwards). Where they simplify, the statute governs. The thresholds are counts of days, hours and ties. The law words them as "less than", "at least", "more than" or "not more than", and this skill keeps that wording, because one day either side changes the answer.
 
-## Scope
+## Who this applies to
 
-- **What the test decides.** Whether an individual is resident or not resident in the UK for income tax and capital gains tax. It also decides this for inheritance tax and corporation tax "so far as the residence status of individuals is relevant to them" (para 1(4)). See [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) for the text.
-- **What it does not decide.** Residence "in England, Wales, Scotland or Northern Ireland specifically (rather than in the UK as a whole)" (para 1(3)).
-- **Whole-year result.** A person resident "for" a tax year is treated as resident "at all times in that tax year" (para 2(3)). The only exception is a split year, which changes how income is charged, not the person's status (para 40).
-- **In force from** 6 April 2013. Each tax year is tested separately.
-- **Why the history matters.** From 6 April 2025 the remittance basis was replaced by the 4-year foreign income and gains (FIG) regime. It is open only in the first 4 years of UK residence after 10 consecutive tax years of non-residence under the SRT, counted back from the first qualifying year (see below).
-- **Related Skills.** How foreign income is then taxed: `uk-non-dom`. The return: `uk-income-tax-sa100`, `uk-capital-gains-sa108` and `uk-return-assembly`. A planned move: `uk-to-uae-relocation-tax` or `uk-to-italy-flat-tax-relocation`.
+- **Individuals only.** The SRT decides whether an individual is resident or not resident in the UK for income tax and capital gains tax, and for inheritance tax and corporation tax "so far as the residence status of individuals is relevant to them" (Sch 45 para 1(4)).
+- **The UK as a whole.** It does not decide residence in England, Wales, Scotland or Northern Ireland specifically (para 1(3)). Scottish taxpayer status is in `uk-scottish-income-tax`.
+- **The basic rule** (paras 3-5). A person is UK resident for the year if the automatic residence test or the sufficient ties test is met. Otherwise they are not resident. The automatic residence test is met when the person meets at least one automatic UK test **and none** of the automatic overseas tests. So the overseas tests are checked first: one met overseas test ends the enquiry.
+- **Whole-year result.** A person resident "for" a tax year is treated as resident at all times in it (para 2(3)). A split year relaxes that rule for the charging provisions only. It does not change the person's status for the year (para 40).
+- **Personal representatives and trustees.** The split-year rules do not apply to personal representatives and apply only in part to trustees (para 41). Refer those cases.
+- **Each year stands alone.** Test every tax year separately. The answer for a year depends on residence in the 3 years before it, so keep a residence history.
+
+### Order of work
+
+1. Fix the year and residence in each of the 3 previous tax years (decides which overseas test, which ties and which table apply).
+2. Build a day log: each midnight, each day present but gone by midnight, each day with more than 3 hours' work in the UK or overseas, and each day at each home.
+3. Automatic overseas tests. If one is met: not resident. Stop.
+4. Automatic UK tests. If one is met: resident.
+5. Otherwise, the sufficient ties test.
+6. If resident and the person arrived or left in the year: test split-year Cases 1 to 8.
+7. After-effects: temporary non-residence on return, and the 4-year FIG regime (`uk-non-dom`).
+
+## Rates, bands and thresholds
+
+The SRT holds no money amounts. These are its counts. All are in Sch 45 as in force for 2026/27 at https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 unless another source is named.
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| First automatic overseas test: resident in 1 or more of the 3 previous years | Days in the UK less than 16, and P does not die in the year (para 12) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Second automatic overseas test: resident in none of the 3 previous years | Days in the UK less than 46 (para 13) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Third automatic overseas test: full-time work overseas | Average of 35 hours a week or more overseas; no significant break; UK work days (more than 3 hours) less than 31; UK days, leaving out deemed days, less than 91 (para 14) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Fourth and fifth automatic overseas tests (death in the year) | Less than 46 UK days with no residence in the 2 previous years, or full-time overseas work (paras 15-16) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| First automatic UK test | At least 183 days in the UK (para 7) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Second automatic UK test: UK home | Present at the UK home on at least 30 days in the year; a period of 91 consecutive days with that home, at least 30 of them in the year, with no overseas home or each overseas home used on fewer than 30 days (para 8) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Third automatic UK test: full-time work in the UK | 365-day period; average of 35 hours a week or more in the UK; no significant break; more than 75% of the work days (more than 3 hours) are UK work days (para 9) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Fourth automatic UK test (death in the year) | Resident in each of the 3 previous years by the automatic residence test, home in the UK at death (para 10) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| A work day | More than 3 hours' work on the day (paras 9, 14, 35) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Significant break from work | At least 31 days with no day of more than 3 hours' work, leave aside (para 29) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Gap between jobs taken out of the reference period | Up to 15 days per gap, 30 days in total (para 28(8)-(9)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Ties table for someone resident in 1 or more of the 3 previous years (Table A) | More than 15, not more than 45 days: at least 4 ties. More than 45, not more than 90: at least 3. More than 90, not more than 120: at least 2. More than 120: at least 1 (para 18) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Ties table for someone resident in none of the 3 previous years (Table B) | More than 45, not more than 90 days: all 4 ties. More than 90, not more than 120: at least 3. More than 120: at least 2 (para 19) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Work tie | At least 40 UK work days in the year (para 35) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| 90-day tie | More than 90 UK days in either or both of the 2 previous tax years (para 37) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Accommodation tie | Available for a continuous period of at least 91 days and at least 1 night spent there; a gap of fewer than 16 days does not break availability; at a close relative's home, at least 16 nights (para 34) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Family tie through a child under 18 | No tie if P sees the child in the UK on fewer than 61 days (para 32(3)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Child in UK full-time education | Treated as not resident if fewer than 21 UK days outside term-time (para 33(3)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Deeming rule | Applies with at least 3 ties, more than 30 days present but not at midnight, and residence in 1 of the 3 previous years; days after the 30th count (para 23) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Exceptional circumstances | At most 60 days a year left out of the count (para 22(6)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Split year Case 3: leaving the UK home | Fewer than 16 UK days after the home ends; sufficient overseas link at the end of 6 months (para 46) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Split year Cases 1 and 6: permitted limits | 30 UK work days and 90 UK days, each reduced by the limit times whole months outside the period, divided by 12 (paras 44(8)-(9), 49(8)-(9)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Split year Cases 2 and 7: permitted limit | 90 UK days, reduced by 90 times whole months outside the part, divided by 12 (paras 45(9)-(10), 50(9)-(10)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Rounding the "appropriate number" | Round up if the first decimal is 5 or more, otherwise down (paras 20(4), 52(5)) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| Temporary non-residence | Sole UK residence in at least 4 of the 7 tax years before the year of departure; non-residence of 5 years or less (para 110) | 2026/27 | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 |
+| 4-year FIG regime entry | Not UK resident for each of the 10 tax years before the first qualifying year (ITTOIA 2005 s845B) | 2026/27 | https://www.legislation.gov.uk/ukpga/2005/5/section/845B |
+
+## The taxable base
+
+The SRT does not tax anything. It decides whether the person's worldwide income and gains (resident) or only UK-source items (non-resident) are within UK tax. What it counts:
+
+### Days spent in the UK (paras 22-24)
+
+- **Midnight rule.** A day counts if the person is in the UK at the end of the day (para 22(1)). A day with no UK midnight does not count, subject to the deeming rule (para 23(1)-(2)).
+- **Transit.** A day does not count if the person arrives as a passenger that day, leaves the next day, and in between does nothing "to a substantial extent unrelated" to passing through (para 22(3)).
+- **Exceptional circumstances.** A day does not count if the person would have left but for exceptional circumstances beyond their control that stop them leaving, and they intend to leave as soon as those circumstances permit (para 22(4)). The statute's examples are national or local emergencies such as war, civil unrest or natural disasters, and a sudden or life-threatening illness or injury (para 22(5)). At most 60 such days a year. Counting forward from 6 April, the 61st and later such days count (para 22(6)). HMRC's guidance is at RFIG22210.
+- **Deeming rule** (para 23(3)-(5)). If all three hold: at least 3 UK ties for the year; more than 30 "qualifying days" (in the UK during the day, gone by midnight); and UK residence in at least 1 of the 3 previous years. Then, counting forward from 6 April, every qualifying day after the 30th is treated as a UK day. In deciding whether the person has 3 ties for this purpose, deemed days are not used for the 90-day tie (para 23(5)). Deemed days are left out of the 91-day limit in the third automatic overseas test (para 14(2)) and the Case 1 and Case 6 overseas work criteria.
+- **Order.** Apply transit, then exceptional circumstances, then the deeming rule, to build the count.
+
+### Home (para 25)
+
+A home can be a building, part of one, or "a vehicle, vessel or structure of any kind". It depends on how permanent or stable the arrangements are. A place used periodically as nothing more than a holiday home or temporary retreat is not a home. A former home is not still a home just because the person owns it after moving out, for example while selling or letting it. Ownership is not needed.
+
+### Work (paras 26-30)
+
+- Work is duties of an employment or activities of a trade. Deductible business travel and employer-paid training count as work time (para 26).
+- Work is done where it is actually done. Work while travelling to or from the UK by air, sea or the Channel Tunnel is treated as done overseas, from boarding to leaving the craft (para 27).
+- **Sufficient hours** (paras 9(2) and 14(3)). Step 1: take out "disregarded days", the days with more than 3 hours' work in the other country. Step 2: add up the hours worked in the country being tested on the remaining days ("net hours"). Step 3: start from 365 (or the period's days), subtract disregarded days and allowed leave, sick leave and job gaps (para 28): the "reference period". Step 4: divide by 7 and round down to a whole number (or up to 1 if below 1). Step 5: net hours divided by that number must be **35 or more**.
+- Crew with a "relevant job" on a vehicle, aircraft or ship making at least 6 cross-border trips that begin or end in the UK cannot use the third automatic overseas test or the third automatic UK test (paras 9(3), 14(4), 30). Refer them.
+
+### The four automatic UK tests (paras 6-10)
+
+- **First:** at least 183 days in the UK.
+- **Second (home):** the person has a UK home, is there on at least 30 days in the year (any length of time counts), and there is a run of 91 consecutive days while they have it, at least 30 of them in the year, throughout which they have no overseas home or use each overseas home on fewer than 30 days in the year. Each UK home is tested separately (para 8(8)).
+- **Third (full-time work in the UK):** sufficient hours in the UK over a 365-day period, part of it in the year; no significant break; more than 75% of work days are UK work days; at least one UK work day in both the period and the year.
+- **Fourth (death):** see the table above. Refer.
+
+### The five automatic overseas tests (paras 11-16)
+
+- **First:** resident in 1 or more of the 3 previous years, fewer than 16 UK days, does not die in the year.
+- **Second:** resident in none of the 3 previous years, fewer than 46 UK days.
+- **Third (full-time work overseas):** sufficient hours overseas over the year; no significant break; fewer than 31 UK work days; fewer than 91 UK days, leaving out deemed days.
+- **Fourth and fifth:** death cases. Refer.
+
+### The sufficient ties test (paras 17-20, 31-38)
+
+Used only when no automatic test decides the year. Each tie must be of a different type (para 31(4)).
+
+| Tie | Who it counts for | Definition |
+|---|---|---|
+| Family (para 32) | Leavers and arrivers | A spouse or civil partner (not separated), a partner living with the person as if married, or a child under 18, who is UK resident for the year. No tie through a child seen in the UK on fewer than 61 days. A child in UK full-time education is treated as non-resident if in the UK fewer than 21 days outside term-time (para 33). |
+| Accommodation (para 34) | Leavers and arrivers | A place to live in the UK, available for a continuous 91 days or more in the year, with at least 1 night spent there. Gaps under 16 days are bridged. At a close relative's home (parent, grandparent, sibling, adult child or grandchild), at least 16 nights. |
+| Work (para 35) | Leavers and arrivers | At least 40 days with more than 3 hours' work in the UK. |
+| 90-day (para 37) | Leavers and arrivers | More than 90 UK days in either or both of the 2 previous tax years. |
+| Country (para 38) | Leavers only (resident in 1 or more of the 3 previous years) | The UK is the country where the person spends the most midnights in the year, or ties for most. |
+
+Read the day count against Table A (resident in 1 or more of the 3 previous years) or Table B (resident in none) in the rates table. Below 16 days (Table A) or 46 days (Table B) the automatic overseas tests have already settled the year, except on death. On death, the tables are cut back (para 20). Refer.
+
+### Split year: Cases 1 to 8 (paras 39-56)
+
+A year can be split only if the person is UK resident for it (para 43). Test every Case that could apply; RDR3 says the same. The "overseas part" is taxed broadly as if non-resident under the special charging rules; the rest is the "UK part" (para 56).
+
+| Case | Main conditions | Overseas part |
+|---|---|---|
+| 1. Starting full-time work overseas (para 44) | Resident last year. A period from a day of overseas work to 5 April meets the overseas work criteria (sufficient hours, no significant break, UK work days and UK days within the reduced 30 and 90 limits). Not resident next year **because** the third automatic overseas test is met. | From the start of that period (the longest, if several) |
+| 2. Partner of a Case 1 person (para 45) | Resident last year. Moves overseas to live with a partner in Case 1 (this year or last). From the deemed departure day: no UK home, or more time in the overseas home; UK days within the reduced 90 limit. Not resident next year. | From the deemed departure day |
+| 3. Ceasing to have a UK home (para 46) | Resident last year. Had a UK home on 6 April, stops having any UK home on a day in the year. From that day, fewer than 16 UK days. Not resident next year. At the end of 6 months from that day, a sufficient link overseas: tax resident there, present there at every midnight, or only home(s) there. | From the day the last UK home ends |
+| 4. Starting to have a home in the UK only (para 47) | Not resident last year. From a day in the year, the person's only home or homes are in the UK for the rest of the year. Before that day, not sufficient ties (tables cut back pro rata). | Before that day |
+| 5. Starting full-time work in the UK (para 48) | Not resident last year. A 365-day period starting with a UK work day in the year: sufficient UK hours, no significant break, **at least 75%** of work days in the UK. Before it, not sufficient ties (tables cut back). | Before the period starts (the first, if several) |
+| 6. Ceasing full-time work overseas (para 49) | Not resident last year **because** of the third automatic overseas test, and resident in 1 or more of the 4 years before that. A period from 6 April to a day of overseas work meets the overseas work criteria. Resident next year. | To the end of that period (the longest, if several) |
+| 7. Partner of a Case 6 person (para 50) | Not resident last year. Moves to the UK to live with a partner in Case 6 (this year or last). Before the deemed arrival day: no UK home, or more time overseas; UK days within the reduced 90 limit. Resident next year. | Before the deemed arrival day |
+| 8. Starting to have a UK home (para 51) | Not resident last year. No UK home on 6 April; from a day in the year, a UK home for the rest of the year and all of next year. Before that day, not sufficient ties (tables cut back). Resident next year, and next year is not a split year. | Before the UK home starts |
+
+- **Cutting the tables back** (Cases 4, 5, 8). Each day number in the first column of Table A or B is reduced by: that number times A, divided by 12, where A is the whole months in the year from the arrival day (paras 47(7), 48(6), 51(7)). The tie definitions themselves (40 work days, 91 days of availability, 61 days with a child) are not reduced. The family-member residence check still uses the whole year (paras 47(8), 48(7), 51(8)).
+- **Priority.** Case 1 beats Cases 2 and 3; Case 2 beats Case 3 (para 54). Among arrival Cases: Case 6 wins unless Case 5 also applies with an earlier split year date; the same with Case 7 where Case 6 does not apply. Otherwise, among Cases 4, 5 and 8, the earliest split year date wins (para 55). The split year date is the last day of the overseas part (para 55(2)).
+- **Partner** means a spouse, civil partner, or someone living with the person as if married (para 52(4)).
+
+## Deadlines and filing
+
+- **Where residence is reported.** On the SA109 pages ("Residence and foreign income and gains (FIG) regime etc") filed with the SA100 Self Assessment return. Split-year claims and FIG claims go there too.
+- **Notify chargeability.** A person with no return notice must tell HMRC within 6 months from the end of the tax year (TMA 1970 s7). For 2026/27 that is 5 October 2027.
+- **2026/27 return** (TMA 1970 s8(1D)): paper by 31 October 2027; online by 31 January 2028. A later notice from HMRC gives 3 months (s8(1F)-(1G)).
+- **Balancing payment** for 2026/27: 31 January 2028 (TMA 1970 s59B(4)).
+- **2025/26 returns, due now** (GOV.UK deadlines page): paper by 31 October 2026, online by 31 January 2027, pay by 31 January 2027.
+- **Records.** Keep the day log with evidence for each midnight (travel tickets, passport stamps, card statements), work diaries with hours, and evidence about each home. HMRC can ask for them in an enquiry.
+
+## Penalties and interest
+
+There is no SRT-specific penalty. A wrong residence answer leads to a wrong or late return, and the return penalties apply.
+
+- **Late filing** (FA 2009 Sch 55): £100 (para 3); after 3 months, £10 a day for up to 90 days (para 4); after 6 months, the greater of 5% of the tax and £300 (para 5); after 12 months, another 5% or £300, or more where information was withheld deliberately (para 6).
+- **Late payment** (GOV.UK penalties page): 5% of the tax unpaid at 30 days, 6 months and 12 months.
+- **Errors** (FA 2007 Sch 24 para 4): for a UK-only (category 1) inaccuracy, 30% of the potential lost revenue if careless, 70% if deliberate, 100% if deliberate and concealed. Category 2 and 3 inaccuracies, which involve offshore matters, run higher: 45%/105%/150% and 60%/140%/200%.
+- **Late payment interest:** 7.75% from 9 January 2026 (Bank Rate plus 4% from 6 April 2025), per HMRC's interest rates page.
+
+## Cross-border points
+
+- **Treaties.** The SRT decides UK residence only. If another country also treats the person as resident, the tie-breaker in the double taxation agreement decides treaty residence. Split-year treatment does not affect treaty residence (para 42). Refer dual-resident cases.
+- **Temporary non-residence** (paras 109-115). A person is temporarily non-resident if: they had sole UK residence for a residence period; the next period or periods are not sole UK residence; at least 4 of the 7 tax years before the year of departure were years (or split years with a UK part) of sole UK residence; and the temporary period of non-residence is 5 years or less (para 110). "Sole UK residence" means UK resident with no time as treaty non-resident (para 112). A residence period is a whole non-split year, or the UK or overseas part of a split year (para 111). The period runs from the end of the last sole-residence period to the start of the next one (para 113).
+  - **Effect.** Gains on disposals in the temporary period of non-residence are treated as accruing in the period of return, unless the asset is excluded by TCGA 1992 s1N (TCGA 1992 s1M(1)). Treaties do not stop that charge (s1M(4)). RDR3 lists other income caught in the year of return, such as some pension payments, close company distributions and chargeable event gains. Detail is at RFIG21500.
+  - RDR3 adds that the period must be longer than 5 years, "that is 5 years plus one day", to escape these rules.
+- **The 4-year FIG regime.** From 6 April 2025 the remittance basis was replaced by a residence-based regime (GOV.UK). A person is a "qualifying new resident" for a year if UK resident for it and not UK resident for each of the 10 tax years before it, and is at least 10 years old at its start (ITTOIA 2005 s845B(1)). They also qualify for the next 3 tax years in which they are UK resident (s845B(2)-(3)). Every one of those residence answers is an SRT answer. HMRC: "You cannot roll any unused years over to a later year." The claim, its effect and the allowances it costs are in `uk-non-dom`. The SRT applies from 2013/14. A 10-year look-back that reaches 2012/13 or earlier uses the old residence rules, which this skill does not cover. Refer those cases.
+- **What non-residents still pay** on UK income and UK land: `uk-non-resident-sa109`. Planned moves: `uk-to-uae-relocation-tax`, `uk-to-italy-flat-tax-relocation`. Foreign tax credit relief for residents: `uk-foreign-tax-and-withholding`.
+
+## Worked examples
+
+### Example 1: a leaver, the deeming rule and Table A
+
+Anna was UK resident in each of 2023/24, 2024/25 and 2025/26, and spent 150 days in the UK in 2025/26. In 2026/27 her only home is in Spain and she is not full-time anywhere. She spends 40 midnights in the UK. She is also in the UK on 35 days on which she leaves before midnight. She stays 20 nights at her brother's London flat, which is available to her all year. She does more than 3 hours' UK work on 40 days. Her partner and children live in Spain. Spain has most of her midnights.
+
+- **Ties.** Work: 40 days is at least 40, so yes. Accommodation: available all year (at least 91 days) and 20 nights at a close relative's home is at least 16, so yes. 90-day: 150 days in 2025/26 is more than 90, so yes. Family: no. Country: no. That is 3 ties.
+- **Deeming rule.** She has at least 3 ties, more than 30 qualifying days, and was resident in the 3 previous years. So qualifying days 31 to 35 are deemed: 5 days. Her count is 40 + 5 = 45.
+- **Automatic tests.** First overseas test: 45 is not less than 16, so it fails. The third overseas test fails (not full-time). First UK test: 45 is below 183. She has no UK home and no full-time UK work. No automatic test decides the year.
+- **Table A.** 45 days is "more than 15 but not more than 45": at least 4 ties needed. She has 3. She is **not UK resident** for 2026/27. One more day in the UK (46) would drop the requirement to 3 ties and make her resident.
+
+```oa-check
+name: Leaver with 40 midnights and 35 day visits, deeming rule and Table A (2026/27)
+inputs:
+  midnights: 40
+  qualifying_days: 35
+  uk_work_days: 40
+  relative_flat_nights: 20
+  days_prior_year: 150
+  family_tie: 0
+  country_tie: 0
+steps:
+  - work_tie: clamp(uk_work_days - 39, 0, 1)
+  - accommodation_tie: clamp(relative_flat_nights - 15, 0, 1)
+  - ninety_day_tie: clamp(days_prior_year - 90, 0, 1)
+  - ties: work_tie + accommodation_tie + ninety_day_tie + family_tie + country_tie
+  - deeming_applies: clamp(ties - 2, 0, 1) * clamp(qualifying_days - 30, 0, 1)
+  - deemed_days: deeming_applies * max(qualifying_days - 30, 0)
+  - uk_days: midnights + deemed_days
+  - first_overseas_test_met: clamp(16 - uk_days, 0, 1)
+  - first_uk_test_met: clamp(uk_days - 182, 0, 1)
+  - ties_needed: 4 - clamp(uk_days - 45, 0, 1) - clamp(uk_days - 90, 0, 1) - clamp(uk_days - 120, 0, 1)
+  - resident: clamp(ties - ties_needed + 1, 0, 1)
+  - ties_needed_at_46: 4 - clamp(uk_days + 1 - 45, 0, 1) - clamp(uk_days + 1 - 90, 0, 1) - clamp(uk_days + 1 - 120, 0, 1)
+  - resident_at_46: clamp(ties - ties_needed_at_46 + 1, 0, 1)
+expected:
+  ties: 3
+  deemed_days: 5
+  uk_days: 45
+  first_overseas_test_met: 0
+  first_uk_test_met: 0
+  ties_needed: 4
+  resident: 0
+  resident_at_46: 1
+```
+
+### Example 2: an arriver, split year Case 8 and the cut-back Table B
+
+Raj was not UK resident in any of the 10 years to 2025/26. On 1 October 2026 he takes a 2-year lease on a London flat and lives there; it stays his UK home for the rest of 2026/27 and all of 2027/28. He keeps his family home in Singapore, so Case 4 (UK-only home) does not apply, and he is not full-time in the UK, so Case 5 does not. Over the whole year he spends 190 days in the UK (30 before 1 October and 160 after), so he is resident for 2026/27 under the first automatic UK test (at least 183 days). He is resident for 2027/28 and that year is not split.
+
+- **Before the home: 6 April to 30 September 2026.** That is 25 + 31 + 30 + 31 + 31 + 30 = 178 days. He spends 30 midnights in the UK in that part. He does more than 3 hours' UK work on 45 days (work tie) and stays in a serviced flat that is available to him from 1 June to 30 September (122 days, accommodation tie). No family tie, no 90-day tie. That is 2 ties. The country tie does not count: he was resident in none of the 3 previous years, so Table B applies.
+- **Cutting Table B back** (para 51(6)-(7)). A is the whole months from 1 October 2026 to 5 April 2027: October to March, 6. Each day number is reduced by the number times 6/12, rounded half up (para 52(5)). 45 × 6 / 12 = 22.5, which rounds to 23, so 45 becomes 22. 90 becomes 45. 120 becomes 60.
+- **Result.** 30 days is "more than 22 but not more than 45": all 4 ties needed. He has 2. He does not have sufficient UK ties before 1 October, so **Case 8 applies**. The overseas part is 6 April to 30 September 2026; the UK part starts 1 October 2026.
+- **Watch the rounding.** A plain half-even rounding would give 22 and a band edge of 23. The statute rounds 0.5 up.
+
+```oa-check
+name: Arriver, Case 8 split year, Table B cut back for 6 whole months (2026/27)
+inputs:
+  whole_months_from_arrival: 6
+  days_before_home: 30
+  ties_before_home: 2
+steps:
+  - overseas_part_days: 25 + 31 + 30 + 31 + 31 + 30
+  - cut_45: floor(45 * whole_months_from_arrival / 12 + 0.5)
+  - cut_90: floor(90 * whole_months_from_arrival / 12 + 0.5)
+  - cut_120: floor(120 * whole_months_from_arrival / 12 + 0.5)
+  - band_1: 45 - cut_45
+  - band_2: 90 - cut_90
+  - band_3: 120 - cut_120
+  - ties_needed: 5 - clamp(days_before_home - band_1, 0, 1) - clamp(days_before_home - band_2, 0, 1) - clamp(days_before_home - band_3, 0, 1)
+  - sufficient_ties: clamp(ties_before_home - ties_needed + 1, 0, 1)
+  - case_8_ties_condition_met: 1 - sufficient_ties
+expected:
+  overseas_part_days: 178
+  cut_45: 23
+  band_1: 22
+  band_2: 45
+  band_3: 60
+  ties_needed: 4
+  sufficient_ties: 0
+  case_8_ties_condition_met: 1
+```
+
+In the check, a `ties_needed` of 5 would mean no number of ties is enough (22 days or fewer under the cut-back Table B).
 
 ## Ask the client first
 
-- Which tax year are we testing? Were you UK resident in each of the 3 tax years before it? For the FIG regime, in which year did your current UK residence begin, and were you non-resident for each of the 10 years before that first year? The 3-year answer decides which automatic overseas test, which ties and which table apply.
-- Can you give a dated log of every arrival and departure? It should show where you were at midnight each night, and the days you were in the UK during the day but not at midnight.
-- Were any of those days caused by an emergency or a sudden illness that stopped you leaving?
-- On which days did you do more than 3 hours' work in the UK, and on which overseas? What were your weekly hours? Did you take leave or sick leave, or have gaps between jobs? Was there any run of 31 days or more with no day of more than 3 hours' work?
-- Is your job on board a vehicle, aircraft or ship that crosses borders?
-- Did you have a home in the UK or overseas at any point in the year? When did you have each one, and on how many days were you present in each? Is any UK property only a holiday home, or one you have moved out of and let or put up for sale?
-- Is there any UK place you could stay, such as a flat, a hotel room kept for you, or a relative's home? How long was it available, and how many nights did you spend there?
-- Is your spouse, civil partner or cohabiting partner UK resident for the year? Are you separated, and if so, how? Is any child of yours under 18 UK resident, and on how many days did you see that child in the UK?
-- Did you arrive in or leave the UK during the year, and on what date? Were you (or will you be) resident for the year before and the year after? Did your partner move for work at the same time?
-- Did you leave the UK within the last 5 years after being UK resident for most of the 7 years before you left? Are you treaty-resident anywhere else?
-
-## The method, step by step
-
-1. **Fix the year and the history.** Confirm the tax year and whether the person was resident in each of the 3 previous tax years. That answer decides whether the first or second automatic overseas test applies, whether the country tie counts, and whether Table A or Table B is used. For the FIG regime, check the 10 years before the first qualifying year. See paras 12, 13, 18, 19 and 31 of [Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) and s845B of [ITTOIA 2005](https://www.legislation.gov.uk/ukpga/2005/5/section/845B).
-2. **Build the day log before applying any test.** Record each midnight, each day present without a midnight, each day with more than 3 hours' UK or overseas work, the country at each midnight, and the days in each home. Then apply the counting rules in this order: transit, then exceptional circumstances (capped at 60), then the deeming rule (paras 22-24).
-3. **Automatic overseas tests** (paras 11-16). If any one is met, stop: the person is not UK resident for the year. An automatic overseas test overrides an automatic UK test (para 5), which is why these come first.
-4. **Automatic UK tests** (paras 6-10). If any one is met, and no automatic overseas test is, the person is UK resident for the year.
-5. **Sufficient ties test** (paras 17-20, 31-38). If nothing has decided the year yet, count the ties and read the day count against Table A or Table B. If the ties are sufficient, the person is resident. If not, they are not resident (para 4).
-6. **Split year.** If the person is resident and arrived or left during the year, test every case that could apply: Cases 1-3 for a departure, Cases 4-8 for an arrival. Then apply the priority rules (paras 43-55).
-7. **After-effects.** Check temporary non-residence for anyone who has returned within 5 years (paras 109-112). Check the FIG regime for anyone resident after 10 years of non-residence. Report on SA109 with the return.
-
-## The tests and figures, 2026/27
-
-The rules are unchanged for 2026/27. None of the day or hour thresholds is indexed. The source for everything in this section is [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) unless another link is given.
-
-### Automatic overseas tests: meeting any one means not UK resident
-
-There are 5 automatic overseas tests (para 11). The fourth and fifth apply only when the person dies in the year.
-
-| Test | Statutory condition (P = the person, year X = the year tested) | Para |
-| --- | --- | --- |
-| Source | [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | |
-| First | P was resident for **one or more** of the 3 preceding tax years; days spent in the UK in year X are **less than 16**; and P does not die in year X | 12 |
-| Second | P was resident for **none** of the 3 preceding tax years; days spent in the UK in year X are **less than 46** | 13 |
-| Third (full-time work overseas) | P works sufficient hours overseas, assessed over year X, with no significant breaks from overseas work. The days in year X with **more than 3 hours'** work in the UK are **less than 31**. The days spent in the UK, **not counting days added by the deeming rule**, are **less than 91** | 14 |
-| Fourth (death) | P dies in year X. P was resident for neither of the 2 preceding tax years, or was not resident the year before and the year before that was a split year under Case 1, 2 or 3. P spends **less than 46** days in the UK in year X | 15 |
-| Fifth (death) | P dies in year X. P was non-resident for both of the 2 preceding years because the third test was met, or the para 16(2) alternative (a Case 1 split year) applies. P would meet the third test measured from the start of year X to the day before death | 16 |
-
-**"Sufficient hours overseas" (para 14(3)) is a calculation, not simply "a 35-hour week".**
-1. Mark as *disregarded days* every day with more than 3 hours' UK work, even if overseas work was also done that day.
-2. Add up overseas hours across all jobs and trades, leaving out hours on disregarded days. The result is the *net overseas hours*.
-3. Start from 365 (or 366 if year X includes 29 February). Subtract the disregarded days and the days para 28 allows for leave and job gaps. The result is the *reference period*.
-4. Divide the reference period by 7. If the answer is more than 1 and not whole, round down. If it is less than 1, round up to 1.
-5. Divide the net overseas hours by the result of step 4. An answer of **35 or more** means sufficient hours overseas.
-
-**Para 28 reductions.** The reference period can be reduced for "reasonable" annual or parenting leave and for sick leave. It can also be reduced for non-working days *embedded* in a block of leave, but only where there are **at least 3** consecutive leave days both before and after them. Leave that does not come to a whole number of days is rounded down. A gap between two jobs in which P does no work at all can also be taken off. If a gap lasts **more than 15 days**, only 15 days may be subtracted, and all gaps together may subtract at most 30 (para 28(9)). For split year Cases 1 and 6, that 30 is replaced by the case's permitted limit (paras 44(7)(d) and 49(7)(d)).
-
-**Significant break from overseas work** (para 29(2)). This means **at least 31** days pass without one day of more than 3 hours' overseas work. A day on which such work was missed only because of annual, sick or parenting leave does not count towards the break.
-
-**Crew exclusion** (para 14(4)). The third test does not apply to a person who has a *relevant job* on board a vehicle, aircraft or ship at any time in year X and who makes **at least 6** cross-border trips in that job in year X that begin or end in the UK, or both. A relevant job is one where substantially all trips cross an international boundary (para 30). A voluntary post with no contract of service is not an employment (para 26(8)). RDR3 summarises this as the test not applying "to voluntary workers or workers with a job on board a vehicle, aircraft or ship".
-
-### Automatic UK tests: meeting any one (and no overseas test) means UK resident
-
-There are 4 automatic UK tests (para 6).
-
-| Test | Statutory condition | Para |
-| --- | --- | --- |
-| Source | [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | |
-| First | P spends **at least 183 days** in the UK in year X | 7 |
-| Second (UK home) | P has a home in the UK during all or part of year X and is present there, for any length of time, on **at least 30** days in year X. There must also be **at least one period of 91 consecutive days** while P has that home, with **at least 30** of those days in year X. Throughout that period, either P has no overseas home, or P is present in each overseas home on **fewer than 30** days in year X | 8 |
-| Third (full-time work in UK) | P works sufficient hours in the UK over a period of 365 days with no significant break from UK work, and all or part of the period falls in year X. **More than 75%** of the days in the period with more than 3 hours' work are days with more than 3 hours' work in the UK. At least one day that is in both the period and year X is a day of more than 3 hours' UK work. See [Sch 45 para 9](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | 9 |
-| Fourth (death) | P dies in year X. P was resident for each of the previous 3 tax years by meeting the automatic residence test. The year before year X would not be a split year, even assuming P is non-resident for year X. At death, P's home (or at least one of P's homes) was in the UK. P did not spend a sufficient amount of time in any overseas home in year X | 10 |
-
-- **The home test is applied one home at a time.** Each UK home is looked at separately, and the test is met if it is met for any one of them (para 8(8)). Presence counts only while the place is P's home, so a viewing before buying is ignored (para 8(6)).
-- **What a home is** (para 25). It can be a building, part of a building, "a vehicle, vessel or structure of any kind", depending on how permanent or stable P's arrangements there are. A place used periodically "as nothing more than a holiday home or temporary retreat" is not a home. A former home does not stay a home just because P still owns it after moving out, for example while selling or letting it.
-- **Sufficient hours in the UK** (para 9(2)) uses the same five steps on UK hours over the 365-day period. The disregarded days are the days with more than 3 hours' *overseas* work. The answer again needs to be **35 or more**.
-- **Significant break from UK work** (para 29(1)) means **at least 31** days without one day of more than 3 hours' UK work, ignoring days missed for leave.
-- **Crew exclusion** (para 9(3)): the same test of **at least 6** qualifying cross-border trips applies.
-- **RDR3 shortcut.** RDR3 says: "If you've been in the UK for 183 or more days you'll be a UK resident. There is no need to consider any other tests." This is safe in practice. The only theoretical gap is where the 183 includes deemed days, because the third automatic overseas test ignores those days (para 14(2)). Check that test where deemed days carry someone to 183. See [RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3) and para 5 of Sch 45.
-
-### Sufficient ties test
-
-This test applies only where P "meets none of the automatic UK tests and none of the automatic overseas tests" (para 17(1)). Count the UK ties, then read the day count against the right table.
-
-**Which ties count** (para 31). If P was UK resident for one or more of the 3 preceding tax years, all five ties count: family, accommodation, work, 90-day and country. Otherwise only the first four count. Each tie must be of a different type.
-
-| Tie | Exact statutory definition | Para |
-| --- | --- | --- |
-| Source | [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | |
-| Family | At any time in year X, P has a relevant relationship with someone who is UK resident for year X. That means: a spouse or civil partner, if not separated; a partner "living together as if they were a married couple or civil partners"; or a child of P's under 18. "Separated" means under a court order, by deed of separation, or where the separation is likely to be permanent. There is **no** family tie through a child if P sees the child in the UK, in person for all or part of a day, on **fewer than 61** days in year X. If the child turns 18 in year X, count only the days before the birthday | 32 |
-| Family: whether the family member is resident | Ignore any family tie the family member has only because of their relationship with P. A child under 18 in full-time education in the UK, who would not be resident if term-time were ignored, is treated as **not** resident if they spend **less than 21** days in the UK outside term-time in year X. Half-term and other breaks within a term count as term-time | 33 |
-| Accommodation | P has a place to live in the UK that is available for a continuous period of **at least 91 days** in year X, and P spends **at least one night** there in the year. A gap of **fewer than 16 days** between periods of availability counts as continued availability. A "place to live" includes a home, a holiday home or temporary retreat, or other accommodation where P can live when in the UK. It can be available even if P has no interest in it and no legal right to occupy it. If it is a close relative's home, P must spend **a total of at least 16 nights** there. A close relative is a parent or grandparent, a brother or sister, or a child or grandchild aged 18 or over, including by half-blood, marriage or civil partnership | 34 |
-| Work | P works in the UK for **at least 40 days** in year X, continuously or intermittently. A day counts if P does **more than 3 hours'** work in the UK on it. For crew, a cross-border trip that begins in the UK counts as a UK work day, and one that ends in the UK does not (para 36) | 35 |
-| 90-day | P spent **more than 90 days** in the UK in the tax year before year X, in the tax year before that, or in each of those years | 37 |
-| Country | The UK is the country in which P is present at midnight on the greatest number of days in year X. If two or more countries share the greatest number and one of them is the UK, P has the tie. This tie counts **only** if P was resident in one or more of the 3 preceding years | 38 |
-
-**Table A: P was UK resident for one or more of the 3 preceding tax years** (para 18)
-
-| Days spent in the UK in year X (statute's wording) | RDR3's wording | Ties that are sufficient |
-| --- | --- | --- |
-| Source: [Sch 45 para 18](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | [RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3) | |
-| More than 15 but not more than 45 | 16 to 45 | At least 4 |
-| More than 45 but not more than 90 | 46 to 90 | At least 3 |
-| More than 90 but not more than 120 | 91 to 120 | At least 2 |
-| More than 120 | Over 120 | At least 1 |
-
-**Table B: P was UK resident for none of the 3 preceding tax years** (para 19)
-
-| Days spent in the UK in year X (statute's wording) | RDR3's wording | Ties that are sufficient |
-| --- | --- | --- |
-| Source: [Sch 45 para 19](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | [RDR3](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3) | |
-| More than 45 but not more than 90 | 46 to 90 | All 4 |
-| More than 90 but not more than 120 | 91 to 120 | At least 3 |
-| More than 120 | Over 120 | At least 2 |
-
-- Neither table covers 183 days or more, which the first automatic UK test catches, or the lowest counts, which the first or second automatic overseas test catches.
-- **Death in year X** (para 20). Table A is read without the words "More than 15 but". If death is before 1 March in year X, every day number in both tables is also reduced by an "appropriate number" based on the whole months of year X after the month of death. A result that is not whole rounds up if the first figure after the decimal point is 5 or more, and down otherwise. The multiplier is printed as a formula image on the legislation page, so read it there.
-
-### Counting days
-
-- **Midnight rule** (para 22(1)). A day counts as a day spent in the UK if P is present in the UK at the end of the day. If P is not present at the end of the day, it does not count (para 23(1)), subject to the deeming rule below.
-- **Transit** (para 22(3)). A day does not count if P arrives only as a passenger, leaves the next day, and in between does not engage in activities "to a substantial extent unrelated to P's passage through the UK".
-- **Exceptional circumstances** (para 22(4)-(6)). A day does not count if P would not have been in the UK at midnight but for exceptional circumstances beyond P's control that prevent P leaving, and P intends to leave as soon as they permit. The statute's examples are national or local emergencies such as war, civil unrest or natural disasters, and a sudden or life-threatening illness or injury. The limit is **60 days** in a tax year. Once 60 is reached, counting forward from 6 April, every later such day counts as a UK day, whatever the circumstance. RDR3 points to HMRC manual RFIG22210 onwards.
-- **Deeming rule** (para 23(3)-(4)). This applies only if all three conditions hold. First, P has **at least 3** UK ties for the year. Second, the *qualifying days* (days present in the UK at some point but not at the end of the day) are **more than 30**. Third, P was UK resident for **at least one** of the 3 preceding tax years. Once qualifying days reach 30, counting forward from the start of the year, each later qualifying day is treated as a day spent in the UK.
-- **The deeming rule does not feed itself** (para 23(5)). It is ignored when deciding whether P has 3 ties, so deemed days never create a 90-day tie.
-- **Aggregation** (para 24). Days "in" a period means the total for the period, whether continuous or intermittent.
-- **Work days are counted separately from midnights.** A day of more than 3 hours' work counts as a work day whether or not P is in the UK at midnight. Work means performing the duties of an employment or working in a trade. Qualifying travel time and employer-provided training count as work (para 26). Work is done where it is actually done. Work while travelling to or from the UK by air, by sea or through the tunnel counts as done overseas, from boarding until getting off (para 27).
-
-## Boundary and exception table
-
-At each of these lines, one day changes the answer. Source: [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45).
-
-| Rule | Just inside | Just outside |
-| --- | --- | --- |
-| Source | [Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | |
-| First automatic overseas test (resident in any of the 3 previous years) | 15 UK days: not resident | 16 UK days: go on to the other tests |
-| Second automatic overseas test (resident in none of the 3 previous years) | 45 UK days: not resident | 46 UK days: go on |
-| Third automatic overseas test | 90 UK days (not counting deemed days) and 30 UK work days: can pass | 91 UK days or 31 UK work days: fails |
-| First automatic UK test | 183 UK days: resident | 182 UK days: go on |
-| Table A bands | 45 / 90 / 120 days | 46 / 91 / 121 days: one fewer tie needed |
-| Table B bands | 90 / 120 days | 91 / 121 days: one fewer tie needed |
-| Work tie | 40 days of more than 3 hours: tie | 39 days: no tie |
-| 90-day tie | 91 days in either of the 2 previous years: tie | 90 days: no tie |
-| Family tie through a child | 61 days seeing the child in the UK: tie | 60 days: no tie |
-| Accommodation tie at a close relative's home | 16 nights: tie | 15 nights: no tie |
-| Accommodation availability gap | 15-day gap: treated as still available | 16-day gap: availability broken |
-| Deeming rule | 30 qualifying days: no deemed days | The 31st and later qualifying days are deemed, if the other 2 conditions hold |
-| Exceptional circumstances | Up to 60 days left out | The 61st and later days count |
-| Significant break | 30 days without a day of more than 3 hours' work: no break | 31 days: a break, and the test fails |
-| Home test, overseas home | Present on 29 days: condition B can hold | 30 days: condition B fails |
-| Third automatic UK test | "More than 75%" of work days in the UK: met | Exactly 75% fails. Split year Case 5 uses "at least 75%" instead. See [Sch 45 paras 9 and 48](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) |
-
-## Split year treatment: Cases 1 to 8
-
-A split year **does not change residence status**. The person is resident for the whole year. The split only relaxes the "resident at all times" rule for the charging rules that refer to it (para 40). A year can be split only if the person is UK resident for it (para 43). Split year rules do not apply to personal representatives and apply only in a limited way to trustees (para 41). They are "not intended to affect" treaty residence (para 42). RDR3: "You must consider all cases of split year that might apply to you." Source: [FA 2013 Sch 45 paras 43-56](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45).
-
-| Case | Conditions (all must be met) | Overseas part |
-| --- | --- | --- |
-| Source | [Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | |
-| 1. Starting full-time work overseas (para 44) | Resident for the previous year, whether or not that year was split. There is a period that starts on a day in the year with more than 3 hours' overseas work, ends on 5 April, and meets the overseas work criteria. Those criteria are: sufficient hours overseas over the period; no significant break; UK work days within a permitted limit (30, reduced); and UK days, not counting deemed days, within a permitted limit (90, reduced). The person is not resident for the next year **because they meet the third automatic overseas test** for it | From the first day of that period (the longest one, if there is more than one) |
-| 2. Partner of someone starting full-time work overseas (para 45) | Resident for the previous year. The partner is within Case 1 for this year or the previous year. On a day in the year, the person moves overseas so they can keep living with the partner while the partner works overseas. From the deemed departure day, the person has no UK home, or has homes in both countries but spends the greater part of the time in the overseas one. UK days are within a permitted limit (90, reduced). The person is not resident for the next year | From the deemed departure day. That is the later of the move and the start of the partner's overseas part, where the partner's Case 1 year is this year |
-| 3. Ceasing to have a UK home (para 46) | Resident for the previous year. The person had a UK home at the start of the year, stops having any UK home on a day in the year, and has none for the rest of the year. From that day, they spend **fewer than 16** days in the UK. They are not resident for the next year. At the end of the 6 months beginning with that day, they have a *sufficient link* with an overseas country. That means one of: they are resident there under its domestic law; they were present there at the end of every day of the 6 months; or their only home or homes are there | From the day the last UK home ends |
-| 4. Starting to have a home in the UK only (para 47) | Not resident for the previous year. At the start of the year the person did not meet the *only home test*, meaning their only home, or all their homes, are in the UK. From a day in the year they meet it for the rest of the year. Before that day they do not have sufficient UK ties, using Tables A and B with each day number reduced pro rata | Before the day the only home test is first met |
-| 5. Starting full-time work in the UK (para 48) | Not resident for the previous year. There is a 365-day period that begins on a day in the year with more than 3 hours' UK work. Over that period the person works sufficient hours in the UK with no significant break, and **at least 75%** of the days with more than 3 hours' work are UK work days. Before the period begins, the person does not have sufficient UK ties (tables reduced pro rata). See [Sch 45 para 48](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45) | Before the 365-day period begins (the first, if there is more than one) |
-| 6. Ceasing full-time work overseas (para 49) | The person was not resident for the previous year **because they met the third automatic overseas test**, but was resident for one or more of the **4** tax years before that. There is a period from 6 April to a day in the year with more than 3 hours' overseas work that meets the overseas work criteria (permitted limits of 30 and 90, reduced). The person is resident for the next year, whether or not it is split | Up to the last day of that period (the longest, if there is more than one) |
-| 7. Partner of someone ceasing full-time work overseas (para 50) | Not resident for the previous year. The partner is within Case 6 for this year or the previous year. On a day in the year, the person moves to the UK so they can keep living with the partner. Before the deemed arrival day, the person has no UK home, or spends the greater part of the time in the overseas home. UK days are within a permitted limit (90, reduced). The person is resident for the next year | Before the deemed arrival day |
-| 8. Starting to have a UK home (para 51) | Not resident for the previous year. The person had no UK home at the start of the year. From a day in the year they have a UK home for the rest of that year **and the whole of the next year**. Before that day they do not have sufficient UK ties (tables reduced pro rata). They are resident for the next year **and that year is not a split year** | Before the day the UK home starts |
-
-- **Permitted limits and pro-rating.** The Case 1, 2, 6 and 7 limits start at 30 (work days) or 90 (UK days). Each is reduced by an "appropriate number" worked out from the whole months of the year that fall outside the relevant part. In Cases 4, 5 and 8, the Table A and B day numbers are reduced the same way. The formulas are printed as images on the legislation page. A result that is not whole rounds up if the first decimal is 5 or more, and down otherwise (para 52(5)). Work these out from the legislation page, never from memory.
-- **Partner** (para 52(4)) means a husband, wife or civil partner, or a person living with the taxpayer as if married or civil partners.
-- **Priority** (paras 54-55).
-  - Among Cases 1-3: Case 1 beats Cases 2 and 3, and Case 2 beats Case 3.
-  - Among Cases 4-8: Case 6 has priority unless Case 5 also applies with an earlier split year date. If Case 7 applies but Case 6 does not, the same rule applies between Case 7 and Case 5.
-  - If only Cases 4, 5 and 8 apply, the one with the earliest split year date has priority. Where two or all of them share that date and it is the only or earlier date, those Cases are all treated as having priority (para 55(6)).
-  - The *split year date* is the last day of the overseas part (para 55(2)).
-
-## Temporary non-residence (5 years)
-
-Leaving the UK does not end the matter. Under para 110(1), an individual is **temporarily non-resident** if all of the following apply ([FA 2013 Sch 45 paras 109-112](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45)):
-
-1. They had sole UK residence for a residence period.
-2. Immediately after that period, there are one or more residence periods for which they do not have sole UK residence.
-3. **At least 4 out of the 7 tax years** immediately before the year of departure were either a tax year of sole UK residence or a split year that included a residence period of sole UK residence.
-4. The temporary period of non-residence is **5 years or less**.
-
-- A **residence period** is a whole tax year that is not split, or the UK part or the overseas part of a split year (para 111).
-- **Sole UK residence** means being UK resident with no time at which the person is *Treaty non-resident*, that is, resident in another country under a tax treaty. In a split year, it applies to the UK part with no such time (para 112).
-- RDR3 says the period of temporary non-residence starts on the day after the last residence period with sole UK residence. It ends on the day before the next residence period with sole UK residence. It starts or ends part-way through a year only where split year treatment applies. RDR3: "If your period of non-residence is more than 5 years, these special tax rules do not apply." See [RDR3 section 7](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3).
-- **Effect.** Certain income and gains received or realised while away are taxed in the year of return. RDR3 lists certain pension payments and lump sums, disguised remuneration, remitted foreign income, distributions from closely controlled companies, loans to participators written off, chargeable event gains, offshore income gains and capital gains. HMRC's detail is in RFIG21500.
-
-## The FIG regime from 6 April 2025: why the SRT history matters
-
-From the 2025/26 tax year, the remittance basis for non-domiciled people was replaced by a residence-based **4-year foreign income and gains (FIG) regime**. Whether someone can use it depends entirely on SRT results. Sources: [ITTOIA 2005 s845A](https://www.legislation.gov.uk/ukpga/2005/5/section/845A), [ITTOIA 2005 s845B](https://www.legislation.gov.uk/ukpga/2005/5/section/845B), [HMRC guidance](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime).
-
-- **Qualifying new resident** (s845B(1)). The individual must meet all of these conditions:
-  - UK resident for the year;
-  - not disqualified, meaning not a member of the House of Commons or House of Lords for any part of the year;
-  - "for each of the 10 tax years before that tax year, the individual was not UK resident";
-  - at least 10 years old at the start of the year. Finance Act 2026 inserted this age condition on 18 March 2026. Check commencement if a young child's 2025/26 position matters.
-- **The next three years** (s845B(2)-(3)). The individual also qualifies for each of the next three tax years after a qualifying tax year, provided they are UK resident in it. Tax years 2022/23, 2023/24 and 2024/25 count as qualifying years if the test would have been met in them. HMRC gives the example of someone resident from 2022/23 after 10 non-resident years, and says "you’ll only have one year of eligibility — the tax year 2025 to 2026".
-- **No rolling forward.** HMRC: "You cannot roll any unused years over to a later year." A non-resident year inside the 4 years is lost. The years that remain can still be claimed after the person returns.
-- **The claim** is made in the Self Assessment return, "before the end of the period of 12 months beginning with 31 January after the end of that tax year" (s845A(5)). For 2026/27, that 12-month period starts on 31 January 2028. HMRC says a claim costs the income tax and capital gains tax tax-free allowances. Foreign employment income is not covered: it has its own claim under ITEPA 2003 Part 2 Chapter 5C (overseas workday relief).
-- **What this means for SRT work.** The 10 non-resident years are the 10 before the **first** qualifying tax year, not always the 10 before the year of claim.
-  - Where 2026/27 is itself the first qualifying year (the person arrives in 2026/27), the look-back is 2016/17 to 2025/26.
-  - Where 2026/27 is one of the "next three tax years" after a qualifying year of 2023/24, 2024/25 or 2025/26 (s845B(2)), the look-back runs from that earlier year. For example, someone who became resident in 2024/25 after 10 non-resident years needs non-residence for 2014/15 to 2023/24. 2024/25 counts as a qualifying year under s845B(3)(c), and 2026/27 is one of the next three years after it, provided the person is UK resident in 2026/27.
-  - This Schedule has applied since 6 April 2013. Years 2019/20 and 2020/21 are tested with the coronavirus modifications in [Finance Act 2020 s109](https://www.legislation.gov.uk/ukpga/2020/14/section/109).
-  - A look-back that reaches 2012/13 or earlier is decided under the rules before the SRT, which this skill does not cover. Refer those cases.
-  - A single resident year in the 10 breaks the chain.
-
-## Worked cases
-
-All cases are for 2026/27 and are worked from [FA 2013 Sch 45](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45).
-
-**Case A: a leaver with three ties.** Anna was UK resident in 2023/24, 2024/25 and 2025/26, and spent 150 days in the UK in 2025/26. In 2026/27 her only home is in Spain. She is a part-time consultant who is not full-time anywhere. She spends 40 midnights in the UK, 20 of them in her brother's London flat, and does more than 3 hours' UK work on 40 days.
-- Automatic overseas tests. The first fails: 40 is not less than 16. The second is not open to her, because she was resident in the previous 3 years. The third fails because she is not full-time overseas.
-- Automatic UK tests. The first fails (40 days). The second fails because she has no UK home. The third fails because she is not full-time in the UK.
-- Ties (all five count). Work: yes, because 40 is at least 40. Accommodation: yes. The flat is available to her for the whole year, which is at least 91 continuous days. Her brother is a close relative, and she spent at least 16 nights there (20). 90-day: yes, because she spent more than 90 days in the UK in 2025/26. Family: no. Country: no, because Spain has more midnights. That is 3 ties.
-- Table A. 40 days is "more than 15 but not more than 45", so at least 4 ties are needed. With only 3, she is **not UK resident**. At 46 midnights she would need only 3 ties and would be resident. At 39 UK work days she would lose the work tie.
-
-**Case B: the same leaver with day visits.** Anna also has 35 days on which she is in the UK during the day but not at midnight. The deeming rule applies: she has at least 3 ties, more than 30 qualifying days, and a resident year in the previous 3. Qualifying days 31 to 35 are deemed UK days, so her count is 40 + 5 = 45. That is still "not more than 45", so 4 ties are still needed and she is still **not UK resident**. One more deemed day, making 46, would make her resident.
-
-**Case C: an arriver.** Raj was not UK resident in any year from 2016/17 to 2025/26. In 2026/27 he spends 100 midnights in the UK. He rents a London flat for the whole year. His family home stays in Singapore, where he is present on more than 30 days. He does more than 3 hours' UK work on 45 days, part time, and is not full-time anywhere. His wife and children stay in Singapore.
-- Automatic overseas tests. The second fails: 100 is not less than 46. The third fails because he is not full-time overseas.
-- Automatic UK tests. The first fails. The second fails: even if the London flat is a home, he is present in his overseas home on 30 or more days, so condition B never holds. The third fails because he is not full-time in the UK.
-- Ties. Only four count, because he was not resident in the 3 previous years. Accommodation: yes. Work: yes, 45 is at least 40. Family: no. 90-day: no, because he spent 90 or fewer UK days in each of 2024/25 and 2025/26 (para 37 needs more than 90). That is 2 ties.
-- Table B. 100 days is "more than 90 but not more than 120", so at least 3 ties are needed. He is **not UK resident**.
-- If his wife moved to London and became UK resident, he would have a family tie, 3 ties in total, and would be resident. In that case, as his first resident year after 10 non-resident years, he would be a qualifying new resident. He could then make FIG claims for 2026/27 to 2029/30 for each of those years in which he is UK resident.
-
-**Case D: split year Case 3.** Tom has been UK resident for many years.
-- Until 30 September 2026 his only home is in London, and he is there on far more than 30 days. On 30 September 2026 he sells it and moves into a Dubai home he acquires that day.
-- He meets the second automatic UK test: there is a 91-day run from April with no overseas home. So he is **resident for 2026/27**.
-- From 30 September he spends 10 days in the UK, which is fewer than 16. Dubai is his only home at the end of the 6 months beginning 30 September. He is not resident for 2027/28, but that year needs its own test.
-- He has no full-time overseas work, so Cases 1 and 2 do not apply.
-- **Case 3 applies.** The overseas part begins on 30 September 2026, the day he ceased to have a UK home.
-
-**Case E: temporary non-residence.** Tom from Case D had sole UK residence in each of the 7 tax years before 2026/27.
-- His last residence period with sole UK residence is the UK part of 2026/27. His period of non-residence therefore starts the next day, 30 September 2026.
-- He returns and is UK resident for 2031/32, which is not a split year, and he has no treaty residence elsewhere.
-- His non-residence ends on 5 April 2031. That is 5 years or less after it began, so he is **temporarily non-resident**.
-- Gains on assets he held before leaving and sold while in Dubai can be taxed in 2031/32, the year of return. To avoid that, the period of non-residence would need to be more than 5 years.
-
-## When to refuse or refer
-
-- **Anyone within a few days of a threshold** in the boundary table. Do not answer from an approximate count. Refer for a day-by-day reconstruction with evidence for each midnight.
-- **Exceptional circumstances.** Whether a circumstance was exceptional, beyond the person's control and stopped them leaving is a judgement on the facts. The statute gives examples, not a list.
-- **Every split year.** The cases overlap, the priority rules pick the date, and the permitted limits and pro-rating need the formulas on the legislation page. Refer rather than choose a case.
-- **Treaty residence.** The SRT decides UK residence only. Where another country also claims the person, the tie-breaker is in the double taxation agreement. It also decides "Treaty non-resident" for temporary non-residence. Refer.
-- **Temporary non-residence.** Anyone returning within 5 years of leaving, or planning a sale or a pension withdrawal while abroad.
-- **FIG regime claims.** These need a 10-year SRT history, may involve the FA 2020 coronavirus modifications for 2019/20 and 2020/21, and give up allowances. Those modifications also matter to a temporary non-residence look-back of 7 years that includes 2019/20 or 2020/21. Refer the claim itself to `uk-non-dom` or a UK adviser.
-- **Deceased persons.** The fourth and fifth automatic overseas tests, the fourth automatic UK test and the reduced ties tables apply only on death.
-- **Crew** with a relevant job on a vehicle, aircraft or ship. The third automatic overseas test and third automatic UK test may be switched off, and special work-day rules apply.
-- **Trustees and personal representatives.**
-- **Residence within the UK**, for Scottish or Welsh rates. This test does not decide it.
-
-## Filing and payment
-
-- **Where the status goes.** Residence status, split year claims and FIG claims go on the SA109 supplementary pages, "Residence and foreign income and gains (FIG) regime etc", filed with the SA100 return. See [SA109 on GOV.UK](https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109) for the form.
-- **2025/26 returns (being filed now).** The [GOV.UK deadlines page](https://www.gov.uk/self-assessment-tax-returns/deadlines) gives these dates:
-  - register by 5 October 2026 if you need a return and have not sent one before;
-  - paper return by 31 October 2026;
-  - online return by 31 January 2027;
-  - payment by 31 January 2027;
-  - online return by 30 December 2026 if you want the tax collected through your tax code.
-  
-  Late filing and late payment penalties apply.
-- **2026/27.** Expect the same pattern one year later. The deadlines page currently shows the 2025/26 dates, so confirm the 2026/27 dates there. A 2026/27 FIG claim must be made within the 12 months beginning 31 January 2028 (s845A(5)).
-- **Records.** Keep the day log, travel evidence (boarding passes, passport stamps, card statements), work diaries and evidence about homes. HMRC can ask for them in an enquiry.
-
-## Completion checklist
-
-- [ ] Tax year stated as 2026/27 (6 April 2026 to 5 April 2027). Residence for the 3 previous years established, and for 10 years if FIG applies.
-- [ ] Day log built. Midnights, day-only visits, transit, exceptional days (60 limit) and deemed days applied in that order.
-- [ ] Every relevant automatic overseas test checked before the automatic UK tests.
-- [ ] Automatic UK tests checked, including a home-by-home analysis and the 91-day window.
-- [ ] Ties counted against the exact definitions, each of a different type. Country tie counted only if resident in one of the 3 previous years.
-- [ ] Correct table (A or B) read, using the statute's "more than / not more than" bands.
-- [ ] Split year: every case tested, priority applied, and the next year's status confirmed.
-- [ ] Temporary non-residence and FIG eligibility considered.
-- [ ] Anything near a boundary, or involving a treaty, a death, crew, trustees or exceptional circumstances, referred.
-- [ ] Status and claims entered on SA109 and filed by the deadline.
+1. Were you UK resident in each of the 3 tax years before 2026/27? If you arrived recently, were you non-resident in each of the 10 years before your first UK year? (Decides the overseas test, the ties, the table and FIG.)
+2. A dated log of every arrival and departure: where were you at midnight each night, and on which days were you in the UK only during the day? Were any UK nights caused by an emergency or sudden illness?
+3. Which days did you work more than 3 hours in the UK, and overseas? Weekly hours, leave and any 31-day gap without work.
+4. Every home you had in the year, UK and overseas, with dates and days present. Any other UK place you could stay (a relative's home, a flat kept for you), how long it was available and how many nights you spent there.
+5. Is your spouse, civil partner or partner UK resident for the year? Any child under 18 in the UK, and on how many days did you see them there?
+6. Did you arrive or leave during the year, on what date, and why (job, partner's job, home)? Were you UK resident for most of the 7 years before an earlier departure, and are you treaty-resident anywhere else?
 
 ## Sources
 
-- Finance Act 2013, Schedule 45: [legislation.gov.uk](https://www.legislation.gov.uk/ukpga/2013/29/schedule/45)
-- HMRC RDR3, Statutory Residence Test notes (updated 11 June 2026): [gov.uk](https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3)
-- ITTOIA 2005 s845A and s845B (FIG regime): [s845A](https://www.legislation.gov.uk/ukpga/2005/5/section/845A) and [s845B](https://www.legislation.gov.uk/ukpga/2005/5/section/845B)
-- HMRC, Check if you can claim the 4-year FIG regime: [gov.uk](https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime)
-- Finance Act 2020 s109 (coronavirus modifications): [legislation.gov.uk](https://www.legislation.gov.uk/ukpga/2020/14/section/109)
-- SA109 and Self Assessment deadlines: [SA109](https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109) and [deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines)
+| Source | URL | Read on |
+|---|---|---|
+| Finance Act 2013, Schedule 45 (paras 1-56, 109-115) | https://www.legislation.gov.uk/ukpga/2013/29/schedule/45 | 2026-10-24 |
+| HMRC, RDR3 Statutory Residence Test guidance note (updated 11 June 2026) | https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3 | 2026-10-24 |
+| HMRC Residence and FIG regime manual, RFIG20720 (deeming rule) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20720 | 2026-10-24 |
+| HMRC Residence and FIG regime manual, RFIG21500 (temporary non-residence) | https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21500 | 2026-10-24 |
+| Taxation of Chargeable Gains Act 1992, s1M (temporary non-residents) | https://www.legislation.gov.uk/ukpga/1992/12/section/1M | 2026-10-24 |
+| ITTOIA 2005, s845A and s845B (FIG regime claim and qualifying new resident) | https://www.legislation.gov.uk/ukpga/2005/5/section/845B | 2026-10-24 |
+| GOV.UK, Check if you can claim the 4-year foreign income and gains regime | https://www.gov.uk/guidance/check-if-you-can-claim-the-4-year-foreign-income-and-gains-regime | 2026-10-24 |
+| Taxes Management Act 1970, s7, s8 and s59B | https://www.legislation.gov.uk/ukpga/1970/9/section/8 | 2026-10-24 |
+| Finance Act 2009, Schedule 55, paras 3-6 (late filing penalties) | https://www.legislation.gov.uk/ukpga/2009/10/schedule/55 | 2026-10-24 |
+| Finance Act 2007, Schedule 24, para 4 (inaccuracy penalties) | https://www.legislation.gov.uk/ukpga/2007/11/schedule/24/paragraph/4 | 2026-10-24 |
+| GOV.UK, Self Assessment tax returns: deadlines | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-10-24 |
+| GOV.UK, Self Assessment tax returns: penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
+| HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
+| GOV.UK, SA109 Residence and FIG regime etc (page updated 28 September 2026) | https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109 | 2026-10-24 |
 
-> **Working paper.** This skill states the test. It does not apply it to anyone. The SRT turns on a day-by-day and hour-by-hour record, and a single day can reverse the answer. Where the facts are close to a line, have a UK accountant settle the position before the return is filed.
+Not yet confirmed: how to count "whole months" for the appropriate number when the arrival or departure day falls mid-month (the statute does not say, and HMRC's manual pages on it were not read; Example 2 uses 1 October so both readings give 6); whether the 2026/27 edition of the SA109 notes is published; the commencement date of the age-10 condition in ITTOIA 2005 s845B(1)(d) for years before 2026/27.
 
 <!-- openaccountants-cta-block -->
 
