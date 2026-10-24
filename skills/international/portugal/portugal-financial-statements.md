@@ -1,10 +1,10 @@
 ---
 name: portugal-financial-statements
 description: "Utilize esta skill na preparação, revisão ou aconselhamento sobre demonstrações financeiras anuais de uma sociedade portuguesa. Acione com expressões como \"demonstrações financeiras\", \"IES\", \"Informação Empresarial Simplificada\", \"SNC\", \"NCRF\", \"NC-PE\", \"NC-ME\", \"balanço\", \"demonstração de resultados\", \"demonstração de fluxos de caixa\", \"anexo\", \"Portal das Finanças\", \"depósito de contas\", \"ROC\", \"revisão legal de contas\" ou qualquer questão sobre preparação e depósito de contas estatutárias ao abrigo da lei portuguesa. Abrange o referencial SNC, limiares dimensionais, demonstrações obrigatórias, formatos, anexo, submissão da IES e requisitos de auditoria. Trigger also on: \"Portuguese financial statements\", \"SNC accounts\", \"IES filing Portugal\", \"NCRF\", \"NC-ME microentities\", \"NC-PE small entities\", \"balanço\", \"demonstração de resultados\", \"Portal das Finanças deposit of accounts\", \"ROC statutory audit Portugal\"."
-version: 1.0
+version: 1.1
 jurisdiction: PT
 tax_year: 2025
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -127,7 +127,7 @@ Em vigor para os exercícios económicos até 31 de dezembro de 2025:
 | 3 | Acréscimos e diferimentos | Princípio rigoroso da periodização económica (especialização dos exercícios) |
 | 4 | Imparidade de dívidas a receber | NCRF 27; avaliação individual e por carteira |
 | 5 | Inventários | NCRF 18; menor entre custo (FIFO/CMP) e valor realizável líquido (VRL) |
-| 6 | Impostos diferidos | NCRF 25; diferenças temporárias; taxa de IRC de 21% + derrama |
+| 6 | Impostos diferidos | NCRF 25; diferenças temporárias; taxa de IRC do período em que a diferença reverte (19% em 2026, 18% em 2027, 17% a partir de 2028; art. 87.º CIRC e art. 3.º da Lei 64/2025; ver pt-corporate-tax) + derrama |
 | 7 | Operações em moeda estrangeira | NCRF 23; itens monetários à taxa de fecho |
 | 8 | Locações | NCRF 9; classificação como locação financeira ou operacional |
 | 9 | Benefícios dos empregados | NCRF 28; provisão para férias, subsídio de férias e subsídio de Natal |
