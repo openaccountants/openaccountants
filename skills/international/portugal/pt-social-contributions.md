@@ -1,269 +1,240 @@
 ---
 name: pt-social-contributions
-description: Use this skill whenever asked about Portuguese self-employed social contributions (contribuições para a Segurança Social). Trigger on phrases like "Segurança Social trabalhador independente", "Portuguese social contributions", "declaração trimestral SS", "contribuições independente Portugal", or any question about social contribution obligations for a self-employed client in Portugal. Covers the 21.4% rate on 70% of relevant income, quarterly declaration, and first-year exemption. ALWAYS read this skill before touching any Portugal social contributions work.
-version: 2.0
+description: "Portuguese social security contributions (Segurança Social) for tax year 2026 under the Código dos Regimes Contributivos (Lei 110/2009). Covers self-employed workers (trabalhadores independentes): 21.4% (25.2% for empresários em nome individual and EIRL holders), relevant income at 70% of services and 20% of goods, the quarterly declaration and the monthly payment from the 10th to the 20th, the EUR 20 minimum, the first-12-months rule, the 4 x IAS exemption with employment and the 12 x IAS ceiling on the 2026 IAS of EUR 537.13, organised accounts, the 25% option, and contracting entities (10% or 7%). Also the headline employee and employer rates (11% and 23.75%), special rates, members of corporate bodies (MOE), employer deadlines, fines and late interest. Trigger on: 'Segurança Social independente', 'declaração trimestral', 'recibos verdes contribuições', 'entidade contratante', 'MOE gerente', 'TSU'. Out of scope: payroll computation (portugal-payroll), IRS (pt-income-tax), cross-border cover (pt-cross-border)."
+version: 2.1
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# PT Social Contributions
+# Portugal: social security contributions (tax year 2026)
 
-## Portugal Social Contributions -- Self-Employed Skill v2.0
+> Source-cited draft: not reviewed by an accountant.
 
-## Rates and thresholds
+This skill computes Portuguese social security contributions for 2026. Its core is the self-employed regime (trabalhadores independentes, recibos verdes). It also gives the headline rates for employees, employers and members of corporate bodies, and the duty of companies that buy most of a freelancer's work (entidades contratantes).
 
-Source-cited draft: not reviewed by an accountant.
+The law is the Código dos Regimes Contributivos do Sistema Previdencial de Segurança Social (the Code), approved by Lei n.º 110/2009 and last amended by Decreto-Lei n.º 127/2025 with effect from 1 January 2026. Articles were read in the consolidated text on the Diário da República on 2026-10-24. The 2026 IAS (indexante dos apoios sociais) is EUR 537.13 (Portaria n.º 480-A/2025/1, art. 2).
 
-### Segurança Social
+Sibling skills, which this one links to and does not repeat:
 
-- **Trabalhador independente** — 21,4%  _(Código Contributivo Art. 163)_
-- **Empresário em nome individual** — 25,2%  _(Código Contributivo)_
-- **Rendimento relevante — serviços** — 70% do bruto  _(Código Contributivo Art. 162)_
-- **Rendimento relevante — bens** — 20% do bruto  _(Código Contributivo Art. 162)_
-- **Base mínima mensal (IAS)** — €20,00 por mês (valor mínimo a pagar quando não há rendimentos ou as contribuições apuradas são inferiores a 20,00€; não existe base mínima igual ao IAS)  _([Portaria n.º 6-B/2025/1, de 6 de janeiro](https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw))_
-- **Base máxima mensal (12×IAS)** — €6 445,56 (12 x IAS, 2026)  _([Código Contributivo Art.º 163º, nº 5](https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw))_
-- **Primeiros 12 meses** — Isento de contribuições  _(Código Contributivo)_
-- **Emprego concorrente (< 4×IAS)** — Isento se rendimento relevante < 4 x IAS/mês (em 2026 4 x 537,13 = €2 148,52)  _([Código Contributivo Art.º 157º, nº 1, a)](https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw))_
-- **Declaração trimestral** — Janeiro (out-dez), abril (jan-mar), julho (abr-jun), outubro (jul-set)  _(Código Contributivo)_
-- **Pagamento mensal** — Entre 10 e 20 do mês  _(Código Contributivo)_
-- **Dedutibilidade fiscal** — SIM — dedutíveis do IRS  _(CIRS)_
+- `portugal-payroll`: the monthly payroll run, what pay is subject to contributions, IRS withholding, net pay and employer cost.
+- `pt-income-tax`: IRS on self-employed income, including how contributions reduce taxable income.
+- `pt-cross-border`: residence, people arriving and leaving, and which country's social security applies.
 
-## Section 1 -- Quick reference
+## Who this applies to
 
-**Quick reference**  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+**Self-employed workers.** A person who carries on a profession or business on their own account is covered by the self-employed regime (Code art. 132 and following). This includes recibos verdes freelancers, empresários em nome individual and EIRL holders, and their spouses or partners who work with them regularly.
 
-| Field | Value |
-| --- | --- |
-| Country | Portugal (Portuguese Republic) |
-| Authority | ISS (Instituto da Segurança Social) for contributions; AT (Autoridade Tributária) for tax |
-| Primary legislation | Código Contributivo (Lei n.o 110/2009, art. 139-170) |
-| Supporting legislation | Decreto Regulamentar 1-A/2011; annual updates via Portaria |
-| Self-employed rate | 21.4% |
-| Empresário em nome individual rate | 25.2% |
-| Relevant income -- services | 70% of gross |
-| Relevant income -- goods | 20% of gross |
-| Minimum monthly contribution | EUR 20 |
-| Maximum monthly base (12x IAS) | EUR 6 445,56 (2026) |
-| First 12 months | Exempt from contributions |
-| Declaration frequency | Quarterly |
-| Payment frequency | Monthly (between 10th and 20th) |
-| Currency | EUR only |
-| Contributor | Open Accountants |
-| Validated by | Not reviewed by an accountant |
-| Validation date | Not reviewed by an accountant |
+**Not covered** (Code art. 139 and the ISS guide): lawyers and solicitadores in their own pension fund; people temporarily working in Portugal who already have compulsory cover elsewhere for invalidity, old age and death (they must ask for exclusion, form RV 1025); small farmers producing mainly for own use with yearly income up to 4 x IAS (EUR 2,148.52, form RV 1027); Category B income only from small renewable power production or from rent and local lodging (alojamento local) in a house or flat. A person who works for the same entity, or the same group, both as employee or MOE and as a freelancer is treated as an employee for that work; the employee or MOE rates apply to the fees.
 
-## Section 2 -- Required inputs and refusal catalogue
+**When cover starts.** The AT tells Segurança Social when someone opens activity. The person is registered automatically. For a first-ever start, cover takes effect on the first day of the 12th month after the month activity started (Code art. 145(1)). Activity started in January 2026 means contributions from 1 January 2027. If activity stops during those 12 months, the count is suspended and resumes on restart within 12 months (art. 145(4)). On a restart after an earlier period of activity, cover takes effect on the first day of the month of restart (art. 145(3)). A person may ask to start earlier through a quarterly declaration; cover then starts on the first day of that declaration month and the EUR 20 minimum applies until the first declared base.
 
-### Required inputs
+**Exempt while covered** (Code art. 157(1)). No self-employed contributions are due:
 
-- **Required inputs before computing** — Before computing, you MUST obtain: 1. Activity type -- trabalhador independente, empresário em nome individual, or profissional liberal? 2. Gross quarterly income (rendimento relevante) -- from the quarterly declaration 3. Year of activity -- first 12 months exempt from contributions 4. Any concurrent employment? -- reduced rate may apply 5. Category of services -- services (prestação de serviços) vs sales of goods (venda de bens)? 6. Does the client have an accountant (contabilidade organizada)? -- affects relevant income calculation. If income type (services vs goods) is unknown, STOP. The relevant income percentage differs.
+- with employment for a different, unrelated employer that gives full social protection, at an average salary of at least 1 x IAS (EUR 537.13), while monthly average relevant income is below 4 x IAS (EUR 2,148.52). Above that, contributions are due on the excess only (art. 163(4));
+- for a person receiving an invalidity or old-age pension, national or foreign, where the work is compatible with the pension;
+- for a person receiving an occupational-risk pension with incapacity of 70% or more;
+- from January, for a person who in the previous year only paid the EUR 20 minimum (art. 157(1)(d) with 163(2)), while that stays true.
 
-### Refusal catalogue
+Exemption is automatic when Segurança Social already knows the facts; otherwise the person files form RC 3001 and it starts the month after the request (art. 157(2), ISS guide).
 
-- **R-PT-SOC-1 -- Cross-border EU worker** — Trigger: client is a Portuguese resident providing services in another EU state. Message: "Cross-border social insurance requires A1 certificate analysis under EU Regulation 883/2004. Escalate to qualified adviser."
-- **R-PT-SOC-2 -- Pensioner reduced rates** — Trigger: self-employed pensioner asks about reduced contribution rate. Message: "Pensioner contribution rates require confirmation with ISS. Flag for reviewer."
+**Employees and companies.** Employers pay contributions on pay under the general regime (art. 53). Members of corporate bodies (membros dos órgãos estatutários, MOE) such as gerentes and directors are covered by Code art. 61 and following. Unpaid MOE of for-profit companies are excluded if they have other compulsory cover with pay above 1 x IAS, or are invalidity or old-age pensioners (art. 64). The payroll run is in `portugal-payroll`.
 
-### Prohibitions
+**Contracting entities** (entidades contratantes, art. 140). A company, or an individual with business activity, that in one calendar year receives more than 50% of a self-employed worker's total activity value pays its own contribution. This applies only where the worker is liable to contribute and has yearly service income of at least 6 x IAS (EUR 3,222.78). Group companies count as one entity.
 
-- **Prohibitions list** — NEVER apply 21.4% to gross income directly -- the relevant income percentage (70% for services, 20% for goods) must be applied first. NEVER forget the first 12 months exemption for new self-employed. NEVER ignore the minimum monthly contribution of EUR 20 -- with zero income, or contributions below EUR 20, this minimum applies after the exemption period. NEVER confuse the self-employed rate (21.4%) with the empresário rate (25.2%). NEVER present quarterly declaration income as the contribution base -- it must be converted to monthly. NEVER forget to clamp at the maximum of 12 x IAS (EUR 6 445,56 in 2026). NEVER state that contributions are NOT tax-deductible -- they ARE deductible from IRS income. NEVER advise on concurrent employment exemption without verifying the 4 x IAS threshold.  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+## Rates, bands and thresholds
 
-## Section 3 -- Relevant income calculation
+| Item | Rate or amount | Tax year | Source |
+|---|---|---|---|
+| IAS | EUR 537.13 | 2026 | Portaria 480-A/2025/1, art. 2: https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf |
+| Self-employed rate | 21.4% | 2026 | Code art. 168(1): https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 |
+| Empresário em nome individual, EIRL holder and their spouses | 25.2% | 2026 | Code art. 168(4) |
+| Relevant income: services | 70% of the quarter's service income | 2026 | Code art. 162(1)(a) |
+| Relevant income: goods, and hotel, restaurant and drinks services declared as such | 20% | 2026 | Code art. 162(1)(b) and (2) |
+| Relevant income with organised accounts | prior-year taxable profit; monthly base = 1/12, minimum 1.5 x IAS (EUR 805.70) | 2026 | Code art. 162(3), 163(3); ISS guide |
+| Monthly base | 1/3 of the quarter's relevant income, for the declaration month and the next two | 2026 | Code art. 163(1) |
+| Minimum contribution | EUR 20.00 a month when there is no income or the result is below EUR 20 | 2026 | Code art. 163(2); ISS guide (2026 edition) |
+| Ceiling on the monthly base | 12 x IAS = EUR 6,445.56 | 2026 | Code art. 163(5) |
+| Exemption with employment | monthly average relevant income below 4 x IAS = EUR 2,148.52; above it, base = excess | 2026 | Code art. 157(1)(a), 163(4) |
+| Option on the base | up to 25% above or below, in 5% steps | 2026 | Code art. 164(1)-(2) |
+| Contracting entity, dependency over 80% | 10% of services bought in the year | 2026 | Code art. 167, 168(7)(a) |
+| Contracting entity, dependency over 50% up to 80% | 7% | 2026 | Code art. 140(1), 168(7)(b) |
+| Contracting entity: worker's yearly service income at least | 6 x IAS = EUR 3,222.78 | 2026 | Code art. 140(2) |
+| Employees, general regime | 34.75%: employer 23.75%, employee 11% | 2026 | Code art. 53 |
+| MOE with management or administration duties (gerência, administração) | 34.75%: entity 23.75%, member 11% | 2026 | Code art. 69(2) |
+| Other MOE | 29.6%: entity 20.3%, member 9.3% | 2026 | Code art. 69(1) |
+| MOE base | pay actually received, minimum 1 x IAS (EUR 537.13) unless covered elsewhere at IAS or more | 2026 | Code art. 66 |
+| Special rate: employers without profit motive | 33.3%: employer 22.3%, employee 11% | 2026 | Code art. 112 |
+| Special rate: workers with disability | 22.9%: employer 11.9%, employee 11% | 2026 | Code art. 109(1) |
+| Special rate: professional sportspeople | 33.3%: employer 22.3%, employee 11% | 2026 | Code art. 79(1) |
+| Special rate: domestic workers | 28.3% (18.9% + 9.4%) without unemployment cover; 33.3% (22.3% + 11%) with it | 2026 | Code art. 121 |
+| Late-payment interest | 7.221% a year, charged per calendar month or part | 2026 | Code art. 211-212; IGCP Aviso 18/2026/2: https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 |
 
-Legislation: Código Contributivo, art. 162
+## The taxable base
 
-### Without organized accounting (sem contabilidade organizada)
+**Self-employed, quarterly regime.** Each quarter the worker declares gross service income and gross sales of goods for the previous three months (art. 151-A). Segurança Social computes relevant income: 70% of services plus 20% of goods (art. 162(1)). Hotel, restaurant and drinks services declared as such for tax use the 20% factor (art. 162(2)). Mixed activity applies each factor to its own income.
 
-**Relevant income percentages without organized accounting**
+Monthly base = relevant income / 3. It applies to the declaration month and the next two (art. 163(1)). The April declaration (January to March income) sets the base for April, May and June.
 
-| Income type | Relevant income % |
-| --- | --- |
-| Prestação de serviços (services) | 70% of gross |
-| Produção e venda de bens (goods) | 20% of gross |
-| Mixed (services + goods) | Apply each % to respective category |
+Then, in this order:
 
-### With organized accounting (com contabilidade organizada)
+1. If the worker is in the employment exemption and the monthly average is at or above 4 x IAS, the base is the excess over EUR 2,148.52 (art. 163(4)). The ISS guide says a resulting contribution below EUR 5 is ignored.
+2. The worker may move the base up or down by up to 25% in 5% steps when declaring (art. 164). The ISS guide says the option does not apply to the excess base of a worker with employment.
+3. The base is capped at EUR 6,445.56 (art. 163(5)).
+4. Contribution = base x 21.4% (25.2% for an ENI or EIRL holder). If there is no income, or the result is under EUR 20, the contribution is EUR 20 (art. 163(2)).
 
-- **Relevant income with organized accounting** — Relevant income = actual net profit from accounting records.
+**Income left out.** Unless the worker chooses to include them, relevant income excludes investment grants and subsidies, capital gains, and income from intellectual or industrial property. Income from small renewable power production and from rent or local lodging in a house or flat never counts (art. 162(4) and the ISS guide).
 
-### Quarterly to monthly conversion
+**Organised accounts.** Relevant income is the prior-year taxable profit declared on Anexo SS of the IRS Modelo 3 (art. 162(3)). The monthly base is 1/12 of it, at least 1.5 x IAS (EUR 805.70). Segurança Social sets it in October for the next calendar year (art. 163(3)). These workers file no quarterly declaration. After the October notice they may ask to move to the quarterly regime, from January (art. 164(3)); the ISS guide gives 1 to 30 November as the window.
 
-- **Quarterly to monthly conversion formula** — quarterly_relevant_income = sum of relevant_income for the 3 months in the quarter monthly_relevant_income = quarterly_relevant_income / 3
+**Spouses and partners** of a self-employed worker pay on 70% of that worker's relevant income, adjustable from 20% lower up to the full amount, with the same EUR 20 minimum and 12 x IAS ceiling (art. 166, ISS guide).
 
-## Section 4 -- Rates, base, and bounds (2026)
+**Annual review.** In January the worker confirms or corrects the previous year's declared income (art. 151-A(5)). Segurança Social also compares the year with AT data. A difference over EUR 20 is charged in January of the following year (art. 164-A, ISS guide). For 2025 income the ISS guide gives 20 February 2026 as the date for any extra payment; after that, interest runs. Overpayments are credited to future contributions, or refunded on form RC 3041.
 
-Legislation: Código Contributivo, art. 163, 168
+**Employees and MOE.** The base is pay as defined in Code art. 44 to 48. Which items are in or out, and the monthly payroll figures, are in `portugal-payroll`. MOE pay is subject at the MOE rates above, with the 1 x IAS minimum base (art. 66).
 
-### Contribution rates
+**Contracting entities.** The base is the total value of services the worker supplied to the entity in the calendar year (art. 167). Dependency is the entity's share of the worker's total activity value for the year (art. 140).
 
-**Contribution rates**  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+**Effect on IRS.** In the IRS simplified regime, compulsory contributions are deductible only to the extent they exceed 10% of gross Category B income (CIRS art. 31(2)). Contributions also count toward the 15% expenses test. The method is in `pt-income-tax`.
 
-| Category | Rate |
-| --- | --- |
-| Trabalhador independente | 21.4% |
-| Empresário em nome individual (commercial/industrial income) and EIRL holder | 25.2% |
+## Deadlines and filing
 
-### Base bounds
+| Obligation | Deadline | Source |
+|---|---|---|
+| Self-employed quarterly declaration | Last day of January, April, July and October, for the previous three months' income | Code art. 151-A(3) |
+| Correction of a quarterly declaration | Within 15 days after the deadline (ISS guide). A late declaration can be filed online until the last day of the month before the next declaration month | ISS guide |
+| Annual confirmation of last year's income | January | Code art. 151-A(5) |
+| Self-employed monthly payment | Between the 10th and the 20th of the month after the month it relates to | Code art. 155(2) |
+| Contracting-entity contribution | By the 20th of the month after Segurança Social issues the payment notice; it relates to the previous calendar year | Code art. 155(3) |
+| Employer: confirm the monthly pay declaration (new model) | By the 20th of the following month; silence counts as acceptance of the figures the system computed | Code art. 40(7)-(8), as amended by DL 127/2025 |
+| Employer: pay employee and employer contributions | Between the 1st and the 25th of the following month | Code art. 43, as amended by DL 127/2025, in force 1 January 2026 |
+| Move of all employers to the new reporting model | During 2026 by request; compulsory from 1 January 2027 | DL 127/2025, art. 5 |
 
-**Base bounds**  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+The quarterly declaration is filed on Segurança Social Direta. Workers exempt under art. 157(1)(a) to (c) and workers on organised accounts do not file it. A worker who stops or suspends activity files the declaration in the next window (art. 151-A(4)).
 
-| Bound | Amount |
-| --- | --- |
-| Minimum monthly contribution (no IAS minimum base) | EUR 20 |
-| Maximum monthly base (12x IAS, 2026) | EUR 6 445,56 |
+Payment is by Multibanco reference, homebanking or direct debit set up on Segurança Social Direta (ISS guide).
 
-- **Monthly base clamp formula** — monthly_base = min(monthly_relevant_income, 6 445,56); if the resulting contribution is below EUR 20, pay EUR 20  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+To receive benefits, the worker's contributions must be paid up to the end of the third month before the month of the event that gives rise to the benefit (ISS guide).
 
-## Section 5 -- Computation steps
+## Penalties and interest
 
-### Step 5.1 -- Quarterly declaration
+**Fines** (Code art. 233). Light offence (leve): EUR 50 to 250 for negligence, EUR 100 to 500 if intentional. Serious (grave): EUR 300 to 1,200, or EUR 600 to 2,400. Very serious (muito grave): EUR 1,250 to 6,250, or EUR 2,500 to 12,500. Limits rise by 50% for a company with fewer than 50 workers, and by 100% for one with 50 or more (art. 233(4)).
 
-**Quarterly declaration schedule**
+**Which class applies:**
 
-| Declaration period | Income period covered | Filing deadline |
-| --- | --- | --- |
-| January | Oct--Dec (prior year) | End of January |
-| April | Jan--Mar | End of April |
-| July | Apr--Jun | End of July |
-| October | Jul--Sep | End of October |
+- Self-employed or contracting entity paying late: light if paid within 30 days after the deadline, serious otherwise (art. 155(4)).
+- Self-employed failing to file the quarterly declaration: light (art. 151-A(8)).
+- Employer not declaring a worker's pay: very serious (art. 40(10)). Not confirming or correcting by the 20th, where the error changes what the worker is owed: light if put right within 60 days, serious otherwise (art. 40(11)).
 
-### Step 5.2 -- Calculate monthly relevant income
+**Interest.** Late contributions carry interest for each calendar month or part of a month (art. 211). The rate is the one for debts to the State (art. 212): 7.221% for 2026 (IGCP Aviso 18/2026/2).
 
-- **Monthly relevant income calculation** — IF services_only (sem contabilidade): relevant_income = quarterly_gross x 70% / 3 ELIF goods_only: relevant_income = quarterly_gross x 20% / 3 ELIF mixed: relevant_income = (services_gross x 70% + goods_gross x 20%) / 3 ELIF contabilidade_organizada: relevant_income = prior-year lucro tributável / 12 (minimum 805,70 = 1,5 x IAS; fixed in October for the following year)  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+**Benefits.** Unpaid contributions suspend benefits until the debt is settled (ISS guide).
 
-### Step 5.3 -- Apply bounds and calculate
+## Cross-border points
 
-- **Apply bounds and calculate contribution** — monthly_base = min(relevant_income, 6 445,56) monthly_contribution = max(20, monthly_base x 21.4%)  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+- A self-employed worker who goes to work abroad for a set period may keep Portuguese cover. The limit is one year, extendable by one more year on request, unless an international agreement says otherwise (Code art. 138). While the income is not declared in Portugal, the last base stays in force (ISS guide).
+- A self-employed person working temporarily in Portugal who already has compulsory cover elsewhere for invalidity, old age and death is outside the regime once excluded on form RV 1025 (ISS guide).
+- A foreign invalidity or old-age pension gives the same exemption as a Portuguese one (art. 157(1)(b)).
+- Which state's legislation applies to people working in more than one EU state, and A1 certificates, are in `pt-cross-border`. This skill does not set those rules.
 
-### Step 5.4 -- Contributions apply for the next quarter
+## Worked examples
 
-- **Contributions apply for next quarter** — The quarterly declaration determines contributions for the month of the declaration and the 2 following months.  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
+### Example 1: freelance designer, services only, first quarter 2026
 
-## Section 6 -- Payment schedule, exemptions, and tax deductibility
+Rita has been self-employed since 2022. She has no other job. From January to March 2026 she invoiced EUR 9,000 of design services. She files the declaration in April and does not use the 25% option.
 
-### Payment schedule
+1. Relevant income: 9,000 x 70% = EUR 6,300.
+2. Monthly base: 6,300 / 3 = EUR 2,100. This is under the EUR 6,445.56 ceiling.
+3. Monthly contribution: 2,100 x 21.4% = EUR 449.40 for April, May and June. She pays each between the 10th and the 20th of May, June and July.
+4. For the quarter: 449.40 x 3 = EUR 1,348.20.
 
-**Payment schedule**
+Over 2026 Rita invoices EUR 36,000, all to one Lisbon company. The company received 100% of her activity, which is over 80%, and her service income is over 6 x IAS. So the company owes 10% of EUR 36,000 = EUR 3,600 as a contracting entity. It pays this in 2027, by the 20th of the month after Segurança Social's notice. This is the company's own cost, not deducted from Rita.
 
-| Obligation | Due date |
-| --- | --- |
-| Monthly contribution payment | Between 10th and 20th of each month |
-| Payment method | Direct debit, ATM, or Segurança Social Direta portal |
-
-- **Late payment** — Late payment: interest at legal rate + potential loss of benefits.
-
-### Exemptions
-
-- **First 12 months** — new self-employed workers are exempt from contributions for the first 12 months of activity.
-- **Concurrent employment exemption** — if the self-employed person also has employment where the employer pays at least the minimum contribution base: If employment income >= IAS: self-employed contributions may be reduced or exempt. If average monthly relevant income >= 4 x IAS (EUR 2 148,52 in 2026): exemption does NOT apply, and contributions are due on the amount above that limit  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
-
-### Tax deductibility
-
-**Tax deductibility**
-
-| Question | Answer |
-| --- | --- |
-| Are Segurança Social contributions deductible? | YES -- from gross income for IRS purposes |
-| Classification | Category B deductions |
-| When deductible? | In the year they are paid |
-
-## Section 7 -- Organized accounting and recibos verdes
-
-### Self-employed with organized accounting
-
-- **Organized accounting net profit rule** — Relevant income = prior-year taxable profit (lucro tributável, Anexo SS of Modelo 3) / 12, with a minimum monthly base of EUR 805,70 (1,5 x IAS), fixed in October for the following year. Confirm profit calculation methodology with contabilista. Flag for reviewer.  _(https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw)_
-
-### Recibos verdes (green receipts) income
-
-- **Recibos verdes income treatment** — This IS self-employed income. Standard 70% relevant income rule applies. All recibos verdes amounts are reported in the quarterly declaration.
-
-## Section 8 -- Edge case registry
-
-### EC1 -- First year of activity
-
-Situation: Client opened activity in March 2025. Resolution: Exempt from contributions until February 2026 (12 months). First quarterly declaration due in April 2026. Contributions begin from the month following the first declaration.
-
-### EC2 -- Services income below minimum
-
-Situation: Client provides services with quarterly gross EUR 1,000. Resolution: Relevant income = EUR 1,000 x 70% / 3 = EUR 233.33/month. Monthly contribution = EUR 233.33 x 21.4% = EUR 49.93 (above the EUR 20 minimum, so no floor applies).
-
-### EC3 -- Very high income
-
-Situation: Client earns EUR 30,000/quarter from services. Resolution: Relevant income = EUR 7,000/month. Capped at EUR 6,445.56 (12 x IAS, 2026). Monthly contribution = EUR 6,445.56 x 21.4% = EUR 1,379.35.
-
-### EC4 -- Mixed services and goods
-
-Situation: Client earns EUR 6,000 from services and EUR 15,000 from goods in the quarter. Resolution: Relevant income = (EUR 6,000 x 70% + EUR 15,000 x 20%) / 3 = EUR 2,400/month. Contribution = EUR 2,400 x 21.4% = EUR 513.60.
-
-### EC5 -- Concurrent employment, exemption applies
-
-Situation: Client employed at EUR 1,200/month, self-employed quarterly services EUR 2,000. Resolution: Self-employed relevant income = EUR 466.67/month (below 4 x IAS). Employment exemption applies. Contributions = EUR 0.
-
-## Section 9 -- Reviewer escalation protocol
-
-When a situation requires reviewer judgement:
-
-```
-REVIEWER FLAG
-Tier: T2
-Client: [name]
-Situation: [description]
-Issue: [what is ambiguous]
-Options: [possible treatments]
-Recommended: [most likely correct treatment and why]
-Action Required: Qualified contabilista certificado must confirm before advising client.
+```oa-check
+name: PT self-employed services EUR 9,000 in Q1 2026, plus contracting entity
+inputs:
+  services: 9000
+  goods: 0
+  ias: 537.13
+  rate: 0.214
+  annual_services_to_client: 36000
+  entity_rate: 0.10
+steps:
+  - relevant: services * 0.70 + goods * 0.20
+  - base: min(relevant / 3, 12 * ias)
+  - monthly: max(20, round(base * rate, 2))
+  - quarter: monthly * 3
+  - entity_contribution: annual_services_to_client * entity_rate
+expected:
+  relevant: 6300
+  base: 2100
+  monthly: 449.40
+  quarter: 1348.20
+  entity_contribution: 3600
 ```
 
-When a situation is outside skill scope:
+### Example 2: employee with a side business above 4 x IAS
 
+João is employed full-time by an unrelated company at EUR 1,400 a month, which is above 1 x IAS. He also has recibos verdes activity and sells goods online. From April to June 2026 he invoiced EUR 15,000 of services and sold EUR 6,000 of goods. He files the declaration in July.
+
+1. Relevant income: 15,000 x 70% + 6,000 x 20% = 10,500 + 1,200 = EUR 11,700.
+2. Monthly average: 11,700 / 3 = EUR 3,900. This is at least 4 x IAS (EUR 2,148.52), so the employment exemption does not cover all of it.
+3. Base: 3,900 - 2,148.52 = EUR 1,751.48 (art. 163(4)). This is under the ceiling. The 25% option does not apply to this base.
+4. Monthly contribution: 1,751.48 x 21.4% = EUR 374.82 for July, August and September. He pays each between the 10th and the 20th of the following month.
+
+If his next quarter's monthly average falls below EUR 2,148.52, he owes nothing as self-employed for those three months.
+
+```oa-check
+name: PT employee with side activity, Q2 2026 services 15,000 and goods 6,000
+inputs:
+  services: 15000
+  goods: 6000
+  ias: 537.13
+  rate: 0.214
+steps:
+  - relevant: services * 0.70 + goods * 0.20
+  - monthly_avg: relevant / 3
+  - threshold: 4 * ias
+  - base: min(max(0, monthly_avg - threshold), 12 * ias)
+  - monthly: round(base * rate, 2)
+  - quarter: monthly * 3
+expected:
+  relevant: 11700
+  monthly_avg: 3900
+  threshold: 2148.52
+  base: 1751.48
+  monthly: 374.82
+  quarter: 1124.46
 ```
-ESCALATION REQUIRED
-Tier: T3
-Client: [name]
-Situation: [description]
-Issue: [outside skill scope]
-Action Required: Do not advise. Refer to qualified contabilista. Document gap.
-```
 
-## Section 10 -- Test suite
+## Ask the client first
 
-### Test 1 -- Standard services, mid-range
+1. When did the activity first start, and has it stopped and restarted? This decides whether contributions are due yet (art. 145).
+2. Is the client employed elsewhere, by whom, and at what monthly pay? Or do they receive an invalidity, old-age or occupational-risk pension? These decide the exemptions (art. 157).
+3. How much of last quarter's income was services, and how much was goods or hotel and restaurant services? Is the client on organised accounts?
+4. Is the client an empresário em nome individual or EIRL holder (25.2%), and is a spouse working in the business?
+5. Who are the clients, and did any one of them (or one group) take more than 50% or more than 80% of the year's work? This sets the contracting-entity charge.
+6. Is the client also a gerente or director of a company, and is that role paid? This brings in the MOE rules.
 
-Input: Quarterly gross services EUR 9,000, no employment, established. Expected output: Relevant income = EUR 2,100/month. Contribution = EUR 449.40/month. Annual: EUR 5,392.80.
+## Sources
 
-### Test 2 -- Minimum base applies
+| Source | URL | Read on |
+|---|---|---|
+| Código dos Regimes Contributivos (Lei 110/2009, consolidated), art. 40, 43, 53, 64, 66, 69, 79, 109, 112, 121, 138, 139, 140, 145, 151-A, 155, 157, 162, 163, 164, 167, 168, 211, 212, 233 | https://diariodarepublica.pt/dr/legislacao-consolidada/lei/2009-34514575 | 2026-10-24 |
+| Decreto-Lei 127/2025 (new reporting model, art. 40 and 43, transition art. 5, in force 1 January 2026) | https://diariodarepublica.pt/dr/detalhe/decreto-lei/127-2025-967317021 | 2026-10-24 |
+| Portaria 480-A/2025/1, art. 2 (IAS 2026 EUR 537.13; AT's copy of the Diário da República text) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Portaria_480_A_2025_1.pdf | 2026-10-24 |
+| IGCP Aviso 18/2026/2 (late interest 7.221% from 1 January 2026) | https://diariodarepublica.pt/dr/detalhe/aviso/18-2026-993315668 | 2026-10-24 |
+| ISS, Guia Prático, Novo Regime dos Trabalhadores Independentes (v1.09, 2026 figures) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-24 |
+| ISS, Guia Prático, Pagamento de Contribuições à Segurança Social | https://www.seg-social.pt/ptss/pssd/documento/cmc1y95ap00dkkl2yk3g4tdla | 2026-10-24 |
+| ISS, Guia Prático, Inscrição, Vinculação e Cessação de Atividade de Trabalhador por Conta de Outrem (rate tables) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xlxpq00d9kl2y0p3inyft | 2026-10-24 |
+| CIRS art. 31(2) (contributions in the simplified regime) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx | 2026-10-24 |
 
-Input: Quarterly gross services EUR 1,500. Expected output: Relevant income = EUR 350/month. Base = EUR 350 (no minimum base). Contribution = EUR 74.90/month (above the EUR 20 minimum).
-
-### Test 3 -- Maximum base applies
-
-Input: Quarterly gross services EUR 30,000. Expected output: Relevant income = EUR 7,000/month. Capped at EUR 6,445.56 (12 x IAS, 2026). Contribution = EUR 1,379.35/month.
-
-### Test 4 -- First year exempt
-
-Input: Activity opened 4 months ago, quarterly gross EUR 12,000. Expected output: Exempt (within first 12 months). Contributions = EUR 0.
-
-### Test 5 -- Goods-only income
-
-Input: Quarterly gross goods sales EUR 20,000, no employment. Expected output: Relevant income = EUR 1,333.33/month. Contribution = EUR 285.33/month.
-
-### Test 6 -- Concurrent employment, exemption applies
-
-Input: Employment salary EUR 1,500/month, self-employed quarterly services EUR 2,000. Expected output: Self-employed relevant income = EUR 466.67/month (below 4 x IAS). Exemption applies. Contributions = EUR 0.
-
-### Test 7 -- Empresário em nome individual
-
-Input: Sole proprietor with employees, quarterly services EUR 15,000. Expected output: Rate = 25.2%. Relevant income = EUR 3,500/month. Contribution = EUR 882.00/month.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: Code art. 163(8) says the EUR 20 minimum is updated in line with the IAS, but no updated figure was found and the 2026 ISS guide still gives EUR 20.00, which this skill uses; the employer deadlines that apply during 2026 to employers not yet moved to the new reporting model under DL 127/2025 art. 5 (the old model's declaration date was not read); the regulation (Decreto Regulamentar 1-A/2011) that lists income left out of relevant income, which was read only through the ISS guide; the EUR 5 de minimis for the excess base and the rule that the 25% option does not apply to it, both from the ISS guide only; the annual review article 164-A was read only by title, its EUR 20 threshold comes from the ISS guide; other special rates (for example very short contracts, pensioners in work, rural workers) and the contribution reductions for first jobs and long-term unemployed were not read and are left to `portugal-payroll`; EU coordination under Regulation 883/2004 (EUR-Lex did not load) is left to `pt-cross-border`.
 
 > Contributed by Ryan Duguid.
 
