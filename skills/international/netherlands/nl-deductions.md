@@ -46,7 +46,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Care costs: threshold, no whole-year partner | EUR 166 up to EUR 9,680; 1.65% up to EUR 51,411; above: 1.65% of EUR 51,411 (EUR 848) plus 5.75% of the excess | 2026 | Wet IB art. 6.20(1) |
 | Care costs: threshold, whole-year partner | first band up to EUR 19,360 with EUR 332; other bands the same | 2026 | Wet IB art. 6.20(2) |
 | Care costs: threshold 2025 | EUR 164 up to EUR 9,534; 1.65% up to EUR 50,635; EUR 835 plus 5.75% above (partners: EUR 328 up to EUR 19,068) | 2025 | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/gezondheid/aftrek_zorgkosten/hoe_berekent_u_uw_aftrek/drempelbedrag_berekenen/drempelbedrag-2025 |
-| Care costs: travel by car | EUR 0.23 per km plus parking, ferry and toll (see Not yet confirmed) | 2026 | Wet IB art. 6.17(6) |
+| Care costs: travel by car (treatment and sick visits) | EUR 0.23 per km plus parking, ferry and toll, in the law as it stands; the Belastingplan 2027 bill raises it to EUR 0.25 back to 1 January 2026, and the Belastingdienst already uses EUR 0.25 | 2026 | Wet IB art. 6.17(6); Kamerstuk 37022 nr. 2, art. I part H and art. LXIII(1)(a) |
 | Care costs: cannot walk 100 metres | flat EUR 925 a year | 2026 | Wet IB art. 6.17(7) |
 | Care costs: extra clothing and bedding | flat EUR 330, or EUR 825 if extra spend is at least EUR 660 above normal | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_specifieke_zorgkosten |
 | Care costs: extra household help counts above | 0% of verzamelinkomen up to EUR 39,701; 1% to EUR 59,549; 2% to EUR 79,387; 3% above | 2026 | Wet IB art. 6.17(3) |
@@ -56,8 +56,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Gifts in kind needing a valuation | above EUR 10,000 a year (whole-year partners EUR 20,000) | 2026 | Wet IB art. 6.38(2),(5) and 6.39(2),(4) |
 | Periodic gifts: cap | EUR 1,500,000 a year in total (partners together) | 2026 | Wet IB art. 6.38(4),(5) |
 | Cultural ANBI uplift | 25% of the gift, at most EUR 1,250 (partners together) | 2026 | Wet IB art. 6.39a |
-| Volunteer car costs waived | EUR 0.23 per km | 2026 | Wet IB art. 6.36(2) |
-| Weekend costs, disabled person 21 or older | EUR 13 a day; EUR 0.25 per km by car | 2026 | https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/aftrek_voor_tijdelijk_verblijf_thuis |
+| Volunteer car costs waived | EUR 0.23 per km in the law as it stands; the Belastingplan 2027 bill raises it to EUR 0.25 back to 1 January 2026 | 2026 | Wet IB art. 6.36(2); Kamerstuk 37022 nr. 2, art. I part I |
+| Weekend costs, disabled person 21 or older | EUR 13 a day; EUR 0.23 per km by car (the Belastingdienst chapter says EUR 0.25); half each if both partners claim for the same person | 2026 | Uitvoeringsregeling IB 2001 art. 40, text in force from 17 January 2026, https://wetten.overheid.nl/BWBR0012031/2026-01-17 |
 | General tax credit (algemene heffingskorting) | EUR 3,115, less 6.398% of verzamelinkomen above EUR 29,736 | 2026 | Wet IB art. 8.10(2) |
 | Labour credit (arbeidskorting) | at most EUR 5,685, less 6.51% of work income above EUR 45,592 | 2026 | Wet IB art. 8.11 |
 | IACK | 11.45% of work income above EUR 6,239, at most EUR 3,032 | 2026 | Wet IB art. 8.14a(2) |
@@ -65,7 +65,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Green investment credit | 0.1% of the exempt green investments | 2026 | Wet IB art. 8.19(2) |
 | Box 3 tax-free allowance | EUR 59,357 per person (2025: EUR 57,684) | 2026 | Wet IB art. 5.5; https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/heffingsvrij-vermogen |
 | Green investments exempt in box 3 | EUR 26,715 (partners EUR 53,430) | 2026 | Wet IB art. 5.13(1) |
-| Late-filing penalty (verzuimboete) | EUR 469; up to EUR 6,709 for repeat lateness | 2026 | AWR art. 67a(1); https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig |
+| Late-filing penalty (verzuimboete) | EUR 469 (Belastingdienst standard amount); statutory maximum EUR 6,709, used for repeat lateness | 2026 | AWR art. 67a(1) (maximum); https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig |
 
 ## The taxable base
 
@@ -106,12 +106,12 @@ Deductible (Wet IB art. 6.3): periodic payments under a family-law duty, except 
 - **Ordinary gifts (andere giften):** to an ANBI or an SBBI support foundation (art. 6.35); provable in writing; not cash (art. 6.37); only the part above the floor counts, up to the ceiling (art. 6.39). A gift to an SBBI itself is not deductible.
 - **Periodic gifts:** fixed equal payments at least yearly for 5 or more years, to an ANBI or a qualifying association (25 or more members, full legal capacity, not liable to corporate tax, based in the EU or a listed state), under a notarial or private deed (art. 6.33, 6.34, 6.38(1)). No floor, no 10% ceiling. The deed may end the gift early on loss of status, bankruptcy, the donor's disability or unemployment, or death (art. 6.34, 6.38(6),(7)).
 - **Cultural ANBI:** the gift is raised by 25%, at most EUR 1,250, and the ordinary-gift ceiling rises by the same amount (art. 6.39a).
-- **Volunteers:** a waived allowance counts if the ANBI issued a statement, the volunteer had a right to it, the ANBI could pay and the volunteer was free to take it; waived actual costs count, car at EUR 0.23 per km (art. 6.36).
+- **Volunteers:** a waived allowance counts if the ANBI issued a statement, the volunteer had a right to it, the ANBI could pay and the volunteer was free to take it; waived actual costs count, car at EUR 0.23 per km (art. 6.36; see the rates table for the pending EUR 0.25).
 - **ANBI status withdrawn with retroactive effect:** a gift made before the withdrawal stays deductible (gifts chapter). Check status with "ANBI opzoeken".
 
 ### Weekend costs for severely disabled persons
 
-For a severely disabled child, brother or sister, or a person under the client's mentorship or curatorship, aged 21 or over, who usually lives in an institution and is cared for by the client at weekends or holidays (art. 6.25). EUR 13 a day (pick-up and drop-off days count) plus EUR 0.25 per km by car on the home-to-institution distance, per person, less reimbursements. From the 21st birthday only.
+For a severely disabled child, brother or sister, or a person under the client's mentorship or curatorship, aged 21 or over, who usually lives in an institution and is cared for by the client at weekends or holidays (art. 6.25). EUR 13 a day (pick-up and drop-off days count) plus EUR 0.23 per km by car on the home-to-institution distance, per person, less reimbursements (Uitvoeringsregeling IB 2001 art. 40(1)). If both partners claim for the same person, each takes half (art. 40(2)). From the 21st birthday only. The Belastingdienst chapter uses EUR 0.25 per km; if the regulation is amended back to 1 January 2026, use EUR 0.25.
 
 ### Study costs
 
@@ -130,7 +130,7 @@ Credits reduce tax, not income. Employers and benefits agencies already apply th
 
 ## Penalties and interest
 
-- **Late filing:** reminder, then a demand (aanmaning) with 10 working days to file. After that a verzuimboete of EUR 469, up to EUR 6,709 for repeat lateness (AWR art. 67a(1)). The Belastingdienst can also stop paying allowances and the provisional refund.
+- **Late filing:** reminder, then a demand (aanmaning) with 10 working days to file. After that a verzuimboete, normally EUR 469; the law allows up to EUR 6,709 (AWR art. 67a(1)), which the Belastingdienst uses for repeat lateness. The Belastingdienst can also stop paying allowances and the provisional refund.
 - **No return at all:** an estimated assessment plus the penalty.
 - **Interest:** late filing brings belastingrente; the rate is in nl-income-tax.
 - **Wrong return on purpose:** a vergrijpboete, also on an additional assessment.
@@ -212,6 +212,9 @@ expected:
 |---|---|---|
 | Wet inkomstenbelasting 2001, version 1 January 2026 (art. 2.10, 2.10a, 3.112, 3.119a-3.123a, 5.5, 5.13, 6.1-6.40, 7.8, 8.10-8.19) | https://wetten.overheid.nl/BWBR0011353/2026-01-01 | 2026-10-24 |
 | Wet inkomstenbelasting 2001, version in force from 21 February 2026 (art. 6.17(6) checked) | https://wetten.overheid.nl/BWBR0011353/2026-02-21 | 2026-10-24 |
+| Uitvoeringsregeling inkomstenbelasting 2001, art. 40 (weekend costs), text in force from 17 January 2026 | https://wetten.overheid.nl/BWBR0012031/2026-01-17 | 2026-10-24 |
+| Wet inkomstenbelasting 2001, art. 6.17 change history (pending bill 37022 listed) | https://wetten.overheid.nl/BWBR0011353/2026-02-21/0/Hoofdstuk6/Afdeling6.5/Artikel6.17/informatie | 2026-10-24 |
+| Belastingplan 2027 bill, Kamerstuk 37022 nr. 2 (art. I parts H and I, art. II part G, art. LXIII) | https://zoek.officielebekendmakingen.nl/kst-37022-2.html | 2026-10-24 |
 | Algemene wet inzake rijksbelastingen, art. 67a | https://wetten.overheid.nl/BWBR0002320/2026-01-01 | 2026-10-24 |
 | Belastingdienst, tariefsaanpassing aftrekposten | https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/afbouw-tarief-aftrekposten-bij-hoog-inkomen | 2026-10-24 |
 | Belastingdienst, eigenwoningforfait 2026 and 2025 | https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/hoe-werkt-eigenwoningforfait | 2026-10-24 |
@@ -229,7 +232,9 @@ expected:
 | Belastingdienst, box 3 tax-free allowance | https://www.belastingdienst.nl/wps/wcm/connect/nl/box-3/content/heffingsvrij-vermogen | 2026-10-24 |
 | Belastingdienst, late or missing return | https://www.belastingdienst.nl/wps/wcm/connect/nl/belastingaangifte/content/wat-gebeurt-er-als-ik-geen-aangifte-doe-of-te-laat-of-onvolledig | 2026-10-24 |
 
-Not yet confirmed: (1) the car rate for care-cost travel and sick visits: Wet IB art. 6.17(6), in the text in force from 21 February 2026, says EUR 0.23 per km, but Fiscale informatie 2026 ch. 17 says EUR 0.25 (the 2025 chapter says EUR 0.23); this skill uses the statute until the amending law is found; (2) the weekend-cost amounts (EUR 13 a day, EUR 0.25 per km) are from the Belastingdienst chapter; the ministerial regulation that sets them (Uitvoeringsregeling IB 2001, art. 6.26) was not read; (3) a STAP-budget or other non-tax successor to the study-cost deduction: no official page read, so not stated; (4) the previous version's note that art. 6.20 carries an enacted repeal without a commencement date: no such note found in the 2026-02-21 text; (5) the belastingrente rate for income tax: left to nl-income-tax.
+Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 29 September 2026, not yet enacted on 24 October 2026) raises the car rate in Wet IB art. 6.17(6) and 6.36(2) from EUR 0.23 to EUR 0.25 with effect back to 1 January 2026 (art. I parts H and I, art. LXIII(1)(a)), and repeals the specific care-cost deduction (afdeling 6.5) from 1 January 2028 (art. II part G). The "repeal without commencement date" notes on wetten.overheid.nl for art. 6.17 to 6.20 refer to this bill. Recheck the car rates once the Staatsblad text is published.
+
+Not yet confirmed: (1) whether the Uitvoeringsregeling IB 2001 art. 40 weekend-cost km rate will also be raised to EUR 0.25 for 2026 (the Belastingdienst already says so; the regulation in force says EUR 0.23); (2) a STAP-budget or other non-tax successor to the study-cost deduction: no official page read, so not stated; (3) the belastingrente rate for income tax: left to nl-income-tax.
 
 <!-- openaccountants-cta-block -->
 
