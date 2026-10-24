@@ -15,7 +15,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 |---|---|---|
 | IT-IND, individual income tax | nl-income-tax, nl-income-tax-special-groups, nl-deductions, nl-zzp-deductions, nl-box2-substantial-interest | source-cited draft |
 | IT-CORP, corporate income tax | nl-corporate-tax, nl-dividend-withholding | source-cited draft |
-| VAT | nl-vat-return, netherlands-vat-return, nl-vat-registration | source-cited draft |
+| VAT | netherlands-vat-return (2026 deep-tax), nl-vat-return (older duplicate, to be merged), nl-vat-registration | source-cited draft |
 | SC, social contributions | nl-social-contributions | source-cited draft |
 | PR, payroll withholding | nl-payroll-tax, netherlands-payroll, nl-company-car | source-cited draft |
 | TP, transfer pricing | netherlands-transfer-pricing | source-cited draft |
