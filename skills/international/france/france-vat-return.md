@@ -60,10 +60,10 @@ Two facts about the law itself in 2026:
 | Franchise: lawyers', authors' and performers' regulated work, previous / current year (art. 293 B, I bis) | EUR 50,000 / EUR 55,000 | 2026 | same |
 | Franchise: their other activities, previous / current year | EUR 35,000 / EUR 38,500 | 2026 | same |
 | Franchise for an EU-established business: EU-wide turnover, previous and current year (art. 293 B bis) | EUR 100,000 | 2026 | same |
-| Régime simplifié: previous year turnover, goods, on-site catering, accommodation (CIBS L. 162-4, 1°) | up to EUR 945,000 | 2026 | https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701 |
-| Régime simplifié: current year ceiling, same activities (CIBS L. 162-5, 1°) | EUR 1,040,000 | 2026 | same |
-| Régime simplifié: previous year turnover, other services incl. furnished lets (CIBS L. 162-4, 2°) | up to EUR 286,000 | 2026 | same |
-| Régime simplifié: current year ceiling, other services (CIBS L. 162-5, 2°) | EUR 323,000 | 2026 | same |
+| Régime simplifié: previous year turnover, goods, on-site catering, accommodation (CIBS L. 162-4, 1°; amount fixed for 2026 by CIBS art. A. 162-7) | up to EUR 945,000 | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000049803748/2026-10-24 |
+| Régime simplifié: current year ceiling, same activities (CIBS L. 162-5, 1°; A. 162-7) | EUR 1,040,000 | 2026 | same |
+| Régime simplifié: previous year turnover, other services incl. furnished lets (CIBS L. 162-4, 2°; A. 162-7) | up to EUR 286,000 | 2026 | same |
+| Régime simplifié: current year ceiling, other services (CIBS L. 162-5, 2°; A. 162-7) | EUR 323,000 | 2026 | same |
 | Régime simplifié: VAT due for the previous year must not exceed (CIBS L. 162-7) | EUR 15,000 | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000044598127/2026-10-24 |
 | Régime réel normal: quarterly CA3 where annual VAT due is below (CGI art. 287-2) | EUR 4,000 | 2026 | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191928/2026-10-24 |
 | Régime simplifié instalments: July / December, share of previous year's tax before fixed-asset VAT (CGI art. 287-3) | 55% / 40% | 2026 | same |
@@ -81,7 +81,7 @@ Two facts about the law itself in 2026:
 
 **How the franchise thresholds bite.** The basic threshold is tested on the previous calendar year: crossing it brings VAT from 1 January of the next year. The higher threshold is tested on the current year: crossing it brings VAT from the day of the overrun itself (CGI art. 293 B, II), so invoices issued that day already carry VAT. In a start-up year, the turnover is scaled up to a full year before the test (service-public F21746).
 
-**Where two official pages disagree.** The impots.gouv.fr page "Les régimes d'imposition à la TVA" (last modified 21 May 2026) still prints EUR 840,000 and EUR 254,000 as the régime simplifié limits. Those are the 2023-2025 values. The BOFiP barème published 1 July 2026 gives EUR 945,000 / 1,040,000 and EUR 286,000 / 323,000 for 2026, and service-public F23566 agrees. Use the 2026 values.
+**Where two official pages disagree.** The impots.gouv.fr page "Les régimes d'imposition à la TVA" (last modified 21 May 2026) still prints EUR 840,000 and EUR 254,000 as the régime simplifié limits. Those are the 2023-2025 values. The law settles it: CIBS art. L. 162-4 sets base amounts of EUR 818,000 and EUR 247,000 for 2020 to 2022 and indexes them on inflation every three years, rounded to the nearest thousand euros, and CIBS art. A. 162-7, as amended by the arrêté of 27 January 2026 (in force from 29 January 2026), fixes the 2026 amounts at EUR 945,000 / 1,040,000 and EUR 286,000 / 323,000. The BOFiP barème of 1 July 2026 and service-public F23566 give the same figures. Use the 2026 values.
 
 ## The taxable base
 
@@ -195,7 +195,7 @@ Bank-statement reading: French exports are usually semicolon-separated with DD/M
 | État récapitulatif des clients (intra-EU supplies of goods) and déclaration européenne de services (B2B services taxed in the customer's EU state) | Within ten working days after the month the VAT became due, filed with customs on pro.douane.gouv.fr (CGI art. 289 B) | CA3 notice 3310-NOT-CA3-SD, 2026 |
 | Payment | With the return, online from the espace professionnel on impots.gouv.fr | F23566 |
 | E-invoicing: receiving | From 1 September 2026 every business established in France must be able to receive e-invoices through an approved platform (plateforme agréée) | CGI art. 289 bis ; LFR 2022 art. 26, III, as rewritten by LF 2024 art. 91 ; impots.gouv.fr FAQ |
-| E-invoicing and e-reporting: issuing | From 1 September 2026 for large companies, ETI and VAT groups; from 1 September 2027 for SMEs and micro-enterprises (size judged on 1 January 2025 under LME art. 51) | same ; BOFiP BOI-TVA-DECLA-20-30-50 (30 September 2026) |
+| E-invoicing and e-reporting: issuing | From 1 September 2026 for large companies, ETI and VAT groups; from 1 September 2027 for SMEs and micro-enterprises (size under LME art. 51 and decree 2008-1354, art. 3) | same ; BOFiP BOI-TVA-DECLA-20-30-50 (30 September 2026) |
 
 Formats, platforms, e-reporting frequencies and the payment-data rules are in `france-einvoice`.
 
@@ -213,7 +213,9 @@ Formats, platforms, e-reporting frequencies and the payment-data rules are in `f
 | État récapitulatif filed late | EUR 750; EUR 1,500 if still missing 30 days after notice; EUR 15 per error, capped at EUR 1,500 (art. 1788 A, 1 and 2) | same |
 | Invoice errors or omissions | EUR 15 per error, capped at a quarter of the invoice amount (CGI art. 1737, II) | Légifrance art. 1737 |
 | Invoice not issued electronically when required | EUR 50 per invoice, capped at EUR 15,000 a year (art. 1737, III, as amended by LF 2026) | same |
-| E-reporting not transmitted | EUR 500 per transmission, capped at EUR 15,000 a year (CGI art. 1788 D, as amended by LF 2026) | Légifrance art. 1788 D |
+| No approved platform for receiving e-invoices | Formal notice to comply within three months; then EUR 500; then EUR 1,000 after a second three-month notice, and EUR 1,000 again for each further three months the failure persists (CGI art. 1737, IV bis) | Légifrance art. 1737 |
+| E-reporting not transmitted | EUR 500 per transmission, capped at EUR 15,000 a year (CGI art. 1788 D, I and II, as amended by LF 2026) | Légifrance art. 1788 D |
+| First-offence relief | The invoice fines in art. 1737, II and III do not apply to a first offence in the current year and the three previous years when it is put right spontaneously or within 30 days of the administration's first request (art. 1737, V) | Légifrance art. 1737 |
 
 Example of the interest rule: a CA3 for March 2026 showing EUR 4,000 due, filed and paid in June without any notice, bears the 10% majoration (EUR 400) and interest for May and June, 2 × 0.20% × 4,000 = EUR 16. Audit procedure, the reductions for voluntary correction and the taxpayer's rights are in `fr-tax-audit`.
 
@@ -230,10 +232,10 @@ Example of the interest rule: a CA3 for March 2026 showing EUR 4,000 due, filed 
 
 ## Worked examples
 
-**Example 1: monthly CA3 for a Paris consultancy (régime réel normal).** In April 2026 the company sells EUR 50,000 of consulting at 20% and EUR 8,000 of catered training days at 10%. It buys Google Ads from Google Ireland for EUR 850 (no VAT on the invoice), other French purchases of EUR 12,000 plus 20% VAT, and a server for EUR 1,500 plus 20% VAT that it records as a fixed asset. Sales: A1 is 58,000; line 08 base 50,000 and tax 10,000; line 9B base 8,000 and tax 800. Google Ads: A3 is 850, tax 170 joins line 08, and the same 170 is deducted at line 20. Deductions: line 20 is 2,400 plus 170, line 19 is 300. Line 16 is 10,970, line 23 is 2,870, so TD and line 28 are 8,100.
+**Example 1: monthly CA3 for a Paris consultancy (régime réel normal).** In April 2026 the company sells EUR 50,000 of consulting at 20%, and its in-house café sells EUR 8,000 of food and soft drinks for consumption on the premises at 10% (CGI art. 279, m; alcoholic drinks would be 20%). It buys Google Ads from Google Ireland for EUR 850 (no VAT on the invoice), other French purchases of EUR 12,000 plus 20% VAT, and a server for EUR 1,500 plus 20% VAT that it records as a fixed asset. Sales: A1 is 58,000; line 08 base 50,000 and tax 10,000; line 9B base 8,000 and tax 800. Google Ads: A3 is 850, tax 170 joins line 08, and the same 170 is deducted at line 20. Deductions: line 20 is 2,400 plus 170, line 19 is 300. Line 16 is 10,970, line 23 is 2,870, so TD and line 28 are 8,100.
 
 ```oa-check
-name: France CA3 April 2026, consultancy with an EU service self-assessed
+name: France CA3 April 2026, consultancy and café with an EU service self-assessed
 inputs:
   sales_20: 50000
   sales_10: 8000
@@ -294,7 +296,8 @@ expected:
 |---|---|---|
 | CGI art. 293 B, 293 B bis, 293 B ter (franchise; LF 2025 art. 32 and loi n° 2025-1044 art. 1) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006162567/2026-10-24 | 2026-10-24 |
 | CGI art. 287 (returns, instalments, monthly triggers) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191928/2026-10-24 | 2026-10-24 |
-| CIBS art. L. 162-4 to L. 162-8 (régime simplifié conditions) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000044598127/2026-10-24 | 2026-10-24 |
+| CIBS art. L. 162-4 to L. 162-8 (régime simplifié conditions; L. 162-4 indexation rule) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000044598127/2026-10-24 | 2026-10-24 |
+| CIBS art. A. 162-7 (régime simplifié amounts for 2026, arrêté of 27 January 2026) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000044595989/LEGISCTA000049803748/2026-10-24 | 2026-10-24 |
 | BOFiP BOI-BAREME-000036-20260701 (régime simplifié limits for 2026) | https://bofip.impots.gouv.fr/bofip/9368-PGP.html/identifiant=BOI-BAREME-000036-20260701 | 2026-10-24 |
 | CGI art. 278 (20%) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191854/2026-10-24 | 2026-10-24 |
 | CGI art. 278-0 bis (5.5%) and 279 (10%) | https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006069577/LEGISCTA000006191654/2026-10-24 | 2026-10-24 |
@@ -324,7 +327,7 @@ expected:
 | impots.gouv.fr: overseas department rates (Internet Archive copy of 18 May 2026) | https://www.impots.gouv.fr/professionnel/questions/quels-sont-les-differents-taux-de-tva-applicables-dans-les-dom | 2026-10-24 |
 | impots.gouv.fr: VAT regimes, modified 21 May 2026, still showing 2023-2025 limits (Internet Archive copy of 29 September 2026) | https://www.impots.gouv.fr/professionnel/les-regimes-dimposition-la-tva | 2026-10-24 |
 
-Not yet confirmed: the amount of the very-low-value gift exception (CGI annexe IV, art. 28-00 A, not re-read); the CA12 completion notice 3517-S-NOT-SD 2026 (no copy reachable; CA12 lines taken from the form and the earlier read of the notice); the consolidated text of LFR 2022 art. 26, III after LF 2025 and LF 2026 (the dates were checked against the LF 2024 text, BOFiP of 30 September 2026 and service-public F31808); the exact date a business leaves the régime simplifié after crossing a current-year ceiling under CIBS L. 162-5 and its implementing decree; the full lists of goods and services under the 10% and 5.5% rates after LF 2026 (only the article headings and the BOFiP summary were read); Corsican rate rules beyond the CA3 lines; the restaurant-meal treatment rests on CGI annexe II art. 206, not re-read today.
+Not yet confirmed: the amount of the very-low-value gift exception (CGI annexe IV, art. 28-00 A, not re-read); the CA12 completion notice 3517-S-NOT-SD 2026 (no copy reachable; CA12 lines taken from the form and the earlier read of the notice); the reference date for measuring a business's size for the e-invoicing timetable (LFR 2022 art. 26, III and its decree, not re-read); the consolidated text of LFR 2022 art. 26, III after LF 2025 and LF 2026 (the dates were checked against the LF 2024 text, BOFiP of 30 September 2026 and service-public F31808); the exact date a business leaves the régime simplifié after crossing a current-year ceiling under CIBS L. 162-5 and its implementing decree; the full lists of goods and services under the 10% and 5.5% rates after LF 2026 (only the article headings and the BOFiP summary were read); Corsican rate rules beyond the CA3 lines; the restaurant-meal treatment rests on CGI annexe II art. 206, not re-read today.
 
 <!-- openaccountants-cta-block -->
 

@@ -16,7 +16,7 @@ Calendar tax year for individuals; companies are taxed by financial year. Author
 |---|---|---|
 | IT-IND, individual income tax | fr-personal-income-tax, fr-income-tax, fr-capital-gains, fr-rental-income, fr-crypto-tax | source-cited draft |
 | IT-CORP, corporate income tax | fr-corporate-tax (local business taxes in fr-cfe) | source-cited draft |
-| VAT | france-vat-return (franchise en base, rates, régime réel normal and régime simplifié, CA3 and CA12, self-assessment, EU statements, e-invoicing dates, penalties; e-invoicing formats in france-einvoice) | source-cited draft |
+| VAT | france-vat-return (franchise en base, rates, régime réel normal and régime simplifié, CA3 and CA12, self-assessment, EU statements, e-invoicing dates, penalties; e-invoicing formats in france-einvoice; out of scope: overseas departments, Corsican rate rules, margin scheme, property VAT, VAT groups, OSS) | source-cited draft |
 | SC, social contributions | fr-social-contributions (self-employed), france-payroll (employee and employer contributions) | source-cited draft |
 | PR, payroll withholding | france-payroll | source-cited draft |
 | TP, transfer pricing | france-transfer-pricing | source-cited draft |
